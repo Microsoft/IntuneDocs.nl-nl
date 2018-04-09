@@ -1,30 +1,30 @@
 ---
 title: Windows 10-apparaten met Microsoft Intune opnieuw instellen - Azure | Microsoft Docs
-description: "Gebruik Nieuwe start om apps op Windows 10-pc's te verwijderen met behulp van Microsoft Intune, waaronder vooraf geïnstalleerde apps van OEM's. Inhoud uit de basismap kan worden behouden als is ingesteld dat gebruikersgegevens behouden moeten blijven."
-keywords: 
+description: Gebruik Nieuwe start om apps op Windows 10-pc's te verwijderen met behulp van Microsoft Intune.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d17c9dc11791f32f0c2c1e7faa88966c112fc6a5
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 902ffbcd8f12ba6deb215a54ce378fae94d20426
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Nieuwe start gebruiken om Windows 10-apparaten opnieuw in te stellen met Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Met de apparaatactie **Nieuwe start** worden alle apps verwijderd die op Windows 10-pc's met de makersupdate zijn geïnstalleerd. Daarna wordt de pc automatisch bijgewerkt naar de nieuwste versie van Windows.
+Met de apparaatactie **Nieuwe start** worden alle apps verwijderd die zijn geïnstalleerd op Windows 10-pc's waarop de makersupdate wordt uitgevoerd. Daarna wordt de pc automatisch bijgewerkt naar de nieuwste versie van Windows.
 
 Met deze actie worden vooraf geïnstalleerde apps (OEM-apps) verwijderd die normaliter op nieuwe pc's staan. Als u de inhoud uit de basismap van de gebruiker wilt behouden en alleen apps en instellingen wilt verwijderen, gebruikt u de instelling `if user data is retained`.
 

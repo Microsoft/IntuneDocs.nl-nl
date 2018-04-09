@@ -1,25 +1,25 @@
 ﻿---
 title: Beleidsinstellingen voor Mac OS X
 description: Intune biedt diverse ingebouwde algemene instellingen die u op Mac OS X-apparaten kunt configureren. Daarnaast kunt u het hulpprogramma Apple Configurator gebruiken om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18f05219d002f0998e25671e39f1e71449b7b6c7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 873b1041ec7f5a993195e4a988580fd88100b282
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Instellingen voor configuratiebeleid voor Mac OS X in Microsoft Intune
 
@@ -63,7 +63,7 @@ In de lijst met **compatibele en niet-compatibele apps voor Mac OS X** schakelt 
 |----------------|---------------|
 |**Rapporteren wanneer gebruikers niet-compatibele apps installeren die in de lijst staan**|Hiermee wordt een lijst weergegeven met Mac OS X-apps die gebruikers niet mogen installeren. Als gebruikers deze apps installeren,worden ze gerapporteerd in de **Rapporten over niet-compatibele apps**.|
 |**Niet-compliantie melden wanneer gebruikers apps installeren die niet in de lijst staan**|Hiermee wordt een lijst weergegeven met Mac OS X-apps die gebruikers mogen installeren. Als gebruikers andere apps installeren, worden ze gerapporteerd in de **Rapporten over niet-compatibele apps**.|
-|**Toevoegen**|Hiermee voegt u een app toe aan de geselecteerde lijst. Geef een naam van uw keuze op, eventueel de uitgever van de app, en de bundel-id van de app. **Tip:** als u de bundel-id van een app zoekt, volgt u de volgende stappen op een Mac-computer waarop de app is geïnstalleerd:<ol><li>Open de map waarin de app is geïnstalleerd (bijvoorbeeld **/Applications**).</li><li>Selecteer de bundel *&lt;app-naam&gt;***.app** en kies **Toon pakketinhoud**.</li><li>Open het bestand **Info.plist**.</li><li>Controleer de waarde die is gekoppeld aan de sleutel **CFBundleIdentifier**.</li></ol>De notatie voor de bundel-id is **com.contoso.appname**.|
+|**Toevoegen**|Hiermee voegt u een app toe aan de geselecteerde lijst. Geef een naam van uw keuze op, eventueel de uitgever van de app, en de bundel-id van de app. **Tip:** als u de bundel-id van een app zoekt, volgt u de volgende stappen op een Mac-computer waarop de app is geïnstalleerd:<ol><li>Open de map waarin de app is geïnstalleerd (bijvoorbeeld **/Applications**).</li><li>Selecteer de bundel *&lt;app-naam&gt;***.app* en kies **Pakketinhoud weergeven**.</li><li>Open het bestand **Info.plist**.</li><li>Controleer de waarde die is gekoppeld aan de sleutel **CFBundleIdentifier**.</li></ol>De notatie voor de bundel-id is **com.contoso.appname**.|
 |**Apps importeren**|Hiermee importeert u een lijst met apps die u hebt opgegeven in een bestand met door komma's gescheiden waarden. Gebruik in dit bestand deze indeling: app-naam, uitgever, app-bundel-id.|
 |**Bewerken**|Hiermee kunt u de naam, de uitgever en de app-bundel-id van de geselecteerde app bewerken.|
 |**Verwijderen**|Hiermee verwijdert u de geselecteerde app uit de lijst.|
@@ -83,7 +83,7 @@ Gebruik **Rapporten met niet-compatibele apps** om de compatibiliteit van de doo
 2.  Selecteer de apparaatgroepen die u wilt controleren, selecteer of u op compatibele en/of niet-compatibele apps wilt controleren, en kies vervolgens **Rapport weergeven**.
 
 ## <a name="mac-os-x-custom-policy-settings-in-microsoft-intune"></a>Aangepaste beleidsinstellingen voor Mac OS X in Microsoft Intune
-Gebruik het **aangepaste Mac OS X-configuratiebeleid** van Microsoft Intune om op Mac OS X-apparaten instellingen te implementeren die u met het [hulpprogramma Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) hebt gemaakt. Met dit hulpprogramma kunt u veel instellingen configureren die de werking van deze apparaten regelen en kunt u deze instellingen exporteren naar een configuratieprofiel. U kunt dit configuratieprofiel vervolgens importeren naar een aangepast Mac OS X-beleid voor Intune en de instellingen implementeren voor gebruikers en apparaten in uw organisatie.
+Gebruik het **aangepaste Mac OS X-configuratiebeleid** van Microsoft Intune om op Mac OS X-apparaten instellingen te implementeren die u met het [hulpprogramma Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) hebt gemaakt. Met dit hulpprogramma kunt u veel instellingen configureren die de werking van deze apparaten regelen, en deze instellingen exporteren naar een configuratieprofiel. U kunt dit configuratieprofiel vervolgens importeren naar een aangepast Mac OS X-beleid voor Intune en de instellingen implementeren voor gebruikers en apparaten in uw organisatie.
 
 Hiermee kunt u Mac OS X-instellingen implementeren die niet met het algemene configuratiebeleid van Intune voor Mac OS X kunnen worden geconfigureerd.
 
@@ -119,5 +119,5 @@ U kunt het configuratieprofielbestand dat door het aangepaste beleid wordt gebru
 -   Schrijf het bestand zelf met het bijbehorende schema van de [Apple Configuration Profile Key Reference](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html).
 
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

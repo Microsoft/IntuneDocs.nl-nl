@@ -1,25 +1,25 @@
 ﻿---
 title: Apps toevoegen voor ingeschreven apparaten
 description: Voordat u een app kunt implementeren, moet u deze toevoegen aan Intune. De app is dan beschikbaar in de Intune-console waar u de app kunt implementeren en beheren.
-keywords: 
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c688bf0912ec1150924743a9211a1268427fb13a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Apps toevoegen voor geregistreerde apparaten
 
@@ -48,14 +48,14 @@ U gebruikt de uitgever van Intune-software om de eigenschappen van de app te con
   -   **Externe koppeling**, voor apps die u wilt maken door een koppeling op te geven naar een app store:
 
         - **De URL opgeven**. Geef de URL op van een van de volgende zaken:
-            - De URL van de app store van de app die u wilt installeren. Als u bijvoorbeeld de Microsoft-app Extern bureaublad voor Android wilt implementeren, geeft u **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android** op.<br>Zoek met een zoekprogramma de pagina van de app in de app store om de URL van de app te vinden. Als u bijvoorbeeld de app Extern bureaublad zoekt, kunt u als zoekterm **Microsoft Extern bureaublad Android** gebruiken.
+            - De URL van de app store van de app die u wilt installeren. Als u bijvoorbeeld de app voor het Extern bureaublad van Microsoft voor Android wilt installeren, geeft u **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android** op.<br>Zoek met een zoekprogramma de pagina van de app in de app store om de URL van de app te vinden. Als u bijvoorbeeld de app Extern bureaublad zoekt, kunt u als zoekterm **Microsoft Extern bureaublad Android** gebruiken.
             - Een website. Intune implementeert een snelkoppelingspictogram naar de site op het apparaat (ook wel een webclip genoemd).
             - Een app op internet. Intune implementeert een snelkoppelingspictogram naar de app op het apparaat.
         - **Zorg dat een beheerde browser vereist is om deze koppeling te openen (alleen Android en iOS).** Wanneer u een koppeling naar een website of web-app voor gebruikers implementeert, kunnen ze deze alleen in de door Intune beheerde browser openen. Deze browser moet op hun apparaat zijn geïnstalleerd.<br>Zie [Internettoegang beheren met beheerde-browserbeleid met Microsoft Intune](manage-internet-access-using-managed-browser-policies.md) voor meer informatie over de beheerde browser.<br>Dit installatietype maakt geen gebruik van uw opslagruimte in de cloud.
 
   -   **Beheerde iOS-app uit de App Store**: voor gratis apps uit de iTunes Store die u wilt beheren met Mobile Application Management-beleid (MAM):
 
-        - **De URL opgeven**. Typ de URL van de app store van de app die u wilt installeren. Als u bijvoorbeeld de Microsoft-app Werkmappen voor iOS wilt implementeren, geeft u **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8** op.<br>Dit installatietype maakt geen gebruik van uw opslagruimte in de cloud.
+        - **De URL opgeven**. Typ de URL van de app store van de app die u wilt installeren. Als u bijvoorbeeld de app voor de Microsoft Werkmappen voor iOS wilt installeren, geeft u **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8** op.<br>Dit installatietype maakt geen gebruik van uw opslagruimte in de cloud.
 
         Als u bijvoorbeeld de Microsoft Word-app uit de iTunes Store wilt implementeren op apparaten, ziet de pagina er als volgt uit:
 

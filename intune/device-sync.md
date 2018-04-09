@@ -1,25 +1,25 @@
 ---
 title: Apparaten synchroniseren met Microsoft Intune - Azure | Microsoft Docs
-description: Synchroniseer apparaten die zijn geregistreerd bij of worden beheerd met Microsoft Intune om het meest recente beleid en de meest recente acties te verkrijgen. Bevat de stappen die moeten worden uitgevoerd om te synchroniseren via Azure Portal en bevat de codes van fouten waarvoor opnieuw een poging kan worden gedaan.
-keywords: 
+description: Synchroniseer apparaten die zijn geregistreerd bij of worden beheerd met Microsoft Intune om het meest recente beleid en de meest recente acties te verkrijgen. Bevat de stappen voor synchronisatie via Azure Portal en bevat de codes van fouten waarvoor opnieuw een poging kan worden gedaan.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7af71a2d5c3ad871e69424cf6afbf7c364bb888d
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>Apparaten synchroniseren om het meest recente beleid en de meest recente acties te verkrijgen - Intune
+# <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Apparaten synchroniseren met Intune om het meest recente beleid en de meest recente acties te verkrijgen
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,11 +36,11 @@ Met apparaatactie **Synchroniseren** wordt het geselecteerde apparaat direct ing
 
 ## <a name="sync-a-device"></a>Een apparaat synchroniseren
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**. 
-3. In **Intune** selecteert u **Apparaten** en vervolgens **Alle apparaten**.
-4. Kies een apparaat in de lijst met apparaten die u beheert en kies vervolgens **...Meer**. Selecteer vervolgens de actie **Synchroniseren**.
-5. Selecteer **Ja** om te bevestigen.
+3. Selecteer **Apparaten** > **Alle apparaten** in **Intune**.
+4. Selecteer een apparaat in de lijst met apparaten die u beheert, selecteer **Meer** en selecteer vervolgens **Synchroniseren**.
+5. Selecteer **Ja** om de opdracht te bevestigen.
 
 
 ## <a name="retryable-error-codes"></a>Codes van fouten waarvoor een nieuwe poging kan worden gedaan
@@ -62,6 +62,6 @@ Wanneer een beheerder de apparaatactie **Synchroniseren** uitvoert, zijn iOS- en
 | 2016330889 | De beveiligde verbinding is mislukt. Stel de verbinding opnieuw in. | Ja|
 | 2016330888 | De evaluatie van de vertrouwelijke server is mislukt. | Nee|
 
-## <a name="next-step"></a>Volgende stap
+## <a name="next-steps"></a>Volgende stappen
 
-Kies **Apparaatacties** om de status van de synchronisatieactie te zien. 
+- Selecteer **Apparaatacties** om de status van de synchronisatieactie te bekijken. 
