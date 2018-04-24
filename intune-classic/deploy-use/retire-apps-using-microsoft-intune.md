@@ -1,4 +1,4 @@
----
+﻿---
 title: Apps buiten gebruik stellen
 description: Informatie over het buiten gebruik stellen of verwijderen van apps met behulp van Intune.
 keywords: ''

@@ -1,4 +1,4 @@
----
+﻿---
 title: Fouten bij de registratie naar het ondersteuningsteam van het bedrijf verzenden | Microsoft Docs
 description: Fouten bij de registratie naar de beheerder verzenden
 keywords: ''

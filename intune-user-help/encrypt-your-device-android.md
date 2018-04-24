@@ -1,4 +1,4 @@
----
+﻿---
 title: Uw Android-apparaat beveiligen met versleuteling | Microsoft Docs
 description: Uw Android-apparaat beveiligen
 keywords: ''

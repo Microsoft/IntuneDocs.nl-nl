@@ -1,4 +1,4 @@
----
+﻿---
 title: Firewall-beleid voor Windows-pc's
 description: Intune kan u helpen de pc’s die u beheert met de Intune-client op verschillende manieren te beveiligen, bijvoorbeeld door u te helpen de instellingen van Windows Firewall te configureren.
 keywords: ''

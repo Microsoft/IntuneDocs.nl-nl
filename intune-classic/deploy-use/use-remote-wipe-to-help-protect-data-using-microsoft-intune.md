@@ -1,4 +1,4 @@
----
+﻿---
 title: Wissen op afstand gebruiken om gegevens te beveiligen
 description: Intune biedt mogelijkheden tot selectief wissen en volledig wissen om zo gevoelige bedrijfsgegevens te kunnen verwijderen en om toegang tot veel bedrijfsresources onmogelijk te maken.
 keywords: ''

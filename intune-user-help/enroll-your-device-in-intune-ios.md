@@ -1,4 +1,4 @@
----
+﻿---
 title: Toegang tot uw bedrijfsbronnen instellen | Microsoft Docs
 description: Hier wordt beschreven hoe u uw iOS-apparaat kunt laten beheren door Intune
 keywords: ''

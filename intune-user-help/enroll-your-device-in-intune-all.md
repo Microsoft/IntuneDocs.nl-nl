@@ -1,4 +1,4 @@
----
+﻿---
 title: Uw apparaat registreren bij Intune | Microsoft Docs
 description: Biedt koppelingen naar informatie over het registreren van verschillende apparaten in Intune
 keywords: ''

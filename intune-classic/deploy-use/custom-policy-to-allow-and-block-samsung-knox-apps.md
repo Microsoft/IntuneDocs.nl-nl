@@ -1,4 +1,4 @@
----
+﻿---
 title: Lijst van toegestane en geblokkeerde apps voor KNOX
 description: Aangepast profiel voor het maken van een lijst met toegestane en geblokkeerde apps voor KNOX.
 keywords: ''

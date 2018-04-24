@@ -1,4 +1,4 @@
----
+﻿---
 title: Toegang tot bedrijfsbronnen inschakelen
 description: Wi-Fi-, VPN- en e-mailprofielen stellen uw gebruikers in de gelegenheid toegang te krijgen tot de bestanden en bronnen die ze nodig hebben.
 keywords: ''

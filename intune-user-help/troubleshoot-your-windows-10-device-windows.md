@@ -1,4 +1,4 @@
----
+﻿---
 title: Problemen met de registratie van uw Windows 10-apparaat oplossen | Microsoft Docs
 description: ''
 keywords: ''

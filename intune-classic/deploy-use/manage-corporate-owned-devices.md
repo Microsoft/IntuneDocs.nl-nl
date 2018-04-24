@@ -1,4 +1,4 @@
----
+﻿---
 title: Apparaten in bedrijfseigendom beheren
 description: Apparaten in bedrijfseigendom kunnen op verschillende manieren worden ingeschreven, afhankelijk van het type apparaat, hoe dit apparaat is aangeschaft en wat de behoeften van de organisatie zijn.
 keywords: ''

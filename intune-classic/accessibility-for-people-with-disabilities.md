@@ -1,4 +1,4 @@
----
+﻿---
 title: Toegankelijkheid voor mensen met een handicap
 description: Toegankelijkheidsinformatie over Microsoft-producten.
 keywords: ''

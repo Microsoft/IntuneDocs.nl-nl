@@ -1,4 +1,4 @@
----
+﻿---
 title: Uw computer is al geregistreerd | Microsoft Docs
 description: ''
 keywords: ''

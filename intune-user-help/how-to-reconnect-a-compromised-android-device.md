@@ -1,4 +1,4 @@
----
+﻿---
 title: Opnieuw verbinding maken met een Android-apparaat waarmee is geknoeid | Microsoft Docs
 description: ''
 keywords: ''

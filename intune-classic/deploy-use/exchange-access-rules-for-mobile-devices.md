@@ -1,4 +1,4 @@
----
+﻿---
 title: Exchange-toegangsregels voor mobiele apparaten
 description: Exchange ActiveSync-toegangsregels voor het toestaan of blokkeren van apparaatverbindingen met EAS
 keywords: ''

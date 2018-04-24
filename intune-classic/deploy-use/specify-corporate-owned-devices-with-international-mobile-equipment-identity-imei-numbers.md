@@ -1,4 +1,4 @@
----
+﻿---
 title: IMEI-nummers opgeven
 description: Met Microsoft Intune kunnen beheerders IMEI-nummers importeren voor platforms voor mobiele apparaten om ze te helpen bij het identificeren van mobiele apparaten in bedrijfseigendom
 keywords: ''

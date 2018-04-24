@@ -1,4 +1,4 @@
----
+﻿---
 title: Conflicten tussen GPO-beleid en Intune-beleid oplossen
 description: Informatie over het oplossen van conflicten tussen het groepsbeleid en de beleidsregels voor de Intune-configuratie.
 keywords: ''

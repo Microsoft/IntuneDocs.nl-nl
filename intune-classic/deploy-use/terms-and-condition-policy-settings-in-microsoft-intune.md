@@ -1,4 +1,4 @@
----
+﻿---
 title: Beleidsinstellingen voor voorwaarden
 description: U kunt de voorwaarden van Intune implementeren voor gebruikersgroepen om uit te leggen hoe zaken als inschrijving, toegang tot werkresources en het gebruik van de bedrijfsportal-app invloed hebben op apparaten en gebruikers.
 keywords: ''
