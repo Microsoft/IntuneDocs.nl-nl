@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e0fa9f66ee0338b21e12a27ef60fb0df22d23030
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 02e821f24c378c15a474adda901699664a9af68a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>iOS-apps met configuratiebeleid voor mobiele apps in Microsoft Intune configureren
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Gebruik het configuratiebeleid voor mobiele apps in Microsoft Intune om instellingen op te geven die mogelijk zijn vereist wanneer gebruikers een iOS-app uitvoeren. Een app kan gebruikers bijvoorbeeld verplichten het volgende op te geven:
 
@@ -77,14 +77,14 @@ Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** .
 ## <a name="information-about-the-xml-file-format"></a>Informatie over de XML-indeling
 
 Intune ondersteunt de volgende gegevenstypen in een eigenschappenlijst:
-    
+
 - &lt;geheel getal&gt;
 - &lt;reëel&gt;
 - &lt;tekenreeks&gt;
 - &lt;matrix&gt;
 - &lt;woordenlijst&gt;
 - &lt;waar /&gt; of &lt;onwaar /&gt;
-     
+
 Zie [Over eigenschappenlijsten](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) in de iOS-ontwikkelaarsbibliotheek voor meer informatie over gegevenstypen.
 
 Intune ondersteunt verder de volgende typen tokens in de lijst met eigenschappen:
@@ -97,7 +97,7 @@ Intune ondersteunt verder de volgende typen tokens in de lijst met eigenschappen
 - \{\{username\}\} - (voorbeeld: **Jan de Vries**)
 - \{\{serialnumber\}\} - (voorbeeld: **F4KN99ZUG5V2**) voor iOS-apparaten
 - \{\{serialnumberlast4digits\}\} - (Example: **G5V2**) voor iOS-apparaten
-    
+
 De tekens \{\{ en \}\} worden alleen gebruikt door tokentypen en mogen niet worden gebruikt voor andere doeleinden.
 
 ## <a name="associate-a-mobile-app-configuration-policy-with-an-app"></a>Een configuratiebeleid voor mobiele apps aan een app koppelen
@@ -139,5 +139,4 @@ Wanneer u een configuratiebestand voor een mobiele app maakt, kunt u een of meer
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```

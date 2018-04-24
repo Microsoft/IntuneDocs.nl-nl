@@ -14,11 +14,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc73befb46f1f159d9a8c023bb5604517b9f73f4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="change-the-mdm-authority"></a>De MDM-instantie wijzigen
 Vanaf Configuration Manager versie 1610 kunt u de MDM-instantie wijzigen zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven. Dit onderwerp bevat de benodigde stappen voor het wijzigen van een bestaande Microsoft Intune-tenant die is geconfigureerd in Intune en waarbij de MDM-instantie is ingesteld op **Microsoft Intune** (zelfstandige versie) naar **Configuration Manager** (hybride MDM), zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven.
@@ -76,16 +76,16 @@ Als u iOS-apparaten hebt, moet u het APNs-certificaat in Configuration Manager c
 
 1. **Een aanvraag voor certificaatondertekening downloaden**
 
-    1. Ga in de Configuration Manager-console naar **Beheer** &gt; **Cloudservices** &gt; **Microsoft Intune-abonnementen** en selecteer **APNs-certificaataanvraag maken** om het dialoogvenster **Aanvraag voor Apple Push Notification Service-certificaatondertekening aanvragen** te openen.  
-    2. **Blader** naar het pad om het nieuwe aanvraagbestand tot certificaatondertekening (.csr) op te slaan. Sla het bestand met de aanvraag voor certificaatondertekening (.csr) lokaal op.  
-    3. Klik op **Downloaden**. Het nieuwe Microsoft Intune CSR-bestand wordt gedownload en door Configuration Manager opgeslagen.   
+   1. Ga in de Configuration Manager-console naar **Beheer** &gt; **Cloudservices** &gt; **Microsoft Intune-abonnementen** en selecteer **APNs-certificaataanvraag maken** om het dialoogvenster **Aanvraag voor Apple Push Notification Service-certificaatondertekening aanvragen** te openen.  
+   2. **Blader** naar het pad om het nieuwe aanvraagbestand tot certificaatondertekening (.csr) op te slaan. Sla het bestand met de aanvraag voor certificaatondertekening (.csr) lokaal op.  
+   3. Klik op **Downloaden**. Het nieuwe Microsoft Intune CSR-bestand wordt gedownload en door Configuration Manager opgeslagen.   
 
-    > [!IMPORTANT]
-    > U moet een nieuwe aanvraag voor certificaatondertekening downloaden. Als u een bestaand bestand gebruikt, mislukt de aanvraag.  
+      > [!IMPORTANT]
+      > U moet een nieuwe aanvraag voor certificaatondertekening downloaden. Als u een bestaand bestand gebruikt, mislukt de aanvraag.  
 
-2.  Ga naar de [Apple Push Certificates-portal](http://go.microsoft.com/fwlink/?LinkId=269844) en meld u aan met **dezelfde** Apple-id die eerder is gebruikt voor het maken en vernieuwen van het APNs-certificaat dat u gebruikte in de zelfstandige versie van Intune.
+2. Ga naar de [Apple Push Certificates-portal](http://go.microsoft.com/fwlink/?LinkId=269844) en meld u aan met **dezelfde** Apple-id die eerder is gebruikt voor het maken en vernieuwen van het APNs-certificaat dat u gebruikte in de zelfstandige versie van Intune.
 
-    ![Aanmeldpagina bij de Apple Push Certificates-portal](../media/mdm-change-apns-portal.png)
+   ![Aanmeldpagina bij de Apple Push Certificates-portal](../media/mdm-change-apns-portal.png)
 
 3. Selecteer het APNs-certificaat dat u gebruikte in de zelfstandige versie van Intune en klik op **Vernieuwen**.
 

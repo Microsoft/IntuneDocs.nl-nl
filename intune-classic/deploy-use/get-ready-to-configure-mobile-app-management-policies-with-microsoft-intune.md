@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 52cba4de7d19744e1a011071ac6c9bbb168ffb30
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Aan de slag met configureren van beveiligingsbeleid voor apps in Azure-portal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In dit onderwerp wordt uitgelegd aan welke vereisten u moet voldoen en welke stappen u moet voltooien **voordat** u beveiligingsbeleid voor apps in Azure-portal kunt maken.
 
@@ -74,18 +74,18 @@ Ga voor de volledige lijst met ondersteunde Microsoft-apps naar de [galerie met 
 
 ## <a name="prerequisites"></a>Vereisten
 
--   **Een Microsoft Intune-abonnement**. Eindgebruikers hebben Intune-licenties nodig om apps met beveiligingsbeleid voor apps te kunnen downloaden.
-U hebt al een Intune-abonnement als u momenteel Intune gebruikt om uw apparaten te beheren. U hebt ook een Intune-abonnement als u een licentie voor Enterprise Mobility Suite (EMS) hebt aangeschaft. Als u Intune uitprobeert om te zien wat de MAM-mogelijkheden zijn, kunt u op de [pagina van Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) een proefaccount aanvragen.
+- **Een Microsoft Intune-abonnement**. Eindgebruikers hebben Intune-licenties nodig om apps met beveiligingsbeleid voor apps te kunnen downloaden.
+  U hebt al een Intune-abonnement als u momenteel Intune gebruikt om uw apparaten te beheren. U hebt ook een Intune-abonnement als u een licentie voor Enterprise Mobility Suite (EMS) hebt aangeschaft. Als u Intune uitprobeert om te zien wat de MAM-mogelijkheden zijn, kunt u op de [pagina van Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) een proefaccount aanvragen.
 
-    Als u wilt controleren of u een Intune-abonnement op de Office-portal hebt, gaat u naar de pagina **Facturering**.  Als u een abonnement hebt, moet Intune in het gedeelte met abonnementen zijn gemarkeerd als **Actief**.
+  Als u wilt controleren of u een Intune-abonnement op de Office-portal hebt, gaat u naar de pagina **Facturering**.  Als u een abonnement hebt, moet Intune in het gedeelte met abonnementen zijn gemarkeerd als **Actief**.
 
--   **Een abonnement op Office 365**. Dit is vereist voor het volgende:
+- **Een abonnement op Office 365**. Dit is vereist voor het volgende:
 
   - Het toepassen van beveiligingsbeleid voor apps op apps met ondersteuning voor meerdere identiteiten.
 
   - Het maken van SharePoint Online- en Exchange Online-werkaccounts. Exchange on-premises en SharePoint on-premises worden niet ondersteund.
 
--   **Skype voor Bedrijven Online instellen voor moderne verificatie**. Zie voor meer informatie [Moderne verificatie inschakelen](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+- **Skype voor Bedrijven Online instellen voor moderne verificatie**. Zie voor meer informatie [Moderne verificatie inschakelen](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) voor het maken van gebruikers. Azure AD verifieert gebruikers wanneer ze de app openen en hun werkreferenties invoeren.

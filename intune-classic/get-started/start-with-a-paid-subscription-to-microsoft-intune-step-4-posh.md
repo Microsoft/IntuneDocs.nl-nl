@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f6cd6f71b3f78a7b77435d1c7474c1bd672b8b95
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b6c0349d8e8c3b20d4674706d3cdf52234bab1c2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-intune-licenses-using-powershell"></a>Intune-licenties beheren met PowerShell
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In dit onderwerp wordt aan beheerders uitgelegd hoe ze PowerShell kunnen gebruiken voor het beheren van Intune-gebruikerslicenties.
 
@@ -68,5 +68,5 @@ Controleer met:
 
 ### <a name="next-steps"></a>Volgende stappen
 Gefeliciteerd. U hebt zojuist stap 4 van de *Snelstartgids voor Intune* voltooid.
->[!div class="step-by-step"]
-(/ intune /-domain-name-Configureer) [ &larr; **Gebruikers synchroniseren met Intune**](/intune/custom-domain-name-configure)     [**Gebruikers en apparaten indelen** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+> [!div class="step-by-step"]
+> (/ intune /-domain-name-Configureer) [ &larr; **Gebruikers synchroniseren met Intune**](/intune/custom-domain-name-configure)     [**Gebruikers en apparaten indelen** &rarr;](./start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  

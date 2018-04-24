@@ -2,23 +2,23 @@
 title: Intune voorbereiden op het beheer van mobiele apparaten
 titlesuffix: Microsoft Intune
 description: Evalueer uw bedrijfs- en technische vereisten voordat u migreert naar Microsoft Intune.
-keywords: 
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 52af99e79b9c97fc38dc911fb55070180667b7a1
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: f7bf390bd581e3edee1c94f446e89b16163cadee
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: Microsoft Intune voorbereiden op het beheer van mobiele apparaten (MDM)
 
@@ -55,23 +55,23 @@ Alvorens in te gaan op de details van de Intune-configuratie, komen eerst de ver
 
 ### <a name="what-is-your-device-security-policy"></a>Wat voor beveiligingsbeleid voor apparaten hanteert u?
 
--   Wilt u gebruikmaken van versleuteling op apparaatniveau?
+- Wilt u gebruikmaken van versleuteling op apparaatniveau?
 
--   Wat zijn de lengtes van uw huidige apparaatwachtwoordcode/-pin-code?
+- Wat zijn de lengtes van uw huidige apparaatwachtwoordcode/-pin-code?
 
--   Moet u apparaatfuncties uitschakelen of bepaald gedrag van apparaten beperken? U kunt een aantal platformspecifieke instellingen beheren met apparaatconfiguratieprofielen, zoals:
-      - Camera uitschakelen
-      - Vergrendelen op de modus voor enkele toepassing<br/>
+- Moet u apparaatfuncties uitschakelen of bepaald gedrag van apparaten beperken? U kunt een aantal platformspecifieke instellingen beheren met apparaatconfiguratieprofielen, zoals:
+    - Camera uitschakelen
+    - Vergrendelen op de modus voor enkele toepassing<br/>
 
--   Voor welke soorten verificatie moet u ondersteuning bieden? Als u gebruikmaakt van verificatie op basis van certificaten, welke certificaten moeten er dan worden verstrekt?
+- Voor welke soorten verificatie moet u ondersteuning bieden? Als u gebruikmaakt van verificatie op basis van certificaten, welke certificaten moeten er dan worden verstrekt?
   - Intune kan certificaten verstrekken met resourcetoegangsprofielen voor ingeschreven apparaten.
-    -   Voor wat voor PKI-infrastructuur (Public Key Infrastructure) moet u ondersteuning bieden?
-<br></br>
--   Moet u voor VPN (Virtual Private Network) ondersteuning bieden op apparaat- of appniveau?
+  -   Voor wat voor PKI-infrastructuur (Public Key Infrastructure) moet u ondersteuning bieden?
+  <br></br>
+- Moet u voor VPN (Virtual Private Network) ondersteuning bieden op apparaat- of appniveau?
 
-    -   Intune kan VPN-configuraties verstrekken voor externe VPN-providers.
-<br/><br/>
--   Kunnen er tijdelijke uitzonderingen worden gemaakt voor bepaalde vereisten om uitvaltijd te voorkomen? Of moeten apparaten met toegang altijd voldoen aan alle beveiligingsvereisten?
+  -   Intune kan VPN-configuraties verstrekken voor externe VPN-providers.
+  <br/><br/>
+- Kunnen er tijdelijke uitzonderingen worden gemaakt voor bepaalde vereisten om uitvaltijd te voorkomen? Of moeten apparaten met toegang altijd voldoen aan alle beveiligingsvereisten?
 
 ## <a name="next-steps"></a>Volgende stappen
 Zie deze [casestudy's](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) uit verschillende bedrijfstakken om te zien hoe organisaties de vereisten voor het beheer van mobiele apparaten hebben geëvalueerd.

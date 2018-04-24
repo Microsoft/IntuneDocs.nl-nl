@@ -1,29 +1,29 @@
 ---
 title: E-mail en Office 365 beveiligen
 description: In dit onderwerp wordt beschreven hoe u voorwaardelijke toegang gebruikt om alleen compatibele apparaten toegang te geven tot e-mail en bedrijfsgegevens op SharePoint Online en andere services.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab45292734c39d3eaf4a5f0403cbff6e77d9d7e6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e121a3aaf4988bd92c36eb79131b2205263fb309
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>De toegang tot e-mail, Office 365-services en andere services beveiligen met Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 U kunt toegang tot uw bedrijfs-e-mail, Office 365-services zoals **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online** en **Skype voor Bedrijven Online** en andere services beveiligen met behulp van voorwaardelijke toegang van Enterprise Mobility + Security (EMS). Hiermee kunt u ervoor zorgen dat de toegang tot uw bedrijfs-e-mail en Office 365-services wordt beperkt tot apparaten die de regels voor voorwaardelijke toegang naleven die u in de Intune-beheerconsole of via de klassieke Azure-portal hebt ingesteld.
 ## <a name="how-does-conditional-access-work"></a>Hoe werkt voorwaardelijke toegang?
@@ -72,12 +72,12 @@ In tegenstelling tot andere Intune-beleidsregels implementeert u geen beleidsreg
 
 2. [Nalevingsbeleid voor apparaten maken](create-a-device-compliance-policy-in-microsoft-intune.md).
 
-2.  Maak beleid voor voorwaardelijke toegang voor een van de volgende Microsoft-cloudservices/-producten:
+3. Maak beleid voor voorwaardelijke toegang voor een van de volgende Microsoft-cloudservices/-producten:
 
-  - [Maak beleid voor voorwaardelijke toegang voor Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Maak beleid voor voorwaardelijke toegang voor Exchange On-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Maak beleid voor voorwaardelijke toegang voor Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Maak beleid voor voorwaardelijke toegang voor oudere versies van Exchange Online Dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Beleid voor voorwaardelijke toegang maken voor SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  - [Beleid voor voorwaardelijke toegang maken voor Skype voor Bedrijven Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-  - [Beleid voor voorwaardelijke toegang maken voor Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+   - [Maak beleid voor voorwaardelijke toegang voor Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Maak beleid voor voorwaardelijke toegang voor Exchange On-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [Maak beleid voor voorwaardelijke toegang voor Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Maak beleid voor voorwaardelijke toegang voor oudere versies van Exchange Online Dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [Beleid voor voorwaardelijke toegang maken voor SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+   - [Beleid voor voorwaardelijke toegang maken voor Skype voor Bedrijven Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+   - [Beleid voor voorwaardelijke toegang maken voor Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)

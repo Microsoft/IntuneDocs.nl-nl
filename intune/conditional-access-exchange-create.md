@@ -2,27 +2,27 @@
 title: Beleid voor voorwaardelijke toegang tot Exchange maken
 titlesuffix: Microsoft Intune
 description: Configureer voorwaardelijke toegang voor Exchange On-Premises en oudere Exchange Online Dedicated in Intune.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cfe5916668de6d8bb3c42f2fd6afb6221bbc07e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 183eb3f121e1b5c53673d10a04d0710baeb5a703
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Een beleid voor voorwaardelijke toegang maken voor Exchange On-Premises en verouderde Exchange Online Dedicated
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In dit artikel leest u hoe u de voorwaardelijke toegang voor Exchange On-Premises configureert op basis van apparaatnaleving.
 
@@ -78,7 +78,7 @@ De native **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bi
 
 1. Nadat u zich hebt aangemeld, ziet u het **Azure-dashboard**.
 
-1. Kies **Alle services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
+1. Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
 
 1. Kies **Intune**. Vervolgens ziet u het **Intune-Dashboard**.
 

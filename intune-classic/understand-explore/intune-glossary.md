@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: b4415b7b4b1cd48accae3f0d0d39caedd9cf6b3c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9ddf972795d9ced6aff6dd01da4469d49f11c951
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Verklarende woordenlijst voor Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="a"></a>A
 
@@ -40,11 +40,13 @@ ms.lasthandoff: 03/22/2018
 |Azure-portal|De nieuwe console voor Intune die binnenkort wordt geïntroduceerd. [Meer informatie over de nieuwe portal](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|[Bring your own device](/intune-classic/get-started/choose-how-to-enroll-devices1). Gebruikers kunnen de Intune-bedrijfsportal-app op hun apparaten installeren en deze vervolgens inschrijven, zodat ze toegang krijgen tot bedrijfsresources zoals e‑mail, bedrijfsapps, bedrijfsgegevens en ondersteuning.|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |Certificaatprofiel|U gebruikt dit beleidstype voor het [beveiligen van toegang tot bedrijfsresources](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles) met certificaten wanneer u Wi‑Fi-, e‑mail- of VPN-profielen gebruikt.|
@@ -57,6 +59,7 @@ ms.lasthandoff: 03/22/2018
 |Aangepast beleid|U [gebruikt dit beleid](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) wanneer een algemeen configuratiebeleid geen ingebouwde instelling bevat die voldoet aan uw behoeften. U kunt mogelijk een aangepast beleid gebruiken om een instelling op een andere manier, bijvoorbeeld de Apple Configurator of OMA-URI, te maken.|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |Implementatie|De handeling waarmee een app of een beleid naar een door u beheerd apparaat of door u beheerde gebruiker wordt verzonden.|
@@ -65,6 +68,7 @@ ms.lasthandoff: 03/22/2018
 |Toewijzing van apparaatgroepen|Helpt u bij het [automatisch toevoegen van apparaten aan groepen](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) op basis van een apparaatcategorie (zoals 'Persoonlijk' of 'Verkoop') die u of de eindgebruiker aan het apparaat kunt toewijzen.|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |E-mailprofiel|Dit beleid kan worden gebruikt voor het instellen van [toegangsinstellingen voor e‑mail ](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) voor specifieke e‑mailclients op mobiele apparaten, zodat de eindgebruiker maar een minimum aan installatiehandelingen hoeft te verrichten.|
@@ -73,21 +77,25 @@ ms.lasthandoff: 03/22/2018
 |Inschrijven|Microsoft Intune maakt gebruik van [inschrijving](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) om apparaten onder beheer te brengen en toegang tot resources toe te staan.|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|Een [Microsoft-service](https://technet.microsoft.com/library/mt228265.aspx) voor Intune-gebruikers met 150 licenties in een in aanmerking komend abonnement. Microsoft-specialisten gebruiken deze service om u te helpen aan de slag te gaan met Intune.|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |Groepen|Door groepen te gebruiken kunt u op een [logische manier gebruikers of apparaten samenbrengen](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune). U kunt bijvoorbeeld een groep maken van alle Windows-computers. Vervolgens kunt u apps en beleid implementeren naar deze groepen.|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |Hybride|Een configuratie waarbij u apparaten kunt beheren die zijn ingeschreven bij Intune [via de System Center Configuration Manager-console](/intune-classic/get-started/integration-with-cloud-services).|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Intune-beheerconsole|De huidige console die u gebruikt voor de meeste beheerbewerkingen van Intune.|
@@ -96,11 +104,13 @@ ms.lasthandoff: 03/22/2018
 |Inventaris|Wordt gebruikt om de [hardware en software weer te geven die is geïnstalleerd](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) op apparaten die u beheert.|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |Kioskmodus|Deze modus wordt geconfigureerd als onderdeel van een [algemeen configuratiebeleid](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) en stelt u in staat apparaten te vergrendelen. U zou bijvoorbeeld een detailhandelapparaat zo kunnen configureren dat er slechts één app op mag worden uitgevoerd.|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Managed Browser|Dit is een [browsertoepassing](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies) die u in uw organisatie kunt implementeren met Microsoft Intune. Een beheerde-browserbeleid bevat een lijst met toegestane of een lijst met geblokkeerde websites waarmee de websites die gebruikers van de beheerde browser kunnen bezoeken, worden beperkt.|
@@ -111,18 +121,21 @@ ms.lasthandoff: 03/22/2018
 |Beleid voor de configuratie van mobiele apps|Een iOS-beleid dat wordt gebruikt voor [ het leveren van instellingen aan compatibele iOS-apps](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) wanneer ze worden uitgevoerd, bijvoorbeeld een bedrijfsnaam of serveradres.|
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Een standaardprotocol voor het beheer van apparaten dat door veel hardwarefabrikanten wordt gebruikt om het beheer van functies van mobiele apparaten en pc's mogelijk te maken.|
 |OMA-URI|Open Mobile Alliance Uniform Resource Identifier. Hiermee kunnen instellingen voor afzonderlijke apparaten worden geïdentificeerd die aan de OMA-DM-standaard voldoen. Een aantal van deze kan worden gebruikt in [aangepast Intune-beleid ](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) wanneer er geen ingebouwde instelling is die aan uw behoeften voldoet.|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |Beleid|Een [pakket met informatie](/intune-classic/deploy-use/microsoft-intune-policy-reference) dat van Intune naar een apparaat is verzonden. U kunt bijvoorbeeld beveiligingsinstellingen of informatie over de compatibiliteit van een apparaat naar het apparaat implementeren.|
 |Wachtwoordcode opnieuw instellen|Een Intune-functie waarmee u de eindgebruiker kunt dwingen [de wachtwoordcode opnieuw in te stellen](/intune-classic/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) op ondersteunde apparaten.|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |Vergrendelen op afstand|Een Intune-functie waarmee u [ondersteunde apparaten kunt vergrendelen](/intune-classic/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune), zelfs als u niet in bezit bent van het apparaat.|
@@ -131,12 +144,14 @@ ms.lasthandoff: 03/22/2018
 |Vereisten|Dit is een [app-implementatiebewerking](/intune-classic/deploy-use/add-apps) waarmee u de vereisten kunt selecteren waaraan een apparaat moet voldoen voordat de app kan worden geïnstalleerd. U kunt bijvoorbeeld de versie van het iOS-besturingssysteem opgeven dat moet zijn geïnstalleerd voordat de app kan worden geïnstalleerd.|
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |Selectief wissen|Met [selectief wissen](/intune-classic/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune) worden uitsluitend bedrijfsgegevens van een apparaat verwijderd, inclusief MAM-gegevens (Mobile App Management-gegevens), indien van toepassing, instellingen en e‑mailprofielen. Bij Selectief wissen blijven de persoonlijke gegevens van de gebruiker op het apparaat behouden.|
 |Abonnement|De overeenkomst waarmee u toegang hebt tot een Intune-tenant.|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Een toepassing van derden die samen met Intune [mogelijkheden biedt voor hulp op afstand](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-for-windows-pcs) voor Windows-pc's die worden beheerd door de Intune-softwareclient.|
@@ -144,12 +159,15 @@ ms.lasthandoff: 03/22/2018
 |Voorwaarden|Een beleidstype dat u implementeert naar gebruikers en dat informatie bevat die gebruikers moeten [lezen en accepteren](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) voordat ze de bedrijfsportal kunnen gebruiken om zich in te schrijven en toegang tot hun werk te krijgen.|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |Apps die zijn gekocht via het volume-aankoopprogramma|Sommige app stores bieden u de mogelijkheid meerdere licenties te kopen voor een app die u in uw bedrijf wilt gebruiken. Met Intune kunt u nu apps beheren die u [via een dergelijk programma hebt aangeschaft](/intune-classic/deploy-use/manage-volume-purchased-apps-in-microsoft-intune), door de licentiegegevens uit de app store te importeren en bij te houden hoeveel licenties u hebt gebruikt. Zo wordt voorkomen dat u meer exemplaren van de app installeert dan u hebt aangeschaft.|
 |VPN-profiel|Een beleid dat [VPN-instellingen](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune) implementeert naar apparaten die u beheert, zodat het aantal installatiehandelingen die eindgebruikers moeten uitvoeren, zo klein mogelijk wordt gehouden.|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Wi-Fi-profiel|Een beleid dat [draadloze netwerkinstellingen](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) implementeert naar apparaten, waarmee gebruikers verbinding kunnen maken met uw bedrijfsnetwerk zonder dat ze de instellingen hoeven te kennen of te configureren.
+
+|               |                                                                                                                                                                                                                                 |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wi-Fi-profiel | Een beleid dat [draadloze netwerkinstellingen](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) implementeert naar apparaten, waarmee gebruikers verbinding kunnen maken met uw bedrijfsnetwerk zonder dat ze de instellingen hoeven te kennen of te configureren. |
+

@@ -1,25 +1,25 @@
 ---
 title: VPN per app in Microsoft Intune instellen voor iOS-apparaten
-titleSuffix: 
+titleSuffix: ''
 description: Specificeer welke beheerde apps uw virtueel particulier netwerk (VPN) mogen gebruiken op iOS-apparaten die met Intune worden beheerd.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2839a11f95614add0691813a9fdf89dba0a2d5d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>VPN per app instellen in Intune voor iOS-apparaten
 
@@ -67,7 +67,7 @@ Importeer het door de CA uitgegeven basiscertificaat van de VPN-server in een pr
 4. Klik op het mappictogram en blader naar het VPN-certificaat (CER-bestand) dat u vanuit de VPN-beheerconsole hebt geëxporteerd. Klik op **OK**.
 5. Klik op **Maken**.
 
-    ![Een vertrouwd certificaatprofiel maken](media\vpn-per-app-create-trusted-cert.png)
+    ![Een vertrouwd certificaatprofiel maken](./media/vpn-per-app-create-trusted-cert.png)
 
 ## <a name="create-a-scep-certificate-profile"></a>Een SCEP-certificaatprofiel maken
 
@@ -94,7 +94,7 @@ Op basis van het vertrouwde certificaatprofiel vertrouwt iOS automatisch de VPN-
 14. Klik op **OK**.
 15. Klik op **Maken**.
 
-    ![Een SCEP-certificaatprofiel maken](media\vpn-per-app-create-scep-cert.png)
+    ![Een SCEP-certificaatprofiel maken](./media/vpn-per-app-create-scep-cert.png)
 
 ## <a name="create-a-per-app-vpn-profile"></a>Een VPN per app-profiel maken
 
@@ -123,7 +123,7 @@ Het VPN-profiel bevat het SCEP-certificaat met de referenties van de client, de 
 6. Klik op **OK**.
 7. Klik op **Maken**.
 
-    ![Een VPN per app-profiel maken](media\vpn-per-app-create-vpn-profile.png)
+    ![Een VPN per app-profiel maken](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Een app aan het VPN-profiel koppelen
@@ -146,7 +146,7 @@ Na het toevoegen van uw VPN-profiel moet u de app en de Azure AD-groep (Microsof
 
 9. Klik op **OK** en op **Opslaan**.
 
-    ![Een app aan het VPN koppelen](media\vpn-per-app-app-to-vpn.png)
+    ![Een app aan het VPN koppelen](./media/vpn-per-app-app-to-vpn.png)
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>De verbinding controleren op het iOS-apparaat
 

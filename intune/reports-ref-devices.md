@@ -8,18 +8,18 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d8a7aeba4170bf6640083b95562d644299693f31
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 185cf1061ff4d577fd14af59bbe5fbc38365c3d1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
@@ -413,10 +413,12 @@ De entiteit **MdmDeviceInventoryHistories** bevat dagelijkse momentopnamen van i
 
 Met de entiteit **ApplicationInventory** worden de apps weergegeven die zich op het moment van de inventarisatieverzameling op het apparaat bevinden.
 
-| Eigenschap  | Description |
-|---------|------------|
-| DeviceKey |Een verwijzing naar de apparatentabel. |
-| ApplicationKey |? (overgenomen van ExchangeDeviceService\DeviceApplication). |
-| ApplicationName |? (overgenomen van ExchangeDeviceService\DeviceApplication). |
-| ApplicationVersion |? (overgenomen van ExchangeDeviceService\DeviceApplication). |
-| BundleSize |? (overgenomen van ExchangeDeviceService\DeviceApplication). |
+
+|      Eigenschap      |                       Description                        |
+|--------------------|----------------------------------------------------------|
+|     DeviceKey      |              Een verwijzing naar de apparatentabel.               |
+|   ApplicationKey   | ? (overgenomen van ExchangeDeviceService\DeviceApplication). |
+|  ApplicationName   | ? (overgenomen van ExchangeDeviceService\DeviceApplication). |
+| ApplicationVersion | ? (overgenomen van ExchangeDeviceService\DeviceApplication). |
+|     BundleSize     | ? (overgenomen van ExchangeDeviceService\DeviceApplication). |
+

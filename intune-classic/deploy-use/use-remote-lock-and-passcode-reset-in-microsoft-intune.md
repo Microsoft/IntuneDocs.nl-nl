@@ -1,28 +1,28 @@
 ﻿---
 title: Extern vergrendelen en de wachtwoordcode opnieuw instellen
 description: Intune biedt mogelijkheden voor zowel extern vergrendelen als het opnieuw instellen van de wachtwoordcode.
-keywords: 
+keywords: ''
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.custom: intune-classic
-ms.openlocfilehash: 0fb7014392655eef44f94cf095717616732ebfd0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fc1cad418904de335b434a3726e2772d0558b303
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Uw apparaten beschermen met extern vergrendelen en het opnieuw instellen van de wachtwoordcode
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune biedt mogelijkheden voor zowel extern vergrendelen als het opnieuw instellen van de wachtwoordcode.
 
@@ -69,7 +69,7 @@ Als een gebruiker een wachtwoordcode vergeet, kunt u helpen door de wachtwoordco
 |Windows Phone 8 en Windows Phone 8.1|Ondersteund|
 |Windows RT 8.1|Niet ondersteund|
 |Windows 8.1|Niet ondersteund|
-|Windows 10-bureaublad|Niet ondersteund|
+|Windows 10 Desktop|Niet ondersteund|
 
 Wachtwoordcode opnieuw instellen wordt niet ondersteund voor Windows-computers die zijn ingeschreven bij de Intune-software-client.
 
@@ -85,5 +85,5 @@ Wachtwoordcode opnieuw instellen wordt niet ondersteund voor Windows-computers d
 3.  Kies in de lijst de apparaten die u wilt vergrendelen. Kies op de taakbalk **Externe taken** en selecteer **Wachtwoordcode opnieuw instellen**.
 
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Apparaten buiten gebruik stellen](retire-devices-from-microsoft-intune-management.md) en [Selectief wissen in Windows voor beheer van apparaatgegevens](http://technet.microsoft.com/library/dn486874.aspx)

@@ -1,28 +1,28 @@
 ---
 title: Registreren of aanmelden bij Microsoft Intune
 description: Zo kunt u zich registreren voor een Microsoft Intune-abonnement of u aanmelden om met uw abonnement aan de slag te gaan.
-keywords: 
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8858768586398d3dbb341c9963727df5faf9da15
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 14a295828a332b45e1cb0bc6d9b3b97bef5a3a59
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Registreren of aanmelden bij Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 In dit onderwerp wordt aan systeembeheerders uitgelegd hoe u zich kunt aanmelden voor een Intune-account.
 
@@ -35,11 +35,11 @@ Als u al een werk- of schoolaccount hebt **meld u dan aan** met dat account en v
 
 ## <a name="how-to-sign-up-or-sign-in-to-intune"></a>Registreren of aanmelden bij Intune
 
-1.  Ga naar de [Registratiepagina van Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+1. Ga naar de [Registratiepagina van Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
-  ![Schermafbeelding van de registratiewebpagina van de evaluatieversie van het Microsoft Intune-account](./media/account-sign-up-site.png)
+   ![Schermafbeelding van de registratiewebpagina van de evaluatieversie van het Microsoft Intune-account](./media/account-sign-up-site.png)
 
-2.  Op de Registratiepagina kunt u zich aanmelden of registreren om een nieuw abonnement van Intune te beheren.
+2. Op de Registratiepagina kunt u zich aanmelden of registreren om een nieuw abonnement van Intune te beheren.
 
 ## <a name="post-sign-up-considerations"></a>Overwegingen voor na uw registratie
 Nadat u zich hebt geregistreerd voor een nieuw abonnement, ontvangt u een e-mailbericht met gegevens over uw account op het e-mailadres dat u hebt opgegeven tijdens het registratieproces. In deze e-mail wordt bevestigd dat uw abonnement actief is.

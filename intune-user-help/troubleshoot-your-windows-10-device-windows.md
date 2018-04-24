@@ -1,27 +1,27 @@
 ﻿---
 title: Problemen met de registratie van uw Windows 10-apparaat oplossen | Microsoft Docs
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 936a336019c37fb5ae5f7ef8f5b1201faee553fc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 97f23594a5c7b047caf37dbaa39c481585a96d76
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Problemen met de registratie van uw Windows 10-apparaat oplossen
 Als u de stappen in [Uw Windows 10 Mobile- of Windows 10-desktopapparaat registreren bij Intune](enroll-your-w10-phone-or-w10-pc-windows.md) hebt gevolgd, maar u nog steeds geen toegang hebt tot de e-mails en bestanden van uw werk- of schoolaccount, volgt u deze stappen voor probleemoplossing.
@@ -38,15 +38,15 @@ Als u de stappen in [Uw Windows 10 Mobile- of Windows 10-desktopapparaat registr
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Probleemoplossingsstappen als u Werk of school openen ziet
 
-1.  Als u bovenstaande stappen hebt uitgevoerd, maar nog steeds geen toegang hebt tot de e-mails of bestanden van uw werk- of schoolaccount, gaat u terug naar **Werk of school openen**.
+1. Als u bovenstaande stappen hebt uitgevoerd, maar nog steeds geen toegang hebt tot de e-mails of bestanden van uw werk- of schoolaccount, gaat u terug naar **Werk of school openen**.
 
 2. Voer een van de volgende handelingen uit:
 
-    - Als u een verbinding ziet die lijkt op die in de onderstaande afbeelding, tikt u erop. Controleer vervolgens of u de opties Beheren, Info en Verbinding verbreken ziet. Als deze opties worden weergegeven, bent u nu geregistreerde en verbonden.
+   - Als u een verbinding ziet die lijkt op die in de onderstaande afbeelding, tikt u erop. Controleer vervolgens of u de opties Beheren, Info en Verbinding verbreken ziet. Als deze opties worden weergegeven, bent u nu geregistreerde en verbonden.
 
-    ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
+     ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-    - Als u de bovenstaande verbindingsinformatie niet ziet, of u ziet deze wel maar er ontbreken opties, tikt u op **Verbinden** en meldt u zich aan met de referenties van uw werk- of schoolaccount. U bent nu verbonden.
+   - Als u de bovenstaande verbindingsinformatie niet ziet, of u ziet deze wel maar er ontbreken opties, tikt u op **Verbinden** en meldt u zich aan met de referenties van uw werk- of schoolaccount. U bent nu verbonden.
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Probleemoplossingsstappen als u Uw account ziet
 
@@ -58,6 +58,6 @@ Als u bovenstaande stappen hebt uitgevoerd, maar nog steeds geen toegang hebt to
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Probleemoplossingsstappen als u Werk- of schoolaccount instellen ziet
 
-Als u een bericht ziet met de tekst __Er is geen beheereindpunt automatisch gedetecteerd dat overeenkomt met de ingevoerde gebruikersnaam. Controleer de gebruikersnaam en probeer het opnieuw. Als u de URL naar het beheereindpunt kent, voert u deze in.__, voert u vervolgens de gebruikersnaam en het wachtwoord opnieuw in. Als dit ook niet werkt, neemt u contact op met het ondersteuningsteam van het bedrijf van de website die u moet opgeven in het tekstvak **Beheereindpunt**. Deze website ziet er waarschijnlijk als volgt uit: **www.yourcompany.onmicrosoft.com**.
+Als u een bericht ziet met de tekst <strong>Er is geen beheereindpunt automatisch gedetecteerd dat overeenkomt met de ingevoerde gebruikersnaam. Controleer de gebruikersnaam en probeer het opnieuw. Als u de URL naar het beheereindpunt kent, voert u deze in.</strong>, voert u vervolgens de gebruikersnaam en het wachtwoord opnieuw in. Als dit ook niet werkt, neemt u contact op met het ondersteuningsteam van het bedrijf van de website die u moet opgeven in het tekstvak <strong>Beheereindpunt</strong>. Deze website ziet er waarschijnlijk als volgt uit: <strong>www.yourcompany.onmicrosoft.com</strong>.
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

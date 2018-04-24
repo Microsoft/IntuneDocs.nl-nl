@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f53796e08ee962a23ab02929c4451478480e281
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c69dec5903f25b9e7f09f6a20fc35068f3329d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Problemen bij de apparaatinschrijving oplossen
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Dit onderwerp bevat suggesties voor het oplossen van problemen met de registratie van apparaat. Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
@@ -87,9 +87,9 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 8.  Verwijder waar nodig apparaten, zoals apparaten die niet langer in gebruik zijn of die onjuist zijn gedefinieerd.
 
 > [!NOTE]
-
+> 
 > U kunt de limiet voor apparaatinschrijvingen vermijden met behulp van het apparaatinschrijvingsmanageraccount, zoals wordt beschreven in [Apparaten in bedrijfseigendom inschrijven met de apparaatinschrijvingsmanager in Microsoft Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
->
+> 
 > Met een gebruikersaccount dat is toegevoegd aan het apparaatinschrijvingsmanageraccount, kunnen geen apparaten worden ingeschreven wanneer beleid voor voorwaardelijke toegang van kracht is voor die specifieke gebruikersaanmelding.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Bedrijfsportal is tijdelijk niet beschikbaar
@@ -154,7 +154,7 @@ Beheerders kunnen apparaten verwijderen in de Azure Active Directory-portal.
 **Probleem:** als u een tweede geverifieerd domein toevoegt aan uw ADFS, kunnen gebruikers met het UPN-achtervoegsel (User Principal Name) van het tweede domein zich mogelijk niet aanmelden bij de portals of kunnen ze geen apparaten registreren.
 
 
-**Oplossing:** Microsoft Office 365-klanten die gebruikmaken van eenmalige aanmelding (SSO) via AD FS 2.0 en meerdere domeinen op het hoogste niveau hebben voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com), moeten voor elk achtervoegsel een afzonderlijk exemplaar van AD FS 2.0 Federation Service implementeren. Er is nu een [updatepakket voor AD FS 2.0](http://support.microsoft.com/kb/2607496) dat kan worden gebruikt met de schakeloptie **SupportMultipleDomain** om de AD FS-server in te schakelen voor ondersteuning van dit scenario zonder extra AD FS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
+<strong>Oplossing:</strong> Microsoft Office 365-klanten die gebruikmaken van eenmalige aanmelding (SSO) via AD FS 2.0 en meerdere domeinen op het hoogste niveau hebben voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com), moeten voor elk achtervoegsel een afzonderlijk exemplaar van AD FS 2.0 Federation Service implementeren. Er is nu een [updatepakket voor AD FS 2.0](http://support.microsoft.com/kb/2607496) dat kan worden gebruikt met de schakeloptie <strong>SupportMultipleDomain</strong> om de AD FS-server in te schakelen voor ondersteuning van dit scenario zonder extra AD FS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
 
 
 ## <a name="android-issues"></a>Problemen met Android
@@ -195,27 +195,27 @@ Als oplossing 2 niet werkt, laat u gebruikers de volgende stappen uitvoeren om i
 
 1. Start de Smart Manager-app op het apparaat.
 
-  ![Het pictogram Smart Manager op het apparaat selecteren](./media/smart-manager-app-icon.png)
+   ![Het pictogram Smart Manager op het apparaat selecteren](./media/smart-manager-app-icon.png)
 
 2. Kies de tegel **Batterij**.
 
-  ![De tegel Batterij selecteren](./media/smart-manager-battery-tile.png)
+   ![De tegel Batterij selecteren](./media/smart-manager-battery-tile.png)
 
 3. Selecteer onder **App-energiebeheer** of **App-optimalisatie** **Details**.
 
-  ![Details selecteren onder App-energiebeheer App-optimalisatie](./media/smart-manager-app-power-saving-detail.png)
+   ![Details selecteren onder App-energiebeheer App-optimalisatie](./media/smart-manager-app-power-saving-detail.png)
 
 4. Kies **bedrijfsportal** uit de lijst met apps.
 
-  ![Bedrijfsportal-app selecteren uit de lijst met apps](./media/smart-manager-company-portal.png)
+   ![Bedrijfsportal-app selecteren uit de lijst met apps](./media/smart-manager-company-portal.png)
 
 5. Kies **Uitschakelen**.
 
-  ![Uitschakelen selecteren in het dialoogvenster App-optimalisatie](./media/smart-manager-app-optimization-turned-off.png)
+   ![Uitschakelen selecteren in het dialoogvenster App-optimalisatie](./media/smart-manager-app-optimization-turned-off.png)
 
 6. Controleer onder **App-energiebeheer** of **App-optimalisatie** of bedrijfsportal is uitgeschakeld.
 
-  ![Controleren of bedrijfsportal is uitgeschakeld](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![Controleren of bedrijfsportal is uitgeschakeld](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>De profielinstallatie is mislukt

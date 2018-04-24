@@ -1,28 +1,28 @@
 ---
 title: Op apps gebaseerde voorwaardelijke toegang met Intune
 description: Meer informatie over hoe op apps gebaseerde voorwaardelijke toegang werkt met Intune.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 35d7be91201f8cf4fc3016363770b65bcea9ed72
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Op apps gebaseerde voorwaardelijke toegang met Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 U kunt [beveiligingsbeleid voor apps in Intune](app-protection-policy.md) gebruiken om te helpen bij het beveiligen van uw bedrijfsgegevens op apparaten die zijn geregistreerd in Intune. U kunt ook beveiligingsbeleid voor apps gebruiken op apparaten die in het bezit zijn van werknemers en die niet zijn geregistreerd voor beheer in Intune. In dit geval moet u, zelfs als u het apparaat niet beheert, er nog steeds voor zorgen dat uw bedrijfsgegevens en -bronnen zijn beveiligd.
 
@@ -56,29 +56,29 @@ In dit voorbeeld heeft de beheerder beveiligingsbeleid voor de Outlook-app toege
 
 ![Op apps gebaseerde voorwaardelijke toegang geïllustreerd in een stroomdiagram](./media/ca-intune-common-ways-3.png)
 
-1.  De gebruiker probeert te verifiëren met Azure AD vanuit de Outlook-app.
+1. De gebruiker probeert te verifiëren met Azure AD vanuit de Outlook-app.
 
-2.  De gebruiker wordt omgeleid naar de app store om een broker-app te installeren bij de eerste verificatiepoging. De broker-app kan de Microsoft-Authenticator voor iOS of de Microsoft-bedrijfsportal voor Android-apparaten zijn.
+2. De gebruiker wordt omgeleid naar de app store om een broker-app te installeren bij de eerste verificatiepoging. De broker-app kan de Microsoft-Authenticator voor iOS of de Microsoft-bedrijfsportal voor Android-apparaten zijn.
 
- Als gebruikers een systeemeigen e-mailapp willen gebruiken, worden ze omgeleid naar de app store, waarna ze de Outlook-app kunnen installeren.
+   Als gebruikers een systeemeigen e-mailapp willen gebruiken, worden ze omgeleid naar de app store, waarna ze de Outlook-app kunnen installeren.
 
-3.  De broker-app wordt op het apparaat geïnstalleerd.
+3. De broker-app wordt op het apparaat geïnstalleerd.
 
-4.  De broker-app start het registratieproces van Azure AD om een apparaatrecord te maken in Azure AD. Dit is niet hetzelfde zijn als het inschrijvingsproces voor Mobile Device Management (MDM), maar deze record is nodig om het beleid voor voorwaardelijke toegang te kunnen afdwingen op het apparaat.
+4. De broker-app start het registratieproces van Azure AD om een apparaatrecord te maken in Azure AD. Dit is niet hetzelfde zijn als het inschrijvingsproces voor Mobile Device Management (MDM), maar deze record is nodig om het beleid voor voorwaardelijke toegang te kunnen afdwingen op het apparaat.
 
-5.  De broker-app verifieert de identiteit van de app. Er is een beveiligingslaag zodat de broker-app kan valideren of de app gemachtigd is voor gebruik.
+5. De broker-app verifieert de identiteit van de app. Er is een beveiligingslaag zodat de broker-app kan valideren of de app gemachtigd is voor gebruik.
 
-6.  De broker-app verzendt de client-id van de app naar Azure AD als onderdeel van het verificatieproces voor de gebruiker om te controleren of de app voorkomt in de lijst met goedgekeurde beleidsregels.
+6. De broker-app verzendt de client-id van de app naar Azure AD als onderdeel van het verificatieproces voor de gebruiker om te controleren of de app voorkomt in de lijst met goedgekeurde beleidsregels.
 
-7.  Met Azure AD kan de gebruiker worden geverifieerd en wordt de app op de lijst met goedkeurde beleidsregels gebruikt. Als de app niet op deze lijst voorkomt, wordt de toegang tot de app geweigerd.
+7. Met Azure AD kan de gebruiker worden geverifieerd en wordt de app op de lijst met goedkeurde beleidsregels gebruikt. Als de app niet op deze lijst voorkomt, wordt de toegang tot de app geweigerd.
 
-8.  De Outlook-app communiceert met de Outlook-cloudservice voor communicatie met Exchange Online.
+8. De Outlook-app communiceert met de Outlook-cloudservice voor communicatie met Exchange Online.
 
-9.  De Outlook-cloudservice communiceert met Azure AD om de Exchange Online-toegangstoken voor de gebruiker op te halen.
+9. De Outlook-cloudservice communiceert met Azure AD om de Exchange Online-toegangstoken voor de gebruiker op te halen.
 
-10.  De Outlook-app communiceert met Exchange Online om het bedrijfs-e-mailadres van de gebruiker op te halen.
+10. De Outlook-app communiceert met Exchange Online om het bedrijfs-e-mailadres van de gebruiker op te halen.
 
-11.  Bedrijfs-e-mail wordt bezorgd in het postvak van de gebruiker.
+11. Bedrijfs-e-mail wordt bezorgd in het postvak van de gebruiker.
 
 ## <a name="next-steps"></a>Volgende stappen
 [Op apps gebaseerd beleid voor voorwaardelijke toegang maken](app-based-conditional-access-intune-create.md)

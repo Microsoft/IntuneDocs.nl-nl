@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99a4273a5f3ef2e1696d2fdc1c2a9b9f251b5b87
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 3cae9bc1b76dba3b896957f60ca08cca53423267
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Apparaten inschrijven bij Intune voor beheer
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 U kunt apparaten, waaronder Windows-pc’s, registreren om Mobile Device Management (MDM) met Microsoft Intune mogelijk te maken. In dit onderwerp worden verschillende manieren voor registratie van mobiele apparaten in het Intune-beheer beschreven. De manier waarop u apparaten registreert, is afhankelijk van het apparaattype, het eigendom en het benodigde beheerniveau. Met BYOD-registratie (Bring-Your-Own-Device) kunnen gebruikers hun eigen telefoons, tablets of pc's registreren. Met registratie van COD's (Corporate-owned devices, apparaten van bedrijf) zijn beheerscenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten.
 
@@ -124,7 +124,7 @@ Pc’s die worden beheerd met de Intune-clientsoftware kunnen niet volledig word
 
 Met Intune kunnen de volgende apparaatplatformen worden beheerd:
 
-[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## <a name="next-steps"></a>Volgende stappen
 - [Vereisten voor apparaatregistratie](prerequisites-for-enrollment.md)

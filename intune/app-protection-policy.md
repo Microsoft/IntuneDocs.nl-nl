@@ -2,29 +2,29 @@
 title: Wat is beveiligingsbeleid voor apps
 titleSuffix: Microsoft Intune
 description: Ontdek hoe u met het beveiligingsbeleid voor apps van Microsoft Intune uw bedrijfsgegevens kunt beveiligen en hoe u kunt voorkomen dat gegevens verloren gaan.
-keywords: 
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/19/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 691c7317cda07be292cc2d778b853727124dba8a
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: c4483baa68267b7a7218a4e78fe5275d1ea8d330
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Met het beveiligingsbeleid voor apps van Microsoft Intune kunt u uw bedrijfsgegevens beveiligen en voorkomen dat gegevens verloren gaan.
 
@@ -37,12 +37,12 @@ Het beveiligingsbeleid voor apps kan worden geconfigureerd voor apps die worden 
 
 - **Zijn ingeschreven bij Microsoft Intune:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van het bedrijf.
 
--   **Zijn ingeschreven bij een MDM-oplossing van derden:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van het bedrijf.
+- **Zijn ingeschreven bij een MDM-oplossing van derden:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van het bedrijf.
 
   > [!NOTE]
   > MAM-beleid mag niet worden gebruikt met MAM-oplossingen van derden of beveiligde container-oplossingen.
 
--   **Niet zijn ingeschreven bij een MDM-oplossing:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van werknemers, of om apparaten die niet worden beheerd door of zijn ingeschreven bij Intune of een andere MDM-oplossing.
+- **Niet zijn ingeschreven bij een MDM-oplossing:** bij de apparaten in deze categorie gaat het meestal om apparaten die in het bezit zijn van werknemers, of om apparaten die niet worden beheerd door of zijn ingeschreven bij Intune of een andere MDM-oplossing.
 
 > [!IMPORTANT]
 > U kunt MAM-beleid maken voor mobiele Office-apps die verbinding maken met Office 365-services. Beveiligingsbeleid voor apps wordt niet ondersteund voor apps die verbinding maken met on-premises Exchange- of SharePoint-services.

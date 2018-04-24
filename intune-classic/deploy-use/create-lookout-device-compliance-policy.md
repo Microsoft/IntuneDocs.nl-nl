@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f19318256dc4480207097d2f4ab393b799e207a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b39f7cac8c09813eb9db94e761ec6fa6ab53c7a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>Het nalevingsbeleid voor Lookout-apparaten maken in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Met Intune met Lookout Mobile Threat Defense kunt u bedreigingen op mobiele apparaten detecteren en de risico's op die apparaten beoordelen. U kunt een nalevingsbeleidsregel maken voor risicoanalyse om te bepalen of het apparaat compatibel is. Vervolgens kunt u beleid voor voorwaardelijke toegang gebruiken om toegang tot services te blokkeren op basis van de apparaatcompatibiliteit.
 
@@ -36,13 +36,13 @@ Vereisten voor het nalevingsbeleid bij Lookout Mobile Threat Defense:
 Als onderdeel van de configuratie van Lookout Mobile Threat Defense in de [Lookout-console](https://aad.lookout.com) hebt u een beleid gemaakt waarmee verschillende bedreigingen in de categorieën Hoog, Gemiddeld en Laag worden ingedeeld. In het nalevingsbeleid van Intune stelt u het maximaal toegestane bedreigingsniveau in.
 
 1. In de [Intune-beheerconsole](https://manage.microsoft.com) gaat u naar de pagina **Nalevingsbeleid**. U kunt een bestaand nalevingsbeleid gebruiken of een nieuw beleid maken. Ga naar **Apparaatstatus** en schakel **Device Threat Protection** in.
-  ![schermopname met de instelling voor de regel Device Threat Protection](../media/mtp/mtp-compliance-policy-rule.png)
+   ![schermopname met de instelling voor de regel Device Threat Protection](../media/mtp/mtp-compliance-policy-rule.png)
 
 2. Selecteer **Maximaal toegestaan bedreigingsniveau**:
-  * **Geen (beveiligd)**: dit is het meest veilige niveau.  Het apparaat kan geen enkele bedreiging hebben en heeft nog altijd toegang tot bedrijfsbronnen.  Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.  
-  * **Laag**: het apparaat is compatibel als er alleen bedreigingen van een laag niveau aanwezig zijn. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
-  * **Gemiddeld**: het apparaat is compatibel als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
-  * **Hoog**: dit is de minst veilige optie. Hiermee worden alle bedreigingsniveaus toegestaan en Lookout Mobile Threat Protection wordt alleen voor rapportagedoeleinden gebruikt.
+   * **Geen (beveiligd)**: dit is het meest veilige niveau.  Het apparaat kan geen enkele bedreiging hebben en heeft nog altijd toegang tot bedrijfsbronnen.  Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.  
+   * **Laag**: het apparaat is compatibel als er alleen bedreigingen van een laag niveau aanwezig zijn. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
+   * **Gemiddeld**: het apparaat is compatibel als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
+   * **Hoog**: dit is de minst veilige optie. Hiermee worden alle bedreigingsniveaus toegestaan en Lookout Mobile Threat Protection wordt alleen voor rapportagedoeleinden gebruikt.
 
 ![schermopname met de optie voor het bedreigingsniveau voor de instelling voor de regel Device Threat Protection](../media/mtp/mtp-compliance-policy-setting.png)
 

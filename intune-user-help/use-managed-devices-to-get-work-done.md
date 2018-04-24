@@ -1,27 +1,27 @@
 ---
 title: Werk gedaan krijgen met beheerde apparaten | Microsoft Docs
 description: U leert wat het betekent uw apparaat in te schrijven bij beheer met Intune.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 28e455230213da30fcf371a29b4862982f1a514b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Werk gedaan krijgen met beheerde apparaten
 Microsoft Intune is software waarmee organisaties apparaten (zoals smartphones, tablets en pc's), apps en andere bedrijfsresources (bijvoorbeeld e-mail) kunnen beheren. Hierdoor kunnen werknemers bijna overal en vanaf vrijwel elk apparaat toegang tot hun werkgegevens krijgen terwijl de bedrijfsgegevens beveiligd blijven.

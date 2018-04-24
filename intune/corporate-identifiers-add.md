@@ -1,29 +1,29 @@
 ---
-title: "Zakelijke id’s toevoegen aan Intune"
+title: Zakelijke id’s toevoegen aan Intune
 titlesuffix: Microsoft Intune
 description: Meer informatie over het toevoegen van zakelijke id's (inschrijvingsmethode, IMEI en serienummers) aan Microsoft Intune.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d9557c5f962390a9893109bc6f5175b1e709f7cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Als Intune-beheerder kunt u apparaten identificeren als bedrijfseigendom om het beheer en de identificatie ervan te verfijnen. Bij apparaten in bedrijfseigendom kan Intune extra beheertaken uitvoeren en meer informatie verzamelen, zoals het volledige telefoon en een inventaris van apps. Ook kunt u ook apparaatbeperkingen instellen om inschrijving door apparaten die geen bedrijfseigendom zijn te blokkeren.
 
@@ -72,7 +72,7 @@ Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 
 1. Kies in [Intune in Azure Portal](https://portal.azure.com) achtereenvolgens **Apparaatinschrijving** > **Zakelijke apparaat-id's** en klik vervolgens op **Toevoegen**.
 
- ![Werkruimte Zakelijke apparaat-id's met de knop Toevoegen gemarkeerd](./media/add-corp-id.png)
+   ![Werkruimte Zakelijke apparaat-id's met de knop Toevoegen gemarkeerd](./media/add-corp-id.png)
 
 2. Geef op de blade **Id's toevoegen** het type id op: **IMEI** of **Serienummer**. U kunt opgeven of eerder geïmporteerde nummers **details voor bestaande id's moeten overschrijven**.
 
@@ -97,7 +97,7 @@ De apparaateigenschappen tonen **Eigendom** voor de records van elk apparaat in 
 
 **Ga als volgt te werk om het apparaateigendom te wijzigen:**
 1. Ga in [Intune in Azure Portal](https://portal.azure.com) naar **Apparaten** en kies het apparaat.
-3. Kies **Eigenschappen**.
-4. Selecteer voor **Apparaateigendom** de optie **Persoonlijk** of **Zakelijk**.
+2. Kies **Eigenschappen**.
+3. Selecteer voor **Apparaateigendom** de optie **Persoonlijk** of **Zakelijk**.
 
-  ![Apparaateigenschappen die de apparaatcategorie en opties van Apparaateigendom weergeeft](./media/device-properties.png)
+   ![Apparaateigenschappen die de apparaatcategorie en opties van Apparaateigendom weergeeft](./media/device-properties.png)

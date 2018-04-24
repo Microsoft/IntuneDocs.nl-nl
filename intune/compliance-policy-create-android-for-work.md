@@ -2,29 +2,29 @@
 title: Nalevingsbeleid voor Android for Work maken
 titleSuffix: Microsoft Intune
 description: Maak een Intune-nalevingsbeleid voor apparaten voor Android for Work-apparaten zodat u kunt opgeven aan welke vereisten een apparaat moet voldoen om te conformeren.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ca31d4c83ccc6b786933080b96f66953cf1a108
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 00fa4508cdd4e74a20205ce46025b414cc0bb4cf
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Nalevingsbeleid voor Android for Work-apparaten maken in Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Een Intune-apparaatnalevingsbeleid voor Android for Work bepaalt de regels en instellingen waaraan een Android for Work-apparaat moet voldoen om te voldoen aan het beleid. U kunt deze beleidsregels gebruiken met voorwaardelijke toegang om toegang tot bedrijfsbronnen toe te staan of te blokkeren. U kunt ook apparaatrapporten krijgen en acties voor niet-naleving treffen. U maakt nalevingsbeleid voor apparaten voor elk platform in Intune Azure Portal. Zie [Aan de slag met apparaatnaleving](device-compliance-get-started.md) voor informatie over nalevingsbeleid en de vereisten die u moet afhandelen voordat u een nalevingsbeleid maakt.
 
@@ -55,7 +55,7 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 1. Kies in het deelvenster **Intune** de optie **Apparaatnaleving**. Kies onder **Beheren** de optie **Beleid** en vervolgens **Beleid maken**.
 2. Typ een naam, beschrijving en kies het platform waarop u dit beleid wilt toepassen.
-3. Kies **Instellingen configureren** om de instellingen **Systeembeveiliging**, **Apparaatstatus** en **Apparaateigenschappen** hier op te geven. Kies **OK** als u klaar bent.
+3. Kies **Instellingen configuren** om de instellingen **Systeembeveiliging**, **Apparaatstatus** en **Apparaateigenschappen** hier op te geven. Kies **OK** als u klaar bent.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.

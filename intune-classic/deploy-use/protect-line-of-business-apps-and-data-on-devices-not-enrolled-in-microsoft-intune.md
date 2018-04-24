@@ -1,29 +1,29 @@
 ---
 title: Line-Of-Business-apps beveiligen op apparaten die niet zijn ingeschreven
 description: In dit onderwerp wordt beschreven hoe u uw aangepaste Line-Of-Business-apps kunt voorbereiden, zodat u Mobile Device Management-beleidsregels kunt toepassen om gegevensverlies te voorkomen.
-keywords: 
+keywords: ''
 author: mattbriggs
 ms.author: mabriggs
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 447e019dde4781183323f29a35ed569926973351
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 0fbc7ae1937aff60e8e494df06ee2c30e2fe8855
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn geregistreerd bij Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 MAM-beleid (Mobile Application Management) helpt bedrijfsgegevens beschermen door acties te beperken die kunnen leiden tot het lekken van bedrijfsgegevens en door het afdwingen van vereisten voor gegevenstoegang, zoals een app-pincode. Als u MAM-beleid wilt toepassen op iOS en Android Line-Of-Business-apps, moet u de app eerst inpakken met de Microsoft Intune App Wrapping Tool. App-wrapping is het toepassen van een beheerlaag op een mobiele app zonder dat die hoeft te worden gewijzigd en het distribueren van de app naar uw gebruikers.  
 
@@ -42,16 +42,16 @@ Als u de Line-Of-Business-app wilt koppelen aan MAM-beleid, voert u de volgende 
 
 1. Ga in [Azure Portal](https://portal.azure.com/) naar **Intune M6obile Application Management** > **Instellingen** en kies **Line-of-business-apps**.
 
-  ![Schermafbeelding van de blade Instellingen met de optie Line-Of-Business](../media/mam-azure-portal-lob-on-settings.png)
+   ![Schermafbeelding van de blade Instellingen met de optie Line-Of-Business](../media/mam-azure-portal-lob-on-settings.png)
 
 2. Kies op de blade **Line-Of-Business-apps** de optie **Een aangepaste app toevoegen**.
 
-  ![Schermafbeelding van de blade Line-Of-Business-apps met bovenaan de knop Aangepaste app toevoegen](../media/mam-azure-portal-add-lob-app-action.png)
-3.  Geef een naam voor de app op, geef in het veld App-id de bundel-id op en geef het platform (iOS of Android) op.
+   ![Schermafbeelding van de blade Line-Of-Business-apps met bovenaan de knop Aangepaste app toevoegen](../media/mam-azure-portal-add-lob-app-action.png)
+3. Geef een naam voor de app op, geef in het veld App-id de bundel-id op en geef het platform (iOS of Android) op.
 
-  ![Schermafbeelding van de blade Aangepaste app toevoegen](../media/mam-azure-portal-add-app-details.png)
+   ![Schermafbeelding van de blade Aangepaste app toevoegen](../media/mam-azure-portal-add-app-details.png)
 
-  Deze stap helpt bij het maken van een unieke vermelding van uw app. De app wordt ook weergegeven in de lijst met doel-apps voor een MAM-beleid voor uw tenant, zoals staat beschreven in de volgende stap.
+   Deze stap helpt bij het maken van een unieke vermelding van uw app. De app wordt ook weergegeven in de lijst met doel-apps voor een MAM-beleid voor uw tenant, zoals staat beschreven in de volgende stap.
 
 ## <a name="step-3-apply-mam-policies"></a>Stap 3: MAM-beleid toepassen
 Nadat de metagegevens van de app zijn geüpload naar de service, wordt de app weergegeven in de lijst met apps. U kunt nu [een nieuw beleid of een bestaand beleid maken of een bestaand beleid gebruiken](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) en dit toepassen op de Line-Of-Business-app die u hebt toegevoegd in stap 2.
@@ -72,12 +72,12 @@ Als u de app-gegevens, zoals de naam van de app of de bundel-id, moet wijzigen, 
 ##  <a name="remove-apps"></a>Apps verwijderen
 U kunt een Line-Of-Business-app verwijderen uit de lijst met apps. Hiermee wordt de app verwijderd uit de lijst en wordt de koppeling met het MAM-beleid verbroken. De app wordt echter niet van het apparaat van de gebruiker verwijderd.  
 
-1.  Ga in [Azure portal](https://portal.azure.com/) naar **Intune Mobile App Management** > **Instellingen**. Kies op de blade **Instellingen** de optie **Line-Of-Business** om de lijst met bestaande apps te openen.  
-2.  Kies de app die u wilt verwijderen en kies het **(…) contextmenu**.
+1. Ga in [Azure portal](https://portal.azure.com/) naar **Intune Mobile App Management** > **Instellingen**. Kies op de blade **Instellingen** de optie **Line-Of-Business** om de lijst met bestaande apps te openen.  
+2. Kies de app die u wilt verwijderen en kies het **(…) contextmenu**.
 
-  ![Schermafbeelding van de blade Line-Of-Business-apps met het weglatingsteken](../media/mam-azure-portal-lob-context-menu.png)
-3.  Kies **Toepassing verwijderen** om de app te verwijderen.
+   ![Schermafbeelding van de blade Line-Of-Business-apps met het weglatingsteken](../media/mam-azure-portal-lob-context-menu.png)
+3. Kies **Toepassing verwijderen** om de app te verwijderen.
 
-  ![Schermafbeelding van de Line-Of-Business-blade met de optie voor het verwijderen van de app](../media/mam-azure-portal-delete-app.png)
+   ![Schermafbeelding van de Line-Of-Business-blade met de optie voor het verwijderen van de app](../media/mam-azure-portal-delete-app.png)
 
-  Hiermee worden alle apps uit de lijst met Line-Of-Business-apps en de doellijst met apps in het MAM-beleid verwijderd.
+   Hiermee worden alle apps uit de lijst met Line-Of-Business-apps en de doellijst met apps in het MAM-beleid verwijderd.

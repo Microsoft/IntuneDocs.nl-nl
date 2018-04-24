@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 944c5771e00d8e256944fe5767217f138797bde2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Algemene tips voor probleemoplossing voor Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Nadat u Microsoft Intune hebt geïmplementeerd, kunnen er problemen optreden met de configuratie van clientapparaten. Gebruik de volgende resources om de oorzaak van het probleem te achterhalen zodat u het kunt oplossen.
 
@@ -50,13 +50,13 @@ Nadat u Microsoft Intune hebt geïmplementeerd, kunnen er problemen optreden met
 
 ## <a name="collect-available-data"></a>Beschikbare gegevens verzamelen
 
--   De volgende resources bevatten meer informatie over het verzamelen van logboeken van apparaten:
+- De volgende resources bevatten meer informatie over het verzamelen van logboeken van apparaten:
   - [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via een USB-kabel](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via e-mail](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Android-registratiefouten verzenden naar de IT-beheerder](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [iOS-registratiefouten verzenden naar de IT-beheerder](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   Met beheerconsolegegevens (bijvoorbeeld voor problemen met de implementatie van beleid) kunt u het gewenste beleid en de status van dit beleid onderzoeken, zoals beschreven in [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+- Met beheerconsolegegevens (bijvoorbeeld voor problemen met de implementatie van beleid) kunt u het gewenste beleid en de status van dit beleid onderzoeken, zoals beschreven in [Groepen gebruiken voor het beheren van gebruikers en apparaten met Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## <a name="research-the-solution"></a>Onderzoek doen naar de oplossing
 

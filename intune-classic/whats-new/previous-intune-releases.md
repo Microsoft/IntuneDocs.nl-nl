@@ -2,8 +2,8 @@
 title: Vorige versies
 description: ''
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/13/2017
 ms.topic: article
@@ -14,17 +14,17 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76e53cabba9b684170d659ae5b8ef884bfe9abaa
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 57b2ab83f356eac27f668908a9a14b4f9310da19
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="previous-intune-releases"></a>Vorige versies van Intune
 
 Deze pagina bevat een overzicht van de aankondigingen in [Wat is er nieuw in Microsoft Intune](whats-new-in-microsoft-intune.md).
 
-[!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
+[!INCLUDE [wit_nextref](../includes/whats-new-last-six-months.md)]
 
 ## <a name="july-2016"></a>Juli 2016
 
@@ -94,12 +94,12 @@ Servicestatusgegevens voor Intune is verplaatst naar een centrale locatie met an
     * Moeten worden beheerd met Intune
     * Moeten voldoen aan geïmplementeerd Intune-nalevingsbeleid
 
- Eindgebruikers van niet-compatibele apparaten wordt gevraagd zich te registreren en nalevingsproblemen op te lossen om toegang te krijgen.
+  Eindgebruikers van niet-compatibele apparaten wordt gevraagd zich te registreren en nalevingsproblemen op te lossen om toegang te krijgen.
 - **Voorwaardelijke toegang voor de browser.** U kunt een beleid voor voorwaardelijke toegang instellen voor [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune), zodat deze alleen toegankelijk zijn via ondersteunde webbrowsers op beheerde en compatibele iOS- en Android-apparaten. Eindgebruikers die proberen zich met iOS- en Android-apparaten aan te melden bij Outlook Web Access (OWA) en SharePoint-sites, wordt gevraagd hun apparaat te registreren bij Intune en eventuele problemen met de compatibiliteit op te lossen. Hierna kan de aanmelding worden voltooid.
-<!---TFS 1175844--->
+  <!---TFS 1175844--->
 
 - **Dynamics CRM Online biedt ondersteuning voor voorwaardelijke toegang.** U kunt beleid voor voorwaardelijke toegang instellen voor [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune), zodat dit alleen toegankelijk is voor beheerde en compatibele iOS- en Android-apparaten. Eindgebruikers die zich op iOS en Android willen aanmelden bij de mobiele app Dynamics CRM, moeten zich registreren bij Intune en eventuele problemen met de naleving oplossen voordat de aanmelding wordt voltooid.
-<!---TFS1295358--->
+  <!---TFS1295358--->
 
 ### <a name="intune-company-portal-updates"></a>Updates voor de Intune-bedrijfsportal
 
@@ -180,19 +180,19 @@ Al deze functies worden ook ondersteund voor hybride klanten (Configuration Mana
 
 ### <a name="app-management"></a>Appbeheer
 - **Naleving van beleid door MAM-gebruikers.**
-U kunt nu de [status](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) van uw beleid voor toepassingsbeheer bekijken voor gebruikers in uw AAD-tenant (Azure Active Directory). Dit omvat:
-   - Apparaten
-   - Apps op het apparaat
+  U kunt nu de [status](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) van uw beleid voor toepassingsbeheer bekijken voor gebruikers in uw AAD-tenant (Azure Active Directory). Dit omvat:
+  - Apparaten
+  - Apps op het apparaat
 
-   Statuswaarden:
+    Statuswaarden:
 
-   **Ingecheckt**: hiermee wordt aangegeven dat het beleid is geïmplementeerd voor de gebruiker, dat de app is gebruikt in een werkcontext en dat het beleid is ontvangen.
+    **Ingecheckt**: hiermee wordt aangegeven dat het beleid is geïmplementeerd voor de gebruiker, dat de app is gebruikt in een werkcontext en dat het beleid is ontvangen.
 
     **Niet ingecheckt**: hiermee wordt aangegeven dat het beleid is geïmplementeerd voor de gebruiker, maar dat de app sindsdien niet is gebruikt in een werkcontext.
 
 
 - **MAM-besturingselementen om te voorkomen dat Outlook-contactpersonen worden gesynchroniseerd (Android).**
-Er is een nieuwe instelling beschikbaar voor [mobiel toepassingsbeheer](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune). Contactpersonen die al in het systeemeigen adresboek zijn opgeslagen, worden verwijderd. Deze nieuwe instelling wordt in eerste instantie ondersteund door de Outlook-toepassing op Android-apparaten.
+  Er is een nieuwe instelling beschikbaar voor [mobiel toepassingsbeheer](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune). Contactpersonen die al in het systeemeigen adresboek zijn opgeslagen, worden verwijderd. Deze nieuwe instelling wordt in eerste instantie ondersteund door de Outlook-toepassing op Android-apparaten.
 
 ### <a name="device-management"></a>Apparaatbeheer
 - **Nummerherkenning voor apparaten die bedrijfseigendom zijn.** Telefoons die zijn aangemerkt als bedrijfseigendom, worden nu aangeduid met hun volledige telefoonnummer wanneer u bijvoorbeeld een inventarisrapport voor mobiele apparaten uitvoert. Telefoonnummers voor BYOD-apparaten worden nog steeds gemaskeerd met ****, waarbij alleen de laatste 4 cijfers worden weergegeven.
@@ -212,6 +212,6 @@ Er is een nieuwe instelling beschikbaar voor [mobiel toepassingsbeheer](/intune-
 
 Voordat deze statussen werden toegevoegd, raakten gebruikers in de war als de installatie van een app lang duurde, omdat ze alleen de status 'Installeren' zagen, die mogelijk uren lang op het scherm bleef staan. Het toevoegen van de nieuwe statussen betekent dat gebruikers in plaats van ondersteuning te bellen nu op de koppeling 'In afwachting van synchronisatie van het apparaat' kunnen tikken en de instructies voor het afdwingen van hervatting van het synchronisatieproces kunnen volgen.
 
->[!div class="step-by-step"]
-
->[&larr; **Wat is er nieuw in Intune?**](whats-new-in-microsoft-intune.md)    
+> [!div class="step-by-step"]
+> 
+> [&larr; **Wat is er nieuw in Intune?**](whats-new-in-microsoft-intune.md)    

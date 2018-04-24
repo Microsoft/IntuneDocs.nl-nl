@@ -2,28 +2,28 @@
 title: Apps aan Android for Work-apparaten toewijzen
 titlesuffix: Microsoft Intune
 description: Kom te weten hoe u apps synchroniseert en toewijst aan Android for Work-apparaten uit de Google Play for Work Store.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4168f78bff8937ca403cdb75b1028954cbbebd6f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Apps aan Android for Work-apparaten toewijzen met Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Android for Work is een programma voor Android-apparaten. Alle apps die u installeert op Android for Work-apparaten, zijn afkomstig uit de Google Play for Work-store. U wijst apps aan Android for Work-apparaten op een andere manier toe dan aan standaard-Android-apparaten. U meldt zich aan bij de store, bladert naar de gewenste apps en keurt deze goed. De app wordt vervolgens weergegeven in het knooppunt **Apps met licentie** van de Azure-portal. Hier kunt u de toewijzing van de app op dezelfde manier beheren als toewijzingen van andere apps.
 
@@ -43,7 +43,7 @@ Zorg ervoor dat u Intune en Android for Work hebt geconfigureerd voor samenwerki
 
     ![Voorbeeld: app goedkeuren in de Google Play for Work Store](media/approve.png)</br>
     
-  Er wordt een venster voor de app geopend, waarin u om toestemming wordt gevraagd voor het uitvoeren van verschillende bewerkingen door de app. 
+   Er wordt een venster voor de app geopend, waarin u om toestemming wordt gevraagd voor het uitvoeren van verschillende bewerkingen door de app. 
 
 4. Selecteer **Goedkeuren** om de app-machtigingen te accepteren en door te gaan.</br>
 

@@ -331,6 +331,6 @@ __Het onderdeel Intune App SDK Xamarin biedt nu ondersteuning voor MAM zonder re
 
 __Een Symantec-handtekeningcertificaat vereist geen ondertekend Windows Phone 8-bedrijfsportal meer voor uploaden__ Voor het uploaden van een Symantec-handtekeningcertificaat is geen ondertekend Windows Phone 8-bedrijfsportal-app meer nodig. Het certificaat kan afzonderlijk worden geüpload.
 
-###<a name="deprecations"></a>Afschaffingen
+### <a name="deprecations"></a>Afschaffingen
 
 __Ondersteuning voor de Windows Phone 8-bedrijfsportal__ Ondersteuning voor de Windows Phone 8-bedrijfsportal wordt nu afgeschaft. Ondersteuning voor het Windows Phone 8- en Windows RT-platform is afgeschaft in oktober 2016. Ondersteuning voor de Windows 8-bedrijfsportal is ook in oktober 2016 afgeschaft.

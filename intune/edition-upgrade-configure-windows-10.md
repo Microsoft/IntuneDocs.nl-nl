@@ -1,27 +1,27 @@
 ---
 title: Windows 10-apparaten upgraden met Microsoft Intune - Azure | Microsoft Docs
 description: Een apparaatprofiel maken in Microsoft Intune om Windows 10-apparaten te upgraden naar nieuwere versies. Zie ook de ondersteunde upgradepaden voor Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic en Mobile.
-keywords: 
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8084f1b2fbd513de596bd97f4ffec995b6f7aac4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Upgradeprofiel voor Windows 10-versie configureren
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Configureer een upgradeprofiel in Intune om apparaten waarop een versie van Windows 10 wordt uitgevoerd automatisch te upgraden naar een andere versie. Zie ook de ondersteunde upgradepaden.
 
@@ -128,10 +128,10 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 5. Kies in de vervolgkeuzelijst **Platform** de optie **Windows 10 en hoger**.
 6. Kies in de vervolgkeuzelijst **Profieltype** de optie **Editie-upgrade**.
 7. Voer de volgende instellingen in de eigenschappen van **Editie-upgrade** in:
-  - **Versie waarnaar moet worden bijgewerkt**: selecteer in de vervolgkeuzelijst de versie van Windows 10 Desktop, Windows 10 Holographic of Windows 10 Mobile waarnaar u de apparaten uit de doelgroep bijwerkt.
-  - **Productcode**: voer de productcode in die u van Microsoft hebt ontvangen en die kan worden gebruikt om alle Windows 10 Desktop-doelapparaten te upgraden. 
+   - **Versie waarnaar moet worden bijgewerkt**: selecteer in de vervolgkeuzelijst de versie van Windows 10 Desktop, Windows 10 Holographic of Windows 10 Mobile waarnaar u de apparaten uit de doelgroep bijwerkt.
+   - **Productcode**: voer de productcode in die u van Microsoft hebt ontvangen en die kan worden gebruikt om alle Windows 10 Desktop-doelapparaten te upgraden. 
     Nadat u een beleid met een productcode hebt gemaakt, kan de sleutel niet worden bijgewerkt en wordt deze uit veiligheidsoverwegingen verborgen. Als u de productcode wilt wijzigen, voert u de volledige code opnieuw in.
-  - **Licentiebestand**: kies **Bladeren** om het licentiebestand te selecteren dat u van Microsoft hebt ontvangen. Dit licentiebestand bevat licentie-informatie voor de Windows Holographic- of Windows 10 Mobile-editie waarnaar u de doelapparaten bijwerkt.
+   - **Licentiebestand**: kies **Bladeren** om het licentiebestand te selecteren dat u van Microsoft hebt ontvangen. Dit licentiebestand bevat licentie-informatie voor de Windows Holographic- of Windows 10 Mobile-editie waarnaar u de doelapparaten bijwerkt.
 8. Wanneer u klaar bent, selecteert u **Maken** om uw wijzigingen op te slaan.
 
 Het profiel wordt gemaakt en wordt weergegeven in de profielen.

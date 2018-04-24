@@ -15,15 +15,15 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7de6c995108bff3b1571b281df2745629c7f9741
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: b46981aa097de96764bd0c88ad3385debbcce85d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>iOS-Line-Of-Business-apps (LOB) toevoegen aan Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Gebruik de informatie in dit artikel om iOS-Line-Of-Business-apps aan Microsoft Intune toe te voegen.
 
@@ -74,7 +74,7 @@ De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app 
 
 ## <a name="step-5---update-a-line-of-business-app"></a>Stap 5: een Line-Of-Business-app bijwerken
 
-[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]  
+[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 > [!NOTE]
 > De Intune-service kan alleen een nieuw IPA-bestand op het apparaat implementeren als u de tekenreeks *CFBundleVersion* in het bestand *Info.plist* in uw IPA-pakket verhoogt.

@@ -15,27 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 78b4e91fd61bb79c2a3a6d86d5a79c39b320cc5e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 8af8d79d6f8ea9037c6bef532ad45185830c358d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>De Intune Service to Service Connector configureren voor Exchange Online
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Gebruik deze informatie om verbinding te maken met Microsoft Intune en Exchange Online of de nieuwe Exchange Online Dedicated-service. Neem contact op met uw accountmanager om te bepalen of uw Exchange Online Dedicated-omgeving de **nieuwe** of **verouderde** versie is. Intune ondersteunt slechts één type Exchange Connector-verbinding per abonnement.
 
 ## <a name="service-to-service-connector-requirements"></a>Vereisten voor de Service to Service-connector
 De **Service to Service Connector** ondersteunt alleen Exchange Online of Exchange Online Dedicated en heeft geen vereisten voor een lokale infrastructuur.
 
-|Vereiste|Meer informatie|
-|---------------|--------------------|
-|Exchange Online geconfigureerd en actief|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
-|Instantie voor beheer van mobiele apparaten| [De instantie voor het beheer van mobiele apparaten instellen op Microsoft Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
-|Microsoft Exchange-versie|Exchange Online of de nieuwe Exchange Online Dedicated-service|/intune/users-permissions-add
-|Active Directory-synchronisatie|Voordat u de Intune Connector kunt gebruiken, moet u [Active Directory-synchronisatie instellen](/intune/users-permissions-add), zodat uw lokale gebruikers en beveiligingsgroepen worden gesynchroniseerd met uw exemplaar van Azure Active Directory.|
+
+|              Vereiste               |                                                                                                            Meer informatie                                                                                                            |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Exchange Online geconfigureerd en actief |                                                                                 [Exchange Online](https://technet.microsoft.com/library/jj200580.aspx)                                                                                 |
+|   Instantie voor beheer van mobiele apparaten   |                                                       [De instantie voor het beheer van mobiele apparaten instellen op Microsoft Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority)                                                       |
+|       Microsoft Exchange-versie       |                                                                                      Exchange Online of de nieuwe Exchange Online Dedicated-service                                                                                      |
+|    Active Directory-synchronisatie    | Voordat u de Intune Connector kunt gebruiken, moet u [Active Directory-synchronisatie instellen](/intune/users-permissions-add), zodat uw lokale gebruikers en beveiligingsgroepen worden gesynchroniseerd met uw exemplaar van Azure Active Directory. |
 
 ### <a name="exchange-cmdlet-requirements"></a>Vereisten voor Exchange-cmdlets
 

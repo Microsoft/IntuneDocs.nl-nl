@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft Store voor Bedrijven-apps beheren
 description: Microsoft Intune verbinden met Microsoft Store voor Bedrijven als u apps via het volume-aankoopprogramma hebt gekocht vanuit de Intune-console
 keywords: ''
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b32f9c6be910156c26b446b7bf70a7975b4afaff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Apps die u hebt aangeschaft in Microsoft Store voor Bedrijven, beheren met Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 [Microsoft Store voor Bedrijven](https://www.microsoft.com/business-store) biedt een centrale locatie om apps te zoeken en aan te schaffen voor uw organisatie. U kunt zowel afzonderlijke exemplaren van een app als grotere volumes aanschaffen. Als u een koppeling tussen Windows Store en Microsoft Intune instelt, kunt u apps die in grotere volumes zijn aangeschaft, beheren vanuit de Intune-console. Bijvoorbeeld:
 * U kunt de lijst met aangeschafte apps synchroniseren met Intune.
@@ -57,8 +57,8 @@ U kunt nu doorgaan en synchronisatie instellen in de Intune-console.
 1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Beheer**.
 2. Vouw in de werkruimte **Beheer** de optie **Mobile Device Management** > **Windows** uit en kies **Store voor Bedrijven**.
 3. Voer op de pagina **Microsoft Store voor Bedrijven** de volgende handelingen uit:
- * Klik, als u dit nog niet hebt gedaan, op de koppeling om u te registreren bij Microsoft Store voor Bedrijven.
- * Wanneer u zich hebt geregistreerd, kiest u **Synchronisatie configureren**.
+   * Klik, als u dit nog niet hebt gedaan, op de koppeling om u te registreren bij Microsoft Store voor Bedrijven.
+   * Wanneer u zich hebt geregistreerd, kiest u **Synchronisatie configureren**.
 4. Selecteer in het dialoogvenster **Synchronisatie met de app Microsoft Store voor Bedrijven configureren** de optie **Synchronisatie met Microsoft Store voor Bedrijven inschakelen**.
 5. Kies in de vervolgkeuzelijst **Taal** de taal waarin apps uit Microsoft Store voor Bedrijven moeten worden weergegeven in de Intune-console. Ongeacht de taal waarin deze apps worden weergegeven, worden ze geïnstalleerd in de taal van de eindgebruiker (indien beschikbaar).
 6. Klik op **OK**.

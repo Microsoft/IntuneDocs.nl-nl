@@ -1,4 +1,4 @@
----
+﻿---
 title: Nalevingsbeleid implementeren en bewaken
 description: Volg de stapsgewijze instructies in dit onderwerp om een nalevingsbeleid voor apparaten te implementeren en te bewaken.
 keywords: ''
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e24c969206d3e1f34bfee0af46c4398c9d2739a8
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 7e3f67411a4eff357102756e785f4cbbff120d23
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Nalevingsbeleid voor apparaten implementeren en bewaken in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="deploy-a-compliance-policy"></a>Een nalevingsbeleid implementeren
 Implementeer het nalevingsbeleid dat u hebt [gemaakt](create-a-device-compliance-policy-in-microsoft-intune.md) voor een of meer groepen gebruikers in uw organisatie. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden de apparaten van de gebruiker gecontroleerd op naleving.

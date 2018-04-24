@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5fd86b380a80529ba7f6c431452ae89e22c0de25
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5a346c321147656d748d3abde78575268b20e9ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Apparaten categoriseren met apparaatgroeptoewijzing in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Gebruik **apparaatgroeptoewijzing** van Microsoft Intune om apparaten automatisch aan groepen toe te voegen op basis van categorieën die u definieert, zodat het voor u eenvoudiger wordt om die apparaten te beheren. 
 
@@ -67,10 +67,10 @@ Vanwege de gefaseerde implementatie van beveiliging op basis van Azure Active Di
 
 ### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>Stap 1: apparaatcategorieën maken in de Intune-beheerconsole
 1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Beheer**.
-3. In de werkruimte **Beheer** vouwt u **Mobile Device Management** uit en kiest u vervolgens **Apparaatcategorieën**.
-4. Op de pagina **Apparaatcategorieën** ziet u een lijst waar u apparaatcategorieën kunt configureren: 
-- U kunt een nieuwe apparaatcategorie toevoegen door een naam in te voeren en op **Toevoegen** te klikken.
-- U kunt ook een categorie selecteren en deze vervolgens verwijderen door op **Verwijderen** te klikken.
+2. In de werkruimte **Beheer** vouwt u **Mobile Device Management** uit en kiest u vervolgens **Apparaatcategorieën**.
+3. Op de pagina **Apparaatcategorieën** ziet u een lijst waar u apparaatcategorieën kunt configureren: 
+4. U kunt een nieuwe apparaatcategorie toevoegen door een naam in te voeren en op **Toevoegen** te klikken.
+5. U kunt ook een categorie selecteren en deze vervolgens verwijderen door op **Verwijderen** te klikken.
 
 Als u Azure Active Directory-beveiligingsgroepen maakt in stap 2, gebruikt u de naam van de apparaatcategorie.
 

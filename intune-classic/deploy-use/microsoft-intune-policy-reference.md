@@ -1,29 +1,29 @@
 ---
 title: Referentie voor configuratiebeleid
 description: Gebruik de informatie in dit onderwerp om u te helpen bepalen welk Microsoft Intune-beleid u moet gebruiken voor het beheren van uw apparaten.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 46bc3408f861bcd249ca5071abf1ee80733af10d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Documentatie voor configuratiebeleid van Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Gebruik de informatie in dit onderwerp om u te helpen bepalen welk Microsoft Intune-configuratiebeleid u moet gebruiken voor het beheren van uw apparaten.
 
@@ -102,12 +102,13 @@ Is alleen van toepassing op Windows Phone en geregistreerde Windows-apparaten.
 
 ## <a name="common-mobile-device-settings"></a>Algemene instellingen voor mobiele apparaten
 
-|Naam van beleid|Gebruik dit beleid wanneer u het volgende wilt doen|
-|---------------|------------------------|
-|**Exchange ActiveSync-beleid**|Beveiligings- en functionele instellingen voor mobiele apparaten configureren voor apparaten die worden beheerd door Exchange ActiveSync.<br /><br />Zie [Exchange ActiveSync-beleidsinstellingen in Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md) voor meer informatie.|
-|**Beveiligingsbeleid voor mobiele apparaten**|<ul><li>Hiermee worden instellingen geconfigureerd voor mobiele apparaten (alle platforms), waaronder:<br /><br /><ul><li>Beveiliging</li><li>Versleuteling</li><li>Systeem</li><li>E-mail</li><li>Toepassingen</li></ul></li></ul>
+|                  Naam van beleid                   |                                                                                                                       Gebruik dit beleid wanneer u het volgende wilt doen                                                                                                                       |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Exchange ActiveSync-beleid</strong>   | Beveiligings- en functionele instellingen voor mobiele apparaten configureren voor apparaten die worden beheerd door Exchange ActiveSync.<br /><br />Zie [Exchange ActiveSync-beleidsinstellingen in Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md) voor meer informatie. |
+| <strong>Beveiligingsbeleid voor mobiele apparaten</strong> |                                  <ul><li>Hiermee worden instellingen geconfigureerd voor mobiele apparaten (alle platforms), waaronder:<br /><br /><ul><li>Beveiliging</li><li>Versleuteling</li><li>Systeem</li><li>E-mail</li><li>Toepassingen</li></ul></li></ul>                                  |
+
 > [!IMPORTANT]
-Microsoft Intune biedt nu afzonderlijk **configuratiebeleid** voor elk apparaatplatform. Dit beleid bevat de nieuwste instellingen die u kunt gebruiken. U kunt het beveiligingsbeleid voor mobiele apparaten blijven gebruiken en eventuele bestaande implementaties zullen nog steeds werken, maar u moet echter zo snel mogelijk naar de nieuwe configuratiebeleidsregels migreren.<br />Zie [Instellingen voor beveiligingsbeleid van mobiele apparaten in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md) voor meer informatie.
+> Microsoft Intune biedt nu afzonderlijk **configuratiebeleid** voor elk apparaatplatform. Dit beleid bevat de nieuwste instellingen die u kunt gebruiken. U kunt het beveiligingsbeleid voor mobiele apparaten blijven gebruiken en eventuele bestaande implementaties zullen nog steeds werken, maar u moet echter zo snel mogelijk naar de nieuwe configuratiebeleidsregels migreren.<br />Zie [Instellingen voor beveiligingsbeleid van mobiele apparaten in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md) voor meer informatie.
 
 ## <a name="policies-for-windows-pcs-managed-by-the-intune-software-client"></a>Beleid voor Windows-pc's die worden beheerd met de Intune-softwareclient
 

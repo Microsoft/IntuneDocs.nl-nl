@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2f65d7e55af7f1e8d84276ddd12a0a90cae70b54
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 7348c53fc5266c5639de805023372b6047c6acad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="post-configuration-tasks"></a>Taken na configuratie
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Nadat u de initiële configuratiestappen voor een betaald Intune-abonnement hebt voltooid, kunt u overwegen aanvullende functionaliteit voor het beheer van mobiele apparaten in te schakelen.
 

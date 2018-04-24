@@ -2,28 +2,28 @@
 title: Gegevens die Intune naar Apple verzendt
 titleSuffix: Microsoft Intune
 description: Lijst met gegevens die door Intune worden verzonden naar Apple.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c247cfbd715368f65dfb1ba2ce8b5e88a491d302
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: e2829ffe4c8dfffd4d23f4c86b2985d41e983799
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-intune-sends-to-apple"></a>Gegevens die Intune naar Apple verzendt
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Als een van de volgende Apple-services wordt ingeschakeld op een apparaat, maakt Microsoft Intune verbinding met Apple en worden er gebruikers- en apparaatgegevens gedeeld met Apple: 
 

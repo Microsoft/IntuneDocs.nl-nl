@@ -7,18 +7,18 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: d32c024d6cd526062c373b56dd18bca9480c32fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova-invoegtoepassing
 
@@ -72,16 +72,16 @@ Cordova-apps die zijn gemaakt met de Intune App SDK Cordova-invoegtoepassing kun
 
 1. Uw versie van ADAL bijwerken:
 
-  ```shell
-  cordova plugin remove cordova-plugin-ms-adal
-  cordova plugin add cordova-plugin-ms-adal@0.8.x
-  ```
+   ```shell
+   cordova plugin remove cordova-plugin-ms-adal
+   cordova plugin add cordova-plugin-ms-adal@0.8.x
+   ```
 
 2. De Intune App SDK Cordova-invoegtoepassing toevoegen:
 
-  ```shell
-  cordova plugin add cordova-plugin-ms-intune-mam
-  ```
+   ```shell
+   cordova plugin add cordova-plugin-ms-intune-mam
+   ```
 
 ## <a name="build-the-plugin-into-your-ios-app"></a>De invoegtoepassing inbouwen in uw iOS-app
 
@@ -131,7 +131,7 @@ Nadat u de app de eerste keer hebt gestart, verschijnt een dialoogvenster met de
 * Ondersteuning voor MultiDex is onvolledig.
 * De app moet een `minSdkVersion` van 14 en een `targetSdkVersion` van 24 of lager hebben. Apps die bedoeld zijn voor API 25, worden momenteel niet door Intune ondersteund
 * Apps die zijn ondertekend met het V2-handtekeningschema, kunnen niet opnieuw door Intune worden ondertekend. Als met V2 ondertekende apps zijn ingepakt door de invoegtoepassing, is de ingepakte .apk van de uitvoer niet ondertekend.
-*
+  *
   * U kunt de standaard-V2-ondertekening van Cordova uitschakelen door het volgende aan het bestand `build-extras.gradle` toe te voegen:
 
   ```gradle

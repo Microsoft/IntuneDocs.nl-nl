@@ -1,27 +1,27 @@
 ---
 title: De pc-clientsoftware installeren
 description: Gebruik deze handleiding om uw Windows-pc's te laten beheren door de Microsoft Intune-clientsoftware.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9316f78155b38f74765a353186a29dc90afce547
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 56ae374f5b930c55fbe12305f4246c52e6213a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>De Intune-softwareclient installeren op Windows-pc's
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Windows-pc's kunnen worden geregistreerd door de Intune-clientsoftware te installeren. De Intune-clientsoftware kan via de volgende methoden worden geïnstalleerd:
 
@@ -39,13 +39,13 @@ Een Intune-licentie staat de installatie van de Intune-clientsoftware op maximaa
 
 Voor alle methoden, behalve die waarbij gebruikers de Intune-clientsoftware zelf installeren, moeten IT-beheerders eerst de software downloaden zodat deze vervolgens kan worden geïmplementeerd voor eindgebruikers.
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Beheer** &gt; **Clientsoftware downloaden**.
+1. Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Beheer** &gt; **Clientsoftware downloaden**.
 
-  ![De Intune-pc-client downloaden](../media/pc-sa-client-download.png)
+   ![De Intune-pc-client downloaden](../media/pc-sa-client-download.png)
 
 2. Klik op de pagina **Clientsoftware downloaden** op **Clientsoftware downloaden**. Sla het pakket **Microsoft_Intune_Setup.zip** met de software vervolgens op een beveiligde locatie op uw netwerk op.
 
-  Het installatiepakket voor de Intune-clientsoftware bevat unieke en specifieke informatie over uw account, die beschikbaar is via een ingesloten certificaat. Als niet-gemachtigde gebruikers toegang krijgen tot het installatiepakket, kunnen ze pc’s inschrijven bij het account van het certificaat dat is ingesloten in het pakket en krijgen ze mogelijk toegang tot bedrijfsbronnen.
+   Het installatiepakket voor de Intune-clientsoftware bevat unieke en specifieke informatie over uw account, die beschikbaar is via een ingesloten certificaat. Als niet-gemachtigde gebruikers toegang krijgen tot het installatiepakket, kunnen ze pc’s inschrijven bij het account van het certificaat dat is ingesloten in het pakket en krijgen ze mogelijk toegang tot bedrijfsbronnen.
 
 3. Pak de inhoud van het installatiepakket uit naar een beveiligde locatie in het netwerk.
 

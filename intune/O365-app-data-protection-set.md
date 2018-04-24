@@ -1,26 +1,26 @@
 ---
 title: Gegevensbeheer van Office 365-apps in Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Lees over gegevensbeheer van Office 365-apps in Microsoft Intune.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 852612ac-f146-4372-a900-3f6fdebd05ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 242ee454ec42c54bb9437fbdf0a7efeca926d193
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Hoe uw gebruikers basisbeveiliging ervaren in beheerde Office 365-apps in Microsoft Intune
 
@@ -50,13 +50,13 @@ In dit artikel wordt OneDrive voor Bedrijven gebruikt als voorbeeld om de gebrui
 2. Voer de gebruikersnaam van uw werkaccount in. U wordt omgeleid naar de pagina Office 365-verificatie, waar u uw werkreferenties kunt invoeren. 
 3. Nadat uw referenties door Azure Active Directory zijn geverifieerd, worden de beveiligingsbeleidsregels voor apps toegepast en wordt u gevraagd de app OneDrive voor Bedrijven opnieuw te starten. 
 
-  > [!NOTE]
-  > Het bericht voor opnieuw starten wordt alleen weergegeven op apparaten die niet zijn ingeschreven in Intune.
+   > [!NOTE]
+   > Het bericht voor opnieuw starten wordt alleen weergegeven op apparaten die niet zijn ingeschreven in Intune.
 
 4. Start de app OneDrive voor Bedrijven opnieuw. De app wordt gestart en de beveiligingsbeleidsregels voor apps worden ingeschakeld. U wordt gevraagd een pincode voor het apparaat in te stellen (als u nog geen pincode voor het apparaat hebt geconfigureerd).  
 
-  > [!NOTE]
-  > Deze prompt wordt voor de meeste gebruikers niet weergegeven. Alleen gebruikers die geen pincode op hun iOS-apparaat hebben ingeschakeld, krijgen deze prompt te zien.
+   > [!NOTE]
+   > Deze prompt wordt voor de meeste gebruikers niet weergegeven. Alleen gebruikers die geen pincode op hun iOS-apparaat hebben ingeschakeld, krijgen deze prompt te zien.
 
 5. Zodra u de pincode hebt ingesteld en hebt bevestigd, gaat u terug naar de app OneDrive voor Bedrijven. U ziet een eenmalige kennisgeving dat de werkgegevens in OneDrive op dit moment worden beveiligd door de IT-beheerder. 
 6. Klik voorbij deze kennisgeving om toegang te krijgen tot de bestanden in uw exemplaar van OneDrive voor Bedrijven. 
@@ -70,8 +70,8 @@ In dit artikel wordt OneDrive voor Bedrijven gebruikt als voorbeeld om de gebrui
 2. Voer de gebruikersnaam van uw werkaccount in. U wordt omgeleid naar de pagina Office 365-verificatie, waar u uw werkreferenties kunt invoeren. <br/> ![Afbeelding van O365-aanmelding op Android](./media/o365-sign-in-android.png)
 3. Nadat uw referenties door Azure Active Directory zijn geverifieerd, ziet u een bericht met instructies voor het installeren van de bedrijfsportal-app, als deze niet al op het apparaat is geïnstalleerd. Tik op **Ga naar winkel** om door te gaan. <br/> ![Afbeelding van het bericht voor het downloaden van de bedrijfsportal-app](./media/get-company-portal-android.png) <br/>Als u de bedrijfsportal-app al op uw telefoon hebt geïnstalleerd, wordt de app OneDrive voor Bedrijven automatisch gestart en kunt u doorgaan naar de eindopmerking.   
 
-  > [!IMPORTANT]
-  > Als u voor uw Android-apparaat instelt dat Office-apps moeten worden beheerd met een beveiligingsbeleid voor apps, **moet** de gebruiker van het apparaat de bedrijfsportal-app installeren om toegang te kunnen krijgen tot zijn of haar e-mails en documenten voor werk, ook al hoeft de eindgebruiker de app niet te openen of zich aan te melden bij de app om e-mails en documenten te kunnen lezen.
+   > [!IMPORTANT]
+   > Als u voor uw Android-apparaat instelt dat Office-apps moeten worden beheerd met een beveiligingsbeleid voor apps, **moet** de gebruiker van het apparaat de bedrijfsportal-app installeren om toegang te kunnen krijgen tot zijn of haar e-mails en documenten voor werk, ook al hoeft de eindgebruiker de app niet te openen of zich aan te melden bij de app om e-mails en documenten te kunnen lezen.
 
 4. U bent nu in de Google Play Store waar u de bedrijfsportal-app kunt downloaden en installeren. De app helpt u de gegevens veilig en beschermd te houden. <br/> ![Afbeelding van de app in Google Play Store](./media/google-play-get-app-android.png)
 5. Nadat u de app-installatie hebt voltooid, kiest u **Accepteren** om de voorwaarden te accepteren. De app OneDrive voor Bedrijven wordt automatisch gestart.
@@ -86,6 +86,7 @@ In dit artikel wordt OneDrive voor Bedrijven gebruikt als voorbeeld om de gebrui
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->
 
 ## <a name="what-policies-does-this-wizard-set"></a>Welke beleidsregels worden met deze wizard ingesteld?
+
 |     |       | |
 |----|--------|-|
 |**Naam**|Office 365-apps beheren| |

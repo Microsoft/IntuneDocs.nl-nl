@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9785078341c8e3469067042a3f3e8588f29c3a3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Instellingen voor iOS-beleid in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune biedt diverse ingebouwde algemene instellingen die u op iOS-apparaten kunt configureren. Daarnaast kunt u het hulpprogramma Apple Configurator gebruiken om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 
@@ -45,20 +45,22 @@ Als de instelling die u zoekt niet wordt weergegeven in dit onderwerp, kunt u de
 ### <a name="security-settings"></a>Beveiligingsinstellingen
 Alle instellingen zijn van toepassing op iOS 8.0 en hoger.
 
-|Naam van de instelling|Details|
-|----------------|-------|
-|**Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**|Hier geeft u op of de gebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.|
-|**Vereist wachtwoordtype**|Hier geeft u het type wachtwoord op dat vereist is, zoals alleen numeriek of alfanumeriek.|
-|**Aantal complexe tekens dat is vereist in wachtwoord**|Hier geeft u het aantal symbooltekens (zoals **#** of **@**) op dat het wachtwoord moet bevatten.|
-|**Minimale wachtwoordlengte**|Hier geeft u het minimumaantal tekens op voor het wachtwoord.|
-|**Eenvoudige wachtwoorden toestaan**|Hiermee staat u toe dat eenvoudige wachtwoorden worden gebruikt, zoals **0000** en **1234**.|
-|**Aantal herhaalde, mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Hier geeft u het aantal mislukte aanmeldingspogingen op dat is toegestaan voordat het apparaat wordt gewist.|
-|**Minuten van inactiviteit voordat wachtwoord vereist is**<sup>1</sup>|Hier geeft u op hoelang het apparaat inactief moet zijn voordat gebruikers hun wachtwoord opnieuw moeten invoeren.|
-|**Dagen tot wachtwoord verloopt**|Hier geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|
-|**Wachtwoordgeschiedenis onthouden**|Hier geeft u op of de gebruiker eerder gebruikte wachtwoorden mag hergebruiken.|
-|**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Hier geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.|
-|**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**<sup>1</sup>|Hiermee geeft u het aantal minuten op waarna het apparaatscherm wordt uitgeschakeld.|
-|**Vingerafdruk voor ontgrendelen toestaan**|Hiermee staat u toe dat het apparaat kan worden ontgrendeld met een vingerafdruk.|
+
+|                                           Naam van de instelling                                            |                                                            Details                                                             |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten</strong>                    |                        Hier geeft u op of de gebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.                        |
+|                              <strong>Vereist wachtwoordtype</strong>                              |                   Hier geeft u het type wachtwoord op dat vereist is, zoals alleen numeriek of alfanumeriek.                    |
+|                <strong>Aantal complexe tekens dat is vereist in wachtwoord</strong>                 | Hier geeft u het aantal symbooltekens (zoals <strong>#</strong> of <strong>@</strong>) op dat het wachtwoord moet bevatten. |
+|                             <strong>Minimale wachtwoordlengte</strong>                              |                                   Hier geeft u het minimumaantal tekens op voor het wachtwoord.                                    |
+|                              <strong>Eenvoudige wachtwoorden toestaan</strong>                              |                          Hiermee staat u toe dat eenvoudige wachtwoorden worden gebruikt, zoals <strong>0000</strong> en <strong>1234</strong>.                          |
+|     <strong>Aantal herhaalde, mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist</strong>      |                       Hier geeft u het aantal mislukte aanmeldingspogingen op dat is toegestaan voordat het apparaat wordt gewist.                        |
+|          <strong>Minuten van inactiviteit voordat wachtwoord vereist is</strong><sup>1</sup>           |                   Hier geeft u op hoelang het apparaat inactief moet zijn voordat gebruikers hun wachtwoord opnieuw moeten invoeren.                    |
+|                            <strong>Dagen tot wachtwoord verloopt</strong>                            |                             Hier geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.                             |
+|                            <strong>Wachtwoordgeschiedenis onthouden</strong>                             |                           Hier geeft u op of de gebruiker eerder gebruikte wachtwoorden mag hergebruiken.                           |
+| <strong>Wachtwoordgeschiedenis onthouden</strong> – <strong>Wachtwoorden niet opnieuw gebruiken</strong> |                           Hier geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.                           |
+|            <strong>Minuten van inactiviteit voordat het scherm wordt uitgeschakeld</strong><sup>1</sup>             |                             Hiermee geeft u het aantal minuten op waarna het apparaatscherm wordt uitgeschakeld.                             |
+|                             <strong>Vingerafdruk voor ontgrendelen toestaan</strong>                             |                                        Hiermee staat u toe dat het apparaat kan worden ontgrendeld met een vingerafdruk.                                         |
+
 <sup>1</sup> Wanneer u voor iOS-apparaten de instellingen **Minuten van inactiviteit voordat het scherm wordt uitgeschakeld** en **Minuten van inactiviteit voordat wachtwoord vereist is** configureert, worden deze opeenvolgend toegepast. Als u de waarde voor beide instellingen instelt op bijvoorbeeld **5** minuten, wordt het scherm na 5 minuten automatisch uitgeschakeld en wordt het apparaat vergrendeld na nog eens 5 minuten. Als de gebruiker het scherm echter handmatig uitschakelt, wordt de tweede instelling onmiddellijk toegepast. Nadat de gebruiker in het hetzelfde voorbeeld het scherm heeft uitgeschakeld, wordt het apparaat 5 minuten later vergrendeld.
 
 ### <a name="system-settings"></a>Systeeminstellingen
@@ -180,25 +182,26 @@ Beleid met compatibele en niet-compatibele app-instellingen moet worden geïmple
 
 ### <a name="kiosk-mode-settings"></a>Instellingen voor kioskmodus
 
-|Naam van de instelling|Details|
-|----------------|--------------------|
-|**Een beheerde app selecteren die mag worden uitgevoerd wanneer het apparaat in kioskmodus is**|Kies **Bladeren** en geef op welke beheerde apps, of apps in een store, mogen worden uitgevoerd wanneer het apparaat in kioskmodus is. Er mogen geen andere apps op het apparaat worden uitgevoerd. Zie "URL's voor app stores opgeven" verderop in dit onderwerp voor meer informatie.|
-|**Aanraakscherm toestaan**|Hiermee schakelt u het aanraakscherm van het apparaat in of uit.|
-|**Schermrotatie toestaan**|Hiermee staat u het wijzigen van de schermstand toe wanneer de gebruiker het apparaat draait.|
-|**Volumeknoppen toestaan**|Hiermee schakelt u het gebruik van de volumeknoppen op het apparaat in of uit.|
-|**Schakelaar voor belsignaal toestaan**|Hiermee schakelt u de schakelaar voor belsignaal (dempen) op het apparaat in of uit.|
-|**Knop voor slaapstand/ontwaken van scherm toestaan**|Hiermee schakelt u de knop voor slaapstand/ontwaken van het scherm op het apparaat in of uit.|
-|**Automatisch vergrendelen toestaan**|Hiermee schakelt u de automatische vergrendeling van het apparaat in of uit.|
-|**Monogeluid inschakelen**|Hiermee schakelt u de toegankelijkheidsinstelling **Monogeluid**in of uit.|
-|**Voice-over inschakelen**|Hiermee schakelt u de toegankelijkheidsinstelling **Voice-over**, die tekst op het apparaatscherm voorleest, in of uit.|
-|**Aanpassingen aan voice-over inschakelen**|Hiermee schakelt u aanpassingen voor de functie VoiceOver (bijvoorbeeld hoe snel schermtekst wordt voorgelezen) in of uit.|
-|**Zoomen inschakelen**|Hiermee schakelt u de toegankelijkheidsinstelling **Zoomen**, waarmee de gebruiker via aanraken kan inzoomen op het apparaatscherm, in of uit.|
-|**Aanpassingen aan zoomen inschakelen**|Hiermee schakelt u aanpassingen aan de zoomfunctie in of uit.|
-|**Kleuren omkeren inschakelen**|Hiermee schakelt u de toegankelijkheidsinstelling **Kleuren omkeren**, die het scherm aanpast voor gebruikers met een beperkt gezichtsvermogen, in of uit.|
-|**Aanpassingen aan kleuren omkeren inschakelen**|Hiermee schakelt u aanpassingen aan de functie Kleuren omkeren in of uit.|
-|**Ondersteunend aanraken inschakelen**|Hiermee schakelt u de toegankelijkheidsinstelling **Ondersteunend aanraken**, waarmee gebruikers schermbewegingen kunnen uitvoeren die moeilijk voor hen kunnen zijn, in of uit.|
-|**Aanpassingen aan ondersteunend aanraken inschakelen**|Hiermee schakelt u aanpassingen aan de functie Ondersteunend aanraken in of uit.|
-|**Spraakselectie inschakelen**|Hiermee schakelt u de toegankelijkheidsinstellingen voor **Selectie uitspreken**, waarmee door de gebruiker geselecteerde tekst wordt voorgelezen, in of uit.|
+|                                            Naam van de instelling                                            |                                                                                                                                      Details                                                                                                                                       |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Een beheerde app selecteren die mag worden uitgevoerd wanneer het apparaat in kioskmodus is</strong> | Kies <strong>Bladeren</strong> en geef op welke beheerde apps, of apps in een store, mogen worden uitgevoerd wanneer het apparaat in kioskmodus is. Er mogen geen andere apps op het apparaat worden uitgevoerd. Zie "URL's voor app stores opgeven" verderop in dit onderwerp voor meer informatie. |
+|                                    <strong>Aanraakscherm toestaan</strong>                                    |                                                                                                                  Hiermee schakelt u het aanraakscherm van het apparaat in of uit.                                                                                                                  |
+|                               <strong>Schermrotatie toestaan</strong>                               |                                                                                                Hiermee staat u het wijzigen van de schermstand toe wanneer de gebruiker het apparaat draait.                                                                                                 |
+|                               <strong>Volumeknoppen toestaan</strong>                                |                                                                                                           Hiermee schakelt u het gebruik van de volumeknoppen op het apparaat in of uit.                                                                                                           |
+|                                <strong>Schakelaar voor belsignaal toestaan</strong>                                |                                                                                                             Hiermee schakelt u de schakelaar voor belsignaal (dempen) op het apparaat in of uit.                                                                                                              |
+|                          <strong>Knop voor slaapstand/ontwaken van scherm toestaan</strong>                           |                                                                                                           Hiermee schakelt u de knop voor slaapstand/ontwaken van het scherm op het apparaat in of uit.                                                                                                            |
+|                                  <strong>Automatisch vergrendelen toestaan</strong>                                  |                                                                                                                 Hiermee schakelt u de automatische vergrendeling van het apparaat in of uit.                                                                                                                 |
+|                                 <strong>Monogeluid inschakelen</strong>                                 |                                                                                                      Hiermee schakelt u de toegankelijkheidsinstelling <strong>Monogeluid</strong>in of uit.                                                                                                      |
+|                                 <strong>Voice-over inschakelen</strong>                                 |                                                                               Hiermee schakelt u de toegankelijkheidsinstelling <strong>Voice-over</strong>, die tekst op het apparaatscherm voorleest, in of uit.                                                                                |
+|                           <strong>Aanpassingen aan voice-over inschakelen</strong>                           |                                                                  Hiermee schakelt u aanpassingen voor de functie VoiceOver (bijvoorbeeld hoe snel schermtekst wordt voorgelezen) in of uit.                                                                   |
+|                                    <strong>Zoomen inschakelen</strong>                                    |                                                                         Hiermee schakelt u de toegankelijkheidsinstelling <strong>Zoomen</strong>, waarmee de gebruiker via aanraken kan inzoomen op het apparaatscherm, in of uit.                                                                         |
+|                              <strong>Aanpassingen aan zoomen inschakelen</strong>                              |                                                                                                  Hiermee schakelt u aanpassingen aan de zoomfunctie in of uit.                                                                                                  |
+|                               <strong>Kleuren omkeren inschakelen</strong>                                |                                                                    Hiermee schakelt u de toegankelijkheidsinstelling <strong>Kleuren omkeren</strong>, die het scherm aanpast voor gebruikers met een beperkt gezichtsvermogen, in of uit.                                                                    |
+|                         <strong>Aanpassingen aan kleuren omkeren inschakelen</strong>                          |                                                                                         Hiermee schakelt u aanpassingen aan de functie Kleuren omkeren in of uit.                                                                                         |
+|                              <strong>Ondersteunend aanraken inschakelen</strong>                               |                                                     Hiermee schakelt u de toegankelijkheidsinstelling <strong>Ondersteunend aanraken</strong>, waarmee gebruikers schermbewegingen kunnen uitvoeren die moeilijk voor hen kunnen zijn, in of uit.                                                     |
+|                        <strong>Aanpassingen aan ondersteunend aanraken inschakelen</strong>                         |                                                                                       Hiermee schakelt u aanpassingen aan de functie Ondersteunend aanraken in of uit.                                                                                       |
+|                              <strong>Spraakselectie inschakelen</strong>                              |                                                                        Hiermee schakelt u de toegankelijkheidsinstellingen voor <strong>Selectie uitspreken</strong>, waarmee door de gebruiker geselecteerde tekst wordt voorgelezen, in of uit.                                                                         |
+
 > [!NOTE]
 > De volgende opmerkingen zijn van toepassing op kioskmodusinstellingen voor iOS-apparaten:
 >
@@ -349,8 +352,6 @@ Gebruik de informatie in deze lijst om de naam, uitgever en bundel-id te achterh
 ,com.apple.Passbook,Wallet,Apple
 ,com.apple.Bridge,Watch,Apple
 ,com.apple.weather,Weather,Apple
-
-
 ```
 
 

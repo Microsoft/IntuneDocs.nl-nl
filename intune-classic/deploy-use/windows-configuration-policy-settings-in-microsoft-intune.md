@@ -1,29 +1,29 @@
 ﻿---
 title: Windows-beleidsinstellingen
 description: Gebruik de algemene regels voor het Intune Windows-configuratiebeleid (Windows 8.1 en later) om instellingen te configureren voor geregistreerde Windows 8.1- en Windows 8-apparaten.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fa8d8454e9d22b2d3c36cd6449805d709c34ffa
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ccd5bd201de59537dbf99ea9e19d84dbf80c1a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Windows-beleidsinstellingen in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Gebruik het **algemene Windows-configuratiebeleid (Windows 8.1 en hoger)** om de volgende instellingen te configureren voor geregistreerde Windows 8-, Windows 8.1- en Windows RT 8.1-apparaten:
 
@@ -49,9 +49,10 @@ Gebruik het **algemene Windows-configuratiebeleid (Windows 8.1 en hoger)** om d
 
 ## <a name="encryption-settings"></a>Versleutelingsinstellingen
 
-|Naam van de instelling|Details|
-|----------------|-----|
-|**Versleuteling vereisen op mobiele apparaat**<sup>1</sup>|Vereist dat bestanden op het apparaat zijn versleuteld.|
+|                           Naam van de instelling                           |                     Details                      |
+|------------------------------------------------------------------|--------------------------------------------------|
+| <strong>Versleuteling vereisen op mobiele apparaat</strong><sup>1</sup> | Vereist dat bestanden op het apparaat zijn versleuteld. |
+
 <sup>1</sup> Aanvullende informatie voor apparaten met Windows 8.1
 
 -   Als u versleuteling wilt afdwingen op apparaten met Windows 8.1, moet u op elk apparaat de [December 2014 MDM-clientupdate voor Windows](http://support.microsoft.com/kb/3013816) installeren.
@@ -118,5 +119,5 @@ Gebruik het **algemene Windows-configuratiebeleid (Windows 8.1 en hoger)** om d
 
 
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

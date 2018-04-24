@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf47c802291d802ac890aa4ba00cf79d9d2d10f0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 383309944bd185ea2abc79b3bcc3488ad3377b50
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>iOS-apparaten in bedrijfseigendom met het Device Enrollment Program inschrijven
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune kan 'draadloos' een inschrijvingsprofiel implementeren op iOS-apparaten die via het Device Enrollment Program zijn aangeschaft. Het inschrijvingspakket kan configuratieassistentopties voor het apparaat bevatten.
 
@@ -56,13 +56,13 @@ In de volgende stappen wordt uitgelegd hoe u iOS-apparaten vanaf het begin kunt 
 
 1. Ga naar de [Device Enrollment Program-portal](https://deploy.apple.com) (https://deploy.apple.com)) en meld u aan met de Apple ID van uw bedrijf. Deze Apple ID moet later worden gebruikt om uw DEP-token te verlengen.
 
-2.  Ga in de portal voor apparaatinschrijving naar **Programma apparaatinschrijving** &gt; **Servers beheren** en kies **MDM-server toevoegen**.
+2. Ga in de portal voor apparaatinschrijving naar **Programma apparaatinschrijving** &gt; **Servers beheren** en kies **MDM-server toevoegen**.
 
-3.  Voer de **MDM-servernaam** in en kies **Volgende**. De servernaam is voor eigen referentie en dient om de MDM-server te identificeren. Het is niet de naam of URL van de Microsoft Intune-server.
+3. Voer de **MDM-servernaam** in en kies **Volgende**. De servernaam is voor eigen referentie en dient om de MDM-server te identificeren. Het is niet de naam of URL van de Microsoft Intune-server.
 
-4.  Het dialoogvenster **&lt;Servernaam&gt; toevoegen** wordt geopend. Kies **Bestand selecteren...** om het .pem-bestand te uploaden en kies **Volgende**.
+4. Het dialoogvenster **&lt;Servernaam&gt; toevoegen** wordt geopend. Kies **Bestand selecteren...** om het .pem-bestand te uploaden en kies **Volgende**.
 
-5.  In het dialoogvenster **&lt;Servernaam&gt; toevoegen** wordt een koppeling met **Uw servertoken** weergegeven. Download het servertokenbestand (.p7m) naar uw computer en kies **Gereed**.
+5. In het dialoogvenster **&lt;Servernaam&gt; toevoegen** wordt een koppeling met **Uw servertoken** weergegeven. Download het servertokenbestand (.p7m) naar uw computer en kies **Gereed**.
 
    Dit certificaatbestand (.p7m) wordt gebruikt om een vertrouwensrelatie tussen Intune en de Device Enrollment Program-servers van Apple tot stand te brengen.
 
@@ -80,8 +80,8 @@ In de volgende stappen wordt uitgelegd hoe u iOS-apparaten vanaf het begin kunt 
 
    - **Vragen om gebruikersaffiniteit**: het apparaat moet aan een gebruiker worden gekoppeld tijdens de eerste configuratie voordat toegang tot gegevens en e-mail van het bedrijf kan worden verleend. **Gebruikersaffiniteit** moet worden ingesteld voor DEP-beheerde apparaten die eigendom zijn van gebruikers en de bedrijfsportal moeten gebruiken (bijvoorbeeld om apps te installeren). Multi-Factor Authentication (MFA) werkt niet tijdens inschrijving op DEP-apparaten met gebruikersaffiniteit. Na de inschrijving werkt MFA zoals verwacht op deze apparaten. Nieuwe gebruikers die hun wachtwoord moeten wijzigen wanneer ze zich voor het eerst aanmelden, kunnen geen prompt krijgen tijdens de inschrijving voor DEP-apparaten. Daarnaast wordt gebruikers waarvan de wachtwoorden zijn verlopen niet gevraagd hun wachtwoord opnieuw in te stellen tijdens de DEP-inschrijving, en moeten deze het wachtwoord vanaf een ander apparaat opnieuw instellen.
 
-    >[!NOTE]
-    >Voor DEP met gebruikersaffiniteit moet [WS-Trust 1.3 gebruikersnaam/mixed-eindpunt](https://technet.microsoft.com/library/adfs2-help-endpoints) zijn ingeschakeld om een gebruikerstoken aan te vragen. [Meer informatie over WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+     >[!NOTE]
+     >Voor DEP met gebruikersaffiniteit moet [WS-Trust 1.3 gebruikersnaam/mixed-eindpunt](https://technet.microsoft.com/library/adfs2-help-endpoints) zijn ingeschakeld om een gebruikerstoken aan te vragen. [Meer informatie over WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
    - **Geen gebruikersaffiniteit**: het apparaat is niet gekoppeld aan een gebruiker. Gebruik deze relatie voor apparaten waarmee taken worden uitgevoerd zonder toegang tot lokale gebruikersgegevens. Apps waarvoor een gebruikersrelatie is vereist, zoals de bedrijfsportal-app die gebruikt wordt voor het installeren van LOB-apps, zullen niet werken.
 
@@ -105,7 +105,7 @@ In de volgende stappen wordt uitgelegd hoe u iOS-apparaten vanaf het begin kunt 
        - **Uitschakelen**: hiermee kan het beheerprofiel worden verwijderd uit het menu **Instellingen**
        - **Inschakelen**: (vereist **Voorbereidingsmodus** = **Onder supervisie**) hiermee wordt de menuoptie in de iOS-instellingen uitgeschakeld om het beheerprofiel te verwijderen
    - **Configuratieassistentopties**: deze instellingen zijn optioneel en kunnen naderhand worden geconfigureerd in het iOS-menu **Instellingen**.
-        - **Wachtwoordcode**: hiermee wordt tijdens de activering gevraagd om de wachtwoordcode. Vraag altijd om een wachtwoordcode tenzij het apparaat wordt beveiligd of de toegang tot het apparaat op een andere manier wordt beheerd (bijvoorbeeld de kioskmodus waarmee op het apparaat maar één app kan worden uitgevoerd)
+     - **Wachtwoordcode**: hiermee wordt tijdens de activering gevraagd om de wachtwoordcode. Vraag altijd om een wachtwoordcode tenzij het apparaat wordt beveiligd of de toegang tot het apparaat op een andere manier wordt beheerd (bijvoorbeeld de kioskmodus waarmee op het apparaat maar één app kan worden uitgevoerd)
        - **Locatieservices**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om de service gevraagd
        - **Herstellen**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent gevraagd om een iCloud-back-up
        - **Apple ID**: als deze optie is ingeschakeld, worden gebruikers door iOS gevraagd om een Apple ID wanneer Intune een app zonder een id probeert te installeren. Een Apple ID is vereist voor het downloaden van iOS-apps uit de App Store, waaronder de apps die zijn geïnstalleerd door Intune.
@@ -115,10 +115,10 @@ In de volgende stappen wordt uitgelegd hoe u iOS-apparaten vanaf het begin kunt 
        - **In- en uitzoomen**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
        - **Siri**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
        - **Diagnostische gegevens verzenden naar Apple**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
-   -  **Extra beheer via Apple Configurator inschakelen**: stel deze optie in op **Niet toestaan** om te voorkomen dat bestanden met iTunes of beheer via Apple Configurator worden gesynchroniseerd. Het is een goed idee om **Niet toestaan** in te stellen, verdere configuraties vanuit Apple Configurator te exporteren en vervolgens als een aangepast iOS-configuratieprofiel via Intune te implementeren in plaats van deze instelling te gebruiken om een handmatige implementatie met of zonder een certificaat toe te staan.
-       - **Niet toestaan**: hiermee wordt voorkomen dat het apparaat communiceert via USB (het koppelen wordt uitgeschakeld)
-       - **Toestaan**: hiermee wordt toegestaan dat een apparaat communiceert via een USB-verbinding voor een pc of Mac
-       - **Certificaat vereisen**: hiermee is het mogelijk een Mac te koppelen met een certificaat dat is geïmporteerd in het registratieprofiel
+   - **Extra beheer via Apple Configurator inschakelen**: stel deze optie in op **Niet toestaan** om te voorkomen dat bestanden met iTunes of beheer via Apple Configurator worden gesynchroniseerd. Het is een goed idee om **Niet toestaan** in te stellen, verdere configuraties vanuit Apple Configurator te exporteren en vervolgens als een aangepast iOS-configuratieprofiel via Intune te implementeren in plaats van deze instelling te gebruiken om een handmatige implementatie met of zonder een certificaat toe te staan.
+      - **Niet toestaan**: hiermee wordt voorkomen dat het apparaat communiceert via USB (het koppelen wordt uitgeschakeld)
+      - **Toestaan**: hiermee wordt toegestaan dat een apparaat communiceert via een USB-verbinding voor een pc of Mac
+      - **Certificaat vereisen**: hiermee is het mogelijk een Mac te koppelen met een certificaat dat is geïmporteerd in het registratieprofiel
 
 ### <a name="assign-the-profile-to-devices"></a>Het profiel aan apparaten toewijzen
 

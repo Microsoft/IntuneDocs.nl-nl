@@ -1,4 +1,4 @@
----
+﻿---
 title: Apps implementeren
 description: In dit onderwerp worden enkele concepten uitgelegd die u moet begrijpen voordat u apps met Intune gaat implementeren.
 keywords: ''
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc2a8cb8fc07f87dd0a4e9d8f3935c04a73fe8fd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Apps implementeren met Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In dit onderwerp worden enkele concepten uitgelegd die u moet begrijpen voordat u apps met Microsoft Intune gaat implementeren.
 
@@ -46,18 +46,19 @@ Wanneer u apps implementeert, kunt u kiezen uit een van de volgende implementati
 
 #### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Inzicht in welke implementatieacties beschikbaar zijn voor elk type installatieprogramma
 
-|Type installatieprogramma|Vereiste installatie|Beschikbare installatie|Verwijderen|Niet van toepassing|
-|------------------|--------------------|---------------------|-------------|------------------|
-|App-pakket voor Windows (geïmplementeerd op een gebruikersgroep)|Ja|Ja|Ja|Ja|
-|App-pakket voor Windows (geïmplementeerd op een apparaatgroep)|Ja|Nee|Ja|Ja|
-|App-pakket voor mobiele apparaten (geïmplementeerd op een gebruikersgroep)|Ja|Ja|Ja|Ja|
-|App-pakket voor mobiele apparaten (geïmplementeerd op een apparaatgroep)|Ja|Nee|Ja|Ja|
-|Windows Installer (geïmplementeerd op een gebruikersgroep)|Nee|Ja|Nee|Ja|
-|Windows Installer (geïmplementeerd op een apparaatgroep)|Ja|Nee|Ja|Ja|
-|Externe koppeling (geïmplementeerd op een gebruikersgroep)|Nee|Ja|Nee|Ja|
-|Externe koppeling (geïmplementeerd op een apparaatgroep)|Nee|Nee|Nee|Nee|
-|Beheerde iOS-app uit de App Store (geïmplementeerd op een gebruikersgroep)|Ja|Ja|Ja|Ja|
-|Beheerde iOS-app uit de App Store (geïmplementeerd op een apparaatgroep)|Ja|Nee|Ja|Ja|
+|                         Type installatieprogramma                          | Vereiste installatie | Beschikbare installatie | Verwijderen | Niet van toepassing |
+|-----------------------------------------------------------------|------------------|-------------------|-----------|----------------|
+|         App-pakket voor Windows (geïmplementeerd op een gebruikersgroep)          |       Ja        |        Ja        |    Ja    |      Ja       |
+|        App-pakket voor Windows (geïmplementeerd op een apparaatgroep)         |       Ja        |        Nee         |    Ja    |      Ja       |
+|    App-pakket voor mobiele apparaten (geïmplementeerd op een gebruikersgroep)    |       Ja        |        Ja        |    Ja    |      Ja       |
+|   App-pakket voor mobiele apparaten (geïmplementeerd op een apparaatgroep)   |       Ja        |        Nee         |    Ja    |      Ja       |
+|          Windows Installer (geïmplementeerd op een gebruikersgroep)           |        Nee        |        Ja        |    Nee     |      Ja       |
+|         Windows Installer (geïmplementeerd op een apparaatgroep)          |       Ja        |        Nee         |    Ja    |      Ja       |
+|            Externe koppeling (geïmplementeerd op een gebruikersgroep)             |        Nee        |        Ja        |    Nee     |      Ja       |
+|           Externe koppeling (geïmplementeerd op een apparaatgroep)            |        Nee        |        Nee         |    Nee     |       Nee       |
+|  Beheerde iOS-app uit de App Store (geïmplementeerd op een gebruikersgroep)  |       Ja        |        Ja        |    Ja    |      Ja       |
+| Beheerde iOS-app uit de App Store (geïmplementeerd op een apparaatgroep) |       Ja        |        Nee         |    Ja    |      Ja       |
+
 > [!TIP]
 > Wanneer u een app implementeert en zowel gebruikers- als apparaatgroepen selecteert, kunt u de app alleen als **Beschikbare installatie** implementeren.
 

@@ -1,25 +1,25 @@
 ---
 title: MTD-apps toevoegen en toewijzen aan Microsoft Intune
-titleSuffix: 
+titleSuffix: ''
 description: Gebruik Intune om Mobile Thread Defense (MTD)-apps, de Microsoft Authenticator-app en het iOS-configuratiebeleid toe te voegen in Azure Portal.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fc71620fee1b1df907a4027c1c57cd91b53032e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>MTD-apps (Mobile Threat Defense) toevoegen en toewijzen met Intune
 
@@ -75,7 +75,7 @@ Zie het [proces voor het opnieuw ondertekenen van Lookout for Work-apps voor iOS
 Schakel Azure Active Directory-verificatie voor de iOS-gebruikers als volgt in:
 
 1. Ga naar [Azure Portal](https://portal.azure.com), meld u aan en navigeer naar de toepassingspagina.
-  
+
 2. Voeg de **Lookout for Work-app voor iOS** toe als een **native clienttoepassing**.
 
 3. Vervang **com.lookout.enterprise.yourcompanyname** door de klantbundel-id die u hebt geselecteerd bij het ondertekenen van de IPA.
@@ -133,13 +133,13 @@ Schakel Azure Active Directory-verificatie voor de iOS-gebruikers als volgt in:
 
 -   U dient het configuratiebeleid voor de iOS-app te **downloaden**: 
     -   Ga naar [Beheerconsole van Skycure](https://aad.skycure.com) en meld u aan met uw beheerdersreferenties.
-    
+
     -   Ga naar **Instellingen** &gt; **Integraties voor apparaatbeheer**  &gt; **Selectie van EMM-integraties**, kies **Microsoft Intune** en sla vervolgens de selectie op.
-    
+
     -   Klik op de koppeling voor de **installatiebestanden voor de integratie** en sla het gegenereerde bestand \*.zip op. Het ZIP-bestand bevat het bestand **skycure\_configuration.plist**, waarmee het configuratiebeleid voor de iOS-app wordt gemaakt in Intune.
-    
+
     -   Zie de Engelstalige instructies voor het [gebruiken van app-configuratiebeleid voor iOS van Microsoft Intune](app-configuration-policies-use-ios.md) om het configuratiebeleid voor de iOS-app Skycure toe te voegen.
-    
+
     - Gebruik in **stap 8** de optie **XML-gegevens invoeren**, kopieer de inhoud van het bestand **skycure_configuration.plist** en plak de inhoud in de hoofdtekst van het configuratiebeleid.
 
 U kunt de inhoud van **skycure_configuration.plist** ook hier kopiëren:
@@ -151,7 +151,6 @@ U kunt de inhoud van **skycure_configuration.plist** ook hier kopiëren:
     <key>UserEmail</key>
     <string>{{userprincipalname}}</string>
 </dict>
-
 ```
 ### <a name="for-check-point-sandblast-mobile"></a>Voor Check Point SandBlast Mobile
 
@@ -160,7 +159,6 @@ U kunt de inhoud van **skycure_configuration.plist** ook hier kopiëren:
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>
-
 ```
 
 ### <a name="for-zimperium"></a>Voor Zimperium
@@ -179,7 +177,6 @@ U kunt de inhoud van **skycure_configuration.plist** ook hier kopiëren:
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
 
 ## <a name="to-assign-apps-all-mtd-partners"></a>Apps toewijzen (alle MTD-partners)

@@ -1,29 +1,29 @@
 ---
 title: Apps en gegevens beveiligen
 description: In dit onderwerp worden de verschillende Intune-functies en -mogelijkheden beschreven die beschikbaar voor u zijn voor het beveiligen van uw bedrijfs-apps en -gegevens.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 59168615548d3c7da8dc284476227ed0f01ceffe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2a05444c757b8e99ca0b897acfcd6238d960aeb2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Apps en gegevens beveiligen met Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune beveiligt bedrijfsgegevens via meerdere lagen van de technologie. Op de identiteitslaag beveiligt voorwaardelijke toegang de toegang tot services door alleen toegang te verlenen vanaf beheerde apparaten en apparaten die aan het beleid voldoen. Op de clienttoepassingslaag beveiligt MAM (Mobile Application Management) het verlies van gegevens door te voorkomen dat gegevens naar niet-beveiligde apps of opslaglocaties worden verplaatst en door gegevens te wissen wanneer een apparaat is zoekgeraakt of gestolen. U kunt het beste een combinatie van twee beveiligingslagen gebruiken om gegevens te beveiligen en uw mobiele medewerkers productief te houden.
 

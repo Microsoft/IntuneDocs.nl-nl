@@ -2,28 +2,28 @@
 title: Overzicht van de levenscycli van apparaten en apps
 titleSuffix: Microsoft Intune
 description: Overzicht van de levenscycli van het apparaat en apps met Microsoft Intune.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d262d5679ceb802320bd5aa496d91f549ec12952
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c358fff91744335080a10d45c7753293911430ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-device-and-app-lifecycles"></a>Overzicht van de levenscycli van apparaten en apps
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Hoewel de behoeften van individuele organisaties mogelijk verschillen, zijn er bepaalde algemene stappen die alle organisaties continu moeten ondernemen om hun mobiele apparaten en mobiele apps te beheren. Deze kunnen worden gegroepeerd in twee hoofdcategorieën en worden **levenscycli** genoemd. De levenscyclus van de implementatie die u volgt, is afhankelijk van het scenario dat u wilt implementeren. U hebt bijvoorbeeld alleen de levenscyclus van het apparaat, de levenscyclus van de app of beide nodig.
 

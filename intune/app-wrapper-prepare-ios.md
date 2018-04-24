@@ -1,28 +1,28 @@
 ---
 title: iOS-apps verpakken met de Intune App Wrapping Tool
 description: Meer informatie over hoe uw iOSd-apps verpakt zonder de code van de app zelf te wijzigen. Bereid de apps voor, zodat u de Mobile App Management-beleidsregels kunt toepassen.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9329c25d6211149102c06b44fdb6d6222b13550
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e8e2783be3c515aa742a3adc149304e0a2ae3b99
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Gebruik de Microsoft Intune App Wrapping Tool voor iOS om het beveiligingsbeleid van de Intune-app voor interne iOS-apps in te schakelen zonder dat u de code van de app zelf wijzigt.
 
@@ -98,48 +98,48 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 
 4. Klik op **Certificates, IDs & Profiles**.
 
-  ![Apple Developer-portal](./media/iOS-signing-cert-1.png)
+   ![Apple Developer-portal](./media/iOS-signing-cert-1.png)
 
 5. Klik op het ![plusteken van de Apple Developer-portal](./media/iOS-signing-cert-2.png) in de rechterbovenhoek om een iOS-certificaat toe te voegen.
 
 6. Maak een **In-House and Ad Hoc**-certificaat onder **Production**.
 
-  ![Selecteer In-House and Ad Hoc als certificaat](./media/iOS-signing-cert-3.png)
+   ![Selecteer In-House and Ad Hoc als certificaat](./media/iOS-signing-cert-3.png)
 
-  >[!NOTE]
-  >Als u niet van plan bent om de app te distribueren en u deze alleen intern wilt testen, kunt u een certificaat voor iOS-appontwikkeling in plaats van een certificaat voor productie gebruiken. Als u een certificaat voor ontwikkeling gebruikt, zorg er dan voor dat het mobiele inrichtingsprofiel verwijst naar de apparaten waarop de app wordt geïnstalleerd.
+   >[!NOTE]
+   >Als u niet van plan bent om de app te distribueren en u deze alleen intern wilt testen, kunt u een certificaat voor iOS-appontwikkeling in plaats van een certificaat voor productie gebruiken. Als u een certificaat voor ontwikkeling gebruikt, zorg er dan voor dat het mobiele inrichtingsprofiel verwijst naar de apparaten waarop de app wordt geïnstalleerd.
 
 7. Klik onder aan de pagina op **Next**.
 
 8. Lees de instructies voor het maken van een **Certificate Signing Request (CSR)** met behulp van de toepassing Sleutelhangertoegang op uw macOS-computer.
 
-  ![Instructies doornemen voor het maken van een CSR](./media/iOS-signing-cert-4.png)
+   ![Instructies doornemen voor het maken van een CSR](./media/iOS-signing-cert-4.png)
 
 9. Volg de bovenstaande instructies om een CSR te maken. Start de toepassing **Sleutelhangertoegang** op uw macOS-computer.
 
 10. In het macOS-menu boven aan het scherm gaat u naar **Sleutelhangertoegang > Certificaatassistent > Vraag een certificaat aan bij een certificaatautoriteit**.  
 
-  ![Een certificaat aanvragen bij een certificeringsinstantie in Sleutelhangertoegang](./media/iOS-signing-cert-5.png)
+    ![Een certificaat aanvragen bij een certificeringsinstantie in Sleutelhangertoegang](./media/iOS-signing-cert-5.png)
 
 11. Volg de instructies op de Apple Developer-site hierboven voor het maken van een CSR-bestand. Sla het CSR-bestand op uw macOS-computer op.
 
-  ![Een certificaat aanvragen bij een certificeringsinstantie in Sleutelhangertoegang](./media/iOS-signing-cert-6.png)
+    ![Een certificaat aanvragen bij een certificeringsinstantie in Sleutelhangertoegang](./media/iOS-signing-cert-6.png)
 
 12. Ga terug naar de Apple Developer-site. Klik op **Continue**. Upload vervolgens het CSR-bestand.
 
 13. Apple genereert het handtekeningcertificaat. Download het handtekeningcertificaat en sla het op in een gemakkelijk te onthouden locatie op uw macOS-computer.
 
-  ![Uw handtekeningcertificaat downloaden](./media/iOS-signing-cert-7.png)
+    ![Uw handtekeningcertificaat downloaden](./media/iOS-signing-cert-7.png)
 
 14. Dubbelklik op het certificaatbestand dat u zojuist hebt gedownload om het certificaat toe te voegen aan een sleutelhanger.
 
 15. Open **Sleutelhangertoegang** opnieuw. Ga naar uw certificaat door te zoeken naar de naam van het certificaat in de zoekbalk rechtsboven. Klik met de rechtermuisknop op het item om het menu te openen en klik op **Toon info**. In de voorbeeldschermen wordt een certificaat voor ontwikkeling in plaats van een certificaat voor productie gebruikt.
 
-  ![Uw certificaat toevoegen aan een sleutelhanger](./media/iOS-signing-cert-8.png)
+    ![Uw certificaat toevoegen aan een sleutelhanger](./media/iOS-signing-cert-8.png)
 
 16. Er wordt een venster met informatie weergegeven. Ga naar de onderkant van het venster en kijk onder het label **Vingerafdrukken**. Kopieer de (grijs weergegeven) **SHA1**-tekenreeks om deze te gebruiken als de parameter -c voor de App Wrapping Tool.
 
-  ![Uw certificaat toevoegen aan een sleutelhanger](./media/iOS-signing-cert-9.png)
+    ![Uw certificaat toevoegen aan een sleutelhanger](./media/iOS-signing-cert-9.png)
 
 
 
@@ -153,7 +153,7 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 
 4. Maakt een **In House**-inrichtingsprofiel onder **Distribution**.
 
-  ![In House-inrichtingsprofiel selecteren](./media/iOS-provisioning-profile-1.png)
+   ![In House-inrichtingsprofiel selecteren](./media/iOS-provisioning-profile-1.png)
 
 5. Klik op **Continue**. Koppel het eerder gegenereerde handtekeningcertificaat aan het inrichtingsprofiel.
 
@@ -414,8 +414,8 @@ Gebruik de volgende stappen om logboeken op te halen voor uw ingepakte toepassin
 4. Klik op de koppeling 'Aan de slag'.
 5. U kunt nu logboeken delen via e-mail of ze kopiëren naar een locatie op OneDrive.
 
->[!NOTE]
-De logboekfunctionaliteit is ingeschakeld voor apps die zijn ingepakt met de Intune App Wrapping Tool versie 7.1.13 of hoger.
+> [!NOTE]
+> De logboekfunctionaliteit is ingeschakeld voor apps die zijn ingepakt met de Intune App Wrapping Tool versie 7.1.13 of hoger.
 
 ### <a name="see-also"></a>Zie ook
 - [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](apps-prepare-mobile-application-management.md)</br>

@@ -1,25 +1,25 @@
 ---
 title: U moet SandBlast Mobile Protect installeren op uw iOS-apparaat | Microsoft Docs
 description: Informatie over het installeren van SandBlast Mobile Protect op uw iOS-apparaat.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 474fe9c8-558a-4348-ac9d-f87c79f150c4
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 4bf5aeea3aa17acf36b1993079763d3807dab347
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 94440987583651925e2aa3c1cceb7ba1206ed8bc
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>U moet SandBlast Mobile Protect installeren op uw iOS-apparaat
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1893410f4993d6feaa218d251dd7e2561286f5a3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Cisco ISE gebruiken met Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Als u Intune integreert in Cisco ISE (Identity Services Engine) kunt netwerkbeleid schrijven voor uw ISE-omgeving met behulp van de Intune-apparaatinschrijving en de compatibiliteitsstatus. U kunt dit beleid gebruiken om ervoor te zorgen dat uw bedrijfsnetwerk alleen toegankelijk is voor bedrijven die worden beheerd door Intune en die voldoen aan het Intune-beleid.
 
@@ -70,13 +70,13 @@ b. Kies het vergrendelingspictogram &gt;  **Meer informatie**.
 
 ### <a name="obtain-a-self-signed-cert-from-ise"></a>Een zelfondertekend certificaat verkrijgen van ISE 
 
-1.  Ga in de ISE-console naar **Beheer** > **Certificaten** > **Systeemcertificaten** > **Zelfondertekend certificaat genereren**.  
-2.       Exporteer het zelfondertekende certificaat.
+1. Ga in de ISE-console naar **Beheer** > **Certificaten** > **Systeemcertificaten** > **Zelfondertekend certificaat genereren**.  
+2. Exporteer het zelfondertekende certificaat.
 3. In een teksteditor bewerkt u het geëxporteerde certificaat:
 
- - Verwijder  **-----BEGIN CERTIFICATE-----**
- - Verwijder  **-----END CERTIFICATE-----**
- 
+   - Verwijder  **-----BEGIN CERTIFICATE-----**
+   - Verwijder  **-----END CERTIFICATE-----**
+
 Zorg ervoor dat alle tekst op één regel staat
 
 
@@ -88,13 +88,13 @@ Zorg ervoor dat alle tekst op één regel staat
 5. Sla het bestand zonder de naam ervan te wijzigen.
 6. Voorzie uw app van machtigingen voor Microsoft Graph en de Microsoft Intune-API.
 
- a. Kies het volgende voor Microsoft Graph:
+   a. Kies het volgende voor Microsoft Graph:
     - **Toepassingsmachtigingen**: mapgegevens lezen
     - **Overgedragen machtigingen**:
         - Altijd toegang tot gegevens van de gebruiker
         - Gebruikers aanmelden
 
- b. Voor de API van Microsoft Intune kiest u in **Toepassingsmachtigingen** de optie **Apparaatstatus en naleving ophalen uit Intune**.
+   b. Voor de API van Microsoft Intune kiest u in **Toepassingsmachtigingen** de optie **Apparaatstatus en naleving ophalen uit Intune**.
 
 7. Kies **Eindpunten weergeven** en kopieer de volgende waarden voor gebruik bij het configureren van de ISE-instellingen:
 
@@ -105,23 +105,40 @@ Zorg ervoor dat alle tekst op één regel staat
 |Werk uw code bij met uw client-id|Client-id|
 
 ### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Stap 4: het zelfondertekende certificaat van ISE uploaden naar de ISE-app die u in Azure AD hebt gemaakt
-1.     Haal de met base64 gecodeerde certificaatwaarde en de vingerafdruk op uit een openbaar X509-certificaatbestand (CER). In dit voorbeeld wordt PowerShell gebruikt:
-   
-      
-      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
- 
-    Sla de waarden voor $base64Thumbprint, $base64Value en $keyid op, die in de volgende stap worden gebruikt.
-2.       Upload het certificaat via het manifestbestand. Meld u aan bij de [Windows Azure-beheerportal](https://manage.windowsazure.com).
-2.      Zoek in de Azure AD-module de toepassing die u wilt configureren met een X.509-certificaat.
-3.      Download het manifestbestand van de toepassing. 
-5.      Vervang de lege eigenschap “KeyCredentials”: [], door de volgende JSON.  Het complexe type KeyCredentials wordt gedocumenteerd in [Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) (Verwijzing naar entiteit en complex type).
+1. Haal de met base64 gecodeerde certificaatwaarde en de vingerafdruk op uit een openbaar X509-certificaatbestand (CER). In dit voorbeeld wordt PowerShell gebruikt:
 
- 
-    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
-     ], 
- 
+
+~~~
+  $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+  $cer.Import(“mycer.cer”)
+  $bin = $cer.GetRawCertData()
+  $base64Value = [System.Convert]::ToBase64String($bin)
+  $bin = $cer.GetCertHash()
+  $base64Thumbprint = [System.Convert]::ToBase64String($bin)
+  $keyid = [System.Guid]::NewGuid().ToString()
+
+Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
+~~~
+2. Upload het certificaat via het manifestbestand. Meld u aan bij de [Windows Azure-beheerportal](https://manage.windowsazure.com).
+3. Zoek in de Azure AD-module de toepassing die u wilt configureren met een X.509-certificaat.
+4. Download het manifestbestand van de toepassing. 
+5. Vervang de lege eigenschap “KeyCredentials”: [], door de volgende JSON.  Het complexe type KeyCredentials wordt gedocumenteerd in [Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) (Verwijzing naar entiteit en complex type).
+
+
+~~~
+“keyCredentials“: [
+{
+ “customKeyIdentifier“: “$base64Thumbprint_from_above”,
+ “keyId“: “$keyid_from_above“,
+ “type”: “AsymmetricX509Cert”,
+ “usage”: “Verify”,
+ “value”:  “$base64Value_from_above”
+ }2. 
+ ], 
+~~~
+
 Bijvoorbeeld:
- 
+
     “keyCredentials“: [
     {
     “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
@@ -131,10 +148,10 @@ Bijvoorbeeld:
     “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
     }
     ],
- 
-6.      Sla de wijziging op in het manifestbestand van de toepassing.
-7.      Upload het bewerkte manifestbestand van de toepassing via de Azure-beheerportal.
-8.      Optioneel: download het manifest opnieuw om te controleren of uw X.509-certificaat in de toepassing aanwezig is.
+
+6. Sla de wijziging op in het manifestbestand van de toepassing.
+7. Upload het bewerkte manifestbestand van de toepassing via de Azure-beheerportal.
+8. Optioneel: download het manifest opnieuw om te controleren of uw X.509-certificaat in de toepassing aanwezig is.
 
 >[!NOTE]
 >

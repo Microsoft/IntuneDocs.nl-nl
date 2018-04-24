@@ -1,27 +1,27 @@
 ---
 title: Windows Defender Firewall inschakelen | Microsoft Docs
 description: Informatie om uw Windows 10-apparaat in te stellen voor toegang tot bedrijfsresources door uw firewall in te schakelen.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1ed8456c-ef70-429f-9c65-081bb2dfa6ac
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4f8f7ac084e1a6f585cecf091fad5026b7c3c26c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 57342767b83c965c2d22ec68cd74132362b5b40e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>Uw Windows Defender Firewall inschakelen
 

@@ -1,42 +1,42 @@
 ---
 title: Instellingen voor nalevingsbeleid voor Windows-apparaten
 description: Dit onderwerp bevat informatie over de regels en instellingen die u kunt configureren voor een nalevingsbeleid voor Windows-apparaten.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1c9a59fa97c11794ff8ad0a0eaa41630bfdf847e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6a54943873a6af158badb92cef4610e54fc8889b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Instellingen voor nalevingsbeleid voor Windows-apparaten in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 De beleidsinstellingen die in dit onderwerp worden beschreven, zijn van toepassing op apparaten waarop het Windows-besturingssysteem wordt uitgevoerd. In de volgende secties worden de ondersteunde versies van Windows beschreven.
 
 Als u op zoek bent naar informatie over andere platforms, selecteert u een van de volgende opties:
 > [!div class="op_single_selector"]
-- [Instellingen voor nalevingsbeleid voor iOS-apparaten](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Instellingen voor nalevingsbeleid voor Android-apparaten](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Instellingen voor nalevingsbeleid voor Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [Instellingen voor nalevingsbeleid voor iOS-apparaten](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Instellingen voor nalevingsbeleid voor Android-apparaten](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Instellingen voor nalevingsbeleid voor Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Instellingen voor nalevingsbeleid voor Windows Phone-apparaten
 De instellingen in deze sectie worden ondersteund op Windows Phone 8.1 en hoger.
 
-### <a name="system-security-settings"></a>Instellingen voor systeembeveiliging
+### <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
 #### <a name="password"></a>Wachtwoord
 - **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten:** stel deze optie in op **Ja** als u de gebruiker wilt verplichten een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
 
@@ -80,7 +80,7 @@ De instellingen in deze sectie worden ondersteund op Windows Phone 8.1 en hoger.
   > Windows-apparaten bieden geen ondersteuning voor **Early Launch Anti-Malware** (ELAM)-software van derden als onderdeel van de apparaatstatusverklaring.
 
   Zie [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx) voor meer informatie over de werking van de HAS-service.
-###  <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
+  ###  <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
 - **Minimale versie van het besturingssysteem die is vereist**: wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt het apparaat gerapporteerd als niet-compatibel.
     Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. Gebruikers kunnen dan kiezen om een upgrade van hun apparaat uit te voeren, waarna ze toegang tot bedrijfsbronnen krijgen.
 
@@ -153,4 +153,4 @@ Als u de versie van het besturingssysteem wilt vinden die u voor de instellingen
 - Windows 8.1-pc's retourneren versie **6.3**. Als de besturingssysteemversieregel is ingesteld op Windows 8.1 voor Windows, wordt het apparaat als in strijd met het nalevingsbeleid gerapporteerd, zelfs als het apparaat Windows 8.1 heeft.
 
 - Voor Windows 10-computers moet de versie worden ingesteld op **10.0**, gevolgd door het build-nummer van het besturingssysteem dat wordt geretourneerd door de opdracht **winver**. Dit nummer ziet er bijvoorbeeld zo uit: 10.0.10586.
-> ![Build-versie van het besturingssysteem gemarkeerd in het dialoogvenster Info](./media/ca_win10-os-version.png)
+  > ![Build-versie van het besturingssysteem gemarkeerd in het dialoogvenster Info](./media/ca_win10-os-version.png)

@@ -1,25 +1,25 @@
 ---
 title: U moet Symantec Endpoint Protection Mobile op uw iOS-apparaat installeren | Microsoft Docs
 description: Lees hoe u SEP Mobile op uw iOS-apparaat installeert.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6552a9d8033320e4713b0faa50c51e2b95fbb9b7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 30aefc190aed3b8ef280fd0f652e02e401e68fae
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>Symantec Endpoint Protection Mobile op uw iOS-apparaat installeren
 

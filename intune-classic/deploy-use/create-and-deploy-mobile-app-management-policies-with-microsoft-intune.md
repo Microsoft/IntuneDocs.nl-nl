@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: cc133071f4d6c0d1a3bbb3acc7c0bd5cb45b6cef
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In dit onderwerp wordt het proces beschreven van het maken van beveiligingsbeleid voor apps in **Azure-portal**. Azure Portal is de nieuwe beheerconsole voor het maken van beveiligingsbeleid voor apps. U kunt het beste deze portal gebruiken om beveiligingsbeleid voor apps te maken. Azure Portal ondersteunt de volgende MAM-scenario's:
 
@@ -31,23 +31,23 @@ In dit onderwerp wordt het proces beschreven van het maken van beveiligingsbelei
 - Apparaten die worden beheerd door een externe MDM-oplossing.
 - Apparaten die niet worden beheerd door een MDM-oplossing (BYOD).
 
->[!IMPORTANT]
-Houd rekening met het volgende als u momenteel de **Intune-beheerconsole** gebruikt om uw apparaten te beheren:
-
+> [!IMPORTANT]
+> Houd rekening met het volgende als u momenteel de **Intune-beheerconsole** gebruikt om uw apparaten te beheren:
+> 
 > * U kunt beveiligingsbeleid voor apps maken dat ondersteuning biedt voor apps voor apparaten die zijn geregistreerd in Intune via de [Intune-beheerconsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 > * Beveiligingsbeleid voor apps gemaakt in de Intune-beheerconsole kan niet worden geïmporteerd in Azure Portal.  Het beveiligingsbeleid voor apps moet opnieuw worden gemaakt in Azure Portal.
-
+> 
 > * Mogelijk ziet u in de Intune-beheerconsole niet alle instellingen van het beveiligingsbeleid voor apps. Azure-portal is de nieuwe beheerconsole voor het maken van beveiligingsbeleid voor apps.
-
+> 
 > * Voor het implementeren van beheerde apps moet u beveiligingsbeleid voor apps maken in de Intune-beheerconsole. Het kan in dit geval verstandig zijn om beveiligingsbeleid voor apps te maken in zowel de Intune-beheerconsole als Azure-portal: in de Intune-beheerconsole om ervoor te zorgen dat u de mogelijkheid hebt om beheerde apps te implementeren en in Azure-portal omdat dit de nieuwe beheerconsole is die alle instellingen voor beveiligingsbeleid voor apps bevat.
-
+> 
 > * Als u beveiligingsbeleid voor apps maakt in zowel de Intune-beheerconsole als Azure-portal, wordt het beleid dat in Azure-portal is gemaakt, toegepast op de apps.
 
 Voor een lijst met beleidsinstellingen die worden ondersteund voor het Android- en iOS-platform, selecteert u een van de volgende mogelijkheden:
 
 > [!div class="op_single_selector"]
-- [iOS-beleid](ios-mam-policy-settings.md)
-- [Android-beleid](android-mam-policy-settings.md)
+> - [iOS-beleid](ios-mam-policy-settings.md)
+> - [Android-beleid](android-mam-policy-settings.md)
 
 - Zie [protect app data using app protection policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) (Appgegevens beveiligen met behulp van beveiligingsbeleid voor apps)voor een gedetailleerde beschrijving van de werking van het beveiligingsbeleid voor apps en de scenario's die worden ondersteund door het Intune-beveiligingsbeleid voor apps.
 
@@ -129,13 +129,13 @@ Met ingang van Intune versie 1703 hebt u de optie om LOB-apps toe te voegen in I
 > [!IMPORTANT]
 > Selecteer Windows 10 in de vervolgkeuzelijst wanneer u een nieuwe beleid voor app-beveiliging maakt.
 
-1.  Kies op de blade Een beleid toevoegen de optie **Toegestane apps** of **Vrijgestelde apps** om de blade Toegestane apps of Vrijgestelde apps te openen.
+1. Kies op de blade Een beleid toevoegen de optie **Toegestane apps** of **Vrijgestelde apps** om de blade Toegestane apps of Vrijgestelde apps te openen.
 
-    > [!NOTE]
-    >
-    - **Toegestane apps**: dit zijn de apps die zich aan dit beleid moeten houden.
-    - **Vrijgestelde apps**: deze apps zijn vrijgesteld van dit beleid en hebben zonder beperkingen toegang tot bedrijfsgegevens.
-<br></br>
+   > [!NOTE]
+   > 
+   > - **Toegestane apps**: dit zijn de apps die zich aan dit beleid moeten houden.
+   > - **Vrijgestelde apps**: deze apps zijn vrijgesteld van dit beleid en hebben zonder beperkingen toegang tot bedrijfsgegevens.
+   > <br></br>
 2. Klik op de blade Toegestane of Vrijgestelde apps op **Apps toevoegen**. U kunt aanbevolen Microsoft-apps toevoegen, apps uit de Store of bureaublad-apps.
 
     a.  **Aanbevolen apps**: een vooraf gevulde lijst met apps (voornamelijk voor Office) die beheerders gemakkelijk in het beleid kunnen importeren.
@@ -210,8 +210,8 @@ Om het effect van de wijzigingen onmiddellijk te zien, moet de eindgebruiker zic
 Selecteer een van de volgende mogelijkheden voor een volledig overzicht van de beleidsinstellingen voor iOS en Android:
 
 > [!div class="op_single_selector"]
-- [iOS-beleid](ios-mam-policy-settings.md)
-- [Android-beleid](android-mam-policy-settings.md)
+> - [iOS-beleid](ios-mam-policy-settings.md)
+> - [Android-beleid](android-mam-policy-settings.md)
 
 ## <a name="next-steps"></a>Volgende stappen
 [Compatibiliteit- en gebruikersstatus controleren](monitor-mobile-app-management-policies-with-microsoft-intune.md)

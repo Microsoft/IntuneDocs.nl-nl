@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: eb27605108feb3a2db3072d4a8b7a296f0f74cfc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Problemen met voorwaardelijke toegang oplossen
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Normaal gesproken ontvangt een gebruiker die e-mails probeert te openen of die SharePoint opent de vraag om zich in te schrijven. Als de gebruiker zich besluit in te schrijven, wordt deze naar de bedrijfsportal geleid.
 
@@ -49,20 +49,20 @@ De voorwaarden die voor elk apparaat gelden, zijn terug te vinden in Azure Manag
 
 ## <a name="compliance-issues"></a>Problemen met naleving
 
- -  Het apparaat is niet compatibel met het Intune-beleid. Veelvoorkomende problemen zijn problemen met de versleutelings- en wachtwoordvereisten. De gebruiker wordt omgeleid naar de bedrijfsportal, waar deze het apparaat zodanig kan configureren dat er aan de voorwaarden wordt voldaan.
- -  Het kan even duren om de nalevingsinformatie te registreren voor een apparaat. Wacht een paar minuten en probeer het opnieuw.
- -  Voor iOS-apparaten:
-     -   Een bestaand e-mailprofiel dat is gemaakt door de gebruiker, blokkeert de implementatie van een Intune-profiel dat door een beheerder is gemaakt. Dit is een veelvoorkomend probleem omdat iOS-gebruikers vaak zelf een e-mailprofiel maken en zich vervolgens inschrijven. In de bedrijfsportal ziet de gebruiker dat deze niet voldoet aan de voorwaarden wegens het handmatig geconfigureerde e-mailprofiel. De gebruiker wordt gevraagd dat profiel te verwijderen. Het e-mailprofiel moet worden verwijderd zodat het Intune-profiel kan worden geïmplementeerd. Als u het probleem wilt voorkomen, vertelt u gebruikers om zich in te schrijven zonder een e-mailprofiel te installeren zodat Intune het profiel kan implementeren.
-     -   Een iOS-apparaat kan komen vast te hangen in een status voor het controleren van nalevingsvereisten, waardoor de gebruiker wordt verhinderd om een andere incheckprocedure te initiëren. Het opnieuw opstarten van de bedrijfsportal kan dit probleem oplossen en de nalevingsstatus geeft de status van het apparaat in Intune aan. Nadat alle gegevens van een apparaatsynchronisatie zijn verzameld, gaat de nalevingscontrole snel, gemiddeld niet meer dan een halve seconde.
+- Het apparaat is niet compatibel met het Intune-beleid. Veelvoorkomende problemen zijn problemen met de versleutelings- en wachtwoordvereisten. De gebruiker wordt omgeleid naar de bedrijfsportal, waar deze het apparaat zodanig kan configureren dat er aan de voorwaarden wordt voldaan.
+- Het kan even duren om de nalevingsinformatie te registreren voor een apparaat. Wacht een paar minuten en probeer het opnieuw.
+- Voor iOS-apparaten:
+  - Een bestaand e-mailprofiel dat is gemaakt door de gebruiker, blokkeert de implementatie van een Intune-profiel dat door een beheerder is gemaakt. Dit is een veelvoorkomend probleem omdat iOS-gebruikers vaak zelf een e-mailprofiel maken en zich vervolgens inschrijven. In de bedrijfsportal ziet de gebruiker dat deze niet voldoet aan de voorwaarden wegens het handmatig geconfigureerde e-mailprofiel. De gebruiker wordt gevraagd dat profiel te verwijderen. Het e-mailprofiel moet worden verwijderd zodat het Intune-profiel kan worden geïmplementeerd. Als u het probleem wilt voorkomen, vertelt u gebruikers om zich in te schrijven zonder een e-mailprofiel te installeren zodat Intune het profiel kan implementeren.
+  - Een iOS-apparaat kan komen vast te hangen in een status voor het controleren van nalevingsvereisten, waardoor de gebruiker wordt verhinderd om een andere incheckprocedure te initiëren. Het opnieuw opstarten van de bedrijfsportal kan dit probleem oplossen en de nalevingsstatus geeft de status van het apparaat in Intune aan. Nadat alle gegevens van een apparaatsynchronisatie zijn verzameld, gaat de nalevingscontrole snel, gemiddeld niet meer dan een halve seconde.
 
-        De reden waarom apparaten in deze status blijven hangen, is doorgaans omdat ze problemen ondervinden bij het maken van verbinding met de service of omdat de synchronisatie lang duurt.  Als het probleem zich blijft voordoen in andere netwerkconfiguraties (mobiel, Wi-Fi-, VPN), zelfs nadat het apparaat opnieuw is opgestart, en nadat u hebt gecontroleerd of de SSP op het apparaat is bijgewerkt, neemt u contact op Microsoft Ondersteuning zoals beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
+    De reden waarom apparaten in deze status blijven hangen, is doorgaans omdat ze problemen ondervinden bij het maken van verbinding met de service of omdat de synchronisatie lang duurt.  Als het probleem zich blijft voordoen in andere netwerkconfiguraties (mobiel, Wi-Fi-, VPN), zelfs nadat het apparaat opnieuw is opgestart, en nadat u hebt gecontroleerd of de SSP op het apparaat is bijgewerkt, neemt u contact op Microsoft Ondersteuning zoals beschreven in [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md).
 
- - Voor Android-apparaten:
-    - Bepaalde Android-apparaten lijken misschien te zijn versleuteld, maar de bedrijfsportal-app herkent deze apparaten als niet-versleuteld. 
+- Voor Android-apparaten:
+   - Bepaalde Android-apparaten lijken misschien te zijn versleuteld, maar de bedrijfsportal-app herkent deze apparaten als niet-versleuteld. 
     
-        -   Voor apparaten met deze status moet de gebruiker de wachtwoordcode voor beveiligd opstarten instellen. De gebruiker krijgt op het apparaat een bericht van de bedrijfsportal-app waarin wordt gevraagd om een wachtwoordcode voor het opstarten van het apparaat in te stellen. Wanneer u op het apparaatbericht hebt getikt en de bestaande pincode of het wachtwoord hebt bevestigd, kiest u de optie **Pincode vereisen voor het starten van apparaat** op het scherm **Beveiligd opstarten**. Tik vervolgens in de bedrijfsportal-app op de knop **Naleving controleren** voor het apparaat. Het apparaat moet nu worden gedetecteerd als versleuteld.
+       -   Voor apparaten met deze status moet de gebruiker de wachtwoordcode voor beveiligd opstarten instellen. De gebruiker krijgt op het apparaat een bericht van de bedrijfsportal-app waarin wordt gevraagd om een wachtwoordcode voor het opstarten van het apparaat in te stellen. Wanneer u op het apparaatbericht hebt getikt en de bestaande pincode of het wachtwoord hebt bevestigd, kiest u de optie **Pincode vereisen voor het starten van apparaat** op het scherm **Beveiligd opstarten**. Tik vervolgens in de bedrijfsportal-app op de knop **Naleving controleren** voor het apparaat. Het apparaat moet nu worden gedetecteerd als versleuteld.
     
-        -   Sommige apparaatfabrikanten versleutelen hun apparaten met behulp van een standaardpincode in plaats van een geheime pincode die door de gebruiker wordt ingesteld. Intune beschouwt versleuteling met een standaardpincode als onveilig omdat de gegevens op het apparaat bij deze methode van versleuteling niet afdoende zijn beschermd tegen kwaadwillende gebruikers met fysieke toegang tot het apparaat. Als dit het probleem is, zou u [app-beveiligingsbeleidsregels](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) kunnen gebruiken.
+       -   Sommige apparaatfabrikanten versleutelen hun apparaten met behulp van een standaardpincode in plaats van een geheime pincode die door de gebruiker wordt ingesteld. Intune beschouwt versleuteling met een standaardpincode als onveilig omdat de gegevens op het apparaat bij deze methode van versleuteling niet afdoende zijn beschermd tegen kwaadwillende gebruikers met fysieke toegang tot het apparaat. Als dit het probleem is, zou u [app-beveiligingsbeleidsregels](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) kunnen gebruiken.
 
 ## <a name="policy-issues"></a>Beleidsproblemen
 
@@ -118,22 +118,22 @@ Als deze procedures voor probleemoplossing uw probleem niet verhelpen, wordt u m
 ### <a name="exchange-connector-logs"></a>Logboeken van de Exchange Connector
 
 #### <a name="general-log-information"></a>Algemene logboekgegevens
-Als u logboeken van de Exchange Connector wilt bekijken, moet u [Server Trace Viewer Tool](server trace viewer tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx) gebruiken. Dit hulpprogramma vereist dat u de Windows Server SDK downloadt.
+Als u logboeken van de Exchange Connector wilt bekijken, moet u [Server Trace Viewer Tool](server trace viewer tool (<https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx>) gebruiken. Dit hulpprogramma vereist dat u de Windows Server SDK downloadt.
 
 >[!NOTE]
 >De logboeken bevinden zich in C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. De logboeken zijn opgenomen in een reeks van 30 logboekbestanden. De reeks begint bij *Connector0.log* en eindigt bij *Connector29.log*. Logboeken lopen van het ene logboek over in het andere nadat 10 MB aan gegevens in een logboek zijn verzameld. Zodra de logboeken bij Connector29 aanbelanden, wordt alles opnieuw gestart bij Connector0, waarbij eerdere logboeken worden overschreven.
 
 #### <a name="locating-sync-logs"></a>Zoeken naar synchronisatielogboeken
 
--    Vind een volledige synchronisatie in de logboeken door te zoeken naar **full sync**. Het begin van een volledige synchronisatie wordt aangegeven door deze tekst:
+- Vind een volledige synchronisatie in de logboeken door te zoeken naar **full sync**. Het begin van een volledige synchronisatie wordt aangegeven door deze tekst:
 
-    Handling command: Getting the mobile device list without a time filter (full sync) for <number> users (Opdracht wordt verwerkt: de lijst met mobiele apparaten zonder een tijdfilter (volledige synchronisatie) voor (aantal) gebruikers wordt opgehaald)
+  Handling command: Getting the mobile device list without a time filter (full sync) for <number> users (Opdracht wordt verwerkt: de lijst met mobiele apparaten zonder een tijdfilter (volledige synchronisatie) voor (aantal) gebruikers wordt opgehaald)
 
-    Het einde van het logboek voor een volledige synchronisatie ziet er als volgt uit:
+  Het einde van het logboek voor een volledige synchronisatie ziet er als volgt uit:
 
-    Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. (De lijst met mobiele apparaten zonder een tijdfilter (volledige synchronisatie) voor 4 gebruikers kon worden opgehaald. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
+  Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. (De lijst met mobiele apparaten zonder een tijdfilter (volledige synchronisatie) voor 4 gebruikers kon worden opgehaald. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--   Vind een snelle (delta-)synchronisatie in de logboeken door te zoeken naar **quick sync**.
+- Vind een snelle (delta-)synchronisatie in de logboeken door te zoeken naar **quick sync**.
 
 ##### <a name="exceptions-in-get-next-command"></a>Uitzonderingen in de opdracht Get next
 Controleer de logboeken van de Exchange Connector op uitzonderingen in de **opdracht Get next** en verstrek deze aan Microsoft Ondersteuning.

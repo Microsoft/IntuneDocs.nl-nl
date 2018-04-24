@@ -1,25 +1,25 @@
 ---
 title: Bedreigingen oplossen die met Zimperium zIPS zijn gevonden op Android | Microsoft Docs
 description: Meer informatie over het oplossen van bedreigingen die zijn gevonden op uw Android-apparaat.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9ffbb656-93cd-4e0b-96c0-c5038cd2cf31
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c4fdebb5d46849dd96585a0a71fddccf9b26c44
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 081554df0deca0935c32ddef0b26004c4fd2d82f
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>U moet een bedreiging oplossen die met Zimperium zIPS is gevonden
 

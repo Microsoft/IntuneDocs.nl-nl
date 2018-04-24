@@ -1,28 +1,28 @@
 ---
 title: Windows apparaatbeheer instellen met Microsoft Intune
 description: Het beheer van mobiele apparaten (MDM) inschakelen voor Windows-apparaten met Microsoft Intune.
-keywords: 
+keywords: ''
 author: NathBarn
 manager: angrobe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 44559572a048a0ad8e79d6fdac837f0c71a42646
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fb2d724cc87ffdc506eda8d5ea2330ab9aacd3e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-windows-device-management"></a>Windows apparaatbeheer instellen
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Met de informatie in dit onderwerp kunnen IT-beheerders de inschrijving van Windows-apparaten vereenvoudigen voor hun gebruikers.  Windows-apparaten kunnen zonder extra stappen worden ingeschreven, maar u kunt het gemakkelijker maken voor uw gebruikers.
 
@@ -35,7 +35,7 @@ Vereenvoudiging van Windows-apparaatregistratie is afhankelijk van twee factoren
 |**Windows 10**|[Automatische inschrijving](#enable-windows-10-automatic-enrollment) |[Gebruikersinschrijving](#enable-windows-enrollment-without-automatic-enrollment)|
 |**Eerdere Windows-versies**|[Gebruikersinschrijving](#enable-windows-enrollment-without-automatic-enrollment)|[Gebruikersinschrijving](#enable-windows-enrollment-without-automatic-enrollment)|
 
-[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>Windows-inschrijving zonder automatische inschrijving inschakelen
 U kunt gebruikers zelf hun apparaten laten inschrijven, zonder automatische Azure AD Premium-inschrijving. Als u licenties hebt toegewezen, kunnen gebruikers zich registreren nadat ze hun werkaccount hebben toegevoegd aan apparaten die hun persoonlijke eigendom zijn of nadat ze hun apparaten die bedrijfseigendom zijn hebben toegevoegd aan uw Azure AD. Door een DNS-alias (CNAME-recordtype) te maken, kunnen gebruikers hun apparaten eenvoudiger inschrijven. Als u DNS CNAME-bronrecords maakt, kunnen gebruikers verbinding maken met Intune en bij Intune worden ingeschreven zonder een Intune-servernaam te hoeven opgeven.
@@ -69,5 +69,5 @@ Zie [Uw Windows-apparaat inschrijven bij Intune](https://docs.microsoft.com/intu
 
 Zie [Bronnen over de eindgebruikerservaring in Microsoft Intune](/intune/end-user-educate) voor meer informatie over taken voor eindgebruikers.
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Vereisten voor het registreren van apparaten in Microsoft Intune](prerequisites-for-enrollment.md)

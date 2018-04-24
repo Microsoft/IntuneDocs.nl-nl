@@ -1,27 +1,27 @@
 ---
 title: Uw iOS-apparaat met Intune inschrijven voor Telecom Expense Management
 description: Informatie over het registreren van een iOS-apparaat bij Telecom Expense Management.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 90b07e1f18ab3cb9c74337e2a3538f186f4ea52a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ff51405ee48851b5a48c4d6142c33bc16ed6218e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>Uw iOS-apparaat met voor Telecom Expense Management
 
@@ -40,11 +40,11 @@ Selecteer de gewenste optie. U krijgt dan een melding om de app [__Datalert__](h
 
 1. Selecteer __Registreren met Microsoft-account__.
 
-  ![Een afbeelding van het instellingenscherm van de app Datalert, waarin in het bovenste gedeelte van het scherm een telefoonnummerveld staat voor het registreren van een apparaat en in het onderste gedeelte de optie Registreren met Microsoft-account, zolang u een Microsoft Office 365-account en een Intune-abonnement hebt.](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
+   ![Een afbeelding van het instellingenscherm van de app Datalert, waarin in het bovenste gedeelte van het scherm een telefoonnummerveld staat voor het registreren van een apparaat en in het onderste gedeelte de optie Registreren met Microsoft-account, zolang u een Microsoft Office 365-account en een Intune-abonnement hebt.](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
 
 2. U ontvangt een melding dat __Datalert de Authenticator wil openen__. Selecteer __Openen__.
 
-  ![Een afbeelding van de pop-up waarin de gebruiker wordt gevraagd de app Authenticator te openen op verzoek van de app Datalert.](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
+   ![Een afbeelding van de pop-up waarin de gebruiker wordt gevraagd de app Authenticator te openen op verzoek van de app Datalert.](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
 
 3. Meld u aan met uw __school- of werkaccount van Microsoft__. De Datalert-configuratie zal enige tijd actief zijn en wordt daarna voltooid. Tik op __Voltooien__ wanneer deze is voltooid.
 
@@ -52,15 +52,15 @@ Selecteer de gewenste optie. U krijgt dan een melding om de app [__Datalert__](h
 
 1. Geef het telefoonnummer van uw apparaat op.
 
-  ![Een schermafbeelding van de app Datalert waarin om een telefoonnummer wordt gevraagd.](./media/ios-enroll-12-tem-datalert-phone-number.png)
+   ![Een schermafbeelding van de app Datalert waarin om een telefoonnummer wordt gevraagd.](./media/ios-enroll-12-tem-datalert-phone-number.png)
 
 2. U ontvangt dan een verificatiecode via een sms-bericht. Voer de code in en tik op __OK__.
 
-  ![Een schermafbeelding van de app Datalert waarin om de sms-verificatiecode wordt gevraagd.](./media/ios-enroll-13-tem-datalert-sms.png)
+   ![Een schermafbeelding van de app Datalert waarin om de sms-verificatiecode wordt gevraagd.](./media/ios-enroll-13-tem-datalert-sms.png)
 
 3. Wanneer u de verificatiecode hebt opgegeven, wordt het instellen van Datalert voltooid. Tik op __Voltooien__. U kunt dan uw dataverbruik bewaken via de app.
 
-  ![Een schermafbeelding van de app Datalert terwijl het dataverbruik van vandaag wordt bewaakt.](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
+   ![Een schermafbeelding van de app Datalert terwijl het dataverbruik van vandaag wordt bewaakt.](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
 
 Na het inschrijven kunt u uw dataverbruik terugzien in de app Datalert.
 

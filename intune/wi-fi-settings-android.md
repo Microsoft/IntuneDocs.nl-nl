@@ -1,27 +1,27 @@
 ---
 title: Wi-Fi-instellingen in Microsoft Intune configureren voor Android-apparaten
-titleSuffix: 
+titleSuffix: ''
 description: Meer informatie over Intune Wi-Fi-configuratie-instellingen op Android- en Android for Work-apparaten.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d327c2d3cadf441f74e35af86b19438159225771
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c110121ceb3d7ff871078c39f73b17606e2e7f13
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Wi-Fi-instellingen configureren in Microsoft Intune voor apparaten met Android en Android for Work  
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In dit artikel komt u meer te weten over de Wi-Fi-instellingen die u in Microsoft Intune kunt configureren voor apparaten met Android en Android for Work.
 
@@ -58,7 +58,8 @@ De volgende Wi-Fi-instellingen zijn beschikbaar voor Android- en Android for Wor
 #### <a name="client-authentication"></a>Clientverificatie
 
 
-|Naam van de instelling|Meer informatie|Wanneer gebruiken|
-|----------|--------------|----------|
-|**Clientcertificaat voor clientverificatie (identiteitscertificaat)**|Kies het SCEP- of PKCS-certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren.|EAP-type is **EAP-TLS**|
-|**Verificatiemethode**|Selecteer de verificatiemethode voor de verbinding:<br>- **Certificaten** om het SCEP- of PKCS-clientcertificaat te selecteren dat het identiteitscertificaat is dat aan de server wordt gepresenteerd.<br><br>- **Gebruikersnaam en wachtwoord** om een andere verificatiemethode op te geven. <br><br>Als u **Gebruikersnaam en wachtwoord** hebt geselecteerd, configureert u het volgende:<br><br>-  **Niet-EAP-methode (interne identiteit)** en selecteer vervolgens hoe u de verbinding verifieert. Kies uit het volgende:<br>- **Geen**<br>- **Niet-versleuteld wachtwoord (PAP)**<br>- **Challenge Handshake Authentication Protocol (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP versie 2 (MS-CHAP v2)**<br>De beschikbare opties zijn afhankelijk van het geselecteerde EAP-type.<br><br>**en**<br><br>- **Identiteitsprivacy (externe identiteit)**: geef de tekst op die wordt verzonden als reactie op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.|EAP-type is **EAP-TTLS** of **PEAP**|
+|                                     Naam van de instelling                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Meer informatie                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                            Wanneer gebruiken                            |
+|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| <strong>Clientcertificaat voor clientverificatie (identiteitscertificaat)</strong> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Kies het SCEP- of PKCS-certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |              EAP-type is <strong>EAP-TLS</strong>              |
+|                        <strong>Verificatiemethode</strong>                        | Selecteer de verificatiemethode voor de verbinding:<br>- <strong>Certificaten</strong> om het SCEP- of PKCS-clientcertificaat te selecteren dat het identiteitscertificaat is dat aan de server wordt gepresenteerd.<br><br>- <strong>Gebruikersnaam en wachtwoord</strong> om een andere verificatiemethode op te geven. <br><br>Als u <strong>Gebruikersnaam en wachtwoord</strong> hebt geselecteerd, configureert u het volgende:<br><br>-  <strong>Niet-EAP-methode (interne identiteit)</strong> en selecteer vervolgens hoe u de verbinding verifieert. Kies uit het volgende:<br>- <strong>Geen</strong><br>- <strong>Niet-versleuteld wachtwoord (PAP)</strong><br>- <strong>Challenge Handshake Authentication Protocol (CHAP)</strong><br>- <strong>Microsoft CHAP (MS-CHAP)</strong><br>- <strong>Microsoft CHAP versie 2 (MS-CHAP v2)</strong><br>De beschikbare opties zijn afhankelijk van het geselecteerde EAP-type.<br><br><strong>en</strong><br><br>- <strong>Identiteitsprivacy (externe identiteit)</strong>: geef de tekst op die wordt verzonden als reactie op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel. | EAP-type is <strong>EAP-TTLS</strong> of <strong>PEAP</strong> |
+

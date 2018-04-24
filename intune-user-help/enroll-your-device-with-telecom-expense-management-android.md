@@ -1,27 +1,27 @@
 ---
 title: Uw Android-apparaat met Intune inschrijven voor Telecom Expense Management
 description: Informatie over het registreren van een Android-apparaat bij Telecom Expense Management.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 68f760c84b1394245494809de094e603e388e59b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dced939de37ca9fe7172ac0a8bec3fa391a24ed1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Uw Android-apparaat inschrijven voor Telecom Expense Management
 
@@ -39,11 +39,11 @@ Tik op de pijl __Volgende__ in de rechterbovenhoek van het scherm om door te gaa
 
 1. Selecteer __Registreren met Microsoft-account__.
 
-  ![Een afbeelding van het instellingenscherm van de app Datalert, waarin in het bovenste gedeelte van het scherm een telefoonnummerveld staat voor het registreren van een apparaat en in het onderste gedeelte de optie Registreren met Microsoft-account, zolang u een Microsoft Office 365-account en een Intune-abonnement hebt.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
+   ![Een afbeelding van het instellingenscherm van de app Datalert, waarin in het bovenste gedeelte van het scherm een telefoonnummerveld staat voor het registreren van een apparaat en in het onderste gedeelte de optie Registreren met Microsoft-account, zolang u een Microsoft Office 365-account en een Intune-abonnement hebt.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 
 2. Kies uw werk- of schoolaccount uit de beschikbare accounts. Als uw account niet wordt vermeld, kunt u zich aanmelden door de knop **Account toevoegen** te gebruiken.
 
-  ![Een schermafbeelding van het scherm Account kiezen, met een voorbeeldaccount en de knop Account toevoegen.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
+   ![Een schermafbeelding van het scherm Account kiezen, met een voorbeeldaccount en de knop Account toevoegen.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
 
 3. De Datalert-configuratie zal enige tijd actief zijn en wordt daarna voltooid. Tik op __Voltooien__ wanneer deze is voltooid.
 
@@ -51,15 +51,15 @@ Tik op de pijl __Volgende__ in de rechterbovenhoek van het scherm om door te gaa
 
 1. Geef het telefoonnummer van uw apparaat op.
 
-  ![Een schermafbeelding van de app Datalert waarin om een telefoonnummer wordt gevraagd.](./media/and-enroll-13-tem-datalert-phone-number.png)
+   ![Een schermafbeelding van de app Datalert waarin om een telefoonnummer wordt gevraagd.](./media/and-enroll-13-tem-datalert-phone-number.png)
 
 2. U ontvangt dan een verificatiecode via een sms-bericht. Voer de code in en tik op __OK__.
 
-  ![Een schermafbeelding van de app Datalert waarin om de sms-verificatiecode wordt gevraagd.](./media/and-enroll-14-tem-datalert-sms.png)
+   ![Een schermafbeelding van de app Datalert waarin om de sms-verificatiecode wordt gevraagd.](./media/and-enroll-14-tem-datalert-sms.png)
 
 3. Wanneer u de verificatiecode hebt opgegeven, wordt het instellen van Datalert voltooid. Tik op __Voltooien__. U kunt dan uw dataverbruik bewaken via de app.
 
-  ![Een schermafbeelding van de app Datalert terwijl het dataverbruik van vandaag wordt bewaakt.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
+   ![Een schermafbeelding van de app Datalert terwijl het dataverbruik van vandaag wordt bewaakt.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
 
 Na het inschrijven kunt u uw dataverbruik terugzien in de app Datalert.
 

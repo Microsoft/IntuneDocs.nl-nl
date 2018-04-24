@@ -1,27 +1,27 @@
 ---
 title: Uw Windows 10-apparaat inschrijven bij Intune | Microsoft Docs
 description: Een Windows 10 1607-apparaat of hoger bij Intune inschrijven
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 812e82df-76df-402b-bfe9-29302838f40e
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2183f17b2797229f6af156349029e8061658c51b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fee90ed055a0d132a4f6304d7b33f67005caf0fc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Uw Windows 10-apparaat inschrijven bij Intune
 
@@ -32,30 +32,30 @@ ms.lasthandoff: 01/25/2018
 
 1. Ga naar **Start**.
 
-  - Ga op een **Windows 10 Desktop**-apparaat naar het **startmenu**.
-  - Ga op een **mobiel Windows 10-apparaat** naar het **startscherm** en swipe naar de lijst **Alle apps**.
+   - Ga op een **Windows 10 Desktop**-apparaat naar het **startmenu**.
+   - Ga op een **mobiel Windows 10-apparaat** naar het **startscherm** en swipe naar de lijst **Alle apps**.
 
-2.  Open de app **Instellingen** door in het zoekvak te zoeken op 'instellingen'.
+2. Open de app **Instellingen** door in het zoekvak te zoeken op 'instellingen'.
 
 3. Selecteer **Accounts** > **Toegang werk of school** > **Verbinden**.
 
     ![Selecteer Werk- of school-account openen](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-3.  Geef uw e-mailadres van werk of school op en selecteer vervolgens **Volgende**.
+4. Geef uw e-mailadres van werk of school op en selecteer vervolgens **Volgende**.
 
-    ![Uw werk- of schoolaccount opgeven](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
+   ![Uw werk- of schoolaccount opgeven](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
-4. Meld u bij Intune aan met uw werk- of schoolaccount.
+5. Meld u bij Intune aan met uw werk- of schoolaccount.
 
     ![Een werk- of schoolaccount toevoegen](./media/w10-enroll-rs1-enter-your-credentials.png)
 
     U ziet een bericht waarin staat dat bij uw bedrijf of school uw apparaat wordt geregistreerd.
 
-5. Wanneer u het scherm **U bent klaar** ziet, selecteert u **sluiten**. U bent klaar.
+6. Wanneer u het scherm **U bent klaar** ziet, selecteert u **sluiten**. U bent klaar.
 
-  ![Klik in het scherm U bent klaar! op Sluiten](./media/w10-enroll-rs1-youre-all-set.png)
+   ![Klik in het scherm U bent klaar! op Sluiten](./media/w10-enroll-rs1-youre-all-set.png)
 
-6. Als u wilt controleren of uw verbinding wel klopt, gaat u terug naar **Instellingen**. Hier wordt uw werk- of schoolaccount vermeld.
+7. Als u wilt controleren of uw verbinding wel klopt, gaat u terug naar **Instellingen**. Hier wordt uw werk- of schoolaccount vermeld.
 
     ![Valideren of de verbinding correct is ingesteld](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 

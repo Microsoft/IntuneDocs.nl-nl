@@ -14,15 +14,15 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: be8a04b28494e5806a1e5127d4d0bbdf4cd98f36
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f818c35a008c24a529967b09a37917343433ff7d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-intune"></a>Intune instellen
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Deze installatiestappen helpen u om Mobile Device Management (MDM) in te schakelen met Intune. Apparaten moeten worden beheerd voordat u gebruikers toegang kunt geven tot zakelijke resources of voordat ze instellingen op deze apparaten kunnen beheren.
 
@@ -35,16 +35,17 @@ Als u momenteel Microsoft System Center Configuration Manager gebruikt voor het 
 
 
 
-| Stappen | Status  |
-| ------------- |-------------|
-| 1  | [Ondersteunde configuraties](supported-devices-browsers.md): informatie die u moet hebben voordat u aan de slag gaat. Hier vallen ook ondersteunde configuraties en netwerkvereisten onder.|
-| 2 |  [Aanmelden bij Intune](account-sign-up.md): meld u aan bij uw proefabonnement of maak een nieuw Intune-abonnement. |  
-| 3 | [Domeinnaam configureren](custom-domain-name-configure.md): stel de DNS-registratie in om de domeinnaam van uw bedrijf te verbinden met Intune. Hiermee geeft u gebruikers een bekend domein als ze verbinding maken met Intune en resources gebruiken.  |
-| 4 | [Gebruikers toevoegen](users-add.md): voeg handmatig gebruikers toe of maak verbinding met Active Directory om gebruikers te synchroniseren met Intune. Vereist tenzij uw apparaten bijvoorbeeld kioskapparaten 'zonder gebruiker' zijn. |
-| 5 | [Licenties toewijzen](licenses-assign.md): geef gebruikers machtigen om Intune te gebruiken. Elk apparaat, met of zonder gebruiker, vereist een Intune-licentie om toegang te krijgen tot de service.|
-| 6 |  [Groepen toevoegen](groups-add.md): gebruik groepen met gebruikers en groepen met apparaten om beheertaken te vereenvoudigen. Groepen worden gebruikt om apps, instellingen en andere resources toe te wijzen. |
-| 7 | [Apps toevoegen](apps-add.md): apps kunnen worden toegewezen aan groepen en automatisch of optioneel worden geïnstalleerd. |
-| 8 | [Apparaten configureren](device-profiles.md): stel profielen in die apparaatinstellingen beheren. Apparaatprofielen kunnen voorinstellingen voor e-mail, VPN, wifi en functies van het apparaat bevatten. Ze kunnen ook apparaten beperken om zowel apparaten als gegevens te beschermen.  |
-| 9 | [Bedrijfsportal aanpassen](company-portal-app.md): pas de Intune-bedrijfsportal aan die gebruikers gebruiken om apparaten in te schrijven en apps te installeren. Deze instellingen worden zowel in de bedrijfsportal-app als op de Intune-bedrijfsportalwebsite weergegeven. |
-| 10 | [Inschrijving van apparaten inschakelen](mdm-authority-set.md): schakel Intune-beheer van iOS-, Windows-, Android- en Mac-apparaten in door de MDM-instantie in te stellen en specifieke platforms in te schakelen. |
-| 11 | [App-beleidsregels configureren](app-protection-policy.md): geef specifieke instellingen op die zijn gebaseerd op de app-beveiligingsbeleidsregels in Microsoft Intune. |
+| Stappen |                                                                                                                       Status                                                                                                                       |
+|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   1   |                                        [Ondersteunde configuraties](supported-devices-browsers.md): informatie die u moet hebben voordat u aan de slag gaat. Hier vallen ook ondersteunde configuraties en netwerkvereisten onder.                                         |
+|   2   |                                                                 [Aanmelden bij Intune](account-sign-up.md): meld u aan bij uw proefabonnement of maak een nieuw Intune-abonnement.                                                                  |
+|   3   |                [Domeinnaam configureren](custom-domain-name-configure.md): stel de DNS-registratie in om de domeinnaam van uw bedrijf te verbinden met Intune. Hiermee geeft u gebruikers een bekend domein als ze verbinding maken met Intune en resources gebruiken.                |
+|   4   |                                   [Gebruikers toevoegen](users-add.md): voeg handmatig gebruikers toe of maak verbinding met Active Directory om gebruikers te synchroniseren met Intune. Vereist tenzij uw apparaten bijvoorbeeld kioskapparaten 'zonder gebruiker' zijn.                                    |
+|   5   |                                            [Licenties toewijzen](licenses-assign.md): geef gebruikers machtigen om Intune te gebruiken. Elk apparaat, met of zonder gebruiker, vereist een Intune-licentie om toegang te krijgen tot de service.                                             |
+|   6   |                                               [Groepen toevoegen](groups-add.md): gebruik groepen met gebruikers en groepen met apparaten om beheertaken te vereenvoudigen. Groepen worden gebruikt om apps, instellingen en andere resources toe te wijzen.                                                |
+|   7   |                                                                        [Apps toevoegen](apps-add.md): apps kunnen worden toegewezen aan groepen en automatisch of optioneel worden geïnstalleerd.                                                                         |
+|   8   | [Apparaten configureren](device-profiles.md): stel profielen in die apparaatinstellingen beheren. Apparaatprofielen kunnen voorinstellingen voor e-mail, VPN, wifi en functies van het apparaat bevatten. Ze kunnen ook apparaten beperken om zowel apparaten als gegevens te beschermen. |
+|   9   |       [Bedrijfsportal aanpassen](company-portal-app.md): pas de Intune-bedrijfsportal aan die gebruikers gebruiken om apparaten in te schrijven en apps te installeren. Deze instellingen worden zowel in de bedrijfsportal-app als op de Intune-bedrijfsportalwebsite weergegeven.       |
+|  10   |                                [Inschrijving van apparaten inschakelen](mdm-authority-set.md): schakel Intune-beheer van iOS-, Windows-, Android- en Mac-apparaten in door de MDM-instantie in te stellen en specifieke platforms in te schakelen.                                 |
+|  11   |                                                        [App-beleidsregels configureren](app-protection-policy.md): geef specifieke instellingen op die zijn gebaseerd op de app-beveiligingsbeleidsregels in Microsoft Intune.                                                         |
+

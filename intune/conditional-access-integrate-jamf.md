@@ -1,25 +1,25 @@
 ---
 title: Jamf Pro integreren met Microsoft Intune voor naleving
-titlesuffix: 
+titlesuffix: ''
 description: Gebruik Microsoft Intune-nalevingsbeleid met voorwaardelijke toegang van Azure Active Directory om met Jamf beheerde apparaten te beveiligen.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 01/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b040c6aa7001e8ebdd7c05571276428c7ef9bd
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: cdeb3a21af2b4cf020d3e5029eeb5b0bc31db062
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Jamf Pro integreren met Intune in verband met nalevingsbeleid
 
@@ -56,20 +56,20 @@ U kunt Intune als volgt verbinden met Jamf Pro:
 6. Klik op **Toepassing maken**.
 7. Sla de zojuist gemaakte **Toepassings-id** op, open **Instellingen** en navigeer naar **API-toegang** > **Sleutels** om een nieuwe toepassingssleutel te maken. Voer een **beschrijving** in en de tijd waarna de toepassingssleutel **verloopt**, en sla de toepassingssleutel vervolgens op.
 
-  > [!IMPORTANT]
-  > De toepassingssleutel wordt tijdens dit proces maar één keer weergegeven. Bewaar de sleutel op een locatie waar u deze eenvoudig kunt terugvinden.
+   > [!IMPORTANT]
+   > De toepassingssleutel wordt tijdens dit proces maar één keer weergegeven. Bewaar de sleutel op een locatie waar u deze eenvoudig kunt terugvinden.
 
 8. Open **Instellingen**, navigeer naar **API-toegang** > **Vereiste machtigingen** en verwijder alle machtigingen.
 
-  > [!NOTE]
-  > Voeg een nieuwe vereiste machtiging toe. De toepassing kan alleen juist werken als die ene vereiste machtiging is ingesteld.
+   > [!NOTE]
+   > Voeg een nieuwe vereiste machtiging toe. De toepassing kan alleen juist werken als die ene vereiste machtiging is ingesteld.
 
-9.  Selecteer **Microsoft Intune API** en klik op **Selecteren**.
+9. Selecteer **Microsoft Intune API** en klik op **Selecteren**.
 10. Kies **Apparaatkenmerken verzenden naar Microsoft Intune** en klik op **Selecteren**.
 11. Klik op de knop **Machtigingen verlenen** nadat de vereiste machtigingen voor de toepassing zijn opgeslagen.
 
-  > [!NOTE]
-  > Als de toepassingssleutel is verlopen, moet u een nieuwe toepassingssleutel maken in Microsoft Azure en vervolgens de gegevens voor voorwaardelijke toegang in Jamf Pro bijwerken. U kunt in Azure zowel de oude als de nieuwe sleutel activeren om serviceonderbrekingen te voorkomen.
+    > [!NOTE]
+    > Als de toepassingssleutel is verlopen, moet u een nieuwe toepassingssleutel maken in Microsoft Azure en vervolgens de gegevens voor voorwaardelijke toegang in Jamf Pro bijwerken. U kunt in Azure zowel de oude als de nieuwe sleutel activeren om serviceonderbrekingen te voorkomen.
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune instellen op integratie met Jamf Pro
 

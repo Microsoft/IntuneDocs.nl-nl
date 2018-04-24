@@ -2,28 +2,28 @@
 title: iOS-apparaten inschrijven met behulp van Apple Configurator
 titlesuffix: Microsoft Intune
 description: In dit onderwerp leest u hoe u Apple Configurator kunt gebruiken om iOS-apparaten in bedrijfseigendom in te schrijven met Configuratieassistent.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c254d91a104b08a1bdda3f3496369607af30f2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ecdd79a029bc3d434ebb0d8ba62ea0e65215f9e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>iOS-apparaten inschrijven met Apple Configurator
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Tijdelijke verschillen in de gebruikersinterface
@@ -85,8 +85,8 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen tijdens het i
 
 1. Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zonder koptekst. Plaats het serienummers in de linkerkolom en de details in de rechterkolom. De lijst kan momenteel maximaal 5000 rijen bevatten. In een teksteditor ziet de .csv-lijst er zo uit:
 
-  F7TLWCLBX196, apparaatdetails</br>
-  DLXQPCWVGHMJ,apparaatdetails
+   F7TLWCLBX196, apparaatdetails</br>
+   DLXQPCWVGHMJ,apparaatdetails
 
    [Lees hier meer informatie over het vinden van het serienummer van een iOS-apparaat](https://support.apple.com/HT204073).
 2. Kies in Intune in [Azure Portal](https://portal.azure.com) achtereenvolgens **Apparaatinschrijving** en **Apple-inschrijving**.
@@ -119,23 +119,23 @@ Nadat u het profiel hebt gemaakt en de serienummers toegewezen, moet u het profi
 1. Kies in Intune in [Azure Portal](https://portal.azure.com) achtereenvolgens **Apparaatinschrijving** > **Apple-inschrijving** > **AC-profielen** en kies vervolgens het profiel dat u wilt exporteren.
 2. Selecteer **Profiel exporteren** in het profiel.
 
-  ![Profiel exporteren voor inschrijving met configuratieassistent, waarbij de URL van het profiel is gemarkeerd](./media/ios-apple-configurator-expor-sat.png)
+   ![Profiel exporteren voor inschrijving met configuratieassistent, waarbij de URL van het profiel is gemarkeerd](./media/ios-apple-configurator-expor-sat.png)
 3. Kopieer de profiel-URL. U kunt deze vervolgens later aan Apple Configurator toevoegen om het Intune-profiel te definiëren dat wordt gebruikt door iOS-apparaten.
 
-  Vervolgens importeert u in de volgende procedure dit profiel in Apple Configurator om het Intune-profiel te definiëren dat door iOS-apparaten wordt gebruikt.
+   Vervolgens importeert u in de volgende procedure dit profiel in Apple Configurator om het Intune-profiel te definiëren dat door iOS-apparaten wordt gebruikt.
 
 ### <a name="enroll-devices-with-setup-assistant"></a>Apparaten inschrijven met Configuratieassistent
 
-1.  Open **Apple Configurator2** op een Mac-computer. Kies in de menubalk **Apple Configurator 2** en vervolgens **Voorkeuren**.
-  > [!WARNING]
-  > Apparaten worden tijdens het inschrijvingsproces teruggezet naar de fabrieksinstellingen. U kunt het apparaat het beste opnieuw instellen en inschakelen. U moet het apparaat verbinden wanneer het scherm **Hallo** wordt weergegeven.
+1. Open **Apple Configurator2** op een Mac-computer. Kies in de menubalk **Apple Configurator 2** en vervolgens **Voorkeuren**.
+   > [!WARNING]
+   > Apparaten worden tijdens het inschrijvingsproces teruggezet naar de fabrieksinstellingen. U kunt het apparaat het beste opnieuw instellen en inschakelen. U moet het apparaat verbinden wanneer het scherm **Hallo** wordt weergegeven.
 
 2. Selecteer in het deelvenster met **voorkeuren** **Servers** en kies het plusteken (+) om de wizard voor de MDM-server te starten. Kies **Volgende**.
 3. Voer de **Hostnaam of URL** en de **inschrijvings-URL** in voor de MDM-server onder iOS-apparaten inschrijven via Configuratieassistent in Microsoft Intune. Voer voor de inschrijvings-URL de profiel-URL voor inschrijving in die u hebt geëxporteerd uit Intune. Kies **Volgende**.  
 
-  De waarschuwing 'Server-URL is niet geverifieerd' kunt u zonder problemen negeren. Als u wilt doorgaan, kiest u **Volgende** totdat de wizard is voltooid.
-4.  Verbind de mobiele iOS-apparaten met de Mac-computer met een USB-adapter.
-5.  Selecteer de iOS-apparaten die u wilt beheren en kies vervolgens **Voorbereiden**. Selecteer in het deelvenster **iOS-apparaat voorbereiden** de optie **Handmatig** en kies vervolgens **Volgende**.
+   De waarschuwing 'Server-URL is niet geverifieerd' kunt u zonder problemen negeren. Als u wilt doorgaan, kiest u **Volgende** totdat de wizard is voltooid.
+4. Verbind de mobiele iOS-apparaten met de Mac-computer met een USB-adapter.
+5. Selecteer de iOS-apparaten die u wilt beheren en kies vervolgens **Voorbereiden**. Selecteer in het deelvenster **iOS-apparaat voorbereiden** de optie **Handmatig** en kies vervolgens **Volgende**.
 6. Selecteer in het deelvenster **Registreren bij MDM-server** de naam van de server die u hebt gemaakt en kies vervolgens **Volgende**.
 7. Selecteer in het deelvenster **Apparaten onder supervisie plaatsen** het toezichtsniveau en kies **Volgende**.
 8. Kies de **organisatie** in het deelvenster **Een organisatie maken** of maak een nieuwe organisatie en kies vervolgens **Volgende**.
@@ -162,13 +162,14 @@ Apps waarvoor een gebruikersrelatie is vereist, zoals de bedrijfsportal-app die 
 
 2. Breng het bestand over naar een Mac-computer waarop [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) wordt uitgevoerd om het rechtstreeks als een beheerprofiel naar iOS-apparaten te pushen.
 3. Bereid het apparaat met behulp van de volgende stappen voor met Apple Configurator.
-  1. Open Apple Configurator 2.0 op een Mac-computer.
-  2. Verbind het iOS-apparaat met de Mac-computer met behulp van een USB-kabel. Sluit Foto's, iTunes en andere apps die voor het apparaat worden geopend wanneer het apparaat wordt gedetecteerd.
-  3. Kies in Apple Configurator het verbonden iOS-apparaat en kies vervolgens de knop **Toevoegen**. Opties die kunnen worden toegevoegd aan het apparaat, worden weergegeven in de vervolgkeuzelijst. Kies **Profielen**.
+   1. Open Apple Configurator 2.0 op een Mac-computer.
+   2. Verbind het iOS-apparaat met de Mac-computer met behulp van een USB-kabel. Sluit Foto's, iTunes en andere apps die voor het apparaat worden geopend wanneer het apparaat wordt gedetecteerd.
+   3. Kies in Apple Configurator het verbonden iOS-apparaat en kies vervolgens de knop **Toevoegen**. Opties die kunnen worden toegevoegd aan het apparaat, worden weergegeven in de vervolgkeuzelijst. Kies **Profielen**.
 
-    ![Profiel exporteren voor inschrijving met configuratieassistent, waarbij de URL van het profiel is gemarkeerd](./media/ios-apple-configurator-add-profile.png)
+      ![Profiel exporteren voor inschrijving met configuratieassistent, waarbij de URL van het profiel is gemarkeerd](./media/ios-apple-configurator-add-profile.png)
 
-  4. Gebruik de bestandskiezer om het .mobileconfig-bestand te selecteren dat u uit Intune hebt geëxporteerd. Kies vervolgens **Toevoegen**. Het profiel wordt toegevoegd aan het apparaat. Als het apparaat niet onder supervisie is, vereist de installatie acceptatie op het apparaat.
+   4. Gebruik de bestandskiezer om het .mobileconfig-bestand te selecteren dat u uit Intune hebt geëxporteerd. Kies vervolgens **Toevoegen**. Het profiel wordt toegevoegd aan het apparaat. Als het apparaat niet onder supervisie is, vereist de installatie acceptatie op het apparaat.
+
 4. Voer de volgende stappen uit om het profiel op het iOS-apparaat te installeren. Het apparaat moet de Configuratieassistent al hebben uitgevoerd en gereed zijn voor gebruik. Als inschrijving app-implementaties omvat, moet op het apparaat een Apple-id zijn ingesteld, omdat de app-implementatie vereist dat u met een Apple-id bent aangemeld voor de App Store.
    1. Ontgrendel het iOS-apparaat.
    2. Kies in het dialoogvenster **Profiel installeren** voor **Beheerprofiel** de optie **Installeren**.

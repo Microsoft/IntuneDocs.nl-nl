@@ -13,21 +13,21 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 56527da7ac8c2ed00a4b33049c8ba4ad03299976
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: ab5ee886cbc324b0fe3383e7e585e8d0b6482326
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Indelingsinstellingen voor de Microsoft Intune-startpagina voor iOS-apparaten
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Gebruik deze instellingen voor het configureren van de indeling van apps en mappen in de dock en het startscherm van iOS-apparaten.
 
 Op iOS-apparaten met een toegewezen profiel, moet de supervisiemodus zijn geactiveerd. Op het apparaat moet iOS 9.3 of hoger worden uitgevoerd.
 
-1. Navigeer vanaf [Intune in Azure Portal](https://portal.azure.com) naar [**Apparaatfuncties** in het apparaatconfiguratiegebied](device-features-configure.md).
+1. Navigeer vanaf [Intune in Azure Portal](https://portal.azure.com) naar [ **Apparaatfuncties** in het apparaatconfiguratiegebied](device-features-configure.md).
 2. Kies in het deelvenster **Apparaatfuncties** de optie **Indeling voor het beginscherm (alleen onder toezicht)**.
 3. Kies in het deelvenster **Indeling voor het beginscherm (alleen onder toezicht)** of u indelingen van de **dock** of **pagina's** wilt configureren.
 
