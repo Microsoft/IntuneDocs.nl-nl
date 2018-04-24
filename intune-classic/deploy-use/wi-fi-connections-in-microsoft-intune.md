@@ -1,35 +1,35 @@
 ---
 title: Wi-Fi-verbindingen
 description: Gebruik Wi-Fi-profielen om gebruikers verbinding te laten maken met uw Wi-Fi-netwerken.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99ac426d2210aa22a7c0151aea59e14b848bbe1f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5eebe251371d466421bfe936a1f991c988e490b0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Apparaten configureren voor verbinding met uw Wi-Fi-bedrijfsnetwerken
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Gebruik Wi-Fi-profielen van Microsoft Intune om instellingen voor draadloze netwerken te implementeren voor gebruikers en apparaten in uw organisatie. Wanneer u een Wi-Fi-profiel implementeert, hebben uw gebruikers toegang tot uw zakelijke Wi-Fi zonder dat ze dit zelf hoeven te configureren.
 
 Een voorbeeld: u installeert een nieuw Wi-Fi-netwerk met de naam **Contoso Wi-Fi** en wilt instellen dat alle iOS-apparaten verbinding met dit netwerk maken. Dit is het proces:
 
-![Overzicht van proces voor Wi-Fi-profielen](..\media\wi-fi-process-diagram.png)
+![Overzicht van proces voor Wi-Fi-profielen](../media/wi-fi-process-diagram.png)
 
 1.   Maak een Wi-Fi-profiel met de instellingen die nodig zijn om verbinding te maken met het draadloze netwerk **Contoso Wi-Fi**.
 
@@ -67,23 +67,25 @@ Voor apparaten met het besturingssysteem Windows 8.1 of Windows 10 Desktop of Mo
 
 Er zijn geen aanbevolen instellingen voor dit beleidstype. U moet een aangepast beleid maken.
 
-3.  Geef de naam en beschrijving voor het profiel op.
+3. Geef de naam en beschrijving voor het profiel op.
 
 4. Geef de waarden voor **Netwerkverbindingen** op.
- - **SSID (Service Set Identifier)**: selecteer deze optie als u wilt dat gebruikers de netwerknaam en niet de SSID zien.
- - **Verbinding maken als het netwerk de naam (SSID) niet uitzendt**: selecteer deze optie als u wilt dat apparaten verbinding maken met het netwerk wanneer dit niet zichtbaar is in de lijst met netwerken (omdat het netwerk verborgen is en zijn naam niet uitzendt).
+   - **SSID (Service Set Identifier)**: selecteer deze optie als u wilt dat gebruikers de netwerknaam en niet de SSID zien.
+   - **Verbinding maken als het netwerk de naam (SSID) niet uitzendt**: selecteer deze optie als u wilt dat apparaten verbinding maken met het netwerk wanneer dit niet zichtbaar is in de lijst met netwerken (omdat het netwerk verborgen is en zijn naam niet uitzendt).
 
 5. Configureer de **beveiligingsinstellingen** voor het geselecteerde platform. De beschikbare instellingen zijn afhankelijk van de beveiligingstypen die u selecteert. Deze worden beschreven in de [Beveiligingsinstellingen](#security-settings).
 
 6. Configureer de **Proxy-instellingen** (alleen voor iOS en MAC OS X).
 
-    |Naam van de instelling|Meer informatie|Gebruik|
-    |----------------|-------------------|-------------|
-    |**Proxy-instellingen voor deze Wi-Fi-verbinding**|Kies het type proxy-instelling:<br /><br />-   **Geen** (standaardinstelling)<br />-   **Handmatig**: geef handmatig de URL en het poortnummer van de proxyserver op.<br />-   **Automatisch**: gebruik een configuratiebestand om de proxyserver te configureren.|Altijd|
-    |**Proxyserveradres** en **Poortnummer**|Geef de URL en het poortnummer van de proxyserver op.|Als **Proxy-instellingen voor deze Wi-Fi-verbinding** is ingesteld op **Handmatig**|
-    |**URL van proxyserver**|Geef de URL van het bestand met de proxyserverinstellingen op.|Als **Proxy-instellingen voor deze Wi-Fi-verbinding** is ingesteld op **Automatisch**|
 
-7.  het Wi-Fi-profiel opslaan
+   |                              Naam van de instelling                              |                                                                                                                                Meer informatie                                                                                                                                 |                                            Gebruik                                            |
+   |------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+   |       <strong>Proxy-instellingen voor deze Wi-Fi-verbinding</strong>        | Kies het type proxy-instelling:<br /><br />-   <strong>Geen</strong> (standaardinstelling)<br />-   <strong>Handmatig</strong>: geef handmatig de URL en het poortnummer van de proxyserver op.<br />-   <strong>Automatisch</strong>: gebruik een configuratiebestand om de proxyserver te configureren. |                                              Altijd                                               |
+   | <strong>Proxyserveradres</strong> en <strong>Poortnummer</strong> |                                                                                                              Geef de URL en het poortnummer van de proxyserver op.                                                                                                               |  Als <strong>Proxy-instellingen voor deze Wi-Fi-verbinding</strong> is ingesteld op <strong>Handmatig</strong>   |
+   |                   <strong>URL van proxyserver</strong>                    |                                                                                                      Geef de URL van het bestand met de proxyserverinstellingen op.                                                                                                       | Als <strong>Proxy-instellingen voor deze Wi-Fi-verbinding</strong> is ingesteld op <strong>Automatisch</strong> |
+
+
+7. het Wi-Fi-profiel opslaan
 
 Het nieuwe beleid wordt weergegeven in het knooppunt **Configuratiebeleid** van de werkruimte **Beleid**. Zie **Vervolgstappen** voor informatie over het implementeren van het profiel.
 
@@ -177,5 +179,5 @@ In deze tabellen staan de details van de beveiligingsinstellingen die beschikbaa
 |**Identiteitsprivacy inschakelen (externe identiteit)**|Geef tekst op die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben.<br /><br />Tijdens verificatie wordt in eerste instantie deze anonieme identiteit verzonden. De echte identificatie wordt in een beveiligde tunnel verzonden.|Als het **EAP-type** is ingesteld op **PEAP**, **EAP-TTLS** of **EAP-FAST**.|
 
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 Zie [Wi-Fi-profiel met vooraf gedeelde sleutel](pre-shared-key-wi-fi-profile.md) voor meer informatie over het maken van een Wi-Fi-profiel met een vooraf gedeelde sleutel.

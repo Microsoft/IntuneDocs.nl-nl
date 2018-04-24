@@ -1,29 +1,29 @@
 ---
 title: SharePoint Online beveiligen
 description: U kunt voorwaardelijke toegang gebruiken om bedrijfsgegevens te beschermen en te beheren op SharePoint Online.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f86508d9b187e0026a74c4e82e94cdd5a4d29c3a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2b7285c272efac8eab406393b0b896795fa5d8ed
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Toegang tot SharePoint Online beveiligen met Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Gebruik de voorwaardelijke toegang van Microsoft Intune om de toegang tot bestanden op SharePoint Online te beheren.
 Voorwaardelijke toegang bestaat uit twee onderdelen:
@@ -81,16 +81,16 @@ U kunt de toegang tot SharePoint Online beveiligen wanneer **iOS**- en **Android
 Het volgende wordt ondersteund:
 - Windows 8.1 en hoger (mits geregistreerd bij Intune)
 - Windows 7.0, Windows 8.1 of Windows 10 (mits lid van een domein)
-> [!NOTE]
->Als u voorwaardelijke toegang met Windows 10-pc's wilt gebruiken, moet u deze pc's bijwerken met de Windows 10 Jubileumupdate.
+  > [!NOTE]
+  >Als u voorwaardelijke toegang met Windows 10-pc's wilt gebruiken, moet u deze pc's bijwerken met de Windows 10 Jubileumupdate.
 
   - U moet pc's die deel uitmaken van een domein, zodanig instellen dat ze [automatisch worden geregistreerd](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) bij Azure Active Directory. De Azure AD Device Registration Service wordt automatisch geactiveerd voor Intune- en Office 365-klanten. Klanten die de ADFS Device Registration Service al hebben geïmplementeerd, zien geen geregistreerde apparaten in on-premises Active Directory.
 
   - Als het beleid zo is ingesteld dat de pc lid moet zijn van een domein en de pc geen lid is van een domein, wordt in een bericht weergegeven dat er contact moet worden opgenomen met de IT-beheerder.
 
   - Als het beleid zodanig is ingesteld dat de pc lid moet zijn van een domein of aan het beleid moet voldoen en de pc niet aan één of beide vereisten voldoet, wordt er een bericht weergegeven met instructies voor het installeren van de bedrijfsportal-app en het registreren van de pc.
-  >[!NOTE]
-  >Voorwaardelijke toegang wordt niet ondersteund op computers waarop de Intune-computerclient wordt uitgevoerd.
+    >[!NOTE]
+    >Voorwaardelijke toegang wordt niet ondersteund op computers waarop de Intune-computerclient wordt uitgevoerd.
 
 [Moderne verificatie van Office 365-moet zijn ingeschakeld](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) en alle nieuwe Office-updates moeten zijn geïnstalleerd.
 
@@ -132,24 +132,24 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 > U kunt ook in de Azure AD-beheerconsole een beleid voor voorwaardelijke toegang maken voor Intune-apparaten (dit beleid wordt in Azure AD ook wel **op apparaat gebaseerd beleid voor voorwaardelijke toegang** genoemd). Daarnaast kunt u andere beleidsregels voor voorwaardelijke toegang maken, zoals meervoudige verificatie. U kunt ook beleid voor voorwaardelijke toegang instellen voor bedrijfs-apps van derden die door Azure AD worden ondersteund, zoals voor Salesforce en Box. Zie voor meer informatie [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/) (Het instellen van het op apparaten gebaseerde beleid voor voorwaardelijke toegang tot toepassingen die zijn verbonden met Azure Active Directory).
 
 
-1.  Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** > **Voorwaardelijke toegang** > **SharePoint Online-beleid**.
-![Schermopname van de pagina SharePoint Online-beleid](../media/mdm-ca-spo-policy-configuration.png)
+1. Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) op **Beleid** > **Voorwaardelijke toegang** > **SharePoint Online-beleid**.
+   ![Schermopname van de pagina SharePoint Online-beleid](../media/mdm-ca-spo-policy-configuration.png)
 
-2.  Selecteer **Beleid voor voorwaardelijke toegang inschakelen voor SharePoint Online**.
+2. Selecteer **Beleid voor voorwaardelijke toegang inschakelen voor SharePoint Online**.
 
-3.  Onder **Toegang voor toepassingen**kunt u beleid voor voorwaardelijke toegang toepassen op:
+3. Onder **Toegang voor toepassingen**kunt u beleid voor voorwaardelijke toegang toepassen op:
 
-    -   **Alle platforms**
+   - **Alle platforms**
 
-        Hiervoor is vereist dat alle apparaten die worden gebruikt om toegang te krijgen tot **SharePoint Online**, moeten worden ingeschreven bij Intune en voldoen aan het nalevingsbeleid. Elke clienttoepassing die **moderne verificatie** gebruikt, is onderworpen aan beleid voor voorwaardelijke toegang. Als het platform momenteel niet wordt ondersteund door Intune, wordt toegang tot **SharePoint Online** geblokkeerd.
+     Hiervoor is vereist dat alle apparaten die worden gebruikt om toegang te krijgen tot **SharePoint Online**, moeten worden ingeschreven bij Intune en voldoen aan het nalevingsbeleid. Elke clienttoepassing die **moderne verificatie** gebruikt, is onderworpen aan beleid voor voorwaardelijke toegang. Als het platform momenteel niet wordt ondersteund door Intune, wordt toegang tot **SharePoint Online** geblokkeerd.
 
-        Als u **Alle platformen** selecteert, betekent dat dit beleid met Azure Active Directory wordt toegepast op alle verificatieaanvragen, ongeacht het platform dat wordt gerapporteerd door de clienttoepassing. Alle platformen moeten worden geregistreerd en voldoen aan de voorwaarden, behalve:
-        *   Windows-apparaten moeten worden ingeschreven, voldoen aan het beleid en lid zijn van een domein met om-premises Active Directory, of beide.
-        * Niet-ondersteunde platformen, zoals Mac. Apps met moderne verificatie die afkomstig zijn van deze platformen, worden wel nog geblokkeerd.
+     Als u **Alle platformen** selecteert, betekent dat dit beleid met Azure Active Directory wordt toegepast op alle verificatieaanvragen, ongeacht het platform dat wordt gerapporteerd door de clienttoepassing. Alle platformen moeten worden geregistreerd en voldoen aan de voorwaarden, behalve:
+     *   Windows-apparaten moeten worden ingeschreven, voldoen aan het beleid en lid zijn van een domein met om-premises Active Directory, of beide.
+     * Niet-ondersteunde platformen, zoals Mac. Apps met moderne verificatie die afkomstig zijn van deze platformen, worden wel nog geblokkeerd.
 
-    -   **Specifieke platforms**
+   - **Specifieke platformen**
 
-         Het beleid voor voorwaardelijke toegang wordt toegepast op elke clienttoepassing die moderne verificatie gebruikt op de door u geselecteerde platformen.
+      Het beleid voor voorwaardelijke toegang wordt toegepast op elke clienttoepassing die moderne verificatie gebruikt op de door u geselecteerde platformen.
 
      Voor Windows-pc's moet de pc lid zijn van een domein of zijn geregistreerd bij Intune en voldoen aan het beleid. U kunt de volgende vereisten instellen:
 
@@ -157,28 +157,28 @@ Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde appara
 
      -   **Apparaten moeten voldoen aan het beleid.** Kies deze optie om verplicht te stellen dat pc's geregistreerd zijn bij Intune en aan het beleid voldoen. Als een pc niet is geregistreerd, wordt een bericht met instructies voor de registratie weergegeven.
 
-4.   Onder **Browsertoegang** tot SharePoint Online en OneDrive voor Bedrijven kunt u ervoor kiezen om toegang tot Exchange Online alleen toe te staan via de ondersteunde browsers: Safari (iOS) en Chrome (Android). Toegang vanaf andere browsers wordt geblokkeerd. De platformbeperkingen die u hebt geselecteerd voor toegang tot OneDrive zijn hier ook van toepassing.
+4. Onder **Browsertoegang** tot SharePoint Online en OneDrive voor Bedrijven kunt u ervoor kiezen om toegang tot Exchange Online alleen toe te staan via de ondersteunde browsers: Safari (iOS) en Chrome (Android). Toegang vanaf andere browsers wordt geblokkeerd. De platformbeperkingen die u hebt geselecteerd voor toegang tot OneDrive zijn hier ook van toepassing.
 
-  Op **Android**-apparaten moeten gebruikers browsertoegang inschakelen. Om dit te doen, moet een gebruiker de optie **Browsertoegang inschakelen** als volgt inschakelen op geregistreerde apparaten:
-  1.    Open de app **Bedrijfsportal**.
-  2.    Ga naar de pagina **Instellingen** via de beletseltekens (...) of via de menuknop Hardware.
-  3.    Selecteer **Browsertoegang inschakelen**.
-  4.    In de browser Chrome meldt u zich af bij Office 365. Start vervolgens Chrome opnieuw op.
+   Op **Android**-apparaten moeten gebruikers browsertoegang inschakelen. Om dit te doen, moet een gebruiker de optie **Browsertoegang inschakelen** als volgt inschakelen op geregistreerde apparaten:
+   1.    Open de app **Bedrijfsportal**.
+   2.    Ga naar de pagina **Instellingen** via de beletseltekens (...) of via de menuknop Hardware.
+   3.    Selecteer **Browsertoegang inschakelen**.
+   4.    In de browser Chrome meldt u zich af bij Office 365. Start vervolgens Chrome opnieuw op.
 
-  Op **iOS**- en **Android**-platformen genereert Azure Active Directory een TLS-certificaat (Transport Layer Security) voor het apparaat om te bepalen welk apparaat wordt gebruikt om de service te openen. Op het apparaat wordt het certificaat met een prompt weergegeven aan de gebruiker; deze kan het certificaat dan selecteren zoals in de volgende schermafbeeldingen wordt weergegeven. De gebruiker moet dit certificaat selecteren voordat de browser kan worden gebruikt.
+   Op **iOS**- en **Android**-platformen genereert Azure Active Directory een TLS-certificaat (Transport Layer Security) voor het apparaat om te bepalen welk apparaat wordt gebruikt om de service te openen. Op het apparaat wordt het certificaat met een prompt weergegeven aan de gebruiker; deze kan het certificaat dan selecteren zoals in de volgende schermafbeeldingen wordt weergegeven. De gebruiker moet dit certificaat selecteren voordat de browser kan worden gebruikt.
 
-  **iOS**
+   **iOS**
 
-  ![Schermafbeelding van de certificaatprompt op een ipad](../media/mdm-browser-ca-ios-cert-prompt.png)
+   ![Schermafbeelding van de certificaatprompt op een ipad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
-  **Android**
+   **Android**
 
-  ![Schermopname van het certificaatprompt op een Android-apparaat](../media/mdm-browser-ca-android-cert-prompt.png)
-5.  Selecteer bij **Doelgroepen** de optie **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop het beleid van toepassing moet zijn. U kunt ervoor kiezen dit op alle gebruikers of alleen op een bepaalde groep gebruikers toe te passen.
+   ![Schermopname van het certificaatprompt op een Android-apparaat](../media/mdm-browser-ca-android-cert-prompt.png)
+5. Selecteer bij **Doelgroepen** de optie **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop het beleid van toepassing moet zijn. U kunt ervoor kiezen dit op alle gebruikers of alleen op een bepaalde groep gebruikers toe te passen.
 
-6.  Selecteer desgewenst onder **Uitgesloten groepen** de optie **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop dit beleid niet van toepassing is.
+6. Selecteer desgewenst onder **Uitgesloten groepen** de optie **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop dit beleid niet van toepassing is.
 
-7.  Als u klaar bent, kiest u **Opslaan**.
+7. Als u klaar bent, kiest u **Opslaan**.
 
 U hoeft het beleid voor voorwaardelijke toegang niet te implementeren. Het wordt direct van kracht.
 
@@ -193,5 +193,5 @@ Selecteer een groep mobiele apparaten. Kies op het tabblad **Apparaten** vervolg
 
 -   **Apparaten die zijn geregistreerd bij AAD en die voldoen aan het beleid**. Deze apparaten hebben toegang tot SharePoint Online.
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [De toegang tot e-mail en O365-services beveiligen met Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 94c6a46d2213ba3d1389b52f7684ec531e40228a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: e1b4903eedaec53015a01a7711f87401dc02d24e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Mobile Application Management-beleid configureren en implementeren in de Microsoft Intune-console
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Aan de hand van Mobile Application Management-beleid (MAM) in Microsoft Intune kunt u de functionaliteit van de door u geïmplementeerde apps aanpassen, zodat deze apps voldoen aan het beleid van uw bedrijf met betrekking tot naleving en beveiliging. U kunt bijvoorbeeld knip-, kopieer- en plakbewerkingen beperken in een beheerde app of een app configureren om alle webkoppelingen te openen binnen een beheerde browser.
 
@@ -180,7 +180,7 @@ Nadat u een app hebt gemaakt en geïmplementeerd die is gekoppeld aan een Mobile
 
 4.  Selecteer het Mobile Application Management-beleid waarvan u de status wilt weergeven. U kunt details van het beleid in het deelvenster onderaan weergeven en het knooppunt uitvouwen om de instellingen weer te geven.
 
-5.  Onder de kolom **Status** van elk van de Mobile Application Management-beleidsregels wordt **Voldoet**, **Voldoet (in behandeling)**of **Fout** weergegeven. Als bij een of meer instellingen van het geselecteerde beleid een conflict optreedt, wordt **Fout** weergegeven in dit veld.
+5.  Onder de kolom **Status** van elk van de Mobile Application Management-beleidsregels wordt **Voldoet**, **Voldoet (in behandeling)** of **Fout** weergegeven. Als bij een of meer instellingen van het geselecteerde beleid een conflict optreedt, wordt **Fout** weergegeven in dit veld.
 
 6.  Nadat u een conflict hebt vastgesteld, kunt u conflicterende beleidsinstellingen herzien zodat ze dezelfde instelling gebruiken of kunt u ervoor zorgen dat slechts één beleidsregel op de app en gebruiker wordt geïmplementeerd.
 

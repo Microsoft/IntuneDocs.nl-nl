@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9572181fb15ec97e7ae4c11a8ab2e4fe4cc9b30
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1b09545e99f18815e690ad224e11e772e8911c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-enrollment-for-mobile-devices"></a>Registratie inschakelen voor mobiele apparaten
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In dit onderwerp wordt beschreven hoe een Intune-beheerder de registratie van mobiele apparaten kan inschakelen. Zie [Werk gedaan krijgen met beheerde apparaten](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) voor meer informatie over het gebruik van Intune op uw telefoon.
 
@@ -66,4 +66,4 @@ U kunt ook een aantal verschillende scenario's voor [inschrijving van bedrijfsap
 Gefeliciteerd. U hebt zojuist de laatste stap van de *Snelstartgids voor Intune* voltooid. Nu de eerste configuratie is voltooid, kunt u overwegen om aanvullende MDM-functionaliteit in te schakelen.
 
 >[!div class="step-by-step"]
->[&larr; **Apparaten inschrijven**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Taken na configuratie** &rarr;](.\post-configuration-tasks.md)  
+>[&larr; **Apparaten inschrijven**](./start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Taken na configuratie** &rarr;](./post-configuration-tasks.md)  

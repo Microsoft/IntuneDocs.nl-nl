@@ -8,18 +8,18 @@ ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e7de3ab89ff75b381d0438f49fb6015b0eb28d28
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 5fd8f9744e68a19cc9411fe366aff4050cc3caa6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-application-entities"></a>Naslag voor toepassingsentiteiten
 
@@ -128,11 +128,13 @@ De entiteit **MobileAppInstallState** vertegenwoordigt de installatiestatus van 
 
 De **MobileAppDeviceUserInstallStatus** toont de installatiestatus van een mobiele app voor een bepaald apparaat en een bepaalde gebruiker.
 
-| Eigenschap | Description |
-|---|---|
-| DateKey | Sleutel van de datum waarop de installatiestatus van de app werd vastgelegd. |
-| AppKey | Sleutel van de mobiele app die wordt gebruikt om een exemplaar van AppRevision te identificeren. |
-| DeviceKey | Sleutel van een doelapparaat die wordt gebruikt om een exemplaar van Device te identificeren. |
-| UserKey | Sleutel van een doelgebruiker die wordt gebruikt om een exemplaar van User te identificeren. |
-|AppInstallStateKey | Sleutel van de installatiestatus van de app die wordt gebruikt om een exemplaar van MobileAppInstallState te identificeren. |
-| ErrorCode | De foutcode geretourneerd door het app-installatieprogramma, het mobiele platform of de service met betrekking tot de installatie van de app. |
+
+|      Eigenschap      |                                                         Description                                                         |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
+|      DateKey       |                                  Sleutel van de datum waarop de installatiestatus van de app werd vastgelegd.                                  |
+|       AppKey       |                             Sleutel van de mobiele app die wordt gebruikt om een exemplaar van AppRevision te identificeren.                              |
+|     DeviceKey      |                              Sleutel van een doelapparaat die wordt gebruikt om een exemplaar van Device te identificeren.                               |
+|      UserKey       |                                Sleutel van een doelgebruiker die wordt gebruikt om een exemplaar van User te identificeren.                                 |
+| AppInstallStateKey |                     Sleutel van de installatiestatus van de app die wordt gebruikt om een exemplaar van MobileAppInstallState te identificeren.                     |
+|     ErrorCode      | De foutcode geretourneerd door het app-installatieprogramma, het mobiele platform of de service met betrekking tot de installatie van de app. |
+

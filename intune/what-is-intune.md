@@ -1,36 +1,36 @@
 ---
 title: Inleiding tot Intune in de Azure-portal
-titlesuffix: 
+titlesuffix: ''
 description: Microsoft Intune is beschikbaar in Azure Portal. Kom meer te weten over Intune in Azure Portal.
-keywords: 
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: c9c8485a3ab68be745c8903659df0fd35af2a644
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 4dee2c2204b90a35f0b03e2cd78a6662f67f680d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Inleiding op Microsoft Intune in Azure Portal
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Net als andere Azure-services is Microsoft Intune beschikbaar in Azure Portal. Als u **Intune** selecteert in Azure Portal, kunt u de mobiele apparaten, pc's en apps van uw organisatie beheren.
 
->[!NOTE] 
+> [!NOTE]
 > Als u een eerdere versie van Microsoft Intune hebt gebruikt, is de volgende informatie mogelijk nuttig voor u:
-    * In [Waar is de functie die ik zoek gebleven in Azure?](ui-changes.md) kunt u nazoeken welke specifieke werkstromen en gebruiksinterfaces zijn veranderd bij de overgang naar Azure.
-    * In [Klassieke Intune-groepen in Azure Portal](groups-get-started.md) worden de gevolgen uitgelegd van de overstap naar Azure Active Directory-beveiligingsgroepen voor groepsbeheer.
+>     * In [Waar is de functie die ik zoek gebleven in Azure?](ui-changes.md) kunt u nazoeken welke specifieke werkstromen en gebruiksinterfaces zijn veranderd bij de overgang naar Azure.
+>     * In [Klassieke Intune-groepen in Azure Portal](groups-get-started.md) worden de gevolgen uitgelegd van de overstap naar Azure Active Directory-beveiligingsgroepen voor groepsbeheer.
 
 Belangrijke functies van de Microsoft Intune-ervaring in Azure Portal zijn onder andere:
 

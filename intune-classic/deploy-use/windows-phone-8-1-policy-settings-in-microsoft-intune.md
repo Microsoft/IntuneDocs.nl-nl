@@ -1,29 +1,29 @@
 ---
 title: Beleidsinstellingen voor Windows Phone 8.1
 description: Intune biedt diverse ingebouwde algemene instellingen die u op Windows Phone 8.1-apparaten kunt configureren. Daarnaast kunt u OMA-URI-waarden opgeven om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 083ac6c4bbab6cdad9fd07ac68cdd7447f14fe5e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: b44215e301bb712cc4d27722515d2e51b124101b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Beleidsinstellingen voor Windows Phone 8.1 in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune biedt diverse ingebouwde algemene instellingen die u op Windows Phone 8.1-apparaten kunt configureren. Daarnaast kunt u OMA-URI-waarden (Open Mobile Alliance Uniform Resource Identifier) opgeven om aangepaste instellingen te maken die niet beschikbaar zijn vanuit Intune.
 
@@ -43,18 +43,18 @@ Gebruik het **algemene configuratiebeleid voor Windows Phone (Windows Phone 8.1 
 
 ### <a name="password-settings"></a>Wachtwoordinstellingen
 
-|Naam van de instelling|Details|
-|----------------|------|
-|**Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**|Hiermee geeft u op of gebruikers een wachtwoord voor toegang tot hun apparaten moeten invoeren.|
-|**Vereist wachtwoordtype**|Hiermee geeft u het wachtwoordtype op dat is vereist, zoals alfanumeriek of alleen numeriek.|
-|**Vereist wachtwoordtype – minimumaantal tekensets**|Hiermee geeft u op hoeveel verschillende tekensets er moeten worden opgenomen in het wachtwoord. Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Voor iOS-apparaten geeft u hiermee echter het aantal symbolen op dat moet worden opgenomen in het wachtwoord.|
-|**Minimale wachtwoordlengte**|Hiermee geeft u het minimum aantal tekens op waaruit het wachtwoord moet bestaan.|
-|**Eenvoudige wachtwoorden toestaan**|Hiermee geeft u op dat er eenvoudige wachtwoorden, zoals '0000' en '1234' kunnen worden gebruikt.|
-|**Aantal herhaalde, mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist**|Hiermee geeft u op hoe vaak een onjuist wachtwoord kan worden ingevoerd voordat het apparaat wordt gewist.|
-|**Minuten van inactiviteit voordat het scherm wordt uitgeschakeld**|Hiermee geeft u de hoeveelheid tijd op die een apparaat niet-actief moet blijven voordat het scherm automatisch wordt vergrendeld.|
-|**Dagen tot wachtwoord verloopt**|Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.|Ja|Ja|
-|**Wachtwoordgeschiedenis onthouden**|Hiermee geeft u op of eerder gebruikte wachtwoorden worden onthouden om te voorkomen dat de gebruiker deze opnieuw gebruikt.|
-|**Wachtwoordgeschiedenis onthouden** – **Wachtwoorden niet opnieuw gebruiken**|Hiermee geeft u aan hoeveel eerder gebruikte wachtwoorden er worden onthouden.|
+|                                           Naam van de instelling                                            |                                                                                                                                    Details                                                                                                                                     |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten</strong>                    |                                                                                                     Hiermee geeft u op of gebruikers een wachtwoord voor toegang tot hun apparaten moeten invoeren.                                                                                                     |
+|                              <strong>Vereist wachtwoordtype</strong>                              |                                                                                          Hiermee geeft u het wachtwoordtype op dat is vereist, zoals alfanumeriek of alleen numeriek.                                                                                           |
+|            <strong>Vereist wachtwoordtype – minimumaantal tekensets</strong>             | Hiermee geeft u op hoeveel verschillende tekensets er moeten worden opgenomen in het wachtwoord. Er zijn vier tekensets: kleine letters, hoofdletters, cijfers en symbolen. Voor iOS-apparaten geeft u hiermee echter het aantal symbolen op dat moet worden opgenomen in het wachtwoord. |
+|                             <strong>Minimale wachtwoordlengte</strong>                              |                                                                                                 Hiermee geeft u het minimum aantal tekens op waaruit het wachtwoord moet bestaan.                                                                                                  |
+|                              <strong>Eenvoudige wachtwoorden toestaan</strong>                              |                                                                                                     Hiermee geeft u op dat er eenvoudige wachtwoorden, zoals '0000' en '1234' kunnen worden gebruikt.                                                                                                     |
+|     <strong>Aantal herhaalde, mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist</strong>      |                                                                                         Hiermee geeft u op hoe vaak een onjuist wachtwoord kan worden ingevoerd voordat het apparaat wordt gewist.                                                                                         |
+|                <strong>Minuten van inactiviteit voordat het scherm wordt uitgeschakeld</strong>                 |                                                                                       Hiermee geeft u de hoeveelheid tijd op die een apparaat niet-actief moet blijven voordat het scherm automatisch wordt vergrendeld.                                                                                        |
+|                            <strong>Dagen tot wachtwoord verloopt</strong>                            |                                                                                                    Hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.                                                                                                    |
+|                            <strong>Wachtwoordgeschiedenis onthouden</strong>                             |                                                                                     Hiermee geeft u op of eerder gebruikte wachtwoorden worden onthouden om te voorkomen dat de gebruiker deze opnieuw gebruikt.                                                                                      |
+| <strong>Wachtwoordgeschiedenis onthouden</strong> – <strong>Wachtwoorden niet opnieuw gebruiken</strong> |                                                                                                          Hiermee geeft u aan hoeveel eerder gebruikte wachtwoorden er worden onthouden.                                                                                                          |
 
 ### <a name="encryption-settings"></a>Versleutelingsinstellingen
 
@@ -119,14 +119,15 @@ In de lijst **Toegestane en geblokkeerde apps** geeft u de apps op die u wilt to
 > [!NOTE]
 > Een enkele beleidsregel kan alleen een lijst met toegestane of geblokkeerde apps bevatten. U kunt niet beide in dezelfde beleidsregel opgeven.
 
-|Naam van de instelling|Details|
-|----------------|--------------------|
-|**Apparaten mogen apps in lijst niet openen**|Hiermee wordt een lijst gemaakt met de apps die niet worden beheerd met Intune en die niet mogen worden geïnstalleerd en uitgevoerd door gebruikers.|
-|**Alleen de apps in de lijst mogen op apparaten worden geïnstalleerd**|Hiermee wordt een lijst gemaakt met de apps die gebruikers mogen installeren. Gebruikers mogen geen andere apps installeren. Apps die worden beheerd door Intune, zijn automatisch toegestaan.|
-|**Toevoegen**|Hiermee voegt u een app toe aan de geselecteerde lijst. Geef een naam van uw keuze op, geef de URL op van de app in de App Store en vermeld desgewenst de uitgever van de app. Zie 'URL's voor app stores opgeven' verderop in dit onderwerp voor meer informatie.
-|**Apps importeren**|Hiermee importeert u een lijst met apps die u hebt opgegeven in een bestand met door komma's gescheiden waarden. Gebruik de notatie, toepassingsnaam, uitgever en app-URL in het bestand.|
-|**Bewerken**|Hiermee kunt u de naam, de uitgever en de URL van de geselecteerde app bewerken.|
-|**Verwijderen**|Hiermee verwijdert u de geselecteerde app uit de lijst.|
+|                          Naam van de instelling                          |                                                                                                      Details                                                                                                      |
+|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Apparaten mogen apps in lijst niet openen</strong>   |                                                        Hiermee wordt een lijst gemaakt met de apps die niet worden beheerd met Intune en die niet mogen worden geïnstalleerd en uitgevoerd door gebruikers.                                                         |
+| <strong>Alleen de apps in de lijst mogen op apparaten worden geïnstalleerd</strong> |                                 Hiermee wordt een lijst gemaakt met de apps die gebruikers mogen installeren. Gebruikers mogen geen andere apps installeren. Apps die worden beheerd door Intune, zijn automatisch toegestaan.                                 |
+|                      <strong>Toevoegen</strong>                      | Hiermee voegt u een app toe aan de geselecteerde lijst. Geef een naam van uw keuze op, geef de URL op van de app in de App Store en vermeld desgewenst de uitgever van de app. Zie 'URL's voor app stores opgeven' verderop in dit onderwerp voor meer informatie. |
+|                  <strong>Apps importeren</strong>                  |                              Hiermee importeert u een lijst met apps die u hebt opgegeven in een bestand met door komma's gescheiden waarden. Gebruik de notatie, toepassingsnaam, uitgever en app-URL in het bestand.                               |
+|                     <strong>Bewerken</strong>                      |                                                                          Hiermee kunt u de naam, de uitgever en de URL van de geselecteerde app bewerken.                                                                          |
+|                    <strong>Verwijderen</strong>                     |                                                                                      Hiermee verwijdert u de geselecteerde app uit de lijst.                                                                                      |
+
 > [!IMPORTANT]
 > Als u een lijst met toegestane apps voor Windows Phone 8.1-apparaten opgeeft, moet u de Bedrijfsportal-app aan deze lijst toevoegen, anders wordt deze app geblokkeerd.
 
@@ -140,7 +141,7 @@ Zoek op de pagina [Windows Phone Apps+Games](http://www.windowsphone.com/store/o
 
 Open de pagina van de app en kopieer de URL naar het klembord. U kunt deze URL nu gebruiken in de lijst met toegestane apps of de lijst met geblokkeerde apps.
 
-**Voorbeeld:** Zoek in de store naar de Skype-app. De URL die u gebruikt, is **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+**Voorbeeld:** Zoek in de store naar de Skype-app. U gebruikt hiervoor de URL **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 ## <a name="custom-policy-settings"></a>Aangepaste beleidsinstellingen
 Gebruik het **aangepaste configuratiebeleid voor Windows Phone** van Microsoft Intune om OMA-URI-instellingen te implementeren die kunnen worden gebruikt om functies op **Windows Phone 8.1-apparaten** te beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
@@ -170,5 +171,5 @@ Geef in het dialoogvenster **OMA-URI-instelling toevoegen of bewerken** de volge
     |**OMA-URI (hoofdlettergevoelig)**|Geef de OMA-URI op waarvoor u een instelling wilt opgeven.|
     |**Waarde**|Geef de waarde op die moet worden gekoppeld aan de OMA-URI die u eerder hebt opgegeven.|
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

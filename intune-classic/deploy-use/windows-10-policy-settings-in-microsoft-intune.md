@@ -1,29 +1,29 @@
 ---
 title: Windows 10-beleidsinstellingen
 description: Gebruik de beleidsinstellingen die in dit onderwerp worden genoemd als u ingebouwde en aangepaste instellingen wilt configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fff34b145660e1d0e78e05de467629f9421fcf7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 202f15766aa740755669ab246739a5331ea328a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 De informatie in dit onderwerp kan u helpen de Intune-beleidsinstellingen te begrijpen die u kunt gebruiken voor het beheren van Windows 10-apparaten. Lees dit onderwerp, en lees daarnaast over de procedures in [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 
@@ -69,7 +69,7 @@ Niet alle instellingen zijn compatibele met alle versies van Windows 10. In de t
 
 Bovendien worden niet alle instellingen in het onderwerp door Intune ondersteund. Als u wilt weten of de gewenste instelling door Intune wordt ondersteund, opent u het onderwerp voor de betreffende instelling. U kunt op elke instellingenpagina zien welke bewerkingen worden ondersteund. Voor gebruik in combinatie met Intune moet de instelling de bewerking **Toevoegen** of **Vervangen** ondersteunen.
 
-## <a name="general-configuration-policy-settings"></a>Instellingen voor algemeen configuratiebeleid
+## <a name="general-configuration-policy-settings"></a>Algemene instellingen voor configuratiebeleid
 
 Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Windows 10 om ingebouwde instellingen te configureren voor geregistreerde Windows 10 Desktop- en Windows 10 Mobile-apparaten.
 
@@ -92,7 +92,7 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 
 |Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|
-|**Versleuteling vereisen voor mobiel apparaat**|Hiermee schakelt u versleuteling op doelapparaten in<br>(alleen Windows 10 Mobile)|
+|**Versleuteling vereisen voor mobiel apparaat**|Hiermee schakelt u versleuteling op doelapparaten in<br>(Alleen voor Windows 10 Mobile)|
 
 ### <a name="system"></a>Systeem
 
@@ -116,7 +116,7 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 
 |Naam van de instelling|Aanvullende informatie (indien nodig)|
 |----------------|----------------------|
-|**Webbrowser toestaan**|Hiermee staat u het gebruik van de webbrowser Microsoft Edge op het apparaat toe<br>(alleen Windows 10 Mobile)|
+|**Webbrowser toestaan**|Hiermee staat u het gebruik van de webbrowser Microsoft Edge op het apparaat toe<br>(Alleen voor Windows 10 Mobile)|
 |**Zoeksuggesties in de adresbalk toestaan**|Hiermee kan de zoekmachine sites voorstellen wanneer er zoektermen worden getypt|
 |**Verzenden van intranetverkeer naar Internet Explorer toestaan**|Hiermee staat u toe dat gebruikers intranetsites in Internet Explorer kunnen openen<br>(alleen Windows 10 Desktop)|
 |**Do Not Track toestaan**|Hiermee configureert u de browser Microsoft Edge zodanig dat verzoeken om niet gevolgd te worden, worden verzonden naar websites die gebruikers bezoeken|
@@ -152,7 +152,7 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**Verwisselbare opslag toestaan**|Hiermee geeft u op of er op het apparaat externe opslagapparaten, zoals een SD-kaart, kunnen worden gebruikt|
 |**Wi-Fi toestaan**|Dit is alleen van toepassing op Windows 10 Mobile|
 |**Internetverbinding delen toestaan**|Hiermee kunt u het gebruik van een gedeelde internetverbinding op het apparaat toestaan|
-|**Handmatige Wi-Fi-configuratie toestaan**|Hiermee bepaalt u of de gebruiker zijn eigen Wi-Fi-verbindingen kan instellen, of dat de gebruiker alleen verbindingen kan gebruiken die door een Wi-Fi-profiel zijn geconfigureerd<br>(alleen Windows 10 Mobile)|
+|**Handmatige Wi-Fi-configuratie toestaan**|Hiermee bepaalt u of de gebruiker zijn eigen Wi-Fi-verbindingen kan instellen, of dat de gebruiker alleen verbindingen kan gebruiken die door een Wi-Fi-profiel zijn geconfigureerd<br>(Alleen voor Windows 10 Mobile)|
 |**Automatische verbinding met gratis Wi-Fi-hotspots toestaan**|Hiermee kunt u het apparaat automatisch verbinding laten maken met gratis Wi-Fi-hotspots en automatisch de voorwaarden voor de verbinding laten accepteren|
 |**Geolocatie toestaan**|Geeft aan of op het apparaat gegevens van locatieservices kunnen worden gebruikt|
 |**NFC toestaan**|Hiermee staat u gebruik van de NFC-mogelijkheden op het apparaat toe|
@@ -170,7 +170,7 @@ Gebruik de **algemene configuratiebeleidsregels** van Microsoft Intune voor Wind
 |**Kopiëren en plakken toestaan**|Dit is alleen van toepassing op Windows 10 Mobile|
 |**Spraakopname toestaan**|Dit is alleen van toepassing op Windows 10 Mobile|
 |**Cortana toestaan**|Hiermee schakelt u de spraakassistent Cortana in of uit|
-|**Meldingen van onderhoudscentrum toestaan**|Hiermee schakelt u de meldingen van het Onderhoudscentrum op het vergrendelingsscherm in of uit<br>(alleen Windows 10 Mobile)|
+|**Meldingen van onderhoudscentrum toestaan**|Hiermee schakelt u de meldingen van het Onderhoudscentrum op het vergrendelingsscherm in of uit<br>(Alleen voor Windows 10 Mobile)|
 
 ### <a name="windows-defender"></a>Windows Defender
 
@@ -210,5 +210,5 @@ Alle instellingen zijn alleen voor Windows 10 Desktop.
 |**Automatische updates toestaan**|Automatische updates toestaan. Configureer een van de volgende instellingen om het gedrag voor updates te bepalen:<br />**Melding van download**<br />**Automatisch installeren op onderhoudstijdstip**<br />**Automatisch installeren en opstarten op onderhoudstijdstip**<br />**Automatisch installeren en opnieuw opstarten op het geplande tijdstip**: wanneer deze optie is geselecteerd, kunt u ook de volgende instellingen configureren: **Melding onderdrukken voor eindgebruiker** en **De installatiedag voor geplande updates definiëren**.<br>(alleen Windows 10 Desktop)|
 |**Functies van evaluatieversies toestaan**|Hiermee kan Microsoft instellingen en functies van evaluatieversies implementeren op Windows 10-apparaten. U kunt selecteren dat alleen instellingen zijn toegestaan, of dat alle instellingen en functies van evaluatieversies mogen worden geïnstalleerd.|
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

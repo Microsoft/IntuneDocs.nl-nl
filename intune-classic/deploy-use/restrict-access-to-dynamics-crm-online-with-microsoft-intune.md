@@ -1,29 +1,29 @@
 ---
 title: Dynamics CRM Online beveiligen
 description: Toegang tot Dynamics CRM Online beschermen en controleren met voorwaardelijke toegang.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bae29ed7eba164ce19ea5db7d003ab38b4683454
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e2f720c8a6613884397111c2a421fa1cfdc0eb53
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Toegang tot Dynamics CRM Online beveiligen met Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 U kunt de toegang tot Microsoft Dynamics CRM Online beheren vanaf iOS- en Android-apparaten door gebruik te maken van de voorwaardelijke toegang van Microsoft Intune.  De voorwaardelijke toegang van Intune bestaat uit twee onderdelen:
 * Een [nalevingsbeleid voor apparaten](introduction-to-device-compliance-policies-in-microsoft-intune.md) waaraan het apparaat moet voldoen om te worden beschouwd als een apparaat dat het beleid naleeft.
@@ -73,17 +73,17 @@ Wanneer u klaar bent, gaat u door naar Stap 3.
 ### <a name="step-3-configure-the-dynamics-crm-policy"></a>Stap 3: het Dynamics CRM-beleid configureren
 Configureer vervolgens het beleid om ervoor te zorgen dat alleen beheerde apparaten en apparaten die aan het beleid voldoen toegang hebben tot Dynamics CRM. Dit beleid wordt opgeslagen in Azure Active Directory.
 
-1.  Kies in de Intune-beheerconsole achtereenvolgens **Beleid > Voorwaardelijke toegang > Beleid voor Dynamics CRM Online**.
+1. Kies in de Intune-beheerconsole achtereenvolgens **Beleid > Voorwaardelijke toegang > Beleid voor Dynamics CRM Online**.
 
-  ![Schermafbeelding van de pagina met beleid voor voorwaardelijke toegang voor Dynamics CRM Online](../media/mdm-ca-dynamics-crm-policy-configuration.png)
+   ![Schermafbeelding van de pagina met beleid voor voorwaardelijke toegang voor Dynamics CRM Online](../media/mdm-ca-dynamics-crm-policy-configuration.png)
 
-2.  Kies het beleid **Voorwaardelijke toegang inschakelen**.
-3.  Onder **Toegang voor toepassingen**kunt u beleid voor voorwaardelijke toegang toepassen:
-  * **iOS**
-  * **Android**
-4.  Selecteer bij **Doelgroepen** de optie **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop het beleid van toepassing moet zijn. U kunt ervoor kiezen dit op alle gebruikers of alleen op een bepaalde groep gebruikers toe te passen.
-5.  Selecteer desgewenst onder **Uitgesloten groepen** de optie **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop dit beleid niet van toepassing is.
-6.  Als u klaar bent, kiest u **Opslaan**.
+2. Kies het beleid **Voorwaardelijke toegang inschakelen**.
+3. Onder **Toegang voor toepassingen**kunt u beleid voor voorwaardelijke toegang toepassen:
+   * **iOS**
+   * **Android**
+4. Selecteer bij **Doelgroepen** de optie **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop het beleid van toepassing moet zijn. U kunt ervoor kiezen dit op alle gebruikers of alleen op een bepaalde groep gebruikers toe te passen.
+5. Selecteer desgewenst onder **Uitgesloten groepen** de optie **Wijzigen** om de Active Directory-beveiligingsgroepen te selecteren waarop dit beleid niet van toepassing is.
+6. Als u klaar bent, kiest u **Opslaan**.
 
 U hebt nu voorwaardelijke toegang voor Dynamics CRM geconfigureerd. U hoeft het beleid voor voorwaardelijke toegang niet te implementeren. Het wordt direct van kracht.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>De compatibiliteit en het beleid voor voorwaardelijke toegang bewaken

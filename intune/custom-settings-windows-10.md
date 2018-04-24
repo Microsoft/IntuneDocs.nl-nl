@@ -1,27 +1,27 @@
 ---
 title: Aangepaste Microsoft Intune-instellingen voor apparaten met Windows 10
-titlesuffix: 
+titlesuffix: ''
 description: Meer informatie over de aangepaste instellingen die u kunt configureren in een aangepast Windows 10-profiel.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4bb86d0f80a4d337e0ab63ae7f90d6c3541462d9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c8e0d56c91b710a86949844d2fd455e4183488f5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Aangepaste Microsoft Intune-apparaatinstellingen voor apparaten met Windows 10
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
  Gebruik het **aangepaste** profiel van Microsoft Intune voor Windows 10 en Windows 10 Mobile om OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) te implementeren die kunnen worden gebruikt om functies op apparaten te beheren. In Windows 10 zijn veel CSP-instellingen beschikbaar, zoals de [ beleids-CSP (Policy Configuration Service Provider)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 Als u een bepaalde instelling zoekt, moet u er rekening mee houden dat het [beperkingsprofiel voor Windows 10-apparaten](device-restrictions-windows-10.md) tal van instellingen bevat die zijn ingebouwd in Intune. U hoeft voor deze instellingen geen aangepaste waarden op te geven.

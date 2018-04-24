@@ -14,15 +14,15 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 73fa5866efe10006a8a3d7de38ec4c552d0df06e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f1d4eb8ea128ba453e555836289fb7d1ce8b34c4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Licentieovereenkomsten voor Windows-pc-software in Microsoft Intune beheren
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Met Microsoft Intune kunt u licentiegegevens toevoegen en beheren voor software die is gekocht via Microsoft Volume Licensing-overeenkomsten. U kunt dit ook doen voor Microsoft- of niet-Microsoft-software die op een andere manier is gekocht. U kunt deze gegevens in logische groepen indelen.
 
@@ -174,10 +174,12 @@ De lijstweergave **Alle overeenkomsten** wordt weergegeven.
 ## <a name="manage-license-agreements"></a>Licentieovereenkomsten beheren
 Softwarelicentieovereenkomsten kunnen worden toegevoegd aan licentiegroepen. U kunt licentiegroepen gebruiken om uw licentieovereenkomsten te organiseren in groepen die logisch zijn voor uw organisatie. U kunt ook licentieovereenkomsten verwijderen die u eerder hebt gemaakt.
 
-|||
-|-|-|
-|Taak|Details|
-|Een licentiegroep maken|Kies op de pagina **Overzicht** in de werkruimte **Licenties** de optie **Licentiegroep maken** in het menu **Taken**. **Opmerking**: u kunt maximaal 500 licentiegroepen maken.|
-|De naam van een licentiegroep wijzigen|Kies in de werkruimte **Licenties** een licentiegroep en kies dan **Licentiegroep bewerken** in het menu **Taken** .|
-|Een licentiegroep verwijderen|Kies in de werkruimte **Licenties** een licentiegroep en kies dan **Licentiegroep verwijderen** in het menu **Taken** . **Tip:** alle licenties in de verwijderde groep worden verplaatst naar de licentiegroep **Niet-toegewezen overeenkomsten**.|
-|Een licentieovereenkomst verwijderen|Kies in de werkruimte **Licenties** een overeenkomst en kies vervolgens **Verwijderen**. **Tip:** nadat u volumelicentieovereenkomsten hebt verwijderd, kiest u voor het bijwerken van de licentiegegevens de optie **Nu vernieuwen** op de pagina **Licentieoverzicht** of op het tabblad **Algemeen** voor een specifieke licentiegroep.|
+
+|                            |                                                                                                                                                                                                                                                                                                                                                                          |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            Taak            |                                                                                                                                                                                 Details                                                                                                                                                                                  |
+|   Een licentiegroep maken   |                                                            Kies op de pagina <strong>Overzicht</strong> in de werkruimte <strong>Licenties</strong> de optie <strong>Licentiegroep maken</strong> in het menu <strong>Taken</strong>. <strong>Opmerking</strong>: u kunt maximaal 500 licentiegroepen maken.                                                             |
+|   De naam van een licentiegroep wijzigen   |                                                                                                      Kies in de werkruimte <strong>Licenties</strong> een licentiegroep en kies dan <strong>Licentiegroep bewerken</strong> in het menu <strong>Taken</strong> .                                                                                                       |
+|   Een licentiegroep verwijderen   |                                 Kies in de werkruimte <strong>Licenties</strong> een licentiegroep en kies dan <strong>Licentiegroep verwijderen</strong> in het menu <strong>Taken</strong> . <strong>Tip:</strong> alle licenties in de verwijderde groep worden verplaatst naar de licentiegroep <strong>Niet-toegewezen overeenkomsten</strong>.                                 |
+| Een licentieovereenkomst verwijderen | Kies in de werkruimte <strong>Licenties</strong> een overeenkomst en kies vervolgens <strong>Verwijderen</strong>. <strong>Tip:</strong> nadat u volumelicentieovereenkomsten hebt verwijderd, kiest u voor het bijwerken van de licentiegegevens de optie <strong>Nu vernieuwen</strong> op de pagina <strong>Licentieoverzicht</strong> of op het tabblad <strong>Algemeen</strong> voor een specifieke licentiegroep. |
+

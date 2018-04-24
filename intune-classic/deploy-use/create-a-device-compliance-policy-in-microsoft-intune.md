@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 03719051179a30b0cc543098861f1b480c66082a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ed6f66747364debd89661d78bcf3b002b1c8a9b6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Een nalevingsbeleid voor apparaten maken in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In dit onderwerp worden de stappen beschreven die u kunt volgen om nalevingsbeleid te maken waaraan een apparaat zich moet houden om aan dat beleid te voldoen.
 
@@ -56,6 +56,7 @@ Als u de tijd wilt opgeven die het apparaat heeft om in te checken voordat een a
 In de volgende tabel staan de instellingen voor nalevingsbeleid en de platformen waarop deze worden ondersteund.
 
 -------------
+
 |Instelling|iOS|Android|Windows|
 |-----|----|-----|-----|
 |Wachtwoord vereist voor het ontgrendelen van mobiele apparaten|iOS 6 en hoger|Android 4.0 en hoger <br>Samsung KNOX Standard 4.0 of hoger|Windows Phone 8.1 en hoger|
@@ -79,9 +80,9 @@ In de volgende tabel staan de instellingen voor nalevingsbeleid en de platformen
 
 Selecteer een van de volgende mogelijkheden voor meer informatie over instellingen voor naleving die op elk platform worden ondersteund:
 > [!div class="op_single_selector"]
-- [Instellingen voor nalevingsbeleid voor iOS-apparaten](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Instellingen voor nalevingsbeleid voor Android-apparaten](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Instellingen voor nalevingsbeleid voor Windows en Windows Phones ](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [Instellingen voor nalevingsbeleid voor iOS-apparaten](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Instellingen voor nalevingsbeleid voor Android-apparaten](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Instellingen voor nalevingsbeleid voor Windows en Windows Phones ](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
 ## <a name="next-steps"></a>Volgende stappen

@@ -1,29 +1,29 @@
 ---
 title: E-mailscenario's beveiligen
-description: "Enkele voorbeeldscenario's en hoe deze kunnen worden geïmplementeerd met voorwaardelijke toegang."
-keywords: 
+description: Enkele voorbeeldscenario's en hoe deze kunnen worden geïmplementeerd met voorwaardelijke toegang.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1ca486ca9eab1ebb8a446b560ff5e265eb4d2712
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 3116cfdb6b1ea153d914630a23e0db82a8c31d85
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Toegang tot e-mail beveiligen met Microsoft Intune: voorbeeldscenario’s
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Scenario 1: de toegang tot Exchange Online blokkeren voor gebruikers met een apparaat dat niet voldoet aan het beleid.
 ### <a name="scenario-requirements"></a>Scenariovereisten
@@ -53,9 +53,9 @@ De volgende werkstroom wordt in het scenario gebruikt om te bepalen welke appara
 
 U doet dit door het volgende beleid voor voorwaardelijke toegang voor Exchange On-premises te configureren met de volgende instellingen:
 
--   Kies de optie **De toegang tot Exchange On-premises blokkeren voor e-mail-apps indien het apparaat niet voldoet aan het beleid of niet is geregistreerd bij Microsoft Intune**. Door deze optie te kiezen, wordt het beleid voor voorwaardelijke toegang ingeschakeld, waarvoor is vereist dat alle apparaten in Microsoft Intune moeten zijn geregistreerd en voldoen aan de regels van het nalevingsbeleid, voordat ze toegang kunnen krijgen tot Exchange.
+- Kies de optie **De toegang tot Exchange On-premises blokkeren voor e-mail-apps indien het apparaat niet voldoet aan het beleid of niet is geregistreerd bij Microsoft Intune**. Door deze optie te kiezen, wordt het beleid voor voorwaardelijke toegang ingeschakeld, waarvoor is vereist dat alle apparaten in Microsoft Intune moeten zijn geregistreerd en voldoen aan de regels van het nalevingsbeleid, voordat ze toegang kunnen krijgen tot Exchange.
 
--   Als u geavanceerde Exchange Active Sync-instellingen wilt maken, maakt u het volgende:
+- Als u geavanceerde Exchange Active Sync-instellingen wilt maken, maakt u het volgende:
 
   -   Platformuitzondering waardoor apparaten met iOS toegang krijgen tot Exchange.   
 

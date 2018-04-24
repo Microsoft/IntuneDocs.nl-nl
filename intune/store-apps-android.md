@@ -1,29 +1,29 @@
 ---
 title: Android Store-apps toevoegen aan Microsoft Intune
-titleSuffix: 
+titleSuffix: ''
 description: Meer informatie over hoe u Android Store-apps toevoegt aan Microsoft Intune.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87fea551dea1f80ee071fe6b477b84729e000874
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ece6edee891b147ad2124b987239da6af8e1bc8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Android Store-apps toevoegen aan Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Voordat u een app toewijst aan een apparaat of een groep gebruikers, moet u de app toevoegen aan Microsoft Intune. Met de volgende stappen kunt u een Android Store-app toevoegen aan Intune via Azure Portal.
 
@@ -52,6 +52,6 @@ Voordat u een app toewijst aan een apparaat of een groep gebruikers, moet u de a
 
 De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. 
 
-##<a name="next-steps"></a>Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 
 - [Apps aan groepen toewijzen](apps-deploy.md)

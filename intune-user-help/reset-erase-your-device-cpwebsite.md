@@ -1,27 +1,27 @@
 ---
 title: Uw apparaat opnieuw instellen op de website van de bedrijfsportal | Microsoft Docs
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 181c3df521e9cf213367becf00e4a53469ad69a9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: edb5f8306d728abb62b806f287a31b6a75d25cbd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
@@ -34,17 +34,17 @@ Als u uw apparaat opnieuw instelt, wordt het apparaat niet meer weergegeven in d
 
 Ga als volgt te werk om uw apparaat opnieuw in te stellen:
 
-1.  Op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) tikt u op de knop __Menu__ en selecteert u __Mijn apparaten__.
+1. Op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) tikt u op de knop __Menu__ en selecteert u __Mijn apparaten__.
 
 2. Op de pagina __Mijn apparaten__ selecteert u de naam van het apparaat waarvan u de naam wilt wijzigen.
 
-  ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
+   ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Het apparaat wordt in een pop-upvenster geopend. Tik op de knop **Opnieuw instellen**.
+3. Het apparaat wordt in een pop-upvenster geopend. Tik op de knop **Opnieuw instellen**.
 
-    ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportalwebsite, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/iwp-screen-with-all-options.png)
+   ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportalwebsite, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/iwp-screen-with-all-options.png)
 
-4.  Er wordt een waarschuwing weergegeven zodat u weet dat u alle inhoud op het apparaat wist door de fabrieksinstellingen te herstellen. Tik op **Opnieuw instellen** om te bevestigen dat u dit wilt doen.
+4. Er wordt een waarschuwing weergegeven zodat u weet dat u alle inhoud op het apparaat wist door de fabrieksinstellingen te herstellen. Tik op **Opnieuw instellen** om te bevestigen dat u dit wilt doen.
 
 Uw apparaat is nu opnieuw ingesteld.
 

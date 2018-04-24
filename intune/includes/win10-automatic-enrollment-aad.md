@@ -11,21 +11,21 @@ Met automatische inschrijving kunnen gebruikers hun Windows 10-apparaten inschri
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com) en selecteer **Azure Active Directory**.
 
-  ![Schermopname van de Azure-portal](../media/auto-enroll-azure-main.png)
+   ![Schermopname van de Azure-portal](../media/auto-enroll-azure-main.png)
 
 2. Selecteer **Mobiliteit (MDM en MAM)**.
 
-  ![Schermopname van de Azure-portal](../media/auto-enroll-mdm.png)
+   ![Schermopname van de Azure-portal](../media/auto-enroll-mdm.png)
 
 3. Selecteer **Microsoft Intune**.
 
-  ![Schermopname van de Azure-portal](../media/auto-enroll-intune.png)
+   ![Schermopname van de Azure-portal](../media/auto-enroll-intune.png)
 
 4. **Gebruikersbereik van MDM** configureren. Geef op van welke gebruikers apparaten moeten worden beheerd met Microsoft Intune. Deze Windows 10-apparaten kunnen automatisch worden ingeschreven voor beheer met Microsoft Intune.
 
-  - **Geen** - Automatische inschrijving voor MDM uitgeschakeld
-  - **Sommige** - Selecteer **Groepen** die automatisch hun Windows 10-apparaten kunnen inschrijven
-  - **Alle** - Alle gebruikers kunnen automatisch hun Windows 10-apparaten inschrijven
+   - **Geen** - Automatische inschrijving voor MDM uitgeschakeld
+   - **Sommige** - Selecteer **Groepen** die automatisch hun Windows 10-apparaten kunnen inschrijven
+   - **Alle** - Alle gebruikers kunnen automatisch hun Windows 10-apparaten inschrijven
 
       > [!IMPORTANT]
       > Als zowel **Gebruikersbereik van MAM** als automatische MDM-inschrijving (**Gebruikersbereik van MDM**) wordt ingeschakeld voor een groep, wordt alleen MAM ingeschakeld. Alleen MAM wordt toegevoegd voor gebruikers in die groep wanneer ze hun persoonlijke apparaat aan hun werkplek toevoegen. Apparaten worden niet automatisch ingeschreven voor MDM.

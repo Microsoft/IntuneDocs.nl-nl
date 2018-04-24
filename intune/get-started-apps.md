@@ -1,25 +1,25 @@
 ---
 title: Aan de slag met apps in Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Zoek apps en voeg ze toe aan apparaten om het voor uw medewerkers mogelijk te maken om hun werk uit te voeren.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 3/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3198a62e437e5ccaa3cfc71d1f643f073d41ed05
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: cf7b2cca28e16825c368cb3e5dc793d25daaa4d0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Aan de slag met het toevoegen van apps in Microsoft Intune
 

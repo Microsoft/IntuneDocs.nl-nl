@@ -1,22 +1,22 @@
 ---
 title: Melding van niet-compatibele apparaten en acties met Microsoft Intune - Azure | Microsoft Docs
 description: Maak een e-mailmelding om te verzenden naar niet-compatibele apparaten. Voeg acties toe nadat een apparaat is gemarkeerd als niet-compatibel, door bijvoorbeeld een respijtperiode toe te voegen om compatibel te worden, of maak een planning om toegang te blokkeren totdat het apparaat compatibel is. U doet dit met Microsoft Intune in Azure.
-keywords: 
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>E-mail automatiseren en acties voor niet-compatibele apparaten toevoegen - Intune
 
@@ -54,14 +54,14 @@ Er zijn twee soorten acties:
 3. Selecteer **Apparaatcompatibiliteit** en vervolgens **Meldingen**. 
 4. Selecteer **Melding maken** en voer de volgende gegevens in:
 
-  - Naam
-  - Onderwerp
-  - Bericht
-  - E-mailkoptekst - Bedrijfslogo opnemen
-  - E-mailvoettekst - Bedrijfslogo opnemen
-  - E-mailvoettekst – Contactgegevens opnemen
+   - Naam
+   - Onderwerp
+   - Bericht
+   - E-mailkoptekst - Bedrijfslogo opnemen
+   - E-mailvoettekst - Bedrijfslogo opnemen
+   - E-mailvoettekst – Contactgegevens opnemen
 
-  ![Voorbeeld van een compatibel meldingsbericht in Intune](./media/actionsfornoncompliance-1.PNG)
+   ![Voorbeeld van een compatibel meldingsbericht in Intune](./media/actionsfornoncompliance-1.PNG)
 
 Nadat u klaar bent met het toevoegen van informatie, kiest u **Maken**. De sjabloon voor het meldingsbericht is klaar voor gebruik.
 
@@ -77,7 +77,7 @@ U kunt een actie toevoegen wanneer u nieuw nalevingsbeleid maakt of wanneer u ee
 1. Open in de [Azure Portal](https://portal.azure.com)**Microsoft Intune** en selecteer **Apparaatnaleving**.
 2. Selecteer **Beleid**, kies een van uw beleidsregels en selecteer vervolgens **Eigenschappen**. 
 
-  Heeft u nog geen beleid? Maak een beleid voor een [Android-](compliance-policy-create-android.md), [iOS-](compliance-policy-create-ios.md), [Windows-](compliance-policy-create-windows.md) platform of een ander platform.
+   Heeft u nog geen beleid? Maak een beleid voor een [Android-](compliance-policy-create-android.md), [iOS-](compliance-policy-create-ios.md), [Windows-](compliance-policy-create-windows.md) platform of een ander platform.
 
 3. Selecteer **Acties voor niet-nageleefd** en selecteer **Toevoegen** om de actieparameters in te voeren. U kunt de eerder gemaakte berichtsjabloon kiezen, extra ontvangers toevoegen en de planning voor de respijtperiode bijwerken. Bij het schema kunt u het aantal dagen (0-365) invoeren voor het afdwingen van het beleid voor voorwaardelijke toegang. Als u **0** aantal dagen opgeeft, blokkeert voorwaardelijke toegang **onmiddellijk** toegang tot bedrijfsbronnen.
 

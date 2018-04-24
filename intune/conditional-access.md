@@ -1,28 +1,28 @@
 ---
 title: Voorwaardelijke toegang met Microsoft Intune
-titlesuffix: 
-description: "Meer informatie over het definiëren van de voorwaarden waaraan gebruikers, apparaten en apps moeten voldoen voor toegang tot bedrijfsresources in Microsoft Intune."
-keywords: 
+titlesuffix: ''
+description: Meer informatie over het definiëren van de voorwaarden waaraan gebruikers, apparaten en apps moeten voldoen voor toegang tot bedrijfsresources in Microsoft Intune.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: a62166792570c5bb81391d05d1cbc3f8486543a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-conditional-access"></a>Wat is voorwaardelijke toegang?
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Voorwaardelijke toegang verwijst naar de manieren waarop u de apparaten en apps die daarvoor toestemming hebben, kunt beheren om verbinding te maken met uw e-mail en bedrijfsgegevens. In dit onderwerp vindt u meer informatie over apparaat- en appgebaseerde voorwaardelijke toegang en vindt u algemene scenario's voor het gebruiken van voorwaardelijke toegang met Intune.
 

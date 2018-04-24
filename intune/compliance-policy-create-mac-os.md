@@ -1,29 +1,29 @@
 ---
 title: Een nalevingsbeleid voor macOS-apparaten maken in Microsoft Intune
-titleSuffix: 
+titleSuffix: ''
 description: Maak een Microsoft Intune-nalevingsbeleid voor apparaten voor macOS-apparaten zodat u kunt opgeven aan welke vereisten een apparaat moet voldoen om te conformeren.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Een apparaatnalevingsbeleid maken voor macOS-apparaten in Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Een Intune-apparaatnalevingsbeleid voor macOS bepaalt de regels en instellingen waaraan een macOS-apparaat moet voldoen om te voldoen aan het beleid. U kunt deze beleidsregels gebruiken met voorwaardelijke toegang om toegang tot bedrijfsbronnen toe te staan of te blokkeren. U kunt ook apparaatrapporten krijgen en maatregelen voor niet-naleving treffen. U maakt nalevingsbeleid voor apparaten voor elk platform in Intune Azure Portal.
 
@@ -110,7 +110,7 @@ U kunt kiezen uit verschillende categorieën met verschillende instellingen bij 
 
 2. Nadat u zich hebt aangemeld, ziet u het **Azure-dashboard**.
 
-3. Kies **Alle services** in het linkermenu en typ dan **Intune** in het vak tekstfilter.
+3. Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
 
 4. Kies **Intune**. Vervolgens ziet u het **Intune-dashboard**.
 

@@ -1,37 +1,37 @@
 ---
 title: Uw Windows 10-apparaat inschrijven bij Intune | Microsoft Docs
 description: Een Windows 10 versie 1511-apparaat inschrijven in Intune
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ba0535e388ac730ad04cda898c2299f98686ff1d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: bc9a351b24e35359f628a9af9ac906ed0c41a6ff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Uw Windows 10-apparaat inschrijven bij Intune
 
   > [!NOTE]
   > Windows 10 werkt voor alle typen apparaten. Of u nu een desktop, een telefoon of een tablet gebruikt, de te volgen stappen zijn dezelfde, ook al zien ze er iets anders uit dan de afbeeldingen op deze pagina.
 
-1.  Ga naar **Start**.
+1. Ga naar **Start**.
 
-  - Ga op een **Windows 10 Desktop**-apparaat naar het **startmenu**.
-  - Ga op een **mobiel Windows 10-apparaat** naar het **startscherm** en swipe naar de lijst **Alle apps**.
+   - Ga op een **Windows 10 Desktop**-apparaat naar het **startmenu**.
+   - Ga op een **mobiel Windows 10-apparaat** naar het **startscherm** en swipe naar de lijst **Alle apps**.
 
 2. Open de app **Instellingen** door in het zoekvak te zoeken op 'instellingen'.
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23ae8afbf6c200f983ebee8a94fff42f65ec2486
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4d224ceb819b6b0b4be0596c46d7bb20a98ddd97
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Apparaten in bedrijfseigendom inschrijven met Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Apparaten in organisatie- of bedrijfseigendom kunnen op verschillende manieren worden ingeschreven voor beheer door Intune, afhankelijk van het type apparaat, hoe dit apparaat is aangeschaft en wat de behoeften van de organisatie zijn. Apparaten in bedrijfseigendom kunnen ook worden ingeschreven en beheerd door de bedrijfsportal-app te installeren, zoals in BYOD-scenario's (Bring Your Own Device).
 

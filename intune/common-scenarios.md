@@ -14,15 +14,15 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a9a6b9d5790708532d0c1bda03b5d2f6fd8e186
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: e9cf1b9c7d950707c268fd509c184be7709f53e3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Algemene manieren om Microsoft Intune te gebruiken
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Voordat u aan de slag gaat met implementatietaken, is het belangrijk om de Enterprise Mobility-belanghebbenden van uw bedrijf op één lijn te krijgen met de bedrijfsdoelen.  Dit is belangrijk als u nog nooit met Enterprise Mobility te maken hebt gehad, maar ook als u migreert vanaf een ander product.  
 

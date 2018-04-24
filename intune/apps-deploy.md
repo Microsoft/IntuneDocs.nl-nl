@@ -1,29 +1,29 @@
 ---
 title: Apps aan groepen toewijzen in Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Als u een app aan Microsoft Intune hebt toegevoegd, wilt u deze wellicht toewijzen aan groepen met gebruikers of apparaten.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: de95f5516298e8ade9e394fab8b05fc056651b0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Apps aan groepen toewijzen met Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Wanneer u een app aan Microsoft Intune hebt toegevoegd, kunt u deze toewijzen aan gebruikers en apparaten.
 
@@ -51,26 +51,26 @@ Apps kunnen worden toegewezen aan apparaten, ongeacht of ze worden beheerd door 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies **Mobiele apps** op de blade **Intune**.
-1. Kies in de workload **Mobiele apps** de optie **Apps** in de sectie **Beheren**.
-2. Kies de app die u wilt toewijzen op de blade met de lijst met apps.
-3. Kies op de app-specifieke blade **Overzicht** de optie **Toewijzingen** in de sectie **Beheren**.
-4. Kies **Groep toevoegen** om de blade **Groep toevoegen** weer te geven die bij de app hoort.
-5. Voor de specifieke app moet u een **toewijzingstype** selecteren. U hebt de volgende mogelijkheden:
-    - **Beschikbaar voor ingeschreven apparaten**: gebruikers installeren de app vanuit de bedrijfsportal-app of vanaf de website.
-    - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen met gebruikers van wie de apparaten niet zijn ingeschreven met Intune. Houd er rekening mee dat het app-type **Android for Work** geen ondersteuning biedt voor deze optie. 
-    - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen.
-    - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen.
+4. Kies in de workload **Mobiele apps** de optie **Apps** in de sectie **Beheren**.
+5. Kies de app die u wilt toewijzen op de blade met de lijst met apps.
+6. Kies op de app-specifieke blade **Overzicht** de optie **Toewijzingen** in de sectie **Beheren**.
+7. Kies **Groep toevoegen** om de blade **Groep toevoegen** weer te geven die bij de app hoort.
+8. Voor de specifieke app moet u een **toewijzingstype** selecteren. U hebt de volgende mogelijkheden:
+   - **Beschikbaar voor ingeschreven apparaten**: gebruikers installeren de app vanuit de bedrijfsportal-app of vanaf de website.
+   - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen met gebruikers van wie de apparaten niet zijn ingeschreven met Intune. Houd er rekening mee dat het app-type **Android for Work** geen ondersteuning biedt voor deze optie. 
+   - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen.
+   - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen.
 
-    > [!NOTE]
-    > **Alleen voor iOS-apps**: als u een iOS VPN-profiel hebt gemaakt met VPN-instellingen per app, kunt u het selecteren onder **VPN**. Als de app wordt uitgevoerd, wordt de VPN-verbinding geopend. Zie [VPN=instellingen voor iOS-apparaten](vpn-settings-ios.md) voor meer informatie.
+     > [!NOTE]
+     > **Alleen voor iOS-apps**: als u een iOS VPN-profiel hebt gemaakt met VPN-instellingen per app, kunt u het selecteren onder **VPN**. Als de app wordt uitgevoerd, wordt de VPN-verbinding geopend. Zie [VPN=instellingen voor iOS-apparaten](vpn-settings-ios.md) voor meer informatie.
 
-6. Selecteer **Opgenomen groepen** om de gebruikersgroepen te selecteren die worden beïnvloed door deze app-toewijzing.
-7. Klik op **Selecteren** wanneer u één of meer groepen hebt geselecteerd om op te nemen.
-8. Klik op **OK** op de blade **Toewijzen** om het selecteren van de op te nemen groepen te voltooien.
-9. Klik op **Groepen uitsluiten** als u gebruikersgroepen wilt uitsluiten zodat ze niet worden beïnvloed door deze app-toewijzing.
-10. Als u hebt besloten dat u groepen wilt uitsluiten, klikt u op **Selecteren** op de blade **Groepen selecteren**.
-11. Klik op **OK** op de blade **Groep toevoegen**.
-12. Klik op **Opslaan** op de blade **Toewijzingen** om uw toewijzingen op te slaan.
+9. Selecteer **Opgenomen groepen** om de gebruikersgroepen te selecteren die worden beïnvloed door deze app-toewijzing.
+10. Klik op **Selecteren** wanneer u één of meer groepen hebt geselecteerd om op te nemen.
+11. Klik op **OK** op de blade **Toewijzen** om het selecteren van de op te nemen groepen te voltooien.
+12. Klik op **Groepen uitsluiten** als u gebruikersgroepen wilt uitsluiten zodat ze niet worden beïnvloed door deze app-toewijzing.
+13. Als u hebt besloten dat u groepen wilt uitsluiten, klikt u op **Selecteren** op de blade **Groepen selecteren**.
+14. Klik op **OK** op de blade **Groep toevoegen**.
+15. Klik op **Opslaan** op de blade **Toewijzingen** om uw toewijzingen op te slaan.
 
 De app wordt nu toegewezen aan de groepen die u hebt geselecteerd. Zie [App-toewijzingen opnemen en uitsluiten](apps-inc-exl-assignments.md) voor meer informatie over het opnemen en uitsluiten van app-toewijzingen.
 

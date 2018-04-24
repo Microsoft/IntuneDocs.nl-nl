@@ -1,25 +1,25 @@
 ---
 title: U moet Symantec Endpoint Protection Mobile op uw Android-apparaat installeren | Microsoft Docs
 description: Lees hoe u SEP Mobile op uw Android-apparaat installeert.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 040b7bad4b62acffa5dad1606d5beb81efc56b68
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7194f63a3d9b34be00753a66b9929c033bd10b86
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Symantec Endpoint Protection Mobile op uw Android-apparaat installeren
 
@@ -45,13 +45,13 @@ Als u problemen met de installatie ondervindt, voert u de stappen voor probleemo
 
 8. SEP Mobile begint uw apparaat meteen te controleren op beveiligingsrisico's.
 
-  * Als SEP Mobile een beveiligingsrisico op uw apparaat vindt, worden er instructies weergegeven voor het oplossen van het probleem.
+   * Als SEP Mobile een beveiligingsrisico op uw apparaat vindt, worden er instructies weergegeven voor het oplossen van het probleem.
 
-  * Als er geen beveiligingsrisico's worden gevonden, worden alle drie bedreigingstypen in het groen weergegeven.
+   * Als er geen beveiligingsrisico's worden gevonden, worden alle drie bedreigingstypen in het groen weergegeven.
 
-    * Op het scherm **Apparaatdetails** in de bedrijfsportal wordt vermeld dat u nu voldoet aan de beveiligingsvereisten van uw bedrijf.
+     * Op het scherm **Apparaatdetails** in de bedrijfsportal wordt vermeld dat u nu voldoet aan de beveiligingsvereisten van uw bedrijf.
 
-    ![Uw apparaat voldoet nu aan het beleid](./media/mtd-device-now-compliant-android.png)
+     ![Uw apparaat voldoet nu aan het beleid](./media/mtd-device-now-compliant-android.png)
 
 ## <a name="if-the-installation-doesnt-work"></a>Als de installatie niet werkt
 

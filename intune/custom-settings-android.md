@@ -1,28 +1,28 @@
 ---
 title: Aangepaste instellingen toevoegen voor Android-apparaten Microsoft Intune - Azure | Microsoft Docs
 description: Een aangepast profiel toevoegen voor Android-apparaten om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel, per app een VPN-profiel maken of apps toestemming geven/blokkeren voor Samsung Knox Standard-apparaten in Microsoft Intune
-keywords: 
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa105cc96cd0fa7d8c6beb32cdb80b7782d9828c
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 0195e138b59fae019fa2bc02aadf211257a65cac
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-settings-for-android-devices---intune"></a>Aangepaste instellingen voor Android-apparaten - Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Aangepaste profielen gebruiken OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) om verschillende functies op Android-apparaten te configureren. Deze instellingen worden doorgaans gebruikt door fabrikanten van mobiele apparaten om functies op het apparaat te beheren.
 
@@ -43,11 +43,11 @@ Door een aangepast profiel te gebruiken, kunt u de volgende Android-instellingen
 4. Selecteer in **Aangepaste OMA-URI-instellingen****Toevoegen** en selecteer vervolgens **Rij toevoegen**.
 5. Voer de volgende eigenschappen in:
 
-  - **Naam**: voer een unieke naam in voor de OMA-URI-instelling, zodat u deze gemakkelijk kunt vinden.
-  - **Beschrijving**: voer een beschrijving in die een overzicht geeft van de instelling en eventuele andere belangrijke details.
-  - **Gegevenstype**: voer het gegevenstype in dat u voor deze OMA-URI-instelling gebruikt. Kies uit **Tekenreeks**, **Tekenreeks (XML)**, **Datum en tijd**, **Geheel getal**, **Drijvende komma** of **Booleaanse waarde**.
-  - **OMA-URI**: voer de gewenste OMA-URI in.
-  - **Waarde**: voer de waarde in die moet worden gekoppeld aan de OMA-URI die u hebt ingevoerd.
+   - **Naam**: voer een unieke naam in voor de OMA-URI-instelling, zodat u deze gemakkelijk kunt vinden.
+   - **Beschrijving**: voer een beschrijving in die een overzicht geeft van de instelling en eventuele andere belangrijke details.
+   - **Gegevenstype**: voer het gegevenstype in dat u voor deze OMA-URI-instelling gebruikt. Kies uit **Tekenreeks**, **Tekenreeks (XML)**, **Datum en tijd**, **Geheel getal**, **Drijvende komma** of **Booleaanse waarde**.
+   - **OMA-URI**: voer de gewenste OMA-URI in.
+   - **Waarde**: voer de waarde in die moet worden gekoppeld aan de OMA-URI die u hebt ingevoerd.
 
 6. Selecteer **OK** om uw wijzigingen op te slaan. Blijf, indien nodig, meer instellingen toevoegen.
 

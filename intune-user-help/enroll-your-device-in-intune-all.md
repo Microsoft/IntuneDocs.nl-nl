@@ -1,25 +1,25 @@
 ---
 title: Uw apparaat registreren bij Intune | Microsoft Docs
 description: Biedt koppelingen naar informatie over het registreren van verschillende apparaten in Intune
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: b706d74a0ecdafd14b9561be9671a4969bd2d846
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 93eeabf700a9783d24de67e7d07402719b20e8d3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-device-in-intune"></a>Uw apparaat registeren bij Intune
 

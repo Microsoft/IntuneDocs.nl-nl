@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6139b656c69b58bdbdd02e296f8a061dd598a1c6
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 512bd38802dbb97a74d3d19d74a7d5086784d327
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Aangepaste configuraties voor Microsoft Intune VPN-profielen
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="create-a-custom-configuration"></a>Een aangepaste configuratie maken
 U kunt aangepast Intune-configuratiebeleid gebruiken om VPN-profielen te maken voor:
@@ -39,13 +39,13 @@ Dit type beleid kan handig zijn wanneer het standaardbeleid voor Intune VPN niet
 
 ## <a name="to-create-a-custom-configuration-policy"></a>Een aangepast configuratiebeleid maken:
 
-   1. Kies in de [Intune-beheerconsole](https://manage.microsoft.com) **Beleid** > **Beleid toevoegen** > *Platform uitbreiden* > **Aangepaste configuratie** > **Beleid maken**.
-   2. Geef een naam op voor het beleid.
-   3. Kies **Toevoegen** voor elke URI-instelling die u wilt opgeven en verstrek de gevraagde informatie. Hier volgt een voorbeeld:
+1. Kies in de [Intune-beheerconsole](https://manage.microsoft.com) **Beleid** > **Beleid toevoegen** > *Platform uitbreiden* > **Aangepaste configuratie** > **Beleid maken**.
+2. Geef een naam op voor het beleid.
+3. Kies **Toevoegen** voor elke URI-instelling die u wilt opgeven en verstrek de gevraagde informatie. Hier volgt een voorbeeld:
 
    ![Dialoogvenster met aangepaste configuratie van een VPN-profiel](./media/Intune_Add_VPN_URI.png)
 
-   4.  Nadat u alle URI-instellingen hebt ingevoerd, kiest u **Beleid opslaan** en implementeert u vervolgens het beleid.
+4. Nadat u alle URI-instellingen hebt ingevoerd, kiest u **Beleid opslaan** en implementeert u vervolgens het beleid.
 
 Vervolgens [implementeert u het beleid](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy) op de gebruikelijke manier.
 

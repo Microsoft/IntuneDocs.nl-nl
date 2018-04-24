@@ -15,15 +15,15 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a5b09f855b6da65edf3c560725b339528f2bcfaa
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0297cb0b399d487f548bf6fdd9fb74946bbcb7b1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Android-Line-Of-Business-apps (LOB) toevoegen aan Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Een LOB-app is een app die u vanaf een app-installatiebestand aan Intune toevoegt. Deze app-typen worden doorgaans intern ontwikkeld. De LOB-app wordt door Intune op het apparaat van de gebruiker geïnstalleerd. 
 
@@ -74,7 +74,7 @@ De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app 
 
 ## <a name="step-5---update-a-line-of-business-app"></a>Stap 5: een Line-Of-Business-app bijwerken
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 > [!Note]
 > De Intune-service kan alleen een nieuw APK-bestand op het apparaat implementeren als u de tekenreeks android:versionCode in het bestand AndroidManifest.xml in uw APK-pakket verhoogt.

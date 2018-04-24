@@ -1,27 +1,27 @@
 ---
 title: Uw apparaat uit de bedrijfsportal verwijderen|Microsoft Docs
 description: Een apparaat uit de bedrijfsportal verwijderen
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4064b18a9553c3818008c0641b9428a03733f7c2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c7cd6380cbb596779a3094b18eef4e91b6161871
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Uw apparaat uit de bedrijfsportal verwijderen
 
@@ -29,17 +29,17 @@ Als u besluit dat u uw apparaat niet meer wilt laten beheren door uw bedrijf of 
 
 Ga als volgt te werk om uw apparaat te verwijderen:
 
-1.  Op de [Bedrijfsportal-website ](https://portal.manage.microsoft.com#HelpDeskDialog) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/Intune/whats-new/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
+1. Op de [Bedrijfsportal-website ](https://portal.manage.microsoft.com#HelpDeskDialog) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/Intune/whats-new/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
 
-  ![Een afbeelding van de Bedrijfsportal-website met een uitgebreid menu aan de linkerkant van het scherm met de knoppen Startpagina, Alle apps, Mijn apparaten, Helpdesk en Optie voor afmelden.](/media/iwp-expanded-sidebar.png)
+   ![Een afbeelding van de Bedrijfsportal-website met een uitgebreid menu aan de linkerkant van het scherm met de knoppen Startpagina, Alle apps, Mijn apparaten, Helpdesk en Optie voor afmelden.](/media/iwp-expanded-sidebar.png)
 
 2. Op de pagina __Mijn apparaten__ selecteert u de naam van het apparaat dat u wilt verwijderen.
 
     ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Het apparaat wordt in een pop-upvenster geopend. Klik op de knop **Verwijderen**.
+3. Het apparaat wordt in een pop-upvenster geopend. Klik op de knop **Verwijderen**.
 
-    ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportalwebsite, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/iwp-screen-with-all-options.png)
+   ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportalwebsite, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/iwp-screen-with-all-options.png)
 
 4. Lees het waarschuwingsbericht, en tik vervolgens op **Verwijderen** als u uw apparaat uit de bedrijfsportal wilt verwijderen.
 

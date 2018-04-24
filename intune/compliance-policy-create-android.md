@@ -1,30 +1,30 @@
 ---
 title: Een Android-nalevingsbeleid voor apparaten maken in Microsoft Intune
-titleSuffix: 
+titleSuffix: ''
 description: Maak een Microsoft Intune-nalevingsbeleid voor apparaten voor Android-apparaten zodat u kunt opgeven aan welke vereisten een apparaat moet voldoen om te conformeren.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 283685629ac1e268a66d82250273a17f9baa5d17
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 586672bf84be6e7bcd8d3b8618aab09088620eb1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Een apparaatnalevingsbeleid maken voor Android-apparaten in Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Een Intune-apparaatnalevingsbeleid voor Android bepaalt de regels en instellingen waaraan een Android-apparaat moet voldoen om te voldoen aan het beleid. U kunt deze beleidsregels gebruiken met voorwaardelijke toegang om toegang tot bedrijfsbronnen toe te staan of te blokkeren. U kunt ook apparaatrapporten krijgen en acties voor niet-naleving treffen. U maakt nalevingsbeleid voor apparaten voor elk platform in Intune Azure Portal. Zie [Aan de slag met apparaatnaleving](device-compliance-get-started.md) voor informatie over nalevingsbeleid en de vereisten die u moet afhandelen voordat u een nalevingsbeleid maakt.
 
@@ -44,7 +44,7 @@ Een Intune-apparaatnalevingsbeleid voor Android bepaalt de regels en instellinge
 
 ## <a name="to-assign-user-groups"></a>Gebruikersgroepen toewijzen
 
-Als u een nalevingsbeleid aan gebruikers wilt toewijzen, kiest u een beleid dat u hebt geconfigureerd. Bestaande beleidsregels vindt u in het deelvenster **Apparaatnaleving - Beleid**.
+Als u een nalevingsbeleid aan gebruikers wilt toewijzen, kiest u een beleid dat u hebt geconfigureerd. Bestaande beleidsregels vindt u in het deelvenster **Apparaatnaleving - beleid**.
 
 1. Kies het beleid en kies **Toewijzingen**. Hiermee opent u het deelvenster waar u **Azure Active Directory-beveiligingsgroepen** kunt selecteren en aan het beleid kunt toewijzen.
 2. Kies **Geselecteerde groepen** om het deelvenster met de Azure AD-beveiligingsgroepen te openen. Hier vindt u de beveiligingsgroepen in uw Azure Active Directory.  Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen en kies **Opslaan** om het beleid te implementeren op gebruikers.
@@ -70,8 +70,6 @@ Voor sideloading-toepassingen moet de instelling **Onbekende bronnen** zijn inge
   - **Laag**: het apparaat wordt als compatibel geëvalueerd als er bedreigingen van een laag niveau aanwezig zijn. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
   - **Gemiddeld**: Het apparaat wordt als compatibel geëvalueerd als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als bedreigingen met hoog niveau worden aangetroffen op het apparaat, wordt het apparaat als niet-compatibel beoordeeld.
   - **Hoog**: dit is de minst veilige optie. In principe zijn hierdoor alle bedreigingsniveaus toegestaan. Het is wellicht het beste als u deze oplossing alleen gebruikt voor rapportagedoeleinden.
-
-Zie [De regel Device Threat Protection inschakelen in het nalevingsbeleid](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy) voor meer informatie.
 
 ## <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
 

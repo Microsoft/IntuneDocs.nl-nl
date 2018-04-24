@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2da88a6146080014b79fbdc1b8c553eae5705195
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: 070256ce5267189731c3565f4332a3bd57c326f5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>De modus Apparaat verloren inschakelen op iOS-apparaten met Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Met de apparaatactie **Apparaat verloren** schakelt u de modus voor verloren apparaten in op verloren of gestolen iOS-apparaten. Met deze modus kunt u een bericht en een telefoonnummer opgeven die op het vergrendelingsscherm van het apparaat worden weergeven. Als u de modus Apparaat verloren apparaat wilt gebruiken, moet het apparaat in een iOS-apparaat in bedrijfseigendom zijn waarop de supervisiemodus is ingeschakeld.
 

@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: f5f413ed050bd5f5620d0e15d5584a7db06eaaff
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2b59ed38329462ad8d8db604979c8eb725f7973a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Verklarende woordenlijst voor Microsoft Intune
 Kom meer te weten over de betekenis van termen die veel in Microsoft Intune worden gebruikt.
@@ -39,11 +39,13 @@ Kom meer te weten over de betekenis van termen die veel in Microsoft Intune word
 |Azure-portal|De nieuwe console voor Intune [Meer informatie](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|[Bring your own device](/intune/device-enrollment). Gebruikers kunnen de Intune-bedrijfsportal-app op hun apparaten installeren en deze vervolgens inschrijven, zodat ze toegang krijgen tot bedrijfsresources zoals e‑mail, bedrijfsapps, bedrijfsgegevens en ondersteuning.|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |Certificaatprofiel|U gebruikt dit beleidstype voor het [beveiligen van toegang tot bedrijfsresources](/intune/certificates-configure) met certificaten wanneer u Wi‑Fi-, e‑mail- of VPN-profielen gebruikt.|
@@ -55,6 +57,7 @@ Kom meer te weten over de betekenis van termen die veel in Microsoft Intune word
 |Aangepast beleid|U [gebruikt dit beleid](/intune/custom-settings-configure) wanneer een algemeen configuratiebeleid geen ingebouwde instelling bevat die voldoet aan uw behoeften. U kunt mogelijk een aangepast beleid gebruiken om een instelling op een andere manier, bijvoorbeeld de Apple Configurator of OMA-URI, te maken.|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |Implementatie|De handeling waarmee een app of een beleid naar een door u beheerd apparaat of door u beheerde gebruiker wordt verzonden. Deze actie is nu bekend als *toewijzen*.|
@@ -62,6 +65,7 @@ Kom meer te weten over de betekenis van termen die veel in Microsoft Intune word
 |Apparaatprofielen|Met [deze profielen](/intune/device-profile-create) kunt u een breed scala aan beveiliging, functies en toegangsinstellingen configureren op apparaten die u beheert.|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |E-mailprofiel|Dit beleid kan worden gebruikt voor het instellen van [toegangsinstellingen voor e-mail ](/intune/email-settings-configure) op mobiele apparaten, zodat de eindgebruiker maar een minimum aan installatiehandelingen hoeft te verrichten.|
@@ -70,21 +74,25 @@ Kom meer te weten over de betekenis van termen die veel in Microsoft Intune word
 |Inschrijven|Microsoft Intune maakt gebruik van [inschrijving](/intune/device-enrollment) om apparaten onder beheer te brengen en toegang tot resources toe te staan.|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|Een [Microsoft-service](https://technet.microsoft.com/library/mt228265.aspx) voor Intune-gebruikers met 150 licenties in een in aanmerking komend abonnement. Microsoft-specialisten gebruiken deze service om u te helpen aan de slag te gaan met Intune.|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |Groepen|Door groepen te gebruiken kunt u op een [logische manier gebruikers of apparaten samenbrengen](/intune/groups-get-started). U kunt bijvoorbeeld een groep maken van alle Windows-computers. Vervolgens kunt u apps en -profielen toewijzen aan deze groepen.|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |Hybride|Een configuratie waarbij u apparaten kunt beheren die zijn ingeschreven bij Intune via de System Center Configuration Manager-console.|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Azure Portal|Azure Portal, die u gebruikt voor de meeste beheerbewerkingen van Intune.|
@@ -93,11 +101,13 @@ Kom meer te weten over de betekenis van termen die veel in Microsoft Intune word
 |Inventaris|Wordt gebruikt om de [hardware en software weer te geven die is geïnstalleerd](/intune/device-inventory) op apparaten die u beheert.|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |Kioskmodus|Deze modus wordt geconfigureerd als onderdeel van een [apparaatbeperkingsprofiel](/intune/device-restrictions-configure) en stelt u in staat apparaten te vergrendelen. U zou bijvoorbeeld een detailhandelapparaat zo kunnen configureren dat er slechts enkele apps op mogen worden uitgevoerd.|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Managed Browser|Dit is een [browsertoepassing](/intune/app-configuration-managed-browser) die u in uw organisatie kunt toewijzen met Intune. Een beheerde-browserbeleid bevat een lijst met toegestane of een lijst met geblokkeerde websites waarmee de websites die gebruikers van de beheerde browser kunnen bezoeken, worden beperkt.|
@@ -110,17 +120,20 @@ Kom meer te weten over de betekenis van termen die veel in Microsoft Intune word
 
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Een standaardprotocol voor het beheer van apparaten dat door veel hardwarefabrikanten wordt gebruikt om het beheer van functies van mobiele apparaten en pc's mogelijk te maken.|
 |OMA-URI|Open Mobile Alliance Uniform Resource Identifier. Met deze items kunnen instellingen voor afzonderlijke apparaten worden geïdentificeerd die aan de OMA-DM-standaard voldoen. De instellingen kunnen worden gebruikt in [aangepaste Intune-profielen](/intune/custom-settings-configure) wanneer er geen ingebouwde instelling is die aan uw behoeften voldoet.|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |Wachtwoordcode opnieuw instellen|Een Intune-functie waarmee u de eindgebruiker kunt dwingen [de wachtwoordcode opnieuw in te stellen](/intune/device-passcode-reset) op ondersteunde apparaten.|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |Vergrendelen op afstand|Een Intune-functie waarmee u [ondersteunde apparaten kunt vergrendelen](/intune/device-remote-lock), zelfs als u niet in het bezit bent van het apparaat.|
@@ -128,6 +141,7 @@ Kom meer te weten over de betekenis van termen die veel in Microsoft Intune word
 
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |Selectief wissen|Met [selectief wissen](/intune/device-company-data-remove) worden alleen bedrijfsgegevens van een apparaat verwijderd die zijn beveiligd met het beveiligingsbeleid voor apps, waaronder instellingen en e-mailprofielen. Bij Selectief wissen blijven de persoonlijke gegevens van de gebruiker op het apparaat behouden.|
@@ -135,6 +149,7 @@ Kom meer te weten over de betekenis van termen die veel in Microsoft Intune word
 |Abonnement|De overeenkomst waarmee u toegang hebt tot een Intune-tenant.|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Een toepassing van derden die samen met Intune [mogelijkheden biedt voor hulp op afstand](/intune/device-profile-android-teamviewer) voor Android-apparaten die u beheert met Intune.|
@@ -142,12 +157,15 @@ Kom meer te weten over de betekenis van termen die veel in Microsoft Intune word
 |Voorwaarden|Een beleidstype dat u toewijst aan gebruikers en dat informatie bevat die gebruikers moeten [lezen en accepteren](/intune/terms-and-conditions-create) voordat ze de bedrijfsportal kunnen gebruiken om zich in te schrijven en toegang tot hun werk te krijgen.|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |Apps en boeken die zijn gekocht via het volume-aankoopprogramma|Sommige app stores bieden u de mogelijkheid meerdere licenties te kopen voor een app die of een boek dat u in uw bedrijf wilt gebruiken. U kunt Intune gebruiken om apps en boeken te beheren die u [met een dergelijk programma hebt gekocht](/intune/vpp-apps). U kunt de gegevens voor volumelicenties uit de appstores importeren, bijhouden hoeveel licenties u hebt gebruikt en voorkomen dat u meer exemplaren van de app installeert dan het aantal waarover u beschikt.|
 |VPN-profiel|Een beleid dat [VPN-instellingen](/intune/vpn-settings-configure) toewijst naar apparaten die u beheert, zodat het aantal installatiehandelingen die eindgebruikers moeten uitvoeren, zo klein mogelijk wordt gehouden.|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Wi-Fi-profiel|Een beleid dat [draadloze netwerkinstellingen](/intune/wi-fi-settings-configure) toewijst aan apparaten, waarmee gebruikers verbinding kunnen maken met uw bedrijfsnetwerk zonder dat ze de instellingen hoeven te kennen of te configureren.
+
+|               |                                                                                                                                                                                                 |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wi-Fi-profiel | Een beleid dat [draadloze netwerkinstellingen](/intune/wi-fi-settings-configure) toewijst aan apparaten, waarmee gebruikers verbinding kunnen maken met uw bedrijfsnetwerk zonder dat ze de instellingen hoeven te kennen of te configureren. |
+

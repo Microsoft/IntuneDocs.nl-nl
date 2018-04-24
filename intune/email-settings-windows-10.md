@@ -1,27 +1,27 @@
 ---
 title: Microsoft Intune-instellingen voor e-mail op apparaten met Windows 10
-titleSuffix: 
+titleSuffix: ''
 description: Meer informatie over de Microsoft Intune-instellingen die u kunt gebruiken om e-mailinstellingen op apparaten met Windows 10 te configureren.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b02579895123995f9b4205d64e9bf67ce04de746
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 4a0c3eaf0643ede02b8c084d172b7a51d251b3a3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>E-mailprofielinstellingen in Microsoft Intune voor apparaten met Windows 10
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In dit artikel ziet u de e-mailprofielinstellingen die u kunt configureren voor uw apparaten met Windows 10.
 

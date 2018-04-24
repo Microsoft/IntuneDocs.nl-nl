@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 473a0b265a9483cbd6f6ffb15074fad85e03e264
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: bc3d46800087b33c6cebcbb50f7c16eb4a056c18
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Verloren of gestolen iOS-apparaten zoeken met Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Gebruik de actie **Apparaat zoeken** om de locatie van een verloren of gestolen iOS-apparaat op een kaart weer te geven. Het apparaat moet een iOS-apparaat in bedrijfseigendom zijn, dat via het apparaatinschrijvingsprogramma is ingeschreven en waarop de supervisiemodus is ingeschakeld. Voordat u deze actie gebruikt, zorgt u ervoor dat voor het apparaat de [modus Apparaat verloren](device-lost-mode.md) is ingeschakeld.
 

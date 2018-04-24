@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Intune-certificaatprofielen configureren
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Nadat u de infrastructuur en certificaten hebt geconfigureerd zoals beschreven in [De certificaatinfrastructuur voor SCEP configureren](configure-certificate-infrastructure-for-scep.md) of [De certificaatinfrastructuur voor PFX configureren](configure-certificate-infrastructure-for-pfx.md), kunt u certificaatprofielen maken. Dit is het proces:
 
@@ -92,39 +92,39 @@ Nadat u een vertrouwd CA-certificaatprofiel hebt gemaakt, maakt u SCEP- of PFX-c
 
 -  Windows Phone 8.1 en hoger
 
-2.  Een beleid voor een **SCEP-certificaatprofiel** toevoegen
+2. Een beleid voor een **SCEP-certificaatprofiel** toevoegen
 
-    Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+   Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Volg de instructies op de profielconfiguratiepagina om de instellingen voor het SCEP-certificaatprofiel te configureren.
-    > [!NOTE]
-    >
-    > Selecteer onder **Indeling van onderwerpnaam** de optie **Aangepast** om een aangepaste indeling voor de naam van de certificaathouder op te geven (alleen in iOS-profielen).
-    >
-    > De twee variabelen die momenteel worden ondersteund voor de aangepaste indeling zijn `Common Name (CN)` en `Email (E)`. Door een combinatie van deze twee variabelen met statische tekenreeksen te gebruiken, kunt u een aangepaste indeling voor de naam van een certificaathouder maken, bijvoorbeeld:
+3. Volg de instructies op de profielconfiguratiepagina om de instellingen voor het SCEP-certificaatprofiel te configureren.
+   > [!NOTE]
+   > 
+   > Selecteer onder **Indeling van onderwerpnaam** de optie **Aangepast** om een aangepaste indeling voor de naam van de certificaathouder op te geven (alleen in iOS-profielen).
+   > 
+   > De twee variabelen die momenteel worden ondersteund voor de aangepaste indeling zijn `Common Name (CN)` en `Email (E)`. Door een combinatie van deze twee variabelen met statische tekenreeksen te gebruiken, kunt u een aangepaste indeling voor de naam van een certificaathouder maken, bijvoorbeeld:
+   > 
+   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   > 
+   > In dit voorbeeld heeft de beheerder een indeling voor de naam van een certificaathouder gemaakt, waarin naast de variabelen `CN` en `E` gebruik wordt gemaakt van tekenreeksen voor de waarden Organisatie-eenheid, Organisatie, Locatie, Regio en Land. De [functie CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) geeft een lijst met ondersteunde tekenreeksen.
 
-    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
-
-    > In dit voorbeeld heeft de beheerder een indeling voor de naam van een certificaathouder gemaakt, waarin naast de variabelen `CN` en `E` gebruik wordt gemaakt van tekenreeksen voor de waarden Organisatie-eenheid, Organisatie, Locatie, Regio en Land. De [functie CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) geeft een lijst met ondersteunde tekenreeksen.
-
-4.  Kies **Beleid opslaan**.
+4. Kies **Beleid opslaan**.
 
 Het nieuwe beleid wordt weergegeven in de werkruimte **Beleid**. U kunt het nu implementeren.
 
 ### <a name="to-create-a-pfx-certificate-profile"></a>Een PFX-certificaatprofiel maken
 
-1.  Ga naar de [Intune-beheerconsole](https://manage.microsoft.com), kies **Beleid** &gt; **Beleid toevoegen** en kies vervolgens een platform voor apparaten. PFX-certificaten worden ondersteund voor:
-  - Android 4 en hoger
-  - Android for Work
-  - Windows 10 en hoger
-  - Windows Phone 10 en hoger
-  - iOS 8.0 en hoger    
+1. Ga naar de [Intune-beheerconsole](https://manage.microsoft.com), kies **Beleid** &gt; **Beleid toevoegen** en kies vervolgens een platform voor apparaten. PFX-certificaten worden ondersteund voor:
+   - Android 4 en hoger
+   - Android for Work
+   - Windows 10 en hoger
+   - Windows Phone 10 en hoger
+   - iOS 8.0 en hoger    
 
 
-2.  Een beleid voor een **PFX-certificaatprofiel** toevoegen.
-      Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-3.  Geef de benodigde informatie op het beleidsformulier op.
-4.  Kies **Beleid opslaan**.
+2. Een beleid voor een **PFX-certificaatprofiel** toevoegen.
+     Meer informatie: [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+3. Geef de benodigde informatie op het beleidsformulier op.
+4. Kies **Beleid opslaan**.
 
 Het nieuwe beleid wordt weergegeven in de werkruimte **Beleid**. U kunt het nu implementeren.
 

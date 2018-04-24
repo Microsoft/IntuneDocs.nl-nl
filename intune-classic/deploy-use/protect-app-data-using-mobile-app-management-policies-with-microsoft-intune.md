@@ -1,29 +1,29 @@
 ---
 title: App-gegevens beveiligen met MAM-beleid
-description: "In dit onderwerp wordt uitgelegd hoe Mobile Application Management-beleid kan helpen bij het beveiligen van uw bedrijfsgegevens, het voorkomen van gegevensverlies, en het gescheiden houden van privégegevens en werkgegevens."
-keywords: 
+description: In dit onderwerp wordt uitgelegd hoe Mobile Application Management-beleid kan helpen bij het beveiligen van uw bedrijfsgegevens, het voorkomen van gegevensverlies, en het gescheiden houden van privégegevens en werkgegevens.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: dcdee874e42aa9511c09fda43a8cc662afaea38a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Bescherm app-gegevens met beveiligingsbeleid voor apps met Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Hoe u app-gegevens kunt beveiligen
 Uw werknemers gebruiken mobiele apparaten voor zowel privé- als werktaken. U wilt er niet alleen voor zorgen dat uw werknemers productief kunnen zijn, maar u wilt ook bedoeld of onbedoeld gegevensverlies voorkomen.  Daarnaast wilt u de bedrijfsgegevens die werknemers gebruiken, kunnen beschermen door gebruik te maken van apparaten die u niet beheert.

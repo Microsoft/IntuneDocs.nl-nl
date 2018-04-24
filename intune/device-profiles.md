@@ -14,15 +14,15 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e92a10f51fb403c802c1c6d3ea79ccf49a1e93fb
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 0b942f794136ce1a1d7851b0b04d6df70ea7174c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Wat zijn Microsoft Intune-apparaatprofielen?
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt inschakelen of uitschakelen. Deze instellingen en functies worden beheerd met behulp van profielen. Enkele profielvoorbeelden zijn: 
 

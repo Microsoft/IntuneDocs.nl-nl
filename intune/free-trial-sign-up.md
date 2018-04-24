@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: b68c2d93071d545bf25f7810a6908099988fb902
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registreren voor een gratis proefversie van Microsoft Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/17/2018
 Dit artikel begeleidt u bij het aanmelden voor een proefversie van de zelfstandige versie van Intune voor Azure Portal.
 
 1. Ga naar de [registratiepagina voor Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) en vul het formulier in om u aan te melden voor een proefabonnement.
-* Als u een werk- of schoolaccount hebt en dit wilt gebruiken voor de proefversie van Intune, volgt u [deze aanmeldingsinstructies](/intune/account-sign-up).
+2. Als u een werk- of schoolaccount hebt en dit wilt gebruiken voor de proefversie van Intune, volgt u [deze aanmeldingsinstructies](/intune/account-sign-up).
 
 * Als de landinstellingen voor de meeste IT-activiteiten en van de meeste gebruikers afwijkt van die van u, kunt u de desbetreffende landinstellingen selecteren onder **Where's your company located?** (Waar bevindt uw bedrijf zich?).
 

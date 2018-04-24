@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25bdc7da543cdc38ccbe70651c145750ba96c082
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Exchange ActiveSync-beleidsinstellingen in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Configureer met het Microsoft Intune **Exchange ActiveSync-beleid** de instellingen om verschillende functies te regelen op apparaten die worden beheerd door Exchange ActiveSync.
 
@@ -44,10 +44,11 @@ Configureer met het Microsoft Intune **Exchange ActiveSync-beleid** de instellin
 
 ## <a name="encryption-settings"></a>Versleutelingsinstellingen
 
-|Naam van de instelling|Details|
-|----------------|---|
-|**Versleuteling vereisen op mobiele apparaat**<sup>1</sup>|Vereist dat de gegevens op een apparaat moeten worden gecodeerd als dit wordt ondersteund.<br><br>Voor Windows Phone 8-apparaten moet u dit instellen op **Ja**.<br /><br />Schakel de instelling **Wachtwoord vereist voor het ontgrendelen van mobiele apparaten** in om versleuteling van iOS-apparaten in te schakelen.|
-|**Versleuteling vereisen op opslagkaarten**|Vereist dat gegevens die zijn opgeslagen op externe opslag, zoals een SD-kaart, worden versleuteld (op ondersteunde apparaten).
+|                           Naam van de instelling                           |                                                                                                                                    Details                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Versleuteling vereisen op mobiele apparaat</strong><sup>1</sup> | Vereist dat de gegevens op een apparaat moeten worden gecodeerd als dit wordt ondersteund.<br><br>Voor Windows Phone 8-apparaten moet u dit instellen op <strong>Ja</strong>.<br /><br />Schakel de instelling <strong>Wachtwoord vereist voor het ontgrendelen van mobiele apparaten</strong> in om versleuteling van iOS-apparaten in te schakelen. |
+|       <strong>Versleuteling vereisen op opslagkaarten</strong>       |                                                                                  Vereist dat gegevens die zijn opgeslagen op externe opslag, zoals een SD-kaart, worden versleuteld (op ondersteunde apparaten).                                                                                  |
+
 <sup>1</sup> Aanvullende informatie voor apparaten met Windows 8.1
 
 -   Als u versleuteling wilt afdwingen op apparaten met Windows 8.1, moet u op elk apparaat de [December 2014 MDM-clientupdate voor Windows](https://support.microsoft.com/kb/3013816) installeren.

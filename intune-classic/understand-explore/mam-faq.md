@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 816a235136d91f2691e6be442036515544c004b2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobile Application Management (MAM) en de bescherming van apps met Intune.
 
@@ -61,23 +61,23 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 
 **Wat zijn de aanvullende vereisten voor het gebruik van de [mobiele app van Outlook](https://www.microsoft.com/outlook-com/mobile/)?**
 
-  1. Eindgebruikers moeten de mobiele app van Outlook op hun apparaat hebben geïnstalleerd.
+1. Eindgebruikers moeten de mobiele app van Outlook op hun apparaat hebben geïnstalleerd.
 
-  2. De eindgebruiker moet een [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online)-postvak en -licentie aan het Azure Active Directory-account hebben gekoppeld.
+2. De eindgebruiker moet een [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online)-postvak en -licentie aan het Azure Active Directory-account hebben gekoppeld.
 
-  >[!NOTE]
-  > De mobiele app van Outlook ondersteunt momenteel alleen Microsoft Exchange Online en biedt geen ondersteuning voor Exchange On-Premises of Exchange in Office 365 Dedicated.
+   >[!NOTE]
+   > De mobiele app van Outlook ondersteunt momenteel alleen Microsoft Exchange Online en biedt geen ondersteuning voor Exchange On-Premises of Exchange in Office 365 Dedicated.
 
 **Wat zijn de aanvullende vereisten voor het gebruik van de apps [Word, Excel en PowerPoint](https://products.office.com/business/office)?**
 
-  1. Eindgebruikers moeten een licentie voor [Office 365 Business of Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) aan hun Azure Active Directory-account hebben gekoppeld. Het abonnement moet de Office-apps voor mobiele apparaten bevatten en kan een cloudopslagaccount met [OneDrive voor Bedrijven](https://onedrive.live.com/about/business/) bevatten. Office 365-licenties kunnen aan de hand van de volgende [instructies](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) worden toegewezen in de [Office-portal](http://portal.office.com).
+1. Eindgebruikers moeten een licentie voor [Office 365 Business of Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) aan hun Azure Active Directory-account hebben gekoppeld. Het abonnement moet de Office-apps voor mobiele apparaten bevatten en kan een cloudopslagaccount met [OneDrive voor Bedrijven](https://onedrive.live.com/about/business/) bevatten. Office 365-licenties kunnen aan de hand van de volgende [instructies](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) worden toegewezen in de [Office-portal](http://portal.office.com).
 
-  2. De eindgebruiker moet een beheerde locatie hebben die is geconfigureerd met de gedetailleerde functie voor opslaan als, onder de instelling Opslaan als voorkomen van het beveiligingsbeleid voor toepassingen. Bijvoorbeeld, als OneDrive de beheerde locatie is, moet de [OneDrive](https://onedrive.live.com/about/)-app worden geconfigureerd in de Word-, Excel- of PowerPoint-app van de eindgebruiker.
+2. De eindgebruiker moet een beheerde locatie hebben die is geconfigureerd met de gedetailleerde functie voor opslaan als, onder de instelling Opslaan als voorkomen van het beveiligingsbeleid voor toepassingen. Bijvoorbeeld, als OneDrive de beheerde locatie is, moet de [OneDrive](https://onedrive.live.com/about/)-app worden geconfigureerd in de Word-, Excel- of PowerPoint-app van de eindgebruiker.
 
-  3. Als OneDrive de beheerde locatie is, moet de app het doel zijn van het app-beveiligingsbeleid dat voor de eindgebruiker is geïmplementeerd.
+3. Als OneDrive de beheerde locatie is, moet de app het doel zijn van het app-beveiligingsbeleid dat voor de eindgebruiker is geïmplementeerd.
 
-  >[!NOTE]
-  > De mobiele Office-apps bieden momenteel alleen ondersteuning voor SharePoint Online en niet voor SharePoint On-Premises.
+   >[!NOTE]
+   > De mobiele Office-apps bieden momenteel alleen ondersteuning voor SharePoint Online en niet voor SharePoint On-Premises.
 
 **Waarom is een beheerde locatie (bijvoorbeeld OneDrive) voor Office nodig?** Intune markeert alle gegevens in de app als 'zakelijk' of 'persoonlijk'. Gegevens worden als 'zakelijk' beschouwd wanneer ze afkomstig zijn van een bedrijfslocatie. Voor Office-apps worden de volgende locaties door Intune beschouwd als bedrijfslocaties: e-mail (Exchange) of cloudopslag (OneDrive-app met een OneDrive voor Bedrijven-account).
 
@@ -124,15 +124,15 @@ Voor MAM (op iOS) kan momenteel een pincode op toepassingsniveau worden gebruikt
 
 **Hoe worden gegevens extern gewist met Intune?** In Intune kunnen app-gegevens op drie verschillende manieren worden gewist: volledig apparaat wissen, selectief wissen voor MDM en selectief wissen voor MAM. Zie [Uw gegevens beveiligen met volledig wissen of selectief wissen met Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) voor meer informatie over wissen op afstand voor MDM. Zie [Bedrijfsgegevens van beheerde apps wissen met Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md) voor meer informatie over selectief wissen met MAM.
 
-  1. **Wat is volledig wissen?** Met [Volledig wissen](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) verwijdert u alle gebruikersgegevens en instellingen van **het apparaat** door het apparaat terug te zetten op de standaardfabrieksinstellingen. Het apparaat wordt uit Intune verwijderd.
-  >[!NOTE]
-  > Alleen apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM) kunnen volledig worden gewist.
+1. **Wat is volledig wissen?** Met [Volledig wissen](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) verwijdert u alle gebruikersgegevens en instellingen van **het apparaat** door het apparaat terug te zetten op de standaardfabrieksinstellingen. Het apparaat wordt uit Intune verwijderd.
+   >[!NOTE]
+   > Alleen apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM) kunnen volledig worden gewist.
 
-  2. **Wat is selectief wissen voor MDM?** Zie [Uw gegevens beveiligen met volledig wissen of selectief wissen met Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) voor meer informatie over selectief wissen.
+2. **Wat is selectief wissen voor MDM?** Zie [Uw gegevens beveiligen met volledig wissen of selectief wissen met Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) voor meer informatie over selectief wissen.
 
-  3. **Wat is selectief wissen voor MAM?** Bij selectief wissen voor MAM worden gegevens van bedrijfs-apps gewoon gewist uit een app. De aanvraag wordt gestart via de Intune Azure-portal. Zie [Bedrijfsgegevens van beheerde apps wissen met Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md) voor meer informatie over het initiëren van een wisaanvraag.
+3. **Wat is selectief wissen voor MAM?** Bij selectief wissen voor MAM worden gegevens van bedrijfs-apps gewoon gewist uit een app. De aanvraag wordt gestart via de Intune Azure-portal. Zie [Bedrijfsgegevens van beheerde apps wissen met Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md) voor meer informatie over het initiëren van een wisaanvraag.
 
-  4. **Hoe snel wordt selectief wissen voor MAM uitgevoerd?** Als de gebruiker de app gebruikt wanneer selectief wissen wordt gestart, controleert de Intune App SDK om de 30 minuten op aanvragen van de MAM-service voor selectief wissen. Daarnaast wordt er gecontroleerd of er een aanvraag voor selectief wissen is verzonden wanneer de gebruiker de app voor de eerste keer start en zich aanmeldt met een werk- of schoolaccount.
+4. **Hoe snel wordt selectief wissen voor MAM uitgevoerd?** Als de gebruiker de app gebruikt wanneer selectief wissen wordt gestart, controleert de Intune App SDK om de 30 minuten op aanvragen van de MAM-service voor selectief wissen. Daarnaast wordt er gecontroleerd of er een aanvraag voor selectief wissen is verzonden wanneer de gebruiker de app voor de eerste keer start en zich aanmeldt met een werk- of schoolaccount.
 
 **Waarom kunnen er geen on-premises services (on-prem) worden gebruikt in combinatie met apps die zijn beveiligd met Intune?** Voor de app-beveiliging van Intune moet de identiteit van de gebruiker voor de toepassing en Intune App SDK consistent zijn. Dit kan alleen worden gegarandeerd via moderne verificatie. Er zijn scenario's waarin apps met een on-premisses configuratie werken, maar deze zijn niet consistent en kunnen ook niet worden gegarandeerd.
 

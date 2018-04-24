@@ -1,28 +1,28 @@
 ---
 title: Pc's beheren met clientsoftware
 description: Beheer Windows-pc's door de Intune-clientsoftware te installeren.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 773e4d551a8ea278c60107a279e29b83f0a1596f
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 8790863f4cfb3b0b8fdcf4f7aedbfc338ae64667
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows-pc's beheren als computers via de Intune-softwareclient
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune biedt voor organisaties een uitgebreide oplossing voor het beheren van mobiele apparaten. Met Intune kunt u Windows-pc's beheren als mobiele apparaten met behulp van de moderne mogelijkheden voor apparaatbeheer die zijn ingebouwd in Windows 10. Als u wilt voldoen aan de beheerbehoeften van uw organisatie, kan Intune ook Windows-pc's beheren als computers met de Intune-softwareclient. Bij deze beheermethode wordt gebruikgemaakt van traditionele mogelijkheden voor computerbeheer uit het oude Windows-besturingssysteem.
 

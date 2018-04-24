@@ -14,15 +14,15 @@ ms.assetid: 3c10f4c9-520b-4864-92fc-a45a9f640ad4
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3d6ac1e0460681b315916327cdfeb2b6b1499d23
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58bdb48d96274d002d9bd724827e5a7e4012aa83
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Hardware- en software-inventaris voor Windows-computers weergeven
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune verzamelt gedetailleerde informatie over de hardware en software van desktops die u als pc's beheert met behulp van de Intune-softwareclient. Gebruik de informatie in de volgende procedures om het volgende te leren maken:
 

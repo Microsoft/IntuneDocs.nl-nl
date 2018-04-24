@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ef4eac0e0841ba20a966f2ee30ed51659f25afa3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 6e4afa232309572016c3f585ecaf27032cafc7ba
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>Snelstartgids: Mobiele apps naar uw gebruikers publiceren
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune kan u helpen de productiviteit van uw eindgebruikers te verhogen door hen snel en eenvoudig toegang te geven tot de mobiele apps en de bureaublad-apps die ze nodig hebben van de apparaten van hun keuze. Door apps gemakkelijk beschikbaar te maken voor eindgebruikers, besteden gebruikers minder tijd en moeite aan het zoeken naar en het installeren van de juiste apps, waardoor er minder met de helpdesk wordt gebeld als gebruikers de apps niet kunnen vinden die ze nodig hebben.   
 

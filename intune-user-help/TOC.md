@@ -128,7 +128,7 @@
 ### [Een apparaat opnieuw instellen](reset-erase-your-device-cpwebsite.md)
 ### [Een apparaat versleutelen](encrypt-your-device-windows.md)
 ### [Een wachtwoord instellen of wijzigen](set-or-change-your-password-windows.md)
-### [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-windows.md)
+### [Uw apparaat uit Intune verwijderen](unenroll-your-device-from-intune-windows.md)
 ### [Wat gebeurt er als u de inschrijving van uw apparaat ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [Wat gebeurt er als u uw apparaat opnieuw instelt?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-windows.md)

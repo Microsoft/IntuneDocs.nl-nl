@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4e53acad9fb2cf1e6c18b71900c6b671dd031e98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Apps toevoegen voor geregistreerde apparaten
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Voordat u een app kunt implementeren of beheren, moet u de app toevoegen aan Microsoft Intune. In dit onderwerp wordt beschreven hoe u apps voor geregistreerde apparaten toevoegt.
 
@@ -34,32 +34,32 @@ Voordat u een app kunt implementeren of beheren, moet u de app toevoegen aan Mic
 ## <a name="add-the-app"></a>De app toevoegen
 U gebruikt de uitgever van Intune-software om de eigenschappen van de app te configureren en om, indien van toepassing, de app te uploaden naar de opslagruimte in de cloud. Gebruik de volgende procedure:
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Apps** &gt; **Apps toevoegen** om Uitgever van Intune-software te starten.
+1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) de optie **Apps** &gt; **Apps toevoegen** om Uitgever van Intune-software te starten.
 
-    > [!TIP]
-    > Mogelijk moet u uw gebruikersnaam en wachtwoord voor Intune invoeren voordat de uitgever wordt gestart.
+   > [!TIP]
+   > Mogelijk moet u uw gebruikersnaam en wachtwoord voor Intune invoeren voordat de uitgever wordt gestart.
 
-2.  Op de pagina **Software-installatie** van de uitgever kiest u een van de volgende opties voor **Selecteren hoe deze software beschikbaar moet worden gesteld voor apparaten**:
-    - **Software-installatieprogramma** voor apps met de extensie **.msi**:
-        - **Selecteer het bestandstype voor het software-installatieprogramma**. Dit geeft het type software aan dat u wilt implementeren. Als u bijvoorbeeld een iOS-app wilt installeren, kiest u **App-pakket voor iOS (&#42;.ipa-bestand)**.
-        - **Geef de locatie op van de software-installatiebestanden**. Geef de locatie op van de installatiebestanden of kies **Bladeren** om de locatie in een lijst te selecteren.
-        - **Neem aanvullende bestanden en submappen op in dezelfde map**. Deze optie is alleen beschikbaar voor het bestandstype **Windows Installer**.<br>Voor sommige software die gebruikmaakt van Windows Installer, zijn ondersteunende bestanden vereist die gewoonlijk in dezelfde map zijn opgeslagen als de installatiebestanden. Selecteer deze optie als u deze bestanden ook wilt implementeren.<br>Dit installatietype maakt gebruik van uw opslagruimte in de cloud.
+2. Op de pagina **Software-installatie** van de uitgever kiest u een van de volgende opties voor **Selecteren hoe deze software beschikbaar moet worden gesteld voor apparaten**:
+   - **Software-installatieprogramma** voor apps met de extensie **.msi**:
+       - **Selecteer het bestandstype voor het software-installatieprogramma**. Dit geeft het type software aan dat u wilt implementeren. Als u bijvoorbeeld een iOS-app wilt installeren, kiest u **App-pakket voor iOS (&#42;.ipa-bestand)**.
+       - **Geef de locatie op van de software-installatiebestanden**. Geef de locatie op van de installatiebestanden of kies **Bladeren** om de locatie in een lijst te selecteren.
+       - **Neem aanvullende bestanden en submappen op in dezelfde map**. Deze optie is alleen beschikbaar voor het bestandstype **Windows Installer**.<br>Voor sommige software die gebruikmaakt van Windows Installer, zijn ondersteunende bestanden vereist die gewoonlijk in dezelfde map zijn opgeslagen als de installatiebestanden. Selecteer deze optie als u deze bestanden ook wilt implementeren.<br>Dit installatietype maakt gebruik van uw opslagruimte in de cloud.
 
-  -   **Externe koppeling**, voor apps die u wilt maken door een koppeling op te geven naar een app store:
+   -   **Externe koppeling**, voor apps die u wilt maken door een koppeling op te geven naar een app store:
 
-        - **De URL opgeven**. Geef de URL op van een van de volgende zaken:
-            - De URL van de app store van de app die u wilt installeren. Als u bijvoorbeeld de app voor het Extern bureaublad van Microsoft voor Android wilt installeren, geeft u **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android** op.<br>Zoek met een zoekprogramma de pagina van de app in de app store om de URL van de app te vinden. Als u bijvoorbeeld de app Extern bureaublad zoekt, kunt u als zoekterm **Microsoft Extern bureaublad Android** gebruiken.
-            - Een website. Intune implementeert een snelkoppelingspictogram naar de site op het apparaat (ook wel een webclip genoemd).
-            - Een app op internet. Intune implementeert een snelkoppelingspictogram naar de app op het apparaat.
-        - **Zorg dat een beheerde browser vereist is om deze koppeling te openen (alleen Android en iOS).** Wanneer u een koppeling naar een website of web-app voor gebruikers implementeert, kunnen ze deze alleen in de door Intune beheerde browser openen. Deze browser moet op hun apparaat zijn geïnstalleerd.<br>Zie [Internettoegang beheren met beheerde-browserbeleid met Microsoft Intune](manage-internet-access-using-managed-browser-policies.md) voor meer informatie over de beheerde browser.<br>Dit installatietype maakt geen gebruik van uw opslagruimte in de cloud.
+       - **De URL opgeven**. Geef de URL op van een van de volgende zaken:
+           - De URL van de app store van de app die u wilt installeren. Als u bijvoorbeeld de app voor het Extern bureaublad van Microsoft voor Android wilt installeren, geeft u **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android** op.<br>Zoek met een zoekprogramma de pagina van de app in de app store om de URL van de app te vinden. Als u bijvoorbeeld de app Extern bureaublad zoekt, kunt u als zoekterm **Microsoft Extern bureaublad Android** gebruiken.
+           - Een website. Intune implementeert een snelkoppelingspictogram naar de site op het apparaat (ook wel een webclip genoemd).
+           - Een app op internet. Intune implementeert een snelkoppelingspictogram naar de app op het apparaat.
+       - **Zorg dat een beheerde browser vereist is om deze koppeling te openen (alleen Android en iOS).** Wanneer u een koppeling naar een website of web-app voor gebruikers implementeert, kunnen ze deze alleen in de door Intune beheerde browser openen. Deze browser moet op hun apparaat zijn geïnstalleerd.<br>Zie [Internettoegang beheren met beheerde-browserbeleid met Microsoft Intune](manage-internet-access-using-managed-browser-policies.md) voor meer informatie over de beheerde browser.<br>Dit installatietype maakt geen gebruik van uw opslagruimte in de cloud.
 
-  -   **Beheerde iOS-app uit de App Store**: voor gratis apps uit de iTunes Store die u wilt beheren met Mobile Application Management-beleid (MAM):
+   -   **Beheerde iOS-app uit de App Store**: voor gratis apps uit de iTunes Store die u wilt beheren met Mobile Application Management-beleid (MAM):
 
-        - **De URL opgeven**. Typ de URL van de app store van de app die u wilt installeren. Als u bijvoorbeeld de app voor de Microsoft Werkmappen voor iOS wilt installeren, geeft u **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8** op.<br>Dit installatietype maakt geen gebruik van uw opslagruimte in de cloud.
+       - **De URL opgeven**. Typ de URL van de app store van de app die u wilt installeren. Als u bijvoorbeeld de app voor de Microsoft Werkmappen voor iOS wilt installeren, geeft u **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8** op.<br>Dit installatietype maakt geen gebruik van uw opslagruimte in de cloud.
 
-        Als u bijvoorbeeld de Microsoft Word-app uit de iTunes Store wilt implementeren op apparaten, ziet de pagina er als volgt uit:
+       Als u bijvoorbeeld de Microsoft Word-app uit de iTunes Store wilt implementeren op apparaten, ziet de pagina er als volgt uit:
 
-        ![Uitgever van Microsoft Intune-software](./media/publisher-for-mobile.png)
+       ![Uitgever van Microsoft Intune-software](./media/publisher-for-mobile.png)
 
 > [!NOTE]
 > Wanneer u een app vanuit een App Store toevoegt en implementeert, moeten eindgebruikers beschikken over een account bij die Store om de app te kunnen installeren.

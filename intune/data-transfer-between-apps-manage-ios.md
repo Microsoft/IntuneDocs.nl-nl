@@ -2,24 +2,24 @@
 title: Gegevensoverdracht tussen iOS-apps beheren
 titlesuffix: Microsoft Intune
 description: Begrijpen hoe u Mobile Application Management-beleid in Microsoft Intune gebruikt om gegevensoverdracht tussen apps te beheren.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 441f78a8b3b9c41610b78a27dbe51fb144dd82da
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4c2872e70697b15326f89abd5721048643c5421a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
 ## <a name="manage-ios-apps"></a>iOS-apps beheren
@@ -63,9 +63,9 @@ Deze configuratie van de UPN-gebruikersinstelling is **vereist** voor apparaten 
 
 2. Voer in de sectie Toepassingsconfiguratie de volgende instelling in:
 
-  **sleutel** = IntuneMAMUPN, **waarde** = <username@company.com>
+   **sleutel** = IntuneMAMUPN, **waarde** = <username@company.com>
 
-  De juiste syntaxis van het sleutel/waarde-paar kan verschillen op basis van uw MDM-provider van derden. De volgende tabel bevat voorbeelden van MDM-providers van derden en de exacte waarden die u voor het sleutel/waarde-paar moet invoeren.
+   De juiste syntaxis van het sleutel/waarde-paar kan verschillen op basis van uw MDM-provider van derden. De volgende tabel bevat voorbeelden van MDM-providers van derden en de exacte waarden die u voor het sleutel/waarde-paar moet invoeren.
 
 |MDM-provider van derden| Configuratiesleutel | Waardetype | Configuratiewaarde|
 | ------- | ---- | ---- | ---- |

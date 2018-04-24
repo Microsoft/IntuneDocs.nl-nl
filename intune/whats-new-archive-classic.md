@@ -1,28 +1,28 @@
 ---
 title: Wat is er nieuw in klassieke Microsoft Intune-portal (archief)
 description: Wat is er nieuw in Microsoft Intune-aankondigingen (archief)
-keywords: 
+keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbb76e0eb4a1157e70a24c47b960ef138a0f876
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 5ba8d7940f9c02a1f01a115e16be331bb4fc2fcd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Wat is er nieuw in de klassieke Intune-portal - vorige maanden
 
-[!INCLUDE[classic-portal](./includes/classic-portal.md)]
+[!INCLUDE [classic-portal](./includes/classic-portal.md)]
 
 Deze pagina bevat nieuwe functies en meldingen die eerder werden aangekondigd op de [Wat is er nieuw-pagina](whats-new.md) voor de klassieke Intune-portal.
 
@@ -359,7 +359,7 @@ __Het onderdeel Intune App SDK Xamarin biedt nu ondersteuning voor MAM zonder re
 
 __Een Symantec-handtekeningcertificaat vereist geen ondertekend Windows Phone 8-bedrijfsportal meer voor uploaden__ Voor het uploaden van een Symantec-handtekeningcertificaat is geen ondertekend Windows Phone 8-bedrijfsportal-app meer nodig. Het certificaat kan afzonderlijk worden geüpload.
 
-###<a name="deprecations"></a>Afschaffingen
+### <a name="deprecations"></a>Afschaffingen
 
 __Ondersteuning voor de Windows Phone 8-bedrijfsportal__ Ondersteuning voor de Windows Phone 8-bedrijfsportal wordt nu afgeschaft. Ondersteuning voor het Windows Phone 8- en Windows RT-platform is afgeschaft in oktober 2016. Ondersteuning voor de Windows 8-bedrijfsportal is ook in oktober 2016 afgeschaft.
 

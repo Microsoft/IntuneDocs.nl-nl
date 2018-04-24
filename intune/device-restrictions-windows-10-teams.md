@@ -1,27 +1,27 @@
 ---
 title: Windows Intune-apparaatbeperkingen voor Windows 10 Team
-titlesuffix: 
+titlesuffix: ''
 description: Meer informatie over de apparaatbeperkingen die beschikbaar zijn voor apparaten met Windows 10 Team.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69cceda6857412f7e9a50c58d075caeee4ea9c20
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5d1198e8332645297ab0739bb0346c573877f0c3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 Team-apparaatbeperkingsinstellingen
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met Windows 10 Team.
 
@@ -34,10 +34,10 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
     - **Organisator, tijd en onderwerp weergeven (onderwerp verborgen bij privévergaderingen)**
 - **URL van de achtergrondafbeelding voor het aanmeldingsscherm**: schakel deze instelling in om via de URL die u opgeeft, een aangepaste achtergrond weer te geven op het scherm **Welkom** van Windows 10 Team-apparaten.<br>De afbeelding moet een bestand met PNG-indeling zijn en de URL moet beginnen met **https://**.
 
-## <a name="azure-operational-insights"></a>Operationeel inzicht van Azure
+## <a name="azure-operational-insights"></a>Operational Insights van Azure
 
 - **Azure Operational Insights**: Azure Operational Insights, onderdeel van de Microsoft Operations Manager-suite, verzamelt, bewaart en analyseert logbestandsgegevens van Windows 10 Team-apparaten.
-Als u verbinding wilt maken met Operationeel inzicht van Azure, moet u een **Werkruimte-id** en een **Werkruimtesleutel** opgeven.
+Als u verbinding wilt maken met Operational Insights van Azure, moet u een **Werkruimte-id** en een **Werkruimtesleutel** opgeven.
 
 ## <a name="maintenance"></a>Onderhoud
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: de1a5beafae900a21f685cf1daeb2302cbf245b3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c6bbc1bd477cde7eecb78b78c8efa4bfde46976f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>Een Package Family Name (PFN) voor de configuratie van VPN per app zoeken
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Er zijn twee manieren om een PFN te zoeken, zodat u een VPN per app kunt instellen.
 
@@ -37,7 +37,7 @@ De syntaxis voor Get-AppxPackage is:
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
 > [!NOTE]
-Mogelijk moet u PowerShell uitvoeren als een beheerder om de PFN op te halen.
+> Mogelijk moet u PowerShell uitvoeren als een beheerder om de PFN op te halen.
 
 Als u bijvoorbeeld informatie wilt ophalen over alle universele apps die op uw computer zijn geïnstalleerd, gebruikt u `Get-AppxPackage`.
 

@@ -1,28 +1,28 @@
 ---
 title: PKCS-certificaten gebruiken met Microsoft Intune - Azure | Microsoft Docs
 description: PKCS-certificaten (Public Key Cryptography Standards) toevoegen of maken met Microsoft Intune, inclusief de stappen om een basiscertificaat te exporteren, de certificaatsjabloon te configureren, de Microsoft Intune Certificate Connector te downloaden en installeren, een apparaatconfiguratieprofiel te maken, een PKCS-certificaatprofiel te maken in Azure en uw certificeringsinstantie (CA)
-keywords: 
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c0668921f03b24b319c2c37837dbd2cc053370ca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0dfcaa2e37fecc4c5a075931489c106b78c17b7e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Certificaten worden gebruikt om toegang tot uw bedrijfsbronnen, zoals een VPN of uw Wi-Fi-netwerk, te verifiëren en beveiligen. In dit artikel leest u hoe u een PKCS-certificaat exporteert en hoe u vervolgens het certificaat toevoegt aan een Intune-profiel. 
 
@@ -56,7 +56,7 @@ Voor verificatie met VPN, Wi-Fi en andere bronnen hebt u een basis- of tussen-CA
 
    Bijvoorbeeld:
 
-4.  Nadat de wizard is voltooid, maar voordat de wizard wordt gesloten, klikt u op **Gebruikersinterface van certificaatconnector starten**.
+4. Nadat de wizard is voltooid, maar voordat de wizard wordt gesloten, klikt u op **Gebruikersinterface van certificaatconnector starten**.
 
    `certutil -ca.cert certnew.cer`
 

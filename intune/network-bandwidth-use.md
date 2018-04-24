@@ -1,29 +1,29 @@
 ---
 title: Netwerkvereisten en bandbreedtedetails voor Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Bekijk netwerkconfiguratievereisten en bandbreedtedetails voor Intune.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b21c4421914294e84bae637e489065c5e4410839
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c161d1ca120d5a0210cffca01e781f1ae9206fe4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Netwerkconfiguratievereisten en bandbreedte voor Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Deze richtlijnen geven Intune-beheerders inzicht in de netwerkvereisten voor de Intune-service. U kunt deze informatie gebruiken voor meer inzicht in de bandbreedtevereisten, het IP-adres en de vereiste poortinstellingen voor proxy-instellingen.
 
@@ -58,11 +58,13 @@ Een cacheproxyserver die aanvragen voor inhoud ontvangt van clients, kan die inh
 
 Hieronder vindt u standaardinstellingen voor een proxyserver die inhoud voor Intune-clients plaatst.
 
-|Instelling|Aanbevolen waarde|Details|
-|-----------|---------------------|-----------|
-|Cachegrootte|5 GB tot 30 GB|De waarde is afhankelijk van het aantal clientcomputers in uw netwerk en de configuraties die u gebruikt. Pas de grootte van de cache voor uw omgeving aan om te voorkomen dat bestanden te snel worden verwijderd.|
-|Grootte van afzonderlijke cachebestanden|950 MB|Deze instelling is mogelijk niet beschikbaar in alle cacheproxyservers.|
-|Objecttypen die in cache worden geplaatst|HTTP<br /><br />HTTPS<br /><br />BITS|Intune-pakketten zijn CAB-bestanden die worden opgehaald door BITS-download (Background Intelligent Transfer Service) via HTTP.|
+
+|          Instelling           |           Aanbevolen waarde           |                                                                                                  Details                                                                                                  |
+|----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Cachegrootte         |             5 GB tot 30 GB             | De waarde is afhankelijk van het aantal clientcomputers in uw netwerk en de configuraties die u gebruikt. Pas de grootte van de cache voor uw omgeving aan om te voorkomen dat bestanden te snel worden verwijderd. |
+| Grootte van afzonderlijke cachebestanden |                950 MB                 |                                                                     Deze instelling is mogelijk niet beschikbaar in alle cacheproxyservers.                                                                     |
+|   Objecttypen die in cache worden geplaatst    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Intune-pakketten zijn CAB-bestanden die worden opgehaald door BITS-download (Background Intelligent Transfer Service) via HTTP.                                               |
+
 Zie de documentatie voor uw proxyserver voor informatie over het gebruik van een proxyserver om inhoud in cache te plaatsen.
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>Background Intelligent Transfer Service op computers gebruiken
@@ -159,14 +161,16 @@ De volgende tabel bevat de poorten en services waartoe de Intune-client toegang 
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Netwerkgegevens voor Apple-apparaten
-| Hostnaam  | URL (IP-adres/subnet) | Protocol | Poort | Apparaat |
-| --- | --- | --- | --- | --- |
-|  Beheerconsole  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS en macOS |
-| Beheerconsole  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS en macOS |
-| Beheerconsole  | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS en macOS  |
-| PI-server  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | Voor Apple iOS- en Mac OS-cloudmessaging. |
-| Apparaatservices  | gateway.push.apple.com | TCP | 2195 | Apple  |
-| Apparaatservices  | feedback.push.apple.com | TCP | 2196 | Apple  |
-| Apparaatservices  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
-| Apparaten (internet/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 en 443 | Alleen Apple. &#39;#&#39; is een willekeurig getal van 0 tot 200. |
-| Apparaten (internet/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 of 443 | Alleen Apple |
+
+|         Hostnaam         |                                        URL (IP-adres/subnet)                                        |  Protocol  |     Poort     |                          Apparaat                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
+|      Beheerconsole       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS en macOS                    |
+|      Beheerconsole       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS en macOS                    |
+|      Beheerconsole       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS en macOS                    |
+|        PI-server         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Voor Apple iOS- en Mac OS-cloudmessaging.          |
+|     Apparaatservices      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     Apparaatservices      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     Apparaatservices      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| Apparaten (internet/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 en 443 | Alleen Apple. &#39;#&#39; is een willekeurig getal van 0 tot 200. |
+| Apparaten (internet/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 of 443   |                        Alleen Apple                         |
+

@@ -1,27 +1,27 @@
 ---
 title: Uw Android-apparaat registreren bij Intune | Microsoft Docs
 description: Hierin wordt beschreven hoe u een Android-apparaat bij Intune kunt inschrijven
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 89262f4fecba6aa8d76efd7fd5bbe415d9048204
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7230f14ae9481555f457a8a8700d588c4170b39b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Uw Android-apparaat inschrijven bij Intune
 
@@ -35,57 +35,57 @@ Voor of na de registratie wordt u mogelijk gevraagd om een categorie te kiezen d
 
 **Ga als volgt te werk om uw Android-apparaat te registeren:**
 
-1.  Installeer de gratis app Intune-bedrijfsportal via [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1. Installeer de gratis app Intune-bedrijfsportal via [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
-2.  Open de app Bedrijfsportal.
+2. Open de app Bedrijfsportal.
 
-3.  Tik in het **aanmeldingsscherm** van de bedrijfsportal op **Aanmelden** en meld u vervolgens aan met uw werk- of schoolaccount.
+3. Tik in het **aanmeldingsscherm** van de bedrijfsportal op **Aanmelden** en meld u vervolgens aan met uw werk- of schoolaccount.
 
-    ![De bedrijfsportal-app voor het Android-welkomstscherm, waarin de gebruiker wordt gevraagd zich aan te melden met het vereist werk- of schoolaccount. Hierin wordt tevens gewaarschuwd dat Microsoft-accounts en andere persoonlijke accounts worden niet geaccepteerd.](./media/and-enroll-0-welcome-screen.png)   
+   ![De bedrijfsportal-app voor het Android-welkomstscherm, waarin de gebruiker wordt gevraagd zich aan te melden met het vereist werk- of schoolaccount. Hierin wordt tevens gewaarschuwd dat Microsoft-accounts en andere persoonlijke accounts worden niet geaccepteerd.](./media/and-enroll-0-welcome-screen.png)   
 
-4.  Als het ondersteuningsteam van het bedrijf voorwaarden van het bedrijf heeft ingesteld, tikt u op **ACCEPTEREN** om de voorwaarden te accepteren. Dit scherm kan enigszins afwijken van de onderstaande afbeelding, afhankelijk van de Android-versie die u momenteel gebruikt.
+4. Als het ondersteuningsteam van het bedrijf voorwaarden van het bedrijf heeft ingesteld, tikt u op **ACCEPTEREN** om de voorwaarden te accepteren. Dit scherm kan enigszins afwijken van de onderstaande afbeelding, afhankelijk van de Android-versie die u momenteel gebruikt.
 
-    ![android-bedrijfsportal-aanmelden](./media/and-enroll-3-accept-terms.png)
+   ![android-bedrijfsportal-aanmelden](./media/and-enroll-3-accept-terms.png)
 
-5.  Meld u aan bij de bedrijfsportal-app met uw werk- of schoolaccount en wachtwoord, en tik vervolgens op **Aanmelden**.
+5. Meld u aan bij de bedrijfsportal-app met uw werk- of schoolaccount en wachtwoord, en tik vervolgens op **Aanmelden**.
 
-    ![android-bedrijfsportal-aanmelden](./media/and-enroll-2-cp-sign-in.png)
+   ![android-bedrijfsportal-aanmelden](./media/and-enroll-2-cp-sign-in.png)
 
-6.  Tik in het scherm **Instellen van bedrijfstoegang** op **DOORGAAN**.
+6. Tik in het scherm **Instellen van bedrijfstoegang** op **DOORGAAN**.
 
-    ![Het scherm Instellen van bedrijfstoegang](/intune/media/android_cp_enroll_01_1709_new.png)
+   ![Het scherm Instellen van bedrijfstoegang](/intune/media/android_cp_enroll_01_1709_new.png)
 
-    > [!NOTE]
-    > De gele driehoeken betekenen niet dat er al een fout is opgetreden. Deze pictogrammen geven aan dat er nog stappen moeten worden voltooid in het inschrijvingsproces.
+   > [!NOTE]
+   > De gele driehoeken betekenen niet dat er al een fout is opgetreden. Deze pictogrammen geven aan dat er nog stappen moeten worden voltooid in het inschrijvingsproces.
 
-7.  Bekijk een lijst met zaken die het ondersteuningsteam van het bedrijf wel en niet kan zien op het apparaat en tik op **DOORGAAN**.
+7. Bekijk een lijst met zaken die het ondersteuningsteam van het bedrijf wel en niet kan zien op het apparaat en tik op **DOORGAAN**.
 
-    ![Privacy-instellingen](/intune/media/android_cp_enroll_02_after_1710.png)
+   ![Privacy-instellingen](/intune/media/android_cp_enroll_02_after_1710.png)
 
-9.  Lees op het scherm **De volgende stap** wat er gebeurt tijdens het registreren en tik vervolgens op **REGISTREREN**.
+8. Lees op het scherm **De volgende stap** wat er gebeurt tijdens het registreren en tik vervolgens op **REGISTREREN**.
 
-    ![Het scherm De volgende stap](/intune/media/android_cp_enroll_03_after_1710.png)
+   ![Het scherm De volgende stap](/intune/media/android_cp_enroll_03_after_1710.png)
 
-10.  Als u Android 6.0 of hoger gebruikt, moet u deze stap uitvoeren. Ga anders naar de volgende stap.
+9. Als u Android 6.0 of hoger gebruikt, moet u deze stap uitvoeren. Ga anders naar de volgende stap.
 
-    Als het ondersteuningsteam van het bedrijf bepaald beleid heeft ingesteld, ziet u mogelijk de volgende berichten:
-    -   **De bedrijfsportal toestaan telefoongesprekken uit te voeren en te beheren?**
+   Als het ondersteuningsteam van het bedrijf bepaald beleid heeft ingesteld, ziet u mogelijk de volgende berichten:
+   - **De bedrijfsportal toestaan telefoongesprekken uit te voeren en te beheren?**
 
-        ![android-bedrijfsportal-aanmelden](./media/and-enroll-3a-allow-phone-access.png)
+     ![android-bedrijfsportal-aanmelden](./media/and-enroll-3a-allow-phone-access.png)
 
-    Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken, omdat **Microsoft nooit telefoongesprekken uitvoert of beheert**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, staat u alleen toe dat het IMEI-nummer ( International Mobile Equipment Identity) van uw apparaat wordt verzonden naar Intune. Het IMEI-nummer is vergelijkbaar met een serienummer en is uniek voor een mobiel apparaat.
+   Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken, omdat **Microsoft nooit telefoongesprekken uitvoert of beheert**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, staat u alleen toe dat het IMEI-nummer ( International Mobile Equipment Identity) van uw apparaat wordt verzonden naar Intune. Het IMEI-nummer is vergelijkbaar met een serienummer en is uniek voor een mobiel apparaat.
 
-    Als u de toegang weigert, wordt het bericht de volgende keer dat u zich bij de bedrijfsportal aanmeldt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken. Als u later besluit toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Telefoon** en schakelt u de machtiging in.
+   Als u de toegang weigert, wordt het bericht de volgende keer dat u zich bij de bedrijfsportal aanmeldt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken. Als u later besluit toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Telefoon** en schakelt u de machtiging in.
 
-    -   **Toestaan dat Bedrijfsportal toegang heeft tot uw contactpersonen?**
+   - **Toestaan dat Bedrijfsportal toegang heeft tot uw contactpersonen?**
 
-        ![android-bedrijfsportal-aanmelden](./media/and-enroll-3b-allow-contacts-access.png)
+     ![android-bedrijfsportal-aanmelden](./media/and-enroll-3b-allow-contacts-access.png)
 
-        Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken, omdat **Microsoft nooit toegang tot uw contactpersonen probeert te krijgen**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, kan alleen met de bedrijfsportal-app uw werkaccount worden gemaakt, gebruikt en beheerd.
+     Als u dit bericht ziet, tikt u op **TOESTAAN**. Het is veilig om op TOESTAAN te tikken, omdat **Microsoft nooit toegang tot uw contactpersonen probeert te krijgen**. Google beheert de tekst van het bericht. De tekst kan niet worden gewijzigd door Microsoft. Als u toegang toestaat, kan alleen met de bedrijfsportal-app uw werkaccount worden gemaakt, gebruikt en beheerd.
 
-        Als u de toegang weigert, wordt het bericht de volgende keer dat u zich bij de bedrijfsportal aanmeldt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken. Als u later besluit toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Telefoon** en schakelt u de machtiging in.
+     Als u de toegang weigert, wordt het bericht de volgende keer dat u zich bij de bedrijfsportal aanmeldt, opnieuw weergegeven. U kunt echter toekomstige berichten uitschakelen door op het selectievakje **Niet opnieuw vragen** te tikken. Als u later besluit toegang te verlenen, gaat u naar **Instellingen** &gt; **Apps** &gt; **Bedrijfsportal** &gt; **Machtigingen** &gt; **Telefoon** en schakelt u de machtiging in.
 
-11.  Tik op het scherm **Apparaatbeheerder activeren** op **Activeren**.
+10. Tik op het scherm **Apparaatbeheerder activeren** op **Activeren**.
 
     ![Het scherm Apparaatbeheerder activeren](./media/and-enroll-5-activate.png)
 
@@ -95,11 +95,11 @@ Voor of na de registratie wordt u mogelijk gevraagd om een categorie te kiezen d
 
     Microsoft heeft geen zeggenschap over dit bericht en de bewoording kan enigszins drastisch overkomen. Met de bedrijfsportal kunnen niet alleen de beperkingen en toegang worden weergegeven die relevant zijn voor uw organisatie. Deze worden alle tegelijk op dit scherm weergegeven. Neem aan de hand van de contactgegevens op de [website van de bedrijfsportal](https://portal.manage.microsoft.com#HelpDeskDialog) contact op met het ondersteuningsteam van het bedrijf als u vragen hebt met betrekking tot uw eigen organisatie.
 
-12.  Volg de aanwijzingen voor het invoeren van de pincode of het wachtwoord. Als u al een pincode of wachtwoord op dit apparaat hebt ingesteld, wordt dit scherm niet weergegeven of wordt u niet verzocht om een nieuwe pincode of nieuw wachtwoord in te voeren.
+11. Volg de aanwijzingen voor het invoeren van de pincode of het wachtwoord. Als u al een pincode of wachtwoord op dit apparaat hebt ingesteld, wordt dit scherm niet weergegeven of wordt u niet verzocht om een nieuwe pincode of nieuw wachtwoord in te voeren.
 
     ![Pincode of wachtwoord instellen](./media/and-enroll-6-PIN-native.png)
 
-13.  Als u een Samsung Knox-apparaat gebruikt, tikt u op **Bevestigen**. U ziet dan een bericht dat uw apparaat wordt geregistreerd. Als u een systeemeigen Android-apparaat gebruikt, let dan op het volgende scherm waarin wordt weergegeven dat het apparaat wordt geregistreerd.
+12. Als u een Samsung Knox-apparaat gebruikt, tikt u op **Bevestigen**. U ziet dan een bericht dat uw apparaat wordt geregistreerd. Als u een systeemeigen Android-apparaat gebruikt, let dan op het volgende scherm waarin wordt weergegeven dat het apparaat wordt geregistreerd.
 
     ![Samsung Knox-privacybeleid](./media/and-enroll-7-knox-privacy-policy.png)
 
@@ -107,7 +107,7 @@ Voor of na de registratie wordt u mogelijk gevraagd om een categorie te kiezen d
 
     ![Het scherm Apparaat registreren](./media/and-enroll-8-device-enrolling.png)
 
-14. Wanneer het scherm **Instellen van bedrijfstoegang** wordt weergegeven, tikt u op **DOORGAAN**. Als er een bericht verschijnt waarin wordt aangegeven dat het apparaat niet voldoet aan het beleid, volgt u de instructies om het probleem te verhelpen en tikt u vervolgens op **DOORGAAN**.
+13. Wanneer het scherm **Instellen van bedrijfstoegang** wordt weergegeven, tikt u op **DOORGAAN**. Als er een bericht verschijnt waarin wordt aangegeven dat het apparaat niet voldoet aan het beleid, volgt u de instructies om het probleem te verhelpen en tikt u vervolgens op **DOORGAAN**.
 
     ![Het apparaat is niet compatibel, maar is geregistreerd](/intune/media/android_cp_enroll_05_post_1709.png)
 
@@ -119,7 +119,7 @@ Voor of na de registratie wordt u mogelijk gevraagd om een categorie te kiezen d
 
     ![Het scherm Instellen van bedrijfstoegang](./media/and-enroll-9d-comp-access-setup.png)  
 
-15. Tik in het scherm **Instellen van bedrijfstoegang is voltooid** op **GEREED**. Uw apparaat is nu geregistreerd.
+14. Tik in het scherm **Instellen van bedrijfstoegang is voltooid** op **GEREED**. Uw apparaat is nu geregistreerd.
 
     ![Het scherm Instellen van bedrijfstoegang is voltooid](./media/and-enroll-10-comp-access-setup-complete.png)
 

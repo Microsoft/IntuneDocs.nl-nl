@@ -1,6 +1,6 @@
 ---
 title: iOS Store-apps toevoegen aan Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Meer informatie over hoe u iOS Store-apps toevoegt aan Microsoft Intune.
 keywords: Intune
 author: Erikre
@@ -8,23 +8,22 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4bd10c4f05204d0e911a7538f5d5133e4a336320
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4eaa4b279ab98c6fe41482628937e0f2b0dc70a5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>iOS Store-apps toevoegen aan Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Gebruik de informatie in dit artikel om iOS Store-apps in Microsoft Intune toe te voegen. iOS Store-apps zijn apps die Intune installeert op het apparaat van een gebruiker. De gebruiker maakt deel uit van het personeel van uw bedrijf. iOS Store-apps worden automatisch bijgewerkt.
 

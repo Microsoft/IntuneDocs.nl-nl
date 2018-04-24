@@ -1,27 +1,27 @@
 ---
 title: Uw iOS- of Mac OS-apparaat gebruiken met Intune | Microsoft Docs
 description: Lijst met koppelingen naar taken die u op uw mobiele iOS- of Mac OS X-apparaat kunt uitvoeren wanneer het apparaat is geregistreerd bij Intune
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 05067978-3045-4d8a-b215-0069509e29cb
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1f6d969f152065caa64e4688a430589688c1e02e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bbb51300867f273da033b38d05d857034012a24e
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="using-your-macos-device-with-intune"></a>Uw Mac OS-apparaat gebruiken met Intune
 

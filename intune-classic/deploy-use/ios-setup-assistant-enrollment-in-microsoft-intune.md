@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a33c383cb65d0edfa94117278e3f473699588aa3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c68f196ea268e61a175f643244efb855f46eaece
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>IOS-apparaten inschrijven met Apple Configurator via Configuratieassistent
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune ondersteunt het inschrijven van iOS-apparaten die bedrijfseigendom zijn, met behulp van het hulpprogramma [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) dat wordt uitgevoerd op een Mac-computer. Met dit proces wordt het apparaat teruggezet naar de fabrieksinstellingen en wordt het voorbereid voor uitvoering van Configuratieassistent door de bedrijfsbeleidsregels voor de nieuwe gebruiker van het apparaat te installeren.
 
@@ -59,7 +59,7 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 
 1. Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com) naar **Beleid** &gt; **Inschrijving van bedrijfsapparaten** en kies **Toevoegen**.
 
-  ![Inschrijvingsprofiel voor apparaten maken](../media/pol-sa-corp-enroll.png)
+   ![Inschrijvingsprofiel voor apparaten maken](../media/pol-sa-corp-enroll.png)
 
 2. Geef details voor de apparaatprofielen op:
 
@@ -80,7 +80,7 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 
    -  **Device Enrollment Program**&mdash;Het Apple Device Enrollment Program (DEP) kan niet worden gebruikt met inschrijving via Configuratieassistent. Zorg ervoor dat de wisselknop is ingesteld op **uit**.
 
-3.  Kies **Profiel opslaan** om het profiel toe te voegen.
+3. Kies **Profiel opslaan** om het profiel toe te voegen.
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>iOS-apparaten toevoegen voor inschrijving met Configuratieassistent
 
@@ -90,29 +90,29 @@ Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd 
 
    ![Dialoogvenster Apparaten toevoegen](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
-   -  **Een CSV-bestand met serienummers uploaden**&mdash;Maak een lijst met door komma's gescheiden waarden (CSV) van twee kolommen zonder koptekst. Zorg ervoor dat het CSV-bestand niet meer dan 5000 apparaten bevat en niet groter is dan 5 MB.
+   - **Een CSV-bestand met serienummers uploaden**&mdash;Maak een lijst met door komma's gescheiden waarden (CSV) van twee kolommen zonder koptekst. Zorg ervoor dat het CSV-bestand niet meer dan 5000 apparaten bevat en niet groter is dan 5 MB.
 
-    |||
-    |-|-|
-    |&lt;Serienummer 1&gt;|&lt;Details apparaat 1&gt;|
-    |&lt;Serienummer 2&gt;|&lt;Details apparaat 2&gt;|
+     |||
+     |-|-|
+     |&lt;Serienummer 1&gt;|&lt;Details apparaat 1&gt;|
+     |&lt;Serienummer 2&gt;|&lt;Details apparaat 2&gt;|
 
-  Dit CSV-bestand ziet er in een teksteditor als volgt uit:
+   Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 
     ```
     0000000,PO 1234
     111111111,PO 1234
     ```
 
-  -  **Handmatig apparaatdetails toevoegen**&mdash;Geef het serienummer en notities of details voor maximaal 15 apparaten op.
+   -  **Handmatig apparaatdetails toevoegen**&mdash;Geef het serienummer en notities of details voor maximaal 15 apparaten op.
 
-  U kunt u de serienummers controleren in het deelvenster **Apparaten controleren**. U kunt ook bepalen of u de **Details** wilt overschrijven voor serienummers die opnieuw worden geïmporteerd, of u kunt het selectievakje **Overschrijven** uitschakelen om de huidige details te behouden.
+   U kunt u de serienummers controleren in het deelvenster **Apparaten controleren**. U kunt ook bepalen of u de **Details** wilt overschrijven voor serienummers die opnieuw worden geïmporteerd, of u kunt het selectievakje **Overschrijven** uitschakelen om de huidige details te behouden.
 
-  > [!NOTE]
-  > In de bestaande Intune-beheerconsole kunnen beheerders bijbehorende gegevens accepteren uit een geüpload CSV-bestand en de bestaande gegevens voor afzonderlijke serienummers overschrijven. In de nieuwe Azure-portal kunt u alleen de details voor alle serienummers overschrijven of nieuwe details voor alle serienummers negeren.
+   > [!NOTE]
+   > In de bestaande Intune-beheerconsole kunnen beheerders bijbehorende gegevens accepteren uit een geüpload CSV-bestand en de bestaande gegevens voor afzonderlijke serienummers overschrijven. In de nieuwe Azure-portal kunt u alleen de details voor alle serienummers overschrijven of nieuwe details voor alle serienummers negeren.
 
-  > [!NOTE]
-  > Als u op een later tijdstip apparaten in bedrijfseigendom uit het Intune-beheer wilt verwijderen, moet u het serienummer van het apparaat mogelijk uit Intune verwijderen in de apparaatgroep **Op iOS-serienummer** onder **Vooraf geregistreerde bedrijfsapparaten** om de apparaatregistratie uit te schakelen. Als met Intune een noodherstelprocedure wordt uitgevoerd op of rond de tijd dat u de serienummers verwijdert, moet u controleren of alleen de serienummers van actieve apparaten in die groep worden weergegeven.
+   > [!NOTE]
+   > Als u op een later tijdstip apparaten in bedrijfseigendom uit het Intune-beheer wilt verwijderen, moet u het serienummer van het apparaat mogelijk uit Intune verwijderen in de apparaatgroep **Op iOS-serienummer** onder **Vooraf geregistreerde bedrijfsapparaten** om de apparaatregistratie uit te schakelen. Als met Intune een noodherstelprocedure wordt uitgevoerd op of rond de tijd dat u de serienummers verwijdert, moet u controleren of alleen de serienummers van actieve apparaten in die groep worden weergegeven.
 
 2. Kies **Volgende**.
 
@@ -137,7 +137,7 @@ Kies in de lijst met beschikbare profielen het profiel dat u wilt toewijzen, con
 
 iOS-apparaten zijn verbonden met de Mac-computer en ingeschreven voor beheer van mobiele apparaten.
 
-1.  Open **Apple Configurator2** op een Mac-computer. Kies in de menubalk **Apple Configurator 2** en vervolgens **Voorkeuren**.
+1. Open **Apple Configurator2** op een Mac-computer. Kies in de menubalk **Apple Configurator 2** en vervolgens **Voorkeuren**.
 
    > [!WARNING]
    > De apparaten worden tijdens het inschrijvingsproces opnieuw ingesteld op de fabrieksconfiguraties. U kunt het apparaat het beste opnieuw instellen en inschakelen. U moet het apparaat verbinden wanneer het scherm **Hallo** wordt weergegeven.
@@ -148,12 +148,12 @@ iOS-apparaten zijn verbonden met de Mac-computer en ingeschreven voor beheer van
 
    De waarschuwing 'Server-URL is niet geverifieerd' kunt u zonder problemen negeren. Als u wilt doorgaan, kiest u **Volgende** totdat de wizard is voltooid.
 
-4.  Verbind de mobiele iOS-apparaten met de Mac-computer met een USB-adapter.
+4. Verbind de mobiele iOS-apparaten met de Mac-computer met een USB-adapter.
 
-    > [!WARNING]
-    > De apparaten worden tijdens het inschrijvingsproces opnieuw ingesteld op de fabrieksconfiguraties. U kunt het apparaat het beste opnieuw instellen en inschakelen. U moet Configuratieassistent starten wanneer het scherm **Hallo** wordt weergegeven.
+   > [!WARNING]
+   > De apparaten worden tijdens het inschrijvingsproces opnieuw ingesteld op de fabrieksconfiguraties. U kunt het apparaat het beste opnieuw instellen en inschakelen. U moet Configuratieassistent starten wanneer het scherm **Hallo** wordt weergegeven.
 
-5.  Kies **Voorbereiden**. Selecteer in het deelvenster iOS-apparaat voorbereiden de optie **Handmatig** en kies vervolgens **Volgende**.
+5. Kies **Voorbereiden**. Selecteer in het deelvenster iOS-apparaat voorbereiden de optie **Handmatig** en kies vervolgens **Volgende**.
 
 6. Selecteer in het deelvenster Registreren bij MDM-server de naam van de server die u hebt gemaakt en kies vervolgens **Volgende**.
 

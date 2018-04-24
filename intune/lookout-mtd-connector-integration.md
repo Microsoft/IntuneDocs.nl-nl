@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Integratie van Lookout Mobile Threat Defense met Intune instellen
 
@@ -54,32 +54,32 @@ Gebruik de volgende stappen om de gegevens te verzamelen die u aan het Lookout-o
 2. Wanneer u de naam van uw abonnement kiest, bevat de resulterende URL de abonnements-id.  Als u problemen hebt met het vinden van uw abonnements-id, kunt u dit [artikel van Microsoft Ondersteuning](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) tips lezen over het vinden van uw abonnements-id.
 
 3. Zoek uw Azure AD-groeps-id op. De Lookout-console ondersteunt twee toegangsniveaus:  
-  * **Volledige toegang:** de Azure AD-beheerder kan een groep maken met gebruikers die volledige toegang hebben en eventueel een groep maken voor gebruikers met beperkte toegang.  Alleen gebruikers in deze groepen kunnen zich aanmelden bij de **Lookout-console**.
-  * **Beperkte toegang:** de gebruikers in deze groep hebben geen toegang tot verschillende configuratie- en inschrijvingsgerelateerde modules van de Lookout-console, en hebben alleen-lezentoegang tot de module **Beveiligingsbeleid** van de Lookout-console.  
+   * **Volledige toegang:** de Azure AD-beheerder kan een groep maken met gebruikers die volledige toegang hebben en eventueel een groep maken voor gebruikers met beperkte toegang.  Alleen gebruikers in deze groepen kunnen zich aanmelden bij de **Lookout-console**.
+   * **Beperkte toegang:** de gebruikers in deze groep hebben geen toegang tot verschillende configuratie- en inschrijvingsgerelateerde modules van de Lookout-console, en hebben alleen-lezentoegang tot de module **Beveiligingsbeleid** van de Lookout-console.  
 
-    > [!TIP] 
-    > Lees [dit artikel](https://personal.support.lookout.com/hc/articles/114094105653) op de Lookout-website voor meer informatie over de machtigingen.
+     > [!TIP] 
+     > Lees [dit artikel](https://personal.support.lookout.com/hc/articles/114094105653) op de Lookout-website voor meer informatie over de machtigingen.
 
-    > [!NOTE] 
-    > De **groepsobject-id** bevindt zich op de pagina **Eigenschappen** van de groep in de **Azure AD-beheerportal**.
+     > [!NOTE] 
+     > De **groepsobject-id** bevindt zich op de pagina **Eigenschappen** van de groep in de **Azure AD-beheerportal**.
 
 4. Wanneer u deze informatie hebt verzameld, neemt u contact op met de Lookout-ondersteuning (e-mail: enterprisesupport@lookout.com) . Met behulp van de gegevens die u hebt verzameld, zal de Lookout-ondersteuning in samenwerking met uw primaire contactpersoon zorgen voor onboarding van uw abonnement en uw Lookout Enterprise-account maken.
 
 ## <a name="configure-your-subscription"></a>Uw abonnement configureren
 
-1. Nadat Lookout-ondersteuning uw Lookout Enterprise-account heeft gemaakt, ontvangt de primaire contactpersoon van uw bedrijf een e-mailbericht van Lookout met een koppeling naar de aanmeldings-URL: https://aad.lookout.com/les?action=consent.
+1. Nadat Lookout-ondersteuning uw Lookout Enterprise-account heeft gemaakt, ontvangt de primaire contactpersoon van uw bedrijf een e-mailbericht van Lookout met een koppeling naar de aanmeldings-URL: <https://aad.lookout.com/les?action=consent>.
 
-2.  De eerste aanmelding bij de Lookout-console moet worden uitgevoerd met een gebruikersaccount met de Azure AD-rol van globale beheerder om uw Azure AD-tenant te registreren. Daarna is voor aanmelding niet meer dit niveau van Azure AD-bevoegdheden nodig. We wordt een instemmingspagina weergegeven. Kies **Accepteren** om de registratie te voltooien. Zodra u dat hebt gedaan, wordt u omgeleid naar de Lookout-console.
+2. De eerste aanmelding bij de Lookout-console moet worden uitgevoerd met een gebruikersaccount met de Azure AD-rol van globale beheerder om uw Azure AD-tenant te registreren. Daarna is voor aanmelding niet meer dit niveau van Azure AD-bevoegdheden nodig. We wordt een instemmingspagina weergegeven. Kies **Accepteren** om de registratie te voltooien. Zodra u dat hebt gedaan, wordt u omgeleid naar de Lookout-console.
 
-    ![Schermafbeelding van de allereerste aanmeldingspagina van de Lookout-console](./media/lookout_mtp_initial_login.png)
+   ![Schermafbeelding van de allereerste aanmeldingspagina van de Lookout-console](./media/lookout_mtp_initial_login.png)
 
-3.  Ga in de [Lookout-console](https://aad.lookout.com) naar de module **Systeem**, kies het tabblad **Connectors** en selecteer **Intune**.
+3. Ga in de [Lookout-console](https://aad.lookout.com) naar de module **Systeem**, kies het tabblad **Connectors** en selecteer **Intune**.
 
-    ![schermopname van de Lookout-console waarin het tabblad Connectors is geopend en de Intune-optie is gemarkeerd](./media/lookout_mtp_setup-intune-connector.png)
+   ![schermopname van de Lookout-console waarin het tabblad Connectors is geopend en de Intune-optie is gemarkeerd](./media/lookout_mtp_setup-intune-connector.png)
 
-4.  Ga naar **Connectors** > **Verbindingsinstellingen** en geef de **heartbeatfrequentie** in minuten op.
+4. Ga naar **Connectors** > **Verbindingsinstellingen** en geef de **heartbeatfrequentie** in minuten op.
 
-    ![schermopname van het tabblad Verbindingsinstellingen waarop de heartbeatfrequentie is geconfigureerd](./media/lookout-mtp-connection-settings.png)
+   ![schermopname van het tabblad Verbindingsinstellingen waarop de heartbeatfrequentie is geconfigureerd](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>Registratiegroepen configureren
 1. Maak als aanbevolen procedure een Azure AD-beveiligingsgroep in de [Azure AD-beheerportal](https://manage.windowsazure.com) met een klein aantal gebruikers om de Lookout-integratie te testen.

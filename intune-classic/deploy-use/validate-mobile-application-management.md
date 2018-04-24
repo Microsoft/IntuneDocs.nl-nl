@@ -1,28 +1,28 @@
 ---
 title: De MAM-configuratie valideren
 description: In deze onderwerpen wordt beschreven hoe u kunt testen en valideren of uw MAM-beleid juist is ingesteld en naar behoren werkt.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angerobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.openlocfilehash: e0cb44177f830236865dce0ab68bb1084fcebc2d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6f11c2f2af53813040417a8f40e983b5c88d5189
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validating-your-mobile-application-management-setup"></a>De Mobile Application Management-configuratie valideren
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Dit onderwerp bevat informatie over het controleren op problemen na de configuratie van Mobile Application Management (MAM). Deze informatie is van toepassing op MAM-beleid in de Azure-portal.
 
@@ -43,7 +43,7 @@ Als blijkt dat uw MAM-beleid niet werkt zoals verwacht, is het raadzaam het volg
 
 2. Kies een gebruiker uit de lijst of zoek een gebruiker en kies vervolgens **Gebruiker selecteren**. Boven aan de kolom **App-rapportage** ziet u of de gebruiker een licentie voor MAM heeft. Daaronder ziet u of de gebruiker een licentie voor O365 heeft en wat de app-status voor alle apparaten van de gebruiker is.
 
-![App-status voor MAM](..\media\ts-mam-user-apps.png)
+![App-status voor MAM](../media/ts-mam-user-apps.png)
 
 ### <a name="what-to-do"></a>Wat u moet doen
 Hier ziet u welke acties u moet ondernemen op basis van de gebruikersstatus:
@@ -53,7 +53,7 @@ Hier ziet u welke acties u moet ondernemen op basis van de gebruikersstatus:
 - Als de app van een gebruiker de status **Niet ingecheckt** heeft, controleert u of het MAM-beleid voor die app correct hebt geconfigureerd.
 - Zorg ervoor dat deze voorwaarden worden toegepast op alle gebruikers waarop MAM-beleid van toepassing moet zijn.
 
-### <a name="see-also"></a>Zie tevens
-[Voorbereidingen voor het configureren van beleid voor het beheer van mobiele apps (Mobile App Management) met Microsoft Intune](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+### <a name="see-also"></a>Zie ook
+[Voorbereidingen voor het configureren van beleid voor het beheer van mobiele apps (Mobile App Management) met Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-[App-gegevens beveiligen via beleid voor het beheer van mobiele apps met Microsoft Intune](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[App-gegevens beveiligen via beleid voor het beheer van mobiele apps met Microsoft Intune](../deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2e3e71f52979f6285a14c5cc4fe26ea912cb3a42
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>Azure-portal voor beveiligingsbeleid voor apps in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Azure Portal wordt gebruikt om beveiligingsbeleid voor apps te maken en te beheren voor:
 
@@ -32,9 +32,9 @@ Azure Portal wordt gebruikt om beveiligingsbeleid voor apps te maken en te beher
 - Apps die worden uitgevoerd op apparaten die **niet zijn ingeschreven** bij een MDM-oplossing.
 - Apps die worden uitgevoerd op apparaten die zijn **geregistreerd bij een MDM-oplossing van derden**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Azure Portal is de nieuwe beheerconsole voor het maken van beveiligingsbeleid voor apps, maar u kunt ook beveiligingsbeleid voor apps maken dat ondersteuning biedt voor apps voor apparaten die zijn ingeschreven bij Intune. Dat doet u met de [Intune-beheerconsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) voor MDM-scenario's.
-
+> 
 > Mogelijk ziet u niet alle instellingen van beveiligingsbeleid voor apps die beschikbaar zijn in de Intune-beheerconsole. Als u beveiligingsbeleid voor apps maakt in de Intune-beheerconsole én in Azure Portal, overschrijft het beleid uit Azure Portal het beleid uit de Intune-beheerconsole. In dit scenario wordt het beveiligingsbeleid voor apps uit Azure Portal toegepast op de apps en geïmplementeerd voor gebruikers.
 
 

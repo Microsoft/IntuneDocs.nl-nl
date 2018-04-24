@@ -1,27 +1,27 @@
 ---
 title: Uw iOS-apparaat gebruiken met Intune | Microsoft Docs
 description: Lijst met koppelingen naar taken die u op uw iOS-apparaat kunt uitvoeren wanneer het apparaat bij Intune is ingeschreven.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8e6eb579968fe8499b176e58ff50b9d7635aa3c0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 51bca0c2aa10f15511e1644eda9ca6dd11c36f8b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-your-ios-device-with-intune"></a>Uw iOS-apparaat gebruiken met Intune
 
@@ -41,7 +41,7 @@ Intune ondersteunt momenteel iOS 9.0 en hoger.
 
 - [Beheerde apps op een apparaat gebruiken](use-managed-apps-on-your-device-ios.md)
 - [Een wachtwoordcode instellen of wijzigen](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
+  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Een apparaat opnieuw instellen (wissen) als dit is zoekgeraakt of gestolen](reset-erase-your-device-cpwebsite.md)
 - [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-ios.md)
 - [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-ios.md)

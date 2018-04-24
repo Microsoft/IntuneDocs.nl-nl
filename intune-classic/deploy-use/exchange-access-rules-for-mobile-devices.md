@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9c3da7d517bd26bf694ea7bfa658ec1a4688d8f8
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 93dece592ce5280b1650303484bd24169814465c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Exchange-toegangsregels voor mobiele apparaten
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Exchange-toegangsregels voor mobiele apparaten bepalen het niveau van toegang dat de betreffende apparaten hebben tot Exchange ActiveSync. Deze instellingen beïnvloeden alle mobiele apparaten, met inbegrip van apparaten die niet zijn ingeschreven in Microsoft Intune. U kunt beginnen met het definiëren van een **Standaardregel** die wordt toegepast op mobiele apparaten waarop geen aangepaste regel van toepassing is.
 
@@ -37,11 +37,13 @@ De volgende tabel bevat de toegangsniveaus die worden beheerd door Exchange Acti
 
 Een toegangsstrategie is een combinatie van een **standaardregel** en **platformuitzonderingen** die van toepassing is op alle mobiele apparaten die verbonden zijn met Exchange. In de volgende tabel wordt een aantal voorbeelden van toegangsstrategieën vermeld.
 
-|Toegangsstrategie|Description|
-|-------------------|---------------|
-|Acceptatielijst|U kunt een *acceptatielijst* gebruiken om een lijst met bekende apparaten toegang te verlenen en om toegang te beperken voor alle andere apparaten. Hiertoe moet u aangepaste regels maken voor apparaatplatformen, zodat ze toegang hebben tot het postvak van gebruikers. Wanneer u een dergelijke regel maakt, moet u de standaardtoegangsregel instellen voor het blokkeren of in quarantaine plaatsen van alle andere apparaten. Als u een nieuw apparaat aan de acceptatielijst wilt toevoegen, maakt u een nieuwe aangepaste regel.|
-|Blokkeringslijst|U kunt een *blokkeringslijst* gebruiken om alle apparaten standaard toegang te verlenen, met uitzondering van een verzameling apparaten die geen toegang tot uw organisatie mogen hebben. U maakt een blokkeringslijst door aangepaste regels in te stellen voor het blokkeren van apparaatplatformen die niet met de postvakken van de organisatie mogen synchroniseren. De standaardregel moet zo worden ingesteld dat alle apparaten die niet uitdrukkelijk zijn geblokkeerd door bestaande regels, toegang mogen hebben. Als u een nieuw apparaat of een verzameling apparaten aan de blokkeringslijst wilt toevoegen, maakt u een nieuwe aangepaste regel.|
-|Gemengde acceptatie en blokkering|Naast het maken van acceptatie- en blokkeringslijsten kunt u nieuwe mobiele apparaten in quarantaine plaatsen wanneer ze binnenkomen in de organisatie zodat u ze kunt evalueren. Als u bijvoorbeeld een blokkeringslijst hebt voor mobiele apparaten die niet zijn toegestaan binnen uw organisatie, en een acceptatielijst voor mobiele apparaten die wel zijn toegestaan binnen de organisatie, kunt u de standaardregel instellen op quarantaine. Alle overige apparaten worden automatisch in quarantaine geplaatst. Zo kunt u nieuwe apparaten detecteren zodra ze de organisatie binnenkomen en beslissen of u ze aan de acceptatie- of de blokkeringslijst toevoegt.|
+
+|    Toegangsstrategie    |                                                                                                                                                                                                                                                                                       Description                                                                                                                                                                                                                                                                                        |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Acceptatielijst       |                                                                                  U kunt een <em>acceptatielijst</em> gebruiken om een lijst met bekende apparaten toegang te verlenen en om toegang te beperken voor alle andere apparaten. Hiertoe moet u aangepaste regels maken voor apparaatplatformen, zodat ze toegang hebben tot het postvak van gebruikers. Wanneer u een dergelijke regel maakt, moet u de standaardtoegangsregel instellen voor het blokkeren of in quarantaine plaatsen van alle andere apparaten. Als u een nieuw apparaat aan de acceptatielijst wilt toevoegen, maakt u een nieuwe aangepaste regel.                                                                                  |
+|      Blokkeringslijst       |                              U kunt een <em>blokkeringslijst</em> gebruiken om alle apparaten standaard toegang te verlenen, met uitzondering van een verzameling apparaten die geen toegang tot uw organisatie mogen hebben. U maakt een blokkeringslijst door aangepaste regels in te stellen voor het blokkeren van apparaatplatformen die niet met de postvakken van de organisatie mogen synchroniseren. De standaardregel moet zo worden ingesteld dat alle apparaten die niet uitdrukkelijk zijn geblokkeerd door bestaande regels, toegang mogen hebben. Als u een nieuw apparaat of een verzameling apparaten aan de blokkeringslijst wilt toevoegen, maakt u een nieuwe aangepaste regel.                               |
+| Gemengde acceptatie en blokkering | Naast het maken van acceptatie- en blokkeringslijsten kunt u nieuwe mobiele apparaten in quarantaine plaatsen wanneer ze binnenkomen in de organisatie zodat u ze kunt evalueren. Als u bijvoorbeeld een blokkeringslijst hebt voor mobiele apparaten die niet zijn toegestaan binnen uw organisatie, en een acceptatielijst voor mobiele apparaten die wel zijn toegestaan binnen de organisatie, kunt u de standaardregel instellen op quarantaine. Alle overige apparaten worden automatisch in quarantaine geplaatst. Zo kunt u nieuwe apparaten detecteren zodra ze de organisatie binnenkomen en beslissen of u ze aan de acceptatie- of de blokkeringslijst toevoegt. |
+
 De volgende procedure beschrijft hoe u een aangepaste regel maakt.
 
 ## <a name="create-a-default-access-rule"></a>Een standaardtoegangsregel maken

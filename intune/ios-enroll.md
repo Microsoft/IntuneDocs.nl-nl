@@ -2,24 +2,24 @@
 title: Kiezen hoe u iOS-apparaten registreert in Intune
 titlesuffix: Microsoft Intune
 description: Het registreren van iOS-apparaten in Microsoft Intune instellen.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e79122c1bea970525faaf443f9bf4271d050abe2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 01523dc4c887214794d4600219ce0b77549b4734
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-in-intune"></a>iOS-apparaten registreren bij Intune
 
@@ -79,11 +79,11 @@ Gebruikersaffiniteit is vereist voor de ondersteuning van het volgende:
 
 5. Na het aanmelden wordt de gebruiker gevraagd het apparaat te registreren. De eerste stap is het identificeren van het apparaat. De app geeft een lijst met iOS-apparaten weer die al voor het bedrijf zijn ingeschreven en zijn toegewezen aan het Intune-account van de eindgebruiker. De gebruiker moet het desbetreffende apparaat kiezen.
 
-  Als dit apparaat nog niet voor het bedrijf is ingeschreven, moeten ze **nieuw apparaat** kiezen om door te gaan met de standaardinschrijving.
+   Als dit apparaat nog niet voor het bedrijf is ingeschreven, moeten ze **nieuw apparaat** kiezen om door te gaan met de standaardinschrijving.
 
 6. Op het volgende scherm moet de gebruiker het serienummer van het nieuwe apparaat bevestigen. De gebruiker kan op de koppeling **Bevestig het serienummer** tikken om instructies weer te geven voor gebruik van de app Instellingen, waarmee het serienummer wordt geverifieerd. De gebruiker moet vervolgens de laatste vier tekens van het serienummer invoeren in de bedrijfsportal-app.
 
-  Met deze stap wordt gecontroleerd of het apparaat het bedrijfsapparaat is dat is ingeschreven in Intune. Als het serienummer op het apparaat niet overeenkomt, is het verkeerde apparaat geselecteerd. De gebruiker moet teruggaan naar het vorige scherm en een ander apparaat selecteren.
+   Met deze stap wordt gecontroleerd of het apparaat het bedrijfsapparaat is dat is ingeschreven in Intune. Als het serienummer op het apparaat niet overeenkomt, is het verkeerde apparaat geselecteerd. De gebruiker moet teruggaan naar het vorige scherm en een ander apparaat selecteren.
 
 7. Wanneer het serienummer is geverifieerd, wordt de gebruiker door de bedrijfsportal-app omgeleid naar de website van de bedrijfsportal om de inschrijving te voltooien. Vervolgens wordt de gebruiker gevraagd om terug te keren naar de app.
 

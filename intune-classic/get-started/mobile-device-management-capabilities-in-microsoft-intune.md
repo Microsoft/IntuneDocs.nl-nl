@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c6f49bf8ef934dc4b697e5d4392bde44aeb8baee
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 48b9650a8f0d6a79b3abab542148acf0a57c0e41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Beheermogelijkheden voor geregistreerde apparaten in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Met Microsoft Intune kunt u vele apparaten beheren door ze *in te schrijven* bij de service. U kunt sommige apparaattypen zelf inschrijven, maar u kunt ook gebruikers apparaten laten inschrijven met de *bedrijfsportal*-app. Dit biedt ze bovendien de mogelijkheid om bewerkingen uit te voeren, zoals apps zoeken en installeren, zorgen dat hun apparaten voldoen aan de bedrijfsbeleidsregels en contact opnemen met hun IT-afdeling voor ondersteuning.
 
@@ -66,6 +66,7 @@ Beheer, inventarisatie, app-implementatie, inrichting en buitengebruikstelling w
 
 ## <a name="inventory-and-reporting"></a>Inventarisatie en rapportage
 
-|Mogelijkheid|Details|Meer informatie|
-|--------------|-----------|--------------------|
-|Inventarisatie en rapportage|Hiermee kunt u naar informatie zoeken over de apparaten die u beheert en de software die deze apparaten gebruiken.|[Inzicht in uw apparaten met inventarisaties in Microsoft Intune](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|       Mogelijkheid        |                                             Details                                              |                                                                  Meer informatie                                                                   |
+|-------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Inventarisatie en rapportage | Hiermee kunt u naar informatie zoeken over de apparaten die u beheert en de software die deze apparaten gebruiken. | [Inzicht in uw apparaten met inventarisaties in Microsoft Intune](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) |
+

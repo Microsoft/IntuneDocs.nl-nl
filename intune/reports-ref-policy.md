@@ -8,17 +8,17 @@ ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 0cfeffd4cb466d8bcfc2da072e7e6c028a4e0c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>Naslag voor beleidsentiteiten
 
@@ -157,10 +157,12 @@ PolicyKey|Beleidssleutel, kan worden samengevoegd met Policy om de naam van het 
 
 In de volgende tabel wordt het aantal gebruikers met de status Geslaagd, In behandeling, Mislukt of Fout per dag weergegeven. Het aantal weerspiegelt de gegevens per beleidstypeprofiel. Als een gebruiker bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een gebruiker twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de gebruiker in de foutstatus geplaatst. De entiteit PolicyUserActivity geeft voor de afgelopen 30 dagen aan hoeveel gebruikers op een bepaalde dag een bepaalde status hebben.
 
-|Eigenschap  |Description  |Voorbeeld  |
-|---------|---------|---------|
-|DateKey|De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse.|20160703|
-|In behandeling|Aantal unieke apparaten met de status In behandeling.|123|
-|Geslaagd|Aantal unieke apparaten met de status Geslaagd.|12|
-PolicyKey|Beleidssleutel, kan worden samengevoegd met Policy om de naam van het beleid op te halen.|Windows 10 baseline|
-|Fout|Aantal unieke apparaten met de status Fout.|10|
+
+| Eigenschap  |                                         Description                                         |       Voorbeeld       |
+|-----------|---------------------------------------------------------------------------------------------|---------------------|
+|  DateKey  | De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse. |      20160703       |
+|  In behandeling  |                         Aantal unieke apparaten met de status In behandeling.                          |         123         |
+| Geslaagd |                         Aantal unieke apparaten met de status Geslaagd.                          |         12          |
+| PolicyKey |                Beleidssleutel, kan worden samengevoegd met Policy om de naam van het beleid op te halen.                 | Windows 10 baseline |
+|   Fout   |                          Aantal unieke apparaten met de status Fout.                           |         10          |
+

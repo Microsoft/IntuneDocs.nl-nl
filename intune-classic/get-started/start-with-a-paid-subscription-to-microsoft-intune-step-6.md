@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3da91a23a3aaa7da4f914bb04eda9a2f640db733
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5283d040c7b4c39c495a13a71643b6569eed09bd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-policies-and-publish-apps"></a>Beleid maken en apps publiceren
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In dit onderwerp wordt aan Intune-beheerders uitgelegd hoe ze beleid kunnen maken en apps publiceren die ze vervolgens op beheerde apparaten kunnen implementeren.
 
@@ -63,12 +63,12 @@ Eerst moet u er op een van de volgende manieren voor zorgen dat apps beschikbaar
 Nu de app beschikbaar is in Intune, kunt u deze implementeren op beheerde apparaten:
 - [Apps implementeren op apparaten](/intune-classic/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
 - Apps implementeren die zijn gekocht via het volume-aankoopprogramma:
-    - [iOS - volume-aankoopprogramma](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-    - [Microsoft Store voor Bedrijven](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
-    - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
+  - [iOS - volume-aankoopprogramma](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+  - [Microsoft Store voor Bedrijven](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+  - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
 
     Als u apps hebt geconfigureerd voor implementatie kunt u [apps configureren](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune).
 
->[!div class="step-by-step"]
-
->[&larr; **Gebruikers en apparaten organiseren**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Bedrijfsportal aanpassen** &rarr;](/intune/company-portal-customize)  
+> [!div class="step-by-step"]
+> 
+> [&larr; **Gebruikers en apparaten organiseren**](./start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Bedrijfsportal aanpassen** &rarr;](/intune/company-portal-customize)  

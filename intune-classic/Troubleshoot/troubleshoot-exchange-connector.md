@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a70b2707b38534826577bfe47bcd8e575c09a71f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0eef4e2ae3792c601bd4a32cd041d7d041091cca
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>Problemen met de Exchange Connector oplossen
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In dit onderwerp wordt beschreven hoe u mogelijke problemen kunt oplossen die verband houden met de Intune Exchange Connector.
 
@@ -36,8 +36,8 @@ Controleer de configuratie van de Exchange Connector en controleer vervolgens of
 - Wanneer u de Exchange Connector configureert, geeft u een Client Access Server (CAS) op die zich zo dicht mogelijk bij de server bevindt die als host fungeert voor de Exchange Connector. Vertragingen in de communicatie tussen de CAS en de Exchange Connector kunnen leiden tot vertragingen bij het detecteren van apparaten, vooral als O365 Dedicated wordt gebruikt.
 - Houd rekening met een tijdsinterval tussen synchronisaties van de Exchange Connector met de Exchange-CAS. Een volledige synchronisatie vindt elke dag plaats en een (snelle) deltasynchronisatie vindt elke twee uur plaats. Het kan gebeuren dat een gebruiker met een pas geregistreerd apparaat een vertraging ondervindt bij het verkrijgen van toegang.
 - 
-## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Een Exchange ActiveSync-apparaat wordt niet gedetecteerd door Exchange
-Controleer of de Exchange Connector wordt gesynchroniseerd met de Exchange-server. Ga hiervoor naar de logboeken voor een volledige synchronisatie of een deltasynchronisatie. Raadpleeg de logboeken van de Exchange Connector. Als een volledige synchronisatie of deltasynchronisatie is uitgevoerd sinds het apparaat is toegevoegd, is dit geëlimineerd als de oorzaak van het probleem. Als er geen synchronisatie heeft plaatsgevonden, moet u de synchronisatielogboeken verzamelen en deze bij uw ondersteuningsaanvraag voegen.
+  ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Een Exchange ActiveSync-apparaat wordt niet gedetecteerd door Exchange
+  Controleer of de Exchange Connector wordt gesynchroniseerd met de Exchange-server. Ga hiervoor naar de logboeken voor een volledige synchronisatie of een deltasynchronisatie. Raadpleeg de logboeken van de Exchange Connector. Als een volledige synchronisatie of deltasynchronisatie is uitgevoerd sinds het apparaat is toegevoegd, is dit geëlimineerd als de oorzaak van het probleem. Als er geen synchronisatie heeft plaatsgevonden, moet u de synchronisatielogboeken verzamelen en deze bij uw ondersteuningsaanvraag voegen.
 
 - Als een gebruiker geen licentie voor Intune heeft, kan de Exchange Connector zijn apparaten niet detecteren.
 - Als het primaire SMTP-adres van een gebruiker anders is dan de UPN in AAD, detecteert de Exchange Connector geen enkel apparaat voor die Intune/AAD-gebruiker. Corrigeer het primaire SMTP-adres.
