@@ -1,24 +1,24 @@
 ---
 title: Aan de slag met de Microsoft Intune App SDK
 description: Maak uw mobiele app snel geschikt voor Mobile Application Management (MAM) met Microsoft Intune.
-keywords: 
+keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5827c82d84be45020aa2bdec16c92e0296431cf8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -69,7 +69,7 @@ De SDK's voor Intune-apps voor systeemeigen iOS en Android worden gehost op een 
 
 Als uw app een Xamarin- of Cordova-app is, gebruikt u de volgende SDK-varianten:
 
-* [Intune App SDK Xamarin-onderdeel](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [Microsoft Intune App SDK Xamarin Bindings](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 * [Intune App SDK Cordova-invoegtoepassing](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Het is verstandig om u te registreren voor een GitHub-account waarmee u splitsingen en pulls vanuit de opslagplaatsen kunt uitvoeren. Met GitHub kunnen ontwikkelaars communiceren met het productteam, problemen melden en snel antwoord ontvangen, opmerkingen bij de release bekijken en feedback naar Microsoft verzenden. Voor vragen over de GitHub van de Intune App SDK kunt u contact opnemen met msintuneappsdk@microsoft.com.
@@ -84,7 +84,7 @@ U hebt een van de volgende handleidingen voor ontwikkelaars nodig om de App Intu
 
 * **[Handleiding Intune App SDK Cordova-invoegtoepassing](app-sdk-cordova.md)**: dit document bevat informatie over het bouwen van iOS- en Android-apps met Cordova voor het Intune-beleid voor app-beveiliging.
 
-* **[Handleiding Intune App SDK Xamarin Component-invoegtoepassing](app-sdk-xamarin.md)**: dit document bevat informatie over het bouwen van iOS- en Android-apps met Cordova voor het Intune-beleid voor app-beveiliging.
+* **[Handleiding Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)**: dit document bevat informatie over het bouwen van iOS- en Android-apps met Xamarin voor het Intune-beleid voor app-beveiliging.
 
 
 
@@ -142,7 +142,7 @@ Buildnummer|CFBundleVersion|PackageVersionCode |Met dit nummer wordt een iterati
 
 - **CFBundleShortVersionString**  
     Hiermee wordt het releaseversienummer van de bundel opgegeven. Dit nummer duidt een releaseversie van de app aan. Met dit nummer kunnen eindgebruikers aan de app refereren.
- - **CFBundleVersion**  
+  - **CFBundleVersion**  
     De buildversie van de bundel, die een iteratie van de bundel aanduidt. Het nummer duidt eventueel een release of een releasebundel aan. Met dit nummer vindt detectie van apps plaats.
 
 #### <a name="android"></a>Android

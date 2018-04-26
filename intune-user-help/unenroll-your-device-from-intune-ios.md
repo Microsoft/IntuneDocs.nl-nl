@@ -1,56 +1,74 @@
-﻿---
-title: De inschrijving van uw iOS-apparaat bij Intune ongedaan maken | Microsoft Docs
-description: Hierin wordt beschreven hoe u de inschrijving van een iOS-apparaat bij Intune ongedaan kunt maken
-keywords: 
-author: barlanmsft
-ms.author: barlan
+---
+title: Uw iOS-apparaat uit Intune verwijderen | Microsoft Docs
+description: Hierin wordt beschreven hoe u een iOS-apparaat uit Intune kunt verwijderen
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 95258e2b2ef912b0d9c9549306559c6f91099642
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2df474e8b0a5af2ac294715135804ef0713a3015
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
-# <a name="unenroll-your-ios-device-from-intune"></a>De inschrijving van uw iOS-apparaat bij Intune ongedaan maken
+# <a name="remove-your-ios-device-from-intune"></a>Uw iOS-apparaat uit Intune verwijderen
 
-Wanneer u de inschrijving van uw iOS-apparaat bij Intune ongedaan maakt, heeft uw apparaat geen toegang meer tot bedrijfsresources en wordt uw apparaat niet meer beheerd met Intune.
+Wanneer u uw iOS-apparaat uit Intune verwijdert, heeft uw apparaat geen toegang meer tot bedrijfsresources en wordt uw apparaat niet meer beheerd met Intune.
 
-Voer deze stappen uit of bekijk deze video om de inschrijving van uw apparaat bij Intune ongedaan te maken:
 
-> [!VIDEO https://www.youtube.com/embed/6UFtBrBWUUI]
+## <a name="removing-the-device-from-my-devices"></a>Het apparaat verwijderen uit Mijn apparaten
 
-1.  Selecteer in de bedrijfsportal-app onder **Mijn apparaten**het apparaat dat u wilt uitschrijven.
+Voer deze stappen uit of bekijk deze video om uw apparaat uit Intune te verwijderen:
 
-2.  Tik op **Verwijderen** > **Verwijderen**.
 
-Wanneer u uw apparaat bij Intune uitschrijft, gebeurt het volgende:
+1.  Tik in de bedrijfsportal-app op **Apparaten** en selecteer het apparaat waarvoor u de registratie ongedaan wilt maken. Als u slechts één apparaat hebt en op **Apparaten** tikt, gaat u rechtstreeks naar het scherm met details voor dat apparaat.
 
--   Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
+2.  Tik naast **NAAM WIJZIGEN** op de knop met het beletselteken > **Apparaat verwijderen** > **Verwijderen**.  
 
--   U kunt geen apps meer van de bedrijfsportal installeren.
+    |![Schermopname van het scherm Apparaten in de bedrijfsportal-app, met de opties die beschikbaar zijn nadat de gebruiker op Verwijderen heeft geklikt. Toont de knoppen Apparaat verwijderen, Fabrieksinstellingen terugzetten en Annuleren.](/intune-user-help/media/cp_ios_unenroll_after_1804_001.png)|
 
--   Alle instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte) zijn niet meer van toepassing.
+    |![Schermopname van het scherm Apparaten in de bedrijfsportal-app, met de opties die beschikbaar zijn nadat de gebruiker op de knop Apparaat verwijderen heeft geklikt. Toont de in het rood gemarkeerde knop Verwijderen en de in het blauw gemarkeerde knoppen Meer informatie en Annuleren.](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
 
--   Mogelijk hebt u vanaf het apparaat geen toegang meer tot een aantal bedrijfsresources, zoals bestandsshares of interne websites.
 
--   U kunt geen bedrijfs-apps en bedrijfsgegevens meer op het apparaat gebruiken.
+  Wanneer u uw apparaat bij Intune uitschrijft, gebeurt het volgende:
 
--   Mogelijk kunt u geen verbinding meer met uw bedrijfsnetwerk maken met behulp van Wi-Fi of een virtueel particulier netwerk (VPN).
+  -   Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
 
--   Bedrijfse-mailprofielen worden verwijderd van het apparaat.
+  -   U kunt geen apps meer van de bedrijfsportal installeren.
 
--   Apparaten die alleen zijn geconfigureerd voor e-mail worden niet meer in de bedrijfsportal-app of op de website weergegeven.
+  -   Alle instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte) zijn niet meer van toepassing.
+
+  -   Mogelijk hebt u vanaf het apparaat geen toegang meer tot een aantal bedrijfsresources, zoals bestandsshares of interne websites.
+
+  -   U kunt geen bedrijfs-apps en bedrijfsgegevens meer op het apparaat gebruiken.
+
+  -   Mogelijk kunt u geen verbinding meer met uw bedrijfsnetwerk maken met behulp van Wi-Fi of een virtueel particulier netwerk (VPN).
+
+  -   Bedrijfse-mailprofielen worden verwijderd van het apparaat.
+
+  -   Apparaten die alleen zijn geconfigureerd voor e-mail worden niet meer in de bedrijfsportal-app of op de website weergegeven.
+
+## <a name="removing-data-collected-by-the-company-portal-app"></a>Gegevens verwijderen die door de bedrijfsportal-app zijn verzameld
+
+Er zijn drie locaties waar de bedrijfsportal lokale gegevens op uw apparaat opslaat.
+
+-   **Informatielogboeken**: standaardinformatie over de appactiviteit die door Microsoft wordt verzameld, bijvoorbeeld hoe lang de app was geopend of is gecrasht. Deze informatie wordt automatisch gewist wanneer u het apparaat uit de bedrijfsportal verwijdert.
+
+-   **Apple Analytics**: standaardinformatie over crashactiviteiten van de app die door Apple worden verzameld. Deze gegevens kunnen alleen worden verwijderd door de fabrieksinstellingen van uw apparaat te herstellen. Hiermee worden alle persoonsgegevens op uw apparaat gewist. Open hiervoor **Instellingen** > **Algemeen** > **Opnieuw instellen** > **Alle inhoud en instellingen wissen**.
+
+-   **Sleutelketen**: uw apparaat bewaart uw wachtwoorden en andere informatie die wordt gebruikt voor aanmeldingen in de sleutelketen. Microsoft-apps delen uw aanmeldgegevens in alle door Microsoft ontwikkelde apps die op uw apparaat staan, inclusief Microsoft Outlook en Microsoft Authenticator. Net zoals bij Apple Analytics kunnen deze gegevens alleen worden verwijderd door de fabrieksinstellingen van uw apparaat te herstellen. Hiermee worden alle persoonsgegevens op uw apparaat gewist. Open hiervoor **Instellingen** > **Algemeen** > **Opnieuw instellen** > **Alle inhoud en instellingen wissen**.
+
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

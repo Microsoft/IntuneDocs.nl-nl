@@ -2,28 +2,28 @@
 title: Webtoegang beheren met de app Managed Browser
 titlesuffix: Microsoft Intune
 description: Implementeer d app Managed Browser om websurfen en de overdracht van webgegevens naar andere apps te beperken.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 742173c1ef53337dab35694c0c04cbca60dbb07c
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid van de app Managed Browser en Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 De app Managed Browser is een app om te browsen op het web die u voor gebruik in uw organisatie kunt downloaden in vrij toegankelijke App Stores. Als u Managed Browser configureert met Intune, biedt de app deze mogelijkheden:
 - Toegang tot bedrijfssites en SaaS-apps met eenmalige aanmelding via de MyApps-service, met beveiliging van de webgegevens.
@@ -91,6 +91,8 @@ Als u met Azure AD verbonden web-apps wilt beperken tot het gebruik van Intune M
 9. Selecteer in de sectie **Toewijzingen** de optie **Cloud-apps** om te kiezen welke apps met dit beleid moeten worden beveiligd.
 
 Nadat het bovenstaande beleid is geconfigureerd, worden gebruikers gedwongen Intune Managed Browser te gebruiken voor toegang tot de met Azure AD verbonden web-apps die u hebt beveiligd met dit beleid. Als gebruikers in dit scenario een niet-beheerde browser proberen te gebruiken, zien ze een bericht dat Intune Managed Browser moet worden gebruikt.
+
+De Managed Browser ondersteunt geen klassiek beleid voor voorwaardelijke toegang. Zie [Klassiek beleid migreren in Azure Portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration) voor meer informatie.
 
 ##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Eenmalige aanmelding voor met Azure AD verbonden web-apps in Intune Managed Browser
 
@@ -164,11 +166,11 @@ Zie de blogpost voor Enterprise Mobility + Security [Better together: Intune and
 
 Met deze instelling kunt u de startpagina configureren die gebruikers zien wanneer ze de app Managed Browser starten of een nieuw tabblad maken. Geef met behulp van de procedure voor het maken van een app-configuratie voor Managed Browser het volgende sleutel- en waardepaar op:
 
-|||
-|-|-|
-|Sleutel|Waarde|
-|**com.microsoft.intune.mam.managedbrowser.homepage**|Geef een geldige URL op. Uit veiligheidsoogpunt worden onjuiste URL's geblokkeerd.<br>Voorbeeld: **https://www.bing.com**|
 
+|                                                                   |                                                                                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+|                                Sleutel                                |                                                           Waarde                                                            |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Geef een geldige URL op. Uit veiligheidsoogpunt worden onjuiste URL's geblokkeerd.<br>Voorbeeld: <strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Bladwijzers configureren voor Managed Browser
 
@@ -180,19 +182,21 @@ Met deze instelling kunt u een set bladwijzers configureren die beschikbaar zijn
 
 Geef met behulp van de procedure voor het maken van een app-configuratie voor Managed Browser het volgende sleutel- en waardepaar op:
 
-|||
-|-|-|
-|Sleutel|Waarde|
-|**com.microsoft.intune.mam.managedbrowser.bookmarks**|De waarde voor deze configuratie is een lijst met bladwijzers. Elke bladwijzer bestaat uit de titel en de URL van de bladwijzer. Scheid de titel en een URL met het teken **&#124;**.<br><br>Voorbeeld: **Microsoft Bing&#124;https://www.bing.com**<br><br>Als u meerdere bladwijzers wilt configureren, typt u een dubbel scheidingsteken **&#124; &#124;** tussen de bladwijzers.<br><br>Voorbeeld: **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
+
+|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                Sleutel                                 |                                                                                                                                                                                                                                                         Waarde                                                                                                                                                                                                                                                          |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | De waarde voor deze configuratie is een lijst met bladwijzers. Elke bladwijzer bestaat uit de titel en de URL van de bladwijzer. Scheid de titel en een URL met het teken <strong>& #124;</strong>.<br><br>Voorbeeld: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>Als u meerdere bladwijzers wilt configureren, typt u een dubbel scheidingsteken <strong>& #124; & #124;</strong> tussen de bladwijzers.<br><br>Voorbeeld: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Toegestane en geblokkeerde URL's voor Managed Browser opgeven
 
 Geef met behulp van de procedure voor het maken van een app-configuratie voor Managed Browser het volgende sleutel- en waardepaar op:
 
-|||
-|-|-|
-|Sleutel|Waarde|
-|U kunt kiezen uit:<br><br>- Geef toegestane URL's op (alleen deze URL's zijn toegestaan; andere sites zijn niet toegankelijk): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Geef geblokkeerde URL's op (alle andere sites zijn toegankelijk): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|De overeenkomstige waarde voor de sleutel is een lijst met URL's. U voert alle URL's die u wilt toestaan of blokkeren in als één waarde, gescheiden door een sluisteken **&#124;**.<br><br>Voorbeelden:<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+
+|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                               Sleutel                                                                                                                                                                |                                                                                                                                                                                    Waarde                                                                                                                                                                                    |
+| U kunt kiezen uit:<br><br>- Geef toegestane URL's op (alleen deze URL's zijn toegestaan; andere sites zijn niet toegankelijk): <strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- Geef geblokkeerde URL's op (alle andere sites zijn toegankelijk): <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | De overeenkomstige waarde voor de sleutel is een lijst met URL's. U voert alle URL's die u wilt toestaan of blokkeren in als één waarde, gescheiden door een sluisteken <strong>&#124;</strong>.<br><br>Voorbeelden:<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
 
 >[!IMPORTANT]
 >Geef niet beide sleutels op. Als beide sleutels zijn bedoeld voor dezelfde gebruiker, moet de sleutel voor toegestane URL's worden gebruikt, aangezien dit de meest beperkende optie is.
@@ -201,52 +205,52 @@ Geef met behulp van de procedure voor het maken van een app-configuratie voor Ma
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>URL-indeling voor toegestane en geblokkeerde URL´s
 Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen en jokertekens die u kunt gebruiken bij het opgeven van URL's in de lijsten met toegestane en geblokkeerde websites:
 
--   U kunt het jokerteken (**&#42;**) gebruiken volgens de regels in de onderstaande lijst met toegestane patronen.
+- U kunt het jokerteken (**&#42;**) gebruiken volgens de regels in de onderstaande lijst met toegestane patronen.
 
--   Zorg ervoor dat u alle URL's voorziet van het voorvoegsel **http** of **https** wanneer u ze in de lijst invoert.
+- Zorg ervoor dat u alle URL's voorziet van het voorvoegsel **http** of **https** wanneer u ze in de lijst invoert.
 
--   U kunt poortnummers in het adres opgeven. Als u geen poortnummer opgeeft, worden deze waarden gebruikt:
+- U kunt poortnummers in het adres opgeven. Als u geen poortnummer opgeeft, worden deze waarden gebruikt:
 
-    -   Poort 80 voor http
+  -   Poort 80 voor http
 
-    -   Poort 443 voor https
+  -   Poort 443 voor https
 
-    Het gebruik van jokertekens voor het poortnummer wordt niet ondersteund. **http&colon;//www&period;contoso&period;com:*;** en **http&colon;//www&period;contoso&period;com: /*;** worden bijvoorbeeld niet ondersteund.
+  Het gebruik van jokertekens voor het poortnummer wordt niet ondersteund. <strong>http&colon;//www&period;contoso&period;com:*;</strong> en <strong>http&colon;//www&period;contoso&period;com: /*;</strong> worden bijvoorbeeld niet ondersteund.
 
--   Gebruik de volgende tabel voor meer informatie over de toegestane patronen die u kunt gebruiken wanneer u een URL opgeeft:
+- Gebruik de volgende tabel voor meer informatie over de toegestane patronen die u kunt gebruiken wanneer u een URL opgeeft:
 
-|URL|Details|Komt overeen met|Komt niet overeen met|
-|-------|---------------|-----------|------------------|
-|http://www.contoso.com|Komt overeen met één pagina|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-|http://contoso.com|Komt overeen met één pagina|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-|http://www.contoso.com/&#42;|Komt overeen met alle URL's die beginnen met www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-|http://&#42;.contoso.com/&#42;|Komt overeen met alle subdomeinen onder contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-|http://www.contoso.com/images|Komt overeen met een afzonderlijke map|www.contoso.com/images|www.contoso.com/images/dogs|
-|http://www.contoso.com:80|Komt overeen met één pagina, met gebruik van een poortnummer|http://www.contoso.com:80|
-|https://www.contoso.com|Komt overeen met een enkele, beveiligde pagina|https://www.contoso.com|http://www.contoso.com|
-|http://www.contoso.com/images/&#42;|Komt overeen met een enkele map en alle submappen|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  URL                  |                     Details                      |                                                Komt overeen met                                                |                                Komt niet overeen met                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              Komt overeen met één pagina               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              Komt overeen met één pagina               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>;     | Komt overeen met alle URL's die beginnen met www.contoso.com |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     Komt overeen met alle subdomeinen onder contoso.com     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             Komt overeen met een afzonderlijke map              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  Komt overeen met één pagina, met gebruik van een poortnummer   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          Komt overeen met een enkele, beveiligde pagina           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>; |    Komt overeen met een enkele map en alle submappen    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   Hier volgen enkele voorbeelden van een aantal invoerwaarden die u niet kunt opgeven:
+- Hier volgen enkele voorbeelden van een aantal invoerwaarden die u niet kunt opgeven:
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   IP-adressen
+  - IP-adressen
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42;
+  - http://www.contoso.com:&#42;
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Toegang tot logboeken van beheerde apps met Managed Browser in iOS
 

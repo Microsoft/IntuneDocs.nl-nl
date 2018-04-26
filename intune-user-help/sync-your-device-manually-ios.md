@@ -1,42 +1,43 @@
 ---
 title: Uw iOS-apparaat handmatig synchroniseren | Microsoft Docs
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 01/11/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9c9144fbb20842a9ac8148827b85ac49d23a3d6d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a896e4a86cbeaacc07bdb4a32606a67b0049e3e1
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="sync-your-ios-device-manually"></a>Uw iOS-apparaat handmatig synchroniseren
 
-Soms duurt het te lang om een app te downloaden via de bedrijfsportal. In dat geval kunt u proberen het apparaat handmatig te synchroniseren. Dit betekent dat u uw apparaat de opdracht geeft om opnieuw te proberen de informatie op te halen die mogelijk lastig te downloaden is.
+Soms duurt het te lang om een app te downloaden via de bedrijfsportal. Synchroniseer uw apparaat in dat geval handmatig. Via handmatig synchroniseren wordt de informatie opgehaald die het apparaat niet zelf kan downloaden.
 
 1. Open de app Bedrijfsportal.
 
-2. Kies in de sectie **Mijn apparaten** het apparaat dat u momenteel gebruikt. Dit is de meest linkse apparaattegel die is voorzien van een selectievakje.
+2. Tik op **apparaten**. Als u meerdere apparaten hebt, ziet u een lijst met apparaten. Kies het apparaat dat u momenteel gebruikt. Als u slechts één apparaat hebt, gaat u rechtstreeks naar het scherm met details voor dat apparaat.
 
-    ![Apparaatscherm met de sectie Mijn apparaten](./media/ios-sync-1-comp-portal-apps.png)
+    ![Schermopname van het scherm Apparaten, waarin twee apparaten worden weergegeven. Bij het apparaat dat bovenaan staat, wordt de tekst ‘Dit is de iPhone 6 Plus die u momenteel gebruikt’ weergegeven.](/intune-user-help/media/ios_sync_1_CP_after_1804.png)
 
-3. Tik op de knop **Synchroniseren** rechtsonder in het scherm.
+3. Tik op **Instellingen controleren** om uw apparaat te synchroniseren. Op het scherm wordt een laadbalk getoond totdat de synchronisatie is voltooid.
 
-    ![Apparaatgegevens met de knop Synchroniseren](./media/ios-sync-2-sync-button.png)
+    ![Schermopname van de apparaatdetails waarbij de laatste inchecktijd en een koppeling naar Instellingen controleren worden weergegeven.](/intune-user-help/media/ios_sync_2_CP_after_1804.png)  
 
-Er wordt een laadbalk weergegeven op het scherm en er wordt geladen tot het synchroniseren is voltooid.
+   ![Schermopname van de apparaatdetails waarbij de laadbalk wordt weergegeven nadat de gebruiker op Instellingen controleren heeft geklikt.](/intune-user-help/media/ios_sync_3_CP-after_1804.png)
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+

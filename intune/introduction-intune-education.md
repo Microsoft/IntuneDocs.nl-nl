@@ -2,23 +2,23 @@
 title: Wat is Intune for Education?
 description: Informatie over het verschil tussen Intune for Education en volledig Intune-beheer.
 keywords: wat is Intune
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/21/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f98e9cd82508f4b41d62a61baf06c9add2c3626e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 30195ee56e99754f5ed385291823adef08d6ce01
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Waarin verschilt Intune for Education van het volledige Intune-beheer?
 
@@ -39,6 +39,6 @@ Met Intune en Intune for Education kunt u:
 * Zorgen dat apparaten en apps voldoen aan de beveiligingsvereisten.
 
 ### <a name="next-steps"></a>Volgende stappen
-* Vertrouwd raken met het product [met een 90-daagse evaluatieversie van Intune](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1). Als u al toegang hebt, gaat u naar (https://intuneeducation.portal.azure.com) om aan de slag te gaan.
+* Vertrouwd raken met het product [met een 90-daagse evaluatieversie van Intune](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1). Ga naar https://intuneeducation.portal.azure.com) als u al toegang hebt om aan de slag te gaan.
 * Meer informatie over de snelste manier om te [beginnen met het gebruik van Intune for Education](/intune-education/what-is-express-configuration).
 * Duik in de [technische vereisten en mogelijkheden](/intune/supported-devices-browsers) van Intune.

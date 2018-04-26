@@ -1,25 +1,24 @@
 ---
-title: Netwerktoegangsbeheer integreren met Intune
-titlesuffix: 
-description: Netwerktoegangsbeheer integreren met Intune
-keywords: 
+title: Netwerktoegangsbeheer integreren met Microsoft Intune - Azure | Microsoft Docs
+description: De oplossingen voor netwerktoegangsbeheer controleren de inschrijving en naleving voor apparaten met Intune. Netwerktoegangsbeheer omvat bepaald gedrag en werkt met voorwaardelijke toegang. Zie de stappen voor het onboarding-proces en een lijst met partneroplossingen.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f54f04bc5a63c8a431eddaf4210fcb290942cc3
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bdf6b5b71c71dd8b1a9a5c9154953d1ebc07d0dc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Netwerktoegangsbeheer integreren met Intune
 
@@ -27,7 +26,7 @@ Intune kan worden geïntegreerd met producten van partners voor netwerktoegangsb
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>De resources van uw organisatie beveiligen met Intune en NAC-oplossingen
 
-NAC-oplossingen zijn verantwoordelijk voor het controleren van de apparaatregistratie en nalevingsstatus bij Intune om op basis hiervan beslissingen over toegangsbeheer te nemen. Als het apparaat niet is geregistreerd, of wel is geregistreerd maar niet voldoet aan het Intune-nalevingsbeleid voor apparaten, moet het apparaat worden omgeleid naar Intune voor registratie en/of een compatibiliteitscontrole.
+NAC-oplossingen controleren de apparaatregistratie en nalevingsstatus bij Intune om op basis hiervan beslissingen over toegangsbeheer te nemen. Als het apparaat niet is geregistreerd, of wel is geregistreerd maar niet voldoet aan het Intune-nalevingsbeleid voor apparaten, moet het apparaat worden omgeleid naar Intune voor registratie en/of een compatibiliteitscontrole.
 
 ### <a name="example"></a>Voorbeeld
 
@@ -45,7 +44,7 @@ NAC werkt met voorwaardelijke toegang om beslissingen voor toegangsbeheer mogeli
 
 ## <a name="how-the-nac-integration-works"></a>De werking van NAC-integratie
 
-Hier volgt een overzicht van de manier waarop NAC-integratie werkt in combinatie met Intune. In de eerste drie stappen wordt het onboarding-proces uitgelegd. Als de NAC-oplossing na die stappen is geïntegreerd met Intune, wordt in stappen 4-9 de werking van de oplossing beschreven.
+Hieronder volgt een overzicht van de manier waarop NAC-integratie werkt in combinatie met Intune. In de eerste drie stappen wordt het onboarding-proces uitgelegd. Zodra de NAC-oplossing in Intune is geïntegreerd, kunt u in de stappen 4-9 de lopende bewerking zien.
 
 ![De werking van NAC met Intune](./media/ca-intune-common-ways-2.png)
 
@@ -64,3 +63,4 @@ Hier volgt een overzicht van de manier waarop NAC-integratie werkt in combinatie
 - [Cisco ISE integreren met Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Citrix NetScaler integreren met Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
 - [HP Aruba Clear Pass integreren met Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
+- [Squadra security Removable Media Manager (secRMM) integreren met Intune](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

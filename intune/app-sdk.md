@@ -2,24 +2,24 @@
 title: Voordelen van de Intune App SDK
 titlesuffix: Microsoft Intune
 description: De Microsoft Intune App SDK is beschikbaar voor zowel het iOS-platform als het Android-platform en maakt Mobile App Management-functies mogelijk met Microsoft Intune.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae22d3e718fd01330b81206921b6e9a23313a30f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b34963761e9700d6cb742cb90979be30d5ae6b3e
+ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Overzicht van de Intune App SDK
 Met de Intune App SDK voor iOS en Android kan uw app worden in geschakeld voor Intune-beleid voor app-beveiliging. Deze streeft ernaar om het aantal door de app-ontwikkelaar vereiste codewijzigingen zo klein mogelijk te maken. U ziet dat u de meeste van de SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. U kunt de API's gebruiken voor het aanpassen van uw app-gedrag voor functies waarvoor de deelname van uw app is vereist, voor een verbeterde ervaring voor eindgebruikers en IT-beheerders.
@@ -64,7 +64,7 @@ De functie voor het gebruik van meerdere identiteiten helpt bij het oplossen van
 ### <a name="app-protection-without-device-enrollment"></a>App-beveiliging zonder apparaatregistratie
 
 >[!IMPORTANT]
->App-beveiligingsbeleid van Intune zonder apparaatregistratie is beschikbaar voor de Intune App Wrapping Tool, Intune App SDK voor Android, Intune App SDK voor iOS, SDK Xamarin Component en de SDK Cordova-invoegtoepassing.
+>App-beveiligingsbeleid van Intune zonder apparaatregistratie is beschikbaar voor de Intune App Wrapping Tool, Intune App SDK voor Android, Intune App SDK voor iOS, Intune App SDK Xamarin Bindings en de SDK Cordova-invoegtoepassing.
 
 Veel gebruikers met privé-apparaten willen toegang tot bedrijfsgegevens zonder hun privé-apparaat te moeten registreren met een Mobile Device Management-provider (MDM-product). Omdat voor MDM-registratie algemeen beheer van het apparaat is vereist, willen gebruikers de algemene controle over hun persoonlijk apparaat niet altijd aan hun bedrijf geven.
 

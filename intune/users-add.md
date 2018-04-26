@@ -15,15 +15,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bbfa42b8ec03cfbe97efdae21f493b68c53d769
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0d38d7671218bfcecd3d2aa4671a565e0cabe37f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Als beheerder kunt u gebruikers rechtstreeks toevoegen of gebruikers synchroniseren via uw on-premises Active Directory. Zodra gebruikers zijn toegevoegd, kunnen ze apparaten registreren en hebben ze toegang tot bedrijfsresources. U kunt gebruikers ook aanvullende machtigingen geven, zoals de machtigingen *globale beheerder* en *servicebeheerder*.
 
@@ -35,16 +35,16 @@ U kunt handmatig gebruikers aan uw Intune-abonnement toevoegen via de [Office 36
 2. Selecteer **Beheer** in het menu Office 365.
 3. Selecteer **Nieuwe gebruiker** in het beheercentrum.
 
-  ![Schermafbeelding van de sectie Een gebruiker toevoegen](media/office-add-user.png)
+   ![Schermafbeelding van de sectie Een gebruiker toevoegen](media/office-add-user.png)
 
 4. Geef de volgende gebruikersgegevens op:
-  - **Voornaam**
-  - **Achternaam**
-  - **Weergavenaam**
-  - **Gebruikersnaam**: user principal name (UPN), opgeslagen in Azure Active Directory (voor toegang tot de service)
-  - **Locatie**
-  - **Contactgegevens** (optioneel)
-  - **Wachtwoord**: automatisch genereren of opgeven
+   - **Voornaam**
+   - **Achternaam**
+   - **Weergavenaam**
+   - **Gebruikersnaam**: user principal name (UPN), opgeslagen in Azure Active Directory (voor toegang tot de service)
+   - **Locatie**
+   - **Contactgegevens** (optioneel)
+   - **Wachtwoord**: automatisch genereren of opgeven
 
      ![Schermafbeelding van de sectie Nieuwe gebruiker](media/office-add-user-details.png)
 
@@ -55,16 +55,16 @@ U kunt handmatig gebruikers aan uw Intune-abonnement toevoegen via de [Office 36
 1. Meld u aan bij [Azure Portal](https://portal.azure.com) en ga naar **Alle services** > **Bewaking en beheer** > **Intune**. U kunt ook *zoeken naar resources* voor **Intune**.
 2. Selecteer **Gebruikers** > **Alle gebruikers**.
 3. Selecteer **Nieuwe gebruiker** in het beheercentrum.
-  ![Schermafbeelding van Nieuwe gebruiker toevoegen](media/intune-add-user.png)
+   ![Schermafbeelding van Nieuwe gebruiker toevoegen](media/intune-add-user.png)
 4. Geef de volgende gebruikersgegevens op:
-  - **Naam**
-  - **Gebruikersnaam**: de nieuwe naam in de Azure Active Directory-portal ![Schermafbeelding van het toevoegen van naam en gebruikersnaam](media/intune-add-user-info.png) Kies **OK** om door te gaan.
+   - **Naam**
+   - **Gebruikersnaam**: de nieuwe naam in de Azure Active Directory-portal ![Schermafbeelding van het toevoegen van naam en gebruikersnaam](media/intune-add-user-info.png) Kies **OK** om door te gaan.
 5. U kunt desgewenst de volgende gebruikerseigenschappen opgeven:
-  - **Profiel**: werkinformatie zoals **Functie** en **Afdeling**
-  -  **Groepen**: selecteer groepen die u wilt toevoegen voor de gebruiker
-  - **Directory-rol**: verleen de gebruiker beheerdersmachtigingen, inclusief een Intune-servicebeheerdersrol.
+   - **Profiel**: werkinformatie zoals **Functie** en **Afdeling**
+   -  **Groepen**: selecteer groepen die u wilt toevoegen voor de gebruiker
+   - **Directory-rol**: verleen de gebruiker beheerdersmachtigingen, inclusief een Intune-servicebeheerdersrol.
 
-  Selecteer **Maken** om de nieuwe gebruiker toe te voegen aan Intune.
+   Selecteer **Maken** om de nieuwe gebruiker toe te voegen aan Intune.
 6. Selecteer **Profiel** en kies vervolgens een **gebruikslocatie** voor de nieuwe gebruiker. Een gebruikslocatie is vereist om een licentie voor Intune te kunnen toewijzen aan de nieuwe gebruiker. Kies **Opslaan** om door te gaan.
     ![Schermafbeelding van de gebruikslocatie](media/intune-add-user-loc.png)
 7. Selecteer **Licenties** en kies vervolgens **Toewijzen** om een Intune-licentie voor deze gebruiker toe te wijzen. Een Intune-licentie is vereist voor het registreren van apparaten of om toegang te krijgen tot bedrijfsresources. Selecteer **Producten**, kies het licentietype, kies **Selecteren** en kies ten slotte **Toewijzen**.
@@ -112,7 +112,7 @@ Voor toegang tot de Office 365-portal moet **Toegestane gebruikers aanmelden** z
 U kunt adreslijstsynchronisatie configureren voor het importeren van gebruikersaccounts uit de on-premises Active Directory in Microsoft Azure Active Directory (Azure AD) die Intune-gebruikers bevat. Het koppelen van uw on-premises Active Directory-service aan alle Azure Active Directory-services zorgt ervoor dat het beheer van gebruikersidentiteiten veel eenvoudiger wordt. U kunt ook eenmalige aanmelding configureren om de verificatie vertrouwd en eenvoudig te maken voor uw gebruikers. Door dezelfde [Azure AD-tenant](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) te koppelen met meerdere services, zijn de gebruikersaccounts die u eerder hebt gesynchroniseerd, beschikbaar voor alle cloudservices.
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>On-premises gebruikers synchroniseren met Azure AD
-Het enige hulpprogramma dat u nodig hebt om uw gebruikersaccounts te synchroniseren met Azure AD, is de [Azure AD Connect-wizard](https://www.microsoft.com/download/details.aspx?id=47594). De Azure AD Connect-wizard biedt een vereenvoudigde begeleiding voor het verbinden van de on-premises infrastructuur voor identiteiten aan de cloud.  Kies uw topologie en behoeften (één of meerdere mappen, wachtwoordsynchronisatie of federatie). De wizard implementeert en configureert alle onderdelen die zijn vereist om de verbinding mogelijk te maken. Inclusief: synchronisatieservices, Active Directory Federation Services (AD FS) en de Azure AD PowerShell-module.
+Het enige hulpprogramma dat u nodig hebt om uw gebruikersaccounts te synchroniseren met Azure AD, is de [Azure AD Connect-wizard](https://www.microsoft.com/download/details.aspx?id=47594). De Azure AD Connect-wizard biedt een vereenvoudigde begeleiding voor het verbinden van de on-premises infrastructuur voor identiteiten aan de cloud. Kies uw topologie en behoeften (één of meerdere mappen, synchronisatie van wachtwoordhashes, pass-through-verificatie of federatie). De wizard implementeert en configureert alle onderdelen die zijn vereist om de verbinding mogelijk te maken. Inclusief: synchronisatieservices, Active Directory Federation Services (AD FS) en de Azure AD PowerShell-module.
 
 > [!TIP]
 > Azure AD Connect bevat functionaliteit die eerder is uitgebracht als Dirsync en Azure AD Sync. Lees meer over [adreslijstintegratie](http://technet.microsoft.com/library/jj573653.aspx). Zie [Overeenkomsten tussen Active Directory en Azure AD](http://technet.microsoft.com/library/dn518177.aspx) voor meer informatie over het synchroniseren van gebruikersaccounts vanuit de lokale directory naar Azure AD.

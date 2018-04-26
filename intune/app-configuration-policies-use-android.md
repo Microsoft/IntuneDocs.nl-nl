@@ -2,30 +2,30 @@
 title: App-configuratiebeleidsregels toevoegen voor beheerde Android-apparaten
 titlesuffix: Microsoft Intune
 description: App-configuratiebeleidsregels gebruiken in Microsoft Intune om instellingen te leveren wanneer gebruikers een Android for Work-app uitvoeren.
-keywords: 
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a448c33e8324492c68d509a12d5901f41ed4873a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>App-configuratiebeleidsregels toevoegen voor beheerde Android-apparaten
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-App-configuratiebeleidsregels gebruiken in Microsoft Intune om instellingen te leveren wanneer gebruikers een Android for Work-app uitvoeren. U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats daarvan koppelt u een beleid aan een app en wijst u vervolgens de app toe. De beleidsinstellingen worden gebruikt wanneer de app deze controleert, doorgaans bij de eerste keer dat de app wordt uitgevoerd.
+Gebruik app-configuratiebeleidsregels in Microsoft Intune om instellingen te leveren voor Android for Work-apps. De ontwikkelaar van de app moet configuratie-instellingen voor beheerde Android-apps weergeven om configuratie-instellingen voor de app op te kunnen geven. Wijs het app-configuratiebeleid toe aan de gebruikersgroep waarop u de instellingen wilt toepassen.  De beleidsinstellingen worden gebruikt wanneer de app deze controleert, doorgaans bij de eerste keer dat de app wordt uitgevoerd.
 
 > [!Note]  
 > Niet elke app ondersteunt app-configuratie. Vraag aan de app-ontwikkelaar of deze de app zo heeft geconstrueerd dat deze app-configuratiebeleidsregels ondersteunt.
@@ -50,16 +50,27 @@ App-configuratiebeleidsregels gebruiken in Microsoft Intune om instellingen te l
 
 ## <a name="use-the-configuration-designer"></a>Configuration Designer gebruiken
 
-U kunt Configuration Designer gebruiken voor apps op apparaten die wel of niet zijn ingeschreven bij Intune. Met de ontwerper kunt u specifieke configuratiesleutels en -waarden instellen. U kunt tevens het gegevenstype voor elke waarde opgeven.
+U kunt de Configuration Designer gebruiken voor Android-apps die configuratie ondersteunen. Configuratie is van toepassing op apparaten die zijn ingeschreven bij Intune. Met de Designer kunt u specifieke configuratiewaarden configureren voor de instellingen die voor een app beschikbaar zijn.
 
+Selecteer **Toevoegen** om de lijst met configuratie-instellingen te selecteren die u wilt opgeven voor de app.  
 Stel voor elke sleutel en waarde in de configuratie het volgende in:
 
-  - **Configuratiesleutel**  
-     De sleutel waarmee de specifieke instellingsconfiguratie wordt geïdentificeerd.
   - **Waardetype**  
-    Het gegevenstype van de configuratiewaarde. Typen zijn onder meer geheel getal, reëel, tekenreeks of booleaans.
+    Het gegevenstype van de configuratiewaarde. Voor het waardetype Tekenreeks kunt u een variabel profiel of een certificaatprofiel als waardetype kiezen (optioneel).
   - **Configuratiewaarde**  
-    De waarde voor de configuratie. 
+    De waarde voor de configuratie. Als u Variabel of Certificaat als waardetype selecteert, kunt u kiezen uit een lijst met variabelen of certificaatprofielen in de vervolgkeuzelijst met configuratiewaarden.  Als u een certificaat kiest, wordt de alias van het certificaat dat is geïmplementeerd op het apparaat tijdens runtime ingevuld.
+    
+### <a name="supported-variables-for-configuration-values"></a>Ondersteunde variabelen voor configuratiewaarden
+
+U kunt de volgende opties kiezen als u Variabele als het waardetype kiest:
+- User Principal Name: bijvoorbeeld **John@contoso.com**
+- Mail: bijvoorbeeld **John@contoso.com**
+- Partian UPN: bijvoorbeeld **Jan**
+- Account-id: bijvoorbeeld **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- Apparaat-id: bijvoorbeeld **b9841cd9-9843-405f-be28-b2265c59ef97**
+- Gebruikers-id: bijvoorbeeld **3ec2c00f-b125-4519-acf0-302ac3761822**
+- Gebruikersnaam: bijvoorbeeld **Jan de Vries**
+
 
 ## <a name="enter-the-json-editor"></a>De JSON-editor invoeren
 

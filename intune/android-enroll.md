@@ -2,28 +2,28 @@
 title: Android-apparaten inschrijven in Intune
 titlesuffix: Microsoft Intune
 description: Meer informatie over het inschrijven van Android-apparaten in Intune.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-android-devices"></a>Android-apparaten inschrijven
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Als Intune-beheerder kunt u Android-apparaten beheren, waaronder Samsung Knox Standard-apparaten. U kunt ook het werkprofiel [Android for Work-apparaten](#enable-enrollment-of-android-for-work-devices) beheren.
 
@@ -47,6 +47,8 @@ Als u het werkprofiel op apparaten met [ondersteuning voor Android for Work](htt
 
 Als u Android for Work-apparaten inschrijft met een [Device Enrollment Manager](device-enrollment-manager-enroll.md)-account, kunt u per account 10 apparaten inschrijven.
 
+Zie [Gegevens die Intune naar Google stuurt](data-intune-sends-to-google.md) voor meer informatie.
+
 ## <a name="add-android-for-work-binding-for-intune"></a>Android for Work-binding toevoegen voor Intune
 
 > [!NOTE]
@@ -55,15 +57,18 @@ Als u Android for Work-apparaten inschrijft met een [Device Enrollment Manager](
 1. **Intune MDM instellen**<br>
 Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door [de instantie voor het beheer van mobiele apparaten in te stellen](mdm-authority-set.md) als **Microsoft Intune**.
 2. **Android for Work-binding configureren**<br>
-    Meld u als Intune-beheerder aan bij [Azure Portal](https://portal.azure.com) en kies **Alle services** > **Bewaking en beheer** > **Intune**.
-
-   a. Kies in het deelvenster **Intune** de optie **Apparaatinschrijving** > **Inschrijving van Android for Work** en klik op **Beheerde Google Play - Configureren** om de Android for Work-website van Google Play te openen. De website wordt op een nieuw tabblad in de browser geopend.
+    
+   a. Meld u aan bij [Intune in de Azure Portal](https://aka.ms/intuneportal), selecteer **Apparaatinschrijving** > **Android-inschrijving** > **Beheerd Google Play**.
    ![Android for Work-registratiescherm](./media/android-work-bind.png)
 
-   b. **Aanmelden bij Google**<br>
+   b. Selecteer **Ik ga akkoord** om Microsoft toestemming te geven om [gebruikers- en apparaatgegevens naar Google te verzenden](data-intune-sends-to-google.md). 
+   
+   c. Selecteer **Google nu starten om verbinding te maken** om de Android for Work-website van Google Play te openen. De website wordt op een nieuw tabblad in de browser geopend.
+  
+   d. **Aanmelden bij Google**<br>
    Meld u aan op de aanmeldingspagina van Google met het Google-account dat wordt gekoppeld aan alle Android for Work-beheertaken voor deze tenant. Dit is het Google-account dat de IT-beheerders van uw bedrijf gebruiken voor het beheren en publiceren van apps in de Play for Work-console. U kunt een bestaand Google-account gebruiken of een nieuw account maken.  Het account dat u kiest moet niet worden gekoppeld aan een G-Suite-domein.
 
-   c. **Organisatiegegevens opgeven**<br>
+   e. **Organisatiegegevens opgeven**<br>
    Geef bij **Organization name** (Organisatienaam) de naam van uw bedrijf op. Bij **Enterprise mobility management (EMM) provider** moet **Microsoft Intune** worden weergegeven. Ga akkoord met de overeenkomst voor Android for Work en kies **Confirm** (Bevestigen). Uw aanvraag wordt verwerkt.
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Inschrijvingsinstellingen voor Android for Work opgeven
@@ -110,3 +115,14 @@ U kunt Android for Work-registratie en -beheer uitschakelen. Als u **Binding ver
 
 2. **Verwijderen van Android for Work-binding bevestigen**<br>
   Kies **Ja** om de binding te verwijderen en de inschrijving van alle Android for Work-apparaten in Intune ongedaan te maken.
+
+## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Ervaring van eindgebruikers bij het inschrijven van een Samsung Knox-apparaat
+Er zijn verschillende overwegingen bij het inschrijven van Samsung Knox-apparaten:
+-   Zelfs als er voor geen enkel beleid een pincode is vereist, moet het apparaat over ten minste één viercijferige pincode beschikken om te kunnen worden ingeschreven. Als het apparaat niet over een pincode beschikt, wordt de gebruiker gevraagd er een te maken.
+-   Er is geen gebruikersinteractie voor Workplace Join Certificates (WPJ).
+-   De gebruiker krijgt een overzicht van informatie over inschrijving bij de service en de functies van de app.
+-   De gebruiker krijgt een overzicht van informatie over inschrijving bij Knox en de functies van Knox.
+-   Als er een versleutelingsbeleid van kracht is, moeten gebruikers een complex wachtwoord van zes tekens instellen als wachtwoordcode voor het apparaat.
+-   De gebruiker wordt niet gevraagd extra certificaten te installeren die door een service voor toegang tot bedrijfsrecoures worden gepusht.
+- Op sommige oudere Knox-apparaten worden gebruikers om aanvullende certificaten gevraagd die voor toegang tot bedrijfsresources worden gebruikt.
+- Als de WPJ niet kan worden geïnstalleerd op een Samsung Mini-apparaat, met ofwel de foutmelding **Certificaat niet gevonden** of de fout **Kan apparaat niet registreren**, dient u de nieuwste Samsung Firmware-updates te installeren.

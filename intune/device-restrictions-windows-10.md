@@ -1,28 +1,27 @@
 ---
-title: Microsoft Intune-apparaatbeperkingsinstellingen voor Windows 10
-titlesuffix: 
+title: Apparaatbeperkingsinstellingen voor Windows 10 in Microsoft Intune - Azure | Microsoft Docs
 description: Meer informatie over de Microsoft Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op apparaten met Windows 10.
-keywords: 
-author: vhorne
-ms.author: victorh
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 4/9/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Apparaatbeperkingsinstellingen voor Windows 10-apparaten (en hoger) in Microsoft Intune
+# <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Apparaatbeperkingsinstellingen voor Windows 10 (en hoger) in Intune
 In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met Windows 10.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Algemeen
 - **Schermafbeelding (alleen mobiel)**: hiermee kan de gebruiker het apparaatscherm vastleggen als afbeelding.
@@ -51,7 +50,6 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
 - **Ink-werkruimte**: blokkeer gebruikers zodat ze geen toegang meer hebben tot de Ink-werkruimte. Als deze instelling niet wordt geconfigureerd, wordt de Ink-werkruimte ingeschakeld (de functie wordt ingeschakeld) en mag de gebruiker deze gebruik van maken boven het vergrendelingsscherm.
 - **Automatisch opnieuw implementeren**: hiermee kunnen gebruikers met beheerdersrechten alle gebruikersgegevens en -instellingen verwijderen met **CTRL + Win + R** op het vergrendelingsscherm van het apparaat. Het apparaat wordt automatisch opnieuw geconfigureerd en opnieuw ingeschreven bij het beheer.
 
-
 ## <a name="password"></a>Wachtwoord
 -   **Wachtwoord**: hiermee geeft u aan dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.
     -   **Vereist wachtwoordtype**: hiermee geeft u aan of het wachtwoord alleen numeriek of alfanumeriek moet zijn.
@@ -75,7 +73,6 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 -   **Automatische acceptatie van de goedkeuringsvensters voor koppelen en privacy**: hiermee kunt u instellen dat Windows automatisch toestemming mag geven voor bewerkingen met koppelen en privacy bij het uitvoeren van apps.
 - **Gebruikersactiviteiten publiceren**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar te voorkomen.
 - **Alleen lokale activiteiten**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar alleen op basis van de lokale activiteit te voorkomen.
-
 
 U kunt de informatie definiëren die voor alle apps op het apparaat toegankelijk is. U kunt ook uitzonderingen definiëren op een per-app basis met **Privacyuitzonderingen per app**.
 
@@ -137,8 +134,6 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 -   **Pop-upmeldingen op vergrendeld scherm**: geen waarschuwingsberichten weergeven op het vergrendelingsscherm van het apparaat.
 -   **Time-out voor het scherm (alleen mobiel)**: hiermee geeft u de tijd in seconden op waarna het scherm wordt uitgeschakeld nadat het scherm is vergrendeld.
 
-
-
 ## <a name="app-store"></a>App Store
 
 -   **App Store (alleen mobiel)**: hiermee kunt u het gebruik van de App Store op Windows 10 Mobile-apparaten inschakelen of blokkeren.
@@ -152,8 +147,6 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 -   **Apps installeren op systeemstation**: apps kunnen geen gegevens opslaan op het systeemstation van het apparaat.
 -   **Game-DVR (alleen desktop)**: hiermee bepaalt u of het opnemen en uitzenden van games is toegestaan.
 -   **Alleen voor apps uit de Store**: hiermee bepaalt u of gebruikers apps kunnen installeren vanuit andere locaties dan de App Store.
-
-
 
 ## <a name="edge-browser"></a>Microsoft Edge-browser
 
@@ -192,6 +185,7 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 
 ## <a name="search"></a>Zoeken
 - **Veilig zoeken (alleen mobiel)**: hiermee bepaalt u hoe Cortana inhoud voor volwassenen filtert in de zoekresultaten. U kunt **Strikt** of **Gemiddeld** selecteren, of u kunt toestaan dat eindgebruikers hun eigen instellingen kiezen.
+- **Display web results in search** (Webresultaten weergeven in zoekopdracht): hiermee blokkeert u of staat u toe dat webresultaten worden weergegeven in zoekopdrachten die op het apparaat worden uitgevoerd.
 
 ## <a name="cloud-and-storage"></a>Cloud en opslag
 -   **Microsoft-account**: hiermee staat u toe dat de gebruiker een Microsoft-account aan het apparaat kan koppelen.
@@ -215,7 +209,6 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 -   **Handmatige configuratie van Wi-Fi**: hiermee geeft u aan of de gebruiker zijn of haar eigen Wi-Fi-verbindingen kan instellen, of dat de gebruiker alleen verbindingen kan gebruiken die door een Wi-Fi-profiel zijn geconfigureerd (alleen voor Windows 10 Mobile).
 -   **Wi-Fi-scaninterval**: geef op hoe vaak apparaten zoeken naar Wi-Fi-netwerken. Geef een waarde op tussen 1 (zo vaak mogelijk) en 500 (zo min mogelijk).
 -   **Services waarvoor Bluetooth is toegestaan**: geef een lijst met toegestane Bluetooth-services en -profielen op, in de vorm van hexadecimale tekenreeksen.
-
 
 ## <a name="control-panel-and-settings"></a>Configuratiescherm en instellingen
 
@@ -258,41 +251,48 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 
 ## <a name="kiosk-preview"></a>Kiosk (preview)
 
--   **Kioskmodus**: hiermee identificeert u het type [kioskmodus](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) dat wordt ondersteund door het beleid. Opties zijn onder andere:
+Op een kioskapparaat wordt doorgaans één app of een specifieke set met apps uitgevoerd. Gebruikers hebben geen toegang tot functies op het apparaat buiten de kiosk-apps.
 
-      - **Niet geconfigureerd** (standaard): door het beleid wordt geen kioskmodus ingeschakeld. 
-      - **Kiosk voor één enkele app**: het profiel schakelt het apparaat in als kiosk voor één enkele app.
-      - **Kiosk voor meerdere apps**: het profiel schakelt het apparaat in als kiosk voor meerdere apps.
+- **Kioskmodus**: hiermee identificeert u het type kioskmodus dat wordt ondersteund door het beleid. Opties zijn onder andere:
 
-    Voor kiosken voor één enkele app zijn de volgende instellingen vereist:
+  - **Niet geconfigureerd** (standaard): door het beleid wordt geen kioskmodus ingeschakeld. 
+  - **Kiosk voor één enkele app**: volgens het profiel kan het apparaat slechts één enkele app uitvoeren. Wanneer de gebruiker zich aanmeldt, wordt een specifieke app gestart. Deze modus voorkomt ook dat de gebruiker nieuwe apps kan openen of de actieve app kan wijzigen.
+  - **Kiosk voor meerdere apps**: volgens het profiel kan het apparaat meerdere apps uitvoeren. Alleen de apps die u toevoegt, zijn beschikbaar voor de gebruiker. Het voordeel van een kiosk voor meerdere apps, of apparaat voor een vast doel, is dat het een eenvoudige ervaring biedt voor gebruikers door alleen toegang te geven tot apps die ze nodig hebben en de apps die ze niet nodig hebben te verwijderen uit hun weergave.
 
-      - **Gebruikersaccount**: hiermee geeft u het lokale (op het apparaat) gebruikersaccount of de aanmelding aan van het Azure AD-account dat is gekoppeld aan de kiosk-app. Voor accounts die zijn gekoppeld aan Azure AD-domeinen geeft u het account op in de vorm van `domain\\username@tenant.org`.
+#### <a name="single-app-kiosks"></a>Kiosken voor één enkele app
+Voer de volgende instellingen in:
 
-         Voor apparaten in openbare omgevingen gebruikt u accounts met minimale bevoegdheden om niet-geautoriseerde activiteit te voorkomen.  
+- **Gebruikersaccount**: voer het lokale (op het apparaat) gebruikersaccount of de aanmelding in van het Azure AD-account dat is gekoppeld aan de kiosk-app. Voor accounts die zijn gekoppeld aan Azure AD-domeinen geeft u het account op in de indeling `domain\username@tenant.org`. 
 
-      - **Model-id van toepassingsgebruiker (AUMID)**: hiermee geeft u de AUMID van de kiosk-app aan. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) voor meer informatie.
+    Voor kiosken in openbare omgevingen waarvoor automatische aanmelding is ingeschakeld, moet een gebruikerstype met minimale bevoegdheden (zoals het lokale standaardgebruikersaccount) worden gebruikt. Voor de configuratie van een Azure Active Directory-account voor de kioskmodus gebruikt u de indeling `AzureAD\user@contoso.com`.
 
-    [Voor kiosken voor meerdere apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) is een kioskconfiguratie vereist. Gebruik de knop **Toevoegen** om een kioskconfiguratie te maken of een bestaande configuratie te selecteren.
+- **Model-id van toepassingsgebruiker (AUMID)**: voer de AUMID van de kiosk-app in. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) voor meer informatie.
 
-    Configuraties voor kiosken voor meerdere apps bevatten de volgende instellingen:
+#### <a name="multi-app-kiosks"></a>Kiosken voor meerdere apps
+[Kiosken voor meerdere apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) gebruiken een configuratie met een lijst met toegestane apps en andere instellingen. 
 
-    - **De naam van de kioskconfiguratie**: een beschrijvende naam voor de identificatie van een bepaalde configuratie.
+Gebruik de knop **Toevoegen** om een kioskconfiguratie te maken (of een bestaande configuratie te selecteren). Voer vervolgens de volgende instellingen in:
 
-    - Een of meer **kiosk-apps** die bestaan uit:
+- **De naam van de kioskconfiguratie**: voer een beschrijvende naam in voor de identificatie van de configuratie.
 
-        - Het **App-type** dat het type van de kiosk-app aangeeft.  Ondersteunde waarden zijn:   
+- **Kiosk-apps**: voer de apps in die beschikbaar in het menu Start. De apps die u toevoegt, zijn de enige apps die de gebruiker kan openen.
 
-            - **Win32-App**: een traditionele bureaublad-app. (U hebt de volledige padnaam nodig van het uitvoerbare bestand met betrekking tot het apparaat.)
+  - **App-type**: kies het type kiosk-app:
+    - **Win32-App**: een traditionele bureaublad-app. U hebt de volledige padnaam nodig van het uitvoerbare bestand met betrekking tot het apparaat.
+    - **UWP-app**: een universele Windows-app. U hebt de [AUMID voor de app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) nodig.
 
-            - **UWP-app**: een universele Windows-app. U hebt de [AUMID voor de app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) nodig.
+  - **Id**: voer de volledige padnaam van het uitvoerbare bestand (Win32-apps) of de [AUMID van de app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-apps) in.
 
-        - **App-id**: hiermee geeft u de volledige padnaam van het uitvoerbare bestand (Win32-apps) of de [AUMID van de app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-apps) aan.
+- **Taakbalk**: stel in of u de taakbalk wilt **inschakelen** (weergeven) of **niet geconfigureerd** (verborgen) in de kiosk wilt gebruiken.
 
-    - **Taakbalk** geeft aan of de taakbalk wordt weergegeven (**Ingeschakeld**) of verborgen (**Niet geconfigureerd**) op de kiosk.
+- **Indeling van het menu Start**: voer een XML-bestand in dat beschrijft hoe de apps worden weergegeven in het menu Start. [Customize and export Start layout (Aanpassen en indeling Start exporteren)](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) biedt een aantal richtlijnen en een XML-voorbeeld.
 
-    - **Indeling van het menu Start**: hiermee geeft u een XML-bestand aan dat beschrijft hoe de apps [worden weergegeven in het menu Start](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Toegewezen gebruikers**: hiermee geeft u een of meer gebruikersaccounts aan die zijn gekoppeld aan de configuratie van de kiosk. Het account is een lokaal account op het apparaat of de aanmelding voor een Azure AD-account dat is gekoppeld met de kiosk-app. Geef domeinaccounts aan in de vorm van `domain\\username@tenant.org`.
+  [Create a Windows 10 kiosk that runs multiple apps (Een Windows 10-kiosk maken voor meerdere apps)](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) bevat meer informatie over het maken en gebruiken van XML-bestanden.
+
+- **Toegewezen gebruikers**: voer een of meer gebruikersaccounts in die de apps kunnen gebruiken die u toevoegt. Wanneer een gebruiker zich met het account aanmeldt, zijn alleen de apps beschikbaar die in de configuratie zijn gedefinieerd. Het account is een lokaal account op het apparaat of de aanmelding voor een Azure AD-account dat is gekoppeld met de kiosk-app.
+
+    Voor kiosken in openbare omgevingen waarvoor automatische aanmelding is ingeschakeld, moet een gebruikerstype met minimale bevoegdheden (zoals het lokale standaardgebruikersaccount) worden gebruikt. Voor de configuratie van een Azure Active Directory-account voor de kioskmodus gebruikt u de indeling `domain\user@tenant.com`.
 
 ## <a name="windows-defender-antivirus"></a>Windows Defender Antivirus
 
@@ -328,14 +328,11 @@ Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender even
     -   **Door de gebruiker gedefinieerd**
     -   **Blokkeren**
 
-
-
 ### <a name="windows-defender-antivirus-exclusions"></a>Uitsluitingen voor Windows Defender Antivirus
 
 -   **Bestanden en mappen die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer bestanden aan de uitsluitingslijst toe, zoals **C:\pad** of **%ProgramFiles%\pad\bestandsnaam.exe**. Deze bestanden en mappen worden niet opgenomen in real-timescans of geplande scans.
 -   **Bestandsextensies die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer bestandsextensies zoals **jpg** of **txt** aan de uitsluitingslijst toe. Bestanden met deze extensies worden niet opgenomen in realtime-scans of geplande scans.
 -   **Processen die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer processen van het type **.exe**, **.com** of **.scr** aan de uitsluitingslijst toe. Deze processen worden niet opgenomen in real-timescans of geplande scans.
-
 
 ## <a name="network-proxy"></a>Netwerkproxy
 
@@ -348,9 +345,7 @@ Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender even
     -   **Proxy-uitzonderingen**: voer URL's in die geen gebruik mogen maken van de proxyserver. Scheid de items van elkaar met een puntkomma.
     -   **Proxyserver niet gebruiken voor lokale adressen**: schakel deze optie in als u de proxyserver niet wilt gebruiken voor lokale adressen in uw intranet.
 
-
 ## <a name="windows-spotlight"></a>Windows Spotlight
-
 
 - **Windows Spotlight**: gebruik deze instelling om alle functionaliteit van Windows Spotlight te blokkeren op Windows 10-apparaten. In dat geval zijn de volgende instellingen niet beschikbaar.
     - **Windows-spotlight in het vergrendelingsscherm**: instellen dat Windows Spotlight geen informatie weergeeft op het vergrendelingsscherm van het apparaat.
@@ -360,7 +355,6 @@ Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender even
     - **Windows-spotlight in het Onderhoudscentrum**: suggesties van Windows Spotlight blokkeren, zodat bijvoorbeeld nieuwe apps of beveiligingsinhoud niet wordt vermeld in het actiecentrum van Windows.
     - **Persoonlijke instellingen voor Windows-spotlight**: instellen dat Windows Spotlight de weergave van resultaten aanpast op basis van het gebruik van een apparaat.
     - **Welkomstbericht van Windows**: geen informatie weergeven over nieuwe of bijgewerkte functies.
-
 
 ## <a name="projection"></a>Projectie
 
@@ -394,15 +388,3 @@ Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender even
 - **Berichten synchroniseren (alleen mobiel)**: schakel back-up en herstel van Berichten overal en tekstberichten uit.
 - **Mms (alleen mobiel)**: schakel de Mms-functie voor verzenden/ontvangen op het apparaat uit.
 - **Rcs (alleen mobiel)**: schakel de Rich Communication Services-functie voor verzenden/ontvangen op het apparaat uit.
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,32 +1,29 @@
 ---
-title: Nalevingsbeleid voor apparaten van Microsoft Intune
-titleSuffix: ''
-description: Meer informatie over apparaatnaleving in Microsoft Intune
+title: Nalevingsbeleid voor apparaten in Microsoft Intune - Azure | Microsoft Docs
+description: Vereisten voor het gebruik van apparaatnalevingsbeleid, overzicht van status- en ernstniveaus, gebruik van Respijtperiode-status, werken met voorwaardelijke toegang, verwerking van apparaten zonder toegewezen beleid en de verschillen in naleving tussen de Azure Portal en de klassieke portal in Microsoft Intune
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
+ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb3ec168844708d80c83909ab6c58a52ca62e53c
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Aan de slag met het apparaatnalevingsbeleid van Microsoft Intune
+# <a name="get-started-with-device-compliance-policies-in-intune"></a>Aan de slag met apparaatnalevingsbeleid in Intune
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-Het Intune-apparaatnalevingsbeleid bevat de regels en instellingen waaraan een apparaat moet voldoen om te voldoen aan het beleid van Intune.
-
-Deze regels zijn onder meer de volgende:
+Nalevingsvereisten zijn in wezen regels zoals het vereisen van een apparaatpincode of het vereisen van versleuteling. Het apparaatnalevingsbeleid bevat de regels en instellingen waaraan een apparaat moet voldoen om te voldoen aan het beleid. Deze regels omvatten:
 
 - Een wachtwoord gebruiken voor toegang tot het apparaat
 
@@ -41,10 +38,6 @@ Deze regels zijn onder meer de volgende:
 - Vereisen dat het apparaat zich op of onder het Mobile Threat Defense-niveau bevindt
 
 U kunt een apparaatnalevingsbeleid ook gebruiken om de naleving van uw apparaten te bewaken.
-
-## <a name="device-compliance-requirements"></a>Apparaatcompatibiliteitsvereisten
-
-Nalevingsvereisten zijn in feite regels, zoals het vereisen van een pincode voor het apparaat of versleuteling, die u kunt opgeven als vereist of niet vereist voor een nalevingsbeleid.
 
 <!---### Actions for noncompliance
 
@@ -69,41 +62,34 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="pre-requisites"></a>Vereisten
+## <a name="prerequisites"></a>Vereisten
+Het volgende is vereist om apparaatnalevingsbeleid te gebruiken:
 
-Als u een apparaatnalevingsbeleid wilt gebruiken in Intune, moet u de volgende abonnementen hebben:
+- Gebruik de volgende abonnementen:
 
-- Intune
+  - Intune
+  - Azure Active Directory (AD) Premium
 
-- Azure AD Premium
+- Gebruik een ondersteund platform:
 
-###  <a name="supported-platforms"></a>Ondersteunde platformen:
+  - Android
+  - iOS
+  - macOS (preview)
+  - Windows 8.1
+  - Windows Phone 8.1
+  - Windows 10
 
--   Android
-
--   iOS
-
--   macOS (preview)
-
--   Windows 8.1
-
--   Windows Phone 8.1
-
--   Windows 10
-
-> [!IMPORTANT]
-> Apparaten moeten worden ingeschreven bij Intune om over het nalevingsbeleid voor apparaten te rapporteren.
+- Apparaten moeten worden geregistreerd bij Intune om over het nalevingsbeleid voor apparaten te rapporteren
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Hoe het Intune-apparaatnalevingsbeleid werkt met Azure AD
 
-Wanneer een apparaat wordt ingeschreven bij Intune, vindt het Azure AD-registratieproces plaats, dat de apparaatkenmerken bijwerkt met meer informatie in Azure AD. Een van de belangrijkste apparaatgegevens is de nalevingsstatus van het apparaat, die door de beleidsregels voor voorwaardelijke toegang wordt gebruikt om de toegang tot e-mail en andere bedrijfsmiddelen toe te staan of te blokkeren.
+Wanneer een apparaat wordt ingeschreven bij Intune, begint het Azure AD-registratieproces en worden de apparaatkenmerken in Azure AD bijgewerkt. Een van de belangrijkste apparaatgegevens is de nalevingsstatus van het apparaat. Deze nalevingsstatus wordt door de beleidsregels voor voorwaardelijke toegang gebruikt om de toegang tot e-mail en andere bedrijfsresources toe te staan of te blokkeren.
 
-- Meer informatie over het [Azure AD-registratieproces](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction).
+In het [Azure AD-registratieproces](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) vindt u meer informatie.
 
-### <a name="assigning-a-resulting-device-configuration-profile-status"></a>Een resulterend configuratieprofiel aan een apparaatstatus toewijzen
+### <a name="assign-a-resulting-device-configuration-profile-status"></a>Een resulterend configuratieprofiel aan een apparaatstatus toewijzen
 
-Wanneer aan een apparaat meerdere configuratieprofielen zijn toegewezen en het apparaat verschillende nalevingsstatussen heeft voor twee of meerdere toegewezen configuratieprofielen, moet één resulterende nalevingsstatus worden toegewezen. Deze toewijzing is gebaseerd op een conceptueel ernstniveau dat is toegewezen aan elke nalevingsstatus. Elke nalevingsstatus heeft een van de volgende ernstniveaus:
-
+Wanneer een apparaat meerdere configuratieprofielen heeft en het apparaat verschillende nalevingsstatussen heeft voor twee of meer toegewezen configuratieprofielen, moet één resulterende nalevingsstatus worden toegewezen. Deze toewijzing is gebaseerd op een conceptueel ernstniveau dat is toegewezen aan elke nalevingsstatus. Elke nalevingsstatus heeft een van de volgende ernstniveaus:
 
 |Status  |Ernst  |
 |---------|---------|
@@ -112,22 +98,21 @@ Wanneer aan een apparaat meerdere configuratieprofielen zijn toegewezen en het a
 |Mislukt     |3|
 |Fout     |4|
 
-De resulterende status van twee of meer configuratieprofielen wordt vervolgens toegewezen door het hoogste ernstniveau te selecteren van alle profielen die aan een apparaat zijn toegewezen.
+Wanneer een apparaat meerdere configuratieprofielen heeft, wordt het hoogste ernstniveau van alle profielen toegewezen aan dat apparaat.
 
-Stel dat aan een apparaat drie profielen zijn toegewezen, één met de status In behandeling (ernst = 1), één met de status Geslaagd (ernst = 2) en één met de status Fout (ernst =4). De status Fout heeft het hoogste ernstniveau, waardoor deze status wordt toegewezen als de resulterende nalevingsstatus voor alle drie de profielen.
+Stel dat aan een apparaat drie profielen zijn toegewezen, één met de status In behandeling (ernst = 1), één met de status Geslaagd (ernst = 2) en één met de status Fout (ernst =4). De status Fout heeft het hoogste ernstniveau, waardoor alle drie de profielen de nalevingsstatus Fout hebben.
 
-### <a name="assigning-an-ingraceperiod-status-for-an-assigned-compliance-policy"></a>De status Respijtperiode toewijzen voor een toegewezen nalevingsbeleid
+### <a name="assign-an-ingraceperiod-status"></a>Een Respijtperiode-status toewijzen
 
-De status Respijtperiode voor een nalevingsbeleid is een waarde die wordt bepaald door de combinatie van de respijtperiode van een apparaat en de werkelijke status van een apparaat voor het toegewezen nalevingsbeleid. 
+De Respijtperiode-status voor een nalevingsbeleid is een waarde. Deze waarde wordt bepaald door de combinatie van de respijtperiode van een apparaat en de daadwerkelijke status van een apparaat voor dit nalevingsbeleid.
 
 Als een apparaat de status Niet-compatibel heeft voor een toegewezen nalevingsbeleid, en:
 
-- er geen respijtperiode is toegewezen aan het apparaat, is de toegewezen waarde voor het nalevingsbeleid Niet-compatibel.
-- de respijtperiode voor het apparaat is verlopen, is de toegewezen waarde voor het nalevingsbeleid Niet-compatibel.
-- de respijtperiode voor het apparaat in de toekomst ligt, is de toegewezen waarde voor het nalevingsbeleid Respijtperiode.
+- er geen respijtperiode is toegewezen aan het apparaat, is de toegewezen waarde voor het nalevingsbeleid Niet-compatibel
+- de respijtperiode voor het apparaat is verlopen, is de toegewezen waarde voor het nalevingsbeleid Niet-compatibel
+- de respijtperiode voor het apparaat in de toekomst ligt, is de toegewezen waarde voor het nalevingsbeleid Respijtperiode
 
-De volgende tabel geeft een overzicht van de vorige punten:
-
+De volgende tabel geeft een overzicht van deze punten:
 
 |Werkelijke nalevingsstatus|Waarde van toegewezen respijtperiode|Effectieve nalevingsstatus|
 |---------|---------|---------|
@@ -137,9 +122,9 @@ De volgende tabel geeft een overzicht van de vorige punten:
 
 Zie [Nalevingsbeleid voor Intune-apparaten controleren](compliance-policy-monitor.md) voor meer informatie over het controleren van nalevingsbeleid voor apparaten.
 
-### <a name="assigning-a-resulting-compliance-policy-status"></a>Een resulterende nalevingsbeleidsstatus toewijzen
+### <a name="assign-a-resulting-compliance-policy-status"></a>Een resulterende nalevingsbeleidsstatus toewijzen
 
-Wanneer aan een apparaat meerdere nalevingsbeleidsregels zijn toegewezen en het apparaat verschillende nalevingsstatussen heeft voor twee of meerdere toegewezen nalevingsbeleidsregels, moet één resulterende nalevingsstatus worden toegewezen. Deze toewijzing is gebaseerd op een conceptueel ernstniveau dat is toegewezen aan elke nalevingsstatus. Elke nalevingsstatus heeft een van de volgende ernstniveaus: 
+Wanneer een apparaat meerdere nalevingsbeleidsregels heeft en het apparaat verschillende nalevingsstatussen heeft voor twee of meer toegewezen nalevingsbeleidsregels, wordt één resulterende nalevingsstatus toegewezen. Deze toewijzing is gebaseerd op een conceptueel ernstniveau dat is toegewezen aan elke nalevingsstatus. Elke nalevingsstatus heeft een van de volgende ernstniveaus:
 
 |Status  |Ernst  |
 |---------|---------|
@@ -150,49 +135,73 @@ Wanneer aan een apparaat meerdere nalevingsbeleidsregels zijn toegewezen en het 
 |Niet-compatibel|5|
 |Fout|6|
 
-De resulterende status van twee of meer configuratieprofielen wordt vervolgens toegewezen door het hoogste ernstniveau te selecteren van alle profielen die aan een apparaat zijn toegewezen.
- 
-Stel dat aan een apparaat drie nalevingsbeleidsregels zijn toegewezen, één met de status Onbekend (ernst = 1), één met de status Compatibel (ernst = 3) en één met de status Respijtperiode (ernst =4). De status Respijtperiode heeft het hoogste ernstniveau, waardoor deze status wordt toegewezen als de resulterende nalevingsstatus voor alle drie de profielen.  
+Wanneer een apparaat meerdere nalevingsbeleidsregels heeft, wordt het hoogste ernstniveau van alle beleidsregels toegewezen aan dat apparaat.
 
-##  <a name="ways-to-use-device-compliance-policies"></a>Nalevingsbeleid voor apparaten gebruiken
+Stel dat aan een apparaat drie nalevingsbeleidsregels zijn toegewezen, één met de status Onbekend (ernst = 1), één met de status Compatibel (ernst = 3) en één met de status Respijtperiode (ernst =4). De status Respijtperiode heeft het hoogste ernstniveau, waardoor alle drie de beleidsregels de nalevingsstatus Respijtperiode hebben.
 
-### <a name="with-conditional-access"></a>Met voorwaardelijke toegang
-U kunt een nalevingsbeleid gebruiken met voorwaardelijke toegang om alleen toegang te verlenen aan een of meer apparaten die voldoen aan de regels van het nalevingsbeleid voor de toegang tot e-mail en andere bedrijfsbronnen.
+## <a name="ways-to-use-device-compliance-policies"></a>Nalevingsbeleid voor apparaten gebruiken
 
-### <a name="without-conditional-access"></a>Zonder voorwaardelijke toegang
-U kunt een nalevingsbeleid voor apparaten ook onafhankelijk van voorwaardelijke toegang gebruiken. Bij onafhankelijk gebruik van nalevingsbeleid worden de betreffende apparaten geëvalueerd en samen met hun nalevingsstatus gerapporteerd. U kunt bijvoorbeeld rapporteren over het aantal apparaten dat niet is versleuteld of over welke apparaten jailbroken of geroot zijn. Bij onafhankelijk gebruik van nalevingsbeleid zijn er echter geen toegangsbeperkingen tot bedrijfsbronnen aanwezig.
+#### <a name="with-conditional-access"></a>Met voorwaardelijke toegang
+Voor apparaten die aan beleidsregels voldoen, kunt u die apparaten toegang verlenen tot e-mail en andere bedrijfsresources. Als de apparaten niet aan beleidsregels voldoen, krijgen ze geen toegang tot bedrijfsresources. Dit wordt voorwaardelijke toegang genoemd.
 
-U implementeert nalevingsbeleid voor gebruikers. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden de apparaten van de gebruiker gecontroleerd op naleving. Raadpleeg [Problemen met apparaatprofielen oplossen in Microsoft Intune](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned) voor meer informatie over hoe lang het duurt voordat mobiele apparaten een beleid krijgen nadat het beleid is geïmplementeerd.
+#### <a name="without-conditional-access"></a>Zonder voorwaardelijke toegang
+U kunt nalevingsbeleid voor apparaten ook zonder voorwaardelijke toegang gebruiken. Bij onafhankelijk gebruik van nalevingsbeleid worden de betreffende apparaten geëvalueerd en samen met hun nalevingsstatus gerapporteerd. U kunt bijvoorbeeld rapporteren over het aantal apparaten dat niet is versleuteld of over welke apparaten jailbroken of geroot zijn. Wanneer u nalevingsbeleid zonder voorwaardelijke toegang gebruikt, zijn er geen toegangsbeperkingen tot bedrijfsresources.
 
-#### <a name="actions-for-non-compliance"></a>Acties voor niet-naleving
+## <a name="ways-to-deploy-device-compliance-policies"></a>Nalevingsbeleid voor apparaten implementeren
+U kunt nalevingsbeleid implementeren voor gebruikers in gebruikersgroepen of aan apparaten in apparaatgroepen. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden de apparaten van de gebruiker gecontroleerd op naleving.
 
-Met de acties voor niet-naleving kunt u een op tijd geordende opeenvolgende reeks acties configureren die worden toegepast op apparaten die niet voldoen aan de criteria van het nalevingsbeleid. Zie [Acties voor niet-naleving automatiseren](actions-for-noncompliance.md) voor meer informatie.
+Voor apparaten in apparaatgroepen omvat **Instellingen voor nalevingsbeleid** (Azure Portal > Apparaatnaleving)
 
-##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Het gebruik van apparaatnalevingsbeleid in de klassieke Intune-portal ten opzichte van Azure Portal
+- **Apparaten waaraan geen nalevingsbeleid is toegewezen markeren als**: deze eigenschap heeft twee waarden:
 
-Informatie over de belangrijkste verschillen om u te helpen met de overgang naar de nieuwe werkstroom voor apparaatnalevingsbeleid in Azure Portal.
+  - **Compatibel**: beveiligingsfunctie uit
+  - **Niet compatibel** (standaard): beveiligingsfunctie aan
 
-- In Azure Portal wordt het nalevingsbeleid voor elk platform afzonderlijk gemaakt.
-- In de klassieke Intune-portal werd één apparaatnalevingsbeleid voor alle ondersteunde platformen gemaakt.
+  Als er geen nalevingsbeleid aan een apparaat is toegewezen, wordt dit apparaat als incompatibel beschouwd. Standaard worden apparaten gemarkeerd als **Niet compatibel**. Als u voorwaardelijke toegang gebruikt, is het raadzaam de standaardinstelling **Niet compatibel** te behouden. Als een eindgebruiker incompatibel is omdat er geen beleid is toegewezen, wordt in de bedrijfsportal `No compliance policies have been assigned` vermeld.
+
+- **Verbeterde jailbreak-detectie**: als deze instelling is ingeschakeld, zorgt deze ervoor dat iOS-apparaten vaker bij Intune inchecken. Door het inschakelen van deze eigenschap worden de locatieservices van het apparaat gebruikt. Ook heeft dit invloed op het batterijverbruik. De locatiegegevens van de gebruiker worden niet opgeslagen door Intune.
+
+  Wanneer u deze instelling inschakelt, moeten apparaten:
+  - Locatieservices op het niveau van het besturingssysteem inschakelen;
+  - De bedrijfsportal toestaan om locatieservices te gebruiken; en
+  - Eens per 72 uur de jailbreak-status evalueren en aan Intune rapporteren. Anders wordt het apparaat gemarkeerd als Niet compatibel.
+
+- **Geldigheidsperiode van nalevingsstatus (dagen)**: voer de periode in dat apparaten de status voor alle ontvangen nalevingsbeleidsregels rapporteren. Apparaten die niet binnen deze tijdsduur de status retourneren, worden als Niet compatibel beschouwd. De standaardwaarde is 30 dagen.
+
+Alle apparaten hebben een **Standaardnalevingsbeleid voor apparaten** (Azure Portal > Apparaatnaleving > Beleidsnaleving). Gebruik dit standaardbeleid voor het bewaken van deze instellingen.
+
+Raadpleeg [Problemen met apparaatprofielen oplossen](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned) voor meer informatie over hoe lang het duurt voordat op mobiele apparaten een beleid wordt toegepast nadat het beleid is geïmplementeerd.
+
+Nalevingsrapporten zijn een uitstekende manier om de status van apparaten te controleren. Zie [Nalevingsbeleid bewaken](compliance-policy-monitor.md) voor hulp.
+
+### <a name="actions-for-noncompliance"></a>Acties voor niet-naleving
+U kunt een op tijd geordende opeenvolgende reeks acties configureren die worden toegepast op apparaten die niet voldoen aan de criteria van het nalevingsbeleid. Deze acties voor niet-naleving kunnen worden geautomatiseerd, zoals beschreven in [Acties voor niet-naleving automatiseren](actions-for-noncompliance.md).
+
+## <a name="azure-classic-portal-vs-azure-portal"></a>Vergelijking tussen klassieke Azure-portal en Azure Portal
+
+Het belangrijkste verschil wanneer u nalevingsbeleid voor apparaten gebruikt in de Azure Portal:
+
+- In Azure Portal wordt het nalevingsbeleid voor elk platform afzonderlijk gemaakt
+- In de klassieke Azure-portal werd één apparaatnalevingsbeleid voor alle ondersteunde platformen gemaakt
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a>Apparaatnalevingsbeleid migreren van de klassieke Intune-portal naar Azure Portal
+## <a name="device-compliance-policies-in-the-classic-portal-and-azure-portal"></a>Apparaatnalevingsbeleid in de klassieke Azure-portal ten opzichte van Azure Portal
 
-Nalevingsbeleid voor apparaten dat is gemaakt in de [klassieke Intune-portal](https://manage.microsoft.com) wordt niet weergegeven in de nieuwe [Intune Azure Portal](https://portal.azure.com). Dit nalevingsbeleid wordt echter nog steeds toegepast op gebruikers en beheerd via de klassieke Intune-portal.
+Nalevingsbeleid voor apparaten dat is gemaakt in de [klassieke portal](https://manage.microsoft.com) wordt niet weergegeven in de [Azure Portal](https://portal.azure.com). Dit nalevingsbeleid wordt echter nog steeds toegepast op gebruikers en beheerd via de klassieke portal.
 
-Als u gebruik wilt maken van de nieuwe functies voor het nalevingsbeleid voor apparaten in Azure Portal, moet u een nieuw nalevingsbeleid voor apparaten maken in Azure Portal zelf. Als u een nieuw nalevingsbeleid voor apparaten in Azure Portal toewijst aan een gebruiker, aan wie ook een nalevingsbeleid voor apparaten uit de klassieke Intune-console is toegewezen, heeft het nalevingsbeleid voor apparaten uit Intune Azure Portal voorrang boven het beleid dat in de klassieke Intune-portal is gemaakt.
+Als u de functies voor het nalevingsbeleid voor apparaten in Azure Portal wilt gebruiken, moet u een nieuw nalevingsbeleid voor apparaten maken in Azure Portal. Als u een nalevingsbeleid voor apparaten in Azure Portal toewijst aan een gebruiker aan wie ook een nalevingsbeleid voor apparaten uit de klassieke portal is toegewezen, heeft het nalevingsbeleid voor apparaten uit Azure Portal voorrang boven het beleid dat in de klassieke portal is gemaakt.
 
-##  <a name="next-steps"></a>Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 
 - Een nalevingsbeleid maken voor de volgende platformen:
 
-   - [Android](compliance-policy-create-android.md)
-   - [Android for Work](compliance-policy-create-android-for-work.md)
-   - [iOS](compliance-policy-create-ios.md)
-   - [macOS](compliance-policy-create-mac-os.md)
-   - [Windows](compliance-policy-create-windows.md)
+  - [Android](compliance-policy-create-android.md)
+  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [iOS](compliance-policy-create-ios.md)
+  - [macOS](compliance-policy-create-mac-os.md)
+  - [Windows](compliance-policy-create-windows.md)
 
 - Zie [Naslag voor beleidsentiteiten](reports-ref-policy.md) voor meer informatie over de beleidsentiteiten voor Intune-datawarehouse.

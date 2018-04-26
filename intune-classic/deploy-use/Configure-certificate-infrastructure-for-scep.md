@@ -15,36 +15,36 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37dcc2e7a11e33ff0543a3f2020331d52f5052ad
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5e7b266bcc47ae229a200f0b690429f505a59603
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>De certificaatinfrastructuur voor SCEP configureren
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In dit onderwerp wordt beschreven welke infrastructuur u nodig hebt om SCEP-certificaatprofielen te maken en implementeren.
 
 ### <a name="on-premises-infrastructure"></a>Lokale infrastructuur
 
--    **Active Directory-domein**: alle servers die in dit gedeelte worden genoemd (met uitzondering van de webtoepassingsproxyserver), moeten lid zijn van uw Active Directory-domein.
+- **Active Directory-domein**: alle servers die in dit gedeelte worden genoemd (met uitzondering van de webtoepassingsproxyserver), moeten lid zijn van uw Active Directory-domein.
 
--  **Certificeringsinstantie** (CA): een certificeringsinstantie (CA) voor ondernemingen (CA) die wordt uitgevoerd op een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund. Zie [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx)(De certificeringsinstantie installeren) voor instructies over het instellen van een certificeringsinstantie.
-    Als de certificeringsinstantie werkt met Windows Server 2008 R2, moet u [de hotfix uit KB2483564 installeren](http://support.microsoft.com/kb/2483564/).
-I
--  **NDES-Server**: op een server waarop Windows Server 2012 R2 of hoger wordt uitgevoerd, moet u de Registratieservice voor netwerkapparaten (NDES) instellen. Intune biedt geen ondersteuning voor het gebruik van NDES wanneer dit wordt uitgevoerd op een server waarop ook de CA voor ondernemingen wordt uitgevoerd. Zie [Richtlijnen voor Registratieservice voor netwerkapparaten](http://technet.microsoft.com/library/hh831498.aspx) voor instructies over hoe u Windows Server 2012 R2 configureert om als host voor de Registratieservice voor netwerkapparaten te dienen. De NDES-server moet worden toegevoegd aan het domein dat de CA host en mag zich niet op dezelfde server als de CA bevinden. Meer informatie over het implementeren van de NDES-server in een afzonderlijke forest, een geïsoleerd netwerk of een intern domein vindt u in [Een beleidsmodule gebruiken met de registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/dn473016.aspx).
+- **Certificeringsinstantie** (CA): een certificeringsinstantie (CA) voor ondernemingen (CA) die wordt uitgevoerd op een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund. Zie [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx)(De certificeringsinstantie installeren) voor instructies over het instellen van een certificeringsinstantie.
+   Als de certificeringsinstantie werkt met Windows Server 2008 R2, moet u [de hotfix uit KB2483564 installeren](http://support.microsoft.com/kb/2483564/).
+  I
+- **NDES-Server**: op een server waarop Windows Server 2012 R2 of hoger wordt uitgevoerd, moet u de Registratieservice voor netwerkapparaten (NDES) instellen. Intune biedt geen ondersteuning voor het gebruik van NDES wanneer dit wordt uitgevoerd op een server waarop ook de CA voor ondernemingen wordt uitgevoerd. Zie [Richtlijnen voor Registratieservice voor netwerkapparaten](http://technet.microsoft.com/library/hh831498.aspx) voor instructies over hoe u Windows Server 2012 R2 configureert om als host voor de Registratieservice voor netwerkapparaten te dienen. De NDES-server moet worden toegevoegd aan het domein dat de CA host en mag zich niet op dezelfde server als de CA bevinden. Meer informatie over het implementeren van de NDES-server in een afzonderlijke forest, een geïsoleerd netwerk of een intern domein vindt u in [Een beleidsmodule gebruiken met de registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/dn473016.aspx).
 
--  **Microsoft Intune-certificaatconnector**: u kunt de Intune-beheerconsole gebruiken om het installatieprogramma voor de **Certificaatconnector** (**ndesconnectorssetup.exe**) te downloaden. Vervolgens kunt u **ndesconnectorssetup.exe** uitvoeren op de computer waarop u de certificaatconnector wilt installeren.
--  **Webtoepassingsproxyserver** (optioneel): u kunt een server met Windows Server 2012 R2 of hoger als webtoepassingsproxyserver (WAP-server) gebruiken. Deze configuratie:
-    -  Maakt het mogelijk dat apparaten certificaten ontvangen met een internetverbinding.
-    -  Is een beveiligingsaanbeveling wanneer apparaten via internet verbinding maken om certificaten te ontvangen en te verlengen.
+- **Microsoft Intune-certificaatconnector**: u kunt de Intune-beheerconsole gebruiken om het installatieprogramma voor de **Certificaatconnector** (**ndesconnectorssetup.exe**) te downloaden. Vervolgens kunt u **ndesconnectorssetup.exe** uitvoeren op de computer waarop u de certificaatconnector wilt installeren.
+- **Webtoepassingsproxyserver** (optioneel): u kunt een server met Windows Server 2012 R2 of hoger als webtoepassingsproxyserver (WAP-server) gebruiken. Deze configuratie:
+   -  Maakt het mogelijk dat apparaten certificaten ontvangen met een internetverbinding.
+   -  Is een beveiligingsaanbeveling wanneer apparaten via internet verbinding maken om certificaten te ontvangen en te verlengen.
 
- > [!NOTE]           
-> -    De server die als host voor WAP fungeert, [moet een update installeren](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) waarmee ondersteuning wordt geboden voor de lange URL's die worden gebruikt door de Network Device Enrollment Service. Deze update is opgenomen in het [updatepakket van december 2014](https://support.microsoft.com/kb/3013769)en is afzonderlijk verkrijgbaar in [KB3011135](https://support.microsoft.com/kb/3011135).
->-  Daarnaast moet de server waarop WAP als host optreedt, een SSL-certificaat hebben dat overeenkomt met de naam zoals die voor externe clients wordt gepubliceerd. Bovendien moet de server het SSL-certificaat vertrouwen dat op de NDES-server wordt gebruikt. De WAP-server kan met deze certificaten de SSL-verbinding van clients beëindigen en een nieuwe SSL-verbinding naar de NDES-server maken.
-    Zie het gedeelte **Certificaten plannen** van [Publicatie van toepassingen met Web Application Proxy plannen](https://technet.microsoft.com/library/dn383650.aspx) voor meer informatie over certificaten voor WAP. Zie [Werken met Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx) voor algemene informatie over WAP-servers.|
+  > [!NOTE]           
+  > -    De server die als host voor WAP fungeert, [moet een update installeren](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) waarmee ondersteuning wordt geboden voor de lange URL's die worden gebruikt door de Network Device Enrollment Service. Deze update is opgenomen in het [updatepakket van december 2014](https://support.microsoft.com/kb/3013769)en is afzonderlijk verkrijgbaar in [KB3011135](https://support.microsoft.com/kb/3011135).
+  >-  Daarnaast moet de server waarop WAP als host optreedt, een SSL-certificaat hebben dat overeenkomt met de naam zoals die voor externe clients wordt gepubliceerd. Bovendien moet de server het SSL-certificaat vertrouwen dat op de NDES-server wordt gebruikt. De WAP-server kan met deze certificaten de SSL-verbinding van clients beëindigen en een nieuwe SSL-verbinding naar de NDES-server maken.
+   Zie het gedeelte **Certificaten plannen** van [Publicatie van toepassingen met Web Application Proxy plannen](https://technet.microsoft.com/library/dn383650.aspx) voor meer informatie over certificaten voor WAP. Zie [Werken met Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx) voor algemene informatie over WAP-servers.|
 
 ### <a name="network-requirements"></a>Netwerkvereisten
 
@@ -126,18 +126,18 @@ In deze taak:
 
 Hier volgen schermafbeeldingen van de configuratie van een voorbeeldsjabloon.
 
-![Sjabloon, tabblad Afhandeling van aanvragen](..\media\scep_ndes_request_handling.png)
+![Sjabloon, tabblad Afhandeling van aanvragen](../media/scep_ndes_request_handling.png)
 
-![Sjabloon, tabblad Onderwerpnaam](..\media\scep_ndes_subject_name.jpg)
+![Sjabloon, tabblad Onderwerpnaam](../media/scep_ndes_subject_name.jpg)
 
-![Sjabloon, tabblad Beveiliging](..\media\scep_ndes_security.jpg)
+![Sjabloon, tabblad Beveiliging](../media/scep_ndes_security.jpg)
 
-![Sjabloon, tabblad Extensies](..\media\scep_ndes_extensions.jpg)
+![Sjabloon, tabblad Extensies](../media/scep_ndes_extensions.jpg)
 
-![Sjabloon, tabblad Uitgiftevereisten](..\media\scep_ndes_issuance_reqs.jpg)
+![Sjabloon, tabblad Uitgiftevereisten](../media/scep_ndes_issuance_reqs.jpg)
 
->   [!IMPORTANT]
-    > Voor Toepassingsbeleid (in de vierde schermafbeelding) voegt u alleen het benodigde toepassingsbeleid toe. Leg uw keuzes voor aan de beveiligingsbeheerder.
+> [!IMPORTANT]
+> Voor Toepassingsbeleid (in de vierde schermafbeelding) voegt u alleen het benodigde toepassingsbeleid toe. Leg uw keuzes voor aan de beveiligingsbeheerder.
 
 
 
@@ -167,28 +167,28 @@ In deze taak:
 
 
 
-   1.  U meldt zich als **ondernemingsbeheerder**aan op de server die als host voor NDES fungeert, en gebruikt vervolgens de [wizard Functies en onderdelen toevoegen](https://technet.microsoft.com/library/hh831809.aspx) om NDES te installeren:
+1. U meldt zich als **ondernemingsbeheerder**aan op de server die als host voor NDES fungeert, en gebruikt vervolgens de [wizard Functies en onderdelen toevoegen](https://technet.microsoft.com/library/hh831809.aspx) om NDES te installeren:
 
-    1.  Selecteer in de wizard **Active Directory Certificate Services** om toegang te krijgen tot de AD CS-functieservices. Selecteer de **inschrijvingsservice voor netwerkapparaten**, schakel **Certificeringsinstantie**uit en voer vervolgens de wizard uit.
+   1. Selecteer in de wizard **Active Directory Certificate Services** om toegang te krijgen tot de AD CS-functieservices. Selecteer de **inschrijvingsservice voor netwerkapparaten**, schakel **Certificeringsinstantie**uit en voer vervolgens de wizard uit.
 
-        > [!TIP]
-        > Klik op de pagina **Voortgang van de installatie** van de wizard niet op **Sluiten**. Klik in plaats daarvan op de koppeling voor **Active Directory Certificate Services op de doelserver configureren**. Hiermee opent u de wizard **AD CS-configuratie** die u voor de volgende taak gebruikt. Nadat AD CS-configuratie is geopend, kunt u de wizard Functies en onderdelen toevoegen sluiten.
+      > [!TIP]
+      > Klik op de pagina **Voortgang van de installatie** van de wizard niet op **Sluiten**. Klik in plaats daarvan op de koppeling voor **Active Directory Certificate Services op de doelserver configureren**. Hiermee opent u de wizard **AD CS-configuratie** die u voor de volgende taak gebruikt. Nadat AD CS-configuratie is geopend, kunt u de wizard Functies en onderdelen toevoegen sluiten.
 
-    2.  Wanneer NDES aan de server wordt toegevoegd, installeert de wizard ook IIS. Controleer of IIS de volgende configuraties heeft:
+   2. Wanneer NDES aan de server wordt toegevoegd, installeert de wizard ook IIS. Controleer of IIS de volgende configuraties heeft:
 
-        -   **Webserver** &gt; **Beveiliging** &gt; **Filtering aanvragen**
+      -   **Webserver** &gt; **Beveiliging** &gt; **Filtering aanvragen**
 
-        -   **Webserver** &gt; **Toepassingsontwikkeling** &gt; **ASP.NET 3.5**. Als ASP.NET 3.5 wordt geïnstalleerd, wordt ook .NET Framework 3.5 geïnstalleerd. Als u .NET Framework 3.5 installeert, installeert u zowel het kernonderdeel **.NET Framework 3.5** als **HTTP-activering**.
+      -   **Webserver** &gt; **Toepassingsontwikkeling** &gt; **ASP.NET 3.5**. Als ASP.NET 3.5 wordt geïnstalleerd, wordt ook .NET Framework 3.5 geïnstalleerd. Als u .NET Framework 3.5 installeert, installeert u zowel het kernonderdeel **.NET Framework 3.5** als **HTTP-activering**.
 
-        -   **Webserver** &gt; **Toepassingsontwikkeling** &gt; **ASP.NET 4.5**. Als ASP.NET 4.5 wordt geïnstalleerd, wordt ook .NET Framework 4.5 geïnstalleerd. Als u .NET Framework 4.5 installeert, installeert u het kernonderdeel **.NET Framework 4.5**, **ASP.NET 4.5** en **WCF-services** &gt; **HTTP-activering**.
+      -   **Webserver** &gt; **Toepassingsontwikkeling** &gt; **ASP.NET 4.5**. Als ASP.NET 4.5 wordt geïnstalleerd, wordt ook .NET Framework 4.5 geïnstalleerd. Als u .NET Framework 4.5 installeert, installeert u het kernonderdeel **.NET Framework 4.5**, **ASP.NET 4.5** en **WCF-services** &gt; **HTTP-activering**.
 
-        -   **Beheerhulpprogramma's** &gt; **Compatibiliteit met IIS 6-beheer** &gt; **Compatibiliteit met IIS 6-metabase**
+      -   **Beheerhulpprogramma's** &gt; **Compatibiliteit met IIS 6-beheer** &gt; **Compatibiliteit met IIS 6-metabase**
 
-        -   **Beheerhulpprogramma's** &gt; **Compatibiliteit met IIS 6-beheer** &gt; **Compatibiliteit met IIS 6 WMI**
+      -   **Beheerhulpprogramma's** &gt; **Compatibiliteit met IIS 6-beheer** &gt; **Compatibiliteit met IIS 6 WMI**
 
-  2.  Voeg op de server het NDES-serviceaccount toe als lid van de groep **IIS_IUSR**.
+   3. Voeg op de server het NDES-serviceaccount toe als lid van de groep **IIS_IUSR**.
 
-   3.  Voer de volgende opdracht uit via een opdrachtprompt met verhoogde bevoegdheid om de SPN van het NDES-serviceaccount in te stellen:
+2. Voer de volgende opdracht uit via een opdrachtprompt met verhoogde bevoegdheid om de SPN van het NDES-serviceaccount in te stellen:
 
 `**setspn -s http/&lt;DNS name of NDES Server&gt; &lt;Domain name&gt;\&lt;NDES Service account name&gt;**`
 
@@ -207,33 +207,35 @@ In deze taak:
 
 ##### <a name="to-configure-ndes-for-use-with-intune"></a>NDES configureren voor gebruik met Intune
 
-1.  Open op de NDES-server de wizard AD CS-configuratie en voer de volgende configuraties door.
+1. Open op de NDES-server de wizard AD CS-configuratie en voer de volgende configuraties door.
 
-    > [!TIP]
-    > Als u op de koppeling in de vorige taak hebt geklikt, is deze wizard al geopend. Anders opent u Serverbeheer voor toegang tot post-implementatieconfiguratie voor Active Directory Certificate Services.
+   > [!TIP]
+   > Als u op de koppeling in de vorige taak hebt geklikt, is deze wizard al geopend. Anders opent u Serverbeheer voor toegang tot post-implementatieconfiguratie voor Active Directory Certificate Services.
 
-    -   Selecteer op de pagina **Functieservices** de optie **Registratieservice voor netwerkapparaten**.
+   -   Selecteer op de pagina **Functieservices** de optie **Registratieservice voor netwerkapparaten**.
 
-    -   Geef op de pagina **Serviceaccount voor NDES** het NDES-serviceaccount op.
+   -   Geef op de pagina **Serviceaccount voor NDES** het NDES-serviceaccount op.
 
-    -   Klik op de pagina **Certificeringsinstantie voor Registratieservice voor netwerkapparaten** op **Selecteren**en selecteer vervolgens de verlenende CA waar u de certificaatsjabloon hebt geconfigureerd.
+   -   Klik op de pagina **Certificeringsinstantie voor Registratieservice voor netwerkapparaten** op **Selecteren**en selecteer vervolgens de verlenende CA waar u de certificaatsjabloon hebt geconfigureerd.
 
-    -   Stel op de pagina **Cryptografie voor NDES** de sleutellengte in om aan de vereisten van uw bedrijf te voldoen.
+   -   Stel op de pagina **Cryptografie voor NDES** de sleutellengte in om aan de vereisten van uw bedrijf te voldoen.
 
-    Klik op de pagina **Bevestiging** op **Configureren** om de wizard te voltooien.
+   Klik op de pagina **Bevestiging** op **Configureren** om de wizard te voltooien.
 
-2.  Nadat de wizard is voltooid, bewerkt u de volgende registersleutel op de NDES-server:
+2. Nadat de wizard is voltooid, bewerkt u de volgende registersleutel op de NDES-server:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\</strong>
 
-    Als u deze sleutel wilt bewerken, stelt u het **doel** van de certificaatsjabloon vast (dit kunt u vinden op het bijbehorende tabblad **Afhandeling van aanvragen**) en bewerkt u vervolgens de bijbehorende vermelding in het register. U doet dit door de bestaande gegevens te vervangen door de naam van de certificaatsjabloon (niet de weergavenaam van de sjabloon) die u hebt opgegeven in Taak 1. In de volgende tabel wordt het certificaatsjabloondoel gekoppeld aan de waarden in het register:
+   Als u deze sleutel wilt bewerken, stelt u het **doel** van de certificaatsjabloon vast (dit kunt u vinden op het bijbehorende tabblad **Afhandeling van aanvragen**) en bewerkt u vervolgens de bijbehorende vermelding in het register. U doet dit door de bestaande gegevens te vervangen door de naam van de certificaatsjabloon (niet de weergavenaam van de sjabloon) die u hebt opgegeven in Taak 1. In de volgende tabel wordt het certificaatsjabloondoel gekoppeld aan de waarden in het register:
 
-    |Certificaatsjabloondoel (op het tabblad Afhandeling van aanvragen)|Te bewerken registerwaarde|Waarde die in de Intune-beheerconsole wordt weergegeven voor het SCEP-profiel|
-    |--------------------------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------|
-    |Handtekening|SignatureTemplate|Digitale handtekening|
-    |Versleuteling|EncryptionTemplate|Sleutelcodering|
-    |Handtekening en versleuteling|GeneralPurposeTemplate|Sleutelcodering<br /><br />Digitale handtekening|
-    Als het doel van uw certificaatsjabloon bijvoorbeeld **Versleuteling**is, bewerkt u de waarde **EncryptionTemplate** zo dat deze de naam van uw certificaatsjabloon is.
+
+   | Certificaatsjabloondoel (op het tabblad Afhandeling van aanvragen) | Te bewerken registerwaarde | Waarde die in de Intune-beheerconsole wordt weergegeven voor het SCEP-profiel |
+   |------------------------------------------------------------|------------------------|-------------------------------------------------------------|
+   |                         Handtekening                          |   SignatureTemplate    |                      Digitale handtekening                      |
+   |                         Versleuteling                         |   EncryptionTemplate   |                      Sleutelcodering                       |
+   |                  Handtekening en versleuteling                  | GeneralPurposeTemplate |        Sleutelcodering<br /><br />Digitale handtekening        |
+
+   Als het doel van uw certificaatsjabloon bijvoorbeeld **Versleuteling**is, bewerkt u de waarde **EncryptionTemplate** zo dat deze de naam van uw certificaatsjabloon is.
 
 3. De NDES-server ontvangt zeer lange URL's (query's) waarvoor u twee registervermeldingen moet toevoegen:
 
@@ -245,12 +247,12 @@ In deze taak:
 
 4. Kies in IIS-manager achtereenvolgens **Standaardwebsite** -> **Filtering aanvragen** -> **Functie-instellingen bewerken** en wijzig de **Maximale URL-lengte** en **Maximale querytekenreeks** in *65534*, zoals wordt weergegeven.
 
-    ![Maximale lengte van de URL's en query's van IIS](..\media\SCEP_IIS_max_URL.png)
+    ![Maximale lengte van de URL's en query's van IIS](../media/SCEP_IIS_max_URL.png)
 
-5.  Start de server opnieuw op. U kunt de wijzigingen niet voltooien door **iisreset** uit te voeren op de server.
-6. Blader naar http://*FQDN*/certsrv/mscep/mscep.dll. Hier wordt een NDES-pagina weergegeven die vergelijkbaar is met de volgende:
+5. Start de server opnieuw op. U kunt de wijzigingen niet voltooien door **iisreset** uit te voeren op de server.
+6. Blader naar http://<em>FQDN</em>/certsrv/mscep/mscep.dll. Hier wordt een NDES-pagina weergegeven die vergelijkbaar is met de volgende:
 
-    ![Test NDES](..\media\SCEP_NDES_URL.png)
+    ![Test NDES](../media/SCEP_NDES_URL.png)
 
     Als het bericht **503 - Service niet beschikbaar** wordt weergegeven, controleert u de logboeken. De groep van toepassing is waarschijnlijk gestopt vanwege een ontbrekend recht voor de NDES-gebruiker. Deze rechten worden beschreven in Taak 1.
 

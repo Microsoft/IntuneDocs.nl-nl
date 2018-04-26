@@ -1,29 +1,29 @@
-﻿---
+---
 title: Apparaten buiten gebruik stellen
 description: Intune biedt ondersteuning voor selectief wissen en volledig wissen waarmee apparaten uit het Intune-beheer kunnen worden verwijderd door hun beleid en de bedrijfsportal te verwijderen.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d304e0d27b6aa1ee568bc71272781f44efdce121
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9dc8fdd7437c9de49df9ea9a4c9641ac9d590de
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-devices-from-intune-management"></a>Apparaten buiten gebruik stellen vanuit Intune-beheer
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Of apparaten nu eigendom zijn van het bedrijf of van gebruikers persoonlijk, er komt een moment waarop een beheerd apparaat moet worden verwijderd uit Intune-beheer.
 
@@ -75,5 +75,5 @@ U moet ook de licentie van het Intune-account van de werknemer intrekken. Hierme
 ## <a name="retire-hardware"></a>Hardware buiten gebruik stellen
 Het kan ook zo zijn dat het apparaat het einde van de levensduur heeft bereikt. In dergelijke gevallen kunt u de [fabrieksinstellingen van het apparaat terugzetten](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Alle gegevens worden dan gewist en het apparaat wordt uit Intune verwijderd. Vervolgens kunt de hardware volgens het beleid van uw bedrijf afvoeren.
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 [Uw gegevens beschermen met volledig wissen of selectief wissen](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)

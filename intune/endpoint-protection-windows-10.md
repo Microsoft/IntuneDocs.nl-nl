@@ -1,29 +1,28 @@
 ---
-title: Instellingen voor Microsoft Intune Endpoint Protection voor Windows 10
-titlesuffix: 
-description: Lees hier alles over de Intune-instellingen die u kunt gebruiken voor het beheren van instellingen voor eindpuntbeveiliging op Windows 10-apparaten, zoals BitLocker.
-keywords: 
+title: Endpoint Protection in Windows 10 toevoegen in Microsoft Intune - Azure | Microsoft Docs
+description: Gebruik of configureer op Windows 10-apparaten instellingen voor eindpuntbescherming om functies van Windows Defender in te schakelen, zoals Application Guard, Firewall, SmartScreen, versleuteling en bitlocker, Exploit Guard, Application Control, Security Center en beveiliging van lokale apparaten in Microsoft Intune.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: afe1e737bb5214af76395db91b8aea72cb5d42a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Instellingen voor de beveiliging van eindpunten voor Windows 10 en hoger maken in Microsoft Intune
+# <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Instellingen voor de beveiliging van eindpunten voor Windows 10 en hoger in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Via het profiel voor eindpuntbeveiliging kunt u beveiligingsfuncties op Windows 10-apparaten beheren, zoals BitLocker en Windows Defender.
 
@@ -31,21 +30,6 @@ Gebruik de informatie in dit artikel om profielen voor eindpuntbeveiliging te ma
 
 > [!Note]
 > Deze instellingen worden niet ondersteund in de edities Home en Professional van Windows 10.
-
-## <a name="create-an-endpoint-protection-profile"></a>Een profiel voor eindpuntbeveiliging maken
-
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies op de blade **Intune** de optie **Apparaatconfiguratie**.
-2. Kies op de blade **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
-3. Kies **Profiel maken** op de blade Profielen.
-4. Voer op de blade **Profiel maken** een **naam** en **beschrijving** in voor het profiel voor de apparaatfuncties.
-5. Selecteer in de vervolgkeuzelijst **Platform** de optie **Windows 10 en hoger**.
-6. Kies **Endpoint Protection** in de vervolgkeuzelijst **Profieltype**.
-7. Configureer de gewenste instellingen. Gebruik de informatie in dit artikel om te begrijpen wat elke instelling doet. Als u klaar bent, kiest u **OK**.
-8. Ga terug naar de blade **Profiel maken** en kies **Maken**.
-
-Het profiel wordt gemaakt en wordt weergegeven op de blade met de profielenlijst.
 
 ## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard
 
@@ -56,9 +40,9 @@ Application Guard is alleen beschikbaar voor apparaten met de 64 bitsversie van 
 - **Externe inhoud op Enterprise-sites**: voorkom dat inhoud van niet-goedgekeurde websites wordt geladen.
 - **Afdrukken vanuit virtuele browser**: sta toe dat PDF-, XPS- en lokale of netwerkprinters inhoud vanuit de virtuele browser kunnen afdrukken.
 - **Logoeken verzamelen**: verzamel logboeken voor gebeurtenissen die zich voordoen in een Application Guard-browsersessie.
-- **Door de gebruiker gegenereerde browsergegevens behouden**: sta toe dat gebruikersgegevens (zoals wachtwoorden, favorieten en cookies) worden opgeslagen die zijn gemaakt tijdens een virtuele browsersessie met Application Guard.
-- **Grafische versnelling**: grafisch-intensieve websites sneller laden wanneer u werkt binnen een virtuele browsersessie met Application Guard, door toegang tot een grafische verwerkingseenheid in te schakelen.
-
+- **Door de gebruiker gegenereerde browsergegevens behouden**: sla gebruikersgegevens (zoals wachtwoorden, favorieten en cookies) op die zijn gemaakt tijdens een virtuele browsersessie met Application Guard.
+- **Grafische versnelling**: grafisch-intensieve websites sneller laden wanneer u werkt binnen een virtuele browsersessie met Application Guard. Websites worden sneller geladen doordat de toegang tot een virtuele afbeeldingenverwerkingseenheid is ingeschakeld.
+- **Bestanden downloaden naar hostbestandssysteem**: toestaan dat gebruikers bestanden downloaden van de gevirtualiseerde browser naar het hostbesturingssysteem.
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall
 
@@ -72,7 +56,7 @@ Deze instellingen gelden voor alle netwerktypen.
 - **IPsec-uitzonderingen**: hiermee configureert u specifiek verkeer om te worden vrijgesteld voor het uitvoeren van IPsec, waaronder **ICMP-type-codes voor IPv6 detecteren met Neighbor**, **ICMP**, **ICMP-type-codes voor IPv6 detecteren met Router** en  **DHCP-netwerkverkeer via IPv4 en IPv6**.
 - **Controle van certificaatintrekkingslijsten**: stel een waarde in voor het afdwingen van controle van certificaatintrekkingslijsten, zoals **CRL-controle uitschakelen**, **CRL-verificatie mislukt alleen bij alleen ingetrokken certificaat** en **CRL-verificatie mislukt bij elke fout die wordt aangetroffen**.
 - **Verificatieset opportunistisch afstemmen per sleutelmodule**: stel sleutelmodules in om de volledige verificatieset te negeren als de modules geen ondersteuning bieden voor alle verificatiepakketten in de betreffende set.
-- **Pakketten in wachtrij plaatsen**: Geef op hoe schalen voor software aan de ontvangstzijde wordt ingeschakeld voor versleuteld ontvangen en ongecodeerd doorsturen in het scenario voor de IPsec-tunnelgateway. Hierdoor wordt gegarandeerd dat de pakketvolgorde behouden blijft.
+- **Pakketten in wachtrij plaatsen**: Geef op hoe schalen voor software aan de ontvangstzijde wordt ingeschakeld voor versleuteld ontvangen en ongecodeerd doorsturen in het scenario voor de IPsec-tunnelgateway. Deze instelling garandeert dat de pakketvolgorde behouden blijft.
 
 ### <a name="network-settings"></a>Netwerkinstellingen
 
@@ -81,7 +65,7 @@ Deze instellingen zijn van toepassing op specifieke netwerktypen, waaronder **Do
 #### <a name="general-settings"></a>Algemene instellingen
 
 - **Windows Defender Firewall**: schakel deze instelling in om netwerkverkeer te blokkeren.
-- **Verborgen modus**: blokkeer de firewall in de verborgen modus. Als u de firewall blokkeert, blokkeert u ook **Uitsluiting van beveiligd IPsec-pakket**.
+- **Verborgen modus**: blokkeer de firewall in de verborgen modus. Als u de verborgen modus blokkeert, blokkeert u ook **Uitsluiting van beveiligd IPsec-pakket**.
 - **Afgeschermd**: als deze instelling is ingeschakeld, blokkeert de firewallinstelling al het binnenkomende verkeer.
 - **Unicast-antwoorden voor multicast-broadcasts**: Blokkeer unicast-antwoorden voor multicast-broadcasts. Doorgaans wilt u geen unicast-antwoorden voor multicast- of broadcastberichten ontvangen. Dergelijke antwoorden kunnen namelijk duiden op een DoS-aanval (Denial of Service) of op een aanvaller die een bekende livecomputer wilt testen.
 - **Binnenkomende meldingen**: blokkeer meldingen zodat deze niet aan gebruikers worden weergegeven wanneer een toepassing wordt geblokkeerd voor het luisteren naar een poort.
@@ -115,53 +99,52 @@ Basisinstellingen zijn universele BitLocker-instellingen voor alle soorten gegev
 
 - **Waarschuwing voor andere schijfversleuteling**: schakel de waarschuwing uit voor andere schijfversleuteling op computers van eindgebruikers.
 - **Versleutelingsmethoden configureren**: schakel deze instelling in om versleutelingsalgoritmen te configureren voor het besturingssysteem, gegevens en verwisselbare stations.
-    - **Versleuteling voor stations met besturingssysteem**: kies de versleutelingsmethode stations met een besturingssysteem. Het is raadzaam om het algoritme XTS AES te gebruiken.
-    - **Versleuteling voor vaste gegevensschijven**: kies de versleutelingsmethode voor vaste (ingebouwde) schijven, ook wel 'harde schijven' genoemd. Het is raadzaam om het algoritme XTS AES te gebruiken.
-    - **Versleuteling voor verwisselbare gegevensstations**: kies de versleutelingsmethode voor verwisselbare gegevensstations. Als het verwisselbare station wordt gebruikt met apparaten waarop Windows 10 niet wordt uitgevoerd, raden we aan om het algoritme AES-CBC te gebruiken.
+  - **Versleuteling voor stations met besturingssysteem**: kies de versleutelingsmethode stations met een besturingssysteem. Het is raadzaam om het algoritme XTS AES te gebruiken.
+  - **Versleuteling voor vaste gegevensschijven**: kies de versleutelingsmethode voor vaste (ingebouwde) schijven, ook wel 'harde schijven' genoemd. Het is raadzaam om het algoritme XTS AES te gebruiken.
+  - **Versleuteling voor verwisselbare gegevensstations**: kies de versleutelingsmethode voor verwisselbare gegevensstations. Als het verwisselbare station wordt gebruikt met apparaten waarop Windows 10 niet wordt uitgevoerd, raden we aan om het algoritme AES-CBC te gebruiken.
 
 ### <a name="bitlocker-os-drive-settings"></a>BitLocker-instellingen voor station met besturingssysteem
 
 Deze instellingen zijn van toepassing zijn op gegevensstations van het besturingssysteem.
 
 - **Extra authenticatie vereisen bij opstarten**: hiermee configureert u authenticatievereisten voor het opstarten van de computer, zoals het gebruik van TPM (Trusted Platform Module).
-    - **BitLocker met niet-compatibele TPM-chip**
-    - **Compatibele TPM opstarten**: hiermee configureert u of de TPM-chip is toegestaan, niet is toegestaan of is vereist.
-    - **Compatibele TPM-opstartpincode**: hiermee configureert u of het gebruik van een TPM-opstartpincode met de TPM-chip is toegestaan, niet is toegestaan of is vereist.
-    - **Compatibele TPM-opstartsleutel**: hiermee configureert u of het gebruik van een TPM-opstartsleutel met de TPM-chip is toegestaan, niet is toegestaan of is vereist.
-    - **Compatibele opstartsleutel en pincode voor TPM**: hiermee configureert u of het gebruik van een opstartsleutel en pincode voor TPM met de TPM-chip is toegestaan, niet is toegestaan of is vereist.
+  - **BitLocker met niet-compatibele TPM-chip**
+  - **Compatibele TPM opstarten**: hiermee configureert u of de TPM-chip is toegestaan, niet is toegestaan of is vereist.
+  - **Compatibele TPM-opstartpincode**: hiermee configureert u of het gebruik van een TPM-opstartpincode met de TPM-chip is toegestaan, niet is toegestaan of is vereist.
+  - **Compatibele TPM-opstartsleutel**: hiermee configureert u of het gebruik van een TPM-opstartsleutel met de TPM-chip is toegestaan, niet is toegestaan of is vereist.
+  - **Compatibele opstartsleutel en pincode voor TPM**: hiermee configureert u of het gebruik van een opstartsleutel en pincode voor TPM met de TPM-chip is toegestaan, niet is toegestaan of is vereist.
 - **Minimale lengte pincode**: schakel deze instelling in om een minimale lengte te configureren voor de TPM-opstartpincode.
-    - **Minimum aantal tekens**: geef het aantal tekens op dat is vereist voor de opstartpincode, tussen **4**-**20**.
+  - **Minimum aantal tekens**: geef het aantal tekens op dat is vereist voor de opstartpincode, tussen **4**-**20**.
 - **Herstellen van OS-station**: schakel deze instelling in om te bepalen hoe met BitLocker beveiligde besturingssysteemstations worden hersteld als de vereiste opstartgegevens niet beschikbaar zijn.
-    - **Agent voor gegevensherstel op basis van een certificaat**: schakel deze instelling in als agenten voor gegevensherstel mogen worden gebruikt met besturingssysteemstations die met BitLocker zijn beveiligd.
-    - **Herstelwachtwoord maken door gebruiker**: hiermee configureert u of gebruikers verplicht of optioneel een herstelwachtwoord van 48 cijfers mogen genereren, of dat dit niet is toegestaan.
-    - **Herstelsleutel maken door gebruiker**: hiermee configureert u of gebruikers verplicht of optioneel een herstelsleutel van 256 bits mogen genereren, of dat dit niet is toegestaan.
-    - **Herstelopties in de BitLocker-installatiewizard**: schakel deze instelling in om te voorkomen dat gebruikers herstelopties zien of deze kunnen wijzigen wanneer ze BitLocker inschakelen.
-    - **BitLocker-herstelgegevens naar AD DS opslaan**: hiermee schakelt u de opslag van BitLocker-herstelgegevens in Active Directory in.
-    - **BitLocker-herstelgegevens opgeslagen naar AD DS**: hiermee bepaalt u welke onderdelen van BitLocker-herstelgegevens worden opgeslagen in Active Directory. U kunt kiezen uit:
-        - **Back-up maken van herstelwachtwoorden en sleutelpakketten**
-        - **Alleen een back-up maken van herstelwachtwoorden**
-    - **Herstelgegevens opslaan in AD DS voordat BitLocker wordt ingeschakeld**: schakel deze instelling in om te voorkomen dat gebruikers BitLocker inschakelen, tenzij het apparaat lid is van een domein en BitLocker-herstelgegevens met succes zijn opgeslagen in Active Directory.
+  - **Agent voor gegevensherstel op basis van een certificaat**: schakel deze instelling in als agenten voor gegevensherstel mogen worden gebruikt met besturingssysteemstations die met BitLocker zijn beveiligd.
+  - **Herstelwachtwoord maken door gebruiker**: hiermee configureert u of gebruikers verplicht of optioneel een herstelwachtwoord van 48 cijfers mogen genereren, of dat dit niet is toegestaan.
+  - **Herstelsleutel maken door gebruiker**: hiermee configureert u of gebruikers verplicht of optioneel een herstelsleutel van 256 bits mogen genereren, of dat dit niet is toegestaan.
+  - **Herstelopties in de BitLocker-installatiewizard**: schakel deze instelling in om te voorkomen dat gebruikers herstelopties zien of deze kunnen wijzigen wanneer ze BitLocker inschakelen.
+  - **BitLocker-herstelgegevens naar AD DS opslaan**: hiermee schakelt u de opslag van BitLocker-herstelgegevens in Active Directory in.
+  - **BitLocker-herstelgegevens opgeslagen naar AD DS**: hiermee bepaalt u welke onderdelen van BitLocker-herstelgegevens worden opgeslagen in Active Directory. U kunt kiezen uit:
+    - **Back-up maken van herstelwachtwoorden en sleutelpakketten**
+    - **Alleen een back-up maken van herstelwachtwoorden**
+  - **Herstelgegevens opslaan in AD DS voordat BitLocker wordt ingeschakeld**: schakel deze instelling in om te voorkomen dat gebruikers BitLocker inschakelen, tenzij het apparaat lid is van een domein en BitLocker-herstelgegevens met succes zijn opgeslagen in Active Directory.
 - **Preboot-herstelbericht en -URL**: schakel deze instelling in om het bericht en de URL te configureren die worden weergegeven op het preboot-scherm voor sleutelherstel.
-    - **Preboot-herstelbericht**: configureer hoe preboot-herstelbericht wordt weergegeven aan gebruikers. U kunt kiezen uit:
-        - **Standaardherstelbericht en URL gebruiken**
-        - **Leeg herstelbericht en -URL gebruiken**
-        - **Aangepaste herstelbericht gebruiken**
-        - **Aangepaste herstel-URL gebruiken**
-
+  - **Preboot-herstelbericht**: configureer hoe preboot-herstelbericht wordt weergegeven aan gebruikers. U kunt kiezen uit:
+    - **Standaardherstelbericht en URL gebruiken**
+    - **Leeg herstelbericht en -URL gebruiken**
+    - **Aangepaste herstelbericht gebruiken**
+    - **Aangepaste herstel-URL gebruiken**
 
 ### <a name="bitlocker-fixed-data-drive-settings"></a>BitLocker-instellingen voor vaste-gegevensstations
 
 - **Toegang voor schrijven naar vaste-gegevensstations wanneer deze niet door BitLocker zijn beveiligd**: als deze instelling is ingeschakeld, moet BitLocker-beveiliging zijn ingeschakeld voor alle vaste of ingebouwde gegevensstations om gegevens te kunnen wegschrijven naar die stations.
 - **Vast-stationherstel**: schakel deze instelling in om te bepalen hoe met BitLocker beveiligde vaste schijven worden hersteld als de vereiste opstartgegevens niet beschikbaar zijn.
-    - **Agent voor gegevensherstel**: schakel deze instelling in als agenten voor gegevensherstel mogen worden gebruikt met vaste schijven die met BitLocker zijn beveiligd.
-    - **Herstelwachtwoord maken door gebruiker**: hiermee configureert u of gebruikers verplicht of optioneel een herstelwachtwoord van 48 cijfers mogen genereren, of dat dit niet is toegestaan.  
-    - **Herstelsleutel maken door gebruiker**: hiermee configureert u of gebruikers verplicht of optioneel een herstelsleutel van 256 bits mogen genereren, of dat dit niet is toegestaan.
-    - **Herstelopties in de BitLocker-installatiewizard**: schakel deze instelling in om te voorkomen dat gebruikers herstelopties zien of deze kunnen wijzigen wanneer ze BitLocker inschakelen.
-    - **BitLocker-herstelgegevens naar AD DS opslaan**: hiermee schakelt u de opslag van BitLocker-herstelgegevens in Active Directory in.
-    - **BitLocker-herstelgegevens naar AD DS**: hiermee bepaalt u welke onderdelen van BitLocker-herstelgegevens worden opgeslagen in Active Directory. U kunt kiezen uit:
-        - **Back-up maken van herstelwachtwoorden en sleutelpakketten**
-        - **Alleen een back-up maken van herstelwachtwoorden**
-    - **Herstelgegevens opslaan in AD DS voordat BitLocker wordt ingeschakeld**: schakel deze instelling in om te voorkomen dat gebruikers BitLocker inschakelen, tenzij het apparaat lid is van een domein en BitLocker-herstelgegevens met succes zijn opgeslagen in Active Directory.
+  - **Agent voor gegevensherstel**: schakel deze instelling in als agenten voor gegevensherstel mogen worden gebruikt met vaste schijven die met BitLocker zijn beveiligd.
+  - **Herstelwachtwoord maken door gebruiker**: hiermee configureert u of gebruikers verplicht of optioneel een herstelwachtwoord van 48 cijfers mogen genereren, of dat dit niet is toegestaan.  
+  - **Herstelsleutel maken door gebruiker**: hiermee configureert u of gebruikers verplicht of optioneel een herstelsleutel van 256 bits mogen genereren, of dat dit niet is toegestaan.
+  - **Herstelopties in de BitLocker-installatiewizard**: schakel deze instelling in om te voorkomen dat gebruikers herstelopties zien of deze kunnen wijzigen wanneer ze BitLocker inschakelen.
+  - **BitLocker-herstelgegevens naar AD DS opslaan**: hiermee schakelt u de opslag van BitLocker-herstelgegevens in Active Directory in.
+  - **BitLocker-herstelgegevens naar AD DS**: hiermee bepaalt u welke onderdelen van BitLocker-herstelgegevens worden opgeslagen in Active Directory. U kunt kiezen uit:
+    - **Back-up maken van herstelwachtwoorden en sleutelpakketten**
+    - **Alleen een back-up maken van herstelwachtwoorden**
+  - **Herstelgegevens opslaan in AD DS voordat BitLocker wordt ingeschakeld**: schakel deze instelling in om te voorkomen dat gebruikers BitLocker inschakelen, tenzij het apparaat lid is van een domein en BitLocker-herstelgegevens met succes zijn opgeslagen in Active Directory.
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>BitLocker-instellingen voor verwisselbare gegevensstations
 
@@ -173,6 +156,8 @@ Deze instellingen zijn van toepassing zijn op gegevensstations van het besturing
 Gebruik [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) om de kwetsbaarheid voor aanvallen te beheren en te verminderen van apps die door uw medewerkers worden gebruikt.
 
 ### <a name="attack-surface-reduction"></a>Kwetsbaarheid voor aanvallen verminderen
+
+- **Referentiediefstal in het Windows-subsysteem voor de lokale beveiligingsautoriteit markeren**
 
 Help [acties en apps te voorkomen](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) die meestal worden gebruikt door malware om computers te infecteren.
 
@@ -191,12 +176,21 @@ Blokkeer de volgende acties om scriptbedreigingen te voorkomen:
 
 - **Verborgen js-/vbs-/ps-/macrocode**
 - **Van internet gedownloade payloads uitvoeren met js-/vbs-bestanden (geen uitzonderingen)**
+- **Het maken van processen met PSExec- en WMI-opdrachten**
+- **Niet-vertrouwde en niet-ondertekende processen die worden uitgevoerd via USB**
+- **Uitvoerbare bestanden die niet voldoen aan een bepaalde gangbaarheid, ouderdom of aan criteria voor vertrouwde lijsten blokkeren**
 
 #### <a name="rules-to-prevent-email-threats"></a>Regels om te e-mailbedreigingen te voorkomen
 
 Blokkeer de volgende acties om e-mailbedreigingen te voorkomen:
 
 - **Uitvoering van uitvoerbare inhoud (exe-, dll-, ps-, js-, vbs-bestanden enzovoort) die is verwijderd uit e-mail (webmail/e-mailclient) (geen uitzonderingen)**
+
+#### <a name="rules-to-protect-against-ransomware"></a>Regels voor bescherming tegen ransomware
+- **Geavanceerde ransomwarebeveiliging**
+
+> [!TIP]
+> [Oppervlakteaanvallen verminderen met Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) biedt meer informatie over deze regels.
 
 #### <a name="attack-surface-reduction-exceptions"></a>Regels voor het verminderen van kwetsbaarheid voor aanvallen
 
@@ -255,4 +249,4 @@ Geef de IT-contactgegevens op die in de Windows Defender-beveiligingscentrum-app
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
+Zie [Apparaatprofielen toewijzen](device-profile-assign.md) als u dit profiel wilt toewijzen aan groepen.

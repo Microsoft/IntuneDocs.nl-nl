@@ -1,29 +1,29 @@
 ---
 title: Supervisiemodus voor iOS inschakelen met Microsoft Intune
-titleSuffix: 
+titleSuffix: ''
 description: Meer informatie over het inschakelen van de supervisiemodus voor iOS met Intune.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5304830c1706ff11bccdaedc9e9efa715e71904a
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 09b94ad2109c41ad02e8da7267690c31ba296bae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="turn-on-ios-supervised-mode"></a>Supervisiemodus voor iOS inschakelen
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Met de supervisiemodus voor Apple iOS beschikken beheerders over meer opties voor het beheer van Apple-apparaten, wat handig is voor apparaten in bedrijfseigendom die op schaal zijn geïmplementeerd. U kunt bijvoorbeeld AirDrop beperken of voorkomen dat gebruikers de naam van het apparaat kunnen wijzigen. Zie [iOS-apparaatbeperkingsinstellingen in Intune](device-restrictions-ios.md) voor een lijst met instellingen waarvoor de supervisiemodus is vereist.
 

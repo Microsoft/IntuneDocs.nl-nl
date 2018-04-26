@@ -8,21 +8,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ef755a1fd5f94342f551ac168136217dbc82b244
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: af81b4cca369cae69cff6ea52bb5df9ce369cd7f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Een Telecom Expense Management-service instellen in Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Met Intune kunt u telecomuitgaven van gegevensgebruik op mobiele apparaten in bedrijfseigendom beheren. Hiervoor is Intune geïntegreerd met de Telecom Expense Management-oplossing Datalert van Saaswedo, een extern bedrijf dat software ontwikkelt. Datalert is realtime Telecom Expense Management-software waarmee u telecomgegevensgebruik kunt beheren. Zo kunt u dure en onverwachte gegevens- en roaming-overschrijdingen voor uw door Intune beheerde apparaten voorkomen.
 
@@ -72,7 +72,7 @@ Voordat u begint, moet u ervoor zorgen dat u al een Intune en een DatalertTeleco
 
     De volgende schermafbeelding toont de groene vinkjes die u kunt verwachten als de verbinding is geslaagd.
 
-  ![Datalert-pagina die geslaagde verbinding toont](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![Datalert-pagina die geslaagde verbinding toont](./media/tem-mdm-configuration-mdm-server-page.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Stap 2: controleer of de functie Telecom Expense Management actief is in Intune
 
@@ -88,7 +88,7 @@ Nadat u stap 1 hebt voltooid, wordt de verbinding automatisch ingeschakeld en wo
 
    Zoek naar de verbindingsstatus **Actief**bovenaan de pagina.
 
-  ![Intune-pagina met Datalert-verbindingsstatus Actief](./media/tem-azure-portal-enable-service.png)
+   ![Intune-pagina met Datalert-verbindingsstatus Actief](./media/tem-azure-portal-enable-service.png)
 
 ### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Stap 3: de app Datalert voor zakelijke geregistreerde apparaten implementeren
 
@@ -136,13 +136,13 @@ Volg deze stappen om de app Datalert in Intune te maken voor elk platform. In de
 
 4. Kies of u de installatie van de app verplicht of optioneel wilt maken voor de groep. De volgende voorbeeldschermafbeelding toont de verplichte installatie, wat betekent dat gebruikers de installatie van de Datalert-app moeten installeren na het registreren van hun apparaat.
 
-  ![Schermafbeelding van het deelvenster Een beleid toevoegen](./media/tem-assign-datalert-app-to-device-group.png)
+   ![Schermafbeelding van het deelvenster Een beleid toevoegen](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>Stap 4: zakelijk betaalde telefoonlijnen aan de Datalert-console toevoegen
 
 U hebt nu de Intune- en Datalert-services geconfigureerd om met elkaar te communiceren. Nu moet u uw zakelijk betaalde telefoonlijnen in de Datalert-console toevoegen en drempelwaarden en acties voor schendingen van mobiel gebruik of roaming definiëren. U kunt zakelijk betaalde telefoonlijnen handmatig aan de Datalert-console toevoegen. U kunt de lijnen ook automatisch laten toevoegen nadat het apparaat is geregistreerd bij Intune.
 
-Om deze items in te stellen, gaat u naar de pagina [Datalert setup for Microsoft Intune](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup) en volgt u de stappen in de setup-wizard in het tabblad **instellingen**.
+Als u deze items wilt instellen, gaat u naar de pagina [Datalert setup for Microsoft Intune](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup)) en volgt u de stappen in de setup-wizard op het tabblad **Instellingen**.
 
   ![Schermafbeelding van het deelvenster Een beleid toevoegen](./media/tem-add-phone-lines-to-datalert-console.png)
 

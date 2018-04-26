@@ -1,29 +1,33 @@
 ---
 title: Een Wi-Fi-profiel met een vooraf gedeelde sleutel maken - Microsoft Intune - Azure | Microsoft Docs
 description: Gebruik een aangepast profiel om een Wi-Fi-profiel met een vooraf gedeelde sleutel te maken en ontvang XML-voorbeeldcode voor Android-, Windows- en op EAP gebaseerde Wi-Fi-profielen in Microsoft Intune
-keywords: 
+keywords: ''
 author: mandia
 ms.author: MandiOhlinger
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 27ced5debc7eb063be03f4e6a1932425717318af
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Een aangepast apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel - Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Vooraf gedeelde sleutels (PSK) worden doorgaans gebruikt om gebruikers in Wi-Fi-netwerken of draadloze LAN's te verifiëren. Met Intune kunt u Wi-Fi-profielen met vooraf gedeelde sleutels maken. Als u een profiel wilt maken, gebruikt u de functie **Aangepaste apparaatprofielen** in Intune. Dit artikel bevat ook enkele voorbeelden over het maken van op EAP gebaseerde Wi-Fi-profielen.
+
+> [!IMPORTANT]
+>- Door gebruik van een vooraf gedeelde sleutel met Windows 10 wordt een herstelfout weergegeven in Intune. Als dit gebeurt, wordt het Wi-Fi-profiel correct toegewezen aan het apparaat en werkt het profiel zoals verwacht.
+>- Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel exporteert, moet u ervoor zorgen dat het bestand is beveiligd. De sleutel bestaat uit tekst zonder opmaak. Het is dus uw verantwoordelijkheid om de sleutel te beveiligen.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
@@ -46,15 +50,15 @@ U kunt voor Android-, Windows- en op EAP gebaseerde Wi-Fi-profielen een aangepas
 
    d. **OMA-URI**:
 
-    - **Voor Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Voor Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Voor Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **Voor Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-    > Zorg ervoor dat deze string met een punt begint.
+     > [!NOTE]
+     > Zorg ervoor dat deze string met een punt begint.
 
-    SSID is de SSID waarvoor u het beleid wilt maken. Voer bijvoorbeeld `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings` in.
+     SSID is de SSID waarvoor u het beleid wilt maken. Voer bijvoorbeeld `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings` in.
 
-  e. **Waardeveld**: hier plakt u de XML-code. Zie de voorbeelden in dit artikel. Werk elke waarde bij zodat de waarden overeenkomen met uw netwerkinstellingen. In het gedeelte met opmerkingen over de code staat een aantal tips.
+   e. **Waardeveld**: hier plakt u de XML-code. Zie de voorbeelden in dit artikel. Werk elke waarde bij zodat de waarden overeenkomen met uw netwerkinstellingen. In het gedeelte met opmerkingen over de code staat een aantal tips.
 3. Selecteer **OK**, sla op en wijs het beleid toe.
 
     > [!NOTE]
@@ -203,7 +207,7 @@ U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding. Ge
 
 1. Ga op een computer die is verbonden of recent verbonden is geweest met het draadloze netwerk naar de map `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}`.
 
-  Het is raadzaam om een computer te gebruiken die nog niet met heel veel draadloze netwerken verbinding heeft gemaakt. Als u dat wel doet, moet u mogelijk alle profielen doorzoeken om het juiste te vinden.
+   Het is raadzaam om een computer te gebruiken die nog niet met heel veel draadloze netwerken verbinding heeft gemaakt. Als u dat wel doet, moet u mogelijk alle profielen doorzoeken om het juiste te vinden.
 
 2. Doorzoek de XML-bestanden om het bestand met de juiste naam te vinden.
 3. Wanneer u het juiste XML-bestand hebt gevonden, kopieert u de XML-code en plakt u deze in het veld **Gegevens** van de pagina OMA-URI-instellingen.

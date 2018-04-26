@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 39432d09bea822c25ca9e11181a11a1e2298dfef
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58727a501d6a8ec14e964094eac9fcd6eb3868da
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-ios-update-policies-in-microsoft-intune"></a>iOS-updatebeleid configureren in Microsoft Intune
 
@@ -54,4 +54,5 @@ U hebt het beleid toegepast op uw gebruikers of apparaten. De apparaten die word
 
 ## <a name="monitor-ios-device-installation-failures"></a>Installatiefouten voor iOS-apparaten controleren
 <!-- 1352223 -->
-Het rapport **Installation failures for iOS devices** (Installatiefouten voor iOS-apparaten) is beschikbaar in het deelvenster **Software-updates**. Het rapport bevat een lijst met de iOS-apparaten onder supervisie waarop een iOS-updatebeleid van toepassing is geweest, waarvoor is geprobeerd een update uit te voeren en die niet konden worden bijgewerkt. Voor elk apparaat kunt u bekijken waarom het apparaat niet automatisch is bijgewerkt. Bijgewerkte apparaten die in orde zijn, worden niet weergegeven in de lijst. Een apparaat is bijgewerkt als de nieuwste update die wordt ondersteund, is geïnstalleerd.
+Het rapport **Installation Failures for iOS Devices** (Installatiefouten voor iOS-apparaten) is beschikbaar in het deelvenster **Software-updates**. Het rapport bevat een lijst met de iOS-apparaten onder supervisie waarop een iOS-updatebeleid van toepassing is geweest, waarvoor is geprobeerd een update uit te voeren en die niet konden worden bijgewerkt. Voor elk apparaat kunt u bekijken waarom het apparaat niet automatisch is bijgewerkt. Bijgewerkte apparaten die in orde zijn, worden niet weergegeven in de lijst. Een apparaat is bijgewerkt als de nieuwste update die wordt ondersteund, is geïnstalleerd.
+

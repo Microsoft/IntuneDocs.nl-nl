@@ -2,28 +2,28 @@
 title: Line-of-business-apps voorbereiden voor app-beveiligingsbeleid
 titlesuffix: Microsoft Intune
 description: Gebruik de App Wrapping Tool en de App SDK zodat uw aangepaste Line-Of-Business-apps het app-beveiligingsbeleid in Microsoft Intune kunnen gebruiken.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Line-of-business-apps voorbereiden voor app-beveiligingsbeleid
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 U kunt uw apps gebruik laten maken van app-beveiligingsbeleid door de Intune App Wrapping Tool of de Intune App SDK te gebruiken. In deze informatie wordt uitgelegd hoe en wanneer u deze twee methoden gebruikt.
 
@@ -70,8 +70,8 @@ Zie [Overzicht](app-sdk.md) voor meer informatie over de SDK. Zie [Aan de slag m
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Ja, gebruik het [Intune App SDK Xamarin-onderdeel](app-sdk-xamarin.md).|Ja, gebruik de [Intune App SDK Cordova-invoegtoepassing](app-sdk-cordova.md).|
-|**Android**| Ja, gebruik het [Intune App SDK Xamarin-onderdeel](app-sdk-xamarin.md).|Ja, gebruik de [Intune App SDK Cordova-invoegtoepassing](app-sdk-cordova.md).|
+|**iOS**|Ja, gebruik de [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|Ja, gebruik de [Intune App SDK Cordova-invoegtoepassing](app-sdk-cordova.md).|
+|**Android**| Ja, gebruik de [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|Ja, gebruik de [Intune App SDK Cordova-invoegtoepassing](app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Vergelijking van functies
 In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de App Wrapping Tool.
@@ -79,30 +79,30 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 > [!NOTE]
 > De App Wrapping Tool kan worden gebruikt met de zelfstandige versie van Intune of met Intune met Configuration Manager.
 
-|Onderdeel|App SDK|App Wrapping Tool|
-|-----------|---------------------|-----------|
-|Webinhoud beperken en weergeven in een bedrijfsbeheerde browser|X|X|
-|Back-ups verhinderen van Android, iTunes of iCloud|X|X|
-|App mag gegevens overdragen naar ander apps|X|X|
-|App mag gegevens ontvangen van andere apps|X|X|
-|Knippen, kopiëren en plakken met andere apps beperken|X|X|
-|Eenvoudige pincode vereisen voor toegang|X|X|
-|De in de app ingebouwde pincode vervangen door de pincode van Intune|X||
-|Het aantal pogingen opgeven voordat de pincode opnieuw wordt ingesteld|X|X|
-|Vingerafdruk in plaats van pincode toestaan |X|X|
-|Bedrijfsreferenties vereisen voor toegang|X|X|
-|De uitvoering blokkeren van beheerde apps die op gekraakte of geroote apparaten worden uitgevoerd|X|X|
-|App-gegevens versleutelen|X|X|
-|De toegangsvereisten na een opgegeven aantal minuten opnieuw controleren|X|X|
-|De offlinerespijtperiode opgeven|X|X|
-|Schermafbeeldingen maken blokkeren (alleen Android)|X|X|
-|Ondersteuning van MAM zonder apparaatinschrijving|X|X|
-|Volledig wissen|X|X|
-|Selectief wissen <br></br>**Opmerking:** bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
-|'Opslaan als' voorkomen |X||
-|Configuratie van doeltoepassingen |X||
-|Ondersteuning voor meerdere identiteiten|X||
-|Aanpasbare stijl |X|||
+|                                                         Onderdeel                                                          | App SDK | App Wrapping Tool |
+|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
+|                              Webinhoud beperken en weergeven in een bedrijfsbeheerde browser                              |    X    |         X         |
+|                                        Back-ups verhinderen van Android, iTunes of iCloud                                        |    X    |         X         |
+|                                         App mag gegevens overdragen naar ander apps                                         |    X    |         X         |
+|                                        App mag gegevens ontvangen van andere apps                                         |    X    |         X         |
+|                                      Knippen, kopiëren en plakken met andere apps beperken                                       |    X    |         X         |
+|                                              Eenvoudige pincode vereisen voor toegang                                               |    X    |         X         |
+|                                         De in de app ingebouwde pincode vervangen door de pincode van Intune                                         |    X    |                   |
+|                                     Het aantal pogingen opgeven voordat de pincode opnieuw wordt ingesteld                                      |    X    |         X         |
+|                                             Vingerafdruk in plaats van pincode toestaan                                             |    X    |         X         |
+|                                         Bedrijfsreferenties vereisen voor toegang                                         |    X    |         X         |
+|                             De uitvoering blokkeren van beheerde apps die op gekraakte of geroote apparaten worden uitgevoerd                              |    X    |         X         |
+|                                                     App-gegevens versleutelen                                                     |    X    |         X         |
+|                           De toegangsvereisten na een opgegeven aantal minuten opnieuw controleren                            |    X    |         X         |
+|                                             De offlinerespijtperiode opgeven                                             |    X    |         X         |
+|                                           Schermafbeeldingen maken blokkeren (alleen Android)                                            |    X    |         X         |
+|                                        Ondersteuning van MAM zonder apparaatinschrijving                                         |    X    |         X         |
+|                                                        Volledig wissen                                                         |    X    |         X         |
+| Selectief wissen <br></br><strong>Opmerking:</strong> bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd. |    X    |                   |
+|                                                    'Opslaan als' voorkomen                                                     |    X    |                   |
+|                                            Configuratie van doeltoepassingen                                            |    X    |                   |
+|                                                Ondersteuning voor meerdere identiteiten                                                |    X    |                   |
+|                                                    Aanpasbare stijl                                                    |    X    |                   |
 
 ## <a name="next-steps"></a>Volgende stappen
 

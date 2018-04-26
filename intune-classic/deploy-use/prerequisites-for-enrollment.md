@@ -1,29 +1,29 @@
 ---
 title: Vereisten voor de inschrijving van mobiele apparaten
 description: Mobile Device Management (MDM)-vereisten instellen en voorbereidingen treffen voor het inschrijven van verschillende besturingssystemen.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Vereisten voor Mobile Device Management in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Als u wilt dat uw medewerkers hun mobiele apparaten kunnen inschrijven bij Intune, zijn de volgende stappen vereist. Dezelfde stappen zijn vereist voor het beheren van apparaten die eigendom zijn van het bedrijf.
 
@@ -39,7 +39,7 @@ Als u wilt dat uw medewerkers hun mobiele apparaten kunnen inschrijven bij Intun
 
 Zoekt u Intune met Configuration Manager?
 > [!div class="button"]
-[SCCM-documenten weergeven >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [SCCM-documenten weergeven >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>Stap 1: Verbindingen inschakelen
 
@@ -80,14 +80,15 @@ Een aangepaste bedrijfsportal geeft uw eindgebruikers een vertrouwde en efficië
 
 De bedrijfsnaam wordt weergegeven als de titel van de bedrijfsportal. Gebruikers zien de contactgegevens en details in het scherm Contact opnemen met IT van de bedrijfsportal. Wanneer een gebruiker op de privacykoppeling klikt, wordt de privacyverklaring weergegeven.
 
-|Veldnaam|Max. lengte|Meer informatie|
-    |----------|------------------------|----------------|
-    |Bedrijfsnaam|40|Deze naam wordt weergegeven als de titel van de bedrijfsportal. **Opmerking**: Uitsluitend alfanumerieke tekens. Dit veld ondersteunt geen speciale tekens.|
-    |Naam van contactpersoon IT-afdeling|40|Deze naam wordt weergegeven op de pagina **Contact opnemen met IT**.|
-    |Telefoonnummer IT-afdeling|20|Dit contacttelefoonnummer wordt weergegeven op de pagina **Contact opnemen met IT**.|
-    |E-mailadres IT-afdeling|40|Dit contactadres wordt weergegeven op de pagina **Contact opnemen met IT**. U moet een geldig e-mailadres invoeren in de notatie **alias@domainname.com**.|
-    |Aanvullende informatie|120|Deze informatie wordt weergegeven op de pagina **Contact opnemen met IT**.|
-    |URL van privacyverklaring van bedrijf|79|U kunt de privacyverklaring van uw eigen bedrijf opgeven. Deze wordt dan weergegeven wanneer gebruikers in de bedrijfsportal op de privacykoppelingen klikken. U moet een geldige URL opgeven in de notatie https://www.contoso.com.|
+
+|          Veldnaam           | Max. lengte |                                                                                       Meer informatie                                                                                        |
+|-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Bedrijfsnaam          |     40     |                Deze naam wordt weergegeven als de titel van de bedrijfsportal. <strong>Opmerking</strong>: Uitsluitend alfanumerieke tekens. Dit veld ondersteunt geen speciale tekens.                |
+|  Naam van contactpersoon IT-afdeling   |     40     |                                                                Deze naam wordt weergegeven op de pagina <strong>Contact opnemen met IT</strong>.                                                                |
+|  Telefoonnummer IT-afdeling   |     20     |                                                           Dit contacttelefoonnummer wordt weergegeven op de pagina <strong>Contact opnemen met IT</strong>.                                                           |
+|  E-mailadres IT-afdeling  |     40     |             Dit contactadres wordt weergegeven op de pagina <strong>Contact opnemen met IT</strong>. U moet een geldig e-mailadres invoeren in de notatie <strong>alias@domainname.com</strong>.              |
+|    Aanvullende informatie     |    120     |                                                            Deze informatie wordt weergegeven op de pagina <strong>Contact opnemen met IT</strong>.                                                             |
+| URL van privacyverklaring van bedrijf |     79     | U kunt de privacyverklaring van uw eigen bedrijf opgeven. Deze wordt dan weergegeven wanneer gebruikers in de bedrijfsportal op de privacykoppelingen klikken. U moet een geldige URL opgeven in de notatie https://www.contoso.com. |
 
 ### <a name="support-contacts"></a>Contactpersonen voor ondersteuning
 Aan gebruikers in de bedrijfsportal wordt de ondersteuningswebsite weergegeven voor toegang tot onlineondersteuning.
@@ -199,7 +200,7 @@ Voltooi de volgende stappen voordat u contact opneemt met Microsoft Support om u
 
 #### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Stel de MDM-instantie opnieuw in van Office 365 naar Configuration Manager
 
-1. Navigeer naar [https://protection.office.com](https://protection.office.com).
+1. Ga naar [https://protection.office.com](https://protection.office.com).
 2. Selecteer het tabblad **Beveiligingsbeleid** en selecteer **Apparaatbeheer**.
 3. Stel alle apparaten buiten gebruik door **Selectief wissen** te kiezen. Probeer niet een apparaat buiten gebruik te stellen vanaf het apparaat zelf. Als selectief wissen is uitgeschakeld, is er geen verdere actie vereist.
 4. Selecteer het tabblad **Beveiligingsbeleid** en selecteer **Apparaatbeveiligingsbeleid**.

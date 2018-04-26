@@ -1,27 +1,26 @@
 ---
-title: Apparaatbeperkingsinstellingen in Microsoft Intune configureren
-titleSuffix: 
-description: Meer informatie over hoe u Microsoft Intune kunt gebruiken voor het configureren van instellingen en functies op de apparaten die u beheert.
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Apparaatbeperkingsinstellingen configureren in Microsoft Intune - Azure | Microsoft Docs
+description: Een apparaatprofiel toevoegen om functies op Android-, macOS-, iOS-, Windows Phone- en Windows 10-apparaten in Microsoft Intune te beperken
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5ccb928b8ff3f9cebbd6f51d99cddd1f36fb074
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen configureren in Microsoft Intune
+# <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen configureren in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Met apparaatbeperkingen kunt u verschillende instellingen en functies bepalen die u voor diverse categorieën beheert, waaronder:
 - Beveiliging
@@ -35,12 +34,10 @@ Lees over de basisprincipes van apparaatbeperkingsprofielen en lees dan meer art
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Een apparaatprofiel met apparaatbeperkingsinstellingen maken
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies op de pagina **Intune** de optie **Apparaatconfiguratie**.
-2. Kies op de pagina **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
-3. Kies **Profiel maken** op de pagina **Profielen**.
-4. Voer op de pagina **Profiel maken** een **naam** en **beschrijving** in voor het apparaatbeperkingsprofiel.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+3. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+4. Geef een **naam** en **beschrijving** op voor het beperkingsprofiel voor het apparaat.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de aangepaste instellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor apparaatbeperkingsinstellingen:
     - **Android**
     - **iOS**

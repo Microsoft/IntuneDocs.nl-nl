@@ -1,26 +1,26 @@
 ---
 title: Windows- en Windows Phone-apps voor Intune sideloaden
 description: Leer hoe u Line-Of-Business-apps ondertekent, zodat u Intune kunt gebruiken voor de implementatie van deze apps.
-keywords: 
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
-ms.prod: 
-ms.service: 
-ms.technology: 
+ms.prod: ''
+ms.service: ''
+ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 06922f76643a6b95e994bf4e219ee3a4a85953c5
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 9f629fce727df9f15b6357c7c624165e4443ea91
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Line-of-business-apps ondertekenen, zodat ze kunnen worden geïmplementeerd op Windows-apparaten met Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Als Intune-beheerder kunt u LOB-apps (line-of-business) implementeren op Windows- en Windows 10 Mobile-apparaten, met inbegrip van de bedrijfsportal-app. Als u apps van het type .appx of .xap wilt implementeren op Windows 10- en Windows 10 mobile-apparaten, of als u een LOB-app wilt implementeren op Windows 8.1- of Windows Phone 8.1-apparaten, moet u een **Symantec Enterprise Mobile certificaat voor Codeondertekening** ophalen. Alleen het Symantec-certificaat wordt voor deze apps vertrouwd voor de desbetreffende Windows-apparaten. U kunt uw eigen certificeringsinstantie gebruiken voor Windows 10-apps en voor 'universele' apps. Dit certificaat is vereist om:
 
@@ -78,7 +78,7 @@ U kunt de bedrijfsportal-app implementeren op Windows-apparaten (inclusief Windo
 
     U kunt ook de Windows Phone 8.1-bedrijfsportal (offline gelicentieerd pakket) of de Windows 10-bedrijfsportal (offline gelicentieerd pakket) downloaden via [Microsoft Store voor Bedrijven](http://businessstore.microsoft.com/). De bedrijfsportal-app moet worden opgehaald met een offline-licentie en het juiste pakket moet worden gedownload voor offlinegebruik. In de vermeldingen voor het Windows 8- en Windows Phone 8-platform in de selectie wordt verwezen naar de versies voor Windows 8.1. Zie [Apps beheren die u hebt aangeschaft in Microsoft Store voor Bedrijven](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) als u wilt weten hoe u dit met Intune kunt doen.
 
-2.  **De Windows Phone SDK downloaden** Download de Windows Phone SDK 8.0 (http://go.microsoft.com/fwlink/?LinkId=615570) en installeer de SDK op uw computer. Deze SDK is nodig om een token voor toepassingsinschrijving te genereren.
+2.  **De Windows Phone SDK downloaden** Download de Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) en installeer de SDK op uw computer. Deze SDK is nodig om een token voor toepassingsinschrijving te genereren.
 
 3.  **Een AETX-bestand genereren** Genereer een bestand met een registratietoken van de toepassing (.aetx) met het Symantec PFX-bestand met AETGenerator.exe, onderdeel van Windows Phone SDK 8.0. Zie [Een inschrijvingstoken van de toepassing  genereren voor Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)voor informatie over het maken van een AETX-bestand.
 
@@ -128,7 +128,7 @@ Het Symantec-certificaat waarmee mobiele apps voor Windows en Windows Phone word
 
     Ga naar [www.symantec.com](http://www.symantec.com) of bel +1-877-438-8776 of +1-650-426-3400 voor meer informatie over Symantec-certificaten.
 
-2.  Ga naar de website (voorbeeld: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) en meld u aan met de Symantec uitgevers-ID en het e-mailadres dat is gekoppeld aan het certificaat. Start het vernieuwingsproces op het apparaat waarop u daarna ook het certificaat gaat downloaden.
+2.  Ga naar de website (bijvoorbeeld: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) en meld u aan met de Symantec-uitgevers-id en het e-mailadres dat is gekoppeld aan het certificaat. Start het vernieuwingsproces op het apparaat waarop u daarna ook het certificaat gaat downloaden.
 
 3.  Nadat de vernieuwing is goedgekeurd en betaald, downloadt u het certificaat.
 
@@ -158,11 +158,11 @@ U kunt de Windows 10-bedrijfsportal-app handmatig rechtstreeks implementeren van
 
 ![Afbeelding van afhankelijkheidsbestanden voor downloaden ](./media/Win10CP-dependent-files.png)
 5. Voordat u de bedrijfsportal-app uploadt naar Intune, maakt u een map (bijvoorbeeld C:&#92;Company Portal) waarin de pakketten als volgt zijn gestructureerd:
-  1. Plaats het bedrijfsportalpakket in C:\Bedrijfsportal. Maak op deze locatie tevens een submap Afhankelijkheden.  
-  ![Afbeelding van de map Afhankelijkheden waarin het APPXBUN-bestand is opgeslagen](./media/Win10CP-Dependencies-save.png)
-  2. Plaats de negen afhankelijkheidspakketten in de map Afhankelijkheden.  
-  Als de afhankelijkheden niet in deze indeling worden geplaatst, worden ze niet herkend door Intune en kunnen ze niet worden geüpload tijdens de pakket-upload. Het uploaden mislukt met de volgende fout.  
-  ![De Windows-app-afhankelijkheid voor dit software-installatieprogramma is niet gevonden in de toepassingsmap. U kunt doorgaan met het maken en implementeren van deze toepassing, maar deze kan pas worden uitgevoerd als de ontbrekende Windows-app-afhankelijkheid beschikbaar is.](./media/Win10CP-error-message.png)
+   1. Plaats het bedrijfsportalpakket in C:\Bedrijfsportal. Maak op deze locatie tevens een submap Afhankelijkheden.  
+   ![Afbeelding van de map Afhankelijkheden waarin het APPXBUN-bestand is opgeslagen](./media/Win10CP-Dependencies-save.png)
+   2. Plaats de negen afhankelijkheidspakketten in de map Afhankelijkheden.  
+   Als de afhankelijkheden niet in deze indeling worden geplaatst, worden ze niet herkend door Intune en kunnen ze niet worden geüpload tijdens de pakket-upload. Het uploaden mislukt met de volgende fout.  
+   ![De Windows-app-afhankelijkheid voor dit software-installatieprogramma is niet gevonden in de toepassingsmap. U kunt doorgaan met het maken en implementeren van deze toepassing, maar deze kan pas worden uitgevoerd als de ontbrekende Windows-app-afhankelijkheid beschikbaar is.](./media/Win10CP-error-message.png)
 6. Ga terug naar Intune en upload the Bedrijfsportal-app als nieuwe app. Implementeer als vereiste app naar de gewenste set doelgebruikers.  
 
 Zie [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Een appxbundle met afhankelijkheden implementeren via Microsoft Intune MDM) voor meer informatie over hoe Intune afhankelijkheden voor universele apps verwerkt.  
@@ -190,13 +190,14 @@ U ondertekent en implementeer de app als volgt:
 2. Download de Windows 10-bedrijfsportal-app vanuit Microsoft Store voor Bedrijven, zoals hierboven beschreven.  
 3. Voer het script uit met de invoerparameters die zijn opgegeven in de koptekst van het script om de Windows-10-bedrijfsportal-app (hieronder uitgepakt) te ondertekenen. Afhankelijkheden hoeven niet in het script te worden doorgegeven. Deze zijn alleen vereist wanneer de app wordt geüpload naar de Intune-beheerconsole.
 
-|Parameter | Description|
-| ------------- | ------------- |
-|InputWin10AppxBundle |Het pad naar het bron-appxbundle-bestand. |
-|OutputWin10AppxBundle |Het uitvoerpad voor het ondertekende appxbundle-bestand. |
-|Win81Appx | Het pad naar het Windows 8.1- of Windows Phone 8.1-bedrijfsportalbestand (het APPX-bestand).|
-|PfxFilePath |Het pad naar het certificaat voor ondertekening van programmacode voor mobiele bedrijfsapparaten van Symantec (het PFX-bestand). |
-|PfxPassword| Het wachtwoord voor het certificaat voor ondertekening van programmacode voor mobiele bedrijfsapparaten van Symantec. |
-|PublisherId |De uitgevers-id van de onderneming. Als deze niet is opgegeven, wordt het veld Onderwerp van Symantec Enterprise-certificaat voor ondertekening van mobiele code gebruikt.|
-|SdkPath | Het pad naar de hoofdmap van de Windows-SDK voor Windows 10. Dit argument is optioneel en wordt standaard ingesteld op ${env:ProgramFiles(x86)} \Windows Kits\10|
+|       Parameter       |                                                                    Beschrijving                                                                    |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                             Het pad naar het bron-appxbundle-bestand.                                              |
+| OutputWin10AppxBundle |                                                  Het uitvoerpad voor het ondertekende appxbundle-bestand.                                                  |
+|       Win81Appx       |                          Het pad naar het Windows 8.1- of Windows Phone 8.1-bedrijfsportalbestand (het APPX-bestand).                           |
+|      PfxFilePath      |                                   Het pad naar het certificaat voor ondertekening van programmacode voor mobiele bedrijfsapparaten van Symantec (het PFX-bestand).                                    |
+|      PfxPassword      |                                     Het wachtwoord voor het certificaat voor ondertekening van programmacode voor mobiele bedrijfsapparaten van Symantec.                                      |
+|      PublisherId      |      De uitgevers-id van de onderneming. Als deze niet is opgegeven, wordt het veld Onderwerp van Symantec Enterprise-certificaat voor ondertekening van mobiele code gebruikt.       |
+|        SdkPath        | Het pad naar de hoofdmap van de Windows-SDK voor Windows 10. Dit argument is optioneel en wordt standaard ingesteld op ${env:ProgramFiles(x86)} \Windows Kits\10 |
+
 Via het script wordt de ondertekende versie van de Windows 10-bedrijfsportal-app uitgevoerd wanneer het uitvoeren van de app is voltooid. Vervolgens implementeert u de ondertekende versie van de app als een LOB-app via Intune. De huidige geïmplementeerde versies worden bijgewerkt naar deze nieuwe app.  

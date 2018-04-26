@@ -1,28 +1,28 @@
 ---
 title: Microsoft Intune-filterinstellingen voor webinhoud op iOS-apparaten
-titlesuffix: 
+titlesuffix: ''
 description: In dit onderwerp leest u welke Microsoft Intune-instellingen u gebruikt om toegang tot websites toe te staan of te blokkeren vanaf apparaten met iOS.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Filterinstellingen voor webinhoud op iOS-apparaten
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In dit artikel ziet u met welke Microsoft Intune-instellingen u browsertoegang tot URL’s vanaf apparaten met iOS kunt beheren.
 
@@ -63,7 +63,7 @@ Als u geen URL's opgeeft, kunnen eindgebruikers geen websites openen, met uitzon
 2. Klik op **Toevoegen** nadat u de gegevens voor elke website hebt ingevoerd.
 3. Klik op **OK**als u klaar bent.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > De volgende URL's zijn automatisch toegestaan in Intune.
 > - www.microsoft.com
 > - www.microsoft.net

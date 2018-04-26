@@ -1,44 +1,47 @@
 ---
 title: Logboeken via e-mail naar het ondersteuningsteam van het bedrijf verzenden | Microsoft Docs
 description: Gegevenslogboeken verzenden via e-mail op een Android-apparaat
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 04/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ddd0c1113b7cce6f461b627a3d346806df3bbc8c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5e37ab05889a1141464b75a36b4f156f897799ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="send-logs-to-your-company-support-using-email"></a>Logboeken via e-mail naar het ondersteuningsteam van het bedrijf verzenden
+# <a name="email-logs-to-your-company-support"></a>Logboeken via e-mail naar het ondersteuningsteam van uw bedrijf verzenden
 
-Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat gebruikt, kunt u het ondersteuningsteam van het bedrijf helpen het probleem op te lossen door informatie naar hen te e-mailen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
+Soms treedt een fout op wanneer u de bedrijfsportal-app op uw Android-apparaat gebruikt. Wanneer dit gebeurt, kunt u meer informatie over de fout per e-mail naar een ondersteuningsmedewerker van uw bedrijf verzenden. Deze informatie bevat de context die nodig is om het probleem voor u op te lossen.  
+
+Informatie over fouten wordt op uw apparaat opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd. Wanneer u de logboeken naar de bedrijfsportal-app uploadt, worden ze eerst naar de Microsoft-ontwikkelaars gestuurd die aan de app werken. Ze gebruiken de logboeken voor het verbeteren van de appfunctionaliteit en het voorkomen van toekomstige fouten. Vervolgens ontvangt u een incident-id voor uw specifieke fout die u met de ondersteuningsmedewerker van uw bedrijf kunt delen.  
 
 > [!Note]
-> Om het voor het ondersteuningsteam van het bedrijf eenvoudiger te maken de oorzaak van het probleem te achterhalen, schakelt u _uitgebreide logboekregistratie_ in. Met uitgebreide logboekregistratie worden alle relevante gegevens in het rapport opgenomen. [Hier vindt u informatie over het inschakelen van uitgebreide logboekregistratie](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Schakel _uitgebreide logboekregistratie_ in om het voor het ondersteuningsteam van het bedrijf eenvoudiger te maken de oorzaak van het probleem te achterhalen. Via uitgebreide logboekregistratie worden alle gegevens over een fout geregistreerd en in het rapport vermeld. [Hier vindt u informatie over het inschakelen van uitgebreide logboekregistratie](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).  
 
-Logboeken via e-mail naar het ondersteuningsteam van het bedrijf verzenden:
+U kunt als volgt logboeken via e-mail naar het ondersteuningsteam van uw bedrijf verzenden:
 
 1.  Open de app Bedrijfsportal.
 
-2.  Tik op **Menu** >   **Help en feedback**.
+2.  Tik op **Menu** > **Help** > **E-mailondersteuning**.
 
     > [!NOTE]
     > De knop **Menu** kan een softwareknop of een hardwareknop zijn, afhankelijk van het Android-apparaat dat u gebruikt.
 
-3.  Tik onder **Help** op **Help opvragen**.
+3.  Tik op **E-mail verzenden en logboeken uploaden**.
+4.  Nadat het uploaden is voltooid, tikt u op uw e-mail-app. Er wordt een e-mailbericht geopend waarin de incident-id vooraf is ingevuld in het onderwerpveld. Beschrijf het probleem dat is opgetreden in de hoofdtekst van het e-mailbericht.  
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

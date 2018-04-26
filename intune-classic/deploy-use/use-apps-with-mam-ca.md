@@ -1,29 +1,29 @@
 ---
 title: Apps met MAM CA gebruiken
 description: Dit onderwerp helpt u te begrijpen hoe MAM CA kan helpen bij het beheren van welke apps toegang hebben tot O365-services.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 725783751c13b2301e7fbef4dea1a47bc339c8b7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2f313fcbfa26c8f82708f8f830404da97a3eca25
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>Wat u kunt verwachten wanneer u een app met app-CA gebruikt
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Met app-CA wordt de identiteit van de goedgekeurde toepassing geverifieerd via een broker-app die geïnstalleerd moet zijn op het apparaat:
 *  Voor **iOS** is de **Azure Authenticator-app** de broker-app.
@@ -40,8 +40,8 @@ Hier volgt een lijst met eigenschappen die rechtstreeks zijn afgeleid van het ap
 
 > [!NOTE]
 > Op Android-apparaten:
-  * De bedrijfsportal-app moet geïnstalleerd zijn op het apparaat, maar de eindgebruiker hoeft zich niet aan te melden bij de app.
-  * Apparaatregistratie moet worden uitgevoerd via de app OneDrive of Outlook.
+>   * De bedrijfsportal-app moet geïnstalleerd zijn op het apparaat, maar de eindgebruiker hoeft zich niet aan te melden bij de app.
+>   * Apparaatregistratie moet worden uitgevoerd via de app OneDrive of Outlook.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Een apparaat verwijderen uit Azure AD-registratie.
 U kunt de apparaatregistratie verwijderen via de Azure AD-beheerconsole. Doorgaans doet de IT-beheerder dit.  De apparaatregistratie kan echter ook door de eindgebruiker op het apparaat zelf worden verwijderd.
@@ -52,7 +52,7 @@ U kunt de apparaatregistratie verwijderen via de Azure AD-beheerconsole. Doorgaa
 
 ## <a name="app-based-ca-with-device-based-ca"></a>App-certificeringsinstantie met apparaatcertificeringsinstantie  
 
-U kunt [voorwaardelijke toegang op basis van apparaatcompatibiliteit](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**Device CA**) configureren in de [Intune-beheerdersconsole](https://manage.microsoft.com) of de [Azure AD Premium-beheerconsole] (https://manage.windowsazure.com). Voor Device CA mogen gebruikers alleen verbinding maken met Exchange Online via door Intune beheerde apparaten die compatibel zijn met het Intune-apparaatcompatibiliteitsbeleid of pc's die lid zijn van een domein.  Als een gebruiker tot een of meer beveiligingsgroepen behoort die zijn geconfigureerd voor app-CA- en Device CA-beleid, moet de gebruiker aan een van deze twee vereisten voldoen:
+U kunt [voorwaardelijke toegang op basis van apparaatcompatibiliteit](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (<strong>Device CA</strong>) configureren in de [Intune-beheerdersconsole](https://manage.microsoft.com) of de [Azure AD Premium-beheerconsole](https://manage.windowsazure.com). Voor Device CA mogen gebruikers alleen verbinding maken met Exchange Online via door Intune beheerde apparaten die compatibel zijn met het Intune-apparaatcompatibiliteitsbeleid of pc's die lid zijn van een domein.  Als een gebruiker tot een of meer beveiligingsgroepen behoort die zijn geconfigureerd voor app-CA- en Device CA-beleid, moet de gebruiker aan een van deze twee vereisten voldoen:
 * De app die wordt gebruikt voor toegang tot de service is een mobiele app die wordt ondersteund door 
 * , en op het apparaat waarop de app wordt uitgevoerd, is **iOS verificator (voor iOS-apparaten)** of de **bedrijfsportal-app (voor Android-apparaten)** geïnstalleerd.
 * Het apparaat dat wordt gebruikt om toegang tot de service te verkrijgen, wordt **door Intune beheerd en is compatibel** met het Intune-apparaatcompatibiliteitsbeleid of is een **pc die lid is van een domein**.  Hier volgen enkele voorbeelden om dit te verduidelijken:
@@ -64,6 +64,6 @@ U kunt [voorwaardelijke toegang op basis van apparaatcompatibiliteit](restrict-a
 
 [Apps die geen gebruik maken van moderne verificatie blokkeren](block-apps-with-no-modern-authentication.md)
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 
 [Beveilig app-gegevens met beveiligingsbeleid voor apps](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

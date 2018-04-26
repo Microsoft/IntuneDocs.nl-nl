@@ -15,16 +15,16 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd9915f3120e2fee2b487fbfff0d775a9d50ef8a
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>iOS-apps beheren die zijn aangeschaft via een volumeaankoopprogramma met Microsoft Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 De iOS App Store biedt u de mogelijkheid meerdere licenties te kopen voor een app die u wilt uitvoeren binnen uw bedrijf. Door meerdere exemplaren aan te schaffen, kunt u apps in uw bedrijf efficiënt beheren.
 
@@ -152,6 +152,17 @@ Als u de licenties van alle VPP-apps van een bepaald VPP-token wilt intrekken, m
 ## <a name="further-information"></a>Meer informatie
 
 Wanneer een gebruiker met een in aanmerking komend apparaat voor de eerste keer probeert een VPP-app op een apparaat te installeren, wordt de gebruiker gevraagd om deel te nemen aan het volume-aankoopprogramma van Apple. Deelname aan het programma moet plaatsvinden voordat de installatie van de app wordt uitgevoerd. De uitnodiging om deel te nemen aan het Apple Volume Purchase Program vereist dat de gebruiker de iTunes-app op het iOS-apparaat kan gebruiken. Als u een beleid hebt ingesteld om de iTunes Store-app uit te schakelen, werkt de gebruikerslicentie niet voor VPP-apps. U kunt dit probleem oplossen door het beleid te verwijderen, zodat de iTunes-app is toegestaan, of door een licentie te verlenen op basis van het apparaat.
+
+## <a name="frequently-asked-questions"></a>Veelgestelde vragen
+
+#### <a name="how-long-does-the-portal-take-to-update-the-license-count-once-an-app-is-installed-or-removed-from-the-device"></a>Hoe lang duurt het voordat de portal het aantal licenties heeft bijgewerkt nadat een app is geïnstalleerd of verwijderd van het apparaat?
+De licentie wordt binnen een paar uur na het installeren of verwijderen van een app bijgewerkt. Als de eindgebruiker de app van het apparaat verwijdert, is de licentie nog toegewezen aan deze gebruiker of dit apparaat.
+
+#### <a name="is-it-possible-to-oversubscribe-an-app-and-if-so-in-what-circumstance"></a>Is het mogelijk om een app aan meer apparaten toe te wijzen dan het aantal licenties, en zo ja, in welke omstandigheden?
+Ja. De Intune-beheerder kan een app aan meer apparaten toewijzen dan het aantal licenties. Een voorbeeld: een beheerder koopt 100 licenties voor app XYZ en maakt de app vervolgens beschikbaar voor een groep van 500 leden. De licentie wordt aan de eerste 100 leden (gebruikers of apparaten) toegewezen; de rest van de leden kunnen de licentie niet toegewezen krijgen.
+
+#### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>Ik begrijp dat Intune automatisch elke dag app-licenties synchroniseert met Apple, klopt dat?
+Intune synchroniseert om de 15 uur app-licenties met Apple.
 
 ## <a name="next-steps"></a>Volgende stappen
 

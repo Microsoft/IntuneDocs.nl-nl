@@ -3,10 +3,10 @@ title: UI-updates voor Intune-apps voor eindgebruikers
 titlesuffix: Microsoft Intune
 description: Ontdek wat is gewijzigd in de gebruikersinterface voor apps op eindgebruikersapparaten met Microsoft Intune.
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/21/2018
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,41 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e553391bb2a98c5e57edf0a4388359703b9d550
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: 8da396e41844c854cd18a9384fe97ac0bee59355
+ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates zijn aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Inzicht in deze updates kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-2-2018"></a>Week van 2 april 2018
+
+#### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866---"></a>Update van de gebruikerservaring voor de bedrijfsportal-app voor iOS<!--1412866 -->
+Er is een grote update uitgebracht van de gebruikerservaring voor de bedrijfsportal-app voor iOS. De update is voorzien van een volledig nieuw visueel ontwerp met een gemoderniseerd uiterlijk. De functionaliteit van de app is behouden. De gebruiksvriendelijkheid en toegankelijkheid zijn echter verhoogd.  
+
+U ziet ook:
+- Ondersteuning voor iPhone X.
+- De app start sneller en de laadsnelheid is verhoogd, zodat gebruikers tijd besparen.
+- Aanvullende voortgangsbalken om gebruikers de meest recente statusgegevens te bieden.
+- Verbeteringen in de manier waarop gebruikers logboeken uploaden, zodat u het eenvoudiger kunt melden als er iets fout gaat.  
+
+|Voor|Na|
+|---|---|
+|![01](/intune/media/cp_iosRedesign_before_1803_01.png)|![01](/intune/media/cp_iosRedesign_after_1803_01.png)|
+|*Gecombineerd met de vorige stap*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
+|![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
+
+#### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Verbeteringen in de taal in de bedrijfsportal-app voor Windows <!---1683758--->
+We hebben de taal in de bedrijfsortal voor Windows 10 gebruiksvriendelijker en meer specifiek voor uw bedrijf gemaakt.
+
+|Voor|Na|
+|---|---|
+|![01](./media/windows_enroll_before_1803.png)|![01](./media/windows_enroll_after_1803.png)|
+|![02](./media/windows_view_policy_issues_before_1803.png)|![02](./media/windows_view_policy_issues_after_1803.png)
 
 ## <a name="week-of-march-12-2018"></a>Week van 12 maart 2018
 
@@ -34,12 +59,13 @@ De bedrijfsportal-app voor Android is bijgewerkt om de richtlijnen voor [Ontwerp
 
 |Voor|Na|
 |---|---|
-|![01](./media/android_about_before_1803.png)|![01](./media/android_contact_it_after_1803.png)|
+|![01](./media/android_about_before_1803.png)|![01](./media/androidCP_about_after_1803.png)|
 |![02](./media/android_contact_it_before_1803.png)|![02](./media/android_contact_it_after_1803.png)|
-|![03](./media/android_device_details_before_1803.png)|![03](./media/android_device_details_after_1803.png)|
-|![04](./media/android_device_details_update_settings_before_1803.png)|![04](./media/android_device_details_update_settings_after_1803.png)|
-|![05](./media/android_devices_before_1803.png)|![05](./media/android_devices_before_1803.png)|
+|![03](./media/android_devices_before_1803.png)|![03](./media/androidCP_devicelist_after_1803.png)|
+|![04](./media/android_device_details_before_1803.png)|![05](./media/androidCP_devicedetails_1_after1803.png)|
+|![05](./media/android_device_details_update_settings_before_1803.png)|![05](./media/androidCP_devicedetails_red_box_2_after1803.png)|
 |![06](./media/android_profile_before_1803.png)|![06](./media/android_profile_after_1803.png)|
+|![07](./media/androidCP_Setup01_before_1803.png)|![07](./media/androidCP_Setup01_after_1803.png)|
 
 
 ## <a name="week-of-november-27-2017"></a>Week van 27 november 2017
@@ -409,14 +435,6 @@ U hoeft niets te doen om u op deze wijziging voor te bereiden. Wij brengen u op 
 |---|---|
 |![Op de bijgewerkte apparaatpagina wordt het apparaat boven de apparaatgegevens weergegeven, niet meer in een pop-up boven de volledige lijst.](./media/iwp-device-after-1803.png)|![De vorige versie van de apparaatpagina.](./media/iwp-device-before-1803.png)|
 |![Op de bijgewerkte apparaatinstallatiepagina wordt de app weergegeven boven een beschrijving en diverse installatiegegevens, waaronder publicatiedatum, versie en type app.](./media/iwp-app-install-after-1803.png)|![De vorige versie van de apparaatinstallatiepagina.](./media/iwp-app-install-before-1803.png)|
-
-### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Update van de gebruikerservaring voor de bedrijfsportal-app voor iOS<!--1412866-->
-
-We zullen een grote update uitbrengen van de gebruikerservaring voor de bedrijfsportal-app voor iOS. De update heeft een volledig nieuw visueel ontwerp, waaronder een gemoderniseerde uitstraling met verbeterde bruikbaarheid en toegankelijkheid. De huidige functionaliteit van de iOS-bedrijfsportal-app blijft behouden.
-
-We bieden een voorlopige versie van de bijgewerkte bedrijfsportal-app voor iOS via het Apple TestFlight-programma. U kunt deze versie gebruiken en uw feedback geven. Registreer u bij https://aka.ms/intune_ios_cp_testflight voor TestFlight-toegang. Zie https://aka.ms/iOS_companyportal_update voor de meest recente informatie over deze update.
-
-![teaserafbeeldingen voor de nieuwe iOS-bedrijfsportal-app](./media/ios-cp-app-redesign-1801-teaser.png)
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Updates aan de gebruikersinterface van de bedrijfsportalwebsite <!--1313244 part 2-->
 

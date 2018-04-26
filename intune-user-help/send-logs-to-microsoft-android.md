@@ -1,48 +1,48 @@
 ---
 title: Android-logboeken verzenden naar Microsoft-ontwikkelaars | Microsoft Docs
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 04/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 06767d1c-a012-4288-9921-f9dd2eb4eb8d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b03ac31cc51d69e1872954fa4afbce55add8479f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8eaaf103802ad2cf51d18d9fab3947622e9c96c3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Logboeken verzenden naar de bedrijfsportal-ontwikkelaars voor Android-apparaten
 
-De bedrijfsportal-app wordt soms onverwacht gesloten. Dit is een probleem waarover de app-ontwikkelaars meer willen weten, omdat dit kan helpen de app beter te laten werken en te voorkomen dat hetzelfde probleem in de toekomst opnieuw optreedt. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
+De bedrijfsportal-app wordt soms onverwacht gesloten. App-ontwikkelaars willen graag weten wanneer onverwacht gedrag optreedt, zodat ze de oorzaak kunnen vinden en het probleem kunnen oplossen. Dergelijke fouten worden op uw apparaat beschreven in een speciaal document dat een _diagnostisch logboek_ wordt genoemd. Het bedrijfsportalteam heeft de specifieke logboeken voor de bedrijfsportal nodig om de oorzaak van het probleem op te sporen.
 
 > [!Note]
-> Om het voor het ondersteuningsteam van het bedrijf eenvoudiger te maken de oorzaak van het probleem te achterhalen, schakelt u _uitgebreide logboekregistratie_ in. Met uitgebreide logboekregistratie worden alle relevante gegevens in het rapport opgenomen. [Hier vindt u informatie over het inschakelen van uitgebreide logboekregistratie](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Schakel _uitgebreide logboekregistratie_ in om het voor het ondersteuningsteam van het bedrijf eenvoudiger te maken de oorzaak van het probleem te achterhalen. Via uitgebreide logboekregistratie worden alle gegevens over een fout geregistreerd en in het rapport vermeld. [Hier vindt u informatie over het inschakelen van uitgebreide logboekregistratie](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md). 
 
-Als dit probleem bij u optreedt, heeft het bedrijfsportalteam de logboeken van de bedrijfsportal nodig om de hoofdoorzaak te onderzoeken. Logboeken naar Microsoft verzenden:
+Logboeken naar Microsoft verzenden:
 
 1.  Open de app Bedrijfsportal.
 
-2.  Tik op **Menu** >   **Help en feedback**.
+2.  Tik op **Menu** > **Help** > **E-mailondersteuning**.
 
     > [!NOTE]
     > De knop **Menu** kan een softwareknop of een hardwareknop zijn, afhankelijk van het Android-apparaat dat u gebruikt.
 
-3.  Tik onder **Feedback** op **Feedback geven**.
+3.  Tik op **Alleen logboeken uploaden**.
 
-4.  Geef een korte beschrijving van het probleem dat u ondervindt met uw e-mail en tik op **Verzenden**.
+4.  Nadat het uploaden is voltooid, ontvangt u een incident-id. Bewaar deze id.
 
-U kunt ook rechtstreeks een e-mail naar het bedrijfsportalteam voor Android sturen op <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having."> wintunedroidfbk@microsoft.com </a>. 
+Als u rechtstreeks contact wilt opnemen met het bedrijfsportalteam voor Android, stuurt u een e-mail naar <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

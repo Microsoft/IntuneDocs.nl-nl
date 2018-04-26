@@ -9,30 +9,30 @@ Bij automatische registratie kunnen gebruikers hun Windows 10-apparaten registre
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Automatische MDM-registratie configureren
 
-1. Meld u aan bij de [Azure AD-beheerportal](https://portal.azure.com) (https://manage.windowsazure.com) en selecteer **Azure Active Directory**.
+1. Meld u aan bij de [Azure-beheerportal](https://portal.azure.com) (https://manage.windowsazure.com)) en selecteer **Azure Active Directory**.
 
-  ![Schermopname van de Azure-portal](../media/auto-enroll-azure-main.png)
+   ![Schermopname van de Azure-portal](../media/auto-enroll-azure-main.png)
 
 2. Selecteer **Mobiliteit (MDM en MAM)**.
 
-  ![Schermopname van de Azure-portal](../media/auto-enroll-mdm.png)
+   ![Schermopname van de Azure-portal](../media/auto-enroll-mdm.png)
 
 3. Selecteer **Microsoft Intune**.
 
-  ![Schermopname van de Azure-portal](../media/auto-enroll-intune.png)
+   ![Schermopname van de Azure-portal](../media/auto-enroll-intune.png)
 
 4. **Gebruikersbereik van MDM** configureren. Geef op van welke gebruikers apparaten moeten worden beheerd met Microsoft Intune. De Windows 10-apparaten van deze gebruikers worden automatisch geregistreerd voor beheer met Microsoft Intune.
 
-  - **Geen**
-  - **Sommige**
-  - **Alle**
+   - **Geen**
+   - **Sommige**
+   - **Alle**
 
- ![Schermopname van de Azure-portal](../media/auto-enroll-scope.png)
+   ![Schermopname van de Azure-portal](../media/auto-enroll-scope.png)
 
-5. Gebruik de standaardwaarden voor de volgende URL’s:
-  - **URL voor MDM-gebruiksvoorwaarden**
-  - **Detectie-URL voor MDM**
-  - **URL van MDM-naleving**
+5. Gebruik de standaardwaarden voor de volgende URL's:
+   - **URL voor MDM-gebruiksvoorwaarden**
+   - **Detectie-URL voor MDM**
+   - **URL van MDM-naleving**
 
 6. Selecteer **Opslaan**.
 

@@ -14,11 +14,11 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ab616c373482109ccd402199f7b0de69fe27348
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 74f5a7b2e4aab1758922902c1af9c385a7bff69f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
@@ -63,7 +63,7 @@ In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobi
 - De eindgebruiker moet een [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online)-postvak en -licentie aan het Azure Active Directory-account hebben gekoppeld.
 
   >[!NOTE]
-  > De mobiele app van Outlook ondersteunt momenteel alleen Microsoft Exchange Online en biedt geen ondersteuning voor Exchange On-Premises of Exchange in Office 365 Dedicated.
+  > De mobiele app van Outlook ondersteunt momenteel alleen Intune-app-beveiliging voor Microsoft Exchange Online en [Exchange Server met hybride moderne verificatie](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx) en biedt geen ondersteuning voor Exchange in Office 365 Dedicated.
 
 **Wat zijn de aanvullende vereisten voor het gebruik van de apps [Word, Excel en PowerPoint](https://products.office.com/business/office)?**
 
