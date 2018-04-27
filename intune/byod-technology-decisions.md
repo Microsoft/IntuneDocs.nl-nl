@@ -3,7 +3,7 @@ title: Beslissingen voor de technologie voor BYOD met EMS
 description: Belangrijke beslissingen voor de technologie voor het inschakelen van BYOD en beveiligen van zakelijke gegevens met Microsoft Enterprise Mobility + Security.
 keywords: ''
 author: dougeby
-ms.author: pfetty
+ms.author: dougeby
 manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7d04abfe7886e4ef42cf168dbb495e987fdba425
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Beslissingen voor de technologie voor het inschakelen van BYOD met Microsoft Enterprise Mobility + Security (EMS)
 
@@ -78,6 +78,6 @@ Toch maken veel organisaties zich nog steeds zorgen over specifieke risico's waa
 |Onbedoeld delen van gegevens of opslaan naar onbeveiligde locaties | Afdrukken uitschakelen | n.v.t.|
 
 ## <a name="next-steps"></a>Volgende stappen
-Het is nu tijd om te kiezen of u BYOD in uw organisatie gaat inschakelen door te focussen op apparaatbeheer, app-beheer of een combinatie van beide. Het is aan u om te kiezen hoe u kunt garanderen dat de identiteits- en beveiligingsfuncties die beschikbaar zijn met Azure AD, altijd kunnen worden gebruikt.
+Het is nu tijd om te kiezen of u BYOD in uw organisatie gaat inschakelen door te focussen op apparaatbeheer, app-beheer of een combinatie van beide. Het is aan u om te kiezen hoe u kunt garanderen dat de identiteits- en beveiligingsfuncties die beschikbaar zijn met Azure AD, altijd kunnen worden gebruikt.  
 
 Gebruik de [planningshandleiding](planning-guide.md) van Intune om op een volgend niveau te plannen.

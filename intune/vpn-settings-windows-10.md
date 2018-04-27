@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 9464b73acc43b9625560156617359c374d7100fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 787501892d0955e3396bc8f37e5da8ba0d312c74
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="read-about-the-vpn-settings-in-intune"></a>Meer informatie over de VPN-instellingen in Intune
 
@@ -93,6 +93,7 @@ Zie [EAP-configuratie](https://docs.microsoft.com/windows/client-management/mdm/
 ## <a name="apps-and-traffic-rules"></a>Apps en verkeersregels
 
 **VPN-verbinding beperken tot deze apps**: schakel deze instelling in als u wilt dat alleen bepaalde apps de VPN-verbinding gebruiken.
+
 **Gekoppelde apps**: voer een lijst in met apps die automatisch gebruikmaken van de VPN-verbinding. De app-id is afhankelijk van het type app. Voer voor een universele app de naam van de productfamilie in waartoe het pakket behoort. Voer voor een bureaublad-app het bestandspad van de app in.
 
 >[!IMPORTANT]

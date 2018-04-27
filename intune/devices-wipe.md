@@ -2,8 +2,8 @@
 title: Bedrijfsgegevens van apparaten verwijderen met Microsoft Intune - Azure | Microsoft Docs
 description: Voor apparaten met Android, Android for Work, iOS, macOS of Windows kunt u Microsoft Intune gebruiken om bedrijfsgegevens van een apparaat te verwijderen of de fabrieksinstellingen terug te zetten. Daarnaast kunt u een apparaat uit Azure Active Directory verwijderen.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 228198276643f1eb8dfcb0392e4902a7f56875c9
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Apparaten verwijderen door Fabrieksinstellingen terugzetten te gebruiken of bedrijfsgegevens te verwijderen
 

@@ -1,25 +1,25 @@
 ---
 title: Aan de slag met Microsoft Intune in Azure Portal
-titlesuffix: 
+titlesuffix: ''
 description: Informatie over het maken en delen van dashboards voor Microsoft Intune in Azure Portal en het navigeren in deze dashboards.
-keywords: 
-author: Erikre
-ms.author: erikre
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f2d0a77c9e9e36db53c23031fd9f06f508fef15d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 859194b364a64854922993d2d798f318b260fc80
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Aan de slag met Microsoft Intune in Azure Portal
 

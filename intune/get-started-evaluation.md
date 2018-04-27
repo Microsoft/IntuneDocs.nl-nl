@@ -3,8 +3,8 @@ title: Aan de slag met Microsoft Intune
 titleSuffix: ''
 description: Doorloop een reeks korte praktische oefeningen om over Intune te leren.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: get-started-article
@@ -15,11 +15,11 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb2386dd7b1f4566162dde1137b1847a5daf3921
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e295ca95ebffd4814bb00c3f3d5223560610444a
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Wat kan Intune voor mijn bedrijf doen?
 

@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid van de app Managed Browser en Microsoft Intune
 
@@ -155,10 +155,9 @@ Outlook moet zijn geconfigureerd met een beleid voor app-beveiliging waarmee de 
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>Stap 2: Een app-configuratiebeleid toewijzen voor de Managed Browser-app
 Met deze procedure wordt de Managed Browser-app geconfigureerd voor omleiding via een proxy. Geef met behulp van de procedure voor het maken van een app-configuratie voor Managed Browser het volgende sleutel- en waardepaar op:
 
-|||
-|-|-|
-|Sleutel|Waarde|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
+| Sleutel                                                             | Waarde    |
+|-----------------------------------------------------------------|----------|
+| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
 Zie de blogpost voor Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Beter samen: Intune en Azure Active Directory werken samen om de toegang voor gebruikers te verbeteren) voor meer informatie over hoe Managed Browser en de Azure AD-toepassingsproxy samen kunnen worden gebruikt voor een naadloze (en beveiligde) toegang tot on-premises web-apps.
 
@@ -166,10 +165,8 @@ Zie de blogpost voor Enterprise Mobility + Security [Better together: Intune and
 
 Met deze instelling kunt u de startpagina configureren die gebruikers zien wanneer ze de app Managed Browser starten of een nieuw tabblad maken. Geef met behulp van de procedure voor het maken van een app-configuratie voor Managed Browser het volgende sleutel- en waardepaar op:
 
-
-|                                                                   |                                                                                                                            |
-|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 |                                Sleutel                                |                                                           Waarde                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Geef een geldige URL op. Uit veiligheidsoogpunt worden onjuiste URL's geblokkeerd.<br>Voorbeeld: <strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Bladwijzers configureren voor Managed Browser
@@ -182,21 +179,17 @@ Met deze instelling kunt u een set bladwijzers configureren die beschikbaar zijn
 
 Geef met behulp van de procedure voor het maken van een app-configuratie voor Managed Browser het volgende sleutel- en waardepaar op:
 
-
-|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                Sleutel                                 |                                                                                                                                                                                                                                                         Waarde                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | De waarde voor deze configuratie is een lijst met bladwijzers. Elke bladwijzer bestaat uit de titel en de URL van de bladwijzer. Scheid de titel en een URL met het teken <strong>& #124;</strong>.<br><br>Voorbeeld: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>Als u meerdere bladwijzers wilt configureren, typt u een dubbel scheidingsteken <strong>& #124; & #124;</strong> tussen de bladwijzers.<br><br>Voorbeeld: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Toegestane en geblokkeerde URL's voor Managed Browser opgeven
 
 Geef met behulp van de procedure voor het maken van een app-configuratie voor Managed Browser het volgende sleutel- en waardepaar op:
 
-
-|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                               Sleutel                                                                                                                                                                |                                                                                                                                                                                    Waarde                                                                                                                                                                                    |
-| U kunt kiezen uit:<br><br>- Geef toegestane URL's op (alleen deze URL's zijn toegestaan; andere sites zijn niet toegankelijk): <strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- Geef geblokkeerde URL's op (alle andere sites zijn toegankelijk): <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | De overeenkomstige waarde voor de sleutel is een lijst met URL's. U voert alle URL's die u wilt toestaan of blokkeren in als één waarde, gescheiden door een sluisteken <strong>&#124;</strong>.<br><br>Voorbeelden:<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
+|Sleutel|Waarde|
+|-|-|
+|U kunt kiezen uit:<br><br>- Geef toegestane URL's op (alleen deze URL's zijn toegestaan; andere sites zijn niet toegankelijk): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Geef geblokkeerde URL's op (alle andere sites zijn toegankelijk): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|De overeenkomstige waarde voor de sleutel is een lijst met URL's. U voert alle URL's die u wilt toestaan of blokkeren in als één waarde, gescheiden door een sluisteken **&#124;**.<br><br>Voorbeelden:<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >Geef niet beide sleutels op. Als beide sleutels zijn bedoeld voor dezelfde gebruiker, moet de sleutel voor toegestane URL's worden gebruikt, aangezien dit de meest beperkende optie is.
