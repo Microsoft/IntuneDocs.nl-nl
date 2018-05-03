@@ -15,11 +15,11 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7925b09a8f5978319fc76d899f954190dc9df4e
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 9d0f27af68cf3a4b8b9d0687649e7b52eb976803
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
 
@@ -70,7 +70,7 @@ U gebruikt de Apple DEP-portal om een DEP-token te maken. U gebruikt de DEP-port
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Stap 1. Download het openbare-sleutelcertificaat van Intune dat is vereist om het token te maken.
 
-1. Kies in Intune in Azure Portal **Apparaatinschrijving** > **Apple-inschrijving** > **Token voor het inschrijvingsprogramma** > **Toevoegen**.
+1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) **Apparaatinschrijving** > **Apple-inschrijving** > **Token voor het inschrijvingsprogramma** > **Toevoegen**.
 
     ![Een token voor het inschrijvingsprogramma ophalen.](./media/device-enrollment-program-enroll-ios/image01.png)
 
