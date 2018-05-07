@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Apparaatbeperkingsinstellingen voor Windows 10 (en hoger) in Intune
 In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met Windows 10.
@@ -370,6 +370,11 @@ Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender even
 - **Resource-URI voor de afdrukservice**: OAuth-resource-URI voor de afdrukservice zoals geconfigureerd in Azure Portal.
 - **Maximaal aantal printers waarvoor een query moet worden uitgevoerd (alleen mobiel)**: maximaal aantal printers waarvoor een query moet worden uitgevoerd vanaf een detectie-eindpunt.
 - **Resource-URI voor de printerdetectieservice**: OAuth-resource-URI voor de printerdetectieservice zoals geconfigureerd in Azure Portal.
+
+## <a name="local-printer"></a>Lokale printer
+- **Printers**: lijst met lokale printers die zijn toegevoegd.
+- **Standaardprinter**: stel de standaardprinter in.
+- **Gebruikerstoegang om nieuwe printers toe te voegen**: het gebruik van lokale printers toestaan of blokkeren.
 
 ## <a name="reporting-and-telemetry"></a>Rapportage en telemetrie
 

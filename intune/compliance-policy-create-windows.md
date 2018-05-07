@@ -1,29 +1,28 @@
 ---
 title: Een Windows-nalevingsbeleid voor apparaten maken in Microsoft Intune - Azure | Microsoft Docs
-description: Maak een Microsoft Intune-nalevingsbeleid voor apparaten voor Windows-apparaten zodat u kunt opgeven aan welke vereisten een apparaat moet voldoen om te conformeren.
+description: Een nalevingsbeleid voor apparaten van Microsoft Intune configureren voor apparaten met Windows Phone 8.1, Windows 8.1 en hoger, en Windows 10 en hoger. Controleren op naleving van het minimale en maximale vereiste besturingssysteem, wachtwoordbeperkingen en lengte instellen, bitlocker vereisen, instellen van het aanvaardbare dreigingsniveau en encryptie op de opslag van gegevens, zoals Surface Hub en de Windows Holographic voor bedrijven.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21ff7b173bb466ee25dd82c82d3668de110b823d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Een apparaatnalevingsbeleid maken voor Windows-apparaten in Intune
-
+# <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Een apparaatnalevingsbeleid maken voor Windows-apparaten in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Een Intune-apparaatnalevingsbeleid voor Windows bepaalt de regels en instellingen waaraan een Windows-apparaat moet voldoen om te voldoen aan het beleid. U kunt deze beleidsregels gebruiken met voorwaardelijke toegang om toegang tot bedrijfsbronnen toe te staan of te blokkeren. U kunt ook apparaatrapporten krijgen en acties voor niet-naleving treffen. U maakt nalevingsbeleid voor apparaten voor elk platform in Intune Azure Portal. Zie [Aan de slag met apparaatnaleving](device-compliance-get-started.md) voor informatie over nalevingsbeleid en de vereisten die u moet afhandelen voordat u een nalevingsbeleid maakt.
+Een Intune-apparaatnalevingsbeleid voor Windows bepaalt de regels en instellingen waaraan een Windows-apparaat moet voldoen om te voldoen aan het beleid. U kunt dit beleid met voorwaardelijke toegang gebruiken om toegang tot bedrijfsresources toe te staan of te blokkeren. U kunt ook apparaatrapporten krijgen en maatregelen nemen voor niet-naleving. U maakt nalevingsbeleid voor apparaten voor elk platform in Intune Azure Portal. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over nalevingsbeleid en eventuele vereisten.
 
 In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden beheerd wanneer een nalevingsbeleid wordt gebruikt in combinatie met beleid voor voorwaardelijke toegang.
 
@@ -48,13 +47,11 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 - Het apparaat wordt geblokkeerd als een beleid voor voorwaardelijke toegang van toepassing is voor de gebruiker.
 - De bedrijfsportal stelt de gebruiker op de hoogte van eventuele nalevingsproblemen.
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Een nalevingsbeleid maken in Azure Portal
+## <a name="create-a-device-compliance-policy"></a>Een nalevingsbeleid voor apparaten maken
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-1. Kies in het deelvenster **Intune** de optie **Apparaatnaleving**. Kies onder **Beheren** de optie **Beleid** en vervolgens **Beleid maken**.
-2. Typ een naam, beschrijving en kies het platform waarop u dit beleid wilt toepassen.
-3. Kies **Instellingen configuren** om de instellingen **Systeembeveiliging**, **Apparaatstatus** en **Apparaateigenschappen** hier op te geven. Kies **OK** als u klaar bent.
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. Voor **Platform**, selecteer **Windows Phone 8.1**, **Windows 8.1 en hoger**, of **Windows 10 en hoger**.
+6. Kies **Instellingen configureren** om instellingen op te geven voor de **Apparaatstatus**, de **Apparaateigenschappen** en de **Systeembeveiliging**. Selecteer **OK** en **Maken** als u klaar bent.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -63,151 +60,132 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="assign-user-groups"></a>Gebruikersgroepen toewijzen
+## <a name="windows-81-devices-policy-settings"></a>Beleidsinstellingen voor Windows 8.1-apparaten
 
-Als u een nalevingsbeleid aan gebruikers wilt toewijzen, kiest u een beleid dat u hebt geconfigureerd. Bestaande beleidsregels vindt u in het deelvenster **Apparaatnaleving - beleid**.
+Deze beleidsinstellingen zijn van toepassing op apparaten met de volgende platforms:
 
-1. Kies het beleid dat u aan gebruikers wilt toewijzen en kies **Toewijzingen**. Hiermee opent u het deelvenster waar u **Azure Active Directory-beveiligingsgroepen** kunt selecteren en aan het beleid kunt toewijzen.
-2. Kies **Geselecteerde groepen** om het deelvenster met de Azure AD-beveiligingsgroepen te openen.  Als u **Opslaan** kiest, wordt het beleid bij gebruikers geïmplementeerd.
+- Windows Phone 8.1
+- Windows 8.1 en hoger
 
-U hebt het beleid toegepast op gebruikers. De apparaten die worden gebruikt door de gebruikers op wie het beleid is toegepast, worden gecontroleerd om te zien of ze voldoen aan het beleid.
+### <a name="device-properties"></a>Apparaateigenschappen
 
-<!---## Compliance policy settings--->
+- **Minimale versie van het besturingssysteem die is vereist:** wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. Gebruikers kunnen dan kiezen om een upgrade van hun apparaat uit te voeren, waarna ze toegang tot bedrijfsresources krijgen.
+- **Maximale versie van het besturingssysteem die is toegestaan**: wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is opgegeven, wordt de toegang tot bedrijfsresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel om de versie van het besturingssysteem toe te staan, kan dit apparaat geen toegang tot bedrijfsresources krijgen.
 
-## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Instellingen voor nalevingsbeleid voor Windows Phone-apparaten
+Windows 8.1-pc's retourneren versie **3**. Als de besturingssysteemversieregel is ingesteld op Windows 8.1 voor Windows, wordt het apparaat als in strijd met het nalevingsbeleid gerapporteerd, zelfs als het apparaat Windows 8.1 heeft.
 
-De instellingen in deze sectie worden ondersteund op Windows Phone 8.1 en hoger.
+### <a name="system-security"></a>Systeembeveiliging
+
+#### <a name="password"></a>Wachtwoord
+
+- **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**: **verplicht** gebruikers een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
+- **Eenvoudige wachtwoorden**: stel deze optie in op **Blokkeren** zodat de gebruiker geen eenvoudig wachtwoord kan maken, zoals **1234** of **1111**. Stel deze optie in op **Niet geconfigureerd** om gebruikers toe te staan wachtwoorden als **1234** of **1111** te maken.
+- **Minimale wachtwoordlengte**: voer het minimale aantal cijfers of tekens aan waaruit het wachtwoord moet bestaan.
+
+  Voor apparaten waarop Windows wordt uitgevoerd en met een Microsoft-account toegankelijk zijn, kan het nalevingsbeleid niet correct evalueren:
+  - Als de minimale wachtwoordlengte langer is dan acht tekens
+  - Of als het minimale aantal tekensets meer is dan twee
+
+- **Wachtwoordtype**: kies of een wachtwoord alleen **numerieke** tekens mag bevatten of uit een combinatie van cijfers en andere tekens moet bestaan (**alfanumeriek**).
+  
+  - **Aantal niet-alfanumerieke tekens in wachtwoord**: als **Vereist wachtwoordtype** is ingesteld op **Alfanumeriek**, wordt met deze instelling het minimale aantal tekensets opgegeven waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
+    - Kleine letters
+    - Hoofdletters
+    - Symbolen
+    - Getallen
+
+    Als u een hogere waarde instelt, moet de gebruiker een wachtwoord maken dat complexer is. Bij Windows-apparaten die met een Microsoft-account toegankelijk zijn, kan het nalevingsbeleid geen goede controle uitvoeren als de minimale wachtwoordlengte langer is dan acht tekens of als het minimale aantal tekensets meer is dan twee.
+
+- **Maximum aantal minuten van inactiviteit voordat wachtwoord is vereist**: geef aan na hoeveel niet-actieve tijd de gebruiker het wachtwoord opnieuw moet invoeren.
+- **Wachtwoord verloopt (in dagen)**: selecteer het aantal dagen waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken.
+- **Aantal vorige wachtwoorden om hergebruik te voorkomen**: geef op hoeveel eerder gebruikte wachtwoorden niet opnieuw mogen worden gebruikt.
+
+#### <a name="encryption"></a>Versleuteling
+
+- **Versleuteling vereisen op een mobiel apparaat**: **vereis** dat het apparaat versleuteld moet zijn om verbinding te maken met gegevensopslag-resources.
+
+## <a name="windows-10-and-later-policy-settings"></a>Beleidsinstellingen Windows 10 en hoger
+
+### <a name="device-health"></a>Device health
+
+- **Vereis BitLocker**: als Bitlocker is ingeschakeld, kan het apparaat gegevens die op de schijf zijn opgeslagen, beveiligen tegen onbevoegde toegang wanneer het systeem wordt uitgeschakeld of overschakelt naar de slaapstand. Windows BitLocker-stationsversleuteling versleutelt alle gegevens die zijn opgeslagen op het volume met het Windows-besturingssysteem. BitLocker gebruikt de TPM om het Windows-besturingssysteem en de gebruikersgegevens te beveiligen. Er kan ook mee worden voorkomen dat met een computer kan worden geknoeid, zelfs als deze zonder toezicht, kwijtgeraakt of gestolen is. Als de computer is uitgerust met een compatibele TPM, gebruikt BitLocker de TPM om de versleutelingssleutels te vergrendelen die de gegevens beschermen. Als gevolg hiervan zijn de sleutels niet toegankelijk totdat de TPM de status van de computer heeft gecontroleerd.
+- **Vereis dat Beveiligd opstarten is ingeschakeld op het apparaat**: als beveiligd opstarten is ingeschakeld, wordt het systeem gedwongen om in een vertrouwde fabrieksstatus op te starten. Als beveiligd opstarten is ingeschakeld, moeten de belangrijkste onderdelen van de computer de juiste cryptografische handtekeningen hebben die worden vertrouwd door de organisatie die het apparaat heeft gemaakt. De UEFI-firmware verifieert de digitale handtekening voordat de computer kan worden opgestart. Als er bestanden zijn gemanipuleerd, waardoor de handtekening ongeldig is geworden, kan het systeem niet worden opgestart.
+- **Vereis code-integriteit**: code-integriteit is een functie die voortdurend de integriteit valideert van een stuurprogramma- of systeembestand wanneer dat bestand in het geheugen wordt geladen. Via deze functie wordt gedetecteerd of een niet-ondertekend stuurprogramma- of systeembestand in de kernel is geladen. Ook wordt gedetecteerd of een systeembestand is gewijzigd door schadelijke software die wordt uitgevoerd door een gebruikersaccount met beheerdersbevoegdheden.
+- **Vereis dat het apparaat het Apparaatdreigingsniveau niet overschrijdt**: gebruik deze instelling om de risicobeoordeling uit uw diensten voor verdediging tegen bedreigingen als voorwaarde voor naleving te gebruiken. Kies het maximaal toegestane bedreigingsniveau:
+  - **Beveiligd**: deze optie is het veiligst, omdat het apparaat geen bedreigingen kan hebben. Als een van de bedreigingsniveaus voor het apparaat wordt gedetecteerd, wordt het apparaat geëvalueerd als niet-compatibel.
+  - **Laag**: het apparaat wordt als compatibel geëvalueerd als er bedreigingen van een laag niveau aanwezig zijn. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
+  - **Gemiddeld**: het apparaat wordt als conform geëvalueerd als bestaande bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als bedreigingen met hoog niveau worden aangetroffen op het apparaat, wordt het apparaat als niet-compatibel beoordeeld.
+  - **Hoog**: deze optie is het minst veilig, omdat alle bedreigingsniveaus zijn toegestaan. Deze optie kan handig zijn als u deze alleen gebruikt voor rapportagedoeleinden.
+
+Zie [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (CSP-statusverklaring) voor meer informatie over de werking van de HAS-service.
+
+### <a name="device-properties"></a>Apparaateigenschappen
+
+- **Minimale OS vereist**: voer het major.minor.build.CU-nummer in. Het build.CU-nummer moet overeenkomen met de versie die wordt geretourneerd door de opdracht `ver` of `winver`.
+
+  Wanneer een apparaat een eerdere versie heeft dan de opgegeven versie van het besturingssysteem, wordt de versie als niet-compatibel gerapporteerd. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen of hij een upgrade van zijn apparaat wil uitvoeren, waarna hij toegang tot bedrijfsbronnen krijgt.
+
+- **Maximale versie van besturingssysteem toegestaan**: voer het major.minor.build.CU.-nummer in. Het build.CU-nummer moet overeenkomen met de versie die wordt geretourneerd door de opdracht `ver` of `winver`.
+
+  Wanneer een apparaat een versie van het besturingssysteem gebruikt dat hoger is dan wat in de regel is bepaald, wordt de toegang tot bedrijfsbronnen geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met zijn IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
+
+- **Minimale versie van het besturingssysteem die is vereist voor mobiele apparaten**: voer het major.minor.build-nummer in.
+
+  Wanneer een apparaat een eerdere versie heeft dan de opgegeven versie van het besturingssysteem, wordt de versie als niet-compatibel gerapporteerd. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen of hij een upgrade van zijn apparaat wil uitvoeren, waarna hij toegang tot bedrijfsbronnen krijgt.
+
+- **Maximale versie van het besturingssysteem die is vereist voor mobiele apparaten**: voer het major.minor.build-nummer in.
+
+  Wanneer een apparaat een versie van het besturingssysteem gebruikt dat hoger is dan wat in de regel is bepaald, wordt de toegang tot bedrijfsbronnen geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met zijn IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
+
+- **Geldig besturingssysteem-builds**: voer een bereik in voor de acceptabele versies van besturingssystemen, met inbegrip van een minimum en maximum.
+
 ### <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
 
 #### <a name="password"></a>Wachtwoord
 
-- **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten:** stel deze optie in op **Ja** als u gebruikers wilt verplichten een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
-- **Eenvoudige wachtwoorden toestaan:** stel deze optie in op **Ja** zodat gebruikers eenvoudige wachtwoorden kunnen maken, zoals '**1234**' of '**1111**'.
-- **Minimale wachtwoordlengte**: hiermee geeft u het minimale aantal cijfers of tekens aan waaruit het wachtwoord van de gebruiker moet bestaan.
+- **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**: **verplicht** gebruikers een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
+- **Eenvoudige wachtwoorden**: stel deze optie in op **Blokkeren** zodat de gebruiker geen eenvoudig wachtwoord kan maken, zoals **1234** of **1111**. Stel deze optie in op **Niet geconfigureerd** om gebruikers toe te staan wachtwoorden als **1234** of **1111** te maken.
+- **Wachtwoordtype**: kies of een wachtwoord alleen **numerieke** tekens mag bevatten of uit een combinatie van cijfers en andere tekens moet bestaan (**alfanumeriek**).
 
-  Bij Windows-apparaten die met een Microsoft-account toegankelijk zijn, kan het nalevingsbeleid geen goede controle uitvoeren als de minimale wachtwoordlengte langer is dan acht tekens of als het minimale aantal tekensets meer is dan twee.
-- **Vereist wachtwoordtype:** geef aan of gebruikers een **alfanumeriek** of een **numeriek** wachtwoord moeten maken.
-  
-- **Minimum aantal tekensets:** als **Vereist wachtwoordtype** is ingesteld op **Alfanumeriek**, wordt met deze instelling het minimum aantal tekensets opgegeven waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
-  - Kleine letters
-  - Hoofdletters
-  - Symbolen
-  - Getallen
+  - **Aantal niet-alfanumerieke tekens in wachtwoord**: als **Vereist wachtwoordtype** is ingesteld op **Alfanumeriek**, wordt met deze instelling het minimum aantal tekensets opgegeven waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
+    - Kleine letters
+    - Hoofdletters
+    - Symbolen
+    - Getallen
 
-  Hoe hoger de waarde is die u instelt, hoe complexer de gebruikers hun wachtwoorden moeten maken. Bij Windows-apparaten die met een Microsoft-account toegankelijk zijn, kan het nalevingsbeleid geen goede controle uitvoeren als de minimale wachtwoordlengte langer is dan acht tekens of als het minimale aantal tekensets meer is dan twee.
+    Als u een hogere waarde instelt, moet de gebruiker een wachtwoord maken dat complexer is.
 
-- **Minuten inactief voordat wachtwoord is vereist:** hiermee geeft u op na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren.
-- **Wachtwoord verloopt (in dagen)**: selecteer het aantal dagen waarna het wachtwoord van gebruikers verloopt en ze een nieuw wachtwoord moeten maken.
-- **Wachtwoordgeschiedenis onthouden:** gebruik deze instelling in combinatie met **Wachtwoorden niet opnieuw gebruiken** om te voorkomen dat gebruikers eerder gebruikte wachtwoorden opnieuw gebruiken.
-- **Wachtwoorden niet opnieuw gebruiken:** als **Wachtwoordgeschiedenis onthouden** is geselecteerd, geeft u het aantal eerder gebruikte wachtwoorden op dat niet opnieuw kan worden gebruikt.
-- **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status:** deze instelling moet worden gebruikt samen met de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**. Eindgebruikers wordt gevraagd een wachtwoord op te geven om toegang te krijgen tot een apparaat dat langer inactief is geweest dan de tijd die is opgegeven bij de instelling **Minuten van inactiviteit voordat wachtwoord vereist is**.
+- **Minimale wachtwoordlengte**: voer het minimale aantal cijfers of tekens aan waaruit het wachtwoord moet bestaan.
+- **Maximum aantal minuten van inactiviteit voordat wachtwoord is vereist**: geef aan na hoeveel niet-actieve tijd de gebruiker het wachtwoord opnieuw moet invoeren.
+- **Wachtwoord verloopt (in dagen)**: selecteer het aantal dagen waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken.
+- **Aantal vorige wachtwoorden om hergebruik te voorkomen**: geef op hoeveel eerder gebruikte wachtwoorden niet opnieuw mogen worden gebruikt.
+- **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status (Mobile en Holographic)**: afdwingen dat gebruikers het wachtwoord invoeren telkens wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status.
 
-> [!NOTE]
-> Deze instelling geldt alleen voor Windows 10 Mobile-apparaten.
+### <a name="encryption"></a>Versleuteling
 
-#### <a name="encryption"></a>Versleuteling
+- **Versleuteling van gegevensopslag op een apparaat**: kies **Vereisen** om gegevensopslag op uw apparaten te versleutelen.
 
-- **Versleuteling vereisen op een mobiel apparaat:** stel deze optie in op **Ja** als u wilt dat apparaten moeten worden versleuteld om verbinding te maken met resources.
+## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 
+Windows Holographic for Business gebruikt het **Windows 10 en hoger**-platform. De volgende instelling wordt in Windows Holographic for Business ondersteund:
 
-
-### <a name="device-health-settings"></a>Instellingen voor de status van het apparaat
-
-- **Vereisen dat apparaten worden gerapporteerd als goed:** u kunt een regel instellen om te vereisen dat **Windows 10 Mobile** apparaten als goed rapporteert bij nieuw of bestaand nalevingsbeleid. Als deze instelling is ingeschakeld, worden Windows 10-apparaten via de Health Attestation-service (HAS) op de volgende gegevenspunten geëvalueerd:
-  - **BitLocker is ingeschakeld:** wanneer BitLocker is ingeschakeld, kan het apparaat gegevens die zijn opgeslagen op de schijf, beschermen tegen onbevoegde toegang wanneer het systeem wordt uitgeschakeld of naar de slaapstand overschakelt. Windows BitLocker-stationsversleuteling versleutelt alle gegevens die zijn opgeslagen op het volume met het Windows-besturingssysteem. BitLocker gebruikt de TPM om het Windows-besturingssysteem en de gebruikersgegevens te beschermen en ervoor te zorgen dat een computer niet kan worden gemanipuleerd, zelfs niet als deze onbeheerd, verloren of gestolen is. Als de computer is uitgerust met een compatibele TPM, gebruikt BitLocker de TPM om de versleutelingssleutels te vergrendelen die de gegevens beschermen. Als gevolg hiervan kunnen de sleutels niet worden gebruikt tot de TPM de status van de computer heeft gecontroleerd
-  - **Code-integriteitsbeleidsbestand is ingeschakeld:** code-integriteit is een functie die voortdurend de integriteit valideert van een stuurprogramma- of systeembestand wanneer dat bestand in het geheugen wordt geladen. Code-integriteit detecteert of een niet-ondertekend stuurprogramma- of systeembestand in de kernel wordt geladen, of dat een systeembestand is gewijzigd door schadelijke software die wordt uitgevoerd door een gebruikersaccount met beheerdersbevoegdheden.
-  - **Beveiligd opstarten is ingeschakeld:** als beveiligd opstarten is ingeschakeld, wordt het systeem gedwongen om in een vertrouwde fabrieksstatus op te starten. Als beveiligd opstarten is ingeschakeld, moeten de belangrijkste onderdelen van de computer de juiste cryptografische handtekeningen hebben die worden vertrouwd door de organisatie die het apparaat heeft gemaakt. De UEFI-firmware verifieert dit voordat de computer kan worden opgestart. Als er bestanden zijn gemanipuleerd, waardoor de handtekening ongeldig is geworden, kan het systeem niet worden opgestart.
-
-Zie [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx) voor meer informatie over de werking van de HAS-service.
-
-### <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
-
-- **Minimale versie van het besturingssysteem die is vereist:** wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem wordt dit apparaat gerapporteerd als niet-compatibel. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen of hij een upgrade van zijn apparaat wil uitvoeren, waarna hij toegang tot bedrijfsbronnen krijgt.
-- **Maximale versie van het besturingssysteem die is toegestaan:** wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is opgegeven, wordt de toegang tot bedrijfsresources geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
-
-<!---## Compliance policy settings for Windows PCs--->
-
-## <a name="compliance-policy-settings-for-windows-pcs"></a>Instellingen voor nalevingsbeleid voor Windows-pc’s
-
-De instellingen in deze sectie worden ondersteund op Windows-pc’s.
-### <a name="system-security-settings"></a>Instellingen voor systeembeveiliging
-
-#### <a name="password"></a>Wachtwoord
-
-- **Minimale wachtwoordlengte:** ondersteund op Windows 8.1.
-
-  Hiermee geeft u het minimale aantal cijfers of tekens op waaruit het wachtwoord van de gebruiker moet bestaan.
-
-  Voor apparaten die zijn beveiligd met een Microsoft-account, kunnen met het nalevingsbeleid geen goede controles worden uitgevoerd als **Minimale wachtwoordlengte** meer dan acht tekens is of als **Minimum aantal tekensets** meer dan twee tekens is.
-
-- **Vereist wachtwoordtype**: wordt ondersteund op Windows RT, Windows RT 8.1 en Windows 8.1.
-
-  Hiermee geeft u aan of gebruikers een **alfanumeriek** of een **numeriek** wachtwoord moeten maken.
-
-- **Minimum aantal tekensets**: wordt ondersteund op Windows RT, Windows RT 8.1 en Windows 8.1. Als **Vereist wachtwoordtype** is ingesteld op **Alfanumeriek**, wordt hier het minimale aantal tekensets opgegeven waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
-  - Kleine letters
-  - Hoofdletters
-  - Symbolen
-  - Getallen 
-
-    Hoe hoger de waarde is die u instelt, hoe complexer gebruikers hun wachtwoorden moeten maken. Voor apparaten die zijn beveiligd met een Microsoft-account, kunnen met het nalevingsbeleid geen goede controles worden uitgevoerd als **Minimale wachtwoordlengte** meer dan acht tekens is of als **Minimum aantal tekensets** meer dan twee tekens is.
-
-- **Minuten van inactiviteit voordat wachtwoord vereist is:** wordt ondersteund op Windows RT, Windows RT 8.1 en Windows 8.1
-
-  Hiermee geeft u aan na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren.
-
-- **Wachtwoord verloopt (dagen)**: wordt ondersteund op Windows RT, Windows RT 8.1 en Windows 8.1.
-
-  Selecteer het aantal dagen waarna het wachtwoord van gebruikers verloopt en ze een nieuw wachtwoord moeten maken.
-
-- **Wachtwoordgeschiedenis onthouden:** wordt ondersteund op Windows RT, Windows RT en Windows 8.1.
-
-  Gebruik deze instelling in combinatie met **Wachtwoorden niet opnieuw gebruiken** om te voorkomen dat gebruikers eerder gebruikte wachtwoorden opnieuw gebruiken.
-
-- **Wachtwoorden niet opnieuw gebruiken:** wordt ondersteund op Windows RT, Windows RT 8.1 en Windows 8.1
-
-  Als **Wachtwoordgeschiedenis onthouden:** is geselecteerd, geeft u aan hoeveel eerder gebruikte wachtwoorden er niet opnieuw kunnen worden gebruikt.
-
-
-### <a name="device-health-settings"></a>Instellingen voor de status van het apparaat
-
-- **Vereisen dat apparaten worden gerapporteerd als goed:** wordt ondersteund op Windows 10-apparaten. U kunt een regel instellen die vereist dat Windows 10-apparaten in nieuw of bestaand nalevingsbeleid als goed moeten worden gerapporteerd. Als deze instelling is ingeschakeld, worden Windows 10-apparaten via de Health Attestation-service (HAS) op de volgende gegevenspunten geëvalueerd:
-  - **BitLocker is ingeschakeld:** wanneer BitLocker is ingeschakeld, kan het apparaat gegevens die zijn opgeslagen op de schijf, beschermen tegen onbevoegde toegang wanneer het systeem wordt uitgeschakeld of naar de slaapstand overschakelt. Windows BitLocker-stationsversleuteling versleutelt alle gegevens die zijn opgeslagen op het volume met het Windows-besturingssysteem. BitLocker gebruikt de TPM om het Windows-besturingssysteem en de gebruikersgegevens te beschermen en ervoor te zorgen dat een computer niet kan worden gemanipuleerd, zelfs niet als deze onbeheerd, verloren of gestolen is. Als de computer is uitgerust met een compatibele TPM, gebruikt BitLocker de TPM om de versleutelingssleutels te vergrendelen die de gegevens beschermen. Als gevolg hiervan kunnen de sleutels niet worden gebruikt tot de TPM de status van de computer heeft gecontroleerd
-  - **Code-integriteitsbeleidsbestand is ingeschakeld:** code-integriteit is een functie die voortdurend de integriteit valideert van een stuurprogramma- of systeembestand wanneer dat bestand in het geheugen wordt geladen. Code-integriteit detecteert of een niet-ondertekend stuurprogramma- of systeembestand in de kernel wordt geladen, of dat een systeembestand is gewijzigd door schadelijke software die wordt uitgevoerd door een gebruikersaccount met beheerdersbevoegdheden.
-  - **Beveiligd opstarten is ingeschakeld:** als beveiligd opstarten is ingeschakeld, wordt het systeem gedwongen om in een vertrouwde fabrieksstatus op te starten. Als beveiligd opstarten is ingeschakeld, moeten de belangrijkste onderdelen van de computer de juiste cryptografische handtekeningen hebben die worden vertrouwd door de organisatie die het apparaat heeft gemaakt. De UEFI-firmware verifieert dit voordat de computer kan worden opgestart. Als er bestanden zijn gemanipuleerd, waardoor de handtekening ongeldig is geworden, kan het systeem niet worden opgestart.
-  - **Early Launch Antimalware is ingeschakeld:** Early Launch Anti-Malware (ELAM) biedt de computers in uw netwerk bescherming wanneer ze worden opgestart en wanneer stuurprogramma’s van derden worden geïnitialiseerd.
-
-Zie [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx) voor meer informatie over de werking van de HAS-service.
-
-### <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
-
-- **Minimale versie van het besturingssysteem die is vereist:** wordt ondersteund op Windows 8.1 en Windows 10.
-
-  Geef hier het nummer van de major.minor.build.CU op. Het build.CU-nummer moet overeenkomen met de versie die wordt geretourneerd door de opdracht ```winver```.
-
-  Wanneer een apparaat een eerdere versie heeft dan de opgegeven versie van het besturingssysteem, wordt de versie als niet-compatibel gerapporteerd. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen of hij een upgrade van zijn apparaat wil uitvoeren, waarna hij toegang tot bedrijfsbronnen krijgt.
-
-- **Maximale versie van het besturingssysteem die is toegestaan:** wordt ondersteund op Windows 8.1 en Windows 10.
-
-  Wanneer een apparaat een versie van het besturingssysteem gebruikt dat hoger is dan wat in de regel is bepaald, wordt de toegang tot bedrijfsbronnen geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met zijn IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
-
-Als u de versie van het besturingssysteem wilt vinden die u voor de instellingen **Minimale versie van het besturingssysteem die is vereist** en **Maximale versie van het besturingssysteem dat is toegestaan** wilt gebruiken, voert u via de opdrachtregel de opdracht **winver** uit. De opdracht winver retourneert de gemelde versie van het besturingssysteem.
-
-- Windows 8.1-pc's retourneren versie **3**. Als de besturingssysteemversieregel is ingesteld op Windows 8.1 voor Windows, wordt het apparaat als in strijd met het nalevingsbeleid gerapporteerd, zelfs als het apparaat Windows 8.1 heeft.
-- Voor Windows 10-computers moet de versie worden ingesteld op 10.0, gevolgd door het build-nummer van het besturingssysteem dat wordt geretourneerd door de opdracht winver.
-
-## <a name="windows-holographic-for-business-support"></a>Ondersteuning voor Windows Holographic for Business
-
-De volgende instelling wordt in Windows Holographic for Business ondersteund:
-
-- Systeembeveiliging/versleuteling
-
-  **Versleuteling van gegevensopslag  op apparaat**.
+- **Systeembeveiliging** > **Versleuteling** > **Versleuteling van opslag van gegevens op apparaat**.
 
 Zie [Verify device encryption](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption) (Apparaatversleuteling controleren) om apparaatversleuteling te controleren op de Microsoft HoloLens.
 
+## <a name="surface-hub"></a>Surface Hub
+Surface Hub gebruikt het **Windows 10 en hoger**-platform. Surface Hubs worden ondersteund voor naleving en voorwaardelijke toegang. Voor het inschakelen van deze functies op Surface Hubs, raden we u aan [Automatische inschrijving van Windows 10 in te schakelen](windows-enroll.md) bij Intune (dit vereist ook Azure Active Directory (AAD)) en te streven naar Surface Hub-apparaten als apparaatgroepen. Surface Hubs moeten gekoppeld zijn aan Azure Active Directory voor naleving en voorwaardelijke toegang om te kunnen functioneren.
+
+Zie [inschrijving voor Windows-apparaten instellen](windows-enroll.md) voor hulp.
+
+## <a name="assign-user-or-device-groups"></a>Groepen gebruikers of apparaten toewijzen
+
+1. Kies een beleid dat u hebt geconfigureerd. Bestaande beleidsregels bevinden zich in **Apparaatcompatibiliteit** > **Beleid**.
+2. Kies het beleid en kies **Toewijzingen**. U kunt Azure Active Directory-beveiligingsgroepen (AD) opnemen of uitsluiten.
+3. Kies **Geselecteerde groepen** om uw Azure AD-beveiligingsgroepen te zien. Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen en kies **Opslaan** om het beleid te implementeren.
+
+U hebt het beleid toegepast op gebruikers. De apparaten die worden gebruikt door de gebruikers op wie het beleid is toegepast, worden gecontroleerd om te zien of ze compatibel zijn.
+
 ## <a name="next-steps"></a>Volgende stappen
-
-Zie het volgende onderwerp voor meer informatie over het bewaken van de apparaatcompatibiliteit:
-
-- [Apparaatcompatibiliteit bewaken](device-compliance-monitor.md)
+[E-mail automatiseren en acties voor niet-conforme apparaten toevoegen](actions-for-noncompliance.md)  
+[Nalevingsbeleid voor Intune-apparaten controleren](compliance-policy-monitor.md)

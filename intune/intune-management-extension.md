@@ -3,8 +3,8 @@ title: PowerShell-scripts in Microsoft Intune beheren voor Windows 10-apparaten
 titlesuffix: ''
 description: Informatie over het uploaden van PowerShell-scripts in Microsoft Intune om deze uit te voeren op Windows 10-apparaten.
 keywords: ''
-ms.author: dougeby
-author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c501292126200baa88e06e30b6226e5c5021b8ec
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 3de7af01ffa64293e420913258919eff118b4abc
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-scripts in Intune beheren voor Windows 10-apparaten
 Met de Intune-beheeruitbreiding kunt u PowerShell-scripts uploaden in Intune om deze uit te voeren op Windows 10-apparaten. De beheeruitbreiding is een aanvulling op de Windows 10 MDM-functionaliteit en maakt het eenvoudiger voor u om uw beheer te moderniseren.
@@ -33,8 +33,8 @@ De extensie van de Intune-management is een aanvulling op de meegeleverde Window
 
 ## <a name="prerequisites"></a>Vereisten
 De Intune-beheeruitbreiding heeft de volgende vereisten:
-- Apparaten moeten gekoppeld zijn aan Microsoft Azure Active Directory
-- Op apparaten moet Windows 10 versie 1607 of hoger worden uitgevoerd
+- Apparaten moeten zijn gekoppeld aan Azure AD. Dit omvat geen apparaten die aan Hybrid AD zijn toegevoegd.
+- Op apparaten moet Windows 10 versie 1607 of hoger worden uitgevoerd.
 
 ## <a name="create-a-powershell-script-policy"></a>Een PowerShell-scriptbeleid maken 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
@@ -43,7 +43,7 @@ De Intune-beheeruitbreiding heeft de volgende vereisten:
 4. Kies **Beheren** > **PowerShell-scripts** op het deelvenster **Apparaatconfiguratie**.
 5. Kies in het deelvenster **PowerShell-scripts** **Toevoegen**.
 6. Voer in het deelvenster **PowerShell-script toevoegen** een **naam** en **beschrijving** in voor het PowerShell-script.
-7. Blader voor de **Scriptlocatie** naar het PowerShell-script. Het script moet kleiner zijn dan 10 KB (ASCII) of 5 KB (Unicode).
+7. Blader voor de **Scriptlocatie** naar het PowerShell-script. Het script moet kleiner zijn dan 200 kB.
 8. Kies **Configureren**, en kies vervolgens of het script wel of niet met de referenties van de gebruiker op het apparaat moet worden uitgevoerd (**Ja**) of systeemcontext (**Nee**). Het script wordt standaard uitgevoerd in de systeemcontext. Selecteer **Ja** tenzij het noodzakelijk is dat het script wordt uitgevoerd in de systeemcontext. 
   ![Het deelvenster PowerShell-script toevoegen](./media/mgmt-extension-add-script.png)
 9. Kies of het script wel of niet moet worden ondertekend door een vertrouwde uitgever (**Ja**). Standaard hoeft het script niet te worden ondertekend. 

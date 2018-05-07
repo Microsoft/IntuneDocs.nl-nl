@@ -15,18 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>De Intune-instellingen voor de iOS-app Classroom configureren
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Inleiding
-[Classroom](https://itunes.apple.com/app/id1085319084) is een app waarmee docenten het leren kunnen begeleiden en op apparaten van studenten in het leslokaal kunnen beheren. Met de app kan een docent bijvoorbeeld het volgende:
+[Classroom](https://itunes.apple.com/app/id1085319084) is een app waarmee docenten het leren kunnen begeleiden en op apparaten van studenten in het leslokaal kunnen beheren. Met de app kunnen leraren bijvoorbeeld:
 
 - Apps op apparaten van studenten openen
 - Het iPad-scherm vergrendelen en ontgrendelen
@@ -34,18 +34,18 @@ ms.lasthandoff: 04/16/2018
 - iPads van studenten laten navigeren naar een bladwijzer of een hoofdstuk in een boek
 - Het iPad-scherm van een student weergeven op een Apple-TV
 
-Gebruik het iOS-apparaatprofiel **Opleiding** van Intune en de informatie in dit onderwerp voor hulp bij het instellen van de app Classroom en de apparaten waarop u deze app gaat gebruiken.
+Als u Classroom wilt instellen op uw apparaat, moet u een profiel voor een Intune iOS-onderwijsapparaat maken.
 
 ## <a name="before-you-start"></a>Voordat u begint
 
 Let op het volgende voordat u begint met het configureren van deze instellingen:
 
-- De iPads van zowel docenten als studenten moeten zijn geregistreerd bij Intune
+- De iPads van zowel docenten als studenten moeten zijn geregistreerd bij Intune.
 - Zorg ervoor dat u de app [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) hebt geïnstalleerd op het apparaat van de docent. U kunt de app handmatig installeren of [App-beheer van Intune](app-management.md) gebruiken.
-- U moet certificaten configureren om verbindingen tussen de apparaten van de docent en studenten te verifiëren (zie stap 2)
-- iPads van de docent en studenten moeten verbonden zijn met hetzelfde Wi-Fi-netwerk en Bluetooth moet ingeschakeld zijn
-- De app Classroom draait op iPads met supervisie onder iOS 9.3 of hoger
-- In deze release biedt Intune ondersteuning voor het beer van een 1-op-1-scenario waarbij elke student een eigen iPad heeft
+- U moet certificaten configureren om verbindingen tussen de apparaten van de docent en studenten te verifiëren (zie stap 2, een iOS-opleidingsprofiel maken en toewijzen in Intune).
+- iPads van de docent en studenten moeten verbonden zijn met hetzelfde Wi-Fi-netwerk en Bluetooth moet ingeschakeld zijn.
+- De app Classroom draait op iPads met supervisie onder iOS 9.3 of hoger.
+- In deze release biedt Intune ondersteuning voor het beheer van een 1-op-1-scenario waarbij elke student een eigen iPad heeft.
 
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>Stap 1: uw schoolgegevens importeren in Azure Active Directory
@@ -82,14 +82,14 @@ U kunt op een van de volgende manieren gegevens importeren in SDS:
 9.  Kies **Instellingen** > **Configureren**.
 
 
-Vervolgens hebt u certificaten nodig om een vertrouwensrelatie te maken tussen de iPads van de docent en studenten. Certificaten worden gebruikt voor het naadloos en op de achtergrond verifiëren van verbindingen tussen apparaten zonder gebruikersnamen en wachtwoorden in te voeren.
+In de volgende sectie maakt u certificaten om een vertrouwensrelatie te maken tussen de iPads van de docent en studenten. Certificaten worden gebruikt voor het naadloos en op de achtergrond verifiëren van verbindingen tussen apparaten zonder gebruikersnamen en wachtwoorden in te voeren.
 
 >[!IMPORTANT]
 >De docent- en studentencertificaten die u gebruikt, moeten zijn uitgegeven door verschillende certificeringsinstanties (CA's). U moet twee nieuwe onderliggende CA's maken die verbonden zijn met uw bestaande certificaatinfrastructuur: één voor docenten en één voor studenten.
 
 iOS-onderwijsprofielen ondersteunen alleen PFX-certificaten. SCEP-certificaten worden niet ondersteund.
 
-De certificaten die u maakt, moeten niet alleen ondersteuning bieden voor gebruikersverificatie maar ook voor serververificatie.
+De gemaakte certificaten moeten ondersteuning bieden voor gebruikersverificatie en serververificatie.
 
 ### <a name="configure-teacher-certificates"></a>Docentcertificaten configureren
 
@@ -97,13 +97,15 @@ Kies **Docentcertificaten** in het deelvenster **Opleiding**.
 
 #### <a name="configure-teacher-root-certificate"></a>Het basiscertificaat voor de docent configureren
 
-Kies onder **Basiscertificaat voor docent** de bladerknop om het basiscertificaat voor de docent te selecteren met de extensie .cer (gecodeerd met DER of Base64), of .P7B (met of zonder volledige keten).
+Kies onder **Basiscertificaat voor docent** de knop Bladeren. Selecteer het basiscertificaat met een van de volgende opties:
+- .cer-extensie (DER of Base64-gecodeerd) 
+- .P7b-extensie (met of zonder volledig keten)
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>PKCS#12-certificaat voor docent configureren
 
 Configureer onder **PKCS #12-certificaat voor docent** de volgende waarden:
 
-- **Indeling van de onderwerpnaam**: Intune zet vóór de algemene naam van het certificaat automatisch **leader** (leider) in het geval van het docentcertificaat en **member** (lid) in het geval van een studentencertificaat.
+- **Indeling van onderwerpnaam**: Intune voorziet algemene namen automatisch van het voorvoegsel **leider** voor docentcertificaten. Algemene namen voor studentcertificaten hebben het voorvoegsel **lid**.
 - **Certificeringsinstantie**: een certificeringsinstantie (CA) voor ondernemingen die wordt uitgevoerd op een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund. 
 - **Naam van certificeringsinstantie**: voer de naam van uw certificeringsinstantie in.
 - **Certificaatsjabloonnaam**: voer de naam in van een certificaatsjabloon die is toegevoegd aan een verlenende CA. 
@@ -120,13 +122,15 @@ Wanneer u de certificaten hebt geconfigureerd, kiest u **OK**.
 
 #### <a name="configure-student-root-certificate"></a>Het basiscertificaat voor studenten configureren
 
-Kies onder **Basiscertificaat voor student** de bladerknop om het basiscertificaat voor de student te selecteren met de extensie .cer (gecodeerd met DER of Base64), of .P7B (met of zonder volledige keten).
+Kies onder **Basiscertificaat voor student** de knop Bladeren. Selecteer het basiscertificaat met een van de volgende opties:
+- .cer-extensie (DER of Base64-gecodeerd) 
+- .P7b-extensie (met of zonder volledig keten)
 
 #### <a name="configure-student-pkcs12-certificate"></a>Het PKCS#12-certificaat voor studenten configureren
 
 Configureer onder **PKCS#12-certificaat voor student** de volgende waarden:
 
-- **Indeling van de onderwerpnaam**: Intune zet vóór de algemene naam van het certificaat automatisch **leader** (leider) in het geval van het docentcertificaat en **member** (lid) in het geval van een studentencertificaat.
+- **Indeling van onderwerpnaam**: Intune voorziet algemene namen automatisch van het voorvoegsel **leider** voor docentcertificaten. Algemene namen voor studentcertificaten hebben het voorvoegsel **lid**.
 - **Certificeringsinstantie**: een certificeringsinstantie (CA) voor ondernemingen die wordt uitgevoerd op een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund. 
 - **Naam van certificeringsinstantie**: voer de naam van uw certificeringsinstantie in.
 - **Certificaatsjabloonnaam**: voer de naam in van een certificaatsjabloon die is toegevoegd aan een verlenende CA. 
@@ -147,7 +151,7 @@ Wijs het profiel toe aan studentapparaten in de Classroom-groepen die zijn gemaa
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Als docenten nu de app Classroom gebruiken, hebben ze de volledige controle over apparaten van studenten.
+Als een docent nu de Classroom-app gebruikt, hebben ze de volledige controle over de apparaten van studenten.
 
 Zie [Help bij Classroom](https://help.apple.com/classroom/ipad/2.0/) op de website van Apple voor meer informatie over de app Classroom.
 

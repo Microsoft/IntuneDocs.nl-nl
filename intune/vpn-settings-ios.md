@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/27/2018
+ms.date: 4/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce970f942d8ea20eb9ea593c23160757122926e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 374c3937d04fd546c17d6f147609f448875dddba
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>VPN-instellingen in Microsoft Intune configureren voor iOS-apparaten
 
@@ -36,6 +36,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de volg
 - **Verbindingstype**: selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**
+  - **Cisco Legacy AnyConnect**
   - **SonicWall Mobile Connect**
   - **F5 Edge Client**
   - **Pulse Secure**
@@ -43,7 +44,11 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de volg
   - **Citrix**
   - **Aangepaste VPN**
 
-- **Split tunneling**: u kunt deze optie **inschakelen**  of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar het standaardnetwerk van het hotel om gewoon op het web te surfen.
+    > [!NOTE]
+    > - **Cisco Legacy AnyConnect VPN**-profielen zijn voor de [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924)-app-versie 4.0.5x en oudere versies
+    > - **Cisco AnyConnect VPN**-profielen zijn voor de [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690)-app-versie 4.0.7x en nieuwere versies
+
+- **Split tunneling**: u kunt deze optie **inschakelen**  of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar gebruikt het standaardnetwerk van het hotel om gewoon op het web te surfen.
 
 ## <a name="custom-vpn-settings"></a>Basis-VPN-instellingen
 
@@ -75,3 +80,6 @@ Als u **Aangepaste VPN** als verbindingstype hebt geselecteerd, configureert u o
 - **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com**) in die het configuratiebestand bevat.
 - **Adres**: voer het IP-adres van de volledig gekwalificeerde hostnaam van de proxyserver in.
 - **Poortnummer**: voer het poortnummer in dat is gekoppeld aan de proxyserver.
+
+## <a name="next-step"></a>Volgende stap
+[VPN-profielen maken in Intune](vpn-settings-configure.md)

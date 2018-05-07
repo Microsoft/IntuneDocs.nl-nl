@@ -3,8 +3,8 @@ title: VPN per app in Microsoft Intune instellen voor iOS-apparaten
 titleSuffix: ''
 description: Specificeer welke beheerde apps uw virtueel particulier netwerk (VPN) mogen gebruiken op iOS-apparaten die met Intune worden beheerd.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -15,15 +15,23 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 67e2630fc2a7ccd75ac86c797e36c389757d908a
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>VPN per app instellen in Intune voor iOS-apparaten
 
 U kunt specificeren welke beheerde apps uw virtueel particulier netwerk (VPN) mogen gebruiken op iOS-apparaten die met Intune worden beheerd. Wanneer u in Intune een VPN per app maakt, maakt een eindgebruiker bij het openen van zakelijke documenten automatisch verbinding via uw VPN.
+
+Per-App VPN is momenteel beschikbaar voor de volgende providers: 
+
+ - Pulse Connect Secure
+ - Checkpoint Remote Access VPN
+ - F5
+ - SonicWall
+
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>Vereisten voor VPN per app
 
@@ -37,7 +45,7 @@ Exporteer het certificaat en voeg de CA toe.
 4. Voeg de naam toe van de CA die het certificaat heeft uitgegeven voor verificatie bij de VPN-server.
     Als de CA die door het apparaat wordt voorgelegd, overeenkomt met een van de CA's in de lijst met vertrouwde CA's op de VPN-server, wordt het apparaat door de VPN-server geverifieerd.
 
-## <a name="create-a--group-for-your-vpn-users"></a>Een groep maken voor uw VPN-gebruikers
+## <a name="create-a-group-for-your-vpn-users"></a>Een groep maken voor uw VPN-gebruikers
 
 Maak of kies in Azure Active Directory (Azure AD) een bestaande groep die de leden gaat bevatten die toegang hebben tot het VPN per app.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/03/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b6ca8108924c6c062da0d0ef56ab5b68635dd9ca
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b003fde011fd3a727c7c7a163fedb1dae6779425
+ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---april-2018"></a>De vroege editie voor Microsoft Intune - april 2018
 
@@ -39,6 +39,16 @@ Deze pagina wordt regelmatig bijgewerkt. Controleer op andere updates.
 ## <a name="intune-in-the-azure-portal"></a>Intune in Azure Portal
 
 <!-- 1804 start -->
+
+### <a name="show-caller-id-in-personal-profile---android-for-work---1098984---"></a>Beller-id in persoonlijk profiel weergeven - Android for Work<!--1098984 -->
+Wanneer u een persoonlijk profiel op een apparaat gebruikt, kunnen eindgebruikers de details van de beller-id van een professioneel contact niet weergegeven. 
+
+Er is een nieuwe instelling in **Android for Work** > **Apparaatbeperkingen** > **Instellingen voor werkprofiel**:
+- Beller-id zakelijk contactpersoon in persoonlijk profiel weergeven
+
+Indien ingeschakeld (niet-geconfigureerd), worden de details van de beller die een zakelijke contactpersoon is, weergegeven in het persoonlijke profiel. Indien geblokkeerd, wordt het nummer van de zakelijke contactpersoon die belt niet weergegeven in het persoonlijke profiel. 
+
+Van toepassing op: apparaten met Android-werkprofiel voor Android 6.0 en hoger
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802--"></a>Er worden nieuwe Windows Defender Credential Guard-instellingen toegevoegd aan de Endpoint Protection-instellingen <!--1102252 --><!--from 1802-->
 
@@ -112,6 +122,9 @@ Momenteel kunnen AutoPilot-implementatieprofielen worden toegewezen aan geselect
 
 ### <a name="play-sounds-on-ios-when-in-lost-mode----1629303---"></a>Geluid afspelen in iOS in de modus Apparaat verloren <!-- 1629303 -->
 Wanneer iOS-apparaten onder supervisie in Mobile Device Management (MDM) in de modus [Apparaat verloren](device-lost-mode.md) zijn, kunt u een geluid afspelen (**Apparaten** > **Alle apparaten** > selecteer een iOS-apparaat > **Overzicht** > **Meer**). Het geluid wordt afgespeeld totdat het apparaat is verwijderd uit de modus Apparaat verloren of wanneer een gebruiker het geluid op het apparaat uitschakelt. Van toepassing op apparaten met iOS 9.3 en hoger.
+
+### <a name="intune-will-reinstall-required-apps-that-are-uninstalled-by-users----1947010---"></a>Door Intune worden vereiste apps die door gebruikers zijn verwijderd opnieuw geïnstalleerd <!-- 1947010 -->
+Als een eindgebruiker een vereiste app verwijdert, installeert Intune de app automatisch opnieuw binnen 24 uur in plaats van te wachten op de herbeoordelingscyclus van 7 dagen.
 
 ### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>Een aangepaste onderwerpnaam gebruiken in een SCEP-certificaat <!-- 2064190 -->
 U kunt de algemene naam **OnPremisesSamAccountName** gebruiken in een aangepast onderwerp voor een SCEP-certificaatprofiel. U kunt bijvoorbeeld `CN={OnPremisesSamAccountName})` gebruiken.

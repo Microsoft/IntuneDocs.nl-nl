@@ -1,12 +1,11 @@
 ---
-title: Een nalevingsbeleid voor macOS-apparaten maken in Microsoft Intune
-titleSuffix: ''
-description: Maak een Microsoft Intune-nalevingsbeleid voor apparaten voor macOS-apparaten zodat u kunt opgeven aan welke vereisten een apparaat moet voldoen om te conformeren.
+title: Een macOS-nalevingsbeleid voor apparaten maken in Microsoft Intune - Azure | Microsoft Docs
+description: Een Microsoft Intune-apparaatnalevingsbeleid voor macOS-apparaten maken of configureren om beveiliging van systeemintegriteit te gebruiken, de minimale en maximale besturingssysteemversie in te stellen, uw wachtwoordvereisten te kiezen en gegevensopslag te versleutelen.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,30 +13,21 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Een apparaatnalevingsbeleid maken voor macOS-apparaten in Intune
-
+# <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Een apparaatnalevingsbeleid toevoegen voor macOS-apparaten in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Een Intune-apparaatnalevingsbeleid voor macOS bepaalt de regels en instellingen waaraan een macOS-apparaat moet voldoen om te voldoen aan het beleid. U kunt deze beleidsregels gebruiken met voorwaardelijke toegang om toegang tot bedrijfsbronnen toe te staan of te blokkeren. U kunt ook apparaatrapporten krijgen en maatregelen voor niet-naleving treffen. U maakt nalevingsbeleid voor apparaten voor elk platform in Intune Azure Portal.
-
-## <a name="before-you-begin"></a>Voordat u begint
-
-Voordat u begint met het maken en toewijzen van een apparaatnalevingsbeleid, leest u de concepten voor een Intune-apparaatnalevingsbeleid.
-
-- Ga naar [Aan de slag met apparaatnalevingsbeleid](device-compliance.md) voor meer informatie over beleidsregels voor apparaatnaleving.
-
-> [!IMPORTANT]
-> U stelt voor elk platform een afzonderlijk apparaatnalevingsbeleid op. De Intune-instellingen voor apparaatnalevingsbeleid zijn afhankelijk van de mogelijkheden van het platform, dus de instellingen die beschikbaar zijn via het MDM-protocol.
+Een Intune-apparaatnalevingsbeleid voor macOS bepaalt de regels en instellingen waaraan een macOS-apparaat moet voldoen om te voldoen aan het beleid. Wanneer u apparaatnalevingsbeleid gebruikt met voorwaardelijke toegang, kunt u toegang tot bedrijfsbronnen toestaan of blokkeren. U kunt ook apparaatrapporten krijgen en maatregelen nemen voor niet-naleving. Nalevingsbeleid voor apparaten kan voor elk platform worden gemaakt in de Intune Azure Portal. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over nalevingsbeleid en eventuele vereisten.
 
 In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden beheerd wanneer een nalevingsbeleid wordt gebruikt in combinatie met beleid voor voorwaardelijke toegang:
 
+---------------------------
 
 | Beleidsinstelling | macOS 10.11 of hoger |
 | --- | --- |
@@ -45,102 +35,65 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 | **Apparaatversleuteling** | Hersteld (door een pincode in te stellen) |
 | **E-mailprofiel** | In quarantaine |
 |**Minimale versie van het besturingssysteem** | In quarantaine |
-| **Maximale versie van het besturingssysteem** | In quarantaine |  
+| **Maximale versie van het besturingssysteem** | In quarantaine |
 
+---------------------------
 
-**Hersteld** = het besturingssysteem van het apparaat dwingt naleving af. (De gebruiker wordt bijvoorbeeld gedwongen een pincode in te stellen.)
+**Hersteld** = het besturingssysteem van het apparaat dwingt naleving af. De gebruiker wordt bijvoorbeeld gedwongen een pincode in te stellen.
 
 **In quarantaine** = het besturingssysteem van het apparaat dwingt geen naleving af. (Bij Android-apparaten bijvoorbeeld wordt de gebruiker niet gedwongen het apparaat te versleutelen.) Als het apparaat niet compatibel is, worden de volgende acties uitgevoerd:
 
 - Het apparaat wordt geblokkeerd als een beleid voor voorwaardelijke toegang van toepassing is voor de gebruiker.
 - De bedrijfsportal stelt de gebruiker op de hoogte van eventuele nalevingsproblemen.
 
-## <a name="macos-compliance-policy-settings"></a>Instellingen voor macOS-nalevingsbeleid
+## <a name="create-a-device-compliance-policy"></a>Een nalevingsbeleid voor apparaten maken
 
-U kunt kiezen uit verschillende categorieën met verschillende instellingen bij het maken van een nieuw apparaatnalevingsbeleid in Intune:
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. Selecteer voor **Platform** de optie **macOS**. Kies **Instellingen configureren** om instellingen op te geven voor de **Apparaatstatus**, de **Apparaateigenschappen** en de **Systeembeveiliging**. Selecteer **OK** en **Maken** als u klaar bent.
 
-- Apparaatstatus
+## <a name="device-health"></a>Apparaatstatus
 
-- Apparaateigenschappen
+- **Beveiliging van systeemintegriteit vereisen**: uw macOS-apparaten **verplichten** om [Beveiliging van systeemintegriteit](https://support.apple.com/HT204899) in te schakelen.
 
-- Systeembeveiliging
+## <a name="device-properties"></a>Apparaateigenschappen
 
-### <a name="device-health"></a>Apparaatstatus
+- **Minimale versie van het besturingssysteem**: als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt het gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. Gebruikers kunnen dan kiezen om een upgrade van hun apparaat uit te voeren, waarna ze toegang tot bedrijfsresources krijgen.
+- **Maximale versie van het besturingssysteem**: wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die is opgegeven in de regel, wordt de toegang tot bedrijfsresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel om de versie van het besturingssysteem toe te staan, kan dit apparaat geen toegang tot bedrijfsresources krijgen.
 
-- **Beveiliging van systeemintegriteit vereisen**: stel deze optie in op **Vereist** om te controleren of beveiliging van systeemintegriteit is ingeschakeld op de macOS-apparaten.
+## <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
 
-### <a name="device-properties"></a>Apparaateigenschappen
+### <a name="password"></a>Wachtwoord
 
-- **Minimale versie van het besturingssysteem**: als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-compatibel. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De gebruiker kan kiezen om het apparaat bij te werken. Daarna zijn de bedrijfsbronnen toegankelijk.
+- **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**: **verplicht** gebruikers een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
+- **Eenvoudige wachtwoorden**: stel deze optie in op **Blokkeren** zodat de gebruiker geen eenvoudig wachtwoord kan maken, zoals **1234** of **1111**. Stel deze optie in op **Niet geconfigureerd** om gebruikers toe te staan wachtwoorden als **1234** of **1111** te maken.
+- **Minimale wachtwoordlengte**: voer het minimale aantal cijfers of tekens aan waaruit het wachtwoord moet bestaan.
+- **Wachtwoordtype**: kies of een wachtwoord alleen **numerieke** tekens mag bevatten of uit een combinatie van cijfers en andere tekens moet bestaan (**alfanumeriek**).
+- **Het minimumaantal niet-alfanumerieke tekens in een wachtwoord**: voer het aantal symbooltekens (zoals &, #, %, !, enzovoort) in dat het wachtwoord moet bevatten.
 
-- **Maximale versie van het besturingssysteem**: als een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is opgegeven, wordt de toegang tot bedrijfsresources geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
+    Als u een hogere waarde instelt, moet de gebruiker een wachtwoord maken dat complexer is.
 
-### <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
-
-#### <a name="password"></a>Wachtwoord
-
-- **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**: stel deze optie in op **Vereist** om gebruikers een wachtwoord te laten invoeren om toegang te krijgen tot hun apparaat.
-
-- **Eenvoudige wachtwoorden**: stel deze optie in op **Blokkeren** zodat de gebruiker geen eenvoudig wachtwoord kan maken, zoals **1234** of **1111**.
-
-- **Minimale wachtwoordlengte**: hiermee geeft u het minimale aantal cijfers of tekens aan waaruit het wachtwoord moet bestaan.
-
-- **Wachtwoordtype**: geef aan of de gebruiker een **alfanumeriek** of een **numeriek** wachtwoord moet maken.
-
-- **Aantal niet-alfanumerieke tekens in wachtwoord**: als u **Vereist wachtwoordtype** instelt op **Alfanumeriek**, gebruikt u deze instelling om het minimum aantal tekens op te geven dat het wachtwoord moet bevatten. 
-
-    > [!NOTE]
-    > Als u een hogere waarde instelt, moet de gebruiker een wachtwoord maken dat complexer is.
-
-    > [!IMPORTANT]
-    > Voor macOS-apparaten verwijst deze instelling naar het aantal speciale tekens (bijvoorbeeld **!** , **#**, **&amp;**) dat in het wachtwoord moet worden opgenomen.
-
-- **Maximum aantal minuten van inactiviteit voordat wachtwoord is vereist**: hiermee geeft u aan na hoeveel niet-actieve tijd de gebruiker het wachtwoord opnieuw moet invoeren.
-
-- **Wachtwoord verloopt (in dagen)**: selecteer het aantal dagen (tussen 1 en 250) waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken.
-
-- **Aantal vorige wachtwoorden om hergebruik te voorkomen**: hiermee geeft u op hoeveel eerder gebruikte wachtwoorden niet opnieuw mogen worden gebruikt.
+- **Maximum aantal minuten van inactiviteit voordat wachtwoord is vereist**: geef aan na hoeveel niet-actieve tijd de gebruiker het wachtwoord opnieuw moet invoeren.
+- **Wachtwoord verloopt (in dagen)**: selecteer het aantal dagen waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken.
+- **Aantal vorige wachtwoorden om hergebruik te voorkomen**: geef op hoeveel eerder gebruikte wachtwoorden niet opnieuw mogen worden gebruikt.
 
     > [!IMPORTANT]
     > Als de wachtwoordvereiste op een macOS-apparaat wordt gewijzigd, wordt deze vereiste pas van kracht als de gebruiker de eerstvolgende keer het wachtwoord wil wijzigen. Als u bijvoorbeeld de lengtebeperking voor het wachtwoord instelt op acht cijfers en op het macOS-apparaat nog een beperking voor zes cijfers geldt, gaat de nieuwe beperking pas in de eerstvolgende keer dat de gebruiker het wachtwoord wil bijwerken.
 
-## <a name="to-create-a-device-compliance-policy"></a>Een nalevingsbeleid voor apparaten maken
+### <a name="encryption"></a>Versleuteling
 
-1. Ga naar [Azure Portal](https://portal.azure.com) en meld u aan met uw Intune-referenties.
-
-2. Nadat u zich hebt aangemeld, ziet u het **Azure-dashboard**.
-
-3. Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
-
-4. Kies **Intune**. Vervolgens ziet u het **Intune-dashboard**.
-
-5. Kies **Apparaatnaleving** en vervolgens **Beleid** onder **Beheren**.
-
-6. Kies **Beleid maken**.
-
-7. Typ een naam en beschrijving en kies het platform waarop u dit beleid wilt toepassen.
-
-8. Het deelvenster **macOS-nalevingsbeleid** wordt geopend. Kies de instellingencategorieën **Beveiliging**, **Apparaatstatus** en **Apparaateigenschappen** om uw instellingen op te geven.
-
-10. Wanneer u klaar bent met het kiezen van de instellingen, kiest u **OK** onder elke instellingencategorie voor apparaatnaleving.
-
-11. Kies **OK** en vervolgens **Maken**.
+- **Versleuteling van gegevensopslag op een apparaat**: kies **Vereisen** om gegevensopslag op uw apparaten te versleutelen.
 
 ## <a name="assign-user-groups"></a>Gebruikersgroepen toewijzen
 
-Als u een nalevingsbeleid aan gebruikers wilt toewijzen, kiest u een beleid dat u hebt geconfigureerd. Bestaande beleidsregels vindt u in het deelvenster **Apparaatnaleving - Beleid**.
+1. Kies een beleid dat u hebt geconfigureerd. Bestaande beleidsregels bevinden zich in **Apparaatcompatibiliteit** > **Beleid**.
+2. Kies het beleid en kies **Toewijzingen**. U kunt Azure Active Directory-beveiligingsgroepen (AD) opnemen of uitsluiten.
+3. Kies **Geselecteerde groepen** om uw Azure AD-beveiligingsgroepen te zien. Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen en kies **Opslaan** om het beleid te implementeren op gebruikers.
 
-1. Kies het apparaatnalevingsbeleid dat u aan gebruikers wilt toewijzen en kies **Toewijzingen**. Hiermee opent u het deelvenster waar u **Azure Active Directory-beveiligingsgroepen** kunt selecteren en aan het beleid kunt toewijzen.
+> [!TIP]
+> Standaard wordt door apparaten elke acht uur op naleving gecontroleerd. Maar gebruikers kunnen dit proces afdwingen via de Bedrijfsportal-app in Intune.
 
-2. Kies **Geselecteerde groepen** om het deelvenster met de Azure AD-beveiligingsgroepen te openen.
-
-3. Kies **Opslaan** om het apparaatnalevingsbeleid toe te wijzen aan Azure AD-beveiligingsgroepen.
-
-4. Wanneer u klaar bent met het toewijzen van het apparaatnalevingsbeleid aan uw groepen, kunt u het deelvenster **Toewijzingen** sluiten.
-
-    > [!TIP]
-    > Standaard controleren apparaten elke acht uur op naleving, maar gebruikers kunnen dit proces ook afdwingen via de Intune-bedrijfsportal-app.
+U hebt het beleid toegepast op gebruikers. De apparaten die worden gebruikt door de gebruikers op wie het beleid is toegepast, worden gecontroleerd om te zien of ze compatibel zijn.
 
 ## <a name="next-steps"></a>Volgende stappen
-
-[Het nalevingsbeleid voor apparaten controleren](compliance-policy-monitor.md)
+[E-mail automatiseren en acties voor niet-conforme apparaten toevoegen](actions-for-noncompliance.md)  
+[Nalevingsbeleid voor Intune-apparaten controleren](compliance-policy-monitor.md)
