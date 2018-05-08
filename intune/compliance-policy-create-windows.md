@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Een apparaatnalevingsbeleid maken voor Windows-apparaten in Intune
 
@@ -121,23 +121,23 @@ Zie [Health Attestation CSP](https://docs.microsoft.com/windows/client-managemen
 
 ### <a name="device-properties"></a>Apparaateigenschappen
 
-- **Minimale OS vereist**: voer het major.minor.build.CU-nummer in. Het build.CU-nummer moet overeenkomen met de versie die wordt geretourneerd door de opdracht `ver` of `winver`.
+- **Minimale versie van het besturingssysteem**: voer de minimaal toegestane versie in de nummerindeling major.minor.build.CU in. Het build.CU-nummer moet overeenkomen met de versie die wordt geretourneerd door de opdracht `ver` of `winver`.
 
   Wanneer een apparaat een eerdere versie heeft dan de opgegeven versie van het besturingssysteem, wordt de versie als niet-compatibel gerapporteerd. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen of hij een upgrade van zijn apparaat wil uitvoeren, waarna hij toegang tot bedrijfsbronnen krijgt.
 
-- **Maximale versie van besturingssysteem toegestaan**: voer het major.minor.build.CU.-nummer in. Het build.CU-nummer moet overeenkomen met de versie die wordt geretourneerd door de opdracht `ver` of `winver`.
+- **Maximale versie van het besturingssysteem**: voer de maximaal toegestane versie in de nummerindeling major.minor.build.CU in. Het build.CU-nummer moet overeenkomen met de versie die wordt geretourneerd door de opdracht `ver` of `winver`.
 
   Wanneer een apparaat een versie van het besturingssysteem gebruikt dat hoger is dan wat in de regel is bepaald, wordt de toegang tot bedrijfsbronnen geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met zijn IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
 
-- **Minimale versie van het besturingssysteem die is vereist voor mobiele apparaten**: voer het major.minor.build-nummer in.
+- **Minimale versie van het besturingssysteem dat vereist is voor mobiele apparaten**: voer de minimaal toegestane versie in de nummerindeling major.minor.build in.
 
   Wanneer een apparaat een eerdere versie heeft dan de opgegeven versie van het besturingssysteem, wordt de versie als niet-compatibel gerapporteerd. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan dan kiezen of hij een upgrade van zijn apparaat wil uitvoeren, waarna hij toegang tot bedrijfsbronnen krijgt.
 
-- **Maximale versie van het besturingssysteem die is vereist voor mobiele apparaten**: voer het major.minor.build-nummer in.
+- **Maximale versie van het besturingssysteem dat vereist is voor mobiele apparaten**: voer de maximaal toegestane versie in de nummerindeling major.minor.build in.
 
   Wanneer een apparaat een versie van het besturingssysteem gebruikt dat hoger is dan wat in de regel is bepaald, wordt de toegang tot bedrijfsbronnen geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met zijn IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat niet worden gebruikt om toegang tot bedrijfsbronnen te krijgen.
 
-- **Geldig besturingssysteem-builds**: voer een bereik in voor de acceptabele versies van besturingssystemen, met inbegrip van een minimum en maximum.
+- **Geldig besturingssysteem-builds**: voer een bereik in voor de acceptabele versies van besturingssystemen, met inbegrip van een minimum en maximum. U kunt ook een bestandslijst met door komma's gescheiden waarden (CSV) met de toegestane versienummers van besturingssystemen **exporteren**.
 
 ### <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
 
@@ -147,7 +147,7 @@ Zie [Health Attestation CSP](https://docs.microsoft.com/windows/client-managemen
 - **Eenvoudige wachtwoorden**: stel deze optie in op **Blokkeren** zodat de gebruiker geen eenvoudig wachtwoord kan maken, zoals **1234** of **1111**. Stel deze optie in op **Niet geconfigureerd** om gebruikers toe te staan wachtwoorden als **1234** of **1111** te maken.
 - **Wachtwoordtype**: kies of een wachtwoord alleen **numerieke** tekens mag bevatten of uit een combinatie van cijfers en andere tekens moet bestaan (**alfanumeriek**).
 
-  - **Aantal niet-alfanumerieke tekens in wachtwoord**: als **Vereist wachtwoordtype** is ingesteld op **Alfanumeriek**, wordt met deze instelling het minimum aantal tekensets opgegeven waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
+  - **Aantal niet-alfanumerieke tekens in wachtwoord**: als **Vereist wachtwoordtype** is ingesteld op **Alfanumeriek**, wordt met deze instelling het minimale aantal tekensets opgegeven waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
     - Kleine letters
     - Hoofdletters
     - Symbolen
