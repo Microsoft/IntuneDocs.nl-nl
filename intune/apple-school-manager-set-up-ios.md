@@ -1,48 +1,35 @@
 ---
 title: Inschrijving met het Apple School Manager Program voor iOS-apparaten instellen
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Meer informatie over het instellen van inschrijving met het Apple School Manager Program voor zakelijke iOS-apparaten met Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/08/2018
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
+ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afcca0cc1f7786f468856f2aacefc0b8168b4934
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 853b602781b221ba681d802ae0119fc184ab8d6b
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Inschrijving van iOS-apparaten instellen met Apple School Manager
+# <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Inschrijving van iOS-apparaten inschakelen met Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-> [!NOTE]
-> ### <a name="temporary-user-interface-differences"></a>Tijdelijke verschillen in de gebruikersinterface
->
->De gebruikersinterfaces voor de functies die op deze pagina worden beschreven, worden op dit moment bijgewerkt. Deze updates moeten tegen het einde van april in alle gebruikersaccounts zijn geïmplementeerd.
->
->Als uw pagina **Apparaatinschrijving** niet op de onderstaande afbeelding lijkt, is uw account nog niet bijgewerkt naar de nieuwe gebruikersinterface en kunt u deze Help-pagina gebruiken.
->
->![Oude Intune-gebruikersinterface](./media/appleenroll-oldui.png)
->
->Als uw pagina **Apparaatinschrijving** op de onderstaande afbeelding lijkt, beschikt u over de bijgewerkte gebruikersinterfaces.  Ga dan naar [deze Help-pagina](apple-school-manager-set-up-ios-newui.md).
->
->![Nieuwe Intune-gebruikersinterface](./media/appleenroll-newui.png)
-
-Met de informatie in dit onderwerp kunt u iOS-apparaten inschrijven die zijn aangeschaft via het programma [Apple School Manager](https://school.apple.com/). Als u Intune gebruikt in combinatie met Apple School Manager, kunt u een groot aantal iOS-apparaten registreren zonder ze ooit aan te raken. Wanneer een student of docent het apparaat inschakelt, wordt Configuratieassistent uitgevoerd met vooraf gedefinieerde instellingen en wordt het apparaat geregistreerd voor beheer.
+Met de informatie in dit onderwerp kunt u iOS-apparaten registreren die zijn aangeschaft via het programma [Apple School Manager](https://school.apple.com/). Als u Intune gebruikt in combinatie met Apple School Manager, kunt u een groot aantal iOS-apparaten registreren zonder ze ooit aan te raken. Wanneer een student of docent het apparaat inschakelt, wordt Configuratieassistent uitgevoerd met vooraf gedefinieerde instellingen en wordt het apparaat geregistreerd voor beheer.
 
 Als u registratie via Apple School Manager wilt inschakelen, gebruikt u zowel de Intune- als Apple School Manager-portal. U hebt een lijst met serienummers of een aankoopordernummer nodig om apparaten voor beheer aan Intune toe te wijzen. U maakt DEP-inschrijvingsprofielen met instellingen die tijdens de inschrijving op de apparaten van toepassing zijn geweest.
 
-Registratie via Apple School Manager kan niet worden gebruikt voor het [Device Enrollment Program van Apple](device-enrollment-program-enroll-ios.md) of de [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md).
+Inschrijving voor Apple School Manager kan niet worden gebruikt met het [Device Enrollment Program van Apple](device-enrollment-program-enroll-ios.md) of de [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md).
 
 **Vereisten**
 - [Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md)
@@ -51,114 +38,126 @@ Registratie via Apple School Manager kan niet worden gebruikt voor het [Device E
 - Gebruikersaffiniteit vereist [WS-Trust 1.3 gebruikersnaam/gemengd eindpunt](https://technet.microsoft.com/library/adfs2-help-endpoints). [Meer informatie](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Apparaten die zijn gekocht via het programma [Apple School Management](http://school.apple.com)
 
->[!NOTE]
->Multi-Factor Authentication (MFA) werkt niet tijdens inschrijving op Apple School Manager-apparaten met gebruikersaffiniteit. Na de inschrijving werkt MFA zoals verwacht op deze apparaten. Na de inschrijving werkt MFA zoals verwacht op apparaten. Op apparaten wordt de gebruiker niet gevraagd het wachtwoord te wijzigen als ze zich de eerste keer aanmelden. Daarnaast wordt gebruikers met verlopen wachtwoorden niet gevraagd hun wachtwoord opnieuw in te stellen tijdens de inschrijving. Deze gebruikers moeten het wachtwoord vanaf een ander apparaat opnieuw instellen.
-
-## <a name="get-the-apple-token-and-assign-devices"></a>De Apple-token downloaden en apparaten toewijzen
+## <a name="get-an-apple-token-and-assign-devices"></a>Een Apple-token ophalen en apparaten toewijzen
 
 Voordat u iOS-bedrijfsapparaten met Apple School Manager kunt inschrijven, hebt u een token (.p7m) van Apple nodig. Intune kan met dit token informatie synchroniseren over apparaten die aan Apple School Manager deelnemen. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen. Als u zich in de Apple-portal bevindt, kunt u ook apparaatserienummers voor beheer toewijzen.
 
-**Stap 1. Download een openbare-sleutelcertificaat van Intune dat is vereist voor het maken van een Apple-token.**<br>
-1. Kies in [Azure Portal in Intune](https://aka.ms/intuneportal) achtereenvolgens **Apparaatinschrijving** en **Token voor het inschrijvingsprogramma**.
+### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>Stap 1. Het openbare-sleutelcertificaat van Intune downloaden dat is vereist voor het maken van een Apple-token
 
-   ![Het deelvenster Token voor het inschrijvingsprogramma in de werkruimte Apple-certificaten voor het downloaden van de openbare sleutel](./media/enrollment-program-token-download.png)
+1. Kies **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > **Toevoegen** in [Intune](https://aka.ms/intuneportal).
+
+   ![Een token voor het inschrijvingsprogramma ophalen.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. Kies in de blade **Token voor het inschrijvingsprogramma** de optie **Uw openbare sleutel downloaden** om de versleutelingssleutel (.pem) lokaal op te slaan. Het .pem-bestand wordt gebruikt om een vertrouwensrelatiecertificaat bij de portal Apple School Manager aan te vragen.
+     ![De blade Token voor het inschrijvingsprogramma.](./media/device-enrollment-program-enroll-ios/image02.png)
 
-**Stap 2. Download een token en wijs apparaten toe.**<br>
-1. Kies **Een token via Apple School Manager maken** en meld u aan met de Apple-id van uw bedrijf. U kunt dit Apple-id gebruiken om uw Apple School Manager-token te verlengen.
+### <a name="step-2-download-a-token-and-assign-devices"></a>Stap 2. Een token downloaden en apparaten toewijzen
+1. Kies **Een token maken via Apple School Manager** en meld u met de Apple-id van uw bedrijf aan bij Apple School. U kunt dit Apple-id gebruiken om uw Apple School Manager-token te verlengen.
 2.  Ga in de [Apple School Manager-portal](https://school.apple.com) naar **MDM-servers** en kies vervolgens **MDM-server toevoegen** (rechtsboven).
 3.  Voer de **MDM-servernaam** in. De servernaam is voor eigen referentie en dient om de MDM-server te identificeren. Het is niet de naam of URL van de Microsoft Intune-server.
-   ![De Apple School Manager-portal met de optie voor het serienummer geselecteerd](./media/asm-server-assignment.png)
+   ![Schermopname van de Apple School Manager-portal met de optie voor het serienummer geselecteerd](./media/asm-server-assignment.png)
 
 4.  Kies in de Apple-portal de optie **Bestand uploaden...**, blader naar het PEM-bestand en selecteer **MDM-server opslaan** (rechtsonder).
 5.  Kies **Token ophalen** en download het servertokenbestand (.p7m) naar uw computer.
 6. Ga naar **Toewijzingen van apparaten** en **Apparaat kiezen** door handmatige invoer van de **serienummers** of het **volgordenummer**, of selecteer **CSV-bestand uploaden**.
-     ![De Apple School Manager-portal met de optie voor het serienummer geselecteerd](./media/asm-device-assignment.png)
+     ![Schermopname van de Apple School Manager-portal met de optie voor het serienummer geselecteerd](./media/asm-device-assignment.png)
 7.  Kies de actie **Toewijzen aan server** en kies de **MDM-server** die u hebt gemaakt.
 8. Geef uw apparaat aan onder **Apparaten kiezen** en geef de apparaatgegevens op.
 9. Selecteer **Toewijzen aan server**, kies de &lt;Servernaam&gt; die is opgegeven voor Microsoft Intune en kies vervolgens **OK**.
 
-**Stap 3. Voer de Apple-id in die u hebt gebruikt om uw Apple School Manager-token te maken.**<br>Deze id moet worden gebruikt om uw Apple School Manager-token te verlengen. De id wordt voor toekomstige referentie opgeslagen.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Stap 3. De Apple-id opslaan die u hebt gebruikt om dit token te maken
 
-![De Apple-id invoeren die is gebruikt voor het maken van het token voor het inschrijvingsprogramma en het uploaden van het token](./media/enrollment-program-token-apple-id.png)
+Voer in Intune in de Apple-portal de Apple-id in, zodat u deze altijd kunt terugvinden.
 
-**Stap 4. Uw token zoeken en uploaden.**<br>
-Ga naar het certificaatbestand (.p7m), kies **Openen** en kies vervolgens **Uploaden**. Intune synchroniseert automatisch de Apple School Manager-apparaten van Apple.
+![Schermopname van het invoeren van de Apple ID die is gebruikt voor het maken van het token voor het inschrijvingsprogramma en het uploaden van het token.](./media/device-enrollment-program-enroll-ios/image03.png)
+
+### <a name="step-4-upload-your-token"></a>Stap 4. Uw token uploaden
+Ga in het venster **Apple-token** naar het certificaatbestand (.pem), kies **Openen** en vervolgens **Maken**. Met het pushcertificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar geregistreerde mobiele apparaten te pushen. Intune synchroniseert automatisch de Apple School Manager-apparaten van Apple.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Een Apple-inschrijvingsprofiel maken
-Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving.
+Na installatie van het token kunt u een inschrijvingsprofiel voor Apple School-apparaten maken. Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving.
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) achtereenvolgens **Apparaatinschrijving** en **Apple-inschrijving**.
-2. Selecteer bij **Inschrijvingsprogramma** **Profielen voor het inschrijvingsprogramma**.
-3. Kies op de blade **Profielen voor het inschrijvingsprogramma** de optie **Maken**.
-4. Voer op de blade **Inschrijvingsprofiel maken** een **naam** en een **beschrijving** in voor het profiel dat wordt weergegeven in Intune.
-5. Geef voor **Gebruikersaffiniteit** aan of u andere apparaten met dit profiel wilt inschrijven met of zonder gebruikersaffiniteit.
+1. Kies **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** in [Intune](https://aka.ms/intuneportal).
+2. Selecteer een token, kies **Profielen** en kies vervolgens **Profiel maken**.
+3. Voer in het venster **Profiel maken** een **naam** en een **beschrijving** voor het profiel in voor administratieve doeleinden. Gebruikers zien deze gegevens niet. U kunt dit veld **Naam** gebruiken om een dynamische groep te maken in Azure Active Directory. Gebruik de profielnaam om de parameter enrollmentProfileName te definiëren om apparaten aan dit inschrijvingsprofiel toe te wijzen. Meer informatie over [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects) (dynamische Azure Active Directory-groepen).
+    ![Naam en beschrijving van het profiel.](./media/device-enrollment-program-enroll-ios/image05.png)
 
-   - **Inschrijven met gebruikersaffiniteit**: hiermee wordt het apparaat tijdens de installatie aan een gebruiker gelieerd.
+4. Geef voor **Gebruikersaffiniteit** aan of andere apparaten met dit profiel met of zonder toegewezen gebruiker moeten worden ingeschreven.
+    - **Inschrijven met gebruikersaffiniteit**: kies deze optie voor apparaten die eigendom zijn van gebruikers en die de bedrijfsportal willen gebruiken voor services zoals het installeren van apps. Met deze optie kunnen gebruikers hun apparaat verifiëren door de bedrijfsportal te gebruiken. Gebruikersaffiniteit vereist [WS-Trust 1.3 gebruikersnaam/gemengd eindpunt](https://technet.microsoft.com/library/adfs2-help-endpoints). [Meer informatie](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   Voor de modus Gedeelde iPad in Apple School Manager moeten gebruikers worden ingeschreven zonder gebruikersaffiniteit.
 
-   Voor de modus Gedeelde iPad in Apple School Manager moeten gebruikers worden ingeschreven zonder gebruikersaffiniteit.
+    - **Inschrijven zonder gebruikersaffiniteit**: kies deze optie voor apparaten die niet aan één gebruiker zijn gelieerd, zoals een gedeeld apparaat. Gebruik dit voor apparaten waarmee taken worden uitgevoerd zonder toegang tot lokale gebruikersgegevens. Apps als de bedrijfsportal-app werken niet.
 
-   - **Inschrijven zonder gebruikersaffiniteit**: kies deze optie voor een apparaat dat niet aan één gebruiker is gelieerd, zoals gedeelde apparaten. Gebruikt voor apparaten waarmee taken worden uitgevoerd zonder toegang tot lokale gebruikersgegevens. Apps als de bedrijfsportal-app werken niet.
+5. Als u kiest voor **Inschrijven met gebruikersaffiniteit**, hebt u de optie om gebruikers zich te laten verifiëren met de bedrijfsportal in plaats van de Apple-configuratieassistent.
 
-6. Kies **Instellingen voor apparaatbeheer**. Deze items worden ingesteld tijdens de activering en om deze te wijzigen, moeten de instellingen naar de fabrieksinstellingen worden hersteld. Configureer de volgende profielinstellingen en kies vervolgens **Opslaan**:
+    ![Verificatie met de bedrijfsportal.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
-   ![De beheermodus kiezen](./media/enrollment-program-profile-mode.png)
+    >[!NOTE]
+    >Meervoudige verificatie (MFA) werkt niet tijdens inschrijvingen op Apple School Manager-apparaten als u profieleigenschappen hebt ingesteld op **Gebruiken met gebruikersaffiniteit** en u geen bedrijfsportal gebruikt. Na de inschrijving werkt MFA zoals verwacht op deze apparaten. Op apparaten wordt de gebruiker niet gevraagd het wachtwoord te wijzigen als ze zich de eerste keer aanmelden. Daarnaast wordt gebruikers met verlopen wachtwoorden niet gevraagd hun wachtwoord opnieuw in te stellen tijdens de inschrijving. Deze gebruikers moeten het wachtwoord vanaf een ander apparaat opnieuw instellen.
 
-   - **Onder supervisie**: een beheermodus waarmee standaard meer beheeropties worden ingeschakeld en de activeringsvergrendeling wordt uitgeschakeld. Als u het selectievakje leeg laat, hebt u beperkte beheermogelijkheden.
+6. Kies **Instellingen voor apparaatbeheer** en selecteer of u wilt dat apparaten die dit profiel gebruiken, onder supervisie worden gesteld.
+    Met apparaten **onder supervisie** krijgt u meer beheeropties en de activeringsvergrendeling is standaard uitgeschakeld. Microsoft raadt het gebruik van DEP aan als mechanisme voor het inschakelen van de supervisiemodus, met name voor organisaties die veel iOS-apparaten implementeren.
 
-     - **Vergrendelde registratie** (hiervoor is Onder supervisie als beheermodus vereist): hiermee worden de iOS-instellingen uitgeschakeld waarmee het beheerprofiel kan worden verwijderd. Als u dit selectievakje leeg laat, kan het beheerprofiel uit het menu Instellingen worden verwijderd.
-     - **Gedeelde iPad**: (hiervoor zijn **Registreren zonder gebruikersaffiniteit** en de supervisiemodus vereist.) Hiermee kunnen meerdere gebruikers zich met een beheerde Apple-id aanmelden bij geregistreerde iPads. Beheerde Apple-id's worden gemaakt in de portal Apple School Manager. Meer informatie over [gedeelde iPad](education-settings-configure-ios-shared.md). Controleer ook [de vereisten van Apple voor gedeelde iPad](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+    Gebruikers worden op twee manieren gewaarschuwd dat hun apparaten onder supervisie staan:
 
-   >[!NOTE]
-   >Als **Gebruikersaffiniteit** is ingesteld op **Met gebruikersaffiniteit** of als de modus **Onder supervisie** is ingesteld op **Uit**, wordt de modus Gedeelde iPad uitgeschakeld voor het inschrijvingsprofiel.
+   - Het vergrendelingsscherm meldt: Deze iPhone wordt beheerd door Contoso.
+   - Het scherm **Instellingen** > **Algemeen** > **Over** meldt: Deze iPhone staat onder supervisie. Contoso kan uw internetverkeer bijhouden en de locatie van dit apparaat bepalen'.
 
-        - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
+     > [!NOTE]
+     > Een apparaat dat is ingeschreven zonder supervisie, kan alleen opnieuw worden ingesteld met behulp van de Apple Configurator. Als u het apparaat op deze manier opnieuw wilt instellen, moet u een iOS-apparaat verbinden met een Mac via een USB-kabel. Meer informatie hierover vindt u in de [Apple Configurator-documentatie](http://help.apple.com/configurator/mac/2.3).
 
-    - **Koppelen toestaan**: hiermee wordt aangegeven of iOS-apparaten kunnen worden gesynchroniseerd met computers. Als u **Apple Configurator per certificaat toestaan** kiest, moet u een certificaat kiezen onder **Apple Configurator-certificaten**.
+7. Kies of u vergrendelde inschrijving wilt voor apparaten die dit profiel gebruiken. **Vergrendelde inschrijving** schakelt de iOS-instellingen uit, waardoor het beheerprofiel kan worden verwijderd uit het menu **Instellingen**. Als het apparaat is ingeschreven, kunt u deze instelling niet wijzigen zonder het apparaat terug te zetten naar de fabrieksinstellingen. Bij dergelijke apparaten is het vereist dat de beheermodus **Onder supervisie** is ingesteld op *Ja*. 
 
-      - **Apple Configurator-certificaten**: als u **Apple Configurator per certificaat toestaan** onder **Koppelen toestaan** hebt gekozen, kiest u het Apple Configurator-certificaat dat u wilt importeren.
+8. Als u wilt dat meerdere gebruikers zich kunnen aanmelden op ingeschreven iPads met een beheerde Apple-id, kiest u **Ja** onder **Gedeelde iPad**. Hiervoor moeten **Inschrijven zonder gebruikersaffiniteit** en de modus **Onder supervisie** zijn ingesteld op **Ja**.) Beheerde Apple-id's worden gemaakt in de portal Apple School Manager. Meer informatie over [gedeelde iPad](education-settings-configure-ios-shared.md). Controleer ook [de vereisten van Apple voor gedeelde iPad](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
-7. Kies **Instellingen voor Configuratieassistent**, configureer de volgende profielinstellingen en kies vervolgens **Opslaan**:
+9. Kies of u wilt dat apparaten die dit profiel gebruiken, kunnen **synchroniseren met computers**. Als u **Apple Configurator per certificaat toestaan** kiest, moet u een certificaat kiezen onder **Apple Configurator-certificaten**.
 
-    - **Naam van afdeling**: wordt weergegeven wanneer gebruikers tijdens de activering op **Over configuratie** tikken.
+10. Als u in de vorige stap hebt gekozen voor **Apple Configurator per certificaat toestaan**, moet u een Apple Configurator-certificaat kiezen om te importeren.
 
-    - **Telefoonnummer van afdeling**: wordt weergegeven wanneer de gebruiker tijdens de activering de knop Hulp nodig? klikt.
-    - **Configuratieassistentopties**: als deze instellingen waren uitgesloten in de configuratieassistentopties, kunnen ze naderhand worden ingesteld in het iOS-menu **Instellingen**.
-        - **Wachtwoordcode**: hiermee wordt tijdens de activering gevraagd om de wachtwoordcode. Vraag altijd om een wachtwoordcode tenzij het apparaat wordt beveiligd of de toegang tot het apparaat op een andere manier wordt beheerd (bijvoorbeeld de kioskmodus waarmee op het apparaat maar één app kan worden uitgevoerd).
-        - **Locatieservices**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om de service gevraagd
-        - **Herstellen**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent gevraagd om een iCloud-back-up
-        - **Apple-id**: als deze optie is ingeschakeld, worden gebruikers door iOS gevraagd om een Apple-id wanneer Intune een app zonder een id probeert te installeren. Een Apple-id is vereist voor het downloaden van iOS-apps uit de App Store, waaronder de apps die zijn geïnstalleerd door Intune.
-        - **Voorwaarden**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent gevraagd de voorwaarden van Apple te accepteren
-        - **Touch ID**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
-        - **Apple Pay**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
-        - **In- en uitzoomen**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
-        - **Siri**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd
-        - **Diagnostische gegevens**: als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd.
+11. Kies **OK**.
 
-8. Kies **Maken** op de blade **Inschrijvingsprofiel maken** om de profielinstellingen op te slaan.
+12. Kies **Instellingen voor Configuratieassistent** om de volgende profielinstellingen te configureren: ![Aanpassing van Configuratieassistent](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png).
+
+
+    |                 Instelling                  |                                                                                               Description                                                                                               |
+    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |     <strong>Naam afdeling</strong>     |                                                             Wordt weergegeven wanneer de gebruiker tijdens de activering op <strong>Over configuratie</strong> tikt.                                                              |
+    |    <strong>Telefoonnummer van afdeling</strong>     |                                                          Wordt weergegeven wanneer de gebruiker tijdens de activering de knop <strong>Hulp nodig?</strong> klikt.                                                          |
+    | <strong>Configuratieassistentopties</strong> |                                                     De volgende instellingen zijn optioneel en kunnen naderhand worden geconfigureerd in het iOS-menu <strong>Instellingen</strong>.                                                      |
+    |        <strong>Wachtwoordcode</strong>         | Hiermee wordt tijdens de activering gevraagd om de wachtwoordcode. Vraag altijd om een wachtwoordcode tenzij het apparaat wordt beveiligd of de toegang tot het apparaat op een andere manier wordt beheerd (bijvoorbeeld de kioskmodus waarmee op het apparaat maar één app kan worden uitgevoerd). |
+    |    <strong>Locatieservices</strong>    |                                                                 Als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om de service gevraagd.                                                                  |
+    |         <strong>Herstellen</strong>         |                                                                Als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent gevraagd om een iCloud-back-up.                                                                 |
+    |   <strong>iCloud en Apple-id</strong>   |                         Als deze optie is ingeschakeld, wordt de gebruiker door de Configuratieassistent gevraagd om zich aan te melden met een Apple-id en kan op het scherm Apps en gegevens het apparaat worden hersteld vanuit de iCloud-back-up.                         |
+    |  <strong>Voorwaarden</strong>   |                                                   Als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent gevraagd om de voorwaarden van Apple te accepteren.                                                   |
+    |        <strong>Touch-id</strong>         |                                                                 Als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd.                                                                 |
+    |        <strong>Apple Pay</strong>        |                                                                 Als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd.                                                                 |
+    |          <strong>In- en uitzoomen</strong>           |                                                                 Als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd.                                                                 |
+    |          <strong>Siri</strong>           |                                                                 Als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd.                                                                 |
+    |     <strong>Diagnostische gegevens</strong>     |                                                                 Als deze optie is ingeschakeld, wordt tijdens de activering door Configuratieassistent om deze service gevraagd.                                                                 |
+
+
+13. Kies **OK**.
+
+14. Kies **Maken** om een profiel op te slaan.
 
 ## <a name="connect-school-data-sync"></a>Verbinding maken met Schoolgegevens synchroniseren
-(Optioneel) Apple School Manager biedt ondersteuning voor het synchroniseren van gegevens van het lesrooster met Azure Active Directory (AD) met Microsoft School Data Sync (SDS). Voltooi de volgende stappen voor het gebruik van SDS om schoolgegevens te synchroniseren.
+(Optioneel) Apple School Manager ondersteunt het synchroniseren van gegevens van lesroosters met Azure Active Directory (AD) met behulp van Microsoft School Data Sync (SDS). U kunt slechts één token synchroniseren met SDS. Als u een ander token met School Data Sync hebt ingesteld, wordt SDS verwijderd van het token dat het eerder had. Het huidige token wordt vervangen door een nieuwe verbinding. Voltooi de volgende stappen voor het gebruik van SDS om schoolgegevens te synchroniseren.
 
-1. Kies op de blade **Token voor het inschrijvingsprogramma** de blauwe informatiebanner of **Verbinding maken met SDS**.
-2. Kies **Toestaan dat dit token wordt gebruikt door Microsoft School Data Sync**, zodat deze instelling wordt **Toegestaan**. Met deze instelling kan Intune verbinding maken met SDS in Office 365.
-3. Als u een verbinding tussen Apple School Manager en Azure AD wilt maken, kiest u **Microsoft School Data Sync instellen**. Meer informatie over [het instellen van Microsoft School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1).
-4. Klik op **OK** om de gegevens op te slaan en door te gaan.
+1. Kies **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** in [Intune](https://aka.ms/intuneportal).
+2. Selecteer een Apple School Manager-token en kies vervolgens **School Data Sync**.
+3. Kies onder **School Data Sync** voor **Toestaan**. Met deze instelling kan Intune verbinding maken met SDS in Office 365.
+4. Als u een verbinding tussen Apple School Manager en Azure AD wilt maken, kiest u **Microsoft School Data Sync instellen**. Meer informatie over [het instellen van Microsoft School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1).
+5. Klik op **Opslaan** > **OK**.
 
 ## <a name="sync-managed-devices"></a>Beheerde apparaten synchroniseren
+
 Nu Intune toestemming heeft om uw Apple School Manager-apparaten te beheren, kunt u Intune synchroniseren met de Apple-service om uw beheerde apparaten weer te geven in Intune.
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) achtereenvolgens **Apparaatinschrijving** > **Apple-inschrijving** > **Apparaten voor het inschrijvingsprogramma** > **Synchroniseren**. Op de voortgangsbalk wordt aangegeven hoe lang u moet wachten voordat u opnieuw synchronisatie kunt aanvragen.
+Kies **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor inschrijvingsprogramma** > kies een token uit de lijst > **Apparaten** > **Synchroniseren** in [Intune](https://aka.ms/intuneportal). ![Schermopname van het geselecteerde knooppunt Apparaten voor het inschrijvingsprogramma en een pijl naar de koppeling Synchroniseren.](./media/device-enrollment-program-enroll-ios/image06.png)
 
-   ![Het geselecteerde knooppunt Apparaten voor het inschrijvingsprogramma en de koppeling Synchroniseren die wordt gekozen](./media/enrollment-program-device-sync.png)
-2. Kies **Synchronisatie aanvragen** op de blade **Synchroniseren**. Op de voortgangsbalk wordt aangegeven hoe lang u moet wachten voordat u opnieuw synchronisatie kunt aanvragen.
-
-   ![De blade Synchroniseren met een pijl naar de koppeling Synchronisatie aanvragen](./media/enrollment-program-device-request-sync.png)
-
-   Om te voldoen aan de voorwaarden van Apple voor acceptabel verkeer, worden de volgende beperkingen opgelegd:
-   -    Een volledige synchronisatie kan niet vaker dan eens in de zeven dagen worden uitgevoerd. Tijdens een volledige synchronisatie vernieuwt Intune elk serienummer dat door Apple aan Intune is toegewezen, of het serienummer eerder is gesynchroniseerd of niet. Als een volledige synchronisatie wordt uitgevoerd binnen zeven dagen na de vorige volledige synchronisatie, vernieuwt Intune alleen serienummers die nog niet aanwezig zijn in Intune.
-   -    Een synchronisatieaanvraag krijgt 15 minuten de tijd om te worden uitgevoerd. Gedurende deze tijd of totdat de aanvraag is geslaagd, is de knop **Synchronisatie** uitgeschakeld.
+  Om te voldoen aan de voorwaarden van Apple voor acceptabel verkeer van het inschrijvingsprogramma, worden door Intune de volgende beperkingen opgelegd:
+  - Een volledige synchronisatie kan niet vaker dan eens in de zeven dagen worden uitgevoerd. Tijdens volledige synchronisatie wordt elk Apple-serienummer vernieuwd dat aan Intune is toegewezen. Als een volledige synchronisatie wordt uitgevoerd binnen zeven dagen na de vorige volledige synchronisatie, vernieuwt Intune alleen serienummers die nog niet aanwezig zijn in Intune.
+  - Een synchronisatieaanvraag krijgt 15 minuten de tijd om te worden uitgevoerd. Gedurende deze tijd of totdat de aanvraag is geslaagd, is de knop **Synchronisatie** uitgeschakeld.
+  - Intune synchroniseert elke 24 uur nieuwe en verwijderde apparaten met Apple.
 
 >[!NOTE]
 >U kunt ook Apple School Manager-serienummers toewijzen aan profielen vanaf de blade **Apparaten voor het inschrijvingsprogramma**.
@@ -166,19 +165,10 @@ Nu Intune toestemming heeft om uw Apple School Manager-apparaten te beheren, kun
 ## <a name="assign-a-profile-to-devices"></a>Een profiel aan apparaten toewijzen
 Apple School Manager-apparaten die worden beheerd door Intune, moeten een profiel voor het inschrijvingsprogramma toegewezen krijgen voordat ze worden ingeschreven.
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Apple-inschrijving** en vervolgens **Profielen voor het inschrijvingsprogramma**.
-2. Kies in de lijst **Profielen voor het inschrijvingsprogramma** het profiel dat u wilt toewijzen aan apparaten en kies vervolgens **Apparaattoewijzingen**
-
-   ![Apparaattoewijzingen met Toewijzen geselecteerd.](./media/enrollment-program-device-assign.png)
-
-3. Kies **Toewijzen** en kies vervolgens de Apple School Manager-apparaten die u aan dit profiel wilt toewijzen. U kunt filteren om beschikbare apparaten weer te geven:
-   - **niet-toegewezen**
-   - **alle**
-   - **&lt;profielnaam&gt;**
-4. Kies de apparaten die u wilt toewijzen. Het selectievakje boven de kolom selecteert maximaal 1000 apparaten in de lijst. Klik op **Toewijzen**. Als u meer dan 1000 apparaten wilt registreren, herhaalt u de stappen voor toewijzing totdat aan alle apparaten een inschrijvingsprofiel is toegewezen.
-
-   ![De knop Toewijzen voor het toewijzen van een profiel voor het inschrijvingsprogramma in Intune](media/dep-profile-assignment.png)
+1. Kies in [Intune](https://aka.ms/intuneportal) voor **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor inschrijvingsprogramma** > kies een token uit de lijst.
+2. Kies **Apparaten** > kies apparaten uit de lijst > **Profiel toewijzen**.
+3. Kies onder **Profiel toewijzen** een profiel voor de apparaten en kies vervolgens **Toewijzen**.
 
 ## <a name="distribute-devices-to-users"></a>Apparaten onder gebruikers distribueren
 
-U kunt apparaten in bedrijfseigendom nu distribueren aan gebruikers. Wanneer een iOS Apple School Manager-apparaat wordt ingeschakeld, wordt het door Intune ingeschreven voor beheer. Als het apparaat is geactiveerd en gebruikt wordt, kan het profiel kan niet worden toegepast totdat het apparaat wordt ingesteld op de fabrieksinstellingen.
+U hebt beheer en synchronisatie tussen Apple en Intune ingeschakeld en u hebt een profiel toegewezen om uw Apple School-apparaten te kunnen inschrijven. De apparaten kunnen nu worden uitgedeeld aan de gebruikers. Wanneer een iOS Apple School Manager-apparaat wordt ingeschakeld, wordt het door Intune ingeschreven voor beheer. Als het apparaat is geactiveerd en gebruikt wordt, kan het profiel kan niet worden toegepast totdat het apparaat wordt ingesteld op de fabrieksinstellingen.
