@@ -149,6 +149,6 @@
 #### [Ik wil UAC inschakelen](you-need-to-enable-uac-windows.md)
 #### [Ik wil Windows bijwerken](you-need-to-update-os-build-version-windows.md)
 #### [Ik wil Windows Defender inschakelen](turn-on-defender-windows.md)
-
+## [Apparaat extern vergrendelen vanuit de bedrijfsportal-app voor Windows](remote-lock-your-device-cp-app.md) 
 ## [De Intune-bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
 ### [Uw apparaat op afstand vergrendelen](remote-lock-your-device-cpwebsite.md)
