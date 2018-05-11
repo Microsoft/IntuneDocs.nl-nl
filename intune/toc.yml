@@ -173,7 +173,11 @@
             - name: Scherm Status van inschrijving
               href: windows-enrollment-status.md
         - name: Android-inschrijving instellen
-          href: android-enroll.md
+          items:
+            - name: Android-inschrijving instellen
+              href: android-enroll.md
+            - name: Samsung Knox Mobile Enrollment
+              href: android-samsung-knox-mobile-enroll.md
         - name: iOS-inschrijving instellen
           href: ios-enroll.md
           items:
@@ -462,6 +466,8 @@
           href: conditional-access-intune-common-ways-use.md
         - name: Exchange On-Premises Connector installeren
           href: exchange-connector-install.md
+        - name: Exchange-serviceconnector installeren
+          href: exchange-service-connector-configure.md
         - name: Maken en toewijzen van beleid voor voorwaardelijke toegang
           href: conditional-access-exchange-create.md
         - name: Beleid voor voorwaardelijke toegang overbrengen vanuit de klassieke Intune-portal
