@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9f9051fb393c82031d581f7fec731a3b148cbf2e
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 89a69f7d5cda31658cc9faf068a2a37698fdd93c
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="remove-your-windows-device-from-intune"></a>Uw Windows-apparaat uit Intune verwijderen
 
@@ -61,7 +61,7 @@ Als u uw apparaat hebt geregistreerd bij Intune, maar uw Windows-apparaat niet m
 
 Er zijn twee soorten gegevens die door de bedrijfsportal op uw Windows-apparaat worden opgeslagen:
 
--   **Diagnostische logboeken**: standaardinformatie over de appactiviteit die door Microsoft wordt verzameld, bijvoorbeeld hoe lang de app was geopend of is gecrasht. Deze informatie wordt automatisch gewist wanneer u het apparaat uit de bedrijfsportal verwijdert.
+-   **Diagnostische logboeken**: standaardinformatie over de appactiviteit die door Microsoft wordt verzameld, bijvoorbeeld hoe lang de app was geopend of is gecrasht. Deze informatie wordt automatisch gewist wanneer u de bedrijfsportal-app verwijdert.
 -   **Toepassingscache**: opslaan van bepaalde ondersteuningsbestanden die voor de app benodigd zijn om te kunnen werken, zoals pictogrammen en instellingen.
 
 Er zijn een aantal stappen die u moet uitvoeren om deze gegevens volledig te verwijderen.

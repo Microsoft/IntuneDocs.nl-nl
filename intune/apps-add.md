@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88b8d9aa8e65e0238ab634b23836ee9c02234dd3
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune
 
@@ -155,6 +155,16 @@ Als u een app aan Intune toevoegt, kunt u de gewenste categorie selecteren. Aan 
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Apps die automatisch door Intune zijn toegevoegd
 
 Voorheen bevatte Intune een aantal ingebouwde apps die u snel kon toewijzen. Op basis van klantenfeedback over Intune hebben we deze lijst verwijderd en worden de ingebouwde apps niet langer weergegeven. Als u echter al ingebouwde apps hebt toegewezen, blijven deze apps zichtbaar in de lijst met apps. U kunt de apps desgewenst blijven toewijzen.
+
+## <a name="installing-updating-or-removing-required-apps"></a>Vereiste apps installeren, bijwerken of verwijderen
+
+Intune kan een vereiste app automatisch binnen 24 uur opnieuw installeren, bijwerken of verwijderen in plaats van te wachten op de herbeoordelingscyclus van 7 dagen.
+
+Intune zal een vereiste app op basis van de volgende voorwaarden automatisch opnieuw installeren, bijwerken of verwijderen:
+- Als een eindgebruiker een app verwijdert waarvan u hebt aangegeven dat deze moet zijn geïnstalleerd op het apparaat van de eindgebruiker, zal Intune de app automatisch opnieuw installeren zodra deze planning is verstreken.
+- Als de installatie van een vereiste app is mislukt of als de app niet op het apparaat aanwezig is, evalueert Intune de naleving en wordt de app opnieuw geïnstalleerd zodra deze planning is verstreken.  
+- Een beheerder geeft voor een gebruikersgroep aan dat een app beschikbaar is en de eindgebruiker installeert de app vanuit de bedrijfsportal op het apparaat. Later zal de beheerder de app bijwerken van v1 naar v2. Intune werkt de app bij zodra deze planning is verstreken, mits eerdere versies van de app nog steeds op het apparaat aanwezig zijn.
+- Als de beheerder een verwijderintentie implementeert en de app op het apparaat aanwezig is maar niet kan worden verwijderd, evalueert Intune de naleving en wordt de app verwijderd zodra deze planning is verstreken.   
 
 ## <a name="next-steps"></a>Volgende stappen
 

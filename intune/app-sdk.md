@@ -15,11 +15,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b34963761e9700d6cb742cb90979be30d5ae6b3e
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: bb54772010ef71e7d4bd2252f3886e9a3dd37ef1
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Overzicht van de Intune App SDK
 Met de Intune App SDK voor iOS en Android kan uw app worden in geschakeld voor Intune-beleid voor app-beveiliging. Deze streeft ernaar om het aantal door de app-ontwikkelaar vereiste codewijzigingen zo klein mogelijk te maken. U ziet dat u de meeste van de SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. U kunt de API's gebruiken voor het aanpassen van uw app-gedrag voor functies waarvoor de deelname van uw app is vereist, voor een verbeterde ervaring voor eindgebruikers en IT-beheerders.
@@ -64,7 +64,7 @@ De functie voor het gebruik van meerdere identiteiten helpt bij het oplossen van
 ### <a name="app-protection-without-device-enrollment"></a>App-beveiliging zonder apparaatregistratie
 
 >[!IMPORTANT]
->App-beveiligingsbeleid van Intune zonder apparaatregistratie is beschikbaar voor de Intune App Wrapping Tool, Intune App SDK voor Android, Intune App SDK voor iOS, Intune App SDK Xamarin Bindings en de SDK Cordova-invoegtoepassing.
+>App-beveiligingsbeleid van Intune zonder apparaatregistratie is beschikbaar voor de Intune App Wrapping Tool, Intune App SDK voor Android, Intune App SDK voor iOS en Intune App SDK Xamarin Bindings.
 
 Veel gebruikers met privé-apparaten willen toegang tot bedrijfsgegevens zonder hun privé-apparaat te moeten registreren met een Mobile Device Management-provider (MDM-product). Omdat voor MDM-registratie algemeen beheer van het apparaat is vereist, willen gebruikers de algemene controle over hun persoonlijk apparaat niet altijd aan hun bedrijf geven.
 

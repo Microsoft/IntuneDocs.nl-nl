@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0fcd4b04541593f41abb35be6558be2375a0131
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -67,10 +67,9 @@ De SDK's voor Intune-apps voor systeemeigen iOS en Android worden gehost op een 
 * [SDK voor Intune-apps voor iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [SDK voor Intune-apps voor Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-Als uw app een Xamarin- of Cordova-app is, gebruikt u de volgende SDK-varianten:
+Als uw app een Xamarin-app is, gebruikt u de volgende SDK-variant:
 
 * [Microsoft Intune App SDK Xamarin Bindings](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
-* [Intune App SDK Cordova-invoegtoepassing](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Het is verstandig om u te registreren voor een GitHub-account waarmee u splitsingen en pulls vanuit de opslagplaatsen kunt uitvoeren. Met GitHub kunnen ontwikkelaars communiceren met het productteam, problemen melden en snel antwoord ontvangen, opmerkingen bij de release bekijken en feedback naar Microsoft verzenden. Voor vragen over de GitHub van de Intune App SDK kunt u contact opnemen met msintuneappsdk@microsoft.com.
 
@@ -81,8 +80,6 @@ U hebt een van de volgende handleidingen voor ontwikkelaars nodig om de App Intu
 * **[Ontwikkelaarshandleiding voor Intune App SDK voor iOS](app-sdk-ios.md)**: in dit document wordt u stapsgewijs begeleid bij het geschikt maken van uw systeemeigen iOS-app voor de Intune App SDK.
 
 * **[Ontwikkelaarshandleiding voor Intune App SDK voor Android](app-sdk-android.md)**: in dit document wordt u stapsgewijs begeleid bij het geschikt maken van uw systeemeigen Android-app voor de Intune App SDK.
-
-* **[Handleiding Intune App SDK Cordova-invoegtoepassing](app-sdk-cordova.md)**: dit document bevat informatie over het bouwen van iOS- en Android-apps met Cordova voor het Intune-beleid voor app-beveiliging.
 
 * **[Handleiding Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)**: dit document bevat informatie over het bouwen van iOS- en Android-apps met Xamarin voor het Intune-beleid voor app-beveiliging.
 

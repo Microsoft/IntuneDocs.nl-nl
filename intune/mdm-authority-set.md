@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e15e1678fa93269eb650f8a5684091b430ebf1cd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f903e9dfe5fb30f45806aac5694171814492f2e
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>De instantie voor het beheer van mobiele apparaten instellen
 
@@ -62,6 +62,19 @@ Verschillende platforms hebben de volgende eisen om inschrijving mogelijk te mak
 - **Windows** - (optioneel) Schakel [Automatische inschrijving](windows-enroll.md) of [bulkinschrijving](windows-bulk-enroll.md) in
 - **macOS** - (vereist) [Haal een Apple MDM-pushcertificaat op](apple-mdm-push-certificate-get.md).
 
+### <a name="workflow-of-intune-administration-ui"></a>Werkstroom van de Intune-beheergebruikersinterface
+Als Android- of Apple-apparaatbeheer is ingeschakeld, verstuurt Intune apparaat- en gebruikersgegevens, zodat deze kunnen worden geïntegreerd in de externe services voor het beheren van apparaten.
+
+Scenario's waarin toestemming moet worden gegeven om gegevens te delen, zijn:
+- Wanneer u Android for Work inschakelt,
+- Wanneer u Apple MDM-pushcertificaten inschakelt en uploadt,
+- Wanneer u een van de Apple-services zoals Device Enrollment Program, School Manager of Volume Purchasing Program inschakelt.
+
+In elk geval wordt de toestemming beperkt tot het uitvoeren van een MDM-service, bijvoorbeeld om te bevestigen dat een IT-beheerder heeft goedgekeurd dat Google- of Apple-apparaten worden ingeschreven. Documentatie over welke informatie wordt gedeeld wanneer de nieuwe werkstromen live gaan, is beschikbaar op de volgende locaties:
+- [Gegevens die Intune naar Google verzendt](https://aka.ms/Data-intune-sends-to-google)
+- [Gegevens die Intune naar Apple verzendt](https://aka.ms/data-intune-sends-to-apple)
+
+Zie [Trust Center: uw AVG-naleving beoordelen](https://aka.ms/trust_center_info) voor meer informatie over de AVG-naleving van Microsoft.
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobiele apparaten opschonen na de verloopdatum van het MDM-certificaat
 

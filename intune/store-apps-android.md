@@ -1,5 +1,5 @@
 ---
-title: Android Store-apps toevoegen aan Microsoft Intune
+title: Android Store-apps aan Microsoft Intune toevoegen
 titleSuffix: ''
 description: Meer informatie over hoe u Android Store-apps toevoegt aan Microsoft Intune.
 keywords: ''
@@ -15,42 +15,44 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ece6edee891b147ad2124b987239da6af8e1bc8d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 685ddf806bff865930de70b2d1925fb9b463b173
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Android Store-apps toevoegen aan Microsoft Intune
+# <a name="add-android-store-apps-to-microsoft-intune"></a>Android Store-apps aan Microsoft Intune toevoegen
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Voordat u een app toewijst aan een apparaat of een groep gebruikers, moet u de app toevoegen aan Microsoft Intune. Met de volgende stappen kunt u een Android Store-app toevoegen aan Intune via Azure Portal.
+Voordat u een app toewijst aan een apparaat of een groep gebruikers, moet u de app toevoegen aan Microsoft Intune. Met de volgende stappen kunt u een Android Store-app toevoegen aan Intune via Azure Portal:
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies **Mobiele apps** in het deelvenster **Intune**.
-4. In de workload **Mobiele apps** kiest u **Apps** in het gedeelte **Beheren**.
-5. Kies **Toevoegen** boven de lijst met apps.
-6. In het deelvenster **App toevoegen** selecteert u **Android** bij de beschikbare typen **Store-apps**.
-7. Selecteer **Configureren** om de volgende app-gegevens te configureren (afhankelijk van de app die u hebt gekozen, zijn sommige waarden in dit deelvenster mogelijk automatisch ingevuld):
-    - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal zal worden weergegeven. Zorg ervoor dat alle app-namen die u gebruikt, uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
-    - **Beschrijving**: voer een beschrijving in voor de app. Deze beschrijving wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Uitgever**: voer de naam van de uitgever of de app in.
-    - **Appstore-URL**: voer voor de app die u wilt maken de URL naar de appstore in.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services** > **Intune**.  
+    Intune bevindt zich in de sectie **Controle en beheer**.
+1. Selecteer **Mobiele apps** in het deelvenster **Intune**.
+2. In het werkbelastingvenster **Mobiele apps**, onder **Beheren**, selecteert u **Apps**.
+3. Selecteer **Toevoegen**.
+4. In het deelvenster **App toevoegen** selecteert u **Android** bij de beschikbare typen **Store-apps**.
+5. Als u de app-gegevens wilt configureren, selecteert u **Configureren** en geeft u de volgende informatie op.  
+    Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden mogelijk automatisch ingevuld.
+    - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal moet worden weergegeven. Zorg ervoor dat u alleen unieke app-namen gebruikt. Als u twee dezelfde app-namen gebruikt, wordt voor gebruikers slechts één naam in de bedrijfsportal weergegeven.
+    - **Beschrijving**: voer een beschrijving in voor de app. Deze beschrijving wordt voor gebruikers weergegeven in de bedrijfsportal.
+    - **Uitgever**: voer de naam van de uitgever van de app in.
+    - **Appstore-URL**: voer voor de app die u wilt maken de URL naar de App Store in.
     - **Minimumversie van het besturingssysteem**: selecteer in de lijst de minimumversie van het besturingssysteem waarin de app kan worden geïnstalleerd. Als u de app toewijst aan een apparaat met een lager besturingssysteem, wordt de app niet geïnstalleerd.
-    - **Categorie** (optioneel): selecteer een of meer van de ingebouwde app-categorieën of selecteer een categorie die u hebt gemaakt. Hierdoor kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
-    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: hiermee wordt de app duidelijk zichtbaar op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
-    - **Informatie-URL** (optioneel): voer de URL in van een website die informatie over deze app bevat (optioneel). Deze URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Privacy-URL** (optioneel): voer de URL in van een website die privacyinformatie over deze app bevat. Deze URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Ontwikkelaar** (optioneel): voer de naam in van de app-ontwikkelaar.
-    - **Eigenaar** (optioneel): voer een naam in voor de eigenaar van deze app, bijvoorbeeld **HR-afdeling**.
-    - **Opmerkingen** (optioneel): voer de opmerkingen in die u aan deze app wilt koppelen.
-    - **Pictogram** (optioneel): upload een pictogram dat aan de app wordt gekoppeld. Dit pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-8. Klik op **OK** wanneer u klaar bent met het opgeven van informatie over de app.
-9. Klik op **Toevoegen** om de app toe te voegen.
+    - **Categorie**: selecteer een of meer van de ingebouwde app-categorieën of een categorie die u hebt gemaakt (optioneel). Hiermee kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
+    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: selecteer deze instelling om het app-pakket prominent weer te geven op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
+    - **Informatie-URL**: voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
+    - **Privacy-URL**: voer de URL in van een website die privacyinformatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
+    - **Ontwikkelaar**: voer de naam in van de app-ontwikkelaar (optioneel).
+    - **Eigenaar**: voer een naam in voor de eigenaar van deze app, bijvoorbeeld *HR-afdeling* (optioneel).
+    - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen (optioneel).
+    - **Pictogram**: upload een pictogram dat aan de app wordt gekoppeld (optioneel). Dit pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
+1. Selecteer **OK**.
+2. Selecteer **Toevoegen**.
 
-De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. 
+De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u selecteert. 
 
 ## <a name="next-steps"></a>Volgende stappen
 

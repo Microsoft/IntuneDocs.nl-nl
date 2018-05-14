@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 388c9f69b6cbee1353b0e21121a47576b58b3ba6
-ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
+ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekende problemen in Microsoft Intune
 
@@ -46,6 +46,14 @@ Wanneer u van de Intune-portal naar Azure Portal migreert, ziet u mogelijk een n
 U kunt geen statusinformatie weergeven voor beleidsregels die zijn gemigreerd vanuit de klassieke Azure-portal naar Azure Portal. U kunt rapporten voor dit beleid echter blijven bekijken in de klassieke portal. Als u statusinformatie voor gemigreerde configuratiebeleid wilt weergeven, maakt u ze opnieuw in Azure Portal.
 
 ## <a name="apps"></a>Apps
+
+
+### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Meerdere installatieprompts voor apps voor bepaalde VPP-apps
+Mogelijk ziet u meerdere installatieprompts voor bepaalde VPP-apps die al zijn geïnstalleerd op de apparaten van eindgebruikers. Dit probleem doet zich voor als de optie **Automatic app updates** (Automatische app-updates) hebt ingesteld op **Aan** voor het VPP-token dat u naar de Intune Azure-portal hebt geüpload.    
+
+Om dit probleem op te lossen, kunt u de optie **Automatic app updates** (Automatische app-update) voor het VPP-token uitschakelen. Ga hiervoor naar Azure Portal en open Microsoft Intune. Selecteer vanuit Intune **Mobiele apps** > **iOS VPP-tokens**. Selecteer vervolgens het VPP-token dat de getroffen app heeft geïmplementeerd en selecteer **Bewerken** > **Automatic app updates (Automatische app-updates)** > **Uit** > **Opslaan**. Als alternatieve oplossing kunt u ook de implementatie van de getroffen app als VPP-app stoppen. Hiermee maakt u een einde aan de prompts.    
+
+Dit is een bekend probleem in de huidige versie. We hebben een geplande fix waarmee dit probleem wordt opgelost. Wanneer de oplossing is geïmplementeerd, zien uw gebruikers niet langer meerdere installatieprompts voor apps.
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>iOS-apps die zijn gekocht via het volume-aankoopprogramma, zijn alleen beschikbaar in de standaardtaal van de Intune-tenant
 iOS-apps die zijn gekocht via het volume-aankoopprogramma, worden alleen in de taal van uw Intune-account weergegeven en kunnen alleen voor die taal worden toegewezen. Intune synchroniseert alleen apps met dezelfde iTunes-landinstelling als het account van de Intune-tenant. Als u bijvoorbeeld een app koopt die alleen beschikbaar is in de Amerikaanse store, maar u een Duits Intune-account hebt, wordt die app niet weergegeven in Intune.

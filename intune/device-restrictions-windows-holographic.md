@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0784aeb1dc1022b4be824c2f858f9525d03918
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Instellingen voor apparaatbeperkingen voor Windows Holographic for Business in Intune
 
@@ -68,7 +68,7 @@ De volgende instellingen voor apparaatbeperking worden ondersteund op apparaten 
 
 - **Systeemtijd wijzigen**: hiermee voorkomt u dat de eindgebruiker de datum en tijd van het apparaat wijzigt.
 
-## <a name="kiosk-preview"></a>Kiosk (preview)
+## <a name="kiosk"></a>Kiosk
 
 Op een kioskapparaat wordt doorgaans een specifieke app uitgevoerd. Gebruikers hebben geen toegang tot functies op het apparaat buiten de kiosk-app.
 
@@ -76,6 +76,9 @@ Op een kioskapparaat wordt doorgaans een specifieke app uitgevoerd. Gebruikers h
 
   - **Niet geconfigureerd** (standaard): door het beleid wordt geen kioskmodus ingeschakeld. 
   - **Kiosk voor één enkele app**: volgens het profiel kan het apparaat slechts één enkele app uitvoeren. Wanneer de gebruiker zich aanmeldt, wordt een specifieke app gestart. Deze modus voorkomt ook dat de gebruiker nieuwe apps kan openen of de actieve app kan wijzigen.
+  - **Kiosk voor meerdere apps**: volgens het profiel kan het apparaat meerdere apps uitvoeren. Alleen de apps die u toevoegt, zijn beschikbaar voor de gebruiker. Het voordeel van een kiosk voor meerdere apps, of apparaat voor een vast doel, is dat het een eenvoudige ervaring biedt voor gebruikers door alleen toegang te geven tot apps die ze nodig hebben. En apps die ze niet nodig hebben, uit hun weergave verwijderen. 
+  
+    Wanneer u apps toevoegt voor een kioskervaring met meerdere apps, kunt u ook een opmaakbestand voor het startmenu toevoegen. [Opmaakbestand voor startmenu](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune) bevat voorbeeld-XML die kan worden gebruikt in Intune. 
 
 #### <a name="single-app-kiosks"></a>Kiosken voor één enkele app
 Voer de volgende instellingen in:

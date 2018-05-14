@@ -5,7 +5,7 @@ description: Met Microsoft Intune app-beveiligingsbeleid voor Windows-gegevensbe
 keywords: ''
 author: msmimart
 ms.author: mimart
-manager: doubeby
+manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
 ms.prod: ''
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7273a29eea9cd9b55e998302de2bc57d26d34e04
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f08dde25de5962eaaa11487a367b2895c6c047d4
+ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune
 
@@ -33,7 +33,7 @@ U moet enkele concepten begrijpen voor het toevoegen van WIP-beleid:
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Lijst met toegestane en vrijgestelde apps
 
--   **Toegestane apps**: dit zijn de apps die zich aan dit beleid moeten houden.
+-   **Beschermde apps**: dit zijn de apps die zich aan dit beleid moeten houden.
 
 -   **Vrijgestelde apps**: deze apps zijn vrijgesteld van dit beleid en hebben zonder beperkingen toegang tot bedrijfsgegevens.
 
@@ -63,7 +63,7 @@ Nadat u Intune hebt ingesteld in uw organisatie, kunt u specifiek WIP-beleid mak
 2. Kies **Alle services** > **Intune**.
 3. Selecteer **Mobiele apps** op de blade **Microsoft Intune**.
 4. Selecteer **App-beveiligingsbeleid** op de blade **Mobiele apps**.
-5. Klik op **Een beleid toevoegen** om de blade **Een beleid toevoegen** weer te geven.
+5. Selecteer **Een beleid toevoegen** om de blade **Een beleid toevoegen** weer te geven.
 6. Voeg de volgende waarden toe:
     - **Naam:** typ een naam (vereist) voor het nieuwe beleid.
     - **Beschrijving:** (optioneel) typ een beschrijving.
@@ -71,7 +71,7 @@ Nadat u Intune hebt ingesteld in uw organisatie, kunt u specifiek WIP-beleid mak
     - **Status van de inschrijving:** kies **Zonder inschrijving** als status van de inschrijving voor het beleid.
 7.  Kies **Maken**. Het beleid wordt gemaakt en weergegeven in de tabel op de blade **App-beveiligingsbeleid**.
 
-## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>Aanbevolen apps toevoegen aan de lijst met toegestane apps
+## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Aanbevolen apps toevoegen aan de lijst met beschermde apps
 
 1. Selecteer **Mobiele apps** op de blade **Microsoft Intune**.
 2. Selecteer **App-beveiligingsbeleid** op de blade **Mobiele apps**.
@@ -82,7 +82,7 @@ Nadat u Intune hebt ingesteld in uw organisatie, kunt u specifiek WIP-beleid mak
 7. Klik op **OK**. De blade **Beveiligde apps** wordt bijgewerkt met alle geselecteerde apps.
 8. Klik op **Opslaan**.
 
-## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Een Store-app toevoegen aan de lijst met toegestane apps
+## <a name="add-a-store-app-to-your-protected-apps-list"></a>Een Store-app toevoegen aan de lijst met beschermde apps
 
 **Een Store-app toevoegen**
 1. Selecteer **Mobiele apps** op de blade **Microsoft Intune**.
@@ -95,7 +95,7 @@ Nadat u Intune hebt ingesteld in uw organisatie, kunt u specifiek WIP-beleid mak
 9. Klik op **OK**. De blade **Beveiligde apps** wordt bijgewerkt met alle geselecteerde apps.
 10. Klik op **Opslaan**.
 
-## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Een bureaublad-app toevoegen aan de lijst met toegestane apps
+## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Een desktop-app toevoegen aan de lijst met beschermde apps
 
 **Een bureaublad-app toevoegen**
 1. Selecteer **Mobiele apps** op de blade **Microsoft Intune**.
@@ -118,7 +118,7 @@ WIP Learning is een rapport waarmee u uw apps met WIP-functionaliteit en uw voor
 <!-- 1631908 -->
 Er wordt informatie over WIP-apps weergegeven en u kunt een overzicht bekijken van de apparaten die zakelijke gegevens hebben gedeeld met websites. Met deze informatie kunt u bepalen welke websites er moeten worden toegevoegd aan WIP-beleid voor groepen en gebruikers. In het overzicht ziet u welke website-URL's worden gebruikt door apps waarvoor WIP is ingeschakeld.
 
-Wanneer u met apps met WIP-functionaliteit en voor WIP onbekende apps werkt, wordt het aanbevolen dat u start met **Stil** of **Onderdrukkingen toestaan** als u met een kleine groep controleert of de juiste apps in de lijst met toegestane apps staan. Vervolgens kunt u uw uiteindelijke afdwingingsbeleid wijzigen via **Blokkeren**.
+Wanneer u met apps met WIP-functionaliteit en voor WIP onbekende apps werkt, wordt het aanbevolen dat u start met **Stil** of **Onderdrukkingen toestaan** als u met een kleine groep controleert of de juiste apps in de lijst met beschermde apps staan. Vervolgens kunt u uw uiteindelijke afdwingingsbeleid wijzigen via **Blokkeren**.
 
 ### <a name="what-are-the-protection-modes"></a>Wat zijn de beveiligingsmodi ?
 

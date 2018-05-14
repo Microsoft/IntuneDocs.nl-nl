@@ -1,12 +1,11 @@
 ---
-title: VPN per app in Microsoft Intune instellen voor iOS-apparaten
-titleSuffix: ''
-description: Specificeer welke beheerde apps uw virtueel particulier netwerk (VPN) mogen gebruiken op iOS-apparaten die met Intune worden beheerd.
+title: VPN-instellingen per app instellen voor iOS-apparaten in Microsoft Intune - Azure | Microsoft Docs
+description: Bekijk de voorwaarden, maak een groep aan voor VPN-gebruikers (Virtual Private Network), voeg een SCEP-certificaatprofiel toe, configureer VPN-profiel per app en wijs enkele apps toe aan het VPN-profiel in Microsoft Intune op iOS-apparaten. Vermeld ook de stappen om de VPN-verbinding op het apparaat te verifiëren.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +14,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46857dcf24befb0cf552769d48b99020c36e3e5b
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 3a467983b0d6ce94c32080f4d5cd78683471fb58
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>VPN per app instellen in Intune voor iOS-apparaten
 
@@ -28,6 +27,7 @@ U kunt specificeren welke beheerde apps uw virtueel particulier netwerk (VPN) mo
 Per-App VPN is momenteel beschikbaar voor de volgende providers: 
 
  - Checkpoint Remote Access VPN
+ - Cisco AnyConnect
  - F5
  - Pulse Connect Secure
  - SonicWall
@@ -49,8 +49,8 @@ Exporteer het certificaat en voeg de CA toe.
 
 Maak of kies in Azure Active Directory (Azure AD) een bestaande groep die de leden gaat bevatten die toegang hebben tot het VPN per app.
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
 2. Kies **Groepen** en klik op **Nieuwe groep**.
 3. Selecteer een **groepstype** voor de groep. 
 3. Typ de **groepsnaam** van de groep. 
@@ -64,8 +64,8 @@ Maak of kies in Azure Active Directory (Azure AD) een bestaande groep die de led
 
 Importeer het door de CA uitgegeven basiscertificaat van de VPN-server in een profiel dat in Intune is gemaakt. Op basis van het vertrouwde certificaatprofiel vertrouwt het iOS-apparaat automatisch de CA die door de VPN-server wordt voorgelegd.
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
 2. Kies **Apparaatconfiguratie** en klik vervolgens op **Profielen**.
 3. Klik op **Profiel maken**. Doe het volgende in **Profiel maken**:
     1. Typ de **naam**.
@@ -81,8 +81,8 @@ Importeer het door de CA uitgegeven basiscertificaat van de VPN-server in een pr
 
 Op basis van het vertrouwde certificaatprofiel vertrouwt iOS automatisch de VPN-server. De SCEP-certificaat geeft referenties van de iOS-VPN-client door aan de VPN-server. Door het certificaat kan het apparaat op de achtergrond verifiëren zonder dat de gebruiker van het iOS-apparaat om een gebruikersnaam en wachtwoord wordt gevraagd. 
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
 2. Kies **Apparaatconfiguratie** en klik vervolgens op **Profielen**.
 3. Klik op **Profiel maken**. Doe het volgende in **Profiel maken**:
     1. Typ de **naam**.
@@ -108,8 +108,8 @@ Op basis van het vertrouwde certificaatprofiel vertrouwt iOS automatisch de VPN-
 
 Het VPN-profiel bevat het SCEP-certificaat met de referenties van de client, de verbindingsgegevens voor de VPN-verbinding en de VPN per app-vlag voor het inschakelen van de functie VPN per app voor gebruik door de iOS-toepassing.
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
 2. Kies **Apparaatconfiguratie** en klik vervolgens op **Profielen**.
 3. Klik op **Profiel maken**. Doe het volgende in **Profiel maken**:
     1. Typ de **naam**.
@@ -139,7 +139,7 @@ Het VPN-profiel bevat het SCEP-certificaat met de referenties van de client, de 
 Na het toevoegen van uw VPN-profiel moet u de app en de Azure AD-groep (Microsoft Azure Active Directory) aan het profiel koppelen.
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
 2. Kies **Mobiele apps**.
 3. Klik op **Apps**.
 4. Selecteer de app in de lijst met apps.
@@ -167,6 +167,7 @@ Wanneer uw VPN per app is geconfigureerd en aan uw app is gekoppeld, controleert
  - Zorg ervoor dat u de ondersteunde VPN-app van derden hebt geïnstalleerd. De volgende VPN-apps worden ondersteund:
     - Pulse Secure
     - Controlepunt
+    - Cisco AnyConnect
     - F5
     - SonicWall
 

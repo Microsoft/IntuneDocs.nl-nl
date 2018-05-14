@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f9cc117925f59c9fb7c55d0ff10aedf09d26f93
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: 5c9f81761e7e24393471f44da4cf619f017e9bbd
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -74,35 +74,35 @@ Controleer de [licentievoorwaarden](https://github.com/msintuneappsdk/intune-app
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
 
-## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>App-beveiligingsbeleid inschakelen in uw mobiele Android-app
-Voeg het [Microsoft.Intune.MAM.Xamarin.Android NuGet-pakket](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) toe aan uw Xamarin.Android-project.
+## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Intune App-beveiligingsbeleid inschakelen in uw mobiele Android-app
 
-Voor Xamarin.Android-apps moet u de [Intune App SDK voor Android-ontwikkelaarshandleiding](app-sdk-android.md) volledig lezen en volgen, inclusief het vervangen van klasse, methoden en activiteiten door hun MAM-equivalent op basis van de [tabel](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) in de handleiding. 
+### <a name="xamarinandroid-integration"></a>Xamarin.Android-integratie
 
-> [!NOTE]
-> Als uw app geen definitie van een `android.app.Application`-klasse bevat, moet u een klasse maken en zorgen voor overname van `MAMApplication`.
+1. Voeg de nieuwste versie van het [Microsoft.Intune.MAM.Xamarin.Android NuGet-pakket](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) toe aan uw Xamarin.Android-project. Hierdoor krijgt u de benodigde referenties waarmee Intune uw toepassing kan inschakelen.
+
+2. Lees en volg de [Intune App SDK for Android Developers Guide](app-sdk-android.md) volledig en let daarbij vooral op het volgende:
+    1. De [sectie voor gehele klasse- en methodevervangingen](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent). 
+    2. De [MAMApplication-sectie](app-sdk-android.md#mamapplication). Controleer of uw subklasse op de juiste manier is voorzien van het `[Application]`-kenmerk en de `(IntPtr, JniHandleOwnership)`-constructor overschrijdt.
+    3. De [sectie ADAL-integratie](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) als uw app verificatie op basis van AAD uitvoert.
+    4. De [sectie MAM-WE-registratie](app-sdk-android.md#app-protection-policy-without-device-enrollment) als u van plan bent om beleid te verkrijgen via de MAM-service in uw toepassing.
 
 > [!NOTE]
 > Wanneer u probeert vergelijkbare API’s te vinden in de [Intune App SDK voor Android-ontwikkelaarshandleiding](app-sdk-android.md) in de `Microsoft.Intune.MAM.Xamarin.Android`-bindingen of codefragmenten uit de handleiding omzet, moet u zich ervan bewust zijn dat de bindingengenerator van Xamarin de Android-API’s op de volgende manieren aanpast:
-> * Alle id's worden omgezet naar Pascale case (com.microsoft.foo -> Com.Microsoft.Foo)
+> * Alle id’s worden geconverteerd naar Pascal-hoofdlettergebruik (com.foo.bar -> Com.Foo.Bar)
 > * Alle get/set-bewerkingen worden omgezet naar eigenschapsbewerkingen (bijvoorbeeld Foo.getBar() -> Foo.Bar, Foo.setBar("zap") -> Foo.Bar = "zap")
 > * Alle interfaces hebben het teken I als voorvoegsel bij de naam (FooInterface -> IFooInterface)
 
-Voor apps die gebruikmaken van Xamarin Forms of andere UI-frameworks is het hulpprogramma `Microsoft.Intune.MAM.Remapper` meegeleverd. Dit hulpprogramma voert de klassevervanging voor u uit. Ga als volgt te werk als u dit wilt gebruiken:
+### <a name="xamarinforms-integration"></a>Xamarin.Forms-integratie
 
-1.  Voeg het [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet-pakket toe aan uw project.
+**Naast het uitvoeren van alle bovenstaande stappen** hebben we voor `Xamarin.Forms`-toepassingen het `Microsoft.Intune.MAM.Remapper`-pakket beschikbaar gesteld. This pakket voert klassevervanging voor u uit door `MAM`-klassen in te voeren in de klassehiërarchie van veel gebruikte `Xamarin.Forms`-klassen zoals `FormsAppCompatActivity` en `FormsApplicationActivity`, zodat u die klassen kunt blijven gebruiken door overschrijvingen op te geven voor de equivalente MAM-functies zoals `OnMAMCreate` en `OnMAMResume`. Ga als volgt te werk als u dit wilt gebruiken:
 
-2.  Stel de compileeractie van het `remapping-config.json`-bestand dat is opgenomen in het Nuget-pakket in op **RemappingConfigFile**. Het meegeleverde `remapping-config.json` werkt alleen met Xamarin.Forms. Raadpleeg het Leesmij-bestand in het Remapper NuGet-pakket voor andere UI-frameworks.
+1.  Voeg het [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet-pakket toe aan uw project. Hierdoor worden de Intune APP SDK Xamarin-bindingen automatisch toegevoegd als deze niet al hebt ingevoegd.
 
-3.  Voeg een aanroep naar Xamarin.Forms.Forms.Init (Context, bundel) toe aan de OnMAMCreate-functie van uw MAMApplication, omdat uw toepassing met behulp van Intune-beheer op de achtergrond kan worden gestart.
-
-4.  Voer de rest van de stappen in [Intune App SDK voor Android-ontwikkelaarshandleiding](app-sdk-android.md) uit die van toepassing zijn op uw app.
+2.  Voeg een aanroep toe tot `Xamarin.Forms.Forms.Init(Context, Bundle)` in de functie `OnMAMCreate` van de `MAMApplication`-klasse die u hebt gemaakt in de bovenstaande stap 2.2. Dit is benodigd omdat uw toepassing met Intune-beheer op de achtergrond kan worden gestart.
 
 > [!NOTE]
-> De compileerbewerking van remapping-config.json kan in sommige gevallen worden hersteld tijdens het bijwerken van het Microsoft.Intune.MAM.Remapper.Tasks-pakket, waardoor uw compilaties mislukken.
+> Omdat er met deze bewerking een afhankelijkheid wordt herschreven die Visual Studio gebruikt voor automatische aanvulling met behulp van Intellisense, moet u Visual Studio mogelijk opnieuw opstarten nadat de remapper voor de eerste keer wordt uitgevoerd, om ervoor te zorgen dat Intellisense de wijzigingen herkent. 
 
-## <a name="next-steps"></a>Volgende stappen
-
-U hebt de basisstappen voor het instellen van uw app voor Intune-beheer voltooid. Nu kunt u de stappen in de integratiehandleidingen voor elk van de hierboven vermelde platforms uitvoeren.
+## <a name="support"></a>Support
 
 Als uw organisatie een bestaande Intune-klant is, kunt u contact opnemen met uw ondersteuningsmedewerker van Microsoft om een ondersteuningsticket te openen en een probleem te melden op de [Github-problemenpagina](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues). U wordt zo snel mogelijk geholpen. 

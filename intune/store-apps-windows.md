@@ -15,40 +15,45 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 511cf2e01a2f5db93f0e0db9dbe2a32326c17723
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: baa9b20ee8820915f3cdee6ee26ec2429c93d63b
+ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Microsoft Store-apps toevoegen aan Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Voordat u apps kunt toewijzen, controleren, configureren of beveiligen, moet u ze aan Intune toevoegen. Aan de hand van de volgende stappen kunt u een Microsoft Store-app toevoegen aan Microsoft Intune.
+Voordat u apps kunt toewijzen, controleren, configureren of beveiligen, moet u ze aan Intune toevoegen. 
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies **Mobiele apps** in het deelvenster **Intune**.
-4. Kies **Beheren** > **Apps** in de workload **Mobiele apps**.
-5. Kies **Toevoegen** boven de lijst met apps.
+## <a name="add-an-app-to-intune"></a>Een app toevoegen aan Intune
+U kunt op de volgende manier een Microsoft Store-app toevoegen aan Intune:
+
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services** > **Intune**.  
+    Intune bevindt zich in de sectie **Controle en beheer**.
+3. Selecteer **Mobiele apps** in het deelvenster **Intune**.
+4. In het werkbelastingvenster **Mobiele apps**, onder **Beheren**, selecteert u **Apps**.
+5. Selecteer **Toevoegen** in het deelvenster **Apps**.
 6. Kies in het deelvenster **App toevoegen** een **app-type** van **Windows** en kies **App-gegevens**.
-7. Configureer de volgende gegevens in het deelvenster **App-gegevens**. Klik wanneer u klaar bent op **OK**. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden in het deelvenster mogelijk automatisch ingevuld:
-    - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal zal worden weergegeven. Zorg ervoor dat alle app-namen die u gebruikt, uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
-    - **Beschrijving**: typ een beschrijving voor de app die u wilt weergeven voor gebruikers in de bedrijfsportal.
-    - **Uitgever**: voer de naam van de uitgever of de app in.
-    - **Appstore-URL**: voer voor de app die u wilt maken de URL naar de appstore in.
-    - **Categorie (optioneel)**: selecteer één of meer van de categorieën ingebouwde apps of selecteer een categorie die u zelf hebt gemaakt. Op die manier is het eenvoudiger voor gebruikers om de app te vinden wanneer ze in de bedrijfsportal bladeren.
-    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: hiermee wordt de app duidelijk zichtbaar op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
-    - **Informatie-URL**: voer de URL in van een website die informatie over deze app bevat (optioneel). Deze URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Privacy-URL**: voer de URL in van een website die privacyinformatie over deze app bevat (optioneel). Deze URL wordt weergegeven voor gebruikers in de bedrijfsportal.
+7. Voeg in het deelvenster **App-gegevens** de app-gegevens toe. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden in het deelvenster mogelijk automatisch ingevuld:
+    - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal moet worden weergegeven. Zorg ervoor dat u alleen unieke app-namen gebruikt. Als u twee dezelfde app-namen gebruikt, wordt voor gebruikers slechts één naam in de bedrijfsportal weergegeven.
+    - **Beschrijving**: voer een beschrijving in voor de app. Deze beschrijving wordt voor gebruikers weergegeven in de bedrijfsportal.
+    - **Uitgever**: voer de naam van de uitgever van de app in.
+    - **URL App Store**: typ de URL naar de App Store voor de app die u wilt maken.
+    - **Categorie**: selecteer een of meer van de ingebouwde app-categorieën of een categorie die u hebt gemaakt (optioneel). Hiermee kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
+    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: selecteer deze instelling om het app-pakket prominent weer te geven op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
+    - **Informatie-URL**: voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
+    - **Privacy-URL**: voer de URL in van een website die privacyinformatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
     - **Ontwikkelaar**: voer de naam in van de app-ontwikkelaar (optioneel).
-    - **Eigenaar**: voer een naam in voor de eigenaar van deze app, bijvoorbeeld **HR-afdeling** (optioneel).
-    - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
-    - **Logo**: upload een pictogram om aan de app te koppelen. Dit pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-8. Wanneer u klaar bent, kiest u **Toevoegen** in het deelvenster **App toevoegen**.
+    - **Eigenaar**: voer een naam in voor de eigenaar van deze app, bijvoorbeeld *HR-afdeling* (optioneel).
+    - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen (optioneel).
+    - **Pictogram**: upload een pictogram dat aan de app wordt gekoppeld (optioneel). Dit pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
+8. Selecteer **OK**.
+9. Selecteer **Toevoegen**.
 
-De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. 
+De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u selecteert. 
 
 ## <a name="next-steps"></a>Volgende stappen
 - [Apps aan groepen toewijzen](apps-deploy.md)
