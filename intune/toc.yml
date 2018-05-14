@@ -170,8 +170,6 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment-programma
               href: enrollment-autopilot.md
-            - name: Scherm Status van inschrijving
-              href: windows-enrollment-status.md
         - name: Android-inschrijving instellen
           items:
             - name: Android-inschrijving instellen
