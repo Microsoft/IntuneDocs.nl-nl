@@ -2,10 +2,10 @@
 title: Endpoint Protection in Windows 10 toevoegen in Microsoft Intune - Azure | Microsoft Docs
 description: Gebruik of configureer op Windows 10-apparaten instellingen voor eindpuntbescherming om functies van Windows Defender in te schakelen, zoals Application Guard, Firewall, SmartScreen, versleuteling en bitlocker, Exploit Guard, Application Control, Security Center en beveiliging van lokale apparaten in Microsoft Intune.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afe1e737bb5214af76395db91b8aea72cb5d42a0
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 22eceb7792aee714fb728d64d8bec2ae8db4167c
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Instellingen voor de beveiliging van eindpunten voor Windows 10 en hoger in Intune
 
@@ -28,10 +28,12 @@ Via het profiel voor eindpuntbeveiliging kunt u beveiligingsfuncties op Windows 
 
 Gebruik de informatie in dit artikel om profielen voor eindpuntbeveiliging te maken.
 
-> [!Note]
+> [!NOTE]
 > Deze instellingen worden niet ondersteund in de edities Home en Professional van Windows 10.
 
 ## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard
+
+Wanneer u Microsoft Edge gebruikt, beschermt Windows Defender Application Guard uw omgeving tegen sites die nog niet als vertrouwd zijn gedefinieerd door uw organisatie. Als gebruikers sites bezoeken die niet worden vermeld in uw geïsoleerde netwerkgrens, worden deze sites geopend in een virtuele browsersessie in Hyper-V. Vertrouwde sites worden gedefinieerd door een netwerkgrens, die in Apparaatconfiguratie kan worden geconfigureerd. 
 
 Application Guard is alleen beschikbaar voor apparaten met de 64 bitsversie van Windows 10. Met dit profiel wordt een Win32-onderdeel geïnstalleerd om Application Guard te activeren.
 
@@ -39,9 +41,9 @@ Application Guard is alleen beschikbaar voor apparaten met de 64 bitsversie van 
 - **Klembordgedrag**: kies welke kopieer- en plakbewerkingen zijn toegestaan tussen de lokale pc en de virtuele browser van Application Guard.
 - **Externe inhoud op Enterprise-sites**: voorkom dat inhoud van niet-goedgekeurde websites wordt geladen.
 - **Afdrukken vanuit virtuele browser**: sta toe dat PDF-, XPS- en lokale of netwerkprinters inhoud vanuit de virtuele browser kunnen afdrukken.
-- **Logoeken verzamelen**: verzamel logboeken voor gebeurtenissen die zich voordoen in een Application Guard-browsersessie.
+- **Logboeken verzamelen**: verzamel logboeken voor gebeurtenissen die zich voordoen in een Application Guard-browsersessie.
 - **Door de gebruiker gegenereerde browsergegevens behouden**: sla gebruikersgegevens (zoals wachtwoorden, favorieten en cookies) op die zijn gemaakt tijdens een virtuele browsersessie met Application Guard.
-- **Grafische versnelling**: grafisch-intensieve websites sneller laden wanneer u werkt binnen een virtuele browsersessie met Application Guard. Websites worden sneller geladen doordat de toegang tot een virtuele afbeeldingenverwerkingseenheid is ingeschakeld.
+- **Grafische versnelling**: laad grafisch-intensieve websites sneller wanneer u binnen een virtuele browsersessie met Application Guard werkt. Websites worden sneller geladen doordat de toegang tot een virtuele afbeeldingenverwerkingseenheid is ingeschakeld.
 - **Bestanden downloaden naar hostbestandssysteem**: toestaan dat gebruikers bestanden downloaden van de gevirtualiseerde browser naar het hostbesturingssysteem.
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall
@@ -56,7 +58,7 @@ Deze instellingen gelden voor alle netwerktypen.
 - **IPsec-uitzonderingen**: hiermee configureert u specifiek verkeer om te worden vrijgesteld voor het uitvoeren van IPsec, waaronder **ICMP-type-codes voor IPv6 detecteren met Neighbor**, **ICMP**, **ICMP-type-codes voor IPv6 detecteren met Router** en  **DHCP-netwerkverkeer via IPv4 en IPv6**.
 - **Controle van certificaatintrekkingslijsten**: stel een waarde in voor het afdwingen van controle van certificaatintrekkingslijsten, zoals **CRL-controle uitschakelen**, **CRL-verificatie mislukt alleen bij alleen ingetrokken certificaat** en **CRL-verificatie mislukt bij elke fout die wordt aangetroffen**.
 - **Verificatieset opportunistisch afstemmen per sleutelmodule**: stel sleutelmodules in om de volledige verificatieset te negeren als de modules geen ondersteuning bieden voor alle verificatiepakketten in de betreffende set.
-- **Pakketten in wachtrij plaatsen**: Geef op hoe schalen voor software aan de ontvangstzijde wordt ingeschakeld voor versleuteld ontvangen en ongecodeerd doorsturen in het scenario voor de IPsec-tunnelgateway. Deze instelling garandeert dat de pakketvolgorde behouden blijft.
+- **Pakketten in wachtrij plaatsen**: voer in hoe schalen voor software aan de ontvangstzijde worden ingeschakeld voor versleuteld ontvangen en ongecodeerd doorsturen in het scenario voor de IPsec-tunnelgateway. Deze instelling garandeert dat de pakketvolgorde behouden blijft.
 
 ### <a name="network-settings"></a>Netwerkinstellingen
 
@@ -67,7 +69,7 @@ Deze instellingen zijn van toepassing op specifieke netwerktypen, waaronder **Do
 - **Windows Defender Firewall**: schakel deze instelling in om netwerkverkeer te blokkeren.
 - **Verborgen modus**: blokkeer de firewall in de verborgen modus. Als u de verborgen modus blokkeert, blokkeert u ook **Uitsluiting van beveiligd IPsec-pakket**.
 - **Afgeschermd**: als deze instelling is ingeschakeld, blokkeert de firewallinstelling al het binnenkomende verkeer.
-- **Unicast-antwoorden voor multicast-broadcasts**: Blokkeer unicast-antwoorden voor multicast-broadcasts. Doorgaans wilt u geen unicast-antwoorden voor multicast- of broadcastberichten ontvangen. Dergelijke antwoorden kunnen namelijk duiden op een DoS-aanval (Denial of Service) of op een aanvaller die een bekende livecomputer wilt testen.
+- **Unicast-antwoorden voor multicast-broadcasts**: blokkeer unicast-antwoorden voor multicast-broadcasts. Normaal gesproken wilt u geen unicast-antwoorden voor multicast-broadcasts ontvangen. Deze antwoorden kunnen wijzen op een DOS-aanval (denial of service) of een aanvaller die een computer wil binnendringen.
 - **Binnenkomende meldingen**: blokkeer meldingen zodat deze niet aan gebruikers worden weergegeven wanneer een toepassing wordt geblokkeerd voor het luisteren naar een poort.
 - **De standaardactie voor binnenkomende verbindingen**: blokkeer de standaardactie die door firewalls wordt uitgevoerd op binnenkomende verbindingen.
 
@@ -87,7 +89,7 @@ Deze instellingen zijn van toepassing op specifieke netwerktypen, waaronder **Do
 
 ### <a name="windows-settings"></a>Windows-instellingen
 
-Deze instellingen gelden voor alle versies van Windows 10.
+De volgende twee instellingen gelden voor alle versies van Windows 10:
 
 - **Apparaten versleutelen**: als deze instelling is ingeschakeld, krijgen gebruikers opdracht om apparaatversleuteling in te schakelen. Bovendien moeten ze bevestigen dat er geen versleuteling van een andere provider is ingeschakeld. Als Windows-versleuteling is ingeschakeld terwijl een andere versleutelingsmethode actief is, wordt het apparaat mogelijk instabiel.
 - **Opslagkaart versleutelen**: schakel deze instelling in om verwijderbare opslagkaarten te versleutelen die door het apparaat worden gebruikt.
@@ -109,16 +111,16 @@ Deze instellingen zijn van toepassing zijn op gegevensstations van het besturing
 
 - **Extra authenticatie vereisen bij opstarten**: hiermee configureert u authenticatievereisten voor het opstarten van de computer, zoals het gebruik van TPM (Trusted Platform Module).
   - **BitLocker met niet-compatibele TPM-chip**
-  - **Compatibele TPM opstarten**: hiermee configureert u of de TPM-chip is toegestaan, niet is toegestaan of is vereist.
-  - **Compatibele TPM-opstartpincode**: hiermee configureert u of het gebruik van een TPM-opstartpincode met de TPM-chip is toegestaan, niet is toegestaan of is vereist.
-  - **Compatibele TPM-opstartsleutel**: hiermee configureert u of het gebruik van een TPM-opstartsleutel met de TPM-chip is toegestaan, niet is toegestaan of is vereist.
-  - **Compatibele opstartsleutel en pincode voor TPM**: hiermee configureert u of het gebruik van een opstartsleutel en pincode voor TPM met de TPM-chip is toegestaan, niet is toegestaan of is vereist.
+  - **Compatibele TPM opstarten**: kies ervoor om de TPM-chip toe te staan, niet toe te staan of te vereisen.
+  - **Compatibele TPM-opstartpincode**: kies ervoor om het gebruik van een opstartpincode met de TPM-chip toe te staan, niet toe te staan of te vereisen.
+  - **Compatibele TPM-opstartsleutel**: kies ervoor om het gebruik van een opstartsleutel met de TPM-chip toe te staan, niet toe te staan of te vereisen.
+  - **Compatibele opstartsleutel en pincode voor TPM**: kies ervoor om het gebruik van een opstartsleutel en -pincode met de TPM-chip toe te staan, niet toe te staan of te vereisen.
 - **Minimale lengte pincode**: schakel deze instelling in om een minimale lengte te configureren voor de TPM-opstartpincode.
-  - **Minimum aantal tekens**: geef het aantal tekens op dat is vereist voor de opstartpincode, tussen **4**-**20**.
-- **Herstellen van OS-station**: schakel deze instelling in om te bepalen hoe met BitLocker beveiligde besturingssysteemstations worden hersteld als de vereiste opstartgegevens niet beschikbaar zijn.
+  - **Minimale aantal tekens**: geef het aantal tekens op dat is vereist voor de opstartpincode, tussen **4**-**20**.
+- **Herstellen van besturingssysteemstation**: schakel deze instelling in om te bepalen hoe met BitLocker beveiligde besturingssysteemstations worden hersteld als de vereiste opstartgegevens niet beschikbaar zijn.
   - **Agent voor gegevensherstel op basis van een certificaat**: schakel deze instelling in als agenten voor gegevensherstel mogen worden gebruikt met besturingssysteemstations die met BitLocker zijn beveiligd.
-  - **Herstelwachtwoord maken door gebruiker**: hiermee configureert u of gebruikers verplicht of optioneel een herstelwachtwoord van 48 cijfers mogen genereren, of dat dit niet is toegestaan.
-  - **Herstelsleutel maken door gebruiker**: hiermee configureert u of gebruikers verplicht of optioneel een herstelsleutel van 256 bits mogen genereren, of dat dit niet is toegestaan.
+  - **Herstelwachtwoord maken door gebruiker**: kies of gebruikers verplicht of optioneel een herstelwachtwoord van 48 cijfers mogen genereren, of dat dit niet is toegestaan.
+  - **Herstelsleutel maken door gebruiker**: kies of gebruikers verplicht of optioneel een herstelsleutel van 256 bits mogen genereren, of dat dit niet is toegestaan.
   - **Herstelopties in de BitLocker-installatiewizard**: schakel deze instelling in om te voorkomen dat gebruikers herstelopties zien of deze kunnen wijzigen wanneer ze BitLocker inschakelen.
   - **BitLocker-herstelgegevens naar AD DS opslaan**: hiermee schakelt u de opslag van BitLocker-herstelgegevens in Active Directory in.
   - **BitLocker-herstelgegevens opgeslagen naar AD DS**: hiermee bepaalt u welke onderdelen van BitLocker-herstelgegevens worden opgeslagen in Active Directory. U kunt kiezen uit:
@@ -208,11 +210,11 @@ Uitgaande verbindingen naar IP-adressen/domeinen met een slechte reputatie blokk
 
 ### <a name="exploit-protection"></a>Exploit Protection
 
-Blokkeer **bewerking door gebruikers van de Exploit Protection-interface** door een XML-bestand te uploaden waarmee uw het geheugen, de controlestroom en de beleidsbeperkingen kunt configureren waarmee wordt een toepassing wordt geblokkeerd voor aanvallen.
+Blokkeer **bewerking door gebruikers van de Exploit Protection-interface** door een XML-bestand te uploaden waarmee uw het geheugen, de controlestroom en de beleidsbeperkingen kunt configureren. De instellingen in het XML-bestand kunnen worden gebruikt om een toepassing te blokkeren tegen aanvallen.
 
 Als u beveiliging tegen misbruik wilt inschakelen, maakt u een XML-bestand met de gewenste beperkingsinstellingen voor het systeem en de toepassing. U kunt dit op een van de volgende twee manieren doen:
 
- 1. PowerShell: gebruik een of meer van de Get-ProcessMitigation, Set-ProcessMitigation en ConvertTo-ProcessMitigationPolicy PowerShell-cmdlets om de beperkingsinstellingen te configureren en een XML-weergave hiervan te exporteren.
+ 1. PowerShell: gebruik een of meer van de Get-ProcessMitigation, Set-ProcessMitigation en ConvertTo-ProcessMitigationPolicy PowerShell-cmdlets. Met de cdmlets worden beperkingsinstellingen geconfigureerd en wordt hiervan een XML-weergave geëxporteerd.
 
  2. Gebruikersinterface van het Windows Defender-beveiligingscentrum: klik in het Windows Defender-beveiligingscentrum op het besturingselement voor de app en browser en scrol naar beneden op het scherm om Beveiliging met Exploit Guard te zoeken. Gebruik eerst de tabbladen Systeeminstellingen en Programma-instellingen om de beperkingsinstellingen te configureren. Zoek vervolgens de koppeling Instellingen exporteren onderaan het scherm om een XML-weergave hiervan te exporteren.
 
@@ -224,9 +226,27 @@ Toepassingen worden niet geblokkeerd wanneer ze in de modus **Alleen controle** 
 
 Als deze modus is ingeschakeld, kan toepassingsbeheer alleen worden uitgeschakeld door de modus te wijzigen van **Afdwingen** naar **Alleen controle**. Als u de modus wijzigt van **Afdwingen** in **Niet geconfigureerd**, wordt toepassingsbeheer op toegewezen apparaten nog steeds afgedwongen.
 
+## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard
+Windows Defender Credential Guard beschermt tegen aanvallen waarbij referenties worden gestolen. Het isoleert geheimen zodat alleen bevoegde systeemsoftware er toegang toe heeft.
+
+De instellingen voor **Credential Guard** omvatten:
+
+- **Uitgeschakeld**: hiermee wordt Credential Guard extern uitgeschakeld als deze eerder is ingeschakeld met de optie **Ingeschakeld zonder UEFI-vergrendeling**.
+- **Ingeschakeld met UEFI-vergrendeling**: met deze optie kan Credential Guard niet extern worden uitgeschakeld behulp van een registersleutel of via Groepsbeleid.
+
+    > [!NOTE]
+    > Als u deze instelling gebruikt en Credential Guard later wilt uitschakelen, moet u het Groepsbeleid instellen op **Uitgeschakeld**. Ook moet u de UEFI-configuratiegegevens fysiek van elke computer wissen. Zolang de UEFI-configuratie behouden blijft, is Credential Guard ingeschakeld.
+
+- **Uitgeschakeld zonder UEFI-vergrendeling**: met deze optie kan Credential Guard extern worden uitgeschakeld via Groepsbeleid. Op de apparaten die gebruikmaken van deze instelling moet Windows 10 versie 1511 en hoger worden uitgevoerd.
+
+Wanneer u Credential Guard inschakelt, worden de volgende vereiste functies ook ingeschakeld:
+
+- **Beveiliging op basis van virtualisatie**: wordt ingeschakeld tijdens de volgende keer opnieuw opstarten. Beveiliging op basis van virtualisatie maakt gebruik van de Windows-Hypervisor om ondersteuning te bieden voor beveiligingsservices.
+- **Beveiligd opstarten met directe geheugentoegang**: hiermee schakelt u beveiliging op basis van virtualisatie met beveiligd opstarten en directe geheugentoegang (DMA) in. Voor DMA-beveiliging is hardwareondersteuning vereist en deze wordt alleen ingeschakeld op apparaten die juist zijn geconfigureerd.
+
 ## <a name="windows-defender-security-center"></a>Windows Defender Security Center
 
-De Windows Defender Security Center-app werkt als een afzonderlijke app of een afzonderlijk proces van de afzonderlijke functies en geeft meldingen weer via het onderhoudscentrum. Het fungeert als een collector of één afzonderlijke plaats om de status te zien en een configuratie van de functies uit te voeren. Meer informatie de documenten over [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center).
+De Windows Defender Security Center-app werkt als een afzonderlijke app of een afzonderlijk proces van de afzonderlijke functies. Deze geeft meldingen weer via het onderhoudscentrum. Het fungeert als een collector of één afzonderlijke plaats om de status te zien en een configuratie van de functies uit te voeren. Meer informatie de documenten over [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center).
 
 #### <a name="windows-defender-security-center-app-and-notifications"></a>Windows Defender Security Center-app en meldingen
 
@@ -241,11 +261,111 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Windows
 
 #### <a name="it-contact-information"></a>IT-contactgegevens
 
-Geef de IT-contactgegevens op die in de Windows Defender-beveiligingscentrum-app en in de app-meldingen moeten worden weergegeven. U kunt kiezen tussen **In app en in meldingen weergeven**, **Alleen in app weergeven**, **Alleen in meldingen weergeven** en **Niet weergeven**. U moet de **IT-organisatienaam** en ten minste één van de volgende contactopties opgeven:
+Geef de IT-contactgegevens op die in de Windows Defender-beveiligingscentrum-app en in de app-meldingen moeten worden weergegeven. U kunt kiezen tussen **In app en in meldingen weergeven**, **Alleen in app weergeven**, **Alleen in meldingen weergeven** en **Niet weergeven**. U moet de **IT-organisatienaam** en ten minste één van de volgende contactopties invoeren:
 
 - **Telefoonnummer of Skype-ID van de IT-afdeling**
 - **E-mailadres van de IT-afdeling**
 - **URL van de IT-ondersteuningswebsite**
+
+## <a name="local-device-security-options"></a>Beveiligingsopties van lokale apparaten
+
+Gebruik deze opties voor het configureren van de lokale beveiligingsinstellingen op Windows 10-apparaten.
+
+### <a name="accounts"></a>Accounts
+
+- **Nieuwe Microsoft-accounts toevoegen**: voorkom dat gebruikers nieuwe Microsoft-accounts aan deze computer toevoegen.
+- **Extern aanmelden zonder wachtwoord**: toestaan dat lokale accounts zonder wachtwoord zich aanmelden vanaf een andere locatie dan het fysieke apparaat.
+
+#### <a name="admin"></a>Administrator
+
+- **Lokale beheerdersaccount**: bepaal of het lokale beheerdersaccount is ingeschakeld of uitgeschakeld.
+- **Naam van beheerdersaccount wijzigen**: definieer een andere accountnaam die moet worden gekoppeld aan de beveiligings-id (SID) van het beheerdersaccount.
+
+#### <a name="guest"></a>Gast
+
+- **Gastaccount**: bepaal of het gastaccount is ingeschakeld of uitgeschakeld.
+- **Naam van gastaccount wijzigen**: definieer een andere accountnaam die moet worden gekoppeld aan de beveiligings-id (SID) van het gastaccount.
+
+### <a name="devices"></a>Apparaten
+
+- **Apparaat ontkoppelen zonder aanmelding**: voorkom dat een draagbare computer wordt ontkoppeld zonder zich te hoeven aanmelden.
+- **Stuurprogramma's voor gedeelde printers installeren**: beperk het installeren van printerstuurprogramma's als onderdeel van het maken van verbinding met een gedeelde printer tot alleen beheerders.
+- **Cd-rom-toegang beperken tot lokale actieve gebruiker**: als u deze instelling inschakelt, heeft alleen de interactief aangemelde gebruiker toegang tot cd-rom-media
+- **Verwisselbare media formatteren en uitwerpen**: definieer de personen voor wie het is toegestaan om verwisselbare NTFS-media te formatteren en uit te werpen:
+  - **Niet geconfigureerd**
+  - **Beheerders en hoofdgebruikers**
+  - **Beheerders en interactieve gebruikers**
+
+### <a name="interactive-logon"></a>Interactief aanmelden
+
+- **Minuten van inactiviteit van vergrendelingsscherm totdat de schermbeveiliging wordt geactiveerd**: definieer het maximale aantal minuten van inactiviteit op het aanmeldingsscherm van het interactieve bureaublad totdat de schermbeveiliging actief wordt.
+- **Indrukken van CTRL+ALT+DEL vereisen voor aanmelden**: vereis dat CTRL + ALT + DEL worden ingedrukt voordat een gebruiker zich kan aanmelden.
+- **Gedrag bij verwijderen van smartcard**: hiermee bepaalt u wat er gebeurt wanneer de smartcard van een aangemelde gebruiker uit de lezer van de smartcard wordt verwijderd.
+[Lokaal beleid/Beveiligingsopties](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) biedt meer details.
+
+#### <a name="display"></a>Weergave
+
+- **Gebruikersinformatie op vergrendelingsscherm**: configureer welke gebruikersinformatie wordt weergegeven wanneer de sessie is vergrendeld. Als deze optie niet is geconfigureerd, worden de weergavenaam van de gebruiker, het domein en de gebruikersnaam weergegeven.
+  - **Alleen weergavenaam gebruiker**
+  - **Gebruikersinformatie niet weergeven**
+  - **Niet geconfigureerd**: weergavenaam van gebruiker, domein en gebruikersnaam
+- **Laatst aangemelde gebruiker verbergen**: de gebruikersnaam van de laatste persoon die zich heeft aangemeld op dit apparaat wordt niet weergegeven.
+- **Gebruikersnaam verbergen bij aanmelden**: de gebruikersnaam van de persoon die zich op dit apparaat heeft aangemeld, wordt niet weergeven nadat de referenties zijn ingevoerd en voordat het bureaublad van het apparaat wordt weergegeven.
+- **Titel aanmeldingsbericht**: stel de berichttitel in voor gebruikers die zich willen aanmelden.
+- **Tekst aanmeldingsbericht**: stel de berichttekst in voor gebruikers die zich willen aanmelden.
+
+### <a name="network-access-and-security"></a>Netwerktoegang en -beveiliging
+
+- **Anonieme toegang tot benoemde pipes en shares**: hiermee beperkt u anonieme toegang tot instellingen voor shares en benoemde pipes. Van toepassing op de instellingen die anoniem kunnen worden gebruikt.
+- **Anonieme inventarisatie van SAM-accounts**: anonieme gebruikers kunnen de SAM-accounts inventariseren. Windows staat anonieme gebruikers toe de namen van domeinaccounts en netwerkshares te inventariseren.
+- **Anonieme inventarisatie van SAM-accounts en -shares**: anonieme inventarisatie van SAM-accounts en -shares kan worden geblokkeerd. Windows staat anonieme gebruikers toe de namen van domeinaccounts en netwerkshares te inventariseren.
+- **Hashwaarde van LAN Manager opslaan bij wachtwoordwijziging**: kies of bij de volgende wachtwoordwijziging de hashwaarde van LAN Manager (LM) voor het nieuwe wachtwoord wordt opgeslagen. Deze wordt niet standaard opgeslagen.
+- **PKU2U-verificatieaanvragen**: blokkeer PKU2U-verificatieaanvragen aan dit apparaat om online-identiteiten te gebruiken.
+- **Externe RPC-verbindingen met SAM beperken**: bewerk de standaardtekenreeks van Security Descriptor Definition Language om het gebruikers en groepen wel of niet toe te staan om externe aanroepen naar de SAM uit te voeren.
+- **Beveiligingsdescriptor**
+
+### <a name="recovery-console-and-shutdown"></a>Herstelconsole en afsluiten
+
+- **Wisselbestand voor virtueel geheugen wissen bij het afsluiten**: wis het wisselbestand voor het virtueel geheugen wanneer het apparaat wordt uitgeschakeld.
+- **Afsluiten zonder aanmelding**: blokkeer de optie voor het afsluiten van de computer vanuit het Windows-aanmeldingsscherm. In dit geval moeten gebruikers zich eerst aanmelden bij de computer voordat ze het systeem kunnen afsluiten.
+
+### <a name="user-account-control"></a>Gebruikersaccountbeheer
+
+- **UIA-integriteit zonder veilige locatie**: bied de mogelijkheid apps vanaf niet-beveiligde locaties in het bestandssysteem uit te voeren met een UIA-integriteitsniveau.
+- **Schrijffouten in bestanden en register in locaties per gebruiker virtualiseren**: bepaal of schrijffouten van een app worden omgeleid naar gedefinieerde register- en bestandssysteemlocaties. Of zorg ervoor dat de app niet meer kan worden uitgevoerd.
+- **Alleen bevoegdheden verhogen voor uitvoerbare bestanden die zijn ondertekend en gevalideerd**: dwing PKI certificeringspadvalidatie af voor een bepaald uitvoerbaar bestand voordat dit mag worden uitgevoerd.
+
+#### <a name="uia-elevation-prompt-behavior-settings"></a>Instellingen voor gedrag bij vragen om UIA-uitbreiding
+
+- **Vragen om benodigde bevoegdheden voor beheerders**: definieer het gedrag voor het vragen om benodigde bevoegdheden voor beheerders in modus Door administrator goedkeuren:
+  - **Verhogen zonder te vragen**
+  - **Vragen om referenties op het beveiligde bureaublad**
+  - **Vragen om toestemming op het beveiligde bureaublad**
+  - **Vragen om referenties**
+  - **Vragen om toestemming**
+  - **Niet geconfigureerd**: Vragen om toestemming voor niet-Windows binaire bestanden
+- **Vragen om benodigde bevoegdheden voor standaardgebruikers**: definieer het gedrag voor het vragen om benodigde bevoegdheden voor standaardgebruikers:
+  - **Vragen voor benodigde bevoegdheden automatisch weigeren**
+  - **Vragen om referenties op het beveiligde bureaublad**
+  - **Niet geconfigureerd**: Vragen om referenties
+- **Leid vragen om benodigde bevoegdheden naar het interactieve bureaublad van de gebruiker**: laat alle vragen om bevoegdheden naar het bureaublad van de interactieve gebruiker gaan in plaats van het beveiligde bureaublad. Er worden beleidsinstellingen voor vragen voor beheerders en standaardgebruikers gebruikt.
+- **Vragen om verhoogde bevoegdheden bij installatie van apps**: bij app-installaties die verhoogde bevoegdheden nodig hebben, wordt gevraagd om beheerdersreferenties.
+- **Vragen om benodigde UIA-bevoegdheden zonder beveiligd bureaublad**: sta UIAccess-apps toe te vragen om benodigde bevoegdheden zonder het beveiligde bureaublad te gebruiken.
+
+#### <a name="admin-approval-mode-settings"></a>Instellingen voor de modus Door administrator goedkeuren
+
+- **De modus Door administrator goedkeuren voor geïntegreerde beheerder**: definieer of het ingebouwde beheerdersaccount de modus Door administrator goedkeuren gebruikt of dat alle apps met volledige beheerdersbevoegdheden worden uitgevoerd.
+- **Alle beheerders uitvoeren in de modus Door administrator goedkeuren**: definieer of de modus Door administrator goedkeuren en alle UAC-beleidsinstellingen zijn ingeschakeld.
+
+### <a name="microsoft-network-client"></a>Microsoft Network Client
+
+- **Clientcommunicatie digitaal ondertekenen (indien mogelijk)**: hiermee wordt bepaald of de SMB-client probeert te onderhandelen over SMB-pakketondertekening. Indien ingeschakeld (standaard), vraagt Microsoft Network Client de server om SMB-pakketondertekening uit te voeren bij het instellen van een sessie. Als pakketondertekening is ingeschakeld op de server, wordt over ondertekening van pakketten onderhandeld. Als dit beleid is uitgeschakeld, onderhandelt de SMB-client nooit over SMB-pakketondertekening.
+- **Niet-versleuteld wachtwoord verzenden om verbinding te kunnen maken met niet-Microsoft SMB-servers**: indien ingeschakeld, mag de SMB-redirector (Server Message Block) ongecodeerde wachtwoorden verzenden naar niet-Microsoft SMB-servers die geen ondersteuning voor wachtwoordversleuteling bieden tijdens verificatie.
+
+### <a name="microsoft-network-server"></a>Microsoft Network Server
+
+- **Communicatie digitaal ondertekenen (bij akkoord van client)**: hiermee wordt bepaald of de SMB-server onderhandelt over SMB-pakketondertekening met clients die dit aanvragen. Indien ingeschakeld, onderhandelt de Microsoft-netwerkserver over SMB-pakketondertekening zoals aangevraagd door de client. Ofwel, als pakketondertekening is ingeschakeld op de client, wordt over ondertekening van pakketten onderhandeld. Als deze optie is uitgeschakeld (standaardwaarde), onderhandelt de SMB-client nooit over SMB-pakketondertekening.
+- **Communicatie digitaal ondertekenen (altijd)**: hiermee wordt bepaald of het ondertekenen van pakketten wordt vereist door de SMB-servercomponent. Als deze instelling is ingeschakeld, communiceert de Microsoft-netwerkserver niet met een Microsoft-netwerkclient, tenzij die client akkoord gaat met het uitvoeren van SMB-pakketondertekening. Als deze instelling is uitgeschakeld (standaardwaarde), wordt over het ondertekenen van SMB-pakketten onderhandeld door de client en de server.
 
 ## <a name="next-steps"></a>Volgende stappen
 

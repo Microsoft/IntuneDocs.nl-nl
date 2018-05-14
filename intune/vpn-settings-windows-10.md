@@ -1,11 +1,11 @@
 ---
-title: De VPN-instellingen weergeven in Microsoft Intune - Azure | Microsoft Docs
+title: De VPN-instellingen voor Windows 10 configureren in Microsoft Intune - Azure | Microsoft Docs
 description: Meer informatie over de beschikbare VPN-instellingen in Microsoft Intune, waarvoor ze worden gebruikt en wat ze doen, zoals regels voor netwerkverkeer, voorwaardelijke toegang en DNS- en proxy-instellingen voor Windows 10-apparaten en Windows Holographic for Business-apparaten.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/8/2018
+ms.date: 4/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 787501892d0955e3396bc8f37e5da8ba0d312c74
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: b6371da954aa913e1378c065b203fa197f3fc767
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="read-about-the-vpn-settings-in-intune"></a>Meer informatie over de VPN-instellingen in Intune
+# <a name="windows-10-vpn-settings-in-intune"></a>VPN-instellingen voor Windows 10 in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -35,95 +35,111 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden worden gec
 ## <a name="base-vpn-settings"></a>Basis-VPN-instellingen
 
 - **Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers zien deze naam wanneer ze op hun apparaat in de lijst met beschikbare VPN-verbindingen zoeken.
-- **Servers**: voeg een of meer VPN-servers toe waarmee de apparaten verbinding maken.
-  - **Toevoegen**: hiermee opent u **Rij toevoegen** waarin u de volgende informatie kunt invoeren:
-    - **Beschrijving**: voer een beschrijvende naam in voor de server, zoals **Contoso VPN-server**
-    - **IP-adres of FQDN**: voer het IP-adres of de Fully Qualified Domain Name (FQDN) in van de VPN-server waarmee apparaten verbinding maken, zoals **192.168.1.1** of **vpn.contoso.com**
-    - **Standaardserver**: hiermee wordt deze server ingeschakeld als de standaardserver die apparaten gebruiken om de verbinding te maken. U kunt slechts één server als standaard instellen.
-  - **Importeren**: blader naar een bestand met een door komma’s gescheiden lijst met servers in de indeling: beschrijving, IP-adres of FQDN, Standaardserver. Kies **OK** om deze servers in de lijst **Servers** te importeren.
+- **Servers**: voeg een of meer VPN-servers toe waarmee de apparaten verbinding maken. Als u een server toevoegt, voert u de volgende gegevens in:
+  - **Beschrijving**: voer een beschrijvende naam in voor de server, zoals **Contoso VPN-server**
+  - **IP-adres of FQDN**: voer het IP-adres of de Fully Qualified Domain Name (FQDN) in van de VPN-server waarmee apparaten verbinding maken, zoals **192.168.1.1** of **vpn.contoso.com**
+  - **Standaardserver**: hiermee wordt deze server ingeschakeld als de standaardserver die apparaten gebruiken om de verbinding te maken. U kunt slechts één server als standaard instellen.
+  - **Importeren**: blader naar een bestand met een door komma’s gescheiden lijst met servers in de indeling: beschrijving, IP-adres of FQDN, Standaardserver. Kies **OK** om deze servers te importeren in de lijst met **servers**.
   - **Exporteren**: hiermee exporteert u de lijst met servers naar een bestand met door komma's gescheiden waarden (CSV-bestand)
 
-**Verbindingstype**: selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
+- **Verbindingstype**: selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
 
-- **Automatisch**
-- **Check Point Capsule VPN**
-- **Citrix VPN**
-- **SonicWall Mobile Connect**
-- **F5 Edge Client**
-- **IKEv2**
-- **L2TP**
-- **PPTP**
-- **Pulse Secure**
+  - **Pulse Secure**
+  - **F5 Edge Client**
+  - **SonicWall Mobile Connect**
+  - **Check Point Capsule VPN**
+  - **Citrix**
+  - **Automatisch**
+  - **IKEv2**
+  - **L2TP**
+  - **PPTP**
 
-**Aanmeldingsgroep of -domein** (alleen SonicWall Mobile Connect): deze eigenschap kan niet worden ingesteld in het VPN-profiel. In plaats daarvan parseert Mobile Connect deze waarde wanneer de gebruikersnaam en het domein worden ingevoerd in de indelingen `username@domain` of `DOMAIN\username`.
+  Als u een VPN-verbindingstype kiest, wordt u mogelijk ook om de volgende instellingen gevraagd:  
+    - **Altijd aan**: schakel deze optie in om automatisch verbinding te maken met de VPN-verbinding wanneer het volgende gebeurt: 
+      - Gebruikers zich aanmelden op hun apparaten
+      - Het netwerk op het apparaat wijzigt
+      - Het scherm op het apparaat wordt ingeschakeld nadat het was uitgeschakeld 
 
-**Aangepaste XML**/**EAP XML**: voer aangepaste XML-opdrachten in waarmee de VPN-verbinding wordt geconfigureerd.
+    - **Verificatiemethode**: selecteer hoe gebruikers zich moeten verifiëren bij de VPN-server. Het gebruik van **certificaten** biedt uitgebreide mogelijkheden, zoals zero-touch, VPN op aanvraag en VPN per app.
+    - **Referenties onthouden bij elke aanmelding**: kies ervoor om de verificatiereferenties in cache te plaatsen.
+    - **Aangepaste XML**: voer aangepaste XML-opdrachten in waarmee de VPN-verbinding wordt geconfigureerd.
+    - **EAP XML**: voer EAP XML-opdrachten in waarmee de VPN-verbinding wordt geconfigureerd
 
-**Voorbeeld voor Pulse Secure:**
+#### <a name="pulse-secure-example"></a>Voorbeeld van Pulse Secure
 
 ```
 <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
 ```
 
-**Voorbeeld voor CheckPoint Mobile VPN:**
-
-```
-<CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
-```
-
-**Voorbeeld voor SonicWall Mobile Connect:**
-
-```
-<MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-```
-
-**Voorbeeld voor F5 Edge Client:**
+#### <a name="f5-edge-client-example"></a>Voorbeeld van F5 Edge Client
 
 ```
 <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
+#### <a name="sonicwall-mobile-connect-example"></a>Voorbeeld van SonicWALL Mobile Connect
+**Aanmeldingsgroep of -domein**: deze eigenschap kan niet worden ingesteld in het VPN-profiel. In plaats daarvan parseert Mobile Connect deze waarde wanneer de gebruikersnaam en het domein worden ingevoerd in de indelingen `username@domain` of `DOMAIN\username`.
+
+Voorbeeld:
+
+```
+<MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
+```
+
+#### <a name="checkpoint-mobile-vpn-example"></a>Voorbeeld van CheckPoint Mobile VPN
+
+```
+<CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
+```
+
+#### <a name="writing-custom-xml"></a>Aangepaste XML schrijven
 Raadpleeg de VPN-documentatie van de fabrikant voor meer informatie over het schrijven van aangepaste XML-opdrachten.
 
 Zie [EAP-configuratie](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration) voor meer informatie over het maken van aangepaste XML-EAP.
 
-**Split tunneling**: u kunt deze optie **inschakelen**  of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar gebruikt het standaardnetwerk van het hotel om gewoon op het web te surfen.
-- **Split tunneling-routes voor deze VPN-verbinding**: voeg desgewenst routes voor VPN-providers van derden toe. Voer voor elk een bestemmingsvoorvoegsel en vaste grootte in.
-
 ## <a name="apps-and-traffic-rules"></a>Apps en verkeersregels
 
-**VPN-verbinding beperken tot deze apps**: schakel deze instelling in als u wilt dat alleen bepaalde apps de VPN-verbinding gebruiken.
+<<<<<<< HEAD
+- **WIP of apps koppelen aan deze VPN**: schakel deze instelling in als u wilt dat alleen bepaalde apps de VPN-verbinding gebruiken. Uw opties zijn:
+
+  - **Een WIP koppelen aan deze verbinding**: voer een **WIP-domein in voor deze verbinding**
+  - **Apps koppelen met deze verbinding**: u kunt **een VPN-verbinding beperken tot deze apps** en vervolgens deze **gekoppelde apps** toevoegen. De apps die u invoert, maken automatisch gebruik van de VPN-verbinding. De app-id is afhankelijk van het type app. Voer voor een universele app de naam van de productfamilie in waartoe het pakket behoort. Voer voor een bureaublad-app het bestandspad van de app in.
+=======
+**VPN-verbinding beperken tot deze apps**: schakel deze instelling in als u wilt dat alleen bepaalde apps gebruikmaken van de VPN-verbinding.
 
 **Gekoppelde apps**: voer een lijst in met apps die automatisch gebruikmaken van de VPN-verbinding. De app-id is afhankelijk van het type app. Voer voor een universele app de naam van de productfamilie in waartoe het pakket behoort. Voer voor een bureaublad-app het bestandspad van de app in.
+>>>>>>> b2f641d045b7649f641fb98e07accc745e697d84
 
->[!IMPORTANT]
->Het is raadzaam dat u alle app-lijsten beveiligt die zijn gemaakt voor VPN’s per app. Als een ongeautoriseerde gebruiker deze lijst wijzigt en u deze importeert in de app-lijst VPN per app, verleent u onbevoegde gebruikers mogelijk VPN-toegang tot apps die niet toegankelijk zouden moeten zijn. Een manier om uw lijsten met apps te beveiligen, is het gebruik van een toegangsbeheerlijst (ACL).
+  >[!IMPORTANT]
+  >Het is raadzaam dat u alle app-lijsten beveiligt die zijn gemaakt voor VPN’s per app. Als een ongeautoriseerde gebruiker deze lijst wijzigt en u deze importeert in de app-lijst VPN per app, verleent u onbevoegde gebruikers mogelijk VPN-toegang tot apps die niet toegankelijk zouden moeten zijn. Een manier om uw lijsten met apps te beveiligen, is het gebruik van een toegangsbeheerlijst (ACL).
 
-**Regels voor netwerkverkeer voor deze VPN-verbinding**: selecteer welke protocollen en welke lokale en externe poort- en adresbereiken voor de VPN-verbinding worden ingeschakeld. Als u geen netwerkverkeersregel maakt, worden alle protocollen, poorten en adresbereiken ingeschakeld. Nadat u een regel hebt gemaakt, worden door de VPN-verbinding alleen de protocollen, poorten en adresbereiken gebruikt die u in die regel invoert.
+- **Regels voor netwerkverkeer voor deze VPN-verbinding**: selecteer welke protocollen en welke lokale en externe poort- en adresbereiken voor de VPN-verbinding worden ingeschakeld. Als u geen netwerkverkeersregel maakt, worden alle protocollen, poorten en adresbereiken ingeschakeld. Nadat u een regel hebt gemaakt, worden door de VPN-verbinding alleen de protocollen, poorten en adresbereiken gebruikt die u in die regel invoert.
 
 ## <a name="conditional-access"></a>Voorwaardelijke toegang
 
-**Voorwaardelijke toegang voor deze VPN-verbinding**: schakelt een nalevingsstroom voor het apparaat in via de client. Als deze is ingeschakeld, probeert de VPN-client te communiceren met Azure Active Directory om een certificaat te ontvangen dat voor verificatie kan worden gebruikt. De VPN moet worden ingesteld voor het gebruik van certificaatverificatie. Ook moet de VPN-server de server die door Azure Active Directory wordt geretourneerd vertrouwen.
+- **Voorwaardelijke toegang voor deze VPN-verbinding**: schakelt een nalevingsstroom voor het apparaat in via de client. Als de VPN-client is ingeschakeld, wordt er een poging gedaan deze te laten communiceren met Azure AD (Active Directory) en een certificaat te ontvangen dat kan worden gebruikt voor verificatie. De VPN moet zijn ingesteld voor het gebruik van certificaatverificatie. Ook moet de VPN-server de server vertrouwen die met Azure AD wordt geretourneerd.
 
-**Eenmalige aanmelding (SSO) met alternatief certificaat**: gebruik voor apparaatcompatibiliteit een ander certificaat dan het VPN-verificatiecertificaat voor Kerberos-verificatie. Voer de volgende instellingen in voor het certificaat:
+- **Eenmalige aanmelding (SSO) met alternatief certificaat**: gebruik voor apparaatcompatibiliteit een ander certificaat dan het VPN-verificatiecertificaat voor Kerberos-verificatie. Voer de volgende instellingen in voor het certificaat:
 
-- **Uitgebreid sleutelgebruik**: naam voor het uitgebreide sleutelgebruik (EKU)
-- **Object-id**: object-id voor EKU
-- **Hash voor de verlener**: vingerafdruk van certificaat voor eenmalige aanmelding
+  - **Naam**: naam voor EKU (uitgebreide-sleutelgebruik)
+  - **Object-id**: object-id voor EKU
+  - **Hash voor de verlener**: vingerafdruk van certificaat voor eenmalige aanmelding
 
 ## <a name="dns-settings"></a>DNS-instellingen
 
-**DNS-namen en servers voor deze VPN-verbinding**: selecteer welke DNS-servers de VPN-verbinding gebruiken nadat de verbinding tot stand is gebracht.
-Voer voor elke server het volgende in:
-- **DNS-naam**
+**Domein en servers voor deze VP-verbinding**: voeg domeinen en DNS-server toe waarvan de VPN gebruik kan maken. U kunt kiezen van welke DNS-servers de VPN-verbinding gebruikmaakt nadat de verbinding tot stand is gebracht. Voer voor elke server het volgende in:
+- **Domein**
 - **DNS-server**
 - **Proxy**
 
 ## <a name="proxy-settings"></a>Proxyinstellingen
 
-- **Automatisch proxyinstellingen detecteren**: als de VPN-server een proxyserver voor de verbinding vereist, kiest u of apparaten de verbindingsinstellingen automatisch moeten detecteren.
 - **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van proxyserver** in, zoals `http://proxy.contoso.com`, die het configuratiebestand bevat.
-- **Proxyserver gebruiken**: schakel deze optie om de proxyserverinstellingen handmatig in te voeren.
-  - **Adres**: voer het adres van de proxyserver in (als IP-adres)
-  - **Poortnummer**: voer het poortnummer in dat is gekoppeld aan de proxyserver
-- **Proxy niet gebruiken voor lokale adressen**: als de VPN-server een proxyserver voor de verbinding vereist, selecteert u deze instelling als u de proxyserver niet wilt gebruiken voor lokale adressen die u invoert.
+- **Adres**: voer het adres van de proxyserver in, zoals een IP-adres of `vpn.contoso.com`
+- **Poortnummer**: voer het TCP-poortnummer in dat wordt gebruikt voor uw proxyserver
+- **Proxy overslaan voor lokale adressen**: als u geen proxyserver wilt gebruiken voor lokale adressen, kiest u Inschakelen. Deze instelling is van toepassing als voor de VPN-server een proxyserver is vereist voor de verbinding.
+
+## <a name="split-tunneling"></a>Split tunneling
+
+- **Split tunneling**: u kunt deze optie **inschakelen**  of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar gebruikt het standaardnetwerk van het hotel om gewoon op het web te surfen.
+- **Split tunneling-routes voor deze VPN-verbinding**: voeg desgewenst routes voor VPN-providers van derden toe. Voer voor elke verbinding een bestemmingsvoorvoegsel en voorvoegselgrootte in.

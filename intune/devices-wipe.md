@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 228198276643f1eb8dfcb0392e4902a7f56875c9
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Apparaten verwijderen door Fabrieksinstellingen terugzetten te gebruiken of bedrijfsgegevens te verwijderen
 
@@ -58,7 +58,9 @@ Als het apparaat is ingeschakeld en is verbonden, wordt de actie **Fabrieksinste
 
 ## <a name="remove-company-data"></a>Bedrijfsgegevens verwijderen
 
-Met de actie **Bedrijfsgegevens verwijderen** worden gegevens (indien van toepassing), instellingen en e-mailprofielen van beheerde apps verwijderd die via Intune zijn toegewezen. Met **Bedrijfsgegevens verwijderen** blijven de persoonlijke gegevens van de gebruiker op het apparaat behouden. Het apparaat wordt uit Intune-beheer verwijderd. 
+Met de actie **Bedrijfsgegevens verwijderen** worden gegevens (indien van toepassing), instellingen en e-mailprofielen van beheerde apps verwijderd die via Intune zijn toegewezen. Het apparaat wordt uit Intune-beheer verwijderd. Dit gebeurt wanneer het apparaat de volgende keer wordt ingecheckt en de actie **Bedrijfsgegevens verwijderen** ontvangt.
+
+Met **Bedrijfsgegevens verwijderen** blijven de persoonlijke gegevens van de gebruiker op het apparaat behouden.  
 
 In de volgende tabel wordt beschreven welke gegevens worden verwijderd en wat het effect van **Bedrijfsgegevens verwijderen** is op de gegevens die achterblijven op het apparaat.
 
@@ -123,13 +125,19 @@ Door Bedrijfsgegevens verwijderen uit te voeren op een Android for Work-apparaat
 
 ### <a name="remove-company-data"></a>Bedrijfsgegevens verwijderen
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Selecteer **Alle apparaten** in het deelvenster **Apparaten**.
-4. Selecteer de naam van het apparaat waarvan u bedrijfsgegevens wilt verwijderen.
-5. Selecteer **Bedrijfsgegevens verwijderen** in het deelvenster waarin de naam van het apparaat wordt weergegeven. Selecteer **Ja** om de opdracht te bevestigen.
+1. Meld u aan bij [Intune in Azure Portal](https://aka.ms/intuneportal).
+2. Selecteer **Alle apparaten** in het deelvenster **Apparaten**.
+3. Selecteer de naam van het apparaat waarvan u bedrijfsgegevens wilt verwijderen.
+4. Selecteer **Bedrijfsgegevens verwijderen** in het deelvenster waarin de naam van het apparaat wordt weergegeven. Selecteer **Ja** om de opdracht te bevestigen.
 
 Als het apparaat is ingeschakeld en is verbonden, wordt de actie **Bedrijfsgegevens verwijderen** in minder dan 15 minuten aan alle typen apparaten doorgegeven.
+
+## <a name="delete-devices-from-the-intune-portal"></a>Apparaten verwijderen uit de Intune-portal
+
+Als u apparaten wilt verwijderen uit de Intune-portal, kunt u ze verwijderen in het specifieke deelvenster met apparaten. De volgende keer dat het apparaat wordt ingecheckt, worden eventuele bedrijfsgegevens op het apparaat verwijderd.
+
+1. Meld u aan bij [Intune in Azure Portal](https://aka.ms/intuneportal).
+2. Kies **Apparaten** > **Alle apparaten** > kies het apparaat dat u wilt verwijderen > **Verwijderen**.
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Apparaten verwijderen van de Azure Active Directory-portal
 

@@ -1,7 +1,7 @@
 ---
 title: App-gegevens en -toewijzingen controleren
 titlesuffix: Microsoft Intune
-description: Nadat u een app hebt toegewezen aan gebruikers of apparaten, kunt u met behulp van deze informatie de status ervan controleren.
+description: Nadat u een app hebt toegewezen aan gebruikers of apparaten, kunt u met behulp van deze informatie de status van de app controleren.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,26 +15,27 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01b7972a6a4dbb641f4c656190324d8572f9010c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0408ce3a4c2d4224780b4b23b0fb1b7d690471fe
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>App-gegevens en -toewijzingen controleren met Microsoft Intune
+# <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>App-gegevens en -toewijzingen controleren met Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune biedt een aantal manieren om de eigenschappen en toewijzingsstatus te controleren van apps die u beheert.
+Intune biedt een aantal manieren om de eigenschappen te controleren van apps die u beheert en om de status van app-toewijzingen te beheren.
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de groep **Controle en beheer**.
-3. Kies **Mobiele apps** en kies **Apps** in de groep **Beheren**.
-5. Kies in de lijst met apps een app die u wilt controleren. Vervolgens ziet u de app-blade met een overzicht van de apparaat- en gebruikersstatus.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Selecteer **Mobiele apps** in het menu **Intune**.
+4. Selecteer **Apps** in de sectie **Beheren** van het menu.
+5. Selecteer in de lijst met apps een app om te controleren. Vervolgens ziet u het deelvenster met een app-overzicht van de apparaat- en gebruikersstatus.
 
-## <a name="app-overview-blade"></a>Overzichtsblade van apps
+## <a name="app-overview-pane"></a>Deelvenster met een app-overzicht
 
-U kunt de specifieke app-blade gebruiken voor meer informatie over de status van een app in uw omgeving.
+In dit app-deelvenster kunt u details bekijken over de status van een app in uw omgeving.
 
 ### <a name="essentials"></a>Essentials
 De sectie **Essentiële informatie** bevat de volgende informatie over de app:
@@ -42,12 +43,12 @@ De sectie **Essentiële informatie** bevat de volgende informatie over de app:
  | **App-details**            | **Beschrijving**                                                      |
 |------------------------|------------------------------------------------------------------|
 | **Uitgever**          | De uitgever van de app.                                            |
-| **Besturingssysteem**   | Het besturingssysteem van de app (Windows, iOS, Android enzovoort) |
+| **Besturingssysteem**   | Het app-besturingssysteem (Windows, iOS, Android, enzovoort). |
 | **Gemaakt**             | De datum en tijd waarop deze revisie is gemaakt.                         |
-| **Toegewezen**           | **Ja** of **Nee** als de app is toegewezen.                  |
+| **Toegewezen**           | Of de app is toegewezen (**Ja** of **Nee**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Apparaat- en gebruikersstatusgrafieken
-In de grafieken ziet u het aantal voor de volgende status:
+In de grafieken wordt het aantal apps weergegeven voor de volgende status:
 
 | **Apparaatstatus**       | **Beschrijving**                                       |
 |-----------------------|-------------------------------------------------------|
@@ -55,34 +56,34 @@ In de grafieken ziet u het aantal voor de volgende status:
 | **Niet geïnstalleerd**     | Het aantal niet-geïnstalleerde apps.                     |
 | **Mislukt**            | Het aantal mislukte installaties.                   |
 | **Wacht op installatie**   | Het aantal apps dat momenteel wordt geïnstalleerd. |
-| **Niet van toepassing**           | Het aantal apps waar de status niet van toepassing is.            |
+| **Niet van toepassing**           | Het aantal apps waarvan de status is Niet toegepast.            |
 
 ### <a name="device-install-status"></a>Apparaatinstallatiestatus
 
-Wanneer u **Apparaatinstallatiestatus** in de sectie **Monitor** selecteert, wordt een apparaatstatuslijst weergegeven. De tabel bevat de volgende kolommen:
+Wanneer u **Apparaatinstallatiestatus** in de sectie **Controleren** van het menu selecteert, wordt een lijst met apparaatstatussen weergegeven. De tabel bevat de volgende kolommen:
 
 | **Apparaatkolom**      | **Beschrijving**                                                                                                                                                                                                                                            |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Apparaatnaam**      | Naam van het apparaat op platforms waarop het benoemen van een apparaat is toegestaan. Op andere platforms maakt Intune een naam op basis van andere eigenschappen. Dit kenmerk is niet beschikbaar voor alle apparaten.                                                                       |
+| **Apparaatnaam**      | De naam van het apparaat op platforms waarop het benoemen van een apparaat is toegestaan. Op andere platforms maakt Intune een naam op basis van andere eigenschappen. Dit kenmerk is niet beschikbaar op andere apparaten.                                                                       |
 | **Gebruikersnaam**        | De naam van de gebruiker.                                                                                                                                                                                                                                      |
-| **Platform**         | Het besturingssysteem van het apparaat (Windows, iOS, Android, enz.)                                                                                                                                                                                           |
-| **Versie**          | Het versienummer van de app. Voor Line-Of-Business-apps wordt het volledige versienummer van de app weergegeven. Het volledige versienummer duidt een specifieke release van de app aan. Het nummer wordt weergegeven als _Versie_(_Build_). Bijvoorbeeld 2.2(2.2.17560800) |
+| **Platform**         | Het besturingssysteem van het apparaat (Windows, iOS, Android, enzovoort).                                                                                                                                                                                           |
+| **Versie**          | Het versienummer van de app. Voor Line-Of-Business-apps wordt het volledige versienummer van de app weergegeven. Het volledige versienummer duidt een specifieke release van de app aan. Het nummer wordt weergegeven als _Versie_(_Build_). Bijvoorbeeld 2.2(2.2.17560800). |
 | **Status**           | De status van de app.                                                                                                                                                                                                                                     |
-| **Statusdetails**   | Details van de status.                                                                                                                                                                                                                                     |
-| **Laatste check-in**    | Datum van de laatste synchronisatie van het apparaat met Intune.                                                                                                                                                                                                                  |
+| **Statusdetails**   | De details van de status.                                                                                                                                                                                                                                     |
+| **Laatste check-in**    | De datum van de laatste synchronisatie van het apparaat met Intune.                                                                                                                                                                                                                  |
 
 
 ### <a name="user-install-status"></a>Gebruikersinstallatiestatus
 
-Wanneer u **Gebruikersinstallatiestatus** in de sectie **Monitor** selecteert, wordt een gebruikersstatuslijst weergegeven. De tabel bevat de volgende kolommen:
+Wanneer u **Gebruikersinstallatiestatus** selecteert in de sectie **Controleren** van het menu, wordt een lijst met gebruikersstatussen weergegeven. De tabel bevat de volgende kolommen:
 
 | **Gebruikerskolom**     | **Beschrijving**                           |
 |---------------------|-------------------------------------------|
-| **Naam**            | De naam van de gebruiker in Azure AD.         |
+| **Naam**            | De naam van de gebruiker in Azure Active Directory.         |
 | **Gebruikersnaam**       | De unieke naam van de gebruiker.              |
-| **Installaties**   | Het aantal installaties van apps dat wordt gebruikt door de gebruiker. |
-| **Fouten**        | Het aantal mislukte installaties door de gebruiker.     |
-| **Niet geïnstalleerd**   | Het aantal apps dat niet door de gebruiker is geïnstalleerd. |
+| **Installaties**   | Het aantal apps dat is geïnstalleerd door de gebruiker. |
+| **Fouten**        | Het aantal mislukte app-installaties voor de gebruiker.     |
+| **Niet geïnstalleerd**   | Het aantal apps dat niet is geïnstalleerd door de gebruiker. |
 
 
 ## <a name="next-steps"></a>Volgende stappen

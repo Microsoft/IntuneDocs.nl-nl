@@ -125,6 +125,7 @@
 #### [Uw Windows 10-apparaat registreren via 'Toegang tot werk of school'](enroll-your-w10-device-access-work-or-school.md)
 #### [Uw Windows 8.1- of Windows RT 8.1-apparaat registreren](enroll-your-w81-or-rt81-windows.md)
 #### [Uw Windows Phone 8.1-apparaat registreren](enroll-your-wp81-windows.md)
+### [Apps installeren vanuit de bedrijfsportal-app voor Windows 10](install-apps-cpapp-windows.md)
 ### [Een apparaat opnieuw instellen](reset-erase-your-device-cpwebsite.md)
 ### [Een apparaat versleutelen](encrypt-your-device-windows.md)
 ### [Een wachtwoord instellen of wijzigen](set-or-change-your-password-windows.md)

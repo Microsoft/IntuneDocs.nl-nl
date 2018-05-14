@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/07/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,30 +17,34 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa294e5df63106f949da94aec766c04839e0171f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 52431d900ee9abe71458b8b22d8a0946f22ce583
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Fouten naar de juiste personen verzenden voor uw beheerde macOS-apparaat
 
-Als er tijdens het gebruik van de bedrijfsportal-app fouten optreden op uw macOS-apparaat, kunt u informatie naar het ondersteuningsteam van uw bedrijf verzenden, zodat ze kunnen helpen bij het oplossen van het probleem.
+Soms treden onverwachte fouten op in de bedrijfsportal-app. Wanneer een fout optreedt, kunt u de details per e-mail verzenden naar een ondersteuningsmedewerker van uw bedrijf. Deze informatie bevat de context die nodig is om het probleem voor u op te lossen.
 
 ## <a name="send-errors-to-your-company-support"></a>Fouten naar het ondersteuningsteam van uw bedrijf verzenden
 
- U kunt de foutgegevens op verschillende manieren naar het ondersteuningsteam van uw bedrijf verzenden:
+Ga als volgt te werk om details over een fout in de bedrijfsportal-app te verzenden:
 
--   Klik in waarschuwingsberichten over fouten op **Rapport**.
+-   Klik op **Rapporteren** in het foutbericht dat u hebt ontvangen.
 
--   Klik in het menu **Help** van de bedrijfsportal-app op **Diagnostisch rapport opslaan**. Kies de locatie waar u het bestand wilt opslaan. U kunt dit bestand naar het ondersteuningsteam van uw bedrijf e-mailen of uploaden, afhankelijk van uw bedrijf.
+-   Klik op het menu **Help** > **Diagnostisch rapport opslaan**. Kies de locatie waar u het bestand wilt opslaan. Stuur dit bestand vervolgens naar de ondersteuningsmedewerker van uw bedrijf. U kunt dit via e-mail doen of het bestand uploaden.
 
-- Als uw e-mail-app al is geconfigureerd, kunt u het diagnostische rapport ook verzenden met **Help** > **Diagnostisch rapport verzenden**.
+-   Als uw e-mail-app is geconfigureerd, kunt u het diagnostische rapport verzenden met **Help** > **Diagnostisch rapport verzenden**. Nadat de logboeken zijn geüpload, klikt u op **E-mailgegevens**.
 
 ## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>Fouten verzenden naar de bedrijfsportal-ontwikkelaars voor macOS-apparaten
 
-De bedrijfsportal-app kan soms anders werken dan verwacht. Dit is een probleem waarover de app-ontwikkelaars meer willen weten, omdat dit kan helpen de app beter te laten werken en te voorkomen dat hetzelfde probleem in de toekomst opnieuw optreedt. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch rapport_ wordt genoemd.
+Soms wordt de bedrijfsportal-app onverwacht afgesloten. App-ontwikkelaars horen graag van u als er onverwacht gedrag optreedt. Ze gebruiken de foutgegevens om de hoofdoorzaak te achterhalen en toekomstige fouten te voorkomen. Dergelijke fouten worden op uw apparaat beschreven in een speciaal document dat een _diagnostisch logboek_ wordt genoemd. Het bedrijfsportalteam heeft de specifieke logboeken voor de bedrijfsportal nodig om de oorzaak van het probleem op te sporen.
 
-Als u diagnostische rapporten wilt verzenden naar het team van Microsoft dat de bedrijfsportal-app ontwikkelt, moet u bepaalde informatie opgeven om te kunnen achterhalen wat de hoofdoorzaak is. In plaats van verzending naar het ondersteuningsteam van uw bedrijf gebruikt u <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">deze e-mailsjabloon</a> voor verzending naar Microsoft.
+Logboeken naar Microsoft verzenden:
+
+1.  Open de app Bedrijfsportal.
+2.  Klik op het menu **Help** > **Diagnostisch rapport verzenden**.  Nadat de logboeken zijn geüpload, ontvangt u een incident-id. Kopieer de id en sla deze op.
+3.  Stuur Microsoft een e-mail met <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">deze sjabloon</a>.
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

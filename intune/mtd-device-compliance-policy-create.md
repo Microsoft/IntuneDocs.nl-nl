@@ -1,25 +1,25 @@
 ---
 title: Een MTD-nalevingsbeleid voor apparaten maken met Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Maak een Intune-nalevingsbeleid voor apparaten waarbij gebruik wordt gemaakt van de bedreigingsniveaus van uw MTD-partner om te bepalen of een mobiel apparaat toegang mag hebben tot bedrijfsresources.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1152473206826aa2e3f63c7196a3d0538101a948
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>MTD-nalevingsbeleid (Mobile Threat Defense) voor apparaten maken met Intune
 
@@ -32,11 +32,11 @@ Intune met MTD helpt u bij het detecteren van bedreigingen en het beoordelen van
 
 Als onderdeel van de configuratie van MTD in de MTD-partnerconsole, hebt u een beleid gemaakt waarmee verschillende bedreigingen in de categorieën Hoog, Gemiddeld en Laag worden ingedeeld. U moet nu het MTD-niveau instellen in het nalevingsbeleid van Intune voor apparaten.
 
-Vereisten voor apparaatnalevingsbeleid met MTD:
+Vereisten voor nalevingsbeleid voor apparaten met MTD:
 
 -   De integratie van MTD met Intune instellen
 
-## <a name="to-create-a-mtd-device-compliance-policy"></a>Een nalevingsbeleid voor MTD-apparaten maken
+## <a name="to-create-an-mtd-device-compliance-policy"></a>Nalevingsbeleid voor MTD-apparaten maken
 
 1.  Ga naar [Azure Portal](https://portal.azure.com/) en meld u aan met uw Intune-referenties.
 
@@ -65,7 +65,7 @@ Vereisten voor apparaatnalevingsbeleid met MTD:
 > [!IMPORTANT]
 > Als u beleid voor voorwaardelijke toegang voor Office 365 of andere services maakt, wordt de compatibiliteitsevaluatie van het apparaat bekeken en wordt niet-compatibele apparaten de toegang tot bedrijfsresources geweigerd tot de bedreiging op het apparaat is opgelost.
 
-## <a name="to-assign-a-mtd-device-compliance-policy"></a>Een nalevingsbeleid voor MTD-apparaten toewijzen
+## <a name="to-assign-an-mtd-device-compliance-policy"></a>Nalevingsbeleid voor MTD-apparaten toewijzen
 
 Als u een nalevingsbeleid voor apparaten aan gebruikers wilt toewijzen, kiest u een beleid dat u eerder hebt geconfigureerd. Bestaande beleidsregels vindt u in het deelvenster **Apparaatnaleving - beleid**.
 

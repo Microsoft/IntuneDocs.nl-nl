@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da8bb19db8c2da2d5854c3f991ccce4d124d594c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Verloren of gestolen iOS-apparaten zoeken met Intune
 
@@ -46,6 +46,15 @@ Deze functie wordt niet ondersteund op de volgende systemen:
 
 >[!NOTE]
 >De afstand die u op de kaart kunt inzoomen, is om privacyredenen beperkt.
+
+## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>Geluidssignaal voor de modus Apparaat verloren activeren op een iOS-apparaat
+
+Als iemand een iOS 9.3-apparaat of later heeft verloren, kunt u het apparaat extern activeren om een geluidssignaal af te spelen zodat de gebruiker het apparaat kan vinden. Het apparaat moet de [modus Apparaat verloren](device-lost-mode.md) hebben.
+
+Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de opties **Apparaten** > **Alle apparaten** > selecteer een iOS-apparaat > **Overzicht** > **Meer** > **Afspelen in de modus Apparaat verloren (alleen onder supervisie)**.
+
+Het geluid wordt afgespeeld totdat de gebruiker het geluid uitschakelt op het apparaat of totdat het apparaat niet meer de modus Apparaat verloren heeft.
+
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>Beveiligings- en privacygegevens voor de modus Apparaat verloren en de actie Apparaat zoeken
 - Er wordt geen locatie-informatie over het apparaat verzonden naar Intune voordat u deze actie hebt ingeschakeld.

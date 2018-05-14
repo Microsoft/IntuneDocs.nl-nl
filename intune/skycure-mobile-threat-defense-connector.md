@@ -1,29 +1,29 @@
 ---
-title: Skycure-connector met Microsoft Intune
-titlesuffix: 
-description: Meer informatie over de integratie van Intune met Skycure Mobile Threat Defense om toegang tot uw bedrijfsbronnen met mobiele apparaten te bepalen.
-keywords: 
+title: Symantec-connector met Microsoft Intune
+titlesuffix: ''
+description: Meer informatie over de integratie van Intune met Symantec Endpoint Protection Mobile om de toegang van mobiele apparaten tot bedrijfsresources te beheren.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 12/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3148a24b077dfd491ce06fcf708a81de7d12dc1
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 577eff3a5f3965065a4066973ea8c61160ab4563
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense-connector
+# <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile-connector
 
-U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren door middel van voorwaardelijke toegang op basis van een risicoanalyse die door Skycure wordt uitgevoerd. Skycure is een oplossing voor de beveiliging tegen bedreigingen op mobiele apparaten die met Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetriegegevens die zijn verzameld op apparaten met Skycure, zoals:
+U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren door middel van voorwaardelijke toegang op basis van een risicoanalyse die wordt uitgevoerd in SEP Mobile (Symantec Endpoint Protection Mobile), een oplossing voor de beveiliging tegen bedreigingen op mobiele apparaten die met Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetrische gegevens die zijn verzameld op apparaten waarop SEP Mobile wordt uitgevoerd, zoals:
 
 -   Fysieke beveiliging
 
@@ -33,21 +33,21 @@ U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren door midde
 
 -   Beveiliging tegen zwakke plekken
 
-U kunt beleidsregels voor voorwaardelijke toegang configureren op basis van de Skycure-risicoanalyse die via het Intune-nalevingsbeleid voor apparaten wordt ingeschakeld. U kunt met dit beleid de toegang tot bedrijfsresources voor niet-conforme apparaten toestaan of blokkeren op basis van de gedetecteerde bedreigingen.
+U kunt SEP Mobile-risicoanalyse inschakelen via het Intune-nalevingsbeleid voor apparaten. Vervolgens kunt u voorwaardelijk toegangsbeleid gebruiken om de toegang tot bedrijfsresources voor niet-conforme apparaten toe te staan of te blokkeren op basis van de gedetecteerde bedreigingen.
 
-## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Hoe kunt u met Intune en Skycure uw bedrijfsresources beter beveiligen?
+## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Hoe kunt u met Intune en SEP Mobile uw bedrijfsresources beter beveiligen?
 
-De mobiele Android- of iOS-app voor Skycure legt telemetriegegevens vast over het bestandssysteem, de netwerkstack, apparaten en apps waar dergelijke gegevens beschikbaar zijn. De app verzendt die gegevens vervolgens naar de Skycure-cloudservice om te bepalen hoe groot het risico van bedreigingen is voor het mobiele apparaat.
+Met de mobiele Android- of iOS-app voor SEP Mobile worden telemetriegegevens vastgelegd over het bestandssysteem, de netwerkstack, apparaten en apps waar dergelijke gegevens beschikbaar zijn. De app verzendt die gegevens vervolgens naar de SEP Mobile-cloudservice om te bepalen hoe groot het risico van bedreigingen is voor het mobiele apparaat.
 
-Het Intune-nalevingsbeleid voor apparaten bevat een regel voor Skycure Mobile Threat Defense die is gebaseerd op de Skycure-risicoanalyse. Als deze regel is ingeschakeld, controleert Intune of het apparaat voldoet aan het beleid dat u hebt ingeschakeld.
+Het Intune-nalevingsbeleid voor apparaten bevat een regel voor SEP Mobile die is gebaseerd op de SEP Mobile-risicoanalyse. Als deze regel is ingeschakeld, controleert Intune of het apparaat voldoet aan het beleid dat u hebt ingeschakeld.
 
-Als het apparaat niet aan het beleid blijkt te voldoen, wordt de toegang tot resources als Exchange Online en SharePoint Online geblokkeerd. Gebruikers op geblokkeerde apparaten ontvangen richtlijnen van de mobiele app voor Skycure zodat ze het probleem kunnen oplossen en weer toegang kunnen krijgen tot bedrijfsresources.
+Als het apparaat niet aan het beleid blijkt te voldoen, wordt de toegang tot resources als Exchange Online en SharePoint Online geblokkeerd. Gebruikers op geblokkeerde apparaten ontvangen richtlijnen van de mobiele app voor SEP Mobile zodat ze het probleem kunnen oplossen en weer toegang kunnen krijgen tot bedrijfsresources.
 
-Intune ondersteunt twee modi van integratie met Skycure:
+Intune biedt ondersteuning voor twee integratiemodi met SEP Mobile:
 
--   **Eenvoudige integratie** op basis van een modus voor alleen-lezen waarbij voor Skycure de apparaten in Intune worden weergegeven.
+-   **Basisinstallatie** op basis van een modus voor alleen-lezen waarbij voor SEP Mobile de apparaten in Intune worden weergegeven.
 
--   **Volledige integratie** waarbij door Skycure apparaatrisico- en beveiligingsincidentgegevens kunnen worden gemeld aan Intune.
+-   **Volledige integratie** waarbij met SEP Mobile apparaatrisico- en beveiligingsincidentgegevens kunnen worden gemeld aan Intune.
 
 ## <a name="sample-scenarios"></a>Voorbeeldscenario's
 
@@ -65,11 +65,11 @@ Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u a
 
 **Blokkeren wanneer er schadelijke apps zijn gedetecteerd:**
 
-![Schadelijke apps gedetecteerd](./media/skycure-arch-1.png)
+![Schadelijke apps gedetecteerd](./media/symantec-arch-1.png)
 
 **Toegang na herstel:**
 
-![Toegang wordt verleend na herstel nadat schadelijke apps zijn gedetecteerd](./media/skycure-arch-2.png)
+![Toegang wordt verleend na herstel nadat schadelijke apps zijn gedetecteerd](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Toegangsbeheer op basis van bedreigingen voor het netwerk
 
@@ -77,11 +77,11 @@ Detecteer bedreigingen zoals **man-in-the-middle**-aanvallen in het netwerk en b
 
 **Netwerktoegang via Wi-Fi blokkeren:**
 
-![Netwerktoegang via Wi-Fi blokkeren](./media/skycure-arch-3.png)
+![Netwerktoegang via Wi-Fi blokkeren](./media/symantec-arch-3.png)
 
 **Toegang na herstel:**
 
-![Toegang na herstel](./media/skycure-arch-4.png)
+![Toegang na herstel](./media/symantec-arch-4.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Toegangsbeheer voor SharePoint Online op basis van bedreigingen voor het netwerk
 
@@ -89,11 +89,11 @@ Detecteer bedreigingen zoals **man-in-the-middle**-aanvallen in het netwerk en v
 
 **SharePoint Online blokkeren wanneer netwerkbedreigingen worden gedetecteerd:**
 
-![SharePoint Online blokkeren wanneer netwerkbedreigingen worden gedetecteerd](./media/skycure-arch-5.png)
+![SharePoint Online blokkeren wanneer netwerkbedreigingen worden gedetecteerd](./media/symantec-arch-5.png)
 
 **Toegang na herstel:**
 
-![Voorbeeld waarin na herstel toegang is verleend aan Sharepoint](./media/skycure-arch-6.png)
+![Voorbeeld waarin na herstel toegang is verleend aan Sharepoint](./media/symantec-arch-6.png)
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
@@ -107,18 +107,18 @@ Detecteer bedreigingen zoals **man-in-the-middle**-aanvallen in het netwerk en v
 
 -   Microsoft Intune-abonnement
 
--   Skycure Mobile Threat Defense-abonnement
+-   Symantec Endpoint Protection Mobile-abonnement
 
-Ga naar de [Skycure-website](https://www.skycure.com/skycure-microsoft-integration/) voor meer informatie.
+Ga naar de [Symantec-website](https://www.skycure.com/skycure-microsoft-integration/) voor meer informatie.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Hier volgen de stappen die u moet uitvoeren om Intune met Skycure te integreren:
+Hier volgen de stappen die u moet uitvoeren om Intune met SEP Mobile te integreren:
 
-- [De integratie van Skycure met Intune instellen](skycure-mtd-connector-integration.md)
+- [SEP Mobile-integratie met Intune instellen](skycure-mtd-connector-integration.md)
 
-- [Skycure-apps, Microsoft Authenticator en het configuratiebeleid voor iOS-apps toevoegen en toewijzen](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [SEP Mobile-apps, Microsoft Authenticator en het configuratiebeleid voor iOS-apps toevoegen en toewijzen](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [Skycure-nalevingsbeleid voor apparaten maken met Intune](mtd-device-compliance-policy-create.md)
+- [SEP Mobile-nalevingsbeleid voor apparaten met Intune maken](mtd-device-compliance-policy-create.md)
 
-- [De Skycure MTD-connector in Intune inschakelen](mtd-connector-enable.md)
+- [De SEP Mobile MTD-connector in Intune inschakelen](mtd-connector-enable.md)

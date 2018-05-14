@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 185cf1061ff4d577fd14af59bbe5fbc38365c3d1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c73b745915f1dcb32269059907b1cec1078d4b39
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
@@ -266,6 +266,7 @@ Met de entiteit **Devices** worden alle geregistreerde apparaten voor beheer en 
 | LastPolicyUpdateUtc | Tijdstip waarop het beleid voor het laatst op het apparaat is bijgewerkt. |
 | LastExchangeStatusUtc | Laatste keer dat het apparaat is gesynchroniseerd met Exchange. |
 | IsDeleted | Ingesteld op True als het apparaat niet meer wordt beheerd door Intune. De laatst bekende status blijft behouden. |
+| AndroidSecurityPatchLevel |De datum van de meest recente beveiligingspatch van het apparaat. |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 

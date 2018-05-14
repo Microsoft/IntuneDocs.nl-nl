@@ -2,29 +2,42 @@
 title: Apparaten inschrijven met het Windows AutoPilot Deployment-programma
 titleSuffix: Microsoft Intune
 description: Informatie over het inschrijven van Windows 10-apparaten met het Windows AutoPilot Deployment-programma.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 4522be0b636a72844fa6177fbb35d3350cfbd00e
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 934b80d1c174c25d37e30695f46afc88c8d8bfc3
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>Windows-apparaten inschrijven met het Windows AutoPilot Deployment-programma
 Het Windows AutoPilot Deployment-programma vereenvoudigt het inrichten van apparaten. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en AutoPilot kunt u nieuwe apparaten aan uw eindgebruikers geven zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om AutoPilot-apparaten te beheren, kunt u beleidsregels, profielen, apps enzovoort beheren op de apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario’s en vereisten.
 
 ## <a name="prerequisites"></a>Vereisten
-- [Apparaten moeten zijn geregistreerd voor uw organisatie](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#device-registration-and-oobe-customization)
 - [Automatische inschrijving bij Windows is ingeschakeld](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium-abonnement](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="add-devices"></a>Apparaten toevoegen
+
+U kunt Windows AutoPilot-apparaten toevoegen door een CSV-bestand te importeren met de bijbehorende informatie.
+
+1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > **Importeren**.
+
+    ![Schermafbeelding van Windows AutoPilot-apparaten](media/enrollment-autopilot/autopilot-import-device.png)
+
+2. Blader onder **Windows AutoPilot-apparaten toevoegen** naar een CSV-bestand met het serienummer, de Windows-product-id's, en de hardwarehashes van de apparaten die u wilt toevoegen.
+
+    ![Schermafbeelding van het toevoegen van Windows AutoPilot-apparaten](media/enrollment-autopilot/autopilot-import-device2.png)
+
+3. Kies **Importeren** om apparaatgegevens te importeren. Dit kan enkele minuten duren.
 
 ## <a name="synchronize-devices"></a>Apparaten synchroniseren
 Synchroniseer uw geregistreerde apparaten met Intune, zodat u ze kunt configureren.
@@ -108,6 +121,16 @@ U kunt een waarschuwing bekijken voor niet-toegewezen Windows AutoPilot-apparate
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies **Apparaatinschrijving** onder **Intune**.
 4. Kies **Overzicht** om de waarschuwing te zien. Klik op de waarschuwing voor een lijst met AutoPilot-apparaten.  
+
+## <a name="delete-autopilot-devices"></a>AutoPilot-apparaten verwijderen
+
+U kunt Windows AutoPilot-apparaten verwijderen die niet zijn ingeschreven. U kunt apparaten uitschrijven en ze vervolgens verwijderen.
+
+1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten**.
+
+2. Kies onder **Windows AutoPilot-apparaten** de apparaten die u wilt verwijderen, en kies vervolgens **Verwijderen**.
+
+3. Bevestig de verwijdering door **Ja**  te kiezen. Verwijderen kan enkele minuten duren.
 
 
 ## <a name="next-steps"></a>Volgende stappen
