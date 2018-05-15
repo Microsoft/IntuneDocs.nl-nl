@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c2b17e1acff965a08245094c57df81c58f44fda
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Intune-certificaatprofielen configureren
 
@@ -103,7 +103,7 @@ Nadat u een vertrouwd CA-certificaatprofiel hebt gemaakt, maakt u SCEP- of PFX-c
    > 
    > De twee variabelen die momenteel worden ondersteund voor de aangepaste indeling zijn `Common Name (CN)` en `Email (E)`. Door een combinatie van deze twee variabelen met statische tekenreeksen te gebruiken, kunt u een aangepaste indeling voor de naam van een certificaathouder maken, bijvoorbeeld:
    > 
-   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   >     `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`
    > 
    > In dit voorbeeld heeft de beheerder een indeling voor de naam van een certificaathouder gemaakt, waarin naast de variabelen `CN` en `E` gebruik wordt gemaakt van tekenreeksen voor de waarden Organisatie-eenheid, Organisatie, Locatie, Regio en Land. De [functie CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) geeft een lijst met ondersteunde tekenreeksen.
 

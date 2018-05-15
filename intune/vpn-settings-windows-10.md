@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: b6371da954aa913e1378c065b203fa197f3fc767
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: d41ec494672340a9f5751e6fc40edf1a7b06bb40
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>VPN-instellingen voor Windows 10 in Intune
 
@@ -99,17 +99,10 @@ Zie [EAP-configuratie](https://docs.microsoft.com/windows/client-management/mdm/
 
 ## <a name="apps-and-traffic-rules"></a>Apps en verkeersregels
 
-<<<<<<< HEAD
 - **WIP of apps koppelen aan deze VPN**: schakel deze instelling in als u wilt dat alleen bepaalde apps de VPN-verbinding gebruiken. Uw opties zijn:
 
   - **Een WIP koppelen aan deze verbinding**: voer een **WIP-domein in voor deze verbinding**
   - **Apps koppelen met deze verbinding**: u kunt **een VPN-verbinding beperken tot deze apps** en vervolgens deze **gekoppelde apps** toevoegen. De apps die u invoert, maken automatisch gebruik van de VPN-verbinding. De app-id is afhankelijk van het type app. Voer voor een universele app de naam van de productfamilie in waartoe het pakket behoort. Voer voor een bureaublad-app het bestandspad van de app in.
-=======
-**VPN-verbinding beperken tot deze apps**: schakel deze instelling in als u wilt dat alleen bepaalde apps gebruikmaken van de VPN-verbinding.
-
-**Gekoppelde apps**: voer een lijst in met apps die automatisch gebruikmaken van de VPN-verbinding. De app-id is afhankelijk van het type app. Voer voor een universele app de naam van de productfamilie in waartoe het pakket behoort. Voer voor een bureaublad-app het bestandspad van de app in.
->>>>>>> b2f641d045b7649f641fb98e07accc745e697d84
-
   >[!IMPORTANT]
   >Het is raadzaam dat u alle app-lijsten beveiligt die zijn gemaakt voor VPN’s per app. Als een ongeautoriseerde gebruiker deze lijst wijzigt en u deze importeert in de app-lijst VPN per app, verleent u onbevoegde gebruikers mogelijk VPN-toegang tot apps die niet toegankelijk zouden moeten zijn. Een manier om uw lijsten met apps te beveiligen, is het gebruik van een toegangsbeheerlijst (ACL).
 
