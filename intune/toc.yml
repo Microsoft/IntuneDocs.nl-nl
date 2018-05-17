@@ -308,6 +308,8 @@
                       href: app-protection-policy-settings-android.md
                     - name: iOS-instellingen
                       href: app-protection-policy-settings-ios.md
+                    - name: Uitzonderingen voor gegevensoverdracht
+                      href: app-protection-policies-exception.md
                 - name: Beveiligingsbeleid voor apps valideren
                   href: app-protection-policies-validate.md
                 - name: Gebruikersstatus voor app-beveiliging bewaken

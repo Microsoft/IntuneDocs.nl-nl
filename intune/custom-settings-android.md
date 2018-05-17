@@ -40,7 +40,7 @@ Door een aangepast profiel te gebruiken, kunt u de volgende Android-instellingen
 1. Meld u aan bij [Azure Portal](https://portal.azure.com). 
 2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
 3. Maak een aangepast profiel met behulp van het Android-platform. In [Aangepaste apparaatinstellingen configureren in Microsoft Intune](custom-settings-configure.md) staan de stappen beschreven.
-4. Selecteer in **Aangepaste OMA-URI-instellingen****Toevoegen** en selecteer vervolgens **Rij toevoegen**.
+4. Selecteer in **Aangepaste OMA-URI-instellingen** **Toevoegen** en selecteer vervolgens **Rij toevoegen**.
 5. Voer de volgende eigenschappen in:
 
    - **Naam**: voer een unieke naam in voor de OMA-URI-instelling, zodat u deze gemakkelijk kunt vinden.
