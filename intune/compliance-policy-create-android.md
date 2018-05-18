@@ -14,11 +14,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afc8edb38b667d744bb586d1ed5c82df8ab10f49
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Een apparaatnalevingsbeleid toevoegen voor Android-apparaten in Intune
 
@@ -96,16 +96,16 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 
 - **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**: **verplicht** gebruikers een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
 - **Minimale wachtwoordlengte**: voer het minimale aantal cijfers of tekens aan waaruit het wachtwoord van de gebruiker moet bestaan.
-- **Vereist wachtwoordtype**: kies of een wachtwoord alleen numerieke tekens mag bevatten of uit een combinatie van cijfers en andere tekens moet bestaan. U kunt kiezen uit:
+- **Vereist wachtwoordtype**: selecteer of een wachtwoord alleen numerieke tekens mag bevatten of uit een combinatie van cijfers en andere tekens moet bestaan. U kunt kiezen uit:
   - **Standaardwaarde apparaat**
   - **Lage beveiligingsbiometrie**
   - **Ten minste numeriek**
-  - **Complex numeriek**
+  - **Numeriek complex**: herhaalde of opeenvolgende cijfers (zoals 1111 of 1234) zijn niet toegestaan.
   - **Ten minste alfabetisch**
   - **Ten minste alfanumeriek**
   - **Minstens alfanumeriek met symbolen**
 - **Maximum aantal minuten van inactiviteit voordat wachtwoord is vereist**: geef aan na hoeveel niet-actieve tijd de gebruiker het wachtwoord opnieuw moet invoeren.
-- **Wachtwoord verloopt (in dagen)**: selecteer het aantal dagen waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken.
+- **Wachtwoord verloopt (in dagen)**: selecteer het aantal dagen waarna het wachtwoord verloopt en de gebruiker een nieuw wachtwoord moet maken.
 - **Aantal vorige wachtwoorden om hergebruik te voorkomen**: geef het aantal recente wachtwoorden op dat niet opnieuw mag worden gebruikt. Gebruik deze instelling om te voorkomen dat de gebruiker eerder gebruikte wachtwoorden hergebruikt.
 
 ### <a name="encryption"></a>Versleuteling

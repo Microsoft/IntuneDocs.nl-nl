@@ -14,11 +14,11 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 74fe0897764957e84e5a13944305221cc85bd8c7
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Een nalevingsbeleid voor Android for Work-apparaten in Intune toevoegen
 
@@ -91,7 +91,7 @@ Als uw bedrijf Android-werkprofielen gebruikt, kunt u **Bedreigingsscan voor app
 
 - **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**: **verplicht** gebruikers een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
 - **Minimale wachtwoordlengte**: voer het minimale aantal cijfers of tekens aan waaruit het wachtwoord van de gebruiker moet bestaan.
-- **Vereist wachtwoordtype**: kies of een wachtwoord alleen numerieke tekens mag bevatten of uit een combinatie van cijfers en andere tekens moet bestaan. U kunt kiezen uit:
+- **Vereist wachtwoordtype**: kies of een wachtwoord alleen numerieke tekens mag bevatten of ook een combinatie van cijfers en andere tekens. U kunt kiezen uit:
   - **Standaardwaarde apparaat**
   - **Lage beveiligingsbiometrie**
   - **Ten minste numeriek**

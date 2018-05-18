@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d33768206c53550ec1cb34d5c1ad5e2f33e4f8c8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 812f73cb0857298f01967cebbb36f0b8220fb9c6
+ms.sourcegitcommit: 179bea63fe52a8cce236b6ca8d82a6bd51bf17a5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Uitzonderingen maken voor het gegevensoverdrachtbeleid van Intune MAM (Mobile Application Management)
 
@@ -30,9 +30,7 @@ Als beheerder kunt u uitzonderingen maken voor het gegevensoverdrachtbeleid van 
 >[!WARNING] 
 > U bent zelf verantwoordelijk voor het aanbrengen van wijzigingen aan het uitzonderingsbeleid voor gegevensoverdracht. Door toevoegingen aan dit beleid kunnen onbeheerde apps (apps die niet door Intune worden beheerd) toegang verkrijgen door de gegevens die door beheerde apps worden beschermd. Als u toegang biedt tot beschermde gegevens kan dit leiden tot beveiligingslekken. Voeg alleen gegevensoverdrachtuitzonderingen toe voor apps die uw organisatie moet gebruiken, maar die geen ondersteuning bieden voor Intune APP (beleid voor toepassingsbeveiliging). Daarnaast dient u alleen uitzonderingen toe te voegen voor apps waarvan u niet denkt dat ze zullen leiden tot een gegevenslek.
 
-Deze functie is van toepassing wanneer u een Intune-beveiligingsbeleid voor toepassingen maakt, met gegevensoverdracht ingesteld op **Alleen beheerde apps**. Afgezien van de uitzonderingen die u maakt, wordt de gegevensoverdracht nog steeds beperkt tot de toepassingen die door Intune worden beheerd als uw beleid voor gegevensoverdracht is ingesteld op **Uitsluitend beheerde apps**. U kunt de beperkingen maken met behulp van protocollen (iOS) of pakketten (Android).
-
-U kunt deze functie zodanig configureren dat uitzonderingen op het Intune MAM-app-beveiligingsbeleid met **beperkte gegevensoverdracht** worden toegestaan. Dit beleid is alleen vereist als u wilt toestaan dat gegevens worden overgedragen naar een app die geen ondersteuning biedt voor Intune APP. Met dit beleid kunnen toepassingen die worden beheerd door Intune en waarvoor de gegevensoverdracht is ingesteld op **Uitsluitend beheerde apps** onbeheerde toepassingen aanroepen op basis van een URL-protocol (iOS) of een pakketnaam (Android). Er worden in Intune belangrijke, systeemeigen toepassingen toegevoegd aan de lijst standaarduitzonderingen. 
+In een Intune Application Protection Policy betekent de instelling **App mag gegevens overdragen naar andere apps** voor **door beleid beheerde apps** dat de app alleen gegevens kan overdragen naar apps die worden beheerd door Intune. Als u gegevensoverdracht moet toestaan naar specifieke apps die de Intune-app niet ondersteunen, kunt u uitzonderingen op dit beleid maken met behulp van de optie **Vrijgestelde apps selecteren**. Met uitzonderingen kunnen toepassingen die worden beheerd door Intune niet-beheerde toepassingen aanroepen op basis van URL-protocol (iOS) of pakketnaam (Android). Standaard bevat deze lijst met uitzonderingen in Intune belangrijke, systeemeigen toepassingen. 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS-uitzonderingen voor gegevensoverdracht
 Bij beleid voor iOS kunt u uitzonderingen voor gegevensoverdracht configureren op basis van URL-protocollen. Als u een uitzondering wilt toevoegen, bekijkt u de documentatie van de ontwikkelaar van de app om te achterhalen of er informatie in staat over ondersteunde URL-protocollen. Zie [Beveiligingsbeleidsinstellingen voor iOS-apps - Uitzonderingen voor gegevensoverdracht](app-protection-policy-settings-ios.md#data-transfer-exemptions) voor meer informatie over uitzonderingen voor gegevensoverdracht in iOS.

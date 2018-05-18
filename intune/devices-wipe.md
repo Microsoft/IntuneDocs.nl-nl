@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,35 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 84fc162eda25970c14ed1014b9f67ef3e782c663
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Apparaten verwijderen door Fabrieksinstellingen terugzetten te gebruiken of bedrijfsgegevens te verwijderen
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-U kunt apparaten van Intune verwijderen die niet meer nodig zijn, een nieuwe bestemming krijgen of zijn kwijtgeraakt. U kunt dit doen met de actie **Bedrijfsgegevens verwijderen** of **Fabrieksinstellingen terugzetten**. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal op afstand een opdracht geven voor persoonlijke apparaten die bij Intune zijn ingeschreven.
+Met de acties **Bedrijfsgegevens verwijderen** of **Fabrieksinstellingen terugzetten** kunt u apparaten uit Intune verwijderen die niet meer nodig zijn, een nieuwe bestemming krijgen of zijn kwijtgeraakt. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal op afstand een opdracht geven voor persoonlijke apparaten die bij Intune zijn ingeschreven.
 
 > [!NOTE]
 > Gebruik de actie **Fabrieksinstellingen terugzetten** of **Bedrijfsgegevens verwijderen** voor alle apparaten die aan een gebruiker zijn gekoppeld voordat u een gebruiker verwijdert uit Azure Active Directory (Azure AD). Als u gebruikers met beheerde apparaten uit Azure AD verwijdert, kan Intune geen fabrieksinstellingen meer uitgeven of bedrijfsgegevens van die apparaten verwijderen.
 
 ## <a name="factory-reset"></a>Fabrieksinstellingen terugzetten
 
-Met de actie **Fabrieksinstellingen terugzetten** zet u de standaardfabrieksinstellingen terug op het apparaat. Hiermee verwijdert u alle bedrijfs- en gebruikersgegevens en -instellingen. Het apparaat wordt uit Intune-beheer verwijderd. Fabrieksinstellingen terugzetten is nuttig wanneer u een apparaat opnieuw wilt instellen voordat u het aan een nieuwe gebruiker geeft of wanneer een apparaat is verloren of gestolen. Wees voorzichtig bij het selecteren van **Fabrieksinstellingen terugzetten**. De gegevens op het apparaat kunnen niet worden hersteld.
+Met de actie **Fabrieksinstellingen terugzetten** zet u de standaardfabrieksinstellingen terug op het apparaat. De gebruikersgegevens worden bewaard of gewist, afhankelijk van of u het selectievakje **Inschrijvingsstatus en gebruikersaccount behouden** al dan niet hebt ingeschakeld.
+
+|Actie Fabrieksinstellingen terugzetten|**Inschrijvingsstatus en gebruikersaccount behouden**|Verwijderd uit Intune-beheer|Description|
+|:-------------:|:------------:|:------------:|------------|
+|**Fabrieksinstellingen terugzetten**| Niet ingeschakeld | Ja | Alle gebruikersaccounts, gegevens, MDM-beleidsregels en instellingen worden gewist. De standaardtoestand en -instellingen van het besturingssysteem worden teruggezet.|
+|**Fabrieksinstellingen terugzetten**| Ingeschakeld | Nee | Alle MDM-beleidsregels worden gewist. Gebruikersaccounts en -gegevens blijven bewaard. Gebruikersinstellingen worden teruggezet op de standaardwaarden. De standaardtoestand en -instellingen van het besturingssysteem worden teruggezet.|
+
+De optie **Inschrijvingsstatus en gebruikersaccount behouden** is alleen beschikbaar voor Windows 10 versie 1709 en hoger.
+
+MDM-beleidsregels worden toegepast wanneer het apparaat de volgende keer verbinding maakt met Intune.
+
+Fabrieksinstellingen terugzetten is nuttig wanneer u een apparaat opnieuw wilt instellen voordat u het aan een nieuwe gebruiker geeft of wanneer een apparaat is verloren of gestolen. Wees voorzichtig bij het selecteren van **Fabrieksinstellingen terugzetten**. De gegevens op het apparaat kunnen niet worden hersteld.
 
 ### <a name="factory-reset-a-device"></a>Fabrieksinstellingen terugzetten op een apparaat
 

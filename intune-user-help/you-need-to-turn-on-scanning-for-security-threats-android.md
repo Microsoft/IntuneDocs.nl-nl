@@ -1,6 +1,6 @@
 ---
-title: U moet het scannen op beveiligingsrisico's op het apparaat inschakelen | Microsoft Docs
-description: ''
+title: U moet het scannen op beveiligingsrisico's op het apparaat inschakelen
+description: Informatie over het inschakelen van beveiligingsrisicoscans op uw apparaat
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -15,16 +15,20 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 403b3b50cd8fba7d8d0c8ee6fd6f20d0d5561b76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: cf2413ee879cf4a6cb2742d34f452105057ccf59
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
-# <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>U moet het op uw apparaat mogelijk maken om te scannen op beveiligingsrisico’s
+# <a name="enable-security-threat-scans-on-your-device"></a>Beveiligingsrisicoscans inschakelen op uw apparaat 
+Als u onbewust een onveilige app hebt geïnstalleerd, lopen de gegevens op uw apparaat gevaar. Om de gegevens op uw apparaat te beschermen, raden we u het volgende aan: 
 
-Op Android-apparaten kunnen apps worden gedownload en geïnstalleerd voor het uitvoeren van vele verschillende taken. Niet alle apps zijn echter hetzelfde, en sommige apps kunnen problemen veroorzaken. Een algemene aanbeveling is om alleen apps te downloaden van geverifieerde bronnen, zoals de Google Play Store. Het ondersteuningsteam van uw bedrijf heeft ervoor gekozen om de gegevens op uw apparaat extra te beveiligen door Google de apps te laten scannen die u installeert. Zo weet u zeker dat deze veilig zijn.
+* Download alleen apps van geverifieerde bronnen, zoals de Google Play Store.  
+* Schakel beveiligingsrisicoscans op uw apparaat in. Deze scans worden uitgevoerd door Google en hiermee wordt gecontroleerd of het veilig is om apps te installeren.  
 
-U kunt dit inschakelen via **Instellingen** > **Google** > **Beveiliging**. Schakel vervolgens **Apparaat scannen op beveiligingsrisico's** in.
+Als u de scans op uw apparaat wilt inschakelen, gaat u naar **Instellingen** > **Google** > **Beveiliging**. Schakel **Apparaat scannen op beveiligingsrisico's** in.  
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Op sommige Samsung-apparaten staat de instelling in **Instellingen** > **Google** > **Beveiliging** > **Google Play Protect**.
+
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog). 

@@ -1,11 +1,11 @@
 ---
-title: Uw Windows-apparaat uit Intune verwijderen | Microsoft Docs
+title: Uw Windows-apparaat uit Intune verwijderen
 description: Hierin wordt beschreven hoe u een Windows-apparaat uit Intune kunt verwijderen
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,61 +17,68 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 89a69f7d5cda31658cc9faf068a2a37698fdd93c
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
+ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/09/2018
 ---
-# <a name="remove-your-windows-device-from-intune"></a>Uw Windows-apparaat uit Intune verwijderen
+# <a name="remove-your-windows-device-from-intune-management"></a>Windows-apparaat verwijderen uit Intune-beheer
 
-Als u uw apparaat hebt geregistreerd bij Intune, maar uw Windows-apparaat niet meer wilt gebruiken voor toegang tot e-mail, apps of andere resources van uw werk of school, moet u uw apparaat uit het beheer verwijderen. Wanneer u uw apparaat uit Intune verwijdert, hebt u geen toegang meer tot deze resources. Zie [Wat gebeurt er wanneer u de registratie van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-windows.md) voor meer informatie over wat er gebeurt als u uw apparaat uit het beheer verwijdert.
+U kunt een geregistreerd Windows-apparaat in de volgende gevallen verwijderen uit Intune:  
+* U gebruikt dit apparaat niet meer voor werk of school. 
+* U gebruikt dit apparaat niet meer voor toegang tot werk- of school-e-mails, -apps of andere bronnen.
+
+Wanneer het apparaat is verwijderd, kunt u het niet meer gebruiken om school- of werkbronnen te openen. Windows-apparaten die kunnen worden verwijderd uit Intune zijn onder andere:  
+* Windows 10-apparaten 
+* Windows 8.1-computer
+* Mobiele apparaten met Windows 8.1
+ 
+Voor meer informatie over wat er gebeurt nadat u een apparaat hebt verwijderd uit Intune-beheer raadpleegt u [Wat gebeurt er wanneer u de registratie van uw apparaat bij Intune ongedaan maakt?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
 ## <a name="remove-your-windows-10-device"></a>Uw Windows 10-apparaat verwijderen
+Voer de volgende stappen uit om een Windows 10-apparaat te verwijderen uit Intune.
 
-1.  Tik in de app-lijst op de **Bedrijfsportal** -app.
+### <a name="via-the-company-portal-app"></a>Via de bedrijfsportal-app
 
-2.  Meld u aan met de referenties van uw werk- of schoolaccount.
+1. Open de app Bedrijfsportal.
+2. Meld u aan met de referenties van uw werk- of schoolaccount.
+3. Selecteer in **Mijn apparaten** het apparaat dat u wilt verwijderen.
+4. Selecteer in de rechterbovenhoek van de pagina het pictogram **Meer info**.
+5. Selecteer **Verwijderen**. 
+6. Selecteer **Apparaat verwijderen** om te bevestigen dat u het apparaat wilt verwijderen.
 
-3.  Selecteer bij **Mijn apparaten**het apparaat waarvoor u de registratie ongedaan wilt maken.
-
-4.  Tik op **Verwijderen** &gt; **Verwijderen**.
+### <a name="via-device-settings-app"></a>Via de app Instellingen
+1. Open de app Instellingen. 
+2. Ga naar **Accounts** > **Toegang tot werk of school**.
+3. Selecteer het verbonden account dat u wilt verwijderen > **Loskoppelen**.
+4. Selecteer **Ja** om te bevestigen dat u het apparaat wilt verwijderen.
 
 ## <a name="remove-your-windows-81-computer"></a>Uw Windows 8.1-computer verwijderen
+Voer de volgende stappen uit om een Windows 8.1-apparaat te verwijderen uit Intune.
 
-1.  Ga naar **Pc-instellingen** &gt; **Netwerk** &gt; **Werkplek**.
-
+1.  Ga naar **Pc-instellingen** > **Netwerk** > **Werkplek**.
 2.  Selecteer onder **Workplace Join** de optie **Verlaten**.
-
 3.  Selecteer onder **Apparaatbeheer inschakelen** de optie **Uitschakelen**.
-
 4.  Selecteer **Uitschakelen** in het pop-upvenster dat wordt geopend.
 
-## <a name="remove-your-windows-phone-81-mobile-device"></a>Uw mobiele apparaat met Windows Phone 8.1 verwijderen
+## <a name="remove-your-windows-81-mobile-device"></a>Een mobiel apparaat met Windows 8.1 verwijderen
+Voer de volgende stappen uit als u een mobiel apparaat met Windows 8.1 wilt verwijderen uit Intune.
 
-1.  Tik op **Instellingen** &gt; **Werkplek**.
-
+1.  Ga naar **Instellingen** > **Werkplek**.
 2.  Tik op het werkplekaccount dat u wilt registreren.
-
 3.  Tik onder in het scherm op **Verwijderen**.
-
-4.  Tik in het dialoogvenster **Account verwijderen** op **Verwijderen**.
-
+4.  Tik in het dialoogvenster **Account verwijderen** op **Verwijderen**.  
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Uw persoonlijke gegevens verwijderen na het verwijderen van de bedrijfsportal
-
 Er zijn twee soorten gegevens die door de bedrijfsportal op uw Windows-apparaat worden opgeslagen:
 
--   **Diagnostische logboeken**: standaardinformatie over de appactiviteit die door Microsoft wordt verzameld, bijvoorbeeld hoe lang de app was geopend of is gecrasht. Deze informatie wordt automatisch gewist wanneer u de bedrijfsportal-app verwijdert.
--   **Toepassingscache**: opslaan van bepaalde ondersteuningsbestanden die voor de app benodigd zijn om te kunnen werken, zoals pictogrammen en instellingen.
+-   **Diagnostische logboeken**: activiteitgegevens van app die standaard door Microsoft worden verzameld wanneer u het apparaat uit de bedrijfsportal verwijdert. Activiteitgegevens van een app omvatten bijvoorbeeld gegevens over hoelang de app geopend was en of de app is vastgelopen.
+-   **Toepassingscache**: ondersteuningsbestanden die de app nodig heeft om te kunnen werken, zoals pictogrammen en instellingen.
 
 Er zijn een aantal stappen die u moet uitvoeren om deze gegevens volledig te verwijderen.
 
-### <a name="uninstall-the-company-portal"></a>De bedrijfsportal verwijderen  
+1. De bedrijfsportal verwijderen. Als u[de bedrijfsportal-app verwijdert](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs), wordt een deel van de app-gegevens die op uw apparaat zijn opgeslagen, verwijderd.  
 
-Als u[de bedrijfsportal-app verwijdert](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs), wordt een deel van de app-gegevens die op uw apparaat zijn opgeslagen, verwijderd.  
-
-### <a name="reset-the-company-portal"></a>De bedrijfsportal opnieuw instellen
-
-U kunt de rest van de gegevens in de bedrijfsportal-app herstellen door bij Instellingen de app opnieuw in te stellen. Open **Instellingen** > **Apps en functies** > **Bedrijfsportal** > **Geavanceerde opties** > **Opnieuw instellen**.
+2. De bedrijfsportal opnieuw instellen om de opgeslagen app-gegevens opnieuw in te stellen. Open de app **Instellingen** en selecteer > **Apps** > **Bedrijfsportal** > **Geavanceerde opties** > **Opnieuw instellen**. 
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

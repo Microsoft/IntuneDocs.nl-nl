@@ -17,15 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3948ca1dd68e34997a21444f271ae31407d6508
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Logboeken verzenden naar het ondersteuningsteam van het bedrijf via de bedrijfsportal-app voor Windows 10
 
 Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Windows 10-apparaat gebruikt, kunt u het ondersteuningsteam van het bedrijf helpen het probleem op te lossen door informatie naar hen te e-mailen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
+
+> [!Note]       
+> Vanuit de bedrijfsportal voor Windows 10 worden app-logboeken rechtstreeks naar Microsoft verzonden wanneer de gebruiker de werkstroom voor hulp bij een probleem in gang zet. Dit vereenvoudigt het detecteren en oplossen van problemen die aan Microsoft worden gemeld.
 
 1. Open de app **Bedrijfsportal**.
 2. Selecteer het tandwielpictogram **Instellingen** en vervolgens **Logboeken verzenden**.

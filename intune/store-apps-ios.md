@@ -15,58 +15,60 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4eaa4b279ab98c6fe41482628937e0f2b0dc70a5
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5a9bc97356174ce331099f7f59a28fe6be700c41
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/09/2018
 ---
-# <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>iOS Store-apps toevoegen aan Microsoft Intune
+# <a name="add-ios-store-apps-to-microsoft-intune"></a>iOS Store-apps toevoegen aan Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Gebruik de informatie in dit artikel om iOS Store-apps in Microsoft Intune toe te voegen. iOS Store-apps zijn apps die Intune installeert op het apparaat van een gebruiker. De gebruiker maakt deel uit van het personeel van uw bedrijf. iOS Store-apps worden automatisch bijgewerkt.
+Gebruik de informatie in dit artikel om iOS Store-apps in Microsoft Intune toe te voegen. iOS Store-apps zijn apps die Intune installeert op de apparaten van uw gebruiker. Een gebruiker maakt deel uit van het personeel van uw bedrijf. iOS Store-apps worden automatisch bijgewerkt.
 
 >[!NOTE]
->Hoewel gebruikers van iOS-apparaten sommige van de ingebouwde iOS-apps, zoals Stocks en Maps, kunnen verwijderen, kunt u Intune niet gebruiken om die apps opnieuw te implementeren. Als eindgebruikers deze apps verwijderen, moeten ze naar de App Store gaan en ze handmatig opnieuw installeren.
+>Hoewel gebruikers van iOS-apparaten sommige ingebouwde iOS-apps, zoals Stocks en Maps, kunnen verwijderen, kunt u Intune niet gebruiken om die apps opnieuw te implementeren. Als uw gebruikers deze apps verwijderen, moeten ze naar de App Store gaan en ze handmatig opnieuw installeren.
 
 ## <a name="before-you-start"></a>Voordat u begint
 
-U kunt alleen apps toewijzen met deze methode als ze gratis in de App Store verkrijgbaar zijn. Als u betaalde apps wilt toewijzen met Intune, kunt u overwegen de [Volume Purchase Program-app voor iOS](vpp-apps-ios.md) te gebruiken.
+U kunt apps alleen met deze methode toewijzen als ze gratis verkrijgbaar zijn in de App Store. Als u betaalde apps met Intune wilt toewijzen, kunt u overwegen om het [Volume Purchase Program voor iOS](vpp-apps-ios.md) te gebruiken.
 
 >[!NOTE]
->Chrome en Microsoft Edge zijn de aanbevolen browsers wanneer u met Microsoft Intune werkt.
+>Als u met Microsoft Intune werkt, kunt u beter de Microsoft Edge- of Google Chrome-browser gebruiken.
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Kies **Mobiele apps** op de blade **Intune**.
-4. In de workload **Mobiele apps** kiest u **Apps** in het gedeelte **Beheren**.
-5. Kies **Toevoegen** aan de rechterkant van het deelvenster **Apps**.
-6. In de lijst **App-type** selecteert u **iOS** bij de beschikbare typen **Store-apps**.
-7. Kies **Zoeken in de App Store**.
-8. Selecteer in de blade **Zoeken in de App Store** de landinstelling voor de Store.
-9. Typ de naam (of een deel daarvan) in het zoekvak. De Store wordt doorzocht met Intune, waarna een lijst met relevante resultaten wordt weergegeven.
-10. Kies de gewenste app in de lijst en klik op **Selecteren**.
-11. Kies **App-gegevens** op de blade **App toevoegen** om de app te configureren.
-12. Voeg op de blade **App-gegevens** de app-gegevens toe. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden op deze blade mogelijk automatisch ingevuld:
-    - **Naam**: typ de naam van de app die u wilt weergeven in de bedrijfsportal. Zorg ervoor dat alle app-namen die u gebruikt, uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
-    - **Beschrijving**: typ een beschrijving voor de app die u wilt weergeven voor gebruikers in de bedrijfsportal.
-    - **Uitgever**: typ de naam van de uitgever van de app.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services** > **Intune**.  
+    Intune bevindt zich in de sectie **Controle en beheer**.
+3. Selecteer **Mobiele apps** in het deelvenster **Intune**.
+4. Selecteer **Apps** in het werkbelastingvenster **Mobiele apps** onder **Beheren**.
+5. Selecteer **Toevoegen** in het deelvenster **Apps**.
+6. Selecteer in de lijst **App-type** onder **Store-apps** de optie **iOS**.
+7. Selecteer **Zoeken in de App Store**.
+8. Selecteer in het deelvenster **Zoeken in de App Store** de landinstelling voor de App Store.
+9. Typ de naam van de app (of een deel daarvan) in het **zoekvak**.  
+    De Store wordt doorzocht en in Intune wordt een lijst met relevante resultaten weergegeven.
+10. Selecteer de gewenste app in de lijst met resultaten en selecteer **Selecteren**.
+11. Selecteer in het deelvenster **App toevoegen** de optie **App-gegevens** om de app te configureren.
+12. Voeg in het deelvenster **App-gegevens** de app-gegevens toe. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden in het deelvenster mogelijk automatisch ingevuld:
+    - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal moet worden weergegeven. Zorg ervoor dat u alleen unieke app-namen gebruikt. Als u twee dezelfde app-namen gebruikt, wordt voor gebruikers slechts één naam in de bedrijfsportal weergegeven.
+    - **Beschrijving**: voer een beschrijving in voor de app. Deze beschrijving wordt voor gebruikers weergegeven in de bedrijfsportal.
+    - **Uitgever**: voer de naam van de uitgever van de app in.
     - **URL App Store**: typ de URL naar de App Store voor de app die u wilt maken.
-    - **Minimumversie van het besturingssysteem**: selecteer in de lijst de minimumversie van het besturingssysteem waarin de app kan worden geïnstalleerd. De app wordt niet geïnstalleerd op een apparaat met een oudere versie van het besturingssysteem.
-    - **Toepasselijk apparaattype**: kies de apparaten waarop de app kan worden geïnstalleerd in de lijst.
-    - **Categorie** (optioneel). Selecteer een of meer van de ingebouwde app-categorieën of selecteer een categorie die u hebt gemaakt. Met categorieën kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
-    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: hiermee wordt de app duidelijk zichtbaar op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
-    - **Informatie-URL**: typ de URL van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Privacy-URL**: typ de URL van een website die privacyinformatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Ontwikkelaar**: typ de naam van de app-ontwikkelaar (optioneel). Dit veld is alleen zichtbaar voor beheerders en niet voor eindgebruikers.
-    - **Eigenaar**: typ de naam van de eigenaar van deze app, bijvoorbeeld **HR-afdeling** (optioneel).  Dit veld is alleen zichtbaar voor beheerders en niet voor eindgebruikers.
-    - **Opmerkingen**: typ de opmerkingen die u aan deze app wilt koppelen. Dit veld is alleen zichtbaar voor beheerders en niet voor eindgebruikers.
-    - **Logo**: upload een pictogram dat aan de app is gekoppeld. Het pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-13. Wanneer u klaar bent, klikt u op **OK** op de blade **Gegevens toevoegen**.
-14. Klik op **Toevoegen** op de blade **App toevoegen**.
+    - **Minimumversie van het besturingssysteem**: selecteer in de lijst de minimumversie van het besturingssysteem waarin de app kan worden geïnstalleerd. Als u de app toewijst aan een apparaat met een lager besturingssysteem, wordt de app niet geïnstalleerd.
+    - **Toepasselijk apparaattype**: selecteer in de lijst de apparaten die door de app worden gebruikt.
+    - **Categorie**: selecteer een of meer van de ingebouwde app-categorieën of een categorie die u hebt gemaakt (optioneel). Hiermee kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
+    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: selecteer deze instelling om het app-pakket prominent weer te geven op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
+    - **Informatie-URL**: voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
+    - **Privacy-URL**: voer de URL in van een website die privacyinformatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
+    - **Ontwikkelaar**: voer de naam in van de app-ontwikkelaar (optioneel). Dit veld is alleen zichtbaar voor beheerders, niet voor uw gebruikers.
+    - **Eigenaar**: voer een naam in voor de eigenaar van deze app, bijvoorbeeld *HR-afdeling* (optioneel). Dit veld is alleen zichtbaar voor beheerders, niet voor uw gebruikers.
+    - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen (optioneel). Dit veld is alleen zichtbaar voor beheerders en niet voor eindgebruikers.
+    - **Pictogram**: upload een pictogram dat aan de app wordt gekoppeld (optioneel). Dit pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
+13. Selecteer **OK**.
+14. Selecteer **Toevoegen**.
 
-De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest.
+De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u selecteert.
 
 ## <a name="next-steps"></a>Volgende stappen
 

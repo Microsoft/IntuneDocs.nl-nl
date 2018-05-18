@@ -1,133 +1,142 @@
-﻿---
+---
 title: Uw Windows-apparaat handmatig synchroniseren | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/19/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+ms.assetid: ''
 searchScope:
 - User help
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Uw Windows-apparaat handmatig synchroniseren
 
-Soms kan het installeren van een app op een Windows-apparaat langer duren dan u denkt. In dat geval kunt u proberen het Windows-apparaat handmatig te synchroniseren. Synchronisatie kan bijdragen aan een snellere installatie.
+Voer een handmatige synchronisatie van uw apparaat uit als een app erg langzaam wordt geïnstalleerd. Bij een handmatige synchronisatie maakt uw apparaat verbinding met Intune en worden de nieuwste updates en communicatie opgehaald. De installatiesnelheid kan verbeteren nadat de apparaatsynchronisatie is voltooid.
 
-> [!Note]
-> De installatie van apps kan wat langer duren in een trager netwerk of als er grotere hoeveelheden apparaten op hetzelfde moment inhoud downloaden.
+Intune ondersteunt handmatige synchronisatie vanuit de bedrijfsportal-app en vanuit de app Instellingen van het apparaat. 
 
-In de volgende versies van Windows kunt u handmatig synchroniseren. Als uw apparaat een andere versie van Windows gebruikt, kunt u helaas geen handmatige synchronisatie uitvoeren.
+De functionaliteit van de bedrijfsportal-app wordt ondersteund op Windows 10-apparaten waarop de makersupdate (1703) of hoger wordt uitgevoerd. 
+* [Synchroniseren vanuit de bedrijfsportal-app](#Sync-from-Company-Portal-app-for-Windows)  
 
-* [Synchroniseren met Windows 10 Desktop](#windows-10-desktop)
-* [Synchroniseren met Windows 10 Mobile](#windows-10-mobile)
-* [Synchroniseren met Windows Phone 8.1](#windows-phone-81)
+Alle Windows-apparaten kunnen worden gesynchroniseerd vanuit de app Instellingen van het apparaat, met inbegrip van:
 
-## <a name="windows-10-desktop"></a>Windows 10 Desktop
-Omdat er meer dan één versie van Windows 10 is, zijn er twee sets met stappen. Bekijk de schermafbeeldingen om te zien welke stappen u het beste kunt gebruiken en volg dan de stappen die betrekking hebben op uw apparaat.
+* [Windows 10 Desktop](#windows-10-desktop)  
+* [Microsoft HoloLens](#microsoft-hololens)   
+* [Windows 10 Mobile](#windows-10-mobile)  
+* [Windows Phone 8.1](#windows-phone-81)    
 
-1. Kies de knop **Start** en kies vervolgens **Instellingen**.
+## <a name="sync-from-company-portal-app-for-windows"></a>Synchroniseren vanuit de bedrijfsportal-app voor Windows
+Voer deze stappen uit als u een Windows 10-apparaat wilt synchroniseren waarop makersupdate (versie 1703) of hoger wordt uitgevoerd.
 
-    ![De knop Start](./media/win10pc-sync-1-start-button.png)
+1.  Open de bedrijfsportal-app op uw apparaat.
 
-2. Kies op de pagina **Instellingen** de optie **Accounts**.
+2.  Selecteer **Instellingen** > **Synchroniseren**.
 
-    ![Accounts kiezen op de pagina Instellingen](./media/win10pc-sync-2-settings-accounts.png)
+    ![Schermafbeelding van de startpagina van de bedrijfsportal-app waarin Instellingen is gemarkeerd](./media/RS1_homePage_settings_04.png)  
+    
+    ![Schermafbeelding van de instellingenpagina van de bedrijfsportal-app waarin de knop Synchroniseren is gemarkeerd](./media/RS1_settingspage_sync05.png)    
 
-3. Bekijk de volgende twee schermen en kies het scherm dat lijkt op het scherm op uw apparaat. Volg de stappen die bij het scherm horen dat u op het apparaat ziet.
+## <a name="sync-from-settings-app"></a>Synchroniseren vanuit de app Instellingen 
+Voltooi deze stappen als u uw Microsoft HoloLens-, Windows 10 desktop-, Windows 10 Mobile- of Windows Phone 8.1-apparaat handmatig wilt synchroniseren vanuit de app Instellingen.
 
-    Als u dit scherm met de melding 'Toegang tot werk of school' ziet, volgt u de instructies in [Stappen om te volgen als u Toegang tot werk of school ziet](#steps-to-follow-if-you-see-access-work-or-school).
+### <a name="windows-10-desktop"></a>Windows 10 Desktop
+1. Selecteer op het apparaat **Start** > **Instellingen**.
 
-    ![Te volgen stappen als u Toegang tot werk of school ziet](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+2. Selecteer **Accounts**.
 
-    Als u dit scherm met de melding 'Toegang via het werknetwerk' ziet, volgt u de stappen in [Stappen om te volgen als u Toegang via het werknetwerk ziet](#steps-to-follow-if-you-see-work-access).
+    ![Accounts kiezen op de pagina Instellingen](./media/win10pc-sync-2-settings-accounts.png)  
+
+3. Er bestaan meerdere versies van Windows 10 voor pc's. Vergelijk uw scherm met onderstaande schermafbeeldingen om te bepalen welke reeks stappen u moet volgen. 
+
+    * Als in het scherm **Toegang tot werk of school** wordt weergegeven, gaat u verder met de stappen in [Toegang tot werk of school](#access-work-or-school).
+
+    ![Optie Toegang tot werk of school in app Instellingen](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
+
+    * Als in het scherm **Toegang via het werknetwerk** wordt weergegeven, gaat u verder met de stappen onder [Toegang via het werknetwerk](#work-access).  
 
     ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10pc-sync-3-work-access.png)
 
-### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Stappen om te volgen als u Toegang tot werk of school ziet
+#### <a name="access-work-or-school-steps"></a>Stappen voor toegang tot werk of school
 
-1. Kies op de pagina **Accounts** de optie **Toegang tot werk of school**.
+1. Klik op **Toegang tot werk of school**.
 
-    ![Kies Toegang tot werk of school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+    ![Schermafbeelding van de optie Toegang tot werk of school](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-2. Kies uw werk- of schoolaccount. Afhankelijk van hoe het ondersteuningsteam van het bedrijf alles heeft ingesteld, ziet u mogelijk twee accounts die op het voorbeeld hieronder lijken. Naast het ene account wordt een aktetas weergegeven en naast het andere account ziet u het Microsoft-logo.
-
-   - Als u het account met de aktetas ziet, selecteert u dat account en zoekt u naar een **Info**-knop daaronder.
-   - Als u het account met het Microsoft-logo ziet, selecteert u dat account en zoekt u naar een **Info**-knop daaronder.
+2. Selecteer het account waarnaast het pictogram van een werkmap wordt weergegeven. Als u dit account helemaal niet ziet, heeft uw bedrijf uw instellingen mogelijk op een andere manier geconfigureerd. Klik in dat geval op het account waarnaast een Microsoft-logo wordt weergegeven.
 
      ![Kies de naam van het account naast de aktetas of het Microsoft-logo](./media/win10pc-rs1-sync-info-button.png)
 
-3. Kies de **Info**-knop. Er wordt een dialoogvenster geopend dat op het voorbeeld hieronder lijkt.
+3. Klik op **Info**. 
 
-    ![Kies de naam van het account naast de aktetas of het Microsoft-logo](./media/win10pc-rs1-sync-button.png)
+4. Klik op **Synchroniseren**. 
 
-4. Kies de knop **Synchroniseren**. Het apparaat wordt gesynchroniseerd met Intune.
+#### <a name="work-access-steps"></a>Stappen voor toegang via het werknetwerk
 
-### <a name="steps-to-follow-if-you-see-work-access"></a>Te volgen stappen als u Toegang via het werknetwerk ziet
-
-1. Kies op de pagina **Accounts** de optie **Toegang via het werknetwerk**.
+1.  Klik op **Toegang via het werknetwerk**.
 
     ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10pc-sync-3-work-access.png)
 
-2. Kies in de sectie **Registreren voor apparaatbeheer** de naam van uw bedrijf.
+2. Selecteer onder **Registreren voor apparaatbeheer** de naam van uw bedrijf.
 
     ![De naam van het bedrijf kiezen voor apparaatbeheer](./media/win10pc-sync-4-tap-com-name.png)
 
-3. Kies de knop **Synchroniseren**.
+3. Klik op **Synchroniseren**. De knop blijft uitgeschakeld totdat de synchronisatie is voltooid.
 
-    ![De knop Synchroniseren kiezen](./media/win10pc-sync-5-tap-sync.png)
+    ![De knop Synchroniseren kiezen](./media/win10pc-sync-5-tap-sync.png)  
 
-   De knop wordt uitgeschakeld totdat de synchronisatie is voltooid.
 
 ### <a name="windows-10-mobile"></a>Windows 10 Mobile
-Ga als volgt te werk als u uw Windows 10 Mobile-apparaat handmatig wilt synchroniseren om een trage installatie van de app te versnellen:
 
-   1. Ga naar **Alle apps** > **Instellingen** > **Accounts**.
+   1. Ga op uw apparaat naar **Alle apps** > **Instellingen** > **Accounts**.
 
        ![Accounts kiezen op het scherm Instellingen](./media/win10m-sync-1-settings-accounts.png)
 
-   2. Kies **Toegang via het werknetwerk**.
+   2. Selecteer **Toegang via werknetwerk**.
 
        ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10m-sync-2-work-access.png)
 
-   3. Kies onder **Registreren voor apparaatbeheer** de naam van uw bedrijf.
+   3. Selecteer onder **Registreren voor apparaatbeheer** de naam van uw bedrijf.
 
        ![De naam van het bedrijf kiezen voor apparaatbeheer](./media/win10m-sync-3-tap-comp-name.png)
 
-   4. Kies het pictogram **Synchroniseren**.
+   4. Selecteer het pictogram **Synchroniseren**. De knop blijft uitgeschakeld totdat de synchronisatie is voltooid.
 
-       ![Het pictogram Synchroniseren kiezen](./media/win10m-sync-4-tap-sync.png)
+       ![Het pictogram Synchroniseren kiezen](./media/win10m-sync-4-tap-sync.png)  
+### <a name="microsoft-hololens"></a>Microsoft HoloLens  
+Deze instructies zijn van toepassing op HoloLens-apparaten waarop de Windows 10 Jubileumupdate (ook wel RS1 genoemd) wordt uitgevoerd. 
+1.  Open de app Instellingen op uw apparaat.  
 
-       Boven in het scherm wordt het bericht 'Uw account wordt gesynchroniseerd' weergegeven. De knop **Synchroniseren** is pas beschikbaar nadat de synchronisatie van het apparaat is voltooid.
+2.  Selecteer **Accounts** > **Toegang via werknetwerk**.  
+    ![Schermafbeelding van de app Instellingen in HoloLens waarin de koppeling Accounts is gemarkeerd](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-## <a name="windows-phone-81"></a>Windows Phone 8.1
-Ga als volgt te werk als u uw Windows Phone 8.1-apparaat handmatig wilt synchroniseren om een trage installatie van de app te versnellen:
+3.  Selecteer uw verbonden account > **Synchroniseren**. ![Schermafbeelding van de app Instellingen in HoloLens waarin de knop Synchroniseren is gemarkeerd](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+
+### <a name="windows-phone-81"></a>Windows Phone 8.1
 
 1. Ga naar **Alle apps** > **Instellingen** > **Werkplek**.
 
     ![Lijst met instellingen](./media/wp81-1-sync-settings-workplace.png)
 
-2. Kies de naam van uw bedrijf.
+2. Selecteer de naam van uw bedrijf.
 
     ![De naam van het bedrijf kiezen voor het werkplekaccount](./media/wp81-2-sync-tap-compname.png)
 
-3. Kies het pictogram **Synchroniseren**.
+3. Selecteer het pictogram **Synchroniseren**.
 
     ![Het pictogram Synchroniseren kiezen](./media/wp81-3-sync-tap-sync-button.png)
-
-   Boven in het scherm wordt het bericht 'Uw account wordt gesynchroniseerd' weergegeven tot het apparaat is gesynchroniseerd.
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
