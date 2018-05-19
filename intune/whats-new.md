@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 05/08/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 9004441a41c5e7458447b5c5f7e1d91e630bd412
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: e677e15d1e4ee688a826683ecd1d8d68620d2796
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,18 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook informati
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-may-7-2018"></a>Week van 7 mei 2018
+
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="samsung-knox-mobile-enrollment-support---1112863--"></a>Ondersteuning voor Samsung Knox Mobile Enrollment<!--1112863-->
+
+Wanneer u Intune met Samsung Knox Mobile Enrollment (KME) gebruikt, kunt u een groot aantal bedrijfseigen Android-apparaten inschrijven. Gebruikers op wifi- of mobiele netwerken kunnen inschrijven met een paar tikken wanneer ze hun apparaten voor het eerst inschakelen. Apparaten kunnen ook met Bluetooth of NFC worden ingeschreven als de Knox-registratie-app wordt gebruikt. Zie [Android-apparaten automatisch registreren met behulp van de Knox Mobile Enrollment van Samsung](android-samsung-knox-mobile-enroll.md) voor meer informatie.
+
+#### <a name="requesting-help-in-the-company-portal-for-windows-10----1874137---"></a>Hulp aanvragen in de bedrijfsportal voor Windows 10 <!-- 1874137 -->
+
+Vanuit de bedrijfsportal voor Windows 10 worden app-logboeken nu rechtstreeks naar Microsoft verzonden wanneer de gebruiker de werkstroom voor hulp bij een probleem in gang zet. Dit vereenvoudigt het detecteren en oplossen van problemen die aan Microsoft worden gemeld.
 
 ## <a name="week-of-april-23-2018"></a>Week van 23 april 2018
 
@@ -369,12 +381,21 @@ Zie [Software-updates beheren in Intune](windows-update-for-business-configure.m
 
 #### <a name="company-portal-enrollment-improved----1874230-eeready--"></a>Inschrijving bedrijfsportal verbeterd <!-- 1874230 eeready-->
 Gebruikers die een apparaat inschrijven via de bedrijfsportal in Windows 10-build 1703 en hoger, kunnen de eerste stap van de inschrijving voltooien zonder de app te verlaten.
-
 #### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868---"></a>HoloLens en Surface Hub nu worden weergegeven in de apparaatlijsten <!--1725868 -->
 Er is ondersteuning toegevoegd voor het weergeven van HoloLens- en Surface Hub-apparaten die via Intune zijn geregistreerd bij de bedrijfsportal-app voor Android.
 
 #### <a name="custom-book-categories-for-volume-purchase-progream-vpp-ebooks----1488911---"></a>Aangepaste boekcategorieën voor eBooks in het VPP-programma (volume-aankoopprogramma) <!-- 1488911 -->
-U kunt aangepaste eBook-categorieën maken en vervolgens VPP eBooks toewijzen aan deze aangepaste eBook-categorieën. Eindgebruikers kunnen de nieuwe eBook-categorieën en de boeken die zijn toegewezen aan de categorieën bekijken. Zie [Apps en boeken met Microsoft Intune beheren die via het Volume Purchase Program zijn gekocht](vpp-apps.md) voor meer informatie.
+U kunt aangepaste eBook-categorieën maken en vervolgens VPP eBooks toewijzen aan deze aangepaste eBook-categorieën. Eindgebruikers kunnen de nieuwe eBook-categorieën en de boeken die zijn toegewezen aan de categorieën bekijken. Zie [Apps en boeken met Microsoft Intune beheren die via het Volume Purchase Program zijn gekocht](vpp-apps.md) voor meer informatie.  
+
+#### <a name="support-changes-for-company-portal-app-for-windows-send-feedback-option----2070166---"></a>Optie voor feedback verzenden voor wijzigingen in de ondersteuning voor de bedrijfsportal-app voor Windows<!-- 2070166 -->
+Vanaf 30 april 2018 werkt de optie **Feedback verzenden** in de bedrijfsportal-app voor Windows alleen op apparaten met de Windows 10 Jubileumupdate (1607) en hoger. De optie voor het verzenden van feedback wordt niet meer ondersteund bij gebruik van de bedrijfsportal-app voor Windows met:  
+- Windows 10, 1507 release  
+- Windows 10, 1511 release  
+- Windows Phone 8.1 
+
+Als uw apparaat Windows 10 RS1 of hoger gebruikt, moet u de nieuwste versie van de Windows-bedrijfsportal downloaden in de Store. Als u een niet-ondersteunde versie uitvoert, kunt u feedback blijven verzenden via de volgende kanalen: 
+- De Feedback Hub-app in Windows 10
+- E-mail WinCPfeedback@microsoft.com  
 
 #### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Nieuwe instellingen voor Windows Defender Application Guard <!-- 1631890 -->
 
@@ -1110,23 +1131,6 @@ Deze wijziging is van invloed op zowel zelfstandige als hybride klanten (Intune 
 Label Intune als favoriet in plaats van de serviceblade Intune-app-beveiliging en zorg ervoor dat u bekend bent met de werkstroom voor het beleid voor app-beveiliging in de blade Mobiele app in Intune. U wordt slechts tijdelijk omgeleid. De blade App-beveiliging wordt uiteindelijk verwijderd. Alle beleidsregels voor de beveiliging van apps staan al in Intune en u kunt uw beleid voor voorwaardelijke toegang wijzigen aan de hand van de volgende documentatie: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
 
 **Aanvullende informatie**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
-
-### <a name="plan-for-change-windows-company-portal-send-feedback-option-may-no-longer-work"></a>Plannen voor wijziging: de optie Feedback verzenden in de Windows-bedrijfsportal werkt niet meer  
-De Windows-bedrijfsportal-app bevat de optie **Feedback verzenden** waarmee gebruikers feedback over de app naar Microsoft kunnen verzenden. Vanaf 30 april 2018 wordt deze optie alleen nog ondersteund in de Windows 10-bedrijfsportal-app in Windows 10 1607 (Jubileumupdate) en hoger.  
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?  
-Negeer dit bericht als u de Windows-bedrijfsportal-app voor eindgebruikers niet hebt geïnstalleerd. Als een van uw eindgebruikers de bedrijfsportal-app heeft, moet u er rekening mee houden dat vanaf 30 april 2018 de knop **Feedback verzenden** niet meer werkt in de app in de volgende scenario's:  
-- Windows 10-bedrijfsportal-app in Windows 10 1507- en 1511-versies  
-- Windows Phone 8.1-bedrijfsportal-app  
-
-De knop **Feedback verzenden** werkt niet meer, ook niet na herhaaldelijk proberen. Bekijk de alternatieve feedbackkanalen die verderop worden vermeld om feedback naar Microsoft te verzenden over ervaringen op deze platformen.  
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?  
-Informeer de gebruikers over deze wijziging en werk indien nodig de richtlijnen voor gebruikers bij. Vertel eindgebruikers van Windows Phone 8.1, Windows 10 1507 en Windows 10 1511 die de bedrijfsportal gebruiken dat er twee alternatieve feedbackkanalen beschikbaar zijn. Ze kunnen:  
-- De Feedback Hub-app in Windows 10 gebruiken
-- Een e-mail verzenden naar WinCPfeedback@microsoft.com  
-
-Vraag eindgebruikers van Windows 10 RS1 of hoger bij te werken naar de nieuwste versie van de Windows-bedrijfsportal. Deze is beschikbaar in de Store.
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>Plannen voor wijziging: wijziging in de ondersteuning voor Microsoft Intune App SDK voor Cordova-invoegtoepassing
 Intune beëindigt de ondersteuning voor de [Microsoft Intune App SDK Cordova-invoegtoepassing](app-sdk-cordova.md) op 1 mei 2018. We raden u aan in plaats daarvan de Intune App Wrapping Tool te gebruiken om uw op Cordova gebaseerde apps voor te bereiden op beheerbaarheid en beschikbaarheid in Intune. Zodra deze wijziging is doorgevoerd, wordt de Microsoft Intune APP SDK voor de Cordova-invoegtoepassing niet langer onderhouden en worden er geen updates meer voor gegeven. App-ontwikkelaars kunnen deze invoegtoepassing dan niet langer gebruiken. Intune is van plan apps die met Cordova zijn gebouwd te blijven ondersteunen. Alle apps die zijn gebouwd met Microsoft Intune APP SDK voor de Cordova-invoegtoepassing zullen echter kampen met beperkte functionaliteit in Intune. Nadat u apps hebt verpakt met de Intune App Wrapping Tool, kunnen deze apps zoals u gewend bent voor eindgebruikers worden geïmplementeerd. Voor Android-apps op basis van Cordova die in de Google Play Store worden gepubliceerd, geldt het volgende:

@@ -168,6 +168,8 @@
               href: windows-enroll.md
             - name: Bulkregistratie
               href: windows-bulk-enroll.md
+            - name: Pagina Status van inschrijving
+              href: windows-enrollment-status.md
             - name: Windows AutoPilot Deployment-programma
               href: enrollment-autopilot.md
         - name: Android-inschrijving instellen
