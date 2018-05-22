@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/06/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: baa9b20ee8820915f3cdee6ee26ec2429c93d63b
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: c7a47063631ef3d5195dec2e91523772adb4e34c
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Microsoft Store-apps toevoegen aan Microsoft Intune
 
@@ -34,7 +34,7 @@ U kunt op de volgende manier een Microsoft Store-app toevoegen aan Intune:
 2. Selecteer **Alle services** > **Intune**.  
     Intune bevindt zich in de sectie **Controle en beheer**.
 3. Selecteer **Mobiele apps** in het deelvenster **Intune**.
-4. In het werkbelastingvenster **Mobiele apps**, onder **Beheren**, selecteert u **Apps**.
+4. Selecteer **Apps** in het werkbelastingvenster **Mobiele apps** onder **Beheren**.
 5. Selecteer **Toevoegen** in het deelvenster **Apps**.
 6. Kies in het deelvenster **App toevoegen** een **app-type** van **Windows** en kies **App-gegevens**.
 7. Voeg in het deelvenster **App-gegevens** de app-gegevens toe. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden in het deelvenster mogelijk automatisch ingevuld:

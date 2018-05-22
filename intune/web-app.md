@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 58d04de3c4f77a5599bc5a13f2fe1e382654bd73
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: 0d62341e35bf851bb429b15a582183bec62a9d4a
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Web-apps aan Microsoft Intune toevoegen
 
@@ -39,7 +39,7 @@ Voer de volgende stappen uit om een app toe te voegen aan Intune als een snelkop
 2. Selecteer **Alle services** > **Intune**.  
     Intune bevindt zich in de sectie **Controle en beheer**.
 3. Selecteer **Mobiele apps** in het deelvenster **Intune**.
-4. In het werkbelastingvenster **Mobiele apps**, onder **Beheren**, selecteert u **Apps**.
+4. Selecteer **Apps** in het werkbelastingvenster **Mobiele apps** onder **Beheren**.
 5. Selecteer **Toevoegen** in het deelvenster **Apps**.
 6. Selecteer in het deelvenster **App toevoegen** het type **Weblink** in de vervolgkeuzelijst **App-type**.
 7. Selecteer **Configureren**.

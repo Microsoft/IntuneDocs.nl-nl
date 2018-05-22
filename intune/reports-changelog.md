@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,25 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e11585adf570ba9155861f89688c33ac6cecbeb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: dd9fb36bb1b8c5e66d104f530690c5d236ea25e4
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Wijzigingenlogboek voor de API van Intune-datawarehouse
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Houd updates voor Intune-datawarehouse bij.
+
+## <a name="1805"></a>1805
+_Uitgebracht: mei 2018_
+
+### <a name="correction-to-device-count-in-devices-collection"></a>Correctie van het aantal apparaten in de verzameling **Apparaten** 
+
+Er is een correctie toegepast voor de verzameling **Apparaten**, waardoor het totaalaantal apparaten dat op het kenmerk `isDeleted` wordt gefilterd, lager kan zijn. Deze verlaging is het resultaat van de correctie en is geen fout. Voor meer informatie met betrekking tot de verzameling **Apparaten**, raadpleegt u [Verwijzing voor apparaatentiteiten](reports-ref-devices.md). 
+
 
 ## <a name="1801"></a>1801
 _Uitgebracht in januari 2018_

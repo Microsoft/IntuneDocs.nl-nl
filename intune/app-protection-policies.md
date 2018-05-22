@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d973ca86a9adcbe3c7c18b2018c29006ba54ae9e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>App-beveiligingsbeleid maken en toewijzen
 
@@ -127,7 +127,7 @@ Omdat Intune-app-beveiligingsbeleid op de identiteit van een gebruiker is gerich
 Voor het maken van deze beleidsregels bladert u naar **Mobiele apps** > **App-beveiliging**-beleid in de Intune-console en klikt u op **Beleid toevoegen**. U kunt ook een bestaand app-beveiligingsbeleid bewerken. Als u het app-beveiligingsbeleid op zowel beheerde als niet-beheerde apparaten wilt toepassen, moet u bevestigen dat **Op alle app-typen toepassen** is ingesteld op **Ja**, de standaardwaarde. Als u granulair wilt toewijzen op basis van de beheerstatus, stelt u de optie **Op alle app-typen toepassen** in op **Nee**. 
 
 > [!NOTE]
-> Zie [MAM-beveiligingsbeleid toepassen op basis van beheerstatus](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---) voor specifieke iOS-ondersteuningsinformatie over app-beveiligingsbeleid op basis van de apparaatbeheerstatus.
+> Zie [MAM-beveiligingsbeleid toepassen op basis van beheerstatus](whats-new.md#mam-protection-policies-targeted-based-on-management-state-) voor specifieke iOS-ondersteuningsinformatie over app-beveiligingsbeleid op basis van de apparaatbeheerstatus.
 
 ## <a name="policy-settings"></a>Beleidsinstellingen
 Selecteer een van de volgende links voor een volledig overzicht van de beleidsinstellingen voor iOS en Android:

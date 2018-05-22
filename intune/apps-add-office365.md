@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da02a71d3801d0e00362617dd5d0cc76ffdd4722
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 11f1a48b5b2dcff421603dd4538ff054d174fe66
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
@@ -121,7 +121,7 @@ In de volgende tabellen worden algemene foutcodes en hun betekenis weergegeven.
 |1603 (ERROR_INSTALL_FAILURE)|-|Een controle op vereisten is mislukt, zoals:<ul><li>SxS (Er is geprobeerd te installeren terwijl 2016 MSI is geïnstalleerd)</li><li>Versie komt niet overeen</li><li>Overige</li></ul>|  
 |0x8000ffff (E_UNEXPECTED)|-|Er is geprobeerd te verwijderen zonder Office Klik-en-Klaar op de machine|     
 |17002|-|Het scenario (installatie) kan niet worden voltooid. Mogelijke oorzaken:<ul><li>Installatie is geannuleerd door gebruiker</li><li>Installatie is geannuleerd vanwege een andere installatie</li><li>Geen schijfruimte meer tijdens installatie</li><li>Onbekende taal-id</li></ul>|
-|17004|-|Onbekende SKU's|   
+|17004|-|Onbekende SKU’s|   
 
 
 ### <a name="office-deployment-tool-error-codes"></a>Office Deployment Tool-foutcodes
