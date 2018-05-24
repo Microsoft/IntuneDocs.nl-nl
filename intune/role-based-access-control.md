@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/17/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98355ec1cf54597f488bd2426ac77f35809070fd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8cce5da762c119ec04553d80d717fb586c962566
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune
 
@@ -78,20 +78,18 @@ De volgende rollen zijn ingebouwd in Intune en u kunt deze zonder verdere config
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. In het deelvenster **Intune** kiest u **Intune-rollen** en selecteert u **Alle rollen**.
-1. Kies in het deelvenster **Intune-rollen - Alle rollen** de ingebouwde rol die u wilt toewijzen.
+4. Kies in het deelvenster **Intune-rollen - Alle rollen** de ingebouwde rol die u wilt toewijzen.
 
-2. Kies in het deelvenster <*Rolnaam*> - **Overzicht** de optie **Beheren** en vervolgens **Toewijzingen**.
+5. Kies in het deelvenster <*Rolnaam*> - **Overzicht** de optie **Toewijzingen** > **Toewijzen**.
 
     > [!NOTE]
     > U kunt ingebouwde rollen niet verwijderen of bewerken
 
-3. Kies in het deelvenster voor aangepaste rollen de optie **Toewijzen**.
-
-4. Voer in het deelvenster **Roltoewijzingen** een **naam** en desgewenst een **beschrijving** in voor de toewijzing en kies het volgende:
+6. Voer in het deelvenster **Roltoewijzingen** een **naam** en desgewenst een **beschrijving** in voor de toewijzing en kies het volgende:
     - **Leden**: selecteer de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
-    - **Bereik**: selecteer de groep met de gebruikers die het bovenstaande lid mogen beheren.
+    - **Bereik**: selecteer de groep met de gebruikers die het bovenstaande lid mogen beheren. U kunt ook het bereik instellen op **Alle gebruikers**, **Alle apparaten** of **Alle gebruikers en apparaten**.
 <br></br>
-5. Wanneer u klaar bent, klikt u op **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
+7. Wanneer u klaar bent, klikt u op **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
 
 ### <a name="intune-rbac-table"></a>Intune RBAC-tabel
 
@@ -128,13 +126,13 @@ U kunt een aangepaste rol maken die alle machtigingen bevat die vereist zijn voo
 
 1. Kies in het deelvenster **Intune-rollen - Alle rollen** de aangepaste rol die u wilt toewijzen.
 
-2. Kies in het deelvenster <*Rolnaam*> - **Overzicht** de optie **Beheren** en vervolgens **Toewijzingen**. In dit deelvenster kunt u ook bestaande rollen bewerken of verwijderen.
+2. Kies in het deelvenster <*Rolnaam*> - **Overzicht** de optie **Toewijzingen**. In dit deelvenster kunt u ook bestaande rollen bewerken of verwijderen.
 
 3. Kies in het deelvenster voor aangepaste rollen de optie **Toewijzen**.
 
 4. Voer in het deelvenster **Roltoewijzingen** een **naam** en desgewenst een **beschrijving** in voor de toewijzing en kies het volgende:
     - **Leden**: selecteer de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
-    - **Bereik**: selecteer de groep met de gebruikers die het bovenstaande lid mogen beheren.
+    - **Bereik**: selecteer de groep met de gebruikers die het bovenstaande lid mogen beheren. U kunt ook het bereik instellen op **Alle gebruikers**, **Alle apparaten** of **Alle gebruikers en apparaten**.
 <br></br>
 5. Wanneer u klaar bent, klikt u op **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
 
@@ -145,3 +143,5 @@ U kunt een aangepaste rol maken die alle machtigingen bevat die vereist zijn voo
 ## <a name="see-also"></a>Zie ook
 
 [Rollen toewijzen met Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+
+

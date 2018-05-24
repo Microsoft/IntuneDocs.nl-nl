@@ -1,11 +1,11 @@
 ---
-title: Welke gegevens kan uw bedrijf zien wanneer u uw apparaat inschrijft? | Microsoft Docs
-description: Een lijst van wat de IT-afdeling wel en niet kan zien op uw beheerde apparaat.
+title: Welke gegevens kan uw bedrijf zien wanneer u uw apparaat inschrijft?
+description: Verklaart wat de IT-afdeling wel en niet kan zien op uw beheerde apparaat.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: fefc9c5a74afca1dad662e6d5ccde6afce6e2113
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 7e722195ce1b1b34a65cd8e936ad8a702f145691
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Welke gegevens kan mijn bedrijf zien wanneer ik mijn apparaat inschrijf?
 

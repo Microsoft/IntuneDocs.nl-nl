@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
-ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
+ms.openlocfilehash: a3cad6a73b3455790441c594933d599b2c6e89f9
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Windows-apparaat verwijderen uit Intune-beheer
 
@@ -72,13 +72,13 @@ Voer de volgende stappen uit als u een mobiel apparaat met Windows 8.1 wilt verw
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Uw persoonlijke gegevens verwijderen na het verwijderen van de bedrijfsportal
 Er zijn twee soorten gegevens die door de bedrijfsportal op uw Windows-apparaat worden opgeslagen:
 
--   **Diagnostische logboeken**: activiteitgegevens van app die standaard door Microsoft worden verzameld wanneer u het apparaat uit de bedrijfsportal verwijdert. Activiteitgegevens van een app omvatten bijvoorbeeld gegevens over hoelang de app geopend was en of de app is vastgelopen.
+-   **Diagnostische logboeken**: standaardgegevens over app-activiteit die door Microsoft worden verzameld. Deze wordenautomatisch gewist zodra u de Bedrijfsportal-app verwijdert. Activiteitgegevens van een app omvatten bijvoorbeeld gegevens over hoelang de app geopend was en of de app is vastgelopen.
 -   **Toepassingscache**: ondersteuningsbestanden die de app nodig heeft om te kunnen werken, zoals pictogrammen en instellingen.
 
-Er zijn een aantal stappen die u moet uitvoeren om deze gegevens volledig te verwijderen.
+Als u de opgeslagen logboeken en de cache wilt verwijderen, voert u een van de volgende stappen uit:
 
-1. De bedrijfsportal verwijderen. Als u[de bedrijfsportal-app verwijdert](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs), wordt een deel van de app-gegevens die op uw apparaat zijn opgeslagen, verwijderd.  
+* [De app Bedrijfsportal verwijderen](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) 
 
-2. De bedrijfsportal opnieuw instellen om de opgeslagen app-gegevens opnieuw in te stellen. Open de app **Instellingen** en selecteer > **Apps** > **Bedrijfsportal** > **Geavanceerde opties** > **Opnieuw instellen**. 
+* Stel de Bedrijfsportal-app opnieuw in. Open de app **Instellingen** en selecteer > **Apps** > **Bedrijfsportal** > **Geavanceerde opties** > **Opnieuw instellen**. 
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).

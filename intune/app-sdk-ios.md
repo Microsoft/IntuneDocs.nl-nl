@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 04/06/2018
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.custom: ''
+ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
 > [!NOTE]
-> U kunt desgewenst eerst het artikel [Aan de slag met Intune App SDK](app-sdk-get-started.md) lezen dat ingaat op de huidige functies van de SDK en waarin wordt beschreven hoe u de integratie voor elk ondersteund platform kunt voorbereiden.
+> U kunt eerst het artikel [Aan de slag met Intune App SDK](app-sdk-get-started.md) lezen, waarin wordt uitgelegd hoe u de integratie voor elk ondersteund platform kunt voorbereiden.
 
 Met de Microsoft Intune App SDK voor iOS kunt u Intune-beveiligingsbeleid voor apps (ook wel **APP-** of **MAM-beleid** genoemd) opnemen in uw systeemeigen iOS-app. Een MAM-app is geïntegreerd met de Intune App SDK. IT-beheerders kunnen app-beveiligingsbeleid implementeren in uw mobiele app wanneer die actief door Intune wordt beheerd.
 
@@ -81,8 +81,8 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
 
 1. **Optie 1 (aanbevolen)**: koppel `IntuneMAM.framework` aan uw project. Sleep `IntuneMAM.framework` naar de lijst met **ingesloten binaire bestanden** van het projectdoel.
 
-    > [!NOTE]
-    > Als u het framework gebruikt, moet u de simulatorarchitecturen handmatig verwijderen uit het universele framework voordat u uw app naar de App Store verzendt. Zie [Uw app naar de App Store verzenden](#Submit-your-app-to-the-App-Store) voor meer informatie.
+   > [!NOTE]
+   > Als u het framework gebruikt, moet u de simulatorarchitecturen handmatig verwijderen uit het universele framework voordat u uw app naar de App Store verzendt. Zie [Uw app naar de App Store verzenden](#Submit-your-app-to-the-App-Store) voor meer informatie.
 
 2. **Optie 2**: maak een koppeling naar de bibliotheek `libIntuneMAM.a`. Sleep de bibliotheek `libIntuneMAM.a` naar de lijst **Linked Frameworks and Libraries** van het projectdoel.
 
@@ -179,7 +179,7 @@ Volg de onderstaande stappen om uw app te koppelen aan de binaire ADAL-bestanden
 
 
 
-### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>Wilt u de ADAL-tokencache delen met andere apps die zijn ondertekend met hetzelfde inrichtingsprofiel?**
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>Wilt u de ADAL-tokencache delen met andere apps die zijn ondertekend met hetzelfde inrichtingsprofiel?
 
 Volg de onderstaande instructies als u ADAL-tokens wilt delen tussen apps die zijn ondertekend met hetzelfde inrichtingsprofiel:
 
@@ -523,7 +523,8 @@ SUBQUERY (
 ).@count > 0 
  ```
 
->[!Note] Het hulpprogramma IntuneMAMConfigurator kan worden gebruikt om de Intune-typen toe te voegen aan de activeringsregel. Als uw bestaande activeringsregel de vooraf gedefinieerde tekenreeksconstanten gebruikt (bijvoorbeeld NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText, enz.), kan het predicaat van de syntaxis erg complex worden. Het hulpprogramma IntuneMAMConfigurator kan ook worden gebruikt om de activeringsregel te converteren van de tekenreeksconstanten in een predicate tekenreeks terwijl de Intune-typen worden toegevoegd. U vindt de IntuneMAMConfigurator in onze GitHub-opslagplaats. 
+> [!NOTE]
+> Het hulpprogramma IntuneMAMConfigurator kan worden gebruikt om de Intune-typen toe te voegen aan de activeringsregel. Als uw bestaande activeringsregel de vooraf gedefinieerde tekenreeksconstanten gebruikt (bijvoorbeeld NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText, enz.), kan het predicaat van de syntaxis erg complex worden. Het hulpprogramma IntuneMAMConfigurator kan ook worden gebruikt om de activeringsregel te converteren van de tekenreeksconstanten in een predicate tekenreeks terwijl de Intune-typen worden toegevoegd. U vindt de IntuneMAMConfigurator in onze GitHub-opslagplaats. 
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Op MAM gerichte configuratie inschakelen voor iOS-toepassingen

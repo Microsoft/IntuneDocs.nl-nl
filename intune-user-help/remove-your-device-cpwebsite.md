@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7cd6380cbb596779a3094b18eef4e91b6161871
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f22509d780ec4d877e7e780109b34776b269c8b3
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Uw apparaat uit de bedrijfsportal verwijderen
 
-Als u besluit dat u uw apparaat niet meer wilt laten beheren door uw bedrijf of organisatie, kunt u het apparaat uit de bedrijfsportal verwijderen via de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog). De bedrijfsportalwebsite is een webpagina waarop u de computers en apparaten beheert die u hebt ingeschreven voor beheer door de IT-afdeling. Als u uw apparaat verwijdert, wordt het niet meer weergegeven op de bedrijfsportal en mogelijk hebt u ook geen toegang meer tot de gegevens, apps en e-mail van uw werk of school.
+Als u besluit dat u uw apparaat niet meer wilt laten beheren door uw bedrijf of organisatie, kunt u het apparaat uit de bedrijfsportal verwijderen via de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog). Als u uw apparaat verwijdert, wordt dit niet langer vermeld in de bedrijfsportal. Ook is het mogelijk dat u geen toegang meer krijgt tot de gegevens, apps en e-mail van uw organisatie.
 
 Ga als volgt te werk om uw apparaat te verwijderen:
 

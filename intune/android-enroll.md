@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3212d1a3d3454542dd9d34409fc788558f2d7eed
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-android-devices"></a>Android-apparaten inschrijven
 
@@ -58,7 +58,8 @@ Zie [Gegevens die Intune naar Google stuurt](data-intune-sends-to-google.md) voo
 Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door [de instantie voor het beheer van mobiele apparaten in te stellen](mdm-authority-set.md) als **Microsoft Intune**.
 2. **Android for Work-binding configureren**<br>
     
-   a. Meld u aan bij [Intune in de Azure Portal](https://aka.ms/intuneportal), selecteer **Apparaatinschrijving** > **Android-inschrijving** > **Beheerd Google Play**.
+   a. Meld u aan bij [Intune in de Azure Portal](https://aka.ms/intuneportal), selecteer **Apparaatinschrijving** > **Android-inschrijving** > **Beheerd Google Play**.  Als u een aangepaste Intune beheerdersrol gebruikt, zijn voor toegang tot deze rol lees- en bijwerkmachtigingen voor de organisatie vereist.
+   
    ![Android for Work-registratiescherm](./media/android-work-bind.png)
 
    b. Selecteer **Ik ga akkoord** om Microsoft toestemming te geven om [gebruikers- en apparaatgegevens naar Google te verzenden](data-intune-sends-to-google.md). 

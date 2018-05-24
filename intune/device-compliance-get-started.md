@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Aan de slag met apparaatnalevingsbeleid in Intune
 
@@ -80,6 +80,8 @@ Het volgende is vereist om apparaatnalevingsbeleid te gebruiken:
   - Windows 10
 
 - Apparaten moeten worden geregistreerd bij Intune om over het nalevingsbeleid voor apparaten te rapporteren
+
+- Apparaten die zijn geregistreerd voor één gebruiker of apparaten zonder primaire gebruiker worden ondersteund. Meerdere gebruikerscontexten worden niet ondersteund.
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Hoe het Intune-apparaatnalevingsbeleid werkt met Azure AD
 
@@ -148,16 +150,16 @@ Voor apparaten die aan beleidsregels voldoen, kunt u die apparaten toegang verle
 U kunt nalevingsbeleid voor apparaten ook zonder voorwaardelijke toegang gebruiken. Bij onafhankelijk gebruik van nalevingsbeleid worden de betreffende apparaten geëvalueerd en samen met hun nalevingsstatus gerapporteerd. U kunt bijvoorbeeld rapporteren over het aantal apparaten dat niet is versleuteld of over welke apparaten jailbroken of geroot zijn. Wanneer u nalevingsbeleid zonder voorwaardelijke toegang gebruikt, zijn er geen toegangsbeperkingen tot bedrijfsresources.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Nalevingsbeleid voor apparaten implementeren
-U kunt nalevingsbeleid implementeren voor gebruikers in gebruikersgroepen of aan apparaten in apparaatgroepen. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden de apparaten van de gebruiker gecontroleerd op naleving.
+U kunt nalevingsbeleid implementeren voor gebruikers in gebruikersgroepen of apparaten in apparaatgroepen. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden alle apparaten van de gebruiker gecontroleerd op naleving.
 
-Voor apparaten in apparaatgroepen omvat **Instellingen voor nalevingsbeleid** (Azure Portal > Apparaatnaleving)
+De **Instellingen voor nalevingsbeleid** (Azure Portal > Apparaatnaleving) omvatten:
 
 - **Apparaten waaraan geen nalevingsbeleid is toegewezen markeren als**: deze eigenschap heeft twee waarden:
 
   - **Compatibel**: beveiligingsfunctie uit
   - **Niet compatibel** (standaard): beveiligingsfunctie aan
 
-  Als er geen nalevingsbeleid aan een apparaat is toegewezen, wordt dit apparaat als incompatibel beschouwd. Standaard worden apparaten gemarkeerd als **Niet compatibel**. Als u voorwaardelijke toegang gebruikt, is het raadzaam de standaardinstelling **Niet compatibel** te behouden. Als een eindgebruiker incompatibel is omdat er geen beleid is toegewezen, wordt in de bedrijfsportal `No compliance policies have been assigned` vermeld.
+  Als er geen nalevingsbeleid aan een apparaat is toegewezen, wordt dit apparaat als incompatibel beschouwd. Standaard worden apparaten gemarkeerd als **Compatibel**. Als u voorwaardelijke toegang gebruikt, is het raadzaam de instelling te wijzigen in **Niet compatibel**. Als een eindgebruiker incompatibel is omdat er geen beleid is toegewezen, wordt in de bedrijfsportal `No compliance policies have been assigned` vermeld.
 
 - **Verbeterde jailbreak-detectie**: als deze instelling is ingeschakeld, zorgt deze ervoor dat iOS-apparaten vaker bij Intune inchecken. Door het inschakelen van deze eigenschap worden de locatieservices van het apparaat gebruikt. Ook heeft dit invloed op het batterijverbruik. De locatiegegevens van de gebruiker worden niet opgeslagen door Intune.
 

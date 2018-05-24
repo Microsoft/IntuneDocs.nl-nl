@@ -1,5 +1,5 @@
 ---
-title: Fouten verzenden met uw beheerde macOS-apparaat | Microsoft Docs
+title: Fouten van uw Mac-apparaat naar het ondersteuningsteam van het bedrijf verzenden | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 52431d900ee9abe71458b8b22d8a0946f22ce583
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 9805dfdba67299a5a1cd9433bbc061f8bd96bc9e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Fouten naar de juiste personen verzenden voor uw beheerde macOS-apparaat
 

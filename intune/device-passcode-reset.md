@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 905c51dcbc5b7731be207c25ffd368b339dbec57
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5783558a768e1d58087168f81ad27e5acf9aae09
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>De wachtwoordcode van een apparaat opnieuw instellen of verwijderen via Intune
 
@@ -47,7 +47,7 @@ Als u een nieuwe wachtwoordcode wilt maken voor een apparaat, gebruikt u de acti
 
 ## <a name="resetting-android-for-work-passcodes"></a>Wachtwoordcodes voor Android for Work opnieuw instellen
 
-Ondersteunde Android for Work-apparaten ontvangen een nieuw wachtwoord om het apparaat te ontgrendelen of een beheerde gebruikersvraag voor eindgebruikers. Voor apparaten met Android 7.0 of later met Work-profielen ontvangt de eindgebruiker een melding met het verzoek het token voor het opnieuw instellen van hun wachtwoordcode direct te activeren zodra de inschrijving is voltooid. De melding wordt weergegeven als een Work-profielwachtwoord is vereist en is ingesteld. Zodra de wachtwoordcode is ingevoerd, wordt de melding verwijderd.
+Ondersteunde Android for Work-apparaten ontvangen een nieuw wachtwoord om het beheerde profiel te ontgrendelen of een beheerde gebruikersvraag voor eindgebruikers. Voor apparaten met Android 7.0 of later met Work-profielen ontvangt de eindgebruiker een melding met het verzoek het token voor het opnieuw instellen van hun wachtwoordcode direct te activeren zodra de inschrijving is voltooid. De melding wordt weergegeven als een Work-profielwachtwoord is vereist en is ingesteld. Zodra de wachtwoordcode is ingevoerd, wordt de melding verwijderd.
 
 ## <a name="resetting-ios-passcodes"></a>iOS-wachtwoordcodes opnieuw instellen
 

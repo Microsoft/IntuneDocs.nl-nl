@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 619d9e86bd130a617155d262f3e09882ce26ec1e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Android- en Samsung Knox Standard-apparaatbeperkingsinstellingen in Microsoft Intune 
 
@@ -47,6 +47,10 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
 ## <a name="password"></a>Wachtwoord
 
 - **Wachtwoord**: hiermee geeft u aan dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.|Ja|Ja|
+
+    > [!NOTE]
+    > Voor Samsung Knox-apparaten is tijdens MDM-inschrijving automatisch een pincode van vier cijfers vereist. Voor systeemeigen Android-apparaten is mogelijk automatisch een pincode vereist om te voldoen aan voorwaardelijke toegang.
+
 - **Minimale wachtwoordlengte**: voer de minimale lengte van het wachtwoord in dat een gebruiker moet configureren (tussen 4 en 16 tekens).
 - **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**: hiermee geeft u het aantal minuten van inactiviteit op waarna het apparaat automatisch wordt vergrendeld.
 - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: hiermee geeft u het aantal mislukte aanmeldingen op dat is toegestaan voordat het apparaat wordt gewist.
@@ -55,7 +59,7 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
     - **Standaardwaarde apparaat**
     - **Lage beveiligingsbiometrie**
     - **Ten minste numeriek**
-    - **Numeriek complex**: herhalende of opeenvolgende nummers zoals 1111 of 1234 zijn niet toegestaan<sup>1</sup>
+    - **Numeriek complex**: herhaalde of opeenvolgende cijfers (zoals 1111 of 1234) zijn niet toegestaan.<sup>1</sup>
     - **Ten minste alfabetisch**
     - **Ten minste alfanumeriek**
     - **Minstens alfanumeriek met symbolen**
@@ -63,6 +67,9 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
 - **Ontgrendelen met vingerafdruk (alleen voor Samsung Knox)**: hiermee staat u de gebruiker toe ondersteunde apparaten te ontgrendelen met een vingerafdruk.
 - **Smart Lock en andere trustagenten**: hiermee kunt u de Smart Lock- functie op compatibele Android-apparaten beheren (Samsung Knox Standard 5.0 en hoger). Met deze telefoonmogelijkheid, soms ook wel vertrouwensagent genoemd, kunt u het vergrendelingsschermwachtwoord op het apparaat uitschakelen of overslaan als het zich op een vertrouwde locatie bevindt. Dit kan bijvoorbeeld worden gebruikt wanneer het apparaat is verbonden met een bepaald Bluetooth-apparaat of wanneer het zich in de buurt van een NFC-tag bevindt. U kunt deze instelling gebruiken om te voorkomen dat gebruikers Smart Lock configureren.
 - **Versleuteling**: hiermee geeft u aan dat bestanden op het apparaat moeten worden versleuteld.
+
+    > [!NOTE]
+    > Als er een versleutelingsbeleid van kracht is, moeten gebruikers van Samsung Knox-apparaten een complex wachtwoord van zes tekens instellen als wachtwoordcode voor het apparaat.
 
 <sup>1</sup> Voordat u deze instelling aan apparaten toewijst, moet u controleren dat de bedrijfsportal-app op deze apparaten is bijgewerkt naar de nieuwste versie.
 
