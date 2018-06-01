@@ -1,4 +1,4 @@
-﻿---
+---
 title: Een familienaam van een pakket (PFN) zoeken voor VPN per app
 description: Een PFN zoeken, zodat u VPN per app kunt configureren.
 keywords: ''
@@ -16,10 +16,11 @@ ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: c6bbc1bd477cde7eecb78b78c8efa4bfde46976f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "31014092"
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>Een Package Family Name (PFN) voor de configuratie van VPN per app zoeken
 
