@@ -17,7 +17,6 @@
 ### [Gebruikers en apparaten organiseren](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Beleid en apps implementeren](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Bedrijfsportal aanpassen](/intune/company-portal-customize?toc=/intune-classic/toc.json)
-### [Apparaten inschrijven](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Taken na configuratie](get-started/post-configuration-tasks.md)
 ## Volgende stappen
 ### [Voorkomen dat bedrijfsgegevens lekken van mobiele Office 365-apps](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -102,7 +101,6 @@
 #### [Beheerde iOS-apparaten herstellen](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android- en Samsung KNOX-instellingen](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Een aangepast beleid gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel](deploy-use/pre-shared-key-wi-fi-profile.md)
-##### [Een aangepast beleid gebruiken voor een VPN-profiel per app voor Android-apparaten](deploy-use/per-app-vpn-for-android-pulse-secure.md)
 ##### [Aangepaste beleidsregels gebruiken om apps toe te staan of te blokkeren voor Samsung KNOX-apparaten](deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Android for Work-instellingen](deploy-use/android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8- en Windows 8.1-instellingen](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
@@ -137,15 +135,8 @@
 ## [Apparaten buiten gebruik stellen](deploy-use/retire-devices-from-microsoft-intune-management.md)
 
 ## [Apps toevoegen](deploy-use/add-apps.md)
-### [Apps toevoegen voor ingeschreven apparaten](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Windows-apps sideloaden](/intune/app-sideload-windows?toc=/intune-classic/toc.json)
 ## [Apps implementeren](deploy-use/deploy-apps.md)
-### [Apps implementeren op apparaten en pc's](deploy-use/deploy-apps-in-microsoft-intune.md)
-### [Apps implementeren op Android for Work-apparaten](deploy-use/android-for-work-apps.md)
-### [Apps controleren](deploy-use/monitor-apps-in-microsoft-intune.md)
-### [Apps beheren die zijn gekocht via het volume-aankoopprogramma](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [iOS-apps beheren die zijn gekocht via het volume-aankoopprogramma](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-#### [Windows-apps beheren die zijn gekocht via het volume-aankoopprogramma](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## Apps configureren
 ### [Apps bijwerken](deploy-use/update-apps-using-microsoft-intune.md)
@@ -175,7 +166,6 @@
 #### [Apps met App-certificeringsinstantie gebruiken](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [SharePoint Online](deploy-use/mam-ca-for-sharepoint-online.md)
-#### [Apps zonder ADAL blokkeren](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [De toegang tot netwerken beveiligen (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [Toegang beveiligen op basis van apparaat, netwerk en toepassingsrisico](deploy-use/mobile-threat-defense.md)
 #### [Lookout Mobile Threat Defense-connector](deploy-use/lookout-mobile-threat-defense-connector.md)
@@ -203,8 +193,6 @@
 #### [Beveiligingsbeleid voor apps valideren](deploy-use/validate-mobile-application-management.md)
 #### [Naleving van beveiligingsbeleid voor apps bewaken](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-#### [Gegevensoverdracht tussen iOS-apps beheren](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-
 #### [Intune-beheerconsole voor MAM-beleid](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Line-Of-Business-apps voorbereiden voor MAM](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
@@ -216,7 +204,6 @@
 
 ## Apps en gegevens buiten gebruik stellen
 ### [Volledig of selectief wissen gebruiken](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [Apps buiten gebruik stellen](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Bedrijfsgegevens van beheerde apps wissen](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Uw MDM-instantie wijzigen](deploy-use/change-mdm-authority.md)
