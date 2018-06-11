@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/24/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e99ed0bd1eb5bae90913aedba5973e5e1282f70
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744666"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP met voorwaardelijke toegang in Intune inschakelen
 
@@ -51,19 +52,19 @@ Om ATP met Intune te gebruiken, moet u het volgende geconfigureerd en klaar voor
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Apparaatcompatibiliteit** > **Windows Defender ATP** > **De beheerconsole van Windows Defender Advanced Threat Protection openen**.
+3. Selecteer **Apparaatcompatibiliteit** > **Windows Defender ATP** > **Het Windows Defender-beveiligingscentrum openen**.
 
-    ![Alternatieve tekst](./media/atp-device-compliance-open-windows-defender.png)
+    ![Selecteren om het Windows Defender-beveiligingscentrum te openen](./media/atp-device-compliance-open-windows-defender.png)
 
 4. In het **Windows Defender Beveiligingscentrum**:
     1. Selecteer **Instellingen** > **Geavanceerde functies**.
     2. Voor **Microsoft Intune-verbinding**, kiest u **Aan**:
 
-        ![Alternatieve tekst](./media/atp-security-center-intune-toggle.png)
+        ![De verbinding met Intune inschakelen](./media/atp-security-center-intune-toggle.png)
 
     3. Selecteer **Voorkeuren opslaan**.
 
-5. Ga terug naar Intune, **Apparaatconformiteit** > **Windows Defender ATP**. Stel **Windows 10.0.15063+ apparaten verbinden met Windows Defender Advanced Threat Protection** in op **Aan**.
+5. Ga terug naar Intune, **Apparaatconformiteit** > **Windows Defender ATP**. Stel **Windows-apparaten met versie 10.0.15063 en hoger verbinden met Windows Defender ATP** in op **Aan**.
 6. Selecteer **Opslaan**.
 
 Gewoonlijk voltooit u deze taak één keer. Dus als ATP al is ingeschakeld in uw Intune-resource, hoeft u dit niet opnieuw uit te voeren.
@@ -115,9 +116,9 @@ Het nalevingsbeleid bepaalt een aanvaardbaar risiconiveau op een apparaat.
 2. Selecteer **Apparaatconformiteit** > **Beleid** > **Beleid maken**.
 3. Voer een **Naam** en **Beschrijving** in.
 4. In **Platform** selecteert u **Windows 10 en hoger**.
-5. Stel in de instellingen voor **Apparaatstatus**, **Vereisen dat het apparaat op of onder het Apparaatdreigingsniveau moet zijn** in op het gewenste niveau:
+5. Stel in de instellingen voor **Windows Defender ATP** de optie **Vereisen dat het apparaat op of onder het apparaatdreigingsniveau moet zijn** in op het gewenste niveau:
 
-  - **Beveiligd**: dit is het veiligste niveau. Het apparaat heeft geen toegang tot bedrijfsresources als er ook maar één bedreiging is gevonden. Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.
+  - **Veilig**: dit is het veiligste niveau. Het apparaat heeft geen toegang tot bedrijfsresources als er ook maar één bedreiging is gevonden. Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.
   - **Laag**: het apparaat is conform als er alleen bedreigingen van een laag niveau aanwezig zijn. Apparaten met gemiddelde of hoge dreigingsniveaus zijn niet conform.
   - **Gemiddeld**: het apparaat is conform als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
   - **Hoog**: dit niveau is het minst veilig en laat alle dreigingsniveaus toe. Dus apparaten met hoge, gemiddelde of lage bedreigingsniveaus worden beschouwd als conform.

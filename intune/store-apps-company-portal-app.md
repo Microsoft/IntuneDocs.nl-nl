@@ -15,11 +15,12 @@ ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 169d0a32fdc86b5cd3f36421e6057cdeae1a078f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: edd0ec0d717d4303ad2a452c5d60009ac09aa05f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703312"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>De Windows 10-bedrijfsportal-app handmatig toevoegen met Microsoft Intune
 
@@ -73,7 +74,7 @@ Het wordt aanbevolen de toewijzing voor de Windows 8.1-bedrijfsportal-app te ver
 
 Als u de app moet sideloaden en de Windows 8.1-bedrijfsportal hebt toegewezen zonder deze te ondertekenen met het Symantec-certificaat, volgt u de stappen in de vorige secties van dit artikel om de upgrade te voltooien.
 
-Als u de app moet sideloaden en de Windows 8.1-bedrijfsportal hebt ondertekend en toegewezen met het Symantec-certificaat voor ondertekening van programmacode, volgt u de stappen in de volgende sectie.  
+Als u de app moet sideloaden en de Windows 8.1-bedrijfsportal-app hebt ondertekend en toegewezen met het Symantec-certificaat voor de ondertekening van programmacode, volgt u de stappen in de volgende sectie.
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Hoe kan ik een upgrade uitvoeren van mijn ondertekende en gesideloade Windows Phone 8.1-bedrijfsportal-app of Windows 8.1-bedrijfsportal-app naar de Windows 10-bedrijfsportal-app?
 Het wordt aanbevolen de bestaande toewijzing voor de Windows Phone 8.1-bedrijfsportal-app of de Windows 8.1-bedrijfsportal-app te verwijderen door de toewijzingsactie in te stellen op **Installatie ongedaan maken**. Als u deze instelling selecteert, kunt u de Windows 10 Bedrijfsportal-app zoals gebruikelijk toewijzen.  
