@@ -68,4 +68,4 @@ ms.locfileid: "34744649"
 Het profiel wordt gemaakt en wordt weergegeven in de lijst.
 
 ## <a name="next-steps"></a>Volgende stappen
-[Wijs het profiel toe](device-profile-assign.md) en [controleer de status](device-profile-monitor.md).
+[Het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
