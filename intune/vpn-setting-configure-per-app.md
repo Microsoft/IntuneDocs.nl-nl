@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/30/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,31 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a467983b0d6ce94c32080f4d5cd78683471fb58
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
+ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34753889"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>VPN per app instellen in Intune voor iOS-apparaten
 
 U kunt specificeren welke beheerde apps uw virtueel particulier netwerk (VPN) mogen gebruiken op iOS-apparaten die met Intune worden beheerd. Wanneer u in Intune een VPN per app maakt, maakt een eindgebruiker bij het openen van zakelijke documenten automatisch verbinding via uw VPN.
 
-Per-App VPN is momenteel beschikbaar voor de volgende providers: 
+Per-App VPN is momenteel beschikbaar voor de volgende providers:
 
  - Checkpoint Remote Access VPN
  - Cisco AnyConnect
+ - Citrix
  - F5
  - Pulse Connect Secure
  - SonicWall
-
+ - Palo Alto Networks GlobalProtect
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Vereisten voor Per-App VPN
+
+> [!IMPORTANT]
+> Uw VPN-leverancier heeft wellicht andere specifieke vereisten voor Per-App VPN, zoals bepaalde hardware of -licentieverlening. Raadpleeg de documentatie en zorg ervoor dat u voldoet aan deze vereisten voordat u Per-App VPN in Intune instelt.
 
 Ter bevestiging van de identiteit van de VPN-server legt deze het certificaat voor. Dit moet door het apparaat zonder prompt worden geaccepteerd. Om ervoor te zorgen dat het certificaat automatisch wordt goedgekeurd, moet u een vertrouwd certificaatprofiel maken dat het door de certificeringsinstantie (CA) uitgegeven basiscertificaat van de VPN-server bevat. 
 
@@ -162,14 +167,15 @@ Wanneer uw VPN per app is geconfigureerd en aan uw app is gekoppeld, controleert
 
 ### <a name="before-you-attempt-to-connect"></a>Voordat u verbinding probeert te maken
 
- - Zorg ervoor dat u iOS 7 of hoger uitvoert.
+ - Zorg dat u iOS 9 of hoger uitvoert.
  - Zorg ervoor dat u *alle* hierboven genoemde beleidsregels implementeert naar dezelfde groep gebruikers. Als u dit niet doet, zal de VPN per app-ervaring absoluut mislukken.  
  - Zorg ervoor dat u de ondersteunde VPN-app van derden hebt geïnstalleerd. De volgende VPN-apps worden ondersteund:
-    - Pulse Secure
-    - Controlepunt
+    - Check Point Capsule Connect
     - Cisco AnyConnect
-    - F5
-    - SonicWall
+    - Citrix VPN
+    - F5-toegang
+    - Pulse Secure
+    - SonicWall Mobile Connect
 
 ### <a name="connect-using-the-per-app-vpn"></a>Verbinding maken met behulp van VPN per app
 

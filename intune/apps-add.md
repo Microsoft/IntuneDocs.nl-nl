@@ -15,11 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dbfff0fadec567bf0d9bd86d71a26174db40c09
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744989"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune
 
@@ -153,6 +154,9 @@ Als u een app aan Intune toevoegt, kunt u de gewenste categorie selecteren. Aan 
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Apps die automatisch door Intune zijn toegevoegd
 
 Voorheen bevatte Intune een aantal ingebouwde apps die u snel kon toewijzen. Op basis van klantenfeedback over Intune hebben we deze lijst verwijderd en worden de ingebouwde apps niet langer weergegeven. Als u echter al ingebouwde apps hebt toegewezen, blijven deze apps zichtbaar in de lijst met apps. U kunt de apps desgewenst blijven toewijzen.
+
+> [!NOTE]
+> Voor de installatie van een vereiste niet-Line-of-Business-app probeert Intune de app te installeren door een installatie-opdracht te sturen wanneer het apparaat incheckt, ervan uitgaande dat de app niet is gedetecteerd en de installatiestatus van de app niet *Installatie in behandeling* is.
 
 ## <a name="installing-updating-or-removing-required-apps"></a>Vereiste apps installeren, bijwerken of verwijderen
 

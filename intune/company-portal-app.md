@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61d58c794015b0b87f4c9949d9c53e7166925022
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: c63e632036d38fb1fde2e4b26313b4447b9db25e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744581"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -35,35 +36,49 @@ Een aangepaste bedrijfsportal geeft uw eindgebruikers een vertrouwde en nuttige 
 > [!Note]       
 > Vanuit de bedrijfsportal voor Windows 10 worden app-logboeken nu rechtstreeks naar Microsoft verzonden wanneer de gebruiker de werkstroom voor hulp bij een probleem in gang zet. Dit vereenvoudigt het detecteren en oplossen van problemen die aan Microsoft worden gemeld.  
 
-## <a name="company-contact-information-and-privacy-statement"></a>Contactgegevens en privacyverklaring van bedrijf        
-De bedrijfsnaam wordt weergegeven als de titel van de bedrijfsportal. Gebruikers zien de contactgegevens en details in het scherm **Contact opnemen met IT** van de bedrijfsportal. Wanneer een gebruiker op de privacykoppeling klikt, wordt de privacyverklaring weergegeven.
+## <a name="company-information-and-privacy-statement"></a>Bedrijfsinformatie en privacyverklaring        
+De bedrijfsnaam wordt weergegeven als de titel van de bedrijfsportal. Wanneer een gebruiker op de privacykoppeling klikt, wordt de privacyverklaring weergegeven.
 
 Velden met een asterisk (*) zijn verplicht.       
 
 
 | Veldnaam | Max. lengte | Meer informatie |
 |---|---|---|
-|**Bedrijfsnaam**| 40 | Deze naam wordt weergegeven als de titel van de bedrijfsportal. |
-|**Naam van contactpersoon IT-afdeling** | 40 | Deze naam wordt weergegeven op de pagina **Contact opnemen met IT**. |
-|**Telefoonnummer IT-afdeling** | 20 | Dit contacttelefoonnummer wordt weergegeven op de pagina **Contact opnemen met IT**. |
-|**E-mailadres van de IT-afdeling**| 40 | Dit contactadres wordt weergegeven op de pagina **Contact opnemen met IT**. U moet een geldig e-mailadres invoeren in de notatie `alias@domainname.com`. |
-| **Aanvullende informatie**|    120     | Wordt weergegeven op de pagina **Contact opnemen met IT**. |
-| **URL van privacyverklaring van bedrijf** |     79     | U kunt de privacyverklaring van uw eigen bedrijf opgeven. Deze wordt dan weergegeven wanneer gebruikers in de bedrijfsportal op de privacykoppelingen klikken. U moet een geldige URL opgeven in de notatie `<https://www.contoso.com>`. |
+|**Bedrijfsnaam**| 40 | Deze naam wordt weergegeven als de titel van de bedrijfsportal en wordt in Intune als tekst getoond. |
+| **URL voor de privacyverklaring** |     79     | U kunt de privacyverklaring van uw eigen bedrijf opgeven. Deze wordt dan weergegeven wanneer gebruikers in de bedrijfsportal op de privacykoppelingen klikken. U moet een geldige URL opgeven in de notatie `<https://www.contoso.com>`. |
 
-## <a name="support-contacts"></a>Contactpersonen voor ondersteuning     
-Aan gebruikers in de bedrijfsportal wordt de ondersteuningswebsite weergegeven voor toegang tot onlineondersteuning.        
+## <a name="support-information"></a>Ondersteuningsinformatie      
+Voer de ondersteuningsinformatie van uw bedrijf in zodat u werknemer een contactpersoon heeft voor Intune-gerelateerde vragen.       
 
 |Veldnaam|Max. lengte|Meer informatie|
 |---|---|---|
-|**URL van ondersteuningswebsite**|150|Als u over een ondersteuningswebsite voor uw gebruikers beschikt, kunt u hier de URL opgeven. De URL moet in de notatie **https://www.contoso.com** worden opgegeven. Als u geen URL opgeeft, wordt op de pagina **Contact opnemen met IT** in de bedrijfsportal niets weergegeven voor de ondersteuningswebsite.|
-|**URL van ondersteuningswebsite**|40|Deze naam is de beschrijvende naam die wordt weergegeven voor de URL naar de ondersteuningswebsite. Als u een URL van een ondersteuningswebsite en geen beschrijvende naam opgeeft, wordt in de bedrijfsportal Ga naar de website van IT weergegeven op de pagina **Contact opnemen met IT**.
+|**Naam van de contactpersoon** | 40 | Deze naam wordt weergegeven op de pagina **Contact opnemen met IT**. |
+|**Telefoonnummer** | 20 | Dit contactnummer wordt weergegeven op de pagina **Contact opnemen met IT**, zodat werknemers contact met u kunnen opnemen voor ondersteuning. |
+|**E-mailadres**| 40 | Dit contactadres wordt weergegeven op de pagina **Contact opnemen met IT**. U moet een geldig e-mailadres invoeren in de notatie `alias@domainname.com`. |
+|**Naam van de website**| 40 | Deze naam is de beschrijvende naam die wordt weergegeven voor de URL naar de ondersteuningswebsite. Als u een URL van een ondersteuningswebsite en geen beschrijvende naam opgeeft, wordt in de bedrijfsportal Ga naar de website van IT weergegeven op de pagina **Contact opnemen met IT**. |
+|**URL van de site**| 150 | Als u over een ondersteuningswebsite voor uw gebruikers beschikt, kunt u hier de URL opgeven. De URL moet in de notatie **https://www.contoso.com** worden opgegeven. Als u geen URL opgeeft, wordt op de pagina **Contact opnemen met IT** in de bedrijfsportal niets weergegeven voor de ondersteuningswebsite. |
+| **Aanvullende informatie**| 120 | Wordt weergegeven op de pagina **Contact opnemen met IT**. |
+
 
 ## <a name="company-branding-customization"></a>Aanpassing bedrijfshuisstijl       
 U kunt uw bedrijfsportal aanpassen met uw bedrijfslogo, bedrijfsnaam, themakleur en achtergrond.     
 
+### <a name="theme-color"></a>Themakleur
+Pas een themakleur toe op de bedrijfsportal. Selecteer een standaardkleur of voer een 6-cijferige hexadecimale code in voor een aangepaste kleur.
+
 |Veldnaam|Meer informatie|
 |---|---|
-|**Themakleur**|Selecteer een themakleur die u wilt toepassen op de bedrijfsportal. U kunt een kleur kiezen uit de kleurkiezer of een specifieke hex-code invoeren.|
-|**Bedrijfslogo weergeven**|Als u deze optie inschakelt, kunt u het bedrijfslogo uploaden dat u in uw bedrijfsportal wilt weergeven. U kunt twee logo's uploaden: één dat wordt weergegeven wanneer de achtergrond van de bedrijfsportal wit is en één dat wordt weergegeven wanneer de achtergrond van de bedrijfsportal de door u geselecteerde themakleur heeft. Beide logo’s moeten png- of jpg-bestanden zijn met een resolutie van maximaal 400 x 100 pixels en een grootte van maximaal 750 kB.<br>U kunt ook de ingevoerde bedrijfsnaam naast het geüploade logo weergeven.|
+|**Kleurtype**| Selecteer een themakleur die u wilt toepassen op de bedrijfsportal. U kunt een standaardkleur kiezen of een specifieke hexadecimale code invoeren. |
+|**Kleur kiezen** of **Hexadecimale kleurcode**| Selecteer een themakleur die u wilt toepassen op de bedrijfsportal. U kunt een standaardkleur kiezen of een specifieke hexadecimale code invoeren. Deze opties zijn afhankelijk van het **Kleurtype** dat u selecteert.  |
 
-Nadat u uw wijzigingen hebt opgeslagen, kunt u **Een voorbeeld van uw instellingen bekijken in de Intune-webportal** kiezen om weer te geven hoe uw configuraties eruit gaan zien.
+### <a name="company-logo"></a>Bedrijfslogo
+Upload uw bedrijfslogo zodat deze overal in Intune zichtbaar is.
+
+|Veldnaam|Meer informatie|
+|---|---|
+|**Bedrijfslogo weergeven**|Als u deze optie inschakelt, kunt u het bedrijfslogo uploaden dat u in uw bedrijfsportal wilt weergeven. U kunt twee logo's uploaden: één dat wordt weergegeven wanneer de achtergrond van de bedrijfsportal wit is en één dat wordt weergegeven wanneer de achtergrond van de bedrijfsportal de door u geselecteerde themakleur heeft. |
+|**Een logo uploaden dat u wilt gebruiken op achtergronden met een themakleur**| Deze optie is beschikbaar als u ervoor kiest om het bedrijfslogo weer te geven. Het logo moet een PNG- of JPG-bestand zijn met een resolutie van maximaal 400 x 400 pixels en een grootte van maximaal 750 kB. |
+|**Logo uploaden om te gebruiken op een lichte achtergrond**| Deze optie is beschikbaar als u ervoor kiest om het bedrijfslogo weer te geven. Het logo moet een PNG- of JPG-bestand zijn met een resolutie van maximaal 400 x 400 pixels en een grootte van maximaal 750 kB. |
+|**Bedrijfsnaam naast logo weergeven**| Selecteer deze optie om de ingevoerde bedrijfsnaam naast het geüploade logo weergeven. |
+
+Nadat u uw wijzigingen hebt opgeslagen, kunt u boven in de blade **Een voorbeeld van uw instellingen bekijken in de Intune-webportal** kiezen om weer te geven hoe uw configuraties eruit gaan zien.

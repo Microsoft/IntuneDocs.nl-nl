@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 183eb3f121e1b5c53673d10a04d0710baeb5a703
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744768"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Een beleid voor voorwaardelijke toegang maken voor Exchange On-Premises en verouderde Exchange Online Dedicated
 
@@ -37,9 +38,9 @@ Controleer het volgende voordat u voorwaardelijke toegang configureert:
 - U moet de [Exchange On-Premises-connector Exchange Active Sync](exchange-connector-install.md) gebruiken, die Intune verbindt met Exchange On-Premises.
 
     >[!IMPORTANT]
-    >De Exchange On-premises-connector is uitsluitend bestemd voor uw Intune-tenant en mag niet worden gebruikt met een andere tenant. U moet er ook voor zorgen dat de Exchange-connector voor uw tenant **op slechts één machine** is geïnstalleerd.
+    >De Exchange On-premises-connector is uitsluitend bestemd voor uw Intune-tenant en mag niet worden gebruikt met een andere tenant. Intune ondersteunt nu meerdere on-premises Exchange-connectors per abonnement. Als u meer dan één on-premises Exchange-organisatie hebt, kunt u voor elke Exchange-organisatie een afzonderlijke connector instellen.
 
-- De connector kan op elke machine worden geïnstalleerd, zolang die machine maar kan communiceren met de Exchange-server.
+- De connector voor een on-premises Exchange-organisatie kan op elke machine worden geïnstalleerd, zolang die machine maar kan communiceren met de Exchange-server.
 
 - De connector ondersteunt de **Exchange CAS-omgeving**. Vanuit technisch oogpunt kunt u de connector desgewenst rechtstreeks op de Exchange CAS-server installeren, maar dit wordt niet aangeraden, omdat hiermee de belasting van de server wordt verhoogd. Wanneer u de connector configureert, moet u deze zodanig instellen dat deze communiceert met een van de Exchange CAS-servers.
 
@@ -49,7 +50,7 @@ Controleer het volgende voordat u voorwaardelijke toegang configureert:
     - Het apparaat moet zijn **ingeschreven** bij Intune of lid zijn van een domein.
     - Het apparaat moet zijn **geregistreerd bij Azure Active Directory**. Bovendien moet de client-id van Exchange ActiveSync zijn geregistreerd bij Azure Active Directory.
 <br></br>
-- AAD DRS wordt automatisch geactiveerd voor Intune- en Office 365-klanten. Klanten die de ADFS Device Registration Service al hebben geïmplementeerd, zien geen geregistreerde apparaten in hun on-premises Active Directory. **Dit geldt niet voor Windows-pc's en Windows Phone-apparaten**.
+- De Azure AD Device Registration Service (DRS) wordt automatisch geactiveerd voor Intune- en Office 365-klanten. Klanten die de ADFS Device Registration Service al hebben geïmplementeerd, zien geen geregistreerde apparaten in hun on-premises Active Directory. **Dit geldt niet voor Windows-pc's en Windows Phone-apparaten**.
 
 - Het apparaat moet **compatibel** zijn met alle soorten nalevingsbeleid die worden geïmplementeerd op het apparaat.
 
@@ -89,11 +90,11 @@ De native **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bi
 1. Kies **Ja** in het deelvenster **On-premises toegang tot Exchange** om on-premises toegang tot Exchange in te schakelen.
 
     > [!NOTE]
-    > Als u de on-premises connector Exchange Active Sync niet hebt geconfigureerd, is deze optie uitgeschakeld.  U moet deze connector eerst installeren en configureren voordat u voorwaardelijke toegang voor Exchange On-Premises inschakelt. Zie [Intune On-Premises Exchange Connector installeren](exchange-connector-install.md) voor meer informatie.
+    > Als u geen on-premises Exchange Active Sync-connector hebt geconfigureerd, is deze optie uitgeschakeld.  U moet eerst minimaal één connector installeren en configureren voordat u voorwaardelijke toegang voor Exchange On-Premises inschakelt. Zie [Intune On-Premises Exchange Connector installeren](exchange-connector-install.md) voor meer informatie.
 
 1. Kies **Opgenomen groepen** onder **Toewijzing**.  Gebruik de beveiligingsgebruikersgroep waarop u voorwaardelijke toegang wilt toepassen. Voor deze actie moeten de gebruikers hun apparaten inschrijven in Intune en moeten de apparaten voldoen aan de nalevingsprofielen.
 
-1. Als u een bepaalde groepen met gebruikers wilt uitsluiten, kiest u **Uitgesloten groepen** en selecteert u de gebruikersgroep die u wilt uitsluiten van vereiste apparaatinschrijving en -naleving.
+1. Als u bepaalde groepen met gebruikers wilt uitsluiten, kiest u **Uitgesloten groepen** en selecteert u de gebruikersgroep die u wilt uitsluiten van vereiste apparaatinschrijving en -naleving.
 
 1. Kies **Gebruikersmeldingen** onder **Instellingen** om het standaard-e-mailbericht te wijzigen. Dit bericht wordt naar gebruikers verzonden als hun apparaten niet compatibel zijn en gebruikers toegang willen tot Exchange On-Premises. Voor de berichtsjabloon wordt Markup Language gebruikt.  Tijdens het typen ziet u een voorbeeld van het bericht.
     > [!TIP]

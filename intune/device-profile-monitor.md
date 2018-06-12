@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/17/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c2eb08db58940ed575b3dea011395edd6711fc
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744785"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Apparaatprofielen controleren in Microsoft Intune
 
@@ -41,19 +42,27 @@ Nadat u een apparaatprofiel hebt gemaakt, biedt Intune grafieken. In deze grafie
 1. Selecteer een bestaand profiel. Selecteer bijvoorbeeld een macOS-profiel.
 2. Selecteer het tabblad **Overzicht**.
 
-    In de grafiek wordt het aantal apparaten weergegeven dat is toegewezen aan het specifieke apparaatprofiel. Als het apparaatconfiguratieprofiel bijvoorbeeld is toegepast op macOS-apparaten, geeft de grafiek het aantal macOS-apparaten weer.
+    In de bovenste grafiek wordt het aantal apparaten weergegeven dat is toegewezen aan het specifieke apparaatprofiel. Als het apparaatconfiguratieprofiel bijvoorbeeld is toegepast op macOS-apparaten, geeft de grafiek het aantal macOS-apparaten weer.
 
     De grafiek geeft ook voor andere platforms het aantal apparaten weer dat is toegewezen aan hetzelfde apparaatprofiel. Zo wordt bijvoorbeeld het aantal niet-macOS-apparaten weergegeven.
 
     ![Het aantal apparaten weergeven dat is toegewezen aan het apparaatprofiel](./media/device-configuration-profile-graphical-chart.png)
 
-3. Selecteer de cirkel in de grafiek. **Apparaatstatus** wordt geopend.
+    In de onderste grafiek wordt het aantal gebruikers weergegeven dat is toegewezen aan het specifieke apparaatprofiel. Als het apparaatconfiguratieprofiel bijvoorbeeld is toegepast op macOS-gebruikers, geeft de grafiek het aantal macOS-gebruikers weer.
+
+3. Selecteer de cirkel in de bovenste grafiek. **Apparaatstatus** wordt geopend.
 
     De apparaten die zijn toegewezen aan het profiel, worden vermeld, en er wordt weergegeven of het profiel is geïmplementeerd. U ziet ook dat alleen de apparaten met het specifieke platform (bijvoorbeeld macOS) worden vermeld.
 
-    Sluit de apparaatstatusgegevens.
+    Sluit **Apparaatstatus**.
 
-4. In de eigenschappen van het profiel (**Profielen** > selecteer een specifiek profiel) kunt u ook de bestaande eigenschappen wijzigen:
+4. Selecteer de cirkel in de onderste grafiek. **Gebruikersstatus** wordt geopend. 
+
+    De gebruikers die zijn toegewezen aan het profiel, worden vermeld, en er wordt weergegeven of het profiel is geïmplementeerd. U ziet ook dat alleen de gebruikers met het specifieke platform (bijvoorbeeld macOS) worden vermeld.
+
+    Sluit **Gebruikersstatus**.
+
+5. Selecteer in de lijst **Profielen** een specifiek profiel. U kunt ook bestaande eigenschappen wijzigen:
   - **Eigenschappen**: wijzig de naam, of werk alle bestaande instellingen bij.
   - **Toewijzingen**: neem apparaten op waarop het apparaat moet worden toegepast, of sluit deze uit. Kies **Groepen selecteren** om specifieke groepen te kiezen.
   - **Apparaatstatus**: de apparaten die zijn toegewezen aan het profiel, worden vermeld en er wordt weergegeven of het profiel is geïmplementeerd. U kunt een specifiek apparaat selecteren om meer details op te halen, inclusief de geïnstalleerde apps.

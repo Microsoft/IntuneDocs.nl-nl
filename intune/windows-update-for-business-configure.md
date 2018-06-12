@@ -5,18 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 5/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: c8751572ec2c072504b2442cb7e76496e969e0a2
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: fd63fb2023b4712a3ad49838f87f5b7cc8320954
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744887"
 ---
 # <a name="manage-software-updates-in-intune"></a>Software-updates beheren in Intune
 
@@ -166,6 +167,12 @@ U kunt het ontvangen van upgrades voor onderdelen of kwaliteitsupdates op een ap
 > [!IMPORTANT]
 > Wanneer u een opdracht voor onderbreken opgeeft, ontvangen apparaten deze opdracht de volgende keer dat bij de service wordt gecontroleerd op updates. Mogelijk wordt een geplande update geïnstalleerd voordat het apparaat controleert of er nieuwe updates zijn.
 > Als het betreffende apparaat is uitgeschakeld wanneer u de opdracht voor onderbreken opgeeft, kan dit apparaat, wanneer het wordt ingeschakeld, geplande updates downloaden en installeren voordat er bij Intune wordt gecontroleerd op nieuwe updates.
+
+### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>De nieuwste versie van software-updates voor Windows 10 verwijderen 
+Indien u een probleem ontdekt op uw Windows 10-computers, dan kunt u de meest recente functie-update of de nieuwste kwaliteitsupdate verwijderen (terugdraaien). U kunt alleen een functie- of kwaliteitsupdate verwijderen voor het servicekanaal waarop het apparaat zich bevindt. Door de verwijdering wordt een beleid geactiveerd dat de vorige update op uw Windows 10-computers herstelt. Specifiek voor functie-updates kunt u de tijd beperken van 2 tot 60 dagen waarin een verwijdering van de meest recente versie kan worden toegepast. Als u verwijderopties voor software-update wilt instellen, selecteert u **Software-updates** in de blade **Microsoft Intune** binnen Azure Portal. Kies vervolgens **Windows 10 Update Rings** op de blade **Software-updates**. U kunt vervolgens de optie **Verwijderen** kiezen in de sectie **Overzicht**.
+
+> [!NOTE]
+> Wanneer de kwaliteitsupdate is teruggedraaid, kunnen eindgebruikers op Windows 10-computers de teruggedraaide update nog wel zien door **Windows-instellingen** > **Updates** > **Geschiedenis van updates** te selecteren.
 
 ## <a name="windows-holographic-for-business-support"></a>Ondersteuning voor Windows Holographic for Business
 

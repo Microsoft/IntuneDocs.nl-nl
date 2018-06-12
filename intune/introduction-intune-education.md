@@ -5,7 +5,7 @@ keywords: wat is Intune
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/21/2017
+ms.date: 06/01/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,15 +14,16 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30195ee56e99754f5ed385291823adef08d6ce01
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 6d8335f1bac26b1a70c4e9aeaf7c8c6d1b34fc12
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34718009"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Waarin verschilt Intune for Education van het volledige Intune-beheer?
 
-Intune for Education is ontworpen om uw docenten en studenten productiviteit te bieden terwijl schoolgegevens worden beveiligd. Intune is een cloudservice voor het beheer van bedrijfsmobiliteit (EMM) die de basis is voor Intune for Education.
+Intune for Education biedt uw docenten en studenten productiviteit terwijl schoolgegevens worden beveiligd. Intune is een cloudservice voor het beheer van bedrijfsmobiliteit (EMM) die de basis is voor Intune for Education.
 
 ![Intune for Education-console vergeleken met de Intune-console.](./media/intune-azure-vs-intuneEDU.png)
 

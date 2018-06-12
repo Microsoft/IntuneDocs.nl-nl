@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744700"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Een apparaatnalevingsbeleid toevoegen voor Android-apparaten in Intune
 
@@ -122,6 +123,17 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 - **Runtime-integriteit van de bedrijfsportal-app**: hiermee controleert u of in de bedrijfsportal-app de standaardruntime-omgeving is geïnstalleerd, correct is ondertekend, niet in de foutopsporingsmodus is en is geïnstalleerd vanuit een bekende bron.
 - **USB-foutopsporing op apparaat blokkeren** (Android 4.2 of hoger): kies deze optie om te voorkomen dat apparaten de functie voor USB-foutopsporing gebruiken.
 - **Minimaal beveiligingspatchniveau**(Android 6.0 of hoger): selecteer het oudste beveiligingspatchniveau dat een apparaat kan hebben. Apparaten die niet ten minste dit patchniveau hebben, zijn niet-conform. De datum moet worden opgegeven in de indeling `YYYY-MM-DD`.
+
+## <a name="locations"></a>Locaties
+
+Maak in uw beleid een keuze uit bestaande locaties. Hebt u nog geen locatie? In [Locaties (netwerk fence) in Intune gebruiken](use-network-locations.md) vindt u enkele richtlijnen.
+
+1. Kies **Locaties selecteren**.
+2. Controleer uw locatie in de lijst en kies **Selecteren**.
+3. U kunt nu het beleid **opslaan**.
+4. Selecteer **Acties voor niet-naleving**. De standaardactie markeert het apparaat onmiddellijk als niet-compatibel. Deze actie is van toepassing wanneer u ten minste één locatie selecteert en als het apparaat niet is gekoppeld aan de geselecteerde locaties.
+
+  U kunt deze actie veranderen om het schema wanneer het apparaat wordt gemarkeerd als niet-compatibel bij te werken, zoals na één dag. U kunt ook een tweede actie toevoegen, waarbij een e-mailbericht wordt verzonden naar de gebruiker wanneer het apparaat niet meer voldoet aan de locaties.
 
 ## <a name="assign-user-groups"></a>Gebruikersgroepen toewijzen
 

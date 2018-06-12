@@ -372,6 +372,8 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
+        - name: Kiosk-instellingen configureren
+          href: kiosk-settings.md
         - name: E-mailinstellingen configureren
           href: email-settings-configure.md
           items:
@@ -411,12 +413,14 @@
               href: wi-fi-settings-macos.md
             - name: Windows 8.1 en Windows 10
               href: wi-fi-settings-import-windows-8-1.md
+        - name: Education
+          items:
+            - name: Gedeelde iOS-apparaten
+              href: education-settings-configure-ios-shared.md
+            - name: Windows 10
+              href: education-settings-configure.md
         - name: Instellingen voor editie-upgrades voor Windows 10 configureren
           href: edition-upgrade-configure-windows-10.md
-        - name: Instellingen voor Windows 10 Education configureren
-          href: education-settings-configure.md
-        - name: Gedeelde onderwijsapparaten configureren voor iOS
-          href: education-settings-configure-ios-shared.md
         - name: Updatebeleid voor iOS configureren
           href: software-updates-ios.md
         - name: Certificaten configureren
@@ -455,6 +459,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Windows-beleid maken
           href: compliance-policy-create-windows.md
+        - name: Beleid op basis van locatie
+          href: use-network-locations.md
         - name: Beleid evalueren
           href: policy-evaluate.md
         - name: Acties voor niet-naleving

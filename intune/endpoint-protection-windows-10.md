@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744938"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Instellingen voor de beveiliging van eindpunten voor Windows 10 en hoger in Intune
 
@@ -300,15 +301,21 @@ Gebruik deze opties voor het configureren van de lokale beveiligingsinstellingen
 
 - **Minuten van inactiviteit van vergrendelingsscherm totdat de schermbeveiliging wordt geactiveerd**: definieer het maximale aantal minuten van inactiviteit op het aanmeldingsscherm van het interactieve bureaublad totdat de schermbeveiliging actief wordt.
 - **Indrukken van CTRL+ALT+DEL vereisen voor aanmelden**: vereis dat CTRL + ALT + DEL worden ingedrukt voordat een gebruiker zich kan aanmelden.
-- **Gedrag bij verwijderen van smartcard**: hiermee bepaalt u wat er gebeurt wanneer de smartcard van een aangemelde gebruiker uit de lezer van de smartcard wordt verwijderd.
-[Lokaal beleid/Beveiligingsopties](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) biedt meer details.
+- **Gedrag bij verwijderen van smartcard**: hiermee bepaalt u wat er gebeurt wanneer de smartcard van een aangemelde gebruiker uit de lezer van de smartcard wordt verwijderd. Uw opties zijn:
+
+  - **Werkstation vergrendelen**: het werkstation wordt vergrendeld wanneer de smartcard wordt verwijderd. Met deze optie kunnen gebruikers het gebied verlaten, de smartcard meenemen en toch een beveiligde sessie behouden.
+  - **Afmelden forceren**: de gebruiker wordt automatisch afgemeld wanneer de smartcard wordt verwijderd.
+  - **Verbinding verbreken bij sessie met Extern bureaublad-services**: als de smartcard wordt verwijderd, wordt de sessie verbroken zonder de gebruiker af te melden. Met deze optie kan de gebruiker de smartcard plaatsen en de sessie later of op een andere met smartcardlezer uitgeruste computer hervatten zonder zich opnieuw te moeten melden. Als de sessie lokaal is, werkt dit beleid op dezelfde manier als Werkstation vergrendelen.
+
+    [Lokaal beleid/Beveiligingsopties](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) biedt meer details.
 
 #### <a name="display"></a>Weergave
 
 - **Gebruikersinformatie op vergrendelingsscherm**: configureer welke gebruikersinformatie wordt weergegeven wanneer de sessie is vergrendeld. Als deze optie niet is geconfigureerd, worden de weergavenaam van de gebruiker, het domein en de gebruikersnaam weergegeven.
+  - **Niet geconfigureerd**: weergavenaam van gebruiker, domein en gebruikersnaam
+  - **Weergavenaam van gebruiker, domein en gebruikersnaam**
   - **Alleen weergavenaam gebruiker**
   - **Gebruikersinformatie niet weergeven**
-  - **Niet geconfigureerd**: weergavenaam van gebruiker, domein en gebruikersnaam
 - **Laatst aangemelde gebruiker verbergen**: de gebruikersnaam van de laatste persoon die zich heeft aangemeld op dit apparaat wordt niet weergegeven.
 - **Gebruikersnaam verbergen bij aanmelden**: de gebruikersnaam van de persoon die zich op dit apparaat heeft aangemeld, wordt niet weergeven nadat de referenties zijn ingevoerd en voordat het bureaublad van het apparaat wordt weergegeven.
 - **Titel aanmeldingsbericht**: stel de berichttitel in voor gebruikers die zich willen aanmelden.
@@ -316,13 +323,13 @@ Gebruik deze opties voor het configureren van de lokale beveiligingsinstellingen
 
 ### <a name="network-access-and-security"></a>Netwerktoegang en -beveiliging
 
-- **Anonieme toegang tot benoemde pipes en shares**: hiermee beperkt u anonieme toegang tot instellingen voor shares en benoemde pipes. Van toepassing op de instellingen die anoniem kunnen worden gebruikt.
-- **Anonieme inventarisatie van SAM-accounts**: anonieme gebruikers kunnen de SAM-accounts inventariseren. Windows staat anonieme gebruikers toe de namen van domeinaccounts en netwerkshares te inventariseren.
-- **Anonieme inventarisatie van SAM-accounts en -shares**: anonieme inventarisatie van SAM-accounts en -shares kan worden geblokkeerd. Windows staat anonieme gebruikers toe de namen van domeinaccounts en netwerkshares te inventariseren.
-- **Hashwaarde van LAN Manager opslaan bij wachtwoordwijziging**: kies of bij de volgende wachtwoordwijziging de hashwaarde van LAN Manager (LM) voor het nieuwe wachtwoord wordt opgeslagen. Deze wordt niet standaard opgeslagen.
-- **PKU2U-verificatieaanvragen**: blokkeer PKU2U-verificatieaanvragen aan dit apparaat om online-identiteiten te gebruiken.
-- **Externe RPC-verbindingen met SAM beperken**: bewerk de standaardtekenreeks van Security Descriptor Definition Language om het gebruikers en groepen wel of niet toe te staan om externe aanroepen naar de SAM uit te voeren.
-- **Beveiligingsdescriptor**
+- **Anonieme toegang tot benoemde pipes en shares**: **Niet geconfigureerd** (standaard) beperkt anonieme toegang tot instellingen voor shares en named pipes. Van toepassing op de instellingen die anoniem kunnen worden gebruikt.
+- **Anonieme inventarisatie van SAM-accounts**: anonieme gebruikers **toestaan** de SAM-accounts te inventariseren. Windows staat anonieme gebruikers toe de namen van domeinaccounts en netwerkshares te inventariseren.
+- **Anonieme inventarisatie van SAM-accounts en -shares**: **Niet geconfigureerd** (standaard) betekent dat anonieme gebruikers de namen van domeinaccounts en netwerkshares kunnen inventariseren. Als u anonieme inventarisatie van SAM-accounts en -shares wilt verhinderen, stelt u deze in op **Blokkeren**.
+- **Hashwaarde van LAN Manager opslaan bij wachtwoordwijziging**: kies bij de volgende wachtwoordwijziging **Toestaan** zodat de LAN Manager (LM) de hash-waarde voor het nieuwe wachtwoord kan opslaan. Als de waarde is ingesteld op **Niet geconfigureerd** (standaard), wordt de hash-waarde niet opgeslagen.
+- **PKU2U-verificatieaanvragen**: **blokkeer** PKU2U-verificatieaanvragen aan het apparaat om online-identiteiten te gebruiken. **Niet geconfigureerd** (standaard) staat deze aanvragen toe.
+- **Externe RPC-verbindingen met SAM beperken**: **toestaan** dat de standaardtekenreeks van Security Descriptor Definition Language gebruikers en groepen weigert om externe aanroepen naar de SAM uit te voeren. **Niet geconfigureerd** (standaard) de standaardtekenreeks van Security Descriptor Definition Language om gebruikers en groepen toe te staan om externe aanroepen naar de SAM uit te voeren.
+  - **Beveiligingsdescriptor**
 
 ### <a name="recovery-console-and-shutdown"></a>Herstelconsole en afsluiten
 
@@ -359,13 +366,13 @@ Gebruik deze opties voor het configureren van de lokale beveiligingsinstellingen
 
 ### <a name="microsoft-network-client"></a>Microsoft Network Client
 
-- **Clientcommunicatie digitaal ondertekenen (indien mogelijk)**: hiermee wordt bepaald of de SMB-client probeert te onderhandelen over SMB-pakketondertekening. Indien ingeschakeld (standaard), vraagt Microsoft Network Client de server om SMB-pakketondertekening uit te voeren bij het instellen van een sessie. Als pakketondertekening is ingeschakeld op de server, wordt over ondertekening van pakketten onderhandeld. Als dit beleid is uitgeschakeld, onderhandelt de SMB-client nooit over SMB-pakketondertekening.
+- **Clientcommunicatie digitaal ondertekenen (indien mogelijk)**: hiermee wordt bepaald of de SMB-client probeert te onderhandelen over SMB-pakketondertekening. Indien ingeschakeld (Niet geconfigureerd), vraagt Microsoft Network Client de server om SMB-pakketondertekening uit te voeren bij het instellen van een sessie. Als pakketondertekening is ingeschakeld op de server, wordt over ondertekening van pakketten onderhandeld. Als dit beleid is uitgeschakeld, onderhandelt de SMB-client nooit over SMB-pakketondertekening.
 - **Niet-versleuteld wachtwoord verzenden om verbinding te kunnen maken met niet-Microsoft SMB-servers**: indien ingeschakeld, mag de SMB-redirector (Server Message Block) ongecodeerde wachtwoorden verzenden naar niet-Microsoft SMB-servers die geen ondersteuning voor wachtwoordversleuteling bieden tijdens verificatie.
 
 ### <a name="microsoft-network-server"></a>Microsoft Network Server
 
-- **Communicatie digitaal ondertekenen (bij akkoord van client)**: hiermee wordt bepaald of de SMB-server onderhandelt over SMB-pakketondertekening met clients die dit aanvragen. Indien ingeschakeld, onderhandelt de Microsoft-netwerkserver over SMB-pakketondertekening zoals aangevraagd door de client. Ofwel, als pakketondertekening is ingeschakeld op de client, wordt over ondertekening van pakketten onderhandeld. Als deze optie is uitgeschakeld (standaardwaarde), onderhandelt de SMB-client nooit over SMB-pakketondertekening.
-- **Communicatie digitaal ondertekenen (altijd)**: hiermee wordt bepaald of het ondertekenen van pakketten wordt vereist door de SMB-servercomponent. Als deze instelling is ingeschakeld, communiceert de Microsoft-netwerkserver niet met een Microsoft-netwerkclient, tenzij die client akkoord gaat met het uitvoeren van SMB-pakketondertekening. Als deze instelling is uitgeschakeld (standaardwaarde), wordt over het ondertekenen van SMB-pakketten onderhandeld door de client en de server.
+- **Communicatie digitaal ondertekenen (bij akkoord van client)**: hiermee wordt bepaald of de SMB-server onderhandelt over SMB-pakketondertekening met clients die dit aanvragen. Indien ingeschakeld, onderhandelt de Microsoft-netwerkserver over SMB-pakketondertekening zoals aangevraagd door de client. Ofwel, als pakketondertekening is ingeschakeld op de client, wordt over ondertekening van pakketten onderhandeld. Als deze instelling **niet geconfigureerd** of uitgeschakeld (standaardwaarde) is, onderhandelt de SMB-client nooit over SMB-pakketondertekening.
+- **Communicatie digitaal ondertekenen (altijd)**: hiermee wordt bepaald of het ondertekenen van pakketten wordt vereist door de SMB-servercomponent. Als deze instelling is ingeschakeld, communiceert de Microsoft-netwerkserver niet met een Microsoft-netwerkclient, tenzij die client akkoord gaat met het uitvoeren van SMB-pakketondertekening. Als deze instelling **niet geconfigureerd** of uitgeschakeld (standaardwaarde) is, wordt over het ondertekenen van SMB-pakketten onderhandeld door de client en de server.
 
 ## <a name="next-steps"></a>Volgende stappen
 

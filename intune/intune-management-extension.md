@@ -1,12 +1,11 @@
 ---
-title: PowerShell-scripts in Microsoft Intune beheren voor Windows 10-apparaten
-titlesuffix: ''
-description: Informatie over het uploaden van PowerShell-scripts in Microsoft Intune om deze uit te voeren op Windows 10-apparaten.
+title: PowerShell-scripts in Microsoft Intune toevoegen voor Windows 10-apparaten - Azure | Microsoft Docs
+description: Voeg PowerShell-scripts toe, wijs het scriptbeleid toe aan Azure Active Directory-groepen, gebruik rapporten om de scripts te controleren en zie de stappen om scripts te verwijderen die u toevoegt op Windows 10-apparaten in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3de7af01ffa64293e420913258919eff118b4abc
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2046a928525e974eee5f63d772d46864b21f0267
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583669"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-scripts in Intune beheren voor Windows 10-apparaten
 Met de Intune-beheeruitbreiding kunt u PowerShell-scripts uploaden in Intune om deze uit te voeren op Windows 10-apparaten. De beheeruitbreiding is een aanvulling op de Windows 10 MDM-functionaliteit en maakt het eenvoudiger voor u om uw beheer te moderniseren.
@@ -35,39 +35,33 @@ De extensie van de Intune-management is een aanvulling op de meegeleverde Window
 De Intune-beheeruitbreiding heeft de volgende vereisten:
 - Apparaten moeten zijn gekoppeld aan Azure AD. Dit omvat geen apparaten die aan Hybrid AD zijn toegevoegd.
 - Op apparaten moet Windows 10 versie 1607 of hoger worden uitgevoerd.
+- Automatische MDM-inschrijving moet zijn [ingeschakeld in Azure AD](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment) en apparaten moeten automatisch worden geregistreerd bij Intune.
 
 ## <a name="create-a-powershell-script-policy"></a>Een PowerShell-scriptbeleid maken 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
-4. Kies **Beheren** > **PowerShell-scripts** op het deelvenster **Apparaatconfiguratie**.
-5. Kies in het deelvenster **PowerShell-scripts** **Toevoegen**.
-6. Voer in het deelvenster **PowerShell-script toevoegen** een **naam** en **beschrijving** in voor het PowerShell-script.
-7. Blader voor de **Scriptlocatie** naar het PowerShell-script. Het script moet kleiner zijn dan 200 kB.
-8. Kies **Configureren**, en kies vervolgens of het script wel of niet met de referenties van de gebruiker op het apparaat moet worden uitgevoerd (**Ja**) of systeemcontext (**Nee**). Het script wordt standaard uitgevoerd in de systeemcontext. Selecteer **Ja** tenzij het noodzakelijk is dat het script wordt uitgevoerd in de systeemcontext. 
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+3. Selecteer **Apparaatconfiguratie** > **PowerShell-scripts** > **Toevoegen**.
+4. Voer een **naam** en **beschrijving** in voor het PowerShell-abonnement. Blader voor de **Scriptlocatie** naar het PowerShell-script. Het script moet kleiner zijn dan 200 kB (ASCII) of 100 kB (Unicode).
+5. Kies **Configureren**. Kies vervolgens of het script wel of niet met de referenties van de gebruiker op het apparaat moet worden uitgevoerd (**Ja**) of systeemcontext (**Nee**). Het script wordt standaard uitgevoerd in de systeemcontext. Selecteer **Ja** tenzij het noodzakelijk is dat het script wordt uitgevoerd in de systeemcontext. 
   ![Het deelvenster PowerShell-script toevoegen](./media/mgmt-extension-add-script.png)
-9. Kies of het script wel of niet moet worden ondertekend door een vertrouwde uitgever (**Ja**). Standaard hoeft het script niet te worden ondertekend. 
-10. Klik op **OK** en klik vervolgens op **Maken** om het script op te slaan.
+6. Kies of het script moet worden ondertekend door een vertrouwde uitgever (**Ja**). Standaard hoeft het script niet te worden ondertekend. 
+7. Selecteer **OK** en vervolgens **Maken** om het script op te slaan.
 
 ## <a name="assign-a-powershell-script-policy"></a>Een PowerShell-scriptbeleid toewijzen
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
-4. Kies **Beheren** > **PowerShell-scripts** op het deelvenster **Apparaatconfiguratie**.
-5. Selecteer in het deelvenster **PowerShell-scripts** het script dat u wilt toewijzen, en kies vervolgens **Beheren** > **Toewijzingen**.
+1. Selecteer in **PowerShell-scripts** het script dat u wilt toewijzen, en kies vervolgens **Beheren** > **Toewijzingen**.
   ![Het deelvenster PowerShell-script toevoegen](./media/mgmt-extension-assignments.png)
  
-6. Kies **Groepen selecteren** beschikbare Microsoft Azure Active Directory-groepen in een lijst op te nemen. 
-7. Selecteer een of meer groepen met daarin de gebruikers van wie de apparaten het script ontvangen en klik vervolgens op **Selecteren** om het beleid toe te wijzen aan de geselecteerde groepen.
+2. Kies **Groepen selecteren** beschikbare Microsoft Azure Active Directory-groepen in een lijst op te nemen. 
+3. Selecteer een of meer groepen die de gebruikers bevatten wiens apparaten het script ontvangen. Kies **Selecteren** om het beleid aan de geselecteerde groepen toe te wijzen.
 
 De Intune-beheeruitbreiding wordt eenmaal per uur met Intune gesynchroniseerd. Wanneer u het beleid aan de Microsoft Azure Active Directory-groepen toewijst, wordt het PowerShell-script uitgevoerd en worden de resultaten van de uitvoering gerapporteerd. 
  
 ## <a name="monitor-run-status-for-powershell-scripts"></a>Uitvoeringsstatus van de PowerShell-scripts controleren
 U kunt de uitvoeringsstatus van PowerShell-scripts voor gebruikers en apparaten in Azure Portal controleren.
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
-4. Kies **Beheren** > **PowerShell-scripts** op het deelvenster **Apparaatconfiguratie**.
-5. Selecteer in het deelvenster **PowerShell-scripts** het script dat u wilt controleren en kies daarna **Controleren**, en vervolgens een van de volgende rapporten:
+
+Selecteer in **PowerShell-scripts** het script dat u wilt controleren, kies **Controleren** en kies vervolgens een van de volgende rapporten:
    - **Apparaatstatus**
    - **Gebruikersstatus**
+
+## <a name="delete-a-powershell-script"></a>Een PowerShell-script verwijderen
+Klik in **PowerShell-scripts** met de rechtermuisknop op het script en selecteer **Verwijderen**.

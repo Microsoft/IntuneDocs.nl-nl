@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744598"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>VPN-profielen maken in Intune
 
@@ -41,18 +42,19 @@ U kunt VPN-profielen met de volgende verbindingstypen maken:
 
 |Type verbinding|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|Ja|Ja|Ja|Ja|Ja|Ja|
-|Cisco (IPsec)|Nee|Ja|Nee|Nee|Nee|Nee|
-|Citrix|Ja|Ja|Nee|Nee|Nee|Ja|
-|F5 Edge Client|Ja|Ja|Ja|Ja|Ja|Ja|
-|SonicWall Mobile Connect|Ja|Ja|Ja|Ja|Ja|Ja|
+|Automatisch|Nee|Nee|Nee|Nee|Nee|Ja|
 |Check Point Capsule VPN|Ja|Ja|Ja|Ja|Ja|Ja|
 |Cisco AnyConnect|Ja|Ja|Ja|Nee|Nee|Nee|
-|Automatisch|Nee|Nee|Nee|Nee|Nee|Ja|
+|SonicWall Mobile Connect|Ja|Ja|Ja|Ja|Ja|Ja|
+|F5 Edge Client|Ja|Ja|Ja|Ja|Ja|Ja|
+|Palo Alto Networks GlobalProtect|Nee|Ja|Nee|Nee|Nee|Ja|
+|Pulse Secure|Ja|Ja|Ja|Ja|Ja|Ja|
+|Cisco (IPsec)|Nee|Ja|Nee|Nee|Nee|Nee|
+|Citrix|Ja (alleen Android)|Ja|Nee|Nee|Nee|Ja|
 |IKEv2|Nee|Nee|Nee|Nee|Nee|Ja|
 |L2TP|Nee|Nee|Nee|Nee|Nee|Ja|
 |PPTP|Nee|Nee|Nee|Nee|Nee|Ja|
-|Aangepast|Nee|Ja|Ja|Nee|Nee|Nee|
+|Aangepaste VPN|Nee|Ja|Ja|Nee|Nee|Nee|
 
 > [!IMPORTANT]
 > U kunt VPN-profielen die zijn toegewezen aan een apparaat pas gebruiken nadat de betreffende VPN-app voor het profiel is geïnstalleerd. U kunt de informatie in het artikel [Wat is Microsoft Intune-appbeheer?](app-management.md) gebruiken bij het toewijzen van de app met behulp van Intune.  

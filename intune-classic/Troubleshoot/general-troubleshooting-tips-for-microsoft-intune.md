@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bbcfa2de4b2d6ef7bff481817a289f56e746ee7f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34718026"
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Algemene tips voor probleemoplossing voor Microsoft Intune
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 Nadat u Microsoft Intune hebt geïmplementeerd, kunnen er problemen optreden met de configuratie van clientapparaten. Gebruik de volgende resources om de oorzaak van het probleem te achterhalen zodat u het kunt oplossen.
 
 > [!NOTE]
-> Als u een ondersteuningsaanvraag wilt indienen of een bestaande aanvraag wilt bekijken, kunt u [het Office 365-beheercentrum bezoeken](https://portal.office.com/admin/default.aspx). Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer informatie over ondersteuningsopties.
+> Als u een ondersteuningsaanvraag wilt indienen of een bestaande aanvraag wilt bekijken, kunt u de pagina [Hulp + ondersteuning voor Azure bezoeken](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). Zie [Ondersteuning voor Microsoft Intune krijgen](how-to-get-support-for-microsoft-intune.md) voor meer informatie over ondersteuningsopties.
 
 ## <a name="define-the-problem"></a>Het probleem definiëren
 

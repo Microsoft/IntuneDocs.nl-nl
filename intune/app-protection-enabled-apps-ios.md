@@ -15,11 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1b2789c8f3b57bbc97e06e8793a96656f74a54d
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703278"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid
 
@@ -39,7 +40,7 @@ Op apparaten die zijn **ingeschreven voor beheer in Intune** krijgt de gebruiker
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Apps met ondersteuning voor meerdere identiteiten gebruiken
 
-App-beveiligingsbeleid wordt pas van kracht wanneer een gebruiker probeert toegang te krijgen tot werkgerelateerde gegevens.  Mogelijk ziet u ander gedrag als de gebruiker de app voor persoonlijk gebruik opent. 
+App-beveiligingsbeleid wordt pas van kracht wanneer een gebruiker probeert toegang te krijgen tot werkgerelateerde gegevens. Mogelijk ziet u ander gedrag als de gebruiker probeert de app voor persoonlijk gebruik te openen. Het beleid is ook niet van toepassing op nieuwe inhoud die nog niet is opgeslagen. Nieuwe inhoud wordt pas beschouwd als zakelijke gegevens nadat deze is opgeslagen op een zakelijke locatie, zoals SharePoint of OneDrive voor Bedrijven.
 
 Voor apps die ondersteuning bieden voor meerdere identiteiten, past Intune alleen app-beveiligingsbeleid toe als een gebruiker zakelijke gegevens benadert.  Een gebruiker kan bijvoorbeeld om een pincode worden gevraagd.  In de **Outlook-app** wordt een prompt weergegeven wanneer een gebruiker de app start. In de **OneDrive-app** wordt een prompt weergegeven wanneer een gebruiker het werkaccount invoert.  In Microsoft **Word**, **PowerPoint** en **Excel** wordt een prompt weergegeven wanneer een gebruiker OneDrive-bedrijfsdocumenten opent.
 ##  <a name="managing-user-accounts-on-the-device"></a>Gebruikersaccounts op het apparaat beheren

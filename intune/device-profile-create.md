@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3d46960e6ea7e2ae9bed6c0016ddc309bd15f572
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3f62e306574606ffa1eb1e6f242c3cb30b1a9c1b
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744649"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Een apparaatprofiel maken in Microsoft Intune
 
@@ -46,16 +47,19 @@ ms.lasthandoff: 04/16/2018
    - **Profieltype**: selecteer het type dat u wilt maken. De lijst is afhankelijk van het platform dat u kiest.
    - **Instellingen**: in de volgende onderwerpen worden de instellingen voor elk profieltype beschreven:
 
-       -  [Instellingen voor apparaatfuncties](device-features-configure.md)
-       -  [Apparaatbeperkingsinstellingen](device-restrictions-configure.md)
-       -  [E-mailinstellingen](email-settings-configure.md)
-       -  [VPN-instellingen](vpn-settings-configure.md)
-       -  [Wi-Fi-instellingen](wi-fi-settings-configure.md)
-       -  [Upgrade-instellingen voor Windows 10-editie](edition-upgrade-configure-windows-10.md)
-       -  [Certificaatinstellingen](certificates-configure.md)
-       -  [Instellingen voor Windows Information Protection](windows-information-protection-configure.md)
-       -  [Onderwijsinstellingen](education-settings-configure.md)
-       -  [Aangepaste instellingen](custom-settings-configure.md)
+       -  [Apparaatfuncties](device-features-configure.md)
+       -  [Apparaatbeperkingen](device-restrictions-configure.md)
+       -  [Endpoint Protection](endpoint-protection-configure.md)
+       -  [Kiosk](kiosk-settings.md)
+       -  [E-mail](email-settings-configure.md)
+       -  [VPN](vpn-settings-configure.md)
+       -  [Wi-Fi](wi-fi-settings-configure.md)
+       -  Education voor [Windows 10](education-settings-configure.md) en [iOS](wi-fi-settings-ios.md)
+       -  [Upgrade Windows 10-editie](edition-upgrade-configure-windows-10.md)
+       -  [Updatebeleid voor iOS](software-updates-ios.md)
+       -  [Certificaten](certificates-configure.md)
+       -  [Windows Information Protection](windows-information-protection-configure.md)
+       -  [Aangepast](custom-settings-configure.md)
 
      ![Schermopname van Profiel maken](./media/create-device-profile.png)
 
@@ -63,6 +67,5 @@ ms.lasthandoff: 04/16/2018
 
 Het profiel wordt gemaakt en wordt weergegeven in de lijst.
 
-
 ## <a name="next-steps"></a>Volgende stappen
-Zie [Apparaatprofielen toewijzen met Microsoft Intune](device-profile-assign.md) om apparaatprofielen toe te wijzen.
+[Wijs het profiel toe](device-profile-assign.md) en [controleer de status](device-profile-monitor.md).
