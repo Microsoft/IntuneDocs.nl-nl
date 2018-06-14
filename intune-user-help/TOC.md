@@ -137,6 +137,7 @@
 ### [Een apparaat handmatig synchroniseren](sync-your-device-manually-windows.md)
 
 ### [Veelvoorkomende problemen met Windows oplossen](troubleshoot-your-device-windows.md)
+### [Beperkingen voor toegangspunten oplossen](resolve-access-point-restrictions.md)
 #### [Mijn Windows 10-apparaat kan niet worden ingeschreven](troubleshoot-your-windows-10-device-windows.md)
 #### [Uw Windows-apparaat bijwerken](you-need-to-update-your-windows-device.md)
 #### [Logboeken van de bedrijfsportal-app verzenden](send-logs-to-your-it-admin-cp-windows.md)
@@ -158,4 +159,3 @@
 ### [Een apparaat verwijderen](remove-your-device-cpwebsite.md)
 ### [De wachtwoordcode van een apparaat opnieuw instellen](reset-your-passcode-cpwebsite.md)
 ### [Een apparaat opnieuw instellen of wissen](reset-erase-your-device-cpwebsite.md)
-### [Een apparaat handmatig synchroniseren](sync-your-device-manually-cpwebsite.md)
