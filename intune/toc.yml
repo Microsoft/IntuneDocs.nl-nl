@@ -189,6 +189,10 @@
               href: apple-configurator-enroll-ios.md
         - name: macOS-inschrijving instellen
           href: macos-enroll.md
+        - name: De Intune-softwareclient installeren op Windows-pc's
+          href: install-the-windows-pc-client-with-microsoft-intune.md
+        - name: Hoe los ik problemen met de inschrijving van apparaten op?
+          href: troubleshoot-device-enrollment-in-intune.md
     - name: Beheer apparaten
       href: device-management.md
       items:
@@ -259,6 +263,8 @@
                   href: lob-apps-windows-phone.md
                 - name: Windows LOB-app
                   href: lob-apps-windows.md
+                - name: Windows LOB-apps sideloaden
+                  href: app-sideload-windows.md
                 - name: macOS LOB-apps
                   href: lob-apps-macos.md
             - name: Web-apps
@@ -678,8 +684,6 @@
               href: custom-settings-windows-holographic.md
             - name: Android for Work
               href: custom-settings-android-for-work.md
-        - name: Windows Line-of-Business-apps sideloaden
-          href: app-sideload-windows.md
 - name: Richtlijnen voor ontwikkelaars
   items:
     - name: Apps beveiligen met Intune App SDK
