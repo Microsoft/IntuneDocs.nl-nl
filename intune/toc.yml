@@ -11,6 +11,8 @@
       items:
         - name: Wijzigingen in groepen
           href: groups-get-started.md
+        - name: Verouderde Intune-client voor pc
+          href: intune-legacy-pc-client.md
     - name: Aanmelden voor een gratis proefversie
       href: free-trial-sign-up.md
     - name: Wat is er nieuw?
@@ -70,6 +72,8 @@
       href: common-scenarios.md
     - name: VEELGESTELDE VRAGEN OVER MAM
       href: mam-faq.md
+    - name: Veelgestelde vragen over beleid en profiel
+      href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: Implementatie van abonnementen
   items:
     - name: Planning a DPM Deployment`(Een DPM-implementatie plannen)
@@ -176,6 +180,8 @@
           items:
             - name: Android-inschrijving instellen
               href: android-enroll.md
+            - name: Android for Work-apparaten beheren
+              href: android-enterprise-overview.md
             - name: Samsung Knox Mobile Enrollment
               href: android-samsung-knox-mobile-enroll.md
         - name: iOS-inschrijving instellen
@@ -196,6 +202,8 @@
     - name: Beheer apparaten
       href: device-management.md
       items:
+        - name: Mogelijkheden voor apparaatbeheer
+          href: device-management-capabilities.md
         - name: Activeringsvergrendeling overslaan
           href: device-activation-lock-bypass.md
         - name: Nieuwe start van Windows beheren
@@ -658,6 +666,14 @@
           href: monitor-audit-logs.md
         - name: App-logboeken voor beveiliging controleren
           href: app-protection-policy-settings-log.md
+        - name: Problemen met e-mailprofielen oplossen
+          href: troubleshoot-email-profiles-in-microsoft-intune.md
+        - name: Problemen met software-updates oplossen
+          href: troubleshoot-software-updates-in-microsoft-intune.md
+        - name: Problemen met Endpoint Protection oplossen
+          href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+        - name: Problemen met beleid oplossen
+          href: troubleshoot-policies-in-microsoft-intune.md
     - name: Automatiseren en aanpassen
       items:
         - name: Aangepaste apparaatinstellingen configureren
