@@ -1,4 +1,4 @@
-﻿---
+---
 title: Uw apparaat registreren bij Intune | Microsoft Docs
 description: Biedt koppelingen naar informatie over het registreren van verschillende apparaten in Intune
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013412"
 ---
 # <a name="enroll-your-device-in-intune"></a>Uw apparaat registeren bij Intune
 

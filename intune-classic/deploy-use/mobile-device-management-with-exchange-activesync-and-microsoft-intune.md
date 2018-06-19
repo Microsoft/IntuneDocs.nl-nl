@@ -1,4 +1,4 @@
-﻿---
+---
 title: Exchange ActiveSync-apparaatbeheer
 description: Mobiele apparaten beheren met Exchange ActiveSync-beheer (EAS) met de Exchange Connector
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016744"
 ---
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Mobiele apparaten met Exchange ActiveSync beheren met Microsoft Intune
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013055"
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Toegankelijkheidsfuncties van Microsoft Intune
 Naast de toegankelijkheidsfuncties en -hulpprogramma's in Microsoft Windows is Microsoft Intune dankzij de volgende functies beter toegankelijk voor mensen met een handicap: met toetsenbordsneltoetsen

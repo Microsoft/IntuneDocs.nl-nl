@@ -2,15 +2,15 @@
 title: Een communicatieplan voor de implementatie ontwikkelen
 titlesuffix: Microsoft Intune
 description: Dit artikel helpt u bij ontwikkelen van een communicatieplan voor uw Microsoft Intune-implementatie.
-keywords: 
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29961558"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Een communicatieplan voor de implementatie ontwikkelen
 

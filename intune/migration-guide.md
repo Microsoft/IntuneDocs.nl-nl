@@ -2,15 +2,15 @@
 title: Migratiehandleiding voor het beheer van mobiele apparaten in Intune
 titlesuffix: Microsoft Intune
 description: In deze handleiding vindt u instructies voor de migratie van een externe MDM-provider naar Microsoft Intune.
-keywords: 
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
@@ -19,6 +19,7 @@ ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29960964"
 ---
 # <a name="intune-migration-guide"></a>Migratiehandleiding voor Intune
 

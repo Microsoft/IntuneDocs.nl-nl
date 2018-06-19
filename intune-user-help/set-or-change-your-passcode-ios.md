@@ -1,4 +1,4 @@
-﻿---
+---
 title: Uw wachtwoordcode instellen of wijzigen | Microsoft Docs
 description: Uw wachtwoordcode instellen of wijzigen
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31019183"
 ---
 # <a name="set-or-change-your-passcode"></a>Uw wachtwoordcode instellen of wijzigen
 

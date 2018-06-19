@@ -1,4 +1,4 @@
-﻿---
+---
 title: Opnieuw verbinding maken met een Android-apparaat waarmee is geknoeid | Microsoft Docs
 description: ''
 keywords: ''
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013021"
 ---
 # <a name="how-to-reconnect-a-compromised-android-device"></a>Opnieuw verbinding maken met een Android-apparaat waarmee is geknoeid
 

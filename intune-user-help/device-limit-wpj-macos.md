@@ -23,6 +23,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30754311"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>De limiet voor het aantal apparaten dat u kunt registreren is bereikt
 

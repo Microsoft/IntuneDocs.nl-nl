@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31028058"
 ---
 # <a name="change-the-mdm-authority"></a>De MDM-instantie wijzigen
 Vanaf Configuration Manager versie 1610 kunt u de MDM-instantie wijzigen zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven. Dit onderwerp bevat de benodigde stappen voor het wijzigen van een bestaande Microsoft Intune-tenant die is geconfigureerd in Intune en waarbij de MDM-instantie is ingesteld op **Microsoft Intune** (zelfstandige versie) naar **Configuration Manager** (hybride MDM), zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021509"
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>App-beveiligingsbeleid bewaken met Microsoft Intune
 U kunt de nalevingsstatus van het app-beveiligingsbeleid bewaken dat u hebt toegepast op gebruikers. U vindt er informatie over de gebruikers waarop het app-beveiligingsbeleid van toepassing is, de nalevingsstatus en mogelijke problemen die uw gebruikers ervaren.

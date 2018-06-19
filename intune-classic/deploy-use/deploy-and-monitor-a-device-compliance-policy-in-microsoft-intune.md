@@ -1,4 +1,4 @@
-﻿---
+---
 title: Nalevingsbeleid implementeren en bewaken
 description: Volg de stapsgewijze instructies in dit onderwerp om een nalevingsbeleid voor apparaten te implementeren en te bewaken.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016064"
 ---
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Nalevingsbeleid voor apparaten implementeren en bewaken in Microsoft Intune
 

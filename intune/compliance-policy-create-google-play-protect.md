@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31835364"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Meer informatie over het maken van een nalevingsbeleid voor apparaten om Google Play Protect in te schakelen
 

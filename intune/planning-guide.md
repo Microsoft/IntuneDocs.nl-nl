@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31023866"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Handleiding voor het plannen, ontwerpen en toepassen van een Intune-implementatie
 

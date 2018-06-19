@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31025702"
 ---
 # <a name="configure-app-notifications-settings-on-ios-devices-in-intune"></a>App-meldingsinstellingen op iOS-apparaten in Intune configureren
 

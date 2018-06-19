@@ -1,16 +1,16 @@
 ---
 title: Zimperium MTD integreren met Microsoft Intune
-titleSuffix: 
+titleSuffix: ''
 description: Meer informatie over hoe u de Zimperium Mobile Threat Defense-oplossing (MTD) instelt met Microsoft Intune om toegang tot uw bedrijfsresources met mobiele apparaten te beheren.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29777616"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium integreren met Intune
 
@@ -75,7 +76,7 @@ Het autorisatieproces van de Zimperium-app is als volgt:
 
 6.  Kies **Accepteren** om de Zimperium-app te autoriseren te communiceren met Intune en Azure Active Directory.
 
-7.  Nadat u de **Zimperium-zConsole** en de **zIPS iOS- en Android-**apps aan Azure AD hebt toegevoegd, voegt u de beveiligingsgroepen van Azure AD toe. Op die manier kan Zimperium de Azure AD-beveiligingsgroep synchroniseren met de eigen service.
+7.  Nadat u de **Zimperium-zConsole** en de **zIPS iOS- en Android-** apps aan Azure AD hebt toegevoegd, voegt u de beveiligingsgroepen van Azure AD toe. Op die manier kan Zimperium de Azure AD-beveiligingsgroep synchroniseren met de eigen service.
 
 8.  Kies **Voltooien** om de configuratie op te slaan en de eerste synchronisatie met Azure AD-beveiligingsgroepen te starten.
 

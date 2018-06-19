@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31020959"
 ---
 # <a name="manage-android-for-work-devices-with-intune"></a>Android for Work-apparaten beheren met Intune
 

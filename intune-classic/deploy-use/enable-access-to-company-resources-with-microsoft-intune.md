@@ -1,4 +1,4 @@
-﻿---
+---
 title: Toegang tot bedrijfsbronnen inschakelen
 description: Wi-Fi-, VPN- en e-mailprofielen stellen uw gebruikers in de gelegenheid toegang te krijgen tot de bestanden en bronnen die ze nodig hebben.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017305"
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Toegang tot bedrijfsbronnen inschakelen met Microsoft Intune
 

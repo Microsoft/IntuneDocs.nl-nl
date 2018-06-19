@@ -1,4 +1,4 @@
-﻿---
+---
 title: Uw Windows-apparaat registreren bij Intune | Microsoft Docs
 description: Informatie over hoe u een Windows-apparaat bij Intune kunt inschrijven
 keywords: ''
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014398"
 ---
 # <a name="enroll-your-windows-device-in-intune"></a>Uw Windows-apparaat inschrijven bij Intune
 

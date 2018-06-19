@@ -22,6 +22,7 @@ ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33927318"
 ---
 # <a name="install-apps-on-your-device"></a>Apps installeren op uw apparaat
 Installeer apps op uw apparaat vanuit de bedrijfsportal-app voor Windows.

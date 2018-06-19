@@ -12,11 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
+ms.locfileid: "32017954"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>E-mail automatiseren en acties voor niet-compatibele apparaten toevoegen - Intune
 
@@ -77,7 +78,10 @@ U kunt een actie toevoegen wanneer u nieuw nalevingsbeleid maakt of wanneer u ee
 1. Open in de [Azure Portal](https://portal.azure.com)**Microsoft Intune** en selecteer **Apparaatnaleving**.
 2. Selecteer **Beleid**, kies een van uw beleidsregels en selecteer vervolgens **Eigenschappen**. 
 
-   Heeft u nog geen beleid? Maak een beleid voor een [Android-](compliance-policy-create-android.md), [iOS-](compliance-policy-create-ios.md), [Windows-](compliance-policy-create-windows.md) platform of een ander platform.
+  Heeft u nog geen beleid? Maak een beleid voor een [Android-](compliance-policy-create-android.md), [iOS-](compliance-policy-create-ios.md), [Windows-](compliance-policy-create-windows.md) platform of een ander platform.
+  
+  > [!NOTE]
+  > JAMF-apparaten en apparaten die worden toegepast op apparaatgroepen kunnen momenteel geen nalevingsacties ontvangen.
 
 3. Selecteer **Acties voor niet-nageleefd** en selecteer **Toevoegen** om de actieparameters in te voeren. U kunt de eerder gemaakte berichtsjabloon kiezen, extra ontvangers toevoegen en de planning voor de respijtperiode bijwerken. Bij het schema kunt u het aantal dagen (0-365) invoeren voor het afdwingen van het beleid voor voorwaardelijke toegang. Als u **0** aantal dagen opgeeft, blokkeert voorwaardelijke toegang **onmiddellijk** toegang tot bedrijfsbronnen.
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021061"
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Gebruik waarschuwingen om op de hoogte te worden gesteld door Microsoft Intune
 

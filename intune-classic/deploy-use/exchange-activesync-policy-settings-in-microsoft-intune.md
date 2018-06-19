@@ -1,4 +1,4 @@
-﻿---
+---
 title: Exchange ActiveSync-beleidsinstellingen
 description: Configureer met het Exchange ActiveSync-beleid voor Intune de instellingen waarmee u functies en functionaliteit op apparaten kunt beheren die worden beheerd door Exchange ActiveSync.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018903"
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Exchange ActiveSync-beleidsinstellingen in Microsoft Intune
 

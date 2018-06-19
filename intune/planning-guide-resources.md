@@ -2,15 +2,15 @@
 title: Sjablonen en resources voor het plannen en ontwerpen van een Intune-implementatie
 titlesuffix: Microsoft Intune
 description: Koppelingen naar planningssjablonen en aanvullende Microsoft Intune-informatie die nuttig kan zijn tijdens de planning en het toepassen van de Microsoft Intune-implementatie.
-keywords: 
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 03/20/2018
+ms.locfileid: "29999063"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Aanvullende resources voor het plannen van uw Intune-implementatie
 

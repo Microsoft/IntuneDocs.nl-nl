@@ -1,4 +1,4 @@
-﻿---
+---
 title: Exchange-toegangsregels voor mobiele apparaten
 description: Exchange ActiveSync-toegangsregels voor het toestaan of blokkeren van apparaatverbindingen met EAS
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018733"
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Exchange-toegangsregels voor mobiele apparaten
 

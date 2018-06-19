@@ -1,4 +1,4 @@
-﻿---
+---
 title: Wat gebeurt er als u uw Windows-apparaat opnieuw instelt? | Microsoft Docs
 description: ''
 keywords: ''
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755484"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Wat gebeurt er als u uw Windows-apparaat opnieuw instelt met behulp van de bedrijfsportal?
 

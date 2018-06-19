@@ -1,4 +1,4 @@
-﻿---
+---
 title: Beleid voor het beveiligen van Windows-pc's
 description: Gebruik deze beleidsregels voor het beveiligen van Windows-pc's wanneer deze worden beheerd door de Intune-clientsoftware.
 keywords: ''
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015554"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>Gebruik beleid voor het beveiligen van Windows-pc’s waarop de Intune-clientsoftware wordt uitgevoerd
 

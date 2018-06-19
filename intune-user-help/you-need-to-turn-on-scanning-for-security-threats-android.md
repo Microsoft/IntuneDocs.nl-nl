@@ -20,6 +20,7 @@ ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 05/12/2018
+ms.locfileid: "34073815"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>Beveiligingsrisicoscans inschakelen op uw apparaat 
 Als u onbewust een onveilige app hebt geïnstalleerd, lopen de gegevens op uw apparaat gevaar. Om de gegevens op uw apparaat te beschermen, raden we u het volgende aan: 

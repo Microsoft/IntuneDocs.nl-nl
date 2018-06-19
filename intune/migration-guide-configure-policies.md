@@ -2,15 +2,15 @@
 title: Het nalevingsbeleid voor apparaten en het beleid voor appbeheer configureren bij een Intune-migratie
 titlesuffix: Microsoft Intune
 description: In dit artikel wordt beschreven welke stappen u moet uitvoeren om het nalevingsbeleid voor apparaten en het beleid voor appbeheer te configureren bij een Microsoft Intune-migratie.
-keywords: 
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 03/16/2018
+ms.locfileid: "29926351"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Het nalevingsbeleid voor apparaten en het beleid voor appbeheer configureren bij een migratie naar Microsoft Intune
 

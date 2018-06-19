@@ -1,4 +1,4 @@
-﻿---
+---
 title: Problemen met e-mailprofielen oplossen
 description: Problemen met e-mailprofielen en hoe u deze kunt oplossen.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013735"
 ---
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Problemen met e-mailprofielen in Microsoft Intune oplossen
 

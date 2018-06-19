@@ -2,15 +2,15 @@
 title: De werking van een normale Intune-migratiecyclus
 titlesuffix: Microsoft Intune
 description: In dit artikel wordt uitgelegd hoe een Microsoft Intune-migratiecyclus werkt en worden voorbeelden gegeven van de wijze waarop u de migratiecycli kunt uitvoeren.
-keywords: 
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3688b724-9521-4210-bf4d-bcf47d8d4ca0
 ms.reviewer: dagerrit
 ms.suite: ems
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 03/16/2018
+ms.locfileid: "29926538"
 ---
 # <a name="typical-migration-cycle"></a>Normale migratiecyclus
 

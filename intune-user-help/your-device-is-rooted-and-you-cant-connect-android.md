@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021180"
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Uw Android-apparaat is geroot, waardoor u geen verbinding kunt maken
 

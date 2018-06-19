@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021010"
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Een groep maken om uw gebruikers en de toegang tot gegevens te beheren
 

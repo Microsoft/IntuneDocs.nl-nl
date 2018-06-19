@@ -2,15 +2,15 @@
 title: Een Intune-migratiecampagne starten
 titlesuffix: Microsoft Intune
 description: Dit artikel bevat richtlijnen voor het starten van een Microsoft Intune-migratiecampagne.
-keywords: 
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 03/16/2018
+ms.locfileid: "29926317"
 ---
 # <a name="phase-2-migration-campaign"></a>Fase 2: migratiecampagne
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31020908"
 ---
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>iOS-apparaten in bedrijfseigendom inschrijven in Microsoft Intune
 

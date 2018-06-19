@@ -20,6 +20,7 @@ ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34223795"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Aan de slag met het toevoegen van apps in Microsoft Intune
 

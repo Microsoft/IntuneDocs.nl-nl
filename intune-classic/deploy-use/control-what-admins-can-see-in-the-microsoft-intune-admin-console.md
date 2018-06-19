@@ -1,4 +1,4 @@
-﻿---
+---
 title: Consoleweergaven aanpassen voor beheerdersrollen
 description: U kunt dit onderwerp gebruiken om de Intune-beheerconsoleweergave zodanig filteren dat uw beheerders alleen de items zien die ze voor hun rol nodig hebben.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013633"
 ---
 # <a name="customize-intune-console-views-according-to-admin-roles"></a>Intune-consoleweergaven aanpassen voor beheerdersrollen
 
