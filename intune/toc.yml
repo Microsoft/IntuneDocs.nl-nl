@@ -672,8 +672,12 @@
           href: troubleshoot-software-updates-in-microsoft-intune.md
         - name: Problemen met Endpoint Protection oplossen
           href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: Problemen met beleid oplossen
+        - name: Beleidsproblemen oplossen
           href: troubleshoot-policies-in-microsoft-intune.md
+        - name: Problemen met voorwaardelijke toegang oplossen
+          href: troubleshoot-conditional-access.md
+        - name: Problemen met Exchange Connector oplossen
+          href: troubleshoot-exchange-connector.md
     - name: Automatiseren en aanpassen
       items:
         - name: Aangepaste apparaatinstellingen configureren

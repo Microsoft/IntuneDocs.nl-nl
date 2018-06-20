@@ -135,6 +135,7 @@
 ### [Wat gebeurt er als u uw apparaat opnieuw instelt?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Een apparaat handmatig synchroniseren](sync-your-device-manually-windows.md)
+### [Apparaten op afstand vergrendelen vanaf uw Windows 10-apparaat](remote-lock-your-device-cp-app.md) 
 
 ### [Veelvoorkomende problemen met Windows oplossen](troubleshoot-your-device-windows.md)
 ### [Beperkingen voor toegangspunten oplossen](resolve-access-point-restrictions.md)
@@ -152,7 +153,7 @@
 #### [Ik wil UAC inschakelen](you-need-to-enable-uac-windows.md)
 #### [Ik wil Windows bijwerken](you-need-to-update-os-build-version-windows.md)
 #### [Ik wil Windows Defender inschakelen](turn-on-defender-windows.md)
-## [Apparaat extern vergrendelen vanuit de bedrijfsportal-app voor Windows](remote-lock-your-device-cp-app.md) 
+
 ## [De Intune-bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
 ### [Uw apparaat op afstand vergrendelen](remote-lock-your-device-cpwebsite.md)
 ### [Naam van een apparaat wijzigen](rename-your-device-cpwebsite.md)
