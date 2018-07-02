@@ -15,11 +15,12 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 871e091af1f2046206dbc94fdc7d199435645190
-ms.sourcegitcommit: e04e1652e121b4b9dbed05d0bbaa569e6d5d09bd
+ms.openlocfilehash: 8f95726cbad86544ebf717380708c8295f737530
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34475639"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Uw Microsoft Intune-abonnement implementeren
 
@@ -68,7 +69,7 @@ Wellicht moet u gebruikers of beveiligingsgroepen toevoegen in Active Directory 
 
 
 -   Meer informatie over [gebruikers/groepen toevoegen aan Intune](users-permissions-add.md).
-<!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect--->
+<!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect--->
 
 
 

@@ -14,11 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a84e94c16e7c61d1fca83b7774a486f430c9407c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5c467d20a3bf4f2cfb94db5cecfae78b1717993d
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34561970"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Op apps gebaseerde voorwaardelijke toegang met Intune
 
@@ -45,7 +46,7 @@ Zie [Prijzen van Enterprise Mobility ](https://www.microsoft.com/cloud-platform/
 
 Een lijst met apps die ondersteuning bieden voor voorwaardelijke toegang op app-basis is beschikbaar in de [technische naslaginformatie over voorwaardelijke toegang voor Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
 
-Op apps gebaseerde voorwaardelijke toegang [biedt ook ondersteuning voor LOB-apps (Line-Of-Business)](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), maar als u deze apps wilt gebruiken, moet u gebruikmaken van [moderne Office 365-verificatie](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
+Op apps gebaseerde voorwaardelijke toegang [biedt ook ondersteuning voor LOB-apps (Line-Of-Business)](app-modern-authentication-block.md), maar als u deze apps wilt gebruiken, moet u gebruikmaken van [moderne Office 365-verificatie](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a). 
 
 ## <a name="how-app-based-conditional-access-works"></a>Hoe werkt op apps gebaseerde voorwaardelijke toegang?
 

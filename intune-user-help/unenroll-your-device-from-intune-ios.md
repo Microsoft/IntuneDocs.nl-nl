@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2df474e8b0a5af2ac294715135804ef0713a3015
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34547485"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Uw iOS-apparaat uit Intune verwijderen
 
@@ -59,6 +60,8 @@ Voer deze stappen uit of bekijk deze video om uw apparaat uit Intune te verwijde
   -   Bedrijfse-mailprofielen worden verwijderd van het apparaat.
 
   -   Apparaten die alleen zijn geconfigureerd voor e-mail worden niet meer in de bedrijfsportal-app of op de website weergegeven.
+  
+  -   Apps worden verwijderd. Gegevens van bedrijfs-apps worden verwijderd.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>Gegevens verwijderen die door de bedrijfsportal-app zijn verzameld
 
