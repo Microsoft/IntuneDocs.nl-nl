@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
+ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744989"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263401"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune
 
@@ -56,8 +56,8 @@ De volgende tabel bevat de specifieke app-typen en informatie over hoe u deze ku
 | Office 365-apps voor macOS | Store-app (Office 365) | Selecteer **macOS** bij **Office 365-suite** als het **app-type** en selecteer vervolgens de Office 365-app-suite. |
 | Android LOB-apps (Line-Of-Business) | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een Android-installatiebestand toe met de extensie **.apk**.  |
 | iOS LOB-apps | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een iOS-installatiebestand toe met de extensie **.ipa**.  |
-| Windows Phone LOB-apps | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een iOS-installatiebestand toe met de extensie **.xap**.  |
-| Windows LOB-app | LOB-app | Selecteer **Line-Of-Business-app** als het app-type, selecteer het **app-pakketbestand** en voeg vervolgens een iOS-installatiebestand toe met de extensie **.msi**, **.appx** of **.appxbundle**. |
+| Windows Phone LOB-apps | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een Windows Phone-installatiebestand toe met de extensie **.xap**.  |
+| Windows LOB-app | LOB-app | Selecteer **Line-Of-Business**-app als het app-type, selecteer het **app-pakketbestand** en voeg vervolgens een Windows-installatiebestand toe met de extensie **.msi**, **.appx** of **.appxbundle**. |
 | Ingebouwde iOS-app  | Ingebouwde app | Selecteer **Ingebouwde app** als het **app-type** en selecteer vervolgens de ingebouwde app in de lijst beschikbare apps.  |
 | Ingebouwde Android-app  | Ingebouwde app | Selecteer **Ingebouwde app** als het **app-type** en selecteer vervolgens de ingebouwde app in de lijst beschikbare apps.  |
 | Web-apps  | Web-app  | Selecteer **Webkoppeling** als het **app-type** en voer vervolgens een geldige URL in die verwijst naar de web-app.  |

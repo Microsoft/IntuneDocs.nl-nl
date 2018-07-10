@@ -15,12 +15,12 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97ddb881e497c5b9e5bb5b36d19c13ab2722b538
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 75d3f9312a6f3a88706070ab29e674cb6d53bf4f
+ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744819"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36305413"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Instellingen voor beveiligingsbeleid voor apps voor Android in Microsoft Intune
 In dit artikel worden de app-beveiligingsbeleidsinstellingen voor Android-apparaten beschreven. De beleidsinstellingen die worden beschreven, kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid op de blade **Instellingen** in Azure Portal.
@@ -69,8 +69,7 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
 
   |Naam van app/service | Beschrijving | Uitzonderingsvoorwaarde|
   | ------ | ---- | --- |
-  | com.android.chrome | Google Chrome-browser | Chrome wordt gebruikt voor een aantal webweergaveonderdelen op Android 7.0+ en is nooit verborgen. Gegevensstroom naar en van de app is echter altijd beperkt.
-  | com.skype.raider | Skype | Voor de Skype-app zijn alleen bepaalde acties die in een telefonische oproep resulteren toegestaan. |
+  | com.android.chrome | Google Chrome-browser | Chrome wordt gebruikt voor een aantal webweergaveonderdelen op Android 7.0+ en is nooit verborgen. Gegevensstroom naar en van de app is echter altijd beperkt.  | com.skype.raider | Skype | Voor de Skype-app zijn alleen bepaalde acties die in een telefonische oproep resulteren toegestaan. |
   | com.android.providers.media | Android media-inhoudsprovider | Voor de media-inhoudsprovider is alleen de actie beltoonselectie toegestaan. |
   | com.google.android.gms; com.google.android.gsf | Google Play-Services-pakketten | Voor deze pakketten zijn Google Cloud Messaging-acties zoals pushmeldingen toegestaan. |
 
@@ -86,7 +85,7 @@ Zie [Beleidsuitzonderingen voor gegevensoverdracht voor apps](app-protection-pol
 | **Toegangsvereisten opnieuw controleren na (minuten)** | Configureer de volgende instellingen: <ul><li>**Time-out**: dit is het aantal minuten waarna de (eerder in het beleid gedefinieerde) toegangsvereisten opnieuw worden gecontroleerd. Wanneer een beheerder bijvoorbeeld invoeren van een pincode inschakelt en apparaten met roottoegang blokkeert in het beleid, moet een gebruiker die een door Intune beheerde app opent een pincode invoeren en de app gebruiken op een apparaat zonder roottoegang. Wanneer u deze instelling gebruikt, hoeft de gebruiker nog **30 minuten** (standaardwaarde) geen pincode in te voeren of nog een controle op rootdetectie te ondergaan in een door Intune beheerde app. <br><br> **Opmerking:** in Android wordt de pincode gedeeld tussen alle apps die door Intune worden beheerd. De timer van de pincode wordt opnieuw ingesteld zodra de app de voorgrond van het apparaat verlaat. De gebruiker hoeft voor de duur van de time-out die is opgegeven met deze instelling geen pincode in te voeren voor een door Intune beheerde app die de pincode deelt. <br><br> Deze indeling voor beleidsinstelling ondersteunt een positief geheel getal.<br></li><li>**Offline respijtperiode**: het aantal minuten dat MAM-apps offline kunnen worden uitgevoerd. Geef de tijd (in minuten) op waarna de toegangsvereisten voor de app opnieuw worden gecontroleerd. Standaardwaarde = **720** minuten (12 uur). Nadat deze periode is verlopen, vereist de app gebruikersverificatie met Azure Active Directory (Azure AD), zodat de app kan worden uitgevoerd.<br><br> Deze indeling voor beleidsinstelling ondersteunt een positief geheel getal.</li></ul>| Time-out: 30 <br><br> Offline: 720 |
 | **Offline interval (in dagen) voordat app-gegevens worden gewist** | Nadat de app zoveel dagen (door de beheerder bepaald) offline is uitgevoerd, moet de gebruiker verbinding maken met het netwerk en opnieuw gebruikersverificatie uitvoeren. Als de gebruiker is geverifieerd, kan deze opnieuw toegang krijgen tot de gegevens en wordt het offline-interval opnieuw ingesteld.  Als de gebruiker niet kan worden geverifieerd, worden het gebruikersaccount en de gebruikersgegevens selectief gewist.  Zie [Alleen zakelijke gegevens wissen uit door Intune beheerde apps](https://docs.microsoft.com/intune/apps-selective-wipe) voor meer informatie over welke gegevens door selectief wissen worden verwijderd.<br><br> Deze indeling voor beleidsinstelling ondersteunt een positief geheel getal. | 90 dagen |
 | **Schermopname en Android Assistant blokkeren (Android 6.0+)** | Kies **Ja** om schermopnames en gebruik van de **Android Assistent**-functies van het apparaat te blokkeren bij gebruik van deze app. Als u **Ja** kiest, wordt ook de voorbeeldafbeelding van de app-schakelbaar vervaagd bij gebruik van deze app in combinatie met een werk- of schoolaccount. | Nee |
-| **Pincode apparaat uitschakelen wanneer de pincode voor het apparaat wordt beheerd** | Kies **Ja** om de pincode voor het apparaat uit te schakelen wanneer een apparaatvergrendeling wordt gedetecteerd op een geregistreerd apparaat. | Nee |
+| **Pincode apparaat uitschakelen wanneer de pincode voor het apparaat wordt beheerd** | Kies **Ja** om de pincode voor het apparaat uit te schakelen wanneer een apparaatvergrendeling wordt gedetecteerd op een geregistreerd apparaat.<br><br>**Opmerking** Intune kan de inschrijving van apparaten met een EMM-oplossing van derden op iOS niet detecteren.  | Nee |
 | **Minimumversie van het Android-besturingssysteem vereisen** | Kies **Ja** om een minimumversie van het Android-besturingssysteem te vereisen voor gebruik van deze app. Toegang door de gebruiker wordt geblokkeerd als de Android-versie op het apparaat niet aan de vereiste voldoet.<br><br> Deze indeling voor beleidsinstelling ondersteunt major.minor, major.minor.build en major.minor.build.revision.| Nee |
 | **Minimumversie van het Android-besturingssysteem vereisen (alleen waarschuwing)** | Kies **Ja** om een minimumversie van het Android-besturingssysteem te vereisen voor gebruik van deze app. De gebruiker ziet een melding als de Android-versie op het apparaat niet aan de vereiste voldoet. De gebruiker kan deze melding negeren.<br><br> Deze indeling voor beleidsinstelling ondersteunt major.minor, major.minor.build en major.minor.build.revision. | Nee |
 | **Minimumversie van app vereisen** | Kies **Ja** om een minimumversie van de app te vereisen voor gebruik van de app. Toegang door de gebruiker wordt geblokkeerd als de app-versie op het apparaat niet aan de vereiste voldoet.<br><br>Aangezien apps vaak verschillende versieschema's hebben, moet u een beleid maken waarin minimaal één app-versie gericht is op één app (bijvoorbeeld 'Outlook-versiebeleid'). <br><br> Deze indeling voor beleidsinstelling ondersteunt major.minor, major.minor.build en major.minor.build.revision.| Nee |

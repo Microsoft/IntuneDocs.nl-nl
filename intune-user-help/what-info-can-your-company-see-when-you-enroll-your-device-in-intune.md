@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 7e722195ce1b1b34a65cd8e936ad8a702f145691
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: ad949cc9d20e0e46ab986b4646059af733018255
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308871"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232803"
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Welke gegevens kan mijn bedrijf zien wanneer ik mijn apparaat inschrijf?
 
-Wanneer u een apparaat in beheer inschrijft, geeft u uw bedrijf toestemming om bepaalde informatie op het apparaat te zien om de zakelijke gegevens op het apparaat te beschermen.
+Uw bedrijf kan uw persoonlijke gegevens niet zien wanneer u een apparaat met Microsoft Intune inschrijft. Wanneer u een apparaat inschrijft, geeft u uw bedrijf toestemming om bepaalde soorten informatie op uw apparaat weer te geven, zoals het apparaatmodel en serienummer. Uw bedrijf gebruikt deze informatie om de zakelijke gegevens op het apparaat te beveiligen.
 
-**Wat uw bedrijf nooit kan zien**
+**Wat uw bedrijf nooit kan zien:**
 
 - Oproepen en browsegeschiedenis
 - E-mail- en sms-berichten
@@ -36,7 +36,7 @@ Wanneer u een apparaat in beheer inschrijft, geeft u uw bedrijf toestemming om b
 -   Wachtwoorden
 - Foto's, met inbegrip van wat er in de app Foto's of het camera-album staat
 
-**Wat uw bedrijf altijd kan zien**
+**Wat uw bedrijf altijd kan zien:**
 
 - Apparaatmodel, zoals Google Pixel
 - Fabrikant, zoals Microsoft
@@ -46,7 +46,7 @@ Wanneer u een apparaat in beheer inschrijft, geeft u uw bedrijf toestemming om b
 - Apparaatnaam
 - Serienummer
 
-**Wat uw bedrijf mogelijk kan zien**
+**Wat uw bedrijf mogelijk kan zien:**
 
 -  Telefoonnummer: op apparaten die eigendom zijn van het **bedrijf** kan uw volledige telefoonnummer worden gezien. Van **persoonlijke** apparaten zijn alleen de laatste vier cijfers van uw telefoonnummer zichtbaar voor uw bedrijf. U kunt het **eigendomstype** van elk apparaat zien door de pagina **Apparaatdetails** voor het apparaat te openen.
 -  Locatie: uw bedrijf kan nooit de locatie van het apparaat zien, behalve als u een iOS-apparaat hebt dat onder controle staat en dat is kwijtgeraakt. [Hoe weet ik dat?](https://go.microsoft.com/fwlink/?linkid=853816)

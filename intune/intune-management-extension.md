@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2046a928525e974eee5f63d772d46864b21f0267
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: eb7d8b35cb88223a3fbfa45e0ad8e2f8d2852a96
+ms.sourcegitcommit: ab801d715aa26f6d97f1a0c42a07e55146a14e6f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34583669"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35289020"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-scripts in Intune beheren voor Windows 10-apparaten
 Met de Intune-beheeruitbreiding kunt u PowerShell-scripts uploaden in Intune om deze uit te voeren op Windows 10-apparaten. De beheeruitbreiding is een aanvulling op de Windows 10 MDM-functionaliteit en maakt het eenvoudiger voor u om uw beheer te moderniseren.
@@ -53,6 +53,10 @@ De Intune-beheeruitbreiding heeft de volgende vereisten:
  
 2. Kies **Groepen selecteren** beschikbare Microsoft Azure Active Directory-groepen in een lijst op te nemen. 
 3. Selecteer een of meer groepen die de gebruikers bevatten wiens apparaten het script ontvangen. Kies **Selecteren** om het beleid aan de geselecteerde groepen toe te wijzen.
+
+> [!NOTE]
+> - PowerShell-scripts kunnen niet worden toegepast op computergroepen.
+> - PowerShell-scripts worden alleen uitgevoerd op apparaten als een AD-gebruiker (Azure Active Directory) is aangemeld op het apparaat.
 
 De Intune-beheeruitbreiding wordt eenmaal per uur met Intune gesynchroniseerd. Wanneer u het beleid aan de Microsoft Azure Active Directory-groepen toewijst, wordt het PowerShell-script uitgevoerd en worden de resultaten van de uitvoering gerapporteerd. 
  

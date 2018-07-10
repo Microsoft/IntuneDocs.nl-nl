@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 5d924e216dd6d0fe13bc4c7718b5368db1d35f8c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
+ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833345"
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36329872"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>De portal voor probleemoplossing gebruiken om gebruikers in uw bedrijf te helpen
 
@@ -234,6 +234,15 @@ Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integre
 | Apparaattype | De naam van het type apparaat.                                                       |
 | Beleid    | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn. |
 | Laatste synchronisatie   | De timestamp van de laatste keer dat het apparaat is gesynchroniseerd met Intune.                   |
+
+## <a name="collect-available-data-from-mobile-device"></a>Beschikbare gegevens verzamelen van mobiel apparaat
+
+Gebruik de volgende bronnen bij het verzamelen van gegevens van apparaten bij het oplossen van problemen van de apparaten van de gebruiker:
+  - [iOS-registratiefouten verzenden naar de IT-beheerder](/intune-user-help/send-errors-to-your-it-admin-ios)
+  - [Het ondersteuningsteam van het bedrijf helpen met het oplossen van problemen met het apparaat via uitgebreide logboekregistratie](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+  - [Android-logboeken naar het ondersteuningsteam van het bedrijf verzenden met een USB-kabel](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+  - [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via e-mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+  - [Android-registratiefouten verzenden naar de IT-beheerder](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
 ## <a name="next-steps"></a>Volgende stappen
 

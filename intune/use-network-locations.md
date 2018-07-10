@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ab5e4de2d3a888d6b3372b75b9a95af54a591a
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745119"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843120"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Locaties (netwerkomheining) in Intune gebruiken
 
@@ -35,7 +35,7 @@ In uw productiefaciliteit gebruiken sommige werknemers Android-apparaten. Een we
 2. Maak een nalevingsbeleid waarbij deze apparaten verbonden moeten zijn met uw bedrijfsnetwerk en wijs dit beleid toe.
 3. Als het apparaat zich buiten de productiefaciliteit begeeft, wordt het apparaat als niet-compatibel beschouwd en heeft het geen toegang tot de bedrijfsresources.
 
-U kunt via het Intune-beleid een melding over niet-naleving verzenden en het apparaat ook blokkeren. Wanneer het apparaat weer op de locatie is en zich in de netwerklocatie bevindt, kan het apparaat worden ontgrendeld en weer toegang krijgen tot bedrijfsresources.
+U kunt ook [acties voor niet-naleving](#configure-the-actions-for-noncompliance) toevoegen. Wanneer het apparaat weer op de locatie is en zich in de netwerklocatie bevindt, krijgt het weer toegang tot bedrijfsresources.
 
 ## <a name="prerequisites"></a>Vereisten
 

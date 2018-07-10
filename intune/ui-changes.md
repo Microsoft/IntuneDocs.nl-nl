@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032588"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232933"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Waar is de Intune-functie die ik zoek gebleven in Azure?
-Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid gebruikgemaakt om een aantal taken logischer in te delen. Maar dergelijke verbeteringen betekenen wel dat u de nieuwe indeling moet leren kennen. Deze referentiegids is speciaal bedoeld voor degenen die heel vertrouwd zijn met Intune in de klassieke portal, en die zich afvragen waar bepaalde functies in Intune zijn gebleven in Intune in de Azure-portal. Als een functie die u zoekt niet wordt behandeld in dit artikel, laat dan een reactie achter onder het artikel, zodat we het kunnen bijwerken.
+Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid gebruikgemaakt om een aantal taken logischer in te delen. Maar dergelijke verbeteringen betekenen wel dat u de nieuwe indeling moet leren kennen. Deze referentiegids is speciaal bedoeld voor degenen die heel vertrouwd zijn met Intune in de klassieke portal, en die zich afvragen waar bepaalde functies in Intune zijn gebleven in Azure Portal. Als een functie die u zoekt niet wordt behandeld in dit artikel, laat dan een reactie achter onder het artikel, zodat we het kunnen bijwerken.
 ## <a name="quick-reference-guide"></a>Naslaggids
 
 |Onderdeel |Pad in klassieke portal|Pad in Intune in de Azure-portal|
@@ -45,27 +45,37 @@ Instellingen voor de bedrijfsportal|Beheer > Bedrijfsportal|**Beheer** > Mobiele
 Intune in de Azure-portal gebruikt [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) om groepen te beheren.
 
 ## <a name="where-did-enrollment-rules-go"></a>Waar zijn de inschrijvingsregels gebleven?
-In de klassieke portal kunt u regels instellen voor de MDM-inschrijving van mobiele en moderne Windows- en macOS-apparaten:
+In de klassieke portal kunt u regels instellen voor de MDM-inschrijving van mobiele en moderne Windows- en macOS-apparaten.
 
 ![Afbeelding van regels voor inschrijving van mobiele apparaten in klassieke console](./media/01-classic-rules.png)
 
-Deze regels waren van toepassing op alle gebruikers in uw Intune-account, zonder uitzonderingen. In de Azure-portal zijn deze regels nu onderverdeeld in twee typen beleid, Beperkingen voor apparaattypen en Apparaatlimietbeperkingen:
+Deze regels waren van toepassing op alle gebruikers in uw Intune-account, zonder uitzonderingen. In Azure Portal zijn deze regels nu onderverdeeld in twee typen beleid, Beperkingen voor apparaattypen en Apparaatlimietbeperkingen.
 
 ![Afbeelding van beperkingen voor inschrijving van mobiele apparaten in Azure](./media/02-azure-enroll-restrictions.png)
 
-De standaard Apparaatlimietbeperking komt overeen met de Limiet apparaatinschrijvingen in de klassieke portal:
+De standaard Apparaatlimietbeperking komt overeen met de Limiet apparaatinschrijvingen in de klassieke portal.
 
 ![Afbeeldingen van apparaatlimietbeperkingen in Azure](./media/03-azure-device-limit.png)
 
-De standaard Beperking voor apparaattypen komt overeen met de Platformbeperkingen in de klassieke portal:
+De standaard Beperking voor apparaattypen komt overeen met de Platformbeperkingen in de klassieke portal.
 
 ![Afbeeldingen van beperking voor apparaattype in Azure](./media/04-azure-platform-restrictions.png)
 
-De mogelijkheid om apparaten in persoonlijk eigendom toe te staan of te blokkeren, wordt nu beheerd onder de Platformconfiguraties van de Beperkingen voor apparaattypen:
+De mogelijkheid om apparaten in persoonlijk eigendom toe te staan of te blokkeren, wordt nu beheerd onder de Platformconfiguraties van de Beperkingen voor apparaattypen.
 
 ![Afbeelding van blokkeringsinstellingen voor persoonlijke apparaten in Azure](./media/05-azure-personal-block.png)
 
 Nieuwe beperkingsmogelijkheden worden uitsluitend toegevoegd aan Azure Portal.
+
+## <a name="where-did-my-conditional-access-policies-go"></a>Waar is mijn beleid voor voorwaardelijke toegang?
+Nadat uw tenant is gemigreerd naar Azure Portal, blijven de beleidsregels voor voorwaardelijke toegang van uw tenant van kracht. U kunt deze echter niet weergeven of wijzigen via Intune in Azure Portal.
+
+Als u beleidsregels voor voorwaardelijke toegang wilt weergeven en er wijzigingen in wilt aanbrengen via Azure Portal, moet u de oude beleidsregels verwijderen uit de klassieke portal. U maakt ze daarna opnieuw in Azure Portal. Zie [Klassiek beleid migreren in Azure Portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration) voor meer informatie over het migreren van beleidsregels voor voorwaardelijke toegang. 
+
+## <a name="where-did-my-compliance-policies-go"></a>Waar is mijn nalevingsbeleid gebleven?
+Nadat uw tenant is gemigreerd naar Azure Portal, blijft het nalevingsbeleid van uw tenant van kracht. U kunt deze echter niet weergeven of wijzigen via Intune in Azure Portal.
+
+Als u het nalevingsbeleid wilt weergeven en er wijzigingen in wilt aanbrengen vanuit Azure Portal, moet u de oude beleidsregels verwijderen uit de klassieke portal. U maakt ze daarna opnieuw in Azure Portal. Zie [Aan de slag met apparaatnalevingsbeleid](https://docs.microsoft.com/en-us/intune/known-issues#compliance) voor meer informatie over beleidsregels voor apparaatnaleving. 
 
 ## <a name="where-did-apple-dep-go"></a>Waar is Apple DEP gebleven?
 In de klassieke portal kunt u Intune instellen voor integratie met het Device Enrollment Program van Apple, en handmatig synchroniseren met de service van Apple:

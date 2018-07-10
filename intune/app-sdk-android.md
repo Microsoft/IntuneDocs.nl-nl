@@ -14,11 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ecf7b66be25f0f93456d5419ef1f57b8ca7efe
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34449867"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -58,7 +59,7 @@ Voor app-beveiliging zonder apparaatregistratie hoeft de gebruiker het apparaat 
 
 De SDK voor de Intune-app is een standaard-Android-bibliotheek zonder externe afhankelijkheden. **Microsoft.Intune.MAM.SDK.aar** bevat zowel de benodigde interfaces om app-beveiligingsbeleid te activeren als de code die nodig is om samen te werken met de Microsoft Intune-bedrijfsportal-app.
 
-**Microsoft.Intune.MAM.SDK.aar** moet worden opgegeven als een Android-bibliotheekverwijzing. Hiervoor opent u uw app-project in Android Studio en gaat u naar **Bestand > Nieuw > Nieuwe module** en selecteert u **.JAR/.AAR-pakket importeren**. Selecteer vervolgens het Android-archiefpakket Microsoft.Intune.MAM.SDK.aar om een module voor onze .AAR te maken. Klik met de rechtermuisknop op de module(s) die uw app-code bevat(ten) en ga naar **Module-instellingen** > **het tabbald Afhankelijkheden** > **+-pictogram** > **Module-afhankelijkheid** > Selecteer de MAM SDK AAR-module die u zojuist hebt gemaakt > **OK**. Dit zorgt ervoor dat uw module voldoet aan de MAM SDK wanneer u uw project bouwt.
+**Microsoft.Intune.MAM.SDK.aar** moet worden opgegeven als een Android-bibliotheekverwijzing. Hiervoor opent u uw app-project in Android Studio en gaat u naar **Bestand > Nieuw > Nieuwe module** en selecteert u **.JAR/.AAR-pakket importeren**. Selecteer vervolgens het Android-archiefpakket Microsoft.Intune.MAM.SDK.aar om een module voor onze .AAR te maken. Klik met de rechtermuisknop op de module(s) die uw app-code bevat(ten) en ga naar **Module-instellingen** > **het tabblad Afhankelijkheden** > **+-pictogram** > **Module-afhankelijkheid** > Selecteer de MAM SDK AAR-module die u zojuist hebt gemaakt > **OK**. Dit zorgt ervoor dat uw module voldoet aan de MAM SDK wanneer u uw project maakt.
 
 Daarnaast bevatten **Microsoft.Intune.MAM.SDK.Support.v4** en **Microsoft.Intune.MAM.SDK.Support.v7** Intune-varianten van respectievelijk `android.support.v4` en `android.support.v7`. Ze zijn niet ingebouwd in Microsoft.Intune.MAM.SDK.aar voor het geval een app de ondersteuningsbibliotheken niet wil opnemen. Het zijn standaard-JAR-bestanden in plaats van Android-bibliotheekprojecten.
 
@@ -137,7 +138,7 @@ Android-basisklassen moeten worden vervangen door hun respectieve MAM-equivalent
 In veel gevallen is een methode die in de Android-klasse beschikbaar is, in de vervangende MAM-klasse als definitief gemarkeerd. De vervangende MAM klasse biedt in dit geval een gelijknamige methode (meestal voorafgegaan door `MAM`) die in plaats daarvan moet worden overschreven. Wanneer een activiteit wordt afgeleid van `MAMActivity`, moet niet `onCreate()` worden overschreven en niet `super.onCreate()` worden aangeroepen, maar moet `Activity` `onMAMCreate()` overschrijven en `super.onMAMCreate()` aanroepen. De Java-compiler moet de laatste beperkingen afdwingen om het onbedoeld onderdrukken van de oorspronkelijke methode in plaats van de MAM-equivalent te voorkomen.
 
 ### <a name="mamapplication"></a>MAMApplication
-Als uw app een sublasse van `android.app.Application` creëert, dan **moet** u in plaats daarvan de subklasse `com.microsoft.intune.mam.client.app.MAMApplication` maken. Als uw app geen subklasse voor `android.app.Application` maakt, dan **moet** u `"com.microsoft.intune.mam.client.app.MAMApplication"` instellen als `"android:name"`-kenmerk in de tag `<application>` van uw AndroidManifest.xml.
+Als uw app een subklasse van `android.app.Application` creëert, dan **moet** u in plaats daarvan de subklasse `com.microsoft.intune.mam.client.app.MAMApplication` maken. Als uw app geen subklasse voor `android.app.Application` maakt, dan **moet** u `"com.microsoft.intune.mam.client.app.MAMApplication"` instellen als `"android:name"`-kenmerk in de tag `<application>` van uw AndroidManifest.xml.
 ### <a name="pendingintent"></a>PendingIntent
 In plaats van `PendingIntent.get*` moet u de methode `MAMPendingIntent.get*` gebruiken. Vervolgens kunt u gewoon de resulterende `PendingIntent` gebruiken.
 
@@ -462,7 +463,7 @@ Er hoeven geen aanvullende manifestwaarden te worden geconfigureerd.
 
 Autoriteit en NonBrokerRedirectURI kunnen indien gewenst worden opgegeven.
 
-Het Intune SDK-team heeft de toepassings-id (client-id) van uw app nodig. U vindt deze in de [Azure Portal](https://portal.azure.com/) onder **Alle toepassingen** in de kolom voor **Toepassings-id**. Kijk [hier](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) voor informatie over het registreren van toepassingen met AAD. Het Intune SDK-team is bereikbaar via msintuneappsdk@microsoft.com.
+Het Intune SDK-team heeft de toepassings-id (client-id) van uw app nodig. U vindt deze in [Azure Portal](https://portal.azure.com/) onder **Alle toepassingen** in de kolom voor **Toepassings-id**. Kijk [hier](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) voor informatie over het registreren van toepassingen met Azure AD. Het Intune SDK-team is bereikbaar via msintuneappsdk@microsoft.com.
 
 Bekijk hieronder ook de vereisten voor [Voorwaardelijke toegang](#conditional-access).
 
@@ -472,22 +473,30 @@ Bekijk hieronder ook de vereisten voor [Voorwaardelijke toegang](#conditional-ac
     |--|--|
     | ClientID | De ClientID van de app (gegenereerd door Azure AD toen de app is geregistreerd) |
     | SkipBroker | **True** |
+    
+    Autoriteit en NonBrokerRedirectURI kunnen indien gewenst worden opgegeven.
 
-Autoriteit en NonBrokerRedirectURI kunnen indien gewenst worden opgegeven.
 
 ### <a name="conditional-access"></a>Voorwaardelijke toegang
-Voorwaardelijke toegang (CA) is een [functie](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer) van Azure Active Directory die kan worden gebruikt om toegang tot AAD-resources te beheren.  [Intune-beheerders kunnen CA-regels definiëren](https://docs.microsoft.com/en-us/intune/conditional-access) waardoor toegang tot resources is beperkt tot apparaten of apps die worden beheerd door Intune. Als u ervoor wilt zorgen dat uw app waar nodig toegang heeft tot resources, moet u de onderstaande stappen volgen. Als uw app geen AAD-toegangstokens ophaalt, of alleen toegang heeft tot resources die niet door CA kunnen worden beveiligd, dan kunt u deze stappen overslaan.
+
+Voorwaardelijke toegang (CA) is een [functie](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) van Azure Active Directory die kan worden gebruikt om toegang tot AAD-resources te beheren. [Intune-beheerders kunnen CA-regels definiëren](https://docs.microsoft.com/intune/conditional-access) waardoor toegang tot resources is beperkt tot apparaten of apps die worden beheerd door Intune. Als u ervoor wilt zorgen dat uw app waar nodig toegang heeft tot resources, moet u de onderstaande stappen volgen. Als uw app geen AAD-toegangstokens ophaalt, of alleen toegang heeft tot resources die niet door CA kunnen worden beveiligd, dan kunt u deze stappen overslaan.
 
 1. Volg [de richtlijnen voor ADAL-integratie](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library). 
-   Bekijk met name stap 11 voor brokergebruik
-2. [Registreer uw toepassing met Azure Active Directory] (https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration). 
-   De omleidings-URI staat hierboven in de richtlijnen voor ADAL-integratie.
+   Bekijk met name stap 11 voor brokergebruik.
+
+2. [Registreer uw toepassing met Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). U vindt de omleidings-URI hierboven in de richtlijnen voor ADAL-integratie.
+
 3. Stel de metagegevensparameters voor het manifest in volgens de [algemene ADAL-configuraties](#common-adal-configurations), item 2, hierboven.
-4. Controleer of alles goed is geconfigureerd door [op apparaat gebaseerde CA](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use) in te schakelen vanui de [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) en bevestig:
-    - Dat er bij aanmelding bij uw app wordt gevraagd naar installatie en inschrijving van de Intune-bedrijfsportal
-    - Dat na inschrijving goed wordt aangemeld bij uw app.
-5. Zodra uw app Intune APP SDK-integratie heeft verzonden, neemt u contact op met msintuneappsdk@microsoft.com om aan de lijst met goedgekeurde apps te worden toegevoegd voor [voorwaardelijke toegang op basis van apps](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
-6. Zodra uw app is toegevoegd aan de goedgekeurde lijst, voert u een validatie uit door [op apps gebaseerde CA te configureren](https://docs.microsoft.com/en-us/intune/app-based-conditional-access-intune-create) en te controleren of u zich bij uw app kunt aanmelden.
+
+4. Controleer of alles goed is geconfigureerd door [op apparaat gebaseerde CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) in te schakelen vanuit [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) en bevestig:
+* Dat er bij aanmelding bij uw app wordt gevraagd naar installatie en inschrijving van de Intune-bedrijfsportal
+* Dat na inschrijving goed wordt aangemeld bij uw app.
+
+5. Zodra uw app Intune APP SDK-integratie heeft verzonden, neemt u contact op met msintuneappsdk@microsoft.com om aan de lijst met goedgekeurde apps te worden toegevoegd voor [voorwaardelijke toegang op basis van apps](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access).
+
+6. Zodra uw app is toegevoegd aan de goedgekeurde lijst, voert u een validatie uit door [op apps gebaseerde CA te configureren](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) en te controleren of u zich bij uw app kunt aanmelden.
+
+
 ## <a name="app-protection-policy-without-device-enrollment"></a>App-beveiligingsbeleid zonder apparaatrinschrijving
 
 ### <a name="overview"></a>Overzicht
@@ -611,7 +620,7 @@ Result getRegisteredAccountStatus(String upn);
 
 ### <a name="sovereign-cloud-registration"></a>Registratie bij onafhankelijke clouds
 
-Toepassingen die [bewust zijn van onafhankelijke clouds](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud) **moeten** de `authority` bij `registerAccountForMAM()` opgeven.  U krijgt deze door `instance_aware=true` op te geven in de [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken extraQueryParameters van ADAL, gevolgd door het intrekken an `getAuthority()` in het AuthenticationCallback AuthenticationResult.
+Toepassingen die [bewust zijn van onafhankelijke clouds](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud) **moeten** de `authority` bij `registerAccountForMAM()` opgeven.  U krijgt deze door `instance_aware=true` op te geven in de [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken extraQueryParameters van ADAL, gevolgd door het intrekken van `getAuthority()` in het AuthenticationCallback AuthenticationResult.
 
 ```
 mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
@@ -1214,7 +1223,7 @@ Als de app ander bedrijfsgegevens biedt dan een **ParcelFileDescriptor** via een
 
 ### <a name="selective-wipe"></a>Selectief wissen
 
-Als een app met meerdere identiteiten wordt geregistreerd voor de `WIPE_USER_DATA`-melding, is het de verantwoordelijkheid van de app dat alle gegevens voor de gebruiker worden gewist, met inbegrip van alle bestanden waarvan de identiteit is getagd als behorende aan die gebruiker. Als de app gebruikersgegevens uit een bestand verwijderd maar andere gegevens in het bestand wil bewaren, *moet* het de identiteit van het bestand wijzigen (via `MAMFileProtectionManager.protect` voor een persoonlijke gebruiker of de lege identiteit). Als versleutelingsbeleid wordt gebruikt, worden alle resterende bestanden van de gebruiker die worden gewist, niet ontsleuteld, en deze zijn na het wissen niet langer toegankelijk voor de app.
+Als een app met meerdere identiteiten wordt geregistreerd voor de `WIPE_USER_DATA`-melding, is het de verantwoordelijkheid van de app dat alle gegevens voor de gebruiker worden gewist, met inbegrip van alle bestanden waarvan de identiteit is getagd als behorend aan die gebruiker. Als de app gebruikersgegevens uit een bestand verwijdert maar andere gegevens in het bestand wil bewaren, *moet* het de identiteit van het bestand wijzigen (via `MAMFileProtectionManager.protect` voor een persoonlijke gebruiker of de lege identiteit). Als versleutelingsbeleid wordt gebruikt, worden alle resterende bestanden van de gebruiker die worden gewist, niet ontsleuteld, en zijn deze na het wissen niet langer toegankelijk voor de app.
 
 Een app die wordt geregistreerd voor `WIPE_USER_DATA` profiteert niet van het voordeel van het standaardgedrag van de SDK voor selectief wissen. Voor apps die met meerdere identiteiten kunnen werken, kan dit verlies belangrijker zijn omdat met de standaard-MAM-actie voor selectief wissen alleen bestanden worden gewist waarvan de identiteit het doel is van een wisbewerking. Als een app die met meerdere identiteiten kan werken, de standaard-MAM-functie voor selectief wissen wil uitvoeren _**en**_ eigen wisacties wil uitvoeren, moet de app worden geregistreerd voor `WIPE_USER_AUXILIARY_DATA`-meldingen. Deze melding wordt direct door de SDK verzonden, nog voordat u de standaard-MAM-actie voor selectief wissen wordt uitgevoerd. Een app mag nooit worden geregistreerd voor zowel WIPE_USER_DATA als WIPE_USER_AUXILIARY_DATA.
 
@@ -1371,7 +1380,6 @@ Weergaven die worden gegenereerd door de MAM SDK kunnen visueel worden aangepast
 
 ### <a name="how-to-customize"></a>Aanpassingen maken
 Als de stijlwijzigingen moeten worden toegepast op de Intune MAM-weergavenviews, moet u eerst een XML-bestand met stijloverschrijvingen maken. Dit bestand moet in de map /res/xml van uw app worden geplaatst. U kunt het bestand elke gewenste naam geven. Hieronder volgt een voorbeeld van de indeling die voor dit bestand moet worden gevolgd.
-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1401,7 +1409,7 @@ Hieronder volgt een compleet overzicht van de toegestane stijlkenmerken, de UI-e
 | Accentkleur | Kaderrand van het gemarkeerde pincodevak <br> Hyperlinks |accent_color | Kleur |
 | App-logo | Grote pictogrammen die worden weergegeven in het pincodescherm van de Intune-app | logo_image | Tekenbaar |
 
-## <a name="working-with-app-we-service-enrollment-sdk-integrated-android-lob-app-and-adal-sso-optional"></a>Registratie bij de APP-WE-service, in SDK geïntegreerde Android LOB-apps en ADAL SSO (optioneel) gebruiken
+## <a name="default-enrollment-optional"></a>Standaard inschrijving (optioneel)
 <!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 Hier volgen richtlijnen voor het vereisen van gebruikersprompts bij het starten van een app voor automatische registratie bij de APP-WE-service (dit wordt **standaardinschrijving** genoemd in deze sectie), waarvoor beveiligingsbeleid voor apps in Intune is vereist om uw in SDK geïntegreerde Android LOB-app te gebruiken. Ook wordt beschreven hoe u eenmalige aanmelding kunt inschakelen voor uw in SDK geïntegreerde Android LOB-apps. Dit wordt **niet** ondersteund voor Store-apps die kunnen worden gebruikt door niet-Intune-gebruikers.
@@ -1413,7 +1421,7 @@ Hier volgen richtlijnen voor het vereisen van gebruikersprompts bij het starten 
 * Het Intune SDK-team heeft de toepassings-id van uw app nodig. U vindt deze in [Azure Portal](https://portal.azure.com/) onder **Alle toepassingen** in de kolom voor **Toepassings-id**. U kunt het best contact opnemen met het Intune SDK-team door een e-mail te sturen naar msintuneappsdk@microsoft.com.
 
 ### <a name="working-with-the-intune-sdk"></a>Werken met de Intune SDK
-Deze instructies zijn specifiek voor alle Android- en Xamarin-apps die beveiligingsbeleid voor apps in Intune willen vereisen voor gebruik op een apparaat van een eindgebruiker.
+Deze instructies zijn specifiek voor alle Android- en Xamarin-appontwikkelaars die beveiligingsbeleid voor apps in Intune willen vereisen voor app-gebruik op een apparaat van een eindgebruiker.
 
 1. Configureer ADAL met behulp van de stappen die zijn gedefinieerd in de [Intune SDK voor Android-handleiding](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
    > [!NOTE] 

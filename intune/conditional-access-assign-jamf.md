@@ -2,24 +2,25 @@
 title: Nalevingsbeleid voor Jamf-apparaten
 titlesuffix: Microsoft Intune
 description: Gebruik Microsoft Intune-nalevingsbeleid met voorwaardelijke toegang van Azure Active Directory om met Jamf beheerde apparaten te beveiligen.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5320f160efde054586b1e37722a67db375511049
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34482332"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Nalevingsbeleid afdwingen op Macs die door Jamf Pro worden beheerd
 
@@ -34,6 +35,9 @@ U kunt Azure Active Directory en het beleid voor voorwaardelijke toegang van Mic
 
 1. Open Microsoft Azure en navigeer naar **Intune** > **Apparaatcompatibiliteit** > **Beleid**. U kunt beleidsregels maken voor macOS, zoals het kiezen van een reeks acties (bijvoorbeeld het versturen van waarschuwings-e-mails naar niet-compatibele gebruikers en groepen).
 2. Zoek de gewenste groepen en pas daar het beleid op toe.
+
+> [!Note]
+> Voor Intune moet de schijf volledig worden versleuteld om aan het beleid te voldoen.
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>De bedrijfsportal-app voor macOS in Jamf Pro implementeren
 

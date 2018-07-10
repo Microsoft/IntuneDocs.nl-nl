@@ -15,11 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: 8c0eda06c0c781f0a789034abbf5ef8799a9b45c
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474443"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
 
@@ -206,13 +207,17 @@ Zie [Schrijf uw iOS-apparaat in Intune in met het Device Enrollment Program](/in
 ## <a name="renew-a-dep-token"></a>Een DEP-token vernieuwen  
 1. Ga naar deploy.apple.com.  
 2. Kies onder **Manage Servers** de MDM-server die is gekoppeld aan het tokenbestand dat u wilt vernieuwen.
-3. Kies **Generate New Token**.  
+3. Kies **Generate New Token**.
+
+    ![Schermopname van nieuw token genereren.](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
+
 4. Kies **Your Server Token**.  
-5. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma**.  
-6. Kies het token en kies vervolgens **Token vernieuwen**.  
-7. Voer de Apple-ID in die u hebt gebruikt om het oorspronkelijke token te maken.  
+5. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal), **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies het token.
+    ![Schermopname van tokens voor het inschrijvingsprogramma.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
+
+6. Kies **Token vernieuwen** en voer de Apple-ID in die u hebt gebruikt om het oorspronkelijke token te maken.  
+    ![Schermopname van nieuw token genereren.](./media/device-enrollment-program-enroll-ios/renewtoken.png)
+
 8. Upload het token dat u net hebt gedownload.  
 9. Kies **Token vernieuwen**. U krijgt een bevestiging te zien dat het token is vernieuwd.   
-
-
-
+    ![Schermopname van de bevestiging.](./media/device-enrollment-program-enroll-ios/confirmation.png)

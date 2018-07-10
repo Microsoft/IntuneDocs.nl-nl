@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
+ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34178159"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36305430"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>App-beveiligingsbeleid maken en toewijzen
 
@@ -126,6 +126,8 @@ In veel organisaties is het gebruikelijk dat eindgebruikers gebruik mogen maken 
 Omdat Intune-app-beveiligingsbeleid op de identiteit van een gebruiker is gericht, worden de beveiligingsinstellingen voor een gebruiker van oudsher op zowel ingeschreven (via MDM beheerde) als niet-ingeschreven apparaten (geen MDM) toegepast. Daarom kunt u Intune-app-beveiligingsbeleid richten op ofwel in Intune ingeschreven apparaten of iOS- en Android-apparaten waarvan de registratie ongedaan is gemaakt. U mag één beveiligingsbeleid voor niet-beheerde apparaten hebben waarin strenge DLP-besturingselementen voor preventie van gegevensverlies zijn toegepast, en een afzonderlijk beveiligingsbeleid voor via MDM beheerde apparaten waarbij minder strenge DLP-besturingselementen mogelijk zijn. 
 
 Voor het maken van deze beleidsregels bladert u naar **Mobiele apps** > **App-beveiliging**-beleid in de Intune-console en klikt u op **Beleid toevoegen**. U kunt ook een bestaand app-beveiligingsbeleid bewerken. Als u het app-beveiligingsbeleid op zowel beheerde als niet-beheerde apparaten wilt toepassen, moet u bevestigen dat **Op alle app-typen toepassen** is ingesteld op **Ja**, de standaardwaarde. Als u granulair wilt toewijzen op basis van de beheerstatus, stelt u de optie **Op alle app-typen toepassen** in op **Nee**. 
+
+iOS-apps worden alleen beschouwd als beheerd wanneer de instelling voor het configuratiebeleid **IntuneMAMUPN** wordt geïmplementeerd voor elke app. Zie [Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) voor meer informatie.
 
 > [!NOTE]
 > Zie [MAM-beveiligingsbeleid toepassen op basis van beheerstatus](whats-new.md#mam-protection-policies-targeted-based-on-management-state-) voor specifieke iOS-ondersteuningsinformatie over app-beveiligingsbeleid op basis van de apparaatbeheerstatus.

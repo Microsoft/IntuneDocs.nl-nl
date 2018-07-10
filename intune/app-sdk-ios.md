@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/18/2018
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 2effa1d63be57c938a4e5763090bce8f20f48192
+ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042796"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
@@ -84,7 +85,7 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
    > [!NOTE]
    > Als u het framework gebruikt, moet u de simulatorarchitecturen handmatig verwijderen uit het universele framework voordat u uw app naar de App Store verzendt. Zie [Uw app naar de App Store verzenden](#Submit-your-app-to-the-App-Store) voor meer informatie.
 
-2. **Optie 2**: maak een koppeling naar de bibliotheek `libIntuneMAM.a`. Sleep de bibliotheek `libIntuneMAM.a` naar de lijst **Linked Frameworks and Libraries** van het projectdoel.
+   **Optie 2**: maak een koppeling naar de bibliotheek `libIntuneMAM.a`. Sleep de bibliotheek `libIntuneMAM.a` naar de lijst **Linked Frameworks and Libraries** van het projectdoel.
 
     ![Intune App SDK iOS: gekoppelde frameworks en bibliotheken](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -99,7 +100,7 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
 
      ![Intune App SDK iOS: bundelresources kopiëren](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-     Voeg de volgende iOS-frameworks toe aan het project:  
+2. Voeg de volgende iOS-frameworks toe aan het project:  
     * MessageUI.framework  
     * Security.framework  
     * MobileCoreServices.framework  
@@ -152,6 +153,9 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
    |- o |  (optioneel) `<Path to the output plist>` |
 
 Als de parameter 'o' niet wordt opgegeven, wordt in plaats daarvan het invoerbestand gewijzigd. Het hulpprogramma is idempotent en moet telkens worden gestart wanneer er wijzigingen in de Info.plist of rechten van de app zijn aangebracht. U moet ook de meest recente versie van het hulpprogramma downloaden en dat uitvoeren wanneer u de Intune SDK bijwerkt, voor het geval de config-vereisten voor Info.plist in de nieuwste versie zijn gewijzigd.
+
+> [!NOTE]
+> Als uw app nog geen Face ID gebruikt, controleert u of de `NSFaceIDUsageDescription` info.plist-sleutel is geconfigureerd met een standaardbericht. Dit is vereist om gebruikers in iOS te laten weten hoe de app Face ID gaat gebruiken. Met een beleidsinstelling voor de beveiliging van een Intune-app kan Face ID worden gebruikt als methode voor toegang tot apps wanneer deze instelling is geconfigureerd door de IT-beheerder.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure Active Directory Authentication Library (ADAL) configureren
 

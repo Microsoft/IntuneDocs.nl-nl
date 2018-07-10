@@ -1,12 +1,11 @@
 ---
-title: Aan de slag met beleidsregels in Microsoft Intune
-titlesuffix: ''
-description: Maak beleidsregels om bedrijfsgegevens te beschermen en de apparaten te beheren die eindgebruikers gebruiken om toegang te krijgen tot bedrijfsbronnen.
+title: Aan de slag met beleid in Microsoft Intune - Azure | Microsoft Docs
+description: Maak beleidsregels om bedrijfsgegevens te beschermen en de apparaten te beheren die eindgebruikers gebruiken om toegang te krijgen tot bedrijfsbronnen. Wijs het beleid vervolgens toe aan groepen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 06/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,26 +14,27 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8bffd0435988cc59c5c0e4d754b861729d466ae
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: d7fa1b596a1800971919cfc0ab3e94d2d16ec328
+ms.sourcegitcommit: afda8a0fc0f615e976b18ddddf81d56d7ae3566e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36271521"
 ---
 # <a name="get-started-with-creating-policies"></a>Aan de slag met het maken van beleidsregels
 
-Eén van de belangrijkste doelen wanneer u aan de slag gaat met Intune is de registratie van apparaten, om ervoor te zorgen dat deze voldoen aan het bedrijfsbeleid. Nalevingsbeleid is niet alleen handig bij het beheren van gespecialiseerde apparaattypen, zoals kiosken in bedrijfseigendom, maar ook van persoonlijke apparaten (BYOD), tablets en apparaten zonder gebruiker.
+Intune-beleidsregels zijn een uitstekende manier om apparaten in te schrijven en ervoor te zorgen dat ze voldoen aan uw bedrijfsbeleid. Nalevingsbeleid is handig om gespecialiseerde apparaattypen te beheren, zoals kiosken in bedrijfseigendom en persoonlijke apparaten (BYOD), tablets en apparaten zonder gebruiker.
 
 ![Dashboard voor compatibiliteit met weinig gegevens](/intune/media/generic-compliance-dashboard.png)
 
-Beheer mobiele apparaten in de volgende gebieden met nalevingsbeleid:
+Mobiele apparaten kunnen worden beheerd met nalevingsbeleid, met inbegrip van:
 
-* Reguleren van het aantal apparaten dat een gebruiker inschrijft
-* Apparaatinstellingen beheren (zoals versleuteling op apparaatniveau, wachtwoordlengte en cameragebruik)
-* Het leveren van apps, e-mailprofielen, VPN-profielen, enzovoort.
+* Reguleren van het aantal apparaten dat een gebruiker in Intune inschrijft
+* Beheren van apparaatinstellingen, zoals versleuteling op apparaatniveau, wachtwoordlengte en cameragebruik
+* Leveren van apps, e-mailprofielen, VPN-profielen en meer
 * Evalueren van criteria op apparaatniveau op naleving van beveiligingsbeleid
 
-U stelt voor elk platform afzonderlijk nalevingsbeleid op. In dit voorbeeld hebben we gekozen voor iOS. De volgende beleidsregels zijn beschikbaar voor iOS-apparaten:
+Nalevingsbeleid wordt gemaakt voor elk platform, zoals iOS, Android, Windows en meer. Gebruik iOS voor deze oefening. De volgende beleidsregels zijn beschikbaar voor iOS-apparaten:
 
 * Configuratie van de pincode of het wachtwoord
 * Apparaatversleuteling
@@ -43,18 +43,30 @@ U stelt voor elk platform afzonderlijk nalevingsbeleid op. In dit voorbeeld hebb
 * Minimale versie van het besturingssysteem
 * Maximale versie van het besturingssysteem
 
-__Hoe maak ik een beleid?__
+## <a name="create-a-policy"></a>Een beleid maken
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Selecteer **Apparaatnaleving**.
-4. Selecteer **Beleidsregels** in het deelvenster **Apparaatnaleving**.
-5. Selecteer **Beleid maken** en geef de details op, zoals waarden voor **Naam** en **Beschrijving**. 
-6. Kies **iOS** bij **Platform**.
-6. Ga naar **Instellingen**, selecteer **Systeembeveiliging** en zet **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten** op **Vereisen**. U kunt ook andere regels instellen, zoals **Minimale wachtwoordlengte**, **Vereist wachtwoordtype** en **Het minimumaantal niet-alfanumerieke tekens in een wachtwoord**. Als u tevreden bent over het beleid, selecteert u **OK**.
-7. Ga terug naar het deelvenster **Beleid maken** en selecteer **Maken**.
-8. Als het beleid is gemaakt, selecteert u **Toewijzingen** om het beleid toe te wijzen aan uw testgroep. Selecteer de testgroep (deze moet uw testgebruiker bevatten) en wijs het beleid toe aan die groep door op **Opslaan** te klikken.
-9. Als het goed is, verschijnt er na een paar minuten een bericht met het verzoek om een nieuw wachtwoord in te stellen voor het apparaat om te blijven voldoen aan het bedrijfsbeleid. U kunt dit ook handmatig controleren in de **bedrijfsportal-app voor iOS** door op de naam van het apparaat te tikken en vervolgens op de knop **Synchroniseren**.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+3. Selecteer **Apparaatcompatibiliteit** > **Beleid** > **Beleid maken**.
+4. Voer een **beleidsnaam** en een **beschrijving** in. 
+5. Selecteer bij **Platform** de optie **iOS**.
+6. Ga naar **Instellingen**, selecteer **Systeembeveiliging** en stel **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten** in op **Vereisen**. 
+
+    U kunt ook andere regels instellen, zoals: 
+    - **Minimale wachtwoordlengte**
+    - **Vereist wachtwoordtype**
+    - **Het aantal niet-alfanumerieke tekens in het wachtwoord**
+    
+    Wanneer u klaar bent met het instellen van het beleid, selecteert u **OK**.
+  
+7. Ga terug naar **Beleid maken** en selecteer **Maken**. Met deze stap maakt u het beleid en geeft u dit beleid weer in **Apparaatcompatibiliteit** > **Beleid**.
+8. Selecteer het nieuwe beleid en kies **Toewijzingen**. U kunt Azure Active Directory-beveiligingsgroepen (AD) opnemen of uitsluiten.
+Kies Geselecteerde groepen om uw bestaande Azure AD-beveiligingsgroepen te zien. Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen en kies **Opslaan** om het beleid te implementeren op gebruikers.
+
+Om te voldoen aan het nieuwe bedrijfsbeleid, wordt u op het ingeschreven apparaat na een paar minuten gevraagd om een bijgewerkt wachtwoord. U kunt handmatig controleren op de update in de **Bedrijfsportal-app voor iOS**. Open de Bedrijfsportal-app, selecteer de naam van het apparaat en selecteer vervolgens **Sync**.
+
+> [!NOTE]
+> Het kan maximaal acht uur duren voordat nieuw beleid dat is toegepast op een dynamische apparaatgroep wordt toegepast op alle apparaten in de groep.
 
 ## <a name="next-steps"></a>Volgende stappen
 

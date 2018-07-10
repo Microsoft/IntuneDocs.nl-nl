@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b810a9dd783f59e778f3ffcb40da8fa52acf70ff
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803819"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>iOS-apparaatbeperkingsinstellingen in Microsoft Intune
 
@@ -97,7 +98,7 @@ De supervisiemodus voor iOS kan alleen worden ingeschakeld tijdens de initiële 
     -   **Vereist wachtwoordtype**: hiermee geeft u het type wachtwoord op dat is vereist, zoals alleen numeriek of alfanumeriek.
     -   **Het minimumaantal niet-alfanumerieke tekens in een wachtwoord**: hiermee geeft u het aantal symbooltekens (zoals **#** of **@**) op dat het wachtwoord moet bevatten.
     -   **Minimale wachtwoordlengte**: hiermee geeft u het minimum aantal tekens op voor het wachtwoord.
-    -   **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: hiermee geeft u het aantal mislukte aanmeldingspogingen op dat is toegestaan voordat het apparaat wordt gewist.
+    -   **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: hiermee geeft u het aantal unieke mislukte wachtwoordpogingen op dat is toegestaan voordat het apparaat wordt gewist.
     -   **Maximum aantal minuten waarna een wachtwoord voor het vergrendelde scherm is vereist** <sup>1</sup>: hiermee geeft u op hoelang het apparaat inactief moet zijn voordat gebruikers hun wachtwoord opnieuw moeten invoeren.
     -   **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**<sup>1</sup>: hiermee geeft u het aantal minuten op waarna het apparaatscherm wordt uitgeschakeld.
     -   **Wachtwoord verloopt (dagen)**: hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.

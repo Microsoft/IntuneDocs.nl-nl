@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/04/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5441bb15d6906257432afbfe51fffc6c11a6324
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
+ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745023"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36297902"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -36,12 +36,16 @@ In dit artikel leest u hoe u uw infrastructuur kunt configureren en vervolgens S
 - **NDES-Server**: op een server waarop Windows Server 2012 R2 of hoger wordt uitgevoerd, moet u de Registratieservice voor netwerkapparaten (NDES) instellen. Intune biedt geen ondersteuning voor het gebruik van NDES wanneer dit wordt uitgevoerd op een server waarop ook de CA voor ondernemingen wordt uitgevoerd. Zie [Richtlijnen voor Registratieservice voor netwerkapparaten](http://technet.microsoft.com/library/hh831498.aspx) voor instructies over hoe u Windows Server 2012 R2 configureert om als host voor de Registratieservice voor netwerkapparaten te dienen.
 De NDES-server moet worden toegevoegd aan het domein dat de CA host en mag zich niet op dezelfde server als de CA bevinden. Meer informatie over het implementeren van de NDES-server in een afzonderlijke forest, een geïsoleerd netwerk of een intern domein vindt u in [Een beleidsmodule gebruiken met de registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune-certificaatconnector**: u kunt de Azure-portal gebruiken om het installatieprogramma voor de **Certificaatconnector** (**ndesconnectorssetup.exe**) te downloaden. Vervolgens kunt u **ndesconnectorssetup.exe** uitvoeren op de server waarop de NDES-rol (Registratieservice voor netwerkapparaten) wordt uitgevoerd waar u de certificaatconnector wilt installeren. 
+- **Microsoft Intune-certificaatconnector**: u kunt Azure Portal gebruiken om het installatieprogramma voor de **Certificaatconnector** (**NDESConnectorSetup.exe**) te downloaden. Vervolgens kunt u **NDESConnectorSetup.exe** uitvoeren op de server waarop de NDES-rol (Registratieservice voor netwerkapparaten) wordt uitgevoerd waar u de certificaatconnector wilt installeren.
+
+  - De NDES-certificaatconnector ondersteunt ook de Federal Information Processing Standard-modus (FIPS). FIPS is niet vereist, maar u kunt certificaten uitgeven en intrekken wanneer deze modus is ingeschakeld.
+
 - **Webtoepassingsproxyserver** (optioneel): u kunt een server met Windows Server 2012 R2 of hoger gebruiken als webtoepassingsproxyserver (WAP-server). Deze configuratie:
-  -  Maakt het mogelijk dat apparaten certificaten ontvangen met een internetverbinding.
-  -  Is een beveiligingsaanbeveling wanneer apparaten via internet verbinding maken om certificaten te ontvangen en te verlengen.
+  - Maakt het mogelijk dat apparaten certificaten ontvangen met een internetverbinding.
+  - Is een beveiligingsaanbeveling wanneer apparaten via internet verbinding maken om certificaten te ontvangen en te verlengen.
 
 #### <a name="additional"></a>Aanvullende informatie
+
 - De server die als host voor WAP fungeert, [moet een update installeren](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) waarmee ondersteuning wordt geboden voor de lange URL's die worden gebruikt door de Network Device Enrollment Service. Deze update is opgenomen in het [updatepakket van december 2014](http://support.microsoft.com/kb/3013769)en is afzonderlijk verkrijgbaar in [KB3011135](http://support.microsoft.com/kb/3011135).
 - De WAP-server moet een SSL-certificaat hebben dat overeenkomt met de naam zoals die voor externe clients wordt gepubliceerd en het SSL-certificaat vertrouwen dat op de NDES-server wordt gebruikt. De WAP-server kan met deze certificaten de SSL-verbinding van clients beëindigen en een nieuwe SSL-verbinding naar de NDES-server maken.
 
@@ -71,17 +75,7 @@ Het is raadzaam de NDES-server te publiceren via een proxy, zoals de [Azure AD-t
 |**NDES-serviceaccount**|Voer een domeingebruikersaccount in dat u als NDES-serviceaccount gaat gebruiken.|
 
 ## <a name="configure-your-infrastructure"></a>Uw infrastructuur configureren
-Voordat u certificaatprofielen kunt configureren, moet u de volgende taken uitvoeren. Voor deze taken is kennis nodig van Windows Server 2012 R2 en Active Directory Certificate Services (ADCS):
-
-**Stap 1**: een NDES-serviceaccount maken
-
-**Stap 2**: certificaatsjablonen configureren op de certificeringsinstantie
-
-**Stap 3**: vereisten configureren op de NDES-server
-
-**Stap 4**: NDES configureren voor gebruik met Intune
-
-**Stap 5**: de Intune-certificaatconnector inschakelen, installeren en configureren
+Voordat u certificaatprofielen kunt configureren, moet u de volgende stappen uitvoeren. Voor deze stappen is kennis nodig van Windows Server 2012 R2 en hoger en Active Directory Certificate Services (ADCS):
 
 #### <a name="step-1---create-an-ndes-service-account"></a>Stap 1: een NDES-serviceaccount maken
 
@@ -226,7 +220,6 @@ In deze taak:
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimaal) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimaal) |
 
-
 4. Selecteer in IIS-beheer **Standaardwebsite** > **Aanvraagfiltering** > **Functie-instelling bewerken**. Vervang de **maximale URL-lengte** en **maximale queryreeks** door *65534*, zoals weergegeven:
 
     ![Maximale lengte van de URL's en query's van IIS](./media/SCEP_IIS_max_URL.png)
@@ -291,13 +284,17 @@ In deze taak:
 - Download, installeer en configureer de certificaatconnector op de server waarop de NDES-rol (Registratieservice voor netwerkapparaten) wordt uitgevoerd/server in uw omgeving. Als u de schaal van de NDES-implementatie in uw organisatie wilt vergroten, kunt u op elke NDES-server meerdere NDES-servers met een certificaatconnector van Microsoft Intune installeren.
 
 ##### <a name="download-install-and-configure-the-certificate-connector"></a>De certificaatconnector downloaden, installeren en configureren
+
 ![ConnectorDownload](./media/certificates-download-connector.png)
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
 3. Selecteer **Apparaatconfiguratie** en vervolgens **Certificeringsinstantie**.
 4. Selecteer **Toevoegen** en **Connectorbestand downloaden**. Sla het bestand op in een locatie waar u het kunt openen vanaf de server waarop u de connector gaat installeren.
-5. Nadat het downloaden is voltooid, voert u het gedownloade installatieprogramma (**ndesconnectorssetup.exe**) uit op server waarop de NDES-rol (Registratieservice voor netwerkapparaten) wordt uitgevoerd. Het installatieprogramma installeert ook de beleidsmodule voor NDES en de CRP-webservice. (De CRP-webservice, CertificateRegistrationSvc, wordt als een toepassing in IIS uitgevoerd.)
+5. Nadat het downloaden is voltooid, gaat u naar de server waarop de NDES-rol (Registratieservice voor netwerkapparaten) wordt uitgevoerd. Vervolgens:
+
+    1. Controleer of .NET 4.5 Framework is geïnstalleerd. Dit wordt vereist door de NDES-certificaatconnector. .NET Framework 4.5 wordt automatisch geïnstalleerd met Windows Server 2012 R2 en nieuwere versies.
+    2. Voer het installatieprogramma uit (**NDESConnectorSetup.exe**). Het installatieprogramma installeert ook de beleidsmodule voor NDES en de CRP-webservice. De CRP-webservice, CertificateRegistrationSvc, wordt als een toepassing in IIS uitgevoerd.
 
     > [!NOTE]
     > Wanneer u NDES installeert en Intune zelfstandig wordt gebruikt, wordt de CRP-service automatisch met de certificaatconnector geïnstalleerd. Wanneer u Intune met Configuration Manager gebruikt, installeert u het certificaatregistratiepunt als een afzonderlijke sitesysteemfunctie.
@@ -305,7 +302,7 @@ In deze taak:
 6. Als naar het clientcertificaat voor de certificaatconnector wordt gevraagd, kiest u **Selecteren**en selecteert u het certificaat voor **clientverificatie** dat u in Taak 3 op uw NDES-server hebt geïnstalleerd.
 
     Nadat u het certificaat voor clientverificatie hebt geselecteerd, keert u terug naar het oppervlak **Clientcertificaat voor Microsoft Intune-certificaatconnector** . Hoewel het geselecteerde certificaat niet wordt weergegeven, selecteert u **Volgende** om de eigenschappen van dat certificaat weer te geven. Selecteer **Volgende** en vervolgens **Installeren**.
-    
+
     > [!IMPORTANT]
     > De Intune Certificate Connector kan niet worden geregistreerd op een apparaat waarop Verbeterde beveiliging van Internet Explorer is ingeschakeld. [Schakel Verbeterde beveiliging van Internet Explorer uit](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx) als u de Intune Certificate Connector wilt gebruiken.
 
@@ -335,10 +332,13 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 
 `http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`
 
+> [!NOTE]
+> TLS 1.2-ondersteuning wordt geleverd met de NDES-certificaatconnector. Als de server met daarop de NDES-certificaatconnector TLS 1.2 ondersteunt, wordt TLS 1.2 gebruikt. Als de server TLS 1.2 niet ondersteunt, wordt TLS 1.1 gebruikt. Momenteel wordt TLS 1.1 gebruikt voor verificatie tussen de apparaten en de server.
+
 ## <a name="create-a-scep-certificate-profile"></a>Een SCEP-certificaatprofiel maken
 
 1. Open Microsoft Intune in Azure Portal.
-2. Selecteer **Apparaatconfiguratie**, selecteer **Profielen** en selecteer vervolgens **Profiel maken**.
+2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 3. Voer een **naam** en een **beschrijving** in voor het SCEP-certificaatprofiel.
 4. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform voor dit SCEP-certificaat. Op dit moment kunt u een van de volgende platforms selecteren voor apparaatbeperkingsinstellingen:
    - **Android**
@@ -406,12 +406,16 @@ Overweeg het volgende voordat u certificaatprofielen aan groepen toewijst:
 
     > [!NOTE]
     > In iOS worden als het goed is meerdere exemplaren van het certificaat weergegeven in het beheerprofiel als u meerdere resourceprofielen hebt geïmplementeerd die hetzelfde certificaatprofiel gebruiken.
-    
+
 Zie [Apparaatprofielen toewijzen](device-profile-assign.md) voor informatie over het toewijzen van apparaatprofielen.
+
+## <a name="intune-connector-setup-verification-and-troubleshooting"></a>Configuratie van Intune-connector controleren en problemen oplossen
+
+Zie [Scriptvoorbeelden certificeringsinstantie](https://aka.ms/intuneconnectorverificationscript) om problemen op te lossen en de configuratie van Intune-connector te controleren
 
 ## <a name="intune-connector-events-and-diagnostic-codes"></a>Gebeurtenissen en diagnostische codes van de Intune-connector
 
-Vanaf versie 6.1803.x.x legt de Intune-connectorservice gebeurtenissen vast in de **Logboeken** (**Logboeken voor toepassingen en services** > **Microsoft Intune-connector**). Gebruik deze gebeurtenissen om potentiële problemen in de configuratie van de Intune-connector op te lossen. Deze gebeurtenissen leggen de successen en mislukkingen van een bewerking vast, en bevatten ook diagnostische codes met berichten zodat de IT-beheerder problemen kan oplossen.
+Vanaf versie 6.1806.x.x legt de Intune-connectorservice gebeurtenissen vast in de **Logboeken** (**Logboeken voor toepassingen en services** > **Microsoft Intune-connector**). Gebruik deze gebeurtenissen om potentiële problemen in de configuratie van de Intune-connector op te lossen. Deze gebeurtenissen leggen de successen en mislukkingen van een bewerking vast, en bevatten ook diagnostische codes met berichten zodat de IT-beheerder problemen kan oplossen.
 
 ### <a name="event-ids-and-descriptions"></a>Gebeurtenis-id's en beschrijvingen
 
@@ -430,10 +434,10 @@ Vanaf versie 6.1803.x.x legt de Intune-connectorservice gebeurtenissen vast in d
 | 20102 | PkcsCertIssue_Failure  | Uitgifte van een PKCS-certificaat is mislukt. Bekijk de gebeurtenisdetails voor de apparaat-id, gebruikers-id, CA-naam, certificaatsjabloonnaam en certificaatvingerafdruk die betrekking hebben op deze gebeurtenis. | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
 | 20200 | RevokeCert_Success  | Het certificaat is ingetrokken. Bekijk de gebeurtenisdetails voor de apparaat-id, gebruikers-id, CA-naam en certificaatserienummer die betrekking hebben op deze gebeurtenis. | 0x00000000, 0x0FFFFFFF |
 | 20202 | RevokeCert_Failure | Kan het certificaat niet verwijderen. Bekijk de gebeurtenisdetails voor de apparaat-id, gebruikers-id, CA-naam en certificaatserienummer die betrekking hebben op deze gebeurtenis. Zie de NDES SVC-logboeken voor meer informatie.   | 0x00000000, 0x00000402, 0x0FFFFFFF |
-| 20300 | Download_Success | Aanvraag om een certificaat te ondertekenen, een clientcertificaat te downloaden of een certificaat in te trekken, is gedownload. Bekijk de gebeurtenisdetails voor de downloaddetails.  | 0x00000000, 0x0FFFFFFF |
-| 20302 | Download_Failure | Aanvraag om een certificaat te ondertekenen, een clientcertificaat te downloaden of een certificaat in te trekken, is niet gedownload. Bekijk de gebeurtenisdetails voor de downloaddetails. | 0x00000000, 0x0FFFFFFF |
-| 20400 | Upload_Success | De aanvraag- of intrekkingsgegevens van het certificaat zijn geüpload. Bekijk de gebeurtenisdetails voor de uploaddetails. | 0x00000000, 0x0FFFFFFF |
-| 20402 | Upload_Failure | De aanvraag- of intrekkingsgegevens van het certificaat zijn niet geüpload. Bekijk de gebeurtenisdetails > Uploadstatus om de fout te bepalen.| 0x00000000, 0x0FFFFFFF |
+| 20300 | Upload_Success | De aanvraag- of intrekkingsgegevens van het certificaat zijn geüpload. Bekijk de gebeurtenisdetails voor de uploaddetails. | 0x00000000, 0x0FFFFFFF |
+| 20302 | Upload_Failure | De aanvraag- of intrekkingsgegevens van het certificaat zijn niet geüpload. Bekijk de gebeurtenisdetails > Uploadstatus om de fout te bepalen.| 0x00000000, 0x0FFFFFFF |
+| 20400 | Download_Success | Aanvraag om een certificaat te ondertekenen, een clientcertificaat te downloaden of een certificaat in te trekken, is gedownload. Bekijk de gebeurtenisdetails voor de downloaddetails.  | 0x00000000, 0x0FFFFFFF |
+| 20402 | Download_Failure | Aanvraag om een certificaat te ondertekenen, een clientcertificaat te downloaden of een certificaat in te trekken, is niet gedownload. Bekijk de gebeurtenisdetails voor de downloaddetails. | 0x00000000, 0x0FFFFFFF |
 | 20500 | CRPVerifyMetric_Success  | Certificaatregistratiepunt heeft een clientverificatievraag geverifieerd | 0x00000000, 0x0FFFFFFF |
 | 20501 | CRPVerifyMetric_Warning  | Certificaatregistratiepunt heeft de aanvraag voltooid maar geweigerd. Zie de diagnostische code en het bericht voor meer informatie. | 0x00000000, 0x00000411, 0x0FFFFFFF |
 | 20502 | CRPVerifyMetric_Failure  | Certificaatregistratiepunt heeft een clientverificatievraag niet geverifieerd. Zie de diagnostische code en het bericht voor meer informatie. Zie de details van het gebeurtenisbericht voor de apparaat-id die overeenkomt met de verificatievraag. | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |

@@ -5,19 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 5/20/2018
+ms.date: 6/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fd63fb2023b4712a3ad49838f87f5b7cc8320954
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
+ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744887"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822718"
 ---
 # <a name="manage-software-updates-in-intune"></a>Software-updates beheren in Intune
 
@@ -157,7 +157,7 @@ U kunt bijvoorbeeld de volgende waarden gebruiken in **OMA-URI-instelling toevoe
 > Zie [DMClient configuratieserviceprovider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp) voor meer informatie over MS DM Server.
 
 ## <a name="pause-updates"></a>Updates onderbreken
-U kunt het ontvangen van upgrades voor onderdelen of kwaliteitsupdates op een apparaat onderbreken gedurende een periode van maximaal 35 dagen vanaf het moment waarop u de updates onderbreekt. Als het maximum aantal dagen is verstreken, verloopt de functionaliteit voor onderbreken automatisch en zoekt het apparaat in Windows-Updates naar toepasselijke updates. Na deze scan kunt u de updates opnieuw onderbreken.
+U kunt het ontvangen van upgrades voor onderdelen of kwaliteitsupdates op een apparaat onderbreken gedurende een periode van maximaal 35 dagen vanaf het moment waarop u de updates onderbreekt. Als het maximum aantal dagen is verstreken, verloopt de functionaliteit voor onderbreken automatisch en zoekt het apparaat in Windows Update naar toepasselijke updates. Na deze scan kunt u de updates opnieuw onderbreken.
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
@@ -169,10 +169,13 @@ U kunt het ontvangen van upgrades voor onderdelen of kwaliteitsupdates op een ap
 > Als het betreffende apparaat is uitgeschakeld wanneer u de opdracht voor onderbreken opgeeft, kan dit apparaat, wanneer het wordt ingeschakeld, geplande updates downloaden en installeren voordat er bij Intune wordt gecontroleerd op nieuwe updates.
 
 ### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>De nieuwste versie van software-updates voor Windows 10 verwijderen 
-Indien u een probleem ontdekt op uw Windows 10-computers, dan kunt u de meest recente functie-update of de nieuwste kwaliteitsupdate verwijderen (terugdraaien). U kunt alleen een functie- of kwaliteitsupdate verwijderen voor het servicekanaal waarop het apparaat zich bevindt. Door de verwijdering wordt een beleid geactiveerd dat de vorige update op uw Windows 10-computers herstelt. Specifiek voor functie-updates kunt u de tijd beperken van 2 tot 60 dagen waarin een verwijdering van de meest recente versie kan worden toegepast. Als u verwijderopties voor software-update wilt instellen, selecteert u **Software-updates** in de blade **Microsoft Intune** binnen Azure Portal. Kies vervolgens **Windows 10 Update Rings** op de blade **Software-updates**. U kunt vervolgens de optie **Verwijderen** kiezen in de sectie **Overzicht**.
+Indien u een probleem ontdekt op uw Windows 10-computers, dan kunt u de meest recente functie-update of de nieuwste kwaliteitsupdate verwijderen (terugdraaien). U kunt alleen een functie- of kwaliteitsupdate verwijderen voor het servicekanaal waarop het apparaat zich bevindt. Door de verwijdering wordt een beleid geactiveerd waarmee de vorige update op uw Windows 10-computers wordt hersteld. Specifiek voor functie-updates kunt u de tijd beperken van 2 tot 60 dagen waarin een verwijdering van de meest recente versie kan worden toegepast. Verwijderopties voor software-updates instellen:
+
+1. Selecteer **Software-updates** in Intune.
+2. Selecteer **Windows 10-update-ringen** > selecteer een bestaande update-ring > **Verwijderen**.
 
 > [!NOTE]
-> Wanneer de kwaliteitsupdate is teruggedraaid, kunnen eindgebruikers op Windows 10-computers de teruggedraaide update nog wel zien door **Windows-instellingen** > **Updates** > **Geschiedenis van updates** te selecteren.
+> Op Windows 10-computers blijven gebruikers, nadat de kwaliteitsupdate is teruggedraaid, de update wel zien in **Windows-instellingen** > **Updates** > **Geschiedenis van updates**.
 
 ## <a name="windows-holographic-for-business-support"></a>Ondersteuning voor Windows Holographic for Business
 

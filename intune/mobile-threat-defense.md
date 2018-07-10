@@ -15,12 +15,12 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d840bf62682621e4ec3848538a96066c0fd228fe
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 8c8fa146f01caae08f35ae824563ceb328c9d7f4
+ms.sourcegitcommit: 7daa778b3a5adb41acfe23495cb63754afda1c58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046261"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37123398"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Wat is Mobile Threat Defense-integratie met Intune?
 
@@ -41,10 +41,12 @@ Als bijvoorbeeld een verbonden Mobile Threat Defense-app aan de Mobile Threat De
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Welke gegevens worden door Intune verzameld voor Mobile Threat Defense?
 
-Intune verzamelt informatie over de app-inventaris van apparaten in zowel privé- als bedrijfseigendom en maakt deze informatie beschikbaar voor MTD-providers om op te halen, zoals Lookout for Work. U kunt de app-inventaris verzamelen van gebruikers van iOS 11+-apparaten.
+Als deze optie is ingeschakeld, verzamelt Intune informatie over de app-inventaris van apparaten in zowel privé- als bedrijfseigendom en maakt Intune deze informatie beschikbaar voor MTD-providers om op te halen, zoals Lookout for Work. U kunt de app-inventaris verzamelen van gebruikers van iOS-apparaten.
+
+Deze service is opt-in; er wordt standaard geen informatie over app-inventaris gedeeld. Een Intune-beheerder moet App Sync voor iOS-apparaten inschakelen in de service-instellingen voordat informatie over app-inventaris wordt gedeeld.
 
 **App-inventaris**  
-Inventarissen van iOS 11 +-apparaten in zowel bedrijfs- en privé-eigendom worden verzonden naar uw MTD-serviceprovider. Gegevens in de app-inventarisatie bestaan onder andere uit:
+Als u App Sync voor iOS-apparaten inschakelt, worden inventarissen van iOS-apparaten in zowel bedrijfs- en privé-eigendom verzonden naar uw MTD-serviceprovider. Gegevens in de app-inventarisatie bestaan onder andere uit:
 
  - App-id
  - App-versie
@@ -52,8 +54,8 @@ Inventarissen van iOS 11 +-apparaten in zowel bedrijfs- en privé-eigendom worde
  - App-naam
  - Grootte van de App-bundel
  - Dynamische grootte van de App
- - App is wel of niet gevalideerd
- - App is wel of niet beheerd
+ - Of de app wel of niet is gevalideerd
+ - Of de app wel of niet wordt beheerd
 
 ## <a name="sample-scenarios"></a>Voorbeeldscenario's
 
@@ -76,3 +78,4 @@ Meer informatie over het beveiligen van de toegang tot bedrijfsresources op basi
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
+- [Pradeo](pradeo-mobile-threat-defense-connector.md)

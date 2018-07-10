@@ -5,7 +5,7 @@ keywords: SDK, Xamarin, intune
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 03/19/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5c9f81761e7e24393471f44da4cf619f017e9bbd
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: f8f5e397c314088c7b26edba486f9cbaf9718096
+ms.sourcegitcommit: 1eddded65ae9e442dd3bebd16b9428af76a67f34
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/09/2018
+ms.locfileid: "35250941"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -73,6 +74,9 @@ Controleer de [licentievoorwaarden](https://github.com/msintuneappsdk/intune-app
       ```csharp
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
+      
+> [!NOTE] 
+> Er is geen remapper voor iOS. De integratie in een Xamarin.Forms-app zou hetzelfde moeten zijn als voor een gewoon Xamarin.iOS-project. 
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Intune App-beveiligingsbeleid inschakelen in uw mobiele Android-app
 
@@ -102,6 +106,7 @@ Controleer de [licentievoorwaarden](https://github.com/msintuneappsdk/intune-app
 
 > [!NOTE]
 > Omdat er met deze bewerking een afhankelijkheid wordt herschreven die Visual Studio gebruikt voor automatische aanvulling met behulp van Intellisense, moet u Visual Studio mogelijk opnieuw opstarten nadat de remapper voor de eerste keer wordt uitgevoerd, om ervoor te zorgen dat Intellisense de wijzigingen herkent. 
+
 
 ## <a name="support"></a>Support
 

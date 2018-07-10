@@ -1,54 +1,54 @@
 ---
-title: Nalevingsbeleid voor apparaten van Microsoft Intune bewaken
-titlesuffix: ''
+title: Nalevingsbeleid voor apparaten bewaken in Microsoft Intune - Azure | Microsoft Docs
 description: Gebruik het apparaatnalevingsdashboard om de algehele apparaatnaleving te bewaken, rapporten te bekijken en de apparaatnaleving per beleidsregel en per instelling te bekijken.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 2/27/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c4c3c3a2d73c6390ef5761f1bd0b12fe55855c6e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 33e42c821881a5cc7eb9e4be65f6f7e56263480e
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831868"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232967"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
 Nalevingsrapporten helpen beheerders het nalevingspostuur van apparaten in hun organisatie te analyseren en snel de door gebruikers binnen hun organisatie aangetroffen problemen met naleving op te lossen. U kunt informatie weergeven over de algemene nalevingsstatus van apparaten, de nalevingsstatus voor een specifieke instelling en de nalevingsstatus voor een specifiek beleid, en inzoomen op afzonderlijke apparaten om specifieke instellingen en beleidsregels die van invloed zijn op het apparaat weer te geven.
 
-> [!NOTE]
-> In de Intune-service van maart worden op basis van uw feedback een aantal verbeteringen voor de beveiliging geïntroduceerd. Afhankelijk van hoe uw nalevingsbeleid is geconfigureerd, moet u mogelijk actie ondernemen om te voorkomen dat uw eindgebruikers geen toegang meer krijgen tot e-mail. Zie [Verwachte beveiligingsverbeteringen](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) voor meer informatie.
-
 ## <a name="before-you-begin"></a>Voordat u begint
 
 Volg deze stappen om te zoeken naar het **Intune-dashboard voor apparaatnaleving** in Azure Portal:
 
-1.  Ga naar [Azure Portal](https://portal.azure.com) en meld u aan met uw Intune-referenties.
+1. Meld u in [Azure Portal](https://portal.azure.com) aan met uw Intune-referenties.
 
-2.  Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
+2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
 
-3.  Kies **Intune** &gt; **Apparaatnaleving** &gt; **Overzicht**. Het **Dashboard voor apparaatnaleving** wordt geopend.
+3. Selecteer **Apparaatnaleving** > **Overzicht**. Het **dashboard voor apparaatnaleving** wordt geopend.
 
 > [!IMPORTANT]
 > Apparaten moeten worden ingeschreven bij Intune om het nalevingsbeleid voor apparaten te ontvangen.
 
 ## <a name="device-compliance-dashboard"></a>Dashboard voor apparaatnaleving
 
-In het **dashboard voor apparaatnaleving** kunt u de status van het nalevingsbeleid van apparaten controleren. Het dashboard biedt verschillende rapporten in verschillende tegels met het nalevingspostuur van apparaten in uw organisatie. U kunt de volgende rapporten bekijken:
+In het **dashboard voor apparaatnaleving** kunt u de compatibiliteit van verschillende apparaten, hun beveiligingsstatus en meer bewaken. U kunt de volgende rapporten bekijken:
 
--   Cumulatieve algehele apparaatnaleving
+- Cumulatieve algehele apparaatnaleving
 
--   Apparaatnaleving per beleid
+- Apparaatnaleving per beleid
 
--   Apparaatnaleving per instelling
+- Apparaatnaleving per instelling
+
+- Status van de apparaatbeveiliging
+
+- Status van de dreigingsagent
 
 ![Afbeelding met het dashboard voor apparaatnaleving](./media/idc-1.png)
 
@@ -58,26 +58,26 @@ U kunt ook de specifieke nalevingsbeleidsregels en -instellingen bekijken die va
 
 Dit is een ringdiagram met de cumulatieve nalevingsstatus voor alle bij Intune ingeschreven apparaten. De nalevingsstatussen van een apparaat worden opgeslagen in twee verschillende databases, te weten Intune en Azure Active Directory. Hieronder vindt u meer informatie over de statussen van het nalevingsbeleid van het apparaat:
 
--   **Compatibel**: op het apparaat is een of meer nalevingsbeleidsinstellingen voor apparaten toegepast waarop de beheerder zich richt.
+- **Compatibel**: op het apparaat is een of meer nalevingsbeleidsinstellingen voor apparaten toegepast waarop de beheerder zich richt.
 
--   **Niet-compatibel:** op het apparaat is een of meer nalevingsbeleidsinstellingen niet toegepast waarop de beheerder zich richt, of de gebruiker voldoet niet aan de beleidsregels waarop de beheerder zich richt.
+- **Niet-compatibel:** op het apparaat is een of meer nalevingsbeleidsinstellingen niet toegepast waarop de beheerder zich richt, of de gebruiker voldoet niet aan de beleidsregels waarop de beheerder zich richt.
 
--   **In respijtperiode:** de beheerder heeft of meer nalevingsbeleidsinstellingen voor apparaten gericht op het apparaat, maar de gebruiker heeft het beleid nog niet toegepast, wat betekent dat het apparaat niet compatibel is, maar zich in de respijtperiode bevindt die door de beheerder is vastgesteld.
+- **In respijtperiode:** de beheerder heeft of meer nalevingsbeleidsinstellingen voor apparaten gericht op het apparaat, maar de gebruiker heeft het beleid nog niet toegepast, wat betekent dat het apparaat niet compatibel is, maar zich in de respijtperiode bevindt die door de beheerder is vastgesteld.
 
-    -   Meer informatie over Acties voor niet-compatibele apparaten.
+  - Meer informatie over Acties voor niet-compatibele apparaten.
 
--   **Het apparaat is niet gesynchroniseerd:** voor het apparaat is de nalevingsbeleidsstatus niet doorgegeven, om een van de volgende redenen:
+- **Het apparaat is niet gesynchroniseerd:** voor het apparaat is de nalevingsbeleidsstatus niet doorgegeven, om een van de volgende redenen:
 
-    -   **Onbekend**: het apparaat is offline of kan om andere redenen niet communiceren met Intune of Azure AD.
+  - **Onbekend**: het apparaat is offline of kan om andere redenen niet communiceren met Intune of Azure AD.
 
-    -   **Fout**: het apparaat kan niet communiceren met Intune en Azure AD en heeft een foutbericht met de reden ontvangen.
+  - **Fout**: het apparaat kan niet communiceren met Intune en Azure AD en heeft een foutbericht met de reden ontvangen.
 
 > [!IMPORTANT]
 > Apparaten die zijn ingeschreven bij Intune, maar waarop geen nalevingsbeleid voor apparaten is gericht, worden in dit rapport opgenomen onder de bucket **Compatibel**.
 
 #### <a name="drill-down-option"></a>Inzoomoptie
 
-Als u in het **dashboard voor apparaatnaleving** klikt op de tegel Apparaatnaleving, kunt u inzoomen op een specifieke **nalevingsstatus**, **e-mailalias van de gebruiker**, **apparaatmodel** en **locatie**  voor elk apparaat waarop het nalevingsbeleid voor apparaten is gericht.
+Selecteer in het **dashboard voor apparaatnaleving** een tegel voor apparaatnaleving om in te zoomen op een specifieke **nalevingsstatus**, **e-mailalias van de gebruiker**, **apparaatmodel** en **locatie**  voor elk apparaat waarop het nalevingsbeleid voor apparaten is gericht.
 
 ![Afbeelding ingezoomd op het dashboard voor apparaatnaleving](./media/idc-2.png)
 
@@ -91,43 +91,43 @@ U kunt ook op de afwijkende nalevingsstatus in de Apparaatnalevingsgrafiek klikk
 
 #### <a name="filter"></a>Filter
 
-Als u op de **knop Filteren** klikt, wordt het uitvoegfilter geopend met de volgende opties:
+Wanneer u de **knop Filteren** selecteert, wordt het uitvoegfilter geopend met de volgende opties:
 
--   Model
+- Model
 
-    -   Tekstvak waarin een vrije zoekreeks kan worden ingevoerd
-<br></br>
--   Platform
+  - Tekstvak waarin een vrije zoekreeks kan worden ingevoerd
 
-    -   Android
+- Platform
 
-    -   iOS
+  - Android
 
-    -   macOS
+  - iOS
 
-    -   Windows
+  - macOS
 
-    -   Windows Phone
+  - Windows
 
--   Status
+  - Windows Phone
 
-    -   Compliant
+- Status
 
-    -   Niet compatibel
+  - Compliant
 
-    -   In Respijtperiode
+  - Niet compatibel
 
-    -   Onbekend
+  - In Respijtperiode
 
-    -   Fout
+  - Onbekend
 
-Als u op de **knop Bijwerken** klikt, wordt het uitvoegfilter gesloten en worden resultaten bijgewerkt aan de hand van de geselecteerde filtercriteria.
+  - Fout
+
+Wanneer u de **knop Bijwerken** selecteert, wordt het uitvoegfilter gesloten en worden resultaten bijgewerkt aan de hand van de geselecteerde filtercriteria.
 
 ##### <a name="device-details"></a>Apparaatgegevens
 
-Als u op een apparaat klikt, wordt het deelvenster **Apparaten** geopend, met dat apparaat geselecteerd. Dit biedt meer informatie over de beleidsinstelling voor apparaatnaleving die op dat apparaat wordt toegepast.
+Wanneer u een apparaat selecteert, wordt **Apparaten** geopend met het apparaat geselecteerd. Hier vindt u gedetailleerde informatie over de nalevingsbeleidsinstelling die op het apparaat is toegepast.
 
-Wanneer u op het nalevingsbeleid voor apparaten zelf klikt, ziet u de naam van het nalevingsbeleid waaruit de nalevingsinstelling afkomstig waarop de beheerder zich richt.
+Wanneer u het nalevingsbeleid voor apparaten zelf selecteert, ziet u de naam van het nalevingsbeleid waaruit de nalevingsinstelling afkomstig is waarop de beheerder zich richt.
 
 ### <a name="devices-without-compliance-policy"></a>Apparaten zonder nalevingsbeleid
 In dit rapport worden de apparaten vermeld waaraan geen nalevingsbeleidsregels zijn toegewezen. Bij de introductie van de beveiligingsinstelling waarmee alle apparaten zonder nalevingsbeleid als Niet-compatibel worden gemarkeerd, is het belangrijk om deze apparaten te kunnen identificeren. Vervolgens kunt u hier ten minste één nalevingsbeleid aan toewijzen.
@@ -157,3 +157,10 @@ Met dit rapport kunt u per nalevingsinstelling het totale aantal apparaten in el
 ![Afbeelding met het rapport voor apparaatnaleving per instelling](./media/idc-10.png)
 
 Als u op de tegel Naleving van instelling klikt, en vervolgens klikt op een van de nalevingsbeleidsinstellingen voor apparaten, ziet u de **nalevingsstatus**, het **e-mailalias van de gebruiker**, het **apparaatmodel** en de **locatie** voor elk apparaat waarop die nalevingsbeleidsinstelling voor apparaten is gericht.
+
+## <a name="how-intune-resolves-policy-conflicts"></a>Hoe Intune beleidsconflicten oplost
+Conflicterende beleidsinstellingen kunnen zich voordoen wanneer er meerdere Intune-beleidsregels op een apparaat worden toegepast. Als de beleidsinstellingen elkaar overlappen, lost Intune de conflicten aan de hand van de volgende regels op:
+
+- Als de conflicterende instellingen uit een Intune-configuratiebeleid en een nalevingsbeleid voortkomen, hebben de instellingen in het nalevingsbeleid prioriteit boven de instellingen in het configuratiebeleid. Dit gebeurt zelfs als de instellingen in het configuratiebeleid veiliger zijn.
+
+- Als u meerdere nalevingsbeleidsregels hebt geïmplementeerd, wordt het veiligste beleid gebruikt.

@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7230f14ae9481555f457a8a8700d588c4170b39b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a48e43a024358b35c88014d2b4a05f2245f13a3f
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34449833"
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Uw Android-apparaat inschrijven bij Intune
 

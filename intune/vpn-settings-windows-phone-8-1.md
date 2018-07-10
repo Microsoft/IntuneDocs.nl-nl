@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3572022b491439d2cf624b2ed3f1d53ffaf54d7d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 3397c10ae572a248507f15e5145fef68898d30c4
+ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291441"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>VPN-instellingen in Microsoft Intune configureren voor apparaten met Windows Phone 8.1
 
@@ -56,7 +57,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de volg
 - **Rol** (alleen Pulse Secure): geef de naam op van de gebruikersrol die toegang tot deze verbinding heeft. Een gebruikersrol definieert persoonlijke instellingen en opties en schakelt bepaalde toegangsfuncties in of uit.
 - **Realm** (alleen Pulse Secure): geef de naam op van de verificatierealm die u wilt gebruiken. Een verificatierealm is een groepering van verificatieresources die worden gebruikt door het verbindingstype Pulse Secure.
 
-- **Zoeklijst voor DNS-achtervoegsels** - **Voeg** een of meer DNS-achtervoegsels toe. Elk DNS-achtervoegsel dat u opgeeft, wordt doorzocht wanneer met behulp van een korte naam verbinding met een website wordt gemaakt. U geeft bijvoorbeeld de DNS-achtervoegsels **domain1.contoso.com** en **domain2.contoso.com** op en gaat vervolgens naar de URL **http://mywebsite**. Vervolgens worden de URL’s **http://mywebsite.domain1.contoso.com** en **http://mywebsite.domain2.contoso.com gezocht**.
+- **Zoeklijst voor DNS-achtervoegsels** - **Voeg** een of meer DNS-achtervoegsels toe. Elk DNS-achtervoegsel dat u opgeeft, wordt doorzocht wanneer met behulp van een korte naam verbinding met een website wordt gemaakt. U geeft bijvoorbeeld de DNS-achtervoegsels **domain1.contoso.com** en **domain2.contoso.com** op en gaat vervolgens naar de URL `http://mywebsite`. Vervolgens worden de URL’s `http://mywebsite.domain1.contoso.com` en `http://mywebsite.domain2.contoso.com` gezocht.
 
 - **Aangepaste XML**: geef aangepaste XML-opdrachten op waarmee de VPN-verbinding wordt geconfigureerd.
 

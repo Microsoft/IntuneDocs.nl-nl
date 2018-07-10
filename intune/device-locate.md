@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 259cc7653f97cbb9e07ba681e142c62e42c5a124
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34444911"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Verloren of gestolen iOS-apparaten zoeken met Intune
 
@@ -45,7 +46,7 @@ Deze functie wordt niet ondersteund op de volgende systemen:
     ![Schermopname van Apparaat zoeken met behulp van Intune in Azure](./media/locate-device.png)
 
 >[!NOTE]
->De afstand die u op de kaart kunt inzoomen, is om privacyredenen beperkt.
+>De afstand die u op de kaart kunt inzoomen, is om privacyredenen beperkt tot een straal van 300 meter.
 
 ## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>Geluidssignaal voor de modus Apparaat verloren activeren op een iOS-apparaat
 
@@ -58,7 +59,7 @@ Het geluid wordt afgespeeld totdat de gebruiker het geluid uitschakelt op het ap
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>Beveiligings- en privacygegevens voor de modus Apparaat verloren en de actie Apparaat zoeken
 - Er wordt geen locatie-informatie over het apparaat verzonden naar Intune voordat u deze actie hebt ingeschakeld.
-- Wanneer u de actie Apparaat zoeken gebruikt, worden de lengte- en breedtegraadcoördinaten van het apparaat verzonden naar Intune en weergegeven in Azure Portal.
+- Wanneer u de actie Apparaat zoeken gebruikt, kunnen de lengte- en breedtegraadcoördinaten van het apparaat worden opgehaald met de Graph API.
 - De gegevens worden gedurende 24 uur opgeslagen, waarna ze worden verwijderd. U kunt de locatiegegevens niet handmatig verwijderen.
 - De locatiegegevens worden versleuteld terwijl ze zijn opgeslagen en terwijl ze worden verzonden.
 - Bij het configureren van de modus Apparaat verloren kunt u een bericht opstellen dat moet worden weergegeven op het vergrendelingsscherm. Zorg ervoor dat u in dit bericht specifieke informatie typt zodat de persoon die het apparaat vindt, weet wat er moet gebeuren om het apparaat te retourneren.

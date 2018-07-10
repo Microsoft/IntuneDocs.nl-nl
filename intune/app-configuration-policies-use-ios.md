@@ -3,10 +3,10 @@ title: App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
 titlesuffix: Microsoft Intune
 description: Informatie over het gebruiken van app-configuratiebeleidsregels om configuratiegegevens te leveren aan een iOS-app wanneer deze wordt uitgevoerd.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,25 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
+ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35232230"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-App-configuratiebeleidsregels gebruiken in Microsoft Intune om instellingen te leveren wanneer gebruikers een iOS-app uitvoeren. U wijst dit beleid niet rechtstreeks toe aan gebruikers en apparaten. In plaats daarvan koppelt u een beleid aan een app en wijst u vervolgens de app toe. De beleidsinstellingen worden gebruikt wanneer de app deze controleert, doorgaans bij de eerste keer dat de app wordt uitgevoerd.
+App-configuratiebeleidsregels gebruiken in Microsoft Intune om aangepaste configuratie-instellingen te leveren voor een iOS-app. Met deze configuratie-instellingen kan een app worden aangepast op basis van de leveranciersrichting. U krijgt deze configuratie-instellingen (sleutels en waarden) van de leverancier van de app. Als u de app wilt configureren, geeft u de instellingen op als sleutels en waarden, of als XML die de sleutels en waarden bevat. U wijst dit configuratiebeleid ook niet rechtstreeks toe aan gebruikers en apparaten. In plaats daarvan koppelt u een configuratiebeleid aan een app en wijst u vervolgens de app toe. De instellingen van het configuratiebeleid worden gebruikt wanneer de app deze controleert, doorgaans bij de eerste keer dat de app wordt uitgevoerd.
 
-U kunt een toepassingsconfiguratiebeleid toewijzen aan een groep gebruikers en apparaten met behulp van een combinatie van toewijzingen voor opnemen en uitsluiten. Zodra u een appconfiguratiebeleid hebt toegevoegd, kunt u de toewijzingen voor het appconfiguratiebeleid instellen. Wanner u de toewijzingen voor het beleid instelt, kunt u ervoor kiezen de groep gebruikers voor wie het beleid van toepassing is op te nemen of uit te sluiten. Als u ervoor kiest een of meer groepen op te nemen, kunt u specifieke groepen selecteren waarvoor u ingebouwde groepen wilt opnemen of selecteren. Ingebouwde groepen zijn **Alle gebruikers**, **Alle apparaten** en **Alle gebruikers + alle apparaten**. 
+Zodra u een appconfiguratiebeleid hebt toegevoegd, kunt u de toewijzingen voor het appconfiguratiebeleid instellen. Wanner u de toewijzingen voor het beleid instelt, kunt u ervoor kiezen de groep gebruikers voor wie het beleid van toepassing is op te nemen of uit te sluiten. Als u ervoor kiest een of meer groepen op te nemen, kunt u specifieke groepen selecteren waarvoor u ingebouwde groepen wilt opnemen of selecteren. Ingebouwde groepen zijn **Alle gebruikers**, **Alle apparaten** en **Alle gebruikers + alle apparaten**. 
 
 >[!NOTE]
 >Intune biedt vooraf gemaakte de groepen **Alle gebruikers** en **Alle apparaten** in de console met handige, ingebouwde optimalisaties. We raden u ten zeerste aan deze groepen te gebruiken om u op alle gebruikers en alle apparaten te richten in plaats van de groepen ‘Alle gebruikers’ en ‘Alle apparaten’ die u mogelijk zelf hebt gemaakt.
 
-Nadat u de opgenomen groepen hebt geselecteerd voor het configuratiebeleid van uw toepassing, kunt u de specifieke groepen selecteren die moeten worden uitgesloten.
+Nadat u de opgenomen groepen hebt geselecteerd voor het configuratiebeleid van uw toepassing, kunt u de specifieke groepen selecteren die moeten worden uitgesloten. Zie [App-toewijzingen opnemen en uitsluiten in Microsoft Intune](apps-inc-exl-assignments.md) voor meer informatie.
 
 > [!TIP]
 > Dit beleidstype is momenteel alleen beschikbaar voor apparaten met iOS 8.0 en hoger. Ondersteunt de volgende typen app-installaties:
@@ -49,18 +50,16 @@ Nadat u de opgenomen groepen hebt geselecteerd voor het configuratiebeleid van u
 3. Kies de workload **Mobiele apps**.
 4. Kies **App-configuratiebeleidsregels** in de groep **Beheren** en kies vervolgens **Toevoegen**.
 5. Stel de volgende details in:
-    - **Naam**<br>
-      De naam van het profiel die in Azure Portal wordt weergegeven.
-    - **Beschrijving**<br>
-      De beschrijving van het profiel die in Azure Portal wordt weergegeven.
-    - **Type apparaatinschrijving**<br>
-      Kies **Beheerde apparaten**.
+    - **Naam**: de naam van het profiel zoals deze in Azure Portal wordt weergegeven.
+    - **Beschrijving**: de beschrijving van het profiel dat wordt weergegeven in Azure Portal.
+    - **Type apparaatregistratie**: kies **Beheerde apparaten**.
 6. Selecteer **iOS** bij **Platform**.
 7.  Kies **Gekoppelde app**. Klik vervolgens in het deelvenster **Gekoppelde app** op de beheerde app waarop u de configuratie wilt toepassen. Selecteer **OK**.
 8.  Kies in het deelvenster **Configuratiebeleid toevoegen** de optie **Configuratie-instellingen**.
-9. Selecteer **Indeling van de configuratie-instellingen**. Selecteer vervolgens een van de volgende opties:
-    - **[Configuration Designer gebruiken](#use-configuration-designer)**
-    - **[XML-gegevens invoeren](#enter-xml-data)**
+9. Selecteer **Indeling van de configuratie-instellingen**. Selecteer een van de volgende om XML-gegevens toe te voegen:
+    - **Configuration Designer gebruiken**
+    - **XML-gegevens invoeren**<br></br>
+    Zie [Configuration Designer gebruiken](#use-configuration-designer) voor meer informatie over het gebruik van Configuration Designer. Zie [XML-gegevens invoeren](#enter-xml-data) voor meer informatie over het invoeren van XML-gegevens. 
 10. Nadat u uw XML-gegevens hebt toegevoegd, kiest u **OK** en vervolgens **Toevoegen** om het configuratiebeleid toe te voegen. Het overzichtsdeelvenster van het configuratiebeleid wordt weergegeven.
 11. Selecteer **Toewijzingen** om de opties voor opnemen en uitsluiten weer te geven. 
 
@@ -80,17 +79,14 @@ Nadat u de opgenomen groepen hebt geselecteerd voor het configuratiebeleid van u
 
 ## <a name="use-configuration-designer"></a>Configuration Designer gebruiken
 
-U kunt Configuration Designer gebruiken voor apps op apparaten die wel of niet zijn ingeschreven bij Intune. Met de ontwerper kunt u specifieke configuratiesleutels en -waarden instellen. U kunt tevens het gegevenstype voor elke waarde opgeven. Instellingen worden automatisch aan apps geleverd wanneer de app wordt geïnstalleerd.
+Microsoft Intune biedt configuratie-instellingen die uniek zijn voor een app. U kunt Configuration Designer gebruiken voor apps op apparaten die wel of niet zijn ingeschreven bij Microsoft Intune. Met de ontwerper kunt u specifieke configuratiesleutels en -waarden instellen waarmee u de onderliggende XML kunt maken. U kunt tevens het gegevenstype voor elke waarde opgeven. Deze instellingen worden automatisch aan apps geleverd wanneer de apps worden geïnstalleerd.
 
 ### <a name="add-a-setting"></a>Een instelling toevoegen
 
 1. Stel voor elke sleutel en waarde in de configuratie het volgende in:
-   - **Configuratiesleutel**<br>
-     De sleutel waarmee de specifieke instellingsconfiguratie wordt geïdentificeerd.
-   - **Waardetype**<br>
-     Het gegevenstype van de configuratiewaarde. Typen zijn onder meer geheel getal, reëel, tekenreeks of booleaans.
-   - **Configuratiewaarde**<br>
-     De waarde voor de configuratie.
+   - **Configuratiesleutel**: de sleutel waarmee de specifieke instellingsconfiguratie wordt geïdentificeerd.
+   - **Waardetype**: het gegevenstype van de configuratiewaarde. Typen zijn onder meer geheel getal, reëel, tekenreeks of booleaans.
+   - **Configuratiewaarde**: de waarde voor de configuratie.
 2. Kies **OK** om uw configuratiewaarden in te stellen.
 
 ### <a name="delete-a-setting"></a>Een instelling verwijderen
@@ -165,4 +161,4 @@ Intune ondersteunt verder de volgende typen tokens in de lijst met eigenschappen
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Ga vervolgens als gebruikelijk door met [toewijzen](apps-deploy.md) en [bewaken](apps-monitor.md) van de app.
+Ga verder met het [toewijzen](apps-deploy.md) en [controleren](apps-monitor.md) van de app.

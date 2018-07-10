@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803836"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Apparaatbeperkingsinstellingen voor Windows 10 (en hoger) in Intune
 In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met Windows 10.
@@ -249,7 +250,9 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 
   Met GDI DPI-schaalbaarheid krijgen apps die geen DPI-status hebben, een per-monitor-DPI-status. Geef de verouderde apps op waarvoor GDI DPI-schaalbaarheid is ingeschakeld. Als GDI DPI-schaalbaarheid zodanig is geconfigureerd dat een app zowel in als uit kan worden ingeschakeld, wordt de schaalbaarheid voor de app uitgeschakeld.
 
-## <a name="kiosk-preview"></a>Kiosk (preview)
+## <a name="kiosk-preview---obsolete"></a>Kiosk (preview) - verouderd
+
+Deze instellingen gaan weg en worden in een toekomstige versie verwijderd. Raadpleeg [Kiosk-instellingen in Windows 10 en hoger](kiosk-settings.md) voor informatie over het gebruik van de nieuwe instellingen.
 
 Op een kioskapparaat wordt doorgaans één app of een specifieke set met apps uitgevoerd. Gebruikers hebben geen toegang tot functies op het apparaat buiten de kiosk-apps.
 
@@ -262,9 +265,12 @@ Op een kioskapparaat wordt doorgaans één app of een specifieke set met apps ui
 #### <a name="single-app-kiosks"></a>Kiosken voor één enkele app
 Voer de volgende instellingen in:
 
-- **Gebruikersaccount**: voer het lokale (op het apparaat) gebruikersaccount of de aanmelding in van het Azure AD-account dat is gekoppeld aan de kiosk-app. Voor accounts die zijn gekoppeld aan Azure AD-domeinen geeft u het account op in de indeling `domain\username@tenant.org`. 
+- **Gebruikersaccount**: voer het lokale (op het apparaat) gebruikersaccount, een AD-domeinaccount of een Azure AD-accountaanmelding in die is gekoppeld aan de kiosk-app.
+  - Lokaal account: voer in als `devicename\accountname`, `.\accountname` of `accountname`
+  - Domeinaccount: voer in als `domain\accountname`
+  - Azure AD-account: voer in als `AzureAD\emailaddress`. Zorg dat u AzureAD invoert, aangezien dit een vaste domeinnaam is. Voer vervolgens het Azure AD-e-mailadres in. Voer bijvoorbeeld `AzureAD\user@contoso.onmicrosoft.com` in.
 
-    Voor kiosken in openbare omgevingen waarvoor automatische aanmelding is ingeschakeld, moet een gebruikerstype met minimale bevoegdheden (zoals het lokale standaardgebruikersaccount) worden gebruikt. Voor de configuratie van een Azure Active Directory-account voor de kioskmodus gebruikt u de indeling `AzureAD\user@contoso.com`.
+    Voor kiosken in openbare omgevingen waarvoor automatische aanmelding is ingeschakeld, moet een gebruikerstype met minimale bevoegdheden (zoals het lokale standaardgebruikersaccount) worden gebruikt. Als u een Azure AD-account voor de kioskmodus gebruikt, voert u `AzureAD\user@yourorganization.com` in.
 
 - **Model-id van toepassingsgebruiker (AUMID)**: voer de AUMID van de kiosk-app in. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) voor meer informatie.
 
