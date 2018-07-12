@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232933"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905373"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Waar is de Intune-functie die ik zoek gebleven in Azure?
 Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid gebruikgemaakt om een aantal taken logischer in te delen. Maar dergelijke verbeteringen betekenen wel dat u de nieuwe indeling moet leren kennen. Deze referentiegids is speciaal bedoeld voor degenen die heel vertrouwd zijn met Intune in de klassieke portal, en die zich afvragen waar bepaalde functies in Intune zijn gebleven in Azure Portal. Als een functie die u zoekt niet wordt behandeld in dit artikel, laat dan een reactie achter onder het artikel, zodat we het kunnen bijwerken.
@@ -36,7 +36,7 @@ Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid
 |Wordt gegroepeerd op IMEI (alle platformen)| Groepen > Alle apparaten > Vooraf geregistreerde bedrijfsapparaten > Op IMEI (alle platforms) | [Apparaatinschrijving > Bedrijfsapparaat-id's](#by-imei-all-platforms)|
 | Inschrijvingsprofiel voor bedrijfsapparaten| Beleid > Inschrijving van bedrijfsapparaten | [Apparaatinschrijving > Apple-inschrijving > Profielen voor het inschrijvingsprogramma](#where-did-corporate-pre-enrolled-devices-go) |
 | Inschrijvingsprofiel voor bedrijfsapparaten | Beleid > Inschrijving van bedrijfsapparaten | [Apparaatinschrijving > Apple-inschrijving > AC-profielen](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | Beheerder > Mobile Device Management > Android for Work | Apparaatinschrijving > Inschrijving van Android for Work |
+| Android for Work | Beheerder > Mobile Device Management > Android for Work | Apparaatinschrijving > Android-inschrijving |
 | Voorwaarden | Beleid > Voorwaarden | Apparaatinschrijving > Voorwaarden |
 Instellingen voor de bedrijfsportal|Beheer > Bedrijfsportal|**Beheer** > Mobiele apps<br> **Installatie** > Huisstijl voor bedrijfsportal
 
