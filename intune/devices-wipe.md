@@ -1,6 +1,6 @@
 ---
 title: Bedrijfsgegevens van apparaten verwijderen met Microsoft Intune - Azure | Microsoft Docs
-description: Voor apparaten met Android, Android for Work, iOS, macOS of Windows kunt u Microsoft Intune gebruiken om bedrijfsgegevens van een apparaat te verwijderen of de fabrieksinstellingen terug te zetten. Daarnaast kunt u een apparaat uit Azure Active Directory verwijderen.
+description: Voor apparaten met Android, een Android-werkprofiel, iOS, macOS of Windows kunt u Microsoft Intune gebruiken om bedrijfsgegevens van een apparaat te verwijderen of de fabrieksinstellingen terug te zetten. Daarnaast kunt u een apparaat uit Azure Active Directory verwijderen.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
-ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
+ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37091724"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906053"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Apparaten verwijderen door Fabrieksinstellingen terugzetten te gebruiken, bedrijfsgegevens te verwijderen of de inschrijving van het apparaat handmatig ongedaan te maken
 
@@ -31,7 +31,7 @@ Met de acties **Bedrijfsgegevens verwijderen** of **Fabrieksinstellingen terugze
 
 ## <a name="factory-reset"></a>Fabrieksinstellingen terugzetten
 
-Met de actie **Fabrieksinstellingen terugzetten** zet u de standaardfabrieksinstellingen terug op het apparaat. De gebruikersgegevens worden bewaard of gewist, afhankelijk van of u het selectievakje **Inschrijvingsstatus en gebruikersaccount behouden** al dan niet hebt ingeschakeld.
+Met de actie **Fabrieksinstellingen terugzetten** zet u de standaardfabrieksinstellingen terug op het apparaat. De gebruikersgegevens worden bewaard als u het selectievakje **Inschrijvingsstatus en gebruikersaccount behouden** inschakelt. Anders wordt het station veilig gewist.
 
 |Actie Fabrieksinstellingen terugzetten|**Inschrijvingsstatus en gebruikersaccount behouden**|Verwijderd uit Intune-beheer|Description|
 |:-------------:|:------------:|:------------:|------------|
@@ -108,9 +108,13 @@ In de volgende tabel wordt beschreven welke gegevens worden verwijderd en wat he
 |Loskoppelen van Azure AD|Azure AD-record wordt verwijderd.|Azure AD-record wordt verwijderd.|
 |Contactpersonen |Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.|Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
 
-### <a name="android-for-work"></a>Android for Work
+### <a name="android-work-profile"></a>Android-werkprofiel
 
-Door Bedrijfsgegevens verwijderen uit te voeren op een Android for Work-apparaat, worden alle gegevens, apps en instellingen in het werkprofiel op het apparaat verwijderd. Het apparaat wordt buiten bedrijf gesteld voor beheer met Intune. Fabrieksinstellingen terugzetten wordt niet ondersteund voor Android for Work.
+Door Bedrijfsgegevens verwijderen uit te voeren op een apparaat met een Android-werkprofiel, verwijdert u alle gegevens, apps en instellingen in het werkprofiel op het apparaat. Het apparaat wordt buiten bedrijf gesteld voor beheer met Intune. Fabrieksinstellingen terugzetten wordt niet ondersteund voor Android-werkprofielen.
+
+### <a name="android-enterprise-kiosk-devices"></a>Kioskapparaten voor Android Enterprise
+
+U kunt alleen de fabrieksinstellingen van Android-kioskapparaten terugzetten. U kunt geen bedrijfsgegevens verwijderen van Android-kioskapparaten.
 
 
 ### <a name="macos"></a>macOS
@@ -150,6 +154,15 @@ Als u apparaten wilt verwijderen uit de Intune-portal, kunt u ze verwijderen in 
 
 1. Meld u aan bij [Intune in Azure Portal](https://aka.ms/intuneportal).
 2. Kies **Apparaten** > **Alle apparaten** > kies het apparaat dat u wilt verwijderen > **Verwijderen**.
+
+### <a name="automatically-delete-devices-with-cleanup-rules"></a>Apparaten automatisch verwijderen met opschoonregels
+U kunt Intune configureren om automatisch apparaten te verwijderen die inactief of verlopen zijn of niet reageren. Deze opschoonregels controleren uw apparaatinventaris continu, zodat uw apparaatrecords up-to-date blijven. Apparaten die op deze manier worden verwijderd, worden verwijderd uit Intune-beheer.
+1. Meld u aan bij [Intune in Azure Portal](https://aka.ms/intuneportal).
+2. Kies **Apparaten** > **Opschoonregels voor apparaat** > **Ja**.
+3. Voer in het vak **Apparaten verwijderen die zo veel dagen niet hebben ingecheckt** een getal tussen 90 en 270 in.
+4. Kies **Opslaan**.
+
+
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Apparaten verwijderen van de Azure Active Directory-portal
 

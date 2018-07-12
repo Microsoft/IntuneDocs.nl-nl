@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/07/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
-ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
+ms.openlocfilehash: 65f249f05f389d8f05395cb46677d5f5fa53835e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35232230"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905832"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
 
@@ -158,6 +158,9 @@ Intune ondersteunt verder de volgende typen tokens in de lijst met eigenschappen
 - \{\{username\}\} - bijvoorbeeld **Jan de Vries**
 - \{\{serialnumber\}\} -bijvoorbeeld **F4KN99ZUG5V2** (voor iOS-apparaten)
 - \{\{serialnumberlast4digits\}\} - bijvoorbeeld **G5V2** (voor iOS-apparaten)
+
+## <a name="monitor-ios--app-configuration-status-per-device"></a>Configuratiestatus van een iOS-app per apparaat controleren 
+Nadat een configuratiebeleid is toegewezen, kunt u de configuratiestatus van een iOS-app voor elk beheerd apparaat controleren. Selecteer vanaf **Microsoft Intune** in Azure Portal de optie **Apparaten** > **Alle apparaten**. Selecteer in de lijst met beheerde apparaten een specifiek apparaat om een blade voor het apparaat weer te geven. Selecteer **App-configuratie** op de apparaatblade.  
 
 ## <a name="next-steps"></a>Volgende stappen
 

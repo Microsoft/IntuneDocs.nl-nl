@@ -15,12 +15,12 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f8517e9a9dd698e875214fe363d8e1246129b96a
-ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
+ms.openlocfilehash: 6bf9eaef010879835abb7cec57c2fbdce6aa1e0a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042708"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905866"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
 
@@ -47,7 +47,7 @@ Als Intune-beheerder kunt u een bestand met door komma's gescheiden waarden (.cs
 [Lees hier meer informatie over het vinden van het serienummer van een Apple-apparaat](https://support.apple.com/HT204308).<br>
 [Lees hier meer informatie over het vinden van het serienummer van een Android-apparaat](https://support.google.com/store/answer/3333000).
 
-## <a name="add-corporate-identifiers"></a>Zakelijke id's toevoegen
+## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>Bedrijfs-id's toevoegen met behulp van een CSV-bestand
 Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zonder koptekst. Plaats de IMEI- of serienummers in de linkerkolom en de details in de rechterkolom. U kunt in één CSV-bestand maar één type id, IMEI-nummer of serienummer importeren. De details zijn beperkt tot 128 tekens en zijn alleen bedoeld voor beheerders. De details worden niet op het apparaat weergegeven. De huidige limiet is 5.000 rijen per CSV-bestand.
 
 **Een CSV-bestand met serienummers uploaden**: maak een lijst in twee kolommen met door komma's gescheiden waarden (CSV) zonder koptekst. Zorg ervoor dat het CSV-bestand niet meer dan 5000 apparaten bevat en niet groter is dan 5 MB.
@@ -70,19 +70,33 @@ Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 >De serienummers van het apparaat die aan Intune worden gemeld, komen mogelijk niet overeen met de id die wordt weergegeven in het menu Info of Instellingen van het apparaat. Controleer het type van het serienummer dat door de fabrikant van het apparaat wordt vermeld.
 >Wanneer wordt geprobeerd een bestand te uploaden met serienummers met punten (.), mislukt de upload. Serienummers met punten worden niet ondersteund.
 
-### <a name="add-a-csv-list-of-corporate-identifiers"></a>Een .csv-lijst met zakelijke id's toevoegen
+### <a name="upload-a-csv-list-of-corporate-identifiers"></a>Een CSV-lijst met bedrijfs id's uploaden
 
-1. Kies in [Intune in Azure Portal](https://portal.azure.com) achtereenvolgens **Apparaatinschrijving** > **Zakelijke apparaat-id's** en klik vervolgens op **Toevoegen**.
+1. Kies in [Intune in Azure Portal](https://portal.azure.com) achtereenvolgens **Apparaatinschrijving** > **Bedrijfsapparaat-id's** > **Toevoegen** > **CSV-bestand uploaden**.
 
    ![Werkruimte Zakelijke apparaat-id's met de knop Toevoegen gemarkeerd](./media/add-corp-id.png)
 
-2. Geef op de blade **Id's toevoegen** het type id op: **IMEI** of **Serienummer**. U kunt opgeven of eerder geïmporteerde nummers **details voor bestaande id's moeten overschrijven**.
+2. Geef op de blade **Id's toevoegen** het type id op: **IMEI** of **Serienummer**.
 
-3. Klik op het mappictogram en geef het pad op naar de lijst die u wilt importeren. Navigeer naar het CSV-bestand en selecteer **Toevoegen**. Klik op **Vernieuwen** voor een overzicht van nieuwe apparaat-id's.
+3. Klik op het mappictogram en geef het pad op naar de lijst die u wilt importeren. Navigeer naar het CSV-bestand en kies **Toevoegen**. 
+
+4. Als het CSV-bestand bedrijfs-id's bevat die zich al in Intune bevinden, maar andere details hebben, wordt de pop-up **Dubbele id's controleren** weergegeven. Selecteer de id's die u wilt overschrijven in Intune en kies **OK** om de id's toe te voegen. Voor elke id wordt alleen de eerste kopie vergeleken.
+
+## <a name="manually-enter-corporate-identifiers"></a>Bedrijfs-id's handmatig invoeren
+
+1. Kies in [Intune in Azure Portal](https://portal.azure.com) achtereenvolgens **Apparaatinschrijving** > **Bedrijfsapparaat-id's** > **Toevoegen** > **Handmatig invoeren**.
+
+2. Geef op de blade **Id's toevoegen** het type id op: **IMEI** of **Serienummer**.
+
+3. Voer waarden voor **Id** en **Details** in voor elke id die u wilt toevoegen. Wanneer u klaar bent met het invoeren van id's, kiest u **Toevoegen**.
+
+5. Als u bedrijfs-id's hebt ingevoerd die zich al in Intune bevinden, maar andere details hebben, wordt de pop-up **Dubbele id's controleren** weergegeven. Selecteer de id's die u wilt overschrijven in Intune en kies **OK** om de id's toe te voegen. Voor elke id wordt alleen de eerste kopie vergeleken.
+
+Klik op **Vernieuwen** voor een overzicht van nieuwe apparaat-id's.
 
 Geïmporteerde apparaten zijn niet noodzakelijkerwijs ingeschreven. Apparaten kunnen de status **Ingeschreven** of **Geen contact opgenomen** hebben. **Geen contact gemaakt** betekent dat het apparaat nooit gecommuniceerd heeft met de Intune-service.
 
-### <a name="delete-corporate-identifiers"></a>Zakelijke id's verwijderen
+## <a name="delete-corporate-identifiers"></a>Zakelijke id's verwijderen
 
 1. Kies in [Intune in Azure Portal](https://portal.azure.com) achtereenvolgens **Apparaatinschrijving** > **Zakelijke apparaat-id's**.
 2. Selecteer de apparaat-id’s die u wilt verwijderen en kies vervolgens **Verwijderen**.
@@ -90,7 +104,7 @@ Geïmporteerde apparaten zijn niet noodzakelijkerwijs ingeschreven. Apparaten ku
 
 Wanneer u een zakelijke id voor een ingeschreven apparaat verwijdert, wordt het eigendom van het apparaat niet gewijzigd. Als u het eigendom van een apparaat wilt wijzigen, gaat u naar **Apparaten**, selecteert u het apparaat, kiest u **Eigenschappen** en wijzigt u het **Apparaateigendom**.
 
-### <a name="imei-specifications"></a>IMEI-specificaties
+## <a name="imei-specifications"></a>IMEI-specificaties
 Zie [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729) voor gedetailleerde specificaties over International Mobile Equipment Identifiers.
 
 ## <a name="change-device-ownership"></a>Apparaateigendom wijzigen

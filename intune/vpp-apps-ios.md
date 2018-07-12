@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3afe1ed48a21c26927b3686ae9a455ed8484e282
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 574880ae1ff7f734edcb02ebc89d7a0270064d4e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547400"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905968"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>iOS-apps beheren die zijn aangeschaft via een volumeaankoopprogramma met Microsoft Intune
 
@@ -135,8 +135,7 @@ De eindgebruiker wordt in een aantal scenario’s gevraagd om de VPP-app te inst
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>App-licenties intrekken en tokens verwijderen 
 
-<!-- 820863 -->  
-Voor een bepaald apparaat met een of meer iOS-apps uit het volume-aankoopprogramma (VPP) kunt u de gekoppelde op een apparaat gebaseerde app-licenties voor het apparaat intrekken. Als u een app-licentie intrekt, wordt de desbetreffende VPP-app niet van het apparaat verwijderd. Als u een VPP-app wilt verwijderen en een licentie wilt vrijmaken, moet u het toewijzingstype van de VPP-app instellen op **Verwijderen**. Als u een app verwijdert die was toegewezen aan een gebruiker, maakt Intune de gebruiker of apparaatlicentie vrij en wordt de app van het apparaat verwijderd.
+U kunt alle bijbehorende licenties voor iOS VPP-apps intrekken op basis van een bepaald apparaat of een bepaalde gebruiker of app. U kunt gebruikers waarschuwen wanneer een app niet meer aan hen is toegewezen. Als u een app-licentie intrekt, wordt de desbetreffende VPP-app niet van het apparaat verwijderd. Als u een VPP-app wilt verwijderen en een app-licentie wilt vrijmaken die is toegewezen aan een gebruiker of apparaat, moet u de toewijzingsactie wijzigen in **Verwijderen**. Wanneer u een app verwijdert die is toegewezen aan een gebruiker, maakt Intune de gebruiker of apparaatlicentie vrij en verwijdert de app van het apparaat. Het aantal geregenereerde licenties wordt weergegeven in het knooppunt **Gelicentieerde apps** in de workload **App** van Intune. Zodra een VPP-app is verwijderd en de app-licentie is vrijgemaakt, kunt u de app-licentie toewijzen aan een andere gebruiker of ander apparaat. 
 
 >[!NOTE]
 >Intune haalt alle licenties op voor iOS VPP-apps die door gebruikers zijn gelicentieerd wanneer een medewerker niet langer bij een bedrijf werkt en geen lid meer is van de AAD-groepen.

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/18/2018
+ms.date: 6/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33e42c821881a5cc7eb9e4be65f6f7e56263480e
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232967"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905356"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
@@ -158,9 +158,27 @@ Met dit rapport kunt u per nalevingsinstelling het totale aantal apparaten in el
 
 Als u op de tegel Naleving van instelling klikt, en vervolgens klikt op een van de nalevingsbeleidsinstellingen voor apparaten, ziet u de **nalevingsstatus**, het **e-mailalias van de gebruiker**, het **apparaatmodel** en de **locatie** voor elk apparaat waarop die nalevingsbeleidsinstelling voor apparaten is gericht.
 
+## <a name="view-status-of-device-policies"></a>Status van apparaatbeleid weergeven
+
+U kunt de verschillende statussen van uw beleid per platform controleren. U hebt bijvoorbeeld een macOS-nalevingsbeleid. U wilt de apparaten zien die worden beïnvloed door dit beleid en wilt weten of er conflicten of fouten zijn.
+
+Deze functie is opgenomen in de statusrapportage voor het apparaat:
+
+1. Selecteer **Apparaatnaleving** > **Beleid**. Als een beleid is toegewezen, wordt een lijst met beleidsregels en meer informatie weergegeven.
+2. Selecteer een beleid > **Overzicht**. In deze weergave bevat de beleidstoewijzing de volgende statussen:
+
+  - Geslaagd
+  - Fout
+  - Conflict
+  - In behandeling
+  - Niet van toepassing
+
+3. Selecteer een van de statussen voor informatie over de apparaten die dit beleid gebruiken. Selecteer bijvoorbeeld **Geslaagd**. In het volgende venster ziet u specifieke apparaatdetails, waaronder de apparaatnaam en de implementatiestatus.
+
 ## <a name="how-intune-resolves-policy-conflicts"></a>Hoe Intune beleidsconflicten oplost
 Conflicterende beleidsinstellingen kunnen zich voordoen wanneer er meerdere Intune-beleidsregels op een apparaat worden toegepast. Als de beleidsinstellingen elkaar overlappen, lost Intune de conflicten aan de hand van de volgende regels op:
 
 - Als de conflicterende instellingen uit een Intune-configuratiebeleid en een nalevingsbeleid voortkomen, hebben de instellingen in het nalevingsbeleid prioriteit boven de instellingen in het configuratiebeleid. Dit gebeurt zelfs als de instellingen in het configuratiebeleid veiliger zijn.
 
-- Als u meerdere nalevingsbeleidsregels hebt geïmplementeerd, wordt het veiligste beleid gebruikt.
+- Als u meerdere nalevingsbeleidsregels hebt geïmplementeerd, gebruikt Intune het veiligste beleid.
+

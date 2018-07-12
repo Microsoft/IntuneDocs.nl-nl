@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c1902e319a862c9ffcda5068753f917bf8f4c3f
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232915"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906036"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>De instantie voor het beheer van mobiele apparaten instellen
 
@@ -41,9 +41,11 @@ Mogelijke configuraties zijn:
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM-instantie instellen op Intune
 
+Als u de MDM-instantie nog niet hebt ingesteld, volgt u de onderstaande stappen. Zie de sectie [MDM-instantie wijzigen](#prepare-to-change-the-mdm-authority-to-configuration-manager) hierna als u van MDM-instantie wilt wijzigen.
+
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Selecteer de oranje banner om de instelling **Instantie voor beheer van mobiele apparaten** te openen.
+3. Selecteer de oranje banner om de instelling **Instantie voor beheer van mobiele apparaten** te openen. De oranje banner wordt alleen weergegeven als u de MDM-instantie nog niet hebt ingesteld.
 4. Kies onder **Instantie voor beheer van mobiele apparaten** uw MDM-instantie uit de volgende opties:
    - **MDM-instantie voor Intune**
    - **MDM-instantie voor Configuration Manager**
@@ -54,10 +56,10 @@ Mogelijke configuraties zijn:
    Er verschijnt een bericht met de melding dat u uw MDM-instantie hebt ingesteld op Intune.
 
 ### <a name="workflow-of-intune-administration-ui"></a>Werkstroom van de Intune-beheergebruikersinterface
-Als Android- of Apple-apparaatbeheer is ingeschakeld, verstuurt Intune apparaat- en gebruikersgegevens, zodat deze kunnen worden geïntegreerd in de externe services voor het beheren van apparaten.
+Als Android- of Apple-apparaatbeheer is ingeschakeld, worden met Intune apparaat- en gebruikersgegevens verzonden, zodat deze kunnen worden geïntegreerd in de externe services voor het beheren van apparaten.
 
 Scenario's waarin toestemming moet worden gegeven om gegevens te delen, zijn:
-- Wanneer u Android for Work inschakelt,
+- Wanneer u Android-werkprofielen inschakelt.
 - Wanneer u Apple MDM-pushcertificaten inschakelt en uploadt,
 - Wanneer u een van de Apple-services zoals Device Enrollment Program, School Manager of Volume Purchasing Program inschakelt.
 
