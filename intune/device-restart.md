@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b09a4d528a95d682bf12e6610480b1aa1bcbdb83
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6b68d7eda57d50c3a1cb55979590e8b07d9daf50
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829313"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904945"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Apparaten extern opnieuw opstarten met Intune
 
@@ -31,12 +31,13 @@ De apparaatactie **Opnieuw opstarten** zorgt ervoor dat het apparaat dat kiest, 
 
 - Windows: ondersteund op Windows 8.1 en hoger
 - Windows Phone: ondersteund op Windows 8.1 en hoger
+- Android-kioskapparaten - ondersteund
 - iOS: ondersteund
 
     > [!Note]  
     > Voor deze opdracht is een apparaat onder supervisie en het vereist toegangsrecht **Apparaatvergrendeling** vereist. Het apparaat wordt onmiddellijk opnieuw opgestart. iOS-apparaten die met een wachtwoordcode zijn vergrendeld, worden na het opnieuw opstarten niet aan een Wi-Fi-netwerk toegevoegd. Nadat het apparaat opnieuw is opgestart, kan het mogelijk niet meer communiceren met de server.
 - macOS: niet ondersteund
-- Android: niet ondersteund
+- Android-apparaten en apparaten met Android- werkprofiel - niet ondersteund
 
 ## <a name="restart-a-device"></a>Apparaten opnieuw opstarten
 

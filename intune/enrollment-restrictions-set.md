@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026326"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905815"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -39,14 +39,14 @@ U kunt onder ander de volgende registratiebeperkingen maken:
 - Maximum aantal geregistreerde apparaten.
 - De ondersteunde apparaatplatformen:
   - Android.
-  - Android for Work.
+  - Android-werkprofiel.
   - iOS.
   - macOS.
   - Windows.
-- Platformbesturingssysteemversie voor iOS, Android, Android for Work en Windows. (Alleen Windows 10-versies kunnen worden gebruikt. Laat dit veld leeg als Windows 8.1 is toegestaan.)
+- Platformbesturingssysteemversie voor iOS, Android, Android-werkprofielen en Windows. (Alleen Windows 10-versies kunnen worden gebruikt. Laat dit veld leeg als Windows 8.1 is toegestaan.)
   - Minimale versie.
   - Maximale versie.
-- Beperkingen opleggen voor apparaten die persoonlijk eigendom zijn (alleen iOS, Android, Android for Work en macOS).
+- Beperkingen opleggen voor apparaten die persoonlijk eigendom zijn (alleen iOS, Android, Android-werkprofielen en macOS).
 
 ## <a name="default-restrictions"></a>Standaardbeperkingen
 
@@ -78,7 +78,7 @@ U kunt de instellingen voor een beperking van het type apparaat als volgt wijzig
 5. Selecteer onder de naam van de beperking (**Alle gebruikers** voor de standaardbeperking) **Platforms**. Kies **Toestaan** of **Blokkeren** voor elk weergegeven platform.
 6. Selecteer **Opslaan**.
 7. Selecteer **Platformconfiguraties** onder de naam van de beperking (**Alle gebruikers** voor de standaardbeperking). Selecteer vervolgens de minimale en maximale **versie** voor de platforms die worden weergegeven. Ondersteunde versies:
-    - Android- en Android for Work ondersteunen major.minor.rev.build.
+    - Android-werkprofielen bieden ondersteuning voor major.minor.rev.build.
     - iOS ondersteunt major.minor.rev.
     - Windows ondersteunt alleen major.minor.rev.build voor Windows 10.
   Versies van besturingssystemen zijn niet van toepassing op Apple-apparaten die worden ingeschreven met Device Enrollment Program, Apple School Manager of de app Apple Configurator.
@@ -88,9 +88,9 @@ U kunt de instellingen voor een beperking van het type apparaat als volgt wijzig
 
 
 >[!NOTE]
->- Als u instelt dat Android-apparaten niet mogen worden ingeschreven als deze persoonlijk eigendom zijn, kunnen Android for Work-apparaten die persoonlijk eigendom zijn, nog wel worden ingeschreven.
->- Standaard zijn instellingen voor uw Android for Work-apparaten gelijk aan de instellingen voor uw Android-apparaten. Wanneer u uw Android for Work-instellingen wijzigt, is dat niet meer het geval.
->- Als u een persoonlijke Android for Work-inschrijving blokkeert, kunnen alleen zakelijke Android-apparaten worden ingeschreven als Android for Work.
+>- Als u instelt dat Android-apparaten niet mogen worden geregistreerd als deze persoonlijk eigendom zijn, kunnen apparaten met een Android-werkprofiel die persoonlijk eigendom zijn, nog wel worden geregistreerd.
+>- Standaard zijn instellingen voor uw apparaten met een Android-werkprofiel gelijk aan de instellingen voor uw Android-apparaten. Wanneer u de instellingen voor Android-werkprofielen wijzigt, is dat niet meer het geval.
+>- Als u het registreren van persoonlijke apparaten met een Android-werkprofiel blokkeert, kunnen alleen zakelijke Android-apparaten worden geregistreerd als apparaat met een Android-werkprofiel.
 
 ## <a name="set-device-limit-restrictions"></a>Apparaatlimietbeperkingen instellen
 

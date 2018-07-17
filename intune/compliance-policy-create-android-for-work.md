@@ -1,6 +1,6 @@
 ---
-title: Een nalevingsbeleid voor Android for Work maken in Microsoft Intune - Azure | Microsoft Docs
-description: Een Microsoft Intune-apparaatnalevingsbeleid maken of configureren voor Android for Work-apparaten. Kies ervoor opengebroken apparaten toe te staan, stel het acceptabele dreigingsniveau in, controleer op Google Play, voer de minimale en maximale besturingssysteemversie in, kies uw wachtwoordvereisten en sta sideloading van toepassingen toe.
+title: Een nalevingsbeleid voor Android-werkprofielen maken in Microsoft Intune - Azure | Microsoft Docs
+description: Een Microsoft Intune-apparaatnalevingsbeleid maken of configureren voor apparaten met een Android-werkprofiel. Kies ervoor opengebroken apparaten toe te staan, stel het acceptabele dreigingsniveau in, controleer op Google Play, voer de minimale en maximale besturingssysteemversie in, kies uw wachtwoordvereisten en sta sideloading van toepassingen toe.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,24 +14,24 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34047982"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905084"
 ---
-# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Een nalevingsbeleid voor Android for Work-apparaten in Intune toevoegen
+# <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Een nalevingsbeleid voor apparaten met een Android-werkprofiel in Intune toevoegen
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Een Intune-apparaatnalevingsbeleid voor Android for Work bepaalt de regels en instellingen waaraan deze apparaten moeten voldoen om te voldoen aan het beleid. U kunt dit beleid met voorwaardelijke toegang gebruiken om toegang tot bedrijfsresources toe te staan of te blokkeren. U kunt ook apparaatrapporten krijgen en maatregelen nemen voor niet-naleving. U maakt nalevingsbeleid voor apparaten voor verschillende platforms in Intune Azure Portal. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over nalevingsbeleid en eventuele vereisten.
+Een Intune-apparaatnalevingsbeleid voor apparaten met een Android-werkprofiel bepaalt de regels en instellingen waaraan deze apparaten moeten voldoen om te voldoen aan het beleid. U kunt dit beleid met voorwaardelijke toegang gebruiken om toegang tot bedrijfsresources toe te staan of te blokkeren. U kunt ook apparaatrapporten krijgen en maatregelen nemen voor niet-naleving. U maakt nalevingsbeleid voor apparaten voor verschillende platforms in Intune Azure Portal. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over nalevingsbeleid en eventuele vereisten.
 
 In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden beheerd wanneer een nalevingsbeleid wordt gebruikt in combinatie met beleid voor voorwaardelijke toegang.
 
 --------------------------
 
-|**Beleidsinstelling**| **Android for Work** |
+|**Beleidsinstelling**| **Android-werkprofiel** |
 | --- | --- |
 | **Configuratie van pincode of wachtwoord** |  In quarantaine |
 | **Apparaatversleuteling** |  In quarantaine |
@@ -51,7 +51,7 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 ## <a name="create-a-device-compliance-policy"></a>Een nalevingsbeleid voor apparaten maken
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. Selecteer voor **Platform** de optie **Android for Work**. Kies **Instellingen configureren** om instellingen op te geven voor de **Apparaatstatus**, de **Apparaateigenschappen** en de **Systeembeveiliging**. Wanneer u klaar bent, selecteert u **OK** en **Maken**.
+5. Selecteer voor **Platform** de optie **Android Enterprise**. Kies **Instellingen configureren** om instellingen op te geven voor de **Apparaatstatus**, de **Apparaateigenschappen** en de **Systeembeveiliging**. Wanneer u klaar bent, selecteert u **OK** en **Maken**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -77,9 +77,9 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 
 #### <a name="threat-scan-on-apps"></a>Bedreigingsscan voor apps
 
-Op apparaten met werkprofielen (Android for Work), is de instelling **Bedreigingsscan voor apps** te vinden als een configureerbare beleidsinstelling. Beheerders kunnen de instelling voor een apparaat inschakelen.
+Op apparaten met Android-werkprofielen is de instelling **Bedreigingsscan voor apps** te vinden als een configureerbare beleidsinstelling. Beheerders kunnen de instelling voor een apparaat inschakelen.
 
-Als uw bedrijf Android-werkprofielen gebruikt, kunt u **Bedreigingsscan voor apps** inschakelen voor uw geregistreerde apparaten. Hiermee kunt u een apparaatprofiel instellen en de systeembeveiligingsinstelling verplicht stellen. Zie [Android for Work-apparaatbeperkingsinstellingen in Intune](device-restrictions-android-for-work.md) voor meer informatie.
+Als uw bedrijf Android-werkprofielen gebruikt, kunt u **Bedreigingsscan voor apps** inschakelen voor uw geregistreerde apparaten. Hiermee kunt u een apparaatprofiel instellen en de systeembeveiligingsinstelling verplicht stellen. Zie [Werkapparaatbeperkingsinstellingen in Intune](device-restrictions-android-for-work.md) voor meer informatie.
 
 ## <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
 
@@ -106,13 +106,13 @@ Als uw bedrijf Android-werkprofielen gebruikt, kunt u **Bedreigingsscan voor app
 
 ### <a name="encryption"></a>Versleuteling
 
-- **Versleuteling vereisen op mobiel apparaat:** u hoeft deze instelling niet te configureren, omdat versleuteling wordt afgedwongen op Android for Work-apparaten.
+- **Versleuteling vereisen op mobiel apparaat:** u hoeft deze instelling niet te configureren, omdat versleuteling wordt afgedwongen op apparaten met een Android-werkprofiel.
 
 ### <a name="device-security"></a>Apparaatbeveiliging
 
-- **Apps van onbekende bronnen blokkeren**: u hoeft deze instelling niet te configureren, omdat installatie vanuit onbekende bronnen altijd wordt voorkomen op Android for Work-apparaten.
+- **Apps van onbekende bronnen blokkeren**: u hoeft deze instelling niet te configureren, omdat installatie vanuit onbekende bronnen altijd wordt voorkomen op apparaten met een Android-werkprofiel.
 - **Runtime-integriteit van de bedrijfsportal-app**: hiermee controleert u of in de bedrijfsportal-app de standaardruntime-omgeving is geïnstalleerd, correct is ondertekend, niet in de foutopsporingsmodus is en is geïnstalleerd vanuit een bekende bron.
-- **USB-foutopsporing blokkeren op het apparaat**: u hoeft deze instelling niet te configureren, omdat USB-foutopsporing altijd al is uitgeschakeld op Android for Work-apparaten.
+- **USB-foutopsporing blokkeren op het apparaat**: u hoeft deze instelling niet te configureren omdat USB-foutopsporing altijd al is uitgeschakeld op apparaten met een Android-werkprofiel.
 - **Minimaal beveiligingspatchniveau**: selecteer het oudste beveiligingspatchniveau dat een apparaat kan hebben. Apparaten die niet ten minste dit patchniveau hebben, zijn niet-conform. De datum moet worden opgegeven in de indeling `YYYY-MM-DD`.
 
 ## <a name="assign-user-groups"></a>Gebruikersgroepen toewijzen

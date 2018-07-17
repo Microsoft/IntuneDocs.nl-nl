@@ -1,23 +1,23 @@
 ---
 title: Een Windows-nalevingsbeleid voor apparaten maken in Microsoft Intune - Azure | Microsoft Docs
-description: Een nalevingsbeleid voor apparaten van Microsoft Intune configureren voor apparaten met Windows Phone 8.1, Windows 8.1 en hoger, en Windows 10 en hoger. Controleren op naleving van het minimale en maximale vereiste besturingssysteem, wachtwoordbeperkingen en lengte instellen, bitlocker vereisen, instellen van het aanvaardbare dreigingsniveau en encryptie op de opslag van gegevens, zoals Surface Hub en de Windows Holographic voor bedrijven.
+description: Een nalevingsbeleid voor apparaten van Microsoft Intune configureren voor apparaten met Windows Phone 8.1, Windows 8.1 en hoger, en Windows 10 en hoger. Controleren op naleving van het minimale en maximale vereiste besturingssysteem, wachtwoordbeperkingen en lengte instellen, bitlocker vereisen, controleren op AV-oplossingen van externe partijen (derden), instellen van het aanvaardbare dreigingsniveau en encryptie op de opslag van gegevens, zoals Surface Hub en de Windows Holographic voor bedrijven.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744904"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909334"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Een apparaatnalevingsbeleid maken voor Windows-apparaten in Intune
 
@@ -115,6 +115,8 @@ Windows 8.1-pc's retourneren versie **3**. Als de besturingssysteemversieregel i
 
 Zie [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (CSP-statusverklaring) voor meer informatie over de werking van de HAS-service.
 
+Zie [Windows Defender ATP met voorwaardelijke toegang inschakelen](advanced-threat-protection.md) als u Windows Defender ATP (Advanced Threat Protection) wilt gebruiken tegen bedreigingen.
+
 ### <a name="device-properties"></a>Apparaateigenschappen
 
 - **Minimale versie van het besturingssysteem**: voer de minimaal toegestane versie in de nummerindeling **major.minor.build.CU** in. Als u de juiste waarde wilt ophalen, opent u een opdrachtprompt en typt u `ver`. De opdracht `ver` retourneert de versie in de volgende indeling:
@@ -164,6 +166,11 @@ Zie [Health Attestation CSP](https://docs.microsoft.com/windows/client-managemen
 #### <a name="encryption"></a>Versleuteling
 
 - **Versleuteling van gegevensopslag op een apparaat**: kies **Vereisen** om gegevensopslag op uw apparaten te versleutelen.
+
+#### <a name="device-security"></a>Apparaatbeveiliging
+
+- **Antivirussoftware**: als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antivirusoplossingen die zijn geregistreerd bij het Windows-beveiligingscentrum, zoals Symantec en Windows Defender. Als dit **niet is geconfigureerd**, controleert Intune niet of er AV-oplossingen op het apparaat zijn geïnstalleerd.
+- **Antispyware**: als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antispywareoplossingen die zijn geregistreerd bij het Windows-beveiligingscentrum, zoals Symantec en Windows Defender. Als dit **niet is geconfigureerd**, controleert Intune niet of er antispywareoplossingen op het apparaat zijn geïnstalleerd.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 

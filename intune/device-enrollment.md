@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 06/13/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c4be5c1897c4358d2eee83fa97e710136dd0379d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7aabb010baa4a5e53ad5e4264edc43e3ca111c70
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909198"
 ---
 # <a name="what-is-device-enrollment"></a>Wat is apparaatinschrijving?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -26,6 +27,8 @@ ms.lasthandoff: 04/16/2018
 Met Intune kunt u de apparaten en apps beheren waarvan uw werknemers gebruikmaken en kunt u beheren hoe zij toegang hebben tot uw bedrijfsgegevens. Om gebruik te kunnen maken van MDM (Mobile Device Management), moeten de apparaten eerst worden geregistreerd bij de Intune-service. Wanneer een apparaat is geregistreerd, wordt een MDM-certificaat voor het apparaat uitgegeven. Dit certificaat wordt gebruikt om te communiceren met de Intune-service.
 
 Zoals u in de volgende tabellen ziet, zijn er verschillende methoden om de apparaten van uw werknemers te registreren. Elke methode is afhankelijk van het eigendom van het apparaat (persoonlijk of zakelijk), het apparaattype (iOS, Windows, Android), en de beheervereisten (opnieuw instellen, affiniteit, vergrendelen).
+
+Standaard kunnen apparaten voor alle platforms worden ingeschreven in Intune. U kunt echter [apparaatbeperkingen opleggen per platform](enrollment-restrictions-set.md#set-device-type-restrictions).
 
 ## <a name="ios-enrollment-methods"></a>iOS-registratiemethoden
 
@@ -61,17 +64,17 @@ Zoals u in de volgende tabellen ziet, zijn er verschillende methoden om de appar
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | Nee|   Ja |   Nee | [Meer informatie](./android-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Nee |Nee |Nee  |[Meer informatie](./device-enrollment-manager-enroll.md)|
-|**Android for Work**| Nee | Ja | Nee| [Meer informatie](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
+|**Android-werkprofielen**| Nee | Ja | Nee| [Meer informatie](./android-work-profile-enroll.md) |
 
 
 ## <a name="bring-your-own-device"></a>Bring Your Own Device
 BYOD-apparaten (Bring Your Own Devices) zijn persoonlijke telefoons, tablets en pc's. BYOD-gebruikers gebruiken de bedrijfsportal-app om hun apparaten te registreren. Met dit programma hebben gebruikers toegang tot de bedrijfsresources als e-mail.
 
 ## <a name="corporate-owned-device"></a>Apparaat in bedrijfseigendom
-Apparaten in bedrijfseigendom (COD) zijn telefoons, tablets, en pc's die eigendom zijn van de organisatie en gedistribueerd worden naar de werknemers. Met registratie van COD's zijn scenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten. Een veelgebruikte manier voor de registratie van COD's is dat een beheerder of manager DEM (apparaatinschrijvingsmanager) gebruikt. iOS-apparaten kunnen rechtstreeks met de DEP-hulpprogramma's (Device Enrollment Program) van Apple worden ingeschreven. Apparaten met een IMEI-nummer kunnen ook worden geïdentificeerd en getagd als bedrijfseigendom.
+[Apparaten in bedrijfseigendom (COD)](corporate-identifiers-add.md) zijn telefoons, tablets en pc's die eigendom zijn van de organisatie en worden verdeeld onder de werknemers. Met registratie van COD's zijn scenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten. Een veelgebruikte manier voor de registratie van COD's is dat een beheerder of manager DEM (apparaatinschrijvingsmanager) gebruikt. iOS-apparaten kunnen rechtstreeks met de DEP-hulpprogramma's (Device Enrollment Program) van Apple worden ingeschreven. Apparaten met een IMEI-nummer kunnen ook worden geïdentificeerd en getagd als bedrijfseigendom.
 
 ### <a name="device-enrollment-manager"></a>Apparaatinschrijvingsmanager
-De apparaatinschrijvingsmanager (DEM) is een speciaal gebruikersaccount voor registratie en beheer van meerdere apparaten in bedrijfseigendom. Beheerders kunnen de bedrijfsportal installeren en veel apparaten zonder gebruiker registreren. Meer informatie over [DEM](./device-enrollment-manager-enroll.md).
+De apparaatinschrijvingsmanager (DEM) is een speciaal gebruikersaccount voor registratie en beheer van meerdere apparaten in bedrijfseigendom. Beheerders kunnen de bedrijfsportal installeren en veel apparaten zonder gebruiker registreren. Dergelijke apparaten zijn bijvoorbeeld geschikt voor gebruik bij een verkooppunt of met hulpprogramma-apps, maar niet voor gebruikers die toegang nodig hebben tot e-mail of bedrijfsresources. Meer informatie over [DEM](./device-enrollment-manager-enroll.md). 
 
 ### <a name="apple-device-enrollment-program"></a>Apple Device Enrollment Program
 Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'draadloos' implementeren op iOS-apparaten die met DEP worden gekocht en beheerd. Het apparaat wordt geregistreerd wanneer de gebruiker het apparaat de eerste keer inschakelt en de iOS-configuratieassistent uitvoert. Deze methode ondersteunt de supervisiemodus voor iOS, waarmee een apparaat kan worden geconfigureerd met een specifieke functionaliteit.

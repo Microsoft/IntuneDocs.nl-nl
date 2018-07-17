@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223608"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869492"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Office 365 toewijzen aan macOS-apparaten met Microsoft Intune
 
-Met het type *Store app* kunt u Office 365-apps eenvoudig toewijzen aan macOS-apparaten. Door dit type app te gebruiken, kunt u Word, Excel, PowerPoint, Outlook en OneNote installeren. Deze apps worden ook geleverd met Microsoft AutoUpdate (MAU) om ervoor te zorgen dat de apps veiliger worden en up-to-date blijven. De apps die u wilt, worden als één app weergegeven in de lijst met apps in de Intune-console.
+Met dit type app kunt u Office 365 2016-apps eenvoudig toewijzen aan macOS-apparaten. Door dit type app te gebruiken, kunt u Word, Excel, PowerPoint, Outlook en OneNote installeren. Deze apps worden ook geleverd met Microsoft AutoUpdate (MAU) om ervoor te zorgen dat de apps veiliger worden en up-to-date blijven. De apps die u wilt, worden als één app weergegeven in de lijst met apps in de Intune-console.
 
 
 ## <a name="before-you-start"></a>Voordat u begint
@@ -70,7 +70,7 @@ In deze stap configureert u de toewijzingen voor het app-pakket.
 2. Selecteer in het deelvenster **Office 365** de optie **Toewijzingen**.
 3. Selecteer **Groep toevoegen** om een groep toe te voegen die het app-pakket kan bekijken.  
     Het deelvenster **Groep toevoegen** wordt weergegeven.
-4. Stel het **Toewijzingstype** in op **Vereist**.
+4. Stel het **toewijzingstype** in op **Vereist** of **Beschikbaar**.
 5. Wijs het pakket toe aan de groepen die u hebt geselecteerd. Zie [Apps aan groepen toewijzen met Microsoft Intune](apps-deploy.md) voor meer informatie.
 
     >[!Note]

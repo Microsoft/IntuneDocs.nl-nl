@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ce8791eaf72f5fda969401c19e72c6cc8b538d6
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
+ms.openlocfilehash: b514efa27a2a037f2fa0492ae519e6b8c774e369
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291458"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869539"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving
 
@@ -49,7 +49,7 @@ Voor Intune App SDK-functionaliteit geschikte apps ondersteunen configuraties in
 
 Intune kan bepaalde tokens genereren en deze verzenden naar de beheerde toepassing. Als bijvoorbeeld uw app-configuratie een e-mailinstelling kan gebruiken, kunt u een dynamische e-mail toevoegen met behulp van een token. Typ de naam die door de app wordt verwacht in het veld **Naam** en typ vervolgens `\{\{mail\}\}` in het veld **Waarde**.
 
-Intune ondersteunt de volgende tokentypen in de configuratie-instellingen:
+Intune ondersteunt de volgende tokentypen in de configuratie-instellingen. Andere aangepaste sleutel-/waardeparen worden niet ondersteund.
 
 - \{\{userprincipalname\}\}- bijvoorbeeld **John@contoso.com**
 - \{\{mail\}\}- bijvoorbeeld **John@contoso.com**

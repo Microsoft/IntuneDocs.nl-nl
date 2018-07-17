@@ -1,42 +1,47 @@
 ---
 title: Wi-Fi-instellingen in Microsoft Intune configureren voor Android-apparaten
 titleSuffix: ''
-description: Meer informatie over Intune Wi-Fi-configuratie-instellingen op Android- en Android for Work-apparaten.
+description: Meer informatie over Intune Wi-Fi-configuratie-instellingen op apparaten met Android.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 7/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee82da997a794bb2f65929a6fd9e0de0cc776a6e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0157815322488525a4ce7a3d6d2c90cbb8d3ff2a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831058"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905662"
 ---
-# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Wi-Fi-instellingen configureren in Microsoft Intune voor apparaten met Android en Android for Work  
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-android-work-profiles-and-android-kiosk-devices"></a>Wi-Fi-instellingen configureren in Microsoft Intune voor apparaten met Android, Android-werkprofielen en Android-kioskapparaten
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-In dit artikel komt u meer te weten over de Wi-Fi-instellingen die u in Microsoft Intune kunt configureren voor apparaten met Android en Android for Work.
+In dit artikel komt u meer te weten over de Wi-Fi-instellingen die u in Microsoft Intune kunt configureren voor apparaten met Android en apparaten met een Android-werkprofiel.
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Wi-Fi-instellingen voor basis- en ondernemingsprofielen
 
-De volgende Wi-Fi-instellingen zijn beschikbaar voor Android- en Android for Work-apparaten:
+De volgende Wi-Fi-instellingen zijn beschikbaar voor Android-apparaten en apparaten met een Android-werkprofiel:
 
 - **Netwerknaam**: voer een naam voor deze Wi-Fi-verbinding in. Dit is de naam die gebruikers te zien krijgen in de lijst met beschikbare verbindingen op hun apparaat.
 - **SSID**: afkorting voor Service Set Identifier. Dit is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de netwerknaam die u hebt geconfigureerd wanneer ze de verbinding kiezen.
 - **Automatisch verbinding maken**: als u deze optie kiest, maakt het apparaat verbinding wanneer het zich in het bereik van dit netwerk bevindt.
 - **Verborgen netwerk**: hiermee wordt voorkomen dat dit netwerk wordt weergegeven in de lijst met beschikbare netwerken op het apparaat.
 
+## <a name="wi-fi-settings-available-for-enterprise-kiosk-profiles"></a>Wi-Fi-instellingen die beschikbaar zijn voor Enterprise-kioskprofielen
+- **Wi-Fi-type**: deze Wi-Fi-instellingen zijn alleen beschikbaar als u **Profieltype** > **Alleen de eigenaar van het apparaat** > **Wi-Fi** selecteert.
+    - **Open (geen verificatie)**
+    - **Vooraf gedeelde WEP-sleutel**: u moet het wachtwoord opgeven in het vak **Vooraf gedeelde sleutel**.
+    - **Vooraf gedeelde WPA-sleutel**: u moet het wachtwoord opgeven in het vak **Vooraf gedeelde sleutel**
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>Wi-Fi-instellingen voor alleen ondernemingsprofielen
+## <a name="wi-fi-settings-for-android-legacy-and-android-work-profiles-only"></a>Wi-Fi-instellingen voor verouderde Android-profielen en Android-werkprofielen
 
 - **EAP-type**: kies het type Extensible Authentication Protocol (EAP) dat wordt gebruikt om beveiligde draadloze verbindingen te verifiëren. U kunt kiezen uit:
     - **EAP-TLS**

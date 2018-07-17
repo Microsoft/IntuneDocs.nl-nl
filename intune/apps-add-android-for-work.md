@@ -1,12 +1,12 @@
 ---
-title: Apps aan Android for Work-apparaten toewijzen
+title: Apps toewijzen aan apparaten met een Android-werkprofiel
 titlesuffix: Microsoft Intune
-description: Ontdek hoe u apps synchroniseert en toewijst aan Android for Work-apparaten uit de Google Play for Work-store.
+description: Ontdek hoe u apps synchroniseert en toewijst aan apparaten met een Android-werkprofiel vanuit de beheerde Google Play Store.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 06/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,18 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 53a3374d285baf4035b071cc867b3c6d2dec423f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b65daa6e098954d88c502114fc7a33ad4cf5efcd
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909283"
 ---
-# <a name="assign-apps-to-android-for-work-devices-with-intune"></a>Apps aan Android for Work-apparaten toewijzen met Intune
+# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Apps toewijzen aan apparaten met een Android-werkprofiel met Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android for Work is een programma voor Android-apparaten. Alle apps die u installeert op Android for Work-apparaten, zijn afkomstig uit de Google Play for Work-store. Hoe u apps toewijst aan Android for Work-apparaten verschilt van hoe u deze apps toewijst aan standaard Android-apparaten. U meldt zich aan bij de store, bladert naar de gewenste apps en keurt deze goed. De app verschijnt vervolgens op het knooppunt **Gelicentieerde apps** in Azure Portal, waarna u de toewijzing van apps kunt beheren zoals u bij elke app zou doen.
+Android Enterprise is een programma voor apparaten met Android-werkprofiel en kioskapparaten. Bij apparaten met een Android-werkprofiel vormt Android Enterprise een reeks functies en services waarmee persoonlijke apps en gegevens worden gescheiden van zakelijke apps en gegevens. Android Enterprise biedt aanvullende beheeropties en privacy wanneer mensen hun Android-apparaten voor hun werk gebruiken. Intune helpt u om apps en instellingen te implementeren op apparaten met een Android-werkprofiel om ervoor te zorgen dat werk- en privégegevens gescheiden zijn. Alle apps die u installeert op apparaten met een Android-werkprofiel zijn afkomstig uit de beheerde Google Play Store. Hoe u apps toewijst aan apparaten met een Android-werkprofiel verschilt van hoe u deze apps toewijst aan standaard Android-apparaten. U meldt zich aan bij de store, bladert naar de gewenste apps en keurt deze goed. De app verschijnt vervolgens op het knooppunt **Gelicentieerde apps** in Azure Portal, waarna u de toewijzing van apps kunt beheren zoals u bij elke app zou doen.
 
 Als u uw eigen LOB-apps (line-of-business) hebt gemaakt, kunt u deze als volgt toewijzen:
 - Meld u aan voor een Google-ontwikkelaarsaccount, zodat u apps kunt publiceren naar een privégebied in de Google Play-store.
@@ -33,16 +34,16 @@ Als u uw eigen LOB-apps (line-of-business) hebt gemaakt, kunt u deze als volgt t
 
 ## <a name="before-you-start"></a>Voordat u begint
 
-Zorg ervoor dat u Intune en Android for Work hebt geconfigureerd voor samenwerking in de workload **Apparaatinschrijving** van de Azure-portal.
+Zorg ervoor dat u Intune en Android-werkprofielen hebt geconfigureerd voor samenwerking in de workload **Apparaatinschrijving** van de Azure-portal. Zie [Enroll Android devices](android-work-profile-enroll.md) (Android-apparaten registreren) voor meer informatie.
 
-## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Een app uit de Google Play for Work-store synchroniseren
+## <a name="synchronize-an-app-from-the-managed-google-play-store"></a>Een app uit de beheerde Google Play Store synchroniseren
 
-1. Ga naar de [Google Play for Work-store](https://play.google.com/work). Meld u aan met hetzelfde account dat u hebt gebruikt om de verbinding tussen Intune en Android for Work te configureren.
+1. Ga naar de [beheerde Google Play Store](https://play.google.com/work). Meld u aan met hetzelfde account dat u hebt gebruikt om de verbinding tussen Intune en Android Enterprise te configureren.
 2. Zoek in de store naar de app die u wilt toewijzen met behulp van Intune en selecteer deze.
 3. Op de pagina waarop de app wordt weergegeven, selecteert u **Goedkeuren**.  
     In het volgende voorbeeld is de app van Microsoft Excel gekozen.
 
-    ![De knop Goedkeuring in de Google Play for Work-store](media/approve.png)
+    ![De knop Goedkeuren in de beheerde Google Play Store](media/approve.png)
     
    Er wordt een venster voor de app geopend, waarin u om toestemming wordt gevraagd voor het uitvoeren van verschillende bewerkingen door de app. 
 
@@ -54,29 +55,29 @@ Zorg ervoor dat u Intune en Android for Work hebt geconfigureerd voor samenwerki
 
     ![Opties om nieuwe machtigingsaanvragen voor de app te verwerken](media/approve-app-settings.png)
 
-    De app is goedgekeurd en wordt weergegeven in uw IT-beheerconsole. U kunt vervolgens de [Android for Work-app synchroniseren met Intune](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
+    De app is goedgekeurd en wordt weergegeven in uw IT-beheerconsole. U kunt vervolgens de [Android-werkprofiel-app synchroniseren met Intune](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
 
-## <a name="sync-an-android-for-work-app-with-intune"></a>Een Android for Work-app synchroniseren met Intune
+## <a name="sync-a-managed-google-play-app-with-intune"></a>Een beheerde Google Play Store-app met Intune synchroniseren
 
 Als u een app uit de store hebt goedgekeurd maar deze nog niet wordt weergegeven in het knooppunt **Apps met licentie** van de workload **Mobiele apps**, dwingt u als volgt een onmiddellijke synchronisatie af:
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Selecteer **Mobiele apps** in het deelvenster **Intune**.
-4. In het werkbelastingvenster **Mobiele apps**, onder **Installatie**, selecteert u **Android for Work**.
-5. Selecteer in het deelvenster **Android for Work** de optie **Synchroniseren**.  
+4. Selecteer in het werkbelastingvenster **Mobiele apps**, onder **Installatie**de optie **Beheerde Google Play Store**.
+5. Kies in het deelvenster **Beheerde Google Play Store** **Vernieuwen**.  
     De pagina werkt de tijd en de status van de laatste synchronisatie bij.
 6. In het werkbelastingvenster **Mobiele apps** selecteert u **Apps**.  
-    De nieuw beschikbare Android for Work-app wordt weergegeven.
+    De zojuist beschikbaar geworden beheerde Google Play Store-app wordt weergegeven.
 
 Als de app wordt weergegeven in het knooppunt **App-licenties** van het werkbelastingvenster **Mobiele apps**, kunt u de app [toewijzen als alle andere apps](/intune-azure/manage-apps/deploy-apps). U kunt de app alleen toewijzen aan groepen gebruikers.
 
 Nadat u de app hebt toegewezen, wordt deze geïnstalleerd op de apparaten die u hebt aangewezen. De gebruiker van het apparaat wordt geen toestemming voor de installatie gevraagd.
 
-## <a name="manage-android-for-work-app-permissions"></a>App-machtigingen voor Android voor Work beheren
-Android for Work vereist dat u apps goedkeurt in de beheerde Google Play-webconsole voordat u de apps met Intune synchroniseert en aan uw gebruikers toewijst. Met Android for Work kunt u de apps op de achtergrond en automatisch naar de apparaten van gebruikers pushen en daarom moet u de machtigingen voor de app namens al uw gebruikers accepteren. Gebruikers krijgen geen app-machtigingen te zien wanneer ze de apps installeren. Het is dus belangrijk dat u de informatie over de machtigingen leest en begrijpt.
+## <a name="manage-android-enterprise-app-permissions"></a>Machtigingen voor Android Enterprise-apps beheren
+Android Enterprise vereist dat u apps goedkeurt in de beheerde Google Play Store-webconsole voordat u de apps met Intune synchroniseert en aan uw gebruikers toewijst. Met Android Enterprise kunt u de apps op de achtergrond en automatisch naar de apparaten van gebruikers pushen. U moet daarom de machtigingen voor de app namens al uw gebruikers accepteren. Gebruikers krijgen geen app-machtigingen te zien wanneer ze de apps installeren. Het is dus belangrijk dat u de informatie over de machtigingen begrijpt.
 
-Wanneer een app-ontwikkelaar een nieuwe versie van de app publiceert met bijgewerkte machtigingen, worden de machtigingen niet automatisch geaccepteerd, zelfs niet wanneer u de vorige machtigingen ook al had goedgekeurd. Apparaten met de oude versie van de app kunnen deze nog steeds gebruiken. De app is echter niet bijgewerkt tot de nieuwe machtigingen zijn goedgekeurd. Op apparaten waar de app niet op is geïnstalleerd, worden deze pas geïnstalleerd wanneer de nieuwe machtigingen voor de app zijn goedgekeurd.
+Wanneer een app-ontwikkelaar machtigingen bijwerkt met een nieuwe versie van de app, worden de machtigingen niet automatisch geaccepteerd, zelfs niet wanneer u de vorige machtigingen ook al had goedgekeurd. Apparaten met de oude versie van de app kunnen deze nog steeds gebruiken. De app is echter niet bijgewerkt tot de nieuwe machtigingen zijn goedgekeurd. Op apparaten waar de app niet op is geïnstalleerd, worden deze pas geïnstalleerd wanneer de nieuwe machtigingen voor de app zijn goedgekeurd.
 
 ### <a name="update-app-permissions"></a>App-machtigingen bijwerken
 
@@ -89,19 +90,19 @@ Bezoek met enige regelmaat de beheerde Google Play-console om te controleren op 
 
 U kunt Google Play eventueel ook zodanig configureren dat de app-machtigingen per app automatisch opnieuw worden goedgekeurd. 
 
-## <a name="working-with-a-line-of-business-app-from-the-google-play-for-work-store"></a>Werken met een Line-Of-Business-app uit de Google Play for Work Store
+## <a name="working-with-a-line-of-business-app-from-the-managed-google-play-store"></a>Werken met een Line-Of-Business-app uit de beheerde Google Play Store
 
-1. Meld u aan bij de [Google Play-ontwikkelaarsconsole](https://play.google.com/apps/publish) met hetzelfde account dat u hebt gebruikt om de verbinding tussen Intune en Android for Work te configureren.  
+1. Meld u aan bij de [Google Play Store-ontwikkelaarsconsole](https://play.google.com/apps/publish) met hetzelfde account dat u hebt gebruikt om de verbinding tussen Intune en Android Enterprise te configureren.  
     Als u zich voor het eerst aanmeldt, moet u zich registreren en betalen om lid te worden van het Google-ontwikkelaarsprogramma.
 2. Selecteer in de console **Nieuwe toepassing toevoegen**.
 3. U uploadt en verstrekt informatie over uw app op dezelfde manier als bij het publiceren van een app naar de Google Play store. U moet echter wel **Deze toepassing alleen beschikbaar maken voor mijn organisatie (<*organisatienaam*>)** selecteren.
 
     ![De app alleen voor uw organisatie beschikbaar maken](media/restrict.png)
 
-    Deze bewerking zorgt ervoor dat de app alleen beschikbaar is voor uw organisatie en niet in de openbare Google Play-store.
+    Via deze bewerking komt de app alleen voor uw organisatie beschikbaar. Deze is dan niet beschikbaar in de openbare Google Play Store.
 
     Raadpleeg voor meer informatie over Android-apps uploaden en publiceren [Help bij Google-ontwikkelaarsconsole](https://support.google.com/googleplay/android-developer/answer/113469).
-4. Nadat u uw app hebt gepubliceerd, meldt u zich aan bij de [Google Play for Work-store](https://play.google.com/work) met hetzelfde account dat u hebt gebruikt om de verbinding tussen Intune en Android for Work te configureren.
+4. Nadat u uw app hebt gepubliceerd, meldt u zich aan bij de [beheerde Google Play Store](https://play.google.com/work) met hetzelfde account dat u hebt gebruikt om de verbinding tussen Intune en Android Enterprise te configureren.
 5. Controleer in het knooppunt **Apps** van de store of de door u gepubliceerde app wordt weergegeven.  
     De app is automatisch goedgekeurd om te worden gesynchroniseerd met Intune.
 

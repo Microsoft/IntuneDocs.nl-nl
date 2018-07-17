@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216323"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905220"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Apparaten inschrijven met een apparaatinschrijvingsmanageraccount
 
@@ -35,7 +35,7 @@ Gebruikers moeten in [Azure Portal](https://portal.azure.com) bestaan om ze te k
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Voorbeeld van een scenario voor apparaatinschrijvingsmanager
 
-Een restaurant wil 50 verkooptablets inzetten voor zijn bedienend personeel en bestellingsmonitors voor het keukenpersoneel. De werknemers hebben geen toegang tot bedrijfsgegevens nodig of moeten zich aanmelden als gebruikers. De Intune-beheerder maakt een manageraccount voor apparaatinschrijving en voegt een restaurantsupervisor toe aan het DEM-account. Daarmee krijgt die supervisor DEM-mogelijkheden. De supervisor kan de 50 tablets nu inschrijven met de DEM-referenties.
+Een restaurant wil 50 verkooptablets inzetten voor zijn bedienend personeel en bestellingsmonitors voor het keukenpersoneel. De werknemers hebben geen toegang tot bedrijfsgegevens nodig of moeten zich aanmelden als gebruikers. De Intune-beheerder maakt een nieuw beheeraccount voor apparaatinschrijving voor de restaurantsupervisor.  Dit account is gescheiden van het hoofdaccount van de supervisor en wordt uitsluitend gebruikt voor het bij Intune registreren van gedeelde apparaten. De supervisor kan de 50 tablets nu inschrijven met de DEM-referenties.
 
 Alleen gebruikers in [Azure Portal](https://portal.azure.com) kunnen apparaatinschrijvingsmanagers zijn. De gebruiker van het account voor apparaatinschrijvingsmanagers mag geen Intune-beheerder zijn.
 
@@ -54,7 +54,7 @@ Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanag
   - Alleen het lokale apparaat wordt weergegeven in de bedrijfsportal-app of op de website.
   - Gebruikers kunnen geen Apple VPP-apps (Volume Purchase Program) met gebruikerslicenties gebruiken vanwege de Apple ID-vereisten per gebruiker voor het beheer van apps.
   - (alleen iOS) Als u DEM gebruikt om iOS-apparaten in te schrijven, kunt u de Apple Configurator of het Apple Device Enrollment Program (DEP) of Apple School Manager (ASM) niet gebruiken om apparaten te registreren.
-  - (alleen Android) Er is een limiet voor het aantal Android for Work-apparaten dat kan worden ingeschreven met één DEM-account. Per DEM-account kunt u maximaal tien werkprofielen voor Android-apparaten inschrijven. Deze beperking geldt niet voor de inschrijving van oudere Android-apparaten.
+  - (alleen Android) Er is een limiet voor het aantal apparaten met een Android-werkprofiel dat kan worden geregistreerd met één DEM-account. Per DEM-account kunt u maximaal tien werkprofielen voor Android-apparaten inschrijven. Deze beperking geldt niet voor de inschrijving van oudere Android-apparaten.
   - Apparaten kunnen VPP-apps installeren als ze over apparaatlicenties beschikken.
   - Voor elk apparaat is een apparaatlicentie vereist. Meer informatie over [gebruikers- en apparaatlicenties](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 

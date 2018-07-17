@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744768"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905526"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Een beleid voor voorwaardelijke toegang maken voor Exchange On-Premises en verouderde Exchange Online Dedicated
 
@@ -44,7 +44,7 @@ Controleer het volgende voordat u voorwaardelijke toegang configureert:
 
 - De connector ondersteunt de **Exchange CAS-omgeving**. Vanuit technisch oogpunt kunt u de connector desgewenst rechtstreeks op de Exchange CAS-server installeren, maar dit wordt niet aangeraden, omdat hiermee de belasting van de server wordt verhoogd. Wanneer u de connector configureert, moet u deze zodanig instellen dat deze communiceert met een van de Exchange CAS-servers.
 
-- **Exchange ActiveSync** kan worden geconfigureerd met verificatie op basis van certificaten of het invoeren van gebruikersreferenties.
+- **Exchange ActiveSync** kan worden geconfigureerd met verificatie op basis van certificaten of door het invoeren van gebruikersreferenties.
 
 - Wanneer beleid voor voorwaardelijke toegang wordt geconfigureerd en een gebruiker deel uitmaakt van de doelgroep voor het beleid, moet het volgende met het **apparaat** zijn gedaan voordat een gebruiker verbinding kan maken met zijn e-mail:
     - Het apparaat moet zijn **ingeschreven** bij Intune of lid zijn van een domein.
@@ -63,7 +63,7 @@ Controleer het volgende voordat u voorwaardelijke toegang configureert:
 - Windows Phone 8.1 en hoger
 - Systeemeigen e-mailapp voor iOS.
 - EAS-mailclients zoals Gmail op Android 4 of hoger.
-- EAS-mailclients **Android for Work-apparaten:** alleen de apps **Gmail** en **Nine Work** in het **werkprofiel** worden ondersteund op Android for Work-apparaten. Voorwaardelijke toegang werkt alleen in combinatie met Android for Work als u een e-mailprofiel voor de app Gmail of Nine Work implementeert en die apps ook implementeert als verplicht te installeren apps.
+- EAS-mailclients **apparaten met een Android-werkprofiel:** alleen de apps **Gmail** en **Nine Work** in het **werkprofiel** worden ondersteund op apparaten met een Android-werkprofiel. Voorwaardelijke toegang werkt alleen in combinatie met Android-werkprofielen als u een e-mailprofiel voor de app Gmail of Nine Work implementeert en die apps ook implementeert als verplicht te installeren apps.
 
 > [!NOTE]
 > De Microsoft Outlook-app voor Android en iOS wordt niet ondersteund. 

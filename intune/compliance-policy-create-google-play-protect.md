@@ -15,12 +15,12 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e99671c6c82a7652ba3489d5cc217dfedac72788
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 346e69b56d9ee690e2bc3f3970e47d6d25ddcff7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31835364"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905169"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Meer informatie over het maken van een nalevingsbeleid voor apparaten om Google Play Protect in te schakelen
 
@@ -49,9 +49,9 @@ Het nalevingsbeleid dat deze instellingen vereist kan vervolgens worden gericht 
  - **Bedreigingsscan voor apps**  
    Hiermee kunt u vereisen dat de Android-functie **Apps controleren** is ingeschakeld.
     > [!Note]  
-    > Deze functie is op oudere Android-platforms een nalevingsinstelling. Intune kan alleen controleren of deze instelling is ingeschakeld op het apparaatniveau. Op apparaten met werkprofielen, voorheen bekend als Android for Work, is deze instelling te vinden als een configureerbare beleidsinstelling. Hiermee kunnen beheerders de instelling voor een apparaat inschakelen.
+    > Deze functie is op oudere Android-platforms een nalevingsinstelling. Intune kan alleen controleren of deze instelling is ingeschakeld op het apparaatniveau. Op apparaten met een Android-werkprofiel is deze instelling te vinden als een configureerbare beleidsinstelling. Hiermee kunnen beheerders de instelling voor een apparaat inschakelen.
 
-    Als uw bedrijf Android-werkprofielen gebruikt, kunt u **Bedreigingsscan voor apps** inschakelen voor uw geregistreerde apparaten. Hiermee kunt u een apparaatprofiel instellen en de systeembeveiligingsinstelling verplicht stellen. Zie [Android for Work-apparaatbeperkingsinstellingen in Microsoft Intune](device-restrictions-android-for-work.md) voor meer informatie.
+    Als uw bedrijf Android-werkprofielen gebruikt, kunt u **Bedreigingsscan voor apps** inschakelen voor uw geregistreerde apparaten. Hiermee kunt u een apparaatprofiel instellen en de systeembeveiligingsinstelling verplicht stellen. Zie [Apparaatbeperkingsinstellingen voor Android-werkprofielen in Microsoft Intune](device-restrictions-android-for-work.md) voor meer informatie.
 
  - **SafetyNet-attestation voor apparaat**  
    Hiermee kunt u instellen aan welk integriteitsniveau voor SafetyNet-attestation het apparaat moet voldoen. Deze niveaus zijn onder andere **Niet geconfigureerd**, **Eenvoudige integriteitscontrole** en **Eenvoudige integriteitscontrole & gecertificeerde apparaten**.

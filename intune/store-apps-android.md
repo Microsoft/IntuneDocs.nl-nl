@@ -15,12 +15,12 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f62cb3a99a9cfd328cc041f095b0980eacc99852
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 4fc64f672a5c488848303f8d5ea5ea1467b0b195
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224694"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869493"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Android Store-apps aan Microsoft Intune toevoegen
 
@@ -31,12 +31,11 @@ Voordat u een app toewijst aan een apparaat of een groep gebruikers, moet u de a
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**.  
     Intune bevindt zich in de sectie **Controle en beheer**.
-1. Selecteer **Mobiele apps** in het deelvenster **Intune**.
-2. Selecteer **Apps** in het werkbelastingvenster **Mobiele apps** onder **Beheren**.
-3. Selecteer **Toevoegen**.
-4. In het deelvenster **App toevoegen** selecteert u **Android** bij de beschikbare typen **Store-apps**.
-5. Als u de app-gegevens wilt configureren, selecteert u **Configureren** en geeft u de volgende informatie op.  
-    Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden mogelijk automatisch ingevuld.
+3. Selecteer **Mobiele apps** in het deelvenster **Intune**.
+4. Selecteer **Apps** in het werkbelastingvenster **Mobiele apps** onder **Beheren**.
+5. Selecteer **Toevoegen**.
+6. In het deelvenster **App toevoegen** selecteert u **Android** bij de beschikbare typen **Store-apps**.
+7. Als u de app-gegevens wilt configureren, selecteert u **Configureren** en geeft u de volgende informatie op. Voor Android-apps gaat u naar de [Google Play Store](https://play.google.com/store) en zoekt u de app die u wilt implementeren. Selecteer de app en noteer de app-gegevens. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden mogelijk automatisch ingevuld.
     - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal moet worden weergegeven. Zorg ervoor dat u alleen unieke app-namen gebruikt. Als u twee dezelfde app-namen gebruikt, wordt voor gebruikers slechts één naam in de bedrijfsportal weergegeven.
     - **Beschrijving**: voer een beschrijving in voor de app. Deze beschrijving wordt voor gebruikers weergegeven in de bedrijfsportal.
     - **Uitgever**: voer de naam van de uitgever van de app in.

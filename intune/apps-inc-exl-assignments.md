@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2afba3eafb32a06ff19e2cbbf3b87d27edccf0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224660"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905407"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>App-toewijzingen opnemen en uitsluiten in Microsoft Intune
 
@@ -37,7 +37,7 @@ Intune houdt geen rekening met koppelingen van gebruikers aan apparaten bij het 
 >
 > Intune biedt in de console de vooraf gemaakte groepen **Alle gebruikers** en **Alle apparaten**. De groepen hebben ingebouwde optimalisaties voor uw gemak. We raden u ten zeerste aan deze groepen te gebruiken om u op alle gebruikers en alle apparaten te richten in plaats van groepen Alle gebruikers en Alle apparaten die u mogelijk zelf hebt gemaakt.  
 >
-> Android Enterprise (voorheen bekend als Android for Work) biedt ondersteuning voor het opnemen en uitsluiten van groepen. U kunt de ingebouwde groepen **Alle gebruikers** en **Alle apparaten** gebruiken voor de Android Enterprise-app-toewijzing. 
+> Android Enterprise biedt ondersteuning voor het insluiten en uitsluiten van groepen. U kunt de ingebouwde groepen **Alle gebruikers** en **Alle apparaten** gebruiken voor het toewijzen van Android Enterprise-apps. 
 
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Groepen opnemen en uitsluiten bij het toewijzen van apps 

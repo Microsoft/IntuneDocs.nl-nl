@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6753e0232548d862b46a273f1be0105ad7f16d63
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 7f52c43f8918589c1b66034ad68908f4d5ddba6d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831942"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905118"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>VPN-instellingen in Microsoft Intune configureren voor Android-apparaten 
 
@@ -30,7 +30,7 @@ In dit artikel leest u meer over de Intune-instellingen die u kunt gebruiken om 
 U kunt VPN-instellingen voor de volgende platforms configureren:
 
 - [Android](#android-vpn-settings)
-- [Android for Work](#android-for-work-vpn-settings)
+- [Apparaten met Android-werkprofielen](#android-for-work-vpn-settings)
 
 Afhankelijk van de instellingen die u kiest, kunnen niet alle volgende waarden worden geconfigureerd.
 
@@ -51,7 +51,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle volgende waarden w
 - **Vingerafdruk** (alleen voor Check Point Capsule VPN): geef een tekenreeks op (bijvoorbeeld 'Contoso-vingerafdrukcode') die wordt gebruikt om te controleren of de VPN-server kan worden vertrouwd. Een vingerafdruk kan worden verzonden naar de client zodat deze alle servers vertrouwt die dezelfde vingerafdruk presenteren wanneer er verbinding wordt gemaakt. Als het apparaat nog niet over de vingerafdruk beschikt, wordt de gebruiker gevraagd om de VPN-server waarmee deze verbinding maakt, te vertrouwen terwijl de vingerafdruk wordt weergegeven (de gebruiker controleert de vingerafdruk handmatig en kiest Vertrouwen om verbinding te maken).
 - **Sleutel- en waardeparen voor de kenmerken van de Citrix VPN invoeren** (alleen voor Citrix): voer sleutel- en waardeparen in, afkomstig van Citrix, om de eigenschappen van de VPN-verbinding te configureren.
 
-## <a name="android-for-work-vpn-settings"></a>VPN-instellingen voor Android for Work
+## <a name="android-work-profile-device-vpn-settings"></a>Apparaten met Android-werkprofielen - VPN-instellingen
 
 **Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers zien deze naam wanneer ze op hun apparaat in de lijst met beschikbare VPN-verbindingen zoeken.
 - **IP-adres of FQDN**: geef het IP-adres of de Fully Qualified Domain Name (FQDN) op van de VPN-server waarmee apparaten verbinding maken. Voorbeelden: **192.168.1.1**, **vpn.contoso.com**.

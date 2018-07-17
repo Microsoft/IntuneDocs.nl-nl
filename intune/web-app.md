@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d62341e35bf851bb429b15a582183bec62a9d4a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223387"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905237"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Web-apps aan Microsoft Intune toevoegen
 
@@ -31,7 +31,7 @@ Intune biedt ondersteuning voor diverse typen apps, waaronder web-apps. Een web-
 Voordat u een app kunt beheren en aan uw gebruikers kunt toewijzen, voegt u de app toe aan Intune. Er wordt door Intune een snelkoppeling gemaakt naar de web-app op het beginscherm van het apparaat van de gebruiker.
 
 > [!Note]
-> Web-apps worden niet ondersteund op Android for Work-apparaten en macOS.
+> Web-apps worden niet ondersteund op apparaten met een Android-werkprofiel en macOS.
 
 ## <a name="add-a-web-app-to-intune"></a>Een web-app toevoegen aan Intune
 Voer de volgende stappen uit om een app toe te voegen aan Intune als een snelkoppeling naar een app op internet:

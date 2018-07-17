@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45ab6434245c0dd412b2e9d23e394f72871a459a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ae114b9aec2794556a8162604a533c24c11bafba
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829761"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905135"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Apparaten extern vergrendelen met Intune
 
@@ -31,12 +31,14 @@ Met de apparaatactie **Extern vergrendelen** wordt het apparaat vergrendeld. De 
 **Externe vergrendeling** wordt ondersteund op de volgende platformen:
 
 - Android
+- Kioskapparaten voor Android Enterprise
+- Apparaten met Android Enterprise-werkprofiel
 - iOS
 - macOS
 - Windows 10 Mobile
 - Windows Phone 8.1 en hoger
 
-**Extern vergrendelen** wordt *niet* ondersteund voor:
+**Extern vergrendelen** wordt niet ondersteund voor:
 - Windows 10 Desktop
 
 > [!NOTE]

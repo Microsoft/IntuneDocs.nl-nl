@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0a080660fcc1b285e0ed00b76a94c2f0cc1ba40a
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832764"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844960"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Beslissingen voor de technologie voor het inschakelen van BYOD met Microsoft Enterprise Mobility + Security (EMS)
 
@@ -39,7 +39,7 @@ U kunt eenvoudig gebruikers ertoe bewegen hun apparaten te registreren bij appar
 **Naleving**: sommige organisaties moeten voldoen aan wettelijke of andere beleidsregels die specifieke MDM-besturingselementen aanroepen. U hebt bijvoorbeeld MDM nodig om het hele apparaat te versleutelen of om een rapport van alle apps op het apparaat te produceren.
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>Veelvoorkomende redenen om alleen de apps te beheren (MAM)
-MAM zonder MDM is zeer populair bij organisaties die ondersteuning bieden voor BYOD. U kunt ervoor zorgen dat gebruikers toegang tot e-mail krijgen vanuit Outlook Mobile (waarmee ondersteuning wordt geboden voor MAM-beveiligingen) door een beleid voor voorwaardelijke toegang te implementeren voor Exchange Online. Misschien wilt u om een van de volgende redenen alleen apps beheren:
+MAM zonder MDM is zeer populair bij organisaties die ondersteuning bieden voor BYOD. U kunt ervoor zorgen dat gebruikers toegang tot e-mail krijgen vanuit Outlook Mobile (waarmee ondersteuning wordt geboden voor MAM-beveiliging) door een beleid voor voorwaardelijke toegang te implementeren voor Exchange Online. Misschien wilt u om een van de volgende redenen alleen apps beheren:
 
 **Gebruikerservaring**: MDM-registratie omvat veel waarschuwingsprompts (afgedwongen door het platform) die er vaak toe leiden dat gebruikers besluiten hun e-mail helemaal niet op het persoonlijke apparaat te gebruiken. MAM is veel minder verontrustend voor gebruikers, omdat ze slechts eenmaal een pop-upvenster krijgen waarin wordt gemeld dat er MAM-beveiligingen zijn ingesteld.
 

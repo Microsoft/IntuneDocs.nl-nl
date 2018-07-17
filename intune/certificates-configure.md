@@ -14,12 +14,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771802"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905203"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Een certificaatprofiel configureren voor uw apparaten in Microsoft Intune
 
@@ -43,7 +43,7 @@ Elk van deze typen certificaten heeft eigen voorwaarden en infrastructuurvereist
     - iOS 8.0 en hoger
     - macOS 10.11 of hoger
     - Android 4.0 en hoger
-    - Android for Work
+    - Android-werkprofiel
     - Windows 8.1 en hoger
     - Windows Phone 8.1 en hoger
     - Windows 10 en hoger
@@ -52,7 +52,7 @@ Elk van deze typen certificaten heeft eigen voorwaarden en infrastructuurvereist
 
    - iOS 8.0 en hoger
    - Android 4.0 en hoger
-   - Android for Work
+   - Android-werkprofiel
    - Windows 10 (Desktop en Mobile) en hoger
 
    U kunt alleen een **SCEP-certificaatprofiel** gebruiken voor apparaten met de volgende platformen:
@@ -95,7 +95,7 @@ Maak een profiel voor een vertrouwd certificaat voordat u een SCEP- of PKCS-cert
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform voor dit vertrouwde certificaat. Op dit moment kunt u een van de volgende platformen kiezen voor certificaatinstellingen:
 
     - **Android**
-    - **Android for Work**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**

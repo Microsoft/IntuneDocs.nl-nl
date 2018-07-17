@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d917d2449e75b89db00d453b72940a93efb03321
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021877"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904999"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Een profiel maken met aangepaste instellingen in Intune
 
@@ -39,7 +39,7 @@ Aangepaste instellingen worden voor elk platform anders geconfigureerd. Om bijvo
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de aangepaste instellingen wilt toepassen. U kunt kiezen uit de volgende platforms:
 
     - **Android**
-    - **Android for Work**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -55,7 +55,7 @@ Aangepaste instellingen worden voor elk platform anders geconfigureerd. Om bijvo
     - [Windows Phone 8.1-instellingen](custom-settings-windows-phone-8-1.md)
     - [Windows 10-instellingen](custom-settings-windows-10.md)
     - [Instellingen van Windows Holographic for Business](custom-settings-windows-holographic.md)
-    - [Android for Work-instellingen](custom-settings-android-for-work.md)
+    - [Android-werkprofielinstellingen](custom-settings-android-for-work.md)
 
 8. Wanneer u bent klaar, selecteert u **Maken**.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d99812c57596e10d0cdfa2c0f4504f8a6ac583c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223795"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869335"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Aan de slag met het toevoegen van apps in Microsoft Intune
 
@@ -31,6 +31,9 @@ In Intune kunt u deze typen apps toevoegen en toewijzen aan uw bedrijfsapparaten
 - **Apps die intern zijn ontwikkeld (line-of-business)**: u uploadt een bestand dat wordt gedownload naar de apparaten van gebruikers.
 - **Apps die zijn ingebouwd**:hierbij wijst u gecureerde beheerde apps, zoals Office 365-apps, toe aan iOS- en Android-apparaten.
 - **Apps op internet**: er wordt door Intune een snelkoppeling gemaakt naar de web-app op het beginscherm van het apparaat.
+
+> [!NOTE]
+> Het kan maximaal acht uur duren voordat nieuw beleid dat is toegepast op een dynamische apparaatgroep wordt toegepast op alle apparaten in de groep.
 
 ## <a name="how-do-i-assign-a-public-store-app"></a>Hoe kan ik een app uit de openbare store toewijzen?
 

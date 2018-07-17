@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c8eb121b3db52f0fdfc30d7d8dff7ef0f7bf97b
-ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
+ms.openlocfilehash: 24be76637257a3252d6660e8912d7fd2e214dccf
+ms.sourcegitcommit: 4ef14cc543b73191862201c1e0bae44dddd7d9f6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/31/2018
-ms.locfileid: "34456347"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37921345"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Filterinstellingen voor webinhoud op iOS-apparaten
 
@@ -58,7 +58,7 @@ Als u geen URL's opgeeft, kunnen eindgebruikers geen websites openen, met uitzon
 ## <a name="specific-websites-only"></a>Alleen specifieke websites
 
 1. Configureer in het deelvenster **Filter voor webinhoud** de volgende instellingen voor elke website die u wilt toestaan:
-    - **URL**: voer de URL in van de website die u wilt toestaan, bijvoorbeeld **http://www.contoso.com**.
+    - **URL**: voer de URL in van de website die u wilt toestaan, bijvoorbeeld `https://www.contoso.com`.
     - **Pad naar bladwijzer**: voer het pad in naar de locatie waar u de bladwijzer wilt opslaan, bijvoorbeeld **Contoso/Business-Apps**. Als u geen pad toevoegt, wordt de bladwijzer toegevoegd aan de standaardmap voor bladwijzers op het apparaat.
     - **Titel**: geef een beschrijvende titel voor de bladwijzer op.
 2. Klik op **Toevoegen** nadat u de gegevens voor elke website hebt ingevoerd.

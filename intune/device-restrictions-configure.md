@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 56ddf28bb9e81417b4b91bb18baaba14f07fbdd9
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024614"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905050"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen configureren in Microsoft Intune
 
@@ -56,7 +56,7 @@ Lees over de basisprincipes van apparaatbeperkingsprofielen en lees dan meer art
     - [Windows 10-instellingen](device-restrictions-windows-10.md)
     - [Windows 10 Team-instellingen](device-restrictions-windows-10-teams.md)
     - [Instellingen van Windows Holographic for Business](device-restrictions-windows-holographic.md)
-    - [Android for Work-instellingen](device-restrictions-android-for-work.md)
+    - [Android-werkprofielinstellingen](device-restrictions-android-for-work.md)
 8. Als u klaar bent, gaat u terug naar de pagina **Profiel maken** en kiest u **Maken**.
 
 Het profiel wordt gemaakt en wordt weergegeven op de pagina met de profielenlijst.

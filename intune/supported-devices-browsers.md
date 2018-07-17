@@ -15,12 +15,12 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f468ff8115fde79bf92825f06c37ff8affabf125
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 938bcd352294a9875aaa3eef717ef3857211961a
+ms.sourcegitcommit: abc3d51923e55e8779a5d84f2fcab60d0a0d8645
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31033367"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37434263"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Ondersteunde besturingssystemen en browsers
 
@@ -28,7 +28,7 @@ ms.locfileid: "31033367"
 
 Bestudeer, voordat u Microsoft Intune instelt, de ondersteunde besturingssystemen en browsers.
 
-Raadpleeg [Werk gedaan krijgen met beheerde apparaten](/intune-user-help/company-portal-frequently-asked-questions) voor meer informatie over de installatie van Intune op uw apparaat. Maak uzelf ook vertrouwd met het [bandbreedtegebruik van het Intune-netwerk](network-bandwidth-use.md) ([klassieke portal](/intune-classic/get-started/network-bandwidth-use)).
+Raadpleeg voor hulp bij de installatie van Intune op uw apparaat [Beheerde apparaten gebruiken om werk gedaan te krijgen](/intune-user-help/company-portal-frequently-asked-questions) en [Bandbreedtegebruik](network-bandwidth-use.md) ([klassieke portal](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-operating-systems"></a>Besturingssystemen die door Intune worden ondersteund
 
@@ -38,12 +38,12 @@ U kunt apparaten met de volgende besturingssystemen beheren:
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Ondersteunde Samsung Knox Standard-apparaten
 
-Via de bedrijfsportal-app wordt de Samsung Knox-activering alleen uitgevoerd tijdens MDM-registratie als het apparaat wordt weergegeven in de [lijst met ondersteunde Knox-apparaten](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Hierdoor wordt voorkomen dat er Knox-activeringsfouten optreden waardoor MDM-registratie mislukt. Apparaten die geen ondersteuning bieden voor Samsung Knox-activering, worden geregistreerd als standaard-Android-apparaten. Bepaalde modelnummers van Samsung-apparaten bieden ondersteuning voor Knox, andere niet. Controleer de KNOX-compatibiliteit bij de verkoper van uw apparaat voordat u Samsung-apparaten koopt en implementeert.
+Via de bedrijfsportal-app wordt de Samsung Knox-activering alleen uitgevoerd tijdens MDM-inschrijving als het apparaat wordt weergegeven in de [lijst met ondersteunde Knox-apparaten](https://www.samsungknox.com/knox-supported-devices/knox-workspace), ter vermijding van fouten bij de Knox-activering, waardoor MDM-inschrijving niet mogelijk is. Apparaten die geen ondersteuning bieden voor Samsung Knox-activering, worden geregistreerd als standaard-Android-apparaten. Bepaalde modelnummers van Samsung-apparaten bieden ondersteuning voor Knox, andere niet. Controleer de KNOX-compatibiliteit bij de verkoper van uw apparaat voordat u Samsung-apparaten koopt en implementeert.
 
 > [!NOTE]
 > Voor het registreren van Samsung Knox-apparaten moet u wellicht [toegang tot Samsung-servers inschakelen](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
 
-De volgende Samsung-apparaatmodellen bieden geen ondersteuning voor Knox en worden geregistreerd als systeemeigen Android-apparaten door de bedrijfsportal-app voor Android:
+De volgende lijst van Samsung-apparaatmodellen bieden geen ondersteuning voor Knox. Deze zijn geregistreerd als systeemeigen Android-apparaten door de bedrijfsportal-app voor Android:
 
 | **Apparaatnaam** | **Apparaatmodelnummers** |
 | --- | --- |
@@ -103,7 +103,7 @@ De volgende browsers worden ondersteund voor deze portals:
 - Microsoft Internet Explorer 11
 - Safari (meest recente versie, alleen Mac)
 - Chrome (meest recente versie)
-- Mozilla Firefox met Silverlight ingeschakeld [Meer informatie (versies vóór versie 52) ](https://go.microsoft.com/fwlink/?linkid=836872)
+- Firefox (meest recente versie)
 
 
 

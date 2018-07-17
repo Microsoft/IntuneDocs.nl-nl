@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11f1a48b5b2dcff421603dd4538ff054d174fe66
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223404"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869369"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
@@ -47,7 +47,7 @@ Met dit type app kunt u eenvoudig Office 365-apps toewijzen aan de door u beheer
 3. Selecteer **Mobiele apps** in het deelvenster **Intune**.
 4. Selecteer **Apps** in het werkbelastingvenster **Mobiele apps** onder **Beheren**.
 5. Selecteer **Toevoegen**.
-6. Selecteer **Windows 10** in het deelvenster **Apps toevoegen**, in de lijst **App-type** onder **Office 365**.
+6. Selecteer **Windows 10** in het deelvenster **Apps toevoegen**, in de lijst **App-type** onder **Office 365 Suite**.
 
 U kunt de app-suite nu configureren.
 
@@ -71,15 +71,15 @@ In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze inf
 2. Voer in het deelvenster **App-pakketgegevens** het volgende uit:
     - **Pakketnaam**: voer de naam van het app-pakket in zoals deze wordt weergegeven in de bedrijfsportal. Zorg ervoor dat alle pakketnamen die u gebruikt, uniek zijn. Als dezelfde naam van een app-pakket twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
     - **Beschrijving app-pakket**: voer een beschrijving in voor het app-pakket. Hier kunt u bijvoorbeeld de apps vermelden die in het pakket zijn opgenomen.
-    - **Uitgever**: voer de naam van de uitgever van de app in.
+    - **Uitgever**: Microsoft wordt weergegeven als de uitgever.
     - **Categorie**: selecteer een of meer ingebouwde app-categorieën of een categorie die u hebt gemaakt (optioneel). Met deze instellingen kunnen gebruikers het app-pakket gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
     - **Deze weergeven als aanbevolen app in de bedrijfsportal**: selecteer deze instelling om het app-pakket prominent weer te geven op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
     - **Informatie-URL**: voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
     - **Privacy-URL**: voer de URL in van een website die privacyinformatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Ontwikkelaar**: voer de naam in van de app-ontwikkelaar (optioneel).
-    - **Eigenaar**: voer een naam in voor de eigenaar van deze app, bijvoorbeeld *HR-afdeling* (optioneel).
+    - **Ontwikkelaar**: Microsoft wordt weergegeven als de ontwikkelaar.
+    - **Eigenaar**: Microsoft wordt weergegeven als de eigenaar.
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
-    - **Logo**: upload een pictogram dat samen met de app wordt weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
+    - **Logo**: het Office 365-logo wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
 3. Selecteer **OK**.
 
 ## <a name="configure-app-settings"></a>App-instellingen configureren

@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832303"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905324"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Wi-Fi-instellingen configureren in Microsoft Intune
 
@@ -37,7 +37,7 @@ Een voorbeeld: u installeert een nieuw Wi-Fi-netwerk met de naam Contoso Wi-Fi e
 Wi-Fi-profielen ondersteunen de volgende apparaatplatformen:
 
 - Android 4 en hoger
-- Android for Work
+- Android-werkprofielen
 - iOS 8.0 en hoger
 - macOS (Max OS X 10.11 en hoger)
 
@@ -55,7 +55,7 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 4. Voer in het deelvenster **Profiel maken** een **naam** en een **beschrijving** in voor het Wi-Fi-profiel.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de Wi-Fi-instellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor Wi-Fi-instellingen:
     - **Android**
-    - **Android for Work**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -69,7 +69,7 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
 
    Met het profiel **Wi-Fi importeren** (voor Windows 8.1 en later) kunt u Wi-Fi-instellingen die u eerder van een ander apparaat hebt geëxporteerd, importeren als een XML-bestand.
 1. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
-    - [Instellingen voor Android en Android for Work](wi-fi-settings-android.md)
+    - [Android en Android-werkprofielinstellingen](wi-fi-settings-android.md)
     - [iOS-instellingen](wi-fi-settings-ios.md)
     - [macOS-instellingen](wi-fi-settings-macos.md)
     - [Instellingen voor Windows 8.1 en hoger](wi-fi-settings-import-windows-8-1.md) (inclusief Windows Holographic for Business)

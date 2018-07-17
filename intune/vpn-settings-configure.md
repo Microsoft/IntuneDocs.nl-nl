@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744598"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905101"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>VPN-profielen maken in Intune
 
@@ -40,7 +40,7 @@ U kunt aangepast Intune-configuratiebeleid gebruiken om VPN-profielen te maken v
 
 U kunt VPN-profielen met de volgende verbindingstypen maken:
 
-|Type verbinding|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Type verbinding|Android<br>Android-werkprofielen|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |Automatisch|Nee|Nee|Nee|Nee|Nee|Ja|
 |Check Point Capsule VPN|Ja|Ja|Ja|Ja|Ja|Ja|
@@ -68,21 +68,21 @@ Zie [Profielen met aangepaste instellingen maken](custom-settings-configure.md) 
 3. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 4. Voer een **naam** en **beschrijving** in voor het VPN-profiel.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de VPN-instellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor VPN-apparaatinstellingen:
-  - **Android**
-  - **Android for Work**
-  - **iOS**
-  - **macOS**
-  - **Windows Phone 8.1**
-  - **Windows 8.1 en hoger**
-  - **Windows 10 en hoger**
+   - **Android**
+   - **Android Enterprise**
+   - **iOS**
+   - **macOS**
+   - **Windows Phone 8.1**
+   - **Windows 8.1 en hoger**
+   - **Windows 10 en hoger**
 6. Kies **VPN** in de vervolgkeuzelijst **Profieltype**.
 7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
-  - [Instellingen voor Android en Android for Work](vpn-settings-android.md)
-  - [iOS-instellingen](vpn-settings-ios.md)
-  - [macOS-instellingen](vpn-settings-macos.md)
-  - [Windows Phone 8.1-instellingen](vpn-settings-windows-phone-8-1.md)
-  - [Windows 8.1-instellingen](vpn-settings-windows-8-1.md)
-  - [Instellingen voor Windows 10](vpn-settings-windows-10.md) (inclusief Windows Holographic for Business)
+   - [Android en Android-werkprofielinstellingen](vpn-settings-android.md)
+   - [iOS-instellingen](vpn-settings-ios.md)
+   - [macOS-instellingen](vpn-settings-macos.md)
+   - [Windows Phone 8.1-instellingen](vpn-settings-windows-phone-8-1.md)
+   - [Windows 8.1-instellingen](vpn-settings-windows-8-1.md)
+   - [Instellingen voor Windows 10](vpn-settings-windows-10.md) (inclusief Windows Holographic for Business)
 8. Wanneer u bent klaar, **maakt** u uw profiel
 
 Het profiel wordt gemaakt en wordt weergegeven in de profielenlijst. Zie [Apparaatprofielen toewijzen](device-profile-assign.md) om dit profiel toe te wijzen aan groepen.
