@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f2d06c879343a0f9701a8531c5543b961d792f
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906002"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993714"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>LOB-apps (Line-Of-Business) voor macOS toevoegen in Microsoft Intune
 
@@ -32,8 +32,6 @@ Gebruik de informatie in dit artikel om macOS-Line-Of-Business-apps toe te voege
 >Hoewel gebruikers van macOS-apparaten sommige ingebouwde macOS-apps, zoals Stocks en Maps, kunnen verwijderen, kunt u Intune niet gebruiken om deze apps opnieuw te implementeren. Als eindgebruikers deze apps verwijderen, moeten ze naar de appstore gaan en ze handmatig opnieuw installeren.
 >
 >Alleen *.pkg*-bestanden kunnen worden gebruikt om LOB-apps voor macOS te uploaden in Microsoft Intune. Het converteren van andere indelingen, zoals *.dmg* naar *.pkg* wordt niet ondersteund.
-
-Met Microsoft Intune kunnen macOS LOB-apps worden geïmplementeerd als **Vereist** of **Beschikbaar met inschrijving**. Eindgebruikers kunnen apps laten implementeren als **Beschikbaar** met behulp van de bedrijfsportal voor macOS of de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
 
 ## <a name="step-1---pre-process-your-software-setup-file"></a>Stap 1: het software-installatiebestand vooraf verwerken
 

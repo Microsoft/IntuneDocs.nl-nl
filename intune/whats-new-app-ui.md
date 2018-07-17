@@ -15,12 +15,12 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7c961be9789309fdea57d1a97073c4292b20149
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 998df5181b553b33b570cd78d7f0e490336d7e95
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906070"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039383"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates zijn aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Inzicht in deze updates kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
@@ -29,7 +29,7 @@ Lees welke updates zijn aangebracht in de gebruikersinterface voor apps die uw e
 
 ## <a name="week-of-april-23-2018"></a>Week van 23 april 2018
 #### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Navigatieweergave in de bedrijfsportal voor Windows 10 is bijgewerkt <!-- 1195010 -->
-De Intune-bedrijfsportal-app voor Windows 10 is bijgewerkt met de [Fluent Design System-navigatieweergave](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics). Aan de zijkant van de app wordt een statische verticale lijst weergegeven met alle toplevelpagina's. Klik op een willekeurige koppeling om snel pagina's weer te geven en te schakelen tussen pagina's. Dit is de eerste van verschillende updates die onderdeel uitmaken van onze voortdurende inspanningen om een meer adaptieve, intuïtieve en vertrouwde versie van Intune te maken. 
+De Intune-bedrijfsportal-app voor Windows 10 is bijgewerkt met de [Fluent Design System-navigatieweergave](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Aan de zijkant van de app wordt een statische verticale lijst weergegeven met alle toplevelpagina's. Klik op een willekeurige koppeling om snel pagina's weer te geven en te schakelen tussen pagina's. Dit is de eerste van verschillende updates die onderdeel uitmaken van onze voortdurende inspanningen om een meer adaptieve, intuïtieve en vertrouwde versie van Intune te maken. 
 
 ![Schermafbeelding van het dashboard voor de bedrijfsportal-app waarop de Fluent Design-navigatieweergave wordt weergegeven](./media/1804_WindowsCP_Fluent_01.png)
 
@@ -429,7 +429,7 @@ Dit zijn de plannen voor manieren waarop we de gebruikerservaring gaan verbetere
 
 ### <a name="ui-iwp"></a>Nieuwe update van de gebruikerservaring voor de bedrijfsportalwebsite <!--2000968-->
 
-In april wordt een nieuwe ervaring voor de bedrijfsportalwebsite geïntroduceerd, met UI-updates, gestroomlijnde werkstromen en toegankelijkheidsverbeteringen. Deze omvat klantgestuurde verbeteringen zoals het delen van apps en verbeterde algehele prestaties voor een gebruikersvriendelijker ervaring.
+In augustus beginnen we met de introductie van een nieuwe ervaring voor de bedrijfsportalwebsite, met UI-updates, gestroomlijnde werkstromen en toegankelijkheidsverbeteringen. Deze omvat klantgestuurde verbeteringen zoals het delen van apps en verbeterde algehele prestaties voor een gebruikersvriendelijker ervaring.
 
 Er is een aantal nieuwe functies toegevoegd op basis van feedback van klanten zoals u. Hiermee worden de bestaande functionaliteit en bruikbaarheid aanzienlijk verbeterd:
 

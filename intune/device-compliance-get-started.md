@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905067"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225439"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Aan de slag met apparaatnalevingsbeleid in Intune
 
@@ -88,7 +88,7 @@ Het volgende is vereist om apparaatnalevingsbeleid te gebruiken:
 
 Wanneer een apparaat wordt ingeschreven bij Intune, begint het Azure AD-registratieproces en worden de apparaatkenmerken in Azure AD bijgewerkt. Een van de belangrijkste apparaatgegevens is de nalevingsstatus van het apparaat. Deze nalevingsstatus wordt door de beleidsregels voor voorwaardelijke toegang gebruikt om de toegang tot e-mail en andere bedrijfsresources toe te staan of te blokkeren.
 
-In het [Azure AD-registratieproces](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) vindt u meer informatie.
+In het [Azure AD-registratieproces](https://docs.microsoft.com/azure/active-directory/device-management-introduction) vindt u meer informatie.
 
 ### <a name="assign-a-resulting-device-configuration-profile-status"></a>Een resulterend configuratieprofiel aan een apparaatstatus toewijzen
 
