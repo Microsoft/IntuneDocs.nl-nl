@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905985"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028725"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune
 
@@ -51,7 +51,7 @@ De volgende tabel bevat de specifieke app-typen en informatie over hoe u deze ku
 | iOS Store-apps  | Store-app  | Selecteer **iOS** als het **app-type**, zoek de app en selecteer de app in Intune. |
 | Windows Phone 8.1 Store-apps  | Store-app  | Selecteer **Windows Phone 8.1** als het **app-type** en voer de URL van de Microsoft Store in voor de app. |
 | Microsoft Store-apps  | Store-app  | Selecteer **Windows** als het **app-type** en voer de URL van de Microsoft Store in voor de app. |
-| Android Work-apps | Store-app  | Zoek de Android-werkprofiel-app in de beheerde Google Play Store en keur deze goed.  |
+| Apps voor Android-werkprofiel | Store-app  | Zoek de Android-werkprofiel-app in de beheerde Google Play Store en keur deze goed.  |
 | Office 365-apps voor Windows 10  | Store-app (Office 365) | Selecteer **Windows 10** bij **Office 365-suite** als het **app-type** en selecteer vervolgens de Office 365-app die u wilt installeren.  |
 | Office 365-apps voor macOS | Store-app (Office 365) | Selecteer **macOS** bij **Office 365-suite** als het **app-type** en selecteer vervolgens de Office 365-app-suite. |
 | Android LOB-apps (Line-Of-Business) | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een Android-installatiebestand toe met de extensie **.apk**.  |

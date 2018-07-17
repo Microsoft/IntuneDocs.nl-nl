@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f37c45945df460dabac60e5b06286c940728ba3
-ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
+ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051637"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225405"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Licenties toewijzen aan gebruikers zodat ze kunnen apparaten inschrijven bij Intune
 
@@ -46,7 +46,7 @@ U kunt de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) g
 
 ## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>Een Intune-licentie toewijzen met behulp van Azure Active Directory
 
-U kunt ook Intune-licenties aan gebruikers toewijzen met behulp van Azure Active Directory. Raadpleeg het artikel [License users in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) (Gebruikers een licentie verlenen via Azure Active Directory) voor meer informatie. 
+U kunt ook Intune-licenties aan gebruikers toewijzen met behulp van Azure Active Directory. Raadpleeg het artikel [License users in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) (Gebruikers een licentie verlenen via Azure Active Directory) voor meer informatie. 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Schoolgegevens synchroniseren gebruiken om licenties toe te wijzen aan gebruikers met Intune for Education
 Als uw organisatie een onderwijsinstelling is, kunt u met Schoolgegevens synchroniseren(SDS) licenties voor Intune for Education toewijzen aan gesynchroniseerde gebruikers. Kies het selectievakje Intune for Education tijdens het instellen van uw SDS-profiel.  

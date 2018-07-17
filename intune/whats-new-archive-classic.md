@@ -15,11 +15,11 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 34b219b48e5bc9e3ee688895c071b230886183eb
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834435"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225422"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Wat is er nieuw in de klassieke Intune-portal - vorige maanden
 

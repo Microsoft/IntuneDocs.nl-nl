@@ -13,17 +13,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08763aa527f24ff7b357603be5e3bd4da5083b45
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e6a71d48e81914808b9af037692a44e4f651bf55
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830430"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224758"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Apparaten met Windows Holographic upgraden naar Windows Holographic for Business
 
 
-Als u met Microsoft Intune apparaten wilt beheren waarop Windows Holographic wordt uitgevoerd, moet u upgraden van Windows Holographic naar Windows Holographic for Business. U kunt een Edition Upgrade-profiel maken voor de upgrade. Voor Microsoft HoloLens kunt u de Commercial Suite aanschaffen om de vereiste licentie voor de upgrade op te halen. Zie [Windows Holographic for Business-functies ontgrendelen](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise) voor meer informatie.
+Als u met Microsoft Intune apparaten wilt beheren waarop Windows Holographic wordt uitgevoerd, moet u upgraden van Windows Holographic naar Windows Holographic for Business. U kunt een Edition Upgrade-profiel maken voor de upgrade. Voor Microsoft HoloLens kunt u de Commercial Suite aanschaffen om de vereiste licentie voor de upgrade op te halen. Zie [Windows Holographic for Business-functies ontgrendelen](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise) voor meer informatie.
 
 ## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>Een apparaatconfiguratieprofiel van Edition Upgrade instellen
 

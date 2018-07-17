@@ -15,11 +15,11 @@ ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 9e2ad930a9ff9a12e649c6ff46f0a9f6fcacca16
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34583703"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225286"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Algemene manieren om Microsoft Intune te gebruiken
 
