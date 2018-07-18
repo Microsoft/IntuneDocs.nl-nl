@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 609e142551344a1ce39761280031463c8e34f1f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906019"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949489"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>De vroege editie voor Microsoft Intune - juli 2018
 
@@ -40,6 +40,9 @@ Deze pagina wordt regelmatig bijgewerkt. Controleer op andere updates.
 ## <a name="intune-in-the-azure-portal"></a>Intune in Azure Portal
 
 <!-- 1807 start -->
+
+### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>Meer synchronisatiemogelijkheden in de Bedrijfsportal-app voor Windows <!-- 2683177 -->
+De Bedrijfsportal-app voor Windows voegt een optie voor apparaatsynchronisatie toe aan de Windows-taakbalk en het startmenu. Klik vanuit een van de locaties om uw apparaten snel te synchroniseren en toegang te krijgen tot bedrijfsresources.  
 
 ### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>Apparaattoegangscode opnieuw instellen vanuit de bedrijfsportal-app voor Windows 10 <!-- 2101282 --> 
 Uw werknemers kunnen binnenkort hun pincodes of toegangscode van hun apparaat rechtstreeks vanuit de bedrijfsportal-app voor Windows 10 opnieuw instellen. Deze functionaliteit wordt beschikbaar op zowel extern als lokaal door Intune beheerde apparaten die ondersteuning bieden voor het opnieuw instellen van toegangscodes. Afhankelijk van het type apparaat wordt bij een aanvraag die is ingediend voor een extern apparaat de huidige toegangscode verwijderd of wordt een tijdelijke toegangscode gemaakt. Gebruikers die verzoeken om een reset voor een lokaal apparaat worden doorgestuurd naar de Instellingen-app van het apparaat.  

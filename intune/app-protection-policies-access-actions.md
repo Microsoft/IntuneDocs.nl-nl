@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2cfd426a0ae7165a7aae60a90d104852fd834db6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909113"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993731"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Gegevens selectief wissen met toegangsacties voor het app-beveiligingsbeleid in Intune
 
@@ -36,7 +36,7 @@ U kunt er expliciet voor kiezen om de zakelijke gegevens van uw bedrijf te wisse
 3. Selecteer in het deelvenster **Intune** **Mobiele apps** > **App-beveiligingsbeleid**.
 4. Klik op **Een beleid toevoegen** (u kunt ook een bestaand beleid bewerken). 
 5. Klik op **Vereiste instellingen configureren** om de lijst met instellingen weer te geven die voor het beleid kunnen worden geconfigureerd. 
-6. Schuif omlaag in het deelvenster **Instellingen** naar de sectie met de titel **Toegangsacties** met een bewerkbare tabel.
+6. Schuif omlaag in het deelvenster Instellingen naar de sectie met de titel **Toegangsacties** met een bewerkbare tabel.
 
     ![Schermafbeelding van de toegangsacties voor app-beveiliging in Intune](./media/apps-selective-wipe-access-actions01.png)
 
@@ -50,6 +50,7 @@ U kunt er expliciet voor kiezen om de zakelijke gegevens van uw bedrijf te wisse
 
 De tabel met instellingen voor het app-beveiligingsbeleid bevat kolommen voor **Instelling**, **Waarde** en **Actie**.
 
+### <a name="ios-policy-settings"></a>Beleidsinstellingen voor iOS
 Voor iOS kunt u acties configureren voor de volgende instellingen met behulp van de vervolgkeuzelijst **Instelling**:
 -  Maximum aantal pincodepogingen
 -  Offline respijtperiode
@@ -58,6 +59,19 @@ Voor iOS kunt u acties configureren voor de volgende instellingen met behulp van
 -  Minimale versie van de app
 -  Minimale SDK-versie
 -  Apparaatmodel(len)
+
+Als u de instelling voor **apparaatmodellen** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in met iOS-modelaanduidingen. U vindt de iOS-modelaanduidingen onder de kolom Apparaattype in [Ondersteuningsdocumentatie voor HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
+Voorbeeldinvoer: *iPhone5,2; iPhone5,3*
+
+Op apparaten van eindgebruikers moet de Intune-client actie ondernemen op basis van tekenreeksen van het apparaatmodel die zijn opgegeven in Intune-beleid voor toepassingsbeveiliging. Het afstemmen is volledig afhankelijk van wat het apparaat rapporteert. U (de IT-beheerder) wordt aangeraden om ervoor te zorgen dat het beoogde gedrag optreedt door deze instelling in een kleine groep gebruikers te testen op basis van verschillende apparaatfabrikanten en -modellen. De standaardwaarde is **Niet geconfigureerd**.<br>
+Stel een van de volgende acties in: 
+- Opgegeven toestaan (blokkeren indien niet opgegeven)
+- Opgegeven toestaan (wissen indien niet opgegeven)
+
+**Wat gebeurt er als de IT-beheerder een andere lijst met iOS-modelaanduidingen opgeeft terwijl er al beleid van kracht is voor dezelfde apps en dezelfde Intune-gebruiker?**<br>
+Als er zich conflicten voordoen tussen het ene app-beschermingsbeleid voor geconfigureerde waarden en het andere, gaat Intune doorgaans uit van de meest beperkende aanpak. Het resulterende beleid voor de betreffende app die door de betreffende Intune-gebruiker wordt geopend, bestaat dan uit de overlap van de vermelde iOS-modelaanduidingen in *Beleid A* en *Beleid B* voor dezelfde app-/gebruikercombinatie. *Beleid A* specificeert bijvoorbeeld 'iPhone5,2; iPhone5,3', terwijl *Beleid B* 'iPhone5,3' specificeert. Het resulterende beleid waarmee een Intune-gebruiker op wie zowel *Beleid A* als *Beleid B* betrekking heeft, te maken krijgt, is dan 'iPhone5,3'. 
+
+### <a name="android-policy-settings"></a>Beleidsinstellingen voor Android
 
 Voor Android kunt u acties configureren voor de volgende instellingen met behulp van de vervolgkeuzelijst **Instelling**:
 -  Maximum aantal pincodepogingen
@@ -68,6 +82,19 @@ Voor Android kunt u acties configureren voor de volgende instellingen met behulp
 -  Minimale patchversie
 -  Apparaatfabrikant(en)
 
+Als u de instelling **Apparaatfabrikant(en)** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in van Android-producenten. U vindt de Android-fabrikant van een apparaat in de apparaatinstellingen.<br>
+Voorbeeldinvoer: *Fabrikant A; Fabrikant B; Google* 
+
+Op apparaten van eindgebruikers moet de Intune-client actie ondernemen op basis van tekenreeksen van het apparaatmodel die zijn opgegeven in Intune-beleid voor toepassingsbeveiliging. Het afstemmen is volledig afhankelijk van wat het apparaat rapporteert. U (de IT-beheerder) wordt aangeraden om ervoor te zorgen dat het beoogde gedrag optreedt door deze instelling in een kleine gebruikersgroep te testen op basis van verschillende apparaatfabrikanten en -modellen. De standaardwaarde is **Niet geconfigureerd**.<br>
+Stel een van de volgende acties in: 
+- Opgegeven toestaan (blokkeren indien niet opgegeven)
+- Opgegeven toestaan (wissen indien niet opgegeven)
+
+**Wat gebeurt er als de IT-beheerder een andere lijst met Android-fabrikanten opgeeft terwijl er al beleid van kracht is voor dezelfde apps en dezelfde Intune-gebruiker?**<br>
+Als er zich conflicten voordoen tussen het ene app-beschermingsbeleid voor geconfigureerde waarden en het andere, gaat Intune doorgaans uit van de meest beperkende aanpak. Het resulterende beleid voor de betreffende app die door de betreffende Intune-gebruiker wordt geopend, bestaat dan uit de overlap van de vermelde Android-fabrikanten in *Beleid A* en *Beleid B* voor dezelfde app-/gebruikercombinatie. *Beleid A* specificeert bijvoorbeeld 'Google, Samsung', terwijl *Beleid B* 'Google' specificeert. Het resulterende beleid waarmee een Intune-gebruiker op wie zowel *Beleid A* als *Beleid B* betrekking heeft, te maken krijgt, is dan 'Google'. 
+
+### <a name="additional-settings-and-actions"></a>Extra instellingen en acties 
+
 Standaard worden de rijen in de tabel gevuld als instellingen die zijn geconfigureerd voor **Offline respijtperiode** en **Maximum aantal pincodepogingen** als de instelling **Pincode is vereist voor toegang** is ingesteld op **Ja**.
  
 Als u een instelling wilt configureren, selecteert u een instelling in de vervolgkeuzelijst onder de kolom **Instelling**. Nadat een instelling is geselecteerd, wordt het bewerkbare tekstvak ingeschakeld onder de kolom **Waarde** in dezelfde rij als is vereist dat de waarde wordt ingesteld. Ook de vervolgkeuzelijst onder de kolom **Actie** wordt ingeschakeld met de reeks voorwaardelijke startacties die van toepassing zijn op de instelling. 
@@ -76,8 +103,6 @@ De volgende lijst bevat de algemene lijst met acties:
 -  **Toegang blokkeren**: de toegang tot de bedrijfsapp wordt geblokkeerd voor de eindgebruiker.
 -  **Gegevens wissen**: de bedrijfsgegevens worden van het apparaat van de eindgebruiker gewist.
 -  **Waarschuwen**: de eindgebruiker ziet een dialoogvenster als een waarschuwingsbericht.
-
-### <a name="additional-settings-and-actions"></a>Extra instellingen en acties 
 
 In sommige gevallen, zoals voor de instelling **Minimale versie van het besturingssysteem**, kunt u de instelling zo configureren dat alle toepasselijke acties worden uitgevoerd op basis van verschillende versienummers. 
 
