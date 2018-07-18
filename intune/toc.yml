@@ -663,6 +663,8 @@
           href: help-desk-operators.md
         - name: Problemen bij toegang tot bedrijfsbronnen oplossen
           href: troubleshoot-company-resource-access-problems.md
+        - name: Problemen met app-installatie oplossen
+          href: troubleshoot-app-install.md
         - name: Auditlogboeken voor Intune-activiteiten
           href: monitor-audit-logs.md
         - name: App-logboeken voor beveiliging controleren
