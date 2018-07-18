@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906053"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028742"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Apparaten verwijderen door Fabrieksinstellingen terugzetten te gebruiken, bedrijfsgegevens te verwijderen of de inschrijving van het apparaat handmatig ongedaan te maken
 
@@ -175,3 +175,24 @@ Vanwege communicatieproblemen of ontbrekende apparaten moet u wellicht apparaten
 5. Selecteer de gebruiker die is gekoppeld aan het apparaat dat u wilt verwijderen.
 6.  Selecteer **Apparaten**.
 7.  Verwijder de gewenste apparaten. U kunt bijvoorbeeld apparaten verwijderen die niet meer in gebruik zijn of die onjuist zijn gedefinieerd.
+
+## <a name="retire-an-apple-dep-device-from-intune"></a>Een Apple DEP-apparaat in Intune buiten gebruik stellen
+
+Als u een Apple DEP-apparaat volledig wilt verwijderen uit het beheer door Intune, voert u de volgende stappen:
+
+1. Meld u aan bij [Intune in Azure Portal](https://aka.ms/intuneportal).
+2. Kies **Apparaten** > **Alle apparaten** > kies het apparaat > **Bedrijfsgegevens verwijderen**.
+![Schermafbeelding voor het verwijderen van bedrijfsgegevens](./media/devices-wipe/remove-company-data.png)
+3. Kies **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies het token > **Apparaten** > schakel het selectievakje voor het apparaat in > **Verwijderen** > **Ja**.
+![Schermafbeelding voor het verwijderen van een apparaat](./media/devices-wipe/delete-device.png)
+4. Ga naar [deploy.apple.com](http://deploy.apple.com) en zoek het apparaat met behulp van het serienummer.
+5. Kies in het menu **Toegewezen aan** de optie **Niet toegewezen**.
+
+6. Kies **Opnieuw toewijzen**.
+
+    ![Schermafbeelding voor opnieuw toewijzen bij Apple](./media/devices-wipe/apple-reassign.png)
+
+## <a name="next-steps"></a>Volgende stappen
+
+Zie [Inschrijvingsopties](enrollment-options.md) als u een verwijderd apparaat opnieuw wilt registreren.
+

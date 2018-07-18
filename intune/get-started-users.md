@@ -15,12 +15,12 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 292df171b613ada7a5f8e2cf666ba358ef26df9b
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021546"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949472"
 ---
 # <a name="get-started-managing-users"></a>Aan de slag met het beheren van gebruikers
 
@@ -31,8 +31,10 @@ Denk aan alle andere personen in uw organisatie. Iedereen die zakelijke gegevens
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Selecteer **Gebruikers** nadat u het deelvenster **Microsoft Intune** hebt geopend. Selecteer op de pagina **Alle gebruikers** de optie **+ Nieuwe gebruiker**.
-4. Voer gegevens in voor de gebruiker, bijvoorbeeld bij **Naam** en **Gebruikersnaam**. Het domeinnaamgedeelte van de gebruikersnaam moet bestaan uit de naam van het oorspronkelijke standaarddomein 'contoso.onmicrosoft.com' of uit een geverifieerde, niet-gefedereerde domeinnaam zoals 'contoso.com'.
-5. Kies onder **Groepen** de testgroep waaraan u de gebruiker wilt toevoegen.
+4. Voer gegevens in voor de gebruiker, bijvoorbeeld bij **Naam** en **Gebruikersnaam**. Het domeinnaamgedeelte van de gebruikersnaam moet een van de volgende domeinen zijn:
+    - de oorspronkelijke standaarddomeinnaam contoso.onmicrosoft.com of
+    - een geverifieerde, niet-gefedereerde domeinnaam zoals contoso.com.
+5. Kies onder **Groepen** de [groep](get-started-groups.md) waaraan u de gebruiker wilt toevoegen.
 6. Sla het automatisch gegenereerde gebruikerswachtwoord op, zodat u dit kunt gebruiken om u aan te melden bij een testapparaat. U moet dit wachtwoord aan uw gebruikers geven, zodat ze het kunnen wijzigen in een normaal wachtwoord dat ze makkelijk kunnen onthouden.
 7. In het deelvenster **Gebruiker** selecteert u **Maken**.
 
