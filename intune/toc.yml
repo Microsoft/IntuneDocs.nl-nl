@@ -724,8 +724,6 @@
           href: app-wrapper-prepare-android.md
         - name: SDK voor Intune-apps voor Android
           href: app-sdk-android.md
-        - name: Intune App SDK Cordova-invoegtoepassing
-          href: app-sdk-cordova.md
         - name: Microsoft Intune App SDK Xamarin Bindings
           href: app-sdk-xamarin.md
     - name: Het Intune-datawarehouse gebruiken
