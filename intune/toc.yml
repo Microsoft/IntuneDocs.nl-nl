@@ -521,6 +521,7 @@
         - name: Nalevingsbeleid afdwingen op Macs die door Jamf Pro worden beheerd
           href: conditional-access-assign-jamf.md
     - name: Apparaatgegevens beschermen
+      href: device-protect.md
       items:
         - name: Privacy en persoonlijke gegevens
           href: privacy-personal-data.md
