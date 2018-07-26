@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e6ffd31e35637cf722fc2af486be4bd9101c1db
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993748"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164566"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Apps toewijzen aan groepen met Microsoft Intune
 
@@ -89,21 +89,21 @@ Soms wordt dezelfde app aan meerdere groepen toegewezen, maar met verschillende 
 |Gebruiker beschikbaar|Gebruiker niet beschikbaar|Niet beschikbaar|
 |Gebruiker beschikbaar|Gebruiker verwijderen|Verwijderen|
 |Gebruiker niet beschikbaar|Gebruiker verwijderen|Verwijderen
-|Gebruiker vereist|Apparaat vereist|Beide bestaan, gateway verwerkt Vereist
-|Gebruiker vereist|Apparaat verwijderen|Beide bestaan, gateway zet Vereist om
-|Gebruiker beschikbaar|Apparaat vereist|Beide bestaan, gateway zet Vereist om (Vereist en Beschikbaar)
-|Gebruiker beschikbaar|Apparaat verwijderen|Beide bestaan, gateway zet Beschikbaar om.<br><br>App wordt weergegeven in de bedrijfsportal.<br><br>Als de app al is geïnstalleerd (als een vereiste app bij de vorige intentie), wordt de app verwijderd.<br><br>Als de gebruiker **Installeren vanuit de bedrijfsportal** selecteert, wordt de app geïnstalleerd en wordt de intentie om te verwijderen niet gehonoreerd.|
+|Gebruiker vereist|Apparaat vereist|Beide bestaan, Intune verwerkt Vereist
+|Gebruiker vereist|Apparaat verwijderen|Beide bestaan, Intune zet Vereist om
+|Gebruiker beschikbaar|Apparaat vereist|Beide bestaan, Intune zet Vereist om (Vereist en Beschikbaar)
+|Gebruiker beschikbaar|Apparaat verwijderen|Beide bestaan, Intune zet Beschikbaar om.<br><br>App wordt weergegeven in de bedrijfsportal.<br><br>Als de app al is geïnstalleerd (als een vereiste app bij de vorige intentie), wordt de app verwijderd.<br><br>Als de gebruiker **Installeren vanuit de bedrijfsportal** selecteert, wordt de app geïnstalleerd en wordt de intentie om te verwijderen niet gehonoreerd.|
 |Gebruiker niet beschikbaar|Apparaat vereist|Vereist|
 |Gebruiker niet beschikbaar|Apparaat verwijderen|Verwijderen|
-|Gebruiker verwijderen|Apparaat vereist|Beide bestaan, gateway zet Vereist om|
-|Gebruiker verwijderen|Apparaat verwijderen|Beide bestaan, gateway zet Verwijderen om|
+|Gebruiker verwijderen|Apparaat vereist|Beide bestaan, Intune zet Vereist om|
+|Gebruiker verwijderen|Apparaat verwijderen|Beide bestaan, Intune zet Verwijderen om|
 |Apparaat vereist|Apparaat verwijderen|Vereist|
 |Gebruiker vereist en beschikbaar|Gebruiker beschikbaar|Vereist en beschikbaar|
 |Gebruiker vereist en beschikbaar|Gebruiker verwijderen|Vereist en beschikbaar|
 |Gebruiker vereist en beschikbaar|Gebruiker niet beschikbaar|Vereist en beschikbaar|
 |Gebruiker vereist en beschikbaar|Apparaat vereist|Beide bestaan, Vereist en Beschikbaar
 |Gebruiker vereist en beschikbaar|Apparaat niet beschikbaar|Vereist en beschikbaar|
-|Gebruiker vereist en beschikbaar|Apparaat verwijderen|Beide bestaan, gateway zet Vereist om (Vereist en Beschikbaar)
+|Gebruiker vereist en beschikbaar|Apparaat verwijderen|Beide bestaan, Intune zet Vereist om (Vereist en Beschikbaar)
 |Gebruiker niet beschikbaar|Apparaat niet beschikbaar|Niet beschikbaar|
 |Gebruiker beschikbaar|Apparaat niet beschikbaar|Beschikbaar|
 |Gebruiker vereist|Apparaat niet beschikbaar|Vereist|
