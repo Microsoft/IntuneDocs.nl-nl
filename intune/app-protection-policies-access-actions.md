@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
+ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993731"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39138693"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Gegevens selectief wissen met toegangsacties voor het app-beveiligingsbeleid in Intune
 
@@ -91,7 +91,7 @@ Stel een van de volgende acties in:
 - Opgegeven toestaan (wissen indien niet opgegeven)
 
 **Wat gebeurt er als de IT-beheerder een andere lijst met Android-fabrikanten opgeeft terwijl er al beleid van kracht is voor dezelfde apps en dezelfde Intune-gebruiker?**<br>
-Als er zich conflicten voordoen tussen het ene app-beschermingsbeleid voor geconfigureerde waarden en het andere, gaat Intune doorgaans uit van de meest beperkende aanpak. Het resulterende beleid voor de betreffende app die door de betreffende Intune-gebruiker wordt geopend, bestaat dan uit de overlap van de vermelde Android-fabrikanten in *Beleid A* en *Beleid B* voor dezelfde app-/gebruikercombinatie. *Beleid A* specificeert bijvoorbeeld 'Google, Samsung', terwijl *Beleid B* 'Google' specificeert. Het resulterende beleid waarmee een Intune-gebruiker op wie zowel *Beleid A* als *Beleid B* betrekking heeft, te maken krijgt, is dan 'Google'. 
+Als er zich conflicten voordoen tussen het ene app-beschermingsbeleid voor geconfigureerde waarden en het andere, gaat Intune doorgaans uit van de meest beperkende aanpak. Het resulterende beleid voor de betreffende app die door de betreffende Intune-gebruiker wordt geopend, bestaat dan uit de overlap van de vermelde Android-fabrikanten in *Beleid A* en *Beleid B* voor dezelfde app-/gebruikercombinatie. *Beleid A* specificeert bijvoorbeeld 'Google; Samsung', terwijl *Beleid B* 'Google' specificeert. Het resulterende beleid waarmee een Intune-gebruiker op wie zowel *Beleid A* als *Beleid B* betrekking heeft, te maken krijgt, is dan 'Google'. 
 
 ### <a name="additional-settings-and-actions"></a>Extra instellingen en acties 
 

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/25/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 557bdbace1752b8680cd15d7ba190577bec23e24
+ms.sourcegitcommit: 2e849eea920dcd6ef1b78e5aee26434bb7b01bff
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905356"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39132456"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
@@ -167,11 +167,11 @@ Deze functie is opgenomen in de statusrapportage voor het apparaat:
 1. Selecteer **Apparaatnaleving** > **Beleid**. Als een beleid is toegewezen, wordt een lijst met beleidsregels en meer informatie weergegeven.
 2. Selecteer een beleid > **Overzicht**. In deze weergave bevat de beleidstoewijzing de volgende statussen:
 
-  - Geslaagd
-  - Fout
-  - Conflict
-  - In behandeling
-  - Niet van toepassing
+  - Geslaagd: het beleid is toegepast
+  - Fout: het beleid is niet toegepast. Dit wordt doorgaans weergegeven met een foutcode en een link naar een uitleg. 
+  - Conflict: twee instellingen worden toegepast op hetzelfde apparaat en Intune kan het conflict niet oplossen. Dit moet door een beheerder worden bekeken.
+  - In behandeling: het apparaat heeft niet nog ingecheckt bij Intune om het beleid te ontvangen. 
+  - Niet van toepassing: het apparaat kan het beleid niet ontvangen. Het beleid werkt bijvoorbeeld een instelling bij die specifiek voor iOS 11.1 is, maar het apparaat gebruikt iOS 10. 
 
 3. Selecteer een van de statussen voor informatie over de apparaten die dit beleid gebruiken. Selecteer bijvoorbeeld **Geslaagd**. In het volgende venster ziet u specifieke apparaatdetails, waaronder de apparaatnaam en de implementatiestatus.
 
@@ -181,4 +181,3 @@ Conflicterende beleidsinstellingen kunnen zich voordoen wanneer er meerdere Intu
 - Als de conflicterende instellingen uit een Intune-configuratiebeleid en een nalevingsbeleid voortkomen, hebben de instellingen in het nalevingsbeleid prioriteit boven de instellingen in het configuratiebeleid. Dit gebeurt zelfs als de instellingen in het configuratiebeleid veiliger zijn.
 
 - Als u meerdere nalevingsbeleidsregels hebt geïmplementeerd, gebruikt Intune het veiligste beleid.
-
