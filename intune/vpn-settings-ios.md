@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05d93f1518427201d9d96dbc22c772967fe4fa0f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d35c9e32b7a0720d5d84a93a7edde6f2bd51911f
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744564"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146625"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>VPN-instellingen in Microsoft Intune configureren voor iOS-apparaten
 
@@ -63,10 +63,10 @@ Als u **Aangepaste VPN** als verbindingstype hebt geselecteerd, configureert u o
 - **VPN-id**: dit is een id voor de VPN-app die u gebruikt en wordt geleverd door uw VPN-provider.
 - **Sleutel- en waardeparen voor de aangepaste VPN-kenmerken invoeren**: voeg **sleutel-** en **waardeparen** toe of importeer deze om uw VPN-verbinding aan te passen. Deze waarden worden doorgaans geleverd door uw VPN-aanbieder.
 
-## <a name="apps-per-app-vpn-settings"></a>Apps-instellingen (VPN per app)
+## <a name="automatic-vpn-settings"></a>Automatische VPN-instellingen
 
-- **VPN per app**: schakel deze optie in als u URL's wilt gebruiken die de VPN-verbinding maken als ze vanuit de Safari-browser worden bezocht. Als u de VPN per app wilt configureren, moet u **Certificaten** als verificatiemethode selecteren in de basis-VPN-instellingen.
-  - **Safari-URL's die deze VPN activeren**: selecteer een of meer website-URL's om toe te voegen. De VPN-verbinding wordt ingeschakeld als deze URL's worden bezocht.
+- **VPN per app**: als u deze optie kiest, wordt VPN per app ingeschakeld. Hiermee kan de VPN-verbinding automatisch worden ingeschakeld wanneer bepaalde apps worden geopend. Als u deze optie kiest, moet u de desbetreffende apps ook aan het VPN-profiel koppelen. Voor meer informatie ziet u de [instructies voor het instellen van 'VPN per app' voor iOS](vpn-setting-configure-per-app.md). 
+  - **Safari-URL's die deze VPN activeren**: selecteer een of meer website-URL's om toe te voegen. Wanneer deze URL's worden bezocht via de Safari-browser op het apparaat, wordt er automatisch een VPN-verbinding ingesteld.
 
 - **On-demand VPN**: configureer voorwaardelijke regels om te bepalen wanneer de VPN-verbinding wordt gestart. Stel bijvoorbeeld een voorwaarde in waarmee de VPN-verbinding alleen wordt gebruikt als een apparaat niet met een Wi-Fi-netwerk van het bedrijf is verbonden. U kunt ook een voorwaarde instellen dat de VPN-verbinding niet wordt gestart als een apparaat geen toegang heeft tot een DNS-zoekdomein dat u opgeeft.
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
-ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
+ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051603"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117919"
 ---
 # <a name="see-device-details-in-intune"></a>Apparaatdetails bekijken in Intune
 
@@ -57,6 +57,49 @@ Intune maakt alleen op apparaten in bedrijfseigendom een lijst met apps. Apps op
 |iOS|Alleen beheerde apps|Alle apps die op het apparaat zijn geïnstalleerd|
 |macOS|Alle apps die op het apparaat zijn geïnstalleerd|Alle apps die op het apparaat zijn geïnstalleerd|  
 |Android|Alleen beheerde apps|Alle apps die op het apparaat zijn geïnstalleerd|  
+
+## <a name="hardware-device-details"></a>Hardwareapparaatdetails
+
+### <a name="windows-and-ios-device-details"></a>Windows- en iOS-apparaatdetails:
+|Details|Description|  
+|--------------|----------------------|  
+|Naam|De naam van het apparaat.|
+|Naam van de beheerder|De apparaatnaam wordt alleen in de console gebruikt. Als u deze naam wijzigt, verandert de naam op het apparaat zelf niet.|
+|udid|De unieke apparaat-id van het apparaat.|
+|Intune-apparaat-id|Een GUID waarmee het apparaat op unieke wijze wordt aangeduid.|
+|Serienummer|Het serienummer van het apparaat, opgegeven door de fabrikant.|
+|Gedeeld apparaat|Als de waarde hier **Ja** is, wordt het apparaat door meerdere gebruikers gedeeld.|
+|Door de gebruiker goedgekeurde inschrijving|Als de waarde hier **Ja** is, is er door de gebruiker goedgekeurde inschrijving beschikbaar - dit betekent dat beheerders bepaalde beveiligingsinstellingen op het apparaat kunnen beheren.|
+|Besturingssysteem|Het besturingssysteem op het apparaat.|
+|Versie van besturingssysteem|De versie van het besturingssysteem op het apparaat.|
+|Taal van besturingssysteem|De taal die is ingesteld voor het besturingssysteem op het apparaat.|
+|Totale opslagruimte|De totale opslagruimte op het apparaat (in gigabytes).|
+|Beschikbare opslagruimte|De niet-gebruikte opslagruimte op het apparaat (in gigabytes).|
+
+
+### <a name="windows-ios-and-macos-device-details"></a>Windows-, iOS- en macOS-apparaatdetails
+|Details|Description|  
+|--------------|----------------------|  
+|IMEI|Het IMEI-nummer (International Mobile Equipment Identity) van het apparaat.|
+|MEID|Het MEID-nummer (Mobile Equipment Identifier) van het apparaat.|
+|Fabrikant|De fabrikant van het apparaat.|
+|Model|Het model van het apparaat.|
+|Telefoonnummer|Het telefoonnummer dat is toegewezen aan het apparaat.|
+|Provider van abonnee|De mobiele provider die op het apparaat wordt gebruikt.|
+|Mobiele-telefoontechnologie|Het radiosysteem dat wordt gebruikt door het apparaat.|
+|MAC-adres Wi-Fi|Het Media Access Control-adres van het apparaat.|
+|ICCID|De Integrated Circuit Card Identifier, het unieke identificatienummer van een SIM-kaart.|
+|Inschrijvingsdatum|De datum en tijd waarop het apparaat is ingeschreven bij Intune.|
+|Laatste contact|De datum en tijd waarop het apparaat het laatst verbinding heeft gemaakt met Intune.|
+|Code voor het overslaan van het activeringsslot|De code die kan worden gebruikt om het activeringsslot over te slaan.|
+|Azure AD-geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Azure Active Directory.|
+|Naleving|De nalevingsstatus van het apparaat.|
+|EAS geactiveerd|Als de waarde **Ja** is, wordt het apparaat gesynchroniseerd met een Exchange-postvak.|
+|Activerings-id voor EAS|De Exchange ActiveSync-id van het apparaat.|
+|Onder supervisie|Als de waarde **Ja** is, hebben de beheerders uitgebreide controle over het apparaat.|
+|Versleuteld|Als de waarde **Ja** is, worden de gegevens die zijn opgeslagen op het apparaat versleuteld.|
+
+
 
 ## <a name="next-steps"></a>Volgende stappen
 Bekijk wat u nog meer kunt doen om met Intune uw [apparaten te beheren](device-management.md).

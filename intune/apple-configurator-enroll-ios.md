@@ -15,12 +15,12 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 180988f296894c285b078f6906c4e77b832006f9
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 2b3965c651bb6fcc38d61a55208fc8b199223891
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840271"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212117"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>iOS-apparaten inschrijven met Apple Configurator
 
@@ -135,7 +135,7 @@ Apps waarvoor een gebruikersrelatie is vereist, zoals de bedrijfsportal-app die 
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>Het profiel als .mobileconfig exporteren naar iOS-apparaten
 
 1. Kies **Apparaatinschrijving** > **Apple-inschrijving** > **Apple Configurator** > **Profielen** > Het te exporteren profiel kiezen > **Profiel exporteren** in [Intune](https://aka.ms/intuneportal).
-2. Kies onder **Directe inschrijving** voor **Profiel downloaden** en sla het bestand op.
+2. Kies onder **Directe inschrijving** voor **Profiel downloaden** en sla het bestand op. Een inschrijvingsprofielbestand is slechts twee weken geldig. Na die tijd moet u weer een nieuw bestand maken.
 3. Breng het bestand over naar een Mac-computer waarop [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) wordt uitgevoerd om het rechtstreeks als een beheerprofiel naar iOS-apparaten te pushen.
 4. Bereid het apparaat aan de hand van de volgende stappen voor met Apple Configurator:
     1. Open Apple Configurator 2.0 op een Mac-computer.
