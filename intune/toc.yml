@@ -396,12 +396,12 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
-        - name: Kiosk-instellingen configureren
-          href: kiosk-settings.md
-        - name: Android-kiosk-instellingen configureren
+        - name: Kioskinstellingen voor Android
           href: android-kiosk-settings.md
-        - name: Kiosk-instellingen voor Android Enterprise
+        - name: Kioskinstellingen voor Android Enterprise
           href: android-enterprise-settings.md
+        - name: Kioskinstellingen voor Windows 10
+          href: kiosk-settings.md
         - name: E-mailinstellingen configureren
           href: email-settings-configure.md
           items:
@@ -439,7 +439,9 @@
               href: wi-fi-settings-ios.md
             - name: macOS
               href: wi-fi-settings-macos.md
-            - name: Windows 8.1 en Windows 10
+            - name: Windows 10
+              href: wi-fi-settings-windows.md
+            - name: Windows 8.1
               href: wi-fi-settings-import-windows-8-1.md
         - name: Education
           items:
@@ -458,6 +460,10 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: S/MIME gebruiken voor e-mailversleuteling
+              href: certificates-s-mime-encryption-sign.md
+            - name: Externe certificeringsinstantie gebruiken met SCEP
+              href: certificate-authority-add-scep-overview.md
             - name: Symantec PKI Manager-webservice
               href: certificates-symantec-configure.md
         - name: Instellingen voor Windows Information Protection configureren
@@ -710,6 +716,8 @@
               href: custom-settings-android-for-work.md
 - name: Richtlijnen voor ontwikkelaars
   items:
+    - name: API voor het toevoegen van een externe certificeringsinstantie
+      href: scep-libraries-apis.md
     - name: Apps beveiligen met Intune App SDK
       href: app-sdk.md
       items:
