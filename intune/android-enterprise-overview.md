@@ -15,12 +15,12 @@ ms.assetid: 2cc3c960-1fdd-47ca-a693-420d47b403de
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c3184ff01252d2f53b5bfcce286df3424da23c2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: ecbc15c4888ae42c34c5ff9f488d639fc321853e
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909164"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279403"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Android-apparaten met een werkprofiel beheren met Intune
 
@@ -66,7 +66,7 @@ Appbeveiligingsbeleid dat wordt toegepast, wordt volledig ondersteund in het wer
 
 VPN-ondersteuning is vergelijkbaar met Android VPN-profielen. Dezelfde VPN-providers en algemene configuratieopties zijn beschikbaar voor Android Enterprise-beheer, met twee verschillen:
 
--  **VPN voor het werkprofiel**: VPN-verbindingen zijn beperkt tot de apps die zijn geïmplementeerd voor het werkprofiel. Alleen apps die met Android Enterprise worden beheerd, kunnen de VPN-verbinding gebruiken. Persoonlijke apps op het apparaat kunnen geen beheerde VPN-verbinding gebruiken. Zie [Android enterprise VPN settings](vpn-settings-android.md#android-work-profile-device-vpn-settings) (VPN-instellingen voor Android Enterprise) voor meer informatie.
+-  **VPN voor het werkprofiel**: VPN-verbindingen zijn beperkt tot de apps die zijn geïmplementeerd voor het werkprofiel. Alleen apps die met Android Enterprise worden beheerd, kunnen de VPN-verbinding gebruiken. Persoonlijke apps op het apparaat kunnen geen beheerde VPN-verbinding gebruiken. Zie [Android enterprise VPN settings](vpn-settings-android.md#android-for-work-vpn-settings) (VPN-instellingen voor Android Enterprise) voor meer informatie.
 
 -  **App-specifiek VPN**: app-specifiek VPN kan in Intune worden geconfigureerd als de VPN-provider het volgende ondersteunt:
     - configuratie voor app-specifiek VPN
