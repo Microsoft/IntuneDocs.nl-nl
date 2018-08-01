@@ -398,7 +398,7 @@
               href: endpoint-protection-windows-10.md
         - name: Kioskinstellingen voor Android
           href: android-kiosk-settings.md
-        - name: Kioskinstellingen voor Android Enterprise
+        - name: Kiosk-instellingen voor Android Enterprise
           href: android-enterprise-settings.md
         - name: Kioskinstellingen voor Windows 10
           href: kiosk-settings.md
@@ -443,6 +443,8 @@
               href: wi-fi-settings-windows.md
             - name: Windows 8.1
               href: wi-fi-settings-import-windows-8-1.md
+        - name: Mobiele eSIM-profielen configureren
+          href: esim-device-configuration.md
         - name: Education
           items:
             - name: Gedeelde iOS-apparaten
