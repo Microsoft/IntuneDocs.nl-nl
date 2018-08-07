@@ -587,7 +587,7 @@ Vergeet indien van toepassing niet de gebruiker toe te voegen aan andere rollen.
 
 Ook:
 
-- https://portal.office.com gebruiken om een Intune-licentie aan uw gebruikersaccount toe te voegen.
+- Gebruiken om een Intune-licentie aan uw gebruikersaccount toe te voegen https://portal.office.com .
 
 - Werk de toepassingscode bij voor de verificatie van het Azure AD-tenantdomein van de klant, in plaats van uw eigen domein.
 
