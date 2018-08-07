@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 421dede4b0da71fe04649e21bfcf7c15d2270507
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 1cfbaa0cbdcc2263f6e8d1d3fc8562678e410537
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869352"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400314"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -50,20 +50,6 @@ Met de Microsoft Intune App SDK Xamarin Bindings kunt u Intune-beveiligingsbelei
 Xamarin-apps die zijn gemaakt met de Intune App SDK Xamarin Bindings, kunnen nu app-beveiligingsbeleid van Intune ontvangen op apparaten die wel en apparaten die niet zijn ingeschreven in MDM (Mobile Device Management) van Intune.
 
 ## <a name="prerequisites"></a>Vereisten
-
-* **[Alleen android]** Op het apparaat moet de meest recente Microsoft Intune-bedrijfsportal-app zijn geïnstalleerd.
-
-## <a name="get-started"></a>Aan de slag
-
-1. Lees de [licentievoorwaarden](https://components.xamarin.com/license/microsoft.intune.mam) voor het Microsoft Intune MAM Xamarin-onderdeel.
-
-2.  Download de map Intune App SDK Xamarin Component van [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) of [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) en pak de map uit. De bestanden die u in stap 1 en stap 3 hebt gedownload, moeten zich op hetzelfde mappenniveau bevinden.
-
-3.  Voer `Xamarin.Component.exe install <.xam> file` uit als beheerder vanaf de opdrachtregel.
-
-4.  Klik in Visual Studio met de rechtermuisknop op **onderdelen** in uw eerder gemaakte Xamarin-project.
-
-5.  Selecteer **Onderdelen bewerken** en voeg het Intune App SDK-onderdeel toe dat u lokaal op uw computer hebt gedownload.
 
 Controleer de [licentievoorwaarden](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf). Een exemplaar van de licentievoorwaarden voor uw administratie afdrukken en bewaren. Door de Intune App SDK Xamarin Bindings te downloaden en gebruiken, gaat u akkoord met deze licentievoorwaarden. Als u deze niet accepteert, moet u de software niet gebruiken.
 
