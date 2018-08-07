@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869369"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321472"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
@@ -60,9 +60,6 @@ Selecteer de Office-apps die u wilt toewijzen aan apparaten.
     Daarnaast kunt u apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Pro voor Office 365, mits u daar licenties voor hebt.
 3. Selecteer **OK**.
 
->[!IMPORTANT]
-> Nadat u het app-pakket hebt gemaakt, kunt u de eigenschappen ervan niet meer bewerken. Als u andere eigenschappen wilt configureren, verwijdert u het app-pakket en maakt u een nieuw pakket.
-
 ## <a name="configure-app-information"></a>App-gegevens configureren
 
 In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze informatie kunt u het app-pakket vinden in Intune en kunnen gebruikers het app-pakket vinden in de bedrijfsportal.
@@ -95,11 +92,8 @@ In deze stap configureert u de installatieopties voor het app-pakket. De instell
         - **Halfjaarlijks**
         - **Halfjaarlijks (gericht)**
     - **Gebruiksrechtovereenkomst van de app automatisch accepteren**: selecteer deze optie als eindgebruikers de gebruiksrechtovereenkomst niet hoeven te accepteren. Intune accepteert de overeenkomst automatisch.
-    - **Activering van gedeelde computers gebruiken**: selecteer deze optie wanneer meerdere gebruikers een computer delen. Zie Activering van gedeelde computers voor Office 365 voor meer informatie.
+    - **Activering van gedeelde computers gebruiken**: selecteer deze optie wanneer meerdere gebruikers een computer delen. Zie [Overzicht van activering van gedeelde computers voor Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus) voor meer informatie.
     - **Talen**: Office wordt automatisch geïnstalleerd in de ondersteunde talen die met Windows zijn geïnstalleerd op het apparaat van de eindgebruiker. Selecteer deze opties als u aanvullende talen wilt installeren met het app-pakket.
-
->[!IMPORTANT]
-> Nadat u het app-pakket hebt gemaakt, kunt u de eigenschappen ervan niet meer bewerken. Als u andere eigenschappen wilt configureren, verwijdert u het app-pakket en maakt u een nieuw pakket.
 
 ## <a name="finish-up"></a>Voltooien
 
@@ -136,7 +130,7 @@ In de volgende tabellen worden algemene foutcodes en hun betekenis weergegeven.
 |Er is geprobeerd een 64-bits versie te installeren op een apparaat waarop de 32-bits versie is geïnstalleerd.|1603|-|Retourcodes Office Deployment Tool|
 |Er is geprobeerd een onbekende SKU te installeren (dit is geen geldige use case voor Office CSP omdat er alleen geldige SKU’s mogen worden doorgegeven)|17004|-|Klik-en-Klaar|
 |Gebrek aan ruimte|17002|-|Klik-en-Klaar|
-|De Klik-en-Klaar-client kan niet worden gestart (onverwacht)|17000|-|Klik-en-Klaar|
+|Kan de Klik-en-Klaar-client niet starten (onverwacht)|17000|-|Klik-en-Klaar|
 |De Klik-en-Klaar-client kan het scenario niet in de wachtrij zetten (onverwacht)|17001|-|Klik-en-Klaar|
 
 ## <a name="next-steps"></a>Volgende stappen

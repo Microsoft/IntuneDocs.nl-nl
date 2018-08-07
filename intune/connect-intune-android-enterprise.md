@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0152d0cb7af418b500c1ac5991f2356bd2e19965
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1b1f54486ab2c3d98e663cfddded346eb61662ae
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909079"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279420"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Uw Intune-account met uw Android Enterprise-account verbinden
 
@@ -51,7 +51,7 @@ Ter ondersteuning van apparaten met een Android-werkprofiel en Android-kioskappa
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>De verbinding met uw Android Enterprise-beheeraccount verbreken
 
-U kunt Android Enterprise-inschrijving en -beheer uitschakelen. Als u **Verbinding verbreken** in de Intune-beheerconsole kiest, verwijdert u de inschrijving van alle geregistreerde apparaten met een Android-werkprofiel en de kioskapparaten. U verwijdert ook de relatie tussen het Android Enterprise-account en Intune.
+U kunt Android Enterprise-inschrijving en -beheer uitschakelen. Hiervoor moet u eerst alle geregistreerde apparaten met een Android-werkprofiel buiten gebruik stellen. Kies vervolgens **Verbinding verbreken** in de Intune-beheerconsole om de registratie van alle geregistreerde apparaten met een Android-werkprofiel en de kioskapparaten ongedaan te maken. U verwijdert hiermee ook de relatie tussen het Android Enterprise-account en Intune.
 
 1. Meld u als Intune-beheerder aan bij [Azure Portal](https://portal.azure.com) en kies **Alle services** > **Bewaking en beheer** > **Intune**.
 2. Kies **Apparaatinschrijving** > **Android-inschrijving** > **Beheerde Google Play** > **Verbinding verbreken**.

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
-ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
+ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36297902"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321234"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -462,4 +462,6 @@ Vanaf versie 6.1806.x.x legt de Intune-connectorservice gebeurtenissen vast in d
 | 0x0FFFFFFFF | Unknown_Error  | Uw aanvraag kan niet worden voltooid omdat aan serverzijde een fout is opgetreden. Probeer het opnieuw. |
 
 ## <a name="next-steps"></a>Volgende stappen
-[Gebruik PKCS-certificaten](certficates-pfx-configure.md) of [geef PKCS-certificaten uit van een webservice van Symantec PKI-manager](certificates-symantec-configure.md).
+
+- [PKCS-certificaten gebruiken](certficates-pfx-configure.md) of [PKCS-certificaten uitgeven van een webservice van Symantec PKI-manager](certificates-symantec-configure.md)
+- [Een certificeringsinstantie van derden toevoegen om SCEP met Intune te gebruiken](certificate-authority-add-scep-overview.md)

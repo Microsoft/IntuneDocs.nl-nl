@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803836"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321217"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Apparaatbeperkingsinstellingen voor Windows 10 (en hoger) in Intune
 In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met Windows 10.
@@ -252,7 +252,7 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 
 ## <a name="kiosk-preview---obsolete"></a>Kiosk (preview) - verouderd
 
-Deze instellingen gaan weg en worden in een toekomstige versie verwijderd. Raadpleeg [Kiosk-instellingen in Windows 10 en hoger](kiosk-settings.md) voor informatie over het gebruik van de nieuwe instellingen.
+Deze instellingen zijn alleen-lezen en kunnen niet worden gewijzigd. Zie [Kiosk-instellingen in Windows 10 en hoger](kiosk-settings.md) voor het configureren van de kioskmodus.
 
 Op een kioskapparaat wordt doorgaans één app of een specifieke set met apps uitgevoerd. Gebruikers hebben geen toegang tot functies op het apparaat buiten de kiosk-apps.
 

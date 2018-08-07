@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138693"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254481"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Gegevens selectief wissen met toegangsacties voor het app-beveiligingsbeleid in Intune
 
@@ -44,7 +44,7 @@ U kunt er expliciet voor kiezen om de zakelijke gegevens van uw bedrijf te wisse
 8. Selecteer de **actie** die u wilt uitvoeren als gebruikers niet voldoen aan uw vereisten. In sommige gevallen kunnen meerdere acties worden geconfigureerd voor één instelling. Zie [App-beveiligingsbeleid maken en toewijzen](app-protection-policies.md) voor meer informatie.
 
 >[!NOTE]
-> Als u de instelling voor **apparaatmodellen** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in met modelaanduidingen. 
+> Als u de instelling voor **apparaatmodel(len) of Apparaatfabrikant(en)** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in met modelaanduidingen. Vermijd spaties in lijsten met meerdere waarden. Deze waarden zijn niet hoofdlettergevoelig. 
 
 ## <a name="policy-settings"></a>Beleidsinstellingen 
 
@@ -83,7 +83,10 @@ Voor Android kunt u acties configureren voor de volgende instellingen met behulp
 -  Apparaatfabrikant(en)
 
 Als u de instelling **Apparaatfabrikant(en)** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in van Android-producenten. U vindt de Android-fabrikant van een apparaat in de apparaatinstellingen.<br>
-Voorbeeldinvoer: *Fabrikant A; Fabrikant B; Google* 
+Voorbeeldinvoer: *Fabrikant A; Fabrikant B* 
+
+>[!NOTE]
+> Dit is een lijst met algemene fabrikanten die apparaten met Intune hebben die als invoer kunnen worden gebruikt: Asus; BlackBerry; Bq; Gionee; Google; HMD global. HTC; Huawei; Infinix; Kyocera; Lemobile; Lenovo; LGE; Motorola; Oneplus; Oppo; Samsung; Scherpe; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
 
 Op apparaten van eindgebruikers moet de Intune-client actie ondernemen op basis van tekenreeksen van het apparaatmodel die zijn opgegeven in Intune-beleid voor toepassingsbeveiliging. Het afstemmen is volledig afhankelijk van wat het apparaat rapporteert. U (de IT-beheerder) wordt aangeraden om ervoor te zorgen dat het beoogde gedrag optreedt door deze instelling in een kleine gebruikersgroep te testen op basis van verschillende apparaatfabrikanten en -modellen. De standaardwaarde is **Niet geconfigureerd**.<br>
 Stel een van de volgende acties in: 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/19/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
-ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
+ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028725"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321285"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune
 
@@ -57,7 +57,7 @@ De volgende tabel bevat de specifieke app-typen en informatie over hoe u deze ku
 | Android LOB-apps (Line-Of-Business) | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een Android-installatiebestand toe met de extensie **.apk**.  |
 | iOS LOB-apps | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een iOS-installatiebestand toe met de extensie **.ipa**.  |
 | Windows Phone LOB-apps | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een Windows Phone-installatiebestand toe met de extensie **.xap**.  |
-| Windows LOB-app | LOB-app | Selecteer **Line-Of-Business**-app als het app-type, selecteer het **app-pakketbestand** en voeg vervolgens een Windows-installatiebestand toe met de extensie **.msi**, **.appx** of **.appxbundle**. |
+| Windows LOB-app | LOB-app | Selecteer **Line-Of-Business**-app als het app-type, selecteer het **app-pakketbestand** en voeg vervolgens een Windows-installatiebestand toe met de extensie **.msi**, **.appx**, **.appxbundle**, **.msix** of **.msixbundle**. |
 | Ingebouwde iOS-app  | Ingebouwde app | Selecteer **Ingebouwde app** als het **app-type** en selecteer vervolgens de ingebouwde app in de lijst beschikbare apps.  |
 | Ingebouwde Android-app  | Ingebouwde app | Selecteer **Ingebouwde app** als het **app-type** en selecteer vervolgens de ingebouwde app in de lijst beschikbare apps.  |
 | Web-apps  | Web-app  | Selecteer **Webkoppeling** als het **app-type** en voer vervolgens een geldige URL in die verwijst naar de web-app.  |
@@ -119,6 +119,9 @@ Naast het feit dat er verschillende typen apps zijn, zoals web-apps, store-apps 
 - **Apple-volumeaankoopprogramma voor bedrijven (iOS en MacOS)**: u kunt in iOS App Store meerdere licenties aanschaffen voor een app die u in uw bedrijf wilt uitvoeren. Door meerdere exemplaren aan te schaffen, kunt u apps in uw bedrijf efficiënt beheren. Raadpleeg [iOS-apps beheren die zijn aangeschaft via een volumeaankoopprogramma met Microsoft Intune](vpp-apps-ios.md) voor meer informatie.
 - **Android-werkprofiel**: hoe u apps toewijst aan Android-werkprofielapparaten verschilt van hoe u deze apps toewijst aan Android-standaardapparaten. Alle apps die u installeert voor Android-werkprofielen, zijn afkomstig uit de beheerde Google Play Store. U meldt zich aan bij de store, bladert naar de gewenste apps en keurt deze goed. De app verschijnt vervolgens op het knooppunt **Gelicentieerde apps** in Azure Portal, waarna u de toewijzing van apps kunt beheren zoals u bij elke app zou doen.
 - **Microsoft Store voor Bedrijven (Windows 10)**: in Microsoft Store voor Bedrijven kunt u apps vinden en afzonderlijk of in bulk aanschaffen voor uw organisatie. Als u Windows Store voor Bedrijven aan Microsoft Intune koppelt, kunt u apps die zijn aangeschaft via een volumeaankoopprogramma, beheren in Azure Portal. Raadpleeg [Apps die u hebt aangeschaft in Microsoft Store voor Bedrijven, beheren met Microsoft Intune](windows-store-for-business.md) voor meer informatie.
+
+    > [!NOTE]
+    > De bestandsextensies voor Windows-apps zijn **.msi**, **.appx**, **.appxbundle**, **.msix** en **.msixbundle**.  
 
 ## <a name="before-you-add-apps"></a>Voordat u apps toevoegt
 Overweeg de volgende punten voordat u begint met het toevoegen en toewijzen van apps:

@@ -14,12 +14,12 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d8335f1bac26b1a70c4e9aeaf7c8c6d1b34fc12
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 776cb1e03730bbac1d6e7ed36f411eba0ab94cff
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34718009"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236035"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Waarin verschilt Intune for Education van het volledige Intune-beheer?
 
@@ -27,9 +27,9 @@ Intune for Education biedt uw docenten en studenten productiviteit terwijl schoo
 
 ![Intune for Education-console vergeleken met de Intune-console.](./media/intune-azure-vs-intuneEDU.png)
 
-Met Intune for Education kunt u Windows 10-apparaten beheren met de volledige MDM-functionaliteit die beschikbaar is in Intune. Met Intune kunt u ook extra platforms zoals iOS en Android beheren en het is ontworpen om u toegang te verlenen tot de volledige set beleidsregels in dezelfde console.
+Met Intune for Education kunt u Windows 10- en iOS-apparaten beheren met de volledige MDM-functionaliteit die beschikbaar is in Intune. Met het volledige apparaatbeheer kunt u Windows-, iOS- en Android-apparaten beheren.  
 
-U kunt Intune for Education zelfstandig gebruiken of in samenwerking met het [volledige apparaatbeheer dat beschikbaar is in Intune](introduction-intune.md). U kunt het ook gebruiken samen met de overige hulpprogramma's die beschikbaar zijn in [Microsoft Education](https://microsoft.com/education), zodat u Intune for Education gemakkelijker kunt gebruiken met andere handige educatieve hulpmiddelen van Microsoft.
+U kunt Intune for Education zelfstandig gebruiken of in samenwerking met het [volledige apparaatbeheer dat beschikbaar is in Intune](introduction-intune.md). U kunt het ook gebruiken samen met de overige hulpprogramma's die beschikbaar zijn in [Microsoft Education](https://microsoft.com/education), zodat u Intune for Education gemakkelijker kunt gebruiken met andere handige educatieve hulpmiddelen van Microsoft.  
 
 > [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 

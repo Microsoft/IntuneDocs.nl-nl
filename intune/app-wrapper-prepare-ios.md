@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224932"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254532"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -339,7 +339,7 @@ Voordat u de app verpakt, kunt u *rechten* verlenen zodat de app over meer macht
 
     b.  Schakel de gewenste mogelijkheden in. Zie [Mogelijkheden toevoegen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in de bibliotheek voor iOS-ontwikkelaars voor gedetailleerde informatie over elke mogelijkheid en het bepalen van de juiste waarden.
 
-    c.  Noteer de id's die u tijdens de procedure hebt gemaakt.
+    c.  Noteer de id's die u tijdens de procedure hebt gemaakt. Deze worden ook wel de `AppIdentifierPrefix`-waarden genoemd.
 
     d.  Bouw en onderteken uw app zodat deze kan worden verpakt.
 
@@ -349,7 +349,7 @@ Voordat u de app verpakt, kunt u *rechten* verlenen zodat de app over meer macht
 
     b.  Maak een inrichtingsprofiel voor uw app. Zie [De vereisten voor de Intune App Wrapping Tool voor iOS ophalen](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) voor instructies.
 
-    c.  Schakel in het inrichtingsprofiel dezelfde rechten in als in uw app. U moet dezelfde id's gebruiken die u bij het ontwikkelen van de app hebt opgegeven.
+    c.  Schakel in het inrichtingsprofiel dezelfde rechten in als in uw app. U moet dezelfde id's (de `AppIdentifierPrefix`-waarden) gebruiken die u bij het ontwikkelen van de app hebt opgegeven. 
 
     d.  Voer de wizard voor inrichtingsprofielen uit en download het bestand.
 

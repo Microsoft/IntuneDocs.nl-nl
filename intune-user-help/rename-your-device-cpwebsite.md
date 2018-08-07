@@ -1,11 +1,11 @@
 ---
-title: De naam van een apparaat wijzigen op de website van de bedrijfsportal | Microsoft Docs
-description: ''
+title: De naam van een apparaat wijzigen op de website van de bedrijfsportal
+description: Meer informatie over het wijzigen van de naam van een apparaat op de website van de bedrijfsportal.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,29 +17,28 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bf111b6c95a61e0c244b8d3254abc08c1d85c598
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e31451abd79c17618377598d29c455c4c0637348
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017135"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321370"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>De naam van een apparaat wijzigen op de website van de bedrijfsportal
 
-U kunt beslissen om de naam van uw apparaat te wijzigen zodat het makkelijker te identificeren is. U kunt dit op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) doen. De bedrijfsportalwebsite is een webpagina waarop u de computers en apparaten beheert die u hebt ingeschreven voor beheer door de IT-afdeling.
+Meer informatie over het wijzigen van de naam van een geregistreerd, beheerd apparaat op de website van de bedrijfsportal. Wijzig de algemene naam of standaardnaam van het model van een apparaat in een naam waarmee u het apparaat snel kunt identificeren.  
 
-Ga als volgt te werk om de naam van uw apparaat te wijzigen:
+1. Selecteer op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com/HelpDeskDialog) __Menu__ > __Mijn apparaten__.
 
-1. Op de [Bedrijfsportal-website ](https://portal.manage.microsoft.com#HelpDeskDialog) tikt u op de knop __Menu__ ![Een kleine afbeelding van de knop Menu, drie horizontale, parallelle balken.](/Intune/whats-new/media/CP_hamburger_menu.png) en selecteert u vervolgens __Mijn apparaten__.
+2. Selecteer het apparaat waarvan u de naam wilt wijzigen.
 
-2. Op de pagina __Mijn apparaten__ selecteert u de naam van het apparaat waarvan u de naam wilt wijzigen.
+![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)  
 
-   ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Selecteer **Naam wijzigen**.  
 
-3. Het apparaat wordt in een pop-upvenster geopend. Tik op de knop **Naam wijzigen**.
+   ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportalwebsite, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/iwp-screen-with-all-options.png)  
+    
 
-   ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportal-website, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Vergrendelen op afstand. ](./media/iwp-screen-with-all-options.png)
+4. Typ de nieuwe naam voor uw apparaat in het vak waar de apparaatnaam wordt weergegeven. Tik vervolgens op de knop **Naam wijzigen**. Uw apparaat wordt nu met de nieuwe naam weergegeven.
 
-4. Typ de nieuwe naam voor uw apparaat in het vak waar de apparaatnaam wordt weergegeven en tik vervolgens op de knop **Wijzigen**. Uw apparaat wordt nu met de nieuwe naam weergegeven.
-
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com/HelpDeskDialog).

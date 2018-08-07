@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803819"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321489"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>iOS-apparaatbeperkingsinstellingen in Microsoft Intune
 
@@ -182,8 +182,8 @@ U kunt ook op **Importeren** klikken om de lijst te vullen met waarden uit een C
 
 In de lijst Apps weergeven of verbergen kunt u een van de volgende lijsten configureren (vereist toezicht voor apparaten met iOS 9.3 of hoger).
 
-Lijst met **verborgen apps**: een lijst met apps opgeven die verborgen zijn voor gebruikers. Gebruikers kunnen deze apps niet weergeven of starten.
-Lijst met **zichtbare apps**: een lijst met apps opgeven die gebruikers kunnen weergeven en starten. Andere apps kunnen niet worden weergegeven of gestart.
+- Lijst met **verborgen apps**: een lijst met apps opgeven die verborgen zijn voor gebruikers. Gebruikers kunnen deze apps niet weergeven of starten.
+- Lijst met **zichtbare apps**: een lijst met apps opgeven die gebruikers kunnen weergeven en starten. Andere apps kunnen niet worden weergegeven of gestart.
 
 Als u de lijst wilt configureren, klikt u op **Toevoegen** en geeft u een naam van uw keuze op, eventueel de uitgever van de app, en de URL van de app in de App Store.
 
@@ -259,54 +259,8 @@ Nadat u de naam en bundel-id van de app hebt opgegeven, kiest u **Toevoegen** om
 - **Importeren**: een (CSV-)bestand met een lijst met door komma's gescheiden namen van apps en de bijbehorende bundel-id's importeren.
 - **Exporteren**: de namen van apps en de bijbehorende bundel-id's die u hebt geconfigureerd exporteren naar een (CSV-)bestand met door komma's gescheiden waarden.
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Lijst van bundel-id’s voor ingebouwde iOS-apps
-
-Deze lijst bevat de bundel-id's van een aantal algemene ingebouwde iOS-apps. Als u de bundel-ID van andere apps wilt weten, neemt u contact op met de softwareleverancier.
-
-```
-,com.apple.AppStore,App Store,Apple
-,com.apple.calculator,Calculator,Apple
-,com.apple.mobilecal,Calendar,Apple
-,com.apple.camera,Camera,Apple
-,com.apple.mobiletimer,Clock,Apple
-,com.apple.compass,Compass,Apple
-,com.apple.MobileAddressBook,Contacts,Apple
-,com.apple.facetime,FaceTime,Apple
-,com.apple.mobileme.fmf1,Find Friends,Apple
-,com.apple.mobileme.fmip1,Find iPhone,Apple
-,com.apple.gamecenter,Game Center,Apple
-,com.apple.mobilegarageband,GarageBand,Apple
-,com.apple.Health,Health,Apple
-,com.apple.iBooks,iBooks,Apple
-,com.apple.MobileStore,iTunes Store,Apple
-,com.apple.itunesu,iTunes U,Apple
-,com.apple.Keynote,Keynote,Apple
-,com.apple.mobilemail,Mail,Apple
-,com.apple.MapsMaps,Apple
-,com.apple.MobileSMS,Messages,Apple
-,com.apple.Music,Music,Apple
-,com.apple.news,News,Apple
-,com.apple.mobilenotes,Notes,Apple
-,com.apple.Numbers,Numbers,Apple
-,com.apple.Pages,Pages,Apple
-,com.apple.Photo-Booth,Photo Booth,Apple
-,com.apple.mobileslideshow,Photos,Apple
-,com.apple.podcasts,Podcasts,Apple
-,com.apple.reminders,Reminders,Apple
-,com.apple.MobileSafari,Safari,Apple
-,com.apple.Preferences,Settings,Apple
-,com.apple.stocks,Stocks,Apple
-,com.apple.tips,Tips,Apple
-,com.apple.videos,Videos,Apple
-,com.apple.VoiceMemos,VoiceMemos,Apple
-,com.apple.Passbook,Wallet,Apple
-,com.apple.Bridge,Watch,Apple
-,com.apple.weather,Weather,Apple
-```
-
-
 ## <a name="kiosk-supervised-only"></a>Kiosk (alleen onder toezicht)
--   **App die wordt uitgevoerd in de kioskmodus**: kies **Beheerde app** om een app te selecteren die u aan Intune hebt toegevoegd of kies **Store-app** om de URL naar een app in de Store op te geven. Er mogen geen andere apps op het apparaat worden uitgevoerd. Zie "URL's voor app stores opgeven" verderop in dit onderwerp voor meer informatie.
+-   **App die in de kioskmodus wordt uitgevoerd**: kies **Beheerde app** om een app te selecteren die u aan Intune hebt toegevoegd, kies **Store-app** om de URL naar een app in de Store op te geven of **Geïntegreerde app** om de bundel-id van de geïntegreerde app op te geven. Zie [Referentie bundel-id’s voor geïntegreerde iOS-apps](device-restrictions-ios.md#bundle-id-reference-for-built-in-ios-apps) en [De URL opgeven van een app in de store](device-restrictions-ios.md#how-to-specify-the-url-to-an-app-in-the-store-1) voor meer informatie.
     -   **AssistiveTouch**: hiermee schakelt u de toegankelijkheidsinstelling **AssistiveTouch** in of uit, waarmee gebruikers schermbewegingen kunnen uitvoeren die moeilijk voor hen kunnen zijn.
     -   **Kleuren omkeren**: hiermee schakelt u de toegankelijkheidsinstelling Kleuren omkeren in of uit, waarmee het scherm wordt aangepast voor gebruikers met een beperkt gezichtsvermogen.
     -   **Monogeluid**: hiermee schakelt u de toegankelijkheidsinstelling Monogeluid in of uit.
@@ -327,6 +281,51 @@ Deze lijst bevat de bundel-id's van een aantal algemene ingebouwde iOS-apps. Als
 >[!NOTE]
 > Voordat u een iOS-apparaat voor de kioskmodus kunt configureren, moet u het hulpprogramma Apple Configurator of het Device Enrollment Program van Apple gebruiken om het apparaat in de supervisiemodus te plaatsen. Zie de Apple-documentatie voor meer informatie over het hulpprogramma Apple Configurator.
 >Als de iOS-app die u opgeeft wordt geïnstalleerd nadat u het profiel hebt toegewezen, wordt de kioskmodus van het apparaat pas geactiveerd nadat het opnieuw is opgestart.
+
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Lijst van bundel-id's voor ingebouwde iOS-apps
+
+Deze lijst bevat de bundel-id's van een aantal algemene ingebouwde iOS-apps. Als u de bundel-ID van andere apps wilt weten, neemt u contact op met de softwareleverancier.
+
+| Bundel-id                   | App-naam     | Uitgever |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | App Store    | Apple     |
+| com.apple.calculator        | Rekenmachine   | Apple     |
+| com.apple.mobilecal         | Kalender     | Apple     |
+| com.apple.camera            | Camera       | Apple     |
+| com.apple.mobiletimer       | Klok        | Apple     |
+| com.apple.compass           | Kompas      | Apple     |
+| com.apple.MobileAddressBook | Contactpersonen     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.mobileme.fmf1     | Zoek vrienden | Apple     |
+| com.apple.mobileme.fmip1    | Zoek mijn iPhone  | Apple     |
+| com.apple.gamecenter        | Game Center  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | Status       | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.Apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.Apple.mobilemail        | Mail         | Apple     |
+| com.apple.MapsMaps          |              | Apple     |
+| com.apple.MobileSMS         | Berichten     | Apple     |
+| com.apple.Music             | Music        | Apple     |
+| com.apple.news              | Nieuws         | Apple     |
+| com.apple.mobilenotes       | Opmerkingen        | Apple     |
+| com.apple.Numbers           | Getallen      | Apple     |
+| com.apple.Pages             | Pages        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | Foto's       | Apple     |
+| com.apple.podcasts          | Podcasts     | Apple     |
+| com.apple.reminders         | Herinneringen    | Apple     |
+| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.Preferences       | Instellingen     | Apple     |
+| com.apple.stocks            | Aandelen       | Apple     |
+| com.apple.tips              | Tips         | Apple     |
+| com.apple.videos            | Video 's       | Apple     |
+| com.apple.VoiceMemos        | Dictafoon   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | Watch        | Apple     |
+| com.apple.weather           | Weer      | Apple     |
 
 ## <a name="safari"></a>Safari
 -   **Safari (alleen onder toezicht)**: hiermee geeft u op of de Safari-browser op het apparaat kan worden gebruikt.

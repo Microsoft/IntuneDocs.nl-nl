@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321673"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Instellingen voor apparaatbeperkingen voor Windows Holographic for Business in Intune
 
@@ -68,7 +69,9 @@ De volgende instellingen voor apparaatbeperking worden ondersteund op apparaten 
 
 - **Systeemtijd wijzigen**: hiermee voorkomt u dat de eindgebruiker de datum en tijd van het apparaat wijzigt.
 
-## <a name="kiosk"></a>Kiosk
+## <a name="kiosk---obsolete"></a>Kiosk - Verouderd
+
+Deze instellingen zijn alleen-lezen en kunnen niet worden gewijzigd. Zie [Kioskinstellingen](kiosk-settings.md#windows-holographic-for-business) voor het configureren van de kioskmodus.
 
 Op een kioskapparaat wordt doorgaans een specifieke app uitgevoerd. Gebruikers hebben geen toegang tot functies op het apparaat buiten de kiosk-app.
 

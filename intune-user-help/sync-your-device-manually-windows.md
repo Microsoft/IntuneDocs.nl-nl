@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/08/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34048016"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236052"
 ---
 # <a name="sync-your-windows-device-manually"></a>Uw Windows-apparaat handmatig synchroniseren
 
@@ -40,7 +40,7 @@ Alle Windows-apparaten kunnen worden gesynchroniseerd vanuit de app Instellingen
 * [Windows 10 Mobile](#windows-10-mobile)  
 * [Windows Phone 8.1](#windows-phone-81)    
 
-## <a name="sync-from-company-portal-app-for-windows"></a>Synchroniseren vanuit de bedrijfsportal-app voor Windows
+## <a name="sync-directly-from-company-portal-app-for-windows"></a>Rechtstreeks synchroniseren vanuit de bedrijfsportal-app voor Windows
 Voer deze stappen uit als u een Windows 10-apparaat wilt synchroniseren waarop makersupdate (versie 1703) of hoger wordt uitgevoerd.
 
 1.  Open de bedrijfsportal-app op uw apparaat.
@@ -49,7 +49,7 @@ Voer deze stappen uit als u een Windows 10-apparaat wilt synchroniseren waarop m
 
     ![Schermafbeelding van de startpagina van de bedrijfsportal-app waarin Instellingen is gemarkeerd](./media/RS1_homePage_settings_04.png)  
     
-    ![Schermafbeelding van de instellingenpagina van de bedrijfsportal-app waarin de knop Synchroniseren is gemarkeerd](./media/RS1_settingspage_sync05.png)    
+    ![Schermafbeelding van de instellingenpagina van de bedrijfsportal-app waarin de knop Synchroniseren is gemarkeerd](./media/RS1_settingspage_sync05.png)  
 
 ## <a name="sync-from-settings-app"></a>Synchroniseren vanuit de app Instellingen 
 Voltooi deze stappen als u uw Microsoft HoloLens-, Windows 10 desktop-, Windows 10 Mobile- of Windows Phone 8.1-apparaat handmatig wilt synchroniseren vanuit de app Instellingen.

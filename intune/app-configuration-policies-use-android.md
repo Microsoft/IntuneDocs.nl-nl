@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c837f9a5a2cb1a6f267f85f888453725da6acb66
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0ee53dd02fa008a2e885b789439e88c766205d13
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905747"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268869"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>App-configuratiebeleidsregels toevoegen voor beheerde Android-apparaten
 
@@ -63,7 +63,7 @@ Stel voor elke sleutel en waarde in de configuratie het volgende in:
 U kunt de volgende opties kiezen als u Variabele als het waardetype kiest:
 - User Principal Name: bijvoorbeeld **John@contoso.com**
 - Mail: bijvoorbeeld **John@contoso.com**
-- Partian UPN: bijvoorbeeld **Jan**
+- Partial UPN: bijvoorbeeld **Jan**
 - Account-id: bijvoorbeeld **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
 - Apparaat-id: bijvoorbeeld **b9841cd9-9843-405f-be28-b2265c59ef97**
 - Gebruikers-id: bijvoorbeeld **3ec2c00f-b125-4519-acf0-302ac3761822**

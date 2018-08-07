@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 2effa1d63be57c938a4e5763090bce8f20f48192
-ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
+ms.openlocfilehash: f0c35caf841729aae8ce6ccdbf1c9709258a8f5b
+ms.sourcegitcommit: 2e08887c07d29979300e80e6a40372aec6287103
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042796"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39249723"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
@@ -40,7 +40,7 @@ Met de Microsoft Intune App SDK voor iOS kunt u Intune-beveiligingsbeleid voor a
 
 ## <a name="whats-in-the-sdk"></a>Inhoud van de SDK
 
-De ontwikkelaarshandleiding voor Intune App SDK voor iOS bevat een statische bibliotheek, resourcebestanden, API-headers, een PLIST-bestand met foutopsporingsinstellingen en een configuratiehulpprogramma. Mobiele apps omvatten mogelijk de bronbestanden en kunnen statisch aan de meeste bibliotheken voor beleidsafdwinging worden gekoppeld. Geavanceerde MAM-functies van Intune worden afgedwongen met behulp van API's.
+De ontwikkelaarshandleiding voor Intune App SDK voor iOS bevat een statische bibliotheek, resourcebestanden, API-headers, een PLIST-bestand met foutopsporingsinstellingen en een configuratiehulpprogramma. Mobiele apps omvatten mogelijk de bronbestanden en kunnen statisch aan de meeste bibliotheken voor beleidsafdwinging worden gekoppeld. Geavanceerde APP-functies van Intune worden afgedwongen met behulp van API's.
 
 In deze handleiding wordt ingegaan op het gebruik van de volgende onderdelen van de Intune App SDK voor iOS:
 
@@ -165,8 +165,6 @@ Normaal gesproken vereist ADAL dat apps worden geregistreerd via Azure Active Di
 
 Als uw app al ADAL gebruikt om gebruikers te verifiëren, moet de app de bestaande registratiewaarden gebruiken en de standaardwaarden van de Intune App SDK overschrijven. Dit zorgt ervoor dat eindgebruikers niet tweemaal om verificatie wordt gevraagd (eenmaal door de Intune App SDK en een tweede maal door de app).
 
-### <a name="recommendations"></a>Aanbevelingen
-
 Het verdient aanbeveling dat uw app is gekoppeld aan de [meest recente versie van ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) op de hoofdvertakking. De Intune App SDK gebruikt momenteel de brokervertakking van ADAL om ondersteuning te bieden voor apps waarvoor voorwaardelijke toegang is vereist. (Deze apps zijn daarom afhankelijk van de Microsoft Authenticator-app.) Maar de SDK is nog steeds compatibel met de hoofdvertakking van de ADAL. Gebruik de vertakking die geschikt is voor uw app.
 
 ### <a name="link-to-adal-binaries"></a>Koppelen aan binaire ADAL-bestanden
@@ -175,23 +173,13 @@ Volg de onderstaande stappen om uw app te koppelen aan de binaire ADAL-bestanden
 
 1. Download de [Azure Active Directory Authentication Library (ADAL) voor Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) vanuit GitHub en volg hierna de [instructies](https://github.com/AzureAD/azure-activedirectory-library-for-objc#download) voor het downloaden van ADAL met Git-submodules of CocoaPods.
 
-2. Voeg het ADAL-framework (optie 1) of de statische bibliotheek (optie 2) aan uw project toe:
+2. Voeg het ADAL-framework (optie 1) of de statische bibliotheek (optie 2) aan uw project toe.
 
-    **Optie 1 (aanbevolen)**: Sleep `ADAL.framework` naar de lijst **Ingesloten binaire bestanden** van het projectdoel.
+3. Als uw app geen toegangsgroepen voor de sleutelhanger heeft gedefinieerd, moet u de bundel-id van de app toevoegen als eerste groep.
 
-    **Optie 2**: Sleep de bibliotheek `libADALiOS.a` naar de lijst **Linked Frameworks and Libraries** van het projectdoel. Voeg `-force_load {PATH_TO_LIB}/libADALiOS.a` aan de buildconfiguratie-instelling `OTHER_LDFLAGS` van het project of **Other Linker Flags** in de gebruikersinterface van Xcode toe. `PATH_TO_LIB` moet worden vervangen door de locatie van de binaire ADAL-bestanden.
+4. Schakel eenmalige aanmelding van ADAL in door `com.microsoft.adalcache` en `com.microsoft.workplacejoin` toe te voegen aan de sleutelketenrechten.
 
-
-
-### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>Wilt u de ADAL-tokencache delen met andere apps die zijn ondertekend met hetzelfde inrichtingsprofiel?
-
-Volg de onderstaande instructies als u ADAL-tokens wilt delen tussen apps die zijn ondertekend met hetzelfde inrichtingsprofiel:
-
-1. Als uw app geen toegangsgroepen voor de sleutelhanger heeft gedefinieerd, moet u de bundel-id van de app toevoegen als eerste groep.
-
-2. Schakel eenmalige aanmelding van ADAL in door `com.microsoft.adalcache` toe te voegen aan de sleutelhangerrechten.
-
-3. Als u wilt opgeven dat een aangepaste sleutelhangergroep `com.microsoft.adalcache` vervangt, geeft u dat op in het bestand Info.plist onder 'IntuneMAMSettings', met de sleutel `ADALCacheKeychainGroupOverride`.
+5. Als u de gedeelde cachesleutelketengroep van ADAL expliciet instelt, zorg er dan voor dat deze is ingesteld op `<appidprefix>.com.microsoft.adalcache`. ADAL stelt dit automatisch in tenzij u dit overschrijft. Als u wilt opgeven dat een aangepaste sleutelketengroep `com.microsoft.adalcache` vervangt, geeft u dat op in het bestand Info.plist onder 'IntuneMAMSettings', met de sleutel `ADALCacheKeychainGroupOverride`.
 
 ### <a name="configure-adal-settings-for-the-intune-app-sdk"></a>ADAL-instellingen voor de Intune App SDK configureren
 
@@ -221,9 +209,45 @@ Apps kunnen bovendien deze Azure AD-instellingen tijdens runtime overschrijven. 
 
 Als uw app ADAL niet gebruikt, zorgt de Intune App SDK voor de standaardwaarden voor ADAL-parameters en de verificatie met Azure AD. U hoeft geen waarden op te geven voor de hierboven vermelde ADAL-instellingen.
 
-## <a name="receiving-app-protection-policy"></a>Beleid voor app-beveiliging ontvangen
+## <a name="configure-settings-for-the-intune-app-sdk"></a>De instellingen van de Intune App SDK configureren
+
+U kunt de **IntuneMAMSettings**-woordenlijst gebruiken die deel uitmaakt van het bestand Info.plist van de toepassing voor het configureren en instellen van de Intune App SDK. Als de IntuneMAMSettings-woordenlijst niet zichtbaar is in het bestand Info.plist, moet u deze maken.
+
+U kunt in de woordenlijst IntuneMAMSettings de volgende ondersteunde instellingen toevoegen om de Intune App SDK te configureren.
+
+Sommige van deze instellingen zijn mogelijk in eerdere secties aan bod gekomen en sommige zijn niet op alle apps van toepassing.
+
+Instelling  | Type  | Definitie | Vereist?
+--       |  --   |   --       |  --
+ADALClientId  | Tekenreeks  | De Azure AD-client-id van de app. | Vereist als de app gebruikmaakt van ADAL. |
+ADALAuthority | Tekenreeks | De Azure AD-instantie van de app wordt gebruikt. U moet uw eigen omgeving gebruiken waar AAD-accounts zijn geconfigureerd. | Vereist als de app gebruikmaakt van ADAL. Als deze waarde niet aanwezig is, wordt een standaard Intune-waarde gebruikt.|
+ADALRedirectUri  | Tekenreeks  | De Azure AD-omleidings-URI van de app. | ADALRedirectUri of ADALRedirectScheme is vereist als de app gebruikmaakt van ADAL.  |
+ADALRedirectScheme  | Tekenreeks  | Het Azure AD-omleidingsschema van de app. Dit kan worden gebruikt in plaats van ADALRedirectUri als de omleidings-URI van de app de notatie `scheme://bundle_id` heeft. | ADALRedirectUri of ADALRedirectScheme is vereist als de app gebruikmaakt van ADAL. |
+ADALLogOverrideDisabled | Boolean-waarde  | Geeft aan of de SDK alle ADAL-logboeken (inclusief ADAL-aanroepen van de app, indien van toepassing) naar een eigen logboekbestand routeert. De standaardwaarde is NO (Nee). De waarde is YES (Ja) als de app een eigen ADAL-logboek wil aanroepen. | Optioneel. |
+ADALCacheKeychainGroupOverride | Tekenreeks  | Hiermee wordt aangegeven welke sleutelhangergroep voor de ADAL-cache moet worden gebruikt in plaats van 'com.microsoft.adalcache'. Houd er rekening mee dat deze niet het voorvoegsel app-id heeft. Dat wordt tijdens runtime als voorvoegsel toegevoegd aan de gegeven tekenreeks. | Optioneel. |
+AppGroupIdentifiers | Stringarray  | Matrix van toepassingsgroepen van het gedeelte com.apple.security.application-groups met rechten van de app. | Vereist als de app toepassingsgroepen gebruikt. |
+ContainingAppBundleId | Tekenreeks | Deze geeft de bundel-id aan van de extensie waarvan app onderdeel uitmaakt. | Vereist voor iOS-extensies. |
+DebugSettingsEnabled| Boolean-waarde | Indien ingesteld op YES (Ja), kan testbeleid binnen de bundel Instellingen worden toegepast. Apps moeten *niet* worden verzonden als deze instelling is ingeschakeld. | Optioneel. De standaardwaarde is No (Nee).|
+MainNibFile <br> MainNibFile~ipad  | Tekenreeks  | Deze instelling moet de bestandsnaam van de hoofd-nib van de app hebben.  | Vereist als de app MainNibFile in definieert in Info.plist. |
+MainStoryboardFile <br> MainStoryboardFile~ipad  | Tekenreeks  | Deze instelling moet de bestandsnaam van het hoofd-storyboard van de app hebben. | Vereist als de app UIMainStoryboardFile definieert in Info.plist. |
+MAMPolicyRequired| Boolean-waarde| Dit geeft aan of de app wordt geblokkeerd en niet kan worden gestart als de app geen Intune APP-beleid heeft. De standaardwaarde is NO (Nee). <br><br> Opmerking: apps kunnen niet worden verzonden naar de APP Store als MAMPolicyRequired is ingesteld op Yes (Ja). | Optioneel. De standaardwaarde is No (Nee).|
+MAMPolicyWarnAbsent | Boolean-waarde| Deze geeft aan of de app tijdens het opstarten een waarschuwing verzendt naar de gebruiker als de app geen Intune APP-beleid heeft. <br><br> Opmerking: Het is gebruikers nog steeds toegestaan de app zonder beleid te gebruiken, nadat ze de waarschuwing hebben genegeerd. | Optioneel. De standaardwaarde is No (Nee). |
+MultiIdentity | Boolean-waarde| Hiermee wordt aangegeven of de app in staat is om met meerdere identiteiten te werken. | Optioneel. De standaardwaarde is No (Nee). |
+SplashIconFile <br> SplashIconFile~ ipad | Tekenreeks  | Geeft het pictogrambestand van het Intune-opstartscherm aan. | Optioneel. |
+SplashDuration | Getal | Minimale tijdsduur in seconden voor de weergave van het Intune-opstartscherm bij het opstarten van de app. De standaardwaarde is 1,5 seconden. | Optioneel. |
+BackgroundColor| Tekenreeks| Hiermee geeft u de achtergrondkleur aan voor het opstartscherm en het scherm waarop een pincode moet worden ingevoerd. Accepteert een hexadecimale RGB-tekenreeks in de vorm van #XXXXXX, waarbij elke X een teken van 0-9 of A-F kan zijn. Het hekje kan worden weggelaten.   | Optioneel. De standaardkleur is lichtgrijs. |
+ForegroundColor| Tekenreeks| Hiermee geeft u de voorgrondkleur aan voor het opstartscherm en het scherm waarop een pincode moet worden ingevoerd, voor bijvoorbeeld tekstkleur. Accepteert een hexadecimale RGB-tekenreeks in de vorm #XXXXXX, waarbij elke X een teken van 0-9 of A-F kan zijn. Het hekje kan worden weggelaten.  | Optioneel. De standaardkleur is zwart. |
+AccentColor | Tekenreeks| Hiermee geeft u de accentkleur aan voor schermen waarop een pincode moet worden ingevoerd, voor bijvoorbeeld knoptekst en de kleur voor het markeren van vakken. Accepteert een hexadecimale RGB-tekenreeks in de vorm van #XXXXXX, waarbij elke X een teken van 0-9 of A-F kan zijn. Het hekje kan worden weggelaten.| Optioneel. De standaardkleur is systeemblauw. |
+MAMTelemetryDisabled| Boolean-waarde| Hiermee wordt aangegeven dat de SDK geen telemetriegegevens verzendt naar de back-end.| Optioneel. De standaardwaarde is No (Nee). |
+MAMTelemetryUsePPE | Boolean-waarde | Hiermee wordt aangegeven of MAM SDK gegevens verstuurt naar de back-end van de PPE-telemetrie. Gebruik deze instelling als u wilt testen of uw apps voldoen aan Intune-beleid zodat telemetrietestgegevens niet worden verward met klantgegevens. | Optioneel. De standaardwaarde is No (Nee). |
+MaxFileProtectionLevel | Tekenreeks | Optioneel. Hiermee kan de app de maximale `NSFileProtectionType` opgeven die hierdoor kan worden ondersteund. Deze waarde overschrijft het beleid dat is verzonden door de service als het niveau hoger is dan wat door de toepassing kan worden ondersteund. Mogelijke waarden: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
+OpenInActionExtension | Boolean-waarde | Ingesteld op Ja voor uitbreidingen van Open-In-acties. Zie de sectie Gegevens delen via UIActivityViewController voor meer informatie. |
+WebViewHandledURLSchemes | Matrix van tekenreeksen | Hiermee worden de URL-schema's opgegeven die door de webweergave van de app worden afgehandeld. | Verplicht, indien de app gebruikmaakt van een webweergave die URL's afhandelt via koppelingen en/of JavaScript. |
+
+## <a name="receive-app-protection-policy"></a>Beleid voor app-beveiliging ontvangen
 
 ### <a name="overview"></a>Overzicht
+
 Apps moeten een aanvraag voor registratie bij de Intune MAM-service starten om beveiligingsbeleid voor Intune-apps te ontvangen. Apps kunnen worden geconfigureerd in de Intune-console om beveiligingsbeleid voor apps met of zonder apparaatregistratie te ontvangen. Met beveiligingsbeleid voor apps zonder registratie, ook wel **APP-WE** of MAM-WE genoemd, kunnen apps worden beheerd door Intune zonder dat het apparaat hoeft te worden geregistreerd in Intune Mobile Device Management (MDM). In beide gevallen is registratie bij de Intune MAM-service vereist om beleid te ontvangen.
 
 ### <a name="apps-that-use-adal"></a>Apps die gebruikmaken van ADAL
@@ -250,7 +274,7 @@ Nadat deze API is aangeroepen, blijft de app gewoon functioneren. Als de inschri
 
 ### <a name="apps-that-do-not-use-adal"></a>Apps waarvoor geen gebruik wordt gemaakt van ADAL
 
-Apps waarbij de gebruiker niet wordt aangemeld met ADAL kunnen nog wel app-beveiligingsbeleid ontvangen van de Intune MAM-service door de API aan te roepen, waardoor de SDK die verificatie afhandelt. Apps moeten deze techniek gebruiken wanneer ze een gebruiker niet hebben geverifieerd met Azure AD, maar wel beveiligingsbeleid voor apps moeten ophalen ter bescherming van gegevens. Deze situatie kan zich voordoen wanneer een andere verificatieservice wordt gebruikt voor het aanmelden bij de app, of de app helemaal geen aanmelding vereist. Om dit te bereiken, moet de app de methode `loginAndEnrollAccount` in de `IntuneMAMEnrollmentManager`-instantie aanroepen:
+Apps waarbij de gebruiker niet wordt aangemeld met ADAL kunnen nog wel app-beveiligingsbeleid ontvangen van de Intune MAM-service door de API aan te roepen, waardoor de SDK die verificatie afhandelt. Apps moeten deze techniek gebruiken wanneer ze een gebruiker niet hebben geverifieerd met Azure AD, maar wel beveiligingsbeleid voor apps moeten ophalen ter bescherming van gegevens. Deze situatie kan zich voordoen wanneer een andere verificatieservice wordt gebruikt voor het aanmelden bij de app, of de app helemaal geen aanmelding vereist. Om dit te bereiken, kan de met app de methode `loginAndEnrollAccount` in de `IntuneMAMEnrollmentManager`-instantie worden aangeroepen:
 
 ```objc
 /**
@@ -273,6 +297,17 @@ Voorbeeld:
 [[IntuneMAMEnrollmentManager instance] loginAndEnrollAccount:@”user@foo.com”];
 ```
 
+### <a name="let-intune-handle-authentication-and-enrollment-at-launch"></a>Intune de verificatie en registratie laten afhandelen bij het opstarten
+
+Als u wilt dat de Intune SDK alle verificatie met behulp van de ADAL en de registratie afhandelt voordat uw app klaar is met opstarten, en uw app altijd APP-beleid vereist, hoeft u geen `loginAndEnrollAccount`-API te gebruiken. U kunt gewoon de twee instellingen hieronder op Ja instellen in de IntuneMAMSettings-woordenlijst in de Info.plist van de app.
+
+Instelling  | Type  | Definitie |
+--       |  --   |   --       |  
+AutoEnrollOnLaunch| Boolean-waarde| Hiermee geeft u op of de app moet proberen automatisch in te schrijven bij het starten als een bestaande beheerde identiteit wordt gedetecteerd en dit nog niet is gebeurd. De standaardwaarde is NO (Nee). <br><br> Opmerking: als er geen beheerde identiteit wordt gevonden of er geen geldig token voor de identiteit beschikbaar is in de ADAL-cache, dan zal de poging om in te schrijven zonder melding en zonder te vragen om referenties mislukken, tenzij in de app MAMPolicyRequired tevens is ingesteld op YES (Ja). |
+MAMPolicyRequired| Boolean-waarde| Deze geeft aan of de app is geblokkeerd en niet kan worden gestart als de app geen Intune-beveiligingsbeleid voor apps heeft. De standaardwaarde is NO (Nee). <br><br> Opmerking: apps kunnen niet worden verzonden naar de APP Store als MAMPolicyRequired is ingesteld op Yes (Ja). Wanneer MAMPolicyRequired wordt ingesteld op YES, moet AutoEnrollOnLaunch ook worden ingesteld op YES. |
+
+Als u deze optie voor uw app kiest, hoeft u er niet voor te zorgen dat uw app opnieuw opstart na registratie.
+
 ### <a name="deregister-user-accounts"></a>De registratie van gebruikersaccounts ongedaan maken
 
 Voordat een gebruiker wordt afmeldt bij een app, moet de registratie van de gebruiker bij de SDK ongedaan worden gemaakt door de app. Zo kunt u er zeker van zijn:
@@ -291,7 +326,7 @@ Voordat de gebruiker wordt afgemeld, moet de app de volgende methode aanroepen i
  *  registered accounts.  Once removed, if the account has enrolled
  *  the application, the account will be un-enrolled.
  *  @note In the case where an un-enroll is required, this method will block
- *  until the Intune MAM AAD token is acquired, then return.  This method must be called before  
+ *  until the Intune APP AAD token is acquired, then return.  This method must be called before  
  *  the user is removed from the application (so that required AAD tokens are not purged
  *  before this method is called).
  *  @param identity The UPN of the account to be removed.
@@ -313,11 +348,11 @@ Voorbeeld:
 
 De app kan status-, resultaat- en foutopsporingsmeldingen ontvangen over de volgende aanvragen voor de Intune MAM-service:
 
- - Inschrijvingsaanvragen
- - Aanvragen voor beleidsupdates
- - Uitschrijvingsaanvragen
+* Inschrijvingsaanvragen
+* Aanvragen voor beleidsupdates
+* Uitschrijvingsaanvragen
 
-De meldingen worden weergegeven via gemachtigdenmethoden in `Headers/IntuneMAMEnrollmentDelegate.h`:
+De meldingen worden weergegeven via gemachtigdenmethoden in `IntuneMAMEnrollmentDelegate.h`:
 
 ```objc
 /**
@@ -344,211 +379,202 @@ De meldingen worden weergegeven via gemachtigdenmethoden in `Headers/IntuneMAMEn
 
 Deze gemachtigdenmethoden retourneren een object `IntuneMAMEnrollmentStatus` met de volgende gegevens:
 
-- De identiteit van het account dat is gekoppeld aan de aanvraag
-- Een statuscode die het resultaat van de aanvraag aanduidt
-- Een fouttekenreeks met een beschrijving van de statuscode
-- Een object `NSError`
+* De identiteit van het account dat is gekoppeld aan de aanvraag
+* Een statuscode die het resultaat van de aanvraag aanduidt
+* Een fouttekenreeks met een beschrijving van de statuscode
+* Een `NSError`-object. Dit object wordt gedefinieerd in `IntuneMAMEnrollmentStatus.h`, samen met de specifieke statuscodes die kunnen worden geretourneerd.
 
-Dit object wordt gedefinieerd in `IntuneMAMEnrollmentStatus.h`, samen met de specifieke statuscodes die kunnen worden geretourneerd.
-
+> [!NOTE]
+> Deze informatie is uitsluitend voor foutopsporing. Er moet geen bedrijfslogica in uw app zijn gebaseerd op deze meldingen. Deze informatie kan naar een telemetrieservice worden verzonden om fouten te kunnen opsporen en voor bewakingsdoeleinden.
 
 ### <a name="sample-code"></a>Voorbeeldcode
 
 Hier volgen voorbeeldimplementaties van de gemachtigdenmethoden:
 
 ```objc
-- (void)enrollmentRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
+- (void)enrollmentRequestWithStatus:(IntuneMAMEnrollmentStatus*)status
 {
     NSLog(@"enrollment result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
 }
 
-
-- (void)policyRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
+- (void)policyRequestWithStatus:(IntuneMAMEnrollmentStatus*)status
 {
     NSLog(@"policy check-in result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
 }
 
-- (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
+- (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus*)status
 {
     NSLog(@"un-enroll result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
 }
 ```
 
-## <a name="app-restart"></a>App opnieuw opstarten
+## <a name="application-restart"></a>Toepassing opnieuw starten
 
-Wanneer een app voor de eerste keer beveiligingsbeleid voor apps ontvangt, moet deze opnieuw worden opgestart om de vereiste hooks toe te passen. Om de app te melden dat deze opnieuw moet worden opgestart, biedt de SDK een gemachtigdenmethode in Headers/IntuneMAMPolicyDelegate.h.
+Wanneer een app voor de eerste keer MAM-beleid ontvangt, moet deze opnieuw worden opgestart om de vereiste hooks toe te passen. Als u wilt aangeven dat de app opnieuw moet worden opgestart, biedt de SDK een gemachtigdenmethode in `IntuneMAMPolicyDelegate.h`.
 
 ```objc
  - (BOOL) restartApplication
 ```
-De geretourneerde waarde van deze methode geeft voor de SDK aan of de app het vereiste opnieuw opstarten moet afhandelen:   
 
- - Als true (waar) wordt geretourneerd, moet de app het opnieuw opstarten afhandelen.   
+De geretourneerde waarde van deze methode geeft voor de SDK aan of de app het vereiste opnieuw opstarten moet afhandelen:
 
- - Als false (onwaar) wordt geretourneerd, start de SDK de app opnieuw op nadat deze methode wordt geretourneerd. De SDK geeft onmiddellijk een dialoogvenster weer waarin de gebruiker wordt gevraagd de app opnieuw op te starten.
+* Als true (waar) wordt geretourneerd, moet de app het opnieuw opstarten afhandelen.
 
-## <a name="customize-your-apps-behavior"></a>Uw app-gedrag aanpassen
+* Als false (onwaar) wordt geretourneerd, start de SDK de app opnieuw op nadat deze methode wordt geretourneerd. De SDK geeft onmiddellijk een dialoogvenster weer waarin de gebruiker wordt gevraagd de app opnieuw op te starten.
 
-De Intune App SDK heeft verschillende API's die u kunt aanroepen met informatie over het Intune-beveiligingsbeleid voor apps dat op de app is geïmplementeerd. U kunt met deze gegevens uw app-gedrag aanpassen. De meeste instellingen van het beveiligingsbeleid voor apps worden automatisch afgedwongen door de SDK en niet de toepassing. De enige instelling die de app moet implementeren is het besturingselement Opslaan als.
+## <a name="customize-your-apps-behavior-with-apis"></a>Uw app-gedrag aanpassen met API's
 
-### <a name="get-app-protection-policy"></a>Beleid voor app-beveiliging verzorgen
+De Intune App SDK heeft verschillende API's die u kunt aanroepen met informatie over het Intune APP-beleid voor apps dat op de app is geïmplementeerd. U kunt met deze gegevens uw app-gedrag aanpassen. De onderstaande tabel bevat informatie over sommige essentiële Intune-klassen die u gaat gebruiken.
 
-#### <a name="intunemampolicymanagerh"></a>IntuneMAMPolicyManager.h
-De klasse IntuneMAMPolicyManager beschrijft het Intune-beveiligingsbeleid voor apps dat in de toepassing wordt geïmplementeerd. Beschrijft met name API's die nuttig zijn voor [Meerdere identiteiten inschakelen](#-enable-multi-identity-optional).
+Klasse | Description
+----- | -----------
+IntuneMAMPolicyManager.h | De klasse IntuneMAMPolicyManager beschrijft het Intune APP-beleid voor apps dat in de toepassing wordt geïmplementeerd. Beschrijft met name API's die nuttig zijn voor [Meerdere identiteiten inschakelen](#-enable-multi-identity-optional). |
+IntuneMAMPolicy.h | De klasse IntuneMAMPolicy beschrijft enkele MAM-beleidsinstellingen die van toepassing zijn op de app. Deze beleidsinstellingen worden beschreven, zodat de app de gebruikersinterface kan aanpassen. De meeste beleidsinstellingen worden afgedwongen door de SDK en niet door de app. Het enige dat de app moet implementeren is het besturingselement Opslaan als. Deze klasse beschrijft een aantal API's die nodig zijn voor het implementeren van Opslaan als. |
+IntuneMAMDataProtectionManager.h | De klasse IntuneMAMFileProtectionManager beschrijft API’s die de app kan gebruiken voor het expliciet beveiligen van bestanden en mappen op basis van een opgegeven identiteit. De identiteit kan worden beheerd door Intune of onbeheerd blijven, en de SDK past het juiste MAM-beleid toe. Het gebruik van deze klasse is optioneel. |
+IntuneMAMDataProtectionManager.h | De klasse IntuneMAMDataProtectionManager beschrijft API’s die de app kan gebruiken voor het beveiligen van gegevensbuffers op basis van een opgegeven identiteit. De identiteit kan worden beheerd door Intune of onbeheerd blijven, en de SDK past de versleuteling op correcte wijze toe. |
 
-#### <a name="intunemampolicyh"></a>IntuneMAMPolicy.h
-De klasse IntuneMAMPolicy beschrijft het Intune-beveiligingsbeleid voor apps dat in de toepassing wordt geïmplementeerd. De meeste beleidsinstellingen die door deze klasse beschikbaar worden gemaakt, worden afgedwongen door de SDK, maar u kunt altijd uw app-gedrag aanpassen op basis van hoe beleidsinstellingen worden afgedwongen.
+## <a name="implement-save-as-controls"></a>Besturingselementen voor Opslaan als implementeren
 
-Deze klasse beschrijft een aantal API's die nodig zijn voor het implementeren van besturingselementen voor Opslaan als, uiteengezet in de volgende sectie.
+IT-beheerders kunnen met Intune selecteren op welke opslaglocaties een beheerde app gegevens kan opslaan. Apps kunnen de toegestane opslaglocaties bij de Intune App SDK opvragen met de `isSaveToAllowedForLocation`-API in `IntuneMAMPolicy.h`.
 
-### <a name="implement-save-as-controls"></a>Besturingselementen voor Opslaan als implementeren
+Voordat apps beheerde gegevens kunnen opslaan in een opslagruimte in de cloud of op een lokale locatie, moeten deze met de `isSaveToAllowedForLocation`-API controleren of de IT-beheerder toestaat dat de gegevens daar mogen worden opgeslagen.
 
-IT-beheerders kunnen met Intune selecteren op welke opslaglocaties een beheerde app gegevens kan opslaan. Apps kunnen de toegestane opslaglocaties bij de Intune App SDK opvragen met de **isSaveToAllowedForLocation**-API, gedefinieerd in **IntuneMAMPolicy.h**.
+Bij het gebruik van de `isSaveToAllowedForLocation`-API moeten apps de UPN voor de opslaglocatie doorgeven als deze beschikbaar is.
 
-Voordat apps beheerde gegevens kunnen opslaan in een opslagruimte in de cloud of op een lokale locatie, moeten ze met de **isSaveToAllowedForLocation**-API controleren of de IT-beheerder toestaat dat de gegevens daar mogen worden opgeslagen.
+### <a name="supported-save-locations"></a>Ondersteunde opslaglocaties
 
-Bij het gebruik van de **isSaveToAllowedForLocation**-API moeten apps de UPN voor de opslaglocatie doorgeven als deze beschikbaar is.
-
-#### <a name="supported-save-locations"></a>Ondersteunde opslaglocaties
-
-De **isSaveToAllowedForLocation**-API biedt constanten om te controleren of de IT-beheerder toestaat dat gegevens worden opgeslagen op de volgende locaties gedefinieerd in IntuneMAMPolicy.h:
+De `isSaveToAllowedForLocation`-API biedt constanten om te controleren of de IT-beheerder toestaat dat gegevens worden opgeslagen op de volgende locaties die in `IntuneMAMPolicy.h` zijn gedefinieerd:
 
 * IntuneMAMSaveLocationOther
 * IntuneMAMSaveLocationOneDriveForBusiness
 * IntuneMAMSaveLocationSharePoint
 * IntuneMAMSaveLocationLocalDrive
 
-Apps moeten de constanten in de **isSaveToAllowedForLocation**-API gebruiken om te controleren of gegevens kunnen worden opgeslagen op locaties die als 'beheerd' worden beschouwd, zoals OneDrive voor Bedrijven, of als 'persoonlijk'. Daarnaast moet de API worden gebruikt wanneer de app niet kan controleren of een locatie wordt 'beheerd' of 'persoonlijk' is.
+Apps moeten de constanten in de `isSaveToAllowedForLocation` gebruiken om te controleren of gegevens kunnen worden opgeslagen op locaties die worden beschouwd als 'beheerd', zoals OneDrive voor Bedrijven, of als 'persoonlijk'. Daarnaast moet de API worden gebruikt wanneer de app niet kan controleren of een locatie wordt 'beheerd' of 'persoonlijk' is.
 
 Locaties die bekend zijn als 'persoonlijk' worden vertegenwoordigd door de `IntuneMAMSaveLocationOther`-constante.
 
 De `IntuneMAMSaveLocationLocalDrive`-constante moet worden gebruikt wanneer de app gegevens opslaat op een locatie op het lokale apparaat.
 
-## <a name="configure-settings-for-the-intune-app-sdk"></a>De instellingen van de Intune App SDK configureren
+## <a name="share-data-via-uiactivityviewcontroller"></a>Gegevens delen via UIActivityViewController
 
-U kunt de **IntuneMAMSettings**-woordenlijst gebruiken die deel uitmaakt van het bestand Info.plist van de toepassing voor het configureren en instellen van de Intune App SDK. Als u de woordenlijst IntuneMAMSettings niet ziet in het bestand Info.plist, moet u een woordenlijst maken in Info.plist van uw app, met de veldnaam IntuneMAMSettings.
+Vanaf versie 8.0.2 kan de Intune App SDK `UIActivityViewController`-acties filteren zodanig dat alleen door Intune beheerde locaties voor delen beschikbaar zijn om te selecteren. Dit gedrag wordt gecontroleerd via het overdrachtsbeleid voor toepassingsgegevens.
 
-U kunt in de woordenlijst IntuneMAMSettings verschillende rijen met sleutels en waarden van configuratie-instellingen toevoegen om de SDK te configureren. In de onderstaande tabel staan alle ondersteunde instellingen.
+### <a name="copy-to-actions"></a>'Kopiëren naar'-acties
 
-Sommige van deze instellingen zijn mogelijk in eerdere secties aan bod gekomen en sommige zijn niet op alle apps van toepassing.
+Wanneer er via de `UIActivityViewController` en `UIDocumentInteractionController` gegevens worden gedeeld, geeft iOS 'Kopiëren naar'-acties weer voor elke toepassing die het openen van gedeelde documenten ondersteunt. Toepassingen declareren de documenttypen die worden ondersteund via de instelling `CFBundleDocumentTypes` in Info.plist. Deze manier van delen is niet meer beschikbaar als het beleid verbiedt om met onbeheerde applicaties te delen. Als vervanging moeten toepassingen een niet-UI Action-extensie toevoegen aan hun toepassing en deze koppelen met de Intune App SDK. De Action-extensie fungeert als stub. De SDK implementeert het gedrag voor bestandsdeling. Volg de onderstaande stappen:
 
-Instelling  | Type  | Definitie | Vereist?
---       |  --   |   --       |  --
-ADALClientId  | Tekenreeks  | De Azure AD-client-id van de app. | Vereist als de app gebruikmaakt van ADAL. |
-ADALAuthority | Tekenreeks | De Azure AD-instantie van de app wordt gebruikt. U moet uw eigen omgeving gebruiken waar AAD-accounts zijn geconfigureerd. | Vereist als de app gebruikmaakt van ADAL. Als deze waarde niet aanwezig is, wordt een standaard Intune-waarde gebruikt.|
-ADALRedirectUri  | Tekenreeks  | De Azure AD-omleidings-URI van de app. | ADALRedirectUri of ADALRedirectScheme is vereist als de app gebruikmaakt van ADAL.  |
-ADALRedirectScheme  | Tekenreeks  | Het Azure AD-omleidingsschema van de app. Dit kan worden gebruikt in plaats van ADALRedirectUri als de omleidings-URI van de app de notatie `scheme://bundle_id` heeft. | ADALRedirectUri of ADALRedirectScheme is vereist als de app gebruikmaakt van ADAL. |
-ADALLogOverrideDisabled | Boolean-waarde  | Geeft aan of de SDK alle ADAL-logboeken (inclusief ADAL-aanroepen van de app, indien van toepassing) naar een eigen logboekbestand routeert. De standaardwaarde is NO (Nee). De waarde is YES (Ja) als de app een eigen ADAL-logboek wil aanroepen. | Optioneel. |
-ADALCacheKeychainGroupOverride | Tekenreeks  | Hiermee wordt aangegeven welke sleutelhangergroep voor de ADAL-cache moet worden gebruikt in plaats van 'com.microsoft.adalcache'. Houd er rekening mee dat deze niet het voorvoegsel app-id heeft. Dat wordt tijdens runtime als voorvoegsel toegevoegd aan de gegeven tekenreeks. | Optioneel. |
-AppGroupIdentifiers | Matrix van tekenreeks  | Matrix van toepassingsgroepen van het gedeelte com.apple.security.application-groups met rechten van de app. | Vereist als de app toepassingsgroepen gebruikt. |
-ContainingAppBundleId | Tekenreeks | Deze geeft de bundel-id aan van de extensie waarvan app onderdeel uitmaakt. | Vereist voor iOS-extensies. |
-DebugSettingsEnabled| Boolean-waarde | Indien ingesteld op YES (Ja), kan testbeleid binnen de bundel Instellingen worden toegepast. Apps moeten *niet* worden verzonden als deze instelling is ingeschakeld. | Optioneel. |
-MainNibFile<br>MainNibFile~ipad  | Tekenreeks  | Deze instelling moet de bestandsnaam van de hoofd-nib van de app hebben.  | Vereist als de app MainNibFile in definieert in Info.plist. |
-MainStoryboardFile<br>MainStoryboardFile~ipad  | Tekenreeks  | Deze instelling moet de bestandsnaam van het hoofd-storyboard van de app hebben. | Vereist als de app UIMainStoryboardFile definieert in Info.plist. |
-AutoEnrollOnLaunch| Boolean-waarde| Hiermee geeft u op of de app moet proberen automatisch in te schrijven bij het starten als een bestaande beheerde identiteit wordt gedetecteerd en dit nog niet is gebeurd. De standaardwaarde is NO (Nee). <br><br> Opmerking: Als er geen beheerde identiteit wordt gevonden of er geen geldig token voor de identiteit beschikbaar is in de ADAL-cache, dan mislukt de poging om in te schrijven zonder melding en zonder te vragen om referenties, tenzij in de app MAMPolicyRequired is ingesteld op YES. | Optioneel. |
-MAMPolicyRequired| Boolean-waarde| Deze geeft aan of de app is geblokkeerd en niet kan worden gestart als de app geen Intune-beveiligingsbeleid voor apps heeft. De standaardwaarde is NO (Nee). <br><br> Opmerking: apps kunnen niet worden verzonden naar de APP Store als de MAMPolicyRequired is ingesteld op YES. Wanneer MAMPolicyRequired wordt ingesteld op YES, moet AutoEnrollOnLaunch ook worden ingesteld op YES. | Optioneel. |
-MAMPolicyWarnAbsent | Boolean-waarde| Deze geeft aan of de app tijdens het opstarten een waarschuwing verzendt naar de gebruiker als de app geen Intune-beveiligingsbeleid voor apps heeft. <br><br> Opmerking: Het is gebruikers nog steeds toegestaan de app zonder beleid te gebruiken, nadat ze de waarschuwing hebben genegeerd. | Optioneel. |
-MultiIdentity | Boolean-waarde| Hiermee wordt aangegeven of de app in staat is om met meerdere identiteiten te werken. | Optioneel. |
-SplashIconFile <br>SplashIconFile~ ipad | Tekenreeks  | Geeft het pictogrambestand van het Intune-opstartscherm aan. | Optioneel. |
-SplashDuration | Getal | Minimale tijdsduur in seconden voor de weergave van het Intune-opstartscherm bij het opstarten van de app. De standaardwaarde is 1,5 seconden. | Optioneel. |
-BackgroundColor| Tekenreeks| Hiermee geeft u de achtergrondkleur aan voor het opstartscherm en het scherm waarop een pincode moet worden ingevoerd. Accepteert een hexadecimale RGB-tekenreeks in de vorm van #XXXXXX, waarbij elke X een teken van 0-9 of A-F kan zijn. Het hekje kan worden weggelaten.   | Optioneel. De standaardkleur is lichtgrijs. |
-ForegroundColor| Tekenreeks| Hiermee geeft u de voorgrondkleur aan voor het opstartscherm en het scherm waarop een pincode moet worden ingevoerd, voor bijvoorbeeld tekstkleur. Accepteert een hexadecimale RGB-tekenreeks in de vorm #XXXXXX, waarbij elke X een teken van 0-9 of A-F kan zijn. Het hekje kan worden weggelaten.  | Optioneel. De standaardkleur is zwart. |
-AccentColor | Tekenreeks| Hiermee geeft u de accentkleur aan voor schermen waarop een pincode moet worden ingevoerd, voor bijvoorbeeld knoptekst en de kleur voor het markeren van vakken. Accepteert een hexadecimale RGB-tekenreeks in de vorm van #XXXXXX, waarbij elke X een teken van 0-9 of A-F kan zijn. Het hekje kan worden weggelaten.| Optioneel. De standaardkleur is systeemblauw. |
-MAMTelemetryDisabled| Boolean-waarde| Hiermee wordt aangegeven dat de SDK geen telemetriegegevens verzendt naar de back-end.| Optioneel. |
-WebViewHandledURLSchemes | Matrix van tekenreeksen | Hiermee worden de URL-schema's opgegeven die door de webweergave van de app worden afgehandeld. | Verplicht, indien de app gebruikmaakt van een webweergave die URL's afhandelt via koppelingen en/of JavaScript. |  
+1. In uw toepassing moet ten minste één schemeURL zijn gedefinieerd onder `CFBundleURLTypes` in Info.plist.
 
-> [!NOTE]
-> Als uw app wordt gepubliceerd naar de App Store `MAMPolicyRequired` moet deze worden ingesteld op "Nee", volgens de App Store-standaarden.
+2. Uw toepassing en extensie moeten ten minste één app-groep delen en de app-groep moet worden vermeld in de matrix `AppGroupIdentifiers` in de IntuneMAMSettings-woordenlijst van de app en de extensie.
 
-## <a name="sharing-data-via-uiactivityviewcontroller"></a>Gegevens delen via UIActivityViewController 
-Vanaf versie 8.0.2 en hoger wordt het met de Intune APP SDK mogelijk om de UIActivityViewController-acties te filteren, zodat er deellocaties buiten Intune kunnen worden geselecteerd. Dit gedrag wordt gecontroleerd via het overdrachtsbeleid voor toepassingsgegevens en toekomstige APP-functie. De toekomstige functie wordt ingeschakeld nadat de meerderheid van door Microsoft ontwikkelde toepassingen (bijvoorbeeld Word, Excel, Powerpoint) de vereiste wijzigingen hebben toegepast om Gegevens delen via UIActivityViewController te ondersteunen. 
- 
-### <a name="copy-to-actions"></a>'Kopiëren naar'-acties 
-Wanneer er via de UIActivityViewController en UIDocumentInteractionController documenten worden gedeeld, geeft iOS 'Kopiëren naar'-acties weer voor elke toepassing die het openen van gedeelde documenten ondersteunt. Toepassingen declareren de documenttypen die worden ondersteund via de instelling CFBundleDocumentTypes in Info.plist. Deze manier van delen is niet langer beschikbaar als het beleid niet meer toestaat om met onbeheerde applicaties te delen. Als vervanging moeten toepassingen een non-ui Action-extensie toevoegen aan hun toepassing en deze koppelen met de Intune APP SDK voor iOS. De Action-extensies fungeren als stub. De SDK implementeert alle gedragingen voor bestandsdeling. Volg de stappen voor SDK-integratie hierboven en de volgende stappen: 
- 
-1. Uw toepassing moet ten minste één schemeURL hebben gedefinieerd onder CFBundleURLTypes in Info.plist. 
-2. Uw toepassing en extensie moeten ten minste één app-groep delen en de app-groep moet worden vermeld in de matrix AppGroupIdentifiers in de IntuneMAMSettings-woordenlijst van de app en de extensie. 
-3. Noem de Action-extensie 'Open in', gevolgd door de naam van de toepassing. U kunt indien nodig de Info.plist lokaliseren. 
-4. Ontwerp een sjabloonpictogram voor de extensie zoals wordt beschreven in [Apple-documentatie voor ontwikkelaars](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/). U kunt ook het hulpprogramma IntuneMAMConfigurator gebruiken om deze pictogrammen te genereren vanuit de .app-directory van de toepassing. Voer 'IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory' uit 
-5. Onder IntuneMAMSettings in de Info.plist van de extensie voegt u een Booleaanse instelling toe met de naam OpenInActionExtension en de waarde YES. 
-6. Configureer de NSExtensionActivationRule zodat deze een enkel bestand ondersteunt en alle typen van CFBundleDocumentTypes van de toepassing, voorafgegaan door 'com.microsoft.intune.mam'. Als de toepassing bijvoorbeeld public.text en public.image ondersteunt, is de activeringsregel: 
+3. Noem de Action-extensie 'Open in', gevolgd door de naam van de toepassing. U kunt indien nodig de Info.plist lokaliseren.
 
-```
-SUBQUERY ( 
-    extensionItems, 
-    $extensionItem, 
-    SUBQUERY ( 
-        $extensionItem.attachments, 
-        $attachment, 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1 
-).@count == 1 
-```
+4. Voorzie in een sjabloonpictogram voor de extensie zoals wordt beschreven in [Apple-documentatie voor ontwikkelaars](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/). U kunt ook het hulpprogramma IntuneMAMConfigurator gebruiken om deze pictogrammen te genereren vanuit de .app-directory van de toepassing. Voer hiervoor het volgende uit:
 
-### <a name="update-existing-share-and-action-extensions"></a>Bestaande Share- en Action-extensies bijwerken 
-Als uw toepassing al Share- of Action-extensies bevat, moet de NSExtensionActivationRule worden aangepast om Intune-typen toe te staan. Voor elk door de extensie ondersteund type is een aanvullend type voorafgegaan door 'com.microsoft.intune.mam.' nodig. Als de bestaande activeringsregel bijvoorbeeld de volgende is:  
+    ```bash
+    IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory
+    ```
 
-```
-SUBQUERY ( 
-    extensionItems, 
-    $extensionItem, 
-    SUBQUERY ( 
-        $extensionItem.attachments, 
-        $attachment, 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" 
-    ).@count > 0 
-).@count > 0 
- ```
+5. Voeg onder IntuneMAMSettings in de Info.plist van de extensie een Booleaanse instelling toe met de naam `OpenInActionExtension` en de waarde YES.
 
-moet deze worden gewijzigd in: 
+6. Configureer de `NSExtensionActivationRule` ter ondersteuning van een enkel bestand en alle typen uit de `CFBundleDocumentTypes` van de toepassing die worden voorafgegaan door `com.microsoft.intune.mam`. Als de toepassing bijvoorbeeld public.text en public.image ondersteunt, is de activeringsregel:
 
-```
-SUBQUERY ( 
-    extensionItems, 
-    $extensionItem, 
-    SUBQUERY ( 
-        $extensionItem.attachments, 
-        $attachment, 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data 
-    ).@count > 0 
-).@count > 0 
- ```
+    ```
+    SUBQUERY (
+        extensionItems,
+        $extensionItem,
+        SUBQUERY (
+            $extensionItem.attachments,
+            $attachment,
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1
+    ).@count == 1
+    ```
+
+### <a name="update-existing-share-and-action-extensions"></a>Bestaande Share- en Action-extensies bijwerken
+
+Als uw app al Share- of Action-extensies bevat, moet de `NSExtensionActivationRule` worden aangepast om Intune-typen toe te staan. Voeg voor elk door de extensie ondersteund type een aanvullend type voorafgegaan door `com.microsoft.intune.mam` toe. Als de bestaande activeringsregel bijvoorbeeld de volgende is:  
+
+    ```
+    SUBQUERY (
+        extensionItems,
+        $extensionItem,
+        SUBQUERY (
+            $extensionItem.attachments,
+            $attachment,
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
+        ).@count > 0
+    ).@count > 0
+    ```
+
+moet deze worden gewijzigd in:
+
+    ```
+    SUBQUERY (
+        extensionItems,
+        $extensionItem,
+        SUBQUERY (
+            $extensionItem.attachments,
+            $attachment,
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
+        ).@count > 0
+    ).@count > 0
+    ```
 
 > [!NOTE]
-> Het hulpprogramma IntuneMAMConfigurator kan worden gebruikt om de Intune-typen toe te voegen aan de activeringsregel. Als uw bestaande activeringsregel de vooraf gedefinieerde tekenreeksconstanten gebruikt (bijvoorbeeld NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText, enz.), kan het predicaat van de syntaxis erg complex worden. Het hulpprogramma IntuneMAMConfigurator kan ook worden gebruikt om de activeringsregel te converteren van de tekenreeksconstanten in een predicate tekenreeks terwijl de Intune-typen worden toegevoegd. U vindt de IntuneMAMConfigurator in onze GitHub-opslagplaats. 
+> Het hulpprogramma IntuneMAMConfigurator kan worden gebruikt om de Intune-typen toe te voegen aan de activeringsregel. Als uw bestaande activeringsregel de vooraf gedefinieerde tekenreeksconstanten gebruikt (bijvoorbeeld NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText, enz.), kan het predicaat van de syntaxis erg complex worden. Het hulpprogramma IntuneMAMConfigurator kan ook worden gebruikt om de activeringsregel te converteren van de tekenreeksconstanten in een predicate tekenreeks terwijl de Intune-typen worden toegevoegd.
 
+### <a name="what-the-ui-should-look-like"></a>Hoe de gebruikersinterface eruit moet zien
 
-## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Op MAM gerichte configuratie inschakelen voor iOS-toepassingen
-Via een op MAM gerichte configuratie kan een app configuratiegegevens ontvangen via de Intune App SDK. De indeling en varianten van deze gegevens moeten door de eigenaar/ontwikkelaar van de toepassing worden gedefinieerd en gecommuniceerd aan de klanten van Intune. Intune-beheerders kunnen configuratiegegevens gericht implementeren via de Intune-portal van Azure. Vanaf versie 7.0.1 van de Intune App SDK voor iOS kunnen apps die deelnemen aan op MAM gerichte configuratie, op MAM gerichte configuratiegegevens ontvangen via de MAM-service. De configuratiegegevens van de toepassing worden via onze MAM-service direct naar de app gepusht en niet via het MDM-kanaal. De Intune App SDK biedt een klasse voor toegang tot gegevens die uit deze consoles worden opgehaald. Houd rekening met de volgende vereisten: <br>
-* De app moet worden geregistreerd bij de Intune MAM-service voordat u toegang krijgt tot de gebruikersinterface van op MAM gerichte configuratie. Zie voor meer informatie [Beleid voor app-beveiliging ontvangen](#receiving-app-protection-policy).
-* Voeg ```IntuneMAMAppConfigManager.h``` toe aan het bronbestand van uw app.
-* Verstuur een aanroep naar ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` om het AppConfig-object op te halen.
-* Verstuur een aanroep naar de juiste selector voor het object ```IntuneMAMAppConfig```. Als de sleutel van uw toepassing bijvoorbeeld een tekenreeks is, moet u ```stringValueForKey``` of ```allStringsForKey``` gebruiken. Het bestand ```IntuneMAMAppConfig.h header``` bevat informatie over geretourneerde waarden/foutcondities.
+Oude gebruikersinterface:
 
-Zie [Graph API Reference](https://developer.microsoft.com/graph/docs/concepts/overview) (Naslaginformatie over Graph API) voor meer informatie over de mogelijkheden van Graph API. <br>
+![Oude gebruikersinterface voor delen](./media/sharing-UI-old.png)
+
+Nieuwe gebruikersinterface:
+
+![Nieuwe gebruikersinterface voor delen](./media/sharing-UI-new.png)
+
+## <a name="enable-targeted-configuration-appmam-app-config-for-your-ios-applications"></a>Gericht configuratiebeleid (APP-/ MAM-app-configuratie) voor uw iOS-toepassingen inschakelen
+
+Via een op MAM gerichte configuratie (tevens bekend als MAM-app-configuratie) kan een app configuratiegegevens ontvangen via de Intune SDK. De indeling en varianten van deze gegevens moeten door de eigenaar/ontwikkelaar van de app worden gedefinieerd en gecommuniceerd aan de klanten van Intune.
+
+Intune-beheerders kunnen configuratiegegevens gericht implementeren via Intune Azure Portal en de Intune Graph-API. Vanaf versie 7.0.1 van de Intune App SDK voor iOS kunnen apps die deelnemen aan op MAM gerichte configuratie, op MAM gerichte configuratiegegevens ontvangen via de MAM-service. De configuratiegegevens van de toepassing worden via onze MAM-service direct naar de app gepusht en niet via het MDM-kanaal. De Intune App SDK biedt een klasse voor toegang tot gegevens die uit deze consoles worden opgehaald. De volgende items zijn vereist:
+
+* De app moet worden geregistreerd bij de Intune MAM-service voordat u toegang krijgt tot de gebruikersinterface van op MAM gerichte configuratie. Zie [Beleid voor app-beveiliging ontvangen](#receive-app-protection-policy) voor meer informatie.
+
+* Voeg `IntuneMAMAppConfigManager.h` toe aan het bronbestand van uw app.
+
+* Verstuur een aanroep naar `[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]` om het AppConfig-object op te halen.
+
+* Verstuur een aanroep naar de juiste selector voor het object `IntuneMAMAppConfig`. Als de sleutel van uw toepassing bijvoorbeeld een tekenreeks is, moet u `stringValueForKey` of `allStringsForKey` gebruiken. Zie `IntuneMAMAppConfig.h` voor een gedetailleerde beschrijving van retourwaarden en foutcondities.
+
+Zie [Graph API Reference](https://developer.microsoft.com/graph/docs/concepts/overview) (Naslaginformatie over Graph API) voor meer informatie over de mogelijkheden van Graph API.
 
 Als u meer wilt weten over het maken van een op MAM gericht app-configuratiebeleid in iOS, raadpleegt u het onderwerp over op MAM gerichte app-configuratie in [How to use Microsoft Intune app configuration policies for iOS](https://docs.microsoft.com/intune/app-configuration-policies-use-ios) (App-configuratiebeleid van Microsoft Intune voor iOS gebruiken).
 
 ## <a name="telemetry"></a>Telemetrie
 
-De Intune App SDK voor iOS registreert standaard telemetriegegevens van de volgende gebruiksgebeurtenissen. Deze gegevens worden naar Microsoft Intune verzonden.
+De Intune App SDK voor iOS verzamelt standaard telemetriegegevens van de volgende typen gebeurtenissen:
 
 * **Het starten van de app**: om Microsoft Intune meer inzicht te geven in het MAM-gebruik van de app per beheertype (MAM met MDM-, MAM zonder MDM-inschrijving, enzovoort).
 
 * **Inschrijvingsaanroepen**: om Microsoft Intune inzicht te geven in het slagingspercentage en andere meetwaarden van inschrijvingsaanroepen vanaf de client.
+
+* **Intune-acties**: voor de diagnose van problemen en ter waarborging van de Intune-functionaliteit, wordt informatie verzameld over de Intune SDK-acties.
 
 > [!NOTE]
 > Als u ervoor kiest geen telemetriegegevens van de Intune App SDK naar Microsoft Intune te verzenden, moet u het vastleggen van telemetriegegevens in de SDK uitschakelen. Stel de eigenschap `MAMTelemetryDisabled` in op YES in de IntuneMAMSettings-woordenlijst.
@@ -600,14 +626,14 @@ De methode `protect` accepteert een identiteit, die een beheerde of een niet-beh
 
 Als de app een share-extensie bevat, kan de eigenaar van het item dat wordt gedeeld, worden opgehaald met de methode `protectionInfoForItemProvider` in `IntuneMAMDataProtectionManager`. Als het gedeelde item een bestand is, wordt het instellen van de bestandseigenaar door de SDK afgehandeld. Als het bij het gedeelde item om gegevens gaat, is de app verantwoordelijk voor het instellen van de bestandseigenaar als deze gegevens naar een bestand worden opgeslagen, en voor het aanroepen van de API `setUIPolicyIdentity` voordat de gegevens worden weergegeven in de gebruikersinterface.
 
-### <a name="turning-on-multi-identity"></a>Meerdere identiteiten inschakelen
+### <a name="turn-on-multi-identity"></a>Meerdere identiteiten inschakelen
 
 Alle apps worden standaard beschouwd als apps met één identiteit. De SDK stelt de procesidentiteit in voor de ingeschreven gebruiker. Om ondersteuning voor meerdere identiteiten mogelijk te maken, voegt u een Booleaanse instelling met de naam `MultiIdentity` en de waarde YES toe aan de IntuneMAMSettings-woordenlijst in het bestand Info.plist van de app.
 
 > [!NOTE]
 > Wanneer het gebruik van meerdere identiteiten is ingeschakeld, worden de procesidentiteit, de gebruikersinterface-identiteit en de threadidentiteiten op nil ingesteld. De app is verantwoordelijk voor het juist instellen hiervan.
 
-### <a name="switching-identities"></a>Schakelen tussen identiteiten
+### <a name="switch-identities"></a>Schakelen tussen identiteiten
 
 * **Door app geïnitieerde overschakeling naar een andere identiteit**:
 
@@ -641,46 +667,46 @@ Hier volgen enkele aanbevolen procedures voor het ontwikkelen voor iOS:
 
 ## <a name="faqs"></a>Veelgestelde vragen
 
-
-**Zijn alle API's adresseerbaar via systeemeigen Swift of via de interoperabiliteit tussen Objective-C en Swift?**
+### <a name="are-all-of-the-apis-addressable-through-native-swift-or-the-objective-c-and-swift-interoperability"></a>Zijn alle API's adresseerbaar via systeemeigen Swift of via de interoperabiliteit tussen Objective-C en Swift?
 
 De Intune App SDK-API's zijn alleen beschikbaar in Objective-C en bieden geen ondersteuning voor het **systeemeigen** Swift. Swift-interoperabiliteit met Objective-C is vereist.
 
+### <a name="do-all-users-of-my-application-need-to-be-registered-with-the-app-we-service"></a>Moeten alle gebruikers van mijn app worden geregistreerd bij de APP-WE-service?
 
-**Moeten alle gebruikers van mijn app worden geregistreerd bij de APP-WE-service?**
+Nee. In feite hoeven alleen werk- of schoolaccounts te worden geregistreerd bij de Intune App SDK. Apps zijn er verantwoordelijk voor om te bepalen of een account wordt gebruikt in de context van werk of school.
 
-Nee. In feite hoeven alleen werk- of schoolaccounts te worden geregistreerd bij de Intune App SDK. Apps zijn er verantwoordelijk voor om te bepalen of een account wordt gebruikt in de context van werk of school.   
+### <a name="what-about-users-that-have-already-signed-in-to-the-application-do-they-need-to-be-enrolled"></a>Wat gebeurt er met gebruikers die zich al bij de app hebben aangemeld? Moeten ze worden ingeschreven?
 
-**Wat gebeurt er met gebruikers die zich al bij de app hebben aangemeld? Moeten ze worden ingeschreven?**
-
-De toepassing is verantwoordelijk voor het inschrijven van gebruikers nadat ze zijn geverifieerd. De toepassing is ook verantwoordelijk voor het inschrijven van eventuele accounts die aanwezig waren voordat de app MAM-functionaliteit zonder MDM had.   
+De toepassing is verantwoordelijk voor het inschrijven van gebruikers nadat ze zijn geverifieerd. De toepassing is ook verantwoordelijk voor het inschrijven van eventuele accounts die aanwezig waren voordat de app MAM-functionaliteit zonder MDM had.
 
 Om dit te bereiken, moet de app gebruikmaken van de `registeredAccounts:`-methode. Deze methode retourneert een NSDictionary met alle accounts die zijn geregistreerd bij de Intune MAM-service. Als bestaande accounts in de app niet op de lijst staan, moet de app deze accounts registreren en inschrijven via `registerAndEnrollAccount:`.
 
-**Hoe vaak probeert de SDK inschrijvingen opnieuw uit te voeren?**
+### <a name="how-often-does-the-sdk-retry-enrollments"></a>Hoe vaak probeert de SDK inschrijvingen opnieuw uit te voeren?
 
 De SDK probeert alle eerder mislukte inschrijvingen automatisch opnieuw uit te voeren met een interval van 24 uur. De SDK doet dit om te garanderen dat als de organisatie van een gebruiker MAM heeft ingeschakeld nadat de gebruiker zich heeft aangemeld bij de app, de gebruiker zich kan inschrijven en beleid zal ontvangen.
 
 De SDK stopt met proberen wanneer wordt gedetecteerd dat een gebruiker de app heeft kunnen inschrijven. Dit komt doordat slechts één gebruiker een app op een bepaald moment kan inschrijven. Als de gebruiker wordt uitgeschreven, worden de nieuwe pogingen opnieuw gestart met dezelfde interval van 24 uur.
 
-**Waarom moet de registratie van de gebruiker ongedaan worden gemaakt?**
+### <a name="why-does-the-user-need-to-be-deregistered"></a>Waarom moet de registratie van de gebruiker ongedaan worden gemaakt?
 
 De SDK voert regelmatig de volgende acties op de achtergrond uit:
 
- - Als de app nog niet is ingeschreven, probeert deze alle geregistreerde accounts elke 24 uur opnieuw in te schrijven.
- - Als de app is ingeschreven, controleert de SDK elke 8 uur of het beveiligingsbeleid voor apps is gewijzigd.
+* Als de app nog niet is ingeschreven, probeert deze alle geregistreerde accounts elke 24 uur opnieuw in te schrijven.
+* Als de app is ingeschreven, controleert de SDK elke 8 uur of het MAM-beleid is gewijzigd.
 
-Door de registratie van een gebruiker ongedaan te maken, wordt de SDK gewaarschuwd dat de gebruiker de app niet meer gebruikt, en dat de periodiek uitgevoerde gebeurtenissen voor dat gebruikersaccount kunnen worden gestopt. Hierdoor worden indien nodig ook het uitschrijven van de app en een selectieve wisbewerking geactiveerd.
+Door de registratie van een gebruiker ongedaan te maken, wordt de SDK gewaarschuwd dat de gebruiker de app niet langer gebruikt, en dat de periodiek uitgevoerde gebeurtenissen voor dat gebruikersaccount kunnen worden gestopt. Hierdoor worden indien nodig ook het uitschrijven van de app en een selectieve wisbewerking geactiveerd.
 
-**Moet ik de doWipe-vlag op true (waar) instellen in de deregister-methode?**
+### <a name="should-i-set-the-dowipe-flag-to-true-in-the-deregister-method"></a>Moet ik de doWipe-vlag op true (waar) instellen in de deregister-methode ?
 
 Deze methode moet worden aangeroepen voordat de gebruiker wordt afgemeld bij de app.  Als de gegevens van de gebruiker uit de app worden verwijderd als onderdeel van de afmelding, kan `doWipe` worden ingesteld op false (onwaar). Maar als de app de gegevens van de gebruiker niet daadwerkelijk verwijdert, moet `doWipe` worden ingesteld op true (waar), zodat de SDK de gegevens kan verwijderen.
 
-**Zijn er andere manieren om een app uit te schrijven?**
+### <a name="are-there-any-other-ways-that-an-application-can-be-un-enrolled"></a>Zijn er andere manieren om een app uit te schrijven?
 
 Ja, de IT-beheerder kan een opdracht voor selectief wissen verzenden naar de app. Hierdoor wordt de gebruiker uitgeschreven en de registratie ongedaan gemaakt, en worden de gegevens van de gebruiker gewist. De SDK handelt dit scenario automatisch af en verzendt een melding via de gemachtigdenmethode voor uitschrijving.
 
+### <a name="is-there-a-sample-app-that-demonstrates-how-to-integrate-the-sdk"></a>Is er een voorbeeld-app die de integratie van de SDK laat zien?
 
+Ja. Onlangs is het open-source-voorbeeld-app [Wagr voor iOS](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App) vernieuwd. Wagr is nu ingeschakeld voor app-beveiligingsbeleid met behulp van de Intune App SDK.
 
 ## <a name="submit-your-app-to-the-app-store"></a>Uw app naar de App Store verzenden
 

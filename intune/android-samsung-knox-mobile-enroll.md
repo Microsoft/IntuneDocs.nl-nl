@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: 0ada3be91c3b2c15e33e51449678212286362dbf
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964705"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321183"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android-apparaten automatisch registreren met behulp van de Knox Mobile Enrollment van Samsung
 
@@ -32,9 +32,8 @@ Als u Intune-registratie met Samsung KME wilt inschakelen, gebruikt u de Intune-
     1. [Een MDM-profiel maken](#create-mdm-profile)
     2. [Apparaten toevoegen](#add-devices)
     3. [Een MDM-profiel toewijzen aan de apparaten](#assign-an-mdm-profile-to-devices)
-2. In de Azure Portal [identificeert u apparaten als bedrijfseigendom](#identify-devices-as-corporate-owned).
-3. In de Knox-portal [configureert u de aanmelding van eindgebruikers](#configure-how-end-users-sign-in).
-4. [De apparaten distribueren](#distribute-devices).
+2. In de Knox-portal [configureert u de aanmelding van eindgebruikers](#configure-how-end-users-sign-in).
+3. [De apparaten distribueren](#distribute-devices).
 
 
 Een lijst met apparaat-id's (serienummers en IMEI's) wordt automatisch aan de Knox-portal toegevoegd wanneer apparaten worden gekocht bij geautoriseerde resellers die deel uitmaken van het Knox Deployment Program.
@@ -79,22 +78,6 @@ Als u MDM-profielen aan apparaten wilt toewijzen, moeten ondersteunde Samsung Kn
 ## <a name="assign-an-mdm-profile-to-devices"></a>Een MDM-profiel toewijzen aan apparaten
 U moet een MDM-profiel aan toegevoegde apparaten toewijzen in de Knox-portal voordat ze kunnen worden geregistreerd. [Raadpleeg de gebruikershandleiding van Samsung Knox Enrollment voor meer informatie over apparaatconfiguratie](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
 
-## <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
-U kunt apparaten die met behulp van KME zijn geregistreerd, identificeren als bedrijfseigendom. Dit moet worden gedaan voordat de apparaten worden geregistreerd. Hiermee kunt u extra beheertaken uitvoeren en aanvullende informatie verzamelen, zoals het volledige telefoonnummer en een inventaris van apps.
-
-Volg deze stappen om apparaten te identificeren als bedrijfseigendom:
-
-1. Exporteer de lijst met apparaten vanuit de Knox-portal als een CSV-bestand.
-
-2. Maak het CSV-bestand op met het IMEI- of serienummer zoals [hier](https://docs.microsoft.com/en-us/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number) is uitgelegd.
-
-3. In Azure Portal uploadt u het CSV-bestand naar **Apparaatregistratie** > **Bedrijfsapparaat-id's** > **Toevoegen**.
-
-Nu worden geïdentificeerde apparaten die worden geregistreerd, gemarkeerd als bedrijfseigendom.
-
-> [!NOTE]
->In Intune wordt de status Bedrijfseigendom automatisch toegewezen aan apparaten die worden geregistreerd met het [Device Enrollment Manager](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll)-account.
-
 ## <a name="configure-how-end-users-sign-in"></a>Configureren hoe eindgebruikers zich aanmelden
 
 Voor apparaten die in Intune worden geregistreerd met KME, kunt u als volgt configureren hoe een eindgebruiker zich aanmeldt:
@@ -121,7 +104,7 @@ Nog hulp nodig? Bekijk de volledige [gebruikershandleiding van Knox Mobile Enrol
 
 - **Veld 'Password' wordt genegeerd:** als het veld **Password** in **Device Details** van de Knox-portal is ingevuld, wordt het genegeerd door de Intune-bedrijfsportal-app. De eindgebruiker moet een wachtwoord invoeren op het apparaat om registratie van het apparaat te voltooien.
 
-- **Android Enterprise Enrollment** KME biedt geen ondersteuning voor Android Enterprise Enrollment.
+- **Android Enterprise Enrollment:** KME biedt geen ondersteuning voor Android Enterprise Enrollment.
 
 ## <a name="getting-support"></a>Ondersteuning
 Meer informatie over [ondersteuning voor Samsung KME](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm).

@@ -1,11 +1,11 @@
 ---
 title: Uw apparaat opnieuw instellen op de website van de bedrijfsportal | Microsoft Docs
-description: ''
+description: Meer informatie over het herstellen van de fabrieksinstellingen van uw apparaat op de website van de bedrijfsportal.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/02/2017
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,36 +17,32 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: edb5f8306d728abb62b806f287a31b6a75d25cbd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3f9c59b1bfccabd8489cd466c645dc4a0051e97c
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016982"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321574"
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
-Als u uw apparaat kwijt bent of als het gestolen is, hebt u de mogelijkheid de fabrieksinstellingen ervan terug te zetten om te voorkomen dat onbevoegden toegang tot uw gegevens krijgen. U kunt uw apparaat op afstand opnieuw instellen op de [website van de bedrijfsportal](https://portal.manage.microsoft.com#HelpDeskDialog). De bedrijfsportalwebsite is een webpagina waarop u de computers en apparaten beheert die u bij Intune hebt geregistreerd. U kunt deze website gebruiken om de meeste taken uit te voeren die u ook met de bedrijfsportal-app uitvoert.
+Meer informatie over het herstellen van de fabrieksinstellingen van een gebruikt, verloren of gestolen apparaat op de website van de bedrijfsportal.  
 
-Als u uw apparaat opnieuw instelt, wordt het apparaat niet meer weergegeven in de bedrijfsportal en worden de fabrieksinstellingen op het apparaat hersteld.
+Als u een apparaat opnieuw instelt, wordt het niet meer weergegeven in de bedrijfsportal. Eerdere apps en bestanden worden gewist en de fabrieksinstellingen worden op het apparaat hersteld.
 
 > [!Note]
-> U kunt ook de volgende stappen uitvoeren vanaf een ander apparaat dat u hebt ingeschreven door de Bedrijfsportal-app op dat apparaat te openen en vergelijkbare stappen uit te voeren om het opnieuw instellen te voltooien. 
+> U kunt de volgende stappen ook uitvoeren vanaf een ander apparaat dat u hebt geregistreerd. Open de bedrijfsportal-app op het apparaat en volg de stappen om de herstelprocedure te voltooien.  
 
-Ga als volgt te werk om uw apparaat opnieuw in te stellen:
+1. Open de [bedrijfsportalwebsite](https://portal.manage.microsoft.com/#helpdeskDeskDialog) en selecteer __Menu__ > __Mijn apparaten__.
 
-1. Op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) tikt u op de knop __Menu__ en selecteert u __Mijn apparaten__.
+2. Selecteer het apparaat dat u opnieuw wilt instellen.
 
-2. Op de pagina __Mijn apparaten__ selecteert u de naam van het apparaat waarvan u de naam wilt wijzigen.
+    ![Een schermafbeelding van de pagina Mijn apparaten, met 2 tegels met niet-geïdentificeerde apparaten met een algemene naam. Direct onder de apparaten wordt een grijze banner weergegeven. Er wordt gevraagd welk apparaat de gebruiker gebruikt of dat de gebruiker een nieuw apparaat wil toevoegen.](./media/macOS_enroll_002_tap_here_banner.png)
 
-   ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Het apparaat wordt in een pop-upvenster geopend. Selecteer **Opnieuw instellen**.  
 
-3. Het apparaat wordt in een pop-upvenster geopend. Tik op de knop **Opnieuw instellen**.
+ ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
 
-   ![Alle opties voor een geselecteerd apparaat op de Bedrijfsportalwebsite, zoals Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/iwp-screen-with-all-options.png)
+4. Er verschijnt een bericht met de waarschuwing dat alle inhoud op het apparaat wordt gewist. Tik op **Opnieuw instellen** om te bevestigen.  
 
-4. Er wordt een waarschuwing weergegeven zodat u weet dat u alle inhoud op het apparaat wist door de fabrieksinstellingen te herstellen. Tik op **Opnieuw instellen** om te bevestigen dat u dit wilt doen.
-
-Uw apparaat is nu opnieuw ingesteld.
-
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com/#helpdeskDeskDialog).

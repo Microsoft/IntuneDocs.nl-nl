@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a8c14e523d33c9e0994134ff1ef468b290b3992
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
+ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022506"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39356570"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Activeringsslot op iOS-apparaten onder supervisie overslaan met Intune
 
@@ -66,15 +66,23 @@ Voordat u een bypass van het activeringsslot op apparaten kunt uitvoeren, moet u
 ## <a name="how-to-use-activation-lock-bypass"></a>Activeringsslot overslaan gebruiken
 
 >[!IMPORTANT]
->Nadat u voor het activeringsslot op een apparaat een bypass hebt uitgevoerd en als de app Zoek mijn iPhone is geopend, wordt automatisch een nieuw activeringsslot toegepast. U moet daarom **het apparaat fysiek in bezit hebben voordat u deze procedure uitvoert**.
+>Nadat u voor het activeringsslot op een apparaat een bypass hebt uitgevoerd en als de app Zoek mijn iPhone is gestart, wordt automatisch een nieuw Activeringsslot toegepast. U moet daarom **het apparaat fysiek in bezit hebben voordat u deze procedure uitvoert**.
 
-Met de externe apparaatactie **Activeringsvergrendeling overslaan** verwijdert u het activeringsslot van een iOS-apparaat zonder de Apple-id en het wachtwoord van de gebruiker. Als u de activeringsvergrendeling hebt overgeslagen, wordt de activeringsvergrendeling opnieuw ingeschakeld zodra de app Zoek mijn iPhone start. Sla de activeringsvergrendeling alleen over als u fysiek toegang hebt tot het apparaat.
+Met de externe apparaatactie **Activeringsslot overslaan** verwijdert u het Activeringsslot van een iOS-apparaat zonder de Apple ID en het wachtwoord van de gebruiker te vereisen. Wanneer u het activeringsslot hebt overgeslagen, wordt het Activeringsslot opnieuw ingeschakeld zodra de app Zoek mijn iPhone wordt gestart. Sla het Activeringsslot alleen over als u fysiek toegang hebt tot het apparaat.
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies **Apparaten** op de blade **Intune**.
-4. Kies **Alle apparaten** op de blade **Apparaten**.
-5. Kies in de lijst met apparaten die u beheert een iOS-apparaat onder supervisie en kies vervolgens **...Meer**. Klik dan op de externe apparaatactie **Activeringsvergrendeling overslaan**.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services** > **Intune**.
+3. Selecteer op de blade **Intune** de optie **Apparaten**.
+4. Selecteer op de blade **Apparaten** de optie **Alle apparaten**.
+5. Selecteer in de lijst met apparaten die u beheert de externe apparaatactie **Activeringsslot overslaan**.
+6. Ga naar de sectie Hardware van het apparaat en kopieer vervolgens de waarde **Code voor het overslaan van het Activeringsslot** onder **Voorwaardelijke toegang**.
+
+    >[!NOTE]
+    >Kopieer deze code voor overslaan voordat u de fabrieksinstellingen op het apparaat herstelt. Als u instellingen van het apparaat opnieuw instelt voordat u de code hebt gekopieerd, wordt de code uit Azure verwijderd.
+
+7.  Ga naar de blade **Overzicht** voor het apparaat en selecteer vervolgens **Fabrieksinstellingen herstellen**.
+8.  Nadat het apparaat opnieuw is ingesteld, wordt u gevraagd om de *Apple ID* en het *wachtwoord*. Laat het veld *Id* leeg en voer vervolgens de **code voor overslaan** in bij het *wachtwoord*. Hiermee verwijdert u het account van het apparaat. 
+
 
 ## <a name="next-steps"></a>Volgende stappen
 

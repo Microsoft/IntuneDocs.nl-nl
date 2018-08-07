@@ -15,20 +15,41 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 998df5181b553b33b570cd78d7f0e490336d7e95
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039383"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279488"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates zijn aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Inzicht in deze updates kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-july-16-2018"></a>Week van 16 juli 2018  
+
+### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Meer synchronisatiemogelijkheden in de Bedrijfsportal-app voor Windows   
+Met de Bedrijfsportal-app voor Windows kunt u nu een synchronisatie rechtstreeks vanuit de Windows-taakbalk en het menu Start in werking stellen. Deze functie is vooral nuttig als uw enige taak bestaat uit het synchroniseren van apparaten en verkrijgen van toegang tot bedrijfsbronnen. Klik voor toegang tot de nieuwe functie met de rechtermuisknop op het Bedrijfsportal-pictogram dat is vastgemaakt aan de taakbalk of het menu Start. Selecteer in de menu-opties (ook wel een Jump List genoemd) **Dit apparaat synchroniseren**. De Bedrijfsportal-app wordt geopend op de pagina **Instellingen** en de synchronisatie wordt gestart.  
+
+![Schermafbeelding van de Windows-taakbalk op het bureaublad van een apparaat. Er is geklikt op het pictogram Bedrijfsportal-app, waardoor een menu met de opties Aan taakbalk vastmaken, Venster sluiten en Dit apparaat synchroniseren wordt weergegeven.](./media/sync-device-from-start-menu-1807.png)  
+
+### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Nieuwe bladerervaringen in de Bedrijfsportal-app voor Windows  
+
+Wanneer u bladert of apps zoekt in de Bedrijfsportal-app voor Windows, kunt u nu schakelen tussen de bestaande **Tegels**-weergave en de recent toegevoegde **Details**-weergave. De nieuwe weergave bevat informatie over toepassingen, zoals de naam, de uitgever, de publicatiedatum en de installatiestatus.  
+
+De pagina **Apps** bevat de weergave **Geïnstalleerd**, waarop u meer informatie kunt vinden over app-installaties die zijn voltooid en die nog worden uitgevoerd.  
+
+Schermopname van de Tegels-weergave:  
+ 
+![Schermopname van de Intune Bedrijfsportal-app voor Windows waarin de geïnstalleerde apps in de Tegels-weergave worden getoond.](/intune/media/tiles-installed-view-cpapp-1807.png)  
+
+Schermopname van de Details-weergave:  
+
+![Schermopname van de Intune Bedrijfsportal-app voor Windows waarin de geïnstalleerde apps in de Details-weergave worden getoond.](/intune/media/details-installed-view-cpapp-1807.png) 
+
 ## <a name="week-of-april-23-2018"></a>Week van 23 april 2018
-#### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Navigatieweergave in de bedrijfsportal voor Windows 10 is bijgewerkt <!-- 1195010 -->
+### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Navigatieweergave in de bedrijfsportal voor Windows 10 is bijgewerkt <!-- 1195010 -->
 De Intune-bedrijfsportal-app voor Windows 10 is bijgewerkt met de [Fluent Design System-navigatieweergave](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Aan de zijkant van de app wordt een statische verticale lijst weergegeven met alle toplevelpagina's. Klik op een willekeurige koppeling om snel pagina's weer te geven en te schakelen tussen pagina's. Dit is de eerste van verschillende updates die onderdeel uitmaken van onze voortdurende inspanningen om een meer adaptieve, intuïtieve en vertrouwde versie van Intune te maken. 
 
 ![Schermafbeelding van het dashboard voor de bedrijfsportal-app waarop de Fluent Design-navigatieweergave wordt weergegeven](./media/1804_WindowsCP_Fluent_01.png)
@@ -36,7 +57,7 @@ De Intune-bedrijfsportal-app voor Windows 10 is bijgewerkt met de [Fluent Design
 
 ## <a name="week-of-april-2-2018"></a>Week van 2 april 2018
 
-#### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Update van de gebruikerservaring voor de bedrijfsportal-app voor iOS<!-- 1412866 -->
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Update van de gebruikerservaring voor de bedrijfsportal-app voor iOS<!-- 1412866 -->
 Er is een grote update uitgebracht van de gebruikerservaring voor de bedrijfsportal-app voor iOS. De update is voorzien van een volledig nieuw visueel ontwerp met een gemoderniseerd uiterlijk. De functionaliteit van de app is behouden. De gebruiksvriendelijkheid en toegankelijkheid zijn echter verhoogd.  
 
 U ziet ook:
@@ -51,7 +72,7 @@ U ziet ook:
 |*Gecombineerd met de vorige stap*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
 |![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
 
-#### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Verbeteringen in de taal in de bedrijfsportal-app voor Windows <!---1683758--->
+### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Verbeteringen in de taal in de bedrijfsportal-app voor Windows <!-- 1683758 -->
 In de bedrijfsportal voor Windows 10 is de taal gebruiksvriendelijker en meer specifiek voor uw bedrijf gemaakt.
 
 |Voor|Na|
@@ -61,7 +82,7 @@ In de bedrijfsportal voor Windows 10 is de taal gebruiksvriendelijker en meer sp
 
 ## <a name="week-of-march-12-2018"></a>Week van 12 maart 2018
 
-#### <a name="company-portal-for-android-visual-updates---976944---"></a>Bedrijfsportal-app voor visuele Android-updates <!--976944 -->
+### <a name="company-portal-for-android-visual-updates----976944---"></a>Bedrijfsportal-app voor visuele Android-updates <!-- 976944 -->
 
 De bedrijfsportal-app voor Android is bijgewerkt om de richtlijnen voor [Ontwerp van materiaal](https://material.io/) van Android te volgen.
 
@@ -78,7 +99,7 @@ De bedrijfsportal-app voor Android is bijgewerkt om de richtlijnen voor [Ontwerp
 
 ## <a name="week-of-november-27-2017"></a>Week van 27 november 2017
 
-### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Nieuwe stap Apparaatcategorieën in de begeleide instelling voor de bedrijfsportal-app voor Windows 10 <!---1335292--->
+### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Nieuwe stap Apparaatcategorieën in de begeleide instelling voor de bedrijfsportal-app voor Windows 10 <!-- 1335292 -->
 
 Als u [apparaatgroeptoewijzing](device-group-mapping.md) hebt ingeschakeld, begeleidt de bedrijfsportal-app voor Windows 10 uw gebruikers nu bij het selecteren van een apparaatcategorie nadat het apparaat is geregistreerd.
 
@@ -114,14 +135,14 @@ De pagina Instellingen in de bedrijfsportal-app voor Windows 10 is bijgewerkt, z
 |![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
 
 
-### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Verbeteringen voor de apps op de bedrijfsportal en website zoeken <!--1418189-->
+### <a name="search-improvements-to-the-company-portal-apps-and-website----1418189---"></a>Verbeteringen voor de apps op de bedrijfsportal en website zoeken <!-- 1418189 -->
 De bedrijfsportal-apps gebruiken nu zoekopdrachten in app-categorieën, namen en beschrijvingen. De resultaten worden standaard gesorteerd in aflopende volgorde van relevantie. Deze updates zijn ook beschikbaar in de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
 
 We zijn nog steeds bezig met het aanpassen van de manier waarop relevantie wordt bijgehouden. Laat ons weten hoe het voor u werkt via de koppeling Feedback onderaan de bedrijfsportalwebsite.
 
 ## <a name="week-of-october-16-2017"></a>Week van 16 oktober 2017
 
-### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Verbeterde zoekfunctie op de bedrijfsportalwebsite <!--1331697-->
+### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Verbeterde zoekfunctie op de bedrijfsportalwebsite <!-- 1331697 -->
 We verbeteren onze app-zoekfuncties, te beginnen met de [bedrijfsportalwebsite](https://portal.manage.microsoft.com). Zoekopdrachten worden nu ook uitgevoerd op app-categorieën naast de velden Naam en Beschrijving. De resultaten worden standaard gesorteerd in aflopende volgorde van relevantie. 
 
 iOS-gebruikers ontvangen deze wijziging ook omdat de bedrijfsportalwebsite ook wordt gebruikt als onderdeel van de bedrijfsportal-app voor iOS. De bedrijfsportal-apps voor Android en Windows ontvangen dergelijke updates in de komende maanden.
@@ -135,7 +156,7 @@ Deze release bevat een oplossing voor een bekend probleem met de manier waarop d
 
 ## <a name="week-of-october-2-2017"></a>Week van 2 oktober 2017
 
-#### <a name="improvements-to-device-setup-workflow-in-company-portal---1490692--"></a>Verbeteringen in de werkstroom voor apparaatinstellingen in de bedrijfsportal <!--1490692-->
+### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Verbeteringen in de werkstroom voor apparaatinstellingen in de bedrijfsportal <!-- 1490692 -->
 We hebben de werkstroom voor apparaatinstellingen in de bedrijfsportal-app voor Android verbeterd. De taal is gebruiksvriendelijker en specifiek voor uw bedrijf. Daarnaast hebben we waar mogelijk schermen gecombineerd. 
 
 |Voor|Na|
@@ -164,7 +185,7 @@ We hebben ook het e-mailactiveringsscherm voor voorwaardelijke toegang bijgewerk
 
 ## <a name="week-of-september-11-2017"></a>Week van 11 september 2017
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Gemakkelijker te begrijpen formulering voor de bedrijfsportal-app voor Android <!---1396349--->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Gemakkelijker te begrijpen formulering voor de bedrijfsportal-app voor Android <!-- 1396349 -->  
 
 Het inschrijvingsproces voor de bedrijfsportal-app voor Android is vereenvoudigd met nieuwe tekst om het eindgebruikers gemakkelijker te maken om zich in te schrijven. Als u aangepaste inschrijvingsdocumentatie hebt, is het aan te raden om die bij te werken met de nieuwe schermen. Hieronder staan voorbeeldafbeeldingen:
 
@@ -179,7 +200,7 @@ Het inschrijvingsproces voor de bedrijfsportal-app voor Android is vereenvoudigd
 
 ## <a name="august-2017"></a>Augustus 2017
 
-### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 Mail-app zal OAuth ondersteunen <!---1196951--->
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 Mail-app zal OAuth ondersteunen <!-- 1196951 -->
 
 Voorwaardelijke toegang met Intune ondersteunt veiligere verificatie op iOS-apparaten met OAuth. In de bedrijfsportal-app voor iOS zal er daarom nu een andere stroom zijn om veiligere verificatie mogelijk te maken. Wanneer eindgebruikers zich proberen aan te melden bij een nieuw Exchange-account in de Mail-app, zien ze een prompt in de webweergave. Bij inschrijving in Intune zien gebruikers een prompt waarin hun wordt gevraagd de ingebouwde Mail-app toegang te geven tot een certificaat. De meeste eindgebruikers zien geen e-mails in quarantaine meer. Bestaande e-mailaccounts blijven het basisverificatieprotocol gebruiken, dus die gebruikers blijven e-mails in quarantaine ontvangen. Deze aanmeldingservaring voor eindgebruikers lijkt op die in Office Mobile-apps.
 
@@ -212,7 +233,7 @@ Intune MAM-dialoogvensters (Mobile Application Management) zullen worden bijgewe
 ![moderne interface](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Updates voor de pagina 'Apparaatdetails' in de bedrijfsportal-app voor Windows 10 <!---1287448--->
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Updates voor de pagina 'Apparaatdetails' in de bedrijfsportal-app voor Windows 10 <!-- 1287448 -->
 
 In de bedrijfsportal-app voor Windows 10 wordt de tag __Categorie__ van onder de titel naar een eigenschap op de pagina __Apparaatdetails__ verplaatst.
 

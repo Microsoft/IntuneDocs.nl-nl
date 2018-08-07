@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442573"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321438"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Een apparaatnalevingsbeleid toevoegen voor macOS-apparaten in Intune
 
@@ -83,6 +83,13 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 ### <a name="encryption"></a>Versleuteling
 
 - **Versleuteling van gegevensopslag op een apparaat**: kies **Vereisen** om gegevensopslag op uw apparaten te versleutelen.
+
+### <a name="device-security"></a>Apparaatbeveiliging
+Apparaten worden door de firewall tegen onbevoegde netwerktoegang beschermd. U kunt Firewall gebruiken om verbindingen te beheren op basis van de toepassing. 
+
+- **Firewall**: u kunt deze functie **inschakelen** om apparaten beter te beveiligen tegen onbevoegde toegang. Door deze functie in te schakelen, kunt u binnenkomende internetverbindingen verwerken en de verborgen modus gebruiken. **Niet geconfigureerd** (standaard) zorgt ervoor dat de firewall uitgeschakeld blijft en dat netwerkverkeer is toegestaan (niet geblokkeerd).
+- **Binnenkomende verbindingen**: **blokkeer** alle binnenkomende netwerkverbindingen, behalve de verbindingen die vereist zijn voor elementaire internetservices, zoals DHCP, Bonjour en IPSec. Via deze instellingen worden ook alle services voor delen geblokkeerd, met inbegrip van het delen van het scherm, externe toegang, het delen van iTunes-muziek en meer. **Niet geconfigureerd** (standaard) staat binnenkomende verbindingen en services voor delen toe. 
+- **Verborgen modus**: u kunt de verborgen modus **inschakelen** om te voorkomen dat het apparaat reageert op peilaanvragen van kwaadwillige gebruikers. Wanneer de modus is ingeschakeld, reageert het apparaat nog wel op binnenkomende verzoeken voor toegestane apps. Bij **Niet geconfigureerd** (standaard) blijft de verborgen modus uitgeschakeld.
 
 ## <a name="assign-user-groups"></a>Gebruikersgroepen toewijzen
 

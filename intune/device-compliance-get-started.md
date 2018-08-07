@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225439"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268903"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Aan de slag met apparaatnalevingsbeleid in Intune
 
@@ -167,7 +167,7 @@ De **Instellingen voor nalevingsbeleid** (Azure Portal > Apparaatnaleving) omvat
   Wanneer u deze instelling inschakelt, moeten apparaten:
   - Locatieservices op het niveau van het besturingssysteem inschakelen;
   - De bedrijfsportal toestaan om locatieservices te gebruiken; en
-  - Eens per 72 uur de jailbreak-status evalueren en aan Intune rapporteren. Anders wordt het apparaat gemarkeerd als Niet compatibel.
+  - Eens per 72 uur de jailbreak-status evalueren en aan Intune rapporteren. Anders wordt het apparaat gemarkeerd als Niet compatibel. Evaluatie wordt geactiveerd door de bedrijfsportal-app te openen of het apparaat 500 meter of meer te verplaatsen.
 
 - **Geldigheidsperiode van nalevingsstatus (dagen)**: voer de periode in dat apparaten de status voor alle ontvangen nalevingsbeleidsregels rapporteren. Apparaten die niet binnen deze tijdsduur de status retourneren, worden als Niet compatibel beschouwd. De standaardwaarde is 30 dagen.
 
