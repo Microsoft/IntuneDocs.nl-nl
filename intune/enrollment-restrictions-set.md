@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
+ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905815"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501146"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -77,7 +77,7 @@ U kunt de instellingen voor een beperking van het type apparaat als volgt wijzig
 4. Kies onder **Beperking voor apparaattypen** de beperking die u wilt instellen.
 5. Selecteer onder de naam van de beperking (**Alle gebruikers** voor de standaardbeperking) **Platforms**. Kies **Toestaan** of **Blokkeren** voor elk weergegeven platform.
 6. Selecteer **Opslaan**.
-7. Selecteer **Platformconfiguraties** onder de naam van de beperking (**Alle gebruikers** voor de standaardbeperking). Selecteer vervolgens de minimale en maximale **versie** voor de platforms die worden weergegeven. Ondersteunde versies:
+7. Selecteer **Platformconfiguraties** onder de naam van de beperking (**Alle gebruikers** voor de standaardbeperking). Selecteer vervolgens de minimale en maximale **versie** voor de platforms die worden weergegeven. Ondersteunde versie-indelingen omvatten:
     - Android-werkprofielen bieden ondersteuning voor major.minor.rev.build.
     - iOS ondersteunt major.minor.rev.
     - Windows ondersteunt alleen major.minor.rev.build voor Windows 10.

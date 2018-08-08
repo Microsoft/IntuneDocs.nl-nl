@@ -15,12 +15,12 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f03c60c12bfd759c738de50d320787bf4b85f99d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909181"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400348"
 ---
 # <a name="enroll-android-devices"></a>Android-apparaten inschrijven
 
@@ -38,7 +38,7 @@ U moet de MDM-instantie instellen op **Microsoft Intune** als voorbereiding op h
 
 ## <a name="set-up-android-enrollment"></a>Android-inschrijving instellen
 
-Standaard staat Intune de registratie van Android- en Samsung Knox Standard-apparaten toe. Nadat u hebt voldaan aan de voorwaarde, hoeven beheerders alleen maar [hun gebruikers uit te leggen hoe zij hun apparaten kunnen registreren](/intune-user-help/enroll-your-device-in-intune-android.md).
+Standaard staat Intune de registratie van Android- en Samsung Knox Standard-apparaten toe. Nadat is voldaan aan de voorwaarde, hoeven beheerders alleen maar [hun gebruikers uit te leggen hoe zij hun apparaten kunnen registreren](/intune-user-help/enroll-your-device-in-intune-android).
 
 Nadat een gebruiker zich heeft geregistreerd, kunt u beginnen met het beheer van hun apparaten in Intune, met inbegrip van [toewijzen van nalevingsbeleid](compliance-policy-create-android.md), [beheren van apps](app-management.md) en nog veel meer.
 
