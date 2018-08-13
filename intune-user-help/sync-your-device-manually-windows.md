@@ -17,18 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
-ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
+ms.openlocfilehash: 04737d1e800094f21a8bdaf42047f8bce7f48e6a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39236052"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362021"
 ---
 # <a name="sync-your-windows-device-manually"></a>Uw Windows-apparaat handmatig synchroniseren
 
 Voer een handmatige synchronisatie van uw apparaat uit als een app erg langzaam wordt geïnstalleerd. Bij een handmatige synchronisatie maakt uw apparaat verbinding met Intune en worden de nieuwste updates en communicatie opgehaald. De installatiesnelheid kan verbeteren nadat de apparaatsynchronisatie is voltooid.
 
-Intune ondersteunt handmatige synchronisatie vanuit de bedrijfsportal-app en vanuit de app Instellingen van het apparaat. 
+Intune ondersteunt handmatige synchronisatie via de bedrijfsportal-app, de taakbalk of het menu Start op desktops en vanuit de app Instellingen van een apparaat. 
 
 De functionaliteit van de bedrijfsportal-app wordt ondersteund op Windows 10-apparaten waarop de makersupdate (1703) of hoger wordt uitgevoerd. 
 * [Synchroniseren vanuit de bedrijfsportal-app](#Sync-from-Company-Portal-app-for-Windows)  
@@ -51,8 +51,19 @@ Voer deze stappen uit als u een Windows 10-apparaat wilt synchroniseren waarop m
     
     ![Schermafbeelding van de instellingenpagina van de bedrijfsportal-app waarin de knop Synchroniseren is gemarkeerd](./media/RS1_settingspage_sync05.png)  
 
+## <a name="sync-from-device-taskbar-or-start-menu"></a>Synchroniseren vanaf de taakbalk van het apparaat of vanuit het menu Start   
+
+U kunt ook het synchronisatiebesturingselement buiten de app openen, vanaf het bureaublad van uw apparaat. Dit kan handig zijn als u de app direct aan de taakbalk of aan het menu Start hebt vastgemaakt en snel wilt synchroniseren.  
+
+1. Zoek het pictogram van de bedrijfsportal-app op de taakbalk of in het menu Start.  
+2. Klik met de rechtermuisknop op het pictogram van de app, zodat het menu (ook wel een jumplijst genoemd) wordt weergegeven.  
+
+    ![Schermafbeelding van de Windows-taakbalk op het bureaublad van een apparaat. Er is geklikt op het pictogram van de bedrijfsportal-app, waardoor er een menu met de opties Aan taakbalk vastmaken, Venster sluiten en Dit apparaat synchroniseren wordt weergegeven.](./media/sync-device-from-start-menu-1807.png)  
+
+3. Selecteer **Dit apparaat synchroniseren**. De bedrijfsportal-app wordt geopend op de pagina **Instellingen** en de synchronisatie wordt gestart.  
+
 ## <a name="sync-from-settings-app"></a>Synchroniseren vanuit de app Instellingen 
-Voltooi deze stappen als u uw Microsoft HoloLens-, Windows 10 desktop-, Windows 10 Mobile- of Windows Phone 8.1-apparaat handmatig wilt synchroniseren vanuit de app Instellingen.
+Voltooi deze stappen als u uw Microsoft HoloLens-, Windows 10 desktop-, Windows 10 Mobile- of Windows Phone 8.1-apparaat handmatig wilt synchroniseren vanuit de app Instellingen.  
 
 ### <a name="windows-10-desktop"></a>Windows 10 Desktop
 1. Selecteer op het apparaat **Start** > **Instellingen**.

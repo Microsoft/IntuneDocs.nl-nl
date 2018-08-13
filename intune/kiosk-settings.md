@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/23/2018
+ms.date: 8/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f10e7bb7a2e7c5e1d0e8b27517a62454e8bd630
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
+ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321693"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39481118"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioskinstellingen voor Windows 10 (en hoger) in Intune
 
@@ -25,9 +25,18 @@ U kunt kioskprofielen gebruiken om Windows 10-apparaten te configureren, zodat h
 
 ## <a name="kiosk-settings"></a>Kioskinstellingen
 
-1. Selecteer **Toevoegen** om een kioskomgeving te maken.
-2. Voer een **kioskconfiguratienaam** in voor uw kiosk. Met deze naam worden een groep van apps, de lay-out van deze apps in het startmenu en de gebruikers die zijn toegewezen aan deze kioskconfiguratie aangegeven.
-3. Selecteer de **kioskmodus**. **Kioskmodus** geeft het type kioskmodus aan dat wordt ondersteund door het beleid. Opties zijn onder andere:
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+3. Voer de volgende eigenschappen in:
+
+   - **Naam**: voer een beschrijvende naam in voor het nieuwe profiel.
+   - **Beschrijving:** voer een beschrijving in voor het profiel. Een beschrijving is optioneel, maar wordt aanbevolen.
+   - **Platform**: selecteer **Windows 10 en hoger**
+   - **Profieltype**: selecteer **Kiosk (Preview)**
+   
+4. Selecteer **Kiosk** > **Toevoegen**.
+5. Voer een **kioskconfiguratienaam** in voor uw kiosk. Met deze naam worden een groep van apps, de lay-out van deze apps in het startmenu en de gebruikers die zijn toegewezen aan deze kioskconfiguratie aangegeven.
+6. Selecteer de **kioskmodus**. **Kioskmodus** geeft het type kioskmodus aan dat door het beleid wordt ondersteund. Opties zijn onder andere:
 
     - **Niet geconfigureerd** (standaardinstelling): er wordt door het beleid geen kioskmodus ingeschakeld.
     - **Kiosk met één app op een volledig scherm**: met het profiel kan het apparaat worden gebruikt als een account voor één gebruiker en kan op het apparaat uitsluitend één UWP-app (Universal Windows Platform) worden uitgevoerd. Dus wanneer de gebruiker zich aanmeldt, wordt een specifieke app gestart. Deze modus voorkomt ook dat de gebruiker nieuwe apps kan openen of de actieve app kan wijzigen.

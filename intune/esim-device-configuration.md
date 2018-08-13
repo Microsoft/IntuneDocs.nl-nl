@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac3bbb4a32e86d756835d136cd3923676f022a7b
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336026"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400280"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Mobiele eSIM-profielen configureren in Intune - Openbare preview
 
@@ -26,7 +26,7 @@ ms.locfileid: "39336026"
 
 ## <a name="introduction"></a>Inleiding
 
-Een eSIM is een ingesloten SIM-chip. U kunt hiermee verbinding maken met internet via een mobiele dataverbinding op een met eSIM compatibel apparaat, zoals de [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro). Met een eSIM hoeft u geen SIM-kaart op te vragen van uw provider en kunt u snel wisselen tussen providers en data-abonnementen.
+Een eSIM is een ingesloten SIM-chip. U kunt hiermee verbinding maken met internet via een mobiele dataverbinding op een met eSIM compatibel apparaat, zoals de [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro). Met een eSIM hebt u geen SIM-kaart van uw mobiele provider meer nodig. Als wereldreiziger hoeft u dan alleen nog maar te schakelen tussen mobiele providers en gegevensabonnementen om altijd online te blijven.
 
 Dit is handig als u bijvoorbeeld een data-abonnement hebt voor het werk en u bij een andere provider bent aangesloten voor persoonlijk gebruik. Als u onderweg bent, kunt u gebruikmaken van internet door in die regio te zoeken naar providers met beschikbare data-abonnementen.
 

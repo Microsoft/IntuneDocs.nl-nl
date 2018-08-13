@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321665"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575046"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API's gebruiken om CA's van derden voor SCEP aan Intune toe te voegen
 
@@ -41,11 +41,18 @@ Administrators kunnen met Intune SCEP-profielen maken en deze vervolgens toewijz
 - Het vertrouwde basiscertificaat van de certificeringsinstantie
 - Certificaatkenmerken, en meer
 
-Aan apparaten die met Intune worden ingecheckt, wordt het SCEP-profiel toegewezen. Vervolgens worden deze parameters hierop geconfigureerd. In Intune wordt een dynamisch gegenereerd SCEP-wachtwoord gemaakt dat wordt toegewezen aan het apparaat.
+Aan apparaten die met Intune worden ingecheckt, wordt het SCEP-profiel toegewezen. Vervolgens worden deze parameters hierop geconfigureerd. In Intune wordt een dynamisch gegenereerd SCEP-controlewachtwoord gemaakt dat wordt toegewezen aan het apparaat.
 
-Dit wachtwoord bevat details over de parameters die worden verwacht in de aanvraag voor certificaatondertekening die het apparaat naar de SCEP-server verzendt. Het wachtwoord bevat ook de vervaltijd van de vraag. Intune versleutelt de gegevens, ondertekent de versleutelde blob en verpakt deze gegevens vervolgens in het SCEP-wachtwoord.
+De controle bevat:
 
-Apparaten die met de SCEP-server communiceren om een certificaat aan te vragen, leveren vervolgens dit SCEP-wachtwoord. Het wachtwoord moet worden gevalideerd voordat de SCEP-server een certificaat aan het apparaat kan verlenen. Bij het valideren van het SCEP-wachtwoord vinden de volgende controles plaats:
+- Het dynamisch gegenereerde controlewachtwoord
+- Informatie over de parameters die worden verwacht in de aanvraag voor certificaatondertekening (CSR, certificate signing request) die het apparaat naar de SCEP-server verzendt
+- De vervaltijd van de controle
+
+Intune versleutelt de gegevens, ondertekent de versleutelde blob en verpakt deze gegevens vervolgens in het SCEP-controlewachtwoord.
+
+Apparaten die met de SCEP-server communiceren om een certificaat aan te vragen, leveren vervolgens dit SCEP-controlewachtwoord. De SCEP-server stuurt de CSR en het versleutelde SCEP-controlewachtwoord voor validatie naar Intune.  Het controlewachtwoord en de CSR moeten worden gevalideerd voordat de SCEP-server een certificaat aan het apparaat kan verlenen. Bij het valideren van de SCEP-controle vinden de volgende controles plaats:
+
 
 - Validatie van de handtekening van de versleutelde blob
 - Validatie of de vraag niet is verlopen
