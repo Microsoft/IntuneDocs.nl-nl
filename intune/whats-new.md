@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321557"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362055"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -127,7 +127,7 @@ U kunt nu meerdere apparaten tegelijk verwijderen op de blade Apparaten. Kies **
 ## <a name="week-of-july-16-2018"></a>Week van 16 juli 2018  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Meer synchronisatiemogelijkheden in de Bedrijfsportal-app voor Windows  
-Met de Bedrijfsportal-app voor Windows kunt u nu een synchronisatie rechtstreeks vanuit de Windows-taakbalk en het menu Start in werking stellen. Deze functie is vooral nuttig als uw enige taak bestaat uit het synchroniseren van apparaten en verkrijgen van toegang tot bedrijfsbronnen. Klik voor toegang tot de nieuwe functie, met de rechtermuisknop op de Bedrijfsportal-pictogram die is vastgemaakt aan de taakbalk of het menu Start. Selecteer in het menu-opties (ook wel een Jump List genoemd), **Dit apparaat synchroniseren**. De Bedrijfsportal-app wordt geopend op de pagina **Instellingen** en de synchronisatie starten. Zie [Wat is er nieuw in de gebruikersinterface](whats-new-app-ui.md) voor een overzicht van de nieuwe functionaliteit.   
+Met de Bedrijfsportal-app voor Windows kunt u nu een synchronisatie rechtstreeks vanuit de Windows-taakbalk en het menu Start in werking stellen. Deze functie is vooral nuttig als uw enige taak bestaat uit het synchroniseren van apparaten en verkrijgen van toegang tot bedrijfsbronnen. Klik voor toegang tot de nieuwe functie met de rechtermuisknop op het Bedrijfsportal-pictogram dat is vastgemaakt aan de taakbalk of het menu Start. Selecteer in de menu-opties (ook wel een Jump List genoemd) **Dit apparaat synchroniseren**. De Bedrijfsportal-app wordt geopend op de pagina **Instellingen** en de synchronisatie starten. Zie [Wat is er nieuw in de gebruikersinterface](whats-new-app-ui.md) voor een overzicht van de nieuwe functionaliteit.   
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Nieuwe bladerervaringen in de Bedrijfsportal-app voor Windows  
 
@@ -291,7 +291,7 @@ Op Windows 10-apparaten kunt u een configuratieprofiel maken en de kioskmodus in
 Van toepassing op Windows 10 en hoger.
 
 #### <a name="device-profile-graphical-user-chart-is-back----2160133---"></a>De grafische gebruikersgrafiek van het apparaatprofiel is terug <!-- 2160133 -->
-Bij het verbeteren van de aantallen die in de grafische gebruikersgrafiek van het apparaatprofiel (**Apparaatconfiguratie** > **Profielen** > selecteer een bestaand profiel > **Overzicht** ) worden weergegeven, was de grafische gebruikersgrafiek tijdelijk verwijderd.
+Bij het verbeteren van de aantallen die in de grafische gebruikersgrafiek van het apparaatprofiel (**Apparaatconfiguratie** > **Profielen** > selecteer een bestaand profiel > **Overzicht**) worden weergegeven, was de grafische gebruikersgrafiek tijdelijk verwijderd.
 
 In deze update is de grafische gebruikersgrafiek terug. Deze wordt weergegeven in de Azure Portal.
 
@@ -343,10 +343,10 @@ Met een on-premises Exchange Connector voor Intune kunt u apparaattoegang tot uw
 De CCID-informatie (Chip Card Interface Device) is nu opgenomen voor elk apparaat. Als u deze wilt zien, kiest u **Apparaten** > **Alle apparaten** > kies een apparaat > **Hardware**> controleer onder **Netwerkdetails**>
 
 #### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>Alle gebruikers en apparaten toewijzen als bereikgroepen <!-- 2196803 -->
-U kunt nu alle gebruikers, alle apparaten, en alle gebruikers en alle apparaten in bereikgroepen toewijzen. Kies hiervoor **Intune-rollen** > **Alle rollen** > **Beleid en profielbeheer** > **Toewijzingen**  > kies een toewijzing > **Bereik (groepen)**.
+U kunt nu alle gebruikers, alle apparaten, en alle gebruikers en alle apparaten in bereikgroepen toewijzen. Kies hiervoor **Intune-rollen** > **Alle rollen** > **Beleid en profielbeheer** > **Toewijzingen** > kies een toewijzing > **Bereik (groepen)**.
 
 #### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806-wnready--"></a>UDID-informatie is nu opgenomen voor iOS- en macOS-apparaten <!-- 2219806 wnready-->
-Als u de unieke apparaat-id (UDID) voor iOS- en macOS-apparaten wilt zien, gaat u naar **Apparaten** > **Alle apparaten** > kies een apparaat > **Hardware**. UDID is alleen beschikbaar voor bedrijfsapparaten (zoals ingesteld onder **Apparaten** > **Alle apparaten** > kies een apparaat > **Eigenschappen** >  **Apparaateigendom**).
+Als u de unieke apparaat-id (UDID) voor iOS- en macOS-apparaten wilt zien, gaat u naar **Apparaten** > **Alle apparaten** > kies een apparaat > **Hardware**. UDID is alleen beschikbaar voor bedrijfsapparaten (zoals ingesteld onder **Apparaten** > **Alle apparaten** > kies een apparaat > **Eigenschappen** > **Apparaateigendom**).
 
 ### <a name="intune-apps"></a>Intune-apps
 
@@ -654,7 +654,7 @@ De Intune-beheerder kan deze instellingen configureren om delen in te schakelen.
 
 U kunt Gatekeeper configureren om uw apparaten te beveiligen tegen apps door te bepalen waarvan de apps kunnen worden gedownload. U kunt de volgende downloadbronnen configureren: **Mac App Store**, **Mac App Store en geïdentificeerde ontwikkelaars** of **Overal**. U kunt ook configureren of gebruikers een app kunnen installeren door middel van CTRL+klikken om deze Gatekeeper-voorzieningen te overschrijven.
 
-Deze instellingen zijn te vinden onder **Apparaatconfiguratie** -> **Profiel maken** -> **macOS**  ->   **Eindpuntbeveiliging**.
+Deze instellingen zijn te vinden onder **Apparaatconfiguratie** -> **Profiel maken** -> **macOS**  ->  **Eindpuntbeveiliging**.
 
 #### <a name="configure-the-mac-application-firewall----1690461---"></a>De firewall van Mac-toepassingen configureren <!-- 1690461 -->
 
@@ -1123,6 +1123,16 @@ U kunt geweigerde apps opgeven in Intune. Als een app wordt geweigerd, heeft dez
 
 
 ## <a name="notices"></a>Mededelingen
+
+### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Plannen voor wijziging: Wachtwoord wijzigen bij volgende verificatie toegevoegd aan Intune<!-- 1873216 -->
+In de onderhoudsrelease van september wordt de nieuwe Apple-instelling **Wachtwoord wijzigen bij volgende verificatie** geïntegreerd voor apparaten met Mac OS-versies 10.13 en nieuwer. In de huidige situatie (zonder deze instelling) kunnen MDM-providers niet controleren of de wachtwoordcode van het apparaat is gewijzigd, zodat aan het beleid wordt voldaan. Het beleid voor configuratie en naleving van Intune geeft zonder deze instelling alleen aan dat een apparaatwachtwoord voldoet aan het beleid wanneer dit wordt gewijzigd. Wanneer deze nieuwe functie van Apple wordt toegevoegd, krijgen uw macOS-gebruikers een verzoek om hun wachtwoord bij te werken, zelfs als het wachtwoord aan het beleid voldoet.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Dit heeft gevolgen voor omgevingen met een macOS-apparaatbeleid dat gebruikmaakt van Intune of een hybride MDM. Nu Apple de instelling **Wachtwoord wijzigen bij volgende verificatie** heeft geïmplementeerd, kan Intune afdwingen dat gebruikers na het pushen van een wachtwoordbeleid hun wachtwoord wijzigen. Als u bedrijfsresources blokkeert totdat het apparaat wordt gemarkeerd als conform, hebben uw eindgebruikers mogelijk geen toegang meer tot bedrijfsresources, zoals e-mail of SharePoint-sites, totdat ze hun wachtwoord opnieuw hebben ingesteld. In de toekomst moeten gebruikers na elke wijziging in configuratie- en nalevingsbeleid voor wachtwoorden hun wachtwoord bijwerken.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+Breng uw helpdesk op de hoogte. Als u dit macOS-apparaatbeleid niet wilt afdwingen, raden we aan toewijzing van uw bestaande macOS-beleid ongedaan te maken of dit beleid te verwijderen. Uit klantonderzoek blijkt dat de meeste klanten niet worden beïnvloed door deze wijziging. De meeste eindgebruikers werken hun wachtwoord bij wanneer ze een verzoek krijgen zich te registreren met een wachtwoord of stellen hun wachtwoord opnieuw in om aan het beleid te voldoen.
+
 
 ### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>Plannen voor wijziging: Intune zal in september iOS 10 en hoger ondersteunen <!-- 2454656 -->
 Naar verwachting brengt Apple in september iOS 12 uit. Kort na de release zullen Intune-inschrijving, de bedrijfsportal en de beheerde browser iOS 10 en hoger ondersteunen.  
