@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune-apparaatbeperkingsinstellingen voor Android
-titlesuffix: ''
-description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op Android-apparaten.
+title: Apparaatbeperkingsinstellingen voor Android in Microsoft Intune - Azure | Microsoft Docs
+description: Bekijk een lijst met alle Android-apparaatinstellingen die u kunt beheren en beperken in Microsoft Intune. Gebruik deze instellingen om het wachtwoord te beheren, Google Play te openen, apps toe te staan of te blokkeren, browserinstellingen te beheren, apps te blokkeren, back-ups te maken in de Google-cloud en de verbindingsopties te beheren voor berichten, spraak, dataroaming, wifi en bluetooth.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +13,14 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
+ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190653"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39587020"
 ---
-# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Android- en Samsung Knox Standard-apparaatbeperkingsinstellingen in Microsoft Intune 
+# <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android- en Samsung Knox Standard-apparaatbeperkingsinstellingen - Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -53,7 +52,7 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
     > Voor Samsung Knox-apparaten is tijdens MDM-inschrijving automatisch een pincode van vier cijfers vereist. Voor systeemeigen Android-apparaten is mogelijk automatisch een pincode vereist om te voldoen aan voorwaardelijke toegang.
 
 - **Minimale wachtwoordlengte**: voer de minimale lengte van het wachtwoord in dat een gebruiker moet configureren (tussen 4 en 16 tekens).
-- **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**: hiermee geeft u het aantal minuten van inactiviteit op waarna het apparaat automatisch wordt vergrendeld.
+- **Maximale aantal minuten van inactiviteit voordat het scherm wordt vergrendeld** - voer het maximale aantal minuten van inactiviteit in dat is toegestaan op het apparaat totdat het scherm wordt vergrendeld. Een eindgebruiker kan op een apparaat geen tijdwaarde instellen die groter is dan de geconfigureerde tijd in het profiel. Een eindgebruiker kan een lagere tijdwaarde instellen. Bijvoorbeeld: als het profiel is ingesteld op 15 minuten, kan een eindgebruiker de waarde instellen op 5 minuten. Een eindgebruiker kan de waarde niet instellen op 30 minuten. 
 - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: hiermee geeft u het aantal mislukte aanmeldingen op dat is toegestaan voordat het apparaat wordt gewist.
 - **Wachtwoord verloopt (dagen)**: hiermee geeft u het aantal dagen op voordat het wachtwoord voor het apparaat moet worden gewijzigd.
 -  **Vereist wachtwoordtype**: hiermee geeft u het complexiteitsniveau voor het vereiste wachtwoord aan en of biometrische apparaten kunnen worden gebruikt. U kunt kiezen uit:

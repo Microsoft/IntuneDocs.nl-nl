@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
-ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
+ms.openlocfilehash: ff2774b76bceeeeaecec7a4dc74876b11706d574
+ms.sourcegitcommit: 56a8a3c8974f54f0f9ecc1e5b43581502ecc348e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39362055"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39614510"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -57,6 +57,11 @@ Naast de Store-apps en andere beheerde apps kunt u nu een geïntegreerde app (zo
 
 #### <a name="edit-your-office-365-pro-plus-app-deployments----2150145---"></a>Uw implementaties van de Office 365 Pro Plus-app bewerken <!-- 2150145 -->
 Als beheerder van Microsoft Intune hebt u meer mogelijkheden om de implementaties van de Office 365 Pro Plus-app te bewerken. Bovendien hoeft u uw implementaties niet meer te verwijderen om een van de eigenschappen van het pakket te wijzigen. Selecteer in de Azure-portal **Microsoft Intune** > **Mobiele apps** > **Apps**. Selecteer uw Office 365 Pro Plus-pakket in de lijst met apps.  
+
+
+#### <a name="updated-intune-app-sdk-for-android-is-now-available----2744271--"></a>De bijgewerkte Intune App SDK voor Android is nu beschikbaar <!-- 2744271-->
+
+Er is een bijgewerkte versie van de Intune APP SDK voor Android beschikbaar ter ondersteuning van de Android P-release. Als u een app-ontwikkelaar bent en de Intune SDK voor Android gebruikt, moet u de bijgewerkte versie van de Intune App SDK installeren om ervoor te zorgen dat Intune-functionaliteit binnen uw Android-apps blijft werken zoals verwacht op Android P-apparaten. Deze versie van de Intune App SDK biedt een ingebouwde invoegtoepassing waarmee de SDK-updates worden uitgevoerd. U hoeft geen bestaande code die is geïntegreerd, opnieuw te schrijven. Raadpleeg [Intune SDK voor Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android) voor meer informatie. Als u de oude badging-stijl voor Intune gebruikt, raden we u aan om het pictogram Werkmap te gebruiken. Ga naar [deze GitHub-opslagplaats](https://github.com/msintuneappsdk/intune-app-partner-badge) voor details over de huisstijl.
 
 
 ### <a name="device-configuration"></a>Apparaatconfiguratie

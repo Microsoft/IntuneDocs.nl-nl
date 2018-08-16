@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab6c808fc860491ddece5751983071d40864c8dd
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
+ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575080"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40001907"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>De vroege editie voor Microsoft Intune - augustus 2018
 
@@ -99,30 +99,29 @@ Selecteer voor deze functie **Apparaatinschrijving** > **Apparaatbeperkingen**.
 Het inschakelen van deze beperking heeft geen invloed op apparaten die al zijn geregistreerd.
 Nadat de beperking is ingeschakeld, wordt door Intune gecontroleerd of elke nieuwe Windows-inschrijvingsaanvraag wordt geautoriseerd als een zakelijke inschrijving. De volgende methoden worden gezien als een zakelijke inschrijving:
 - De ingeschreven gebruiker maakt gebruik van [een apparaatinschrijvingsmanageraccount]( device-enrollment-manager-enroll.md).
-
-- Het apparaat is geregistreerd via [Windows AutoPilot](enrollment-autopilot.md).
+- Het apparaat is ingeschreven via [Windows AutoPilot](enrollment-autopilot.md).
 - Het IMEI-nummer van het apparaat wordt vermeld onder **Apparaatinschrijving** > **[Zakelijke apparaat-id's]( corporate-identifiers-add.md)**).
 - Het apparaat is geregistreerd via een [pakket voor bulkinrichting](windows-bulk-enroll.md).
 - Het apparaat is geregistreerd via [automatische inschrijving met behulp van SCCM voor co-beheer](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management).
-Niet-geautoriseerde inschrijvingen worden geblokkeerd.
-De volgende inschrijvingen worden door Intune wel als zakelijk gemarkeerd, maar toch geblokkeerd omdat ze de Intune-beheerder geen beheer op apparaatniveau bieden:
+
+Niet-geautoriseerde inschrijvingen worden geblokkeerd. De volgende inschrijvingen worden door Intune wel als zakelijk gemarkeerd, maar toch geblokkeerd omdat ze de Intune-beheerder geen beheer op apparaatniveau bieden:
 - [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling tijdens het instellen van Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
 - [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling vanaf het instellen van Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
+
 Ook de volgende persoonlijke registratiemethoden worden geblokkeerd:
 - [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) via [Werkaccount toevoegen vanuit de Windows-instellingen](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup).
-
 - De optie [Alleen inschrijven voor MDM]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) in de Windows-instellingen.
 
 ### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Computernaampatronen opgeven in een AutoPilot-profiel <!--1849855-->
-U kunt hiermee een computernaamsjabloon instellen om tijdens inschrijving via AutoPilot [computernamen](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) te genereren en in te stellen. U moet dit opgeven in het AutoPilot-profiel, te vinden onder **Apparaatinschrijving** > **Windows-inschrijving** > **Windows Autopilot Deployment-service** > **Profielen**. U kunt alleen alfanumerieke tekens en afbreekstreepjes gebruiken.
+U kunt hiermee een computernaamsjabloon opgeven om tijdens inschrijving via AutoPilot [computernamen](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) te genereren en in te stellen. U moet dit opgeven in het AutoPilot-profiel onder **Apparaatinschrijving** > **Windows-inschrijving** > **Windows Autopilot Deployment-service** > **Profielen**. U kunt alleen alfanumerieke tekens en afbreekstreepjes gebruiken.
 Van toepassing op: Windows Insider 1809 of hoger (tijdens de preview).
 
 ### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>iOS-versienummer en -buildnummer weergegeven <!-- 1892471 -->
 Onder **Apparaatnaleving** > **Apparaatnaleving** wordt de versie van het iOS-besturingssysteem weergegeven. In een toekomstige update wordt ook het buildnummer weergegeven.
 Wanneer er beveiligingsupdates worden uitgebracht, laat Apple doorgaans het versienummer ongewijzigd, maar wordt het buildnummer wel bijgewerkt. Door het buildnummer weer te geven, kunt u eenvoudig controleren of een beveiligingsupdate is geïnstalleerd.
 
-### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>De optie Account wijzigen verbergen op de aanmeldingspagina van uw bedrijf en de foutpagina van uw domein voor Windows AutoPilot-profielen <!--1901669 -->
-In een openbare preview komen nieuwe opties voor Windows AutoPilot-profielen beschikbaar, waarmee beheerders de opties voor het wijzigen van een account op de aanmeldingspagina en domeinfoutpagina's van een bedrijf kunnen verbergen. Als u deze opties wilt verbergen, moet er een aangepaste huisstijl zijn geconfigureerd in Azure Active Directory. Van toepassing op: Windows Insider 1809 of hoger (tijdens de preview).
+### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>De opties voor het wijzigen van een account op de aanmeldingspagina en domeinfoutpagina van een bedrijf verbergen voor Windows AutoPilot-profielen <!--1901669 -->
+In een openbare preview komen nieuwe opties voor Windows AutoPilot-profielen beschikbaar, waarmee beheerders de opties voor het wijzigen van een account kunnen verbergen op de aanmeldingspagina en domeinfoutpagina's van een bedrijf. Als u deze opties wilt verbergen, moet er een aangepaste huisstijl zijn geconfigureerd in Azure Active Directory. Van toepassing op: Windows Insider 1809 of hoger (tijdens de preview).
 
 ### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>Vertragen wanneer software-updates voor iOS worden weergegeven op het apparaat <!-- 1949583 -->
 In Intune > **Software-updates** > **Beleid voor bijwerken van iOS** kunt u dagen en tijden instellen waarop apparaten geen updates mogen installeren. In een toekomstige update krijgt u de mogelijkheid uit te stellen (met een periode van 1 tot 90 dagen) wanneer een software-update wordt weergegeven op het apparaat. 
@@ -167,6 +166,13 @@ Van toepassing op:
 Nalevingsbeleid gemaakt in de klassieke Azure-portal wordt afgeschaft.  Wanneer dit gebeurt, kunt u alle bestaande beleidsregels bekijken en verwijderen. U kunt ze echter niet meer bijwerken. U kunt het beleid exporteren als een door komma's gescheiden bestand (CSV-bestand). Vervolgens kunt u de details in het bestand gebruiken om het beleid opnieuw te maken via Intune in de Azure-portal.
 > [!IMPORTANT]
 > Wanneer de klassieke Azure-portal buiten gebruik wordt gesteld, hebt u geen toegang meer tot uw beleid en kunt u uw beleid niet meer inzien. Zorg er dus voor dat u uw beleidsregels exporteert en opnieuw maakt in de Azure-portal, voordat de klassieke Azure-portal buiten gebruik wordt gesteld.
+
+### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>Terminologie wijzigen in 'buiten gebruik stellen' en 'wissen' <!-- 2175759 -->
+In de gebruikersinterface en documentatie van Intune worden de volgende begrippen gewijzigd, om consistent te zijn met Graph API:
+- **Bedrijfsgegevens verwijderen** wordt gewijzigd in **buiten gebruik stellen**
+- **Fabrieksinstellingen** wordt gewijzigd in **wissen**
+
+
 
 <!-- 1807 start -->
 
