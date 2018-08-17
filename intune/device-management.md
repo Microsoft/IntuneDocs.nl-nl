@@ -37,7 +37,7 @@ De workload **Apparaten** biedt inzicht in de apparaten die u beheert en geeft u
    - **Overzicht** bevat een visuele momentopname van de ingeschreven apparaten en laat zien hoeveel apparaten de verschillende platformen gebruiken, waaronder Android, iOS en meer.
    - **Alle apparaten** geeft een lijst weer met de ingeschreven apparaten die u beheert.
 
-     Met de functie **Exporteren** maakt u een CSV-lijst van alle apparaten in stappen van 10.000 (Internet Explorer) of 30.000 (Edge, Chrome).
+     Met de functie **Exporteren** maakt u een CSV-lijst van alle apparaten in stappen van 10.000 (Internet Explorer) of 30.000 (Microsoft Edge, Chrome).
 
      Selecteer een apparaat om [meer gegevens over het apparaat weer te geven](device-inventory.md), zoals gegevens over de hardware, geïnstalleerde apps en de nalevingsbeleidsstatus.
 
