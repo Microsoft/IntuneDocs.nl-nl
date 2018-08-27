@@ -4,8 +4,6 @@
 
 ## [Welke gegevens kan mijn bedrijf zien met Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Mijn apparaat opnieuw instellen](what-happens-if-you-reset-your-device-cpwebsite.md)
-
 ## [Mijn wachtwoord bijwerken](password-does-not-meet-it-administrator-requirements.md)
 
 ## [Aanmelden bij de bedrijfsportal](sign-in-to-the-company-portal.md)
@@ -105,8 +103,8 @@
 ## [Uw macOS-apparaat gebruiken](using-your-macos-device-with-intune.md)
 ### [Wat gebeurt er wanneer u een macOS-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS-apparaten inschrijven](enroll-your-device-in-intune-macos-cp.md)
-### [De registratie van uw macOS-apparaat ongedaan maken](unenroll-your-device-from-intune-macos.md)
-
+### [Een door het bedrijf geleverd macOS-apparaat inschrijven](enroll-company-device-macos.md)  
+### [De registratie van uw macOS-apparaat ongedaan maken](unenroll-your-device-from-intune-macos.md)  
 ### [Veelvoorkomende problemen met macOS oplossen](troubleshoot-your-device-macos.md)
 #### [Mijn versie van macOS wordt nog niet ondersteund](your-macos-version-isnt-yet-supported.md)
 #### [Uw macOS-apparaat bijwerken](you-need-to-update-your-macos-device.md)
