@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c6ba08a89417222e9741a69cdf899a4889794b67
-ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
+ms.openlocfilehash: 2991aa947a693d2eb71a355047ed266838dd92a4
+ms.sourcegitcommit: be67f8293b47cc08a46d328a44a50a7ab67c2052
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37926992"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251838"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
 ## <a name="manage-ios-apps"></a>iOS-apps beheren
@@ -70,7 +70,7 @@ Deze configuratie van de UPN-gebruikersinstelling is **vereist** voor apparaten 
 
 |MDM-provider van derden| Configuratiesleutel | Waardetype | Configuratiewaarde|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | Tekenreeks | {UserPrincipalName}|
+|Microsoft Intune| IntuneMAMUPN | Tekenreeks | {{UserPrincipalName}}|
 |VMware AirWatch| IntuneMAMUPN | Tekenreeks | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | Tekenreeks | ${userUPN} **of** ${userEmailAddress} |
 |ManageEngine Mobile Device Manager | IntuneMAMUPN | Tekenreeks | %upn% |

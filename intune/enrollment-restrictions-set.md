@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
-ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
+ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39501146"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251572"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -30,9 +30,6 @@ Als Intune-beheerder kunt u registratiebeperkingen maken en beheren om voor appa
 
 >[!NOTE]
 >Inschrijvingsbeperkingen vormen geen beveiligingsfuncties. Aangetaste apparaten kunnen zich anders voordoen dan ze in werkelijkheid zijn. Deze beperkingen zijn een best-effort barrière voor niet-kwaadwillende gebruikers.
-
->[!NOTE]
->De aan de groep toegewezen registratiebeperking en prioriteitsfunctionaliteit die in dit artikel worden genoemd, worden geïmplementeerd in het gehele Intune-klantenbestand. Als deze implementatie nog niet is voltooid, hebt u mogelijk geen toegang tot de groep en prioriteitsfuncties.
 
 U kunt onder ander de volgende registratiebeperkingen maken:
 

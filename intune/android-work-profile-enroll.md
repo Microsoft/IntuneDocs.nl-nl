@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909062"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255081"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Inschrijving van apparaten met een Android-werkprofiel instellen
 
@@ -34,7 +34,7 @@ Volg deze stappen om Android-werkprofielbeheer in te stellen:
 2. Geef inschrijvingsinstellingen op voor Android-werkprofielen. Android-werkprofielen worden [alleen ondersteund op bepaalde Android-apparaten](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Elk apparaat dat ondersteuning biedt voor Android-werkprofielen biedt ook ondersteuning voor conventioneel Android-beheer. In Intune kunt u opgeven hoe apparaten met ondersteuning voor Android-werkprofielen moeten worden beheerd. Ga hiervoor naar [Inschrijvingsbeperkingen](enrollment-restrictions-set.md).
     - **Blokkeren (standaard ingesteld)**: alle Android-apparaten, ook de apparaten met ondersteuning voor Android-werkprofielen, worden ingeschreven als conventionele Android-apparaten.
     - **Toestaan**: alle apparaten met ondersteuning voor Android-werkprofielen worden ingeschreven als apparaat met een Android-werkprofiel. Alle Android-apparaten die geen ondersteuning bieden voor Android-werkprofielen, worden geregistreerd als conventionele Android-apparaten.
-3. [Vertel uw gebruikers hoe ze hun apparaten moeten registreren](/intune-user-help/enroll-your-device-in-intune-android.md).
+3. [Vertel uw gebruikers hoe ze hun apparaten moeten registreren](/intune-user-help/enroll-your-device-in-intune-android).
 
 
 Als u apparaten met een Android-werkprofiel wilt registreren, maar die apparaten al zijn geregistreerd als regulier Android-apparaat, moet die registratie eerst ongedaan worden gemaakt. Daarna kunnen ze weer worden geregistreerd.
