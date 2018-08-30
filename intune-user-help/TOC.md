@@ -64,7 +64,7 @@
 ### [Wat gebeurt er wanneer u een iOS-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [De bedrijfsportal-app installeren en u hierbij aanmelden](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS-apparaten inschrijven](enroll-your-device-in-intune-ios.md)
-### [Uw Device Enrollment Program implementeren op iOS-apparaten](enroll-your-device-dep-ios.md)
+### [Het door uw organisatie verstrekte iOS-apparaat inschrijven](enroll-your-device-dep-ios.md)
 
 ### [Beheerde apps op een apparaat gebruiken](use-managed-apps-on-your-device-ios.md)
 ### [Een wachtwoordcode instellen of wijzigen](set-or-change-your-passcode-ios.md)
@@ -103,7 +103,7 @@
 ## [Uw macOS-apparaat gebruiken](using-your-macos-device-with-intune.md)
 ### [Wat gebeurt er wanneer u een macOS-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS-apparaten inschrijven](enroll-your-device-in-intune-macos-cp.md)
-### [Een door het bedrijf geleverd macOS-apparaat inschrijven](enroll-company-device-macos.md)  
+### [Het door uw organisatie verstrekte macOS-apparaat inschrijven](enroll-company-device-macos.md)  
 ### [De registratie van uw macOS-apparaat ongedaan maken](unenroll-your-device-from-intune-macos.md)  
 ### [Veelvoorkomende problemen met macOS oplossen](troubleshoot-your-device-macos.md)
 #### [Mijn versie van macOS wordt nog niet ondersteund](your-macos-version-isnt-yet-supported.md)
