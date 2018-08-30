@@ -305,7 +305,7 @@ items:
         href: app-configuration-policies-use-ios.md
       - name: Android beheerde apparaten
         href: app-configuration-policies-use-android.md
-      - name: Beheerde apps
+      - name: Managed apps
         href: app-configuration-policies-managed-app.md
       - name: Inrichtingsprofielen voor iOS-apps gebruiken
         href: app-provisioning-profile-ios.md
@@ -383,7 +383,7 @@ items:
         href: device-restrictions-macos.md
       - name: Windows 8.1
         href: device-restrictions-windows-8-1.md
-      - name: Windows Phone 8,1
+      - name: Windows Phone 8.1
         href: device-restrictions-windows-phone-8-1.md
       - name: Windows 10
         href: device-restrictions-windows-10.md
@@ -430,7 +430,7 @@ items:
         href: vpn-settings-macos.md
       - name: Windows 8.1
         href: vpn-settings-windows-8-1.md
-      - name: Windows Phone 8,1
+      - name: Windows Phone 8.1
         href: vpn-settings-windows-phone-8-1.md
       - name: Windows 10
         href: vpn-settings-windows-10.md
@@ -675,30 +675,6 @@ items:
       href: data-apple-sends-to-intune.md
     - name: Gegevens die Google verzendt naar Intune
       href: data-google-sends-to-intune.md
-  - name: Bewaken en problemen oplossen
-    items:
-    - name: Gebruikers helpen problemen op te lossen
-      href: help-desk-operators.md
-    - name: Problemen bij toegang tot bedrijfsbronnen oplossen
-      href: troubleshoot-company-resource-access-problems.md
-    - name: Problemen met app-installatie oplossen
-      href: troubleshoot-app-install.md
-    - name: Auditlogboeken voor Intune-activiteiten
-      href: monitor-audit-logs.md
-    - name: App-logboeken voor beveiliging controleren
-      href: app-protection-policy-settings-log.md
-    - name: Problemen met e-mailprofielen oplossen
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: Problemen met software-updates oplossen
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Problemen met Endpoint Protection oplossen
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: Beleidsproblemen oplossen
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: Problemen met voorwaardelijke toegang oplossen
-      href: troubleshoot-conditional-access.md
-    - name: Problemen met Exchange Connector oplossen
-      href: troubleshoot-exchange-connector.md
   - name: Automatiseren en aanpassen
     items:
     - name: Aangepaste apparaatinstellingen configureren
@@ -717,7 +693,7 @@ items:
         href: custom-settings-ios.md
       - name: macOS
         href: custom-settings-macos.md
-      - name: Windows Phone 8,1
+      - name: Windows Phone 8.1
         href: custom-settings-windows-phone-8-1.md
       - name: Windows 10
         href: custom-settings-windows-10.md
@@ -796,11 +772,35 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Resources
   items:
+  - name: Problemen oplossen
+    items:
+    - name: Gebruikers helpen problemen op te lossen
+      href: help-desk-operators.md
+    - name: Problemen bij toegang tot bedrijfsbronnen oplossen
+      href: troubleshoot-company-resource-access-problems.md
+    - name: Problemen met app-installatie oplossen
+      href: troubleshoot-app-install.md
+    - name: Auditlogboeken voor Intune-activiteiten
+      href: monitor-audit-logs.md
+    - name: App-logboeken voor beveiliging controleren
+      href: app-protection-policy-settings-log.md
+    - name: Problemen met e-mailprofielen oplossen
+      href: troubleshoot-email-profiles-in-microsoft-intune.md
+    - name: Problemen met software-updates oplossen
+      href: troubleshoot-software-updates-in-microsoft-intune.md
+    - name: Problemen met Endpoint Protection oplossen
+      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: Beleidsproblemen oplossen
+      href: troubleshoot-policies-in-microsoft-intune.md
+    - name: Problemen met voorwaardelijke toegang oplossen
+      href: troubleshoot-conditional-access.md
+    - name: Problemen met Exchange Connector oplossen
+      href: troubleshoot-exchange-connector.md
   - name: Verklarende woordenlijst
     href: intune-glossary.md
-ms.openlocfilehash: ab5b79b56ff430575cf3c9021ce33b573b4d0f22
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: 696173c0e1ecc8121637139ce4ada0b497ab7506
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42822947"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241759"
