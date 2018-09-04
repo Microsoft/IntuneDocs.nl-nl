@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 522a300760fe4446fc6e1ff211763279ba4fc7bf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4cce70abac079ab1761994ba91040c16375e013
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021180"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149752"
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Uw Android-apparaat is geroot, waardoor u geen verbinding kunt maken
 
@@ -34,6 +34,6 @@ Er zijn een paar algemene manieren waarop uw apparaat kan zijn geroot:
 
 - U hebt mogelijk een app op uw apparaat geïnstalleerd die de rootdetectiesoftware als beveiligingsrisico ziet. Als dit bericht ziet meteen wordt weergegeven nadat u een app hebt geïnstalleerd, verwijdert u de app.
 
-- De fabrikant van uw apparaat heeft software op uw apparaat geïnstalleerd die de rootdetectiesoftware als beveiligingsrisico ziet. Neem in dit geval contact op met het ondersteuningsteam van het bedrijf voor hulp. Ga voor de contactgegevens naar de [bedrjifsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+- De fabrikant van uw apparaat heeft software op uw apparaat geïnstalleerd die de rootdetectiesoftware als beveiligingsrisico ziet. Neem in dit geval contact op met het ondersteuningsteam van het bedrijf voor hulp. Ga voor de contactgegevens naar de [bedrjifsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 Als u het apparaat zelf hebt geroot, moet u het proces ongedaan maken en het apparaat herstellen naar de niet-geroote staat.
