@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: b939cd175f7a548b37ebec985a189d7e3119aac7
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 8a83602d992ff7ea08be84272eee086ea364be0a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903120"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147040"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>De bedrijfsportal-app bijwerken
 
@@ -52,4 +52,4 @@ Wanneer een nieuwe versie beschikbaar is, ziet u de optie voor bijwerken bij de 
     > Als u geen toegang krijgt tot Microsoft Store, neemt u contact op met het ondersteuningsteam van het bedrijf.
 
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
