@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: da965c9309e7140b5ce0cd95960ee7a9d4ac804f
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: db5e2e19f746e3916f5edf7719fb71e4fb7d37d0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754311"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146603"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>De limiet voor het aantal apparaten dat u kunt registreren is bereikt
 
@@ -33,4 +33,4 @@ Alle bedrijven stellen een limiet in voor het aantal apparaten dat elke persoon 
 2. Eén van uw apparaten verwijderen uit de [MyApps-portal](https://myapps.microsoft.com) en **Profiel** selecteren in de rechterbovenhoek van de pagina. 
 3. Contact opnemen met de ondersteuning van uw bedrijf om te vragen of het aantal apparaten dat mag worden geregistreerd, kan worden verhoogd.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

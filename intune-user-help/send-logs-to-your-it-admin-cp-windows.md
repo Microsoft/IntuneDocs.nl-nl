@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: e1bf702dcc8f4f1163c26d25e42edf0a00825c81
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33915491"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146516"
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Logboeken verzenden naar het ondersteuningsteam van het bedrijf via de bedrijfsportal-app voor Windows 10
 
@@ -39,4 +39,4 @@ Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Windows 10-appara
 
 U moet mogelijk ook [logboeken van de Instellingen-app](send-logs-to-your-it-admin-settings-windows.md) verzenden om het ondersteuningsteam van het bedrijf te ondersteunen bij het oplossen van problemen die worden aangetroffen.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
