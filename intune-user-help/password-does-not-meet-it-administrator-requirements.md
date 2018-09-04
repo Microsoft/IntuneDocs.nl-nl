@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6011e46a3176d55f35310292b55f4786d131f269
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: bb565cdaf200e8bf7d3836fd921b0b5893734955
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38219826"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150918"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>Uw wachtwoord voldoet niet aan de vereisten van het ondersteuningsteam van het bedrijf
 
@@ -33,7 +33,7 @@ Voor het instellen van uw pincode of wachtwoord gebruikt u de koppeling die over
 - [Het wachtwoord voor uw Windows-apparaat instellen of wijzigen](set-or-change-your-password-windows.md)
 
 > [!NOTE]
-> Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten van het ondersteuningsteam van uw bedrijf, neemt u contact op met het ondersteuningsteam van het bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+> Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten van het ondersteuningsteam van uw bedrijf, neemt u contact op met het ondersteuningsteam van het bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 ## <a name="pin-or-password-issue-descriptions"></a>Beschrijvingen van problemen met de pincode of het wachtwoord
 

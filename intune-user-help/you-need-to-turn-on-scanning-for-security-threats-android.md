@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: cf2413ee879cf4a6cb2742d34f452105057ccf59
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: c98980cca305bef01dd91e69d00a471b10e741a8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073815"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147482"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>Beveiligingsrisicoscans inschakelen op uw apparaat 
 Als u onbewust een onveilige app hebt geïnstalleerd, lopen de gegevens op uw apparaat gevaar. Om de gegevens op uw apparaat te beschermen, raden we u het volgende aan: 
@@ -32,4 +32,4 @@ Als u de scans op uw apparaat wilt inschakelen, gaat u naar **Instellingen** > *
 
 Op sommige Samsung-apparaten staat de instelling in **Instellingen** > **Google** > **Beveiliging** > **Google Play Protect**.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog). 
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980). 

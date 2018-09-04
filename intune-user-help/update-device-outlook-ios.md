@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4003d27bd3cbd8e0bef835df7895f7388cbd7dcd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ff7f076cf779c867ba730d8f048dd6a8a8f6d1af
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014500"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147006"
 ---
 # <a name="you-need-to-update-your-ios-device-to-install-the-outlook-app"></a>U moet uw iOS-apparaat upgraden om de Outlook-app te installeren
 
@@ -36,4 +36,4 @@ Soms kan de installatie van een app mislukken, met name als uw apparaat niet is 
 
 Tik op **Instellingen** > **Algemeen** > **Software-update** om uw apparaat bij te werken.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

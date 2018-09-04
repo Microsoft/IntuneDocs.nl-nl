@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 345b62c115525fb3be2a2bcfdffc5388df7417af
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9e6935dd5f25e14a5cef44d899c647d2927ebbbb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751744"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147074"
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Acties uitvoeren op een macOS-apparaat dat wordt beheerd door Jamf
 
@@ -34,4 +34,4 @@ __Wat te doen als u AccountNotOnboarded of Apparaat is al geregistreerd ziet__
 
 Als u de bedrijfsportal-app hebt geopend en een bericht met AccountNotOnboarded wordt weergegeven, moet u de bedrijfsportal-app afsluiten en gaat u naar **Toepassingen** > **Selfservice**. Uw bedrijf heeft een beleid voor de registratie van apparaten dat u moet installeren. Klik op het beleid om het te installeren en open vervolgens opnieuw de bedrijfsportal.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

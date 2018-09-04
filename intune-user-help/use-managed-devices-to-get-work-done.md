@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755229"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150663"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Werk gedaan krijgen met beheerde apparaten
 Microsoft Intune is software waarmee organisaties apparaten (zoals smartphones, tablets en pc's), apps en andere bedrijfsresources (bijvoorbeeld e-mail) kunnen beheren. Hierdoor kunnen werknemers bijna overal en vanaf vrijwel elk apparaat toegang tot hun werkgegevens krijgen terwijl de bedrijfsgegevens beveiligd blijven.
@@ -36,7 +36,7 @@ De ondersteuningsafdeling van uw bedrijf kan informatie zien die relevant is voo
 U kunt de bedrijfsportal op twee verschillende manieren verkrijgen:
 
 - Door de bedrijfsportal-app op uw apparaat te installeren. Meestal downloadt u de bedrijfsportal-app via de app store van uw apparaat, maar het ondersteuningsteam van uw bedrijf kan de bedrijfsportal-app ook voor u installeren.
-- Hiervoor gaat u naar de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) die het ondersteuningsteam van uw bedrijf heeft ingesteld.
+- Hiervoor gaat u naar de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) die het ondersteuningsteam van uw bedrijf heeft ingesteld.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Wat is het verschil tussen de app en de website?
 Er zijn enkele kleine verschillen tussen de bedrijfsportal-app en de bedrijfsportalwebsite, maar u kunt de meeste taken via beide uitvoeren. Taken die u kunt uitvoeren:
@@ -102,4 +102,4 @@ Microsoft raadt u aan eerst te proberen uw probleem zelf te verhelpen. Er is een
 - [Veelvoorkomende problemen met uw macOS-apparaat oplossen](troubleshoot-your-device-macos.md)
 - [Veelvoorkomende problemen met uw Windows-apparaat oplossen](troubleshoot-your-device-windows.md)
 
-U kunt hieronder een opmerking plaatsen om om hulp te vragen, maar elke organisatie heeft verschillende vereisten, zodat wij mogelijk niet altijd uw vragen kunnen beantwoorden. Contact opnemen met het ondersteuningsteam van uw bedrijf voor hulp levert waarschijnlijk het snelste en meest relevante antwoord. U vindt de contactgegevens van uw beheerder op de [Bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+U kunt hieronder een opmerking plaatsen om om hulp te vragen, maar elke organisatie heeft verschillende vereisten, zodat wij mogelijk niet altijd uw vragen kunnen beantwoorden. Contact opnemen met het ondersteuningsteam van uw bedrijf voor hulp levert waarschijnlijk het snelste en meest relevante antwoord. U vindt de contactgegevens van uw beheerder op de [Bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

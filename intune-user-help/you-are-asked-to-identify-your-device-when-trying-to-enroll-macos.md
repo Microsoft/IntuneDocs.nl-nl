@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ec853bce004c70b1a833218f2ef9f4c14d6bb2b7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1cf4b5eb051775a289e727ec6bc03c5af8734b6f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032077"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147245"
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>U wordt gevraagd uw apparaat te identificeren wanneer u het probeert te registreren
 
@@ -32,4 +32,4 @@ Als u uw macOS-apparaat probeert te registeren in Intune en u een scherm ziet wa
 2. Klik op **Doorgaan.**
 3. Voer de laatste vier tekens van het serienummer van uw apparaat in, zodat Intune kan bevestigen dat het apparaat is geregistreerd. Zie [Hoe vind ik het serienummer op mijn apparaat?](how-do-i-find-the-serial-number-on-my-device-macos.md) om te zien hoe u uw serienummer vindt.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

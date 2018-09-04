@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50864d3af4383a95c037868a9f9b9a61e1eb8172
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d51b141b09090119f7c9711ffd56d6b382f6e3dc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019310"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147948"
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Er ontbreekt een certificaat voor uw Android-apparaat dat normaal gesproken op uw telefoon is geïnstalleerd
 
@@ -44,9 +44,9 @@ U kunt dit probleem oplossen door het vereiste certificaat uit te downloaden via
 
 5. Sluit uw browser en de bedrijfsportal-app.
 
-6. Open de bedrijfsportal-app opnieuw. Nu moet u zich bij de bedrijfsportal-app kunnen aanmelden. Als u de bedrijfsportal-app nog steeds niet kunt gebruiken, gebruikt u de gegevens op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) om contact met het ondersteuningsteam van uw bedrijf op te nemen voor verdere instructies.
+6. Open de bedrijfsportal-app opnieuw. Nu moet u zich bij de bedrijfsportal-app kunnen aanmelden. Als u de bedrijfsportal-app nog steeds niet kunt gebruiken, gebruikt u de gegevens op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) om contact met het ondersteuningsteam van uw bedrijf op te nemen voor verdere instructies.
 
 >[!NOTE]
 > Als u het probleem niet kunt oplossen door dit certificaat te installeren en er een ander bericht wordt weergegeven dat er een certificaat ontbreekt, [installeert u het ontbrekende certificaat](your-device-is-missing-an-IT-required-certificate-android.md).
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

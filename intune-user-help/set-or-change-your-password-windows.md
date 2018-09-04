@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fb2f225d47d1589e7bccbafc4a23f3cecec12897
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2bd36a0327472f24a3a99b7975e736c9fa5385eb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018767"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149060"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Uw apparaat veiliger maken met het juiste wachtwoord
 
@@ -46,4 +46,4 @@ Als uw Windows-apparaat niet aan het wachtwoordbeleid van het ondersteuningsteam
 3. Voer in het vak **Nieuw wachtwoord** het nieuwe wachtwoord in en bevestig het wachtwoord in het vak **Wachtwoord bevestigen**.
 4. Kies **Gereed**.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0bffb0ab4003cc02ceddcd0199b951113ff1e4fd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321672"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347429"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementatie van Windows 10-apps met Microsoft Intune 
 
 Microsoft Intune ondersteunt momenteel verschillende typen apps en implementatiescenario's op Windows 10-apparaten. Nadat u een app hebt toegevoegd aan Intune, kunt u de app toewijzen aan gebruikers en apparaten. De volgende informatie bevat meer details over de ondersteunde Windows 10-scenario's. Daarnaast vindt u hier belangrijke informatie die u in acht moet nemen wanneer u apps naar Windows implementeert. 
 
-LOB-apps (Line-Of-Business) en Microsoft Store voor Bedrijven-apps zijn de typen apps die op Windows 10-apparaten worden ondersteund. De bestandsextensies voor Windows-apps zijn **.msi**, **.appx**, **.appxbundle**, **.msix** en **.msixbundle**.  
+LOB-apps (Line-Of-Business) en Microsoft Store voor Bedrijven-apps zijn de typen apps die op Windows 10-apparaten worden ondersteund.
 
 > [!Note]
 > De minimaal benodigde Windows 10-update voor de implementatie van apps in apparaatcontext is [23 mei 2018: KB4100403 (OS Build 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).

@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 061a372c38090d74adddbfbce34505be987448e9
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 773b78b32e919b120ac8908b0b69c5514cbdadb2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755331"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148758"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Mobile Threat Defense installeren op uw iOS-apparaat
 
@@ -46,4 +46,4 @@ Mobile Threat Defense biedt bedrijven een manier om ervoor te zorgen dat uw appa
 
 ## <a name="if-the-installation-doesnt-work"></a>Als de installatie niet werkt
 
-Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Neem in dat geval contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Soms kunnen installaties mislukken vanwege technische problemen waar u geen invloed op hebt. Neem in dat geval contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

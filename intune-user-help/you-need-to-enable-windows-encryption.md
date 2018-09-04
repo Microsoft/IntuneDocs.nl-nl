@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3f257064aec862c1a7fd7f085769c95c13499cdb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ab2642127b635e4830b6cf7f5e8cd820c61904ba
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016880"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149010"
 ---
 # <a name="you-need-to-enable-encryption"></a>U moet versleuteling inschakelen
 
@@ -30,4 +30,4 @@ Wanneer u een apparaat versleutelt, kunt u de daarin opgeslagen informatie opnem
 
 BitLocker is software die uw apparaat versleutelt en uw gegevens helpt beschermen. Volg [deze instructies](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) voor het inschakelen van BitLocker op Windows 10-apparaten.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

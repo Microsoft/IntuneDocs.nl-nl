@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 2f1b71513ad5e22f62c783ac8d305acb9eac4cca
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c377c2a4e9640443eb38a85b2e1806c9d9e64a82
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021775"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147190"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>U moet USB-foutopsporing uitschakelen
 
@@ -30,4 +30,4 @@ U kunt USB-foutopsporing uitschakelen via **Instellingen** > **Opties voor ontwi
 
 Wanneer u **USB-foutopsporing** hebt uitgeschakeld, wacht u enkele minuten. U kunt daarna uw Android-apparaat weer gewoon gebruiken voor het openen van bedrijfs- of schoolgegevens.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

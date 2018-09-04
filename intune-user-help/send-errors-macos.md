@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9805dfdba67299a5a1cd9433bbc061f8bd96bc9e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 8bc441dd07191ec3eb1280330be380ca425f53cc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190516"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150843"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Fouten naar de juiste personen verzenden voor uw beheerde macOS-apparaat
 
@@ -48,4 +48,4 @@ Logboeken naar Microsoft verzenden:
 2.  Klik op het menu **Help** > **Diagnostisch rapport verzenden**.  Nadat de logboeken zijn geüpload, ontvangt u een incident-id. Kopieer de id en sla deze op.
 3.  Stuur Microsoft een e-mail met <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">deze sjabloon</a>.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

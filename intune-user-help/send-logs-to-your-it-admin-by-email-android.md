@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327684"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149597"
 ---
 # <a name="email-logs-to-your-company-support"></a>Logboeken via e-mail naar het ondersteuningsteam van uw bedrijf verzenden
 
@@ -45,4 +45,4 @@ U kunt als volgt logboeken via e-mail naar het ondersteuningsteam van uw bedrijf
 3.  Tik op **E-mail verzenden en logboeken uploaden**.
 4.  Nadat het uploaden is voltooid, tikt u op uw e-mail-app. Er wordt een e-mailbericht geopend waarin de incident-id vooraf is ingevuld in het onderwerpveld. Beschrijf het probleem dat is opgetreden in de hoofdtekst van het e-mailbericht.  
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

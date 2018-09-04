@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6f81cab429f531f6839dc952d6ea6fb2977130ab
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a7f961036eab3b1bf72cc68a44e62f07bdbff6e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019183"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147898"
 ---
 # <a name="set-or-change-your-passcode"></a>Uw wachtwoordcode instellen of wijzigen
 
@@ -43,4 +43,4 @@ Als u problemen ondervindt bij het instellen van een wachtwoordcode die voldoet 
 2. Tik op **Wachtwoordcode wijzigen** en voer de oude wachtwoordcode in.
 3. Geef een nieuwe wachtwoordcode op die voldoet aan de vereisten van het ondersteuningsteam van het bedrijf en geef de code nogmaals op om deze te verifiëren.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

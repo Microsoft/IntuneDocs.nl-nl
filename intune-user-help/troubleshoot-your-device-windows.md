@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 727889a2e3946372414151593e8433315e82e76b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 269ee4f0d3a82fffb75b507240950af73e149847
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751676"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149643"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Veelvoorkomende problemen met uw Windows-apparaat herstellen
 
-Soms kunnen er problemen optreden met uw Windows-apparaat die kunnen worden hersteld via probleemoplossing. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor complexere problemen kunt u het best contact opnemen met het ondersteuningsteam van het bedrijf via de contactgegevens op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Soms kunnen er problemen optreden met uw Windows-apparaat die kunnen worden hersteld via probleemoplossing. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor complexere problemen kunt u het best contact opnemen met het ondersteuningsteam van het bedrijf via de contactgegevens op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 - [Mijn Windows 10-apparaat kan niet worden ingeschreven](troubleshoot-your-windows-10-device-windows.md)
 - [Ik moet mijn Windows-apparaat bijwerken](you-need-to-update-your-windows-device.md)

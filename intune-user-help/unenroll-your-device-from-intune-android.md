@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ec3c0a1c8ce4e04f4d23fb01e7c2525d8f2eed5b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 683b5ec7b07d7c270ea30ac438e7fc839b13d5fc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018359"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150341"
 ---
 # <a name="how-to-remove-your-android-device-from-intune"></a>Uw Android-apparaat uit Intune verwijderen
 
@@ -49,4 +49,4 @@ U kunt als volgt alle gegevens verwijderen die de bedrijfsportal-app voor Androi
 -   Wis appgegevens in Toepassingen -> Klik op app- -> knop Gegevens wissen
 -   Verwijder de map \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

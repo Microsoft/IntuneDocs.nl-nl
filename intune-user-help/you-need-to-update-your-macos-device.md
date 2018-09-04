@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6f85ded485c4e97e100bc9a4531b6810f4fe0b0a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7c0d2d4d787f29f873302765e3b6ff0c58184db7
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017407"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149450"
 ---
 # <a name="your-macos-device-doesnt-have-the-required-minimum-operating-system-version"></a>Op het macOS-apparaat is niet de vereiste minimale besturingssysteemversie geïnstalleerd
 
@@ -30,4 +30,4 @@ ms.locfileid: "31017407"
 
 Werk uw macOS-apparaat bij door te klikken op **App Store** > **Updates**. Selecteer de meest recente macOS-update die beschikbaar is, en klik vervolgens op de knop **Bijwerken**.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

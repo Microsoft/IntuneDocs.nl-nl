@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 738cc313eca4c98e7cdee3dfe40f705630244a9f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 443234bea9623ccbf5ac916d179a8fe202a392dd
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015741"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147775"
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Office 365 installeren op uw Windows 10-apparaat
 
@@ -32,4 +32,4 @@ U kunt het Office-pakket op verschillende manieren op uw Windows 10-apparaat ins
 
 Als uw bedrijf Office beschikbaar stelt, moet u slechts één versie van Office installeren. Als u beide versies probeert te installeren, verwijdert u de versie die u als eerste hebt geïnstalleerd.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

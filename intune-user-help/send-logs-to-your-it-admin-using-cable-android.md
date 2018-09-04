@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: 89be04405f76c290c252c382fbee207176e7180d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117851"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150304"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Logboeken naar het ondersteuningsteam van het bedrijf verzenden met een USB-kabel
 
 Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat gebruikt, kunt u het ondersteuningsteam van het bedrijf helpen het probleem op te lossen door informatie naar hen te e-mailen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
 
 > [!Note]
-> Voordat u begint, moet u ervoor zorgen dat u over het e-mailadres van het ondersteuningsteam van het bedrijf beschikt. U kunt dit adres vinden in de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) of in uw bedrijfsportal-app.
+> Voordat u begint, moet u ervoor zorgen dat u over het e-mailadres van het ondersteuningsteam van het bedrijf beschikt. U kunt dit adres vinden in de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) of in uw bedrijfsportal-app.
 
 1. Tik op het foutscherm op **Info verzenden**. Wanneer er een bericht wordt weergegeven waarin u wordt gevraagd welke methode u wilt gebruiken voor het verzenden van de logboeken, kiest u de optie waarbij de bestanden op uw apparaat worden opgeslagen.
 
@@ -39,4 +39,4 @@ Als er een fout optreedt terwijl u de bedrijfsportal-app op uw Android-apparaat 
 
 4. Selecteer de bestanden en voeg ze als bijlage toe een e-mail. Verzend dit e-mailbericht naar het ondersteuningsteam van het bedrijf.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

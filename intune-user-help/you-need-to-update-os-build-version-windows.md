@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 69a7855dc2df9f74fb529c405cbf02a32cfdea1e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4006f5784115a063eee80c817dc9b99c99dec827
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017951"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149684"
 ---
 # <a name="update-your-windows-10-device"></a>Uw Windows 10-apparaat bijwerken
 
@@ -34,4 +34,4 @@ Uw werk of school wilt er zeker van zijn dat apparaten die toegang hebben tot hu
 
 Als uw Windows-versie nieuwer is dan de versie die uw bedrijf ondersteunt, moet u [een aantal stappen uitvoeren om dit probleem op te lossen](your-windows-version-isnt-yet-supported.md)
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

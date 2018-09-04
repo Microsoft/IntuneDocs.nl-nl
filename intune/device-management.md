@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2e81bdb3431ac8a2e0fdae6a7f3099512319aee
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836924"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313255"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Wat is Microsoft Intune-apparaatbeheer?
 
@@ -37,7 +37,7 @@ De workload **Apparaten** biedt inzicht in de apparaten die u beheert en geeft u
    - **Overzicht** bevat een visuele momentopname van de ingeschreven apparaten en laat zien hoeveel apparaten de verschillende platformen gebruiken, waaronder Android, iOS en meer.
    - **Alle apparaten** geeft een lijst weer met de ingeschreven apparaten die u beheert.
 
-     Met de functie **Exporteren** maakt u een CSV-lijst van alle apparaten in stappen van 10.000 (Internet Explorer) of 30.000 (Microsoft Edge, Chrome).
+     Met de functie **Exporteren** maakt u een CSV-lijst van alle apparaten in stappen van 10.000 (Internet Explorer) of 30.000 (Edge, Chrome).
 
      Selecteer een apparaat om [meer gegevens over het apparaat weer te geven](device-inventory.md), zoals gegevens over de hardware, geïnstalleerde apps en de nalevingsbeleidsstatus.
 
@@ -55,8 +55,8 @@ De beschikbaarheid van de acties is afhankelijk van het apparaatplatform en de c
 
 - [Inventaris van apparaten weergeven](device-inventory.md)
 - Externe apparaatacties uitvoeren:
-    - [Bedrijfsgegevens verwijderen](devices-wipe.md#remove-company-data)
-    - [Fabrieksinstellingen terugzetten](devices-wipe.md#factory-reset)
+    - [Buiten gebruik stellen](devices-wipe.md#retire)
+    - [Wissen](devices-wipe.md#wipe)
     - [Vergrendelen op afstand](device-remote-lock.md)
     - [Wachtwoordcode opnieuw instellen](device-passcode-reset.md)
     - [Activeringsvergrendeling overslaan](device-activation-lock-bypass.md) (alleen iOS)

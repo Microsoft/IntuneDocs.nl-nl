@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 84f8e70d8321ca27d689d13472b69007a1d6c186
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 56f19d0722841e801a0aca0009f2f629a8b90949
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019225"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148811"
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Hoe meld ik me aan bij de bedrijfsportal-app? <!--User Story 1132123-->
 
@@ -91,4 +91,4 @@ Als u geen wachtwoord hoeft op te geven om u aan te melden bij uw bedrijfsresour
 
    ![Nadat het verificatieproces is doorlopen, wordt u aangemeld via de bedrijfsportal-app. Dit proces wordt aangegeven met een voortgangsbalk.](/intune-user-help/media/cp_ios_aad_signin_after_1804_007.png)
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a896e4a86cbeaacc07bdb4a32606a67b0049e3e1
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e31eacb0d106fa7200275fcc369a2ea22cf36219
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30756008"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147264"
 ---
 # <a name="sync-your-ios-device-manually"></a>Uw iOS-apparaat handmatig synchroniseren
 
@@ -40,5 +40,5 @@ Soms duurt het te lang om een app te downloaden via de bedrijfsportal. Synchroni
 
    ![Schermopname van de apparaatdetails waarbij de laadbalk wordt weergegeven nadat de gebruiker op Instellingen controleren heeft geklikt.](/intune-user-help/media/ios_sync_3_CP-after_1804.png)
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
 

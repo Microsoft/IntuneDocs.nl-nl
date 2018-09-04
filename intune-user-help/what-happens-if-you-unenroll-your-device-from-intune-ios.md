@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8afec4c83e52693aa5789ba3e0ed89cb4d0eea38
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 4174844d3507ebd2c37034a1a4e7f54464f099e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308888"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148467"
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>Wat gebeurt er als u de inschrijving van uw iOS- of macOS-apparaat bij Intune ongedaan maakt?
 
@@ -44,4 +44,4 @@ Als u de inschrijving van uw iOS- of macOS-apparaat bij Intune ongedaan maakt:
 
 Zie [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-ios.md) voor instructies om de registratie van uw apparaat ongedaan te maken.
 
-Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

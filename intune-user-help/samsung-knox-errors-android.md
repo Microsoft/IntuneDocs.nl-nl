@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 1ce260b010658ade6c78361b980ca928a992d113
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 235356e88dc2ba25b789ebe262c1ae9b32840793
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751438"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150882"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Veelvoorkomende problemen met uw Samsung Knox-apparaat oplossen
 
@@ -51,4 +51,4 @@ Het bericht kan er als volgt uitzien:
 |---|---|
 |**Samsung Knox-activeringsfout**: de Samsung Knox-licentie kan niet worden geactiveerd. Het is mogelijk dat energiebeheer is ingeschakeld. Schakel de energiebesparingsmodus uit in de apparaatinstellingen en probeer het opnieuw. |Uw apparaat heeft mogelijk niet de juiste energie-instellingen voor uw bedrijfsbronnen. Meer informatie over [het instellen van de energiebesparingsmodus](power-saving-mode-android.md).|
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

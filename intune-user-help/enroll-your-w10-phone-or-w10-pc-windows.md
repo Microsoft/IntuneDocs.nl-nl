@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 22d23751aaa3416fb13c7b08451ea91c3ee308e2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6395dc0d14b8947093d53865eb1d97f6ef56db25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017288"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147109"
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Uw Windows 10-apparaten inschrijven in Intune
 
@@ -51,4 +51,4 @@ Wilt u meer weten? Ontdek wat er gebeurt wanneer u [uw apparaat inschrijft in In
 3.  Tik onder __Apparaatgegevens__ op __Meer info__. U ziet een lijst met informatie over uw apparaat. Zoek in deze lijst naar de __versie__.        
 4.  Als uw versie __1607 of hoger__ is, gaat u verder met [deze stappen](enroll-your-w10-device-access-work-or-school.md). Als uw versie __1511 of ouder__ is, gaat u verder met [deze stappen](enroll-your-w10-device-your-account.md).
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

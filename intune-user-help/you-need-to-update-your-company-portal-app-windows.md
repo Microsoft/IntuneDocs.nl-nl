@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7190049dbc204d3cdcc4b9dcfbe23e866980ce37
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 31d5a0879f3e3c3933e6b0a8f4e9ebf7e6056419
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016574"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147853"
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>Uw bedrijfsportal-app voor Windows is verouderd
 
 U moet uw bedrijfsportal-app bijwerken om toegang te behouden tot bijvoorbeeld uw zakelijke e-mail, contactpersonen en documenten. U kunt dit probleem verhelpen door **Microsoft Store** te openen en de nieuwe versie van de **bedrijfsportal-app** te installeren.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

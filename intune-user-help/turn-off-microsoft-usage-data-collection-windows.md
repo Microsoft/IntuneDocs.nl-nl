@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6c41db425227733ac863a705881468b46089cc7f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: dd6775967607824403fc7847a1e0ae4ca0659da8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31013837"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148109"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Gegevensverzameling door Microsoft uitschakelen
 
@@ -30,4 +30,4 @@ Microsoft verzamelt automatisch bepaalde gegevens over onze producten en service
 
 Als u het verzamelen van gebruiksgegevens op een Windows-apparaat wilt uitschakelen, gaat u naar de instelling **Gebruiksgegevens** in de bedrijfsportal-app.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

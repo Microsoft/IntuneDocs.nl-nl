@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ab5e424469f0fd83e063db5361fa843b2c6f1e76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1f9bb0fc434b1cba2d9b48f6f8cef4cf6b06e932
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016200"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147315"
 ---
 # <a name="you-need-to-update-your-windows-device"></a>U moet uw Windows-apparaat bijwerken
 
@@ -37,4 +37,4 @@ Voor computers met Windows zoekt u naar **besturingssysteem** en volgt u de aanw
 
 Voor Windows 10 en Windows 8.1 typt u __Windows-versie__ in de __zoekbalk__. Onder __Kan ik helpen?__ selecteert u __Windows-versie__. Het versienummer wordt weergegeven. Dit nummer ziet er ongeveer uit als __10.0.14393.447__.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: ba0f2675bfd65f60f6f16d6be738cdc1baa3e7e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547485"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148794"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Uw iOS-apparaat uit Intune verwijderen
 
@@ -74,4 +74,4 @@ Er zijn drie locaties waar de bedrijfsportal lokale gegevens op uw apparaat opsl
 -   **Sleutelketen**: uw apparaat bewaart uw wachtwoorden en andere informatie die wordt gebruikt voor aanmeldingen in de sleutelketen. Microsoft-apps delen uw aanmeldgegevens in alle door Microsoft ontwikkelde apps die op uw apparaat staan, inclusief Microsoft Outlook en Microsoft Authenticator. Net zoals bij Apple Analytics kunnen deze gegevens alleen worden verwijderd door de fabrieksinstellingen van uw apparaat te herstellen. Hiermee worden alle persoonsgegevens op uw apparaat gewist. Open hiervoor **Instellingen** > **Algemeen** > **Opnieuw instellen** > **Alle inhoud en instellingen wissen**.
 
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

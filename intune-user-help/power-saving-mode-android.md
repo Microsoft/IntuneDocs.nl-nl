@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 663da92e11befeae1f65467e887870a52640cbeb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 33b6199c25e9e36b65dfe2ca819640fa614e68b6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020568"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148220"
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Outlook synchroniseert beheerde e-mail niet wanneer de energieverbruikoptimalisatie voor Android is ingeschakeld
 
 > [!IMPORTANT]
-> Dit probleem wordt hier beschreven omdat hierover een toenemend aantal klantrapporten is ontvangen. Als dit probleem zich blijft voordoen nadat u deze stappen hebt uitgevoerd, neemt u contact op met [het ondersteuningsteam van uw bedrijf](https://portal.manage.microsoft.com#HelpDeskDialog) voor meer hulp.
+> Dit probleem wordt hier beschreven omdat hierover een toenemend aantal klantrapporten is ontvangen. Als dit probleem zich blijft voordoen nadat u deze stappen hebt uitgevoerd, neemt u contact op met [het ondersteuningsteam van uw bedrijf](https://go.microsoft.com/fwlink/?linkid=2010980) voor meer hulp.
 
 Door uw apparaat bij Intune te registreren, kunt u profiteren van de toegang tot bedrijfsbronnen. Een van de meest voorkomende bronnen is toegang tot e-mail. Een probleem dat we hebben gezien met toegang tot e-mail via Outlook voor Android-apparaten is wanneer de energieverbruikoptimalisatie is ingeschakeld. Energieverbruikoptimalisatie wordt mogelijk automatisch ingeschakeld om uw apparaat zo lang mogelijk ingeschakeld te houden. Energieverbruikoptimalisatie kan u op deze manier deels helpen omdat deze probeert automatisch e-maildownloads te stoppen.
 
@@ -75,4 +75,4 @@ Een ander voorbeeld om deze instellingen op een andere manier te vinden is via h
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of hun contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

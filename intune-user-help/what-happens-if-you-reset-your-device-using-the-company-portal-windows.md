@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7f10e178e88f871c297ed8bbac7ccbe9a802d0b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e569b69f319cb3cf2868d86db2032b93d9bd8ab8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755484"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149120"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Wat gebeurt er als u uw Windows-apparaat opnieuw instelt met behulp van de bedrijfsportal?
 
@@ -34,4 +34,4 @@ Als u de bedrijfsportalapp of [bedrijfsportalwebsite](reset-erase-your-device-cp
 |Uw apparaat heeft alleen toegang tot bedrijfse-mail|**Windows Phone 8.1**<br />Het apparaat wordt niet meer in de bedrijfsportal weergegeven en uw account voor zakelijke e-mail en niet-opgeslagen e-mailberichten worden verwijderd.<br /><br />**Windows 7 of Windows Vista**<br />U kunt een computer met Windows 7 of een eerdere versie, die alleen voor e-mail wordt gebruikt, niet opnieuw instellen.<br /><br />**Windows 8.1 en Windows 8**<br />Het apparaat wordt niet meer in de bedrijfsportal weergegeven en uw account voor zakelijke e-mail en niet-opgeslagen e-mailberichten worden verwijderd.|
 |Pc's en laptops|**Windows 8.1 en Windows 8**<br />U kunt een computer met Windows 8 of Windows 8.1 uitsluitend opnieuw instellen als deze alleen voor e-mail wordt gebruikt.<br /><br />**Windows 7 of Windows Vista**<br />U kunt een computer met Windows 7 of een eerdere versie niet opnieuw instellen.|
 
-Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
