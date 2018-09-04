@@ -15,30 +15,32 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 3176f09a7565a17230aeb7a9f44b14490264b2bd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b939cd175f7a548b37ebec985a189d7e3119aac7
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016438"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903120"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>De bedrijfsportal-app bijwerken
 
-Als uw versie van de bedrijfsportal-app niet langer wordt ondersteund, of als er een nieuwere versie beschikbaar is, moet u de bedrijfsportal-app bijwerken naar een hogere versie. Volg de stappen die gelden voor uw type apparaat.
+In dit artikel wordt beschreven hoe u uw versie van de bedrijfsportal-app kunt bijwerken wanneer:  
+* Er een nieuwere versie van de bedrijfsportal-app beschikbaar is.
+* Uw versie van de bedrijfsportal-app niet meer wordt ondersteund.
+
+Met deze stappen wordt beschreven hoe u de app op Android-, iOS- en Windows-apparaten kunt bijwerken.    
 
 ## <a name="update-the-intune-company-portal-app-on-your-android-device"></a>De Intune-bedrijfsportal-app op uw Android-apparaat bijwerken
 
-De Play Store geeft een melding wanneer er een nieuwe versie van de bedrijfsportal beschikbaar is. Er wordt geen prompt in de bedrijfsportal-app zelf weergegeven. Volg de instructies in de melding om uw apparaat bij te werken.
+De Play Store geeft een melding wanneer er een nieuwe versie van de bedrijfsportal beschikbaar is. Er wordt geen prompt in de bedrijfsportal-app zelf weergegeven. Selecteer de waarschuwing en volg de instructies om uw apparaat bij te werken.  
 
 ## <a name="update-the-intune-company-portal-app-on-your-ios-device"></a>De Intune-bedrijfsportal-app op uw iOS-apparaat bijwerken
 
 Wanneer een nieuwe versie beschikbaar is, ziet u de optie voor bijwerken bij de app in de lijst met geïnstalleerde apps.  
 
-De bedrijfsportal-app bijwerken:
-
 1. Ga naar de App Store en zoek naar **Intune**.
 
-2. Wanneer u de app hebt gevonden, tikt u op de knop **Bijwerken** rechts naast de naam van de app.
+2. Wanneer u de app hebt gevonden, tikt u op **Bijwerken**.
 
 ## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>De Intune-bedrijfsportal-app op uw Windows-apparaat bijwerken
 

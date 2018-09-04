@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
+ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744666"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40251547"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP met voorwaardelijke toegang in Intune inschakelen
 
@@ -44,7 +44,7 @@ In dit artikel leest u informatie over:
 
 Om ATP met Intune te gebruiken, moet u het volgende geconfigureerd en klaar voor gebruik hebben:
 
-- Tenant met licentie voor Enterprise Mobility + Security E5 en Windows E5 (of Microsoft 365 Enterprise E5)
+- Tenant met licentie voor Enterprise Mobility + Security E3 en Windows E5 (of Microsoft 365 Enterprise E5)
 - Microsoft Intune-omgeving met [Intune-beheerde](windows-enroll.md) Windows 10-apparaten die ook deelnemen aan Azure AD
 - [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) en toegang tot de Windows Defender Security Center (ATP portal)
 

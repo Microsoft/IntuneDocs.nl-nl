@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,20 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 0d58cb3199405a8a32d169e74e4f0009841f5d09
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046244"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251708"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Inschrijving voor macOS-apparaten instellen in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Met Intune kunt u macOS-apparaten beheren. Als u apparaatbeheer wilt inschakelen, moeten uw gebruikers hun apparaat inschrijven door naar de [website van de bedrijfsportal](http://portal.manage.microsoft.com) te gaan en de prompts te volgen. Zodra macOS-apparaten worden beheerd, kunt u [aangepaste instellingen voor macOS-apparaten maken](custom-settings-macos.md). Binnenkort zijn er nog meer mogelijkheden beschikbaar.
+Met Intune kunt u macOS-apparaten beheren om gebruikers toegang te geven tot zakelijke e-mail en apps.
+
+Als Intune-beheerder kunt u inschrijving instellen voor bedrijfseigen macOS-apparaten en macOS-apparaten in privé-eigendom (Bring-Your-Own-Device of BYOD). 
 
 ## <a name="prerequisites"></a>Vereisten
 
@@ -39,27 +41,25 @@ Voer de volgende vereisten uit voordat u inschrijving van macOS-apparaten instel
 - Gebruikerslicenties toewijzen in de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Een Apple MDM-pushcertificaat ophalen](apple-mdm-push-certificate-get.md)
 
-## <a name="user-owned-ios-devices-byod"></a>iOS-apparaten die het eigendom van gebruikers zijn (BYOD)
+## <a name="user-owned-macos-devices-byod"></a>macOS-apparaten die het eigendom van gebruikers zijn (BYOD)
 
-U kunt gebruikers hun persoonlijke apparaten laten inschrijven voor Intune-beheer, wat 'Bring Your Own Device' of BYOD wordt genoemd. Zodra u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen ze in de App Store de macOS-bedrijfsportal-app downloaden en in de app de inschrijvingsinstructies volgen.
-
-## <a name="company-owned-ios-devices"></a>iOS-apparaten die bedrijfseigendom zijn
-Voor organisaties die apparaten voor hun gebruikers aanschaffen, ondersteunt Intune de inschrijving van macOS-apparaten die bedrijfseigendom zijn met een [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md)-account.
-
-## <a name="set-up-macos-enrollment"></a>macOS-inschrijving instellen
-
-Standaard staat Intune toe dat macOS-apparaten kunnen worden ingeschreven.
-
-Zie [Beperkingen voor apparaattypen instellen](enrollment-restrictions-set.md) als u de inschrijving van macOS-apparaten wilt blokkeren.
-
-## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Uw gebruikers vertellen hoe ze hun apparaten moeten inschrijven om toegang te krijgen tot bedrijfsresources
-
-Meld uw gebruikers dat ze naar de [website van de bedrijfsportal](https://portal.manage.microsoft.com) moeten gaan en de prompts moeten volgen om hun apparaat in te schrijven. U kunt hen ook een link naar online inschrijvingsstappen sturen: [Uw macOS-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+U kunt gebruikers hun persoonlijke apparaten laten inschrijven voor Intune-beheer, wat Bring-Your-Own-Device of BYOD wordt genoemd. Nadat u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen uw gebruikers hun apparaten als volgt registreren:
+- door naar de [bedrijfswebsite](https://portal.manage.microsoft.com) te gaan; of
+- de bedrijfsportal-app te downloaden.
+U kunt hen ook een link naar online inschrijvingsstappen sturen: [Uw macOS-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Zie de volgende artikelen voor meer informatie over andere taken voor eindgebruikers:
 
 - [Bronnen over de eindgebruikerservaring in Microsoft Intune](end-user-educate.md)
 - [Uw macOS-apparaat gebruiken met Intune](/intune-user-help/using-your-macos-device-with-intune)
+
+## <a name="company-owned-macos-devices"></a>Bedrijfseigen macOS-apparaten
+Voor organisaties die apparaten voor hun gebruikers aanschaffen, ondersteunt Intune de volgende inschrijvingsmethoden voor macOS-apparaten die bedrijfseigendom zijn:
+- [Het Device Enrollment Program (DEP) van Apple](device-enrollment-program-enroll-macos.md): organisaties kunnen nu macOS-apparaten aanschaffen via het Device Enrollment Program (DEP) van Apple. Met DEP kunt u een registratieprofiel draadloos implementeren om apparaten voor beheer in te schrijven.
+- [Device Enrollment Program (DEM)](device-enrollment-manager-enroll.md): u kunt een DEM-account gebruiken om maximaal duizend apparaten te registreren.
+
+## <a name="block-macos-enrollment"></a>macOS-inschrijving blokkeren
+Standaard kunt u met Intune macOS-apparaten registreren. Zie [Beperkingen voor apparaattypen instellen](enrollment-restrictions-set.md) als u de inschrijving van macOS-apparaten wilt blokkeren.
 
 ## <a name="enroll-virtual-macos-machines-for-testing"></a>Virtuele macOS-machines inschrijven voor testen
 
@@ -79,3 +79,7 @@ Door de gebruiker goedgekeurde MDM-inschrijving is een type macOS-inschrijving d
 Na de inschrijving met behulp van de macOS-bedrijfsportal, moet de gebruiker handmatig goedkeuren met behulp van de systeemvoorkeuren om door de gebruiker te worden goedgekeurd. Instructies hiervoor vindt u in de macOS-bedrijfsportal voor gebruikers van macOS 10.13.2 en later.
 
 Ga naar de Intune-portal en kies vervolgens **Apparaten** > **Alle apparaten**> kies het apparaat > **Hardware** om te achterhalen of een apparaat door de gebruiker is goedgekeurd. Schakel het veld **Goedgekeurd door gebruiker** in.
+
+## <a name="next-steps"></a>Volgende stappen
+
+Nadat macOS-apparaten zijn geregistreerd, kunt u [aangepaste instellingen voor macOS-apparaten maken](custom-settings-macos.md).

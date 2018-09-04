@@ -15,12 +15,12 @@ ms.assetid: 73db3070-d033-40fb-a8f1-58b9d198021e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcdc7628f75221228d788c2cb1995189ea8f81f0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 354109cc4d84e34eebd5df6df86919f386e143f6
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223098"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40252740"
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Apps die geen gebruik maken van moderne verificatie blokkeren (ADAL)
 
@@ -31,11 +31,7 @@ Voorwaardelijke toegang voor apps met een app-beveiligingsbeleid is afhankelijk 
 Als u de toegang tot deze apps wilt blokkeren, raden we u het volgende aan:
 
 * Met het instellen van ADFS worden er regels van kracht die niet-moderne verificatieprotocollen blokkeren. Gedetailleerde instructies vindt u in scenario 3: [alle toegang tot O365 blokkeren behalve op browser gebaseerde toepassingen](https://technet.microsoft.com/library/dn592182.aspx).
-* Voor **SharePoint Online** schakelt u in de SharePoint Online-service niet-moderne verificatie in met behulp van de PowerShell-commandlet [Set-SPOTenant](https://technet.microsoft.com/library/fp161390.aspx) om de eigenschap voor verouderde verificatieprotocollen in te stellen op false:
-
-```
- Set-SPOTenant -LegacyAuthProtocolsEnabled $false
-```
+* Gebruik voorwaardelijke toegang voor Azure Active Directory voor **Exchange en SharePoint Online** en gebruik de PowerShell-cmdlet Set-SPOTenant voor SharePoint Online. Zie [SharePoint Online en Exchange Online instellen voor voorwaardelijke toegang voor Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols) voor gedetailleerde instructies.
 
 
 >[!IMPORTANT]

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 49fd06d4f0f75f1aeff434ce3b271284ec1a0340
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025909"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251550"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Wat zijn gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken?
 
@@ -28,6 +28,9 @@ ms.locfileid: "31025909"
 Er zijn twee soorten voorwaardelijke toegang met Intune: voorwaardelijke toegang op basis van apparaten en voorwaardelijke toegang op basis van apps. U moet het gerelateerde nalevingsbeleid configureren voor naleving van de voorwaardelijke toegang binnen uw organisatie. Voorwaardelijke toegang wordt meestal gebruikt voor zaken als toegang tot Exchange on-premises toestaan of blokkeren, toegang tot het netwerk bepalen of integratie realiseren met een Mobile Threat Defense-oplossing.
 
 Op basis van de onderstaande informatie krijgt u meer inzicht in hoe u de Intune-nalevingsmogelijkheden voor mobiele *apparaten* kunt gebruiken én in hoe Intune Mobile *Application* Management (MAM) werkt. 
+
+> [!NOTE]
+> Voorwaardelijke toegang is een Azure Active Directory-functie die is opgenomen in een Azure Active Directory Premium-licentie. Deze mogelijkheid wordt verbeterd door Intune door het toevoegen van nalevingsbeleid voor mobiele apparaten en beheer van mobiele apps aan de oplossing.
 
 ## <a name="device-based-conditional-access"></a>Voorwaardelijke toegang op basis van het apparaat
 
@@ -87,7 +90,7 @@ Als de EAS-record nieuw is en deze niet door Intune wordt herkend, wordt er een 
 
 #### <a name="whats-the-intune-role"></a>Wat is de rol van Intune?
 
-Met Intune wordt de apparaatstatus beoordeelt en beheert.
+Met Intune wordt de apparaatstatus beoordeeld en beheerd.
 
 #### <a name="whats-the-exchange-server-role"></a>Wat is de rol van de Exchange-server?
 
@@ -106,7 +109,7 @@ Gebruikers kan toegang tot het Wi-Fi-netwerk of de VPN-resources worden verleend
 
 ### <a name="conditional-access-based-on-device-risk"></a>Voorwaardelijk op basis van het apparaatrisico
 
-Intune werkt samen met leveranciers van Mobile Threat Defense, die een beveiligingsoplossing biedt voor het detecteren van malware, Trojaans paarden en andere bedreigingen op mobiele apparaten.
+Intune werkt samen met leveranciers van Mobile Threat Defense, die een beveiligingsoplossing bieden voor het detecteren van malware, Trojaans paarden en andere bedreigingen op mobiele apparaten.
 
 #### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Hoe de integratie van Intune en Mobile Threat Defense werkt
 
@@ -118,13 +121,13 @@ De integratie van Intune en Mobile Threat Defense speelt een rol bij de beslissi
 
 ### <a name="conditional-access-for-windows-pcs"></a>Voorwaardelijke toegang voor Windows-pc's
 
-Voorwaardelijke toegang voor pc's biedt vergelijkbare mogelijkheden als voor mobiele apparaten. Laten we eens kijken op welke manieren u voorwaardelijke toegang kunt gebruiken wanneer u pc's met Intune beheert.
+Voorwaardelijke toegang voor pc's biedt mogelijkheden die vergelijkbaar zijn met de mogelijkheden voor mobiele apparaten. Laten we eens kijken op welke manieren u voorwaardelijke toegang kunt gebruiken wanneer u pc's met Intune beheert.
 
 #### <a name="corporate-owned"></a>In bedrijfseigendom
 
--   **On-premises AD-domein is toegevoegd:** dit is de meest voorkomende implementatieoptie voor voorwaardelijke toegang voor organisaties waarvan de pc's al worden beheerd met AD-groepsbeleid en/of met System Center Configuration Manager.
+-   **On-premises AD-domein is toegevoegd:** deze optie wordt doorgaans gebruikt door organisaties waarvan de pc's al worden beheerd met AD-groepsbeleid en/of System Center Configuration Manager.
 
--   **Azure AD-domein toegevoegd en het Intune-beheerprogramma:** dit scenario is doorgaans gericht op CYOD-scenario's (Choose Your Own Device) en scenario's met zwervende laptops die maar zelden zijn verbonden met het bedrijfsnetwerk. Het apparaat wordt toegevoegd aan Azure AD en wordt geregistreerd bij Intune, die vervolgens alle afhankelijkheden van on-premises AD en domeincontrollers verwijdert. Dit kan worden gebruikt als een criterium voor voorwaardelijke toegang bij de toegang tot bedrijfsresources.
+-   **Azure AD-domein toegevoegd en Intune-beheerprogramma:** dit scenario is doorgaans gericht op CYOD-scenario's (Choose Your Own Device) en scenario's met zwervende laptops die maar zelden zijn verbonden met het bedrijfsnetwerk. Het apparaat wordt toegevoegd aan Azure AD en wordt geregistreerd bij Intune, die vervolgens alle afhankelijkheden van on-premises AD en domeincontrollers verwijdert. Dit kan worden gebruikt als een criterium voor voorwaardelijke toegang bij de toegang tot bedrijfsresources.
 
 -   **AD-domein toegevoegd en System Center Configuration Manager:** vanaf de current branch biedt System Center Configuration Manager niet alleen de mogelijkheid om een pc toe te voegen aan een domein, maar beschikt u ook over mogelijkheden voor voorwaardelijke toegang om specifieke nalevingscriteria te evalueren:
 

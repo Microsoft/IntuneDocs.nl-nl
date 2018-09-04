@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 08/14/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: ff2774b76bceeeeaecec7a4dc74876b11706d574
-ms.sourcegitcommit: 56a8a3c8974f54f0f9ecc1e5b43581502ecc348e
+ms.openlocfilehash: 41c5af504bb65a661e55d09d735a78df780deb84
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39614510"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43092172"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,12 +42,21 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook informati
 
 -->   
 
+
+## <a name="week-of-august-27-2018"></a>Week van 27 augustus 2018
+
+### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>VPP-apparaatlicenties gebruiken om de bedrijfsportal vooraf in te richten tijdens DEP-registratie <!-- 1608345 -->
+U kunt nu VPP-apparaatlicenties (Volume Purchase Program) gebruiken om de bedrijfsportal vooraf in te richten tijdens de DEP-registraties (Device Enrollment Program). Om dit te doen, geeft u, wanneer u [een registratieprofiel maakt of bewerkt](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), het VPP-token op dat u wilt gebruiken om de bedrijfsportal te installeren. Controleer of uw token niet verloopt en of u voldoende licenties heeft voor de bedrijfsportal-app. Wanneer het token verloopt of onvoldoende licenties heeft, pusht Intune in plaats daarvan de App Store-bedrijfsportal (deze vraagt om een Apple ID).
+
+
+## <a name="week-of-august-14-2018"></a>Week van 14 augustus 2018
+
+### <a name="macos-support-for-apple-device-enrollment-program----747651---"></a>macOS-ondersteuning voor het Apple Device Enrollment Program <!-- 747651 -->
+Intune ondersteunt nu inschrijving van macOS-apparaten in het Apple Device Enrollment Program (DEP). Zie [MacOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple](device-enrollment-program-enroll-macos.md) voor meer informatie.
+
 ## <a name="week-of-july-23-2018"></a>Week van 23 juli 2018
 
 ### <a name="app-management"></a>Appbeheer
-
-####  <a name="windows-apps-file-extensions----1884873---"></a>Bestandsextensies <!-- 1884873 --> voor Windows-apps
-De beschikbare bestandsextensies voor Windows-apps omvatten nu ook *.msi*, *.appx*, *.appxbundle*, *.msix* en *.msixbundle*. U kunt in Microsoft Intune apps toevoegen via **Mobiele apps** > **Apps** > **Toevoegen**. Het deelvenster **App toevoegen** wordt weergegeven. Hier kunt u het **app-type** selecteren. Selecteer een app waarmee u een app-pakketbestand kunt uploaden, selecteer het **app-pakketbestand** en voer vervolgens een installatiebestand in met de juiste extensie.
 
 #### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>Ondersteuning voor LOB-apps (line-of-business) voor macOS <!-- 1895847 -->
 Met Microsoft Intune kunnen macOS LOB-apps worden geïmplementeerd als **Vereist** of **Beschikbaar met inschrijving**. Eindgebruikers kunnen apps laten implementeren als **Beschikbaar** met behulp van de bedrijfsportal voor macOS of de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
@@ -757,10 +766,10 @@ Als onderdeel van onze inspanning om eindgebruikers meer controle over hun gegev
 
 ## <a name="week-of-march-19-2018"></a>Week van 19 maart 2018
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Alle apparaten exporteren naar CSV-bestanden in Internet Explorer, Microsoft Edge of Chrome <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Alle apparaten exporteren naar CSV-bestanden in Internet Explorer, Edge of Chrome <!-- 2258071 -->
 In **Apparaten** > **Alle apparaten** kunt u de apparaten **Exporteren** naar een lijst met de CSV-indeling. Gebruikers van Internet Explorer (IE) met meer dan 10.000 apparaten kunnen hun apparaten exporteren naar meerdere bestanden. Elk bestand bevat maximaal 10.000 apparaten.
 
-Gebruikers van Microsoft Edge en Chrome met meer dan 30.000 apparaten kunnen hun apparaten exporteren naar meerdere bestanden. Elk bestand bevat maximaal 30.000 apparaten.
+Gebruikers van Edge en Chrome met meer dan 30.000 apparaten kunnen hun apparaten exporteren naar meerdere bestanden. Elk bestand bevat maximaal 30.000 apparaten.
 
 [Apparaten beheren](device-management.md) biedt meer details over wat u kunt doen met apparaten die u beheert.
 
@@ -1129,6 +1138,16 @@ U kunt geweigerde apps opgeven in Intune. Als een app wordt geweigerd, heeft dez
 
 ## <a name="notices"></a>Mededelingen
 
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Onderneem actie: werk in Intune uw wachtwoordinstellingen voor het Android-apparaatbeperkings- of nalevingsbeleid bij
+In Intune wordt het beschikbare wachtwoordtype standaardwaarde voor het apparaat verwijderd voor apparaten met Android 4.4 en hoger. Vanwege verschillen in de Android-platformen en standaardinstellingen voor apparaten wordt dat beleid door het apparaat vaak beschouwd als optioneel. Om verwarring te voorkomen over wanneer deze instelling wordt afgedwongen op Android, wordt deze instelling in een toekomstige release verwijderd uit de gebruikersinterface. 
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+- Als u een wachtwoord op de apparaten wilt verplichten, wordt aangeraden in plaats van de standaardwaarde voor het apparaat de profielen voor het Android-platform te wijzigen om duidelijk te maken wat het vereiste wachtwoordtype is.
+- Als u de gebruiker zelf wilt laten kiezen of deze een wachtwoord instelt, selecteert u de knop Niet geconfigureerd. Als deze instelling vanuit de gebruikersinterface is verwijderd maar de instelling nog is geconfigureerd, wordt u bij de volgende bewerking van het profiel gevraagd een andere waarde dan de standaardwaarde van het apparaat te kiezen.
+Wat moet ik doen om me voor te bereiden op deze wijziging?
+Controleer de wachtwoordinstellingen in uw Android- en Android Enterprise-apparaatbeperkingsbeleid en nalevingsbeleid. Deze zijn opgenomen onder Systeembeveiliging voor Nalevingsbeleid en het onder Apparaatwachtwoord of Werkprofielinstellingen voor Apparaatbeperkingen. In de aanvullende informatie vindt u een koppeling naar meer informatie over en schermopnamen van waar deze instellingen worden geconfigureerd.
+####<a name="additional-information"></a>Aanvullende informatie
+https://aka.ms/PasswordSettings 
+
 ### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Plannen voor wijziging: Wachtwoord wijzigen bij volgende verificatie toegevoegd aan Intune<!-- 1873216 -->
 In de onderhoudsrelease van september wordt de nieuwe Apple-instelling **Wachtwoord wijzigen bij volgende verificatie** geïntegreerd voor apparaten met Mac OS-versies 10.13 en nieuwer. In de huidige situatie (zonder deze instelling) kunnen MDM-providers niet controleren of de wachtwoordcode van het apparaat is gewijzigd, zodat aan het beleid wordt voldaan. Het beleid voor configuratie en naleving van Intune geeft zonder deze instelling alleen aan dat een apparaatwachtwoord voldoet aan het beleid wanneer dit wordt gewijzigd. Wanneer deze nieuwe functie van Apple wordt toegevoegd, krijgen uw macOS-gebruikers een verzoek om hun wachtwoord bij te werken, zelfs als het wachtwoord aan het beleid voldoet.
 
@@ -1171,22 +1190,6 @@ U wordt aangeraden proactief TLS 1.0- en 1.1-afhankelijkheden uit uw omgevingen 
 
 **Aanvullende informatie**: [Intune gaat over op TLS 1.2 voor versleuteling](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
 
-### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>Plannen voor wijziging: nieuwe Windows 10-instelling voor kioskconfiguratie in Intune <!-- 1560072 -->
-De manier waarop u bureaubladen van Windows 10 1709 en hoger (RS3 en hoger) configureert in de Intune-portal van Azure is gewijzigd.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij? 
-Volgens onze gegevens gebruikt u de instelling Windows 10 > Apparaatbeperkingen > Kiosk (preview). Deze instelling wordt in mei gewijzigd in Windows 10 > Apparaatbeperkingen > Kiosk (verouderd) om aan te geven dat deze instelling niet meer wordt aanbevolen. De instelling blijft echter functioneren tot de update van juli naar Intune. Vervolgens wordt de instelling ingesteld als verouderd, waardoor deze niet meer werkt. Als alternatief introduceren wordt in mei een nieuw apparaatconfiguratieprofiel geïntroduceerd: Windows 10 > Kiosk, met de instellingen om kiosken te configureren in Windows 10 RS4 en hoger.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?  
-Wanneer de service-update rond eind mei wordt vrijgegeven, worden instructies verzonden waarmee u kunt testen en controleren of u uw kioskconfiguratie van Windows 10 RS3 naar Windows 10 RS4 kunt migreren. Met deze instructies kunt u uw apparaten als kiosken configureren met het nieuwe apparaatconfiguratieprofiel voor kiosken.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Deze wijziging is van invloed op zowel zelfstandige als hybride klanten (Intune met Configuration Manager) van Intune. Door deze integratie wordt het beheer van uw cloud vereenvoudigd. U kunt groepen, beleidsregels, apps en mobiele apparaten voortaan vanaf één blade in Azure, de blade Intune, beheren.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
-Label Intune als favoriet in plaats van de serviceblade Intune-app-beveiliging en zorg ervoor dat u bekend bent met de werkstroom voor het beleid voor app-beveiliging in de blade Mobiele app in Intune. U wordt slechts tijdelijk omgeleid. De blade App-beveiliging wordt uiteindelijk verwijderd. Alle beleidsregels voor de beveiliging van apps staan al in Intune en u kunt uw beleid voor voorwaardelijke toegang wijzigen aan de hand van de volgende documentatie: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
-
-**Aanvullende informatie**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>Plannen voor wijziging: wijziging in de ondersteuning voor Microsoft Intune App SDK voor Cordova-invoegtoepassing
 Intune beëindigt de ondersteuning voor de [Microsoft Intune App SDK Cordova-invoegtoepassing](app-sdk-cordova.md) op 1 mei 2018. We raden u aan in plaats daarvan de Intune App Wrapping Tool te gebruiken om uw op Cordova gebaseerde apps voor te bereiden op beheerbaarheid en beschikbaarheid in Intune. Zodra deze wijziging is doorgevoerd, wordt de Microsoft Intune APP SDK voor de Cordova-invoegtoepassing niet langer onderhouden en worden er geen updates meer voor gegeven. App-ontwikkelaars kunnen deze invoegtoepassing dan niet langer gebruiken. Intune is van plan apps die met Cordova zijn gebouwd te blijven ondersteunen. Alle apps die zijn gebouwd met Microsoft Intune APP SDK voor de Cordova-invoegtoepassing zullen echter kampen met beperkte functionaliteit in Intune. Nadat u apps hebt verpakt met de Intune App Wrapping Tool, kunnen deze apps zoals u gewend bent voor eindgebruikers worden geïmplementeerd. Voor Android-apps op basis van Cordova die in de Google Play Store worden gepubliceerd, geldt het volgende:

@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 26117a07e0769033dda573882c3853eb0e3921ff
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905237"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40252577"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Web-apps aan Microsoft Intune toevoegen
 
@@ -45,7 +45,11 @@ Voer de volgende stappen uit om een app toe te voegen aan Intune als een snelkop
 6. Selecteer in het deelvenster **App toevoegen** het type **Weblink** in de vervolgkeuzelijst **App-type**.
 7. Selecteer **Configureren**.
 8. Voeg in het deelvenster **App-gegevens** de volgende gegevens toe:
-    - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal moet worden weergegeven.
+    - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal moet worden weergegeven. 
+    
+        > [!NOTE]
+        > Als u de naam van de app wijzigt via Intune Azure Portal nadat u de app hebt geïnstalleerd en geïmplementeerd, kunt u geen beleid meer richten op de app met behulp van opdrachten.
+    
     - **Beschrijving**: voer een beschrijving in voor de app. Deze beschrijving wordt voor gebruikers weergegeven in de bedrijfsportal.
     - **Uitgever**: voer de naam in van de uitgever van deze app.
     - **App-URL**: voer de URL in van de website waarop de app wordt gehost die u wilt toewijzen.

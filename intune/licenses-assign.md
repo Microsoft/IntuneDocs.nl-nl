@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225405"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751647"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Licenties toewijzen aan gebruikers zodat ze kunnen apparaten inschrijven bij Intune
 
@@ -61,7 +61,7 @@ Zie [Overzicht van Schoolgegevens synchroniseren](https://support.office.com/art
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Invloed van gebruikers en apparaatlicenties op toegang tot services
 * Elke **gebruiker** aan wie u een gebruikerslicentie voor software toewijst, kan de online services en bijbehorende software (inclusief System Center-software) openen en gebruiken voor het beheren van toepassingen en maximaal 15 apparaten.
-* Elke **apparaat** waaraan u een apparaatlicentie voor software toewijst, kan de online services en bijbehorende software (inclusief System Center-software) openen en gebruiken voor gebruik door een oneindig aantal gebruikers.
+* U kunt los van gebruikerslicenties voor alle apparaten licenties kopen. Apparaatlicenties hoeven niet te worden toegewezen aan de apparaten. Elk apparaat dat toegang heeft tot en gebruikmaakt van de onlineservices en bijbehorende software (inclusief System Center-software) moet een apparaatlicentie hebben.
 * Als een apparaat wordt gebruikt door meer dan een gebruiker, is voor elke gebruiker een apparaatlicentie voor de software vereist of is voor alle gebruikers een gebruikerslicentie voor software vereist.
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>Inzicht in het type licenties dat u hebt aangeschaft

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a62166792570c5bb81391d05d1cbc3f8486543a4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7faba9a0bfb6f07a80c4c0af947efbca9b33ae03
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022336"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251519"
 ---
 # <a name="whats-conditional-access"></a>Wat is voorwaardelijke toegang?
 
@@ -38,7 +38,7 @@ U kunt voorwaarden opgeven die de toegang tot uw bedrijfsgegevens beperken op ba
 
 ## <a name="conditional-access-with-intune"></a>Voorwaardelijke toegang met Intune
 
-Intune voegt nalevingsbeleid voor mobiele apparaten en app-beheer toe voor de ondersteuning van de EMS Conditional Access-oplossing.
+Voorwaardelijke toegang is een Azure Active Directory-functie die is opgenomen in een Azure Active Directory Premium-licentie. Deze mogelijkheid wordt verbeterd door Intune door het toevoegen van nalevingsbeleid voor mobiele apparaten en beheer van mobiele apps aan de oplossing. 
 
 ![Intune en voorwaardelijke toegang bij het gebruik van EMS](./media/intune-with-ca-1.png)
 

@@ -15,23 +15,23 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8b647e7b2a4d252041e60792b6fc49df8b961066
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37967231"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251664"
 ---
-# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid van de app Managed Browser en Microsoft Intune
+# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid voor beveiligde browsers met Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-De app Managed Browser is een app om te browsen op het web die u voor gebruik in uw organisatie kunt downloaden in vrij toegankelijke App Stores. Als u Managed Browser configureert met Intune, biedt de app deze mogelijkheden:
+Beveiligde browsers omvatten Microsoft Edge en Intune Managed Browser. Edge en Managed Browser zijn apps om te browsen op internet die u voor gebruik in uw organisatie kunt downloaden in publieke app stores. Als u deze configureert met Intune, bieden beveiligde browsers de volgende mogelijkheden:
 - Toegang tot bedrijfssites en SaaS-apps met eenmalige aanmelding via de MyApps-service, met beveiliging van de webgegevens.
 - Vooraf geconfigureerd met een lijst met URL's en domeinen om te beperken naar welke sites de gebruiker in de zakelijke context kan navigeren.
 - Vooraf geconfigureerd met een startpagina en bladwijzers die u opgeeft.
 
-Aangezien deze app is geïntegreerd met de Intune SDK, kunt u ook beleid voor app-beveiliging toepassen op de app, waaronder:
+Aangezien Edge en Managed Browser zijn geïntegreerd met de Intune SDK, kunt u ook beleid voor app-beveiliging toepassen op de apps, waaronder:
 - Beperkingen voor het knippen, kopiëren en plakken van gegevens
 - Voorkomen dat er schermopnamen worden gemaakt
 - Afdwingen dat koppelingen naar inhoud die gebruikers selecteren uitsluitend worden geopend in andere beheerde apps.
@@ -45,11 +45,11 @@ U kunt deze instellingen toepassen op:
 - Niet-beheerde apparaten
 
 Als gebruikers Managed Browser vanuit de app store installeren en deze niet door Intune wordt beheerd, kunt u deze gebruiken als een eenvoudige webbrowser met ondersteuning voor eenmalige aanmelding via de site Microsoft MyApps. Gebruikers worden direct doorgestuurd naar de MyApps-website, waar alle ingerichte SaaS-toepassingen worden weergegeven.
-Hoewel Managed Browser niet wordt beheerd door Intune, kan de app geen gegevens gebruiken uit andere apps die wel door Intune worden beheerd. 
+Omdat Managed Browser of Edge niet worden beheerd door Intune, kunnen de apps geen gegevens gebruiken uit andere apps die wel door Intune worden beheerd. 
 
 Managed Browser biedt geen ondersteuning voor versie 3 van het cryptografische protocol Secure Sockets Layer (SSLv3).
 
-U kunt beleidsregels voor Managed Browser maken voor de volgende apparaattypen:
+U kunt beleidsregels voor beveiligde browsers maken voor de volgende typen apparaten:
 
 -   Apparaten met Android 4 en hoger
 
@@ -60,9 +60,9 @@ U kunt beleidsregels voor Managed Browser maken voor de volgende apparaattypen:
 >Oudere versies van Android en iOS kunnen Managed Browser nog steeds gebruiken, maar er kunnen geen nieuwe versies van de app op worden geïnstalleerd en kan er dus geen gebruik worden gemaakt van alle mogelijkheden van de app. U wordt aangeraden deze apparaten bij te werken tot een ondersteunde versie van het besturingssysteem.
 
 
-Managed Browser van Intune ondersteunt het openen van webinhoud van [Microsoft Intune-toepassingspartners](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+Microsoft Edge en Intune Managed Browser ondersteunen het openen van webinhoud van [Microsoft Intune-toepassingspartners](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
-## <a name="conditional-access-for-the-intune-managed-browser"></a>Voorwaardelijke toegang voor Intune Managed Browser
+## <a name="conditional-access-for-protected-browsers"></a>Voorwaardelijke toegang voor de beveiligde browsers
 
 Managed Browser is nu een goedgekeurde client-app voor voorwaardelijke toegang. Dit betekent dat u de mobiele browsertoegang kunt beperken tot met Azure AD verbonden web-apps waarbij gebruikers alleen Managed Browser kunnen gebruiken en toegang vanaf andere niet-beveiligde browsers zoals Safari of Chrome wordt geblokkeerd. Deze beveiliging kan worden toegepast op Azure-resources zoals Exchange Online en SharePoint Online, de Office-portal en zelfs on-premises sites die u beschikbaar hebt gemaakt voor externe gebruikers via de [Azure AD-toepassingsproxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
 
@@ -104,7 +104,7 @@ Voor eenmalige aanmelding in Intune Managed Browser moet uw apparaat zijn geregi
 > [!NOTE]
 > Apparaatregistratie is eenvoudig inchecken met de Azure AD-service. Dit vereist geen volledige apparaatinschrijving en geeft IT geen extra bevoegdheden op het apparaat.
 
-## <a name="create-a-managed-browser-app-configuration"></a>Een configuratie voor de Managed browser-app maken
+## <a name="create-a-protected-browser-app-configuration"></a>Een configuratie voor de beveiligde browser-app maken
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
@@ -112,7 +112,7 @@ Voor eenmalige aanmelding in Intune Managed Browser moet uw apparaat zijn geregi
 4.  Kies op de blade **App-configuratiebeleid** **Toevoegen**.
 5.  Geef op de blade **Configuratiebeleid toevoegen** een **naam** en een optionele **beschrijving** op voor de app-configuratie-instellingen.
 6.  Kies voor **Type apparaatregistratie** **Beheerde apps**.
-7.  Kies **Vereiste app selecteren** en kies vervolgens op de blade **Doel-apps** **Managed Browser** voor iOS, voor Android of voor beide besturingssystemen.
+7.  Kies **Vereiste app selecteren** en kies vervolgens op de blade **Doel-apps** **Managed Browser** en/of **Edge** voor iOS, voor Android of voor beide besturingssystemen.
 8.  Kies **OK** om terug te keren naar de blade **Configuratiebeleid toevoegen**.
 9.  Kies **Configuratie-instellingen**. Op de blade **Configuratie** definieert u sleutel- en waardeparen voor configuraties voor Managed Browser. Gebruik de secties verderop in dit artikel voor meer informatie over de verschillende sleutel- en waardeparen die u kunt definiëren.
 10. Kies **OK** als u klaar bent.
@@ -124,7 +124,7 @@ Voor eenmalige aanmelding in Intune Managed Browser moet uw apparaat zijn geregi
 
 ## <a name="assign-the-configuration-settings-you-created"></a>De configuratie-instellingen toewijzen die u hebt gemaakt
 
-U wijst de instellingen aan Azure AD-groepen gebruikers toe. Als deze gebruiker de app Managed Browser heeft geïnstalleerd, wordt de app beheerd door de instellingen die u hebt opgegeven.
+U wijst de instellingen aan Azure AD-groepen gebruikers toe. Als deze gebruiker de beveiligde browser-app heeft geïnstalleerd waarop het beleid is gericht, wordt de app beheerd door de instellingen die u hebt opgegeven.
 
 1. Kies op de blade **Mobiele apps** van het Intune MAM-dashboard de optie **App-configuratiebeleid**.
 2. Selecteer in de lijst met app-configuraties de configuratie die u wilt toewijzen.
@@ -132,61 +132,64 @@ U wijst de instellingen aan Azure AD-groepen gebruikers toe. Als deze gebruiker 
 4. Selecteer op de blade **Toewijzingen** de Azure AD-groep waaraan u de app-configuratie wilt toewijzen en kies vervolgens **OK**.
 
 
-## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>Application Proxy-instellingen configureren voor Managed Browser
+## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>Application Proxy-instellingen configureren voor beveiligde browsers
 
-De Intune-app Managed Browser en de [Azure AD-toepassingsproxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) kunnen samen worden gebruikt om de volgende scenario's te ondersteunen voor gebruikers van iOS- en Android-apparaten:
+Microsoft Edge en Intune Managed Browser en de [Azure AD-toepassingsproxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) kunnen samen worden gebruikt om de volgende scenario's te ondersteunen voor gebruikers van iOS- en Android-apparaten:
 
-- Een gebruiker downloadt de Microsoft Outlook-app en meldt zich hierbij aan. Het beleid voor app-beveiliging van Intune wordt automatisch toegepast. Dit houdt in dat opgeslagen gegevens worden versleuteld en dat wordt voorkomen dat de gebruiker bestanden van het bedrijf overbrengt naar niet-beheerde apps of locaties op het apparaat. Wanneer de gebruiker vervolgens in Outlook klikt op een koppeling naar een intranetsite, kunt u instellen dat de koppeling wordt geopend in de Managed Browser-app en niet in een andere browser. De Managed Browser-app herkent dat deze intranetsite via de toepassingsproxy beschikbaar is gesteld aan de gebruiker. De gebruiker wordt automatisch omgeleid via de toepassingsproxy, voor meervoudige verificatie en voorwaardelijke toegang, voordat de intranetsite wordt bereikt. Deze site, die eerder niet bereikbaar was omdat de gebruiker extern was, is nu toegankelijk en de koppeling in Outlook werkt zoals verwacht.
-- Een externe gebruiker opent de app Managed Browser en gaat naar een intranetsite met behulp van de interne URL. De Managed Browser-app herkent dat deze intranetsite via de toepassingsproxy beschikbaar is gesteld aan de gebruiker. De gebruiker wordt automatisch omgeleid via de toepassingsproxy, voor meervoudige verificatie en voorwaardelijke toegang, voordat de intranetsite wordt bereikt. Deze site, die eerder niet bereikbaar was omdat de gebruiker extern was, is nu toegankelijk.
+- Een gebruiker downloadt de Microsoft Outlook-app en meldt zich hierbij aan. Het beleid voor app-beveiliging van Intune wordt automatisch toegepast. Dit houdt in dat opgeslagen gegevens worden versleuteld en dat wordt voorkomen dat de gebruiker bestanden van het bedrijf overbrengt naar niet-beheerde apps of locaties op het apparaat. Wanneer de gebruiker vervolgens in Outlook klikt op een koppeling naar een intranetsite, kunt u instellen dat de koppeling alleen kan worden geopend in een beveiligde browser. De beveiligde browser herkent dat deze intranetsite via de toepassingsproxy beschikbaar is gesteld aan de gebruiker. De gebruiker wordt automatisch omgeleid via de toepassingsproxy, voor meervoudige verificatie en voorwaardelijke toegang, voordat de intranetsite wordt bereikt. Deze site, die eerder niet bereikbaar was omdat de gebruiker extern was, is nu toegankelijk en de koppeling in Outlook werkt zoals verwacht.
+- Een externe gebruiker opent de beveiligde browser en gaat naar een intranetsite via de interne URL. De beveiligde browser herkent dat deze intranetsite via de toepassingsproxy beschikbaar is gesteld aan de gebruiker. De gebruiker wordt automatisch omgeleid via de toepassingsproxy, voor meervoudige verificatie en voorwaardelijke toegang, voordat de intranetsite wordt bereikt. Deze site, die eerder niet bereikbaar was omdat de gebruiker extern was, is nu toegankelijk.
 
 ### <a name="before-you-start"></a>Voordat u begint
 
 - Stel de interne toepassingen in via de toepassingsproxy van Azure AD.
     - Raadpleeg [deze documentatie](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) voor het configureren van de toepassingsproxy en het publiceren van toepassingen. 
 - U moet minimaal versie 1.2.0 van de Managed Browser-app gebruiken.
-- Er is een [beleid voor app-beveiliging van Intune]( app-protection-policy.md) toegewezen aan de Managed Browser-app.
+- Er is een [beleid voor app-beveiliging van Intune]( app-protection-policy.md) toegewezen aan de Managed Browser- of Edge-app.
 
     > [!NOTE]
-    > Het kan tot 24 uur duren voordat bijgewerkte omleidingsgegevens voor de toepassingsproxy worden doorgevoerd in Managed Browser.
+    > Het kan tot 24 uur duren voordat bijgewerkte omleidingsgegevens voor de toepassingsproxy worden doorgevoerd in Managed Browser en Edge.
 
 
-#### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>Stap 1: automatische omleiding naar Managed Browser vanuit Outlook inschakelen
+#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>Stap 1: schakel automatische omleiding naar een beveiligde browser vanuit Outlook in.
 Outlook moet zijn geconfigureerd met een beleid voor app-beveiliging waarmee de instelling **Webinhoud beperken voor weergave in de Managed Browser** beschikbaar komt.
 
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>Stap 2: Een app-configuratiebeleid toewijzen voor de Managed Browser-app
-Met deze procedure wordt de Managed Browser-app geconfigureerd voor omleiding via een proxy. Geef met behulp van de procedure voor het maken van een app-configuratie voor Managed Browser het volgende sleutel- en waardepaar op:
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Stap 2: wijs een app-configuratiebeleid toe voor de beveiligde browser.
+Met deze procedure wordt de Managed Browser- of Edge-app geconfigureerd voor omleiding via een proxy. Geef met behulp van de procedure voor het maken van een app-configuratie voor Edge of Managed Browser het volgende sleutel- en waardepaar op:
 
 | Sleutel                                                             | Waarde    |
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-Zie de blogpost voor Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Beter samen: Intune en Azure Active Directory werken samen om de toegang voor gebruikers te verbeteren) voor meer informatie over hoe Managed Browser en de Azure AD-toepassingsproxy samen kunnen worden gebruikt voor een naadloze (en beveiligde) toegang tot on-premises web-apps.
+Zie de blogpost voor Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Beter samen: Intune en Azure Active Directory werken samen om de toegang voor gebruikers te verbeteren) voor meer informatie over hoe Managed Browser, Edge en de Azure AD-toepassingsproxy samen kunnen worden gebruikt voor een naadloze (en beveiligde) toegang tot on-premises web-apps.
 
-## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>Startpagina configureren voor Managed Browser
+> [!NOTE]
+> Voor Edge wordt hetzelfde sleutel- en waardepaar gebruikt als voor Managed Browser. 
 
-Met deze instelling kunt u de startpagina configureren die gebruikers zien wanneer ze de app Managed Browser starten of een nieuw tabblad maken. Geef met behulp van de procedure voor het maken van een app-configuratie voor Managed Browser het volgende sleutel- en waardepaar op:
+## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Startpagina configureren voor een beveiligde browser
+
+Met deze instelling kunt u de startpagina configureren die gebruikers zien wanneer ze de een beveiligde browser starten of een nieuw tabblad maken. Geef met behulp van de procedure voor het maken van een app-configuratie voor Edge of Managed Browser het volgende sleutel- en waardepaar op:
 
 |                                Sleutel                                |                                                           Waarde                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Geef een geldige URL op. Uit veiligheidsoogpunt worden onjuiste URL's geblokkeerd.<br>Voorbeeld: `<https://www.bing.com>` |
 
-## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Bladwijzers configureren voor Managed Browser
+## <a name="how-to-configure-bookmarks-for-a-protected-browser"></a>Bladwijzers configureren voor een beveiligde browser
 
-Met deze instelling kunt u een set bladwijzers configureren die beschikbaar zijn voor gebruikers van Managed Browser.
+Met deze instelling kunt u een set bladwijzers configureren die beschikbaar zijn voor gebruikers van Edge of Managed Browser.
 
 - Deze bladwijzers kunnen niet worden verwijderd of gewijzigd door gebruikers.
 - Deze bladwijzers worden bovenaan de lijst weergegeven. Bladwijzers die gebruikers maken, worden onder deze bladwijzers weergegeven.
 - Als u App Proxy-omleiding hebt ingeschakeld, kunt u App Proxy-webapps toevoegen met behulp van hun interne of externe URL.
 
-Geef met behulp van de procedure voor het maken van een app-configuratie voor Managed Browser het volgende sleutel- en waardepaar op:
+Geef met behulp van de procedure voor het maken van een app-configuratie voor Edge of Managed Browser het volgende sleutel- en waardepaar op:
 
 |                                Sleutel                                 |                                                                                                                                                                                                                                                         Waarde                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | De waarde voor deze configuratie is een lijst met bladwijzers. Elke bladwijzer bestaat uit de titel en de URL van de bladwijzer. Scheid de titel en een URL met het teken <strong>&#124;</strong>.<br><br>Voorbeeld:<br> 'Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
 
-## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Toegestane en geblokkeerde URL's voor Managed Browser opgeven
+## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>Toegestane en geblokkeerde URL's voor een beveiligde browser opgeven
 
-Geef met behulp van de procedure voor het maken van een app-configuratie voor Managed Browser het volgende sleutel- en waardepaar op:
+Geef met behulp van de procedure voor het maken van een app-configuratie voor Edge of Managed Browser het volgende sleutel- en waardepaar op:
 
 |Sleutel|Waarde|
 |-|-|

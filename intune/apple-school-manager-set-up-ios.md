@@ -15,12 +15,12 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31d09c8c97da823ec40785a6db42df64056277fb
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.openlocfilehash: 59449efd592f3c47bdf2350b495f81c23f442999
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164549"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751799"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Inschrijving van iOS-apparaten inschakelen met Apple School Manager
 
@@ -94,8 +94,13 @@ Na installatie van het token kunt u een inschrijvingsprofiel voor Apple School-a
 
     ![Verificatie met de bedrijfsportal.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
-    >[!NOTE]
-    >Meervoudige verificatie (MFA) werkt niet tijdens inschrijvingen op Apple School Manager-apparaten als u profieleigenschappen hebt ingesteld op **Gebruiken met gebruikersaffiniteit** en u geen bedrijfsportal gebruikt. Na de inschrijving werkt MFA zoals verwacht op deze apparaten. Op apparaten wordt de gebruiker niet gevraagd het wachtwoord te wijzigen als ze zich de eerste keer aanmelden. Daarnaast wordt gebruikers met verlopen wachtwoorden niet gevraagd hun wachtwoord opnieuw in te stellen tijdens de inschrijving. Deze gebruikers moeten het wachtwoord vanaf een ander apparaat opnieuw instellen.
+    > [!NOTE]
+    > Als u een van de volgende handelingen wilt uitvoeren, stelt u **Verifiëren met bedrijfsportal in plaats van Apple-configuratieassistent** in op **Ja**.
+    >    - meervoudige verificatie gebruiken
+    >    - gebruikers vragen het wachtwoord te wijzigen als ze zich de eerste keer aanmelden
+    >    - gebruikers vragen om hun verlopen wachtwoorden tijdens het inschrijven te herstellen
+    >
+    > Deze worden niet ondersteund bij het verifiëren met Apple-configuratieassistent.
 
 6. Kies **Instellingen voor apparaatbeheer** en selecteer of u wilt dat apparaten die dit profiel gebruiken, onder supervisie worden gesteld.
     Met apparaten **onder supervisie** krijgt u meer beheeropties en de activeringsvergrendeling is standaard uitgeschakeld. Microsoft raadt het gebruik van DEP aan als mechanisme voor het inschakelen van de supervisiemodus, met name voor organisaties die veel iOS-apparaten implementeren.

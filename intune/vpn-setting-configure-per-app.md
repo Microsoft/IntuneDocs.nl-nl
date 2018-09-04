@@ -14,18 +14,18 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
-ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
+ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
+ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753889"
+ms.lasthandoff: 08/15/2018
+ms.locfileid: "40251690"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>VPN per app instellen in Intune voor iOS-apparaten
 
 U kunt specificeren welke beheerde apps uw virtueel particulier netwerk (VPN) mogen gebruiken op iOS-apparaten die met Intune worden beheerd. Wanneer u in Intune een VPN per app maakt, maakt een eindgebruiker bij het openen van zakelijke documenten automatisch verbinding via uw VPN.
 
-Per-App VPN is momenteel beschikbaar voor de volgende providers:
+VPN per app is momenteel beschikbaar voor de volgende providers:
 
  - Checkpoint Remote Access VPN
  - Cisco AnyConnect
@@ -35,7 +35,7 @@ Per-App VPN is momenteel beschikbaar voor de volgende providers:
  - SonicWall
  - Palo Alto Networks GlobalProtect
 
-## <a name="prerequisites-for-per-app-vpn"></a>Vereisten voor Per-App VPN
+## <a name="prerequisites-for-per-app-vpn"></a>Vereisten voor VPN per app
 
 > [!IMPORTANT]
 > Uw VPN-leverancier heeft wellicht andere specifieke vereisten voor Per-App VPN, zoals bepaalde hardware of -licentieverlening. Raadpleeg de documentatie en zorg ervoor dat u voldoet aan deze vereisten voordat u Per-App VPN in Intune instelt.
@@ -109,9 +109,9 @@ Op basis van het vertrouwde certificaatprofiel vertrouwt iOS automatisch de VPN-
 
     ![Een SCEP-certificaatprofiel maken](./media/vpn-per-app-create-scep-cert.png)
 
-## <a name="create-a-per-app-vpn-profile"></a>Een VPN per app-profiel maken
+## <a name="create-a-per-app-vpn-profile"></a>Een profiel voor VPN per app maken
 
-Het VPN-profiel bevat het SCEP-certificaat met de referenties van de client, de verbindingsgegevens voor de VPN-verbinding en de VPN per app-vlag voor het inschakelen van de functie VPN per app voor gebruik door de iOS-toepassing.
+Het VPN-profiel bevat het SCEP-certificaat met de referenties van de client, de verbindingsgegevens voor de VPN-verbinding en de markering voor VPN per app voor het inschakelen van de functie VPN per app voor gebruik door de iOS-toepassing.
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
@@ -136,7 +136,7 @@ Het VPN-profiel bevat het SCEP-certificaat met de referenties van de client, de 
 6. Klik op **OK**.
 7. Klik op **Maken**.
 
-    ![Een VPN per app-profiel maken](./media/vpn-per-app-create-vpn-profile.png)
+    ![Een profiel voor VPN per app maken](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Een app aan het VPN-profiel koppelen
@@ -145,21 +145,32 @@ Na het toevoegen van uw VPN-profiel moet u de app en de Azure AD-groep (Microsof
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-2. Kies **Mobiele apps**.
-3. Klik op **Apps**.
-4. Selecteer de app in de lijst met apps.
-5. Klik op **Toewijzingen**.
-6. Klik op **Groep toevoegen**.
-7. Selecteer **Vereist** bij **Toewijzingstype** in het deelvenster **Groep toevoegen**.
-6. Selecteer de groep die u eerder hebt gedefinieerd en selecteer **Deze app vereist maken**.
-8. Selecteer uw VPN-definitie voor de **VPN**.
+3. Kies **Mobiele apps**.
+4. Klik op **Apps**.
+5. Selecteer de app in de lijst met apps.
+6. Klik op **Toewijzingen**.
+7. Klik op **Groep toevoegen**.
+8. Selecteer **Vereist** bij **Toewijzingstype** in het deelvenster **Groep toevoegen**.
+9. Selecteer de groep die u eerder hebt gedefinieerd en selecteer **Deze app vereist maken**.
+10. Selecteer uw VPN-definitie voor de **VPN**.
  
     > [!NOTE]  
     > Soms duurt het een minuutje voordat de VPN-definitie de waarde heeft opgehaald. Wacht 3 tot 5 minuten voordat u op **Opslaan** klikt.
 
-9. Klik op **OK** en op **Opslaan**.
+11. Klik op **OK** en op **Opslaan**.
 
     ![Een app aan het VPN koppelen](./media/vpn-per-app-app-to-vpn.png)
+
+Een koppeling tussen een app en een profiel wordt verwijderd wanneer het apparaat de volgende keer wordt ingecheckt als aan de volgende voorwaarden wordt voldaan:
+- De app is het doel van vereiste installatie.
+- Zowel het profiel als de app zijn gericht op dezelfde groep.
+- U kunt de configuratie van VPN per app verwijderen uit de app-toewijzing.
+
+Een koppeling tussen een app en een profiel blijft bestaan totdat de eindgebruiker opnieuw installeren vanuit de bedrijfsportal aanvraagt als aan de volgende voorwaarden is voldaan:
+- De app is het doel van de intentie beschikbare installatie.
+- Zowel het profiel als de app zijn gericht op dezelfde groep.
+- De eindgebruiker heeft installatie van de app aangevraagd vanuit de bedrijfsportal. Hierdoor worden de app en het profiel op het apparaat geïnstalleerd.
+- U kunt de configuratie van VPN per app verwijderen uit de app-toewijzing.
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>De verbinding controleren op het iOS-apparaat
 
@@ -177,7 +188,7 @@ Wanneer uw VPN per app is geconfigureerd en aan uw app is gekoppeld, controleert
     - Pulse Secure
     - SonicWall Mobile Connect
 
-### <a name="connect-using-the-per-app-vpn"></a>Verbinding maken met behulp van VPN per app
+### <a name="connect-using-the-per-app-vpn"></a>Verbinding maken via VPN per app
 
 Controleer de zero-touch-ervaring door verbinding te maken zonder dat u de VPN-verbinding hoeft te selecteren of uw referenties hoeft te typen. De zero-touch-ervaring betekent:
 
@@ -191,7 +202,7 @@ Controleer de verbinding op een iOS-apparaat.
 2. Tik op **Verbinding maken**.  
 U wordt zonder extra prompts met het VPN verbonden.
 
-<!-- ## Troubleshooting the Per-App VPN
+<!-- ## Troubleshooting the per-app VPN
 
 The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
 

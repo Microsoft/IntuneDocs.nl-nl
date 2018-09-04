@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254532"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40252446"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -172,19 +172,14 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 
 3. Kies **Akkoord** om de gebruiksrechtovereenkomst te accepteren. Hiermee wordt het pakket aan uw computer gekoppeld.
 
-4.  Open de map **IntuneMAMPackager** en sla de inhoud ervan op uw Mac OS-computer op. U kunt de App Wrapping Tool nu gaan uitvoeren.
-
-> [!NOTE]
-> De Intune MAM-pakketbouwer kan afzonderlijk aan uw macOS-computer worden gekoppeld en kan resulteren in de foutmelding 'bestand niet gevonden' wanneer wrappingopdrachten worden uitgevoerd. Door de inhoud van de map IntuneMAMPackager te verplaatsen, kan het pad naar de pakketbouwer tijdens de wrapping worden gevonden.
-
 ## <a name="run-the-app-wrapping-tool"></a>De App Wrapping Tool uitvoeren
 
 ### <a name="use-terminal"></a>Terminal gebruiken
 
-Open het Mac OS Terminal-programma en navigeer naar de map waarin u de bestanden van de App Wrapping Tool hebt opgeslagen. Het uitvoerbare programma heet IntuneMAMPackager en bevindt zich in IntuneMAMPackager/Contents/MacOS. Voer de opdracht als volgt uit:
+Open macOS Terminal en voer de volgende opdracht uit:
 
 ```
-./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+/Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
 > [!NOTE]
@@ -405,6 +400,29 @@ Gebruik de volgende aanbevolen procedures voor beveiliging en privacy wanneer u 
 -   iOS-apps die een dialoogvenster voor het uploaden van bestanden bevatten, kunnen gebruikers toestaan om beperkingen voor knippen, kopiëren en plakken die gelden voor de app, te omzeilen. Zo kan een gebruiker het dialoogvenster voor het uploaden van bestanden bijvoorbeeld gebruiken om een schermopname van de app-gegevens te uploaden.
 
 -   Wanneer u de documentenmap op uw apparaat bewaakt vanuit een verpakte app, ziet u mogelijk een map met de naam .msftintuneapplauncher. Als deze map wordt gewijzigd of verwijderd, kan dit van invloed zijn op de goede werking van beperkte apps.
+
+## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Intune App Wrapping Tool voor iOS met Citrix MDX mVPN
+Deze functie is een integratie met de Citrix MDX-app-wrapper voor iOS. De integratie is gewoon een extra, optionele opdrachtregelmarkering, `-citrix` voor de algemene Intune App Wrapping Tools.
+
+### <a name="requirements"></a>Vereisten
+
+Als u de markering `-citrix` wilt gebruiken, moet u ook de [Citrix MDX-app-wrapper voor iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) op hetzelfde macOS-apparaat installeren. De downloads bevinden zich op [Citrix XenMobile Downloads](https://www.citrix.com/downloads/xenmobile/) en zijn pas beschikbaar voor Citrix-klanten nadat deze zich hebben aangemeld. Zorg ervoor dat deze is geïnstalleerd op de standaardlocatie: `/Applications/Citrix/MDXToolkit`. 
+
+> [!NOTE] 
+> Ondersteuning voor integratie van Intune en Citrix is beperkt tot apparaten met iOS 10+.
+
+### <a name="use-the--citrix-flag"></a>De markering `-citrix` gebruiken
+Voer gewoon uw algemene app-wrapping-opdracht uit waaraan de markering `-citrix` is toegevoegd. De markering `-citrix` accepteert momenteel geen argumenten.
+
+**Gebruiksindeling**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
+```
+
+**Voorbeeldopdracht**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
+```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>Logboeken voor uw ingepakte toepassingen ophalen
 Gebruik de volgende stappen om logboeken op te halen voor uw ingepakte toepassingen tijdens het oplossen van problemen.

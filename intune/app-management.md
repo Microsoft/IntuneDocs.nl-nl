@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906104"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255375"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
@@ -38,23 +38,22 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 
 ## <a name="app-management-capabilities-by-platform"></a>App-beheermogelijkheden per platform
 
-||||||
-|-|-|-|-|-|
-| |Android|iOS|Windows Phone 8.1|Windows 10|
-|Apps toevoegen en aan apparaten en gebruikers toewijzen|Ja|Ja|Ja|Ja|
-|Toewijzen van apps aan apparaten die niet zijn geregistreerd met Intune|Ja|Ja|Nee|Nee|
-|Beleidsregels voor app-configuratie gebruiken om het opstartgedrag van apps te beheren|Nee|Ja|Nee|Nee|
-|Gebruik beleid voor de inrichting van mobiele apps om verlopen apps te vernieuwen|Nee|Ja|Nee|Nee|
-|Bedrijfsgegevens in apps beveiligen met app-beveiligingsbeleid|Ja|Ja|Nee|Nee<sup>1</sup>|
-|Alleen zakelijke gegevens verwijderen uit een geïnstalleerde app (app selectief wissen)|Ja|Ja|Ja|Ja|
-|App-toewijzingen controleren|Ja|Ja|Ja|Ja|
-|Apps die in een app-winkel zijn gekocht via een volume-aankoopprogramma, toewijzen en bijhouden|Nee|Nee|Nee|Ja|
-|Verplichte installatie van apps op apparaten (vereist)<sup>2</sup>|Ja|Ja|Ja|Ja|
-|Optionele installatie op apparaten via de bedrijfsportal (beschikbare installatie)|Ja|Ja|Ja|Ja|
-|Installatiesnelkoppeling naar een app op het web (webkoppeling)|Ja|Ja|Ja|Ja|
-|Interne apps (Line-Of-Business-apps)|Ja|Ja|Nee|Ja|
-|Apps uit een store|Ja|Ja|Ja|Ja|
-|Apps bijwerken|Ja|Ja|Ja|Ja|
+|  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
+| Apps toevoegen en aan apparaten en gebruikers toewijzen | Ja | Ja | Ja | Ja | Ja |
+| Apps toewijzen aan apparaten die niet zijn geregistreerd met Intune | Ja | Ja | Nee | Nee | Nee |
+| Beleidsregels voor app-configuratie gebruiken om het opstartgedrag van apps te beheren | Nee | Ja | Nee | Nee | Nee |
+| Beleid gebruiken voor de inrichting van mobiele apps om verlopen apps te vernieuwen | Nee | Ja | Nee | Nee | Nee |
+| Bedrijfsgegevens in apps beveiligen met app-beveiligingsbeleid | Ja | Ja | Nee | Nee1 | Nee |
+| Alleen zakelijke gegevens verwijderen uit een geïnstalleerde app (app selectief wissen) | Ja | Ja | Nee | Ja | Ja |
+| App-toewijzingen controleren | Ja | Ja | Ja | Ja | Ja |
+| Apps die in een app-winkel zijn gekocht via een volumeaankoopprogramma, toewijzen en bijhouden | Nee | Nee | Nee | Ja | Nee |
+| Verplichte installatie van apps op apparaten (vereist)2 | Ja | Ja | Ja | Ja | Ja |
+| Optionele installatie op apparaten via de bedrijfsportal (beschikbare installatie) | Ja | Ja | Ja | Ja | Ja |
+| Installatiesnelkoppeling naar een app op internet (webkoppeling) | Ja | Ja | Ja | Ja | Ja |
+| Interne apps (Line-Of-Business-apps) | Ja | Ja | Ja | Ja | Nee |
+| Apps uit een store | Ja | Ja | Nee | Ja | Ja |
+| Apps bijwerken | Ja | Ja | Nee | Ja | Ja |
 
 <sup>1</sup> U kunt gebruikmaken van [Windows Information Protection](windows-information-protection-configure.md) om apps op apparaten met Windows 10 te beveiligen.
 
@@ -95,8 +94,8 @@ Zie [Apps beheren](app-management.md) voor meer informatie over deze sectie.
 - **App-licenties**: apps die in de app-stores zijn gekocht via een volume-aankoopprogramma weergeven, toewijzen en bewaken. Zie voor meer informatie:
     - [iOS-apps die zijn gekocht via het volume-aankoopprogramma (VPP)](vpp-apps-ios.md).
     - [Microsoft Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](windows-store-for-business.md).
-- **Gevonden apps**: hier worden alle apps weergegeven die zijn toegewezen door Intune en op een apparaat zijn geïnstalleerd.
-- **Installatiestatus van de app**: hier wordt de status weergegeven van een app-toewijzing die u hebt gemaakt.
+- **Gevonden apps**: hier worden alle apps weergegeven die zijn toegewezen door Intune en op een apparaat zijn geïnstalleerd. Zie [App-gegevens en -toewijzingen controleren met Microsoft Intune](apps-monitor.md#device-and-user-status-graphs) voor meer informatie.
+- **Installatiestatus van de app**: hier wordt de status weergegeven van een app-toewijzing die u hebt gemaakt. Zie [App-gegevens en -toewijzingen controleren met Microsoft Intune](apps-monitor.md#device-and-user-status-graphs) voor meer informatie.
 - **Status van de app-beveiliging**: hier wordt de status weergegeven van een app-beveiligingsbeleid voor een gebruiker die u selecteert.
 - **Auditlogboeken**: hier worden activiteiten door alle IT-beheerders voor de Intune-app weergegeven.
 

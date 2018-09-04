@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321285"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40251518"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune
 
@@ -129,6 +129,9 @@ Overweeg de volgende punten voordat u begint met het toevoegen en toewijzen van 
 - Wanneer u een app vanuit een App Store toevoegt en toewijst, moeten uw gebruikers beschikken over een account bij die store om de app te kunnen installeren.
 - Sommige apps of items die u toewijst, zijn mogelijk afhankelijk van ingebouwde iOS-apps. Als u bijvoorbeeld een boek uit de iOS Store toewijst, moet de app iBooks op het apparaat staan. Als u de ingebouwde app iBooks hebt verwijderd, kunt u Intune niet gebruiken om dit te herstellen.
 
+> [!IMPORTANT]
+> Als u de naam van de app wijzigt via Intune Azure Portal nadat u de app hebt geïnstalleerd en geïmplementeerd, kunt u geen beleid meer richten op de app met behulp van opdrachten.
+
 ## <a name="cloud-storage-space"></a>Cloudopslag
 Alle apps die u maakt met het installatietype van het software-installatieprogramma (bijvoorbeeld een Line-Of-Business-app), worden verpakt en geüpload naar Intune-cloudopslag. Een proefabonnement op Intune omvat 2 GB (gigabyte) cloudopslag, die wordt gebruikt voor het opslaan van beheerde apps en updates. De totale hoeveelheid opslagruimte wordt niet beperkt met een volledig abonnement.
 
@@ -170,6 +173,10 @@ Intune zal een vereiste app op basis van de volgende voorwaarden automatisch opn
 - Als de installatie van een vereiste app is mislukt of als de app niet op het apparaat aanwezig is, evalueert Intune de naleving en wordt de app opnieuw geïnstalleerd zodra deze planning is verstreken.  
 - Een beheerder geeft voor een gebruikersgroep aan dat een app beschikbaar is en de eindgebruiker installeert de app vanuit de bedrijfsportal op het apparaat. Later zal de beheerder de app bijwerken van v1 naar v2. Intune werkt de app bij zodra deze planning is verstreken, mits eerdere versies van de app nog steeds op het apparaat aanwezig zijn.
 - Als de beheerder een verwijderintentie implementeert en de app op het apparaat aanwezig is maar niet kan worden verwijderd, evalueert Intune de naleving en wordt de app verwijderd zodra deze planning is verstreken.   
+
+## <a name="app-installation-errors"></a>App-installatiefouten
+
+Zie [App-installatiefouten](troubleshoot-app-install.md#app-installation-errors) voor meer informatie over installatiefouten bij Intune-apps.
 
 ## <a name="next-steps"></a>Volgende stappen
 

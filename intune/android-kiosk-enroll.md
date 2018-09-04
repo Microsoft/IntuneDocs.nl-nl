@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212032"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903140"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Inschrijving van kioskapparaten voor Android Enterprise instellen
 
@@ -56,7 +56,7 @@ U moet een inschrijvingsprofiel maken, zodat u uw kioskapparaten kunt registrere
 1. Ga naar de [Intune-portal](https://portal.azure.com) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Kiosk- en taakapparaatinschrijvingen**.
 2. Kies **Maken** en vul de vereiste velden in.
     - **Naam**: typ een naam die u gebruikt wanneer u het profiel toewijst aan de dynamische apparaatgroep.
-    - **Vervaldatum van token**: de datum waarop het token verloopt. Google dwingt een maximum van 30 dagen af.
+    - **Vervaldatum van token**: de datum waarop het token verloopt. Google dwingt een maximum van 90 dagen af.
 3. Kies **Maken** om het profiel op te slaan.
 
 ### <a name="create-a-device-group"></a>Een apparaatgroep maken
@@ -110,7 +110,7 @@ Apparaten met Android 5.1 en hoger die ondersteuning bieden voor NFC, kunnen wor
 
 ### <a name="enroll-by-using-a-token"></a>Registreren met een token
 
-Op apparaten met Android 6 en hoger kunt u het token gebruiken om het apparaat te registreren.
+Op apparaten met Android 6 en hoger kunt u het token gebruiken om het apparaat te registreren. Android 6.1 en latere versies kunnen ook gebruikmaken van de QR-code scannen bij het gebruik van de **aft#setup**-inschrijvingsmethode.
 
 1. Schakel het apparaat in om de fabrieksinstellingen terug te zetten.
 2. Selecteer uw taal in het scherm **Welkom**.
@@ -125,6 +125,9 @@ Op apparaten met Android 6 en hoger kunt u het token gebruiken om het apparaat t
 ### <a name="enroll-by-using-a-qr-code"></a>Registreren met een QR-code
 
 Op apparaten met Android 7 en hoger kunt u de QR-code scannen van het inschrijvingsprofiel om het apparaat in te schrijven.
+
+> [!Note]
+> Inzoomen op de browser kan ertoe leiden dat apparaten geen QR-code kunnen scannen. Dit probleem wordt opgelost door de zoomfactor van de browser te vergroten.
 
 1. Tik meerdere keren op het eerste scherm dat u ziet nadat de fabrieksinstellingen zijn teruggezet om een QR te starten die op het Android-apparaat wordt gelezen.
 2. Voor apparaten met Android 7 en 8 wordt u gevraagd om een QR-lezer te installeren. Op Android-apparaten 9 of hoger is al een QR-lezer geïnstalleerd.

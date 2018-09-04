@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 640d1a5cbd785248cb309bc250c95631295955b3
-ms.sourcegitcommit: 71497f0215fc8bed454ac318b0548b1281a8fe0f
+ms.openlocfilehash: 141fcc4550b69d01d67e8d4aa9f0e6e05717353a
+ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33914152"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251726"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>De Exchange Connector-service configureren voor Intune en Exchange Online
 
@@ -50,7 +50,7 @@ U moet ook een Exchange Online-gebruikersaccount maken dat wordt gebruikt door d
 
 ## <a name="set-up-the-service-to-service-connector"></a>De Servicesconnector instellen
 
-1. Meld u bij de [Azure Portal](http://portal.azure.com) aan met een gebruikersaccount met Exchange-beheerdersrechten en machtigingen voor de [eerder genoemde](#exchange-cmdlet-requirements) cmdlets. Microsoft Intune gebruikt het e-mailadres van de momenteel aangemelde gebruiker om de verbinding in te stellen.
+1. Meld u bij [Azure Portal](http://portal.azure.com) aan met een gebruikersaccount met Exchange-beheerdersrechten en machtigingen voor de [eerder genoemde](#exchange-cmdlet-requirements) cmdlets, een geldige Intune-licentie en de globale beheerdersrol. Microsoft Intune gebruikt het e-mailadres van de momenteel aangemelde gebruiker om de verbinding in te stellen.
 
 2. Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c7f3229c2cb4c5f3f57d84d348053f25eeeb9c9
-ms.sourcegitcommit: f70d6aaea59b52cd0d7bd3008afd243868967fd6
+ms.openlocfilehash: c64c267623db93128177d56ced29586d3a877b19
+ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37066212"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42823049"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>MTD-apps (Mobile Threat Defense) toevoegen en toewijzen met Intune
 
@@ -56,6 +56,7 @@ Kies de sectie die overeenkomt met uw MTD-provider:
   - [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps)
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
+  - [Better Mobile](#configure-better-mobile-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Lookout for Work-app configureren
 
@@ -129,6 +130,16 @@ Kies de sectie die overeenkomt met uw MTD-provider:
 
     - Zie de instructies in het artikel [iOS Store-apps toevoegen aan Microsoft Intune](store-apps-ios.md). Gebruik deze [URL voor de App Store voor Pradeo](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8) in **stap 12** in de sectie **App-gegevens configureren**.
 
+### <a name="configure-better-mobile-apps"></a>Better Mobile-apps configureren
+
+ - **Android**
+
+    - Zie de instructies in het artikel [Android Store-apps toevoegen aan Microsoft Intune](store-apps-android.md). Gebruik deze [URL voor de App Store voor Active Shield](https://play.google.com/store/apps/details?id=com.better.active.shield.enterprise) in **stap 7**.
+
+ - **iOS**
+
+    - Zie de instructies in het artikel [iOS Store-apps toevoegen aan Microsoft Intune](store-apps-ios.md). Gebruik deze [URL voor de App Store voor ActiveShield](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) in **stap 12** in de sectie **App-gegevens configureren**.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>Uw MTD-apps configureren met een configuratiebeleid voor iOS-apps
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Beleid voor de configuratie van Lookout for Work-apps
@@ -177,6 +188,22 @@ Kies de sectie die overeenkomt met uw MTD-provider:
 <string>{{serialnumber}}</string>
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
+</dict>
+```
+
+### <a name="better-mobile-app-configuration-policy"></a>Configuratiebeleid voor Better Mobile-apps
+
+- Zie de Engelstalige instructies voor het [gebruiken van app-configuratiebeleid voor iOS van Microsoft Intune](app-configuration-policies-use-ios.md) om het configuratiebeleid voor de iOS-app Better Mobile toe te voegen.
+    - Gebruik in **stap 8** de optie **XML-gegevens invoeren**, kopieer de onderstaande inhoud en plak deze in de hoofdtekst van het configuratiebeleid. Vervang de `https://client.bmobi.net` URL dor de juiste console-URL.
+
+```
+<dict>
+<key>better_server_url</key>
+<string>https://client.bmobi.net</string>
+<key>better_udid</key>
+<string>{{aaddeviceid}}</string>
+<key>better_user</key>
+<string>{{userprincipalname}}</string>
 </dict>
 ```
 

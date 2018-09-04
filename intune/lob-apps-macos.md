@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993714"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255477"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>LOB-apps (Line-Of-Business) voor macOS toevoegen in Microsoft Intune
 
@@ -28,14 +28,15 @@ ms.locfileid: "38993714"
 
 Gebruik de informatie in dit artikel om macOS-Line-Of-Business-apps toe te voegen in Microsoft Intune. U moet een extern hulpprogramma downloaden om uw *.pkg*-bestanden vooraf te verwerken voordat u het LOB-bestand kunt uploaden in Microsoft Intune. Het vooraf verwerken van uw *.pkg*-bestanden moet plaatsvinden op een macOS-apparaat.
 
->[!NOTE]
->Hoewel gebruikers van macOS-apparaten sommige ingebouwde macOS-apps, zoals Stocks en Maps, kunnen verwijderen, kunt u Intune niet gebruiken om deze apps opnieuw te implementeren. Als eindgebruikers deze apps verwijderen, moeten ze naar de appstore gaan en ze handmatig opnieuw installeren.
->
->Alleen *.pkg*-bestanden kunnen worden gebruikt om LOB-apps voor macOS te uploaden in Microsoft Intune. Het converteren van andere indelingen, zoals *.dmg* naar *.pkg* wordt niet ondersteund.
+> [!NOTE]
+> Hoewel gebruikers van macOS-apparaten sommige ingebouwde macOS-apps, zoals Stocks en Maps, kunnen verwijderen, kunt u Intune niet gebruiken om deze apps opnieuw te implementeren. Als eindgebruikers deze apps verwijderen, moeten ze naar de appstore gaan en ze handmatig opnieuw installeren.
 
-## <a name="step-1---pre-process-your-software-setup-file"></a>Stap 1: het software-installatiebestand vooraf verwerken
+## <a name="before-your-start"></a>Voordat u begint
 
-Gebruik de Intune App Wrapping Tool voor Mac om de Mac-apps in te schakelen om te worden beheerd in Microsoft Intune.
+U moet een extern hulpprogramma downloaden om uw *.pkg*-bestanden vooraf te verwerken voordat u het LOB-bestand kunt uploaden in Microsoft Intune. Het vooraf verwerken van uw *.pkg*-bestanden moet plaatsvinden op een macOS-apparaat. Gebruik de Intune App Wrapping Tool voor Mac om de Mac-apps in te schakelen om te worden beheerd in Microsoft Intune.
+
+> [!IMPORTANT]
+> Alleen *.pkg*-bestanden kunnen worden gebruikt om LOB-apps voor macOS te uploaden in Microsoft Intune. Het converteren van andere indelingen, zoals *.dmg* naar *.pkg* wordt niet ondersteund.
 
 1. Download de [Intune App Wrapping Tool voor Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac) en voer deze uit.
 
@@ -55,7 +56,7 @@ Gebruik de Intune App Wrapping Tool voor Mac om de Mac-apps in te schakelen om t
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     Met deze opdracht worden de gedetecteerde parameters en versie voor het gemaakte *.itunemac*-bestand uitgepakt.
 
-## <a name="step-2---specify-the-software-setup-file"></a>Stap 2: de locatie van het software-installatiebestand opgeven
+## <a name="step-1---specify-the-software-setup-file"></a>Stap 1: de locatie van het software-installatiebestand opgeven
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
@@ -64,14 +65,14 @@ Gebruik de Intune App Wrapping Tool voor Mac om de Mac-apps in te schakelen om t
 5. Kies **Toevoegen** boven de lijst met apps.
 6. Kies **Line-Of-Business-app** in het deelvenster **App toevoegen**.
 
-## <a name="step-3---configure-the-app-package-file"></a>Stap 3: het app-pakketbestand configureren
+## <a name="step-2---configure-the-app-package-file"></a>Stap 2: het pakketbestand van de app configureren
 
 1. Kies **App-pakketbestand** in het deelvenster **App toevoegen**.
 2. Klik in het deelvenster **App-pakketbestand** op de knop Bladeren en selecteer een macOS-installatiebestand met de extensie *.intunemac*.
 3. Als u klaar bent, kiest u **OK**.
 
 
-## <a name="step-4---configure-app-information"></a>Stap 4: de app-gegevens configureren
+## <a name="step-3---configure-app-information"></a>Stap 3: de app-gegevens configureren
 
 1. Kies **App-informatie** in het deelvenster **App toevoegen**.
 2. Voeg de details voor uw app toe in het deelvenster **App-gegevens**. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden in het deelvenster mogelijk automatisch ingevuld:
@@ -89,7 +90,7 @@ Gebruik de Intune App Wrapping Tool voor Mac om de Mac-apps in te schakelen om t
     - **Logo**: upload een pictogram dat aan de app is gekoppeld. Dit is het pictogram dat samen met de app wordt weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
 3. Als u klaar bent, kiest u **OK**.
 
-## <a name="step-5---finish-up"></a>Stap 5: afronden
+## <a name="step-4---finish-up"></a>Stap 4: afronden
 
 1. Controleer in het deelvenster **App toevoegen** of de gegevens voor uw app juist zijn.
 2. Kies **Toevoegen** om de app te uploaden naar Intune.
@@ -99,7 +100,7 @@ De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app 
 > [!NOTE]
 > Als het *.pkg*-bestand meerdere apps of app-installatieprogramma's bevat, wordt met Microsoft Intune alleen gerapporteerd dat de *app* is geïnstalleerd wanneer alle geïnstalleerde apps op het apparaat zijn gedetecteerd.
 
-## <a name="step-6---update-a-line-of-business-app"></a>Stap 6: een Line-Of-Business-app bijwerken
+## <a name="step-5---update-a-line-of-business-app"></a>Stap 5: een Line-Of-Business-app bijwerken
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 

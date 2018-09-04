@@ -5,21 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/19/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e0eac3c1d6739ca70e485b0327e3257ba8d32d2b
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 3a31a43cfe45060891c30a7f159123a30b43173d
+ms.sourcegitcommit: 488be75cbee88455b33c68a3ec2acb864d461bf8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321656"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910663"
 ---
 # <a name="smime-email-signing-and-encryption-in-intune"></a>Ondertekening en versleuteling van e-mailberichten met S/MIME in Intune
+
+> [!IMPORTANT]
+> Er worden enkele verbeteringen aangebracht aan de S/MIME-functie die in dit artikel wordt beschreven. Als gevolg hiervan is de S/MIME-functie tijdelijk uit Intune verwijderd. Wanneer deze functie wordt uitgebracht, wordt deze opmerking verwijderd.
 
 S/MIME biedt via versleuteling en ontsleuteling een extra beveiligingsniveau voor uw e-mailberichten. Microsoft Intune kan S/MIME gebruiken om e-mailberichten te ondertekenen en versleutelen op mobiele apparaten met iOS, Windows, Windows Phone, Android en macOS.
 

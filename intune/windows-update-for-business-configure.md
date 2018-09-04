@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
-ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
+ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822718"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255253"
 ---
 # <a name="manage-software-updates-in-intune"></a>Software-updates beheren in Intune
 
@@ -115,11 +115,10 @@ De nieuwe updatering wordt weergegeven in de lijst met updateringen.
 3. Als u klaar bent, kiest u **Selecteren** om de toewijzing te voltooien.
 
 ## <a name="update-compliance-reporting"></a>Update-nalevingsrapportages
-Met de gratis oplossing Update Compliance in Operations Management Suite (OMS) kunt u de updatenaleving weergeven in Intune.
+Met de gratis oplossing Update Compliance kunt u de updatenaleving weergeven in Intune.
 
 ### <a name="review-update-compliance-in-intune"></a>Updatenaleving weergeven in Intune 
-<!-- 1352223 -->
-Een beleidsrapport weergeven met de implementatiestatus voor de Windows 10-updateringen die u hebt geconfigureerd.
+<!-- 1352223 --> Een beleidsrapport weergeven met de implementatiestatus voor de Windows 10-updateringen die u hebt geconfigureerd.
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
@@ -137,7 +136,7 @@ Een beleidsrapport weergeven met de implementatiestatus voor de Windows 10-updat
       - **Gebruikersstatus**
 
 ### <a name="review-update-compliance-using-oms"></a>Updatenaleving weergeven in OMS
-Met de gratis oplossing Update Compliance in Operations Management Suite (OMS) kunt u de Windows 10 update-implementatie bewaken. Zie [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Windows-updates bewaken met Update Compliance) voor meer informatie. Wanneer u deze oplossing gebruikt, kunt u een commerciële id implementeren op elk van uw door Intune beheerde Windows 10-apparaten waarvoor u over de naleving van updates wilt rapporteren.
+Met de gratis oplossing Update Compliance kunt u de Windows 10 update-implementatie bewaken. Zie [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Windows-updates bewaken met Update Compliance) voor meer informatie. Wanneer u deze oplossing gebruikt, kunt u een commerciële id implementeren op elk van uw door Intune beheerde Windows 10-apparaten waarvoor u over de naleving van updates wilt rapporteren.
 
 In de Intune-console kunt u de OMA-URI-instellingen van een aangepast beleid gebruiken om de commerciële id te configureren. Zie [Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune) voor meer informatie.   
 
