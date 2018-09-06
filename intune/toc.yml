@@ -747,26 +747,30 @@ items:
     - name: Datawarehouse-gegevensmodel
       href: reports-ref-data-model.md
       items:
-      - name: Levensduur gebruikers weergeven in Intune-datawarehouse
-        href: reports-ref-user-timeline.md
-      - name: Naslag voor toepassingsentiteiten
-        href: reports-ref-application.md
-      - name: Naslaginformatie voor huidige gebruikersentiteit
-        href: reports-ref-current-user.md
-      - name: Verwijzing voor datumentiteit
-        href: reports-ref-date.md
-      - name: Informatie voor apparaatentiteiten
-        href: reports-ref-devices.md
-      - name: Naslaginformatie voor Intune-beheeruitbreidingsentiteit
-        href: reports-ref-intunemanagementextension.md
-      - name: Naslag voor MAM-entiteiten (Mobile Application Management)
-        href: reports-ref-mobile-app-management.md
-      - name: Naslag voor beleidsentiteiten
-        href: reports-ref-policy.md
-      - name: Naslaginformatie voor entiteit gebruikersapparaatkoppelingen
-        href: reports-ref-user-device.md
-      - name: Naslag voor gebruikersentiteit
-        href: reports-ref-user.md
+      - name: Datawarehouse-verzamelingen
+        href: intune-data-warehouse-collections.md
+      - name: Datawarehouse-verzamelingen (bèta)
+        items:
+        - name: Levensduur gebruikers weergeven in Intune-datawarehouse
+          href: reports-ref-user-timeline.md
+        - name: Naslag voor toepassingsentiteiten
+          href: reports-ref-application.md
+        - name: Naslaginformatie voor huidige gebruikersentiteit
+          href: reports-ref-current-user.md
+        - name: Verwijzing voor datumentiteit
+          href: reports-ref-date.md
+        - name: Informatie voor apparaatentiteiten
+          href: reports-ref-devices.md
+        - name: Naslaginformatie voor Intune-beheeruitbreidingsentiteit
+          href: reports-ref-intunemanagementextension.md
+        - name: Naslag voor MAM-entiteiten (Mobile Application Management)
+          href: reports-ref-mobile-app-management.md
+        - name: Naslag voor beleidsentiteiten
+          href: reports-ref-policy.md
+        - name: Naslaginformatie voor entiteit gebruikersapparaatkoppelingen
+          href: reports-ref-user-device.md
+        - name: Naslag voor gebruikersentiteit
+          href: reports-ref-user.md
     - name: Uw Intune Data Warehouse-accountgegevens verplaatsen
       href: data-warehouse-account-move.md
   - name: Azure AD gebruiken voor toegang tot Intune-API's in Microsoft Graph
@@ -802,9 +806,9 @@ items:
       href: troubleshoot-exchange-connector.md
   - name: Verklarende woordenlijst
     href: intune-glossary.md
-ms.openlocfilehash: a3e314760dbbfec82ce27b3bec12b21ab7ca5952
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 8926b2cb409f59bab9b4af8398dac146abeec3d2
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313578"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43821113"
