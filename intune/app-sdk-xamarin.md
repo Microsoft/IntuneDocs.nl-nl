@@ -3,8 +3,8 @@ title: Microsoft Intune App SDK Xamarin Bindings
 description: Met Intune App SDK Xamarin Bindings kunt u het app-beveiligingsbeleid voor Intune inschakelen in iOS- en Android-apps die zijn gebouwd met Xamarin.
 keywords: SDK, Xamarin, intune
 author: Erikre
-manager: dougeby
 ms.author: erikre
+manager: dougeby
 ms.date: 06/08/2018
 ms.topic: article
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1cfbaa0cbdcc2263f6e8d1d3fc8562678e410537
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 079b27c73a466ae19dad950564ba0d56d8e20f8d
+ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400314"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44031266"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
