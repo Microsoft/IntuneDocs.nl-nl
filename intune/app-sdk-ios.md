@@ -3,8 +3,8 @@ title: Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 description: Met de Microsoft Intune App SDK voor iOS kunt u Intune-beveiligingsbeleid voor apps (ook wel APP- of MAM-beleid genoemd) opnemen in uw systeemeigen iOS-app.
 keywords: ''
 author: Erikre
-manager: dougeby
 ms.author: erikre
+manager: dougeby
 ms.date: 06/22/2018
 ms.topic: article
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: ab88c99694df95eeaf4b5529faec73dacd1a208c
-ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
+ms.openlocfilehash: daf4063f7713dafa938398cdc95344ffe25ae8f0
+ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241878"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44031317"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
@@ -429,7 +429,7 @@ De geretourneerde waarde van deze methode geeft voor de SDK aan of de app het ve
 
 De Intune App SDK heeft verschillende API's die u kunt aanroepen met informatie over het Intune APP-beleid voor apps dat op de app is geïmplementeerd. U kunt met deze gegevens uw app-gedrag aanpassen. De onderstaande tabel bevat informatie over sommige essentiële Intune-klassen die u gaat gebruiken.
 
-Klasse | Description
+Klasse | Beschrijving
 ----- | -----------
 IntuneMAMPolicyManager.h | De klasse IntuneMAMPolicyManager beschrijft het Intune APP-beleid voor apps dat in de toepassing wordt geïmplementeerd. Beschrijft met name API's die nuttig zijn voor [Meerdere identiteiten inschakelen](#-enable-multi-identity-optional). |
 IntuneMAMPolicy.h | De klasse IntuneMAMPolicy beschrijft enkele MAM-beleidsinstellingen die van toepassing zijn op de app. Deze beleidsinstellingen worden beschreven, zodat de app de gebruikersinterface kan aanpassen. De meeste beleidsinstellingen worden afgedwongen door de SDK en niet door de app. Het enige dat de app moet implementeren is het besturingselement Opslaan als. Deze klasse beschrijft een aantal API's die nodig zijn voor het implementeren van Opslaan als. |

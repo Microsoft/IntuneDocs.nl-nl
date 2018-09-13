@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47922a30d8106c4d60b6caa43c8855195e3a0220
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: db729bb0b2f22124665f7cd5e0cd0b21d9b11705
+ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330242"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44058712"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>App-toewijzingen opnemen en uitsluiten in Microsoft Intune
 
@@ -44,7 +44,7 @@ Intune houdt geen rekening met koppelingen van gebruikers aan apparaten bij het 
 U kunt een app toewijzen aan groepen met behulp van de toewijzing voor opnemen en uitsluiten:
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Selecteer **Client-apps** in het menu **Intune**.
+3. Selecteer in het menu **Intune** de optie **Client-apps**.
 4. Selecteer in het deelvenster **Client-apps** de optie **Apps**. De lijst met toegevoegde apps wordt weergegeven.
 5. Selecteer de app die u wilt beheren. In een dashboard worden gegevens over de app weergegeven. 
 6. Selecteer **Toewijzingen** in de sectie **Beheren** van het menu. 

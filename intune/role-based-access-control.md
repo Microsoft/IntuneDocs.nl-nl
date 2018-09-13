@@ -6,20 +6,20 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 2a0c230e89944b4330582fe4c6933ca1fe717aec
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: ad5bf36eeb81c5deabc2c3efd73cddcc3db8a70c
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329987"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253694"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune
 
@@ -71,7 +71,7 @@ De volgende rollen zijn ingebouwd in Intune en u kunt deze zonder verdere config
 |Apparaatinschrijvingsmanagers|Lezen, bijwerken|
 |Beheerde apparaten|Lezen, bijwerken<!--, Delete [To be added in 1803]-->|
 |Mobiele apps|Toewijzen, maken, verwijderen, lezen, bijwerken|
-|Reports|Raadplegen|
+|Rapporten|Raadplegen|
 |Externe acties|Pc opruimen, opnieuw opstarten, op afstand vergrendelen, buiten gebruik stellen, apparaten synchroniseren, wissen|
 |Organisatie|Raadplegen|
 
@@ -142,6 +142,6 @@ U kunt een aangepaste rol maken die alle machtigingen bevat die vereist zijn voo
 
 [De rol voor Intune Helpdesk-operator gebruiken met de portal voor probleemoplossing](help-desk-operators.md)
 
-## <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
 
 [Rollen toewijzen met Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)

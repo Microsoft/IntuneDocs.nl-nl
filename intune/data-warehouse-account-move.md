@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b34bb7c3f3db9ebb3cdd89b429aaeb530d7ad796
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330293"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141624"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Uw Intune Data Warehouse-accountgegevens verplaatsen 
 
@@ -63,8 +63,6 @@ Sommige trendgrafieken in de weergave van Azure Portal worden opnieuw ingesteld.
 ## <a name="device-enrollment-charts"></a>Device Enrollment-grafieken
 1. Navigeer in Azure Portal naar **Microsoft Intune** -> **DeviceEnrollment**.
 2. Download met Microsoft [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) de gegevens achter de grafieken.
-    - Zie voor de status van inschrijving 
-    - Voor de top mislukte inschrijvingen deze week, 
     - Kopieer voor de inschrijvingsstatus deze [inschrijvingsstatus-query](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends()/content) en plak deze in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
     - Kopieer voor de top mislukte inschrijvingen deze [mislukte inschrijvingen-query](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content) en plak deze in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 

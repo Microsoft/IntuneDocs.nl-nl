@@ -7,20 +7,20 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 08/20/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: aebfea2f52540b4193811121334e3cebf916175b
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: 20e9d4799b9ea4329c8286f0b75ea2a7d555e07b
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330140"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253757"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
@@ -38,7 +38,7 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 
 ## <a name="app-management-capabilities-by-platform"></a>App-beheermogelijkheden per platform
 
-|  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|  | Android | iOS | macOS | Windows 10 | Windows Phone 8,1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Apps toevoegen en aan apparaten en gebruikers toewijzen | Ja | Ja | Ja | Ja | Ja |
 | Apps toewijzen aan apparaten die niet zijn geregistreerd met Intune | Ja | Ja | Nee | Nee | Nee |
@@ -72,7 +72,7 @@ U vindt de meeste app-gerelateerde informatie in de workload **Client-apps** die
 
 In se volgende vier secties worden de beschikbare opties in het deelvenster **Client-apps** beschreven.
 
-### <a name="manage"></a>Manage
+### <a name="manage"></a>Beheren
 - **Apps**: selecteer deze optie als u de apps die uw werknemers gebruiken, wilt toevoegen, weergeven, toewijzen en bewaken. Zie voor meer informatie:
     - [Apps toevoegen](apps-add.md).
     - [Apps toewijzen](apps-deploy.md).
@@ -101,7 +101,7 @@ Zie [Apps beheren](app-management.md) voor meer informatie over deze sectie.
 
 Zie [Apps bewaken](apps-monitor.md) voor meer informatie over deze sectie.
 
-### <a name="set-up"></a>instellen
+### <a name="set-up"></a>Instellen
 - **VPP-tokens voor iOS**: voor het toepassen en weergeven van uw VPP-licenties (Volume Purchase Program) voor iOS. Zie voor meer informatie:
     - [iOS-apps die zijn gekocht via het volume-aankoopprogramma](vpp-apps-ios.md)
 - **Windows Enterprise-certificaat**: voor het toepassen of weergeven van de status van een certificaat voor ondertekening van programmacode die wordt gebruikt voor het distribueren van LOB-apps naar uw beheerde Windows-apparaten.

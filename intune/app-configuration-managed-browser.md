@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: d11356c16965e3ba7631275368c9723a2db0ecc9
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329749"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43675012"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid voor beveiligde browsers met Microsoft Intune
 
@@ -185,7 +185,7 @@ Geef met behulp van de procedure voor het maken van een app-configuratie voor Ed
 
 |                                Sleutel                                 |                                                                                                                                                                                                                                                         Waarde                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | De waarde voor deze configuratie is een lijst met bladwijzers. Elke bladwijzer bestaat uit de titel en de URL van de bladwijzer. Scheid de titel en een URL met het teken <strong>&#124;</strong>.<br><br>Voorbeeld:<br> 'Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | De waarde voor deze configuratie is een lijst met bladwijzers. Elke bladwijzer bestaat uit de titel en de URL van de bladwijzer. Scheid de titel en een URL met het teken <strong>&#124;</strong>.<br><br>Voorbeeld:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>Als u meerdere bladwijzers wilt configureren, typt u een dubbel scheidingsteken <strong>& #124; & #124;</strong> tussen de bladwijzers.<br><br>Voorbeeld:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>Toegestane en geblokkeerde URL's voor een beveiligde browser opgeven
 
@@ -193,7 +193,7 @@ Geef met behulp van de procedure voor het maken van een app-configuratie voor Ed
 
 |Sleutel|Waarde|
 |-|-|
-|U kunt kiezen uit:<br><ul><li>Geef toegestane URL's op (alleen deze URL's zijn toegestaan; andere sites zijn niet toegankelijk):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Geef geblokkeerde URL's op (alle andere sites zijn toegankelijk):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|De overeenkomstige waarde voor de sleutel is een lijst met URL's. U voert alle URL's die u wilt toestaan of blokkeren in als één waarde, gescheiden door een sluisteken **&#124;**.<br><br>Voorbeelden:<br><br>'URL1|URL2|URL3`<br>`http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com`|
+|U kunt kiezen uit:<br><ul><li>Geef toegestane URL's op (alleen deze URL's zijn toegestaan; andere sites zijn niet toegankelijk):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Geef geblokkeerde URL's op (alle andere sites zijn toegankelijk):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|De overeenkomstige waarde voor de sleutel is een lijst met URL's. U voert alle URL's die u wilt toestaan of blokkeren in als één waarde, gescheiden door een sluisteken **&#124;**.<br><br>Voorbeelden:<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
 
 >[!IMPORTANT]
 >Geef niet beide sleutels op. Als beide sleutels zijn bedoeld voor dezelfde gebruiker, moet de sleutel voor toegestane URL's worden gebruikt, aangezien dit de meest beperkende optie is.
