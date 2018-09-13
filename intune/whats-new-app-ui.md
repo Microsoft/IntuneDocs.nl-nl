@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,37 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279488"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347691"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates zijn aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Inzicht in deze updates kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-august-27-2018"></a>Week van 27 augustus 2018  
+
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Nieuwe update van de gebruikerservaring voor de bedrijfsportalwebsite <!--2000968 -->  
+Op basis van feedback van klanten zijn er nieuwe functies toegevoegd aan de website van de bedrijfsportal. U zult een aanzienlijke verbetering ervaren wat betreft de bestaande functionaliteit en bruikbaarheid van uw apparaten. Delen van de site &ndash;zoals apparaatgegevens, feedback en ondersteuning, en apparaatoverzicht&ndash; krijgen een nieuw, modern, responsief ontwerp. De [documentatie voor Intune-bedrijfsportalwebsite](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website) is bijgewerkt, waarbij deze wijzigingen zijn meegenomen.   
+
+De updates die u ziet zijn onder andere:  
+
+- Gestroomlijnde werkstromen voor alle apparaatplatforms
+- Verbeterde apparaat-id en inschrijvingsstromen
+- Nuttigere foutberichten
+- Toegankelijker taal, minder technische jargon
+- Mogelijkheid om directe koppelingen naar apps te delen
+- Verbeterde prestaties voor grote app-catalogi
+- Beter toegankelijk voor alle gebruikers  
+
+|Bijgewerkt|Vorige|
+|---|---|
+|![Op de bijgewerkte apparaatpagina wordt het apparaat boven de apparaatgegevens weergegeven, niet meer in een pop-up boven de volledige lijst.](./media/iwp-device-after-1803.png)|![De vorige versie van de apparaatpagina.](./media/iwp-device-before-1803.png)|
+|![Op de bijgewerkte apparaatinstallatiepagina wordt de app weergegeven boven een beschrijving en diverse installatiegegevens, waaronder publicatiedatum, versie en type app.](./media/iwp-app-install-after-1803.png)|![De vorige versie van de apparaatinstallatiepagina.](./media/iwp-app-install-before-1803.png)|  
 
 ## <a name="week-of-july-16-2018"></a>Week van 16 juli 2018  
 
@@ -42,7 +62,7 @@ De pagina **Apps** bevat de weergave **Geïnstalleerd**, waarop u meer informati
 
 Schermopname van de Tegels-weergave:  
  
-![Schermopname van de Intune Bedrijfsportal-app voor Windows waarin de geïnstalleerde apps in de Tegels-weergave worden getoond.](/intune/media/tiles-installed-view-cpapp-1807.png)  
+![Schermopname van de Intune Bedrijfsportal-app voor Windows waarin de geïnstalleerde apps in de tegelweergave worden getoond.](/intune/media/tiles-installed-view-cpapp-1807.png)  
 
 Schermopname van de Details-weergave:  
 
@@ -112,7 +132,7 @@ Als u [apparaatgroeptoewijzing](device-group-mapping.md) hebt ingeschakeld, bege
 We hebben de werkstroom voor apparaatinstellingen in de bedrijfsportal-app voor iOS verbeterd. De taal is gebruiksvriendelijker en waar mogelijk hebben we schermen gecombineerd. We hebben de taal ook specifieker voor uw bedrijf gemaakt door overal in de installatietekst de naam van uw bedrijf te gebruiken.
 
 > [!NOTE]
-> We gebruiken de bedrijfsnaam die u hebt ingesteld in Azure Portal in **Microsoft Intune** > **Mobile Apps** > **Huisstijl voor bedrijfsportal**  >  **Bedrijfsnaam**. Als u deze waarde niet hebt ingesteld, gebruiken we de naam van de tenant die is ingesteld in **Azure Active Directory** > **Eigenschappen** > **Naam**. Als u geen bedrijfsnaam hebt ingesteld in Huisstijl voor bedrijfsportal en de tenantnaam niet wilt weergegeven, raden wij u aan de bedrijfsnaam in te stellen op het tabblad Huisstijl voor bedrijfsportal. Als u niet wilt dat deze tekenreeks wordt weergegeven in de koptekst in de bedrijfsportal, kunt u het selectievakje 'De bedrijfsnaam naast het logo weergeven' uitschakelen.
+> We gebruiken de bedrijfsnaam die u hebt ingesteld in Azure Portal in **Microsoft Intune** > **Client-apps** > **Huisstijl voor bedrijfsportal** > **Bedrijfsnaam**. Als u deze waarde niet hebt ingesteld, gebruiken we de naam van de tenant die is ingesteld in **Azure Active Directory** > **Eigenschappen** > **Naam**. Als u geen bedrijfsnaam hebt ingesteld in Huisstijl voor bedrijfsportal en de tenantnaam niet wilt weergegeven, raden wij u aan de bedrijfsnaam in te stellen op het tabblad Huisstijl voor bedrijfsportal. Als u niet wilt dat deze tekenreeks wordt weergegeven in de koptekst in de bedrijfsportal, kunt u het selectievakje 'De bedrijfsnaam naast het logo weergeven' uitschakelen.
 
 |Voor|Na|
 |---|---|
@@ -458,12 +478,7 @@ Er is een aantal nieuwe functies toegevoegd op basis van feedback van klanten zo
 -   Mogelijkheid om directe koppelingen naar apps te delen
 - Verbeterde prestaties voor grote app-catalogi
 
-U hoeft niets te doen om u op deze wijziging voor te bereiden. Wij brengen u op de hoogte wanneer de bijgewerkte bedrijfsportalwebsite voor u beschikbaar komt. U moet wellicht uw documentatie voor eindgebruikers met bijgewerkte schermafbeeldingen updaten. Ook moet u mogelijk documentatie voor de bedrijfsportal-app op iOS updaten, omdat de website de sectie **Apps** van de iOS-app mogelijk maakt.
-
-|Bijgewerkt|Vorige|
-|---|---|
-|![Op de bijgewerkte apparaatpagina wordt het apparaat boven de apparaatgegevens weergegeven, niet meer in een pop-up boven de volledige lijst.](./media/iwp-device-after-1803.png)|![De vorige versie van de apparaatpagina.](./media/iwp-device-before-1803.png)|
-|![Op de bijgewerkte apparaatinstallatiepagina wordt de app weergegeven boven een beschrijving en diverse installatiegegevens, waaronder publicatiedatum, versie en type app.](./media/iwp-app-install-after-1803.png)|![De vorige versie van de apparaatinstallatiepagina.](./media/iwp-app-install-before-1803.png)|
+U hoeft niets te doen om u op deze wijziging voor te bereiden. Wij brengen u op de hoogte wanneer de bijgewerkte bedrijfsportalwebsite voor u beschikbaar komt. U moet wellicht uw documentatie voor eindgebruikers met bijgewerkte schermafbeeldingen updaten. Ook moet u mogelijk documentatie voor de bedrijfsportal-app op iOS updaten, omdat de website de sectie **Apps** van de iOS-app mogelijk maakt.  
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Updates aan de gebruikersinterface van de bedrijfsportalwebsite <!--1313244 part 2-->
 

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949540"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329380"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Kioskinstellingen voor Android-apparaten in Intune
 
@@ -55,7 +55,7 @@ Als u een Android-kioskapparaat wilt instellen voor meerdere apps, volgt u deze 
 
 1. Blader naar de [pagina van het beheerde startscherm op Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) en meld u aan met hetzelfde account dat u voor andere beheerde apps van Google Play gebruikt.
 2. Kies **Goedkeuren**.
-3. Ga naar de [Intune-portal](https://portal.azure.com) en kies **Mobiele apps** > **Beheerde Google Play** > **Synchroniseren**.
+3. Ga naar de [Intune-portal](https://portal.azure.com) en kies **Client-apps** > **Beheerde Google Play** > **Synchroniseren**.
 4. Kies **Apps** > **Beheerd startscherm** > **Toewijzingen** > **Groep toevoegen**.
 5. Kies **Vereist** onder **Toewijzingstype**.
 6. Kies **Opgenomen groepen** > **Groepen selecteren om op te nemen** > kies de apparaatgroep die u hebt gemaakt voor uw kioskapparaten > **Selecteren** > **OK** > **OK** > **Opslaan**.
@@ -65,13 +65,13 @@ Als u een Android-kioskapparaat wilt instellen voor meerdere apps, volgt u deze 
 Voor elke app die u beschikbaar wilt stellen voor de kioskapparaten, voert u de volgende stappen uit:
 
 1. [Voeg de app toe aan Intune](store-apps-android.md).
-2. Kies **Mobiele apps** > **Apps** > kies de app > **Toewijzingen** > **Groep toevoegen**.
+2. Kies **Client-apps** > **Apps** > kies de app > **Toewijzingen** > **Groep toevoegen**.
 3. Kies **Vereist** onder **Toewijzingstype**.
 4. Kies **Opgenomen groepen** > **Groepen selecteren om op te nemen** > kies de apparaatgroep die u hebt gemaakt voor uw kioskapparaten > **Selecteren** > **OK** > **OK** > **Opslaan**.
 
 ### <a name="add-web-links-that-can-be-used-in-kiosk-mode"></a>Webkoppelingen toevoegen die kunnen worden gebruikt in de kioskmodus
 
-1. Ga naar de [Intune-portal](https://portal.azure.com) en kies **Mobiele apps** > **Apps** > **Toevoegen**.
+1. Ga naar de [Intune-portal](https://portal.azure.com) en kies **Client-apps** > **Apps** > **Toevoegen**.
 2. Kies **Webkoppeling** onder **App-type**.
 3. Kies **Configureren** en geef de vereiste informatie op. U hoeft geen logoafbeelding toe te voegen, omdat deze automatisch wordt opgehaald van de website favicon.ico.
 4. Kies **OK** > **Toevoegen**.

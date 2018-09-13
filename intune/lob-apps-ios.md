@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ee132a1b1c79e9829e5d28dc33b5cac2e52c8ac
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 1461089beafd6501d6ebc87ab1a89963fa4aac57
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251580"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347770"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Een iOS Line-Of-Business-app toevoegen aan Microsoft Intune
 
@@ -35,8 +35,8 @@ Gebruik de informatie in dit artikel om iOS-Line-Of-Business-apps (LOB) aan Micr
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Selecteer **Mobiele apps** in het deelvenster **Intune**.
-4. Selecteer **Beheren** > **Apps** in de workload **Mobiele apps**.
+3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
+4. Selecteer in de workload **Client-apps** de optie **Beheren** > **Apps**.
 5. Selecteer **Toevoegen** boven de lijst met apps.
 6. Selecteer in het deelvenster **App toevoegen** de optie **Line-Of-Business-app**.
 

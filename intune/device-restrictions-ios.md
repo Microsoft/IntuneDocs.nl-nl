@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321489"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329815"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>iOS-apparaatbeperkingsinstellingen in Microsoft Intune
 
@@ -81,7 +81,7 @@ De supervisiemodus voor iOS kan alleen worden ingeschakeld tijdens de initiële 
 - Koppelen aan Apple Watch 
 
 > [!NOTE]
-> Apple heeft bevestigd dat bepaalde instellingen worden verplaatst naar alleen onder supervisie in 2018. We raden u aan hiermee rekening te houden wanneer u deze instellingen gebruikt in plaats van dat u wacht totdat Apple deze migreert naar alleen onder supervisie:
+> Apple heeft bevestigd dat bepaalde instellingen worden verplaatst naar alleen onder supervisie in 2019. We raden u aan hiermee rekening te houden wanneer u deze instellingen gebruikt in plaats van dat u wacht totdat Apple deze migreert naar alleen onder supervisie:
 > - App-installatie door eindgebruikers
 > - App verwijderen
 > - FaceTime
@@ -91,6 +91,7 @@ De supervisiemodus voor iOS kan alleen worden ingeschakeld tijdens de initiële 
 > - iCloud-documenten en -gegevens
 > - Games voor meerdere spelers
 > - Game Center-vrienden toevoegen
+> - Siri
 
 ## <a name="password"></a>Wachtwoord
 -   **Wachtwoord**: hiermee geeft u aan dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.

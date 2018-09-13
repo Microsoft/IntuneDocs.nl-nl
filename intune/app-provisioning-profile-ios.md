@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d3cc718c0bfd0bba68480b4cd4003cd52489a50
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5ed39a13c8866786ac044d77ca61d91becd5b89f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34225035"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329561"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Inrichtingsprofielen gebruiken voor iOS-apps om te voorkomen dat uw apps verlopen
 
@@ -42,9 +42,9 @@ Als beheerder kunt u beveiligingsgroepen in- en uitsluiten om de inrichtingsconf
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Een inrichtingsprofiel voor mobiele iOS-apps maken
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies **Mobiele apps** in het deelvenster **Intune**.
-1.  Kies **Beheren** > **inrichtingsprofielen voor iOS-apps** in de workload **Mobiele apps**.
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Client-apps**.
+1.  Kies **Beheren** > **inrichtingsprofielen voor iOS-apps** in de workload **Client-apps**.
 2.  Kies **Profiel maken** in het deelvenster met de profielenlijst.
 3. Configureer de volgende waarden in het deelvenster **Profiel maken**:
     - **Naam**: geef een naam op voor dit mobiele inrichtingsprofiel.

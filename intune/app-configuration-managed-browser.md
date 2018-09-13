@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251664"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329749"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid voor beveiligde browsers met Microsoft Intune
 
@@ -108,7 +108,7 @@ Voor eenmalige aanmelding in Intune Managed Browser moet uw apparaat zijn geregi
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3.  Ga in de lijst Beheren naar de blade **Mobile Apps** en kies **App-configuratiebeleid**.
+3.  Ga in de lijst Beheren naar de blade **Client-apps** en kies **App-configuratiebeleid**.
 4.  Kies op de blade **App-configuratiebeleid** **Toevoegen**.
 5.  Geef op de blade **Configuratiebeleid toevoegen** een **naam** en een optionele **beschrijving** op voor de app-configuratie-instellingen.
 6.  Kies voor **Type apparaatregistratie** **Beheerde apps**.
@@ -126,7 +126,7 @@ Voor eenmalige aanmelding in Intune Managed Browser moet uw apparaat zijn geregi
 
 U wijst de instellingen aan Azure AD-groepen gebruikers toe. Als deze gebruiker de beveiligde browser-app heeft geïnstalleerd waarop het beleid is gericht, wordt de app beheerd door de instellingen die u hebt opgegeven.
 
-1. Kies op de blade **Mobiele apps** van het Intune MAM-dashboard de optie **App-configuratiebeleid**.
+1. Kies op de blade **Client-apps** van het Intune MAM-dashboard de optie **App-configuratiebeleid**.
 2. Selecteer in de lijst met app-configuraties de configuratie die u wilt toewijzen.
 3. Kies **Toewijzingen** op de volgende blade.
 4. Selecteer op de blade **Toewijzingen** de Azure AD-groep waaraan u de app-configuratie wilt toewijzen en kies vervolgens **OK**.

@@ -1,7 +1,7 @@
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).  
 2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.  
-3. Selecteer **Mobiele Apps** > **Apps**.
+3. Selecteer **Client-apps** > **Apps**.
 4. Zoek en selecteer uw app in de lijst met apps.  
 5. Kies **Eigenschappen** in de blade **Overzicht**.  
 6. Selecteer **App-pakketbestand**.  

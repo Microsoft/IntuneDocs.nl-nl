@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0fb7d432edf62de48e81f65b1ac2f67c6dbad70a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 143b4f3390d3058177f4bfde4cbfe0d210f57e86
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224950"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347913"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Apps die u hebt aangeschaft in Microsoft Store voor Bedrijven, beheren met Microsoft Intune
 
@@ -47,7 +47,7 @@ Lees de volgende informatie voordat u begint met het synchroniseren en toewijzen
 - Als u deze mogelijkheid wilt gebruiken, moeten apparaten zijn gekoppeld aan Active Directory Domain Services of aan de werkplek zijn toegevoegd.
 - Geregistreerde apparaten moeten gebruikmaken van de 1511-versie van Windows 10 of hoger.
 
-Daarnaast worden gerelateerde sets en gelicentieerde offline-apps die via de Microsoft Store voor Bedrijven werden gesynchroniseerd, nu geconsolideerd in een enkele app-vermelding in de gebruikersinterface. Alle implementatiegegevens van de afzonderlijke pakketten worden gemigreerd naar die ene vermelding. Als u gerelateerde sets in Azure Portal wilt bekijken, selecteert u **App-licenties** op de blade **Mobiele apps**.
+Daarnaast worden gerelateerde sets en gelicentieerde offline-apps die via de Microsoft Store voor Bedrijven werden gesynchroniseerd, nu geconsolideerd in een enkele app-vermelding in de gebruikersinterface. Alle implementatiegegevens van de afzonderlijke pakketten worden gemigreerd naar die ene vermelding. Als u gerelateerde sets in Azure Portal wilt bekijken, selecteert u **App-licenties** op de blade **Client-apps**.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Uw Microsoft Store voor Bedrijven-account koppelen aan Intune
 Voordat u synchronisatie inschakelt in de Intune-console, moet u uw Store-account configureren om Intune te gebruiken als beheerprogramma:
@@ -63,9 +63,9 @@ U kunt nu doorgaan en synchronisatie instellen in de Intune-console.
 ## <a name="configure-synchronization"></a>Synchronisatie configureren
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies **Mobiele apps** in het deelvenster **Intune**.
-1. Kies in het deelvenster **Mobiele apps** de optie **Instellen** > **Microsoft Store voor Bedrijven**.
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Client-apps**.
+1. Kies in het deelvenster **Client-apps** de optie **Instellen** > **Microsoft Store voor Bedrijven**.
 2. Klik op **Inschakelen**.
 3. Klik, als u dit nog niet hebt gedaan, op de koppeling om u te registreren bij Microsoft Store voor Bedrijven en uw account te koppelen zoals eerder is beschreven.
 5. Kies in de vervolgkeuzelijst **Taal** de taal waarin apps uit Microsoft Store voor Bedrijven moeten worden weergegeven in Azure Portal. Ongeacht de taal waarin deze apps worden weergegeven, worden ze geïnstalleerd in de taal van de eindgebruiker (indien beschikbaar).
@@ -73,7 +73,7 @@ U kunt nu doorgaan en synchronisatie instellen in de Intune-console.
 
 ## <a name="synchronize-apps"></a>Apps synchroniseren
 
-1. Kies in de workload **Mobiele apps** de optie **Instellen** > **Microsoft Store voor Bedrijven**.
+1. Kies in de workload **Client-apps** de optie **Instellen** > **Microsoft Store voor Bedrijven**.
 2. Klik op **Synchroniseren** om de apps die u hebt aangeschaft in Microsoft Store, op te halen in Intune.
 
 ## <a name="assign-apps"></a>Apps toewijzen

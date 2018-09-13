@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117919"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313175"
 ---
 # <a name="see-device-details-in-intune"></a>Apparaatdetails bekijken in Intune
 
@@ -34,11 +34,14 @@ In dit artikel leest u hoe u al uw apparaten en hun eigenschappen kunt bekijken 
 2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
 3. Selecteer **Apparaten** > **Alle apparaten** en selecteer een van de apparaten in de lijst om de details ervan te openen:
 
-   - **Overzicht** toont de apparaatnaam en een lijst met enkele belangrijke eigenschappen van het apparaat, inclusief of het een BYOD-apparaat (Bring Your Own Device) is, wanneer het apparaat is ingecheckt, en meer. Selecteer **Meer** voor de volgende opties:
-     - Bedrijfsgegevens verwijderen
-     - Het apparaat verwijderen
-     - Het apparaat op afstand vergrendelen
-     - Wissen
+   - **Overzicht** toont de apparaatnaam en een lijst met enkele belangrijke eigenschappen van het apparaat, inclusief of het een BYOD-apparaat (Bring Your Own Device) is, wanneer het apparaat is ingecheckt, en meer. U kunt nu de volgende acties op het apparaat uitvoeren:
+      - [Buiten gebruik stellen](devices-wipe.md#retire)
+        - [Wissen](devices-wipe.md#wipe)
+        - [Vergrendelen op afstand](device-remote-lock.md)
+        - [Apparaat synchroniseren](device-sync.md)
+        - [Wachtwoordcode opnieuw instellen](device-passcode-reset.md)
+        - [Opnieuw starten](device-restart.md) (alleen Windows)
+        - [Nieuwe start](device-fresh-start.md) (alleen Windows)
      - Een externe hulpsessie starten
    - Gebruik **Eigenschappen** om een [apparaatcategorie die u maakt](device-group-mapping.md) toe te wijzen en wijzig de eigendom van het apparaat naar een persoonlijk apparaat of een bedrijfsapparaat.
    - **Hardware** bevat veel details over het apparaat, zoals de apparaat-id, het besturingssysteem en de versie, opslagruimte, het model en de fabrikant, instellingen voor voorwaardelijke toegang en meer details.
@@ -64,7 +67,7 @@ Intune maakt alleen op apparaten in bedrijfseigendom een lijst met apps. Apps op
 |Details|Description|  
 |--------------|----------------------|  
 |Naam|De naam van het apparaat.|
-|Naam van de beheerder|De apparaatnaam wordt alleen in de console gebruikt. Als u deze naam wijzigt, verandert de naam op het apparaat zelf niet.|
+|Naam van de beheerder|De apparaatnaam wordt alleen in de console gebruikt. Als u deze naam wijzigt, verandert de naam op het apparaat niet.|
 |udid|De unieke apparaat-id van het apparaat.|
 |Intune-apparaat-id|Een GUID waarmee het apparaat op unieke wijze wordt aangeduid.|
 |Serienummer|Het serienummer van het apparaat, opgegeven door de fabrikant.|

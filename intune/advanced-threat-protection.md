@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 8/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
-ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
+ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40251547"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313788"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP met voorwaardelijke toegang in Intune inschakelen
 
@@ -71,27 +71,15 @@ Gewoonlijk voltooit u deze taak één keer. Dus als ATP al is ingeschakeld in uw
 
 ## <a name="onboard-devices-using-a-configuration-profile"></a>Onboard-apparaten die een configuratieprofiel gebruiken
 
-Windows Defender bevat een ingebouwd configuratiepakket dat is geïnstalleerd op apparaten. Wanneer geïnstalleerd, communiceert het pakket met [Windows Defender ATP-services](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) om bestanden te scannen, bedreigingen te detecteren en het risico aan Windows Defender ATP te rapporteren. Met Intune kunt u een configuratieprofiel maken dat gebruikmaakt van dit configuratiepakket. Dit profiel kunt u vervolgens toewijzen aan apparaten voor de eerste keer onboarding.
+Wanneer een eindgebruiker wordt ingeschreven bij Intune, kunt u verschillende instellingen naar het apparaat pushen met behulp van een configuratieprofiel. Dit geldt ook voor Windows Defender ATP.
 
-Wanneer u eenmaal onboarding van een apparaat met het configuratiepakket hebt uitgevoerd, dan hoeft u dit niet opnieuw te doen. Dit is meestal een eenmalige taak.
+Windows Defender bevat een geïntegreerd configuratiepakket dat communiceert met [Windows Defender ATP-services](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) om bestanden te scannen, bedreigingen te detecteren en het risico aan Windows Defender ATP te rapporteren.
 
-U kunt apparaten onboarden met behulp van een [Groepsbeleid of System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection).
+Wanneer u de onboarding uitvoert, ontvangt Intune een automatisch gegenereerd configuratiepakket van Windows Defender ATP. Wanneer het profiel naar het apparaat wordt gepusht of erop wordt geïmplementeerd, wordt dit configuratiepakket ook naar het apparaat gepusht. Hierdoor kan Windows Defender ATP het apparaat beveiligen tegen de bedreigingen.
 
-In de volgende stappen ziet u hoe u met behulp van Intune moet onboarden.
+Wanneer u eenmaal onboarding van een apparaat met het configuratiepakket hebt uitgevoerd, dan hoeft u dit niet opnieuw te doen. U kunt apparaten onboarden met behulp van een [Groepsbeleid of System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection).
 
-#### <a name="download-configuration-package"></a>Configuratiepakket downloaden
-
-1. Selecteer in het [Windows Defender Security Center](https://securitycenter.windows.com) **Instellingen** > **Onboarding**.
-2. Voer de volgende instellingen in:
-  - **Besturingssysteem**: Windows 10
-  - **Een apparaat onboarden** > **Implementatiemethode**: Mobile Device Management / Microsoft Intune
-3. Selecteer **Pakket downloaden** en sla het bestand **WindowsDefenderATPOnboardingPackage.zip** op. Pak het bestand uit.
-
-Dit zipbestand bevat **WindowsDefenderATP.onboarding**, dat u in de volgende stappen nodig hebt.
-
-#### <a name="create-the-atp-configuration-profile"></a>Een ATP-configuratieprofiel maken
-
-Dit profiel gebruikt het onboarding-pakket dat u in de vorige stappen hebt gedownload.
+### <a name="create-the-configuration-profile"></a>Het configuratieprofiel maken
 
 1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
@@ -100,10 +88,9 @@ Dit profiel gebruikt het onboarding-pakket dat u in de vorige stappen hebt gedow
 5. Voor **Profieltype** selecteert u **Windows Defender ATP (Windows 10 Desktop)**.
 6. Configureer de gewenste instellingen:
 
-  - **Onboard-configuratiepakket**: blader en selecteer het bestand **WindowsDefenderATP.onboarding** dat u hebt gedownload. Dit bestand activeert een instelling zodat apparaten aan de Windows Defender ATP-service kunnen rapporteren.
-  - **Delen van voorbeelden voor alle bestanden**: staat toe dat voorbeelden worden verzameld en gedeeld met Windows Defender ATP. Als u bijvoorbeeld een verdacht bestand ziet, kunt u het verzenden naar Windows Defender ATP voor grondige analyse.
-  - **Rapportagefrequentie telemetrie versnellen**: schakel deze instelling in zodat voor apparaten met een hoog risico vaker telemetrie naar de Windows Defender ATP-service wordt gerapporteerd.
-  - **Offboard-configuratiepakket** : als u Windows Defender ATP bewaking wilt verwijderen of 'offloaden', kunt u een Offload-pakket downloaden in het [Windows Defender Security Center](https://securitycenter.windows.com) en dit toevoegen. Sla anders deze eigenschap over.
+  - **Type configuratiepakket van Windows Defender ATP-client**: selecteer **Onboarding uitvoeren** om het configuratiepakket toe te voegen aan het profiel. Selecteer **Offboarding uitvoeren** om configuratiepakket uit het profiel te verwijderen.
+  - **Delen van voorbeelden voor alle bestanden**: via **Inschakelen** staat u toe dat voorbeelden worden verzameld en gedeeld met Windows Defender ATP. Als u bijvoorbeeld een verdacht bestand ziet, kunt u het verzenden naar Windows Defender ATP voor grondige analyse. **Niet geconfigureerd**: eventuele voorbeelden voor het Windows Defender ATP worden niet gedeeld.
+  - **Rapportagefrequentie telemetrie versnellen**: **schakel deze instelling in** zodat voor apparaten met een hoog risico vaker telemetrie naar de Windows Defender ATP-service wordt gerapporteerd.
 
     [Onboard Windows 10 machines using System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection) (Windows 10-apparaten onboarden die System Center Configuration Manager gebruiken) bevat meer informatie over deze instellingen voor Windows Defender ATP.
 

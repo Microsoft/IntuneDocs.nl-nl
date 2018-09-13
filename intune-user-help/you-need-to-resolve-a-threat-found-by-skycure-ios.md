@@ -1,11 +1,11 @@
 ---
 title: Bedreigingen oplossen die zijn gevonden met Symantec Endpoint Protection Mobile voor iOS | Microsoft Docs
-description: Meer informatie over het oplossen van bedreigingen die zijn gevonden op uw iOS-apparaat.
+description: Meer informatie over het oplossen van beveiligings-, virus- en app-bedreigingen die zijn gevonden op uw iOS-apparaat.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/03/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,34 +15,39 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: e8efab6aea68802da0df9b24a75812918e255a57
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: a4bdb394407155be8716cf8039f997f3905f3998
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755059"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148429"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Een bedreiging oplossen die is gevonden met Symantec Endpoint Protection Mobile
 
-Symantec Endpoint Protection Mobile heeft een mogelijke bedreiging gevonden op uw apparaat. U moet het probleem oplossen om weer toegang te krijgen tot uw e-mail, apps en bestanden van uw werk of school. 
+Symantec Endpoint Protection (SEP) Mobile is een Mobile Threat Defender-service waarmee potentiële bedreigingen voor uw Android-apparaten worden geïdentificeerd. Deze bedreigingen worden gerapporteerd aan de bedrijfsportal-app en worden weergegeven als onopgeloste, niet-compatibele problemen. Als uw apparaat is geïdentificeerd als niet-compatibel,kunt u mogelijk geen:
 
-Als u het probleem wilt oplossen, opent u de Symantec Endpoint Protection Mobile-app en volgt u de instructies in de app.
+* verbinding maken met bedrijfs-e-mail
+* verbinding maken met zakelijke Wi-Fi
+* verbinding maken met SharePoint Online
+* bedrijfsbestanden synchroniseren met OneDrive
+* bedrijfsapps openen
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Wat wordt weergegeven als het geregistreerde apparaat geen toegang heeft tot e-mailberichten of bestanden
+In dit artikel wordt beschreven hoe u waarschuwingen voor bedreigingen van SEP Mobile kunt herkennen en wat u moet doen om deze op te lossen. 
 
-Als er een virus of een ander beveiligingsrisico op het geregistreerde apparaat is aangetroffen en u toegang wilt krijgen tot de bestanden of de e-mail van uw bedrijf, ziet u mogelijk een bericht dat er ongeveer als volgt uitziet:
+## <a name="resolve-virus-or-security-threat"></a>Virus- of beveiligingsbedreiging oplossen  
 
-![Skycure-foutbericht met een koppeling naar de website van de bedrijfsportal](./media/mtd-go-to-device-management-portal-android.png)
+1. Wanneer u probeert bedrijfs-e-mail of websites te openen, ontvangt u een bericht zoals is weergegeven in de onderstaande schermafbeelding. Tik op de koppeling **portal voor apparaatbeheer** om de [bedrijfsportalwebsite](https://portal.manage.microsoft.com/devices) te openen.
 
-Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](https://portal.manage.microsoft.com#HelpDeskDialog) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
+    ![Voorbeeldschermafbeelding van een Lookout for Work-foutbericht, met een koppeling naar de bedrijfsportalwebsite en blauwe OK-knop.](./media/mtd-go-to-device-management-portal-android.png)  
 
-## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Voorbeeld van een app die Symantec Endpoint Protection Mobile als een bedreiging ziet
+2. Selecteer uw apparaat.  
+3. Lees de waarschuwing die onder uw apparaat wordt weergegeven. Hierin wordt u geïnstrueerd om SEP Mobile te openen voor het oplossen van de virus- of beveiligingsbedreiging.    
 
-Als u een app hebt geïnstalleerd die Symantec Endpoint Protection Mobile als bedreiging beschouwt, wordt u hierover geïnformeerd in de app.
+## <a name="resolve-an-app-threat"></a>Een app-bedreiging oplossen  
 
-Tik op de naam van de app boven in het scherm en volg de instructies voor het verwijderen van de bedreiging.
+Als u een app installeert die als een bedreiging voor uw apparaat wordt gezien, ontvangt u een melding in de SEP Mobile-app. Als de betreffende app op uw apparaat blijft, hebt u geen toegang tot resources van het bedrijf.  
 
-Nadat u de app hebt verwijderd, hebt u direct weer toegang tot uw e-mail en andere gegevens van uw bedrijf of school. Als u de app niet verwijdert, hebt u geen toegang meer tot uw bedrijfs-e-mail en -gegevens totdat u de app wel verwijdert.
+Als u dit wilt oplossen, selecteert u de app in de lijst met bedreigingen in SEP Mobile. Volg daarna de aanwijzingen op het scherm voor het verwijderen van de app.  
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980). 
 

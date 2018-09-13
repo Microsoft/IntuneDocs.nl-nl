@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
-ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
+ms.openlocfilehash: b37c210425fd5abf8fd0b0501966fef8196b451b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39356570"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312618"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Activeringsslot op iOS-apparaten onder supervisie overslaan met Intune
 
@@ -78,9 +78,9 @@ Met de externe apparaatactie **Activeringsslot overslaan** verwijdert u het Acti
 6. Ga naar de sectie Hardware van het apparaat en kopieer vervolgens de waarde **Code voor het overslaan van het Activeringsslot** onder **Voorwaardelijke toegang**.
 
     >[!NOTE]
-    >Kopieer deze code voor overslaan voordat u de fabrieksinstellingen op het apparaat herstelt. Als u instellingen van het apparaat opnieuw instelt voordat u de code hebt gekopieerd, wordt de code uit Azure verwijderd.
+    >Kopieer de bypass-code voordat u het apparaat wist. Als u instellingen van het apparaat opnieuw instelt voordat u de code hebt gekopieerd, wordt de code uit Azure verwijderd.
 
-7.  Ga naar de blade **Overzicht** voor het apparaat en selecteer vervolgens **Fabrieksinstellingen herstellen**.
+7.  Ga naar de blade **Overzicht** voor het apparaat en selecteer vervolgens **Wissen**.
 8.  Nadat het apparaat opnieuw is ingesteld, wordt u gevraagd om de *Apple ID* en het *wachtwoord*. Laat het veld *Id* leeg en voer vervolgens de **code voor overslaan** in bij het *wachtwoord*. Hiermee verwijdert u het account van het apparaat. 
 
 

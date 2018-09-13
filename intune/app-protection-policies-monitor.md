@@ -15,12 +15,12 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 282666de444e9da0dd5e406cb45cdf1b9e66c1b2
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: b7dea97ef74489e3caae7433e8ebbe2b9ed39aa3
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833151"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330038"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,9 +41,9 @@ Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 ## <a name="summary-view"></a>Samenvattingsweergave
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies **Mobiele apps** in het deelvenster **Intune**.
-4. Kies **Controleren** > **Status van de app-beveiliging** in de workload **Mobiele apps** om de samenvattingsweergave te openen:
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Client-apps**.
+4. Kies in de workload **Client-apps** de optie **Controleren** > **Status van de app-beveiliging** om de samenvattingsweergave te bekijken:
 
 ![De tegel Samenvatting in het deelvenster Intune Mobile Application Management](./media/app-protection-user-status-summary.png)
 

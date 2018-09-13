@@ -1,11 +1,11 @@
 ---
-title: Uw bedrijfsapparaat of macOS-apparaat inschrijven bij beheer | Microsoft Docs
+title: Een door uw organisatie verstrekt macOS-apparaat inschrijven voor beheer | Microsoft Docs
 description: Hier wordt beschreven hoe u een macOS-apparaat inschrijft bij Intune dat is aangeschaft en geleverd door uw organisatie.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 272a82f7d3d62d117fa5506ccf446b3169ff514f
-ms.sourcegitcommit: bb56ada81e6d4950f130415918c4acc455bb52dd
+ms.openlocfilehash: a5808a0ac80390b76058827d2ca0870249b043b9
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43016224"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241827"
 ---
-# <a name="get-your-company-owned-macos-device-managed"></a>Uw macOS-apparaat van het bedrijf laten beheren
+# <a name="enroll-your-organization-provided-macos-device-in-management"></a>Het door uw organisatie verstrekte iOS-apparaat voor beheer inschrijven
 
-Informatie over een nieuw macOS-apparaat automatisch laten beheren in Intune.
+Ontdek hoe u uw nieuwe macOS-apparaat kunt laten beheren in Intune.  
 
-Werk- en schoolapparaten zijn vaak vooraf geconfigureerd voordat u ze ontvangt. Uw organisatie verzendt vooraf geconfigureerde instellingen naar uw apparaat wanneer u het inschakelt en u voor de eerste keer aanmeldt. Nadat de installatie op het apparaat is voltooid, krijgt u toegang tot werk- of schoolresources. 
+Apparaten die aan u worden verstrekt door uw werk of school zijn vaak geconfigureerd voordat u ze hebt ontvangen. Uw organisatie verzendt vooraf geconfigureerde instellingen naar uw apparaat wanneer u het inschakelt en u zich voor de eerste keer aanmeldt. Nadat de installatie op het apparaat is voltooid, krijgt u toegang tot uw werk- of schoolresources. 
 
 U kunt beheer instellen door uw apparaat in te schakelen en u aan te melden met de referenties van uw werk- of schoolaccount. In de rest van dit artikel worden de stappen en de schermen beschreven die u ziet terwijl u de configuratieassistent uitvoert.   
 
 ## <a name="what-is-apple-dep"></a>Wat is Apple DEP?
-Als u een bedrijfsapparaat hebt, is dit mogelijk aangeschaft via het Apple Device Enrollment Program (DEP). Sommige organisaties kopen grote hoeveelheden iOS- of macOS-apparaten via Apple DEP. Organisaties kunnen apparaten vervolgens configureren en beheren in hun favoriete provider voor mobiele apparaatbeheer, zoals Intune. Als u beheerder bent en meer informatie wilt over Apple DEP, zie [MacOS-apparaten automatisch inschrijven met Apple Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos).  
+Uw organisatie heeft mogelijk hun apparaten aangeschaft via een programma met de naam *Apple Device Enrollment Program* (DEP). Organisaties kopen grote hoeveelheden iOS- of macOS-apparaten via Apple DEP. Organisaties kunnen die apparaten vervolgens configureren en beheren in hun favoriete provider voor mobiele apparaatbeheer, zoals Intune. Zie [macOS-apparaten automatisch inschrijven met Apple Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos) als u beheerder bent en informatie wilt over Apple DEP.  
 
 ## <a name="set-up-your-macos-device"></a>MacOS-apparaten inschrijven  
-Voer de volgende stappen uit om uw macOS-apparaat voor beheer in te schrijven. Als u uw eigen apparaat gebruikt, in plaats van een bedrijfsapparaat, volgt u de stappen voor [persoonlijke en bring-your-own-apparaten](enroll-your-device-in-intune-macos-cp.md).  
+Voer de volgende stappen uit om uw macOS-apparaat voor beheer in te schrijven. Als u uw eigen apparaat gebruikt in plaats van een door de organisatie verstrekt apparaat, volgt u de stappen voor [persoonlijke en bring-your-own-apparaten](enroll-your-device-in-intune-macos-cp.md).  
 
 1. Schakel uw macOS-apparaat in. 
 2. Kies uw **taal** en klik op **Doorgaan**.  
@@ -64,4 +64,4 @@ Voer de volgende stappen uit om uw macOS-apparaat voor beheer in te schrijven. A
 ## <a name="get-the-company-portal-app"></a>De Bedrijfsportal-app downloaden      
 Ga naar de App Store om de Intune-bedrijfsportal-app te downloaden op uw apparaat. U kunt met de app uw apparaat controleren, synchroniseren, toevoegen aan en verwijderen uit beheer en apps installeren.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

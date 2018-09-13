@@ -15,12 +15,12 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 859194b364a64854922993d2d798f318b260fc80
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e070e80bb9575154aded12f0992d04bd7a4718f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836333"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329951"
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Aan de slag met Microsoft Intune in Azure Portal
 
@@ -53,7 +53,7 @@ Deze mogelijkheid is relevanter wanneer u eenmaal meer inhoud, zoals groepen en 
 
 ## <a name="using-services"></a>Services gebruiken
 
-Wanneer u Intune of een andere service in Azure opent, wordt de service weergegeven in een **deelvenster**. Een aantal van de eerste workloads die u in Intune gebruikt, zoals **Gebruikers**, **Groepen** en **Mobiele apps**, worden in een deelvenster op het volledige scherm weergegeven. Wanneer u de workload selecteert, wordt hiermee dit deelvenster in een volledige pagina geopend. Andere deelvensters schuiven uit de rechterzijde van het deelvenster wanneer u dit opent, en schuiven weer terug onder het hoofddeelvenster op hun oorspronkelijk plaats.
+Wanneer u Intune of een andere service in Azure opent, wordt de service weergegeven in een **deelvenster**. Een aantal van de eerste workloads die u in Intune gebruikt, zoals **Gebruikers**, **Groepen** en **Client-apps**, worden in een deelvenster op het volledige scherm weergegeven. Wanneer u de workload selecteert, wordt hiermee dit deelvenster in een volledige pagina geopend. Andere deelvensters schuiven uit de rechterzijde van het deelvenster wanneer u dit opent, en schuiven weer terug onder het hoofddeelvenster op hun oorspronkelijk plaats.
 
 ## <a name="next-steps"></a>Volgende stappen
 

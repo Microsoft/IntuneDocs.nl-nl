@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 08/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073832"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347794"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekende problemen in Microsoft Intune
 
@@ -33,6 +33,13 @@ Als u een bug wilt melden die hier niet wordt weergegeven, kunt u een [ondersteu
 Als u een suggestie wilt doen voor een nieuwe functie in Intune, kunt u een rapport indienen op de site [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
 
 ## <a name="migration"></a>Migratie
+
+### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal"></a>Klassiek nalevingsbeleid van Azure Portal exporteren om dit beleid opnieuw te maken in Intune Azure Portal
+
+Nalevingsbeleid gemaakt in de klassieke Azure-portal wordt afgeschaft. U kunt alle bestaande beleidsregels bekijken en verwijderen. U kunt ze echter niet meer bijwerken. Als u nalevingsbeleidsregels moet migreren naar de huidige Intune Azure Portal, kunt u het beleid exporteren als een door komma's gescheiden bestand (CSV-bestand). Vervolgens kunt u de details in het bestand gebruiken om dit beleid opnieuw te maken in Intune Azure Portal.
+
+> [!IMPORTANT]
+> Wanneer de klassieke Azure Portal buiten gebruik wordt gesteld, is het niet meer mogelijk om uw nalevingsbeleid te openen of weer te geven. Zorg er daarom voor dat u uw beleidsregels exporteert en opnieuw maakt in Azure Portal, voordat de klassieke Azure Portal buiten gebruik wordt gesteld.
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Verouderde Intune PC Client-functies zijn alleen beschikbaar in de Silverlight-console
 
@@ -52,7 +59,7 @@ U kunt geen statusinformatie weergeven voor beleidsregels die zijn gemigreerd va
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Meerdere installatieprompts voor apps voor bepaalde VPP-apps
 Mogelijk ziet u meerdere installatieprompts voor bepaalde VPP-apps die al zijn geïnstalleerd op de apparaten van eindgebruikers. Dit probleem doet zich voor als de optie **Automatic app updates** (Automatische app-updates) hebt ingesteld op **Aan** voor het VPP-token dat u naar de Intune Azure-portal hebt geüpload.    
 
-Om dit probleem op te lossen, kunt u de optie **Automatic app updates** (Automatische app-update) voor het VPP-token uitschakelen. Ga hiervoor naar Azure Portal en open Microsoft Intune. Selecteer vanuit Intune **Mobiele apps** > **iOS VPP-tokens**. Selecteer vervolgens het VPP-token dat de getroffen app heeft geïmplementeerd en selecteer **Bewerken** > **Automatic app updates (Automatische app-updates)** > **Uit** > **Opslaan**. Als alternatieve oplossing kunt u ook de implementatie van de getroffen app als VPP-app stoppen. Hiermee maakt u een einde aan de prompts.    
+Om dit probleem op te lossen, kunt u de optie **Automatic app updates** (Automatische app-update) voor het VPP-token uitschakelen. Ga hiervoor naar Azure Portal en open Microsoft Intune. Selecteer vanuit Intune **Client-apps** > **iOS VPP-tokens**. Selecteer vervolgens het VPP-token dat de getroffen app heeft geïmplementeerd en selecteer **Bewerken** > **Automatic app updates (Automatische app-updates)** > **Uit** > **Opslaan**. Als alternatieve oplossing kunt u ook de implementatie van de getroffen app als VPP-app stoppen. Hiermee maakt u een einde aan de prompts.    
 
 Dit is een bekend probleem in de huidige versie. We hebben een geplande fix waarmee dit probleem wordt opgelost. Wanneer de oplossing is geïmplementeerd, zien uw gebruikers niet langer meerdere installatieprompts voor apps.
 

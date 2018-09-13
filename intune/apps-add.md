@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
-ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
+ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40251518"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330157"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune
 
@@ -62,7 +62,7 @@ De volgende tabel bevat de specifieke app-typen en informatie over hoe u deze ku
 | Ingebouwde Android-app  | Ingebouwde app | Selecteer **Ingebouwde app** als het **app-type** en selecteer vervolgens de ingebouwde app in de lijst beschikbare apps.  |
 | Web-apps  | Web-app  | Selecteer **Webkoppeling** als het **app-type** en voer vervolgens een geldige URL in die verwijst naar de web-app.  |
 
-U kunt in Microsoft Intune apps toevoegen via **Mobiele apps** > **Apps** > **Toevoegen**. Het deelvenster **App toevoegen** wordt weergegeven. Hier kunt u het **app-type** selecteren. 
+U kunt in Microsoft Intune apps toevoegen via **Client-apps** > **Apps** > **Toevoegen**. Het deelvenster **App toevoegen** wordt weergegeven. Hier kunt u het **app-type** selecteren. 
 
 >[!TIP]
 > Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Als u bijvoorbeeld een LOB-app voor iOS wilt installeren, voegt u de toepassing toe door in het deelvenster **App toevoegen** de optie **LOB-app** als het **app-type** te kiezen. U selecteert vervolgens het app-pakketbestand (met de extensie .ipa). Deze app-typen worden doorgaans intern ontwikkeld.
@@ -148,8 +148,8 @@ Als u een app aan Intune toevoegt, kunt u de gewenste categorie selecteren. Aan 
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Selecteer **Mobiele apps** in het deelvenster **Intune**.
-4. In het werkbelastingvenster **Mobiele apps**, onder **Installatie**, selecteert u **App-categorieën**.  
+3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
+4. Selecteer in het workloaddeelvenster **Client-apps**, onder **Installatie** **App-categorieën**.  
     In het deelvenster **App-categorieën** wordt een lijst met categorieën weergegeven. 
 5. Gebruik een van de volgende methoden:
     - Selecteer **Toevoegen** in het deelvenster **Categorie maken** en voer een naam in voor de categorie om een categorie te toe te voegen.  

@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c3d0e31520aa2f73eabfce5ebc1d55d4df73946
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329923"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312795"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
@@ -112,10 +112,12 @@ De pincode is een wachtwoordcode die wordt gebruikt om te verifiëren of de juis
 
     - **De pincode wordt gedeeld tussen apps van dezelfde uitgever om de bruikbaarheid te verbeteren:** in iOS wordt de pincode voor apps gedeeld met alle apps **van dezelfde uitgever**. Op Android wordt één pincode voor apps gedeeld met alle andere apps.
     - **Het gedrag van Toegangsvereisten opnieuw controleren na (minuten) na het opnieuw starten van een apparaat:** een timer van de pincode houdt het aantal minuten van inactiviteit, waarmee wordt bepaald wanneer de pincode voor de Intune-app de volgende keer wordt weergegeven. In iOS wordt de timer van de pincode niet beïnvloed door het opnieuw starten van het apparaat. Het opnieuw starten van het apparaat is dus niet van invloed op het aantal minuten dat de gebruiker niet actief is in een iOS-app waarvoor het Intune-pincodebeleid is ingesteld. In Android wordt de timer van de pincode opnieuw ingesteld bij het opnieuw starten van het apparaat. Hierdoor vragen Android-apps waarvoor het Intune-pincodebeleid is ingesteld waarschijnlijk om de pincode voor de app, ongeacht de instelling 'Toegangsvereisten opnieuw controleren na (minuten)' **na het opnieuw starten van een apparaat**.  
-    - **De werking van de timer die aan de pincode is gekoppeld:** Zodra een pincode wordt ingevoerd voor toegang tot een app (app A) en de app de voorgrond op het apparaat verlaat, wordt de timer voor die pincode opnieuw ingesteld. Voor elke app (app B) die deze pincode deelt, wordt de gebruiker niet om de pincode gevraagd, omdat de timer opnieuw is ingesteld. De prompt verschijnt zodra opnieuw aan de waarde voor Toegangsvereisten opnieuw controleren na (minuten) is voldaan. 
+    - **De werking van de timer die aan de pincode is gekoppeld:** Zodra een pincode wordt ingevoerd voor toegang tot een app (app A) en de app de voorgrond op het apparaat verlaat, wordt de timer voor die pincode opnieuw ingesteld. Voor elke app (app B) die deze pincode deelt, wordt de gebruiker niet om de pincode gevraagd, omdat de timer opnieuw is ingesteld. De prompt verschijnt zodra opnieuw aan de waarde voor Toegangsvereisten opnieuw controleren na (minuten) is voldaan.
+
+Zelfs als de pincode wordt gedeeld met apps van andere uitgevers verschijnt bij iOS-apparaten de prompt opnieuw wanneer opnieuw is voldaan aan de waarde **Toegangsvereisten na (minuten) opnieuw controleren** voor de app die niet de belangrijkste invoerfocus is. Een gebruiker heeft bijvoorbeeld app _A_ van uitgever _X_ en app _B_ van uitgever _Y_ en deze twee apps delen dezelfde pincode. De gebruiker is gericht op app _A_ (voorgrond) en app _B_ wordt geminimaliseerd. Nadat is voldaan aan de waarde **Toegangsvereisten na (minuten) opnieuw controleren** en de gebruiker overschakelt naar de app _B_, is de pincode vereist.
 
       >[!NOTE] 
-      > Als u wilt dat de toegangsvereisten van de gebruiker vaker worden gecontroleerd (oftewel dat er om een pincode wordt gevraagd), met name voor een veelgebruikte app, wordt aanbevolen om de waarde voor de instelling 'Toegangsvereisten opnieuw controleren na (minuten)' te verlagen. 
+      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
       
 - **Hoe werkt de pincode van Intune met de ingebouwde pincodes van apps voor Outlook en OneDrive?**<br></br>
 De pincode van Intune werkt op basis van een timer van inactiviteit (ofwel de waarde voor Toegangsvereisten opnieuw controleren na (minuten)). Er wordt dus gevraagd om de pincode van Intune. Dit is onafhankelijk van de prompts voor de pincode van de app voor Outlook en OneDrive, die vaak standaard verschijnen bij het starten van de app. Als beide prompts tegelijk worden weergegeven, moet de pincode van Intune voorrang krijgen. 
@@ -137,13 +139,13 @@ IT-beheerders kunnen een app-beveiligingsbeleid instellen dat vereist dat de geg
 - **Wat wordt versleuteld?**<br></br> Alleen gegevens die zijn gemarkeerd als 'zakelijk' worden versleuteld overeenkomstig het app-beveiligingsbeleid van de IT-beheerder. Gegevens worden als 'zakelijk' beschouwd wanneer ze afkomstig zijn van een bedrijfslocatie. Voor Office-apps worden de volgende locaties door Intune beschouwd als bedrijfslocaties: e-mail (Exchange) of cloudopslag (OneDrive-app met een OneDrive voor Bedrijven-account). Alle app-gegevens in Line-Of-Business-apps die worden beheerd door de Intune App Wrapping Tool-functionaliteit, worden beschouwd als 'zakelijk'.
 
 **Hoe worden gegevens extern gewist met Intune?**<br></br>
-In Intune kunnen app-gegevens op drie verschillende manieren worden gewist: volledig apparaat wissen, selectief wissen voor MDM en selectief wissen voor MAM. Raadpleeg [Apparaten verwijderen door Fabrieksinstellingen terugzetten te gebruiken of bedrijfsgegevens te verwijderen](devices-wipe.md#factory-reset) voor meer informatie over wissen op afstand voor MDM. Raadpleeg [Bedrijfsgegevens verwijderen](devices-wipe.md#remove-company-data) en [Alleen zakelijke gegevens wissen uit door Intune beheerde apps](apps-selective-wipe.md) voor meer informatie over selectief wissen met behulp van MAM.
+In Intune kunnen app-gegevens op drie verschillende manieren worden gewist: volledig apparaat wissen, selectief wissen voor MDM en selectief wissen voor MAM. Raadpleeg [Apparaten verwijderen door wissen of buiten gebruik stellen](devices-wipe.md) voor meer informatie over wissen op afstand voor MDM. Raadpleeg [de actie Buiten gebruik stellen](devices-wipe.md#retire) en [Alleen zakelijke gegevens wissen uit apps](apps-selective-wipe.md) voor meer informatie over selectief wissen met behulp van MAM.
 
-- **Wat is fabrieksinstellingen terugzetten?**<br></br> Met [Fabrieksinstellingen terugzetten](devices-wipe.md) verwijdert u alle gebruikersgegevens en instellingen van **het apparaat** door het apparaat terug te zetten naar de standaardfabrieksinstellingen. Het apparaat wordt uit Intune verwijderd.
+- **Wat is wissen?**<br></br> Met [Wissen](devices-wipe.md) verwijdert u alle gebruikersgegevens en instellingen van **het apparaat** door op het apparaat de fabrieksinstellingen te herstellen. Het apparaat wordt uit Intune verwijderd.
   >[!NOTE]
-  > Alleen apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM), kunnen worden teruggezet naar de fabrieksinstellingen.
+  > Alleen apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM) kunnen worden gewist.
 
-- **Wat is selectief wissen voor MDM?**<br></br> Raadpleeg [Apparaten verwijderen - Bedrijfsgegevens verwijderen](devices-wipe.md#remove-company-data) voor meer informatie over het verwijderen van zakelijke gegevens.
+- **Wat is selectief wissen voor MDM?**<br></br> Raadpleeg [Apparaten verwijderen - buiten gebruik stellen](devices-wipe.md#retire) voor meer informatie over het verwijderen van zakelijke gegevens.
 
 - **Wat is selectief wissen voor MAM?**<br></br> Bij selectief wissen voor MAM worden gegevens van bedrijfs-apps gewoon gewist uit een app. De aanvraag wordt gestart via de Intune Azure-portal. Raadpleeg [Alleen zakelijke gegevens wissen uit door Intune beheerde apps](apps-selective-wipe.md) voor meer informatie over hoe u een verzoek om te wissen aanvraagt.
 

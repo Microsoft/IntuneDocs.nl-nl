@@ -15,18 +15,18 @@ ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: c3b0ba5fc46ad489dcb004554abfee4044a74195
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: 95525e66cce1e9691c60799df3da184954d6bf4b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310433"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312658"
 ---
 # <a name="retire-a-windows-pc"></a>Een Windows-pc buiten gebruik stellen
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
-Gebruik de volgende stappen voor het buiten gebruik stellen van desktops die u als pc's beheert door er de Intune-softwareclient op uit te voeren. Wanneer u een pc buiten gebruik stelt, wordt deze uit Intune-beheer verwijderd. U kunt een pc niet vanuit Intune terugzetten naar de oorspronkelijke fabrieksinstellingen.
+Gebruik de volgende stappen voor het buiten gebruik stellen van desktops die u als pc's beheert door er de Intune-softwareclient op uit te voeren. Wanneer u een pc buiten gebruik stelt, wordt deze uit Intune-beheer verwijderd. U kunt een pc niet wissen vanuit Intune en deze terugzetten naar de oorspronkelijke fabrieksinstellingen.
 
 1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Groepen**&gt;**Alle apparaten** (of een andere groep die de pc bevat die u buiten gebruik wilt stellen).
 

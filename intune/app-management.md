@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: aebfea2f52540b4193811121334e3cebf916175b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255375"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330140"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
@@ -61,16 +61,16 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 
 ## <a name="get-started"></a>Aan de slag
 
-U vindt de meeste app-gerelateerde informatie in de workload **Mobiele apps** die als volgt toegankelijk is:
+U vindt de meeste app-gerelateerde informatie in de workload **Client-apps** die als volgt toegankelijk is:
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**.  
     Intune bevindt zich in de sectie **Controle en beheer**.
-3. Selecteer in het deelvenster **Microsoft Intune** de optie **Mobiele apps**.
+3. Selecteer in het deelvenster **Microsoft Intune** de optie **Client-apps**.
 
     ![Het workloaddeelvenster Mobiele apps](./media/apps-workload.png)
 
-De volgende vier secties beschrijven de beschikbare opties in het deelvenster **Mobiele apps**.
+In se volgende vier secties worden de beschikbare opties in het deelvenster **Client-apps** beschreven.
 
 ### <a name="manage"></a>Manage
 - **Apps**: selecteer deze optie als u de apps die uw werknemers gebruiken, wilt toevoegen, weergeven, toewijzen en bewaken. Zie voor meer informatie:

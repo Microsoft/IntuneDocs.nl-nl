@@ -6,19 +6,19 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5220d9c2e1ba98873658631798240af9e7587758
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ff3b482f974641dd7255dc98d3af62542d802de9
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834767"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313731"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Windows Hello voor Bedrijven integreren in Microsoft Intune
 
@@ -31,7 +31,10 @@ U kunt Windows Hello voor Bedrijven (voorheen Microsoft Passport for Work) integ
 
 Intune integreert op twee manieren met Hello voor bedrijven:
 
--   U kunt Intune-beleid gebruiken om te bepalen welke gebaren gebruikers wel en niet kunnen gebruiken om zich aan te melden.
+-   Een Intune-beleid kan worden gemaakt onder **apparaatinschrijving**. Dit beleid is gericht op de hele organisatie (tenant-breed). Het biedt ondersteuning voor het Windows AutoPilot out-of-box-experience (OOBE) en wordt toegepast wanneer een apparaat wordt ingeschreven. 
+-  Een profiel voor identiteitsbescherming kan worden gemaakt onder **apparaatconfiguratie**. Dit profiel is gericht op toegewezen gebruikers en apparaten, en wordt toegepast tijdens het inchecken. 
+
+Gebruik dit artikel om een standaard Windows Hello voor Bedrijven-beleid te maken dat is gericht op uw hele organisatie. Zie [Een identiteitsbeschermingprofiel configureren](identity-protection-configure.md) voor het maken van een identiteitsbeschermingprofiel dat is toegepast om gebruikers- en apparaatgroepen te selecteren.  
 
 <!--- -   You can store authentication certificates in the Windows Hello for Business key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md). --->
 

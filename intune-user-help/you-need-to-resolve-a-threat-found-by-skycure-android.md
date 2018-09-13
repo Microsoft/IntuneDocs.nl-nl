@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,36 +15,41 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: caac4b62c141145ac976d1515e6fdc92da90e962
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: ae001eb4d85a35b587eee4fa04df5f1987b247f7
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753087"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149804"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Een bedreiging oplossen die is gevonden met Symantec Endpoint Protection Mobile
 
-Symantec Endpoint Protection Mobile heeft een mogelijke bedreiging gevonden op uw apparaat. U moet het probleem oplossen om weer toegang te krijgen tot uw e-mail, apps en bestanden van uw werk of school. Het bericht dat u te zien krijgt, ziet er ongeveer als volgt uit:
+Symantec Endpoint Protection (SEP) Mobile is een Mobile Threat Defender-service waarmee potentiële bedreigingen voor uw Android-apparaten worden geïdentificeerd. Deze bedreigingen worden gerapporteerd aan de bedrijfsportal-app en worden weergegeven als onopgeloste, niet-compatibele problemen. Als uw apparaat is geïdentificeerd als niet-compatibel,kunt u mogelijk geen:
 
-![Skycure heeft een bedreiging gevonden op uw apparaat](./media/lookout-threat-found-android.png)
+* verbinding maken met bedrijfs-e-mail
+* verbinding maken met zakelijke Wi-Fi
+* verbinding maken met SharePoint Online
+* bedrijfsbestanden synchroniseren met OneDrive
+* bedrijfsapps openen
 
-Als u het probleem wilt oplossen, opent u de Symantec Endpoint Protection Mobile-app en volgt u de instructies in de app.
+In dit artikel wordt beschreven hoe u waarschuwingen van SEP Mobile voor bedreigingen kunt herkennen en wat u moet doen om deze op te lossen. 
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Wat wordt weergegeven als het geregistreerde apparaat geen toegang heeft tot e-mailberichten of bestanden
+## <a name="resolve-virus-or-security-threat"></a>Virus- of beveiligingsbedreiging oplossen  
 
-Als er een virus of een ander beveiligingsrisico op het geregistreerde apparaat is aangetroffen en u toegang wilt krijgen tot de bestanden of de e-mail van uw bedrijf, ziet u mogelijk een bericht dat er ongeveer als volgt uitziet:
+1. Wanneer u probeert bedrijfs-e-mail of websites te openen, ontvangt u een bericht zoals is weergegeven in de onderstaande schermafbeelding. Tik op de koppeling **portal voor apparaatbeheer** om de [bedrijfsportalwebsite](https://portal.manage.microsoft.com/devices) te openen.
 
-![Skycure-foutbericht met een koppeling naar de website van de bedrijfsportal](./media/skycure-list-of-potential-issues-android.png)
+    ![Voorbeeldschermafbeelding van een Lookout for Work-foutbericht, met een koppeling naar de bedrijfsportalwebsite en blauwe OK-knop.](./media/mtd-go-to-device-management-portal-android.png)  
 
-Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](https://portal.manage.microsoft.com#HelpDeskDialog) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
+2. Selecteer uw apparaat.  
+3. Lees de waarschuwing die onder uw apparaat wordt weergegeven. Hierin wordt u geïnstrueerd om SEP Mobile te openen voor het oplossen van de virus- of beveiligingsbedreiging.     
 
-## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Voorbeeld van een app die Symantec Endpoint Protection Mobile als een bedreiging ziet
+    ![Voorbeeld-schermopname van de apparaatpagina van de bedrijfsportal, met de waarschuwing van SEP Mobile.](./media/CP-lookout-virus-banner-1808.png)
 
-Als u een app hebt geïnstalleerd die door Symantec Endpoint Protection Mobile als een bedreiging wordt beschouwd, krijgt u een scherm te zien dat vergelijkbaar is met het volgende scherm:
+## <a name="resolve-an-app-threat"></a>Een app-bedreiging oplossen  
 
-![Voorbeeld van een Skycure-bericht met een viruswaarschuwing](./media/skycure-virus-alert-android.png)
+Als u een app installeert die als een bedreiging voor uw apparaat wordt gezien, ontvangt u een melding in de SEP Mobile-app. Als de betreffende app op uw apparaat blijft, hebt u geen toegang tot resources van het bedrijf.  
 
-Nadat u de app hebt verwijderd, krijgt u direct weer toegang tot de e-mail en gegevens van uw bedrijf. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
+Als u dit wilt oplossen, selecteert u de app in de lijst met bedreigingen in SEP Mobile. Volg daarna de aanwijzingen op het scherm voor het verwijderen van de app.  
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
-ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
+ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39587020"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313696"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android- en Samsung Knox Standard-apparaatbeperkingsinstellingen - Intune
 
@@ -35,7 +35,7 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
 - **Kopiëren en plakken (alleen voor Samsung Knox)**: hiermee staat u het gebruik van de functies voor kopiëren en plakken op het apparaat toe.
 - **Klembord delen tussen apps (alleen voor Samsung Knox)**: hiermee staat u het gebruik van het kopiëren en plakken met Klembord toe tussen apps.
 - **Verzenden van diagnostische gegevens (alleen voor Samsung Knox)**: hiermee voorkomt u dat de gebruiker diagnostische gegevens vanaf het apparaat kan verzenden.
-- **Fabrieksinstellingen terugzetten (alleen voor Samsung Knox)**: hiermee staat u de gebruiker toe de fabrieksinstellingen terug te zetten op het apparaat.
+- **Wissen (alleen voor Samsung Knox)**: hiermee staat u de gebruiker toe het apparaat te [Wissen](devices-wipe.md).
 - **Geolocatie (alleen voor Samsung Knox)**: hiermee staat u toe dat het apparaat locatiegegevens gebruikt.
 - **Uitschakelen (alleen voor Samsung Knox)**: hiermee staat u toe dat de gebruiker het apparaat mag uitschakelen.<br>Als deze optie is uitgeschakeld, kan **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist** niet worden ingesteld.
 - **Schermafbeelding (alleen voor Samsung Knox)**: hiermee staat u de gebruiker toe om de inhoud van het scherm vast te leggen als afbeelding.

@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268835"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313493"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>iOS-updatebeleid in Intune configureren
 
@@ -32,7 +32,7 @@ Deze functie biedt ondersteuning voor apparaten met iOS 10.3 en hoger.
 4. Geef een naam en beschrijving op voor het beleid.
 5. Selecteer **Instellingen**. 
 
-    Voer de details in voor het geval waarbij iOS-apparaten niet worden gedwongen de meest recente update te installeren. Deze instellingen zorgen voor een beperkte tijdsperiode. U kunt de dagen van de week, de tijdzone, de begintijd en de eindtijd configureren.
+    Voer de details in voor het geval waarbij iOS-apparaten niet worden gedwongen de meest recente update te installeren. Deze instellingen zorgen voor een beperkte tijdsperiode. U kunt de **dagen** van de week, de **tijdzone**, de **begintijd** en de **eindtijd** configureren, en instellen of u wel of niet **de zichtbaarheid van de software-update wilt vertragen (dagen)** om gebruikers in te voeren. U kunt een vertragingsbereik van software-updates selecteren van 1 tot 90 dagen. Als u geen vertraging van software-update wilt instellen, geeft u 0 op. Deze update-instellingen zijn alleen van toepassing op onder supervisie staande iOS-apparaten.
 
 6. Selecteer **OK** om uw wijzigingen op te slaan. Selecteer **Maken** om het beleid te maken.
 

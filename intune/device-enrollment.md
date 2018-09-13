@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7aabb010baa4a5e53ad5e4264edc43e3ca111c70
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1bd9cff2148857ab6b0ea6d6e3c940e1e731c44b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909198"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313158"
 ---
 # <a name="what-is-device-enrollment"></a>Wat is apparaatinschrijving?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,7 +34,7 @@ Standaard kunnen apparaten voor alle platforms worden ingeschreven in Intune. U 
 
 | **Methode** |  **Opnieuw instellen vereist** |    [**Gebruikersaffiniteit**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **Vergrendeld** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-| | Apparaten worden tijdens de registratie teruggezet naar de fabrieksinstellingen. |  Hiermee wordt elk apparaat aan een gebruiker gekoppeld.| Gebruikers kunnen apparaten niet uitschrijven.  | |
+| | Apparaten worden gewist tijdens de registratie. |  Hiermee wordt elk apparaat aan een gebruiker gekoppeld.| Gebruikers kunnen apparaten niet uitschrijven.  | |
 |**[BYOD](#bring-your-own-device)** | Nee|   Ja |   Nee | [Meer informatie](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| Nee |Nee |Nee  | [Meer informatie](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**|   Ja |   Optioneel |  Optioneel|[Meer informatie](./device-enrollment-program-enroll-ios.md)|
@@ -95,7 +95,7 @@ Meer informatie over de registratie van de iOS Apple Configurator met Configurat
 - [iOS-apparaten inschrijven met Configurator en Configuratieassistent](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-Voor directe registratie moet de beheerder elk apparaat handmatig registreren door een registratiebeleid te maken en dit te exporteren naar Apple Configurator. Via USB aangesloten apparaten van het bedrijf worden direct geregistreerd zonder dat de fabrieksinstellingen hoeven worden hersteld. De apparaten worden beheerd als apparaten zonder gebruiker. Ze zijn niet vergrendeld of onder supervisie en kunnen geen voorwaardelijke toegang, jailbreakdetectie en beheer van mobiele toepassingen ondersteunen.
+Voor directe registratie moet de beheerder elk apparaat handmatig registreren door een registratiebeleid te maken en dit te exporteren naar Apple Configurator. Via USB aangesloten apparaten van het bedrijf worden direct geregistreerd zonder dat deze hoeven te worden gewist. De apparaten worden beheerd als apparaten zonder gebruiker. Ze zijn niet vergrendeld of onder supervisie en kunnen geen voorwaardelijke toegang, jailbreakdetectie en beheer van mobiele toepassingen ondersteunen.
 
 Zie voor meer informatie over de iOS-inschrijving:
 

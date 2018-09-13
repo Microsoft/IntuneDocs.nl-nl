@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/28/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: da220e1f82c59f3181d64dc01d071867d62df397
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335823"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313969"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Wat zijn Microsoft Intune-apparaatprofielen?
 
@@ -54,6 +54,7 @@ Deze functie ondersteunt:
 - iOS 
 - macOS
 
+
 ## <a name="device-restrictions"></a>Apparaatbeperkingen
 [Apparaatbeperkingen](device-restrictions-configure.md) beheert beveiliging, hardware, delen van gegevens en meer instellingen op de apparaten. U kunt bijvoorbeeld een apparaatbeperkingsprofiel maken waarmee wordt voorkomen dat gebruikers van iOS-apparaten de camera van het apparaat gebruiken. 
 
@@ -72,6 +73,13 @@ Zie het Engelstalige artikel [Configure endpoints using Mobile Device Management
 
 Deze functie ondersteunt:
 - Windows 10 en hoger
+
+## <a name="identity-protection"></a>Identiteitsbescherming
+Met [Identiteitsbescherming](identity-protection-configure.md) beheert u de Windows Hello voor Bedrijven-ervaring op Windows 10 en Windows 10 Mobile-apparaten. Configureer deze instellingen om Windows Hello voor Bedrijven beschikbaar maken voor gebruikers en apparaten, en om de vereisten op te geven voor pincodes en gebaren voor apparaten.  
+
+Deze functie ondersteunt:  
+- Windows 10 en hoger
+- Windows Holographic for Business  
 
 ## <a name="kiosk"></a>Kiosk
 

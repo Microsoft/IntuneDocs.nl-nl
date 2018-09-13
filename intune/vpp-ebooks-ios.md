@@ -15,12 +15,12 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c00904097986d1cf70031f1b17171221da64abc0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1b43e7df72e709cfdd929085b1d6718f1afcdf9f
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224797"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347349"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>iOS-apps beheren die u via een volume-aankoopprogramma hebt aangeschaft met Microsoft Intune
 
@@ -54,9 +54,9 @@ Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Een Apple VPP-token verkrijgen en uploaden
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Bewaking en beheer**.
-3. Kies **Mobiele apps** in het deelvenster **Intune**.
-1.  Kies **Instellen** > **VPP-tokens voor iOS** in de workload **Mobiele apps**.
+2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+3. Kies in het deelvenster **Intune** de optie **Client-apps**.
+1.  Kies in de workload **Client-apps** de optie **Instellen** > **VPP-tokens voor iOS**.
 2.  Klik in het deelvenster met de lijst met VPP-tokens op **Maken**.
 3.  Geef in het deelvenster **Nieuw VPP-token** de volgende gegevens op:
     - **VPP-tokenbestand**: zorg dat u zich hebt aangemeld voor het VPP-programma voor bedrijven of voor het VPP-programma voor onderwijs. Download vervolgens het Apple VPP-token voor uw account en selecteer het hier.

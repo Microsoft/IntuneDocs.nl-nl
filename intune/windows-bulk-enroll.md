@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: a1d0c445c2e6e5f2e4227d1b04ead416bf73d737
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 937fdd2130a0ae85421a4310fe6a0dc70986d2de
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444877"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313235"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Bulkregistratie voor Windows-apparaten
 
@@ -85,10 +85,10 @@ Azure AD-gebruikers zijn standaardgebruikers op deze apparaten en ontvangen toeg
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Problemen met bulksgewijze registratie bij Windows oplossen
 
 ### <a name="provisioning-issues"></a>Inrichtingsproblemen
-Inrichten is bedoeld om te gebruiken op nieuwe Windows-apparaten. Bij inrichtingsfouten is het mogelijk vereist dat de fabrieksinstellingen van het apparaat worden hersteld of dat het apparaat wordt gestart vanaf een opstartinstallatiekopie. Deze voorbeelden bevatten enkele redenen voor inrichtingsfouten:
+Inrichten is bedoeld om te gebruiken op nieuwe Windows-apparaten. Bij inrichtingsfouten is het mogelijk vereist dat het apparaat wordt gewist of dat het apparaat wordt gestart vanaf een opstartinstallatiekopie. Deze voorbeelden bevatten enkele redenen voor inrichtingsfouten:
 
 - Als een inrichtingspakket probeert lid te worden van een Active Directory-domein of Azure Active Directory-tenant en er hierbij geen lokaal account wordt gemaakt, kan het apparaat onbereikbaar worden als het lid worden van het domein mislukt omdat er geen netwerkverbinding is.
-- Scripts van het inrichtingspakket worden uitgevoerd binnen de systeemcontext. De scripts kunnen willekeurige wijzigingen aanbrengen in het bestandssysteem en configuraties van het apparaat. Door een schadelijk of fout script kan het apparaat in een status komen die alleen kan worden beëindigd door een installatiekopie terug te zetten op het apparaat of het apparaat terug te zetten op de fabrieksinstellingen.
+- Scripts van het inrichtingspakket worden uitgevoerd binnen de systeemcontext. De scripts kunnen willekeurige wijzigingen aanbrengen in het bestandssysteem en configuraties van het apparaat. Door een schadelijk of fout script kan het apparaat in een status komen die alleen kan worden beëindigd door een installatiekopie terug te zetten op het apparaat of het apparaat te wissen.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemen met bulkinschrijving en de bedrijfsportal
 Als een gebruiker via de bedrijfsportal probeert een apparaat te registreren dat eerder bulksgewijs is geregistreerd, wordt er een waarschuwing weergegeven dat er verdere actie is vereist voor het apparaat, hetzij door installatie of registratie. Het apparaat wordt geregistreerd, maar de registratie wordt niet herkend door de bedrijfsportal-app of -website.

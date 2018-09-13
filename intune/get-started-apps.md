@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 6b69934edc70e10ee01394cf5b6a4fed75334660
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869335"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330055"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Aan de slag met het toevoegen van apps in Microsoft Intune
 
@@ -39,7 +39,7 @@ In Intune kunt u deze typen apps toevoegen en toewijzen aan uw bedrijfsapparaten
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Selecteer **Mobile Apps** en selecteer daarna **Apps**.
+3. Selecteer **Client-apps** en selecteer daarna **Apps**.
 4. Selecteer **Toevoegen** en selecteer vervolgens **iOS** als het **app-type**.
 5. Kies **App selecteren** om het deelvenster **Zoeken in de App Store** weer te geven.
 6. Gebruik het tekstvak om te zoeken naar een app die u wilt toewijzen aan het apparaat. Kies de app en klik vervolgens op **Selecteren**.

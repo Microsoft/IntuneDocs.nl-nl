@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61df998dae611eb7350fa144260780b5589afc61
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762243"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347304"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune
 
@@ -62,8 +62,8 @@ Nadat u Intune hebt ingesteld in uw organisatie, kunt u specifiek WIP-beleid mak
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**.
-3. Selecteer **Mobiele apps** op de blade **Microsoft Intune**.
-4. Selecteer **App-beveiligingsbeleid** op de blade **Mobiele apps**.
+3. Selecteer **Client-apps** op de blade **Microsoft Intune**.
+4. Selecteer **App-beveiligingsbeleid** op de blade **Client-apps**.
 5. Selecteer **Een beleid toevoegen** om de blade **Een beleid toevoegen** weer te geven.
 6. Voeg de volgende waarden toe:
     - **Naam:** typ een naam (vereist) voor het nieuwe beleid.
@@ -74,8 +74,8 @@ Nadat u Intune hebt ingesteld in uw organisatie, kunt u specifiek WIP-beleid mak
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Aanbevolen apps toevoegen aan de lijst met beschermde apps
 
-1. Selecteer **Mobiele apps** op de blade **Microsoft Intune**.
-2. Selecteer **App-beveiligingsbeleid** op de blade **Mobiele apps**.
+1. Selecteer **Client-apps** op de blade **Microsoft Intune**.
+2. Selecteer **App-beveiligingsbeleid** op de blade **Client-apps**.
 3. Op de blade **App-beveiligingsbeleid** kiest u het beleid dat u wilt bewerken. De blade **Intune-app-beveiliging** wordt weergegeven.
 4. Kies **Beveiligde apps** op de blade **Intune-app-beveiliging**. De blade **Beveiligde apps** wordt geopend, waarop alle apps worden weergegeven die al zijn opgenomen in de lijst voor het beveiligingsbeleid voor deze app.
 5. Selecteer **Apps toevoegen**. In **Apps toevoegen** ziet u een lijst gefilterde apps. Met de lijst bovenaan de blade kunt u de lijstfilter wijzigen.
@@ -86,8 +86,8 @@ Nadat u Intune hebt ingesteld in uw organisatie, kunt u specifiek WIP-beleid mak
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Een Store-app toevoegen aan de lijst met beschermde apps
 
 **Een Store-app toevoegen**
-1. Selecteer **Mobiele apps** op de blade **Microsoft Intune**.
-2. Selecteer **App-beveiligingsbeleid** op de blade **Mobiele apps**.
+1. Selecteer **Client-apps** op de blade **Microsoft Intune**.
+2. Selecteer **App-beveiligingsbeleid** op de blade **Client-apps**.
 3. Op de blade **App-beveiligingsbeleid** kiest u het beleid dat u wilt bewerken. De blade **Intune-app-beveiliging** wordt weergegeven.
 4. Kies **Beveiligde apps** op de blade **Intune-app-beveiliging**. De blade **Beveiligde apps** wordt geopend, waarop alle apps worden weergegeven die al zijn opgenomen in de lijst voor het beveiligingsbeleid voor deze app.
 5. Selecteer **Apps toevoegen**. In **Apps toevoegen** ziet u een lijst gefilterde apps. Met de lijst bovenaan de blade kunt u de lijstfilter wijzigen.
@@ -99,8 +99,8 @@ Nadat u Intune hebt ingesteld in uw organisatie, kunt u specifiek WIP-beleid mak
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Een desktop-app toevoegen aan de lijst met beschermde apps
 
 **Een bureaublad-app toevoegen**
-1. Selecteer **Mobiele apps** op de blade **Microsoft Intune**.
-2. Selecteer **App-beveiligingsbeleid** op de blade **Mobiele apps**.
+1. Selecteer **Client-apps** op de blade **Microsoft Intune**.
+2. Selecteer **App-beveiligingsbeleid** op de blade **Client-apps**.
 3. Op de blade **App-beveiligingsbeleid** kiest u het beleid dat u wilt bewerken. De blade **Intune-app-beveiliging** wordt weergegeven.
 4. Kies **Beveiligde apps** op de blade **Intune-app-beveiliging**. De blade **Beveiligde apps** wordt geopend, waarop alle apps worden weergegeven die al zijn opgenomen in de lijst voor het beveiligingsbeleid voor deze app.
 5. Selecteer **Apps toevoegen**. In **Apps toevoegen** ziet u een lijst gefilterde apps. Met de lijst bovenaan de blade kunt u de lijstfilter wijzigen.
@@ -116,8 +116,7 @@ Nadat u de apps hebt toegevoegd die u wilt beveiligen met WIP, moet u een beveil
 
 WIP Learning is een rapport waarmee u uw apps met WIP-functionaliteit en uw voor WIP onbekende apps in de gaten kunt houden. Onbekende apps zijn apps die niet zijn geïmplementeerd door de IT-afdeling van uw organisatie. U kunt deze apps uit het rapport exporteren en toevoegen aan uw WIP-beleid om te voorkomen dat de productiviteit wordt onderbroken voordat WIP in de modus Blokkeren wordt afgedwongen.
 
-<!-- 1631908 -->
-Er wordt informatie over WIP-apps weergegeven en u kunt een overzicht bekijken van de apparaten die zakelijke gegevens hebben gedeeld met websites. Met deze informatie kunt u bepalen welke websites er moeten worden toegevoegd aan WIP-beleid voor groepen en gebruikers. In het overzicht ziet u welke website-URL's worden gebruikt door apps waarvoor WIP is ingeschakeld.
+<!-- 1631908 --> Naast informatie over voor WIP geschikte apps kunt u een overzicht bekijken van de apparaten die zakelijke gegevens hebben gedeeld met websites. Met deze informatie kunt u bepalen welke websites er moeten worden toegevoegd aan WIP-beleid voor groepen en gebruikers. In het overzicht ziet u welke website-URL's worden gebruikt door apps waarvoor WIP is ingeschakeld.
 
 Wanneer u met apps met WIP-functionaliteit en voor WIP onbekende apps werkt, wordt het aanbevolen dat u start met **Stil** of **Onderdrukkingen toestaan** als u met een kleine groep controleert of de juiste apps in de lijst met beschermde apps staan. Vervolgens kunt u uw uiteindelijke afdwingingsbeleid wijzigen via **Blokkeren**.
 
@@ -149,7 +148,7 @@ Als u WIP hebt uitgeschakeld, wordt een poging gedaan om door WIP gemarkeerde be
 
 1. Open [Azure Portal](https://portal.azure.com). Kies **Alle services**. Type **Intune** in het tekstvakfilter.
 
-3. Kies **Intune** > **Mobiele apps**.
+3. Kies **Intune** > **Client-apps**.
 
 4. Kies **Status van de app-beveiliging** > **Rapporten** > **Kennismaken met Windows Information Protection**.  
 

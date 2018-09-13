@@ -5,7 +5,7 @@ keywords: Mac OS X, Mac OS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/11/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,50 +17,71 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3dac9446d7a1097f5be4d0851cd78e8cbb86cc4e
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224754"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147714"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Uw macOS-apparaten registreren bij Intune met de bedrijfsportal-app
 
-Als u toegang hebt tot de apps, gegevens en bronnen van uw organisatie kunt u gemakkelijker uw werk uitvoeren. Uw organisatie gebruikt Intune voor het [beheren van toegang tot deze bronnen](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md), waarvoor u de bedrijfsportal-app voor macOS moet downloaden. Deze instructies werken voor macOS-apparaten op OS X El Capitan 10.11 +.
+Registreer uw macOS-apparaat met de bedrijfsportal-app van Intune voor beveiligde toegang tot e-mail, bestanden en apps van uw organisatie.
+
+Organisaties verplichten u vaak om uw apparaat te laten beheren voordat u toegang krijgt tot de vertrouwelijke gegevens van de organisatie. Nadat een apparaat wordt beheerd, kunnen organisaties beleid en apps pushen naar het apparaat via hun provider voor het beheer van mobiele apparaten. Voor continue toegang tot werk- of schoolgegevens op uw apparaat moet u uw apparaat zo configureren dat deze overeenkomt met de beleidsinstellingen.  
+
+In dit artikel wordt beschreven hoe u met behulp van de Intune-bedrijfsportal-app voor macOS uw apparaat zo kunt registreren, configureren en onderhouden dat dit voldoet aan de vereisten van uw organisatie.
+
+## <a name="what-to-expect-from-the-company-portal-app"></a>Wat u kunt verwachten van de bedrijfsportal-app
+
+Tijdens de eerste configuratie verplicht de app u om uzelf te verifiëren bij uw organisatie. Vervolgens krijgt u instructies over de te maken apparaatinstellingen. Organisaties stellen bijvoorbeeld vaak wachtwoordvereisten van een minimum- of maximumaantal tekens waaraan u moet voldoen.    
+
+Nadat het apparaat is geregistreerd, zorgt de bedrijfsportal-app ervoor dat uw apparaat beveiligd blijft. Als u bijvoorbeeld een app installeert vanaf een niet-vertrouwde bron, geeft de app een waarschuwing en wordt soms de toegang tot bedrijfsgegevens ontzegd. Dergelijk app-beveiligingsbeleid is gebruikelijk binnen organisaties en verplicht u vaak om niet-vertrouwde apps te verwijderen voordat u weer toegang kunt krijgen.
+
+Als uw organisatie na de registratie een nieuwe beveiligingsvereiste oplegt, zoals meervoudige verificatie, wordt u via de bedrijfsportal-app op de hoogte gebracht. U hebt de mogelijkheid om uw instellingen aan te passen, zodat u op uw apparaat kunt blijven werken.  
+
+Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat inschrijf?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md) voor meer informatie over de registratie.  
+
+## <a name="get-your-device-managed"></a>Uw apparaat laten beheren  
+Gebruik de volgende stappen om macOS-apparaten met OS X El Capitan 10.11 en hoger te registreren.   
 
 
-1. Ga in de __Dock__ naar __Safari__ en open een nieuw venster. Open vervolgens de [bedrijfsportalwebsite](https://portal.manage.microsoft.com).
+1. Open een nieuw venster in __Safari__ en ga naar https://portal.manage.microsoft.com voor toegang tot de bedrijfsportalwebsite.  
 
 2. Meld u aan bij de bedrijfsportalwebsite met uw werk- of schoolaccount.
 
    [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
 
 
-3. Nadat u zich hebt aangemeld, klik u op het **Menu** in de linkerbovenhoek van de pagina en selecteert u **Mijn apparaten**.
+3. Ga naar de linkerbovenhoek van de pagina en klik op **Menu** > **Apparaten**.  
 
-   ![Een schermafbeelding van de startpagina voor de web-portal waarin wordt aangegeven dat er nog geen apps kunnen worden geïnstalleerd, met een knop Mijn apparaten eronder.](./media/macOS_enroll_001_landing_page.png)
+4. Op de pagina __Apparaten__ ziet u een lijst met beheerde apparaten of een banner. Wat u ziet, is afhankelijk van of u al over een beheerd apparaat beschikt. 
+    * Als u een niet-vermeld apparaat wilt toevoegen, selecteert u de banner met de tekst **Tik hier om ons te laten weten welk apparaat u gebruikt of om een nieuw apparaat toe te voegen.**
+    * Als u geen apparaten hebt, toont de banner **U hebt geen beheerde apparaten. Voeg dit apparaat toe door hier te tikken.** Klik op de banner als u uw apparaat wilt toevoegen.  
 
-4. Op de pagina __Mijn apparaten__ ziet u ofwel een lijst van geregistreerde apparaten of gewoon een koptekst. Dit is afhankelijk van of u al een apparaat hebt ingeschreven, macOS of anderszins. Om een apparaat in te schrijven dat niet wordt weergegeven, selecteert u de koptekst __Klik hier als uw apparaat in de lijst voorkomt om het te identificeren. U kunt ook hier tikken om uw apparaat in te schrijven als dit niet wordt weergegeven__. Als u geen geregistreerde apparaten hebt, toont de banner **U hebt geen apparaten geregistreerd. U kunt dit apparaat registreren door hier te tikken.**
+     ![Een schermafbeelding van de pagina Apparaten met een rood vierkant rond de banner-optie om aan te geven waar u moet klikken.](./media/CP-enroll-MACOS-1808.png)  
+5.  Voer onderstaande stap uit in overeenstemming met het bericht u momenteel in de bedrijfsportal ziet.  
+    * Als u voor de eerste keer een apparaat toevoegt, wordt u gevraagd om de bedrijfsportal-app te downloaden naar uw apparaat. Klik op **Downloaden** om door te gaan.  
 
-    ![Een schermafbeelding van de pagina Mijn apparaat met een paar onbekende apparaten boven de koptekst die vraagt naar het inschrijven van niet-vermelde apparaten of het identificeren van ongeïdentificeerde apparaten.](./media/macOS_enroll_002_tap_here_banner.png)
+         ![Voorbeeldschermafbeelding van het scherm met de prompt om de bedrijfsportal-app voor macOS te downloaden. De gebruiker kan de volgende opties selecteren: klikken op de blauwe knop Downloaden linksonder de prompt, of op de grijze knop Annuleren rechtsonder.](./media/CP-enroll-download-macOS-1808.png)  
 
-5. Download de bedrijfsportal-app naar uw macOS-apparaat om door te gaan met de registratie.
+    * Als u al een beheerd macOS-apparaat hebt, ontvangt u een opdrachtprompt met een lijst van de momenteel beheerde macOS-apparaten. Selecteer **Mijn apparaat wordt hier niet vermeld** > **Downloaden** om de bedrijfsportal-app te downloaden op het apparaat dat u wilt toevoegen.  
 
-    ![De melding waarin een gebruiker wordt gevraagd om de bedrijfsportal-app voor macOS te downloaden. Deze melding is de tekst vermeld in de bovenstaande stap waarin 'Downloaden' in de rechterbenedenhoek wordt weergegeven.](./media/macOS_enroll_IWP_CP_app_notice.png)
+         ![Voorbeeldschermafbeelding van het scherm met de prompt om de bedrijfsportal-app voor macOS te downloaden. De gebruiker heeft de optie om *Mijn apparaat wordt hier niet vermeld* of een specifiek apparaat in het midden van de pagina te selecteren. De blauwe knop voor downloaden wordt linksonder de opdrachtprompt weergegeven, en een grijze knop voor annuleren in rechtsonder](./media/cp-mac-os-device-isnt-here-1808.png)  
 
-6. Uw Mac controleert of het downloadbestand van **CompanyPortal.pkg** veilig kan worden geopend. Open het installatieprogramma en volg het installatieproces.
+6. Uw apparaat controleert of het installatiebestand **CompanyPortal.pkg** veilig kan worden geopend. Open, nadat dit is voltooid, het installatieprogramma en voltooi de installatie.  
 
-7. Als het installatieprogramma is voltooid, opent u de map **Programma's** of **Launchpad** en opent u vervolgens **Bedrijfsportal**.
+7. Als het installatieprogramma is voltooid, gaat u naar de **Launchpad** en opent u **Bedrijfsportal**.  
 
-8. U krijgt een bericht waarin wordt gemeld dat **'CompanyPortal' een toepassing is die is gedownload van internet. Weet u zeker dat u deze wilt openen?** Klik op **Openen**.
+8. U wordt door uw macOS-apparaat gevraagd om te bevestigen dat u de bedrijfsportal-app wilt openen. Klik op **Openen**.  
 
-   > [!NOTE]
-   > Intune heeft toegang nodig tot uw computer om te controleren of dit apparaat voldoende is beveiligd om toegang te verkrijgen tot de bronnen van uw organisatie. Als u de bedrijfsportal-app niet kunt openen, probeert u [Gatekeeper uit te schakelen](https://support.apple.com/HT202491) en vervolgens de app te openen.
+   > [!TIP]
+   > Intune heeft toegang nodig tot uw computer om te controleren of dit apparaat voldoende is beveiligd om toegang te verkrijgen tot de bronnen van uw organisatie. Als u de bedrijfsportal-app niet kunt openen op uw computer, [schakelt u Gatekeeper uit](https://support.apple.com/HT202491). Open vervolgens de app.
 
-9. In het eerste scherm van de bedrijfsportal-app wordt u gevraagd om u **aan te melden** met hetzelfde werk- of schoolaccount waarmee u zich bij de bedrijfsportal-website hebt aangemeld.
+9. Op het eerste scherm dat u in de bedrijfsportal-app ziet, wordt u gevraagd om u **aan te melden**. Gebruik hetzelfde werk- of schoolaccount dat u hebt gebruikt om u aan te melden bij de bedrijfsportalwebsite.
 
-10. De bedrijfsportal bevestigt uw accountgegevens en geeft de status van de **apparaatregistratie** en **apparaatcompatibiliteit** weer. Gele driehoeken geven aan dat er acties zijn die u moet uitvoeren om ervoor te zorgen dat uw Mac veilig is voor gebruik op het werk. Klik op **Begin** om de [registratie van uw apparaat in het beheer](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) te starten.
+10. De bedrijfsportal bevestigt uw accountgegevens en geeft de status van de **apparaatregistratie** en **apparaatcompatibiliteit** weer. Gele driehoeken markeren de acties die u moet uitvoeren om uw macOS-apparaat te beveiligen voor school of werk. Klik op **Beginnen** om de registratie te starten. Ontdek [wat uw bedrijf kan zien](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) wanneer u een apparaat registreert.
 
-11. Uw Mac begint met de registratie in het beheer. Mogelijk wordt u ondertussen gevraagd naar de aanmeldingsgegevens voor uw computer. De registratie kan enkele minuten duren. Gedurende deze tijd kunt u andere dingen doen op uw computer. Er verschijnt een bericht zodra het instellen van de bedrijfstoegang is voltooid, zodat u weet dat u klaar bent.
+11. Mogelijk wordt u gevraagd naar de aanmeldingsgegevens voor uw computer. Het duurt mogelijk enkele minuten om uw apparaat in beheer te registreren. Gedurende deze tijd kunt u andere dingen doen op uw apparaat. U krijgt een bericht zodra het instellen van de bedrijfstoegang is voltooid, zodat u weet dat u klaar bent.  
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  

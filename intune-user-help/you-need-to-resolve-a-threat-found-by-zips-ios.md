@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,34 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 1ee101fe31b32ccd3d5b1c7cfd361b881e232ae5
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9cb87541e45591ae8c4d1e8151fdb781ebd0b364
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754345"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148137"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>U moet een bedreiging oplossen die met Zimperium zIPS is gevonden
+# <a name="resolve-a-threat-found-by-zimperium-zips"></a>Een bedreiging oplossen die met Zimperium zIPS is gevonden
 
-Zimperium zIPS heeft een mogelijke bedreiging gevonden op uw apparaat. U moet het probleem oplossen om weer toegang te krijgen tot de e-mail, apps en bestanden van uw werk of school. Het bericht dat u ziet, is afhankelijk van het probleem dat Zimperium zIPS op uw apparaat heeft gevonden.
+Zimperium zIPS is een Mobile Threat Defender-service waarmee potentiële bedreigingen op uw iOS-apparaten worden geïdentificeerd. Deze bedreigingen worden gerapporteerd aan de bedrijfsportal-app en worden weergegeven als onopgeloste, niet-compatibele problemen. Als uw apparaat is geïdentificeerd als niet-compatibel,kunt u mogelijk geen:
 
-Los het probleem op door de Zimperium zIPS-app te openen en de instructies hierin te volgen.
+* verbinding maken met bedrijfs-e-mail
+* verbinding maken met zakelijke Wi-Fi
+* verbinding maken met SharePoint Online
+* bedrijfsbestanden synchroniseren met OneDrive
+* bedrijfsapps openen
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Wat wordt weergegeven als het geregistreerde apparaat geen toegang heeft tot e-mailberichten of bestanden
+In dit artikel wordt beschreven hoe u waarschuwingen voor bedreigingen van Zimperium zIPS kunt herkennen en wat u moet doen om deze op te lossen. 
 
-Als er een virus of een ander beveiligingsrisico op het geregistreerde apparaat is aangetroffen en u toegang wilt krijgen tot de bestanden of de e-mail van uw bedrijf, wordt u in een bericht van Zimperium zIPS gewaarschuwd dat u actie moet ondernemen.
+## <a name="troubleshoot-virus-or-security-threat"></a>Virus- of beveiligingsbedreiging oplossen  
+Als er een virus- of beveiligingsbedreiging wordt gedetecteerd, legt Zimperium zIPS beperkingen op conform het toegangsbeleid van uw organisatie. Het toegangsbeleid van het bedrijf kan verhinderen dat u via uw apparaat toegang hebt tot het netwerk, de apps en de e-mail van uw werk.  
 
-Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](https://portal.manage.microsoft.com#HelpDeskDialog) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
+Zimperium zIPS vraagt u om actie te ondernemen om opnieuw toegang te krijgen. Selecteer de bedreiging en volg de instructies in de app op om deze te verhelpen.  
 
-## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Voorbeeld van een app die door Zimperium zIPS als een bedreiging wordt beschouwd
+## <a name="resolve-an-app-threat"></a>Een app-bedreiging oplossen
 
-Als u een app hebt geïnstalleerd die door Zimperium zIPS als een bedreiging wordt beschouwd, wordt u gewaarschuwd dat er een onbetrouwbare app op uw apparaat is geïnstalleerd.
+Als u een app installeert die als een bedreiging voor uw apparaat wordt gezien, ontvangt u een melding in Zimperium zIPS. Als de betreffende app op uw apparaat blijft, hebt u geen toegang tot resources van het bedrijf.  
 
-Wanneer dit gebeurt, verwijdert u de app om direct weer toegang tot de e-mail en gegevens van uw bedrijf te krijgen. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
+Als u dit wilt oplossen, selecteert u de app in de lijst met bedreigingen in Zimperium zIPS. Volg daarna de aanwijzingen op het scherm voor het verwijderen van de app.  
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980). 

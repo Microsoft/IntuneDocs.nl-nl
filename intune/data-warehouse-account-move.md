@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f1b2af2723ddb4c89f7f3d6409ced12f7a16883a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223659"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330293"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Uw Intune Data Warehouse-accountgegevens verplaatsen 
 
@@ -45,7 +45,7 @@ Sommige trendgrafieken in de weergave van Azure Portal worden opnieuw ingesteld.
 3. Sla het rapport lokaal op.
  
 ### <a name="app-protection-reports"></a>Rapportage van de app-beveiliging  
-1. Navigeer in Azure Portal naar **Microsoft Intune** -> **Mobile Apps** -> **App-beveiligingsstatus**.
+1. Navigeer in Azure Portal naar **Microsoft Intune** -> **Client-apps** -> **App-beveiligingsstatus**.
 2. Klik op het downloadpictogram (⤓) om elk rapport op te slaan.
 
 ### <a name="device-configuration-charts"></a>Apparaatconfiguratie-grafieken 

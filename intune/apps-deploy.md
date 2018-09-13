@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.openlocfilehash: 96b95fcbfdc970976e24553972c5890f35cfddb2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164566"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329475"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Apps toewijzen aan groepen met Microsoft Intune
 
@@ -52,7 +52,7 @@ In de volgende tabellen worden de verschillende opties vermeld voor het toewijze
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Selecteer **Mobiele apps** in het menu **Intune**.
+3. Selecteer **Client-apps** in het menu **Intune**.
 4. Selecteer **Apps** in de sectie **Beheren** van het menu.
 5. Selecteer in het deelvenster **Apps** de app die u wilt toewijzen.
 6. Selecteer **Toewijzingen** in de sectie **Beheren** van het menu.

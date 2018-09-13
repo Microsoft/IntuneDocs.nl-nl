@@ -1,11 +1,11 @@
 ---
 title: Bedreigingen oplossen die zijn gevonden met SandBlast Mobile Protect op iOS | Microsoft Docs
-description: Informatie over het oplossen van een bedreiging die is gevonden door Mobile Protect op iOS.
+description: Ontdek hoe u een bedreiging kunt oplossen die is gevonden door Mobile Protect for iOS.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/03/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,34 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a34e73d3209453f07523d1c841e8ba578c85aa3d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755964"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148028"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>U moet een bedreiging oplossen die door SandBlast Mobile Protect is gevonden
+# <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Een bedreiging oplossen die door SandBlast Mobile Protect is gevonden
 
-SandBlast Mobile Protect heeft een mogelijke bedreiging gevonden op uw apparaat. U moet het probleem oplossen om weer toegang te krijgen tot uw werk- of school-e-mail, -apps en -bestanden. Het bericht dat u ziet, is afhankelijk van het probleem dat SandBlast Mobile Protect op uw apparaat heeft gevonden.
+SandBlast Mobile Protect is een Mobile Threat Defender-service waarmee potentiële bedreigingen voor uw iOS-apparaten worden geïdentificeerd en geopend. De bedreigingen wordt vervolgens gerapporteerd, zodat u ze vanuit de bedrijfsportal-app kunt bekijken. Bedreigingen worden aan u getoond als onopgeloste, niet-compatibele problemen. Zolang deze bedreigingen aanwezig zijn, kunt u mogelijk geen:   
 
-Los het probleem op door de SandBlast Mobile Protect-app te openen en de instructies in de app te volgen.
+* verbinding maken met bedrijfs-e-mail
+* verbinding maken met zakelijke Wi-Fi
+* verbinding maken met SharePoint Online
+* bedrijfsbestanden synchroniseren met OneDrive
+* bedrijfsapps openen
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Wat wordt weergegeven als het geregistreerde apparaat geen toegang heeft tot e-mailberichten of bestanden
+In dit artikel wordt beschreven hoe u waarschuwingen voor bedreigingen van Sandblast Mobile Protect kunt herkennen en wat u moet doen om deze op te lossen.  
 
-Als er een virus of een ander beveiligingsrisico op het geregistreerde apparaat is aangetroffen en u toegang wilt krijgen tot de bestanden of de e-mail van uw bedrijf, wordt u in een bericht van SandBlast Mobile Protect gewaarschuwd dat u actie moet ondernemen.
+## <a name="troubleshoot-virus-or-security-threat"></a>Virus- of beveiligingsbedreiging oplossen  
+Als er een virus- of beveiligingsbedreiging wordt gedetecteerd, handelt de SandBlast Mobile Protect-app op basis van het toegangsbeleid van uw organisatie. Het toegangsbeleid kan verhinderen dat u toegang hebt tot het netwerk, de apps en de e-mail van uw werk.  
 
-Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](http://portal.manage.microsoft.com) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
+U wordt door SandBlast Mobile Protect gevraagd om actie te ondernemen om opnieuw toegang te krijgen. Selecteer de bedreiging en volg de instructies in de app op om deze te verhelpen.  
 
-## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>Voorbeeld van een app die door SandBlast Mobile Protect als een bedreiging wordt beschouwd
+## <a name="troubleshoot-an-app-threat"></a>Een app-bedreiging oplossen  
 
-Als u een app hebt geïnstalleerd die door SandBlast Mobile Protect als een bedreiging wordt beschouwd, wordt u gewaarschuwd dat er een onbetrouwbare app op uw apparaat is geïnstalleerd.
+Als u een app installeert die als een bedreiging voor uw apparaat wordt gezien, ontvangt u een melding in SandBlast Mobile Protect. Als de betreffende app op uw apparaat blijft, hebt u geen toegang tot resources van het bedrijf.  
 
-Wanneer dit gebeurt, verwijdert u de app om direct weer toegang tot de e-mail en gegevens van uw bedrijf te krijgen. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
+Als u dit wilt oplossen, selecteert u de app in de lijst met bedreigingen in SandBlast Mobile Protect. Volg daarna de aanwijzingen op voor het verwijderen van de app.  
 
-Nog hulp nodig? Neem contact op met uw IT-beheerder. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](http://portal.manage.microsoft.com).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980)

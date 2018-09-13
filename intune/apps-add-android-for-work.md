@@ -15,12 +15,12 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b65daa6e098954d88c502114fc7a33ad4cf5efcd
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: faa8918441bd705875fcdc72d3717af001ab2b85
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909283"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329867"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Apps toewijzen aan apparaten met een Android-werkprofiel met Intune
 
@@ -59,18 +59,18 @@ Zorg ervoor dat u Intune en Android-werkprofielen hebt geconfigureerd voor samen
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Een beheerde Google Play Store-app met Intune synchroniseren
 
-Als u een app uit de store hebt goedgekeurd maar deze nog niet wordt weergegeven in het knooppunt **Apps met licentie** van de workload **Mobiele apps**, dwingt u als volgt een onmiddellijke synchronisatie af:
+Als u een app uit de store hebt goedgekeurd maar deze nog niet wordt weergegeven in het knooppunt **Apps met licentie** van de workload **Client-apps**, dwingt u als volgt een onmiddellijke synchronisatie af:
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Selecteer **Mobiele apps** in het deelvenster **Intune**.
-4. Selecteer in het werkbelastingvenster **Mobiele apps**, onder **Installatie**de optie **Beheerde Google Play Store**.
+3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
+4. Selecteer in het workloadvenster **Client-apps**, onder **Installatie** de optie **Beheerde Google Play Store**.
 5. Kies in het deelvenster **Beheerde Google Play Store** **Vernieuwen**.  
     De pagina werkt de tijd en de status van de laatste synchronisatie bij.
-6. In het werkbelastingvenster **Mobiele apps** selecteert u **Apps**.  
+6. Selecteer in het workloadvenster **Client-apps** de optie **Apps**.  
     De zojuist beschikbaar geworden beheerde Google Play Store-app wordt weergegeven.
 
-Als de app wordt weergegeven in het knooppunt **App-licenties** van het werkbelastingvenster **Mobiele apps**, kunt u de app [toewijzen als alle andere apps](/intune-azure/manage-apps/deploy-apps). U kunt de app alleen toewijzen aan groepen gebruikers.
+Als de app wordt weergegeven in het knooppunt **App-licenties** van het workloadvenster **Client-apps**, kunt u de app [toewijzen als alle andere apps](/intune-azure/manage-apps/deploy-apps). U kunt de app alleen toewijzen aan groepen gebruikers.
 
 Nadat u de app hebt toegewezen, wordt deze geïnstalleerd op de apparaten die u hebt aangewezen. De gebruiker van het apparaat wordt geen toestemming voor de installatie gevraagd.
 

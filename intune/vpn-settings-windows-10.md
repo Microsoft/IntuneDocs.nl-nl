@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 8/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 61310f5baa64c43d2e818df6c61a36d232922c1c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744734"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312847"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>VPN-instellingen voor Windows 10 in Intune
 
@@ -42,6 +42,8 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden worden gec
   - **Standaardserver**: hiermee wordt deze server ingeschakeld als de standaardserver die apparaten gebruiken om de verbinding te maken. U kunt slechts één server als standaard instellen.
   - **Importeren**: blader naar een bestand met een door komma’s gescheiden lijst met servers in de indeling: beschrijving, IP-adres of FQDN, Standaardserver. Kies **OK** om deze servers te importeren in de lijst met **servers**.
   - **Exporteren**: hiermee exporteert u de lijst met servers naar een bestand met door komma's gescheiden waarden (CSV-bestand)
+
+- **IP-adressen met interne DNS registreren**: selecteer **Inschakelen** als u het VPN-profiel van Windows 10 zo wilt configureren dat de IP-adressen die zijn toegewezen aan de VPN-interface met de interne DNS dynamisch worden geregistreerd, of selecteer  **Uitschakelen** als u de IP-adressen niet dynamisch wilt registreren.
 
 - **Verbindingstype**: selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
 

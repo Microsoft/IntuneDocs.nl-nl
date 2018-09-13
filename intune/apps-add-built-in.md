@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b67b50a5bd372541cf0842696e5012ca991d8b8
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b9520343f3b631fdc2732690b462c6d8fd010c82
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224157"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329492"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Ingebouwde apps toevoegen aan Microsoft Intune
 
@@ -36,8 +36,8 @@ In eerdere versies van de Intune-console heeft Intune verschillende standaard be
 Voer de volgende stappen uit om een ingebouwde app toe te voegen aan uw beschikbare apps in Microsoft Intune:
 1. Meld u aan bij Azure Portal.
 2. Kies **Meer services** > **Controle en beheer** > **Intune** om het deelvenster Microsoft Intune weer te geven.
-3. Selecteer **Mobiele apps** in het deelvenster **Intune**.
-4. In het venster **Mobiele apps**, onder **Beheren**, selecteert u **Apps**.
+3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
+4. Selecteer in het venster **Client-apps** onder **Beheren** de optie **Apps**.
 5. Selecteer **Toevoegen**.
 6. In het app-venster **Toevoegen** in de lijst **App-type** selecteert u **Ingebouwde app**.
 7. Selecteer **App selecteren**.

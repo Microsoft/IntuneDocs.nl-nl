@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 7b03c46a9095c0f300869ebd14d1a81698e294f7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400280"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43314020"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Mobiele eSIM-profielen configureren in Intune - Openbare preview
 
@@ -179,7 +179,7 @@ Als u het apparaat uit de Azure AD-groep verwijdert, wordt het eSIM-profiel ook 
 2. Ga naar de Azure AD-groep en verwijder het apparaat uit de groep.
 3. Wanneer het verwijderde apparaat contact opneemt met Intune, wordt het bijgewerkte beleid gecontroleerd en het eSIM-profiel verwijderd.
 
-Het eSIM-profiel wordt ook verwijderd wanneer door de gebruiker de registratie van het apparaat ongedaan wordt gemaakt of wanneer de actie [Bedrijfsgegevens verwijderen](devices-wipe.md#remove-company-data) of [Apparaat op afstand opnieuw instellen](devices-wipe.md#factory-reset) wordt uitgevoerd op het apparaat.
+Het eSIM-profiel wordt ook verwijderd wanneer het apparaat [buiten gebruik wordt gesteld](devices-wipe.md#retire) door de gebruiker of de registratie van het apparaat ongedaan wordt gemaakt, of wanneer de [externe actie apparaat opnieuw instellen](devices-wipe.md#wipe) wordt uitgevoerd op het apparaat.
 
 > [!NOTE]
 > Als het profiel is verwijderd, worden er mogelijk nog steeds kosten in rekening gebracht. Neem contact op met uw provider om de factureringsstatus van uw apparaat op te vragen.

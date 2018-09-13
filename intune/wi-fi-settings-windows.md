@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6532c63612b806f9824f5b9ca98f1ebbbc943f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321664"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329644"
 ---
-## <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Wi-Fi-instellingen voor apparaten met Windows 10 en hoger in Intune
+# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Wi-Fi-instellingen voor apparaten met Windows 10 en hoger in Intune
 
 Wi-Fi-instellingen worden gebruikt in een configuratieprofiel dat van toepassing op apparaten met Windows 10 en hoger. Zijn uw opties:
 
@@ -77,25 +78,36 @@ Wi-Fi-instellingen worden gebruikt in een configuratieprofiel dat van toepassing
   - **EAP-TTLS**
   - **Beveiligde PEAP** (PEAP)
 
-### <a name="more-options-when-you-choose-the-eap-type"></a>Meer opties wanneer u het EAP-type kiest
+    **Extra instellingen EAP-TLS, EAP-TTLS en PEAP**:
+    
+    > [!NOTE]
+    > Momenteel worden alleen SCEP-certificaatprofielen ondersteund bij het gebruik van een EAP-type. PKCS-certificaatprofielen worden niet ondersteund. Steeds wanneer een gebruiker wordt gevraagd een certificaat in te voeren, moet u een SCEP-certificaat kiezen.
 
-> [!NOTE]
-> Momenteel worden alleen SCEP-certificaatprofielen ondersteund bij het gebruik van een EAP-type. PKCS-certificaatprofielen worden niet ondersteund. Steeds wanneer een gebruiker wordt gevraagd een certificaat in te voeren, moet u een SCEP-certificaat kiezen.
+      - **Server Trust**  
 
-#### <a name="server-trust"></a>Vertrouwelijke server
+        **Namen van certificaatserver**: gebruiken met EAP-typen **EAP-TLS**, **EAP-TTLS** of **PEAP**. Voer een of meer algemene namen in die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Als u deze informatie verstrekt, kunt u het dialoogvenster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers als zij verbinding maken met dit Wi-Fi-netwerk.  
 
-|Naam van de instelling|Meer informatie|Wanneer gebruiken|
-|--------------|-------------|----------|
-|**Namen van certificaatservers**|Voer een of meer algemene namen in die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Als u deze informatie verstrekt, kunt u het dialoogvenster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers als zij verbinding maken met dit Wi-Fi-netwerk.|EAP-type is **EAP-TLS**, **EAP-TTLS** of **PEAP**|
-|**Basiscertificaat voor servervalidatie**|Kies het profiel voor een vertrouwd basiscertificaat dat wordt gebruikt om de verbinding te verifiëren. |EAP-type is **EAP-TLS**, **EAP-TTLS** of **PEAP**|
-|**Identiteitsprivacy (externe identiteit)**|Voer de tekst in die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.|EAP-type is **PEAP**|
+        **Basiscertificaat voor servervalidatie**: gebruiken met EAP-typen **EAP-TLS**, **EAP-TTLS** of **PEAP**. Kies het profiel voor een vertrouwd basiscertificaat dat wordt gebruikt om de verbinding te verifiëren.  
 
-#### <a name="client-authentication"></a>Clientverificatie
+        **Identiteitsprivacy (externe identiteit)**: gebruiken met EAP-type **PEAP**. Voer de tekst in die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.  
 
-| Naam van de instelling | Meer informatie | Wanneer gebruiken |
-|---|---|---|
-| **Clientcertificaat voor clientverificatie (identiteitscertificaat)** |  Kies het SCEP-certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren. | EAP-type is **EAP-TLS** |
-| **Verificatiemethode** | Selecteer de verificatiemethode voor de verbinding:<br><br>- **Certificaten**: selecteer het SCEP-clientcertificaat dat het identiteitscertificaat is dat aan de server wordt gepresenteerd.<br><br>- **Gebruikersnaam en wachtwoord**: voer een **niet-EAP-methode (interne identiteit)** in voor verificatie. Uw opties zijn:<br><br>- **Niet-versleuteld wachtwoord (PAP)**<br>- **Challenge Handshake (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP versie 2 (MS-CHAP v2)**<br><br>- **Identiteitsprivacy (externe identiteit)**: voer de tekst in die wordt verzonden als reactie op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel. | EAP-type is **EAP-TTLS** |
+      - **Clientauthenticatie**
+
+        ****Clientcertificaat voor clientverificatie (identiteitscertificaat)**: gebruiken met EAP-type **PEAP-TLS**. Kies het certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren.
+
+        **Verificatiemethode**: gebruiken met EAP-type **EAP-TTLS**. Selecteer de verificatiemethode voor de verbinding:  
+
+          - **Certificaten**: selecteer het clientcertificaat dat het identiteitscertificaat is dat aan de server wordt gepresenteerd.
+          - **Gebruikersnaam en wachtwoord**: voer een **niet-EAP-methode (interne identiteit)** in voor verificatie. Uw opties zijn:
+
+            - **Niet-versleuteld wachtwoord (PAP)**
+            - **Challenge Handshake (CHAP)**
+            - **Microsoft CHAP (MS-CHAP)**
+            - **Microsoft CHAP versie 2 (MS-CHAP v2)**
+
+        **Identiteitsprivacy (externe identiteit)**: gebruiken met EAP-type **EAP-TTLS**. Voer de tekst in die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.
+
+- **Naleving van Wi-Fi-profiel afdwingen met de Federal Information Processing Standard (FIPS)**: kies **Ja** wanneer u wilt valideren op basis van de FIPS 140-2-standaard. Deze standaard is vereist voor alle instanties van de Amerikaanse federale overheid die beveiligingssystemen op basis van cryptografie gebruiken om gevoelige, niet-geclassificeerde informatie te beveiligen die digitaal is opgeslagen. Kies **Nee** om niet FIPS-compatibel te zijn.
 
 ## <a name="use-an-imported-settings-file"></a>Een bestand met geïmporteerde instellingen gebruiken
 

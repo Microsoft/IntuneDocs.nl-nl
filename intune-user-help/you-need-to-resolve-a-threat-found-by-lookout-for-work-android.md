@@ -1,11 +1,11 @@
 ---
 title: Bedreigingen oplossen die zijn gevonden met Lookout for Work op Android | Microsoft Docs
-description: Informatie over het oplossen van een bedreiging die met Lookout for Work is gevonden op Android.
+description: Informatie over het oplossen van een bedreiging die met de Lookout for Work-app op een Android-apparaat is gevonden.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/17/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,35 +15,43 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: df7055f031fb7661cc0fa3bf2d00b16fc0a082dc
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0e8f10bac2c7ffc75f81572da60249842c8f4cc1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015469"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148518"
 ---
-# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Een bedreiging oplossen die met Lookout for Work is gevonden
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Een bedreiging oplossen die met Lookout for Work is gevonden  
 
-Lookout for Work heeft een mogelijke bedreiging gevonden op uw apparaat. U moet het probleem oplossen om weer toegang te krijgen tot uw werk- of school-e-mail, -apps en -bestanden. Het bericht dat u te zien krijgt, ziet er ongeveer als volgt uit:
+De Lookout for Work-app is een Mobile Threat Defender-service waarmee potentiële bedreigingen op uw Android-apparaten worden geïdentificeerd. Deze bedreigingen worden gerapporteerd aan de bedrijfsportal-app en worden daar weergegeven als onopgeloste, niet-compatibele problemen. Zolang deze bedreigingen aanwezig zijn, kunt u mogelijk geen:
 
-![Lookout for Work heeft een bedreiging aangetroffen op uw apparaat](./media/lookout-threat-found-android.png)
+* verbinding maken met bedrijfs-e-mail
+* verbinding maken met zakelijke Wi-Fi
+* verbinding maken met SharePoint Online
+* bedrijfsbestanden synchroniseren met OneDrive
+* bedrijfsapps openen
 
-Los het probleem op door de Lookout for Work-app te openen en de instructies in de app te volgen.
+In dit artikel wordt beschreven hoe u waarschuwingen voor bedreigingen van Lookout for Work kunt herkennen en wat u moet doen om deze op te lossen. 
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Wat wordt weergegeven als het geregistreerde apparaat geen toegang heeft tot e-mailberichten of bestanden
+## <a name="troubleshoot-virus-or-security-threat"></a>Virus- of beveiligingsbedreiging oplossen  
+Krijg weer toegang tot resources van uw bedrijf wanneer de Lookout for Work-app een beveiligings- of virusbedreiging heeft gedetecteerd.  
 
-Als er een virus of een ander beveiligingsrisico op het geregistreerde apparaat is aangetroffen en u toegang wilt krijgen tot de bestanden of de e-mail van uw bedrijf, ziet u mogelijk een bericht dat er ongeveer als volgt uitziet:
+1. Als er een virus- of beveiligingsbedreiging is gedetecteerd, ontvangt u een bericht zoals is weergegeven in de onderstaande schermafbeelding. Tik op de koppeling **portal voor apparaatbeheer** om de [bedrijfsportalwebsite](https://portal.manage.microsoft.com/devices) te openen.  
 
-![Lookout for Work-foutbericht met een koppeling naar website van de bedrijfsportal](./media/mtd-go-to-device-management-portal-android.png)
+    ![Voorbeeldschermafbeelding van een Lookout for Work-foutbericht, met een koppeling naar de bedrijfsportalwebsite en blauwe OK-knop.](./media/mtd-go-to-device-management-portal-android.png)
 
-Tik op de koppeling naar de **portal voor apparaatbeheer** om naar de [website met de bedrijfsportal](https://portal.manage.microsoft.com#HelpDeskDialog) te gaan. Hier vindt u instructies voor het oplossen van het probleem.
+2. Selecteer uw apparaat.  
+3. Lees de waarschuwing die onder uw apparaat wordt weergegeven. Hierin wordt u geïnstrueerd om Lookout for Work te openen voor het oplossen van de virus- of beveiligingsbedreiging. 
 
-## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Voorbeeld van een app die door Lookout for Work als een bedreiging wordt gezien
+    ![Voorbeeld-schermafbeelding van de apparaatpagina van de bedrijfsportal, met de waarschuwing van Lookout for Work.](./media/CP-lookout-virus-banner-1808.png)  
 
-Als u een app hebt geïnstalleerd die volgens Lookout for Work een bedreiging vormt, ziet u een scherm dat vergelijkbaar is met dit scherm:
+## <a name="troubleshoot-an-app-threat"></a>Een app-bedreiging oplossen  
 
-![voorbeeld van een waarschuwingsbericht van Lookout for Work](./media/lookout-virus-alert-android.png)
+Als u een app installeert die door Lookout for Work wordt aangeduid als een bedreiging, ontvangt u een bericht zoals weergegeven in de onderstaande schermafbeelding.  
 
-Nadat u de app hebt verwijderd, krijgt u direct weer toegang tot de e-mail en gegevens van uw bedrijf. Als u de app niet verwijdert, hebt u geen toegang meer tot uw e-mail en gegevens totdat u de app wel verwijdert.
+![Voorbeeldschermafbeelding waarin een waarschuwingsbericht van Lookout Virus via de Lookout for Work-app-interface wordt weergegeven. Er zijn drie knoppen weergegeven: ‘Sluiten,' 'Meer Info' en 'Verwijderen'.](./media/lookout-virus-alert-android.png)  
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Als u weer toegang wilt krijgen tot uw verloren gegane bedrijfse-mail en gegevens, moet u de verdachte app verwijderen. Zolang de app zich op uw apparaat bevindt, hebt u geen toegang tot resources van het bedrijf.    
+
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903140"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313458"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Inschrijving van kioskapparaten voor Android Enterprise instellen
 
@@ -112,7 +112,7 @@ Apparaten met Android 5.1 en hoger die ondersteuning bieden voor NFC, kunnen wor
 
 Op apparaten met Android 6 en hoger kunt u het token gebruiken om het apparaat te registreren. Android 6.1 en latere versies kunnen ook gebruikmaken van de QR-code scannen bij het gebruik van de **aft#setup**-inschrijvingsmethode.
 
-1. Schakel het apparaat in om de fabrieksinstellingen terug te zetten.
+1. Schakel uw gewiste apparaat in.
 2. Selecteer uw taal in het scherm **Welkom**.
 3. Maak verbinding met uw **Wi-Fi** en kies vervolgens **VOLGENDE**.
 4. Accepteer de Google-voorwaarden en kies **VOLGENDE**.
@@ -129,7 +129,7 @@ Op apparaten met Android 7 en hoger kunt u de QR-code scannen van het inschrijvi
 > [!Note]
 > Inzoomen op de browser kan ertoe leiden dat apparaten geen QR-code kunnen scannen. Dit probleem wordt opgelost door de zoomfactor van de browser te vergroten.
 
-1. Tik meerdere keren op het eerste scherm dat u ziet nadat de fabrieksinstellingen zijn teruggezet om een QR te starten die op het Android-apparaat wordt gelezen.
+1. Tik meerdere keren op het eerste scherm dat u ziet nadat het apparaat is gewist om een QR te starten die op het Android-apparaat wordt gelezen.
 2. Voor apparaten met Android 7 en 8 wordt u gevraagd om een QR-lezer te installeren. Op Android-apparaten 9 of hoger is al een QR-lezer geïnstalleerd.
 3. Gebruik de QR-lezer om de QR-code van het inschrijvingsprofiel te scannen en volg de aanwijzingen op het scherm om het apparaat in te schrijven.
 

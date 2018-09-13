@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 51e52e26357143d214c4bcf7856dfdb75a68653c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905934"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329766"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Work-apparaatbeperkingsinstellingen in Intune
 
@@ -42,7 +42,7 @@ In dit artikel vindt u meer informatie over de Microsoft Intune-apparaatbeperkin
   - **Automatisch verlenen**
   - **Automatisch weigeren**
 
-    De verleningsstatus voor machtigingen kan verder worden gedefinieerd voor specifieke apps door een app-configuratiebeleid voor een individuele app te gebruiken (onder **Mobiele apps** > **App-configuratiebeleid**).
+    De verleningsstatus voor machtigingen kan verder worden gedefinieerd voor specifieke apps door een app-configuratiebeleid voor een individuele app te gebruiken (onder **Client-apps** > **App-configuratiebeleid**).
 
 - **Accounts toevoegen en verwijderen**
 

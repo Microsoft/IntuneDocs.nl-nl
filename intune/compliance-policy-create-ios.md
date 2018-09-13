@@ -14,12 +14,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1ee08c77fe085ad0f238d63481dd682ea15aa5ce
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442641"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313082"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Een apparaatnalevingsbeleid toevoegen voor iOS-apparaten in Intune
 
@@ -106,6 +106,11 @@ Zie [De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Micros
 - **Maximum aantal minuten van inactiviteit voordat wachtwoord is vereist**: geef aan na hoeveel niet-actieve tijd de gebruiker het wachtwoord opnieuw moet invoeren.
 - **Wachtwoord verloopt (in dagen)**: selecteer het aantal dagen waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken.
 - **Aantal vorige wachtwoorden om hergebruik te voorkomen**: geef op hoeveel eerder gebruikte wachtwoorden niet opnieuw mogen worden gebruikt.
+
+### <a name="restricted-applications"></a>Beperkte toepassingen 
+U kunt apps beperken door de bundel-id’s toe te voegen aan het beleid. Als vervolgens de app op een apparaat is geïnstalleerd, wordt het apparaat gemarkeerd als niet-compatibel. 
+- **App-naam**: geef een gebruiksvriendelijke naam op om u te helpen de bundel-id te identificeren. 
+- **App-bundel-id**: Geef de unieke bundel-id op die is toegewezen door de app-provider. Zie [De bundel-id vinden voor een iOS-app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) om de bundel-id te vinden.  
 
 ## <a name="assign-user-groups"></a>Gebruikersgroepen toewijzen
 

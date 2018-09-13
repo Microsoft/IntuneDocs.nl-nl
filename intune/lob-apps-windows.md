@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 644d5966f653e4b98e6a5e8c507dd5e7399ff9cd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5c64b915f240cab2faac84a6a78b213a5fffa0a6
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321115"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347895"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Een Windows Line-Of-Business-app toevoegen aan Microsoft Intune
 
@@ -32,19 +32,15 @@ Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Dit type
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Selecteer **Mobiele apps** in het deelvenster **Intune**.
-4. Selecteer **Beheren** > **Apps** in de workload **Mobiele apps**.
+3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
+4. Selecteer in de workload **Client-apps** de optie **Beheren** > **Apps**.
 5. Selecteer **Toevoegen** boven de lijst met apps.
 6. Selecteer in het deelvenster **App toevoegen** de optie **Line-Of-Business-app**.
 
 ## <a name="step-2-configure-the-app-package-file"></a>Stap 2: het pakketbestand van de app configureren
 
 1. Selecteer in het deelvenster **App toevoegen** de optie **App-pakketbestand**.
-2. Selecteer in het deelvenster **App-pakketbestand** de bladerknop. Selecteer vervolgens een Windows-installatiebestand met de extensie **.msi**, **.appx**, **.appxbundle**, **.msix** of **.msixbundle**.
-
-    > [!NOTE]
-    > De bestandsextensies voor Windows-apps zijn **.msi**, **.appx**, **.appxbundle**, **.msix** en **.msixbundle**.  
-
+2. Selecteer in het deelvenster **App-pakketbestand** de bladerknop. Selecteer vervolgens een Windows-installatiebestand met de extensie **.msi**, **.appx** of **.appxbundle**.
 3. Klik op **OK** wanneer u klaar bent.
 
 

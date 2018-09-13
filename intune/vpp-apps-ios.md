@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 115486f02a86616fdf2c340fa7e0e2ff6e505afa
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: cbe9f28b66031f6eddef4804c157f01ca79ad81d
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42823066"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347515"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>iOS-apps beheren die zijn aangeschaft via een volumeaankoopprogramma met Microsoft Intune
 
@@ -83,9 +83,9 @@ Als u een apparaat gaat instellen voor een nieuwe Intune-gebruiker, moet u het a
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-1.  Kies in het deelvenster **Intune** de optie **Mobiele apps** > **iOS VPP-tokens** onder **Installatie**.
-2.  Selecteer **Maken** in het deelvenster met de lijst VPP-tokens.
-4. Geef in het deelvenster **VPP-token maken** de volgende gegevens op:
+3.  Kies in het deelvenster **Intune** de optie **Client-apps** > **iOS VPP-tokens** onder **Installatie**.
+4.  Selecteer **Maken** in het deelvenster met de lijst VPP-tokens.
+5. Geef in het deelvenster **VPP-token maken** de volgende gegevens op:
     - **VPP-tokenbestand**: meld u aan voor het VPP-programma voor bedrijven of voor het VPP-programma voor onderwijs als u dit nog niet hebt gedaan. Nadat u bent aangemeld, downloadt u het Apple VPP-token voor uw account en selecteert u dit hier.
     - **Apple ID**: voer de Apple ID in van het account dat aan het VPP is gekoppeld.
     - **Land/regio**: selecteer VPP-store voor uw land.  Intune synchroniseert VPP-apps voor alle landinstellingen uit de opgegeven store uit het land waar de VPP geldt.
@@ -93,9 +93,10 @@ Als u een apparaat gaat instellen voor een nieuwe Intune-gebruiker, moet u het a
         > Als u het land wijzigt, worden de metagegevens en store-URL van de apps bijgewerkt bij de volgende synchronisatie met de Apple-service voor de apps die met deze token zijn gemaakt. De app wordt niet bijgewerkt als deze niet bestaat in de store van het nieuwe land.
 
     - **Type VPP-account**: u hebt de keuze uit **Bedrijven** of **Onderwijs**.
-    - **Automatische updates voor apps**: kies **Aan** of **Uit** om automatische updates in of uit te schakelen. Wanneer deze optie is ingeschakeld, worden alle apps die zijn aangeschaft voor het opgegeven token, bijgewerkt via de Intune-service wanneer het apparaat wordt ingecheckt.
-Updates voor de VPP-app worden gedetecteerd in de App Store en automatisch doorgestuurd naar het apparaat wanneer dit wordt ingecheckt.
-4. Selecteer **Maken** wanneer u klaar bent.
+    - **Automatische updates voor apps**: kies **Aan** of **Uit** om automatische updates in of uit te schakelen. Wanneer deze zijn ingeschakeld, detecteert Intune updates voor de VPP-app in de app store en pusht ze automatisch naar het apparaat als dit incheckt.
+        > [!NOTE]
+        > Automatische updates voor apps worden gebruikt voor apps voor zowel gelicentieerde apparaten als gebruikers voor iOS-versie 11.0 en later.
+6. Selecteer **Maken** wanneer u klaar bent.
 
 Het token wordt weergegeven in het deelvenster met de lijst met tokens.
 
@@ -103,7 +104,7 @@ U kunt de gegevens waarover Apple beschikt, op elk gewenst moment synchroniseren
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Een app toewijzen die is gekocht via het volume-aankoopprogramma
 
-1.  Kies in het deelvenster **Intune** de optie **Mobiele apps** > **Apps** onder **Beheren**.
+1.  Kies in het deelvenster **Intune** de optie **Client-apps** > **Apps** onder **Beheren**.
 2.  Kies in het deelvenster met de lijst met apps de app die u wilt toewijzen en kies **Toewijzingen**.
 3.  Kies in het deelvenster ***App-naam*** - **Toewijzingen** de optie **Groep toevoegen** en kies in het deelvenster **Groep toevoegen** een **Toewijzingstype**. Kies ook de Azure AD-gebruikers- of apparaatgroepen waaraan u de app wilt toewijzen.
 5.  Voor elke groep die u hebt geselecteerd, kiest u de volgende instellingen:
@@ -153,9 +154,17 @@ Als u de licenties van alle VPP-apps van een bepaald VPP-token wilt intrekken, m
 
 U kunt een Apple VPP-token vernieuwen door een nieuw token te downloaden uit de Apple Volume Purchase Program-portal en het bestaande token in Intune bij te werken.
 
-## <a name="further-information"></a>Meer informatie
+## <a name="deleting-an-ios-vpp-app"></a>Een iOS VPP-app verwijderen
+
+U kunt een iOS VPP-app op dit moment niet verwijderen uit Microsoft Intune.
+
+## <a name="additional-information"></a>Aanvullende informatie
 
 Wanneer een gebruiker met een in aanmerking komend apparaat voor de eerste keer probeert een VPP-app op een apparaat te installeren, wordt de gebruiker gevraagd om deel te nemen aan het volume-aankoopprogramma van Apple. Deelname aan het programma moet plaatsvinden voordat de installatie van de app wordt uitgevoerd. De uitnodiging om deel te nemen aan het Apple Volume Purchase Program vereist dat de gebruiker de iTunes-app op het iOS-apparaat kan gebruiken. Als u een beleid hebt ingesteld om de iTunes Store-app uit te schakelen, werkt de gebruikerslicentie niet voor VPP-apps. U kunt dit probleem oplossen door het beleid te verwijderen, zodat de iTunes-app is toegestaan, of door een licentie te verlenen op basis van het apparaat.
+
+Apple biedt rechtstreekse hulp voor het maken en vernieuwen van VPP-tokens. Zie [Inhoud verdelen over uw gebruikers met het Volume Purchase Program (VPP)](https://go.microsoft.com/fwlink/?linkid=2014661) als onderdeel van de Apple-documentatie voor meer informatie. 
+
+Als **Toegewezen aan een externe MDM** wordt aangegeven in de Intune-portal, dan moet u (de beheerder) het VPP-token van de externe MDM verwijderen voordat u het VPP-token in Intune gebruikt.
 
 ## <a name="frequently-asked-questions"></a>Veelgestelde vragen
 

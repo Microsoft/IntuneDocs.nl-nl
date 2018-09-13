@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039332"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312893"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Android Enterprise-kioskinstellingen in Intune
 
@@ -33,14 +33,14 @@ Android-kioskprofielen bieden ondersteuning voor de volgende configuratie-instel
     - **Automatisch verlenen**: machtigingen worden automatisch verleend.
     - **Automatisch weigeren**: machtigingen worden automatisch geweigerd.
 - **Volumewijzigingen**: kies **Blokkeren** om te voorkomen dat gebruikers het volume van het apparaat wijzigen.
-- **Fabrieksinstellingen terugzetten**: kies **Blokkeren** om te voorkomen dat gebruikers de fabrieksinstellingen van het apparaat terugzetten.
+- **Wissen**: kies **Blokkeren** om te voorkomen dat gebruikers het apparaat wissen.
 - **Opstarten in veilige modus**: kies **Blokkeren** om te voorkomen dat gebruikers het apparaat opnieuw opstarten in de veilige modus.
 - **Statusbalk**: kies **Blokkeren** om te voorkomen dat gebruikers de statusbalk openen en toegang krijgen tot bijvoorbeeld meldingen en snelle instellingen.
 - **Wi-Fi-instellingswijzigingen**: kies **Blokkeren** om te voorkomen dat gebruikers Wi-Fi-configuraties wijzigingen die zijn gemaakt door de eigenaar van het apparaat. Gebruikers kunnen hun eigen Wi-Fi-configuraties maken.
 - **Wi-Fi-toegangspuntconfiguratie**: kies **Blokkeren** om te voorkomen dat gebruikers Wi-Fi-configuraties maken of bewerken.
 - **Foutopsporingsfuncties**: kies **Toestaan** zodat gebruikers de functies voor foutopsporing kunnen gebruiken.
 - **Microfoon aanpassen**: kies **Blokkeren** om te voorkomen dat gebruikers het volume van de microfoon aanpassen of dempen.
-- **E-mailadressen resetbeveiliging fabrieksinstellingen**: kies **E-mailadressen van Google-account** voor het definiëren van e-mailadressen (gescheiden door puntkomma’s) waarmee het apparaat kan worden ontgrendeld nadat de fabrieksinstellingen terug zijn gezet. Als er geen e-mailadres wordt opgegeven, kan iedereen het apparaat ontgrendelen nadat de fabrieksinstellingen zijn teruggezet.
+- **E-mailadressen voor beveiliging bij wissen**: kies **E-mailadressen van Google-account** voor het definiëren van e-mailadressen (gescheiden door puntkomma’s) waarmee het apparaat kan worden ontgrendeld na wissen. Als er geen e-mailadres wordt opgegeven, kan iedereen het apparaat ontgrendelen na wissen.
 - **Netwerknooduitgang**: kies **Inschakelen** zodat de functie Netwerknooduitgang wordt ingeschakeld. Als er geen netwerkverbinding kan worden gemaakt bij het opstarten, wordt de gebruiker met Netwerknooduitgang gevraagd om tijdelijk verbinding te maken met een netwerk om het apparaatbeleid te vernieuwen. Wanneer het beleid is toegepast, wordt het tijdelijke netwerk vergeten en gaat het apparaat verder met opstarten. Hierdoor wordt voorkomen dat er geen verbinding kan worden gemaakt als er in het laatste beleid geen geschikt netwerk aanwezig is en het apparaat wordt opgestart in een app in de taakvergrendelingsmodus, of als de gebruiker om een andere reden de apparaatinstellingen niet kan bereiken.
 - **Installatie via onbekende bronnen toestaan**: selecteer **Toestaan** om gebruikers te laten installeren via onbekende bronnen.
 - **Systeemupdate**: kies een optie om te bepalen hoe het apparaat omgaat met draadloze updates:

@@ -16,12 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45933ecab26a9c2a4139cdcd16400467bbdd5bf8
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: ea9f8662faad1f8ef70fbba4c3706930d31157ac
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321692"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347709"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Wat is er nieuw in Microsoft Intune - vorige maanden
 
@@ -88,7 +88,7 @@ Met apps die worden beheerd door de Intune App SDK kunnen SMS-berichten worden v
 
 ### <a name="app-install-report-updated-to-include-install-pending-status----1249446---"></a>Het statusrapport van de app-installatie wordt bijgewerkt met de status Installatie in behandeling <!-- 1249446 -->  
 
-Het **Statusrapport van de app-installatie**, dat toegankelijk is voor elke app via de **App**-lijst in de **Mobiele apps**-workload, bevat nu **Installatie in behandeling** voor gebruikers en apparaten.
+Het **Statusrapport van de app-installatie**, dat toegankelijk is voor elke app via de lijst **App** in de workload **Client-apps**, bevat nu **Installatie in behandeling** voor gebruikers en apparaten.
 
 ### <a name="ios-11-app-inventory-api-for-mobile-threat-detection----1391759---"></a>API iOS 11-app-inventaris voor mobiele detectie van dreigingen (MTD) <!-- 1391759 -->
 

@@ -1,11 +1,11 @@
 ---
-title: Uw iOS-apparaat met Device Enrollment Program registreren | Microsoft Docs
-description: Informatie over hoe u een iOS-apparaat bij Intune kunt registreren met DEP
+title: Het door uw organisatie verstrekte iOS-apparaat inschrijven. | Microsoft Docs
+description: Hier wordt beschreven hoe u een iOS-apparaat inschrijft bij Intune dat is aangeschaft en geleverd door uw organisatie
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9d1154d942069ad69294d4235c894f88513dd848
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b93f02011b0900b1a64ae6cb10a84a52cd40187a
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016404"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241793"
 ---
-# <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>Registreer uw iOS-apparaat in Intune met het Device Enrollment Program
+# <a name="enroll-your-organization-provided-ios-device-in-management"></a>Het door uw organisatie verstrekte iOS-apparaat in beheer inschrijven
 
-Het Device Enrollment Program wordt aangeboden door Apple om het voor bedrijven eenvoudiger te maken grote aantallen iOS-apparaten te beheren. Als uw bedrijf u toestaat uw eigen apparaat mee te brengen, volgt u de [stappen voor reguliere iOS-registratie](enroll-your-device-in-intune-ios.md) in plaats van de stappen op deze pagina. Lees verder als uw bedrijf u heeft voorzien van een iOS-apparaat en u vertelde dat het deel uitmaakte van het Device Enrollment Program.
+Ontdek hoe u uw nieuwe iOS-apparaat kunt laten beheren in Intune.  
+
+De iOS-apparaten die aan u worden vertrekt door werk of school zijn vaak geconfigureerd voordat u ze hebt ontvangen. Uw organisatie verzendt vooraf geconfigureerde instellingen naar uw apparaat wanneer u het inschakelt en u zich voor de eerste keer aanmeldt. Nadat de installatie op het apparaat is voltooid, krijgt u toegang tot uw werk- of schoolresources.  
+
+U kunt de configuratie beginnen door uw apparaat in te schakelen en zich aan te melden met de referenties van uw werk- of schoolaccount. In de rest van dit artikel worden de stappen en de schermen beschreven die u ziet terwijl u de configuratieassistent uitvoert. 
+
+## <a name="what-is-apple-dep"></a>Wat is Apple DEP?
+Uw organisatie heeft mogelijk hun apparaten aangeschaft via een programma met de naam *Apple Device Enrollment Program* (DEP). Organisaties kopen grote hoeveelheden iOS- of macOS-apparaten via Apple DEP. Organisaties kunnen die apparaten vervolgens configureren en beheren in hun favoriete provider voor mobiele apparaatbeheer, zoals Intune. Zie [iOS-apparaten automatisch inschrijven met Apple Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios) als u beheerder bent en informatie wilt over Apple DEP.  
+
+## <a name="set-up-your-ios-device"></a>Uw iOS-apparaten inschrijven  
+Als u uw eigen iOS-apparaat gebruikt, in plaats van een door het bedrijf geleverd apparaat, volgt u de stappen voor [persoonlijke en bring-your-own-apparaten](enroll-your-device-in-intune-ios.md).  
 
 1. Schakel uw iOS-apparaat in. 
 2. Nadat u uw **Taal** hebt geselecteerd, verbindt u uw apparaat met wifi.
@@ -46,4 +56,4 @@ Het Device Enrollment Program wordt aangeboden door Apple om het voor bedrijven 
 6. Ga akkoord met de **Algemene voorwaarden** en beslis of u diagnostische gegevens naar Apple wilt verzenden.
 7. Nadat u uw registratie hebt voltooid, wordt u mogelijk gevraagd om meer acties te ondernemen. Bij sommige van deze stappen wordt mogelijk uw wachtwoord ingevoerd voor toegang tot e-mail of wordt een toegangscode ingesteld.
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
