@@ -26,7 +26,7 @@ ms.locfileid: "44058911"
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-## <a name="introduction"></a>Introductie
+## <a name="introduction"></a>Inleiding
 
 Apple iOS mobiele Line-Of-Business-apps die zijn toegewezen aan iPhones en iPads, zijn gebouwd met een inrichtingsprofiel en code die is ondertekend met een certificaat. Wanneer de app wordt uitgevoerd, bevestigt iOS de integriteit van de iOS-app en worden beleidsregels afgedwongen die zijn gedefinieerd door het inrichtingsprofiel. De volgende validaties vinden plaats:
 

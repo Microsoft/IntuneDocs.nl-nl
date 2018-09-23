@@ -171,7 +171,7 @@ Deze functie ondersteunt:
 - Android
 - iOS
 - macOS
-- Windows Phone 8,1
+- Windows Phone 8.1
 
 ## <a name="manage-and-troubleshoot"></a>Beheren en problemen oplossen
 

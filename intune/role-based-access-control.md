@@ -71,7 +71,7 @@ De volgende rollen zijn ingebouwd in Intune en u kunt deze zonder verdere config
 |Apparaatinschrijvingsmanagers|Lezen, bijwerken|
 |Beheerde apparaten|Lezen, bijwerken<!--, Delete [To be added in 1803]-->|
 |Mobiele apps|Toewijzen, maken, verwijderen, lezen, bijwerken|
-|Rapporten|Raadplegen|
+|Reports|Raadplegen|
 |Externe acties|Pc opruimen, opnieuw opstarten, op afstand vergrendelen, buiten gebruik stellen, apparaten synchroniseren, wissen|
 |Organisatie|Raadplegen|
 
@@ -142,6 +142,6 @@ U kunt een aangepaste rol maken die alle machtigingen bevat die vereist zijn voo
 
 [De rol voor Intune Helpdesk-operator gebruiken met de portal voor probleemoplossing](help-desk-operators.md)
 
-## <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie ook
 
 [Rollen toewijzen met Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)

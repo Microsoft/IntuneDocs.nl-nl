@@ -38,7 +38,7 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 
 ## <a name="app-management-capabilities-by-platform"></a>App-beheermogelijkheden per platform
 
-|  | Android | iOS | macOS | Windows 10 | Windows Phone 8,1 |
+|  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Apps toevoegen en aan apparaten en gebruikers toewijzen | Ja | Ja | Ja | Ja | Ja |
 | Apps toewijzen aan apparaten die niet zijn geregistreerd met Intune | Ja | Ja | Nee | Nee | Nee |
@@ -72,7 +72,7 @@ U vindt de meeste app-gerelateerde informatie in de workload **Client-apps** die
 
 In se volgende vier secties worden de beschikbare opties in het deelvenster **Client-apps** beschreven.
 
-### <a name="manage"></a>Beheren
+### <a name="manage"></a>Manage
 - **Apps**: selecteer deze optie als u de apps die uw werknemers gebruiken, wilt toevoegen, weergeven, toewijzen en bewaken. Zie voor meer informatie:
     - [Apps toevoegen](apps-add.md).
     - [Apps toewijzen](apps-deploy.md).
@@ -101,7 +101,7 @@ Zie [Apps beheren](app-management.md) voor meer informatie over deze sectie.
 
 Zie [Apps bewaken](apps-monitor.md) voor meer informatie over deze sectie.
 
-### <a name="set-up"></a>Instellen
+### <a name="set-up"></a>instellen
 - **VPP-tokens voor iOS**: voor het toepassen en weergeven van uw VPP-licenties (Volume Purchase Program) voor iOS. Zie voor meer informatie:
     - [iOS-apps die zijn gekocht via het volume-aankoopprogramma](vpp-apps-ios.md)
 - **Windows Enterprise-certificaat**: voor het toepassen of weergeven van de status van een certificaat voor ondertekening van programmacode die wordt gebruikt voor het distribueren van LOB-apps naar uw beheerde Windows-apparaten.
