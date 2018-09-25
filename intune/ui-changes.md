@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 140b19ac64003f9ddf481a33e0cf4d423e106ffd
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905373"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028627"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Waar is de Intune-functie die ik zoek gebleven in Azure?
 Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid gebruikgemaakt om een aantal taken logischer in te delen. Maar dergelijke verbeteringen betekenen wel dat u de nieuwe indeling moet leren kennen. Deze referentiegids is speciaal bedoeld voor degenen die heel vertrouwd zijn met Intune in de klassieke portal, en die zich afvragen waar bepaalde functies in Intune zijn gebleven in Azure Portal. Als een functie die u zoekt niet wordt behandeld in dit artikel, laat dan een reactie achter onder het artikel, zodat we het kunnen bijwerken.
@@ -70,12 +70,12 @@ Nieuwe beperkingsmogelijkheden worden uitsluitend toegevoegd aan Azure Portal.
 ## <a name="where-did-my-conditional-access-policies-go"></a>Waar is mijn beleid voor voorwaardelijke toegang?
 Nadat uw tenant is gemigreerd naar Azure Portal, blijven de beleidsregels voor voorwaardelijke toegang van uw tenant van kracht. U kunt deze echter niet weergeven of wijzigen via Intune in Azure Portal.
 
-Als u beleidsregels voor voorwaardelijke toegang wilt weergeven en er wijzigingen in wilt aanbrengen via Azure Portal, moet u de oude beleidsregels verwijderen uit de klassieke portal. U maakt ze daarna opnieuw in Azure Portal. Zie [Klassiek beleid migreren in Azure Portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration) voor meer informatie over het migreren van beleidsregels voor voorwaardelijke toegang. 
+Als u beleidsregels voor voorwaardelijke toegang wilt weergeven en er wijzigingen in wilt aanbrengen via Azure Portal, moet u de oude beleidsregels verwijderen uit de klassieke portal. U maakt ze daarna opnieuw in Azure Portal. Zie [Klassiek beleid migreren in Azure Portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration) voor meer informatie over het migreren van beleidsregels voor voorwaardelijke toegang. 
 
 ## <a name="where-did-my-compliance-policies-go"></a>Waar is mijn nalevingsbeleid gebleven?
 Nadat uw tenant is gemigreerd naar Azure Portal, blijft het nalevingsbeleid van uw tenant van kracht. U kunt deze echter niet weergeven of wijzigen via Intune in Azure Portal.
 
-Als u het nalevingsbeleid wilt weergeven en er wijzigingen in wilt aanbrengen vanuit Azure Portal, moet u de oude beleidsregels verwijderen uit de klassieke portal. U maakt ze daarna opnieuw in Azure Portal. Zie [Aan de slag met apparaatnalevingsbeleid](https://docs.microsoft.com/en-us/intune/known-issues#compliance) voor meer informatie over beleidsregels voor apparaatnaleving. 
+Als u het nalevingsbeleid wilt weergeven en er wijzigingen in wilt aanbrengen vanuit Azure Portal, moet u de oude beleidsregels verwijderen uit de klassieke portal. U maakt ze daarna opnieuw in Azure Portal. Zie [Aan de slag met apparaatnalevingsbeleid](https://docs.microsoft.com/intune/known-issues#compliance) voor meer informatie over beleidsregels voor apparaatnaleving. 
 
 ## <a name="where-did-apple-dep-go"></a>Waar is Apple DEP gebleven?
 In de klassieke portal kunt u Intune instellen voor integratie met het Device Enrollment Program van Apple, en handmatig synchroniseren met de service van Apple:

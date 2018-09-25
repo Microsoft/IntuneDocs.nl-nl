@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: df2e2f81008c6dedf5660a8a9eff4bf2cfe2ec6b
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905324"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505730"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Wi-Fi-instellingen configureren in Microsoft Intune
 
@@ -62,8 +62,6 @@ Gebruik de informatie in dit onderwerp voor meer informatie over de basisbeginse
     - **Windows 8.1 en hoger**
     - **Windows 10 en hoger**
 
-   > [!IMPORTANT]
-   > Als u een profiel voor Windows 10-apparaten maakt, met inbegrip van Windows Holographic for Business, moet u het platform **Windows 8.1 en hoger** kiezen. Het platform **Windows 10 en hoger** heeft geen Wi-Fi-profieltype. 
 
 6. Voor Apple- of Android-apparaten kiest u in de vervolgkeuzelijst **Wi-Fi-type** de optie **Basic** of **Enterprise**. U kunt **Basic** gebruiken als u basisfuncties zoals de netwerknaam en de SSID wilt opgeven. Met **Enterprise** kunt u uitgebreidere informatie over EAP (Extensible Authentication Protocol) opgeven als dit protocol in uw Wi-Fi-netwerk wordt gebruikt. 
 

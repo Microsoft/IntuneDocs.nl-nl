@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f1fbe688705940d3e8038affb84268fbaf113e3
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f7565972d37c5df5acb83012bb7cebbdc1fa1cec
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313061"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028644"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android-apparaten automatisch registreren met behulp van de Knox Mobile Enrollment van Samsung
 
@@ -84,7 +84,7 @@ Voor apparaten die in Intune worden geregistreerd met KME, kunt u als volgt conf
 
 - **Zonder koppeling met gebruikersnaam:** laat in de Knox-portal onder **Device details** (Apparaatdetails) de velden **User ID** (gebruikers-id) en **Password** (wachtwoord) leeg voor de toegevoegde apparaten. De gebruiker moet dan gebruikersnaam en wachtwoord invoeren tijdens de registratie bij Intune.
 
-- **Met koppeling met naam van gebruiker:** geef in de Knox-portal onder **Device Details** (Apparaatdetails) een **gebruikers-id** op (bijvoorbeeld een gebruikersnaam voor de toegewezen gebruiker of een [Device Enrollment Manager](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll)-account) voor de toegevoegde apparaten. De gebruikersnaam wordt dan al ingevuld en de gebruiker hoeft alleen een wachtwoord in te voeren tijdens de registratie bij Intune.
+- **Met koppeling met naam van gebruiker:** geef in de Knox-portal onder **Device Details** (Apparaatdetails) een **gebruikers-id** op (bijvoorbeeld een gebruikersnaam voor de toegewezen gebruiker of een [Device Enrollment Manager](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)-account) voor de toegevoegde apparaten. De gebruikersnaam wordt dan al ingevuld en de gebruiker hoeft alleen een wachtwoord in te voeren tijdens de registratie bij Intune.
 
 > [!NOTE]
 >
