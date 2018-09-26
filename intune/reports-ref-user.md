@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: efeaacffe996701f560af4cf077ee9fd23041545
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b6161540b4b05ebab35942a1657adc30bce6afdb
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223625"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727472"
 ---
 # <a name="reference-for-user-entity"></a>Naslag voor gebruikersentiteit
 
@@ -32,7 +32,7 @@ De entiteit **Gebruiker** bevat een lijst van alle Azure Active Directory-gebrui
 
 De entiteitverzameling **Gebruiker** bevat gebruikersgegevens. Deze records bevatten gebruikersstatussen gedurende de periode van gegevensverzameling, ook als de gebruiker is verwijderd. Een gebruiker kan bijvoorbeeld worden toegevoegd aan Intune en vervolgens ergens gedurende de afgelopen maand zijn verwijderd. Ook al is deze gebruiker niet aanwezig op het moment dat het rapport wordt gegenereerd, toch zijn de gebruiker en de status aanwezig in de gegevens van de vorige maand. U kunt een rapport maken dat de duur van de historische aanwezigheid van de gebruiker in uw gegevens weergeeft.
 
-| Eigenschap  | Description | Voorbeeld |
+| Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
 | UserKey |De unieke id van de gebruiker in het datawarehouse (surrogaatsleutel). |123 |
 | UserId |De unieke id van de gebruiker, vergelijkbaar met UserKey, maar het is een natuurlijke sleutel. |b66bc706-ffff-7437-0340-032819502773 |

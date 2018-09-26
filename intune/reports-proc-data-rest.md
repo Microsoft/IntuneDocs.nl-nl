@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0187555a087f6ca8ab391b839f2c905181c33cb6
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 2a79bac39e6d5529196d63394d86922a6d57bda5
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223676"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602211"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Gegevens ophalen uit de Intune-datawarehouse-API met een REST-client
 
@@ -78,7 +78,7 @@ U kunt de Intune-datawarehouse-API gebruiken met een generieke REST-client, zoal
 
 U hebt de volgende informatie nodig om een REST-aanroep te doen met Postman:
 
-| Kenmerk        | Description                                                                                                                                                                          | Voorbeeld                                                                                       |
+| Kenmerk        | Beschrijving                                                                                                                                                                          | Voorbeeld                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | Callback-URL     | Stel deze in als de callback-URL op de pagina met app-instellingen.                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | Tokennaam       | Een tekenreeks die wordt gebruikt om de referenties door te geven aan de Azure-app. Het proces genereert uw token, zodat u de aanroep naar de datawarehouse-API kunt maken.                          | Drager                                                                                        |

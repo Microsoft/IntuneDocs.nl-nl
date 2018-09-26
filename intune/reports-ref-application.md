@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e27b07b18991ebd930bac6ed70fa489d27aa22ba
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b71e022ea99255d95aa4f06c32a98b560f903836
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224865"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602245"
 ---
 # <a name="reference-for-application-entities"></a>Naslag voor toepassingsentiteiten
 
@@ -36,7 +36,7 @@ De categorie **Toepassing** bevat entiteiten voor mobiele apparaten waarmee gege
 
 De entiteit **AppRevision** bevat een overzicht van alle versies van apps.
 
-| Eigenschap  | Description | Voorbeeld |
+| Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
 | AppKey |De unieke id van de app. |123 |
 | ApplicationID |De unieke id van de app, vergelijkbaar met AppKey, maar dit is een natuurlijke sleutel |b66bc706-ffff-7437-0340-032819502773 |
@@ -58,7 +58,7 @@ De entiteit **AppRevision** bevat een overzicht van alle versies van apps.
 
 De entiteit **AppTypes** vermeldt de installatiebron van een app.
 
-| Eigenschap  | Description |
+| Eigenschap  | Beschrijving |
 |---------|------------|
 | AppTypeID |De id voor het type |
 | AppTypeKey |De surrogaatsleutel voor de sleutel |
@@ -66,7 +66,7 @@ De entiteit **AppTypes** vermeldt de installatiebron van een app.
 
 ### <a name="example"></a>Voorbeeld
 
-| AppTypeID  | Naam | Description |
+| AppTypeID  | Naam | Beschrijving |
 |---------|------------|--------|
 | 0 |Android Store-app | Een Android Store-app. |
 | 1 |Android LOB-app | Een Android Line-Of-Business-app. |
@@ -87,7 +87,7 @@ De entiteit **AppTypes** vermeldt de installatiebron van een app.
 
 De entiteit **VppProgramTypes** bevat een lijst van mogelijke VPP-programmatypen voor een app.
 
-| Eigenschap  | Description |
+| Eigenschap  | Beschrijving |
 |---------|------------|
 | VppProgramTypeID | De id voor het type. |
 | VppProgramTypeKey | De surrogaatsleutel voor de sleutel. |
@@ -95,7 +95,7 @@ De entiteit **VppProgramTypes** bevat een lijst van mogelijke VPP-programmatypen
 
 ### <a name="example"></a>Voorbeeld
 
-| VppProgramID  | Naam | Description |
+| VppProgramID  | Naam | Beschrijving |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Het VPP-programma van Microsoft. |
 | 00000000-0000-0000-0000-000000000000 | Nog niet beschikbaar | Standaardwaarde, Geen VPP. |
@@ -107,7 +107,7 @@ De entiteit **VppProgramTypes** bevat een lijst van mogelijke VPP-programmatypen
 
 Met de entiteit **ApplicationInventory** worden de toepassingen weergegeven die zich op het moment van de inventarisatieverzameling op het apparaat bevinden.
 
-| Eigenschap  | Description |
+| Eigenschap  | Beschrijving |
 |---------|------------|
 | DeviceKey | Dit is een verwijzing naar de tabel Device die de Intune-apparaat-id bevat. |
 | DateKey | Verwijzing naar datumtabel waarmee de dag van de inventarisatie wordt aangegeven. |
@@ -119,7 +119,7 @@ Met de entiteit **ApplicationInventory** worden de toepassingen weergegeven die 
 
 De entiteit **MobileAppInstallState** vertegenwoordigt de installatiestatus van een mobiele toepassing nadat deze is toegewezen aan een groep apparaten, gebruikers of beide.
 
-| Eigenschap | Description |
+| Eigenschap | Beschrijving |
 |---|---|
 | AppInstallStateKey | De unieke id van de installatiestatus van de app voor uw account. |
 | AppInstallState | Enum-waarde van de installatiestatus van de app. |
@@ -130,7 +130,7 @@ De entiteit **MobileAppInstallState** vertegenwoordigt de installatiestatus van 
 De **MobileAppDeviceUserInstallStatus** toont de installatiestatus van een mobiele app voor een bepaald apparaat en een bepaalde gebruiker.
 
 
-|      Eigenschap      |                                                         Description                                                         |
+|      Eigenschap      |                                                         Beschrijving                                                         |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------|
 |      DateKey       |                                  Sleutel van de datum waarop de installatiestatus van de app werd vastgelegd.                                  |
 |       AppKey       |                             Sleutel van de mobiele app die wordt gebruikt om een exemplaar van AppRevision te identificeren.                              |

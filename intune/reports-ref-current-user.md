@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3b94001310f9117b2c3ba7591d40891db891e86d
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: da149ea2870880a35352e9d37a91c5c39f7a7438
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224191"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602075"
 ---
 # <a name="reference-for-current-user-entity"></a>Naslaginformatie voor huidige gebruikersentiteit
 
@@ -31,7 +31,7 @@ De categorie **Huidige gebruiker** bevat gebruikerseigenschappen in het gegevens
 
 De entiteit **Huidige gebruiker** bevat een lijst van alle Azure Active Directory-gebruikers (Azure AD) met toegewezen licenties in uw onderneming.
 
-| Eigenschap  | Description | Voorbeeld |
+| Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
 | UserKey |De unieke id van de gebruiker in het datawarehouse (surrogaatsleutel). |123 |
 | UserId |De unieke id van de gebruiker, vergelijkbaar met UserKey, maar het is een natuurlijke sleutel. |b66bc706-ffff-7437-0340-032819502773 |

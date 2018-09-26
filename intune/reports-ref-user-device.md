@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 777484A7-09CE-4409-987F-76B3F87DFE93
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bd06c4d42de0c4f64ec0c0cfa61d8aa44af7ab95
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 0829bbcb661822c5d00ba4ca1e5d31ece301ef02
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224072"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727421"
 ---
 # <a name="user-device-association"></a>Gebruikersapparaatkoppeling
 
 De entiteit **UserDeviceAssociation** bevat gebruikersapparaatkoppelingen in uw organisatie.
 
 
-|        Naam        |                                           Description                                            |        Voorbeeld         |
+|        Naam        |                                           Beschrijving                                            |        Voorbeeld         |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
 |      UserKey       |              Een unieke id van gebruiker in het datawarehouse. (surrogaatsleutel).               |          123           |
 |     DeviceKey      |                      Een unieke id van het apparaat in het datawarehouse.                      |          123           |
