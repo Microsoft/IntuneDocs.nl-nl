@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: 8e0d8d6aba74a37d1c07fa8445aa98adf5943be2
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255546"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141606"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Apparaten inschrijven met een apparaatinschrijvingsmanageraccount
 
@@ -53,7 +53,7 @@ Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanag
   - De DEM-gebruiker kan bij DEM ingeschreven apparaten niet via de bedrijfsportal uitschrijven op het apparaat zelf. De Intune-beheerder kan uitschrijvingen uitvoeren.
   - Alleen het lokale apparaat wordt weergegeven in de bedrijfsportal-app of op de website.
   - Gebruikers kunnen geen Apple VPP-apps (Volume Purchase Program) met gebruikerslicenties gebruiken vanwege de Apple ID-vereisten per gebruiker voor het beheer van apps.
-  - (alleen iOS) Als u DEM gebruikt om iOS-apparaten in te schrijven, kunt u de Apple Configurator of het Apple Device Enrollment Program (DEP) of Apple School Manager (ASM) niet gebruiken om apparaten te registreren.
+  - (alleen iOS) Als u DEM gebruikt om iOS-apparaten in te schrijven, kunt u de Apple Configurator of het Apple Device Enrollment Program (DEP) of Apple School Manager (ASM) niet gebruiken om apparaten te registreren. Dit wil zeggen dat u een apparaat niet in supervisiemodus kunt zetten en dus geen toegang hebt tot sommige configuratie-opties.
   - (alleen Android) Er is een limiet voor het aantal apparaten met een Android-werkprofiel dat kan worden geregistreerd met één DEM-account. Per DEM-account kunt u tot tien werkprofielen voor Android-apparaten registreren. Deze beperking geldt niet voor de inschrijving van oudere Android-apparaten.
   - Apparaten kunnen VPP-apps installeren als ze over apparaatlicenties beschikken.
   - Er is geen apparaatlicentie voor Intune vereist om DEM te gebruiken. Meer informatie over [gebruikers- en apparaatlicenties](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
