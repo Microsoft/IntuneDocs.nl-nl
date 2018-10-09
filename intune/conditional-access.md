@@ -3,8 +3,8 @@ title: Voorwaardelijke toegang met Microsoft Intune
 titlesuffix: ''
 description: Meer informatie over het definiëren van de voorwaarden waaraan gebruikers, apparaten en apps moeten voldoen voor toegang tot bedrijfsresources in Microsoft Intune.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: b1da098b0d45ed15abc2a260b84e3ab2f60cc007
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 9ce2433213805b201a968740976b41de2970a62c
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254102"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231223"
 ---
 # <a name="whats-conditional-access"></a>Wat is voorwaardelijke toegang?
 

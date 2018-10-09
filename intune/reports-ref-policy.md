@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/11/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 81fc62505d125195b07b80f7a52d9f2515fc2d3d
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
+ms.openlocfilehash: 8c72e68871f28d0537aa7f15e6d3a56f50a84c86
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291560"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799639"
 ---
 # <a name="reference-for-policy-entities"></a>Naslag voor beleidsentiteiten
 
@@ -34,7 +34,7 @@ De categorie **Beleid** bevat entiteiten voor mobiele apparaten waarmee gegevens
 
 De entiteit **Policy** bevat apparaatconfiguratieprofielen, app-configuratieprofielen en nalevingsbeleid. U kunt het beleid met MDM (Mobile Device Management) toewijzen aan een groep in uw onderneming.
 
-| Eigenschap  | Description | Voorbeeld |
+| Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
 | PolicyKey |Een unieke sleutel voor het beleid in het datawarehouse. |123 |
 | PolicyId |Een unieke id van het beleid in het datawarehouse. |b66bc706-ffff-7437-0340-032819502773 |
@@ -49,7 +49,7 @@ De entiteit **Policy** bevat apparaatconfiguratieprofielen, app-configuratieprof
 
 De entiteit **PolicyType** bevat typen apparaatconfiguratieprofielen, app-configuratieprofielen en nalevingsbeleid. U kunt het beleid met MDM (Mobile Device Management) toewijzen aan een groep in uw onderneming.
 
-| Eigenschap  | Description | Voorbeeld |
+| Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
 | PolicyTypeId |Een unieke id van het beleid in het bronsysteem. |123 |
 | PolicyTypeKey |Een unieke id van het beleid in het datawarehouse. |1 |
@@ -59,7 +59,7 @@ De entiteit **PolicyType** bevat typen apparaatconfiguratieprofielen, app-config
 
 De entiteit **DeviceConfigurationProfileDeviceActivity** bevat het aantal apparaten met de status geslaagd, in behandeling, mislukt of fout per dag. Het aantal weerspiegelt de apparaatconfiguratieprofielen die zijn toegewezen aan de entiteit. Als een apparaat bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een apparaat twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de teller Geslaagd met één opgehoogd en wordt het apparaat in de foutstatus geplaatst. De entiteit geeft voor de afgelopen 30 dagen aan hoeveel apparaten op een bepaalde dag een bepaalde status hebben.
 
-| Eigenschap  | Description | Voorbeeld |
+| Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
 | DateKey |De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse. |20160703 |
 | In behandeling |Aantal unieke apparaten met de status In behandeling. |123 |
@@ -71,7 +71,7 @@ De entiteit **DeviceConfigurationProfileDeviceActivity** bevat het aantal appara
 
 De entiteit **DeviceConfigurationProfileUserActivity** bevat het aantal gebruikers met de status Geslaagd, In behandeling, Mislukt of Fout per dag. Het aantal weerspiegelt de apparaatconfiguratieprofielen die zijn toegewezen aan de entiteit. Als een gebruiker bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een gebruiker twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de gebruiker in de foutstatus geplaatst.  De entiteit **DeviceConfigurationProfileUserActivity** geeft voor de afgelopen dertig dagen aan hoeveel gebruikers op een bepaalde dag een bepaalde status hebben.
 
-| Eigenschap  | Description | Voorbeeld |
+| Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
 | DateKey |De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse. |20160703 |
 | In behandeling |Aantal unieke gebruikers met de status In behandeling. |123 |
@@ -83,7 +83,7 @@ De entiteit **DeviceConfigurationProfileUserActivity** bevat het aantal gebruike
 
 De entiteit **PolicyTypeActivity** bevat het cumulatieve aantal apparaten met de status Geslaagd, In behandeling, Mislukt of Fout. Deze statuswaarden verwijzen naar een apparaatconfiguratieprofiel, app-configuratieprofiel of nalevingsbeleid per dag.
 
-| Eigenschap  | Description | Voorbeeld |
+| Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
 | DateKey |De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse. |20160703 |
 | PolicyKey |Beleidssleutel, kan worden samengevoegd met Policy om de naam van het beleid op te halen. |Windows 10 baseline |
@@ -102,7 +102,7 @@ De API-naslag voor nalevingsbeleid bevat entiteiten die statusinformatie bieden 
 De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbeleid voor apparaten. In de tabel wordt het aantal apparaten weergegeven dat is gevonden voor elke nalevingsstatus.
 
 
-|Eigenschap     |Description  |Voorbeeld  |
+|Eigenschap     |Beschrijving  |Voorbeeld  |
 |---------|---------|---------|
 |DateKey  |De datum waarop de samenvatting voor het nalevingsbeleid is gemaakt.|20161204 |
 |Onbekend  |Het aantal apparaten dat offline is of om een andere redenen niet kan communiceren met Intune of Azure AD. |5|
@@ -118,7 +118,7 @@ De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbele
 
 
 
-|Eigenschap  |Description  |Voorbeeld  |
+|Eigenschap  |Beschrijving  |Voorbeeld  |
 |---------|---------|---------|
 |DateKey  |De datum waarop de samenvatting voor het nalevingsbeleid is gemaakt.|20161219|
 |PolicyKey     |Sleutel voor het nalevingsbeleid waarvoor de samenvatting is gemaakt. |10178 |
@@ -135,7 +135,7 @@ De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbele
 De volgende tabel bevat de platformtypen van alle toegewezen beleidsregels. De platformtypen van beleidsregels die nooit zijn toegewezen aan apparaten worden niet in deze tabel vermeld.
 
 
-|Eigenschap  |Description  |Voorbeeld  |
+|Eigenschap  |Beschrijving  |Voorbeeld  |
 |---------|---------|---------|
 |PolicyPlatformTypeKey      |De unieke sleutel voor het platformtype van het beleid. |20170519 |
 |PolicyPlatformTypeId      |De unieke id voor het platformtype van het beleid.|1|
@@ -145,7 +145,7 @@ De volgende tabel bevat de platformtypen van alle toegewezen beleidsregels. De p
 
 In de volgende tabel wordt het aantal apparaten met de status Geslaagd, In behandeling, Mislukt of Fout per dag weergegeven. Het aantal weerspiegelt de gegevens per beleidstypeprofiel. Als een apparaat bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een apparaat twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de teller Geslaagd met één opgehoogd en wordt het apparaat in de foutstatus geplaatst. De entiteit PolicyDeviceActivity geeft voor de afgelopen 30 dagen aan hoeveel apparaten op een bepaalde dag een bepaalde status hebben.
 
-|Eigenschap  |Description  |Voorbeeld  |
+|Eigenschap  |Beschrijving  |Voorbeeld  |
 |---------|---------|---------|
 |DateKey|De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse.|20160703|
 |In behandeling|Aantal unieke apparaten met de status In behandeling.|123|
@@ -159,7 +159,7 @@ PolicyKey|Beleidssleutel, kan worden samengevoegd met Policy om de naam van het 
 In de volgende tabel wordt het aantal gebruikers met de status Geslaagd, In behandeling, Mislukt of Fout per dag weergegeven. Het aantal weerspiegelt de gegevens per beleidstypeprofiel. Als een gebruiker bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een gebruiker twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de gebruiker in de foutstatus geplaatst. De entiteit PolicyUserActivity geeft voor de afgelopen 30 dagen aan hoeveel gebruikers op een bepaalde dag een bepaalde status hebben.
 
 
-| Eigenschap  |                                         Description                                         |       Voorbeeld       |
+| Eigenschap  |                                         Beschrijving                                         |       Voorbeeld       |
 |-----------|---------------------------------------------------------------------------------------------|---------------------|
 |  DateKey  | De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse. |      20160703       |
 |  In behandeling  |                         Aantal unieke apparaten met de status In behandeling.                          |         123         |

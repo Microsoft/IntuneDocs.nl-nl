@@ -3,8 +3,8 @@ title: Een MTD-nalevingsbeleid voor apparaten maken met Microsoft Intune
 titlesuffix: ''
 description: Maak een Intune-nalevingsbeleid voor apparaten waarbij gebruik wordt gemaakt van de bedreigingsniveaus van uw MTD-partner om te bepalen of een mobiel apparaat toegang mag hebben tot bedrijfsresources.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1152473206826aa2e3f63c7196a3d0538101a948
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: b52452fc78b8e78e88a7a72215dd51b95cb5b704
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046074"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232117"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>MTD-nalevingsbeleid (Mobile Threat Defense) voor apparaten maken met Intune
 
@@ -33,7 +33,7 @@ Intune met MTD helpt u bij het detecteren van bedreigingen en het beoordelen van
 
 Als onderdeel van de configuratie van MTD in de MTD-partnerconsole, hebt u een beleid gemaakt waarmee verschillende bedreigingen in de categorieën Hoog, Gemiddeld en Laag worden ingedeeld. U moet nu het MTD-niveau instellen in het nalevingsbeleid van Intune voor apparaten.
 
-Vereisten voor nalevingsbeleid voor apparaten met MTD:
+Vereisten voor apparaatnalevingsbeleid met MTD:
 
 -   De integratie van MTD met Intune instellen
 

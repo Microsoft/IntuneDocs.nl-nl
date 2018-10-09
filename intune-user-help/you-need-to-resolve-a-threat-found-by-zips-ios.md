@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 9cb87541e45591ae8c4d1e8151fdb781ebd0b364
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 8b77eeb57bb3887e28242ca845ec6e83d4e9a817
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148137"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863062"
 ---
 # <a name="resolve-a-threat-found-by-zimperium-zips"></a>Een bedreiging oplossen die met Zimperium zIPS is gevonden
 
@@ -37,12 +37,16 @@ In dit artikel wordt beschreven hoe u waarschuwingen voor bedreigingen van Zimpe
 ## <a name="troubleshoot-virus-or-security-threat"></a>Virus- of beveiligingsbedreiging oplossen  
 Als er een virus- of beveiligingsbedreiging wordt gedetecteerd, legt Zimperium zIPS beperkingen op conform het toegangsbeleid van uw organisatie. Het toegangsbeleid van het bedrijf kan verhinderen dat u via uw apparaat toegang hebt tot het netwerk, de apps en de e-mail van uw werk.  
 
-Zimperium zIPS vraagt u om actie te ondernemen om opnieuw toegang te krijgen. Selecteer de bedreiging en volg de instructies in de app op om deze te verhelpen.  
+Zimperium zIPS vraagt u om actie te ondernemen om opnieuw toegang te krijgen. Selecteer de bedreiging en volg de instructies in de app op om deze te verhelpen.
 
-## <a name="resolve-an-app-threat"></a>Een app-bedreiging oplossen
+Aangezien de app is geïntegreerd met MDM-provider van uw bedrijf, ziet u ook een waarschuwing over beperkte toegang in de bedrijfsportal-app. In de waarschuwing krijgt u de instructie om Zimperium zIPS te openen om de virus- of beveiligingsbedreiging op te lossen.  
+
+  ![Voorbeeldschermafbeelding van de apparaatpagina van de bedrijfsportal, met de waarschuwing van Zimperium zIPS.](./media/CP-lookout-virus-banner-1808.png)  
+  
+## <a name="troubleshoot-an-app-threat"></a>Een app-bedreiging oplossen
 
 Als u een app installeert die als een bedreiging voor uw apparaat wordt gezien, ontvangt u een melding in Zimperium zIPS. Als de betreffende app op uw apparaat blijft, hebt u geen toegang tot resources van het bedrijf.  
 
 Als u dit wilt oplossen, selecteert u de app in de lijst met bedreigingen in Zimperium zIPS. Volg daarna de aanwijzingen op het scherm voor het verwijderen van de app.  
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980). 
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).   

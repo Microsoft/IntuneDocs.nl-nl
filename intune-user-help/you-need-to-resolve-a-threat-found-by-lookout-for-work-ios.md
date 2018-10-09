@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ffa0207729a6e0855b4534d40aa598bcb04e7847
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5866314c03eff5613b4c0cc5d46d2f2eace29a13
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150198"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828020"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Een bedreiging oplossen die met Lookout for Work is gevonden  
 
@@ -42,7 +42,9 @@ Krijg weer toegang tot resources van uw bedrijf wanneer de Lookout for Work-app 
     ![Voorbeeldschermafbeelding van een Lookout for Work-foutbericht, met een koppeling naar de bedrijfsportalwebsite en blauwe OK-knop.](./media/mtd-go-to-device-management-portal-android.png)  
 
 2. Selecteer uw apparaat.  
-3. Lees de waarschuwing die onder uw apparaat wordt weergegeven. Hierin wordt u geïnstrueerd om Lookout for Work te openen voor het oplossen van de virus- of beveiligingsbedreiging.   
+3. Lees de waarschuwing die onder uw apparaat wordt weergegeven. Hierin wordt u geïnstrueerd om Lookout for Work te openen voor het oplossen van de virus- of beveiligingsbedreiging.     
+
+    ![Voorbeeld-schermafbeelding van de apparaatpagina van de bedrijfsportal, met de waarschuwing van Lookout for Work.](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>Een app-bedreiging oplossen   
 Als u een app installeert die door Lookout for Work wordt aangeduid als een bedreiging, ontvangt u een bericht zoals weergegeven in de onderstaande schermafbeelding.  
@@ -50,5 +52,5 @@ Als u een app installeert die door Lookout for Work wordt aangeduid als een bedr
 ![Voorbeeldschermafbeelding van een lijst met actieve en opgelost app-bedreigingen die door Lookout for Work zijn gedetecteerd.](./media/ios-lfw-threat-example.png)    
 Selecteer de naam van de app die wordt weergegeven aan de bovenkant van het scherm. Volg daarna de aanwijzingen op voor het verwijderen van de app. Zolang de app zich op uw apparaat bevindt, hebt u geen toegang tot resources van het bedrijf.    
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).    
 

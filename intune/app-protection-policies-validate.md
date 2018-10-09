@@ -3,8 +3,8 @@ title: De configuratie van uw beveiligingsbeleid voor apps valideren
 titleSuffix: Microsoft Intune
 description: Informatie over hoe u kunt testen of het beveiligingsbeleid van uw app is ingesteld en correct werkt.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ea79a2e177b8a4e85454140c7efb9172defe5b6
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: cac03f35cdec3c1a4815559abc83108bd27d3472
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834030"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231113"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>De configuratie van uw beveiligingsbeleid voor apps valideren
 

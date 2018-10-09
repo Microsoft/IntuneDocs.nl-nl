@@ -2,8 +2,8 @@
 title: Netwerktoegangsbeheer integreren met Microsoft Intune - Azure | Microsoft Docs
 description: De oplossingen voor netwerktoegangsbeheer controleren de inschrijving en naleving voor apparaten met Intune. Netwerktoegangsbeheer omvat bepaald gedrag en werkt met voorwaardelijke toegang. Zie de stappen voor het onboarding-proces en een lijst met partneroplossingen.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf796afcfc42f2cdf778713f4dceadb2597a12e2
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: edac1701de22fd94eac3990949d18389841a5444
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834064"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231517"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Netwerktoegangsbeheer integreren met Intune
 
