@@ -93,7 +93,7 @@ Wi-Fi-instellingen worden gebruikt in een configuratieprofiel dat van toepassing
 
       - **Clientauthenticatie**
 
-        ****Clientcertificaat voor clientverificatie (identiteitscertificaat)**: gebruiken met EAP-type **PEAP-TLS**. Kies het certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren.
+        **Clientcertificaat voor clientverificatie (identiteitscertificaat)**: gebruiken met EAP-type **PEAP-TLS**. Kies het certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren.
 
         **Verificatiemethode**: gebruiken met EAP-type **EAP-TTLS**. Selecteer de verificatiemethode voor de verbinding:  
 
