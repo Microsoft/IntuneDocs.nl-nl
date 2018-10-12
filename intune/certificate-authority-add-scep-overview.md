@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee5a39ee8a146fbc6a85a9f4438b8e14a408a735
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 772c800e75f52d9826992bf0adfbfdcf3faba107
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321657"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46329977"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Partnercertificeringsinstanties toevoegen in Intune met behulp van SCEP
 
@@ -123,6 +123,7 @@ Wanneer u de registratie ongedaan maakt of het apparaat wist, worden de certific
 De volgende externe certificeringsinstanties bieden ondersteuning voor Intune:
 
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
+- [EJBCA GitHub open-sourceversie](https://github.com/agerbergt/intune-ejbca-connector)
 
 Als u een externe certificeringsinstantie bent en interesse hebt om uw product te integreren met Intune, controleert u de API-richtlijnen:
 

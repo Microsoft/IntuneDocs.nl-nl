@@ -1,11 +1,11 @@
 ---
-title: Uw iOS- of Mac OS-apparaat gebruiken met Intune | Microsoft Docs
-description: Lijst met koppelingen naar taken die u op uw mobiele iOS- of Mac OS X-apparaat kunt uitvoeren wanneer het apparaat is geregistreerd bij Intune
+title: Uw macOS-apparaat gebruiken met Intune | Microsoft Docs
+description: Koppelingen zoeken om problemen met uw mobiele macOS-apparaat op te lossen of uw mobiele macOS-apparaat te beheren via de bedrijfsportal-app
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 4/20/2018
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 02ccde8299e4ad5d6aacb2abd120c094f752c5e6
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 887b9355bc68edca314a49743b8d11728ca2361a
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771853"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168910"
 ---
-# <a name="using-your-macos-device-with-intune"></a>Uw Mac OS-apparaat gebruiken met Intune
+# <a name="using-your-macos-device-with-intune-company-portal"></a>Uw macOS-apparaat gebruiken met de Intune-bedrijfsportal
 
-Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te maken. Hier volgt een lijst met de meest voorkomende zaken die u mogelijk gevraagd wordt te doen door uw bedrijf.
+In dit artikel vindt u specifieke taken en informatie voor de bedrijfsportal voor macOS. Gebruik dit artikel om problemen met uw macOS-apparaat op te lossen of uw macOS-apparaat te beheren. Klik op een willekeurige koppeling voor meer informatie, stappen en schermafbeeldingen. 
 
 ## <a name="supported-versions"></a>Ondersteunde versies
 
-Intune ondersteunt momenteel OS X El Capitan 10.11 en hoger voor MacOS-apparaten.
+De bedrijfsportal voor macOS biedt momenteel ondersteuning voor OS X El Capitan 10.11 en later voor macOS-apparaten.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inschrijven in Intune en de Bedrijfsportal installeren
 

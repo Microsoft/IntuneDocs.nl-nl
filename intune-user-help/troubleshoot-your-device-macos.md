@@ -1,11 +1,11 @@
 ---
-title: Veelvoorkomende problemen met uw iOS-apparaat herstellen | Microsoft Docs
-description: Ontdek manieren om veelvoorkomende problemen met uw iOS-apparaat op te lossen.
+title: Veelvoorkomende problemen met uw macOS-apparaat herstellen | Microsoft Docs
+description: Algemene problemen oplossen voor macOS-apparaten in Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eeb9b04a3e8d7a5d1f96e58e3df7310d53817090
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 003bf4046a997e3633105e4dc41c93a82e16ee40
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146775"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505713"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>Veelvoorkomende problemen met uw macOS-apparaat oplossen
 
-Soms kunnen er problemen optreden met uw macOS-apparaat die zouden kunnen worden hersteld via het oplossen van problemen. Enkele veelvoorkomende problemen die u eerst zelf kunt proberen op te lossen worden hieronder vermeld. Voor complexere problemen kunt u het best contact opnemen met het ondersteuningsteam van het bedrijf via de contactgegevens op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
+Los algemene macOS-problemen op die zich tijdens en na de inschrijving voordoen. Als u het probleem dat u ondervindt niet in de onderstaande lijst ziet staat, moet u contact opnemen met uw bedrijfsondersteuning. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 - [Mijn versie van macOS wordt nog niet ondersteund](your-macos-version-isnt-yet-supported.md)
-- [Uw macOS-apparaat bijwerken](you-need-to-update-your-macos-device.md)
-- [Fouten die mogelijk worden weergegeven als u Jamf Self Service gebruikt](device-little-different-jamf.md)
-- [Het serienummer zoeken](how-do-i-find-the-serial-number-on-my-device-macos.md)
-- [Uw apparaat identificeren](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [Ik wil mijn macOS-apparaat bijwerken](you-need-to-update-your-macos-device.md)
+- [Mijn door Jamf beheerde apparaat heeft de status Niet-conform](device-little-different-jamf.md)
+- [Ik kan het serienummer niet vinden](how-do-i-find-the-serial-number-on-my-device-macos.md)
+- [Ik ben gevraagd om mijn apparaat te identificeren](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)

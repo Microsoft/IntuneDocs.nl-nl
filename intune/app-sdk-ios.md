@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/22/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: daf4063f7713dafa938398cdc95344ffe25ae8f0
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: 77f6391637b8d6f8f2ed47dd84885c11b8b6f476
+ms.sourcegitcommit: 60297a41a91d32f9a162e01f8aafc9b8369b7b3d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031317"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46466775"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
@@ -32,7 +32,7 @@ Met de Microsoft Intune App SDK voor iOS kunt u Intune-beveiligingsbeleid voor a
 
 * U hebt een Mac OS-computer met OS X 10.8.5 of hoger nodig, waarop Xcode 9 of hoger is geïnstalleerd.
 
-* Uw app moet geschikt zijn voor iOS 9.3.5 of hoger.
+* Uw app moet geschikt zijn voor iOS 10 of hoger.
 
 * Controleer de [Licentievoorwaarden voor de Intune App SDK voor iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Druk een kopie van de licentievoorwaarden af voor uw administratie. Door de Intune App SDK voor iOS te downloaden en gebruiken, gaat u akkoord met deze licentievoorwaarden.  Als u deze niet accepteert, mag u de software niet gebruiken.
 
@@ -40,13 +40,13 @@ Met de Microsoft Intune App SDK voor iOS kunt u Intune-beveiligingsbeleid voor a
 
 ## <a name="whats-in-the-sdk"></a>Inhoud van de SDK
 
-De ontwikkelaarshandleiding voor Intune App SDK voor iOS bevat een statische bibliotheek, resourcebestanden, API-headers, een PLIST-bestand met foutopsporingsinstellingen en een configuratiehulpprogramma. Mobiele apps omvatten mogelijk de bronbestanden en kunnen statisch aan de meeste bibliotheken voor beleidsafdwinging worden gekoppeld. Geavanceerde APP-functies van Intune worden afgedwongen met behulp van API's.
+De ontwikkelaarshandleiding voor Intune App SDK voor iOS bevat een statische bibliotheek, resourcebestanden, API-headers, een PLIST-bestand met foutopsporingsinstellingen en een configuratiehulpprogramma. Client-apps omvatten mogelijk de bronbestanden en kunnen statisch aan de meeste bibliotheken voor beleidsafdwinging worden gekoppeld. Geavanceerde APP-functies van Intune worden afgedwongen met behulp van API's.
 
 In deze handleiding wordt ingegaan op het gebruik van de volgende onderdelen van de Intune App SDK voor iOS:
 
-* **libIntuneMAM.a**: de statische bibliotheek van Intune App SDK. Als uw app geen extensies gebruikt, moet u deze bibliotheek aan uw project koppelen, zodat uw app gebruik kan maken van Intune Mobile Application Management.
+* **libIntuneMAM.a**: de statische bibliotheek van Intune App SDK. Als uw app geen extensies gebruikt, moet u deze bibliotheek aan uw project koppelen, zodat uw app gebruik kan maken van Intune Client Application Management.
 
-* **IntuneMAM.framework**: het Intune-App SDK-framework. Koppel dit framework aan uw project, zodat uw app Intune Mobile Application Management kan gebruiken. Gebruik het framework in plaats van de statische bibliotheek als uw app gebruikmaakt van extensies, zodat uw project niet meerdere exemplaren van de statische bibliotheek maakt.
+* **IntuneMAM.framework**: het Intune-App SDK-framework. Koppel dit framework aan uw project, zodat uw app Intune Client Application Management kan gebruiken. Gebruik het framework in plaats van de statische bibliotheek als uw app gebruikmaakt van extensies, zodat uw project niet meerdere exemplaren van de statische bibliotheek maakt.
 
 * **IntuneMAMResources.bundle**: een bundel met resources waarvan de SDK afhankelijk is.
 

@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313714"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602143"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -83,29 +83,31 @@ U kunt de instellingen voor een beperking van het type apparaat wijzigen via ond
 8. Kies voor elk vermeld platform of u apparaten die **persoonlijk eigendom zijn** wilt **Toestaan** of **Blokkeren**.
 9. Kies **OK**.
 
-### <a name="android-device-type-restrictions"></a>Beperkingen voor Android-apparaattypen
+### <a name="blocking-personal-android-devices"></a>Persoonlijke Android-apparaten blokkeren
 - Als u instelt dat Android-apparaten niet mogen worden geregistreerd als deze persoonlijk eigendom zijn, kunnen apparaten met een Android-werkprofiel die persoonlijk eigendom zijn, nog wel worden geregistreerd.
 - Standaard zijn instellingen voor uw apparaten met een Android-werkprofiel gelijk aan de instellingen voor uw Android-apparaten. Wanneer u de instellingen voor Android-werkprofielen wijzigt, is dat niet meer het geval.
 - Als u het registreren van persoonlijke apparaten met een Android-werkprofiel blokkeert, kunnen alleen zakelijke Android-apparaten worden geregistreerd als apparaat met een Android-werkprofiel.
 
-### <a name="windows-device-type-restrictions"></a>Beperkingen voor Windows-apparaattypen
-Nadat de apparaattypebeperking voor Windows-platformen is ingesteld op **Blokkeren**, wordt door Intune gecontroleerd of elke nieuwe Windows-registratieaanvraag wordt geautoriseerd als een zakelijke inschrijving. Niet-geautoriseerde inschrijvingen worden geblokkeerd.
+### <a name="blocking-personal-windows-devices"></a>Persoonlijke Windows-apparaten blokkeren
+Als u uw eigen Windows-apparaten blokkeert voor inschrijving, wordt door Intune gecontroleerd of elke nieuwe Windows-registratieaanvraag wordt geautoriseerd als een zakelijke inschrijving. Niet-geautoriseerde inschrijvingen worden geblokkeerd.
 
 De volgende methoden worden gezien als een zakelijke Windows-registratie:
  - De ingeschreven gebruiker maakt gebruik van [een apparaatinschrijvingsmanageraccount]( device-enrollment-manager-enroll.md).
 - Het apparaat is geregistreerd via [Windows AutoPilot](enrollment-autopilot.md).
+- Het apparaat wordt met Windows Autopilot geregistreerd, maar is geen Alleen MDM-inschrijving-optie van Windows-instellingen.
 - Het IMEI-nummer van het apparaat wordt vermeld onder **Apparaatinschrijving** > **[Zakelijke apparaat-id's](corporate-identifiers-add.md)**. (Wordt niet ondersteund voor Windows Phone 8.1.)
 - Het apparaat is geregistreerd via een [pakket voor bulkinrichting](windows-bulk-enroll.md).
 - Het apparaat is geregistreerd via [automatische inschrijving met behulp van SCCM voor co-beheer](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
 De volgende inschrijvingen worden door Intune wel als zakelijk gemarkeerd, maar toch geblokkeerd omdat ze de Intune-beheerder geen beheer op apparaatniveau bieden:
- - [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling tijdens het instellen van Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
-- [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling vanuit Windows-instellingen](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md).
+ - [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling tijdens het instellen van Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*.
+- [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling vanuit Windows-instellingen](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)*.
  
 Ook de volgende persoonlijke registratiemethoden worden geblokkeerd:
-- [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) via [Werkaccount toevoegen vanuit de Windows-instellingen](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md).
+- [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) via [Werkaccount toevoegen vanuit de Windows-instellingen](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*.
 - De optie [Alleen inschrijven voor MDM]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) in de Windows-instellingen.
 
+\* Deze worden niet geblokkeerd als ze zijn geregistreerd met Autopilot.
 
 ## <a name="set-device-limit-restrictions"></a>Apparaatlimietbeperkingen instellen
 

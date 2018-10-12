@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: bdc7f4f8f796d04f5c709298cd654bc2cdc32d0e
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216255"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864605"
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Microsoft Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten
 
@@ -84,7 +84,7 @@ Bijvoorbeeld: wanneer een gebruiker verbinding maakt met een van deze sites, geb
 > [!NOTE]
 > Deze URL's moeten de juiste FQDN-indeling hebben. Apple vereist dat deze de volgende indeling hebben: `http://<yourURL.domain>`
 
-De URL-vergelijkingspatronen moeten beginnen met `http://` of `https://`. Er wordt een eenvoudige vergelijking van de tekenreeksen uitgevoerd. Het URL-voorvoegsel `http://www.contoso.com/` komt dus niet overeen met `http://www.contoso.com:80/`. Bij iOS 9.0 of hoger kan echter één jokerteken \* worden gebruikt om alle overeenkomende waarden op te geven. Bijvoorbeeld: `http://*.contoso.com/` komt overeen met zowel `http://store.contoso.com/` als `http://www.contoso.com`.
+De URL-vergelijkingspatronen moeten beginnen met `http://` of `https://`. Er wordt een eenvoudige vergelijking van de tekenreeksen uitgevoerd. Het URL-voorvoegsel `http://www.contoso.com/` komt dus niet overeen met `http://www.contoso.com:80/`. Bij iOS 10.0 of hoger kan echter één jokerteken \* worden gebruikt om alle overeenkomende waarden op te geven. Bijvoorbeeld: `http://*.contoso.com/` komt overeen met zowel `http://store.contoso.com/` als `http://www.contoso.com`.
 De patronen `http://.com` en `https://.com` komen overeen met respectievelijk alle HTTP- en HTTPS-URL's.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Apps die gebruikmaken van eenmalige aanmelding

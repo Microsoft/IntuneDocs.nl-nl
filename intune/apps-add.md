@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330157"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141674"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune
 
@@ -116,7 +116,7 @@ Voor apps die door Intune worden beheerd, kan ook app-beveiliging worden ingesch
 
 ### <a name="understanding-licensed-apps"></a>Informatie over apps met licentie
 Naast het feit dat er verschillende typen apps zijn, zoals web-apps, store-apps en LOB-apps, moet u ook het verschil begrijpen tussen apps die zijn aangeschaft via een volumeaankoopprogramma en apps met licentie, bijvoorbeeld: 
-- **Apple-volumeaankoopprogramma voor bedrijven (iOS en MacOS)**: u kunt in iOS App Store meerdere licenties aanschaffen voor een app die u in uw bedrijf wilt uitvoeren. Door meerdere exemplaren aan te schaffen, kunt u apps in uw bedrijf efficiënt beheren. Raadpleeg [iOS-apps beheren die zijn aangeschaft via een volumeaankoopprogramma met Microsoft Intune](vpp-apps-ios.md) voor meer informatie.
+- **Apple-volumeaankoopprogramma voor bedrijven (iOS)**: u kunt in iOS App Store meerdere licenties aanschaffen voor een app die u in uw bedrijf wilt uitvoeren. Door meerdere exemplaren aan te schaffen, kunt u apps in uw bedrijf efficiënt beheren. Raadpleeg [iOS-apps beheren die zijn aangeschaft via een volumeaankoopprogramma met Microsoft Intune](vpp-apps-ios.md) voor meer informatie.
 - **Android-werkprofiel**: hoe u apps toewijst aan Android-werkprofielapparaten verschilt van hoe u deze apps toewijst aan Android-standaardapparaten. Alle apps die u installeert voor Android-werkprofielen, zijn afkomstig uit de beheerde Google Play Store. U meldt zich aan bij de store, bladert naar de gewenste apps en keurt deze goed. De app verschijnt vervolgens op het knooppunt **Gelicentieerde apps** in Azure Portal, waarna u de toewijzing van apps kunt beheren zoals u bij elke app zou doen.
 - **Microsoft Store voor Bedrijven (Windows 10)**: in Microsoft Store voor Bedrijven kunt u apps vinden en afzonderlijk of in bulk aanschaffen voor uw organisatie. Als u Windows Store voor Bedrijven aan Microsoft Intune koppelt, kunt u apps die zijn aangeschaft via een volumeaankoopprogramma, beheren in Azure Portal. Raadpleeg [Apps die u hebt aangeschaft in Microsoft Store voor Bedrijven, beheren met Microsoft Intune](windows-store-for-business.md) voor meer informatie.
 

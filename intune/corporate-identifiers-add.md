@@ -15,12 +15,12 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bf9eaef010879835abb7cec57c2fbdce6aa1e0a
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e46951be5048e0bcf2af5b2d4320744f6d6e47e8
+ms.sourcegitcommit: 3785e506ef5fbc474b3e09e87412d4b673bbdbb8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905866"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46541952"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
 
@@ -33,7 +33,7 @@ Tijdens het inschrijven wijst Intune automatisch de status Bedrijfseigendom toe 
 - Ingeschreven met een [apparaatinschrijvingsbeheerder](device-enrollment-manager-enroll.md)-account (alle platforms)
 - Ingeschreven via het Apple-[apparaatinschrijvingsprogramma](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md) of [Apple Configurator](apple-configurator-enroll-ios.md) (alleen iOS)
 - [Herkend als bedrijfseigendom voorafgaand aan inschrijving](#identify-corporate-owned-devices-with-imei-or-serial-number) met een internationaal identificatienummer voor mobiele apparaten (IMEI; alle platforms met IMEI-nummers) of een serienummer (iOS en Android)
-- Ingeschreven in Azure Active Directory of Enterprise Mobility + Security als een Windows 10 Enterprise-apparaat
+- Met Azure Active Directory gekoppeld als een zakelijk Windows 10-apparaat
 - Opgegeven als Zakelijk in de [lijst Eigenschappen van het apparaat](#change-device-ownership)
 
 Na het inschrijven kunt u [de eigendomsinstelling wijzigen](#change-device-ownership) en schakelen tussen **Persoonlijk** en **Zakelijk**.

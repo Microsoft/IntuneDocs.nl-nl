@@ -14,12 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c467d20a3bf4f2cfb94db5cecfae78b1717993d
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 317a1fa5fd83cbfe95afa51894466f93131bd278
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34561970"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562762"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Op apps gebaseerde voorwaardelijke toegang met Intune
 
@@ -27,7 +27,7 @@ ms.locfileid: "34561970"
 
 U kunt [beveiligingsbeleid voor apps in Intune](app-protection-policy.md) gebruiken om te helpen bij het beveiligen van uw bedrijfsgegevens op apparaten die zijn geregistreerd in Intune. U kunt ook beveiligingsbeleid voor apps gebruiken op apparaten die in het bezit zijn van werknemers en die niet zijn geregistreerd voor beheer in Intune. In dit geval moet u, zelfs als u het apparaat niet beheert, er nog steeds voor zorgen dat uw bedrijfsgegevens en -bronnen zijn beveiligd.
 
-Met op apps gebaseerde voorwaardelijke toegang en beheer van mobiele apps voegt u een beveiligingslaag toe door er voor te zorgen dat alleen mobiele apps die app-beveiligingsbeleid van Intune ondersteunen, toegang hebben tot Exchange Online en andere Office 365-services.
+Met op apps gebaseerde voorwaardelijke toegang en beheer van client-apps voegt u een beveiligingslaag toe door ervoor te zorgen dat alleen client-apps die app-beveiligingsbeleid van Intune ondersteunen, toegang hebben tot Exchange Online en andere Office 365-services.
 
 > [!NOTE]
 > Een beheerde app is een app waarop app-beveiligingsbeleid is toegepast en die door Intune kan worden beheerd.

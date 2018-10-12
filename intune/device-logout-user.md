@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/13/2017
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.technology: ''
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 223906d37159ba4081f5a5c055392321ac02e0ab
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d80d7a05dc01298dc7bc347098cf85fbdfc3689f
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020619"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403490"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>De huidige gebruiker van met Intune beheerde iOS-apparaten afmelden
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Met de actie **Huidige gebruiker afmelden** wordt de huidige gebruiker afgemeld op een gedeeld iPad-apparaat dat is geconfigureerd voor het beheren van de iOS-app Classroom met een [iOS-onderwijsprofiel](education-settings-configure-ios.md). 
+Gebruik de actie **Huidige gebruiker afmelden** om de huidige gebruiker af te melden van een gedeeld iPad-apparaat. 
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
@@ -36,7 +36,7 @@ Met de actie **Huidige gebruiker afmelden** wordt de huidige gebruiker afgemeld 
 - macOS: niet ondersteund
 - Android: niet ondersteund
 
-## <a name="how-to-logout-the-current-user"></a>Huidige gebruiker afmelden
+## <a name="how-to-log-out-the-current-user"></a>De huidige gebruiker afmelden
 
 1.  Meld u aan bij Azure Portal.
 2.  Kies **Meer services** > **Bewaking en beheer** > **Intune**.

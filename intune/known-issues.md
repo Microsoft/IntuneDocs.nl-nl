@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4e523e4fb6505b2faaa0aa776b89454524130ba8
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347794"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187849"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekende problemen in Microsoft Intune
 
@@ -106,6 +106,15 @@ Zie [Wat is apparaatcompatibiliteit](device-compliance.md) voor meer informatie.
 
 <!-- ## Enrollment -->
 
+## <a name="conditional-access"></a>Voorwaardelijke toegang
+
+### <a name="conditional-access-settings-from-intune-do-not-show-up-in-new-console"></a>Instellingen voor voorwaardelijke toegang van Intune worden niet weergegeven in de nieuwe console
+
+Nadat uw tenant is gemigreerd naar Azure Portal, blijven uw instellingen voor voorwaardelijke toegang toegepast; ze worden echter niet weergegeven in de Azure Intune-portal. 
+
+Als u die instellingen in Azure Portal wilt weergeven en beheren, moet u de oude instellingen uit de klassieke portal verwijderen en ze opnieuw maken in Azure Portal. 
+
+Raadpleeg voor meer informatie [Aanbevolen procedures voor voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices).
 
 ## <a name="data-protection"></a>Gegevensbescherming
 

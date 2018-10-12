@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: c4b9b99a17e435b1d79d2e10565abbd262c89741
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313458"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187815"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Inschrijving van kioskapparaten voor Android Enterprise instellen
 
@@ -74,6 +74,7 @@ U kunt apps en beleidsregels zenden naar toegewezen of dynamische apparaatgroepe
     - **Locatie voor het toevoegen van apparaten**: enrollmentProfileName
     - Kies in het middelste vak **Overeenkomst**.
     - Voer in het laatste veld de naam in van het inschrijvingsprofiel dat u eerder hebt gemaakt.
+    Raadpleeg [Dynamische lidmaatschapsregels voor groepen in AAD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership) voor meer informatie over dynamische lidmaatschapsregels. 
 5. Kies **Query toevoegen** > **Maken**.
 
 ### <a name="replace-or-remove-tokens"></a>Tokens vervangen of verwijderen

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321234"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028729"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -82,7 +82,7 @@ Voordat u certificaatprofielen kunt configureren, moet u de volgende stappen uit
 Maak een domeingebruikersaccount dat u als NDES-serviceaccount gaat gebruiken. U voert dit account in wanneer u sjablonen op de verlenende CA configureert voordat u NDES installeert en configureert. Zorg ervoor dat de gebruiker over de standaardrechten **Lokaal aanmelden**, **Aanmelden als service** en **Aanmelden als batchtaak** beschikt. Sommige organisaties voeren een beveiligingsbeleid dat ervoor zorgt dat deze rechten worden uitgeschakeld.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Stap 2: certificaatsjablonen configureren op de certificeringsinstantie
-In deze taak:
+Bij deze stap doet u het volgende:
 
 - Configureert u een certificaatsjabloon voor NDES
 - Publiceert u de certificaatsjabloon voor NDES
@@ -145,7 +145,7 @@ Configureer de CA zodanig dat de aanvrager de geldigheidsperiode kan invoeren:
 3. Controleer in de map **Certificaatsjablonen** of de sjabloon is gepubliceerd.
 
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Stap 3: vereisten configureren op de NDES-server
-In deze taak:
+Bij deze stap doet u het volgende:
 
 - Voegt u NDES toe aan een Windows Server en configureert u IIS om NDES te ondersteunen
 - Voegt u het NDES-serviceaccount toe aan de groep IIS_IUSR
@@ -156,7 +156,7 @@ In deze taak:
    1. Selecteer in de wizard **Active Directory Certificate Services** om toegang te krijgen tot de AD CS-functieservices. Selecteer de **inschrijvingsservice voor netwerkapparaten**, schakel **Certificeringsinstantie**uit en voer vervolgens de wizard uit.
 
       > [!TIP]
-      > Schakel **Sluiten** in **installatievoortgang** niet in. Selecteer in plaats daarvan de koppeling **Active Directory Certificate Services op de doelserver configureren**. Hiermee opent u de wizard **AD CS-configuratie** die u voor de volgende taak gebruikt. Nadat AD CS-configuratie is geopend, kunt u de wizard Functies en onderdelen toevoegen sluiten.
+      > Schakel **Sluiten** in **installatievoortgang** niet in. Selecteer in plaats daarvan de koppeling **Active Directory Certificate Services op de doelserver configureren**. Hiermee opent u de wizard **AD CS-configuratie** die u voor de volgende stap gebruikt. Nadat AD CS-configuratie is geopend, kunt u de wizard Functies en onderdelen toevoegen sluiten.
 
    2. Wanneer NDES aan de server wordt toegevoegd, installeert de wizard ook IIS. Controleer of IIS de volgende configuraties heeft:
 
@@ -181,7 +181,7 @@ In deze taak:
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>Stap 4: NDES configureren voor gebruik met Intune
-In deze taak:
+Bij deze stap doet u het volgende:
 
 - Configureert u NDES voor gebruik met de verlenende CA
 - Verbindt u het (SSL-)serververificatiecertificaat in IIS
@@ -190,7 +190,7 @@ In deze taak:
 1. Open op de NDES-server de wizard AD CS-configuratie en voer de volgende wijzigingen door:
 
     > [!TIP]
-    > Als u op de koppeling in de vorige taak hebt geklikt, is deze wizard al geopend. Anders opent u Serverbeheer voor toegang tot post-implementatieconfiguratie voor Active Directory Certificate Services.
+    > Als u op de koppeling in de vorige stap hebt geklikt, is deze wizard al geopend. Anders opent u Serverbeheer voor toegang tot post-implementatieconfiguratie voor Active Directory Certificate Services.
 
    - Selecteer in **Functieservices** de optie **Registratieservice voor netwerkapparaten**
    - Voer in **Serviceaccount voor NDES** het NDES-serviceaccount in
@@ -202,7 +202,7 @@ In deze taak:
 
     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`
 
-    Voor het bijwerken van deze sleutel gaat u naar de certificaatsjabloon **Doel** (op het tabblad **Afhandeling van aanvragen**). Werk vervolgens de bijbehorende registervermelding bij door de bestaande gegevens te vervangen door de naam van de certificaatsjabloon (niet de weergavenaam van de sjabloon) die u hebt opgegeven in taak 1. In de volgende tabel wordt het certificaatsjabloondoel gekoppeld aan de waarden in het register:
+    Voor het bijwerken van deze sleutel gaat u naar de certificaatsjabloon **Doel** (op het tabblad **Afhandeling van aanvragen**). Werk vervolgens de bijbehorende registervermelding bij. Vervang hiervoor de bestaande gegevens door de naam van de certificaatsjabloon (niet de weergavenaam van de sjabloon) die u hebt opgegeven in stap 2. In de volgende tabel wordt het certificaatsjabloondoel gekoppeld aan de waarden in het register:
 
     |Certificaatsjabloondoel (op het tabblad Afhandeling van aanvragen)|Te bewerken registerwaarde|Waarde die in de Intune-beheerconsole wordt weergegeven voor het SCEP-profiel|
     |---|---|---|
@@ -229,7 +229,7 @@ In deze taak:
 
     ![Test NDES](./media/SCEP_NDES_URL.png)
 
-    Als het bericht **503 - Service niet beschikbaar** wordt weergegeven, controleert u de logboeken. De groep van toepassing is waarschijnlijk gestopt vanwege een ontbrekend recht voor de NDES-gebruiker. Deze rechten worden beschreven in Taak 1.
+    Als het bericht **503 - Service niet beschikbaar** wordt weergegeven, controleert u de logboeken. De groep van toepassing is waarschijnlijk gestopt vanwege een ontbrekend recht voor de NDES-gebruiker. Deze rechten worden beschreven in stap 1.
 
 ##### <a name="install-and-bind-certificates-on-the-ndes-server"></a>Certificaten op de NDES-server installeren en verbinden
 
@@ -278,7 +278,7 @@ In deze taak:
 4. Start de NDES-server opnieuw op. De server is nu klaar om de certificaatconnector te ondersteunen.
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Stap 5: de Intune-certificaatconnector inschakelen, installeren en configureren
-In deze taak:
+Bij deze stap doet u het volgende:
 
 - Schakelt u de ondersteuning voor NDES in Intune in.
 - Download, installeer en configureer de certificaatconnector op de server waarop de NDES-rol (Registratieservice voor netwerkapparaten) wordt uitgevoerd/server in uw omgeving. Als u de schaal van de NDES-implementatie in uw organisatie wilt vergroten, kunt u op elke NDES-server meerdere NDES-servers met een certificaatconnector van Microsoft Intune installeren.
@@ -299,7 +299,7 @@ In deze taak:
     > [!NOTE]
     > Wanneer u NDES installeert en Intune zelfstandig wordt gebruikt, wordt de CRP-service automatisch met de certificaatconnector geïnstalleerd. Wanneer u Intune met Configuration Manager gebruikt, installeert u het certificaatregistratiepunt als een afzonderlijke sitesysteemfunctie.
 
-6. Als naar het clientcertificaat voor de certificaatconnector wordt gevraagd, kiest u **Selecteren**en selecteert u het certificaat voor **clientverificatie** dat u in Taak 3 op uw NDES-server hebt geïnstalleerd.
+6. Als naar het clientcertificaat voor de certificaatconnector wordt gevraagd, kiest u **Selecteren**en selecteert u het certificaat voor **clientverificatie** dat u in stap 4 op uw NDES-server hebt geïnstalleerd.
 
     Nadat u het certificaat voor clientverificatie hebt geselecteerd, keert u terug naar het oppervlak **Clientcertificaat voor Microsoft Intune-certificaatconnector** . Hoewel het geselecteerde certificaat niet wordt weergegeven, selecteert u **Volgende** om de eigenschappen van dat certificaat weer te geven. Selecteer **Volgende** en vervolgens **Installeren**.
 
@@ -450,7 +450,7 @@ Vanaf versie 6.1806.x.x legt de Intune-connectorservice gebeurtenissen vast in d
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Geslaagd  | Geslaagd |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | Certificeringsinstantie is niet geldig of is niet bereikbaar. Controleer of de certificeringsinstantie beschikbaar is en of uw server ermee kan communiceren. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | Client-Auth Symantec-certificaat is niet gevonden in het lokale certificaatarchief. Zie het artikel [Het Symantec-certificaat voor registratie-autorisatie installeren](https://docs.microsoft.com/en-us/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) voor meer informatie.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Client-Auth Symantec-certificaat is niet gevonden in het lokale certificaatarchief. Zie het artikel [Het Symantec-certificaat voor registratie-autorisatie installeren](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) voor meer informatie.  |
 | 0x00000402 | RevokeCert_AccessDenied  | Het opgegeven account heeft geen machtigingen om een certificaat van CA in te trekken. Zie het veld CA-naam in de berichtdetails van de gebeurtenis om de verlenende CA te bepalen.  |
 | 0x00000403 | CertThumbprint_NotFound  | Kan geen certificaat vinden dat overeenkomt met uw invoer. Registreer de certificaatconnector en probeer het opnieuw. |
 | 0x00000404 | Certificate_NotFound  | Kan geen certificaat vinden dat overeenkomt met de opgegeven invoer. Registreer de certificaatconnector nogmaals en probeer het opnieuw. |

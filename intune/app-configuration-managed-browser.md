@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d11356c16965e3ba7631275368c9723a2db0ecc9
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: eb4a80a9de03844c6fffa5e56f09c375645f9188
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43675012"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864538"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid voor beveiligde browsers met Microsoft Intune
 
@@ -53,10 +53,9 @@ U kunt beleidsregels voor beveiligde browsers maken voor de volgende typen appar
 
 -   Apparaten met Android 4 en hoger
 
--   Apparaten met iOS 8.0 en hoger
+-   Apparaten met iOS 10.0 en hoger
 
 >[!IMPORTANT]
->Vanaf oktober 2017 ondersteunt de app Intune Managed Browser voor Android alleen nog apparaten waarop Android 4.4 en hoger wordt uitgevoerd. De app Intune Managed Browser voor iOS ondersteunt alleen apparaten met iOS 9.0 en hoger.
 >Oudere versies van Android en iOS kunnen Managed Browser nog steeds gebruiken, maar er kunnen geen nieuwe versies van de app op worden geïnstalleerd en kan er dus geen gebruik worden gemaakt van alle mogelijkheden van de app. U wordt aangeraden deze apparaten bij te werken tot een ondersteunde versie van het besturingssysteem.
 
 

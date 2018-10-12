@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313175"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187798"
 ---
 # <a name="see-device-details-in-intune"></a>Apparaatdetails bekijken in Intune
 
@@ -63,44 +63,38 @@ Intune maakt alleen op apparaten in bedrijfseigendom een lijst met apps. Apps op
 
 ## <a name="hardware-device-details"></a>Hardwareapparaatdetails
 
-### <a name="windows-and-ios-device-details"></a>Windows- en iOS-apparaatdetails:
-|Details|Description|  
-|--------------|----------------------|  
-|Naam|De naam van het apparaat.|
-|Naam van de beheerder|De apparaatnaam wordt alleen in de console gebruikt. Als u deze naam wijzigt, verandert de naam op het apparaat niet.|
-|udid|De unieke apparaat-id van het apparaat.|
-|Intune-apparaat-id|Een GUID waarmee het apparaat op unieke wijze wordt aangeduid.|
-|Serienummer|Het serienummer van het apparaat, opgegeven door de fabrikant.|
-|Gedeeld apparaat|Als de waarde hier **Ja** is, wordt het apparaat door meerdere gebruikers gedeeld.|
-|Door de gebruiker goedgekeurde inschrijving|Als de waarde hier **Ja** is, is er door de gebruiker goedgekeurde inschrijving beschikbaar - dit betekent dat beheerders bepaalde beveiligingsinstellingen op het apparaat kunnen beheren.|
-|Besturingssysteem|Het besturingssysteem op het apparaat.|
-|Versie van besturingssysteem|De versie van het besturingssysteem op het apparaat.|
-|Taal van besturingssysteem|De taal die is ingesteld voor het besturingssysteem op het apparaat.|
-|Totale opslagruimte|De totale opslagruimte op het apparaat (in gigabytes).|
-|Beschikbare opslagruimte|De niet-gebruikte opslagruimte op het apparaat (in gigabytes).|
-
-
-### <a name="windows-ios-and-macos-device-details"></a>Windows-, iOS- en macOS-apparaatdetails
-|Details|Description|  
-|--------------|----------------------|  
-|IMEI|Het IMEI-nummer (International Mobile Equipment Identity) van het apparaat.|
-|MEID|Het MEID-nummer (Mobile Equipment Identifier) van het apparaat.|
-|Fabrikant|De fabrikant van het apparaat.|
-|Model|Het model van het apparaat.|
-|Telefoonnummer|Het telefoonnummer dat is toegewezen aan het apparaat.|
-|Provider van abonnee|De mobiele provider die op het apparaat wordt gebruikt.|
-|Mobiele-telefoontechnologie|Het radiosysteem dat wordt gebruikt door het apparaat.|
-|MAC-adres Wi-Fi|Het Media Access Control-adres van het apparaat.|
-|ICCID|De Integrated Circuit Card Identifier, het unieke identificatienummer van een SIM-kaart.|
-|Inschrijvingsdatum|De datum en tijd waarop het apparaat is ingeschreven bij Intune.|
-|Laatste contact|De datum en tijd waarop het apparaat het laatst verbinding heeft gemaakt met Intune.|
-|Code voor het overslaan van het activeringsslot|De code die kan worden gebruikt om het activeringsslot over te slaan.|
-|Azure AD-geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Azure Active Directory.|
-|Naleving|De nalevingsstatus van het apparaat.|
-|EAS geactiveerd|Als de waarde **Ja** is, wordt het apparaat gesynchroniseerd met een Exchange-postvak.|
-|Activerings-id voor EAS|De Exchange ActiveSync-id van het apparaat.|
-|Onder supervisie|Als de waarde **Ja** is, hebben de beheerders uitgebreide controle over het apparaat.|
-|Versleuteld|Als de waarde **Ja** is, worden de gegevens die zijn opgeslagen op het apparaat versleuteld.|
+|Details|Beschrijving|Platform| 
+|--------------|----------------------|----|  
+|Naam|De naam van het apparaat.|Windows, iOS|
+|Naam van de beheerder|De apparaatnaam wordt alleen in de console gebruikt. Als u deze naam wijzigt, verandert de naam op het apparaat niet.|Windows, iOS|
+|udid|De unieke apparaat-id van het apparaat.|Windows, iOS|
+|Intune-apparaat-id|Een GUID waarmee het apparaat op unieke wijze wordt aangeduid.|Windows, iOS|
+|Serienummer|Het serienummer van het apparaat, opgegeven door de fabrikant.|Windows, iOS|
+|Gedeeld apparaat|Als de waarde hier **Ja** is, wordt het apparaat door meerdere gebruikers gedeeld.|Windows, iOS|
+|Door de gebruiker goedgekeurde inschrijving|Als de waarde hier **Ja** is, is er door de gebruiker goedgekeurde inschrijving beschikbaar - dit betekent dat beheerders bepaalde beveiligingsinstellingen op het apparaat kunnen beheren.|Windows, iOS|
+|Besturingssysteem|Het besturingssysteem op het apparaat.|Windows, iOS|
+|Versie van besturingssysteem|De versie van het besturingssysteem op het apparaat.|Windows, iOS|
+|Taal van besturingssysteem|De taal die is ingesteld voor het besturingssysteem op het apparaat.|Windows, iOS|
+|Totale opslagruimte|De totale opslagruimte op het apparaat (in gigabytes).|Windows, iOS|
+|Beschikbare opslagruimte|De niet-gebruikte opslagruimte op het apparaat (in gigabytes).|Windows, iOS|
+|IMEI|Het IMEI-nummer (International Mobile Equipment Identity) van het apparaat.|Windows, iOS, Android|
+|MEID|Het MEID-nummer (Mobile Equipment Identifier) van het apparaat.|Windows, iOS, Android|
+|Fabrikant|De fabrikant van het apparaat.|Windows, iOS, Android|
+|Model|Het model van het apparaat.|Windows, iOS, Android|
+|Telefoonnummer|Het telefoonnummer dat is toegewezen aan het apparaat.|Windows, iOS, Android|
+|Provider van abonnee|De mobiele provider die op het apparaat wordt gebruikt.|Windows, iOS, Android|
+|Mobiele-telefoontechnologie|Het radiosysteem dat wordt gebruikt door het apparaat.|Windows, iOS, Android|
+|MAC-adres Wi-Fi|Het Media Access Control-adres van het apparaat.|Windows, iOS, Android|
+|ICCID|De Integrated Circuit Card Identifier, het unieke identificatienummer van een SIM-kaart.|Windows, iOS, Android|
+|Inschrijvingsdatum|De datum en tijd waarop het apparaat is ingeschreven bij Intune.|Windows, iOS, Android|
+|Laatste contact|De datum en tijd waarop het apparaat het laatst verbinding heeft gemaakt met Intune.|Windows, iOS, Android|
+|Code voor het overslaan van het activeringsslot|De code die kan worden gebruikt om het activeringsslot over te slaan.|Windows, iOS, Android|
+|Azure AD-geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Azure Active Directory.|Windows, iOS, Android|
+|Naleving|De nalevingsstatus van het apparaat.|Windows, iOS, Android|
+|EAS geactiveerd|Als de waarde **Ja** is, wordt het apparaat gesynchroniseerd met een Exchange-postvak.|Windows, iOS, Android|
+|Activerings-id voor EAS|De Exchange ActiveSync-id van het apparaat.|Windows, iOS, Android|
+|Onder supervisie|Als de waarde **Ja** is, hebben de beheerders uitgebreide controle over het apparaat.|Windows, iOS, Android|
+|Versleuteld|Als de waarde **Ja** is, worden de gegevens die zijn opgeslagen op het apparaat versleuteld.|Windows, iOS, Android|
 
 
 

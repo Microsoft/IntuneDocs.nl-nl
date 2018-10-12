@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18b4ab35627e1ccb694104f3f5800e5fb07dd1c7
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: e71f49c6a336efa5c15d8f10e664ddbf9b0579d0
+ms.sourcegitcommit: 5bfc7a1375fdb2992b9b5d4f6d1b34eec12457ae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313423"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45533656"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>MacOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
 
@@ -30,7 +30,7 @@ Met de informatie in dit artikel kunt u macOS-apparaatinschrijving instellen voo
 
 Voor het instellen van DEP-inschrijving moet u zowel de Intune-portal als de Apple DEP-portal gebruiken. U maakt DEP-inschrijvingsprofielen met instellingen die tijdens de inschrijving op de apparaten van toepassing zijn geweest.
 
-Overigens werkt de DEP-registratie niet met de [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md).
+Overigens werkt de DEP-inschrijving niet met de [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md) of [Apple School Manager](apple-school-manager-set-up-ios.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -127,7 +127,7 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
 
 8. Kies **Instellingen voor Configuratieassistent** om de volgende profielinstellingen te configureren: ![Aanpassing van Configuratieassistent.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
-    | Afdelingsinstellingen | Description |
+    | Afdelingsinstellingen | Beschrijving |
     |---|---|
     | <strong>Naam afdeling</strong> | Wordt weergegeven wanneer de gebruiker tijdens de activering op <strong>Over configuratie</strong> tikt. |
     | <strong>Telefoonnummer van afdeling</strong> | Wordt weergegeven wanneer de gebruiker tijdens de activering de knop <strong>Hulp nodig?</strong> klikt. |

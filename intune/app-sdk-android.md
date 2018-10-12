@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c26d9914173c07096caad428afcbd9174625ef7
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: ca1f34f6a0db6db26f03f62dba69c4cd708b9d65
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031300"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028763"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -475,8 +475,9 @@ In Azure Portal:
 7.  Selecteer **Microsoft Mobile Application Management** in de lijst met API's en klik op selecteren.
 8.  Selecteer **App-beheergegevens van de gebruiker lezen en schrijven**.
 9.  Klik op **Gereed**.
+10. Klik op **Machtigingen verlenen** en klik vervolgens op **Ja**. 
 
-Kijk [hier](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) voor informatie over het registreren van toepassingen met Azure AD. 
+Kijk [hier](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) voor informatie over het registreren van toepassingen met Azure AD. 
 
 Bekijk hieronder ook de vereisten voor [Voorwaardelijke toegang](#conditional-access).
 
@@ -1431,7 +1432,7 @@ Hier volgen richtlijnen voor het vereisen van gebruikersprompts bij het starten 
 > Een van de voordelen van **standaardinschrijving** is dat u eenvoudiger beleid kunt ophalen uit de APP-WE-service voor een app op het apparaat.
 
 ### <a name="general-requirements"></a>Algemene vereisten
-* Zorg ervoor dat uw app is geregistreerd bij de Intune Mobile Application Management-service door de stappen op [Algemene ADAL-configuraties nr.2](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations) op te volgen.
+* Zorg ervoor dat uw app is geregistreerd bij de Intune Mobile Application Management-service door de stappen op [Algemene ADAL-configuraties nr.2](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations) op te volgen.
 
 ### <a name="working-with-the-intune-sdk"></a>Werken met de Intune SDK
 Deze instructies zijn specifiek voor alle Android- en Xamarin-appontwikkelaars die beveiligingsbeleid voor apps in Intune willen vereisen voor app-gebruik op een apparaat van een eindgebruiker.

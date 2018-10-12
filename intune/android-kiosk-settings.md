@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329380"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602177"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Kioskinstellingen voor Android-apparaten in Intune
 
@@ -27,7 +27,7 @@ U kunt een apparaat configureren in de kioskmodus voor één of meerdere apps me
 
 Als het beperkingsprofiel van een kioskapparaat is ingesteld op **Kioskmodus** = **kiosk voor één app**, hebben gebruikers slechts toegang tot één app. Wanneer een apparaat in deze modus wordt gestart, wordt de specifieke app gestart. Gebruikers kunnen geen nieuwe apps openen of de actieve app wijzigen.
 
-1. Zorg ervoor dat de app die moet worden gebruikt op het kioskapparaat is [geïmplementeerd op het apparaat](apps-deploy.md) en dat u de app hebt toegewezen aan de groep met apparaten die u voor uw kioskapparaten hebt gemaakt.
+1. Zorg ervoor dat de app die u op het kioskapparaat wilt gebruiken, is [geïmplementeerd op het apparaat](apps-deploy.md) en dat u de app hebt toegewezen aan de groep met apparaten die u voor uw kioskapparaten hebt gemaakt.
 2. Ga naar de [Intune-portal](https://portal.azure.com) en kies **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 3. Stel de volgende velden op de blade **Profiel maken** in:
      - **Naam**
@@ -51,7 +51,7 @@ Als u een Android-kioskapparaat wilt instellen voor meerdere apps, volgt u deze 
 2. [Apps toevoegen en toewijzen die kunnen worden gebruikt in de kioskmodus](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (Optioneel) [Webkoppelingen toevoegen die kunnen worden gebruikt in de kioskmodus](#add-web-links-that-can-be-used-in-kiosk-mode)
 
-### <a name="import-and-deply-the-managed-home-screen-app"></a>De app voor het beheerde startscherm importeren en implementeren
+### <a name="import-and-deploy-the-managed-home-screen-app"></a>De app voor het beheerde startscherm importeren en implementeren
 
 1. Blader naar de [pagina van het beheerde startscherm op Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) en meld u aan met hetzelfde account dat u voor andere beheerde apps van Google Play gebruikt.
 2. Kies **Goedkeuren**.
@@ -59,6 +59,9 @@ Als u een Android-kioskapparaat wilt instellen voor meerdere apps, volgt u deze 
 4. Kies **Apps** > **Beheerd startscherm** > **Toewijzingen** > **Groep toevoegen**.
 5. Kies **Vereist** onder **Toewijzingstype**.
 6. Kies **Opgenomen groepen** > **Groepen selecteren om op te nemen** > kies de apparaatgroep die u hebt gemaakt voor uw kioskapparaten > **Selecteren** > **OK** > **OK** > **Opslaan**.
+
+> [!NOTE]
+> Wanneer u de app Managed Home Screen toevoegt aan het kioskprofiel met meerdere apps, wordt een pictogram toegevoegd. Er gebeurt echter niets wanneer u het pictogram selecteert. Hierdoor hoeft u de Managed Home Screen app niet zelf aan het kioskprofiel met meerdere apps toe te voegen.
 
 ### <a name="add-and-assign-apps-that-can-be-used-in-kiosk-mode"></a>Apps toevoegen en toewijzen die kunnen worden gebruikt in de kioskmodus
 
@@ -76,7 +79,7 @@ Voor elke app die u beschikbaar wilt stellen voor de kioskapparaten, voert u de 
 3. Kies **Configureren** en geef de vereiste informatie op. U hoeft geen logoafbeelding toe te voegen, omdat deze automatisch wordt opgehaald van de website favicon.ico.
 4. Kies **OK** > **Toevoegen**.
 
-Implementeer met [Mobile Apps](apps-add.md) een webbrowser-app op de kioskapparaten.
+Controleer of u een web-app op de kioskapparaten hebt geïmplementeerd. Voor meer informatie raadpleegt u [Web-apps toevoegen aan Microsoft Intune](web-app.md).
 
 ### <a name="create-a-multi-app-kiosk-profile"></a>Een kioskprofiel voor meerdere apps maken
 

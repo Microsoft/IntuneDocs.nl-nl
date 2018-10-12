@@ -14,12 +14,12 @@ ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c61040223d964f6ed0eeb85cf08c29bd2880396
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: c646e134f6311e7c365fe38301a9015a752b553f
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313595"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028610"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Persoonlijke gegevens controleren, exporteren of verwijderen in Intune
 
@@ -56,13 +56,13 @@ Er zijn drie manieren om persoonlijke gegevens te verwijderen uit Intune-beheer:
 
 ### <a name="delete-a-user-from-intune"></a>Een gebruiker uit Intune verwijderen
 
-Als u de persoonlijke gegevens van een eindgebruiker uit Intune wilt verwijderen, moet een beheerder [de gebruiker verwijderen uit Azure Active Directory (AAD)](https://docs.microsoft.com/en-us/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad). Wanneer de gebruiker wordt verwijderd uit AAD (permanent verwijderd), ontvangt Intune het verwijdersignaal van AAD. Vervolgens worden alle persoonlijke gegevens van de gebruiker verwijderd uit de Intune-service. De gegevens van de gebruiker worden binnen 30 dagen na de verwijderingsactie verwijderd uit de Intune-service.
+Als u de persoonlijke gegevens van een eindgebruiker uit Intune wilt verwijderen, moet een beheerder [de gebruiker verwijderen uit Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad). Wanneer de gebruiker wordt verwijderd uit AAD (permanent verwijderd), ontvangt Intune het verwijdersignaal van AAD. Vervolgens worden alle persoonlijke gegevens van de gebruiker verwijderd uit de Intune-service. De gegevens van de gebruiker worden binnen 30 dagen na de verwijderingsactie verwijderd uit de Intune-service.
 
 ### <a name="reset-device-to-factory-settings"></a>De fabrieksinstellingen van het apparaat terugzetten
 Wanneer u de fabrieksinstellingen van het apparaat terugzet, worden alle bedrijfsgegevens en persoonlijke gegevens teruggezet naar de oorspronkelijke fabrieksinstellingen. Dit is bijvoorbeeld handig als u het apparaat aan een volgende werknemer wilt geven. Gebruikersbestanden, door de gebruiker geïnstalleerde toepassingen en niet-standaardinstellingen worden verwijderd. Deze gegevens worden binnen 30 dagen na de verwijderingsactie verwijderd uit de Intune-service.
 
 ### <a name="user-self-removal-from-intune-management"></a>De gebruiker verwijdert zichzelf uit Intune-beheer
-Gebruikers kunnen hun persoonlijke [Android-, Apple- of Windows-](https://docs.microsoft.com/en-us/intune-user-help/unenroll-your-device-from-intune-android.md)apparaat uit Intune-beheer verwijderen zonder hulp van de beheerder.   
+Gebruikers kunnen hun persoonlijke [Android-, Apple- of Windows-](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android.md)apparaat uit Intune-beheer verwijderen zonder hulp van de beheerder.   
 
 ### <a name="retire"></a>Buiten gebruik stellen
 Via de actie **Buiten gebruik stellen** worden door Intune ingerichte gegevens verwijderd, zoals bedrijfstoepassingen, gegevens over apps die door Intune worden beheerd, beleidsinstellingen en e-mailprofielen die via Intune worden ingericht. Bij deze actie blijven de persoonlijke gegevens van de gebruiker op het apparaat behouden.

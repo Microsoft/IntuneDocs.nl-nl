@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329815"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46329994"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>iOS-apparaatbeperkingsinstellingen in Microsoft Intune
 
@@ -114,7 +114,7 @@ De supervisiemodus voor iOS kan alleen worden ingeschakeld tijdens de initiële 
 
 -   **Toegang tot Beheercentrum wanneer het apparaat is vergrendeld**: hiermee staat u toegang tot de Control Center-app toe terwijl het apparaat is vergrendeld.
 -   **Meldingen wanneer het apparaat is vergrendeld**: hiermee staat u de gebruiker toegang tot de weergave van meldingen toe zonder het apparaat te ontgrendelen.
--   **Passbook wanneer het apparaat is vergrendeld**: hiermee staat u de gebruiker toegang tot de app Passbook toe terwijl het apparaat is vergrendeld.
+-   **Wallet-meldingen wanneer het apparaat is vergrendeld**: hiermee staat u de gebruiker toegang tot de app Wallet toe terwijl het apparaat is vergrendeld.
 -   **De weergave Vandaag wanneer het apparaat is vergrendeld**: hiermee staat u de gebruiker toe de weergave Vandaag te bekijken wanneer het apparaat is vergrendeld.
 
 ## <a name="app-store-doc-viewing-gaming"></a>App Store, documenten bekijken, gamen

@@ -15,12 +15,12 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fccfcbceecc9aa0667aa9fd6656c2fcc524d363
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 370b02d06276cefa21339d3617068d5777cb8668
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34569354"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168927"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>De Mobile Threat Defense-connector inschakelen in Intune
 
@@ -45,7 +45,7 @@ Tijdens de configuratie van Mobile Threat Defense (MTD) hebt u een beleid geconf
 
     ![MTD configureren in de Intune-portal van Azure](./media/enable-mtd-connector-1.png)
 
-7. Schakel de wisselknop in overeenkomstig de wensen van uw organisatie.
+7. Schakel de wisselknop in overeenkomstig de wensen van uw organisatie. Welke wisselopties zichtbaar zijn, is afhankelijk van de MTD-partner.
 
 ## <a name="mtd-toggle-options"></a>Wisselopties voor MTD
 

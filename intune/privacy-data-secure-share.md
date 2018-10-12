@@ -14,12 +14,12 @@ ms.assetid: 68921fd6-5f50-456c-a3af-83d7bc4b134b
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 085b6a3a68964a200a5d6c462b3710b9744ac99f
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 5613c1284110e85a910db8f156ff4f62a54af4ad
+ms.sourcegitcommit: dc6979f2b14d522530577cc7f212cc822356acc9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474612"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453541"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Gegevens in Intune beveiligen en delen
 
@@ -66,7 +66,7 @@ Raadpleeg de volgende artikelen voor informatie over gegevens die worden gedeeld
 
 ### <a name="system-center-configuration-manager-data-sharing"></a>Gegevensdeling met de System Center Configuration Manager
 
-Microsoft Intune deelt geen gegevens met System Center Configuration Manager. Microsoft Intune is een on-premises product dat direct door de klant wordt geïmplementeerd, beheerd en uitgevoerd. De diagnostische gegevens en gebruiksgegevens die door Configuration Manager worden verzameld, worden alleen gebruikt om de installatie-ervaring, kwaliteit en beveiliging van toekomstige releases te verbeteren.
+Microsoft Intune deelt geen gegevens met System Center Configuration Manager. System Center Configuration Manager is een on-premises product dat rechtstreeks door de klant wordt geïmplementeerd, beheerd en uitgevoerd. De diagnostische gegevens en gebruiksgegevens die door Configuration Manager worden verzameld, worden alleen gebruikt om de installatie-ervaring, kwaliteit en beveiliging van toekomstige releases te verbeteren.
 
 Zie [Diagnostische gegevens en gebruiksgegevens voor SCCM](https://docs.microsoft.com/en-us/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md) voor meer informatie. 
 

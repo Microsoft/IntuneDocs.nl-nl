@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/21/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 11ccace4ca8e43e09b8aebeb92530629cf50a472
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909334"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602313"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Een apparaatnalevingsbeleid maken voor Windows-apparaten in Intune
 
@@ -111,6 +111,10 @@ Windows 8.1-pc's retourneren versie **3**. Als de besturingssysteemversieregel i
 
 - **Vereis BitLocker**: als Bitlocker is ingeschakeld, kan het apparaat gegevens die op de schijf zijn opgeslagen, beveiligen tegen onbevoegde toegang wanneer het systeem wordt uitgeschakeld of overschakelt naar de slaapstand. Windows BitLocker-stationsversleuteling versleutelt alle gegevens die zijn opgeslagen op het volume met het Windows-besturingssysteem. BitLocker gebruikt de TPM om het Windows-besturingssysteem en de gebruikersgegevens te beveiligen. Er kan ook mee worden voorkomen dat met een computer kan worden geknoeid, zelfs als deze zonder toezicht, kwijtgeraakt of gestolen is. Als de computer is uitgerust met een compatibele TPM, gebruikt BitLocker de TPM om de versleutelingssleutels te vergrendelen die de gegevens beschermen. Als gevolg hiervan zijn de sleutels niet toegankelijk totdat de TPM de status van de computer heeft gecontroleerd.
 - **Vereis dat Beveiligd opstarten is ingeschakeld op het apparaat**: als beveiligd opstarten is ingeschakeld, wordt het systeem gedwongen om in een vertrouwde fabrieksstatus op te starten. Als beveiligd opstarten is ingeschakeld, moeten de belangrijkste onderdelen van de computer de juiste cryptografische handtekeningen hebben die worden vertrouwd door de organisatie die het apparaat heeft gemaakt. De UEFI-firmware verifieert de digitale handtekening voordat de computer kan worden opgestart. Als er bestanden zijn gemanipuleerd, waardoor de handtekening ongeldig is geworden, kan het systeem niet worden opgestart.
+
+  > [!NOTE]
+  > De instelling **Vereisen dat beveiligd opstarten wordt ingeschakeld op het apparaat** wordt ondersteund op TPM 1.2- en 2.0-apparaten. Voor apparaten die geen ondersteuning bieden voor TPM 2.0 of later, wordt de beleidsstatus in Intune weergegeven als **Niet-conform**. Dit is een beperking van de [Device Health Attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation)-service in Windows 10.
+
 - **Vereis code-integriteit**: code-integriteit is een functie die voortdurend de integriteit valideert van een stuurprogramma- of systeembestand wanneer dat bestand in het geheugen wordt geladen. Via deze functie wordt gedetecteerd of een niet-ondertekend stuurprogramma- of systeembestand in de kernel is geladen. Ook wordt gedetecteerd of een systeembestand is gewijzigd door schadelijke software die wordt uitgevoerd door een gebruikersaccount met beheerdersbevoegdheden.
 
 Zie [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (CSP-statusverklaring) voor meer informatie over de werking van de HAS-service.

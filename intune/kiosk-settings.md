@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481118"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562864"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioskinstellingen voor Windows 10 (en hoger) in Intune
 
@@ -45,7 +45,7 @@ U kunt kioskprofielen gebruiken om Windows 10-apparaten te configureren, zodat h
 #### <a name="single-full-screen-app-kiosks"></a>Kiosken met één app op een volledig scherm
 Voer de volgende instellingen in:
 
-- **Id voor de UWP-app**: voer de **AUMID (Application User Model ID)** van de kiosk-app in. Of selecteer een bestaande beheerde app die u hebt toegevoegd met [Mobile Apps](apps-add.md).
+- **Id voor de UWP-app**: voer de **AUMID (Application User Model ID)** van de kiosk-app in. Of selecteer een bestaande beheerde app die u hebt toegevoegd met [Client-apps](apps-add.md).
 
     Zie [De AUMID van een geïnstalleerde app zoeken](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) voor meer informatie.
 
@@ -62,7 +62,7 @@ Apps in deze modus zijn beschikbaar in het menu Start. Deze apps zijn de enige a
 Voer de volgende instellingen in:
 
 - **Een Win32-app toevoegen**: een Win32-app is een traditionele desktop-app. Voer de **naam van de app** en de **id** in. De **id** is het volledige pad van het uitvoerbare bestand met betrekking tot het apparaat.
-- **Beheerde apps toevoegen**: selecteer een bestaande beheerde app die u hebt toegevoegd met [Mobile Apps in Intune](apps-add.md).
+- **Beheerde apps toevoegen**: selecteer een bestaande beheerde app die u hebt toegevoegd met [Client-apps in Intune](apps-add.md).
 - **Een app toevoegen met de AUMID**: voer de [AUMID van de app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-apps) in.
 - **Taakbalk**: stel in of u de taakbalk wilt **inschakelen** (weergeven) of **niet geconfigureerd** (verborgen) in de kiosk wilt gebruiken.
 - **Lay-out van het menu Start**: geef een XML-bestand op, waarin wordt beschreven hoe de apps worden weergegeven in het menu Start, zoals de volgorde van de apps. [Customize and export Start layout (Aanpassen en indeling Start exporteren)](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) biedt een aantal richtlijnen en een XML-voorbeeld.
@@ -75,7 +75,7 @@ Voer de volgende instellingen in:
 
 ## <a name="kiosk-web-browser-settings"></a>Webbrowserinstellingen voor de kiosk
 
-Met deze instellingen beheert u een webbrowser-app op de kiosk. Implementeer met [Mobile Apps](apps-add.md) een webbrowser-app op de kioskapparaten.
+Met deze instellingen beheert u een webbrowser-app op de kiosk. Implementeer met [Client-apps](apps-add.md) een webbrowser-app op de kioskapparaten.
 
 1. Voer de volgende instellingen in:
 
@@ -115,7 +115,7 @@ Apps in deze modus zijn beschikbaar in het menu Start. Deze apps zijn de enige a
 
 Voer de volgende instellingen in:
 
-- **Beheerde apps toevoegen**: selecteer een bestaande beheerde app die u hebt toegevoegd met [Mobile Apps in Intune](apps-add.md).
+- **Beheerde apps toevoegen**: selecteer een bestaande beheerde app die u hebt toegevoegd met [Client-apps in Intune](apps-add.md).
 - **Een app toevoegen met de AUMID**: voer de [AUMID van de app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-apps) in.
 - **Lay-out van het menu Start**: geef een XML-bestand op, waarin wordt beschreven hoe de apps worden weergegeven in het menu Start, zoals de volgorde van de apps. [Startopmaak aanpassen en exporteren](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) biedt instructies en bevat een specifiek XML-bestand voor apparaten met Windows Holographic for Business.
 - **Type gebruikersaccount**: voeg een of meer gebruikersaccounts toe die de door u toegevoegde apps kunnen gebruiken. De ondersteunde opties zijn onder andere: 

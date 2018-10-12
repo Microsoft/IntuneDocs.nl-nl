@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 3f72747b1a30494304521b23054533b9f360b2fc
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329542"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562745"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Alleen zakelijke gegevens wissen uit door Intune beheerde apps
 
@@ -44,7 +44,7 @@ Als u alleen de gegevens van de zakelijke apps wilt verwijderen, maakt u een ver
 
     ![Schermopname van het Microsoft Intune-deelvenster](./media/apps-selective-wipe01.png)
 
-3.  Kies in het **deelvenster Mobiele apps** de optie **App selectief wissen**.
+3.  Kies in het **deelvenster Client-apps** de optie **App selectief wissen**.
 
 4.  Kies **Nieuw verzoek om te wissen**. Hiermee opent u het deelvenster **Nieuw verzoek om te wissen**.
 
@@ -62,7 +62,7 @@ De service maakt en volgt voor elke beveiligde app op het apparaat een afzonderl
 
 U kunt een verkort rapport weergeven met de algemene status van het verzoek om te wissen, het aantal verzoeken dat in behandeling is en het aantal verzoeken dat is mislukt. Voor meer informatie volgt u deze stappen:
 
-1.  In het deelvenster **Mobiele apps - App selectief wissen** ziet u een lijst met alle aanvragen, gegroepeerd per gebruiker. Omdat het systeem voor elke beveiligde app die op het apparaat wordt uitgevoerd een verzoek om te wissen maakt, ziet u mogelijk meerdere verzoeken voor dezelfde gebruiker. De status geeft aan of een verzoek om te wissen **in behandeling**, **mislukt**of **geslaagd**is.
+1.  In het deelvenster **Client-apps - App selectief wissen** ziet u een lijst met alle aanvragen, gegroepeerd per gebruiker. Omdat het systeem voor elke beveiligde app die op het apparaat wordt uitgevoerd een verzoek om te wissen maakt, ziet u mogelijk meerdere verzoeken voor dezelfde gebruiker. De status geeft aan of een verzoek om te wissen **in behandeling**, **mislukt**of **geslaagd**is.
 
     ![Schermafbeelding van de status van de aanvraag voor wissen in het deelvenster App selectief wissen](./media/wipe-request-status-1.png)
 
@@ -75,7 +75,7 @@ U ziet ook de apparaatnaam en het apparaattype, wat nuttig kan zijn bij het leze
 
 Wisverzoeken die nog in behandeling zijn, worden weergegeven totdat u ze handmatig verwijdert. Handmatig een verzoek om te wissen verwijderen:
 
-1.  In het deelvenster **Mobiele apps - App selectief wissen**.
+1.  In het deelvenster **Client-apps - App selectief wissen**.
 
 2.  Klik met de rechtermuisknop op de aanvraag voor wissen die u wilt verwijderen, en kies vervolgens **Aanvraag voor wissen verwijderen**.
 

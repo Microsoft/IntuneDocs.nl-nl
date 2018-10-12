@@ -1,12 +1,11 @@
 ---
-title: Pc's beheren met clientsoftware
-titlesuffix: Microsoft Intune
+title: Pc's beheren met clientsoftware in Microsoft Intune - Azure | Microsoft Docs
 description: Beheer Windows-pc's door de Intune-clientsoftware te installeren.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +14,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "41910636"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978243"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows-pc's beheren als computers via de Intune-softwareclient
 
@@ -57,6 +56,9 @@ Intune ondersteunt het beheer van Windows-pc's als computers met behulp van de s
 |Beheermachtigingen|Het account waarmee de clientsoftware wordt geïnstalleerd, moet lokale beheerdersmachtigingen op het apparaat hebben.|
 |Windows Installer 3.1|De computer moet minimaal Windows Installer 3.1 hebben.<br /><br />Zo controleer u welke versie van Windows Installer op een computer is geïnstalleerd:<br /><br />  Klik op de pc met de rechtermuisknop op **%windir%\System32\msiexec.exe** en klik vervolgens op **Eigenschappen**.<br /><br />U kunt de meest recente versie van Windows Installer downloaden van de pagina [Herdistribueerbare Windows Installer-pakketten](http://go.microsoft.com/fwlink/?LinkID=234258) op de Microsoft Developer Network-website.|
 |Niet-compatibele clientsoftware verwijderen|Voordat u de Intune-clientsoftware installeert, moet u de Configuration Manager-, Operations Manager- en Service Manager-clientsoftware van de pc verwijderen.|
+
+> [!WARNING]
+> Microsoft heeft aangekondigd dat [ondersteuning voor Windows 7 op 14 januari 2020 wordt beëindigd](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). Op deze datum zal Intune ook de ondersteuning beëindigen voor apparaten waarop Windows 7 wordt uitgevoerd. Microsoft raadt u ten zeerste aan over te stappen op Windows 10 om eventuele service- of ondersteuningsproblemen te voorkomen. 
 
 ## <a name="deploying-the-intune-software-client"></a>De Intune-softwareclient installeren
 Als Intune-beheerder kunt u op verschillende manieren de Intune-softwareclient beschikbaar stellen aan gebruikers. Zie [De Intune-softwareclient installeren op Windows-pc's](install-the-windows-pc-client-with-microsoft-intune.md) voor meer informatie.

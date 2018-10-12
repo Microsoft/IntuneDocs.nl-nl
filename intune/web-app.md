@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ec483218cb86426b237c40c8831a2f0880847ade
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 7e974a17506be36c725dddfa21329269c8fcebc8
+ms.sourcegitcommit: 572287c3bb0020b6b75e4e2ac27019c20c699159
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347454"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44340266"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Web-apps aan Microsoft Intune toevoegen
 
@@ -62,6 +62,8 @@ Voer de volgende stappen uit om een app toe te voegen aan Intune als een snelkop
 
 > [!Note]
 > Gebruikers moeten de Intune-widget toevoegen aan hun beginscherm om web-apps weer te geven die zijn toegewezen aan Android-apparaten.
+>
+> Momenteel wordt de implementatie van Intune-web-apps op iOS-apparaten gekoppeld aan het beheerprofiel; dit kan niet handmatig worden verwijderd. U kunt het implementatietype in de Intune-portal wijzigen in **Verwijderen**. Daarna kunt u de web-app automatisch verwijderen. Als u de implementatie echter verwijdert voordat u de intentie van de app-toewijzing hebt gewijzigd in **Verwijderen**, bevindt de web-app zich permanent op het apparaat de registratie van het apparaat bij Intune ongedaan wordt gemaakt.
 
 ## <a name="next-steps"></a>Volgende stappen
 

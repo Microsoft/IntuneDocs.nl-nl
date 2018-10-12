@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 87c3313fd7b5fc0705460e539164ac70779bebeb
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347471"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505764"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>VPN per app instellen in Intune voor iOS-apparaten
 
@@ -171,7 +171,7 @@ Een koppeling tussen een app en een profiel blijft bestaan totdat de eindgebruik
 - De app is het doel van de intentie beschikbare installatie.
 - Zowel het profiel als de app zijn gericht op dezelfde groep.
 - De eindgebruiker heeft installatie van de app aangevraagd vanuit de bedrijfsportal. Hierdoor worden de app en het profiel op het apparaat geïnstalleerd.
-- U kunt de configuratie van VPN per app verwijderen uit de app-toewijzing.
+- U kunt de configuratie van VPN per app verwijderen of wijzigen uit de app-toewijzing.
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>De verbinding controleren op het iOS-apparaat
 

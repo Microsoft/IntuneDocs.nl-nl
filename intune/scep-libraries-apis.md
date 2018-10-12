@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/31/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 31c083dcd2087de99830317d892750a42cc5ae6d
+ms.sourcegitcommit: ae62a269778cdbf1d207cd017de522f934b030e9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575046"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700979"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API's gebruiken om CA's van derden voor SCEP aan Intune toe te voegen
 
@@ -125,6 +125,13 @@ De configuratie moet de volgende eigenschappen bevatten:
     - AAD_APP_KEY=De Azure-app-sleutel die is verkregen tijdens onboarding
     - TENANT=De tenant-id die is verkregen tijdens onboarding
     - PROVIDER_NAME_AND_VERSION=Informatie die wordt gebruikt om uw product en de versie ervan te identificeren
+    
+Als voor uw oplossing een proxy is vereist, al dan niet met verificatie, kunt u de volgende eigenschappen toevoegen:
+
+    - PROXY_HOST=De host waarop de proxy wordt gehost.
+    - PROXY_PORT=De poort waarnaar de proxy luistert.
+    - PROXY_USER=De gebruikersnaam die moet worden gebruikt als de proxy basisverificatie gebruikt.
+    - PROXY_USER=Het wachtwoord dat moet worden gebruikt als de proxy basisverificatie gebruikt.
 
 Genereert:
 

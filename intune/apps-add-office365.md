@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 09/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8c87b5a76a69809e46fe3f4c5d74019546a819d
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b4905e637f7ef709c88371a41ec9275115d571e1
+ms.sourcegitcommit: ddf90877d1ea9da70fd0ef228560f455625e35ba
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330225"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46563242"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
 Met dit type app kunt u eenvoudig Office 365-apps toewijzen aan de door u beheerde apparaten waarop Windows 10 wordt uitgevoerd. U kunt ook apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Pro voor Office 365, mits u daar licenties voor hebt. De apps die u wilt, worden als één vermelding weergegeven in de lijst met apps in de Intune-console.
 
+> [!NOTE]
+> U moet Office 365 ProPlus-licenties gebruiken om Office 365 ProPlus-apps te activeren die via Microsoft Intune zijn geïmplementeerd. Momenteel wordt Office 365 Business-editie niet ondersteund door Intune.
 
 ## <a name="before-you-start"></a>Voordat u begint
 
@@ -118,7 +120,7 @@ In de volgende tabellen worden algemene foutcodes en hun betekenis weergegeven.
 
 ||||
 |-|-|-|
-|Status|Fase|Description|
+|Status|Fase|Beschrijving|
 |1460 (ERROR_TIMEOUT)|Download|Het downloaden van de Office Deployment Tool is mislukt|    
 |13 (ERROR_INVALID_DATA)|-|De handtekening van de gedownloade Office Deployment Tool kan niet worden geverifieerd|
 |Foutcode van CertVerifyCertificateChainPolicy|-|De certificeringscontrole van de gedownloade Office Deployment Tool is mislukt|    

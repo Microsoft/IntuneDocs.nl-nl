@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 27995fb643e4373e2fa6a34c7147c69905f9ccc0
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 841cfdeea1d33876c1b678a531c88663aea3759e
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312641"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403592"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
 
@@ -61,7 +61,7 @@ U gebruikt de Apple DEP-portal om een DEP-token te maken. U gebruikt de DEP-port
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Stap 1. Download het openbare-sleutelcertificaat van Intune dat is vereist om het token te maken.
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) **Apparaatinschrijving** > **Apple-inschrijving** > **Token voor het inschrijvingsprogramma** > **Toevoegen**.
+1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens inschrijvingsprogramma** > **Toevoegen**.
 
     ![Een token voor het inschrijvingsprogramma ophalen.](./media/device-enrollment-program-enroll-ios/image01.png)
 
@@ -164,7 +164,7 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
 13. Kies **Aanpassingen voor Configuratieassistent** om de volgende profielinstellingen te configureren: ![Aanpassing van Configuratieassistent.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
-    | Afdelingsinstellingen | Description |
+    | Afdelingsinstellingen | Beschrijving |
     |---|---|
     | <strong>Naam afdeling</strong> | Wordt weergegeven wanneer de gebruiker tijdens de activering op <strong>Over configuratie</strong> tikt. |
     |    <strong>Telefoonnummer van afdeling</strong>     | Wordt weergegeven wanneer de gebruiker tijdens de activering de knop <strong>Hulp nodig?</strong> klikt. |
