@@ -1,11 +1,11 @@
 ---
 title: Uw Android-apparaat gebruiken met Intune | Microsoft Docs
-description: Lijst met koppelingen naar taken die eindgebruikers op hun mobiele Android-apparaat kunnen uitvoeren wanneer het apparaat bij Intune is geregistreerd
+description: Lijst met koppelingen voor probleemoplossing voor en het beheer van met Intune ingeschreven Android-apparaten
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 347757a333bcfd8e649cb621f0a95c83f24cdc88
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 35c76db52db0f037427357eb5f3059a65908ae12
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018665"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168944"
 ---
-# <a name="using-your-android-device-with-intune"></a>Met behulp van een Android-apparaat met Intune
+# <a name="using-your-android-device-with-intune-company-portal"></a>Uw Android-apparaat gebruiken met de Intune-bedrijfsportal
 
-Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te maken. Hier volgt een lijst met de meest voorkomende zaken die u mogelijk gevraagd wordt te doen door uw bedrijf.
+In dit artikel vindt u specifieke taken en informatie voor de bedrijfsportal voor Android. Gebruik dit artikel om problemen met uw Android-apparaat op te lossen of uw Android-apparaat te beheren. Klik op een willekeurige koppeling voor meer informatie, stappen en schermafbeeldingen. 
 
 ## <a name="supported-versions"></a>Ondersteunde versies
 
-Intune ondersteunt momenteel Android 4.4 en hoger. Dit omvat apparaten met Samsung Knox 4.4 en hoger.
+De bedrijfsportal biedt momenteel ondersteuning voor Android 4.4 en later. Ondersteuning voor apparaten met Samsung Knox 4.4 en later is ook bijgevoegd.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inschrijven in Intune en de Bedrijfsportal installeren
 
