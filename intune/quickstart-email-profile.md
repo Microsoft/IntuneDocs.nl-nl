@@ -3,8 +3,8 @@ title: 'Snelstartgids: een e-mailprofiel voor apparaten maken voor iOS'
 titlesuffix: Microsoft Intune
 description: Ontdek hoe u Microsoft Intune gebruikt om een e-mailprofiel voor apparaten te maken, zodat iOS-apparaten veilig verbinding kunnen maken met de e-mail van het bedrijf.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/21/2018
 ms.topic: quickstart
@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a0c554315168147249e0842b69e3e6195ed85979
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: b797951c878dd90cbb7bb716b5108f94f48921c5
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581594"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231947"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Snelstartgids: een e-mailprofiel voor apparaten maken voor iOS
 
 In deze snelstartgids wordt beschreven hoe u een e-mailprofiel voor apparaten maakt voor iOS-apparaten. In dit profiel worden de instellingen opgegeven die vereist zijn voor de ingebouwde e-mail-app op het iOS-apparaat om verbinding maken met de e-mail van het bedrijf. E-mailprofielen voor apparaten zorgen voor uniforme instellingen bij een verzameling apparaten en ze stellen eindgebruikers in staat om op hun apparaten toegang te krijgen tot de e-mail van het bedrijf zonder dat ze daarvoor iets hoeven in te stellen. Als u uw e-mail nog verder wilt beveiligen, kunt u een e-mailprofiel gebruiken om te bepalen of apparaten aan het beleid voldoen en kunt u vervolgens voorwaardelijke toegang instellen, zodat alleen apparaten die aan het beleid voldoen toegang krijgen tot de e-mail. Zie [E-mailinstellingen configureren in Microsoft Intune](email-settings-configure.md) voor meer informatie over e-mailprofielen
 
-Als u niet over een Intune-abonnement beschikt, kunt u [zich aanmelden voor een gratis proefaccount](free-trial-sign-up.md).
+Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor een gratis proefaccount](free-trial-sign-up.md).
 
 ## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
 
