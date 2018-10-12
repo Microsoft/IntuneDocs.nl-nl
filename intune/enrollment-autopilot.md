@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 4c268f9061ae624c1f85e386e5633b14334860b7
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a640e6d914da6fead7a64d5235c1cdeac164ac9e
+ms.sourcegitcommit: 7c70c3e0fcae7c4fa8c9e108aafb1cebb366332d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313135"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44096534"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows-apparaten inschrijven met Windows AutoPilot
 Windows AutoPilot vereenvoudigt het inrichten van apparaten. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en AutoPilot kunt u nieuwe apparaten aan uw eindgebruikers geven zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om AutoPilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario’s en vereisten.
@@ -69,7 +69,7 @@ AutoPilot-profielen worden gebruikt om de AutoPilot-apparaten te configureren.
 2. Geef een **naam** en desgewenst een **beschrijving** op.
 3. Voor de **implementatiemodus** kiest u een van deze twee opties:
     - **Op basis van gebruiker**: apparaten met dit profiel worden gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn gebruikersreferenties vereist om het apparaat te kunnen inrichten.
-    - **Zelf-implementerend (preview)**: (Windows 10 Insider Preview Build 17672 of nieuwer) apparaten met dit profiel worden niet gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn gebruikersreferenties vereist om het apparaat te kunnen inrichten.
+    - **Zelf-implementerend (preview)**: (hiervoor is de meest recente versie van [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/) vereist) apparaten met dit profiel worden niet gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn gebruikersreferenties vereist om het apparaat te kunnen inrichten.
 4. In het vak **Toevoegen aan Azure AD als** kiest u **Toegevoegd aan Azure AD**.
 5. Kies **Out-Of-Box Experience (OOBE)**, configureer de volgende opties en klik vervolgens op **Opslaan**:
     - **Taal (regio)***: kies de taal die u voor het apparaat wilt gebruiken. Deze optie is alleen beschikbaar als u **Zelf-implementerend** hebt gekozen als **implementatiemodus**.
@@ -82,7 +82,7 @@ AutoPilot-profielen worden gebruikt om de AutoPilot-apparaten te configureren.
 
 6. Kies op **Maken** om het profiel te maken. Het AutoPilot-implementatieprofiel is nu klaar om te worden toegewezen aan apparaten.
 
-*Zowel **Taal (Regio)** als **Toetsenbord automatisch configureren** zijn alleen beschikbaar als u **Zelf-implementerend (preview)** hebt gekozen als **implementatiemodus** (Windows 10 Insider Preview Build 17672 of nieuwer).
+*Zowel **Taal (Regio)** als **Toetsenbord automatisch configureren** zijn alleen beschikbaar als u **Zelf-implementerend (preview)** hebt gekozen als **implementatiemodus** (hiervoor is de meest recente versie van [Windows 10 Insider Preview Build ](https://docs.microsoft.com/windows-insider/at-work-pro/) vereist).
 
 
 ## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Een AutoPilot-implementatieprofiel toewijzen aan een apparaatgroep
@@ -113,7 +113,7 @@ Als u waarschuwingen over niet-toegewezen apparaten wilt zien, kiest u in [Intun
 
 U kunt een gebruiker toewijzen aan een specifiek Autopilot-apparaat. Deze toewijzing wordt vooraf ingevuld voor een gebruiker uit Azure Active Directory op de aanmeldingspagina in de [huisstijl van het bedrijf](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) tijdens de installatie van Windows. Ook kunt u de naam van een aangepast welkomstbericht instellen. Hiermee wordt Windows-aanmelding niet vooraf gevuld of gewijzigd. Alleen gelicentieerde gebruikers van Intune kunnen op deze manier worden toegewezen.
 
-Let op: de Azure Active Directory-bedrijfsportal is geconfigureerd.
+Voorwaarden: de Azure Active Directory-bedrijfsportal is geconfigureerd, evenals de meest recente [Windows 10 Insider Preview-build](https://docs.microsoft.com/windows-insider/at-work-pro/).
 
 1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > kies het apparaat > **Gebruiker toewijzen**.
     ![Schermafbeelding van Gebruiker toewijzen](media/enrollment-autopilot/assign-user.png)

@@ -3,8 +3,8 @@ title: Mobile Threat Defense-connector inschakelen in Microsoft Intune
 titleSuffix: ''
 description: Schakel de connector tussen uw Mobile Threat Defense (MTD) -partner en Microsoft Intune in.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 370b02d06276cefa21339d3617068d5777cb8668
-ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
+ms.openlocfilehash: e2172c1cd066e99f3634dd856538671207cf1ed0
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168927"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232236"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>De Mobile Threat Defense-connector inschakelen in Intune
 
