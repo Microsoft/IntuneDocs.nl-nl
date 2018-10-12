@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 08/16/2018
+ms.date: 09/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 4189e9357c7ed135ab219b38f22d34a09ebb5318
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5acdcd0a8c2fcb906f0b40e2c1ab937559c7ae01
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253677"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727574"
 ---
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
@@ -103,7 +103,7 @@ De MDM-oplossing:
 
 -   Het helpt u bedrijfsgegevens te beveiligen tegen het lekken van gegevens naar consumenten-apps en -services
 
--   Het past beperkingen toe (opslaan als, klembord, pincode, enzovoort) op mobiele apps
+-   Beperkingen toepassen (opslaan als, klembord, pincode, enzovoort) op client-apps
 
 -   Het wist bedrijfsgegevens van apps zonder die apps van het apparaat te verwijderen
 
@@ -122,6 +122,18 @@ Er zijn echter enkele beperkingen waar u rekening mee moet houden, zoals:
 -   U kunt geen certificaatprofielen op deze apparaten inrichten.
 
 -   U kunt geen Wi-Fi- en VPN-instellingen van het bedrijf op deze apparaten inrichten.
+
+## <a name="app-protection-global-policy"></a>Algemeen appbeveiligingsbeleid
+
+Als een OneDrive-beheerder naar **admin.office.com** bladert en toegang tot het **Apparaat** selecteert, kan deze de besturingselementen voor **Mobile Application Management** instellen voor de OneDrive- en SharePoint-client-apps. 
+
+Via de instellingen, die beschikbaar zijn gesteld op de OneDrive-beheerdersconsole, wordt het speciale app-beschermingsbeleid **Algemeen** van Intune geconfigureerd. Dit algemene beleid is van toepassing op alle gebruikers in uw tenant en biedt geen enkele manier om te bepalen waarop het beleid wordt gericht. 
+
+Zodra het beleid is ingeschakeld, worden de OneDrive- en SharePoint-apps voor iOS en Android standaard beschermd door de geselecteerde instellingen. Een IT-professional kan dit beleid in de Intune-console bewerken zodra het beleid is gemaakt en meer doelgerichte apps toevoegen en beleidsinstellingen aanpassen. 
+
+Standaard kan er maar één **algemeen** beleid per tenant zijn. De [Intune Graph-API’s](intune-graph-apis.md) kunnen echter worden gebruikt om extra algemene beleidsregels per tenant te maken, maar dit wordt niet aanbevolen. Het maken van extra algemene beleidsregels wordt afgeraden omdat het oplossen van problemen met de implementatie van dergelijk beleid erg ingewikkeld kan zijn.
+
+Hoewel het **algemene** beleid van toepassing is op alle gebruikers in uw tenant, worden deze instellingen door eventueel Intune-standaardbeleid voor de beveiliging van apps overschreven.
 
 
 ## <a name="multi-identity"></a>Meerdere identiteiten

@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3d18413465dd6f87a98da4b1f275392feac27c52
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312795"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169046"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
@@ -111,13 +111,13 @@ De pincode is een wachtwoordcode die wordt gebruikt om te verifiëren of de juis
 - **Hoe vaak wordt de gebruiker gevraagd de pincode voor Intune in te voeren?**<br></br> De IT-beheerder kan de beleidsinstelling voor beveiliging van de Intune-app in de Intune-beheerconsole instellen op Toegangsvereisten opnieuw controleren na (minuten). Deze instelling geeft de hoeveelheid tijd aan voordat de toegangsvereisten op het apparaat worden gecontroleerd en het scherm voor de pincode opnieuw wordt weergegeven. Belangrijke informatie over de pincode die van invloed is op hoe vaak de gebruiker om de pincode wordt gevraagd, is: 
 
     - **De pincode wordt gedeeld tussen apps van dezelfde uitgever om de bruikbaarheid te verbeteren:** in iOS wordt de pincode voor apps gedeeld met alle apps **van dezelfde uitgever**. Op Android wordt één pincode voor apps gedeeld met alle andere apps.
-    - **Het gedrag van Toegangsvereisten opnieuw controleren na (minuten) na het opnieuw starten van een apparaat:** een timer van de pincode houdt het aantal minuten van inactiviteit, waarmee wordt bepaald wanneer de pincode voor de Intune-app de volgende keer wordt weergegeven. In iOS wordt de timer van de pincode niet beïnvloed door het opnieuw starten van het apparaat. Het opnieuw starten van het apparaat is dus niet van invloed op het aantal minuten dat de gebruiker niet actief is in een iOS-app waarvoor het Intune-pincodebeleid is ingesteld. In Android wordt de timer van de pincode opnieuw ingesteld bij het opnieuw starten van het apparaat. Hierdoor vragen Android-apps waarvoor het Intune-pincodebeleid is ingesteld waarschijnlijk om de pincode voor de app, ongeacht de instelling 'Toegangsvereisten opnieuw controleren na (minuten)' **na het opnieuw starten van een apparaat**.  
+    - **Het gedrag van Toegangsvereisten opnieuw controleren na (minuten) na het opnieuw starten van een apparaat:** een timer van de pincode houdt het aantal minuten van inactiviteit bij, waarmee wordt bepaald wanneer de pincode voor de Intune-app de volgende keer wordt weergegeven. In iOS wordt de timer van de pincode niet beïnvloed door het opnieuw starten van het apparaat. Het opnieuw starten van het apparaat is dus niet van invloed op het aantal minuten dat de gebruiker niet actief is in een iOS-app waarvoor het Intune-pincodebeleid is ingesteld. In Android wordt de timer van de pincode opnieuw ingesteld bij het opnieuw starten van het apparaat. Hierdoor vragen Android-apps waarvoor het Intune-pincodebeleid is ingesteld waarschijnlijk om de pincode voor de app, ongeacht de instelling 'Toegangsvereisten opnieuw controleren na (minuten)' **na het opnieuw starten van een apparaat**.  
     - **De werking van de timer die aan de pincode is gekoppeld:** Zodra een pincode wordt ingevoerd voor toegang tot een app (app A) en de app de voorgrond op het apparaat verlaat, wordt de timer voor die pincode opnieuw ingesteld. Voor elke app (app B) die deze pincode deelt, wordt de gebruiker niet om de pincode gevraagd, omdat de timer opnieuw is ingesteld. De prompt verschijnt zodra opnieuw aan de waarde voor Toegangsvereisten opnieuw controleren na (minuten) is voldaan.
 
 Zelfs als de pincode wordt gedeeld met apps van andere uitgevers verschijnt bij iOS-apparaten de prompt opnieuw wanneer opnieuw is voldaan aan de waarde **Toegangsvereisten na (minuten) opnieuw controleren** voor de app die niet de belangrijkste invoerfocus is. Een gebruiker heeft bijvoorbeeld app _A_ van uitgever _X_ en app _B_ van uitgever _Y_ en deze twee apps delen dezelfde pincode. De gebruiker is gericht op app _A_ (voorgrond) en app _B_ wordt geminimaliseerd. Nadat is voldaan aan de waarde **Toegangsvereisten na (minuten) opnieuw controleren** en de gebruiker overschakelt naar de app _B_, is de pincode vereist.
 
-      >[!NOTE] 
-      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
+  >[!NOTE] 
+  > Als u wilt dat de toegangsvereisten van de gebruiker vaker worden gecontroleerd (oftewel dat er om een pincode wordt gevraagd), met name voor een veelgebruikte app, wordt aanbevolen om de waarde voor de instelling 'Toegangsvereisten opnieuw controleren na (minuten)' te verlagen. 
       
 - **Hoe werkt de pincode van Intune met de ingebouwde pincodes van apps voor Outlook en OneDrive?**<br></br>
 De pincode van Intune werkt op basis van een timer van inactiviteit (ofwel de waarde voor Toegangsvereisten opnieuw controleren na (minuten)). Er wordt dus gevraagd om de pincode van Intune. Dit is onafhankelijk van de prompts voor de pincode van de app voor Outlook en OneDrive, die vaak standaard verschijnen bij het starten van de app. Als beide prompts tegelijk worden weergegeven, moet de pincode van Intune voorrang krijgen. 

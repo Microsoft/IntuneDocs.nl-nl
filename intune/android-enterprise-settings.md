@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f49e0bc496f176434577d42d3a372fc4e8bc22d3
+ms.sourcegitcommit: 7063072c94e43aefc6be0072780622a1da8485d5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312893"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46119100"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Android Enterprise-kioskinstellingen in Intune
 
@@ -45,9 +45,9 @@ Android-kioskprofielen bieden ondersteuning voor de volgende configuratie-instel
 - **Installatie via onbekende bronnen toestaan**: selecteer **Toestaan** om gebruikers te laten installeren via onbekende bronnen.
 - **Systeemupdate**: kies een optie om te bepalen hoe het apparaat omgaat met draadloze updates:
     - **Standaardwaarde apparaat**: gebruik de standaardinstelling van het apparaat.
-    - **Automatisch**: updates worden automatisch geïnstalleerd.
-    - **Uitgesteld**: updates worden uitgesteld tot een latere datum.
-    - **Onderhoudsvenster**: gebruikers wordt in een onderhoudsvenster gevraagd om de update goed te keuren.
+    - **Automatisch**: updates worden automatisch geïnstalleerd zonder interactie van de gebruiker. Wanneer u dit beleid instelt, worden alle eventuele updates die nog niet zijn uitgevoerd, meteen geïnstalleerd.
+    - **Uitgesteld**: updates worden gedurende 30 dagen uitgesteld. Na 30 dagen wordt de gebruiker gevraagd om de update te installeren. Het is mogelijk dat apparaatfabrikanten of leveranciers het uitstellen van belangrijke beveiligingsupdates voorkomen (uitzonderen). Voor een uitzonderingsupdate wordt een systeembericht weergegeven op het apparaat. 
+    - **Onderhoudsperiode**: hiermee worden updates automatisch geïnstalleerd tijdens een dagelijkse onderhoudsperiode die u in Intune instelt. Er wordt 30 dagen geprobeerd de update(s) te installeren. Dit kan mislukken als er te weinig ruimte of onvoldoende accuvermogen is. Na 30 dagen wordt de gebruiker gevraagd om de update(s) te installeren. Deze periode wordt is ook gebruikt om updates voor Play-apps te installeren. Deze optie wordt aanbevolen voor specifieke apparaten, zoals kiosken, omdat kiosken met maar één app op de voorgrond kunnen worden bijgewerkt. 
 
 ## <a name="kiosk-settings"></a>Kioskinstellingen
 

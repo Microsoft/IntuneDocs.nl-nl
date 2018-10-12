@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: 239c8d5dc4143ba91c78b9b5c502c7a20b101417
+ms.sourcegitcommit: 7afa90264a2098453885be3d37655ae1a32ca67d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40251865"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47229072"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>De portal voor probleemoplossing gebruiken om gebruikers in uw bedrijf te helpen
 
@@ -36,7 +36,7 @@ Wanneer een gebruiker contact opneemt met de ondersteuning vanwege een technisch
 - Gebruikersstatus
 - Toewijzingen
 - Problemen met naleving
-- Apparaat niet
+- Apparaat reageert niet
 - Ophalen van VPN- of Wi-Fi-instellingen lukt niet apparaat
 - Fout tijdens installatie van app
 
@@ -48,7 +48,7 @@ In het deelvenster Problemen oplossen kiest u **Gebruiker selecteren** om gebrui
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies in het deelvenster **Intune** de optie **Problemen oplossen**.
 4. Klik op **Selecteren** om een gebruiker te selecteren om problemen voor op te lossen.
-5. Selecteer de gebruiker door een naam of e-mailadres te typen. Klik op **Selecteren**. De informatie voor het oplossen van problemen voor de gebruiker wordt weergegeven in het deelvenster Problemenoplossing. In de volgende tabellen wordt de informatie uitgelegd.
+5. Selecteer de gebruiker door een naam of e-mailadres te typen. Klik op **Selecteren**. De informatie voor het oplossen van problemen voor de gebruiker wordt weergegeven in het deelvenster Problemenoplossing. In de volgende tabel wordt de informatie uitgelegd.
 
 > [!Note]  
 > U kunt het deelvenster **Probleemoplossing** ook openen door in uw browser naar het volgende adres te gaan: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
@@ -64,16 +64,18 @@ U kunt het deelvenster **Probleemoplossing** gebruiken om gebruikersgegevens wee
 | 1.   | Accountstatus  | Geeft de status van de huidige Intune-tenant weer als **Actief** of **Inactief**.       |
 | 2.   | Gebruikersselectie  | De naam van de momenteel geselecteerde gebruiker. Klik op **Gebruiker wijzigen** om een nieuwe gebruiker te kiezen.       |
 | 3.   | Gebruikersstatus  | Geeft de status weer van de Intune-licentie van de gebruiker, het aantal apparaten, de nalevingsstatus van elk apparaat, het aantal apps en de nalevingsstatus van de apps.       |
-| 4.   | Gebruikersgegevens  | U kunt de lijst gebruiken om de gegevens te selecteren die u in het deelvenster wilt weergeven. <br>U kunt de volgende selecties maken: <ul><li>Mobiele apps<li>Beleid voor app-beveiliging<li>Nalevingsbeleid<li> Configuratiebeleid</ul>      |
+| 4.   | Gebruikersgegevens  | U kunt de lijst gebruiken om de gegevens te selecteren die u in het deelvenster wilt weergeven. <br>U kunt de volgende selecties maken: <ul><li>Client-apps<li>Nalevingsbeleid<li> Configuratiebeleid<li>Beleid voor app-beveiliging <li>Registratiebeperkingen</ul>      |
 | 5.   | Groepslidmaatschap  | Hiermee geeft u de groepen weer waarvan de geselecteerde gebruiker momenteel lid is.       |
 
-## <a name="mobile-apps-reference"></a>Verwijzing mobiele apps
+## <a name="client-apps-reference"></a>Verwijzing client-apps
 
-De apps die worden uitgevoerd op apparaten, of de apparaten die eigendom zijn van gebruikers die worden beheerd door Intune en Azure Active Directory (AD).
+De apps waarop apparaten worden uitgevoerd die
+- worden beheerd door Intune en Azure Active Directory (AD) 
+- het eigendom zijn van gebruikers die in Intune en Azure Active Directory (AD) worden beheerd.
 
 ### <a name="properties"></a>Eigenschappen
 
-De eigenschappen van mobiele apps.
+De eigenschappen van client-apps.
 
 | Eigenschap      | Beschrijving                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +93,7 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 | Apparaatnaam        | De naam van het type apparaat.                                                                                                     |
 | Beheerd door         | De timestamp van een beleidswijziging.                                                                                              |
 | Het type Azure AD-join | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Eigendom          | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn.                                               |
+| Eigendom          | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**).                                               |
 | Compatibel met Intune   | De naam van het type apparaat.                                                                                                     |
 | Compatibel met Azure AD | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
 | Besturingssysteem                 | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                       |
@@ -100,20 +102,20 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 
 ### <a name="app-protection-status"></a>Status app-beveiliging
 
-Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met Enterprise Mobility Solution-technologieën (EMS). Dit biedt een basisbeveiliging voor uw bedrijfsgegevens wanneer die worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
+Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met Enterprise Mobility Solution-technologieën (EMS). Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
 
 | Eigenschap    | Beschrijving                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn. |
+| Status      | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**). |
 | App-naam    | De naam van de toepassing                                                           |
 | Apparaatnaam | De naam van het type apparaat.                                                       |
 | Apparaattype | De naam van het type apparaat.                                                       |
-| Beleid    | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn. |
+| Beleid    | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**). |
 | Laatste synchronisatie   | De timestamp van de laatste keer dat het apparaat is gesynchroniseerd met Intune.                   |
 
 ## <a name="app-protection-policies-reference"></a>Verwijzing beveiligingsbeleid voor apps
 
-Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Dit biedt een basisbeveiliging voor uw bedrijfsgegevens wanneer die worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
+Er is een app-beschermingsbeleid beschikbaar voor mobiele apps die worden geïntegreerd met EMS-technologieën. Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
 
 ### <a name="properties"></a>Eigenschappen
 
@@ -123,7 +125,7 @@ Deze tabel bevat de status van het app-beveiligingsbeleid voor apparaten die wor
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Naam        | De naam van de toepassing.                                                                                                        |
 | Geïmplementeerd    | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Platform    | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn.                                               |
+| Platform    | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**).                                               |
 | Inschrijving  | De naam van het type apparaat.                                                                                                     |
 | Laatst bijgewerkt | De timestamp van een beleidswijziging.                                                                                              |
 
@@ -136,7 +138,7 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 | Apparaatnaam        | De naam van het type apparaat.                                                                                                     |
 | Beheerd door         | De timestamp van een beleidswijziging.                                                                                              |
 | Het type Azure AD-join | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Eigendom          | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn.                                               |
+| Eigendom          | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**).                                               |
 | Compatibel met Intune   | De naam van het type apparaat.                                                                                                     |
 | Compatibel met Azure AD | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
 | Compatibel met Azure AD | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
@@ -157,7 +159,7 @@ De eigenschappen het nalevingsbeleid.
 | Toewijzing    | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
 | Naam          | De naam van de toepassing.                                                                                                        |
 | Besturingssysteem            | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                       |
-| Beleidstype   | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn.                                               |
+| Beleidstype   | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** en **Onbekend**).                                               |
 | Laatst gewijzigd | De naam van het type apparaat.                                                                                                     |
 
 ### <a name="devices"></a>Apparaten
@@ -169,7 +171,7 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 | Apparaatnaam        | De naam van het type apparaat.                                                                                                     |
 | Beheerd door         | De timestamp van een beleidswijziging.                                                                                              |
 | Het type Azure AD-join | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Eigendom          | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn.                                               |
+| Eigendom          | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** en **Onbekend**).                                               |
 | Compatibel met Intune   | De naam van het type apparaat.                                                                                                     |
 | Compatibel met Azure AD | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
 | Besturingssysteem                 | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                       |
@@ -178,15 +180,15 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 
 ### <a name="app-protection-policies"></a>Beleid voor app-beveiliging
 
-Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Dit biedt een basisbeveiliging voor uw bedrijfsgegevens wanneer die worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
+Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
 
 | Eigenschap    | Beschrijving                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn. |
+| Status      | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**). |
 | App-naam    | De naam van de toepassing                                                           |
 | Apparaatnaam | De naam van het type apparaat.                                                       |
 | Apparaattype | De naam van het type apparaat.                                                       |
-| Beleid    | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn. |
+| Beleid    | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**). |
 | Laatste synchronisatie   | De timestamp van de laatste keer dat het apparaat is gesynchroniseerd met Intune.                   |
 
 ## <a name="configuration-policies-reference"></a>Referentie voor configuratiebeleid
@@ -202,7 +204,7 @@ De eigenschappen van het configuratiebeleid.
 | Toewijzing    | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
 | Naam          | De naam van de toepassing.                                                                                                        |
 | Besturingssysteem            | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                       |
-| Beleidstype   | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn.                                               |
+| Beleidstype   | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**).                                               |
 | Laatst gewijzigd | De naam van het type apparaat.                                                                                                     |
 
 ### <a name="devices"></a>Apparaten
@@ -214,7 +216,7 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 | Apparaatnaam        | De naam van het type apparaat.                                                                                                     |
 | Beheerd door         | De timestamp van een beleidswijziging.                                                                                              |
 | Het type Azure AD-join | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Eigendom          | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn.                                               |
+| Eigendom          | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**).                                               |
 | Compatibel met Intune   | De naam van het type apparaat.                                                                                                     |
 | Compatibel met Azure AD | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
 | Besturingssysteem                 | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                       |
@@ -224,16 +226,53 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 
 ### <a name="app-protection-policies"></a>Beleid voor app-beveiliging
 
-Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Dit biedt een basisbeveiliging voor uw bedrijfsgegevens wanneer die worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
+Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
 
 | Eigenschap    | Beschrijving                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn. |
+| Status      | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**). |
 | App-naam    | De naam van de toepassing                                                           |
 | Apparaatnaam | De naam van het type apparaat.                                                       |
 | Apparaattype | De naam van het type apparaat.                                                       |
-| Beleid    | Het soort apparaateigendom. Dit kan **Bedrijf**, **Persoonlijk** of **Onbekend** zijn. |
+| Beleid    | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**). |
 | Laatste synchronisatie   | De timestamp van de laatste keer dat het apparaat is gesynchroniseerd met Intune.                   |
+
+## <a name="enrollment-failure-reference"></a>Verwijzing naar inschrijvingsfouten
+
+De tabel met inschrijvingsfouten bevat een lijst met mislukte inschrijvingspogingen. Een apparaat dat in de onderstaande tabel staat, is tijdens een andere poging mogelijk wel goed ingeschreven. Mogelijk worden niet alle mislukte pogingen genoemd. Er is niet voor alle fouten informatie over risicobeperking beschikbaar.
+
+| Tabelkolom | Beschrijving |
+|-------------|----------|
+| Start inschrijving | De begintijd waarop de gebruiker de inschrijving is gestart. |
+| Besturingssysteem | Het besturingssysteem van het apparaat. |
+| Besturingssysteemversie | De versie van het besturingssysteem van het apparaat. |
+| Mislukt | De reden voor de fout. |
+
+### <a name="failure-details"></a>Foutdetails
+
+Wanneer u een foutenrij kiest, worden meer details weergegeven.
+
+| Sectie | Beschrijving |
+|-------------|----------|
+| Foutdetails | Een gedetailleerdere verklaring van de fout. |
+| Mogelijke herstelbewerkingen | Aanbevolen stappen om de fout op te lossen. Voor sommige fouten zijn mogelijk geen herstelbewerkingen beschikbaar. |
+| Resources (optioneel) | Koppelingen voor verder lezen of gebieden in de portal om actie te ondernemen. |
+
+### <a name="enrollment-errors"></a>Inschrijvingsfouten
+
+| Fout | Details |
+|-------------|----------|
+| iOS-time-out of -fout | Een time-out tussen het apparaat en Intune omdat de gebruiker te lang over het voltooien van de inschrijving doet. |
+| Gebruiker niet gevonden of gelicentieerd | De gebruiker mist een licentie of is verwijderd uit de service. |
+| Het apparaat is al ingeschreven | Iemand heeft geprobeerd om een apparaat in te schrijven met behulp van de bedrijfsportal op een apparaat dat nog door een andere gebruiker staat ingeschreven. |
+| Geen onboarding uitgevoerd in Intune | Er is een geprobeerd het apparaat in te schrijven toen de Intune-autoriteit voor Mobile Device Management (MDM) niet was geconfigureerd. |
+| Inschrijvingsautorisatie mislukt | Er is geprobeerd een apparaat in te schrijven met een oude versie van de bedrijfsportal. |
+| Apparaat niet ondersteund | Het apparaat voldoet niet aan de minimumvereisten voor Intune-inschrijving. |
+| Registratiebeperkingen niet nageleefd | Deze inschrijving is geblokkeerd vanwege een door de beheerder geconfigureerde inschrijvingsbeperking. |
+| Apparaatlimiet bereikt | Deze inschrijving is geblokkeerd vanwege een door de beheerder geconfigureerde beperking voor de apparaatlimiet. |
+| Apple-onboarding | Alle iOS-apparaten zijn op dit moment geblokkeerd voor inschrijving vanwege een ontbrekend of verlopen Apple MDM-pushcertificaat in Intune. |
+| Apparaat niet vooraf geregistreerd | Het apparaat is niet vooraf als zakelijk geregistreerd en alle persoonlijke inschrijvingen zijn door een beheerder geblokkeerd. |
+| Functie niet ondersteund | De gebruiker probeert zich waarschijnlijk in te schrijven via een methode die niet compatibel is met uw Intune-configuratie. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Beschikbare gegevens verzamelen van mobiel apparaat
 

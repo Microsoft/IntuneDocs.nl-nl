@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 09/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02cc111f8991a855db4f05360e54598af511f28f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 31c3e7b6d255cd99efee134f0276fd4d15dab6b9
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223489"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403558"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Inschrijving voor Windows-apparaten instellen
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Met de informatie in dit onderwerp kunnen IT-beheerders de inschrijving van Windows-apparaten vereenvoudigen voor hun gebruikers. Zodra u [Intune hebt ingesteld](setup-steps.md), kunnen gebruikers Windows-apparaten registreren door zich [aan te melden](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) met hun werk- of schoolaccount.  
+Met de informatie in dit artikel kunnen IT-beheerders de inschrijving van Windows-apparaten vereenvoudigen voor hun gebruikers. Zodra u [Intune hebt ingesteld](setup-steps.md), kunnen gebruikers Windows-apparaten registreren door zich [aan te melden](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) met hun werk- of schoolaccount.  
 
 Als Intune-beheerder kunt u de registratie op de volgende manieren vereenvoudigen:
 - [Automatische registratie inschakelen](#enable-windows-10-automatic-enrollment) (vereist Azure AD Premium)
@@ -45,13 +45,14 @@ Vereenvoudiging van Windows-apparaatregistratie is afhankelijk van twee factoren
 
 Organisaties die gebruik kunnen maken van automatische registratie kunnen ook instellen dat [apparaten bulksgewijs worden geregistreerd](windows-bulk-enroll.md) via de Windows Configuration Designer-app.
 
-**Ondersteuning voor meerdere gebruikers**<br>
-Apparaten waarop de Windows 10-makersupdate wordt uitgevoerd en die zijn toegevoegd aan een Azure Active Directory-domein worden nu ondersteund voor beheer van meerdere gebruikers in Intune. Als standaardgebruikers zich aanmelden met hun Azure AD-referenties, krijgen ze apps en beleidsregels die zijn toegewezen aan hun gebruikersnaam. Gebruikers kunnen de bedrijfsportal op dit moment niet gebruiken voor selfservice scenario's zoals het installeren van apps.
+## <a name="multi-user-support"></a>Ondersteuning voor meerdere gebruikers
+
+Intune biedt ondersteuning voor multi-beheer voor apparaten waarop de Windows 10-makersupdate wordt uitgevoerd en die zijn toegevoegd aan een Azure Active Directory-domein. Als standaardgebruikers zich aanmelden met hun Azure AD-referenties, krijgen ze apps en beleidsregels die zijn toegewezen aan hun gebruikersnaam. Gebruikers kunnen de bedrijfsportal op dit moment niet gebruiken voor selfservice scenario's zoals het installeren van apps.
 
 [!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Windows-inschrijving vereenvoudigen zonder Azure AD Premium
-U kunt de registratie vereenvoudigen voor uw gebruikers door een alias van de domeinnaamserver (DNS) (CNAME-record) te maken die registratieaanvragen automatisch omleidt naar Intune-servers. Als u geen DNS CNAME-bronrecord maakt, moeten gebruikers die verbinding willen maken met Intune de naam van de Intune-server opgeven tijdens de registratie.
+Om de inschrijving te vereenvoudigen, maakt u een DNS-alias (domeinnaamserver) (CNAME-recordtype) waardoor inschrijvingsaanvragen worden doorgestuurd naar Intune-servers. Anders moeten gebruikers die verbinding met Intune proberen te maken, tijdens de inschrijving de naam van de Intune-server invoeren.
 
 **Stap 1: CNAME maken** (optioneel)<br>
 Maak CNAME-DNS-bronrecords voor uw bedrijfsdomein. Als de website van uw bedrijf bijvoorbeeld contoso.com is, maakt u een CNAME in DNS die EnterpriseEnrollment.contoso.com omleidt naar enterpriseenrollment-s.manage.microsoft.com.
@@ -63,7 +64,13 @@ Hoewel het maken van CNAME-DNS-vermeldingen optioneel is, maken CNAME-records he
 |CNAME|EnterpriseEnrollment.bedrijfsdomein.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 uur|
 |CNAME|EnterpriseRegistration.bedrijfsdomein.com|EnterpriseRegistration.windows.net|1 uur|
 
-Als u meer dan een UPN-achtervoegsel hebt, moet u een CNAME maken voor elke domeinnaam en die allemaal laten verwijzen naar EnterpriseEnrollment-s.manage.microsoft.com. Als gebruikers van Contoso gebruikmaken van name@contoso.com, maar ook van name@us.contoso.com en name@eu.constoso.com als hun e-mail/UPN, moet de DNS-beheerder van Contoso de volgende CNAME-records maken:
+Als het bedrijf meer dan één UPN-achtervoegsel gebruikt, moet u een CNAME maken voor elke domeinnaam en die allemaal laten verwijzen naar EnterpriseEnrollment-s.manage.microsoft.com. Gebruikers van Contoso gebruiken bijvoorbeeld de volgende indelingen voor hun e-mail/UPN:
+
+- name@contoso.com
+- name@us.contoso.com
+- name@eu.constoso.com\
+
+De Contoso DNS-beheerder moet de volgende CNAME’s maken:
 
 |Type|Hostnaam|Verwijst naar|TTL|  
 |----------|---------------|---------------|---|
@@ -76,7 +83,8 @@ Als u meer dan een UPN-achtervoegsel hebt, moet u een CNAME maken voor elke dome
 Het kan 72 uur duren voordat wijzigingen in DNS-records zijn doorgegeven. U kunt de DNS-wijziging in Intune pas controleren wanneer de DNS-record is doorgegeven.
 
 **Stap 2: CNAME controleren** (optioneel)<br>
-Kies in Azure-portal **Meer services** > **Bewaking en beheer** > **Intune**. Kies **Apparaten inschrijven** > **Windows-inschrijving** op de blade Intune. Voer in het vak **Geef een geverifieerde domeinnaam op** de URL van de website van het bedrijf in en kies vervolgens **Automatische detectie testen**.
+1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **CNAME-validatie**.
+2. Voer in het vak **Domein** de bedrijfswebsite in en kies **Testen**.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Gebruikers uitleggen hoe ze Windows-apparaten inschrijven
 Laat uw gebruikers weten hoe ze hun Windows-apparaten kunnen inschrijven en wat ze kunnen verwachten nadat deze onder beheer zijn gebracht.

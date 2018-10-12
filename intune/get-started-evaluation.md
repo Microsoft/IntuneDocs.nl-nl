@@ -1,13 +1,13 @@
 ---
 title: Aan de slag met Microsoft Intune
 titleSuffix: ''
-description: Doorloop een reeks korte praktische oefeningen om over Intune te leren.
+description: Doorloop een reeks korte, praktische snelstartinstructies om meer over Intune te leren.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/23/2018
-ms.topic: conceptual
+ms.date: 09/20/2018
+ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,35 +15,35 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 8066cd8c2e0fa1d0a9244383497ea6b417f6531b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 508c4826a14adfa554ff59a8095b6b5a76b41773
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253728"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403524"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Wat kan Intune voor mijn bedrijf doen?
-
-Intune is een cloudgebaseerde service voor het beheer van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) die uw werknemers in staat stelt om productief te zijn terwijl uw zakelijke gegevens veilig blijven.
+Microsoft Intune is een cloudgebaseerde service voor het beheer van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) die uw werknemers in staat stelt om productief te zijn terwijl uw zakelijke gegevens veilig blijven.
 
 ![Architectuurdiagram op hoog niveau voor Microsoft Intune](/intune/media/intunearchitecture.svg)
 
-We begrijpen dat het moeilijk kan zijn om te starten met het beheren van mobiele apparaten. U moet immers veel verschillende beslissingen namens uw bedrijf nemen. Deze oefeningen begeleiden u door enkele taken die u helpen begrijpen hoe Intune kan worden gebruikt om uw zakelijke resources te beschermen.
+We begrijpen dat het moeilijk kan zijn om te starten met het beheren van mobiele apparaten. U moet immers veel verschillende beslissingen namens uw bedrijf nemen. Aan de hand van de volgende snelstartinstructies kunt u aan de slag met Intune en in een zo kort mogelijke tijd een aantal algemene taken voltooien.
 
-## <a name="what-are-the-exercises"></a>Wat zijn de oefeningen?
+## <a name="quickstarts"></a>Snelstartgidsen
 
-U kunt de beoogde volgorde van de praktische __Aan de slag__-activiteiten volgen aan de hand van de inhoudsopgave aan de linkerkant van de pagina. Deze taken zijn:
+U kunt de beoogde volgorde van de __Aan de slag__-handleidingen volgen aan de hand van de inhoudsopgave aan de linkerkant van de pagina.
 
-* [Aan de slag met Azure](get-started-azure.md) - Begrijp de anatomie van de Azure-portal en leer hoe u veranderingen kunt aanbrengen op de pagina die u ziet.
-* [Aan de slag met het beheren van gebruikers](get-started-users.md) - Voeg een gebruiker aan Intune toe om deze toe te staan om zakelijke resources te openen op mobiele apparaten.
-* [Aan de slag met groepen](get-started-groups.md) - Deel gebruikers in groepen in om het beleid en de apps waar ze toegang toe hebben gemakkelijker te beheren.
-* [Aan de slag met beleid](get-started-policies.md) - Maak beleid om te voorkomen dat gebruikers niet-geautoriseerde activiteiten uitvoeren met hun apparaten.
-* [Aan de slag met het inschrijven van apparaten](get-started-enroll.md) - Maak kennis met het inschrijvingsproces door een volledige inschrijvingsprocedure voor een iOS-apparaat te doorlopen.
-* [Aan de slag met het toevoegen van apps](get-started-apps.md) - Zoek apps en voeg ze toe aan apparaten om het voor uw medewerkers mogelijk te maken om hun werk uit te voeren.
-
+- [Intune gratis proberen](free-trial-sign-up.md): maak een gratis abonnement om Intune in een testomgeving te proberen.    
+- [Een gebruiker maken](quickstart-create-user.md): voeg een gebruiker aan Intune toe om deze toe te staan zakelijke resources te openen op mobiele apparaten.
+- [Een groep maken](quickstart-create-group.md): deel gebruikers in groepen in om het beleid en de apps waartoe ze toegang hebben gemakkelijker te beheren.
+- [Een beleid maken](quickstart-create-policy.md): maak een apparaatnalevingsbeleid voor een Windows 10-apparaat en wijs een groep aan het beleid toe.
+- [Automatische inschrijving instellen](quickstart-setup-auto-enrollment.md): stel Microsoft Intune zo in dat apparaten automatisch worden ingeschreven wanneer bepaalde gebruikers zich aanmelden bij Windows 10-apparaten.
+- [Een aangepaste rol](quickstart-create-custom-role.md): maak en wijs een aangepaste rol toe met specifieke machtigingen voor de afdeling Beveiligingsactiviteiten. 
+- [Een e-mail-apparaatprofiel voor iOS maken](quickstart-email-profile.md): maak een e-mailapparaatprofiel voor iOS-apparaten.
+<!--  [Add and assign apps](get-started-apps.md) - Add and assign apps to devices -->
 ## <a name="prerequisites"></a>Vereisten
 
-U moet een Intune-beheerdersaccount en een tenantaccount activeren voordat u begint. U kunt zich [hier](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) aanmelden voor deze accounts. Huidige abonnees kunnen deze activiteiten ook voltooien in de live-tenant. In deze artikelen Aan de slag wordt ervan uitgegaan dat u met testapparaten werkt.
+U moet een Intune-beheerdersaccount en een tenantaccount activeren voordat u begint. Maak een gratis abonnement om [Intune gratis te proberen](free-trial-sign-up.md) in een testomgeving. Huidige abonnees kunnen deze activiteiten ook voltooien in de live-tenant. In deze artikelen Aan de slag wordt ervan uitgegaan dat u met testapparaten werkt.
 
 U moet er ook voor zorgen dat u de globale beheerder voor uw organisatie bent om alle taken in de 'Aan de slag'-taken te kunnen uitvoeren.
 

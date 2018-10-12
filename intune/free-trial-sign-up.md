@@ -1,61 +1,123 @@
 ---
-title: Aanmelden voor een gratis proefversie van 30 dagen van Microsoft Intune
-titleSuffix: Microsoft Intune
-description: Meer informatie over het aanmelden voor een gratis proefversie van 30 dagen van Microsoft Intune.
+title: 'Snelstartgids: Microsoft Intune gratis proberen'
+titlesuffix: ''
+description: In deze snelstartgids maakt u een gratis proefabonnement, leert u de ondersteunde configuraties en netwerkvereisten kennen en kunt u (optioneel) uw domeinnaam configureren.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 03/04/2018
-ms.topic: conceptual
+ms.date: 09/13/2018
+ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
+ms.reviewer: ''
 ms.suite: ems
-ms.custom: get-started
-ms.openlocfilehash: 6492b757376c95c366d45a63b05f2ec60bdd791b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.custom: intune-azure
+ms.openlocfilehash: 37445cb2536e02937cf3002dc1cb56ab4b78f12f
+ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254119"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46581390"
 ---
-# <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registreren voor een gratis proefversie van Microsoft Intune
+# <a name="quickstart-try-microsoft-intune-for-free"></a>Snelstartgids: Microsoft Intune gratis proberen 
 
+Met Microsoft Intune kun u de bedrijfsgegevens van uw werknemers beschermen door middel van het beheer van apparaten en apps. In deze snelstartgids maakt u een gratis abonnement om Intune in een testomgeving te proberen.
 
-Dit artikel begeleidt u bij het aanmelden voor een proefversie van de zelfstandige versie van Intune voor Azure Portal.
+Intune biedt Mobile Device Management (MDM) en Mobile Application Management (MAM) via een veilige, op de cloud gebaseerde service die wordt beheerd met behulp van Microsoft Azure Portal. Met behulp van Intune kunt u ervoor zorgen dat de bedrijfsresources van uw werknemers (gegevens, apparaten en apps) op de juiste manier worden geconfigureerd, geopend en bijgewerkt, zodat u aan het nalevingsbeleid en de vereisten van uw bedrijf voldoet. 
 
-1. Ga naar de [registratiepagina voor Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) en vul het formulier in om u aan te melden voor een proefabonnement.
-2. Als u een werk- of schoolaccount hebt en dit wilt gebruiken voor de proefversie van Intune, volgt u [deze aanmeldingsinstructies](/intune/account-sign-up).
+## <a name="prerequisites"></a>Vereisten
+Bekijk de volgende vereisten voordat u Microsoft Intune instelt:
 
-* Als de landinstellingen voor de meeste IT-activiteiten en van de meeste gebruikers afwijkt van die van u, kunt u de desbetreffende landinstellingen selecteren onder **Where's your company located?** (Waar bevindt uw bedrijf zich?).
+   - [Ondersteunde besturingssystemen en browsers](supported-devices-browsers.md) 
+   - [Netwerkconfiguratievereisten en bandbreedte](network-bandwidth-use.md)
 
-2. Aan het einde van het aanmeldingsproces ziet u een bericht met de gegevens van uw nieuwe account. <br/> 
+## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registreren voor een gratis proefversie van Microsoft Intune
 
-![Afbeelding van accountgegevens](./media/2-end-of-sign-up-process.png) <br/>
+U mag Intune 30 dagen gratis proberen. Als u al een werk- of schoolaccount hebt **meld u dan aan** met dat account en voeg Intune toe aan uw abonnement. Anders kunt u zich **registreren** voor een nieuw account om Intune te gebruiken voor uw organisatie.
 
-Als u nu klikt op **You're ready to go** (U bent klaar om aan de slag te gaan), wordt u naar het Office 365-beheercentrum geleid, waar u gebruikers aan uw testomgeving kunt toevoegen. <br/><br/>Als u rechtstreeks naar Intune Azure Portal wilt gaan, opent u een nieuw browservenster en voert u **https://portal.azure.com** in de adresbalk in. U wordt dan omgeleid naar de aanmeldingspagina van Azure, waar u de referenties kunt opgeven die u hebt ontvangen om u aan te melden. Gebruik dit adres altijd als u zich wilt aanmelden voor de Intune-proefversie. <br/> ![Afbeelding van de aanmeldingspagina van Azure Portal](./media/azure-portal-signin.png)
+> [!IMPORTANT]
+> U kunt een bestaand werk- of schoolaccount niet combineren nadat u zich hebt aangemeld voor een nieuw account.
 
-De eerste keer dat u zich bij Intune [Azure Portal](https://portal.azure.com) aanmeldt, wordt Intune nog niet weergegeven in het Azure-dashboard. De Intune-service aan uw Azure-dashboard toevoegen:
-1. Kies **Alle services >** in de lijst met Azure-services links van het dashboard en voer **Intune** in het zoekvak in.
-2. Kies **Intune** uit de lijst en selecteer de ster om de service toe te voegen aan de lijst met services.<br/> ![Afbeelding van het selecteren van Microsoft Intune in Azure Portal](./media/azure-add-intune1.png)
-3. Kies vervolgens **Intune** in de lijst met services om het Intune-dashboard te openen.
+1. Ga naar de pagina [Microsoft Intune Trial](https://go.microsoft.com/fwlink/?linkid=2019088) en vul het formulier in.
+
+    ![Schermafbeelding van de registratiewebpagina van de evaluatieversie van het Microsoft Intune-account](./media/account-sign-up-site-full-browser.png)
+
+    Als de landinstellingen voor de meeste IT-activiteiten en van de meeste gebruikers afwijken van die van u, kunt u de desbetreffende landinstellingen selecteren onder **Land of regio**. Azure gebruikt uw regionale informatie om u de juiste services te bieden. Deze instelling kan later niet worden gewijzigd.
+
+2. Maak een account met behulp van uw bedrijfsnaam gevolgd door **.onmicrosoft.com**. 
+
+    ![Schermafbeelding van de registratiewebpagina van de evaluatieversie van het Microsoft Intune-account](./media/account-sign-up-site-user-id.png)
+
+    Als uw organisatie een eigen aangepast domein heeft dat u wilt gebruiken zonder **.onmicrosoft.com**, kunt u dit wijzigen in de Office 365-beheerportal die later in dit artikel wordt beschreven.
+
+3. Bekijk uw nieuwe accountinformatie aan het einde van het aanmeldingsproces.
+
+    ![Afbeelding van accountgegevens](./media/intune-end-of-sign-up-process.png) 
+
+## <a name="sign-in-to-the-azure-portal"></a>Aanmelden bij Azure Portal
+
+1. Open een nieuw browservenster en voer **https://portal.azure.com** in de adresbalk in. 
+2. Gebruik de referenties die in de bovenstaande stappen hebt gekregen om u aan te melden.
+
+    ![Afbeelding van de aanmeldingspagina van Azure Portal](./media/azure-portal-signin.png)
+
+3. On Microsoft Intune in Azure Portal weer te geven, selecteert u **Alle services** in de zijbalk aan de linkerkant van de pagina.
+4. Zoek in het filtervak naar **Microsoft Intune** en selecteer dit.
+5. Selecteer het **sterretje** om Intune onder aan uw lijst met favoriete services toe te voegen en het Intune-dashboard te openen.
 
 Wanneer u zich aanmeldt voor een proefversie, ontvangt u tevens een e-mailbericht met gegevens over uw account op het e-mailadres dat u hebt opgegeven tijdens het aanmeldingsproces. In deze e-mail wordt bevestigd dat uw proefversie actief is.
 
-## <a name="keeping-the-admin-experiences-straight"></a>Zorg voor een juiste werkwijze voor beheer
+## <a name="set-the-mdm-authority-to-intune"></a>De MDM-instantie instellen op Intune
+
+Met de instantie voor het beheer van mobiele apparaten (MDM) wordt bepaald hoe u uw apparaten beheert. Als IT-beheerder moet u een MDM-instantie instellen voordat gebruikers apparaten voor beheer kunnen inschrijven.
+
+Volg deze stappen om de MDM-instantie op Intune in te stellen.
+
+1. Open een nieuw browservenster en voer **https://portal.azure.com** in de adresbalk in. 
+2. Kies **Alle services** > **Microsoft Intune**.
+3. Selecteer de oranje banner om de instelling **Instantie voor beheer van mobiele apparaten** te openen. 
+
+    > [!NOTE]
+    > De oranje banner wordt alleen weergegeven als u de MDM-instantie nog niet hebt ingesteld.
+
+4. Stel onder **Mobile Device Management-instantie** uw MDM-instantie in op **Intune MDM-instantie**.
+
+## <a name="configure-your-custom-domain-name-optional"></a>Uw aangepaste domeinnaam configureren (optioneel)
+
+Zoals hierboven is gemeld, kunt u de domeinnaam wijzigen in de Office 365-beheerportal als uw organisatie een eigen aangepast domein heeft dat u wilt gebruiken zonder **.onmicrosoft.com**. U gaat nu uw aangepaste domeinnaam toevoegen, verifiëren en configureren.  
+
+> [!IMPORTANT]
+> U kunt de initiële domeinnaam **onmicrosoft.com** niet wijzigen of verwijderen. U kunt aangepaste domeinnamen toevoegen, controleren of verwijderen met Intune om uw bedrijfsidentiteit helder te houden.
+
+1. Ga naar de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx) en meld u aan met uw beheerdersaccount.
+
+2. Kies in het navigatievenster **Configuratie** > **Domeinen** > **Domein toevoegen**.
+
+3. Typ uw aangepaste domeinnaam. Selecteer vervolgens **Volgende**.
+
+   ![Schermafbeelding van Office 365-beheercentrum met Instellingen > Domeinen geselecteerd en waar een nieuwe domeinnaam wordt toegevoegd](./media/domain-custom-add.png)
+
+4. Bevestig dat u de eigenaar van het domein bent dat u eerder hebt ingevoerd. 
+    
+    Wanneer u de optie **Code verzenden via e-mail** selecteert, wordt er een e-mail naar de geregistreerde contactpersoon van uw domein gestuurd. Nadat u de e-mail hebt ontvangen, kopieert u de code en voert u deze in bij het veld **Typ hier uw verificatiecode**. Als de verificatiecodes overeenkomen, wordt het domein toegevoegd aan uw tenant. Het e-mailadres dat wordt weergegeven, ziet er mogelijk niet bekend uit. Sommige registratieservices verbergen het echte e-mailadres dat is opgegeven tijdens de registratie van het domein.
+
+   ![Schermafbeelding van Office 365 Admin Center: de domeinnaam die wordt toegevoegd verifiëren](./media/domain-custom-verify.png)
+
+   > [!NOTE]
+   > Voor meer informatie over de verificatie van TXT records raadpleegt u [DNS-records maken bij DNS-hostingproviders voor Office 365](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
+
+## <a name="admin-experiences"></a>Ervaringen van beheerders
 
 Er zijn twee portals die u kunt gebruiken:
-- Het Intune-dashboard in Azure ([portal.azure.com](https://portal.azure.com)) waar u de [mogelijkheden van Intune](what-is-intune.md) kunt bekijken. Doorgaans voert u uw werkzaamheden uit in het Intune-dashboard.
-- Het Office 365-beheercentrum ([portal.office.com](https://portal.office.com)) waar u gebruikers kunt toevoegen en beheren als u Azure Active Directory hiervoor niet gebruikt. U kunt ook andere aspecten van uw account beheren, zoals facturering en ondersteuning.
+- Het Intune-dashboard in Azure ([portal.azure.com](https://portal.azure.com)) is de locatie waar u de [mogelijkheden van Intune](what-is-intune.md) kunt bekijken. Doorgaans voert u uw werkzaamheden uit in het Intune-dashboard.
+- Het Office 365-beheercentrum ([portal.office.com](https://portal.office.com)) is de locatie waar u gebruikers kunt toevoegen en beheren als u Azure Active Directory hiervoor niet gebruikt. U kunt ook andere aspecten van uw account beheren, zoals facturering en ondersteuning.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-### <a name="integration-with-other-products"></a>Integratie met andere producten
-Meer informatie over het gebruik van uw Azure Active Directory-gebruikersaccounts met Intune:
-- [Identiteitsvereisten](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [Adreslijstsynchronisatie](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [Vereisten voor Multi-factor Authentication](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+In deze snelstartgids hebt u een gratis abonnement gemaakt om Intune in een testomgeving te proberen en (optioneel) een aangepaste domeinnaam geconfigureerd. Als u meer wilt weten over Microsoft Intune gaat u verder naar de volgende snelstartgids om gebruikers toe te voegen en licenties toe te wijzen.
 
-Meer informatie over het gebruik van [Intune met System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
+> [!div class="nextstepaction"]
+> [Een gebruiker maken](get-started-users.md)

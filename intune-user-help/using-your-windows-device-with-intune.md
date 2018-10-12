@@ -1,11 +1,11 @@
 ---
 title: Uw Windows-apparaat gebruiken met Intune | Microsoft Docs
-description: Lijst met koppelingen naar taken die gebruikers op hun Windows-apparaat kunnen uitvoeren wanneer het apparaat bij Intune is ingeschreven
+description: Koppelingen zoeken om problemen met uw Windows-apparaten op te lossen of uw Windows-apparaten te beheren via de bedrijfsportal-app
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,36 +17,36 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 645e87ef731cf911824ab16673c01e962c91fb70
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4018c73c2160a3db5d5c8b8843e803b56f2caa3
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017254"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168961"
 ---
-# <a name="using-your-windows-device-with-intune"></a>Uw Windows-apparaat gebruiken met Intune
+# <a name="using-your-windows-device-with-intune-company-portal"></a>Uw Windows-apparaat gebruiken met de Intune-bedrijfsportal
 
-Er zijn een aantal dingen die u met Intune kunt doen om uw werk gemakkelijker te maken. Hier volgt een lijst met de meest voorkomende zaken die u mogelijk gevraagd wordt te doen door uw bedrijf.
+In dit artikel vindt u specifieke taken en informatie voor de bedrijfsportal voor Windows. Gebruik dit artikel om problemen met uw Windows-apparaat op te lossen of uw Windows-apparaat te beheren. Klik op een willekeurige koppeling voor meer informatie, stappen en schermafbeeldingen.  
 
 ## <a name="supported-versions"></a>Ondersteunde versies
 
-Intune ondersteunt momenteel de volgende Windows-versies.
+De bedrijfsportal ondersteunt momenteel de volgende Windows-versies.
 
 * Windows 10 (Home, Pro, Education, S en Enterprise-versies)
 * Windows Phone 8.1 en hoger
 * Windows RT 8.1
 * Windows 8.1
 
-Er zijn nog enkele andere versies van Windows, zoals [Windows 10 Holographic](https://www.microsoft.com/hololens), die ook door Intune worden ondersteund. Deze worden hier niet vermeld omdat ze zijn bedoeld voor zeer specifieke gebruikstoepassingen.
+Er worden ook andere versies van Windows zoals [Windows 10 Holographic](https://www.microsoft.com/hololens) ondersteund in de bedrijfsportal. Deze versies worden niet in dit artikel besproken, omdat deze voor heel specifiek gebruik bedoeld zijn.
 
-## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inschrijven in Intune en de Bedrijfsportal installeren
+## <a name="enrolling-your-device-and-installing-the-company-portal"></a>Uw apparaat inschrijven en de bedrijfsportal installeren
 
 - [Uw Windows-apparaat inschrijven bij Intune](enroll-your-device-in-intune-windows.md)
 - [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [Welke gegevens kan uw bedrijf zien wanneer u uw apparaat inschrijft?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [Een apparaat opnieuw instellen (wissen) als het is zoekgeraakt of gestolen](reset-erase-your-device-cpwebsite.md)
 
-## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>Wat u kunt doen wanneer het apparaat is ingeschreven bij Intune
+## <a name="things-you-can-do-after-your-device-is-enrolled-in-management"></a>Wat u kunt doen nadat uw apparaat is ingeschreven bij het beheer
 
 - [Een apparaat versleutelen](encrypt-your-device-windows.md)
 - [Een wachtwoord instellen of wijzigen](set-or-change-your-password-windows.md)

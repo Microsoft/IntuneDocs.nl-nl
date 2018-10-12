@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b540cd2b2751712604c0ae7172015cb109c9c1d8
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
+ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039434"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47237660"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Problemen bij de apparaatinschrijving oplossen
 
@@ -39,7 +39,7 @@ Voordat u het probleem probeert op te lossen, controleert u of u Intune op de ju
 U kunt er ook voor zorgen dat de datum en tijd op het apparaat van de gebruiker juist zijn ingesteld:
 
 1. Start het apparaat opnieuw op.
-2. Zorg ervoor dat de datum en tijd zo dicht mogelijk zijn ingesteld op de GMT-standaarden (+ of - 12 uur) ten opzichte van de tijdzone van de eindgebruiker.
+2. Zorg ervoor dat de datum en tijd zo dicht mogelijk bij de GMT-standaarden (+ of - 12 uur) voor de tijdzone van de eindgebruiker zijn ingesteld.
 3. Verwijder de Intune-bedrijfsportal en installeer deze opnieuw (indien van toepassing).
 
 Gebruikers van beheerde apparaten kunnen registratie- en diagnostische gegevens laten vastleggen in logboeken, zodat u deze kunt bekijken. Gebruikersinstructies voor het vastleggen van gegevens in logboeken vindt u in:
@@ -52,13 +52,13 @@ Gebruikers van beheerde apparaten kunnen registratie- en diagnostische gegevens 
 Deze problemen kunnen optreden op alle apparaatplatforms.
 
 ### <a name="device-cap-reached"></a>Apparaatlimiet bereikt
-**Probleem:** een gebruiker ontvangt tijdens de registratie een foutbericht op het apparaat, zoals het foutbericht **De bedrijfsportal is tijdelijk niet beschikbaar** op een iOS-apparaat, en DMPdownloader.log in Configuration Manager bevat de fout **DeviceCapReached**.
+**Probleem:** een gebruiker ontvangt tijdens de inschrijving een foutbericht, zoals **De bedrijfsportal is tijdelijk niet beschikbaar** en DMPdownloader.log in Configuration Manager bevat de fout **DeviceCapReached**.
 
 **Oplossing:**
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Controleer het aantal apparaten dat is ingeschreven en dat wordt toegestaan
 
-Controleer of aan de gebruiker niet meer dan het maximale aantal apparaten is toegewezen door de volgende stappen uit te voeren:
+Voer de volgende stappen uit om te controleren of aan de gebruiker niet meer dan het maximale aantal apparaten is toegewezen:
 
 1. Kies in Intune **Apparaatinschrijving** > **Inschrijvingsbeperkingen** > **Apparaatlimietbeperkingen**. Noteer de waarde in de kolom **Apparaatlimiet**.
 
@@ -98,8 +98,8 @@ Om te voorkomen dat apparaatlimieten worden bereikt, moet u ervoor zorgen dat ve
 
 1.  Controleer of de MDM-instantie [op de juiste wijze is ingesteld](mdm-authority-set.md).
     
-2.  Controleer of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory door te controleren of de UPN van de gebruiker overeenkomt met de Active Directory-gegevens in de Office 365-portal.
-    Doe het volgende als de UPN niet overeenkomt met de Active Directory-gegevens:
+2.  Controleer of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory. U kunt controleren of de UPN van de gebruiker overeenkomt met de Active Directory-gegevens in de Office 365-portal.
+    Als de UPN niet overeenkomt met de Active Directory-gegevens, doet u het volgende:
 
     1.  Schakel DirSync uit op de lokale server.
 
@@ -121,7 +121,7 @@ Om te voorkomen dat apparaatlimieten worden bereikt, moet u ervoor zorgen dat ve
 
         -   Als u alle gebruikers wilt weergeven: `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   Als u specifieke gebruikers wilt weergeven, gebruikt u de volgende query waarbij %testuser1% staat voor username@domain.com voor de gebruiker die u wilt weergeven: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        -   Als u specifieke gebruikers wilt weergeven, gebruikt u de volgende query waarbij %testuser1% een tijdelijke aanduiding is voor username@domain.com voor de gebruiker die u wilt weergeven: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         Nadat u de query hebt opgesteld, kiest u **!Execute**.
         Wanneer de resultaten worden weergegeven, zoekt u naar de cloudgebruikers-id.  Als er geen id is gevonden, beschikt de gebruiker niet over een licentie om Intune te gebruiken.
@@ -132,10 +132,15 @@ Om te voorkomen dat apparaatlimieten worden bereikt, moet u ervoor zorgen dat ve
 **Oplossing:** verwijder in het [Office 365-beheercentrum](https://portal.office.com/) de speciale tekens uit de bedrijfsnaam en sla de bedrijfsgegevens op.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>U kunt zich niet aanmelden of apparaten registreren wanneer u meerdere geverifieerde domeinen hebt
-**Probleem:** als u een tweede geverifieerd domein toevoegt aan uw ADFS, kunnen gebruikers met het UPN-achtervoegsel (User Principal Name) van het tweede domein zich mogelijk niet aanmelden bij de portals of kunnen ze geen apparaten registreren.
+**Probleem:** dit probleem kan optreden wanneer u een tweede geverifieerd domein aan de ADFS toevoegt. Gebruikers met het UPN-achtervoegsel (User Principal Name) van het tweede domein kunnen zich mogelijk niet aanmelden bij de portals of apparaten inschrijven.
 
 
-<strong>Oplossing:</strong> Microsoft Office 365-klanten die gebruikmaken van eenmalige aanmelding (SSO) via AD FS 2.0 en meerdere domeinen op het hoogste niveau hebben voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com), moeten voor elk achtervoegsel een afzonderlijk exemplaar van AD FS 2.0 Federation Service implementeren. Er is nu een [updatepakket voor AD FS 2.0](http://support.microsoft.com/kb/2607496) dat kan worden gebruikt met de schakeloptie <strong>SupportMultipleDomain</strong> om de AD FS-server in te schakelen voor ondersteuning van dit scenario zonder extra AD FS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
+<strong>Oplossing:</strong> Microsoft Office 365-klanten moeten een afzonderlijke instantie van ADFS 2.0 Federation Service implementeren voor elk achtervoegsel als ze:
+- eenmalige aanmelding (SSO) gebruiken via ADFS 2.0, en
+- over meerdere domeinen op het hoogste niveau beschikken voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com).
+
+
+Een [updatepakket voor ADFS 2.0](http://support.microsoft.com/kb/2607496) kan worden gebruikt met de schakeloptie <strong>SupportMultipleDomain</strong> om de ADFS-server in te schakelen voor ondersteuning van dit scenario zonder extra ADFS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
 
 
 ## <a name="android-issues"></a>Problemen met Android
@@ -146,8 +151,8 @@ De volgende tabel bevat fouten die eindgebruikers mogelijk in Intune krijgen te 
 
 |Foutbericht|Probleem|Oplossing|
 |---|---|---|
-|**De IT-beheerder moet een licentie toewijzen voor toegang**<br>Uw IT-beheerder heeft u geen toegang gegeven voor het gebruik van deze app. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|Het apparaat kan niet worden ingeschreven omdat het gebruikersaccount de benodigde licentie niet heeft.|Voordat gebruikers hun apparaat kunnen inschrijven, moet de benodigde licentie aan hen zijn toegewezen. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de aangewezen Mobile Device Management-instantie. Als Intune bijvoorbeeld is aangewezen als de instantie om mobiele apparaten te beheren, maar er een licentie voor System Center 2012 R2 Configuration Manager wordt gebruikt, zien gebruikers deze fout.<br><br>Zie [Intune-licenties toewijzen aan uw gebruikersaccounts](/intune/licenses-assign) voor meer informatie.
-|**De IT-beheerder moet de MDM-instantie instellen**<br>Het lijkt erop dat uw IT-beheerder geen MDM-instantie heeft ingesteld. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|De Mobile Device Management-instantie is niet gedefinieerd in Intune.|De Mobile Device Management-instantie is niet aangewezen in Intune. Informatie over het [instellen van de instantie voor het beheer van mobiele apparaten](/intune/mdm-authority-set).|
+|**De IT-beheerder moet een licentie toewijzen voor toegang**<br>Uw IT-beheerder heeft u geen toegang verleend om deze app te gebruiken. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|Het apparaat kan niet worden ingeschreven omdat het account van de gebruiker niet de benodigde licentie heeft.|Voordat gebruikers hun apparaat kunnen inschrijven, moet de benodigde licentie aan hen zijn toegewezen. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de Mobile Device Management-instantie. Ze krijgen deze fout bijvoorbeeld te zien als aan de twee volgende voorwaarden wordt voldaan:<ol><li>Intune is ingesteld als de Mobile Device Management-instantie</li><li>Ze gebruiken een System Center 2012 R2 Configuration Manager-licentie.</li></ol>Zie [Intune-licenties toewijzen aan uw gebruikersaccounts](/intune/licenses-assign) voor meer informatie.|
+|**De IT-beheerder moet de MDM-instantie instellen**<br>Het lijkt erop dat uw IT-beheerder geen MDM-instantie heeft ingesteld. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|De Mobile Device Management-instantie is niet gedefinieerd.|De Mobile Device Management-instantie is niet ingesteld in Intune. Informatie over het [instellen van de instantie voor het beheer van mobiele apparaten](/intune/mdm-authority-set).|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Apparaten kunnen niet inchecken bij de Intune-service en worden in de Intune-beheerconsole weergegeven als Niet in orde
@@ -157,7 +162,7 @@ De volgende tabel bevat fouten die eindgebruikers mogelijk in Intune krijgen te 
 - Wordt voor deze apparaten in de beheerconsole de Beheerstatus **Niet in orde** weergegeven.
 - Gebruikers die worden beschermd door beleid voor voorwaardelijke toegang hebben mogelijk geen toegang meer tot bedrijfsbronnen.
 
-Samsung heeft bevestigd dat de Samsung Smart Manager-software, die wordt geleverd op sommige Samsung-apparaten, de Intune bedrijfsportal en de bijbehorende onderdelen kan deactiveren. Wanneer de bedrijfsportal is gedeactiveerd, kan deze niet op de achtergrond worden uitgevoerd en kan deze geen contact maken met de Intune-service.
+Samsung Smart Manager-software, die wordt geleverd op sommige Samsung-apparaten, kan de Intune-bedrijfsportal en de onderdelen ervan deactiveren. Wanneer de bedrijfsportal is gedeactiveerd, kan deze niet op de achtergrond worden uitgevoerd en kan deze geen contact maken met de Intune-service.
 
 **Oplossing 1:**
 
@@ -168,7 +173,7 @@ Laat gebruikers de bedrijfsportal-app handmatig starten. Zodra de app opnieuw is
 
 **Oplossing 2:**
 
-Vertel uw gebruikers om een upgrade naar Android 6.0 uit te voeren. Het deactiveringsprobleem komt niet voor op Android 6.0-apparaten. Als gebruikers willen controleren of een update beschikbaar is, gaan deze naar **Instellingen** > **Apparaat** > **Updates handmatig downloaden** en volgen ze de aanwijzingen op het apparaat.
+Vertel uw gebruikers om een upgrade naar Android 6.0 uit te voeren. Het deactiveringsprobleem komt niet voor op Android 6.0-apparaten. Als u wilt controleren of een update beschikbaar is, gaat u naar **Instellingen** > **Apparaat** > **Updates handmatig downloaden** en volgt u de aanwijzingen op het apparaat.
 
 **Oplossing 3:**
 
@@ -206,13 +211,15 @@ Als oplossing 2 niet werkt, laat u gebruikers de volgende stappen uitvoeren om i
 
 1.  Controleer of er een juiste licentie aan de gebruiker is toegewezen voor de versie van de Intune-service die u gebruikt.
 
-2.  Controleer of het apparaat niet al is ingeschreven met een andere MDM-provider of dat er voor het apparaat niet al een beheerprofiel is geïnstalleerd.
+2.  Controleer of het apparaat niet al is ingeschreven bij een andere MDM-provider.
 
-3.  Controleer of Chrome for Android de is zijn en of cookies zijn ingeschakeld.
+3. Controleer of op het apparaat niet al een beheerprofiel is geïnstalleerd.
+
+4.  Controleer of Chrome for Android de is zijn en of cookies zijn ingeschakeld.
 
 ### <a name="android-certificate-issues"></a>Problemen met Android-certificaten
 
-**Probleem**: gebruikers ontvangen het volgende bericht op een apparaat: *U kunt u niet aanmelden omdat een vereist certificaat ontbreekt op het apparaat.*
+**Probleem**: gebruikers ontvangen het volgende bericht op hun apparaat: *U kunt u niet aanmelden omdat een vereist certificaat ontbreekt op uw apparaat.*
 
 **Oplossing 1**:
 
@@ -220,7 +227,7 @@ De gebruiker kan wellicht het ontbrekende certificaat ophalen door de instructie
 
 **Oplossing 2**:
 
-Als gebruikers nog steeds de fout voor het ontbrekende certificaat te zien krijgen nadat ze hun bedrijfsreferenties hebben ingevoerd en worden omgeleid voor federatieve aanmelding, is het mogelijk dat er een tussencertificaat op uw AD FS-server (Active Directory Federation Services) ontbreekt.
+Nadat gebruikers hun zakelijke referenties hebben ingevoerd en zijn omgeleid voor federatieve aanmelding, krijgen ze mogelijk nog steeds het foutbericht voor een ontbrekend certificaat te zien. In dat geval betekent de fout mogelijk dat er een tussencertificaat ontbreekt op uw ADFS-server (Active Directory Federation Services)
 
 De certificaatfout treedt op omdat er voor Android-apparaten tussencertificaten moeten worden opgenomen in een [Hallo van een SSL-server](https://technet.microsoft.com/library/cc783349.aspx). Momenteel verzendt een standaard AD FS-server of WAP - AD FS-proxyserver alleen het AD FS-service SSL-certificaat in de Hallo-reactie van de SSL-server op een Hallo van een SSL-client.
 
@@ -232,7 +239,7 @@ Als u dit probleem wilt oplossen, importeert u als volgt de certificaten in het 
 4.  Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
 5.  Kies voor elk bovenliggend certificaat de optie **Certificaat weergeven**.
 6.  Kies **Details** > **Kopiëren naar bestand...**.
-7.  Volg de aanwijzingen in de wizard om de openbare sleutel van het bovenliggende certificaat te exporteren of op te slaan in de gewenste bestandslocatie.
+7.  Volg de aanwijzingen in de wizard om de openbare sleutel van het bovenliggende certificaat te exporteren of op te slaan op de bestandslocatie van uw keuze.
 8.  Klik met de rechtermuisknop op **Certificaten** > **Alle taken** > **Importeren**.
 9.  Volg de aanwijzingen van de wizard om de bovenliggende certificaten te importeren in **Lokale computer\Persoonlijk\Certificaten**.
 10. Start de AD FS-servers opnieuw op.
@@ -256,16 +263,16 @@ Als het servercertificaat goed is geïnstalleerd, worden er allemaal vinkjes wee
 De volgende tabel bevat fouten die eindgebruikers mogelijk in Intune krijgen te zien tijdens het registreren van een iOS-apparaat.
 
 |Foutbericht|Probleem|Oplossing|
-|-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------------|-----|----------|
 |NoEnrollmentPolicy|Geen registratiebeleid gevonden|Controleer of alle vereisten voor registratie zijn geconfigureerd, zoals het Apple Push Notification Service-certificaat (APNs) en of iOS als platform is ingeschakeld. Zie [iOS- en Mac-apparaatbeheer instellen](ios-enroll.md) voor instructies.|
 |DeviceCapReached|Er zijn al te veel mobiele apparaten geregistreerd.|De gebruiker moet een van de momenteel geregistreerde mobiele apparaten verwijderen uit de bedrijfsportal voordat een ander mobiel apparaat kan worden geregistreerd. Zie de instructies voor het type apparaat dat u gebruikt: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />|De Apple Push Notification Service (APNs) biedt een kanaal om ingeschreven iOS-apparaten te bereiken. Als de stappen om een APNs-certificaat te verkrijgen, niet zijn uitgevoerd of als het APNs-certificaat is verlopen, mislukken pogingen tot registratie en wordt dit bericht weergegeven.<br /><br />Lees de informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](users-add.md) en [Gebruikers en apparaten organiseren](groups-add.md).|
-|AccountNotOnboarded|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />|De Apple Push Notification Service (APNs) biedt een kanaal om ingeschreven iOS-apparaten te bereiken. Als de stappen om een APNs-certificaat te verkrijgen, niet zijn uitgevoerd of als het APNs-certificaat is verlopen, mislukken pogingen tot registratie en wordt dit bericht weergegeven.<br /><br />Zie [iOS- en Mac-beheer instellen met Microsoft Intune](ios-enroll.md) voor meer informatie.|
-|DeviceTypeNotSupported|Mogelijk heeft de gebruiker geprobeerd een ander apparaat dan een iOS-apparaat te registreren. Het type mobiele apparaat dat u probeert te registreren, wordt niet ondersteund.<br /><br />Controleer of iOS-versie 8.0 of hoger op het apparaat wordt uitgevoerd.<br /><br />|Controleer of iOS-versie 8.0 of hoger op het apparaat van de gebruiker wordt uitgevoerd.|
-|UserLicenseTypeInvalid|Het apparaat kan niet worden geregistreerd, omdat het account van de gebruiker nog geen lid is van een vereiste gebruikersgroep.<br /><br />|Gebruikers die hun apparaten willen registreren, moeten lid zijn van de juiste gebruikersgroep. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de aangewezen Mobile Device Management-instantie. Als Intune bijvoorbeeld is aangewezen als de instantie om mobiele apparaten te beheren, maar er een licentie voor System Center 2012 R2 Configuration Manager wordt gebruikt, zien gebruikers deze fout.<br /><br />Zie de volgende artikelen voor meer informatie:<br /><br />Zie [iOS- en Mac-beheer instellen met Microsoft Intune](ios-enroll.md) en informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](users-add.md) en [Gebruikers en apparaten organiseren](groups-add.md).|
-|MdmAuthorityNotDefined|De Mobile Device Management-instantie is niet gedefinieerd in Intune.<br /><br />|De Mobile Device Management-instantie is niet aangewezen in Intune.<br /><br />Lees artikel 1 in de sectie 'Stap 6: mobiele apparaten registreren en een app installeren' in [Aan de slag met een evaluatieversie van Microsoft Intune van 30 dagen](free-trial-sign-up.md).|
+|APNSCertificateNotValid|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />|De Apple Push Notification Service (APNs) biedt een kanaal om contact te maken met ingeschreven iOS-apparaten. De inschrijving zal mislukken en dit bericht zal worden weergegeven als:<ul><li>De stappen voor het ophalen van een APNs-certificaat niet zijn uitgevoerd, of</li><li>Het APNs-certificaat is verlopen.</li></ul>Lees de informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](users-add.md) en [Gebruikers en apparaten organiseren](groups-add.md).|
+|AccountNotOnboarded|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />|De Apple Push Notification Service (APNs) biedt een kanaal om contact te maken met ingeschreven iOS-apparaten. De inschrijving zal mislukken en dit bericht zal worden weergegeven als:<ul><li>De stappen voor het ophalen van een APNs-certificaat niet zijn uitgevoerd, of</li><li>Het APNs-certificaat is verlopen.</li></ul>Zie [iOS- en Mac-beheer instellen met Microsoft Intune](ios-enroll.md) voor meer informatie.|
+|DeviceTypeNotSupported|Mogelijk heeft de gebruiker geprobeerd een ander apparaat dan een iOS-apparaat te registreren. Het type mobiele apparaat dat u probeert in te schrijven, wordt niet ondersteund.<br /><br />Controleer of iOS-versie 8.0 of hoger op het apparaat wordt uitgevoerd.<br /><br />|Controleer of iOS-versie 8.0 of hoger op het apparaat van de gebruiker wordt uitgevoerd.|
+|UserLicenseTypeInvalid|Het apparaat kan niet worden ingeschreven, omdat het account van de gebruiker nog geen lid is van een vereiste gebruikersgroep.<br /><br />|Gebruikers die hun apparaten willen registreren, moeten lid zijn van de juiste gebruikersgroep. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de Mobile Device Management-instantie. Ze krijgen deze fout bijvoorbeeld te zien als aan de twee volgende voorwaarden wordt voldaan:<ol><li>Intune is ingesteld als de Mobile Device Management-instantie</li><li>De gebruiker gebruikt een System Center 2012 R2 Configuration Manager-licentie.</li></ol>Zie de volgende artikelen voor meer informatie:<br /><br />Zie [iOS- en Mac-beheer instellen met Microsoft Intune](ios-enroll.md) en informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](users-add.md) en [Gebruikers en apparaten organiseren](groups-add.md).|
+|MdmAuthorityNotDefined|De Mobile Device Management-instantie is niet gedefinieerd.<br /><br />|De Mobile Device Management-instantie is niet ingesteld in Intune.<br /><br />Lees artikel 1 in de sectie 'Stap 6: mobiele apparaten registreren en een app installeren' in [Aan de slag met een evaluatieversie van Microsoft Intune van 30 dagen](free-trial-sign-up.md).|
 
-### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Apparaten zijn inactief of de beheerconsole kan er niet mee communiceren
+### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>Apparaten zijn inactief of de beheerconsole kan er niet mee communiceren
 **Probleem:** iOS-apparaten checken niet in bij de Intune-service. Apparaten moeten regelmatig worden ingecheckt bij de service om toegang te behouden tot beveiligde bedrijfsresources. Als apparaten niet worden ingecheckt:
 
 - Kunnen ze geen beleid, apps en externe opdrachten ontvangen van de Intune-service.
@@ -274,7 +281,7 @@ De volgende tabel bevat fouten die eindgebruikers mogelijk in Intune krijgen te 
 
 **Oplossing:** deel de volgende oplossingen met uw eindgebruikers om ervoor te zorgen dat ze weer toegang kunnen verkrijgen tot bedrijfsresources.
 
-Wanneer gebruikers aan de slag gaan met de iOS-bedrijfsportal-app, wordt het gemeld als het apparaat geen contact meer heeft met Intune. Als er wordt gedetecteerd dat er geen contact is, wordt automatisch geprobeerd om te synchroniseren met Intune om opnieuw verbinding te maken. Gebruikers krijgen dan de melding **Poging tot synchronisatie...** te zien.
+Wanneer gebruikers aan de slag gaan met de iOS-bedrijfsportal-app, wordt het gemeld als het apparaat geen contact meer heeft met Intune. Als er wordt gedetecteerd dat er geen contact is, wordt automatisch geprobeerd om te synchroniseren met Intune om opnieuw verbinding te maken. Gebruikers krijgen dan de melding **Er wordt geprobeerd om te synchroniseren...** te zien.
 
   ![De melding Poging tot synchronisatie...](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
@@ -293,15 +300,17 @@ Als gebruikers het probleem willen oplossen, moeten ze de knop **Instellen** sel
 Na het inschrijven krijgen de apparaten weer een goede status en is er weer toegang mee te verkrijgen tot de bedrijfsresources.
 
 ### <a name="verify-ws-trust-13-is-enabled"></a>Controleren of WS-Trust 1.3 is ingeschakeld
-**Probleem** iOS-apparaten van het Device Enrollment Program (DEP) kunnen niet worden ingeschreven
+**Probleem:** iOS-apparaten van het Device Enrollment Program (DEP) kunnen niet worden ingeschreven
 
-Voor de inschrijving van DEP-apparaten met gebruikersaffiniteit moet de gebruikersnaam/het gemengde eindpunt voor WS-Trust 1.3 zijn ingeschakeld zodat gebruikerstokens kunnen worden aangevraagd. Dit eindpunt wordt standaard door Active Directory ingeschakeld. U kunt een lijst van ingeschakelde eindpunten ophalen met PowerShell-cmdlet Get-AdfsEndpoint en vervolgens naar het eindpunt trust/13/UsernameMixed zoeken. Bijvoorbeeld:
+Voor het inschrijven van DEP-apparaten met gebruikersaffiniteit moet het WS-Trust 1.3 Username/Mixed-eindpunt zijn ingeschakeld om gebruikerstokens aan te vragen. Dit eindpunt wordt standaard door Active Directory ingeschakeld. U kunt een lijst van ingeschakelde eindpunten ophalen met de PowerShell-cmdlet Get-AdfsEndpoint en vervolgens naar het eindpunt trust/13/UsernameMixed zoeken. Bijvoorbeeld:
 
       Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
 
 Zie de [documentatie over Get-AdfsEndpoint](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint) voor meer informatie.
 
-Zie [Aanbevolen procedures voor het beveiligen van Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs) voor meer informatie. Als u extra hulp nodig hebt om te bepalen of de gebruikersnaam/het gemengde eindpunt voor WS-Trust 1.3 is ingeschakeld bij uw provider voor identiteitsfederaties, neemt u contact op met Microsoft Ondersteuning als u gebruikmaakt van AD FS of met uw externe identiteitsleverancier.
+Zie [Aanbevolen procedures voor het beveiligen van Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs) voor meer informatie. Doe het volgende om te bepalen of WS-Trust 1.3 Username/Mixed is ingeschakeld in uw provider voor identiteitsfederaties:
+- Neem contact op met Microsoft Ondersteuning als u ADFS gebruikt
+- Neem contact op met de externe leverancier van identiteiten.
 
 
 ### <a name="profile-installation-failed"></a>De profielinstallatie is mislukt
@@ -311,17 +320,19 @@ Zie [Aanbevolen procedures voor het beveiligen van Active Directory Federation S
 
 1.  Controleer of er een juiste licentie aan de gebruiker is toegewezen voor de versie van de Intune-service die u gebruikt.
 
-2.  Controleer of het apparaat niet al is ingeschreven met een andere MDM-provider of dat er voor het apparaat niet al een beheerprofiel is geïnstalleerd.
+2.  Controleer of het apparaat niet al is ingeschreven bij een andere MDM-provider.
 
-3.  Ga naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en probeer het gevraagde profiel te installeren.
+3. Controleer of op het apparaat niet al een beheerprofiel is geïnstalleerd.
 
-4.  Controleer of Safari for iOS de standaardbrowser is en of cookies zijn ingeschakeld.
+4.  Ga naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en probeer het gevraagde profiel te installeren.
+
+5.  Controleer of Safari for iOS de standaardbrowser is en of cookies zijn ingeschakeld.
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Het geregistreerde iOS-apparaat wordt niet weergegeven in de console wanneer u System Center Configuration Manager met Intune gebruikt
-**Probleem:** een gebruiker registreert zijn of haar iOS-apparaat, maar het apparaat wordt niet weergegeven in de beheerconsole van Configuration Manager. Op het apparaat wordt niet aangegeven dat het is geregistreerd. Mogelijke oorzaken:
+**Probleem:** een gebruiker schrijft zijn of haar iOS-apparaat in, maar het apparaat wordt niet weergegeven in de beheerconsole van Configuration Manager. Op het apparaat wordt niet aangegeven dat het is ingeschreven. Mogelijke oorzaken:
 
 - Er is geen communicatie tussen de Microsoft Intune-connector in de Configuration Manager-site en de Intune-service.
-- Berichten van de Intune-service worden niet verwerkt met het onderdeel voor beheer van gegevensdetectie (ddm) of het onderdeel voor statusbeheer (statmgr).
+- Berichten van de Intune-service worden niet verwerkt met het onderdeel voor gegevensdetectiebeheer (ddm) of het onderdeel voor statusbeheer (statmgr).
 - Misschien hebt u het MDM-certificaat gedownload vanuit het ene account en het vervolgens gebruikt in een ander account.
 
 
@@ -334,11 +345,61 @@ Zie [Aanbevolen procedures voor het beveiligen van Active Directory Federation S
 Binnenkort worden voorbeelden toegevoegd met betrekking tot de informatie waarnaar u moet zoeken in deze logboekbestanden.
 
 
+### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>Het iOS-apparaat van de gebruiker is meer dan 10 minuten vastgelopen op een scherm voor inschrijving
+
+**Probleem**: een apparaat dat wordt ingeschreven, kan op een van de volgende twee schermen vastlopen:
+- In afwachting van definitieve configuratie van 'Microsoft'
+- De app voor begeleide toegang is niet beschikbaar. Neem contact op met de beheerder.
+
+Dit probleem kan zich voordoen als:
+- Er zich een tijdelijke storing voordoet voor Apple-services, of
+- De iOS-inschrijving zo is ingesteld dat VPP-tokens worden gebruikt, zoals wordt weergegeven in de tabel, maar er iets mis is met het VPP-token.
+
+| Inschrijvingsinstellingen | Waarde |
+| ---- | ---- |
+| Platform | iOS |
+| Gebruikersaffiniteit | Inschrijven met gebruikersaffiniteit |
+|Verifiëren met de bedrijfsportal in plaats van met de Apple-configuratieassistent | Ja |
+| De bedrijfsportal installeren met VPP | Token gebruiken: adres van token |
+| De bedrijfsportal uitvoeren in de modus voor één app tot de verificatie | Ja |
+
+**Oplossing**: als u het probleem wilt oplossen, moet u:
+1. Bepalen of er iets mis is met het VPP-token en dit oplossen.
+2. Vaststellen welke apparaten zijn geblokkeerd.
+3. De betreffende apparaten wissen.
+4. Laat de gebruiker de inschrijvingsprocedure opnieuw starten.
+
+#### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>Bepalen of er iets mis is met het VPP-token
+1. Ga naar **Intune** > **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > tokennaam > **Profielen** > profielnaam > **Beheren** > **Eigenschappen**.
+2. Controleer de eigenschappen om na te gaan of een van de volgende fouten optreden:
+    - Dit token is verlopen.
+    - Dit token is niet opgenomen in de bedrijfsportallicenties.
+    - Dit token wordt gebruikt door een andere service.
+    - Dit token wordt gebruikt door een andere tenant.
+    - Dit token is verwijderd.
+3. Los de problemen voor het token op.
+
+#### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>Vaststellen welke apparaten zijn geblokkeerd door het VPP-token
+1. Ga naar **Intune** > **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > naam van token > **Apparaten**.
+2. Filter de kolom **Profielstatus** op **Geblokkeerd**.
+3. Noteer de serienummers van alle apparaten die zijn **geblokkeerd**.
+
+#### <a name="remotely-wipe-the-blocked-devices"></a>De geblokkeerde apparaten op afstand wissen
+Nadat u de problemen met het VPP-token hebt opgelost, moet u de geblokkeerde apparaten wissen.
+1. Ga naar **Intune** > **Apparaten** > **Alle apparaten** > **Kolommen** > **Serienummer** > **Toepassen**. 
+2. Kies in de lijst **Alle apparaten** elk apparaat dat is geblokkeerd en kies vervolgens **Wissen** > **Ja**.
+
+#### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Laat de gebruikers de inschrijvingsprocedure opnieuw starten
+Nadat u de geblokkeerde apparaten hebt gewist, kunt u de gebruikers de inschrijvingsprocedure opnieuw laten starten.
+
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemen bij het gebruik van System Center Configuration Manager met Intune
 ### <a name="mobile-devices-disappear"></a>Mobiele apparaten verdwijnen
-**Probleem:** nadat een mobiel apparaat bij Configuration Manager is ingeschreven, verdwijnt het uit de verzameling van mobiele apparaten, maar het apparaat heeft nog steeds een beheerprofiel en wordt vermeld in CSS Gateway.
+**Probleem:** nadat een mobiel apparaat bij Configuration Manager is ingeschreven, verdwijnt het uit de verzameling van mobiele apparaten. Het apparaat heeft echter nog steeds een beheerprofiel en wordt vermeld in CSS Gateway.
 
-**Oplossing:** dit probleem kan optreden omdat er een aangepast proces actief is dat apparaten verwijdert die niet aan een domein zijn toegevoegd, of omdat de gebruiker het apparaat uit het abonnement heeft verwijderd. Als u wilt nagaan door welk gebruikersaccount of proces het apparaat uit de Configuration Manager-console is verwijderd, voert u de volgende stappen uit.
+**Oplossing:** dit probleem kan om de volgende reden optreden:
+- U gebruikt een aangepaste procedure voor het verwijderen van apparaten die niet lid zijn van een domein, of 
+- De gebruiker heeft het apparaat uit het abonnement verwijderd.
+Als u wilt nagaan door welk gebruikersaccount of proces het apparaat uit de Configuration Manager-console is verwijderd, voert u de volgende stappen uit.
 
 #### <a name="check-how-device-was-removed"></a>Controleer hoe het apparaat is verwijderd
 
@@ -352,29 +413,26 @@ Binnenkort worden voorbeelden toegevoegd met betrekking tot de informatie waarna
 
     ![Schermopname voor diagnose van apparaatverwijdering](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-5.  Controleer of er geen geplande taak, script of ander proces voor Configuration Manager voorkomt waarmee apparaten die niet tot een domein behoren, mobiele apparaten of gerelateerde apparaten worden gewist.
-
-
-
+5.  Controleer of er geen geplande taak, script of ander proces voor Configuration Manager voorkomt waarmee apparaten die niet tot een domein behoren, mobiele apparaten of gerelateerde apparaten, worden gewist.
 
 ### <a name="other-ios-enrollment-errors"></a>iOS-registratiefouten
 U vindt een lijst met iOS-inschrijvingsfouten in onze documentatie in [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) (Problemen met iOS-apparaatinschrijving in Microsoft Intune oplossen).
 
 ## <a name="pc-issues"></a>Pc-problemen
 
-
 |Foutbericht|Probleem|Oplossing|
 |---|---|---|
-|**De IT-beheerder moet een licentie toewijzen voor toegang**<br>Uw IT-beheerder heeft u geen toegang gegeven voor het gebruik van deze app. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|Het apparaat kan niet worden ingeschreven omdat het gebruikersaccount de benodigde licentie niet heeft.|Voordat gebruikers hun apparaat kunnen inschrijven, moet de benodigde licentie aan hen zijn toegewezen. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de aangewezen Mobile Device Management-instantie. Als Intune bijvoorbeeld is aangewezen als de instantie om mobiele apparaten te beheren, maar er een licentie voor System Center 2012 R2 Configuration Manager wordt gebruikt, zien gebruikers deze fout.<br>Zie [Intune-licenties toewijzen aan uw gebruikersaccounts](https://docs.microsoft.com/intune/licenses-assign) voor meer informatie.|
+|**De IT-beheerder moet een licentie toewijzen voor toegang**<br>Uw IT-beheerder heeft u geen toegang verleend om deze app te gebruiken. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|Het apparaat kan niet worden ingeschreven omdat het account van de gebruiker niet de benodigde licentie heeft.|Voordat gebruikers hun apparaat kunnen inschrijven, moet de benodigde licentie aan hen zijn toegewezen. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de Mobile Device Management-instantie. Ze krijgen deze fout bijvoorbeeld te zien als aan de twee volgende voorwaarden wordt voldaan: <ol><li>Intune is ingesteld als Mobile Device Management-instantie</li><li>De gebruiker gebruikt een System Center 2012 R2 Configuration Manager-licentie.</li></ol>Zie [Intune-licenties toewijzen aan uw gebruikersaccounts](https://docs.microsoft.com/intune/licenses-assign) voor meer informatie.|
 
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>De computer is al geregistreerd: fout hr 0x8007064c
 **Probleem:** de registratie is mislukt met de fout **De computer is al geregistreerd**. In het registratielogboek wordt de fout **hr 0x8007064c** vermeld.
 
-Dit komt mogelijk doordat de computer eerder is geregistreerd of een gekloonde installatiekopie bevat van een computer die is geregistreerd. Het accountcertificaat van het vorige account staat nog op de computer.
-
-
+Deze fout kan optreden omdat de computer:
+- Eerder is ingeschreven, of
+- De gekloonde installatiekopie bevat van een computer die al is ingeschreven.
+Het accountcertificaat van het vorige account staat nog op de computer.
 
 **Oplossing:**
 
@@ -397,20 +455,20 @@ Dit komt mogelijk doordat de computer eerder is geregistreerd of een gekloonde i
 |Foutcode|Mogelijk probleem|Voorgestelde oplossing|
 |--------------|--------------------|----------------------------------------|
 |0x80CF0437 |De klok op de clientcomputer is niet ingesteld op de juiste tijd.|Zorg ervoor dat de klok en de tijdzone op de clientcomputer zijn ingesteld op de juiste tijd en tijdzone.|
-|0x80240438, 0x80CF0438, 0x80CF402C|Kan geen verbinding maken met de Intune-service. Controleer de proxy-instellingen voor de client.|Controleer of de proxyconfiguratie op de clientcomputer door Intune wordt ondersteund en of de clientcomputer internettoegang heeft.|
-|0x80240438, 0x80CF0438|Proxy-instellingen in Internet Explorer en lokaal systeem zijn niet geconfigureerd.|Kan geen verbinding maken met de Intune-service. Controleer de proxy-instellingen van de client en bevestig dat de proxyconfiguratie op de clientcomputer door Intune wordt ondersteund, en dat de clientcomputer internettoegang heeft.|
+|0x80240438, 0x80CF0438, 0x80CF402C|Er kan geen verbinding worden gemaakt met de Intune-service. Controleer de proxy-instellingen voor de client.|Controleer of Intune de proxyconfiguratie op de clientcomputer ondersteunt. Controleer of de clientcomputer internettoegang heeft.|
+|0x80240438, 0x80CF0438|De proxy-instellingen in Internet Explorer en Lokaal systeem zijn niet geconfigureerd.|Er kan geen verbinding worden gemaakt met de Intune-service. Controleer de proxy-instellingen voor de clientcomputer. Controleer of Intune de proxyconfiguratie op de clientcomputer ondersteunt. Controleer of de clientcomputer internettoegang heeft.|
 |0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|Inschrijvingspakket is verouderd.|Download en installeer het huidige clientsoftwarepakket via de beheerwerkruimte.|
-|0x80043002, 0x80CF3002|Account is in onderhoudsmodus.|U kunt geen nieuwe clientcomputers inschrijven wanneer de account in onderhoudsmodus is. Meld u aan bij uw account om uw accountinstellingen weer te geven.|
+|0x80043002, 0x80CF3002|Account is in onderhoudsmodus.|U kunt geen nieuwe clientcomputers inschrijven wanneer het account in onderhoudsmodus is. Meld u aan bij uw account om uw accountinstellingen weer te geven.|
 |0x80043003, 0x80CF3003|Account is verwijderd.|Controleer of uw account en abonnement op Intune nog actief zijn. Meld u aan bij uw account om uw accountinstellingen weer te geven.|
 |0x80043005, 0x80CF3005|De clientcomputer is buiten gebruik gesteld.|Wacht enkele uren, verwijder oudere versies van de clientsoftware van de computer en voer de installatie van de clientsoftware opnieuw uit.|
-|0x80043006, 0x80CF3006|Het maximum aantal toegestane seats voor het account is bereikt.|Uw organisatie moet extra plaatsen aanschaffen voordat u meer clientcomputers in de service kunt inschrijven.|
-|0x80043007, 0x80CF3007|Kan het certificaatbestand niet vinden in dezelfde map als het installatieprogramma.|Pak alle bestanden uit voordat u de installatie start. Wijzig of verplaats de uitgepakte bestanden niet: alle bestanden moeten aanwezig zijn in dezelfde map, anders mislukt de installatie.|
+|0x80043006, 0x80CF3006|Het maximum aantal toegestane seats voor het account is bereikt.|Uw organisatie moet extra seats aanschaffen voordat u meer clientcomputers bij de service kunt inschrijven.|
+|0x80043007, 0x80CF3007|Kan het certificaatbestand niet vinden in dezelfde map als het installatieprogramma.|Pak alle bestanden uit voordat u de installatie start. Wijzig niet de naam van de uitgepakte bestanden en verplaats deze niet: alle bestanden moeten aanwezig zijn in dezelfde map, anders mislukt de installatie.|
 |0x8024D015, 0x00240005, 0x80070BC2, 0x80070BC9, 0x80CFD015|De software kan niet worden geïnstalleerd omdat een herstart van de client in behandeling is.|Start de computer opnieuw op en voer de installatie van de clientsoftware opnieuw uit.|
 |0x80070032|Een of meer vereisten voor het installeren van de clientsoftware zijn niet gevonden op de clientcomputer.|Zorg ervoor dat alle vereiste updates zijn geïnstalleerd op de clientcomputer en voer de installatie van de clientsoftware opnieuw uit.|
 |0x80043008, 0x80CF3008|De Microsoft Online Management Updates-service kan niet worden gestart.|Neem contact op met Microsoft Ondersteuning, zoals wordt beschreven in [Ondersteuning voor Microsoft Intune krijgen](get-support.md).|
 |0x80043009, 0x80CF3009|De clientcomputer is al ingeschreven bij de service.|U moet de clientcomputer buiten gebruik stellen voordat u deze opnieuw in de service kunt inschrijven.|
-|0x8004300B, 0x80CF300B|Het installatiepakket voor de clientsoftware kan niet worden uitgevoerd omdat de versie van Windows die op de client wordt uitgevoerd, niet wordt ondersteund.|Intune biedt geen ondersteuning voor de versie van Windows die wordt uitgevoerd op de clientcomputer.|
-|0xAB2|Windows Installer heeft geen toegang tot VBScript-runtime voor aangepaste actie.|Deze fout wordt veroorzaakt door een aangepaste actie die is gebaseerd op DLL-bestanden. Wanneer u problemen met de DLL oplost, moet u mogelijk gebruikmaken van de hulpprogramma's die worden beschreven in [Microsoft Ondersteuning KB198038: Useful Tools for Package and Deployment Issues (Nuttige hulpprogramma's voor pakket- en implementatieproblemen)](https://support.microsoft.com/kb/198038).|
+|0x8004300B, 0x80CF300B|Het installatiepakket voor de clientsoftware kan niet worden uitgevoerd omdat de versie van Windows die op de client wordt uitgevoerd niet wordt ondersteund.|Intune biedt geen ondersteuning voor de versie van Windows die op de clientcomputer wordt uitgevoerd.|
+|0xAB2|Windows Installer heeft geen toegang tot de VBScript-runtime voor een aangepaste actie.|Deze fout wordt veroorzaakt door een aangepaste actie die is gebaseerd op DLL-bestanden. Wanneer u problemen met de DLL oplost, moet u mogelijk gebruikmaken van de hulpprogramma's die worden beschreven in [Microsoft Ondersteuning KB198038: Useful Tools for Package and Deployment Issues (Nuttige hulpprogramma's voor pakket- en implementatieproblemen)](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|De verbinding met het service-eindpunt is beëindigd.|Het proefaccount of het betaalde account is onderbroken. Maak een nieuw proefaccount of betaald account en schrijf u opnieuw in.|
 
 

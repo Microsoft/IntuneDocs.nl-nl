@@ -3,10 +3,10 @@ title: Ondersteuning voor Microsoft Intune krijgen
 titlesuffix: Microsoft Intune
 description: Online- en telefonische ondersteuning verkrijgen voor betaalde Microsoft Intune-abonnementen en proefabonnementen.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08d5e94155586140ac087b9ad9d24bdbd078f59b
-ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
+ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843137"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187781"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen
 
@@ -30,17 +30,27 @@ Microsoft biedt wereldwijde technische, voorverkoop-, facturerings- en abonnemen
 
 >[!IMPORTANT]
 > Neem voor technische ondersteuning voor externe producten die met Intune werken (zoals SaaSwedo, Cisco of Lookout), contact op met de leverancier van dat product. Open pas een ondersteuningsaanvraag voor Intune als u zeker weet dat het andere product juist is geconfigureerd.
+> 
+> Raadpleeg de sectie [Probleemoplossing](help-desk-operators.md) in de Intune-documentatie voor informatie over het oplossen van problemen met betrekking tot Microsoft Intune.
+
+Als IT-beheerder kunt u de optie **Help + Ondersteuning** gebruiken om vanuit Azure Portal een online-ondersteuningsticket voor Intune in te dienen. Als u een ondersteuningsticket wilt maken, moet een van de volgende [beheerdersrollen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) aan uw account zijn toegewezen: 
+
+- Intune-beheerder 
+- Algemeen beheerder 
+- Servicebeheerder  
+
+
+## <a name="get-context-sensitive-help"></a>Contextgevoelige Help krijgen 
+Nadat u zich hebt aangemeld bij Azure Portal en Intune hebt geopend, kunt u vanaf elke Intune-blade in Azure Portal **Help en ondersteuning** selecteren om oplossingen voor algemene problemen voor dat gebied van Intune weer te geven. 
+
+Als de algemene oplossingen niet helpen, kunt u een **ondersteuningsaanvraag** selecteren om een nieuwe ondersteuningsaanvraag te maken waarmee de blade **Basisprincipes** van de Azure-pagina *Help + ondersteuning* wordt geopend. Als u door wilt gaan en een ondersteuningsticket wilt maken, gaat u naar *stap 3* in de volgende procedure, [Een online-ondersteuningsticket maken](#create-an-online-support-ticket). 
 
 ## <a name="create-an-online-support-ticket"></a>Een onlineondersteuningsticket maken
 
-Als IT-beheerder kunt u vanuit Azure Portal een ondersteuningsticket maken door de volgende stappen uit te voeren:
->[!NOTE]
->U moet een Intune-servicebeheerder of globale beheerder zijn om een onlineondersteuningsticket te maken. Zie [Beheerdersrollen toewijzen](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) voor meer informatie.
-1. Meld u aan bij Azure Portal (<https://portal.azure.com>) met de referenties van een Intune-beheerder. Kies het pictogram de <strong>?</strong> in de rechterbovenhoek van de portal en selecteer vervolgens <strong>Help + ondersteuning</strong> om naar de gelijknamige[Azure Help + ondersteuning](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)pagina te gaan.
-
+1. Meld u aan bij Azure Portal (<https://portal.azure.com>) met de referenties van een Intune-beheerder. Kies de <strong>?</strong> in de rechterbovenhoek van de portal en selecteer vervolgens <strong>Help + ondersteuning</strong> om naar de gelijknamige[Azure Help + ondersteuning](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)pagina te gaan.
     ![Schermopname van het Help-pictogram in Azure Portal met de koppeling Help + ondersteuning gemarkeerd](./media/azure-get-support.png)
 
-2. Selecteer **Nieuwe ondersteuningsaanvraag** op de pagina Help en ondersteuning van Azure.
+2. Selecteer **Nieuwe ondersteuningsaanvraag** op de pagina *Help _+_ ondersteuning* van Azure.
 
     ![Schermopname van de pagina Help en ondersteuning in Azure Portal met de koppeling Nieuwe ondersteuningsaanvraag gemarkeerd](./media/azure-support-ticket-link.png)
 
@@ -72,7 +82,7 @@ Als IT-beheerder kunt u vanuit Azure Portal een ondersteuningsticket maken door 
    - **Tijd**
    - **Aanvullende gegevens**
 
-     Kies **Volgende**.
+   Kies **Volgende**.
 
 5. Geef**contactgegevens** op voor deze ondersteuningsaanvraag. Microsoft Ondersteuning gebruikt deze informatie om contact met u op te nemen.
 6. Kies **Maken** om uw ondersteuningsaanvraag te verzenden.
@@ -80,7 +90,15 @@ Als IT-beheerder kunt u vanuit Azure Portal een ondersteuningsticket maken door 
 >[!IMPORTANT]
 >Als u een vraag over facturering of abonnementen hebt, kunt u een aanvraag voor ondersteuning openen via het [Office-beheercentrum](https://portal.office.com/Support/SupportEntry.aspx).
 
+## <a name="view-support-requests"></a>Ondersteuningsaanvragen weergeven
+U kunt een ondersteuningsaanvraag weergeven in Azure Portal. Hiervoor doet u het volgende:
+
+1. Meld u aan bij Azure (<https://portal.azure.com>) met uw Intune-beheerdersreferenties en selecteer de <strong>?</strong> in de rechterbovenhoek van de portal en selecteer vervolgens <strong>Help + ondersteuning</strong> om naar de gelijknamige[Azure Help + ondersteuning](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)pagina te gaan.
+
+2. Op de pagina **Help + ondersteuning** kunt u de lijst met **Recente ondersteuningsaanvragen** weergeven en deze selecteren om meer details te zien.
+
 ## <a name="additional-resources"></a>Extra resources
 - [Contact opnemen met telefonische ondersteuning voor Microsoft Intune](phone-support-contact.md)
 - [Ondersteuning voor facturerings- en abonnementsbeheer](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Volumelicenties](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [Problemen met Intune oplossen](help-desk-operators.md)
