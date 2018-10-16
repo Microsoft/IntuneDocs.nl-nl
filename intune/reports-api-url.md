@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 10/09/2018
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05251e3aeb0c290a51c378f8c67f3d55149b63dc
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: c6709d68ce4bf847be3eb5cd5ae427db6d11aba8
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254498"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903587"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune-datawarehouse-API-eindpunt
 
@@ -46,7 +46,7 @@ Voor de URL voor Intune wordt de volgende notatie gebruikt:
 
 De URL bevat de volgende elementen:
 
-| Element | Voorbeeld | Description |
+| Element | Voorbeeld | Beschrijving |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | De basis-URL kan worden gevonden door de blade Datawarehouse-API in Azure Portal te bekijken. |
 | entiteitverzameling | dates | De naam van de OData-entiteitverzameling. Zie [Gegevensmodel](reports-ref-data-model.md) voor meer informatie over verzamelingen en entiteiten in het gegevensmodel. |
@@ -73,7 +73,7 @@ De huidige versie ondersteunt de volgende OData-queryparameters: `$filter, $orde
 > [!NOTE]
 > Bij de filtervoorbeelden wordt ervan uitgegaan dat het vandaag 21-2-2018 is.
 
-|                             Filter                             |           Prestatieoptimalisatie           |                                          Description                                          |
+|                             Filter                             |           Prestatieoptimalisatie           |                                          Beschrijving                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    Volledig                                      |    Gegevens retourneren met `DateKey` tussen 20180214 en 20180221.                                     |
 |    `$filter=DateKey eq 20180214`                                 |    Volledig                                      |    Gegevens retourneren met `DateKey` gelijk aan 20180214.                                                    |
