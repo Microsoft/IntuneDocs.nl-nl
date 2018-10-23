@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255253"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425152"
 ---
 # <a name="manage-software-updates-in-intune"></a>Software-updates beheren in Intune
 
@@ -34,7 +34,7 @@ Met behulp van Windows Update voor Bedrijven kunt u de updatebeheerervaring vere
   - Windows Insider &#8208; langzaam
   - Windows Insider vrijgeven 
       
-  Zie [Overzicht voor Windows als een Service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels) voor meer informatie over de beschikbare onderhoudskanalen.
+  Zie [Overzicht voor Windows als een Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels) voor meer informatie over de beschikbare onderhoudskanalen.
 - **Instellingen voor uitstel**: configureer instellingen voor het uitstellen van updates om de installatie van updates voor groepen apparaten uit te stellen. U kunt deze instellingen gebruiken voor een gefaseerde update-implementatie, zodat u de voortgang kunt controleren.
 - **Onderbreken**: stel de installatie van updates uit als u op enig moment tijdens de implementatie van de updates problemen ontdekt.
 - **Onderhoudsvenster**: configureer de tijden waarop de updates kunnen worden geïnstalleerd.

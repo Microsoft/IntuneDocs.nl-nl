@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb891b2a602cde4510953ce00c4e206d1135fce
-ms.sourcegitcommit: a89af1f0dad61320ab3e31cb64708f14514a5081
+ms.openlocfilehash: 83a231f41f5cf9d4488e86040c2d7e141f71d0a7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46300456"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424914"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>De wachtwoordcode van een apparaat opnieuw instellen of verwijderen via Intune
 
@@ -49,7 +49,6 @@ Voor Android-apparaten betekent dit dat het opnieuw instellen van wachtwoordcode
 | Android-apparaten waarop versie 7.x of eerder wordt uitgevoerd | Nee |
 | iOS | Nee |
 | macOS | Nee |
-| iOS | Nee |
 
 Als u een nieuwe wachtwoordcode voor het werkprofiel wilt maken, gebruikt u de actie Wachtwoordcode opnieuw instellen. Deze actie zorgt ervoor dat de wachtwoordcode opnieuw wordt ingesteld en een nieuwe, tijdelijke wachtwoordcode voor alleen het werkprofiel wordt gemaakt. 
 
