@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/27/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 58b157cfe639651aa65e8dfb510b857d0128589a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313788"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102120"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP met voorwaardelijke toegang in Intune inschakelen
 
@@ -89,6 +89,10 @@ Wanneer u eenmaal onboarding van een apparaat met het configuratiepakket hebt ui
 6. Configureer de gewenste instellingen:
 
   - **Type configuratiepakket van Windows Defender ATP-client**: selecteer **Onboarding uitvoeren** om het configuratiepakket toe te voegen aan het profiel. Selecteer **Offboarding uitvoeren** om configuratiepakket uit het profiel te verwijderen.
+  
+    > [!NOTE] 
+    > Als er een verbinding tot stand is gebracht met Windows Defender ATP, wordt **Onboarding** van het configuratieprofiel automatisch voor u uitgevoerd in Intune.
+  
   - **Delen van voorbeelden voor alle bestanden**: via **Inschakelen** staat u toe dat voorbeelden worden verzameld en gedeeld met Windows Defender ATP. Als u bijvoorbeeld een verdacht bestand ziet, kunt u het verzenden naar Windows Defender ATP voor grondige analyse. **Niet geconfigureerd**: eventuele voorbeelden voor het Windows Defender ATP worden niet gedeeld.
   - **Rapportagefrequentie telemetrie versnellen**: **schakel deze instelling in** zodat voor apparaten met een hoog risico vaker telemetrie naar de Windows Defender ATP-service wordt gerapporteerd.
 

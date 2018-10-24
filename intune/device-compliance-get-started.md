@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268903"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102052"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Aan de slag met apparaatnalevingsbeleid in Intune
 
@@ -153,7 +153,7 @@ U kunt nalevingsbeleid voor apparaten ook zonder voorwaardelijke toegang gebruik
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Nalevingsbeleid voor apparaten implementeren
 U kunt nalevingsbeleid implementeren voor gebruikers in gebruikersgroepen of apparaten in apparaatgroepen. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden alle apparaten van de gebruiker gecontroleerd op naleving.
 
-De **Instellingen voor nalevingsbeleid** (Azure Portal > Apparaatnaleving) omvatten:
+De **Standaardinstellingen voor nalevingsbeleid** (Azure-portal > Apparaatnaleving) omvatten:
 
 - **Apparaten waaraan geen nalevingsbeleid is toegewezen markeren als**: deze eigenschap heeft twee waarden:
 

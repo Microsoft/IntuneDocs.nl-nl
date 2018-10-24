@@ -14,12 +14,12 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb88bf64db8eaa82a68f56f8c3235030539f1959
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 72aa45d154cc3913f5b2e3895486a8296bb7f1cf
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190636"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169444"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Een aangepast apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -70,7 +70,7 @@ De volgende keer dat met een apparaat wordt ingecheckt, wordt het beleid toegepa
 
 ## <a name="android-or-windows-wi-fi-profile-example"></a>Voorbeeld van een Wi-Fi-profiel voor Android of Windows
 
-Het volgende voorbeeld bevat de XML-code voor een Wi-Fi-profiel voor Android of Windows. 
+Het volgende voorbeeld bevat de XML-code voor een Wi-Fi-profiel voor Android of Windows. Het voorbeeld is bedoeld om de juiste indeling te laten zien en meer details te bieden. Dit is slechts een voorbeeld en moet niet worden beschouwd als een aanbevolen configuratie voor uw omgeving.
 
 > [!IMPORTANT]
 >
@@ -122,7 +122,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="eap-based-wi-fi-profile-example"></a>Voorbeeld van een op EAP gebaseerd profiel
-Het volgende voorbeeld bevat de XML-code voor een Wi-Fi-profiel op basis van EAP:
+Het volgende voorbeeld omvat de XML-code voor een Wi-Fi-profiel op basis van EAP: het voorbeeld is bedoeld om de juiste indeling te laten zien en meer details te bieden. Dit is slechts een voorbeeld en moet niet worden beschouwd als een aanbevolen configuratie voor uw omgeving.
+
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">

@@ -1,31 +1,31 @@
 ---
-title: Windows Holographic-apparaten beheren met Microsoft Intune - Azure | Microsoft Docs
-description: Met Microsoft Intune kunt u verschillende taken uitvoeren op apparaten met Windows Holographic for Business, zoals de bedrijfsportal configureren, een nalevingsbeleid maken, OMA-URI-instellingen wijzigen, apps implementeren, apparaten in groepen categoriseren, profielen maken, apparaten beperken, software-updates inschakelen, voorwaarden instellen, VPN- en Wi-Fi-instellingen configureren en Hello voor Bedrijven gebruiken.
+title: Windows Holographic-apparaten gebruiken met Microsoft Intune - Azure | Microsoft Docs
+description: Met Microsoft Intune kunt u verschillende taken uitvoeren en beheren op apparaten met Windows Holographic for Business en HoloLens, zoals de bedrijfsportal configureren, een nalevingsbeleid maken, OMA-URI-instellingen wijzigen, apps implementeren, apparaten in groepen categoriseren, profielen maken, apparaten beperken, software-updates inschakelen, voorwaarden instellen, VPN- en Wi-Fi-instellingen configureren en Hello voor Bedrijven gebruiken.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/11/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 825ceb1eee8f6fdd38f8a203324ce3cad7291918
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 81a11ce35cbf0f256f59bf26d317933977750d6e
+ms.sourcegitcommit: b33ff64514abdc5e939ff59ea722b3704cd56c78
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43317983"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49065761"
 ---
-# <a name="customize-devices-running-windows-holographic-with-intune"></a>Apparaten met Windows Holographic wijzigen met Microsoft Intune
+# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Windows Holographic- en HoloLens-apparaten beheren en gebruiken met Intune
 
-Microsoft Intune biedt ondersteuning voor apparaten met  Windows Holographic for Business, zoals de [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/).
+Microsoft Intune bevat veel functies waarmee u apparaten met Windows Holographic for Business kunt beheren, zoals de [Microsoft HoloLens](https://docs.microsoft.com/hololens/). Met Intune kunt u bevestigen dat apparaten compatibel zijn met de regels van uw organisatie, en u kunt het apparaat aanpassen door een VPN- of Wi-Fi-profiel toe te voegen. Een andere belangrijke functie is dat het apparaat kan worden gebruikt als een kiosk en dat met het apparaat een specifieke app of set apps kan worden uitgevoerd.
 
-Voor het beheer van apparaten met Windows Holographic met Microsoft Intune moet u een Edition Upgrade-profiel maken. Met dit upgradeprofiel werkt u de apparaten bij van Windows Holographic naar Windows Holographic for Business. Voor Microsoft HoloLens kunt u de Commercial Suite kopen om de vereiste licentie voor de upgrade te krijgen. Zie [Apparaten met Windows Holographic upgraden naar Windows Holographic for Business](holographic-upgrade.md) voor meer informatie.
+De taken in dit artikel helpen u bij het beheren, aanpassen en beveiligen van uw apparaten met Windows Holographic for Business, inclusief software-updates en het gebruik van Windows Hello for Business.
 
-Gebruik de taken in dit artikel om uw apparaten met Windows Holographic for Business te beheren en te wijzigen. U kunt bijvoorbeeld software-updates beheren en VPN-instellingen configureren.
+Maak een editie-upgrade-profiel om Windows Holographic-apparaten te gebruiken met Intune. Met dit upgradeprofiel werkt u de apparaten bij van Windows Holographic naar Windows Holographic for Business. Voor Microsoft HoloLens kunt u de Commercial Suite kopen om de vereiste licentie voor de upgrade te krijgen. Zie [Apparaten met Windows Holographic upgraden naar Windows Holographic for Business](holographic-upgrade.md) voor meer informatie.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/20/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 20e9d4799b9ea4329c8286f0b75ea2a7d555e07b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 99d217c2d1960a1ca163bf697bfbd28e5406b58f
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253757"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075843"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-U kunt, als IT-beheerder, Microsoft Intune gebruiken om de mobiele apps te beheren die de werknemers van uw bedrijf gebruiken. Deze functionaliteit is een aanvulling op het beheren van apparaten en beschermen van gegevens. Een van de prioriteiten van een beheerder is om ervoor te zorgen dat eindgebruikers toegang hebben tot de apps die ze nodig hebben voor hun werk. Dit doel kan om de volgende redenen een uitdaging zijn:
+U kunt, als IT-beheerder, Microsoft Intune gebruiken om de client-apps te beheren die de werknemers van uw bedrijf gebruiken. Deze functionaliteit is een aanvulling op het beheren van apparaten en beschermen van gegevens. Een van de prioriteiten van een beheerder is om ervoor te zorgen dat eindgebruikers toegang hebben tot de apps die ze nodig hebben voor hun werk. Dit doel kan om de volgende redenen een uitdaging zijn:
 - Er is een breed scala aan apparaatplatformen en app-typen.
 - U moet apps wellicht op zowel bedrijfsapparaten als de persoonlijke apparaten van gebruikers beheren.
 - U moet ervoor zorgen dat uw netwerk en uw gegevens beveiligd blijven.
@@ -68,7 +68,7 @@ U vindt de meeste app-gerelateerde informatie in de workload **Client-apps** die
     Intune bevindt zich in de sectie **Controle en beheer**.
 3. Selecteer in het deelvenster **Microsoft Intune** de optie **Client-apps**.
 
-    ![Het workloaddeelvenster Mobiele apps](./media/apps-workload.png)
+    ![Het workloaddeelvenster Client-apps](./media/apps-workload.png)
 
 In se volgende vier secties worden de beschikbare opties in het deelvenster **Client-apps** beschreven.
 

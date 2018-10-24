@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
-ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.openlocfilehash: 652157f41f0fbefa14e9f22fea01c918cb7704a1
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40252446"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169495"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -39,13 +39,13 @@ Voordat u de App Wrapping Tool uitvoert, moet u aan enkele algemene vereisten vo
 
 * Download de [Microsoft Intune App Wrapping Tool voor iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) vanuit GitHub.
 
-* Een macOS-computer met OS X 10.8.5 of hoger, waarop de Xcode-hulpmiddelenset versie 5 of hoger is geïnstalleerd.
+* Een macOS-computer met OS X 10.8.5 of hoger, waarop de Xcode-werkset met versie 9 of hoger is geïnstalleerd.
 
 * De iOS-invoer-app moet zijn ontwikkeld en ondertekend door uw bedrijf of een ISV (Independent Software Vendor, onafhankelijke softwareleverancier).
 
   * Het bestand van de invoer-app moet de extensie **.ipa** of **.app** hebben.
 
-  * De invoerapp moet zijn gecompileerd voor iOS 8.0 of hoger.
+  * De invoer-app moet zijn gecompileerd voor iOS 10 of hoger.
 
   * De invoer-app kan niet worden versleuteld.
 
@@ -315,7 +315,7 @@ Voordat u de app verpakt, kunt u *rechten* verlenen zodat de app over meer macht
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>Ondersteunde mogelijkheden voor de App Wrapping Tool voor iOS
 
-|Mogelijkheid|Description|Aanbevolen richtlijnen|
+|Mogelijkheid|Beschrijving|Aanbevolen richtlijnen|
 |--------------|---------------|------------------------|
 |App-groepen|Gebruik app-groepen zodat meerdere apps toegang kunnen krijgen tot gedeelde containers en sta aanvullende communicatie tussen processen van de verschillende apps toe.<br /><br />Als u app-groepen wilt inschakelen, opent u het deelvenster **Mogelijkheden** en klikt u op **AAN** in **App-groepen** . U kunt app-groepen toevoegen of bestaande app-groepen selecteren.|Pas omgekeerde DNS-notatie toe wanneer u app-groepen gebruikt:<br /><br />*group.com.companyName.AppGroup*|
 |Achtergrondmodi|Wanneer u achtergrondmodi inschakelt, kan uw iOS-app op de achtergrond actief blijven.||
