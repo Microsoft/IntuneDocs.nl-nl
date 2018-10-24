@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f0680f601d59695828355496ef7b817335dc0d4
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ac8b70cd370d0c22a615d0d0bdc215cb3a332520
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827969"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425169"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Beveiligingsbeleidsinstellingen voor iOS-apps
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -78,7 +78,7 @@ Er zijn een aantal uitzonderingsapps en -platformservices waar het Intune-beveil
 | **Minimumversie van SDK voor het beleid voor app-beveiliging van Intune vereisen** | Selecteer **Ja** om een minimumversie van de SDK voor het beleid voor app-beveiliging van Intune te vereisen die wordt gebruikt in de app. Toegang door de gebruiker wordt geblokkeerd als de SDK-versie voor Intune-appbeveiligingsbeleid op het apparaat niet aan de vereiste voldoet. <br> <br> Zie [Overzicht van de Intune App SDK](app-sdk.md) voor meer informatie over de SDK voor Intune-appbeveiligingsbeleid. <br><br> Deze indeling voor beleidsinstelling ondersteunt major.minor, major.minor.build en major.minor.build.revision. <br><br> ***Opmerking:** voor de app is Intune SDK versie 7.0.1 of hoger vereist.* <br><br>  Standaardwaarde = **Nee** |
 
 > [!NOTE]
-> Zie [Veelgestelde vragen over Intune MAM](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios) en [Selectively wipe data using app protection policy access actions in Intune](app-protection-policies-access-actions.md) (Gegevens selectief wissen met toegangsacties van beveiligingsbeleid voor apps in Intune) voor meer informatie over hoe meerdere Intune-app-beveiligingsinstellingen die in de sectie Toegang worden geconfigureerd, kunnen worden toegepast op dezelfde reeks apps en gebruikers in iOS.
+> Zie [Veelgestelde vragen over Intune MAM](https://docs.microsoft.com/intune/mam-faq#app-experience-on-ios) en [Selectively wipe data using app protection policy access actions in Intune](app-protection-policies-access-actions.md) (Gegevens selectief wissen met toegangsacties van beveiligingsbeleid voor apps in Intune) voor meer informatie over hoe meerdere Intune-app-beveiligingsinstellingen die in de sectie Toegang worden geconfigureerd, kunnen worden toegepast op dezelfde reeks apps en gebruikers in iOS.
 
 ##  <a name="add-ins-for-outlook-app"></a>Invoegtoepassingen voor Outlook-app
 
@@ -117,9 +117,9 @@ Als een gebruiker toestaat dat gegevens tussen accounts worden gedeeld, zoals me
 
 |Machtigingen voor Microsoft Graph  |Beschrijving  |
 |---------|---------|
-|Leesmachtigingen voor [Personen](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#people-permissions)     |Hiermee geeft u de app toestemming om een beoordeelde lijst met relevante personen voor de aangemelde gebruiker te lezen. De lijst kan lokale contactpersonen, contactpersonen uit sociale netwerken of de directory van uw organisatie en personen uit recente communicaties (zoals e-mail en Skype) bevatten.         |
-|Leesmachtigingen voor [Agenda's](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.microsoft.com%2Fen-us%2Fgraph%2Fdocs%2Fconcepts%2Fpermissions_reference%23calendars-permissions&data=04%7C01%7CCem.Aykan%40microsoft.com%7C59705402acc347cdf0d908d5b1d82d53%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636610464378331622%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&sdata=fABkrlIxqggnB%2Bc%2BR%2BbFpuenhSg7OHfBhWcbv3ahmAU%3D&reserved=0)     |Hiermee geeft u de app toestemming om gebeurtenissen in agenda's van gebruikers te lezen. Bevat de vergaderingen in de agenda's van gebruikers en de tijden, locaties en deelnemers daarvan.         |
-|Leesmachtigingen voor [Gebruikersprofiel](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.microsoft.com%2Fen-us%2Fgraph%2Fdocs%2Fconcepts%2Fpermissions_reference%23user-permissions&data=04%7C01%7CCem.Aykan%40microsoft.com%7C59705402acc347cdf0d908d5b1d82d53%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636610464378341626%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&sdata=RcnVIpntjyR4TXafOYTV0SffZuZWpshQQWY0e2VkkXg%3D&reserved=0)     |Hiermee geeft u gebruikers toestemming om zich aan te melden bij de app en geeft u de app toestemming om het profiel van de aangemelde gebruikers te lezen. Het geeft de app ook toestemming om basale bedrijfsinformatie te lezen voor aangemelde gebruikers.         |
+|Leesmachtigingen voor [Personen](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)     |Hiermee geeft u de app toestemming om een beoordeelde lijst met relevante personen voor de aangemelde gebruiker te lezen. De lijst kan lokale contactpersonen, contactpersonen uit sociale netwerken of de directory van uw organisatie en personen uit recente communicaties (zoals e-mail en Skype) bevatten.         |
+|Leesmachtigingen voor [Agenda's](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions)     |Hiermee geeft u de app toestemming om gebeurtenissen in agenda's van gebruikers te lezen. Bevat de vergaderingen in de agenda's van gebruikers en de tijden, locaties en deelnemers daarvan.         |
+|Leesmachtigingen voor [Gebruikersprofiel](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#user-permissions)     |Hiermee geeft u gebruikers toestemming om zich aan te melden bij de app en geeft u de app toestemming om het profiel van de aangemelde gebruikers te lezen. Het geeft de app ook toestemming om basale bedrijfsinformatie te lezen voor aangemelde gebruikers.         |
 |Subscriptions     |Dit bereik is niet beschikbaar is en nog niet in gebruik. Het bevat abonnementen die door de organisatie van de gebruiker zijn gegeven voor apps en services van Microsoft, zoals Office 365.         |
 |Insights     |Dit bereik is niet beschikbaar is en nog niet in gebruik. Het bevat de interessegebieden die zijn gekoppeld aan het account van de aangemelde gebruiker op basis van het gebruik van de Microsoft-services.         |
 
@@ -127,6 +127,6 @@ Als een gebruiker toestaat dat gegevens tussen accounts worden gedeeld, zoals me
 
 - Lees meer over [LinkedIn-informatie en -functies in uw Microsoft-apps](https://go.microsoft.com/fwlink/?linkid=850740).
 - Lees meer over de versie met LinkedIn-accountverbindingen op de [pagina met de Office 365-roadmap](https://products.office.com/en-US/business/office-365-roadmap?filters=%26freeformsearch=linkedin#abc). 
-- Lees meer over [Het configureren van LinkedIn-accountverbindingen](https://docs.microsoft.com/en-us/azure/active-directory/linkedin-integration).
+- Lees meer over [Het configureren van LinkedIn-accountverbindingen](https://docs.microsoft.com/azure/active-directory/linkedin-integration).
 - Voor meer informatie over gegevens die worden gedeeld tussen de LinkedIn-accounts, of de werk- of schoolaccounts van Microsoft van de gebruikers, raadpleegt u [LinkedIn in Microsoft-toepassingen op het werk of op school](https://www.linkedin.com/help/linkedin/answer/84077).
 

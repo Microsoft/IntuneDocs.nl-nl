@@ -15,19 +15,16 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4c41d3a4cdfada81b91a3dffeffdfe15e8a470f
-ms.sourcegitcommit: 17094728cfd9eb3f77ca39745fdcde9be0a8dda1
+ms.openlocfilehash: 3b0da7cf77fd7c1b977fcd2ddb86b95eff8804f8
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48812818"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424999"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Nalevingsbeleid afdwingen op Macs die door Jamf Pro worden beheerd
 
-|Van toepassing op: Intune in Azure Portal |
-|--|
-|Op zoek naar documentatie over Intune in de klassieke portal? Klik [hier](/intune/introduction-intune?toc=/intune-classic/toc.json).|
-| |
+Van toepassing op: Intune in Azure Portal
 
 U kunt Azure Active Directory en het beleid voor voorwaardelijke toegang van Microsoft Intune gebruiken om ervoor te zorgen dat uw eindgebruikers voldoen aan de vereisten van de organisatie. U kunt deze beleidsregels toepassen op Mac-computers die worden [beheerd door Jamf Pro](conditional-access-integrate-jamf.md). Hiervoor is toegang tot de Intune- en Jamf Pro-consoles vereist.
 

@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e37a45122ab4950e2a85cc1c6f6696759d429a3f
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 72585982cd27962981f581a99f0ea361642df0ee
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828275"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652135"
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2018"></a>De vroege editie voor Microsoft Intune – oktober 2018
 
@@ -44,9 +44,6 @@ Deze pagina wordt regelmatig bijgewerkt. Controleer op andere updates.
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Door Microsoft aanbevolen instellingen gebruiken met beveiligingsbasislijnen <!-- 2055484 -->
 Intune is geïntegreerd met andere services die op beveiliging gericht zijn, inclusief Windows Defender ATP en Office 365 ATP. Klanten vragen om een gemeenschappelijke strategie en een samenhangende set van end-to-end beveiligingsworkflows voor alle Microsoft 365-diensten. Ons doel is om strategieën af te stemmen en oplossingen te ontwikkelen die beveiligingsactiviteiten en gebruikelijke beheerderstaken combineren. In Intune willen we dit doel bereiken door het publiceren van een set beveiligingsbasislijnen die door Microsoft zijn aanbevolen (**Intune** >  **Beveiligingsbasislijnen**).  Beheerders krijgen de mogelijkheid om direct op basis van deze basislijnen een beveiligingsbeleid op te stellen en dit vervolgens voor hun gebruikers te implementeren. Ze kunnen ook de aanbevolen procedures aanpassen aan de behoeften van hun organisatie. Intune zorgt ervoor dat apparaten deze basislijnen blijven naleven, en waarschuwt beheerders wanneer gebruikers of apparaten van de basislijnen afwijken.
 
-### <a name="remove-ability-for-admins-to-wipe-personal-devices-and-reset-passcodes----2934699---"></a>Mogelijkheid uitschakelen voor beheerders om persoonlijke apparaten te wissen en wachtwoorden te resetten <!-- 2934699 -->
-Om de vrees bij gebruikers weg te nemen dat bedrijfsbeheerders hun persoonlijke apparaten kunnen wissen, zijn de externe acties [wissen](devices-wipe.md#wipe) en [wachtwoord op nieuw instellen](device-passcode-reset.md) niet langer van toepassing op persoonlijke apparaten. Schakel het eigendomstype van het apparaat om naar ‘zakelijk’ om deze acties mogelijk te maken voor apparaten in het bezit van uw organisatie.
-
 ### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices----1048100---"></a>Autopilot-ondersteuning voor hybride apparaten die zijn toegevoegd aan Azure Active Directory <!-- 1048100 -->
 U kunt hybride apparaten die aan Azure Active Directory zijn toegevoegd, instellen met behulp van Autopilot. Apparaten moeten aan het netwerk van uw organisatie zijn toegevoegd om de hybride Autopilot-functie te kunnen gebruiken.
 
@@ -56,7 +53,7 @@ Selecteer voor het maken van een bereiktag **Intune-rollen** > **Bereik (tags)**
 Als u een bereiktag wilt toevoegen aan een roltoewijzing, selecteert u **Intune-rollen** > **Alle rollen** > **Beleid- en profielbeheerder** > **Toewijzingen** > **Bereik (tags)**.
 Als u een bereiktag wilt toevoegen aan een configuratieprofiel, selecteert u **Apparaatconfiguratie** > **Profielen** > Een profiel kiezen > **Eigenschappen** > **Bereik (tags)**.
 
-## <a name="tenant-health-dashboard----1124854---"></a>Dashboard voor tenantstatus<!-- 1124854 -->
+### <a name="tenant-health-dashboard----1124854---"></a>Dashboard voor tenantstatus<!-- 1124854 -->
 De pagina Tenantstatus in Intune biedt een uitputtend overzicht van alle informatie over de status van tenants. De pagina is onderverdeeld in vier secties:  
 - **Tenantdetails**: bevat uiteenlopende informatie, zoals uw MDM-instantie, het totale aantal ingeschreven apparaten in uw tenant en uw aantal licenties. Deze sectie bevat ook de huidige servicerelease voor uw tenant.
 - **Connectorstatus**: bevat informatie voor geconfigureerde connectoren, zoals Apple VPP, Windows Store for Business en certificaatconnectoren. Op basis van hun huidige status worden de connectoren gemarkeerd als *In orde*,  *Waarschuwing* of *Niet in orde*.
