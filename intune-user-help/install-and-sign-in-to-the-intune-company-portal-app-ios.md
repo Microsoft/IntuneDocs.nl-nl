@@ -1,11 +1,11 @@
 ---
-title: De bedrijfsportal-app installeren en u hierbij aanmelden | Microsoft Docs
+title: De bedrijfsportal-app voor iOS installeren en u hierbij aanmelden | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 984c9212a4aa3221a4de5e02d96f912d800e9490
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146372"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260195"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>De bedrijfsportal-app installeren en u hierbij aanmelden
 
-De bedrijfsportal-app is een app die u op het iOS-apparaat installeert om toegang te krijgen tot de apps, de e-mail en het netwerk van uw bedrijf of school. U krijgt pas toegang tot de app nadat u de bedrijfsportal-app hebt geïnstalleerd en vervolgens met de app het apparaat bij Microsoft Intune hebt geregistreerd. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat registreer bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) voor meer informatie.
+Installeer de bedrijfsportal-app op uw iOS-apparaat om toegang te krijgen tot uw werk- en school-apps, -e-mail en -netwerk. Gebruik de app om uw apparaat in te schrijven bij Microsoft Intune en toegang tot uw werk- of schoolresources te beveiligen. Zie [Wat gebeurt er wanneer ik de bedrijfsportal-app installeer en mijn apparaat registreer bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) voor meer informatie.
 
 1.  Ga naar de **App Store** en zoek naar de **Intune-bedrijfsportal**.
 

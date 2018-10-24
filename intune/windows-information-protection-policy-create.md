@@ -3,10 +3,10 @@ title: App-beveiligingsbeleid voor Windows-gegevensbescherming (WIP) maken en di
 titlesuffix: Microsoft Intune
 description: Met Microsoft Intune app-beveiligingsbeleid voor Windows-gegevensbescherming (WIP) maken en dit implementeren
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: c1d530059d7c5b5f759516e86d4ee3dbf8512aa5
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347304"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799622"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune
 
@@ -46,19 +46,27 @@ U moet enkele concepten begrijpen voor het toevoegen van WIP-beleid:
 
 ## <a name="prerequisites"></a>Vereisten
 
-U moet de MAM-provider configureren voordat u een beveiligingsbeleid voor WIP-apps kunt maken. Meer informatie over [de configuratie van uw MAM-provider met Intune](app-protection-policies-configure-windows-10.md).
+U moet de MAM-provider configureren voordat u een beveiligingsbeleid voor WIP-apps kunt maken. Meer informatie over [de configuratie van uw MAM-provider met Intune](app-protection-policies-configure-windows-10.md).  
+
+> [!IMPORTANT]
+> WIP biedt geen ondersteuning voor meerdere identiteiten; er kan slechts één beheerde identiteit tegelijkertijd bestaan.
 
 U moet bovendien beschikken over de volgende licentie en update:
 
 -   Een [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)-licentie
 -   [Update voor Windows Creators](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
-> [!IMPORTANT]
-> WIP biedt geen ondersteuning voor meerdere identiteiten; er kan slechts één beheerde identiteit tegelijkertijd bestaan.
+
+
+
 
 ## <a name="to-add-a-wip-app-protection-policy"></a>App-beveiligingsbeleid voor WIP toevoegen
 
 Nadat u Intune hebt ingesteld in uw organisatie, kunt u specifiek WIP-beleid maken.
+
+> [!TIP]  
+> Zie [Een WIP-beleid (Windows Information Protection) maken met MAM via Azure Portal voor Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) in de Windows-bibliotheek voor beveiligingsdocumentatie voor gerelateerde informatie over het maken van een WIP-beleid voor Intune, waaronder de beschikbare instellingen en hoe u deze configureert. 
+
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**.
@@ -123,7 +131,7 @@ Wanneer u met apps met WIP-functionaliteit en voor WIP onbekende apps werkt, wor
 ### <a name="what-are-the-protection-modes"></a>Wat zijn de beveiligingsmodi ?
 
 #### <a name="block"></a>Blokkeren
-WIP zoekt naar ongeschikte gegevensuitwisselingsprocedures en zorgt ervoor dat de gebruiker de actie niet verder kan uitvoeren. Dit betreft ook gegevens in niet-zakelijke beveiligde apps en bedrijfsgegevens van personen en apparaten die buiten uw organisatie worden gedeeld.
+WIP zoekt naar ongeschikte gegevensuitwisselingsprocedures en zorgt ervoor dat de gebruiker de actie niet verder kan uitvoeren. Geblokkeerde acties kan ook het delen van gegevens in niet-zakelijke beveiligde apps en het delen van bedrijfsgegevens met personen en apparaten buiten uw organisatie omvatten.
 
 #### <a name="allow-overrides"></a>Onderdrukkingen toestaan
 WIP zoekt naar het delen van onjuiste gegevens en waarschuwt gebruikers als ze een onveilige actie uitvoeren. In deze modus kan de gebruiker echter het beleid negeren en de gegevens delen, waarbij de actie wordt toegevoegd aan uw controlelogboek.

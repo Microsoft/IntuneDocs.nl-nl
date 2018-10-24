@@ -2,10 +2,10 @@
 title: Een nalevingsbeleid voor Android-werkprofielen maken in Microsoft Intune - Azure | Microsoft Docs
 description: Een Microsoft Intune-apparaatnalevingsbeleid maken of configureren voor apparaten met een Android-werkprofiel. Kies ervoor opengebroken apparaten toe te staan, stel het acceptabele dreigingsniveau in, controleer op Google Play, voer de minimale en maximale besturingssysteemversie in, kies uw wachtwoordvereisten en sta sideloading van toepassingen toe.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0c7f1c7c47f2fa4c950cbffeaf8fe274fe239a63
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905084"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828156"
 ---
 # <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Een nalevingsbeleid voor apparaten met een Android-werkprofiel in Intune toevoegen
 
@@ -113,7 +113,11 @@ Als uw bedrijf Android-werkprofielen gebruikt, kunt u **Bedreigingsscan voor app
 - **Apps van onbekende bronnen blokkeren**: u hoeft deze instelling niet te configureren, omdat installatie vanuit onbekende bronnen altijd wordt voorkomen op apparaten met een Android-werkprofiel.
 - **Runtime-integriteit van de bedrijfsportal-app**: hiermee controleert u of in de bedrijfsportal-app de standaardruntime-omgeving is geïnstalleerd, correct is ondertekend, niet in de foutopsporingsmodus is en is geïnstalleerd vanuit een bekende bron.
 - **USB-foutopsporing blokkeren op het apparaat**: u hoeft deze instelling niet te configureren omdat USB-foutopsporing altijd al is uitgeschakeld op apparaten met een Android-werkprofiel.
-- **Minimaal beveiligingspatchniveau**: selecteer het oudste beveiligingspatchniveau dat een apparaat kan hebben. Apparaten die niet ten minste dit patchniveau hebben, zijn niet-conform. De datum moet worden opgegeven in de indeling `YYYY-MM-DD`.
+- **Minimaal beveiligingspatchniveau**: selecteer het oudste beveiligingspatchniveau dat een apparaat kan hebben. Apparaten die niet ten minste dit patchniveau hebben, zijn niet-conform. De datum moet worden opgegeven in de indeling *jjjj-mm-dd*.
+- **Beperkte apps**: u kunt apps beperken door de bundel-id's toe te voegen aan het beleid. Als vervolgens de app op een apparaat is geïnstalleerd, wordt het apparaat gemarkeerd als niet-compatibel. 
+   - **App-naam**: geef een gebruiksvriendelijke naam op om u te helpen de bundel-id te identificeren. 
+   - **App-bundel-id**: geef de unieke bundel-id op voor de app-provider. Voor Android wordt de app-bundel-id uit de store-URL voor de app gehaald. Als de URL naar de app in de store bijvoorbeeld *https://play.google.com/store/apps/details?id=com.Slack* is, is de app-bundel-id *com.Slack*.
+
 
 ## <a name="assign-user-groups"></a>Gebruikersgroepen toewijzen
 

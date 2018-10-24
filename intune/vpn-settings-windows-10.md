@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/26/2018
+ms.date: 9/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: faf07b58c4480689d5f6f44bf09d6100a2eae9db
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312847"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827850"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>VPN-instellingen voor Windows 10 in Intune
 
@@ -40,10 +40,10 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden worden gec
   - **Beschrijving**: voer een beschrijvende naam in voor de server, zoals **Contoso VPN-server**
   - **IP-adres of FQDN**: voer het IP-adres of de Fully Qualified Domain Name (FQDN) in van de VPN-server waarmee apparaten verbinding maken, zoals **192.168.1.1** of **vpn.contoso.com**
   - **Standaardserver**: hiermee wordt deze server ingeschakeld als de standaardserver die apparaten gebruiken om de verbinding te maken. U kunt slechts één server als standaard instellen.
-  - **Importeren**: blader naar een bestand met een door komma’s gescheiden lijst met servers in de indeling: beschrijving, IP-adres of FQDN, Standaardserver. Kies **OK** om deze servers te importeren in de lijst met **servers**.
+  - **Importeren**: blader naar een bestand met een door komma's gescheiden lijst met servers in de indeling: beschrijving, IP-adres of FQDN, Standaardserver. Kies **OK** om deze servers te importeren in de lijst met **servers**.
   - **Exporteren**: hiermee exporteert u de lijst met servers naar een bestand met door komma's gescheiden waarden (CSV-bestand)
 
-- **IP-adressen met interne DNS registreren**: selecteer **Inschakelen** als u het VPN-profiel van Windows 10 zo wilt configureren dat de IP-adressen die zijn toegewezen aan de VPN-interface met de interne DNS dynamisch worden geregistreerd, of selecteer  **Uitschakelen** als u de IP-adressen niet dynamisch wilt registreren.
+- **IP-adressen met interne DNS registreren**: selecteer **Inschakelen** als u het VPN-profiel van Windows 10 zo wilt configureren dat de IP-adressen die zijn toegewezen aan de VPN-interface met de interne DNS dynamisch worden geregistreerd. Selecteer **Uitschakelen** als u de IP-adressen niet dynamisch wilt registreren.
 
 - **Verbindingstype**: selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
 
@@ -59,12 +59,12 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden worden gec
   - **PPTP**
 
   Als u een VPN-verbindingstype kiest, wordt u mogelijk ook om de volgende instellingen gevraagd:  
-    - **Altijd aan**: schakel deze optie in om automatisch verbinding te maken met de VPN-verbinding wanneer het volgende gebeurt: 
+    - **AlwaysOn**: kies **Inschakelen** om automatisch verbinding te maken met de VPN-verbinding wanneer het volgende gebeurt: 
       - Gebruikers zich aanmelden op hun apparaten
       - Het netwerk op het apparaat wijzigt
       - Het scherm op het apparaat wordt ingeschakeld nadat het was uitgeschakeld 
 
-    - **Verificatiemethode**: selecteer hoe gebruikers zich moeten verifiëren bij de VPN-server. Het gebruik van **certificaten** biedt uitgebreide mogelijkheden, zoals zero-touch, VPN op aanvraag en VPN per app.
+    - **Verificatiemethode**: selecteer hoe gebruikers zich moeten verifiëren bij de VPN-server. Het gebruik van **certificaten** biedt verbeterde functies, zoals zero-touch, VPN op aanvraag en VPN per app.
     - **Referenties onthouden bij elke aanmelding**: kies ervoor om de verificatiereferenties in cache te plaatsen.
     - **Aangepaste XML**: voer aangepaste XML-opdrachten in waarmee de VPN-verbinding wordt geconfigureerd.
     - **EAP XML**: voer EAP XML-opdrachten in waarmee de VPN-verbinding wordt geconfigureerd
@@ -114,7 +114,7 @@ Zie [EAP-configuratie](https://docs.microsoft.com/windows/client-management/mdm/
 
 ## <a name="conditional-access"></a>Voorwaardelijke toegang
 
-- **Voorwaardelijke toegang voor deze VPN-verbinding**: schakelt een nalevingsstroom voor het apparaat in via de client. Als de VPN-client is ingeschakeld, wordt er een poging gedaan deze te laten communiceren met Azure AD (Active Directory) en een certificaat te ontvangen dat kan worden gebruikt voor verificatie. De VPN moet zijn ingesteld voor het gebruik van certificaatverificatie. Ook moet de VPN-server de server vertrouwen die met Azure AD wordt geretourneerd.
+- **Voorwaardelijke toegang voor deze VPN-verbinding**: schakelt een nalevingsstroom voor het apparaat in via de client. Als de VPN-client is ingeschakeld, communiceert deze met Azure AD (Active Directory) om een certificaat te ontvangen dat kan worden gebruikt voor verificatie. De VPN moet zijn ingesteld voor het gebruik van certificaatverificatie. Ook moet de VPN-server de server vertrouwen die met Azure AD wordt geretourneerd.
 
 - **Eenmalige aanmelding (SSO) met alternatief certificaat**: gebruik voor apparaatcompatibiliteit een ander certificaat dan het VPN-verificatiecertificaat voor Kerberos-verificatie. Voer de volgende instellingen in voor het certificaat:
 
@@ -124,7 +124,17 @@ Zie [EAP-configuratie](https://docs.microsoft.com/windows/client-management/mdm/
 
 ## <a name="dns-settings"></a>DNS-instellingen
 
-**Domein en servers voor deze VP-verbinding**: voeg domeinen en DNS-server toe waarvan de VPN gebruik kan maken. U kunt kiezen van welke DNS-servers de VPN-verbinding gebruikmaakt nadat de verbinding tot stand is gebracht. Voer voor elke server het volgende in:
+- **Zoeklijst voor DNS-achtervoegsel**: voer bij **DNS-achtervoegsels**, een DNS-achtervoegsel in en selecteer **Toevoegen**. U kunt meerdere achtervoegsels toevoegen.
+
+  Wanneer u DNS-achtervoegsels gebruikt, kunt u naar een netwerkbron zoeken met behulp van de korte naam, in plaats van met de Fully Qualified Domain Name (FQDN). Bij het zoeken met behulp van de korte naam wordt het achtervoegsel automatisch door de DNS-server bepaald. `utah.contoso.com` staat bijvoorbeeld in de lijst met DNS-achtervoegsels. U pingt `DEV-comp`. In dit scenario wordt deze omgezet in `DEV-comp.utah.contoso.com`.
+
+  DNS-achtervoegsels worden omgezet in de weergegeven volgorde. De volgorde kan worden gewijzigd. `colorado.contoso.com` en `utah.contoso.com` staan bijvoorbeeld in de lijst met DNS-achtervoegsels en hebben beide een resource met de naam `DEV-comp`. Aangezien `colorado.contoso.com` eerst op de lijst komt, wordt deze omgezet in `DEV-comp.colorado.contoso.com`.
+  
+  Als u de volgorde wilt wijzigen, klikt u op de puntjes links van het DNS-achtervoegsel en sleept u het achtervoegsel naar boven:
+
+  ![Selecteer de drie puntjes en klik en sleep om het DNS-achtervoegsel te verplaatsen](./media/vpn-settings-windows10-move-dns-suffix.png)
+
+- **Domein en servers voor deze VP-verbinding**: voeg domeinen en DNS-server toe waarvan de VPN gebruik kan maken. U kunt kiezen van welke DNS-servers de VPN-verbinding gebruikmaakt nadat de verbinding tot stand is gebracht. Voer voor elke server het volgende in:
 - **Domein**
 - **DNS-server**
 - **Proxy**

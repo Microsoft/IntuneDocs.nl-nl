@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,41 +15,39 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 8a83602d992ff7ea08be84272eee086ea364be0a
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 452ee2b386130a4c7ca6dc5026d3e2489c5ea33a
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147040"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863039"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>De bedrijfsportal-app bijwerken
 
 In dit artikel wordt beschreven hoe u uw versie van de bedrijfsportal-app kunt bijwerken wanneer:  
-* Er een nieuwere versie van de bedrijfsportal-app beschikbaar is.
-* Uw versie van de bedrijfsportal-app niet meer wordt ondersteund.
+* Er een nieuwere versie van de bedrijfsportal beschikbaar is.
+* Uw versie van de bedrijfsportal niet meer wordt ondersteund.
 
-Met deze stappen wordt beschreven hoe u de app op Android-, iOS- en Windows-apparaten kunt bijwerken.    
+Met deze stappen wordt beschreven hoe u de app op Android-, iOS- en Windows-apparaten kunt bijwerken of de nieuwste versie van de app kunt downloaden.    
 
-## <a name="update-the-intune-company-portal-app-on-your-android-device"></a>De Intune-bedrijfsportal-app op uw Android-apparaat bijwerken
+## <a name="update-the-company-portal-app-on-your-android-device"></a>De bedrijfsportal-app op uw Android-apparaat bijwerken  
 
-De Play Store geeft een melding wanneer er een nieuwe versie van de bedrijfsportal beschikbaar is. Er wordt geen prompt in de bedrijfsportal-app zelf weergegeven. Selecteer de waarschuwing en volg de instructies om uw apparaat bij te werken.  
+Google Play geeft een melding wanneer er een nieuwe versie van de bedrijfsportal beschikbaar is. Er wordt geen prompt in de bedrijfsportal-app zelf weergegeven. Selecteer de melding en volg de instructies om de app bij te werken. 
 
-## <a name="update-the-intune-company-portal-app-on-your-ios-device"></a>De Intune-bedrijfsportal-app op uw iOS-apparaat bijwerken
+## <a name="update-the-company-portal-app-on-your-ios-device"></a>De bedrijfsportal-app op uw iOS-apparaat bijwerken  
 
-Wanneer een nieuwe versie beschikbaar is, ziet u de optie voor bijwerken bij de app in de lijst met geïnstalleerde apps.  
+Wanneer een nieuwe versie beschikbaar is, wordt de optie **Update** weergegeven in de lijst met geïnstalleerde apps, naast de bedrijfsportal-app.  
 
-1. Ga naar de App Store en zoek naar **Intune**.
+1. Ga naar de App Store en zoek naar **Intune**.  
+2. Wanneer u de app hebt gevonden, tikt u op **Bijwerken**.  
 
-2. Wanneer u de app hebt gevonden, tikt u op **Bijwerken**.
+## <a name="update-the-company-portal-app-on-your-windows-device"></a>De bedrijfsportal-app op uw Windows-apparaat bijwerken
+Als u automatisch updates wilt ontvangen zodra deze beschikbaar zijn, opent u de Microsoft Store en gaat u naar **Instellingen**. Schakel **App-updates** in. Als u recente updates en apps in de downloadwachtrij wilt bekijken, gaat u naar **Downloads en updates**.  
 
-## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>De Intune-bedrijfsportal-app op uw Windows-apparaat bijwerken
-
-1.  Navigeer naar Microsoft Store en zoek naar de **Intune-bedrijfsportal**.
-
-2.  Volg de installatiestappen.
-
-    > [!NOTE]
-    > Als u geen toegang krijgt tot Microsoft Store, neemt u contact op met het ondersteuningsteam van het bedrijf.
+Voer de volgende stappen uit als u de app liever handmatig bijwerkt of als **App-updates** door uw bedrijf zijn uitgeschakeld.  
+1. Open de Microsoft Store.
+2. Typ **bedrijfsportal** in de zoekbalk.
+3. Klik op de app om de meest recente versie op uw apparaat te installeren. 
 
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

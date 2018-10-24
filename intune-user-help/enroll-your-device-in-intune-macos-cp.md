@@ -5,7 +5,7 @@ keywords: Mac OS X, Mac OS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147714"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260246"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Uw macOS-apparaten registreren bij Intune met de bedrijfsportal-app
 
@@ -80,8 +80,17 @@ Gebruik de volgende stappen om macOS-apparaten met OS X El Capitan 10.11 en hoge
 
 9. Op het eerste scherm dat u in de bedrijfsportal-app ziet, wordt u gevraagd om u **aan te melden**. Gebruik hetzelfde werk- of schoolaccount dat u hebt gebruikt om u aan te melden bij de bedrijfsportalwebsite.
 
-10. De bedrijfsportal bevestigt uw accountgegevens en geeft de status van de **apparaatregistratie** en **apparaatcompatibiliteit** weer. Gele driehoeken markeren de acties die u moet uitvoeren om uw macOS-apparaat te beveiligen voor school of werk. Klik op **Beginnen** om de registratie te starten. Ontdek [wat uw bedrijf kan zien](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) wanneer u een apparaat registreert.
+10. De bedrijfsportal bevestigt uw accountgegevens en geeft de status van de **apparaatregistratie** en **apparaatcompatibiliteit** weer. Gele driehoeken markeren de acties die u moet uitvoeren om uw macOS-apparaat te beveiligen voor school of werk. Klik op **Beginnen** om de registratie te starten. 
 
-11. Mogelijk wordt u gevraagd naar de aanmeldingsgegevens voor uw computer. Het duurt mogelijk enkele minuten om uw apparaat in beheer te registreren. Gedurende deze tijd kunt u andere dingen doen op uw apparaat. U krijgt een bericht zodra het instellen van de bedrijfstoegang is voltooid, zodat u weet dat u klaar bent.  
+11. Typ de aanmeldgegevens van uw computer in wanneer u daarom wordt gevraagd.  
+
+Het duurt mogelijk enkele minuten om uw apparaat in beheer te registreren. Gedurende deze tijd kunt u andere dingen doen op uw apparaat. U krijgt een bericht zodra het instellen van de bedrijfstoegang is voltooid, zodat u weet dat u klaar bent.  
+
+## <a name="unverified-profiles"></a>Niet-geverifieerde profielen
+Wanneer u de geïnstalleerde MDM-profielen (Mobile Device Management) voor uw macOS-apparaat weergeeft, tonen sommige profielen mogelijk de status **Niet geverifieerd**. Zolang het **Beheerprofiel** de status **Geverifieerd** weergeeft, hoeft u zich geen zorgen te maken.  
+
+Het beheerprofiel definieert de MDM-kanaalverbinding. Zolang het beheerprofiel is geverifieerd, nemen alle andere profielen die via dat kanaal aan de machine worden geleverd de beveiligingseigenschappen van het beheerprofiel over.
+
+Omdat voor de andere profielen geen afzonderlijke verificatie is vereist, worden ze bovendien sneller gegenereerd en naar apparaten gestuurd. 
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  

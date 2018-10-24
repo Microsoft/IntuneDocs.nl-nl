@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2018
+ms.date: 10/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: 48bf2e6daf05dba6baebbd49be45a17a5a56e820
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028729"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828292"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In dit artikel leest u hoe u uw infrastructuur kunt configureren en vervolgens SCEP-certificaatprofielen (Simple Certificate Enrollment Protocol) kunt maken en toewijzen met Intune.
 
@@ -160,7 +158,7 @@ Bij deze stap doet u het volgende:
 
    2. Wanneer NDES aan de server wordt toegevoegd, installeert de wizard ook IIS. Controleer of IIS de volgende configuraties heeft:
 
-   3. **Webserver** > **Beveiliging** > **Aanvraagfiltering**
+   3. **Webserver** > **Beveiliging** > **Filtering aanvragen**
 
    4. **Webserver** > **Toepassingsontwikkeling** > **ASP.NET 3.5**. Als u ASP.NET 3.5 installeert, installeert u ook .NET Framework 3.5. Als u .NET Framework 3.5 installeert, installeert u zowel het kernonderdeel **.NET Framework 3.5** als **HTTP-activering**.
 
@@ -350,6 +348,113 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 5. Selecteer in de vervolgkeuzelijst **Profieltype** de optie **SCEP-certificaat**.
 6. Configureer in het deelvenster **SCEP-certificaat** de volgende instellingen:
 
+   - **Certificaattype**: kies **Gebruiker** voor gebruikerscertificaten. Kies **Apparaat** voor apparaten zonder gebruiker, zoals kiosken. Er zijn **Apparaat**-certificaten beschikbaar voor de volgende platformen:  
+     - iOS
+     - Windows 8.1 en hoger
+     - Windows 10 en hoger
+
+   - **Indeling van de onderwerpnaam**: selecteer hoe de onderwerpnaam in de certificaataanvraag automatisch wordt gemaakt met Intune. De beschikbare opties kunnen verschillen, afhankelijk van het gekozen certificaattype: **Gebruiker** of **Apparaat**. 
+
+        **Certificaattype Gebruiker**  
+
+        U kunt e-mailadres van de gebruiker in de onderwerpnaam opnemen. U kunt kiezen uit:
+
+        - **Niet geconfigureerd**
+        - **Algemene naam**
+        - **Algemene naam en e-mailadres**
+        - **Algemene naam als e-mailadres**
+        - **IMEI (International Mobile Equipment Identity)**
+        - **Serienummer**
+        - **Aangepast**: wanneer u deze optie selecteert, wordt het tekstvak **Aangepast** ook weergegeven. Met dit veld kunt u een onderwerpnaam invoeren in een aangepaste indeling, inclusief variabelen. De aangepaste indeling ondersteunt twee variabelen: **Algemene naam (CN)** en **E-mail (E)**. **Algemene naam (CN)** kan worden ingesteld op een van de volgende variabelen:
+
+            - **CN = {{UserName}}**: de Principle-naam van de gebruiker, zoals janedoe@contoso.com
+            - **CN = {{AAD_Device_ID}}**: een id die wordt toegewezen wanneer u een apparaat in Azure Active Directory (AD) registreert. Deze id wordt doorgaans gebruikt voor verificatie met Azure AD.
+            - **CN={{SERIALNUMBER}}**: het unieke serienummer dat doorgaans wordt gebruikt door de fabrikant om een apparaat te identificeren
+            - **CN = {{IMEINumber}}**: het unieke nummer van de International Mobile Equipment Identity (IMEI) dat wordt gebruikt om een mobiele telefoon te identificeren
+            - **CN = {{OnPrem_Distinguished_Name}}**: een reeks relatieve DN-namen die door komma's worden gescheiden, bijvoorbeeld `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+
+                Als u de variabele `{{OnPrem_Distinguished_Name}}` wilt gebruiken, moet u het gebruikerskenmerk `onpremisesdistingishedname` met behulp van [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw exemplaar van Azure AD.
+
+            - **CN={{onPremisesSamAccountName}}**: beheerders kunnen het kenmerk samAccountName van Active Directory synchroniseren naar Azure AD via Azure AD Connect in een kenmerk genaamd `onPremisesSamAccountName`. Deze variabele kan in Intune worden vervangen als onderdeel van een aanvraag voor certificaatuitgifte in het onderwerp van een SCEP-certificaat.  Het kenmerk samAccountName is de aanmeldingsnaam van de gebruiker die wordt gebruikt ter ondersteuning van clients en servers uit een vorige versie van Windows (pre-Windows 2000). De indeling van de gebruikersaanmeldingsnaam is: `DomainName\testUser` of alleen `testUser`.
+
+                Als u de variabele `{{onPremisesSamAccountName}}` wilt gebruiken, moet u het gebruikerskenmerk `onPremisesSamAccountName` met behulp van [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw exemplaar van Azure AD.
+
+            Door een combinatie van een of meer van deze variabelen en statische tekenreeksen te gebruiken, kunt u een aangepaste indeling voor de naam van een certificaathouder maken, bijvoorbeeld:  
+
+            **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+
+            In dit voorbeeld hebt u een indeling voor de naam van een certificaathouder gemaakt, waarin naast de variabelen voor CN en E gebruik wordt gemaakt van tekenreeksen voor de waarden Organisatie-eenheid, Organisatie, Locatie, Regio en Land. [De functie CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) beschrijft deze functie en de ondersteunde tekenreeksen.
+
+        **Certificaattype Apparaat**  
+
+        Als u het certificaattype **Apparaat** gebruikt, kunt u ook de volgende variabelen van het apparaatcertificaat gebruiken voor de waarde:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        Deze variabelen kunnen met statische tekst worden toegevoegd in een tekstvak voor aangepaste waarden. Het DNS-kenmerk kan bijvoorbeeld worden toegevoegd als `DNS = {{AzureADDeviceId}}.domain.com`.
+
+        > [!IMPORTANT]
+        >  - Accolades **{ }**, pijp-symbolen **|** en puntkomma's **;** kunnen niet worden gebruikt in de statische tekst van de alternatieve naam voor het onderwerp. 
+        >  - Wanneer u een variabele voor een apparaatcertificaat gebruikt, plaatst u de variabele tussen accolades **{ }**.
+        >  - `{{FullyQualifiedDomainName}}` kan alleen worden gebruikt voor Windows-apparaten en apparaten die aan een domein zijn toegevoegd. 
+        >  -  Houd er rekening mee dat wanneer u in het onderwerp of de alternatieve naam voor het onderwerp voor een apparaatcertificaat apparaateigenschappen gebruikt, zoals het IMEI-nummer, het serienummer en de Fully Qualified Domain Name, deze eigenschappen kunnen worden vervalst door een persoon met toegang tot het apparaat.
+
+
+   - **Alternatieve onderwerpnaam**: voer in hoe de waarden voor de alternatieve naam van het onderwerp (SAN) in de certificaataanvraag automatisch worden gemaakt met Intune. De beschikbare opties kunnen verschillen, afhankelijk van het gekozen certificaattype: **Gebruiker** of **Apparaat**. 
+
+        **Certificaattype Gebruiker**  
+
+        De volgende kenmerken zijn beschikbaar:
+
+        - E-mailadres
+        - User Principal Name (UPN)
+
+            Als u bijvoorbeeld een gebruikerscertificaattype selecteert, kunt u de User Principal Name (UPN) gebruiken in de alternatieve naam van het onderwerp. Als een clientcertificaat wordt gebruikt om een Network Policy Server te verifiëren, stelt u de alternatieve naam van het onderwerp op de UPN in. 
+
+        **Certificaattype Apparaat**  
+
+        Een aanpasbaar tekstvak in tabelopmaak. De volgende kenmerken zijn beschikbaar:
+
+        - DNS
+        - E-mailadres
+        - User Principal Name (UPN)
+
+        Bij het certificaattype **Apparaat** kunt u de volgende variabelen van het apparaatcertificaat gebruiken voor de waarde:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        Deze variabelen kunnen met statische tekst worden toegevoegd in het tekstvak voor aangepaste waarden. Het DNS-kenmerk kan bijvoorbeeld worden toegevoegd als `DNS = {{AzureADDeviceId}}.domain.com`.
+
+        > [!IMPORTANT]
+        >  - Accolades **{ }**, pijp-symbolen **|** en puntkomma's **;** kunnen niet worden gebruikt in de statische tekst van de alternatieve naam voor het onderwerp. 
+        >  - Wanneer u een variabele voor een apparaatcertificaat gebruikt, plaatst u de variabele tussen accolades **{ }**.
+        >  - `{{FullyQualifiedDomainName}}` kan alleen worden gebruikt voor Windows-apparaten en apparaten die aan een domein zijn toegevoegd. 
+        >  -  Houd er rekening mee dat wanneer u in het onderwerp of de alternatieve naam voor het onderwerp voor een apparaatcertificaat apparaateigenschappen gebruikt, zoals het IMEI-nummer, het serienummer en de Fully Qualified Domain Name, deze eigenschappen kunnen worden vervalst door een persoon met toegang tot het apparaat.
+
    - **Geldigheidsduur van certificaat**: als u de opdracht `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` hebt uitgevoerd op de verlenende CA waarop een aangepaste geldigheidsperiode mogelijk is, kunt u opgeven hoelang het certificaat geldig blijft.<br>U kunt een waarde invoeren die lager is dan de geldigheidsperiode in de certificaatsjabloon, maar niet hoger. Als de geldigheidsperiode van het certificaat in de certificaatsjabloon bijvoorbeeld twee jaar is, kunt u wel één jaar, maar niet vijf jaar opgeven. De waarde moet ook lager zijn dan de resterende geldigheidsperiode van het certificaat van de verlenende CA. 
    - **Sleutelarchiefprovider (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): geef op waar de sleutel voor het certificaat wordt opgeslagen. Kies een van de volgende waarden:
      - **Registeren in de sleutelarchiefprovider voor TPM (Trusted Platform Module) indien TPM aanwezig is, anders registreren in de sleutelarchiefprovider voor software**
@@ -357,40 +462,17 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
      - **Registreren bij Passport, anders niet uitvoeren (Windows 10 en hoger)**
      - **Registreren in sleutelarchiefprovider voor software**
 
-   - **Indeling van de onderwerpnaam**: selecteer in de lijst hoe de onderwerpnaam in de certificaataanvraag automatisch wordt gemaakt met Intune. Als het certificaat voor een gebruiker is, kunt u ook het e-mailadres van de gebruiker in de onderwerpnaam opnemen. U kunt kiezen uit:
-     - **Niet geconfigureerd**
-     - **Algemene naam**
-     - **Algemene naam en e-mailadres**
-     - **Algemene naam als e-mailadres**
-     - **IMEI (International Mobile Equipment Identity)**
-     - **Serienummer**
-     - **Aangepast**: als u deze optie selecteert, wordt een ander veld van de vervolgkeuzelijst weergegeven. Met dit veld kunt u een indeling van de aangepaste onderwerpnaam invoeren. De aangepaste indeling ondersteunt twee variabelen: **Algemene naam (CN)** en **E-mail (E)**. **Algemene naam (CN)** kan worden ingesteld op een van de volgende variabelen:
-       - **CN = {{UserName}}**: de Principle-naam van de gebruiker, zoals janedoe@contoso.com
-       - **CN = {{AAD_Device_ID}}**: een id die wordt toegewezen wanneer u een apparaat in Azure Active Directory (AD) registreert. Deze id wordt doorgaans gebruikt voor verificatie met Azure AD.
-       - **CN={{SERIALNUMBER}}**: het unieke serienummer dat doorgaans wordt gebruikt door de fabrikant om een apparaat te identificeren
-       - **CN = {{IMEINumber}}**: het unieke nummer van de International Mobile Equipment Identity (IMEI) dat wordt gebruikt om een mobiele telefoon te identificeren
-       - **CN = {{OnPrem_Distinguished_Name}}**: een reeks relatieve DN-namen die door komma's worden gescheiden, bijvoorbeeld `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
-
-          Als u de variabele `{{OnPrem_Distinguished_Name}}` wilt gebruiken, moet u het gebruikerskenmerk `onpremisesdistingishedname` met behulp van [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw exemplaar van Azure AD.
-
-       - **CN={{onPremisesSamAccountName}}**: beheerders kunnen het kenmerk samAccountName van Active Directory synchroniseren naar Azure AD via Azure AD Connect in een kenmerk genaamd `onPremisesSamAccountName`. Deze variabele kan in Intune worden vervangen als onderdeel van een aanvraag voor certificaatuitgifte in het onderwerp van een SCEP-certificaat.  Het kenmerk samAccountName is de aanmeldingsnaam van de gebruiker die wordt gebruikt ter ondersteuning van clients en servers uit een vorige versie van Windows (pre-Windows 2000). De indeling van de gebruikersaanmeldingsnaam is: `DomainName\testUser` of alleen `testUser`.
-
-          Als u de variabele `{{onPremisesSamAccountName}}` wilt gebruiken, moet u het gebruikerskenmerk `onPremisesSamAccountName` met behulp van [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw exemplaar van Azure AD.
-
-       Door een combinatie van deze twee variabelen met statische tekenreeksen te gebruiken, kunt u een aangepaste indeling voor de naam van een certificaathouder maken, bijvoorbeeld: **CN = {{UserName}}, E = {{EmailAddress}}, OU = Mobile, O groep Finance, L = Redmond, ST = Washington, C = = US**. <br/> In dit voorbeeld hebt u een indeling voor de naam van een certificaathouder gemaakt, waarin naast de variabelen voor CN en E gebruik wordt gemaakt van tekenreeksen voor de waarden Organisatie-eenheid, Organisatie, Locatie, Regio en Land. [De functie CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) beschrijft deze functie en de ondersteunde tekenreeksen.
-
-- **Alternatieve onderwerpnaam**: voer in hoe de waarden voor de alternatieve naam van het onderwerp (SAN) in de certificaataanvraag automatisch worden gemaakt met Intune. Als u bijvoorbeeld een gebruikerscertificaattype selecteert, kunt u de User Principal Name (UPN) gebruiken in de alternatieve naam van het onderwerp. Als het clientcertificaat wordt gebruikt om een Network Policy Server te verifiëren, dient u de alternatieve naam van het onderwerp op de UPN in te stellen.
-- **Sleutelgebruik**: voer opties voor sleutelgebruik voor het certificaat in. Uw opties zijn:
-  - **Sleutelcodering**: sta alleen sleuteluitwisseling toe als de sleutel is gecodeerd
-  - **Digitale handtekening**: sta alleen sleuteluitwisseling toe als een digitale handtekening de sleutel helpt beveiligen
-- **Sleutelgrootte (bits)**: selecteer het aantal bits in de sleutel
-- **Hash-algoritme** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): selecteer een van de beschikbare typen hash-algoritme om met dit certificaat te gebruiken. Selecteer het sterkste beveiligingsniveau dat door de verbindende apparaten wordt ondersteund.
-- **Basiscertificaat**: kies een basis-CA-certificaatprofiel dat u eerder hebt geconfigureerd en aan de gebruiker of het apparaat hebt toegewezen. Dit CA-certificaat moet het basiscertificaat zijn voor de CA die het certificaat verleent dat u in dit certificaatprofiel gaat configureren.
-- **Uitgebreide-sleutelgebruik**: waarden **Toevoegen** voor het beoogde gebruik van het certificaat. In de meeste gevallen vereist het certificaat **Clientverificatie** zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. U kunt echter zo nodig andere sleutelgebruiken toevoegen.
-- **Registratie-instellingen**
-  - **Drempelwaarde voor verlenging (%)**: voer het percentage van de levensduur van het certificaat in dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
-  - **URL's van SCEP-server**: voer een of meer URL's in voor de NDES-servers die certificaten via SCEP verlenen.
-  - Selecteer **OK** en **maak** uw profiel.
+   - **Sleutelgebruik**: voer opties voor sleutelgebruik voor het certificaat in. Uw opties zijn:
+     - **Sleutelcodering**: sta alleen sleuteluitwisseling toe als de sleutel is gecodeerd
+     - **Digitale handtekening**: sta alleen sleuteluitwisseling toe als een digitale handtekening de sleutel helpt beveiligen
+   - **Sleutelgrootte (bits)**: selecteer het aantal bits in de sleutel
+   - **Hash-algoritme** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): selecteer een van de beschikbare typen hash-algoritme om met dit certificaat te gebruiken. Selecteer het sterkste beveiligingsniveau dat door de verbindende apparaten wordt ondersteund.
+   - **Basiscertificaat**: kies een basis-CA-certificaatprofiel dat u eerder hebt geconfigureerd en aan de gebruiker of het apparaat hebt toegewezen. Dit CA-certificaat moet het basiscertificaat zijn voor de CA die het certificaat verleent dat u in dit certificaatprofiel gaat configureren.
+   - **Uitgebreide-sleutelgebruik**: waarden **Toevoegen** voor het beoogde gebruik van het certificaat. In de meeste gevallen vereist het certificaat **Clientverificatie** zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. U kunt echter zo nodig andere sleutelgebruiken toevoegen.
+   - **Registratie-instellingen**
+     - **Drempelwaarde voor verlenging (%)**: voer het percentage van de levensduur van het certificaat in dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
+     - **URL's van SCEP-server**: voer een of meer URL's in voor de NDES-servers die certificaten via SCEP verlenen.
+     - Selecteer **OK** en **maak** uw profiel.
 
 Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profielenlijst.
 

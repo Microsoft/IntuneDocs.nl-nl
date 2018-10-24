@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: 5bcaabd66a2a9a24c3ee3f7c49cf7689d1f60eed
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141674"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863141"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune
 
@@ -61,6 +61,7 @@ De volgende tabel bevat de specifieke app-typen en informatie over hoe u deze ku
 | Ingebouwde iOS-app  | Ingebouwde app | Selecteer **Ingebouwde app** als het **app-type** en selecteer vervolgens de ingebouwde app in de lijst beschikbare apps.  |
 | Ingebouwde Android-app  | Ingebouwde app | Selecteer **Ingebouwde app** als het **app-type** en selecteer vervolgens de ingebouwde app in de lijst beschikbare apps.  |
 | Web-apps  | Web-app  | Selecteer **Webkoppeling** als het **app-type** en voer vervolgens een geldige URL in die verwijst naar de web-app.  |
+| Windows-app (Win32)  | LOB-app  | Selecteer **Windows-app (Win32)** als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een installatiebestand toe met de extensie **.intunewin**.  |
 
 U kunt in Microsoft Intune apps toevoegen via **Client-apps** > **Apps** > **Toevoegen**. Het deelvenster **App toevoegen** wordt weergegeven. Hier kunt u het **app-type** selecteren. 
 
@@ -90,7 +91,7 @@ Houd rekening met de verschillende groepen gebruikers en apps die zij gebruiken 
 
 U moet eerst op basis van de vertrouwelijkheid van de gegevens in de app bepalen welke groep toegang mag krijgen tot de app. U moet mogelijk bepaalde soorten rollen binnen uw organisatie opnemen of uitsluiten. Het verkoopteam heeft misschien alleen bepaalde LOB-apps nodig, terwijl medewerkers die zich bezighouden met engineering, financiën, HR of juridische aangelegenheden mogelijk geen LOB-apps gebruiken. Daarnaast is er voor het verkoopteam mogelijk aanvullende gegevensbeveiliging nodig en moet het team op hun mobiele apparaten toegang hebben tot interne bedrijfsservices. U moet bepalen hoe deze groep met de app verbinding maakt met de resources. Worden de gegevens die worden opgehaald met de app in de cloud of op een on-premises server opgeslagen? En hoe maken de gebruikers met de app verbinding met de resources? 
 
-Intune biedt ook ondersteuning voor het inschakelen van beveiligde toegang tot mobiele apps die worden gebruikt om on-premises gegevens te openen, zoals een line-of-business-app. Doorgaans geeft u dit soort toegang met behulp van [door Intune beheerde certificaten](certificates-configure.md) voor toegangsbeheer in combinatie met een standaard VPN-gateway of proxy in het perimeternetwerk, zoals de Azure Active Directory-toepassingsproxy. U kunt met de [App Wrapping Tool en App SDK](apps-prepare-mobile-application-management.md) van Intune de opgehaalde gegevens binnen de LOB-app houden, zodat de bedrijfsgegevens niet worden doorgegeven aan consumenten-apps of -services.
+Intune biedt ook ondersteuning voor het inschakelen van beveiligde toegang tot client-apps die worden gebruikt om on-premises gegevens te openen, zoals een line-of-business-app-server. Doorgaans geeft u dit soort toegang met behulp van [door Intune beheerde certificaten](certificates-configure.md) voor toegangsbeheer in combinatie met een standaard VPN-gateway of proxy in het perimeternetwerk, zoals de Azure Active Directory-toepassingsproxy. U kunt met de [App Wrapping Tool en App SDK](apps-prepare-mobile-application-management.md) van Intune de opgehaalde gegevens binnen de LOB-app houden, zodat de bedrijfsgegevens niet worden doorgegeven aan consumenten-apps of -services.
 
 In de [Intune-handleiding voor implementatieplanning, ontwerp en implementatie](planning-guide.md) kunt u lezen hoe u bepaalt welke organisatiegroepen gekoppeld zijn aan elk gebruiksscenario en ondergeschikt gebruiksscenario voor apps. Raadpleeg [Apps aan groepen toewijzen met Microsoft Intune](apps-deploy.md) voor meer informatie over het toewijzen van apps aan groepen.
 
@@ -194,3 +195,4 @@ Als u wilt leren hoe u voor elk platform apps aan Intune toevoegt, raadpleegt u:
 - [Office 365-apps voor Windows 10](apps-add-office365.md)
 - [Office 365-apps voor macOS](apps-add-office365-macos.md)
 - [Ingebouwde apps](apps-add-built-in.md)
+- [Win32-apps](apps-win32-app-management.md) 

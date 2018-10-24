@@ -1,42 +1,40 @@
 ---
-title: Webtoegang beheren met de app Managed Browser
+title: Webtoegang beheren met een met beleid beveiligde browser
 titlesuffix: Microsoft Intune
-description: Implementeer d app Managed Browser om websurfen en de overdracht van webgegevens naar andere apps te beperken.
+description: Met behulp van een browser die met beleid is beveiligd kan surfen op het web en de overdracht van gegevens van internet worden beperkt.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
-ms.reviewer: maxles
+ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb4a80a9de03844c6fffa5e56f09c375645f9188
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: cb7eb4b3845b8b5f0eafed95fa081955b99f1af7
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864538"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863158"
 ---
-# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid voor beveiligde browsers met Microsoft Intune
+# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid voor beveiligde browsers met Microsoft Intune  
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Beveiligde browsers omvatten Microsoft Edge en Intune Managed Browser. Edge en Managed Browser zijn apps om te browsen op internet die u voor gebruik in uw organisatie kunt downloaden in publieke app stores. Als u deze configureert met Intune, bieden beveiligde browsers de volgende mogelijkheden:
-- Toegang tot bedrijfssites en SaaS-apps met eenmalige aanmelding via de MyApps-service, met beveiliging van de webgegevens.
-- Vooraf geconfigureerd met een lijst met URL's en domeinen om te beperken naar welke sites de gebruiker in de zakelijke context kan navigeren.
-- Vooraf geconfigureerd met een startpagina en bladwijzers die u opgeeft.
+Met behulp van een browser die wordt beveiligd met Intune-beleid (Microsoft Edge of Intune Managed Browser), kunt u ervoor zorgen dat de toegang tot zakelijke websites altijd is beveiligd.  Als u deze configureert met Intune, bieden beveiligde browsers de volgende voordelen:
 
-Aangezien Edge en Managed Browser zijn geïntegreerd met de Intune SDK, kunt u ook beleid voor app-beveiliging toepassen op de apps, waaronder:
-- Beperkingen voor het knippen, kopiëren en plakken van gegevens
-- Voorkomen dat er schermopnamen worden gemaakt
-- Afdwingen dat koppelingen naar inhoud die gebruikers selecteren uitsluitend worden geopend in andere beheerde apps.
+- Beleid voor toepassingsbeveiliging.
+- Voorwaardelijke toegang.
+- Eenmalige aanmelding.
+- Configuratie-instellingen voor toepassingen.
+- Proxy-integratie met Azure-toepassingen.
 
-Zie [Wat is beveiligingsbeleid voor apps?](app-protection-policy.md) voor meer informatie.
+## <a name="getting-started"></a>Aan de slag
 
 U kunt deze instellingen toepassen op:
 
@@ -57,9 +55,7 @@ U kunt beleidsregels voor beveiligde browsers maken voor de volgende typen appar
 
 >[!IMPORTANT]
 >Oudere versies van Android en iOS kunnen Managed Browser nog steeds gebruiken, maar er kunnen geen nieuwe versies van de app op worden geïnstalleerd en kan er dus geen gebruik worden gemaakt van alle mogelijkheden van de app. U wordt aangeraden deze apparaten bij te werken tot een ondersteunde versie van het besturingssysteem.
-
-
-Microsoft Edge en Intune Managed Browser ondersteunen het openen van webinhoud van [Microsoft Intune-toepassingspartners](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+    
 
 ## <a name="conditional-access-for-protected-browsers"></a>Voorwaardelijke toegang voor de beveiligde browsers
 
@@ -94,11 +90,11 @@ Nadat het bovenstaande beleid is geconfigureerd, worden gebruikers gedwongen Int
 
 De Managed Browser ondersteunt geen klassiek beleid voor voorwaardelijke toegang. Zie [Klassiek beleid migreren in Azure Portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration) voor meer informatie.
 
-##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Eenmalige aanmelding voor met Azure AD verbonden web-apps in Intune Managed Browser
+##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-policy-protected-browsers"></a>Eenmalige aanmelding voor met Azure AD verbonden web-apps in met beleid beveiligde browsers
 
-De Intune Managed Browser-toepassing op iOS en Android kan nu eenmalige aanmelding gebruiken voor alle web-apps (SaaS en on-premises) die met Azure AD zijn verbonden. Wanneer de Microsoft Authenticator-app aanwezig is op iOS of de Intune-bedrijfsportal-app op Android, kunnen gebruikers van Intune Managed Browser toegang krijgen tot met Azure AD verbonden web-apps zonder dat ze hun referenties opnieuw hoeven in te voeren.
+In Microsoft Edge en Intune Managed Browser op iOS en Android kan eenmalige aanmelding worden gebruikt voor alle web-apps (SaaS en on-premises) die met Azure AD zijn verbonden. Wanneer de Microsoft Authenticator-app aanwezig is op iOS of de Intune-bedrijfsportal-app op Android, kunnen gebruikers van een met beleid beveiligde browser toegang krijgen tot met Azure AD verbonden web-apps zonder dat ze hun referenties opnieuw hoeven in te voeren.
 
-Voor eenmalige aanmelding in Intune Managed Browser moet uw apparaat zijn geregistreerd door de Microsoft Authenticator-app voor iOS of de Intune-bedrijfsportal voor Android. Gebruikers met de Authenticator-app of Intune-bedrijfsportal wordt gevraagd hun apparaat te registreren wanneer ze naar een met Azure AD verbonden web-app in Intune Managed Browser navigeren, als hun apparaat nog niet is geregistreerd door een andere toepassing. Nadat het apparaat is geregistreerd met het account dat wordt beheerd door Intune, wordt dat account voor eenmalige aanmelding ingeschakeld voor met Azure AD verbonden web-apps. 
+Voor eenmalige aanmelding moet uw apparaat zijn geregistreerd door de Microsoft Authenticator-app voor iOS of de Intune-bedrijfsportal voor Android. Gebruikers met de Authenticator-app of Intune-bedrijfsportal wordt gevraagd hun apparaat te registreren wanneer ze naar een met Azure AD verbonden web-app in een met beleid beveiligde browser navigeren, als hun apparaat nog niet is geregistreerd door een andere toepassing. Nadat het apparaat is geregistreerd met het account dat wordt beheerd door Intune, wordt dat account voor eenmalige aanmelding ingeschakeld voor met Azure AD verbonden web-apps. 
 
 > [!NOTE]
 > Apparaatregistratie is eenvoudig inchecken met de Azure AD-service. Dit vereist geen volledige apparaatinschrijving en geeft IT geen extra bevoegdheden op het apparaat.

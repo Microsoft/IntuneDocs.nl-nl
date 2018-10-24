@@ -6,21 +6,21 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 10/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
-ms.reviewer: mghadial
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: f96ca3075bab5c8bacaea62bb4fc04bd957cf01e
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329407"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863175"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Gegevens selectief wissen met toegangsacties voor het app-beveiligingsbeleid in Intune
 
@@ -61,7 +61,7 @@ Voor iOS kunt u acties configureren voor de volgende instellingen met behulp van
 -  Apparaatmodel(len)
 
 Als u de instelling voor **apparaatmodellen** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in met iOS-modelaanduidingen. U vindt de iOS-modelaanduidingen onder de kolom Apparaattype in [Ondersteuningsdocumentatie voor HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
-Voorbeeldinvoer: *iPhone5,2; iPhone5,3*
+Voorbeeldinvoer: *iPhone5,2;iPhone5,3*
 
 Op apparaten van eindgebruikers moet de Intune-client actie ondernemen op basis van tekenreeksen van het apparaatmodel die zijn opgegeven in Intune-beleid voor toepassingsbeveiliging. Het afstemmen is volledig afhankelijk van wat het apparaat rapporteert. U (de IT-beheerder) wordt aangeraden om ervoor te zorgen dat het beoogde gedrag optreedt door deze instelling in een kleine groep gebruikers te testen op basis van verschillende apparaatfabrikanten en -modellen. De standaardwaarde is **Niet geconfigureerd**.<br>
 Stel een van de volgende acties in: 
@@ -69,7 +69,7 @@ Stel een van de volgende acties in:
 - Opgegeven toestaan (wissen indien niet opgegeven)
 
 **Wat gebeurt er als de IT-beheerder een andere lijst met iOS-modelaanduidingen opgeeft terwijl er al beleid van kracht is voor dezelfde apps en dezelfde Intune-gebruiker?**<br>
-Als er zich conflicten voordoen tussen het ene app-beschermingsbeleid voor geconfigureerde waarden en het andere, gaat Intune doorgaans uit van de meest beperkende aanpak. Het resulterende beleid voor de betreffende app die door de betreffende Intune-gebruiker wordt geopend, bestaat dan uit de overlap van de vermelde iOS-modelaanduidingen in *Beleid A* en *Beleid B* voor dezelfde app-/gebruikercombinatie. *Beleid A* specificeert bijvoorbeeld 'iPhone5,2; iPhone5,3', terwijl *Beleid B* 'iPhone5,3' specificeert. Het resulterende beleid waarmee een Intune-gebruiker op wie zowel *Beleid A* als *Beleid B* betrekking heeft, te maken krijgt, is dan 'iPhone5,3'. 
+Als er zich conflicten voordoen tussen het ene app-beschermingsbeleid voor geconfigureerde waarden en het andere, gaat Intune doorgaans uit van de meest beperkende aanpak. Het resulterende beleid voor de betreffende app die door de betreffende Intune-gebruiker wordt geopend, bestaat dan uit de overlap van de vermelde iOS-modelaanduidingen in *Beleid A* en *Beleid B* voor dezelfde app-/gebruikercombinatie. *Beleid A* specificeert bijvoorbeeld 'iPhone5,2;iPhone5,3', terwijl *Beleid B* 'iPhone5,3' specificeert. Het resulterende beleid voor een Intune-gebruiker op wie zowel *Beleid A* als *Beleid B* is gericht, is dan 'iPhone5,3'. 
 
 ### <a name="android-policy-settings"></a>Beleidsinstellingen voor Android
 
@@ -83,10 +83,10 @@ Voor Android kunt u acties configureren voor de volgende instellingen met behulp
 -  Apparaatfabrikant(en)
 
 Als u de instelling **Apparaatfabrikant(en)** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in van Android-producenten. U vindt de Android-fabrikant van een apparaat in de apparaatinstellingen.<br>
-Voorbeeldinvoer: *Fabrikant A; Fabrikant B* 
+Voorbeeldinvoer: *Fabrikant A;Fabrikant B* 
 
 >[!NOTE]
-> Dit is een lijst met algemene fabrikanten die apparaten met Intune hebben die als invoer kunnen worden gebruikt: Asus; BlackBerry; Bq; Gionee; Google; HMD global. HTC; Huawei; Infinix; Kyocera; Lemobile; Lenovo; LGE; Motorola; Oneplus; Oppo; Samsung; Scherpe; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
+> Dit is een lijst met algemene fabrikanten die apparaten met Intune hebben die als invoer kunnen worden gebruikt: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
 
 Op apparaten van eindgebruikers moet de Intune-client actie ondernemen op basis van tekenreeksen van het apparaatmodel die zijn opgegeven in Intune-beleid voor toepassingsbeveiliging. Het afstemmen is volledig afhankelijk van wat het apparaat rapporteert. U (de IT-beheerder) wordt aangeraden om ervoor te zorgen dat het beoogde gedrag optreedt door deze instelling in een kleine gebruikersgroep te testen op basis van verschillende apparaatfabrikanten en -modellen. De standaardwaarde is **Niet geconfigureerd**.<br>
 Stel een van de volgende acties in: 
@@ -94,7 +94,7 @@ Stel een van de volgende acties in:
 - Opgegeven toestaan (wissen indien niet opgegeven)
 
 **Wat gebeurt er als de IT-beheerder een andere lijst met Android-fabrikanten opgeeft terwijl er al beleid van kracht is voor dezelfde apps en dezelfde Intune-gebruiker?**<br>
-Als er zich conflicten voordoen tussen het ene app-beschermingsbeleid voor geconfigureerde waarden en het andere, gaat Intune doorgaans uit van de meest beperkende aanpak. Het resulterende beleid voor de betreffende app die door de betreffende Intune-gebruiker wordt geopend, bestaat dan uit de overlap van de vermelde Android-fabrikanten in *Beleid A* en *Beleid B* voor dezelfde app-/gebruikercombinatie. *Beleid A* specificeert bijvoorbeeld 'Google; Samsung', terwijl *Beleid B* 'Google' specificeert. Het resulterende beleid waarmee een Intune-gebruiker op wie zowel *Beleid A* als *Beleid B* betrekking heeft, te maken krijgt, is dan 'Google'. 
+Als er zich conflicten voordoen tussen het ene app-beschermingsbeleid voor geconfigureerde waarden en het andere, gaat Intune doorgaans uit van de meest beperkende aanpak. Het resulterende beleid voor de betreffende app die door de betreffende Intune-gebruiker wordt geopend, bestaat dan uit de overlap van de vermelde Android-fabrikanten in *Beleid A* en *Beleid B* voor dezelfde app-/gebruikercombinatie. *Beleid A* specificeert bijvoorbeeld 'Google;Samsung' en *Beleid B* 'Google'. Het resulterende beleid voor een Intune-gebruiker op wie zowel *Beleid A* als *Beleid B* is gericht, is dan 'Google'. 
 
 ### <a name="additional-settings-and-actions"></a>Extra instellingen en acties 
 
@@ -119,5 +119,3 @@ Ga voor meer informatie over het app-beveiligingsbeleid in Intune naar:
 - [App-beveiligingsbeleid maken en toewijzen](app-protection-policies.md)
 - [Beveiligingsbeleidsinstellingen voor iOS-apps](app-protection-policy-settings-ios.md)
 - [Instellingen voor beveiligingsbeleid voor apps voor Android in Microsoft Intune](app-protection-policy-settings-android.md) 
-
-

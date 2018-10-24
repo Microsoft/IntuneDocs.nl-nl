@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5eba9f6f920b4bf868e26b47e4043babe62a8945
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148028"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828037"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Een bedreiging oplossen die door SandBlast Mobile Protect is gevonden
 
@@ -37,7 +37,12 @@ In dit artikel wordt beschreven hoe u waarschuwingen voor bedreigingen van Sandb
 ## <a name="troubleshoot-virus-or-security-threat"></a>Virus- of beveiligingsbedreiging oplossen  
 Als er een virus- of beveiligingsbedreiging wordt gedetecteerd, handelt de SandBlast Mobile Protect-app op basis van het toegangsbeleid van uw organisatie. Het toegangsbeleid kan verhinderen dat u toegang hebt tot het netwerk, de apps en de e-mail van uw werk.  
 
-U wordt door SandBlast Mobile Protect gevraagd om actie te ondernemen om opnieuw toegang te krijgen. Selecteer de bedreiging en volg de instructies in de app op om deze te verhelpen.  
+![Voorbeeldschermafbeelding van een waarschuwingsbericht van de SEP Mobile-app.](./media/skycure-list-of-potential-issues-android.png)  
+U wordt door SandBlast Mobile Protect gevraagd om actie te ondernemen om opnieuw toegang te krijgen. Selecteer de bedreiging en volg de instructies in de app op om deze te verhelpen.
+
+Aangezien de app is geïntegreerd met MDM-provider van uw bedrijf, ziet u ook een waarschuwing over beperkte toegang in de bedrijfsportal-app. In de waarschuwing krijgt u de instructie om Sandblast Mobile Protect te openen om de virus- of beveiligingsbedreiging op te lossen.  
+
+  ![Voorbeeldschermopname van de apparaatpagina van de bedrijfsportal, met de waarschuwing van Sandblast Mobile Protect.](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>Een app-bedreiging oplossen  
 
@@ -45,4 +50,4 @@ Als u een app installeert die als een bedreiging voor uw apparaat wordt gezien, 
 
 Als u dit wilt oplossen, selecteert u de app in de lijst met bedreigingen in SandBlast Mobile Protect. Volg daarna de aanwijzingen op voor het verwijderen van de app.  
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980)
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  
