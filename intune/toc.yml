@@ -627,41 +627,6 @@ items:
     href: manage-os-versions.md
   - name: Software-updates beheren
     href: windows-update-for-business-configure.md
-  - name: Pc's beheren met softwareagent
-    href: manage-windows-pcs-with-microsoft-intune.md
-    items:
-    - name: Pc-beheer vergelijken
-      href: pc-management-comparison.md
-    - name: De pc-client installeren
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: Algemene beheertaken voor pc's
-      href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
-      items:
-      - name: Pc-beleid
-        href: use-policies-to-simplify-windows-pc-management.md
-      - name: Inventaris weergeven
-        href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
-      - name: Pc's buiten gebruik stellen
-        href: retire-a-windows-pc-with-microsoft-intune.md
-      - name: Pc's aan gebruikers koppelen
-        href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
-      - name: Hulp op afstand
-        href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
-    - name: Beleid voor het beveiligen van Windows-pc's
-      href: policies-to-protect-windows-pcs-in-microsoft-intune.md
-      items:
-      - name: Software-updates
-        href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
-      - name: Windows Firewall
-        href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
-      - name: Endpoint Protection
-        href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
-    - name: Apps toevoegen voor Intune-client-pc's
-      href: add-apps-for-windows-pcs-in-microsoft-intune.md
-    - name: Licentieovereenkomsten beheren
-      href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
-    - name: Beleidsconflicten oplossen
-      href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Windows Holographic beheren
     href: windows-holographic-for-business.md
     items:
@@ -704,18 +669,18 @@ items:
           href: android-pulse-secure-per-app-vpn.md
         - name: Apps voor Samsung Knox Standard toestaan/blokkeren
           href: samsung-knox-apps-allow-block.md
+      - name: Android Enterprise
+        href: custom-settings-android-for-work.md
       - name: iOS
         href: custom-settings-ios.md
       - name: macOS
         href: custom-settings-macos.md
-      - name: Windows Phone 8.1
-        href: custom-settings-windows-phone-8-1.md
       - name: Windows 10
         href: custom-settings-windows-10.md
       - name: Windows Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Android Enterprise
-        href: custom-settings-android-for-work.md
+      - name: Windows Phone 8.1
+        href: custom-settings-windows-phone-8-1.md
 - name: Richtlijnen voor ontwikkelaars
   items:
   - name: API voor het toevoegen van een externe certificeringsinstantie
@@ -831,11 +796,46 @@ items:
       href: groups-get-started.md
     - name: Verouderde Intune-client voor pc
       href: intune-legacy-pc-client.md
+    - name: Pc's beheren met softwareagent
+      href: manage-windows-pcs-with-microsoft-intune.md
+      items:
+      - name: Pc-beheer vergelijken
+        href: pc-management-comparison.md
+      - name: De pc-client installeren
+        href: install-the-windows-pc-client-with-microsoft-intune.md
+      - name: Algemene beheertaken voor pc's
+        href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
+        items:
+        - name: Pc-beleid
+          href: use-policies-to-simplify-windows-pc-management.md
+        - name: Inventaris weergeven
+          href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
+        - name: Pc's buiten gebruik stellen
+          href: retire-a-windows-pc-with-microsoft-intune.md
+        - name: Pc's aan gebruikers koppelen
+          href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
+        - name: Hulp op afstand
+          href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
+      - name: Beleid voor het beveiligen van Windows-pc's
+        href: policies-to-protect-windows-pcs-in-microsoft-intune.md
+        items:
+        - name: Software-updates
+          href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
+        - name: Windows Firewall
+          href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+        - name: Endpoint Protection
+          href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+      - name: Apps toevoegen voor Intune-client-pc's
+        href: add-apps-for-windows-pcs-in-microsoft-intune.md
+      - name: Licentieovereenkomsten beheren
+        href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
+      - name: Beleidsconflicten oplossen
+        href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Verklarende woordenlijst
     href: intune-glossary.md
-ms.openlocfilehash: ad9fe7c9c344cbbd244515cb9c2025b46e74eddd
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 809323f7e55e5c1fc010528744e4d0c57273f622
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643073"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983224"
