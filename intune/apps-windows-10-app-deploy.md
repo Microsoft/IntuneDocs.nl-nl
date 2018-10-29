@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,21 +15,23 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61e2ec9def6ecba265521cf801322d592dd4dac9
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: 61bb874fd914c69669197110ee5901ccfbc3f594
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866351"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075607"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementatie van Windows 10-apps met Microsoft Intune 
 
 Microsoft Intune ondersteunt momenteel verschillende typen apps en implementatiescenario's op Windows 10-apparaten. Nadat u een app hebt toegevoegd aan Intune, kunt u de app toewijzen aan gebruikers en apparaten. De volgende informatie bevat meer details over de ondersteunde Windows 10-scenario's. Daarnaast vindt u hier belangrijke informatie die u in acht moet nemen wanneer u apps naar Windows implementeert. 
 
-LOB-apps (Line-Of-Business) en Microsoft Store voor Bedrijven-apps zijn de typen apps die op Windows 10-apparaten worden ondersteund. De bestandsextensies voor Windows-apps zijn **.msi**, **.appx**, **.appxbundle**, **.msix** en **.msixbundle**.  
+LOB-apps (Line-Of-Business) en Microsoft Store voor Bedrijven-apps zijn de typen apps die op Windows 10-apparaten worden ondersteund. De bestandsextensies voor Windows-apps omvatten **.msi**, **.appx** en **.appxbundle**.  
 
 > [!Note]
-> De minimaal benodigde Windows 10-update voor de implementatie van apps in apparaatcontext is [23 mei 2018: KB4100403 (OS Build 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).
+> Dit zijn de minimaal vereiste Windows 10-updates om moderne apps te implementeren:
+> - Voor Windows 10 1803: [23 mei 2018: KB4100403 (build van besturingssysteem: 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403).
+> - Voor Windows 10 1709: [21 juni 2018: KB4284822 (build van besturingssysteem: 16299.522)](https://support.microsoft.com/help/4284822).
 
 ## <a name="windows-10-line-of-business-apps"></a>Windows 10 Line-Of-Business-apps
 
@@ -44,8 +46,13 @@ Afhankelijk van het type app kan de app op twee manieren worden geïnstalleerd o
 
 - **Gebruikerscontext**: wanneer een app wordt geïmplementeerd in de gebruikerscontext, wordt de beheerde app geïnstalleerd op het apparaat van de gebruiker wanneer de gebruiker zich aanmeldt op het apparaat. De installatie van de app wordt pas uitgevoerd als de gebruiker zich op het apparaat aanmeldt. 
     - Moderne Line-Of-Business-apps en Microsoft Store voor Bedrijven-apps (zowel online als offline) kunnen in de gebruikerscontext worden geïmplementeerd en bieden ondersteuning voor zowel de intentie Vereist als Beschikbaar.
+    - Win32-apps die zijn gemaakt voor **Gebruikersmodus** of **Dual-modus**, kunnen in de gebruikerscontext worden geïmplementeerd en bieden ondersteuning voor zowel de intentie **Vereist** als de intentie **Beschikbaar**. 
 - **Apparaatcontext**: wanneer een app wordt geïmplementeerd in de apparaatcontext, wordt de beheerde app rechtstreeks op het apparaat geïnstalleerd door Intune.
     - Alleen moderne Line-Of-Business-apps en online gelicentieerde Microsoft Store voor Bedrijven-apps kunnen in de apparaatcontext worden geïmplementeerd en ondersteunen alleen de intentie Vereist.
+    - Win32-apps die zijn gemaakt voor **Machinemodus** of **Dual-modus**, kunnen in de gebruikerscontext worden geïmplementeerd en bieden alleen ondersteuning voor de intentie **Vereist**.
+
+> [!NOTE]
+> Voor Win32-apps die zijn gemaakt voor **Dual-modus**, moet u (de beheerder) aangeven of de app werkt in **Gebruikersmodus** of in **Machinemodus** voor alle toewijzingen die aan dat exemplaar zijn gekoppeld. De implementatiecontext kan niet per toewijzing worden gewijzigd.  
 
 Wanneer een app wordt geïmplementeerd in de apparaatcontext, slaagt de installatie alleen wanneer deze bestemd is voor een apparaat dat de apparaatcontext ondersteunt. Bovendien ondersteunt implementatie in de apparaatcontext de volgende voorwaarden:
 - Als een app is geïmplementeerd in de apparaatcontext en bestemd is voor een gebruiker, mislukt de installatie met de volgende status en wordt de volgende fout weergegeven in de beheerconsole:

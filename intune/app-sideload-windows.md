@@ -5,19 +5,19 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 1c0c197536cb6d6b452ff5e3607ad1af2d5a4ca8
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 0c1daa93ff38d1f76ab8c203bf2d989318ecdf62
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058894"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425220"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Line-of-business-apps ondertekenen, zodat ze kunnen worden geïmplementeerd op Windows-apparaten met Intune
 
@@ -77,7 +77,7 @@ U kunt de bedrijfsportal-app implementeren op Windows-apparaten (inclusief Windo
 
     -   WinPhoneCompanyPortal.ps1:  een PowerShell-script waarmee u het bestand van de bedrijfsportal-app kunt ondertekenen, zodat het kan worden geïmplementeerd naar Windows Phone 8.1-apparaten
 
-    U kunt ook de Windows Phone 8.1-bedrijfsportal (offline gelicentieerd pakket) of de Windows 10-bedrijfsportal (offline gelicentieerd pakket) downloaden via [Microsoft Store voor Bedrijven](http://businessstore.microsoft.com/). De bedrijfsportal-app moet worden opgehaald met een offline-licentie en het juiste pakket moet worden gedownload voor offlinegebruik. In de vermeldingen voor het Windows 8- en Windows Phone 8-platform in de selectie wordt verwezen naar de versies voor Windows 8.1. Zie [Apps beheren die u hebt aangeschaft in Microsoft Store voor Bedrijven](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) als u wilt weten hoe u dit met Intune kunt doen.
+    U kunt ook de Windows Phone 8.1-bedrijfsportal (offline gelicentieerd pakket) of de Windows 10-bedrijfsportal (offline gelicentieerd pakket) downloaden via [Microsoft Store voor Bedrijven](http://businessstore.microsoft.com/). De bedrijfsportal-app moet worden opgehaald met een offline-licentie en het juiste pakket moet worden gedownload voor offlinegebruik. In de vermeldingen voor het Windows 8- en Windows Phone 8-platform in de selectie wordt verwezen naar de versies voor Windows 8.1. Zie [Apps beheren die u hebt aangeschaft in Microsoft Store voor Bedrijven](windows-store-for-business.md) als u wilt weten hoe u dit met Intune kunt doen.
 
 2.  **De Windows Phone SDK downloaden** Download de Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) en installeer de SDK op uw computer. Deze SDK is nodig om een token voor toepassingsinschrijving te genereren.
 
@@ -119,7 +119,7 @@ U kunt de bedrijfsportal-app implementeren op Windows-apparaten (inclusief Windo
 
     -   `-EnterpriseId`: de ondernemings-id. Dit argument of AetxPath moet worden opgegeven. Als dit argument niet is opgegeven, wordt de ondernemings-id uit het AETX-bestand gelezen. Bijvoorbeeld 1000000001
 
-6.  Implementeer de Windows Phone 8.1-bedrijfsportal-app (SSP.appx). Zie [Windows Phone Line-Of-Business-apps (LOB) toevoegen](lob-apps-windows-phone.md) ([klassieke portal](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)) voor meer informatie.
+6.  Implementeer de Windows Phone 8.1-bedrijfsportal-app (SSP.appx). Voor richtlijnen, zie [Instructies voor toevoegen van LOB-apps (line-of-business) in Windows Phone ](lob-apps-windows-phone.md).
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Het zakelijke Symantec-certificaat voor ondertekening van programmacode vernieuwen
 

@@ -15,12 +15,12 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: efecd454c2e6ba8454cfd68291a96c6d4c8a2703
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a7af46f0f9db0d849e3c75da36c5fe9354554107
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31030256"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643107"
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Contact opnemen met telefonische ondersteuning voor Microsoft Intune
 
@@ -76,7 +76,7 @@ In dit onderwerp staan de contactgegevens voor telefonische ondersteuning voor M
 |    Liechtenstein    |                        24 x 7                         |  Maandag tot vrijdag<br /><br />09:00 – 17:00 CET (UTC +1)   | Frans&#42;, Duits&#42;, Italiaans&#42;, Engels |                                                                       0800000300                                                                       |                                                                          0227614114                                                                           |
 |      Litouwen      |                        24 x 7                         |  Maandag tot vrijdag<br /><br />09:00 – 17:00 EET (UTC +2)   |            Litouws&#42;, Engels             |                                                                       880030960                                                                        |                                                                                                                                                               |
 |     Luxemburg      |                        24 x 7                         |  Maandag tot vrijdag<br /><br />09:00 – 17:00 CET (UTC +1)   |        Frans&#42;, Duits&#42;, Engels        |                                                                        80021094                                                                        |                                                                           24871510                                                                            |
-|      Macedonië (FYROM)      |                        24 x 7                         |  Maandag tot vrijdag<br /><br />09:00 – 17:00 CET (UTC +1)   |                     Engels                     |                  0800-94288<br /><br />Stap 1: draai het telefoonnummer<br /><br />Stap 2: voer 001 in<br /><br />Stap 3: voer 877-663-5075 in                   |                                                                                                                                                               |
+|      Macedonië, FYRO      |                        24 x 7                         |  Maandag tot vrijdag<br /><br />09:00 – 17:00 CET (UTC +1)   |                     Engels                     |                  0800-94288<br /><br />Stap 1: draai het telefoonnummer<br /><br />Stap 2: voer 001 in<br /><br />Stap 3: voer 877-663-5075 in                   |                                                                                                                                                               |
 |      Maleisië       |                        24 x 7                         |  Maandag tot vrijdag<br /><br />09:00 – 18:00 MYT (UTC +8)   |        Bahasa&#42;, Maleis&#42;, Engels         |                                                                      1800 220030                                                                       |                                                                           362074606                                                                           |
 |        Malta        |                        24 x 7                         |  Maandag tot vrijdag<br /><br />09:00 – 17:00 CET (UTC +1)   |                     Engels                     |                                                                       0 80062231                                                                       |                                                                                                                                                               |
 |       Mexico        |                        24 x 7                         |  Maandag tot vrijdag<br /><br />09:00 – 17:00 CST (UTC -6)   |              Spaans&#42;, Engels              |                                                                     01-8005630605                                                                      |                                                                          55473856567                                                                          |

@@ -15,18 +15,15 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9486bb6d0d9747101535cef9f45931fa1b2cefe6
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 2f3b28a7a5c1f97871a40f108a5fae6cc6b93424
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231437"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424880"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-**Als u zich niet in Azure Portal bevindt**, wordt in dit onderwerp uitgelegd hoe u een [app-beveiligingsbeleid kunt maken](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in de klassieke Intune-portal.
-
 
 U kunt de nalevingsstatus van het MAM-beleid dat u hebt toegepast op gebruikers controleren in het deelvenster Intune-app-beveiliging in de [Azure-portal](https://portal.azure.com). U vindt er informatie over de gebruikers waarop het MAM-beleid van toepassing is, de nalevingsstatus en mogelijke problemen die uw gebruikers ervaren.
 
@@ -37,6 +34,9 @@ Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 -   Detailweergave
 
 -   Rapportageweergave
+
+> [!NOTE]
+> Zie [Instructies voor het maken en toewijzen van beveiligingsbeleid voor apps?](app-protection-policies.md) voor meer informatie over het maken van app-beveiligingsbeleid.
 
 ## <a name="summary-view"></a>Samenvattingsweergave
 

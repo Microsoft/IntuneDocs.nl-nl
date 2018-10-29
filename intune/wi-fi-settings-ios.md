@@ -1,82 +1,133 @@
 ---
-title: Wi-Fi-instellingen in Microsoft Intune configureren voor apparaten met iOS
+title: Wi-Fi-instellingen voor iOS-apparaten configureren in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
-description: Meer informatie over Intune Wi-Fi-configuratie-instellingen op apparaten met iOS
+description: Een configuratieprofiel voor een Wi-Fi-apparaat toevoegen of maken voor iOS-apparaten. Zie de verschillende instellingen, zoals voor het toevoegen van certificaten, voor het kiezen van een EAP-type en het selecteren van een verificatiemethode in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4b723bd23681d98463adae83be5f74b556dc779e
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: fa81e8979f48a0b027f4860cfc5d2a88e3b30772
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321149"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425237"
 ---
-# <a name="wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Wi-Fi-instellingen voor iOS-apparaten in Microsoft Intune
+# <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Wi-Fi-instellingen voor iOS-apparaten in Microsoft Intune toevoegen
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+U kunt een profiel maken met specifieke Wi-Fi-instellingen en dit profiel vervolgens implementeren op uw iOS-apparaten. Microsoft Intune biedt veel functies, waaronder het verifiëren bij het netwerk, het toevoegen van een PKS- of SCEP-certificaat en meer.
 
-In dit artikel komt u meer te weten over de Wi-Fi-instellingen die u in Microsoft Intune kunt configureren voor apparaten met iOS.
+Er zijn twee categorieën Wi-Fi-instellingen: instellingen op Basic- en op Enterprise-niveau.
 
-## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Wi-Fi-instellingen voor basis- en ondernemingsprofielen
+In dit artikel worden deze instellingen beschreven.
 
-- **Netwerknaam**: voer een naam voor deze Wi-Fi-verbinding in. Dit is de naam die gebruikers te zien krijgen in de lijst met beschikbare verbindingen op hun apparaat.
-- **SSID**: afkorting voor Service Set Identifier. Dit is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de netwerknaam die u hebt geconfigureerd wanneer ze de verbinding kiezen.
-- **Automatisch verbinding maken**: als u deze optie kiest, maakt het apparaat verbinding wanneer het zich in het bereik van dit netwerk bevindt.
-- **Verborgen netwerk**: hiermee wordt voorkomen dat dit netwerk wordt weergegeven in de lijst met beschikbare netwerken op het apparaat.
-- **Vooraf gedeelde sleutel** - 
-- **Proxyinstellingen**: u kunt kiezen uit:
-    - **Geen**: er zijn geen proxyinstellingen geconfigureerd.
-    - **Handmatig**: voer het **adres van de proxyserver** (als IP-adres) en het bijbehorende **poortnummer** in.
-    - **Automatisch**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com**) in die het configuratiebestand bevat.
+## <a name="before-you-begin"></a>Voordat u begint
 
-## <a name="wi-fi-settings-for-basic-profiles-only"></a>Wi-Fi-instellingen voor alleen basisprofielen
+[Maak een apparaatprofiel](device-profile-create.md).
 
-- **Beveiligingstype**: selecteer het beveiligingsprotocol dat u wilt gebruiken voor verificatie bij het Wi-Fi-netwerk. U kunt kiezen uit:
-    - **Open (geen verificatie)**: gebruik deze optie alleen als het netwerk niet beveiligd is.
-    - **WPA/WPA2 - Persoonlijk**
-    - **WEP**
+## <a name="basic-profiles"></a>Basic-profielen
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>Wi-Fi-instellingen voor alleen ondernemingsprofielen
+- **Wi-Fi-type**: kies **Basic**.
+- **Netwerknaam**: voer een naam in voor deze Wi-Fi-verbinding. Deze waarde krijgen gebruikers te zien in de lijst met beschikbare verbindingen op hun apparaat.
+- **SSID**: afkorting voor **Service Set Identifier**. Deze eigenschap is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de netwerknaam die u hebt geconfigureerd wanneer ze de verbinding kiezen.
+- **Automatisch verbinding maken**: kies **Inschakelen** om automatisch verbinding te maken met dit netwerk wanneer het apparaat binnen het bereik daarvan is. Kies **Uitschakelen** om te voorkomen dat apparaten automatisch verbinding maken.
+- **Verborgen netwerk**: kies **Inschakelen** om te voorkomen dat dit netwerk op het apparaat wordt weergegeven in de lijst met beschikbare netwerken. De SSID wordt niet verzonden. Kies **Uitschakelen** om dit netwerk in de lijst met beschikbare netwerken op het apparaat weer te geven.
+- **Beveiligingstype**: selecteer het beveiligingsprotocol voor de verificatie bij het Wi-Fi-netwerk. Uw opties zijn:
 
-- **EAP-type**: kies het type Extensible Authentication Protocol (EAP) dat wordt gebruikt om beveiligde draadloze verbindingen te verifiëren. U kunt kiezen uit:
-    - **EAP-FAST**
-    - **EAP-SIM**
-    - **EAP-TLS**
-    - **EAP-TTLS**
-    - **LEAP**
-    - **PEAP**
+  - **Open (geen verificatie)**: gebruik deze optie alleen als het netwerk niet beveiligd is.
+  - **WPA/WPA2 - persoonlijk**:voer het wachtwoord in in de **vooraf gedeelde sleutel**. Wanneer het netwerk van uw organisatie is ingesteld of geconfigureerd, wordt er ook een wachtwoord of netwerksleutel geconfigureerd. Voer dit wachtwoord of deze netwerksleutel in voor de PSK-waarde.
+  - **WEP**
 
-### <a name="further-options-when-you-choose-an-eap-type"></a>Overige opties wanneer u een EAP-type kiest
+- **Proxyinstellingen**: uw opties:
+  - **Geen**: er zijn geen proxyinstellingen geconfigureerd.
+  - **Handmatig**: voer het **adres van de proxyserver** als IP-adres in, samen met het bijbehorende **poortnummer**.
+  - **Automatisch**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld `http://proxy.contoso.com`) in die het configuratiebestand bevat.
 
+## <a name="enterprise-profiles"></a>Enterprise-profielen
 
-|Naam van de instelling|Meer informatie|Wanneer gebruiken|
-|--------------|-------------|----------|
-|**PAC-instellingen (Protected Access Credential)**|Selecteer dit om referenties voor beveiligde toegang te gebruiken om een geverifieerde tunnel tussen de client en de verificatieserver tot stand te brengen. Selecteer een van de volgende opties:<br>- **PAC gebruiken**: gebruik een bestaand PAC-bestand, indien aanwezig.<br>- **PAC gebruiken en inrichten**: richt het PAC-bestand in op uw apparaten.<br>- **PAC anoniem gebruiken en inrichten**: richt het PAC-bestand in op uw apparaten en zorg ervoor dat het PAC-bestand wordt ingericht zonder verificatie van de server.|EAP-type is **EAP-FAST**|
+- **Wi-Fi-type**: kies **Enterprise**.
+- **SSID**: afkorting voor **Service Set Identifier**. Deze eigenschap is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de netwerknaam die u hebt geconfigureerd wanneer ze de verbinding kiezen.
+- **Automatisch verbinding maken**: kies **Inschakelen** om automatisch verbinding te maken met dit netwerk wanneer het apparaat binnen het bereik daarvan is. Kies **Uitschakelen** om te voorkomen dat apparaten automatisch verbinding maken.
+- **Verborgen netwerk**: kies **Inschakelen** om te voorkomen dat dit netwerk op het apparaat wordt weergegeven in de lijst met beschikbare netwerken. De SSID wordt niet verzonden. Kies **Uitschakelen** om dit netwerk in de lijst met beschikbare netwerken op het apparaat weer te geven.
 
-#### <a name="server-trust"></a>Vertrouwelijke server
+- **EAP-type**: kies het type Extensible Authentication Protocol (EAP) dat wordt gebruikt om beveiligde draadloze verbindingen te verifiëren. Uw opties zijn:
 
+  - **EAP-FAST**: voer de **PAC-instellingen (Protected Access Credential)** in. Deze optie gebruikt beveiligde toegangsreferenties om een geverifieerde tunnel tussen de client en de verificatieserver te maken. Uw opties zijn:
+    - **(PAC) niet gebruiken**
+    - **(PAC) gebruiken**: als er een bestaand PAC-bestand bestaat, gebruik dit dan.
+    - **PAC gebruiken en inrichten**: maak het PAC-bestand en voeg het toe aan uw apparaten.
+    - **PAC anoniem inrichten en gebruiken**:maak het PAC-bestand en voeg het toe aan uw apparaten zonder verificatie met de server.
 
-|Naam van de instelling|Meer informatie|Wanneer gebruiken|
-|--------------|-------------|----------|
-|**Namen van certificaatservers**|Geef een of meer algemene namen op die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Als u deze informatie verstrekt, kunt u het dialoogvenster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers als zij verbinding maken met dit Wi-Fi-netwerk.|EAP-type is **EAP-TLS**, **EAP-TTLS** of **PEAP**.|
-|**Basiscertificaat voor servervalidatie**|Kies het profiel voor een vertrouwd basiscertificaat dat wordt gebruikt om de verbinding te verifiëren. |EAP-type is **EAP-TLS**, **EAP-TTLS** of **PEAP**|
-|**Identiteitsprivacy (externe identiteit)**|Geef de tekst op die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.|EAP-type is **PEAP**|
+  - **EAP-SIM**
 
+  - **EAP-TLS**: voer ook het volgende in:
 
-#### <a name="client-authentication"></a>Clientverificatie
+    - **Vertrouwelijke server** - **Namen van certificaatservers**:**voeg** een of meer algemene namen toe die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Wanneer u deze informatie invoert, kunt u het venster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers wanneer zij verbinding maken met dit Wi-Fi-netwerk.
+    - **Basiscertificaat voor servervalidatie**: kies een profiel voor een bestaand vertrouwd basiscertificaat. Dit certificaat wordt aangeboden aan de server wanneer de client verbinding met het netwerk maakt, en wordt gebruikt om de verbinding te verifiëren.
 
+      Selecteer **OK** om uw wijzigingen op te slaan.
 
-| Naam van de instelling | Meer informatie | Wanneer gebruiken |
-|---|---|---|
-| **Clientcertificaat voor clientverificatie (identiteitscertificaat)**** |  Kies het SCEP- of PKCS-certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren.  |    EAP-type is **EAP-TLS**    |
-| **Verificatiemethode** | Selecteer de verificatiemethode voor de verbinding:<br>- **Certificaten** om het SCEP- of PKCS-clientcertificaat te selecteren dat het identiteitscertificaat is dat aan de server wordt gepresenteerd.<br><br>- **Gebruikersnaam en wachtwoord** om een andere verificatiemethode op te geven. <br><br>Als u **Gebruikersnaam en wachtwoord** hebt geselecteerd, configureert u het volgende:<br><br>-  **Niet-EAP-methode (interne identiteit)** en selecteer vervolgens hoe u de verbinding verifieert. Kies uit het volgende:<br>- **Geen**<br>- **Niet-versleuteld wachtwoord (PAP)**<br>- **Challenge Handshake Authentication Protocol (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP versie 2 (MS-CHAP v2)**<br>De beschikbare opties zijn afhankelijk van het geselecteerde EAP-type.<br><br>**en**<br><br>- **Identiteitsprivacy (externe identiteit)**: geef de tekst op die wordt verzonden als reactie op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel. | EAP-type is **EAP-TTLS** of * |
+    - **Clientverificatie** - **Clientcertificaat voor clientverificatie (identiteitscertificaat)**: kies het profiel van het SCEP- of PKCS-clientcertificaat dat ook op het apparaat wordt geïmplementeerd. Dit certificaat is de identiteit die door het apparaat wordt gepresenteerd aan de server om de verbinding te verifiëren.
 
+      Selecteer **OK** om uw wijzigingen op te slaan.
+
+  - **EAP-TTLS**: voer ook het volgende in:
+
+    - **Vertrouwelijke server** - **Namen van certificaatservers**:**voeg** een of meer algemene namen toe die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Wanneer u deze informatie invoert, kunt u het venster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers wanneer zij verbinding maken met dit Wi-Fi-netwerk.
+    - **Basiscertificaat voor servervalidatie**: kies een profiel voor een bestaand vertrouwd basiscertificaat. Dit certificaat wordt aangeboden aan de server wanneer de client verbinding met het netwerk maakt, en wordt gebruikt om de verbinding te verifiëren.
+
+      Selecteer **OK** om uw wijzigingen op te slaan.
+
+    - **Clientverificatie**: kies een **verificatiemethode**. Uw opties zijn:
+
+      - **Gebruikersnaam en wachtwoord**: de gebruiker wordt gevraagd om een gebruikersnaam en wachtwoord om de verbinding te verifiëren. Voer ook in:
+        - **Niet-EAP-methode (interne identiteit)**: kies hoe u de verbinding verifieert. Zorg ervoor dat u hetzelfde protocol kiest dat op uw Wi-Fi-netwerk is geconfigureerd.
+
+          Uw opties: **niet-versleuteld wachtwoord (PAP)**, **Challenge Handshake Authentication Protocol (CHAP)**, **Microsoft CHAP (MS-CHAP)** of **Microsoft CHAP versie 2 (MS-CHAP v2)**
+
+      - **Certificaten**: kies het profiel van het SCEP- of PKCS-clientcertificaat dat ook op het apparaat is geïmplementeerd. Dit certificaat is de identiteit die door het apparaat wordt gepresenteerd aan de server om de verbinding te verifiëren.
+
+        Selecteer **OK** om uw wijzigingen op te slaan.
+
+      - **Identiteitsprivacy (externe identiteit)**: voer de tekst in die wordt verzonden als reactie op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben, zoals `anonymous`. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.
+
+  - **LEAP**
+
+  - **PEAP**: voer ook het volgende in:
+
+    - **Vertrouwelijke server** - **Namen van certificaatservers**:**voeg** een of meer algemene namen toe die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Wanneer u deze informatie invoert, kunt u het venster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers wanneer zij verbinding maken met dit Wi-Fi-netwerk.
+    - **Basiscertificaat voor servervalidatie**: kies een profiel voor een bestaand vertrouwd basiscertificaat. Dit certificaat wordt aangeboden aan de server wanneer de client verbinding met het netwerk maakt, en wordt gebruikt om de verbinding te verifiëren.
+
+      Selecteer **OK** om uw wijzigingen op te slaan.
+
+    - **Clientverificatie**: kies een **verificatiemethode**. Uw opties zijn:
+
+      - **Gebruikersnaam en wachtwoord**: de gebruiker wordt gevraagd om een gebruikersnaam en wachtwoord om de verbinding te verifiëren. 
+
+      - **Certificaten**: kies het profiel van het SCEP- of PKCS-clientcertificaat dat ook op het apparaat is geïmplementeerd. Dit certificaat is de identiteit die door het apparaat wordt gepresenteerd aan de server om de verbinding te verifiëren.
+
+        Selecteer **OK** om uw wijzigingen op te slaan.
+
+      - **Identiteitsprivacy (externe identiteit)**: voer de tekst in die wordt verzonden als reactie op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben, zoals `anonymous`. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.
+
+- **Proxyinstellingen**: uw opties:
+  - **Geen**: er zijn geen proxyinstellingen geconfigureerd.
+  - **Handmatig**: voer het **adres van de proxyserver** als IP-adres in, samen met het bijbehorende **poortnummer**.
+  - **Automatisch**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld `http://proxy.contoso.com`) in die het configuratiebestand bevat.
+
+Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt gemaakt en wordt weergegeven in de lijst met profielen.
+
+## <a name="next-steps"></a>Volgende stappen
+
+Het profiel is gemaakt, maar er gebeurt niets. Vervolgens [wijst u dit profiel toe](device-profile-assign.md).
+
+## <a name="more-resources"></a>Meer bronnen
+
+[Overzicht Wi-Fi-instellingen](wi-fi-settings-configure.md), met inbegrip van andere platforms.

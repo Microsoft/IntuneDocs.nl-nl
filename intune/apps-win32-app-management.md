@@ -15,12 +15,12 @@ ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2774a8172eb389742a3fdbf805717b6bc134b43
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: f11d1a0f51935e1bcb7318c7b0c7ba674ba2d54b
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866368"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357101"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune (zelfstandig) - Win32-app-beheer (openbare preview)
 
@@ -32,7 +32,7 @@ De zelfstandige versie van Intune heeft uitgebreidere beheermogelijkheden voor W
 - De Windows 10-client moet aan het volgende voldoen: 
     - gekoppeld aan Azure Active Directory (AAD) of Hybrid Azure Active Directory, en
     - geregistreerd bij Intune (MDM-beheerd)
-- De grootte van Windows-apps wordt in de openbare preview beperkt tot 8 GB per app 
+- De grootte van Windows-apps wordt in de openbare preview beperkt tot 2 GB per app 
 
 > [!NOTE]
 > We testen momenteel Pro- en Education-edities van Windows 10 versie 1607 en horen graag uw feedback.
@@ -51,7 +51,7 @@ U kunt het [hulpprogramma voor uploadvoorbereiding van Microsoft Intune Win32-ap
 |    `-h`     |    Help    |
 |    `-c <setup_folder>`     |    De installatiemap voor alle installatiebestanden.    |
 |   ` -s <setup_file>`     |    Installatiebestand (zoals *setup.exe* of *setup.msi*).    |
-|    `-o <output_file>`     |    Uitvoermap voor het gegenereerde *.intunewin*-bestand.    |
+|    `-o <output_folder>`     |    Uitvoermap voor het gegenereerde *.intunewin*-bestand.    |
 |    `-q`       |    Stille modus    |
 
 ### <a name="example-commands"></a>Voorbeeldopdrachten

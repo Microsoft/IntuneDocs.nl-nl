@@ -1,7 +1,7 @@
 ---
-title: Wi-Fi-instellingen configureren voor Android-apparaten in Microsoft Intune - Azure | Microsoft Docs
+title: Wi-Fi-instellingen configureren voor Android Enterprise- en Kiosk-apparaten - Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
-description: Maak een configuratieprofiel voor een Wi-Fi-apparaat voor Android of voeg er een toe. Zie de verschillende instellingen, zoals voor het toevoegen van certificaten, voor het kiezen van een EAP-type en het selecteren van een verificatiemethode in Microsoft Intune.
+description: Een configuratieprofiel voor een Wi-Fi-apparaat voor Android Enterprise en Android Kiosk maken of toevoegen. Zie de verschillende instellingen, zoals voor het toevoegen van certificaten, voor het kiezen van een EAP-type en het selecteren van een verificatiemethode in Microsoft Intune. Voor Kiosk-apparaten moet u ook de vooraf gedeelde sleutel van uw netwerk opgeven.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,18 +13,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7c0d11e7670134c6a2cd9ce2eb72714ba64aa03
+ms.openlocfilehash: c2983f2f7b7079f73c857bf7caafe4236373c5dc
 ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 10/18/2018
-ms.locfileid: "49424982"
+ms.locfileid: "49431926"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Wi-Fi-instellingen toevoegen in Microsoft Intune voor Android-apparaten
+# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Wi-Fi-instellingen voor apparaten met Android Enterprise en Android Kiosk in Microsoft Intune toevoegen
 
-U kunt een profiel maken met specifieke Wi-Fi-instellingen en dit profiel vervolgens implementeren op uw Android-apparaten. Microsoft Intune biedt veel functies, waaronder het verifiëren bij het netwerk, het toevoegen van een PKS- of SCEP-certificaat en meer.
-
-Er zijn twee categorieën Wi-Fi-instellingen: instellingen op Basic- en op Enterprise-niveau.
+U kunt een profiel maken met specifieke Wi-Fi-instellingen en dit profiel vervolgens implementeren op uw Android Enterprise- en Android Kiosk-apparaten. Microsoft Intune bevat veel functies, waaronder het verifiëren bij uw netwerk, het gebruik van een vooraf gedeelde sleutel en meer.
 
 In dit artikel worden deze instellingen beschreven.
 
@@ -32,7 +30,25 @@ In dit artikel worden deze instellingen beschreven.
 
 [Maak een apparaatprofiel](device-profile-create.md).
 
-## <a name="basic-profile"></a>Basic-profiel
+## <a name="device-owner-only---kiosk"></a>Alleen eigenaar van het apparaat - kiosk
+
+Selecteer deze optie als u een Android Enterprise-apparaat als een kiosk wilt gebruiken.
+
+- **Netwerknaam**: voer een naam in voor deze Wi-Fi-verbinding. Deze waarde krijgen gebruikers te zien in de lijst met beschikbare verbindingen op hun apparaat.
+- **SSID**: afkorting voor **Service Set Identifier**. Deze instelling is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de **netwerknaam** die u hebt geconfigureerd wanneer ze de verbinding kiezen.
+- **Automatisch verbinding maken**: kies **Inschakelen** om automatisch verbinding te maken met dit netwerk wanneer het apparaat binnen het bereik daarvan is. Kies **Uitschakelen** om te voorkomen dat apparaten automatisch verbinding maken.
+- **Verborgen netwerk**: kies **Inschakelen** om te voorkomen dat dit netwerk op het apparaat wordt weergegeven in de lijst met beschikbare netwerken. De SSID wordt niet verzonden. Kies **Uitschakelen** om dit netwerk in de lijst met beschikbare netwerken op het apparaat weer te geven.
+- **Wi-Fi-type**: selecteer het beveiligingsprotocol voor de verificatie bij het Wi-Fi-netwerk. Uw opties zijn:
+
+  - **Open (geen verificatie)**: gebruik deze optie alleen als het netwerk niet beveiligd is.
+  - **Vooraf gedeelde WEP-sleutel**: typ het wachtwoord bij **Vooraf gedeelde sleutel**. Wanneer het netwerk van uw organisatie is ingesteld of geconfigureerd, wordt er ook een wachtwoord of netwerksleutel geconfigureerd. Voer dit wachtwoord of deze netwerksleutel in voor de PSK-waarde.
+  - **Vooraf gedeelde WPA-sleutel**: typ het wachtwoord bij **Vooraf gedeelde sleutel**. Wanneer het netwerk van uw organisatie is ingesteld of geconfigureerd, wordt er ook een wachtwoord of netwerksleutel geconfigureerd. Voer dit wachtwoord of deze netwerksleutel in voor de PSK-waarde.
+
+Selecteer **OK** om uw wijzigingen op te slaan.
+
+## <a name="work-profile-only"></a>Alleen werkprofiel
+
+### <a name="basic-settings"></a>Basisinstellingen
 
 - **Wi-Fi-type**: kies **Basic**.
 - **SSID**: afkorting voor **Service Set Identifier**. Deze instelling is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken.
@@ -103,6 +119,5 @@ Het profiel is gemaakt, maar er gebeurt niets. Vervolgens [wijst u dit profiel t
 
 ## <a name="more-resources"></a>Meer bronnen
 
+- Zie [Wi-Fi-instellingen voor apparaten met Android](wi-fi-settings-android.md) voor de instellingen die beschikbaar zijn voor Android-apparaten.
 - [Overzicht Wi-Fi-instellingen](wi-fi-settings-configure.md), met inbegrip van andere platformen.
-
-- Gebruikt u Android Enterprise- of Android-Kiosk-apparaten? Zo ja, raadpleeg dan [Wi-Fi-instellingen voor apparaten met Android Enterprise en Android Kiosk](wi-fi-settings-android-enterprise.md).

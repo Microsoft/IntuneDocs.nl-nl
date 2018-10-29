@@ -12,18 +12,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ce5cdd9509ed3407491714ccfa853613eb43973
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e32749225af3f19ab07decbcf1488595b7d946fd
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321132"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424863"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Wi-Fi-instellingen importeren voor Windows-apparaten in Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Voor apparaten met Windows kunt u een Wi-Fi-configuratieprofiel importeren dat eerder naar een bestand is geëxporteerd. **Voor apparaten met Windows 10 en hoger kunt u rechtstreeks in Intune [een Wi-Fi-profiel maken](wi-fi-settings-windows.md)**.
+Voor apparaten met Windows kunt u een Wi-Fi-configuratieprofiel importeren dat eerder naar een bestand is geëxporteerd. **Voor apparaten met Windows 10 en hoger kunt u ook rechtstreeks in Intune [een Wi-Fi-profiel maken](wi-fi-settings-windows.md)**.
 
 Van toepassing op:  
 - Windows 8.1 en hoger
@@ -33,21 +31,20 @@ Van toepassing op:
 
 ## <a name="export-wi-fi-settings-from-a-windows-device"></a>Wi-Fi-instellingen exporteren vanuit een Windows-apparaat
 
-Gebruik in Windows **netsh wlan** om een bestaand Wi-Fi-profiel te exporteren naar een XML-bestand dat kan worden gelezen door Intune. De sleutel moet worden geëxporteerd als tekst zonder opmaak om het profiel te kunnen gebruiken.
+Gebruik in Windows `netsh wlan` om een bestaand Wi-Fi-profiel te exporteren naar een XML-bestand dat kan worden gelezen door Intune. De sleutel moet worden geëxporteerd als tekst zonder opmaak om het profiel te kunnen gebruiken.
 
 Voer de volgende stappen uit op een Windows-computer waarop het vereiste Wi-Fi-profiel al is geïnstalleerd:
 
 1. Maak een lokale map voor de geëxporteerde Wi-Fi-profielen, zoals **c:\WiFi**.
 2. Open een opdrachtprompt als beheerder.
 3. Voer de opdracht `netsh wlan show profiles` uit en noteer de naam van het profiel dat u wilt exporteren. In dit voorbeeld is de naam van het profiel **WiFiName**.
-4. Voer de opdracht `netsh wlan export profile name="ProfileName" folder=c:\Wifi` uit. Hiermee wordt in de doelmap een Wi-Fi-profielbestand gemaakt met de naam **Wi-Fi-WiFiName.xml**.
+4. Voer de opdracht `netsh wlan export profile name="ProfileName" folder=c:\Wifi` uit. Met deze opdracht wordt in uw doelmap een Wi-Fi-profielbestand met de naam **Wi-Fi-WiFiName.xml** gemaakt.
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>De Wi-Fi-instellingen importeren in Intune
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-4. Geef een **naam** en **beschrijving** op voor het beperkingsprofiel voor het apparaat.
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+3. Geef een **naam** en **beschrijving** op voor het beperkingsprofiel voor het apparaat.
 
     > [!IMPORTANT]
     > - De naam **moet** overeenkomen met het naamkenmerk in het XML-bestand van het Wi-Fi-profiel. Anders mislukt de bewerking.
@@ -55,12 +52,18 @@ Voer de volgende stappen uit op een Windows-computer waarop het vereiste Wi-Fi-p
     > - Door gebruik van een vooraf gedeelde sleutel met Windows 10 wordt een herstelfout weergegeven in Intune. Als dit gebeurt, wordt het Wi-Fi-profiel correct toegewezen aan het apparaat en werkt het profiel zoals verwacht.
     > - Als u een Wi-Fi-profiel met een vooraf gedeelde sleutel exporteert, moet u ervoor zorgen dat het bestand is beveiligd. De sleutel bestaat uit tekst zonder opmaak. Het is dus uw verantwoordelijkheid om de sleutel te beveiligen.
 
-5. In **Platform** selecteert u **Windows 8.1 en hoger**.
-6. In **profieltype** selecteert u **Wi-Fi importeren**.
-7. Configureer de volgende instellingen:
-  - **Verbindingsnaam**: voer een naam voor de Wi-Fi-verbinding in. Deze naam wordt weergegeven voor eindgebruikers wanneer ze door de beschikbare Wi-Fi-netwerken bladeren.
-  - **XML-bestand voor het profiel**: selecteer de knop Bladeren om het XML-bestand met de Wi-Fi-profielinstellingen te selecteren dat u in Intune wilt importeren.
-  - **Bestandsinhoud**: hier wordt de XML-code weergegeven voor het configuratieprofiel dat u hebt geselecteerd.
-8. Als u bent klaar, kiest u **OK** en klikt u vervolgens op **Maken** van het profiel.
+4. In **Platform** selecteert u **Windows 8.1 en hoger**.
+5. In **profieltype** selecteert u **Wi-Fi importeren**.
+6. Configureer de volgende instellingen:
+    - **Verbindingsnaam**: voer een naam voor de Wi-Fi-verbinding in. Deze naam wordt weergegeven voor eindgebruikers wanneer ze door de beschikbare Wi-Fi-netwerken bladeren.
+    - **Profiel XML**: selecteer de bladerknop en kies het xml-bestand met de Wi-Fi-profielinstellingen die u wilt importeren.
+    - **Bestandsinhoud**: hier wordt de XML-code weergegeven voor het configuratieprofiel dat u hebt geselecteerd.
+7. Wanneer u klaar bent, selecteert u **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt gemaakt en wordt weergegeven in de lijst met profielen.
 
-Het profiel wordt gemaakt en wordt weergegeven in de lijst met profielen.
+## <a name="next-steps"></a>Volgende stappen
+
+Het profiel is gemaakt, maar er gebeurt niets. Vervolgens [wijst u dit profiel toe](device-profile-assign.md).
+
+## <a name="more-resources"></a>Meer bronnen
+
+[Overzicht Wi-Fi-instellingen](wi-fi-settings-configure.md), met inbegrip van andere platforms.

@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f2a244337b152af7bcf8bf17cf7e643bdb3faa59
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 183518caed7276719204830a38b1b9d552a79428
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231452"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642863"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Windows Hello voor Bedrijven integreren in Microsoft Intune
 
@@ -52,7 +52,7 @@ Gebruik dit artikel om een standaard Windows Hello voor Bedrijven-beleid te make
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Een beleid voor Windows Hello voor Bedrijven maken
 
-1. Kies in [Azure Portal](https://portal.azure.com) achtereenvolgens **Alle services** > **Bewaking en beheer** > **Intune**.
+1. In de [Azure-portal](https://portal.azure.com) kiest u **Alle services** > **Bewaking en beheer** > **Intune**.
 
 2. Kies in het deelvenster Intune de optie **Apparaatinschrijving** en kies vervolgens **Windows-inschrijving** > **Windows Hello voor Bedrijven**.
 

@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: b6381a7a5a8032340910d2c8ff2a0f7db91ef2dd
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: aa51cbea1ab1ea5f1bfc903a17638192aca59326
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828122"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075894"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows-apparaten inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -152,6 +152,16 @@ Als u geen interesse hebt in Mobile Device Management, kunt u Autopilot gebruike
 - Wijzigingen in profieltoewijzingen weergeven die zijn aangebracht in een andere portal
 - Profieltoewijzingen synchroniseren die zijn uitgevoerd in een andere portal
 - Wijzigingen in de lijst met apparaten weergeven die zijn gemaakt in een andere portal
+
+## <a name="redeploying-windows-autopilot"></a>Windows Autopilot opnieuw implementeren
+
+U kunt Windows-apparaten groeperen op correlator-id bij registratie met behulp van [Autopilot voor bestaande apparaten](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) via Configuration Manager. De correlator-ID is een parameter van het Autopilot-configuratiebestand. Het [kenmerk enrollmentProfileName van het Microsoft Azure AD-apparaat](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) wordt automatisch hetzelfde ingesteld als 'OfflineAutopilotprofile-<correlator ID>'. Hierdoor kunnen willekeurige dynamische groepen in Microsoft Azure AD op basis van correlator-id worden gemaakt met behulp van het kenmerk enrollmentprofileName voor offline Autopilot-inschrijvingen.
+
+Als u een upgrade uitvoert voor een oude Windows-versies die geen Autopilot-registratie ondersteunt, kunt u een offline Autopilot-profiel gebruiken. AutoPilot kan ondersteuning bieden tijdens een schone installatie van Windows 10 1809 of hoger. Als onderdeel van het offlineprofiel kunt u een correlator-id specificeren. 
+
+Waarschuwing: Omdat de correlatie-id niet vooraf wordt weergegeven in Intune, kunnen gebruikers kiezen voor registratie bij elke gewenste correlatie-id. Als de gebruiker een correlatie-id maakt die overeenkomt met een Autopilot- of Apple DEP-profielnnaam, wordt het apparaat toegevoegd aan alle dynamische Microsoft Azure AD-apparaatgroepen op basis van het kenmerk enrollmentProfileName. U kunt dit conflict als volgt voorkomen:
+- Maak altijd dynamische groepsregels die overeenkomen met de *hele* enrollmentProfileName-waarde
+- Begin een Autopilot- of Apple DEP-profielnaam nooit met 'OfflineAutopilotprofile-'.
 
 ## <a name="next-steps"></a>Volgende stappen
 Ontdek hoe u apparaten beheert nadat u Windows Autopilot hebt geconfigureerd voor geregistreerde Windows 10-apparaten. Zie [Wat is Microsoft Intune-apparaatbeheer?](https://docs.microsoft.com/intune/device-management) voor meer informatie.

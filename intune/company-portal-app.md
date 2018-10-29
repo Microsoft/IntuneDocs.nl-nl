@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2defc433ef39562750c4579f302a9c5367c6464a
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828241"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307403"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -61,7 +61,7 @@ Voer de ondersteuningsinformatie van uw bedrijf in zodat u werknemer een contact
 
 
 ## <a name="company-branding-customization"></a>Aanpassing bedrijfshuisstijl       
-U kunt uw bedrijfsportal aanpassen met uw bedrijfslogo, bedrijfsnaam, themakleur en achtergrond.     
+U kunt uw bedrijfsportal aanpassen met uw bedrijfslogo, bedrijfsnaam, themakleur en achtergrond. Als u snel een preview van een huismerkconfiguratie wilt weergeven zonder testapparaat, gaat u naar [portal.manage.microsoft.com](https://portal.manage.microsoft.com). Houd er rekening mee dat het logo dat u uploadt, wordt gebruikt voor e-mailsjablonen.      
 
 ### <a name="theme-color"></a>Themakleur
 Pas een themakleur toe op de bedrijfsportal. Selecteer een standaardkleur of voer een 6-cijferige hexadecimale code in voor een aangepaste kleur.
@@ -82,3 +82,30 @@ Upload uw bedrijfslogo zodat deze overal in Intune zichtbaar is.
 |**Bedrijfsnaam naast logo weergeven**| Selecteer deze optie om de ingevoerde bedrijfsnaam naast het geüploade logo weergeven. |
 
 Nadat u uw wijzigingen hebt opgeslagen, kunt u boven in de blade **Een voorbeeld van uw instellingen bekijken in de Intune-webportal** kiezen om weer te geven hoe uw configuraties eruit gaan zien.
+
+## <a name="windows-company-portal-keyboard-shortcuts"></a>Sneltoetsen voor Windows-bedrijfsportal
+
+Eindgebruikers kunnen navigatie-, app- en apparaatacties in de Windows-bedrijfsportal activeren met behulp van sneltoetsen (accelerators).
+
+De volgende sneltoetsen zijn beschikbaar in de Windows-bedrijfsportal-app.
+
+| Gebied | Beschrijving | Sneltoets |
+|:------------------:|:--------------:|:-----------------:|
+| Navigatiemenu | Navigatie | Alt+M |
+|  | Home | Alt+H |
+|  | Alle apps | Alt+A |
+|  | Geïnstalleerde apps | Alt+I |
+|  | Feedback verzenden | Alt+F |
+|  | Mijn profiel | Alt+U |
+|  | Instellingen | Alt+T |
+| Startpagina - Apparaattegel | Naam wijzigen | F2 |
+|  | Verwijderen | Ctrl+D of Delete |
+|  | Toegang controleren | Ctrl+M of F9 |
+| Apparaatgegevens | Naam wijzigen | F2 |
+|  | Verwijderen | Ctrl+D of Delete |
+|  | Toegang controleren | Ctrl+M of F9 |
+| App-details | Installeren | Ctrl+I |
+
+## <a name="next-steps"></a>Volgende stappen
+
+- [De Windows 10-bedrijfsportal-app handmatig toevoegen met Microsoft Intune](store-apps-company-portal-app.md)

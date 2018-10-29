@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/01/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,20 @@ ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6be3694a18cd0df09b52b535a0fcd2050bf7a98
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 46d28ba8d9d8c6ec2adf2b41adbb9e7336676811
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231241"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642974"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>De Exchange Connector-service configureren voor Intune en Exchange Online
-
 In dit artikel leest u hoe u de Microsoft Intune-service verbindt met Exchange Online of de nieuwe Exchange Online Dedicated-service. Neem contact op met uw accountmanager om te bepalen of uw Exchange Online Dedicated-omgeving de **nieuwe** of **verouderde** versie is.
 
+Met de **Service to Service Connector** kunt u zowel Exchange ActiveSync (EAS) als met Intune beheerde apparaten beheren vanaf één console met beheerdersrechten.  De connector is niet vereist voor het inschakelen van voorwaardelijke toegang voor Exchange Online.
+
 ## <a name="service-to-service-connector-requirements"></a>Vereisten voor de Service to Service-connector
-De **Service to Service Connector** ondersteunt alleen Exchange Online of Exchange Online Dedicated en heeft geen vereisten voor een on-premises infrastructuur.
+De **Service to Service Connector** ondersteunt alleen Exchange Online of Exchange Online Dedicated en heeft geen vereisten voor een on-premises infrastructuur. 
 
 
 |              Vereiste               |                                                                                                            Meer informatie                                                                                                            |
@@ -68,5 +69,4 @@ Nadat u de Service to Service Connector hebt geconfigureerd, kunt u de gegevens 
 
 U kunt ook de **verbindingsstatus** en de tijd en datum van de laatste geslaagde synchronisatiepoging controleren.
 
-## <a name="next-steps"></a>Volgende stappen
-[Voorwaardelijke toegang voor Exchange in Microsoft Intune controleren](conditional-access-exchange-monitor.md)
+ 

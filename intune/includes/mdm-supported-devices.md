@@ -2,7 +2,7 @@
 
 ### <a name="apple"></a>Apple
 - Apple iOS 10.0 en hoger
-- Mac OS X 10.11 en hoger
+- Mac OS X 10.11 en hoger (in december 2018, de ondersteunde versie wordt later gewijzigd in 10.12 en hoger)
 
 ### <a name="google"></a>Google
 - Android 4.4 en hoger (inclusief Samsung Knox Standard 4.4 en hoger)

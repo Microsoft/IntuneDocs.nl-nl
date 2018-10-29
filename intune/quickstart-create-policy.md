@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/17/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73e1e0a27d128d567a924e6f2b343026b11f1a44
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 9d9169ab353da30e0f7b292cea4f5b9c93e316aa
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581579"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391549"
 ---
 # <a name="quickstart-add-a-device-compliance-policy-for-a-windows-10-device"></a>Snelstart: een apparaatnalevingsbeleid maken voor een Windows 10-apparaat
 Een Intune-apparaatnalevingsbeleid voor Windows bepaalt de regels en instellingen waaraan een Windows-apparaat moet voldoen om te voldoen aan het beleid. U kunt dit beleid met [voorwaardelijke toegang](https://docs.microsoft.com/intune/conditional-access) gebruiken om toegang tot bedrijfsresources toe te staan of te blokkeren. U kunt ook apparaatrapporten krijgen en maatregelen nemen voor niet-naleving.
@@ -53,4 +53,4 @@ Als u het beleid niet meer nodig hebt, kunt u het verwijderen. Hiervoor selectee
 In deze snelstart hebt u een eenvoudig apparaatnalevingsbeleid gemaakt en toegewezen. Ga naar de snelstart voor het instellen van automatische inschrijving als u graag een Windows 10-apparaat wilt inschrijven om beleid aan toe te wijzen. 
  
 > [!div class="nextstepaction"]
-> [Automatische inschrijving instellen](quickstart-setup-auto-enrollment.md)
+> [Lengte van apparaatwachtwoord instellen](quickstart-set-password-length-android.md)

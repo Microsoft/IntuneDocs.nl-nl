@@ -15,14 +15,14 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb7eb4b3845b8b5f0eafed95fa081955b99f1af7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863158"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357084"
 ---
-# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Internettoegang beheren met beleid voor beveiligde browsers met Microsoft Intune  
+# <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>Internettoegang beheren met een met Microsoft Intune-beleid beveiligde browser
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -36,26 +36,37 @@ Met behulp van een browser die wordt beveiligd met Intune-beleid (Microsoft Edge
 
 ## <a name="getting-started"></a>Aan de slag
 
+Microsoft Edge en de Intune Managed Browser zijn webbrowser-apps die u en uw eindgebruikers kunnen downloaden uit openbare app-stores en in uw organisatie kunnen gebruiken. 
+
+Besturingssysteemvereisten voor browserbeleid:
+- Android 4 en hoger of
+- iOS 8.0 en hoger.
+
+Oudere versies van Android en iOS kunnen Managed Browser nog steeds gebruiken, maar er kunnen geen nieuwe versies van de app op worden geïnstalleerd en kan er dus geen gebruik worden gemaakt van alle mogelijkheden van de app. U wordt aangeraden deze apparaten bij te werken tot een ondersteunde versie van het besturingssysteem.
+
+>[!NOTE]
+>Managed Browser biedt geen ondersteuning voor versie 3 van het cryptografische protocol Secure Sockets Layer (SSLv3).
+
+
+## <a name="application-protection-policies-for-protected-browsers"></a>Beveiligingsbeleid voor toepassingen voor beveiligde browsers
+
+Aangezien Edge en Managed Browser zijn geïntegreerd met de Intune SDK, kunt u ook beleid voor app-beveiliging toepassen op de apps, waaronder:
+- beperkingen afdwingen voor het knippen, kopiëren en plakken van gegevens;
+- voorkomen dat er schermopnamen worden gemaakt;
+- ervoor zorgen dat zakelijke koppelingen alleen kunnen worden geopend in beheerde apps en browsers.
+
+Zie [Wat is beveiligingsbeleid voor apps?](app-protection-policy.md) voor meer informatie.
+
 U kunt deze instellingen toepassen op:
 
 - Apparaten die zijn ingeschreven bij Intune
 - Apparaten die zijn ingeschreven bij een ander MDM-product
 - Niet-beheerde apparaten
 
-Als gebruikers Managed Browser vanuit de app store installeren en deze niet door Intune wordt beheerd, kunt u deze gebruiken als een eenvoudige webbrowser met ondersteuning voor eenmalige aanmelding via de site Microsoft MyApps. Gebruikers worden direct doorgestuurd naar de MyApps-website, waar alle ingerichte SaaS-toepassingen worden weergegeven.
+>[!NOTE]
+>Als gebruikers Managed Browser vanuit de app store installeren en deze niet door Intune wordt beheerd, kunt u deze gebruiken als een eenvoudige webbrowser met ondersteuning voor eenmalige aanmelding via de site Microsoft MyApps. Gebruikers worden direct doorgestuurd naar de MyApps-website, waar alle ingerichte SaaS-toepassingen worden weergegeven.
 Omdat Managed Browser of Edge niet worden beheerd door Intune, kunnen de apps geen gegevens gebruiken uit andere apps die wel door Intune worden beheerd. 
 
-Managed Browser biedt geen ondersteuning voor versie 3 van het cryptografische protocol Secure Sockets Layer (SSLv3).
-
-U kunt beleidsregels voor beveiligde browsers maken voor de volgende typen apparaten:
-
--   Apparaten met Android 4 en hoger
-
--   Apparaten met iOS 10.0 en hoger
-
->[!IMPORTANT]
->Oudere versies van Android en iOS kunnen Managed Browser nog steeds gebruiken, maar er kunnen geen nieuwe versies van de app op worden geïnstalleerd en kan er dus geen gebruik worden gemaakt van alle mogelijkheden van de app. U wordt aangeraden deze apparaten bij te werken tot een ondersteunde versie van het besturingssysteem.
-    
 
 ## <a name="conditional-access-for-protected-browsers"></a>Voorwaardelijke toegang voor de beveiligde browsers
 
@@ -82,7 +93,7 @@ Als u met Azure AD verbonden web-apps wilt beperken tot het gebruik van Intune M
 8. Selecteer in de sectie **Toewijzingen** de optie **Gebruikers en groepen** en kies vervolgens de gebruikers of groepen die u wilt toewijzen aan dit beleid. 
 
     > [!NOTE]
-    > Gebruikers moeten ook het doel zijn bij het Intune App Protection-beleid. Zie [Wat is beveiligingsbeleid voor apps?](app-protection-policy.md) voor meer informatie over het maken van Intune-app-beveiligingsbeleid.
+    > Gebruikers moeten ook onder Intune App Protection-beleid vallen om app-configuratiebeleid te kunnen ontvangen. Zie [Wat is beveiligingsbeleid voor apps?](app-protection-policy.md) voor meer informatie over het maken van Intune-app-beveiligingsbeleid.
 
 9. Selecteer in de sectie **Toewijzingen** de optie **Cloud-apps** om te kiezen welke apps met dit beleid moeten worden beveiligd.
 
@@ -101,6 +112,9 @@ Voor eenmalige aanmelding moet uw apparaat zijn geregistreerd door de Microsoft 
 
 ## <a name="create-a-protected-browser-app-configuration"></a>Een configuratie voor de beveiligde browser-app maken
 
+>[!IMPORTANT]
+>Om app-configuraties toe te passen, moet de beveiligde browser van de gebruiker, of een andere toepassing op het apparaat, al worden beheerd met [beleid voor app-beveiliging van Intune]( app-protection-policy.md)
+
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3.  Ga in de lijst Beheren naar de blade **Client-apps** en kies **App-configuratiebeleid**.
@@ -114,8 +128,6 @@ Voor eenmalige aanmelding moet uw apparaat zijn geregistreerd door de Microsoft 
 11. Kies op de blade **Configuratiebeleid toevoegen** de optie **Toevoegen**.
 12. De nieuwe configuratie wordt gemaakt en weergegeven op de blade **App-configuratie**.
 
->[!IMPORTANT]
->Managed Browser is momenteel afhankelijk van automatische inschrijving. Om app-configuraties toe te passen, moet een andere toepassing op het apparaat al worden beheerd met beleid voor app-beveiliging van Intune.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>De configuratie-instellingen toewijzen die u hebt gemaakt
 
@@ -275,18 +287,7 @@ Zie [Logboeken voor app-beveiliging in Managed Browser controleren](app-protecti
 ### <a name="turn-off-usage-data"></a>Gebruiksgegevens uitschakelen
 Microsoft verzamelt automatisch anonieme gegevens over de prestaties en het gebruik van Managed Browser om Microsoft-producten en -services te verbeteren. Gebruikers kunnen het verzamelen van deze gegevens uitschakelen met de instelling **Gebruiksgegevens** op hun apparaten. U hebt geen controle over het verzamelen van deze gegevens.
 
-
 -   Op iOS-apparaten kunnen gebruikers geen websites openen met een verlopen of niet-vertrouwd certificaat.
--   Managed Browser gebruikt geen instellingen die gebruikers maken voor de ingebouwde browser op hun apparaten. Managed Browser heeft geen toegang tot deze instellingen.
-
--   Als u de optie **Eenvoudige pincode vereist voor toegang** of **Bedrijfsreferenties vereist voor toegang** configureert in een beleid voor app-beveiliging dat is gekoppeld aan Managed Browser, en een gebruiker de Help-koppeling op de verificatiepagina selecteert, kan de gebruiker elke internetsite bezoeken ongeacht of deze is toegevoegd aan de lijst met geblokkeerde websites in het beleid.
-
--   Managed Browser kan alleen toegang tot sites blokkeren wanneer de sites rechtstreeks worden geopend. De app kan niet de toegang blokkeren als er tussenliggende services (zoals een vertaalservice) worden gebruikt voor toegang tot de site.
-
--   Om verificatie en toegang tot de Intune-documentatie toe te staan, wordt **&#42;.microsoft.com** uitgesloten van opname in lijsten met toegestane en geblokkeerde sites. Dit domein is altijd toegestaan.
-
-### <a name="turn-off-usage-data"></a>Gebruiksgegevens uitschakelen
-Microsoft verzamelt automatisch anonieme gegevens over de prestaties en het gebruik van Managed Browser om Microsoft-producten en -services te verbeteren. Gebruikers kunnen het verzamelen van deze gegevens uitschakelen met de instelling **Gebruiksgegevens** op hun apparaten. U hebt geen controle over het verzamelen van deze gegevens.
 
 ## <a name="next-steps"></a>Volgende stappen
 

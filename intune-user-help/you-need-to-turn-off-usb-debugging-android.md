@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: c377c2a4e9640443eb38a85b2e1806c9d9e64a82
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 88ceb6516857f34f56e59dd6ba377e045467f6bd
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147190"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642999"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>U moet USB-foutopsporing uitschakelen
 

@@ -13,13 +13,13 @@ ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 8e22c0caf7b99bcb7a81259829369b7671056abe
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.custom: intune
+ms.openlocfilehash: 5cb90b7f1dc72a67f48ba40db8a6ab4ffe598243
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058945"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425033"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -131,7 +131,7 @@ Zowel Android als iOS gebruiken versie- en buildnummers ter verwijzing naar apps
 
 Let op dat u zowel het versie- als het buildnummer gebruikt wanneer u een line-of-business-app ontwikkelt voor gebruik in Intune. Beheereigenschappen van een Intune-app zijn afhankelijk van een zinvolle **CFBundleVersion** (voor iOS) en **PackageVersionCode** (voor Android). Deze nummers zijn opgenomen in het app-manifest. 
 
-Intune|iOS|Android|Description|
+Intune|iOS|Android|Beschrijving|
 |---|---|---|---|
 Versienummer|CFBundleShortVersionString|PackageVersionName |Dit nummer geeft een specifieke release van de app aan voor eindgebruikers.|
 Buildnummer|CFBundleVersion|PackageVersionCode |Met dit nummer wordt een iteratie in de app-code aangegeven.|
@@ -161,9 +161,9 @@ Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integr
 
     * Als u een Line-Of-Business-app ontwikkelt die niet naar de Store word verzonden, wordt ervan uitgegaan dat u via uw organisatie toegang hebt tot Microsoft Intune. U kunt zich ook registreren voor een gratis proefversie van één maand via [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
 
-* **Intune-beleid voor app-beveiliging**: als u uw app wilt testen aan de hand van alle Intune-beleid voor app-beveiliging, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](/intune-classic/deploy-use/ios-mam-policy-settings) en [Android-beleid voor app-beveiliging](/intune-classic/deploy-use/android-mam-policy-settings).
+* **Intune-beleid voor app-beveiliging**: als u uw app wilt testen aan de hand van alle Intune-beleid voor app-beveiliging, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](app-protection-policy-settings-android.md).
 
-* **Probleemoplossing**: als u problemen ondervindt tijdens het handmatig testen van de gebruikerservaring van uw app, gaat u naar [MAM-probleemoplossing](/intune-classic/troubleshoot/troubleshoot-mam). Dit artikel biedt hulp bij veelvoorkomende problemen, dialoogvensters en foutberichten die kunnen voorkomen in met apps die door Intune worden beheerd. 
+* **Probleemoplossing**: als u problemen ondervindt tijdens het handmatig testen van de gebruikerservaring van uw app-installatie, gaat u naar [Problemen met app-installatie oplossen](troubleshoot-app-install.md). 
 
 ### <a name="badge-your-app-optional"></a>Uw app van een logo voorzien (optioneel)
 

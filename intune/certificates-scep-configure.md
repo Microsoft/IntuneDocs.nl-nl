@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/1/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 48bf2e6daf05dba6baebbd49be45a17a5a56e820
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: b6ee53d0c5801a80319e33637ee68fb7b701a127
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828292"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391685"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -36,11 +36,13 @@ De NDES-server moet worden toegevoegd aan het domein dat de CA host en mag zich 
 
 - **Microsoft Intune-certificaatconnector**: u kunt Azure Portal gebruiken om het installatieprogramma voor de **Certificaatconnector** (**NDESConnectorSetup.exe**) te downloaden. Vervolgens kunt u **NDESConnectorSetup.exe** uitvoeren op de server waarop de NDES-rol (Registratieservice voor netwerkapparaten) wordt uitgevoerd waar u de certificaatconnector wilt installeren.
 
-  - De NDES-certificaatconnector ondersteunt ook de Federal Information Processing Standard-modus (FIPS). FIPS is niet vereist, maar u kunt certificaten uitgeven en intrekken wanneer deze modus is ingeschakeld.
+  - De NDES-certificaatconnector ondersteunt ook de Federal Information Processing Standard-modus (FIPS). FIPS is niet vereist, maar wanneer deze modus is ingeschakeld, kunt u certificaten uitgeven en intrekken.
 
 - **Webtoepassingsproxyserver** (optioneel): u kunt een server met Windows Server 2012 R2 of hoger gebruiken als webtoepassingsproxyserver (WAP-server). Deze configuratie:
   - Maakt het mogelijk dat apparaten certificaten ontvangen met een internetverbinding.
   - Is een beveiligingsaanbeveling wanneer apparaten via internet verbinding maken om certificaten te ontvangen en te verlengen.
+  
+- **Azure AD-toepassingsproxy** (optioneel): u kunt de Azure AD-toepassingsproxy gebruiken in plaats van een toegewezen webtoepassingsproxyserver (WAP-server) om de NDES-server op internet te publiceren. Zie voor meer informatie [Beveiligde externe toegang verschaffen voor on-premises toepassingen](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
 #### <a name="additional"></a>Aanvullende informatie
 
@@ -64,7 +66,7 @@ Het is raadzaam de NDES-server te publiceren via een proxy, zoals de [Azure AD-t
 |**Certificaatsjabloon**|Configureer deze sjabloon op uw verlenende CA.|
 |**Clientverificatiecertificaat**|Dit certificaat wordt aangevraagd bij uw verlenende CA of openbare CA. U installeert dit op de NDES-server.|
 |**Serververificatiecertificaat**|Dit SSL-certificaat wordt aangevraagd bij uw verlenende CA of openbare CA. U installeert en verbindt dit in IIS op de NDES-server.|
-|**Vertrouwd basis-CA-certificaat**|U exporteert dit certificaat als een **CER-bestand** van de basis-CA of een ander apparaat dat de basis-CA vertrouwt, en wijst het toe aan apparaten met het profiel voor een vertrouwd CA-certificaat.<br /><br />U gebruikt één vertrouwd basis-CA-certificaat per besturingssysteemplatform en koppelt het aan elk vertrouwd basiscertificaatprofiel dat u maakt.<br /><br />U kunt extra vertrouwde basis-CA-certificaten gebruiken als dat nodig is. U kunt dit bijvoorbeeld doen om een vertrouwensrelatie met een CA te leveren die de serververificatiecertificaten voor uw Wi-Fi-toegangspunten ondertekent.|
+|**Vertrouwd basis-CA-certificaat**|U kunt het certificaat exporteren als een **.cer**-bestand van de basis-CA of van een apparaat dat de basis-CA vertrouwt. Vervolgens kunt u het toewijzen aan apparaten met het profiel voor vertrouwde CA-certificaten.<br /><br />U gebruikt één vertrouwd basis-CA-certificaat per besturingssysteemplatform en koppelt het aan elk vertrouwd basiscertificaatprofiel dat u maakt.<br /><br />U kunt extra vertrouwde basis-CA-certificaten gebruiken als dat nodig is. U kunt dit bijvoorbeeld doen om een vertrouwensrelatie met een CA te leveren die de serververificatiecertificaten voor uw Wi-Fi-toegangspunten ondertekent.|
 
 ### <a name="accounts"></a>Accounts
 
@@ -96,7 +98,10 @@ Bij deze stap doet u het volgende:
 
    De sjabloon moet de volgende configuraties hebben:
 
-   - Voer een gebruiksvriendelijke **weergavenaam voor de sjabloon** in.
+   - Onder **Algemeen**:
+   
+       - Controleer of het selectievakje **Certificaat in Active Directory publiceren** **niet** is ingeschakeld.
+       - Voer een gebruiksvriendelijke **weergavenaam voor de sjabloon** in.
 
    - Selecteer **Leveren met het verzoek** in **Onderwerpnaam**. (Beveiliging wordt afgedwongen door de Intune-beleidsmodule voor NDES.)
 
@@ -154,21 +159,25 @@ Bij deze stap doet u het volgende:
    1. Selecteer in de wizard **Active Directory Certificate Services** om toegang te krijgen tot de AD CS-functieservices. Selecteer de **inschrijvingsservice voor netwerkapparaten**, schakel **Certificeringsinstantie**uit en voer vervolgens de wizard uit.
 
       > [!TIP]
-      > Schakel **Sluiten** in **installatievoortgang** niet in. Selecteer in plaats daarvan de koppeling **Active Directory Certificate Services op de doelserver configureren**. Hiermee opent u de wizard **AD CS-configuratie** die u voor de volgende stap gebruikt. Nadat AD CS-configuratie is geopend, kunt u de wizard Functies en onderdelen toevoegen sluiten.
+      > Schakel **Sluiten** niet in tijdens de **installatievoortgang**. Selecteer in plaats daarvan de koppeling **Active Directory Certificate Services op de doelserver configureren**. Hiermee opent u de wizard **AD CS-configuratie** die u voor de volgende stap gebruikt. Nadat AD CS-configuratie is geopend, kunt u de wizard Functies en onderdelen toevoegen sluiten.
 
    2. Wanneer NDES aan de server wordt toegevoegd, installeert de wizard ook IIS. Controleer of IIS de volgende configuraties heeft:
 
-   3. **Webserver** > **Beveiliging** > **Filtering aanvragen**
+       - **Webserver** > **Beveiliging** > **Aanvraagfiltering**
 
-   4. **Webserver** > **Toepassingsontwikkeling** > **ASP.NET 3.5**. Als u ASP.NET 3.5 installeert, installeert u ook .NET Framework 3.5. Als u .NET Framework 3.5 installeert, installeert u zowel het kernonderdeel **.NET Framework 3.5** als **HTTP-activering**.
+       - **Webserver** > **Toepassingsontwikkeling** > **ASP.NET 3.5** 
 
-   5. **Webserver** > **Toepassingsontwikkeling** > **ASP.NET 4.5**. Als u ASP.NET 4.5 installeert, installeert u ook .NET Framework 4.5. Als u .NET Framework 4.5 installeert, installeer dan het kernonderdeel **.NET Framework 4.5**, **ASP.NET 4.5** en de functie **WCF-services** > **HTTP-activering**.
+            Als u ASP.NET 3.5 installeert, installeert u ook .NET Framework 3.5. Als u .NET Framework 3.5 installeert, installeert u zowel het kernonderdeel **.NET Framework 3.5** als **HTTP-activering**.
 
-   6. **Beheerhulpprogramma's** > **Compatibiliteit met IIS 6-beheer** > **Compatibiliteit met IIS 6-metabase**
+       - **Webserver** > **Toepassingsontwikkeling** > **ASP.NET 4.5** 
 
-   7. **Beheerhulpprogramma's** > **Compatibiliteit met IIS 6-beheer** > **Compatibiliteit met IIS 6 WMI**
+            Als u ASP.NET 4.5 installeert, installeert u ook .NET Framework 4.5. Als u .NET Framework 4.5 installeert, installeer dan het kernonderdeel **.NET Framework 4.5**, **ASP.NET 4.5** en de functie **WCF-services** > **HTTP-activering**.
 
-   8. Voeg op de server het NDES-serviceaccount toe als lid van de groep **IIS_IUSR**.
+       - **Beheerhulpprogramma's** > **Compatibiliteit met IIS 6-beheer** > **Compatibiliteit met IIS 6-metabase**
+
+       - **Beheerhulpprogramma's** > **Compatibiliteit met IIS 6-beheer** > **Compatibiliteit met IIS 6 WMI**
+
+       - Voeg op de server het NDES-serviceaccount toe als lid van de groep **IIS_IUSR**.
 
 2. Voer de volgende opdracht uit via een opdrachtprompt met verhoogde bevoegdheid om de SPN van het NDES-serviceaccount in te stellen:
 
@@ -222,7 +231,7 @@ Bij deze stap doet u het volgende:
 
     ![Maximale lengte van de URL's en query's van IIS](./media/SCEP_IIS_max_URL.png)
 
-5. Start de server opnieuw op. U kunt de wijzigingen niet voltooien door **iisreset** uit te voeren op de server.
+5. Start de server opnieuw op. Gebruik hiervoor niet **iisreset**, omdat deze opdracht de wijzigingen niet opslaat.
 6. Blader naar `http://*FQDN*/certsrv/mscep/mscep.dll`. Hier wordt een NDES-pagina weergegeven die vergelijkbaar is met de volgende:
 
     ![Test NDES](./media/SCEP_NDES_URL.png)
@@ -247,7 +256,7 @@ Bij deze stap doet u het volgende:
       > - Een **onderwerpnaam** met een externe openbare servernaam
       > - Een **alternatieve onderwerpnaam** die de naam van de interne server bevat
 
-2. Vraag op uw NDES-server een **clientverificatie** certificaat van uw interne CA of een openbare CA aan en installeer het certificaat. Dit kan hetzelfde certificaat zijn als het serververificatiecertificaat als dat certificaat beide mogelijkheden heeft.
+2. Vraag op uw NDES-server een **clientverificatie** certificaat van uw interne CA of een openbare CA aan en installeer het certificaat. Dit kan hetzelfde certificaat zijn als het serververificatiecertificaat indien dat certificaat beide mogelijkheden heeft.
 
     Het clientverificatiecertificaat moet de volgende eigenschappen hebben:
 
@@ -283,13 +292,16 @@ Bij deze stap doet u het volgende:
 
 ##### <a name="download-install-and-configure-the-certificate-connector"></a>De certificaatconnector downloaden, installeren en configureren
 
-![ConnectorDownload](./media/certificates-download-connector.png)
+> [!IMPORTANT] 
+> De Microsoft Intune-certificaatconnector **moet** worden geïnstalleerd op een afzonderlijke Windows-server. Deze kan niet worden geïnstalleerd op de verlenende certificeringsinstantie (CA). De connector **moet** ook worden geïnstalleerd op dezelfde server die de rol van Network Device Enrollment Service (NDES) vervult.
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Apparaatconfiguratie** en vervolgens **Certificeringsinstantie**.
-4. Selecteer **Toevoegen** en **Connectorbestand downloaden**. Sla het bestand op in een locatie waar u het kunt openen vanaf de server waarop u de connector gaat installeren.
-5. Nadat het downloaden is voltooid, gaat u naar de server waarop de NDES-rol (Registratieservice voor netwerkapparaten) wordt uitgevoerd. Vervolgens:
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+2. Selecteer **Apparaatconfiguratie** > **Certificeringsinstantie** > **Toevoegen**
+3. Download het connectorbestand en sla het op. Sla het bestand op op een locatie die toegankelijk is vanaf de server waar u de connector gaat installeren.
+
+    ![ConnectorDownload](./media/certificates-download-connector.png)
+
+4. Nadat het downloaden is voltooid, gaat u naar de server waarop de NDES-rol (Registratieservice voor netwerkapparaten) wordt uitgevoerd. Vervolgens:
 
     1. Controleer of .NET 4.5 Framework is geïnstalleerd. Dit wordt vereist door de NDES-certificaatconnector. .NET Framework 4.5 wordt automatisch geïnstalleerd met Windows Server 2012 R2 en nieuwere versies.
     2. Voer het installatieprogramma uit (**NDESConnectorSetup.exe**). Het installatieprogramma installeert ook de beleidsmodule voor NDES en de CRP-webservice. De CRP-webservice, CertificateRegistrationSvc, wordt als een toepassing in IIS uitgevoerd.
@@ -297,34 +309,34 @@ Bij deze stap doet u het volgende:
     > [!NOTE]
     > Wanneer u NDES installeert en Intune zelfstandig wordt gebruikt, wordt de CRP-service automatisch met de certificaatconnector geïnstalleerd. Wanneer u Intune met Configuration Manager gebruikt, installeert u het certificaatregistratiepunt als een afzonderlijke sitesysteemfunctie.
 
-6. Als naar het clientcertificaat voor de certificaatconnector wordt gevraagd, kiest u **Selecteren**en selecteert u het certificaat voor **clientverificatie** dat u in stap 4 op uw NDES-server hebt geïnstalleerd.
+5. Als naar het clientcertificaat voor de certificaatconnector wordt gevraagd, kiest u **Selecteren**en selecteert u het certificaat voor **clientverificatie** dat u in stap 4 op uw NDES-server hebt geïnstalleerd.
 
     Nadat u het certificaat voor clientverificatie hebt geselecteerd, keert u terug naar het oppervlak **Clientcertificaat voor Microsoft Intune-certificaatconnector** . Hoewel het geselecteerde certificaat niet wordt weergegeven, selecteert u **Volgende** om de eigenschappen van dat certificaat weer te geven. Selecteer **Volgende** en vervolgens **Installeren**.
 
     > [!IMPORTANT]
     > De Intune Certificate Connector kan niet worden geregistreerd op een apparaat waarop Verbeterde beveiliging van Internet Explorer is ingeschakeld. [Schakel Verbeterde beveiliging van Internet Explorer uit](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx) als u de Intune Certificate Connector wilt gebruiken.
 
-7. Nadat de wizard is voltooid, maar voordat de wizard wordt gesloten, klikt u op **Gebruikersinterface van certificaatconnector starten**.
+6. Nadat de wizard is voltooid, maar voordat de wizard wordt gesloten, klikt u op **Gebruikersinterface van certificaatconnector starten**.
 
     > [!TIP]
     > Als u de wizard sluit voordat u de gebruikersinterface van de certificaatconnector start, kunt u deze opnieuw openen door de volgende opdracht uit te voeren:
     >
     > <installatiepad>\NDESConnectorUI\NDESConnectorUI.exe
 
-8. In de gebruikersinterface van de **certificaatconnector** :
+7. In de gebruikersinterface van de **certificaatconnector** :
 
     Selecteer **Aanmelden** en voer uw Intune-servicebeheerder- of tenantbeheerderreferenties met de machtiging voor algemeen beheer in.
 
     > [!IMPORTANT]
     > Aan het gebruikersaccount moet een geldige Intune-licentie worden toegewezen. Als het gebruikersaccount geen geldige Intune-licentie heeft, mislukt NDESConnectorUI.exe.
 
-    Als uw organisatie een proxyserver gebruikt en de NDES-server de proxy nodig heeft om toegang tot internet te krijgen, selecteert u **Proxyserver gebruiken** en voert u de naam van de proxyserver, de poort en de accountreferenties in om verbinding te maken.
+    Als uw organisatie een proxyserver gebruikt en de NDES-server de proxy nodig heeft om toegang tot internet te krijgen, selecteert u **Proxyserver gebruiken**. Voer vervolgens de naam van de proxyserver, de poort en de accountreferenties in om verbinding te maken.
 
     Selecteer het tabblad **Geavanceerd** en voer vervolgens referenties in voor een account met de machtiging **Certificaten verlenen en beheren** op uw verlenende certificeringsinstantie. **Pas** de wijzigingen toe.
 
     U kunt nu de gebruikersinterface van de certificaatconnector sluiten.
 
-9. Open een opdrachtprompt, voer **services.msc** in en druk vervolgens op **Enter**. Klik met de rechtermuisknop op de **Intune-connectorservice** en kies **Opnieuw opstarten**.
+8. Open een opdrachtprompt, voer **services.msc** in en druk vervolgens op **Enter**. Klik met de rechtermuisknop op de **Intune-connectorservice** > **Opnieuw opstarten**.
 
 Controleer of de service wordt uitgevoerd door een browser te openen en de volgende URL in te voeren. Hierop moet een **403**-fout worden geretourneerd:
 
@@ -335,18 +347,19 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 
 ## <a name="create-a-scep-certificate-profile"></a>Een SCEP-certificaatprofiel maken
 
-1. Open Microsoft Intune in Azure Portal.
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 3. Voer een **naam** en een **beschrijving** in voor het SCEP-certificaatprofiel.
 4. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform voor dit SCEP-certificaat. Op dit moment kunt u een van de volgende platforms selecteren voor apparaatbeperkingsinstellingen:
    - **Android**
+   - **Android Enterprise**
    - **iOS**
    - **macOS**
    - **Windows Phone 8.1**
    - **Windows 8.1 en hoger**
    - **Windows 10 en hoger**
 5. Selecteer in de vervolgkeuzelijst **Profieltype** de optie **SCEP-certificaat**.
-6. Configureer in het deelvenster **SCEP-certificaat** de volgende instellingen:
+6. Voer de volgende instellingen in:
 
    - **Certificaattype**: kies **Gebruiker** voor gebruikerscertificaten. Kies **Apparaat** voor apparaten zonder gebruiker, zoals kiosken. Er zijn **Apparaat**-certificaten beschikbaar voor de volgende platformen:  
      - iOS
@@ -371,7 +384,7 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
             - **CN = {{AAD_Device_ID}}**: een id die wordt toegewezen wanneer u een apparaat in Azure Active Directory (AD) registreert. Deze id wordt doorgaans gebruikt voor verificatie met Azure AD.
             - **CN={{SERIALNUMBER}}**: het unieke serienummer dat doorgaans wordt gebruikt door de fabrikant om een apparaat te identificeren
             - **CN = {{IMEINumber}}**: het unieke nummer van de International Mobile Equipment Identity (IMEI) dat wordt gebruikt om een mobiele telefoon te identificeren
-            - **CN = {{OnPrem_Distinguished_Name}}**: een reeks relatieve DN-namen die door komma's worden gescheiden, bijvoorbeeld `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+            - **CN = {{OnPrem_Distinguished_Name}}**: een reeks relatieve namen die door komma's worden gescheiden, bijvoorbeeld `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
                 Als u de variabele `{{OnPrem_Distinguished_Name}}` wilt gebruiken, moet u het gebruikerskenmerk `onpremisesdistingishedname` met behulp van [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw exemplaar van Azure AD.
 
@@ -403,13 +416,14 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
         "{{MEID}}",
         ```
 
-        Deze variabelen kunnen met statische tekst worden toegevoegd in een tekstvak voor aangepaste waarden. Het DNS-kenmerk kan bijvoorbeeld worden toegevoegd als `DNS = {{AzureADDeviceId}}.domain.com`.
+        Deze variabelen kunnen met statische tekst worden toegevoegd in een tekstvak voor aangepaste waarden. De algemene naam kan bijvoorbeeld worden toegevoegd als `CN = {{DeviceName}}text`.
 
         > [!IMPORTANT]
-        >  - Accolades **{ }**, pijp-symbolen **|** en puntkomma's **;** kunnen niet worden gebruikt in de statische tekst van de alternatieve naam voor het onderwerp. 
+        >  - In de statische tekst van het onderwerp leiden accolades **{ }** die geen variabele insluiten, tot een fout. 
         >  - Wanneer u een variabele voor een apparaatcertificaat gebruikt, plaatst u de variabele tussen accolades **{ }**.
         >  - `{{FullyQualifiedDomainName}}` kan alleen worden gebruikt voor Windows-apparaten en apparaten die aan een domein zijn toegevoegd. 
         >  -  Houd er rekening mee dat wanneer u in het onderwerp of de alternatieve naam voor het onderwerp voor een apparaatcertificaat apparaateigenschappen gebruikt, zoals het IMEI-nummer, het serienummer en de Fully Qualified Domain Name, deze eigenschappen kunnen worden vervalst door een persoon met toegang tot het apparaat.
+        >  - Het profiel wordt niet geïnstalleerd op het apparaat als de opgegeven apparaatvariabelen niet worden ondersteund. Als bijvoorbeeld {{IMEI}} wordt gebruikt in de onderwerpnaam van een SCEP-profiel dat wordt toegewezen aan een apparaat dat geen IMEI-nummer heeft, mislukt de profielinstallatie. 
 
 
    - **Alternatieve onderwerpnaam**: voer in hoe de waarden voor de alternatieve naam van het onderwerp (SAN) in de certificaataanvraag automatisch worden gemaakt met Intune. De beschikbare opties kunnen verschillen, afhankelijk van het gekozen certificaattype: **Gebruiker** of **Apparaat**. 
@@ -428,8 +442,6 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
         Een aanpasbaar tekstvak in tabelopmaak. De volgende kenmerken zijn beschikbaar:
 
         - DNS
-        - E-mailadres
-        - User Principal Name (UPN)
 
         Bij het certificaattype **Apparaat** kunt u de volgende variabelen van het apparaatcertificaat gebruiken voor de waarde:  
 
@@ -447,13 +459,14 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
         "{{MEID}}",
         ```
 
-        Deze variabelen kunnen met statische tekst worden toegevoegd in het tekstvak voor aangepaste waarden. Het DNS-kenmerk kan bijvoorbeeld worden toegevoegd als `DNS = {{AzureADDeviceId}}.domain.com`.
+        Deze variabelen kunnen met statische tekst worden toegevoegd in het tekstvak voor aangepaste waarden. Het DNS-kenmerk kan bijvoorbeeld worden toegevoegd als `DNS name = {{AzureADDeviceId}}.domain.com`.
 
         > [!IMPORTANT]
         >  - Accolades **{ }**, pijp-symbolen **|** en puntkomma's **;** kunnen niet worden gebruikt in de statische tekst van de alternatieve naam voor het onderwerp. 
         >  - Wanneer u een variabele voor een apparaatcertificaat gebruikt, plaatst u de variabele tussen accolades **{ }**.
         >  - `{{FullyQualifiedDomainName}}` kan alleen worden gebruikt voor Windows-apparaten en apparaten die aan een domein zijn toegevoegd. 
         >  -  Houd er rekening mee dat wanneer u in het onderwerp of de alternatieve naam voor het onderwerp voor een apparaatcertificaat apparaateigenschappen gebruikt, zoals het IMEI-nummer, het serienummer en de Fully Qualified Domain Name, deze eigenschappen kunnen worden vervalst door een persoon met toegang tot het apparaat.
+        >  - Het profiel wordt niet geïnstalleerd op het apparaat als de opgegeven apparaatvariabelen niet worden ondersteund. Als bijvoorbeeld {{IMEI}} wordt gebruikt in de alternatieve onderwerpnaam van een SCEP-profiel dat wordt toegewezen aan een apparaat dat geen IMEI-nummer heeft, mislukt de profielinstallatie.  
 
    - **Geldigheidsduur van certificaat**: als u de opdracht `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` hebt uitgevoerd op de verlenende CA waarop een aangepaste geldigheidsperiode mogelijk is, kunt u opgeven hoelang het certificaat geldig blijft.<br>U kunt een waarde invoeren die lager is dan de geldigheidsperiode in de certificaatsjabloon, maar niet hoger. Als de geldigheidsperiode van het certificaat in de certificaatsjabloon bijvoorbeeld twee jaar is, kunt u wel één jaar, maar niet vijf jaar opgeven. De waarde moet ook lager zijn dan de resterende geldigheidsperiode van het certificaat van de verlenende CA. 
    - **Sleutelarchiefprovider (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): geef op waar de sleutel voor het certificaat wordt opgeslagen. Kies een van de volgende waarden:
