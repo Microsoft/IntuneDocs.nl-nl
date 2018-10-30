@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.openlocfilehash: 870590df70474db02dc4b3e4ba5a8251aeeb2f26
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260195"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959465"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>De bedrijfsportal-app installeren en u hierbij aanmelden
 
@@ -32,7 +32,7 @@ Installeer de bedrijfsportal-app op uw iOS-apparaat om toegang te krijgen tot uw
 
 2.  Download de **Intune-bedrijfsportal**-app.
 
-    ![Schermopname waarin is weergegeven hoe de Intune-bedrijfsportal-app wordt weergegeven in de App Store.](./media/cp_iosredesign_after_1803_04.png)
+    ![Schermopname waarin is weergegeven hoe de Intune-bedrijfsportal-app wordt weergegeven in de App Store.](./media/CP_iosRedesign_after_1803_04.PNG)
 
 3.  Open de bedrijfsportal-app, voer het e-mailadres en het wachtwoord van uw werk of school in en tik vervolgens op **Aanmelden**.
 

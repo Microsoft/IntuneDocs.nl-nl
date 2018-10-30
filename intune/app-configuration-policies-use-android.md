@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f41c228e7b5dd4084e7ebb2fab1148913b76880f
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: f08e6275bb8f3dfb689dcc7e14d92ab65d588471
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642941"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149101"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>App-configuratiebeleidsregels toevoegen voor beheerde Android-apparaten
 
@@ -29,9 +29,7 @@ ms.locfileid: "49642941"
 Gebruik app-configuratiebeleidsregels in Microsoft Intune om instellingen te leveren aan Android-werkprofiel-apps. De ontwikkelaar van de app moet configuratie-instellingen voor beheerde Android-apps weergeven om configuratie-instellingen voor de app op te kunnen geven. Wijs het app-configuratiebeleid toe aan de gebruikersgroep waarop u de instellingen wilt toepassen.  De beleidsinstellingen worden gebruikt wanneer de app deze controleert, doorgaans bij de eerste keer dat de app wordt uitgevoerd.
 
 > [!Note]  
-> Niet elke app ondersteunt app-configuratie. Vraag aan de app-ontwikkelaar of deze de app zo heeft geconstrueerd dat deze app-configuratiebeleidsregels ondersteunt.<p></p>
-> Als Microsoft Intune-beheerder kunt u bepalen welke gebruikersaccounts worden toegevoegd aan Microsoft Office-toepassingen op beheerde apparaten. U kunt de toegang beperken tot uitsluitend toegestane gebruikersaccounts van de organisatie, en persoonlijke accounts blokkeren op ingeschreven apparaten. De app-configuratie wordt verwerkt op de ondersteunende toepassingen, en niet-goedgekeurde accounts worden verwijderd en geblokkeerd.<p></p>
-> Voor Microsoft Word, Microsoft Excel en Microsoft PowerPoint moet u app-versie 16.0.9327.1000 of hoger gebruiken.
+> Niet elke app ondersteunt app-configuratie. Vraag aan de app-ontwikkelaar of deze de app zo heeft geconstrueerd dat deze app-configuratiebeleidsregels ondersteunt.
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
@@ -80,7 +78,9 @@ Gebruik voor Android-apparaten de volgende sleutel-/waardeparen:
 | **Waarden** | <ul><li>Een of meer door <code>;</code> gescheiden UPN’s.</li><li>Alleen beheerde gebruikersaccounts die met deze sleutel zijn gedefinieerd, zijn toegestaan.</li><li> Voor apparaten die zijn ingeschreven bij Intune, kan het <code>{{userprincipalname}}</code>-token worden gebruikt voor het ingeschreven gebruikersaccount.</li></ul> |
 
    > [!NOTE]
-   > U moet Outlook voor Android 2.2.222 of hoger gebruiken wanneer u alleen geconfigureerde organisatieaccounts met meerdere identiteiten toestaat. 
+   > U moet Outlook voor Android 2.2.222 of hoger gebruiken wanneer u alleen geconfigureerde organisatieaccounts met meerdere identiteiten toestaat.<p></p>
+   > Als Microsoft Intune-beheerder kunt u bepalen welke gebruikersaccounts worden toegevoegd aan Microsoft Office-toepassingen op beheerde apparaten. U kunt de toegang beperken tot uitsluitend toegestane gebruikersaccounts van de organisatie, en persoonlijke accounts blokkeren op ingeschreven apparaten. De app-configuratie wordt verwerkt op de ondersteunende toepassingen, en niet-goedgekeurde accounts worden verwijderd en geblokkeerd.<p></p>
+   > Voor Microsoft Word, Microsoft Excel en Microsoft PowerPoint moet u app-versie 16.0.9327.1000 of hoger gebruiken. 
 
 ## <a name="enter-the-json-editor"></a>De JSON-editor invoeren
 
@@ -96,7 +96,7 @@ Wanneer de toegewezen app op een apparaat wordt uitgevoerd, worden de instelling
 
 ## <a name="preconfigure-the-permissions-grant-state-for-apps"></a>De status van de machtigingen voor apps vooraf configureren
 
-U kunt machtigingen voor apps ook vooraf configureren voor toegang tot Android-apparaatfuncties. Android-apps die apparaatmachtigingen vereisen, zoals voor toegang tot uw locatie of de apparaatcamera, vragen gebruikers de machtiging te accepteren of te weigeren. Als een app bijvoorbeeld gebruikmaakt van de microfoon van het apparaat, wordt de gebruiker gevraagd de app toestemming te verlenen voor het gebruik van de microfoon.
+U kunt machtigingen voor apps ook vooraf configureren voor toegang tot Android-apparaatfuncties. Android-apps die apparaatmachtigingen vereisen, zoals voor toegang tot uw locatie of de apparaatcamera, vragen gebruikers de machtiging te accepteren of te weigeren. Als een app bijvoorbeeld gebruikmaakt van de microfoon van het apparaat, wordt de gebruiker gevraagd de app toestemming te verlenen voor het gebruik van de microfoon.
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.

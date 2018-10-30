@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3778675366a19eb6ba1774f26bbb3523cdcdf92f
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ae031f601792251f1dcf7b93fb914a740bc36300
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828326"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136978"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Instellingen voor beveiligingsbeleid voor apps voor Android in Microsoft Intune
 In dit artikel worden de app-beveiligingsbeleidsinstellingen voor Android-apparaten beschreven. De beleidsinstellingen die worden beschreven, kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid op de blade **Instellingen** in Azure Portal.
@@ -61,6 +61,7 @@ Er zijn twee soorten beleidsinstellingen, namelijk instellingen voor herlocatie 
   | com.android.webview |[WebView](https://developer.android.com/reference/android/webkit/WebView.html), dat nodig is voor veel apps, inclusief Outlook.|
   | com.google.android.tts | Google Tekst naar spraak |
   | com.android.providers.settings | Systeeminstellingen Android |
+  | com.android.settings | Systeeminstellingen Android |
   | com.azure.authenticator | Azure Authenticator-app, die vereist is voor een geslaagde verificatie in veel scenario's. |
   | com.microsoft.windowsintune.companyportal | Intune Bedrijfsportal|
 
