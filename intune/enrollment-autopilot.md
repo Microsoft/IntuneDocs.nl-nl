@@ -31,6 +31,8 @@ Windows Autopilot maakt het makkelijker om apparaten te registreren. Het kost ve
 
 U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren met de bijbehorende informatie.
 
+>[!NOTE] For more information about how to generate the csv file click [Here](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/add-devices)
+
 1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > **Importeren**.
 
     ![Schermafbeelding van Windows Autopilot-apparaten](media/enrollment-autopilot/autopilot-import-device.png)
