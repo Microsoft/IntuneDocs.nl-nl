@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,25 +14,25 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d6d67454409cf8a8749d28cba6ac76f591da9e3
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: ba5035dfcbab4b938b1ed31786ad0f70dceb2d8c
+ms.sourcegitcommit: b165a38b5d6de396f2edab6411742cb50a9b8816
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231284"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50253467"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Op apps gebaseerd beleid instellen voor voorwaardelijke toegang met Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-In dit artikel vindt u instructies voor het instellen van op apps gebaseerd beleid voor voorwaardelijke toegang voor apps die deel uitmaken van de lijst met goedgekeurde apps. De lijst met goedgekeurde apps bestaat uit apps die zijn getest door Microsoft.
+Op apps gebaseerd beleid instellen voor voorwaardelijke toegang voor apps die deel uitmaken van de lijst met goedgekeurde apps. De lijst met goedgekeurde apps bestaat uit apps die zijn getest door Microsoft.
 
 > [!IMPORTANT]
-> In dit artikel worden de stappen besproken die u moet volgen om een beleid voor voorwaardelijke toegang op basis van apps toe te voegen. Let op: u kunt dezelfde stappen volgen voor het toevoegen van apps zoals SharePoint Online, Microsoft Teams en Microsoft Exchange Online uit de lijst met goedgekeurde apps.
+> In dit artikel worden de stappen besproken die u moet volgen om een beleid voor voorwaardelijke toegang op basis van apps toe te voegen. U kunt dezelfde stappen volgen voor het toevoegen van apps zoals SharePoint Online, Microsoft Teams en Microsoft Exchange Online uit de lijst met goedgekeurde apps.
 
 ## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Voorwaardelijk toegangsbeleid op basis van apps maken in Azure AD-werkbelasting
 
-IT-beheerders kunnen op apps gebaseerd voorwaardelijk toegangsbeleid maken uitgaande van de workload van Azure AD. Daardoor hoeft u niet te schakelen tussen Azure en de Intune-werkbelastingen.
+IT-beheerders kunnen op apps gebaseerd voorwaardelijk toegangsbeleid maken uitgaande van de workload van Azure AD. Dankzij deze toegang hoeft u niet te schakelen tussen Azure en de Intune-werkbelastingen.
 
 > [!IMPORTANT]
 > Als u beleid voor voorwaardelijke toegang voor Azure AD wilt instellen vanuit Intune Azure Portal, moet u een Azure AD Premium-licentie hebben.
@@ -51,9 +51,9 @@ IT-beheerders kunnen op apps gebaseerd voorwaardelijk toegangsbeleid maken uitga
 5. Kies **Goedgekeurde client-app vereisen** , kies **Selecteren** en kies vervolgens **Maken** om het nieuwe beleid op te slaan.
 
 ## <a name="next-steps"></a>Volgende stappen
-[Apps die geen gebruik maken van moderne verificatie blokkeren](app-modern-authentication-block.md)
+[Apps die geen gebruikmaken van moderne verificatie blokkeren](app-modern-authentication-block.md)
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 
 [App-gegevens beveiligen met app-beveiligingsbeleid](app-protection-policies.md)
 [Voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

@@ -15,12 +15,12 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d8784d560d37068fd4559a2e67ecf35044ee498e
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: da10455cd6dc3cfbda23726832c539c206aea18c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494044"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025148"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Microsoft Store-apps toevoegen aan Microsoft Intune
 
@@ -54,7 +54,7 @@ U kunt op de volgende manier een Microsoft Store-app toevoegen aan Intune:
 8. Selecteer **OK**.
 9. Selecteer **Toevoegen**.
 
-De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u selecteert. 
+De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u selecteert. Apps uit de Microsoft Store kunnen alleen worden toegewezen aan groepen met het toewijzingstype **Beschikbaar voor ingeschreven apparaten** (gebruikers installeren de app vanuit de bedrijfsportal-app of -website).
 
 ## <a name="next-steps"></a>Volgende stappen
 - [Apps aan groepen toewijzen](apps-deploy.md)

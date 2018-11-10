@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391566"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915696"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Aan de slag met apparaatnalevingsbeleid in Intune
 
@@ -153,7 +153,7 @@ U kunt nalevingsbeleid voor apparaten ook zonder voorwaardelijke toegang gebruik
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Nalevingsbeleid voor apparaten implementeren
 U kunt nalevingsbeleid implementeren voor gebruikers in gebruikersgroepen of apparaten in apparaatgroepen. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden alle apparaten van de gebruiker gecontroleerd op naleving. Voor apparaten met Windows 10-versie 1803 en hoger raden we aan naar apparaatgroepen te implementeren *als* de hoofdgebruiker het apparaat niet heeft geregistreerd. Het gebruik van apparaatgroepen maakt rapportage over naleving in dit scenario eenvoudiger.
 
-De **Standaardinstellingen voor nalevingsbeleid** (Azure-portal > Apparaatnaleving) omvatten:
+Een reeks ingebouwde **instellingen voor nalevingsbeleid** (Azure Portal > Apparaatnaleving) wordt geëvalueerd voor alle bij Intune ingeschreven apparaten. Deze omvatten:
 
 - **Apparaten waaraan geen nalevingsbeleid is toegewezen markeren als**: deze eigenschap heeft twee waarden:
 
@@ -171,7 +171,7 @@ De **Standaardinstellingen voor nalevingsbeleid** (Azure-portal > Apparaatnalevi
 
 - **Geldigheidsperiode van nalevingsstatus (dagen)**: voer de periode in dat apparaten de status voor alle ontvangen nalevingsbeleidsregels rapporteren. Apparaten die niet binnen deze tijdsduur de status retourneren, worden als Niet compatibel beschouwd. De standaardwaarde is 30 dagen.
 
-Alle apparaten hebben een **Standaardnalevingsbeleid voor apparaten** (Azure Portal > Apparaatnaleving > Beleidsnaleving). Gebruik dit standaardbeleid voor het bewaken van deze instellingen.
+Alle apparaten hebben een **ingebouwd nalevingsbeleid voor apparaten** (Azure Portal > Apparaatnaleving > Beleidsnaleving). Gebruik dit ingebouwde beleid voor het bewaken van deze instellingen.
 
 Raadpleeg [Problemen met apparaatprofielen oplossen](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned) voor meer informatie over hoe lang het duurt voordat op mobiele apparaten een beleid wordt toegepast nadat het beleid is geïmplementeerd.
 

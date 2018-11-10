@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 2e3b356cc7c09b00916c24340dbbe1923540889b
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313696"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915730"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android- en Samsung Knox Standard-apparaatbeperkingsinstellingen - Intune
 
@@ -39,7 +39,7 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
 - **Geolocatie (alleen voor Samsung Knox)**: hiermee staat u toe dat het apparaat locatiegegevens gebruikt.
 - **Uitschakelen (alleen voor Samsung Knox)**: hiermee staat u toe dat de gebruiker het apparaat mag uitschakelen.<br>Als deze optie is uitgeschakeld, kan **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist** niet worden ingesteld.
 - **Schermafbeelding (alleen voor Samsung Knox)**: hiermee staat u de gebruiker toe om de inhoud van het scherm vast te leggen als afbeelding.
-- **Spraakassistent (alleen voor Samsung Knox)**: hiermee staat u het gebruik van spraakassistent-software op het apparaat toe.
+- **Spraakassistent (alleen voor Samsung Knox)**: hiermee staat u het gebruik de S Voice-service en -app op het apparaat toe. Dit geldt niet voor Bixby of de spraakassistent voor toegankelijkheid waarmee inhoud op het scherm hardop wordt voorgelezen.
 - **YouTube (alleen voor Samsung Knox)**: hiermee staat u het gebruik van YouTube op het apparaat toe.
 - **Gedeelde apparaten (alleen voor Samsung Knox)**: hiermee kunt u een beheerd Samsung Knox Standard-apparaat configureren als een gedeeld apparaat. In deze modus kunnen eindgebruikers hun Azure AD-referenties gebruiken om zich aan en af te melden bij het apparaat. Het apparaat blijft beheerd, ongeacht of het in gebruik is of niet.<br>Wanneer deze functie wordt gebruikt in combinatie met een SCEP-certificaatprofiel, zorgt u er hiermee voor dat eindgebruikers met hun eigen SCEP-gebruikerscertificaat een apparaat met dezelfde set van apps kunnen delen voor alle gebruikers.  Wanneer ze zich afmelden, worden alle app-gegevens gewist.  Deze functie is beperkt tot LOB-apps.
 - **Wijzigingen in datum en tijd blokkeren (Samsung Knox)**: hiermee voorkomt u dat de gebruiker de datum- en tijdinstellingen op het apparaat kan wijzigen. 

@@ -15,53 +15,26 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e0d8d6aba74a37d1c07fa8445aa98adf5943be2
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: 0d510596f021725292c7221e3056986c2c3fc93c
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141606"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410783"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Apparaten inschrijven met een apparaatinschrijvingsmanageraccount
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Organisaties kunnen Intune gebruiken voor het beheren van een groot aantal mobiele apparaten met één gebruikersaccount. Het account voor de *apparaatinschrijvingsmanager* (DEM-account) is een speciaal gebruikersaccount waarmee maximaal duizend apparaten kunnen worden ingeschreven. U voegt bestaande gebruikers toe aan het DEM-account om hen speciale DEM-mogelijkheden te bieden. Voor elk geregistreerd apparaat is een licentie nodig. Gebruik apparaten die zijn geregistreerd met dit account als gedeelde apparaten in plaats van persoonlijke (BYOD)-apparaten.  
-
-Gebruikers moeten in [Azure Portal](https://portal.azure.com) bestaan om ze te kunnen toevoegen als apparaatinschrijvingsmanagers. Voor een optimale beveiliging mag de DEM-gebruiker niet ook Intune-beheerder zijn.
-
->[!NOTE]
->De DEM-registratiemethode kan niet worden gebruikt met de volgende andere registratiemethoden: [Apple Configurator met Configuratieassistent](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator met directe enrollment](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) of [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md).
-
-## <a name="example-of-a-device-enrollment-manager-scenario"></a>Voorbeeld van een scenario voor apparaatinschrijvingsmanager
-
-Een restaurant wil 50 verkooptablets inzetten voor zijn bedienend personeel en bestellingsmonitors voor het keukenpersoneel. De werknemers hebben geen toegang tot bedrijfsgegevens nodig of moeten zich aanmelden als gebruikers. De Intune-beheerder maakt een nieuw beheeraccount voor apparaatinschrijving voor de restaurantsupervisor.  Dit account is gescheiden van het hoofdaccount van de supervisor en wordt uitsluitend gebruikt voor het bij Intune registreren van gedeelde apparaten. De supervisor kan de 50 tablets nu inschrijven met de DEM-referenties.
-
-Alleen gebruikers in [Azure Portal](https://portal.azure.com) kunnen apparaatinschrijvingsmanagers zijn. De gebruiker van het account voor apparaatinschrijvingsmanagers mag geen Intune-beheerder zijn.
-
-De DEM-gebruiker kan:
-
--   Maximaal 1000 apparaten inschrijven bij Intune
--   Aanmelden bij de bedrijfsportal om bedrijfsapps op te halen
--   Toegang tot bedrijfsgegevens configureren door rolspecifieke apps te implementeren op de tablets
+U kunt maximaal 1000 mobiele apparaten inschrijven met één Azure Active Directory-account als u gebruikmaakt van een apparaatinschrijvingsmanageraccount (DEM). DEM is een Intune-machtiging die kan worden toegepast op een AAD-gebruikersaccount; hiermee kan de gebruiker maximaal 1000 apparaten inschrijven. Een DEM-account is handig voor gebruik in scenario's waarin apparaten worden ingeschreven en voorbereid vóórdat ze aan de gebruikers van de apparaten worden overhandigd.
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Beperkingen van apparaten die zijn ingeschreven bij een DEM-account
 
-Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanagers, hebben de volgende beperkingen:
+DEM-gebruikersaccounts en apparaten die zijn ingeschreven met een DEM-gebruikersaccount hebben de volgende beperkingen:
 
-  - Geen toegang per gebruiker. Omdat apparaten geen toegewezen gebruiker hebben, heeft het apparaat geen toegang tot e-mail of bedrijfsgegevens. VPN-configuraties kunnen echter nog wel worden gebruikt om apps op apparaten te leveren met toegang tot gegevens.
-  - De DEM-gebruiker kan bij DEM ingeschreven apparaten niet via de bedrijfsportal uitschrijven op het apparaat zelf. De Intune-beheerder kan uitschrijvingen uitvoeren.
+  - Wissen kan niet worden uitgevoerd vanuit de bedrijfsportal. Apparaten die door DEM-gebruikersaccounts zijn ingeschreven, kunnen worden gewist via Intune (Azure Portal).
   - Alleen het lokale apparaat wordt weergegeven in de bedrijfsportal-app of op de website.
-  - Gebruikers kunnen geen Apple VPP-apps (Volume Purchase Program) met gebruikerslicenties gebruiken vanwege de Apple ID-vereisten per gebruiker voor het beheer van apps.
-  - (alleen iOS) Als u DEM gebruikt om iOS-apparaten in te schrijven, kunt u de Apple Configurator of het Apple Device Enrollment Program (DEP) of Apple School Manager (ASM) niet gebruiken om apparaten te registreren. Dit wil zeggen dat u een apparaat niet in supervisiemodus kunt zetten en dus geen toegang hebt tot sommige configuratie-opties.
-  - (alleen Android) Er is een limiet voor het aantal apparaten met een Android-werkprofiel dat kan worden geregistreerd met één DEM-account. Per DEM-account kunt u tot tien werkprofielen voor Android-apparaten registreren. Deze beperking geldt niet voor de inschrijving van oudere Android-apparaten.
-  - Apparaten kunnen VPP-apps installeren als ze over apparaatlicenties beschikken.
-  - Er is geen apparaatlicentie voor Intune vereist om DEM te gebruiken. Meer informatie over [gebruikers- en apparaatlicenties](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
-
-
-> [!NOTE]
-> U kunt bedrijfs-apps implementeren op apparaten die worden beheerd door de apparaatinschrijvingsmanager. Implementeer de bedrijfsportal-app als een **vereiste installatie** in het gebruikersaccount van de apparaatinschrijvingsmanager.
-> Om prestaties te verbeteren wordt bij het weergeven van de bedrijfsportal-app op een DEM-apparaat alleen het lokale apparaat weergegeven. Extern beheer van andere DEM-apparaten is alleen mogelijk via de Intune-beheerconsole.
+  - DEM-gebruikersaccounts kunnen geen Apple Volume Purchase Program-apps (VPP) met gebruikerslicenties gebruiken vanwege de Apple ID-vereisten per gebruiker voor het beheer van apps.
+  - Apparaten kunnen VPP-apps installeren als ze over Apple VPP-apparaatlicenties beschikken.
+  
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Een apparaatinschrijvingsmanager toevoegen
@@ -75,20 +48,15 @@ Apparaten die zijn geregistreerd met een account voor apparaatinschrijvingsmanag
 ## <a name="permissions-for-dem"></a>Machtigingen voor DEM
 
 De Azure AD-rollen Globale beheerder of Intune-servicebeheerder zijn vereist voor
-- het uitvoeren van taken die zijn gerelateerd aan de DEM-registratie in de beheerportal;
-- het weergeven van alle DEM-gebruikers, ondanks dat er RBAC-machtigingen worden vermeld en beschikbaar zijn onder de aangepaste gebruikersrol.
+- het toewijzen van DEM-machtigingen aan een Azure AD-gebruikersaccount
+- het bekijken van alle DEM-gebruikers
 
-Een gebruiker zonder de rol van globale beheerder of Intune-servicebeheerder maar met leesmachtigingen voor de DEM-rol, kan alleen de DEM-gebruikers weergeven die door de gebruiker zijn gemaakt. RBAC-rolondersteuning voor deze functies wordt in de toekomst aangekondigd.
+Als een gebruiker niet over de rol van globale beheerder of Intune-servicebeheerder beschikt, maar wel leesmachtigingen voor de toegewezen DEM-rol heeft, kan de gebruiker alleen de zelfgemaakte DEM-gebruikers weergeven.
 
 
-## <a name="remove-a-device-enrollment-manager"></a>Een apparaatinschrijvingsmanager verwijderen
+## <a name="remove-device-enrollment-manager-permissions"></a>Machtigingen voor een apparaatinschrijvingsmanager verwijderen
 
-Het volgende is van toepassing wanneer een apparaatinschrijvingsmanager wordt verwijderd:
-
--   Dit is niet van invloed op geregistreerde apparaten. Deze blijven volledig beheerd.
--   De referenties van het verwijderde DEM-account zijn nog steeds geldig.
--   De verwijderde DEM kan nog steeds geen apparaat wissen of buiten gebruik stellen.
--   De verwijderde DEM kan slechts een bepaald aantal apparaten registreren, overeenkomstig de gebruikerslimiet die door de Intune-beheerder is geconfigureerd.
+Het verwijderen van een apparaatinschrijvingsmanager is niet van invloed op ingeschreven apparaten.
 
 **Een apparaatinschrijvingsmanager verwijderen**
 

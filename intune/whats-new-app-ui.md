@@ -15,17 +15,24 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb1599085687c258c6853eacf269e2d1b11cbaf1
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 924326de480073d7bca8e6bec2d6f7e9c11d0cc1
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425084"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236642"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Lees welke updates zijn aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Inzicht in deze updates kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-october-22-2018"></a>Week van 22 oktober 2018
+
+### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>Aangepaste merkafbeelding toevoegen voor bedrijfsportal-app <!-- 1916266 -->
+Als Microsoft Intune-beheerder kunt u een aangepaste merkafbeelding uploaden die als achtergrondafbeelding wordt weergegeven op de profielpagina van de gebruiker in de bedrijfsportal-app voor iOS. Voor meer informatie over het configureren van de bedrijfsportal-app, zie [Handleiding voor configuratie van de Microsoft Intune bedrijfsportal-app](company-portal-app.md).
+
+
 
 ## <a name="week-of-august-27-2018"></a>Week van 27 augustus 2018  
 
@@ -163,7 +170,7 @@ We zijn nog steeds bezig met het aanpassen van de manier waarop relevantie wordt
 ## <a name="week-of-october-16-2017"></a>Week van 16 oktober 2017
 
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Verbeterde zoekfunctie op de bedrijfsportalwebsite <!-- 1331697 -->
-We verbeteren onze app-zoekfuncties, te beginnen met de [bedrijfsportalwebsite](https://portal.manage.microsoft.com). Zoekopdrachten worden nu ook uitgevoerd op app-categorieën naast de velden Naam en Beschrijving. De resultaten worden standaard gesorteerd in aflopende volgorde van relevantie. 
+We verbeteren onze app-zoekfuncties, te beginnen met de [bedrijfsportalwebsite](https://portal.manage.microsoft.com). Zoekopdrachten worden nu ook uitgevoerd op app-categorieën naast de velden Naam en Beschrijving. De resultaten worden standaard gesorteerd in aflopende volgorde van relevantie. 
 
 iOS-gebruikers ontvangen deze wijziging ook omdat de bedrijfsportalwebsite ook wordt gebruikt als onderdeel van de bedrijfsportal-app voor iOS. De bedrijfsportal-apps voor Android en Windows ontvangen dergelijke updates in de komende maanden.
 
@@ -177,7 +184,7 @@ Deze release bevat een oplossing voor een bekend probleem met de manier waarop d
 ## <a name="week-of-october-2-2017"></a>Week van 2 oktober 2017
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Verbeteringen in de werkstroom voor apparaatinstellingen in de bedrijfsportal <!-- 1490692 -->
-We hebben de werkstroom voor apparaatinstellingen in de bedrijfsportal-app voor Android verbeterd. De taal is gebruiksvriendelijker en specifiek voor uw bedrijf. Daarnaast hebben we waar mogelijk schermen gecombineerd. 
+We hebben de werkstroom voor apparaatinstellingen in de bedrijfsportal-app voor Android verbeterd. De taal is gebruiksvriendelijker en specifiek voor uw bedrijf. Daarnaast hebben we waar mogelijk schermen gecombineerd. 
 
 |Voor|Na|
 |---|---|
@@ -205,7 +212,7 @@ We hebben ook het e-mailactiveringsscherm voor voorwaardelijke toegang bijgewerk
 
 ## <a name="week-of-september-11-2017"></a>Week van 11 september 2017
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Gemakkelijker te begrijpen formulering voor de bedrijfsportal-app voor Android <!-- 1396349 -->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Gemakkelijker te begrijpen formulering voor de bedrijfsportal-app voor Android <!-- 1396349 -->  
 
 Het inschrijvingsproces voor de bedrijfsportal-app voor Android is vereenvoudigd met nieuwe tekst om het eindgebruikers gemakkelijker te maken om zich in te schrijven. Als u aangepaste inschrijvingsdocumentatie hebt, is het aan te raden om die bij te werken met de nieuwe schermen. Hieronder staan voorbeeldafbeeldingen:
 
@@ -222,7 +229,7 @@ Het inschrijvingsproces voor de bedrijfsportal-app voor Android is vereenvoudigd
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 Mail-app zal OAuth ondersteunen <!-- 1196951 -->
 
-Voorwaardelijke toegang met Intune ondersteunt veiligere verificatie op iOS-apparaten met OAuth. In de bedrijfsportal-app voor iOS zal er daarom nu een andere stroom zijn om veiligere verificatie mogelijk te maken. Wanneer eindgebruikers zich proberen aan te melden bij een nieuw Exchange-account in de Mail-app, zien ze een prompt in de webweergave. Bij inschrijving in Intune zien gebruikers een prompt waarin hun wordt gevraagd de ingebouwde Mail-app toegang te geven tot een certificaat. De meeste eindgebruikers zien geen e-mails in quarantaine meer. Bestaande e-mailaccounts blijven het basisverificatieprotocol gebruiken, dus die gebruikers blijven e-mails in quarantaine ontvangen. Deze aanmeldingservaring voor eindgebruikers lijkt op die in Office Mobile-apps.
+Voorwaardelijke toegang met Intune ondersteunt veiligere verificatie op iOS-apparaten met OAuth. In de bedrijfsportal-app voor iOS zal er daarom nu een andere stroom zijn om veiligere verificatie mogelijk te maken. Wanneer eindgebruikers zich proberen aan te melden bij een nieuw Exchange-account in de Mail-app, zien ze een prompt in de webweergave. Bij inschrijving in Intune zien gebruikers een prompt waarin hun wordt gevraagd de ingebouwde Mail-app toegang te geven tot een certificaat. De meeste eindgebruikers zien geen e-mails in quarantaine meer. Bestaande e-mailaccounts blijven het basisverificatieprotocol gebruiken, dus die gebruikers blijven e-mails in quarantaine ontvangen. Deze aanmeldingservaring voor eindgebruikers lijkt op die in Office Mobile-apps.
 
 ![Het accounttype selecteren in de ingebouwde Mail-app.](./media/ios-11-ca-email-after-1708-01.png)
 

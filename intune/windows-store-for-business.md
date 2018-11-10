@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d1fe40b1cb5a496b3111b2630718a3dd17486ab
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: c30d20592a95f7894bb040f9e8fe5a2e3ddd0166
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494010"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915747"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Apps die u hebt aangeschaft in Microsoft Store voor Bedrijven, beheren met Microsoft Intune
 
@@ -89,4 +89,15 @@ Wanneer u een Microsoft Store voor Bedrijven-app toewijst, heeft elke gebruiker 
 * Beperk het bereik van de huidige toewijzing tot het aantal gebruikers waarvoor u een licentie hebt.
 * Koop meer exemplaren van de app in Microsoft Store voor Bedrijven.
 
+## <a name="remove-apps"></a>Apps verwijderen
 
+Als u een app wilt verwijderen die is gesynchroniseerd vanuit Microsoft Store voor Bedrijven, moet u zich aanmelden bij Microsoft Store voor Bedrijven en de app terugbetalen.
+
+![Schermafbeelding van de details over app-verwijdering](./media/microsoft-store-for-business-01.png)
+
+> [!NOTE]
+> Als u de zichtbaarheid van de app in de privéstore verwijdert, zorgt dit er niet voor dat Intune stopt met synchroniseren. U moet de app terugbetalen.
+
+## <a name="next-steps"></a>Volgende stappen
+
+- [Apps en boeken met Microsoft Intune beheren die via het Volume Purchase Program zijn gekocht](vpp-apps.md)

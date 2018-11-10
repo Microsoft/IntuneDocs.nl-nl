@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 99d217c2d1960a1ca163bf697bfbd28e5406b58f
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 25236453f0440978eda34e3a1a8b1b93daf4c6e1
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075843"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025165"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
@@ -94,7 +94,7 @@ Zie [Apps beheren](app-management.md) voor meer informatie over deze sectie.
 - **App-licenties**: apps die in de app-stores zijn gekocht via een volume-aankoopprogramma weergeven, toewijzen en bewaken. Zie voor meer informatie:
     - [iOS-apps die zijn gekocht via het volume-aankoopprogramma (VPP)](vpp-apps-ios.md).
     - [Microsoft Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](windows-store-for-business.md).
-- **Gevonden apps**: hier worden alle apps weergegeven die zijn toegewezen door Intune en op een apparaat zijn geïnstalleerd. Zie [App-gegevens en -toewijzingen controleren met Microsoft Intune](apps-monitor.md#device-and-user-status-graphs) voor meer informatie.
+- **Gevonden apps**: hier worden apps weergegeven die zijn toegewezen door Intune of op een apparaat zijn geïnstalleerd. Zie [Apparaatdetails weergeven met Microsoft Intune](device-inventory.md) voor meer informatie.
 - **Installatiestatus van de app**: hier wordt de status weergegeven van een app-toewijzing die u hebt gemaakt. Zie [App-gegevens en -toewijzingen controleren met Microsoft Intune](apps-monitor.md#device-and-user-status-graphs) voor meer informatie.
 - **Status van de app-beveiliging**: hier wordt de status weergegeven van een app-beveiligingsbeleid voor een gebruiker die u selecteert.
 - **Auditlogboeken**: hier worden activiteiten door alle IT-beheerders voor de Intune-app weergegeven.

@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 239c8d5dc4143ba91c78b9b5c502c7a20b101417
-ms.sourcegitcommit: 7afa90264a2098453885be3d37655ae1a32ca67d
+ms.openlocfilehash: 90756da72ecdcbd049b14b45014433bb5843a5ed
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229072"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236659"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>De portal voor probleemoplossing gebruiken om gebruikers in uw bedrijf te helpen
 
@@ -96,13 +96,14 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 | Eigendom          | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**).                                               |
 | Compatibel met Intune   | De naam van het type apparaat.                                                                                                     |
 | Compatibel met Azure AD | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
+| App-installatie | Geeft aan of het installeren van een app op verschillende apparaten is voltooid of mislukt. |
 | Besturingssysteem                 | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                       |
 | Besturingssysteemversie         | Het versienummer van het besturingssysteem van het apparaat.                                                                                  |
 | Laatste check-in      | De naam van het type apparaat.                                                                                                     |
 
 ### <a name="app-protection-status"></a>Status app-beveiliging
 
-Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met Enterprise Mobility Solution-technologieën (EMS). Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
+Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met Enterprise Mobility Solution-technologieën (EMS). Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
 
 | Eigenschap    | Beschrijving                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -115,7 +116,7 @@ Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integre
 
 ## <a name="app-protection-policies-reference"></a>Verwijzing beveiligingsbeleid voor apps
 
-Er is een app-beschermingsbeleid beschikbaar voor mobiele apps die worden geïntegreerd met EMS-technologieën. Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
+Er is een app-beschermingsbeleid beschikbaar voor mobiele apps die worden geïntegreerd met EMS-technologieën. Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
 
 ### <a name="properties"></a>Eigenschappen
 
@@ -180,7 +181,7 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 
 ### <a name="app-protection-policies"></a>Beleid voor app-beveiliging
 
-Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
+Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
 
 | Eigenschap    | Beschrijving                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -193,7 +194,7 @@ Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integre
 
 ## <a name="configuration-policies-reference"></a>Referentie voor configuratiebeleid
 
-Er is een app-configuratiebeleid beschikbaar voor mobiele apps met leverancierspecifieke configuraties. 
+Er is een app-configuratiebeleid beschikbaar voor mobiele apps met leverancierspecifieke configuraties. 
 
 ### <a name="properties"></a>Eigenschappen
 
@@ -226,7 +227,7 @@ Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door I
 
 ### <a name="app-protection-policies"></a>Beleid voor app-beveiliging
 
-Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
+Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
 
 | Eigenschap    | Beschrijving                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
