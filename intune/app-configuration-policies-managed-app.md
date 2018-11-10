@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c94357d90f89e77be03df0db9ba9e2d89836623b
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 57de118c2e13182a0d26aa36d1dc5b1f7ea9c4e9
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799520"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136961"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving
 
@@ -39,7 +39,7 @@ U kunt app-configuratiebeleidsregels gebruiken voor beheerde apps die de Intune 
       De beschrijving van het profiel die in Azure Portal wordt weergegeven.
     - **Type apparaatinschrijving**  
       Kies **apps beheren**.
-6. Selecteer **Gekoppelde app** om de app te kiezen die u gaat configureren. Selecteer de app in de lijst met apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune.
+6. Selecteer  **Gekoppelde app**  om de app te kiezen die u gaat configureren. Selecteer de app in de lijst met apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune.
 7. Voor elk door de app ondersteunde configuratie-instelling typt u de **naam** en **waarde** en kiest u het weglatingsteken (**...** ).  
     Als u een configuratie wilt verwijderen, kiest u het weglatingsteken (**...**) en selecteert u **Verwijderen**.  
     
@@ -51,13 +51,13 @@ Intune kan bepaalde tokens genereren en deze verzenden naar de beheerde toepassi
 
 Intune ondersteunt de volgende tokentypen in de configuratie-instellingen. Andere aangepaste sleutel-/waardeparen worden niet ondersteund.
 
-- \{\{userprincipalname\}\}- bijvoorbeeld **John@contoso.com**
-- \{\{mail\}\}- bijvoorbeeld **John@contoso.com**
-- \{\{partialupn\}\} - bijvoorbeeld**Jan**
-- \{\{accountid\}\} - bijvoorbeeld **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- \{\{userid\}\} - bijvoorbeeld **3ec2c00f-b125-4519-acf0-302ac3761822**
-- \{\{username\}\} - bijvoorbeeld **Jan de Vries**
-- \{\{PrimarySMTPAddress\}\}- bijvoorbeeld **testuser@ad.domain.com** 
+- \{\{userprincipalname\}\}- bijvoorbeeld John@contoso.com
+- \{\{mail\}\}- bijvoorbeeld John@contoso.com
+- \{\{partialupn\}\} - bijvoorbeeld Jan
+- \{\{accountid\}\} - bijvoorbeeld fc0dc142-71d8-4b12-bbea-bae2a8514c81
+- \{\{userid\}\} - bijvoorbeeld 3ec2c00f-b125-4519-acf0-302ac3761822
+- \{\{username\}\} - bijvoorbeeld Jan de Vries
+- \{\{PrimarySMTPAddress\}\}- bijvoorbeeld testuser@ad.domain.com
 
 
 > [!Note]  

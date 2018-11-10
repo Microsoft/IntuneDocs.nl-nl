@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
-ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
+ms.openlocfilehash: 67a1eba8208140306c697b7fe7dddb987e4b75c9
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46329994"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001606"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>iOS-apparaatbeperkingsinstellingen in Microsoft Intune
 
@@ -215,8 +215,8 @@ U kunt ook op **Importeren** klikken om de lijst te vullen met waarden uit een C
 -   **Toevoegen aan Wi-Fi=netwerken die alleen configuratieprofielen gebruiken (alleen onder toezicht)**: hiermee kunt u toestaan dat het apparaat alleen verbinding maakt met netwerken die zijn geconfigureerd met een Intune Wi-Fi-profiel.
 
 - **Regels voor mobiel gebruik (alleen beheerde apps)**: hiermee kunt u de gegevenstypen definiëren die beheerde apps kunnen gebruiken die met een mobiel netwerk zijn verbonden. U kunt kiezen uit:
-    - **Gebruik van mobiel dataverkeer blokkeren**: u kunt het gebruik van mobiel dataverkeer blokkeren voor ** Alle beheerde apps** of u kunt **specifieke apps kiezen**.
-    - **Gebruik van mobiel dataverkeer tijdens roaming blokkeren**: u kunt het gebruik van mobiel dataverkeer tijdens roaming blokkeren voor ** Alle beheerde apps** of u kunt **specifieke apps kiezen**.
+    - **Gebruik van mobiel dataverkeer blokkeren**: u kunt het gebruik van mobiel dataverkeer blokkeren voor **alle beheerde apps** of u kunt **specifieke apps kiezen**.
+    - **Gebruik van mobiel dataverkeer tijdens roaming blokkeren**: u kunt het gebruik van mobiel dataverkeer tijdens roaming blokkeren voor **alle beheerde apps** of u kunt **specifieke apps kiezen**.
 
 ## <a name="connected-devices"></a>Verbonden apparaten
 

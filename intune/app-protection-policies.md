@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3478308e8e2c219631d0df864ca2add6cc57cda2
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 3a7285edfa2dcb50cc5fd28e4fefc1be4c3b9e10
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075860"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679267"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>App-beveiligingsbeleid maken en toewijzen
 
@@ -30,48 +30,50 @@ Meer informatie over het maken en toewijzen van app-beveiligingsbeleid van Micro
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
-App-beveiligingsbeleid kan worden toegepast op apps die worden uitgevoerd op apparaten die al dan niet door Intune worden beheerd. Zie [Wat zijn app-beveiligingsbeleidsregels van Microsoft Intune?](app-protection-policy.md) voor een gedetailleerde beschrijving van de werking van het app-beveiligingsbeleid en de scenario's die worden ondersteund door het app-beveiligingsbeleid van Intune.
+App-beveiligingsbeleid kan van toepassing zijn op apps die worden uitgevoerd op apparaten die al dan niet door Intune worden beheerd. Voor een gedetailleerde beschrijving van de werking van het app-beveiligingsbeleid en de scenario's die worden ondersteund door het app-beveiligingsbeleid van Intune ziet u [Wat zijn app-beveiligingsbeleidsregels van Microsoft Intune?](app-protection-policy.md)
 
 Zie [MAM apps list (MAM-app-lijst)](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) voor een lijst met ondersteunde MAM-apps.
 
 Zie [Add apps to Microsoft Intune](apps-add.md) (Apps toevoegen aan Microsoft Intune) voor informatie over het toevoegen van LOB-apps (Line-Of-Business) aan Microsoft Intune in voorbereiding op app-beveiligingsbeleid.
 
 ##  <a name="create-an-app-protection-policy"></a>Beveiligingsbeleid voor apps maken
-1. In de workload **Client-apps** selecteert u **App-beveiligingsbeleid** in de sectie **Beheren**. Hiermee opent u de details van het **App-beveiligingsbeleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken.
-2. Kies **Een beleid toevoegen**.
+1. Ga in de Intune-portal naar **Client-apps** > **App-beveiligingsbeleid**. Hiermee opent u de details van het **App-beveiligingsbeleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken.
+2. Selecteer **Beleid maken**.
 
    ![Schermafbeelding van de blade ‘Een beleid toevoegen’](./media/app-protection-add-policy.png)
 
-3. Geef een naam op voor het beleid, voeg een korte beschrijving toe en selecteer het platformtype voor uw beleid. Indien nodig, kunt u meer dan één beleid voor elk platform maken.
+3. Geef een naam op voor het beleid, voeg een korte beschrijving toe en selecteer het platformtype voor uw beleid. U kunt meer dan één beleid voor elk platform maken.
 
-4. Kies **Apps** om de blade **Apps** te openen, zodat er een lijst met beschikbare apps wordt weergegeven. U kunt een of meer apps in de lijst selecteren die u wilt koppelen aan het beleid dat u maakt.
+4. Selecteer **Apps** om de blade **Apps** te openen, zodat er een lijst met beschikbare apps wordt weergegeven. U kunt een of meer apps in de lijst selecteren die u wilt koppelen aan het beleid dat u maakt. Selecteer minste één app om een beleid te maken.  
+
 5. Wanneer u de apps hebt geselecteerd, kiest u **Selecteren** om uw selectie op te slaan.
 
-    > [!IMPORTANT]
-    > U moet ten minste één app selecteren om een beleid maken.
+6. Kies **Vereiste instellingen configureren** op de blade **Een beleid toevoegen** om **Instellingen** te openen.
 
-6. Kies **Vereiste instellingen configureren** op de blade **Een beleid toevoegen** om **Instellingen te openen**.
+   Er zijn drie soorten beleidsinstellingen:
+   - **Herlocatie van gegevens**: deze groep bevat de DLP-besturingselementen voor preventie van gegevensverlies, zoals knippen, kopiëren, plakken en beperkingen voor 'opslaan als'. Deze instellingen bepalen hoe gebruikers met gegevens in de apps kunnen werken.
+   - **Toegangsvereisten**: deze groep bevat de pincodeopties per app die bepalen hoe de gebruiker toegang heeft tot de apps in een werkcontext.  
+   - **Voorwaardelijk starten**: deze groep bevat instellingen zoals de minimale instellingen van het besturingssysteem, detectie van opengebroken of geroote apparaten en offline respijtperioden.
 
-   Er zijn twee soorten beleidsinstellingen; **Herlocatie van gegevens** en **Toegang**.  Beleid voor herlocatie van gegevens zijn van toepassing op de verplaatsing van gegevens in en uit de apps. Het toegangsbeleid bepaalt hoe de gebruiker toegang heeft tot de apps in een werkcontext.
    Om u op gang te hepen, hebben de beleidsinstellingen standaardwaarden. U hoeft niets te wijzigen als de standaardwaarden aan uw vereisten voldoen.
 
    > [!TIP]
    > Deze beleidsinstellingen worden alleen afgedwongen wanneer u apps in de context van het werk gebruikt. Als eindgebruikers de app gebruiken voor een privétaak, worden deze beleidsregels niet toegepast. Let op: wanneer u een nieuw bestand maakt, wordt dit als een privébestand beschouwd. 
 
-7. Kies **OK** om deze configuratie op te slaan. U bent nu terug in het deelvenster **Een beleid toevoegen**.
-8. Kies **Maken** om het beleid te maken en uw instellingen op te slaan.
+7. Selecteer **OK** om deze configuratie op te slaan. U bent nu terug in het deelvenster **Een beleid toevoegen**.
+8. Selecteer **Maken** om het beleid te maken en uw instellingen op te slaan.
 
-Wanneer u klaar bent met het maken van een beleid, zoals beschreven in de vorige procedure, is het nog niet geïmplementeerd voor gebruikers. Zie [Een beleid implementeren naar gebruikers](app-protection-policies.md#deploy-a-policy-to-users) voor het implementeren van een beleid.
+Nieuwe beleidsregels die u maakt, worden niet geïmplementeerd voor gebruikers totdat u dit expliciet doet. Zie [Een beleid implementeren naar gebruikers](app-protection-policies.md#deploy-a-policy-to-users) voor het implementeren van een beleid.
 
 ## <a name="deploy-a-policy-to-users"></a>Een beleid implementeren naar gebruikers
 
 1. Selecteer een beleid in het deelvenster **App-beveiligingsbeleid**.
 
-2. In de deelvenster **Beleid** kiest u **Toewijzingen**, waardoor het deelvenster **Intune-app-beveiliging - Toewijzingen** wordt geopend. Kies **Groepen selecteren om op te nemen** in het deelvenster **Toewijzingen** om het deelvenster **Groepen selecteren om op te nemen** te openen.
+2. Open in het deelvenster ***Intune-app-beveiliging** de optie **Toewijzingen** om het deelvenster **Intune-app-beveiliging - Toewijzingen** te openen. Selecteer op het tabblad *Opnemen* de optie **Groepen selecteren om op te nemen**. 
 
    ![Schermafbeelding van het venster Toewijzingen met de optie Groepen selecteren om op te nemen gemarkeerd](./media/app-protection-policy-add-users.png)
 
-3.  Er wordt een lijst met gebruikersgroepen in het deelvenster **Gebruikersgroep toevoegen** weergegeven. Deze lijst geeft alle beveiligingsgroepen in uw **Azure Active Directory** weer. Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen en kies vervolgens **Selecteren**. Als u **Selecteren** kiest, wordt het beleid bij gebruikers geïmplementeerd.
+3.  Er wordt een lijst met alle beveiligingsgroepen in uw **Azure Active Directory** weergegeven. Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen en kies vervolgens **Selecteren**. Als u **Selecteren** kiest, wordt het beleid bij gebruikers geïmplementeerd.
 
     ![Schermafbeelding van het deelvenster Gebruikersgroep toevoegen waarin de lijst met Azure Active Directory-gebruikers wordt weergegeven](./media/azure-ad-user-group-list.png)
 
@@ -93,18 +95,18 @@ Om het effect van de wijzigingen onmiddellijk te zien, moet de eindgebruiker zic
 
 ### <a name="to-change-the-list-of-apps-associated-with-the-policy"></a>De lijst met aan het beleid gekoppelde apps wijzigen
 
-1.  In het deelvenster **App-beveiligingsbeleid** kiest u het beleid dat u wilt wijzigen om een deelvenster te openen dat specifiek is voor het beleid dat u zojuist hebt geselecteerd.
+1.  Selecteer het beleid dat u wilt wijzigen op de blade **App-beveiligingsbeleid**.
 
-2.  Kies **Doel-apps** in het deelvenster met beleid om de lijst met apps te openen.
+2.  Selecteer in het deelvenster *Intune-app-beveiliging* de optie **Doel-apps** om de lijst met apps te openen.
 
-3.  Verwijder apps uit de lijst of voeg ze eraan toe en kies het pictogram **Opslaan** om uw wijzigingen op te slaan.
+3.  Verwijder apps uit de lijst of voeg ze er aan toe en selecteer het pictogram **Opslaan** om uw wijzigingen op te slaan.
 
 ### <a name="to-change-the-list-of-user-groups"></a>De lijst met gebruikersgroepen wijzigen
 
 
-1.  In het deelvenster **App-beveiligingsbeleid** kiest u het beleid dat u wilt wijzigen om het deelvenster te openen dat specifiek is voor het beleid dat u hebt geselecteerd.
+1.  Selecteer het beleid dat u wilt wijzigen op de blade **App-beveiligingsbeleid**.
 
-2.  Kies **Toewijzingen** in het deelvenster voor beleid om het deelvenster **Intune-app-beveiliging - Toewijzingen** te openen waarin de lijst met huidige gebruikersgroepen die dit beleid hebben wordt weergegeven.
+2.  Selecteer in het deelvenster *Intune-app-beveiliging* de optie **Toewijzingen** om het deelvenster **Intune-app-beveiliging - Toewijzingen** te openen waarin de lijst met huidige gebruikersgroepen die dit beleid hebben wordt weergegeven.
 
 3.  Als u een nieuwe gebruikersgroep wilt toevoegen aan het beleid op het tabblad **Opnemen** kiest u **Selecteer groepen om op te nemen** en selecteert u de gebruikersgroep. Kies **Selecteren** om het beleid te implementeren bij de groep die u hebt geselecteerd.
 
@@ -112,23 +114,25 @@ Om het effect van de wijzigingen onmiddellijk te zien, moet de eindgebruiker zic
 
 ### <a name="to-change-policy-settings"></a>Beleidsinstellingen wijzigen
 
-1.  In het deelvenster **App-beveiligingsbeleid** kiest u het beleid dat u wilt wijzigen om een deelvenster te openen dat specifiek is voor het beleid dat u zojuist hebt geselecteerd.
+1.  Kies het beleid dat u wilt wijzigen op de blade **App-beveiligingsbeleid**.
 
-2.  Kies **Beleidsinstellingen** om het deelvenster **Beleidsinstellingen** te openen.
+2.  Selecteer in het deelvenster *Intune-app-beveiliging* de optie **Eigenschappen** om de lijst met instellingsgebieden te openen die u kunt bewerken. 
 
-3.  Wijzig de instellingen en kies het pictogram **Opslaan** om uw wijzigingen op te slaan.
+3.  Selecteer het instellingsgebied met de instellingen die u wilt wijzigen, zoals **Herlocatie van gegevens** of **Toegangsvereisten**. Wijzig de instellingen vervolgens in nieuwe waarden.
+
+4.  Selecteer het pictogram **Opslaan** om uw wijzigingen op te slaan. Herhaal de procedure voor het selecteren van een instellingsgebied en breng uw wijzigingen. Sla vervolgens uw wijzigingen op totdat alle wijzigingen zijn voltooid. U kunt het deelvenster *Intune-app-beveiliging* dan sluiten. 
 
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>Beleidsregels voor app-beveiliging toepassen op basis van de apparaatbeheerstatus
-In veel organisaties is het gebruikelijk dat eindgebruikers gebruik mogen maken van via Intune MDM (Mobile Device Management) beheerde apparaten zoals apparaten in eigendom van het bedrijf, en van niet-beheerde apparaten die alleen door Intune-app-beveiligingsbeleid worden beschermd zoals BYO-apparaten.
+In veel organisaties is het gebruikelijk dat eindgebruikers gebruik mogen maken van via Intune MDM (Mobile Device Management) beheerde apparaten zoals apparaten in eigendom van het bedrijf, en van niet-beheerde apparaten die alleen door Intune-app-beveiligingsbeleid worden beschermd. Niet-beheerde apparaten zijn vaak bekend onder de naam BYOD-apparaten (Bring Your Own).
 
-Omdat Intune-app-beveiligingsbeleid op de identiteit van een gebruiker is gericht, worden de beveiligingsinstellingen voor een gebruiker van oudsher op zowel ingeschreven (via MDM beheerde) als niet-ingeschreven apparaten (geen MDM) toegepast. Daarom kunt u Intune-app-beveiligingsbeleid richten op ofwel in Intune ingeschreven apparaten of iOS- en Android-apparaten waarvan de registratie ongedaan is gemaakt. U mag één beveiligingsbeleid voor niet-beheerde apparaten hebben waarin strenge DLP-besturingselementen voor preventie van gegevensverlies zijn toegepast, en een afzonderlijk beveiligingsbeleid voor via MDM beheerde apparaten waarbij minder strenge DLP-besturingselementen mogelijk zijn. 
+Omdat Intune-app-beveiligingsbeleid op de identiteit van een gebruiker is gericht, worden de beveiligingsinstellingen voor een gebruiker op zowel ingeschreven (via MDM beheerde) als niet-ingeschreven apparaten (geen MDM) toegepast. Daarom kunt u Intune-app-beveiligingsbeleid richten op ofwel in Intune ingeschreven apparaten of iOS- en Android-apparaten waarvan de registratie ongedaan is gemaakt. U mag één beveiligingsbeleid voor niet-beheerde apparaten hebben waarin strenge DLP-besturingselementen voor preventie van gegevensverlies zijn toegepast, en een afzonderlijk beveiligingsbeleid voor via MDM beheerde apparaten waarbij minder strenge DLP-besturingselementen mogelijk zijn. 
 
-Voor het maken van deze beleidsregels bladert u naar **Client-apps** > **App-beveiliging** in de Intune-console en klikt u op **Beleid toevoegen**. U kunt ook een bestaand app-beveiligingsbeleid bewerken. Als u het app-beveiligingsbeleid op zowel beheerde als niet-beheerde apparaten wilt toepassen, moet u bevestigen dat **Op alle app-typen toepassen** is ingesteld op **Ja**, de standaardwaarde. Als u granulair wilt toewijzen op basis van de beheerstatus, stelt u de optie **Op alle app-typen toepassen** in op **Nee**. 
+Voor het maken van deze beleidsregels bladert u naar **Client-apps** > **App-beveiliging** in de Intune-console en selecteert u **Beleid maken**. U kunt ook een bestaand app-beveiligingsbeleid bewerken. Als u het app-beveiligingsbeleid op zowel beheerde als niet-beheerde apparaten wilt toepassen, moet u bevestigen dat **Op alle app-typen toepassen** is ingesteld op **Ja**, de standaardwaarde. Als u granulair wilt toewijzen op basis van de beheerstatus, stelt u **Op alle app-typen toepassen** in op **Nee**. 
 
 ![Schermafbeelding van de blade Een beleid toevoegen, waarbij Bedoeld voor alle app-typen is geselecteerd](./media/app-protection-policies-target-all.png)
 
 Voor iOS zijn extra app-configuratie-instellingen vereist om APP-instellingen te richten op apps op apparaten die zijn ingeschreven bij Intune:
-- **IntuneMAMUPN** moet zijn geconfigureerd voor alle met MDM beheerde toepassingen.  Zie [Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) voor meer informatie.
+- **IntuneMAMUPN** moet zijn geconfigureerd voor alle met MDM beheerde toepassingen. Zie [Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) voor meer informatie.
 - **IntuneMAMDeviceID** moet zijn geconfigureerd voor alle toepassingen van derden en met LOB MDM beheerde toepassingen. **IntuneMAMDeviceID** moet zijn geconfigureerd voor het apparaat-id-token. Voorbeeld: `key=IntuneMAMDeviceID, value={{deviceID}}`. Zie [App-configuratiebeleidsregels toevoegen voor beheerde iOS-apparaten](https://docs.microsoft.com/intune/app-configuration-policies-use-ios) voor meer informatie.
 - Als alleen de **IntuneMAMDeviceID** is geconfigureerd, wordt het apparaat in Intune APP beschouwd als niet-beheerd.  
 

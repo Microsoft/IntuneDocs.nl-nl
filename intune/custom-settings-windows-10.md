@@ -1,62 +1,87 @@
 ---
 title: Aangepaste instellingen toevoegen voor Windows 10-apparaten in Microsoft Intune - Azure | Microsoft Docs
-description: Configureer aangepaste OMA-URI-instellingen op apparaten met Windows 10 met een aangepast profiel in Microsoft Intune.
+description: Een aangepast profiel toevoegen of maken om de OMA-URI-instellingen te gebruiken voor apparaten met Windows 10 in Microsoft Intune. Een aangepast profiel gebruiken voor het toevoegen van aangepaste instellingen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/18/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdbb6643a4ee8aace0db22cd7f9189f7ac6445f0
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 78ed923c7502744ccd7f23e341049ce8ee8a8d86
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232823"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983207"
 ---
-# <a name="custom-oma-uri-settings-for-windows-10-devices---intune"></a>Aangepaste OMA-URI-instellingen voor Windows-10-apparaten - Intune
+# <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Aangepaste instellingen gebruiken voor Windows 10-apparaten in Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Met Microsoft Intune kunt u aangepaste instellingen voor uw Windows 10-apparaten toevoegen of maken met behulp van 'aangepaste profielen'. Aangepaste profielen zijn een functie in Intune. Ze zijn ontworpen om apparaatinstellingen en -functies toe te voegen die niet in Intune zijn ingebouwd.
 
-Gebruik het **aangepaste** profiel van Microsoft Intune voor Windows 10 en Windows 10 Mobile om OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) te implementeren. Deze instellingen worden gebruikt om functies op apparaten te beheren. In Windows 10 zijn veel CSP-instellingen (Configuration Service Provider) beschikbaar, zoals de [beleids-CSP (Policy Configuration Service Provider)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
+In aangepaste profielen voor Windows 10 worden OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) gebruikt om verschillende functies te configureren. Deze instellingen worden doorgaans gebruikt door fabrikanten van mobiele apparaten om functies op het apparaat te beheren. 
 
-Als u een specifieke instelling zoekt, moet u er rekening mee houden dat het [beperkingsprofiel voor Windows 10-apparaten](device-restrictions-windows-10.md) tal van instellingen bevat die zijn ingebouwd in Intune en waarvoor geen aangepaste waarden vereist zijn.
+In Windows 10 zijn veel CSP-instellingen (Configuration Service Provider) beschikbaar, zoals de [beleids-CSP (Policy Configuration Service Provider)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 
-## <a name="configure-custom-settings"></a>Aangepaste instellingen configureren
+Als u een specifieke instelling zoekt, moet u er rekening mee houden dat het [beperkingsprofiel voor Windows 10-apparaten](device-restrictions-windows-10.md) tal van ingebouwde instellingen bevat. U hoeft daarom mogelijk geen aangepaste waarden in te voeren.
 
-1. Maak een nieuw configuratieprofiel met het **aangepaste** profieltype. In [Aangepaste apparaatinstellingen configureren](custom-settings-configure.md) worden de stappen beschreven.
-2. Selecteer in **Aangepaste OMA-URI-instellingen** de optie **Toevoegen** om een nieuwe instelling te maken. U kunt ook op **Exporteren** klikken om een lijst met alle geconfigureerde waarden te maken in een door komma's gescheiden bestand (.csv).
-3. Voer voor elke OMA-URI-instelling die u wilt toevoegen de volgende informatie in:
+In dit artikel wordt het volgende beschreven:
 
-- **Naam**: voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.
-- **Beschrijving**: voer eventueel een beschrijving in voor de instelling.
-- **OMA-URI (hoofdlettergevoelig)**: geef aan voor welke OMA-URI u een instelling wilt opgeven.
-- **Gegevenstype**: kies uit:
-  - **Tekenreeks**
-  - **Tekenreeks (XML)**
-  - **Datum en tijd**
-  - **Geheel getal**
-  - **Drijvende komma**
-  - **Booleaanse waarde**
-  - **Base64**
-- **Waarde**: voer de waarde in die, of het bestand dat, moet worden gekoppeld aan de OMA-URI die u hebt ingevoerd.
+- Een aangepast profiel maken voor Windows 10-apparaten
+- Omvat een lijst met de aanbevolen OMA-URI-instellingen
+- Biedt een voorbeeld van een aangepast profiel waarmee een VPN-verbinding wordt geopend
 
-4. Wanneer u bent klaar, selecteert u **OK**. In **Profiel maken** selecteert u vervolgens **Maken**. Het profiel wordt gemaakt en wordt weergegeven in de lijst met profielen.
+## <a name="create-the-profile"></a>Het profiel maken
+
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+3. Voer de volgende instellingen in:
+
+    - **Naam**: voer een naam in voor het profiel, zoals `windows 10 custom profile`.
+    - **Beschrijving:** voer een beschrijving in voor het profiel.
+    - **Platform**: kies **Windows 10 en hoger**.
+    - **Profieltype**: kies **Aangepast**.
+
+4. Selecteer in **Aangepaste OMA-URI-instellingen** de optie **Toevoegen**. Voer de volgende instellingen in:
+
+    - **Naam**: voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.
+    - **Beschrijving**: voer een beschrijving in met een overzicht van de instelling en eventuele andere belangrijke details.
+    - **OMA-URI** (hoofdlettergevoelig): voer de OMA-URI in die u als instelling wilt gebruiken.
+    - **Gegevenstype**: kies het gegevenstype dat u voor deze OMA-URI-instelling gaat gebruiken. Uw opties zijn:
+
+        - Tekenreeks
+        - Tekenreeks (XML-bestand)
+        - Datum en tijd
+        - Geheel getal
+        - Drijvende komma
+        - Boolean-waarde
+        - Base64 (bestand)
+
+    - **Waarde**: voer de gegevenswaarde in die moet worden gekoppeld aan de OMA-URI die u hebt ingevoerd. De waarde is afhankelijk van het gegevenstype dat u hebt geselecteerd. Als u bijvoorbeeld **Datum en tijd** hebt gekozen, selecteert u de waarde in een datumkiezer.
+
+    Nadat u een aantal instellingen hebt toegevoegd, kunt u **Exporteren** selecteren. Met **Exporteren** maakt u een lijst met alle waarden die u hebt toegevoegd in een bestand met door komma's gescheiden waarden (.csv).
+
+5. Selecteer **OK** om uw wijzigingen op te slaan. Blijf, indien nodig, meer instellingen toevoegen.
+6. Wanneer u klaar bent, kiest u **OK** > **Maken** om het Intune-profiel te maken. Wanneer het profiel is gemaakt, wordt dit weergegeven in de lijst **Apparaatconfiguratie - profielen**.
 
 ## <a name="example"></a>Voorbeeld
+
 In het volgende voorbeeld wordt de instelling **Connectivity/AllowVPNOverCellular** ingeschakeld. Met deze instelling kan met een Windows-10-apparaat een VPN-verbinding worden gemaakt in een mobiel netwerk.
 
 ![Voorbeeld van een aangepast beleid met VPN-instellingen](./media/custom-policy-example.png)
 
 ## <a name="find-the-policies-you-can-configure"></a>De beleidsregels zoeken die u kunt configureren
 
-Een complete lijst met CSP's (configuratieserviceproviders) die door Windows 10 worden ondersteund, vindt u in het artikel [Referentie voor Configuration Service Providers](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference).
+Een complete lijst met alle CSP's (configuratieserviceproviders) die door Windows 10 worden ondersteund, vindt u in de [naslaginformatie voor configuratieserviceproviders](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference).
 
 Niet alle instellingen zijn compatibele met alle versies van Windows 10. In [Referentie voor Configuration Service Providers](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) leest u welke versies worden ondersteund voor elke CSP.
 
-Bovendien worden niet alle genoemde instellingen door Intune ondersteund. Als u wilt weten of de gewenste instelling door Intune wordt ondersteund, opent u het artikel voor de betreffende instelling. U kunt op elke instellingenpagina zien welke bewerkingen worden ondersteund. Voor gebruik in combinatie met Intune moet de instelling de bewerking **Toevoegen** of **Vervangen** ondersteunen.
+Bovendien biedt Intune geen ondersteuning voor alle instellingen die worden vermeld in de [naslaginformatie voor configuratieserviceproviders](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference). Als u wilt weten of de gewenste instelling door Intune wordt ondersteund, opent u het artikel voor de betreffende instelling. U kunt op elke instellingenpagina zien welke bewerkingen worden ondersteund. Voor gebruik in combinatie met Intune moet de instelling de bewerking **Toevoegen** of **Vervangen** ondersteunen.
+
+## <a name="next-steps"></a>Volgende stappen
+
+Het profiel is gemaakt, maar er gebeurt nog niets. Vervolgens [wijst u het profiel toe](device-profile-assign.md).

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/24/2016
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,60 +14,71 @@ ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: maxles
+ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c57c8bfa9f2727ec201acb506f5a41327fddc75
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 60df25542e69422e15a2a57473a3fbfa2cc413a5
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146650"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959499"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Beheerde apps op uw Android-apparaat gebruiken
+Beheerde apps worden geconfigureerd om te voldoen aan de beveiligingsvereisten van uw organisatie en om gegevens voor uw werk en school te beveiligen. Deze apps worden voor u beschikbaar gesteld op uw apparaat zodat ze automatisch kunnen worden geïnstalleerd of gebruikt. 
 
-Beheerde apps zijn apps die door het ondersteuningsteam van het bedrijf kunnen worden ingesteld om de bedrijfsgegevens te beveiligen die toegankelijk zijn in de app. Wanneer u met bedrijfsgegevens in een beheerde app op uw Android-apparaat werkt, merkt u wellicht dat de app iets anders werkt dan u verwacht. Zo kunt u beveiligde bedrijfsgegevens mogelijk niet kopiëren en plakken of op bepaalde locaties opslaan.
+Voordat u een beheerde app ontvangt en installeert, worden de machtigingen hiervoor door uw organisatie geconfigureerd. De functionaliteit van apps en de gebruikersinteractie kunnen door de machtigingen worden beperkt om te voorkomen dat app-gegevens door onbevoegde gebruikers worden gedeeld of bekeken. Een organisatie kan bijvoorbeeld het kopiëren en plakken blokkeren wanneer een gebruiker met de app werkt. Of er kan worden voorkomen dat u gegevens opslaat in de lokale opslag van uw apparaat.
 
-Verschillende beheerde apps kunnen ook samenwerken op uw apparaat zodat u uw dagelijkse taken kunt uitvoeren, terwijl de bedrijfsgegevens beveiligd blijven. Als u bijvoorbeeld een bedrijfsbestand in een beheerde app opent en een andere beheerde app nodig is om dat bestand weer te geven, wordt de beheerde app waarmee u het bestand kunt weergeven, automatisch geopend. Als een vereiste app niet beschikbaar is, zijn bepaalde acties mogelijk niet beschikbaar, zoals het openen van een document of het gebruiken van een webkoppeling in een beheerd document.
+Voor een optimale beveiliging van de gegevens kan uw organisatie verschillende beheerde apps zo configureren dat deze samenwerken. Bijvoorbeeld:
+1. U maakt verbinding met het netwerk van uw organisatie in een beheerde browser-app, zoals Microsoft Edge.
+2. U klikt op een koppeling om het bestand met de presentatie van uw collega te openen.
+3. Het bestand wordt geopend door de betreffende beheerde app, bijvoorbeeld Microsoft PowerPoint.
 
-Wanneer u toegang krijgt tot bedrijfsgegevens in een beheerde app, wordt een bericht weergeven zoals hieronder, waarin wordt vermeld dat de app die u wilt openen, wordt beheerd.
+Organisaties kunnen ervoor zorgen dat u een beheerde app moet gebruiken om iets te doen, zoals het openen van een werkbestand of het gebruiken van een webkoppeling. Als u niet over de app beschikt, kunt u de taak mogelijk niet verder uitvoeren. Sommige beheerde apps worden voor u beschikbaar gesteld zodat u deze kunt installeren, maar zijn niet vereist.
 
-![openen-beheerde-apps-bericht](./media/managed-apps-message.png)
+## <a name="how-do-i-know-im-using-a-managed-app"></a>Hoe weet ik dat ik een beheerde app gebruik?
+Wanneer u voor het eerst toegang krijgt tot gegevens voor uw werk of school in een beheerde app, ontvangt u een bericht dat lijkt op de onderstaande schermopname. In het bericht wordt u gevraagd om de app opnieuw te starten om door te gaan.
 
-## <a name="how-do-i-get-managed-apps"></a>Hoe kom ik in het bezit van beheerde apps?
-Beheerde apps zijn op verschillende manieren beschikbaar:
+![Schermopname van het bericht dat wordt weergegeven wanneer gebruikers een beheerde app op hun apparaat openen. In het bericht staat: 'De gegevens in deze app worden niet door uw organisatie beveiligd. U moet de app opnieuw starten om door te gaan.' Daaronder wordt de knop OK weergegeven.](./media/managed-apps-message.png)
 
--   Wanneer het apparaat is geregistreerd bij Microsoft Intune, installeert u de app via de bedrijfsportal-app of de bedrijfsportalwebsite. Het is ook mogelijk dat de app door het ondersteuningsteam van het bedrijf op het apparaat wordt geïnstalleerd. Zie [Uw apparaat registreren bij Intune](enroll-your-device-in-Intune-android.md) voor meer informatie over het registreren van apparaten.
+## <a name="commonly-managed-apps"></a>Veelvoorkomende beheerde apps  
+Voorbeelden van veelvoorkomende vereiste of beschikbare beheerde apps op scholen en werkplekken zijn:
 
--   U installeert een app uit de Play Store en vervolgens meldt u zich aan met uw zakelijke gebruikersaccount dat wordt beheerd door Intune.
+-   Microsoft Edge
 
-## <a name="what-can-my-company-support-manage-in-an-app"></a>Wat kan het ondersteuningsteam van mijn bedrijf beheren in een app?
-Hier volgen enkele voorbeelden van opties die het ondersteuningsteam van het bedrijf in een app kan beheren en die van invloed kunnen zijn op het gebruik van bedrijfsgegevens op uw apparaat:
-
--   Toegang tot bepaalde websites
-
--   Overdracht van gegevens tussen apps
-
--   Opslaan van bestanden
-
--   Kopiëren en plakken
-
--   Vereisten voor toegang via een pincode
-
--   Uw aanmelding, met bedrijfsreferenties
-
--   De mogelijkheid om een back-up te maken in de cloud
-
--   De mogelijkheid om schermafbeeldingen te maken
-
--   Vereisten voor de versleuteling van gegevens
-
-Een aantal veelgebruikte apps die mogelijk door uw IT-afdeling worden beheerd:
-
--   Intune Managed Browser
-
--   Microsoft Azure Information Protection-viewer
+-   Microsoft Outlook
 
 -   Microsoft Word, Excel en PowerPoint
+
+## <a name="how-do-i-get-managed-apps"></a>Hoe kom ik in het bezit van beheerde apps?
+Eerst moet u de Bedrijfsportal-app installeren en, zo nodig, ervoor zorgen dat uw apparaat wordt beheerd. Vervolgens kunt u op drie manieren in het bezit komen van beheerde apps.
+* Uw organisatie installeert op het moment van registratie automatisch apps op uw apparaat. Zie [Uw apparaat registreren bij Intune](enroll-your-device-in-Intune-android.md) voor meer informatie over het registreren van apparaten.
+* Uw organisatie stelt beheerde apps voor u beschikbaar in de Bedrijfsportal. Ga naar de Bedrijfsportal-app of de website om naar deze apps te zoeken en ze weer te geven en te installeren. 
+* U installeert een app vanuit Google Play Store en u meldt zich vervolgens bij de app aan met uw werk- of schoolaccount.  
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>Wat kan het ondersteuningsteam van mijn bedrijf beheren in een app?
+In de volgende lijst worden de instellingen beschreven die het ondersteuningsteam van uw bedrijf kan beheren in een app. Deze instellingen beïnvloeden de manier waarop de gegevens voor uw werk of school voor u worden weergeven, u hiertoe toegang hebt en deze verder op uw apparaat gebruikt:
+
+* Toegang tot bepaalde websites  
+
+* Toegang tot interne bedrijfswebsites via Edge en de Azure Active Directory-proxy  
+
+* Minimumversie van de app, besturingssysteemversie
+
+* Mogelijkheid om gegevens tussen apps te delen en over te zetten  
+
+* Hoe en waar u bestanden kunt opslaan  
+
+* Functionaliteit voor kopiëren en plakken  
+
+* Vereisten voor toegang via een pincode  
+
+* Wijze van aanmelden, met bedrijfsreferenties  
+
+* Mogelijkheid om van gegevens een back-up te maken in de cloud  
+
+* De mogelijkheid om schermafbeeldingen te maken  
+
+* Vereisten voor de versleuteling van gegevens  
 
 Neem contact op met het ondersteuningsteam van het bedrijf voor meer informatie over de beheerde apps op uw apparaat. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

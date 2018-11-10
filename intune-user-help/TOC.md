@@ -107,11 +107,13 @@
 #### [Mijn versie van macOS wordt nog niet ondersteund](your-macos-version-isnt-yet-supported.md)
 #### [Uw macOS-apparaat bijwerken](you-need-to-update-your-macos-device.md)
 #### [Bedrijfsportalfouten verzenden](send-errors-macos.md)
+#### [Apparaat is toegewezen aan iemand anders](unable-to-get-macOS-device-managed.md)
 #### [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-macos.md)
 #### [Dit apparaat is enigszins anders](device-little-different-jamf.md)
 #### [Het serienummer zoeken](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [Uw apparaat identificeren](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 #### [Apparaatlimiet is bereikt](device-limit-wpj-macos.md)
+#### [Kan macOS-VM niet beheren](unable-to-get-macOS-device-managed.md) 
 
 ## [Uw Windows-apparaat gebruiken](using-your-windows-device-with-intune.md)
 ### [Wat gebeurt er wanneer u een Windows 10-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)

@@ -1,11 +1,11 @@
 ---
-title: Aangepaste instellingen toevoegen voor Android-apparaten Microsoft Intune - Azure | Microsoft Docs
+title: Aangepaste instellingen toevoegen aan Android-apparaten Microsoft Intune - Azure | Microsoft Docs
 description: Een aangepast profiel toevoegen voor Android-apparaten om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel, per app een VPN-profiel maken of apps toestemming geven/blokkeren voor Samsung Knox Standard-apparaten in Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,44 +14,65 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0195e138b59fae019fa2bc02aadf211257a65cac
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f9e98575c92d403d51708f7403109bea2184176e
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022047"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983122"
 ---
-# <a name="custom-settings-for-android-devices---intune"></a>Aangepaste instellingen voor Android-apparaten - Intune
+# <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Aangepaste instellingen gebruiken voor Android-apparaten in Microsoft Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Met Microsoft Intune kunt u aangepaste instellingen voor uw Android-apparaten toevoegen of maken met behulp van een 'aangepast profiel'. Aangepaste profielen zijn een functie in Intune. Ze zijn ontworpen om apparaatinstellingen en -functies toe te voegen die niet in Intune zijn ingebouwd.
 
-Aangepaste profielen gebruiken OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) om verschillende functies op Android-apparaten te configureren. Deze instellingen worden doorgaans gebruikt door fabrikanten van mobiele apparaten om functies op het apparaat te beheren.
+Aangepaste profielen voor Android gebruiken OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) om verschillende functies op Android-apparaten te configureren. Deze instellingen worden doorgaans gebruikt door fabrikanten van mobiele apparaten om deze functies te beheren.
 
-Door een aangepast profiel te gebruiken, kunt u de volgende Android-instellingen configureren en toewijzen. Deze instellingen niet zijn ingebouwd in het Intune-beleid:
+Door een aangepast profiel te gebruiken, kunt u de volgende Android-instellingen configureren en toewijzen. De volgende instellingen zijn niet ingebouwd in Intune:
 
 - [Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel](/intune/wi-fi-profile-shared-key)
 - [Een VPN per app-profiel maken](/intune/android-pulse-secure-per-app-vpn)
 - [Apps toestaan of blokkeren voor Samsung KNOX Standard-apparaten](/intune/samsung-knox-apps-allow-block)
 
 >[!IMPORTANT]
-> Alleen de hierboven genoemde instellingen kunnen worden geconfigureerd door dit profieltype. Android-apparaten geven geen volledige lijst weer met OMA-URI-instellingen die u kunt configureren. Als u meer instellingen wilt bekijken, stemt u voor meer instellingen op de [Intune Uservoice-site](https://microsoftintune.uservoice.com/forums/291681-ideas).
+> Alleen de hierboven genoemde instellingen kunnen worden geconfigureerd in een aangepast profiel. Android-apparaten geven geen volledige lijst weer met OMA-URI-instellingen die u kunt configureren. Als u meer instellingen wilt bekijken, stemt u voor meer instellingen op de [Intune Uservoice-site](https://microsoftintune.uservoice.com/forums/291681-ideas).
 
-## <a name="custom-profile-settings-for-android-devices"></a>Aangepaste profielinstellingen voor Android-apparaten
+In dit artikel wordt beschreven hoe u een aangepast profiel maakt voor Android-apparaten.
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com). 
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Maak een aangepast profiel met behulp van het Android-platform. In [Aangepaste apparaatinstellingen configureren in Microsoft Intune](custom-settings-configure.md) staan de stappen beschreven.
-4. Selecteer in **Aangepaste OMA-URI-instellingen** **Toevoegen** en selecteer vervolgens **Rij toevoegen**.
-5. Voer de volgende eigenschappen in:
+## <a name="create-the-profile"></a>Het profiel maken
 
-   - **Naam**: voer een unieke naam in voor de OMA-URI-instelling, zodat u deze gemakkelijk kunt vinden.
-   - **Beschrijving**: voer een beschrijving in die een overzicht geeft van de instelling en eventuele andere belangrijke details.
-   - **Gegevenstype**: voer het gegevenstype in dat u voor deze OMA-URI-instelling gebruikt. Kies uit **Tekenreeks**, **Tekenreeks (XML)**, **Datum en tijd**, **Geheel getal**, **Drijvende komma** of **Booleaanse waarde**.
-   - **OMA-URI**: voer de gewenste OMA-URI in.
-   - **Waarde**: voer de waarde in die moet worden gekoppeld aan de OMA-URI die u hebt ingevoerd.
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+3. Voer de volgende instellingen in:
 
-6. Selecteer **OK** om uw wijzigingen op te slaan. Blijf, indien nodig, meer instellingen toevoegen.
+    - **Naam**: voer een naam in voor het profiel, zoals `android custom profile`.
+    - **Beschrijving:** voer een beschrijving in voor het profiel.
+    - **Platform**: kies **Android**.
+    - **Profieltype**: kies **Aangepast**.
+
+4. Selecteer in **Aangepaste OMA-URI-instellingen** de optie **Toevoegen**. Voer de volgende instellingen in:
+
+    - **Naam**: voer een unieke naam in voor de OMA-URI-instelling, zodat u deze gemakkelijk kunt vinden.
+    - **Beschrijving**: voer een beschrijving in met een overzicht van de instelling en eventuele andere belangrijke details.
+    - **OMA-URI**: voer de OMA-URI in die u als instelling wilt gebruiken.
+    - **Gegevenstype**: kies het gegevenstype dat u voor deze OMA-URI-instelling gaat gebruiken. Uw opties zijn:
+
+      - Tekenreeks
+      - Tekenreeks (XML-bestand)
+      - Datum en tijd
+      - Geheel getal
+      - Drijvende komma
+      - Boolean-waarde
+      - Base64 (bestand)
+
+    - **Waarde**: voer de gegevenswaarde in die moet worden gekoppeld aan de OMA-URI die u hebt ingevoerd. De waarde is afhankelijk van het gegevenstype dat u hebt geselecteerd. Als u bijvoorbeeld **Datum en tijd** hebt gekozen, selecteert u de waarde in een datumkiezer.
+
+    Nadat u een aantal instellingen hebt toegevoegd, kunt u **Exporteren** selecteren. Met **Exporteren** maakt u een lijst met alle waarden die u hebt toegevoegd in een bestand met door komma's gescheiden waarden (.csv).
+
+5. Selecteer **OK** om uw wijzigingen op te slaan. Blijf, indien nodig, meer instellingen toevoegen. 
+6. Wanneer u klaar bent, kiest u **OK** > **Maken** om het Intune-profiel te maken. Wanneer het profiel is gemaakt, wordt dit weergegeven in de lijst **Apparaatconfiguratie - profielen**.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Als u de instellingen hebt voltooid, wordt het profiel gemaakt en weergegeven in de lijst. Zie [Apparaatprofielen toewijzen](device-profile-assign.md) als u dit profiel wilt toewijzen aan groepen.
+Het profiel is gemaakt, maar er gebeurt nog niets. Vervolgens [wijst u het profiel toe](device-profile-assign.md).
+
+Bekijk hoe u [het profiel op Android Enterprise-apparaten maakt](custom-settings-android-for-work.md).

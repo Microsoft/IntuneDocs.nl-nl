@@ -1,30 +1,13 @@
 ---
-title: Win32-apps aan Microsoft Intune toevoegen
-titlesuffix: ''
-description: Informatie over het toevoegen van Win32-apps aan Microsoft Intune en het beheren ervan.
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 10/08/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-ms.reviewer: mghadial
-ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: f11d1a0f51935e1bcb7318c7b0c7ba674ba2d54b
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
-ms.translationtype: HT
-ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357101"
+title: Win32-apps toevoegen aan Microsoft Intune titlesuffix: description: Informatie over hoe u Win32-apps toevoegt met Microsoft Intune. Dit onderwerp bevat een overzicht van de Intune-functies voor het leveren en beheren van Win32-apps en biedt informatie over de probleemoplossing voor Win32-apps. trefwoorden: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
+>>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+
+ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
 ---
+
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune (zelfstandig) - Win32-app-beheer (openbare preview)
 
-De zelfstandige versie van Intune heeft uitgebreidere beheermogelijkheden voor Win32-apps. Cloudklanten kunnen weliswaar Configuration Manager gebruiken voor het beheer van Win32-apps, maar klanten met alleen Intune hebben uitgebreidere beheermogelijkheden voor hun Win32 LOB-apps (Line-Of-Business). Dit document bevat een overzicht van de beheerfunctie voor Win32-apps van Intune en informatie over probleemoplossing.
+De zelfstandige versie van Intune heeft uitgebreidere beheermogelijkheden voor Win32-apps. Cloudklanten kunnen weliswaar Configuration Manager gebruiken voor het beheer van Win32-apps, maar klanten met alleen Intune hebben uitgebreidere beheermogelijkheden voor hun Win32 LOB-apps (Line-Of-Business). Dit document bevat een overzicht van de Intune-beheerfunctie voor Win32-apps en informatie over de probleemoplossing.
 
 ## <a name="prerequisites-for-public-preview"></a>Vereisten voor de openbare preview
 
@@ -32,7 +15,7 @@ De zelfstandige versie van Intune heeft uitgebreidere beheermogelijkheden voor W
 - De Windows 10-client moet aan het volgende voldoen: 
     - gekoppeld aan Azure Active Directory (AAD) of Hybrid Azure Active Directory, en
     - geregistreerd bij Intune (MDM-beheerd)
-- De grootte van Windows-apps wordt in de openbare preview beperkt tot 2 GB per app 
+- De grootte van Windows-apps wordt in de openbare preview beperkt tot 8 GB per app 
 
 > [!NOTE]
 > We testen momenteel Pro- en Education-edities van Windows 10 versie 1607 en horen graag uw feedback.
@@ -109,6 +92,11 @@ Net als bij een LOB-app (Line-Of-Business) kunt u een Win32-app aan Microsoft In
 3.  Voeg de volledige opdrachtregel voor verwijdering toe om de app te verwijderen op basis van de unieke id van de app. 
 
     Bijvoorbeeld: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+    > [!NOTE]
+    > U kunt een Win32-app configureren voor installatie in een **gebruikers**- of **systeem**context. Een **gebruiker**scontext verwijst naar alleen een bepaalde gebruiker. Een **systeem**context verwijst naar alle gebruikers van een Windows 10-apparaat.
+    >
+    > Eindgebruikers hoeven niet te zijn aangemeld bij het apparaat om Win32-apps te installeren.
 
 4.  Klik op **OK** wanneer u klaar bent.
 
@@ -233,7 +221,6 @@ Agentlogboeken op de clientcomputer staan doorgaans in `C:\ProgramData\Microsoft
 ### <a name="troubleshooting-areas-to-consider"></a>Gebieden voor probleemoplossing om te overwegen
 - Controleer de targeting om ervoor te zorgen dat de agent op het apparaat is geïnstalleerd: een Win32-app gericht op een groep of een PowerShell-Script gericht op een groep maken een agentinstallatiebeleid voor de beveiligingsgroep.
 - Controleer de versie van het besturingssysteem: Windows 10 1607 en hoger.  
-- Is de AAD-gebruiker aangemeld bij de clientcomputer?
 - Controleer de Windows 10-SKU; Windows 10 S en Windows-versies met de S-modus ingeschakeld bieden geen ondersteuning voor MSI-installatie.
 
 ## <a name="next-steps"></a>Volgende stappen

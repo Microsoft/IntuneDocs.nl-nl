@@ -15,17 +15,17 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16d57ee6a722e8d840b8e8a09ba583698fcb67be
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: e4c44552a0df369767bb91749351674af9eab4b3
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562898"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959550"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Een Telecom Expense Management-service instellen in Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Met Intune kunt u telecomuitgaven van gegevensgebruik op mobiele apparaten in bedrijfseigendom beheren. Hiervoor is Intune geïntegreerd met de Telecom Expense Management-oplossing Datalert van Saaswedo, een extern bedrijf dat software ontwikkelt. Datalert is realtime Telecom Expense Management-software waarmee u telecomgegevensgebruik kunt beheren. Zo kunt u dure en onverwachte gegevens- en roaming-overschrijdingen voor uw door Intune beheerde apparaten voorkomen.
+Met Intune kunt u telecomuitgaven van gegevensgebruik op mobiele apparaten in bedrijfseigendom beheren. Hiervoor is Intune geïntegreerd met de [Telecom Expense Management-oplossing Datalert](http://datalert.biz/get-started) van Saaswedo, een extern bedrijf dat software ontwikkelt. Datalert is realtime Telecom Expense Management-software waarmee u telecomgegevensgebruik kunt beheren. Zo kunt u dure en onverwachte gegevens- en roaming-overschrijdingen voor uw door Intune beheerde apparaten voorkomen.
 
 Doordat Datalert in Intune is geïntegreerd, kunt u centraal limieten instellen, controleren en afdwingen voor roaming en binnenlands gegevensgebruik. Geautomatiseerde waarschuwingen worden geactiveerd wanneer de limieten de gedefinieerde drempelwaarden overschrijden. U kunt de service configureren om verschillende acties op afzonderlijke gebruikers of groepen eindgebruikers toe te passen (zoals het uitschakelen van roaming of overschrijden van de drempelwaarde). Vanuit de Datalert-beheerconsole zijn rapporten over het gegevensgebruik en met controlegegevens beschikbaar.
 
@@ -61,19 +61,31 @@ Voordat u begint, moet u ervoor zorgen dat u al een Intune en een DatalertTeleco
 
 2. In de Datalert-beheerconsole gaat u naar het tabblad **Instellingen** en van daaruit naar **MDM-configuratie**.
 
-3. Selecteer **Blokkering opheffen** om de instellingen op de pagina te kunnen invoeren.
+3. Selecteer **Blokkering opheffen** onderaan de pagina zodat u de instellingen op de pagina kunt wijzigen.
 
-4. Kies de optie **Server-MDM** bij **Microsoft Intune**.
+4. Kies in het gedeelte **Intune/Datalert-verbinding** de optie **Microsoft Intune** voor **Server-MDM**.    
 
-5. Voer uw Azure-tenant-ID in bij **Azure AD-domein** en selecteer vervolgens de knop **Verbinding**.
+5. Voer uw Azure-tenant-id in bij **Azure AD-domein** en selecteer vervolgens **Verbinding**.
 
-    Als u **Verbinding** selecteert, controleert de Datalert-service bij Intune of er geen bestaande Datalert-verbindingen met Intune bestaan. Na enkele seconden verschijnt een Microsoft-aanmeldingspagina gevolgd door de Azure-verificatie voor Datalert.
+    Wanneer u **Verbinding** selecteert, controleert de Datalert-service bij Intune of er geen bestaande Datalert-verbindingen met Intune bestaan. Na enkele seconden verschijnt een Microsoft-aanmeldingspagina, gevolgd door de Azure-verificatie voor Datalert.
 
-6. Selecteer **Accepteren** op de Microsoft-verificatiepagina. U wordt doorgestuurd naar de bedankpagina van Datalert, die na enkele seconden wordt gesloten. Datalert valideert de verbinding en er wordt een groen vinkje weergegeven naast een lijst met items die is gevalideerd. Als de validatie mislukt, ziet u een in het rood weergegeven bericht. U moet dan contact opnemen met Datalert-ondersteuning voor hulp.
+6. Selecteer **Accepteren** op de Microsoft-verificatiepagina. U wordt doorgestuurd naar de **bedank**pagina van Datalert, die na enkele seconden wordt gesloten. Datalert valideert de verbinding en er wordt een groen vinkje weergegeven naast een lijst met items die is gevalideerd. Als de validatie mislukt, ziet u een in het rood weergegeven bericht. U moet dan contact opnemen met Datalert-ondersteuning voor hulp.
 
     De volgende schermafbeelding toont de groene vinkjes die u kunt verwachten als de verbinding is geslaagd.
 
-   ![Datalert-pagina die geslaagde verbinding toont](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![Datalert-pagina die geslaagde verbinding toont](./media/tem-datalert-connection.png)
+
+7. In het gedeelte **Datalert-app/ADAL-toestemming** stelt u de schakelaar in op **Aan**. Selecteer **Accepteren** op de Microsoft-verificatiepagina. U wordt doorgestuurd naar de **bedank**pagina van Datalert, die na enkele seconden wordt gesloten. Datalert valideert de verbinding en er wordt een groen vinkje weergegeven naast een lijst met items die is gevalideerd. Als de validatie mislukt, ziet u een in het rood weergegeven bericht. U moet dan contact opnemen met Datalert-ondersteuning voor hulp.    
+
+    De volgende schermafbeelding toont de groene vinkjes die u kunt verwachten als de verbinding is geslaagd.
+
+   ![Datalert-pagina die geslaagde verbinding toont](./media/tem-datalert-adal-consent.png)
+
+8. In het gedeelte **Beheer MDM-profielen (optioneel)** stelt u de schakelaar in op **Aan** om Datalert toe te staan om de beschikbare profielen in Intune te lezen zodat u het beleid kunt instellen. Selecteer **Accepteren** op de Microsoft-verificatiepagina. U wordt doorgestuurd naar de **bedank**pagina van Datalert, die na enkele seconden wordt gesloten. Datalert valideert de verbinding en er wordt een groen vinkje weergegeven naast een lijst met items die is gevalideerd. Als de validatie mislukt, ziet u een in het rood weergegeven bericht. U moet dan contact opnemen met Datalert-ondersteuning voor hulp.    
+
+    De volgende schermafbeelding toont de groene vinkjes die u kunt verwachten als de verbinding is geslaagd.
+
+   ![Datalert-pagina die geslaagde verbinding toont](./media/tem-datalert-mdm-profiles.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Stap 2: controleer of de functie Telecom Expense Management actief is in Intune
 

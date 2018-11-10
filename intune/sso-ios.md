@@ -1,104 +1,93 @@
 ---
-title: Microsoft Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten
-titlesuffix: ''
-description: Ontdek hoe u Microsoft Intune kunt configureren voor eenmalige aanmelding vanaf iOS-apparaten.
+title: Eenmalige aanmelding toevoegen voor iOS-apparaten in Microsoft Intune - Azure | Microsoft Docs
+description: U kunt in Microsoft Intune iOS-apparaten maken, configureren, toestaan of inschakelen, zodat deze eenmalige aanmelding (SSO) kunnen gebruiken in plaats van een wachtwoord voor verificatie voor de resources en de gegevens van uw organisatie. Als u eenmalige aanmelding wilt gebruiken, maakt u een apparaatconfiguratieprofiel en voert u de UPN, apparaat-id, uw apps en een certificaat in om de gebruiker en het apparaat te verifiëren.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdc7f4f8f796d04f5c709298cd654bc2cdc32d0e
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: d1add113222c2aa7eaea10679c329e877b1a136f
+ms.sourcegitcommit: 437eaf364c3b8a38d294397310c770ea4d8a8015
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864605"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49992006"
 ---
-# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Microsoft Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten
+# <a name="use-single-sign-on-ios-device-in-microsoft-intune"></a>Eenmalige aanmelding gebruiken voor iOS-apparaten in Microsoft Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+De meeste LOB-apps (Line-Of-Business) vereisen een zekere mate van gebruikersverificatie om beveiliging te ondersteunen. In veel gevallen moet de gebruiker bij deze verificatie meerdere keren dezelfde referenties invoeren wat vervelend is voor de gebruiker. Ter verbetering van de gebruikerservaring kunnen ontwikkelaars apps maken die gebruikmaken van eenmalige aanmelding (SSO), waardoor een gebruiker minder vaak referenties hoeft in te voeren.
 
-De meeste LOB-apps (Line-Of-Business) vereisen een zekere mate van gebruikersverificatie om beveiliging te ondersteunen. In veel gevallen moet de gebruiker daarom meerdere keren dezelfde referenties typen wat als vervelend kan worden ervaren. Ter verbetering van de gebruikerservaring kunnen ontwikkelaars apps maken die gebruikmaken van eenmalige aanmelding, waardoor een gebruiker minder vaak referenties hoeft te typen.
+In dit artikel wordt beschreven hoe u eenmalige aanmelding voor iOS-apparaten inschakelt met een apparaatconfiguratieprofiel in Microsoft Intune.
 
-Om eenmalige aanmelding voor iOS-apparaten te kunnen gebruiken moet aan de volgende voorwaarden worden voldaan:
+## <a name="before-you-begin"></a>Voordat u begint
 
-- Een app die is gecodeerd om te zoeken naar de gebruikersreferentieopslagplaats in de ene nettolading voor eenmalige aanmelding op het iOS-apparaat.
-- Intune geconfigureerd voor eenmalige aanmelding vanaf iOS-apparaten.
+Zorg ervoor dat u een app gebruikt die is gecodeerd om naar de gebruikersreferentieopslagplaats te zoeken in de payload voor eenmalige aanmelding op het iOS-apparaat.
 
-## <a name="to-configure-intune-for-ios-device-single-sign-on"></a>Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten
+## <a name="create-the-sso-profile"></a>Het SSO-profiel maken
 
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+2. Kies **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+3. Voer de volgende instellingen in:
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
-4. Kies in het deelvenster **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
-5. Kies **Profiel maken** in het deelvenster Profielen.
-6. Voer een naam en beschrijving in en configureer de volgende instellingen:
-   - **Platform**: kies **iOS**.
-   - **Profieltype**: kies **Apparaatfuncties**.
-7. Kies in het deelvenster **Apparaatfuncties** de optie **Eenmalige aanmelding**.
+    - **Naam**: voer een naam in voor het profiel, zoals `ios sso profile`.
+    - **Beschrijving**: voer een beschrijving in met sleutelwoorden zodat u het profiel in de lijst kunt vinden.
+    - **Platform**: kies **iOS**.
+    - **Profieltype**: kies **Apparaatfuncties**.
 
-   ![Deelvenster Eenmalige aanmelding](./media/sso-blade.png)
+4. Kies **Eenmalige aanmelding**.
 
-8. Gebruik de volgende samenvattingstabel om de velden in het deelvenster **Eenmalige aanmelding** in te vullen. Zie de secties na de tabel voor meer informatie.
+    ![Deelvenster Eenmalige aanmelding](./media/sso-blade.png)
 
-   |Veld  |Opmerkingen|
-   |---------|---------|
-   |**Het kenmerk Gebruikersnaam van AAD**|Het kenmerk dat door Intune wordt gecontroleerd voor elke gebruiker in AAD en waarmee het betreffende veld (zoals UPN) wordt ingevuld vóór het genereren van de XML-nettolading die op het apparaat wordt geïnstalleerd.|
-   |**Realm**|Het domeingedeelte van de URL.|
-   |**URL-voorvoegsels die gebruikmaken van eenmalige aanmelding**|Alle URL's in uw organisatie die gebruikersverificatie met eenmalige aanmelding vereisen|
-   |**Apps die gebruikmaken van eenmalige aanmelding**|Apps op apparaten van eindgebruikers die gebruikmaken van de nettolading voor eenmalige aanmelding.|
-   |**Referentievernieuwingscertificaat**|Als u certificaten voor verificatie gebruikt, selecteert u het SCEP- of PFX-certificaat dat voor de gebruiker als verificatiecertificaat is geïmplementeerd.|
+5. Voer de volgende instellingen in: 
 
-In de volgende secties vindt u meer informatie over deze velden voor eenmalige aanmelding.
+    - **Het kenmerk Gebruikersnaam in AAD**: Intune zoekt naar dit kenmerk voor elke gebruiker in Azure AD. Het betreffende veld (zoals UPN) wordt vervolgens door Intune ingevuld vóór het genereren van de XML-payload die op het apparaat wordt geïnstalleerd. Uw opties zijn:
+    
+        - **User Principal Name**: de UPN wordt op de volgende manier geparseerd:
 
-### <a name="username-attribute-from-aad-and-realm"></a>Het kenmerk Gebruikersnaam van AAD en Realm
+            ![Kenmerk Gebruikersnaam](media/User-name-attribute.png)
 
-- Als **Principal-naam gebruiker** voor dit veld is geselecteerd, wordt deze op de volgende manier geparseerd:
+            U kunt de realm ook overschrijven met de tekst die u in het tekstvak **Realm** invoert.
 
-   ![Kenmerk Gebruikersnaam](media/User-name-attribute.png)
+            Contoso kan bijvoorbeeld verschillende subregio's hebben, zoals Europa, Azië en Noord-Amerika. Mogelijk wil het bedrijf dat hun gebruikers in Azië de SSO-payload gebruiken en is voor de app vereist dat de UPN de notatie `username@asia.contoso.com` heeft. Als u in dat geval **User Principal Name** selecteert, wordt de realm voor elke gebruiker standaard uit Azure AD overgenomen, bijvoorbeeld *contoso.com*. Daarom kunt u speciaal voor gebruikers in Azië deze nettolading maken en de realm overschrijven met de waarde *asia.contoso.com*. De UPN van de eindgebruiker is nu username@asia.contoso.com in plaats van username@contoso.com.
 
-   U kunt de realm ook overschrijven met de tekst die u typt in het tekstvak **Realm**.
+        - **Apparaat-id voor Intune**: de apparaat-id voor Intune wordt automatisch door Intune geselecteerd. 
 
-   Contoso kan bijvoorbeeld verschillende subregio's hebben, zoals Europa, Azië en Noord-Amerika. Mogelijk wil het bedrijf dat hun gebruikers in Azië de nettolading voor eenmalige aanmelding gebruiken en vereist de app dat de UPN de indeling *username@asia.contoso.com* heeft. Als u in dat geval **Principal-naam gebruiker** selecteert, is de realm voor elke gebruiker, die standaard afkomstig is van AAD, misschien gewoon *contoso.com*. Daarom kunt u speciaal voor gebruikers in Azië deze nettolading maken en de realm overschrijven met de waarde *asia.contoso.com*. De UPN van de eindgebruiker is nu *username@asia.contoso.com* en niet *username@contoso.com*.
+            Apps hoeven standaard alleen de apparaat-id te gebruiken. Als uw app echter gebruikmaakt van de realm *en* de apparaat-id, kunt u de realm in het tekstvak **Realm** invoeren.
 
-- Als u **Apparaat-id** selecteert, selecteert Intune automatisch de Intune apparaat-id.
+            > [!NOTE]
+            > Houd de realm standaard leeg als u de apparaat-id gebruikt.
 
-   Apps hoeven standaard alleen de apparaat-id te gebruiken. Maar als uw app gebruikmaakt van de realm naast de apparaat-id, kunt u de realm in het tekstvak **Realm** typen.
+    - **Realm**: het domeingedeelte van de URL.
+    
+    - **URL-voorvoegsels die gebruikmaken van eenmalige aanmelding**: **voeg** URL's in uw organisatie toe waarvoor gebruikersverificatie met eenmalige aanmelding vereist is. 
 
-   > [!NOTE]
-   > Houd de realm standaard leeg als u de apparaat-id gebruikt.
+        Bijvoorbeeld: wanneer een gebruiker verbinding maakt met een van deze sites, gebruikt het iOS-apparaat de referenties voor eenmalige aanmelding. De gebruiker hoeft geen aanvullende referenties in te voeren. Als u echter meervoudige verificatie hebt ingeschakeld, moeten gebruikers de tweede verificatie invoeren.
 
-### <a name="url-prefixes-that-will-use-single-sign-on"></a>URL-voorvoegsels die gebruikmaken van eenmalige aanmelding
+        > [!NOTE]
+        > Deze URL's moeten de juiste FQDN-indeling hebben. Apple vereist dat de URL's de notatie `http://<yourURL.domain>` hebben.
 
-Typ hier alle URL's in uw organisatie die gebruikersverificatie vereisen.
+        De URL-vergelijkingspatronen moeten beginnen met `http://` of `https://`. Er wordt een eenvoudige vergelijking van de tekenreeksen uitgevoerd. Het URL-voorvoegsel `http://www.contoso.com/` komt dus niet overeen met `http://www.contoso.com:80/`. Bij iOS 10.0 of hoger kan echter het jokerteken \* worden gebruikt om alle overeenkomende waarden in te voeren. Bijvoorbeeld: `http://*.contoso.com/` komt overeen met zowel `http://store.contoso.com/` als `http://www.contoso.com`.
 
-Bijvoorbeeld: wanneer een gebruiker verbinding maakt met een van deze sites, gebruikt het iOS-apparaat de referenties voor eenmalige aanmelding en hoeft de gebruiker geen aanvullende referenties in te voeren. Als u echter meervoudige verificatie hebt ingeschakeld, moeten gebruikers de tweede verificatie invoeren.
+        De patronen `http://.com` en `https://.com` komen overeen met respectievelijk alle HTTP- en HTTPS-URL's.
+    
+    - **Apps die gebruikmaken van eenmalige aanmelding**: **voeg** apps toe op apparaten van eindgebruikers die gebruik kunnen maken van eenmalige aanmelding. 
 
-> [!NOTE]
-> Deze URL's moeten de juiste FQDN-indeling hebben. Apple vereist dat deze de volgende indeling hebben: `http://<yourURL.domain>`
+        De matrix `AppIdentifierMatches` moet tekenreeksen bevatten die overeenkomen met de app-bundel-id's. Deze tekenreeksen kunnen exacte overeenkomsten zijn (bijvoorbeeld: `com.contoso.myapp`) of u kunt identieke begintekens voor de bundel-id invoeren met het jokerteken \*. Het jokerteken moet worden weergegeven na een punt (.) en kan slechts één keer worden weergegeven aan het einde van de tekenreeks (bijvoorbeeld: `com.contoso.*`). Wanneer een jokerteken wordt opgenomen, krijgt elke app waarvan de bundel-id begint met het voorvoegsel toegang tot het account.
 
-De URL-vergelijkingspatronen moeten beginnen met `http://` of `https://`. Er wordt een eenvoudige vergelijking van de tekenreeksen uitgevoerd. Het URL-voorvoegsel `http://www.contoso.com/` komt dus niet overeen met `http://www.contoso.com:80/`. Bij iOS 10.0 of hoger kan echter één jokerteken \* worden gebruikt om alle overeenkomende waarden op te geven. Bijvoorbeeld: `http://*.contoso.com/` komt overeen met zowel `http://store.contoso.com/` als `http://www.contoso.com`.
-De patronen `http://.com` en `https://.com` komen overeen met respectievelijk alle HTTP- en HTTPS-URL's.
+        Gebruik **App-naam** om een gebruiksvriendelijke naam in te voeren waarmee u de bundel-id kunt aangeven.
+    
+    - **Certificaat voor het vernieuwen van de referenties**: als u certificaten voor verificatie (geen wachtwoorden) gebruikt, selecteert u het SCEP- of PFX-certificaat dat voor de gebruiker als verificatiecertificaat is geïmplementeerd. Dit is meestal hetzelfde certificaat dat voor de gebruiker is geïmplementeerd voor andere profielen, bijvoorbeeld voor VPN, Wi-Fi of e-mail.
 
-### <a name="apps-that-will-use-single-sign-on"></a>Apps die gebruikmaken van eenmalige aanmelding
-
-Geef aan welke apps op apparaten van eindgebruikers gebruik kunnen maken van de nettolading voor eenmalige aanmelding.
-
-De matrix `AppIdentifierMatches` moet tekenreeksen bevatten die overeenkomen met de app-bundel-id's. Deze tekenreeksen kunnen exacte overeenkomsten zijn (bijvoorbeeld: `com.contoso.myapp`) of er kan hiermee een overeenkomend voorvoegsel voor de bundel-id worden opgegeven door het jokerteken \* te gebruiken. Het jokerteken moet worden weergegeven na een punt (.) en kan slechts één keer worden weergegeven aan het einde van de tekenreeks (bijvoorbeeld: `com.contoso.*`). Wanneer een jokerteken wordt opgenomen, krijgt elke app waarvan de bundel-id begint met het voorvoegsel toegang tot het account.
-
-Het veld **App-naam** wordt gebruikt voor het toevoegen van een gebruiksvriendelijke naam om u te helpen de bundel-id te identificeren.
-
-### <a name="credential-renewal-certificate"></a>Referentievernieuwingscertificaat
-
-Als u uw eindgebruikers met certificaten (dus niet met wachtwoorden) verifieert, gebruikt u dit veld om het SCEP- of PFX-certificaat te selecteren dat voor de gebruiker als verificatiecertificaat is geïmplementeerd. Dit is meestal hetzelfde certificaat dat voor de gebruiker is geïmplementeerd voor andere profielen, bijvoorbeeld voor VPN, Wi-Fi of e-mail.
+6. Selecteer **OK** > **OK** > **Maken** om de wijzigingen op te slaan en maak het profiel. Wanneer het profiel is gemaakt, wordt het weergegeven in de lijst **Apparaatconfiguratie: profielen**. 
 
 ## <a name="next-steps"></a>Volgende stappen
 
 Zie [Instellingen voor apparaatfuncties configureren in Microsoft Intune](device-features-configure.md) voor aanvullende informatie over de configuratie van apparaatfuncties.
+
+[Wijs dit profiel toe](device-profile-assign.md) aan uw iOS-apparaten.

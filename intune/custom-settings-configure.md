@@ -1,62 +1,56 @@
 ---
 title: Aangepaste apparaatinstellingen gebruiken in Microsoft Intune - Azure | Microsoft Docs
-description: Een profiel toevoegen of maken om aangepaste instellingen te gebruiken voor Windows-, Android en iOS-apparaten met Microsoft Intune
+description: Een profiel toevoegen of maken om aangepaste instellingen te gebruiken voor apparaten met Windows 10 en hoger en Windows Phone-, Windows 8.1-, Android-, Android Enterprise-, macOS- en iOS-apparaten met Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/06/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d917d2449e75b89db00d453b72940a93efb03321
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 3106f71b59019a1cf71680c51be6dfcb4ce10b0d
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37904999"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983071"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Een profiel maken met aangepaste instellingen in Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+## <a name="what-are-custom-profiles"></a>Wat zijn aangepaste profielen?
 
-Intune heeft mogelijk niet alle ingebouwde instellingen die u nodig hebt of wilt hebben. Of u wilt wellicht een instelling gebruiken die beschikbaar is in andere apparaatprofielen. Om deze instellingen toe te voegen, maakt u een apparaatprofiel en configureert u het profiel met aangepaste apparaatinstellingen.
+Microsoft Intune bevat veel ingebouwde instellingen om verschillende functies op een apparaat te beheren. U kunt ook aangepaste profielen maken. Aangepaste profielen zijn ideaal wanneer u apparaatinstellingen en -functies wilt gebruiken die niet in Intune zijn ingebouwd. Deze profielen bevatten functies en instellingen die u op apparaten in uw organisatie kunt beheren. U kunt bijvoorbeeld een aangepast profiel maken waarmee u dezelfde functie voor elk iOS-apparaat instelt.
 
-In dit artikel worden de basisstappen beschreven om een profiel met aangepaste instellingen te maken. Het bevat ook koppelingen om u te verdiepen in het maken van aangepaste instellingen met de verschillende platforms.
+Zie [Wat zijn Microsoft Intune-apparaatprofielen?](device-profiles.md) voor meer informatie over configuratieprofielen. 
 
-## <a name="custom-settings-on-different-platforms"></a>Aangepaste instellingen op verschillende platforms
-Aangepaste instellingen worden voor elk platform anders geconfigureerd. Om bijvoorbeeld functies op Android- en Windows-apparaten te beheren, kunt u OMA-URI-waarden (Open Mobile Alliance Uniform Resource Identifier) opgeven. Voor Apple-apparaten kunt u een bestand importeren dat u met [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) hebt gemaakt.
+Dit artikel bevat koppelingen voor het maken van aangepaste profielen voor Android, Android Enterprise, iOS, macOS en Windows.
 
-## <a name="create-the-profile"></a>Het profiel maken
+## <a name="available-platforms"></a>Beschikbare platformen
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Apparaatconfiguratie**, selecteer dan **Profielen** en kies **Profiel maken**.
-4. Voer een **Naam** en **Beschrijving** in voor het aangepaste profiel.
-5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de aangepaste instellingen wilt toepassen. U kunt kiezen uit de volgende platforms:
+Aangepaste instellingen worden voor elk platform anders geconfigureerd. Om bijvoorbeeld functies op Android- en Windows-apparaten te beheren, kunt u OMA-URI-waarden (Open Mobile Alliance Uniform Resource Identifier) opgeven. Voor Apple-apparaten kunt u een bestand importeren dat u met [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) of [Apple Profile Manager](https://support.apple.com/profile-manager) hebt gemaakt.
 
-    - **Android**
-    - **Android Enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 en hoger**
-    - **Windows 10 en hoger**
+Aangepaste profielen worden op een zelfde manier gemaakt als ingebouwde profielen en zijn beschikbaar op de volgende platformen:
 
-6. Kies **Aangepast** in de vervolgkeuzelijst **Profieltype**.
-7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u kiest. De volgende koppelingen geven meer informatie over de aangepaste instellingen voor elk platform:
+- [Android](custom-settings-android.md)
+- [Android Enterprise](custom-settings-android-for-work.md)
+- [iOS](custom-settings-ios.md)
+- [macOS](custom-settings-macos.md)
+- [Windows 10](custom-settings-windows-10.md)
+- [Windows Holographic for Business](custom-settings-windows-holographic.md)
+- [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
 
-    - [Android-instellingen](custom-settings-android.md)
-    - [iOS-instellingen](custom-settings-ios.md)
-    - [macOS-instellingen](custom-settings-macos.md)
-    - [Windows Phone 8.1-instellingen](custom-settings-windows-phone-8-1.md)
-    - [Windows 10-instellingen](custom-settings-windows-10.md)
-    - [Instellingen van Windows Holographic for Business](custom-settings-windows-holographic.md)
-    - [Android-werkprofielinstellingen](custom-settings-android-for-work.md)
+## <a name="next-steps"></a>Volgende stappen
 
-8. Wanneer u bent klaar, selecteert u **Maken**.
+Kies uw platform en ga aan de slag:
 
-Het profiel wordt gemaakt en wordt weergegeven in de profielenlijst. Zie [Apparaatprofielen toewijzen](device-profile-assign.md) als u dit profiel wilt toewijzen aan groepen.
+- [Android](custom-settings-android.md)
+- [Android Enterprise](custom-settings-android-for-work.md)
+- [iOS](custom-settings-ios.md)
+- [macOS](custom-settings-macos.md)
+- [Windows 10](custom-settings-windows-10.md)
+- [Windows Holographic for Business](custom-settings-windows-holographic.md)
+- [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)

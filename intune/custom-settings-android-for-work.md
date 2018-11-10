@@ -1,12 +1,11 @@
 ---
-title: Aangepaste profielinstellingen in Intune voor Android-werkprofielen
-titlesuffix: Microsoft Intune
-description: Meer informatie over het maken van aangepaste Microsoft Intune-profielinstellingen voor apparaten met Android-werkprofielen.
+title: Aangepaste instellingen toevoegen aan Android Enterprise-apparaten in Microsoft Intune - Azure | Microsoft Docs
+description: Een aangepast profiel voor Android Enterprise-apparaten toevoegen of maken om aangepaste instellingen te maken in Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/12/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,42 +14,85 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 109c50acf194598017aa507a0979ad3b9298de9e
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a622264ed7cc091849bacbd02f8ae7bdb33603fe
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905288"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983139"
 ---
-# <a name="create-intune-custom-profile-settings-for-android-work-profile-devices"></a>Aangepaste profielinstellingen maken in Intune voor apparaten met Android-werkprofielen
+# <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Aangepaste instellingen gebruiken voor Android Enterprise-apparaten in Microsoft Intune
 
-Gebruik het aangepaste configuratiebeleid van Intune voor Android-werkprofielen om OMA-URI-instellingen toe te wijzen waarmee u de functies op apparaten met Android-werkprofielen kunt beheren. Dit zijn standaardinstellingen die door veel fabrikanten van mobiele apparaten worden gebruikt voor het beheren van apparaatfuncties.
+Met Microsoft Intune kunt u aangepaste instellingen voor uw Android Enterprise-apparaten toevoegen of maken met behulp van een 'aangepast profiel'. Aangepaste profielen zijn een functie in Intune. Ze zijn ontworpen om apparaatinstellingen en -functies toe te voegen die niet in Intune zijn ingebouwd.
 
-Op deze manier kunt u Android-instellingen toewijzen die u niet kunt configureren met Intune-beleid. Intune biedt momenteel ondersteuning voor een beperkt aantal aangepaste Android-beleidsregels. Zie de voorbeelden in dit artikel om na te gaan welk beleid u kunt configureren.
+In aangepaste profielen voor Android Enterprise worden OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) gebruikt om functies op Android Enterprise-apparaten te beheren. Deze instellingen worden doorgaans gebruikt door fabrikanten van mobiele apparaten om deze functies te beheren.
 
-## <a name="create-a-custom-profile"></a>Een aangepast profiel maken
+Intune ondersteunt een beperkt aantal aangepaste profielen voor Android.
 
-1. Volg de instructies in [Aangepaste apparaatinstellingen configureren](custom-settings-configure.md) om aan de slag te gaan. Kies als **platform** **Android Enterprise** en als **profieltype** **Aangepast**.
-2. Klik op de blade **Aangepaste OMA-URI-instellingen** op **Toevoegen** om een nieuwe instelling toe te voegen.
-3. Configureer op de blade **Rij toevoegen** het volgende:
-    - **Naam**: voer een unieke naam in voor de aangepaste instellingen voor het Android-werkprofiel waarmee u deze gemakkelijk kunt herkennen in de Azure-portal.
-    - **Beschrijving**: geef een beschrijving op die een overzicht biedt van het aangepaste Android-beleid, evenals andere relevante informatie waarmee u het beleid kunt vinden.
-    - **OMA-URI**: voer de OMA-URI in waarvoor u een instelling wilt opgeven.
-    - **Gegevenstype**: selecteer het gegevenstype waarin u deze OMA-URI-instelling opgeeft. Kies uit: **Tekenreeks**, **Tekenreeks (XML-bestand)**, **Datum en tijd**, **Geheel getal**, **Drijvende komma**, **Booleaanse waarde** of **Base64 (bestand)**.
-    - **Waarde**: geef de waarde op die u wilt koppelen aan de OMA-URI die u eerder hebt opgegeven. De methode die u gebruikt voor het opgeven van deze waarde verschilt, afhankelijk van het gegevenstype dat u hebt geselecteerd. Als u bijvoorbeeld **Datum en tijd** hebt gekozen, selecteert u de waarde in een datumkiezer.
-4. Wanneer u klaar bent, kiest u OK om terug te keren naar **Aangepaste OMA-URI-instellingen** en vervolgens voegt u meer instellingen toe of kiest u **Maken** om het aangepaste profiel te maken.
+In dit artikel wordt beschreven hoe u een aangepast profiel maakt voor Android Enterprise-apparaten. Het bevat ook een voorbeeld van een aangepast profiel waarmee kopieer- en plakbewerkingen worden geblokkeerd.
 
+## <a name="create-the-profile"></a>Het profiel maken
+
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+3. Voer de volgende instellingen in:
+
+    - **Naam**: voer een naam in voor het profiel, zoals `android enterprise custom profile`
+    - **Beschrijving:** voer een beschrijving in voor het profiel
+    - **Platform**: kies **Android Enterprise**
+    - **Profieltype**: kies **Aangepast**
+
+4. Selecteer in **Aangepaste OMA-URI-instellingen** de optie **Toevoegen**. Voer de volgende instellingen in:
+
+    - **Naam**: voer een unieke naam in voor de OMA-URI-instelling, zodat u deze gemakkelijk kunt vinden.
+    - **Beschrijving**: voer een beschrijving in met een overzicht van de instelling en eventuele andere belangrijke details.
+    - **OMA-URI**: voer de OMA-URI in die u als instelling wilt gebruiken.
+    - **Gegevenstype**: kies het gegevenstype dat u voor deze OMA-URI-instelling gaat gebruiken. Uw opties zijn:
+
+      - Tekenreeks
+      - Tekenreeks (XML-bestand)
+      - Datum en tijd
+      - Geheel getal
+      - Drijvende komma
+      - Boolean-waarde
+      - Base64 (bestand)
+
+    - **Waarde**: voer de gegevenswaarde in die moet worden gekoppeld aan de OMA-URI die u hebt ingevoerd. De waarde is afhankelijk van het gegevenstype dat u hebt geselecteerd. Als u bijvoorbeeld **Datum en tijd** hebt gekozen, selecteert u de waarde in een datumkiezer.
+
+    Nadat u een aantal instellingen hebt toegevoegd, kunt u **Exporteren** selecteren. Met **Exporteren** maakt u een lijst met alle waarden die u hebt toegevoegd in een bestand met door komma's gescheiden waarden (.csv).
+
+5. Selecteer **OK** om uw wijzigingen op te slaan. Blijf, indien nodig, meer instellingen toevoegen.
+6. Wanneer u klaar bent, kiest u **OK** > **Maken** om het Intune-profiel te maken. Wanneer het profiel is gemaakt, wordt dit weergegeven in de lijst **Apparaatconfiguratie - profielen**.
 
 ## <a name="example"></a>Voorbeeld
 
-In dit voorbeeld maakt u een aangepast profiel dat kan worden gebruikt om beperkingen op te leggen in hoeverre de handelingen kopiëren en plakken tussen werk-apps en persoonlijke apps op apparaten met Android-werkprofiel zijn toegestaan.
+In dit voorbeeld maakt u een aangepast profiel waarmee kopieer- en plakbewerkingen tussen werk-apps en persoonlijke apps op Android Enterprise-apparaten worden beperkt.
 
-1. Gebruik de procedure in dit artikel om een aangepast profiel te maken voor apparaten met Android-werkprofielen for Work en gebruik hierbij de volgende waarden:
-    - **Naam**: voer 'Kopiëren en plakken blokkeren' of een tekst van uw eigen keuze in.
-    - **Beschrijving**: voer 'Kopiëren/plakken tussen werk-apps en persoonlijke apps blokkeren' of een tekst van uw eigen keuze in.
-    - **OMA-URI**: voer **./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste** in.
-    - **Gegevenstype**: selecteer **Booleaanse waarde** om aan te geven dat de waarde voor deze OMA-URI **True** of **False** is.
-    - **Waarde**: selecteer **True**.
-2. Als u klaar bent, moet de instelling er uitzien zoals op deze afbeelding.
-![Kopiëren en plakken blokkeren voor een Android-werkprofiel.](./media/custom-policy-afw-copy-paste.png)
-3. Wanneer u nu dit aangepast profiel aan door u beheerde apparaten met Android-werkprofiel toewijst, wordt kopiëren en plakken tussen apps in de werkprofielen en persoonlijke profielen geblokkeerd.
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+3. Voer de volgende instellingen in:
+
+    - **Naam**: voer een naam in voor het profiel, zoals `android ent block copy paste custom profile`.
+    - **Beschrijving:** voer een beschrijving in voor het profiel.
+    - **Platform**: kies **Android Enterprise**.
+    - **Profieltype**: kies **Aangepast**.
+
+4. Selecteer in **Aangepaste OMA-URI-instellingen** de optie **Toevoegen**. Voer de volgende instellingen in:
+
+    - **Naam**: voer iets in als `Block copy and paste`.
+    - **Beschrijving**: voer iets in als `Blocks copy/paste between work and personal apps`.
+    - **OMA-URI**: voer `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste` in.
+    - **Gegevenstype**: kies **Booleaans**, zodat de waarde voor deze OMA-URI **Waar** of **Onwaar** is.
+    - **Waarde**: kies **Waar**.
+
+5. Nadat u de instellingen hebt ingevoerd, moet uw omgeving ongeveer zijn zoals in de volgende afbeelding:
+
+    ![Blokkeer kopiëren en plakken voor een Android-werkprofiel.](./media/custom-policy-afw-copy-paste.png)
+
+Als u dit profiel toewijst aan Android Enterprise-apparaten die u beheert, wordt het kopiëren en plakken tussen apps in het werkprofiel en persoonlijke profiel geblokkeerd.
+
+## <a name="next-steps"></a>Volgende stappen
+
+Het profiel is gemaakt, maar er gebeurt nog niets. Vervolgens [wijst u het profiel toe](device-profile-assign.md).
+
+Bekijk hoe u [het profiel op Android-apparaten maakt](custom-settings-android.md).

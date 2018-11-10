@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb7d8b35cb88223a3fbfa45e0ad8e2f8d2852a96
-ms.sourcegitcommit: ab801d715aa26f6d97f1a0c42a07e55146a14e6f
+ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35289020"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236336"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-scripts in Intune beheren voor Windows 10-apparaten
 Met de Intune-beheeruitbreiding kunt u PowerShell-scripts uploaden in Intune om deze uit te voeren op Windows 10-apparaten. De beheeruitbreiding is een aanvulling op de Windows 10 MDM-functionaliteit en maakt het eenvoudiger voor u om uw beheer te moderniseren.
@@ -33,7 +33,7 @@ De extensie van de Intune-management is een aanvulling op de meegeleverde Window
 
 ## <a name="prerequisites"></a>Vereisten
 De Intune-beheeruitbreiding heeft de volgende vereisten:
-- Apparaten moeten zijn gekoppeld aan Azure AD. Dit omvat geen apparaten die aan Hybrid AD zijn toegevoegd.
+- Apparaten moeten zijn gekoppeld aan Azure AD. De Intune-beheeruitbreiding biedt ondersteuning voor geregistreerde Windows-apparaten die zijn toegevoegd aan Azure Active Directory, aan een hybride domein, en die gezamenlijk worden beheerd.
 - Op apparaten moet Windows 10 versie 1607 of hoger worden uitgevoerd.
 - Automatische MDM-inschrijving moet zijn [ingeschakeld in Azure AD](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment) en apparaten moeten automatisch worden geregistreerd bij Intune.
 
@@ -56,7 +56,8 @@ De Intune-beheeruitbreiding heeft de volgende vereisten:
 
 > [!NOTE]
 > - PowerShell-scripts kunnen niet worden toegepast op computergroepen.
-> - PowerShell-scripts worden alleen uitgevoerd op apparaten als een AD-gebruiker (Azure Active Directory) is aangemeld op het apparaat.
+> - Eindgebruikers hoeven niet te zijn aangemeld bij het apparaat om PowerShell-scripts uit te voeren. 
+> - PowerShell-scripts in Intune kunnen worden gericht op AAD-apparaatbeveiligingsgroepen.
 
 De Intune-beheeruitbreiding wordt eenmaal per uur met Intune gesynchroniseerd. Wanneer u het beleid aan de Microsoft Azure Active Directory-groepen toewijst, wordt het PowerShell-script uitgevoerd en worden de resultaten van de uitvoering gerapporteerd. 
  
