@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a0d9d0ac3c0cd8804ffc401cd3041d5b9a17e64f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321438"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236404"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Een apparaatnalevingsbeleid toevoegen voor macOS-apparaten in Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Een Intune-apparaatnalevingsbeleid voor macOS bepaalt de regels en instellingen waaraan een macOS-apparaat moet voldoen om te voldoen aan het beleid. Wanneer u apparaatnalevingsbeleid gebruikt met voorwaardelijke toegang, kunt u toegang tot bedrijfsbronnen toestaan of blokkeren. U kunt ook apparaatrapporten krijgen en maatregelen nemen voor niet-naleving. Nalevingsbeleid voor apparaten kan voor elk platform worden gemaakt in de Intune Azure Portal. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over nalevingsbeleid en eventuele vereisten.
 
@@ -90,6 +88,17 @@ Apparaten worden door de firewall tegen onbevoegde netwerktoegang beschermd. U k
 - **Firewall**: u kunt deze functie **inschakelen** om apparaten beter te beveiligen tegen onbevoegde toegang. Door deze functie in te schakelen, kunt u binnenkomende internetverbindingen verwerken en de verborgen modus gebruiken. **Niet geconfigureerd** (standaard) zorgt ervoor dat de firewall uitgeschakeld blijft en dat netwerkverkeer is toegestaan (niet geblokkeerd).
 - **Binnenkomende verbindingen**: **blokkeer** alle binnenkomende netwerkverbindingen, behalve de verbindingen die vereist zijn voor elementaire internetservices, zoals DHCP, Bonjour en IPSec. Via deze instellingen worden ook alle services voor delen geblokkeerd, met inbegrip van het delen van het scherm, externe toegang, het delen van iTunes-muziek en meer. **Niet geconfigureerd** (standaard) staat binnenkomende verbindingen en services voor delen toe. 
 - **Verborgen modus**: u kunt de verborgen modus **inschakelen** om te voorkomen dat het apparaat reageert op peilaanvragen van kwaadwillige gebruikers. Wanneer de modus is ingeschakeld, reageert het apparaat nog wel op binnenkomende verzoeken voor toegestane apps. Bij **Niet geconfigureerd** (standaard) blijft de verborgen modus uitgeschakeld.
+
+### <a name="gatekeeper"></a>Gatekeeper
+
+**Alle apps toestaan die zijn gedownload vanaf deze locaties**: hiermee staat u toe dat ondersteunde toepassingen vanaf verschillende locaties op uw apparaten worden geïnstalleerd. Uw locatieopties:
+
+- **Niet geconfigureerd** standaard. De optie Gatekeepeer heeft geen invloed op naleving of niet-naleving. 
+- **Mac App Store**: alleen apps voor de Mac App Store installeren. Apps van derden en van niet-geïdentificeerde ontwikkelaars kunnen niet worden geïnstalleerd. Als een gebruiker Gatekeeper selecteert om apps buiten de Mac App Store om te installeren, wordt het apparaat vervolgens beschouwd als niet compatibel.
+- **Mac App Store en geïdentificeerde ontwikkelaars**: apps voor de Mac App Store en geïdentificeerde ontwikkelaars installeren. macOS controleert de identiteit van ontwikkelaars en voert daarnaast enkele andere controles uit om de integriteit van de app te verifiëren. Als een gebruiker Gatekeeper selecteert om apps buiten deze opties om te installeren, wordt het apparaat vervolgens beschouwd als niet compatibel.
+- **Overal**: apps vanaf elke locatie en van elke ontwikkelaar kunnen worden geïnstalleerd. Dit is de minst veilige optie.
+
+Zie [Gatekeeper op macOS](https://support.apple.com/HT202491) in de Apple-documentatie voor meer informatie.
 
 ## <a name="assign-user-groups"></a>Gebruikersgroepen toewijzen
 

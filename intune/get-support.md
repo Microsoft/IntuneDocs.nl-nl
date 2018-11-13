@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 47917943188b2b3d0448845b1e356d181ec8f3af
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187781"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410834"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen
 
@@ -96,6 +96,64 @@ U kunt een ondersteuningsaanvraag weergeven in Azure Portal. Hiervoor doet u het
 1. Meld u aan bij Azure (<https://portal.azure.com>) met uw Intune-beheerdersreferenties en selecteer de <strong>?</strong> in de rechterbovenhoek van de portal en selecteer vervolgens <strong>Help + ondersteuning</strong> om naar de gelijknamige[Azure Help + ondersteuning](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)pagina te gaan.
 
 2. Op de pagina **Help + ondersteuning** kunt u de lijst met **Recente ondersteuningsaanvragen** weergeven en deze selecteren om meer details te zien.
+
+
+## <a name="new-help-and-support-experience"></a>Nieuwe Help en ondersteuning-ervaring 
+*De volgende informatie is alleen van toepassing wanneer u de portal voor Apparaatbeheer gebruikt en deelneemt aan de implementatie van de nieuwe ervaring voor Help en ondersteuning. Deelnemers aan deze implementatie worden willekeurig geselecteerd uit de beschikbare Intune-tenants.*  
+
+De update voor Help en ondersteuning voor Intune is een nieuwe ervaring die voor sommige, maar niet alle tenants beschikbaar is in de [Microsoft 365-portal voor apparaatbeheer](http://devicemanagement.microsoft.com). Deze nieuwe ervaring is vergelijkbaar met de ervaring in het [Microsoft 365-beheercentrum](https://portal.office.com/AdminPortal/Home) en vervangt de vorige ervaring voor Help en ondersteuning wanneer deze vanuit sommige locaties van de console voor apparaatbeheer wordt geopend.  
+
+In de portal voor apparaatbeheer opent u de nieuwe ervaring wanneer u op een willekeurige blade **Help en ondersteuning** selecteert onder **Alle services** > **Apparaatbeheer**, met uitzondering van de blade **Probleemoplossing**. Wanneer u Help en ondersteuning opent vanuit elke andere locatie, zoals **Probleemoplossing**, met de optie **?** in de rechterbovenhoek van de banner van de console, of wanneer u **Help en ondersteuning** selecteert vanuit de lijst met services in het linkerdeelvenster, opent u de oorspronkelijke ervaring.  
+
+In de nieuwe ervaring krijgt u toegang tot de weergave **Hebt u hulp nodig?**, zoals te zien is in de volgende afbeelding:  
+![Het Apparaatbeheerdashboard en de pagina Hebt u hulp nodig?](./media/get-support/help-support-dashboard.png)
+
+In deze weergave kunt u de volgende acties uitvoeren:
+
+1. [Details opgeven](#specify-details-about-an-issue) over het probleem waarbij u hulp nodig hebt  
+2. [Contextgevoelige Help](#view-context-sensitive-help) en gerelateerde oplossingen weergeven die zijn gebaseerd op de details die u hebt opgegeven  
+3. [Ondersteuning krijgen](#get-support) met behulp van een e-mailadres of telefoonnummer  
+4. [Ondersteuningscases weergeven](#view-support-cases) die u eerder hebt geopend met deze nieuwe werkstroom  
+
+### <a name="specify-details-about-an-issue"></a>Details opgeven over een probleem
+Wanneer u Help en ondersteuning opent vanaf een locatie die wordt ondersteund door de nieuwe ervaring, wordt de pagina **Hebt u hulp nodig?**  geopend. Op deze pagina kunt u informatie opgeven over een probleem. Terwijl u gegevens invoert, biedt de console algemene query's op basis van de trefwoorden die u gebruikt. U kunt een aangeboden keuze selecteren of uw eigen beschrijving van het probleem voltooien. Als u uw eigen beschrijving invoert, selecteert u **Hulp vragen** om deze te verzenden. Nadat u een query hebt ingediend, keert de console terug naar de contextgevoelige informatie waarmee het probleem mogelijk kan worden opgelost.
+
+Hier volgen enkele voorbeelden van query's die u kunt verzenden:
+  
+- *Ik kan het iOS-apparaat niet herstellen*  
+- *Ik kan geen beleid voor voorwaardelijke toegang maken*  
+
+![Geef op de pagina Hebt u hulp nodig? het probleem op](./media/get-support/describe-the-issue.png)
+
+
+### <a name="view-context-sensitive-help"></a>Contextgevoelige Help weergeven
+Nadat u een voorgestelde query hebt geaccepteerd of uw eigen query hebt verzonden, worden contextafhankelijke resultaten weergegeven onder **Oplossingen weergeven**. Deze resultaten omvatten zowel Intune-specifieke ondersteuning bij zelfhulp als extra resultaten die zijn geretourneerd na een webzoekopdracht op basis van de querycriteria.  
+![Resultaten weergeven](./media/get-support/view-results.png)
+
+### <a name="get-support"></a>Ondersteuning krijgen  
+Als u het probleem niet kunt oplossen met de zelfhulp of de webgebaseerde ondersteuning, kunt u in de console een aanvraag verzenden voor ondersteuning per e-mail of telefoon.  
+Selecteer op de pagina **Hebt u hulp nodig?** de optie die u wilt gebruiken.  
+
+- Geef uw e-mailadres op voor een e-mailaanvraag. Indien gewenst kunt u bijlagen toevoegen aan uw inzending. Selecteer **Verzenden** om de aanvraag te openen.  
+
+  ![E-mailaanvraag](./media/get-support/email-support.png)
+  
+- Geef uw telefoonnummer op voor een aanvraag voor telefonische ondersteuning. Indien gewenst kunt u tevens uw e-mailadres invoeren en bijlagen toevoegen aan uw inzending. Selecteer Bel mij om de aanvraag te verzenden.  
+
+   ![Telefonische aanvraag](./media/get-support/phone-support.png)
+
+### <a name="view-support-cases"></a>Ondersteuningscases weergeven
+Selecteer de knop Geschiedenis om de ondersteuningsincidenten weer te geven die u hebt gemaakt.  
+
+![Ondersteuningscases weergeven](./media/get-support/view-support-tickets.png)
+
+- Alleen de ondersteuningscases die u met de nieuwe werkstroom opent, zijn binnen deze werkstroom zichtbaar. Als u deze wilt weergeven, gebruikt u een Help en ondersteuning-weergave in de console Beheer van apparaten die deel uitmaakt van de nieuwe ervaring. Deze cases hebben een nummer van acht cijfers. U kunt deze cases ook weergeven vanuit het Microsoft 365-beheercentrum.  
+
+- Aanvragen die u hebt geopend voordat uw account werd toegevoegd aan de nieuwe Help en ondersteuning-ervaring blijven ongewijzigd. Als u deze wilt weergeven, moet u een weergave voor help en ondersteuning gebruiken die geen deel uitmaakt van de implementatie van de nieuwe ervaring. Deze cases hebben een nummer dat begint met **117** of **118** en 15 cijfers lang is.  Als u een ondersteuningsverzoek wilt weergeven dat u hebt geopend voordat u werd toegevoegd aan de nieuwe ervaring, gebruikt u Azure Portal. Hiervoor doet u het volgende:
+
+    1. Meld u aan bij Azure (<https://portal.azure.com>) met uw Intune-beheerdersreferenties en selecteer de *?* in de rechterbovenhoek van de portal en selecteer vervolgens *Help + ondersteuning* om naar de gelijknamige[Azure Help + ondersteuning](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)pagina te gaan.
+
+    2. Op de pagina **Help + ondersteuning** kunt u de lijst met **Recente ondersteuningsaanvragen** weergeven en deze selecteren om meer details te zien.
 
 ## <a name="additional-resources"></a>Extra resources
 - [Contact opnemen met telefonische ondersteuning voor Microsoft Intune](phone-support-contact.md)

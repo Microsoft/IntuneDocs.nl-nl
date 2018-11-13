@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: aa51cbea1ab1ea5f1bfc903a17638192aca59326
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 5fa3079c994a2e0ea2d587185e12c52085133f9c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075894"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025182"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows-apparaten inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -26,6 +26,12 @@ Windows Autopilot maakt het makkelijker om apparaten te registreren. Het kost ve
 ## <a name="prerequisites"></a>Vereisten
 - [Automatische inschrijving bij Windows is ingeschakeld](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium-abonnement](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="how-to-get-the-csv-for-import-in-intune"></a>Het CSV-bestand verkrijgen voor het importeren in InTune
+
+Zie de cmdlet powershell begrijpen voor meer informatie over het gebruik.
+
+- [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
 ## <a name="add-devices"></a>Apparaten toevoegen
 
@@ -62,13 +68,13 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
     Wanneer u de code **Geavanceerde regel** hebt toegevoegd, kiest u **Opslaan**.
 5. Kies **Maken**.  
 
-## <a name="create-an-autopilot-deployment-profile"></a>Een Windows Autopilot Deployment-profiel maken
+## <a name="create-an-autopilot-deployment-profile"></a>Een Autopilot-implementatieprofiel maken
 Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren.
 1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaatprofielen** > **Profiel maken**.
 2. Geef een **naam** en desgewenst een **beschrijving** op.
 3. Als u wilt dat alle apparaten in de toegewezen groepen automatisch converteren naar Autopilot, stelt u **Alle doelapparaten converteren naar Autopilot** in op **Ja**. Alle niet-Autopilot-apparaten in toegewezen groepen worden geregistreerd met de Autopilot-implementatieservice. Het kan 48 uur duren voordat de registratie is verwerkt. Wanneer het apparaat wordt uitgeschreven en opnieuw wordt ingesteld, wordt het door Autopilot geregistreerd. Nadat een apparaat op deze manier is geregistreerd, wordt het apparaat niet meer uit de Autopilot-implementatieservice verwijderd door deze optie uit te schakelen of de profieltoewijzing te verwijderen. In plaats daarvan moet u [het apparaat rechtstreeks verwijderen](enrollment-autopilot.md#delete-autopilot-devices).
 4. Voor de **implementatiemodus** kiest u een van deze twee opties:
-    - **Op basis van gebruiker**: apparaten met dit profiel worden gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn gebruikersreferenties vereist om het apparaat te kunnen registreren.
+    - **Op basis van gebruiker**: apparaten met dit profiel worden gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn gebruikersreferenties vereist om het apparaat in te kunnen schrijven.
     - **Zelf-implementerend (preview)**: (hiervoor is de meest recente versie van [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/) vereist) apparaten met dit profiel worden niet gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn geen gebruikersreferenties vereist om het apparaat te kunnen registreren.
 5. In het vak **Toevoegen aan Azure AD als** kiest u **Toegevoegd aan Azure AD**.
 6. Kies **Out-Of-Box Experience (OOBE)**, configureer de volgende opties en klik vervolgens op **Opslaan**:
@@ -153,15 +159,14 @@ Als u geen interesse hebt in Mobile Device Management, kunt u Autopilot gebruike
 - Profieltoewijzingen synchroniseren die zijn uitgevoerd in een andere portal
 - Wijzigingen in de lijst met apparaten weergeven die zijn gemaakt in een andere portal
 
-## <a name="redeploying-windows-autopilot"></a>Windows Autopilot opnieuw implementeren
+## <a name="windows-autopilot-for-existing-devices"></a>Windows Autopilot voor bestaande apparaten
 
-U kunt Windows-apparaten groeperen op correlator-id bij registratie met behulp van [Autopilot voor bestaande apparaten](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) via Configuration Manager. De correlator-ID is een parameter van het Autopilot-configuratiebestand. Het [kenmerk enrollmentProfileName van het Microsoft Azure AD-apparaat](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) wordt automatisch hetzelfde ingesteld als 'OfflineAutopilotprofile-<correlator ID>'. Hierdoor kunnen willekeurige dynamische groepen in Microsoft Azure AD op basis van correlator-id worden gemaakt met behulp van het kenmerk enrollmentprofileName voor offline Autopilot-inschrijvingen.
+U kunt Windows-apparaten groeperen op correlator-id bij registratie met behulp van [Autopilot voor bestaande apparaten](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) via Configuration Manager. De correlator-ID is een parameter van het Autopilot-configuratiebestand. De [enrollmentProfileName van het Azure ID-apparaatkenmerk](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) wordt automatisch zodanig ingesteld dat deze aansluit bij de ‘OfflineAutopilotprofile-\<correlator-ID\>’. Hierdoor kunnen willekeurige dynamische groepen in Azure AD op basis van de correlator-id worden gemaakt met behulp van het kenmerk enrollmentprofileName.
 
-Als u een upgrade uitvoert voor een oude Windows-versies die geen Autopilot-registratie ondersteunt, kunt u een offline Autopilot-profiel gebruiken. AutoPilot kan ondersteuning bieden tijdens een schone installatie van Windows 10 1809 of hoger. Als onderdeel van het offlineprofiel kunt u een correlator-id specificeren. 
-
-Waarschuwing: Omdat de correlatie-id niet vooraf wordt weergegeven in Intune, kunnen gebruikers kiezen voor registratie bij elke gewenste correlatie-id. Als de gebruiker een correlatie-id maakt die overeenkomt met een Autopilot- of Apple DEP-profielnnaam, wordt het apparaat toegevoegd aan alle dynamische Microsoft Azure AD-apparaatgroepen op basis van het kenmerk enrollmentProfileName. U kunt dit conflict als volgt voorkomen:
-- Maak altijd dynamische groepsregels die overeenkomen met de *hele* enrollmentProfileName-waarde
-- Begin een Autopilot- of Apple DEP-profielnaam nooit met 'OfflineAutopilotprofile-'.
+>[!WARNING] 
+> Omdat de correlatie-id niet vooraf wordt weergegeven in Intune, wordt door het apparaat mogelijk elke gewenste correlatie-id gerapporteerd. Als de gebruiker een correlatie-id maakt die overeenkomt met een Autopilot- of Apple DEP-profielnnaam, wordt het apparaat toegevoegd aan alle dynamische Microsoft Azure AD-apparaatgroepen op basis van het kenmerk enrollmentProfileName. U kunt dit conflict als volgt voorkomen:
+> - Maak altijd dynamische groepsregels die overeenkomen met de *hele* enrollmentProfileName-waarde
+> - Begin een Autopilot- of Apple DEP-profielnaam nooit met 'OfflineAutopilotprofile-'.
 
 ## <a name="next-steps"></a>Volgende stappen
 Ontdek hoe u apparaten beheert nadat u Windows Autopilot hebt geconfigureerd voor geregistreerde Windows 10-apparaten. Zie [Wat is Microsoft Intune-apparaatbeheer?](https://docs.microsoft.com/intune/device-management) voor meer informatie.

@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d1224c00a1f7e8cf303304b3a0f038ade79b9633
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e4330d8e8095df49b14ab60c4b08aae44d134452
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834607"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679216"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>VPN-instellingen in Microsoft Intune configureren voor apparaten met macOS
 
@@ -56,6 +56,6 @@ Als u **Aangepaste VPN** hebt geselecteerd, configureert u deze instellingen:
 
 ## <a name="proxy-settings"></a>Proxyinstellingen
 
-- **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com**) in die het configuratiebestand bevat.
+- **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld `** http://proxy.contoso.com**`) in die het configuratiebestand bevat.
 - **Adres**: voer het adres van de proxyserver in (als IP-adres).
 - **Poortnummer**: voer het poortnummer in dat is gekoppeld aan de proxyserver.

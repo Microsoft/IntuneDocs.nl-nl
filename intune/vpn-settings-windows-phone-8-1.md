@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3397c10ae572a248507f15e5145fef68898d30c4
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
+ms.openlocfilehash: 822be56db10f4659ba9cd027c2612d7960e40e5b
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291441"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679199"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>VPN-instellingen in Microsoft Intune configureren voor apparaten met Windows Phone 8.1
 
@@ -93,7 +93,7 @@ Raadpleeg de VPN-documentatie van de respectievelijke fabrikanten voor meer info
 ## <a name="proxy-settings"></a>Proxyinstellingen
 
 - **Automatisch proxyinstellingen detecteren**: als de VPN-server een proxyserver voor de verbinding vereist, geeft u op of apparaten de verbindingsinstellingen automatisch moeten detecteren. Raadpleeg de Windows Server-documentatie voor meer informatie.
-- **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld **http://proxy.contoso.com**) in die het configuratiebestand bevat.
+- **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld `** http://proxy.contoso.com**`) in die het configuratiebestand bevat.
 - **Proxyserver gebruiken**: schakel deze optie in als u de proxyserverinstellingen handmatig wilt invoeren.
     - **Adres**: voer het adres van de proxyserver in (als IP-adres).
     - **Poortnummer**: voer het poortnummer in dat is gekoppeld aan de proxyserver.

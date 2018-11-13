@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59e2ab4635c8488b99781ac123aacd0854967dc8
-ms.sourcegitcommit: c3ac9e5f6240223cb5dfed8b44c7425066d6ea86
+ms.openlocfilehash: b3de4d79e6121505718a75ffe64102bb1bc18347
+ms.sourcegitcommit: 244456907e3ab4a4389d32d06060606a9591cfba
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49380028"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751640"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioskinstellingen voor Windows 10 (en hoger) in Intune
 
@@ -105,7 +105,7 @@ Wanneer u een kioskmodus voor meerdere apps kiest, moet u de volgende instelling
 
     - **Toepassingsnaam**: vereist. Geef een naam op voor de toepassing.
     - **Lokaal pad**: vereist. Voer het pad naar het uitvoerbare bestand in, zoals `C:\Program Files (x86)\Microsoft VS Code\Code.exe` of `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-    - **Model-id van toepassingsgebruiker (AUMID)**: optioneel. Voer de AUMID van de Win32-app in. Deze instelling bepaalt de indeling van de tegel na het opstarten op het bureaublad. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) als u wilt weten hoe u aan deze id komt.
+    - **Model-id van de toepassingsgebruiker (AUMID)**: voer het model-id van de toepassingsgebruiker (AUMID) van de Win32-app in. Deze instelling bepaalt de indeling van de tegel na het opstarten op het bureaublad. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps) als u wilt weten hoe u aan deze id komt.
     - **Tegelgrootte**: vereist. Kies een tegelgrootte Klein, Normaal, Breed of Groot voor de app.
   
   - **Toevoegen via AUMID**: gebruik deze optie om Postvak IN-apps voor Windows, zoals Kladblok of Calculator toe te voegen. Voer de volgende eigenschappen in: 

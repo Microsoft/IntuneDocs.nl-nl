@@ -15,12 +15,12 @@ ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 4df55309587ac079cfeaec299d70635b090e300b
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: 5fb0de1af9c8336cb277572faf526f1471108591
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821624"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225948"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune-datawarehouse-verzamelingen
 
@@ -29,7 +29,7 @@ De volgende Intune-datawarehouse-verzamelingen bevatten de eigenschappen, beschr
 ## <a name="apprevisions"></a>appRevisions
 De entiteit **AppRevision** biedt een overzicht van alle versies van apps.
 
-|          Eigenschap          |                                      Description                                      |                Voorbeeld               |
+|          Eigenschap          |                                      Beschrijving                                      |                Voorbeeld               |
 |:--------------------------:|:-------------------------------------------------------------------------------------:|:------------------------------------:|
 | AppKey                     | De unieke id van de app.                                                         | 123                                  |
 | ApplicationID              | De unieke id van de app, vergelijkbaar met AppKey, maar dit is een natuurlijke sleutel.        | b66bc706-ffff-7437-0340-032819502773 |
@@ -50,7 +50,7 @@ De entiteit **AppRevision** biedt een overzicht van alle versies van apps.
 ## <a name="apptypes"></a>AppTypes
 De entiteit **appType** vermeldt de installatiebron van een app.
 
-|   Eigenschap  |        Description        |
+|   Eigenschap  |        Beschrijving        |
 |:-----------:|:-------------------------:|
 | AppTypeID   | De id voor het type           |
 | AppTypeKey  | De surrogaatsleutel voor de sleutel |
@@ -58,7 +58,7 @@ De entiteit **appType** vermeldt de installatiebron van een app.
 
 ### <a name="example"></a>Voorbeeld
 
-| AppTypeID |                Naam               |                     Description                     |
+| AppTypeID |                Naam               |                     Beschrijving                     |
 |:---------:|:---------------------------------:|:---------------------------------------------------:|
 | 0         | Android Store-app               | Een Android Store-app.                             |
 | 1         | Android LOB-app                 | Een Android Line-Of-Business-app.                  |
@@ -77,7 +77,7 @@ De entiteit **appType** vermeldt de installatiebron van een app.
 ## <a name="compliancepolicystatusdeviceactivities"></a>compliancePolicyStatusDeviceActivities
 De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbeleid voor apparaten. In de tabel wordt het aantal apparaten weergegeven dat is gevonden voor elke nalevingsstatus.
 
-|    Eigenschap   |                                                                                      Description                                                                                     |  Voorbeeld |
+|    Eigenschap   |                                                                                      Beschrijving                                                                                     |  Voorbeeld |
 |:-------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------:|
 | DateKey       | De datum waarop de samenvatting voor het nalevingsbeleid is gemaakt.                                                                                                                   | 20161204 |
 | Onbekend       | Het aantal apparaten dat offline is of om een andere redenen niet kan communiceren met Intune of Azure AD.                                                                           | 5        |
@@ -90,7 +90,7 @@ De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbele
 ## <a name="compliancepolicystatusdeviceperpolicyactivities"></a>compliancePolicyStatusDevicePerPolicyActivities
 De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbeleid voor apparaten per beleid en per beleidstype. In de tabel wordt het aantal apparaten weergegeven dat is gevonden in elke nalevingsstatus voor elk toegewezen nalevingsbeleid.
 
-|      Eigenschap     |                                                                                      Description                                                                                     |  Voorbeeld |
+|      Eigenschap     |                                                                                      Beschrijving                                                                                     |  Voorbeeld |
 |:-----------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------:|
 | DateKey           | De datum waarop de samenvatting voor het nalevingsbeleid is gemaakt.                                                                                                                   | 20161219 |
 | PolicyKey         | Sleutel voor het nalevingsbeleid waarvoor de samenvatting is gemaakt.                                                                                                                   | 10178    |
@@ -103,7 +103,7 @@ De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbele
 | Fout             | Het aantal apparaten dat niet kan communiceren met Intune of Azure AD en een foutbericht heeft geretourneerd.                                                                             | 3        |
 ## <a name="compliancestates"></a>complianceStates
 
-|      Eigenschap      |                       Description                      |
+|      Eigenschap      |                       Beschrijving                      |
 |:------------------:|:------------------------------------------------------:|
 | complianceStatus   | Status van naleving van apparaten met mdmStatusKey       |
 | complianceStateKey | Nalevingssleutel die overeenkomt met het apparaat en de nalevingsstatus |
@@ -111,7 +111,7 @@ De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbele
 
 ### <a name="example"></a>Voorbeeld
 
-|  complianceStatus  |                       Description                      |
+|  complianceStatus  |                       Beschrijving                      |
 |:------------------:|:------------------------------------------------------:|
 |    Onbekend         |    onbekend.                                                                        |
 |    Compliant       |    Voldoet aan het beleid.                                                                      |
@@ -124,7 +124,7 @@ De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbele
 ## <a name="dates"></a>dates
 De entiteit **date** vertegenwoordigt datums waarnaar wordt verwezen door meerdere datawarehouse-entiteiten.
 
-|     Eigenschap    |                       Description                      |    Voorbeeld    |
+|     Eigenschap    |                       Beschrijving                      |    Voorbeeld    |
 |:---------------:|:------------------------------------------------------:|:-------------:|
 | DateKey         | Unieke id voor deze datum in het datawarehouse. | 20160703      |
 | FullDate        | Deze datum wordt weergegeven in de volledige datum-/tijdnotatie.        | 3-7-2016, 0:00 |
@@ -147,7 +147,7 @@ De entiteit **date** vertegenwoordigt datums waarnaar wordt verwezen door meerde
 
 ## <a name="devicecategories"></a>deviceCategories
 
-|      Eigenschap      |                                    Description                                   |                Voorbeeld               |
+|      Eigenschap      |                                    Beschrijving                                   |                Voorbeeld               |
 |:------------------:|:--------------------------------------------------------------------------------:|:------------------------------------:|
 | deviceCategoryID   | De unieke id voor de apparaatcategorie.                                       | fb415ba2-7c08-41f6-a5e5-685b50da2c4c |
 | deviceCategoryKey  | Unieke id van de apparaatcategorie in het datawarehouse - surrogaatsleutel. | 1                                    |
@@ -156,7 +156,7 @@ De entiteit **date** vertegenwoordigt datums waarnaar wordt verwezen door meerde
 ## <a name="deviceconfigurationprofiledeviceactivities"></a>deviceConfigurationProfileDeviceActivities
 De entiteit **DeviceConfigurationProfileDeviceActivity** bevat het aantal apparaten met de status geslaagd, in behandeling, mislukt of fout per dag. Het aantal weerspiegelt de apparaatconfiguratieprofielen die zijn toegewezen aan de entiteit. Als een apparaat bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een apparaat twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de teller Geslaagd met één opgehoogd en wordt het apparaat in de foutstatus geplaatst. De entiteit geeft voor de afgelopen 30 dagen aan hoeveel apparaten op een bepaalde dag een bepaalde status hebben.
 
-|  Eigenschap |                                          Description                                          |  Voorbeeld |
+|  Eigenschap |                                          Beschrijving                                          |  Voorbeeld |
 |:---------:|:---------------------------------------------------------------------------------------------:|:--------:|
 | DateKey   | De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse. | 20160703 |
 | In behandeling   | Aantal unieke apparaten met de status In behandeling.                                                    | 123      |
@@ -165,9 +165,9 @@ De entiteit **DeviceConfigurationProfileDeviceActivity** bevat het aantal appara
 | Mislukt    | Aantal unieke apparaten met de status Mislukt.                                                     | 2        |
 
 ## <a name="deviceconfigurationprofileuseractivities"></a>deviceConfigurationProfileUserActivities 
-De entiteit  **DeviceConfigurationProfileUserActivity** bevat het aantal gebruikers met de status Geslaagd, In behandeling, Mislukt of Fout per dag. Het aantal weerspiegelt de apparaatconfiguratieprofielen die zijn toegewezen aan de entiteit. Als een gebruiker bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een gebruiker twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de gebruiker in de foutstatus geplaatst. De entiteit  **DeviceConfigurationProfileUserActivity** geeft voor de afgelopen dertig dagen aan hoeveel gebruikers op een bepaalde dag een bepaalde status hebben. 
+De entiteit **DeviceConfigurationProfileUserActivity** bevat het aantal gebruikers met de status Geslaagd, In behandeling, Mislukt of Fout per dag. Het aantal weerspiegelt de apparaatconfiguratieprofielen die zijn toegewezen aan de entiteit. Als een gebruiker bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een gebruiker twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de gebruiker in de foutstatus geplaatst. De entiteit **DeviceConfigurationProfileUserActivity** geeft voor de afgelopen dertig dagen aan hoeveel gebruikers op een bepaalde dag een bepaalde status hebben. 
 
-| Eigenschap  | Description  | Voorbeeld  |
+| Eigenschap  | Beschrijving  | Voorbeeld  |
 |------------|----------------------------------------------------------------------------------------------|-----------|
 | DateKey  | De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse.  | 20160703  |
 | In behandeling  | Aantal unieke gebruikers met de status In behandeling.  | 123  |
@@ -177,7 +177,7 @@ De entiteit  **DeviceConfigurationProfileUserActivity** bevat het aantal geb
 
 ## <a name="devicepropertyhistories"></a>devicePropertyHistories
 
-|          Eigenschap          |                                                                                      Description                                                                                     |
+|          Eigenschap          |                                                                                      Beschrijving                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | DateKey                    | Verwijzing naar datumtabel waarmee de dag wordt aangegeven.                                                                                                                                          |
 | DeviceKey                  | Unieke id van het apparaat in het datawarehouse - surrogaatsleutel. Dit is een verwijzing naar de apparaattabel die de Intune-apparaat-id bevat.                               |
@@ -193,7 +193,7 @@ De entiteit  **DeviceConfigurationProfileUserActivity** bevat het aantal geb
 ## <a name="deviceregistrationstates"></a>deviceRegistrationStates
 De entiteit **DeviceRegistrationState** vertegenwoordigt het registratietype waarnaar wordt verwezen door andere datawarehouse-verzamelingen. 
 
-|           Eigenschap          |                                     Description                                     |
+|           Eigenschap          |                                     Beschrijving                                     |
 |:---------------------------:|:-----------------------------------------------------------------------------------:|
 | deviceRegistrationStateID   | Unieke id voor registratiestatus                                            |
 | deviceRegistrationStateKey  | Unieke id van de registratiestatus in het datawarehouse - surrogaatsleutel |
@@ -210,7 +210,7 @@ De entiteit **DeviceRegistrationState** vertegenwoordigt het registratietype waa
 ## <a name="devices"></a>devices
 Met de entiteit **devices** worden alle geregistreerde apparaten voor beheer en de bijbehorende eigenschappen weergegeven.
 
-|          Eigenschap          |                                                                                       Description                                                                                      |
+|          Eigenschap          |                                                                                       Beschrijving                                                                                      |
 |:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | DeviceKey                  | Unieke id van het apparaat in het datawarehouse - surrogaatsleutel.                                                                                                               |
 | DeviceId                   | Unieke id van het apparaat.                                                                                                                                                     |
@@ -252,7 +252,7 @@ Met de entiteit **devices** worden alle geregistreerde apparaten voor beheer en 
 ## <a name="devicetypes"></a>deviceTypes
 De entiteit **deviceTypes** vertegenwoordigt het apparaattype waarnaar wordt verwezen door andere datawarehouse-entiteiten. Met het apparaattype wordt doorgaans het model, de fabrikant of een combinatie van beide beschreven.
 
-|    Eigenschap    |                                  Description                                 |
+|    Eigenschap    |                                  Beschrijving                                 |
 |:--------------:|:----------------------------------------------------------------------------:|
 | DeviceTypeID   | Unieke id van het apparaattype                                       |
 | DeviceTypeKey  | Unieke id van het apparaattype in het datawarehouse - surrogaatsleutel |
@@ -260,7 +260,7 @@ De entiteit **deviceTypes** vertegenwoordigt het apparaattype waarnaar wordt ver
 
 ### <a name="example"></a>Voorbeeld
 
-| deviceTypeID |        Naam       |                      Description                      |
+| deviceTypeID |        Naam       |                      Beschrijving                      |
 |:------------:|:-----------------:|:-----------------------------------------------------:|
 | -1           | Niet beschikbaar   | Het apparaattype is niet beschikbaar.                     |
 | 0            | Desktop           | Windows Desktop-apparaat                              |
@@ -289,7 +289,7 @@ De entiteit **deviceTypes** vertegenwoordigt het apparaattype waarnaar wordt ver
 ## <a name="deviceenrollmenttypes"></a>deviceEnrollmentTypes
 De entiteit **deviceEnrollmentType** geeft aan hoe een apparaat is geregistreerd. Met het registratietype wordt de registratiemethode vastgelegd. In de voorbeelden ziet u de verschillende registratietypen en hun betekenis.
 
-|         Eigenschap         |                                    Description                                    |
+|         Eigenschap         |                                    Beschrijving                                    |
 |:------------------------:|:---------------------------------------------------------------------------------:|
 | deviceEnrollmentTypeID   | Unieke id van het registratietype.                                       |
 | deviceEnrollmentTypeKey  | Unieke id van het registratietype in het datawarehouse - surrogaatsleutel. |
@@ -297,7 +297,7 @@ De entiteit **deviceEnrollmentType** geeft aan hoe een apparaat is geregistreerd
 
 ### <a name="example"></a>Voorbeeld
 
-| enrollmentTypeID |                Naam                |                                        Description                                       |
+| enrollmentTypeID |                Naam                |                                        Beschrijving                                       |
 |:----------------:|:----------------------------------:|:----------------------------------------------------------------------------------------:|
 | 0                | Onbekend                            | Registratietype is niet verzameld                                                      |
 | 1                | UserEnrollment                     | Door gebruiker geactiveerde registratie via BYOD-kanaal.                                           |
@@ -315,7 +315,7 @@ De entiteit **deviceEnrollmentType** geeft aan hoe een apparaat is geregistreerd
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
 De **IntuneManagementExtension** bevat een lijst met dagelijkse **IntuneManagementExtension**-statussen voor elk apparaat met Windows 10. De gegevens voor de afgelopen 60 dagen worden bewaard.
 
-|       Eigenschap      |                          Description                          | Voorbeeld |
+|       Eigenschap      |                          Beschrijving                          | Voorbeeld |
 |:-------------------:|:-------------------------------------------------------------:|:-------:|
 | DateKey             | De unieke id van de datum.                                | 123     |
 | TenantKey           | De unieke id van de tenant.                              | 456     |
@@ -326,7 +326,7 @@ De **IntuneManagementExtension** bevat een lijst met dagelijkse **IntuneManageme
 ## <a name="intunemanagementextensionhealthstates"></a>intuneManagementExtensionHealthStates
 De **IntuneManagementExtensionHealthState** bevat een lijst van alle mogelijke statussen van de **IntuneManagementExtension**.
 
-|      Eigenschap     |                   Description                  | Voorbeeld |
+|      Eigenschap     |                   Beschrijving                  | Voorbeeld |
 |:-----------------:|:----------------------------------------------:|:-------:|
 | ExtensionStateKey | Unieke id van de status.           | 2       |
 | ExtensionState    | De status van een IntuneManagementExtension. | Goed |
@@ -334,7 +334,7 @@ De **IntuneManagementExtensionHealthState** bevat een lijst van alle mogelijke s
 ## <a name="intunemanagementextensionversions"></a>intuneManagementExtensionVersions
 De entiteit **IntuneManagementExtensionVersion** bevat een lijst van alle versies die worden gebruikt door **IntuneManagementExtension**.
 
-|       Eigenschap      |                          Description                          | Voorbeeld |
+|       Eigenschap      |                          Beschrijving                          | Voorbeeld |
 |:-------------------:|:-------------------------------------------------------------:|:-------:|
 | ExtensionVersionKey | De unieke id van de IntuneManagementExtension-versie. | 1       |
 | ExtensionVersion    | Het versienummer, bestaande uit vier cijfers.                                   | 1.0.2.0 |
@@ -342,7 +342,7 @@ De entiteit **IntuneManagementExtensionVersion** bevat een lijst van alle versie
 ## <a name="managementagenttypes"></a>managementAgentTypes
 De entiteit **ManagementAgentTypes** vertegenwoordigt de agents die worden gebruikt om een apparaat te beheren.
 
-|         Eigenschap        |                                       Description                                       |
+|         Eigenschap        |                                       Beschrijving                                       |
 |:-----------------------:|:---------------------------------------------------------------------------------------:|
 | ManagementAgentTypeID   | Unieke id van het type beheeragent.                                         |
 | ManagementAgentTypeKey  | Unieke id van het type beheeragent in het datawarehouse - surrogaatsleutel. |
@@ -350,7 +350,7 @@ De entiteit **ManagementAgentTypes** vertegenwoordigt de agents die worden gebru
 
 ### <a name="example"></a>Voorbeeld
 
-| ManagementAgentTypeID |                Naam               |                                  Description                                 |
+| ManagementAgentTypeID |                Naam               |                                  Beschrijving                                 |
 |:---------------------:|:---------------------------------:|:----------------------------------------------------------------------------:|
 | 1                     | EAS                               | Het apparaat wordt beheerd via Exchange Active Sync                         |
 | 2                     | MDM                               | Het apparaat wordt beheerd met behulp van een MDM-agent                                   |
@@ -367,7 +367,7 @@ De entiteit **ManagementAgentTypes** vertegenwoordigt de agents die worden gebru
 ## <a name="managementstates"></a>managementStates
 De entiteit **ManagementState** verschaft informatie over de status van het apparaat. Informatie kan nuttig zijn wanneer er externe acties zijn toegepast, het apparaat is gekraakt of geroot.
 
-|       Eigenschap      |                                     Description                                    |
+|       Eigenschap      |                                     Beschrijving                                    |
 |:-------------------:|:----------------------------------------------------------------------------------:|
 | managementStateID   | Unieke id van de beheerstatus.                                       |
 | managementStateKey  | Unieke id van de beheerstatus in het datawarehouse - surrogaatsleutel. |
@@ -375,7 +375,7 @@ De entiteit **ManagementState** verschaft informatie over de status van het appa
 
 ### <a name="example"></a>Voorbeeld
 
-| managementStateID |      Naam      |                                                   Description                                                   |
+| managementStateID |      Naam      |                                                   Beschrijving                                                   |
 |:-----------------:|:--------------:|:---------------------------------------------------------------------------------------------------------------:|
 | 0                 | Beheerd        | Beheerd zonder externe acties in behandeling.                                                                       |
 | 1                 | RetirePending  | Er is een opdracht voor buiten gebruik stellen in behandeling voor het apparaat.                                                             |
@@ -393,7 +393,7 @@ De entiteit **ManagementState** verschaft informatie over de status van het appa
 ## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 De entiteit MobileAppInstallState vertegenwoordigt de installatiestatus van een mobiele toepassing nadat deze is toegewezen aan een groep apparaten, gebruikers of beide.
 
-|       Eigenschap      |                        Description                       |
+|       Eigenschap      |                        Beschrijving                       |
 |:-------------------:|:--------------------------------------------------------:|
 | AppInstallStateKey  | De unieke id van de installatiestatus van de app voor uw account. |
 | AppInstallState     | Enum-waarde van de installatiestatus van de app.                     |
@@ -402,7 +402,7 @@ De entiteit MobileAppInstallState vertegenwoordigt de installatiestatus van een 
 ## <a name="mobileappinstallstatuscounts"></a>mobileAppInstallStatusCounts
 Vertegenwoordigt de installatiestatus van een mobiele app voor een bepaald doelapparaattype met behulp van Mobile Application Management via Microsoft Intune.
 
-|      Eigenschap      |                                                          Description                                                          |
+|      Eigenschap      |                                                          Beschrijving                                                          |
 |:------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|
 | DateKey            | Sleutel van de datum waarop de installatiestatus van de app werd vastgelegd.                                                                     |
 | AppKey             | Sleutel van de mobiele app die wordt gebruikt om een exemplaar van AppRevision te identificeren.                                                          |
@@ -414,7 +414,7 @@ Vertegenwoordigt de installatiestatus van een mobiele app voor een bepaald doela
 ## <a name="ownertypes"></a>ownerTypes
 Met de entiteit **ownerType** wordt aangegeven of een apparaat bedrijfseigendom of privé-eigendom is of dat niet bekend is wie de eigenaar is.
 
-|    Eigenschap   |                                                                                     Description                                                                                    |           Voorbeeld          |
+|    Eigenschap   |                                                                                     Beschrijving                                                                                    |           Voorbeeld          |
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Unieke id van het type eigenaar.                                                                                                                                               |                            |
 | ownerTypeKey  | Unieke id van het type eigenaar in het datawarehouse - surrogaatsleutel.                                                                                                       |                            |
@@ -423,7 +423,7 @@ Met de entiteit **ownerType** wordt aangegeven of een apparaat bedrijfseigendom 
 ## <a name="policies"></a>policies
 De entiteit **Policy** bevat apparaatconfiguratieprofielen, app-configuratieprofielen en nalevingsbeleid. U kunt het beleid met MDM (Mobile Device Management) toewijzen aan een groep in uw onderneming.
 
-|          Eigenschap          |                                                                       Description                                                                      |                Voorbeeld               |
+|          Eigenschap          |                                                                       Beschrijving                                                                      |                Voorbeeld               |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
 | PolicyKey                  | Een unieke sleutel voor het beleid in het datawarehouse.                                                                                              | 123                                  |
 | PolicyId                   | Een unieke id van het beleid in het datawarehouse.                                                                                                 | b66bc706-ffff-7437-0340-032819502773 |
@@ -437,7 +437,7 @@ De entiteit **Policy** bevat apparaatconfiguratieprofielen, app-configuratieprof
 ## <a name="policydeviceactivities"></a>policyDeviceActivities
 In de volgende tabel wordt het aantal apparaten met de status Geslaagd, In behandeling, Mislukt of Fout per dag weergegeven. Het aantal weerspiegelt de gegevens per beleidstypeprofiel. Als een apparaat bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een apparaat twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de teller Geslaagd met één opgehoogd en wordt het apparaat in de foutstatus geplaatst. De entiteit **policyDeviceActivity** geeft voor de afgelopen 30 dagen aan hoeveel apparaten op een bepaalde dag een bepaalde status hebben.
 
-|  Eigenschap |                                           Description                                           |        Voorbeeld        |
+|  Eigenschap |                                           Beschrijving                                           |        Voorbeeld        |
 |:---------:|:-----------------------------------------------------------------------------------------------:|:---------------------:|
 | DateKey   | De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse. | 20160703              |
 | In behandeling   | Aantal unieke apparaten met de status In behandeling.                                                    | 123                   |
@@ -448,7 +448,7 @@ In de volgende tabel wordt het aantal apparaten met de status Geslaagd, In behan
 
 ## <a name="policyplatformtypes"></a>policyPlatformTypes
 
-|        Eigenschap        |                      Description                      |     Voorbeeld    |
+|        Eigenschap        |                      Beschrijving                      |     Voorbeeld    |
 |:----------------------:|:-----------------------------------------------------:|:--------------:|
 | PolicyPlatformTypeKey  | De unieke sleutel voor het platformtype van het beleid.        | 20170519       |
 | PolicyPlatformTypeId   | De unieke id voor het platformtype van het beleid. | 1              |
@@ -457,7 +457,7 @@ In de volgende tabel wordt het aantal apparaten met de status Geslaagd, In behan
 ## <a name="policytypeactivities"></a>policyTypeActivities
 De entiteit **PolicyTypeActivity** bevat het cumulatieve aantal apparaten met de status Geslaagd, In behandeling, Mislukt of Fout. Deze statuswaarden verwijzen naar een apparaatconfiguratieprofiel, app-configuratieprofiel of nalevingsbeleid per dag.
 
-|    Eigenschap   |                                          Description                                          |           Voorbeeld           |
+|    Eigenschap   |                                          Beschrijving                                          |           Voorbeeld           |
 |:-------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
 | DateKey       | De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse. | 20160703                    |
 | PolicyKey     | Beleidssleutel, kan worden samengevoegd met Policy om de naam van het beleid op te halen.                                | Windows 10 baseline         |
@@ -470,7 +470,7 @@ De entiteit **PolicyTypeActivity** bevat het cumulatieve aantal apparaten met de
 ## <a name="policytypes"></a>policyTypes
 De entiteit **PolicyType** bevat typen apparaatconfiguratieprofielen, app-configuratieprofielen en nalevingsbeleid. U kunt het beleid met MDM (Mobile Device Management) toewijzen aan een groep in uw onderneming.
 
-|    Eigenschap    |                       Description                      |            Voorbeeld            |
+|    Eigenschap    |                       Beschrijving                      |            Voorbeeld            |
 |:--------------:|:------------------------------------------------------:|:-----------------------------:|
 | PolicyTypeId   | Een unieke id van het beleid in het bronsysteem.  | 123                           |
 | PolicyTypeKey  | Een unieke id van het beleid in het datawarehouse. | 1                             |
@@ -479,7 +479,7 @@ De entiteit **PolicyType** bevat typen apparaatconfiguratieprofielen, app-config
 ## <a name="policyuseractivities"></a>policyUserActivities
 In de volgende tabel wordt het aantal gebruikers met de status Geslaagd, In behandeling, Mislukt of Fout per dag weergegeven. Het aantal weerspiegelt de gegevens per beleidstypeprofiel. Als een gebruiker bijvoorbeeld voor alle toegewezen beleidsregels de status Geslaagd heeft, wordt de teller voor die status met één opgehoogd voor die dag. Als aan een gebruiker twee profielen zijn toegewezen, één met de status Geslaagd en het andere profiel met de status Fout, wordt de gebruiker in de foutstatus geplaatst. De entiteit **PolicyUserActivity** geeft voor de afgelopen 30 dagen aan hoeveel gebruikers op een bepaalde dag een bepaalde status hebben.
 
-|  Eigenschap |                                          Description                                          |       Voorbeeld       |
+|  Eigenschap |                                          Beschrijving                                          |       Voorbeeld       |
 |:---------:|:---------------------------------------------------------------------------------------------:|:-------------------:|
 | DateKey   | De datum waarop het inchecken van het apparaatconfiguratieprofiel is vastgelegd in het datawarehouse. | 20160703            |
 | In behandeling   | Aantal unieke apparaten met de status In behandeling.                                                    | 123                 |
@@ -490,7 +490,7 @@ In de volgende tabel wordt het aantal gebruikers met de status Geslaagd, In beha
 ## <a name="termsandconditions"></a>termsAndConditions
 De entiteit **termsAndConditions** vertegenwoordigt de metagegevens en inhoud van een set Gebruikersvoorwaarden. De inhoud van de gebruikersvoorwaarden wordt aan gebruikers weergegeven bij hun eerste poging tot inschrijven bij Intune en vervolgens na bewerkingen waarvoor een beheerder re-acceptatie vereist. Op deze manier kunnen beheerders bepalingen communiceren waarmee een gebruiker moet instemmen om apparaten in te schrijven bij Intune.
 
-|    Eigenschap        |    Description    |    Voorbeeld        |
+|    Eigenschap        |    Beschrijving    |    Voorbeeld        |
 |----------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 |    termsAndConditionsKey    |    Een sleutel die overeenkomt met een vermelding in de verzameling 'userTermsAndConditionsAcceptances'    |    123    |
 |    termsAndCondidionsId    |    De id voor deze gebruikersvoorwaardenvermelding    |    276edcb7-7440-4339-b6c5-8b6fc556fee6    |
@@ -499,7 +499,7 @@ De entiteit **termsAndConditions** vertegenwoordigt de metagegevens en inhoud va
 |    description    |    De beschrijving voor deze voorwaarden.     |         |
 |    title    |    De titel voor deze voorwaarden.     |    Bedrijfsbeleid voor apparaatbeheer        |
 |    summaryOfTerms    |    De samenvatting van de voorwaarden die aan de gebruiker worden gepresenteerd.     |    Ik ga akkoord met de voorwaarden.    |
-|    termsAndConditionsBodyText    |    De hoofdtekst voor deze voorwaarden.       |    * Apparaatversleuteling * Pincode van 6 cijfers afdwingen    |
+|    termsAndConditionsBodyText    |    De hoofdtekst voor deze voorwaarden.       |    *Apparaatversleuteling*: pincode van 6 cijfers afdwingen    |
 |    isDeleted    |    De waarde True of false om aan te duiden of deze waarde is verwijderd.     |    False    |
 |    startDateInclusiveUTC    |    De begindatum van deze voorwaarden.     |    23-08-2018, 4:01:34 AM    |
 |    endDateEclusiveUTC    |    De einddatum van deze voorwaarden.     |    31-12-9999 12:00:00 AM    |
@@ -507,7 +507,7 @@ De entiteit **termsAndConditions** vertegenwoordigt de metagegevens en inhoud va
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 De entiteit **UserDeviceAssociation** bevat gebruikersapparaatkoppelingen in uw organisatie.
 
-|        Naam        |                                             Description                                            |     Voorbeeld     |
+|        Naam        |                                             Beschrijving                                            |     Voorbeeld     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | Een unieke id van gebruiker in het datawarehouse.   (surrogaatsleutel).                            | 123             |
 | DeviceKey          | Een unieke id van het apparaat in het datawarehouse.                                             | 123             |
@@ -520,7 +520,7 @@ De entiteit **user** bevat een lijst van alle Azure Active Directory-gebruikers 
 
 De entiteitverzameling **user** bevat gebruikersgegevens. Deze records bevatten gebruikersstatussen gedurende de periode van gegevensverzameling, ook als de gebruiker is verwijderd. Een gebruiker kan bijvoorbeeld worden toegevoegd aan Intune en vervolgens ergens gedurende de afgelopen maand zijn verwijderd. Ook al is deze gebruiker niet aanwezig op het moment dat het rapport wordt gegenereerd, toch zijn de gebruiker en de status aanwezig in de gegevens van de vorige maand. U kunt een rapport maken dat de duur van de historische aanwezigheid van de gebruiker in uw gegevens weergeeft.
 
-|          Eigenschap          |                                                                                                           Description                                                                                                          |                Voorbeeld               |
+|          Eigenschap          |                                                                                                           Beschrijving                                                                                                          |                Voorbeeld               |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
 | UserKey                    | De unieke id van de gebruiker in het datawarehouse - surrogaatsleutel.                                                                                                                                                         | 123                                  |
 | UserId                     | De unieke id van de gebruiker, vergelijkbaar met UserKey, maar dit is een natuurlijke sleutel.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
@@ -534,7 +534,7 @@ De entiteitverzameling **user** bevat gebruikersgegevens. Deze records bevatten 
 ## <a name="usertermsandconditionsacceptances"></a>userTermsAndConditionsAcceptances
 De entiteit **userTermsAndConditionsAcceptance** vertegenwoordigt de acceptatiestatus van een bepaalde set voorwaarden door een bepaalde gebruiker. Gebruikers moeten de meest recente versie van de voorwaarden accepteren om toegang te behouden tot de bedrijfsportal.
 
-|    Eigenschap    |    Description    |    Voorbeeld    |
+|    Eigenschap    |    Beschrijving    |    Voorbeeld    |
 |-------------------------------|--------------------------------------------------------------------------------|----------------------------|
 |    dateKey    |    Een sleutel die overeenkomt met de datumwaarden in de verzameling 'dates'.     |    20180823    |
 |    userKey    |    Een gebruikerssleutel toegewezen aan een gebruiker in de verzameling 'users'.     |    20000    |
@@ -545,7 +545,7 @@ De entiteit **userTermsAndConditionsAcceptance** vertegenwoordigt de acceptaties
 ## <a name="vppprogramtypes"></a>vppProgramTypes 
 De entiteit **vppProgramTypes** bevat een lijst van mogelijke VPP-programmatypen voor een app.
 
-|      Eigenschap      |          Description         |
+|      Eigenschap      |          Beschrijving         |
 |:------------------:|:----------------------------:|
 | VppProgramTypeID   | De id voor het type.           |
 | VppProgramTypeKey  | De surrogaatsleutel voor de sleutel. |
@@ -553,7 +553,7 @@ De entiteit **vppProgramTypes** bevat een lijst van mogelijke VPP-programmatypen
 
 ### <a name="example"></a>Voorbeeld
 
-|             VppProgramID             |         Naam        | Description                |
+|             VppProgramID             |         Naam        | Beschrijving                |
 |:------------------------------------:|:-------------------:|----------------------------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft           | Het VPP-programma van Microsoft. |
 | 00000000-0000-0000-0000-000000000000 | Nog niet beschikbaar | Standaardwaarde, geen VPP.   |

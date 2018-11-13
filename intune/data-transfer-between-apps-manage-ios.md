@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 23e18ef2d7870a22699d898ad937febf9e61b804
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 491d2884f73d9178f54b6b2861bfe6f248c41c63
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231648"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236557"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
 ## <a name="manage-ios-apps"></a>iOS-apps beheren
@@ -37,7 +37,7 @@ Een app-beveiligingsbeleid kan worden gebruikt met de iOS-functie **Openen in be
 
 -   **Apparaten die eigendom zijn van werknemers en die niet worden beheerd met een MDM-oplossing:** u kunt de app-beveiligingsbeleidsinstellingen instellen op **App toestaan om alleen gegevens over te dragen naar door beleid beheerde apps**. Het gedrag Open-In in een door beleid beheerde app presenteert alleen andere door beleid beheerde apps als een optie voor delen. Als een gebruiker een met beleid beveiligd bestand als bijlage van OneDrive via de systeemeigen e-mail probeert te verzenden, is dat bestand onleesbaar.
 
--   **Apparaten die worden beheerd met Intune:** voor apparaten die zijn ingeschreven in Intune, wordt de gegevensoverdracht tussen apps met een app-beveiligingsbeleid en andere beheerde iOS-apps die via Intune zijn geïmplementeerd, automatisch toegestaan. Schakel de instelling **Toestaan dat app gegevens overdraagt naar andere apps: Door beleid beheerde apps** in om gegevensoverdracht toe te staan tussen apps met een app-beveiligingsbeleid. U kunt de functie **Openen in beheer** gebruiken om gegevensoverdracht te beheren tussen apps die via Intune zijn geïmplementeerd.   
+-   **Apparaten die worden beheerd met Intune:** voor apparaten die zijn ingeschreven bij Intune wordt de gegevensoverdracht tussen apps met een beveiligingsbeleid voor apps en andere beheerde iOS-apps die via Intune zijn geïmplementeerd automatisch toegestaan. Als u wilt opgeven hoe u gegevensoverdracht naar andere apps wilt toestaan, schakelt u de instelling **App mag gegevens overdragen naar andere apps** in en kiest u het gewenste deelniveau. Als u wilt opgeven hoe u apps wilt toestaan om gegevens te ontvangen van andere apps, schakelt u de instelling **App mag gegevens ontvangen van andere apps** in en kiest u het gewenste niveau voor het ontvangen van gegevens. U kunt de functie **Openen in beheer** gebruiken om gegevensoverdracht te beheren tussen apps die via Intune zijn geïmplementeerd. Zie [Instellingen voor herlocatie van gegevens](app-protection-policy-settings-ios.md#data-relocation-settings) voor meer informatie over het ontvangen en delen van app-gegevens.   
 
 -   **Apparaten die worden beheerd met een MDM-oplossing van derden:** met behulp van de iOS-functie **Openen in beheer** kunt u de gegevensoverdracht beperken tot alleen beheerde apps.
 Als u ervoor wilt zorgen dat apps die u implementeert met behulp van de MDM-oplossing van derden ook onderhevig zijn aan het app-beveiligingsbeleid dat u in Intune hebt geconfigureerd, configureert u de UPN-gebruikersinstelling zoals beschreven in het overzicht [UPN-gebruikersinstelling configureren](#configure-user-upn-setting-for-third-party-emm).  Wanneer apps zijn geïmplementeerd met de UPN-gebruikersinstelling, wordt het app-beveiligingsbeleid toegepast op de app wanneer de eindgebruiker zich aanmeldt met zijn of haar werkaccount.

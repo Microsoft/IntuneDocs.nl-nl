@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fae8faf54c7b41bb547912853285cf09ec9c46d5
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 953b468337d3317027344573d147b65d765e3db3
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828105"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236438"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>E-mail automatiseren en acties voor niet-compatibele apparaten toevoegen - Intune
 
@@ -71,7 +71,7 @@ Maak een sjabloon voor berichtmeldingen om een e-mail naar uw gebruikers te vers
 
    ![Voorbeeld van een compatibel meldingsbericht in Intune](./media/actionsfornoncompliance-1.PNG)
 
-4. Nadat u klaar bent met het toevoegen van informatie, kiest u **Maken**. De sjabloon voor het meldingsbericht is klaar voor gebruik.
+4. Nadat u klaar bent met het toevoegen van informatie, kiest u **Maken**. De sjabloon voor het meldingsbericht is klaar voor gebruik. Let op: het logo dat u uploadt als onderdeel van de huisstijl voor de bedrijfsportal, zal worden gebruikt voor e-mailsjablonen. Zie [Aanpassing bedrijfshuisstijl](company-portal-app.md#company-identity-branding-customization) voor meer informatie over de huisstijl voor de bedrijfsportal.  
 
 > [!NOTE]
 > U kunt ook een eerder gemaakte meldingssjabloon bewerken.

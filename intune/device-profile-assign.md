@@ -14,12 +14,12 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa1a1b1085d196411a03a6228eefa808399397ea
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 439c89f7b0158111f63d2d8327291c2b5a5c1e38
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024801"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298068"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Gebruikers- en apparaatprofielen toewijzen in Microsoft Intune
 
@@ -48,9 +48,6 @@ Stel dat u een apparaatprofiel wilt toewijzen aan alle apparaten in uw organisat
 Bij uitsluiting wordt alleen gekeken naar de directe leden van de groepen en worden geen apparaten opgenomen die aan een gebruiker zijn gekoppeld. Het apparaat wordt echter niet toegepast op apparaten zonder gebruiker. Dit is het geval omdat die apparaten geen relatie hebben met de groep **Alle gebruikers**.
 
 Als u **Alle apparaten** opneemt, maar **Alle gebruikers** uitsluit, ontvangen alle apparaten het beleid. De bedoeling is hier om dit beleid niet toe te wijzen aan apparaten waaraan een gebruiker is gekoppeld. Hierbij worden echter de apparaten niet uitgesloten, omdat bij uitsluiten alleen directe groepsleden worden vergeleken.
-
->[!TIP]
->Uitsluitingen zijn niet beschikbaar voor nalevingsbeleid of app-toewijzing. Als u leden wilt uitsluiten van een toewijzing, kunt u de toewijzingen **Beschikbaar** en **Niet van toepassing** gebruiken. Stel dat u een app toewijst aan **Alle zakelijke gebruikers** met de reden **Beschikbaar**, en aan **Senior Management** met de reden **Niet van toepassing**. De app wordt dan toegewezen aan alle gebruikers *behalve* gebruikers in de groep **Senior Management**. Als u de app toewijst aan **Alle zakelijke gebruikers** met de reden **Vereist**, worden de gebruikers in de groep **Senior Management** ook ingesloten.
 
 ## <a name="next-steps"></a>Volgende stappen
 Zie [Apparaatprofielen bewaken](device-profile-monitor.md) voor informatie over het bewaken van apparaatprofieltoewijzingen.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
-ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
+ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307403"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236285"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -60,28 +60,48 @@ Voer de ondersteuningsinformatie van uw bedrijf in zodat u werknemer een contact
 | **Aanvullende informatie**| 120 | Wordt weergegeven op de pagina **Contact opnemen met IT**. |
 
 
-## <a name="company-branding-customization"></a>Aanpassing bedrijfshuisstijl       
-U kunt uw bedrijfsportal aanpassen met uw bedrijfslogo, bedrijfsnaam, themakleur en achtergrond. Als u snel een preview van een huismerkconfiguratie wilt weergeven zonder testapparaat, gaat u naar [portal.manage.microsoft.com](https://portal.manage.microsoft.com). Houd er rekening mee dat het logo dat u uploadt, wordt gebruikt voor e-mailsjablonen.      
+## <a name="company-identity-branding-customization"></a>Aanpassing bedrijfshuisstijl      
+U kunt uw bedrijfsportal aanpassen met uw bedrijfslogo, bedrijfsnaam, themakleur en achtergrond.     
 
-### <a name="theme-color"></a>Themakleur
+### <a name="theme-color-and-logo-in-the-company-portal"></a>Themakleur en logo in de bedrijfsportal
 Pas een themakleur toe op de bedrijfsportal. Selecteer een standaardkleur of voer een 6-cijferige hexadecimale code in voor een aangepaste kleur.
 
 |Veldnaam|Meer informatie|
 |---|---|
-|**Kleurtype**| Selecteer een themakleur die u wilt toepassen op de bedrijfsportal. U kunt een standaardkleur kiezen of een specifieke hexadecimale code invoeren. |
-|**Kleur kiezen** of **Hexadecimale kleurcode**| Selecteer een themakleur die u wilt toepassen op de bedrijfsportal. U kunt een standaardkleur kiezen of een specifieke hexadecimale code invoeren. Deze opties zijn afhankelijk van het **Kleurtype** dat u selecteert.  |
+|**Een standaardkleur selecteren of een 6-cijferige hexadecimale code invoeren**| Kies **Standard** om een kleur op zicht te selecteren. Kies **Aangepast** om een specifieke kleur te selecteren op basis van een hexadecimale code.|
+|**Themakleur kiezen**| Selecteer een themakleur die u wilt toepassen op de bedrijfsportal. U kunt een standaardkleur kiezen of een specifieke hexadecimale code invoeren. |
+|**Weergave**| Geef op of **het logo en de naam van het bedrijf**, **alleen het bedrijfslogo** of **alleen de bedrijfsnaam** moet worden weergegeven. |
+|**Het bedrijfslogo uploaden**|U kunt het bedrijfslogo uploaden dat u in uw bedrijfsportal wilt weergeven. De tekstkleur wordt automatisch gekozen om een zo hoog mogelijk contrast te bieden. Upload voor de beste weergave een logo met een transparante achtergrond.<p><ul><li>Maximale afbeeldingsgrootte: 400 px x 400 px</li><li>Maximale bestandsgrootte: 750 kB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
 
-### <a name="company-logo"></a>Bedrijfslogo
-Upload uw bedrijfslogo zodat deze overal in Intune zichtbaar is.
+Nadat u het logo hebt geüpload, wordt dit met de themakleur weergegeven in het voorbeeldgebied. Als u ervoor kiest om uw bedrijfsnaam weer te geven, wordt deze in het zwart of het wit weergegeven in de bedrijfsportal. De kleur wordt automatisch gekozen op basis van uw themakleur, zodat het hoogst mogelijke contrast wordt bereikt. In het voorbeeldgebied op het scherm wordt uw bedrijfsnaam niet weergegeven. 
+
+### <a name="logo-to-use-on-white-or-light-backgrounds"></a>Logo dat moet worden gebruikt op een witte of lichte achtergrond
+Kies een logo dat er het beste uitziet op een witte of lichte achtergrond.
 
 |Veldnaam|Meer informatie|
 |---|---|
-|**Bedrijfslogo weergeven**|Als u deze optie inschakelt, kunt u het bedrijfslogo uploaden dat u in uw bedrijfsportal wilt weergeven. U kunt twee logo's uploaden: één dat wordt weergegeven wanneer de achtergrond van de bedrijfsportal wit is en één dat wordt weergegeven wanneer de achtergrond van de bedrijfsportal de door u geselecteerde themakleur heeft. |
-|**Een logo uploaden dat u wilt gebruiken op achtergronden met een themakleur**| Deze optie is beschikbaar als u ervoor kiest om het bedrijfslogo weer te geven. Het logo moet een PNG- of JPG-bestand zijn met een resolutie van maximaal 400 x 400 pixels en een grootte van maximaal 750 kB. |
-|**Logo uploaden om te gebruiken op een lichte achtergrond**| Deze optie is beschikbaar als u ervoor kiest om het bedrijfslogo weer te geven. Het logo moet een PNG- of JPG-bestand zijn met een resolutie van maximaal 400 x 400 pixels en een grootte van maximaal 750 kB. |
-|**Bedrijfsnaam naast logo weergeven**| Selecteer deze optie om de ingevoerde bedrijfsnaam naast het geüploade logo weergeven. |
+|**Uw logo uploaden**| Deze optie is beschikbaar als u ervoor kiest om het bedrijfslogo weer te geven. Upload voor de beste weergave een logo met een transparante achtergrond.<p><ul><li>Maximale afbeeldingsgrootte: 400 px x 400 px</li><li>Maximale bestandsgrootte: 750 kB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
 
-Nadat u uw wijzigingen hebt opgeslagen, kunt u boven in de blade **Een voorbeeld van uw instellingen bekijken in de Intune-webportal** kiezen om weer te geven hoe uw configuraties eruit gaan zien.
+### <a name="brand-image-for-company-portal"></a>Merkafbeelding toevoegen voor de bedrijfsportal
+
+Geef een merkafbeelding weer die de huisstijl van uw bedrijf uitstraalt. Ondersteuning voor een merkafbeelding wordt toegevoegd aan de bedrijfsportal-apps. Desondanks is de afbeelding mogelijk niet op alle platformen zichtbaar.
+
+|Veldnaam|Meer informatie|
+|---|---|
+|**Uw merkafbeelding uploaden**| Deze optie is beschikbaar zodat een achtergrondafbeelding kan worden weergegeven op de profielpagina van de gebruiker in de bedrijfsportal-app.<p><ul><li>Aanbevolen breedte van afbeelding: groter dan 1125 px, maar niet minder dan 640 px</li><li>Maximale afbeeldingsgrootte: 1,3 MB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
+
+Met de juiste merkafbeelding kan het vertrouwen van de gebruiker in de bedrijfsportal-app worden versterkt, doordat de app uw huisstijl weerspiegelt. Hier volgen enkele tips die u kunt gebruiken voor het verkrijgen, kiezen en optimaliseren van een afbeelding voor de bedrijfsportal. 
+
+- Neem contact op met uw marketing- of huisstijlafdeling. Mogelijk beschikken zij al over een goedgekeurde set merkafbeeldingen. Wellicht kunnen ze u ook helpen bij het naar behoefte optimaliseren van afbeeldingen. 
+
+- Houd rekening met zowel liggende als staande weergave. De afbeelding moet voldoende achtergrond rond het centrale punt hebben. De afbeelding wordt mogelijk verschillend bijgesneden op basis van apparaatgrootte en -oriëntatie. 
+
+- Vermijd het gebruik van een standaardafbeelding. De afbeelding moet het merk en de identiteit van uw bedrijf uitstralen, zoals de gebruikers dit kennen. Als u geen geschikte afbeelding hebt, kunt u nog beter helemaal geen afbeelding gebruiken, dan te kiezen voor een afbeelding die voor de gebruiker geen betekenis heeft. 
+
+- Verwijder onnodige metagegevens. Afbeeldingsbestanden bevatten soms metagegevens, zoals een cameraprofiel, geografische locatie, titel, bijschrift, enzovoort. Gebruik een hulpprogramma voor afbeeldingoptimalisatie voor het verwijderen van deze gegevens. Zo blijft de kwaliteit behouden en kunt u voldoet aan de maximale bestandsgrootte. 
+
+Nadat u uw wijzigingen hebt opgeslagen, kiest u in de Intune-webportal, boven in de blade **Een voorbeeld van uw instellingen bekijken** om te zien hoe uw configuraties eruit gaan zien. Houd er rekening mee dat u de merkafbeelding alleen kunt bekijken op een iOS-apparaat, en niet in de Intune-webportal. 
+
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Sneltoetsen voor Windows-bedrijfsportal
 

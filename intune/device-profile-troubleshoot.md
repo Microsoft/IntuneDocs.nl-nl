@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312946"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679301"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Veelvoorkomende problemen met en oplossingen voor apparaatprofielen in Microsoft Intune
 
@@ -130,9 +130,9 @@ Wanneer u een profiel verwijdert of een apparaat verwijdert uit een groep waaraa
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Ik heb een beperkingsprofiel voor apparaten gewijzigd, maar de wijzigingen zijn niet doorgevoerd
 Bij Windows Phone-apparaten wordt niet toegestaan dat de beveiligingsbeleidsregels die via MDM of EAS zijn ingesteld, worden teruggebracht naar een lager niveau wanneer u die eenmaal hebt ingesteld. U stelt bijvoorbeeld het **minimumaantal tekens voor het wachtwoord** in op 8 en wilt dit vervolgens terugbrengen tot 4. Het meer beperkende profiel is al toegepast op het apparaat.
 
-Afhankelijk van het apparaatplatform moet u het beveiligingsbeleid opnieuw instellen als u de beveiliging van het profiel naar beneden wilt bijstellen. Veeg bijvoorbeeld in Windows op het bureaublad vanaf rechts over het scherm om **Instellingen** > **Configuratiescherm** te selecteren. Selecteer de applet **Gebruikersaccounts** .
+U moet het beveiligingsbeleid opnieuw instellen als u de beveiliging van het profiel naar beneden wilt bijstellen. Veeg bijvoorbeeld in Windows 8.1 op het bureaublad vanaf rechts over het scherm om **Instellingen** > **Configuratiescherm** te selecteren. Selecteer de applet **Gebruikersaccounts** . In het navigatiemenu aan de linkerkant vindt u onderaan de koppeling **Beveiligingsbeleid opnieuw instellen**. Selecteer deze koppeling en kies vervolgens **Beleid opnieuw instellen**.
 
-In het navigatiemenu aan de linkerkant vindt u onderaan de koppeling **Beveiligingsbeleid opnieuw instellen**. Selecteer deze koppeling en kies vervolgens **Beleid opnieuw instellen**. Andere MDM-apparaten, bijvoorbeeld met Android, Windows Phone 8.1 en hoger of iOS, moeten mogelijk buiten gebruik worden gesteld en weer opnieuw bij de service worden ingeschreven voordat u een minder beperkend profiel kunt toepassen.
+Andere MDM-apparaten, bijvoorbeeld met Android, Windows Phone 8.1 en hoger of Windows 10, moeten mogelijk buiten gebruik worden gesteld en weer opnieuw bij de service worden ingeschreven voordat u een minder beperkend profiel kunt toepassen.
 
 ## <a name="next-steps"></a>Volgende stappen
 Extra hulp nodig? Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md).

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 03d52c53b6e3152a5a262ca8bd6d158d5980b2c8
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425288"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236387"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Windows Holographic- en HoloLens-apparaten beheren en gebruiken met Intune
 
@@ -68,6 +68,10 @@ Met Intune kunt u apps toevoegen aan uw apparaten met Windows Holographic for Bu
 
 Microsoft Intune kan universele Windows-apps implementeren op Microsoft HoloLens-apparaten waarop Windows Holographic for Business wordt uitgevoerd. U kunt uw app-pakketten rechtstreeks uploaden in Intune Azure Portal of implementeren vanuit de Microsoft Store voor Bedrijven. Zie de volgende artikelen voor meer informatie:
 - Zie [Windows Line-Of-Business-apps toevoegen aan Microsoft Intune](lob-apps-windows.md) voor het implementeren van Line-of-Business-apps (LOB) met behulp van Intune Azure Portal.
+
+    > [!NOTE]
+    > In Intune is een maximale pakketgrootte van 8 GB toegestaan. Deze pakketgrootte is alleen beschikbaar voor LOB-apps die zijn geüpload naar Intune.
+
 - Zie [Apps die u hebt aangeschaft in Microsoft Store voor Bedrijven beheren met Microsoft Intune](windows-store-for-business.md) voor het implementeren van apps via de Microsoft Store voor Bedrijven. 
 - Zie [Wat is appbeheer in Microsoft Intune?](app-management.md) voor meer informatie over het beheer van apps met Microsoft Intune.
 - Zie [Apps met gemengde realiteit voor Microsoft HoloLens](https://www.microsoft.com/hololens/apps) voor meer informatie over het ontwikkelen van apps voor Microsoft HoloLens. 

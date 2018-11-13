@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 66426e9e22c2624b9828440906e3b1b947f4b60a
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581586"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410766"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Snelstart: een aangepaste rol maken en toewijzen
 
@@ -47,7 +47,7 @@ Tijdens het maken van een aangepaste rol kunt u machtigingen instellen voor een 
 
 Voordat de beveiligingsoperator gebruik kan maken van de nieuwe machtigingen moet u de rol toewijzen aan een groep die de beveiligingsgebruiker bevat.
 
-1. Kies in Intune **Rollen** > **Alle rollen** > **Externe apparaathelpdesk**.
+1. Kies in Intune **Rollen** > **Alle rollen** > **Beveiligingsbewerkingen**.
 2. Bij **Intune-rollen** kiest u **Toewijzingen** > **Toewijzen**.
 3. In het vak **Toewijzingsnaam** voert u *Sec ops* in.
 4. Kies **Lid (groepen)** > **Toevoegen**.

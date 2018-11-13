@@ -15,36 +15,50 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5460db2d646d8bd417baa50d8188acbf69a251d
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 08d76d6b76ee7838633435ae095c171e0a3cdf8e
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827986"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236489"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Een pagina voor de status van de inschrijving instellen
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Tijdens de installatie van het apparaat wordt op de inschrijvingsstatuspagina informatie over de installatie weergegeven op het apparaat. Sommige apps, profielen en certificaten zijn mogelijk niet volledig geïnstalleerd tegen de tijd dat een gebruiker is ingeschreven. Een statuspagina is handig voor gebruikers om de status van hun apparaat tijdens en na de inschrijving te bekijken. U kunt de statuspagina voor alle gebruikers inschakelen of profielen maken om u op specifieke gebruikersgroepen te richten.  U kunt profielen zo instellen dat de installatievoortgang wordt weergegeven, dat gebruik wordt geblokkeerd tot de installatie is voltooid, dat opnieuw instellen wordt toegestaan, enzovoort.
+Tijdens de installatie van het apparaat wordt op de pagina Status van de registratie informatie over de installatie weergegeven op het apparaat. Sommige toepassingen, profielen en certificaten zijn mogelijk niet geïnstalleerd op het moment dat een gebruiker de out-of-box-registratie op het apparaat voltooit. Een pagina Status van de registratie is handig voor gebruikers om de status van hun apparaat tijdens de installatie van het apparaat te bekijken. U kunt voor de pagina Status van de registratie meerdere profielen maken en deze toepassen op verschillende groepen. Profielen kunnen worden ingesteld op:
+- De voortgang van de installatie weergeven.
+- Gebruik blokkeren totdat de installatie is voltooid.
+- Opgeven wat een gebruiker kan doen als de installatie van het apparaat mislukt.
+
+U kunt ook de volgorde van prioriteit voor elk profiel instellen om problemen met conflicterende profieltoewijzingen aan dezelfde gebruiker of hetzelfde apparaat te voorkomen.
+
  
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>De standaardpagina Status van de inschrijving voor alle gebruikers inschakelen
 
-Volg de onderstaande stappen om de pagina Status van de inschrijving in te schakelen voor alle eindgebruikers.
+Volg de onderstaande stappen om de pagina Status van de registratie in te schakelen.
  
-1.  In [Intune](https://aka.ms/intuneportal) kiest u **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving (preview)**.
-2.  In de blade **Pagina Status van de inschrijving** kiest u **Standaard** > **Instellingen**.
-3.  Bij **Voortgang van installatie van app en profiel weergeven** kiest u **Ja**.
-4.  Kies de andere instellingen die u wilt inschakelen en kies vervolgens **Opslaan**.
+1. In [Intune](https://aka.ms/intuneportal) kiest u **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving (preview)**.
+2. In de blade **Pagina Status van de inschrijving** kiest u **Standaard** > **Instellingen**.
+3. Bij **Voortgang van installatie van app en profiel weergeven** kiest u **Ja**.
+4. Kies de andere instellingen die u wilt inschakelen en kies vervolgens **Opslaan**.
 
-## <a name="create-enrollment-status-page-profile-to-target-specific-users"></a>Profiel voor pagina Status van de inschrijving maken om u op specifieke gebruikers te richten
+## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Profiel voor pagina Status van de registratie maken en dit aan een groep toewijzen
 
-1.  In [Intune](https://aka.ms/intuneportal) kiest u **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving (preview)** > **Profiel maken**.
+1. In [Intune](https://aka.ms/intuneportal) kiest u **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving (preview)** > **Profiel maken**.
 2. Geef een **naam** en **beschrijving** op.
 3. Kies **Maken**.
 4. Kies het nieuwe profiel in de lijst **Pagina Status van de inschrijving**.
 5. Kies **Toewijzingen** > **Groepen selecteren** > kies de groepen waarvoor u dit profiel wilt instellen > **Selecteren** > **Opslaan**.
 6. Kies **Instellingen** > kies de instellingen die u op dit profiel wilt toepassen > **Opslaan**.
+
+## <a name="set-the-enrollment-status-page-priority"></a>De prioriteit instellen voor de pagina Status van de registratie
+
+Een apparaat of gebruiker kan zich in meerdere groepen bevinden en meerdere profielen hebben voor de pagina Status van de registratie. U kunt de prioriteiten voor elk profiel instellen om problemen met dergelijke conflicten te voorkomen. Als iemand meer dan een profiel heeft voor de pagina Status van de registratie, wordt alleen het profiel met de hoogste prioriteit toegepast.
+
+1. In [Intune](https://aka.ms/intuneportal) kiest u **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving (preview)**.
+2. Beweeg de muisaanwijzer over het profiel in de lijst.
+3. Sleep met behulp van de drie verticale puntjes het profiel naar de gewenste positie in de lijst.
 
 
 ## <a name="enrollment-status-page-tracking-information"></a>Traceringsinformatie op de pagina Status van de inschrijving
@@ -65,8 +79,9 @@ Voor de installatie van het apparaat worden op de pagina voor de status van de i
     - LOB (Line-of-Business) MSI-apps per apparaat.
     - LOB (Line-of-Business) opslag-apps met installatiecontext = apparaat.
     - Offline opslag- en LOB (Line-of-Business) opslag-apps met installatiecontext = apparaat.
-- Connectiviteitsprofielen (VPN en Wi-Fi) worden nog niet bijgehouden, dus hierbij wordt altijd '0 van 0' vermeld.
-- Certificaten worden nog niet bijgehouden, dus hierbij wordt altijd '0 van 0' vermeld.
+- Connectiviteitsprofielen
+    - VPN- of Wi-Fi-profielen die zijn toegewezen aan **Alle apparaten** of een groep apparaten waarvan het apparaat dat wordt geregistreerd lid is, maar alleen voor Autopilot-apparaten
+- Certificaatprofielen die zijn toegewezen aan **Alle apparaten** of een groep apparaten waarvan het apparaat dat wordt geregistreerd lid is, maar alleen voor Autopilot-apparaten
 
 ### <a name="account-setup"></a>Account instellen
 Voor het installeren van het account worden op de pagina voor de status van de inschrijving de volgende items bijgehouden:
