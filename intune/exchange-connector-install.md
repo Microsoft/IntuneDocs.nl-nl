@@ -15,12 +15,12 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e12ab106b44d217d7e7b4b1a466fd5b12a9fb528
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: c24630dd3cc45b35e6313e9e66db74a548bb0851
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231828"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298102"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Intune on-premises Exchange-connector instellen in Microsoft Intune Azure
 
@@ -43,7 +43,7 @@ De volgende tabel bevat de vereisten voor de computer waarop u de on-premises Ex
 |            Vereiste             |                                                                                                                                                                                                        Meer informatie                                                                                                                                                                                                        |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         Besturingssystemen          |                                                               Intune ondersteunt de on-premises Exchange-connector op een computer waarop een versie van Windows Server 2008 SP2 64-bits, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 of Windows Server 2016 wordt uitgevoerd.<br /><br />De connector wordt niet ondersteund op een Server Core-installatie.                                                                |
-|         Microsoft Exchange         |                                                                           On-premises connectors vereisen Microsoft Exchange 2010 SP1 of hoger, of het oudere Exchange Online Dedicated. Om te bepalen of uw omgeving met Exchange Online-specifiek de <strong>nieuwe</strong> of <strong>verouderde</strong> configuratie heeft, neemt u contact op met uw accountmanager.                                                                           |
+|         Microsoft Exchange         |                                                                           On-premises connectors vereisen Microsoft Exchange 2010 SP3 of hoger, of het oudere Exchange Online Dedicated. Om te bepalen of uw omgeving met Exchange Online-specifiek de <strong>nieuwe</strong> of <strong>verouderde</strong> configuratie heeft, neemt u contact op met uw accountmanager.                                                                           |
 | Instantie voor beheer van mobiele apparaten |                                                                                                                              [De instantie voor het beheer van mobiele apparaten instellen op Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).                                                                                                                               |
 |              Hardware              |                                                                                                                                                     De computer waarop u de connector installeert, vereist een 1,6 GHz CPU met 2 GB RAM-geheugen en 10 GB aan vrije schijfruimte.                                                                                                                                                      |
 |  Active Directory-synchronisatie  |                                                                                      Voordat u de connector kunt gebruiken om Intune te verbinden met uw Exchange-server, moet u [Active Directory-synchronisatie instellen](users-add.md), zodat uw lokale gebruikers en beveiligingsgroepen worden gesynchroniseerd met uw exemplaar van Azure Active Directory.                                                                                      |
@@ -70,7 +70,7 @@ U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de o
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Het software-installatiepakket voor de on-premises Exchange-connector downloaden
 
-1. Open [Azure Portal](http://portal.azure.com) in een ondersteund Windows Server-besturingssysteem voor de on-premises Exchange-connector en meld u aan met een gebruikersaccount dat een beheerder is in de on-premises Exchange-server en dat een licentie heeft om Exchange Server te gebruiken.
+1. Open [Azure Portal](http://portal.azure.com) in een ondersteund Windows Server-besturingssysteem voor de on-premises Exchange-connector en meld u aan met een gebruikersaccount dat een beheerder is voor de on-premises Exchange-server en dat een licentie heeft om Exchange Server te gebruiken.
 
 2. Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
 

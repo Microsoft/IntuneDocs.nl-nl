@@ -16,12 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c58cc56672409d954c4bf0b2829ea23d1b0a93df
-ms.sourcegitcommit: b01c607fc666254c560f5b60bd8a0def8e48197c
+ms.openlocfilehash: 3348f5e9673de410516cb2e2b774e20a4f17b036
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50132466"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51577001"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Wat is er nieuw in Microsoft Intune - vorige maanden
 
@@ -46,7 +46,7 @@ Android Enterprise (voorheen bekend als Android for Work) ondersteunt het opneme
 
 ### <a name="device-management"></a>Apparaatbeheer
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Alle apparaten exporteren naar CSV-bestanden in Internet Explorer, Microsoft Edge of Chrome <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-microsoft-edge-or-chrome----2258071---"></a>Alle apparaten exporteren naar CSV-bestanden in Internet Explorer, Microsoft Edge of Chrome <!-- 2258071 -->
 In **Apparaten** > **Alle apparaten** kunt u de apparaten **Exporteren** naar een lijst met de CSV-indeling. Gebruikers van Internet Explorer (IE) met meer dan 10.000 apparaten kunnen hun apparaten exporteren naar meerdere bestanden. Elk bestand bevat maximaal 10.000 apparaten.
 
 Gebruikers van Edge en Chrome met meer dan 30.000 apparaten kunnen hun apparaten exporteren naar meerdere bestanden. Elk bestand bevat maximaal 30.000 apparaten.
@@ -296,8 +296,8 @@ Er zijn [twee nieuwe privacyinstellingen](device-restrictions-windows-10.md#priv
 - **Gebruikersactiviteiten publiceren**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar te voorkomen.
 - **Alleen lokale activiteiten**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar alleen op basis van de lokale activiteit te voorkomen.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nieuwe instellingen voor de Microsoft Edge-browser <!--1469166 -->
-Er zijn [twee nieuwe instellingen](device-restrictions-windows-10.md#edge-browser) beschikbaar voor apparaten met de Microsoft Edge-browser: **Pad naar het bestand met favorieten** en **Wijzigingen in Favorieten**.
+#### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>Nieuwe instellingen voor de Microsoft Edge-browser <!--1469166 -->
+Er zijn [twee nieuwe instellingen](device-restrictions-windows-10.md#microsoft-edge-browser) beschikbaar voor apparaten met de Microsoft Edge-browser: **Pad naar het bestand met favorieten** en **Wijzigingen in Favorieten**.
 
 ### <a name="app-management"></a>Appbeheer
 

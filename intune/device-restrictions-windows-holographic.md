@@ -1,6 +1,6 @@
 ---
 title: Apparaatbeperkingen voor Windows Holographic for Business in Microsoft Intune - Azure | Microsoft Docs
-description: Meer informatie over de configuratie van instellingen voor apparaatbeperkingen in Microsoft Intune voor Windows Holographic for Business, waaronder uitschrijving, geolocatie, wachtwoorden, apps installeren uit de App Store, cookies en pop-ups in Edge, Windows Defender, zoeken, cloud en opslag, bluetooth-connectiviteit, systeemtijd en gebruiksgegevens in Azure.
+description: Meer informatie over de configuratie van instellingen voor apparaatbeperkingen in Microsoft Intune voor Windows Holographic for Business, waaronder uitschrijving, geolocatie, wachtwoorden, apps installeren uit de App Store, cookies en pop-ups in Microsoft Edge, Windows Defender, zoeken, cloud en opslag, bluetooth-connectiviteit, systeemtijd en gebruiksgegevens in Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: f79985c9854af462fa9a456304a3184128283b9c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321673"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576797"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Instellingen voor apparaatbeperkingen voor Windows Holographic for Business in Intune
 
@@ -41,7 +41,7 @@ De volgende instellingen voor apparaatbeperking worden ondersteund op apparaten 
 -   **Installatie van vertrouwde app**: voor apps die zijn ondertekend met een vertrouwd certificaat is sideloaden mogelijk.
 -   **Ontgrendeling voor ontwikkelaars**: de eindgebruiker mag instellingen voor Windows-ontwikkelaars wijzigen, zoals het toestaan van sideloaden van apps.
 
-## <a name="edge-browser"></a>Microsoft Edge-browser
+## <a name="microsoft-edge-browser"></a>Microsoft Edge-browser
 
 -   **Cookies**: hiermee kunnen internetcookies in de browser op het apparaat worden opgeslagen.
 -   **Pop-ups**: hiermee kunt u pop-upvensters in de browser blokkeren (alleen van toepassing op Windows 10-desktop).
@@ -51,7 +51,7 @@ De volgende instellingen voor apparaatbeperking worden ondersteund op apparaten 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
-- **SmartScreen voor Microsoft Edge**: schakel Edge SmartScreen in voor toegang tot site- en bestanddownloads.
+- **SmartScreen voor Microsoft Edge**: hiermee schakelt u Microsoft Edge SmartScreen in voor toegang tot site- en bestanddownloads.
 
 ## <a name="search"></a>Zoeken
 - **Zoeklocatie**: geef op of een zoekactie locatiegegevens mag gebruiken. informatie

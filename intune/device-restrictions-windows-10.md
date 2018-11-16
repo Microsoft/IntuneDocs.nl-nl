@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/26/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a95f68f0a9794047b8adb7f9ab729bb4905f2379
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: ac0348736e5975633776c86dee88555dfceb6919
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679386"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576882"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Apparaatbeperkingsinstellingen voor Windows 10 (en hoger) in Intune
 In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met Windows 10.
@@ -31,7 +31,7 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
 - **Schermafbeelding (alleen mobiel)**: hiermee kan de gebruiker het apparaatscherm vastleggen als afbeelding.
 - **Kopiëren en plakken (alleen mobiel)**: hiermee staat u kopieer- en plakbewerkingen tussen apps op het apparaat toe.
 - **Registratie handmatig ongedaan maken**: hiermee kan de gebruiker het werkplekaccount handmatig van het apparaat verwijderen.
-   - Deze beleidsinstelling wordt niet toegepast als de computer is toegevoegd aan Azure Active Directory en automatische inschrijving is ingeschakeld. 
+   - Deze beleidsinstelling wordt niet toegepast als de computer is toegevoegd aan Azure AD en automatische inschrijving is ingeschakeld. 
    - Deze beleidsinstelling geldt niet voor computers met Windows 10 Home.
 - **Handmatige installatie van het basiscertificaat (alleen mobiel)**: de gebruiker kan niet langer basiscertificaten en tussenliggende CAP-certificaten handmatig installeren.
 
@@ -51,7 +51,7 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
 - **Apparaatdetectie**: hiermee voorkomt u dat een apparaat wordt gedetecteerd door andere apparaten.
 - **Taakwisselaar (alleen mobiel)**: hiermee blokkeert u de taakwisselaar op het apparaat.
 - **Foutberichtvenster voor SIM-kaart (alleen mobiel)**: hiermee voorkomt u dat op het apparaat een foutbericht wordt weergegeven als er geen SIM-kaart wordt gedetecteerd.
-- **Ink-werkruimte**: blokkeer gebruikers zodat ze geen toegang meer hebben tot de Ink-werkruimte. Als deze instelling niet wordt geconfigureerd, wordt de Ink-werkruimte ingeschakeld (de functie wordt ingeschakeld) en mag de gebruiker deze gebruik van maken boven het vergrendelingsscherm.
+- **Ink-werkruimte**: blokkeer gebruikers zodat ze geen toegang meer hebben tot de Ink-werkruimte. Als dit is ingesteld op **Niet geconfigureerd**, wordt de Ink-werkruimte ingeschakeld (de functie wordt ingeschakeld) en mag de gebruiker deze gebruiken boven het vergrendelingsscherm.
 - **Automatisch opnieuw implementeren**: hiermee kunnen gebruikers met beheerdersrechten alle gebruikersgegevens en -instellingen verwijderen met **CTRL + Win + R** op het vergrendelingsscherm van het apparaat. Het apparaat wordt automatisch opnieuw geconfigureerd en opnieuw ingeschreven bij het beheer.
 - **Gebruikers verplichten om verbinding te maken met het netwerk tijdens de configuratie van het apparaat (alleen Windows Insider)**: kies **Vereisen** om gebruikers er tijdens de installatie van Windows 10 toe te verplichten dat het apparaat verbinding kan maken met een netwerk voordat dit na de netwerkpagina verder kan gaan. Hoewel deze functie nog in preview is, moet deze instelling worden gebruikt door een Windows Insider build 1809 of hoger.
 
@@ -70,7 +70,7 @@ Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opg
 
 ## <a name="personalization"></a>Persoonlijke instellingen
 
-- **URL achtergrondafbeelding Bureaublad (alleen bureaublad)**: geef de URL op naar een afbeelding in JPEG-indeling die u wilt gebruiken als de achtergrond van het Windows-bureaublad. Gebruikers kunnen dit niet wijzigen.
+- **URL achtergrondafbeelding Bureaublad (alleen bureaublad)**: voer de URL in naar een afbeelding in JPEG-indeling die u wilt gebruiken als de achtergrond van het Windows-bureaublad. Gebruikers kunnen de afbeelding niet wijzigen.
 
 ## <a name="privacy"></a>Privacy
 
@@ -146,19 +146,19 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 -   **Installatie van vertrouwde app**: voor apps die zijn ondertekend met een vertrouwd certificaat is sideloaden mogelijk.
 -   **Ontgrendeling voor ontwikkelaars**: de eindgebruiker mag instellingen voor Windows-ontwikkelaars wijzigen, zoals het toestaan van sideloaden van apps.
 -   **Gedeelde app-gegevens voor gebruikers**: apps mogen gegevens delen tussen verschillende gebruikers op hetzelfde apparaat.
--   **Alleen persoonlijke store gebruiken**: schakel dit in om toe te staan dat eindgebruikers apps downloaden van uw privé-store.
+-   **Alleen persoonlijke store gebruiken**: schakel dit in om toe te staan dat eindgebruikers apps downloaden uit uw privé-store.
 -   **Uit Store afkomstige app starten**: alle apps uitschakelen die vooraf geïnstalleerd zijn op het apparaat of die zijn gedownload via Microsoft Store.
 -   **Appgegevens installeren op systeemvolume**: apps kunnen geen gegevens opslaan op het systeemvolume van het apparaat.
 -   **Apps installeren op systeemstation**: apps kunnen geen gegevens opslaan op het systeemstation van het apparaat.
 -   **Game-DVR (alleen desktop)**: hiermee bepaalt u of het opnemen en uitzenden van games is toegestaan.
 -   **Alleen voor apps uit de Store**: hiermee bepaalt u of gebruikers apps kunnen installeren vanuit andere locaties dan de App Store.
 
-## <a name="edge-browser"></a>Microsoft Edge-browser
+## <a name="microsoft-edge-browser"></a>Microsoft Edge-browser
 
--   **Microsoft Edge-browser (alleen mobiele apparaten)**: hiermee staat u het gebruik van de Edge-webbrowser toe op het apparaat.
--   **Vervolgkeuzelijst van de adresbalk (alleen desktop)**: gebruik deze optie als u in Edge geen lijst met suggesties wilt weergeven wanneer u typt in een vervolgkeuzelijst. Dit helpt bij het beperken van de netwerkbandbreedte die nodig is tussen Microsoft Edge en Microsoft-services.
+-   **Microsoft Edge-browser (alleen mobiele apparaten)**: hiermee staat u het gebruik van de Microsoft Edge-webbrowser toe op het apparaat.
+-   **Vervolgkeuzelijst van de adresbalk (alleen desktop)**: gebruik deze optie als u in Microsoft Edge geen lijst met suggesties wilt weergeven wanneer u typt in een vervolgkeuzelijst. Deze optie helpt bij het beperken van de netwerkbandbreedte die nodig is tussen Microsoft Edge en Microsoft-services.
 -   **Favorieten synchroniseren tussen Microsoft-browsers (alleen desktop)**: hiermee kunnen favorieten worden gesynchroniseerd tussen Internet Explorer en Microsoft Edge.
--   **Do Not Track-headers verzenden**: hiermee configureert u de Edge-browser zodanig, dat verzoeken om niet gevolgd te worden, worden verzonden naar websites die gebruikers bezoeken.
+-   **Do Not Track-headers verzenden**: hiermee configureert u de Microsoft Edge-browser zodanig, dat verzoeken om niet gevolgd te worden, worden verzonden naar websites die gebruikers bezoeken.
 -   **Cookies**: hiermee kunnen internetcookies in de browser op het apparaat worden opgeslagen.
 -   **JavaScript**: hiermee staat u de uitvoering van scripts, zoals JavaScript, toe in de Microsoft Edge-browser.
 -   **Pop-ups** pop-upvensters in de browser blokkeren (alleen van toepassing op Windows 10-desktop).
@@ -167,24 +167,24 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 -   **Automatisch doorvoeren**: hiermee staat u gebruikers toe instellingen voor automatisch doorvoeren in de browser te wijzigen (alleen Windows 10 Desktop).
 -   **Wachtwoordbeheer**: hiermee schakelt u de functie Wachtwoordbeheer van Microsoft Edge in of uit.
 -   **Locatie van de lijst met websites van Bedrijfsmodus**: hiermee geeft u de plaats aan van de lijst met websites die in Bedrijfsmodus worden geopend. Gebruikers kunnen deze lijst niet bewerken.<br>(Alleen Windows 10 Desktop.)
--   **Ontwikkelhulpprogramma's**: hiermee voorkomt u dat de eindgebruiker de ontwikkelhulpprogramma's van Edge opent.
--   **Extensies**: toestaan dat de eindgebruiker Edge-extensies installeert op het apparaat.
+-   **Ontwikkelhulpprogramma's**: hiermee voorkomt u dat de eindgebruiker de ontwikkelhulpprogramma's van Microsoft Edge opent.
+-   **Extensies**: hiermee staat u toe dat de eindgebruiker Microsoft Edge-extensies installeert op het apparaat.
 -   **InPrivate-navigatie**: hiermee voorkomt u dat de eindgebruiker InPrivate-navigatiesessies opent.
--   **Pagina voor eerste keer uitvoeren weergeven**: hiermee wordt de introductiepagina niet weergegeven wanneer Edge de eerste keer wordt uitgevoerd.
+-   **Pagina voor eerste keer uitvoeren weergeven**: hiermee wordt de introductiepagina niet weergegeven wanneer Microsoft Edge de eerste keer wordt uitgevoerd.
     -   **URL voor eerste uitvoering**: hiermee geeft u de URL op van een pagina die wordt weergegeven wanneer een gebruiker de eerste keer Microsoft Edge uitvoert (alleen Windows 10 Mobile).
 -   **Startpagina's**: hiermee kunt u een lijst met sites toevoegen die u wilt gebruiken als startpagina's in Microsoft Edge (alleen desktop).
 -   **Wijzigingen van de startpagina**: hiermee kunnen gebruikers de startpagina's wijzigen die worden weergegeven bij het openen van Microsoft Edge. Gebruik de instelling Startpagina's om de pagina, of een lijst van pagina's, te maken die u wilt openen bij het starten van Microsoft Edge.
--   **Toegang tot About-vlaggen blokkeren**: Hiermee voorkomt u dat de eindgebruiker toegang krijgt tot de pagina met about-vlaggen in Edge. Op deze pagina staan instellingen voor ontwikkelaars en experimentele instellingen.
+-   **Toegang tot About-vlaggen blokkeren**: Hiermee voorkomt u dat de eindgebruiker toegang krijgt tot de pagina met about-vlaggen in Microsoft Edge. Op deze pagina staan instellingen voor ontwikkelaars en experimentele instellingen.
 -   **LocalHost IP-adres voor WebRTC**: hiermee blokkeert u het weergeven van het IP-adres van de localhost van gebruikers tijdens het doen van telefoonoproepen via het WebRTC-protocol.
 -   **Standaardzoekmachine**: geef de zoekmachine op die u standaard wilt gebruiken. Eindgebruikers kunnen deze waarde op elk moment wijzigen.
--   **Browsegegevens wissen bij afsluiten**: hiermee worden de geschiedenis en de browsegegevens gewist wanneer de gebruiker Edge afsluit.
+-   **Browsegegevens wissen bij afsluiten**: hiermee worden de geschiedenis en de browsegegevens gewist wanneer de gebruiker Microsoft Edge afsluit.
 -   **Verzamelen van livetegelgegevens**: hiermee geeft u op dat Windows geen gegevens moet verzamelen van de livetegel wanneer gebruikers vanuit Microsoft Edge een site vastmaken aan het startmenu.
 -  **Lijst met favorieten**: hier vindt u het pad naar het favorietenbestand. Voorbeeld: http://contoso.com/favorites.html.
--  **Wijzigingen aan Favorieten beperken**: stel dit in op **Blokkeren** om te voorkomen dat gebruikers items aan de lijst Favorieten toevoegen, of de lijst importeren, sorteren of bewerken. 
+-  **Wijzigingen aan Favorieten beperken**: - stel dit in op **Blokkeren** om te voorkomen dat gebruikers items aan de lijst Favorieten toevoegen, of de lijst importeren, sorteren of bewerken. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
-- **SmartScreen voor Microsoft Edge**: schakel Edge SmartScreen in voor toegang tot site- en bestanddownloads.
+- **SmartScreen voor Microsoft Edge**: schakel Microsoft Edge SmartScreen in voor toegang tot site- en bestanddownloads.
 - **Toegang tot schadelijke sites**: verhinder dat gebruikers de waarschuwingen van het Windows Defender SmartScreen-filter negeren en verhinder dat ze naar de site kunnen gaan.
 - **Niet-geverifieerd bestand downloaden**: verhinder dat gebruikers de waarschuwingen van het Windows Defender SmartScreen-filter negeren en verhinder dat ze niet-geverifieerde bestanden kunnen downloaden.
 
@@ -235,7 +235,27 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 
 ## <a name="start"></a>start
 
-- **Apps losmaken van de taakbalk**: de gebruiker kan geen apps meer losmaken vanuit het menu Start.
+- **Indeling van het menu Start**: u kunt het menu Start op desktopapparaten aanpassen door een XML-bestand met uw aanpassingen te uploaden, inclusief de volgorde waarin de apps worden vermeld en meer. Gebruikers kunnen de door u ingevoerde indeling van het menu Start niet wijzigen.
+- **Websites vastmaken aan tegels in het menu Start**: importeer installatiekopieën van Microsoft Edge die als koppelingen worden weergegeven het menu Start van Windows voor desktopapparaten.
+- **Apps losmaken van de taakbalk**: kies **Blokkeren** zodat de gebruiker geen apps meer kan losmaken vanuit het menu Start.
+- **Snel schakelen tussen gebruikers**: kies **Blokkeren** om schakeling tussen gebruikers die gelijkertijd zijn aangemeld te voorkomen zonder hen af te melden.
+- **Meest gebruikte apps**: kies **Blokkeren** om de meest gebruikte apps te verbergen het menu Start. Hiermee wordt ook de bijbehorende wisselknop in de Instellingen-app uitgeschakeld.
+- **Onlangs toegevoegde apps**: kies **Blokkeren** om onlangs toegevoegde apps te verbergen in het menu Start. Hiermee wordt ook de bijbehorende wisselknop in de Instellingen-app uitgeschakeld.
+- **Modus startscherm**: kies de manier waarop het startscherm moet worden weergegeven. Kies om het scherm op **Volledig scherm** of **Niet volledig scherm** weer te geven.
+- **Onlangs geopende items in jumplists**: kies **Blokkeren** om recente jumplists te verbergen in het menu Start en in de taakbalk. Hiermee wordt ook de bijbehorende wisselknop in de Instellingen-app uitgeschakeld.
+- **App-lijst**: kies de manier waarop de app Instellingen moet worden weergegeven. Uw opties zijn: 
+  - Samenvouwen
+  - De app Instellingen samenvouwen en uitschakelen 
+  - Hiermee kunt u de app Instellingen verwijderen en uitschakelen
+- **Aan/uit-knop**: kies **Blokkeren** om de aan/uit-knop in het menu Start te verbergen.
+- **De tegel Gebruiker**: kies **Blokkeren** om de tegel Gebruiker in het menu Start te verbergen.
+  - **Vergrendelen**: kies **Blokkeren** om de optie `Lock` op de tegel Gebruiker in het menu Start te verbergen.
+  - **Afmelden**: kies **Blokkeren** om de optie `Sign out` op de tegel Gebruiker in het menu Start te verbergen.
+- **Uitschakelen**: kies **Blokkeren** om de opties `Update and shut down` en `Shut down` op de aan-uitknop in het menu Start te verbergen.
+- **Slaapstand**: kies **Blokkeren** om de optie `Sleep` op de aan-uitknop in het menu Start te verbergen.
+- **Sluimerstand**: kies **Blokkeren** om de optie `Hibernate` op de aan-uitknop in het menu Start te verbergen.
+- **Account wisselen**: kies **Blokkeren** om de optie `Switch account` op de tegel Gebruiker in het menu Start te verbergen.
+- **Opties voor opnieuw opstarten**: kies **Blokkeren** om de opties `Update and restart` en `Restart` op de aan-uitknop in het menu Start te verbergen.
 - **Documenten op het startscherm**: de map Documenten in het menu Start van Windows weergeven of verbergen.
 - **Downloads op het startscherm**: de map Downloads in het menu Start van Windows weergeven of verbergen.
 - **Bestandenverkenner op het startscherm**: de app Bestandsverkenner in het menu Start van Windows weergeven of verbergen.
@@ -269,7 +289,7 @@ Op een kioskapparaat wordt doorgaans één app of een specifieke set met apps ui
 #### <a name="single-app-kiosks"></a>Kiosken voor één enkele app
 Voer de volgende instellingen in:
 
-- **Gebruikersaccount**: voer het lokale (op het apparaat) gebruikersaccount, een AD-domeinaccount of een Azure AD-accountaanmelding in die is gekoppeld aan de kiosk-app.
+- **Gebruikersaccount**: voer het lokale (op het apparaat) gebruikersaccount, een AD-domeinaccount of een Azure AD-account in dat is gekoppeld aan de kiosk-app.
   - Lokaal account: voer in als `devicename\accountname`, `.\accountname` of `accountname`
   - Domeinaccount: voer in als `domain\accountname`
   - Azure AD-account: voer in als `AzureAD\emailaddress`. Zorg dat u AzureAD invoert, aangezien dit een vaste domeinnaam is. Voer vervolgens het Azure AD-e-mailadres in. Voer bijvoorbeeld `AzureAD\user@contoso.onmicrosoft.com` in.
@@ -300,7 +320,7 @@ Gebruik de knop **Toevoegen** om een kioskconfiguratie te maken (of een bestaand
 
   [Create a Windows 10 kiosk that runs multiple apps (Een Windows 10-kiosk maken voor meerdere apps)](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) bevat meer informatie over het maken en gebruiken van XML-bestanden.
 
-- **Toegewezen gebruikers**: voer een of meer gebruikersaccounts in die de apps kunnen gebruiken die u toevoegt. Wanneer een gebruiker zich met het account aanmeldt, zijn alleen de apps beschikbaar die in de configuratie zijn gedefinieerd. Het account is een lokaal account op het apparaat of de aanmelding voor een Azure AD-account dat is gekoppeld met de kiosk-app.
+- **Toegewezen gebruikers**: voer een of meer gebruikersaccounts in die de apps kunnen gebruiken die u toevoegt. Wanneer een gebruiker zich met het account aanmeldt, zijn alleen de apps beschikbaar die in de configuratie zijn gedefinieerd. Het account is een lokaal account op het apparaat of een Azure AD-account dat is gekoppeld met de kiosk-app.
 
     Voor kiosken in openbare omgevingen waarvoor automatische aanmelding is ingeschakeld, moet een gebruikerstype met minimale bevoegdheden (zoals het lokale standaardgebruikersaccount) worden gebruikt. Voor de configuratie van een Azure Active Directory-account voor de kioskmodus gebruikt u de indeling `domain\user@tenant.com`.
 
@@ -349,7 +369,7 @@ Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender even
 -   **Proxy-instellingen automatisch detecteren**: wanneer deze optie is ingeschakeld, probeert het apparaat het pad naar een PAC-script te vinden.
 -   **Proxyscript gebruiken**: selecteer deze optie als u een pad naar een PAC-script wilt opgeven om de proxyserver te configureren.
     -   **URL voor het installatiescriptadres**: geef de URL op van een PAC-script dat u wilt gebruiken om de proxyserver te configureren.
--   **Handmatige proxyserver gebruiken**: selecteer deze optie als u de proxyservergegevens handmatig wilt opgeven.
+-   **Handmatige proxyserver gebruiken**: selecteer deze optie om de gegevens van de proxyserver handmatig in te voeren.
     -   **Adres**: voer de naam of het IP-adres van de proxyserver in.
     -   **Poortnummer**: voer het poortnummer van uw proxyserver in.
     -   **Proxy-uitzonderingen**: voer URL's in die geen gebruik mogen maken van de proxyserver. Scheid de items van elkaar met een puntkomma.
@@ -374,12 +394,15 @@ Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender even
 
 ## <a name="cloud-printer"></a>Cloudprinter
 
-- **Printerdetectie-URL**: eindpunt voor het detecteren van cloudprinters.
-- **Verificatie-URL voor printertoegang**: verificatie-eindpunt voor het verkrijgen van OAuth-tokens.
-- **GUID van de systeemeigen clientapp voor Azure**: GUID waarmee de clienttoepassing wordt geïdentificeerd die gemachtigd is voor het ophalen van OAuth-tokens van OAuthAuthority.
-- **Resource-URI voor de afdrukservice**: OAuth-resource-URI voor de afdrukservice zoals geconfigureerd in Azure Portal.
-- **Maximaal aantal printers waarvoor een query moet worden uitgevoerd (alleen mobiel)**: maximaal aantal printers waarvoor een query moet worden uitgevoerd vanaf een detectie-eindpunt.
-- **Resource-URI voor de printerdetectieservice**: OAuth-resource-URI voor de printerdetectieservice zoals geconfigureerd in Azure Portal.
+- **Printerdetectie-URL**: voer de URL in voor het detecteren van cloudprinters.
+- **Verificatie-URL voor printertoegang**: voer de URL van het verificatie-eindpunt in om OAuth-tokens op te halen. Voer bijvoorbeeld iets in zoals `https://login.microsoftonline.com/your Azure AD Tenant ID`.
+- **GUID van de systeemeigen client-app voor Azure**: voer de GUID in waarmee de clienttoepassing wordt geïdentificeerd die gemachtigd is voor het ophalen van OAuth-tokens van OAuthAuthority.
+- **Resource-URI voor de afdrukservice**: voer de OAuth-resource-URI in voor de afdrukservice zoals geconfigureerd in Azure Portal. Voer bijvoorbeeld iets in zoals `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
+- **Maximumaantal printers waarvoor een query moet worden uitgevoerd (alleen mobiel)**: voer het maximumaantal printers in waarvoor u een query wilt uitvoeren. Voer bijvoorbeeld `10` in.
+- **Resource-URI voor de printerdetectieservice**: voer de OAuth-resource-URI in voor de printerdetectieservice zoals geconfigureerd in Azure Portal. Voer bijvoorbeeld iets in zoals `http://MopriaDiscoveryService/CloudPrint`.
+
+> [!TIP]
+> Na het instellen van een [Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview) kunt u deze instellingen configureren en vervolgens implementeren naar Windows-apparaten.
 
 ## <a name="local-printer"></a>Lokale printer
 - **Printers**: lijst met lokale printers die zijn toegevoegd.
@@ -405,4 +428,4 @@ Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender even
 - **Rcs (alleen mobiel)**: schakel de Rich Communication Services-functie voor verzenden/ontvangen op het apparaat uit.
 
 ## <a name="more-information"></a>Meer informatie
-Voor aanvullende technische details over elke instelling en welke edities van Windows worden ondersteund, ziet u het naslagwerk [Windows 10 Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)
+Voor aanvullende technische details over elke instelling en welke edities van Windows worden ondersteund, raadpleegt u het naslagwerk [Windows 10 Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)

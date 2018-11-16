@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6880d3891891fe27a41d04a118e14ac9d4782b3
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 04c9c6b184fac2082649e8be8e60e6ac3f5a5669
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828173"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212424"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Een Windows Line-Of-Business-app toevoegen aan Microsoft Intune
 
@@ -55,7 +55,7 @@ Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Dit type
     - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal wordt weergegeven. Zorg ervoor dat alle app-namen die u gebruikt, uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
     - **Beschrijving**: voer een beschrijving in voor de app. De beschrijving wordt weergegeven in de bedrijfsportal.
     - **Uitgever**: voer de naam van de uitgever van de app in.
-    - **App-versie negeren**: stel deze optie in op **Ja** als de app-ontwikkelaar de app automatisch bijwerkt.
+    - **App-versie negeren**: stel deze optie in op **Ja** als de app-ontwikkelaar de app automatisch bijwerkt. Deze optie is alleen van toepassing op mobiele .msi-apps.
     - **Categorie**: selecteer een of meer van de ingebouwde app-categorieën of selecteer een categorie die u hebt gemaakt. Met categorieën kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
     - **Deze weergeven als aanbevolen app in de bedrijfsportal**: hiermee wordt de app duidelijk zichtbaar op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
     - **Informatie-URL**: voer desgewenst de URL in van een website die informatie over de app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.

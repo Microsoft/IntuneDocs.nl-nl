@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
-ms.openlocfilehash: fb88f703048eaa122bb406d8adb1fc9face764c4
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: ffc1f0140f98b17e060df3308af779ddcb77549e
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410749"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510921"
 ---
 # <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Snelstart: een gebruiker maken en er een licentie aan toewijzen
 
@@ -61,7 +61,9 @@ Als u deze gebruiker niet meer nodig hebt, kunt u deze verwijderen door te navig
 
 ## <a name="next-steps"></a>Volgende stappen
 
-In deze snelstart hebt u een gebruiker gemaakt en een licentie toegewezen aan deze gebruiker. U kunt de gebruiker nu toewijzen aan een groep.
+In deze snelstart hebt u een gebruiker gemaakt en een licentie toegewezen aan deze gebruiker. Zie [Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen](users-add.md) voor meer informatie over het toevoegen van gebruikers aan Intune.
+
+Als u deze reeks snelstartgidsen voor Intune wilt volgen, kunt u doorgaan met de volgende snelstartgids.
 
 > [!div class="nextstepaction"]
-> [Een groep maken](quickstart-create-group.md)
+> [Snelstartgids: Een groep maken om gebruikers te beheren](quickstart-create-group.md)

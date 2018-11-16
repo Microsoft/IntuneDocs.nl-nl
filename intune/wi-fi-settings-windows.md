@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/8/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 2252c81757b7745ed15ca86a4e7db310f03df19d
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236472"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298153"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Wi-Fi-instellingen toevoegen voor apparaten met Windows 10 en hoger in Intune
 
@@ -57,6 +57,9 @@ In dit artikel worden deze instellingen beschreven.
   - **WPA/WPA2-Personal**: dit is een veiligere optie die doorgaans wordt gebruikt voor Wi-Fi-connectiviteit. Voor betere beveiliging kunt u ook een vooraf gedeelde wachtwoordsleutel of netwerksleutel invoeren. 
 
     - **Vooraf gedeelde sleutel** (pre-shared key - PSK): optioneel. Dit wordt weergegeven wanneer u de optie **WPA/WPA2-Personal** kiest als beveiligingstype. Wanneer het netwerk van uw organisatie is ingesteld of geconfigureerd, wordt er ook een wachtwoord of netwerksleutel geconfigureerd. Voer dit wachtwoord of deze netwerksleutel in voor de PSK-waarde. Voer een tekenreeks in van minimaal 8 en maximaal 64 tekens. Als het wachtwoord of de netwerksleutel 64 tekens lang is, voert u hexadecimale tekens in.
+    
+      > [!NOTE]
+      > Wanneer u het Wi-Fi-profiel opslaat, worden de door u ingevoerde waarde voor PSK om beveiligingsredenen niet weergegeven. In de vooraf gedeelde watermerk van de sleutel wordt nog steeds **Niet geconfigureerd** weergegeven, zelfs als de PSK in het profiel is opgeslagen. Als u wilt de PSK wijzigen, voert u een nieuwe sleutel in en slaat u het profiel op. Als u een PSK opslaat, het beleid bewerkt en de PSK leeg laat, wordt nog steeds de bestaande PSK gebruikt.
 
 - **Bedrijfsproxyinstellingen**: kies deze optie om de proxyinstellingen binnen uw organisatie te gebruiken. Uw opties zijn:
   - **Geen**: er zijn geen proxyinstellingen geconfigureerd.

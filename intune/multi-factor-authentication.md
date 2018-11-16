@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2c2bb6e76bd6b2da7ee7c12282c0ff22d7d3e3
-ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
+ms.openlocfilehash: 270f19b6f0babb347b04731ca270a3c5bea18217
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31617206"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225663"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Multi-Factor Authentication vereisen voor Intune-apparaatinschrijvingen
 
@@ -48,24 +48,18 @@ Voer de volgende stappen uit om MFA te vereisen wanneer een apparaat wordt gereg
 >Configureer geen **op het apparaat gebaseerde toegangsregels** voor Microsoft Intune-registratie.
 
 1. Meld u met uw referenties aan bij uw [Microsoft Azure Portal](https://portal.azure.com).
-2. Kies in de portal **Azure Active Directory**.
-2. Kies in **Azure Active Directory** **Beheren** > **Bedrijfstoepassingen**.
-3. Kies in **Bedrijfstoepassingen** **Beheren** > **Alle toepassingen**. U ziet een overzicht van alle Azure-apps die u beheert.
-3. Kies **Microsoft Intune-inschrijving** in de lijst.
-4. Kies onder **Microsoft Intune-inschrijving** **Beveiliging** > **Voorwaardelijke toegang**.
-5. Kies **Nieuw beleid**.
-6. Typ onder **Nieuw** beleid een beschrijvende naam voor het beleid.
-7. Kies in de sectie **Toewijzingen** **Gebruikers en groepen**.
-8. Kies onder **Gebruikers en groepen** de gebruikers of groepen waarop dit beleid van toepassing is en kies vervolgens **Gereed**.
-9. Kies **Cloud-apps** in de sectie **Toewijzingen**.
-10. Kies op het tabblad **Opnemen** onder **Cloud-apps** de optie **Apps selecteren** en kies vervolgens **Selecteren** > **Microsoft Intune-inschrijving**. Klik ten slotte op **Gereed**.
-11. Kies in de sectie **Toewijzingen** de optie **Voorwaarden**.
-12. U hoeft onder **Voorwaarden** geen instellingen voor MFA te configureren.
-13. Kies in de sectie **Besturingselementen voor toegang** de optie **Verlenen**.
-14. Kies onder **Verlenen** **Toegang verlenen** en selecteer vervolgens **Meervoudige verificatie vereisen**.
-    Selecteer niet **Vereisen dat het apparaat moet worden gemarkeerd als compatibel**, omdat de compatibiliteit van het apparaat niet kan worden gecontroleerd totdat het is ingeschreven.
-15. Kies **Selecteren**.
-16. Kies onder **Nieuw beleid** **Beleid inschakelen** > **Aan** en kies vervolgens **Maken**.
+2. Ga in de portal naar **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
+3. Kies in **Azure Active Directory** onder Beveiliging de optie **[Voorwaardelijke toegang](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**.
+4. Kies **Nieuw beleid**.
+5. Typ onder **Nieuw** beleid een beschrijvende naam voor het beleid.
+6. Kies in de sectie **Toewijzingen** **Gebruikers en groepen**.
+7. In **Gebruikers en groepen** kiest u **Gebruikers of groepen selecteren**  en schakelt u **Gebruikers en groepen** in. Selecteer vervolgens de gebruikers en/of groepen waarop dit beleid van toepassing is en kies vervolgens **Gereed**.
+8. Kies **Cloud-apps** in de sectie **Toewijzingen**.
+9. Kies op het tabblad **Opnemen** onder **Cloud-apps** de optie **Apps selecteren** en kies vervolgens **Selecteren** > **Microsoft Intune-inschrijving**. Klik ten slotte op **Gereed**.
+10. In het gedeelte **Toewijzingen** hoeft u voor **Voorwaarden** geen instellingen voor MFA te configureren.
+11. Kies in de sectie **Besturingselementen voor toegang** de optie **Verlenen**.
+12. Kies onder **Verlenen** **Toegang verlenen** en selecteer vervolgens **Meervoudige verificatie vereisen**. Selecteer niet **Vereisen dat het apparaat moet worden gemarkeerd als compatibel**, omdat de compatibiliteit van het apparaat niet kan worden gecontroleerd totdat het is ingeschreven. Kies dan de optie **Selecteren**.
+13. Kies onder **Nieuw beleid** **Beleid inschakelen** > **Aan** en kies vervolgens **Maken**.
 
 
 

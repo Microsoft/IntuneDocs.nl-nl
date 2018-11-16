@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b797951c878dd90cbb7bb716b5108f94f48921c5
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 21dda51d2ddde74f07fcc173c5a4dd2a13c9c8b8
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231947"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225744"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Snelstartgids: een e-mailprofiel voor apparaten maken voor iOS
 
@@ -69,7 +69,7 @@ Als u niet van plan bent om het profiel dat u hebt gemaakt te gebruiken voor aan
 
 ## <a name="next-steps"></a>Volgende stappen
 
-In deze snelstartgids hebt u een e-mailprofiel voor iOS-apparaten gemaakt. U kunt nu met dit profiel bepalen of een iOS-apparaat voldoet aan het beleid door een nalevingsbeleid te maken, waarbij alle iOS-apparaten die niet overeenkomen met het profiel als niet-compatibel worden gemarkeerd. Als u uw e-mail nog verder wilt beveiligen, kunt u een beleid voor voorwaardelijke toegang maken, zodat niet-compatibele apparaten geen toegang krijgen tot de e-mail.
+In deze snelstartgids hebt u een e-mailprofiel voor iOS-apparaten gemaakt. U kunt nu met dit profiel bepalen of een iOS-apparaat voldoet aan het beleid door een nalevingsbeleid te maken, waarbij alle iOS-apparaten die niet overeenkomen met het profiel als niet-compatibel worden gemarkeerd. Als u uw e-mail nog verder wilt beveiligen, kunt u een beleid voor voorwaardelijke toegang maken, zodat niet-compatibele apparaten geen toegang krijgen tot de e-mail. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over beleidsregels voor apparaatnaleving.
 
 > [!div class="nextstepaction"]
-> [Aan de slag met apparaatnalevingsbeleid in Intune](device-compliance-get-started.md)
+> [Zelfstudie: Exchange Online e-mail beschermen op beheerde apparaten](tutorial-protect-email-on-enrolled-devices.md)

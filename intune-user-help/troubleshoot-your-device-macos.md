@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 003bf4046a997e3633105e4dc41c93a82e16ee40
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
+ms.openlocfilehash: 17b99c4a089fc426ecfeea803737fa8704f3b0a6
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505713"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212305"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>Veelvoorkomende problemen met uw macOS-apparaat oplossen
 
@@ -33,3 +33,6 @@ Los algemene macOS-problemen op die zich tijdens en na de inschrijving voordoen.
 - [Mijn door Jamf beheerde apparaat heeft de status Niet-conform](device-little-different-jamf.md)
 - [Ik kan het serienummer niet vinden](how-do-i-find-the-serial-number-on-my-device-macos.md)
 - [Ik ben gevraagd om mijn apparaat te identificeren](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [Ik heb een foutmelding gekregen tijdens het inschrijven van een virtuele machine voor macOS](unable-to-get-macOS-device-managed.md)  
+- [Ik heb het bericht gekregen dat het serienummer van mijn macOS-apparaat beperkt is](unable-to-get-macOS-device-managed.md)  
+- [Mijn apparaat is mogelijk al aan iemand anders toegewezen](unable-to-get-macOS-device-managed.md)  

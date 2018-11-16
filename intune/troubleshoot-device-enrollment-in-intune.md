@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
-ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
+ms.openlocfilehash: 87f49c9aafa8b6f9f281a00e4d7bd297c354f90b
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237660"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511027"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Problemen bij de apparaatinschrijving oplossen
 
@@ -151,7 +151,7 @@ De volgende tabel bevat fouten die eindgebruikers mogelijk in Intune krijgen te 
 
 |Foutbericht|Probleem|Oplossing|
 |---|---|---|
-|**De IT-beheerder moet een licentie toewijzen voor toegang**<br>Uw IT-beheerder heeft u geen toegang verleend om deze app te gebruiken. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|Het apparaat kan niet worden ingeschreven omdat het account van de gebruiker niet de benodigde licentie heeft.|Voordat gebruikers hun apparaat kunnen inschrijven, moet de benodigde licentie aan hen zijn toegewezen. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de Mobile Device Management-instantie. Ze krijgen deze fout bijvoorbeeld te zien als aan de twee volgende voorwaarden wordt voldaan:<ol><li>Intune is ingesteld als de Mobile Device Management-instantie</li><li>Ze gebruiken een System Center 2012 R2 Configuration Manager-licentie.</li></ol>Zie [Intune-licenties toewijzen aan uw gebruikersaccounts](/intune/licenses-assign) voor meer informatie.|
+|**De IT-beheerder moet een licentie toewijzen voor toegang**<br>Uw IT-beheerder heeft u geen toegang verleend om deze app te gebruiken. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|Het apparaat kan niet worden ingeschreven omdat het account van de gebruiker niet de benodigde licentie heeft.|Voordat gebruikers hun apparaat kunnen inschrijven, moet de benodigde licentie aan hen zijn toegewezen. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de Mobile Device Management-instantie. Ze krijgen deze fout bijvoorbeeld te zien als aan de twee volgende voorwaarden wordt voldaan:<ol><li>Intune is ingesteld als Mobile Device Management-instantie</li><li>De gebruiker gebruikt een System Center 2012 R2 Configuration Manager-licentie.</li></ol>Zie [Intune-licenties toewijzen aan uw gebruikersaccounts](/intune/licenses-assign) voor meer informatie.|
 |**De IT-beheerder moet de MDM-instantie instellen**<br>Het lijkt erop dat uw IT-beheerder geen MDM-instantie heeft ingesteld. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|De Mobile Device Management-instantie is niet gedefinieerd.|De Mobile Device Management-instantie is niet ingesteld in Intune. Informatie over het [instellen van de instantie voor het beheer van mobiele apparaten](/intune/mdm-authority-set).|
 
 
@@ -391,6 +391,28 @@ Nadat u de problemen met het VPP-token hebt opgelost, moet u de geblokkeerde app
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Laat de gebruikers de inschrijvingsprocedure opnieuw starten
 Nadat u de geblokkeerde apparaten hebt gewist, kunt u de gebruikers de inschrijvingsprocedure opnieuw laten starten.
+
+## <a name="macos-issues"></a>problemen met macOS
+
+### <a name="macos-enrollment-errors"></a>macOS-inschrijvingsfouten
+**Foutbericht 1:** *Het lijkt erop dat u een virtuele machine gebruikt. Zorg ervoor dat u uw virtuele machine volledig hebt geconfigureerd, inclusief serienummer en hardwaremodel. Neem contact op met ondersteuning als dit geen virtuele machine is.*  
+
+**Foutbericht 2:** *Er zijn momenteel problemen met het beheer van uw apparaat. Dit probleem kan worden veroorzaakt als u een virtuele machine gebruikt, over een beperkt serienummer beschikt of als dit apparaat al aan iemand anders toegewezen is. Ontdek hoe u deze problemen kunt oplossen of neem contact op met het ondersteuningsteam van uw bedrijf.*
+
+**Probleem:** Dit bericht kan het gevolg zijn van een van de volgende redenen:  
+* Een virtuele machine (VM) met macOS is niet correct geconfigureerd  
+* U hebt de apparaatbeperkingen ingeschakeld die vereisen dat het apparaat in eigendom moet zijn van het bedrijf of over een geregistreerd serienummer van het apparaat in Intune moet beschikken  
+* Het apparaat is al geregistreerd en is nog steeds toegewezen aan iemand anders in Intune  
+
+**Oplossing:** Neem eerst contact op met uw gebruiker om te bepalen welke probleem van invloed is op hun apparaat. Voer vervolgens de meest relevante uit van de volgende oplossingen:
+* Als de gebruiker een virtuele machine inschrijft om deze te testen, zorg er dan voor dat deze volledig is geconfigureerd, zodat Intune het serienummer en hardwaremodel kan herkennen. Meer informatie over [het installeren van VM's](macos-enroll.md#enroll-virtual-macos-machines-for-testing) in Intune.  
+* Als uw organisatie inschrijvingsbeperkingen heeft ingeschakeld die persoonlijke macOS-apparaten blokkeert, moet u handmatig [Voeg het serienummer van het persoonlijke apparaat](corporate-identifiers-add.md#manually-enter-corporate-identifiers) aan Intune toevoegen.  
+* Als het apparaat nog steeds aan een andere gebruiker in Intune is toegewezen, heeft de vorige eigenaar de bedrijfsportal-app niet gebruikt voor het verwijderen of herstellen ervan. Het verouderde apparaat uit Intune verwijderen:  
+
+    1. Ga naar [Intune in Azure Portal](https://portal.manage.microsoft.com) en meld u aan met uw beheerdersreferenties.
+    2. Ga naar Intune > **Apparaten** > **Alle apparaten**.  
+    3. Zoek het apparaat op met het inschrijvingsprobleem. Zoek op apparaatnaam of MAC/HW-adres om uw resultaten te verfijnen.
+    4. Selecteer het apparaat > **Verwijderen**. Verwijder alle andere vermeldingen die aan het apparaat zijn gekoppeld.  
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemen bij het gebruik van System Center Configuration Manager met Intune
 ### <a name="mobile-devices-disappear"></a>Mobiele apparaten verdwijnen

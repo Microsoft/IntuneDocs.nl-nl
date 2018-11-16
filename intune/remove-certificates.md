@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4287322fd494c97cf24feb8cc16435a4405f2af
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
+ms.openlocfilehash: a823ea2f04d8e3a8f1ca5a2f1364060840686501
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50150100"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561938"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>SCEP- en PKCS-certificaten verwijderen in Microsoft Intune
 
@@ -48,7 +48,7 @@ In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS-
 - Een SCEP-certificaat wordt ingetrokken wanneer:
   - De beheerder wijzigingen aanbrengt in het SCEP-profiel of dit bijwerkt
 
-- Het basiscertificaat wordt verwijderd wanneer:
+- Een basiscertificaat wordt verwijderd wanneer:
   - Een eindgebruiker wordt uitgeschreven
   - De beheerder een apparaat [wist](devices-wipe.md#wipe)
   - De beheerder een apparaat [buiten gebruik stelt](devices-wipe.md#retire)
@@ -131,7 +131,7 @@ In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS-
   - De beheerder de gebruiker of groep uit Azure AD verwijdert
   - De beheerder wijzigingen aanbrengt in het PKCS-profiel of dit bijwerkt
 
-## <a name="android--android-enterprise-devices"></a>Android- en Android Enterprise-apparaten
+## <a name="android-knox-devices"></a>Android KNOX-apparaten
 
 #### <a name="scep-certificates"></a>SCEP-certificaten
 
@@ -177,6 +177,10 @@ In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS-
   - De beheerder wijzigingen aanbrengt in het PKCS-profiel of dit bijwerkt
   - Het configuratieprofiel uit de groepstoewijzing wordt verwijderd
   - Het nalevingsbeleid uit de groepstoewijzing wordt verwijderd 
+  
+  
+> [!NOTE]
+> Android for work-apparaten zijn niet gevalideerd voor de bovenstaande scenario's. Verouderde Android-apparaten (alle niet-Samsung-apparaten zonder werkprofiel) zijn niet ingeschakeld voor het verwijderen van certificaten. 
 
 ## <a name="macos-certificates"></a>macOS-certificaten
 

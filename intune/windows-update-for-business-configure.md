@@ -5,19 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 6/06/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 0e82a63cfbbb0780566f9dc1f4ddf0b914e4ca2c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425152"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576831"
 ---
 # <a name="manage-software-updates-in-intune"></a>Software-updates beheren in Intune
 
@@ -36,7 +36,7 @@ Met behulp van Windows Update voor Bedrijven kunt u de updatebeheerervaring vere
       
   Zie [Overzicht voor Windows als een Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels) voor meer informatie over de beschikbare onderhoudskanalen.
 - **Instellingen voor uitstel**: configureer instellingen voor het uitstellen van updates om de installatie van updates voor groepen apparaten uit te stellen. U kunt deze instellingen gebruiken voor een gefaseerde update-implementatie, zodat u de voortgang kunt controleren.
-- **Onderbreken**: stel de installatie van updates uit als u op enig moment tijdens de implementatie van de updates problemen ontdekt.
+- **Pauzeren**: als er zich een probleem voordoet tijdens het uitrollen van de update, kunt u de installatie van de update uitstellen. 
 - **Onderhoudsvenster**: configureer de tijden waarop de updates kunnen worden geïnstalleerd.
 - **Type update**: kies welke typen updates worden geïnstalleerd. Bijvoorbeeld kwaliteitsupdates, upgrades van onderdelen of stuurprogramma’s.
 - **Installatiegedrag**: hiermee configureert u hoe de update wordt geïnstalleerd. Bijvoorbeeld, wordt het apparaat automatisch opnieuw opgestart na de installatie?
@@ -59,30 +59,23 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 
     ![Windows-instelling voor diagnostische gegevens en gebruiksgegevens](./media/telemetry-basic.png)
 
-    U kunt deze instelling handmatig configureren of u kunt een Intune-apparaatbeperkingsprofiel voor Windows 10 en hoger gebruiken. Hiervoor configureert u de instelling **Algemeen** > **Verzending van diagnostische gegevens** ten minste op **Basic**. Zie [Instellingen voor apparaatbeperking configureren](device-restrictions-configure.md) voor meer informatie over apparaatprofielen.
+    U kunt deze instelling handmatig configureren of een Intune-profiel voor Windows 10 en hoger gebruiken (**Apparaatbeperkingen** > **Rapporten en telemetrie** > stel **Verbruiksgegevens delen** in op minimaal **Basis**). Zie [Instellingen voor apparaatbeperking configureren](device-restrictions-configure.md) voor meer informatie over apparaatprofielen.
 
-- In de Intune-beheerconsole vindt u vier instellingen die het gedrag van software-updates beheren. Deze instellingen maken deel uit van het algemene configuratiebeleid voor Windows 10 Desktop- en Mobile-apparaten:
-  - **Automatische updates toestaan**
-  - **Functies van evaluatieversies toestaan**
-  - **Geplande installatiedag**
-  - **Geplande installatietijd**
+- De klassieke Azure-portal heeft ook een beperkt aantal andere instellingen voor Windows 10-updates in het apparaatconfiguratieprofiel. Als een van deze instellingen is geconfigureerd wanneer u naar Azure Portal migreert, wordt het volgende aangeraden:
 
-  De klassieke Azure-portal heeft ook een beperkt aantal andere instellingen voor Windows 10-updates in het apparaatconfiguratieprofiel. Als een van deze instellingen is geconfigureerd wanneer u naar Azure Portal migreert, wordt het volgende aangeraden:
-
-1. Maak Windows 10 updateringen in de Azure-portal met de instellingen die u nodig hebt. De instelling **Functies van evaluatieversies toestaan** wordt niet ondersteund in Azure Portal omdat deze niet langer van toepassing is op de meest recente builds van Windows 10. U kunt de andere drie instellingen, evenals andere instellingen voor Windows 10-updates, configureren wanneer u updateringen maakt.
+  1. Maak Windows 10 updateringen in de Azure-portal met de instellingen die u nodig hebt. De instelling **Functies van evaluatieversies toestaan** wordt niet ondersteund in Azure Portal omdat deze niet langer van toepassing is op de meest recente builds van Windows 10. U kunt de andere instellingen, evenals andere instellingen voor Windows 10-updates, configureren wanneer u update-ringen maakt.
 
    > [!NOTE]
    > Instellingen voor Windows 10-updates die zijn gemaakt in de klassieke portal worden na de migratie niet weergegeven in de Azure-portal. Deze instellingen worden echter toegepast. Als u deze instellingen migreert en het gemigreerde beleid bewerkt in Azure Portal, worden deze instellingen verwijderd uit het beleid.
 
-2. Verwijder de update-instellingen in de klassieke portal. Nadat u naar Azure Portal bent gemigreerd en dezelfde instellingen toevoegt aan een update-ring, moet u de instellingen in de klassieke portal verwijderen om mogelijke beleidsconflicten te voorkomen. Wanneer dezelfde instelling bijvoorbeeld met verschillende waarden wordt geconfigureerd, is er sprake van een conflict. Er is geen eenvoudige manier om hierachter te komen, omdat de instelling die in de klassieke portal is geconfigureerd niet in Azure Portal wordt weergegeven.
+  2. Verwijder de update-instellingen in de klassieke portal. Nadat u naar Azure Portal bent gemigreerd en dezelfde instellingen toevoegt aan een update-ring, moet u de instellingen in de klassieke portal verwijderen om mogelijke beleidsconflicten te voorkomen. Wanneer dezelfde instelling bijvoorbeeld met verschillende waarden wordt geconfigureerd, is er sprake van een conflict. Er is geen eenvoudige manier om hierachter te komen, omdat de instelling die in de klassieke portal is geconfigureerd niet in Azure Portal wordt weergegeven.
 
 ## <a name="create-and-assign-update-rings"></a>Update-ringen maken en toewijzen
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Software-updates** > **Windows 10-update-ringen** > **Maken**.
-4. Voer een naam en een beschrijving (optioneel) in en kies vervolgens **Configureren**.
-5. Voer bij **Instellingen** de volgende informatie in:
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services** > filter op **Intune** en selecteer vervolgens **Microsoft Intune**.
+2. Selecteer **Software-updates** > **Windows 10-update-ringen** > **Maken**.
+3. Voer een naam en een beschrijving (optioneel) in en kies vervolgens **Configureren**.
+4. Voer bij **Instellingen** de volgende informatie in:
 
    - **Servicing-kanaal**: stel het kanaal in van waaruit het apparaat Windows-updates ontvangt.
    - **Microsoft-productupdates**: kies of u wilt zoeken naar app-updates via Microsoft Update.
@@ -94,7 +87,7 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 
    - **Uitstelperiode voor kwaliteitsupdates (dagen)**: geef het aantal dagen op dat kwaliteitsupdates worden uitgesteld. U kunt deze kwaliteitsupdates uitstellen gedurende maximaal 30 dagen vanaf de vrijgave.
 
-     Kwaliteitsupdates zijn doorgaans oplossingen en verbeteringen in de bestaande Windows-functionaliteit. Deze worden op de eerste dinsdag van elke maand gepubliceerd. Ze kunnen echter op elk gewenst moment door Microsoft worden vrijgegeven. U kunt bepalen of en hoe lang u ontvangen kwaliteitsupdates wilt uitstellen nadat ze beschikbaar zijn gekomen in Windows Update.
+     Kwaliteitsupdates zijn doorgaans oplossingen en verbeteringen in de bestaande Windows-functionaliteit. Deze worden op de tweede dinsdag van elke maand gepubliceerd. Kwaliteitsupdates via Windows Update voor Bedrijven ontvangen alleen deze updates (versie B), hoewel Microsoft van tijd tot tijd andere updates kan publiceren. U kunt bepalen of en hoe lang u ontvangen kwaliteitsupdates wilt uitstellen nadat ze beschikbaar zijn gekomen in Windows Update. Zie [Deploy updates using Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) (Updates implementeren met Windows Update voor Bedrijven) voor meer informatie.
 
    - **Uitstelperiode voor upgrades van onderdelen (dagen)**: geef het aantal dagen op dat upgrades van onderdelen worden uitgesteld. U kunt deze functie-updates uitstellen gedurende maximaal 180 dagen vanaf de vrijgave.
 
@@ -106,7 +99,7 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 
    - **Delivery Optimization**: kies de methode waarmee apparaten Windows-updates moeten downloaden. Zie [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode) voor meer informatie.
 
-6. Wanneer u klaar bent, selecteert u **OK**. Selecteer in **Update-ring maken** de optie **Maken**.
+5. Wanneer u klaar bent, selecteert u **OK**. Selecteer in **Update-ring maken** de optie **Maken**.
 
 De nieuwe updatering wordt weergegeven in de lijst met updateringen.
 
@@ -120,10 +113,9 @@ Met de gratis oplossing Update Compliance kunt u de updatenaleving weergeven in 
 ### <a name="review-update-compliance-in-intune"></a>Updatenaleving weergeven in Intune 
 <!-- 1352223 --> Een beleidsrapport weergeven met de implementatiestatus voor de Windows 10-updateringen die u hebt geconfigureerd.
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Software-updates** > **Overzicht**. Hier wordt algemene informatie weergegeven over de status van de update-ringen die u hebt toegewezen.
-4. Open een van de volgende rapporten:
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services** > filter op **Intune** en selecteer vervolgens **Microsoft Intune**.
+2. Selecteer **Software-updates** > **Overzicht**. Hier wordt algemene informatie weergegeven over de status van de update-ringen die u hebt toegewezen.
+3. Open een van de volgende rapporten:
 
    **Voor alle implementatieringen**:  
    1. In het deelvenster **Software-updates** > **Windows 10-update-ringen**
@@ -138,7 +130,7 @@ Met de gratis oplossing Update Compliance kunt u de updatenaleving weergeven in 
 ### <a name="review-update-compliance-using-oms"></a>Updatenaleving weergeven in OMS
 Met de gratis oplossing Update Compliance kunt u de Windows 10 update-implementatie bewaken. Zie [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Windows-updates bewaken met Update Compliance) voor meer informatie. Wanneer u deze oplossing gebruikt, kunt u een commerciële id implementeren op elk van uw door Intune beheerde Windows 10-apparaten waarvoor u over de naleving van updates wilt rapporteren.
 
-In de Intune-console kunt u de OMA-URI-instellingen van een aangepast beleid gebruiken om de commerciële id te configureren. Zie [Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune) voor meer informatie.   
+In Intune kunt u de OMA-URI-instellingen van een aangepast beleid gebruiken om de commerciële id te configureren. Zie [Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune) voor meer informatie.   
 
 Het pad voor de OMA-URI (hoofdlettergevoelig) voor het configureren van de commerciële id is: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
@@ -158,17 +150,16 @@ U kunt bijvoorbeeld de volgende waarden gebruiken in **OMA-URI-instelling toevoe
 ## <a name="pause-updates"></a>Updates onderbreken
 U kunt het ontvangen van upgrades voor onderdelen of kwaliteitsupdates op een apparaat onderbreken gedurende een periode van maximaal 35 dagen vanaf het moment waarop u de updates onderbreekt. Als het maximum aantal dagen is verstreken, verloopt de functionaliteit voor onderbreken automatisch en zoekt het apparaat in Windows Update naar toepasselijke updates. Na deze scan kunt u de updates opnieuw onderbreken.
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Software-updates** > **Windows 10-update-ringen**.
-4. Kies in de lijst met update-ringen de ring die u wilt onderbreken en kies vervolgens **...**   >  **Kwaliteitsupdates onderbreken** > of **Onderdelenupdates onderbreken**, afhankelijk van het type updates dat u wilt onderbreken.
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services** > filter op **Intune** en selecteer vervolgens **Microsoft Intune**.
+2. Selecteer **Software-updates** > **Windows 10-update-ringen**.
+3. Kies in de lijst met update-ringen de ring die u wilt onderbreken en kies vervolgens **...**   >  **Kwaliteitsupdates onderbreken** > of **Onderdelenupdates onderbreken**, afhankelijk van het type updates dat u wilt onderbreken.
 
 > [!IMPORTANT]
 > Wanneer u een opdracht voor onderbreken opgeeft, ontvangen apparaten deze opdracht de volgende keer dat bij de service wordt gecontroleerd op updates. Mogelijk wordt een geplande update geïnstalleerd voordat het apparaat controleert of er nieuwe updates zijn.
 > Als het betreffende apparaat is uitgeschakeld wanneer u de opdracht voor onderbreken opgeeft, kan dit apparaat, wanneer het wordt ingeschakeld, geplande updates downloaden en installeren voordat er bij Intune wordt gecontroleerd op nieuwe updates.
 
 ### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>De nieuwste versie van software-updates voor Windows 10 verwijderen 
-Indien u een probleem ontdekt op uw Windows 10-computers, dan kunt u de meest recente functie-update of de nieuwste kwaliteitsupdate verwijderen (terugdraaien). U kunt alleen een functie- of kwaliteitsupdate verwijderen voor het servicekanaal waarop het apparaat zich bevindt. Door de verwijdering wordt een beleid geactiveerd waarmee de vorige update op uw Windows 10-computers wordt hersteld. Specifiek voor functie-updates kunt u de tijd beperken van 2 tot 60 dagen waarin een verwijdering van de meest recente versie kan worden toegepast. Verwijderopties voor software-updates instellen:
+Als u een probleem ontdekt op uw Windows 10-computers, kunt u de meest recente functie-update of de nieuwste kwaliteitsupdate verwijderen (terugdraaien). U kunt alleen een functie- of kwaliteitsupdate verwijderen voor het servicekanaal waarop het apparaat zich bevindt. Door de verwijdering wordt een beleid geactiveerd waarmee de vorige update op uw Windows 10-computers wordt hersteld. Specifiek voor functie-updates kunt u de tijd beperken van 2 tot 60 dagen waarin een verwijdering van de meest recente versie kan worden toegepast. Verwijderopties voor software-updates instellen:
 
 1. Selecteer **Software-updates** in Intune.
 2. Selecteer **Windows 10-update-ringen** > selecteer een bestaande update-ring > **Verwijderen**.

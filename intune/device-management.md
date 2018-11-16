@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 8ae7a15f623b82cabed5314c4770c2edef902414
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 891b50b2280636c7a5df8ecc1a01bb10723122b5
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253558"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576722"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Wat is Microsoft Intune-apparaatbeheer?
 
@@ -37,7 +37,7 @@ De workload **Apparaten** biedt inzicht in de apparaten die u beheert en geeft u
    - **Overzicht** bevat een visuele momentopname van de ingeschreven apparaten en laat zien hoeveel apparaten de verschillende platformen gebruiken, waaronder Android, iOS en meer.
    - **Alle apparaten** geeft een lijst weer met de ingeschreven apparaten die u beheert.
 
-     Met de functie **Exporteren** maakt u een CSV-lijst van alle apparaten in stappen van 10.000 (Internet Explorer) of 30.000 (Edge, Chrome).
+     Met de functie **Exporteren** maakt u een CSV-lijst van alle apparaten in stappen van 10.000 (Internet Explorer) of 30.000 (Microsoft Edge, Chrome).
 
      Selecteer een apparaat om [meer gegevens over het apparaat weer te geven](device-inventory.md), zoals gegevens over de hardware, geïnstalleerde apps en de nalevingsbeleidsstatus.
 

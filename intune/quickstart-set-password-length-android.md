@@ -1,12 +1,12 @@
 ---
-title: 'Snelstart: een vereiste wachtwoordlengte instellen voor Android-apparaten'
+title: Snelstartgids - Een beleid voor wachtwoordcompatibiliteit maken voor Android-apparaten
 titlesuffix: Microsoft Intune
-description: In deze snelstart gaat u Microsoft Intune gebruiken om een wachtwoordlengte in te stellen die is vereist voor Android-apparaten.
+description: In deze snelstartgids gaat u Microsoft Intune gebruiken om de wachtwoordlengte in te stellen die is vereist voor Android-apparaten.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,18 @@ ms.assetid: 81b4fa08-5333-4c54-9f49-8db5f6984ed2
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f925df731c3ddd45b13d976b0686d76d941c71e6
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 438121e0375559455547f4cc5453d272576681ca
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49395276"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510802"
 ---
-# <a name="quickstart-set-a-required-password-length-for-android-devices"></a>Snelstart: een vereiste wachtwoordlengte instellen voor Android-apparaten
+# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Snelstartgids: Een beleid voor wachtwoordcompatibiliteit maken voor Android-apparaten
 
 In deze snelstart gaat u Microsoft Intune gebruiken om de gebruikers van Android onder uw werknemers te verplichten een wachtwoord van een voorgeschreven lengte in te voeren om toegang te krijgen tot informatie op hun Android-apparaten. 
+
+Een Intune-beleid voor apparaatcompatibiliteit bepaalt de regels en instellingen waaraan apparaten moeten voldoen om als compatibel te worden beschouwd. U kunt compatibiliteitsbeleid met voorwaardelijke toegang gebruiken om toegang tot bedrijfsresources toe te staan of te blokkeren. U kunt ook apparaatrapporten krijgen en maatregelen nemen voor niet-naleving.
 
 > [!IMPORTANT]
 > Naast wachtwoordinstellingen moet u ook overwegen andere systeembeveiligingsinstellingen te gebruiken om uw medewerkers te beveiligen. Zie [Systeembeveiligingsinstellingen](compliance-policy-create-android-for-work.md#system-security-settings) voor meer informatie.
@@ -33,27 +35,34 @@ Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor ee
 
 ## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
 
-Meld u aan bij [Intune](https://aka.ms/intuneportal) als globale beheerder of beheerder van een Intune-service. U gaat in Azure Portal naar Intune door **Alle services** > **Intune** te kiezen. Intune bevindt zich in de sectie **Controle en beheer**.
+Meld u aan bij [Intune](https://aka.ms/intuneportal) als globale beheerder of beheerder van een Intune-service. 
 
 ## <a name="create-a-device-compliance-policy"></a>Een nalevingsbeleid voor apparaten maken
-1. Zodra u de blade **Microsoft Intune** hebt geopend, selecteert u **Apparaatnaleving** > **Beleid** > **Beleid maken**.
+
+Voor deze snelstartgids gaat u Intune gebruiken om de gebruikers van Android onder uw werknemers te verplichten een wachtwoord van een voorgeschreven lengte in te voeren om toegang te krijgen tot informatie op hun Android-apparaten.
+
+1. In Intune selecteert u **Apparaatconformiteit** > **Beleid** > **Beleid maken**.
 2. Voeg **Android-naleving** toe als **naam**. Voeg ook een **beschrijving** toe.
 3. Selecteer voor **Platform** de optie **Android**. 
 4. Selecteer **Instellingen** > **Systeembeveiliging** om de Android-blade **Systeembeveiliging** weer te geven.
-5. In de sectie **Wachtwoord** klikt u naast **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten** op **Vereisen**.
-6. Geef naast **Minimale wachtwoordlengte** **6** op.  
+5. Klik op **Vereisen** naast **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**.
+6. Voer **6** in naast **Minimale wachtwoordlengte**. 
 
-    ![Schermopname van het maken van een groep in Microsoft Intune](./media/quickstart-set-password-length-android-01.png)
+    ![Schermopname van het maken van een groep in Microsoft Intune](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 
-7. Wanneer u klaar bent, klikt u op **OK** om de blade **Systeembeveiliging** te sluiten. 
-8. Klik op **OK** om de blade **Nalevingsbeleid voor Android** te sluiten. 
-9. Klik op **Maken** om het beleid te maken.
+7. Wanneer u klaar bent, klikt u op **OK** > **OK** > **Maken** om het beleid te maken.
 
-Als het beleid is gemaakt, wordt dit weergegeven in de lijst **Apparaatnaleving - Beleid**. 
+Als het beleid is gemaakt, wordt dit weergegeven in de lijst van compatibiliteitsbeleid voor apparaten. 
+
+## <a name="clean-up-resources"></a>Resources opschonen
+
+Als u het beleid niet meer nodig hebt, kunt u het verwijderen. Hiervoor selecteert u het compatibiliteitsbeleid en klikt u op **Verwijderen**.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-In deze snelstart hebt u Intune gebruikt om een nalevingsbeleid te maken voor de Android-apparaten van uw werknemers om een wachtwoord van ten minste zes tekens lang te vereisen.
+In deze snelstart hebt u Intune gebruikt om een nalevingsbeleid te maken voor de Android-apparaten van uw werknemers om een wachtwoord van ten minste zes tekens lang te vereisen. Zie [Aan de slag met compatibiliteitsbeleid voor apparaten in Intune](device-compliance-get-started.md) voor meer informatie over het maken van compatibiliteitsbeleid voor apparaten.
+
+Als u deze reeks snelstartgidsen voor Intune wilt volgen, kunt u doorgaan met de volgende snelstartgids.
 
 > [!div class="nextstepaction"]
-> [Automatische inschrijving instellen](quickstart-setup-auto-enrollment.md)
+> [Snelstartgids: Meldingen verzenden naar niet-compatibele apparaten](quickstart-send-notification.md)

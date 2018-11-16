@@ -14,12 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cc378a4f484852d84943b4d1094b71df5b7a530d
-ms.sourcegitcommit: 006fa8dd4d605e2873fba6e3a965ef794d6f3764
+ms.openlocfilehash: 1a7c7ebca1c6472b58021a57b1b4a59fc42966b0
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36945477"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576950"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Instellingen voor de beveiliging van eindpunten voor Windows 10 en hoger in Intune
 
@@ -98,7 +98,7 @@ Deze instellingen zijn van toepassing op specifieke netwerktypen, waaronder **Do
 
 ## <a name="windows-defender-smartscreen-settings"></a>Instellingen voor Windows Defender SmartScreen
 
-Wordt ondersteund op de volgens edities van Windows 10 met Microsoft Edge geïnstalleerd:
+Wordt ondersteund in de volgens edities van Windows 10 met Microsoft Edge geïnstalleerd:
 - Home
 - Professional
 - Zakelijk
@@ -173,7 +173,7 @@ Deze instellingen zijn van toepassing zijn op gegevensstations van het besturing
   - **Agent voor gegevensherstel op basis van certificaten**: als de waarde is ingesteld op **Blokkeren**, kunt u de agent voor gegevensherstel niet gebruiken voor met BitLocker beveiligde OS-stations. Stel deze functie in op **Niet geconfigureerd** (standaard) om deze instelling te schakelen, zodat agenten voor gegevensherstel kunnen worden gebruikt met besturingssysteemstations die met BitLocker zijn beveiligd.
   - **Herstelwachtwoord maken door gebruiker**: kies of gebruikers verplicht of optioneel een herstelwachtwoord van 48 cijfers mogen genereren, of dat dit niet is toegestaan.
   - **Herstelsleutel maken door gebruiker**: kies of gebruikers verplicht of optioneel een herstelsleutel van 256 bits mogen genereren, of dat dit niet is toegestaan.
-  - **Herstelopties in de BitLocker-installatiewizard**: stel in op **Blokkeren** zodat gebruikers de opties voor herstel niet kunnen weergeven en wijzigen. Wanneer **Niet geconfigureerd** (standaard) is ingesteld, kunnen gebruikers de opties voor herstel weergeven en wijzigen wanneer ze BitLocker inschakelen.
+  - **Herstelopties in de BitLocker-installatiewizard**: stel deze optie in op **Blokkeren** zodat gebruikers de opties voor herstel niet kunnen weergeven en wijzigen. Wanneer **Niet geconfigureerd** (standaard) is ingesteld, kunnen gebruikers de opties voor herstel weergeven en wijzigen wanneer ze BitLocker inschakelen.
   - **BitLocker-herstelgegevens naar AD DS opslaan**: stel deze optie in op **Inschakelen** om de BitLocker-herstelgegevens op te slaan in Azure Active Directory (AAD). Wanneer **Niet geconfigureerd** (standaard) is ingesteld, worden de herstelgegevens niet opgeslagen in AAD.
   - **BitLocker-herstelgegevens opgeslagen naar AD DS**: hiermee bepaalt u welke delen van de BitLocker-herstelgegevens worden opgeslagen in Azure AD. U kunt kiezen uit:
     - **Back-up maken van herstelwachtwoorden en sleutelpakketten**

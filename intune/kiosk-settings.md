@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3de4d79e6121505718a75ffe64102bb1bc18347
-ms.sourcegitcommit: 244456907e3ab4a4389d32d06060606a9591cfba
+ms.openlocfilehash: 0d749d51f0ae146b68be8abb3a59a0504aea1180
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751640"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298136"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioskinstellingen voor Windows 10 (en hoger) in Intune
 
@@ -77,8 +77,15 @@ Wanneer u een kioskmodus voor één app kiest, moet u de volgende instellingen o
   - **De browser vernieuwen na niet-actieve tijd**: voer de niet-actieve tijd (1-1440 minuten) in, waarna de kioskbrowser opnieuw wordt gestart en vernieuwd. Niet-actieve tijd wordt weergegeven als het aantal minuten dat is verstreken sinds de laatste interactie van de gebruiker. De waarde is standaard leeg of blanco, wat inhoudt dat er geen time-out is voor inactiviteit.
 
   - **Toegestane websites**: gebruik deze instelling om toe te staan dat bepaalde websites worden geopend. Met andere woorden, gebruik deze functie om het aantal websites dat op het apparaat kan worden geopend, te beperken. U kunt bijvoorbeeld toestaan dat alle websites op `http://contoso.com*` kunnen worden geopend. Standaard worden alle websites toegestaan.
+ 
+      Als u specifieke websites wilt toestaan, moet u een bestand uploaden dat een lijst met toegestane websites op afzonderlijke regels bevat. Als u geen bestand toevoegt, zijn alle websites toegestaan. Intune biedt ondersteuning voor * (sterretje) als jokerteken.
 
-    Als u alleen bepaalde websites wilt toestaan, moet u een CSV-bestand uploaden dat een lijst met toegestane websites bevat. Als u geen CSV-bestand toevoegt, zijn alle websites toegestaan. Intune biedt ondersteuning voor * (sterretje) als jokerteken.
+      Het voorbeeldbestand moeten eruitzien als het volgende lijst:
+
+      `http://bing.com`  
+      `https://bing.com`  
+      `http://contoso.com/*`  
+      `https://contoso.com/*`  
 
   Selecteer **OK** om uw wijzigingen op te slaan.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: bdf08ccac21407bc2572f1133b2fe8d45548342f
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: 63295d7e05889f5a8beb44e399f36a4fbe27544d
+ms.sourcegitcommit: 76c7b315b83eb6cb5b996facf1d250fb3e22f1bc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679250"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276112"
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Welke gegevens kan mijn bedrijf zien wanneer ik mijn apparaat inschrijf?
+# <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Welke gegevens kan mijn organisatie zien wanneer ik mijn apparaat inschrijf?
 
-Uw bedrijf kan uw persoonlijke gegevens niet zien wanneer u een apparaat met Microsoft Intune inschrijft. Wanneer u een apparaat inschrijft, geeft u uw bedrijf toestemming om bepaalde soorten informatie op uw apparaat weer te geven, zoals het apparaatmodel en serienummer. Uw bedrijf gebruikt deze informatie om de zakelijke gegevens op het apparaat te beveiligen.
+Uw organisatie kan uw persoonlijke gegevens niet zien wanneer u een apparaat met Microsoft Intune inschrijft. Wanneer u een apparaat inschrijft, geeft u uw organisatie toestemming om bepaalde soorten informatie op uw apparaat weer te geven, zoals het apparaatmodel en serienummer. Uw organisatie gebruikt deze informatie om de zakelijke gegevens op het apparaat te beveiligen.
 
-**Wat uw bedrijf nooit kan zien:**
+**Wat uw organisatie nooit kan zien:**
 
 - Oproepen en browsegeschiedenis
 - E-mail- en sms-berichten
@@ -35,20 +35,23 @@ Uw bedrijf kan uw persoonlijke gegevens niet zien wanneer u een apparaat met Mic
 - Kalender
 -   Wachtwoorden
 - Foto's, met inbegrip van wat er in de app Foto's of het camera-album staat
+- Bestanden
 
-**Wat uw bedrijf altijd kan zien:**
+**Wat uw organisatie altijd kan zien:**
 
 - Apparaatmodel, zoals Google Pixel
-- Fabrikant, zoals Microsoft
-- Besturingssysteem, zoals iOS
-- App-namen, zoals Microsoft Word
+- Apparaatfabrikant, zoals Microsoft
+- Besturingssysteem en versie, zoals iOS 12.0.1
+- Namen van apps, zoals Microsoft Word: op persoonlijke apparaten kan uw organisatie alleen uw beheerde apps zien. Op apparaten waar het bedrijf eigenaar van is, kan uw organisatie al uw apps zien.
 - Eigenaar van het apparaat
 - Apparaatnaam
-- Serienummer
+- Serienummer van apparaat
+- IMEI
 
-**Wat uw bedrijf mogelijk kan zien:**
+**Wat uw organisatie mogelijk kan zien:**
 
--  Telefoonnummer: op apparaten die eigendom zijn van het **bedrijf** kan uw volledige telefoonnummer worden gezien. Van **persoonlijke** apparaten zijn alleen de laatste vier cijfers van uw telefoonnummer zichtbaar voor uw bedrijf. U kunt het **eigendomstype** van elk apparaat zien door de pagina **Apparaatdetails** voor het apparaat te openen.
--  Locatie: uw bedrijf kan nooit de locatie van het apparaat zien, behalve als u een iOS-apparaat hebt dat onder controle staat en dat is kwijtgeraakt. [Hoe weet ik dat?](https://go.microsoft.com/fwlink/?linkid=853816)
-- App-inventaris: als uw bedrijf gebruikmaakt van Mobile Threat Defense, kunnen er meer details worden weergegeven over de apps die op uw iOS-apparaat zijn geïnstalleerd. Meer informatie over [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
-- Netwerkgegevens: bepaalde informatie over netwerkverbindingen voor Android-apparaten kan voor de ondersteuning van uw bedrijf beschikbaar zijn. Als uw bedrijf bijvoorbeeld vereist dat apparaten binnen een bepaald gebouw blijven, herkent uw apparaat het netwerk waarmee het verbonden is. 
+-  Telefoonnummer: Op apparaten die eigendom zijn van het **organisatie** is uw volledige telefoonnummer zichtbaar. Van **persoonlijke** apparaten zijn alleen de laatste vier cijfers van uw telefoonnummer zichtbaar voor uw organisatie. U kunt het **eigendomstype** van elk apparaat zien door de pagina **Apparaatdetails** voor het apparaat te openen.
+- Apparaatopslagruimte: als u een vereiste app niet kunt installeren, kan uw organisatie kijken naar de opslagruimte van het apparaat om te controleren of er wellicht te weinig ruimte is.  
+-  Locatie: uw organisatie kan nooit de locatie van het apparaat zien, behalve als u een iOS-apparaat hebt dat onder controle staat en dat is kwijtgeraakt. [Hoe weet ik dat?](https://go.microsoft.com/fwlink/?linkid=853816)
+- App-inventaris: als uw organisatie gebruikmaakt van Mobile Threat Defense, kunnen er meer details worden weergegeven over de apps die op uw iOS-apparaat zijn geïnstalleerd. Meer informatie over [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- Netwerkgegevens: bepaalde informatie over netwerkverbindingen voor Android-apparaten kan voor de ondersteuning van uw organisatie beschikbaar zijn. Als uw organisatie bijvoorbeeld vereist dat apparaten binnen een bepaald gebouw blijven, herkent uw apparaat het netwerk waarmee het is verbonden. 

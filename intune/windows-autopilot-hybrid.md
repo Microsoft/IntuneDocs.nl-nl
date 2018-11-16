@@ -15,12 +15,12 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 120478644743619dbcfc5e8e36806a1109924331
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50972771"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298085"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Apparaten die zijn gekoppeld aan Hybrid Azure Active Directory implementeren met Intune en Windows Autopilot (preview)
 U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn gekoppeld aan Hybrid Azure Active Directory. Volg hiertoe de onderstaande stappen.
@@ -30,7 +30,7 @@ U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn
 
 ## <a name="prerequisites"></a>Vereisten
 
-- Configureer [aan Hybrid Azure Active Directory gekoppelde apparaten](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains).
+- Configureer [aan Hybrid Azure Active Directory gekoppelde apparaten](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan).
     - Zorg ervoor dat u [de registratie verifieert met behulp van de cmdlet Get-MsolDevice]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
 
 De te registreren apparaten moeten ook voldoen aan de volgende voorwaarden:
@@ -108,9 +108,9 @@ De organisatie-eenheid waaraan het recht is verleend om computers te maken, moet
 
 ## <a name="install-the-intune-connector"></a>De Intune-connector installeren
 
-De Intune-connector voor Active Directory moet worden geïnstalleerd op een computer met Windows Server 2016 die toegang heeft tot internet en uw Active Directory. Als u de schaal en beschikbaarheid wilt verhogen of meerdere Active Directory-domeinen wilt ondersteunen, kunt u in uw omgeving meerdere connectors installeren. Het is raadzaam om de connector te installeren op een server waarop geen andere Intune-connecters worden uitgevoerd.
+De Intune-connector voor Active Directory moet worden geïnstalleerd op een computer met Windows Server 2016 die toegang heeft tot internet en uw Active Directory. Als u de schaal en beschikbaarheid wilt verhogen of meerdere Active Directory-domeinen wilt ondersteunen, kunt u in uw omgeving meerdere connectors installeren. Het is raadzaam om de connector te installeren op een server waarop geen andere Intune-connectors worden uitgevoerd.
 
-1. Kies in Azure Portal **Apparaatregistratie** > **Windows-registratie** > **Intune-connector voor Active Directory (preview)** > **Connector toevoegen**. 
+1. Kies in [Intune](https://aka.ms/intuneportal) **Apparaatinschrijving** > **Windows-inschrijving** > **Intune-connector voor Active Directory (preview-versie)** > **Connector toevoegen**. 
 2. Volg de instructies voor het downloaden van de connector.
 3. Open het gedownloade setup-bestand voor de connector om deze te installeren (ODJConnectorBootstrapper.exe).
 4. Kies aan het einde van de installatie **Configureren**.
@@ -124,7 +124,7 @@ Als u in uw netwerkomgeving over een webproxy beschikt, volgt u deze instructies
 
 
 ## <a name="create-a-device-group"></a>Een apparaatgroep maken
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Groepen** > **Nieuwe groep**.
+1. Kies in [Intune](https://aka.ms/intuneportal) **Groepen** > **Nieuwe groep**.
 2. Op de blade **Groep**:
     1. Als **groepstype** kiest u **Beveiliging**.
     2. Geef een **groepsnaam** en een **beschrijving** voor de groep op.
@@ -175,7 +175,7 @@ Nadat Autopilot-apparaten bij Intune zijn geregistreerd, wordt de apparaatnaam g
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Een Windows AutoPilot-implementatieprofiel maken en toewijzen
 Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren.
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaatprofielen** > **Profiel maken**.
+1. Kies in [Intune](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaatprofielen** > **Profiel maken**.
 2. Geef een **naam** en desgewenst een **beschrijving** op.
 3. Als **implementatiemodus** kiest u **Op basis van gebruiker**.
 4. Kies in het vak **Toevoegen aan Azure AD als** de optie **Gekoppeld aan Hybrid Azure AD (preview)**.
@@ -188,21 +188,21 @@ Het duurt ongeveer 15 minuten voordat de status van het apparaatprofiel is gewij
 
 ## <a name="turn-on-the-enrollment-status-page-optional"></a>De pagina Status van de registratie inschakelen (optioneel)
 
-1.  In [Intune](https://aka.ms/intuneportal) kiest u **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving (preview)**.
-2.  In de blade **Pagina Status van de inschrijving** kiest u **Standaard** > **Instellingen**.
-3.  Bij **Voortgang van installatie van app en profiel weergeven** kiest u **Ja**.
+1. In [Intune](https://aka.ms/intuneportal) kiest u **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving (preview)**.
+2. In de blade **Pagina Status van de inschrijving** kiest u **Standaard** > **Instellingen**.
+3. Bij **Voortgang van installatie van app en profiel weergeven** kiest u **Ja**.
 4. Configureer de andere opties indien nodig.
-5.  Kies **Opslaan**.
+5. Kies **Opslaan**.
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>Een profiel voor Domeindeelname maken en toewijzen
 
-1. Kies in **Microsoft Intune** de optie **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+1. Kies in [Intune](https://aka.ms/intuneportal) **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 2. Voer de volgende eigenschappen in:
    - **Naam**: voer een beschrijvende naam in voor het nieuwe profiel.
    - **Beschrijving:** voer een beschrijving in voor het profiel.
    - **Platform**: kies **Windows 10 en hoger**.
    - **Profieltype**: kies **Domeindeelname (preview)**.
-3.  Kies **Instellingen** en geef een **Computernaamvoorvoegsel**, **Domeinnaam** en **Organisatie-eenheid** op (optioneel). 
+3. Kies **Instellingen** en geef een **Computernaamvoorvoegsel**, **Domeinnaam** en **Organisatie-eenheid** op (optioneel). 
 4. Kies **OK** > **Maken**. Het profiel wordt gemaakt en wordt weergegeven in de lijst.
 5. Als u het profiel wilt toewijzen, volgt u de stappen onder [Een apparaatprofiel toewijzen](device-profile-assign.md#assign-a-device-profile). 
 
