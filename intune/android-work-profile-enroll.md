@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: a38c5db1e608cb5d9a047dc72ee9109e840096e0
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255081"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51618987"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Inschrijving van apparaten met een Android-werkprofiel instellen
 
@@ -56,5 +56,5 @@ Volg deze stappen voor het goedkeuren van de Intune bedrijfsportal:
 5.  Selecteer **Goedgekeurd houden wanneer de app nieuwe machtigingen aanvraagt** en klik vervolgens op **Opslaan.**
 
 ## <a name="next-steps-for-android-work-profiles"></a>Volgende stappen voor Android-werkprofielen
-- [Apps voor Android-werkprofielen implementeren](store-apps-android.md)
+- [Apps voor Android-werkprofielen implementeren](apps-add-android-for-work.md)
 - [Configuratiebeleid voor Android-werkprofielen toevoegen](device-profiles.md)

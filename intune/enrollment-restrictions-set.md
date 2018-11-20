@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 97543ec74225ef86208000bccb2a8ad7852dd9c1
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602143"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610053"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -66,7 +66,7 @@ Standaardbeperkingen worden automatisch opgegeven voor registratiebeperkingen vo
 
 ## <a name="set-device-type-restrictions"></a>Beperkingen voor apparaattypen instellen
 
-U kunt de instellingen voor een beperking van het type apparaat wijzigen via onderstaande stappen. Deze beperkingen hebben geen invloed op apparaten die al zijn geregistreerd. Apparaten die zijn geregistreerd bij de [Intune PC-agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md), kunnen niet met deze functie worden geblokkeerd.
+U kunt de instellingen voor een beperking van het type apparaat wijzigen via onderstaande stappen. Deze beperkingen hebben geen invloed op apparaten die al zijn geregistreerd. Apparaten die zijn geregistreerd bij de [Intune PC-agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune), kunnen niet met deze functie worden geblokkeerd.
 
 1. Meld u aan bij Azure Portal.
 2. Selecteer **Meer Services**, zoek naar **Intune** en kies vervolgens **Intune**.
@@ -100,11 +100,11 @@ De volgende methoden worden gezien als een zakelijke Windows-registratie:
 - Het apparaat is geregistreerd via [automatische inschrijving met behulp van SCCM voor co-beheer](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
 De volgende inschrijvingen worden door Intune wel als zakelijk gemarkeerd, maar toch geblokkeerd omdat ze de Intune-beheerder geen beheer op apparaatniveau bieden:
- - [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling tijdens het instellen van Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*.
-- [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling vanuit Windows-instellingen](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)*.
+ - [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling tijdens het instellen van Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
+- [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling vanuit Windows-instellingen](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*.
  
 Ook de volgende persoonlijke registratiemethoden worden geblokkeerd:
-- [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) via [Werkaccount toevoegen vanuit de Windows-instellingen](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*.
+- [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) via [Werkaccount toevoegen vanuit de Windows-instellingen](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)\*.
 - De optie [Alleen inschrijven voor MDM]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) in de Windows-instellingen.
 
 \* Deze worden niet geblokkeerd als ze zijn geregistreerd met Autopilot.
