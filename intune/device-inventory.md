@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187798"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610087"
 ---
 # <a name="see-device-details-in-intune"></a>Apparaatdetails bekijken in Intune
 
@@ -45,7 +45,7 @@ In dit artikel leest u hoe u al uw apparaten en hun eigenschappen kunt bekijken 
      - Een externe hulpsessie starten
    - Gebruik **Eigenschappen** om een [apparaatcategorie die u maakt](device-group-mapping.md) toe te wijzen en wijzig de eigendom van het apparaat naar een persoonlijk apparaat of een bedrijfsapparaat.
    - **Hardware** bevat veel details over het apparaat, zoals de apparaat-id, het besturingssysteem en de versie, opslagruimte, het model en de fabrikant, instellingen voor voorwaardelijke toegang en meer details.
-   - Bij **Gedetecteerde toepassingen** staan alle apps vermeld die volgens Intune op het apparaat zijn geïnstalleerd, en de appversies. U kunt de lijst met apps ook naar een CSV-bestand **exporteren**.
+   - Bij **Gedetecteerde toepassingen** staan alle apps vermeld die volgens Intune op het apparaat zijn geïnstalleerd, en de appversies. U kunt de lijst met apps ook naar een CSV-bestand **exporteren**. Deze lijst wordt elke zeven dagen bijgewerkt.
    - Bij **Apparaatnaleving** staan alle toegewezen nalevingsbeleidsregels en wordt vermeld of het apparaat compatibel of niet compatibel is.
    - Bij **Apparaatconfiguratie** ziet u het configuratiebeleid van alle apparaten die aan het apparaat zijn toegewezen en wordt vermeld of het beleid is geslaagd of mislukt.
 
@@ -60,8 +60,10 @@ Intune maakt alleen op apparaten in bedrijfseigendom een lijst met apps. Apps op
 |iOS|Alleen beheerde apps|Alle apps die op het apparaat zijn geïnstalleerd|
 |macOS|Alle apps die op het apparaat zijn geïnstalleerd|Alle apps die op het apparaat zijn geïnstalleerd|  
 |Android|Alleen beheerde apps|Alle apps die op het apparaat zijn geïnstalleerd|  
+|Android Enterprise|Alleen beheerde apps|Alleen apps die in het werkprofiel zijn geïnstalleerd|  
 
 ## <a name="hardware-device-details"></a>Hardwareapparaatdetails
+Afhankelijk van de provider die door de apparaten wordt gebruikt, worden mogelijk niet alle gegevens vermeld
 
 |Details|Beschrijving|Platform| 
 |--------------|----------------------|----|  

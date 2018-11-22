@@ -5,23 +5,45 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b794ec40d05358ddd1aa3179c2f4060b2cd6fe1d
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 23e993f883b149e86ce83e0e028572f55468b84b
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236506"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947306"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>VPN-instellingen voor iOS-apparaten configureren in Microsoft Intune
 
 Microsoft Intune biedt veel VPN-instellingen die kunnen worden geïmplementeerd op uw iOS-apparaten. Deze instellingen worden gebruikt om VPN-verbindingen te maken en configureren voor het netwerk van uw organisatie. In dit artikel worden deze instellingen beschreven. Sommige instellingen zijn alleen beschikbaar voor sommige VPN-clients, zoals Citrix en Zscaler.
+
+## <a name="connection-type"></a>Type verbinding
+
+Selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
+
+- **Check Point Capsule VPN**
+- **Cisco Legacy AnyConnect**: dit is van toepassing op de app [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) versie 4.0.5x en eerder.
+- **Cisco AnyConnect**: dit is van toepassing op de app [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) versie 4.0.7x en later.
+- **SonicWall Mobile Connect**
+- **F5 Access Legacy**: dit is van toepassing op de app F5 Access versie 2.1 en eerder.
+- **F5 Access**: dit is van toepassing op de app F5 Access versie 3.0 en later.
+- **Palo Alto Networks GlobalProtect (verouderd)**: dit is van toepassing op de app Palo Alto Networks GlobalProtect versie 4.1 en eerder.
+- **Palo Alto Networks GlobalProtect**: dit is van toepassing op de app Palo Alto Networks GlobalProtect versie 5.0 en later.
+- **Pulse Secure**
+- **Cisco (IPSec)**
+- **Citrix VPN**
+- **Citrix SSO**
+- **Zscaler**: hiervoor moet u Zscaler Private Access (ZPA) integreren met uw Azure AD-account. Zie de [Zscaler documentatie](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO) voor gedetailleerde instructies. 
+- **Aangepaste VPN**
+
+> [!NOTE]
+> Cisco, Citrix, F5 en Palo Alto hebben aangekondigd dat hun verouderde clients niet werken in iOS 12. U moet zo snel mogelijk migreren naar de nieuwe apps. Zie de [blog van het Microsoft Intune-ondersteuningsteam](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409) voor meer informatie.
 
 ## <a name="base-vpn-settings"></a>Basis-VPN-instellingen
 
@@ -37,44 +59,28 @@ Welke instellingen in de volgende lijst worden weergegeven, is afhankelijk van h
 
     > [!NOTE]
     > Als gebruikersnaam en wachtwoord worden gebruikt als verificatiemethode voor Cisco IPsec VPN, moeten deze het SharedSecret bieden via een aangepast profiel voor de Apple Configurator.
-  
-- **Verbindingstype**: selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
-  - **Check Point Capsule VPN**
-  - **Cisco Legacy AnyConnect**: dit is van toepassing op de app [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) versie 4.0.5x en eerder.
-  - **Cisco AnyConnect**: dit is van toepassing op de app [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) versie 4.0.7x en later.
-  - **SonicWall Mobile Connect**
-  - **F5 Access Legacy**: dit is van toepassing op de app F5 Access versie 2.1 en eerder.
-  - **F5 Access**: dit is van toepassing op de app F5 Access versie 3.0 en later.
-  - **Palo Alto Networks GlobalProtect (verouderd)**: dit is van toepassing op de app Palo Alto Networks GlobalProtect versie 4.1 en eerder.
-  - **Palo Alto Networks GlobalProtect**: dit is van toepassing op de app Palo Alto Networks GlobalProtect versie 5.0 en later.
-  - **Pulse Secure**
-  - **Cisco (IPSec)**
-  - **Citrix VPN**
-  - **Citrix SSO**
-  - **Zscaler**: hiervoor moet u Zscaler Private Access (ZPA) integreren met uw Azure AD-account. Zie de [Zscaler documentatie](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO) voor gedetailleerde instructies. 
-  - **Aangepaste VPN**    
 
-    > [!NOTE]
-    > Cisco, Citrix, F5 en Palo Alto hebben aangekondigd dat hun verouderde clients niet werken in iOS 12. U moet zo snel mogelijk migreren naar de nieuwe apps. Zie de [blog van het Microsoft Intune-ondersteuningsteam](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409) voor meer informatie.
-
-* **Uitgesloten URL's** (alleen Zscaler): wanneer u verbonden bent met het VPN van Zscaler, zijn de vermelde URL's toegankelijk buiten de Zscaler-cloud. 
+- **Uitgesloten URL's** (alleen Zscaler): wanneer u verbonden bent met het VPN van Zscaler, zijn de vermelde URL's toegankelijk buiten de Zscaler-cloud. 
 
 - **Split tunneling**: u kunt deze optie **inschakelen**  of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar gebruikt het standaardnetwerk van het hotel om gewoon op het web te surfen.
 
-- **Netwerktoegangsbeheer (NAC) inschakelen**: deze instelling wordt tijdelijk gebruikt voor VPN-clients (zoals Citrix) zodat een apparaat-id in het VPN-profiel kan worden gebruikt voor netwerktoegangsbeheer (NAC). Als u **Ik ga akkoord** kiest, wordt de apparaat-id opgenomen in het VPN-profiel. Er zijn op dit moment geen VPN-clients of NAC-partneroplossingen die ondersteuning bieden voor deze nieuw id. Apparaten kunnen dus ongeacht de nalevingsstatus verbinding maken met de VPN. Dit document wordt bijgewerkt zodra onze partners ondersteuning bieden voor de id.
+- **VPN-id** (aangepaste VPN, Zscaler en Citrix): dit is een id voor de VPN-app die u gebruikt en wordt geleverd door uw VPN-provider.
+  - **Sleutel-/waardeparen voor de aangepaste VPN-kenmerken van uw organisatie invoeren**: voeg **sleutel-** en **waardeparen** toe of importeer deze om uw VPN-verbinding aan te passen. Deze waarden worden doorgaans aangeleverd door uw VPN-provider.
+
+- **Netwerktoegangsbeheer (NAC) inschakelen** (alleen voor Citrix SSO): wanneer u **Ik ga akkoord** selecteert, wordt de apparaat-id opgenomen in het VPN-profiel. Deze id kan worden gebruikt voor verificatie bij de VPN om netwerktoegang toe te staan of te voorkomen.
+
+  **Wanneer u Citrix SSO met Gateway gebruikt**, moet u ervoor zorgen dat:
+
+  - U Citrix Gateway 12.0.59 of hoger gebruikt.
+  - Uw gebruikers Citrix SSO 1.1.6 of hoger hebben geïnstalleerd op hun apparaten.
+  - Citrix Gateway met Intune voor NAC is geïntegreerd, zoals staat beschreven in de Citrix-implementatiegids [Integrating Microsoft Intune/Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf).
+  - NAC is ingeschakeld in het VPN-profiel.
 
   Belangrijke informatie:  
 
-  - Als deze instelling wordt ingeschakeld, wordt de verbinding met de VPN elke 24 uur verbroken.
-  - De apparaat-id maakt deel uit van het profiel, maar is niet zichtbaar in Intune of in het profiel. De id wordt nergens door Microsoft opgeslagen en wordt niet door Microsoft gedeeld. Zodra dit wordt ondersteund door VPN-partners, kunnen de VPN-clients, zoals Citrix SSO, de id ontvangen en bij Intune opvragen of het apparaat is ingeschreven en of het VPN-profiel wel of niet voldoet aan de vereisten.
+  - Als NAC wordt ingeschakeld, wordt de verbinding met de VPN elke 24 uur verbroken.
+  - De apparaat-id maakt deel uit van het profiel, maar is niet zichtbaar in Intune. De id wordt nergens door Microsoft opgeslagen en wordt niet door Microsoft gedeeld. Zodra dit wordt ondersteund door VPN-partners, kunnen de VPN-clients, zoals Citrix SSO, de id ontvangen en bij Intune opvragen of het apparaat is ingeschreven en of het VPN-profiel wel of niet voldoet aan de vereisten.
   - Als u deze instelling wilt verwijderen, maakt u het profiel opnieuw en selecteert u de optie **Ik ga akkoord** niet. Wijs het profiel vervolgens opnieuw toe.
-
-## <a name="custom-vpn-settings"></a>Basis-VPN-instellingen
-
-Als u **Aangepaste VPN** als verbindingstype hebt geselecteerd, configureert u de volgende instellingen. Deze instellingen zijn ook zichtbaar voor Zscaler- en Citrix-verbindingen.
-
-- **VPN-id**: dit is een id voor de VPN-app die u gebruikt en wordt geleverd door uw VPN-provider.
-- **Sleutel-/waardeparen voor de aangepaste VPN-kenmerken van uw organisatie invoeren**: voeg **sleutel-** en **waardeparen** toe of importeer deze om uw VPN-verbinding aan te passen. Deze waarden worden doorgaans aangeleverd door uw VPN-provider.
 
 ## <a name="automatic-vpn-settings"></a>Automatische VPN-instellingen
 

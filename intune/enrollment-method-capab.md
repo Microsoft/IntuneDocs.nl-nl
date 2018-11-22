@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c9e440aef7f434cbe675506fd6f22a9bd26b2c31
-ms.sourcegitcommit: 528d2bc70bfd25803a2d9f0fe9372c8a5f5e7dad
+ms.openlocfilehash: 457acdc212855767687f97f7d03b731f35afad46
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446817"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811526"
 ---
 # <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Mogelijkheden per inschrijvingsmethode voor Windows-apparaten
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "47446817"
 Met Intune kunt u de apparaten en apps beheren waarvan uw werknemers gebruikmaken en kunt u beheren hoe zij toegang hebben tot uw bedrijfsgegevens. De apparaten moeten eerst worden ingeschreven bij de Intune-service. Er zijn verschillende methoden om de apparaten van uw werknemers te registreren. Voor elke methode gelden andere aanbevolen procedures en mogelijkheden, zoals wordt weergegeven in de onderstaande tabellen.
 
 ## <a name="best-practices-by-enrollment-method"></a>Aanbevolen procedures per inschrijvingsmethode
-| **Best practices** | **[Neemt deel aan Azure AD](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Neemt deel aan Azure AD via Autopilot](enrollment-autopilot.md)** |**[Bulk](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
+| **Best practices** | **[Neemt deel aan Azure AD](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Neemt deel aan Azure AD via Autopilot](enrollment-autopilot.md)** |**[Bulk](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Veel gebruikt in EDU|![X](media/xmark.png)|![Vinkje](media/checkmark.png)|![Vinkje](media/checkmark.png)|![Vinkje](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |Apparaten kunnen worden gebruikt als gedeelde apparaten|![X](media/xmark.png)|![X](media/xmark.png)|![Vinkje](media/checkmark.png)|![Vinkje](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
@@ -36,7 +36,7 @@ Met Intune kunt u de apparaten en apps beheren waarvan uw werknemers gebruikmake
 
 ## <a name="capabilities-by-enrollment-method"></a>Mogelijkheden per inschrijvingsmethode
 
-| **Mogelijkheden** | **[Neemt deel aan Azure AD](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Neemt deel aan Azure AD via Autopilot](enrollment-autopilot.md)** |**[Bulk](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
+| **Mogelijkheden** | **[Neemt deel aan Azure AD](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Neemt deel aan Azure AD via Autopilot](enrollment-autopilot.md)** |**[Bulk](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Voorwaardelijke toegang                                      |![Vinkje](media/checkmark.png)|![Vinkje](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Vinkje](media/checkmark.png)|![Vinkje](media/checkmark.png)|
 |Gebruikers worden gekoppeld aan apparaten                    |![Vinkje](media/checkmark.png)|![Vinkje](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Vinkje](media/checkmark.png)|![Vinkje](media/checkmark.png)|
@@ -52,5 +52,5 @@ Met Intune kunt u de apparaten en apps beheren waarvan uw werknemers gebruikmake
 
 ## <a name="next-steps"></a>Volgende stappen
 
-[Opties voor inschrijving](enrollment-options.md)
+[Inschrijving voor Windows instellen](windows-enroll.md)
 

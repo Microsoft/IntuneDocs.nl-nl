@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: a8cbe80154e5eac6a48c86101c76faed4602288a
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 3362de6231aa8b045d064d1f3764cb2b13f5be3c
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915713"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167430"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -106,9 +106,6 @@ Met Microsoft Intune worden gebruiksstatistieken verzameld voor uw app.
 
     * Als eindgebruikers ervoor kiezen deze gegevens niet te verzenden, moeten ze telemetrie uitschakelen onder Instellingen op de bedrijfsportal-app. Zie [Gegevensverzameling door Microsoft uitschakelen](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android) voor meer informatie. 
 
-
- Het versienummer van de line-of-business-app voor iOS en Android is zichtbaar <!-- 1380712 -->
-
 ## <a name="line-of-business-app-version-numbers"></a>Versienummers van line-of-business-apps
 
 In line-of-business-apps in Intune wordt nu het versienummer getoond voor iOS- en Android-apps. Het nummer wordt in de Azure Portal in de app-lijst en in de blade App-overzicht getoond. Eindgebruikers kunnen het app-nummer in de bedrijfsportal-app en in de webportal zien.
@@ -164,6 +161,23 @@ Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integr
 * **Intune-beleid voor app-beveiliging**: als u uw app wilt testen aan de hand van alle Intune-beleid voor app-beveiliging, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](app-protection-policy-settings-android.md).
 
 * **Probleemoplossing**: als u problemen ondervindt tijdens het handmatig testen van de gebruikerservaring van uw app-installatie, gaat u naar [Problemen met app-installatie oplossen](troubleshoot-app-install.md). 
+
+### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Uw app toegang geven tot de Intune-app-beveiliging (optioneel)
+
+Als uw app zijn eigen aangepaste Azure Active Directory-instellingen (AAD) voor verificatie gebruikt, moet u de volgende stappen volgen voor zowel apps uit de openbare store als interne LOB-apps. De stappen **hoeven niet te worden genomen als uw app momenteel gebruikmaakt van de standaard client-id van de Intune-SDK**. 
+
+Nadat u uw app hebt geregistreerd in een Azure-tenant en deze wordt weergegeven onder **Alle toepassingen**, moet u uw app toegang geven tot de Intune-app-beveiliging (eerder bekend als MAM-service). In Azure Portal:
+
+1.  Ga naar de blade **Windows Azure Active Directory (AD)**.
+2.  Selecteer de instelling **App-registratie** voor de toepassing.
+3.  Selecteer in **Instellingen** onder de kop **API-toegang** **Toestemming vereist**. 
+4.  Klik op **+Toevoegen**.
+5.  Klik op **Een API selecteren**. 
+6.  Voer in het zoekvak **Microsoft Mobile Application Management** in.
+7.  Selecteer **Microsoft Mobile Application Management** in de lijst met API's en klik op selecteren.
+8.  Selecteer **App-beheergegevens van de gebruiker lezen en schrijven**.
+9.  Klik op **Gereed**.
+10. Klik op **Machtigingen verlenen** en klik vervolgens op **Ja**. 
 
 ### <a name="badge-your-app-optional"></a>Uw app van een logo voorzien (optioneel)
 

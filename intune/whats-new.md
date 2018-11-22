@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: b96e9b79d70c538982aac52ca822b403d1c0e4f8
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576967"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167583"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,15 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook geplande 
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-12-2018"></a>Week van 12 november 2018
+
+### <a name="network-access-control-nac-support-for-citrix-sso-for-ios----3259404---"></a>Ondersteuning bij netwerktoegangsbeheer (NAC) voor Citrix SSO voor iOS <!-- 3259404 -->
+
+Citrix heeft een update van Citrix Gateway uitgebracht voor netwerktoegangsbeheer (NAC) voor Citrix SSO voor iOS in Intune. U kunt ervoor kiezen om een apparaat-id op te nemen in een VPN-profiel in Intune en vervolgens dit profiel te pushen naar uw iOS-apparaten. U moet de nieuwste update van Citrix Gateway installeren om deze functionaliteit te kunnen gebruiken.
+
+[VPN-instellingen configureren op iOS-apparaten](vpn-settings-ios.md#base-vpn-settings) biedt meer informatie over het gebruik van NAC, waaronder enkele aanvullende vereisten. 
+
 ## <a name="week-of-november-5-2018"></a>Week van 5 november 2018
 
 ### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Ondersteuning van iOS 12 OAuth in iOS-e-mailprofielen <!--2155106 -->
@@ -53,11 +62,7 @@ iOS-e-mailprofielen van Intune ondersteunen iOS 12 Open Authorization (OAuth). M
 U kunt nu hybride apparaten die aan Azure Active Directory zijn toegevoegd, instellen met behulp van Autopilot. Apparaten moeten aan het netwerk van uw organisatie zijn toegevoegd om de hybride Autopilot-functie te kunnen gebruiken. Zie [Hybride apparaten die aan Azure Active Directory zijn toegevoegd implementeren met Intune en Windows Autopilot](windows-autopilot-hybrid.md) voor meer informatie.
 Deze functie komt de komende paar dagen beschikbaar voor onze gebruikers. Daarom kunt u deze stappen pas volgen als de functie beschikbaar is voor uw account.
 
-### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>APP-instellingen voor webgegevens <!-- 2662995  -->
-De APP-instellingen voor webcontent op zowel Android- als iOS-apparaten zijn bijgewerkt om zowel http- als https-webkoppelingen beter te kunnen verwerken, evenals de gegevensoverdracht via iOS Universal- en Android App-koppelingen.  
-
 ## <a name="week-of-october-29-2018"></a>Week van 29 oktober 2018
-
 
 ### <a name="app-management"></a>Appbeheer
 
@@ -120,9 +125,6 @@ Deze update bevat de macOS Gatekeeper om apparaten te controleren op naleving. A
 
 #### <a name="enrollment-abandonment-report----1382924---"></a>Rapport over afgebroken inschrijvingen <!-- 1382924 -->
 Een nieuw rapport met details over afgebroken inschrijvingen wordt beschikbaar via **Apparaatinschrijving** > **Monitor**. Zie [Rapport over afgebroken items in bedrijfsportal](enrollment-report-company-portal-abandon.md) voor meer informatie.
-
-#### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Autopilot-profielen toewijzen aan de virtuele groep Alle apparaten <!--2715522 -->
-U kunt Autopilot-profielen toewijzen aan de virtuele groep Alle apparaten. Kies hiervoor **Inschrijving apparaat** > **Inschrijving Windows** > **Implementatieprofielen** > kies een profiel >  **Toewijzingen** > onder  **Toewijzen aan** kies **Alle apparaten**. Zie [Windows-apparaten inschrijven met Windows AutoPilot](enrollment-autopilot.md) voor meer informatie over Autopilot-profielen.
 
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>Nieuwe gebruiksvoorwaardenfunctie voor Azure Active Directory <!-- 2870393 -->
 Azure Active Directory krijgt een gebruiksvoorwaardenfunctie die u kunt gebruiken in plaats van de bestaande Intune-voorwaarden. De gebruiksvoorwaardenfunctie voor Azure AD biedt meer flexibiliteit als het gaat om welke voorwaarden wanneer worden weergegeven, en biedt betere lokalisatieondersteuning, meer controle over de weergave van voorwaarden en verbeterde rapportage. De gebruiksvoorwaardenfunctie voor Azure AD vereist wel Azure Active Directory Premium P1, dat ook onderdeel is van de Enterprise Mobility + Security E3-suite. Zie het artikel [De voorwaarden voor gebruikerstoegang van uw bedrijf beheren](terms-and-conditions-create.md) voor meer informatie.
@@ -504,17 +506,6 @@ Er is een bijgewerkte versie van de Intune APP SDK voor Android beschikbaar ter 
 
 
 ### <a name="device-configuration"></a>Apparaatconfiguratie
-
-#### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642---"></a>S/MIME gebruiken om meerdere apparaten van een gebruiker te coderen en ondertekenen <!-- 1333642 -->
-Deze update bevat een S/MIME-e-mailversleuteling met een nieuw profiel voor een geïmporteerd certificaat (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > selecteer het platform > profieltype **Geïmporteerd PKCS-certificaat**). In Intune kunt u certificaten importeren in PFX-indeling. Intune kan deze certificaten dan leveren aan meerdere apparaten die zijn geregistreerd door één gebruiker. Dit omvat ook:
-
-- Het systeemeigen iOS-e-mailprofiel ondersteunt het inschakelen van S/MIME-versleuteling met behulp van geïmporteerde certificaten in de PFX-indeling.
-- De systeemeigen mail-app op Windows Phone 10-apparaten gebruikt automatisch het S/MIME-certificaat.
-- De persoonlijke certificaten kunnen worden afgeleverd op meerdere platformen. Maar niet alle e-mail-apps ondersteunen S/MIME.
-- Op andere platformen moet u mogelijk de mail-app handmatig configureren om S/MIME in te schakelen.  
-- E-mail-apps die ondersteuning bieden voor S/MIME-versleuteling, kunnen het ophalen van certificaten voor S/MIME-e-mailversleuteling verwerken op een manier die een MDM niet kan ondersteunen, zoals het lezen van het certificaatarchief van de uitgever.
-
-Wordt ondersteund op: Windows, Windows Phone 10, macOS, iOS, Android
 
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>Apparaatnalevingsbeleid maken met behulp van firewallinstellingen op macOS-apparaten <!-- 1497640 -->
 Wanneer u een nieuw macOS-nalevingsbeleid maakt (**Apparaatcompatibiliteit** > **Beleid** > **Beleid maken**  >  **Platform: macOS** > **Systeembeveiliging**), ziet u enkele nieuwe instellingen bij **Firewall**: 

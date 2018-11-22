@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fdfa89654df1f62979240f364c2e28b5a15e78f
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 6668848bcb381299417ca7a641e267c41f9a1e79
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058911"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167388"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Inrichtingsprofielen gebruiken voor iOS-apps om te voorkomen dat uw apps verlopen
 
@@ -49,7 +49,7 @@ Als beheerder kunt u beveiligingsgroepen in- en uitsluiten om de inrichtingsconf
 3. Configureer de volgende waarden in het deelvenster **Profiel maken**:
     - **Naam**: geef een naam op voor dit mobiele inrichtingsprofiel.
     - **Beschrijving**: geef indien gewenst een beschrijving op voor het beleid.
-    - **Profielbestand uploaden**: klik op **Importeren** en kies een Apple-profielbestand voor mobiele configuratie (met de extensie **.mobileprovision**) dat u hebt gedownload van de Apple-website voor ontwikkelaars.
+    - **Profielbestand uploaden**: klik op **Importeren** en kies een Apple-profielbestand voor mobiele configuratie (met de extensie `.mobileprovision`) dat u hebt gedownload van de Apple-website voor ontwikkelaars.
 4. Als u klaar bent, kiest u **Maken**.
 
 ## <a name="next-steps"></a>Volgende stappen

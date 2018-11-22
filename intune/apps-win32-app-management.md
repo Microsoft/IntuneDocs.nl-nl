@@ -1,10 +1,27 @@
 ---
-title: Win32-apps toevoegen aan Microsoft Intune titlesuffix: description: Informatie over hoe u Win32-apps toevoegt met Microsoft Intune. Dit onderwerp bevat een overzicht van de Intune-functies voor het leveren en beheren van Win32-apps en biedt informatie over de probleemoplossing voor Win32-apps. trefwoorden: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
->>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-
-ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
+title: Win32-apps aan Microsoft Intune toevoegen
+titlesuffix: ''
+description: Ontdek hoe u Win32-apps toevoegt, levert en beheert met Microsoft Intune. Dit onderwerp bevat een overzicht van de Intune-functies voor het leveren en beheren van Win32-apps en biedt informatie over de probleemoplossing voor Win32-apps.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 11/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+ms.reviewer: mghadial
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
+ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51830114"
 ---
-
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune (zelfstandig) - Win32-app-beheer (openbare preview)
 
 De zelfstandige versie van Intune heeft uitgebreidere beheermogelijkheden voor Win32-apps. Cloudklanten kunnen weliswaar Configuration Manager gebruiken voor het beheer van Win32-apps, maar klanten met alleen Intune hebben uitgebreidere beheermogelijkheden voor hun Win32 LOB-apps (Line-Of-Business). Dit document bevat een overzicht van de Intune-beheerfunctie voor Win32-apps en informatie over de probleemoplossing.
@@ -43,6 +60,13 @@ U kunt het [hulpprogramma voor uploadvoorbereiding van Microsoft Intune Win32-ap
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    Met deze opdracht worden de gebruiksgegevens voor het hulpprogramma weergegeven.    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Met deze opdracht genereert u het `.intunewin`-bestand van de opgegeven bronmap en het installatiebestand. Dit hulpprogramma haalt vereiste informatie voor Intune op voor het MSI-installatiebestand. Als `-q` is opgegeven, wordt de opdracht uitgevoerd in de stille modus. Als het uitvoerbestand al bestaat, wordt het overschreven. Als de uitvoermap niet bestaat, wordt deze automatisch gemaakt.    |
+
+Wanneer u het bestand *.intunewin* genereert, plaatst u eventuele referentiebestanden in een submap van de map van het installatieprogramma. Vervolgens gebruikt u een relatief pad om te verwijzen naar het specifieke bestand dat u nodig hebt. Bijvoorbeeld:
+
+**Bronmap voor installatieprogramma:** *c:\testapp\v1.0*<br>
+**Licentiebestand:** *c:\testapp\v1.0\licenses\license.txt*
+
+Verwijs naar het bestand *license.txt* door het relatieve pad *licenses\license.txt* te gebruiken.
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>Een Win32-app maken, toewijzen en bewaken
 

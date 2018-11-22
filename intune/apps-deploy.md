@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5442b45ed180d10943dfd5d1a1ef1546d693b2b
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903417"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610104"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Apps toewijzen aan groepen met Microsoft Intune
 
@@ -58,7 +58,7 @@ In de volgende tabellen worden de verschillende opties vermeld voor het toewijze
 6. Selecteer **Toewijzingen** in de sectie **Beheren** van het menu.
 7. Selecteer **Groep toevoegen** om het deelvenster **Groep toevoegen** te openen dat is gerelateerd aan de app.
 8. Selecteer een **toewijzingstype** voor de specifieke app:
-   - **Beschikbaar voor ingeschreven apparaten**: gebruikers installeren de app vanuit de bedrijfsportal-app of vanaf de website.
+   - **Beschikbaar voor ingeschreven apparaten**: wijs de app toe aan groepen gebruikers die de app vanuit de bedrijfsportal-app of vanaf de website installeren.
    - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen gebruikers van wie de apparaten niet zijn ingeschreven bij Intune. Apps uit de beheerde Google Play Store bieden geen ondersteuning voor deze optie. 
    - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen.
    - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen.

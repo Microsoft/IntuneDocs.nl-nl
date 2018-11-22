@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d44b7483d65eeb7b2a39783fb113c444184db4f3
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: b1e07bd67d4bf8b776500be01571deddb1e5e58f
+ms.sourcegitcommit: 630dfe1413c1819f35aa941ffc888a7084771a55
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232219"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51709135"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Een beleid voor voorwaardelijke toegang maken voor Exchange On-Premises en verouderde Exchange Online Dedicated
 
@@ -66,7 +66,7 @@ Controleer het volgende voordat u voorwaardelijke toegang configureert:
 - **Apparaten met een Android-werkprofiel**van EAS-mailclients: alleen de apps **Gmail** en **Nine Work for Android Enterprise** in het **werkprofiel** worden ondersteund op apparaten met een Android-werkprofiel. Voorwaardelijke toegang werkt alleen in combinatie met Android-werkprofielen als u een e-mailprofiel voor de app Gmail of Nine Work for Android Enterprise implementeert en die apps ook implementeert als verplicht te installeren apps.
 
 > [!NOTE]
-> De Microsoft Outlook-app voor Android en iOS wordt niet ondersteund. 
+> Microsoft Outlook voor Android en iOS wordt niet ondersteund via de on-premises Exchange-connector. Als u wilt gebruikmaken van Azure Active Directory-beleid voor voorwaardelijke toegang en beleid voor Intune-app-beveiliging met Outlook voor iOS en Android voor uw on-premises postvakken, raadpleegt u [Hybride moderne verificatie gebruiken met Outlook voor iOS en Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
 
 ### <a name="support-for-pcs"></a>Ondersteuning voor pc's
 
@@ -79,9 +79,9 @@ De native **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bi
 
 1. Nadat u zich hebt aangemeld, ziet u het **Azure-dashboard**.
 
-1. Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
+1. Kies  **Alle services**  in het linkermenu en typ dan  **Intune**  in het filtertekstvak.
 
-1. Kies **Intune**. Vervolgens ziet u het **Intune-Dashboard**.
+1. Kies  **Intune**. Vervolgens ziet u het **Intune-dashboard**.
 
 1. Kies **On-premises toegang**. In het deelvenster **On-premises toegang** vindt u de status van het beleid voor voorwaardelijke toegang en de apparaten die door het beleid worden beïnvloed.
 

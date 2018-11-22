@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
-ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
+ms.openlocfilehash: f311d8a389d551ed834d955c5d1c59dbc9c3c4a2
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45978243"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610019"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows-pc's beheren als computers via de Intune-softwareclient
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> U kunt Microsoft Intune gebruiken voor het beheren van Windows-pc's [als mobiele apparaten met Mobile Device Management (MDM)](windows-enroll.md) of als computers met de Intune-softwareclient, zoals hieronder beschreven. Microsoft adviseert klanten echter om indien mogelijk [de MDM-beheeroplossing te gebruiken](windows-enroll.md).
+> U kunt Microsoft Intune gebruiken voor het beheren van Windows-pc's [als mobiele apparaten met Mobile Device Management (MDM)](windows-enroll.md) of als computers met de Intune-softwareclient, zoals hieronder beschreven. Microsoft adviseert klanten echter om indien mogelijk [de MDM-beheeroplossing te gebruiken](windows-enroll.md). Raadpleeg [Het beheer van Windows-pc's als computers of mobiele apparaten vergelijken](pc-management-comparison.md) voor meer informatie 
 
 Intune biedt voor organisaties een uitgebreide oplossing voor het beheren van mobiele apparaten. Met Intune kunt u Windows-pc's beheren als mobiele apparaten met behulp van de moderne mogelijkheden voor apparaatbeheer die zijn ingebouwd in Windows 10. Als u wilt voldoen aan de beheerbehoeften van uw organisatie, kan Intune ook Windows-pc's beheren als computers met de Intune-softwareclient. Bij deze beheermethode wordt gebruikgemaakt van traditionele mogelijkheden voor computerbeheer uit het oude Windows-besturingssysteem.
 
@@ -40,7 +40,8 @@ Intune ondersteunt het beheer van Windows-pc's als computers met behulp van de s
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Vereisten voor Intune-pc-clientbeheer
 
-**Hardware**: hieronder vindt u de minimale hardwarevereisten voor het installeren van de Intune-clientsoftware:
+**Hardware**:  
+Hieronder vindt u de minimale hardwarevereisten voor het installeren van de Intune-clientsoftware:
 
 |Vereiste|Meer informatie|
 |---------------|--------------------|
@@ -48,7 +49,8 @@ Intune ondersteunt het beheer van Windows-pc's als computers met behulp van de s
 |Processor en geheugen|Raadpleeg de vereisten voor de processor en het RAM-geheugen voor het besturingssysteem van de computer.|
 |Schijfruimte|200 MB vrije schijfruimte voordat de clientsoftware wordt geïnstalleerd.|
 
-**Software**: hieronder staan de softwarevereisten beschreven voor het installeren van de clientsoftware:
+**Software**:  
+Hieronder staan de softwarevereisten beschreven voor het installeren van de clientsoftware:
 
 |Vereiste|Meer informatie|
 |---------------|--------------------|

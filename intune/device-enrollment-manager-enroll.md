@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d510596f021725292c7221e3056986c2c3fc93c
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: d7ff5a63b6afb619fbbe762d23208c1058e99943
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410783"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610138"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Apparaten inschrijven met een apparaatinschrijvingsmanageraccount
 
@@ -34,7 +34,7 @@ DEM-gebruikersaccounts en apparaten die zijn ingeschreven met een DEM-gebruikers
   - Alleen het lokale apparaat wordt weergegeven in de bedrijfsportal-app of op de website.
   - DEM-gebruikersaccounts kunnen geen Apple Volume Purchase Program-apps (VPP) met gebruikerslicenties gebruiken vanwege de Apple ID-vereisten per gebruiker voor het beheer van apps.
   - Apparaten kunnen VPP-apps installeren als ze over Apple VPP-apparaatlicenties beschikken.
-  
+  - Apparaten worden geblokkeerd voor Voorwaardelijke toegang, met uitzondering van Windows 10 1803+
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Een apparaatinschrijvingsmanager toevoegen

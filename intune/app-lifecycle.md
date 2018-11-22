@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,24 +14,24 @@ ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: apps; get-started
-ms.openlocfilehash: ad9eea41d0d40eed9aee07bcf5a77118c0efdab8
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 77a8adb418759386fdd02409a51b16a734d79ba8
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253746"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167381"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Overzicht van de app-levenscyclus in Microsoft Intune
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-De levenscyclus van de Microsoft Intune-app begint zodra een app wordt toegevoegd. Vervolgens doorloopt de app aanvullende fasen totdat u de app verwijdert. Wanneer u deze fasen begrijpt, weet u alles wat u nodig hebt om aan de slag te gaan met app-beheer in Intune.
+De levenscyclus van de Microsoft Intune-app begint zodra een app wordt toegevoegd. Vervolgens doorloopt de app aanvullende fasen totdat u de app verwijdert. Wanneer u deze fasen begrijpt, weet u alles wat u moet weten om aan de slag te gaan met app-beheer in Intune.
 
 ![De levenscyclus van de app](./media/app-lifecycle.png "de levenscyclus van de Intune-app")
 
 ## <a name="add"></a>Toevoegen
 
-De eerste stap in de implementatie van apps is het toevoegen van de apps die u wilt beheren en toewijzen aan Intune. U kunt met veel verschillende typen apps werken, maar de basisprocedures zijn hetzelfde. Met Intune kunt u verschillende app-typen toevoegen, zoals apps die intern zijn ontwikkeld (line-of-business), apps uit de Store, apps die zijn ingebouwd en apps op het web. Zie [Apps toevoegen aan Microsoft Intune](apps-add.md) voor meer informatie over deze app-typen. 
+De eerste stap in de implementatie van apps is het toevoegen van de apps die u wilt beheren en toewijzen aan Intune. U kunt met veel verschillende typen apps werken, maar de basisprocedures zijn hetzelfde. Met Intune kunt u verschillende app-typen toevoegen, zoals apps die intern zijn ontwikkeld (line-of-business), apps uit de Store, apps die zijn ingebouwd en apps op internet. Zie [Apps toevoegen aan Microsoft Intune](apps-add.md) voor meer informatie over deze app-typen. 
 
 ## <a name="deploy"></a>Implementeer
 

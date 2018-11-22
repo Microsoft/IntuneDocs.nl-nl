@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 6a249962c4ac75e51be082112b884a5825d4ef2a
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236285"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811509"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -29,7 +29,7 @@ ms.locfileid: "50236285"
 De Microsoft Intune-bedrijfsportal is de plaats waar gebruikers toegang hebben tot bedrijfsgegevens en algemene taken kunnen uitvoeren, zoals apparaten registreren, apps installeren en naar ondersteuningsinformatie van uw IT-afdeling zoeken.        
 
 > [!Tip]        
-> Wanneer u de bedrijfsportal aanpast, zijn de configuraties zowel van toepassing op de website als op de apps van de bedrijfsportal.       
+> Wanneer u de bedrijfsportal aanpast, zijn de configuraties zowel van toepassing op de website als op de apps van de bedrijfsportal. Houd er rekening mee dat gebruikers een Intune-licentie nodig hebben die is toegewezen aan de bedrijfsportal-website.
 
 Een aangepaste bedrijfsportal geeft uw eindgebruikers een vertrouwde en nuttige ervaring. Voor het aanpassen van de bedrijfsportal kiest u vanuit de workload **Client-apps** de optie **Instellen** > **Aangepaste stijl van de bedrijfsportal** en configureert u vervolgens de vereiste instellingen.  
 
@@ -48,7 +48,7 @@ Velden met een asterisk (*) zijn verplicht.
 | **URL voor de privacyverklaring** |     79     | U kunt de privacyverklaring van uw eigen bedrijf opgeven. Deze wordt dan weergegeven wanneer gebruikers in de bedrijfsportal op de privacykoppelingen klikken. U moet een geldige URL opgeven in de notatie `<https://www.contoso.com>`. |
 
 ## <a name="support-information"></a>Ondersteuningsinformatie      
-Voer de ondersteuningsinformatie van uw bedrijf in zodat u werknemer een contactpersoon heeft voor Intune-gerelateerde vragen.       
+Voer de ondersteuningsinformatie van uw bedrijf in zodat uw werknemer een contactpersoon heeft voor Intune-gerelateerde vragen.          
 
 |Veldnaam|Max. lengte|Meer informatie|
 |---|---|---|
@@ -84,24 +84,33 @@ Kies een logo dat er het beste uitziet op een witte of lichte achtergrond.
 
 ### <a name="brand-image-for-company-portal"></a>Merkafbeelding toevoegen voor de bedrijfsportal
 
-Geef een merkafbeelding weer die de huisstijl van uw bedrijf uitstraalt. Ondersteuning voor een merkafbeelding wordt toegevoegd aan de bedrijfsportal-apps. Desondanks is de afbeelding mogelijk niet op alle platformen zichtbaar.
+Geef een merkafbeelding weer die de huisstijl van uw bedrijf uitstraalt. Nadat u uw wijzigingen hebt opgeslagen, kiest u in de Intune-webportal, boven in de blade **Een voorbeeld van uw instellingen bekijken** om te zien hoe uw configuraties eruit gaan zien. Houd er rekening mee dat u de merkafbeelding alleen kunt bekijken op een iOS-apparaat, en niet in de Intune-webportal. 
 
 |Veldnaam|Meer informatie|
 |---|---|
-|**Uw merkafbeelding uploaden**| Deze optie is beschikbaar zodat een achtergrondafbeelding kan worden weergegeven op de profielpagina van de gebruiker in de bedrijfsportal-app.<p><ul><li>Aanbevolen breedte van afbeelding: groter dan 1125 px, maar niet minder dan 640 px</li><li>Maximale afbeeldingsgrootte: 1,3 MB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
+|**Uw merkafbeelding uploaden**| Deze optie is beschikbaar zodat een achtergrondafbeelding kan worden weergegeven op de profielpagina van de gebruiker in de bedrijfsportal-app.<p>*Opmerking*: de afbeelding wordt op verschillende platforms mogelijk anders weergegeven.<p><ul><li>Aanbevolen breedte van afbeelding: groter dan 1125 px, maar niet minder dan 640 px</li><li>Maximale afbeeldingsgrootte: 1,3 MB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
 
 Met de juiste merkafbeelding kan het vertrouwen van de gebruiker in de bedrijfsportal-app worden versterkt, doordat de app uw huisstijl weerspiegelt. Hier volgen enkele tips die u kunt gebruiken voor het verkrijgen, kiezen en optimaliseren van een afbeelding voor de bedrijfsportal. 
 
-- Neem contact op met uw marketing- of huisstijlafdeling. Mogelijk beschikken zij al over een goedgekeurde set merkafbeeldingen. Wellicht kunnen ze u ook helpen bij het naar behoefte optimaliseren van afbeeldingen. 
+- Neem contact op met uw marketing- of huisstijlafdeling. Mogelijk beschikken zij al over een goedgekeurde set afbeeldingen. Wellicht kunnen ze u ook helpen bij het naar behoefte optimaliseren van afbeeldingen. 
 
-- Houd rekening met zowel liggende als staande weergave. De afbeelding moet voldoende achtergrond rond het centrale punt hebben. De afbeelding wordt mogelijk verschillend bijgesneden op basis van apparaatgrootte en -oriëntatie. 
+- Houd rekening met zowel liggende als staande weergave. De afbeelding moet voldoende achtergrond rond het centrale punt hebben. De afbeelding wordt mogelijk verschillend bijgesneden op basis van apparaatgrootte, -oriëntatie en platform. 
 
 - Vermijd het gebruik van een standaardafbeelding. De afbeelding moet het merk en de identiteit van uw bedrijf uitstralen, zoals de gebruikers dit kennen. Als u geen geschikte afbeelding hebt, kunt u nog beter helemaal geen afbeelding gebruiken, dan te kiezen voor een afbeelding die voor de gebruiker geen betekenis heeft. 
 
 - Verwijder onnodige metagegevens. Afbeeldingsbestanden bevatten soms metagegevens, zoals een cameraprofiel, geografische locatie, titel, bijschrift, enzovoort. Gebruik een hulpprogramma voor afbeeldingoptimalisatie voor het verwijderen van deze gegevens. Zo blijft de kwaliteit behouden en kunt u voldoet aan de maximale bestandsgrootte. 
 
-Nadat u uw wijzigingen hebt opgeslagen, kiest u in de Intune-webportal, boven in de blade **Een voorbeeld van uw instellingen bekijken** om te zien hoe uw configuraties eruit gaan zien. Houd er rekening mee dat u de merkafbeelding alleen kunt bekijken op een iOS-apparaat, en niet in de Intune-webportal. 
+Nadat in Intune een merkafbeelding is toegevoegd of gewijzigd, ziet de eindgebruiker de wijziging mogelijk niet op iOS-apparaten totdat de Bedrijfsportal de wijzigingen bij opstarten heeft herkend en vervolgens opnieuw is opgestart, waarna de merkafbeelding wordt weergegeven. 
 
+### <a name="brand-image-examples"></a>Voorbeelden van merkafbeeldingen
+
+In de volgende afbeelding ziet u een voorbeeld van een merkafbeelding op een iPad:
+
+![Schermafbeelding van een voorbeeld van een merkafbeelding op een iPhone](media/company-portal-app/company-portal-app-03.png)
+
+In de volgende afbeelding ziet u een voorbeeld van een merkafbeelding op een iPhone:
+
+![Schermafbeelding van een voorbeeld van een merkafbeelding op een iPad](media/company-portal-app/company-portal-app-02.png)
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Sneltoetsen voor Windows-bedrijfsportal
 
@@ -125,6 +134,10 @@ De volgende sneltoetsen zijn beschikbaar in de Windows-bedrijfsportal-app.
 |  | Verwijderen | Ctrl+D of Delete |
 |  | Toegang controleren | Ctrl+M of F9 |
 | App-details | Installeren | Ctrl+I |
+
+Eindgebruikers zien ook de beschikbare snelkoppelingen in de Bedrijfsportal-app in Windows.
+
+![Schermafbeelding van beschikbare snelkoppelingen in de Bedrijfsportal-app in Windows](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>Volgende stappen
 
