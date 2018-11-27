@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2d099d049892d71c36e4b01fb1a8af6f7ad25df1
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: ecd669f534fac9d359b542cbf1f2e6b543ed34f2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313406"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190333"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Inschrijving van iOS-apparaten inschakelen met Apple School Manager
 
@@ -126,7 +127,7 @@ Na installatie van het token kunt u een inschrijvingsprofiel voor Apple School-a
 12. Kies **Instellingen voor Configuratieassistent** om de volgende profielinstellingen te configureren: ![Aanpassing van Configuratieassistent](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png).
 
 
-    |                 Instelling                  |                                                                                               Description                                                                                               |
+    |                 Instelling                  |                                                                                               Beschrijving                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>Naam afdeling</strong>     |                                                             Wordt weergegeven wanneer de gebruiker tijdens de activering op <strong>Over configuratie</strong> tikt.                                                              |
     |    <strong>Telefoonnummer van afdeling</strong>     |                                                          Wordt weergegeven wanneer de gebruiker tijdens de activering de knop <strong>Hulp nodig?</strong> klikt.                                                          |

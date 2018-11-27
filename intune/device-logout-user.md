@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d80d7a05dc01298dc7bc347098cf85fbdfc3689f
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: 24b59e5b60f2a8dce0522c689463ac095617052c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403490"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185658"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>De huidige gebruiker van met Intune beheerde iOS-apparaten afmelden
 

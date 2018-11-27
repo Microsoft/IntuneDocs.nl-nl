@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864588"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186491"
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 
@@ -34,11 +35,11 @@ Uw Intune-ontwerp is gebaseerd op de informatie die u verzamelt en besluiten die
 
 -   Overwegingen met betrekking tot het apparaatplatform
 
--   Vereisten waaraan moet worden voldaan  
+-   Vereisten waaraan moet worden voldaan  
 
 Hoewel er een minimum aan vereisten voor de on-premises infrastructuur is, is een ontwerpplan nog steeds nuttig omdat u over de juiste beheeroplossing voor mobiele apparaten beschikt die aansluit bij uw doelen, doelstellingen en vereisten.
 
-Laten we elk van deze gebieden eens nader bekijken. 
+Laten we elk van deze gebieden eens nader bekijken. 
 
 ## <a name="record-your-current-environment"></a>Uw huidige omgeving vastleggen
 Bovendien vinden er tijdens de implementatie- en testfase regelmatig wijzigingen aan het ontwerp plaats. Gebruik het ontwerpplan om deze wijzigingen te documenteren zodra ze plaatsvinden, evenals de achterliggende idee.

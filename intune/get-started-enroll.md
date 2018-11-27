@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 21d32cda464170aad737b51fdc405059a8320faf
-ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
+ms.openlocfilehash: bdd8267701b20600d67e6927c8b55d7f9c11a34f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31617342"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186763"
 ---
 # <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Inzicht in de gebruikerservaring bij het inschrijven van iOS-apparaten
 

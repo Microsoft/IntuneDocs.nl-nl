@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 348a1dbf7b969956bc1ddcfb0f32a994a84e29d4
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: 4c65b381afaad4b3ba65fa3d8eb49ba8f52b95d1
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983105"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183346"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Aangepaste instellingen gebruiken voor iOS-apparaten in Microsoft Intune
 
@@ -45,7 +46,7 @@ In dit artikel wordt beschreven hoe u een aangepast profiel maakt voor iOS-appar
 
     Download dit bestand en sla het op. U voert dit bestand in het Intune-profiel in.
 
-  - Zorg ervoor dat de instellingen die u uit Apple Profile Manager exporteert compatibel zijn met de iOS-versie op de apparaten die u gebruikt. Als u meer wilt weten over het oplossen van problemen bij incompatibele instellingen, zoekt u op de [Apple Developer](https://developer.apple.com/)-website naar **Configuration Profile Reference** (naslag voor configuratieprofielen) en **Mobile Device Management Protocol Reference** (naslag voor beheerprotocol voor mobiele apparaten).
+  - Zorg ervoor dat de instellingen die u uit Apple Profile Manager exporteert compatibel zijn met de iOS-versie op de apparaten die u gebruikt. Zoek op de [Apple Developer](https://developer.apple.com/)-website naar **Configuration Profile Reference** (naslag voor configuratieprofielen) en **Mobile Device Management Protocol Reference** (naslag voor beheerprotocol voor mobiele apparaten) als u meer wilt weten over het oplossen van problemen bij incompatibele instellingen.
 
 ## <a name="create-the-profile"></a>Het profiel maken
 

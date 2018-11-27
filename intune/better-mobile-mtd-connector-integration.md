@@ -12,12 +12,13 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.openlocfilehash: a677bab1f18fc0d0e0d159f2b40fae314b292e0f
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+search.appverid: MET150
+ms.openlocfilehash: aa447721449b2b3733e20d9f65f0253e9123228b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231109"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184197"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Better Mobile integreren met Intune
 

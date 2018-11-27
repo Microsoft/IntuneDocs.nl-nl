@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0c2a4ff4654b937449f8e7a36778a67a978bd6db
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: d86df4c38e0d4313dbff6ff2cd9111b2126dbaba
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576865"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180932"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Internettoegang beheren met een met Microsoft Intune-beleid beveiligde browser
 
@@ -161,7 +162,7 @@ Microsoft Edge en Intune Managed Browser en de [Azure AD-toepassingsproxy]( http
 Outlook moet zijn geconfigureerd met een beleid voor app-beveiliging waarmee de instelling **Webinhoud beperken voor weergave in de Managed Browser** beschikbaar komt.
 
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Stap 2: wijs een app-configuratiebeleid toe voor de beveiligde browser.
-Met deze procedure wordt de Managed Browser- of Microsoft Edge-app geconfigureerd voor omleiding via een proxy. Geef met behulp van de procedure voor het maken van een app-configuratie voor Microsoft Edge of Managed Browser het volgende sleutel- en waardepaar op:
+Met deze procedure wordt de Managed Browser- of Microsoft Edge-app geconfigureerd voor omleiding via een proxy. Geef met de procedure voor het maken van een app-configuratie voor Microsoft Edge of Managed Browser het volgende sleutel-waardepaar op:
 
 | Sleutel                                                             | Waarde    |
 |-----------------------------------------------------------------|----------|

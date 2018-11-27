@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 2b2b3ba5443cd95cd81bdca6d386ab95a2c831eb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400348"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190112"
 ---
 # <a name="enroll-android-devices"></a>Android-apparaten inschrijven
 
@@ -30,7 +31,7 @@ Als Intune-beheerder kunt u de volgende Android-apparaten beheren:
 - Android-apparaten, inclusief Samsung Knox Standard-apparaten.
 - Android Enterprise-apparaten, inclusief [apparaten met Android-werkprofiel](#enable-enrollment-of-android-for-work-devices) en kioskapparaten.
 
-Apparaten waarop Samsung Knox Standard wordt uitgevoerd, bieden ondersteuning voor beheer van meerdere gebruikers in Intune. Eindgebruikers kunnen hun Azure AD-referenties gebruiken om zich aan en af te melden bij het apparaat. Het apparaat wordt centraal beheerd, ongeacht of het in gebruik is of niet. Wanneer gebruikers zich aanmelden, hebben ze toegang tot apps en wordt er een eventueel beleid toegepast. Wanneer ze zich afmelden, worden alle app-gegevens gewist.
+Apparaten waarop Samsung Knox Standard wordt uitgevoerd, bieden ondersteuning voor beheer van meerdere gebruikers in Intune. Eindgebruikers kunnen hun Azure AD-referenties gebruiken om zich aan en af te melden bij het apparaat. Het apparaat wordt centraal beheerd, ongeacht of het in gebruik is of niet. Wanneer gebruikers zich aanmelden, hebben ze toegang tot apps en wordt er een eventueel beleid toegepast. Wanneer ze zich afmelden, worden alle app-gegevens gewist.
 
 ## <a name="prerequisite"></a>Vereiste
 

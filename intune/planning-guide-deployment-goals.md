@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f76e227037efd6ea8ee7ea95d61f3358698af1d9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961459"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189347"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Doelen, doelstellingen en uitdagingen voor de implementatie bepalen
 
@@ -78,7 +79,7 @@ Implementatiedoelstellingen zijn de acties die een organisatie kan ondernemen om
 
 Implementatie-uitdagingen hebben betrekking op kwesties die topprioriteit hebben voor een organisatie en die een negatieve invloed kunnen hebben op de implementatie. Soms hebben deze betrekking op problemen uit eerdere projecten die u wilt vermijden of op nieuwe problemen met de huidige implementatie. Hieronder volgen enkele voorbeelden van implementatie-uitdagingen met Intune samen met mogelijke oplossingen.
 
--   De gereedheid van de ondersteuning en ervaring van eindgebruikers worden niet opgenomen in een eerste projectbereik. Dit leidt tot een gebrekkige acceptatie van eindgebruikers en uitdagingen voor uw ondersteuningsorganisatie.
+-   De gereedheid van de ondersteuning en ervaring van eindgebruikers worden niet opgenomen in een eerste projectbereik. Dit leidt tot een gebrekkige acceptatie van eindgebruikers en uitdagingen voor uw ondersteuningsorganisatie.
 
     -   **Oplossing:** neem ondersteuningstraining op in het project. Valideer de ervaring van eindgebruikers met maatstaven voor succes in uw implementatieplan.
 

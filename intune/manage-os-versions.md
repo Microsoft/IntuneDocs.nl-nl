@@ -11,12 +11,13 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
-ms.openlocfilehash: 763cc61aae50de893461d1ed137025fa1e6b00b9
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+search.appverid: MET150
+ms.openlocfilehash: c75956cd1e3e9bba0017a624b99dcc090d32978b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231653"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182224"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Besturingssysteemversies beheren met Intune
 Op moderne mobiele en bureaubladplatformen volgen belangrijke updates, patches en nieuwe versie elkaar in hoog tempo op. U hebt de middelen om updates en patches voor Windows volledig te beheren, maar bij andere platformen, zoals iOS en Android, is de medewerking van uw eindgebruikers vereist.  Microsoft Intune biedt de mogelijkheid om het beheer van besturingssysteemversies voor meerdere platformen beter te structureren.

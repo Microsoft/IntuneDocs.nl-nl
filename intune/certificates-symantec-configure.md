@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9c9027964648ad83c552f7dd7067598cacf560e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: cf5146946fef464d2d74271e0ad801dabbdce13e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836522"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186865"
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Intune Certificate Connector instellen voor de Symantec PKI Manager-webservice
 
@@ -281,7 +282,7 @@ De OID van het certificaatprofiel is gekoppeld aan een certificaatprofielsjabloo
    > [!IMPORTANT]
    > De volgende parameters van het PKCS-certificaatprofiel moeten worden geconfigureerd met de opgegeven waarden in de volgende tabel, zoals weergegeven in de schermafbeelding, om PKCS-certificaten van de Symantec-CA te kunnen uitgeven via Intune Certificate Connector. 
 
-    |Parameter van PKCS-certificaat | Waarde | Description |
+    |Parameter van PKCS-certificaat | Waarde | Beschrijving |
     | --- | --- | --- |
     | Certificeringsinstantie | pki-ws.symauth.com | Deze waarde moet de FQDN van de basisservice van de Symantec-CA zijn, zonder afsluitende schuine strepen.  Als u niet zeker weet of dit is de juiste FQDN voor de basisservice voor uw Symantec-CA-abonnement is, neemt u contact op met de klantenondersteuning van Symantec. <br><br> Als deze FQDN onjuist is, geeft Intune Certificate Connector geen PKCS-certificaten van de Symantec-CA uit.| 
     | Naam van certificeringsinstantie | Symantec | Deze waarde moet de tekenreeks **Symantec** zijn. <br><br> Als deze waarde afwijkt, geeft Intune Certificate Connector geen PKCS-certificaten van de Symantec-CA uit.|

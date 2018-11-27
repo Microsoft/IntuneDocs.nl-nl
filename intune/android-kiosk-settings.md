@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 5cd16a351beefd851d51175717abd4400382c216
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602177"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185233"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Kioskinstellingen voor Android-apparaten in Intune
 
@@ -47,7 +48,7 @@ Als het beperkingsprofiel van een kioskapparaat is ingesteld op **Kioskmodus** =
 
 Als u een Android-kioskapparaat wilt instellen voor meerdere apps, volgt u deze stappen:
 
-1. [De app voor het beheerde startscherm vanuit het beheerde Google Play importeren en implementeren](#import-and -deploy-the-managed-home-screen-app)
+1. [De app voor het beheerde startscherm vanuit het beheerde Google Play importeren en implementeren](#import-and-deploy-the-managed-home-screen-app)
 2. [Apps toevoegen en toewijzen die kunnen worden gebruikt in de kioskmodus](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (Optioneel) [Webkoppelingen toevoegen die kunnen worden gebruikt in de kioskmodus](#add-web-links-that-can-be-used-in-kiosk-mode)
 

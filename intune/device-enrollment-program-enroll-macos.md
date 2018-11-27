@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e71f49c6a336efa5c15d8f10e664ddbf9b0579d0
-ms.sourcegitcommit: 5bfc7a1375fdb2992b9b5d4f6d1b34eec12457ae
+ms.openlocfilehash: 92ddad3e7e8de4a10c67f9feae10d2441ec560bd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45533656"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180762"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>MacOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
 

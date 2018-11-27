@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 932feb064552e05536821d0e75e27059387bcf56
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9a15c84ded066a26254737f75293b0d743fe5eab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029805"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181221"
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Intune-onderwijsinstellingen configureren voor gedeelde iPads
 
@@ -183,7 +184,7 @@ Het apparaat is nu aan de apparaatcategorie gekoppeld. Herhaal dit proces voor a
 5. Kies **Profiel maken** in het deelvenster Profielen.
 6. Voer in het deelvenster **Koppeling maken** waarden in voor **Naam** en **Beschrijving**.
 7. Kies **Klassen selecteren** > **Configureren** om groepen te koppelen aan het winkelwagenprofiel.
-8. Kies de klassen waaraan u het winkelwagenprofiel wilt toewijzen en kies vervolgens **Selecteren**. 
+8. Kies de klassen waaraan u het winkelwagenprofiel wilt toewijzen en kies vervolgens **Selecteren**. 
 9. Kies **Winkelwagens selecteren** > **Configureren** om groepen te koppelen aan het winkelwagenprofiel.
 10. Kies de groepen waaraan u het winkelwagenprofiel wilt toewijzen en kies vervolgens **Selecteren**.
 11. Kies **Opslaan** in het deelvenster **Koppeling maken** om het winkelwagenprofiel op te slaan.
@@ -198,7 +199,7 @@ Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profiel
 4. Kies **Beheren** > **Toewijzingsstatus** in het deelvenster **Apparaatconfiguratie**.
 5. Selecteer in het deelvenster **Toewijzingsstatus** het **winkelwagenprofiel** dat u hebt gemaakt.
 6. Kies **Toewijzingen** in het deelvenster **Winkelwagenprofiel** en kies vervolgens **Groepen selecteren die moeten worden opgenomen** onder **Opnemen**.
-7. Selecteer de klassen waarop u het winkelwagenprofiel wilt toepassen (selecteer niet een groep) en kies vervolgens **Selecteren**. 
+7. Selecteer de klassen waarop u het winkelwagenprofiel wilt toepassen (selecteer niet een groep) en kies vervolgens **Selecteren**. 
 8. Als u klaar bent, kiest u **Opslaan**.
 
 De toewijzing wordt afgerond en Intune implementeer het klaslokaalprofiel naar de betreffende apparaten op basis van de klaslokaaltoewijzing.

@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 03d52c53b6e3152a5a262ca8bd6d158d5980b2c8
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: fd99a168747bd4a0f5852404e767d658b8400ba2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236387"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180830"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Windows Holographic- en HoloLens-apparaten beheren en gebruiken met Intune
 

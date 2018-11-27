@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 04834f21e5fd2f6ed0f7454988936397d3249987
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 849e3feed23b46585f9b737cb0ee91ecdf47ecae
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37904965"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186134"
 ---
 # <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>E-mailprofielinstellingen voor apparaten waarop Windows 10 wordt uitgevoerd - Intune
 
@@ -26,7 +27,7 @@ U kunt met de e-mailprofielinstellingen uw apparaten met Windows 10 configureren
 - **E-mailserver**: voer de hostnaam in van uw Exchange-server.
 - **Accountnaam**: voer de weergavenaam in voor het e-mailaccount. Deze naam zien gebruikers op hun apparaat.
 - **Het kenmerk gebruikersnaam van AAD**: deze naam is het kenmerk dat Intune uit Azure Active Directory (AAD) ophaalt. In Intune wordt de gebruikersnaam die wordt gebruikt door dit profiel dynamisch gegenereerd. Uw opties zijn:
-  - **User Principal Name**: haalt de naam op, zoals `user1` of `user1@contoso.com`
+  - **User Principal Name**: hiermee wordt de naam opgehaald, zoals `user1` of `user1@contoso.com`
   - **Primair SMTP-adres**: haalt de naam op in de indeling van het e-mailadres, zoals `user1@contoso.com`
   - **sAM-accountnaam**: hiervoor is het domein vereist, zoals `domain\user1`.
 
@@ -36,10 +37,10 @@ U kunt met de e-mailprofielinstellingen uw apparaten met Windows 10 configureren
       Voer, wanneer u ervoor kiest om de kenmerken op te halen van **AAD**, het volgende in:
       - **Kenmerk voor gebruikersdomeinnaam van AAD**: kies de optie om de **volledige domeinnaam** of het kenmerk **NetBIOS-naam** van de gebruiker op te halen
 
-      Wanneer u ervoor kiest om **aangepaste** kenmerken te gebruiken,moet u het volgende invoeren:
-      - **Te gebruiken aangepaste domeinnaam**: voer een waarde in die Intune voor de domeinnaamgebruikt, zoals `contoso.com` of `contoso`
+      Wanneer u ervoor kiest om **aangepaste** kenmerken te gebruiken, moet u het volgende invoeren:
+      - **Te gebruiken aangepaste domeinnaam**: voer een waarde in die Intune voor de domeinnaam gebruikt, zoals `contoso.com` of `contoso`
 
-- **Kenmerk van het e-mailadres van AAD**: kies op welke manier het e-mailadres voor de gebruiker gegenereerd. Selecteer **User principal name** (`user1@contoso.com` of `user1`) om de volledige user principal name als e-mailadres te gebruiken, of **Primair SMTP-adres** (`user1@contoso.com`) om het primaire SMTP-adres te gebruiken om u aan te melden bij Exchange.
+- **Kenmerk van het e-mailadres van AAD**: kies op welke manier het e-mailadres voor de gebruiker wordt gegenereerd. Selecteer **User principal name** (`user1@contoso.com` of `user1`) om de volledige user principal name als e-mailadres te gebruiken, of **Primair SMTP-adres** (`user1@contoso.com`) om het primaire SMTP-adres te gebruiken om u aan te melden bij Exchange.
 
 ## <a name="security-settings"></a>Beveiligingsinstellingen
 
