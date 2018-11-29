@@ -13,17 +13,18 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ff5686e2d83831259bd21bee164b3c187e1c0ee
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231352"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180575"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>De naleving van voorwaardelijke toegang in Intune controleren voor Exchange On-Premises en Exchange Online
 
-Vanaf versie Intune 1704 kunnen beheerders informatie weergeven met betrekking tot Exchange ActiveSync-apparaatrecords die zijn gesynchroniseerd met Intune via de on-premises Exchange-connector of de Intune Service to Service Connector (Exchange Online-connector). De nalevingsrapporten van voorwaardelijke toegang biedt een overzicht van apparaten met verschillende synchronisatiestatussen:
+Vanaf versie Intune 1704 kunnen beheerders rapportagegegevens weergeven met betrekking tot Exchange ActiveSync-apparaatrecords die zijn gesynchroniseerd met Intune via on-premises Exchange Connector of Intune Service to Service Connector (Exchange Online-connector). De nalevingsrapportage van voorwaardelijke toegang biedt een overzicht van apparaten met verschillende synchronisatiestatussen:
 
 -   **Toestaan**
 
@@ -37,9 +38,9 @@ Vanaf versie Intune 1704 kunnen beheerders informatie weergeven met betrekking t
 
 2.  Nadat u zich hebt aangemeld, ziet u het **Azure-dashboard**.
 
-3.  Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
+3.  Kies  **Alle services**  in het linkermenu en typ dan  **Intune**  in het filtertekstvak.
 
-4.  Kies **Intune**. Vervolgens ziet u het **Intune-Dashboard**.
+4.  Kies  **Intune**. Vervolgens ziet u het **Intune-dashboard**.
 
 5.  Kies **Voorwaardelijke toegang** en kies vervolgens **Overzicht**.
 

@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e094ec72f7db6c25bcb306518df47dd5938681bf
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 6602a5507e4357899259722a7a8d095d540e2826
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425339"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181136"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Wi-Fi-instellingen voor macOS-apparaten in Microsoft Intune toevoegen
 
@@ -42,7 +43,7 @@ In dit artikel worden deze instellingen beschreven.
 - **Beveiligingstype**: selecteer het beveiligingsprotocol voor de verificatie bij het Wi-Fi-netwerk. Uw opties zijn:
 
   - **Open (geen verificatie)**: gebruik deze optie alleen als het netwerk niet beveiligd is.
-  - **WPA/WPA2 - persoonlijk**:voer het wachtwoord in in de **vooraf gedeelde sleutel**. Wanneer het netwerk van uw organisatie is ingesteld of geconfigureerd, wordt er ook een wachtwoord of netwerksleutel geconfigureerd. Voer dit wachtwoord of deze netwerksleutel in voor de PSK-waarde.
+  - **WPA/WPA2 - persoonlijk**: typ het wachtwoord bij **Vooraf gedeelde sleutel**. Wanneer het netwerk van uw organisatie is ingesteld of geconfigureerd, wordt er ook een wachtwoord of netwerksleutel geconfigureerd. Voer dit wachtwoord of deze netwerksleutel in voor de PSK-waarde.
   - **WEP**
 
 - **Proxyinstellingen**: uw opties:
@@ -63,13 +64,13 @@ In dit artikel worden deze instellingen beschreven.
     - **(PAC) niet gebruiken**
     - **(PAC) gebruiken**: als er een bestaand PAC-bestand bestaat, gebruik dit dan.
     - **PAC gebruiken en inrichten**: maak het PAC-bestand en voeg het toe aan uw apparaten.
-    - **PAC anoniem inrichten en gebruiken**:maak het PAC-bestand en voeg het toe aan uw apparaten zonder verificatie met de server.
+    - **PAC anoniem inrichten en gebruiken**: maak het PAC-bestand en voeg het toe aan uw apparaten zonder verificatie met de server.
 
   - **EAP-SIM**
 
   - **EAP-TLS**: voer ook het volgende in:
 
-    - **Vertrouwelijke server** - **Namen van certificaatservers**:**voeg** een of meer algemene namen toe die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Wanneer u deze informatie invoert, kunt u het venster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers wanneer zij verbinding maken met dit Wi-Fi-netwerk.
+    - **Vertrouwelijke server** - **Namen van certificaatservers**: **voeg** een of meer algemene namen toe die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Wanneer u deze informatie invoert, kunt u het venster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers wanneer zij verbinding maken met dit Wi-Fi-netwerk.
     - **Basiscertificaat voor servervalidatie**: kies een profiel voor een bestaand vertrouwd basiscertificaat. Dit certificaat wordt aangeboden aan de server wanneer de client verbinding met het netwerk maakt, en wordt gebruikt om de verbinding te verifiëren.
 
       Selecteer **OK** om uw wijzigingen op te slaan.
@@ -80,7 +81,7 @@ In dit artikel worden deze instellingen beschreven.
 
   - **EAP-TTLS**: voer ook het volgende in:
 
-    - **Vertrouwelijke server** - **Namen van certificaatservers**:**voeg** een of meer algemene namen toe die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Wanneer u deze informatie invoert, kunt u het venster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers wanneer zij verbinding maken met dit Wi-Fi-netwerk.
+    - **Vertrouwelijke server** - **Namen van certificaatservers**: **voeg** een of meer algemene namen toe die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Wanneer u deze informatie invoert, kunt u het venster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers wanneer zij verbinding maken met dit Wi-Fi-netwerk.
     - **Basiscertificaat voor servervalidatie**: kies een profiel voor een bestaand vertrouwd basiscertificaat. Dit certificaat wordt aangeboden aan de server wanneer de client verbinding met het netwerk maakt, en wordt gebruikt om de verbinding te verifiëren.
 
       Selecteer **OK** om uw wijzigingen op te slaan.
@@ -102,7 +103,7 @@ In dit artikel worden deze instellingen beschreven.
 
   - **PEAP**: voer ook het volgende in:
 
-    - **Vertrouwelijke server** - **Namen van certificaatservers**:**voeg** een of meer algemene namen toe die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Wanneer u deze informatie invoert, kunt u het venster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers wanneer zij verbinding maken met dit Wi-Fi-netwerk.
+    - **Vertrouwelijke server** - **Namen van certificaatservers**: **voeg** een of meer algemene namen toe die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Wanneer u deze informatie invoert, kunt u het venster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers wanneer zij verbinding maken met dit Wi-Fi-netwerk.
     - **Basiscertificaat voor servervalidatie**: kies een profiel voor een bestaand vertrouwd basiscertificaat. Dit certificaat wordt aangeboden aan de server wanneer de client verbinding met het netwerk maakt, en wordt gebruikt om de verbinding te verifiëren.
 
       Selecteer **OK** om uw wijzigingen op te slaan.

@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dfefb17a2d8b9b4041846b879297f388156fee54
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 28c8863e8739563a6b6c9152a46abb6bf50f2db5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312814"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189194"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Apparaten verwijderen via wissen of buiten gebruik stellen, of de registratie van het apparaat handmatig ongedaan maken
 
@@ -33,7 +34,7 @@ Met de acties **Buiten gebruik stellen** of **Wissen** kunt u apparaten uit Intu
 
 Met de actie **Wissen** herstelt u de fabrieksinstellingen van het apparaat. De gebruikersgegevens worden bewaard als u het selectievakje **Inschrijvingsstatus en gebruikersaccount behouden** inschakelt. Anders wordt het station veilig gewist.
 
-|Actie Wissen|**Inschrijvingsstatus en gebruikersaccount behouden**|Verwijderd uit Intune-beheer|Description|
+|Actie Wissen|**Inschrijvingsstatus en gebruikersaccount behouden**|Verwijderd uit Intune-beheer|Beschrijving|
 |:-------------:|:------------:|:------------:|------------|
 |**Wissen**| Niet ingeschakeld | Ja | Alle gebruikersaccounts, gegevens, MDM-beleidsregels en instellingen worden gewist. De standaardtoestand en -instellingen van het besturingssysteem worden teruggezet.|
 |**Wissen**| Ingeschakeld | Nee | Alle MDM-beleidsregels worden gewist. Gebruikersaccounts en -gegevens blijven bewaard. Gebruikersinstellingen worden teruggezet op de standaardwaarden. De standaardtoestand en -instellingen van het besturingssysteem worden teruggezet.|
@@ -130,7 +131,7 @@ U kunt apparaten in de kioskmodus alleen wissen. U kunt Android-apparaten in de 
 
 ### <a name="windows"></a>Windows
 
-|Gegevenstype|Windows 8.1 (MDM) en Windows RT 8.1|Windows RT|Windows Phone 8.1 en Windows Phone 8|Windows 10|
+|Gegevenstype|Windows 8.1 (MDM) en Windows RT 8.1|Windows RT|Windows Phone 8.1 en Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Bedrijfs-apps en de bijbehorende gegevens die door Intune zijn geïnstalleerd|Sleutels worden ingetrokken voor bestanden die zijn beveiligd met EFS. De gebruiker kan de bestanden niet openen.|Bedrijfs-apps worden niet verwijderd.|Apps die oorspronkelijk zijn geïnstalleerd via de bedrijfsportal, worden verwijderd. Gegevens van bedrijfs-apps worden verwijderd.|Apps worden verwijderd. Sideloadsleutels worden verwijderd.<br>Voor Windows 10 versie 1703 (makersupdate) en hoger worden Office 365 ProPlus-apps niet verwijderd.|
 |Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|

@@ -12,13 +12,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 322a60101132d5ef435752079bb5c52a7a4b3a78
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425016"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179070"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>De Intune-softwareclient installeren op Windows-pc's
 
@@ -119,7 +120,7 @@ Als er geen Intune-licentie is toegewezen aan gebruikers of als de MDM-instantie
 
 Als er wel een Intune-licentie is toegewezen aan gebruikers en de MDM-instantie van de organisatie wel op Intune is ingesteld:
 
-- Gebruikers van Windows 7- of Windows 8-pc’s zien ALLEEN de optie om zich in te schrijven voor Intune door de pc-clientsoftware te downloaden en installeren die uniek is voor hun organisatie.
+- Gebruikers van Windows 7- of Windows 8-pc's zien ALLEEN de optie om zich in te schrijven voor Intune door de pc-clientsoftware te downloaden en installeren die uniek is voor hun organisatie.
 
 - Gebruikers van Windows 10- of Windows 8.1-pc’s zien twee inschrijvingsopties:
 
@@ -256,7 +257,7 @@ Ga naar "%ProgramFiles%\Microsoft\OnlineManagement" en controleer of alleen de v
 
 Tijdens het uitschrijvingsproces wordt de map OnlineManagement niet verwijderd. Wacht na de uitschrijving 30 minuten en voer vervolgens deze opdracht uit. Als u deze opdracht te vroeg uitvoert, krijgt de verwijdering mogelijk een onbekende status. Als u de map wilt verwijderen, opent u een opdrachtprompt met verhoogde bevoegdheid en voert u de volgende opdracht uit:
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Volgende stappen
 [Apparaten beheren met Microsoft Intune](device-management.md)

@@ -5,20 +5,21 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744632"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186177"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer gebruiken voor het extern beheren van Intune-apparaten
 
@@ -58,7 +59,10 @@ Nadat de connector is geconfigureerd, kunt u een apparaat op afstand beheren. Vo
 
 ![TeamViewer gebruiken om een Android-apparaat extern te beheren - voorbeeld](./media/android-teamviewer.png)
 
-Wanneer u een externe sessie start, wordt er een vlag voor meldingen op het pictogram van de bedrijfsportal-app op het apparaat van de eindgebruiker weergegeven. Er wordt ook een melding weergegeven wanneer de app wordt geopend. De gebruiker kan vervolgens het verzoek om hulp op afstand accepteren.
+Wanneer u een externe sessie start, wordt er een vlag voor meldingen op het pictogram van de bedrijfsportal-app op het apparaat van de gebruiker weergegeven. Er wordt ook een melding weergegeven wanneer de app wordt geopend. Gebruikers kunnen het verzoek om hulp op afstand dan accepteren.
+
+> [!NOTE]
+> Voor Windows-apparaten die zijn ingeschreven met behulp van methoden zonder tussenkomst van gebruikers, zoals DEM en WCD, wordt de TeamViewer-melding niet in de bedrijfsportal-app weergegeven. In deze scenario's is het raadzaam de sessie te genereren via de TeamViewer-portal.
 
 In TeamViewer kunt u een reeks acties op het apparaat uitvoeren, zoals het overnemen van het beheer van het apparaat. Zie de [TeamViewer-richtlijnen](https://www.teamviewer.com/support/documents/) voor meer informatie over wat u kunt doen.
 

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5766c4ebe7b261356248b00d0ca2d8937d3db79a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 3600cae373dceb88122852e3d260e91e2618d516
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231512"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180422"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense-connector met Intune
 
@@ -59,7 +60,7 @@ Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u a
 
 ### <a name="control-access-based-on-threat-to-network"></a>Toegangsbeheer op basis van bedreigingen voor het netwerk
 
-Detecteer bedreigingen zoals **man-in-the-middle**-aanvallen in het netwerk en beveilig de toegang tot Wi-Fi-netwerken op basis van het apparaatrisico.
+Detecteer bedreigingen zoals **man-in-the-middle-aanvallen** in het netwerk en beveilig de toegang tot Wi-Fi-netwerken op basis van het apparaatrisico.
 
 **Netwerktoegang via Wi-Fi blokkeren:**
 
@@ -71,7 +72,7 @@ Detecteer bedreigingen zoals **man-in-the-middle**-aanvallen in het netwerk en b
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Toegangsbeheer voor SharePoint Online op basis van bedreigingen voor het netwerk
 
-Detecteer bedreigingen zoals **man-in-the-middle**-aanvallen in het netwerk en voorkom synchronisatie van bedrijfsbestanden op basis van het apparaatrisico.
+Detecteer bedreigingen zoals **man-in-the-middle-aanvallen** in het netwerk en voorkom synchronisatie van bedrijfsbestanden op basis van het apparaatrisico.
 
 **SharePoint Online blokkeren wanneer netwerkbedreigingen worden gedetecteerd:**
 

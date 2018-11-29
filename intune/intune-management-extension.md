@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236336"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179402"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-scripts in Intune beheren voor Windows 10-apparaten
 Met de Intune-beheeruitbreiding kunt u PowerShell-scripts uploaden in Intune om deze uit te voeren op Windows 10-apparaten. De beheeruitbreiding is een aanvulling op de Windows 10 MDM-functionaliteit en maakt het eenvoudiger voor u om uw beheer te moderniseren.
@@ -27,9 +28,9 @@ Met de Intune-beheeruitbreiding kunt u PowerShell-scripts uploaden in Intune om 
 ## <a name="moving-to-modern-management"></a>Uw beheer moderniseren
 Computergebruik door de eindgebruiker ondergaat een digitale transformatie. Klassieke, traditionele IT richt zich op een platform voor een enkel apparaat, apparaten in bedrijfseigendom, gebruikers die vanuit hun kantoor werken en tal van handmatige, reactieve IT-processen. De moderne werkplek maakt echter platformen mogelijk voor meerdere apparaten die in eigendom zijn van de gebruiker en het bedrijf, waarmee gebruikers vanuit elke locatie kunnen werken en die voorzien in geautomatiseerde en proactieve IT-processen. 
 
-Met MDM-services, zoals Microsoft Intune, kunt u Windows 10-apparaten beheren met behulp van het MDM-protocol. De ingebouwde Windows 10-beheerclient kan met Intune communiceren voor de uitvoering van bedrijfsbeheertaken. Hiermee komt modern beheer op Windows 10-apparaten een stap dichterbij. Er is echter bepaalde functionaliteit die u misschien nodig hebt, zoals geavanceerde apparaatconfiguratie, het oplossen van problemen en het beheer van verouderde Win32-apps die momenteel niet beschikbaar is in Windows 10-MDM. U kunt voor deze functionaliteit de Intune-softwareclient uitvoeren op uw Windows 10-apparaten. Als gevolg hiervan kunt u niet nieuwe functionaliteit gebruiken waarin Windows 10-MDM voorziet. [Vergelijk de verschillen tussen de Intune-softwareclient en Windows 10-MDM](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison).
+Met MDM-services, zoals Microsoft Intune, kunt u Windows 10-apparaten beheren met behulp van het MDM-protocol. De ingebouwde Windows 10-beheerclient kan met Intune communiceren voor de uitvoering van bedrijfsbeheertaken. Hiermee komt modern beheer op Windows 10-apparaten een stap dichterbij. Er is echter bepaalde functionaliteit die u misschien nodig hebt, zoals geavanceerde apparaatconfiguratie, die momenteel niet in Windows 10 in de MDM-functies beschikbaar is.
 
-De extensie van de Intune-management is een aanvulling op de meegeleverde Windows 10-MDM-functionaliteit. U kunt PowerShell-scripts maken die u kunt uitvoeren op de Windows 10-apparaten die de functionaliteit bieden die u nodig hebt. U kunt bijvoorbeeld een PowerShell-script maken dat een verouderde Win32-app op uw Windows 10-apparaten installeert, het script uploadt naar Intune, het script toewijst aan een Azure Active Directory (AD) en het script uitvoert op Windows 10-apparaten. U kunt vervolgens de uitvoeringsstatus van het script op Windows 10-apparaten van begin tot eind controleren.
+De extensie van de Intune-management is een aanvulling op de meegeleverde Windows 10-MDM-functionaliteit. U kunt PowerShell-scripts maken die u kunt uitvoeren op de Windows 10-apparaten die de functionaliteit bieden die u nodig hebt. U kunt een PowerShell-script maken waarmee uw aangepaste instellingen worden geconfigureerd, het script naar Intune uploaden, het script toewijzen aan een Azure Active Directory-groep en het script uitvoeren op Windows 10-apparaten. U kunt vervolgens de uitvoeringsstatus van het script op Windows 10-apparaten van begin tot eind controleren.
 
 ## <a name="prerequisites"></a>Vereisten
 De Intune-beheeruitbreiding heeft de volgende vereisten:
@@ -55,7 +56,6 @@ De Intune-beheeruitbreiding heeft de volgende vereisten:
 3. Selecteer een of meer groepen die de gebruikers bevatten wiens apparaten het script ontvangen. Kies **Selecteren** om het beleid aan de geselecteerde groepen toe te wijzen.
 
 > [!NOTE]
-> - PowerShell-scripts kunnen niet worden toegepast op computergroepen.
 > - Eindgebruikers hoeven niet te zijn aangemeld bij het apparaat om PowerShell-scripts uit te voeren. 
 > - PowerShell-scripts in Intune kunnen worden gericht op AAD-apparaatbeveiligingsgroepen.
 

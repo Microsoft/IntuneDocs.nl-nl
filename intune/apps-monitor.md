@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 09e4cfc314ea21294cd3de62611a089ec724a683
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075624"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181884"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>App-gegevens en -toewijzingen controleren met Microsoft Intune
 
@@ -67,7 +68,9 @@ In de grafieken wordt het aantal apps weergegeven voor de volgende status:
 >    - Een gerichte wijziging in een geïnstalleerde beheerde app kan ervoor zorgen dat het aantal geïnstalleerde apps op de blade Status wordt verminderd. De apps blijven echter vermeld bij de gedetecteerde apps.
 >    - Wanneer u zich richt op meerdere exemplaren van dezelfde app in een tenant, kan een verschil ontstaan in het aantal gedetecteerde apps vanwege mogelijke overlap van gebruikers of apparaten. Via elk exemplaar van de app worden overlappende gebruikers geteld, maar voor de gedetecteerde apps worden dubbele aantallen weergegeven.
 >    - Gedetecteerde apps en de app-status worden op verschillende tijdstippen verzameld, waardoor een verschil kan ontstaan in de aantallen van de app.
- 
+> 
+> Houd er bovendien rekening mee dat Android-apps die zijn geïmplementeerd als **Beschikbaar met of zonder inschrijving**, alleen een app-installatiestatus voor ingeschreven apparaten rapporteren. De app-installatiestatus is niet beschikbaar voor apparaten die niet zijn ingeschreven bij Intune.
+
 ### <a name="device-install-status"></a>Apparaatinstallatiestatus
 
 Wanneer u **Apparaatinstallatiestatus** in de sectie **Controleren** van het menu selecteert, wordt een lijst met apparaatstatussen weergegeven. De tabel bevat de volgende kolommen:
