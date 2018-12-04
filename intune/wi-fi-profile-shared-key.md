@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 59736ad188cf88c994ff93b4a505731afad8f550
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
+ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186321"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52618183"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Een aangepast apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,9 +34,8 @@ Vooraf gedeelde sleutels (PSK) worden doorgaans gebruikt om gebruikers in Wi-Fi-
 ## <a name="before-you-begin"></a>Voordat u begint
 
 - Het kan eenvoudiger zijn om de code te kopiëren vanaf een computer die verbinding heeft met dat netwerk, zoals verderop in dit artikel wordt beschreven.
-- Bij Android kunt u ook de [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) gebruiken.
 - U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
-- Voor iOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren. U kunt ook gebruikmaken van de [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/).
+- Voor iOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren.
 - Voor PSK is een tekenreeks van 64 hexadecimale cijfers vereist of een wachtwoordzin van 8 tot 63 afdrukbare ASCII-tekens. Sommige tekens, zoals sterretje (*), worden niet ondersteund.
 
 ## <a name="create-a-custom-profile"></a>Een aangepast profiel maken
