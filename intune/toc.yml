@@ -1,8 +1,9 @@
 items:
+- name: Documentatie voor Microsoft Intune
+  href: index.yml
 - name: Overzicht
-  href: introduction-intune.md
   items:
-  - name: Wat is de Azure-portal?
+  - name: Wat is Intune?
     href: what-is-intune.md
   - name: Wat is Intune for Education?
     href: introduction-intune-education.md
@@ -61,8 +62,6 @@ items:
     href: data-outside-protect.md
   - name: Gegevenslekken op niet-beheerde apparaten voorkomen
     href: data-leak-prevention.md
-  - name: MDM en MAM vergelijken
-    href: byod-technology-decisions.md
 - name: Concepten
   items:
   - name: Wat is apparaatbeheer?
@@ -71,17 +70,14 @@ items:
     href: get-started-azure.md
   - name: Architectuur op hoog niveau
     href: high-level-architecture.md
-  - name: Levenscycli van apparaten en apps
-    href: introduction-device-app-lifecycles.md
-    items:
-    - name: Levenscyclus van apparaten
-      href: device-lifecycle.md
-    - name: Levenscyclus van apps
-      href: app-lifecycle.md
+  - name: Levenscyclus van apparaten
+    href: device-lifecycle.md
+  - name: Levenscyclus van apps
+    href: app-lifecycle.md
   - name: Algemene scenario's
     href: common-scenarios.md
-  - name: VEELGESTELDE VRAGEN OVER MAM
-    href: mam-faq.md
+  - name: MDM en MAM vergelijken
+    href: byod-technology-decisions.md
   - name: Veelgestelde vragen over beleid en profiel
     href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: Implementatie van abonnementen
@@ -345,6 +341,8 @@ items:
         href: app-configuration-policies-outlook.md
     - name: Apps beveiligen
       items:
+      - name: VEELGESTELDE VRAGEN OVER MAM
+        href: mam-faq.md
       - name: Selectief wissen van apps
         href: apps-selective-wipe.md
       - name: Beleidsregels voor de beveiliging van apps gebruiken
@@ -766,8 +764,6 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Resources
   items:
-  - name: Microsoft Intune-documentatiehandleiding
-    href: intune-documentation.md
   - name: Problemen oplossen
     items:
     - name: Gebruikers helpen problemen op te lossen
@@ -843,9 +839,9 @@ items:
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Verklarende woordenlijst
     href: intune-glossary.md
-ms.openlocfilehash: a3712961f5980cb9aa40efd57fe324d2c349c377
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 79f28c5570d62e3ef973c6db913222c4cd88fdec
+ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728732"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52887080"
