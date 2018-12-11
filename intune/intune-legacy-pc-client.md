@@ -15,12 +15,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 27f3a184e355f63d20a79fd92e8326206f6eee15
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9bbf6f30b7a7490608f9896ae8fe54e27341ccae
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185624"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112320"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Console voor Intune in Azure en verouderde Intune-client voor pc
 
@@ -53,7 +53,7 @@ Voor Windows 7, dat niet kan worden beheerd via MDM, blijven we bestaande mogeli
 
 ## <a name="mdm-capabilities"></a>MDM-mogelijkheden
 
-Zie [Het beheren van Windows-pc's als computers of mobiele apparaten vergelijken](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison) voor een gedetailleerde vergelijking tussen de mogelijkheden voor PC Client en MDM. Met MDM-updates komen er voortdurend nieuwe beheermogelijkheden beschikbaar voor bij MDM ingeschreven Windows 10-apparaten, met inbegrip van evaluatie-opties voor Win 32-apps. Zie [Wat is er nieuw](https://docs.microsoft.com/intune/whats-new) voor de toevoegingen in de laatste release aan de service.
+Zie [Het beheren van Windows-pc's als computers of mobiele apparaten vergelijken](pc-management-comparison.md) voor een gedetailleerde vergelijking tussen de mogelijkheden voor PC Client en MDM. Met MDM-updates komen er voortdurend nieuwe beheermogelijkheden beschikbaar voor bij MDM ingeschreven Windows 10-apparaten, met inbegrip van evaluatie-opties voor Win 32-apps. Zie [Wat is er nieuw](https://docs.microsoft.com/intune/whats-new) voor de toevoegingen in de laatste release aan de service.
 
 ## <a name="switch-from-pc-client-to-mdm"></a>Overschakelen van PC Client naar MDM
 

@@ -16,12 +16,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 019f09444f96d8bb3bca046ef5be20af373a3bff
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0dc87c20b0da6fcfcc4e3ab304c61c5b264aaf38
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183704"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112558"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Intune on-premises Exchange-connector instellen in Microsoft Intune Azure
 
@@ -45,7 +45,7 @@ De volgende tabel bevat de vereisten voor de computer waarop u de on-premises Ex
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         Besturingssystemen          |                                                               Intune ondersteunt de on-premises Exchange-connector op een computer waarop een versie van Windows Server 2008 SP2 64-bits, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 of Windows Server 2016 wordt uitgevoerd.<br /><br />De connector wordt niet ondersteund op een Server Core-installatie.                                                                |
 |         Microsoft Exchange         |                                                                           On-premises connectors vereisen Microsoft Exchange 2010 SP3 of hoger, of het oudere Exchange Online Dedicated. Om te bepalen of uw omgeving met Exchange Online-specifiek de <strong>nieuwe</strong> of <strong>verouderde</strong> configuratie heeft, neemt u contact op met uw accountmanager.                                                                           |
-| Instantie voor beheer van mobiele apparaten |                                                                                                                              [De instantie voor het beheer van mobiele apparaten instellen op Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).                                                                                                                               |
+| Instantie voor beheer van mobiele apparaten |                                                                                                                              [De instantie voor het beheer van mobiele apparaten instellen op Intune](mdm-authority-set.md).                                                                                                                               |
 |              Hardware              |                                                                                                                                                     De computer waarop u de connector installeert, vereist een 1,6 GHz CPU met 2 GB RAM-geheugen en 10 GB aan vrije schijfruimte.                                                                                                                                                      |
 |  Active Directory-synchronisatie  |                                                                                      Voordat u de connector kunt gebruiken om Intune te verbinden met uw Exchange-server, moet u [Active Directory-synchronisatie instellen](users-add.md), zodat uw lokale gebruikers en beveiligingsgroepen worden gesynchroniseerd met uw exemplaar van Azure Active Directory.                                                                                      |
 |        Aanvullende software         |                                                                                                                                           Een volledige installatie van Microsoft .NET Framework 4.5 en Windows PowerShell 2.0 moet worden geïnstalleerd op de computer die als host fungeert voor de connector.                                                                                                                                           |
