@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2ef7ebf495511e1d5c04aa8a9c459ba48f3dbb42
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3a0f9a55fd3d5db8b36db09f4a83d5c09db29725
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180850"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829101"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows-apparaten inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -82,8 +82,8 @@ Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren.
     - **Zelf-implementerend (preview)**: (hiervoor is de meest recente versie van [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/) vereist) apparaten met dit profiel worden niet gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn geen gebruikersreferenties vereist om het apparaat te kunnen registreren.
 5. In het vak **Toevoegen aan Azure AD als** kiest u **Toegevoegd aan Azure AD**.
 6. Kies **Out-Of-Box Experience (OOBE)**, configureer de volgende opties en klik vervolgens op **Opslaan**:
-    - **Taal (regio)***: kies de taal die u voor het apparaat wilt gebruiken. Deze optie is alleen beschikbaar als u **Zelf-implementerend** hebt gekozen als **implementatiemodus**.
-    - **Toetsenbord automatisch configureren***: als er een **taal (regio)** is geselecteerd,kiest u **Ja** en slaat u de toetsenbordselectiepagina over. Deze optie is alleen beschikbaar als u **Zelf-implementerend** hebt gekozen als **implementatiemodus**.
+    - **Taal (regio)**\*: kies de taal die u voor het apparaat wilt gebruiken. Deze optie is alleen beschikbaar als u **Zelf-implementerend** hebt gekozen als **implementatiemodus**.
+    - **Toetsenbord automatisch configureren**\*: als er een **Taal (regio)** is geselecteerd,kiest u **Ja** en slaat u de toetsenbordselectiepagina over. Deze optie is alleen beschikbaar als u **Zelf-implementerend** hebt gekozen als **implementatiemodus**.
     - **Gebruiksrechtovereenkomst (EULA)**: (Windows 10, versie 1709 of nieuwer) kies of u de gebruiksrechtovereenkomst wilt weergeven voor gebruikers.
     - **Privacy-instellingen**: kies of u de privacyinstellingen wilt weergeven voor de gebruikers.
     - **Opties voor account wijzigen verbergen (alleen Windows Insider)**: kies **Verbergen** om te voorkomen dat opties voor account wijzigen worden weergegeven op de aanmeld- en domeinfoutpagina's van het bedrijf. Voor deze optie is vereist dat er een [aangepaste huisstijl wordt geconfigureerd in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).

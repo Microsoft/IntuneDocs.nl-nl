@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/27/2018
+ms.date: 11/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9b84877d37d26dababda2987801fc7267cb3c2e6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 11b241a14ed70a2e999fa505449cd12cdd1e025e
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181204"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728783"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen configureren in Microsoft Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Met apparaatbeperkingen kunt u verschillende instellingen en functies bepalen die u voor diverse categorieën beheert, waaronder:
 - Beveiliging
@@ -36,20 +34,24 @@ Lees over de basisprincipes van apparaatbeperkingsprofielen en lees dan meer art
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Een apparaatprofiel met apparaatbeperkingsinstellingen maken
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-4. Geef een **naam** en **beschrijving** op voor het beperkingsprofiel voor het apparaat.
-5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de aangepaste instellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor apparaatbeperkingsinstellingen:
+1. Selecteer in de [Azure-portal](https://portal.azure.com) **Alle services** > filter op **Intune** > selecteer **Intune**.
+2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+3. Geef een **naam** en **beschrijving** op voor het beperkingsprofiel voor het apparaat.
+4. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de aangepaste instellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor apparaatbeperkingsinstellingen:
+
     - **Android**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 en hoger**
     - **Windows 10 en hoger**
-6. Kies **Apparaatbeperkingen** in de vervolgkeuzelijst **Profieltype**. Als u een apparaatbeperkingsprofiel wilt maken voor Windows 10 Team-apparaten, zoals Surface Hub, kiest u **Apparaatbeperkingen (Windows 10 Team)**.
-7. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg een van de volgende onderwerpen voor gedetailleerde instellingen voor elk platform:
+
+5. Kies **Apparaatbeperkingen** in de vervolgkeuzelijst **Profieltype**. Als u een apparaatbeperkingsprofiel wilt maken voor Windows 10 Team-apparaten, zoals Surface Hub, kiest u **Apparaatbeperkingen (Windows 10 Team)**.
+6. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Kies de gedetailleerde instellingen van uw platform:
+
     - [Android-instellingen](device-restrictions-android.md)
+    - [Instellingen voor Android Enterprise](device-restrictions-android-for-work.md)
     - [iOS-instellingen](device-restrictions-ios.md)
     - [macOS-instellingen](device-restrictions-macos.md)
     - [Windows Phone 8.1-instellingen](device-restrictions-windows-phone-8-1.md)
@@ -57,11 +59,14 @@ Lees over de basisprincipes van apparaatbeperkingsprofielen en lees dan meer art
     - [Windows 10-instellingen](device-restrictions-windows-10.md)
     - [Windows 10 Team-instellingen](device-restrictions-windows-10-teams.md)
     - [Instellingen van Windows Holographic for Business](device-restrictions-windows-holographic.md)
-    - [Android-werkprofielinstellingen](device-restrictions-android-for-work.md)
-8. Als u klaar bent, gaat u terug naar de pagina **Profiel maken** en kiest u **Maken**.
 
-Het profiel wordt gemaakt en wordt weergegeven op de pagina met de profielenlijst.
-Zie [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) als u wilt doorgaan en dit profiel wilt toewijzen aan groepen.
+7. Als u klaar bent, gaat u terug naar de pagina **Profiel maken** en kiest u **Maken**.
+
+Het profiel wordt gemaakt en wordt weergegeven op de pagina met de profielenlijst. 
+
+## <a name="next-step"></a>Volgende stap
+
+Nadat het profiel is gemaakt, is het klaar om te worden toegewezen. Raadpleeg [apparaatprofielen toewijzen](device-profile-assign.md) voor de te volgen stappen. 
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

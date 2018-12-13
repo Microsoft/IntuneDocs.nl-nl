@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d86df4c38e0d4313dbff6ff2cd9111b2126dbaba
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180932"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630014"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Internettoegang beheren met een met Microsoft Intune-beleid beveiligde browser
 
@@ -175,7 +175,12 @@ Zie de blogpost voor Enterprise Mobility + Security [Better together: Intune and
 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Startpagina configureren voor een beveiligde browser
 
-Met deze instelling kunt u de startpagina configureren die gebruikers zien wanneer ze de een beveiligde browser starten of een nieuw tabblad maken. Geef met de procedure voor het maken van een app-configuratie voor Microsoft Edge of Managed Browser het volgende sleutel-waardepaar op:
+Met deze instelling kunt u de startpagina configureren die gebruikers zien wanneer ze de een beveiligde browser starten of een nieuw tabblad maken. 
+- Deze instelling wordt weergegeven op de webpagina in Managed Browser.  Edge geeft in plaats daarvan een snelkoppeling naar de startpagina weer.
+- Het snelkoppelingspictogram naar de startpagina verschijnt als pictogram onder het besturingselement voor zoeken.  Het kan niet worden bewerkt of verwijderd.
+- De snelkoppeling naar de startpagina geeft de naam van uw organisatie weer om deze te onderscheiden.  Deze verschijnt altijd als het eerste pictogram.
+
+Geef met de procedure voor het maken van een app-configuratie voor Microsoft Edge of Managed Browser het volgende sleutel-waardepaar op:
 
 |                                Sleutel                                |                                                           Waarde                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|

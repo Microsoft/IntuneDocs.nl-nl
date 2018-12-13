@@ -1,12 +1,12 @@
 ---
-title: MacOS-apparaten inschrijven - Device Enrollment Program
+title: macOS-apparaten inschrijven - Device Enrollment Program of Apple School Manager
 titleSuffix: Microsoft Intune
 description: Meer informatie over het inschrijven van macOS-apparaten in bedrijfseigendom met het Device Enrollment Program (DEP).
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,22 +16,22 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 92ddad3e7e8de4a10c67f9feae10d2441ec560bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180762"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728749"
 ---
-# <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>MacOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
+# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>macOS-apparaten automatisch inschrijven met het Device Enrollment Program of Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Met de informatie in dit artikel kunt u macOS-apparaatinschrijving instellen voor apparaten die zijn gekocht via het [Device Enrollment Program (DEP)](https://deploy.apple.com) van Apple. U kunt DEP-inschrijving instellen voor grote aantallen apparaten zonder op de apparaten zelf aan de slag te gaan. U kunt macOS-apparaten rechtstreeks verzenden naar gebruikers. Als de gebruiker het apparaat inschakelt, wordt Configuratieassistent uitgevoerd met vooraf gedefinieerde instellingen en wordt het apparaat ingeschreven bij Intune-beheer.
+Met de informatie in dit artikel kunt u macOS-apparaatinschrijving instellen voor apparaten die zijn gekocht via het [Device Enrollment Program (DEP)](https://deploy.apple.com) of [Apple School Manager](https://school.apple.com/) van Apple. U kunt beide soorten inschrijvingen gebruiken voor grote aantallen apparaten zonder op de apparaten zelf aan de slag te gaan. U kunt macOS-apparaten rechtstreeks verzenden naar gebruikers. Als de gebruiker het apparaat inschakelt, wordt Configuratieassistent uitgevoerd met vooraf gedefinieerde instellingen en wordt het apparaat ingeschreven bij Intune-beheer.
 
-Voor het instellen van DEP-inschrijving moet u zowel de Intune-portal als de Apple DEP-portal gebruiken. U maakt DEP-inschrijvingsprofielen met instellingen die tijdens de inschrijving op de apparaten van toepassing zijn geweest.
+Voor het instellen van inschrijving moet u zowel de Intune-portal als de Apple DEP-portal gebruiken. U maakt inschrijvingsprofielen met instellingen die tijdens de inschrijving op de apparaten van toepassing zijn geweest.
 
-Overigens werkt de DEP-inschrijving niet met de [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md) of [Apple School Manager](apple-school-manager-set-up-ios.md).
+Overigens werken DEP-inschrijving en Apple School Manager niet met de [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -42,19 +42,19 @@ Overigens werkt de DEP-inschrijving niet met de [apparaatinschrijvingsmanager](d
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
 ## <a name="prerequisites"></a>Vereisten
-- Apparaten die zijn gekocht in het [Device Enrollment Program van Apple](http://deploy.apple.com)
+- Apparaten die zijn gekocht in [Apple School Manager](http://deploy.apple.com) of het [Device Enrollment Program van Apple](https://school.apple.com/)
 - Een lijst met serienummers of een inkoopordernummer. 
 - [MDM-instantie](mdm-authority-set.md)
 - [Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md)
 
 ## <a name="get-an-apple-dep-token"></a>Een Apple DEP-token ophalen
 
-Voordat u macOS-apparaten kunt inschrijven met DEP, hebt u een DEP-tokenbestand (.p7m) van Apple nodig. Intune kan met deze token informatie synchroniseren over DEP-apparaten die in eigendom zijn van uw bedrijf. Hiermee kunnen in Intune ook inschrijvingsprofielen worden geüpload naar Apple en deze profielen worden toegewezen aan apparaten.
+Voordat u macOS-apparaten kunt inschrijven met DEP of Apple School Manager, hebt u een DEP-tokenbestand (.p7m) van Apple nodig. Intune kan met dit token gegevens synchroniseren van de apparaten die in eigendom zijn van uw organisatie. Hiermee kunnen in Intune ook inschrijvingsprofielen worden geüpload naar Apple en deze profielen worden toegewezen aan apparaten.
 
-U gebruikt de Apple DEP-portal om een DEP-token te maken. U gebruikt de DEP-portal ook om apparaten aan Intune toe te wijzen voor beheer.
+U gebruikt de Apple-portal om een token te maken. U gebruikt de Apple-portal ook om apparaten aan Intune toe te wijzen voor beheer.
 
 > [!NOTE]
-> In Intune kan een verwijderd Apple DEP-token worden hersteld, als u de token van de klassieke Intune-portal verwijdert voordat u naar Azure migreert. U kunt het DEP-token opnieuw verwijderen uit Azure Portal verwijderen.
+> Als u het token verwijdert uit de klassieke Intune-portal voordat u naar Azure migreert, herstelt Intune mogelijk een verwijderd Apple-token. U kunt het token opnieuw verwijderen via de Azure-portal.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Stap 1. Download het openbare-sleutelcertificaat van Intune dat is vereist om het token te maken.
 
@@ -66,15 +66,14 @@ U gebruikt de Apple DEP-portal om een DEP-token te maken. U gebruikt de DEP-port
 
    ![Schermopname van het deelvenster Token voor het inschrijvingsprogramma in de werkruimte Apple-certificaten voor het downloaden van de openbare sleutel.](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
 
-3. Kies **Uw openbare-sleutelcertificaat downloaden** en sla het bestand met de versleutelingssleutel (.pem) lokaal op. Het .pem-bestand wordt gebruikt om een vertrouwensrelatiecertificaat bij de portal Apple Device Enrollment Program aan te vragen.
+3. Kies **Uw openbare-sleutelcertificaat downloaden** en sla het bestand met de versleutelingssleutel (.pem) lokaal op. Het PEM-bestand wordt gebruikt om een vertrouwensrelatiecertificaat aan te vragen bij de Apple-portal.
 
 
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Stap 2. Gebruik uw sleutel om een token van Apple te downloaden.
 
-1. Kies **Een token voor Apple Device Enrollment Program maken** om de Deployment Program-portal van Apple te openen en meld u aan met uw Apple-id. Deze Apple-id kunt u gebruiken om uw DEP-token te verlengen.
-2.  Kies **Aan de slag** bij **Device Enrollment Program** in de [Deployment Programs-portal](https://deploy.apple.com) van Apple.
-
-3. Kies **MDM-server toevoegen** op de pagina **Servers beheren**.
+1. Kies **Een token voor Apple Device Enrollment Program maken** of **Een token maken via Apple School Manager** om de gewenste portal van Apple te openen en meld u aan met uw Apple ID. Deze Apple ID kunt u gebruiken om uw token te verlengen.
+2.  Voor DEP: kies in de Apple-portal **Aan de slag** voor **Device Enrollment Program** > **Servers beheren** > **MDM-server toevoegen**.
+3.  Voor Apple School Manager: kies in de Apple-portal **MDM-servers** > **MDM-server toevoegen**.
 4. Voer de **MDM-servernaam** in en kies **Volgende**. De servernaam is voor eigen referentie en dient om de MDM-server te identificeren. Het is niet de naam of URL van de Microsoft Intune-server.
 
 5. Het dialoogvenster **Voeg &lt;servernaam&gt;** wordt geopend, met de instructie dat u uw **openbare sleutel moet uploaden**. Kies **Bestand selecteren...** om het .pem-bestand te uploaden en kies **Volgende**.
@@ -89,9 +88,7 @@ U gebruikt de Apple DEP-portal om een DEP-token te maken. U gebruikt de DEP-port
 
 8. Voor **Kies actie** kiest u **Toewijzen aan server**, kiest u de &lt;Servernaam&gt; die is opgegeven voor Microsoft Intune en kiest u vervolgens **OK**. De opgegeven apparaten worden voor beheer toegewezen aan de Intune-server en er verschijnt een melding dat de **toewijzing is voltooid**.
 
-   Ga in de Apple-portal **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Toewijzingsgeschiedenis weergeven** om een lijst van apparaten en hun toewijzing aan de MDM-server te bekijken.
-
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Stap 3. Sla de Apple-id op die u hebt gebruikt om dit token te maken.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Stap 3. De Apple-id opslaan die u hebt gebruikt om dit token te maken
 
 Voer in Intune in de Apple-portal de Apple-id in, zodat u deze altijd kunt terugvinden.
 
@@ -102,7 +99,7 @@ Ga in het venster **Apple-token** naar het certificaatbestand (.pem), kies **Ope
 
 ## <a name="create-an-apple-enrollment-profile"></a>Een Apple-inschrijvingsprofiel maken
 
-Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten maken. Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving.
+Na installatie van de token kunt u een inschrijvingsprofiel voor apparaten maken. Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving.
 
 1. Kies in Intune in Azure Portal **Apparaatinschrijving** > **Apple-inschrijving** > **Token voor het inschrijvingsprogramma**.
 2. Selecteer een token, kies **Profielen** en kies vervolgens **Profiel maken**.
@@ -134,7 +131,7 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
     | <strong>Telefoonnummer van afdeling</strong> | Wordt weergegeven wanneer de gebruiker tijdens de activering de knop <strong>Hulp nodig?</strong> klikt. |
 
   U kunt kiezen voor het weergeven of verbergen van tal van schermen van de configuratieassistent op het apparaat tijdens het instellen van het apparaat door de gebruiker.
-  - Als u kiest voor **verbergen** wordt het scherm tijdens het instellen niet weergegeven. Na het instellen van het apparaat kan de gebruiker het menu **Instellingen** nog steeds openen om de functie in te stellen.
+  - Als u kiest voor **Verbergen** wordt het scherm tijdens het instellen niet weergegeven. Na het instellen van het apparaat kan de gebruiker het menu **Instellingen** nog steeds openen om de functie in te stellen.
   - Als u kiest voor **Weergeven** wordt het scherm tijdens het instellen weergegeven. Gebruikers kunnen sommige schermen overslaan zonder actie te ondernemen. Maar ze kunnen het menu **Instellingen** van het apparaat later weer openen om de functie in te stellen. 
 
 
@@ -185,7 +182,7 @@ U kunt een standaardprofiel in macOS en iOS kiezen om toe te passen op alle appa
 2. Kies **Standaardprofiel instellen**, kies een profiel in de vervolgkeuzelijst en kies vervolgens **Opslaan**. Dit profiel wordt toegepast op alle apparaten die zich met het token inschrijven.
 
 ## <a name="distribute-devices"></a>Apparaten distribueren
-U hebt beheer en synchronisatie tussen Apple en Intune ingeschakeld, en een profiel toegewezen om uw DEP-apparaten te kunnen inschrijven. De apparaten kunnen nu worden uitgedeeld aan de gebruikers. Voor apparaten met gebruikersaffiniteit moet aan elke gebruiker een Intune-licentie worden toegewezen. Voor apparaten zonder gebruikersaffiniteit is een apparaatlicentie vereist. Een geactiveerd apparaat kan geen inschrijvingsprofiel toepassen, tenzij het apparaat is gewist.
+U hebt beheer en synchronisatie tussen Apple en Intune ingeschakeld, en een profiel toegewezen om uw apparaten te kunnen inschrijven. De apparaten kunnen nu worden uitgedeeld aan de gebruikers. Voor apparaten met gebruikersaffiniteit moet aan elke gebruiker een Intune-licentie worden toegewezen. Voor apparaten zonder gebruikersaffiniteit is een apparaatlicentie vereist. Een geactiveerd apparaat kan geen inschrijvingsprofiel toepassen, tenzij het apparaat is gewist.
 
 ## <a name="renew-a-dep-token"></a>Een DEP-token vernieuwen  
 1. Ga naar deploy.apple.com.  

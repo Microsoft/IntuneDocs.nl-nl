@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: db9f0ca860186222491906aa35baf1e92d14e548
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0fc0e5bdb261b3cfbc2e5507e1206354d8cc4051
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181336"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630048"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
@@ -199,8 +199,9 @@ Als uw app ADAL al gebruikt, zijn de volgende configuraties vereist:
 
 3. Geef onder de woordenlijst **IntuneMAMSettings** met de sleutelnaam `ADALRedirectUri` ook de omleidings-URI op die voor ADAL-aanroepen moet worden gebruikt. U kunt in plaats daarvan ook `ADALRedirectScheme` opgeven als de omleidings-URI van de toepassing de indeling `scheme://bundle_id` heeft.
 
-
 Apps kunnen bovendien deze Azure AD-instellingen tijdens runtime overschrijven. U kunt dit doen door de eigenschappen `aadAuthorityUriOverride`, `aadClientIdOverride` en `aadRedirectUriOverride` voor de instantie `IntuneMAMPolicyManager` in te stellen.
+
+4. Zorg ervoor dat de stappen om uw iOS-app te machtigen voor het app-beschermingsbeleid (APP) zijn gevolgd. Gebruik de instructies in de handleiding [Aan de slag met de Intune-SDK](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) onder 'Uw app toegang geven tot de Intune-app-beveiliging (optioneel)'.  
 
 > [!NOTE]
 > De methode Info.plist wordt aanbevolen voor alle instellingen die statisch zijn en niet tijdens runtime hoeven te worden vastgesteld. Waarden die zijn toegewezen aan de `IntuneMAMPolicyManager`-eigenschappen hebben voorrang op eventuele bijbehorende waarden die zijn opgegeven in de Info.plist en blijven behouden ook nadat de app opnieuw wordt gestart. De SDK blijft deze gebruiken voor het inchecken van beleid totdat de gebruiker wordt uitgeschreven of de waarden worden gewist of gewijzigd.

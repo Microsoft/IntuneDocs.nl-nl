@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2c4fb7000d808d860494d2af572c821b42fa6d5c
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179402"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579180"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-scripts in Intune beheren voor Windows 10-apparaten
 Met de Intune-beheeruitbreiding kunt u PowerShell-scripts uploaden in Intune om deze uit te voeren op Windows 10-apparaten. De beheeruitbreiding is een aanvulling op de Windows 10 MDM-functionaliteit en maakt het eenvoudiger voor u om uw beheer te moderniseren.
@@ -67,6 +67,12 @@ U kunt de uitvoeringsstatus van PowerShell-scripts voor gebruikers en apparaten 
 Selecteer in **PowerShell-scripts** het script dat u wilt controleren, kies **Controleren** en kies vervolgens een van de volgende rapporten:
    - **Apparaatstatus**
    - **Gebruikersstatus**
+
+## <a name="troubleshoot-powershell-scripts"></a>Problemen met PowerShell-scripts oplossen
+
+Agentlogboeken op de clientcomputer staan meestal in `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. U kunt [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) gebruiken om deze logboekbestanden te bekijken. 
+
+![Schermopname van de agentlogboeken](./media/apps-win32-app-10.png)  
 
 ## <a name="delete-a-powershell-script"></a>Een PowerShell-script verwijderen
 Klik in **PowerShell-scripts** met de rechtermuisknop op het script en selecteer **Verwijderen**.

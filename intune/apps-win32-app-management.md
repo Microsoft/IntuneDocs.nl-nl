@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc1974a57e5a5aa6808936c37e02fd31a7cac7b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187290"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829144"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune (zelfstandig) - Win32-app-beheer (openbare preview)
 
@@ -29,15 +29,11 @@ De zelfstandige versie van Intune heeft uitgebreidere beheermogelijkheden voor W
 
 ## <a name="prerequisites-for-public-preview"></a>Vereisten voor de openbare preview
 
-- Windows 10 versie 1607 of hoger (Enterprise)
+- Windows 10 versie 1607 of hoger (Enterprise, Pro en Education)
 - De Windows 10-client moet aan het volgende voldoen: 
     - gekoppeld aan Azure Active Directory (AAD) of Hybrid Azure Active Directory, en
     - geregistreerd bij Intune (MDM-beheerd)
 - De grootte van Windows-apps wordt in de openbare preview beperkt tot 8 GB per app 
-
-> [!NOTE]
-> We testen momenteel Pro- en Education-edities van Windows 10 versie 1607 en horen graag uw feedback.
-
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>De Win32-app-inhoud voor upload voorbereiden
 
@@ -186,7 +182,7 @@ Net als bij een LOB-app (Line-Of-Business) kunt u een Win32-app aan Microsoft In
     - **Een aangepast detectiescript gebruiken**: geef het PowerShell-script op dat wordt gebruikt voor het detecteren van deze app. 
     
         1.  **Scriptbestand**: selecteer een PowerShell-script waarmee de aanwezigheid van de app op de client wordt gedetecteerd. De app worden gedetecteerd wanneer het script zowel een afsluitcode met waarde 0 retourneert als een tekenreekswaarde naar STDOUT schrijft.
-        2.  **Script uitvoeren als 32-bits proces op 64-bits clients**: selecteer **Ja** om het script uit te voeren van met de referenties van de aangemelde eindgebruiker. Selecteer **Nee** (standaard) om het script in de systeemcontext uit te voeren.
+        2.  **Script uitvoeren als 32-bits proces op 64-bits clients**: selecteer **Ja** om het script uit te voeren met de referenties van de aangemelde eindgebruiker. Selecteer **Nee** (standaard) om het script in de systeemcontext uit te voeren.
         3.  **Controle van scripthandtekening afdwingen**: selecteer **Ja** om te verifiëren dat het script is ondertekend door een vertrouwde uitgever, zodat het script zonder waarschuwingen of prompts kan worden uitgevoerd. Het script wordt niet geblokkeerd terwijl het wordt uitgevoerd. Selecteer **Nee** (standaard) om het script met bevestiging van de eindgebruiker uit te voeren zonder handtekeningverificatie.
     
         Intune sidecar controleert de resultaten van het script. Het leest de waarden die door het script zijn geschreven naar de standaard uitvoerstroom (STDOUT), de standaardfoutstroom (STDERR) en de afsluitcode. Als het script wordt afgesloten met een andere waarde dan nul, mislukt het script en is de app-detectiestatus Niet geïnstalleerd. Als de afsluitcode nul is en STDOUT gegevens heeft, is de toepassingsdetectiestatus Geïnstalleerd. 
@@ -227,6 +223,10 @@ Net als bij een LOB-app (Line-Of-Business) kunt u een Win32-app aan Microsoft In
 8.  Selecteer **Opslaan** in het deelvenster **Toewijzingen**.
 
 U hebt nu de stappen voor het toevoegen van een Win32-app aan Intune voltooid. Zie [Apps toewijzen aan groepen met Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) en [App-gegevens en -toewijzingen controleren met Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor) voor meer informatie over app-toewijzing en -controle.
+
+## <a name="delivery-optimization"></a>Delivery optimization
+
+Clients van Windows 10 RS3 en hoger downloaden Intune Win32-app-inhoud via een delivery optimization-onderdeel in de Windows 10-client. Delivery optimization biedt peer-to-peer-functionaliteit die standaard is ingeschakeld. Delivery optimization kan worden geconfigureerd via groepsbeleid en in de toekomst via Intune MDM. Raadpleeg [Delivery Optimization voor Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) voor meer informatie. 
 
 ## <a name="install-required-and-available-apps-on-devices"></a>Vereiste installatie en beschikbare apps op apparaten
 

@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186072"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729038"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Een pagina voor de status van de inschrijving instellen
  
@@ -61,6 +61,16 @@ Een apparaat of gebruiker kan zich in meerdere groepen bevinden en meerdere prof
 2. Beweeg de muisaanwijzer over het profiel in de lijst.
 3. Sleep met behulp van de drie verticale puntjes het profiel naar de gewenste positie in de lijst.
 
+## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>Toegang blokkeren tot een apparaat tot een bepaalde toepassing is geïnstalleerd
+
+U kunt opgeven welke apps moeten worden geïnstalleerd voordat de gebruiker toegang krijgt tot het bureaublad.
+
+1. Kies in Intune **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving (preview)**.
+2. Kies een profiel > **Instellingen**.
+3. Kies **Ja** bij **Voortgang van installatie van app en profiel weergeven**.
+4. Kies **Ja** bij **Apparaatgebruik blokkeren totdat alle apps en profielen zijn geïnstalleerd**.
+5. Kies **Geselecteerd** bij **Apparaatgebruik blokkeren totdat deze vereiste apps zijn geïnstalleerd als ze worden toegewezen aan de gebruiker/apparaat**.
+ 6. Kies **Apps selecteren** > kies de apps > **selecteer** > **Opslaan**.
 
 ## <a name="enrollment-status-page-tracking-information"></a>Traceringsinformatie op de pagina Status van de inschrijving
 

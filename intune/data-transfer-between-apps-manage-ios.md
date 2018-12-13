@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d5a2bc0939da5ee4cb35585a930f145b832a58ad
-ms.sourcegitcommit: 0dbce0415e53fe963dc7f927ac4b0c06411f199c
+ms.openlocfilehash: e252822569723be6cfe18e488f79a7605f21193c
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281102"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728664"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
 
@@ -38,7 +38,7 @@ Gebruik een app-beveiligingsbeleid met de beheerde **Open in-functie** van iOS o
 
 -   **Apparaten die eigendom zijn van werknemers en die niet worden beheerd met een MDM-oplossing:** u kunt de app-beveiligingsbeleidsinstellingen instellen op **App toestaan om alleen gegevens over te dragen naar door beleid beheerde apps**. Het gedrag *Open-In* in een door beleid beheerde app presenteert alleen andere door beleid beheerde apps als opties voor delen. Als een gebruiker een met beleid beveiligd bestand als bijlage van OneDrive via de systeemeigen e-mail-app probeert te verzenden, is dat bestand onleesbaar.
 
--   **Apparaten die worden beheerd met Intune:** voor apparaten die zijn ingeschreven bij Intune wordt de gegevensoverdracht tussen apps met een beveiligingsbeleid voor apps en andere beheerde iOS-apps die via Intune zijn geïmplementeerd automatisch toegestaan. Als u wilt opgeven hoe u gegevensoverdracht naar andere apps wilt toestaan, schakelt u **App mag gegevens overdragen naar andere apps** in en kiest u vervolgens het gewenste deelniveau. Als u wilt opgeven hoe u apps wilt toestaan om gegevens te ontvangen van andere apps, schakelt u **App mag gegevens ontvangen van andere apps** in en kiest u vervolgens het gewenste niveau voor het ontvangen van gegevens. U kunt de functie **Openen in beheer** gebruiken om gegevensoverdracht te beheren tussen apps die via Intune zijn geïmplementeerd. Zie [Instellingen voor herlocatie van gegevens](app-protection-policy-settings-ios.md#data-relocation-settings) voor meer informatie over het ontvangen en delen van app-gegevens.   
+-   **Apparaten die worden beheerd met Intune:** voor apparaten die zijn ingeschreven bij Intune wordt de gegevensoverdracht tussen apps met een beveiligingsbeleid voor apps en andere beheerde iOS-apps die via Intune zijn geïmplementeerd automatisch toegestaan. Als u wilt opgeven hoe u gegevensoverdracht naar andere apps wilt toestaan, schakelt u **App mag gegevens overdragen naar andere apps** in en kiest u vervolgens het gewenste deelniveau. Als u wilt opgeven hoe u apps wilt toestaan om gegevens te ontvangen van andere apps, schakelt u **App mag gegevens ontvangen van andere apps** in en kiest u vervolgens het gewenste niveau voor het ontvangen van gegevens. U kunt de functie **Openen in beheer** gebruiken om gegevensoverdracht te beheren tussen apps die via Intune zijn geïmplementeerd. Zie [Instellingen voor herlocatie van gegevens](app-protection-policy-settings-ios.md#data-protection-settings) voor meer informatie over het ontvangen en delen van app-gegevens.   
 
 -   **Apparaten die worden beheerd met een MDM-oplossing van derden:** met behulp van de beheerde **Open in-functie** van iOS kunt u de gegevensoverdracht beperken tot alleen beheerde apps.
 Als u ervoor wilt zorgen dat apps die u implementeert met behulp van een MDM-oplossing van derden ook onderhevig zijn aan het app-beveiligingsbeleid in Intune, configureert u de UPN-gebruikersinstelling zoals beschreven in de volgende sectie [UPN-gebruikersinstelling configureren](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). Wanneer apps zijn geïmplementeerd met de UPN-gebruikersinstelling, wordt het app-beveiligingsbeleid toegepast op de app wanneer de gebruiker zich aanmeldt met zijn/haar werkaccount.

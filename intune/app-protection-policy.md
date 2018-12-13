@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
+ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179164"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389866"
 ---
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
@@ -66,9 +66,9 @@ Het gebruik van MDM met het beveiligingsbeleid voor apps biedt extra voordelen e
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>Ondersteunde platformen voor het beveiligingsbeleid voor apps
-De platformondersteuning voor beveiligingsbeleid voor apps in Intune is afgestemd op platformondersteuning voor mobiele Office-toepassingen. Zie de sectie **Mobiele apps** van [Systeemvereisten voor Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg) voor de details.
+De platformondersteuning voor beveiligingsbeleid voor apps in Intune is afgestemd op platformondersteuning voor mobiele Office-toepassingen voor Android- en iOS-apparaten. Zie de sectie **Mobiele apps** van [Systeemvereisten voor Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg) voor de details.
 
-Windows-apparaten worden momenteel niet ondersteund. Wanneer u Windows 10-apparaten registreert bij Intune, kunt u Windows Information Protection gebruiken, dat vergelijkbare functionaliteit biedt. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
+Windows-apparaten worden momenteel niet ondersteund. U kunt echter wel Windows Information Protection gebruiken, dat vergelijkbare functionaliteit biedt. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
 
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Hoe het beveiligingsbeleid voor apps app-gegevens beveiligen
@@ -146,7 +146,9 @@ Hoewel het **algemene** beleid van toepassing is op alle gebruikers in uw tenant
 
 Met apps die ondersteuning bieden voor meerdere identiteiten, kunt u verschillende accounts (zakelijk en persoonlijk) gebruiken voor toegang tot dezelfde apps, terwijl beveiligingsbeleid voor apps alleen van toepassing is wanneer de apps worden gebruikt in zakelijke context.
 
-Bijvoorbeeld: wanneer een gebruiker de OneDrive-app start met behulp van een werkaccount. In de werkcontext kan deze gebruiker bestanden niet verplaatsen naar een persoonlijke opslaglocatie. Later, wanneer OneDrive wordt gebruikt voor een persoonlijk account, kunnen de gegevens op de persoonlijke OneDrive-locatie zonder beperkingen worden gekopieerd en verplaatst.
+Een voorbeeld van een persoonlijke context is een gebruiker die een nieuw document start in Word. Aangezien dit als persoonlijke context wordt beschouwd, wordt er geen beveiligingsbeleid voor apps van Intune toegepast. Zodra het document is opgeslagen in de zakelijke OneDrive-account, wordt het beschouwd als zakelijke context en wordt er dus beveiligingsbeleid voor apps van Intune op toegepast.
+
+Een voorbeeld van werkcontext is een gebruiker die de OneDrive-app start met behulp van een werkaccount. In de werkcontext kan deze gebruiker bestanden niet verplaatsen naar een persoonlijke opslaglocatie. Later, wanneer OneDrive wordt gebruikt voor een persoonlijk account, kunnen de gegevens op de persoonlijke OneDrive-locatie zonder beperkingen worden gekopieerd en verplaatst.
 
 - Meer informatie over de apps die ondersteuning bieden voor [MAM en meerdere identiteiten](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) met Intune.
 

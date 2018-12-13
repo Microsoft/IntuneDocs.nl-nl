@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dabd5b6ca2f8bb01421c24cb7c16ab57cf59ef56
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 06b568ee7cc2dc55a8d44cf04b96078b47d8c4b3
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180983"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579163"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>SCEP- en PKCS-certificaten verwijderen in Microsoft Intune
 
@@ -43,8 +43,7 @@ In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS-
   - De beheerder een apparaat [wist](devices-wipe.md#wipe)
   - De beheerder een apparaat [buiten gebruik stelt](devices-wipe.md#retire)
   - Het apparaat wordt verwijderd uit de AD-groep (Azure Active Directory)
-  - Het nalevingsbeleid uit de groepstoewijzing wordt verwijderd
-  - Het configuratieprofiel uit de groepstoewijzing wordt verwijderd
+  - Certificaatprofiel wordt verwijderd uit de groepstoewijzing
 
 - Een SCEP-certificaat wordt ingetrokken wanneer:
   - De beheerder wijzigingen aanbrengt in het SCEP-profiel of dit bijwerkt
@@ -53,7 +52,6 @@ In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS-
   - Een eindgebruiker wordt uitgeschreven
   - De beheerder een apparaat [wist](devices-wipe.md#wipe)
   - De beheerder een apparaat [buiten gebruik stelt](devices-wipe.md#retire)
-  - Het nalevingsbeleid uit de groepstoewijzing wordt verwijderd
 
 - SCEP-certificaten **blijven gehandhaafd** op het apparaat (certificaten worden niet ingetrokken of verwijderd) wanneer:
   - Een eindgebruiker de Intune-licentie verliest
@@ -78,8 +76,7 @@ In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS-
   - De beheerder de Intune-licentie intrekt
   - De beheerder de gebruiker of groep uit Azure AD verwijdert
   - De beheerder wijzigingen aanbrengt in het PKCS-profiel of dit bijwerkt
-  - Het configuratieprofiel uit de groepstoewijzing wordt verwijderd
-  - Het nalevingsbeleid uit de groepstoewijzing wordt verwijderd 
+  - Certificaatprofiel wordt verwijderd uit de groepstoewijzing
 
 
 ## <a name="ios-devices"></a>iOS-apparaten
@@ -92,8 +89,7 @@ In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS-
   - De beheerder een apparaat [wist](devices-wipe.md#wipe)
   - De beheerder een apparaat [buiten gebruik stelt](devices-wipe.md#retire)
   - Het apparaat wordt verwijderd uit de AD-groep (Azure Active Directory)
-  - Het nalevingsbeleid uit de groepstoewijzing wordt verwijderd
-  - Het configuratieprofiel uit de groepstoewijzing wordt verwijderd
+  - Certificaatprofiel wordt verwijderd uit de groepstoewijzing
 
 - Een SCEP-certificaat wordt ingetrokken wanneer:
   - De beheerder wijzigingen aanbrengt in het SCEP-profiel of dit bijwerkt
@@ -102,7 +98,6 @@ In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS-
   - Een eindgebruiker wordt uitgeschreven
   - De beheerder een apparaat [wist](devices-wipe.md#wipe)
   - De beheerder een apparaat [buiten gebruik stelt](devices-wipe.md#retire)
-  - Het nalevingsbeleid uit de groepstoewijzing wordt verwijderd
 
 - SCEP-certificaten **blijven gehandhaafd** op het apparaat (certificaten worden niet ingetrokken of verwijderd) wanneer:
   - Een eindgebruiker de Intune-licentie verliest
@@ -118,8 +113,7 @@ In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS-
   - De beheerder een apparaat [buiten gebruik stelt](devices-wipe.md#retire)
 
 - Een PKCS-certificaat wordt verwijderd wanneer:
-  - Het nalevingsbeleid uit de groepstoewijzing wordt verwijderd
-  - Het configuratieprofiel uit de groepstoewijzing wordt verwijderd
+  - Certificaatprofiel wordt verwijderd uit de groepstoewijzing
   
 - Een basiscertificaat wordt verwijderd wanneer:
   - Een eindgebruiker wordt uitgeschreven
@@ -143,8 +137,7 @@ In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS-
 - Een SCEP-certificaat wordt ingetrokken wanneer:
   - De beheerder een apparaat [buiten gebruik stelt](devices-wipe.md#retire)
   - Het apparaat wordt verwijderd uit de AD-groep (Azure Active Directory)
-  - Het nalevingsbeleid uit de groepstoewijzing wordt verwijderd
-  - Het configuratieprofiel uit de groepstoewijzing wordt verwijderd
+  - Certificaatprofiel wordt verwijderd uit de groepstoewijzing
   - De beheerder de gebruiker of groep uit Azure Active Directory (AD) verwijdert
   - De beheerder wijzigingen aanbrengt in het SCEP-profiel of dit bijwerkt
 
@@ -176,8 +169,7 @@ In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS-
   - De beheerder de Intune-licentie intrekt
   - De beheerder de gebruiker of groep uit Azure AD verwijdert
   - De beheerder wijzigingen aanbrengt in het PKCS-profiel of dit bijwerkt
-  - Het configuratieprofiel uit de groepstoewijzing wordt verwijderd
-  - Het nalevingsbeleid uit de groepstoewijzing wordt verwijderd 
+  - Certificaatprofiel wordt verwijderd uit de groepstoewijzing
   
   
 > [!NOTE]
@@ -191,8 +183,7 @@ In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS-
   - Een eindgebruiker wordt uitgeschreven
   - De beheerder een apparaat [buiten gebruik stelt](devices-wipe.md#retire)
   - Het apparaat wordt verwijderd uit de AD-groep (Azure Active Directory)
-  - Het nalevingsbeleid uit de groepstoewijzing wordt verwijderd
-  - Het configuratieprofiel uit de groepstoewijzing wordt verwijderd
+  - Certificaatprofiel wordt verwijderd uit de groepstoewijzing
 
 - Een SCEP-certificaat wordt ingetrokken wanneer:
   - De beheerder wijzigingen aanbrengt in het SCEP-profiel of dit bijwerkt

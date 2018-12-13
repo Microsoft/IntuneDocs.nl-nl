@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1cb30c1125add982a40fa2319e1f9b8b9edae1e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed6a79142c2bbe3bd93b02c17e92f4f11f2583f3
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190418"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829195"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,89 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook geplande 
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-26-2018"></a>Week van 26 november 2018
+
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>Apps verwijderen op onder supervisie staande iOS-apparaten in bedrijfseigendom <!-- 1281677 -->
+
+U kunt alle apps op onder supervisie staande iOS-apparaten in bedrijfseigendom verwijderen. U kunt alle apps verwijderen voor gebruikers- of apparaatgroepen met het toewijzingstype **Verwijderen**. Voor persoonlijke of niet onder supervisie staande iOS-apparaten kunt u nog steeds alleen de apps verwijderen die zijn geïnstalleerd met behulp van Intune.
+
+#### <a name="downloading-intune-win32-app-content----2617320---"></a>Intune Win32-app-inhoud downloaden <!-- 2617320 -->
+Clients van Windows 10 RS3 en hoger downloaden Intune Win32-app-inhoud via een Delivery Optimization-onderdeel in de Windows 10-client. Delivery Optimization biedt peer-to-peer-functionaliteit die standaard is ingeschakeld. Delivery Optimization kan worden geconfigureerd via groepsbeleid en in de toekomst via Intune MDM. Raadpleeg [Delivery Optimization voor Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) voor meer informatie. 
+
+#### <a name="end-user-device-and-app-content-menu----2771453---"></a>Apparaat- en app-inhoudmenu voor eindgebruikers <!-- 2771453 -->
+Eindgebruikers kunnen nu het contextmenu van apparaten en apps gebruiken om veelvoorkomende acties te activeren, zoals de naam van een apparaat wijzigen of de nalevingsstatus controleren.
+
+#### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>Aangepaste achtergrond in de app voor het beheerde startscherm instellen <!-- 3041945 -->
+We voegen een instelling toe waarmee u de achtergrond van de app voor het beheerde startscherm op Android Enterprise-apparaten in de kioskmodus voor meerdere apps kunt aanpassen.  Om de **Aangepaste URL-achtergrond** te configureren, gaat u naar Intune in de Azure-portal > Apparaatconfiguratie. Selecteer een huidig apparaatconfiguratieprofiel of maak een nieuw profiel als u de kioskinstellingen wilt bewerken.
+Raadpleeg [Android Enterprise-apparaatbeperkingen](device-restrictions-android-for-work.md) voor de kioskinstellingen.
+
+#### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Beleidstoewijzing voor app-beveiliging opslaan en toepassen <!-- 3104570 -->
+U hebt nu meer controle over uw [beleidstoewijzingen voor app-beveiliging](app-protection-policies.md#deploy-a-policy-to-users). Wanneer u *Toewijzingen* selecteert om de toewijzingen van een beleid in te stellen, moet u uw configuratie **Opslaan** voordat de wijziging wordt toegepast. Gebruik **Verwijderen** om alle wijzigingen die u maakt te verwijderen zonder wijzigingen aan de lijsten Opnemen of Uitsluiten op te slaan.  Door Opslaan of Verwijderen te vereisen, krijgen alleen de door u beoogde gebruikers een beveiligingsbeleid voor apps toegewezen.
+
+#### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Nieuwe Microsoft Edge-browserinstellingen voor Windows 10 en hoger <!-- 3174639 -->
+Deze update bevat nieuwe instellingen om de Microsoft Edge-browser op uw apparaten te controleren en te beheren. Raadpleeg [Apparaatbeperkingsinstellingen voor Windows 10 (en hoger)](device-restrictions-windows-10.md#microsoft-edge-browser) voor een lijst met deze instellingen.
+
+#### <a name="new-apps-support-with-app-protection-policies----3330037---"></a>Ondersteuning voor nieuwe apps met beveiligingsbeleid voor apps <!-- 3330037 -->
+U kunt nu de volgende apps beheren met [Intune-beveiligingsbeleid voor apps](app-protection-policies.md):
+- Stream (iOS)
+- To DO (Android, iOS)
+- PowerApps (Android, iOS)
+- Flow (Android, iOS)
+
+Gebruik beveiligingsbeleid voor apps om zakelijke gegevens te beschermen en gegevensoverdracht voor deze apps te controleren, zoals voor andere door beleid beheerde Intune-apps. Opmerking: als Flow nog niet zichtbaar is in de console, voegt u Flow toe wanneer u app-beveiligingsbeleid maakt of bewerkt. Gebruik hiervoor de optie **+ Meer apps** en geef vervolgens de *App-ID* voor Flow op in het invoerveld. Gebruik voor Android *com.microsoft.flow* en voor iOS *com.microsoft.procsimo*.
+
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Update van de gebruikersinterface voor beveiligingsbeleid voor apps in Intune <!-- 3251427 -->
+We hebben de labels voor instellingen en knoppen voor App-beveiliging van Intune gewijzigd om ze duidelijker te maken. De wijzigingen zijn onder meer:  
+
+- Besturingselementen zijn gewijzigd van **ja** / **nee** naar primair **blokkeren**/**toestaan** en **uitschakelen** / **inschakelen**. De labels zijn ook bijgewerkt.  
+- De instellingen zijn opnieuw ingedeeld, zodat de instellingen en bijbehorende labels naast elkaar in het besturingselement staan, wat betere navigatie biedt.   
+
+De standaardinstellingen en een aantal instellingen blijven dezelfde, maar met deze wijziging kan de gebruiker de instellingen beter begrijpen, gebruiken en er door navigeren om het geselecteerde app-beveiligingsbeleid toe te passen.
+
+### <a name="device-configuration"></a>Apparaatconfiguratie
+
+#### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>iOS- en macOS-versienummers en buildnummers worden weergegeven <!-- 1892471 -->
+In **Apparaatcompatibiliteit** > **Apparaatcompatibiliteit** worden de versies van het iOS- en macOS-besturingssysteem weergegeven en zijn beschikbaar voor gebruik in compatibiliteitsbeleid. Deze update omvat het buildnummer, dat voor beide platformen configureerbaar is.
+Wanneer er beveiligingsupdates worden uitgebracht, laat Apple doorgaans het versienummer ongewijzigd, maar wordt het buildnummer wel bijgewerkt. Door het buildnummer in een compatibiliteitsbeleid te gebruiken, kunt u eenvoudig controleren of een beveiligingsupdate is geïnstalleerd.
+Raadpleeg het nalevingsbeleid van [iOS](compliance-policy-create-ios.md#device-health) en [macOS](compliance-policy-create-mac-os.md#device-properties) om deze functie te gebruiken.
+
+#### <a name="update-rings-are-being-replaced-with-delivery-optimization-settings-for-windows-10-and-later----2753807---"></a>Update-ringen worden vervangen door Delivery Optimization-instellingen voor Windows 10 en hoger <!-- 2753807 -->
+Delivery Optimization is een nieuw configuratieprofiel voor Windows 10 en hoger. Deze functie biedt een meer gestroomlijnde ervaring om softwareupdates op apparaten in uw organisatie te installeren. Deze update helpt u ook om met behulp van een configuratieprofiel de instellingen in nieuwe en bestaande update-ringen te implementeren.
+Raadpleeg [Delivery Optimization-instellingen voor Windows 10 (en hoger)](delivery-optimization-windows.md) om een Delivery Optimization-configuratieprofiel te configureren.
+
+
+### <a name="device-enrollment"></a>Apparaatinschrijving
+
+#### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>Apps die worden bijgehouden op de pagina Status van inschrijving selecteren<!-- 2531007 -->
+U kunt kiezen welke apps worden bijgehouden in de pagina Status van inschrijving. Totdat deze apps zijn geïnstalleerd, kan de gebruiker het apparaat niet gebruiken. Raadpleeg [Een pagina voor de status van de inschrijving instellen](windows-enrollment-status.md) voor meer informatie.
+
+#### <a name="search-for-autopilot-device-by-serial-number---2595788---"></a>Op serienummer zoeken naar een Autopilot-apparaat <!--2595788 -->
+U kunt nu op serienummer zoeken naar Autopilot-apparaten. Kies hiervoor **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > voer een serienummer in het venster **Zoeken op serienummer** in > druk op Enter.
+
+#### <a name="track-installation-of-office-proplus---2620217---"></a>Installatie van Office ProPlus bijhouden <!--2620217 -->
+Gebruikers kunnen de voortgang van de installatie van [Office ProPlus](apps-add-office365.md) bijhouden met behulp van de [Pagina Status van inschrijving](windows-enrollment-status.md). Raadpleeg [Een pagina voor de status van de inschrijving instellen](windows-enrollment-status.md) voor meer informatie.
+
+#### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>Meldingen voor verlopend VPP-token of onvoldoende bedrijfsportal-licenties <!-- 2237572 -->
+Als u het Volume Purchase Program (VPP) gebruikt om de Bedrijfsportal vooraf in te richten tijdens DEP-inschrijving, waarschuwt Intune u wanneer het VPP-token bijna verloopt en wanneer er bijna te weinig licenties zijn voor de Bedrijfsportal.
+
+### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133---"></a>Ondersteuning voor het macOS Device Enrollment Program voor Apple School Manager-accounts <!--3006133 -->
+Intune ondersteunt nu het gebruik van het Device Enrollment Program op macOS-apparaten voor Apple School Manager-accounts.  Raadpleeg [MacOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple School Manager](device-enrollment-program-enroll-macos.md) voor meer informatie.
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>Nieuwe apparaatabonnements-SKU van Intune <!--3312071-->
+Er is nu een nieuwe, op apparaten gebaseerde abonnements-SKU beschikbaar om de kosten van apparaatbeheer in ondernemingen te verlagen. Deze apparaat-SKU van Intune biedt licenties per apparaat op maandbasis. De prijs varieert per licentieprogramma. Het is beschikbaar in Direct Channel, Enterprise Agreement (EA), Microsoft Products and Services Program (MPSA) en Open en Cloud Solution Provider (CSP).
+
+### <a name="device-management"></a>Apparaatbeheer
+
+#### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>Kioskmodus op Android-apparaten tijdelijk onderbreken om wijzigingen aan te brengen <!-- 3041935 -->
+Wanneer u Android-apparaten in de kioskmodus voor meerdere apps gebruikt, moet de IT-beheerder mogelijk wijzigingen aanbrengen aan het apparaat. Deze update omvat nieuwe instellingen voor kiosken voor meerdere apps waarmee de IT-beheerder de kioskmodus tijdelijk kan onderbreken met behulp van een pincode om toegang tot het hele apparaat te krijgen.
+Raadpleeg [Android Enterprise-apparaatbeperkingen](device-restrictions-android-for-work.md) voor de kioskinstellingen.
+
+#### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>Virtuele startknop op kioskapparaten voor Android Enterprise inschakelen <!-- 3042021 -->
+Met een nieuwe instelling kunnen gebruikers op een soft-keyknop op hun apparaat tikken om over te schakelen tussen de app voor het beheerde startscherm en andere toegewezen apps op hun kioskapparaat voor meerdere apps. Deze instelling is vooral handig in scenario's waarbij de kiosk-app van een gebruiker niet op de juiste wijze op de knop 'Terug' reageert. U kunt deze instelling configureren voor Android-apparaten in bedrijfseigendom voor eenmalig gebruik. Om de **Virtuele startknop** in of uit te schakelen, gaat u naar Intune in Azure Portal > Apparaatconfiguratie. Selecteer een huidig apparaatconfiguratieprofiel of maak een nieuw profiel als u de kioskinstellingen wilt bewerken.
+Raadpleeg [Android Enterprise-apparaatbeperkingen](device-restrictions-android-for-work.md) voor de kioskinstellingen.
 
 ## <a name="week-of-november-12-2018"></a>Week van 12 november 2018
 
@@ -84,7 +167,7 @@ U kunt de problemen met de installatie van client-apps oplossen door de kolom me
 
 ### <a name="device-configuration"></a>Apparaatconfiguratie
 
-#### <a name="network-access-control-support-on-ios-vpn-clients----1333693-wnready---"></a>Ondersteuning voor netwerktoegangsbeheer op iOS VPN-clients <!-- 1333693 wnready -->
+#### <a name="network-access-control-support-on-ios-vpn-clients----1333693---"></a>Ondersteuning voor netwerktoegangsbeheer op iOS VPN-clients <!-- 1333693 -->
 Met deze update is er een nieuwe instelling om netwerktoegangsbeheer (NAC) in te schakelen wanneer u een VPN-configuratieprofiel maakt voor Cisco AnyConnect-, F5-toegang en Citrix SSO voor iOS. Dankzij deze instelling kan de NAC-ID van het apparaat worden opgenomen in het VPN-profiel. Momenteel zijn er geen VPN-clients of NAC-partneroplossingen die ondersteuning bieden voor deze nieuwe NAC-ID, maar we houden u op de hoogte via onze [ondersteuningsblogpost](ttps://aka.ms/iOS12_and_vpn) als dit het geval is.
 
 Voor het gebruik van NAC moet u het volgende doen:
@@ -146,9 +229,6 @@ Met behulp van beveiligingsbeleid voor apps in Intune kunt u verschillende inste
   
 De functionaliteit van de instellingen verandert niet, maar de instellingen zijn gemakkelijker terug te vinden wanneer u bezig bent met het opstellen van beleid.
 
-### <a name="new-intune-device-subscription-sku---3312071--"></a>Nieuwe apparaatabonnements-SKU van Intune !--3312071-->
-Er is nu een nieuwe, op apparaten gebaseerde abonnements-SKU beschikbaar om de kosten van apparaatbeheer in ondernemingen te verlagen. Deze apparaat-SKU van Intune biedt licenties per apparaat op maandbasis. De prijs varieert per licentieprogramma. Het is beschikbaar in Direct Channel, Enterprise Agreement (EA), Microsoft Products and Services Program (MPSA) en Open en Cloud Solution Provider (CSP).
-
 ### <a name="intune-apps"></a>Intune-apps
 
 #### <a name="intune-will-support-a-maximum-package-size-of-8-gb-for-lob-apps----1727158---"></a>Intune biedt ondersteuning voor een maximale pakketgrootte van 8 GB voor LOB-apps <!-- 1727158 -->
@@ -173,7 +253,7 @@ Voor klanten die deel uitmaken van de implementatie, vervangt deze nieuwe ervari
 
 Zie [Nieuwe ervaring voor help en ondersteuning](get-support.md#new-help-and-support-experience) in Ondersteuning voor Microsoft Intune krijgen voor meer informatie.  
 
-### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>PowerShell-module voor Intune - Preview-versie is beschikbaar <!-- wnready 951068 -->
+### <a name="powershell-module-for-intune--preview-available----951068---"></a>PowerShell-module voor Intune - Preview-versie is beschikbaar <!-- 951068 -->
 Een nieuwe PowerShell-module die ondersteuning biedt voor de Intune-API via Microsoft Graph is nu beschikbaar als preview-versie op [GitHub]( https://aka.ms/intunepowershell). Zie het Leesmij-bestand op die locatie meer informatie over het gebruik van deze module. 
 
 
@@ -355,7 +435,7 @@ Zie [Windows 10 VPN-instellingen](vpn-settings-windows-10.md) voor informatie ov
 
 #### <a name="the-macos-company-portal-installer-now-includes-the-version-number-in-the-installer-file-name---2652728--"></a>Het installatieprogramma van de macOS-bedrijfsportal-app bevat nu het versienummer in de bestandsnaam van het installatieprogramma <!--2652728-->
 
-#### <a name="ios-automatic-app-updates----2729759-wnready---"></a>Automatische iOS-app-updates <!-- 2729759 wnready -->
+#### <a name="ios-automatic-app-updates----2729759---"></a>Automatische iOS-app-updates <!-- 2729759 -->
 Automatische updates voor apps worden gebruikt voor apps voor zowel gelicentieerde apparaten als gebruikers voor iOS-versie 11.0 en later.
 
 
@@ -733,7 +813,7 @@ In deze update is de grafische gebruikersgrafiek terug. Deze wordt weergegeven i
 
 ### <a name="device-enrollment"></a>Apparaatinschrijving
 
-#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118-wnready---"></a>Ondersteuning voor Windows Autopilot-inschrijving zonder gebruikersverificatie <!-- 1165118 wnready -->
+#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118---"></a>Ondersteuning voor Windows Autopilot-inschrijving zonder gebruikersverificatie <!-- 1165118 -->
 Intune ondersteunt nu Windows Autopilot-inschrijving zonder gebruikersverificatie. Dit is een nieuwe optie in het implementatieprofiel Windows AutoPilot; 'Automatische piloot implementatiemodus' is ingesteld op 'Zelf-implementerend'.  Het apparaat moet build 17672 of hoger van Windows 10 Insider Preview bevatten en beschikken over een TPM 2.0-chip voor dit type inschrijving. Omdat er geen gebruikersverificatie is vereist, moet u deze optie alleen toewijzen aan apparaten waartoe u fysiek toegang hebt.
 
 #### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766---"></a>Nieuwe taal-/landinstelling wanneer u OOBE configureert voor AutoPilot <!-- 1821766 -->
@@ -781,7 +861,7 @@ De CCID-informatie (Chip Card Interface Device) is nu opgenomen voor elk apparaa
 #### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>Alle gebruikers en apparaten toewijzen als bereikgroepen <!-- 2196803 -->
 U kunt nu alle gebruikers, alle apparaten, en alle gebruikers en alle apparaten in bereikgroepen toewijzen. Kies hiervoor **Intune-rollen** > **Alle rollen** > **Beleid en profielbeheer** > **Toewijzingen** > kies een toewijzing > **Bereik (groepen)**.
 
-#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806-wnready--"></a>UDID-informatie is nu opgenomen voor iOS- en macOS-apparaten <!-- 2219806 wnready-->
+#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806---"></a>UDID-informatie is nu opgenomen voor iOS- en macOS-apparaten <!-- 2219806 -->
 Als u de unieke apparaat-id (UDID) voor iOS- en macOS-apparaten wilt zien, gaat u naar **Apparaten** > **Alle apparaten** > kies een apparaat > **Hardware**. UDID is alleen beschikbaar voor bedrijfsapparaten (zoals ingesteld onder **Apparaten** > **Alle apparaten** > kies een apparaat > **Eigenschappen** > **Apparaateigendom**).
 
 ### <a name="intune-apps"></a>Intune-apps
@@ -955,7 +1035,7 @@ De bedrijfsportal-app voor macOS-apparaten wordt bijgewerkt om de manier waarop 
 
 Zie [Fouten verzenden voor macOS](/intune-user-help/send-errors-macos) voor meer informatie.
 
-#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010-wnready---"></a>Intune wordt aangepast aan Fluent Design System in de bedrijfsportal-app voor Windows 10 <!-- 1195010 WNready -->
+#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010---"></a>Intune wordt aangepast aan Fluent Design System in de bedrijfsportal-app voor Windows 10 <!-- 1195010 -->
 De Intune-bedrijfsportal-app voor Windows 10 is bijgewerkt met de [Fluent Design System-navigatieweergave](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Aan de zijkant van de app wordt een statische verticale lijst weergegeven met alle toplevelpagina's. Klik op een willekeurige koppeling om snel pagina's weer te geven en te schakelen tussen pagina's. Dit is de eerste van verschillende updates die onderdeel uitmaken van onze voortdurende inspanningen om een meer adaptieve, intuïtieve en vertrouwde versie van Intune te maken. Ga naar [Wat is er nieuw in de gebruikersinterface van de app?](whats-new-app-ui.md) om het bijgewerkte uiterlijk te bekijken.
 
 ## <a name="week-of-april-16-2018"></a>Week van 16 april 2018
@@ -1016,6 +1096,27 @@ Ga naar [Wat is er nieuw in de gebruikersinterface van de app?](whats-new-app-ui
 U kunt nu Intune App Policy Protection (APP) en Conditional Access (CA) gebruiken om de toegang tot on-premises Exchange-gegevens te beveiligen met Outlook Mobile. Als u beleid voor app-beveiliging wilt toevoegen of wijzigen in Azure Portal, selecteert u **Microsoft Intune** > **Client-apps** > **Beleid voor app-beveiliging**. Voordat u deze functie gebruikt, moet u ervoor zorgen dat u voldoet aan de [Outlook voor iOS- en Android-vereisten](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## <a name="notices"></a>Mededelingen
+
+### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Wijzigingsplan: Exchange Online naar Intune-connector zal niet meer beschikbaar zijn in Intune <!-- 3105122 -->
+Ter vereenvoudiging van uw ervaring met Exchange Online en voorwaardelijke toegang schakelen we de service-to-service-connector-connector voor Exchange Online naar Intune uit. Deze wijziging gaat van start bij de service-update van december en is bij de service-update van februari 2019 voltooid.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+U ontvangt dit bericht omdat u volgens onze registratie de service-to-service-connector mogelijk in uw omgeving gebruikt. De service-to-service-connector ondersteunt Intune-beheer van Exchange Active Sync Only-apparaten voor Exchange Online en ondersteunt geen on-premises infrastructuur. Het lijkt, vanwege de weergave van de console, alsof deze connector nodig is voor voorwaardelijke toegang, terwijl dat niet zo is. Bij de update van december voor de Intune-service schakelen we de knop uit om nieuwe connectors in te stellen, zodat dit ook in de console duidelijk is. Vanaf februari 2019 worden vervolgens alle bestaande Exchange Online naar Intune-connectors uitgeschakeld.
+
+Als u deze connectors gebruikt in uw omgeving, kunt u Exchange Active Sync Only-apparaten in Intune niet bewaken of wissen nadat de connectors in februari zijn uitgeschakeld. Er worden tijdens deze wijzigingen geen gevolgen verwacht voor uw eindgebruikers.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
+
+Als u de service-to-service-connector hebt ingesteld en Exchange Active Sync Only-apparaten hebt, schakelt u over naar andere methoden om uw apparaten te beheren. U hebt de volgende opties:
+
+- Apparaten registreren in Mobile Device Management (MDM)
+- Beleid voor Intune-app-beveiliging gebruiken om uw apparaten te beheren
+- Exchange-besturingselementen gebruiken zoals wordt beschreven in deze documentatie. 
+
+#### <a name="additional-information"></a>Als u meer informatie
+[De Exchange Connector-service configureren voor Intune en Exchange Online](https://docs.microsoft.com/intune/exchange-service-connector-configure)
+
+
 
 ### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Geplande wijziging: prestatie-updates voor Intune for Education <!--1750215-->
 We voegen een aantal updates toe aan Intune for Education om de snelheid en betrouwbaarheid te verbeteren wanneer u instellingen aan uw gebruikers of apparaten toewijst. Als onderdeel van deze wijziging worden uw toewijzingen van beleidsregels of instellingen vanaf eind november naar nieuwe groepen verplaatst.
@@ -1090,14 +1191,8 @@ Controleer de wachtwoordinstellingen in uw Android- en Android Enterprise-appara
 #### <a name="additional-information"></a>Aanvullende informatie
 https://aka.ms/PasswordSettings 
 
-### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Plannen voor wijziging: Wachtwoord wijzigen bij volgende verificatie toegevoegd aan Intune<!-- 1873216 -->
-In de onderhoudsrelease van september wordt de nieuwe Apple-instelling **Wachtwoord wijzigen bij volgende verificatie** geïntegreerd voor apparaten met Mac OS-versies 10.13 en nieuwer. In de huidige situatie (zonder deze instelling) kunnen MDM-providers niet controleren of de wachtwoordcode van het apparaat is gewijzigd, zodat aan het beleid wordt voldaan. Het beleid voor configuratie en naleving van Intune geeft zonder deze instelling alleen aan dat een apparaatwachtwoord voldoet aan het beleid wanneer dit wordt gewijzigd. Wanneer deze nieuwe functie van Apple wordt toegevoegd, krijgen uw macOS-gebruikers een verzoek om hun wachtwoord bij te werken, zelfs als het wachtwoord aan het beleid voldoet.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Dit heeft gevolgen voor omgevingen met een macOS-apparaatbeleid dat gebruikmaakt van Intune of een hybride MDM. Nu Apple de instelling **Wachtwoord wijzigen bij volgende verificatie** heeft geïmplementeerd, kan Intune afdwingen dat gebruikers na het pushen van een wachtwoordbeleid hun wachtwoord wijzigen. Als u bedrijfsresources blokkeert totdat het apparaat wordt gemarkeerd als conform, hebben uw eindgebruikers mogelijk geen toegang meer tot bedrijfsresources, zoals e-mail of SharePoint-sites, totdat ze hun wachtwoord opnieuw hebben ingesteld. In de toekomst moeten gebruikers na elke wijziging in configuratie- en nalevingsbeleid voor wachtwoorden hun wachtwoord bijwerken.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
-Breng uw helpdesk op de hoogte. Als u dit macOS-apparaatbeleid niet wilt afdwingen, raden we aan toewijzing van uw bestaande macOS-beleid ongedaan te maken of dit beleid te verwijderen. Uit klantonderzoek blijkt dat de meeste klanten niet worden beïnvloed door deze wijziging. De meeste eindgebruikers werken hun wachtwoord bij wanneer ze een verzoek krijgen zich te registreren met een wachtwoord of stellen hun wachtwoord opnieuw in om aan het beleid te voldoen.
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple vereist updates voor Application Transport Security <!--748318-->
+Apple heeft aangekondigd dat specifieke vereisten gaan gelden voor Application Transport Security (ATS). ATS wordt gebruikt om betere beveiliging af te dwingen voor alle app-communicatie die verloopt via HTTPS. Deze wijziging heeft gevolgen voor Intune-klanten die de bedrijfsportal-app gebruiken op iOS. De [Intune-ondersteuningsblog](https://aka.ms/compportalats) wordt bijgewerkt met informatie.
 
 ### <a name="plan-for-change-intune-moving-to-tls-12"></a>Plannen voor wijziging: Intune gaat over op TLS 1.2
 Vanaf 31 oktober 2018 biedt Intune ondersteuning voor TLS-protocolversie 1.2 (Transport Layer Security) voor de best mogelijke codering, om ervoor te zorgen dat onze service standaard veiliger is en is afgestemd op andere Microsoft-services zoals Microsoft Office 365. Office heeft deze wijziging aangekondigd in MC128929.
@@ -1113,13 +1208,6 @@ Als u na 31 oktober 2018 een probleem ervaart met betrekking tot het gebruik van
 U wordt aangeraden proactief TLS 1.0- en 1.1-afhankelijkheden uit uw omgevingen te verwijderen en waar mogelijk TLS 1.0 en 1.1 uit te schakelen op het niveau van het besturingssysteem. Begin vandaag nog met het plannen van uw migratie naar TLS 1.2. Lees de onderstaande ondersteuningsblogpost voor een lijst met apparaten die momenteel niet worden ondersteund door Intune, maar die mogelijk wel beleid ontvangen en TLS-versie 1.2 niet kunnen gebruiken voor communicatie. U moet mogelijk de eindgebruikers informeren dat ze de toegang tot bedrijfsresources verliezen.
 
 **Aanvullende informatie**: [Intune gaat over op TLS 1.2 voor versleuteling](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>Wijzigingsplannen: u kunt Intune op Azure nu gebruiken voor uw MDM-beheer <!-- 1227338 -->
-Een jaar geleden hebben we de [openbare preview van Intune op Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) aangekondigd en zes maanden geleden hebben we deze opgevolgd met de [algemene beschikbaarheid van de nieuwe beheerderservaring](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) voor Intune. Vanaf 31 augustus 2018 wordt MDM (Mobile Device Management) uitgeschakeld in de klassieke Silverlight-console voor klanten met de zelfstandige versie van Intune. In plaats daarvan kunt u [Intune op Azure](https://aka.ms/Intune_on_Azure) gebruiken voor MDM. Als u nog steeds de klassieke console voor MDM gebruikt, moet u hiermee stoppen en uzelf vertrouwd maken met Intune op Azure. We verwachten niet dat deze wijziging gevolgen heeft voor eindgebruikers. Klassiek pc-beheer blijft in Silverlight nog gewoon aanwezig. U vindt [hier](https://aka.ms/Intune_on_Azure_mdm) meer informatie over deze wijziging en over eventuele gevolgen voor u.
-
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple vereist updates voor Application Transport Security <!--748318-->
-Apple heeft aangekondigd dat specifieke vereisten gaan gelden voor Application Transport Security (ATS). ATS wordt gebruikt om betere beveiliging af te dwingen voor alle app-communicatie die verloopt via HTTPS. Deze wijziging heeft gevolgen voor Intune-klanten die de bedrijfsportal-app gebruiken op iOS. De [Intune-ondersteuningsblog](https://aka.ms/compportalats) wordt bijgewerkt met informatie.
 
 
 

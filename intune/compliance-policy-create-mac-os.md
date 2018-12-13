@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 14588563dd261063071c09c1bbd3b428fb375830
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 583a64b5dd91df2ef9e5acbaf129b447aca7f2d9
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184179"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52828991"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Een apparaatnalevingsbeleid toevoegen voor macOS-apparaten in Intune
 
@@ -49,7 +49,8 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 ## <a name="create-a-device-compliance-policy"></a>Een nalevingsbeleid voor apparaten maken
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. Selecteer voor **Platform** de optie **macOS**. Kies **Instellingen configureren** om instellingen op te geven voor de **Apparaatstatus**, de **Apparaateigenschappen** en de **Systeembeveiliging**. Selecteer **OK** en **Maken** als u klaar bent.
+4. Selecteer voor **Platform** de optie **macOS**. 
+5. Kies **Instellingen configureren** om instellingen op te geven voor **Apparaatstatus**, **Apparaateigenschappen** en **Systeembeveiliging** zoals wordt beschreven in dit artikel. Selecteer **OK** en **Maken** als u klaar bent.
 
 ## <a name="device-health"></a>Apparaatstatus
 
@@ -59,6 +60,8 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 
 - **Minimale versie van het besturingssysteem**: als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt het gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. Gebruikers kunnen dan kiezen om een upgrade van hun apparaat uit te voeren, waarna ze toegang tot bedrijfsresources krijgen.
 - **Maximale versie van het besturingssysteem**: wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die is opgegeven in de regel, wordt de toegang tot bedrijfsresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel om de versie van het besturingssysteem toe te staan, kan dit apparaat geen toegang tot bedrijfsresources krijgen.
+- **Minimale buildversie van het besturingssysteem**: als Apple beveiligingsupdates publiceert, wordt het buildnummer meestal bijgewerkt, niet de versie van het besturingssysteem. Gebruik deze functie om het buildnummer in te voeren dat minimaal is toegestaan op het apparaat.
+- **Maximale buildversie van het besturingssysteem**: als Apple beveiligingsupdates publiceert, wordt het buildnummer meestal bijgewerkt, niet de versie van het besturingssysteem. Gebruik deze functie om het buildnummer in te voeren dat maximaal is toegestaan op het apparaat.
 
 ## <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
 
@@ -94,7 +97,7 @@ Apparaten worden door de firewall tegen onbevoegde netwerktoegang beschermd. U k
 
 **Alle apps toestaan die zijn gedownload vanaf deze locaties**: hiermee staat u toe dat ondersteunde toepassingen vanaf verschillende locaties op uw apparaten worden geïnstalleerd. Uw locatieopties:
 
-- **Niet geconfigureerd** standaard. De optie Gatekeepeer heeft geen invloed op naleving of niet-naleving. 
+- **Niet geconfigureerd** standaard. De optie Gatekeeper heeft geen invloed op naleving of niet-naleving. 
 - **Mac App Store**: alleen apps voor de Mac App Store installeren. Apps van derden en van niet-geïdentificeerde ontwikkelaars kunnen niet worden geïnstalleerd. Als een gebruiker Gatekeeper selecteert om apps buiten de Mac App Store om te installeren, wordt het apparaat vervolgens beschouwd als niet compatibel.
 - **Mac App Store en geïdentificeerde ontwikkelaars**: apps voor de Mac App Store en geïdentificeerde ontwikkelaars installeren. macOS controleert de identiteit van ontwikkelaars en voert daarnaast enkele andere controles uit om de integriteit van de app te verifiëren. Als een gebruiker Gatekeeper selecteert om apps buiten deze opties om te installeren, wordt het apparaat vervolgens beschouwd als niet compatibel.
 - **Overal**: apps vanaf elke locatie en van elke ontwikkelaar kunnen worden geïnstalleerd. Dit is de minst veilige optie.

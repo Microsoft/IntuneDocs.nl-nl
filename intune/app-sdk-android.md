@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 12c48a00e4b755409b698d5f2ee6182403802f23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c556bab6deadc0db0ea625ee3c26bba636ea497d
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190401"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829178"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -639,21 +639,9 @@ Er hoeven geen aanvullende manifestwaarden te worden geconfigureerd.
 
 Autoriteit en NonBrokerRedirectURI kunnen indien gewenst worden opgegeven.
 
-Registreer uw app bij Azure AD met behulp van de volgende stappen.
-
-In Azure Portal:
-1.  Ga naar de blade **Windows Azure Active Directory (AD)**.
-2.  Selecteer de instelling **App-registratie** voor de toepassing.
-3.  Selecteer in **Instellingen** onder de kop **API-toegang** **Toestemming vereist**. 
-4.  Klik op **+Toevoegen**.
-5.  Klik op **Een API selecteren**. 
-6.  Voer in het zoekvak **Microsoft Mobile Application Management** in.
-7.  Selecteer **Microsoft Mobile Application Management** in de lijst met API's en klik op selecteren.
-8.  Selecteer **App-beheergegevens van de gebruiker lezen en schrijven**.
-9.  Klik op **Gereed**.
-10. Klik op **Machtigingen verlenen** en klik vervolgens op **Ja**. 
-
-Kijk [hier](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) voor informatie over het registreren van toepassingen met Azure AD. 
+Registreer uw app bij Azure AD met behulp van de volgende stappen:
+* Kijk [hier](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) voor informatie over het registreren van toepassingen met Azure AD. 
+* Zorg ervoor dat de stappen om uw Android-app te machtigen voor het app-beschermingsbeleid (APP) zijn gevolgd. Gebruik de instructies in de handleiding [Aan de slag met de Intune-SDK](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) onder 'Uw app toegang geven tot de Intune-app-beveiliging (optioneel)'. 
 
 Bekijk hieronder ook de vereisten voor [Voorwaardelijke toegang](#conditional-access).
 

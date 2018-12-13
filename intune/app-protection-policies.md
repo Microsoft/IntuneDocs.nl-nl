@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11//28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185956"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728817"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>App-beveiligingsbeleid maken en toewijzen
 
@@ -74,10 +74,14 @@ Nieuwe beleidsregels die u maakt, worden niet geïmplementeerd voor gebruikers t
 
    ![Schermafbeelding van het venster Toewijzingen met de optie Groepen selecteren om op te nemen gemarkeerd](./media/app-protection-policy-add-users.png)
 
-3.  Er wordt een lijst met alle beveiligingsgroepen in uw **Azure Active Directory** weergegeven. Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen en kies vervolgens **Selecteren**. Als u **Selecteren** kiest, wordt het beleid bij gebruikers geïmplementeerd.
+3.  Er wordt een lijst met alle beveiligingsgroepen in uw **Azure Active Directory** weergegeven. Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen en kies vervolgens **Selecteren**. 
 
     ![Schermafbeelding van het deelvenster Gebruikersgroep toevoegen waarin de lijst met Azure Active Directory-gebruikers wordt weergegeven](./media/azure-ad-user-group-list.png)
 
+4.  Nadat u groepen hebt opgenomen en uitgesloten, selecteert u **Opslaan** om de configuratie op te slaan en het beleid te implementeren voor gebruikers. Als u **Verwijderen** selecteert vóórdat u de configuratie opslaat, worden alle wijzigingen verwijderd die u hebt aangebracht op de tabbladen *Opnemen* en *Uitsluiten*.   
+ 
+     ![Schermopname van de opties Opslaan en Verwijderen](./media/save-assignment.png)
+  
 U hebt nu beleid gemaakt en het beleid geïmplementeerd naar gebruikers.
 
 Het beleid is alleen van invloed op gebruikers aan wie Microsoft Intune-licenties zijn toegewezen. Gebruikers in de geselecteerde beveiligingsgroep aan wie geen Intune-licentie is toegewezen, worden niet beïnvloed.
@@ -109,9 +113,13 @@ Om het effect van de wijzigingen onmiddellijk te zien, moet de eindgebruiker zic
 
 2.  Selecteer in het deelvenster *Intune-app-beveiliging* de optie **Toewijzingen** om het deelvenster **Intune-app-beveiliging - Toewijzingen** te openen waarin de lijst met huidige gebruikersgroepen die dit beleid hebben wordt weergegeven.
 
-3.  Als u een nieuwe gebruikersgroep wilt toevoegen aan het beleid op het tabblad **Opnemen** kiest u **Selecteer groepen om op te nemen** en selecteert u de gebruikersgroep. Kies **Selecteren** om het beleid te implementeren bij de groep die u hebt geselecteerd.
+3.  Als u een nieuwe gebruikersgroep wilt toevoegen aan het beleid op het tabblad *Opnemen* kiest u **Selecteer groepen om op te nemen** en selecteert u de gebruikersgroep. Kies **Selecteren** om de groep toe te voegen. 
 
-4.  Als u een gebruikersgroep wilt verwijderen, kiest u op het tabblad **Opnemen** **Groepen selecteren om uit te sluiten** en selecteert u de gebruikersgroep. Kies **Selecteren** om de gebruikersgroep te verwijderen.
+4.  Als u een gebruikersgroep wilt uitsluiten, kiest u op het tabblad *Uitsluiten* de optie **Groepen selecteren voor uitsluiten**, en selecteert u de gebruikersgroep. Kies **Selecteren** om de gebruikersgroep te verwijderen.  
+
+5.  Als u groepen wilt verwijderen die eerder zijn toegevoegd, selecteert u op het tabblad *Opnemen* of op het tabblad *Uitsluiten* het weglatingsteken (...) en selecteert u **Verwijderen**. 
+
+5.  Als uw wijzigingen aan de toewijzingen gereed zijn, selecteert u **Opslaan** om de configuratie op te slaan en implementeert u het beleid voor de nieuwe groep gebruikers. Als u **Verwijderen** selecteert vóórdat u de configuratie opslaat, worden alle wijzigingen verwijderd die u hebt aangebracht op de tabbladen *Opnemen* en *Uitsluiten*.
 
 ### <a name="to-change-policy-settings"></a>Beleidsinstellingen wijzigen
 

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2407225bfd0cdb5892663bf2e66de36157aaf4e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 24b64d4d7b2ccd376f666e9d7961706025b6eaad
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182003"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829094"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving
 
@@ -40,7 +40,7 @@ U kunt app-configuratiebeleidsregels gebruiken voor beheerde apps die de Intune 
       De beschrijving van het profiel die in Azure Portal wordt weergegeven.
     - **Type apparaatinschrijving**  
       Kies **apps beheren**.
-6. Selecteer  **Gekoppelde app**  om de app te kiezen die u gaat configureren. Selecteer de app in de lijst met apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune.
+6. Selecteer **Gekoppelde app**  om de app te kiezen die u gaat configureren. Selecteer de app in de lijst met apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune.
 7. Voor elk door de app ondersteunde configuratie-instelling typt u de **naam** en **waarde** en kiest u het weglatingsteken (**...** ).  
     Als u een configuratie wilt verwijderen, kiest u het weglatingsteken (**...**) en selecteert u **Verwijderen**.  
     

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 56427f5b6d72d952ce9c388b4d5289d3075b7df0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 35091139e3afaabac4fad0b22fc6096cf7ada7c3
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182263"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728868"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Een apparaatnalevingsbeleid toevoegen voor iOS-apparaten in Intune
 
@@ -54,7 +54,8 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 ## <a name="create-a-device-compliance-policy"></a>Een nalevingsbeleid voor apparaten maken
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. Selecteer voor **Platform** de optie **iOS**. Kies **Instellingen configureren** om instellingen op te geven voor het **e-mailadres**, de **apparaatstatus**, de **apparaateigenschappen** en de **systeembeveiliging**. Selecteer **OK** en **Maken** als u klaar bent.
+4. Selecteer voor **Platform** de optie **iOS**. 
+5. Kies **Instellingen configureren** om instellingen op te geven voor **E-mailadres**, **Apparaatstatus**, **Apparaateigenschappen** en **Systeembeveiliging** zoals wordt beschreven in dit onderwerp. Selecteer **OK** en **Maken** als u klaar bent.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -88,6 +89,8 @@ Zie [De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Micros
 
 - **Minimale versie van het besturingssysteem die is vereist**: wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt het apparaat gerapporteerd als niet-compatibel. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De gebruiker kan kiezen om het apparaat bij te werken. Daarna zijn de bedrijfsbronnen toegankelijk.
 - **Maximale versie van het besturingssysteem die is toegestaan**: wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is opgegeven, wordt de toegang tot bedrijfsbronnen geblokkeerd. De gebruiker wordt vervolgens gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel die de versie van het besturingssysteem toestaat, kan dit apparaat geen toegang tot bedrijfsbronnen krijgen.
+- **Minimale buildversie van het besturingssysteem**: als Apple beveiligingsupdates publiceert, wordt het buildnummer meestal bijgewerkt, niet de versie van het besturingssysteem. Gebruik deze functie om het buildnummer in te voeren dat minimaal is toegestaan op het apparaat. Deze controle op naleving biedt ondersteuning voor apparaten met iOS 8.0 en hoger. 
+- **Maximale buildversie van het besturingssysteem**: als Apple beveiligingsupdates publiceert, wordt het buildnummer meestal bijgewerkt, niet de versie van het besturingssysteem. Gebruik deze functie om het buildnummer in te voeren dat maximaal is toegestaan op het apparaat. Deze controle op naleving biedt ondersteuning voor apparaten met iOS 8.0 en hoger.
 
 ## <a name="system-security"></a>Systeembeveiliging
 

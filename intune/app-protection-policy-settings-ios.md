@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 79df4e20a1dcd4a5cbc30ab0c887d53bf205ebbf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ff7876ef5c04eb59d1e89ac03b640d4f443cca6
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184740"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728953"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Beveiligingsbeleidsinstellingen voor iOS-apps
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -30,7 +30,7 @@ De in dit artikel beschreven beleidsinstellingen kunnen worden [geconfigureerd](
 
 Er zijn drie soorten beleidsinstellingen: *herlocatie van gegevens*, *toegangsvereisten* en *voorwaardelijk starten*. In dit artikel verwijst de term ***door beleid beheerde apps*** naar apps die zijn geconfigureerd met een app-beveiligingsbeleid.
 
-##  <a name="data-relocation-settings"></a>Instellingen voor herlocatie van gegevens
+##  <a name="data-protection-settings"></a>Instellingen voor gegevensbeveiliging
 
 | Instelling | Gebruik |  
 |------|------| 
@@ -47,7 +47,7 @@ Er zijn drie soorten beleidsinstellingen: *herlocatie van gegevens*, *toegangsve
 
 
 > [!NOTE]
-> Geen van de instellingen voor gegevensverplaatsing beheert de door Apple beheerde functie Open in op iOS-apparaten. Zie [Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune](data-transfer-between-apps-manage-ios.md) voor informatie over het beheer van de functie Open in.
+> Geen van de instellingen voor gegevensbeveiliging beheert de door Apple beheerde functie Open in op iOS-apparaten. Zie [Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune](data-transfer-between-apps-manage-ios.md) voor informatie over het beheer van de functie Open in.
 
 ## <a name="data-transfer-exemptions"></a>Uitzonderingen voor gegevensoverdracht
 
