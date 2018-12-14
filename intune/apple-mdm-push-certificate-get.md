@@ -1,7 +1,7 @@
 ---
-title: Een Apple MDM-pushcertificaat ophalen
-titlesuffix: Microsoft Intune
-description: In dit onderwerp leest u welke stappen u moet uitvoeren om een Apple MDM-pushcertificaat op te halen voor het beheren van iOS-apparaten met Intune.
+title: Een Apple MDM-pushcertificaat voor Intune ophalen
+titlesuffix: ''
+description: Lees hoe u een Apple MDM-pushcertificaat kunt ophalen voor het beheren van iOS-apparaten met Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 927da6f2e7584cb3b43bede77cfbc19ec91b568a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 053e3f42553268aaeff0502e2cfe05b33b18618b
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189466"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032160"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Een Apple MDM-pushcertificaat ophalen
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune maakt Mobile Device Management (MDM) mogelijk voor iPads, iPhones en Mac-computers en geeft gebruikers toegang tot zakelijke e-mail en apps. Een Apple MDM-pushcertificaat is vereist zodat Intune iOS- en macOS-apparaten kan beheren. Nadat u het certificaat aan Intune hebt toegevoegd, kunnen uw gebruikers hun apparaten inschrijven met:
+Een Apple MDM-pushcertificaat is vereist zodat Intune iOS- en macOS-apparaten kan beheren. Nadat u het certificaat aan Intune hebt toegevoegd, kunnen uw gebruikers hun apparaten inschrijven met:
 
 - De bedrijfsportal-app.
 

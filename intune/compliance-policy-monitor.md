@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f835f2bd2802454bbcdb27251524dfa4d2400f1a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178369"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977300"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
@@ -58,23 +58,26 @@ Als u dieper wilt ingaan op deze rapporten, kunt u tevens specifieke nalevingsbe
 
 De grafiek toont de nalevingsstatus voor alle bij Intune geregistreerde apparaten. De statussen van apparaatnaleving worden opgeslagen in twee verschillende databases: Intune en Azure Active Directory. 
 
+> [!IMPORTANT]
+> Intune volgt het incheckschema van het apparaat voor alle nalevingsevaluaties op het apparaat. [Meer informatie over het incheckschema van het apparaat](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+
 Beschrijvingen van verschillende statussen van het nalevingsbeleid voor apparaten:
 
-- **Compatibel**: op het apparaat zijn een of meer nalevingsbeleidsinstellingen voor apparaten toegepast.
+- **Compatibel**: Op het apparaat zijn een of meer nalevingsbeleidsinstellingen voor apparaten toegepast.
 
-- **In respijtperiode:** het apparaat is het doelwit van een of meer nalevingsbeleidsinstellingen voor apparaten. Maar de gebruiker heeft het beleid nog niet toegepast. Dit betekent dat het apparaat niet compatibel is, maar zich in de respijtperiode bevindt die door de beheerder is vastgesteld.
+- **In respijtperiode:** Het apparaat is het doelwit van een of meer nalevingsbeleidsinstellingen voor apparaten. Maar de gebruiker heeft het beleid nog niet toegepast. Dit betekent dat het apparaat niet compatibel is, maar zich in de respijtperiode bevindt die door de beheerder is vastgesteld.
 
   - Meer informatie over [Acties voor niet-compatibele apparaten](actions-for-noncompliance.md).
 
-- **Niet geëvalueerd**: een initiële status voor nieuw geregistreerde apparaten. Of apparaten die niet aan nalevingsbeleid zijn toegewezen en geen trigger bevatten voor de controle op naleving.
+- **Niet geëvalueerd**: Een initiële status voor nieuw geregistreerde apparaten. Of apparaten die niet aan nalevingsbeleid zijn toegewezen en geen trigger bevatten voor de controle op naleving.
 
-- **Niet compatibel**: op het apparaat kan een of meer nalevingsbeleidsinstellingen voor apparaten niet worden toegepast. Of de gebruiker heeft niet voldaan aan het beleid.
+- **Niet compatibel**: Op het apparaat kunnen een of meer nalevingsbeleidsinstellingen voor apparaten niet worden toegepast. Of de gebruiker heeft niet voldaan aan het beleid.
 
-- **Het apparaat is niet gesynchroniseerd:** voor het apparaat is de nalevingsbeleidsstatus niet doorgegeven, om een van de volgende redenen:
+- **Apparaat niet gesynchroniseerd:** Voor het apparaat is de nalevingsbeleidsstatus niet doorgegeven, om een van de volgende redenen:
 
-  - **Onbekend**: het apparaat is offline of kan om andere redenen niet communiceren met Intune of Azure AD.
+  - **Onbekend**: Het apparaat is offline of kan om andere redenen niet communiceren met Intune of Azure AD.
 
-  - **Fout**: het apparaat kan niet communiceren met Intune en Azure AD en heeft een foutbericht met de reden ontvangen.
+  - **Fout**: Het apparaat kan niet communiceren met Intune en Azure AD en heeft een foutbericht met de reden ontvangen.
 
 > [!IMPORTANT]
 > Apparaten die zijn ingeschreven bij Intune, maar waarop geen nalevingsbeleid voor apparaten is gericht, worden in dit rapport opgenomen onder de bucket **Compatibel**.
@@ -152,11 +155,11 @@ Deze functie is opgenomen in de statusrapportage voor het apparaat:
 1. Selecteer **Apparaatnaleving** > **Beleid**. Als een beleid is toegewezen, wordt een lijst met beleidsregels en meer informatie weergegeven.
 2. Selecteer een beleid > **Overzicht**. In deze weergave bevat de beleidstoewijzing de volgende statussen:
 
-    - Geslaagd: het beleid is toegepast
-    - Fout: het beleid is niet toegepast. Het bericht wordt doorgaans weergegeven met een foutcode en een link naar een uitleg. 
-    - Conflict: twee instellingen worden toegepast op hetzelfde apparaat en Intune kan het conflict niet oplossen. Dit moet door een beheerder worden bekeken.
-    - In behandeling: het apparaat heeft niet nog ingecheckt bij Intune om het beleid te ontvangen. 
-    - Niet van toepassing: het apparaat kan het beleid niet ontvangen. Het beleid werkt bijvoorbeeld een instelling bij die specifiek voor iOS 11.1 is, maar het apparaat gebruikt iOS 10. 
+    - Geslaagd: Het beleid is toegepast
+    - Fout: Het beleid is niet toegepast. Het bericht wordt doorgaans weergegeven met een foutcode en een link naar een uitleg. 
+    - Conflict: Twee instellingen worden toegepast op hetzelfde apparaat en Intune kan het conflict niet oplossen. Dit moet door een beheerder worden bekeken.
+    - In behandeling: Het apparaat is nog niet ingecheckt bij Intune om het beleid te ontvangen. 
+    - Niet van toepassing: Het apparaat kan het beleid niet ontvangen. Het beleid werkt bijvoorbeeld een instelling bij die specifiek voor iOS 11.1 is, maar het apparaat gebruikt iOS 10. 
 
 3. Selecteer een van de statussen voor informatie over de apparaten die dit beleid gebruiken. Selecteer bijvoorbeeld **Geslaagd**. In het volgende venster ziet u specifieke apparaatdetails, waaronder de apparaatnaam en de implementatiestatus.
 

@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: efb850e0f08c94cfee7948f50411220216eb8418
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9562eb2c8fae49628ac042f28f172fb9f8fd5106
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188064"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112541"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Inschrijving voor Windows-apparaten instellen
 
@@ -102,4 +102,4 @@ Zie [Bronnen over de eindgebruikerservaring in Microsoft Intune](end-user-educat
 
 ## <a name="next-steps"></a>Volgende stappen
 
-- [Overwegingen bij het beheren van Windows-apparaten met Intune in Azure](/intune-classic/deploy-use/intune-on-azure).
+- [Overwegingen bij het beheren van Windows-apparaten met Intune in Azure](intune-legacy-pc-client.md).

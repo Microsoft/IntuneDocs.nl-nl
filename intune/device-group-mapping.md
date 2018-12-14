@@ -14,19 +14,19 @@ ms.technology: ''
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 159079686507815ad4cf1738ca4157467352f681
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 0abc42de95f90b3690e91908f92bb53d11a802d8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189517"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031752"
 ---
-# <a name="categorize-devices-into-groups-for-easier-management"></a>Apparaten categoriseren in groepen voor eenvoudiger beheer
+# <a name="categorize-devices-into-groups"></a>Apparaten categoriseren in groepen
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Met apparaatcategorieën van Microsoft Intune kunnen apparaten automatisch worden toegevoegd aan groepen op basis van categorieën die u definieert. Hierdoor kunt u deze apparaten eenvoudiger beheren.
+Met apparaatcategorieën van Microsoft Intune kunnen apparaten automatisch worden toegevoegd aan groepen op basis van categorieën die u definieert, zodat het voor u eenvoudiger wordt om die apparaten te beheren.
 
 Voor apparaatcategorieën wordt de volgende werkstroom gebruikt:
 1. Maak categorieën die gebruikers kunnen kiezen bij het registreren van hun apparaat.
@@ -42,7 +42,7 @@ U kunt alle apparaatcategorieën maken die u maar wilt. Bijvoorbeeld:
 
 ## <a name="how-to-configure-device-categories"></a>Apparaatcategorieën configureren
 
-### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>Stap 1: apparaatcategorieën maken op de blade Intune in Azure Portal
+### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>Stap 1: Apparaatcategorieën maken op de blade Intune in Azure Portal
 1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving**.
 2. Kies **Apparaatcategorieën** op de blade **Apparaatinschrijving**.
 3. Kies **Maken** op de pagina **Apparaatcategorieën** om een nieuwe categorie toe te voegen.

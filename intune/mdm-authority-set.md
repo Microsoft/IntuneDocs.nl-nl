@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0eb3ccf85c8851f16dcfe303603f65517fcf7312
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6f0138da6e9ea427ad07ad3b41dd22b7319bb044
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183754"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112575"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>De instantie voor het beheer van mobiele apparaten instellen
 
@@ -41,7 +41,7 @@ Mogelijke configuraties zijn:
 - **Mobile Device Management voor Office 365**: integratie van Office 365 met de Intune-cloudoplossing. U kunt Intune configureren vanuit het Office 365-beheercentrum. Bevat een subset van de mogelijkheden die beschikbaar zijn met Intune Standalone. Stel de MDM-instantie in Office 365-beheercentrum in.
 
 > [!IMPORTANT]
-> In Configuration Manager versie 1610 of hoger en Microsoft Intune versie 1705 kunt u de MDM-instantie wijzigen zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven. Zie [Wat te doen als u de verkeerde instelling kiest voor de MDM-instantie](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) voor meer informatie.
+> In Configuration Manager versie 1610 of hoger en Microsoft Intune versie 1705 kunt u de MDM-instantie wijzigen zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven. Zie [Voorbereiden op het wijzigen van de MDM-instantie naar Configuration Manager](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager) voor meer informatie.
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM-instantie instellen op Intune
 
@@ -90,8 +90,8 @@ Lees de volgende informatie ter voorbereiding op het wijzigen van de MDM-instant
     > [!NOTE]    
     > Als de MDM-instantie wordt weergegeven als **Beheerd door Intune en Office 365** worden uw door Office 365 beheerde MDM-apparaten niet meer beheerd wanneer u de MDM-instantie wijzigt in **Configuration Manager** (hybride). We adviseren om die gebruikers te voorzien van een licentie voor Intune of Enterprise Mobility Suite voordat u de MDM-instantie wijzigt.   
 
-- Verwijder in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) de rol Apparaatinschrijvingsmanager. Zie [Een apparaatinschrijvingsmanager uit Intune verwijderen](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune#delete-a-device-enrollment-manager-from-intune) voor meer informatie.
-- Schakel eventuele groepstoewijzingen die zijn geconfigureerd uit. Zie [Apparaten categoriseren met apparaatgroeptoewijzing in Microsoft Intune](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) voor meer informatie.
+- Verwijder in de [Microsoft Intune-beheerconsole](http://manage.microsoft.com) de rol Apparaatinschrijvingsmanager. Zie [Een apparaatinschrijvingsmanager uit Intune verwijderen](device-enrollment-manager-enroll.md#remove-device-enrollment-manager-permissions) voor meer informatie.
+- Schakel eventuele groepstoewijzingen die zijn geconfigureerd uit. Zie [Apparaten categoriseren met apparaatgroeptoewijzing in Microsoft Intune](device-group-mapping.md) voor meer informatie.
 - De eindgebruikers mogen niets merken van de wijziging van MDM-instantie. Mogelijk wilt u de wijziging echter bekendmaken aan gebruikers, om ervoor te zorgen dan hun apparaten zijn ingeschakeld en dat die kort na de wijziging verbinding maken met de service. Hiermee zorgt u ervoor dat zoveel mogelijk apparaten zo snel mogelijk verbinding maken met en registeren bij de service via de nieuwe instantie.
 - Als u de zelfstandige versie van Intune gebruikt om iOS-apparaten te beheren voorafgaand aan de wijziging van MDM-instantie, moet u ervoor zorgen dat hetzelfde Apple Push Notification Service-certificaat (APNs) dat werd gebruikt in Intune wordt vernieuwd en gebruikt om de tenant opnieuw in te stellen in Configuration Manager (hybride).    
 

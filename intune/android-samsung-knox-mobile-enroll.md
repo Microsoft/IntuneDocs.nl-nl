@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
-ms.date: 05/08/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: fdd99d7c3987eee852399c37108c890a827e1111
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 47627bc9f223c301fd04b88c0080b3a6fea26fe8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189738"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032454"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android-apparaten automatisch registreren met behulp van de Knox Mobile Enrollment van Samsung
 
@@ -43,15 +43,15 @@ Een lijst met apparaat-id's (serienummers en IMEI's) wordt automatisch aan de Kn
 ## <a name="prerequisites"></a>Vereisten
 
 Voor registratie bij Intune met KME moet u uw bedrijf eerst registreren op de Samsung Knox-portal met de volgende stappen:
-1.  [Controleer of KME beschikbaar is in uw regio](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME is beschikbaar in meer dan 55 landen. Controleer of uw land van implementatie wordt ondersteund.
+1.  [Controleer of KME is beschikbaar in uw regio](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME is beschikbaar in meer dan 55 landen. Controleer of uw land van implementatie wordt ondersteund.
 
 2.  [Ondersteunde apparaten](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME is beschikbaar op alle Samsung-apparaten met minimaal Knox 2.4 voor registratie bij Android en minimaal Knox 2.8 voor registratie bij Android Enterprise.
 
-3.  [Netwerkvereisten](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): controleer of de benodigde firewall- en netwerktoegangsregels zijn toegestaan in uw netwerk.
+3.  [Netwerkvereisten](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): Controleer of de benodigde firewall- en netwerktoegangsregels zijn toegestaan in uw netwerk.
 
-4.  [Registreren voor een Samsung-account](https://www2.samsungknox.com/en/user/register): u hebt een Samsung-account nodig om KME te registreren en in te schakelen en alle Knox Enterprise-rechten op één plaats te beheren.
+4.  [Registreren voor een Samsung-account](https://www2.samsungknox.com/en/user/register): U hebt een Samsung-account nodig om KME te registreren en in te schakelen en alle Knox Enterprise-rechten op één plaats te beheren.
 
-5.  Registratiecontrole: wanneer uw profiel is voltooid en ingediend, controleert Samsung uw toepassing. De registratie wordt onmiddellijk goedgekeurd of krijgt de status Controle in behandeling voor verdere opvolging. Wanneer uw account is goedgekeurd, kunt u doorgaan met de overige stappen.
+5.  Registratiecontrole: Wanneer uw profiel is voltooid en ingediend, controleert Samsung uw toepassing. De registratie wordt onmiddellijk goedgekeurd of krijgt de status Controle in behandeling voor verdere opvolging. Wanneer uw account is goedgekeurd, kunt u doorgaan met de overige stappen.
 
 ## <a name="create-mdm-profile"></a>MDM-profiel maken
 
@@ -91,9 +91,9 @@ Associate a Knox license with this profile (Een Knox-licentie koppelen aan dit p
 ## <a name="add-devices"></a>Apparaten toevoegen
 
 Als u MDM-profielen aan apparaten wilt toewijzen, moeten ondersteunde Samsung Knox-apparaten aan de Knox-portal worden toegevoegd. Daarvoor kunt u een van de volgende methoden gebruiken:
-- **Met door Samsung goedgekeurde reseller(s):** gebruik deze methode als u apparaten van een van de door Samsung goedgekeurde resellers hebt gekocht. Resellers kunnen apparaten automatisch voor u uploaden wanneer dit is goedgekeurd. [Raadpleeg de gebruikershandleiding van Samsung Knox Enrollment voor meer informatie over het toevoegen van resellers](https://docs.samsungknox.com/KME-Getting-Started/Content/Register_resellers.htm).
+- **Door Samsung goedgekeurde reseller(s) gebruiken:** Gebruik deze methode als u apparaten van een van de door Samsung goedgekeurde resellers hebt gekocht. Resellers kunnen apparaten automatisch voor u uploaden wanneer dit is goedgekeurd. [Raadpleeg de gebruikershandleiding van Samsung Knox Enrollment voor meer informatie over het toevoegen van resellers](https://docs.samsungknox.com/KME-Getting-Started/Content/Register_resellers.htm).
 
-- **De Knox Deployment App (KDA) gebruiken:** gebruik deze methode als u bestaande apparaten wilt registreren met KME. Met deze methode kunt u zowel via Bluetooth als via NFC apparaten toevoegen aan de Knox-portal. [Raadpleeg de gebruikershandleiding van Samsung Knox Enrollment voor meer informatie over KDA](https://docs.samsungknox.com/KME-Getting-Started/Content/add-device-info.htm).
+- **De Knox Deployment App (KDA) gebruiken:** Gebruik deze methode als u bestaande apparaten wilt registreren met KME. Met deze methode kunt u zowel via Bluetooth als via NFC apparaten toevoegen aan de Knox-portal. [Raadpleeg de gebruikershandleiding van Samsung Knox Enrollment voor meer informatie over KDA](https://docs.samsungknox.com/KME-Getting-Started/Content/add-device-info.htm).
 
 ## <a name="assign-an-mdm-profile-to-devices"></a>Een MDM-profiel toewijzen aan apparaten
 U moet een MDM-profiel aan toegevoegde apparaten toewijzen in de Knox-portal voordat ze kunnen worden geregistreerd. [Raadpleeg de gebruikershandleiding van Samsung Knox Enrollment voor meer informatie over apparaatconfiguratie](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
@@ -102,9 +102,9 @@ U moet een MDM-profiel aan toegevoegde apparaten toewijzen in de Knox-portal voo
 
 Voor apparaten die in Intune worden geregistreerd met KME voor Android, kunt u als volgt configureren hoe een eindgebruiker zich aanmeldt:
 
-- **Zonder koppeling met gebruikersnaam:** laat in de Knox-portal onder **Device details** (Apparaatdetails) de velden **User ID** (gebruikers-id) en **Password** (wachtwoord) leeg voor de toegevoegde apparaten. De gebruiker moet dan gebruikersnaam en wachtwoord invoeren tijdens de registratie bij Intune.
+- **Zonder koppeling met gebruikersnaam:** Laat in de Knox-portal onder **Device details** (Apparaatdetails) de velden **User ID** (gebruikers-id) en **Password** (wachtwoord) leeg voor de toegevoegde apparaten. De gebruiker moet dan gebruikersnaam en wachtwoord invoeren tijdens de registratie bij Intune.
 
-- **Met koppeling met naam van gebruiker:** geef in de Knox-portal onder **Device Details** (Apparaatdetails) een **gebruikers-id** op (bijvoorbeeld een gebruikersnaam voor de toegewezen gebruiker of een [Device Enrollment Manager](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)-account) voor de toegevoegde apparaten. De gebruikersnaam wordt dan al ingevuld en de gebruiker hoeft alleen een wachtwoord in te voeren tijdens de registratie bij Intune.
+- **Met koppeling met gebruikersnaam:** Geef in de Knox-portal onder **Device Details** (Apparaatdetails) een **gebruikers-id** op (bijvoorbeeld een gebruikersnaam voor de toegewezen gebruiker of een [Device Enrollment Manager](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)-account) voor de toegevoegde apparaten. De gebruikersnaam wordt dan al ingevuld en de gebruiker hoeft alleen een wachtwoord in te voeren tijdens de registratie bij Intune.
 
 > [!NOTE]
 >
@@ -121,11 +121,13 @@ Nog hulp nodig? Bekijk de volledige [gebruikershandleiding van Knox Mobile Enrol
 
 - **Ondersteuning voor apparaateigenaar:** Intune ondersteunt registratie van apparaten voor uitsluitend de kioskmodus met behulp van Android Enterprise. Andere modi voor apparaateigenaren in Android Enterprise worden ondersteund zodra ze beschikbaar zijn in Intune.
 
-- **Fabrieksinstellingen terugzetten voor registratie bij Android Enterprise:** als u apparaten die al zijn ingesteld opnieuw wilt inzetten, moeten op het apparaat de fabrieksinstellingen worden hersteld voordat het kan worden geregistreerd bij Android Enterprise.
+- **Geen ondersteuning voor werkprofielen:** KME is een methode voor registratie van bedrijfsapparaten. Door apparaten te registeren in een Android-werkprofiel kunnen werk- en persoonlijke gegevens worden gescheiden op persoonlijke apparaten. Daarom wordt registratie van apparaten in een werkprofiel met KME niet ondersteund in Intune.
 
-- **Updates via het Google Play-account:** u hebt geen Google Play-account nodig om het apparaat te registreren bij Microsoft Intune. Maar voor toekomstige updates van de Intune-bedrijfsportal-app hebt u mogelijk wel een Google Play-account op het apparaat nodig. Een Google Play-account is niet vereist bij het registreren van de eigenaar van het Google-apparaat.
+- **Fabrieksinstellingen terugzetten voor registratie bij Android Enterprise:** Als u apparaten die al zijn ingesteld opnieuw wilt inzetten, moeten op het apparaat de fabrieksinstellingen worden hersteld voordat het kan worden geregistreerd bij Android Enterprise.
 
-- **Veld Wachtwoord wordt genegeerd:** als het veld **Wachtwoord** in **Apparaatdetails** van de Knox-portal is ingevuld, wordt het genegeerd door de Intune-bedrijfsportal-app tijdens de registratie bij Android. De eindgebruiker moet een wachtwoord invoeren op het apparaat om registratie van het apparaat te voltooien.
+- **Updates met behulp van een Google Play-account:** U hebt geen Google Play-account nodig om het apparaat te registreren bij Microsoft Intune. Maar voor toekomstige updates van de Intune-bedrijfsportal-app hebt u mogelijk wel een Google Play-account op het apparaat nodig. Een Google Play-account is niet vereist bij het registreren van de eigenaar van het Google-apparaat.
+
+- **Veld Password (Wachtwoord) wordt genegeerd:** Als het veld **Password** (Wachtwoord) in **Device details** (Apparaatdetails) van de Knox-portal is ingevuld, wordt het genegeerd door de Intune-bedrijfsportal-app tijdens de registratie bij Android. De eindgebruiker moet een wachtwoord invoeren op het apparaat om registratie van het apparaat te voltooien.
 
 
 ## <a name="getting-support"></a>Ondersteuning

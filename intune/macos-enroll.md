@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 85a05f4816692d3bccfe695c7e69f54d007f3b59
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187001"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112405"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Inschrijving voor macOS-apparaten instellen in Intune
 
@@ -37,7 +37,7 @@ Voer de volgende vereisten uit voordat u inschrijving van macOS-apparaten instel
 
 - [Domeinen configureren](custom-domain-name-configure.md)
 - [MDM-instantie instellen](mdm-authority-set.md)
-- [Groepen maken](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
+- [Groepen maken](groups-add.md)
 - [De bedrijfsportal configureren](company-portal-app.md)
 - Gebruikerslicenties toewijzen in de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Een Apple MDM-pushcertificaat ophalen](apple-mdm-push-certificate-get.md)
@@ -47,7 +47,7 @@ Voer de volgende vereisten uit voordat u inschrijving van macOS-apparaten instel
 U kunt gebruikers hun persoonlijke apparaten laten inschrijven voor Intune-beheer, wat Bring-Your-Own-Device of BYOD wordt genoemd. Nadat u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen uw gebruikers hun apparaten als volgt registreren:
 - door naar de [bedrijfswebsite](https://portal.manage.microsoft.com) te gaan; of
 - de bedrijfsportal-app te downloaden.
-U kunt hen ook een link naar online inschrijvingsstappen sturen: [Uw macOS-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+U kunt hen ook een link naar online registratiestappen sturen: [Uw Mac OS-apparaat registreren in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Zie de volgende artikelen voor meer informatie over andere taken voor eindgebruikers:
 
@@ -56,8 +56,8 @@ Zie de volgende artikelen voor meer informatie over andere taken voor eindgebrui
 
 ## <a name="company-owned-macos-devices"></a>Bedrijfseigen macOS-apparaten
 Voor organisaties die apparaten voor hun gebruikers aanschaffen, ondersteunt Intune de volgende inschrijvingsmethoden voor macOS-apparaten die bedrijfseigendom zijn:
-- [Het Device Enrollment Program (DEP) van Apple](device-enrollment-program-enroll-macos.md): organisaties kunnen nu macOS-apparaten aanschaffen via het Device Enrollment Program (DEP) van Apple. Met DEP kunt u een registratieprofiel draadloos implementeren om apparaten voor beheer in te schrijven.
-- [Device Enrollment Program (DEM)](device-enrollment-manager-enroll.md): u kunt een DEM-account gebruiken om maximaal duizend apparaten te registreren.
+- [Device Enrollment Program (DEP) van Apple](device-enrollment-program-enroll-macos.md): Organisaties kunnen macOS-apparaten aanschaffen via het Device Enrollment Program (DEP) van Apple. Met DEP kunt u een registratieprofiel draadloos implementeren om apparaten voor beheer in te schrijven.
+- [Apparaatinschrijvingsmanager (DEM)](device-enrollment-manager-enroll.md): U kunt een DEM-account gebruiken om maximaal duizend apparaten te registreren.
 
 ## <a name="block-macos-enrollment"></a>macOS-inschrijving blokkeren
 Standaard kunt u met Intune macOS-apparaten registreren. Zie [Beperkingen voor apparaattypen instellen](enrollment-restrictions-set.md) als u de inschrijving van macOS-apparaten wilt blokkeren.

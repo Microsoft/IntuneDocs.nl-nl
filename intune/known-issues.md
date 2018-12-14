@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: db655c49277051267036d76e518cc870757f67c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183040"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112371"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekende problemen in Microsoft Intune
 
@@ -31,7 +31,7 @@ Gebruik dit artikel als u meer informatie wilt over bekende problemen in Microso
 
 Als u een bug wilt melden die hier niet wordt weergegeven, kunt u een [ondersteuningsaanvraag openen](get-support.md).
 
-Als u een suggestie wilt doen voor een nieuwe functie in Intune, kunt u een rapport indienen op de site [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
+Als u een suggestie wilt doen voor een nieuwe functie in Intune, vult u [Microsoft Intune-feedback](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) in.
 
 ## <a name="migration"></a>Migratie
 
@@ -44,13 +44,13 @@ Nalevingsbeleid gemaakt in de klassieke Azure-portal wordt afgeschaft. U kunt al
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Verouderde Intune PC Client-functies zijn alleen beschikbaar in de Silverlight-console
 
-De mogelijkheid voor het beheren van Windows 10 in Intune op Azure Portal is beschikbaar via Windows MDM-inschrijving. Zie voor meer informatie [Console voor Intune in Azure en verouderde Intune PC Client](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
+De mogelijkheid voor het beheren van Windows 10 in Intune op Azure Portal is beschikbaar via Windows MDM-inschrijving. Zie voor meer informatie [Console voor Intune in Azure en verouderde Intune PC Client](intune-legacy-pc-client.md).
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Groepen die tijdens de migratie door Intune zijn gemaakt, hebben mogelijk invloed op de functionaliteit van andere Microsoft-producten
 
 Wanneer u van de Intune-portal naar Azure Portal migreert, ziet u mogelijk een nieuwe groep met de naam **Alle gebruikers - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Deze groep bevat alle gebruikers in uw Azure Active Directory, niet alleen gebruikers met een Intune-licentie. Dit gebruik kan problemen veroorzaken met andere Microsoft-producten, als u verwacht dat sommige bestaande of nieuwe gebruikers van geen enkele groep lid zijn.
 
-### <a name="status-blades-for-migrated-policies-do-not-work"></a>Statusblades voor gemigreerde beleidsregels werken niet
+### <a name="status-blades-for-migrated-policies-dont-work"></a>Statusblades voor gemigreerde beleidsregels werken niet
 
 U kunt geen statusinformatie weergeven voor beleidsregels die zijn gemigreerd vanuit de klassieke Azure-portal naar Azure Portal. U kunt rapporten voor dit beleid echter blijven bekijken in de klassieke portal. Als u statusinformatie voor gemigreerde configuratiebeleid wilt weergeven, maakt u ze opnieuw in Azure Portal.
 
@@ -60,7 +60,7 @@ U kunt geen statusinformatie weergeven voor beleidsregels die zijn gemigreerd va
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Meerdere installatieprompts voor apps voor bepaalde VPP-apps
 Mogelijk ziet u meerdere installatieprompts voor bepaalde VPP-apps die al zijn geïnstalleerd op de apparaten van eindgebruikers. Dit probleem doet zich voor als de optie **Automatic app updates** (Automatische app-updates) hebt ingesteld op **Aan** voor het VPP-token dat u naar de Intune Azure-portal hebt geüpload.    
 
-Om dit probleem op te lossen, kunt u de optie **Automatic app updates** (Automatische app-update) voor het VPP-token uitschakelen. Ga hiervoor naar Azure Portal en open Microsoft Intune. Selecteer vanuit Intune **Client-apps** > **iOS VPP-tokens**. Selecteer vervolgens het VPP-token dat de getroffen app heeft geïmplementeerd en selecteer **Bewerken** > **Automatic app updates (Automatische app-updates)** > **Uit** > **Opslaan**. Als alternatieve oplossing kunt u ook de implementatie van de getroffen app als VPP-app stoppen. Hiermee maakt u een einde aan de prompts.    
+Om dit probleem op te lossen, kunt u de optie **Automatic app updates** (Automatische app-updates) voor het VPP-token uitschakelen. Ga hiervoor naar Azure Portal en open Microsoft Intune. Selecteer vanuit Intune **Client-apps** > **iOS VPP-tokens**. Selecteer vervolgens het VPP-token dat de getroffen app heeft geïmplementeerd en selecteer **Bewerken** > **Automatic app updates (Automatische app-updates)** > **Uit** > **Opslaan**. Als alternatieve oplossing kunt u ook de implementatie van de getroffen app als VPP-app stoppen. Hiermee maakt u een einde aan de prompts.    
 
 Dit is een bekend probleem in de huidige versie. We hebben een geplande fix waarmee dit probleem wordt opgelost. Wanneer de oplossing is geïmplementeerd, zien uw gebruikers niet langer meerdere installatieprompts voor apps.
 

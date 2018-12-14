@@ -1,12 +1,12 @@
 ---
-title: Intune-registratie instellen voor aan Hybrid Active Directory gekoppelde apparaten met behulp van Windows Autopilot
-titleSuffix: Microsoft Intune
-description: Gebruik Windows Autopilot om aan Hybrid Active Directory gekoppelde apparaten in Intune te registreren.
+title: Registratie voor aan Hybrid Active Directory gekoppelde apparaten met behulp van Windows Autopilot
+titleSuffix: ''
+description: Gebruik Windows Autopilot om aan Hybrid Active Directory gekoppelde apparaten in Microsoft Intune te registreren.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/2/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 77a0c3f3a2e1ed0ee2dbc652049bb7057c736010
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189959"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112439"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Apparaten die zijn gekoppeld aan Hybrid Azure Active Directory implementeren met Intune en Windows Autopilot (preview)
 U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn gekoppeld aan Hybrid Azure Active Directory. Volg hiertoe de onderstaande stappen.
@@ -68,7 +68,7 @@ De te registreren apparaten moeten ook voldoen aan de volgende voorwaarden:
 
 Met de Intune-connector voor Active Directory worden via Autopilot geregistreerde computers gemaakt in het on-premises Active Directory-domein. De computer die als host fungeert voor de Intune-connector moet over het recht beschikken om binnen het domein computerobjecten te maken. 
 
-In sommige domeinen worden aan computers geen rechten verleend voor het maken van computers. Of mogelijk willen beheerders de limiet voor het aantal computeraccounts in het volledige domein niet verhogen. In deze situaties kunnen de rechten worden overgedragen aan de organisatie-eenheid waar aan Hybrid Azure AD gekoppelde apparaten worden gemaakt.
+In sommige domeinen worden aan computers geen rechten verleend voor het maken van computers. Bovendien hebben domeinen een ingebouwde limiet (standaard 10) die geldt voor alle gebruikers en computers zonder gedelegeerde rechten voor het maken van computerobjecten. De rechten moeten daarom worden gedelegeerd aan computers die als host fungeren voor de Intune-connector van de organisatie-eenheid waarop aan Hybrid Azure AD gekoppelde apparaten worden gemaakt.
 
 De organisatie-eenheid waaraan het recht is verleend om computers te maken, moet overeenkomen met:
 - de organisatie-eenheid die is ingevoerd in het profiel Domeindeelname
@@ -200,10 +200,10 @@ Het duurt ongeveer 15 minuten voordat de status van het apparaatprofiel is gewij
 
 1. Kies in [Intune](https://aka.ms/intuneportal) **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 2. Voer de volgende eigenschappen in:
-   - **Naam**: voer een beschrijvende naam in voor het nieuwe profiel.
-   - **Beschrijving:** voer een beschrijving in voor het profiel.
-   - **Platform**: kies **Windows 10 en hoger**.
-   - **Profieltype**: kies **Domeindeelname (preview)**.
+   - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel.
+   - **Beschrijving**: Voer een beschrijving in voor het profiel.
+   - **Platform**: Kies **Windows 10 en hoger**.
+   - **Profieltype**: Kies **Domeindeelname (preview)**.
 3. Kies **Instellingen** en geef een **Computernaamvoorvoegsel**, **Domeinnaam** en **Organisatie-eenheid** op (optioneel). 
 4. Kies **OK** > **Maken**. Het profiel wordt gemaakt en wordt weergegeven in de lijst.
 5. Als u het profiel wilt toewijzen, volgt u de stappen onder [Een apparaatprofiel toewijzen](device-profile-assign.md#assign-a-device-profile). 

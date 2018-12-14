@@ -15,12 +15,12 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bbcf6e21b9f5dd0474461e88ff54d6dde97590aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ba214e059e9a5ddb17a8b1344d4d30ab1d7b40fa
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179929"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112456"
 ---
 # <a name="intune-testing-and-validation"></a>Intune testen en valideren
 
@@ -32,17 +32,17 @@ Het is raadzaam uw team voor IT-ondersteuning en helpdesk te betrekken bij de te
 
 U wordt aangeraden het volgende te documenteren:
 
--   **Testcriteria:** identificeer de te hanteren benchmarks.
+-   **Testcriteria:** Identificeer de te hanteren benchmarks.
 
--   **Ontwerponderdelen:** moeten in ten minste één testcriterium zijn opgenomen.
+-   **Ontwerponderdelen:** Deze moeten in ten minste één testcriterium zijn opgenomen.
 
 Als een ontwerponderdeel niet is opgenomen in ten minste één testcriterium voor een vereiste of scenario, moet u beslissen of het ontwerponderdeel wel of niet vereist is. Zorg er bovendien voor dat u over de volgende items beschikt:
 
--   **Accounts:** testaccounts die een licentie hebben voor EMS en Office 365 om alle use-casescenario's te testen.
+-   **Accounts:** Testaccounts die een licentie hebben voor EMS en Office 365 om alle use-casescenario's te testen.
 
--   **Apparaten:** testapparaten die kunnen worden gewist of teruggezet naar de fabrieksinstellingen.
+-   **Apparaten:** Testapparaten die kunnen worden gewist of teruggezet naar de fabrieksinstellingen.
 
--   **Integratieonderdelen:** alle integratieonderdelen (Certificate Connector, Intune Service to Service Connector voor gehoste Exchange en Intune On-Premises Exchange Connector) moeten indien nodig, worden geïnstalleerd en geconfigureerd.
+-   **Integratieonderdelen:** Alle integratieonderdelen (Certificate Connector, Intune Service to Service Connector voor gehoste Exchange en Intune On-Premises Exchange Connector) moeten, indien nodig, worden geïnstalleerd en geconfigureerd.
 
 U kunt ontwerpwijzigingen nodig hebben om onvoorziene problemen het hoofd te bieden. Bovendien moeten alle ontwerpwijzigingen volledig worden gedocumenteerd met de reden voor elke wijziging. Hier volgt een voorbeeld van een mogelijke wijziging:
 
@@ -52,7 +52,7 @@ U kunt te maken krijgen met uitdagingen of problemen waarvoor technische hulp of
 
 -   [Informatie over het verkrijgen van ondersteuning voor Intune](get-support.md)
 
--   [Contact opnemen met telefonische ondersteuning voor Microsoft Intune](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
+-   [Contact opnemen met telefonische ondersteuning voor Microsoft Intune](get-support.md)
 
 ## <a name="functional-validation-testing"></a>Functionele-validatietests
 

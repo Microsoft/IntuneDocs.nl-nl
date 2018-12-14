@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: a715fe518331d20b9a47d8374a37ce66ec59055d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189275"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112762"
 ---
 # <a name="manage-software-updates-in-intune"></a>Software-updates beheren in Intune
 
@@ -28,7 +28,7 @@ Windows as a Service is dé manier om Windows 10-apparaten bij te werken. In Win
 
 Met behulp van Windows Update voor Bedrijven kunt u de updatebeheerervaring vereenvoudigen. U hoeft geen afzonderlijke updates voor apparaatgroepen goed te keuren. U kunt het risico in uw omgevingen beheren door een strategie voor het implementeren van updates te configureren. En Windows Update zorgt ervoor dat updates op het juiste moment worden geïnstalleerd. Microsoft Intune biedt de mogelijkheid update-instellingen op apparaten te configureren en biedt u de mogelijkheid de installatie van updates uit te stellen. Intune slaat de updates niet op, maar alleen de beleidstoewijzing voor de update. Apparaten maken direct verbinding met Windows Update voor de updates. U kunt Intune gebruiken voor het configureren en beheren van **Windows 10-updateringen**. Een update-ring bevat een aantal instellingen waarin is geconfigureerd wanneer en hoe Windows 10-updates worden geïnstalleerd. U kunt bijvoorbeeld de volgende instellingen configureren:
 
-- **Windows 10 Servicing-kanaal**: kies het Servicing-kanaal van waaruit u updates naar apparaatgroepen wilt sturen. De volgende kanalen zijn beschikbaar: 
+- **Windows 10 Servicing-kanaal**: Kies het Servicing-kanaal van waaruit u updates naar apparaatgroepen wilt sturen. De volgende kanalen zijn beschikbaar: 
   - Semi&#8208;Annual-kanaal
   - Semi&#8208;Annual-kanaal (Targeted)
   - Windows Insider &#8208; snel
@@ -36,12 +36,12 @@ Met behulp van Windows Update voor Bedrijven kunt u de updatebeheerervaring vere
   - Windows Insider vrijgeven 
       
   Zie [Overzicht voor Windows als een Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels) voor meer informatie over de beschikbare onderhoudskanalen.
-- **Instellingen voor uitstel**: configureer instellingen voor het uitstellen van updates om de installatie van updates voor groepen apparaten uit te stellen. U kunt deze instellingen gebruiken voor een gefaseerde update-implementatie, zodat u de voortgang kunt controleren.
-- **Pauzeren**: als er zich een probleem voordoet tijdens het uitrollen van de update, kunt u de installatie van de update uitstellen. 
-- **Onderhoudsvenster**: configureer de tijden waarop de updates kunnen worden geïnstalleerd.
-- **Type update**: kies welke typen updates worden geïnstalleerd. Bijvoorbeeld kwaliteitsupdates, upgrades van onderdelen of stuurprogramma’s.
-- **Installatiegedrag**: hiermee configureert u hoe de update wordt geïnstalleerd. Bijvoorbeeld, wordt het apparaat automatisch opnieuw opgestart na de installatie?
-- **Peer-download**: u kunt opgeven of u peer-downloaden wilt configureren. Als deze optie is geconfigureerd, kunnen andere apparaten een update downloaden van een apparaat dat het downloaden van de update heeft voltooid. Hierdoor wordt het downloadproces versneld.
+- **Instellingen voor uitstel**: Configureer instellingen voor het uitstellen van updates om de installatie van updates voor groepen apparaten uit te stellen. U kunt deze instellingen gebruiken voor een gefaseerde update-implementatie, zodat u de voortgang kunt controleren.
+- **Pauzeren**: Als er zich een probleem voordoet tijdens het uitrollen van de update, kunt u de installatie van de update uitstellen. 
+- **Onderhoudsvenster**: Configureer de tijden waarop de updates kunnen worden geïnstalleerd.
+- **Type update**: Kies welke typen updates worden geïnstalleerd. Bijvoorbeeld kwaliteitsupdates, upgrades van onderdelen of stuurprogramma’s.
+- **Installatiegedrag**: Hiermee configureert u hoe de update wordt geïnstalleerd. Bijvoorbeeld, wordt het apparaat automatisch opnieuw opgestart na de installatie?
+- **Peer-download**: U kunt opgeven of u peer-downloaden wilt configureren. Als deze optie is geconfigureerd, kunnen andere apparaten een update downloaden van een apparaat dat het downloaden van de update heeft voltooid. Hierdoor wordt het downloadproces versneld.
 
 Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparaten. Als u updateringen gebruikt, kunt u een updatestrategie maken die overeenkomt met de behoeften van uw bedrijf. Zie [Manage updates using Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb) (Updates beheren met Windows Update voor Bedrijven) voor meer informatie.
 
@@ -78,27 +78,27 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 3. Voer een naam en een beschrijving (optioneel) in en kies vervolgens **Configureren**.
 4. Voer bij **Instellingen** de volgende informatie in:
 
-   - **Servicing-kanaal**: stel het kanaal in van waaruit het apparaat Windows-updates ontvangt.
-   - **Microsoft-productupdates**: kies of u wilt zoeken naar app-updates via Microsoft Update.
-   - **Windows-stuurprogramma's**: kies of u Windows Update-stuurprogramma's wilt uitsluiten tijdens het bijwerken.
-   - **Gedrag voor automatische updates**: kies hoe automatische updates worden geïnstalleerd, wanneer het apparaat opnieuw moet gestart of opnieuw moet worden opgestart. Zie [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) voor meer informatie.
-     - **Frequentie van automatisch gedrag**: als u **Automatisch installeren en opnieuw starten op een geplande tijd** voor het updategedrag selecteert, wordt deze instelling weergegeven. Gebruik deze instelling om te plannen wanneer updates worden geïnstalleerd, inclusief de week, de dag en het tijdstip.
+   - **Servicekanaal**: Stel het kanaal in van waaruit het apparaat Windows-updates ontvangt.
+   - **Microsoft-productupdates**: Kies of u wilt zoeken naar app-updates via Microsoft Update.
+   - **Windows-stuurprogramma's**: Kies of u Windows Update-stuurprogramma's wilt uitsluiten tijdens het bijwerken.
+   - **Gedrag van automatische updates**: Kies hoe automatische updates worden geïnstalleerd, wanneer het apparaat opnieuw moet gestart of opnieuw moet worden opgestart. Zie [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) voor meer informatie.
+     - **Frequentie van automatisch gedrag**: Als u **Automatisch installeren en opnieuw starten op een geplande tijd** voor het updategedrag selecteert, wordt deze instelling weergegeven. Gebruik deze instelling om te plannen wanneer updates worden geïnstalleerd, inclusief de week, de dag en het tijdstip.
 
-   - **Controles voor opnieuw opstarten**: standaard ingeschakeld. Wanneer u een apparaat opnieuw start, worden er een aantal controles uitgevoerd. Zo wordt bijvoorbeeld gecontroleerd op actieve gebruikers, batterijniveau, actieve games en meer. Als u deze controles wilt overslaan wanneer u een apparaat opnieuw start, kiest u **Overslaan**.
+   - **Controles voor opnieuw starten**: Standaard ingeschakeld. Wanneer u een apparaat opnieuw start, worden er een aantal controles uitgevoerd. Zo wordt bijvoorbeeld gecontroleerd op actieve gebruikers, batterijniveau, actieve games en meer. Als u deze controles wilt overslaan wanneer u een apparaat opnieuw start, kiest u **Overslaan**.
 
-   - **Uitstelperiode voor kwaliteitsupdates (dagen)**: geef het aantal dagen op dat kwaliteitsupdates worden uitgesteld. U kunt deze kwaliteitsupdates uitstellen gedurende maximaal 30 dagen vanaf de vrijgave.
+   - **Uitstelperiode voor kwaliteitsupdates (dagen)**: Geef het aantal dagen op dat kwaliteitsupdates worden uitgesteld. U kunt deze kwaliteitsupdates uitstellen gedurende maximaal 30 dagen vanaf de vrijgave.
 
      Kwaliteitsupdates zijn doorgaans oplossingen en verbeteringen in de bestaande Windows-functionaliteit. Deze worden op de tweede dinsdag van elke maand gepubliceerd. Kwaliteitsupdates via Windows Update voor Bedrijven ontvangen alleen deze updates (versie B), hoewel Microsoft van tijd tot tijd andere updates kan publiceren. U kunt bepalen of en hoe lang u ontvangen kwaliteitsupdates wilt uitstellen nadat ze beschikbaar zijn gekomen in Windows Update. Zie [Deploy updates using Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) (Updates implementeren met Windows Update voor Bedrijven) voor meer informatie.
 
-   - **Uitstelperiode voor upgrades van onderdelen (dagen)**: geef het aantal dagen op dat upgrades van onderdelen worden uitgesteld. U kunt deze functie-updates uitstellen gedurende maximaal 180 dagen vanaf de vrijgave.
+   - **Uitstelperiode voor onderdelenupdates (dagen)**: Geef het aantal dagen op dat onderdelenupdates worden uitgesteld. U kunt deze functie-updates uitstellen gedurende maximaal 180 dagen vanaf de vrijgave.
 
      Upgrades van onderdelen zijn over het algemeen nieuwe functies van Windows. Nadat u de instelling voor het **Servicing-kanaal** hebt geconfigureerd, kunt u definiëren of en hoe lang u ontvangen functie-updates uitstelt nadat deze beschikbaar zijn gekomen in Windows Update.
 
-     Bijvoorbeeld: **als het Servicing-kanaal is ingesteld op Semi-Annual-kanaal (Targeted) en de uitstelperiode 30 dagen is**: stel dat onderdelenupdate x eerst openbaar beschikbaar is op Windows Update als een Semi-Annual-kanaal (Targeted) in januari. Het apparaat ontvangt de update pas in februari - 30 dagen later.
+     Bijvoorbeeld: **Als het servicekanaal is ingesteld op Semi-Annual-kanaal (Targeted) en de uitstelperiode 30 dagen is**: Stel dat Onderdelenupdate X voor het eerst openbaar beschikbaar is op Windows Update als Semi-Annual-kanaal (Targeted) in januari. Het apparaat ontvangt de update pas in februari - 30 dagen later.
 
-     **Als het Servicing-kanaal is ingesteld op Semi-Annual-kanaal en de uitstelperiode 30 dagen is**: stel dat onderdelenupdate x eerst openbaar beschikbaar is op Windows Update als een Semi-Annual-kanaal (Targeted) in januari. Vier maanden later, in april, wordt onderdelenupdate X vrijgegeven voor Semi-Annual-kanaal. Het apparaat ontvangt de onderdelenupdate 30 dagen na deze Semi-Annual-kanaal-vrijgave en wordt in mei bijgewerkt.
+     **Als het servicekanaal is ingesteld op Semi-Annual-kanaal en de uitstelperiode 30 dagen is**: Stel, de Onderdelenupdate X is voor het eerst openbaar beschikbaar op Windows Update als Semi-Annual-kanaal (Targeted) in januari. Vier maanden later, in april, wordt onderdelenupdate X vrijgegeven voor Semi-Annual-kanaal. Het apparaat ontvangt de onderdelenupdate 30 dagen na deze Semi-Annual-kanaal-vrijgave en wordt in mei bijgewerkt.
 
-   - **Delivery Optimization**: kies de methode waarmee apparaten Windows-updates moeten downloaden. Zie [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode) voor meer informatie.
+   - **Delivery Optimization-downloadmodus**: Kies de methode waarmee apparaten Windows-updates moeten downloaden. Zie [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode) voor meer informatie.
 
 5. Wanneer u klaar bent, selecteert u **OK**. Selecteer in **Update-ring maken** de optie **Maken**.
 
@@ -131,16 +131,16 @@ Met de gratis oplossing Update Compliance kunt u de updatenaleving weergeven in 
 ### <a name="review-update-compliance-using-oms"></a>Updatenaleving weergeven in OMS
 Met de gratis oplossing Update Compliance kunt u de Windows 10 update-implementatie bewaken. Zie [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Windows-updates bewaken met Update Compliance) voor meer informatie. Wanneer u deze oplossing gebruikt, kunt u een commerciële id implementeren op elk van uw door Intune beheerde Windows 10-apparaten waarvoor u over de naleving van updates wilt rapporteren.
 
-In Intune kunt u de OMA-URI-instellingen van een aangepast beleid gebruiken om de commerciële id te configureren. Zie [Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune) voor meer informatie.   
+In Intune kunt u de OMA-URI-instellingen van een aangepast beleid gebruiken om de commerciële id te configureren. Zie [Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune](custom-settings-windows-10.md) voor meer informatie.   
 
 Het pad voor de OMA-URI (hoofdlettergevoelig) voor het configureren van de commerciële id is: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
 U kunt bijvoorbeeld de volgende waarden gebruiken in **OMA-URI-instelling toevoegen of bewerken**:
 
 - **Naam van instelling**: Commerciële id voor Windows Analytics
-- **Beschrijving van instelling**: commerciële id voor Windows Analytics-oplossingen configureren
+- **Beschrijving van instelling**: Commerciële id voor Windows Analytics-oplossingen configureren
 - **OMA-URI** (hoofdlettergevoelig): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-- **Gegevenstype:** tekenreeks
+- **Gegevenstype**: Tekenreeks
 - **Waarde**: <*gebruik de GUID die wordt weergegeven op het tabblad Windows-telemetrie in uw OMS-werkruimte*>
 
 ![OMA-URI-instelling - rij bewerken](./media/commID-edit.png)
@@ -174,4 +174,4 @@ De volgende instellingen worden in Windows Holographic for Business ondersteund:
 
 - **Gedrag van automatische updates**
 - **Productupdates van Microsoft**
-- **Servicekanaal**: ondersteunt de opties **Semi-Annual-kanaal** en **Semi-Annual-kanaal (Targeted)**
+- **Servicekanaal**: Ondersteunt de opties **Semi-Annual-kanaal** en **Semi-Annual-kanaal (Targeted)**

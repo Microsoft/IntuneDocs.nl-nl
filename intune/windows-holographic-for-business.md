@@ -5,22 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: fd99a168747bd4a0f5852404e767d658b8400ba2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure, seodec18
+ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180830"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032262"
 ---
-# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Windows Holographic- en HoloLens-apparaten beheren en gebruiken met Intune
+# <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Verschillende apparaatbeheerfuncties beheren en gebruiken op Windows Holographic- en HoloLens-apparaten met Intune
 
 Microsoft Intune bevat veel functies waarmee u apparaten met Windows Holographic for Business kunt beheren, zoals de [Microsoft HoloLens](https://docs.microsoft.com/hololens/). Met Intune kunt u bevestigen dat apparaten compatibel zijn met de regels van uw organisatie, en u kunt het apparaat aanpassen door een VPN- of Wi-Fi-profiel toe te voegen. Een andere belangrijke functie is dat het apparaat kan worden gebruikt als een kiosk en dat met het apparaat een specifieke app of set apps kan worden uitgevoerd.
 
@@ -32,11 +32,11 @@ Maak een editie-upgrade-profiel om Windows Holographic-apparaten te gebruiken me
 
 Azure Active Directory (AD) is een geweldige resource voor het beheren en bedienen van uw apparaten waarop Windows Holographic voor Bedrijven wordt uitgevoerd. Met behulp van Intune en Azure AD kunt u: 
 
-- **[Gekoppelde Azure Active Directory-apparaten instellen](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: in Azure Active Directory (AD) kunt u uw Windows 10-apparaten voor zakelijk gebruik toevoegen, waaronder apparaten waarop Windows Holographic voor Bedrijven wordt uitgevoerd. Via deze functie kan Azure AD het apparaat beheren. Hiermee kunt u bevestigen dat uw gebruikers toegang tot uw bedrijfsresources hebben vanaf apparaten die aan uw beveiligings en nalevingsnormen voldoen.
+- **[Apparaten toevoegen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: In Azure Active Directory (AD) kunt u uw Windows 10-apparaten voor zakelijk gebruik toevoegen, waaronder apparaten waarop Windows Holographic for Business wordt uitgevoerd. Via deze functie kan Azure AD het apparaat beheren. Hiermee kunt u bevestigen dat uw gebruikers toegang tot uw bedrijfsresources hebben vanaf apparaten die aan uw beveiligings en nalevingsnormen voldoen.
 
-  [Inleiding tot apparaatbeheer in Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction) biedt meer informatie.
+  Zie [Apparaatbeheer in Azure AD](https://docs.microsoft.com/azure/active-directory/devices/overview) voor meer informatie.
 
-- **[Bulkregistratie voor Windows-apparaten](windows-bulk-enroll.md)**: u kunt grote aantallen nieuwe Windows-apparaten toevoegen aan Azure Active Directory (AD) en Intune. Deze functie wordt bulkregistratie genoemd. Hiervoor worden inrichtingspakketten gebruikt. Deze pakketten koppelen de apparaten waarop Windows Holographic voor Bedrijven wordt uitgevoerd met uw Azure AD-tenant en registreren deze in Intune.
+- **[Bulkregistratie voor Windows-apparaten](windows-bulk-enroll.md)**: Als beheerder kunt u grote aantallen nieuwe Windows-apparaten toevoegen aan Azure Active Directory (AD) en Intune. Deze functie wordt bulkregistratie genoemd. Hiervoor worden inrichtingspakketten gebruikt. Deze pakketten koppelen de apparaten waarop Windows Holographic voor Bedrijven wordt uitgevoerd met uw Azure AD-tenant en registreren deze in Intune.
 
 ## <a name="company-portal"></a>Bedrijfsportal
 **[De bedrijfsportal-app configureren](company-portal-app.md)**
@@ -49,7 +49,6 @@ U kunt ook een de volgende acties uitvoeren met behulp van de bedrijfsportal-app
 - [De naam van een apparaat wijzigen](/intune-user-help/rename-your-device-cpapp)
 - [Apps installeren](/intune-user-help/install-apps-cpapp-windows) op een apparaat
 - [Apparaten handmatig synchroniseren](/intune-user-help/sync-your-device-manually-windows) vanuit de instellingen-app of de bedrijfsportal-app
-
 
 ## <a name="compliance-policy"></a>Nalevingsbeleid
 **[Een nalevingsbeleid voor apparaten maken](compliance-policy-create-windows.md)**
@@ -85,11 +84,11 @@ In Intune worden een aantal ingebouwde acties gebruikt waarmee IT-beheerders ver
 
 De volgende acties kunnen worden gebruikt wanneer u apparaten gebruikt waarop Windows Holographic voor Bedrijven wordt uitgevoerd: 
 
-- **[Wissen](devices-wipe.md#wipe)**: met de actie **Wissen** wordt het apparaat uit Intune verwijderd en worden de standaardfabrieksinstellingen van het apparaat hersteld. Gebruik deze actie voordat u het apparaat aan een nieuwe gebruiker geeft of wanneer het apparaat is verloren of gestolen.
+- **[Wissen](devices-wipe.md#wipe)**: Met de actie **Wissen** wordt het apparaat uit Intune verwijderd en worden de standaardfabrieksinstellingen van het apparaat hersteld. Gebruik deze actie voordat u het apparaat aan een nieuwe gebruiker geeft of wanneer het apparaat is verloren of gestolen.
 
-- **[Buiten gebruik stellen](devices-wipe.md#retire)**: met de actie **Buiten gebruik stellen** wordt het apparaat uit Intune verwijderd. Hiermee verwijdert u ook beheerde app-gegevens, instellingen en e-mailprofielen die zijn toegewezen door Intune. De persoonlijke gegevens van de gebruiker blijven op het apparaat.
+- **[Buiten gebruik stellen](devices-wipe.md#retire)**: Met de actie **Buiten gebruik stellen** wordt het apparaat uit Intune verwijderd. Hiermee verwijdert u ook beheerde app-gegevens, instellingen en e-mailprofielen die zijn toegewezen door Intune. De persoonlijke gegevens van de gebruiker blijven op het apparaat.
 
-- **[Apparaten synchroniseren naar de nieuwste beleidsregels en acties](device-sync.md)**: met de actie **Synchroniseren** dwingt u het apparaat direct in te checken bij Intune. Wanneer een apparaat wordt ingecheckt, worden direct eventuele openstaande acties of toegewezen beleidsregels ontvangen die eraan zijn toegewezen. Met deze functie kunt u toegewezen beleid controleren en in het geval van problemen direct aanpassen, zonder dat u hoeft te wachten op de volgende geplande check-in.
+- **[Apparaten synchroniseren om het meest recente beleid en de meest recente acties te verkrijgen](device-sync.md)**: Met de actie **Synchroniseren** wordt het geselecteerde apparaat direct ingecheckt bij Intune. Wanneer een apparaat wordt ingecheckt, worden direct eventuele openstaande acties of toegewezen beleidsregels ontvangen die eraan zijn toegewezen. Met deze functie kunt u toegewezen beleid controleren en in het geval van problemen direct aanpassen, zonder dat u hoeft te wachten op de volgende geplande check-in.
 
 **[Wat is Microsoft Intune-apparaatbeheer?](device-management.md)** is een goede resource voor meer informatie over het beheer van apparaten via Azure Portal. 
 

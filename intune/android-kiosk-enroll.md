@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5ea4d41477f2f0c6dc1314e47072d2c4cf862e23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184825"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031990"
 ---
-# <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Inschrijving van kioskapparaten voor Android Enterprise instellen
+# <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Registratie van kioskapparaten voor Android Enterprise in Intune instellen
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -56,8 +56,8 @@ U moet een inschrijvingsprofiel maken, zodat u uw kioskapparaten kunt registrere
 
 1. Ga naar de [Intune-portal](https://portal.azure.com) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Kiosk- en taakapparaatinschrijvingen**.
 2. Kies **Maken** en vul de vereiste velden in.
-    - **Naam**: typ een naam die u gebruikt wanneer u het profiel toewijst aan de dynamische apparaatgroep.
-    - **Vervaldatum van token**: de datum waarop het token verloopt. Google dwingt een maximum van 90 dagen af.
+    - **Naam**: Typ een naam die u gebruikt wanneer u het profiel toewijst aan de dynamische apparaatgroep.
+    - **Vervaldatum van het token**: De datum waarop het token verloopt. Google dwingt een maximum van 90 dagen af.
 3. Kies **Maken** om het profiel op te slaan.
 
 ### <a name="create-a-device-group"></a>Een apparaatgroep maken
@@ -67,7 +67,7 @@ U kunt apps en beleidsregels zenden naar toegewezen of dynamische apparaatgroepe
 1. Ga naar de [Intune-portal](https://portal.azure.com) en kies **Groepen** > **Alle groepen** > **Nieuwe groep**.
 2. Vul in de blade **Groep** de vereiste velden als volgt in:
     - **Groepstype**: Beveiliging
-    - **Groepsnaam**: typ een intuïtieve naam (bijvoorbeeld Factory 1-apparaten)
+    - **Groepsnaam**: Typ een intuïtieve naam (bijvoorbeeld Factory 1-apparaten)
     - **Type lidmaatschap**: Dynamisch apparaat
 3. Kies **Dynamische query toevoegen**.
 4. Vul in de blade **Dynamisch-lidmaatschapregels** de velden als volgt in:
@@ -82,8 +82,8 @@ U kunt apps en beleidsregels zenden naar toegewezen of dynamische apparaatgroepe
 
 U kunt tokens en QR-codes vervangen of verwijderen.
 
-- **Token vervangen**: met Token vervangen kunt u een nieuw token of nieuwe QR-code genereren wanneer voor een van beide de vervaldatum nadert.
-- **Token intrekken**: u kunt het token of de QR-code direct laten verlopen. Vanaf dat moment is het token of de QR-code niet meer bruikbaar. U kunt deze optie bijvoorbeeld gebruiken als u:
+- **Token vervangen**: Met Token vervangen kunt u een nieuw token of nieuwe QR-code genereren wanneer voor een van beide de vervaldatum nadert.
+- **Token intrekken**: U kunt het token of de QR-code direct laten verlopen. Vanaf dat moment is het token of de QR-code niet meer bruikbaar. U kunt deze optie bijvoorbeeld gebruiken als u:
     - het token of de QR-code per ongeluk hebt gedeeld met een onbevoegde partij
     - alle inschrijvingen hebt voltooid en het token of de QR-code niet meer nodig hebt
 

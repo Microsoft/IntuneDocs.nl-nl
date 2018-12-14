@@ -15,15 +15,15 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: e407b2059d986841541c969e387d77e71c5e5b4b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181357"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032296"
 ---
-# <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>De voorwaarden voor gebruikerstoegang van uw bedrijf beheren
+# <a name="terms-and-conditions-for-user-access"></a>Voorwaarden voor gebruikerstoegang
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -48,17 +48,17 @@ Voer deze stappen uit om voorwaarden te maken. De weergavenaam en beschrijving z
 ![Schermafbeelding van de Azure-portal met de knop Maken voor het maken van voorwaarden](media/terms-create-terms.png)
 3. Geef op het uitgevouwen deelvenster de volgende gegevens op:
 
-   - **Weergavenaam**: de naam voor de voorwaarden in de Azure-portal. Gebruikers krijgen deze naam niet te zien.
+   - **Weergavenaam**: De naam voor de voorwaarden in de Azure-portal. Gebruikers krijgen deze naam niet te zien.
 
-   - **Beschrijving**: optionele informatie aan de hand waarvan u deze set voorwaarden in de Azure-portal kunt herkennen.
+   - **Beschrijving**: Optionele informatie aan de hand waarvan u deze set voorwaarden in de Azure-portal kunt herkennen.
 
 4. Selecteer de pijl naast **Gebruiksvoorwaarden definiëren** om het deelvenster Voorwaarden te openen. Voer de volgende informatie in:
 
    ![Schermopname van het scherm voor het accepteren van voorwaarden door gebruikers met een overzicht van de voorwaarden](./media/terms-summary-create.png)
 
-   - **Titel**: de naam voor de voorwaarden die in de bedrijfsportal worden weergegeven boven de **Samenvatting**.
-   - **Overzicht van voorwaarden**: tekst waarin wordt uitgelegd wat het betekent als gebruikers de voorwaarden accepteren. Bijvoorbeeld: "Door uw apparaat te registreren, stemt u in met de gebruiksvoorwaarden zoals uiteengezet door Contoso. Lees de voorwaarden door voordat u verdergaat."
-   - **Voorwaarden**: de voorwaarden die gebruikers krijgen te zien en die ze moeten accepteren of weigeren.
+   - **Titel**: De naam voor de voorwaarden die in de bedrijfsportal worden weergegeven boven de **Samenvatting**.
+   - **Overzicht van voorwaarden**: Tekst waarin wordt uitgelegd wat het betekent als gebruikers de voorwaarden accepteren. Bijvoorbeeld: "Door uw apparaat te registreren, stemt u in met de gebruiksvoorwaarden zoals uiteengezet door Contoso. Lees de voorwaarden door voordat u verdergaat."
+   - **Voorwaarden**: De voorwaarden die gebruikers te zien krijgen en die ze moeten accepteren of weigeren.
 
 5. Kies **OK** > **Maken**.
 

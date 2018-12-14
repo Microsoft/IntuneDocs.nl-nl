@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187834"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112949"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -67,7 +67,7 @@ Standaardbeperkingen worden automatisch opgegeven voor registratiebeperkingen vo
 
 ## <a name="set-device-type-restrictions"></a>Beperkingen voor apparaattypen instellen
 
-U kunt de instellingen voor een beperking van het type apparaat wijzigen via onderstaande stappen. Deze beperkingen hebben geen invloed op apparaten die al zijn geregistreerd. Apparaten die zijn geregistreerd bij de [Intune PC-agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune), kunnen niet met deze functie worden geblokkeerd.
+U kunt de instellingen voor een beperking van het type apparaat wijzigen via onderstaande stappen. Deze beperkingen hebben geen invloed op apparaten die al zijn geregistreerd. Apparaten die zijn geregistreerd bij de [Intune PC-agent](manage-windows-pcs-with-microsoft-intune.md), kunnen niet met deze functie worden geblokkeerd.
 
 1. Meld u aan bij Azure Portal.
 2. Selecteer **Meer Services**, zoek naar **Intune** en kies vervolgens **Intune**.
@@ -123,7 +123,7 @@ U kunt de instellingen voor een beperking van de apparaatlimiet als volgt wijzig
 6. Selecteer **Opslaan**.
 
 
-Er wordt een melding aan gebruikers weergegeven waarin staat wanneer zij hun limiet van geregistreerde apparaten hebben bereikt. In iOS ziet dit er bijvoorbeeld als volgt uit:
+Bij BYOD-registraties wordt er een melding aan gebruikers weergegeven waarin staat wanneer zij hun limiet van geregistreerde apparaten hebben bereikt. In iOS ziet dit er bijvoorbeeld als volgt uit:
 
 ![Limietmelding op iOS-apparaat](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

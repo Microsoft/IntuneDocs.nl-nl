@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de80092647462f83fb92303080239fd30198bd3c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180231"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53167991"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP met voorwaardelijke toegang in Intune inschakelen
 
@@ -89,13 +89,13 @@ Wanneer u eenmaal onboarding van een apparaat met het configuratiepakket hebt ui
 5. Voor **Profieltype** selecteert u **Windows Defender ATP (Windows 10 Desktop)**.
 6. Configureer de gewenste instellingen:
 
-  - **Type configuratiepakket van Windows Defender ATP-client**: selecteer **Onboarding uitvoeren** om het configuratiepakket toe te voegen aan het profiel. Selecteer **Offboarding uitvoeren** om configuratiepakket uit het profiel te verwijderen.
+  - **Type clientconfiguratiepakket voor Windows Defender ATP**: Selecteer **Onboarding uitvoeren** om het configuratiepakket aan het profiel toe te voegen. Selecteer **Offboarding uitvoeren** om configuratiepakket uit het profiel te verwijderen.
   
     > [!NOTE] 
-    > Als er een verbinding tot stand is gebracht met Windows Defender ATP, wordt **Onboarding** van het configuratieprofiel automatisch voor u uitgevoerd in Intune.
+    > Als u een verbinding met Windows Defender ATP tot stand hebt gebracht, start **Onboarding uitvoeren** in Intune automatisch en wordt het configuratieprofiel voor u toegevoegd. In dat geval is de instelling **Type clientconfiguratiepakket voor Windows Defender ATP** niet beschikbaar.
   
-  - **Delen van voorbeelden voor alle bestanden**: via **Inschakelen** staat u toe dat voorbeelden worden verzameld en gedeeld met Windows Defender ATP. Als u bijvoorbeeld een verdacht bestand ziet, kunt u het verzenden naar Windows Defender ATP voor grondige analyse. **Niet geconfigureerd**: eventuele voorbeelden voor het Windows Defender ATP worden niet gedeeld.
-  - **Rapportagefrequentie telemetrie versnellen**: **schakel deze instelling in** zodat voor apparaten met een hoog risico vaker telemetrie naar de Windows Defender ATP-service wordt gerapporteerd.
+  - **Voorbeelddeling voor alle bestanden**: Via **Inschakelen** staat u toe dat voorbeelden worden verzameld en gedeeld met Windows Defender ATP. Als u bijvoorbeeld een verdacht bestand ziet, kunt u het verzenden naar Windows Defender ATP voor grondige analyse. **Niet geconfigureerd**: eventuele voorbeelden voor het Windows Defender ATP worden niet gedeeld.
+  - **Frequentie van telemetrierapporten versnellen**: U kunt deze instelling **inschakelen** voor apparaten met een hoog risico, zodat vaker telemetrie naar de Windows Defender ATP-service wordt gerapporteerd.
 
     [Onboard Windows 10 machines using System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection) (Windows 10-apparaten onboarden die System Center Configuration Manager gebruiken) bevat meer informatie over deze instellingen voor Windows Defender ATP.
 
@@ -110,10 +110,10 @@ Het nalevingsbeleid bepaalt een aanvaardbaar risiconiveau op een apparaat.
 4. In **Platform** selecteert u **Windows 10 en hoger**.
 5. Stel in de instellingen voor **Windows Defender ATP** de optie **Vereisen dat het apparaat op of onder het apparaatdreigingsniveau moet zijn** in op het gewenste niveau:
 
-  - **Veilig**: dit is het veiligste niveau. Het apparaat heeft geen toegang tot bedrijfsresources als er ook maar één bedreiging is gevonden. Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.
-  - **Laag**: het apparaat is conform als er alleen bedreigingen van een laag niveau aanwezig zijn. Apparaten met gemiddelde of hoge dreigingsniveaus zijn niet conform.
-  - **Gemiddeld**: het apparaat is conform als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
-  - **Hoog**: dit niveau is het minst veilig en laat alle dreigingsniveaus toe. Dus apparaten met hoge, gemiddelde of lage bedreigingsniveaus worden beschouwd als conform.
+  - **Veilig**: Dit is het veiligste niveau. Het apparaat heeft geen toegang tot bedrijfsresources als er ook maar één bedreiging is gevonden. Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.
+  - **Laag**: Het apparaat is conform als er alleen bedreigingen van een laag niveau aanwezig zijn. Apparaten met gemiddelde of hoge dreigingsniveaus zijn niet conform.
+  - **Gemiddeld**: Het apparaat is conform als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
+  - **Hoog**: Dit niveau is het minst veilig en laat alle bedreigingsniveaus toe. Dus apparaten met hoge, gemiddelde of lage bedreigingsniveaus worden beschouwd als conform.
 
 6. Selecteer **OK** en **Maken** om wijzigingen op te slaan (en het beleid aan te maken).
 

@@ -1,11 +1,11 @@
 ---
-title: Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune
+title: Apps geschikt maken voor beheer van mobiele apps met Microsoft Intune
 description: Aan de hand van de informatie in dit onderwerp kunt u beslissen wanneer u het hulpmiddel App Wrapping en de App SDK moet gebruiken om uw aangepaste LOB-apps in te schakelen voor gebruik van de beleidsregels voor het beheren van mobiele apps.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 8841354b268f70634a61040fb06ed857120e9cfc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181969"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112422"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Line-of-business-apps voorbereiden voor app-beveiligingsbeleid
 
@@ -35,7 +35,7 @@ Om het hulpprogramma te kunnen gebruiken, hebt u de broncode niet nodig, maar we
 
 De App Wrapping Tool biedt **geen** ondersteuning voor apps in de Apple App Store of Google Play Store. De tool biedt ook geen ondersteuning voor bepaalde functies waarvoor ontwikkelaarsintegratie vereist is (zie de volgende functievergelijkingstabel).
 
-Zie [Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn geregistreerd bij Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune) voor meer informatie over de App Wrapping Tool voor app-beveiligingsbeleid op apparaten die niet zijn geregistreerd bij Intune.
+Zie [Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn geregistreerd bij Microsoft Intune](apps-add.md) voor meer informatie over de App Wrapping Tool voor app-beveiligingsbeleid op apparaten die niet zijn geregistreerd bij Intune.
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Redenen om de App Wrapping Tool te gebruiken
 * Uw app heeft geen ingebouwde functies voor gegevensbescherming
@@ -98,7 +98,7 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |Schermafbeeldingen maken blokkeren (alleen Android)|X|X|
 |Ondersteuning van MAM zonder apparaatinschrijving|X|X|
 |Volledig wissen|X|X|
-|Selectief wissen <br></br>**Opmerking:** bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
+|Selectief wissen <br></br>**Opmerking:** Bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
 |'Opslaan als' voorkomen|X||
 |Configuratie van doeltoepassingen|X||
 |Ondersteuning voor meerdere identiteiten|X||
@@ -117,4 +117,4 @@ Meer informatie over app-beveiligingsbeleid en Intune kunt u vinden in de volgen
 
   - [Android App Wrapping Tool](app-wrapper-prepare-android.md)</br>
   - [iOS App Wrapping Tool](app-wrapper-prepare-ios.md)</br>
-  - [De SDK gebruiken om apps geschikt te maken voor Mobile Application Management](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+  - [De SDK gebruiken om apps geschikt te maken voor Mobile Application Management](app-sdk.md)

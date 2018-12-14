@@ -1,7 +1,7 @@
 ---
 title: Mogelijkheden die Intune biedt per inschrijvingsmethode voor Windows-apparaten
 titlesuffix: Microsoft Intune
-description: Bekijk voor welke mogelijkheden elke inschrijvingsmethode ondersteuning biedt voor Windows-apparaten.
+description: Mogelijkheden per inschrijvingsmethode voor Windows-apparaten.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 38bb88015261aa50d6c27aec026614f1205aebe8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f32a0967c094c16b76ad4c4572ebd8e80c6115b2
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189806"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032126"
 ---
-# <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Mogelijkheden per inschrijvingsmethode voor Windows-apparaten
+# <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Mogelijkheden die Intune biedt per inschrijvingsmethode voor Windows-apparaten
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Met Intune kunt u de apparaten en apps beheren waarvan uw werknemers gebruikmaken en kunt u beheren hoe zij toegang hebben tot uw bedrijfsgegevens. De apparaten moeten eerst worden ingeschreven bij de Intune-service. Er zijn verschillende methoden om de apparaten van uw werknemers te registreren. Voor elke methode gelden andere aanbevolen procedures en mogelijkheden, zoals wordt weergegeven in de onderstaande tabellen.
+Er zijn verschillende methoden om de apparaten van uw werknemers te registreren in Intune. Voor elke methode gelden andere aanbevolen procedures en mogelijkheden, zoals wordt weergegeven in de onderstaande tabellen.
 
 ## <a name="best-practices-by-enrollment-method"></a>Aanbevolen procedures per inschrijvingsmethode
 | **Best practices** | **[Neemt deel aan Azure AD](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Neemt deel aan Azure AD via Autopilot](enrollment-autopilot.md)** |**[Bulk](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |

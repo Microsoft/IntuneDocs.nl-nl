@@ -1,5 +1,5 @@
 ---
-title: Een ontwerp maken
+title: Uw Microsoft Intune-ontwerp maken
 titlesuffix: Microsoft Intune
 description: Dit artikel helpt u bij het maken van een ontwerp voor een Microsoft Intune-ontwerp en -implementatie die uitsluitend voor de cloud zijn bestemd.
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.custom: ''
-ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186491"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112983"
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 
@@ -211,7 +211,7 @@ U kunt [een sjabloon van de bovenstaande tabel downloaden](https://gallery.techn
 
 Intune ondersteunt zowel bedrijfseigen apparaten als persoonlijke apparaten. Een apparaat wordt beschouwd als bedrijfseigendom als u het inschrijft bij een apparaatinschrijvingsbeheerder of apparaatinschrijvingsprogramma. Een apparaat kan bijvoorbeeld worden ingeschreven via Apple Device Enrollment Program (DEP), worden gemarkeerd als bedrijfseigendom en in een apparaatgroep worden geplaatst die specifieke beleidsregels en apps van het bedrijf ontvangt.
 
-Zie [Sectie 3: use-casescenariovereisten bepalen](planning-guide-requirements.md) voor meer informatie over voorbeelden van apparaten in bedrijfseigendom en BYOD-apparaten.
+Zie [sectie 3: use-casescenariovereisten bepalen](planning-guide-requirements.md) voor meer informatie over voorbeelden van apparaten in bedrijfseigendom en BYOD-apparaten.
 
 ### <a name="bulk-enrollment"></a>Bulkinschrijving
 
@@ -257,8 +257,8 @@ U moet ten minste één configuratiebeleid per platform maken. U kunt desgewenst
 
 | **Naam van beleid** | **Apparaatplatform** | **Instellingen** | **Doelgroep** |   
 |:---:|:---:|:---:|:---:|
-| Bedrijfseigendom - iOS | iOS | Pincode is vereist, lengte: 6, cloudback-up beperken | Bedrijfsapparaten |                                                           
-| Bedrijfseigendom - Android | Android | Pincode is vereist, lengte: 6, cloudback-up beperken | Bedrijfsapparaten |                                                           
+| Bedrijfseigendom - iOS | iOS | Pincode is vereist, lengte: 6, Cloudback-up beperken | Bedrijfsapparaten |                                                           
+| Bedrijfseigendom - Android | Android | Pincode is vereist, lengte: 6, Cloudback-up beperken | Bedrijfsapparaten |                                                           
 | BYOD - iOS  | iOS | Pincode is vereist, lengte: 4 | BYOD-apparaten |
 | BYOD - Android  | Android | Pincode is vereist, lengte: 4 | BYOD-apparaten |
 
@@ -402,7 +402,7 @@ Voorwaardelijke toegang wordt gebruikt om alleen compatibele apparaten toegang t
 
 Besluit met het oog op onlinetoegang voor welke platformen en gebruikersgroepen beleidsregels voor voorwaardelijke toegang gelden. Daarnaast moet u bepalen of de service-naar-service-connector van Intune moet worden geïnstalleerd of geconfigureerd voor Exchange Online of Exchange On-premises. Meer informatie over het installeren en configureren van de service-naar-service-connectors van Intune: <!---these links are correct--->
 
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+-   [Exchange Online](exchange-service-connector-configure.md)
 
 -   [Exchange On-premises](exchange-connector-install.md)
 

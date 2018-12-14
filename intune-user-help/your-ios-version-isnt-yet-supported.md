@@ -1,11 +1,12 @@
 ---
 title: Uw iOS-versie nog wordt niet ondersteund | Microsoft Docs
-description: ''
+titlesuffix: Microsoft Intune
+description: De versie van het iOS op uw apparaat wordt nog niet ondersteund.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: cae725d0d7d22e1cc485e1b3097605fc0862afb7
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: 86c42b3e2d115906684d069f80a63ed8f9d5c51f
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149892"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031701"
 ---
 # <a name="your-ios-devices-operating-system-version-isnt-yet-supported"></a>De versie van het iOS op uw apparaat wordt nog niet ondersteund
 

@@ -5,31 +5,31 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
-ms.reviewer: angerobe
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 13ffb9e7091b484c59f44802de675b1ab45b1c77
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183465"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977334"
 ---
-# <a name="quickstart-enroll-your-windows-10-device"></a>Snelstartgids: Uw Windows 10-apparaat inschrijven
+# <a name="quickstart-enroll-your-windows-10-device"></a>Quickstart: Uw Windows 10-apparaat registreren
 
 In deze snelstartgids neemt u eerst de rol van de Intune-gebruiker op zich en schrijft u uw Windows 10-apparaat in bij Microsoft Intune. Vervolgens gaat u terug naar Intune om het ingeschreven apparaat te bevestigen.
 
 Door uw apparaten in te schrijven bij Microsoft Intune, krijgen uw Windows 10-apparaten toegang tot beveiligde gegevens van uw organisatie, inclusief e-mail, bestanden en andere bronnen. Dit geldt voor zowel Windows 10 Desktop- als Windows 10 Mobile-apparaten. Door uw apparaten in te schrijven, is deze toegang zowel voor u als voor uw organisatie beveiligd en staan uw werkgegevens los van uw persoonlijke gegevens.
 
 > [!TIP]
-> Ontdek wat er gebeurt wanneer u [uw apparaat inschrijft in Intune](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en wat betekent dat voor de [informatie op het apparaat](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+> Ontdek wat er gebeurt wanneer u [uw apparaat inschrijft in Intune](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows) en wat betekent dat voor de [informatie op het apparaat](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor een gratis proefaccount](free-trial-sign-up.md).
 
@@ -58,7 +58,7 @@ Voordat u uw Windows 10 Desktop inschrijft, moet u controleren welke versie van 
 4. Controleer of de Windows 10-**versie** **1607 of hoger is**.
 
     > [!IMPORTANT]
-    > De stappen die in deze snelstartgids worden weergegeven zijn voor Windows 10-versie **1607 of hoger**. Als uw versie **1511 of lager** is, gaat u verder met [deze stappen](/intune-user-help/enroll-your-w10-device-your-account.md).
+    > De stappen die in deze snelstartgids worden weergegeven zijn voor Windows 10-versie **1607 of hoger**. Als uw versie **1511 of lager** is, gaat u verder met [deze stappen](/intune-user-help/enroll-your-w10-device-your-account).
 
 ## <a name="enroll-windows-10-desktop"></a>Windows 10 Desktop inschrijven
 
@@ -85,7 +85,7 @@ Voordat u uw Windows 10 Desktop inschrijft, moet u controleren welke versie van 
 
    ![Schermopname van nieuw toegevoegde account](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
-    Als u de voorgaande stappen hebt uitgevoerd, maar nog steeds geen toegang hebt tot uw werk- of schoolaccount en -bestanden, volgt u de stappen in [Probleemoplossingsstappen als u Werk of school openen ziet](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
+    Als u de voorgaande stappen hebt uitgevoerd, maar nog steeds geen toegang hebt tot uw werk- of schoolaccount en -bestanden, volgt u de stappen in [Probleemoplossingsstappen als u Werk of school openen ziet](/intune-user-help/troubleshoot-your-windows-10-device-windows#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>De inschrijving van uw apparaat controleren in Intune
 
@@ -97,13 +97,13 @@ Voordat u uw Windows 10 Desktop inschrijft, moet u controleren welke versie van 
 
 ## <a name="clean-up-resources"></a>Resources opschonen
 
-Als u uw Windows-apparaat wilt uitschrijven, raadpleegt u [Uw Windows-apparaat uit beheer verwijderen](/intune-user-help/unenroll-your-device-from-intune-windows.md).
+Als u uw Windows-apparaat wilt uitschrijven, raadpleegt u [Uw Windows-apparaat uit beheer verwijderen](/intune-user-help/unenroll-your-device-from-intune-windows).
 
 ## <a name="next-steps"></a>Volgende stappen
 
-In deze snelstartgids hebt u ontdekt hoe u Windows 10-apparaten in Intune kunt inschrijven. U kunt meer lezen over andere manieren om apparaten voor alle platformen in te schrijven. Zie [Werk gedaan krijgen met beheerde apparaten](/intune-user-help/use-managed-devices-to-get-work-done.md) voor meer informatie over het gebruik van apparaten met Intune.
+In deze snelstartgids hebt u ontdekt hoe u Windows 10-apparaten in Intune kunt inschrijven. U kunt meer lezen over andere manieren om apparaten voor alle platformen in te schrijven. Zie [Werk gedaan krijgen met beheerde apparaten](/intune-user-help/use-managed-devices-to-get-work-done) voor meer informatie over het gebruik van apparaten met Intune.
 
 Als u deze reeks snelstartgidsen voor Intune wilt volgen, kunt u doorgaan met de volgende snelstartgids.
 
 > [!div class="nextstepaction"]
-> [Snelstartgids: Een vereiste wachtwoordlengte instellen voor Android-apparaten](quickstart-set-password-length-android.md)
+> [Quickstart: Een vereiste wachtwoordlengte instellen voor Android-apparaten](quickstart-set-password-length-android.md)

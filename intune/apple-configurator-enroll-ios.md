@@ -1,5 +1,5 @@
 ---
-title: iOS-apparaten inschrijven - Apple Configurator en Configuratieassistent
+title: Registratie van iOS-apparaten - Apple Configurator en Configuratieassistent
 titleSuffix: Microsoft Intune
 description: In dit onderwerp leest u hoe u Apple Configurator kunt gebruiken om iOS-apparaten in bedrijfseigendom in te schrijven met Configuratieassistent.
 keywords: ''
@@ -15,15 +15,15 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: c36a87f6b0bd3e869275f5ac8089cc4fa4926698
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 6a49ee917540c9378f69dc6a025fbe5f8429767c
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180366"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112813"
 ---
-# <a name="enroll-ios-devices-with-apple-configurator"></a>iOS-apparaten inschrijven met Apple Configurator
+# <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Registratie van iOS-apparaten instellen met Apple Configurator
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 

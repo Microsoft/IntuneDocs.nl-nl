@@ -1,11 +1,12 @@
 ---
-title: Welkom bij Ignite
+title: Welkom bij Ignite 2018
+titlesuffix: Microsoft Intune
 description: ''
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/08/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,30 +15,34 @@ ms.reviewer: ''
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: ec5127adcb12bc1196604d27ae2ac6501de03d08
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 5735a2059690655a76425b049eff9e26f5ab8179
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187103"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032568"
 ---
-# <a name="microsoft-intune-documentation-40ignite-special-edition41"></a>Microsoft Intune-documentatie &#40;speciale Ignite-editie&#41;
+# <a name="microsoft-intune-documentation-40ignite-2018-special-edition41"></a>Microsoft Intune-documentatie &#40;speciale Ignite-editie&#41;2018
 Welkom bij Microsoft Ignite 2018! We zijn blij dat u ons hebt gevonden. Bekijk tijdens deze Microsoft Ignite 2018 een aantal Intune-resources die we voor u hebben verzameld.
 
-## <a name="try-our-hands-on-labs-at-ignite"></a>Probeer onze praktijksessies tijdens Ignite!
-- **HOL3004**: beveilig uw bedrijfsgegevens op mobiele apparaten met Microsoft 365 en Microsoft Intune, inclusief voorwaardelijke toegang en Windows Defender Advanced Threat Protection (ATP)
-- **WRK3007**: ga aan de slag met gemeenschappelijk beheer met behulp van System Center Configuration Manager en Intune
+## <a name="try-our-hands-on-labs-at-ignite-2018"></a>Probeer onze praktijksessies tijdens Ignite 2018!
+- **HOL3004**: Beveilig uw bedrijfsgegevens op mobiele apparaten met Microsoft 365 en Microsoft Intune, inclusief voorwaardelijke toegang en Windows Defender Advanced Threat Protection (ATP)
+- **WRK3007**: Ga aan de slag met gemeenschappelijk beheer met behulp van System Center Configuration Manager en Intune
 
 ## <a name="quickstarts"></a>Snelstartgidsen
 We hebben een aantal nieuwe snelstartinstructies bijgewerkt en gemaakt. Voltooi de volgende snelstartinstructies (in de opgegeven volgorde) om aan de slag te gaan met Intune en voltooi een aantal algemene taken in een zo kort mogelijke tijd.
 
-- [Intune gratis proberen](free-trial-sign-up.md): maak een gratis abonnement om Intune in een testomgeving te proberen.    
-- [Een gebruiker maken](quickstart-create-user.md): maak een gebruiker en wijs vervolgens een licentie aan deze gebruiker toe.
-- [Een groep maken](quickstart-create-group.md): gebruik Intune om een groep te maken op basis van een bestaande gebruiker.
-- [Beleid toewijzen](get-started-policies.md): maak een apparaatnalevingsbeleid voor een Windows 10-apparaat en wijs een groep aan het beleid toe.
-- [Automatische inschrijving instellen](quickstart-setup-auto-enrollment.md): stel Microsoft Intune zo in dat apparaten automatisch worden ingeschreven wanneer bepaalde gebruikers zich aanmelden bij Windows 10-apparaten.
-- [Een aangepaste rol maken en toewijzen](quickstart-create-custom-role.md): maak een aangepaste rol en wijs deze toe met specifieke machtigingen voor de afdeling Beveiligingsactiviteiten. 
+- [Intune gratis proberen](free-trial-sign-up.md): Maak een gratis abonnement om Intune te proberen in een testomgeving.    
+- [Een gebruiker maken](quickstart-create-user.md): Maak een gebruiker en wijs vervolgens een licentie aan deze gebruiker toe.
+- [Een groep maken](quickstart-create-group.md): Gebruik Intune om een groep te maken op basis van een bestaande gebruiker.
+- [Automatische inschrijving instellen](quickstart-setup-auto-enrollment.md): Stel Microsoft Intune zo in dat apparaten automatisch worden ingeschreven wanneer bepaalde gebruikers zich aanmelden bij Windows 10-apparaten.
+- [Uw Windows 10-apparaat inschrijven](quickstart-enroll-windows-device.md): Schrijf uw Windows 10-apparaat in door de rol van een Intune-gebruiker aan te nemen, en ga vervolgens terug naar Intune om het ingeschreven apparaat te bevestigen.
+- [Een nalevingsbeleid voor apparaten maken](quickstart-set-password-length-android.md): Maak een nalevingsbeleid voor apparaten om de gebruikers te verplichten een wachtwoord van een voorgeschreven lengte in te voeren om toegang te krijgen tot informatie op hun Android-apparaten.
+- [Meldingen verzenden naar niet-compatibele apparaten](quickstart-send-notification.md): Maak een meldingsbericht. Voeg een niet-nalevingsbeleid toe en wijs het toe.
+- [Een client-app toevoegen en toewijzen](quickstart-add-assign-app.md): Voeg een client-app toe en wijs het toe aan het personeel van uw bedrijf.
+- [Een beveiligingsbeleid voor apps maken en toewijzen](quickstart-create-assign-app-policy.md): Maak een app-beveiligingsbeleid en wijs het toe aan een client-app op een apparaat van een eindgebruiker. 
+- [Een aangepaste rol maken en toewijzen](quickstart-create-custom-role.md): Maak een aangepaste rol en wijs deze toe met specifieke machtigingen voor een beveiligingsafdeling. 
 - [Een e-mail-apparaatprofiel voor iOS maken](quickstart-email-profile.md): maak een e-mailapparaatprofiel voor iOS-apparaten.
 
 ## <a name="learn"></a>Kennismaken
@@ -46,7 +51,7 @@ We hebben een aantal nieuwe snelstartinstructies bijgewerkt en gemaakt. Voltooi 
 
 ## <a name="contribute-to-docs"></a>Bijdragen aan documenten
 - [Bijdrager aan Intune-documenten worden](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/README.md)  
-- [Gebruikers met de meeste bijdragen aan Intune van deze maand](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-09-01&to=2018-11-30&type=c)  
+- [Gebruikers met de meeste bijdragen aan Intune](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-10-01&to=2019-12-31&type=c)  
 
 ## <a name="start-using-intune"></a>Beginnen met Intune
 - [Licenties met Intune](licenses.md)

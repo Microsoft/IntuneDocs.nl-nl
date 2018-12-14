@@ -2,7 +2,7 @@
 
 ### <a name="apple"></a>Apple
 - Apple iOS 10.0 en hoger
-- Mac OS X 10.11 en hoger (in december 2018, de ondersteunde versie wordt later gewijzigd in 10.12 en hoger)
+- Mac OS X 10.12 en hoger
 
 ### <a name="google"></a>Google
 - Android 4.4 en hoger (inclusief Samsung Knox Standard 4.4 en hoger)
@@ -26,8 +26,8 @@
 - Windows Phone 8.1, Windows 8.1 RT en pc's met Windows 8.1 (Sustaining modus)
 
 > [!NOTE]
-> Intune kan niet worden gebruikt voor het beheren van Windows Server-besturingssystemen.
+> Intune kan niet worden gebruikt voor het beheren van Windows Server-besturingssystemen. Sommige functies van Intune worden niet ondersteund in Home-SKU
 
-Klanten met Enterprise Management + Security (EMS) kunnen ook [Azure Active Directory (Azure AD) gebruiken voor het registreren van Windows 10-apparaten](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
+Klanten met Enterprise Management + Security (EMS) kunnen ook [Azure Active Directory (Azure AD) gebruiken voor het registreren van Windows 10-apparaten](/intune/windows-enroll.md).
 
 
