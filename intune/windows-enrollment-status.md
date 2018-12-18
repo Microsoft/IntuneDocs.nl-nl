@@ -1,7 +1,7 @@
 ---
 title: Een pagina voor de status van de inschrijving instellen
 titleSuffix: Microsoft Intune
-description: Heet de gebruikers welkom die Windows 10-apparaten inschrijven.
+description: Stel een begroetingspagina in voor gebruikers die Windows 10-apparaten registreren.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729038"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032092"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Een pagina voor de status van de inschrijving instellen
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Tijdens de installatie van het apparaat wordt op de pagina Status van de registratie informatie over de installatie weergegeven op het apparaat. Sommige toepassingen, profielen en certificaten zijn mogelijk niet geïnstalleerd op het moment dat een gebruiker de out-of-box-registratie op het apparaat voltooit. Een pagina Status van de registratie is handig voor gebruikers om de status van hun apparaat tijdens de installatie van het apparaat te bekijken. U kunt voor de pagina Status van de registratie meerdere profielen maken en deze toepassen op verschillende groepen. Profielen kunnen worden ingesteld op:
+Tijdens de installatie van het apparaat met Intune wordt op de pagina Status van de registratie informatie over de installatie weergegeven op het apparaat. Sommige toepassingen, profielen en certificaten zijn mogelijk niet geïnstalleerd op het moment dat een gebruiker de out-of-box-registratie op het apparaat voltooit. Een pagina Status van de registratie is handig voor gebruikers om de status van hun apparaat tijdens de installatie van het apparaat te bekijken. U kunt voor de pagina Status van de registratie meerdere profielen maken en deze toepassen op verschillende groepen. Profielen kunnen worden ingesteld op:
 - De voortgang van de installatie weergeven.
 - Gebruik blokkeren totdat de installatie is voltooid.
 - Opgeven wat een gebruiker kan doen als de installatie van het apparaat mislukt.

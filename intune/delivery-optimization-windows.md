@@ -5,34 +5,36 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36cfb5ac05b2d69b5c7349f4ebc6054848a08fc8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52730399"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977266"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Delivery Optimization-instellingen voor Windows 10-apparaten (en nieuwer) in Microsoft Intune
 
-In dit artikel worden alle Delivery Optimization-instellingen vermeld en beschreven die u kunt configureren voor Windows 10-apparaten. Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel, en vervolgens toegewezen aan of geïmplementeerd op uw apparaten met behulp van Microsoft Intune.
+In dit artikel worden alle Delivery Optimization-instellingen vermeld en beschreven die u kunt configureren voor Windows 10-apparaten. Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel, en vervolgens toegewezen aan of geïmplementeerd op uw apparaten met behulp van Microsoft Intune. 
+
+[Delivery Optimization-updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) is een fantastische bron voor meer informatie over Delivery Optimization in Windows 10.
 
 ## <a name="settings"></a>Instellingen
 
-**Delivery Optimization-downloadmodus**: kies hoe updates worden geleverd bij uw apparaten. Uw opties zijn:
+**Delivery Optimization-downloadmodus**: Kies hoe updates worden afgeleverd op uw apparaten. Uw opties zijn:
 
-- **Niet geconfigureerd**: eindgebruikers werken hun apparaten op hun eigen manier bij, bijvoorbeeld via de instellingen voor **Windows Updates** of **Delivery Optimization** die beschikbaar zijn met het besturingssysteem.
-- **Alleen HTTP, geen peering**: ontvang alleen updates via internet. Ontvang geen updates van andere computers in het netwerk (peering of peer-to-peer genoemd).
-- **HTTP met peers achter hetzelfde NAT HTTP met peers in een privégroep**: ontvang updates via internet en van andere computers in het netwerk. Peering komt voor op apparaten op dezelfde Active Directory-site (indien deze bestaat) of in hetzelfde domein. Als deze optie is geselecteerd, vindt peering plaats voor de IP-adressen van uw NAT’s (Network Address Translation).
+- **Niet geconfigureerd**: eindgebruikers werken hun apparaten op hun eigen manier bij, bijvoorbeeld via de instellingen voor **Windows Updates** of **Delivery Optimization** die beschikbaar zijn in het besturingssysteem.
+- **Alleen HTTP, geen peering**: ontvang updates alleen via internet. Ontvang geen updates van andere computers in het netwerk (peering of peer-to-peer genoemd).
+- **HTTP met peers achter hetzelfde NAT HTTP en met peers in een privégroep**: ontvang updates via internet en van andere computers in het netwerk. Peering komt voor op apparaten op dezelfde Active Directory-site (indien deze bestaat) of in hetzelfde domein. Als deze optie is geselecteerd, vindt peering plaats voor de IP-adressen van uw NAT’s (Network Address Translation).
 - **HTTP met internetpeering**: ontvang updates via internet en van andere computers in het netwerk.
-- **Eenvoudige downloadmodus zonder peering**: ontvangt updates via internet, rechtstreeks van de update-eigenaar, bijvoorbeeld Microsoft. Er wordt geen verbinding gemaakt met de Delivery Optimization-cloudservices.
-- **Bypass-modus**: gebruik BITS-bandbreedtebeperking (Background Intelligent Transfer Service) om updates op te halen. Gebruik Delivery Optimization niet.
+- **Eenvoudige downloadmodus zonder peering**: ontvang updates via internet, rechtstreeks van de update-eigenaar, bijvoorbeeld Microsoft. Er wordt geen verbinding gemaakt met de Delivery Optimization-cloudservices.
+- **Bypass-modus**: gebruik BITS (Background Intelligent Transfer Service) om updates op te halen. Gebruik Delivery Optimization niet.
 
 ## <a name="move-from-existing-update-rings-to-delivery-optimization"></a>Verplaatsen van bestaande updateringen naar Delivery Optimization
 
