@@ -15,20 +15,20 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 3a0f9a55fd3d5db8b36db09f4a83d5c09db29725
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: af767ce47b9382012f01de48ccd280c29ccfc27c
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829101"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112854"
 ---
-# <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows-apparaten inschrijven met Windows Autopilot  
-Windows Autopilot maakt het makkelijker om apparaten te registreren. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
+# <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
+Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
 
 
 ## <a name="prerequisites"></a>Vereisten
-- [Automatische inschrijving bij Windows is ingeschakeld](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
+- [Automatische inschrijving bij Windows is ingeschakeld](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium-abonnement](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>Het CSV-bestand verkrijgen voor het importeren in InTune
@@ -78,17 +78,17 @@ Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren.
 2. Geef een **naam** en desgewenst een **beschrijving** op.
 3. Als u wilt dat alle apparaten in de toegewezen groepen automatisch converteren naar Autopilot, stelt u **Alle doelapparaten converteren naar Autopilot** in op **Ja**. Alle niet-Autopilot-apparaten in toegewezen groepen worden geregistreerd met de Autopilot-implementatieservice. Het kan 48 uur duren voordat de registratie is verwerkt. Wanneer het apparaat wordt uitgeschreven en opnieuw wordt ingesteld, wordt het door Autopilot geregistreerd. Nadat een apparaat op deze manier is geregistreerd, wordt het apparaat niet meer uit de Autopilot-implementatieservice verwijderd door deze optie uit te schakelen of de profieltoewijzing te verwijderen. In plaats daarvan moet u [het apparaat rechtstreeks verwijderen](enrollment-autopilot.md#delete-autopilot-devices).
 4. Voor de **implementatiemodus** kiest u een van deze twee opties:
-    - **Op basis van gebruiker**: apparaten met dit profiel worden gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn gebruikersreferenties vereist om het apparaat in te kunnen schrijven.
+    - **Op basis van gebruiker**: Apparaten met dit profiel worden gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn gebruikersreferenties vereist om het apparaat in te kunnen schrijven.
     - **Zelf-implementerend (preview)**: (hiervoor is de meest recente versie van [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/) vereist) apparaten met dit profiel worden niet gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn geen gebruikersreferenties vereist om het apparaat te kunnen registreren.
 5. In het vak **Toevoegen aan Azure AD als** kiest u **Toegevoegd aan Azure AD**.
 6. Kies **Out-Of-Box Experience (OOBE)**, configureer de volgende opties en klik vervolgens op **Opslaan**:
-    - **Taal (regio)**\*: kies de taal die u voor het apparaat wilt gebruiken. Deze optie is alleen beschikbaar als u **Zelf-implementerend** hebt gekozen als **implementatiemodus**.
-    - **Toetsenbord automatisch configureren**\*: als er een **Taal (regio)** is geselecteerd,kiest u **Ja** en slaat u de toetsenbordselectiepagina over. Deze optie is alleen beschikbaar als u **Zelf-implementerend** hebt gekozen als **implementatiemodus**.
-    - **Gebruiksrechtovereenkomst (EULA)**: (Windows 10, versie 1709 of nieuwer) kies of u de gebruiksrechtovereenkomst wilt weergeven voor gebruikers.
+    - **Taal (regio)**\*: Kies de taal die u voor het apparaat wilt gebruiken. Deze optie is alleen beschikbaar als u **Zelf-implementerend** hebt gekozen als **implementatiemodus**.
+    - **Toetsenbord automatisch configureren**\*: Als er een **Taal (regio)** is geselecteerd, kiest u **Ja** om de toetsenbordselectiepagina over te slaan. Deze optie is alleen beschikbaar als u **Zelf-implementerend** hebt gekozen als **implementatiemodus**.
+    - **Gebruiksrechtovereenkomst (EULA)**: (Windows 10, versie 1709 of hoger) Kies of u de gebruiksrechtovereenkomst wilt weergeven aan gebruikers.
     - **Privacy-instellingen**: kies of u de privacyinstellingen wilt weergeven voor de gebruikers.
     - **Opties voor account wijzigen verbergen (alleen Windows Insider)**: kies **Verbergen** om te voorkomen dat opties voor account wijzigen worden weergegeven op de aanmeld- en domeinfoutpagina's van het bedrijf. Voor deze optie is vereist dat er een [aangepaste huisstijl wordt geconfigureerd in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
-    - **Gebruikersaccounttype**: kies of het gebruikersaccounttype **Beheerder** of **Standaard**gebruiker is.
-    - **Sjabloon computernaam toepassen (alleen Windows Insider)**: kies **Ja** om een sjabloon te maken dat kan worden gebruikt bij het benoemen van een apparaat tijdens de registratie. Namen moeten 15 tekens of minder bevatten, en mogen letters, cijfers en afbreekstreepjes bevatten. Namen mogen niet alleen uit getallen bestaan. Gebruik de [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) om het serienummer toe te voegen van specifieke hardware. U kunt ook de optie [% RAND: x % macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) gebruiken om een willekeurige tekenreeks van getallen toe te voegen, waarbij x gelijk is aan het aantal toe te voegen cijfers. 
+    - **Gebruikersaccounttype**: kies het gebruikersaccounttype (**Beheerder** of **Standaard**gebruiker).
+    - **Sjabloon computernaam toepassen (alleen Windows Insider)**: kies **Ja** om een sjabloon te maken die tijdens de registratie kan worden gebruikt bij de naamgeving van een apparaat. Namen moeten 15 tekens of minder bevatten, en mogen letters, cijfers en afbreekstreepjes bevatten. Namen mogen niet alleen uit getallen bestaan. Gebruik de [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) om het serienummer toe te voegen van specifieke hardware. U kunt ook de optie [% RAND: x % macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) gebruiken om een willekeurige tekenreeks van getallen toe te voegen, waarbij x gelijk is aan het aantal toe te voegen cijfers. 
 
 6. Kies op **Maken** om het profiel te maken. Het Autopilot-implementatieprofiel is nu klaar om te worden toegewezen aan apparaten.
 
@@ -125,7 +125,7 @@ Als u waarschuwingen over niet-toegewezen apparaten wilt zien, kiest u in [Intun
 
 U kunt een gebruiker toewijzen aan een specifiek Autopilot-apparaat. Deze toewijzing wordt vooraf ingevuld voor een gebruiker uit Azure Active Directory op de aanmeldingspagina in de [huisstijl van het bedrijf](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) tijdens de installatie van Windows. Ook kunt u de naam van een aangepast welkomstbericht instellen. Hiermee wordt Windows-aanmelding niet vooraf ingevuld of gewijzigd. Alleen gelicentieerde gebruikers van Intune kunnen op deze manier worden toegewezen.
 
-Voorwaarden: de Azure Active Directory-bedrijfsportal is geconfigureerd, evenals de meest recente [Windows 10 Insider Preview-build](https://docs.microsoft.com/windows-insider/at-work-pro/).
+Vereisten: Azure Active Directory Bedrijfsportal is geconfigureerd, evenals de meest recente [Windows 10 Insider Preview-build](https://docs.microsoft.com/windows-insider/at-work-pro/).
 
 1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > kies het apparaat > **Gebruiker toewijzen**.
 
