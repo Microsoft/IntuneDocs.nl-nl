@@ -39,7 +39,7 @@ Uw organisatie heeft mogelijk hun apparaten aangeschaft via een programma met de
 Voer de volgende stappen uit om uw macOS-apparaat voor beheer in te schrijven. Als u uw eigen apparaat gebruikt in plaats van een door de organisatie verstrekt apparaat, volgt u de stappen voor [persoonlijke en bring-your-own-apparaten](enroll-your-device-in-intune-macos-cp.md).  
 
 1. Schakel uw macOS-apparaat in. 
-2. Kies uw land en klik op **Doorgaan**.  
+2. Kies uw land/regio en klik op **Doorgaan**.  
 
    ![Schermafbeelding van het welkomstscherm van de configuratieassistent op het macOS-apparaat waarop een lijst met selecteerbare talen wordt weergegeven.](./media/macos-dep-welcome-1808.png)   
 3. Kies een toetsenbordindeling. De lijst bevat een of meer opties op basis van het geselecteerde land. Als u alle indelingsopties wilt weergeven, ongeacht het geselecteerde land, klikt u op **Alles weergeven**. Wanneer u klaar bent, klikt u op **Doorgaan**.  

@@ -50,7 +50,7 @@ Android Enterprise (voorheen bekend als Android for Work) ondersteunt het opneme
 ### <a name="export-all-devices-into-csv-files-in-ie-microsoft-edge-or-chrome----2258071---"></a>Alle apparaten exporteren naar CSV-bestanden in Internet Explorer, Microsoft Edge of Chrome <!-- 2258071 -->
 In **Apparaten** > **Alle apparaten** kunt u de apparaten **Exporteren** naar een lijst met de CSV-indeling. Gebruikers van Internet Explorer (IE) met meer dan 10.000 apparaten kunnen hun apparaten exporteren naar meerdere bestanden. Elk bestand bevat maximaal 10.000 apparaten.
 
-Gebruikers van Edge en Chrome met meer dan 30.000 apparaten kunnen hun apparaten exporteren naar meerdere bestanden. Elk bestand bevat maximaal 30.000 apparaten.
+Gebruikers van Microsoft Edge en Chrome met meer dan 30.000 apparaten kunnen hun apparaten exporteren naar meerdere bestanden. Elk bestand bevat maximaal 30.000 apparaten.
 
 [Apparaten beheren](device-management.md) biedt meer details over wat u kunt doen met apparaten die u beheert.
 

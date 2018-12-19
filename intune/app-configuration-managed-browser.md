@@ -122,7 +122,7 @@ Voor eenmalige aanmelding moet uw apparaat zijn geregistreerd door de Microsoft 
 4.  Kies op de blade **App-configuratiebeleid** **Toevoegen**.
 5.  Geef op de blade **Configuratiebeleid toevoegen** een **naam** en een optionele **beschrijving** op voor de app-configuratie-instellingen.
 6.  Kies voor **Type apparaatregistratie** **Beheerde apps**.
-7.  Kies **Vereiste app selecteren** en kies vervolgens op de blade **Doel-apps** **Managed Browser** en/of **Edge** voor iOS, voor Android of voor beide besturingssystemen.
+7.  Kies **Vereiste app selecteren** en kies vervolgens op de blade **Doel-apps** **Managed Browser** en/of **Microsoft Edge** voor iOS, voor Android of voor beide besturingssystemen.
 8.  Kies **OK** om terug te keren naar de blade **Configuratiebeleid toevoegen**.
 9.  Kies **Configuratie-instellingen**. Op de blade **Configuratie** definieert u sleutel- en waardeparen voor configuraties voor Managed Browser. Gebruik de secties verderop in dit artikel voor meer informatie over de verschillende sleutel- en waardeparen die u kunt definiëren.
 10. Kies **OK** als u klaar bent.
