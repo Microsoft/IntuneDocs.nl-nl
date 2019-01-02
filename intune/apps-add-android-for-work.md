@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c7d5d29df0f91a4cff1060cd10a5d2355e196e39
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180134"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305927"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Apps toewijzen aan apparaten met een Android-werkprofiel met Intune
 
@@ -56,7 +56,7 @@ Zorg ervoor dat u Intune en Android-werkprofielen hebt geconfigureerd voor samen
 
     ![Opties om nieuwe machtigingsaanvragen voor de app te verwerken](media/approve-app-settings.png)
 
-    De app is goedgekeurd en wordt weergegeven in uw IT-beheerconsole. U kunt vervolgens de [Android-werkprofiel-app synchroniseren met Intune](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
+    De app is goedgekeurd en wordt weergegeven in uw IT-beheerconsole. U kunt vervolgens de [Android-werkprofiel-app synchroniseren met Intune](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune). 
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Een beheerde Google Play Store-app met Intune synchroniseren
 
@@ -84,7 +84,7 @@ Wanneer een app-ontwikkelaar machtigingen bijwerkt met een nieuwe versie van de 
 
 Bezoek met enige regelmaat de beheerde Google Play-console om te controleren op nieuwe machtigingen. U kunt de Google Play zodanig configureren dat u of anderen een e-mailbericht ontvangen wanneer nieuwe machtigingen voor een goedgekeurde app zijn vereist. Als u een app toewijst en u ziet dat deze niet is geïnstalleerd op apparaten, controleert u aan de hand van de volgende stappen op nieuwe machtigingen:
 
-1. Ga naar [Google Play](http://play.google.com/work).
+1. Ga naar [Google Play](https://play.google.com/work).
 2. Meld u aan met het Google-account dat u gebruikt om apps te publiceren en goed te keuren.
 3. Selecteer het tabblad **Updates** en controleer of er apps kunnen worden bijgewerkt.  
     Voor alle vermelde apps zijn nieuwe machtigingen vereist. De apps worden pas toegewezen wanneer de machtigingen zijn toegepast.

@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 470bafba548c38870e57a545c4514459dde219b4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 76f155d84a3f447cf067970c614d2bd7fd4f1798
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189386"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305893"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Uw Intune Data Warehouse-accountgegevens verplaatsen 
 
@@ -81,4 +81,4 @@ Klant X vraagt een verplaatsing van het account aan, te beginnen op 06/1/2018. D
 ## <a name="next-steps"></a>Volgende stappen
 
  - Ontdek [wat er elke week nieuw is in Intune](whats-new.md). U vindt hier ook informatie over toekomstige wijzigingen, belangrijke kennisgevingen betreffende de service en informatie over oudere releases.
- - Lees het [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882).
+ - Lees het [Microsoft Intune-blog](https://go.microsoft.com/fwlink/?LinkID=273882).
