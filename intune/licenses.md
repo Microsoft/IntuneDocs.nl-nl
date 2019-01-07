@@ -15,12 +15,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: d6020207ab32a4e7c18f59f74caeedc9e4f17bf4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 90398729a99a10667d87646a4beaaaf8a7f6201f
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031684"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266916"
 ---
 # <a name="licenses-that-include-intune"></a>Licenties met Intune
 
@@ -39,10 +39,9 @@ In de volgende tabel ziet u welke versie van Intune beschikbaar is in elke licen
 | Microsoft 365 E3 | Intune | [Meer informatie](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 E5 | Intune | [Meer informatie](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 F1 | Intune | [Meer informatie](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Office 365 F1 | Geen | [Meer informatie](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
 | Microsoft 365 Business | Intune | [Meer informatie](https://www.microsoft.com/en-us/microsoft-365/business) |
-| Office 365 Business Premium | Geen | [Meer informatie](https://www.microsoft.com/en-us/microsoft-365/business) |
-| Azure Active Directory Free, Basic, Premium P1, Premium P2 | Geen | [Meer informatie](https://azure.microsoft.com/pricing/details/active-directory/) |
+
+Intune is niet opgenomen in licenties die niet in deze lijst staan.
 
 Een juiste licentie is vereist als een gebruiker direct of indirect gebruikmaakt van een functie van de licentie.
 

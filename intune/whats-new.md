@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/30/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 06031b8085e50caa2092287c97b3eab0ead366ee
-ms.sourcegitcommit: 5e4c7da8ce62d5a5720316ef4068c1920f8f5b67
+ms.openlocfilehash: 3f0283b07c4efd03800f21aadba2cc53beffec68
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53200603"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553687"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -45,11 +45,20 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook geplande 
 
 ## <a name="week-of-december-10-2018"></a>Week van 10 december 2018
 
-### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>Microsoft AutoUpdate versie 4.50 vereist voor macOS-apparaten <!-- 3503442 -->
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="updates-for-application-transport-security----748318---"></a>Updates voor Application Transport Security <!-- 748318 -->
+
+Microsoft Intune ondersteunt Transport Layer Security (TLS) 1.2+ voor de best mogelijke codering, om ervoor te zorgen dat Intune standaard veiliger is en ook is afgestemd op andere Microsoft-services, zoals Microsoft Office 365. Om aan deze eis te voldoen, dwingen de iOS- en macOS-bedrijfsportals de bijgewerkte Application Transport Security (ATS)-eisen van Apple af, die ook TLS 1.2+ vereisen. ATS wordt gebruikt om betere beveiliging af te dwingen voor alle app-communicatie die verloopt via HTTPS. Deze wijziging heeft gevolgen voor Intune-klanten die de bedrijfsportal-apps gebruiken op iOS en macOS. Zie de [Intune-ondersteuningsblog](https://aka.ms/compportalats)voor meer informatie.
+
+#### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>De Intune App-SDK ondersteunt 256-bits versleutelingssleutels <!-- 1832174 -->
+De Intune App-SDK voor Android gebruikt nu 256-bits versleutelingssleutels wanneer versleuteling is ingeschakeld door app-beveiligingsbeleid. De SDK biedt doorgaande ondersteuning voor 128-bits sleutels voor compatibiliteit met inhoud en apps die gebruikmaken van oudere SDK-versies.
+
+### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>Microsoft AutoUpdate versie 4.5.0 vereist voor macOS-apparaten <!-- 3503442 -->
 Als u updates voor de app Bedrijfsportal en andere Office-toepassingen wilt blijven ontvangen, moeten macOS-apparaten die worden beheerd door Intune, upgraden naar Microsoft AutoUpdate 4.5.0. Gebruikers hebben deze versie mogelijk al voor hun Office-apps.
 
 ### <a name="intune-requires-macos-1012-or-later----2827778---"></a>Voor Intune is macOS 10.12 of hoger vereist <!-- 2827778 -->
-Voor Intune is nu macOS versie 10.12 of hoger vereist. Apparaten met eerdere versies van macOS kunnen de app Bedrijfsportal niet gebruiken voor registratie bij Intune. Gebruikers die ondersteuning en nieuwe functies willen blijven ontvangen, moeten hun apparaat upgraden naar macOS 10.12 of hoger en de app Bedrijfsportal upgraden naar de nieuwste versie.
+Voor Intune is nu macOS versie 10.12 of hoger vereist. Apparaten met eerdere versies van macOS kunnen de app Bedrijfsportal niet gebruiken voor registratie bij Intune. Gebruikers die ondersteuning en nieuwe functies willen krijgen, moeten hun apparaat upgraden naar macOS 10.12 of hoger en de bedrijfsportal-app naar de nieuwste versie upgraden.
 
 ## <a name="week-of-november-26-2018"></a>Week van 26 november 2018
 
@@ -103,6 +112,23 @@ Raadpleeg het nalevingsbeleid van [iOS](compliance-policy-create-ios.md#device-h
 Delivery Optimization is een nieuw configuratieprofiel voor Windows 10 en hoger. Deze functie biedt een meer gestroomlijnde ervaring om softwareupdates op apparaten in uw organisatie te installeren. Deze update helpt u ook om met behulp van een configuratieprofiel de instellingen in nieuwe en bestaande update-ringen te implementeren.
 Raadpleeg [Delivery Optimization-instellingen voor Windows 10 (en hoger)](delivery-optimization-windows.md) om een Delivery Optimization-configuratieprofiel te configureren.
 
+#### <a name="new-device-restriction-settings-added-to-ios-and-macos-devices----2827760---"></a>Nieuwe apparaatbeperkingsinstellingen voor iOS en macOS-apparaten toegevoegd <!-- 2827760 -->
+Deze update bevat nieuwe instellingen voor uw iOS- en macOS-apparaten die zijn uitgebracht met iOS 12:
+
+**iOS-instellingen**: 
+- Algemeen: verwijdering van apps blokkeren (alleen onder supervisie)
+- Algemeen: beperkte USB-modus blokkeren (alleen onder supervisie)
+- Algemeen: automatisch datum en tijd afdwingen (alleen onder supervisie)
+- Wachtwoord: automatisch wachtwoorden doorvoeren blokkeren (alleen onder supervisie)
+- Wachtwoord: aanvragen voor wachtwoordnabijheid blokkeren (alleen onder supervisie)
+- Wachtwoord: wachtwoorden delen blokkeren (alleen onder supervisie)
+
+**macOS-instellingen**: 
+- Wachtwoord: automatisch wachtwoorden doorvoeren blokkeren
+- Wachtwoord: aanvragen voor wachtwoordnabijheid blokkeren
+- Wachtwoord: wachtwoorden delen blokkeren
+
+Voor meer informatie over deze instellingen, zie apparaatbeperkingsinstellingen voor [iOS](device-restrictions-ios.md) en [macOS](device-restrictions-macos.md).
 
 ### <a name="device-enrollment"></a>Apparaatinschrijving
 
@@ -700,7 +726,7 @@ Als Microsoft Intune-beheerder kunt u alle licenties intrekken voor een geselect
 #### <a name="updates-to-out-of-compliance-messages-in-company-portal-app----1832222---"></a>Updates in niet-compatibiliteitsberichten in de bedrijfsportal-app <!-- 1832222 -->
 De berichten die apparaatgebruikers zien wanneer een apparaat niet compatibel is, zijn herzien. De berichten behouden de oorspronkelijke betekenis, maar zijn bijgewerkt met toegankelijkere taal en minder technisch jargon. Ook zijn koppelingen naar documentatie en herstelstappen vernieuwd, zodat deze bijgewerkt zijn.
 De volgende tekst is een voorbeeld van tekst voor en na de update:
-- **Voor**: *dit apparaat heeft geen contact opgenomen met de Intune-service binnen de periode die is ingesteld door de IT-beheerder. Open de bedrijfsportal-app op het apparaat en klik op de knop Naleving controleren om dit probleem op te lossen.*
+- **Voor**: *Dit apparaat heeft geen contact opgenomen met de Intune-service binnen de periode die is ingesteld door de IT-beheerder. Open de bedrijfsportal-app op het apparaat en klik op de knop Naleving controleren om dit probleem op te lossen.*
 - **Na**: *Dit apparaat is al een tijdje niet ingecheckt bij uw organisatie. Open de bedrijfsportal-app op het apparaat en tik op Instellingen controleren voor uw apparaat om opnieuw verbinding te maken*.
 
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>iOS VPP-app-licentie intrekken <!-- 1863797 -->
@@ -733,8 +759,8 @@ De volgende nieuwe statussen zijn toegevoegd in **Apparaatcompatibiliteit** > **
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>Apparaatcompatibiliteit ondersteunt antivirusoplossingen van derden <!-- 2325484 -->
 Wanneer u een nalevingsbeleid voor apparaten maakt (**Apparaatcompatibiliteit** > **Beleid** > **Beleid maken** > **Platform: Windows 10 en hoger** > **Instellingen** > **Systeembeveiliging**), er zijn nieuwe opties voor **[Apparaatbeveiliging](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)**: 
-- **Antivirus**: als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antivirusoplossingen die zijn geregistreerd bij Azure Security Center, zoals Symantec en Windows Defender. 
-- **Antispyware**: als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antivirusoplossingen die zijn geregistreerd bij Azure Security Center en Windows Defender. 
+- **Antivirus**: Als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antivirusoplossingen die zijn geregistreerd bij Microsoft Beveiligingscentrum, zoals Symantec en Windows Defender. 
+- **AntiSpyware**: Als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antivirusoplossingen die zijn geregistreerd bij het Microsoft Beveiligingscentrum, zoals Symantec en Windows Defender. 
 
 Van toepassing op: Windows 10 en hoger 
 
@@ -970,7 +996,7 @@ In deze update, [Windows Defender Credential Guard](https://docs.microsoft.com/w
 
 De volgende afhankelijke technologieën worden automatisch ingeschakeld bij het configureren van Credential Guard: 
 
-  - **Beveiliging op basis van virtualisatie (VBS)**: met deze optie wordt Beveiliging op basis van virtualisatie (VBS) ingeschakeld tijdens de volgende keer opnieuw opstarten. Beveiliging op basis van virtualisatie maakt gebruik van Windows Hypervisor om ondersteuning te bieden voor beveiligingsservices. Beveiligd opstarten is vereist.
+  - **Beveiliging op basis van virtualisatie (VBS)**: met deze optie wordt Beveiliging op basis van virtualisatie (VBS) ingeschakeld bij de volgende keer opnieuw opstarten. Beveiliging op basis van virtualisatie maakt gebruik van Windows Hypervisor om ondersteuning te bieden voor beveiligingsservices. Beveiligd opstarten is vereist.
   - **Beveiligd opstarten met DMA (Direct Memory Access)**: met deze optie schakelt u VBS met Beveiligd opstarten en directe geheugentoegang in. Voor DMA-beveiliging is hardwareondersteuning vereist. Deze wordt alleen ingeschakeld op apparaten die juist zijn geconfigureerd. 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>Een aangepaste onderwerpnaam gebruiken in een SCEP-certificaat <!-- 2064190 -->
@@ -1143,37 +1169,8 @@ U hoeft niets te doen terwijl wij uw beleidstoewijzingen verplaatsen. Als u mome
 
 Als u op dit moment beleidsregels toewijst aan de Azure AD-groepen die hierboven in Intune op Azure zijn genoemd, kunt u deze in plaats daarvan gaan toewijzen aan de groepen Alle gebruikers en Alle apparaten in de Intune for Education-console. Wanneer u ziet dat de naam van Azure AD-groepen is gewijzigd in Verouderd in de console, stopt u met het toewijzen van beleidsregels in Azure AD. Als u de hernoemde groepen momenteel voor geen enkel doel gebruikt, moet u ze verwijderen.
 
-
-### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Geplande wijziging: Intune stapt in december over naar ondersteuning voor macOS 10.12 en hoger <!--2970975--> 
-
-Apple heeft onlangs macOS 10.14 uitgebracht. Dienovereenkomstig stapt Intune in december 2018 over naar ondersteuning voor macOS 10.12 en hoger. 
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-
-Vanaf december kunnen eindgebruikers op apparaten met macOS 10.11 en eerder geen gebruik meer maken van de bedrijfsportal om zich in te schrijven in Intune. Ze moeten hun apparaat upgraden naar macOS 10.12 of hoger en de bedrijfsportal-app upgraden naar de nieuwste versie om ondersteuning en nieuwe functies te blijven ontvangen. 
-
-macOS-versies 10.12 en hoger worden momenteel ondersteund op: 
-- MacBook (eind 2009 of nieuwer). 
-- iMac (eind 2009 of nieuwer)
-- MacBook Air (late 2010 of nieuwer).  
-- MacBook Pro (eind 2010 of nieuwer). 
-- Mac Mini (eind 2010 of nieuwer). 
-- Mac Pro (eind 2010 of nieuwer). 
-
-Na december hebben eindgebruikers met andere dan de hierboven vermelde apparaten geen toegang meer tot de nieuwste versie van de bedrijfsportal-app voor macOS. Bestaande ingeschreven apparaten met een niet-ondersteunde versie lager dan macOS 10.12 worden gewoon nog beheerd met en vermeld in de Intune-beheerconsole.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
-
-- Verzoek uw eindgebruikers om vóór december 2018 hun apparaten te upgraden naar een ondersteunde versie van het besturingssysteem. 
-- Controleer uw Intune-rapporten in de Intune op Azure-console om te zien welke apparaten of gebruikers hierdoor kunnen worden beïnvloed. Ga naar Apparaten > Alle apparaten en filter op besturingssysteem. U kunt extra kolommen toevoegen om te achterhalen wie in uw organisatie apparaten gebruikt waarop macOS 10.11 wordt uitgevoerd. 
-- Als u hybride Mobile Device Management (MDM) gebruikt, gaat u naar Assets en naleving > Apparaten in de Configuration Manager-console. Klik met de rechtermuisknop op de kolommen om de kolommen Besturingssysteem en Clientversie toe te voegen en sorteer de kolommen vervolgens op besturingssysteem. Let op: hybride MDM wordt nu afgeschaft en u moet zo snel mogelijk overstappen naar Intune op Azure. 
- 
-#### <a name="additional-information"></a>Als u meer informatie
-Zie voor meer informatie [Uw macOS-apparaten registreren bij Intune met de bedrijfsportal-app](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
- 
-
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Geplande wijziging: nieuwe Intune-ondersteuningservaring voor Premier-klanten 
-Update van 4-12-18: we proberen dit proces voor u te verbeteren, zodat het maken van een ondersteuningsaanvraag in MPO niet wordt uitgeschakeld op 3 december, maar op een later tijdstip. We zullen dit communiceren via het berichtencentrum. Dit bericht wordt binnenkort bijgewerkt om tijdlijnen voor deze wijziging te delen.
+### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Geplande wijziging: Nieuwe Intune-ondersteuningservaring voor Premier-klanten 
+Update van 4-12-18: We proberen dit proces voor u te verbeteren, zodat de mogelijkheid om ondersteuningsaanvragen aan te maken in MPO niet wordt uitgeschakeld op 3 december, maar op een later tijdstip. We zullen dit communiceren via het berichtencentrum. Dit bericht wordt binnenkort bijgewerkt om tijdlijnen voor deze wijziging te delen.
 
 Als Microsoft Premier-klant kunt u momenteel gebruikmaken van de Microsoft Premier Online-portal (MPO) (premier.microsoft.com) en Intune op Azure (portal.azure.com) om ondersteuningsaanvragen voor Intune te maken. Als u na 3 december 2018 de Premier-ondersteuningservaring wilt blijven verbeteren, kunt u alleen ondersteuningsaanvragen in Intune op Azure maken.
 
@@ -1204,28 +1201,3 @@ Controleer de wachtwoordinstellingen in uw Android- en Android Enterprise-appara
 #### <a name="additional-information"></a>Aanvullende informatie
 https://aka.ms/PasswordSettings 
 
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple vereist updates voor Application Transport Security <!--748318-->
-Apple heeft aangekondigd dat specifieke vereisten gaan gelden voor Application Transport Security (ATS). ATS wordt gebruikt om betere beveiliging af te dwingen voor alle app-communicatie die verloopt via HTTPS. Deze wijziging heeft gevolgen voor Intune-klanten die de bedrijfsportal-app gebruiken op iOS. De [Intune-ondersteuningsblog](https://aka.ms/compportalats) wordt bijgewerkt met informatie.
-
-### <a name="plan-for-change-intune-moving-to-tls-12"></a>Geplande wijziging: Intune stapt over op TLS 1.2
-Vanaf 31 oktober 2018 biedt Intune ondersteuning voor TLS-protocolversie 1.2 (Transport Layer Security) voor de best mogelijke codering, om ervoor te zorgen dat onze service standaard veiliger is en is afgestemd op andere Microsoft-services zoals Microsoft Office 365. Office heeft deze wijziging aangekondigd in MC128929.
-
-Ook de bedrijfsportal stapt over op ondersteuning voor TLS 1.2 en wel op 31 oktober 2018.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Intune biedt vanaf 31 oktober 2018 geen ondersteuning meer voor TLS-protocol versie 1.0 of 1.1. Alle combinaties van client/server en browser/server moeten TLS-versie 1.2 gebruiken voor een probleemloze verbinding met Intune. Houd er rekening mee dat deze wijziging van invloed is op apparaten van eindgebruikers die niet meer worden ondersteund door Intune, maar nog wel beleid ontvangen via Intune en die TLS-versie 1.2 niet kunnen gebruiken. Dit omvat onder andere apparaten waarop Android 4.3 en lager wordt uitgevoerd. Zie Aanvullende informatie hieronder voor een lijst met apparaten en browsers waarop deze wijziging van invloed is.
-
-Als u na 31 oktober 2018 een probleem ervaart met betrekking tot het gebruik van een oude TLS-versie, moet u bijwerken naar TLS 1.2 of een apparaat gebruiken dat ondersteuning biedt voor TLS 1.2.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
-U wordt aangeraden proactief TLS 1.0- en 1.1-afhankelijkheden uit uw omgevingen te verwijderen en waar mogelijk TLS 1.0 en 1.1 uit te schakelen op het niveau van het besturingssysteem. Begin vandaag nog met het plannen van uw migratie naar TLS 1.2. Lees de onderstaande ondersteuningsblogpost voor een lijst met apparaten die momenteel niet worden ondersteund door Intune, maar die mogelijk wel beleid ontvangen en TLS-versie 1.2 niet kunnen gebruiken voor communicatie. U moet mogelijk de eindgebruikers informeren dat ze de toegang tot bedrijfsresources verliezen.
-
-**Aanvullende informatie**: [Intune stapt voor versleuteling over op TLS 1.2](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-
-## <a name="see-also"></a>Zie ook
-* [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Roadmap voor cloudplatform](https://www.microsoft.com/cloud-platform/roadmap)
-* [Wat is er nieuw in de gebruikersinterface van de bedrijfsportal?](whats-new-app-ui.md)
-* [Wat was er in de vorige maanden nieuw](whats-new-archive.md)

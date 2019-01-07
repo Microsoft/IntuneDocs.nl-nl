@@ -1,7 +1,7 @@
 ---
 title: Een iOS Line-Of-Business-app toevoegen aan Microsoft Intune
 titlesuffix: ''
-description: Informatie over het toevoegen van een iOS Line-Of-Business-app aan Microsoft Intune.
+description: Hier vindt u meer informatie over het toevoegen van een LOB-app (Line-Of-Business) voor iOS aan Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7e3f00f129b5b344fc357be83c4d66f220035bd0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e5daa24261d2a26e289649ec6f964c5de55f0da0
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180711"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642724"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Een iOS Line-Of-Business-app toevoegen aan Microsoft Intune
 
@@ -32,7 +32,7 @@ Gebruik de informatie in dit artikel om iOS-Line-Of-Business-apps (LOB) aan Micr
 >[!NOTE]
 >Gebruikers van iOS-apparaten kunnen sommige van de ingebouwde iOS-apps, zoals Stocks en Maps verwijderen. U kunt Intune niet gebruiken voor het opnieuw implementeren van deze apps. Als gebruikers deze apps verwijderen, moeten ze naar de App Store gaan en ze handmatig opnieuw installeren.
 
-## <a name="step-1-specify-the-software-setup-file"></a>Stap 1: de locatie van het software-installatiebestand opgeven
+## <a name="step-1-specify-the-software-setup-file"></a>Stap 1: locatie van het software-installatiebestand opgeven
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
@@ -41,32 +41,32 @@ Gebruik de informatie in dit artikel om iOS-Line-Of-Business-apps (LOB) aan Micr
 5. Selecteer **Toevoegen** boven de lijst met apps.
 6. Selecteer in het deelvenster **App toevoegen** de optie **Line-Of-Business-app**.
 
-## <a name="step-2-configure-the-app-package-file"></a>Stap 2: het pakketbestand van de app configureren
+## <a name="step-2-configure-the-app-package-file"></a>Stap 2: app-pakketbestand configureren
 
 1. Selecteer in het deelvenster **App toevoegen** de optie **App-pakketbestand**.
 2. Selecteer in het deelvenster **App-pakketbestand** de bladerknop. Selecteer vervolgens een iOS-installatiebestand met de extensie **.ipa**.
 3. Klik op **OK** wanneer u klaar bent.
 
 
-## <a name="step-3-configure-app-information"></a>Stap 3: de app-gegevens configureren
+## <a name="step-3-configure-app-information"></a>Stap 3: App-gegevens configureren
 
 1. Selecteer **App-gegevens** in het deelvenster **App toevoegen**.
 2. Voeg de details voor uw app toe in het deelvenster **App-gegevens**. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden in het deelvenster mogelijk automatisch ingevuld.
     - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal wordt weergegeven. Zorg ervoor dat alle app-namen die u gebruikt, uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
-    - **Beschrijving**: voer een beschrijving in voor de app. De beschrijving wordt weergegeven in de bedrijfsportal.
-    - **Uitgever**: voer de naam van de uitgever van de app in.
+    - **Beschrijving**: Voer een beschrijving in voor de app. De beschrijving wordt weergegeven in de bedrijfsportal.
+    - **Uitgever**: Voer de naam van de uitgever van de app in.
     - **Minimumversie van het besturingssysteem**: selecteer in de lijst de minimumversie van het besturingssysteem waarin de app kan worden geïnstalleerd. Als u de app toewijst aan een apparaat met een lager besturingssysteem, wordt de app niet geïnstalleerd.
     - **Categorie**: selecteer een of meer van de ingebouwde app-categorieën of selecteer een categorie die u hebt gemaakt. Met categorieën kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
-    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: hiermee wordt de app duidelijk zichtbaar op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
-    - **Informatie-URL**: voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
-    - **Privacy-URL**: voer de URL in van een website die privacyinformatie over deze app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
+    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: Geef de app prominent weer op de hoofdpagina van de bedrijfsportal wanneer gebruikers door apps bladeren.
+    - **Informatie-URL**: Voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
+    - **Privacy-URL**: (optioneel) Voer de URL in van een website die privacyinformatie over deze app bevat. De URL wordt weergegeven in de bedrijfsportal.
     - **Ontwikkelaar**: voer de naam in van de app-ontwikkelaar (optioneel).
     - **Eigenaar**: voer een naam in voor de eigenaar van deze app (optioneel). Bijvoorbeeld **HR-afdeling**.
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
-    - **Logo**: upload een pictogram dat aan de app is gekoppeld. Het pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
+    - **Logo**: upload een pictogram dat u aan de app wilt koppelen. Het pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
 3. Klik op **OK** wanneer u klaar bent.
 
-## <a name="step-4-finish-up"></a>Stap 4: afronden
+## <a name="step-4-finish-up"></a>Stap 4: Voltooien
 
 1. Controleer in het deelvenster **App toevoegen** of de gegevens voor uw app juist zijn.
 2. Selecteer **Toevoegen** om de app te uploaden naar Intune.

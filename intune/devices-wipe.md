@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861010"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553653"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Apparaten verwijderen via wissen of buiten gebruik stellen, of de registratie van het apparaat handmatig ongedaan maken
 
@@ -81,7 +81,7 @@ In de volgende tabellen wordt beschreven welke gegevens worden verwijderd en wat
 
 |Gegevenstype|iOS|
 |-------------|-------|
-|Bedrijfs-apps en de bijbehorende gegevens die door Intune zijn geïnstalleerd|**Apps geïnstalleerd met Bedrijfsportal:** alle app-gegevens en de apps worden verwijderd. Hiertoe behoren ook de apps die oorspronkelijk zijn geïnstalleerd vanuit de App Store en later worden beheerd als bedrijfs-apps. <br /><br /> **Microsoft-apps die gebruikmaken van MAM en zijn die geïnstalleerd vanuit de App Store:** Gegevens van persoonlijke apps worden verwijderd. Gegevens van bedrijfs-apps en de apps worden niet verwijderd.|
+|Bedrijfs-apps en de bijbehorende gegevens die door Intune zijn geïnstalleerd|**Apps geïnstalleerd met Bedrijfsportal:** alle app-gegevens en de apps worden verwijderd. Hiertoe behoren ook de apps die oorspronkelijk zijn geïnstalleerd vanuit de App Store en later worden beheerd als bedrijfs-apps. <br /><br /> **Microsoft-apps die gebruikmaken van MAM en zijn die geïnstalleerd vanuit de App Store:** Gegevens van bedrijfs-apps worden verwijderd. Gegevens van persoonlijke apps en de apps worden niet verwijderd.|
 |Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden verwijderd en ingetrokken.|

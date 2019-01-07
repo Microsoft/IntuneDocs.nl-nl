@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 4ccbdff5eac7fef8d28696d8340eb498bae95176
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
+ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187851"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657777"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -83,7 +83,7 @@ U hebt een van de volgende handleidingen voor ontwikkelaars nodig om de App Intu
 
 * **[Ontwikkelaarshandleiding voor Intune App SDK voor Android](app-sdk-android.md)**: in dit document wordt u stapsgewijs begeleid bij het geschikt maken van uw systeemeigen Android-app voor de Intune App SDK.
 
-* **[Handleiding Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)**: dit document bevat informatie over het bouwen van iOS- en Android-apps met Xamarin voor het Intune-beleid voor app-beveiliging.
+* **[Handleiding voor Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)**: dit document bevat informatie over het maken van iOS- en Android-apps met Xamarin voor het beveiligingsbeleid voor apps in Intune.
 
 
 
@@ -99,11 +99,11 @@ U hebt een van de volgende handleidingen voor ontwikkelaars nodig om de App Intu
 
 Met Microsoft Intune worden gebruiksstatistieken verzameld voor uw app.
 
-* **Intune App SDK voor iOS**: de SDK registreert standaard SDK-telemetriegegevens van gebruiksgebeurtenissen. Deze gegevens worden naar Microsoft Intune verzonden.
+* **Intune App SDK voor iOS**: de SDK registreert standaard SDK-telemetriegegevens voor gebruiksgebeurtenissen. Deze gegevens worden naar Microsoft Intune verzonden.
 
     * Als u ervoor kiest geen SDK-telemetriegegevens vanuit uw app naar Microsoft Intune te verzenden, moet u het vastleggen van telemetriegegevens uitschakelen door 'JA' in te schakelen voor de eigenschap `MAMTelemetryDisabled` in het IntuneMAMSettings-woordenboek .
 
-* **Intune App SDK voor Android**: de Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-app registreert standaard telemetriegegevens. Deze gegevens worden naar Microsoft Intune verzonden. Geheel volgens het Microsoft-beleid worden er geen persoonsgegevens verzameld. 
+* **Intune App SDK voor Android**: De Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-app registreert standaard telemetriegegevens. Deze gegevens worden naar Microsoft Intune verzonden. Geheel volgens het Microsoft-beleid worden er geen persoonsgegevens verzameld. 
 
     * Als eindgebruikers ervoor kiezen deze gegevens niet te verzenden, moeten ze telemetrie uitschakelen onder Instellingen op de bedrijfsportal-app. Zie [Gegevensverzameling door Microsoft uitschakelen](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android) voor meer informatie. 
 
@@ -153,13 +153,13 @@ Buildnummer|CFBundleVersion|PackageVersionCode |Met dit nummer wordt een iterati
 ### <a name="test-your-app"></a>Uw app testen
 Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integreren met de Intune App SDK, moet u ervoor zorgen dat alle beleid voor app-beveiliging is ingeschakeld en correct werkt voor de gebruiker en de IT-beheerder. Als u uw geïntegreerde app wilt testen, gaat u als volgt te werk:
 
-* **Microsoft Intune-testaccount**: als u uw door Intune beheerde app wilt testen aan de hand van beveiligingsfuncties voor Intune-apps, hebt u een Microsoft Intune-account nodig.
+* **Microsoft Intune-testaccount**: als u uw door Intune beheerde app wilt testen aan de hand van beveiligingsfuncties voor apps in Intune, hebt u een Microsoft Intune-account nodig.
 
     * Als u een ISV bent die apps voor de iOS of Android Store wilt inschakelen voor Intune-beleid voor app-beveiliging, ontvangt u een promotiecode nadat u de registratie bij Microsoft Intune hebt voltooid. Dit wordt beschreven in de registratiestap. Met de promotiecode kunt u zich aanmelden voor een Microsoft Intune-proefversie met uitgebreid gebruik van één jaar.
 
     * Als u een Line-Of-Business-app ontwikkelt die niet naar de Store word verzonden, wordt ervan uitgegaan dat u via uw organisatie toegang hebt tot Microsoft Intune. U kunt zich ook registreren voor een gratis proefversie van één maand via [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
 
-* **Intune-beleid voor app-beveiliging**: als u uw app wilt testen aan de hand van alle Intune-beleid voor app-beveiliging, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](app-protection-policy-settings-android.md).
+* **Beveiligingsbeleid voor apps in Intune**: als u uw app wilt testen aan de hand van al het beveiligingsbeleid voor apps in Intune, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](app-protection-policy-settings-android.md).
 
 * **Probleemoplossing**: als u problemen ondervindt tijdens het handmatig testen van de gebruikerservaring van uw app-installatie, gaat u naar [Problemen met app-installatie oplossen](troubleshoot-app-install.md). 
 
@@ -188,7 +188,7 @@ Aan de hand van dit logo kunnen IT-beheerders, eindgebruikers en potentiële Int
 
 Het logo ziet eruit als het pictogram van een aktetas zoals in de voorbeelden hieronder wordt weergegeven:
 
-![Logovoorbeeld 1](./media/badge-example-1.png) ![Logovoorbeeld 2](./media/badge-example-2.png)
+![Beveiligingsbeleid voor apps in Intune - logovoorbeeld 1](./media/badge-example-1.png) ![Beveiligingsbeleid voor apps in Intune - logovoorbeeld 2](./media/badge-example-2.png)
 
 **Wat u nodig hebt om uw app van een logo te voorzien**:
 

@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0cea1b958849d6c2422461e85eba57577a65e884
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 2d47a8f61c85b390ae53311154f27d2d85860840
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112592"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626036"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Ondersteunde besturingssystemen en browsers in Intune
 
@@ -30,6 +30,8 @@ ms.locfileid: "53112592"
 Bestudeer, voordat u Microsoft Intune instelt, de ondersteunde besturingssystemen en browsers.
 
 Raadpleeg voor hulp bij de installatie van Intune op uw apparaat [Beheerde apparaten gebruiken om werk gedaan te krijgen](/intune-user-help/company-portal-frequently-asked-questions) en [Bandbreedtegebruik](network-bandwidth-use.md).
+
+Voor meer informatie over ondersteuning door de configuratie-serviceprovider, gaat u naar de [referentie van de configuratie-serviceprovider](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## <a name="intune-supported-operating-systems"></a>Besturingssystemen die door Intune worden ondersteund
 

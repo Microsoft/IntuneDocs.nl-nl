@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181884"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325174"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>App-gegevens en -toewijzingen controleren met Microsoft Intune
 
@@ -36,7 +36,7 @@ Intune biedt een aantal manieren om de eigenschappen te controleren van apps die
 5. Selecteer in de lijst met apps een app om te controleren. Vervolgens ziet u het deelvenster met een app-overzicht van de apparaat- en gebruikersstatus.
 
 > [!NOTE]
-> Van Android Store-apps die als **beschikbaar** worden ingericht, wordt de installatiestatus niet vermeld.
+> Android Store-apps die worden geïmplementeerd als **Beschikbaar**, en Android LOB-apps die worden ingezet als **Beschikbaar met of zonder registratie**, geven hun installatiestatus niet aan.
 
 ## <a name="app-overview-pane"></a>Deelvenster met een app-overzicht
 

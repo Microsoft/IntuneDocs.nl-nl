@@ -15,12 +15,12 @@ ms.reviewer: erikre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb6e5e603b353be5d3c0d3fdaca4f1d8af675ad
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1e2b97970a7ab440a032eb29f5307e4dbeddc3bc
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181187"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53306012"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
@@ -39,7 +39,7 @@ Met MAM worden de gegevens van een organisatie in een toepassing beveiligd. Met 
 Intune MAM ondersteunt twee configuraties:
 - **Intune MDM + MAM**: IT-beheerders kunnen apps alleen met MAM en beleidsregels voor de beveiliging van apps beheren op apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM). Als klanten apps willen beheren met MDM + MAM, moeten zij de Intune-console Azure Portal op https://portal.azure.com gebruiken.
 
-- **MAM zonder apparaatregistratie**: MAM zonder apparaatregistratie, of MAM-WE, biedt IT-beheerders de mogelijkheid apps te beheren met MAM en beleidsregels voor de beveiliging van apps op apparaten die niet zijn geregistreerd bij Intune MDM. Dit betekent dat apps door Intune kunnen worden beheerd op apparaten die zijn geregistreerd bij externe EMM providers. Als klanten apps willen beheren met MAM-WE, moeten zij de Intune-console in Azure Portal op http://portal.azure.com gebruiken. Apps kunnen ook door Intune worden beheerd op apparaten die zijn geregistreerd bij externe Enterprise Mobility Management-providers of die helemaal niet bij een MDM zijn geregistreerd.
+- **MAM zonder apparaatregistratie**: MAM zonder apparaatregistratie, of MAM-WE, biedt IT-beheerders de mogelijkheid apps te beheren met MAM en beleidsregels voor app-beveiliging op apparaten die niet zijn geregistreerd met Intune MDM. Dit betekent dat apps door Intune kunnen worden beheerd op apparaten die zijn geregistreerd bij externe EMM providers. Als klanten apps willen beheren met MAM-WE, moeten zij de Intune-console in Azure Portal op https://portal.azure.com gebruiken. Apps kunnen ook door Intune worden beheerd op apparaten die zijn geregistreerd bij externe Enterprise Mobility Management-providers of die helemaal niet bij een MDM zijn geregistreerd.
 
 
 ## <a name="app-protection-policies"></a>Beleid voor app-beveiliging
@@ -61,7 +61,7 @@ Alle apps die zijn geïntegreerd met de [Intune App SDK](/intune/app-sdk) of die
 
 - Er moet een licentie voor Microsoft Intune Azure aan het Azure Active Directory-account van de eindgebruiker zijn toegewezen. Zie [Intune-licenties beheren](/intune/licenses-assign) voor informatie over het toewijzen van Intune-licenties aan eindgebruikers.
 
-- De eindgebruiker moet behoren tot een beveiligingsgroep waarop een beleidsregel voor de beveiliging van apps is gericht. Dezelfde beleidsregel voor de beveiliging van apps moet ook zijn gericht op de specifieke app die wordt gebruikt. Beleidsregels voor de beveiliging van apps kunnen worden gemaakt en geïmplementeerd in de Intune-console in [Azure Portal](http://portal.azure.com). Beveiligingsgroepen kunnen op dit moment worden gemaakt in de [Office-portal](http://portal.office.com).
+- De eindgebruiker moet behoren tot een beveiligingsgroep waarop een beleidsregel voor de beveiliging van apps is gericht. Dezelfde beleidsregel voor de beveiliging van apps moet ook zijn gericht op de specifieke app die wordt gebruikt. Beleidsregels voor de beveiliging van apps kunnen worden gemaakt en geïmplementeerd in de Intune-console in [Azure Portal](https://portal.azure.com). Beveiligingsgroepen kunnen op dit moment worden gemaakt in de [Office-portal](https://portal.office.com).
 
 - De eindgebruiker moet zich bij de app aanmelden met zijn AAD-account.
 
@@ -76,7 +76,7 @@ Alle apps die zijn geïntegreerd met de [Intune App SDK](/intune/app-sdk) of die
 
 **Wat zijn de aanvullende vereisten voor het gebruik van de apps [Word, Excel en PowerPoint](https://products.office.com/business/office)?**
 
-- De eindgebruiker moet een licentie voor [Office 365 Business of Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) aan zijn Azure Active Directory-account hebben gekoppeld. Het abonnement moet de Office-apps voor mobiele apparaten bevatten en kan een cloudopslagaccount met [OneDrive voor Bedrijven](https://onedrive.live.com/about/business/) bevatten. Office 365-licenties kunnen aan de hand van de volgende [instructies](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) worden toegewezen in de [Office-portal](http://portal.office.com).
+- De eindgebruiker moet een licentie voor [Office 365 Business of Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) aan zijn Azure Active Directory-account hebben gekoppeld. Het abonnement moet de Office-apps voor mobiele apparaten bevatten en kan een cloudopslagaccount met [OneDrive voor Bedrijven](https://onedrive.live.com/about/business/) bevatten. Office 365-licenties kunnen aan de hand van de volgende [instructies](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) worden toegewezen in de [Office-portal](https://portal.office.com).
 
 - De eindgebruiker moet een beheerde locatie hebben die is geconfigureerd met de gedetailleerde functie voor 'opslaan als', onder de instelling 'Opslaan als voorkomen' van het beveiligingsbeleid voor toepassingen. Als bijvoorbeeld OneDrive de beheerde locatie is, moet de [OneDrive](https://onedrive.live.com/about/)-app worden geconfigureerd in de Word-, Excel- of PowerPoint-app van de eindgebruiker.
 
@@ -109,9 +109,9 @@ De pincode is een wachtwoordcode die wordt gebruikt om te verifiëren of de juis
 
 - **Hoe vaak wordt de gebruiker gevraagd de pincode voor Intune in te voeren?**<br></br> De IT-beheerder kan de beleidsinstelling voor beveiliging van de Intune-app in de Intune-beheerconsole instellen op Toegangsvereisten opnieuw controleren na (minuten). Deze instelling geeft de hoeveelheid tijd aan voordat de toegangsvereisten op het apparaat worden gecontroleerd en het scherm voor de pincode opnieuw wordt weergegeven. Belangrijke informatie over de pincode die van invloed is op hoe vaak de gebruiker om de pincode wordt gevraagd, is: 
 
-    - **De pincode wordt gedeeld tussen apps van dezelfde uitgever om de bruikbaarheid te verbeteren:** in iOS wordt de pincode voor apps gedeeld met alle apps **van dezelfde uitgever**. Op Android wordt één pincode voor apps gedeeld met alle andere apps.
-    - **Het gedrag van Toegangsvereisten opnieuw controleren na (minuten) na het opnieuw starten van een apparaat:** een timer van de pincode houdt het aantal minuten van inactiviteit bij, waarmee wordt bepaald wanneer de pincode voor de Intune-app de volgende keer wordt weergegeven. In iOS wordt de timer van de pincode niet beïnvloed door het opnieuw starten van het apparaat. Het opnieuw starten van het apparaat is dus niet van invloed op het aantal minuten dat de gebruiker niet actief is in een iOS-app waarvoor het Intune-pincodebeleid is ingesteld. In Android wordt de timer van de pincode opnieuw ingesteld bij het opnieuw starten van het apparaat. Hierdoor vragen Android-apps waarvoor het Intune-pincodebeleid is ingesteld waarschijnlijk om de pincode voor de app, ongeacht de instelling 'Toegangsvereisten opnieuw controleren na (minuten)' **na het opnieuw starten van een apparaat**.  
-    - **De werking van de timer die aan de pincode is gekoppeld:** Zodra een pincode wordt ingevoerd voor toegang tot een app (app A) en de app de voorgrond op het apparaat verlaat, wordt de timer voor die pincode opnieuw ingesteld. Voor elke app (app B) die deze pincode deelt, wordt de gebruiker niet om de pincode gevraagd, omdat de timer opnieuw is ingesteld. De prompt verschijnt zodra opnieuw aan de waarde voor Toegangsvereisten opnieuw controleren na (minuten) is voldaan.
+    - **De pincode wordt gedeeld door apps van dezelfde uitgever om de bruikbaarheid te verbeteren:** Op iOS wordt één pincode voor apps gedeeld door alle apps **van dezelfde app-uitgever**. Op Android wordt één pincode voor apps gedeeld met alle andere apps.
+    - **Het gedrag van 'Toegangsvereisten opnieuw controleren na (minuten)' na het opnieuw opstarten van een apparaat:** een 'timer van de pincode' houdt het aantal minuten van inactiviteit bij waarna de pincode voor de Intune-app opnieuw moet worden weergegeven. In iOS wordt de timer van de pincode niet beïnvloed door het opnieuw starten van het apparaat. Het opnieuw starten van het apparaat is dus niet van invloed op het aantal minuten dat de gebruiker niet actief is in een iOS-app waarvoor het Intune-pincodebeleid is ingesteld. In Android wordt de timer van de pincode opnieuw ingesteld bij het opnieuw starten van het apparaat. Hierdoor vragen Android-apps waarvoor het Intune-pincodebeleid is ingesteld waarschijnlijk om de pincode voor de app, ongeacht de instelling 'Toegangsvereisten opnieuw controleren na (minuten)' **na het opnieuw starten van een apparaat**.  
+    - **De werking van de timer die aan de pincode is gekoppeld:** zodra een pincode wordt ingevoerd voor toegang tot een app (app A) en de app de voorgrond (primaire invoerfocus) op het apparaat verlaat, wordt de timer voor die pincode opnieuw ingesteld. Voor elke app (app B) die deze pincode deelt, wordt de gebruiker niet om de pincode gevraagd, omdat de timer opnieuw is ingesteld. De prompt verschijnt zodra opnieuw aan de waarde voor Toegangsvereisten opnieuw controleren na (minuten) is voldaan.
 
 Zelfs als de pincode wordt gedeeld met apps van andere uitgevers verschijnt bij iOS-apparaten de prompt opnieuw wanneer opnieuw is voldaan aan de waarde **Toegangsvereisten na (minuten) opnieuw controleren** voor de app die niet de belangrijkste invoerfocus is. Een gebruiker heeft bijvoorbeeld app _A_ van uitgever _X_ en app _B_ van uitgever _Y_ en deze twee apps delen dezelfde pincode. De gebruiker is gericht op app _A_ (voorgrond) en app _B_ wordt geminimaliseerd. Nadat is voldaan aan de waarde **Toegangsvereisten na (minuten) opnieuw controleren** en de gebruiker overschakelt naar de app _B_, is de pincode vereist.
 

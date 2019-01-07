@@ -1,12 +1,12 @@
 ---
 title: Huidige gebruiker - Intune-datawarehouse
 titlesuffix: Microsoft Intune
-description: Naslagonderwerp voor de categorie Gebruiker van entiteitverzamelingen in de Intune-datawarehouse-API.
+description: Naslagonderwerp voor de categorie Huidige gebruiker van entiteitverzamelingen in de Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: b58f6f360cf034be11153a57227da42ed1e29388
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-classic; seodec18
+ms.openlocfilehash: a6329a44f1ccfa55025ad558fe2f277a41293538
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189772"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266899"
 ---
 # <a name="reference-for-current-user-entity"></a>Naslaginformatie voor huidige gebruikersentiteit
 

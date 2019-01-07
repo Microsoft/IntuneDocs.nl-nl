@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b4a45ac5a73d199ec883e3dda95a97a8f3c09d9a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fee473cd6cb6fa7e8a092ebd70192f2b7f8a8b84
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181510"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737930"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>App-toewijzingen opnemen en uitsluiten in Microsoft Intune
 
@@ -50,7 +50,7 @@ U kunt een app toewijzen aan groepen met behulp van de toewijzing voor opnemen e
 5. Selecteer de app die u wilt beheren. In een dashboard worden gegevens over de app weergegeven. 
 6. Selecteer **Toewijzingen** in de sectie **Beheren** van het menu. 
 
-    ![App-toewijzingen van Intune](./media/apps-inc-exl-01.png)
+    ![App-toewijzingen opnemen bij het toewijzen van apps](./media/apps-inc-exl-01.png)
 7. Selecteer **Groep toevoegen** om de groepen van gebruikers aan wie de app is toegewezen toe te voegen. 
 8. Selecteer een **Toewijzingstype** uit de beschikbare toewijzingstypen in het deelvenster **Groep toevoegen**.
 9. Selecteer **Beschikbaar met of zonder inschrijving** als het toewijzingstype.

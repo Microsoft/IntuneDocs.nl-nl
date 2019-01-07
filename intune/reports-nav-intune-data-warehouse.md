@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b08746965c23c8d247a53bcd0b0844a24581b4e6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 730195b200448d529d2a56ac8e8a45548264de2d
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179080"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429641"
 ---
-#  <a name="intune-data-warehouse-api"></a>Intune-datawarehouse-API
+#  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune Data Warehouse-API
 
 Met de Intune-datawarehouse-API krijgt u toegang tot uw Intune-gegevens in een machineleesbare indeling, voor gebruik in uw favoriete analyseprogramma. U kunt de API gebruiken om rapporten te genereren die inzicht in de mobiele omgeving van uw bedrijf bieden. De API maakt gebruikt van het OData-protocol, dat standaardpatronen volgt voor:
 
@@ -66,6 +66,6 @@ OData definieert een abstract gegevensmodel en een protocol waarmee alle clientt
 
 Lees de [Verificatiescenario's voor Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios) voor meer informatie over het werken met Azure AD.
 
-Ga naar [odata.org](http://www.odata.org) voor informatie over OData.
+Ga naar [odata.org](https://www.odata.org) voor informatie over OData.
   
-Controleer de OData-versie 4.0 standaard op [OData-versie 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+Controleer de OData-versie 4.0 standaard op [OData-versie 4.0] (https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  

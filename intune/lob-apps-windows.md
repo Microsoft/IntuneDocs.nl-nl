@@ -1,7 +1,7 @@
 ---
 title: Een Windows Line-Of-Business-app toevoegen aan Microsoft Intune
 titlesuffix: ''
-description: Informatie over het toevoegen van een Windows Line-Of-Business-app aan Microsoft Intune.
+description: Hier vindt u meer informatie over het toevoegen van Windows Line-Of-Business-apps (LOB) met Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 15e5eb80008e7365479bfd3a63224818d0c19a73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 551fd188ef22b5bf9516e51604d20d43efca5608
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183193"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642673"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Een Windows Line-Of-Business-app toevoegen aan Microsoft Intune
 
@@ -29,7 +29,7 @@ ms.locfileid: "52183193"
 
 Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Dit type app wordt doorgaans intern geschreven. De volgende stappen bevatten instructies waarmee u een Windows LOB-app kunt toevoegen aan Microsoft Intune.
 
-## <a name="step-1-specify-the-software-setup-file"></a>Stap 1: de locatie van het software-installatiebestand opgeven
+## <a name="step-1-specify-the-software-setup-file"></a>Stap 1: locatie van het software-installatiebestand opgeven
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
@@ -38,7 +38,7 @@ Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Dit type
 5. Selecteer **Toevoegen** boven de lijst met apps.
 6. Selecteer in het deelvenster **App toevoegen** de optie **Line-Of-Business-app**.
 
-## <a name="step-2-configure-the-app-package-file"></a>Stap 2: het pakketbestand van de app configureren
+## <a name="step-2-configure-the-app-package-file"></a>Stap 2: app-pakketbestand configureren
 
 1. Selecteer in het deelvenster **App toevoegen** de optie **App-pakketbestand**.
 2. Selecteer in het deelvenster **App-pakketbestand** de bladerknop. Selecteer vervolgens een Windows-installatiebestand met de extensie **.msi**, **.appx** of **.appxbundle**.
@@ -49,26 +49,26 @@ Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Dit type
 1. Klik op **OK** wanneer u klaar bent.
 
 
-## <a name="step-3-configure-app-information"></a>Stap 3: de app-gegevens configureren
+## <a name="step-3-configure-app-information"></a>Stap 3: App-gegevens configureren
 
 1. Selecteer **App-gegevens** in het deelvenster **App toevoegen**.
 2. Configureer de volgende gegevens in het deelvenster **App-gegevens**. Sommige van de waarden in dit deelvenster worden mogelijk automatisch ingevuld.
     - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal wordt weergegeven. Zorg ervoor dat alle app-namen die u gebruikt, uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
-    - **Beschrijving**: voer een beschrijving in voor de app. De beschrijving wordt weergegeven in de bedrijfsportal.
-    - **Uitgever**: voer de naam van de uitgever van de app in.
+    - **Beschrijving**: Voer een beschrijving in voor de app. De beschrijving wordt weergegeven in de bedrijfsportal.
+    - **Uitgever**: Voer de naam van de uitgever van de app in.
     - **App-versie negeren**: stel deze optie in op **Ja** als de app-ontwikkelaar de app automatisch bijwerkt. Deze optie is alleen van toepassing op mobiele .msi-apps.
     - **Categorie**: selecteer een of meer van de ingebouwde app-categorieën of selecteer een categorie die u hebt gemaakt. Met categorieën kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
-    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: hiermee wordt de app duidelijk zichtbaar op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
-    - **Informatie-URL**: voer desgewenst de URL in van een website die informatie over de app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
-    - **Privacy-URL**: voer de URL in van een website die privacyinformatie over de app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
+    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: Geef de app prominent weer op de hoofdpagina van de bedrijfsportal wanneer gebruikers door apps bladeren.
+    - **Informatie-URL**: voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
+    - **Privacy-URL**: voer de URL in van een website die privacyinformatie over deze app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
     - **Opdrachtregelargumenten**: voer eventueel opdrachtregelargumenten in die u wilt toepassen op het MSI-bestand wanneer dit wordt uitgevoerd. Bijvoorbeeld **/q**.
     - **Ontwikkelaar**: voer de naam in van de app-ontwikkelaar (optioneel).
     - **Eigenaar**: voer een naam in voor de eigenaar van deze app (optioneel). Bijvoorbeeld **HR-afdeling**.
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
-    - **Logo**: upload een pictogram dat aan de app is gekoppeld. Het pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
+    - **Logo**: upload een pictogram dat u aan de app wilt koppelen. Het pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
 3. Klik op **OK** wanneer u klaar bent.
 
-## <a name="step-4-finish-up"></a>Stap 4: afronden
+## <a name="step-4-finish-up"></a>Stap 4: Voltooien
 
 1. Controleer in het deelvenster **App toevoegen** of de app-gegevens die u hebt geconfigureerd correct zijn.
 2. Selecteer **Toevoegen** om de app te uploaden naar Intune.

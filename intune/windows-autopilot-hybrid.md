@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112439"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642554"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Apparaten die zijn gekoppeld aan Hybrid Azure Active Directory implementeren met Intune en Windows Autopilot (preview)
 U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn gekoppeld aan Hybrid Azure Active Directory. Volg hiertoe de onderstaande stappen.
@@ -204,7 +204,7 @@ Het duurt ongeveer 15 minuten voordat de status van het apparaatprofiel is gewij
    - **Beschrijving**: Voer een beschrijving in voor het profiel.
    - **Platform**: Kies **Windows 10 en hoger**.
    - **Profieltype**: Kies **Domeindeelname (preview)**.
-3. Kies **Instellingen** en geef een **Computernaamvoorvoegsel**, **Domeinnaam** en **Organisatie-eenheid** op (optioneel). 
+3. Kies **Instellingen** en geef een **Computernaamvoorvoegsel**, **Domeinnaam** en **Organisatie-eenheid** op in DN-indeling (optioneel). 
 4. Kies **OK** > **Maken**. Het profiel wordt gemaakt en wordt weergegeven in de lijst.
 5. Als u het profiel wilt toewijzen, volgt u de stappen onder [Een apparaatprofiel toewijzen](device-profile-assign.md#assign-a-device-profile). 
 

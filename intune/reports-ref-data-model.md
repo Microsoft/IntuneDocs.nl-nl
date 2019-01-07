@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 228b662739d161a4f4d6d145746fc68e7c3b87e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ce4689aaecd40d7d44f0064b1e951823fa0bb2c2
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188106"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737998"
 ---
-# <a name="data-warehouse-data-model"></a>Datawarehouse-gegevensmodel
+# <a name="microsoft-intune-data-warehouse-data-model"></a>Gegevensmodel van Microsoft Intune-datawarehouse
 
 In het Intune-datawarehouse worden dagelijks gegevens verzameld om een historisch overzicht te bieden van uw steeds veranderende omgeving van mobiele apparaten. De weergave bestaat uit entiteiten die in de tijd aan elkaar gerelateerd zijn.
 
-## <a name="entities-entity-sets"></a>Entiteiten: entiteitsets
+## <a name="entities-entity-sets"></a>Entiteiten: Entiteitsets
 
 De gegevens in het datawarehouse worden in de volgende algemene gebieden ingedeeld:
 

@@ -14,19 +14,19 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 66402d9e2bc66ec96de88f64dd61c41e1ddb34e5
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179070"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553636"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>De Intune-softwareclient installeren op Windows-pc's
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> U kunt Microsoft Intune gebruiken voor het beheren van Windows-pc's [als mobiele apparaten met Mobile Device Management (MDM)](windows-enroll.md) of als computers met de Intune-softwareclient, zoals hieronder beschreven. Microsoft adviseert klanten echter om indien mogelijk [de MDM-beheeroplossing te gebruiken](windows-enroll.md).
+> U kunt Microsoft Intune gebruiken voor het beheren van Windows-pc's [als mobiele apparaten met Mobile Device Management (MDM)](windows-enroll.md) of als computers met de Intune-softwareclient, zoals hieronder beschreven. Microsoft adviseert klanten echter om indien mogelijk [de MDM-beheeroplossing te gebruiken](windows-enroll.md). Raadpleeg [Beheer van Windows-pc's als computers of mobiele apparaten vergelijken](pc-management-comparison.md) voor meer informatie 
 
 
 Windows-pc's kunnen worden geregistreerd door de Intune-clientsoftware te installeren. De Intune-clientsoftware kan via de volgende methoden worden geïnstalleerd:
@@ -124,8 +124,8 @@ Als er wel een Intune-licentie is toegewezen aan gebruikers en de MDM-instantie 
 
 - Gebruikers van Windows 10- of Windows 8.1-pc’s zien twee inschrijvingsopties:
 
-  -  **Pc inschrijven als mobiel apparaat**: Als gebruikers de knop **Meer informatie over inschrijven** kiezen, worden ze naar instructies geleid voor het inschrijven van hun pc als mobiel apparaat. Deze knop wordt prominent weergegeven, omdat MDM-inschrijving als de standaard inschrijvingsoptie wordt beschouwd die de voorkeur heeft. De MDM-optie is echter niet van toepassing op dit onderwerp, dat alleen de installatie van de clientsoftware dekt.
-  - **Pc inschrijven met behulp van de Intune-clientsoftware**: U moet uw gebruikers vertellen dat ze de link **Klik hier om het te downloaden** moeten selecteren, zodat ze door de installatie van de clientsoftware worden geleid.
+  -  **Pc inschrijven als mobiel apparaat**: als gebruikers de knop **Meer informatie over inschrijven** kiezen, worden ze naar instructies geleid voor het inschrijven van hun pc als mobiel apparaat. Deze knop wordt prominent weergegeven, omdat MDM-inschrijving als de standaard inschrijvingsoptie wordt beschouwd die de voorkeur heeft. De MDM-optie is echter niet van toepassing op dit onderwerp, dat alleen de installatie van de clientsoftware dekt.
+  - **Pc inschrijven met behulp van de Intune-clientsoftware**: u moet uw gebruikers instrueren om de link **Klik hier om het te downloaden** te selecteren, zodat ze door de installatie van de clientsoftware worden geleid.
 
 De volgende tabel geeft een overzicht van de opties.
 
@@ -260,4 +260,4 @@ Tijdens het uitschrijvingsproces wordt de map OnlineManagement niet verwijderd. 
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Volgende stappen
-[Apparaten beheren met Microsoft Intune](device-management.md)
+[Algemene beheertaken voor Windows-pc's met de Intune-softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

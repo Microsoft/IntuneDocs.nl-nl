@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/13/2018
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: e677b62c7610739079184bc5ef59e47544f833bb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 73caf328bd25cb31bacea6b964c1db7601f3aec6
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190214"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570805"
 ---
 # <a name="what-is-device-enrollment"></a>Wat is apparaatinschrijving?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -47,6 +47,7 @@ Standaard kunnen apparaten voor alle platforms worden ingeschreven in Intune. U 
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | Nee| Ja | Nee | [Meer informatie](./macos-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Nee |Nee |Nee  | [Meer informatie](./device-enrollment-manager-enroll.md)|
+|**[DEP](#apple-device-enrollment-program)**|   Ja |   Optioneel |  Optioneel|[Meer informatie](./device-enrollment-program-enroll-macos.md)|
 
 
 ## <a name="windows-enrollment-methods"></a>Windows-registratiemethoden
@@ -56,10 +57,10 @@ Standaard kunnen apparaten voor alle platforms worden ingeschreven in Intune. U 
 |**[BYOD](#bring-your-own-device)** | Nee |  Ja |   Nee | [Meer informatie](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Nee |Nee |Nee  |[Meer informatie](device-enrollment-manager-enroll.md)|
 |**Automatisch inschrijven** | Nee |Ja |Nee | [Meer informatie](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**Autopilot** |Ja |Ja |Nee | [Meer informatie](enrollment-autopilot.md)]
+|**Autopilot** |Ja |Ja |Nee | [Meer informatie](enrollment-autopilot.md)
 |**Bulkregistratie** |Nee |Nee |Nee | [Meer informatie](./windows-bulk-enroll.md) |
-|**Co-beheer** |Nee |Ja |Nee | [Meer informatie](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
-|**GPO** |Nee |Ja |Nee | [Meer informatie](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+|**Co-beheer** |Nee |Ja |Nee | [Meer informatie](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**GPO** |Nee |Ja |Nee | [Meer informatie](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 
 ## <a name="android-enrollment-methods"></a>Android-registratiemethoden
@@ -75,13 +76,13 @@ Standaard kunnen apparaten voor alle platforms worden ingeschreven in Intune. U 
 BYOD-apparaten (Bring Your Own Devices) zijn persoonlijke telefoons, tablets en pc's. BYOD-gebruikers gebruiken de bedrijfsportal-app om hun apparaten te registreren. Met dit programma hebben gebruikers toegang tot de bedrijfsresources als e-mail.
 
 ## <a name="corporate-owned-device"></a>Apparaat in bedrijfseigendom
-[Apparaten in bedrijfseigendom (COD)](corporate-identifiers-add.md) zijn telefoons, tablets en pc's die eigendom zijn van de organisatie en worden verdeeld onder de werknemers. Met registratie van COD's zijn scenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten. Een veelgebruikte manier voor de registratie van COD's is dat een beheerder of manager DEM (apparaatinschrijvingsmanager) gebruikt. iOS-apparaten kunnen rechtstreeks met de DEP-hulpprogramma's (Device Enrollment Program) van Apple worden ingeschreven. Apparaten met een IMEI-nummer kunnen ook worden geïdentificeerd en getagd als bedrijfseigendom.
+[Apparaten in bedrijfseigendom (COD)](corporate-identifiers-add.md) zijn telefoons, tablets en pc's die eigendom zijn van de organisatie en worden verdeeld onder de werknemers. Met registratie van COD's zijn scenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten. Een veelgebruikte manier voor de registratie van COD's is dat een beheerder of manager DEM (apparaatinschrijvingsmanager) gebruikt. iOS-apparaten kunnen rechtstreeks met de DEP-hulpprogramma's (Device Enrollment Program) van Apple worden ingeschreven. Apparaten met een IMEI-nummer kunnen ook geïdentificeerd en getagd worden als bedrijfseigendom.
 
 ### <a name="device-enrollment-manager"></a>Apparaatinschrijvingsmanager
 De apparaatinschrijvingsmanager (DEM) is een speciaal gebruikersaccount voor registratie en beheer van meerdere apparaten in bedrijfseigendom. Beheerders kunnen de bedrijfsportal installeren en veel apparaten zonder gebruiker registreren. Dergelijke apparaten zijn bijvoorbeeld geschikt voor gebruik bij een verkooppunt of met hulpprogramma-apps, maar niet voor gebruikers die toegang nodig hebben tot e-mail of bedrijfsresources. Meer informatie over [DEM](./device-enrollment-manager-enroll.md). 
 
 ### <a name="apple-device-enrollment-program"></a>Apple Device Enrollment Program
-Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'draadloos' implementeren op iOS-apparaten die met DEP worden gekocht en beheerd. Het apparaat wordt geregistreerd wanneer de gebruiker het apparaat de eerste keer inschakelt en de iOS-configuratieassistent uitvoert. Deze methode ondersteunt de supervisiemodus voor iOS, waarmee een apparaat kan worden geconfigureerd met een specifieke functionaliteit.
+Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'draadloos' implementeren op iOS- en macOS-apparaten die met DEP worden gekocht en beheerd. Het apparaat wordt geregistreerd wanneer de gebruiker het apparaat de eerste keer inschakelt en de configuratieassistent uitvoert. Deze methode ondersteunt de supervisiemodus voor iOS, waarmee een apparaat kan worden geconfigureerd met een specifieke functionaliteit.
 
 Meer informatie over de iOS DEP-registratie:
 

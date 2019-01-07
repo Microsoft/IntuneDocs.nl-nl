@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630014"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324970"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Internettoegang beheren met een met Microsoft Intune-beleid beveiligde browser
 
@@ -150,7 +150,7 @@ Microsoft Edge en Intune Managed Browser en de [Azure AD-toepassingsproxy]( http
 ### <a name="before-you-start"></a>Voordat u begint
 
 - Stel de interne toepassingen in via de toepassingsproxy van Azure AD.
-    - Raadpleeg [deze documentatie](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) voor het configureren van de toepassingsproxy en het publiceren van toepassingen. 
+    - Raadpleeg [deze documentatie](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started) voor het configureren van de toepassingsproxy en het publiceren van toepassingen. 
 - U moet minimaal versie 1.2.0 van de Managed Browser-app gebruiken.
 - Er is een [beleid voor app-beveiliging van Intune]( app-protection-policy.md) toegewezen aan de Managed Browser- of Microsoft Edge-app.
 
@@ -158,7 +158,7 @@ Microsoft Edge en Intune Managed Browser en de [Azure AD-toepassingsproxy]( http
     > Het kan tot 24 uur duren voordat bijgewerkte omleidingsgegevens voor de toepassingsproxy worden doorgevoerd in Managed Browser en Microsoft Edge.
 
 
-#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>Stap 1: schakel automatische omleiding naar een beveiligde browser vanuit Outlook in.
+#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>Stap 1: schakel automatische omleiding naar een beveiligde browser vanuit Outlook in
 Outlook moet zijn geconfigureerd met een beleid voor app-beveiliging waarmee de instelling **Webinhoud beperken voor weergave in de Managed Browser** beschikbaar komt.
 
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Stap 2: wijs een app-configuratiebeleid toe voor de beveiligde browser.
@@ -168,7 +168,7 @@ Met deze procedure wordt de Managed Browser- of Microsoft Edge-app geconfigureer
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-Zie de blogpost voor Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Beter samen: Intune en Azure Active Directory werken samen om de toegang voor gebruikers te verbeteren) voor meer informatie over hoe Managed Browser, Microsoft Edge en de Azure AD-toepassingsproxy samen kunnen worden gebruikt voor een naadloze (en beveiligde) toegang tot on-premises web-apps.
+Voor meer informatie over het gecombineerde gebruik van Managed Browser, Microsoft Edge en de Azure AD-toepassingsproxy voor een naadloze (en beveiligde) toegang tot on-premises web-apps, raadpleegt u de blogpost voor Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Beter samen: Intune en Azure Active Directory werken samen om de toegang voor gebruikers te verbeteren).
 
 > [!NOTE]
 > Voor Microsoft Edge wordt hetzelfde sleutel- en waardepaar gebruikt als voor Managed Browser. 
@@ -261,6 +261,19 @@ Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen 
   - `http://www.contoso.com:*`
 
   - `http://www.contoso.com: /*`
+## <a name="opening-links-within-the-intune-managed-browser-vs-microsoft-edge"></a>Koppelingen openen in de Intune Managed Browser versus Microsoft Edge 
+
+Zowel de Intune Managed Browser als Microsoft Edge worden nu beschouwd als door beleid beheerde browsers/beveiligde browsers. Tegenwoordig resulteert beleid voor app-beveiliging in webkoppelingen vanuit door Intune beheerde apps, die moeten worden geopend in een specifieke browser, afhankelijk van uw scenario en platform. 
+
+Op Android: 
+* Managed Browser indien zowel MB als Edge op het apparaat staan, tenzij de app-configuratie-instelling 'com.microsoft.intune.useEdge' is ingesteld op 'true' (waar) voor alle door Intune beheerde apps waarbij een door beleid beheerde browser is vereist.  
+* Microsoft Edge als alleen Microsoft Edge op het apparaat staat en onder beleid valt.
+* Managed Browser als alleen Managed Browser op het apparaat staat en onder beleid valt. 
+
+Op iOS, voor apps waarvoor de Intune SDK voor iOS v. 9.0.9+ is geïntegreerd: 
+* Managed Browser indien zowel MB als Edge op het apparaat staan, tenzij de app-configuratie-instelling 'com.microsoft.intune.useEdge' is ingesteld op 'true' (waar) voor alle door Intune beheerde apps waarbij een door beleid beheerde browser is vereist, **of** Microsoft Edge als Microsoft Edge is geïnstalleerd en beleid heeft ontvangen. 
+* Microsoft Edge als alleen Microsoft Edge op het apparaat staat, onder beleid valt en beleid heeft ontvangen. 
+* Managed Browser als alleen Managed Browser op het apparaat staat, onder beleid valt en beleid heeft ontvangen.
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Toegang tot logboeken van beheerde apps met Managed Browser in iOS
 

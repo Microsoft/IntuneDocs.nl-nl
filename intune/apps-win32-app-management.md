@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829144"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734286"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune (zelfstandig) - Win32-app-beheer (openbare preview)
 
@@ -69,39 +69,39 @@ Verwijs naar het bestand *license.txt* door het relatieve pad *licenses\license.
 
 Net als bij een LOB-app (Line-Of-Business) kunt u een Win32-app aan Microsoft Intune toevoegen. Dit type app wordt doorgaans intern of door een externe partij geschreven. De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoegen aan Intune.
 
-### <a name="step-1-specify-the-software-setup-file"></a>Stap 1: de locatie van het software-installatiebestand opgeven
+### <a name="step-1-specify-the-software-setup-file"></a>Stap 1: locatie van het software-installatiebestand opgeven
 
 1.  Meld u aan bij [Azure Portal](https://portal.azure.com/).
 2.  Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3.  Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps** > **Toevoegen**.
 4.  Selecteer in het app-deelvenster **Toevoegen** **Windows-app (Win32) - preview** uit de opgegeven vervolgkeuzelijst.
 
-    ![Schermopname van App toevoegen: vervolgkeuzelijst voor soort toevoegen](./media/apps-win32-app-01.png)
+    ![Schermafbeelding van de blade App toevoegen - vervolgkeuzelijst Type toevoegen](./media/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Stap 2: het app-pakketbestand uploaden
 
 1.  Selecteer in het deelvenster **App toevoegen** de optie **App-pakketbestand** om een bestand te selecteren. Het deelvenster App-pakketbestand wordt weergegeven.
 
-    ![Schermopname van App-pakketbestand](./media/apps-win32-app-02.png)
+    ![Schermafbeelding van de blade App-pakketbestand](./media/apps-win32-app-02.png)
 
 2.  Selecteer in het deelvenster **App-pakketbestand** de bladerknop. Selecteer vervolgens een Windows-installatiebestand met de extensie *.intunewin*.
 3.  Klik op **OK** wanneer u klaar bent.
 
-### <a name="step-3-configure-app-information"></a>Stap 3: de app-gegevens configureren
+### <a name="step-3-configure-app-information"></a>Stap 3: App-gegevens configureren
 
 1.  Selecteer in het deelvenster **App toevoegen** de optie **App-gegevens** om de app te configureren.
 2.  Configureer de volgende gegevens in het deelvenster **App-gegevens**. Sommige van de waarden in dit deelvenster worden mogelijk automatisch ingevuld.
     - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal wordt weergegeven. Als dezelfde app-naam twee keer voorkomt, wordt elke app in de bedrijfsportal weergegeven.
-    - **Beschrijving**: voer een beschrijving in voor de app. De beschrijving wordt weergegeven in de bedrijfsportal.
-    - **Uitgever**: voer de naam van de uitgever van de app in.
+    - **Beschrijving**: Voer een beschrijving in voor de app. De beschrijving wordt weergegeven in de bedrijfsportal.
+    - **Uitgever**: Voer de naam van de uitgever van de app in.
     - **Categorie**: selecteer een of meer van de ingebouwde app-categorieën of selecteer een categorie die u hebt gemaakt. Met categorieën kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
-    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: hiermee wordt de app duidelijk zichtbaar op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
-    - **Informatie-URL**: voer desgewenst de URL in van een website die informatie over de app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
-    - **Privacy-URL**: voer de URL in van een website die privacyinformatie over de app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
+    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: Geef de app prominent weer op de hoofdpagina van de bedrijfsportal wanneer gebruikers door apps bladeren.
+    - **Informatie-URL**: voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
+    - **Privacy-URL**: voer de URL in van een website die privacyinformatie over deze app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
     - **Ontwikkelaar**: voer de naam in van de app-ontwikkelaar (optioneel).
     - **Eigenaar**: voer een naam in voor de eigenaar van deze app (optioneel). Bijvoorbeeld **HR-afdeling**.
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
-    - **Logo**: upload een pictogram dat aan de app is gekoppeld. Het pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
+    - **Logo**: upload een pictogram dat u aan de app wilt koppelen. Het pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
 3.  Klik op **OK** wanneer u klaar bent.
 
 ### <a name="step-4-configure-app-installation-details"></a>Stap 4: app-installatiegegevens configureren
@@ -127,10 +127,10 @@ Net als bij een LOB-app (Line-Of-Business) kunt u een Win32-app aan Microsoft In
 2.  Configureer de volgende gegevens in het deelvenster **Vereisten**. Sommige van de waarden in dit deelvenster worden mogelijk automatisch ingevuld.
     - **Architectuur van besturingssysteem**: kies de architecturen die nodig zijn om de app te installeren.
     - **Minimumversie van het besturingssysteem**: selecteer de minimumversie van het besturingssysteem die nodig is om de app te installeren.
-    - **Vereiste schijfruimte (MB)**: voeg desgewenst de vrije schijfruimte op het systeemstation toe die nodig is om de app te installeren.
-    - **Vereiste fysieke geheugen (MB)**: voeg desgewenst het fysieke geheugen (RAM) toe dat nodig is om de app te installeren.
-    - **Minimumaantal vereiste logische processors**: voeg desgewenst het minimumaantal logische processors toe dat nodig is om de app te installeren.
-    - **Minimale vereiste processorsnelheid (MHz)**: voeg desgewenst de minimale processorsnelheid toe die nodig is om de app te installeren.
+    - **Vereiste schijfruimte (MB)**: voeg optioneel de vrije schijfruimte op het systeemstation toe die nodig is om de app te installeren.
+    - **Vereiste fysieke geheugen (MB)**: voeg optioneel het fysieke geheugen (RAM) toe dat nodig is om de app te installeren.
+    - **Minimumaantal vereiste logische processors**: voeg optioneel het minimumaantal logische processors toe dat nodig is om de app te installeren.
+    - **Minimale vereiste processorsnelheid (MHz)**: voeg optioneel de minimale processorsnelheid toe die nodig is om de app te installeren.
 3.  Klik op **OK** wanneer u klaar bent.
 
 ### <a name="step-6-configure-app-detection-rules"></a>Stap 6: app-detectieregels configureren
@@ -182,15 +182,17 @@ Net als bij een LOB-app (Line-Of-Business) kunt u een Win32-app aan Microsoft In
     - **Een aangepast detectiescript gebruiken**: geef het PowerShell-script op dat wordt gebruikt voor het detecteren van deze app. 
     
         1.  **Scriptbestand**: selecteer een PowerShell-script waarmee de aanwezigheid van de app op de client wordt gedetecteerd. De app worden gedetecteerd wanneer het script zowel een afsluitcode met waarde 0 retourneert als een tekenreekswaarde naar STDOUT schrijft.
-        2.  **Script uitvoeren als 32-bits proces op 64-bits clients**: selecteer **Ja** om het script uit te voeren met de referenties van de aangemelde eindgebruiker. Selecteer **Nee** (standaard) om het script in de systeemcontext uit te voeren.
+
+        2.  **Script uitvoeren als 32-bits proces op 64-bits clients** - selecteer **Ja** om het script uit te voeren in een 32-bits proces op 64-bits clients. Selecteer **Nee** (standaard) om het script in een 64-bits proces op 64-bits clients uit te voeren. 32-bits clients voeren het script uit in een 32-bits proces.
+
         3.  **Controle van scripthandtekening afdwingen**: selecteer **Ja** om te verifiëren dat het script is ondertekend door een vertrouwde uitgever, zodat het script zonder waarschuwingen of prompts kan worden uitgevoerd. Het script wordt niet geblokkeerd terwijl het wordt uitgevoerd. Selecteer **Nee** (standaard) om het script met bevestiging van de eindgebruiker uit te voeren zonder handtekeningverificatie.
     
-        Intune sidecar controleert de resultaten van het script. Het leest de waarden die door het script zijn geschreven naar de standaard uitvoerstroom (STDOUT), de standaardfoutstroom (STDERR) en de afsluitcode. Als het script wordt afgesloten met een andere waarde dan nul, mislukt het script en is de app-detectiestatus Niet geïnstalleerd. Als de afsluitcode nul is en STDOUT gegevens heeft, is de toepassingsdetectiestatus Geïnstalleerd. 
-    
-        > [!NOTE]
-        > Als het script wordt afgesloten met de waarde 0, is de uitvoering van het script gelukt. Het tweede uitvoerkanaal geeft aan dat de app is gedetecteerd: STDOUT-gegevens geven aan dat de app is gevonden op de client. We zoeken niet naar een bepaalde tekenreeks van STDOUT.
-    
-3.  Nadat u uw regel(s) hebt toegevoegd, selecteert u **Toevoegen** > **OK**.
+            Intune-agent controleert de resultaten vanuit het script. Het leest de waarden die door het script zijn geschreven naar de standaard uitvoerstroom (STDOUT), de standaardfoutstroom (STDERR) en de afsluitcode. Als het script wordt afgesloten met een andere waarde dan nul, mislukt het script en is de app-detectiestatus Niet geïnstalleerd. Als de afsluitcode nul is en STDOUT gegevens heeft, is de toepassingsdetectiestatus Geïnstalleerd. 
+
+            > [!NOTE]
+            > Als het script wordt afgesloten met de waarde 0, is de uitvoering van het script gelukt. Het tweede uitvoerkanaal geeft aan dat de app is gedetecteerd: STDOUT-gegevens geven aan dat de app is gevonden op de client. We zoeken niet naar een bepaalde tekenreeks van STDOUT.
+
+        4.  Nadat u uw regel(s) hebt toegevoegd, selecteert u **Toevoegen** > **OK**.
 
 ### <a name="step-7-configure-app-return-codes"></a>Stap 7: app-retourcodes configureren
 
@@ -203,7 +205,7 @@ Net als bij een LOB-app (Line-Of-Business) kunt u een Win32-app aan Microsoft In
     - **Gelukt**: de retourwaarde die aangeeft dat de app is geïnstalleerd.
 3.  Selecteer **OK** nadat u iets hebt toegevoegd aan de lijst met retourcodes of deze hebt aangepast.
 
-### <a name="step-8-add-the-app"></a>Stap 8: de app toevoegen
+### <a name="step-8-add-the-app"></a>Stap 8: De app toevoegen
 
 1.  Controleer in het deelvenster **App toevoegen** of de app-gegevens die u hebt geconfigureerd correct zijn.
 2.  Selecteer **Toevoegen** om de app te uploaden naar Intune.
@@ -213,7 +215,7 @@ Net als bij een LOB-app (Line-Of-Business) kunt u een Win32-app aan Microsoft In
 1.  Selecteer in het deelvenster van de app de optie **Toewijzingen**.
 2.  Selecteer **Groep toevoegen** om het deelvenster **Groep toevoegen** te openen dat is gerelateerd aan de app.
 3.  Selecteer een **toewijzingstype** voor de specifieke app:
-    - **Beschikbaar voor ingeschreven apparaten**: gebruikers installeren de app vanuit de bedrijfsportal-app of vanaf de bedrijfsportal-website.
+    - **Beschikbaar voor ingeschreven apparaten**: gebruikers installeren de app vanuit de bedrijfsportal-app of -website.
     - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen.
     - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen.
 4.  Selecteer **Opgenomen groepen** en wijs de groepen toe die deze app gaan gebruiken.
@@ -232,16 +234,16 @@ Clients van Windows 10 RS3 en hoger downloaden Intune Win32-app-inhoud via een d
 
 De eindgebruiker ziet de pop-upmeldingen van Windows voor de vereiste en beschikbare app-installaties. De volgende afbeelding toont een voorbeeld van de pop-upmelding wanneer de app-installatie pas wordt voltooid wanneer het apparaat opnieuw wordt opgestart. 
 
-![Voorbeeldschermopname van pop-upmeldingen van Windows voor een app-installatie](./media/apps-win32-app-08.png)    
+![Schermafbeelding van pop-upmeldingen van Windows voor een app-installatie](./media/apps-win32-app-08.png)    
 
 De volgende afbeelding informeert de eindgebruiker dat er app-wijzigingen worden aangebracht aan het apparaat.
 
-![Voorbeeldschermopname van de melding aan de eindgebruiker dat er app-wijzigingen worden aangebracht aan het apparaat](./media/apps-win32-app-09.png)    
+![Schermafbeelding die aan de gebruiker meldt dat er wijzigingen aan de app worden uitgevoerd](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>Problemen met Win32-apps oplossen
 Agentlogboeken op de clientcomputer staan doorgaans in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. U kunt `CMTrace.exe` gebruiken om deze logboekbestanden weer te geven. *CMTrace.exe* kan worden gedownload via [SCCM-clienthulpprogramma's](https://docs.microsoft.com/sccm/core/support/tools). 
 
-![Schermopname van de agentlogboeken](./media/apps-win32-app-10.png)    
+![Schermafbeelding van de agentlogboeken op de clientcomputer](./media/apps-win32-app-10.png)    
 
 ### <a name="troubleshooting-areas-to-consider"></a>Gebieden voor probleemoplossing om te overwegen
 - Controleer de targeting om ervoor te zorgen dat de agent op het apparaat is geïnstalleerd: een Win32-app gericht op een groep of een PowerShell-Script gericht op een groep maken een agentinstallatiebeleid voor de beveiligingsgroep.

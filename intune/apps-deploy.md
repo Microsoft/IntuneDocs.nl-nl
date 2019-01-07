@@ -1,12 +1,12 @@
 ---
 title: Apps toewijzen aan groepen in Microsoft Intune
 titlesuffix: ''
-description: Meer informatie over het toewijzen van een Intune-app aan groepen gebruikers of apparaten.
+description: Hier leest u meer informatie over het toewijzen van een Intune-app aan groepen gebruikers of apparaten met behulp van Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
-ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
+ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52267251"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734269"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Apps toewijzen aan groepen met Microsoft Intune
 
@@ -29,20 +29,22 @@ ms.locfileid: "52267251"
 
 Nadat u [een app hebt toegevoegd](apps-add.md) aan Microsoft Intune, kunt u de app toewijzen aan gebruikers en apparaten. Het is belangrijk dat u weet dat u een app kunt toewijzen aan een apparaat, ongeacht of het apparaat wordt beheerd in Intune. 
 
+> [!NOTE]
+> De Beschikbare implementatie-opzet wordt niet ondersteund voor apparaatgroepen. Alleen gebruikersgroepen worden ondersteund.
+
 In de volgende tabellen worden de verschillende opties vermeld voor het toewijzen van apps aan gebruikers en apparaten:
 
-||||
-|-|-|-|-|
-|&nbsp;|**Apparaten die zijn ingeschreven bij Intune**|**Apparaten die niet zijn ingeschreven bij Intune**|
-|Toewijzen aan gebruikers|Ja|Ja|
-|Toewijzen aan apparaten|Ja|Nee|
-|Ingepakte apps of apps waarin Intune SDK is opgenomen (voor app-beveiligingsbeleid) toewijzen|Ja|Ja|
-|Apps toewijzen als beschikbaar|Ja|Ja|
-|Apps toewijzen als vereist|Ja|Nee|
-|Apps verwijderen|Ja|Nee|
-|App-updates ontvangen van Intune|Ja|Nee|
-|Eindgebruikers installeren beschikbare apps vanuit de bedrijfsportal-app|Ja|Nee|
-|Eindgebruikers installeren beschikbare apps vanaf de webversie van de bedrijfsportal-app|Ja|Ja|
+|   | Apparaten die zijn ingeschreven met Intune | Apparaten die niet zijn ingeschreven met Intune |
+|-------------------------------------------------------------------------------------------|------------------------------|----------------------------------|
+| Toewijzen aan gebruikers | Ja | Ja |
+| Toewijzen aan apparaten | Ja | Nee |
+| Ingepakte apps of apps waarin Intune SDK is opgenomen (voor app-beveiligingsbeleid) toewijzen | Ja | Ja |
+| Apps toewijzen als beschikbaar | Ja | Ja |
+| Apps toewijzen als vereist | Ja | Nee |
+| Apps verwijderen | Ja | Nee |
+| App-updates ontvangen van Intune | Ja | Nee |
+| Eindgebruikers installeren beschikbare apps vanuit de bedrijfsportal-app | Ja | Nee |
+| Eindgebruikers installeren beschikbare apps vanaf de webversie van de bedrijfsportal-app | Ja | Ja |
 
 > [!NOTE]
 > Momenteel kunt u iOS- en Android-apps (Line-Of-Business-apps en apps die in de Store zijn gekocht) toewijzen aan apparaten die niet zijn ingeschreven bij Intune.
@@ -59,10 +61,10 @@ In de volgende tabellen worden de verschillende opties vermeld voor het toewijze
 6. Selecteer **Toewijzingen** in de sectie **Beheren** van het menu.
 7. Selecteer **Groep toevoegen** om het deelvenster **Groep toevoegen** te openen dat is gerelateerd aan de app.
 8. Selecteer een **toewijzingstype** voor de specifieke app:
-   - **Beschikbaar voor ingeschreven apparaten**: wijs de app toe aan groepen gebruikers die de app vanuit de bedrijfsportal-app of vanaf de website installeren.
-   - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen gebruikers van wie de apparaten niet zijn ingeschreven bij Intune. Apps uit de beheerde Google Play Store bieden geen ondersteuning voor deze optie. 
-   - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen.
-   - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen.
+   - **Beschikbaar voor ingeschreven apparaten**: wijs de app toe aan groepen gebruikers die de app vanuit de bedrijfsportal-app of -website installeren.
+   - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen gebruikers van wie de apparaten niet zijn ingeschreven bij Intune. Apps uit de beheerde Google Play Store bieden geen ondersteuning voor deze optie. Gebruikers moeten een Intune-licentie toegewezen krijgen, zie [Intune-licenties](licenses.md).
+   - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen. Sommige platformen hebben mogelijk aanvullende prompts voor de eindgebruiker ter bevestiging voordat de installatie van de app begint.
+   - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen als Intune de toepassing eerder op het apparaat heeft geïnstalleerd via de toewijzingen 'Beschikbaar voor ingeschreven apparaten' of 'Vereist' met behulp van dezelfde implementatie. Webkoppelingen kunnen niet worden verwijderd na implementatie.
 
      > [!NOTE]
      > **Alleen voor iOS-apps**: als u een iOS VPN-profiel hebt gemaakt met VPN-instellingen per app, kunt u het VPN-profiel selecteren onder **VPN**. Als de app wordt uitgevoerd, wordt de VPN-verbinding geopend. Zie [VPN=instellingen voor iOS-apparaten](vpn-settings-ios.md) voor meer informatie.
@@ -83,9 +85,8 @@ De app wordt nu toegewezen aan de groepen die u hebt geselecteerd. Zie [App-toew
 
 Soms wordt dezelfde app aan meerdere groepen toegewezen, maar met verschillende intenties. De informatie in de volgende tabel kan u helpen de resulterende intentie te begrijpen wanneer dit plaatsvindt:
 
-||||
-|-|-|-|
-|**Intentie van groep 1**|**Intentie van groep 2**|**Resulterende intentie**|
+| Intent van groep 1 | Intent van groep 2 | Resulterende intent |
+|-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Gebruiker vereist|Gebruiker beschikbaar|Vereist en beschikbaar|
 |Gebruiker vereist|Gebruiker niet beschikbaar|Vereist|
 |Gebruiker vereist|Gebruiker verwijderen|Vereist|

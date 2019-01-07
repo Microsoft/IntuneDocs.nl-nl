@@ -1,12 +1,12 @@
 ---
 title: Wat is appbeheer in Microsoft Intune?
 titlesuffix: ''
-description: Meer informatie over de basisbeginselen van appbeheer met Microsoft Intune.
+description: Hier vindt u meer informatie over de beheermogelijkheden voor client-apps per platform voor Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 366fab51d88587233f945fe7d880e3b6881bef45
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f156accf5b51e7fff51db738c70b0b0840d7e365
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179181"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642826"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
@@ -82,7 +82,7 @@ In se volgende vier secties worden de beschikbare opties in het deelvenster **Cl
     - [App-configuratiebeleidsregels voor Intune](app-configuration-policies-overview.md).
         - [Beleid voor de configuratie van iOS-apps](app-configuration-policies-use-ios.md).
         - [Beleid voor de configuratie van Android-apps](app-configuration-policies-use-android.md).
-- **App-beveiligingsbeleid**: selecteer deze optie om instellingen aan een app te koppelen om de bedrijfsgegevens te beveiligen die in de app worden gebruikt. U kunt bijvoorbeeld de mogelijkheden van een app om met andere apps te communiceren beperken of u kunt vereisen dat de gebruiker een pincode voor toegang tot een bedrijfsapp invoert. Zie voor meer informatie:
+- **Beleid voor app-beveiliging**: selecteer deze optie om instellingen aan een app te koppelen om de bedrijfsgegevens te beveiligen die in de app worden gebruikt. U kunt bijvoorbeeld de mogelijkheden van een app om met andere apps te communiceren beperken of u kunt vereisen dat de gebruiker een pincode voor toegang tot een bedrijfsapp invoert. Zie voor meer informatie:
     - [Beleid voor app-beveiliging](app-protection-policies.md).
 - **App selectief wissen**: selecteer deze optie om alleen bedrijfsgegevens van een geselecteerd gebruikersapparaat te verwijderen. Zie voor meer informatie:
     - [App selectief wissen](apps-selective-wipe.md).
@@ -95,7 +95,7 @@ Zie [Apps beheren](app-management.md) voor meer informatie over deze sectie.
 - **App-licenties**: apps die in de app-stores zijn gekocht via een volume-aankoopprogramma weergeven, toewijzen en bewaken. Zie voor meer informatie:
     - [iOS-apps die zijn gekocht via het volume-aankoopprogramma (VPP)](vpp-apps-ios.md).
     - [Microsoft Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](windows-store-for-business.md).
-- **Gevonden apps**: hier worden apps weergegeven die zijn toegewezen door Intune of op een apparaat zijn geïnstalleerd. Zie [Apparaatdetails weergeven met Microsoft Intune](device-inventory.md) voor meer informatie.
+- **Gedetecteerde apps**: hier worden apps weergegeven die zijn toegewezen door Intune of op een apparaat zijn geïnstalleerd. Zie [Apparaatdetails weergeven met Microsoft Intune](device-inventory.md) voor meer informatie.
 - **Installatiestatus van de app**: hier wordt de status weergegeven van een app-toewijzing die u hebt gemaakt. Zie [App-gegevens en -toewijzingen controleren met Microsoft Intune](apps-monitor.md#device-and-user-status-graphs) voor meer informatie.
 - **Status van de app-beveiliging**: hier wordt de status weergegeven van een app-beveiligingsbeleid voor een gebruiker die u selecteert.
 - **Auditlogboeken**: hier worden activiteiten door alle IT-beheerders voor de Intune-app weergegeven.
@@ -107,7 +107,7 @@ Zie [Apps bewaken](apps-monitor.md) voor meer informatie over deze sectie.
     - [iOS-apps die zijn gekocht via het volume-aankoopprogramma](vpp-apps-ios.md)
 - **Windows Enterprise-certificaat**: voor het toepassen of weergeven van de status van een certificaat voor ondertekening van programmacode die wordt gebruikt voor het distribueren van LOB-apps naar uw beheerde Windows-apparaten.
 - **Windows Symantec-certificaat**: voor het toepassen of weergeven van een Symantec-certificaat voor ondertekening van programmacode die nodig is voor het distribueren van XAP- en WP8.x-appx-bestanden naar Windows 10 Mobile-apparaten.
-- **Microsoft Store voor Bedrijven**: integratie met Microsoft Store voor Bedrijven instellen. Nadat u dit hebt gedaan, kunt u gekochte toepassingen synchroniseren met Intune, deze toewijzen en uw licentiegebruik bijhouden. Zie voor meer informatie:
+- **Microsoft Store voor Bedrijven**: een verbinding met de Microsoft Store voor Bedrijven configureren. Nadat u dit hebt gedaan, kunt u gekochte toepassingen synchroniseren met Intune, deze toewijzen en uw licentiegebruik bijhouden. Zie voor meer informatie:
     - [Microsoft Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](windows-store-for-business.md).
 - **Windows-sleutels voor extern laden**: u kunt een Windows-sleutel voor extern laden toevoegen die kan worden gebruikt om een app rechtstreeks te installeren op apparaten in plaats van de app te publiceren en downloaden vanuit de Windows Store. Zie voor meer informatie:
     - [Side-loading van een Windows-app uitvoeren](app-sideload-windows.md).

@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/09/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c073040275f63b4623ea28a25ad0940dea563b75
-ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
+ms.openlocfilehash: d5d29db61191306e60b0c3ac756620e836b56dd6
+ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53168025"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53378280"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -41,7 +41,7 @@ De SDK voor de Intune-app bevat de volgende bestanden:
 * **Microsoft.Intune.MAM.SDK.Support.Text.jar**: De klassen die nodig zijn om MAM in te schakelen in apps die gebruikmaken van klassen in de Android-ondersteuningsbibliotheek in het `android.support.text`-pakket.
 * **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: Deze jar bevat stubs voor Android-systeemklassen die alleen aanwezig zijn op nieuwere apparaten, maar waarnaar wordt verwezen door methoden in MAMActivity. Deze stub-klassen worden door nieuwere apparaten genegeerd. Deze jar is alleen nodig als uw app reflectie uitvoert op klassen die zijn afgeleid van MAMActivity. Deze meeste apps hebben deze jar niet nodig. Als u deze jar gebruikt, moet u ervoor zorgen dat alle bijbehorende klassen van ProGuard worden afgesloten. Ze staan allemaal onder het basispakket voor android
 * **com.microsoft.intune.mam.build.jar**: Een Gradle-invoegtoepassing die [helpt bij integratie van de SDK](#build-tooling).
-* **CHANGELOG.txt**: bevat een overzicht van wijzigingen in elke SDK-versie.
+* **CHANGELOG.txt**: Bevat een overzicht van wijzigingen in elke SDK-versie.
 * **THIRDPARTYNOTICES.TXT**:  Een bijdragekennisgeving waarin code van derden of OSS-code die in uw app wordt gecompileerd aan de rechthebbenden wordt toegeschreven.
 
 ## <a name="requirements"></a>Vereisten
@@ -86,7 +86,7 @@ De hulpprogramma's voeren alleen [directe vervangingen](#class-and-method-replac
 ### <a name="gradle-build-plugin"></a>Gradle-invoegtoepassing voor builds
 Als uw app niet wordt gecompileerd met Gradle, gaat u naar [Integreren met het opdrachtregelprogramma](#command-line-build-tool). 
 
-De invoegtoepassing voor de app-SDK wordt gedistribueerd als onderdeel van de SDK als **GradlePlugin/com.microsoft.intune.mam.build.jar**. Om de invoegtoepassing vindbaar te maken voor Gradle, moet deze worden toegevoegd aan het klassepad van het buildscript. De invoegtoepassing is afhankelijk van [Javassist](http://jboss-javassist.github.io/javassist/), dat ook moet worden toegevoegd. Om deze toe te voegen aan het klassepad, voegt u het volgende toe aan uw basis-`build.gradle`
+De invoegtoepassing voor de app-SDK wordt gedistribueerd als onderdeel van de SDK als **GradlePlugin/com.microsoft.intune.mam.build.jar**. Om de invoegtoepassing vindbaar te maken voor Gradle, moet deze worden toegevoegd aan het klassepad van het buildscript. De invoegtoepassing is afhankelijk van [Javassist](https://jboss-javassist.github.io/javassist/), dat ook moet worden toegevoegd. Om deze toe te voegen aan het klassepad, voegt u het volgende toe aan uw basis-`build.gradle`
 
 ```groovy
 buildscript {
@@ -170,7 +170,7 @@ Als het antwoord op beide vragen 'Ja' is, moet u die bibliotheek opnemen in `inc
 
 #### <a name="dependencies"></a>Afhankelijkheden
 
-De Gradle-invoegtoepassing heeft een afhankelijkheid van [Javassist](http://jboss-javassist.github.io/javassist/), dat beschikbaar moet zijn om de afhankelijkheid van Gradle op te lossen (zoals hierboven beschreven). Javassist wordt uitsluitend gebruikt tijdens het opbouwen van de build met de invoegtoepassing. Er wordt geen Javassist-code aan uw app toegevoegd.
+De Gradle-invoegtoepassing heeft een afhankelijkheid van [Javassist](https://jboss-javassist.github.io/javassist/), dat beschikbaar moet zijn om de afhankelijkheid van Gradle op te lossen (zoals hierboven beschreven). Javassist wordt uitsluitend gebruikt tijdens het opbouwen van de build met de invoegtoepassing. Er wordt geen Javassist-code aan uw app toegevoegd.
 
 > [!NOTE]
 > U moet versie 3.0 of hoger van de Gradle-invoegtoepassing voor Android en Gradle 4.1 of hoger gebruiken.
@@ -338,7 +338,7 @@ Deze machtigingen zijn vereist voor Azure Active Directory Authentication Librar
 
 Logboekregistratie moet vroegtijdig worden geïnitialiseerd om de meeste waarde uit de gegevens in het logboek te halen. `Application.onMAMCreate()` is doorgaans de beste plaats om logboekregistratie te initialiseren.
 
-Als u MAM-logboeken in uw app wilt ontvangen, maakt u een [Java-handler](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) en voegt u deze toe aan de `MAMLogHandlerWrapper`. Zodoende wordt `publish()` aangeroepen voor de toepassingshandler voor elk logboekbericht.
+Als u MAM-logboeken in uw app wilt ontvangen, maakt u een [Java-handler](https://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) en voegt u deze toe aan de `MAMLogHandlerWrapper`. Zodoende wordt `publish()` aangeroepen voor de toepassingshandler voor elk logboekbericht.
 
 ```java
 /**
@@ -499,12 +499,12 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
 ```
 
-... waarbij `service` een van de volgende SaveLocations is:
+De parameter `service` moet een van de volgende `SaveLocation`-waarden hebben:
 
 
-    * SaveLocation.ONEDRIVE_FOR_BUSINESS
-    * SaveLocation.LOCAL
-    * SaveLocation.SHAREPOINT
+- `SaveLocation.ONEDRIVE_FOR_BUSINESS`
+- `SaveLocation.LOCAL`
+- `SaveLocation.SHAREPOINT`
 
 De vorige methode waarmee kon worden bepaald of het overeenkomstig het beleid van een gebruiker was toegestaan om gegevens op te slaan naar verschillende locaties, was `getIsSaveToPersonalAllowed()` in dezelfde **AppPolicy**-klasse. Deze functie wordt nu **afgeschaft** en mag niet worden gebruikt. De volgende aanroep is gelijk aan `getIsSaveToPersonalAllowed()`:
 
@@ -571,7 +571,7 @@ public interface MAMNotificationReceiver {
 
 De volgende meldingen worden verzonden naar de app en enkele ervan vereisen mogelijk app-deelname:
 
-* **WIPE_USER_DATA**: deze melding wordt verzonden in een `MAMUserNotification`-klasse. Wanneer deze melding wordt ontvangen, wordt verwacht dat de app alle gegevens verwijdert die zijn gekoppeld aan de bedrijfsidentiteit die is doorgegeven met de `MAMUserNotification`. Deze melding wordt momenteel verzonden tijdens het ongedaan maken van de registratie bij de APP-WE-service. De primaire naam van de gebruiker wordt doorgaans opgegeven tijdens het inschrijvingsproces. Als u zich voor deze melding registreert, moet uw app ervoor zorgen dat alle gegevens van de gebruiker zijn verwijderd. Als u zich niet voor de melding registreert, wordt het standaardgedrag voor selectief wissen uitgevoerd.
+* **WIPE_USER_DATA**: Deze melding wordt verzonden in een `MAMUserNotification`-klasse. Wanneer deze melding wordt ontvangen, wordt verwacht dat de app alle gegevens verwijdert die zijn gekoppeld aan de bedrijfsidentiteit die is doorgegeven met de `MAMUserNotification`. Deze melding wordt momenteel verzonden tijdens het ongedaan maken van de registratie bij de APP-WE-service. De primaire naam van de gebruiker wordt doorgaans opgegeven tijdens het inschrijvingsproces. Als u zich voor deze melding registreert, moet uw app ervoor zorgen dat alle gegevens van de gebruiker zijn verwijderd. Als u zich niet voor de melding registreert, wordt het standaardgedrag voor selectief wissen uitgevoerd.
 
 * **WIPE_USER_AUXILIARY_DATA**: Apps kunnen zich voor deze melding registreren als de Intune App SDK de standaardactie voor selectief wissen moet uitvoeren, maar er nog steeds bepaalde aanvullende gegevens moeten worden verwijderd wanneer het wissen wordt uitgevoerd. Deze melding is niet beschikbaar voor apps met één identiteit, maar wordt alleen verzonden naar apps met meerdere identiteiten.
 
@@ -798,7 +798,7 @@ Result getRegisteredAccountStatus(String upn);
 
 Toepassingen die [bewust zijn van onafhankelijke clouds](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud) **moeten** de `authority` bij `registerAccountForMAM()` opgeven.  U krijgt deze door `instance_aware=true` op te geven in de [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken extraQueryParameters van ADAL, gevolgd door het intrekken van `getAuthority()` in het AuthenticationCallback AuthenticationResult.
 
-```
+```java
 mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
         new AuthenticationCallback<AuthenticationResult>() {
             @Override
@@ -817,7 +817,8 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 > [!NOTE]
 > Stel de metagegevensautoriteit AndroidManifest.xml niet in.
 <br/>
-```
+
+```xml
 <meta-data
     android:name="com.microsoft.intune.mam.aad.Authority"
     android:value="https://AAD authority/" />
@@ -892,7 +893,7 @@ De status van de geregistreerde account kan worden gewijzigd wanneer een registr
 
 ## <a name="protecting-backup-data"></a>Beveiligen van back-upgegevens
 
-Vanaf Android Marshmallow (API 23) biedt Android apps twee manieren om een back-up van gegevens te maken. Elke optie is beschikbaar voor uw app en vereist andere stappen om ervoor te zorgen dat Intune-gegevensbeveiliging correct worden geïmplementeerd. U kunt de onderstaande tabel gebruiken voor een overzicht van de bijbehorende acties die zijn vereist voor een correct gegevensbeveiligingsgedrag.  In de [Android-API-handleiding](http://developer.android.com/guide/topics/data/backup.html) vindt u meer informatie over de back-upmethoden.
+Vanaf Android Marshmallow (API 23) biedt Android apps twee manieren om een back-up van gegevens te maken. Elke optie is beschikbaar voor uw app en vereist andere stappen om ervoor te zorgen dat Intune-gegevensbeveiliging correct worden geïmplementeerd. U kunt de onderstaande tabel gebruiken voor een overzicht van de bijbehorende acties die zijn vereist voor een correct gegevensbeveiligingsgedrag.  In de [Android-API-handleiding](https://developer.android.com/guide/topics/data/backup.html) vindt u meer informatie over de back-upmethoden.
 
 ### <a name="auto-backup-for-apps"></a>Automatische back-ups voor apps
 
@@ -932,7 +933,7 @@ U kunt met Intune alle [functies voor automatische back-ups](https://developer.a
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
     ```
 
-    **Voorbeeld 3**: als wilt dat er volledige back-ups van uw app worden gemaakt, volgens de aangepaste regels die u hebt gedefinieerd in een XML-bestand, stelt u het kenmerk en de metagegevenscode in op dezelfde XML-source:
+    **Voorbeeld 3**: als u wilt dat er volledige back-ups van uw app worden gemaakt volgens de aangepaste regels die in een XML-bestand zijn gedefinieerd, stelt u het kenmerk en de metagegevenscode in op dezelfde XML-bron:
 
     ```xml
     android:fullBackupContent="@xml/my_scheme"
@@ -1413,7 +1414,7 @@ Een app die wordt geregistreerd voor `WIPE_USER_DATA` profiteert niet van het vo
 Toepassingsspecifieke sleutel-waardeparen kunnen worden geconfigureerd in de Intune-console. Deze sleutel-waardeparen worden niet geïnterpreteerd door Intune, maar eenvoudigweg doorgegeven aan de app. Toepassingen die een dergelijke configuratie moeten ontvangen, kunnen dat doen met de klassen `MAMAppConfigManager` en `MAMAppConfig`. Als er meerdere beleidsregels zijn gericht op dezelfde app, kunnen er meerdere conflicterende waarden beschikbaar zijn voor dezelfde sleutel.
 
 ### <a name="example"></a>Voorbeeld
-```
+```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
 MAMAppConfig appConfig = configManager.getAppConfig(identity);
@@ -1434,7 +1435,7 @@ LOGGER.info("Found value " + valueToUse);
 
 ### <a name="mamappconfig-reference"></a>Verwijzing naar MAMAppConfig
 
-```
+```java
 public interface MAMAppConfig {
     /**
      * Conflict resolution types for Boolean values.
@@ -1609,20 +1610,27 @@ Deze instructies zijn specifiek voor alle Android- en Xamarin-appontwikkelaars d
    > De term client-id die is gekoppeld aan uw app is hetzelfde als de term toepassings-id van Azure Portal. 
 2. Voor het inschakelen van eenmalige aanmelding is Common ADAL configuration #2 vereist.
 
-3. U schakelt standaardinschrijving in door de volgende waarde in het manifest in te voeren: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+3. Schakel standaardinschrijving in door de volgende waarde in het manifest in te voeren:
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
+   ```
    > [!NOTE] 
    > Dit moet de enige MAM-WE-integratie in de app zijn. Als er andere pogingen zijn gedaan om MAMEnrollmentManager-API's aan te roepen, kunnen er zich conflicten voordoen.
 
-4. U schakelt vereist MAM-beleid in door de volgende waarde in het manifest in te voeren: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+4. U schakelt vereist MAM-beleid in door de volgende waarde in het manifest in te voeren:
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
    > [!NOTE] 
    > Dit zorgt ervoor dat de gebruiker de bedrijfsportal op het apparaat moet downloaden en de standaardstroom voor inschrijving moet voltooien vóór gebruik.
    >
    > Dit moet de enige MAM-WE-integratie in de app zijn. Als er andere pogingen zijn gedaan om MAMEnrollmentManager-API's aan te roepen, treden er conflicten op.
 
 3. U schakelt vereist MAM-beleid in door de volgende waarde in het manifest in te voeren:
-```xml
-<meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-```
+
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
 
 > [!NOTE] 
 > Dit zorgt ervoor dat de gebruiker de bedrijfsportal op het apparaat moet downloaden en de standaardstroom voor inschrijving moet voltooien vóór gebruik.
@@ -1640,7 +1648,7 @@ Voor grote codebasissen die worden uitgevoerd zonder [ProGuard](http://proguard.
 
 * **Schermopname**: de SDK kan geen nieuwe instelwaarde voor schermopnames afdwingen bij activiteiten die Activity.onCreate al hebben doorlopen. Dit kan resulteren in een tijdsperiode waarin de app is geconfigureerd voor het uitschakelen van schermafbeeldingen maar waarin er nog steeds schermafbeeldingen kunnen worden gemaakt.
 
-* **Inhoudsoplossers gebruiken**: het Intune-beleid voor overdracht of ontvangst kan het gebruik van een inhoudsoplosser geheel of gedeeltelijk blokkeren voor toegang tot de inhoudsprovider in een andere app. Dit zorgt ervoor dat ContentResolver-methoden null retourneren of een foutwaarde afgeven (bijvoorbeeld: `openOutputStream` genereert `FileNotFoundException`, indien geblokkeerd). De app kan bepalen of het mislukte schrijven van gegevens via een inhoudsoplosser is veroorzaakt door beleid (of zou worden veroorzaakt door beleid) door de volgende oproep te plaatsen:
+* **Inhoudsoplossers gebruiken**: het Intune-beleid voor 'overdracht of ontvangst' kan het gebruik van een inhoudsoplosser geheel of gedeeltelijk blokkeren voor toegang tot de inhoudsprovider in een andere app. Dit zorgt ervoor dat ContentResolver-methoden null retourneren of een foutwaarde afgeven (bijvoorbeeld: `openOutputStream` genereert `FileNotFoundException`, indien geblokkeerd). De app kan bepalen of het mislukte schrijven van gegevens via een inhoudsoplosser is veroorzaakt door beleid (of zou worden veroorzaakt door beleid) door de volgende oproep te plaatsen:
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```

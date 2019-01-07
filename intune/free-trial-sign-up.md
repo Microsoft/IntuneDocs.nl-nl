@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/20/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 827766d76a66ea7d69ebbd3ba77efe785689e7e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189177"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737913"
 ---
-# <a name="quickstart-try-microsoft-intune-for-free"></a>Snelstartgids: Microsoft Intune gratis proberen 
+# <a name="quickstart-try-microsoft-intune-for-free"></a>Quickstart: Microsoft Intune gratis proberen 
 
 Met Microsoft Intune kun u de bedrijfsgegevens van uw werknemers beschermen door middel van het beheer van apparaten en apps. In deze snelstartgids maakt u een gratis abonnement om Intune in een testomgeving te proberen.
 
@@ -50,7 +50,7 @@ U mag Intune 30 dagen gratis proberen. Als u al een werk- of schoolaccount hebt 
 
 2. Maak een account met behulp van uw bedrijfsnaam gevolgd door **.onmicrosoft.com**. 
 
-    ![Schermafbeelding van de registratiewebpagina van de evaluatieversie van het Microsoft Intune-account](./media/account-sign-up-site-user-id.png)
+    ![Schermafbeelding van het proces voor nieuwe referenties voor het Microsoft Intune-account](./media/account-sign-up-site-user-id.png)
 
     Als uw organisatie een eigen aangepast domein heeft dat u wilt gebruiken zonder **.onmicrosoft.com**, kunt u dit wijzigen in de Office 365-beheerportal die later in dit artikel wordt beschreven.
 
@@ -106,13 +106,13 @@ Zoals hierboven is gemeld, kunt u de domeinnaam wijzigen in de Office 365-beheer
 
 3. Typ uw aangepaste domeinnaam. Selecteer vervolgens **Volgende**.
 
-   ![Schermafbeelding van Office 365-beheercentrum met Instellingen > Domeinen geselecteerd en waar een nieuwe domeinnaam wordt toegevoegd](./media/domain-custom-add.png)
+   ![Schermafbeelding van Office 365-beheercentrum - domein toevoegen](./media/domain-custom-add.png)
 
 4. Bevestig dat u de eigenaar van het domein bent dat u eerder hebt ingevoerd. 
     
     Wanneer u de optie **Code verzenden via e-mail** selecteert, wordt er een e-mail naar de geregistreerde contactpersoon van uw domein gestuurd. Nadat u de e-mail hebt ontvangen, kopieert u de code en voert u deze in bij het veld **Typ hier uw verificatiecode**. Als de verificatiecodes overeenkomen, wordt het domein toegevoegd aan uw tenant. Het e-mailadres dat wordt weergegeven, ziet er mogelijk niet bekend uit. Sommige registratieservices verbergen het echte e-mailadres dat is opgegeven tijdens de registratie van het domein.
 
-   ![Schermafbeelding van Office 365 Admin Center: de domeinnaam die wordt toegevoegd verifiëren](./media/domain-custom-verify.png)
+   ![Schermafbeelding van Office 365-beheercentrum - domein verifiëren](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > Voor meer informatie over de verificatie van TXT records raadpleegt u [DNS-records maken bij DNS-hostingproviders voor Office 365](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
@@ -127,7 +127,7 @@ Er zijn twee portals die u kunt gebruiken:
 
 In deze snelstartgids maakt u een gratis abonnement om Intune in een testomgeving te proberen. Raadpleeg [Intune instellen](setup-steps.md) voor meer informatie over het instellen van Intune.
 
-Ga door naar de volgende snelstartgids om deze serie met snelstartgidsen voor Intune te volgen.
+Als u deze reeks snelstartgidsen voor Intune wilt volgen, kunt u doorgaan met de volgende snelstartgids.
 
 > [!div class="nextstepaction"]
-> [Snelstartgids: een gebruiker maken en er een licentie aan toewijzen](quickstart-create-user.md)
+> [Quickstart: Een gebruiker maken en vervolgens een licentie aan deze gebruiker toewijzen](quickstart-create-user.md)

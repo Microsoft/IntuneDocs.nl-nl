@@ -1,12 +1,12 @@
 ---
 title: Apps zonder moderne verificatie blokkeren in Intune
 titleSuffix: Microsoft Intune
-description: Meer informatie over het blokkeren van apps die geen gebruik maken van moderne verificatie (ADAL).
+description: Meer informatie over het blokkeren van apps die geen gebruik maken van moderne verificatie (ADAL) met behulp van Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b74559eb0914d87daabaaad52902547ae7c08ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: dc9318d46892eab21e81c7eb2992f3476720abd1
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182037"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642452"
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Apps die geen gebruik maken van moderne verificatie blokkeren (ADAL)
 
@@ -29,14 +29,17 @@ ms.locfileid: "52182037"
 
 Voorwaardelijke toegang voor apps met een app-beveiligingsbeleid is afhankelijk van toepassingen die gebruikmaken van [moderne verificatie](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), een implementatie van OAuth2. De meeste huidige mobiele en desktoptoepassingen van Office maken gebruik van moderne verificatie. Er zijn echter ook apps van derden en oudere Office-apps die gebruikmaken van andere verificatiemethoden, zoals basisverificatie en op formulieren gebaseerde verificatie.
 
-Als u de toegang tot deze apps wilt blokkeren, raden we u de volgende methoden aan:
+## <a name="block-apps"></a>Apps blokkeren
 
-* Met het instellen van ADFS worden er regels van kracht die niet-moderne verificatieprotocollen blokkeren. Gedetailleerde instructies vindt u in scenario 3: [alle toegang tot O365 blokkeren behalve op browser gebaseerde toepassingen](https://technet.microsoft.com/library/dn592182.aspx).
-* Gebruik voorwaardelijke toegang voor Azure Active Directory voor **Exchange en SharePoint Online** en gebruik de PowerShell-cmdlet Set-SPOTenant voor SharePoint Online. Zie [SharePoint Online en Exchange Online instellen voor voorwaardelijke toegang voor Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols) voor gedetailleerde instructies.
+Om de toegang te blokkeren tot apps die geen moderne verificatie gebruiken, raden we aan de volgende methoden te gebruiken:
+
+- Met het instellen van ADFS worden er regels van kracht die niet-moderne verificatieprotocollen blokkeren. Gedetailleerde instructies vindt u in scenario 3: [alle toegang tot O365 blokkeren behalve op browser gebaseerde toepassingen](https://technet.microsoft.com/library/dn592182.aspx).
+- Gebruik voorwaardelijke toegang voor Azure Active Directory voor **Exchange en SharePoint Online** en gebruik de PowerShell-cmdlet Set-SPOTenant voor SharePoint Online. Zie [SharePoint Online en Exchange Online instellen voor voorwaardelijke toegang voor Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols) voor gedetailleerde instructies.
 
 
 >[!IMPORTANT]
 >Een app-certificeringsinstantie mag niet worden gebruikt in combinatie met verificatie via het certificaat op basis van Azure Active Directory (Azure AD). U mag slechts een van beide geconfigureerd hebben.
 
-### <a name="see-also"></a>Zie tevens
-[Op apps gebaseerde voorwaardelijke toegang met Intune](app-based-conditional-access-intune.md)
+## <a name="next-steps"></a>Volgende stappen
+
+- [Op apps gebaseerde voorwaardelijke toegang met Intune](app-based-conditional-access-intune.md)

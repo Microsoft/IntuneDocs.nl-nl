@@ -1,7 +1,7 @@
 ---
 title: Wijzigingenlogboek Intune-datawarehouse
 titlesuffix: Microsoft Intune
-description: Een lijst met wijzigingen in de API van Intune-datawarehouse.
+description: In dit onderwerp vindt u een overzicht van de wijzigingen voor de Microsoft Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: dfdbaffeb8872e8b121d138ee0aca0315279e718
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189942"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642758"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Wijzigingenlogboek voor de API van Intune-datawarehouse
 
@@ -95,4 +95,4 @@ U kunt rapporten en gegevensvisualisaties maken met behulp van de informatie ove
 
 ## <a name="next-steps"></a>Volgende stappen
  - Ontdek [wat er elke week nieuw is in Intune](whats-new.md). U vindt hier ook informatie over toekomstige wijzigingen, belangrijke kennisgevingen betreffende de service en informatie over oudere releases.
- - Lees het [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882).
+ - Lees het [Microsoft Intune-blog](https://go.microsoft.com/fwlink/?LinkID=273882).

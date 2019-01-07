@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 02f276c5ddcd77b2800eb7b83a269b47a0ba5233
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5180682489e693e49e8142d7912302bc8ea2f7a8
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180677"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429692"
 ---
-# <a name="intune-app-sdk-overview"></a>Overzicht van de Intune App SDK
+# <a name="microsoft-intune-app-sdk-overview"></a>Overzicht van de Microsoft Intune App SDK
 Met de Intune App SDK voor iOS en Android kan uw app worden in geschakeld voor Intune-beleid voor app-beveiliging. Deze streeft ernaar om het aantal door de app-ontwikkelaar vereiste codewijzigingen zo klein mogelijk te maken. U ziet dat u de meeste van de SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. U kunt de API's gebruiken voor het aanpassen van uw app-gedrag voor functies waarvoor de deelname van uw app is vereist, voor een verbeterde ervaring voor eindgebruikers en IT-beheerders.
 
 Als u uw app hebt ingeschakeld voor beleid voor app-beveiliging, kunnen IT-beheerders deze beleidsregels implementeren om de bedrijfsgegevens in de app te beveiligen.
@@ -75,4 +75,8 @@ Met app-beheer zonder apparaatregistratie kan de Microsoft Intune-service het be
 ### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>VPN-verbindingen met Citrix mVPN op aanvraag voor toepassingen 
 U kunt apparaten en apps beheren met een combinatie van Citrix XenMobile MDX en Microsoft Intune. Deze combinatie betekent dat u apps kunt beheren met het Intune-beveiligingsbeleid voor apps met behulp van de mVPN-technologie van Citrix. De integratie met Citrix is beschikbaar voor de Intune App SDK voor iOS en Android, en met de Intune App Wrapping Tool voor iOS en Android (met de citrix-vlag).
  
-Zie [Informatie over de MDX Toolkit](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), [Citrix MDX App Wrapper voor iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) en de [Citrix MDX App Wrapper voor Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html) voor meer informatie over Citrix MDX.
+Zie [Informatie over de MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), [Citrix MDX App Wrapper voor iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) en de [Citrix MDX App Wrapper voor Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html) voor meer informatie over Citrix MDX.
+
+## <a name="next-steps"></a>Volgende stappen
+
+- Meer informatie over [app-beveiligingsbeleid](app-protection-policy.md).

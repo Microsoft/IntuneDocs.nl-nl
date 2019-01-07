@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e1d645de0dfa9c215a9670246f43375de5153286
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185420"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738015"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -72,7 +72,7 @@ Pas een themakleur toe op de bedrijfsportal. Selecteer een standaardkleur of voe
 |**Een standaardkleur selecteren of een 6-cijferige hexadecimale code invoeren**| Kies **Standard** om een kleur op zicht te selecteren. Kies **Aangepast** om een specifieke kleur te selecteren op basis van een hexadecimale code.|
 |**Themakleur kiezen**| Selecteer een themakleur die u wilt toepassen op de bedrijfsportal. U kunt een standaardkleur kiezen of een specifieke hexadecimale code invoeren. |
 |**Weergave**| Geef op of **het logo en de naam van het bedrijf**, **alleen het bedrijfslogo** of **alleen de bedrijfsnaam** moet worden weergegeven. |
-|**Het bedrijfslogo uploaden**|U kunt het bedrijfslogo uploaden dat u in uw bedrijfsportal wilt weergeven. De tekstkleur wordt automatisch gekozen om een zo hoog mogelijk contrast te bieden. Upload voor de beste weergave een logo met een transparante achtergrond.<p><ul><li>Maximale afbeeldingsgrootte: 400 px x 400 px</li><li>Maximale bestandsgrootte: 750 kB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
+|**Het bedrijfslogo uploaden**|U kunt het bedrijfslogo uploaden dat u in uw bedrijfsportal wilt weergeven. De tekstkleur wordt automatisch gekozen om een zo hoog mogelijk contrast te bieden. Upload voor de beste weergave een logo met een transparante achtergrond.<p><ul><li>Maximale afbeeldingsgrootte: 400 px x 400 px</li><li>Maximale bestandsgrootte: 750 KB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
 
 Nadat u het logo hebt geüpload, wordt dit met de themakleur weergegeven in het voorbeeldgebied. Als u ervoor kiest om uw bedrijfsnaam weer te geven, wordt deze in het zwart of het wit weergegeven in de bedrijfsportal. De kleur wordt automatisch gekozen op basis van uw themakleur, zodat het hoogst mogelijke contrast wordt bereikt. In het voorbeeldgebied op het scherm wordt uw bedrijfsnaam niet weergegeven. 
 
@@ -81,7 +81,7 @@ Kies een logo dat er het beste uitziet op een witte of lichte achtergrond.
 
 |Veldnaam|Meer informatie|
 |---|---|
-|**Uw logo uploaden**| Deze optie is beschikbaar als u ervoor kiest om het bedrijfslogo weer te geven. Upload voor de beste weergave een logo met een transparante achtergrond.<p><ul><li>Maximale afbeeldingsgrootte: 400 px x 400 px</li><li>Maximale bestandsgrootte: 750 kB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
+|**Uw logo uploaden**| Deze optie is beschikbaar als u ervoor kiest om het bedrijfslogo weer te geven. Upload voor de beste weergave een logo met een transparante achtergrond.<p><ul><li>Maximale afbeeldingsgrootte: 400 px x 400 px</li><li>Maximale bestandsgrootte: 750 KB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
 
 ### <a name="brand-image-for-company-portal"></a>Merkafbeelding toevoegen voor de bedrijfsportal
 
@@ -89,7 +89,7 @@ Geef een merkafbeelding weer die de huisstijl van uw bedrijf uitstraalt. Nadat u
 
 |Veldnaam|Meer informatie|
 |---|---|
-|**Uw merkafbeelding uploaden**| Deze optie is beschikbaar zodat een achtergrondafbeelding kan worden weergegeven op de profielpagina van de gebruiker in de bedrijfsportal-app.<p>*Opmerking*: de afbeelding wordt op verschillende platforms mogelijk anders weergegeven.<p><ul><li>Aanbevolen breedte van afbeelding: groter dan 1125 px, maar niet minder dan 640 px</li><li>Maximale afbeeldingsgrootte: 1,3 MB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
+|**Uw merkafbeelding uploaden**| Deze optie is beschikbaar zodat een achtergrondafbeelding kan worden weergegeven op de profielpagina van de gebruiker in de bedrijfsportal-app.<p>*Opmerking*: de afbeelding wordt op verschillende platformen mogelijk anders weergegeven.<p><ul><li>Aanbevolen breedte van afbeelding: groter dan 1125 px, maar niet minder dan 640 px</li><li>Maximale afbeeldingsgrootte: 1,3 MB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
 
 Met de juiste merkafbeelding kan het vertrouwen van de gebruiker in de bedrijfsportal-app worden versterkt, doordat de app uw huisstijl weerspiegelt. Hier volgen enkele tips die u kunt gebruiken voor het verkrijgen, kiezen en optimaliseren van een afbeelding voor de bedrijfsportal. 
 
@@ -138,7 +138,7 @@ De volgende sneltoetsen zijn beschikbaar in de Windows-bedrijfsportal-app.
 
 Eindgebruikers zien ook de beschikbare snelkoppelingen in de Bedrijfsportal-app in Windows.
 
-![Schermafbeelding van beschikbare snelkoppelingen in de Bedrijfsportal-app in Windows](media/company-portal-app/company-portal-app-01.png)
+![Schermafbeelding van beschikbare sneltoetsen in de Windows-bedrijfsportal](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>Volgende stappen
 

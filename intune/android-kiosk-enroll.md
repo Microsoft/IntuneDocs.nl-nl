@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031990"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626081"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Registratie van kioskapparaten voor Android Enterprise in Intune instellen
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android ondersteunt kioskapparaten waarvoor de COSU-oplossing (Corporate-Owned, Single-Use) is ingesteld. Dergelijke apparaten worden voor een bepaald doel gebruikt, zoals digitale ondertekening, het afdrukken van tickets of voorraadbeheer. Beheerders vergrendelen het gebruik van een apparaat voor een beperkt aantal apps en webkoppelingen. Ook wordt voorkomen dat gebruikers andere apps kunnen toevoegen of andere acties op het apparaat kunnen uitvoeren.
+Android ondersteunt kioskapparaten met behulp van oplossingen voor [Specifieke apparaten](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use). Dergelijke apparaten worden voor een bepaald doel gebruikt, zoals digitale ondertekening, het afdrukken van tickets of voorraadbeheer. Beheerders vergrendelen het gebruik van een apparaat voor een beperkt aantal apps en webkoppelingen. Ook wordt voorkomen dat gebruikers andere apps kunnen toevoegen of andere acties op het apparaat kunnen uitvoeren.
 
 Intune helpt u met de implementatie van apps en instellingen op Android-kioskapparaten. Zie [Android Enterprise-vereisten](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) voor specifieke informatie over Android Enterprise.
 

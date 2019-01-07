@@ -1,12 +1,12 @@
 ---
 title: De Windows 10-bedrijfsportal-app handmatig toevoegen
 titleSuffix: Microsoft Intune
-description: Meer informatie over het handmatig toevoegen van de Windows 10-bedrijfsportal-app.
+description: Informatie over hoe uw werknemers handmatig de Windows 10-bedrijfsportal-app kunnen toevoegen uit de Microsoft Store.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190265"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642588"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>De Windows 10-bedrijfsportal-app handmatig toevoegen met Microsoft Intune
 
@@ -51,7 +51,7 @@ Uw gebruikers kunnen de bedrijfsportal-app zelf installeren vanuit Microsoft Sto
 
 7. Download alle pakketten onder ‘Vereiste frameworks’ door **Downloaden** te selecteren.  
     Deze actie moet worden uitgevoerd voor x86-, x64- en ARM-architecturen, in totaal 12 pakketten.
-8. Voordat u de bedrijfsportal-app uploadt naar Intune, maakt u een map (bijvoorbeeld C:\Company Portal) waarin de pakketten als volgt zijn gestructureerd:
+8. Voordat u de bedrijfsportal-app uploadt naar Intune, maakt u een map (bijvoorbeeld: C:\Company Portal) waarin de pakketten op de volgende manier zijn geordend:
    - Plaats het bedrijfsportalpakket in C:\Bedrijfsportal. Maak op deze locatie tevens een submap *Afhankelijkheden*.  
 
      ![De map Afhankelijkheden waarin het APPXBUN-bestand is opgeslagen](./media/Win10CP-Dependencies-save.png)

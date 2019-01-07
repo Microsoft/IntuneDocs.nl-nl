@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032048"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734235"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Gegevens selectief wissen met toegangsacties voor het app-beveiligingsbeleid in Intune
 
@@ -110,7 +110,7 @@ De volgende lijst bevat de algemene lijst met acties:
 
 In sommige gevallen, zoals voor de instelling **Minimale versie van het besturingssysteem**, kunt u de instelling zo configureren dat alle toepasselijke acties worden uitgevoerd op basis van verschillende versienummers. 
 
-![Schermafbeelding van de toegangsacties voor app-beveiliging in Intune - Minimale versie van het besturingssysteem](./media/apps-selective-wipe-access-actions05.png)
+![Schermafbeelding van de toegangsacties voor app-beveiliging - Minimale versie van het besturingssysteem](./media/apps-selective-wipe-access-actions05.png)
 
 Wanneer een instelling volledig is geconfigureerd, wordt de rij weergegeven in de alleen-lezenweergave en kan de rij op elk moment worden bewerkt. Bovendien is er voor de rij een vervolgkeuzelijst beschikbaar in de kolom **Instelling**. Instellingen die al zijn geconfigureerd en waarvoor meerdere acties niet zijn toegestaan, kunnen niet worden geselecteerd in de vervolgkeuzelijst.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/15/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c98eb7795ca01db9a78b428faf433109928cff76
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e2958b536aa6603fc9cde14e679a05e4a9d5f4dd
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182262"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266967"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
@@ -70,13 +70,13 @@ In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze inf
 
 1. Selecteer **App-pakketgegevens** in het deelvenster **App toevoegen**.
 2. Voer in het deelvenster **App-pakketgegevens** het volgende uit:
-    - **Pakketnaam**: voer de naam van het app-pakket in zoals deze wordt weergegeven in de bedrijfsportal. Zorg ervoor dat alle pakketnamen die u gebruikt, uniek zijn. Als dezelfde naam van een app-pakket twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
-    - **Beschrijving app-pakket**: voer een beschrijving in voor het app-pakket. Hier kunt u bijvoorbeeld de apps vermelden die in het pakket zijn opgenomen.
+    - **Naam pakket**: voer de naam van het app-pakket in zoals deze wordt weergegeven in de bedrijfsportal. Zorg ervoor dat alle pakketnamen die u gebruikt, uniek zijn. Als dezelfde naam van een app-pakket twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
+    - **Beschrijving pakket**: voer een beschrijving in voor het app-pakket. Hier kunt u bijvoorbeeld de apps vermelden die in het pakket zijn opgenomen.
     - **Uitgever**: Microsoft wordt weergegeven als de uitgever.
     - **Categorie**: selecteer een of meer ingebouwde app-categorieën of een categorie die u hebt gemaakt (optioneel). Met deze instellingen kunnen gebruikers het app-pakket gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
-    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: selecteer deze instelling om het app-pakket prominent weer te geven op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
-    - **Informatie-URL**: voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Privacy-URL**: voer de URL in van een website die privacyinformatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
+    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: selecteer deze optie om het app-pakket prominent weer te geven op de hoofdpagina van de bedrijfsportal wanneer gebruikers naar apps bladeren.
+    - **Informatie-URL**: Voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
+    - **Privacy-URL**: (optioneel) Voer de URL in van een website die privacyinformatie over deze app bevat. De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
     - **Ontwikkelaar**: Microsoft wordt weergegeven als de ontwikkelaar.
     - **Eigenaar**: Microsoft wordt weergegeven als de eigenaar.
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
@@ -105,7 +105,7 @@ In deze stap configureert u de installatieopties voor het app-pakket. De instell
         Zie [Overzicht van updatekanalen voor Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) voor meer informatie.
 
     - **MSI verwijderen van de apparaten van eindgebruikers**: kies of u bestaande Office MSI-apps wilt verwijderen van apparaten van eindgebruikers. De installatie mislukt als er zich bestaande MSI-apps op apparaten van eindgebruikers bevinden. De te verwijderen apps zijn niet beperkt tot de apps die zijn geselecteerd voor de installatie in **App-suite configureren**, omdat hierdoor alle Office-apps (MSI) van het apparaat van de eindgebruiker worden verwijderd. Zie [Bestaande MSI-versies van Office verwijderen bij een upgrade naar Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) voor meer informatie. Wanneer u Intune Office opnieuw op de computers van uw eindgebruikers installeert, krijgen eindgebruikers automatisch dezelfde taalpakketten als bij eerdere .MSI Office installaties. 
-    - **Gebruiksrechtovereenkomst van de app automatisch accepteren**: selecteer deze optie als eindgebruikers de gebruiksrechtovereenkomst niet hoeven te accepteren. Intune accepteert de overeenkomst automatisch.
+    - **Gebruiksrechtovereenkomst voor eindgebruikers van de app automatisch accepteren**: selecteer deze optie als het voor eindgebruikers niet vereist is om de gebruiksrechtovereenkomst te accepteren. Intune accepteert de overeenkomst automatisch.
     - **Activering van gedeelde computers gebruiken**: selecteer deze optie wanneer meerdere gebruikers een computer delen. Zie [Overzicht van activering van gedeelde computers voor Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus) voor meer informatie.
     - **Talen**: Office wordt automatisch geïnstalleerd in de ondersteunde talen die met Windows zijn geïnstalleerd op het apparaat van de eindgebruiker. Selecteer deze opties als u aanvullende talen wilt installeren met het app-pakket. <p></p>
     U kunt aanvullende talen implementeren voor Office 365 Pro Plus-apps die via Intune worden beheerd. De lijst met beschikbare talen bevat het taalpakket **Type** (kern, gedeeltelijk en spellingcontrole). Selecteer in Azure Portal **Microsoft Intune** > **Client-apps** > **Apps** > **Toevoegen**. In de lijst **App-type** op de blade **App toevoegen** selecteert u **Windows 10** onder **Office 365-suite**. Selecteer **Talen** in de blade **Instellingen voor app-suite**. Zie voor meer informatie het [overzicht van de implementatie van talen in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
@@ -120,33 +120,31 @@ In de volgende tabellen worden algemene foutcodes en hun betekenis weergegeven.
 
 ### <a name="status-for-office-csp"></a>Status voor Office CSP
 
-||||
-|-|-|-|
-|Status|Fase|Beschrijving|
-|1460 (ERROR_TIMEOUT)|Download|Het downloaden van de Office Deployment Tool is mislukt|    
-|13 (ERROR_INVALID_DATA)|-|De handtekening van de gedownloade Office Deployment Tool kan niet worden geverifieerd|
-|Foutcode van CertVerifyCertificateChainPolicy|-|De certificeringscontrole van de gedownloade Office Deployment Tool is mislukt|    
-|997|WIP|Wordt geïnstalleerd|
-|0|Na de installatie|Installatie voltooid|    
-|1603 (ERROR_INSTALL_FAILURE)|-|Een controle op vereisten is mislukt, zoals:<ul><li>SxS (Er is geprobeerd te installeren terwijl 2016 MSI is geïnstalleerd)</li><li>Versie komt niet overeen</li><li>Overige</li></ul>|  
-|0x8000ffff (E_UNEXPECTED)|-|Er is geprobeerd te verwijderen zonder Office Klik-en-Klaar op de machine|     
-|17002|-|Het scenario (installatie) kan niet worden voltooid. Mogelijke oorzaken:<ul><li>Installatie is geannuleerd door gebruiker</li><li>Installatie is geannuleerd vanwege een andere installatie</li><li>Geen schijfruimte meer tijdens installatie</li><li>Onbekende taal-id</li></ul>|
-|17004|-|Onbekende SKU’s|   
+| Status | Fase | Beschrijving |
+|--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1460 (ERROR_TIMEOUT) | Download | Het downloaden van de Office Deployment Tool is mislukt |
+| 13 (ERROR_INVALID_DATA) | - | De handtekening van de gedownloade Office Deployment Tool kan niet worden geverifieerd |
+| Foutcode van CertVerifyCertificateChainPolicy | - | De certificeringscontrole van de gedownloade Office Deployment Tool is mislukt |
+| 997 | WIP | Wordt geïnstalleerd |
+| 0 | Na de installatie | Installatie voltooid |
+| 1603 (ERROR_INSTALL_FAILURE) | - | Controle van vereisten is mislukt, zoals SxS (Er is geprobeerd te installeren terwijl 2016 MSI is geïnstalleerd)Versie komt niet overeenOverige |
+| 0x8000ffff (E_UNEXPECTED) | - | Er is geprobeerd te verwijderen zonder Office Klik-en-Klaar op de machine |
+| 17002 | - | Het scenario (installatie) kan niet worden voltooid. Mogelijke redenen:Installatie geannuleerd door gebruikerInstallatie geannuleerd door een andere installatieOnvoldoende schijfruimte tijdens installatieOnbekende taal-ID |
+| 17004 | - | Onbekende SKU’s |
 
 
 ### <a name="office-deployment-tool-error-codes"></a>Office Deployment Tool-foutcodes
 
-|||||
-|-|-|-|-|
-|Scenario|Retourcode|Gebruikersinterface|Opmerking|
-|Er is geprobeerd de installatie te verwijderen zonder actieve Klik-en-Klaar-installatie|-2147418113, 0x8000ffff of 2147549183|Foutcode: 30088-1008<br>Foutcode: 30125-1011 (404)|Office Deployment Tool|
-|Installeren terwijl de MSI-versie is geïnstalleerd|1603|-|Office Deployment Tool|
-|De installatie is geannuleerd door de gebruiker of door een andere installatie|17002|-|Klik-en-Klaar|
-|Er is geprobeerd een 64-bits versie te installeren op een apparaat waarop de 32-bits versie is geïnstalleerd.|1603|-|Retourcodes Office Deployment Tool|
-|Er is geprobeerd een onbekende SKU te installeren (dit is geen geldige use case voor Office CSP omdat er alleen geldige SKU’s mogen worden doorgegeven)|17004|-|Klik-en-Klaar|
-|Gebrek aan ruimte|17002|-|Klik-en-Klaar|
-|Kan de Klik-en-Klaar-client niet starten (onverwacht)|17000|-|Klik-en-Klaar|
-|De Klik-en-Klaar-client kan het scenario niet in de wachtrij zetten (onverwacht)|17001|-|Klik-en-Klaar|
+| Scenario | Retourcode | Gebruikersinterface | Opmerking |
+|------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
+| Er is geprobeerd de installatie te verwijderen zonder actieve Klik-en-Klaar-installatie | -2147418113, 0x8000ffff of 2147549183 | Foutcode: 30088-1008Foutcode: 30125-1011 (404) | Office Deployment Tool |
+| Installeren terwijl de MSI-versie is geïnstalleerd | 1603 | - | Office Deployment Tool |
+| De installatie is geannuleerd door de gebruiker of door een andere installatie | 17002 | - | Klik-en-Klaar |
+| Er is geprobeerd een 64-bits versie te installeren op een apparaat waarop de 32-bits versie is geïnstalleerd. | 1603 | - | Retourcodes Office Deployment Tool |
+| Er is geprobeerd een onbekende SKU te installeren (dit is geen geldige use case voor Office CSP omdat er alleen geldige SKU’s mogen worden doorgegeven) | 17004 | - | Klik-en-Klaar |
+| Gebrek aan ruimte | 17002 | - | Klik-en-Klaar |
+| Kan de Klik-en-Klaar-client niet starten (onverwacht) | 17000 | - | Klik-en-Klaar |
+| De Klik-en-Klaar-client kan het scenario niet in de wachtrij zetten (onverwacht) | 17001 | - | Klik-en-Klaar |
 
 ## <a name="next-steps"></a>Volgende stappen
 

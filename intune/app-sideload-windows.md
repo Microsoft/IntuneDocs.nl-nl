@@ -5,7 +5,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c96d66a11f49db68d20511aeae9b2abbab53b172
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4e37675186ef21d219627ec3ec1973e6e9944d1d
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181239"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737964"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Line-of-business-apps ondertekenen, zodat ze kunnen worden geïmplementeerd op Windows-apparaten met Intune
 
@@ -34,10 +34,10 @@ Gebruik onderstaande stappen om de vereiste certificaten op te halen en de apps 
 
 
 1. **Aanmelden als een Microsoft-ontwikkelaars**<br>
-   [Meld u aan als een Microsoft-ontwikkelaar](http://go.microsoft.com/fwlink/?LinkId=268442) met de zakelijke accountgegevens die u hebt gebruikt bij het aanmelden om het account van uw bedrijf te kopen. Deze aanvraag moet worden geautoriseerd door een bedrijfsverantwoordelijke voordat u het certificaat voor ondertekening van programmacode ontvangt.
+   [Meld u aan als een Microsoft-ontwikkelaar](https://go.microsoft.com/fwlink/?LinkId=268442) met de zakelijke accountgegevens die u hebt gebruikt bij het aanmelden om het account van uw bedrijf te kopen. Deze aanvraag moet worden geautoriseerd door een bedrijfsverantwoordelijke voordat u het certificaat voor ondertekening van programmacode ontvangt.
 
 2. **Een zakelijk Symantec-certificaat kopen**<br>
-  Koop een certificaat op de [Symantec-website](http://go.microsoft.com/fwlink/?LinkId=268441) met uw Symantec-id. Nadat u het certificaat hebt gekocht, ontvangt de zakelijke goedkeurder die u hebt opgegeven bij de aanmelding als Microsoft-ontwikkelaar een e-mail met een aanvraag voor goedkeuring van de certificaataanvraag. Lees de veelgestelde vragen over het inschrijven van Windows-apparaten in [Waarom is een Symantec-certificaat vereist voor Windows Phone?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) voor meer informatie over het vereiste Symantec-certificaat.
+  Koop een certificaat op de [Symantec-website](https://go.microsoft.com/fwlink/?LinkId=268441) met uw Symantec-id. Nadat u het certificaat hebt gekocht, ontvangt de zakelijke goedkeurder die u hebt opgegeven bij de aanmelding als Microsoft-ontwikkelaar een e-mail met een aanvraag voor goedkeuring van de certificaataanvraag. Lees de veelgestelde vragen over het inschrijven van Windows-apparaten in [Waarom is een Symantec-certificaat vereist voor Windows Phone?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) voor meer informatie over het vereiste Symantec-certificaat.
 
 3.  **Certificaten importeren**<br>
     Zodra de aanvraag is goedgekeurd, ontvangt u een e-mail met instructies voor het importeren van certificaten. Volg de instructies in de e-mail om de certificaten te importeren.
@@ -45,14 +45,14 @@ Gebruik onderstaande stappen om de vereiste certificaten op te halen en de apps 
 4.  **Geïmporteerde certificaten verifiëren**<br>
     Ga naar de module **Certificaten**, klik met de rechtermuisknop op **Certificaten** en selecteer **Certificaten zoeken** om te controleren of de certificaten correct zijn geïmporteerd. Typ 'Symantec' in het veld **Bevat** en klik op **Nu zoeken**. De certificaten die u hebt geïmporteerd, worden weergegeven in de resultaten.
 
-    ![Het Symantec-certificaat zoeken](./media/wit.gif)
+    ![De certificaatresultaten worden vermeld in het dialoogvenster Certificaten zoeken](./media/wit.gif)
 
 5. **Een handtekeningcertificaat exporteren**<br>
     Wanneer u hebt gecontroleerd of de certificaten aanwezig zijn, kunt u het PFX-bestand exporteren om de bedrijfsportal te ondertekenen. Selecteer het Symantec-certificaat met 'Handtekening bij programmacode' onder **Beoogde doeleinden** . Klik met de rechtermuisknop op het certificaat voor de ondertekening van de programmacode en selecteer **Exporteren**.
 
     ![Het handtekeningcertificaat exporteren](./media/wit-walk-cert2.gif)
 
-    Selecteer **Ja, de persoonlijke sleutel exporteren**in de wizard **Certificaat exporteren** en klik vervolgens op **Volgende**. **Selecteer Personal Information Exchange - PKCS nr. 12 (.PFX)** en schakel **Indien mogelijk exporteren met alle certificaten in het certificeringspad** in. Voltooi de wizard. Zie [Certificaten exporteren met de persoonlijke sleutel](http://go.microsoft.com/fwlink/?LinkID=203031)voor meer informatie.
+    Selecteer **Ja, de persoonlijke sleutel exporteren**in de wizard **Certificaat exporteren** en klik vervolgens op **Volgende**. **Selecteer Personal Information Exchange - PKCS nr. 12 (.PFX)** en schakel **Indien mogelijk exporteren met alle certificaten in het certificeringspad** in. Voltooi de wizard. Zie [Certificaten exporteren met de persoonlijke sleutel](https://go.microsoft.com/fwlink/?LinkID=203031)voor meer informatie.
 
 6.  **De app uploaden naar Intune**<br>
     Upload het ondertekende app-bestand en uw certificaat voor ondertekening van programmacode om de app beschikbaar te stellen aan uw eindgebruikers.
@@ -72,32 +72,32 @@ U kunt de bedrijfsportal-app implementeren op Windows-apparaten (inclusief Windo
 
 1.  **De bedrijfsportal downloaden**
 
-    Als u de bedrijfsportal-app wilt implementeren met Intune, downloadt u de [Microsoft Intune-bedrijfsportal-app voor Windows Phone 8.1](http://go.microsoft.com/fwlink/?LinkId=615799) vanuit het Downloadcentrum en voert u het zelfuitpakkende bestand (.exe) uit. Dit bestand bevat twee bestanden:
+    Als u de bedrijfsportal-app wilt implementeren met Intune, downloadt u de [Microsoft Intune-bedrijfsportal-app voor Windows Phone 8.1](https://go.microsoft.com/fwlink/?LinkId=615799) vanuit het Downloadcentrum en voert u het zelfuitpakkende bestand (.exe) uit. Dit bestand bevat twee bestanden:
 
     -   CompanyPortal.appx: de installatie-app van de bedrijfsportal voor Windows Phone 8.1
 
     -   WinPhoneCompanyPortal.ps1:  een PowerShell-script waarmee u het bestand van de bedrijfsportal-app kunt ondertekenen, zodat het kan worden geïmplementeerd naar Windows Phone 8.1-apparaten
 
-    U kunt ook de Windows Phone 8.1-bedrijfsportal (offline gelicentieerd pakket) of de Windows 10-bedrijfsportal (offline gelicentieerd pakket) downloaden via [Microsoft Store voor Bedrijven](http://businessstore.microsoft.com/). De bedrijfsportal-app moet worden opgehaald met een offline-licentie en het juiste pakket moet worden gedownload voor offlinegebruik. In de vermeldingen voor het Windows 8- en Windows Phone 8-platform in de selectie wordt verwezen naar de versies voor Windows 8.1. Zie [Apps beheren die u hebt aangeschaft in Microsoft Store voor Bedrijven](windows-store-for-business.md) als u wilt weten hoe u dit met Intune kunt doen.
+    U kunt ook de Windows Phone 8.1-bedrijfsportal (offline gelicentieerd pakket) of de Windows 10-bedrijfsportal (offline gelicentieerd pakket) downloaden via [Microsoft Store voor Bedrijven](https://businessstore.microsoft.com/). De bedrijfsportal-app moet worden opgehaald met een offline-licentie en het juiste pakket moet worden gedownload voor offlinegebruik. In de vermeldingen voor het Windows 8- en Windows Phone 8-platform in de selectie wordt verwezen naar de versies voor Windows 8.1. Zie [Apps beheren die u hebt aangeschaft in Microsoft Store voor Bedrijven](windows-store-for-business.md) als u wilt weten hoe u dit met Intune kunt doen.
 
-2.  **De Windows Phone SDK downloaden** Download de Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) en installeer de SDK op uw computer. Deze SDK is nodig om een token voor toepassingsinschrijving te genereren.
+2.  **De Windows Phone SDK downloaden** Download de Windows Phone SDK 8.0](https://go.microsoft.com/fwlink/?LinkId=615570) en installeer de SDK op uw computer. Deze SDK is nodig om een token voor toepassingsinschrijving te genereren.
 
 3.  **Een AETX-bestand genereren** Genereer een bestand met een registratietoken van de toepassing (.aetx) met het Symantec PFX-bestand met AETGenerator.exe, onderdeel van Windows Phone SDK 8.0. Zie [Een inschrijvingstoken van de toepassing  genereren voor Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)voor informatie over het maken van een AETX-bestand.
 
-4.  **De Windows SDK voor Windows 8.1 downloaden** Download en installeer de [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525). Het PowerShell-script dat is opgenomen in de bedrijfsportal-app gebruikt de standaardinstallatielocatie `${env:ProgramFiles(x86)}\Windows Kits\8.1`. Als u op een andere locatie wilt installeren, moet u de locatie in een cmdlet-parameter opnemen.
+4.  **De Windows SDK voor Windows 8.1 downloaden** Download en installeer de [Windows Phone SDK](https://go.microsoft.com/fwlink/?LinkId=613525) (https://go.microsoft.com/fwlink/?LinkId=613525). Het PowerShell-script dat is opgenomen in de bedrijfsportal-app gebruikt de standaardinstallatielocatie `${env:ProgramFiles(x86)}\Windows Kits\8.1`. Als u op een andere locatie wilt installeren, moet u de locatie in een cmdlet-parameter opnemen.
 
 5.  **De code van de app ondertekenen met PowerShell** Open als beheerder **Windows PowerShell** op de hostcomputer waarop de Windows SDK is geïnstalleerd en het Symantec Enterprise-certificaat voor ondertekening van de mobiele code staat, ga naar het bestand Sign-WinPhoneCompanyPortal.ps1 en voer het script uit.
 
     **Voorbeeld 1**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -AetxPath 'C:\signing\cert.aetx'
     ```
     In dit voorbeeld wordt de CompanyPortal.appx ondertekend op C:\temp\ en wordt  CompanyPortalEnterpriseSigned.appx gemaakt. Het PFX-wachtwoord 1234 wordt gebruikt en de uitgevers-id uit het PFX-bestand wordt gelezen. De ondernemings-id wordt ook gelezen uit het cert.aetx-bestand.
 
     **Voorbeeld 2**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -PublisherId 'OID.0.9.2342.19200300.100.1.1=1000000001, CN="Test, Inc.", OU=Test 1' -EnterpriseId 1000000001
     ```
     In dit voorbeeld wordt de CompanyPortal.appx ondertekend op C:\temp\ en wordt  CompanyPortalEnterpriseSigned.appx gemaakt. Het PFX-wachtwoord 1234 wordt gebruikt samen met de opgegeven uitgevers-ID.
@@ -128,7 +128,7 @@ Het Symantec-certificaat waarmee mobiele apps voor Windows en Windows Phone word
 
 1.  Zoek naar een e-mail over de vereiste vernieuwing die ongeveer 14 dagen vóór de vervaldatum van het certificaat ontvangt van Symantec. Deze e-mail bevat richtlijnen van Symantec om uw zakelijke certificaat te vernieuwen.
 
-    Ga naar [www.symantec.com](http://www.symantec.com) of bel +1-877-438-8776 of +1-650-426-3400 voor meer informatie over Symantec-certificaten.
+    Ga naar [www.symantec.com](https://www.symantec.com) of bel +1-877-438-8776 of +1-650-426-3400 voor meer informatie over Symantec-certificaten.
 
 2.  Ga naar de website (bijvoorbeeld: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) en meld u aan met de Symantec-uitgevers-id en het e-mailadres dat is gekoppeld aan het certificaat. Start het vernieuwingsproces op het apparaat waarop u daarna ook het certificaat gaat downloaden.
 
@@ -155,7 +155,7 @@ U kunt de Windows 10-bedrijfsportal-app handmatig rechtstreeks implementeren van
 1. Meld u aan bij uw account in [Microsoft Store voor Bedrijven](https://www.microsoft.com/business-store) en schaf de versie met de **offlinelicentie** van de bedrijfsportal-app aan.  
 2. Zodra de app is aangeschaft, selecteert u de app op de pagina **Inventaris**.  
 3. Selecteer **Windows 10 alle apparaten** als **Platform**. Klik vervolgens op de betreffende **Architectuur** en download. Een app-licentiebestand is niet nodig voor deze app.
-![Afbeelding van Windows 10 alle apparaten en architectuur X86-pakketdetails voor downloaden](./media/Win10CP-all-devices.png)
+![Afbeelding van Windows 10 X86-pakketdetails voor downloaden](./media/Win10CP-all-devices.png)
 4. Download alle pakketten onder "Vereiste frameworks". Dit moet worden uitgevoerd voor x86-, x64- en ARM-architecturen. Totaal zijn dit 9 pakketten, zoals hieronder weergegeven.
 
 ![Afbeelding van afhankelijkheidsbestanden voor downloaden ](./media/Win10CP-dependent-files.png)
@@ -164,7 +164,7 @@ U kunt de Windows 10-bedrijfsportal-app handmatig rechtstreeks implementeren van
    ![Afbeelding van de map Afhankelijkheden waarin het APPXBUN-bestand is opgeslagen](./media/Win10CP-Dependencies-save.png)
    2. Plaats de negen afhankelijkheidspakketten in de map Afhankelijkheden.  
    Als de afhankelijkheden niet in deze indeling worden geplaatst, worden ze niet herkend door Intune en kunnen ze niet worden geüpload tijdens de pakket-upload. Het uploaden mislukt met de volgende fout.  
-   ![De Windows-app-afhankelijkheid voor dit software-installatieprogramma is niet gevonden in de toepassingsmap. U kunt doorgaan met het maken en implementeren van deze toepassing, maar deze kan pas worden uitgevoerd als de ontbrekende Windows-app-afhankelijkheid beschikbaar is.](./media/Win10CP-error-message.png)
+   ![Foutbericht - de Windows-app-afhankelijkheid moet worden opgegeven.](./media/Win10CP-error-message.png)
 6. Ga terug naar Intune en upload the Bedrijfsportal-app als nieuwe app. Implementeer als vereiste app naar de gewenste set doelgebruikers.  
 
 Zie [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Een appxbundle met afhankelijkheden implementeren via Microsoft Intune MDM) voor meer informatie over hoe Intune afhankelijkheden voor universele apps verwerkt.  

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dd18b882af8c685bb640468ef7076ed6317126a5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 685803f6ef30994a943969e3642bd8349dcf9f6e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184604"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324936"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
 
@@ -100,14 +100,14 @@ De tekens \{\{ en \}\} worden alleen gebruikt door tokentypen en mogen niet word
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Alleen geconfigureerde organisatieaccounts toestaan in apps met meerdere identiteiten 
 
-Gebruik voor Android-apparaten de volgende sleutel-/waardeparen:
+Gebruik voor iOS-apparaten de volgende sleutel-/waardeparen:
 
 | **Sleutel** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Waarden** | <ul><li>**Ingeschakeld**: het enige account dat is toegestaan, is het beheerde gebruikersaccount dat wordt gedefinieerd met de sleutel [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Uitgeschakeld** (of een andere waarde die geen hoofdlettergevoelige overeenkomst is met **Ingeschakeld**): elk account is toegestaan.</li></ul> |
+| **Waarden** | <ul><li>**Ingeschakeld**: Het enige account dat is toegestaan, is het beheerde gebruikersaccount dat wordt gedefinieerd door de sleutel [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Uitgeschakeld** (of een andere waarde die geen hoofdletterongevoelige overeenkomst is met **Ingeschakeld**): Elk account is toegestaan.</li></ul> |.
 
    > [!NOTE]
-   > U moet OneDrive voor iOS 10.34 of hoger en Outlook voor iOS 2.99.0 of hoger gebruiken wanneer u alleen geconfigureerde organisatieaccounts met meerdere identiteiten toestaat.
+   > U moet OneDrive voor iOS 10.34 of hoger en Outlook voor iOS 2.99.0 of hoger gebruiken en de app moet onder [beveiligingsbeleid voor apps in Intune](app-protection-policy.md) vallen, indien u alleen geconfigureerde organisatie-accounts met meerdere identiteiten toestaat.
 
 ## <a name="enter-xml-data"></a>XML-gegevens invoeren
 
@@ -123,7 +123,7 @@ Voor meer informatie over XML-eigenschappenlijsten:
 
 Wanneer u een configuratiebestand voor een app maakt, kunt u een of meer van de volgende waarden opgeven door van deze indeling gebruik te maken:
 
-```
+```xml
 <dict>
   <key>userprincipalname</key>
   <string>{{userprincipalname}}</string>

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 94e4f955a57f5a505bfbbdc84ae236bbfb85fe8b
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112856"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738049"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -100,7 +100,7 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 
 4. Klik op **Certificates, IDs & Profiles**.
 
-   ![Apple Developer-portal](./media/iOS-signing-cert-1.png)
+   ![Apple Developer-portal - Certificaten, id's en profielen](./media/iOS-signing-cert-1.png)
 
 5. Klik op het ![plusteken van de Apple Developer-portal](./media/iOS-signing-cert-2.png) in de rechterbovenhoek om een iOS-certificaat toe te voegen.
 
@@ -125,7 +125,7 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 
 11. Volg de instructies op de Apple Developer-site hierboven voor het maken van een CSR-bestand. Sla het CSR-bestand op uw macOS-computer op.
 
-    ![Een certificaat aanvragen bij een certificeringsinstantie in Sleutelhangertoegang](./media/iOS-signing-cert-6.png)
+    ![Voer informatie in voor het certificaat dat u aanvraagt](./media/iOS-signing-cert-6.png)
 
 12. Ga terug naar de Apple Developer-site. Klik op **Continue**. Upload vervolgens het CSR-bestand.
 
@@ -141,7 +141,7 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 
 16. Er wordt een venster met informatie weergegeven. Ga naar de onderkant van het venster en kijk onder het label **Vingerafdrukken**. Kopieer de (grijs weergegeven) **SHA1**-tekenreeks om deze te gebruiken als de parameter -c voor de App Wrapping Tool.
 
-    ![Uw certificaat toevoegen aan een sleutelhanger](./media/iOS-signing-cert-9.png)
+    ![iPhone-gegevens - vingerafdrukken SHA1-tekenreeks](./media/iOS-signing-cert-9.png)
 
 
 
@@ -179,7 +179,7 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 
 Open macOS Terminal en voer de volgende opdracht uit:
 
-```
+```bash
 /Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
@@ -188,7 +188,7 @@ Open macOS Terminal en voer de volgende opdracht uit:
 
 **Voorbeeld:** Met de volgende voorbeeldopdracht voert u de App Wrapping Tool uit voor een app met de naam MyApp.ipa. Een inrichtingsprofiel en een SHA-1-hash van het ondertekeningscertificaat worden opgegeven en gebruikt om de ingepakte app te ondertekenen. De uitvoer-app (MyApp_Wrapped.ipa) wordt gemaakt en opgeslagen in uw Bureaublad-map.
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
 ```
 
@@ -289,7 +289,7 @@ Apps die zijn verpakt met de App Wrapping Tool genereren logboeken die worden ge
 
 3.  Filter de opgeslagen logboeken op beperkingen voor apps door het volgende script in te voeren in de console:
 
-    ```
+    ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
     U kunt de gefilterde logboeken naar Microsoft verzenden.
@@ -368,20 +368,20 @@ U kunt als volgt de bestaande rechten van een ondertekende app en inrichtingspro
 
 3.  Controleer de rechten voor de app-bundel met het hulpprogramma voor het ondertekenen van de programmacode, waarbij `YourApp.app` de werkelijke naam van uw app-bundel is:
 
-    ```
+    ```bash
     $ codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
 4.  Controleer met het beveiligingsprogramma de rechten van het inrichtingsprofiel dat in de app is opgenomen, waarbij `YourApp.app` de werkelijke naam van uw app-bundel is.
 
-    ```
+    ```bash
     $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>Rechten uit een app verwijderen met de parameter –e
 Met deze opdracht worden ingeschakelde mogelijkheden in de app verwijderd die niet worden vermeld in het rechtenbestand. Als u mogelijkheden verwijdert die worden gebruikt door de app, kan dit de app beschadigen. Een voorbeeld van waar u mogelijkheden met ontbrekende rechten kunt verwijderen, is in een app van een leverancier die standaard beschikt over alle mogelijkheden.
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
@@ -416,12 +416,12 @@ Als u de markering `-citrix` wilt gebruiken, moet u ook de [Citrix MDX-app-wrapp
 Voer gewoon uw algemene app-wrapping-opdracht uit waaraan de markering `-citrix` is toegevoegd. De markering `-citrix` accepteert momenteel geen argumenten.
 
 **Gebruiksindeling**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **Voorbeeldopdracht**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
 
