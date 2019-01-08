@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 3f0283b07c4efd03800f21aadba2cc53beffec68
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.openlocfilehash: a84683531481410d54f527ddd35400dcfe504fc5
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553687"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996028"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -93,13 +93,6 @@ U kunt nu de volgende apps beheren met [Intune-beveiligingsbeleid voor apps](app
 
 Gebruik beveiligingsbeleid voor apps om zakelijke gegevens te beschermen en gegevensoverdracht voor deze apps te controleren, zoals voor andere door beleid beheerde Intune-apps. Opmerking: Als Flow nog niet zichtbaar is in de console, voegt u Flow toe wanneer u app-beveiligingsbeleid maakt of bewerkt. Gebruik hiervoor de optie **+ Meer apps** en geef vervolgens de *App-ID* voor Flow op in het invoerveld. Gebruik voor Android *com.microsoft.flow* en voor iOS *com.microsoft.procsimo*.
 
-#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Update van de gebruikersinterface voor beveiligingsbeleid voor apps in Intune <!-- 3251427 -->
-We hebben de labels voor instellingen en knoppen voor App-beveiliging van Intune gewijzigd om ze duidelijker te maken. De wijzigingen zijn onder meer:  
-
-- Besturingselementen zijn gewijzigd van **ja** / **nee** naar primair **blokkeren**/**toestaan** en **uitschakelen** / **inschakelen**. De labels zijn ook bijgewerkt.  
-- De instellingen zijn opnieuw ingedeeld, zodat de instellingen en bijbehorende labels naast elkaar in het besturingselement staan, wat betere navigatie biedt.   
-
-De standaardinstellingen en een aantal instellingen blijven dezelfde, maar met deze wijziging kan de gebruiker de instellingen beter begrijpen, gebruiken en er door navigeren om het geselecteerde app-beveiligingsbeleid toe te passen.
 
 ### <a name="device-configuration"></a>Apparaatconfiguratie
 

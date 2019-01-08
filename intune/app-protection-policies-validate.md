@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3158d0531de4809bf654c030b8c1e0ef90185362
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 0201f9a33fcdf3e7f5780f8e65a3666e6eb5d7d1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247064"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816953"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>De configuratie van uw beveiligingsbeleid voor apps valideren
 
@@ -29,11 +29,11 @@ ms.locfileid: "53247064"
 
 Valideren dat het beveiligingsbeleid van uw app correct is ingesteld en werkt. Deze informatie is van toepassing op beveiligingsbeleid voor apps in Azure Portal.
 
-### <a name="checking-for-symptoms"></a>Controleren op symptomen
+## <a name="checking-for-symptoms"></a>Controleren op symptomen
 Gebruikers melden waarschijnlijk geen problemen, omdat app-beveiliging een hulpprogramma voor gegevensbeveiliging is. Als er een probleem is met de beveiligingsconfiguratie voor de app, heeft de gebruiker onbeperkte toegang zoals ook het geval is zonder app-beveiliging, en weet de gebruiker niet dat er een probleem is. Daarom raden wij aan dat u de beveiligingsconfiguratie voor de app valideert door uw app-beveiligingsbeleid te testen met een kleine groep gebruikers die de beperkingen van de app-beveiliging bewust kunnen testen.
 
 
-### <a name="what-to-check"></a>Wat u moet controleren
+## <a name="what-to-check"></a>Wat u moet controleren
 
 Als blijkt dat uw beveiligingsbeleid voor apps niet werkt zoals verwacht, controleert u deze items:
 
@@ -41,7 +41,7 @@ Als blijkt dat uw beveiligingsbeleid voor apps niet werkt zoals verwacht, contro
 - Hebben de gebruikers een licentie voor O365?
 - De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben.
 
-#### <a name="user-app-protection-status"></a>Gebruikersstatus van de app-beveiliging
+### <a name="user-app-protection-status"></a>Gebruikersstatus van de app-beveiliging
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Selecteer **Client-apps** > **Bewaken** >  **App-beveiligingsstatus** en vervolgens de tegel **Toegewezen gebruikers**. 
@@ -50,7 +50,7 @@ Als blijkt dat uw beveiligingsbeleid voor apps niet werkt zoals verwacht, contro
 
 
 
-### <a name="what-to-do"></a>Wat u moet doen
+## <a name="what-to-do"></a>Wat u moet doen
 Hier ziet u welke acties u moet ondernemen op basis van de gebruikersstatus:
 
 - Als de gebruiker geen licentie voor app-beveiliging heeft, moet u een Intune-licentie toewijzen aan de gebruiker.
@@ -58,6 +58,6 @@ Hier ziet u welke acties u moet ondernemen op basis van de gebruikersstatus:
 - Als de app van een gebruiker de status **Niet ingecheckt** heeft, controleert u of u het beveiligingsbeleid voor apps voor de betreffende app correct hebt geconfigureerd.
 - Zorg ervoor dat deze voorwaarden van toepassing zijn op alle gebruikers waarop beveiligingsbeleid voor apps van toepassing moet zijn.
 
-### <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
 
 [Wat is een app-beveiligingsbeleid in Intune?](app-protection-policies.md)

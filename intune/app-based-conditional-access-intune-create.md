@@ -1,5 +1,6 @@
 ---
 title: Op apps gebaseerd beleid instellen voor voorwaardelijke toegang met Intune
+titlesuffix: Microsoft Intune
 description: Ontdek hoe u op apps gebaseerd beleid voor voorwaardelijke toegang maakt met Intune.
 keywords: ''
 author: brenduns
@@ -15,12 +16,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 32044422943282d9cf813192405a335ee756e44e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 079671064c09c22d151ea71f8b3fb385652aef0f
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816919"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Op apps gebaseerd beleid instellen voor voorwaardelijke toegang met Intune
 
@@ -54,7 +55,7 @@ IT-beheerders kunnen op apps gebaseerd voorwaardelijk toegangsbeleid maken uitga
 ## <a name="next-steps"></a>Volgende stappen
 [Apps die geen gebruikmaken van moderne verificatie blokkeren](app-modern-authentication-block.md)
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 
 [App-gegevens beveiligen met app-beveiligingsbeleid](app-protection-policies.md)
 [Voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
