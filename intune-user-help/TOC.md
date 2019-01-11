@@ -130,6 +130,7 @@
 ### [Wat gebeurt er als u uw apparaat opnieuw instelt?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Gegevensverzameling door Microsoft uitschakelen](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Een apparaat handmatig synchroniseren](sync-your-device-manually-windows.md)
+### [Help en ondersteuning](help-support-windows-cpapp.md)
 
 ### [Algemene Windows-problemen oplossen](troubleshoot-your-device-windows.md)
 #### [Beperkingen voor toegangspunten oplossen](resolve-access-point-restrictions.md)
