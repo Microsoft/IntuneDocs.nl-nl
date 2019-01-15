@@ -3,8 +3,8 @@ title: Instellingen voor beveiligingsbeleid voor iOS-apps | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: In dit onderwerp worden de beveiligingsbeleidsinstellingen voor iOS-apparaten beschreven.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 11/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 32bec8f46329f583cc33e4df40192ca0ad59a427
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a1d44c5e94c725eb617c8d7c1ca7e43aa12679a2
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817412"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297482"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Beveiligingsbeleidsinstellingen voor iOS-apps
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -132,7 +132,7 @@ Als een gebruiker toestaat dat gegevens tussen accounts worden gedeeld, zoals me
 |Leesmachtigingen voor [Personen](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)     |Hiermee geeft u de app toestemming om een beoordeelde lijst met relevante personen voor de aangemelde gebruiker te lezen. De lijst kan lokale contactpersonen, contactpersonen uit sociale netwerken of de directory van uw organisatie en personen uit recente communicaties (zoals e-mail en Skype) bevatten.         |
 |Leesmachtigingen voor [Agenda's](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions)     |Hiermee geeft u de app toestemming om gebeurtenissen in agenda's van gebruikers te lezen. Bevat de vergaderingen in de agenda's van gebruikers en de tijden, locaties en deelnemers daarvan.         |
 |Leesmachtigingen voor [Gebruikersprofiel](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#user-permissions)     |Hiermee geeft u gebruikers toestemming om zich aan te melden bij de app en geeft u de app toestemming om het profiel van de aangemelde gebruikers te lezen. Het geeft de app ook toestemming om basale bedrijfsinformatie te lezen voor aangemelde gebruikers.         |
-|Subscriptions     |Dit bereik is niet beschikbaar en nog niet in gebruik. Het bevat abonnementen die door de organisatie van de gebruiker zijn gegeven voor apps en services van Microsoft, zoals Office 365.         |
+|Abonnementen     |Dit bereik is niet beschikbaar en nog niet in gebruik. Het bevat abonnementen die door de organisatie van de gebruiker zijn gegeven voor apps en services van Microsoft, zoals Office 365.         |
 |Insights     |Dit bereik is niet beschikbaar en nog niet in gebruik. Het bevat de interessegebieden die zijn gekoppeld aan het account van de aangemelde gebruiker op basis van het gebruik van de Microsoft-services.         |
 
 ### <a name="learn-more"></a>Meer informatie

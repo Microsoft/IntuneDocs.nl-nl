@@ -3,8 +3,8 @@ title: Beveiligingsbeleid voor apps maken en implementeren
 titleSuffix: Microsoft Intune
 description: Meer informatie over het maken en toewijzen van app-beveiligingsbeleid van Microsoft Intune.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 11/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 35fd4650d5508995f879f4d83030f70fe9c550b8
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: e81a80dae9777cae96d9ddc6dfe9d64b2abf1204
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817361"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297363"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>App-beveiligingsbeleid maken en toewijzen
 
@@ -43,7 +43,7 @@ Zie [Add apps to Microsoft Intune](apps-add.md) (Apps toevoegen aan Microsoft In
 
    ![Schermafbeelding van de blade ‘Een beleid toevoegen’](./media/app-protection-add-policy.png)
 
-3. Geef een naam op voor het beleid, voeg een korte beschrijving toe en selecteer het platformtype voor uw beleid. U kunt meer dan één beleid voor elk platform maken.
+3. Geef een naam op voor het beleid, voeg een korte beschrijving toe en selecteer het platformtype voor uw beleid. U kunt meerdere beleidsregels maken voor elk platform.
 
 4. Selecteer **Apps** om de blade **Apps** te openen, zodat er een lijst met beschikbare apps wordt weergegeven. U kunt een of meer apps in de lijst selecteren die u wilt koppelen aan het beleid dat u maakt. Selecteer minste één app om een beleid te maken.  
 

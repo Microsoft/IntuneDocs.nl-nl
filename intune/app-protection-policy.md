@@ -3,8 +3,8 @@ title: Wat is beveiligingsbeleid voor apps
 titleSuffix: Microsoft Intune
 description: Ontdek hoe u met het beveiligingsbeleid voor apps van Microsoft Intune uw bedrijfsgegevens kunt beveiligen en hoe u kunt voorkomen dat gegevens verloren gaan.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 10/11/2018
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
-ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
+ms.openlocfilehash: b6ebc3db81b969d83bc22034057ab4217e90931f
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54006281"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297278"
 ---
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
@@ -156,5 +156,5 @@ Een voorbeeld van werkcontext is een gebruiker die de OneDrive-app start met beh
 
 [Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune](app-protection-policies.md)
 
-## <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie ook
 Apps van derden, zoals de mobiele app van Salesforce, werken gericht met Intune om bedrijfsgegevens te beveiligen. Ga voor meer informatie over hoe de Salesforce-app met Intune werkt (inclusief MDM-configuratie-instellingen voor apps), naar [Salesforce-app en Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).
