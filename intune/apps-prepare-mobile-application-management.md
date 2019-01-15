@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 742b4892c4dbe9ee2dfa2bb03eebb2667803c6bf
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210751"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Line-of-business-apps voorbereiden voor app-beveiligingsbeleid
 
@@ -98,7 +98,7 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |Schermafbeeldingen maken blokkeren (alleen Android)|X|X|
 |Ondersteuning van MAM zonder apparaatinschrijving|X|X|
 |Volledig wissen|X|X|
-|Selectief wissen <br></br>**Opmerking:** Bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
+|Selectief wissen <br><br>**Opmerking:** Bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
 |'Opslaan als' voorkomen|X||
 |Configuratie van doeltoepassingen|X||
 |Ondersteuning voor meerdere identiteiten|X||
@@ -115,6 +115,6 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 
 Meer informatie over app-beveiligingsbeleid en Intune kunt u vinden in de volgende onderwerpen:
 
-  - [Android App Wrapping Tool](app-wrapper-prepare-android.md)</br>
-  - [iOS App Wrapping Tool](app-wrapper-prepare-ios.md)</br>
+  - [Android App Wrapping Tool](app-wrapper-prepare-android.md)<br>
+  - [iOS App Wrapping Tool](app-wrapper-prepare-ios.md)<br>
   - [De SDK gebruiken om apps geschikt te maken voor Mobile Application Management](app-sdk.md)
