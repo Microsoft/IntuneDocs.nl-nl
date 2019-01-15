@@ -1,5 +1,5 @@
 ---
-title: Beleid voor voorwaardelijke toegang tot Exchange maken
+title: Beleid maken voor voorwaardelijke toegang tot Exchange | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Configureer voorwaardelijke toegang voor Exchange On-Premises en oudere Exchange Online Dedicated in Intune.
 keywords: ''
@@ -15,12 +15,12 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0a539000153ad45b5256e4e63086fa72fee44947
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817055"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Een beleid voor voorwaardelijke toegang maken voor Exchange On-Premises en verouderde Exchange Online Dedicated
 
@@ -64,7 +64,7 @@ Controleer het volgende voordat u voorwaardelijke toegang configureert:
 - Windows Phone 8.1 en hoger
 - Systeemeigen e-mailapp voor iOS.
 - EAS-mailclients zoals Gmail op Android 4 of hoger.
-- **Apparaten met een Android-werkprofiel**van EAS-mailclients: alleen de apps **Gmail** en **Nine Work for Android Enterprise** in het **werkprofiel** worden ondersteund op apparaten met een Android-werkprofiel. Voorwaardelijke toegang werkt alleen in combinatie met Android-werkprofielen als u een e-mailprofiel voor de app Gmail of Nine Work for Android Enterprise implementeert en die apps ook implementeert als verplicht te installeren apps.
+- **Apparaten met een Android-werkprofiel** van EAS-mailclients: alleen de apps **Gmail** en **Nine Work for Android Enterprise** in het **werkprofiel** worden ondersteund op apparaten met een Android-werkprofiel. Voorwaardelijke toegang werkt alleen in combinatie met Android-werkprofielen als u een e-mailprofiel voor de app Gmail of Nine Work for Android Enterprise implementeert en die apps ook implementeert als verplicht te installeren apps.
 
 > [!NOTE]
 > Microsoft Outlook voor Android en iOS wordt niet ondersteund via de on-premises Exchange-connector. Als u wilt gebruikmaken van Azure Active Directory-beleid voor voorwaardelijke toegang en beleid voor Intune-app-beveiliging met Outlook voor iOS en Android voor uw on-premises postvakken, raadpleegt u [Hybride moderne verificatie gebruiken met Outlook voor iOS en Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
@@ -125,6 +125,6 @@ Vanaf versie Intune 1704 kunnen beheerders Azure AD-beleidsregels voor voorwaard
 
 2. Kies in het deelvenster **Beleid** de optie **Nieuw beleid** om uw nieuwe beleid voor voorwaardelijke toegang in Azure AD te maken.
 
-## <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
 
 [Voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

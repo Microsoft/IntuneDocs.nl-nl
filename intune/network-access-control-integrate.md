@@ -15,12 +15,12 @@ ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c6ab669b1f9331d0bd0a70ca5f86ac7f3f190fb6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bda8512bd28351c384bfe53b46db62e5a86fe9bd
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817276"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Netwerktoegangsbeheer integreren met Intune
 
@@ -48,7 +48,7 @@ NAC werkt met voorwaardelijke toegang om beslissingen voor toegangsbeheer mogeli
 
 Hieronder volgt een overzicht van de manier waarop NAC-integratie werkt in combinatie met Intune. In de eerste drie stappen wordt het onboarding-proces uitgelegd. Zodra de NAC-oplossing in Intune is geïntegreerd, kunt u in de stappen 4-9 de lopende bewerking zien.
 
-![De werking van NAC met Intune](./media/ca-intune-common-ways-2.png)
+![Conceptafbeelding van de manier waarop NAC werkt in combinatie met Intune](./media/ca-intune-common-ways-2.png)
 
 1. Registreer de NAC-partneroplossing bij Azure Active Directory (AAD) en verleen gedelegeerde machtigingen aan de NAC-API van Intune.
 2. Configureer de NAC-partneroplossing met de juiste instellingen, inclusief de detectie-URL van Intune.

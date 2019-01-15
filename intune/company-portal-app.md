@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 6d9d6cb1eccd91e7832a9456504c36cb983b4810
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738015"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817378"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -89,7 +89,7 @@ Geef een merkafbeelding weer die de huisstijl van uw bedrijf uitstraalt. Nadat u
 
 |Veldnaam|Meer informatie|
 |---|---|
-|**Uw merkafbeelding uploaden**| Deze optie is beschikbaar zodat een achtergrondafbeelding kan worden weergegeven op de profielpagina van de gebruiker in de bedrijfsportal-app.<p>*Opmerking*: de afbeelding wordt op verschillende platformen mogelijk anders weergegeven.<p><ul><li>Aanbevolen breedte van afbeelding: groter dan 1125 px, maar niet minder dan 640 px</li><li>Maximale afbeeldingsgrootte: 1,3 MB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
+|**Uw merkafbeelding uploaden**| Deze optie is beschikbaar zodat een achtergrondafbeelding kan worden weergegeven op de profielpagina van de gebruiker in de bedrijfsportal-app.<p>*Opmerking*: de afbeelding wordt op verschillende platformen mogelijk anders weergegeven.<p><ul><li>Aanbevolen breedte van afbeelding: kleiner dan 1125 px, maar niet kleiner dan 640 px</li><li>Maximale afbeeldingsgrootte: 1,3 MB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
 
 Met de juiste merkafbeelding kan het vertrouwen van de gebruiker in de bedrijfsportal-app worden versterkt, doordat de app uw huisstijl weerspiegelt. Hier volgen enkele tips die u kunt gebruiken voor het verkrijgen, kiezen en optimaliseren van een afbeelding voor de bedrijfsportal. 
 

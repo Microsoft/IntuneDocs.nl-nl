@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
-ms.openlocfilehash: bf08796be801e1947fc1b18f2b5d2c49a5db945d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f565697d9c76f8a2990074b072ed43547284c29b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816885"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Pradeo Mobile Threat Defense-connector met Intune
 
@@ -48,7 +48,7 @@ Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u a
 
 **Blokkeren wanneer er schadelijke apps zijn gedetecteerd:**
 
-![Schadelijke apps gedetecteerd](./media/pradeo_maliciousapps_blocked.png)
+![Conceptafbeelding van detectie van schadelijke apps](./media/pradeo_maliciousapps_blocked.png)
 
 **Toegang na herstel:**
 
@@ -64,7 +64,7 @@ Bedreigingen voor uw netwerk worden gedetecteerd, zoals **man-in-the-middle-aanv
 
 **Toegang na herstel:**
 
-![Toegang na herstel](./media/pradeo_network_wifi_unblocked.png)
+![Conceptafbeelding van toegewezen toegang bij herstel](./media/pradeo_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Toegangsbeheer voor SharePoint Online op basis van bedreigingen voor het netwerk
 
@@ -76,7 +76,7 @@ Bedreigingen voor uw netwerk worden gedetecteerd, zoals **man-in-the-middle-aanv
 
 **Toegang na herstel:**
 
-![Voorbeeld waarin na herstel toegang is verleend aan Sharepoint](./media/pradeo_network_spo_unblocked.png)
+![Conceptafbeelding waarin na herstel toegang is verleend aan Sharepoint](./media/pradeo_network_spo_unblocked.png)
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 

@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
-ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
+ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389866"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006281"
 ---
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
@@ -37,14 +37,14 @@ U kunt app-beveiligingsbeleid voor Intune gebruiken **onafhankelijk van een MDM-
 
 Beveiligingsbeleid voor apps kan worden geconfigureerd voor apps die worden uitgevoerd op apparaten die:
 
-- **Zijn ingeschreven bij Microsoft Intune:** deze apparaten zijn meestal in het bezit van het bedrijf.
+- **Geregistreerd met Microsoft Intune:** deze apparaten zijn doorgaans in het bezit van het bedrijf.
 
-- **Zijn ingeschreven bij een MDM-oplossing van derden:** deze apparaten zijn meestal in het bezit van het bedrijf.
+- **Apparaten die zijn geregistreerd in een oplossing voor mobiel apparaatbeheer van derden:** deze apparaten zijn doorgaans in het bezit van het bedrijf.
 
   > [!NOTE]
   > MAM-beleid mag niet worden gebruikt met MAM-oplossingen van derden of beveiligde containers.
 
-- **Niet zijn ingeschreven bij een MDM-oplossing:** deze apparaten zijn meestal in het bezit van werknemers en worden niet beheerd door of zijn niet ingeschreven bij Intune of een andere MDM-oplossing.
+- **Apparaten die niet zijn geregistreerd in een MDM-oplossing:** Bij deze apparaten gaat het meestal om apparaten die in het bezit zijn van werknemers, of om apparaten die niet worden beheerd door of zijn ingeschreven bij Intune of een andere MDM-oplossing.
 
 > [!IMPORTANT]
 > U kunt MAM-beleid maken voor mobiele Office-apps die verbinding maken met Office 365-services. U kunt de toegang tot Exchange on-premises mailboxen tevens beveiligen door beveiligingsbeleid voor Intune-apps te maken voor Outlook voor iOS en Android met hybride moderne verificatie. Voordat u deze functie gebruikt, moet u ervoor zorgen dat u voldoet aan de [Outlook voor iOS- en Android-vereisten](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). Beveiligingsbeleid voor apps wordt niet ondersteund voor andere apps die verbinding maken met on-premises Exchange- of SharePoint-services.
@@ -75,14 +75,14 @@ Windows-apparaten worden momenteel niet ondersteund. U kunt echter wel Windows I
 
 #### <a name="apps-without-app-protection-policies"></a>Apps zonder het beveiligingsbeleid voor apps
 
-![Afbeelding die laat zien dat gegevens vrij kunnen bewegen tussen apps wanneer er geen beveiligingsbeleid voor apps is](./media/apps-without-protection-policies.png)
+![Conceptafbeelding voor gegevensverplaatsing tussen apps waarvoor geen beleid is ingesteld](./media/apps-without-protection-policies.png)
 
 Bedrijfsgegevens en persoonlijke gegevens kunnen met elkaar worden vermengd als er apps zonder beperkingen worden gebruikt. Bedrijfsgegevens kunnen terechtkomen op locaties zoals persoonlijke opslag of kunnen worden overgebracht naar apps die buiten uw controlesfeer liggen, wat leidt tot gegevensverlies. De pijlen in het voorgaande diagram geven onbeperkte verplaatsingen weer van gegevens tussen apps (zowel zakelijke als persoonlijke apps) en naar opslaglocaties.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>Gegevensbeveiliging met het beveiligingsbeleid voor apps
 
-![Afbeelding die laat zien hoe bedrijfsgegevens worden beveiligd wanneer het beveiligingsbeleid voor apps wordt toegepast ](./media/apps-with-protection-policies.png)
+![Conceptafbeelding met bedrijfsgegevens die door beleid worden beschermd](./media/apps-with-protection-policies.png)
 
 
 U kunt het beveiligingsbeleid voor apps gebruiken om te voorkomen dat bedrijfsgegevens worden opgeslagen op de lokale opslag van het apparaat. U kunt ook gegevensverplaatsing beperken naar andere apps die niet zijn beveiligd met beveiligingsbeleid voor apps. Beveiligingsbeleidsinstellingen voor apps bevatten:
@@ -146,7 +146,7 @@ Hoewel het **algemene** beleid van toepassing is op alle gebruikers in uw tenant
 
 Met apps die ondersteuning bieden voor meerdere identiteiten, kunt u verschillende accounts (zakelijk en persoonlijk) gebruiken voor toegang tot dezelfde apps, terwijl beveiligingsbeleid voor apps alleen van toepassing is wanneer de apps worden gebruikt in zakelijke context.
 
-Een voorbeeld van een persoonlijke context is een gebruiker die een nieuw document start in Word. Aangezien dit als persoonlijke context wordt beschouwd, wordt er geen beveiligingsbeleid voor apps van Intune toegepast. Zodra het document is opgeslagen in de zakelijke OneDrive-account, wordt het beschouwd als zakelijke context en wordt er dus beveiligingsbeleid voor apps van Intune op toegepast.
+Een voorbeeld van een persoonlijke context is een gebruiker die een nieuw document start in Word. Aangezien dit als persoonlijke context wordt beschouwd, wordt er geen beveiligingsbeleid voor apps van Intune toegepast. Zodra het document is opgeslagen in het zakelijke OneDrive-account, wordt het beschouwd als zakelijke context en wordt er Intune-app-beveiligingsbeleid op toegepast.
 
 Een voorbeeld van werkcontext is een gebruiker die de OneDrive-app start met behulp van een werkaccount. In de werkcontext kan deze gebruiker bestanden niet verplaatsen naar een persoonlijke opslaglocatie. Later, wanneer OneDrive wordt gebruikt voor een persoonlijk account, kunnen de gegevens op de persoonlijke OneDrive-locatie zonder beperkingen worden gekopieerd en verplaatst.
 
@@ -156,5 +156,5 @@ Een voorbeeld van werkcontext is een gebruiker die de OneDrive-app start met beh
 
 [Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune](app-protection-policies.md)
 
-## <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
 Apps van derden, zoals de mobiele app van Salesforce, werken gericht met Intune om bedrijfsgegevens te beveiligen. Ga voor meer informatie over hoe de Salesforce-app met Intune werkt (inclusief MDM-configuratie-instellingen voor apps), naar [Salesforce-app en Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).

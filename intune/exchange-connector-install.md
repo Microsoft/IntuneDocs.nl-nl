@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune on-premises Exchange-connector instellen
-titleSuffix: ''
+title: Microsoft Intune on-premises Exchange-connector instellen | Microsoft Intune
 description: Gebruik de on-premises Exchange-connector om apparaattoegang tot Exchange-postvakken op basis van inschrijving bij Intune en Exchange Active Sync (EAS) te beheren.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc87c20b0da6fcfcc4e3ab304c61c5b264aaf38
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817259"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Intune on-premises Exchange-connector instellen in Microsoft Intune Azure
 
@@ -71,7 +70,7 @@ U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de o
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Het software-installatiepakket voor de on-premises Exchange-connector downloaden
 
-1. Open [Azure Portal](http://portal.azure.com) in een ondersteund Windows Server-besturingssysteem voor de on-premises Exchange-connector en meld u aan met een gebruikersaccount dat een beheerder is voor de on-premises Exchange-server en dat een licentie heeft om Exchange Server te gebruiken.
+1. Open [Azure Portal](https://portal.azure.com) in een ondersteund Windows Server-besturingssysteem voor de on-premises Exchange-connector en meld u aan met een gebruikersaccount dat een beheerder is voor de on-premises Exchange-server en dat een licentie heeft om Exchange Server te gebruiken.
 
 2. Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
 

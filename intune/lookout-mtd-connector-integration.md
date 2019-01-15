@@ -1,12 +1,11 @@
 ---
-title: Uw Lookout-integratie instellen met Microsoft Intune
-titlesuffix: ''
+title: Lookout-integratie instellen met Microsoft Intune | Microsoft Intune
 description: Meer informatie over de integratie van Intune met Lookout Mobile Threat Defense om toegang tot uw bedrijfsresources met mobiele apparaten te bepalen.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 84bc12d568fce0f5cd6e460595eedf0af0d6296e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816868"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Integratie van Lookout Mobile Threat Defense met Intune instellen
 
@@ -77,11 +76,11 @@ Gebruik de volgende stappen om de gegevens te verzamelen die u aan het Lookout-o
 
 3. Ga in de [Lookout-console](https://aad.lookout.com) naar de module **Systeem**, kies het tabblad **Connectors** en selecteer **Intune**.
 
-   ![schermopname van de Lookout-console waarin het tabblad Connectors is geopend en de Intune-optie is gemarkeerd](./media/lookout_mtp_setup-intune-connector.png)
+   ![Afbeelding van de Lookout-console met de Intune-optie op het tabblad Connectors](./media/lookout_mtp_setup-intune-connector.png)
 
 4. Ga naar **Connectors** > **Verbindingsinstellingen** en geef de **heartbeatfrequentie** in minuten op.
 
-   ![schermopname van het tabblad Verbindingsinstellingen waarop de heartbeatfrequentie is geconfigureerd](./media/lookout-mtp-connection-settings.png)
+   ![Afbeelding van het tabblad Verbindingsinstellingen waarop de heartbeatfrequentie is geconfigureerd](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>Registratiegroepen configureren
 1. Maak als aanbevolen procedure een Azure AD-beveiligingsgroep in de [Azure AD-beheerportal](https://manage.windowsazure.com) met een klein aantal gebruikers om de Lookout-integratie te testen.
@@ -95,10 +94,10 @@ Gebruik de volgende stappen om de gegevens te verzamelen die u aan het Lookout-o
 
     >[!IMPORTANT]
     > De **Weergavenaam** is hoofdlettergevoelig zoals weergegeven in de **eigenschappen** van de beveiligingsgroep in Azure Portal. Zoals de onderstaande afbeelding laat zien, heeft de **Weergavenaam** van de beveiligingsgroep hoofd- en kleine letters terwijl de titel alleen uit kleine letters bestaat. Stel in de Lookout-console het lettergebruik van de **Weergavenaam** in voor de beveiligingsgroep.
-    >![schermopname van de Azure-portal, Azure Active Directory-service, eigenschappenpagina](./media/aad-group-display-name.png)
+    >![Afbeelding van Azure Portal, Azure Active Directory-service, eigenschappenpagina](./media/aad-group-display-name.png)
 
     >[!NOTE] 
-    >U kunt het interval voor het controleren op nieuwe apparaten het best op de standaard 5 minuten laten staan. Huidige beperkingen: **Lookout kan geen weergavenamen van groepen valideren:** Zorg ervoor dat het veld **WEERGAVENAAM** veld in Azure Portal exact overeenkomt met de naam van de Azure AD-beveiligingsgroep. **Het maken van geneste groepen wordt niet ondersteund:**  In Lookout gebruikte Azure AD-beveiligingsgroepen mogen alleen gebruikers bevatten. Ze kunnen geen andere groepen bevatten.
+    >U kunt het interval voor het controleren op nieuwe apparaten het best op de standaard 5 minuten laten staan. Huidige beperkingen, **Lookout kan geen groepsweergavenamen valideren:** Zorg ervoor dat het veld **WEERGAVENAAM** in de Azure-portal exact overeenkomt met de Azure AD-beveiligingsgroep. **Het maken van geneste groepen wordt niet ondersteund**:  In Lookout gebruikte Azure AD-beveiligingsgroepen mogen alleen gebruikers bevatten. Ze kunnen geen andere groepen bevatten.
 
 3.  Nadat een groep is toegevoegd, wordt het apparaat in Lookout geactiveerd de eerstvolgende keer dat een gebruiker de Lookout for Work-app op een ondersteund apparaat opent.
 
@@ -115,7 +114,7 @@ Voer bij de optie **Foutbeheer** het e-mailadres in waarnaar het foutenrapport m
 ## <a name="configure-enrollment-settings"></a>Registratie-instellingen configureren
 Geef in de module **Systeem** op de pagina **Connectors** het aantal dagen op voordat een apparaat wordt beschouwd als niet-verbonden.  Niet-verbonden apparaten worden als niet-compatibel beschouwd en krijgen geen toegang meer tot uw bedrijfstoepassingen op basis van de Intune-beleidsregels voor voorwaardelijke toegang. U kunt waarden tussen 1 en 90 dagen opgeven.
 
-![Inschrijvingsinstellingen voor Lookout](./media/lookout-console-enrollment-settings.png)
+![Instellingen voor registratie van Lookout in de module Systeem](./media/lookout-console-enrollment-settings.png)
 
 ## <a name="configure-email-notifications"></a>E-mailmeldingen configureren
 Als u e-mailwaarschuwingen voor bedreigingen wilt ontvangen, meldt u zich aan bij de [Lookout-console](https://aad.lookout.com) met het gebruikersaccount waarnaar meldingen moeten worden verzonden. Kies op het tabblad **Voorkeuren** van de **Systeem**-module de bedreigingsniveaus waarbij meldingen moeten worden verzonden en stel ze in op **AAN**. Sla de wijzigingen op.
@@ -123,7 +122,7 @@ Als u e-mailwaarschuwingen voor bedreigingen wilt ontvangen, meldt u zich aan bi
 ![schermopname van de pagina Voorkeuren met het gebruikersaccount weergegeven](./media/lookout-mtp-email-notifications.png) Als u geen e-mailmeldingen meer wilt ontvangen, stelt u de meldingen in op **UIT** en slaat u de wijzigingen op.
 
 ### <a name="configure-threat-classification"></a>Bedreigingsclassificatie configureren
-Met Lookout Mobile Threat Defense worden mobiele bedreigingen geclassificeerd in verschillende typen. Aan de [bedreigingsclassificaties van Lookout](http://personal.support.lookout.com/hc/articles/114094130693) zijn standaardrisiconiveaus gekoppeld. Deze kunnen op elk gewenst moment worden aangepast aan de vereisten van uw bedrijf.
+Met Lookout Mobile Threat Defense worden mobiele bedreigingen geclassificeerd in verschillende typen. Aan de [bedreigingsclassificaties van Lookout](https://personal.support.lookout.com/hc/articles/114094130693) zijn standaardrisiconiveaus gekoppeld. Deze kunnen op elk gewenst moment worden aangepast aan de vereisten van uw bedrijf.
 
 ![schermopname van de beleidspagina met bedreiging en classificaties](./media/lookout-mtp-threat-classification.png)
 

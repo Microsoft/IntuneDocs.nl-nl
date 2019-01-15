@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11//28/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 35fd4650d5508995f879f4d83030f70fe9c550b8
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817361"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>App-beveiligingsbeleid maken en toewijzen
 
@@ -72,11 +72,11 @@ Nieuwe beleidsregels die u maakt, worden niet geïmplementeerd voor gebruikers t
 
 2. Open in het deelvenster ***Intune-app-beveiliging** de optie **Toewijzingen** om het deelvenster **Intune-app-beveiliging - Toewijzingen** te openen. Selecteer op het tabblad *Opnemen* de optie **Groepen selecteren om op te nemen**. 
 
-   ![Schermafbeelding van het venster Toewijzingen met de optie Groepen selecteren om op te nemen gemarkeerd](./media/app-protection-policy-add-users.png)
+   ![Schermopname van het deelvenster Toewijzingen met het menu Groepen selecteren om op te nemen](./media/app-protection-policy-add-users.png)
 
 3.  Er wordt een lijst met alle beveiligingsgroepen in uw **Azure Active Directory** weergegeven. Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen en kies vervolgens **Selecteren**. 
 
-    ![Schermafbeelding van het deelvenster Gebruikersgroep toevoegen waarin de lijst met Azure Active Directory-gebruikers wordt weergegeven](./media/azure-ad-user-group-list.png)
+    ![Schermopname van het deelvenster Gebruikersgroep toevoegen met een lijst met Azure AD-gebruikers](./media/azure-ad-user-group-list.png)
 
 4.  Nadat u groepen hebt opgenomen en uitgesloten, selecteert u **Opslaan** om de configuratie op te slaan en het beleid te implementeren voor gebruikers. Als u **Verwijderen** selecteert vóórdat u de configuratie opslaat, worden alle wijzigingen verwijderd die u hebt aangebracht op de tabbladen *Opnemen* en *Uitsluiten*.   
  
@@ -138,7 +138,7 @@ Omdat Intune-app-beveiligingsbeleid op de identiteit van een gebruiker is gerich
 
 Voor het maken van deze beleidsregels bladert u naar **Client-apps** > **App-beveiliging** in de Intune-console en selecteert u **Beleid maken**. U kunt ook een bestaand app-beveiligingsbeleid bewerken. Als u het app-beveiligingsbeleid op zowel beheerde als niet-beheerde apparaten wilt toepassen, moet u bevestigen dat **Op alle app-typen toepassen** is ingesteld op **Ja**, de standaardwaarde. Als u granulair wilt toewijzen op basis van de beheerstatus, stelt u **Op alle app-typen toepassen** in op **Nee**. 
 
-![Schermafbeelding van de blade Een beleid toevoegen, waarbij Bedoeld voor alle app-typen is geselecteerd](./media/app-protection-policies-target-all.png)
+![Schermopname van de blade Een beleid toevoegen, waarbij Bedoeld voor alle app-typen is geselecteerd](./media/app-protection-policies-target-all.png)
 
 Voor iOS zijn extra app-configuratie-instellingen vereist om APP-instellingen te richten op apps op apparaten die zijn ingeschreven bij Intune:
 - **IntuneMAMUPN** moet zijn geconfigureerd voor alle met MDM beheerde toepassingen. Zie [Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) voor meer informatie.

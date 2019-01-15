@@ -1,23 +1,23 @@
 ---
-title: Besturingssysteemversies beheren met Microsoft Intune
+title: Besturingssysteemversies beheren met Microsoft Intune | Microsoft Intune
 description: Informatie over het beheren van besturingssysteemversies voor meerdere platformen met Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
-ms.openlocfilehash: c75956cd1e3e9bba0017a624b99dcc090d32978b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 27a581a72c20c940a04a791ef9e63a2dc8bf5b24
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816987"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Besturingssysteemversies beheren met Intune
 Op moderne mobiele en bureaubladplatformen volgen belangrijke updates, patches en nieuwe versie elkaar in hoog tempo op. U hebt de middelen om updates en patches voor Windows volledig te beheren, maar bij andere platformen, zoals iOS en Android, is de medewerking van uw eindgebruikers vereist.  Microsoft Intune biedt de mogelijkheid om het beheer van besturingssysteemversies voor meerdere platformen beter te structureren.
@@ -59,13 +59,12 @@ Zie [Aan de slag met apparaatnaleving](https://docs.microsoft.com/intune/device-
 Met het Intune-beveiligingsbeleid voor apps en de instellingen voor toegang in het beheer van mobiele toepassingen (MAM) kunt u de minimale versie van het besturingssysteem instellen op app-niveau. Hiermee kunt u eindgebruikers informatie geven en ze aanmoedigen of verplichten om hun besturingssysteem te updaten naar minimaal een bepaalde versie.
  
 Daarbij hebt u twee opties: 
+- **Waarschuwen**: bij Waarschuwen worden eindgebruikers geïnformeerd dat ze beter kunnen upgraden, wanneer ze een app met een beveiligingsbeleid of MAM-toegangsinstellingen openen op een apparaat met een besturingssysteemversie die lager is dan de gespecificeerde versie. Toegang is toegestaan voor de app en de bedrijfsgegevens.
+  ![Afbeelding van het dialoogvenster met waarschuwing over bijwerken in Android](./media/os-version-update-warning.png) 
 
-|Waarschuwen  |Blokkeren  |
-|---------|---------|
-|Bij Waarschuwen worden eindgebruikers geïnformeerd dat ze beter kunnen upgraden, wanneer ze een app met een beveiligingsbeleid of MAM-toegangsinstellingen openen op een apparaat met een besturingssysteemversie die lager is dan de gespecificeerde versie. Toegang is toegestaan voor de app en de bedrijfsgegevens.|Bij Blokkeren worden eindgebruikers geïnformeerd dat ze moeten upgraden, wanneer ze een app met een beveiligingsbeleid of MAM-toegangsinstellingen openen op een apparaat met een besturingssysteemversie die lager is dan de gespecificeerde versie. Toegang is niet toegestaan voor de app en de bedrijfsgegevens.|
-|![Dialoogvenster met waarschuwing over updaten in Android](./media/os-version-update-warning.png)    |![Dialoogvenster app-toegang geblokkeerd](./media/os-version-access-blocked.png)          |
+- **Blokkeren**: bij Blokkeren worden eindgebruikers geïnformeerd dat ze een upgrade moeten uitvoeren, wanneer ze een app met een beveiligingsbeleid of MAM-toegangsinstellingen openen op een apparaat met een besturingssysteemversie die lager is dan de gespecificeerde versie. Toegang is niet toegestaan voor de app en de bedrijfsgegevens.
+  ![Afbeelding van het dialoogvenster App-toegang geblokkeerd](./media/os-version-access-blocked.png)
 
- 
 ### <a name="in-practice"></a>In de praktijk
 Organisaties gebruiken de instellingen van beveiligingsbeleid voor apps wanneer apps worden geopend of hervat, als een manier om eindgebruikers te informeren over de noodzaak om hun apps up-to-date te houden. Een voorbeeld van een configuratie is dat eindgebruikers worden gewaarschuwd bij huidige versie min één, en geblokkeerd bij huidige versie min twee.
  

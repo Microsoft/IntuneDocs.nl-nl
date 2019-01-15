@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 765fae6f0e860935f5ceccadfdf1d9c3fe45d60e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816837"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -56,7 +56,7 @@ Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
     > [!NOTE]
     > Als u meerdere beleidsregels per platform hebt, wordt een gebruiker beschouwd als te worden beheerd door beleid als er ten minste één beleidsregel aan hem of haar is toegewezen.
 
-- **Gemarkeerde gebruikers:** het aantal gebruikers dat problemen ondervindt. Momenteel worden onder **Gemarkeerde gebruikers** alleen gebruikers met gekraakte apparaten gerapporteerd.
+- **Gemarkeerde gebruikers**: het aantal gebruikers dat problemen ondervindt. Momenteel worden onder **Gemarkeerde gebruikers** alleen gebruikers met gekraakte apparaten gerapporteerd.
 
 
 ## <a name="detailed-view"></a>Detailweergave
@@ -70,9 +70,9 @@ U kunt zoeken naar een afzonderlijke gebruiker en de nalevingsstatus voor deze g
 
 - Status:
 
-  - **Ingeschakeld**: het beleid is geïmplementeerd voor de gebruiker en de app is minstens eenmaal in de werkcontext gebruikt.
+  - **Ingecheckt**: het beleid is geïmplementeerd voor de gebruiker en de app is minstens eenmaal in de werkcontext gebruikt.
 
-  - **Niet ingeschakeld**: het beleid is geïmplementeerd voor de gebruiker, maar de app is sindsdien niet gebruikt in de werkcontext.
+  - **Niet ingecheckt**: het beleid is geïmplementeerd voor de gebruiker, maar de app is sindsdien niet gebruikt in de werkcontext.
 
 >[!NOTE]
 > Als het MAM-beleid niet is toegepast op de gebruikers waarnaar u hebt gezocht, wordt in een bericht gemeld dat er geen MAM-beleid wordt toegepast op de gebruikers.
@@ -81,11 +81,11 @@ Ga als volgt te werk om de rapportage voor een gebruiker te bekijken:
 
 1.  Voor het selecteren van een gebruiker selecteert u de tegel **Samenvatting**.
 
-    ![Schermafbeelding van de tegel Samenvatting in de blade Intune Mobile Application Management, Instellingen](./media/MAM-reporting-6.png)
+    ![Schermopname van de tegel Samenvatting van Mobile Application Management van Intune](./media/MAM-reporting-6.png)
 
 2. Kies in het geopende deelvenster **App-rapportage** de optie **Gebruiker selecteren** om een Azure Active Directory-gebruiker te zoeken.
 
-    ![Schermafbeelding van de optie Gebruiker selecteren in het deelvenster App-rapportage](./media/MAM-reporting-2.png)
+    ![Schermopname van de optie Gebruiker selecteren in het deelvenster App-rapportage](./media/MAM-reporting-2.png)
 
 3. Selecteer de gebruiker uit de lijst. U kunt de details van de nalevingsstatus voor die gebruiker bekijken.
 
@@ -98,28 +98,28 @@ U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende r
 
 ![Schermopname van 2 rapporten die beschikbaar zijn in het deelvenster Instellingen](./media/MAM-reporting-7.png)
 
--   **Gebruikersrapport over app-beveiliging:** biedt dezelfde informatie als de informatie die u kunt vinden in het rapport **Gebruikersstatus** onder de sectie Gedetailleerde weergave hierboven.
+-   **Gebruikersrapport app-beveiliging:** biedt dezelfde informatie als de informatie die u kunt vinden in het rapport **Gebruikersstatus** onder de sectie Gedetailleerde weergave hierboven.
 
--   **App-rapport over app-beveiliging:** biedt twee verschillende statussen over app-beveiliging die beheerders kunnen selecteren voordat ze het rapport genereren. De statussen kunnen worden beveiligd of juist niet.
+-   **App-rapport app-beveiliging:** biedt twee verschillende statussen over app-beveiliging die beheerders kunnen selecteren voordat ze het rapport genereren. De statussen kunnen worden beveiligd of juist niet.
 
     -   Gebruikersstatus voor beheerde MAM-activiteit (beveiligd): in dit rapport staat de activiteit van elke beheerde MAM-app, vermeld per gebruiker.
 
         -   Hierin staan alle apps waarin MAM-beleid wordt toegepast voor elke gebruiker én de status van elke app tijdens het inchecken ten opzichte van het MAM-beleid, of elke app waarop MAM-beleid is toegepast, maar die nooit is ingecheckt.
 <br></br>
-    -   Gebruikersstatus voor niet-beheerde MAM-activiteit (niet beveiligd): in dit rapport staat de activiteit van apps met MAM-beleid die momenteel niet wordt beheerd, vermeld per gebruiker. Dit kan in de volgende gevallen plaatsvinden:
+    -   Gebruikersstatus voor niet-beheerde MAM-activiteit (niet-beveiligd): in dit rapport staat de activiteit van apps met MAM-beleid die momenteel niet wordt beheerd, vermeld per gebruiker. Dit kan in de volgende gevallen plaatsvinden:
 
         -   De apps worden gebruikt door een gebruiker of een app waarop momenteel geen MAM-beleid wordt toegepast.
 
         -   Alle apps zijn ingecheckt, maar er wordt geen MAM-beleid op toegepast.
 
-![Schermopname van de blade App-rapportage van een gebruiker met een tabel met details voor 3 geregistreerde apps](./media/MAM-reporting-4.png)
+![Schermopname van de blade App-rapportage van een gebruiker met details voor drie apps](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Tabelgroepering
 
 Zodra de gegevens voor het **gebruikersrapport van de app-beveiliging** worden weergegeven, kunt u gegevens als volgt samenvoegen:
 
 - **Validatieresultaat:** de gegevens worden gegroepeerd op de beveiligingsstatus van apps. Het resultaat kan fout, waarschuwing of geslaagd zijn.
-- **App-naam:** de gegevens worden gegroepeerd op apps (de naam van de werkelijke app). Het resultaat kan fout, waarschuwing of geslaagd zijn.
+- **App-naam:** de gegevens worden gegroepeerd op apps (de daadwerkelijke app-naam). Het resultaat kan fout, waarschuwing of geslaagd zijn.
 
 ## <a name="export-app-protection-activities-to-csv"></a>App-beveiligingsactiviteiten exporteren naar CSV
 
@@ -129,7 +129,7 @@ Volg deze stappen voor het genereren van het app-beveiligingsrapport:
 
 1. Kies in het deelvenster Intune Mobile Application Management de optie **App-beveiligingsrapport**.
 
-    ![Schermafbeelding van de downloadlink App-beveiliging in het deelvenster Intune Mobile Application Management](./media/app-protection-report-csv-2.png)
+    ![Schermopname van de downloadkoppeling voor app-beveiliging](./media/app-protection-report-csv-2.png)
 
 2. Kies Ja om uw rapport op te slaan, kies vervolgens Opslaan als en selecteer de map waarin u het rapport wilt opslaan.
 

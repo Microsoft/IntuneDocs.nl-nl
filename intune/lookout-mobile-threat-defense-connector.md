@@ -1,6 +1,5 @@
 ---
-title: Lookout MTD-connector met Microsoft Intune
-titlesuffix: ''
+title: Lookout MTD-connector met Microsoft Intune | Microsoft Intune
 description: Meer informatie over de integratie van Intune met Lookout Mobile Threat Defense (MTD) om toegang tot uw bedrijfsbronnen met mobiele apparaten te bepalen.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d7a545fe08acc9ab88086fa92be934c860ae4716
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bd61b10ee60e1f9413c22d0d618bc5c270dc76a6
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817072"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-connector met Intune
 
@@ -63,34 +62,34 @@ Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u a
 
 **Blokkeren wanneer er schadelijke apps zijn gedetecteerd:**
 
-![in het diagram wordt weergegeven hoe de toegang wordt geblokkeerd met het beleid voor voorwaardelijke toegang wanneer blijkt dat het apparaat niet-compatibel is vanwege schadelijke apps op het apparaat](./media/malicious-apps-blocked.png)
+![Conceptafbeelding van beleidsmatig geblokkeerde toegang vanwege schadelijke apps](./media/malicious-apps-blocked.png)
 
 **Toegang na herstel:**
 
-![Diagram dat laat zien hoe toegang wordt verkregen met het beleid voor voorwaardelijke toegang wanneer blijkt dat het apparaat compatibel is na herstel.](./media/malicious-apps-unblocked.png)
+![Conceptafbeelding van verleende toegang tot apparaten na herstel](./media/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Toegangsbeheer op basis van bedreigingen voor het netwerk
 Bedreigingen voor uw netwerk worden gedetecteerd, zoals man-in-the-middle-aanvallen, en de toegang tot Wi-Fi-netwerken wordt beveiligd op basis van apparaatrisico.
 
 **Netwerktoegang via Wi-Fi blokkeren:**
 
-![in het diagram wordt weergegeven hoe de toegang via Wi-Fi wordt geblokkeerd met voorwaardelijke toegang op basis van netwerkbedreigingen](./media/network-wifi-blocked.png)
+![Afbeelding met blokkering van Wi-Fi-toegang op basis van netwerkbedreigingen](./media/network-wifi-blocked.png)
 
 **Toegang na herstel:**
 
-![Diagram dat laat zien hoe de toegang na verwijdering van de bedreiging met voorwaardelijke toegang wordt toegestaan.](./media/network-wifi-unblocked.png)
+![Conceptafbeelding van voorwaardelijke toegang voor toegang na herstel](./media/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Toegangsbeheer voor SharePoint Online op basis van bedreigingen voor het netwerk
 
 Bedreigingen voor uw netwerk worden gedetecteerd, zoals man-in-the-middle-aanvallen, en synchronisatie van bedrijfsbestanden wordt voorkomen op basis van het apparaatrisico.
 
 **SharePoint Online blokkeren wanneer netwerkbedreigingen worden gedetecteerd:**
 
-![Diagram dat laat zien hoe de toegang met het apparaat tot SharePoint Online op basis van bedreigingsdetectie met voorwaardelijke toegang wordt geblokkeerd.](./media/network-spo-blocked.png)
+![Conceptafbeelding van blokkering van toegang tot SharePoint Online](./media/network-spo-blocked.png)
 
 
 **Toegang na herstel:**
 
-![Diagram dat laat zien hoe de toegang na verwijdering van de netwerkbedreiging wordt toegestaan met voorwaardelijke toegang.](./media/network-spo-unblocked.png)
+![Conceptafbeelding die laat zien hoe de toegang na verwijdering van de netwerkbedreiging wordt verleend met voorwaardelijke toegang](./media/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>Volgende stappen
 Hier volgen de belangrijkste stappen voor het implementeren van deze oplossing:

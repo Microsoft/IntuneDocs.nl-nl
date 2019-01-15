@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/3/2018
+ms.date: 01/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 21d89d97355430f071763391d69fe332cf3ef369
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 94125ced318f304e5b2bdc8f09472280fc05b08a
+ms.sourcegitcommit: 662afec5e87639a7f541bb89700cc0fec5037bb0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642894"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54069350"
 ---
-# <a name="the-early-edition-for-microsoft-intune---december-2018"></a>De vroege editie voor Microsoft Intune - december 2018
+# <a name="the-early-edition-for-microsoft-intune---january-2019"></a>De vroege editie voor Microsoft Intune - januari 2019
 
 > [!Note]
 > NDA-melding: De volgende wijzigingen worden momenteel ontwikkeld voor Intune. Deze informatie wordt in heel beperkte mate verstrekt onder de geheimhoudingsverklaring. Plaats deze informatie niet op sociale media of openbare websites als Twitter, UserVoice, Reddit, enzovoort. 
@@ -40,6 +40,45 @@ Deze pagina wordt regelmatig bijgewerkt. Controleer op andere updates.
 -->
  
 ## <a name="intune-in-the-azure-portal"></a>Intune in Azure Portal
+
+<!-- 1901 start -->
+
+### <a name="android-enterprise-apps----1352553----"></a>Android Enterprise-apps <!-- 1352553  -->
+U kunt beheerde Google Play-apps verwijderen uit Microsoft Intune. Als u een beheerde Google Play-app wilt verwijderen, opent u Microsoft Intune in Azure Portal en selecteert u **Client-apps** > **Apps**. In de lijst met apps selecteert u het beletselteken (...) rechts naast de beheerde Google Play-app en vervolgens **Verwijderen** in de weergegeven lijst. Wanneer u een beheerde Google Play-app uit de lijst met apps verwijdert, wordt de goedkeuring voor de beheerde Google Play-app automatisch verwijderd.
+
+### <a name="managed-google-play-app-type----1352580---"></a>App-type Beheerde Google Play-app <!-- 1352580 -->
+Met het type **beheerde Google Play-app** hebt u toestemming om specifiek [beheerde Google Play-apps](https://play.google.com/work/search?q=microsoft&c=apps) aan Intune toe te voegen. Als Intune-beheerder kunt u nu door goedgekeurde beheerde Google Play-apps bladeren en goedgekeurde beheerde Google Play-apps zoeken, goedkeuren, synchroniseren en toewijzen in Intune. U hoeft niet langer naar de beheerde Google Play-console afzonderlijk te bladeren en u hoeft niet opnieuw een verificatie uit te voeren. Selecteer in Intune de optie **Client-apps** > **Apps** > **Toevoegen**. In de lijst **App-type** selecteert u **Beheerd Google Play** als app-type.
+
+### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Voorbeeld van volledig beheerde, zakelijke Android-apparaten <!-- 1574342  -->
+Intune ondersteunt volledig beheerde Android-apparaten, een scenario waarin apparaten 'zakelijk eigendom' zijn en nauw worden beheerd door de IT-afdeling en gekoppeld zijn aan afzonderlijke gebruikers. Hierdoor kunnen beheerders het hele apparaat beheren, een uitgebreide reeks beleidscontroles afdwingen die niet beschikbaar zijn voor werkprofielen en gebruikers beperken tot de installatie van apps uit de beheerde Google Play Store. Ga naar **Apparaatinschrijving** > **Android-inschrijving** > **Volledig beheerde zakelijke gebruikersapparaten** om volledige beheerde Android-apparaten in te stellen. Let op: deze functie wordt momenteel als preview aangeboden. Sommige Intune-mogelijkheden, zoals certificaten, naleving en voorwaardelijke toegang, zijn momenteel niet beschikbaar voor volledig beheerde Android-gebruikersapparaten.
+
+### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660----"></a>Implementatie van online gelicentieerde Microsoft Store voor Bedrijven-apps <!-- 16726660  -->
+U kunt vereiste online gelicentieerde Microsoft Store voor Bedrijven-apps in de apparaatcontext toewijzen. Wanneer u op deze manier een Microsoft Store voor bedrijven-app implementeert, kan de app worden geïnstalleerd voor alle gebruikers op het apparaat. Dit is alleen van toepassing op Windows 10 RS4+ Desktop-apparaten. De optie om de app in de apparaatcontext te installeren, is beschikbaar op de toewijzingspagina voor client-apps voor gelicentieerde MSFB Online-apps.
+
+### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470----"></a>Profiel configureren om bepaalde vensters over te slaan tijdens het doorlopen van de configuratieassistent <!-- 2276470  -->
+Wanneer u een macOS-registratieprofiel maakt, kunt u binnenkort instellen dat de configuratieassistent de volgende schermen overslaat:
+- Migratie vanaf Android
+- Weergavekleur
+- Privacy
+- iCloudStorage
+
+### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522----"></a>Autopilot-profielen toewijzen aan de virtuele groep Alle apparaten <!--2715522  -->
+U kunt Autopilot-profielen toewijzen aan de virtuele groep Alle apparaten. Kies hiervoor **Inschrijving apparaat** > **Inschrijving Windows** > **Implementatieprofielen** > kies een profiel >  **Toewijzingen** > onder  **Toewijzen aan** kies **Alle apparaten**. Zie [Windows-apparaten inschrijven met Windows AutoPilot](enrollment-autopilot.md) voor meer informatie over Autopilot-profielen.
+
+### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324----"></a>Achtergronden op iOS-apparaten die onder toezicht staan aanpassen met behulp van een apparaatconfiguratieprofiel <!-- 2809324  -->
+Wanneer u een apparaatconfiguratieprofiel voor iOS-apparaten maakt, kunt u bepaalde instellingen toestaan en beperken onder **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS** voor platform > **Apparaatbeperkingen** voor profieltype. Deze update bevat nieuwe instellingen voor **Achtergrond** waardoor een beheerder een .png-, .jpg- of .jpeg-afbeelding als achtergrond kan instellen, een voorbeeld van de afbeelding kan bekijken en voorkomen dat gebruikers de achtergrond kunnen veranderen. De achtergrondinstellingen zijn alleen van toepassing op apparaten die onder toezicht staan. Zie [Beperkingsinstellingen voor iOS-apparaten](device-restrictions-ios.md) voor een lijst met de huidige instellingen.
+
+### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Toast-meldingen voor Win32-apps <!-- 3136566   -->
+U kunt per app-toewijzing onderdrukken dat toast-meldingen voor eindgebruikers worden weergegeven. Vanuit Intune selecteert u **Client-apps** > **Apps** > selecteer de app > **Toewijzingen** > **Groepen opnemen**. 
+
+### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396---"></a>Contactpersonen delen via Bluetooth wordt verwijderd in Apparaatbeperkingen > Apparaateigenaar voor Android Enterprise <!-- 3598396 -->
+Wanneer u een apparaatbeperkingsbeleid voor Android Enterprise-apparaten maakt, is de instelling **Contactpersoon delen via Bluetooth** beschikbaar. In deze update wordt de instelling **Contactpersoon delen via Bluetooth** verwijderd (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android Enterprise** voor platform > **Apparaatbeperkingen > Apparaateigenaar** voor Profieltype > **Algemeen**). 
+
+De instelling **Contactpersoon delen via Bluetooth** wordt niet ondersteund voor het beheer van Android Enterprise-apparaateigenaren. Wanneer deze instelling wordt verwijderd, heeft dit dus geen invloed op apparaten of tenants, zelfs als deze instelling is ingeschakeld en geconfigureerd in uw omgeving.
+
+Ga naar [Met Android Enterprise-apparaatinstellingen functies toestaan of beperken](device-restrictions-android-for-work.md) voor de huidige lijst met instellingen.
+
+Van toepassing op: Android Enterprise-apparaateigenaar
 
 <!-- 1812 start -->
 
@@ -75,8 +114,9 @@ In [VPN-instellingen voor Windows 10](vpn-settings-windows-10.md) worden de huid
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>De Intune App-SDK ondersteunt 256-bits versleutelingssleutels <!-- 1832174 -->
 De Intune App-SDK voor Android gebruikt 256-bits versleutelingssleutels wanneer versleuteling is ingeschakeld door app-beveiligingsbeleid. De SDK biedt doorgaande ondersteuning voor 128-bits sleutels voor compatibiliteit met inhoud en apps die gebruikmaken van oudere SDK-versies.
 
-### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>Gedeelde PC-instellingen ingeschakeld in Intune-profiel <!-- 1907917 -->
+### <a name="enabled-shared-pc-settings-in-intune-profile----1907917-1063203---"></a>Gedeelde PC-instellingen ingeschakeld in Intune-profiel <!-- 1907917, 1063203 -->
 U kunt momenteel gedeelde PC-instellingen configureren op Windows 10-desktopapparaten met een aangepaste OMA-URI-instelling. Er wordt een nieuw profiel toegevoegd om gedeelde PC-instellingen te configureren (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** > **Gedeeld apparaat met meerdere gebruikers**).
+
 Van toepassing op: Windows 10 en hoger, Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune-beleid werkt de verificatiemethode en installatie van de Bedrijfsportal-app bij <!-- 1927359 -->
@@ -113,10 +153,6 @@ Als u wilt kiezen welke schermen moeten worden overgeslagen, gaat u naar **Appar
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Sommige BitLocker-instellingen ondersteunen Windows 10 Pro <!-- 2727036 -->
 U kunt een configuratieprofiel maken dat Endpoint Protection-instellingen op Windows 10-apparaten instelt, waaronder BitLocker. Hiermee wordt voor sommige BitLocker-instellingen ondersteuning toegevoegd voor Windows 10 Professional. Raadpleeg [Endpoint Protection-instellingen voor Windows 10](endpoint-protection-windows-10.md#windows-encryption) als u de huidige Windows 10-instellingen wilt bekijken.
-
-
-### <a name="intune-device-reporting-fields----2748738---"></a>Rapportvelden voor Intune-apparaat <!-- 2748738 -->
-Intune biedt aanvullende velden voor apparaatrapporten, waaronder de Android-fabrikant, het model, de versie van de beveiligingspatch en het iOS-model. In Intune zijn deze velden beschikbaar door **Client-apps** > **App-beveiligingsstatus** te selecteren en **App-beveiligingsrapport: iOS, Android** te selecteren. Bovendien helpen deze parameters u de lijst **Toestaan** te configureren voor de apparaatfabrikant (Android), evenals de lijst **Toestaan** voor het apparaatmodel (Android en iOS) en de versie-instellingen van de minimale Android-beveiligingspatch. 
 
 ### <a name="intune-device-reporting-fields----2748738---"></a>Rapportvelden voor Intune-apparaat <!-- 2748738 -->
 Intune biedt aanvullende velden voor apparaatrapporten, waaronder de Android-fabrikant, het model, de versie van de beveiligingspatch en het iOS-model. In Intune zijn deze velden beschikbaar door **Client-apps** > **App-beveiligingsstatus** te selecteren en **App-beveiligingsrapport: iOS, Android** te selecteren. Bovendien helpen deze parameters u de lijst **Toestaan** te configureren voor de apparaatfabrikant (Android), evenals de lijst **Toestaan** voor het apparaatmodel (Android en iOS) en de versie-instellingen van de minimale Android-beveiligingspatch. 
@@ -155,6 +191,8 @@ Beheersjablonen in Intune (**Apparaatconfiguratie** > **Beheersjablonen**) zijn 
 Beheersjablonen zijn beschikbaar in openbare preview en worden verplaatst van **Apparaatconfiguratie** > **Beheersjablonen** naar **Apparaatconfiguraatie** > **Profielen** >**Profiel maken** > kies als **Platform** **Windows 10 en later** en kies in **Profieltype** **Beheersjablonen**.
 Rapportage is ingeschakeld is van toepassing op: Windows 10 en hoger
 
+### <a name="intune-macos-company-portal-dark-mode----3300524---"></a>Donkere modus van Intune macOS Bedrijfsportal <!-- 3300524 -->
+De Intune macOS Bedrijfsportal biedt nu ondersteuning voor de donkere modus voor macOS. Wanneer u de donkere modus inschakelt op een macOS 10.14+-apparaat, wordt de vormgeving door de Bedrijfsportal aangepast naar kleuren die overeenkomen met die modus.
 
 <!-- 1810 start -->
 
@@ -211,7 +249,7 @@ Van toepassing op Windows 10 en hoger
 
 Er zijn geen actieve meldingen op dit moment.
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 Zie [Wat is er nieuw in Microsoft Intune?](whats-new.md) voor meer informatie over recente ontwikkelingen.
 
 

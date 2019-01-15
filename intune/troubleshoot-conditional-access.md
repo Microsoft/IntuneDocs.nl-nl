@@ -1,5 +1,5 @@
 ---
-title: Problemen met voorwaardelijke toegang oplossen
+title: Problemen met voorwaardelijke toegang oplossen | Microsoft Intune
 description: Dit kunt u doen wanneer uw gebruikers geen toegang krijgen tot bedrijfsbronnen via de voorwaardelijke toegang van Intune.
 keywords: ''
 author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 642a4da6a1ca3c368e90f2d3007c1fc6a068af78
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d24b96408ed02413f25957e2558704385c5e1bfd
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817140"
 ---
 # <a name="troubleshoot-conditional-access"></a>Problemen met voorwaardelijke toegang oplossen
 
@@ -73,7 +73,7 @@ Als u een apparaat hebt dat niet compatibel is en er nog steeds toegang mee hebt
 - Controleer de doelgroepen en de groepen die zijn uitgesloten. Als een gebruiker zich niet in de juiste doelgroep of in de groep die is uitgesloten bevindt, wordt deze niet geblokkeerd. Alleen apparaten van gebruikers in een doelgroep worden gecontroleerd op naleving.
 - Zorg ervoor dat het apparaat wordt gedetecteerd. Verwijst de Exchange-Connector naar een Exchange 2010 CAS terwijl de gebruiker zich op een Exchange 2013-server bevindt? In dit geval, mits de standaardregel voor Exchange Toestaan is, kan Intune de verbinding van het apparaat met Exchange niet detecteren, zelfs als de gebruiker zich in de doelgroep bevindt.
 - Bestaan apparaat/toegangsstatus in Exchange controleren:
-  - Gebruik deze PowerShell-cmdlet om een lijst van alle mobiele apparaten voor een postvak op te halen: 'Get-ActiveSyncDeviceStatistics-Postvak mbx'. Als het apparaat niet wordt weergegeven, heeft het geen toegang tot Exchange.
+  - Gebruik deze PowerShell-cmdlet om een lijst met alle mobiele apparaten voor een postvak op te halen: 'Get-ActiveSyncapparatentatistics -mailbox mbx'. Als het apparaat niet wordt weergegeven, heeft het geen toegang tot Exchange.
   - Als het apparaat wordt weergegeven, gebruikt u de cmdlet Get-CASmailbox-identity:'upn' | fl voor gedetailleerde informatie over de toegangsstatus en om die informatie aan Microsoft Ondersteuning te verstrekken.
 
 ## <a name="next-steps"></a>Volgende stappen

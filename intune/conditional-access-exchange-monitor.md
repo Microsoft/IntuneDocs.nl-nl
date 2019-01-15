@@ -1,6 +1,5 @@
 ---
-title: Voorwaardelijke toegang voor Exchange in Microsoft Intune controleren
-titlesuffix: ''
+title: Voorwaardelijke toegang voor Exchange in Microsoft Intune controleren | Microsoft Intune
 description: De naleving van voorwaardelijke toegang bewaken voor On-Premises Exchange en Exchange Online via Intune Azure Portal.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8c9602dbe183501cc779fcb9b5d5a1e6e4bf6154
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180575"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816767"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>De naleving van voorwaardelijke toegang in Intune controleren voor Exchange On-Premises en Exchange Online
 
@@ -56,16 +55,16 @@ U kunt ook inzoomen op bepaalde apparaten voor meer informatie. Het apparaat in 
 
 In het deelvenster Apparaatdetails ziet u meer informatie:
 
--   **Overzicht:** hier kunt u apparaateigenschappen bekijken, zoals de OS-versie, het apparaatmodel, het eigendom, het serienummer, de fabrikant, het telefoonnummer en de laatste keer dat het apparaat is ingecheckt.
+-   **Overzicht:** hier kunt u apparaateigenschappen bekijken, zoals: besturingssysteemversie, apparaatmodel, eigendom, serienummer, fabrikant, telefoonnummer en de laatste keer dat het apparaat is ingecheckt.
 
 -   **Eigenschappen:** hier kunt u het apparaateigendom instellen (persoonlijk of bedrijfseigendom).
 
--   **Hardware:** biedt de informatie die u in het overzicht ziet en ook opslagdetails (totale ruimte en vrije schijfruimte), systeembehuizing, netwerkdetails, netwerkservice en meer blokkeringsdetails van voorwaardelijke toegang.
+-   **Hardware:** biedt de informatie die u in het overzicht ziet, evenals opslagdetails (totale ruimte en vrije schijfruimte), systeembehuizing, netwerkdetails, netwerkservice en meer blokkeringsdetails van voorwaardelijke toegang.
 
 -   **Gedetecteerde apps:** hier ziet u alle toepassingen die op uw apparaat zijn geïnstalleerd. U kunt de lijst met geïnstalleerde apps ook exporteren naar een CSV-indeling.
 
--   **Compatibiliteit:** hier worden alle details van het nalevingsbeleid van het apparaat weergegeven.
+-   **Naleving:** hier worden alle details van het nalevingsbeleid van het apparaat weergegeven.
 
--   **Apparaatconfiguratie:** hier ziet u alle configuratiedetails van het apparaat.
+-   **Apparaatconfiguratie:** hier worden alle configuratiedetails van het apparaat weergegeven.
 
 -   **Toegang tot Exchange:** hier vindt u meer informatie over de apparaatstatus na het toepassen van beleid voor voorwaardelijke toegang.

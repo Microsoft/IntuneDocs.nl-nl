@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737913"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067428"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Quickstart: Microsoft Intune gratis proberen 
 
@@ -50,7 +50,7 @@ U mag Intune 30 dagen gratis proberen. Als u al een werk- of schoolaccount hebt 
 
 2. Maak een account met behulp van uw bedrijfsnaam gevolgd door **.onmicrosoft.com**. 
 
-    ![Schermafbeelding van het proces voor nieuwe referenties voor het Microsoft Intune-account](./media/account-sign-up-site-user-id.png)
+    ![Schermopname van het proces voor nieuwe referenties voor het Intune-account](./media/account-sign-up-site-user-id.png)
 
     Als uw organisatie een eigen aangepast domein heeft dat u wilt gebruiken zonder **.onmicrosoft.com**, kunt u dit wijzigen in de Office 365-beheerportal die later in dit artikel wordt beschreven.
 

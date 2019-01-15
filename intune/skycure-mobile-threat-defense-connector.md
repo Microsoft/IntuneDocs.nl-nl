@@ -1,6 +1,5 @@
 ---
-title: Symantec-connector met Microsoft Intune
-titlesuffix: ''
+title: Symantec-connector met Microsoft Intune | Microsoft Intune
 description: Meer informatie over de integratie van Intune met Symantec Endpoint Protection Mobile om de toegang van mobiele apparaten tot bedrijfsresources te beheren.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1503bdb9b62e7e9fb4b2d5a0482e058d6fed31f7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ba90d47f13ac22465927fc5724a254f121c800e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187689"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817112"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile-connector
 
@@ -67,11 +66,11 @@ Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u a
 
 **Blokkeren wanneer er schadelijke apps zijn gedetecteerd:**
 
-![Schadelijke apps gedetecteerd](./media/symantec-arch-1.png)
+![Conceptafbeelding van detectie van schadelijke apps](./media/symantec-arch-1.png)
 
 **Toegang na herstel:**
 
-![Toegang wordt verleend na herstel nadat schadelijke apps zijn gedetecteerd](./media/symantec-arch-2.png)
+![Afbeelding van toegang die wordt verleend na herstel nadat schadelijke apps zijn gedetecteerd](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Toegangsbeheer op basis van bedreigingen voor het netwerk
 

@@ -1,12 +1,11 @@
 ---
-title: Intune Exchange Connector voor Exchange Online
-titleSuffix: ''
+title: Intune Exchange Connector voor Exchange Online | Microsoft Intune
 description: Verbinding maken met Intune Office 365 Exchange-service voor ondersteuning van Exchange ActiveSync MDM (beheer van mobiele apparaten).
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 318bde24e42bfdf9bbcf15d83f42405fc06f7901
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9845ed1b809b611975c07c6c8335acd237d845c0
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184205"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816698"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>De Exchange Connector-service configureren voor Intune en Exchange Online
 In dit artikel leest u hoe u de Microsoft Intune-service verbindt met Exchange Online of de nieuwe Exchange Online Dedicated-service. Neem contact op met uw accountmanager om te bepalen of uw Exchange Online Dedicated-omgeving de **nieuwe** of **verouderde** versie is.
@@ -52,7 +51,7 @@ U moet ook een Exchange Online-gebruikersaccount maken dat wordt gebruikt door d
 
 ## <a name="set-up-the-service-to-service-connector"></a>De Servicesconnector instellen
 
-1. Meld u bij [Azure Portal](http://portal.azure.com) aan met een gebruikersaccount met Exchange-beheerdersrechten en machtigingen voor de [eerder genoemde](#exchange-cmdlet-requirements) cmdlets, een geldige Intune-licentie en de globale beheerdersrol. Microsoft Intune gebruikt het e-mailadres van de momenteel aangemelde gebruiker om de verbinding in te stellen.
+1. Meld u bij [Azure Portal](https://portal.azure.com) aan met een gebruikersaccount met Exchange-beheerdersrechten en machtigingen voor de [eerder genoemde](#exchange-cmdlet-requirements) cmdlets, een geldige Intune-licentie en de globale beheerdersrol. Microsoft Intune gebruikt het e-mailadres van de momenteel aangemelde gebruiker om de verbinding in te stellen.
 
 2. Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
 

@@ -1,12 +1,11 @@
 ---
-title: MTD-apps toevoegen en toewijzen aan Microsoft Intune
-titleSuffix: ''
+title: MTD-apps toevoegen en toewijzen aan Microsoft Intune | Microsoft Intune
 description: Gebruik Intune om Mobile Thread Defense (MTD)-apps, de Microsoft Authenticator-app en het iOS-configuratiebeleid toe te voegen in Azure Portal.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: afc5028e4ed57757832844637298caf1656d610c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d08a7332ba96f552b488ad3f5d00004d0445d7ec
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181170"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53995994"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>MTD-apps (Mobile Threat Defense) toevoegen en toewijzen met Intune
 
 > [!NOTE] 
 > Dit onderwerp is van toepassing op alle Mobile Threat Defense-partners.
 
-U kunt Intune gebruiken om MTD-apps toe te voegen en te implementeren. Eindgebruikers kunnen dan meldingen ontvangen wanneer op hun mobiele apparaten een bedreiging wordt vastgesteld en ze kunnen richtlijnen ontvangen om de bedreigingen te verhelpen.
+U kunt Intune gebruiken om MTD-apps (Mobile Threat Defense) toe te voegen en te implementeren. Eindgebruikers kunnen dan meldingen ontvangen wanneer op hun mobiele apparaten een bedreiging wordt vastgesteld en ze kunnen richtlijnen ontvangen om de bedreigingen te verhelpen.
 
 
 ## <a name="before-you-begin"></a>Voordat u begint
@@ -38,13 +37,12 @@ De onderstaande stappen moeten worden uitgevoerd in [Azure Portal](https://porta
   -   [Een app toevoegen in Intune](apps-add.md).
   -   [Een configuratiebeleid voor iOS-apps toevoegen in Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
   -   [Een app toewijzen met Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
-  -   [Een configuratiebeleid voor iOS-apps toevoegen](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 > [!TIP]
 > De Intune-bedrijfsportal werkt als de broker op Android-apparaten, zodat de identiteit van gebruikers kan worden gecontroleerd door Azure AD.
 
 ## <a name="configure-microsoft-authenticator-for-ios"></a>Microsoft Authenticator voor iOS configureren
-Voor iOS-apparaten hebt u de app [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) nodig, zodat de identiteit van gebruikers kan worden gecontroleerd door Azure AD. Bovendien hebt u het configuratiebeleid voor iOS-apps nodig, dat bepaalt welke MTD iOS-app moet worden gebruikt met Intune.
+Voor iOS-apparaten hebt u de app [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) nodig, zodat de identiteit van gebruikers kan worden gecontroleerd door Azure AD. Bovendien hebt u een configuratiebeleid voor iOS-apps nodig, waarmee wordt bepaald welke MTD iOS-app moet worden gebruikt met Intune.
 
 Zie de instructies in het artikel [iOS Store-apps toevoegen aan Microsoft Intune](store-apps-ios.md). Gebruik deze [URL voor de App Store voor Microsoft Authenticator](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) in **stap 12** in de sectie **App-gegevens configureren**.
 
@@ -145,7 +143,7 @@ Kies de sectie die overeenkomt met uw MTD-provider:
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Beleid voor de configuratie van Lookout for Work-apps
 
-- Maak het configuratiebeleid voor iOS-apps volgens de instructies in het onderwerp [How to use Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) (App-configuratiebeleid van Microsoft Intune gebruiken voor iOS).
+- Maak het configuratiebeleid voor iOS-apps volgens de instructies in het artikel [using iOS app configuration policy](app-configuration-policies-use-ios.md) (App-configuratiebeleid voor iOS gebruiken).
 
 ### <a name="sep-mobile-app-configuration-policy"></a>Beleid voor de configuratie van SEP Mobile-apps
 

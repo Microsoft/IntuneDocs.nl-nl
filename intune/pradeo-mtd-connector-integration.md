@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
-ms.openlocfilehash: d7b88b73c260a6a84fdb835069de23c52775929a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 65b480b60b195ab012743f9a4006fb69aa929dbb
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816800"
 ---
 # <a name="integrate-pradeo-with-intune"></a>Pradeo integreren met Intune
 
@@ -67,7 +67,7 @@ Het autorisatieproces van de Pradeo-app is als volgt:
 
 4.  Kies in het venster **EMM (Enterprise mobility management) - Intune** onder **Stap 1** de knop **Pradeo Connector**. 
 
-    ![Venster voor Pradeo in EMM Intune](./media/pradeo_setup.png)
+    ![Schermopname van het Pradeo EMM Intune-venster](./media/pradeo_setup.png)
 
 5. Voer uw Intune-referenties in het venster Microsoft Intune connection (Microsoft Intune-verbinding) in.
 

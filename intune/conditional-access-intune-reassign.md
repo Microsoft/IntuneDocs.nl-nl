@@ -1,12 +1,11 @@
 ---
-title: Voorwaardelijke toegang migreren naar Azure Portal
-titlesuffix: Microsoft Intune
+title: Voorwaardelijke toegang migreren naar Azure Portal | Microsoft Intune
 description: Wijs de beleidsregels voor voorwaardelijke toegang die u eerder hebt gemaakt in de klassieke Intune-portal, opnieuw toe aan Azure Portal.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgree
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6dbd7d9079bdb826f83cce76650cacebee056b68
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d319ff39574565c3f326bd6b03b346e989bdc488
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817429"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Beleid voor voorwaardelijke toegang vanuit de klassieke Intune-portal overbrengen naar Azure Portal
 
@@ -46,7 +45,7 @@ Als u klaar bent om over te stappen op Azure Portal, volgt u de stappen in dit o
             - Verwijder gebruikers geleidelijk uit de beveiligingsgroepen waarop beleid voor voorwaardelijke toegang uit de klassieke Intune-portal is toegepast.
             - Nadat u hebt vastgesteld dat het nieuwe beleid werkt voor deze gebruikers, kunt u het beleid uitschakelen in de klassieke Intune-portal. 
 <br /><br />
-- Als het beleid voor voorwaardelijke toegang in de klassieke Intune-portal is geconfigureerd voor gebruik van Exchange Active Sync (EAS), volgt u de [instructies in dit onderwerp](#to-reassign-intune-device-based-conditional-access-policies-for-eas-clients) om **de EAS-beleidsinstellingen voor voorwaardelijke toegang toe te wijzen in Azure Portal**.
+- Als het beleid voor voorwaardelijke toegang in de klassieke Intune-portal is geconfigureerd voor gebruik van Exchange Active Sync (EAS), volgt u de [instructies in dit onderwerp](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) om **de EAS-beleidsinstellingen voor voorwaardelijke toegang toe te wijzen in Azure Portal**.
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Op apparaat gebaseerd beleid voor voorwaardelijke toegang controleren in de klassieke Intune-portal
 
@@ -81,7 +80,7 @@ Via de blade **Intune-app-beveiliging** in Azure Portal kunnen beheerders app-ge
 
 4. Kies **Gebruikers en groepen** in de sectie **Toewijzingen** om de doelgroep voor het nieuwe beleid voor voorwaardelijke toegang te bepalen.
     
-    ![Afbeelding van een vergelijking van de gebruikersinterface van een gebruikersgroep tussen de Intune-portal en Azure Portal](./media/reassign-ca-1.png)
+    ![Afbeelding met vergelijking van de gebruikersinterface voor Gebruikersgroep tussen de Intune-portal en Azure Portal](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
     > De selectie die u voor Azure Portal hebt gemaakt, moet overeenkomen met de selectie die u voor de klassieke portal hebt gemaakt. Als u bijvoorbeeld alle gebruikers hebt geselecteerd in de klassieke Intune-portal, selecteert u ook **Alle gebruikers** in Azure Portal. Als u bovendien de optie **Groepen uitsluiten** hebt gekozen in de klassieke Intune-portal, moet u de betreffende groepen ook uitsluiten in Azure Portal.
@@ -96,7 +95,7 @@ Via de blade **Intune-app-beveiliging** in Azure Portal kunnen beheerders app-ge
 
 9. Klik op **Gereed**.
 
-    ![Afbeelding van de vergelijking van de gebruikersinterface voor Cloud-apps tussen de Intune-portal en Azure Portal](./media/reassign-ca-3.png)
+    ![Afbeelding met vergelijking van de gebruikersinterface voor Cloud-apps tussen de Intune-portal en Azure Portal](./media/reassign-ca-3.png)
 
     > [!TIP] 
     > Als u meerdere apps met hetzelfde beleid hebt, kunt u overwegen de apps in één beleid onder te brengen in Azure Portal.
@@ -107,7 +106,7 @@ Via de blade **Intune-app-beveiliging** in Azure Portal kunnen beheerders app-ge
 
 12. Als u dat hebt gedaan, klikt u tweemaal op **Gereed**.
 
-    ![Afbeelding van de vergelijking van de gebruikersinterface voor apparaatplatformen tussen de Intune-portal en Azure Portal](./media/reassign-ca-4.png)
+    ![Afbeelding van vergelijking van de gebruikersinterface voor Apparaatplatformen tussen de Intune-portal en Azure Portal](./media/reassign-ca-4.png)
 
     > [!TIP] 
     > Als u afzonderlijke platformen hebt gekozen in de klassieke Intune-portal, kiest u deze platformen in Azure Portal.
@@ -121,7 +120,7 @@ Via de blade **Intune-app-beveiliging** in Azure Portal kunnen beheerders app-ge
 
 15. Als u de client-app hebt gekozen, klikt u tweemaal op **Gereed**.
 
-    ![Afbeelding van de vergelijking van de gebruikersinterface voor client-apps tussen de Intune-portal en Azure Portal](./media/reassign-ca-6.png)
+    ![Afbeelding met vergelijking van de gebruikersinterface voor Client-apps tussen de Intune-portal en Azure Portal](./media/reassign-ca-6.png)
 
 16. Als u browserinstellingen hebt gekozen in de klassieke Intune-portal, schakelt u in Azure Portal de selectievakjes **Browser** en **Mobiele apps en bureaubladclients** in. Als u geen browserinstellingen hebt gekozen in de klassieke Intune-portal, selecteert u alleen **Mobiele apps en bureaubladclients**. 
 
@@ -135,7 +134,7 @@ Via de blade **Intune-app-beveiliging** in Azure Portal kunnen beheerders app-ge
 
 21. Schakel in de **nieuwe** blade voor het beleid voor voorwaardelijke toegang de wisselknop **Beleid inschakelen** in en klik vervolgens op **Maken**.
 
-    ![Afbeelding van de vergelijking van de gebruikersinterface voor Beleid voor voorwaardelijke toegang inschakelen tussen de Intune-portal en Azure Portal](./media/reassign-ca-11.png)
+    ![Vergelijking van de gebruikersinterface voor Beleid voor voorwaardelijke toegang inschakelen tussen Intune en Azure](./media/reassign-ca-11.png)
 
 ## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>Beleid voor voorwaardelijke toegang op basis van Intune-apparaat opnieuw toewijzen voor EAS-clients
 
@@ -149,7 +148,7 @@ Als u EAS-instellingen (Exchange Active Sync) hebt geconfigureerd als onderdeel 
 
 4. Kies **Gebruikers en groepen** in de sectie **Toewijzingen** om de doelgroep voor het nieuwe beleid voor voorwaardelijke toegang te bepalen.
 
-    ![Afbeelding van een vergelijking van de gebruikersinterface van een gebruikersgroep tussen de Intune-portal en Azure Portal](./media/reassign-ca-12.png)
+    ![Afbeelding van een vergelijking van de gebruikersinterface voor een gebruikersgroep tussen de Intune-portal en Azure Portal](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
     > De selectie die u voor Azure-portal maakt, moet overeenkomen met de selectie voor de Azure-portal. Als u bijvoorbeeld alle gebruikers hebt geselecteerd in de klassieke Intune-portal, selecteert u ook **Alle gebruikers** in Azure Portal. Als u bovendien de optie **Groepen uitsluiten** hebt gekozen in de klassieke Intune-portal, moet u de betreffende groepen ook uitsluiten in Azure Portal.
@@ -160,7 +159,7 @@ Als u EAS-instellingen (Exchange Active Sync) hebt geconfigureerd als onderdeel 
 
 7. Klik op de blade **Cloud-apps** op **Apps selecteren** en kies **Exchange Online**. Klik vervolgens op **Selecteren** en **Gereed**.
 
-    ![Afbeelding van de vergelijking van de gebruikersinterface voor Cloud-apps tussen de Intune-portal en Azure Portal](./media/reassign-ca-14.png)
+    ![Vergelijking van de gebruikersinterface voor Cloud-apps tussen de Intune-portal en Azure Portal](./media/reassign-ca-14.png)
 
     > [!IMPORTANT] 
     > Beleid voor voorwaardelijke toegang voor EAS-clients kan geen andere cloud-app bevatten.
@@ -179,7 +178,7 @@ Als u EAS-instellingen (Exchange Active Sync) hebt geconfigureerd als onderdeel 
 
 12. Schakel in de **nieuwe** blade voor het beleid voor voorwaardelijke toegang de wisselknop **Beleid inschakelen** in en klik vervolgens op **Maken**.
 
-    ![Afbeelding van de vergelijking van de gebruikersinterface voor Beleid voor voorwaardelijke toegang inschakelen tussen de Intune-portal en Azure Portal](./media/reassign-ca-17.png)
+    ![Vergelijking van de gebruikersinterface voor Beleid voor voorwaardelijke toegang inschakelen tussen de Intune-portal en Azure Portal](./media/reassign-ca-17.png)
 
 > [!NOTE]
 > Als u **Apparaatplatformen** configureert, kunt u het beleid niet opslaan. U krijgt dan de foutmelding: ‘Beleidsconfiguratie wordt niet ondersteund.’ Het platform dat door het verbindende apparaat wordt gebruikt, kan niet door Exchange ActiveSync worden geïdentificeerd. Het configureren van specifieke apparaatplatformen wordt daarom niet ondersteund wanneer u een beleid voor Exchange ActiveSync-apparaten maakt.
@@ -203,7 +202,7 @@ Nadat u het beleid voor voorwaardelijke toegang hebt toegewezen in Azure Portal,
 
     ![Afbeelding van Beleid voor voorwaardelijke toegang uitschakelen in de klassieke Intune-portal](./media/reassign-ca-18.png)
 
-## <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
 
 - [Gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken](conditional-access-intune-common-ways-use.md)
 - [Op apps gebaseerde voorwaardelijke toegang met Intune](app-based-conditional-access-intune.md)

@@ -1,12 +1,11 @@
 ---
-title: Ondersteuning voor Microsoft Intune krijgen
-titlesuffix: Microsoft Intune
+title: Ondersteuning voor Microsoft Intune krijgen | Microsoft Intune
 description: Online- en telefonische ondersteuning verkrijgen voor betaalde Microsoft Intune-abonnementen en proefabonnementen.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2feb18f9c21929d803bbb3605842effa8f63d75d
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 6a57a3a26a786e86775ce1509c5f751d2856f95b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247166"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817293"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen
 
@@ -49,11 +48,11 @@ Als de algemene oplossingen niet helpen, kunt u **Ondersteuningsaanvraag** selec
 
 1. Meld u aan bij Azure Portal (<https://portal.azure.com>) met de referenties van een Intune-beheerder. Kies de **?** in de rechterbovenhoek van de portal en selecteer vervolgens **Help + ondersteuning** om naar de gelijknamige[Azure Help + ondersteuning](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)pagina te gaan.
 
-   ![Schermopname van het Help-pictogram in Azure Portal met de koppeling Help + ondersteuning gemarkeerd](./media/azure-get-support.png)
+   ![Afbeelding van de vraagtekenkoppeling, waarbij de koppeling Help en ondersteuning is gemarkeerd](./media/azure-get-support.png)
 
 2. Selecteer **Nieuwe ondersteuningsaanvraag** op de pagina **Help en ondersteuning** van Azure.
 
-   ![Schermopname van de pagina Help en ondersteuning in Azure Portal met de koppeling Nieuwe ondersteuningsaanvraag gemarkeerd](media/azure-support-ticket-link.png)
+   ![Afbeelding van de pagina Help en ondersteuning met de koppeling Nieuwe ondersteuningsaanvraag gemarkeerd](media/azure-support-ticket-link.png)
 
 3. Op het tabblad **Basis** moet u voor de meeste technische problemen met Intune de volgende opties kiezen:
    - **Type probleem**: **Technisch**
@@ -63,18 +62,18 @@ Als de algemene oplossingen niet helpen, kunt u **Ondersteuningsaanvraag** selec
    - **Subtype van het probleem**: Kies het subprobleemtype in de vervolgkeuzelijst.
    - **Onderwerp**: Beschrijf kort uw probleem.
 
-   ![Schermafbeelding van het tabblad Basis op de pagina Help en ondersteuning - Nieuwe ondersteuningsaanvraag](./media/get-support/help-new-support-case-basics.png)
+   ![Afbeelding van het tabblad Basis op de pagina Help en ondersteuning - Nieuwe ondersteuningsaanvraag](./media/get-support/help-new-support-case-basics.png)
 
    Kies **Volgende: Oplossingen** om door te gaan.
 4. Bekijk op het tabblad **Oplossing** de aanbevolen stappen die u mogelijk helpen uw probleem op te lossen zonder een ticket in te dienen. Als u nog steeds een ondersteuningsaanvraag wilt maken nadat u de stappen hebt bekeken, klikt u op **Volgende: Details**.
 
-   ![Schermafbeelding van het tabblad Oplossingen op de pagina Help en ondersteuning - Nieuwe ondersteuningsaanvraag](./media/get-support/help-new-support-case-solutions.png)
+   ![Afbeelding van het tabblad Oplossing op de pagina Help en ondersteuning - Nieuwe ondersteuningsaanvraag](./media/get-support/help-new-support-case-solutions.png)
 5. Vul in het tabblad **Details** de details van uw probleem, de ondersteuningsmethode en uw contactgegevens in en klik op **Volgende: Beoordelen en maken**.
 
-   ![Schermafbeelding van het tabblad Details op de pagina Help en ondersteuning - Nieuwe ondersteuningsaanvraag](./media/get-support/help-new-support-case-details.png)
+   ![Afbeelding van het tabblad Details op de pagina Help en ondersteuning - Nieuwe ondersteuningsaanvraag](./media/get-support/help-new-support-case-details.png)
 6. Bekijk de informatie, verifieer dat de informatie klopt en kies vervolgens **Maken** om uw ondersteuningsaanvraag in te dienen.
 
-   ![Schermafbeelding van het tabblad Beoordelen en maken op de pagina Help en ondersteuning - Nieuwe ondersteuningsaanvraag](./media/get-support/help-new-support-case-create.png)
+   ![Afbeelding van het tabblad Beoordelen en maken op de pagina Nieuwe ondersteuningsaanvraag](./media/get-support/help-new-support-case-create.png)
 
 <!--
   - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
@@ -117,7 +116,7 @@ U kunt een ondersteuningsaanvraag weergeven in Azure Portal. Hiervoor doet u het
 ## <a name="new-help-and-support-experience"></a>Nieuwe Help en ondersteuning-ervaring
 *De volgende informatie is alleen van toepassing wanneer u de portal voor Apparaatbeheer gebruikt en deelneemt aan de implementatie van de nieuwe ervaring voor Help en ondersteuning. Deelnemers aan deze implementatie worden willekeurig geselecteerd uit de beschikbare Intune-tenants.*  
 
-De update voor Help en ondersteuning voor Intune is een nieuwe ervaring die voor sommige, maar niet alle tenants beschikbaar is in de [Microsoft 365-portal voor apparaatbeheer](http://devicemanagement.microsoft.com). Deze nieuwe ervaring is vergelijkbaar met de ervaring in het [Microsoft 365-beheercentrum](https://portal.office.com/AdminPortal/Home) en vervangt de vorige ervaring voor Help en ondersteuning wanneer deze vanuit sommige locaties van de console voor apparaatbeheer wordt geopend.  
+De update voor Help en ondersteuning voor Intune is een nieuwe ervaring die voor sommige, maar niet alle tenants beschikbaar is in de [Microsoft 365-portal voor apparaatbeheer](https://devicemanagement.microsoft.com). Deze nieuwe ervaring is vergelijkbaar met de ervaring in het [Microsoft 365-beheercentrum](https://portal.office.com/AdminPortal/Home) en vervangt de vorige ervaring voor Help en ondersteuning wanneer deze vanuit sommige locaties van de console voor apparaatbeheer wordt geopend.  
 
 In de portal voor apparaatbeheer opent u de nieuwe ervaring wanneer u op een willekeurige blade **Help en ondersteuning** selecteert onder **Alle services** > **Apparaatbeheer**, met uitzondering van de blade **Probleemoplossing**. Wanneer u Help en ondersteuning opent vanuit elke andere locatie, zoals **Probleemoplossing**, met de optie **?** in de rechterbovenhoek van de banner van de console, of wanneer u **Help en ondersteuning** selecteert vanuit de lijst met services in het linkerdeelvenster, opent u de oorspronkelijke ervaring.  
 
@@ -143,7 +142,7 @@ Hier volgen enkele voorbeelden van query's die u kunt verzenden:
 
 ### <a name="view-context-sensitive-help"></a>Contextgevoelige Help weergeven
 Nadat u een voorgestelde query hebt geaccepteerd of uw eigen query hebt verzonden, worden contextafhankelijke resultaten weergegeven onder **Oplossingen weergeven**. Deze resultaten omvatten zowel Intune-specifieke ondersteuning bij zelfhulp als extra resultaten die zijn geretourneerd na een webzoekopdracht op basis van de querycriteria.  
-![Resultaten weergeven](./media/get-support/view-results.png)
+![Afbeelding van het deelvenster Resultaten weergeven](./media/get-support/view-results.png)
 
 ### <a name="get-support"></a>Ondersteuning krijgen
 Als u het probleem niet kunt oplossen met de zelfhulp of de webgebaseerde ondersteuning, kunt u in de console een aanvraag verzenden voor ondersteuning per e-mail of telefoon.  
@@ -151,16 +150,16 @@ Selecteer op de pagina **Hebt u hulp nodig?** de optie die u wilt gebruiken.
 
 - Geef uw e-mailadres op voor een e-mailaanvraag. Indien gewenst kunt u bijlagen toevoegen aan uw inzending. Selecteer **Verzenden** om de aanvraag te openen.  
 
-  ![E-mailaanvraag](./media/get-support/email-support.png)
+  ![Afbeelding van het deelvenster E-mailaanvraag](./media/get-support/email-support.png)
   
 - Geef uw telefoonnummer op voor een aanvraag voor telefonische ondersteuning. Indien gewenst kunt u tevens uw e-mailadres invoeren en bijlagen toevoegen aan uw inzending. Selecteer Bel mij om de aanvraag te verzenden.  
 
-   ![Telefonische aanvraag](./media/get-support/phone-support.png)
+   ![Afbeelding van het deelvenster Telefonische aanvraag](./media/get-support/phone-support.png)
 
 ### <a name="view-support-cases"></a>Ondersteuningscases weergeven
 Selecteer de knop Geschiedenis om de ondersteuningsincidenten weer te geven die u hebt gemaakt.  
 
-![Ondersteuningscases weergeven](./media/get-support/view-support-tickets.png)
+![Afbeelding van het deelvenster Ondersteuningscases weergeven](./media/get-support/view-support-tickets.png)
 
 - Alleen de ondersteuningscases die u met de nieuwe werkstroom opent, zijn binnen deze werkstroom zichtbaar. Als u deze wilt weergeven, gebruikt u een Help en ondersteuning-weergave in de console Beheer van apparaten die deel uitmaakt van de nieuwe ervaring. Deze cases hebben een nummer van acht cijfers. U kunt deze cases ook weergeven vanuit het Microsoft 365-beheercentrum.  
 
@@ -173,5 +172,5 @@ Selecteer de knop Geschiedenis om de ondersteuningsincidenten weer te geven die 
 ## <a name="additional-resources"></a>Extra resources
 - [Contact opnemen met telefonische ondersteuning voor Microsoft Intune](phone-support-contact.md)
 - [Ondersteuning voor facturerings- en abonnementsbeheer](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-- [Volumelicenties](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [Volumelicenties](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [Problemen met Intune oplossen](help-desk-operators.md)

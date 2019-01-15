@@ -1,12 +1,12 @@
 ---
-title: Nalevingsbeleid voor Jamf-apparaten
+title: Nalevingsbeleid voor Jamf-apparaten | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Gebruik Microsoft Intune-nalevingsbeleid met voorwaardelijke toegang van Azure Active Directory om met Jamf beheerde apparaten te beveiligen.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fa89e96b05e5344dec32fb452be8ebeaa58bc12
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d7d054b11a4abc969ad411169d0222be37fd6711
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182020"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817225"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Nalevingsbeleid afdwingen op Macs die door Jamf Pro worden beheerd
 
@@ -31,7 +31,7 @@ U kunt Azure Active Directory en het beleid voor voorwaardelijke toegang van Mic
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Nalevingsbeleid voor apparaten in Intune instellen
 
-1. Open Microsoft Azure en navigeer naar **Intune** > **Apparaatcompatibiliteit** > **Beleid**. U kunt beleidsregels maken voor macOS, zoals het kiezen van een reeks acties (bijvoorbeeld het versturen van waarschuwings-e-mails naar niet-compatibele gebruikers en groepen).
+1. Open Microsoft Azure en navigeer naar **Intune** > **Apparaatcompatibiliteit** > **Beleid**. U kunt beleidsregels maken voor macOS, zoals het kiezen van een reeks acties (bijvoorbeeld het versturen van waarschuwingse-mails naar niet-conforme gebruikers en groepen).
 2. Zoek de gewenste groepen en pas daar het beleid op toe.
 
 > [!Note]
@@ -57,7 +57,7 @@ U moet de bedrijfsportal-app voor macOS in Jamf Pro implementeren als achtergron
 ## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>Een beleid in Jamf Pro maken waarmee gebruikers hun apparaten met Azure Active Directory kunnen registreren
 
 > [!NOTE]
-> U moet [de bedrijfsportal implementeren](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos) voor macOS voordat u verdergaat met de volgende stappen.  
+> U moet [de bedrijfsportal implementeren](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro) voor macOS voordat u verdergaat met de volgende stappen.  
 
 Eindgebruikers moeten de bedrijfsportal-app via de selfservice van Jamf starten om het apparaat te registreren bij Azure AD als een apparaat dat wordt beheerd door Jamf Pro. Hiervoor moet uw eindgebruikers actie ondernemen. We raden aan dat u [contact opneemt met uw eindgebruikers](end-user-educate.md) via e-mail, Jamf Pro-meldingen of op een andere manier om hen te laten weten dat ze op de knop in Jamf Self Service moeten klikken.
 

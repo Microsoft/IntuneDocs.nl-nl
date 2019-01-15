@@ -1,6 +1,5 @@
 ---
-title: App-beveiligingsbeleid voor Windows-gegevensbescherming (WIP) maken en dit implementeren
-titlesuffix: Microsoft Intune
+title: App-beveiligingsbeleid voor Windows-gegevensbescherming (WIP) maken en implementeren | Microsoft Intune
 description: Met Microsoft Intune app-beveiligingsbeleid voor Windows-gegevensbescherming (WIP) maken en dit implementeren
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b5599e98b9712d30979c327167b19b159d3ff5dc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57d0aaebd0ed07a78b32eec64a6dc2817bf5e7f5
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817310"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune
 
@@ -35,15 +34,15 @@ U moet enkele concepten begrijpen voor het toevoegen van WIP-beleid:
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Lijst met toegestane en vrijgestelde apps
 
--   **Beschermde apps**: dit zijn de apps die zich aan dit beleid moeten houden.
+-   **Beveiligde apps:** dit zijn de apps die aan dit beleid moeten voldoen.
 
--   **Vrijgestelde apps**: deze apps zijn vrijgesteld van dit beleid en hebben zonder beperkingen toegang tot bedrijfsgegevens.
+-   **Vrijgestelde apps:** deze apps zijn vrijgesteld van dit beleid en hebben zonder beperkingen toegang tot bedrijfsgegevens.
 
 ### <a name="types-of-apps"></a>Typen apps
 
--   **Aanbevolen apps**: een vooraf gevulde lijst met apps (voornamelijk voor Microsoft Office) die u gemakkelijk in het beleid kunt importeren.
--   **Store-apps**: u kunt elke app uit Microsoft Store toevoegen aan het beleid.
--   **Windows-bureaublad-apps**: u kunt traditionele Windows-bureaublad-apps toevoegen aan het beleid (zoals .exe, of .dll)
+-   **Aanbevolen apps:** een vooraf gevulde lijst met apps (voornamelijk van Microsoft Office) die u gemakkelijk in het beleid kunt importeren.
+-   **Store-apps:** u kunt elke app uit Microsoft Store toevoegen aan het beleid.
+-   **Windows-bureaublad-apps:** u kunt traditionele Windows-bureaublad-apps toevoegen aan het beleid (zoals .exe, of .dll)
 
 ## <a name="prerequisites"></a>Vereisten
 
@@ -149,7 +148,7 @@ Als u WIP hebt uitgeschakeld, wordt een poging gedaan om door WIP gemarkeerde be
 
 1.  Kies op de blade **App-beleid** de naam van uw beleid en kies vervolgens **Verplichte instellingen**.
 
-    ![Schermopname van trainingsmodus](./media/learning-mode-sc1.png)
+    ![Schermopname van het deelvenster Oefenmodus](./media/learning-mode-sc1.png)
 
 1.  Selecteer een instelling en kies vervolgens **Opslaan**.
 

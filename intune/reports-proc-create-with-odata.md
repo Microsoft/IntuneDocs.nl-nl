@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429709"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067445"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Een rapport maken van de OData-feed met Power BI
 
@@ -61,7 +61,7 @@ Installeer de nieuwste versie van Power BI Desktop. U kunt Power BI Desktop down
 7. Plak de aangepaste feed-URL in het vak voor de URL in het venster **OData-feed**.
 8. Selecteer **Eenvoudig**.
 
-    ![OData-feed](media/reports-create-01-odatafeed.png)
+    ![OData-feed voor het Intune-datawarehouse van uw tenant](media/reports-create-01-odatafeed.png)
 
 9. Selecteer **OK**.
 10. Selecteer **Organisatieaccount** en meld u aan met uw Intune-referenties.
@@ -70,7 +70,7 @@ Installeer de nieuwste versie van Power BI Desktop. U kunt Power BI Desktop down
 
 11. Selecteer **Verbinden**. De Navigator wordt geopenden er wordt een lijst met tabellen in het Intune-datawarehouse weergegeven.
 
-    ![De Navigator](media/reports-create-02-loadentities.png)
+    ![Schermopname van de Navigator: de lijst met datawarehousetabellen](media/reports-create-02-loadentities.png)
 
 12. Selecteer de tabellen **Apparaten** en **OwnerTypes**.  Selecteer **Laden**. Power BI laadt gegevens in het model.
 
@@ -78,7 +78,7 @@ Installeer de nieuwste versie van Power BI Desktop. U kunt Power BI Desktop down
 
 U kunt meerdere tabellen importeren, zodat u niet alleen de gegevens in een enkele tabel kunt analyseren, maar ook gerelateerde gegevens in meerdere tabellen.  Power BI heeft een functie genaamd **autodetectie** die relaties zoekt en maakt. De tabellen in het datawarehouse zijn gebouwd om te werken met de autodetectiefunctie in Power BI. Maar ook als Power BI de relaties niet automatisch vindt, beheert u de relaties toch.
 
-![Relaties beheren](media/reports-create-03-managerelationships.png)
+![Relaties beheren van gerelateerde gegevens in verschillende tabellen](media/reports-create-03-managerelationships.png)
 
 1. Selecteer **Relaties beheren**.
 2. Selecteer **Autodetectie...** als Power BI de relaties nog niet heeft gedetecteerd.
@@ -99,7 +99,7 @@ In een treemapgrafiek worden hiërarchische gegevens weergegeven als vakken binn
 
 U hebt nu een visueel element dat de verdeling van apparaten per fabrikant binnen uw organisatie weergeeft.
 
-![Treemap met gegevens](media/reports-create-06-treemapwdata.png)
+![Treemap met gegevens: de verdeling van apparaatfabrikanten](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Een filter toevoegen
 
@@ -111,7 +111,7 @@ U kunt een filter aan uw treemap toevoegen om aanvullende vragen te beantwoorden
 
    Onder de tabel apparaten staat een gegevensveld genaamd **OwnerTypeKey**, dat ene code bevat die aangeeft of het apparaat persoonlijk is of eigendom van het bedrijf. Om de beschrijvende namen in dit filter weer te geven, gaat u naar de tabel **ownerTypes** en sleept u de **ownerTypeName**. Dit voorbeeld toont aan hoe het gegevensmodel relaties tussen tabellen ondersteunt.
 
-![Treemap met filter](media/reports-create-08_ownertype.png)
+![Treemap met filter: ondersteunt relaties tussen tabellen](media/reports-create-08_ownertype.png)
 
 U hebt nu een interactief filter dat u kunt gebruiken om te schakelen tussen apparaten in bedrijfseigendom en persoonlijke apparaten. Gebruik dit filter om te zien hoe de distributie verandert.
 

@@ -16,18 +16,18 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b94b4228f05abd2e7c815797f2f187efb8b303e4
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817242"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense-connector inschakelen met Intune
 
 U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren door middel van voorwaardelijke toegang op basis van een risicoanalyse die wordt uitgevoerd door Zimperium, een oplossing voor de beveiliging tegen bedreigingen op mobiele apparaten (MTD) die met Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetrische gegevens die zijn verzameld op apparaten waarop de Zimperium-app wordt uitgevoerd.
 
-U kunt het beleid voor voorwaardelijke toegang configureren op basis van de Zimperium-risicoanalyse die via het Intune-nalevingsbeleid voor apparaten wordt ingeschakeld. U kunt met dit beleid de toegang tot bedrijfsresources voor niet-compatibele apparaten toestaan of blokkeren op basis van de gedetecteerde bedreigingen.
+U kunt het beleid voor voorwaardelijke toegang configureren op basis van de risicoanalyse van Zimperium die wordt ingeschakeld via het Intune-nalevingsbeleid voor apparaten. Met beleid voor risicoanalyse kunt u apparaten die niet conform zijn op basis van gedetecteerde bedreigingen toegang weigeren tot bedrijfsresources.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Hoe kunt u met Intune en Zimperium uw bedrijfsresources beter beveiligen?
 
@@ -51,11 +51,11 @@ Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u a
 
 **Blokkeren wanneer er schadelijke apps zijn gedetecteerd:**
 
-![Schadelijke apps gedetecteerd](./media/Maliciousapps_blocked_Zimperium.png)
+![Conceptafbeelding van detectie van schadelijke apps](./media/Maliciousapps_blocked_Zimperium.png)
 
 **Toegang na herstel:**
 
-![Toegang verleend nadat schadelijke apps zijn gedetecteerd](./media/maliciousapps_unblocked_Zimperium.png)
+![Conceptafbeelding van verleende toegang na herstel](./media/maliciousapps_unblocked_Zimperium.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Toegangsbeheer op basis van bedreigingen voor het netwerk
 
@@ -95,7 +95,7 @@ Detecteer bedreigingen zoals **man-in-the-middle-aanvallen** in het netwerk en
 
 -   Zimperium Mobile Threat Defense-abonnement
 
-    -   Zie de [Zimperium-website](https://www.zimperium.com/zips-mobile-ips) voor meer informatie.
+    -   Zie de  [Zimperium-website](https://www.zimperium.com/zips-mobile-ips) voor meer informatie.
 
 ## <a name="next-steps"></a>Volgende stappen
 
