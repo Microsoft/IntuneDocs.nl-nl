@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.openlocfilehash: e0bb198b078695b567756c6a7db832d00e7a8c5b
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210836"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -158,6 +158,8 @@ Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integr
     * Als u een ISV bent die apps voor de iOS of Android Store wilt inschakelen voor Intune-beleid voor app-beveiliging, ontvangt u een promotiecode nadat u de registratie bij Microsoft Intune hebt voltooid. Dit wordt beschreven in de registratiestap. Met de promotiecode kunt u zich aanmelden voor een Microsoft Intune-proefversie met uitgebreid gebruik van één jaar.
 
     * Als u een Line-Of-Business-app ontwikkelt die niet naar de Store word verzonden, wordt ervan uitgegaan dat u via uw organisatie toegang hebt tot Microsoft Intune. U kunt zich ook registreren voor een gratis proefversie van één maand via [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
+    
+    * Zorg ervoor, als u uw app op een mobiel apparaat met een eindgebruikeraccount test, dat u dat account een Intune-licentie hebt gegeven in de beheerportal van de Office-website nadat u bent aangemeld met een beheerdersaccount. Zie [Microsoft Intune-licentie toewijzen](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
 * **Beveiligingsbeleid voor apps in Intune**: als u uw app wilt testen aan de hand van al het beveiligingsbeleid voor apps in Intune, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](app-protection-policy-settings-android.md).
 

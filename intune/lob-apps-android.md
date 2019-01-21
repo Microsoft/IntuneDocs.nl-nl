@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2d1bc4762f46062cc80bb584da0a71423140c234
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 8ed3bb57010535806d082f706b317839747fa881
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210819"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Een Android Line-Of-Business-app toevoegen aan Microsoft Intune
 
@@ -31,6 +31,9 @@ Een LOB-app is een app die u vanaf een app-installatiebestand aan Intune toevoeg
 
 > [!Note]
 > Zie [Werken met een Line-Of-Business-app vanuit de beheerde Google Play Store](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store) voor meer informatie over LOB-apps uit de beheerde Google Play Store. 
+
+> [!Note]
+> Volg [dit artikel](https://docs.microsoft.com/intune/apps-add-android-for-work) voor Android for Work-apparaten. 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Stap 1: locatie van het software-installatiebestand opgeven
 
@@ -60,7 +63,7 @@ Een LOB-app is een app die u vanaf een app-installatiebestand aan Intune toevoeg
     - **Deze weergeven als aanbevolen app in de bedrijfsportal**: Geef de app prominent weer op de hoofdpagina van de bedrijfsportal wanneer gebruikers door apps bladeren.
     - **Informatie-URL**: Voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
     - **Privacy-URL**: (optioneel) Voer de URL in van een website die privacyinformatie over deze app bevat. De URL wordt weergegeven in de bedrijfsportal.
-    - **Ontwikkelaar**: voer de naam in van de app-ontwikkelaar (optioneel).
+    - **Ontwikkelaar**: Voer de naam in van de app-ontwikkelaar (optioneel).
     - **Eigenaar**: voer een naam in voor de eigenaar van deze app (optioneel). Bijvoorbeeld **HR-afdeling**.
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
     - **Logo**: upload een pictogram dat u aan de app wilt koppelen. Het pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.

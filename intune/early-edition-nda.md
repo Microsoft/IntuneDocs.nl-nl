@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/07/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 94125ced318f304e5b2bdc8f09472280fc05b08a
-ms.sourcegitcommit: 662afec5e87639a7f541bb89700cc0fec5037bb0
+ms.openlocfilehash: 0efc84da6a9efb594600b9ca33aa5eb7622c8101
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54069350"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203430"
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2019"></a>De vroege editie voor Microsoft Intune - januari 2019
 
@@ -52,7 +52,7 @@ Met het type **beheerde Google Play-app** hebt u toestemming om specifiek [behee
 ### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Voorbeeld van volledig beheerde, zakelijke Android-apparaten <!-- 1574342  -->
 Intune ondersteunt volledig beheerde Android-apparaten, een scenario waarin apparaten 'zakelijk eigendom' zijn en nauw worden beheerd door de IT-afdeling en gekoppeld zijn aan afzonderlijke gebruikers. Hierdoor kunnen beheerders het hele apparaat beheren, een uitgebreide reeks beleidscontroles afdwingen die niet beschikbaar zijn voor werkprofielen en gebruikers beperken tot de installatie van apps uit de beheerde Google Play Store. Ga naar **Apparaatinschrijving** > **Android-inschrijving** > **Volledig beheerde zakelijke gebruikersapparaten** om volledige beheerde Android-apparaten in te stellen. Let op: deze functie wordt momenteel als preview aangeboden. Sommige Intune-mogelijkheden, zoals certificaten, naleving en voorwaardelijke toegang, zijn momenteel niet beschikbaar voor volledig beheerde Android-gebruikersapparaten.
 
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660----"></a>Implementatie van online gelicentieerde Microsoft Store voor Bedrijven-apps <!-- 16726660  -->
+### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----1672660----"></a>Implementatie van online gelicentieerde Microsoft Store voor Bedrijven-apps <!-- 1672660  -->
 U kunt vereiste online gelicentieerde Microsoft Store voor Bedrijven-apps in de apparaatcontext toewijzen. Wanneer u op deze manier een Microsoft Store voor bedrijven-app implementeert, kan de app worden geïnstalleerd voor alle gebruikers op het apparaat. Dit is alleen van toepassing op Windows 10 RS4+ Desktop-apparaten. De optie om de app in de apparaatcontext te installeren, is beschikbaar op de toewijzingspagina voor client-apps voor gelicentieerde MSFB Online-apps.
 
 ### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470----"></a>Profiel configureren om bepaalde vensters over te slaan tijdens het doorlopen van de configuratieassistent <!-- 2276470  -->
@@ -85,39 +85,9 @@ Van toepassing op: Android Enterprise-apparaateigenaar
 ### <a name="android-enterprise-app-we-app-deployment----1171203---"></a>Android Enterprise APP WE-app-implementatie <!-- 1171203 -->
 Voor Android-apparaten in een niet-geregistreerd App Protection Policy Without Enrollment-implementatiescenario (APP-WE), gebruikt u de beheerde Google Play Store om store-apps en LOB-apps te implementeren bij gebruikers. In het bijzonder kan de IT-afdeling eindgebruikers voorzien van een app-catalogus en een installatie waarbij het niet langer nodig is dat eindgebruikers de beveiligingsstatus van hun apparaten versoepelen door installaties uit onbekende bronnen toe te staan. Bovendien biedt dit implementatiescenario een verbeterde eindgebruikerservaring.
 
-### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>Nieuwe opties om automatisch verbinding te maken en regels te behouden met DNS-instellingen in Windows 10 en hoger <!-- 1333665, 2999078 -->
-In Windows 10 en hoger kunt u een VPN-configuratieprofiel maken dat een lijst DNS-servers bevat om domeinen om te zetten, zoals contoso.com. Dit is inclusief nieuwe instellingen voor naamomzetting: (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > Kies **Windows 10 en hoger** als platform > Kies **VPN** als profieltype > **DNS-instellingen** >**Toevoegen**): 
-
-- **Automatisch verbinding maken**: Als deze optie is **ingeschakeld**, maakt het apparaat automatisch verbinding met VPN wanneer een apparaat een domein oproept dat u invoert, bijvoorbeeld contoso.com.
-- **Permanent**: Standaard zijn alle NRPT-tabelregels voor Naamomzettingsbeleid (NRPT) actief zolang het apparaat is verbonden met behulp van dit VPN-profiel. Wanneer deze instelling is **ingeschakeld** voor een NRPT-regel, blijft de regel actief op het apparaat, zelfs wanneer de VPN-verbinding wordt verbroken. De regel blijft totdat het VPN-profiel is verwijderd of totdat de regel handmatig wordt verwijderd, wat mogelijk is met behulp van PowerShell.
-
-In de [Windows 10 VPN-instellingen](vpn-settings-windows-10.md) wordt de huidige lijst instellingen beschreven. 
-
-### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user----1333642-eeready---"></a>S/MIME gebruiken om meerdere apparaten van een gebruiker te versleutelen en ondertekenen <!-- 1333642 eeready -->
-S/MIME-e-mailversleuteling met een nieuw profiel voor een geïmporteerd certificaat wordt ondersteund (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > selecteer het platform > profieltype **Geïmporteerd PKCS-certificaat**). In Intune kunt u certificaten importeren in PFX-indeling. Intune kan deze certificaten dan leveren aan meerdere apparaten die zijn geregistreerd door één gebruiker. Dit omvat ook:
-
-- Het systeemeigen iOS-e-mailprofiel ondersteunt het inschakelen van S/MIME-versleuteling met behulp van geïmporteerde certificaten in de PFX-indeling.
-- De systeemeigen mail-app op Windows Phone 10-apparaten gebruikt automatisch het S/MIME-certificaat.
-- De persoonlijke certificaten kunnen worden afgeleverd op meerdere platformen. Maar niet alle e-mail-apps ondersteunen S/MIME.
-- Op andere platformen moet u mogelijk de mail-app handmatig configureren om S/MIME in te schakelen.  
-- E-mail-apps die ondersteuning bieden voor S/MIME-versleuteling, kunnen het ophalen van certificaten voor S/MIME-e-mailversleuteling verwerken op een manier die een MDM niet kan ondersteunen, zoals het lezen van het certificaatarchief van de uitgever.
-
-Ondersteund in: Windows, Windows Phone 10, macOS, iOS, Android
-
-### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Pagina Help en ondersteuning in de Windows Bedrijfsportal-app <!-- 1488939 -->
-Er wordt een nieuwe pagina toegevoegd aan de Windows Bedrijfsportal-app. De pagina Help en ondersteuning biedt contactgegevens van de Helpdesk. Eindgebruikers kunnen eveneens Bedrijfsportallogboeken verzenden wanneer ze problemen ondervinden. De pagina biedt ook een gedeelte met veelgestelde vragen om eindgebruikers te helpen.
-
-### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Detectie van vertrouwde netwerken gebruiken voor VPN-profielen in Windows 10-apparaten <!-- 1500165 -->
-Wanneer u gebruikmaakt van detectie van vertrouwde netwerken, kunt u voorkomen dat VPN-profielen automatisch een VPN-verbinding maken wanneer de gebruiker zich op een vertrouwd netwerk bevindt. U kunt DNS-achtervoegsels toevoegen om detectie van vertrouwde netwerken in te schakelen op apparaten met Windows 10 en hoger (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** als platform en **VPN** als profieltype).
-In [VPN-instellingen voor Windows 10](vpn-settings-windows-10.md) worden de huidige VPN-instellingen vermeld.
-
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>De Intune App-SDK ondersteunt 256-bits versleutelingssleutels <!-- 1832174 -->
 De Intune App-SDK voor Android gebruikt 256-bits versleutelingssleutels wanneer versleuteling is ingeschakeld door app-beveiligingsbeleid. De SDK biedt doorgaande ondersteuning voor 128-bits sleutels voor compatibiliteit met inhoud en apps die gebruikmaken van oudere SDK-versies.
 
-### <a name="enabled-shared-pc-settings-in-intune-profile----1907917-1063203---"></a>Gedeelde PC-instellingen ingeschakeld in Intune-profiel <!-- 1907917, 1063203 -->
-U kunt momenteel gedeelde PC-instellingen configureren op Windows 10-desktopapparaten met een aangepaste OMA-URI-instelling. Er wordt een nieuw profiel toegevoegd om gedeelde PC-instellingen te configureren (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** > **Gedeeld apparaat met meerdere gebruikers**).
-
-Van toepassing op: Windows 10 en hoger, Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune-beleid werkt de verificatiemethode en installatie van de Bedrijfsportal-app bij <!-- 1927359 -->
 Intune biedt geen ondersteuning meer voor de Bedrijfsportal wanneer deze handmatig door eindgebruikers uit de appstore wordt geïnstalleerd op apparaten die al met behulp van Configuratieassistent zijn ingeschreven via een van de Apple-registratiemethoden voor bedrijfsapparaten. Deze wijziging is alleen relevant wanneer u tijdens de inschrijving verifieert met Apple Setup Assistant. Deze wijziging is eveneens alleen van invloed op iOS-apparaten die zijn ingeschreven via:  
@@ -132,59 +102,20 @@ Als u de Bedrijfsportal wilt installeren op DEP-apparaten die al zijn ingeschrev
 ### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379---"></a>Niet-beheerders kunnen BitLocker gebruiken op Windows 10-apparaten die zijn gekoppeld aan Azure AD<!-- 2147379 -->
 Wanneer u BitLocker-instellingen op Windows 10-apparaten inschakelt (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** als platform en **Endpoint Protection** als profieltype > **Windows-versleuteling**), voegt u BitLocker-instellingen toe. Deze update bevat een nieuwe BitLocker-instellingen waarmee standaardgebruikers (niet-beheerders) versleuteling kunnen inschakelen. Raadpleeg [Endpoint Protection-instellingen voor Windows 10](endpoint-protection-windows-10.md#windows-encryption) als u de huidige instellingen wilt bekijken.
 
-### <a name="intune-app-pin----2298397---"></a>Pincode voor de Intune-app <!-- 2298397 -->
-Als IT-beheerder kunt u het aantal dagen configureren dat een eindgebruiker kan wachten voordat zijn pincode voor de Intune-app moet worden gewijzigd. De nieuwe instellingen is beschikbaar in de Azure-portal via **Intune** > **Client-apps** > **App-beveiligingsbeleid** > **Beleid maken** > **Instellingen** > **Toegangsvereisten**. Deze functie is beschikbaar voor iOS- en Android-apparaten. Deze instelling ondersteunt een positief geheel getal.
 
-### <a name="new-windows-10-update-settings----2626030-2512994---"></a>Nieuwe Windows 10-update-instellingen <!-- 2626030 2512994 -->
-Voor uw Windows 10-updateringen kunt u nu:
-- de originele automatische update-instellingen herstellen in een Windows 10-machine in machines die met de *update van oktober 2018* worden uitgevoerd
-- een nieuwe update-instelling voor software configureren waarmee u kunt toestaan of blokkeren dat gebruikers de installatie van een update pauzeren vanuit de *Instellingen* van hun machines. 
+### <a name="additional-settings-for-outlook----3301182---"></a>Extra instellingen voor Outlook <!-- 3301182 -->
+U kunt nu aanvullende instellingen voor Outlook voor iOS en Android configureren met Intune.  Deze instellingen zijn onder andere:
+- Instellen dat alleen werk- of schoolaccounts mogen worden gebruikt in Outlook in iOS en Android
+- Moderne verificatie implementeren voor Office 365 en hybride moderne verificatie voor on-premises accounts
+- `SAMAccountName` gebruiken in het gebruikersnaamveld in het e-mailprofiel als basisverificatie wordt geselecteerd
+- Toestaan dat contactpersonen worden opgeslagen
+- E-mailtips voor externe ontvangers configureren
+- Het **Postvak IN met prioriteit** configureren
+- Biometrie vereisten voor toegang tot Outlook in iOS 
+- Externe afbeeldingen blokkeren
 
-
-
-### <a name="ios-email-profiles-can-use-smime-signing-and-encryption----2662949---"></a>iOS-e-mailprofielen kunnen gebruikmaken van S/MIME-ondertekening en versleuteling <!-- 2662949 -->
-U kunt een e-mailprofiel maken dat verschillende instellingen bevat. Dit omvat S/MIME-instellingen die kunnen worden gebruikt voor de ondertekening en versleuteling van e-mailcommunicatie op iOS-apparaten (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > kies **iOS** als platform en **E-mail** als profieltype).
-
-In [Configuratie-instellingen voor iOS-e-mail](email-settings-ios.md) worden de huidige instellingen vermeld.
-
-### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>Meer Setup Assistant-schermen overslaan op een iOS-DEP-apparaat <!-- 2687509 -->
-Naast de schermen die u op dit moment kunt overslaan, kunt u instellen dat iOS DEP-apparaten de volgende schermen in de Setup-assistent overslaan wanneer een gebruiker het apparaat registreert: Weergavetoon, Privacy, Android-migratie, Startknop, iMessage en FaceTime, Onboarding, Migratie weergeven, Weergave, Schermtijd, Software-update, SIM-installatie.
-Als u wilt kiezen welke schermen moeten worden overgeslagen, gaat u naar **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor inschrijvingsprogramma** > kies een token > **Profielen** > kies een profiel > **Eigenschappen** > **Setup Assistant aanpassen** > kies **Verbergen** voor schermen die u wilt overslaan > **OK**.
-
-### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Sommige BitLocker-instellingen ondersteunen Windows 10 Pro <!-- 2727036 -->
-U kunt een configuratieprofiel maken dat Endpoint Protection-instellingen op Windows 10-apparaten instelt, waaronder BitLocker. Hiermee wordt voor sommige BitLocker-instellingen ondersteuning toegevoegd voor Windows 10 Professional. Raadpleeg [Endpoint Protection-instellingen voor Windows 10](endpoint-protection-windows-10.md#windows-encryption) als u de huidige Windows 10-instellingen wilt bekijken.
-
-### <a name="intune-device-reporting-fields----2748738---"></a>Rapportvelden voor Intune-apparaat <!-- 2748738 -->
-Intune biedt aanvullende velden voor apparaatrapporten, waaronder de Android-fabrikant, het model, de versie van de beveiligingspatch en het iOS-model. In Intune zijn deze velden beschikbaar door **Client-apps** > **App-beveiligingsstatus** te selecteren en **App-beveiligingsrapport: iOS, Android** te selecteren. Bovendien helpen deze parameters u de lijst **Toestaan** te configureren voor de apparaatfabrikant (Android), evenals de lijst **Toestaan** voor het apparaatmodel (Android en iOS) en de versie-instellingen van de minimale Android-beveiligingspatch. 
-
-### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>Configuratie voor gedeelde apparaten is hernoemd naar Vergrendelingsschermbericht voor iOS-apparaten in de Azure-portal <!-- 2809362 -->
-Wanneer u een configuratieprofiel voor iOS-apparaten maakt, is het mogelijk om de instelling **Configuratie voor gedeelde apparaten** toe te voegen, zodat er specifieke tekst op het vergrendelingsscherm wordt weergegeven. Dit omvat de volgende wijzigingen: 
-
-- De instellingen voor **Configuratie voor gedeelde apparaten** in de Azure-portal worden hernoemd naar 'Vergrendelingsschermbericht (alleen onder supervisie)' (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > kies **iOS** als platform > kies **Apparaatfuncties** als profieltype > **Vergrendelingsschermbericht**).
-- Wanneer u vergrendelingsschermberichten toevoegt, kunt u een serienummer, apparaatnaam of een andere apparaatspecifieke waarde als variabele invoegen in **Informatie over de assettag**. U kunt bijvoorbeeld `Device name: {{device name}}` of `Serial number is {{serial number}}` invoeren met accolades. De lijst [iOS-tokens](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) bevat de beschikbare tokens die kunnen worden gebruikt.
-
-In [Instellingen om berichten op het vergrendelingsscherm weer te geven](shared-device-settings-ios.md) staan de huidige instellingen.
-
-### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564--"></a>Gedetailleerdere berichten over fouten bij inschrijvingsbeperking <!-- 3111564-->
-Er komen meer gedetailleerdere foutberichten beschikbaar wanneer er niet wordt voldaan een inschrijvingsbeperkingen. Als u deze berichten wilt bekijken, gaat u naar **Intune** > **Probleemoplossing** en bekijkt u het tabel Inschrijvingsfouten.
-
-### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Nieuwe instellingen voor meldingen, hints en keyguard voor Android Enterprise-apparaten in zakelijk eigendom <!-- 3201839 3201843 -->
-Deze update omvat verschillende nieuwe functies in Android Enterprise-apparaten wanneer deze worden uitgevoerd in zakelijk eigendom. Als u deze functies wilt gebruiken, gaat u naar **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > als **Platform** kiest u **Android Enterprise** > in **Profieltype** kiest u **Alleen zakelijk eigendom** > **Apparaatbeperkingen**.
-Nieuwe functies omvatten: 
-- Systeemmeldingen uitschakelen, waaronder binnenkomende oproepen, systeemwaarschuwingen, systeemfouten en meer
-- Suggestie om uitleg en hints over te slaan voor apps die voor de eerste keer worden gestart
-- Geavanceerde keyguard-instellingen uitschakelen, bijvoorbeeld de camera, meldingen, ontgrendelen met vingerafdruk en meer
-
-Raadpleeg [Instellingen van Android Enterprise-apparaatbeperking](device-restrictions-android-for-work.md) als u de huidige instellingen wilt bekijken.
-
-### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Android Enterprise-apparaten in zakelijk eigendom kunnen AlwaysOn-VPN-verbindingen gebruiken <!-- 3202194 -->
-In deze update kunt u ingeschakelde VPN-verbindingen gebruiken op Android Enterprise-apparaten in zakelijk eigendom. Altijd ingeschakelde VPN-verbindingen blijven verbonden en maken direct opnieuw verbinding wanneer gebruikers hun apparaat ontgrendelen, het apparaat opnieuw wordt opgestart of het draadloze netwerk wordt gewijzigd. U kunt de verbinding ook in de vergrendelingsmodus zetten. Hiermee wordt al het netwerkverkeer geblokkeerd totdat de VPN-verbinding actief is.
-U vindt altijd ingeschakelde VPN in **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android Enterprise** voor platform > **Apparaatbeperkingen** voor apparaten in zakelijk eigendom > **Connectiviteit**. Raadpleeg [Instellingen van Android Enterprise-apparaatbeperking](device-restrictions-android-for-work.md) als u de huidige instellingen wilt bekijken.
-
-### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices----3285177---"></a>Nieuwe instelling om processen in Taakbeheer in Windows 10-apparaten te beëindigen <!-- 3285177 --> 
-Deze update omvat een nieuwe instelling om processen via Taakbeheer in Windows 10-apparaten te beëindigen. Met behulp van een apparaatconfiguratieprofiel (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > als **Platform** kiest u **Windows 10** > in **Profieltype** kiest u **Apparaatbeperkingen** > **Algemene** instellingen) kunt u deze instellingen toestaan of blokkeren.
-Raadpleeg [Instellingen voor Windows 10-apparaatbeperkingen](device-restrictions-windows-10.md) als u de huidige instellingen wilt bekijken.
-Van toepassing op: Windows 10 en hoger
+> [!NOTE]
+> Als u gebruikmaakt van Intune-app-beveiligingsbeleid voor het beheren van toegang tot bedrijfs-id's, wordt afgeraden **biometrie te vereisen**. Zie **Bedrijfsreferenties vereisen voor toegang** voor [iOS-toegangsvereisten](app-protection-policy-settings-ios.md#access-settings) en [Android-toegangsvereisten](app-protection-policy-settings-android.md#access-settings).
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Beheersjablonen zijn in openbare preview en verplaatst naar hun eigen configuratieprofiel <!-- 3322847 -->
 Beheersjablonen in Intune (**Apparaatconfiguratie** > **Beheersjablonen**) zijn momenteel in openbare preview. Bij deze update: Beheersjablonen omvatten circa 300 instellingen die kunnen worden beheerd in Intune. Eerder bestonden deze instellingen alleen in de editor voor groepsbeleid.
@@ -198,20 +129,6 @@ De Intune macOS Bedrijfsportal biedt nu ondersteuning voor de donkere modus voor
 
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Door Microsoft aanbevolen instellingen gebruiken met beveiligingsbasislijnen <!-- 2055484 -->
 Intune is geïntegreerd met andere services die op beveiliging gericht zijn, inclusief Windows Defender ATP en Office 365 ATP. Klanten vragen om een gemeenschappelijke strategie en een samenhangende set van end-to-end beveiligingsworkflows voor alle Microsoft 365-diensten. Ons doel is om strategieën af te stemmen en oplossingen te ontwikkelen die beveiligingsactiviteiten en gebruikelijke beheerderstaken combineren. In Intune willen we dit doel bereiken door het publiceren van een set beveiligingsbasislijnen die door Microsoft zijn aanbevolen (**Intune** >  **Beveiligingsbasislijnen**).  Beheerders krijgen de mogelijkheid om direct op basis van deze basislijnen een beveiligingsbeleid op te stellen en dit vervolgens voor hun gebruikers te implementeren. Ze kunnen ook de aanbevolen procedures aanpassen aan de behoeften van hun organisatie. Intune zorgt ervoor dat apparaten deze basislijnen blijven naleven, en waarschuwt beheerders wanneer gebruikers of apparaten van de basislijnen afwijken.
-
-### <a name="scope-tags-for-apps---1081941---"></a>Bereiktags voor apps <!--1081941 -->
-Binnenkort kunt u bereiktags gebruiken om de toegang tot Intune-resources te beperken. Voeg een bereiktag toe aan een roltoewijzing en voeg de bereiktag vervolgens toe aan een configuratieprofiel. De rol heeft dan alleen toegang tot resources met configuratieprofielen met overeenkomende bereiktags (of zonder bereiktag).
-Selecteer voor het maken van een bereiktag **Intune-rollen** > **Bereik (tags)** > **Maken**.
-Als u een bereiktag wilt toevoegen aan een roltoewijzing, selecteert u **Intune-rollen** > **Alle rollen** > **Beleid- en profielbeheerder** > **Toewijzingen** > **Bereik (tags)**.
-Als u een bereiktag wilt toevoegen aan een configuratieprofiel, selecteert u **Apparaatconfiguratie** > **Profielen** > Een profiel kiezen > **Eigenschappen** > **Bereik (tags)**.
-
-### <a name="tenant-health-dashboard----1124854---"></a>Dashboard voor tenantstatus<!-- 1124854 -->
-De pagina Tenantstatus in Intune biedt een uitputtend overzicht van alle informatie over de status van tenants. De pagina is onderverdeeld in vier secties:  
-- **Tenantgegevens**: Bevat uiteenlopende informatie, zoals uw MDM-instantie, het totale aantal apparaten dat in uw tenant is geregistreerd en uw aantal licenties. Deze sectie bevat ook de huidige servicerelease voor uw tenant.
-- **Connectorstatus**: Bevat informatie voor geconfigureerde connectors, zoals Apple VPP, Windows Store for Business en certificaatconnectors. Op basis van hun huidige status worden de connectoren gemarkeerd als *In orde*,  *Waarschuwing* of *Niet in orde*.
-- **Intune Service Health**: Bevat actieve incidenten of storingen voor uw tenant. De informatie in deze sectie wordt rechtstreeks opgehaald uit het Office Message Center ([https://portal.office.com](https://portal.office.com)).
-- **Intune-nieuws**: Bevat actieve berichten voor uw tenant, zoals meldingen dat uw tenant de laatste Intune-functies heeft ontvangen. De informatie in deze sectie wordt rechtstreeks opgehaald uit het Office Message Center ([https://portal.office.com](https://portal.office.com)).
-
 
 ### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Geïmplementeerd WIP-beleid zonder gebruikersinschrijving <!-- 1434452 -->
 WIP-beleid (Windows Information Protection) kan worden ingezet zonder dat MDM-gebruikers hun Windows 10-apparaat hoeven in te schrijven. Met deze configuratie kunnen bedrijven hun bedrijfsdocumenten op basis van de WIP-configuratie beschermen, terwijl gebruikers hun eigen Windows-apparaten kunnen blijven beheren. Zodra documenten met WIP-beleid zijn beveiligd, kunnen de beschermde gegevens selectief worden gewist door een Intune-beheerder. Door een gebruiker en een apparaat te selecteren een en wisaanvraag te versturen, worden alle gegevens onbruikbaar die met het WIP-beleid zijn beschermd. Vanuit Intune in de Azure-portal selecteert u hiervoor **Mobiele app** > **App selectief wissen**.
@@ -231,8 +148,6 @@ Intune kan detecteren of een token van het volumeaankoopprogramma van Apple (VPP
 In een toekomstige update worden buiten gebruik gestelde apparaten verwijderd uit het dashboard voor apparaatnaleving. Dit zorgt voor veranderingen in de aantallen in uw nalevingsrapporten.
 
 
-### <a name="change-in-the-update-process-for-on-premises-connectors----2277554---"></a>Wijziging in het updateproces voor on-premises connectors <!-- 2277554 -->
-Op basis van feedback van klanten passen we de manier aan waarop on-premises connectors worden bijgewerkt. Nadat u een on-premises connector hebt geïnstalleerd, worden updates automatisch uitgevoerd. Deze wijziging begint met de nieuwe PFX-certificaatconnector voor Microsoft Intune en wordt vervolgens voor andere soorten on-premises connectors doorgevoerd. 
 
 <!-- 1807 start -->
 
@@ -249,7 +164,7 @@ Van toepassing op Windows 10 en hoger
 
 Er zijn geen actieve meldingen op dit moment.
 
-### <a name="see-also"></a>Zie tevens
+### <a name="see-also"></a>Zie ook
 Zie [Wat is er nieuw in Microsoft Intune?](whats-new.md) voor meer informatie over recente ontwikkelingen.
 
 

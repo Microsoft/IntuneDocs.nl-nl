@@ -15,16 +15,16 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 3e66dd3d77cc36a6d311afea82e0f2087b469495
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817259"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239588"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Intune on-premises Exchange-connector instellen in Microsoft Intune Azure
 
-In een on-premises Exchange Server-omgeving kan voorwaardelijke toegang van Intune worden gebruikt om toegang tot on-premises Exchange-postvakken te blokkeren of toe te staan. Gebruik on-premises Exchange Active Sync-connectors om Intune te verbinden met uw Exchange-organisaties en stel voorwaardelijke Intune-toegang in samen met het nalevingsbeleid voor apparaten. Wanneer een apparaat dan probeert verbinding te maken met Exchange, bepaalt Intune of het apparaat is ingeschreven bij Intune en conform het beleid is. Om te bepalen welke apparaten zijn ingeschreven bij Intune, wijst de on-premises Exchange-connector Exchange Active Sync-records (EAS) in Exchange Server toe aan Intune-records. Zie [Wat zijn gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken?](conditional-access-intune-common-ways-use.md) voor meer informatie over hoe dit werkt.
+In een on-premises Exchange Server-omgeving kan voorwaardelijke toegang van Intune worden gebruikt om toegang tot on-premises Exchange-postvakken te blokkeren of toe te staan. Gebruik on-premises Exchange Active Sync-connectors om Intune te verbinden met uw Exchange-organisaties en stel voorwaardelijke Intune-toegang in samen met het nalevingsbeleid voor apparaten. Wanneer een apparaat dan verbinding maakt met Exchange, bepaalt Intune of het apparaat is ingeschreven bij Intune en conform het beleid is. Om te bepalen welke apparaten zijn ingeschreven bij Intune, wijst de on-premises Exchange-connector Exchange Active Sync-records (EAS) in Exchange Server toe aan Intune-records. Zie [Wat zijn gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken?](conditional-access-intune-common-ways-use.md) voor meer informatie over hoe dit werkt.
 
 > [!IMPORTANT]
 > Intune ondersteunt nu meerdere on-premises Exchange-connectors per abonnement. Als u meer dan één on-premises Exchange-organisatie hebt, kunt u voor elke Exchange-organisatie een afzonderlijke connector instellen.
@@ -52,7 +52,7 @@ De volgende tabel bevat de vereisten voor de computer waarop u de on-premises Ex
 
 ### <a name="exchange-cmdlet-requirements"></a>Vereisten voor Exchange-cmdlets
 
-U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de on-premises Exchange-connector. Het account moet gemachtigd zijn om de volgende vereiste Windows PowerShell Exchange-cmdlets uit te voeren:
+U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de on-premises Exchange-connector. De account moet gemachtigd zijn om de volgende vereiste Windows PowerShell Exchange-cmdlets uit te voeren:
 
 
  -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
@@ -97,7 +97,7 @@ Voer de volgende stappen uit om de Intune on-premises Exchange-connector te inst
 
    ![Afbeelding van waar u uw type Exchange Server kunt kiezen](./media/intune-sa-exchange-connector-config.png)
 
-   Voor een on-premises Exchange-server geeft u de servernaam of de FQDN-naam van de Exchange-server op die als host fungeert voor de **serverfunctie voor clienttoegang**.
+   Voor een On-Premises Exchange-server geeft u de servernaam of de FQDN-naam van de Exchange-server op die als host fungeert voor de **serverfunctie voor clienttoegang**.
 
    Voor een gehoste Exchange-server geeft u het adres van de Exchange-server op. De URL van de gehoste Exchange-server zoeken:
 
@@ -116,15 +116,15 @@ Voer de volgende stappen uit om de Intune on-premises Exchange-connector te inst
 
        4. Kies **OK**.
 
-   5. Geef in de velden **Gebruiker (Domein\gebruiker)** en **Wachtwoord** de referenties op die nodig zijn om verbinding te maken met de Exchange-server.
+4. Geef in de velden **Gebruiker (Domein\gebruiker)** en **Wachtwoord** de referenties op die nodig zijn om verbinding te maken met de Exchange-server.
 
-   6.  Geef de vereiste referenties op om meldingen te verzenden naar het Exchange Server-postvak van een gebruiker. Deze gebruiker kan worden toegewezen aan alleen meldingen. De meldingengebruiker moet een Exchange-postvak hebben om meldingen te kunnen verzenden via e-mail. U kunt deze meldingen configureren met beleid voor voorwaardelijke toegang in Intune.  
+5. Geef de vereiste referenties op om meldingen te verzenden naar het Exchange Server-postvak van een gebruiker. Deze gebruiker kan worden toegewezen aan alleen meldingen. De meldingengebruiker moet een Exchange-postvak hebben om meldingen te kunnen verzenden via e-mail. U kunt deze meldingen configureren met beleid voor voorwaardelijke toegang in Intune.  
 
-       Zorg ervoor dat de Autodiscover-service en de Exchange-webservices zijn geconfigureerd op de Exchange-server voor clienttoegang. Zie [Server voor clienttoegang](https://technet.microsoft.com/library/dd298114.aspx) voor meer informatie.
+       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
-   7.  Geef in het veld **Wachtwoord** het wachtwoord voor dit account op om Intune in te schakelen voor toegang tot de Exchange-server.
+6. Geef in het veld **Wachtwoord** het wachtwoord voor dit account op om Intune in te schakelen voor toegang tot de Exchange-server.
 
-   8. Kies **Verbinding maken**.
+7. Kies **Verbinding maken**.
 
    > [!NOTE]
    > Het kan enkele minuten duren voordat de verbinding is geconfigureerd.
@@ -142,7 +142,7 @@ Intune ondersteunt meerdere on-premises Exchange-connectors per abonnement. Voor
 De functies voor hoge beschikbaarheid, bewaking en handmatige synchronisatie die in de volgende secties worden beschreven, worden ondersteund voor elke Exchange-organisatie die is verbonden met Intune.
 
 ## <a name="on-premises-exchange-connector-high-availability-support"></a>Hoge beschikbaarheid van on-premises Exchange Connector 
-Nadat de Exchange Connector verbinding met Exchange heeft gemaakt met behulp van de opgegeven CAS, kan de connector andere CAS-instanties detecteren. Als de primaire CAS niet beschikbaar is, zoekt de connector naar een andere CAS (indien beschikbaar) totdat de primaire CAS beschikbaar komt. Deze functie is standaard ingeschakeld. U kunt deze functie uitschakelen met behulp van de volgende procedure:
+Nadat de Exchange Connector verbinding heeft gemaakt met Exchange met behulp van de opgegeven CAS, kan de connector andere CAS-instanties detecteren. Als de primaire CAS niet beschikbaar is, zoekt de connector naar een andere CAS (indien beschikbaar) totdat de primaire CAS beschikbaar komt. Deze functie is standaard ingeschakeld. U kunt deze functie als volgt uitschakelen:
 1. Op de server waar de Exchange Connector is geïnstalleerd, gaat u naar %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
 2. Open **OnPremisesExchangeConnectorServiceConfiguration.xml** met behulp van een teksteditor.
 3. Wijzig &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; in &lt;IsCasFailoverEnabled&gt;**false** &lt;/IsCasFailoverEnabled&gt; om de functie uit te schakelen.    
@@ -157,9 +157,9 @@ Nadat u de Exchange-connectors hebt geconfigureerd, kunt u de status van de verb
 
 U kunt ook de tijd en datum van de laatste geslaagde synchronisatiepoging controleren.
 
-### <a name="system-center-operations-manager-scom-management-pack"></a>Management pack van System Center Operations Manager (SCOM)
+### <a name="system-center-operations-manager-management-pack"></a>Management pack van System Center Operations Manager
 
-Vanaf release 1710 Intune kunt u het [management pack van System Center Operations Manager (SCOM) voor Exchange-connector en Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) gebruiken. Hiermee kunt u de Exchange-connector op verschillende manieren controleren wanneer u problemen moet oplossen.
+Vanaf release 1710 Intune kunt u het [management pack Operations Manager voor Exchange-connector en Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) gebruiken. Hiermee kunt u de Exchange-connector op verschillende manieren controleren wanneer u problemen moet oplossen.
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Een snelle synchronisatie of een volledige synchronisatie handmatig forceren
 Een on-premises Exchange-connector synchroniseert regelmatig automatisch EAS- en Intune-apparaatrecords. Als de nalevingsstatus van een apparaat wijzigt, werkt het proces van automatische synchronisatie regelmatig records bij zodat apparaattoegang dienovereenkomstig kan worden geblokkeerd of toegestaan.

@@ -14,12 +14,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65457a65504b633018bb61851f16c8c65fa1c806
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185675"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203090"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Instellingen van apparaatfuncties voor iOS of macOS toevoegen in Intune
 
@@ -30,7 +30,7 @@ Met apparaatfuncties kunt u vele instellingen en functies op iOS- en macOS-appar
 - Instellingen voor AirPrint en AirPlay
 - Indeling van het startscherm
 - Meldingen van apps
-- Configuratie van gedeelde apparaten
+- Bericht voor vergrendelingsscherm
 - Eenmalige aanmelding instellen
 - Webinhoud filteren
 
@@ -43,19 +43,19 @@ In dit artikel leest u basisinformatie over het configureren van functieprofiele
 3. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 4. Voer de volgende eigenschappen in:
 
-   - **Naam**: voer een beschrijvende naam in voor het nieuwe profiel.
-   - **Beschrijving:** voer een beschrijving in voor het profiel. (Een beschrijving is optioneel, maar wordt aanbevolen.)
-   - **Platform**: selecteer het type platform:
+   - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel.
+   - **Beschrijving**: Voer een beschrijving in voor het profiel. (Deze instelling is optioneel, maar wordt aanbevolen.)
+   - **Platform**: Selecteer het platformtype:
      - **iOS**
      - **macOS**
-   - **Profieltype**: selecteer **Apparaatfuncties**.
-   - **Instellingen**: welke instellingen u gebruikt, is afhankelijk van het platform dat u kiest. In de volgende artikelen worden de instellingen voor elk profieltype beschreven:
+   - **Profieltype**: Selecteer **Apparaatfuncties**.
+   - **Instellingen**: Welke instellingen u gebruikt, is afhankelijk van het platform dat u kiest. In de volgende artikelen worden de instellingen voor elk profieltype beschreven:
 
      - [AirPrint-instellingen voor iOS en MacOS](air-print-settings-ios-macos.md)
      - [AirPlay-instellingen voor iOS](airplay-settings-ios.md)
      - [Indelingsinstellingen voor het iOS-startscherm](home-screen-settings-ios.md)
      - [App-meldingsinstellingen voor iOS opgeven](app-notification-settings-ios.md)
-     - [Configuratie-instellingen voor gedeelde apparaten voor iOS](shared-device-settings-ios.md)
+     - [Instellingen Bericht voor vergrendelingsscherm voor iOS](shared-device-settings-ios.md)
      - [Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten](sso-ios.md)
      - [Filterinstellingen voor webinhoud in iOS](web-content-filter-settings-ios.md)
 

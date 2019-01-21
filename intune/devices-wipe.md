@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553653"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122635"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Apparaten verwijderen via wissen of buiten gebruik stellen, of de registratie van het apparaat handmatig ongedaan maken
 
@@ -192,6 +192,10 @@ Als u een Apple DEP-apparaat volledig wilt verwijderen uit het beheer door Intun
 6. Kies **Opnieuw toewijzen**.
 
     ![Schermafbeelding voor opnieuw toewijzen bij Apple](./media/devices-wipe/apple-reassign.png)
+
+## <a name="fresh-start"></a>Nieuwe start
+
+Beschikbaar voor apparaten met Windows 10. Meer informatie over [Nieuwe start](https://docs.microsoft.com/intune/device-fresh-start).
 
 ## <a name="next-steps"></a>Volgende stappen
 

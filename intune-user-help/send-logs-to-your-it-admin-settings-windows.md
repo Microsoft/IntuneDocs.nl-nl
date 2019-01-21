@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/25/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 88107a580eb72f647bb7c32d52ed5d3c848cd392
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146736"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203311"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Logboeken verzenden naar het ondersteuningsteam van het bedrijf via de Instellingen-app voor Windows 10
 
-Als er een fout optreedt terwijl u uw Windows 10-apparaat gebruikt dat door uw bedrijf wordt beheerd, kunt u het ondersteuningsteam van het bedrijf helpen het probleem op te lossen door informatie naar hen te e-mailen. Deze informatie wordt bewaard op uw apparaat en opgeslagen in een speciaal document dat een _diagnostisch logboek_ wordt genoemd.
+Gebruik de app Instellingen om problemen van Bedrijfsportal voor Windows 10 op te lossen. Als u een probleem ondervindt bij het gebruiken van de app op uw Windows 10-apparaat, kunt u een e-mail naar uw ondersteuningsteam sturen voor hulp. Gebeurtenissen en fouten die zich voordoen in de bedrijfsportal-app worden op uw apparaat opgeslagen in een speciaal document dat _diagnostisch logboek_ wordt genoemd. Ze kunnen ook extra inzichten bevatten over de fout. Wanneer u ze exporteert, kunnen ze bovendien handig zijn voor ondersteuningsteams.
 
-1. Open de Windows-app **Instellingen** door naar het **Startmenu** te gaan en selecteer de knop **Instellingen**. U kunt ook zoeken naar 'instellingen' in de zoekbalk.
+1. Voor het openen van de app **Instellingen** gaat u naar het menu **Start** > **Instellingen**. U kunt ook zoeken naar *Instellingen* in de zoekbalk.
 2. Ga naar **Accounts** > **Toegang tot werk of school**.
-3. Selecteer De beheerlogboekbestanden exporteren.
+3. Selecteer **Uw beheerlogboekbestanden exporteren**.
 
    ![Het scherm Toegang tot werk of school met de exportoptie onder de kop Gerelateerde instellingen.](./media/w10-export-logs.png)
 

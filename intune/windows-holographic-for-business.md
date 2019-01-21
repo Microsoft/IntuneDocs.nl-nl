@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032262"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203379"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Verschillende apparaatbeheerfuncties beheren en gebruiken op Windows Holographic- en HoloLens-apparaten met Intune
 
@@ -123,6 +123,11 @@ Met virtuele particuliere netwerken (VPN's) geeft u uw gebruikers veilige extern
 #### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Wi-Fi configureren](wi-fi-settings-configure.md)
 
 U kunt in Intune ook een Wi-Fi-profiel maken om draadloze netwerkinstellingen toe te wijzen aan apparaten met Windows Holographic for Business. Als u een Wi-Fi-profiel toewijst, krijgen uw eindgebruikers zonder netwerkconfiguratie toegang tot het bedrijfsnetwerk. U kunt bijvoorbeeld een Wi-Fi-netwerk uitsluitend voor apparaten met Windows Holographic for Business maken.
+
+## <a name="shared-multi-user-devices"></a>Gedeelde apparaten voor meerdere gebruikers
+[Gedeelde apparaten](shared-user-device-settings-windows-holographic.md)
+
+Apparaten met Windows Holographic for Business, zoals de Microsoft HoloLens, kunnen meerdere gebruikers hebben. Intune bevat instellingen waarmee verschillende functies op deze gedeelde apparaten kunnen worden beheerd, zoals energiebeheer, het gebruik van lokale opslag en accountbeheer. De configuratieprofielen kunnen ook worden toegepast op apparaten met verschillende besturingssystemen. De groep met apparaten kan bijvoorbeeld zowel RS2- als RS3-apparaten bevatten.
 
 ## <a name="software-updates"></a>Software-updates
 **[Software-updates beheren](windows-update-for-business-configure.md)**

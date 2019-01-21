@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,27 +15,28 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6bc6f5d2f32ff060eb2eec568b0048628ad0e09c
-ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
+ms.openlocfilehash: cb6e3f0a9f62348d55b5dc2284c1007ea7faf088
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303852"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203209"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Een apparaatprofiel maken in Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>Het profiel maken
-1. In [Azure Portal](https://portal.azure.com) selecteert u **Alle services** en zoekt u naar **Microsoft Intune**.
 
-2. In **Microsoft Intune** selecteert u **Apparaatconfiguratie** en vervolgens **Profielen**. Selecteer vervolgens **Profiel maken**.
+1. Selecteer in [Azure Portal](https://portal.azure.com) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
+
+2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 
 3. Voer de volgende eigenschappen in:
 
-   - **Naam**: voer een beschrijvende naam in voor het nieuwe profiel.
-   - **Beschrijving:** voer een beschrijving in voor het profiel. (Een beschrijving is optioneel, maar wordt aanbevolen.)
-   - **Platform**: selecteer het platformtype:  
+   - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel.
+   - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
+   - **Platform**: Selecteer het platformtype:  
 
        - **Android**
        - **Android Enterprise**
@@ -45,8 +46,8 @@ ms.locfileid: "52303852"
        - **Windows 8.1 en hoger**
        - **Windows 10 en hoger**
 
-   - **Profieltype**: selecteer het type dat u wilt maken. De lijst is afhankelijk van het platform dat u kiest.
-   - **Instellingen**: in de volgende onderwerpen worden de instellingen voor elk profieltype beschreven:
+   - **Profieltype**: Selecteer het type dat u wilt maken. De lijst is afhankelijk van het platform dat u kiest.
+   - **Instellingen**: In de volgende artikelen worden de instellingen voor elk profieltype beschreven:
 
        -  [Apparaatfuncties](device-features-configure.md)
        -  [Apparaatbeperkingen](device-restrictions-configure.md)

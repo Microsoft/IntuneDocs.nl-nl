@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/10/2018
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: a84683531481410d54f527ddd35400dcfe504fc5
-ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
+ms.openlocfilehash: 0cc94da03e1288de519d08acadbf3374bb76fcd7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53996028"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210904"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,131 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook geplande 
 ### Role-based access control
 
 -->     
+
+
+## <a name="week-of-january-7-2019"></a>De week van 7 januari 2019
+
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="intune-app-pin----2298397---"></a>Pincode voor de Intune-app <!-- 2298397 -->
+Als IT-beheerder kunt u nu het aantal dagen configureren dat een eindgebruiker kan wachten voordat zijn pincode voor de Intune-app moet worden gewijzigd. De nieuwe instelling is *Pincode opnieuw instellen na aantal dagen* en is beschikbaar in Azure Portal als u **Intune** > **Client-apps** > **App-beveiligingsbeleid** > **Beleid maken** > **Instellingen** > **Toegangsvereisten** kiest. Deze functie is beschikbaar voor [iOS](app-protection-policy-settings-ios.md)- en [Android](app-protection-policy-settings-android.md)-apparaten en biedt ondersteuning voor een positief geheel getal.
+
+
+#### <a name="intune-device-reporting-fields----2748738---"></a>Rapportvelden voor Intune-apparaat <!-- 2748738 -->
+Intune biedt aanvullende velden voor apparaatrapporten, waaronder de registratie-id van de app, de Android-fabrikant, het model, de versie van de beveiligingspatch en het iOS-model. In Intune zijn deze velden beschikbaar door **Client-apps** > **App-beveiligingsstatus** te selecteren en vervolgens **App-beveiligingsrapport: iOS, Android** te kiezen. Bovendien helpen deze parameters u de lijst **Toestaan** te configureren voor de apparaatfabrikant (Android), evenals de lijst **Toestaan** voor het apparaatmodel (Android en iOS) en de versie-instellingen van de minimale Android-beveiligingspatch. 
+
+
+### <a name="device-configuration"></a>Apparaatconfiguratie
+
+#### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Beheersjablonen zijn in openbare preview en verplaatst naar hun eigen configuratieprofiel <!-- 3322847 -->
+
+Beheersjablonen in Intune (**Apparaatconfiguratie** > **Beheersjablonen**) zijn momenteel in openbare preview. Bij deze update:
+
+- Beheersjablonen omvatten circa 300 instellingen die kunnen worden beheerd in Intune. Eerder bestonden deze instellingen alleen in de editor voor groepsbeleid.
+- Beheersjablonen zijn beschikbaar in openbare preview.
+- Beheersjablonen worden verplaatst van **Apparaatconfiguratie** > **Beheersjablonen** naar **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > kies als **Platform** **Windows 10 en hoger** > kies in **Profieltype** **Beheersjablonen**.
+- Rapportage is ingeschakeld
+
+Ga naar [Windows 10 templates to configure group policy settings](administrative-templates-windows.md) (Windows 10-sjablonen voor het configureren van instellingen voor groepsbeleid) voor meer informatie over deze functie.
+
+Van toepassing op: Windows 10 en hoger
+
+#### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user-----1333642---"></a>S/MIME gebruiken om meerdere apparaten van een gebruiker te versleutelen en ondertekenen <!-- 1333642 -->
+Deze update bevat een S/MIME-e-mailversleuteling met een nieuw profiel voor een geïmporteerd certificaat (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > selecteer het platform > profieltype **Geïmporteerd PKCS-certificaat**). In Intune kunt u certificaten importeren in PFX-indeling. Intune kan deze certificaten dan leveren aan meerdere apparaten die zijn geregistreerd door één gebruiker. Dit omvat ook:
+- Het systeemeigen iOS-e-mailprofiel ondersteunt het inschakelen van S/MIME-versleuteling met behulp van geïmporteerde certificaten in de PFX-indeling.
+- De systeemeigen mail-app op Windows Phone 10-apparaten gebruikt automatisch het S/MIME-certificaat.
+- De persoonlijke certificaten kunnen worden afgeleverd op meerdere platformen. Maar niet alle e-mail-apps ondersteunen S/MIME.
+- Op andere platformen moet u mogelijk de mail-app handmatig configureren om S/MIME in te schakelen.  
+- E-mail-apps die ondersteuning bieden voor S/MIME-versleuteling, kunnen het ophalen van certificaten voor S/MIME-e-mailversleuteling verwerken op een manier die een MDM niet kan ondersteunen, zoals het lezen van het certificaatarchief van de uitgever.
+Zie [S/MIME overview to sign and encrypt email](certificates-s-mime-encryption-sign.md) (S/MIME voor e-mailondertekening en -versleuteling) voor meer informatie over deze functie.
+Ondersteund in: Windows, Windows Phone 10, macOS, iOS, Android
+
+#### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>Nieuwe opties om automatisch verbinding te maken en regels te behouden met DNS-instellingen in Windows 10 en hoger <!-- 1333665, 2999078 -->
+Op apparaten met Windows 10 en hoger kunt u een VPN-configuratieprofiel maken dat een lijst DNS-servers bevat om domeinen om te zetten, zoals contoso.com. Deze update bevat nieuwe instellingen voor naamomzetting: (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > kies **Windows 10 en hoger** als platform > kies **VPN** als profieltype > **DNS-instellingen** >**Toevoegen**): 
+- **Automatisch verbinding maken**: Als deze optie is **ingeschakeld**, maakt het apparaat automatisch verbinding met VPN wanneer een apparaat een domein oproept dat u invoert, bijvoorbeeld contoso.com.
+- **Permanent**: Standaard zijn alle NRPT-tabelregels voor Naamomzettingsbeleid (NRPT) actief zolang het apparaat is verbonden met behulp van dit VPN-profiel. Wanneer deze instelling is **ingeschakeld** voor een NRPT-regel, blijft de regel actief op het apparaat, zelfs wanneer de VPN-verbinding wordt verbroken. De regel blijft totdat het VPN-profiel is verwijderd of totdat de regel handmatig wordt verwijderd, wat mogelijk is met behulp van PowerShell.
+In [Windows 10 VPN-instellingen](vpn-settings-windows-10.md) worden instellingen beschreven. 
+
+#### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Detectie van vertrouwde netwerken gebruiken voor VPN-profielen in Windows 10-apparaten <!-- 1500165 -->
+Wanneer u gebruikmaakt van detectie van vertrouwde netwerken, kunt u voorkomen dat VPN-profielen automatisch een VPN-verbinding maken wanneer de gebruiker zich al op een vertrouwd netwerk bevindt. Met deze update kunt u DNS-achtervoegsels toevoegen om detectie van vertrouwde netwerken in te schakelen op apparaten met Windows 10 en hoger (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** als platform en **VPN** als profieltype).
+In [VPN-instellingen voor Windows 10](vpn-settings-windows-10.md) worden de huidige VPN-instellingen vermeld.
+
+#### <a name="manage-windows-holographic-for-business-devices-used-by-multiple-users----1907917-1063203---"></a>Windows Holographic for Business-apparaten beheren die worden gebruikt door meerdere gebruikers <!-- 1907917, 1063203 -->
+U kunt momenteel gedeelde pc-instellingen configureren op Windows 10- en Windows Holographic for Business-apparaten met een aangepaste OMA-URI-instelling. Met deze update wordt een nieuw profiel toegevoegd om instellingen voor gedeelde apparaten te configureren (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** > **Gedeeld apparaat met meerdere gebruikers**).
+Ga naar [Intune settings to manage shared devices](shared-user-device-settings.md) (Intune-instellingen voor het beheren van gedeelde apparaten) voor meer informatie over deze functie.
+Van toepassing op: Windows 10 en hoger, Windows Holographic for Business
+
+#### <a name="new-windows-10-update-settings---2626030--2512994----"></a>Nieuwe Windows 10-update-instellingen <!--2626030  2512994  -->
+Voor uw [Windows 10-update-ringen](windows-update-for-business-configure.md) kunt u het volgende configureren:
+- **Gedrag van automatische updates** : gebruik de nieuwe optie *Standaardinstellingen opnieuw instellen* om de oorspronkelijke instellingen voor automatische updates te herstellen op een Windows 10-computer waarop de *update van oktober 2018* is geïnstalleerd
+- **Blokkeren dat gebruikers Windows-updates kunnen onderbreken**: configureer een nieuwe instelling voor software-updates waarmee u kunt toestaan of blokkeren dat gebruikers de installatie van updates kunnen onderbreken via de *Instellingen* op hun computer. 
+
+#### <a name="ios-email-profiles-can-use-smime-signing-and-encryption----2662949---"></a>iOS-e-mailprofielen kunnen gebruikmaken van S/MIME-ondertekening en versleuteling <!-- 2662949 -->
+U kunt een e-mailprofiel maken dat verschillende instellingen bevat. Deze update bevat onder andere S/MIME-instellingen die kunnen worden gebruikt voor de ondertekening en versleuteling van e-mailcommunicatie op iOS-apparaten (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > kies **iOS** als platform en **E-mail** als profieltype).
+In [Configuratie-instellingen voor iOS-e-mail](email-settings-ios.md) worden de instellingen vermeld.
+
+#### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Sommige BitLocker-instellingen ondersteunen Windows 10 Pro <!-- 2727036 -->
+U kunt een configuratieprofiel maken waarmee Endpoint Protection-instellingen op Windows 10-apparaten wordt ingesteld, waaronder BitLocker. Met deze update wordt voor sommige BitLocker-instellingen ondersteuning toegevoegd voor Windows 10 Professional. Ga naar [Instellingen voor de beveiliging van eindpunten voor Windows 10](endpoint-protection-windows-10.md#windows-encryption) om deze beveiligingsinstellingen te bekijken.
+
+#### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal---2809362---"></a>In Azure Portal is de naam Configuratie voor gedeelde apparaten is voor iOS-apparaten gewijzigd in Bericht voor vergrendelingsscherm<!-- 2809362 -->
+Wanneer u een configuratieprofiel voor iOS-apparaten maakt, kunt u de instelling **Configuratie voor gedeelde apparaten** toevoegen, zodat er specifieke tekst op het vergrendelingsscherm wordt weergegeven. Deze update bevat onder andere de volgende wijzigingen: 
+- De instellingen voor **Configuratie voor gedeelde apparaten** in de Azure-portal worden hernoemd naar 'Vergrendelingsschermbericht (alleen onder supervisie)' (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > kies **iOS** als platform > kies **Apparaatfuncties** als profieltype > **Vergrendelingsschermbericht**).
+- Wanneer u vergrendelingsschermberichten toevoegt, kunt u een serienummer, apparaatnaam of een andere apparaatspecifieke waarde als variabele invoegen in **Informatie over de assettag** en **Voetnoot voor het vergrendelingsscherm** . U kunt bijvoorbeeld `Device name: {{devicename}}` of `Serial number is {{serialnumber}}` invoeren met accolades. De lijst [iOS-tokens](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) bevat de beschikbare tokens die kunnen worden gebruikt.
+Het gedeelte [Instellingen om berichten op het vergrendelingsscherm weer te geven](shared-device-settings-ios.md) bevat de huidige instellingen.
+
+#### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices----2827760--"></a>Nieuwe App Store-, documentweergave-, gaminginstellingen voor apparaatbeperking toegevoegd aan iOS-apparaten<!-- 2827760-->
+In **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS** voor platform > **Apparaatbeperkingen** voor profieltype > **App Store, documentweergave, gaming** zijn de volgende instellingen toegevoegd: Beheerde apps toestaan om contacten naar niet-beheerde contactenaccounts te schrijven (alleen onder supervisie) Niet-beheerde apps toestaan om beheerde contactenaccounts te lezen (alleen onder supervisie) Als u de instellingen wilt weergeven, gaat u naar [iOS-apparaatbeperkingen](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+
+#### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Nieuwe instellingen voor meldingen, hints en keyguard voor Android Enterprise-apparaten in zakelijk eigendom <!-- 3201839 3201843 -->
+Deze update omvat verschillende nieuwe functies in Android Enterprise-apparaten wanneer deze worden uitgevoerd in zakelijk eigendom. Als u deze functies wilt gebruiken, gaat u naar **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > als **Platform** kiest u **Android Enterprise** > in **Profieltype** kiest u **Alleen zakelijk eigendom** > **Apparaatbeperkingen**.
+Nieuwe functies omvatten: 
+- Systeemmeldingen uitschakelen, waaronder binnenkomende oproepen, systeemwaarschuwingen, systeemfouten en meer
+- Suggestie om uitleg en hints over te slaan voor apps die voor de eerste keer worden gestart
+- Geavanceerde keyguard-instellingen, zoals de camera, meldingen, ontgrendelen met vingerafdruk, uitschakelen Als u de instellingen wilt weergeven, gaat u naar de [apparaatbeperkingsinstellingen voor Android Enterprise](device-restrictions-android-for-work.md).
+
+#### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Android Enterprise-apparaten in zakelijk eigendom kunnen AlwaysOn-VPN-verbindingen gebruiken <!-- 3202194 -->
+In deze update kunt u ingeschakelde VPN-verbindingen gebruiken op Android Enterprise-apparaten in zakelijk eigendom. Altijd ingeschakelde VPN-verbindingen blijven verbonden en maken direct opnieuw verbinding wanneer gebruikers hun apparaat ontgrendelen, het apparaat opnieuw wordt opgestart of het draadloze netwerk wordt gewijzigd. U kunt de verbinding ook in de vergrendelingsmodus zetten. Hiermee wordt al het netwerkverkeer geblokkeerd totdat de VPN-verbinding actief is.
+U vindt altijd ingeschakelde VPN in **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android Enterprise** voor platform > **Apparaatbeperkingen** voor apparaten in zakelijk eigendom > **Connectiviteit**. Ga naar [Android Enterprise device restriction settings](device-restrictions-android-for-work.md) (Apparaatbeperkingsinstellingen voor Android Enterprise-apparaten) om de instellingen wilt bekijken.
+
+#### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices----3285177---"></a>Nieuwe instelling om processen in Taakbeheer in Windows 10-apparaten te beëindigen <!-- 3285177 --> 
+Deze update omvat een nieuwe instelling om processen via Taakbeheer in Windows 10-apparaten te beëindigen. Met behulp van een apparaatconfiguratieprofiel (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > als **Platform** kiest u **Windows 10** > in **Profieltype** kiest u **Apparaatbeperkingen** > **Algemene** instellingen) kunt u deze instellingen toestaan of blokkeren.
+Ga naar [Apparaatbeperkingsinstellingen voor Windows 10-apparaten](device-restrictions-windows-10.md) als u de instellingen wilt bekijken.
+Van toepassing op: Windows 10 en hoger
+
+
+### <a name="device-enrollment"></a>Apparaatinschrijving
+
+#### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564---"></a>Gedetailleerdere berichten over fouten bij inschrijvingsbeperking <!-- 3111564 -->
+Er komen meer gedetailleerdere foutberichten beschikbaar wanneer er niet wordt voldaan de inschrijvingsbeperkingen. Als u deze berichten wilt bekijken, gaat u naar **Intune** > **Probleemoplossing** en bekijkt u het tabel Inschrijvingsfouten. Zie de [lijst met mislukte inschrijvingen](help-desk-operators.md#configuration-policies-reference) voor meer informatie.
+
+#### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>Meer Setup Assistant-schermen overslaan op een iOS-DEP-apparaat <!-- 2687509 -->
+Naast de schermen die u op dit moment kunt overslaan, kunt u instellen dat iOS DEP-apparaten de volgende schermen in de Setup-assistent overslaan wanneer een gebruiker het apparaat registreert: Weergavetoon, Privacy, Android-migratie, Startknop, iMessage en FaceTime, Onboarding, Migratie weergeven, Weergave, Schermtijd, Software-update, SIM-installatie.
+Als u wilt kiezen welke schermen moeten worden overgeslagen, gaat u naar **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor inschrijvingsprogramma** > kies een token > **Profielen** > kies een profiel > **Eigenschappen** > **Setup Assistant aanpassen** > kies **Verbergen** voor schermen die u wilt overslaan > **OK**.
+
+
+### <a name="monitor-and-troubleshoot"></a>Bewaken en problemen oplossen
+
+#### <a name="tenant-status-dashboard-----1124854---"></a>Dashboard Tenantstatus <!-- 1124854 -->
+De nieuwe [pagina Tenantstatus](tenant-status.md) biedt één locatie waar u de status en gerelateerde details voor uw tenant kunt bekijken.  Het dashboard is opgedeeld in vier gebieden:
+- **Tenantdetails**: bevat uiteenlopende informatie, zoals uw tenantnaam en -locatie, uw MDM-instantie, het totale aantal ingeschreven apparaten in uw tenant en uw aantal licenties. Dit gedeelte bevat ook de huidige servicerelease voor uw tenant.
+- **Connectorstatus**: bevat informatie over de beschikbare connectors die u hebt geconfigureerd. Daarnaast kunt u die connectors vermelden die u nog niet hebt ingeschakeld.  
+   Op basis van de huidige status worden de connectors gemarkeerd als In orde, Waarschuwing of Niet in orde. Selecteer een connector die u gedetailleerd wilt analyseren om details of aanvullende informatie voor de connector weer te geven.
+-  **Intune Service Health**: bevat gedetailleerde informatie over actieve incidenten of storingen voor uw tenant. De informatie in deze sectie wordt rechtstreeks opgehaald uit het Office Message Center.
+-  **Intune-nieuws** : bevat actieve berichten voor uw tenant. Berichten omvatten onder andere meldingen wanneer uw tenant de nieuwste functies van Intune ontvangt.  De informatie in deze sectie wordt rechtstreeks opgehaald uit het Office Message Center.
+
+#### <a name="new-help-and-support-experience-in-company-portal-for-windows-10----1488939--"></a>Nieuw Help en ondersteuning-ervaring in de bedrijfsportal voor Windows 10 <!-- 1488939-->
+Gebruikers kunnen de nieuwe pagina Help en ondersteuning van Bedrijfsportal gebruiken om problemen op te lossen en hulp te vragen voor app- en toegangsproblemen. Via deze pagina kunnen gebruikers details uit foutenlogboeken en diagnostisch logboeken mailen en kunnen ze de gegevens van de helpdesk van de organisatie vinden. Daarnaast bevat de pagina een gedeelte met veelgestelde vragen met koppelingen naar de relevante Intune-documentatie. 
+
+#### <a name="new-help-and-support-experience-for-intune------3307080---"></a>Nieuwe Help en ondersteuning-ervaring voor Intune <!-- #3307080 -->
+De nieuwe Help en ondersteuning-ervaring wordt de komende paar dagen uitgerold naar alle tenants. Deze nieuwe ervaring is beschikbaar voor Intune en is toegankelijk wanneer de Intune-blades in [Azure Portal](https://portal.azure.com/) worden gebruikt.
+Met de nieuwe ervaring kunt u uw probleem in uw eigen woorden beschrijven en informatie over probleemoplossing en op internet gevonden informatie over het oplossen van het probleem ontvangen. Deze oplossingen worden aangeboden via een op regels gebaseerde machine learning-algoritme, dat wordt aangestuurd door zoekvragen van gebruikers. Naast informatie die specifiek is voor problemen kunt u gebruikmaken van de nieuwe werkstroom voor het openen van een ondersteuningsvraag via e-mail of telefoon. Deze nieuwe ervaring vervangt de vorige Help en ondersteuning-ervaring die bestaat uit een statistische verzameling vooraf geselecteerde opties die zijn gebaseerd op het gebied van de console waarin u zich bevindt wanneer u Help en ondersteuning opent. Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md) voor meer informatie.
+
+### <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
+
+#### <a name="scope-tags-for-apps----1081941---"></a>Bereiktags voor apps <!-- 1081941 -->
+U kunt bereiktags maken om de toegang voor rollen en apps te beperken. U kunt een bereiktag toevoegen aan een app, zodat alleen personen met rollen die ook zijn toegewezen aan de bereiktag, toegang tot de app hebben. Zie [Bereiktags gebruiken om beleidsregels te filteren](scope-tags.md) voor meer informatie.
+
+
 
 ## <a name="week-of-december-10-2018"></a>Week van 10 december 2018
 
@@ -244,7 +369,7 @@ Azure Active Directory krijgt een gebruiksvoorwaardenfunctie die u kunt gebruike
 Voor Samsung Knox Mobile Enrollment ondersteunt Intune nu het inschrijven van apparaten bij het beheer van de modus Android-apparaateigenaar. Gebruikers op wifi- of mobiele netwerken kunnen inschrijven met een paar tikken wanneer ze hun apparaten voor het eerst inschakelen. Zie [Android-apparaten automatisch registreren met behulp van de Knox Mobile Enrollment van Samsung](android-samsung-knox-mobile-enroll.md) voor meer informatie.
 
 ### <a name="device-management"></a>Apparaatbeheer
-#### <a name="new-settings-for-software-updates------1907869--wnready---"></a>Nieuwe instellingen voor software-updates <!-- 1907869  wnready -->  
+#### <a name="new-settings-for-software-updates------1907869---"></a>Nieuwe instellingen voor software-updates <!-- 1907869 -->  
 - Nu kunt u bepaalde meldingen configureren om eindgebruikers te waarschuwen dat het systeem opnieuw moet worden opgestart om de installatie van de meest recente software-updates te voltooien.   
 - Nu kunt u een waarschuwingsprompt configureren over het feit dat systemen opnieuw worden opgestart buiten werkuren, waardoor BYOD-scenario's worden ondersteund.
 
@@ -281,7 +406,7 @@ Voor klanten die deel uitmaken van de implementatie, vervangt deze nieuwe ervari
 
 *Deze nieuwe ervaring voor Help en ondersteuning wordt geïmplementeerd voor sommige, maar niet alle tenants en is beschikbaar in de portal voor apparaatbeheer. Deelnemers aan deze nieuwe ervaring worden willekeurig geselecteerd uit de beschikbare Intune-tenants. Nieuwe tenants worden toegevoegd als we de implementatie uitbreiden.*  
 
-Zie [Nieuwe ervaring voor help en ondersteuning](get-support.md#new-help-and-support-experience) in Ondersteuning voor Microsoft Intune krijgen voor meer informatie.  
+Zie [Help en ondersteuning-ervaring](get-support.md#help-and-support-experience) in Ondersteuning voor Microsoft Intune krijgen voor meer informatie.  
 
 ### <a name="powershell-module-for-intune--preview-available----951068---"></a>PowerShell-module voor Intune - Preview-versie is beschikbaar <!-- 951068 -->
 Een nieuwe PowerShell-module die ondersteuning biedt voor de Intune-API via Microsoft Graph is nu beschikbaar als preview-versie op [GitHub]( https://aka.ms/intunepowershell). Zie het Leesmij-bestand op die locatie meer informatie over het gebruik van deze module. 

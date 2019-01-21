@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: a8ebe8f8cd84ef5eb38bf7e17f413bcc6a0791cd
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112949"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122537"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -81,6 +81,8 @@ U kunt de instellingen voor een beperking van het type apparaat wijzigen via ond
     - Android-werkprofielen bieden ondersteuning voor major.minor.rev.build.
     - iOS ondersteunt major.minor.rev. Versies van besturingssystemen zijn niet van toepassing op Apple-apparaten die worden ingeschreven met Device Enrollment Program, Apple School Manager of de app Apple Configurator.
     - Windows ondersteunt alleen major.minor.rev.build voor Windows 10.
+> [!Note]
+> Windows 10 verstrekt niet het buildnummer tijdens het inschrijven. Als u bijvoorbeeld 10.0.17134.100 invoert en het apparaat nummer 10.0.17134.174 heeft, wordt het apparaat geblokkeerd.
 8. Kies voor elk vermeld platform of u apparaten die **persoonlijk eigendom zijn** wilt **Toestaan** of **Blokkeren**.
 9. Kies **OK**.
 

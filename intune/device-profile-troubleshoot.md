@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 1/17/2018
+ms.date: 1/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 305799fa21ae7c3464caf8f7019dcf9e8170d3ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 32281ae37b7b36dfbf49503275a8a1e6c35d8f6d
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181476"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210785"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Veelvoorkomende problemen met en oplossingen voor apparaatprofielen in Microsoft Intune
 
@@ -51,14 +51,14 @@ Als een apparaat geen controle uitvoert of het beleid niet kan worden opgehaald 
 - iOS en macOS: om de zes uur
 - Android: om de acht uur
 - Windows Phone: om de acht uur
-- Windows 8.1- en Windows 10-pc's die als apparaten zijn ingeschreven: om de acht uur
+- Windows 8.1- en Windows 10-pc's die zijn ingeschreven als apparaten: om de acht uur
 
 Als het apparaat recent is ingeschreven, is de controlefrequentie hoger, en wel als volgt:
 
-- iOS en macOS: om de 15 minuten gedurende zes uur en daarna om de zes uur
-- Android: om de drie minuten gedurende 15 minuten, daarna om de 15 minuten gedurende twee uur en vervolgens om de acht uur
+- iOS en macOS: om de vijftien minuten gedurende zes uur en daarna om de zes uur
+- Android: om de drie minuten gedurende vijftien minuten, daarna om de vijftien minuten gedurende twee uur en vervolgens om de acht uur
 - Windows Phone: om de vijf minuten gedurende 15 minuten, daarna om de 15 minuten gedurende twee uur en vervolgens om de acht uur
-- Windows-computers die als apparaten zijn ingeschreven: om de drie minuten gedurende 30 minuten en vervolgens om de acht uur
+- Windows-pc's die zijn ingeschreven als apparaten: om de drie minuten gedurende dertig minuten en daarna om de acht uur
 
 Gebruikers kunnen ook de bedrijfsportal-app openen en het apparaat synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
 
@@ -72,11 +72,11 @@ Andere wijzigingen zoals het wijzigen van de contactgegevens in de bedrijfsporta
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Als er meerdere beleidsregels worden toegewezen aan dezelfde gebruiker of hetzelfde apparaat, hoe weet ik dan welke instellingen worden toegepast?
 Wanneer er twee of meer beleidsregels worden toegewezen aan dezelfde gebruiker of hetzelfde apparaat, wordt per instelling bekeken welke instelling van toepassing is:
 
--   Nalevingsbeleidsinstellingen hebben altijd voorrang op configuratiebeleidsinstellingen
+- Nalevingsbeleidsinstellingen hebben altijd voorrang op configuratiebeleidsinstellingen
 
--   Als een nalevingsbeleidsregel wordt vergeleken met diezelfde instelling in een ander nalevingsbeleid, wordt de strengste nalevingsbeleidsinstelling wordt toegepast.
+- Als een nalevingsbeleidsregel wordt vergeleken met diezelfde instelling in een ander nalevingsbeleid, wordt de strengste nalevingsbeleidsinstelling wordt toegepast.
 
--   Als een configuratiebeleidsinstelling een conflict veroorzaakt met een instelling in een ander configuratiebeleid, wordt dit conflict weergegeven in Azure Portal. In dit scenario moeten deze conflicten handmatig worden opgelost.
+- Als een configuratiebeleidsinstelling een conflict veroorzaakt met een instelling in een ander configuratiebeleid, wordt dit conflict weergegeven in Azure Portal. In dit scenario moeten deze conflicten handmatig worden opgelost.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>Wat gebeurt er wanneer beleidsregels voor app-beveiliging met elkaar conflicteren? Welke regel wordt toegepast op de app?
 Conflictwaarden zijn de meest beperkende instellingen die beschikbaar zijn in app-beveiligingsbeleid, behalve cijferinvoervelden (zoals aantal pincodepogingen voorafgaand aan opnieuw instellen). De cijferinvoervelden worden op hetzelfde ingesteld als de waarden, alsof u een MAM-beleid hebt gemaakt in de console met behulp van de aanbevolen instellingenoptie.
@@ -88,45 +88,48 @@ Als er een profiel is toegewezen aan de app en van kracht is, en er wordt vervol
 ## <a name="what-happens-when-ios-custom-policies-conflict"></a>Wat gebeurt er als aangepaste iOS-beleidsregels conflicteren?
 Intune beoordeelt de payload van Apple-configuratiebestanden of een aangepast profiel voor de Open Mobile Alliance Uniform Resource Identifier (OMA-URI) niet. Het fungeert alleen als bezorgingsmechanisme.
 
-Bij het toewijzen van een aangepast profiel zorgt u dat de geconfigureerde instellingen niet conflicteren met het nalevingsbeleid, configuratiebeleid of ander aangepast beleid. Als een aangepast profiel en de instellingen niet goed op elkaar aansluiten, worden de instellingen willekeurig toegepast.
+Bij het toewijzen van een aangepast profiel zorgt u dat de geconfigureerde instellingen niet conflicteren met het nalevingsbeleid, configuratiebeleid of ander aangepast beleid. Als een aangepast profiel en de bijbehorende instellingen conflicteren, worden de instellingen willekeurig toegepast.
 
 ## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>Wat gebeurt er wanneer een profiel wordt verwijderd of niet langer van toepassing is?
 Wanneer u een profiel verwijdert of een apparaat verwijdert uit een groep waaraan een profiel was toegewezen, worden het profiel en de instellingen van het apparaat verwijderd volgens de volgende lijsten:
 
 - Wi-Fi-, VPN-, certificaat- en e-mailprofielen: deze profielen worden verwijderd van alle ondersteunde ingeschreven apparaten.
 - Alle andere profieltypen:  
-    - **Windows- en Android-apparaten**: de instellingen worden niet van het apparaat verwijderd
-    - **Windows Phone 8.1-apparaten**: de volgende instellingen worden verwijderd:  
-        - Wachtwoord vereist voor het ontgrendelen van mobiele apparaten
-        - Eenvoudige wachtwoorden toestaan
-        - Minimale wachtwoordlengte
-        - Vereist wachtwoordtype
-        - Wachtwoordverlooptijd (dagen)
-        - Wachtwoordgeschiedenis onthouden
-        - Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist
-        - Minuten inactief voordat wachtwoord is vereist
-        - Vereist wachtwoordtype – minimum aantal tekensets
-        - Camera toestaan
-        - Versleuteling vereisen voor mobiel apparaat
-        - Verwisselbare opslag toestaan
-        - Webbrowser toestaan
-        - Toepassingsarchief toestaan
-        - Schermafbeelding toestaan
-        - Geolocatie toestaan
-        - Microsoft-account toestaan
-        - Kopiëren en plakken toestaan
-        - Wi-Fi-tethering toestaan
-        - Automatische verbinding met gratis Wi-Fi-hotspots toestaan
-        - Melden van Wi-Fi-hotspots toestaan
-        - Wissen toestaan
-        - Bluetooth toestaan
-        - NFC toestaan
-        - Wi-Fi toestaan
 
-    - **iOS**: alle instellingen worden verwijderd, met uitzondering van:
-        - Spraakroaming toestaan
-        - Gegevensroaming toestaan
-        - Automatische synchronisatie tijdens roamen toestaan
+  - **Windows- en Android-apparaten**: instellingen worden niet verwijderd van het apparaat
+  - **Windows Phone 8.1-apparaten**: De volgende instellingen worden verwijderd:  
+  
+    - Wachtwoord vereist voor het ontgrendelen van mobiele apparaten
+    - Eenvoudige wachtwoorden toestaan
+    - Minimale wachtwoordlengte
+    - Vereist wachtwoordtype
+    - Wachtwoordverlooptijd (dagen)
+    - Wachtwoordgeschiedenis onthouden
+    - Aantal mislukte aanmeldingen dat is toegestaan voordat het apparaat wordt gewist
+    - Minuten inactief voordat wachtwoord is vereist
+    - Vereist wachtwoordtype – minimum aantal tekensets
+    - Camera toestaan
+    - Versleuteling vereisen voor mobiel apparaat
+    - Verwisselbare opslag toestaan
+    - Webbrowser toestaan
+    - Toepassingsarchief toestaan
+    - Schermafbeelding toestaan
+    - Geolocatie toestaan
+    - Microsoft-account toestaan
+    - Kopiëren en plakken toestaan
+    - Wi-Fi-tethering toestaan
+    - Automatische verbinding met gratis Wi-Fi-hotspots toestaan
+    - Melden van Wi-Fi-hotspots toestaan
+    - Wissen toestaan
+    - Bluetooth toestaan
+    - NFC toestaan
+    - Wi-Fi toestaan
+
+  - **iOS**: alle instellingen worden verwijderd, met uitzondering van:
+  
+    - Spraakroaming toestaan
+    - Gegevensroaming toestaan
+    - Automatische synchronisatie tijdens roamen toestaan
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Ik heb een beperkingsprofiel voor apparaten gewijzigd, maar de wijzigingen zijn niet doorgevoerd
 Bij Windows Phone-apparaten wordt niet toegestaan dat de beveiligingsbeleidsregels die via MDM of EAS zijn ingesteld, worden teruggebracht naar een lager niveau wanneer u die eenmaal hebt ingesteld. U stelt bijvoorbeeld het **minimumaantal tekens voor het wachtwoord** in op 8 en wilt dit vervolgens terugbrengen tot 4. Het meer beperkende profiel is al toegepast op het apparaat.
@@ -134,6 +137,14 @@ Bij Windows Phone-apparaten wordt niet toegestaan dat de beveiligingsbeleidsrege
 U moet het beveiligingsbeleid opnieuw instellen als u de beveiliging van het profiel naar beneden wilt bijstellen. Veeg bijvoorbeeld in Windows 8.1 op het bureaublad vanaf rechts over het scherm om **Instellingen** > **Configuratiescherm** te selecteren. Selecteer de applet **Gebruikersaccounts** . In het navigatiemenu aan de linkerkant vindt u onderaan de koppeling **Beveiligingsbeleid opnieuw instellen**. Selecteer deze koppeling en kies vervolgens **Beleid opnieuw instellen**.
 
 Andere MDM-apparaten, bijvoorbeeld met Android, Windows Phone 8.1 en hoger of Windows 10, moeten mogelijk buiten gebruik worden gesteld en weer opnieuw bij de service worden ingeschreven voordat u een minder beperkend profiel kunt toepassen.
+
+## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Sommige instellingen in een Windows 10-profiel retourneren de waarde Niet van toepassing
+Voor sommige Windows 10-apparaten wordt Niet van toepassing weergegeven. In dat geval wordt die specifieke instelling niet ondersteund door de Windows-versie of -editie die wordt uitgevoerd op het apparaat. Dit bericht kan optreden om de volgende redenen:
+
+- De instelling is alleen beschikbaar voor nieuwere versies van Windows en niet voor het huidige versie van het besturingssysteem (OS) op het apparaat.
+- De instelling is alleen beschikbaar voor de specifieke Windows-edities of specifieke SKU's, zoals Home, Professional, Enterprise en Education.
+
+Zie [Configuration Service Provider (CSP) reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (CSP-referentie (Configuration Service Provider)) voor meer informatie over de versie- en SKU-vereisten voor de verschillende instellingen.
 
 ## <a name="next-steps"></a>Volgende stappen
 Extra hulp nodig? Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md).

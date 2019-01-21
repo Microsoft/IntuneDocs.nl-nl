@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,25 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 3fce49decb7574d32d1923a77bb2cca28384ce11
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642758"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297227"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Wijzigingenlogboek voor de API van Intune-datawarehouse
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Houd updates voor Intune-datawarehouse bij.
+
+## <a name="1812"></a>1812 
+_Vrijgegeven in december 2018_
+
+### <a name="enrollment-activities-collection-released-to-v10"></a>Enrollment Activities Collection v1.0 is vrijgegeven 
+
+Enrollment Activities Collection v1.0 is nu beschikbaar. U kunt deze verzameling gebruiken om inzicht te krijgen in het aantal mislukte inschrijvingen en de trends in uw omgeving. Zie [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories) en [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons) voor meer informatie.
 
 ## <a name="1808"></a>1808
 _Uitgebracht: augustus 2018_
@@ -36,9 +43,9 @@ _Uitgebracht: augustus 2018_
 
 U kunt nu versie v1.0 van een Intune-datawarehouse gebruiken door de queryparameter `api-version=v1.0` in te stellen. Updates voor verzamelingen in het datawarehouse zijn additief van aard en veroorzaken geen problemen voor bestaande scenario's.
 
-### <a name="enrollment-failure-collection-released-to-beta"></a>Verzameling van mislukte inschrijvingspogingen uitgebracht als bètaversie
+### <a name="enrollment-activities-collection-released-to-beta"></a>Enrollment Activities Collection is nu beschikbaar als bètaversie
 
-De nieuwe verzameling `Enrollment Failure` is vrijgegeven als beta. U kunt deze verzameling gebruiken om inzicht te krijgen in hoe uw inschrijving verloopt, door de meest voorkomende fouten weer te geven. 
+De nieuwe verzameling `Enrollment Activities` is vrijgegeven als beta. U kunt deze verzameling gebruiken om inzicht te krijgen in hoe uw inschrijving verloopt, door de meest voorkomende fouten weer te geven. 
 
 
 ## <a name="1805"></a>1805

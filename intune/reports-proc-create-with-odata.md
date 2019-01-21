@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: cc7e61d7b5dd0d7ff16836602b8d959683a971e7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067445"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210717"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Een rapport maken van de OData-feed met Power BI
 
@@ -89,7 +89,7 @@ De relatie wordt weergegeven met een kolom Van en een kolom Naar. In dit voorbee
 
 In een treemapgrafiek worden hiërarchische gegevens weergegeven als vakken binnen vakken. Elke vertakking van de hiërarchie is een vak dat kleinere vakken bevat, die subvertakkingen weergeven. U kunt Power BI Desktop gebruiken om een treemap van uw Intune-gegevens te maken.
 
-![Visualisaties > treemap](media/reports-create-03-treemap.png)
+![Power BI-treemapvisualizaties](media/reports-create-03-treemap.png)
 
 1. Selecteer een grafiektype. Selecteer **Treemap**.
 2. Ga naar de tabel **apparaten** in het gegevensmodel.

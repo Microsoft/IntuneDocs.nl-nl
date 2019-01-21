@@ -14,16 +14,16 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 080205e601b857d4765eb6b97eeeeeb8f4e6fc1b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0da6861b6c49fc37691b8c6e464a506670643fa3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187154"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203328"
 ---
 # <a name="use-scope-tags-to-filter-policies"></a>Bereiktags gebruiken om beleidsregels te filteren
 
-Met bereiktags kunt u beleidsregels filteren met door uzelf gemaakte, aangepaste tags.
+Met bereiktags kunt u beleidsregels filteren met door uzelf gemaakte, aangepaste tags. U kunt bereiktags toepassen op rollen en apps.
 
 Zo kunt u een bereiktag maken met de naam 'Technische afdeling' en deze toewijzen aan configuratieprofielen met betrekking tot de technische afdeling. Wijs dezelfde tag toe aan de rol 'Technische beheerders'. Deze zien alleen de beleidsregels met de tag 'Technische afdeling'.
 
@@ -38,6 +38,11 @@ Kies **Apparaatconfiguratie** > **Profielen** > Een profiel kiezen > **Eigenscha
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Een bereiktag toewijzen aan een rol
 
 Kies **Rollen** > **Alle rollen** > **Beleids- en profielbeheerder** > **Toewijzingen**  >  **Bereik (Tags)**.
+
+## <a name="to-assign-a-scope-tag-to-an-app"></a>Een bereiktag toewijzen aan een app
+
+Kies **Client-apps** > **Apps** > kies een app > **Eigenschappen** > **Bereik (tags)** > **Toevoegen** > kies de tags > **Selecteren** > **OK** > **Opslaan**.
+
 
 ## <a name="next-steps"></a>Volgende stappen
 

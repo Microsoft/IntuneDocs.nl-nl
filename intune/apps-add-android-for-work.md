@@ -1,12 +1,12 @@
 ---
-title: Apps toewijzen aan apparaten met een Android-werkprofiel
+title: Beheerde Google Play-apps toewijzen aan Android-bedrijfsapparaten
 titlesuffix: Microsoft Intune
-description: Ontdek hoe u apps synchroniseert en toewijst aan apparaten met een Android-werkprofiel vanuit de beheerde Google Play Store.
+description: Ontdek hoe u apps synchroniseert en toewijst aan Android-bedrijfsapparaten vanuit de beheerde Google Play Store.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305927"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239571"
 ---
-# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Apps toewijzen aan apparaten met een Android-werkprofiel met Intune
+# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Beheerde Google Play-apps toewijzen aan Android-bedrijfsapparaten met Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android Enterprise is een programma voor apparaten met Android-werkprofiel en kioskapparaten. Bij apparaten met een Android-werkprofiel vormt Android Enterprise een reeks functies en services waarmee persoonlijke apps en gegevens worden gescheiden van zakelijke apps en gegevens. Android Enterprise biedt aanvullende beheeropties en privacy wanneer mensen hun Android-apparaten voor hun werk gebruiken. Intune helpt u om apps en instellingen te implementeren op apparaten met een Android-werkprofiel om ervoor te zorgen dat werk- en privégegevens gescheiden zijn. Alle apps die u installeert op apparaten met een Android-werkprofiel zijn afkomstig uit de beheerde Google Play Store. Hoe u apps toewijst aan apparaten met een Android-werkprofiel verschilt van hoe u deze apps toewijst aan standaard Android-apparaten. U meldt zich aan bij de store, bladert naar de gewenste apps en keurt deze goed. De app verschijnt vervolgens op het knooppunt **Gelicentieerde apps** in Azure Portal, waarna u de toewijzing van apps kunt beheren zoals u bij elke app zou doen.
+Android Enterprise is een programma voor apparaten met Android-werkprofiel, toegewezen apparaten/kioskapparaten en volledig beheerde apparaten. Bij apparaten met een Android-werkprofiel vormt Android Enterprise een reeks functies en services waarmee persoonlijke apps en gegevens worden gescheiden van zakelijke apps en gegevens. Android Enterprise biedt aanvullende beheeropties en privacy wanneer mensen hun Android-apparaten voor hun werk gebruiken. Intune helpt u om apps en instellingen te implementeren op apparaten met een Android-werkprofiel om ervoor te zorgen dat werk- en privégegevens gescheiden zijn. Alle apps die u installeert op apparaten met een Android-werkprofiel zijn afkomstig uit de beheerde Google Play Store. Hoe u apps toewijst aan apparaten met een Android-werkprofiel verschilt van hoe u deze apps toewijst aan standaard Android-apparaten. U meldt zich aan bij de store, bladert naar de gewenste apps en keurt deze goed. De app verschijnt vervolgens op het knooppunt **Gelicentieerde apps** in Azure Portal, waarna u de toewijzing van apps kunt beheren zoals u bij elke app zou doen.
 
 Als u uw eigen LOB-apps (line-of-business) hebt gemaakt, kunt u deze als volgt toewijzen:
 - Meld u aan voor een Google-ontwikkelaarsaccount, zodat u apps kunt publiceren naar een privégebied in de Google Play-store.

@@ -14,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a762f14fd93400d76c63d2108a41229bf2ffc34d
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817157"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122584"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Wat zijn gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken?
 
@@ -39,15 +39,14 @@ Intune en Azure Active Directory werken samen om ervoor te zorgen dat alleen beh
 Met Intune beschikt u over mogelijkheden voor apparaatnalevingsbeleid waarmee u de nalevingsstatus van het apparaat kunt evalueren. De nalevingsstatus wordt gerapporteerd aan Azure Active Directory om het voorwaardelijke toegangsbeleid af te dwingen dat in Azure Active Directory wordt gemaakt wanneer de gebruiker zich toegang tot uw bedrijfsresources probeert te verschaffen.
 
 De op apparaten gebaseerde beleidsregels voor voorwaardelijke toegang voor Exchange Online en andere Office 365-producten geconfigureerd via [Azure Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
-
--   Meer informatie over [voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
+-   Meer informatie over [het vereisen van beheerde apparaten met voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-managed-devices).
 
 -   Meer informatie over [Intune-apparaatnaleving](device-compliance.md).
 
--   Meer informatie over het [beveiligen van e-mail, Office 365 en andere services middels het gebruik van voorwaardelijke toegang voor Intune](app-based-conditional-access-intune.md).
+-   Meer informatie over [ondersteunde browsers met voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/technical-reference#supported-browsers).
 
 > [!NOTE]
-> Als u op Android-apparaten Op apparaten gebaseerde toegang voor Sharepoint Online inschakelt, moeten gebruikers de optie **Browsertoegang inschakelen** als volgt op het ingeschreven apparaat inschakelen:
+> Als u op Android-apparaten Op apparaten gebaseerde toegang voor Sharepoint Online of Op browsers gebaseerde toegang tot Exchange Online inschakelt, moeten gebruikers de optie **Browsertoegang inschakelen** als volgt op het ingeschreven apparaat inschakelen:
 > 1. Open de **app Bedrijfsportal**.
 > 2. Ga naar de pagina **Instellingen** via de drie puntjes (...) of via de menuknop van de hardware.
 > 3. Selecteer **Browsertoegang inschakelen**. 
@@ -146,7 +145,9 @@ Voorwaardelijke toegang voor pc's biedt mogelijkheden die vergelijkbaar zijn met
 
 #### <a name="bring-your-own-device-byod"></a>BYOD (Bring Your Own Device)
 
--   **Workplace join en Intune-beheer:** Hier kan de gebruiker de eigen persoonlijke apparaten toevoegen voor toegang tot bedrijfsresources en -services. U kunt Workplace Join gebruiken en apparaten bij Intune registreren om beleidsregels op apparaatniveau te ontvangen, wat een andere optie is om de criteria voor voorwaardelijke toegang te evalueren.
+-   **Workplace join en Intune-beheer:** Hier kan de gebruiker de eigen persoonlijke apparaten toevoegen voor toegang tot bedrijfsresources en -services. U kunt Workplace Join gebruiken en apparaten bij Intune MDM registreren om beleidsregels op apparaatniveau te ontvangen. Dit is een alternatieve optie om de criteria voor voorwaardelijke toegang te evalueren.
+
+Meer informatie over [apparaatbeheer in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview).
 
 ## <a name="app-based-conditional-access"></a>Voorwaardelijke toegang op basis van apps
 

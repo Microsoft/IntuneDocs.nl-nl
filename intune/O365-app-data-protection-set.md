@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: 807bc306848a731e63f7f854a9d4b451264e21a8
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067462"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210802"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Hoe uw gebruikers basisbeveiliging ervaren in beheerde Office 365-apps in Microsoft Intune
 
@@ -89,33 +89,32 @@ In dit artikel wordt OneDrive voor Bedrijven gebruikt als voorbeeld om de gebrui
 
 ## <a name="what-policies-does-this-wizard-set"></a>Welke beleidsregels worden met deze wizard ingesteld?
 
-|     |       | |
-|----|--------|-|
-|**Naam**|Office 365-apps beheren| |
-| **Beschrijving**|Gemaakt door de wizard Office 365-apps beheren| |
-| |  | |
-| **Naam van instelling** |**Waarde voor iOS-beleid** | **Waarde voor Android-beleid** |
-|Back-ups van de iTunes en iCloud voorkomen| Nee | N.v.t. |
-|Back-ups van Android voorkomen |N.v.t. | Nee|
-|App mag gegevens overdragen naar ander apps | Alle apps | Alle apps|
-|App mag gegevens ontvangen van andere apps| Alle apps | Alle apps|
-|'Opslaan als' voorkomen | Nee | Nee|
-|Knippen, kopiëren en plakken met andere apps beperken | Elke app | Elke app |
-|Webinhoud beperken en weergeven in een bedrijfsbeheerde browser | Nee| Nee|
-|App-gegevens versleutelen | Wanneer apparaat is vergrendeld | Ja|
-|Synchroniseren van contactpersonen uitschakelen | Nee| Nee|
-|Afdrukken uitschakelen | Nee | Nee|
-|Pincode is vereist voor toegang | Nee | Ja|
-|Aantal pogingen voordat pincode opnieuw wordt ingesteld | N.v.t. |5|
-|Eenvoudige pincode toestaan | N.v.t. |Ja|
-|Lengte pincode | N.v.t. | 4|
-|Vingerafdruk in plaats van pincode toestaan | N.v.t. | Ja |
-|Bedrijfsreferenties vereisen voor toegang | Nee | Nee|
-|De uitvoering blokkeren van beheerde apps die op gekraakte of geroote apparaten worden uitgevoerd | Nee | Nee|
-|Toegangsvereisten opnieuw controleren na (minuten) - Time-out | 30 | 30|
-|Toegangsvereisten opnieuw controleren na (minuten) - Offlinerespijtperiode | 720 |720|
-|Offline-interval (dagen) voor gegevens van app worden gewist | 90 | 90|
-|Schermafbeelding blokkeren (alleen Android-apparaten) | N.v.t. | Nee |
+**Naam**: Office 365-apps beheren<br>
+**Beschrijving**: Gemaakt door de wizard Office 365-apps beheren
+
+| Naam van de instelling | Waarde voor iOS-beleid | Waarde voor Android-beleid |
+|------------------------------------------------------------------------|-----------------------|----------------------|
+| Back-ups van iTunes en iCloud voorkomen | Nee | N.v.t. |
+| Back-ups van Android voorkomen | N.v.t. | Nee |
+| App mag gegevens overdragen naar ander apps | Alle apps | Alle apps |
+| App mag gegevens ontvangen van andere apps | Alle apps | Alle apps |
+| 'Opslaan als' voorkomen | Nee | Nee |
+| Knippen, kopiëren en plakken met andere apps beperken | Elke app | Elke app |
+| Webinhoud beperken en weergeven in een bedrijfsbeheerde browser | Nee | Nee |
+| App-gegevens versleutelen | Wanneer apparaat is vergrendeld | Ja |
+| Synchroniseren van contactpersonen uitschakelen | Nee | Nee |
+| Afdrukken uitschakelen | Nee | Nee |
+| Pincode is vereist voor toegang | Nee | Ja |
+| Aantal pogingen voordat pincode opnieuw wordt ingesteld | N.v.t. | 5 |
+| Eenvoudige pincode toestaan | N.v.t. | Ja |
+| Lengte pincode | N.v.t. | 4 |
+| Vingerafdruk in plaats van pincode toestaan | N.v.t. | Ja |
+| Bedrijfsreferenties vereisen voor toegang | Nee | Nee |
+| De uitvoering van beheerde apps op opengebroken of geroote apparaten blokkeren | Nee | Nee |
+| Toegangsvereisten opnieuw controleren na (minuten) - Time-out | 30 | 30 |
+| Toegangsvereisten opnieuw controleren na (minuten) - Offlinerespijtperiode | 720 | 720 |
+| Offline-interval (dagen) voor gegevens van app worden gewist | 90 | 90 |
+| Schermafbeelding blokkeren (alleen Android-apparaten) | N.v.t. | Nee |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Waarom wordt alleen een app-pincodebeleid voor Android-apparaten geconfigureerd?
 Versleuteling werkt anders voor iOS en Android.

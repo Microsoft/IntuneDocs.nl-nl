@@ -3,10 +3,10 @@ title: Beleidsuitzonderingen voor gegevensoverdracht voor apps
 titleSuffix: Microsoft Intune
 description: Maak uitzonderingen voor het gegevensoverdrachtbeleid van Intune MAM (Mobile Application Management).
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,14 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6a2507dc7b920d446b6f7fe78aa7b90f6c31322f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 94798e7745b5802a551c4dda6908ff9f5f803d8f
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178400"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297334"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Uitzonderingen maken voor het gegevensoverdrachtbeleid van Intune MAM (Mobile Application Management)
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Als beheerder kunt u uitzonderingen maken voor het gegevensoverdrachtbeleid van Intune MAM (Mobile Application Management). Met een uitzondering kunt u aangeven welke onbeheerde apps gegevens van en naar beheerde apps mogen overdragen. De onbeheerde apps die u op de uitzonderingenlijst plaatst, moeten door de IT-afdeling worden vertrouwd. 
 
@@ -44,7 +42,7 @@ Bij beleid voor iOS kunt u uitzonderingen voor gegevensoverdracht configureren o
 > Microsoft heeft geen methode om handmatig te zoeken naar het URL-protocol voor het maken van app-uitzonderingen voor toepassingen van derden. 
 
 ## <a name="android-data-transfer-exceptions"></a>Android-uitzonderingen voor gegevensoverdracht
-Bij beleid voor Android kunt u uitzonderingen voor gegevensoverdracht configureren op basis van app-pakketnamen. Kijk op de **Google Play** Store-pagina van de app die u als uitzondering wilt toevoegen om de app-pakketnaam te achterhalen. Zie [Beveiligingsbeleidsinstellingen voor Android-apps - Uitzonderingen voor gegevensoverdracht](app-protection-policy-settings-android.md#data-transfer-exemptions) voor aanvullende informatie over uitzonderingen voor gegevensoverdracht in Android.
+Bij beleid voor Android kunt u uitzonderingen voor gegevensoverdracht configureren op basis van app-pakketnamen. Kijk op de **Google Play** Store-pagina van de app die u als uitzondering wilt toevoegen om de app-pakketnaam te achterhalen. Zie [Beveiligingsbeleidsinstellingen voor Android-apps - Uitzonderingen voor gegevensoverdracht](app-protection-policy-settings-android.md#data-transfer-exemptions) voor meer informatie over uitzonderingen voor gegevensoverdracht in Android.
 
 
 >[!TIP]
@@ -53,13 +51,13 @@ Bij beleid voor Android kunt u uitzonderingen voor gegevensoverdracht configurer
 ### <a name="example"></a>Voorbeeld
 Als u het **Webex**-pakket als uitzondering toevoegt aan het MAM-gegevensoverdrachtbeleid, mogen Webex-links in een beheerd Outlook-e-mailbericht rechtstreeks worden geopend in de Webex-toepassing. De gegevensoverdracht wordt nog steeds beperkt in andere onbeheerde apps.
 
-- iOS **Webex**-voorbeeld: als u de **Webex**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps, moet u een uitzondering voor gegevensoverdracht toevoegen voor de volgende tekenreeks: <code>wbx</code>
+- iOS-**Webex**-voorbeeld:   Als u de **Webex**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps, moet u een uitzondering voor gegevensoverdracht toevoegen voor de volgende tekenreeks: <code>wbx</code>
     
- - iOS **Maps**-voorbeeld: als u de native **Maps**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps, moet u een uitzondering voor gegevensoverdracht toevoegen voor de volgende tekenreeks: <code>maps</code>
+ - iOS-**Maps**-voorbeeld:  Als u de systeemeigen **Maps**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps, moet u een uitzondering voor gegevensoverdracht toevoegen voor de volgende tekenreeks: <code>maps</code>
 
-- Android **Webex**-voorbeeld: als u de **Webex**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps, moet u een uitzondering voor gegevensoverdracht toevoegen voor de volgende tekenreeks: <code>com.cisco.webex.meetings</code>
+- Android-**Webex**-voorbeeld:   Als u de **Webex**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps, moet u een uitzondering voor gegevensoverdracht toevoegen voor de volgende tekenreeks: <code>com.cisco.webex.meetings</code>
     
-- Android **SMS**-voorbeeld: als u de native **SMS**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps via verschillende berichten-apps en Android-apparaten, moet u gegevensoverdrachtuitzonderingen toevoegen voor de volgende tekenreeksen: 
+- Android-**SMS**-voorbeeld:   Als u de systeemeigen **SMS**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps via verschillende berichten-apps en Android-apparaten, moet u uitzonderingen voor gegevensoverdracht toevoegen voor de volgende tekenreeksen: 
     <code>com.google.android.apps.messaging</code>
     
     <code>com.android.mms</code>

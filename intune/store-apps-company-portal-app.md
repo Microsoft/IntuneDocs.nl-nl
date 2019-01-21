@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ec170727b8846caae3e96cc19be8d1e274c17427
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642588"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210734"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>De Windows 10-bedrijfsportal-app handmatig toevoegen met Microsoft Intune
 
@@ -47,7 +47,7 @@ Uw gebruikers kunnen de bedrijfsportal-app zelf installeren vanuit Microsoft Sto
 5. Selecteer voor **Platform** de optie **Windows 10 alle apparaten**. Selecteer vervolgens de juiste **Minimumversie**, **Architectuur** en de waarden voor **het downloaden van de app-metagegevens**. 
 6. Selecteer **Downloaden** om het bestand op te slaan op uw lokale computer.
 
-    ![Windows 10 alle apparaten en architectuur X86-pakketdetails die voor downloaden zijn geselecteerd](./media/Win10CP-all-devices.png)
+    ![Windows 10-apparaten waarbij gebruik wordt gemaakt van X86-architectuur worden geselecteerd](./media/Win10CP-all-devices.png)
 
 7. Download alle pakketten onder ‘Vereiste frameworks’ door **Downloaden** te selecteren.  
     Deze actie moet worden uitgevoerd voor x86-, x64- en ARM-architecturen, in totaal 12 pakketten.

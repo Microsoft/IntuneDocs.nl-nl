@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150663"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203142"
 ---
-# <a name="use-managed-devices-to-get-work-done"></a>Werk gedaan krijgen met beheerde apparaten
-Microsoft Intune is software waarmee organisaties apparaten (zoals smartphones, tablets en pc's), apps en andere bedrijfsresources (bijvoorbeeld e-mail) kunnen beheren. Hierdoor kunnen werknemers bijna overal en vanaf vrijwel elk apparaat toegang tot hun werkgegevens krijgen terwijl de bedrijfsgegevens beveiligd blijven.
+# <a name="use-managed-devices-to-access-work-or-school-resources"></a>Beheerde apparaten gebruiken om toegang te krijgen tot werk- of schoolresources
+Microsoft Intune is een apparaatbeheersysteem waarmee organisaties de toegang tot apparaten, apps en e-mail beheren. Met apparaatbeheer hebt u, evenals andere werknemers en studenten vrijwel overal en op vrijwel elk apparaat toegang tot uw werkgegevens. Zelfs wanneer u extern werkt, blijft de informatie van u en uw organisatie beveiligd.
 
-Door een apparaat te registreren voor beheer met Intune, kan uw IT-afdeling deze werk- of schoolresources beheren en het apparaat veilig houden, en beschikt u, hun werknemer, over de vrijheid om voor uw werk het apparaat van uw voorkeur te gebruiken. Om dit te realiseren moet het apparaat eerst via de bedrijfsportal voor beheer worden geregistreerd.
+Microsoft Intune is de software waarmee uw bedrijf de beveiligings- en apparaatvereisten configureert. Wanneer u gereed bent om uw apparaat te laten beheren, gaat u de Intune-bedrijfsportal-app gebruiken. Met deze app kunt u met het apparaat van uw voorkeur toegang krijgen tot werk-of schoolresources. 
 
-## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Welke gegevens kan mijn bedrijf zien wanneer ik mijn apparaat inschrijf in Intune?
-De ondersteuningsafdeling van uw bedrijf kan informatie zien die relevant is voor het werk, maar niet voor uw persoonlijke gegevens. Dit is vooral belangrijk te weten als u een persoonlijk apparaat voor gebruik op het werk wilt inschrijven. Wat ze [wel en niet kunnen zien wordt onderverdeeld in het volgende artikel in de hulp voor gebruikers](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+## <a name="what-information-can-my-company-see-when-i-get-my-device-managed"></a>Welke gegevens zijn zichtbaar voor mijn bedrijf wanneer ik mijn apparaat onder beheer laat plaatsen?
+Nadat u uw instellingen in de bedrijfsportal hebt geconfigureerd, is voor de ondersteuning van uw bedrijf alleen informatie zichtbaar die relevant is voor het werk. Persoonlijke gegevens zijn niet zichtbaar. Dit is vooral belangrijk te weten als u een persoonlijk apparaat voor gebruik op het werk wilt inschrijven. Ontdek wat ze precies [wel en niet kunnen zien in het volgende artikel](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
-## <a name="how-do-i-get-the-company-portal"></a>Hoe kan ik de Bedrijfsportal downloaden?
-U kunt de bedrijfsportal op twee verschillende manieren verkrijgen:
+## <a name="how-do-i-get-company-portal"></a>Hoe kan ik Bedrijfsportal downloaden?
+U verkrijgt Bedrijfsportal als volgt:
 
 - Door de bedrijfsportal-app op uw apparaat te installeren. Meestal downloadt u de bedrijfsportal-app via de app store van uw apparaat, maar het ondersteuningsteam van uw bedrijf kan de bedrijfsportal-app ook voor u installeren.
-- Hiervoor gaat u naar de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) die het ondersteuningsteam van uw bedrijf heeft ingesteld.
+- Door naar de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) te gaan die door het ondersteuningsteam van uw bedrijf is ingesteld.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Wat is het verschil tussen de app en de website?
 Er zijn enkele kleine verschillen tussen de bedrijfsportal-app en de bedrijfsportalwebsite, maar u kunt de meeste taken via beide uitvoeren. Taken die u kunt uitvoeren:

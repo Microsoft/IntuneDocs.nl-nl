@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: afddf57f93ef2308ce8e8fd8aab8d74c3419a3ea
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642843"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203413"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
 
@@ -192,7 +192,15 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
     | <strong>In- en uitzoomen</strong> | Geef de gebruiker de mogelijkheid om in te zoomen op het scherm tijdens het instellen van het apparaat. |
     | <strong>Siri</strong> | Geef de gebruiker de mogelijkheid Siri in te stellen. |
     | <strong>Diagnostische gegevens</strong> | Geef het scherm **Diagnose en gebruik** weer voor de gebruiker. Met dit scherm heeft de gebruiker de mogelijkheid diagnostische gegevens naar Apple te verzenden. |
-
+    | <strong>Weergavetoon</strong> | Geef de gebruiker de mogelijkheid om Weergavetoon in te schakelen. |
+    | <strong>Privacy</strong> | Geef het scherm Privacy weer voor de gebruiker. |
+    | <strong>Android-migratie</strong> | Geef de gebruiker de mogelijkheid om gegevens van een Android-apparaat te migreren. |
+    | <strong>iMessage en FaceTime</strong> | Geef de gebruiker de mogelijkheid iMessage en FaceTime in te stellen. |
+    | <strong>Onboarding</strong> | Informatieve onboarding-schermen weergeven ter educatie van de gebruiker, zoals Contactkaart, Multitasking en Beheercentrum. |
+    | <strong>Watch-migratie</strong> | Geef de gebruiker de mogelijkheid om gegevens van een horloge te migreren. |
+    | <strong>Schermtijd</strong> | Hiermee wordt het scherm Schermtijd weergeven. |
+    | <strong>Software-update</strong> | Hiermee wordt het scherm voor verplichte software-updates weergegeven. |
+    | <strong>SIM-installatie</strong> | Geef de gebruiker de mogelijkheid een mobiel abonnement toe te voegen. |
 
 14. Kies **OK**.
 

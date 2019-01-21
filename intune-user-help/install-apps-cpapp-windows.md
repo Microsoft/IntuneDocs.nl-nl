@@ -1,11 +1,11 @@
 ---
 title: Apps installeren vanuit de Intune-bedrijfsportal-app voor Windows
-description: Instructies voor het installeren en delen van apps uit de bedrijfsportal-app voor Windows
+description: Apps uit de app Bedrijfsportal voor Windows installeren en delen
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e2bf5ffd5c913b4e2c51c9efd0aa40ba3d3f0fa7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: 5c57db351aae613d0213e4ef439084ad9577a3fc
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863090"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203226"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Apps op uw apparaat installeren en delen
 Installeer apps op uw apparaat vanuit de bedrijfsportal-app voor Windows.
@@ -34,11 +34,11 @@ Installeer apps op uw apparaat vanuit de bedrijfsportal-app voor Windows.
     ![De startpagina van de bedrijfsportal-app voor Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)    
 2. Apps zoeken en installeren vanuit een van de volgende secties van de bedrijfsportal-app:  
 
-    * **Home**: selecteer een app in een lijst met door uw organisatie aanbevolen apps.  
-    * **Alles weergeven**: klik in de sectie **Startpagina** > **Apps** op **Alles weergeven** om alle beschikbare apps weer te geven.  
-    * **Alle apps**: selecteer deze pagina in het navigatiedeelvenster om alle beschikbare apps te zien, inclusief apps die zijn geïnstalleerd en aanbevolen.  
-    * **Apps zoeken**: een statische zoekbalk bevindt zich in het navigatiedeelvenster van de app.  Als u de beschikbare apps wilt vinden, zoekt u op de app-naam of uitgever.  
-    * **Alle apps**: hiermee kunt u alle beschikbare apps weergeven, sorteren en filteren. Zoekresultaten worden automatisch op relevantie gesorteerd.  
+    * **Home**: Selecteer een app in een lijst met door uw organisatie aanbevolen apps.  
+    * **Alles weergeven**: Klik in de sectie **Startpagina** > **Apps** op **Alles weergeven** om alle beschikbare apps weer te geven.  
+    * **Alle apps**: Selecteer deze pagina in het navigatiedeelvenster om alle beschikbare apps te zien, inclusief apps die zijn geïnstalleerd en aanbevolen.  
+    * **Apps zoeken**: Een statische zoekbalk bevindt zich in het navigatiedeelvenster van de app.  Als u de beschikbare apps wilt vinden, zoekt u op de app-naam of uitgever.  
+    * **Alle apps**: Hiermee kunt u alle beschikbare apps weergeven, sorteren en filteren. Zoekresultaten worden automatisch op relevantie gesorteerd.  
 
 3. Selecteer een app.   
 4. Klik op de pagina met app-gegevens op **Installeren**. Nadat de installatie is voltooid, ziet u de status **Geïnstalleerd**.  
@@ -63,4 +63,16 @@ U kunt apps delen met en aanbevelen aan contactpersonen van uw werk of school. I
 
 Nadat u iets hebt gedeeld, krijgt de ontvanger een koppeling en een bericht om de details van de app weer te geven. Met de koppeling wordt de bedrijfsportalpagina **Appdetails** geopend. 
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
+## <a name="available-apps"></a>Available apps  
+
+Uw organisatie selecteert apps die geschikt en nuttig zijn voor u op het werk of op school. Deze apps zijn de enige u in Bedrijfsportal vindt.  
+
+Apps zijn ook aan u beschikbaar gesteld op basis van uw apparaattype. Als u bijvoorbeeld de app Bedrijfsportal voor Windows gebruikt, hebt u toegang tot Windows-apps, maar niet tot iOS-apps.  
+
+## <a name="request-an-app-for-work-or-school"></a>Een app aanvragen voor werk of school  
+Als er een app is die u nodig hebt, maar die niet wordt weergegeven in de bedrijfsportal, kunt u deze aanvragen. Zoek de contactgegevens voor uw **Helpdesk** op de pagina Help en ondersteuning van de app Bedrijfsportal. U vindt dezelfde contactgegevens op de [Bedrijfsportal-website](https://go.microsoft.com/fwlink/?linkid=2010980).    
+
+  ![De app Bedrijfsportal voor Windows 10, met de pagina Help en ondersteuning, met de gegevens van de Helpdesk gemarkeerd. ](./media/1812_UCP_Help_Support_helpdesk.png)  
+
+
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  

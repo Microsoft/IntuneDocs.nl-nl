@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 01/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: d290fadf92ee112a1f663c6894861b393b81f74d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190316"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297499"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune-datawarehouse-verzamelingen
 
@@ -312,6 +312,92 @@ De entiteit **deviceEnrollmentType** geeft aan hoe een apparaat is geregistreerd
 | 9                | WindowsCoManagement                | Co-beheer voor Windows 10, geactiveerd door AutoPilot of Groepsbeleid.                       |
 | 10               | WindowsAzureADJoinsUsingDeviceAuth | Azure AD-inschrijvingen in Windows 10 met behulp van apparaatverificatie.                                            |
 
+## <a name="enrollmentactivities"></a>enrollmentActivities 
+De entiteit **EnrollmentActivity** geeft de activiteit van een apparaatinschrijving aan.
+
+| Eigenschap                      | Beschrijving                                                               |
+|-------------------------------|---------------------------------------------------------------------------|
+| dateKey                       | De sleutel van de datum waarop deze inschrijvingsactiviteit is geregistreerd.               |
+| deviceEnrollmentTypeKey       | De sleutel van het type inschrijving.                                        |
+| deviceTypeKey                 | De sleutel van het type apparaat.                                                |
+| enrollmentEventStatusKey      | De sleutel van de status die aangeeft of het inschrijven is voltooid of mislukt.    |
+| enrollmentFailureCategoryKey  | De sleutel van de categorie van de mislukte inschrijving (als de inschrijving is mislukt).        |
+| enrollmentFailureReasonKey    | De sleutel van de reden voor het mislukken van de inschrijving (als de inschrijving is mislukt).          |
+| osVersion                     | De versie van het besturingssysteem van het apparaat.                               |
+| count                         | Het totale aantal inschrijvingsactiviteiten dat overeenkomt met de bovenstaande classificaties.  |
+
+## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
+De entiteit **EnrollmentEventStatus** geeft het resultaat van een apparaatinschrijving aan.
+
+| Eigenschap                   | Beschrijving                                                                       |
+|----------------------------|-----------------------------------------------------------------------------------|
+| enrollmentEventStatusKey   | Unieke id van de inschrijvingsstatus in het datawarehouse (surrogaatsleutel)  |
+| enrollmentEventStatusName  | De naam van de inschrijvingsstatus. Zie de onderstaande voorbeelden.                            |
+
+### <a name="example"></a>Voorbeeld
+
+| enrollmentEventStatusName  | Beschrijving                            |
+|----------------------------|----------------------------------------|
+| Geslaagd                    | Een geslaagde apparaatinschrijving         |
+| Mislukt                     | Een mislukte apparaatinschrijving             |
+| Niet beschikbaar              | De inschrijvingsstatus is onbekend.  |
+
+## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
+De entiteit **EnrollmentFailureCategory** geeft aan waarom een apparaatinschrijving is mislukt. 
+
+| Eigenschap                       | Beschrijving                                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+| enrollmentFailureCategoryKey   | Unieke id van de inschrijvingsfoutcategorie in het datawarehouse (surrogaatsleutel)  |
+| enrollmentFailureCategoryName  | De naam van de inschrijvingsfoutcategorie. Zie de onderstaande voorbeelden.                            |
+
+### <a name="example"></a>Voorbeeld
+
+| enrollmentFailureCategoryName   | Beschrijving                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Niet van toepassing                  | De categorie van de mislukte inschrijving is niet van toepassing.                                                            |
+| Niet beschikbaar                   | De categorie van de mislukte inschrijving is niet beschikbaar.                                                             |
+| Onbekend                         | Onbekende fout.                                                                                                |
+| Verificatie                  | Verificatie mislukt.                                                                                        |
+| Autorisatie                   | De aanroep is geverifieerd, maar niet geautoriseerd om in te schrijven.                                                         |
+| AccountValidation               | Kan het account niet valideren voor inschrijving. (Account geblokkeerd, inschrijving niet ingeschakeld)                      |
+| UserValidation                  | De gebruiker kan niet worden gevalideerd. (De gebruiker bestaat niet, ontbrekende licentie)                                           |
+| DeviceNotSupported              | Het apparaat wordt niet ondersteund voor het beheer van mobiele apparaten.                                                         |
+| InMaintenance                   | Het account bevindt zich in de onderhoudsmodus.                                                                                    |
+| BadRequest                      | De client heeft een aanvraag verzonden die niet wordt begrepen/ondersteund door de service.                                        |
+| FeatureNotSupported             | Een of meer functies die worden gebruikt door deze inschrijving, worden niet ondersteund voor dit account.                                        |
+| EnrollmentRestrictionsEnforced  | De inschrijving wordt geblokkeerd door de inschrijvingsbeperkingen die door de beheerder zijn geconfigureerd.                                          |
+| ClientDisconnected              | Er is een time-out voor de client opgetreden of de inschrijving is afgebroken door de eindgebruiker.                                                        |
+| UserAbandonment                 | De inschrijving is afgebroken door de eindgebruiker. (Onboarding is gestart door de eindgebruiker, maar kon niet tijdig worden voltooid)  |
+
+## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
+De entiteit **EnrollmentFailureReason** geeft een meer gedetailleerde redenen voor een apparaatinschrijvingsfout binnen een bepaalde foutcategorie.  
+
+| Eigenschap                     | Beschrijving                                                                               |
+|------------------------------|-------------------------------------------------------------------------------------------|
+| enrollmentFailureReasonKey   | Unieke id van de inschrijvingsfoutoorzaak in het datawarehouse (surrogaatsleutel)  |
+| enrollmentFailureReasonName  | De naam van de inschrijvingsfoutoorzaak. Zie de onderstaande voorbeelden.                            |
+
+### <a name="example"></a>Voorbeeld
+
+| enrollmentFailureReasonName      | Beschrijving                                                                                                                                                                                            |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Niet van toepassing                   | De reden van de mislukte inschrijving is niet van toepassing.                                                                                                                                                       |
+| Niet beschikbaar                    | De reden van de mislukte inschrijving is niet beschikbaar.                                                                                                                                                        |
+| Onbekend                          | Onbekende fout.                                                                                                                                                                                         |
+| UserNotLicensed                  | Kan de gebruiker niet vinden in Intune of de gebruiker heeft geen geldige licentie.                                                                                                                                     |
+| UserUnknown                      | De gebruiker is niet bekend in Intune.                                                                                                                                                                           |
+| BulkAlreadyEnrolledDevice        | Slechts één gebruiker kan een apparaat inschrijven. Dit apparaat is eerder ingeschreven door een andere gebruiker.                                                                                                                |
+| EnrollmentOnboardingIssue        | De Intune MDM-instantie (Mobile Device Management) is nog niet geconfigureerd.                                                                                                                                 |
+| AppleChallengeIssue              | De installatie van het iOS-beheerprofiel is vertraagd of mislukt.                                                                                                                                         |
+| AppleOnboardingIssue             | Een Apple MDM-pushcertificaat is vereist om in te schrijven bij Intune.                                                                                                                                       |
+| DeviceCap                        | De gebruiker probeert meer apparaten in te schrijven dan maximaal is toegestaan.                                                                                                                                        |
+| AuthenticationRequirementNotMet  | Deze aanvraag kan niet door de Intune-inschrijvingsservice worden geautoriseerd.                                                                                                                                            |
+| UnsupportedDeviceType            | Dit apparaat voldoet niet aan de minimumvereisten voor Intune-inschrijving.                                                                                                                                  |
+| EnrollmentCriteriaNotMet         | Kan dit apparaat niet inschrijven vanwege een geconfigureerde regel om de inschrijving te beperken.                                                                                                                          |
+| BulkDeviceNotPreregistered       | Kan de id voor internationale mobiele apparatuur (IMEI) of het serienummer van het apparaat niet vinden.  Zonder deze id worden apparaten herkend als apparaten in persoonlijk eigendom die momenteel zijn geblokkeerd.  |
+| FeatureNotSupported              | De gebruiker probeert een functie te gebruiken die nog niet is vrijgegeven voor alle klanten of die niet compatibel is met uw Intune-configuratie.                                                            |
+| UserAbandonment                  | De inschrijving is afgebroken door de eindgebruiker. (Onboarding is gestart door de eindgebruiker, maar kon niet tijdig worden voltooid)                                                                                           |
+| APNSCertificateExpired           | Apple-apparaten kunnen niet worden beheerd met een verlopen Apple MDM-pushcertificaat.                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
 De **IntuneManagementExtension** bevat een lijst met dagelijkse **IntuneManagementExtension**-statussen voor elk apparaat met Windows 10. De gegevens voor de afgelopen 60 dagen worden bewaard.
@@ -330,7 +416,7 @@ De **IntuneManagementExtensionHealthState** bevat een lijst van alle mogelijke s
 |      Eigenschap     |                   Beschrijving                  | Voorbeeld |
 |:-----------------:|:----------------------------------------------:|:-------:|
 | ExtensionStateKey | Unieke id van de status.           | 2       |
-| ExtensionState    | De status van een IntuneManagementExtension. | Goed |
+| ExtensionState    | De status van een IntuneManagementExtension. | In orde |
 
 ## <a name="intunemanagementextensionversions"></a>intuneManagementExtensionVersions
 De entiteit **IntuneManagementExtensionVersion** bevat een lijst van alle versies die worden gebruikt door **IntuneManagementExtension**.
@@ -419,7 +505,7 @@ Met de entiteit **ownerType** wordt aangegeven of een apparaat bedrijfseigendom 
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Unieke id van het type eigenaar.                                                                                                                                               |                            |
 | ownerTypeKey  | Unieke id van het type eigenaar in het datawarehouse - surrogaatsleutel.                                                                                                       |                            |
-| ownerTypeName | Hiermee wordt het type eigenaar van de apparaten voorgesteld: Company - apparaat is eigendom van de onderneming.  Personal - apparaat is persoonlijk eigendom (BYOD).   Unknown - er is geen informatie over dit apparaat. | Company Personal Unknown |
+| ownerTypeName | Vertegenwoordigt het eigenaartype van de apparaten:  Company - apparaat is bedrijfseigendom.  Personal - apparaat is persoonlijk eigendom (BYOD).   Unknown - er is geen informatie over dit apparaat. | Company Personal Unknown |
 
 ## <a name="policies"></a>policies
 De entiteit **Policy** bevat apparaatconfiguratieprofielen, app-configuratieprofielen en nalevingsbeleid. U kunt het beleid met MDM (Mobile Device Management) toewijzen aan een groep in uw onderneming.

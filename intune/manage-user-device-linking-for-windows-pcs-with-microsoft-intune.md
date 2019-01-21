@@ -16,12 +16,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 81f84c2e645a9a6a20ff901239117b562a26b0aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9d6c894e30b050ec6e824e1e77d0c476d4dc15bc
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186644"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149624"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Koppeling tussen gebruiker en apparaat voor Windows-pc's beheren
 
@@ -43,13 +43,13 @@ Een gebruiker aan een pc koppelen:
 
    - Als u de pc gekoppeld wilt laten aan de huidige gebruiker (als er een is), kiest u **Annuleren**.
 
-   - Als u de koppeling met de huidige gebruiker (als er een is) wilt verwijderen, kiest u<strong>Koppeling verwijderen **&gt; **OK</strong>.
+   - Als u de koppeling met de huidige gebruiker (als er een is) wilt verwijderen, kiest u <strong>Koppeling verwijderen**&gt;** OK</strong>.
 
    - Als u de pc aan een nieuwe gebruiker wilt koppelen, selecteert u een gebruiker in de lijst **Alle gebruikers**. Controleer of de gebruikersgegevens juist zijn en kies vervolgens **OK**.
 
 > [!TIP]
 > Als u de mogelijkheden van eindgebruikers om zichzelf aan pc's te koppelen wilt beperken, schakelt u de optie **Koppelingen tussen gebruikers en computers beperken** in het beleid voor **Instellingen Microsoft Intune-agent** in.
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 
 [Algemene beheertaken voor Windows-pc's met de Intune-softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

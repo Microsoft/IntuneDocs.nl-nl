@@ -3,10 +3,10 @@ title: App-beveiligingsbeleid controleren
 titleSuffix: Microsoft Intune
 description: Controleer de status van naleving van Mobile App Management-beleid in Intune.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: f86ebd91125ec60d2ad0a28b47f5ac01fb62e8e2
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816837"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297295"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,20 +44,16 @@ Er zijn drie verschillende plaatsen waar u de nalevingsstatus kunt bewaken:
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies in het deelvenster **Intune** de optie **Client-apps**.
-4. Kies in de workload **Client-apps** de optie **Controleren** > **Status van de app-beveiliging** om de samenvattingsweergave te bekijken:
+4. Kies in de workload **Client-apps** de optie **Status van de app-beveiliging** van de sectie**Controleren** om de samenvattingsweergave te bekijken:
 
 ![De tegel Samenvatting in het deelvenster Intune Mobile Application Management](./media/app-protection-user-status-summary.png)
 
--   **Gebruikers**: het totale aantal gebruikers in uw bedrijf dat een app gebruikt die is gekoppeld aan een beleid binnen een werkcontext.
+-   **Toegewezen gebruikers**: Het totale aantal toegewezen gebruikers in uw bedrijf dat van een app gebruikmaakt die is gekoppeld aan een beleid in een werkcontext en wordt beveiligd en in licentie wordt gegeven, evenals de toegewezen gebruikers die onbeveiligd en niet-gelicentieerd zijn.
+-   **Gemarkeerde gebruikers**: het aantal gebruikers dat problemen ondervindt. Gekraakte apparaten worden onder **Gemarkeerde gebruikers** gerapporteerd.
+-   **Gebruikersstatus voor iOS** en **Gebruikersstatus voor Android**: Het aantal gebruikers dat een app heeft gebruikt en waaraan een beleid is toegewezen in een werkcontext voor het betreffende platform. Deze informatie toont het aantal gebruikers dat wordt beheerd door het beleid, evenals het aantal gebruikers dat gebruikmaakt van een app waarop geen beleid in een werkcontext is gericht. U kunt overwegen deze gebruikers toe te voegen aan het beleid.
 
--   **BEHEERD DOOR BELEID**: het aantal gebruikers dat een app heeft gebruikt en waaraan een beleid is toegewezen in een werkcontext.
-
--   **GEEN BELEID**: het aantal gebruikers dat een app gebruikt en waarop geen beleid van toepassing is in een werkcontext. U kunt overwegen deze gebruikers toe te voegen aan het beleid.
     > [!NOTE]
     > Als u meerdere beleidsregels per platform hebt, wordt een gebruiker beschouwd als te worden beheerd door beleid als er ten minste één beleidsregel aan hem of haar is toegewezen.
-
-- **Gemarkeerde gebruikers**: het aantal gebruikers dat problemen ondervindt. Momenteel worden onder **Gemarkeerde gebruikers** alleen gebruikers met gekraakte apparaten gerapporteerd.
-
 
 ## <a name="detailed-view"></a>Detailweergave
 U kunt de gedetailleerde weergave van de samenvatting openen door de tegel **Gebruikersstatus** (afhankelijk van het besturingssysteem van het apparaat) en de tegel **Gemarkeerde gebruikers** te kiezen.
@@ -79,7 +75,7 @@ U kunt zoeken naar een afzonderlijke gebruiker en de nalevingsstatus voor deze g
 
 Ga als volgt te werk om de rapportage voor een gebruiker te bekijken:
 
-1.  Voor het selecteren van een gebruiker selecteert u de tegel **Samenvatting**.
+1.  Voor het selecteren van een gebruiker selecteert u de tegel **Gebruikersstatus**.
 
     ![Schermopname van de tegel Samenvatting van Mobile Application Management van Intune](./media/MAM-reporting-6.png)
 
@@ -94,18 +90,24 @@ De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen d
 
 ## <a name="reporting-view"></a>Rapportageweergave
 
-U vindt er dezelfde rapporten als in de gedetailleerde weergave en aanvullende rapporten voor hulp bij de compatibiliteitsstatus van het MAM-beleid:
+U kunt dezelfde rapporten vinden in de blade **App-beveiligingsstatus**.
 
-![Schermopname van 2 rapporten die beschikbaar zijn in het deelvenster Instellingen](./media/MAM-reporting-7.png)
+> [!NOTE]
+> Intune biedt aanvullende velden voor apparaatrapporten, waaronder de registratie-id van de app, de Android-fabrikant, het model, de versie van de beveiligingspatch en het iOS-model. In Intune zijn deze velden beschikbaar door **Client-apps** > **App-beveiligingsstatus** te selecteren en vervolgens **App-beveiligingsrapport: iOS, Android** te kiezen. Bovendien helpen deze parameters u de lijst **Toestaan** te configureren voor de apparaatfabrikant (Android), evenals de lijst **Toestaan** voor het apparaatmodel (Android en iOS) en de versie-instellingen van de minimale Android-beveiligingspatch. 
 
--   **Gebruikersrapport app-beveiliging:** biedt dezelfde informatie als de informatie die u kunt vinden in het rapport **Gebruikersstatus** onder de sectie Gedetailleerde weergave hierboven.
+Aanvullende rapporten zijn beschikbaar om u te helpen bij de compatibiliteitsstatus van de MAM-beleid. Als u deze rapporten wilt weergeven, selecteert u **Client-apps** > **App-beveiligingsstatus** > **Rapporten**. 
 
--   **App-rapport app-beveiliging:** biedt twee verschillende statussen over app-beveiliging die beheerders kunnen selecteren voordat ze het rapport genereren. De statussen kunnen worden beveiligd of juist niet.
+De blade **Rapporten** biedt verschillende rapporten op basis van de gebruiker en de app, waaronder de volgende:
+
+
+-   **Gebruikersrapport**: Dit rapport biedt dezelfde informatie als de informatie die u kunt vinden in het rapport **Gebruikersstatus** onder de sectie Gedetailleerde weergave hierboven.
+
+-   **App-rapport**: Dit rapport biedt twee verschillende statussen over app-beveiliging die beheerders kunnen selecteren voordat ze het rapport genereren. De statussen kunnen worden beveiligd of juist niet.
 
     -   Gebruikersstatus voor beheerde MAM-activiteit (beveiligd): in dit rapport staat de activiteit van elke beheerde MAM-app, vermeld per gebruiker.
 
         -   Hierin staan alle apps waarin MAM-beleid wordt toegepast voor elke gebruiker én de status van elke app tijdens het inchecken ten opzichte van het MAM-beleid, of elke app waarop MAM-beleid is toegepast, maar die nooit is ingecheckt.
-<br></br>
+<br><br>
     -   Gebruikersstatus voor niet-beheerde MAM-activiteit (niet-beveiligd): in dit rapport staat de activiteit van apps met MAM-beleid die momenteel niet wordt beheerd, vermeld per gebruiker. Dit kan in de volgende gevallen plaatsvinden:
 
         -   De apps worden gebruikt door een gebruiker of een app waarop momenteel geen MAM-beleid wordt toegepast.

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: c3f1c28fb94823dd3370080c62c0d6f3d0da521e
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147499"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203260"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Beheerde apps op uw iOS-apparaat gebruiken
 
@@ -34,7 +34,7 @@ Wanneer u toegang krijgt tot bedrijfsgegevens in een beheerde app, wordt een ber
 
 ![beheerde-apps-bericht-ios](./media/managed-apps-message.png)
 
-### <a name="how-do-i-get-managed-apps"></a>Hoe kom ik in het bezit van beheerde apps?
+## <a name="how-do-i-get-managed-apps"></a>Hoe kom ik in het bezit van beheerde apps?  
 Beheerde apps zijn op verschillende manieren beschikbaar:
 
 -   Wanneer het apparaat is geregistreerd bij Microsoft Intune, installeert u de app via de bedrijfsportal-app of de bedrijfsportalwebsite. Het is ook mogelijk dat de app door het ondersteuningsteam van het bedrijf op het apparaat wordt geïnstalleerd. Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md) voor meer informatie over het registreren van apparaten.
@@ -43,7 +43,16 @@ Beheerde apps zijn op verschillende manieren beschikbaar:
 
 Mogelijk koopt het ondersteuningsteam van het bedrijf soms meerdere licenties voor een app die u installeert. Het is normaal dat u wordt gevraagd om de voorwaarden van het Apple Volume Purchase Program te accepteren en dit kunt u dan ook doen. Als u ze niet accepteert, kunt u de app niet installeren.
 
-### <a name="what-can-my-company-support-manage-in-an-app"></a>Wat kan het ondersteuningsteam van mijn bedrijf beheren in een app?
+## <a name="available-apps"></a>Available apps   
+ Uw organisatie selecteert apps die geschikt en nuttig zijn voor u op het werk of op school. U vindt alleen deze apps in de bedrijfsportal.   
+
+ Apps worden daarnaast aan u beschikbaar gesteld op basis van uw apparaattype. Als u bijvoorbeeld de bedrijfsportal-app voor iOS gebruikt, hebt u toegang tot iOS-apps, maar niet tot Android-apps.   
+
+## <a name="request-an-app-for-work-or-school"></a>Een app aanvragen voor werk of school   
+ Als er een app is die u nodig hebt, maar die niet wordt weergegeven in de bedrijfsportal, kunt u deze aanvragen. Zoek de contactgegevens op voor uw **Helpdesk** in het tabblad **Ondersteuning** van de bedrijfsportal-app. U vindt dezelfde contactgegevens op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).   
+ 
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>Wat kan het ondersteuningsteam van mijn bedrijf beheren in een app?  
 Hier volgen enkele voorbeelden van opties die het ondersteuningsteam van het bedrijf in een app kan beheren en die van invloed kunnen zijn op het gebruik van bedrijfsgegevens op uw apparaat:
 
 -   Toegang tot bepaalde websites

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: f587fdf7c1690dbb0a31388a9c70b780179e541e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642877"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210870"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Gegevens ophalen uit de Intune-datawarehouse-API met een REST-client
 
@@ -47,7 +47,7 @@ Maak een systeemeigen app in Azure. Deze systeemeigen app is de client-app. De c
     3.  Typ een URL voor de **Aanmeldings-URL**. De aanmeldings-URL is afhankelijk van het specifieke scenario. Typ echter `https://www.getpostman.com/oauth2/callback` als u Postman wilt gebruiken. U gebruikt tijdens het verifiëren via de Azure AD de aanroep voor clientverificatie.
 4.  Selecteer **Maken**.
 
-     ![Intune-datawarehouse-API](./media/reports-get_rest_data_client_overview.png)
+     ![Client-app Intune-datawarehouse](./media/reports-get_rest_data_client_overview.png)
 
 5. Noteer de **toepassings-id** van deze app. U gebruikt de id in de volgende sectie.
 
@@ -134,7 +134,7 @@ Om een nieuw toegangstoken voor Postman te verkrijgen, moet u de autorisatie-URL
 
 12. Selecteer **Token aanvragen**.
 
-    ![Informatie voor het token](./media/reports-postman_getnewtoken.png)
+    ![Informatie voor het toegangstoken](./media/reports-postman_getnewtoken.png)
 
 13. Typ uw referenties op de autorisatiepagina voor Active AD. De lijst met tokens in Postman bevat nu het token met de naam `Bearer`.
 14. Selecteer **Token gebruiken**. De lijst met headers bevat de nieuwe sleutelwaarde voor Autorisatie en de waarde `Bearer <your-authorization-token>`.
@@ -144,7 +144,7 @@ Om een nieuw toegangstoken voor Postman te verkrijgen, moet u de autorisatie-URL
 1.  Selecteer **Verzenden**.
 2.  De geretourneerde gegevens worden in de hoofdtekst van het antwoord van Postman weergegeven.
 
-    ![Postman 200OK](./media/reports-postman_200OK.png)
+    ![Status van de Postman-client is gelijk aan 200 OK](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>Een REST-client (C#) maken om gegevens uit het Intune-datawarehouse op te halen
 
@@ -161,7 +161,7 @@ Het volgende voorbeeld bevat een eenvoudige REST-client. De code gebruikt de kla
 6. Selecteer **Ik ga akkoord** om de licentie van het NuGet-pakket te accepteren.
 7. Open `Program.cs` in de Solution Explorer.
 
-    ![Project in Visual Studio](./media/reports-get_rest_data_in.png)
+    ![Progam.cs en Solution Explorer in Visual Studio](./media/reports-get_rest_data_in.png)
 
 8. Vervang de code in Program.cs door de volgende code:  
    ```csharp

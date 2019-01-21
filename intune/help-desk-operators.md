@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0c09a80f97056f7cb08d69d6a8deedc4e421a556
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 37483f0fa33db109510ee537772a7bdead79e4f3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190299"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203549"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>De portal voor probleemoplossing gebruiken om gebruikers in uw bedrijf te helpen
 
@@ -271,6 +271,15 @@ Wanneer u een foutenrij kiest, worden meer details weergegeven.
 | Inschrijvingsautorisatie mislukt | Er is geprobeerd een apparaat in te schrijven met een oude versie van de bedrijfsportal. |
 | Apparaat niet ondersteund | Het apparaat voldoet niet aan de minimumvereisten voor Intune-inschrijving. |
 | Registratiebeperkingen niet nageleefd | Deze inschrijving is geblokkeerd vanwege een door de beheerder geconfigureerde inschrijvingsbeperking. |
+| De apparaatversie is te laag | De beheerder heeft een inschrijvingsbeperking geconfigureerd waarvoor een hogere apparaatversie vereist is. |
+| De apparaatversie is te hoog | De beheerder heeft een inschrijvingsbeperking geconfigureerd waarvoor een lagere apparaatversie vereist is. |
+| Apparaat kan niet als persoonlijk worden ingeschreven | De beheerder heeft een inschrijvingsbeperking geconfigureerd voor het blokkeren van persoonlijke inschrijvingen en het mislukte apparaat is niet vooraf gedefinieerd als bedrijfseigendom. |
+| Apparaatplatform geblokkeerd | De beheerder heeft een inschrijvingsbeperking geconfigureerd die het platform van dit apparaat blokkeert. |
+| Bulktoken is verlopen | Het bulktoken in het inrichtingspakket is verlopen. |
+| Autopilot-apparaat of -gegevens niet gevonden | Het Autopilot-apparaat is niet gevonden voor inschrijving. |
+| Autopilot-profiel niet gevonden of niet toegewezen | Het apparaat beschikt niet over een actief Autopilot-profiel. |
+| Onverwachte Autopilot-inschrijvingsmethode | Er is geprobeerd het apparaat in te schrijven met behulp van een niet-toegestane methode. |
+| Autopilot-apparaat is verwijderd | Het in te schrijven apparaat is voor dit account uit Autopilot verwijderd. |
 | Apparaatlimiet bereikt | Deze inschrijving is geblokkeerd vanwege een door de beheerder geconfigureerde beperking voor de apparaatlimiet. |
 | Apple-onboarding | Alle iOS-apparaten zijn op dit moment geblokkeerd voor inschrijving vanwege een ontbrekend of verlopen Apple MDM-pushcertificaat in Intune. |
 | Apparaat niet vooraf geregistreerd | Het apparaat is niet vooraf als zakelijk geregistreerd en alle persoonlijke inschrijvingen zijn door een beheerder geblokkeerd. |

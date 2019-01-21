@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/04/2018
+ms.date: 01/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cc547926d95e3fa1bec54b4ea55f764b5701b3b7
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 8e607dc612f71cdf72322b9fa7ecf14abb5fd809
+ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816817"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270585"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Jamf Pro integreren met Intune in verband met nalevingsbeleid
 
@@ -44,43 +44,40 @@ U kunt Intune als volgt verbinden met Jamf Pro:
 2. Intune instellen op integratie met Jamf Pro
 3. Voorwaardelijke toegang in Jamf Pro configureren
 
-## <a name="create-a-new-application-in-azure-active-directory"></a>Een nieuwe toepassing maken in Azure Active Directory
+## <a name="create-an-application-in-azure-active-directory"></a>Een toepassing maken in Azure Active Directory
 
-1. Open **Azure Active Directory** > **App-registratie**.
-2. Klik op **+Nieuwe toepassing registreren**.
+1. Ga in [Azure Portal](https://portal.azure.com) naar **Azure Active Directory** > **App-registraties**.
+2. Selecteer **+Nieuwe toepassing registreren**.
 3. Voer een **weergavenaam** in, zoals **Voorwaardelijke toegang tot Jamf**.
 4. Selecteer **Web-app/API**.
 5. Geef de **aanmeldings-URL** op met behulp van de URL van uw Jamf Pro-exemplaar.
-6. Klik op **Toepassing maken**.
-7. Sla de zojuist gemaakte **Toepassings-id** op, open **Instellingen** en navigeer naar **API-toegang** > **Sleutels** om een nieuwe toepassingssleutel te maken. Voer een **beschrijving** in en de tijd waarna de toepassingssleutel **verloopt**, en sla de toepassingssleutel vervolgens op.
+6. Selecteer **Maken**. De toepassing is gemaakt en de portal bevat de details van de toepassing.
+7. Sla een kopie van de **toepassings-id** op voor de nieuwe toepassing. U moet deze later opgeven tijdens een andere procedure. Selecteer vervolgens **instellingen** en ga naar **API-toegang** > **Sleutels**.
+8. Geef in het deelvenster *Sleutels* een **beschrijving** op, geef aan hoelang moet worden gewacht voordat de sleutel **verloopt** en selecteer vervolgens **Opslaan** om de toepassingssleutel (waarde) te genereren Application Key (Value).
 
    > [!IMPORTANT]
    > De toepassingssleutel wordt tijdens dit proces maar één keer weergegeven. Bewaar de sleutel op een locatie waar u deze eenvoudig kunt terugvinden.
 
-8. Open **Instellingen**, navigeer naar **API-toegang** > **Vereiste machtigingen** en verwijder alle machtigingen.
-
-   > [!NOTE]
-   > Voeg een nieuwe vereiste machtiging toe. De toepassing kan alleen juist werken als die ene vereiste machtiging is ingesteld.
-
-9. Selecteer **Microsoft Intune API** en klik op **Selecteren**.
-10. Kies **Apparaatkenmerken verzenden naar Microsoft Intune** en klik op **Selecteren**.
-11. Klik op de knop **Machtigingen verlenen** nadat de vereiste machtigingen voor de toepassing zijn opgeslagen.
+8. Navigeer in het deelvenster *Instellingen* van de app naar **API-toegang** > **Vereiste machtigingen**. Selecteer de bestaande machtigingen en klik vervolgens op **Verwijderen** om alle machtigingen te verwijderen. De bestaande machtigingen moeten worden verwijderd omdat u een nieuwe machtiging toevoegt en de toepassing alleen werkt als deze ene vereiste machtiging is toegekend.  
+9. Als u een nieuwe machtiging wilt toewijzen, selecteert u **+Toevoegen** > **Een API selecteren** > **Microsoft Intune-API** en klikt u vervolgens op **Selecteren**.
+10. Selecteer in het deelvenster *Toegang inschakelen* de optie **Apparaatkenmerken naar Microsoft Intune verzenden** en klik achtereenvolgens op **Selecteren** en **Gereed**.
+11. Selecteer in het deelvenster *Vereiste machtigingen* achtereenvolgens **Machtigingen verlenen** en **Ja** om de vereiste machtigingen op de toepassing toe te passen.
 
     > [!NOTE]
     > Als de toepassingssleutel is verlopen, moet u een nieuwe toepassingssleutel maken in Microsoft Azure en vervolgens de gegevens voor voorwaardelijke toegang in Jamf Pro bijwerken. U kunt in Azure zowel de oude als de nieuwe sleutel activeren om serviceonderbrekingen te voorkomen.
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune instellen op integratie met Jamf Pro
 
-1. In Microsoft Azure Portal opent u **Microsoft Intune** > **Apparaatcompatibiliteit** > **Partnerapparaatbeheer**.
-2. Schakel de Nalevingsconnector voor Jamf in door de toepassings-id te plakken in het veld **Azure Active Directory-app-id**.
-3. Klik op **Opslaan**.
+1. Ga in [Azure Portal](https://portal.azure.com) naar **Microsoft Intune** > **Apparaatcompatibiliteit** > **Apparaatbeheer partner** .
+2. Schakel de nalevingsconnector voor Jamf in door de toepassings-id die u tijdens de vorige procedure hebt opgeslagen, in het veld **Azure Active Directory-app-id voor Jamf** te plakken.
+3. Selecteer **Opslaan**.
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Microsoft Intune-integratie in Jamf Pro configureren
 
 1. Navigeer in Jamf Pro naar **Global Management** > **Conditional Access**. Klik op de knop **Edit** op het tabblad **Microsoft Intune Integration**.
 2. Schakel het selectievakje voor **Enable Microsoft Intune Integration** in.
 3. Geef de vereiste gegevens op over uw Azure-tenant, met inbegrip van **Location**, **Domain name**, plus de **Application ID** en de **Application Key** die u in de vorige stappen hebt opgeslagen.
-4. Klik op **Opslaan**. Jamf Pro test uw instellingen en bevestigt of ze juist zijn.
+4. Selecteer **Opslaan**. Jamf Pro test uw instellingen en bevestigt of ze juist zijn.
 
 ## <a name="set-up-compliance-policies-and-register-devices"></a>Nalevingsbeleid instellen en apparaten registreren
 

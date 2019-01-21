@@ -1,11 +1,11 @@
 ---
-title: PKCS-certificaten gebruiken met Microsoft Intune - Azure | Microsoft Docs
+title: Certificaten met een persoonlijke en openbare sleutel gebruiken in Microsoft Intune - Azure | Micrososft Docs
 description: PKCS-certificaten (Public Key Cryptography Standards) toevoegen of maken met Microsoft Intune, inclusief de stappen om een basiscertificaat te exporteren, de certificaatsjabloon te configureren, de Microsoft Intune Certificate Connector (NDES) te downloaden en installeren, een apparaatconfiguratieprofiel te maken, een PKCS-certificaatprofiel te maken in Azure en uw certificeringsinstantie (CA).
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,30 +14,29 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 70d1594220b3315db2c7d7eeb01a915aaf2ec995
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: 6a617f56e688d8dd6e9bca8e964e075865f05be1
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186729"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203617"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
-> [!IMPORTANT]
-> Er worden enkele verbeteringen aangebracht aan de S/MIME-functie die in dit artikel wordt beschreven. Als gevolg hiervan is de S/MIME-functie tijdelijk uit Intune verwijderd. Wanneer deze functie wordt uitgebracht, wordt deze opmerking verwijderd.
+Met certificaten wordt de toegang tot uw bedrijfsbronnen, zoals een VPN of Wi-Fi-netwerk, geverifieerd en beveiligd. Veel organisaties maken gebruik van certificaten die gebruikmaken van een persoonlijk en openbaar sleutelpaar, ook wel bekend als PKCS-certificaten. Microsoft Intune bevat ingebouwde instellingen voor het gebruik van PKCS-certificaten voor toegang en verificatie van uw bedrijfsbronnen. Deze instellingen worden gepusht naar (of geïmplementeerd op) apparaten met behulp van apparaatconfiguratieprofielen in Intune.
 
-Met certificaten wordt de toegang tot uw bedrijfsbronnen, zoals een VPN of uw Wi-Fi-netwerk, geverifieerd en beveiligd. In dit artikel leest u hoe u een PKCS-certificaat exporteert en hoe u vervolgens het certificaat toevoegt aan een Intune-profiel.
+In dit artikel worden de vereisten beschreven voor het gebruik van PKCS-certificaten en leest u hoe u een PKCS-profiel exporteert en toevoegt aan een Intune-apparaatconfiguratieprofiel.
 
 ## <a name="requirements"></a>Vereisten
 
 Als u PKCS-certificaten wilt gebruiken met Intune, moet u de volgende infrastructuur hebben:
 
-- **Active Directory-domein**: alle servers die in dit gedeelte worden genoemd, moeten lid zijn van uw Active Directory-domein.
+- **Active Directory-domein**: Alle servers die in dit gedeelte worden genoemd, moeten lid zijn van uw Active Directory-domein.
 
   Zie [AD DS-ontwerp- en -planning](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning) voor meer informatie over het installeren en configureren van AD DS.
 
-- **Certificeringsinstantie** (CA): een geconfigureerde certificeringsinstantie (CA) voor ondernemingen
+- **Certificeringsinstantie** (CA): Een certificeringsinstantie (CA) voor ondernemingen
 
   Raadpleeg [Stapsgewijze handleiding bij Active Directory Certificate Services](https://technet.microsoft.com/library/cc772393) als u meer informatie wilt over het installeren en configureren van Active Directory Certificate Services (AD CS).
 
@@ -48,15 +47,15 @@ Als u PKCS-certificaten wilt gebruiken met Intune, moet u de volgende infrastruc
 
 - **Basiscertificaat**: een geëxporteerde kopie van uw basiscertificaat van uw CA voor ondernemingen
 
-- **Microsoft Intune-certificaatconnector**: u kunt Azure Portal gebruiken om het installatieprogramma voor de **Certificaatconnector** (**NDESConnectorSetup.exe**) te downloaden. 
+- **Microsoft Intune Certificate Connector**: gebruik Azure Portal om het installatieprogramma voor de **certificaatconnector** (**NDESConnectorSetup.exe**) te downloaden. 
 
   De connector verwerkt PKCS-certificaataanvragen die worden gebruikt voor verificatie of S/MIME-e-mailondertekening.
 
-  De NDES-certificaatconnector ondersteunt ook de Federal Information Processing Standard-modus (FIPS). FIPS is niet vereist, maar u kunt certificaten uitgeven en intrekken wanneer deze modus is ingeschakeld.
+  De NDES-certificaatconnector ondersteunt ook de Federal Information Processing Standard-modus (FIPS). FIPS is niet vereist, maar wanneer deze modus is ingeschakeld, kunt u certificaten uitgeven en intrekken.
 
-- **PFX-certificaatconnector voor Microsoft Intune**: Als u S/MIME-e-mailversleuteling wilt gebruiken, gebruikt u Azure Portal om het installatieprogramma voor de **PFX-certificaatconnector voor Microsoft Intune** ( **PfxCertificateConnectorBootstrapper.exe**) te downloaden. De connector verwerkt aanvragen voor PFX-bestanden die zijn geïmporteerd in Intune voor S/MIME-e-mailversleuteling voor een specifieke gebruiker.
+- **PFX-certificaatconnector voor Microsoft Intune**: als u S/MIME-e-mailversleuteling wilt gebruiken, gebruikt u Azure Portal om het installatieprogramma voor de **PFX-certificaatconnector voor Microsoft Intune** ( **PfxCertificateConnectorBootstrapper.exe**) te downloaden. De connector verwerkt aanvragen voor PFX-bestanden die zijn geïmporteerd in Intune voor S/MIME-e-mailversleuteling voor een specifieke gebruiker.
 
-- **Windows Server** host de:
+- **Windows Server**: deze host het volgende:
 
   - Microsoft Intune-certificaatconnector (NDESConnectorSetup.exe) voor scenario's voor verificatie en S/MIME-e-mailondertekening
   - PFX-certificaatconnector voor Microsoft Intune (PfxCertificateConnectorBootstrapper.exe) voor scenario's voor S/MIME-e-mailversleuteling.
@@ -76,7 +75,7 @@ Voor verificatie met VPN, Wi-Fi of andere bronnen hebt u op elk apparaat een bas
 
    Zie [Certutil-taken voor het beheren van certificaten](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign) voor meer informatie.
 
-## <a name="configure-certificate-templates-on-the-certification-authority"></a>Certificaatsjablonen configureren bij de certificeringsinstantie
+## <a name="configure-certificate-templates-on-the-ca"></a>Certificaatsjablonen configureren op de CA
 
 1. Meld u aan bij uw CA voor ondernemingen met een account met beheerdersbevoegdheden.
 2. Open de console **Certificeringsinstantie**, klik met de rechtermuisknop op **Certificaatsjablonen** en selecteer **Beheren**.
@@ -87,8 +86,8 @@ Voor verificatie met VPN, Wi-Fi of andere bronnen hebt u op elk apparaat een bas
 
 4. Op het tabblad **Compatibiliteit**:
 
-  - Stel **Certificeringsinstantie (CA)** in op **Windows Server 2008 R2**
-  - Stel **Ontvanger van certificaat** in op **Windows 7 / Server 2008 R2**
+    - Stel **Certificeringsinstantie (CA)** in op **Windows Server 2008 R2**
+    - Stel **Ontvanger van certificaat** in op **Windows 7 / Server 2008 R2**
 
 5. Stel op het tabblad **Algemeen** **Weergavenaam van sjabloon** in op iets dat voor u herkenbaar is.
 
@@ -106,10 +105,11 @@ Voor verificatie met VPN, Wi-Fi of andere bronnen hebt u op elk apparaat een bas
 10. Voeg in **Beveiliging** het computeraccount toe voor de server waarop u de Microsoft Intune Certificate Connector installeert. Geef dit account machtigingen voor **Lezen** en **Registreren**.
 11. Selecteer **Toepassen** > **OK** om de certificaatsjabloon op te slaan. Sluit de **console Certificaatsjablonen**.
 12. Klik in de **certificeringsinstantieconsole** met de rechtermuisknop op **Certificaatsjablonen** > , klik op **Nieuw** >  en klik vervolgens op **Te verlenen certificaatsjablonen**. Kies de sjabloon die u in de eerdere stappen hebt gemaakt. Selecteer **OK**.
-13. Voer de volgende stappen uit om ervoor te zorgen dat de server certificaten beheert voor bij Intune geregistreerde apparaten en gebruikers:
+13. Voer de volgende stappen uit om ervoor te zorgen dat de server certificaten beheert voor geregistreerde apparaten en gebruikers:
 
     1. Klik met de rechtermuisknop op de CA en kies **Eigenschappen**.
-    2. Voeg op het tabblad Beveiliging het computeraccount toe voor de server waarop u de connectors (**Microsoft Intune-certificaatconnector** of **PFX-certificaatconnector voor Microsoft Intune**) uitvoert. Verleen de machtigingen **Certificaten verlenen en beheren** en **Certificaten aanvragen** aan het computeraccount.
+    2. Voeg op het tabblad Beveiliging het computeraccount toe voor de server waarop u de connectors (**Microsoft Intune-certificaatconnector** of **PFX-certificaatconnector voor Microsoft Intune**) uitvoert. 
+    3. Verleen de machtigingen **Certificaten verlenen en beheren** en **Certificaten aanvragen** aan het computeraccount.
 
 14. Meld u af bij de CA voor ondernemingen.
 
@@ -120,7 +120,7 @@ Voor verificatie met VPN, Wi-Fi of andere bronnen hebt u op elk apparaat een bas
 > [!IMPORTANT] 
 > De Microsoft Intune-certificaatconnector **moet** worden geïnstalleerd op een afzonderlijke Windows-server. Deze kan niet worden geïnstalleerd op de verlenende certificeringsinstantie (CA).
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Intune**.
 2. Selecteer **Apparaatconfiguratie** > **Certificeringsinstantie** > **Toevoegen**.
 3. Download het connectorbestand en sla het op. Sla het bestand op op een locatie die toegankelijk is vanaf de server waar u de connector gaat installeren.
 
@@ -190,21 +190,21 @@ Voor verificatie met VPN, Wi-Fi of andere bronnen hebt u op elk apparaat een bas
 
 3. Ga naar **Instellingen** en voer de volgende eigenschappen in:
 
-    - **Drempelwaarde voor verlenging (%)**: aanbevolen wordt 20%.
-    - **Geldigheidsduur van certificaat**: als u de certificaatsjabloon niet hebt gewijzigd, kan deze optie worden ingesteld op één jaar.
-    - **Sleutelarchiefprovider (KSP)**: voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan.
-    - **Certificeringsinstantie**: geeft de interne Fully Qualified Domain Name (FQDN) van uw CA voor ondernemingen weer.
-    - **Naam van certificeringsinstantie**: geeft de naam van uw CA voor ondernemingen weer, bijvoorbeeld "Contoso Certification Authority".
-    - **Certificaatsjabloonnaam**: de naam van de sjabloon die eerder is gemaakt. Nogmaals, **Sjabloonnaam** is standaard hetzelfde als **Weergavenaam van sjabloon**, maar dan *zonder spaties*.
-    - **Indeling van de onderwerpnaam**: stel deze optie in op **Algemene naam** tenzij anders aangegeven.
-    - **Alternatieve naam voor onderwerp**: stel deze optie in op **User principal name** tenzij anders aangegeven.
+    - **Drempelwaarde voor verlenging (%)**: 20% wordt aanbevolen.
+    - **Geldigheidsduur van certificaat**: Als u de certificaatsjabloon niet hebt gewijzigd, kan deze optie worden ingesteld op één jaar.
+    - **Sleutelarchiefprovider (KSP)**: Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan.
+    - **Certificeringsinstantie**: Geeft de interne FQDN (Fully Qualified Domain Name) van uw CA voor ondernemingen weer.
+    - **Naam van certificeringsinstantie**: Geeft de naam van uw CA voor ondernemingen weer, bijvoorbeeld "Contoso Certification Authority".
+    - **Certificaatsjabloonnaam**: De naam van de sjabloon die eerder is gemaakt. Nogmaals, **Sjabloonnaam** is standaard hetzelfde als **Weergavenaam van sjabloon**, maar dan *zonder spaties*.
+    - **Indeling van de onderwerpnaam**: Stel deze optie in op **Algemene naam** tenzij anders aangegeven.
+    - **Alternatieve naam voor het onderwerp**: Stel deze optie in op **User principal name (UPN)** tenzij anders aangegeven.
 
 4. Selecteer **OK** > **Maken** om het profiel op te slaan.
 5. Raadpleeg [Microsoft Intune-apparaatprofielen toewijzen](device-profile-assign.md) om het nieuwe profiel aan een of meer apparaten toe te wijzen.
 
 ## <a name="create-a-pkcs-imported-certificate-profile"></a>Een geïmporteerd PKCS-certificaatprofiel maken
 
-U kunt certificaten importeren die eerder zijn uitgegeven voor een specifieke gebruiker van elke certificeringsinstantie naar Intune. Geïmporteerde certificaten worden geïnstalleerd op elk apparaat dat door een gebruiker wordt geregistreerd. S/MIME-e-mailversleuteling is het meest voorkomende scenario voor het importeren van bestaande PFX-certificaten in Intune. Een gebruiker kan meerdere certificaten hebben voor de versleuteling van e-mailberichten. De persoonlijke sleutels van die certificaten moeten bestaan op alle apparaten van een gebruiker, zodat eerder versleutelde e-mailberichten kunnen worden ontsleuteld.
+U kunt certificaten importeren die eerder zijn uitgegeven aan een specifieke gebruiker van elke certificeringsinstantie naar Intune. Geïmporteerde certificaten worden geïnstalleerd op elk apparaat dat door een gebruiker wordt geregistreerd. S/MIME-e-mailversleuteling is het meest voorkomende scenario voor het importeren van bestaande PFX-certificaten in Intune. Een gebruiker kan verschillende certificaten hebben voor de versleuteling van e-mailberichten. De persoonlijke sleutels van die certificaten moeten bestaan op alle apparaten van een gebruiker, zodat eerder versleutelde e-mailberichten kunnen worden ontsleuteld.
 
 Voor het importeren van certificaten in Intune kunt u de [PowerShell-cmdlets in GitHub](https://github.com/Microsoft/Intune-Resource-Access) gebruiken.
 
@@ -220,14 +220,17 @@ Na het importeren van de certificaten naar Intune maakt u een **geïmporteerd PK
 
 3. Ga naar **Instellingen** en voer de volgende eigenschappen in:
 
-    - **Beoogd gebruik**: het beoogde doel van de certificaten die voor dit profiel worden geïmporteerd. Een beheerder kan certificaten met verschillende beoogde doelen (zoals verificatie, S/MIME-ondertekening of S/MIME-versleuteling) importeren. Het beoogde doel dat is geselecteerd in het certificaatprofiel komt overeen met het certificaatprofiel met de juiste geïmporteerde certificaten.
-    - **Geldigheidsduur van certificaat**: als u de certificaatsjabloon niet hebt gewijzigd, kan deze optie worden ingesteld op één jaar.
-    - **Sleutelarchiefprovider (KSP)**: voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan.
+    - **Beoogd doeleinde**: Het beoogde doel van de certificaten die voor dit profiel worden geïmporteerd. Een beheerder kan certificaten met verschillende beoogde doelen (zoals verificatie, S/MIME-ondertekening of S/MIME-versleuteling) importeren. Het beoogde doel dat is geselecteerd in het certificaatprofiel komt overeen met het certificaatprofiel met de juiste geïmporteerde certificaten.
+    - **Geldigheidsduur van certificaat**: Als u de certificaatsjabloon niet hebt gewijzigd, kan deze optie worden ingesteld op één jaar.
+    - **Sleutelarchiefprovider (KSP)**: Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan.
 
 4. Selecteer **OK** > **Maken** om het profiel op te slaan.
 5. Raadpleeg [Microsoft Intune-apparaatprofielen toewijzen](device-profile-assign.md) om het nieuwe profiel aan een of meer apparaten toe te wijzen.
 
 ## <a name="next-steps"></a>Volgende stappen
+
+Het profiel is gemaakt, maar er gebeurt nog niets. Vervolgens kunt u [het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
+
 [Gebruik SCEP-certificaten](certificates-scep-configure.md) of [geef PKCS-certificaten uit van een webservice van Symantec PKI-manager](certificates-symantec-configure.md).
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Navigeren naar Intune in Azure Portal en een nieuw profiel voor een vertrouwd certificaat maken"

@@ -2,10 +2,10 @@
 title: Windows Update voor Bedrijven configureren in Microsoft Intune - Azure | Microsoft Docs
 description: Werk met Microsoft Intune op Windows 10-apparaten de instellingen voor Software-update in een profiel bij om een update-ring te maken, naleving te controleren en updates in de instellingen voor Windows Update voor bedrijven te onderbreken.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112762"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297380"
 ---
 # <a name="manage-software-updates-in-intune"></a>Software-updates beheren in Intune
 
@@ -76,16 +76,12 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services** > filter op **Intune** en selecteer vervolgens **Microsoft Intune**.
 2. Selecteer **Software-updates** > **Windows 10-update-ringen** > **Maken**.
 3. Voer een naam en een beschrijving (optioneel) in en kies vervolgens **Configureren**.
-4. Voer bij **Instellingen** de volgende informatie in:
+4. Voer bij **Instellingen** de volgende informatie in:  
 
+   **Update-instellingen**  
    - **Servicekanaal**: Stel het kanaal in van waaruit het apparaat Windows-updates ontvangt.
    - **Microsoft-productupdates**: Kies of u wilt zoeken naar app-updates via Microsoft Update.
    - **Windows-stuurprogramma's**: Kies of u Windows Update-stuurprogramma's wilt uitsluiten tijdens het bijwerken.
-   - **Gedrag van automatische updates**: Kies hoe automatische updates worden geïnstalleerd, wanneer het apparaat opnieuw moet gestart of opnieuw moet worden opgestart. Zie [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) voor meer informatie.
-     - **Frequentie van automatisch gedrag**: Als u **Automatisch installeren en opnieuw starten op een geplande tijd** voor het updategedrag selecteert, wordt deze instelling weergegeven. Gebruik deze instelling om te plannen wanneer updates worden geïnstalleerd, inclusief de week, de dag en het tijdstip.
-
-   - **Controles voor opnieuw starten**: Standaard ingeschakeld. Wanneer u een apparaat opnieuw start, worden er een aantal controles uitgevoerd. Zo wordt bijvoorbeeld gecontroleerd op actieve gebruikers, batterijniveau, actieve games en meer. Als u deze controles wilt overslaan wanneer u een apparaat opnieuw start, kiest u **Overslaan**.
-
    - **Uitstelperiode voor kwaliteitsupdates (dagen)**: Geef het aantal dagen op dat kwaliteitsupdates worden uitgesteld. U kunt deze kwaliteitsupdates uitstellen gedurende maximaal 30 dagen vanaf de vrijgave.
 
      Kwaliteitsupdates zijn doorgaans oplossingen en verbeteringen in de bestaande Windows-functionaliteit. Deze worden op de tweede dinsdag van elke maand gepubliceerd. Kwaliteitsupdates via Windows Update voor Bedrijven ontvangen alleen deze updates (versie B), hoewel Microsoft van tijd tot tijd andere updates kan publiceren. U kunt bepalen of en hoe lang u ontvangen kwaliteitsupdates wilt uitstellen nadat ze beschikbaar zijn gekomen in Windows Update. Zie [Deploy updates using Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) (Updates implementeren met Windows Update voor Bedrijven) voor meer informatie.
@@ -96,9 +92,21 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 
      Bijvoorbeeld: **Als het servicekanaal is ingesteld op Semi-Annual-kanaal (Targeted) en de uitstelperiode 30 dagen is**: Stel dat Onderdelenupdate X voor het eerst openbaar beschikbaar is op Windows Update als Semi-Annual-kanaal (Targeted) in januari. Het apparaat ontvangt de update pas in februari - 30 dagen later.
 
-     **Als het servicekanaal is ingesteld op Semi-Annual-kanaal en de uitstelperiode 30 dagen is**: Stel, de Onderdelenupdate X is voor het eerst openbaar beschikbaar op Windows Update als Semi-Annual-kanaal (Targeted) in januari. Vier maanden later, in april, wordt onderdelenupdate X vrijgegeven voor Semi-Annual-kanaal. Het apparaat ontvangt de onderdelenupdate 30 dagen na deze Semi-Annual-kanaal-vrijgave en wordt in mei bijgewerkt.
+     **Als het servicekanaal is ingesteld op Semi-Annual-kanaal en de uitstelperiode 30 dagen is**: Stel, de Onderdelenupdate X is voor het eerst openbaar beschikbaar op Windows Update als Semi-Annual-kanaal (Targeted) in januari. Vier maanden later, in april, wordt onderdelenupdate X vrijgegeven voor Semi-Annual-kanaal. Het apparaat ontvangt de onderdelenupdate 30 dagen na deze Semi-Annual-kanaal-vrijgave en wordt in mei bijgewerkt.  
 
-   - **Delivery Optimization-downloadmodus**: Kies de methode waarmee apparaten Windows-updates moeten downloaden. Zie [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode) voor meer informatie.
+   **Instellingen voor gebruikerservaring**
+   
+   - **Gedrag van automatische updates**: Kies hoe automatische updates worden geïnstalleerd, wanneer het apparaat opnieuw moet gestart of opnieuw moet worden opgestart. Zie [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) voor meer informatie.
+
+     Met de instelling *Standaardinstellingen herstellen* herstelt u de oorspronkelijke instellingen voor automatisch bijwerken op Windows 10-computers met de *update van oktober 2018* of later.  
+
+     - **Frequentie van automatisch gedrag**: Als u **Automatisch installeren en opnieuw starten op een geplande tijd** voor het updategedrag selecteert, wordt deze instelling weergegeven. Gebruik deze instelling om te plannen wanneer updates worden geïnstalleerd, inclusief de week, de dag en het tijdstip.
+
+   - **Controles voor opnieuw starten**: Standaard ingeschakeld. Wanneer u een apparaat opnieuw start, worden er een aantal controles uitgevoerd. Zo wordt bijvoorbeeld gecontroleerd op actieve gebruikers, batterijniveau, actieve games en meer. Als u deze controles wilt overslaan wanneer u een apparaat opnieuw start, kiest u **Overslaan**.
+
+   - **Blokkeren dat gebruiker Windows-updates kan onderbreken**: Standaard toegestaan. Gebruik deze instelling om toe te staan of te voorkomen dat gebruikers de installatie van een update onderbreken vanuit de *Instellingen* van hun computer. 
+      
+   - **Delivery Optimization-downloadmodus**: Delivery Optimization wordt niet meer als onderdeel van een update-ring voor Windows 10 geconfigureerd onder Software-updates. Delivery Optimization wordt nu ingesteld via de apparaatconfiguratie. Eerdere configuraties blijven echter beschikbaar in de console. U kunt deze eerdere configuraties verwijderen door ze te bewerken en te markeren als *Niet geconfigureerd*, maar verder kunnen ze niet worden gewijzigd. Zie [Verplaatsen van bestaande update-ringen naar Delivery Optimization](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) om conflicten tussen nieuwe en oude beleidsregels te voorkomen en uw instellingen vervolgens te verplaatsen naar een Delivery Optimization-profiel. 
 
 5. Wanneer u klaar bent, selecteert u **OK**. Selecteer in **Update-ring maken** de optie **Maken**.
 
