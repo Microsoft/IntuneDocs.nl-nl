@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: e7b60ecbf2a9a110b68807f8d1dce4db21f8f61d
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324902"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316913"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Android-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -147,39 +147,6 @@ Potentiële adresvervalsing (spoofing), vrijgeven van informatie en uitbreiding 
 -   Zorg ervoor dat de app afkomstig is van een vertrouwde bron.
 
 -   Beveilig de uitvoermap die de verpakte app bevat. Overweeg het gebruik van een map op gebruikersniveau voor de uitvoer.
-
-## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>Vereisen dat een gebruiker een aanmeldingsprompt krijgt voor automatische registratie bij de APP-WE-service, waarvoor beveiligingsbeleid voor apps in Intune is vereist om uw verpakte Android LOB-app te gebruiken, en eenmalige aanmelding van ADAL inschakelen (optioneel)
-
-Hier volgen richtlijnen voor het vereisen van gebruikersprompts bij het starten van een app voor automatische registratie bij de APP-WE-service (dit wordt **standaardinschrijving** genoemd in deze sectie), waarvoor beveiligingsbeleid voor apps in Intune is vereist om uw verpakte Android LOB-app te gebruiken. Ook wordt beschreven hoe u eenmalige aanmelding kunt inschakelen voor uw verpakte Android LOB-app. 
-
-> [!NOTE] 
-> Een van de voordelen van **standaardinschrijving** is dat u eenvoudiger beleid kunt ophalen uit de APP-WE-service voor een app op het apparaat.
-
-### <a name="general-requirements"></a>Algemene vereisten
-* Het Intune SDK-team heeft de toepassings-id van uw app nodig. U vindt deze in [Azure Portal](https://portal.azure.com/) onder **Alle toepassingen** in de kolom voor **Toepassings-id**. U kunt het best contact opnemen met het Intune SDK-team door een e-mail te sturen naar msintuneappsdk@microsoft.com.
-     
-### <a name="working-with-the-intune-sdk"></a>Werken met de Intune SDK
-Deze instructies zijn specifiek voor alle Android- en Xamarin-apps die beveiligingsbeleid voor apps in Intune willen vereisen voor gebruik op een apparaat van een eindgebruiker.
-
-1. Configureer ADAL met behulp van de stappen die zijn gedefinieerd in de [Intune SDK voor Android-handleiding](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
-
-> [!NOTE]
-> De term client-id die is gekoppeld aan uw app is hetzelfde als de term toepassings-id van de Azure Portal die aan uw app is gekoppeld. 
-> * Voor het inschakelen van eenmalige aanmelding is Common ADAL configuration #2 vereist.
-
-2. Schakel standaardinschrijving in door de volgende waarde in het manifest in te voeren:
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
-   ```
-   > [!NOTE] 
-   > Dit moet de enige MAM-WE-integratie in de app zijn. Als er andere pogingen zijn gedaan om MAMEnrollmentManager-API's aan te roepen, kunnen er zich conflicten voordoen.
-
-3. U schakelt vereist MAM-beleid in door de volgende waarde in het manifest in te voeren:
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-   ```
-   > [!NOTE] 
-   > Dit zorgt ervoor dat de gebruiker de bedrijfsportal op het apparaat moet downloaden en de standaardstroom voor inschrijving moet voltooien vóór gebruik.
 
 ### <a name="see-also"></a>Zie tevens
 - [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](apps-prepare-mobile-application-management.md)
