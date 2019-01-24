@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 0cc94da03e1288de519d08acadbf3374bb76fcd7
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210904"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418207"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,10 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook geplande 
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-14-2019"></a>De week van 14 januari 2019
 
+### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Voorbeeld van volledig beheerde, zakelijke Android-apparaten <!-- 1574342  -->
+Intune ondersteunt nu volledig beheerde Android-apparaten, een scenario waarin apparaten 'zakelijk eigendom' zijn en nauw worden beheerd door de IT-afdeling en gekoppeld zijn aan afzonderlijke gebruikers. Hierdoor kunnen beheerders het hele apparaat beheren, een uitgebreide reeks beleidscontroles afdwingen die niet beschikbaar zijn voor werkprofielen en gebruikers beperken tot de installatie van apps uit de beheerde Google Play Store. Zie [Intune-inschrijving van volledig beheerde Android-apparaten instellen](android-fully-managed-enroll.md) en [Uw toegewezen apparaten of volledig beheerde apparaten inschrijven](android-dedicated-devices-fully-managed-enroll.md) voor meer informatie.  Let op: deze functie wordt momenteel als preview aangeboden. Sommige Intune-mogelijkheden, zoals certificaten, naleving en voorwaardelijke toegang, zijn momenteel niet beschikbaar voor volledig beheerde Android-gebruikersapparaten.
 
 ## <a name="week-of-january-7-2019"></a>De week van 7 januari 2019
 
@@ -115,7 +118,7 @@ Wanneer u een configuratieprofiel voor iOS-apparaten maakt, kunt u de instelling
 Het gedeelte [Instellingen om berichten op het vergrendelingsscherm weer te geven](shared-device-settings-ios.md) bevat de huidige instellingen.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices----2827760--"></a>Nieuwe App Store-, documentweergave-, gaminginstellingen voor apparaatbeperking toegevoegd aan iOS-apparaten<!-- 2827760-->
-In **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS** voor platform > **Apparaatbeperkingen** voor profieltype > **App Store, documentweergave, gaming** zijn de volgende instellingen toegevoegd: Beheerde apps toestaan om contacten naar niet-beheerde contactenaccounts te schrijven (alleen onder supervisie) Niet-beheerde apps toestaan om beheerde contactenaccounts te lezen (alleen onder supervisie) Als u de instellingen wilt weergeven, gaat u naar [iOS-apparaatbeperkingen](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+In **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS** voor platform > **Apparaatbeperkingen** voor profieltype > **App Store, documentweergave, gaming** zijn de volgende instellingen toegevoegd: Beheerde apps toestaan om contacten naar niet-beheerde contactenaccounts te schrijven Niet-beheerde apps toestaan om beheerde contactenaccounts te lezen Als u de instellingen wilt weergeven, gaat u naar [iOS-apparaatbeperkingen](device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Nieuwe instellingen voor meldingen, hints en keyguard voor Android Enterprise-apparaten in zakelijk eigendom <!-- 3201839 3201843 -->
 Deze update omvat verschillende nieuwe functies in Android Enterprise-apparaten wanneer deze worden uitgevoerd in zakelijk eigendom. Als u deze functies wilt gebruiken, gaat u naar **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > als **Platform** kiest u **Android Enterprise** > in **Profieltype** kiest u **Alleen zakelijk eigendom** > **Apparaatbeperkingen**.
@@ -139,9 +142,6 @@ Van toepassing op: Windows 10 en hoger
 #### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564---"></a>Gedetailleerdere berichten over fouten bij inschrijvingsbeperking <!-- 3111564 -->
 Er komen meer gedetailleerdere foutberichten beschikbaar wanneer er niet wordt voldaan de inschrijvingsbeperkingen. Als u deze berichten wilt bekijken, gaat u naar **Intune** > **Probleemoplossing** en bekijkt u het tabel Inschrijvingsfouten. Zie de [lijst met mislukte inschrijvingen](help-desk-operators.md#configuration-policies-reference) voor meer informatie.
 
-#### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>Meer Setup Assistant-schermen overslaan op een iOS-DEP-apparaat <!-- 2687509 -->
-Naast de schermen die u op dit moment kunt overslaan, kunt u instellen dat iOS DEP-apparaten de volgende schermen in de Setup-assistent overslaan wanneer een gebruiker het apparaat registreert: Weergavetoon, Privacy, Android-migratie, Startknop, iMessage en FaceTime, Onboarding, Migratie weergeven, Weergave, Schermtijd, Software-update, SIM-installatie.
-Als u wilt kiezen welke schermen moeten worden overgeslagen, gaat u naar **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor inschrijvingsprogramma** > kies een token > **Profielen** > kies een profiel > **Eigenschappen** > **Setup Assistant aanpassen** > kies **Verbergen** voor schermen die u wilt overslaan > **OK**.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Bewaken en problemen oplossen
@@ -164,7 +164,7 @@ Met de nieuwe ervaring kunt u uw probleem in uw eigen woorden beschrijven en inf
 ### <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Bereiktags voor apps <!-- 1081941 -->
-U kunt bereiktags maken om de toegang voor rollen en apps te beperken. U kunt een bereiktag toevoegen aan een app, zodat alleen personen met rollen die ook zijn toegewezen aan de bereiktag, toegang tot de app hebben. Zie [Bereiktags gebruiken om beleidsregels te filteren](scope-tags.md) voor meer informatie.
+U kunt bereiktags maken om de toegang voor rollen en apps te beperken. U kunt een bereiktag toevoegen aan een app, zodat alleen personen met rollen die ook zijn toegewezen aan de bereiktag, toegang tot de app hebben. Aan apps die zijn gekocht met het Apple Volume Purchase Program (VPP) kunnen geen bereiktags worden toegewezen.  Zie [Bereiktags gebruiken om beleidsregels te filteren](scope-tags.md) voor meer informatie.
 
 
 
@@ -1252,6 +1252,54 @@ U kunt nu Intune App Policy Protection (APP) en Conditional Access (CA) gebruike
 
 ## <a name="notices"></a>Mededelingen
 
+### <a name="upcoming-password-enforcement-change-for-macos-10142-in-intune---1873216--"></a>Toekomstige wijziging in wachtwoordafdwinging voor macOS 10.14.2 in Intune <!--1873216-->
+In MC145129 van juli hebben we aangekondigd dat Intune van plan was de nieuwe Apple-instelling Wachtwoord wijzigen bij volgende verificatie voor apparaten met Mac OS-versies 10.13 en hoger te integreren. Naar verwachting wordt deze instelling in februari doorgevoerd voor macOS 10.14.2 en hoger. 
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Dit heeft gevolgen voor u als u apparaten hebt met macOS 10.14.2 of hoger. Nu Apple de instelling Wachtwoord wijzigen bij volgende verificatie heeft geïntroduceerd, kan Intune afdwingen dat gebruikers na het pushen van een wachtwoordbeleid hun wachtwoord wijzigen in een wachtwoord dat aan het beleid voldoet. Wanneer deze nieuwe functie van Apple is geïntegreerd, krijgen uw macOS-gebruikers een verzoek om hun wachtwoord bij te werken, zelfs als het wachtwoord aan het beleid voldoet. Wanneer een wachtwoord al aan het beleid voldoet en niet is ingesteld dat wachtwoorden moeten worden herhaald, kunnen eindgebruikers hun bestaande wachtwoord bijwerken. Eindgebruikers zien het verzoek om hun wachtwoord bij te werken alleen tijdens een verificatiepoging of wanneer ze zich proberen aan te melden op hun apparaat. Als u bedrijfsresources blokkeert totdat het apparaat wordt gemarkeerd als conform, hebben uw eindgebruikers op apparaten met macOS 10.14.2 mogelijk geen toegang meer tot bedrijfsresources, zoals e-mail of SharePoint-sites, totdat ze hun wachtwoord opnieuw hebben ingesteld. In de toekomst moeten gebruikers na elke wijziging in configuratie- en nalevingsbeleid voor wachtwoorden hun wachtwoord bijwerken. Het klantonderzoek dat we voorafgaand aan deze wijziging hebben uitgevoerd, heeft aangetoond dat de wijziging geen invloed heeft op de meeste klanten. Eindgebruikers werken hun wachtwoord doorgaans meestal bij na het verzoek om zich aan te melden met een wachtwoord of stellen hun wachtwoord opnieuw in om te voldoen aan de eisen
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
+U kunt uw helpdesk hiervan op de hoogte stellen. Deze pagina Wat is er nieuw wordt bijgewerkt zodra deze wijziging is uitgerold. Als u dit macOS-apparaatbeleid niet wilt afdwingen, raden we aan toewijzing van uw bestaande macOS-beleid ongedaan te maken of dit beleid te verwijderen.
+
+
+### <a name="reminder-intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo---2828727--"></a>Herinnering: Intune-ondersteuningservaring voor Premier-klanten nu in Azure in plaats van in MPO <!--2828727-->
+In september hebben we in MC147649 gemeld dat de mogelijkheid om Intune-ondersteuningsaanvragen te doen vanuit de MPO-portal (Microsoft Premier Online) (premier.microsoft.com) in december zou worden verwijderd. Deze wijziging heeft een korte vertraging opgelopen, maar na eind januari wordt u omgeleid en kunt u alleen nog maar in Intune op Azure ondersteuningsaanvragen doen. 
+
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Om de Premier-ondersteuningservaring te blijven verbeteren, kunt u na eind januari geen ondersteuningsaanvragen meer doen in MPO.  Wanneer u dit toch probeert te doen, ziet u een prompt met een melding die u niet kunt sluiten en wordt u omgeleid naar Intune op Azure. Hier kunt u een ondersteuningsaanvraag maken die naar speciale Microsoft Ondersteuning voor Intune wordt doorgestuurd, zodat uw probleem zo snel mogelijk wordt gediagnosticeerd en opgelost. Ondersteuningsaanvragen die in de MPO-portal zijn gemaakt, kunnen niet worden weergegeven in Azure Portal. 
+
+Azure Portal bevat een nieuwe ondersteuningservaring, zoals we onlangs hebben aangekondigd in MC171941. Meer informatie hierover vindt u op [https://aka.ms/new_support_experience](https://aka.ms/new_support_experience) en via de koppeling Aanvullende informatie.
+
+Als u hybride Mobile Device Management (hybride MDM) of gemeenschappelijk beheer gebruikt, kunt u MPO blijven gebruiken om ondersteuningsaanvragen voor ConfigMgr te maken. Gebruikt u echter Azure Portal om ondersteuningsaanvragen voor Intune te maken. Ter herinnering: hybride MDM wordt [afgeschreven](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures) en u moet de overstap naar Intune op Azure zo snel mogelijk inplannen. Zie voor meer informatie [Overstappen van hybride Mobile Device Management naar Intune op Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
+
+Let op: alleen gebruikers met de rol van algemene beheerder, Intune-servicebeheerder of serviceondersteuningsbeheerder mogen ondersteuningstickets maken in Azure Portal.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
+- Beëindig het gebruik van MPO en gebruik Intune op Azure om al uw Intune-ondersteuningsaanvragen te maken en te beheren.  
+- Informeer uw helpdesk en werk de documentatie waar nodig bij.
+- Als u gebruikers zonder de rol van algemene beheerder of Intune-servicebeheerder hebt die momenteel ondersteuningsaanvragen in MPO maken, wijst u de rol van serviceondersteuningsbeheerder aan ze toe in Azure Active Directory, zodat ze ondersteuningstickets kunnen blijven maken in Azure Portal.
+
+#### <a name="additional-information"></a>Als u meer informatie
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+
+### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Geplande wijziging: Update van de gebruikerservaring voor de iOS-bedrijfsportal-app van Intune
+Met trots kunnen we mededelen dat Intune binnenkort een geheel nieuwe gebruikerservaring biedt voor de iOS-bedrijfsportal-app. De startpagina is qua vormgeving geheel vernieuwd en bevat geavanceerde filters en snellere toegang tot apps en boeken.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Deze update behoudt de functionaliteit van de huidige iOS-bedrijfsportal en biedt daarnaast de volgende nieuwe functies:
+- Een startpagina met het uiterlijk van iOS 
+- De mogelijkheid om te filteren op inhoud en zoekresultaten, de mogelijkheid om te filteren op het type inhoud (apps of eBooks) en beschikbaarheid (hiervoor is apparaatbeheer vereist; of beschikbaar zonder inschrijving)
+- Mogelijkheid om te zoeken naar eBooks
+- Zoeken naar de geschiedenis van apps en eBooks Als u meedoet aan het TestFlight-programma van Apple, krijgt u een melding zodra de voorlopige versie van de bijgewerkte iOS-bedrijfsportal-app van Intune beschikbaar is. Als u niet meedoet aan het TestFlight-programma van Apple, kunt u zich hiervoor alsnog aanmelden. Als u zich aanmeldt, kunt u de bijgewerkte bedrijfsportal-app gebruiken voordat deze beschikbaar is voor uw eindgebruikers. Daarnaast kunt u direct feedback geven aan het Intune-team.  
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
+U hoeft geen actie te ondernemen; deze wijzigingen zullen worden doorgevoerd in een nieuwe versie van de iOS-bedrijfsportal-app. 
+
+#### <a name="additional-information"></a>Als u meer informatie
+[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
+
+
 ### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Geplande wijziging: Exchange Online naar Intune-connector zal niet meer beschikbaar zijn in Intune <!-- 3105122 -->
 Ter vereenvoudiging van uw ervaring met Exchange Online en voorwaardelijke toegang schakelen we de service-to-service-connector-connector voor Exchange Online naar Intune uit. Deze wijziging gaat van start bij de service-update van december en is bij de service-update van februari 2019 voltooid.
 
@@ -1286,27 +1334,6 @@ Zodra de updates worden uitgerold, hoeft u niet langer Azure AD-groepen te gebru
 U hoeft niets te doen terwijl wij uw beleidstoewijzingen verplaatsen. Als u momenteel beleidsregels toewijst in de Intune for Education-console, kunt u dit blijven doen.
 
 Als u op dit moment beleidsregels toewijst aan de Azure AD-groepen die hierboven in Intune op Azure zijn genoemd, kunt u deze in plaats daarvan gaan toewijzen aan de groepen Alle gebruikers en Alle apparaten in de Intune for Education-console. Wanneer u ziet dat de naam van Azure AD-groepen is gewijzigd in Verouderd in de console, stopt u met het toewijzen van beleidsregels in Azure AD. Als u de hernoemde groepen momenteel voor geen enkel doel gebruikt, moet u ze verwijderen.
-
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Geplande wijziging: Nieuwe Intune-ondersteuningservaring voor Premier-klanten 
-Update van 4-12-18: We proberen dit proces voor u te verbeteren, zodat de mogelijkheid om ondersteuningsaanvragen aan te maken in MPO niet wordt uitgeschakeld op 3 december, maar op een later tijdstip. We zullen dit communiceren via het berichtencentrum. Dit bericht wordt binnenkort bijgewerkt om tijdlijnen voor deze wijziging te delen.
-
-Als Microsoft Premier-klant kunt u momenteel gebruikmaken van de Microsoft Premier Online-portal (MPO) (premier.microsoft.com) en Intune op Azure (portal.azure.com) om ondersteuningsaanvragen voor Intune te maken. Als u na 3 december 2018 de Premier-ondersteuningservaring wilt blijven verbeteren, kunt u alleen ondersteuningsaanvragen in Intune op Azure maken.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Na 3 december kunt u geen ondersteuningsaanvragen meer maken in MPO.  Wanneer u dit toch probeert te doen, ziet u een prompt met een melding die u niet kunt sluiten en wordt u doorgestuurd naar Intune op Azure. Hier kunt u een ondersteuningsaanvraag maken die naar speciale Microsoft Ondersteuning voor Intune wordt doorgestuurd, zodat uw probleem zo snel mogelijk wordt gediagnosticeerd en opgelost. Ondersteuningsaanvragen die in de MPO-portal zijn gemaakt , kunnen niet worden weergegeven in Azure Portal; maak dus geen ondersteuningsaanvragen meer in MPO.  
-
-Als u hybride Mobile Device Management (hybride MDM) of gemeenschappelijk beheer gebruikt, kunt u MPO blijven gebruiken om ondersteuningsaanvragen voor ConfigMgr te maken. Gebruikt u echter Azure Portal om ondersteuningsaanvragen voor Intune te maken. Ter herinnering: hybride MDM wordt afgeschreven en u moet de overstap naar Intune op Azure zo snel mogelijk inplannen. Zie voor meer informatie [Overstappen van hybride Mobile Device Management naar Intune op Azure](https://aka.ms/hybrid_notification).
-
-Let op: alleen gebruikers met de rol van algemene beheerder, Intune-servicebeheerder of serviceondersteuningsbeheerder mogen ondersteuningstickets maken in de Azure-portal.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
-- Beëindig het gebruik van MPO en gebruik Intune op Azure om al uw Intune-ondersteuningsaanvragen te maken en te beheren.  
-- Informeer uw helpdesk en werk de documentatie waar nodig bij.
-- Als u gebruikers zonder de rol van algemene beheerder of Intune-servicebeheerder hebt die momenteel ondersteuningsaanvragen in MPO maken, wijst u de rol van serviceondersteuningsbeheerder aan ze toe in Azure Active Directory, zodat ze ondersteuningstickets kunnen blijven maken in Azure Portal.
-- Klik op Aanvullende informatie voor meer informatie en nuttige koppelingen.
-
-#### <a name="additional-information"></a>Als u meer informatie
-Zie de [blogpost van het Microsoft Intune-ondersteuningsteam](https://aka.ms/IntuneSupport_MPO_to_Azure) voor meer informatie.
 
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Onderneem actie: Werk in Intune de wachtwoordinstellingen bij voor de Android-apparaatbeperking of het nalevingsbeleid

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: ''
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
-ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
+ms.openlocfilehash: 1866d658503cb2dcdf482a050d7bbd73a914858b
+ms.sourcegitcommit: 398b8a0d98e928b3406f59ab3d061554643ef60b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54122635"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54400021"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Apparaten verwijderen via wissen of buiten gebruik stellen, of de registratie van het apparaat handmatig ongedaan maken
 
@@ -81,22 +81,20 @@ In de volgende tabellen wordt beschreven welke gegevens worden verwijderd en wat
 
 |Gegevenstype|iOS|
 |-------------|-------|
-|Bedrijfs-apps en de bijbehorende gegevens die door Intune zijn geïnstalleerd|**Apps geïnstalleerd met Bedrijfsportal:** alle app-gegevens en de apps worden verwijderd. Hiertoe behoren ook de apps die oorspronkelijk zijn geïnstalleerd vanuit de App Store en later worden beheerd als bedrijfs-apps. <br /><br /> **Microsoft-apps die gebruikmaken van MAM en zijn die geïnstalleerd vanuit de App Store:** Gegevens van bedrijfs-apps worden verwijderd. Gegevens van persoonlijke apps en de apps worden niet verwijderd.|
+|Bedrijfs-apps en de bijbehorende gegevens die door Intune zijn geïnstalleerd|**Apps die zijn geïnstalleerd met de bedrijfsportal-app:** Voor apps die zijn vastgemaakt aan het beheerprofiel, worden alle app-gegevens en de app zelf verwijderd. Hiertoe behoren ook de apps die oorspronkelijk zijn geïnstalleerd vanuit de App Store en later worden beheerd als bedrijfs-apps. <br /><br /> **Microsoft-apps die gebruikmaken van MAM en zijn die geïnstalleerd vanuit de App Store:** Voor apps die niet worden beheerd door de bedrijfsportal, worden de gegevens verwijderd van bedrijfs-apps die in de lokale opslagruimte van de app worden beveiligd met MAM-versleuteling (Mobile Application Management). Gegevens die door MAM-versleuteling buiten de app worden beveiligd, blijven versleuteld en onbruikbaar, maar worden niet verwijderd. Gegevens van persoonlijke apps en de apps worden niet verwijderd.|
 |Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden verwijderd en ingetrokken.|
 |Beheeragent|Beheerprofiel wordt verwijderd.|
 |E-mail|E-mailprofielen die via Intune zijn ingericht, worden verwijderd. In de cache opgeslagen e-mail op het apparaat wordt verwijderd.|
-|Outlook|E-mail die wordt ontvangen door de Microsoft Outlook-app voor iOS, wordt verwijderd. Hiervoor moet de mobiele app voor Outlook eerst als een vereiste app voor iOS-gebruikers worden geïmplementeerd.|
 |Loskoppelen van Azure AD|Azure AD-record wordt verwijderd.|
-|Contactpersonen |Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
 
 ### <a name="android"></a>Android
 
 |Gegevenstype|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Webkoppelingen|Verwijderd.|Verwijderd.|
-|Niet-beheerde Google Play-apps|Apps en gegevens blijven geïnstalleerd.|Apps en gegevens blijven geïnstalleerd.|
+|Niet-beheerde Google Play-apps|Apps en gegevens blijven geïnstalleerd. <br /> <br />De gegevens van bedrijfs-apps die in de lokale opslagruimte van de app worden beveiligd met MAM-versleuteling (Mobile Application Management) worden verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd, blijven versleuteld en onbruikbaar, maar worden niet verwijderd. |Apps en gegevens blijven geïnstalleerd. <br /> <br />De gegevens van bedrijfs-apps die in de lokale opslagruimte van de app worden beveiligd met MAM-versleuteling (Mobile Application Management) worden verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd, blijven versleuteld en onbruikbaar, maar worden niet verwijderd.|
 |Niet-beheerde Line-Of-Business-apps|Apps en gegevens blijven geïnstalleerd.|Apps worden verwijderd en lokale app-gegevens worden verwijderd. Er worden geen gegevens buiten de app (bijvoorbeeld op een SD-geheugenkaart) verwijderd.|
 |Beheerde Google Play-apps|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling (Mobile Application Management) buiten de app worden beveiligd (bijvoorbeeld een SD-geheugenkaart), blijven versleuteld en onbruikbaar, maar worden niet verwijderd.|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (bijvoorbeeld een SD-geheugenkaart), blijven versleuteld, maar worden niet verwijderd.|
 |Beheerde Line-Of-Business-apps|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (bijvoorbeeld een SD-geheugenkaart), blijven versleuteld en onbruikbaar, maar worden niet verwijderd.|App-gegevens worden verwijderd. De app wordt niet verwijderd. Gegevens die door MAM-versleuteling buiten de app worden beveiligd (bijvoorbeeld een SD-geheugenkaart), blijven versleuteld en onbruikbaar, maar worden niet verwijderd.|
@@ -105,9 +103,7 @@ In de volgende tabellen wordt beschreven welke gegevens worden verwijderd en wat
 |Instellingen van certificaatprofiel|Certificaten worden ingetrokken, maar niet verwijderd.|Certificaten worden verwijderd en ingetrokken.|
 |Beheeragent|Administratorbevoegdheden voor apparaat worden ingetrokken.|Administratorbevoegdheden voor apparaat worden ingetrokken.|
 |E-mail|N.v.t. (e-mailprofielen worden niet ondersteund door Android-apparaten)|E-mailprofielen die via Intune zijn ingericht, worden verwijderd. In de cache opgeslagen e-mail op het apparaat wordt verwijderd.|
-|Outlook|E-mail die door de Outlook-app voor Android is ontvangen, wordt verwijderd. Dit geldt alleen als Outlook wordt beveiligd door MAM-beleid. Anders wordt Outlook niet gewist wanneer het apparaat wordt uitgeschreven.|E-mail die door de Outlook-app voor Android is ontvangen, wordt verwijderd. Dit geldt alleen als Outlook wordt beveiligd door MAM-beleid. Anders wordt Outlook niet gewist wanneer het apparaat wordt uitgeschreven.|
 |Loskoppelen van Azure AD|Azure AD-record wordt verwijderd.|Azure AD-record wordt verwijderd.|
-|Contactpersonen |Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.|Contactpersonen die rechtstreeks vanuit de app zijn gesynchroniseerd met het systeemeigen adresboek, worden verwijderd. Contactpersonen die vanuit het systeemeigen adresboek zijn gesynchroniseerd met een andere externe bron, kunnen niet worden verwijderd. <br /> <br />Op dit moment wordt alleen de Outlook-app ondersteund.
 
 ### <a name="android-work-profile"></a>Android-werkprofiel
 

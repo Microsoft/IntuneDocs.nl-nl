@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0efc84da6a9efb594600b9ca33aa5eb7622c8101
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d1b553d262200e58a4c06dd0f4bcb72ca1398080
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203430"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386978"
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2019"></a>De vroege editie voor Microsoft Intune - januari 2019
 
@@ -48,9 +48,6 @@ U kunt beheerde Google Play-apps verwijderen uit Microsoft Intune. Als u een beh
 
 ### <a name="managed-google-play-app-type----1352580---"></a>App-type Beheerde Google Play-app <!-- 1352580 -->
 Met het type **beheerde Google Play-app** hebt u toestemming om specifiek [beheerde Google Play-apps](https://play.google.com/work/search?q=microsoft&c=apps) aan Intune toe te voegen. Als Intune-beheerder kunt u nu door goedgekeurde beheerde Google Play-apps bladeren en goedgekeurde beheerde Google Play-apps zoeken, goedkeuren, synchroniseren en toewijzen in Intune. U hoeft niet langer naar de beheerde Google Play-console afzonderlijk te bladeren en u hoeft niet opnieuw een verificatie uit te voeren. Selecteer in Intune de optie **Client-apps** > **Apps** > **Toevoegen**. In de lijst **App-type** selecteert u **Beheerd Google Play** als app-type.
-
-### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Voorbeeld van volledig beheerde, zakelijke Android-apparaten <!-- 1574342  -->
-Intune ondersteunt volledig beheerde Android-apparaten, een scenario waarin apparaten 'zakelijk eigendom' zijn en nauw worden beheerd door de IT-afdeling en gekoppeld zijn aan afzonderlijke gebruikers. Hierdoor kunnen beheerders het hele apparaat beheren, een uitgebreide reeks beleidscontroles afdwingen die niet beschikbaar zijn voor werkprofielen en gebruikers beperken tot de installatie van apps uit de beheerde Google Play Store. Ga naar **Apparaatinschrijving** > **Android-inschrijving** > **Volledig beheerde zakelijke gebruikersapparaten** om volledige beheerde Android-apparaten in te stellen. Let op: deze functie wordt momenteel als preview aangeboden. Sommige Intune-mogelijkheden, zoals certificaten, naleving en voorwaardelijke toegang, zijn momenteel niet beschikbaar voor volledig beheerde Android-gebruikersapparaten.
 
 ### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----1672660----"></a>Implementatie van online gelicentieerde Microsoft Store voor Bedrijven-apps <!-- 1672660  -->
 U kunt vereiste online gelicentieerde Microsoft Store voor Bedrijven-apps in de apparaatcontext toewijzen. Wanneer u op deze manier een Microsoft Store voor bedrijven-app implementeert, kan de app worden geïnstalleerd voor alle gebruikers op het apparaat. Dit is alleen van toepassing op Windows 10 RS4+ Desktop-apparaten. De optie om de app in de apparaatcontext te installeren, is beschikbaar op de toewijzingspagina voor client-apps voor gelicentieerde MSFB Online-apps.
@@ -130,9 +127,8 @@ De Intune macOS Bedrijfsportal biedt nu ondersteuning voor de donkere modus voor
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Door Microsoft aanbevolen instellingen gebruiken met beveiligingsbasislijnen <!-- 2055484 -->
 Intune is geïntegreerd met andere services die op beveiliging gericht zijn, inclusief Windows Defender ATP en Office 365 ATP. Klanten vragen om een gemeenschappelijke strategie en een samenhangende set van end-to-end beveiligingsworkflows voor alle Microsoft 365-diensten. Ons doel is om strategieën af te stemmen en oplossingen te ontwikkelen die beveiligingsactiviteiten en gebruikelijke beheerderstaken combineren. In Intune willen we dit doel bereiken door het publiceren van een set beveiligingsbasislijnen die door Microsoft zijn aanbevolen (**Intune** >  **Beveiligingsbasislijnen**).  Beheerders krijgen de mogelijkheid om direct op basis van deze basislijnen een beveiligingsbeleid op te stellen en dit vervolgens voor hun gebruikers te implementeren. Ze kunnen ook de aanbevolen procedures aanpassen aan de behoeften van hun organisatie. Intune zorgt ervoor dat apparaten deze basislijnen blijven naleven, en waarschuwt beheerders wanneer gebruikers of apparaten van de basislijnen afwijken.
 
-### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Geïmplementeerd WIP-beleid zonder gebruikersinschrijving <!-- 1434452 -->
-WIP-beleid (Windows Information Protection) kan worden ingezet zonder dat MDM-gebruikers hun Windows 10-apparaat hoeven in te schrijven. Met deze configuratie kunnen bedrijven hun bedrijfsdocumenten op basis van de WIP-configuratie beschermen, terwijl gebruikers hun eigen Windows-apparaten kunnen blijven beheren. Zodra documenten met WIP-beleid zijn beveiligd, kunnen de beschermde gegevens selectief worden gewist door een Intune-beheerder. Door een gebruiker en een apparaat te selecteren een en wisaanvraag te versturen, worden alle gegevens onbruikbaar die met het WIP-beleid zijn beschermd. Vanuit Intune in de Azure-portal selecteert u hiervoor **Mobiele app** > **App selectief wissen**.
-
+### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>Ondersteuning voor selectief wissen voor WIP Without Enrollment-apparaten <!-- 1434452 -->
+Met Windows Information Protection Without Enrollment (WIP-WE) kunnen klanten hun bedrijfsgegevens op Windows 10-apparaten beveiligen zonder gebruik te maken van volledige MDM-inschrijving. Zodra documenten met WIP-WE-beleid zijn beveiligd, kunnen de beschermde gegevens selectief worden gewist door een Intune-beheerder. Door een gebruiker en een apparaat te selecteren en een wisaanvraag te versturen, worden alle gegevens onbruikbaar die met het WIP-WE-beleid zijn beschermd. Vanuit Intune in de Azure-portal selecteert u hiervoor **Mobiele app** > **App selectief wissen**.
 
 <!-- 1809 start -->  
 
@@ -164,7 +160,7 @@ Van toepassing op Windows 10 en hoger
 
 Er zijn geen actieve meldingen op dit moment.
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 Zie [Wat is er nieuw in Microsoft Intune?](whats-new.md) voor meer informatie over recente ontwikkelingen.
 
 

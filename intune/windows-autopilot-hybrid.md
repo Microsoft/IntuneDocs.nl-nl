@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
-ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
+ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149658"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380476"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Apparaten die zijn gekoppeld aan Hybrid Azure Active Directory implementeren met Intune en Windows Autopilot (preview)
 U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn gekoppeld aan Hybrid Azure Active Directory. Volg hiertoe de onderstaande stappen.
@@ -116,6 +116,9 @@ De Intune-connector voor Active Directory moet worden geïnstalleerd op een comp
 6. Kies **Aanmelden**.
 7. Voer referenties in voor de rol gebruiker, globale beheerder of Intune-beheerder.
 8. Ga naar **Apparaatregistratie** > **Windows-registratie** > **Intune-connector voor Active Directory (preview)** en controleer of de status **Actief** is.
+
+ > [!NOTE]
+ > Nadat u bent **aangemeld** in de connector, duurt het een paar minuten duren voordat de connector in [Intune](https://aka.ms/intuneportal) wordt weergegeven. De connector wordt alleen weergegeven als deze met de Intune-service kan communiceren.
 
 ### <a name="configure-web-proxy-settings"></a>Webproxyinstellingen configureren
 

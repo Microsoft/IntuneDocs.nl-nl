@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/12/2019
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e607dc612f71cdf72322b9fa7ecf14abb5fd809
-ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
+ms.openlocfilehash: 971dc851714045a8a3b60dfe8ff6c6acc4419294
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270585"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325012"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Jamf Pro integreren met Intune in verband met nalevingsbeleid
 
@@ -83,51 +83,9 @@ U kunt Intune als volgt verbinden met Jamf Pro:
 
 Nadat u de integratie tussen Intune en Jamf hebt geconfigureerd, moet u [nalevingsbeleid toepassen op door Jamf beheerde apparaten](conditional-access-assign-jamf.md).
 
-## <a name="information-shared-from-jamf-pro-to-intune"></a>Informatie die door Jamf Pro wordt gedeeld met Intune
 
-Jamf Pro legt inventarisinformatie vast over beheerde macOS-apparaten. Jamf Pro geeft de volgende informatie door aan Intune:
-
-* Id Azure AD-apparaat
-* Status van de JAMF-inventaris (inventarisstatus van een computer die tijdens de afgelopen 24 uur is ingecheckt bij Jamf Pro)
-* Versie besturingssysteem
-* Id Azure AD-gebruiker
-* Versleuteld (FileVault 2)
-* Poortwachterstatus
-* Wachtwoord: minimum aantal tekensets
-* Wachtwoordverlooptijd (dagen)
-* Type wachtwoord: eenvoudig, alfanumeriek of onbekend
-* Automatische aanmelding voorkomen
-* Vereiste lengte van de wachtwoordcode
-* Wachtwoord: aantal eerdere wachtwoorden dat niet opnieuw mag worden gebruikt
-* Beveiliging systeemintegriteit
-* Tijd laatste check-in
-* Type architectuur
-* Beschikbare RAM-sleuven
-* Capaciteit van de accu
-* Opstart-ROM
-* Bussnelheid
-* Cachegrootte
-* Apparaatnaam
-* Lid van domein
-* Jamf-id
-* MAC-adres
-* Merk
-* Model
-* Model-id
-* NIC-snelheid
-* Aantal kernen
-* Aantal processors
-* Besturingssysteem
-* Platform
-* Processorsnelheid
-* Type processor
-* Secundair MAC-adres
-* Serienummer
-* SMC-versie
-* Totaal RAM
-* udid
-* E-mailadres gebruiker
 
 ## <a name="next-steps"></a>Volgende stappen
 
 - [Nalevingsbeleid toepassen op door Jamf beheerde apparaten](conditional-access-assign-jamf.md)
+- [Gegevens die Jamf verzendt naar Intune](data-jamf-sends-to-intune.md)

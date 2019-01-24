@@ -15,12 +15,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: db499f2d55318919f420e03be0883ec70d949d20
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 576e690e6f77480756e1406e6c0bea8696c422ea
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180356"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380452"
 ---
 # <a name="set-up-intune"></a>Intune instellen
 
@@ -30,7 +30,7 @@ Deze installatiestappen helpen u om Mobile Device Management (MDM) in te schakel
 
 Sommige stappen, zoals het instellen van een Intune-abonnement en het instellen van de MDM-instantie, zijn voor de meeste scenario’s vereist. Andere stappen, zoals het configureren van een aangepast domein of het toevoegen van apps, zijn optioneel en afhankelijk van de behoeften van uw organisatie.
 
-Als u momenteel Microsoft System Center Configuration Manager gebruikt voor het beheren van computers en servers, kunt u [Configuration Manager uitbreiden voor het beheer van mobiele apparaten](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Als u momenteel Microsoft System Center Configuration Manager gebruikt voor het beheer van computers en servers, kunt u [Configuration Manager in de cloud koppelen met co-beheer ](https://docs.microsoft.com/sccm/comanage/overview).
 
 >[!TIP]
 >Als u ten minste 150 licenties koopt voor Intune als onderdeel van een in aanmerking komend abonnement, kunt u *FastTrack Center Benefit* gebruiken. Met deze service werken Microsoft-specialisten met u samen om uw omgeving gereed te maken voor Intune. Zie [FastTrack Center Benefit-proces voor Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).

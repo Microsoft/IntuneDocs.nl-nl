@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4b76625276a34c027ae8c74f1c6a3977c4a7e8bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: db6aed3d87b8a8df55c5c95e52eb3dd9ccc690a7
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179946"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386968"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>App-configuratiebeleidsregels toevoegen voor beheerde Android-apparaten
 
@@ -62,13 +62,17 @@ Stel voor elke sleutel en waarde in de configuratie het volgende in:
 ### <a name="supported-variables-for-configuration-values"></a>Ondersteunde variabelen voor configuratiewaarden
 
 U kunt de volgende opties kiezen als u Variabele als het waardetype kiest:
-- User Principal Name: bijvoorbeeld **John@contoso.com**
-- Mail: bijvoorbeeld **John@contoso.com**
-- Partial UPN: bijvoorbeeld **Jan**
-- Account-id: bijvoorbeeld **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- Apparaat-id: bijvoorbeeld **b9841cd9-9843-405f-be28-b2265c59ef97**
-- Gebruikers-id: bijvoorbeeld **3ec2c00f-b125-4519-acf0-302ac3761822**
-- Gebruikersnaam: bijvoorbeeld **Jan de Vries**
+
+| Optie | Voorbeeld |
+|----|----|
+| Mail | john@contoso.com |
+| User Principal Name | john@contoso.com |
+| Partial UPN | jan |
+| Domein | contoso.com |
+| Gebruikersnaam | Jan de Vries |
+| Account-id | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| Gebruikers-id | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| Apparaat-id | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Alleen geconfigureerde organisatieaccounts toestaan in apps met meerdere identiteiten 
 

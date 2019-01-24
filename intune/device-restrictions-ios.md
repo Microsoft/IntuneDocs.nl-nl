@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6fb1c65199b68f7492b1f397c4f6075e345d3e8
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203668"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380504"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Met iOS-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -151,12 +151,12 @@ De supervisiemodus voor iOS kan alleen worden ingeschakeld tijdens de initiële 
 - **Expliciete muziek-, podcast- of nieuwsinhoud op iTunes (alleen onder supervisie)**: Selecteer **Blokkeren** om expliciete muziek-, podcast- of nieuwsinhoud op iTunes te blokkeren. **Niet geconfigureerd**: geeft het apparaat toegang tot inhoud voor volwassenen in de Store.
 - **Inhoud uit Book Store met de markering Erotisch downloaden**: Selecteer **Blokkeren** om te voorkomen dat gebruikers media downloaden uit de Book Store die is gelabeld als Erotisch. **Niet geconfigureerd**: staat de gebruiker toe om boeken te downloaden uit de categorie Erotisch.
 - **Zakelijke documenten weergeven in niet-beheerde apps**: Selecteer **Blokkeren** om te voorkomen dat niet-zakelijke documenten in niet-beheerde apps worden weergegeven. **Niet geconfigureerd**: staat gebruikers toe om zakelijke documenten weer te geven in elke willekeurige app. Voorbeeld: u wilt voorkomen dat gebruikers bestanden uit de OneDrive-app opslaan in Dropbox. Configureer deze instelling als **Blokkeren**. Nadat het apparaat het beleid heeft ontvangen (bijvoorbeeld nadat het opnieuw is opgestart), kunnen er geen bestanden meer worden opgeslagen.
-  - **Toestaan dat beheerde apps contactpersonen doorgeven aan niet-beheerde accounts voor contactpersonen (alleen onder supervisie)**: Wanneer deze optie is ingesteld op **Toestaan**, kunnen gebruikers de contactinformatie in Outlook van een persoon, zoals zakelijke contactpersonen, toevoegen aan of synchroniseren met de ingebouwde Contacten-app op het apparaat. Wanneer deze optie is ingesteld op **Niet geconfigureerd**, kunnen gebruikers geen contactpersonen in Outlook toevoegen aan de ingebouwde Contacten-app op het apparaat.
+  - **Toestaan dat beheerde apps contactpersonen doorgeven aan niet-beheerde accounts voor contactpersonen**: Wanneer deze optie is ingesteld op **Toestaan**, kunnen gebruikers de contactinformatie in Outlook van een persoon, zoals zakelijke contactpersonen, toevoegen aan of synchroniseren met de ingebouwde Contacten-app op het apparaat. Wanneer deze optie is ingesteld op **Niet geconfigureerd**, kunnen gebruikers geen contactpersonen in Outlook toevoegen aan de ingebouwde Contacten-app op het apparaat.
   
     Als u deze instelling wilt gebruiken, stelt u **Zakelijke documenten weergeven in niet-beheerde apps** in op **Blokkeren**.
   
 - **Niet-zakelijke documenten weergeven in zakelijke apps**: Met **Blokkeren** voorkomt u dat niet-zakelijke documenten in zakelijke apps worden weergegeven. **Niet geconfigureerd**: staat gebruikers toe elk willekeurig document weer te geven in zakelijke beheerde apps.
-  - **Toestaan dat niet-beheerde apps contactpersonen lezen in beheerde accounts voor contactpersonen (alleen onder supervisie)**: Wanneer deze optie is ingesteld op **Toestaan**, kunnen gebruikers de contactgegevens van een persoon in de app Contacten toevoegen aan Outlook. Wanneer deze optie is ingesteld op **Niet geconfigureerd**, wordt het lezen en het verwijderen van dubbele contactpersonen uit de ingebouwde app Contacten op het apparaat voorkomen.
+  - **Toestaan dat niet-beheerde apps contactpersonen lezen in beheerde accounts voor contactpersonen**: Wanneer deze optie is ingesteld op **Toestaan**, kunnen gebruikers de contactgegevens van een persoon in de app Contacten toevoegen aan Outlook. Wanneer deze optie is ingesteld op **Niet geconfigureerd**, wordt het lezen en het verwijderen van dubbele contactpersonen uit de ingebouwde app Contacten op het apparaat voorkomen.
   
     Als u deze instelling wilt gebruiken, stelt u **Niet-zakelijke documenten weergeven in zakelijke apps** in op **Blokkeren**.
   

@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c32effb645b329c8095ec8757a980b1f3d80a4d7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 698bc4e7e2d2cf8ece1b1c17b091a91c76a7d178
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184283"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386896"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Uw Intune-account met uw Android Enterprise-account verbinden
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ter ondersteuning van apparaten met een Android-werkprofiel en Android-kioskapparaten moet u uw Intune-tenantaccount koppelen aan uw Android Enterprise-account. 
+Ter ondersteuning van apparaten met een [Android-werkprofiel](android-work-profile-enroll.md), [volledig beheerde Android-apparaten](android-fully-managed-enroll.md) en [toegewezen Android-apparaten](android-kiosk-enroll.md) moet u uw Intune-tenantaccount koppelen aan uw Android Enterprise-account.  
 
 > [!NOTE]
 > Als gevolg van interactie tussen domeinen van Google en Microsoft moet u in deze stap mogelijk uw browserinstellingen aanpassen.  Zorg ervoor dat 'portal.azure.com' en 'play.google.com' zich in dezelfde beveiligingszone bevinden in uw browser.

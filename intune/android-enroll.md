@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 12/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 79a1a03f74db8e44dc3ee4d6575e193ce7841e24
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3d86afec4e501533ab0048e866969a5bf73c2c57
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031888"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387048"
 ---
 # <a name="enroll-android-devices"></a>Android-apparaten inschrijven
 
@@ -29,9 +29,10 @@ ms.locfileid: "53031888"
 
 Als Intune-beheerder kunt u de volgende Android-apparaten beheren:
 - Android-apparaten, inclusief Samsung Knox Standard-apparaten.
-- Android Enterprise-apparaten, inclusief [apparaten met Android-werkprofiel](#enable-enrollment-of-android-for-work-devices) en kioskapparaten.
-
-Apparaten waarop Samsung Knox Standard wordt uitgevoerd, bieden ondersteuning voor beheer van meerdere gebruikers in Intune. Eindgebruikers kunnen hun Azure AD-referenties gebruiken om zich aan en af te melden bij het apparaat. Het apparaat wordt centraal beheerd, ongeacht of het in gebruik is of niet. Wanneer gebruikers zich aanmelden, hebben ze toegang tot apps en wordt er een eventueel beleid toegepast. Wanneer ze zich afmelden, worden alle app-gegevens gewist.
+- Android Enterprise-apparaten, waaronder:
+    - **Apparaten met een Android-werkprofiel**: Persoonlijke apparaten die zijn gemachtigd voor toegang tot bedrijfsgegevens. Beheerders kunnen werkaccounts, apps en gegevens beheren. Persoonlijke gegevens op het apparaat worden geïsoleerd van bedrijfsgegevens en beheerders hebben geen toegang tot persoonlijke instellingen of gegevens. 
+    - **Toegewezen Android-apparaten**: Apparaten in bedrijfseigendom voor eenmalig gebruik, bijvoorbeeld voor digitale ondertekening, het afdrukken van tickets of inventarisbeheer. Beheerders vergrendelen het gebruik van een apparaat voor een beperkt aantal apps en webkoppelingen. Ook wordt voorkomen dat gebruikers andere apps kunnen toevoegen of andere acties op het apparaat kunnen uitvoeren.
+    - **Volledig beheerde Android-apparaten**: Apparaten in bedrijfseigendom voor één gebruiker, die exclusief worden gebruikt voor werk, niet voor persoonlijk gebruik. Beheerders kunnen het hele apparaat beheren en beleidscontroles afdwingen die niet beschikbaar zijn voor werkprofielen. 
 
 ## <a name="prerequisite"></a>Vereiste
 
@@ -52,14 +53,16 @@ Zie [Beperkingen voor apparaattypen instellen](enrollment-restrictions-set.md) a
 
 ## <a name="set-up-android-enterprise-enrollment"></a>Android Enterprise-inschrijving instellen
 
-Android Enterprise omvat een reeks functies en services voor Android-apparaten waarmee persoonlijke apps en gegevens worden gescheiden van een werkprofiel met zakelijke apps en gegevens. Android Enterprise-apparaten zijn onder meer apparaten met werkprofiel en kioskapparaten. 
+Android Enterprise omvat een reeks functies en services voor Android-apparaten waarmee persoonlijke apps en gegevens worden gescheiden van een werkprofiel met zakelijke apps en gegevens. Android Enterprise-apparaten zijn apparaten met een werkprofiel, volledig beheerde apparaten en toegewezen apparaten. 
 
-Als u uw inschrijving voor Android Enterprise-apparaten wilt instellen, moet u eerst [Android Enterprise koppelen aan Intune](connect-intune-android-enterprise.md). Nadat deze stap is voltooid, kunt u het volgende doen:
-
-[Inschrijvingen Android-werkprofiel instellen](android-work-profile-enroll.md)
-[inschrijvingen Android-kiosk instellen](android-kiosk-enroll.md)
+- [Inschrijving van Android-werkprofiel instellen](android-work-profile-enroll.md)
+- [Inschrijving van toegewezen Android-apparaat instellen](android-kiosk-enroll.md)
+- [Inschrijving van volledig beheerd Android-apparaat instellen](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Ervaring van eindgebruikers bij het inschrijven van een Samsung Knox-apparaat
+
+Samsung Knox Standard-apparaten bieden ondersteuning voor beheer van meerdere gebruikers in Intune. Eindgebruikers kunnen hun Azure AD-referenties gebruiken om zich aan en af te melden bij het apparaat. Het apparaat wordt centraal beheerd, ongeacht of het in gebruik is of niet. Wanneer gebruikers zich aanmelden, hebben ze toegang tot apps en wordt er een eventueel beleid toegepast. Wanneer ze zich afmelden, worden alle app-gegevens gewist.
+
 Er zijn verschillende overwegingen bij het inschrijven van Samsung Knox-apparaten:
 -   Zelfs als er voor geen enkel beleid een pincode is vereist, moet het apparaat over ten minste één viercijferige pincode beschikken om te kunnen worden geregistreerd. Als het apparaat niet over een pincode beschikt, wordt de gebruiker gevraagd er een te maken.
 -   Er is geen gebruikersinteractie voor Workplace Join Certificates (WPJ).
@@ -69,3 +72,9 @@ Er zijn verschillende overwegingen bij het inschrijven van Samsung Knox-apparate
 -   De gebruiker wordt niet gevraagd extra certificaten te installeren die door een service voor toegang tot bedrijfsrecoures worden gepusht.
 - Op sommige oudere Knox-apparaten worden gebruikers om aanvullende certificaten gevraagd die voor toegang tot bedrijfsresources worden gebruikt.
 - Als de WPJ niet kan worden geïnstalleerd op een Samsung Mini-apparaat, met ofwel de foutmelding **Certificaat niet gevonden** of de fout **Kan apparaat niet registreren**, dient u de nieuwste Samsung Firmware-updates te installeren.
+
+## <a name="next-steps"></a>Volgende stappen
+
+- [Inschrijving van Android-werkprofiel instellen](android-work-profile-enroll.md)
+- [Inschrijving van toegewezen Android-apparaat instellen](android-kiosk-enroll.md)
+- [Inschrijving van volledig beheerd Android-apparaat instellen](android-fully-managed-enroll.md)

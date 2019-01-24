@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ffe25f7e4870f2ea6969d1261f33c69362d75469
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: b96363d679a6f09327bf9a1b46421e786d1956a8
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032024"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316879"
 ---
 # <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Android- en Android Enterprise-apparaatinstellingen voor het configureren van e-mail, verificatie en synchronisatie in Intune
 
@@ -69,7 +69,9 @@ Als Intune-beheerder kunt u e-mailinstellingen maken en toewijzen aan de volgend
 
 ### <a name="content-sync-settings"></a>Instellingen voor inhoudssynchronisatie
 
-- **Inhoudstype voor synchronisatie**: Selecteer de inhoudstypen die u wilt synchroniseren met apparaten. U hebt de volgende opties:
+- **Inhoudstype voor synchronisatie**: Selecteer de inhoudstypen die u wilt synchroniseren op de apparaten. **Niet geconfigureerd** zorgt ervoor dat deze instelling wordt uitgeschakeld. Wanneer deze optie is ingesteld op **Niet geconfigureerd** en een eindgebruiker synchronisatie op het apparaat inschakelt, wordt de synchronisatie uitgeschakeld wanneer het apparaat wordt gesynchroniseerd met Intune, omdat het beleid opnieuw wordt afgedwongen. 
+
+  U kunt de volgende inhoud synchroniseren: 
   - **Contactpersonen**
   - **Kalender**
   - **Taken**
@@ -84,7 +86,9 @@ Als Intune-beheerder kunt u e-mailinstellingen maken en toewijzen aan de volgend
   - Als u **Certificaat** hebt geselecteerd, selecteert u een SCEP- of PKCS-clientcertificaatprofiel dat u eerder hebt gemaakt voor verificatie van de Exchange-verbinding.
 - **SSL**: Gebruik SSL-communicatie (Secure Sockets Layer) wanneer u e-mailberichten verzendt, e-mailberichten ontvangt en communiceert met de Exchange-server.
 - **Aantal dagen e-mail voor synchronisatie**: Kies het aantal dagen waarvoor u e-mail wilt synchroniseren of selecteer **Onbeperkt** om alle beschikbare e-mail te synchroniseren.
-- **Inhoudstype voor synchronisatie** (alleen Nine Work): Selecteer de inhoudstypen die u wilt synchroniseren met apparaten. U hebt de volgende opties:
+- **Inhoudstype voor synchronisatie** (alleen Nine Work): Selecteer de inhoudstypen die u wilt synchroniseren op de apparaten. **Niet geconfigureerd** zorgt ervoor dat deze instelling wordt uitgeschakeld. Wanneer deze optie is ingesteld op **Niet geconfigureerd** en een eindgebruiker synchronisatie op het apparaat inschakelt, wordt de synchronisatie uitgeschakeld wanneer het apparaat wordt gesynchroniseerd met Intune, omdat het beleid opnieuw wordt afgedwongen. 
+
+  U kunt de volgende inhoud synchroniseren: 
   - **Contactpersonen**
   - **Kalender**
   - **Taken**

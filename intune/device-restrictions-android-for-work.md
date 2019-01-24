@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203600"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387012"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -87,7 +87,7 @@ In dit artikel vindt u een overzicht en beschrijving van de verschillende instel
 
 ### <a name="kiosk-settings"></a>Kioskinstellingen
 
-U kunt een apparaat configureren voor het uitvoeren van één app of een aantal apps. Wanneer een apparaat in de kioskmodus staat, zijn alleen de apps beschikbaar die u expliciet hebt toegevoegd.
+U kunt een apparaat configureren voor het uitvoeren van één app of een aantal apps. Wanneer een apparaat in de kioskmodus staat, zijn alleen de apps beschikbaar die u expliciet hebt toegevoegd. Deze instellingen zijn van toepassing op toegewezen Android-apparaten, niet op volledig beheerde Android-apparaten.
 
 **Kioskmodus**: Kies dit als op het apparaat een of meer apps moeten worden uitgevoerd.
 
