@@ -389,6 +389,11 @@ items:
             href: mtd-connector-enable.md
       - name: Windows Defender ATP
         href: advanced-threat-protection.md
+      - name: Beveiligingsbasislijnen
+        href: security-baselines.md
+        items:
+        - name: Uw basislijnen bewaken
+          href: security-baselines-monitor.md
       - name: Endpoint Protection
         href: endpoint-protection-configure.md
     - name: Netwerktoegangsbeheer
@@ -442,7 +447,7 @@ items:
           items:
           - name: De bedrijfsportal-app handmatig toevoegen
             href: store-apps-company-portal-app.md
-        - name: Apps voor Android-werkprofiel
+        - name: Beheerde Google Play-apps
           href: apps-add-android-for-work.md
         - name: Office 365-apps voor Windows 10
           href: apps-add-office365.md
@@ -569,6 +574,8 @@ items:
         href: troubleshoot-app-install.md
       - name: Auditlogboeken voor Intune-activiteiten
         href: monitor-audit-logs.md
+      - name: Logboeken controleren met Azure Monitor
+        href: review-logs-using-azure-monitor.md
       - name: App-logboeken voor beveiliging controleren
         href: app-protection-policy-settings-log.md
       - name: Problemen met e-mailprofielen oplossen
@@ -938,9 +945,9 @@ items:
       href: data-outside-protect.md
     - name: Gegevenslekken op niet-beheerde apparaten voorkomen
       href: data-leak-prevention.md
-ms.openlocfilehash: 79bff18a23b6613fbc1e2522b6fd7c6c414ffef5
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.openlocfilehash: 70240d3c6969ffe86d3b32b14b50b390020b10b0
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899124"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072487"
