@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 91f338a768ef67106a9b65de759dd74da2902138
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387012"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072555"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -48,7 +48,6 @@ In dit artikel vindt u een overzicht en beschrijving van de verschillende instel
 - **Wi-Fi-instellingswijzigingen**: Kies **Blokkeren** als u wilt voorkomen dat gebruikers Wi-Fi-instellingen wijzigen die zijn geconfigureerd door de eigenaar van het apparaat. Gebruikers kunnen hun eigen Wi-Fi-configuraties maken. **Niet geconfigureerd**: staat gebruikers toe om de Wi-Fi-instellingen op het apparaat te wijzigen.
 - **Configuratie van Wi-Fi-toegangspunt**: Kies **Blokkeren** als u wilt voorkomen dat gebruikers Wi-Fi-configuraties maken of wijzigen. **Niet geconfigureerd**: staat gebruikers toe om de Wi-Fi-instellingen op het apparaat te wijzigen.
 - **Bluetooth-configuratie**: Kies **Blokkeren** als u wilt voorkomen dat gebruikers Bluetooth configureren op het apparaat. **Niet geconfigureerd**: hiermee kan de gebruiker Bluetooth op het apparaat gebruiken.
-- **Contactpersonen delen via Bluetooth**: Kies **Blokkeren** als u de toegang tot werkcontactpersonen vanaf een ander apparaat wilt blokkeren, bijvoorbeeld vanuit een systeem in de auto wanneer een Android-apparaat via Bluetooth is gekoppeld. **Niet geconfigureerd**: biedt toegang tot werkcontactpersonen op een ander Bluetooth-apparaat dat is gekoppeld met het Android-apparaat.
 - **Tethering en toegang tot hotspots**: Kies **Blokkeren** als u tethering en toegang tot draagbare hotspots wilt blokkeren. **Niet geconfigureerd**: tethering en toegang tot draagbare hotspots is toegestaan.
 - **USB-opslag**: Kies **Toestaan** als u toegang tot USB-opslag op het apparaat toestaat. **Niet geconfigureerd**: voorkomt toegang tot USB-opslag.
 - **USB-bestandsoverdracht**: Kies **Blokkeren** als u bestandsoverdracht via USB wilt voorkomen. **Niet geconfigureerd**: bestandsoverdracht is toegestaan.

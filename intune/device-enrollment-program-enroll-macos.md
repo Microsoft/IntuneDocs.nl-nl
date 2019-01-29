@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 91d85182ccb51968915511d6d1941a350e3a9695
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032347"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068285"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>macOS-apparaten automatisch inschrijven met het Device Enrollment Program of Apple School Manager
 
@@ -150,7 +150,7 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor apparaten maken
     | <strong>FileVault</strong> | Geef de gebruiker de mogelijkheid Siri in te stellen. |
     | <strong>Diagnostische gegevens over iCloud</strong> | Geef de gebruiker de mogelijkheid diagnostische gegevens naar Apple te verzenden. |
     | <strong>Registratie</strong>| Vraag de gebruiker het apparaat te registreren. |
-
+    
    
 
 10. Kies **OK**.

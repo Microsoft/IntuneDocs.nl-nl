@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 45c1d1f293454b32b97c8147f08809565714743a
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: d457ca413f3069e8528dc6f4951f834e3f1dac6a
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387202"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146907"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Intune-inschrijving van volledig beheerde Android-apparaten instellen (preview)
 
@@ -38,7 +38,7 @@ U hebt een zelfstandige Intune-tenant nodig om volledig beheerde Android-apparat
 
 Apparaten moeten voldoen aan de volgende vereisten om te worden beheerd als een volledig beheerd Android-apparaat:
 
-- Android-besturingssysteemversie 6.0 en hoger.
+- Android-besturingssysteemversie 5.1 en hoger.
 - Op de apparaten moet een build van Android worden uitgevoerd die connectiviteit met GMS (Google Mobile Services) heeft. Op de apparaten moet GMS beschikbaar zijn en de apparaten moeten in staat zijn om verbinding te maken met GMS.
 
 Er geldt geen beperking voor de apparaatfabrikant/OEM indien aan de bovenstaande vereisten is voldaan.

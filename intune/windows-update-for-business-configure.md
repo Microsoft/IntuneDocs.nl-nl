@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297380"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831561"
 ---
 # <a name="manage-software-updates-in-intune"></a>Software-updates beheren in Intune
 
@@ -106,7 +106,7 @@ Nadat u de updateringen hebt gemaakt, kunt u deze toewijzen aan groepen apparate
 
    - **Blokkeren dat gebruiker Windows-updates kan onderbreken**: Standaard toegestaan. Gebruik deze instelling om toe te staan of te voorkomen dat gebruikers de installatie van een update onderbreken vanuit de *Instellingen* van hun computer. 
       
-   - **Delivery Optimization-downloadmodus**: Delivery Optimization wordt niet meer als onderdeel van een update-ring voor Windows 10 geconfigureerd onder Software-updates. Delivery Optimization wordt nu ingesteld via de apparaatconfiguratie. Eerdere configuraties blijven echter beschikbaar in de console. U kunt deze eerdere configuraties verwijderen door ze te bewerken en te markeren als *Niet geconfigureerd*, maar verder kunnen ze niet worden gewijzigd. Zie [Verplaatsen van bestaande update-ringen naar Delivery Optimization](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) om conflicten tussen nieuwe en oude beleidsregels te voorkomen en uw instellingen vervolgens te verplaatsen naar een Delivery Optimization-profiel. 
+   - **Delivery Optimization-downloadmodus**: Delivery Optimization wordt niet meer als onderdeel van een update-ring voor Windows 10 geconfigureerd onder Software-updates. Delivery Optimization wordt nu ingesteld via de apparaatconfiguratie. Eerdere configuraties blijven echter beschikbaar in de console. U kunt deze eerdere configuraties verwijderen door ze te bewerken en te markeren als *Niet geconfigureerd*, maar verder kunnen ze niet worden gewijzigd. Zie [Verplaatsen van bestaande update-ringen naar Delivery Optimization](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) om conflicten tussen nieuwe en oude beleidsregels te voorkomen en uw instellingen vervolgens te verplaatsen naar een Delivery Optimization-profiel. 
 
 5. Wanneer u klaar bent, selecteert u **OK**. Selecteer in **Update-ring maken** de optie **Maken**.
 

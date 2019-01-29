@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4082b845643aae47464e4df14ac6621fcf8f39cf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f3bea9b1678669aa568c44e63f57aebd832cf203
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180248"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751175"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Android-apparaten met een werkprofiel beheren met Intune
 
@@ -67,7 +67,7 @@ Appbeveiligingsbeleid dat wordt toegepast, wordt volledig ondersteund in het wer
 
 VPN-ondersteuning is vergelijkbaar met Android VPN-profielen. Dezelfde VPN-providers en algemene configuratieopties zijn beschikbaar voor Android Enterprise-beheer, met twee verschillen:
 
--  **VPN voor het werkprofiel**: VPN-verbindingen zijn beperkt tot de apps die zijn geïmplementeerd voor het werkprofiel. Alleen apps die met Android Enterprise worden beheerd, kunnen de VPN-verbinding gebruiken. Persoonlijke apps op het apparaat kunnen geen beheerde VPN-verbinding gebruiken. Zie [Android enterprise VPN settings](vpn-settings-android.md#android-for-work-vpn-settings) (VPN-instellingen voor Android Enterprise) voor meer informatie.
+-  **VPN voor het werkprofiel**: VPN-verbindingen zijn beperkt tot de apps die zijn geïmplementeerd voor het werkprofiel. Alleen apps die met Android Enterprise worden beheerd, kunnen de VPN-verbinding gebruiken. Persoonlijke apps op het apparaat kunnen geen beheerde VPN-verbinding gebruiken. Zie [Android enterprise VPN settings](vpn-settings-android.md#android-enterprise-vpn-settings) (VPN-instellingen voor Android Enterprise) voor meer informatie.
 
 -  **App-specifiek VPN**: app-specifiek VPN kan in Intune worden geconfigureerd als de VPN-provider het volgende ondersteunt:
     - configuratie voor app-specifiek VPN

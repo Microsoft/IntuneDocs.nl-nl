@@ -16,18 +16,19 @@ ms.reviewer: derriw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 40549d8fa9bead312f39ca9a782fb555e1022cd6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fd71af5d52f81d05ce424212e029f01c59a33a8d
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180405"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831578"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>De Intune-instellingen voor de iOS-app Classroom configureren
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
->[!NOTE]
->Intune-instellingen voor de app Classroom zijn verouderd in Intune. Dit artikel is alleen van toepassing voor gebruikers met een Education-profiel in Intune.
+
+> [!NOTE]
+> Intune-instellingen voor de app Classroom zijn verouderd in Intune. Dit artikel is alleen van toepassing voor gebruikers met een Education-profiel in Intune.
 
 ## <a name="introduction"></a>Inleiding
 [Classroom](https://itunes.apple.com/app/id1085319084) is een app waarmee docenten het leren kunnen begeleiden en op apparaten van studenten in het leslokaal kunnen beheren. Met de app kunnen leraren bijvoorbeeld:

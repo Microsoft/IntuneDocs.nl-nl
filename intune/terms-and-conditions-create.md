@@ -16,12 +16,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 7283b728e519eb2ca5a9a0b7516774c8cfc26f9b
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032296"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831510"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Voorwaarden voor gebruikerstoegang
 
@@ -29,7 +29,7 @@ ms.locfileid: "53032296"
 
 Als Intune-beheerder kunt u vereisen dat gebruikers de voorwaarden van uw bedrijf accepteren voordat ze de bedrijfsportal-app voor de volgende zaken gebruiken:
 - apparaten inschrijven
-- resources openen, zoals bedrijfs-apps en hun Postvak IN.
+- resources openen, zoals bedrijfs-apps en hun Postvak IN.    
 De configuratie van voorwaarden is optioneel.
 
 U kunt meerdere sets met voorwaarden maken en deze toewijzen aan verschillende groepen om bijvoorbeeld verschillende talen te ondersteunen.
