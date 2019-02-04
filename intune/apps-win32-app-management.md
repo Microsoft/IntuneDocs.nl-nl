@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734286"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068319"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune (zelfstandig) - Win32-app-beheer (openbare preview)
 
@@ -98,7 +98,7 @@ Net als bij een LOB-app (Line-Of-Business) kunt u een Win32-app aan Microsoft In
     - **Deze weergeven als aanbevolen app in de bedrijfsportal**: Geef de app prominent weer op de hoofdpagina van de bedrijfsportal wanneer gebruikers door apps bladeren.
     - **Informatie-URL**: voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
     - **Privacy-URL**: voer de URL in van een website die privacyinformatie over deze app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
-    - **Ontwikkelaar**: voer de naam in van de app-ontwikkelaar (optioneel).
+    - **Ontwikkelaar**: Voer de naam in van de app-ontwikkelaar (optioneel).
     - **Eigenaar**: voer een naam in voor de eigenaar van deze app (optioneel). Bijvoorbeeld **HR-afdeling**.
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
     - **Logo**: upload een pictogram dat u aan de app wilt koppelen. Het pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
@@ -239,6 +239,9 @@ De eindgebruiker ziet de pop-upmeldingen van Windows voor de vereiste en beschik
 De volgende afbeelding informeert de eindgebruiker dat er app-wijzigingen worden aangebracht aan het apparaat.
 
 ![Schermafbeelding die aan de gebruiker meldt dat er wijzigingen aan de app worden uitgevoerd](./media/apps-win32-app-09.png)    
+
+## <a name="toast-notifications-for-win32-apps"></a>Toast-meldingen voor Win32-apps 
+Indien nodig, kunt u per app-toewijzing onderdrukken dat toast-meldingen voor eindgebruikers worden weergegeven. Vanuit Intune selecteert u **Client-apps** > **Apps** > selecteer de app > **Toewijzingen** > **Groepen opnemen**. 
 
 ## <a name="troubleshoot-win32-app-issues"></a>Problemen met Win32-apps oplossen
 Agentlogboeken op de clientcomputer staan doorgaans in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. U kunt `CMTrace.exe` gebruiken om deze logboekbestanden weer te geven. *CMTrace.exe* kan worden gedownload via [SCCM-clienthulpprogramma's](https://docs.microsoft.com/sccm/core/support/tools). 

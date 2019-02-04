@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/26/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 5981b3dbb74209fbd4d7f0ab03adb5a35a41954b
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203532"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072572"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Instellingen voor Windows 10 (en hoger) om apparaten te beveiligen met Intune
 
@@ -152,6 +152,9 @@ Wordt ondersteund op de volgende edities van Windows 10:
 Basisinstellingen zijn universele BitLocker-instellingen voor alle soorten gegevensstations. Met deze instellingen wordt beheerd welke schijfversleutelingstaken of configuratieopties de eindgebruiker kan wijzigen op alle soorten gegevensstations.
 
 - **Waarschuwing voor andere schijfversleuteling**: Selecteer **Blokkeren** om de waarschuwing uit te schakelen als op de computers van gebruikers andere schijfversleuteling actief is. **Niet geconfigureerd** (standaard): hiermee wordt toegestaan dat de waarschuwing wordt weergegeven.
+    - **Standaardgebruikers toestaan om versleuteling in te schakelen tijdens Azure AD Join**: Door **Toestaan** te kiezen, kunnen standaardgebruikers/niet-beheerders BitLocker-versleuteling inschakelen wanneer de gebruiker is aangemeld. Deze instelling is alleen van toepassing op apparaten met Azure Active Directory Joined (Azure ADJ). Met **Niet geconfigureerd** kunnen alleen beheerders BitLocker-versleuteling inschakelen op het apparaat.
+      
+      Deze instelling is alleen van toepassing op apparaten met Azure Active Directory Joined (Azure ADJ). Tevens dient de instelling **Waarschuwing voor andere schijfversleuteling** ingesteld te zijn op **Blokkeren**.
 - **Versleutelingsmethoden configureren**: U moet deze instelling **inschakelen** om versleutelingsalgoritmen te configureren voor het besturingssysteem, de gegevens en de verwisselbare stations. Wanneer **Niet geconfigureerd** (standaard) is ingesteld, gebruikt BitLocker XTS-AES-128-bits als de standaardmethode voor versleuteling, of wordt de versleutelingsmethode gebruikt die is opgegeven door een installatiescript.
   - **Versleuteling voor stations met besturingssysteem**: Kies de versleutelingsmethode voor stations met een besturingssysteem. Het is raadzaam om het algoritme XTS AES te gebruiken.
   - **Versleuteling voor vaste gegevensschijven**: Kies de versleutelingsmethode voor vaste (ingebouwde) schijven, ook wel 'harde schijven' genoemd. Het is raadzaam om het algoritme XTS AES te gebruiken.

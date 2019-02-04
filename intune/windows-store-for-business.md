@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1584344907df168a98f947e187d6f0f0ef4a492a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d6ee36785c4134dd1c346bdc464096e832df3a9c
+ms.sourcegitcommit: f854ed8619ac66fe626198d8e4a8cac2e0c0710a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54460052"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Apps die u hebt aangeschaft in Microsoft Store voor Bedrijven, beheren met Microsoft Intune
 
@@ -52,12 +52,12 @@ Daarnaast worden gerelateerde sets en gelicentieerde offline-apps die via de Mic
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Uw Microsoft Store voor Bedrijven-account koppelen aan Intune
 Voordat u synchronisatie inschakelt in de Intune-console, moet u uw Store-account configureren om Intune te gebruiken als beheerprogramma:
-1. Zorg ervoor dat u zich bij Windows Store voor Bedrijven aanmeldt met hetzelfde tenantaccount dat u gebruikt om u aan te melden bij Intune.
-2. Kies in Windows Store voor Bedrijven **Instellingen** > **Beheerprogramma's**.
-3. Kies op de pagina Beheerprogramma's de optie **Beheerprogramma toevoegen** en kies **Microsoft Intune**.
+1. Zorg ervoor dat u zich bij [Microsoft Store voor Bedrijven](https://www.microsoft.com/business-store) aanmeldt met hetzelfde tenantaccount dat u gebruikt om u aan te melden bij Intune.
+2. Kies in de Store voor Bedrijven het tabblad **Beheren**, selecteer **Instellingen**, en kies het tabblad **Verdelen**.
+3. Als u **Microsoft Intune** niet specifiek beschikbaar hebt als een hulpprogramma voor het beheer van mobiele apparaten, kiest u **Beheerprogramma toevoegen** om **Microsoft Intune** toe te voegen. Als u **Microsoft Intune** niet hebt geactiveerd als uw beheerprogramma voor mobiele apparaten, klikt u op **Activeren** naast **Microsoft Intune**. Let op: u moet **Microsoft Intune** in plaats van **Microsoft Intune-inschrijving** activeren.
 
 > [!NOTE]
-> Eerder kon u maar één beheerhulpprogramma koppelen om apps toe te wijzen via Microsoft Store voor Bedrijven. U kunt nu meerdere beheerhulpprogramma's met de Store koppelen, bijvoorbeeld Intune en Configuration Manager.
+> Eerder kon u maar één beheerhulpprogramma koppelen om apps toe te wijzen via Microsoft Store voor Bedrijven. U kunt nu meerdere beheerhulpprogramma's met de Store koppelen, bijvoorbeeld Intune en Configuration Manager. 
 
 U kunt nu doorgaan en synchronisatie instellen in de Intune-console.
 
@@ -92,12 +92,12 @@ Wanneer u een Microsoft Store voor Bedrijven-app toewijst, heeft elke gebruiker 
 
 ## <a name="remove-apps"></a>Apps verwijderen
 
-Als u een app wilt verwijderen die is gesynchroniseerd vanuit Microsoft Store voor Bedrijven, moet u zich aanmelden bij Microsoft Store voor Bedrijven en de app terugbetalen.
+Als u een app wilt verwijderen die is gesynchroniseerd vanuit Microsoft Store voor Bedrijven, moet u zich aanmelden bij Microsoft Store voor Bedrijven en de app terugbetalen. Het proces is hetzelfde, ongeacht of de app wel of niet gratis is. Voor een gratis app geeft de Store een restitutie van $ 0. In het volgende voorbeeld wordt een restitutie voor een gratis app weergegeven. 
 
 ![Schermafbeelding van de details over app-verwijdering](./media/microsoft-store-for-business-01.png)
 
 > [!NOTE]
-> Als u de zichtbaarheid van de app in de privéstore verwijdert, zorgt dit er niet voor dat Intune stopt met synchroniseren. U moet de app terugbetalen.
+> Als u de zichtbaarheid van de app in de privéstore verwijdert, zorgt dit er niet voor dat Intune stopt met synchroniseren van de app. U moet de app restitueren om de app volledig te verwijderen.
 
 ## <a name="next-steps"></a>Volgende stappen
 

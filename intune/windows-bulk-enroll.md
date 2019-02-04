@@ -3,7 +3,7 @@ title: Bulkinschrijving voor Windows 10
 titlesuffix: Microsoft Intune
 description: Een bulkregistratiepakket voor Microsoft Intune maken
 keywords: ''
-author: Erikje
+author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fca6fd73da1277973ee313055eaf4b5ba073afbb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 97f51b4934a2dc2267e255da0ec1d896dd6b8961
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184808"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751192"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Bulkregistratie voor Windows-apparaten
 
@@ -48,8 +48,7 @@ Azure AD-gebruikers zijn standaardgebruikers op deze apparaten en ontvangen toeg
    - **Projectmap**: opslaglocatie voor het project
    - **Beschrijving**: een optionele beschrijving van het project ![Schermafbeelding van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](media/bulk-enroll-name.png)
 
-4. Voer een unieke naam in voor uw apparaten. Namen kunnen een serienummer (%%SERIAL%%) of een willekeurig aantal tekens bevatten. U kunt eventueel ook een productcode invoeren als u de editie van Windows bijwerkt, u kunt het apparaat configureren voor gedeeld gebruik en u kunt vooraf geïnstalleerde software verwijderen.
-
+4. Voer een unieke naam in voor uw apparaten. Namen kunnen een serienummer (%SERIAL%) of een willekeurig aantal tekens bevatten. U kunt eventueel ook een productcode invoeren als u de editie van Windows bijwerkt, u kunt het apparaat configureren voor gedeeld gebruik en u kunt vooraf geïnstalleerde software verwijderen.
    ![Schermafbeelding van het opgeven van de naam en productsleutel in de app Windows Configuration Designer](media/bulk-enroll-device.png)
 
 5. U kunt eventueel instellen met welk het Wi-Fi-netwerk apparaten verbinding maken wanneer ze de eerste keer worden gestart.  Als de netwerkapparaten niet zijn geconfigureerd, is een bekabelde netwerkverbinding vereist wanneer het apparaat voor de eerste keer wordt gestart.

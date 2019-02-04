@@ -1,68 +1,64 @@
 ---
 title: iOS- of macOS-apparaatprofielen maken met Microsoft Intune - Azure | Microsoft Docs
-description: Voeg een iOS- of macOS-apparaatprofiel toe of maak er een, configureer instellingen voor AirPrint en AirPlay, bepaal de indeling van het startscherm en configureer instellingen voor app-meldingen, gedeelde apparaten, eenmalige aanmelding en het filteren van webinhoud in Microsoft Intune.
+description: Een iOS- of macOS-apparaatprofiel toevoegen of maken en vervolgens instellingen voor AirPrint, de indeling van het startscherm, app-meldingen, gedeelde apparaten, eenmalige aanmelding en het filteren van webinhoud in Microsoft Intune configureren.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: heenamac
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 4542a65afa87668702620a1b50443c9844692a87
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203090"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831272"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Instellingen van apparaatfuncties voor iOS of macOS toevoegen in Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Intune bevat veel functies en instellingen waarmee beheerders iOS en macOS-apparaten kunnen beheren. Beheerders kunnen bijvoorbeeld het volgende:
 
-Met apparaatfuncties kunt u vele instellingen en functies op iOS- en macOS-apparaten beheren, zoals:
+- Gebruikers toegang toestaan tot de AirPrint-printers in uw netwerk
+- Apps en mappen toevoegen aan het startscherm, inclusief het toevoegen van nieuwe pagina's
+- Kiezen of en hoe app-meldingen worden weergegeven
+- Het vergrendelingsscherm configureren voor weergave van een bericht of de inventaristag, met name voor gedeelde apparaten
+- Gebruikers beveiligde eenmalige aanmelding bieden om referenties tussen apps te kunnen delen
+- Websites filteren waarop grof taalgebruik wordt gebruikt en specifieke websites toestaan of blokkeren
 
-- Instellingen voor AirPrint en AirPlay
-- Indeling van het startscherm
-- Meldingen van apps
-- Bericht voor vergrendelingsscherm
-- Eenmalige aanmelding instellen
-- Webinhoud filteren
+Deze functies zijn beschikbaar in Intune en kunnen worden geconfigureerd door de beheerder. Intune maakt gebruik van configuratieprofielen om deze instellingen te maken voor en af te stemmen op de behoeften van uw organisatie. Nadat u deze functies aan een profiel hebt toegevoegd, kunt u het profiel pushen naar en implementeren op iOS- en macOS-apparaten in uw organisatie.
 
-In dit artikel leest u basisinformatie over het configureren van functieprofielen voor iOS-apparaten. Daarna kunt u aanvullende artikelen doorlopen om platformspecifieke instellingen te configureren voor uw apparaten.
+In dit artikel wordt beschreven hoe u een apparaatconfiguratieprofiel maakt. U ziet ook de beschikbare instellingen voor [iOS](ios-device-features-settings.md)- en [macOS](macos-device-features-settings.md)-apparaten.
 
 ## <a name="create-a-device-profile"></a>Een apparaatprofiel maken
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-4. Voer de volgende eigenschappen in:
+1. Selecteer in [Azure Portal](https://portal.azure.com) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
+2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+3. Voer de volgende eigenschappen in:
 
-   - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel.
-   - **Beschrijving**: Voer een beschrijving in voor het profiel. (Deze instelling is optioneel, maar wordt aanbevolen.)
-   - **Platform**: Selecteer het platformtype:
-     - **iOS**
-     - **macOS**
-   - **Profieltype**: Selecteer **Apparaatfuncties**.
-   - **Instellingen**: Welke instellingen u gebruikt, is afhankelijk van het platform dat u kiest. In de volgende artikelen worden de instellingen voor elk profieltype beschreven:
+    - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel.
+    - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
+    - **Platform**: Selecteer uw platform:
+        - **iOS**
+        - **macOS**
+    - **Profieltype**: Selecteer **Apparaatfuncties**.
+    - **Instellingen**: Voer de instellingen in die u wilt configureren. Voor een lijst van alle instellingen en wat ze doen raadpleegt u:
 
-     - [AirPrint-instellingen voor iOS en MacOS](air-print-settings-ios-macos.md)
-     - [AirPlay-instellingen voor iOS](airplay-settings-ios.md)
-     - [Indelingsinstellingen voor het iOS-startscherm](home-screen-settings-ios.md)
-     - [App-meldingsinstellingen voor iOS opgeven](app-notification-settings-ios.md)
-     - [Instellingen Bericht voor vergrendelingsscherm voor iOS](shared-device-settings-ios.md)
-     - [Intune configureren voor eenmalige aanmelding vanaf iOS-apparaten](sso-ios.md)
-     - [Filterinstellingen voor webinhoud in iOS](web-content-filter-settings-ios.md)
+        - [iOS](ios-device-features-settings.md)
+        - [macOS](macos-device-features-settings.md)
 
-5. Wanneer u klaar bent, selecteert u **OK** en kiest u **Maken** om uw wijzigingen op te slaan.
+4. Wanneer u klaar bent, selecteert u **OK** en kiest u **Maken** om uw wijzigingen op te slaan.
 
-Het profiel wordt gemaakt en wordt weergegeven in de lijst.
+Het profiel wordt gemaakt en in de lijst weergegeven. Zorg ervoor dat u [het profiel toewijst](device-profile-assign.md) en [de status ervan controleert](device-profile-monitor.md).
 
-## <a name="next-step"></a>Volgende stap
+## <a name="next-steps"></a>Volgende stappen
 
-Zie [Apparaatprofielen toewijzen](device-profile-assign.md) als u dit profiel wilt toewijzen aan groepen.
+Nadat het profiel is gemaakt, is het klaar om te worden toegewezen. Vervolgens kunt u [het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
+
+Bekijk alle instellingen voor apparaatfuncties voor [iOS](ios-device-features-settings.md)- en [macOS](macos-device-features-settings.md)-apparaten.

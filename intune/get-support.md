@@ -15,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 11bcf3742270a3f32919b133efdc2ab3f0c4d2d1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 87d25fa76b3d2716099178ca428c8032fd99886c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203345"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831629"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen
 
@@ -42,7 +42,7 @@ Als IT-beheerder kunt u de optie **Help en ondersteuning** gebruiken om vanuit A
 
 ## <a name="help-and-support-experience"></a>Help en ondersteuning-ervaring
 > [!TIP]   
-> In januari 2019 wordt een nieuwe Help en ondersteuning-ervaring geïmplementeerd voor alle tenants. Als uw tenant nog niet over deze nieuwe ervaring beschikt, raadpleegt u [Azure Help en ondersteuning-ervaring](#azure-help-+-support-experience) in dit artikel voor meer informatie over de vorige ervaring.  
+> Een nieuwe Help- en ondersteuningservaring is beschikbaar voor alle tenants. Als u deze nieuwe ervaring niet in uw tenant ziet, wis dan de cache van uw browser en laad de pagina opnieuw.
 
 De Help en ondersteuning-ervaring voor Intune is beschikbaar via de [Microsoft 365 Device Management-portal](http://devicemanagement.microsoft.com) en via alle blades (of pagina's) onder Intune in Azure Portal. 
 

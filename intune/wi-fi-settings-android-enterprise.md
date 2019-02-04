@@ -1,12 +1,11 @@
 ---
-title: Wi-Fi-instellingen voor Android Enterprise- en Kiosk-apparaten
-titleSuffix: Microsoft Intune
+title: Wi-Fi-instellingen voor Android Enterprise- en Kiosk-apparaten - Microsoft Intune | Microsoft Docs
 description: Een configuratieprofiel voor een Wi-Fi-apparaat voor Android Enterprise en Android Kiosk maken of toevoegen. Zie de verschillende instellingen, zoals voor het toevoegen van certificaten, voor het kiezen van een EAP-type en het selecteren van een verificatiemethode in Microsoft Intune. Voor Kiosk-apparaten moet u ook de vooraf gedeelde sleutel van uw netwerk opgeven.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,22 +13,22 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1424cd43c6ccde17724a4165fe74def4da291e29
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ea72cda4cb72af9028c52078e2215619bb2bef3c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112354"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831476"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Wi-Fi-instellingen voor apparaten met Android Enterprise en Android Kiosk in Microsoft Intune toevoegen
 
 U kunt een profiel maken met specifieke Wi-Fi-instellingen en dit profiel vervolgens implementeren op uw Android Enterprise- en Android Kiosk-apparaten. Microsoft Intune bevat veel functies, waaronder het verifiëren bij uw netwerk, het gebruik van een vooraf gedeelde sleutel en meer.
 
-In dit artikel worden deze instellingen beschreven.
+In dit artikel worden deze instellingen beschreven. [Wi-Fi gebruiken op uw apparaten](wi-fi-settings-configure.md) bevat meer informatie over de Wi-Fi-functie in Microsoft Intune.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
-[Maak een apparaatprofiel](device-profile-create.md).
+[Maak een apparaatprofiel](wi-fi-settings-configure.md#create-a-device-profile).
 
 ## <a name="device-owner-only---kiosk"></a>Alleen eigenaar van het apparaat - kiosk
 
@@ -66,7 +65,7 @@ Selecteer **OK** om uw wijzigingen op te slaan.
 
   - **EAP-TLS**: Voer ook in:
 
-    - **Vertrouwelijke server** - **Basiscertificaat voor servervalidatie**: Kies een bestaand profiel voor een vertrouwd basiscertificaat. Dit certificaat wordt aangeboden aan de server wanneer de client verbinding met het netwerk maakt, en wordt gebruikt om de verbinding te verifiëren.
+    - **Vertrouwelijke server** - **Basiscertificaat voor servervalidatie**: Kies een bestaand profiel voor een vertrouwd basiscertificaat. Wanneer de client verbinding met het netwerk maakt, wordt dit certificaat aan de server aangeboden en gebruikt om de verbinding te verifiëren.
 
       Selecteer **OK** om uw wijzigingen op te slaan.
 
@@ -76,7 +75,7 @@ Selecteer **OK** om uw wijzigingen op te slaan.
 
   - **EAP-TTLS**: Voer ook in:
 
-    - **Vertrouwelijke server** - **Basiscertificaat voor servervalidatie**: Kies een bestaand profiel voor een vertrouwd basiscertificaat. Dit certificaat wordt aangeboden aan de server wanneer de client verbinding met het netwerk maakt, en wordt gebruikt om de verbinding te verifiëren.
+    - **Vertrouwelijke server** - **Basiscertificaat voor servervalidatie**: Kies een bestaand profiel voor een vertrouwd basiscertificaat. Wanneer de client verbinding met het netwerk maakt, wordt dit certificaat aan de server aangeboden en gebruikt om de verbinding te verifiëren.
 
       Selecteer **OK** om uw wijzigingen op te slaan.
 
@@ -95,7 +94,7 @@ Selecteer **OK** om uw wijzigingen op te slaan.
 
   - **PEAP**: Voer ook in:
 
-    - **Vertrouwelijke server** - **Basiscertificaat voor servervalidatie**: Kies een bestaand profiel voor een vertrouwd basiscertificaat. Dit certificaat wordt aangeboden aan de server wanneer de client verbinding met het netwerk maakt, en wordt gebruikt om de verbinding te verifiëren.
+    - **Vertrouwelijke server** - **Basiscertificaat voor servervalidatie**: Kies een bestaand profiel voor een vertrouwd basiscertificaat. Wanneer de client verbinding met het netwerk maakt, wordt dit certificaat aan de server aangeboden en gebruikt om de verbinding te verifiëren.
 
       Selecteer **OK** om uw wijzigingen op te slaan.
 
@@ -116,9 +115,6 @@ Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt ge
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Het profiel is gemaakt, maar er gebeurt niets. Vervolgens [wijst u dit profiel toe](device-profile-assign.md).
+Het profiel is gemaakt, maar er gebeurt niets. Vervolgens moet u [dit profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
-## <a name="more-resources"></a>Meer bronnen
-
-- Zie [Wi-Fi-instellingen voor apparaten met Android](wi-fi-settings-android.md) voor de instellingen die beschikbaar zijn voor Android-apparaten.
-- [Overzicht Wi-Fi-instellingen](wi-fi-settings-configure.md), met inbegrip van andere platformen.
+U kunt ook Wi-Fi-profielen maken voor apparaten met [Android](wi-fi-settings-android.md), [iOS](wi-fi-settings-ios.md), [macOS](wi-fi-settings-macos.md), [Windows 10](wi-fi-settings-windows.md) en [Windows 8.1](wi-fi-settings-import-windows-8-1.md).

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
-ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
+ms.openlocfilehash: 21fde80ec80492957b686a66dcfe4db55894c38e
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418207"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199486"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -31,6 +31,7 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook geplande 
 > [!Note]
 > Zie de [pagina Wat is er nieuw](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) voor informatie over nieuwe functionaliteit in het hybride beheer van mobiele apparaten (MDM).
 
+**RSS-feed**: ontvang een melding wanneer deze pagina wordt bijgewerkt door de volgende URL in uw feedlezer te kopiëren en plakken: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
 <!-- Common categories:  
 ### App management
@@ -42,6 +43,102 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook geplande 
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-21-2019"></a>De week van 21 januari 2019
+
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Toast-meldingen voor Win32-apps <!-- 3136566   -->
+U kunt per app-toewijzing onderdrukken dat toast-meldingen voor eindgebruikers worden weergegeven. Selecteer vanuit Intune de optie **Client-apps** > **Apps** > selecteer de app > **Toewijzingen** > **Groepen opnemen**. 
+
+#### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Update van de gebruikersinterface voor beveiligingsbeleid voor apps in Intune <!-- 3251427  -->
+We hebben de labels voor instellingen en knoppen voor App-beveiliging van Intune gewijzigd om ze duidelijker te maken. De wijzigingen zijn onder meer:  
+- Besturingselementen zijn gewijzigd van **ja** / **nee** naar primair **blokkeren**/**toestaan** en **uitschakelen** / **inschakelen**. De labels zijn ook bijgewerkt.  
+- De instellingen zijn opnieuw ingedeeld, zodat de instellingen en bijbehorende labels naast elkaar in het besturingselement staan, wat betere navigatie biedt.   
+
+De standaardinstellingen en een aantal instellingen blijven dezelfde, maar met deze wijziging kan de gebruiker de instellingen beter begrijpen, gebruiken en er door navigeren om het geselecteerde app-beveiligingsbeleid toe te passen. Zie [iOS-instellingen](app-protection-policy-settings-ios.md) en [Android-instellingen](app-protection-policy-settings-android.md) voor meer informatie.
+
+#### <a name="additional-settings-for-outlook----3301182----"></a>Extra instellingen voor Outlook <!-- 3301182  -->
+U kunt nu aanvullende instellingen voor Outlook voor iOS en Android configureren met Intune.  Deze instellingen zijn onder andere: Instellen dat alleen werk- of schoolaccounts mogen worden gebruikt in Outlook in iOS en Android Moderne verificatie implementeren voor Office 365 en hybride moderne verificatie voor on-premises accounts `SAMAccountName` gebruiken in het gebruikersnaamveld in het e-mailprofiel als basisverificatie wordt geselecteerd Toestaan dat contactpersonen worden opgeslagen E-mailtips voor externe ontvangers configureren Het **Postvak IN met prioriteit** configureren Biometrie vereisten voor toegang tot Outlook voor iOS Externe afbeeldingen blokkeren
+> [!NOTE]
+> Als u gebruikmaakt van Intune-app-beveiligingsbeleid voor het beheren van toegang tot bedrijfs-id's, wordt afgeraden **biometrie te vereisen**. Zie **Bedrijfsreferenties vereisen voor toegang** voor [iOS-toegangsinstellingen](app-protection-policy-settings-ios.md#access-settings) en [Android-toegangsinstellingen](app-protection-policy-settings-android.md#access-settings).
+
+#### <a name="delete-android-enterprise-apps----1352553---"></a>Android Enterprise-apps verwijderen <!-- 1352553 -->
+U kunt beheerde Google Play-apps verwijderen uit Microsoft Intune. Als u een beheerde Google Play-app wilt verwijderen, opent u Microsoft Intune in de Azure-portal en selecteert u **Client-apps** > **Apps**. In de lijst met apps selecteert u het beletselteken (...) rechts naast de beheerde Google Play-app en vervolgens **Verwijderen** in de weergegeven lijst. Wanneer u een beheerde Google Play-app uit de lijst met apps verwijdert, wordt de goedkeuring voor de beheerde Google Play-app automatisch verwijderd.
+
+#### <a name="managed-google-play-app-type----1352580---"></a>App-type Beheerde Google Play-app <!-- 1352580 -->
+Met het type **beheerde Google Play-app** hebt u toestemming om specifiek [beheerde Google Play-apps](https://play.google.com/work/search?q=microsoft&c=apps) aan Intune toe te voegen. Als Intune-beheerder kunt u nu door goedgekeurde beheerde Google Play-apps bladeren en goedgekeurde beheerde Google Play-apps zoeken, goedkeuren, synchroniseren en toewijzen in Intune.  U hoeft niet langer afzonderlijk naar de beheerde Google Play-console te bladeren en u hoeft niet opnieuw een verificatie uit te voeren.  Selecteer in Intune de optie **Client-apps** > **Apps** > **Toevoegen**. In de lijst **App-type** selecteert u **Beheerd Google Play** als app-type.
+
+### <a name="device-configuration"></a>Apparaatconfiguratie
+
+#### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>Door Microsoft aanbevolen instellingen gebruiken met beveiligingsbasislijnen (openbare preview) <!-- 2055484   -->
+Opmerking: deze functie wordt nog uitgerold en komt binnenkort beschikbaar.
+
+Intune is geïntegreerd met andere services die op beveiliging gericht zijn, inclusief Windows Defender ATP en Office 365 ATP. Klanten vragen om een gemeenschappelijke strategie en een samenhangende set van end-to-end beveiligingsworkflows voor alle Microsoft 365-diensten. Ons doel is om strategieën af te stemmen en oplossingen te ontwikkelen die beveiligingsactiviteiten en gebruikelijke beheerderstaken combineren. In Intune willen we dit doel bereiken door het publiceren van een set beveiligingsbasislijnen die door Microsoft zijn aanbevolen (**Intune** >  **Beveiligingsbasislijnen**).  Beheerders kunnen direct op basis van deze basislijnen een beveiligingsbeleid opstellen en dit vervolgens voor hun gebruikers implementeren. U kunt ook de aanbevelingen voor procedures aanpassen aan de behoeften van uw organisatie. Intune zorgt ervoor dat apparaten deze basislijnen blijven naleven, en waarschuwt beheerders wanneer gebruikers of apparaten van de basislijnen afwijken.
+
+Zie [Een Windows 10-beveiligingsbasislijn maken in Intune](security-baselines-monitor.md) voor meer informatie over beveiligingsbasislijnen.
+
+Deze functie is van toepassing op: Windows 10 en hoger
+
+#### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379-----"></a>Niet-beheerders kunnen BitLocker gebruiken op Windows 10-apparaten die zijn gekoppeld aan Azure AD<!-- 2147379   -->
+Wanneer u BitLocker-instellingen op Windows 10-apparaten inschakelt (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** als platform en **Endpoint Protection** als profieltype > **Windows-versleuteling**), voegt u BitLocker-instellingen toe. 
+
+Deze update bevat een nieuwe BitLocker-instellingen waarmee standaardgebruikers (niet-beheerders) versleuteling kunnen inschakelen. 
+
+Ga naar [Instellingen voor de beveiliging van eindpunten voor Windows 10](endpoint-protection-windows-10.md#windows-encryption) om de instellingen te bekijken.
+
+#### <a name="check-for-configuration-manager-compliance----2192052--eepublished----"></a>Controleren op Configuration Manager-compatibiliteit <!-- 2192052  eepublished  -->
+Deze update bevat een nieuwe instelling voor System Center Configuration Manager-compatibiliteit (**Apparaatcompatibiliteit** > **Beleid** > **Beleid maken** > **Windows 10 en hoger** > **Configuration Manager-compatibiliteit**). Configuration Manager verzendt signalen naar Intune-naleving. Met deze instelling kunt u vereisen dat alle Configuration Manager-signalen de waarde 'compatibel' retourneren.
+
+U kunt bijvoorbeeld vereisen dat alle software-updates worden geïnstalleerd op apparaten. Deze vereiste heeft in Configuration Manager de status 'Geïnstalleerd'. Als programma's op het apparaat een onbekende status hebben, is het apparaat niet-compatibel in Intune.
+
+In [Configuration Manager-compatibiliteit](compliance-policy-create-windows.md#configuration-manager-compliance) wordt deze instelling beschreven.
+
+Van toepassing op: Windows 10 en hoger
+
+#### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324-----"></a>Achtergronden op iOS-apparaten die onder toezicht staan aanpassen met behulp van een apparaatconfiguratieprofiel <!-- 2809324   -->
+Wanneer u een apparaatconfiguratieprofiel voor iOS-apparaten maakt, kunt u sommige functies aanpassen (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS** voor platform > **Apparaatfuncties** voor profieltype). Deze update bevat nieuwe **achtergrond**instellingen waarmee een beheerder een .png-, .jpg- of .jpeg-afbeelding op het startscherm of het vergrendelingsscherm kan gebruiken. Deze achtergrondinstellingen zijn alleen van toepassing op apparaten die onder supervisie staan. 
+
+Zie [Instellingen van apparaatfuncties voor iOS](ios-device-features-settings.md) voor een lijst met deze instellingen.
+
+#### <a name="windows-10-kiosk-is-generally-available----3594661----"></a>Windows 10-kiosk is algemeen beschikbaar <!-- 3594661  -->
+In deze update is de Kiosk-functie in Windows 10 en hoger algemeen beschikbaar. Zie [Kiosk-instellingen voor Windows 10 (en hoger)](kiosk-settings.md) voor alle instellingen die u kunt toevoegen en configureren.
+
+#### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396-----"></a>Contactpersonen delen via Bluetooth wordt verwijderd in Apparaatbeperkingen > Apparaateigenaar voor Android Enterprise <!-- 3598396   -->
+Wanneer u een apparaatbeperkingsbeleid voor Android Enterprise-apparaten maakt, is de instelling **Contactpersoon delen via Bluetooth** beschikbaar. In deze update is de instelling **Contactpersoon delen via Bluetooth** verwijderd (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android Enterprise** voor platform > **Apparaatbeperkingen > Apparaateigenaar** voor Profieltype > **Algemeen**). 
+
+De instelling **Contactpersoon delen via Bluetooth** wordt niet ondersteund voor het beheer van Android Enterprise-apparaateigenaren. Wanneer deze instelling wordt verwijderd, heeft dit dus geen invloed op apparaten of tenants, zelfs als deze instelling is ingeschakeld en geconfigureerd in uw omgeving.
+
+Ga naar [Met Android Enterprise-apparaatinstellingen functies toestaan of beperken](device-restrictions-android-for-work.md) voor de huidige lijst met instellingen.
+
+Van toepassing op: Android Enterprise-apparaateigenaar
+
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Update van de gebruikersinterface voor beveiligingsbeleid voor apps in Intune <!-- 3251427 -->
+We hebben de labels voor instellingen en knoppen voor App-beveiliging van Intune gewijzigd om ze duidelijker te maken. De wijzigingen zijn onder meer:  
+- Besturingselementen zijn gewijzigd van **ja** / **nee** naar primair **blokkeren**/**toestaan** en **uitschakelen** / **inschakelen**. De labels zijn ook bijgewerkt.  
+- De instellingen zijn opnieuw ingedeeld, zodat de instellingen en bijbehorende labels naast elkaar in het besturingselement staan, wat betere navigatie biedt.   
+
+De standaardinstellingen en een aantal instellingen blijven dezelfde, maar met deze wijziging kan de gebruiker de instellingen beter begrijpen, gebruiken en er door navigeren om het geselecteerde app-beveiligingsbeleid toe te passen. Zie [iOS-instellingen](app-protection-policy-settings-ios.md) en [Android-instellingen](app-protection-policy-settings-android.md) voor meer informatie.
+
+### <a name="device-management"></a>Apparaatbeheer
+
+#### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>Ondersteuning voor selectief wissen voor WIP Without Enrollment-apparaten <!-- 1434452 -->
+Met Windows Information Protection Without Enrollment (WIP-WE) kunnen klanten hun bedrijfsgegevens op Windows 10-apparaten beveiligen zonder gebruik te maken van volledige MDM-inschrijving. Zodra documenten met WIP-WE-beleid zijn beveiligd, kunnen de beschermde gegevens selectief worden gewist door een Intune-beheerder. Door een gebruiker en een apparaat te selecteren en een wisaanvraag te versturen, worden alle gegevens onbruikbaar die met het WIP-WE-beleid zijn beschermd. Vanuit Intune in de Azure-portal selecteert u hiervoor **Mobiele app** > **App selectief wissen**.
+
+### <a name="monitor-and-troubleshoot"></a>Bewaken en problemen oplossen
+
+#### <a name="new-operational-logs-and-ability-to-send-logs-to-azure-monitor-services----3762211----"></a>Nieuwe operationele logboeken en de mogelijkheid om logboeken te verzenden met Azure Monitor-services <!-- 3762211  -->
+Intune beschikt over ingebouwde logboekregistratie waarmee gebeurtenissen worden bijgehouden als wijzigingen worden aangebracht. Deze update bevat nieuwe functies voor logboekregistratie, waaronder: 
+- Operationele logboeken (preview), waarin details over gebruikers en apparaten die zich hebben geregistreerd worden weergegeven, inclusief geslaagde en mislukte pogingen.
+- Deze auditlogboeken en operationele logboeken kunnen worden verzonden naar Azure Monitor-services, inclusief Storage Accounts, Event Hubs, en Log Analytics. Met deze services kunt u opslaan, analytics als Splunk en QRadar gebruiken en visualisaties van uw logboekregistratiegegevens verkrijgen.
+
+In [Logboekgegevens verzenden naar Storage, Event Hubs of Log Analytics in Intune](review-logs-using-azure-monitor.md) vindt u meer informatie over deze functie.
+
+### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509----"></a>Meer Setup Assistant-schermen overslaan op een iOS-DEP-apparaat <!-- 2687509  -->
+Naast de schermen die u op dit moment kunt overslaan, kunt u instellen dat iOS DEP-apparaten de volgende schermen in de Setup-assistent overslaan wanneer een gebruiker het apparaat registreert: Weergavetoon, Privacy, Android-migratie, Startknop, iMessage en FaceTime, Onboarding, Migratie weergeven, Weergave, Schermtijd, Software-update, SIM-installatie.
+Als u wilt kiezen welke schermen moeten worden overgeslagen, gaat u naar **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor inschrijvingsprogramma** > kies een token > **Profielen** > kies een profiel > **Eigenschappen** > **Setup Assistant aanpassen** > kies **Verbergen** voor schermen die u wilt overslaan > **OK**.
+Als u een nieuw profiel maakt of een profiel bewerkt, moeten de geselecteerde skip-schermen worden gesynchroniseerd met de Apple MDM-server. Gebruikers kunnen de opdracht tot een handmatige synchronisatie van de apparaten geven, zodat er geen vertraging in het ophalen van de profielwijzigingen is.
+Het uitrollen van deze functie is gestart, maar het duurt een paar dagen totdat deze beschikbaar is voor alle klanten.
+
 ## <a name="week-of-january-14-2019"></a>De week van 14 januari 2019
 
 ### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Voorbeeld van volledig beheerde, zakelijke Android-apparaten <!-- 1574342  -->

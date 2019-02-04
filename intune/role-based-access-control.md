@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 07a1c0a0825faafa85b3fb2904dcb517268617bf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 745fd366520ba55e54a5b666d47469debb241ab9
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180048"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831527"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune
 
@@ -35,7 +35,7 @@ Met RBAC kunt u bepalen wie de verschillende Intune-taken binnen uw organisatie 
 
 Met ingang van de nieuwe Azure-portal beschikt **Azure Active Directory (Azure AD)** over twee Directory-rollen die kunnen worden gebruikt met Intune. Aan deze rollen worden volledige machtigingen toegewezen voor het uitvoeren van alle activiteiten in Intune:
 
-- **Globale beheerder:** gebruikers met deze rol hebben toegang tot alle beheerfuncties in Azure AD, evenals de services die worden gekoppeld aan Azure AD, zoals Exchange Online, SharePoint Online en Skype voor Bedrijven Online. De persoon die zich aanmeldt voor de Azure AD-tenant wordt globale beheerder. Alleen globale beheerders kunnen andere Azure AD-beheerdersrollen toewijzen. Er kan meer dan een algemeen beheerder binnen uw organisatie zijn. Globale beheerders kunnen het wachtwoord voor elke gebruiker en alle andere beheerders opnieuw instellen.
+- **Globale beheerder:** gebruikers met deze rol hebben toegang tot alle beheerfuncties in Azure AD evenals de services die worden gekoppeld aan Azure AD, zoals Exchange Online, SharePoint Online en Skype voor Bedrijven Online. De persoon die zich aanmeldt voor de Azure AD-tenant wordt globale beheerder. Alleen globale beheerders kunnen andere Azure AD-beheerdersrollen toewijzen. Er kan meer dan een algemeen beheerder binnen uw organisatie zijn. Globale beheerders kunnen het wachtwoord voor elke gebruiker en alle andere beheerders opnieuw instellen.
 
 - **Intune-servicebeheerder:** gebruikers met deze rol beschikken over globale machtigingen in Intune wanneer de service aanwezig is. Daarnaast biedt deze rol behalve vervangende Azure-beperkingen de mogelijkheid om gebruikers en apparaten te beheren en Intune-groepen te maken en beheren.
 
@@ -43,10 +43,10 @@ Met ingang van de nieuwe Azure-portal beschikt **Azure Active Directory (Azure A
 
     > [!IMPORTANT]
     > De rol Intune-servicebeheerder biedt niet de mogelijkheid om de instellingen voor voorwaardelijke toegang van Azure AD te beheren.
-    > Leden met Intune-rollen hebben een Intune-licentie nodig.
+    > Alleen aan gebruikers met een Intune-licentie kan een Intune-rol worden toegewezen.
 
     > [!TIP]
-    > Intune bevat ook drie Azure AD-uitbreidingen: **Gebruikers**, **Groepen** en **Voorwaardelijke toegang** die worden beheerd met Azure AD RBAC. Bovendien voert de **Beheerder van gebruikersaccounts** alleen activiteiten van AAD-gebruikers of -groepen uit en beschikt deze niet over volledige machtigingen voor het uitvoeren van alle activiteiten in Intune. Raadpleeg [RBAC met Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) voor meer informatie.
+    > Intune bevat ook drie Azure AD-uitbreidingen: **Gebruikers**, **Groepen** en **Voorwaardelijke toegang**, die worden beheerd met Azure AD RBAC. Bovendien voert de **Beheerder van gebruikersaccounts** alleen activiteiten van AAD-gebruikers of -groepen uit en beschikt deze niet over volledige machtigingen voor het uitvoeren van alle activiteiten in Intune. Zie [RBAC met Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) voor meer informatie.
 
 ## <a name="roles-created-in-the-intune-classic-portal"></a>Rollen die zijn gemaakt in de klassieke Intune-portal
 
@@ -57,45 +57,44 @@ Alleen gebruikers met de rol **Intune-servicebeheerder** met volledige machtigin
 
 ## <a name="built-in-roles"></a>Ingebouwde rollen
 
-De volgende rollen zijn ingebouwd in Intune en u kunt deze zonder verdere configuratie aan groepen toewijzen:
+U kunt ingebouwde rollen toewijzen aan groepen zonder verdere configuratie. U kunt ingebouwde rollen niet verwijderen of bewerken.
 
 - **Helpdesk-medewerker**: voert externe taken uit voor gebruikers en apparaten en kan toepassingen of beleid toewijzen aan gebruikers of apparaten.
 - **Beleid- en profielbeheerder**: beheert het nalevingsbeleid, configuratieprofielen, Apple-inschrijving en id's van bedrijfsapparaten.
 - **Operator met alleen-lezenmachtiging**: kan alleen gebruikers-, apparaat-, inschrijvings-, configuratie- en toepassingsgegevens weergeven. Kan geen wijzigingen aan Intune aanbrengen.
 - **Toepassingsbeheerder**: hiermee beheert u mobiele en beheerde toepassingen, kunt u apparaatgegevens lezen en kunt u apparaatconfiguratieprofielen weergeven.
 - **Beheerder Intune-rol**: hiermee beheert u aangepaste Intune-rollen en voegt u toewijzingen toe voor ingebouwde Intune-rollen. Het is de enige rol in Intune die machtigingen aan beheerders kan toewijzen.
-- **School Administrator**: beheert Windows 10-apparaten in [Intune voor onderwijs](introduction-intune-education.md) en kan de volgende acties uitvoeren: 
+- **School Administrator**: beheert Windows 10-apparaten in [Intune for Education](introduction-intune-education.md) en kan de volgende acties uitvoeren: 
 
-|Machtiging|Bewerking|
-|---|---|
-|Controledatabase|Raadplegen|
-|DeviceConfigurations|Toewijzen, maken, verwijderen, lezen, bijwerken|
-|Apparaatinschrijvingsmanagers|Lezen, bijwerken|
-|Beheerde apparaten|Lezen, bijwerken<!--, Delete [To be added in 1803]-->|
-|Mobiele apps|Toewijzen, maken, verwijderen, lezen, bijwerken|
-|Reports|Raadplegen|
-|Externe acties|Pc opruimen, opnieuw opstarten, op afstand vergrendelen, buiten gebruik stellen, apparaten synchroniseren, wissen|
-|Organisatie|Raadplegen|
+    |Machtiging|Bewerking|
+    |---|---|
+    |Controledatabase|Raadplegen|
+    |DeviceConfigurations|Toewijzen, maken, verwijderen, lezen, bijwerken|
+    |Apparaatinschrijvingsmanagers|Lezen, bijwerken|
+    |Beheerde apparaten|Lezen, bijwerken<!--, Delete [To be added in 1803]-->|
+    |Mobiele apps|Toewijzen, maken, verwijderen, lezen, bijwerken|
+    |Reports|Raadplegen|
+    |Externe acties|Pc opruimen, opnieuw opstarten, op afstand vergrendelen, buiten gebruik stellen, apparaten synchroniseren, wissen|
+    |Organisatie|Raadplegen|
 
 ### <a name="to-assign-a-built-in-role"></a>Een ingebouwde rol toewijzen
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Kies in het deelvenster **Intune** de optie **Rollen** > **Alle rollen**.
-1. Kies in het deelvenster **Intune-rollen - Alle rollen** de ingebouwde rol die u wilt toewijzen.
+4. Kies in het deelvenster **Intune-rollen - Alle rollen** de ingebouwde rol die u wilt toewijzen.
 
-2. Kies in het deelvenster <*Rolnaam*> - **Overzicht** de optie **Beheren** en vervolgens **Toewijzingen**.
+5. Kies in het deelvenster <*Rolnaam*> - **Overzicht** de optie **Beheren** en vervolgens **Toewijzingen**.
 
-    > [!NOTE]
-    > U kunt ingebouwde rollen niet verwijderen of bewerken
+6. Kies in het deelvenster voor aangepaste rollen de optie **Toewijzen**.
 
-3. Kies in het deelvenster voor aangepaste rollen de optie **Toewijzen**.
+7. Voer in het deelvenster **Roltoewijzingen** een **naam** en desgewenst een **beschrijving** in voor de toewijzing.
 
-4. Voer in het deelvenster **Roltoewijzingen** een **naam** en desgewenst een **beschrijving** in voor de toewijzing en kies het volgende:
-    - **Leden**: selecteer de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
-    - **Bereik**: selecteer de groep met de gebruikers die het bovenstaande lid mogen beheren.
+8. **Leden**: kies de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
+
+9. **Bereik**: kies de groep met de gebruikers die het bovenstaande lid mogen beheren.
 <br></br>
-5. Wanneer u klaar bent, klikt u op **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
+10. Als u klaar bent, kiest u **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
 
 ### <a name="intune-rbac-table"></a>Intune RBAC-tabel
 
@@ -122,7 +121,7 @@ U kunt een aangepaste rol maken die alle machtigingen bevat die vereist zijn voo
 
 5. Kies in het deelvenster **Machtigingen** de machtigingen die u voor deze rol wilt gebruiken. Gebruik de [Intune RBAC-tabel](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) om te bepalen welke machtigingen u wilt toepassen.
 
-6. Kies **OK** als u klaar bent.
+6. Als u klaar bent, kiest u **OK**.
 
 7. Klik in het deelvenster **Aangepaste rol toevoegen** op **Maken**. De nieuwe rol wordt weergegeven in de lijst in het deelvenster **Intune-rollen - Alle rollen**.
 
@@ -134,16 +133,18 @@ U kunt een aangepaste rol maken die alle machtigingen bevat die vereist zijn voo
 
 3. Kies in het deelvenster voor aangepaste rollen de optie **Toewijzen**.
 
-4. Voer in het deelvenster **Roltoewijzingen** een **naam** en desgewenst een **beschrijving** in voor de toewijzing en kies het volgende:
-    - **Leden**: selecteer de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
-    - **Bereik**: selecteer de groep met de gebruikers die het bovenstaande lid mogen beheren.
-<br></br>
-5. Wanneer u klaar bent, klikt u op **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
+4. Voer in het deelvenster **Roltoewijzingen** een **naam** en desgewenst een **beschrijving** in voor de toewijzing.
+
+5. **Leden**: kies de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
+
+6. **Bereik**: kies de groep met de gebruikers die het bovenstaande lid mogen beheren.
+
+7. Als u klaar bent, kiest u **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
 
 ## <a name="next-steps"></a>Volgende stappen
 
 [De rol voor Intune Helpdesk-operator gebruiken met de portal voor probleemoplossing](help-desk-operators.md)
 
-## <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
 
 [Rollen toewijzen met Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)

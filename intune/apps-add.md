@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 95f41985f11803e6e1a474b38a2af6a891ddafcb
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: c615dd2dda680cd106fd099d180f57ce2a5ebfef
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067479"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105218"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune 
 
@@ -52,7 +52,7 @@ De volgende tabel bevat de specifieke app-typen en informatie over hoe u deze ku
 | iOS Store-apps  | Store-app  | Selecteer **iOS** als het **app-type**, zoek de app en selecteer de app in Intune. |
 | Windows Phone 8.1 Store-apps  | Store-app  | Selecteer **Windows Phone 8.1** als het **app-type** en voer de URL van de Microsoft Store in voor de app. |
 | Microsoft Store-apps  | Store-app  | Selecteer **Windows** als het **app-type** en voer de URL van de Microsoft Store in voor de app. |
-| Apps voor Android-werkprofiel | Store-app  | Zoek de Android-werkprofiel-app in de beheerde Google Play Store en keur deze goed.  |
+| Beheerde Google Play-apps | Store-app  | Selecteer **Beheerde Google Play** als het **apptype**, zoek de app en selecteer de app in Intune. |
 | Office 365-apps voor Windows 10  | Store-app (Office 365) | Selecteer **Windows 10** bij **Office 365-suite** als het **app-type** en selecteer vervolgens de Office 365-app die u wilt installeren.  |
 | Office 365-apps voor macOS | Store-app (Office 365) | Selecteer **macOS** bij **Office 365-suite** als het **app-type** en selecteer vervolgens de Office 365-app-suite. |
 | Android LOB-apps (Line-Of-Business) | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een Android-installatiebestand toe met de extensie **.apk**.  |
@@ -119,7 +119,7 @@ Voor apps die door Intune worden beheerd, kan ook app-beveiliging worden ingesch
 ### <a name="understanding-licensed-apps"></a>Informatie over apps met licentie
 Naast het feit dat er verschillende typen apps zijn, zoals web-apps, store-apps en LOB-apps, moet u ook het verschil begrijpen tussen apps die zijn aangeschaft via een volumeaankoopprogramma en apps met licentie, bijvoorbeeld: 
 - **Apple-volumeaankoopprogramma voor bedrijven (iOS)**: u kunt in de iOS App Store meerdere licenties aanschaffen voor een app die u in uw bedrijf wilt uitvoeren. Door meerdere exemplaren aan te schaffen, kunt u apps in uw bedrijf efficiënt beheren. Raadpleeg [iOS-apps beheren die zijn aangeschaft via een volumeaankoopprogramma met Microsoft Intune](vpp-apps-ios.md) voor meer informatie.
-- **Android-werkprofiel**: Hoe u apps toewijst aan apparaten met een Android-werkprofiel verschilt van hoe u deze apps toewijst aan standaard Android-apparaten. Alle apps die u installeert voor Android-werkprofielen, zijn afkomstig uit de beheerde Google Play Store. U meldt zich aan bij de store, bladert naar de gewenste apps en keurt deze goed. De app verschijnt vervolgens op het knooppunt **Gelicentieerde apps** in Azure Portal, waarna u de toewijzing van apps kunt beheren zoals u bij elke app zou doen.
+- **Android-werkprofiel**: Hoe u apps toewijst aan apparaten met een Android-werkprofiel verschilt van hoe u deze apps toewijst aan standaard Android-apparaten. Alle apps die u installeert voor Android-werkprofielen, zijn afkomstig uit de beheerde Google Play Store. U gebruikt Intune om te zoeken naar de gewenste apps en u keurt ze goed. De app verschijnt vervolgens op het knooppunt **Gelicentieerde apps** in Azure Portal, waarna u de toewijzing van apps kunt beheren zoals u bij elke app zou doen.
 - **Microsoft Store voor Bedrijven (Windows 10)**: in de Microsoft Store voor Bedrijven kunt u apps zoeken en aanschaffen, zowel afzonderlijke exemplaren als in grotere volumes. Als u Windows Store voor Bedrijven aan Microsoft Intune koppelt, kunt u apps die zijn aangeschaft via een volumeaankoopprogramma, beheren in Azure Portal. Raadpleeg [Apps die u hebt aangeschaft in Microsoft Store voor Bedrijven, beheren met Microsoft Intune](windows-store-for-business.md) voor meer informatie.
 
     > [!NOTE]

@@ -1,11 +1,11 @@
 ---
-title: Windows 10-apparaten upgraden of S-modus gebruiken op deze apparaten met Microsoft Intune - Azure | Microsoft Docs
-description: Een apparaatprofiel maken in Microsoft Intune om Windows 10-apparaten te upgraden naar andere edities. U kunt bijvoorbeeld een upgrade van Windows 10 Professional naar Windows 10 Enterprise uitvoeren. U kunt ook de S-modus op een apparaat in- of uitschakelen met behulp van het configuratieprofiel. Zie ook de ondersteunde upgradepaden voor Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic en Mobile.
+title: Windows 10-apparaten upgraden of S-modus gebruiken op deze apparaten - Microsoft Intune - Azure | Microsoft Docs
+description: Gebruik Microsoft Intune om Windows 10-apparaten te upgraden naar een andere editie of om de S-modus in te schakelen. Beheerders kunnen een apparaatconfiguratieprofiel gebruiken om Windows 10 Professional naar Windows 10 Enterprise te upgraden en om de S-modus in of uit te schakelen. Zie de ondersteunde upgradepaden voor Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic en Mobile.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/11/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,25 +15,44 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: eb44647e50e406b9ef5052c576660c9b7eebf6dd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3eea1d1f100515b29dfda3b2297005f61e05ea23
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189755"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831612"
 ---
-# <a name="use-a-configuration-profile-to-upgrade-windows-10-or-switch-from-s-mode-in-intune"></a>Een configuratieprofiel gebruiken om Windows 10 te upgraden of vanuit de S-modus over te schakelen in Intune
+# <a name="upgrade-windows-10-editions-or-enable-s-mode-on-devices-using-microsoft-intune"></a>Upgrade Windows 10-edities of schakel op apparaten de S-modus in met behulp van Microsoft Intune
+
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Configureer een upgradeprofiel in Intune om apparaten waarop een versie van Windows 10 wordt uitgevoerd automatisch te upgraden naar een andere versie. Zie ook de ondersteunde upgradepaden.
+Als onderdeel van uw MDM-oplossing (mobile device management) is het raadzaam uw Windows 10-apparaten te upgraden. U kunt bijvoorbeeld uw Windows 10 Professional-apparaten naar Windows 10 Enterprise upgraden. Of u kunt S-mobiel inschakelen, zodat apparaten alleen apps uit de Microsoft Store uitvoeren.
 
-## <a name="before-you-begin"></a>Voordat u begint
-Voordat u apparaten gaat upgraden naar de nieuwste versie, moet u aan de volgende vereisten voldoen:
+[Windows 10 S-modus](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) is ontworpen voor beveiliging en prestaties. Als op uw apparaten alleen apps uit de Microsoft Store worden uitgevoerd, kunt u de S-modus gebruiken om uw apparaten veilig te houden. Als uw apparaten apps gebruiken die niet beschikbaar zijn in de Microsoft Store, dan schakelt u de S-modus uit. Het uitschakelen van de S-modus werkt maar één keer. En zodra u de S-modus hebt uitgeschakeld, kunt u niet terug naar Windows 10 S-modus.
 
-- Een geldige productcode om de bijgewerkte Windows-versie te installeren op alle apparaten waarop het beleid is gericht (voor versies van Windows 10 Desktop). U kunt Multi Activation Keys (MAK) of Key Management Server-sleutels (KMS) gebruiken. Voor edities van Windows 10 Mobile en Windows 10 Holographic kunt u een licentiebestand van Microsoft gebruiken met de licentiegegevens voor het installeren van de bijgewerkte versie van Windows op alle apparaten waarop het beleid is gericht.
+Deze functie is van toepassing op:
+
+- Windows 10 en hoger
+- Windows 10 1809 of hoger voor de S-modus
+- Windows Holographic for Business
+
+Deze functies zijn beschikbaar in Intune en kunnen worden geconfigureerd door de beheerder. Intune maakt gebruik van configuratieprofielen om deze instellingen te maken voor en af te stemmen op de behoeften van uw organisatie. Nadat u deze functies aan een profiel hebt toegevoegd, kunt u het profiel pushen naar en implementeren op Windows 10-apparaten in uw organisatie. Wanneer u het profiel implementeert, wordt door Intune een upgrade van de apparaten uitgevoerd of de S-modus ingeschakeld.
+
+Dit artikel vermeldt de ondersteunde upgradepaden en laat zien hoe het apparaatconfiguratieprofiel wordt gemaakt. U kunt tevens alle beschikbare upgrade-instellingen en S-modusinstellingen voor [Windows 10](edition-upgrade-windows-settings.md) bekijken.
+
+> [!NOTE]
+> Als u de beleidstoewijzing later verwijdert, wordt de versie van Windows op het apparaat niet teruggezet. Het apparaat blijft normaal functioneren.
+
+## <a name="prerequisites"></a>Vereisten
+
+Controleer voor u apparaten upgradet of u aan de volgende vereisten voldoet:
+
+- Een geldige productcode om de bijgewerkte Windows-versie te installeren op alle apparaten waarop het beleid is gericht (voor versies van Windows 10 Desktop). U kunt Multi Activation Keys (MAK) of Key Management Server-sleutels (KMS) gebruiken.
+- Voor edities van Windows 10 Mobile en Windows 10 Holographic kunt u een licentiebestand van Microsoft gebruiken. Het licentiebestand bevat de licentiegegevens voor het installeren van de bijgewerkte versie op alle apparaten waarop het beleid is gericht.
 - De Windows 10-apparaten waaraan u het beleid toewijst, worden geregistreerd bij Microsoft Intune. U kunt het editie-upgradebeleid niet gebruiken voor pc’s waarop de Intune-pc-clientsoftware wordt uitgevoerd.
 
 ## <a name="supported-upgrade-paths"></a>Ondersteunde upgradepaden
+
 In de volgende tabel staan de ondersteunde upgradepaden voor het upgradeprofiel van de Windows 10-versie.
 
 | Upgrade van | Upgrade naar |
@@ -50,57 +69,6 @@ In de volgende tabel staan de ondersteunde upgradepaden voor het upgradeprofiel 
 | Windows 10 Core N | Windows 10 Education N <br/>Windows 10 Enterprise N <br/>Windows 10 Pro Education N | 
 | Windows 10 Holographic | Windows 10 Holographic for Business |
 | Windows 10 Mobile | Windows 10 Mobile Enterprise |
-
-
-<!-- Testing a new table on 3/5/18 
-
-The following lists provide the supported upgrade paths for the Windows 10 edition upgrade profile. The Windows 10 edition to upgrade to is in bold followed by the list of supported editions that you can upgrade from:
-
-**Windows 10 Education**
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows 10 Cloud
-- Windows 10 Enterprise
-- Windows 10 Core
-    
-**Windows 10 Education N edition**    
-- Windows 10 Pro N edition
-- Windows 10 Pro Education N edition
-- Windows 10 Cloud N edition
-- Windows 10 Enterprise N edition
-- Windows 10 Core N edition
-    
-**Windows 10 Enterprise**
-- Windows 10 Pro
-- Windows 10 Cloud
-- Windows 10 Core
-    
-**Windows 10 Enterprise N edition**
-- Windows 10 Pro N edition
-- Windows 10 Cloud N edition
-- Windows 10 Core N edition
-    
-**Windows 10 Pro**
-- Windows 10 Cloud
-    
-**Windows 10 Pro N edition**
-- Windows 10 Cloud N edition
-    
-**Windows 10 Pro Education**
-- Windows 10 Pro
-- Windows 10 Cloud
-- Windows 10 Core
-    
-**Windows 10 Pro Education N edition**
-- Windows 10 Pro N edition
-- Windows 10 Cloud N edition
-- Windows 10 Core N edition
-
-**Windows 10 Holographic for Business**
-- Windows 10 Holographic
-
-**Windows 10 Mobile Enterprise**
-- Windows 10 Mobile -->
 
 <!--The following table provides information about the supported upgrade paths for Windows 10 editions in this policy:
 
@@ -122,45 +90,30 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 |Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
 |Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
 
-## <a name="upgrade-the-edition"></a>De editie bijwerken
+## <a name="create-the-profile"></a>Het profiel maken
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Selecteer in [Azure Portal](https://portal.azure.com) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-3. Geef een **Naam** en **Beschrijving** op voor het profiel. Voer bijvoorbeeld iets in zoals `Windows 10 edition upgrade`
-4. Voor **Platform** selecteert u **Windows 10 en hoger**.
-5. Selecteer voor **Profieltype** de optie **Editie-upgrade**.
-6. Voer de volgende instellingen in de eigenschappen van **Editie-upgrade** in:
+3. Voer de volgende eigenschappen in:
 
-   - **Editie om naar te upgraden**: selecteer de Windows 10-editie waarnaar u upgradet. De apparaten waarop dit beleid is gericht, worden geüpgraded naar de door u gekozen editie.
-   - **Productsleutel**: voer de productsleutel in die u hebt ontvangen van Microsoft. Nadat u het beleid met de productcode hebt gemaakt, kan de sleutel niet worden bijgewerkt en wordt deze uit veiligheidsoverwegingen verborgen. Als u de productcode wilt wijzigen, voert u de volledige code opnieuw in.
-   - **Licentiebestand**: voor **Windows 10 Holographic for Business** of **Windows 10 Mobile-editie** kiest u **Bladeren** om het licentiebestand te selecteren dat u hebt ontvangen van Microsoft. Dit licentiebestand bevat licentiegegevens over de edities waarnaar u de desbetreffende apparaten upgradet.
+    - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel. Voer bijvoorbeeld iets als `Windows 10 edition upgrade profile` of `Windows 10 switch off S mode` in.
+    - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
+    - **Platform**: Selecteer het platform:  
 
-7. Selecteer **OK** om uw wijzigingen op te slaan. Selecteer **Maken** om het profiel te maken.
+        - **Windows 10 en hoger**
 
-## <a name="switch-out-of-s-mode"></a>De S-modus uitschakelen
+    - **Profieltype**: Selecteer **Editie-upgrade**.
+    - **Instellingen**: Voer de instellingen in die u wilt configureren. Voor een lijst van alle instellingen en wat ze doen raadpleegt u:
 
-[Windows 10 S-modus](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) is ontworpen voor beveiliging en prestaties. Als op uw apparaten alleen apps uit de Microsoft Store worden uitgevoerd, kunt u de S-modus gebruiken om uw apparaten veilig te houden. Als u op uw apparaten apps nodig hebt die niet beschikbaar zijn in de Microsoft Store, dan schakelt u de S-modus uit. Het uitschakelen van de S-modus werkt maar één keer. En zodra u de S-modus hebt uitgeschakeld, kunt u niet terug naar Windows 10 S-modus.
+        - [Windows 10-upgrade en S-modus](edition-upgrade-windows-settings.md)
+        - [Windows Holographic for Business](holographic-upgrade.md)
 
-In de volgende stappen ziet u hoe u een profiel maakt voor besturing van de S-modus op apparaten met Windows 10 (1809 of later).
+4. Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. 
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-3. Geef een **Naam** en **Beschrijving** op voor het profiel. Voer bijvoorbeeld iets in zoals `Windows 10 switch off S mode`
-4. Voor **Platform** selecteert u **Windows 10 en hoger**.
-5. Selecteer voor **Profieltype** de optie **Editie-upgrade**.
-6. Selecteer **Modusschakelaar (alleen in Windows Insider)** en stel de eigenschap **De S-modus uitschakelen** in. Uw opties zijn:
-
-    - **Geen configuratie**: een apparaat met de S-modus blijft in de S-modus. Een eindgebruiker kan de S-modus op het apparaat uitschakelen.
-    - **In de S-modus blijven**: hierdoor kan de eindgebruiker de S-modus op het apparaat niet uitschakelen.
-    - **Schakelaar**: hiermee wordt de S-modus op het apparaat uitgeschakeld.
-
-7. Selecteer **OK** om uw wijzigingen op te slaan. Selecteer **Maken** om het profiel te maken.
-
-Het profiel wordt gemaakt en wordt weergegeven in de profielen.
+Het profiel wordt gemaakt en in de lijst weergegeven. Zorg ervoor dat u [het profiel toewijst](device-profile-assign.md) en [de status ervan controleert](device-profile-monitor.md).
 
 ## <a name="next-steps"></a>Volgende stappen
 
-[Wij dit profiel](device-profile-assign.md) toe aan uw groepen.
+Nadat het profiel is gemaakt, is het klaar om te worden toegewezen. Vervolgens kunt u [het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
->[!NOTE]
->Als u de beleidstoewijzing later verwijdert, wordt de versie van Windows op het apparaat niet teruggezet, maar blijft deze normaal functioneren.
+Bekijk de instellingen voor upgrades en S-modus voor apparaten met [Windows 10](edition-upgrade-windows-settings.md) en [Windows Holographic for Business](holographic-upgrade.md).

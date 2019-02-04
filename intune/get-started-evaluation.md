@@ -1,12 +1,12 @@
 ---
-title: Aan de slag met Microsoft Intune
+title: Wat kan Microsoft Intune voor mijn bedrijf doen?
 titleSuffix: ''
-description: Doorloop een reeks korte, praktische snelstartinstructies om meer over Intune te leren.
+description: Algemene bedrijfsproblemen die Microsoft Intune u helpt op te lossen.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 8adb038fbd5fa1b4ad2400a215eb228b81433bde
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c8e15675beb97b396c9340e2ab3bfa86a3a43f76
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186899"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831425"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Wat kan Intune voor mijn bedrijf doen?
 Microsoft Intune is een cloudgebaseerde service voor het beheer van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) die uw werknemers in staat stelt om productief te zijn terwijl uw zakelijke gegevens veilig blijven.

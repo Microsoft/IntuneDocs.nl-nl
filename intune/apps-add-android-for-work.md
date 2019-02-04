@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
-ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
+ms.openlocfilehash: a2f339c9ecf79f3c2e4e87eccd9a5f3b80046aa0
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "54239571"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105201"
 ---
-# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Beheerde Google Play-apps toewijzen aan Android-bedrijfsapparaten met Intune
+# <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Beheerde Google Play-apps toevoegen aan Android-bedrijfsapparaten met Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -37,7 +37,36 @@ Als u uw eigen LOB-apps (line-of-business) hebt gemaakt, kunt u deze als volgt t
 
 Zorg ervoor dat u Intune en Android-werkprofielen hebt geconfigureerd voor samenwerking in de workload **Apparaatinschrijving** van de Azure-portal. Zie [Enroll Android devices](android-work-profile-enroll.md) (Android-apparaten registreren) voor meer informatie.
 
-## <a name="synchronize-an-app-from-the-managed-google-play-store"></a>Een app uit de beheerde Google Play Store synchroniseren
+>[!NOTE]
+>Als u met Microsoft Intune werkt, kunt u beter de Microsoft Edge- of Google Chrome-browser gebruiken.
+
+## <a name="managed-google-play-app-type"></a>Type beheerde Google Play-app 
+Met het type **beheerde Google Play-app** hebt u toestemming om specifiek [beheerde Google Play-apps](https://play.google.com/work/search?q=microsoft&c=apps) aan Intune toe te voegen. Als Intune-beheerder kunt u nu door goedgekeurde beheerde Google Play-apps bladeren en goedgekeurde beheerde Google Play-apps zoeken, goedkeuren, synchroniseren en toewijzen in Intune.  U hoeft niet langer afzonderlijk naar de beheerde Google Play-console te bladeren en u hoeft niet opnieuw een verificatie uit te voeren. 
+
+> [!NOTE]
+> Als u liever een beheerde Google Play-app synchroniseert met Intune, raadpleegt u [Een beheerde Google Play-app met Intune synchroniseren](apps-add-android-for-work.md#synchronize-a-managed-google-play-app-with-intune-alternative)
+
+## <a name="add-a-managed-google-play-app-using-intune"></a>Een beheerde Google Play-app toevoegen met behulp van Intune
+
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Selecteer **Alle services** > **Intune**.  
+    Intune bevindt zich in de sectie **Controle en beheer**.
+3. Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps**.
+5. Selecteer **Toevoegen** in het deelvenster **Apps**.
+6. In de vervolgkeuzelijst **App-type** selecteert u **Beheerd Google Play**.
+7. Selecteer **Beheerde Google Play - apps goedkeuren** om te zoeken naar goedgekeurde beheerde Google Play-apps.
+8. Klik op elke app die u wilt opnemen. Vervolgens
+9. Klik op **Goedkeuren** om de beheerde Google Play-app goed te keuren en klik op **Goedkeuren** om de app-machtigingen te accepteren. 
+10. Klik op **OK** om de app(s) op te nemen.
+11. Klik op **Toevoegen** in het deelvenster **App-app** om te synchroniseren met de beheerde Google Play-service.
+
+## <a name="synchronize-a-managed-google-play-app-with-intune-alternative"></a>Een beheerde Google Play-app synchroniseren met Intune (alternatief)
+Als u liever een beheerde Google Play-app met Intune synchroniseert in plaats deze rechtstreeks met behulp van Intune toe te voegen, gebruikt u de volgende stappen.
+
+> [!IMPORTANT]
+> De onderstaande informatie biedt een alternatieve methode voor het toevoegen van een beheerde Google Play-app met behulp van Intune, zoals hierboven beschreven.
+
+### <a name="synchronize-an-app-from-the-managed-google-play-store"></a>Een app uit de beheerde Google Play Store synchroniseren
 
 1. Ga naar de [beheerde Google Play Store](https://play.google.com/work). Meld u aan met hetzelfde account dat u hebt gebruikt om de verbinding tussen Intune en Android Enterprise te configureren.
 2. Zoek in de store naar de app die u wilt toewijzen met behulp van Intune en selecteer deze.
@@ -58,7 +87,7 @@ Zorg ervoor dat u Intune en Android-werkprofielen hebt geconfigureerd voor samen
 
     De app is goedgekeurd en wordt weergegeven in uw IT-beheerconsole. U kunt vervolgens de [Android-werkprofiel-app synchroniseren met Intune](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune). 
 
-## <a name="sync-a-managed-google-play-app-with-intune"></a>Een beheerde Google Play Store-app met Intune synchroniseren
+### <a name="sync-a-managed-google-play-app-with-intune"></a>Een beheerde Google Play Store-app met Intune synchroniseren
 
 Als u een app uit de store hebt goedgekeurd maar deze nog niet wordt weergegeven in het knooppunt **Apps met licentie** van de workload **Client-apps**, dwingt u als volgt een onmiddellijke synchronisatie af:
 
@@ -71,7 +100,9 @@ Als u een app uit de store hebt goedgekeurd maar deze nog niet wordt weergegeven
 6. Selecteer in het workloadvenster **Client-apps** de optie **Apps**.  
     De zojuist beschikbaar geworden beheerde Google Play Store-app wordt weergegeven.
 
-Als de app wordt weergegeven in het knooppunt **App-licenties** van het workloadvenster **Client-apps**, kunt u de app [toewijzen als alle andere apps](/intune-azure/manage-apps/deploy-apps). U kunt de app alleen toewijzen aan groepen gebruikers.
+## <a name="assigning-the-managed-google-play-app"></a>De beheerde Google Play-app toewijzen
+
+Als de app wordt weergegeven in het knooppunt **App-licenties** van het workloadvenster **Client-apps**, kunt u de app [net als alle andere apps toewijzen](/intune-azure/manage-apps/deploy-apps) door de app aan groepen gebruikers toe te voegen.
 
 Nadat u de app hebt toegewezen, wordt deze geïnstalleerd op de apparaten die u hebt aangewezen. De gebruiker van het apparaat wordt geen toestemming voor de installatie gevraagd.
 
@@ -106,6 +137,9 @@ U kunt Google Play eventueel ook zodanig configureren dat de app-machtigingen pe
 4. Nadat u uw app hebt gepubliceerd, meldt u zich aan bij de [beheerde Google Play Store](https://play.google.com/work) met hetzelfde account dat u hebt gebruikt om de verbinding tussen Intune en Android Enterprise te configureren.
 5. Controleer in het knooppunt **Apps** van de store of de door u gepubliceerde app wordt weergegeven.  
     De app is automatisch goedgekeurd om te worden gesynchroniseerd met Intune.
+
+## <a name="delete-managed-google-play-apps"></a>Beheerde Google Play-apps verwijderen 
+Indien noodzakelijk, kunt u beheerde Google Play-apps verwijderen uit Microsoft Intune. Als u een beheerde Google Play-app wilt verwijderen, opent u Microsoft Intune in de Azure-portal en selecteert u **Client-apps** > **Apps**. In de lijst met apps selecteert u het beletselteken (...) rechts naast de beheerde Google Play-app en vervolgens **Verwijderen** in de weergegeven lijst. Wanneer u een beheerde Google Play-app uit de lijst met apps verwijdert, wordt de goedkeuring voor de beheerde Google Play-app automatisch verwijderd.
 
 ## <a name="next-steps"></a>Volgende stappen
 

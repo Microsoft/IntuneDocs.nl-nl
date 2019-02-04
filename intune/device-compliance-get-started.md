@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/17/2018
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,30 +14,26 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
-ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
+ms.openlocfilehash: 806df8077045a4ad81cb7e221bd053059461a2fd
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53531325"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199401"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Aan de slag met apparaatnalevingsbeleid in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Nalevingsvereisten zijn in wezen regels zoals het vereisen van een apparaatpincode of het vereisen van versleuteling. Het apparaatnalevingsbeleid bevat de regels en instellingen waaraan een apparaat moet voldoen om te voldoen aan het beleid. Deze regels omvatten:
+Veel MDM-oplossingen (mobile device management) beschermen bedrijfsgegevens, doordat gebruikers en apparaten aan bepaalde vereisten moeten voldoen. In Intune wordt deze functie 'nalevingsbeleid' genoemd. Het nalevingsbeleid bepaalt aan welke regels en instellingen apparaten moeten voldoen om compatibel te zijn. Indien gecombineerd met voorwaardelijke toegang kunnen beheerders gebruikers en apparaten blokkeren die niet aan de regels voldoen. Zo kan een Intune-beheerder eisen dat:
 
-- Een wachtwoord gebruiken voor toegang tot het apparaat
+- eindgebruikers een wachtwoord gebruiken voor toegang tot bedrijfsgegevens op mobiele apparaten
 
-- Versleuteling
+- het apparaat niet jailbroken of geroot is
 
-- Of het apparaat jailbroken of geroot is
+- er een minimum- of maximumversie van het besturingssysteem op het apparaat staat
 
-- Minimaal vereiste versie van het besturingssysteem
-
-- Maximale versie van het besturingssysteem dat is toegestaan
-
-- Vereisen dat het apparaat zich op of onder het Mobile Threat Defense-niveau bevindt
+- het apparaat zich op of onder het apparaatdreigingsniveau bevindt
 
 U kunt een apparaatnalevingsbeleid ook gebruiken om de naleving van uw apparaten te bewaken.
 
@@ -68,7 +64,8 @@ compliance issues on the device. You can also use this time to create your actio
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
 ## <a name="prerequisites"></a>Vereisten
-Het volgende is vereist om apparaatnalevingsbeleid te gebruiken:
+
+Neem het volgende in acht voor het gebruik van het nalevingsbeleid voor apparaten:
 
 - Gebruik de volgende abonnementen:
 
@@ -84,30 +81,28 @@ Het volgende is vereist om apparaatnalevingsbeleid te gebruiken:
   - Windows Phone 8.1
   - Windows 10
 
-- Apparaten moeten worden geregistreerd bij Intune om over het nalevingsbeleid voor apparaten te rapporteren
+- Registreer apparaten in Intune om de nalevingsstatus te bekijken
 
-- Apparaten die zijn geregistreerd voor één gebruiker of apparaten zonder primaire gebruiker worden ondersteund. Meerdere gebruikerscontexten worden niet ondersteund.
+- Registreer apparaten voor één gebruiker of registreer ze zonder een primaire gebruiker. Apparaten die zijn geregistreerd voor meerdere gebruikers worden niet ondersteund.
 
-## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Hoe het Intune-apparaatnalevingsbeleid werkt met Azure AD
+## <a name="how-device-compliance-policies-work-with-azure-ad"></a>Hoe het apparaatnalevingsbeleid werkt met Azure AD
 
 Wanneer een apparaat wordt ingeschreven bij Intune, begint het Azure AD-registratieproces en worden de apparaatkenmerken in Azure AD bijgewerkt. Een van de belangrijkste apparaatgegevens is de nalevingsstatus van het apparaat. Deze nalevingsstatus wordt door de beleidsregels voor voorwaardelijke toegang gebruikt om de toegang tot e-mail en andere bedrijfsresources toe te staan of te blokkeren.
 
 In het [Azure AD-registratieproces](https://docs.microsoft.com/azure/active-directory/device-management-introduction) vindt u meer informatie.
 
-### <a name="assign-a-resulting-device-configuration-profile-status"></a>Een resulterend configuratieprofiel aan een apparaatstatus toewijzen
+## <a name="refresh-cycle-times"></a>Cyclusduur vernieuwen
 
-Wanneer een apparaat meerdere configuratieprofielen heeft en het apparaat verschillende nalevingsstatussen heeft voor twee of meer toegewezen configuratieprofielen, moet één resulterende nalevingsstatus worden toegewezen. Deze toewijzing is gebaseerd op een conceptueel ernstniveau dat is toegewezen aan elke nalevingsstatus. Elke nalevingsstatus heeft een van de volgende ernstniveaus:
+Bij de nalevingscontrole gebruikt Intune dezelfde vernieuwingscyclus als configuratieprofielen. In het algemeen bedraagt de duur:
 
-|Status  |Ernst  |
-|---------|---------|
-|In behandeling     |1|
-|Geslaagd     |2|
-|Mislukt     |3|
-|Fout     |4|
+- iOS: om de zes uur
+- macOS: om de zes uur
+- Android: om de acht uur
+- Pc’s met Windows 10 die als apparaten zijn geregistreerd: om de acht uur
+- Windows Phone: om de acht uur
+- Windows 8.1: om de acht uur
 
-Wanneer een apparaat meerdere configuratieprofielen heeft, wordt het hoogste ernstniveau van alle profielen toegewezen aan dat apparaat.
-
-Stel dat aan een apparaat drie profielen zijn toegewezen, één met de status In behandeling (ernst = 1), één met de status Geslaagd (ernst = 2) en één met de status Fout (ernst =4). De status Fout heeft het hoogste ernstniveau, waardoor alle drie de profielen de nalevingsstatus Fout hebben.
+Een nalevingscontrole gebeurt vaker onmiddellijk nadat een apparaat wordt geregistreerd.
 
 ### <a name="assign-an-ingraceperiod-status"></a>Een Respijtperiode-status toewijzen
 
@@ -157,14 +152,14 @@ U kunt nalevingsbeleid voor apparaten ook zonder voorwaardelijke toegang gebruik
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Nalevingsbeleid voor apparaten implementeren
 U kunt nalevingsbeleid implementeren voor gebruikers in gebruikersgroepen of apparaten in apparaatgroepen. Wanneer er nalevingsbeleid wordt geïmplementeerd voor een gebruiker, worden alle apparaten van de gebruiker gecontroleerd op naleving. Voor apparaten met Windows 10-versie 1803 en hoger raden we aan naar apparaatgroepen te implementeren *als* de hoofdgebruiker het apparaat niet heeft geregistreerd. Het gebruik van apparaatgroepen maakt rapportage over naleving in dit scenario eenvoudiger.
 
-Een reeks ingebouwde **instellingen voor nalevingsbeleid** (Azure Portal > Apparaatnaleving) wordt geëvalueerd voor alle bij Intune ingeschreven apparaten. Deze omvatten:
+Een reeks ingebouwde instellingen voor nalevingsbeleid (**Intune** > **Apparaatnaleving**) wordt geëvalueerd voor alle bij Intune ingeschreven apparaten. Deze omvatten:
 
 - **Apparaten waaraan geen nalevingsbeleid is toegewezen markeren als**: Deze eigenschap heeft twee waarden:
 
   - **Compatibel**: beveiligingsfunctie uit
   - **Niet compatibel** (standaard): beveiligingsfunctie aan
 
-  Als er geen nalevingsbeleid aan een apparaat is toegewezen, wordt dit apparaat als incompatibel beschouwd. Standaard worden apparaten gemarkeerd als **Compatibel**. Als u voorwaardelijke toegang gebruikt, is het raadzaam de instelling te wijzigen in **Niet compatibel**. Als een eindgebruiker incompatibel is omdat er geen beleid is toegewezen, wordt in de bedrijfsportal `No compliance policies have been assigned` vermeld.
+  Als er geen nalevingsbeleid aan een apparaat is toegewezen, wordt dit apparaat als incompatibel beschouwd. Standaard worden apparaten gemarkeerd als **Niet compatibel**. Als u voorwaardelijke toegang gebruikt, is het raadzaam de instelling te wijzigen in **Niet compatibel**. Als een eindgebruiker incompatibel is omdat er geen beleid is toegewezen, wordt in de bedrijfsportal `No compliance policies have been assigned` vermeld.
 
 - **Verbeterde jailbreakdetectie**: Als deze instelling is ingeschakeld, zorgt deze ervoor dat iOS-apparaten vaker bij Intune inchecken. Door het inschakelen van deze eigenschap worden de locatieservices van het apparaat gebruikt. Ook heeft dit invloed op het batterijverbruik. De locatiegegevens van de gebruiker worden niet opgeslagen door Intune.
 

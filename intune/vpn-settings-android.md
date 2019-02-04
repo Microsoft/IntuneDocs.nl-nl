@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/26/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ac4b7821f132c92b247538e4ea6131f517da7698
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5e442ae550d138d532f7a2d8e829c623d09f240a
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187684"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751158"
 ---
 # <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>VPN-instellingen configureren voor Android-apparaten in Intune
 
@@ -29,21 +29,21 @@ In dit artikel leest u meer over de Intune-instellingen die u kunt gebruiken om 
 U kunt VPN-instellingen voor de volgende platforms configureren:
 
 - [Android](#android-vpn-settings)
-- [Android for Work](#android-for-work-vpn-settings)
+- [Android Enterprise](#android-enterprise-vpn-settings)
 
 Afhankelijk van de instellingen die u kiest, kunnen niet alle volgende waarden worden geconfigureerd.
 
 ## <a name="android-vpn-settings"></a>VPN-instellingen voor Android
 
-- **Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers zien deze naam wanneer ze op hun apparaat de beschikbare VPN-verbindingen zoeken.
+- **Verbindingsnaam**: Voer een naam in voor deze verbinding. Eindgebruikers zien deze naam wanneer ze op hun apparaat de beschikbare VPN-verbindingen zoeken.
 - **IP-adres of FQDN**: geef het IP-adres of de FQDN (Fully Qualified Domain Name) op van de VPN-server waarmee apparaten verbinding maken. Voer bijvoorbeeld **192.168.1.1** of **vpn.contoso.com** in.
 
   - **Verificatiemethode**: kies hoe apparaten worden geverifieerd bij de VPN-server. Uw opties zijn:
 
     - **Certificaten**: selecteer een bestaand SCEP- of PKCS-certificaatprofiel om de verbinding te verifiëren. [Certificaten configureren](certificates-configure.md) bevat de stappen voor het maken van een certificaatprofiel.
-    - **Gebruikersnaam en wachtwoord**: tijdens het aanmelden bij de VPN-server worden de eindgebruikers gevraagd een gebruikersnaam en wachtwoord in te voeren.
+    - **Gebruikersnaam en wachtwoord**: tijdens het aanmelden bij de VPN-server wordt de eindgebruikers gevraagd een gebruikersnaam en wachtwoord in te voeren.
 
-- **Verbindingstype**: selecteer het type VPN-verbinding. Uw opties zijn:
+- **Type verbinding**: selecteer het type van de VPN-verbinding. Uw opties zijn:
 
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**
@@ -55,22 +55,22 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle volgende waarden w
 - **Vingerafdruk** (alleen voor VPN Check Point Capsule): geef een tekenreeks op (bijvoorbeeld **Contoso-vingerafdrukcode**) om te verifiëren dat de VPN-server kan worden vertrouwd. Een vingerafdruk kan worden verzonden naar de client zodat deze alle servers vertrouwt die over dezelfde vingerafdruk beschikken wanneer er verbinding wordt gemaakt. Als het apparaat niet over de vingerafdruk beschikt, wordt de gebruiker gevraagd om de VPN-server te vertrouwen terwijl de vingerafdruk wordt weergegeven. De gebruiker controleert de vingerafdruk handmatig en kiest Vertrouwen om verbinding te maken.
 - **Sleutel- en waardeparen voor de kenmerken van de Citrix VPN invoeren** (alleen voor Citrix): voer sleutel- en waardeparen in, afkomstig van Citrix. Met deze waarden configureert u de eigenschappen van de VPN-verbinding.
 
-## <a name="android-for-work-vpn-settings"></a>VPN-instellingen voor Android for Work
+## <a name="android-enterprise-vpn-settings"></a>VPN-instellingen voor Android Enterprise
 
-- **Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers zien deze naam wanneer ze op hun apparaat de beschikbare VPN-verbindingen zoeken.
+- **Verbindingsnaam**: Voer een naam in voor deze verbinding. Eindgebruikers zien deze naam wanneer ze op hun apparaat de beschikbare VPN-verbindingen zoeken.
 - **IP-adres of FQDN**: geef het IP-adres of de FQDN (Fully Qualified Domain Name) op van de VPN-server waarmee apparaten verbinding maken. Voer bijvoorbeeld **192.168.1.1** of **vpn.contoso.com** in.
 
   - **Verificatiemethode**: kies hoe apparaten worden geverifieerd bij de VPN-server. Uw opties zijn:
   
     - **Certificaten**: selecteer een bestaand SCEP- of PKCS-certificaatprofiel om de verbinding te verifiëren. [Certificaten configureren](certificates-configure.md) bevat de stappen voor het maken van een certificaatprofiel.
-    - **Gebruikersnaam en wachtwoord**: tijdens het aanmelden bij de VPN-server worden de eindgebruikers gevraagd een gebruikersnaam en wachtwoord in te voeren.
+    - **Gebruikersnaam en wachtwoord**: tijdens het aanmelden bij de VPN-server wordt de eindgebruikers gevraagd een gebruikersnaam en wachtwoord in te voeren.
 
-- **Verbindingstype**: selecteer het type VPN-verbinding. Uw opties zijn:
+- **Type verbinding**: selecteer het type van de VPN-verbinding. Uw opties zijn:
 
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**
   - **SonicWall Mobile Connect**
-  - **F5 Edge Client**
+  - **F5-toegang**
   - **Pulse Secure**
 
 ## <a name="next-steps"></a>Volgende stappen

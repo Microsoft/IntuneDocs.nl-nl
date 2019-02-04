@@ -6,7 +6,7 @@ author: Erikre
 ms.author: erikre
 ms.reviewer: smithre4
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 691029cc7b9fd8880c5440a84b95bbf2462920d6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 433d15d91bc32ef409c9a89c4d71cacb7478e74d
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180320"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068302"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Configuratie-instellingen voor Microsoft Outlook 
 
@@ -29,18 +29,9 @@ Zie [App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen](app-co
 
 ## <a name="configuration-settings"></a>Configuratie-instellingen
 
-Bij het toevoegen van een configuratiebeleid in Intune kunt u specifieke instellingen voor het configureren van Microsoft Outlook instellen. In het deelvenster **Configuratie-instellingen** kunt u de configuratie van het e-mailaccount instellen.
+Bij het toevoegen van een configuratiebeleid in Intune kunt u instellingen specificeren voor het configureren van Microsoft Outlook op iOS en Android. In het deelvenster Configuratie-instellingen kunt u de configuratie van het e-mailaccount instellen en de app-specifieke instellingen configureren. Daarnaast kunt u deze instellingen configureren en/of naam-/waardeparen gebruiken.
 
-### <a name="basic-authentication-email-account-settings"></a>Instellingen voor basisverificatie van e-mailaccount
-Outlook voor iOS en Android biedt Exchange-beheerders de mogelijkheid om accountconfiguraties te 'pushen' naar hun on-premises gebruikers die gebruikmaken van basisverificatie met het ActiveSync-protocol. Zie voor meer informatie [Account setup in Outlook for iOS and Android using Basic authentication](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/account-setup) (Accounts instellen in Outlook voor iOS en Android met behulp van basisverificatie). Om configuratie van accountinstellingen in te schakelen, kunt u de volgende instellingen configureren:
-
-- **E-mailserver**: voer de hostnaam van uw on-premises Exchange-server in (zoals mail.contoso.com).
-- **E-mailaccountnaam**: voer de weergavenaam in voor het e-mailaccount. Deze naam zien gebruikers op hun apparaat.
-- **Het kenmerk Gebruikersnaam van AAD**: deze naam is het kenmerk dat Intune ontvangt van Azure Active Directory (Azure AD). In Intune wordt de gebruikersnaam die wordt gebruikt door dit profiel dynamisch gegenereerd. Zijn uw opties:
-  - **User Principal Name**: hiermee wordt de naam opgehaald, zoals `user1` of `user1@contoso.com`
-  - **Primair SMTP-adres**: haalt de naam op in de indeling van het e-mailadres, zoals `user1@contoso.com`
-- **Kenmerk van het e-mailadres van AAD**: kies op welke manier het e-mailadres voor de gebruiker wordt gegenereerd. Selecteer **User principal name** (`user1@contoso.com` of `user1`) om de volledige user principal name als e-mailadres te gebruiken, of **Primair SMTP-adres** (`user1@contoso.com`) om het primaire SMTP-adres te gebruiken om u aan te melden bij Exchange. We raden aan om **Primair SMTP-adres** te selecteren.
-- **Accountdomein** (optioneel): het domein van het account.
+Zie voor informatie over het instellen van een Outlook-account en over procedurestappen voor iOS- en Android-apparaten in Microsoft Intune [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) (Outlook voor iOS- en Android-appconfiguratie-instellingen implementeren).
 
 ## <a name="next-steps"></a>Volgende stappen
 [E-mailinstellingen configureren in Intune](email-settings-configure.md)

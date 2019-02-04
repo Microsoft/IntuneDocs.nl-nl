@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 83baf13b42cd67e682227d6310b7057bdbd6bf1e
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: ae4691b21b9728a28f9cac0ae0af7fd42a8bdbde
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324855"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199435"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
 
@@ -41,7 +41,7 @@ Na het inschrijven kunt u [de eigendomsinstelling wijzigen](#change-device-owner
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Herkenning van apparaten in bedrijfseigendom met IMEI-nummer of serienummer
 
-Als Intune-beheerder kunt u een bestand met door komma's gescheiden waarden (.csv) maken en importeren, waarin de IMEI-nummers of serienummers worden vermeld. Intune gebruikt deze id's om het eigendom van het apparaat als zakelijk op te geven tijdens het inschrijven van het apparaat. U kunt IMEI-nummers aangeven voor alle ondersteunde platforms. U kunt alleen serienummers declareren voor iOS-, macOS- en Android-apparaten. Voor elk IMEI-nummer of serienummer kunnen gegevens zijn opgegeven in de lijst voor beheerdoeleinden.
+Als Intune-beheerder kunt u een bestand met door komma's gescheiden waarden (.csv) maken en importeren, waarin de IMEI-nummers of serienummers van 14 cijfers worden vermeld. Intune gebruikt deze id's om het eigendom van het apparaat als zakelijk op te geven tijdens het inschrijven van het apparaat. U kunt IMEI-nummers aangeven voor alle ondersteunde platforms. U kunt alleen serienummers declareren voor iOS-, macOS- en Android-apparaten. Voor elk IMEI-nummer of serienummer kunnen gegevens zijn opgegeven in de lijst voor beheerdoeleinden.
 
 <!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
@@ -49,7 +49,7 @@ Als Intune-beheerder kunt u een bestand met door komma's gescheiden waarden (.cs
 [Lees hier meer informatie over het vinden van het serienummer van een Android-apparaat](https://support.google.com/store/answer/3333000).
 
 ## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>Bedrijfs-id's toevoegen met behulp van een CSV-bestand
-Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zonder koptekst. Plaats de IMEI- of serienummers in de linkerkolom en de details in de rechterkolom. U kunt in één CSV-bestand maar één type id, IMEI-nummer of serienummer importeren. De details zijn beperkt tot 128 tekens en zijn alleen bedoeld voor beheerders. De details worden niet op het apparaat weergegeven. De huidige limiet is 5.000 rijen per CSV-bestand.
+Maak een lijst met twee kolommen met door komma's gescheiden waarden (.csv) zonder koptekst. Plaats de IMEI- of serienummers van 14 cijfers in de linkerkolom en de details in de rechterkolom. U kunt in één CSV-bestand maar één type id, IMEI-nummer of serienummer importeren. De details zijn beperkt tot 128 tekens en zijn alleen bedoeld voor beheerders. De details worden niet op het apparaat weergegeven. De huidige limiet is 5.000 rijen per CSV-bestand.
 
 **Een CSV-bestand met serienummers uploaden**: maak een lijst in twee kolommen met door komma's gescheiden waarden (CSV) zonder koptekst. Zorg ervoor dat het CSV-bestand niet meer dan 5000 apparaten bevat en niet groter is dan 5 MB.
 

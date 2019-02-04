@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,21 +14,21 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 33a7593adcab7df76020b8bfe520cf6cbd3c6455
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 28a78720b6ccc86b275f57b443ee7a63ca746512
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831323"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>E-mailinstellingen toevoegen aan apparaten met Intune
 
-Microsoft Intune omvat verschillende e-mailinstellingen die u op apparaten in uw organisatie kunt implementeren. Een IT-beheerder kan e-mailprofielen maken met specifieke instellingen om verbinding te maken met een e-mailserver, zoals Office 365 en Gmail. Gebruikers kunnen vervolgens verbinding maken, verifiëren en het e-mailaccount van hun organisatie op hun mobiele apparaten synchroniseren. Door een e-mailprofiel te maken en te implementeren, kunt u bevestigen dat instellingen op veel apparaten standaard zijn. Ook kan dit het aantal ondersteuningsaanvragen verminderen dat wordt ingediend door eindgebruikers die de juiste e-mailinstellingen niet weten.
+Microsoft Intune omvat verschillende e-mailinstellingen die u op apparaten in uw organisatie kunt implementeren. Een IT-beheerder maakt e-mailprofielen met specifieke instellingen om verbinding te maken met een e-mailserver, zoals Office 365 en Gmail. Eindgebruikers kunnen vervolgens verbinding maken, verifiëren en het e-mailaccount van hun organisatie op hun mobiele apparaten synchroniseren. Door een e-mailprofiel te maken en te implementeren, kunt u bevestigen dat instellingen op veel apparaten standaard zijn. Ook kan dit het aantal ondersteuningsaanvragen verminderen dat wordt ingediend door eindgebruikers die de juiste e-mailinstellingen niet weten.
 
 U kunt e-mailprofielen gebruiken om de ingebouwde e-mailinstellingen te configureren voor de volgende apparaten:
 
 - Android Samsung Knox Standard 4.0 en hoger
-- Apparaten met een Android-werkprofiel
+- Android Enterprise
 - iOS 8.0 en hoger
 - Windows Phone 8.1 en hoger
 - Windows 10 (Desktop) en Windows 10 Mobile
@@ -37,7 +37,7 @@ In dit artikel wordt uitgelegd hoe u een e-mailprofiel maakt in Microsoft Intune
 
 ## <a name="create-a-device-profile"></a>Een apparaatprofiel maken
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Selecteer in de [Azure-portal](https://portal.azure.com) **Alle services** > filter op **Intune** en selecteer **Microsoft Intune**.
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 3. Geef een **Naam** en **Beschrijving** op voor het e-mailprofiel.
 4. Kies uw **Platform** uit de vervolgkeuzelijst. Uw opties zijn:
@@ -45,15 +45,14 @@ In dit artikel wordt uitgelegd hoe u een e-mailprofiel maakt in Microsoft Intune
     - **Android** (alleen Samsung Android Knox Standard)
     - **Android Enterprise**
     - **iOS**
-    - **macOS**
     - **Windows Phone 8.1**
-    - **Windows 8.1 en hoger**
     - **Windows 10 en hoger**
 
 5. Kies **E-mail** in de vervolgkeuzelijst **Profieltype**.
 6. De instellingen die u kunt configureren, kunnen voor elk platform verschillend zijn. Kies voor specifieke instellingen uw platform:
 
-    - [Instellingen voor Android-werkprofielen en Samsung Knox Standard](email-settings-android.md)
+    - [Instellingen voor Android Samsung Knox Standard](email-settings-android.md)
+    - [Instellingen voor Android Enterprise](email-settings-android-enterprise.md)
     - [iOS-instellingen](email-settings-ios.md)
     - [Windows Phone 8.1-instellingen](email-settings-windows-phone-8-1.md)
     - [Windows 10-instellingen](email-settings-windows-10.md)
@@ -76,17 +75,17 @@ U kunt e-mailprofielen beveiligen met behulp van de volgende opties:
 
   Zie [How to configure certificates with Intune](certificates-configure.md) (Certificaten configureren met Intune) voor meer informatie over het gebruiken en maken van certificaatprofielen in Intune.
 
-- **Gebruikersnaam en wachtwoord**: de gebruiker wordt geverifieerd op de systeemeigen e-mailserver door de gebruikersnaam en het wachtwoord in te voeren. Het wachtwoord is niet aanwezig in het e-mailprofiel. De gebruiker moet dus het wachtwoord invoeren wanneer verbinding wordt gemaakt met de e-mail.
+- **Gebruikersnaam en wachtwoord**: de gebruiker wordt geverifieerd op de systeemeigen e-mailserver door de gebruikersnaam en het wachtwoord in te voeren. Het wachtwoord is niet aanwezig in het e-mailprofiel. De gebruiker voert dus het wachtwoord in wanneer verbinding wordt gemaakt met de e-mail.
 
 ## <a name="how-intune-handles-existing-email-accounts"></a>Hoe Intune omgaat met bestaande e-mailaccounts
 
 Als de gebruiker al een e-mailaccount heeft geconfigureerd, is wordt het e-mailprofiel, afhankelijk van het platform, anders toegewezen.
 
-- **iOS**: het e-mailprofiel bestaat al en dit duplicaat is gedetecteerd op basis van hostnaam en e-mailadres. De toewijzing van een Intune-profiel wordt geblokkeerd op basis van het dubbele e-mailprofiel. In dit geval deelt de bedrijfsportal-app de gebruiker mee dat deze niet voldoet aan de eisen en wordt de gebruiker gevraagd het geconfigureerde profiel handmatig te verwijderen. Als u dit scenario wilt voorkomen, vertelt u gebruikers dat ze het apparaat eerst moeten inschrijven *voordat* ze een e-mailprofiel installeren, zodat Intune het profiel kan instellen.
+- **iOS**: Een bestaand, dubbel e-mailprofiel wordt gedetecteerd op basis van de hostnaam en het e-mailadres. De toewijzing van een Intune-profiel wordt geblokkeerd op basis van het dubbele e-mailprofiel. In dit geval deelt de bedrijfsportal-app de gebruiker mee dat deze niet voldoet aan de eisen en wordt de eindgebruiker gevraagd het geconfigureerde profiel handmatig te verwijderen. Als u dit scenario wilt voorkomen, vertelt u uw eindgebruikers dat ze het apparaat eerst moeten inschrijven *voordat* ze een e-mailprofiel installeren, zodat Intune het profiel kan instellen.
 
-- **Windows**: een bestaand, dubbel e-mailprofiel wordt gedetecteerd op basis van de hostnaam en het e-mailadres. Intune overschrijft het bestaande e-mailprofiel dat is gemaakt door de gebruiker.
+- **Windows:** Een bestaand, dubbel e-mailprofiel wordt gedetecteerd op basis van de hostnaam en het e-mailadres. Intune overschrijft het bestaande e-mailprofiel dat is gemaakt door de eindgebruiker.
 
-- **Android Samsung Knox Standard**: een bestaand gedupliceerd e-mailprofiel wordt gedetecteerd op basis van het e-mailadres. Het bestaande e-mailprofiel wordt overschreven door het Intune-profiel. Android gebruikt geen hostnaam om het profiel te identificeren. Maak niet meerdere e-mailprofielen met hetzelfde e-mailadres op verschillende hosts. De profielen overschrijven elkaar.
+- **Android Samsung Knox - Standard**: Een bestaand, dubbel e-mailprofiel wordt gedetecteerd op basis van het e-mailadres. Het bestaande e-mailprofiel wordt overschreven door het Intune-profiel. Android gebruikt geen hostnaam om het profiel te identificeren. Maak niet meerdere e-mailprofielen met hetzelfde e-mailadres op verschillende hosts. De profielen overschrijven elkaar.
 
 - **Android-werkprofielen**: Intune bevat twee Android-profielen voor zakelijke e-mail, een voor de app van Gmail en een voor de app van Nine Work. Deze apps zijn beschikbaar in de Google Play Store en worden geïnstalleerd in het werkprofiel van het apparaat. Door deze apps worden geen dubbele profielen gemaakt. Beide apps ondersteunen verbindingen met Exchange. Voor het gebruik van connectiviteit voor e-mail, implementeert u een van deze e-mail-apps op apparaten van uw gebruikers. Maak en implementeer vervolgens het juiste e-mailprofiel. E-mail-apps zoals Nine Work zijn mogelijk niet gratis. Raadpleeg de licentiegegevens van de app of neem contact op met het bedrijf dat de app heeft gemaakt voor meer informatie.
 
@@ -95,4 +94,5 @@ Als de gebruiker al een e-mailaccount heeft geconfigureerd, is wordt het e-mailp
 Als u wijzigingen aanbrengt aan een e-mailprofiel dat u eerder had toegewezen, zien eindgebruikers mogelijk een bericht waarin ze wordt gevraagd de herconfiguratie van hun e-mailinstellingen goed te keuren.
 
 ## <a name="next-steps"></a>Volgende stappen
+
 Als het profiel is gemaakt, doet het nog niets. [Wijs het profiel vervolgens toe aan enkele apparaten](device-profile-assign.md).
