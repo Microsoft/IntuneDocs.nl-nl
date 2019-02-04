@@ -231,19 +231,19 @@ items:
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Apparaatcompatibiliteit instellen
     items:
-    - name: Apparaatnalevingsoverzicht
+    - name: Nalevingsoverzicht
       href: device-compliance-get-started.md
-    - name: Android-beleid maken
+    - name: Android-naleving
       href: compliance-policy-create-android.md
-    - name: Beleid voor Android Enterprise-profiel maken
+    - name: Android Enterprise-naleving
       href: compliance-policy-create-android-for-work.md
-    - name: Een beleid maken om Google Play Protect in te schakelen
+    - name: Google Play Protect inschakelen
       href: compliance-policy-create-google-play-protect.md
-    - name: iOS-beleid maken
+    - name: iOS-naleving
       href: compliance-policy-create-ios.md
-    - name: Windows-beleid maken
+    - name: Windows-naleving
       href: compliance-policy-create-windows.md
-    - name: Beleid op basis van locatie
+    - name: Naleving op basis van locatie
       href: use-network-locations.md
     - name: Beleid evalueren
       href: policy-evaluate.md
@@ -251,39 +251,39 @@ items:
       href: actions-for-noncompliance.md
     - name: Apparaatcompatibiliteit bewaken
       href: compliance-policy-monitor.md
-  - name: Apparaten configureren
+  - name: Apparaatinstellingen configureren
     items:
-    - name: Apparaten configureren met profielen
+    - name: Overzicht van apparaatconfiguratie
       href: device-profiles.md
     - name: Apparaatprofielen
       href: device-profile-create.md
     - name: Beheersjablonen
       href: administrative-templates-windows.md
-    - name: Apparaatfuncties (iOS en macOS)
+    - name: Apparaatfuncties
       href: device-features-configure.md
-    - name: Apparaatbeperkingen
+    - name: Apparaatinstellingen en functies beperken
       href: device-restrictions-configure.md
-    - name: Delivery Optimization
+    - name: Updates leveren
       href: delivery-optimization-windows.md
-    - name: Editie-upgrade en modusschakelaar
+    - name: Upgrade-edities en S-modus
       href: edition-upgrade-configure-windows-10.md
-    - name: E-mailinstellingen
+    - name: E-mailinstellingen configureren
       href: email-settings-configure.md
-    - name: Kioskinstellingen
+    - name: Kioskmodus inschakelen
       href: kiosk-settings.md
-    - name: VPN-instellingen
+    - name: Een VPN-verbinding toevoegen
       href: vpn-settings-configure.md
       items:
       - name: VPN per app voor Android
         href: android-pulse-secure-per-app-vpn.md
       - name: VPN per app voor iOS
         href: vpn-setting-configure-per-app.md
-    - name: Wi-Fi-instellingen
+    - name: Een draadloos Wi-Fi-netwerk toevoegen
       href: wi-fi-settings-configure.md
       items:
       - name: Wi-Fi met een vooraf gedeelde sleutel
         href: wi-fi-profile-shared-key.md
-    - name: Onderwijsinstellingen
+    - name: Education - Toets maken-app
       href: education-settings-configure.md
     - name: Gedeelde apparaten voor meerdere gebruikers
       href: shared-user-device-settings.md
@@ -295,7 +295,7 @@ items:
       href: device-profile-assign.md
     - name: Profielen controleren
       href: device-profile-monitor.md
-    - name: Problemen met profielen oplossen
+    - name: Veelgestelde vragen en antwoorden
       href: device-profile-troubleshoot.md
   - name: Apparaatgegevens beschermen
     items:
@@ -854,6 +854,8 @@ items:
       items:
       - name: Intune-API-referentiemateriaal
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: Graph-API's gebruikt om apparaten te configureren
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Resources
   items:
   - name: Microsoft Intune-documentatiehandleiding
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: Gegevenslekken op niet-beheerde apparaten voorkomen
       href: data-leak-prevention.md
-ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504541"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645186"
