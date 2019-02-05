@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4a6818f67ab4e3b04364b412fb8ecf71227328d4
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: b3ced7e52de05e98c2f4a7ec9a828972ab60cf71
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54386907"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290720"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Intune-inschrijving van toegewezen Android Enterprise-apparaten instellen
 
@@ -101,7 +101,7 @@ U kunt nu [uw toegewezen apparaten inschrijven](android-dedicated-devices-fully-
 
 ## <a name="managing-apps-on-android-dedicated-devices"></a>Apps beheren op toegewezen Android-apparaten
 
-U kunt op toegewezen Android-apparaten alleen apps installeren waarvoor het toewijzingstype is [ingesteld op Vereist](apps-deploy.md#to-assign-an-app). De apps worden geïnstalleerd vanuit de beheerde Google Play Store op dezelfde manier als op apparaten met een Android-werkprofiel.
+U kunt op toegewezen Android-apparaten alleen apps installeren waarvoor het toewijzingstype is [ingesteld op Vereist](apps-deploy.md#assign-an-app). De apps worden geïnstalleerd vanuit de beheerde Google Play Store op dezelfde manier als op apparaten met een Android-werkprofiel.
 
 Apps worden automatisch bijgewerkt op beheerde apparaten zodra de app-ontwikkelaar een update op Google Play publiceert.
 
