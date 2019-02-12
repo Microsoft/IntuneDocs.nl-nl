@@ -14,12 +14,13 @@ ms.suite: ems
 search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 9c41fc39b5d2dc644fae91d6b02171681453ab1c
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e38d5e68e79facfd270de64c79708b74aa460189
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203396"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838186"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Instellingen voor Windows 10- en Windows Holographic-apparaten om VPN-verbindingen met Intune toe te voegen
 

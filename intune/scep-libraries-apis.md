@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4109c437ae5a096c78c19aef489218cf7286eb01
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c7178ae7231586e781766adb1fea45b375a76920
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032330"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842045"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API's gebruiken om CA's van derden voor SCEP aan Intune toe te voegen
 
@@ -298,7 +299,7 @@ Valideren en testen of uw oplossing correct is geïntegreerd met Intune, is vere
 12. Controleer of de eigenschappen van de geïnstalleerde certificaten overeenkomen met de eigenschappen die zijn ingesteld in het SCEP-profiel.
 13. Controleer of de uitgegeven certificaten juist worden vermeld in de Intune-console
 
-## <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
 
 - [Overzicht van het toevoegen van certificeringsinstanties van derden](certificate-authority-add-scep-overview.md)
 - [Intune instellen](setup-steps.md)

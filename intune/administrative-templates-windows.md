@@ -14,12 +14,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d0426b63cb4601a73451ec9509ddea8e39271c29
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204970"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833613"
 ---
 # <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10-sjablonen voor het configureren van instellingen voor groepsbeleid in Microsoft Intune
 

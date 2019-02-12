@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dacadd92ebb29bb2295d94aebb7922bb62226e2f
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 52f6caf8e48cd9781648acf1de0152ec107d5246
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149393"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850897"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Logboeken verzenden naar de bedrijfsportal-ontwikkelaars voor Android-apparaten
 

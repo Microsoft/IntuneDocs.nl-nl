@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
-ms.openlocfilehash: a6329a44f1ccfa55025ad558fe2f277a41293538
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b9fdd1891f8a0e893d61ac3a0b40dac5a01f602c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266899"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851335"
 ---
 # <a name="reference-for-current-user-entity"></a>Naslaginformatie voor huidige gebruikersentiteit
 

@@ -15,12 +15,13 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3e66dd3d77cc36a6d311afea82e0f2087b469495
-ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4481645781e21da4f433f5feae1d685efb73d412
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "54239588"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841416"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Intune on-premises Exchange-connector instellen in Microsoft Intune Azure
 
@@ -52,7 +53,7 @@ De volgende tabel bevat de vereisten voor de computer waarop u de on-premises Ex
 
 ### <a name="exchange-cmdlet-requirements"></a>Vereisten voor Exchange-cmdlets
 
-U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de on-premises Exchange-connector. De account moet gemachtigd zijn om de volgende vereiste Windows PowerShell Exchange-cmdlets uit te voeren:
+U moet een Active Directory-gebruikersaccount maken dat wordt gebruikt door de on-premises Exchange-connector. Het account moet gemachtigd zijn om de volgende vereiste Windows PowerShell Exchange-cmdlets uit te voeren:
 
 
  -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings

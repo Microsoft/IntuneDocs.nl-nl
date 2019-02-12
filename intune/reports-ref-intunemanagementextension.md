@@ -16,12 +16,13 @@ ms.reviewer: dariusz
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 48e08b93468fb177fd3a724e5bcc6758cf262e99
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0df0d97b41933f316db788fd0af09ba75196549b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189364"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836864"
 ---
 # <a name="reference-for-intune-management-extension"></a>Naslag voor Intune-beheeruitbreiding
 
@@ -46,7 +47,7 @@ De **IntuneManagementExtensionHealthState** bevat een lijst van alle mogelijke s
 | Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
 | ExtensionStateKey |Unieke id van de status. | 2 |
-| ExtensionState |De status van een IntuneManagementExtension. | Goed |
+| ExtensionState |De status van een IntuneManagementExtension. | In orde |
 
 ## <a name="intunemanagementextension"></a>IntuneManagementExtension
 

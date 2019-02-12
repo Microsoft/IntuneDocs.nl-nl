@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: c98980cca305bef01dd91e69d00a471b10e741a8
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 810e2175faef422eb0ccf9bd24ac8d9b43aee92d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147482"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846907"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>Beveiligingsrisicoscans inschakelen op uw apparaat 
 Als u onbewust een onveilige app hebt geïnstalleerd, lopen de gegevens op uw apparaat gevaar. Om de gegevens op uw apparaat te beschermen, raden we u het volgende aan: 

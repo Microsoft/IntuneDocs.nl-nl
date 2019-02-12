@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b8694596851c231c4c7d1a8a5edd448a7506f829
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 52adb8b21189e4c0cf39f1b18f95b7ba68ff97f4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186304"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833732"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>Hoe uw iOS-gebruikers hun apps downloaden
 
@@ -51,7 +52,7 @@ Geregistreerde gebruikers krijgen hun apps door te tikken op de volgende tegels 
 
 Zie [Apps toevoegen aan Microsoft Intune](apps-add.md) voor informatie over het toevoegen van apps.
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 [Hoe uw Android-gebruikers apps downloaden](end-user-apps-android.md)
 
 [Hoe uw Windows-gebruikers apps downloaden](end-user-apps-windows.md)

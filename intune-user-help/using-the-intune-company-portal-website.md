@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8275a1f542badaadc5248826c5d1d3a8f24d56c3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1119c9602d2577f8041ad528d012adf9652dc641
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149492"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837370"
 ---
 # <a name="using-the-intune-company-portal-website"></a>De Intune-bedrijfsportalwebsite gebruiken
 Gebruik de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) als u uw beheerde apparaten wilt weergeven, bewerken, toevoegen en verwijderen.

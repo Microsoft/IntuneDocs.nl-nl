@@ -15,12 +15,13 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
-ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40711576af9b7799211971418a0b2529d12468cd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52618183"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836384"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Een aangepast apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -122,7 +123,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="eap-based-wi-fi-profile-example"></a>Voorbeeld van een op EAP gebaseerd profiel
-Het volgende voorbeeld omvat de XML-code voor een Wi-Fi-profiel op basis van EAP: het voorbeeld is bedoeld om de juiste indeling te laten zien en meer details te bieden. Dit is slechts een voorbeeld en moet niet worden beschouwd als een aanbevolen configuratie voor uw omgeving.
+Het volgende voorbeeld bevat de XML-code voor een Wi-Fi-profiel op basis van EAP: Het voorbeeld is bedoeld om de juiste indeling te laten zien en meer details te bieden. Dit is slechts een voorbeeld en moet niet worden beschouwd als een aanbevolen configuratie voor uw omgeving.
 
 
 ```
@@ -215,7 +216,7 @@ U kunt ook een XML-bestand maken op basis van een bestaande Wi-Fi-verbinding. Ge
 2. Doorzoek de XML-bestanden om het bestand met de juiste naam te vinden.
 3. Wanneer u het juiste XML-bestand hebt gevonden, kopieert u de XML-code en plakt u deze in het veld **Gegevens** van de pagina OMA-URI-instellingen.
 
-## <a name="best-practices"></a>Best practices
+## <a name="best-practices"></a>Aanbevolen procedures
 - Voordat u een Wi-Fi-profiel met PSK implementeert, moet u controleren of het apparaat rechtstreeks verbinding met het eindpunt kan maken.
 
 - Wanneer u sleutels (wachtwoorden of wachtwoordzinnen) omwisselt, kunt u downtime verwachten en moet u hiermee rekening houden in uw implementaties. U kunt nieuwe Wi-Fi-profielen pushen buiten kantooruren. Waarschuw gebruikers dat de connectiviteit mogelijk hierdoor wordt beïnvloed.

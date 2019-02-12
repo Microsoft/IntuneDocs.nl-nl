@@ -15,12 +15,13 @@ ms.reviewer: erikre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1e2b97970a7ab440a032eb29f5307e4dbeddc3bc
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6844fc94755805e95b56d3d457ada6ce54807874
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53306012"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846448"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
@@ -192,7 +193,7 @@ Wanneer u te maken hebt met verschillende soorten instellingen, krijgt een Intun
 - Als er geen Intune-licentie is toegewezen, wordt de app elke vierentwintig uur ingecheckt.
 
 
-## <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
 - [Uw Intune-abonnement implementeren](planning-guide-onboarding.md)
 - [Intune testen en valideren](planning-guide-test-validation.md)
 - [Mobile Application Management-beleidsinstellingen voor Android in Microsoft Intune](app-protection-policy-settings-android.md)

@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: bfb7186d7dcd764237ba4dd00fc12bd9e666f67e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 24a3c53cb9aa26277ac7aef0ed643c9492e6e401
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187409"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846507"
 ---
 # <a name="retire-a-windows-pc"></a>Een Windows-pc buiten gebruik stellen
 
@@ -58,6 +59,6 @@ Wanneer u een pc buiten gebruik stelt:
 
     Als de Endpoint Protection-client niet kan worden verwijderd, leest u [Problemen met Endpoint Protection oplossen](/intune/troubleshoot-endpoint-protection-in-microsoft-intune) voor meer informatie.
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 
 [Algemene beheertaken voor Windows-pc's met de Intune-softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

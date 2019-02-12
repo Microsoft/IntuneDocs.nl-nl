@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28f9891e953bf420e608993cea39ff81b98cb5e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7702e502b18f41736086b8e130987697076db377
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185165"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848956"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune Windows Phone 8.1-apparaatbeperkingsinstellingen
 
@@ -72,7 +73,7 @@ Zoek op de pagina [Windows Phone Store](https://www.microsoft.com/store/apps/win
 
 Open de pagina van de app en kopieer de URL naar het klembord. U kunt deze URL nu gebruiken in de lijst met toegestane apps of de lijst met geblokkeerde apps.
 
-Voorbeeld: zoek in de Store naar de Skype-app. De URL die u gebruikt, is `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
+Voorbeeld: Zoek in de store naar de Skype-app. De URL die u gebruikt, is `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
 
 
 

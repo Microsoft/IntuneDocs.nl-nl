@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: be3f728a4f2764a0c2494686c943cdfb43b32bd2
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3fdf06339435d0605c6ac84d82dc2ab6c643b2df
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147552"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839019"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Een bedreiging oplossen die door SandBlast Mobile Protect is gevonden
 
@@ -32,7 +33,7 @@ SandBlast Mobile Protect is een Mobile Threat Defender-service waarmee potentië
 * bedrijfsbestanden synchroniseren met OneDrive
 * bedrijfsapps openen
 
-In dit artikel wordt beschreven hoe u waarschuwingen van Sandblast Mobile Protect voor bedreigingen kunt herkennen en wat u moet doen om deze op te lossen.  
+In dit artikel wordt beschreven hoe u waarschuwingen voor bedreigingen van Sandblast Mobile Protect kunt herkennen en wat u moet doen om deze op te lossen.  
 
 ## <a name="troubleshoot-virus-or-security-threat"></a>Virus- of beveiligingsbedreiging oplossen  
 Als er een virus- of beveiligingsbedreiging wordt gedetecteerd, fungeert de SandBlast Mobile Protect-app op basis van het toegangsbeleid van uw organisatie. Het toegangsbeleid van het bedrijf kan verhinderen dat u toegang hebt tot het netwerk, de apps en de e-mail van uw werk.  

@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c3f1c28fb94823dd3370080c62c0d6f3d0da521e
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 35d77c9aa739096f36f4dbf4b75a4186e55a3381
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203260"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835060"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Beheerde apps op uw iOS-apparaat gebruiken
 
@@ -44,7 +45,7 @@ Beheerde apps zijn op verschillende manieren beschikbaar:
 Mogelijk koopt het ondersteuningsteam van het bedrijf soms meerdere licenties voor een app die u installeert. Het is normaal dat u wordt gevraagd om de voorwaarden van het Apple Volume Purchase Program te accepteren en dit kunt u dan ook doen. Als u ze niet accepteert, kunt u de app niet installeren.
 
 ## <a name="available-apps"></a>Available apps   
- Uw organisatie selecteert apps die geschikt en nuttig zijn voor u op het werk of op school. U vindt alleen deze apps in de bedrijfsportal.   
+ Uw organisatie selecteert apps die geschikt en nuttig zijn voor u op het werk of op school. Deze apps zijn de enige u in Bedrijfsportal vindt.   
 
  Apps worden daarnaast aan u beschikbaar gesteld op basis van uw apparaattype. Als u bijvoorbeeld de bedrijfsportal-app voor iOS gebruikt, hebt u toegang tot iOS-apps, maar niet tot Android-apps.   
 

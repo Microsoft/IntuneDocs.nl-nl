@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2391f6ec7de5a9d1b4d544f1ca07fd9f4e58ace8
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 27818b0078336c2cb12eba81483274a787373aec
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642403"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841382"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Android Store-apps aan Microsoft Intune toevoegen
 
@@ -51,7 +52,7 @@ Met de volgende stappen kunt u een Android Store-app toevoegen aan Intune via Az
     - **Informatie-URL**: Voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
     - **Privacy-URL**: (optioneel) Voer de URL in van een website die privacyinformatie over deze app bevat. De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
     - **Ontwikkelaar**: Voer de naam in van de app-ontwikkelaar (optioneel).
-    - **Eigenaar**: Voer een naam in voor de eigenaar van deze app, bijvoorbeeld *HR-afdeling* (optioneel).
+    - **Eigenaar**: Voer een naam in voor de eigenaar van deze app, bijvoorbeeld *Hr-afdeling* (optioneel).
     - **Opmerkingen**: Voer de opmerkingen in die u aan deze app wilt koppelen (optioneel).
     - **Logo**: Upload een pictogram dat u aan de app wilt koppelen (optioneel). Dit pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
 1. Selecteer **OK**.

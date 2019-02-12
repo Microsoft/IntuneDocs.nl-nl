@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
-ms.openlocfilehash: d9ecfa44e2619e5e123c9e8af169b6a8a95ee466
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9e7269eb6e396557a6bc19daa371a10be7154866
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183890"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844629"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Auditlogboeken voor Intune-activiteiten
 Auditlogboeken bevatten een lijst met activiteiten die een wijziging in Microsoft Intune genereren. U kunt acties of externe taken maken, bijwerken (bewerken), verwijderen en toewijzen en controlegebeurtenissen genereren die u kunt bekijken. U kunt auditlogboeken voor de meeste werkbelastingen van Intune bekijken. Controles worden standaard ingeschakeld voor alle klanten. Dit kan niet worden uitgeschakeld. Controlegebeurtenissen worden vastgelegd sinds de versie die in december 2017 beschikbaar is gemaakt; eerdere gebeurtenissen zijn niet beschikbaar.

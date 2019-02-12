@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b5eb25c48e3724fdc9277a790d01908e976c75be
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9bbdb56770c154a482ad004f1f3f980809424caf
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54832133"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848505"
 ---
 # <a name="windows-10-and-newer-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Instellingen voor Windows 10-apparaten (en nieuwer) om Windows Hello voor Bedrijven in te schakelen
 

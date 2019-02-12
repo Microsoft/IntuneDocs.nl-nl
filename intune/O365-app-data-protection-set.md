@@ -17,12 +17,13 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 807bc306848a731e63f7f854a9d4b451264e21a8
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dcef765d6928ea71fd1dc98374aeace0d3a962a2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210802"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847644"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Hoe uw gebruikers basisbeveiliging ervaren in beheerde Office 365-apps in Microsoft Intune
 
@@ -94,7 +95,7 @@ In dit artikel wordt OneDrive voor Bedrijven gebruikt als voorbeeld om de gebrui
 
 | Naam van de instelling | Waarde voor iOS-beleid | Waarde voor Android-beleid |
 |------------------------------------------------------------------------|-----------------------|----------------------|
-| Back-ups van iTunes en iCloud voorkomen | Nee | N.v.t. |
+| Back-ups van de iTunes en iCloud voorkomen | Nee | N.v.t. |
 | Back-ups van Android voorkomen | N.v.t. | Nee |
 | App mag gegevens overdragen naar ander apps | Alle apps | Alle apps |
 | App mag gegevens ontvangen van andere apps | Alle apps | Alle apps |
@@ -110,7 +111,7 @@ In dit artikel wordt OneDrive voor Bedrijven gebruikt als voorbeeld om de gebrui
 | Lengte pincode | N.v.t. | 4 |
 | Vingerafdruk in plaats van pincode toestaan | N.v.t. | Ja |
 | Bedrijfsreferenties vereisen voor toegang | Nee | Nee |
-| De uitvoering van beheerde apps op opengebroken of geroote apparaten blokkeren | Nee | Nee |
+| De uitvoering blokkeren van beheerde apps die op gekraakte of geroote apparaten worden uitgevoerd | Nee | Nee |
 | Toegangsvereisten opnieuw controleren na (minuten) - Time-out | 30 | 30 |
 | Toegangsvereisten opnieuw controleren na (minuten) - Offlinerespijtperiode | 720 | 720 |
 | Offline-interval (dagen) voor gegevens van app worden gewist | 90 | 90 |

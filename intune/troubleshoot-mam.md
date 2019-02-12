@@ -15,12 +15,13 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58ff1bd91a5c95d66d75ad6546137dd2de9feac3
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899090"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086145"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Problemen met Mobile Application Management oplossen
 
@@ -34,9 +35,9 @@ Dit zijn veelvoorkomende problemen die een IT-beheerder kan tegenkomen bij het g
 
 | Probleem | Beschrijving | Oplossing |
 | -- | -- | -- |
-| Beleid niet toegepast op Skype voor Bedrijven | Het beleid voor app-beveiliging zonder apparaatregistratie, gemaakt in Azure Portal, is niet van toepassing op de Skype voor Bedrijven-app op iOS- en Android-apparaten. | Skype voor Bedrijven moet worden ingesteld voor moderne verificatie.  Volg de instructies in [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (Moderne verificatie inschakelen voor uw tenant) om moderne verificatie in te stellen voor Skype. |
+| Beleid niet toegepast op Skype voor Bedrijven | Het beleid voor app-beveiliging zonder apparaatregistratie, gemaakt in Azure Portal, is niet van toepassing op de Skype voor Bedrijven-app op iOS- en Android-apparaten. | Skype voor Bedrijven moet worden ingesteld voor moderne verificatie.  Volg de instructies in [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (Moderne verificatie inschakelen voor uw tenant) om moderne verificatie in te stellen voor Skype. |
 | Office-app-beleid niet toegepast | Het beleid voor app-beveiliging wordt niet toegepast op [ondersteunde Office-apps](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) voor alle gebruikers. | Controleer of de gebruiker een licentie voor Intune heeft en of een geïmplementeerd beleid voor app-beveiliging wordt toegepast op de Office-apps. Het kan tot 8 uur duren voordat een nieuw geïmplementeerd beleid voor app-beveiliging is toegepast. |
-| Beheerder kan geen beleid voor app-beveiliging configureren in Azure-portal | Een IT-beheerder kan geen beleid voor app-beveiliging configureren in Azure Portal. | De volgende gebruikersrollen hebben toegang tot Azure Portal: <ul><li>Globale beheerder, die u kunt instellen in de [Office-portal](http://portal.office.com/).</li><li>Eigenaar, die u kunt instellen in [Azure Portal](https://portal.azure.com/).</li><li>Bijdrager, die u kunt instellen in [Azure Portal](https://portal.azure.com/).</li></ul> Raadpleeg [RBAC (beheer op basis van rollen) met Microsoft Intune](role-based-access-control.md) voor hulp bij het instellen van deze rollen.|
+| Beheerder kan geen beleid voor app-beveiliging configureren in Azure-portal | Een IT-beheerder kan geen beleid voor app-beveiliging configureren in Azure Portal. | De volgende gebruikersrollen hebben toegang tot Azure Portal: <ul><li>Globale beheerder, die u kunt instellen in de [Office-portal](https://portal.office.com/).</li><li>Eigenaar, die u kunt instellen in [Azure Portal](https://portal.azure.com/).</li><li>Bijdrager, die u kunt instellen in [Azure Portal](https://portal.azure.com/).</li></ul> Raadpleeg [RBAC (beheer op basis van rollen) met Microsoft Intune](role-based-access-control.md) voor hulp bij het instellen van deze rollen.|
 |Gebruikersaccounts ontbreken in rapporten van beleid voor app-beveiliging | Er worden geen gebruikersaccounts in de beheerconsolerapporten weergegeven waarvoor onlangs beleid voor app-beveiliging is geïmplementeerd. | Als er onlangs beleid voor app-beveiliging is toegepast op een gebruiker, kan het tot 24 uur duren voor die gebruiker in rapporten als gebruiker in de doelgroep wordt weergegeven. |
 | Beleidswijzigingen werken niet | Het kan 8 uur duren voordat wijzigingen en updates voor beleid voor app-beveiliging worden toegepast. | Indien van toepassing, kunnen eindgebruikers zich bij de app afmelden en weer aanmelden om synchronisatie met de service af te dwingen. |
 | Beleid voor app-beveiliging werkt niet met DEP | Het beleid voor app-beveiliging wordt niet toegepast op Apple DEP-apparaten. | Zorg ervoor dat u gebruikersaffiniteit gebruikt bij het Device Enrollment Program (DEP) van Apple. Gebruikersaffiniteit is vereist voor elke app die verificatie van gebruikers vereist volgens het DEP. <br><br>Raadpleeg [iOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple](device-enrollment-program-enroll-ios.md) voor meer informatie over iOS DEP-inschrijving.|

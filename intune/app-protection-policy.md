@@ -16,12 +16,13 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: b6ebc3db81b969d83bc22034057ab4217e90931f
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dbb6a8f159aebe837fabf671a84dd96223298227
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297278"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836350"
 ---
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
@@ -156,5 +157,5 @@ Een voorbeeld van werkcontext is een gebruiker die de OneDrive-app start met beh
 
 [Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune](app-protection-policies.md)
 
-## <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
 Apps van derden, zoals de mobiele app van Salesforce, werken gericht met Intune om bedrijfsgegevens te beveiligen. Ga voor meer informatie over hoe de Salesforce-app met Intune werkt (inclusief MDM-configuratie-instellingen voor apps), naar [Salesforce-app en Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).

@@ -15,12 +15,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f1adab40170227926dce1eb7c14117accf1d7d0a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8799b8d216ac7d8ec2e02a085ee04e2af1efb0e0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185912"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848114"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Opslag en verwerking van gegevens in Intune
 

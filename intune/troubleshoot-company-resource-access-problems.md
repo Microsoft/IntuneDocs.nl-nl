@@ -15,12 +15,13 @@ ms.reviewer: tscott
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: f4ead71e626316b515646d474cc006be7cf2f774
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e600c2db57352eb2348ded9fe55295837223797b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190367"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843082"
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Problemen bij toegang tot bedrijfsbronnen oplossen met Microsoft Intune
 
@@ -34,7 +35,7 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md) voor meer mani
 |---------------|-----------------|--------------|
 |10 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Installatie wordt uitgevoerd||
 |20 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|Wachten op inhoud||
-|30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Ophalen van inhoud|Waarschijnlijke oorzaak: de taakstatus 30 geeft aan dat het downloaden van een app door een gebruiker is mislukt.<br /><br />Mogelijke oorzaken hiervoor zijn:<br /><br />De internetverbinding van het apparaat is tijdens het downloaden verbroken.<br /><br />Het certificaat dat voor het apparaat is uitgegeven, is op het moment van de inschrijving mogelijk verlopen.<br /><br />Oplossing:<br /><br />Start op het apparaat in Configuratiescherm de app Bedrijfsapps om te controleren of het apparaatcertificaat niet is verlopen. Als dat wel het geval is, moet u het apparaat opnieuw inschrijven.<br /><br />Controleer of het apparaat verbinding heeft met internet en probeer de app opnieuw te starten.|
+|30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Ophalen van inhoud|Waarschijnlijke oorzaak: Taakstatus 30 geeft aan dat het downloaden van een app door een gebruiker is mislukt.<br /><br />Mogelijke oorzaken hiervoor zijn:<br /><br />De internetverbinding van het apparaat is tijdens het downloaden verbroken.<br /><br />Het certificaat dat voor het apparaat is uitgegeven, is op het moment van de inschrijving mogelijk verlopen.<br /><br />Oplossing:<br /><br />Start op het apparaat in Configuratiescherm de app Bedrijfsapps om te controleren of het apparaatcertificaat niet is verlopen. Als dat wel het geval is, moet u het apparaat opnieuw inschrijven.<br /><br />Controleer of het apparaat verbinding heeft met internet en probeer de app opnieuw te starten.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Downloaden van inhoud is voltooid||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Installatie wordt uitgevoerd||
 |60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Er is een installatiefout opgetreden|De app kon na het downloaden niet worden geïnstalleerd.<br /><br />Het certificaat voor ondertekening van programmacode waarmee de app is ondertekend, bevindt zich niet op het apparaat.<br /><br />Een framework-afhankelijkheid waarvan de toepassing afhankelijk is, is niet op het apparaat geïnstalleerd.<br /><br />Controleer of het certificaat voor ondertekening van programmacode waarmee de app is ondertekend, aanwezig is op het apparaat en ga bij de beheerder na of alle Windows RT-apparaten die door het bedrijf zijn ingeschreven zo’n certificaat hebben gekregen.<br /><br />Wanneer een ontbrekende structuurafhankelijkheid er de oorzaak van is dat de installatie is mislukt, moet de beheerder de toepassing opnieuw publiceren, waarbij de structuur in het toepassingspakket moet worden opgenomen.<br /><br />Het toepassingspakket dat is gedownload, is geen geldig pakket, is mogelijk beschadigd of misschien niet compatibel met de versie van het besturingssysteem op het apparaat.|
@@ -302,75 +303,75 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md) voor meer mani
 
 |Statuscode|Hexadecimale foutcode|Foutbericht|
 |---------------|--------------------------|-----------------|
-|-2016344008|0x87D10838|(1404): certificaattoegang geweigerd|
-|-2016344009|0x87D10837|(1403): kan certificaat niet vinden|
-|-2016344010|0x87D10836|DCMO(1402): de bewerking is mislukt|
-|-2016344011|0x87D10835|DCMO(1401): de gebruiker heeft ervoor gekozen de bewerking niet te accepteren toen daarom werd gevraagd|
-|-2016344012|0x87D10834|DCMO(1400): clientfout|
-|-2016344108|0x87D107D4|DCMO(1204): de apparaatondersteuning is uitgeschakeld en de gebruiker mag deze opnieuw inschakelen|
-|-2016344109|0x87D107D3|DCMO(1203): de apparaatondersteuning is uitgeschakeld en de gebruiker mag deze niet opnieuw inschakelen|
-|-2016344110|0x87D107D2|DCMO(1202): de inschakelbewerking is uitgevoerd, maar de apparaatondersteuning is momenteel losgekoppeld|
-|-2016344111|0xF3FB4D95|DCMO(1201): de inschakelbewerking is uitgevoerd en de apparaatondersteuning is momenteel gekoppeld|
-|-2016344112|0x87D107D0|DCMO(1200): de bewerking is uitgevoerd|
-|-2016345595|0x87D10205|Syncml(517): de reactie op een atomische opdracht is te groot voor één bericht.|
-|-2016345596|0x87D10204|Syncml(516): de opdracht bevindt zich in een Atomic-element en Atomic is mislukt. Deze opdracht is niet teruggedraaid.|
-|-2016345598|0x87D10202|Syncml(514): de SyncML-opdracht is niet voltooid, omdat de bewerking is geannuleerd voordat de opdracht werd verwerkt.|
-|-2016345599|0x87D10201|Syncml(513): de ontvanger biedt geen ondersteuning of weigert deze voor de opgegeven versie van het SyncML-synchronisatieprotocol dat wordt gebruikt in het aanvraag-SyncML-bericht.|
-|-2016345600|0x87D10200|Syncml(512): er is een toepassingsfout opgetreden tijdens de synchronisatiesessie.|
-|-2016345601|0x87D101FF|Syncml(511): er is een ernstige fout opgetreden in de server tijdens het verwerken van de aanvraag.|
-|-2016345602|0x87D101FE|Syncml(510): er is een fout opgetreden tijdens het verwerken van de aanvraag. De fout is gerelateerd aan een fout in de gegevensopslag van de ontvanger.|
-|-2016345603|0x87D101FD|Syncml(509): gereserveerd voor toekomstig gebruik.|
-|-2016345604|0x87D101FC|Syncml:(508): er is een fout opgetreden die het vernieuwen van de huidige synchronisatiestatus van de client bij de server noodzakelijk maakt.|
-|-2016345605|0x87D101FB|Syncml(507): door de fout zijn alle SyncML-opdrachten binnen een Atomic-elementtype mislukt.|
-|-2016345606|0x87D101FA|Syncml(506): er is een toepassingsfout opgetreden tijdens het verwerken van de aanvraag.|
-|-2016345607|0x87D101F9|Syncml(505): de ontvanger biedt geen ondersteuning of weigert deze voor de opgegeven versie van SyncML DTD die wordt gebruikt in het aanvraag-SyncML-bericht.|
-|-2016345608|=0x87D101F8|Syncml(504): de ontvanger, fungerend als gateway of proxy, heeft geen tijdige reactie ontvangen van de upstream-ontvanger die is opgegeven door de URI (bijvoorbeeld HTTP, FTP of LDAP) of een andere hulpontvanger (bijvoorbeeld DNS) waartoe toegang nodig is om de aanvraag te voltooien.|
-|-2016345609|0x87D101F7|Syncml(503): de ontvanger kan de aanvraag momenteel niet afhandelen door tijdelijke overbelasting of onderhoud van de ontvanger.|
-|-2016345610|0x87D101F6|Syncml(502): de ontvanger, fungerend als gateway of proxy, heeft een ongeldige reactie ontvangen van de upstream-ontvanger die is geopend om aan de aanvraag te voldoen.|
-|-2016345611|0x87D101F5|Syncml(501): de ontvanger ondersteunt de opdracht niet die nodig is om aan de aanvraag te voldoen.|
-|-2016345612|0x87D101F4|Syncml(500): er is een onverwachte status opgetreden bij de ontvanger, waardoor niet aan de aanvraag kan worden voldaan.|
-|-2016345684|0x87D101AC|Syncml(428): het verplaatsen is mislukt|
-|-2016345685|0x87D101AB|Syncml(427): het bovenliggende item kan niet worden verwijderd, omdat het onderliggende items bevat.|
-|-2016345686|0x87D101AA|Syncml(426): het gedeeltelijke item wordt niet geaccepteerd.|
-|-2016345687|0x87D101A9|Syncml(425): de aangevraagde opdracht is mislukt, omdat de afzender niet over de juiste toegangsbeheermachtigingen (ACL) beschikt voor de ontvanger.|
-|-2016345688|0x87D101A8|Syncml(424): het gesegmenteerde object is ontvangen, maar de grootte van het ontvangen object komt niet overeen met de grootte die in het eerste segment is gedeclareerd.|
-|-2016345689|0x87D101A7|Syncml(423): de aangevraagde opdracht is mislukt omdat het voorlopig verwijderde item eerder permanent is verwijderd op de server.|
-|-2016345690|0x87D101A6|Syncml(422): de aangevraagde opdracht is mislukt op de server, omdat CGI-scripts in de LocURI geen correcte indeling hebben.|
-|-2016345691|0x87D101A5|Syncml(421): de aangevraagde opdracht is mislukt op de server, omdat de opgegeven zoeksyntaxis niet bekend is.|
-|-2016345692|0x87D101A4|Syncml(420): de ontvanger heeft geen opslagruimte meer voor de resterende synchronisatiegegevens.|
-|-2016345693|0x87D101A3|Syncml(419): de clientaanvraag heeft gezorgd voor een conflict; dit is opgelost door de serveropdracht voorrang te geven.|
-|-2016345694|0x87D101A2|Syncml(418): de aangevraagde opdracht Plaatsen of Toevoegen is mislukt, omdat het doel al bestaat.|
-|-2016345695|0x87D101A1|Syncml(417): de aanvraag is nu mislukt en de oorspronkelijke aanvrager moet de aanvraag later opnieuw proberen.|
-|-2016345696|0x87D101A0|Syncml(416): de aanvraag is mislukt, omdat de opgegeven bytegrootte in de aanvraag te groot is.|
-|-2016345697|0x87D1019F|Syncml(415): het type of de indeling van het medium wordt niet ondersteund.|
-|-2016345698|0x87D1019E|Syncml(414): de aangevraagde opdracht is mislukt, omdat de doel-URI te lang is voor wat de ontvanger kan of wil verwerken.|
-|-2016345699|0x87D1019D|Syncml(413): de ontvanger weigert de aangevraagde opdracht uit te voeren, omdat het aangevraagde item groter is dan wat de ontvanger kan of wil verwerken.|
-|-2016345700|0x87D1019C|Syncml(412): de aangevraagde opdracht is mislukt bij de ontvanger, omdat deze onvolledig is of een onjuiste indeling heeft.|
-|-2016345701|0x87D1019B|Syncml(411): de aangevraagde opdracht moet vergezeld gaan van de bytegrootte of lengtegegevens in het meta-elementtype.|
-|-2016345702|0x87D1019A|Syncml(410): het aangevraagde doel bevindt zich niet meer bij de ontvanger en er is geen doorstuur-URI bekend.|
-|-2016345703|0x87D10199|Syncml(409): de aanvraag is mislukt, omdat er een updateconflict tussen de client- en serverversies van de gegevens is opgetreden.|
-|-2016345704|0x87D10198|Syncml(408): een verwacht bericht is niet ontvangen binnen de vereiste periode.|
-|-2016345705|0x87D10197|Syncml(407): de aangevraagde opdracht is mislukt, omdat de oorspronkelijke aanvrager de juiste verificatiegegevens moet opgeven.|
-|-2016345706|0x87D10196|Syncml(406): de aangevraagde opdracht is mislukt, omdat een optionele functie in de aanvraag niet wordt ondersteund.|
-|-2016345707|0x87D10195|Syncml(405): de aangevraagde opdracht is niet toegestaan bij het doel.|
-|-2016345708|0x87D10194|Syncml(404): het aangevraagde doel is niet gevonden.|
-|-2016345709|0x87D10193|Syncml(403): de aangevraagde opdracht is mislukt, maar de ontvanger heeft de aangevraagde opdracht begrepen.|
-|-2016345710|0x87D10192|Syncml(402): de aangevraagde opdracht is mislukt, omdat de juiste betaling nodig is.|
-|-2016345711|0x87D10191|Syncml(401): de aangevraagde opdracht is mislukt, omdat de aanvrager de juiste verificatiegegevens moet opgeven.|
-|-2016345712|0x87D10190|Syncml(400): de aangevraagde opdracht kan niet worden uitgevoerd door een ongeldige syntaxis in de opdracht.|
-|-2016345807|0x87D10131|Syncml(305): het aangevraagde doel moet worden geopend via de opgegeven proxy-URI.|
+|-2016344008|0x87D10838|(1404): Certificaattoegang geweigerd|
+|-2016344009|0x87D10837|(1403): Er is geen certificaat gevonden|
+|-2016344010|0x87D10836|DCMO(1402): Bewerking is mislukt|
+|-2016344011|0x87D10835|DCMO(1401): De gebruiker heeft ervoor gekozen de bewerking niet te accepteren toen daarom werd gevraagd|
+|-2016344012|0x87D10834|DCMO(1400): Clientfout|
+|-2016344108|0x87D107D4|DCMO(1204): Apparaatondersteuning is uitgeschakeld en de gebruiker mag deze opnieuw inschakelen|
+|-2016344109|0x87D107D3|DCMO(1203): Apparaatondersteuning is uitgeschakeld en de gebruiker mag deze niet opnieuw inschakelen|
+|-2016344110|0x87D107D2|DCMO(1202): Inschakelingsbewerking is uitgevoerd, maar de apparaatondersteuning is momenteel ontkoppeld|
+|-2016344111|0xF3FB4D95|DCMO(1201): De inschakelbewerking is uitgevoerd, maar de apparaatondersteuning is momenteel losgekoppeld|
+|-2016344112|0x87D107D0|DCMO(1200): De bewerking is uitgevoerd|
+|-2016345595|0x87D10205|Syncml(517): De reactie op een Atomic-opdracht is te groot voor één bericht.|
+|-2016345596|0x87D10204|Syncml(516): Een opdracht bevindt zich in een Atomic-element en Atomic is mislukt. Deze opdracht is niet teruggedraaid.|
+|-2016345598|0x87D10202|Syncml(514): De SyncML-opdracht is niet voltooid, omdat de bewerking al werd geannuleerd voordat de opdracht werd verwerkt.|
+|-2016345599|0x87D10201|Syncml(513): De ontvanger biedt geen ondersteuning of weigert deze voor de opgegeven versie van het SyncML-synchronisatieprotocol dat wordt gebruikt in het aanvraag-SyncML-bericht.|
+|-2016345600|0x87D10200|Syncml(512): Er is een fout opgetreden in de toepassing tijdens de synchronisatiesessie.|
+|-2016345601|0x87D101FF|Syncml(511): Er is een ernstige fout opgetreden in de server tijdens het verwerken van de aanvraag.|
+|-2016345602|0x87D101FE|Syncml(510): Tijdens het verwerken van de aanvraag is een testfout opgetreden. De fout is gerelateerd aan een fout in de gegevensopslag van de ontvanger.|
+|-2016345603|0x87D101FD|Syncml(509): Gereserveerd voor toekomstig gebruik.|
+|-2016345604|0x87D101FC|Syncml(508): Er is een fout opgetreden die het vernieuwen van de huidige synchronisatiestatus van de client bij de server noodzakelijk maakt.|
+|-2016345605|0x87D101FB|Syncml(507): Door de fout zijn alle SyncML-opdrachten binnen een Atomic-elementtype mislukt.|
+|-2016345606|0x87D101FA|Syncml(506): Er is een fout opgetreden in de toepassing tijdens het verwerken van de aanvraag.|
+|-2016345607|0x87D101F9|Syncml(505): De ontvanger biedt geen ondersteuning of weigert deze voor de opgegeven SyncML DTD die wordt gebruikt in het aanvraag-SyncML-bericht.|
+|-2016345608|=0x87D101F8|Syncml(504): De ontvanger, fungerend als gateway of proxy, heeft geen tijdige reactie ontvangen van de upstream-ontvanger die is opgegeven door de URI (bijv. HTTP, FTP, LDAP) of een andere hulpontvanger (bijv. DNS) waartoe toegang nodig is voor de poging om de aanvraag te voltooien.|
+|-2016345609|0x87D101F7|Syncml(503): De ontvanger kan de aanvraag momenteel niet behandelen wegens een tijdelijke overbelasting of onderhoud van de ontvanger.|
+|-2016345610|0x87D101F6|Syncml(502): De ontvanger, fungerend als gateway of proxy, heeft een ongeldige reactie ontvangen van de upstream-ontvanger die is geopend voor de poging om aan de aanvraag te voldoen.|
+|-2016345611|0x87D101F5|Syncml(501):  De ontvanger ondersteunt de opdracht die is vereist voor het voltooien van de aanvraag niet.|
+|-2016345612|0x87D101F4|Syncml(500): Er is een onverwachte status opgetreden ontvanger, waardoor deze de aanvraag niet kan voltooien|
+|-2016345684|0x87D101AC|Syncml(428): Het verplaatsen is mislukt|
+|-2016345685|0x87D101AB|Syncml(427): Het bovenliggende item kan niet worden verwijderd, omdat het onderliggende items bevat.|
+|-2016345686|0x87D101AA|Syncml(426): Gedeeltelijk item wordt niet geaccepteerd.|
+|-2016345687|0x87D101A9|Syncml(425): De aangevraagde opdracht is mislukt, omdat de afzender niet over de juiste beheermachtigingen (ACL) beschikt voor de ontvanger.|
+|-2016345688|0x87D101A8|Syncml(424): Het gesegmenteerde object is ontvangen, maar de grootte van het ontvangen object stemt niet overeen met de grootte die in het eerste segment is aangekondigd.|
+|-2016345689|0x87D101A7|Syncml(423):  De aangevraagde opdracht is mislukt omdat het voorlopig verwijderde item voorheen permanent verwijderd was op de server.|
+|-2016345690|0x87D101A6|Syncml(422): De aangevraagde opdracht is mislukt op de server, omdat CGI-scripts in de LocURI geen correcte indeling hebben.|
+|-2016345691|0x87D101A5|Syncml(421): De aangevraagde opdracht is mislukt op de server, omdat de opgegeven zoeksyntaxis niet bekend is.|
+|-2016345692|0x87D101A4|Syncml(420): De ontvanger heeft geen opslagruimte meer voor de resterende synchronisatiegegevens.|
+|-2016345693|0x87D101A3|Syncml(419): De clientaanvraag heeft gezorgd voor een conflict; dit is opgelost door de serveropdracht voorrang te geven.|
+|-2016345694|0x87D101A2|Syncml(418): De aangevraagde opdracht Plaatsen of Toevoegen is mislukt, omdat het doel al bestaat.|
+|-2016345695|0x87D101A1|Syncml(417): De aanvraag is nu mislukt en de oorspronkelijke aanvrager moet de aanvraag later opnieuw proberen.|
+|-2016345696|0x87D101A0|Syncml(416):  De aanvraag is mislukt, omdat de opgegeven bytegrootte in de aanvraag te groot is.|
+|-2016345697|0x87D1019F|Syncml(415): Het type of de indeling van het medium wordt niet ondersteund.|
+|-2016345698|0x87D1019E|Syncml(414): De aangevraagde opdracht is mislukt, omdat de doel-URI te lang is voor wat de ontvanger kan of wil verwerken.|
+|-2016345699|0x87D1019D|Syncml(413): De ontvanger weigert de aangevraagde opdracht, omdat het aangevraagde item groter is dan wat de ontvanger kan of wil verwerken.|
+|-2016345700|0x87D1019C|Syncml(412): De aangevraagde opdracht is mislukt bij de ontvanger, omdat deze onvolledig is of een onjuiste indeling heeft.|
+|-2016345701|0x87D1019B|Syncml(411): De aangevraagde opdracht moet vergezeld gaan van de grootte in byte of de lengtegegevens in het meta-elementtype.|
+|-2016345702|0x87D1019A|Syncml(410): Het aangevraagde doel bevindt zich niet meer bij de ontvanger en er is geen doorstuur-URI bekend.|
+|-2016345703|0x87D10199|Syncml(409): De aanvraag is mislukt wegens een updateconflict tussen de client- en serverversies van de gegevens.|
+|-2016345704|0x87D10198|Syncml(408): Een verwacht bericht is niet ontvangen binnen de vereiste periode.|
+|-2016345705|0x87D10197|Syncml(407): De aangevraagde opdracht is mislukt, omdat de oorspronkelijke aanvrager de juiste verificatiegegevens moet opgeven.|
+|-2016345706|0x87D10196|Syncml(406): De aangevraagde opdracht is mislukt, omdat een optionele functie in de aanvraag niet wordt ondersteund.|
+|-2016345707|0x87D10195|Syncml(405): De aangevraagde opdracht is niet toegestaan bij het doel.|
+|-2016345708|0x87D10194|Syncml(404): Het aangevraagde doel is niet gevonden.|
+|-2016345709|0x87D10193|Syncml(403): De aangevraagde opdracht is mislukt, maar de ontvanger heeft de aangevraagde opdracht begrepen.|
+|-2016345710|0x87D10192|Syncml(402): De aangevraagde opdracht is mislukt, omdat de juiste betaling nodig is.|
+|-2016345711|0x87D10191|Syncml(401): De aangevraagde opdracht is mislukt, omdat de aanvrager de juiste verificatiegegevens moet opgeven.|
+|-2016345712|0x87D10190|Syncml(400): De aangevraagde opdracht kan niet worden uitgevoerd wegens een ongeldige syntaxis in de opdracht.|
+|-2016345807|0x87D10131|Syncml(305): Het aangevraagde doel moet worden geopend via de opgegeven proxy-URI.|
 |-2016345808|0x87D10130|Syncml (304): De aangevraagde SyncML-opdracht is niet uitgevoerd op het doel.|
-|-2016345809|0x87D1012F|Syncml(303): het aangevraagde doel kan worden gevonden op een andere URI.|
-|-2016345810|0x87D1012E|Syncml(302): het aangevraagde doel is tijdelijk verplaatst naar een andere URI.|
-|-2016345811|0x87D1012D|Syncml(301): het aangevraagde doel heeft een nieuwe URI.|
-|-2016345812|0x87D1012C|Syncml(300): het aangevraagde doel is een van meerdere alternatieve aangevraagde doelen.|
-|-2016345896|0x87D100D8|Syncml(216): een opdracht bevindt zich in een Atomic-element en Atomic is mislukt. Deze opdracht is teruggedraaid.|
-|-2016345897|0x87D100D7|Syncml(215): een opdracht is niet uitgevoerd als gevolg van een gebruikersinteractie waarbij de gebruiker de keuze niet heeft geaccepteerd.|
-|-2016345898|0x87D100D6|Syncml(214): de bewerking is geannuleerd. De SyncML-opdracht is uitgevoerd, maar er worden niet meer opdrachten verwerkt in de sessie.|
-|-2016345899|0x87D100D5|Syncml(213): het gesegmenteerde item is geaccepteerd en in een buffer opgeslagen|
-|-2016345900|0x87D100D4|Syncml(212): de verificatie is geaccepteerd. Geen verdere verificatie vereist voor het restant van de synchronisatiesessie. Deze antwoordcode kan alleen worden gebruikt als antwoord op een aanvraag waarin de referenties zijn opgenomen.|
-|-2016345901|0x87D100D3|Syncml(211): het item is niet verwijderd. Het opgevraagde item is niet gevonden. Mogelijk is het eerder verwijderd.|
-|-2016345902|0x87D100D2|Syncml(210): verwijderen zonder archivering. Het antwoord geeft aan dat de opgevraagde gegevens zijn verwijderd, maar niet gearchiveerd vóór de verwijdering, omdat deze OPTIONELE functie niet wordt ondersteund door de implementatie.|
+|-2016345809|0x87D1012F|Syncml(303): Het aangevraagde doel kan worden gevonden op een andere URI.|
+|-2016345810|0x87D1012E|Syncml(302): Het aangevraagde doel is tijdelijk verplaatst naar een andere URI.|
+|-2016345811|0x87D1012D|Syncml(301): Het aangevraagde doel heeft een nieuwe URI.|
+|-2016345812|0x87D1012C|Syncml(300): Het aangevraagde doel is één van meerdere alternatieve aangevraagde doelen.|
+|-2016345896|0x87D100D8|Syncml(216): Een opdracht bevindt zich in een Atomic-element en Atomic is mislukt. Deze opdracht is teruggedraaid. Deze opdracht is teruggedraaid.|
+|-2016345897|0x87D100D7|Syncml(215):  Een opdracht is niet uitgevoerd als gevolg van een gebruikersinteractie waarbij de gebruiker de keuze niet heeft geaccepteerd.|
+|-2016345898|0x87D100D6|Syncml(214): Bewerking geannuleerd. De SyncML-opdracht is uitgevoerd, maar er worden niet meer opdrachten verwerkt in de sessie.|
+|-2016345899|0x87D100D5|Syncml(213): Gesegmenteerde item geaccepteerd en gebufferd|
+|-2016345900|0x87D100D4|Syncml(212): Authenticatie geaccepteerd. Geen verdere authenticatie vereist voor het restant van de synchronisatiesessie. Deze antwoordcode kan alleen worden gebruikt als antwoord op een aanvraag waarin de referenties zijn opgenomen.|
+|-2016345901|0x87D100D3|Syncml(211): Item niet verwijderd. Het opgevraagde item is niet gevonden. Mogelijk is het eerder verwijderd.|
+|-2016345902|0x87D100D2|Syncml(210): Verwijderen zonder archivering. Het antwoord geeft aan dat de opgevraagde gegevens zijn verwijderd, maar niet gearchiveerd vóór de verwijdering, omdat deze OPTIONELE functie niet wordt ondersteund door de implementatie.|
 |-2016345903|0x87D100D1|Conflict opgelost met duplicaat. Het antwoord geeft aan dat de aanvraag heeft geleid tot een updateconflict dat vervolgens is opgelost doordat de gegevens van de client zijn gedupliceerd in de serverdatabase. Het antwoord bevat de doel-URI van het duplicaat in het statusitem. In het geval van tweerichtingssynchronisatie wordt er bovendien een Add-opdracht geretourneerd met de definitie van de duplicaatgegevens.|
 |-2016345904|0x87D100D0|Conflict opgelost doordat de opdracht van de client heeft 'gewonnen'. Het antwoord geeft aan dat er een updateconflict was dat is opgelost doordat de opdracht van de client met prioriteit is uitgevoerd.|
 |-2016345905|0x87D100CF|Conflict opgelost door samenvoeging. Het antwoord geeft aan dat de aanvraag heeft geleid tot een conflict dat vervolgens is opgelost doordat de client- en serverinstanties van de gegevens zijn samengevoegd. Het antwoord bevat de doel-URL en de bron-URL in het statusitem. Bovendien is een Replace-opdracht geretourneerd met de samengevoegde gegevens.|

@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1fa409619d5c0fc0c0fc32573f9a7346350191e8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 789477f8f29ea46ab8dd45944fee7d766d63940f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188718"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849547"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Hoe uw Windows-gebruikers hun apps downloaden
 
@@ -36,6 +37,6 @@ Gebruik deze informatie om te begrijpen hoe en waar uw gebruikers de apps downlo
 
 **Niet-beheerde apps** zijn apps die kunnen worden beheerd via beleid en die niet zijn verpakt door Intune of waarin de Intune App SDK niet is opgenomen. App-beveiligingsbeleid kan niet worden toegepast op deze apps.
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 [Hoe uw Android-gebruikers hun apps downloaden](end-user-apps-android.md)
 [Hoe uw iOS-gebruikers hun apps downloaden](end-user-apps-android.md)

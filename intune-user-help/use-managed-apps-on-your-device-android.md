@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d5b07262dad3eaab76dd4854b82f0e45b3921b26
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3ba4ca5ccc9083f2132a8b8893c3bc2070ed3c50
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203498"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841331"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Beheerde apps op uw Android-apparaat gebruiken
 Beheerde apps worden geconfigureerd om te voldoen aan de beveiligingsvereisten van uw organisatie en om gegevens voor uw werk en school te beveiligen. Deze apps worden voor u beschikbaar gesteld op uw apparaat zodat ze automatisch kunnen worden geïnstalleerd of gebruikt. 

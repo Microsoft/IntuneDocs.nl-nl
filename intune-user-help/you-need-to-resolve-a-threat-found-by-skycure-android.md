@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ae001eb4d85a35b587eee4fa04df5f1987b247f7
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9b008130ec089b99ab64fe0dbbef7ae89b753817
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149804"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844187"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Een bedreiging oplossen die is gevonden met Symantec Endpoint Protection Mobile
 
@@ -32,7 +33,7 @@ Symantec Endpoint Protection (SEP) Mobile is een Mobile Threat Defender-service 
 * bedrijfsbestanden synchroniseren met OneDrive
 * bedrijfsapps openen
 
-In dit artikel wordt beschreven hoe u waarschuwingen van SEP Mobile voor bedreigingen kunt herkennen en wat u moet doen om deze op te lossen. 
+In dit artikel wordt beschreven hoe u waarschuwingen voor bedreigingen van SEP Mobile kunt herkennen en wat u moet doen om deze op te lossen. 
 
 ## <a name="resolve-virus-or-security-threat"></a>Virus- of beveiligingsbedreiging oplossen  
 

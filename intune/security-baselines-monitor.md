@@ -2,8 +2,8 @@
 title: Controleer het succes of falen van beveiligingsbasislijnen in Microsoft Intune - Azure | Microsoft Docs
 description: Controleer de fout-, conflict- en successtatus bij het implementeren van beveiligingsbasislijnen voor gebruikers en apparaten in Microsoft Intune MDM. Leer hoe u problemen oplost met clientlogboeken en bekijk de rapportagefuncties in Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/24/2019
 ms.topic: article
@@ -14,12 +14,13 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28a98a20e5f0b5181628da46ccd662f1f8f503dd
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bfbdad6d98065a691528d4cdada0b6f9377e1109
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55070210"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848233"
 ---
 # <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Controleer de beveiligingsbasislijn en het beveiligingsprofiel in Microsoft Intune
 
