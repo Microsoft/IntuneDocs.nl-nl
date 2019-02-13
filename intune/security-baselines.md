@@ -2,10 +2,10 @@
 title: Problemen met beveiligingsbasislijnen oplossen in Microsoft Intune - Azure | Microsoft Docs
 description: Aanbevolen groepsbeveiligingsinstellingen toevoegen of configureren ter bescherming van gebruikers en gegevens op apparaten met behulp van Microsoft Intune voor Mobile Device Management. Bitlocker inschakelen, Windows Defender Advanced Threat Protection configureren, Internet Explorer beheren, Smart Screen gebruiken, lokaal beveiligingsbeleid instellen, een wachtwoord vereisen, internetdownloads blokkeren en meer.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,23 +14,24 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d78adf8e7d6d2ce05951171e6248dcc8c389945d
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c610371760413cc157bee84382280666f387432b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55070202"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850825"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Een Windows 10-beveiligingsbasislijn maken in Intune
 
-Beveiligingsbasislijnen zijn een functie in de preview-versie die beschikbaar is voor apparaten met Windows 10 en hoger. Deze functie bevat veel Intune-instellingen om uw gebruikers en apparaten te helpen beveiligen en beschermen. Deze instellingen worden ook automatisch ingesteld op waarden die zijn aanbevolen door beveiligingsteams. Door de basislijn wordt bijvoorbeeld automatisch BitLocker ingeschakeld, automatisch een wachtwoord voor het ontgrendelen van een apparaat vereist, automatisch basisverificatie uitgeschakeld, en meer.
+Beveiligingsbasislijnen zijn een functie in de preview-versie die beschikbaar is voor apparaten met Windows 10 en hoger. Deze functie bevat veel instellingen die door Intune worden ondersteund om uw gebruikers en apparaten te helpen beveiligen en beschermen. Deze instellingen worden ook automatisch ingesteld op waarden die zijn aanbevolen door beveiligingsteams. Door de basislijn wordt bijvoorbeeld automatisch BitLocker ingeschakeld, automatisch een wachtwoord voor het ontgrendelen van een apparaat vereist, automatisch basisverificatie uitgeschakeld, en meer.
 
 Deze functie is van toepassing op:
 
 - Windows 10 versie 1809 en hoger
 
 > [!NOTE]
-> Zolang de functie voor beveiligingsbasislijnen in de preview-versie is, wordt het door Microsoft niet aanbevolen profielen in een productieomgeving te gebruiken, omdat de basislijnen in de loop van de preview-versie kunnen worden gewijzigd.
+> Zolang de functie voor beveiligingsbasislijnen in de preview-versie is, wordt het door Microsoft niet aanbevolen profielen in een productieomgeving te gebruiken, omdat de basislijnen in de loop van de preview-versie kunnen worden gewijzigd. Wanneer beveiligingsbasislijnen algemeen beschikbaar zijn, worden bestaande profielen niet geconverteerd naar de meest recent ondersteunde profielen.
 
 Het doel van het gebruik van beveiligingsbasislijnen is het aanbieden van een veilige end-to-end-werkstroom tijdens het werken met Microsoft 365. Enkele voordelen zijn:
 
@@ -94,6 +95,12 @@ Nadat het profiel is gemaakt, is het klaar om te worden toegewezen aan uw gebrui
 
 Zodra u hebt opgeslagen, wordt het profiel doorgestuurd naar apparaten wanneer deze inchecken bij Intune. Dit kan dus onmiddellijk plaatsvinden.
 
+## <a name="available-security-baselines"></a>Beschikbare beveiligingsbasislijnen  
+
+De volgende beveiligingsbasislijnen zijn beschikbaar om bij Intune te gebruiken.
+- **Voorbeeld: MDM-basislijnen voor beveiliging**
+  - Versie: [Oktober 2018](security-baseline-settings-windows.md)
+
 ## <a name="q--a"></a>Vragenronde
 
 #### <a name="why-these-settings"></a>Waarom deze instellingen?
@@ -117,5 +124,5 @@ Strikt genomen niet. Het Microsoft-beveiligingsteam raadpleegt adviesorganisatie
 - Het migreren van on-premises Active Directory-groepsbeleid naar een zuivere cloudoplossing met behulp van Azure Active Directory (AD) met Microsoft Intune is een heel traject. Om u hierbij te helpen, zijn er aanvullende groepsbeleidsobjecten gepubliceerd voor aan hybride Microsoft Azure Active Directory en Microsoft Azure Active Directory gekoppelde apparaten. Deze apparaten kunnen, indien nodig, MDM-instellingen van de cloud (Intune) en instellingen voor groepsbeleid van on-premises domeincontrollers krijgen.
 
 ## <a name="next-steps"></a>Volgende stappen
-
-De status controleren en de [basislijn en het profiel](security-baselines-monitor.md) controleren.
+- Bekijk de [Windows-beveiligingsbasislijninstellingen](security-baseline-settings-windows.md) die worden ondersteund door Intune.  
+- De status controleren en de [basislijn en het profiel](security-baselines-monitor.md) controleren.

@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260246"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834718"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Uw macOS-apparaten registreren bij Intune met de bedrijfsportal-app
 
@@ -57,7 +58,7 @@ Gebruik de volgende stappen om macOS-apparaten met OS X El Capitan 10.11 en hoge
 
 4. Op de pagina __Apparaten__ ziet u een lijst met beheerde apparaten of een banner. Wat u ziet, is afhankelijk van of u al over een beheerd apparaat beschikt. 
     * Als u een niet-vermeld apparaat wilt toevoegen, selecteert u de banner met de tekst **Tik hier om ons te laten weten welk apparaat u gebruikt of om een nieuw apparaat toe te voegen.**
-    * Als u geen apparaten hebt, toont de banner **U hebt geen beheerde apparaten. Voeg dit apparaat toe door hier te tikken.** Klik op de banner als u uw apparaat wilt toevoegen.  
+    * Als u geen apparaten hebt, ziet u het volgende op de banner: **U hebt geen beheerde apparaten. Voeg dit apparaat toe door hier te tikken.** Klik op de banner als u uw apparaat wilt toevoegen.  
 
      ![Een schermafbeelding van de pagina Apparaten met een rood vierkant rond de banner-optie om aan te geven waar u moet klikken.](./media/CP-enroll-MACOS-1808.png)  
 5.  Voer onderstaande stap uit in overeenstemming met het bericht u momenteel in de bedrijfsportal ziet.  
@@ -93,4 +94,11 @@ Het beheerprofiel definieert de MDM-kanaalverbinding. Zolang het beheerprofiel i
 
 Omdat voor de andere profielen geen afzonderlijke verificatie is vereist, worden ze bovendien sneller gegenereerd en naar apparaten gestuurd. 
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  
+## <a name="updating-the-company-portal-app"></a>De bedrijfsportal-app bijwerken
+
+U kunt de bedrijfsportal-app net als alle andere Office-apps bijwerken via Microsoft AutoUpdate voor de Mac. U vindt [hier meer informatie over het bijwerken van Microsoft-apps voor macOS](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
+
+## <a name="next-steps"></a>Volgende stappen  
+Hebt u meer hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. U vindt de contactgegevens van uw beheerder op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+

@@ -15,12 +15,13 @@ ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 8c4e5e18c0b995ad84340cdbc07a8a11b09e4f3a
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 437740779e0739ec53d9c89e46234cd5b31857e4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112779"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835571"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Eindgebruikers helpen bij het begrijpen van berichten van de bedrijfsportal-app
 
@@ -108,7 +109,7 @@ Als u de bedrijfsportal-app niet hebt toegevoegd aan de lijst **Toegestane apps*
 
 ### <a name="what-it-means"></a>Wat het betekent
 
-Voeg de bedrijfsportal toe aan de lijst **Toegestane apps** of **Vrijgestelde apps** in het Windows Information Protection (WIP)-beveiligingsbeleid voor apps. Zie [Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune](windows-information-protection-policy-create.md).
+Voeg de bedrijfsportal toe aan de lijst **Toegestane apps** of **Vrijgestelde apps** in het WIP-beveiligingsbeleid (Windows Information Protection) voor apps. Zie [Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune](windows-information-protection-policy-create.md).
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 [Wat u uw eindgebruikers vertelt over het gebruik van Intune](end-user-educate.md)

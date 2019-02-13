@@ -2,24 +2,25 @@
 title: SCEP-certificaten gebruiken met Microsoft Intune - Azure | Microsoft Docs
 description: Als u SCEP-certificaten in Microsoft Intune wilt gebruiken, configureert u uw on-premises AD-domein, maakt u een certificeringsinstantie, stelt u de NDES-server in en installeert u de Intune-certificaatconnector. Vervolgens maakt u een SCEP-certificaatprofiel en wijst u dit profiel toe aan groepen. Zie ook de andere gebeurtenis-id's en de bijbehorende beschrijvingen, en de diagnostische codes voor de Intune-connectorservice.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
-ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53597372"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838121"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -562,3 +563,4 @@ Vanaf versie 6.1806.x.x legt de Intune-connectorservice gebeurtenissen vast in d
 
 - [PKCS-certificaten gebruiken](certficates-pfx-configure.md) of [PKCS-certificaten uitgeven van een webservice van Symantec PKI-manager](certificates-symantec-configure.md)
 - [Een certificeringsinstantie van derden toevoegen om SCEP met Intune te gebruiken](certificate-authority-add-scep-overview.md)
+- Gebruik de handleiding [Problemen oplossen met de implementatie van het SCEP-certificaatprofiel in Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) voor meer hulp.

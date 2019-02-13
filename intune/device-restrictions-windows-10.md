@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f2b75eb5a87dbfd7a17aee83f173d3d472920428
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203634"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230117"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -336,7 +336,7 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 - **Microfoon**: Geef aan of deze app de microfoon kan gebruiken.
 - **Beweging**: Geef aan of deze app toegang heeft tot bewegingsinformatie van het apparaat.
 - **Meldingen**: Geef aan of deze app toegang heeft tot meldingen.
-- **Telefoon**: Geef aan of deze apps toegang heeft tot de telefoon.
+- **Telefoon**: Geef aan of deze app toegang heeft tot de telefoon.
 - **Radio's**: Sommige apps maken gebruik van radio's (bijvoorbeeld Bluetooth) in uw apparaat voor het verzenden en ontvangen van gegevens en moeten deze radio's kunnen in- of uitschakelen. Geef aan of deze app deze radio's kan beheren.
 - **Taken**: Geef aan of deze app toegang heeft tot uw taken.
 - **Vertrouwde apparaten**: Geef aan of deze app gebruik kan maken van vertrouwde apparaten (hardware die u al hebt aangesloten of die bij deze pc, tablet of telefoon wordt geleverd). Gebruik tv's, projectoren enzovoort bijvoorbeeld als vertrouwde apparaten.
@@ -420,7 +420,7 @@ U kunt informatie configureren die voor alle apps op het apparaat toegankelijk i
 
 - **Indeling van het menu Start**: U kunt het menu Start op desktopapparaten aanpassen door een XML-bestand met uw aanpassingen te uploaden, inclusief de volgorde waarin de apps worden vermeld en meer. Gebruikers kunnen de door u ingevoerde indeling van het menu Start niet wijzigen.
 - **Websites vastmaken aan tegels in het menu Start**: Importeer installatiekopieën van Microsoft Edge die als koppelingen worden weergegeven in het menu Start van Windows voor desktopapparaten.
-- **Apps losmaken van de taakbalk**: Selecteer **Blokkeren**, zodat de gebruiker geen apps meer kan losmaken vanuit het menu Start.
+- **Apps losmaken van de taakbalk**: Kies **Blokkeren**, zodat de gebruiker geen apps meer kan losmaken vanuit de taakbalk.
 - **Snelle gebruikerswisseling**: Selecteer **Blokkeren** om schakeling tussen gebruikers die gelijkertijd zijn aangemeld te voorkomen zonder hen af te melden.
 - **Meest gebruikte apps**: Selecteer **Blokkeren** om de meest gebruikte apps te verbergen in het menu Start. Hiermee wordt ook de bijbehorende wisselknop in de Instellingen-app uitgeschakeld.
 - **Onlangs toegevoegde apps**: Selecteer **Blokkeren** om onlangs toegevoegde apps te verbergen in het menu Start. Hiermee wordt ook de bijbehorende wisselknop in de Instellingen-app uitgeschakeld.

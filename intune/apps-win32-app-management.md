@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,30 +16,30 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: ba77c14e470ed75a87f44adcaf0ba9b98cd06438
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068319"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290754"
 ---
-# <a name="intune-standalone---win32-app-management-public-preview"></a>Intune (zelfstandig) - Win32-app-beheer (openbare preview)
+# <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
 De zelfstandige versie van Intune heeft uitgebreidere beheermogelijkheden voor Win32-apps. Cloudklanten kunnen weliswaar Configuration Manager gebruiken voor het beheer van Win32-apps, maar klanten met alleen Intune hebben uitgebreidere beheermogelijkheden voor hun Win32 LOB-apps (Line-Of-Business). Dit document bevat een overzicht van de Intune-beheerfunctie voor Win32-apps en informatie over de probleemoplossing.
 
-## <a name="prerequisites-for-public-preview"></a>Vereisten voor de openbare preview
+## <a name="prerequisites"></a>Vereisten
 
 - Windows 10 versie 1607 of hoger (Enterprise, Pro en Education)
 - De Windows 10-client moet aan het volgende voldoen: 
     - gekoppeld aan Azure Active Directory (AAD) of Hybrid Azure Active Directory, en
     - geregistreerd bij Intune (MDM-beheerd)
-- De grootte van Windows-apps wordt in de openbare preview beperkt tot 8 GB per app 
+- De grootte van Windows-toepassingen is beperkt tot 8 GB per app
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>De Win32-app-inhoud voor upload voorbereiden
 
-Gebruik het [hulpprogramma voor uploadvoorbereiding van Microsoft Intune Win32-apps](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) om Win32-apps alvast te verwerken. Het pakkethulpprogramma converteert de app-installatiebestanden naar de indeling *.intunewin*. Het pakkethulpprogramma detecteert ook enkele kenmerken die Intune vereist om de installatiestatus van de app te bepalen. Nadat u dit hulpprogramma hebt gebruikt in de map van het app-installatieprogramma, kunt u een Win32-app maken in de Intune-console.
+Gebruik het [hulpprogramma voor voorbereiding van Microsoft Win32-inhoud](https://go.microsoft.com/fwlink/?linkid=2065730) om Win32-apps alvast te verwerken. Met het hulpprogramma converteert u de app-installatiebestanden naar de indeling *.intunewin*. Het hulpprogramma detecteert ook enkele kenmerken die voor Intune zijn vereist om de installatiestatus van de app te bepalen. Nadat u dit hulpprogramma hebt gebruikt in de map van het app-installatieprogramma, kunt u een Win32-app maken in de Intune-console.
 
-U kunt het [hulpprogramma voor uploadvoorbereiding van Microsoft Intune Win32-apps](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) downloaden uit GitHub.
+U kunt het [hulpprogramma voor voorbereiding van Microsoft Win32-inhoud](https://go.microsoft.com/fwlink/?linkid=2065730) downloaden via GitHub.
 
 ### <a name="available-command-line-parameters"></a>Beschikbare opdrachtregelparameters 
 
@@ -74,7 +74,7 @@ Net als bij een LOB-app (Line-Of-Business) kunt u een Win32-app aan Microsoft In
 1.  Meld u aan bij [Azure Portal](https://portal.azure.com/).
 2.  Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3.  Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps** > **Toevoegen**.
-4.  Selecteer in het app-deelvenster **Toevoegen** **Windows-app (Win32) - preview** uit de opgegeven vervolgkeuzelijst.
+4.  Selecteer in het app-deelvenster **Toevoegen** **Windows-app (Win32)** uit de opgegeven vervolgkeuzelijst.
 
     ![Schermafbeelding van de blade App toevoegen - vervolgkeuzelijst Type toevoegen](./media/apps-win32-app-01.png)
 
@@ -85,6 +85,10 @@ Net als bij een LOB-app (Line-Of-Business) kunt u een Win32-app aan Microsoft In
     ![Schermafbeelding van de blade App-pakketbestand](./media/apps-win32-app-02.png)
 
 2.  Selecteer in het deelvenster **App-pakketbestand** de bladerknop. Selecteer vervolgens een Windows-installatiebestand met de extensie *.intunewin*.
+
+    > [!IMPORTANT]
+    > Gebruik de nieuwste versie van het hulpprogramma voor voorbereiding van Microsoft Win32-inhoud. Als u de nieuwste versie niet gebruikt, ziet u een waarschuwing om aan te geven dat de app met een oudere versie van het hulpprogramma voor voorbereiding van Microsoft Win32-inhoud is ingepakt. 
+
 3.  Klik op **OK** wanneer u klaar bent.
 
 ### <a name="step-3-configure-app-information"></a>Stap 3: App-gegevens configureren
@@ -171,7 +175,7 @@ Net als bij een LOB-app (Line-Of-Business) kunt u een Win32-app aan Microsoft In
             
                 ![Schermopname van het deelvenster Detectieregels: registersleutel bestaat](./media/apps-win32-app-05.png)    
             
-            2.  Controleren of registerwaarde bestaat (**niet beschikbaar in preview**).
+            2.  Controleer of er registerwaarden bestaan.
         
                 ![Schermopname van het deelvenster Detectieregels: registerwaarde bestaat](./media/apps-win32-app-06.png)    
         

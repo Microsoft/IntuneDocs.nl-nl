@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734269"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838764"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Apps toewijzen aan groepen met Microsoft Intune
 
@@ -51,7 +52,7 @@ In de volgende tabellen worden de verschillende opties vermeld voor het toewijze
 >
 > Voor het ontvangen van app-updates op apparaten die niet zijn ingeschreven bij Intune, moeten gebruikers naar de bedrijfsportal van hun organisatie gaan en de app-updates handmatig installeren.
 
-## <a name="to-assign-an-app"></a>Een app toewijzen
+## <a name="assign-an-app"></a>Een app toewijzen
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com).
 2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
@@ -62,7 +63,7 @@ In de volgende tabellen worden de verschillende opties vermeld voor het toewijze
 7. Selecteer **Groep toevoegen** om het deelvenster **Groep toevoegen** te openen dat is gerelateerd aan de app.
 8. Selecteer een **toewijzingstype** voor de specifieke app:
    - **Beschikbaar voor ingeschreven apparaten**: wijs de app toe aan groepen gebruikers die de app vanuit de bedrijfsportal-app of -website installeren.
-   - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen gebruikers van wie de apparaten niet zijn ingeschreven bij Intune. Apps uit de beheerde Google Play Store bieden geen ondersteuning voor deze optie. Gebruikers moeten een Intune-licentie toegewezen krijgen, zie [Intune-licenties](licenses.md).
+   - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen gebruikers van wie de apparaten niet zijn ingeschreven bij Intune. Gebruikers moeten een Intune-licentie toegewezen krijgen, zie [Intune-licenties](licenses.md).
    - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen. Sommige platformen hebben mogelijk aanvullende prompts voor de eindgebruiker ter bevestiging voordat de installatie van de app begint.
    - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen als Intune de toepassing eerder op het apparaat heeft geïnstalleerd via de toewijzingen 'Beschikbaar voor ingeschreven apparaten' of 'Vereist' met behulp van dezelfde implementatie. Webkoppelingen kunnen niet worden verwijderd na implementatie.
 
@@ -122,6 +123,9 @@ Soms wordt dezelfde app aan meerdere groepen toegewezen, maar met verschillende 
 > [!NOTE]
 > Alleen voor beheerde iOS Store-apps: wanneer u deze apps toevoegt in Microsoft Intune en toewijst als **Vereist**, worden de apps automatisch gemaakt met zowel de intentie **Vereist** als **Beschikbaar**.<br><br>
 > iOS Store-apps (geen iOS VPP-apps) die met de vereiste intentie worden benaderd, worden afgedwongen op het apparaat op het moment dat het apparaat incheckt en worden ook weergegeven in de bedrijfsportal-app.
+
+## <a name="android-enterprise-app-we-app-deployment"></a>Android Enterprise APP WE-app-implementatie
+Voor Android-apparaten in een niet-geregistreerd APP-WE-implementatiescenario (App Protection Policy Without Enrollment), gebruikt u de beheerde Google Play Store om store-apps en LOB-apps te implementeren bij gebruikers. In het bijzonder kunt u eindgebruikers voorzien van een app-catalogus en een installatie waarbij het niet langer nodig is dat eindgebruikers de beveiligingsstatus van hun apparaten versoepelen door installaties uit onbekende bronnen toe te staan. Bovendien biedt dit implementatiescenario een verbeterde eindgebruikerservaring. Zie [Een app toewijzen](apps-deploy.md#assign-an-app) voor de stappen om een app toe te wijzen.
 
 ## <a name="next-steps"></a>Volgende stappen
 

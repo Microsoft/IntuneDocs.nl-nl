@@ -2,8 +2,8 @@
 title: Certificaten met een persoonlijke en openbare sleutel gebruiken in Microsoft Intune - Azure | Micrososft Docs
 description: PKCS-certificaten (Public Key Cryptography Standards) toevoegen of maken met Microsoft Intune, inclusief de stappen om een basiscertificaat te exporteren, de certificaatsjabloon te configureren, de Microsoft Intune Certificate Connector (NDES) te downloaden en installeren, een apparaatconfiguratieprofiel te maken, een PKCS-certificaatprofiel te maken in Azure en uw certificeringsinstantie (CA).
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: article
@@ -11,16 +11,16 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 6a617f56e688d8dd6e9bca8e964e075865f05be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: f825e66a4668a007dc364e4c42b18ca7c2736016
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203617"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303483"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -136,6 +136,7 @@ Voor verificatie met VPN, Wi-Fi of andere bronnen hebt u op elk apparaat een bas
 6. U wordt aangeraden om op het tabblad **Geavanceerd** het keuzerondje **Systeemaccount van deze computer gebruiken (standaard)** ingeschakeld te laten.
 7. **Toepassen** > **Sluiten**
 8. Ga terug naar de Azure Portal (**Intune** > **Apparaatconfiguratie** > **Certificeringsinstantie**). Even later wordt een groen vinkje weergegeven en is de **Verbindingsstatus** **Actief**. Uw connector-server kan nu communiceren met Intune.
+9. Als u een webproxy in uw netwerkomgeving hebt, hebt u mogelijk extra configuraties nodig voordat de connector werkt. Raadpleeg [Werken met bestaande on-premises proxyservers](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) in de Azure Active Directory-documentatie voor meer informatie.
 
 > [!NOTE]
 > TLS 1.2-ondersteuning wordt geleverd met de Microsoft Intune-certificaatconnector. Als de server met daarop de Microsoft Intune-certificaatconnector TLS 1.2 ondersteunt, wordt TLS 1.2 gebruikt. Als de server TLS 1.2 niet ondersteunt, wordt TLS 1.1 gebruikt. Momenteel wordt TLS 1.1 gebruikt voor verificatie tussen de apparaten en de server.

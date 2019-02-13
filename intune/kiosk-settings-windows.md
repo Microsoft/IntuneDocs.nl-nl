@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 61cb1a3c9de10020381d62a2a7795d5ff728db22
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 31cfa617e0ca5d8d0848d1ecb781fda701589ccd
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199418"
+ms.locfileid: "55229947"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Instellingen voor apparaten met Windows 10 en hoger om ze als kiosk uit te voeren via Intune
 
@@ -101,7 +101,7 @@ Wanneer u een kioskmodus voor meerdere apps kiest, moet u de volgende instelling
 
     - **Toepassingsnaam**: Vereist. Geef een naam op voor de toepassing.
     - **Lokaal pad**: Vereist. Voer het pad naar het uitvoerbare bestand in, zoals `C:\Program Files (x86)\Microsoft VS Code\Code.exe` of `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-    - **Model-id van toepassingsgebruiker (AUMID)**: Voer de AUMID van de Win32-app in. Deze instelling bepaalt de indeling van de tegel na het opstarten op het bureaublad. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps) als u wilt weten hoe u aan deze id komt.
+    - **Model-id van toepassingsgebruiker (AUMID)**: Voer de AUMID van de Win32-app in. Deze instelling bepaalt de indeling van de tegel na het opstarten op het bureaublad. Raadpleeg [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps) om deze id op te halen.
     - **Tegelgrootte**: Vereist. Kies een tegelgrootte Klein, Normaal, Breed of Groot voor de app.
   
   - **Toevoegen via AUMID**: Gebruik deze optie om Postvak IN-apps voor Windows, zoals Kladblok of Calculator toe te voegen. Voer de volgende eigenschappen in: 

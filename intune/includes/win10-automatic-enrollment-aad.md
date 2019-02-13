@@ -28,7 +28,9 @@ Met automatische inschrijving kunnen gebruikers hun Windows 10-apparaten inschri
    - **Alle** - Alle gebruikers kunnen automatisch hun Windows 10-apparaten inschrijven
 
       > [!IMPORTANT]
-      > Als zowel **Gebruikersbereik van MAM** als automatische MDM-inschrijving (**Gebruikersbereik van MDM**) wordt ingeschakeld voor een groep, wordt alleen MAM ingeschakeld. Alleen MAM wordt toegevoegd voor gebruikers in die groep wanneer ze hun persoonlijke apparaat aan hun werkplek toevoegen. Apparaten worden niet automatisch ingeschreven voor MDM.
+      > Voor BYOD-apparaten krijgt het MAM-gebruikersbereik voorrang als zowel het MAM-gebruikersbereik als het MDM-gebruikersbereik (automatische MDM-registratie) zijn ingeschakeld voor alle gebruikers (of dezelfde groepen of gebruikers). Het apparaat wordt niet via MDM geregistreerd, maar gebruikt WIP-beleid (Windows Information Protection) (als u dit hebt geconfigureerd).
+      >
+      > Voor zakelijke apparaten krijgt het MDM-gebruikersbereik voorrang als beide bereiken zijn ingeschakeld. De apparaten worden via MDM geregistreerd.
 
    ![Schermopname van de Azure-portal](../media/auto-enroll-scope.png)
 

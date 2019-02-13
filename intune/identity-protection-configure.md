@@ -2,10 +2,10 @@
 title: Gebruik een pincode om u aan te melden bij Windows 10-apparaten met Microsoft Intune - Azure | Microsoft Docs
 description: Gebruik Windows Hello voor Bedrijven, zodat gebruikers zich bij apparaten kunnen aanmelden met een pincode, vingerafdruk en meer. Maak met deze instellingen in Intune een configuratieprofiel voor identiteitsbeveiliging voor Windows 10-apparaten en wijs het profiel toe aan gebruikersgroepen en apparaatgroepen.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c917294ac11f8f0a19c0f8f361df8d2910cb461c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831377"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838000"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Gebruik Windows Hello voor Bedrijven op Windows 10-apparaten met Microsoft Intune
 
@@ -60,7 +61,7 @@ In dit artikel wordt beschreven hoe u een apparaatconfiguratieprofiel maakt. Zie
 
 4. Wanneer u klaar bent, selecteert u **OK** > **Maken** om uw wijzigingen op te slaan.
 
-Het profiel wordt gemaakt en verschijnt in de profielenlijst. Vervolgens kunt u dit aan groepen profiel [toewijzen](device-profile-assign.md).
+Het profiel wordt gemaakt en verschijnt in de profielenlijst. [Wijs](device-profile-assign.md) dit profiel vervolgens naar behoefte toe aan gebruikers- en apparaatgroepen.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

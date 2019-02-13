@@ -2,10 +2,10 @@
 title: Windows Defender ATP in Microsoft Intune gebruiken - Azure | Microsoft Docs
 description: Informatie over het inschakelen van Windows Defender Advanced Threat Protection (ATP) in een end-to-end-scenario, waaronder het inschakelen van ATP in Intune en Windows Defender Security Center (ATP portal), het onboarden van apparaten die een ATP-configuratieprofiel gebruiken, het maken van een nalevingsbeleid voor een Intune-apparaat, het maken van een beleid voor voorwaardelijke toegang van Azure AD en conformiteit van apparaten bewaken.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
-ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53167991"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845173"
 ---
-# <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP met voorwaardelijke toegang in Intune inschakelen
+# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Naleving voor Windows Defender ATP met voorwaardelijke toegang in Intune afdwingen
 
 Windows Defender Advanced Threat Protection (ATP) en Microsoft Intune werken samen om beveiligingslekken te voorkomen en beperken de gevolgen van schendingen binnen een organisatie.
 

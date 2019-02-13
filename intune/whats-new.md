@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/25/2019
+ms.date: 02/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +16,21 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 21fde80ec80492957b686a66dcfe4db55894c38e
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 996b4d85da41b480d73d7a79011e2bbd732ea334
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199486"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690832"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook geplande wijzigingen, [belangrijke kennisgevingen](#notices) en informatie over [oudere releases](whats-new-archive.md). Sommige functies worden gedurende een aantal weken geïmplementeerd en zijn mogelijk niet voor alle gebruikers in de eerste week beschikbaar.
+Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook geplande wijzigingen, [belangrijke kennisgevingen](#notices) en informatie over [oudere releases](whats-new-archive.md). 
 
 > [!Note]
+> Sommige functies worden gedurende een aantal weken geïmplementeerd en zijn mogelijk niet voor alle gebruikers in de eerste week beschikbaar.
+>
 > Zie de [pagina Wat is er nieuw](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) voor informatie over nieuwe functionaliteit in het hybride beheer van mobiele apparaten (MDM).
 
 **RSS-feed**: ontvang een melding wanneer deze pagina wordt bijgewerkt door de volgende URL in uw feedlezer te kopiëren en plakken: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
@@ -43,6 +45,13 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook geplande 
 ### Role-based access control
 
 -->     
+## <a name="week-of-february-4-2019"></a>Week van 4 februari 2019
+
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="intune-macos-company-portal-dark-mode----3300524-eeready---"></a>Donkere modus van Intune macOS Bedrijfsportal <!-- 3300524 eeready -->
+De Intune macOS Bedrijfsportal biedt nu ondersteuning voor de donkere modus voor macOS. Wanneer u de donkere modus inschakelt op een macOS 10.14+-apparaat, wordt de vormgeving door de Bedrijfsportal aangepast naar kleuren die overeenkomen met die modus.
+
 ## <a name="week-of-january-21-2019"></a>De week van 21 januari 2019
 
 ### <a name="app-management"></a>Appbeheer
@@ -52,15 +61,28 @@ U kunt per app-toewijzing onderdrukken dat toast-meldingen voor eindgebruikers w
 
 #### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Update van de gebruikersinterface voor beveiligingsbeleid voor apps in Intune <!-- 3251427  -->
 We hebben de labels voor instellingen en knoppen voor App-beveiliging van Intune gewijzigd om ze duidelijker te maken. De wijzigingen zijn onder meer:  
-- Besturingselementen zijn gewijzigd van **ja** / **nee** naar primair **blokkeren**/**toestaan** en **uitschakelen** / **inschakelen**. De labels zijn ook bijgewerkt.  
+- Besturingselementen zijn gewijzigd van **ja** / **nee** naar primair **blokkeren** / **toestaan** en **uitschakelen** / **inschakelen**. De labels zijn ook bijgewerkt.  
 - De instellingen zijn opnieuw ingedeeld, zodat de instellingen en bijbehorende labels naast elkaar in het besturingselement staan, wat betere navigatie biedt.   
 
 De standaardinstellingen en een aantal instellingen blijven dezelfde, maar met deze wijziging kan de gebruiker de instellingen beter begrijpen, gebruiken en er door navigeren om het geselecteerde app-beveiligingsbeleid toe te passen. Zie [iOS-instellingen](app-protection-policy-settings-ios.md) en [Android-instellingen](app-protection-policy-settings-android.md) voor meer informatie.
 
 #### <a name="additional-settings-for-outlook----3301182----"></a>Extra instellingen voor Outlook <!-- 3301182  -->
-U kunt nu aanvullende instellingen voor Outlook voor iOS en Android configureren met Intune.  Deze instellingen zijn onder andere: Instellen dat alleen werk- of schoolaccounts mogen worden gebruikt in Outlook in iOS en Android Moderne verificatie implementeren voor Office 365 en hybride moderne verificatie voor on-premises accounts `SAMAccountName` gebruiken in het gebruikersnaamveld in het e-mailprofiel als basisverificatie wordt geselecteerd Toestaan dat contactpersonen worden opgeslagen E-mailtips voor externe ontvangers configureren Het **Postvak IN met prioriteit** configureren Biometrie vereisten voor toegang tot Outlook voor iOS Externe afbeeldingen blokkeren
+U kunt nu de volgende aanvullende instellingen voor Outlook voor iOS en Android configureren met Intune:
+- Instellen dat alleen werk- of schoolaccounts mogen worden gebruikt in Outlook in iOS en Android
+- Moderne verificatie implementeren voor Office 365 en hybride moderne verificatie voor on-premises accounts
+- `SAMAccountName` gebruiken in het gebruikersnaamveld in het e-mailprofiel als basisverificatie wordt geselecteerd
+
+De volgende instellingen worden nog steeds geleidelijk uitgerold en zijn binnenkort op uw console beschikbaar:
+- Toestaan dat contactpersonen worden opgeslagen
+- E-mailtips voor externe ontvangers configureren
+- Het **Postvak IN met prioriteit** configureren
+- Biometrie vereisten voor toegang tot Outlook in iOS
+
+De onderstaande instelling wordt in de Intune-console weergegeven, maar wanneer deze wordt geconfigureerd, werkt deze niet zoals verwacht. Dit probleem zal binnenkort worden opgelost:
+- Externe afbeeldingen blokkeren
+
 > [!NOTE]
-> Als u gebruikmaakt van Intune-app-beveiligingsbeleid voor het beheren van toegang tot bedrijfs-id's, wordt afgeraden **biometrie te vereisen**. Zie **Bedrijfsreferenties vereisen voor toegang** voor [iOS-toegangsinstellingen](app-protection-policy-settings-ios.md#access-settings) en [Android-toegangsinstellingen](app-protection-policy-settings-android.md#access-settings).
+> Als u gebruikmaakt van Intune-app-beveiligingsbeleid voor het beheren van toegang tot bedrijfs-id's, wordt afgeraden **biometrie te vereisen**. Zie **Bedrijfsreferenties vereisen voor toegang** voor [iOS-toegangsinstellingen](app-protection-policy-settings-ios.md#access-requirements) en [Android-toegangsinstellingen](app-protection-policy-settings-android.md#access-requirements).
 
 #### <a name="delete-android-enterprise-apps----1352553---"></a>Android Enterprise-apps verwijderen <!-- 1352553 -->
 U kunt beheerde Google Play-apps verwijderen uit Microsoft Intune. Als u een beheerde Google Play-app wilt verwijderen, opent u Microsoft Intune in de Azure-portal en selecteert u **Client-apps** > **Apps**. In de lijst met apps selecteert u het beletselteken (...) rechts naast de beheerde Google Play-app en vervolgens **Verwijderen** in de weergegeven lijst. Wanneer u een beheerde Google Play-app uit de lijst met apps verwijdert, wordt de goedkeuring voor de beheerde Google Play-app automatisch verwijderd.
@@ -68,12 +90,16 @@ U kunt beheerde Google Play-apps verwijderen uit Microsoft Intune. Als u een beh
 #### <a name="managed-google-play-app-type----1352580---"></a>App-type Beheerde Google Play-app <!-- 1352580 -->
 Met het type **beheerde Google Play-app** hebt u toestemming om specifiek [beheerde Google Play-apps](https://play.google.com/work/search?q=microsoft&c=apps) aan Intune toe te voegen. Als Intune-beheerder kunt u nu door goedgekeurde beheerde Google Play-apps bladeren en goedgekeurde beheerde Google Play-apps zoeken, goedkeuren, synchroniseren en toewijzen in Intune.  U hoeft niet langer afzonderlijk naar de beheerde Google Play-console te bladeren en u hoeft niet opnieuw een verificatie uit te voeren.  Selecteer in Intune de optie **Client-apps** > **Apps** > **Toevoegen**. In de lijst **App-type** selecteert u **Beheerd Google Play** als app-type.
 
+### <a name="default-android-pin-keyboard----3802457---"></a>Standaardpincodetoetsenbord van Android <!-- 3802457 -->
+Eindgebruikers die een Intune APP-pincode (App Protection Policy) op hun Android-apparaten hebben ingesteld met pincodetype Numeriek, zien nu het Android-standaardtoetsenbord in plaats van de gebruikelijke Android-toetsenbordgebruikersinterface die eerder is ontworpen. Deze wijziging is doorgevoerd voor consistentie met standaardtoetsenborden op zowel Android als iOS, voor de pincodetypen Numeriek en/of Wachtwoordcode. Zie [Android-toegangsvereisten](app-protection-policy-settings-android.md#access-requirements) voor meer informatie over de toegangsinstellingen voor eindgebruiker op Android, zoals de APP-pincode.
+
 ### <a name="device-configuration"></a>Apparaatconfiguratie
 
 #### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>Door Microsoft aanbevolen instellingen gebruiken met beveiligingsbasislijnen (openbare preview) <!-- 2055484   -->
-Opmerking: deze functie wordt nog uitgerold en komt binnenkort beschikbaar.
 
 Intune is geïntegreerd met andere services die op beveiliging gericht zijn, inclusief Windows Defender ATP en Office 365 ATP. Klanten vragen om een gemeenschappelijke strategie en een samenhangende set van end-to-end beveiligingsworkflows voor alle Microsoft 365-diensten. Ons doel is om strategieën af te stemmen en oplossingen te ontwikkelen die beveiligingsactiviteiten en gebruikelijke beheerderstaken combineren. In Intune willen we dit doel bereiken door het publiceren van een set beveiligingsbasislijnen die door Microsoft zijn aanbevolen (**Intune** >  **Beveiligingsbasislijnen**).  Beheerders kunnen direct op basis van deze basislijnen een beveiligingsbeleid opstellen en dit vervolgens voor hun gebruikers implementeren. U kunt ook de aanbevelingen voor procedures aanpassen aan de behoeften van uw organisatie. Intune zorgt ervoor dat apparaten deze basislijnen blijven naleven, en waarschuwt beheerders wanneer gebruikers of apparaten van de basislijnen afwijken.
+
+Deze functie is beschikbaar als openbare preview, dus alle profielen die nu worden gemaakt, worden niet verplaatst naar beveiligingsbasislijnsjablonen die algemeen beschikbaar zijn. U moet deze previewsjablonen niet voor uw productieomgeving gebruiken.
 
 Zie [Een Windows 10-beveiligingsbasislijn maken in Intune](security-baselines-monitor.md) voor meer informatie over beveiligingsbasislijnen.
 
@@ -112,13 +138,6 @@ Ga naar [Met Android Enterprise-apparaatinstellingen functies toestaan of beperk
 
 Van toepassing op: Android Enterprise-apparaateigenaar
 
-#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Update van de gebruikersinterface voor beveiligingsbeleid voor apps in Intune <!-- 3251427 -->
-We hebben de labels voor instellingen en knoppen voor App-beveiliging van Intune gewijzigd om ze duidelijker te maken. De wijzigingen zijn onder meer:  
-- Besturingselementen zijn gewijzigd van **ja** / **nee** naar primair **blokkeren**/**toestaan** en **uitschakelen** / **inschakelen**. De labels zijn ook bijgewerkt.  
-- De instellingen zijn opnieuw ingedeeld, zodat de instellingen en bijbehorende labels naast elkaar in het besturingselement staan, wat betere navigatie biedt.   
-
-De standaardinstellingen en een aantal instellingen blijven dezelfde, maar met deze wijziging kan de gebruiker de instellingen beter begrijpen, gebruiken en er door navigeren om het geselecteerde app-beveiligingsbeleid toe te passen. Zie [iOS-instellingen](app-protection-policy-settings-ios.md) en [Android-instellingen](app-protection-policy-settings-android.md) voor meer informatie.
-
 ### <a name="device-management"></a>Apparaatbeheer
 
 #### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>Ondersteuning voor selectief wissen voor WIP Without Enrollment-apparaten <!-- 1434452 -->
@@ -137,7 +156,9 @@ In [Logboekgegevens verzenden naar Storage, Event Hubs of Log Analytics in Intun
 Naast de schermen die u op dit moment kunt overslaan, kunt u instellen dat iOS DEP-apparaten de volgende schermen in de Setup-assistent overslaan wanneer een gebruiker het apparaat registreert: Weergavetoon, Privacy, Android-migratie, Startknop, iMessage en FaceTime, Onboarding, Migratie weergeven, Weergave, Schermtijd, Software-update, SIM-installatie.
 Als u wilt kiezen welke schermen moeten worden overgeslagen, gaat u naar **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor inschrijvingsprogramma** > kies een token > **Profielen** > kies een profiel > **Eigenschappen** > **Setup Assistant aanpassen** > kies **Verbergen** voor schermen die u wilt overslaan > **OK**.
 Als u een nieuw profiel maakt of een profiel bewerkt, moeten de geselecteerde skip-schermen worden gesynchroniseerd met de Apple MDM-server. Gebruikers kunnen de opdracht tot een handmatige synchronisatie van de apparaten geven, zodat er geen vertraging in het ophalen van de profielwijzigingen is.
-Het uitrollen van deze functie is gestart, maar het duurt een paar dagen totdat deze beschikbaar is voor alle klanten.
+
+#### <a name="android-enterprise-app-we-app-deployment----1171203---"></a>Android Enterprise APP WE-app-implementatie <!-- 1171203 -->
+Voor Android-apparaten in een niet-geregistreerd APP-WE-implementatiescenario (App Protection Policy Without Enrollment), gebruikt u de beheerde Google Play Store om store-apps en LOB-apps te implementeren bij gebruikers. In het bijzonder kunt u eindgebruikers voorzien van een app-catalogus en een installatie waarbij het niet langer nodig is dat eindgebruikers de beveiligingsstatus van hun apparaten versoepelen door installaties uit onbekende bronnen toe te staan. Bovendien biedt dit implementatiescenario een verbeterde eindgebruikerservaring.
 
 ## <a name="week-of-january-14-2019"></a>De week van 14 januari 2019
 
@@ -400,7 +421,7 @@ Deze functie komt de komende paar dagen beschikbaar voor onze gebruikers. Daarom
 ### <a name="app-management"></a>Appbeheer
 
 #### <a name="require-non-biometric-pin-after-a-specified-timeout----1506985---"></a>Een niet-biometrische pincode vereisen na de opgegeven time-out <!-- 1506985 -->
-Door een niet-biometrische pincode te vereisen na een door de beheerder opgegeven time-out, biedt Intune een betere beveiliging voor apps die geschikt zijn voor Mobile Application Management (MAM) door het gebruik van biometrische identificatie voor toegang tot zakelijke gegevens te beperken. De instellingen hebben invloed op gebruikers die Touch ID (iOS), Face ID (iOS), Android Biometric of andere toekomstige biometrische verificatiemethoden gebruiken om toegang te krijgen tot voor APP/MAM geschikte toepassingen. Door deze instellingen hebben Intune-beheerders gedetailleerdere controle over gebruikerstoegang. Op deze manier wordt de kans kleiner dat een onjuiste gebruiker bedrijfsgegevens kan zien op een apparaat met meerdere vingerafdrukken of andere biometrische toegangsmethoden. Open **Microsoft Intune** in de Azure-Portal. Selecteer **Client-apps** > **App-beveiligingsbeleid** > **Een beleid toevoegen** > **Instellingen**. Ga voor specifieke instellingen naar de sectie **Toegang**. Zie [iOS-instellingen](app-protection-policy-settings-ios.md#access-settings) en [Android-instellingen](app-protection-policy-settings-android.md#access-settings) voor meer informatie over instellingen voor toegang.
+Door een niet-biometrische pincode te vereisen na een door de beheerder opgegeven time-out, biedt Intune een betere beveiliging voor apps die geschikt zijn voor Mobile Application Management (MAM) door het gebruik van biometrische identificatie voor toegang tot zakelijke gegevens te beperken. De instellingen hebben invloed op gebruikers die Touch ID (iOS), Face ID (iOS), Android Biometric of andere toekomstige biometrische verificatiemethoden gebruiken om toegang te krijgen tot voor APP/MAM geschikte toepassingen. Door deze instellingen hebben Intune-beheerders gedetailleerdere controle over gebruikerstoegang. Op deze manier wordt de kans kleiner dat een onjuiste gebruiker bedrijfsgegevens kan zien op een apparaat met meerdere vingerafdrukken of andere biometrische toegangsmethoden. Open **Microsoft Intune** in de Azure-Portal. Selecteer **Client-apps** > **App-beveiligingsbeleid** > **Een beleid toevoegen** > **Instellingen**. Ga voor specifieke instellingen naar de sectie **Toegang**. Zie [iOS-instellingen](app-protection-policy-settings-ios.md#access-requirements) en [Android-instellingen](app-protection-policy-settings-android.md#access-requirements) voor meer informatie over instellingen voor toegang.
 
 #### <a name="intune-app-data-transfer-settings-on-ios-mdm-enrolled-devices----2244713---"></a>Instellingen voor Intune APP-gegevensoverdracht op iOS-apparaten die via MDM zijn ingeschreven <!-- 2244713 -->
 U kunt het beheer van instellingen voor Intune APP-gegevensoverdracht op iOS-apparaten die zijn ingeschreven via MDM scheiden van het opgeven van de identiteit van de ingeschreven gebruiker. Dit wordt ook wel de UPN (User Principal Name) genoemd. Beheerders die de IntuneMAMUPN niet gebruiken, zullen geen wijziging in het gedrag opmerken. Als deze functionaliteit beschikbaar is, moeten beheerders die de IntuneMAMUPN gebruiken om het gedrag van de gegevensoverdracht op ingeschreven apparaten te beheren de nieuwe instellingen controleren en hun APP-instellingen zo nodig bijwerken.
@@ -1358,27 +1379,37 @@ Dit heeft gevolgen voor u als u apparaten hebt met macOS 10.14.2 of hoger. Nu Ap
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
 U kunt uw helpdesk hiervan op de hoogte stellen. Deze pagina Wat is er nieuw wordt bijgewerkt zodra deze wijziging is uitgerold. Als u dit macOS-apparaatbeleid niet wilt afdwingen, raden we aan toewijzing van uw bestaande macOS-beleid ongedaan te maken of dit beleid te verwijderen.
 
+###<a name="plan-for-change-update-to-ios-setting-for-supervised-devices-in-the-intune-console"></a>Geplande wijziging: Bijwerken naar iOS-instelling voor apparaten onder toezicht in de Intune-console  
+Met de update van februari voor de Intune-service wordt de naam van de functie Beperkingen instellingen bij de apparaatinstellingen voor iOS-apparaten onder toezicht gewijzigd in Schermtijd (alleen onder toezicht). Na deze wijziging zal de eindgebruikerservaring veranderen op basis van de iOS-versie.
 
-### <a name="reminder-intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo---2828727--"></a>Herinnering: Intune-ondersteuningservaring voor Premier-klanten nu in Azure in plaats van in MPO <!--2828727-->
-In september hebben we in MC147649 gemeld dat de mogelijkheid om Intune-ondersteuningsaanvragen te doen vanuit de MPO-portal (Microsoft Premier Online) (premier.microsoft.com) in december zou worden verwijderd. Deze wijziging heeft een korte vertraging opgelopen, maar na eind januari wordt u omgeleid en kunt u alleen nog maar in Intune op Azure ondersteuningsaanvragen doen. 
+####<a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Nadat de naam van de instelling Beperkingen instellen bij de apparaatinstellingen (alleen onder toezicht) is gewijzigd in Schermtijd (alleen onder toezicht), ziet u hier de ervaring voor apparaten onder toezicht (apparaten die zijn geregistreerd via de registratieprogramma’s van Apple): 
+
+Voor apparaten op iOS 11.4 en eerder: Deze instelling kan worden gebruikt om te voorkomen dat gebruikers zoals voorheen apparaatbeperkingen kunnen aanpassen. De ervaring zal voor eindgebruikers niet veranderen.
+ 
+Voor apparaten op iOS 12 en later: Eindgebruikers zien niet langer het tabblad Beperkingen onder Instellingen > Algemeen > Apparaatbeheer > Beheerprofiel > Beperkingen.
+In plaats daarvan wordt onderdeel van Instellingen > Algemeen > Schermtijd. Als u deze instelling naar Blokkeren configureert, kunnen gebruikers de Schermtijdinstellingen niet langer op hun apparaten wijzigen. Hieronder vallen ook inhouds- en privacybeperkingen.
+
+####<a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
+Werk de richtlijnen voor uw eindgebruikers bij om ze te informeren over de gewijzigde ervaring voor apparaten die zijn geüpgraded naar iOS 12 en latere versies.
 
 
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Om de Premier-ondersteuningservaring te blijven verbeteren, kunt u na eind januari geen ondersteuningsaanvragen meer doen in MPO.  Wanneer u dit toch probeert te doen, ziet u een prompt met een melding die u niet kunt sluiten en wordt u omgeleid naar Intune op Azure. Hier kunt u een ondersteuningsaanvraag maken die naar speciale Microsoft Ondersteuning voor Intune wordt doorgestuurd, zodat uw probleem zo snel mogelijk wordt gediagnosticeerd en opgelost. Ondersteuningsaanvragen die in de MPO-portal zijn gemaakt, kunnen niet worden weergegeven in Azure Portal. 
+###<a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>Geplande wijziging: Workflowwijzigingen voor iOS 12-registratie in Intune
+Apple heeft een aantal wijzigingen aangekondigd met betrekking tot iOS-apparaten die bij MDM-services (Mobile Device Management) worden geregistreerd. De wijziging zal waarschijnlijk worden doorgevoerd bij de iOS-release in het voorjaar van 2019, alsmede bij alle toekomstige iOS-releases.
 
-Azure Portal bevat een nieuwe ondersteuningservaring, zoals we onlangs hebben aangekondigd in MC171941. Meer informatie hierover vindt u op [https://aka.ms/new_support_experience](https://aka.ms/new_support_experience) en via de koppeling Aanvullende informatie.
+####<a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Als uw eindgebruikers hun apparaten in het voorjaar bijwerken naar deze nieuwe versie van iOS 12, moet u zich ervan bewust zijn dat er een aangepaste workflow is en dat ze extra stappen moeten uitvoeren om hun registratie bij Intune te voltooien. Zodra Apple deze wijzigingen introduceert, moeten eindgebruikers het volgende uitvoeren: •      Start het registratieproces in de Bedrijfsportal-app om een beheerprofiel te downloaden •      Ga naar Instellingen > Algemeen > Profielen •      Selecteer het juiste profiel en klik verder naar Installeren •      Ga terug naar de Bedrijfsportal om de registratie te voltooien 
 
-Als u hybride Mobile Device Management (hybride MDM) of gemeenschappelijk beheer gebruikt, kunt u MPO blijven gebruiken om ondersteuningsaanvragen voor ConfigMgr te maken. Gebruikt u echter Azure Portal om ondersteuningsaanvragen voor Intune te maken. Ter herinnering: hybride MDM wordt [afgeschreven](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures) en u moet de overstap naar Intune op Azure zo snel mogelijk inplannen. Zie voor meer informatie [Overstappen van hybride Mobile Device Management naar Intune op Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
+Op apparaten die al zijn geregistreerd en naar de nieuwe iOS-release zijn geüpgraded, heeft deze wijziging geen invloed, tenzij de registratie van deze apparaten ongedaan wordt gemaakt en ze opnieuw moeten worden geregistreerd.
+De registratie-ervaring op apparaten met iOS 12.1 of eerder wordt niet veranderd met deze nieuwe release van Apple.
 
-Let op: alleen gebruikers met de rol van algemene beheerder, Intune-servicebeheerder of serviceondersteuningsbeheerder mogen ondersteuningstickets maken in Azure Portal.
+####<a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
+Plan de upgrade van uw documentatie en de richtlijnen voor uw eindgebruikers. Informeer uw helpdesk over deze wijzigingen. We houden u op de hoogte via het Berichtencentrum en onze pagina Wat is er nieuw wanneer deze wijziging beschikbaar is.
 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
-- Beëindig het gebruik van MPO en gebruik Intune op Azure om al uw Intune-ondersteuningsaanvragen te maken en te beheren.  
-- Informeer uw helpdesk en werk de documentatie waar nodig bij.
-- Als u gebruikers zonder de rol van algemene beheerder of Intune-servicebeheerder hebt die momenteel ondersteuningsaanvragen in MPO maken, wijst u de rol van serviceondersteuningsbeheerder aan ze toe in Azure Active Directory, zodat ze ondersteuningstickets kunnen blijven maken in Azure Portal.
+Klik op Extra informatie voor een ondersteuningsblogpost met schermopnamen en een video met het verwachte registratieproces.
 
-#### <a name="additional-information"></a>Als u meer informatie
-[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+####<a name="additional-information"></a>Als u meer informatie
+https://aka.ms/iOS_enrollment_changes
 
 ### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Geplande wijziging: Update van de gebruikerservaring voor de iOS-bedrijfsportal-app van Intune
 Met trots kunnen we mededelen dat Intune binnenkort een geheel nieuwe gebruikerservaring biedt voor de iOS-bedrijfsportal-app. De startpagina is qua vormgeving geheel vernieuwd en bevat geavanceerde filters en snellere toegang tot apps en boeken.
@@ -1398,12 +1429,12 @@ U hoeft geen actie te ondernemen; deze wijzigingen zullen worden doorgevoerd in 
 
 
 ### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Geplande wijziging: Exchange Online naar Intune-connector zal niet meer beschikbaar zijn in Intune <!-- 3105122 -->
-Ter vereenvoudiging van uw ervaring met Exchange Online en voorwaardelijke toegang schakelen we de service-to-service-connector-connector voor Exchange Online naar Intune uit. Deze wijziging gaat van start bij de service-update van december en is bij de service-update van februari 2019 voltooid.
+Ter vereenvoudiging van uw ervaring met Exchange Online en voorwaardelijke toegang schakelen we de service-to-service-connector-connector voor Exchange Online naar Intune uit.
 
 #### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-U ontvangt dit bericht omdat u volgens onze registratie de service-to-service-connector mogelijk in uw omgeving gebruikt. De service-to-service-connector ondersteunt Intune-beheer van Exchange Active Sync Only-apparaten voor Exchange Online en ondersteunt geen on-premises infrastructuur. Het lijkt, vanwege de weergave van de console, alsof deze connector nodig is voor voorwaardelijke toegang, terwijl dat niet zo is. Bij de update van december voor de Intune-service schakelen we de knop uit om nieuwe connectors in te stellen, zodat dit ook in de console duidelijk is. Vanaf februari 2019 worden vervolgens alle bestaande Exchange Online naar Intune-connectors uitgeschakeld.
+U ontvangt dit bericht omdat u volgens onze registratie de service-to-service-connector mogelijk in uw omgeving gebruikt. De service-to-service-connector ondersteunt Intune-beheer van Exchange Active Sync Only-apparaten voor Exchange Online en ondersteunt geen on-premises infrastructuur. Het lijkt, vanwege de weergave van de console, alsof deze connector nodig is voor voorwaardelijke toegang, terwijl dat niet zo is. Bij de update van februari voor de Intune-service schakelen we de knop uit om nieuwe connectors in te stellen, zodat dit ook in de console duidelijk is. Vanaf maart 2019 worden vervolgens alle bestaande Exchange Online naar Intune-connectors uitgeschakeld.
 
-Als u deze connectors gebruikt in uw omgeving, kunt u Exchange Active Sync Only-apparaten in Intune niet bewaken of wissen nadat de connectors in februari zijn uitgeschakeld. Er worden tijdens deze wijzigingen geen gevolgen verwacht voor uw eindgebruikers.
+Als u deze connectors gebruikt in uw omgeving, kunt u Exchange Active Sync Only-apparaten in Intune niet bewaken of wissen nadat de connectors in maart zijn uitgeschakeld. Er worden tijdens deze wijzigingen geen gevolgen verwacht voor uw eindgebruikers.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
 

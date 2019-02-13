@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: a5a756cd3fd8b78893cee6a3c4629e49d6ac7c87
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 8656e480c292fc9ed1212f9d2c180b791cb4f94c
+ms.sourcegitcommit: ce76541ceb783eb2e242032ef8579041d2f61532
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072538"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431487"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>Instellingen van apparaatfuncties voor iOS in Intune
 
@@ -39,7 +39,7 @@ Met deze functie kunnen iOS-gebruikers afdrukken naar bekende AirPrint-printers.
 
     - **IP-adres**: voer het IPv4- of IPv6-adres van de printer in. Als u hostnamen gebruikt om printers te identificeren, krijgt u het IP-adres door de printer in de terminal te pingen. In [Haal het IP-adres en het pad op](#get-the-ip-address-and-path) (in dit artikel) vindt u meer informatie.
     - **Pad**: het pad is doorgaans `ipp/print` voor printers in uw netwerk. In [Haal het IP-adres en het pad op](#get-the-ip-address-and-path) (in dit artikel) vindt u meer informatie.
-    - **Poort**: voer de luisterpoort van de AirPrint-bestemming in. Als u deze eigenschap leeg laat, maakt AirPrint gebruik van de standaardpoort. Beschikbaar in iOS 11.0 en hoger.
+    - **Poort**: Voer de luisterpoort van de AirPrint-bestemming in. Als u deze eigenschap leeg laat, maakt AirPrint gebruik van de standaardpoort. Beschikbaar in iOS 11.0 en hoger.
     - **TLS**: Kies **Inschakelen** voor het beveiligen van AirPrint-verbindingen met Transport Layer Security (TLS). Beschikbaar in iOS 11.0 en hoger.
 
 2. Selecteer **Toevoegen**. De AirPrint-server is toegevoegd aan de lijst. U kunt veel AirPrint-servers toevoegen.
@@ -177,16 +177,23 @@ Kies hoe apps die op een iOS-apparaat zijn geïnstalleerd meldingen verzenden. D
 
 Gebruik deze instellingen om een aangepast bericht of aangepaste tekst in het aanmeldingsvenster en vergrendelingsscherm weer te geven. U kunt bijvoorbeeld een bericht weergeven met de tekst 'Indien gevonden, graag contact opnemen met...' en informatie over de assettag. 
 
-Deze instellingen bieden ondersteuning voor apparaten onder supervisie waarop iOS 9.3 of hoger wordt uitgevoerd.
+Deze functie ondersteunt apparaten onder toezicht waarop het volgende wordt uitgevoerd:
 
-1. Selecteer in **Instellingen** de optie **Configuratie van gedeelde apparaten (alleen onder supervisie)**.
+- iOS 9.3 en hoger
+
+1. Ga naar **Instellingen** en selecteer **Bericht voor vergrendelingsscherm (alleen onder supervisie)**.
 2. Voer de volgende instellingen in:
 
-    - **Informatie over de assettag**: Voer informatie over de assettag van het apparaat in. Voer bijvoorbeeld `Owned by Contoso Corp` in. 
+    - **Informatie over de assettag**: Voer informatie over de assettag van het apparaat in. Voer bijvoorbeeld `Owned by Contoso Corp` of `Serial Number: {{serialnumber}}` in. 
 
       De tekst die u opgeeft, wordt weergegeven in het aanmeldingsvenster en het vergrendelingsscherm van het apparaat.
 
-    - **Voetnoot voor vergrendelingsscherm**: Voer een opmerking in waarmee u het apparaat wellicht kunt terugkrijgen als het verloren of gestolen is. Voer bijvoorbeeld iets in zoals `If found, call Contoso at ...`.
+    - **Voetnoot voor vergrendelingsscherm**: Voer een opmerking in waarmee u het apparaat wellicht kunt terugkrijgen als het verloren of gestolen is. U kunt elke gewenste tekst invoeren. Voer bijvoorbeeld iets in zoals `If found, call Contoso at ...`.
+
+    Apparaattokens kunnen ook worden gebruikt om apparaatspecifieke informatie aan deze velden toe te voegen. Als u bijvoorbeeld het serienummer wilt weergeven, voert u `Serial Number: {{serialnumber}}` in. De tekst die in het vergrendelingsscherm wordt weergegeven, is vergelijkbaar met `Serial Number 123456789ABC`. Wanneer u variabelen opgeeft, moet u ervoor zorgen dat u accolades `{{ }}` gebruikt. [App-configuratietokens](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) bevat een lijst met variabelen die kunnen worden gebruikt. U kunt ook `deviceName` of een andere apparaatspecifieke waarde gebruiken.
+
+    > [!NOTE]
+    > Variabelen worden niet gevalideerd in de gebruikersinterface. Hierdoor ziet u mogelijk profielen die met onjuiste invoer zijn opgeslagen. Als u bijvoorbeeld `{{Devicename}}` invoert in plaats van `{{devicename}}`, wordt de letterlijke tekenreeks weergegeven in plaats van de unieke naam van het apparaat.
 
 3. Wanneer u klaart bent, selecteert u **OK** om uw wijzigingen op te slaan.
 
@@ -279,6 +286,8 @@ Deze instellingen bepalen browsertoegang tot URL's op iOS-apparaten.
 ## <a name="wallpaper-settings"></a>Achtergrondinstellingen
 
 Een aangepaste PNG-, JPG- of JPEG-afbeelding toevoegen aan uw onder supervisie staande iOS-apparaten. Gebruik bijvoorbeeld een bedrijfslogo gebruiken op het vergrendelingsscherm.
+
+Mogelijk ervaart u onverwacht gedrag wanneer een profiel zonder afbeelding wordt toegewezen aan apparaten met een bestaande afbeelding. U maakt bijvoorbeeld een profiel zonder afbeelding. Dit profiel wordt toegewezen aan apparaten die al een afbeelding hebben. In dit scenario kan de afbeelding worden gewijzigd in de standaardinstelling van het apparaat of de oorspronkelijke afbeelding blijft op het apparaat staan. Dit gedrag wordt geregeld en beperkt door het MDM-platform van Apple.
 
 - **Weergavelocatie voor achtergrond**: kies een locatie op het apparaat om de afbeelding weer te geven. Uw opties zijn:
   - **Niet geconfigureerd**: er is geen aangepaste afbeelding toegevoegd aan het apparaat. Het apparaat gebruikt de standaardinstelling van het besturingssysteem.

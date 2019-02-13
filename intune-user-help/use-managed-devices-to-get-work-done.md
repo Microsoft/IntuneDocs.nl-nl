@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 44aad280f0b8714adbb3c8a1e109b68a5af46d4d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203142"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838832"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>Beheerde apparaten gebruiken om toegang te krijgen tot werk- of schoolresources
 Microsoft Intune is een apparaatbeheersysteem waarmee organisaties de toegang tot apparaten, apps en e-mail beheren. Met apparaatbeheer hebt u, evenals andere werknemers en studenten vrijwel overal en op vrijwel elk apparaat toegang tot uw werkgegevens. Zelfs wanneer u extern werkt, blijft de informatie van u en uw organisatie beveiligd.
@@ -39,16 +40,9 @@ U verkrijgt Bedrijfsportal als volgt:
 - Door naar de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) te gaan die door het ondersteuningsteam van uw bedrijf is ingesteld.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Wat is het verschil tussen de app en de website?
-Er zijn enkele kleine verschillen tussen de bedrijfsportal-app en de bedrijfsportalwebsite, maar u kunt de meeste taken via beide uitvoeren. Taken die u kunt uitvoeren:
+Elke Bedrijfsportal-app voor Windows 10, iOS, macOS en Android kan naadloos met het respectievelijke platform van uw apparaat worden geïntegreerd. De website is vanaf elk apparaat toegankelijk en biedt u dezelfde, universele ervaring, ongeacht welk apparaat u gebruikt. 
 
-- Apparaten registreren voor beheer
-- De status van uw apparaten weergeven
-- Aanbevolen en vereiste apps voor uw organisatie downloaden
-- Naam van uw apparaat wijzigen
-- De pincode of het wachtwoord van het apparaat opnieuw instellen
-- Contact opnemen met uw IT-afdeling voor ondersteuning
-
-Als u wilt weten wat u met de bedrijfsportalwebsite en de bedrijfsportal-app op uw apparaat kunt doen, kiest u een van de volgende koppelingen:
+Specifieke instructies voor de Bedrijfsportal voor uw platform, te beginnen met de registratiestappen, vindt u in Bedrijfsportal onder de volgende koppelingen:  
 
 - [Uw Android-apparaat gebruiken](using-your-android-device-with-intune.md)
 - [Uw iOS-apparaat gebruiken](using-your-ios-device-with-intune.md)

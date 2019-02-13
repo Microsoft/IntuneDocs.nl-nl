@@ -2,8 +2,8 @@
 title: iOS-software-updatebeleid configureren in Microsoft Intune - Azure | Microsoft Docs
 description: Maak of voeg in Microsoft Intune configuratiebeleid toe om beperkingen in te stellen wanneer software-updates automatisch worden geïnstalleerd op iOS-apparaten die door Intune worden beheerd of onder supervisie staan van Intune. U kunt de datum en tijd kiezen wanneer updates niet worden geïnstalleerd. U kunt dit beleid ook toewijzen aan groepen, gebruikers of apparaten en controleren op eventuele fouten bij de installatie.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 10/11/2018
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 search.appverid: MET150
-ms.openlocfilehash: 61bd7d5cf40355536aa7d5c361a771ce2b4f30ec
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d73dc96c966b93f26269cc53527a787824c94d3b
+ms.sourcegitcommit: 00fe2b601e3becbe5d644fcbd35a706da3b43af2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189874"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55652626"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>iOS-updatebeleid in Intune configureren
 
@@ -33,7 +33,10 @@ Deze functie biedt ondersteuning voor apparaten met iOS 10.3 en latere versies. 
 4. Geef een naam en beschrijving op voor het beleid.
 5. Selecteer **Instellingen**. 
 
-    Voer de details in voor het geval waarbij iOS-apparaten niet worden gedwongen de meest recente update te installeren. Deze instellingen zorgen voor een beperkte tijdsperiode. U kunt de **dagen** van de week, de **tijdzone**, de **begintijd** en de **eindtijd** configureren, en instellen of u wel of niet **de zichtbaarheid van de software-update wilt vertragen (dagen)** om gebruikers in te voeren. U kunt een vertragingsbereik van software-updates selecteren van 1 tot 90 dagen. Als u geen vertraging van software-update wilt instellen, geeft u 0 op. Deze update-instellingen zijn alleen van toepassing op iOS-apparaten die onder supervisie staan.
+    Voer de details in voor het geval waarbij iOS-apparaten niet worden gedwongen de meest recente update te installeren. Deze instellingen zorgen voor een beperkte tijdsperiode. U kunt de **dagen** van de week, de **tijdzone**, de **begintijd** en de **eindtijd** configureren, en instellen of u wel of niet **de zichtbaarheid van de software-update wilt vertragen (dagen)** om gebruikers in te voeren. U kunt een vertragingsbereik van software-updates selecteren van 1 tot 90 dagen. Wanneer de vertraging verloopt, krijgen gebruikers een melding om een update uit te voeren naar de vroegste versie van het besturingssysteem die beschikbaar was toen de vertraging werd geactiveerd. Als u geen vertraging van software-update wilt instellen, geeft u 0 op. Deze update-instellingen zijn alleen van toepassing op iOS-apparaten die onder supervisie staan.
+  
+    Als bijvoorbeeld iOS 12.a beschikbaar is op **1 januari** en u **Updates besturingssysteem vertragen** hebt ingesteld op **5 dagen**, dan wordt die specifieke versie niet als een beschikbare update weergegeven op apparaten van eindgebruikers die aan dat profiel zijn toegewezen. Op de **zesde dag** na de release wordt die update als beschikbaar weergegeven en mogen alle eindgebruikers een update starten.
+
 
 6. Selecteer **OK** om uw wijzigingen op te slaan. Selecteer **Maken** om het beleid te maken.
 
@@ -44,7 +47,7 @@ Het profiel wordt gemaakt en wordt weergegeven in de lijst met beleidsregels. Ap
 1. Selecteer in **Software-updates** **Beleidsregels voor iOS bijwerken**.
 2. Kies een bestaand beleid > **Eigenschappen**.
 3. De tijd met beperkingen bijwerken:
-
+    
     1. De dagen van de week kiezen
     2. De tijdzone kiezen waarin dit beleid wordt toegepast
     3. De begin- en eindtijd opgeven voor niet-toegestane uren
