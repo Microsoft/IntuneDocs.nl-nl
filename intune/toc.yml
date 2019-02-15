@@ -65,6 +65,8 @@ items:
     href: common-scenarios.md
   - name: Beslissingen voor de technologie voor BYOD met EMS
     href: byod-technology-decisions.md
+  - name: Beleid voor app-beveiliging en werkprofielen (Android)
+    href: android-deployment-scenarios-app-protection-work-profiles.md
   - name: Versies van besturingssystemen beheren
     href: manage-os-versions.md
   - name: Windows Holographic beheren
@@ -227,6 +229,45 @@ items:
       href: enrollment-report-company-portal-abandon.md
     - name: Hoe los ik problemen met de inschrijving van apparaten op?
       href: troubleshoot-device-enrollment-in-intune.md
+  - name: Beheer apparaten
+    href: device-management.md
+    items:
+    - name: Mogelijkheden voor apparaatbeheer
+      href: device-management-capabilities.md
+    - name: Activeringsvergrendeling overslaan
+      href: device-activation-lock-bypass.md
+    - name: Nieuwe start van Windows beheren
+      href: device-fresh-start.md
+    - name: Verloren iOS-apparaat zoeken
+      href: device-locate.md
+    - name: Modus Apparaat verloren voor iOS inschakelen
+      href: device-lost-mode.md
+    - name: Supervisiemodus voor iOS inschakelen
+      href: device-supervised-mode.md
+    - name: Apparaat vergrendelen
+      href: device-remote-lock.md
+    - name: Wachtwoordcode opnieuw instellen
+      href: device-passcode-reset.md
+    - name: Apparaat opnieuw opstarten
+      href: device-restart.md
+    - name: Huidige gebruiker afmelden
+      href: device-logout-user.md
+    - name: Gebruiker verwijderen
+      href: device-remove-user.md
+    - name: Apparaat wissen
+      href: device-erase.md
+    - name: Extern beheer van mobiele apparaten
+      href: device-profile-android-teamviewer.md
+    - name: Windows 10-pincode opnieuw instellen
+      href: device-windows-pin-reset.md
+    - name: Exchange-serviceconnector installeren
+      href: exchange-service-connector-configure.md
+    - name: Apparaat synchroniseren
+      href: device-sync.md
+    - name: Inventaris van mobiele apparaten controleren
+      href: device-inventory.md
+    - name: Apparaten verwijderen
+      href: devices-wipe.md
   - name: Apparaatcompatibiliteit instellen
     items:
     - name: Nalevingsoverzicht
@@ -957,9 +998,9 @@ items:
       href: data-outside-protect.md
     - name: Gegevenslekken op niet-beheerde apparaten voorkomen
       href: data-leak-prevention.md
-ms.openlocfilehash: ace0bec62318d846cdcc37330abb63b2a89fef14
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986906"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302197"
