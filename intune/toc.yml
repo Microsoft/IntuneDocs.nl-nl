@@ -372,7 +372,8 @@ items:
       - name: Exchange On-Premises Connector installeren
         href: exchange-connector-install.md
       - name: Maken en toewijzen van beleid voor voorwaardelijke toegang
-        href: conditional-access-exchange-create.md
+      - name: Beleid voor voorwaardelijke toegang op basis van het apparaat
+        href: create-conditional-access-intune.md
       - name: Beleid voor voorwaardelijke toegang overbrengen vanuit de klassieke Intune-portal
         href: conditional-access-intune-reassign.md
       - name: Voorwaardelijke toegang op basis van apps
@@ -998,9 +999,9 @@ items:
       href: data-outside-protect.md
     - name: Gegevenslekken op niet-beheerde apparaten voorkomen
       href: data-leak-prevention.md
-ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 1183db94d839619e1130261345f6988a627938bb
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302197"
+ms.locfileid: "56307852"
