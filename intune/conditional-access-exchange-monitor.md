@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 951db22026725c2ec2e9c2be340bcccd44b2528b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 383370aaaca10cb44b614be6e250218106406cb4
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848097"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307750"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>De naleving van voorwaardelijke toegang in Intune controleren voor Exchange On-Premises en Exchange Online
 
-Vanaf versie Intune 1704 kunnen beheerders rapportagegegevens weergeven met betrekking tot Exchange ActiveSync-apparaatrecords die zijn gesynchroniseerd met Intune via on-premises Exchange Connector of Intune Service to Service Connector (Exchange Online-connector). De nalevingsrapportage van voorwaardelijke toegang biedt een overzicht van apparaten met verschillende synchronisatiestatussen:
+Vanaf versie Intune 1704 kunnen beheerders informatie weergeven met betrekking tot Exchange ActiveSync-apparaatrecords die zijn gesynchroniseerd met Intune via de on-premises Exchange-connector of de Intune Service to Service Connector (Exchange Online-connector). De nalevingsrapporten van voorwaardelijke toegang biedt een overzicht van apparaten met verschillende synchronisatiestatussen:
 
 -   **Toestaan**
 
@@ -38,9 +38,9 @@ Vanaf versie Intune 1704 kunnen beheerders rapportagegegevens weergeven met betr
 
 2.  Nadat u zich hebt aangemeld, ziet u het **Azure-dashboard**.
 
-3.  Kies  **Alle services**  in het linkermenu en typ dan  **Intune**  in het filtertekstvak.
+3.  Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
 
-4.  Kies  **Intune**. Vervolgens ziet u het **Intune-dashboard**.
+4.  Kies **Intune**. Vervolgens ziet u het **Intune-Dashboard**.
 
 5.  Kies **Voorwaardelijke toegang** en kies vervolgens **Overzicht**.
 
