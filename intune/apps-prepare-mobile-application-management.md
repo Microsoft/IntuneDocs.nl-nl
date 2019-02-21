@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834769"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325432"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Line-of-business-apps voorbereiden voor app-beveiligingsbeleid
 
@@ -87,7 +87,6 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |App mag gegevens ontvangen van andere apps|X|X|
 |Knippen, kopiëren en plakken met andere apps beperken|X|X|
 |Eenvoudige pincode vereisen voor toegang|X|X|
-|De in de app ingebouwde pincode vervangen door de pincode van Intune|X||
 |Het aantal pogingen opgeven voordat de pincode opnieuw wordt ingesteld|X|X|
 |Vingerafdruk in plaats van pincode toestaan|X|X|
 |Gezichtsherkenning toestaan in plaats van pincode (alleen iOS)|X|X|
@@ -98,8 +97,8 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |De offlinerespijtperiode opgeven|X|X|
 |Schermafbeeldingen maken blokkeren (alleen Android)|X|X|
 |Ondersteuning van MAM zonder apparaatinschrijving|X|X|
-|Volledig wissen|X|X|
-|Selectief wissen <br><br>**Opmerking:** Bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
+|Volledig wissen van app-gegevens|X|X|
+|Selectief wissen van werk- en schoolgegevens in scenario's met meerdere identiteiten <br><br>**Opmerking:** Bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
 |'Opslaan als' voorkomen|X||
 |Configuratie van doeltoepassingen|X||
 |Ondersteuning voor meerdere identiteiten|X||

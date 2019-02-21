@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 444fd63f8c582d35891dfa5aedb9eadd6626e541
-ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55303392"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302180"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-scripts in Intune beheren voor Windows 10-apparaten
 
@@ -30,9 +31,9 @@ Gebruik de Intune-beheeruitbreiding om PowerShell-scripts te uploaden in Intune 
 
 Computergebruik door de eindgebruiker ondergaat een digitale transformatie. Klassieke, traditionele IT richt zich op een platform voor een enkel apparaat, apparaten in bedrijfseigendom, gebruikers die vanuit hun kantoor werken en tal van handmatige, reactieve IT-processen. Op de moderne werkplek worden vele platformen gebruikt die in eigendom zijn van de gebruiker en het bedrijf. De moderne werkplek maakt mogelijk dat gebruikers vanuit elke locatie kunnen werken en voorziet in geautomatiseerde en proactieve IT-processen.
 
-Met MDM-services, zoals Microsoft Intune, kunt u mobiele en desktop-apparaten met Windows 10 beheren. De ingebouwde Windows 10-beheerclient communiceert met Intune voor de uitvoering van bedrijfsbeheertaken. Er zijn enkele taken die u misschien nodig hebt, zoals geavanceerde apparaatconfiguratie, probleemoplossing en het beheer van verouderde Win32-apps die momenteel niet beschikbaar zijn in Windows 10-MDM. Voor deze taken kunt u de Intune-softwareclient uitvoeren op uw Windows 10-apparaten. [Het beheer van Windows-pc's als computers of mobiele apparaten vergelijken](pc-management-comparison.md) is een goede informatiebron.
+Met MDM-services, zoals Microsoft Intune, kunt u mobiele en desktop-apparaten met Windows 10 beheren. De ingebouwde Windows 10-beheerclient communiceert met Intune voor de uitvoering van bedrijfsbeheertaken. Er zijn enkele taken die u mogelijk nodig hebt, zoals geavanceerde apparaatconfiguratie en probleemoplossing. Voor Win32-app-beheer gebruikt u de functie [Win32-app-beheer](apps-win32-app-management.md) op uw Windows 10-apparaten.
 
-De Intune-beheeruitbreiding is een aanvulling op de meegeleverde Windows 10-MDM-functies. U kunt PowerShell-scripts maken die u kunt uitvoeren op Windows 10-apparaten. U kunt bijvoorbeeld een PowerShell-script maken dat een verouderde Win32-app installeert, het script uploadt naar Intune, het script toewijst aan een Azure Active Directory (AD) en het script uitvoert. Vervolgens kunt u de uitvoeringsstatus van het script van het begin tot het eind controleren.
+De Intune-beheeruitbreiding is een aanvulling op de meegeleverde Windows 10-MDM-functies. U kunt PowerShell-scripts maken die u kunt uitvoeren op Windows 10-apparaten. U kunt bijvoorbeeld een PowerShell-script maken dat geavanceerde apparaatconfiguraties uitvoert, het script uploadt naar Intune, het script toewijst aan een AD-groep (Azure Active Directory) en het script uitvoert. Vervolgens kunt u de uitvoeringsstatus van het script van het begin tot het eind controleren.
 
 ## <a name="prerequisites"></a>Vereisten
 
@@ -46,7 +47,7 @@ De Intune-beheeruitbreiding heeft de volgende vereisten:
 
 1. Selecteer in de [Azure-portal](https://portal.azure.com) **Alle services** > filter op **Intune** en selecteer **Microsoft Intune**.
 2. Selecteer **Apparaatconfiguratie** > **PowerShell-scripts** > **Toevoegen**.
-3. Voer een **naam** en **beschrijving** in voor het PowerShell-abonnement. Blader voor de **Scriptlocatie** naar het PowerShell-script. Het script moet kleiner zijn dan 200 KB (ASCII) of 100 KB (Unicode).
+3. Voer een **naam** en **beschrijving** in voor het PowerShell-abonnement. Blader voor de **Scriptlocatie** naar het PowerShell-script. Het script mag niet groter zijn dan 200 KB.
 4. Kies **Configureren**. Kies vervolgens of het script wel of niet met de referenties van de gebruiker op het apparaat moet worden uitgevoerd (**Ja**) of systeemcontext (**Nee**). Het script wordt standaard uitgevoerd in de systeemcontext. Selecteer **Ja** tenzij het noodzakelijk is dat het script wordt uitgevoerd in de systeemcontext. 
   ![Het deelvenster PowerShell-script toevoegen](./media/mgmt-extension-add-script.png)
 5. Kies of het script moet worden ondertekend door een vertrouwde uitgever (**Ja**). Standaard hoeft het script niet te worden ondertekend. 

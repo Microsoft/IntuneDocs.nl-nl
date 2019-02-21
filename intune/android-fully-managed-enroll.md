@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a730dbb702286f71534623b2c08da6b388c3e499
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 482ae185f221b3ff77534c1cfd8cccd8278965b7
+ms.sourcegitcommit: 84ab7a49aad853591a4ae362382f293e29b360df
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835840"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156165"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Intune-inschrijving van volledig beheerde Android-apparaten instellen (preview)
 
@@ -35,7 +35,7 @@ Intune helpt bij het implementeren van apps en het opgeven van instellingen voor
 
 ## <a name="technical-requirements"></a>Technische vereisten
 
-U hebt een zelfstandige Intune-tenant nodig om volledig beheerde Android-apparaten te beheren. Volledig beheerd apparaatbeheer is niet beschikbaar in de hybride modus (verbonden met SSCM) of in de verouderde Silverlight-beheerconsole.
+U hebt een zelfstandige Intune-tenant nodig om volledig beheerde Android-apparaten te beheren. Het beheer van volledig beheerde apparaten is niet beschikbaar in de hybride modus (verbonden met SSCM) of in de verouderde Silverlight-beheerconsole.
 
 Apparaten moeten voldoen aan de volgende vereisten om te worden beheerd als een volledig beheerd Android-apparaat:
 

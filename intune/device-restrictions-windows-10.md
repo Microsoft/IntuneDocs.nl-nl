@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230117"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307886"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -70,6 +71,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Microsoft-account**: Hiermee staat u toe dat de gebruiker een Microsoft-account aan het apparaat kan koppelen.
 - **Niet-Microsoft-account**: Hiermee staat u toe dat gebruikers aan het apparaat e-mailaccounts kunnen toevoegen die niet aan een Microsoft-account zijn gekoppeld.
 - **Synchronisatie van instellingen voor Microsoft-accounts**: Hiermee staat u synchronisatie tussen apparaten toe van apparaat- en app-instellingen die aan een Microsoft-account zijn gekoppeld.
+- **Aanmeldhulp voor Microsoft-account toestaan**: Kies **Uitschakelen** om te voorkomen dat eindgebruikers de Microsoft-aanmeldhulp (wlidsvc) beheren, en de service bijvoorbeeld handmatig stoppen of starten. Als dit is ingesteld op **Niet geconfigureerd**, gebruikt de NT-service wlidsvc de standaardinstelling van het besturingssysteem, die eindgebruikers kan toestaan de service te starten en te stoppen. Deze service wordt door het besturingssysteem gebruikt om gebruikers zich te laten aanmelden bij hun Microsoft-account.
 
 ## <a name="cloud-printer"></a>Cloudprinter
 
@@ -136,6 +138,10 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Werkruimte van Windows Ink**: Hiermee voorkomt u dat gebruikers toegang hebben tot de werkruimte van Windows Ink. Als dit is ingesteld op **Niet geconfigureerd**, wordt de Ink-werkruimte ingeschakeld (de functie wordt ingeschakeld) en mag de gebruiker deze gebruiken boven het vergrendelingsscherm.
 - **Automatisch opnieuw implementeren**: Met deze instelling kunnen gebruikers met beheerdersrechten alle gebruikersgegevens en -instellingen verwijderen met **CTRL+Win+R** op het vergrendelingsscherm van het apparaat. Het apparaat wordt automatisch opnieuw geconfigureerd en opnieuw ingeschreven bij het beheer.
 - **Gebruikers verplichten om verbinding te maken met het netwerk tijdens de configuratie van het apparaat (alleen Windows Insider)**: Kies **Vereisen**, zodat het apparaat verbinding maakt met een netwerk alvorens verder te gaan na de netwerkpagina tijdens de installatie van Windows 10. Hoewel deze functie nog in preview is, moet deze instelling worden gebruikt door een Windows Insider build 1809 of hoger.
+- **Directe geheugentoegang**: **Blokkeren** blokkeert directe geheugentoegang (DMA) voor alle downstream hot-pluggable PCI-poorten totdat een gebruiker zich bij Windows aanmeldt. **Ingeschakeld** (standaard) staat toegang tot DMA toe, zelfs wanneer een gebruiker niet is aangemeld.
+
+  CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+
 - **Processen in Taakbeheer beëindigen**: Met deze instelling bepaalt u of niet-beheerders Taakbeheer kunnen gebruiken om taken te beëindigen. Met **Blokkeren** voorkomt u dat standaardgebruikers (niet-beheerders) processen of taken op het apparaat kunnen beëindigen met behulp van Taakbeheer. Met **Niet geconfigureerd** (standaard) kunnen standaardgebruikers processen of taken beëindigen met behulp van Taakbeheer.
 
 ## <a name="kiosk-preview---obsolete"></a>Kiosk (preview) - verouderd
@@ -192,7 +198,7 @@ Gebruik de knop **Toevoegen** om een kioskconfiguratie te maken (of een bestaand
 ## <a name="locked-screen-experience"></a>Vergrendeld scherm
 
 - **Meldingen van het Actiecentrum (alleen mobiel)**: Hiermee kunt u meldingen van het Actiecentrum op het vergrendelingsscherm van het apparaat weergeven (alleen Windows 10 Mobile).
-- **Afbeeldings-URL vergrendelingsscherm (alleen desktop)**: Voer de URL in van een afbeelding in JPEG-indeling die wordt gebruikt als achtergrond van het Windows-vergrendelingsscherm. Gebruikers kunnen deze instelling niet wijzigen.
+- **Afbeeldings-URL vergrendelingsscherm (alleen desktop)**: Voer de URL in van een afbeelding in JPEG-indeling die wordt gebruikt als achtergrond van het Windows-vergrendelingsscherm. Door deze instelling wordt de afbeelding vergrendeld. De afbeelding kan later niet worden gewijzigd.
 - **Time-out van het scherm die door de gebruiker kan worden ingesteld (alleen mobiel)**: Hiermee kunnen gebruikers de tijd configureren 
 - **Cortana op vergrendeld scherm (alleen desktop)**: Geef de gebruiker geen toestemming voor interactie met Cortana wanneer het vergrendelingsscherm wordt weergegeven op het apparaat (alleen Windows 10 voor desktops).
 - **Pop-upmeldingen op vergrendeld scherm**: Blokkeer waarschuwingsberichten op het vergrendelingsscherm van het apparaat.
@@ -313,7 +319,6 @@ Gebruik de knop **Toevoegen** om een kioskconfiguratie te maken (of een bestaand
   - **Wachtwoorden niet opnieuw gebruiken**: Hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.
   - **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status (alleen mobiel)**: Hiermee geeft u aan dat de gebruiker een wachtwoord moet opgeven om het apparaat te ontgrendelen (alleen Windows 10 Mobile).
   - **Eenvoudige wachtwoorden**: Hiermee kunt u instellen dat eenvoudige wachtwoorden zijn toegestaan, zoals 1111 en 1234. Met deze instelling kunt u ook het gebruik van afbeeldingswachtwoorden toestaan of blokkeren.
-- **Versleuteling**: Hiermee schakelt u versleuteling op doelapparaten in.
 
 ## <a name="per-app-privacy-exceptions"></a>Privacy-uitzonderingen per app
 

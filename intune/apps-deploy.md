@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6b0c2bff4051a1adba1a68f38d8f0a9b80b914b4
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838764"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240058"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Apps toewijzen aan groepen met Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Nadat u [een app hebt toegevoegd](apps-add.md) aan Microsoft Intune, kunt u de app toewijzen aan gebruikers en apparaten. Het is belangrijk dat u weet dat u een app kunt toewijzen aan een apparaat, ongeacht of het apparaat wordt beheerd in Intune. 
+Nadat u [een app hebt toegevoegd](apps-add.md) aan Microsoft Intune, kunt u de app toewijzen aan gebruikers en apparaten. Het is belangrijk dat u weet dat u een app kunt toewijzen aan een apparaat, ongeacht of het apparaat wordt beheerd in Intune.
 
 > [!NOTE]
 > De Beschikbare implementatie-opzet wordt niet ondersteund voor apparaatgroepen. Alleen gebruikersgroepen worden ondersteund.
@@ -124,8 +124,19 @@ Soms wordt dezelfde app aan meerdere groepen toegewezen, maar met verschillende 
 > Alleen voor beheerde iOS Store-apps: wanneer u deze apps toevoegt in Microsoft Intune en toewijst als **Vereist**, worden de apps automatisch gemaakt met zowel de intentie **Vereist** als **Beschikbaar**.<br><br>
 > iOS Store-apps (geen iOS VPP-apps) die met de vereiste intentie worden benaderd, worden afgedwongen op het apparaat op het moment dat het apparaat incheckt en worden ook weergegeven in de bedrijfsportal-app.
 
-## <a name="android-enterprise-app-we-app-deployment"></a>Android Enterprise APP WE-app-implementatie
-Voor Android-apparaten in een niet-geregistreerd APP-WE-implementatiescenario (App Protection Policy Without Enrollment), gebruikt u de beheerde Google Play Store om store-apps en LOB-apps te implementeren bij gebruikers. In het bijzonder kunt u eindgebruikers voorzien van een app-catalogus en een installatie waarbij het niet langer nodig is dat eindgebruikers de beveiligingsstatus van hun apparaten versoepelen door installaties uit onbekende bronnen toe te staan. Bovendien biedt dit implementatiescenario een verbeterde eindgebruikerservaring. Zie [Een app toewijzen](apps-deploy.md#assign-an-app) voor de stappen om een app toe te wijzen.
+## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Implementatie van beheerde Google Play-apps op niet-beheerde apparaten
+Voor Android-apparaten in een niet-ingeschreven APP-WE-implementatiescenario (App Protection Policy Without Enrollment), kunt u de beheerde Google Play Store gebruiken om store-apps en LOB-apps (line-of-business) te implementeren bij gebruikers. Beheerde Google Play-apps met de instelling **Beschikbaar met of zonder inschrijving** worden weergegeven in de Play Store-app op het apparaat van de eindgebruiker en niet in de bedrijfsportal-app. De eindgebruiker kan vanuit de Google Play-app in apps bladeren en apps installeren die op deze manier zijn geïmplementeerd. Omdat de apps worden geïnstalleerd vanuit de beheerde Google Play Store, hoeft de eindgebruiker diens apparaatinstellingen niet te wijzigen om de installatie van apps uit onbekende bronnen toe te staan. Dit zorgt ervoor dat de apparaten beter beveiligd zijn. Als de app-ontwikkelaar een nieuwe versie van een app die op het apparaat van een gebruiker was geïnstalleerd, publiceert in de Play Store, wordt de app automatisch bijgewerkt door Google Play. 
+
+Stappen voor het toewijzen van beheerde Google Play-apps aan niet-beheerde apparaten:
+
+1. Verbind uw Intune-tenant met de beheerde Google Play Store. Als u dit al hebt gedaan om het Android Enterprise-werkprofiel, of toegewezen of volledig beheerde Android Enterprise-apparaten te beheren, hoeft u dit niet opnieuw te doen.
+2. Apps vanuit de beheerde Google Play Store toevoegen aan uw Intune-console.
+3. Toon beheerde Google Play-apps aan de gewenste gebruikersgroep als **Beschikbaar met of zonder inschrijving**. De instellingen **Vereist** en **Verwijderen** voor app-targeting worden niet ondersteund voor niet-ingeschreven apparaten.
+4. Een beveiligingsbeleid voor apps toewijzen aan de gebruikersgroep.
+5. De volgende keer dat de eindgebruiker de bedrijfsportal-app opent, ziet deze een bericht dat aangeeft dat er apps beschikbaar zijn in de Play Store-app.  Als de gebruiker op de melding tikt, wordt hij of zij rechtstreeks naar de Play-app geleid, waar zakelijke apps worden weergegeven. Ook kan de gebruiker afzonderlijk naar de Play Store-app navigeren.
+6. De eindgebruiker kan het contextmenu in de Play Store-app uitvouwen, en schakelen tussen diens persoonlijke Google-account (waar de persoonlijke apps te zien zijn) en werkaccount (waar store- en LOB-apps te zien zijn die op hem of haar zijn gericht). Eindgebruikers installeren de apps door in de Play Store-app op Installeren te tikken.
+
+Als er opdracht wordt gegeven voor selectieve verwijdering op basis van APP in de Intune-console, wordt het werkaccount automatisch verwijderd uit de Play Store-app en kan de eindgebruiker vanaf dat moment geen zakelijke apps meer zien in de catalogus van de Play Store-app. Wanneer het werkaccount van een apparaat wordt verwijderd, blijven de apps die vanuit de Play Store zijn geïnstalleerd, op het apparaat staan. Deze apps worden niet verwijderd. 
 
 ## <a name="next-steps"></a>Volgende stappen
 

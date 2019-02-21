@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08e6c7657eeba7a41b9927e736fe7f4fc07e25e6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a57dca7f6b817177cbd131e969c1b5aa52a248a8
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848573"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307767"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune
 
@@ -29,7 +29,8 @@ Met RBAC kunt u bepalen wie de verschillende Intune-taken binnen uw organisatie 
 
 - **Roldefinitie**: de naam van een rol, de resources die ermee worden beheerd en de machtigingen die voor elke resource worden toegewezen.
 - **Leden**: de gebruikersgroepen waaraan de machtigingen zijn toegewezen.
-- **Bereik**: de gebruikers- of apparaatgroepen die de leden kunnen beheren.
+- **Bereik (groepen)**: de gebruikers- of apparaatgroepen die de leden kunnen beheren.
+- **[Bereik (tags)](https://docs.microsoft.com/intune/scope-tags)**: Tags waarop de roltoewijzing van toepassing is.
 - **Toewijzing**: wanneer de definitie, leden en het bereik zijn geconfigureerd, wordt de rol toegewezen.
 
 ![Voorbeeld van Intune RBAC](./media/intune-rbac-1.PNG)
@@ -82,20 +83,22 @@ U kunt ingebouwde rollen toewijzen aan groepen zonder verdere configuratie. U ku
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Kies in het deelvenster **Intune** de optie **Rollen** > **Alle rollen**.
-4. Kies in het deelvenster **Intune-rollen - Alle rollen** de ingebouwde rol die u wilt toewijzen.
+3. Kies op de blade **Intune** voor de optie **Rollen** > **Alle rollen**.
+4. Kies op de blade **Intune-rollen - Alle rollen** voor de ingebouwde rol die u wilt toewijzen.
 
-5. Kies in het deelvenster <*Rolnaam*> - **Overzicht** de optie **Beheren** en vervolgens **Toewijzingen**.
+5. Kies **Beheren** > **Toewijzingen** op de blade <*rolnaam*> - **Overzicht**.
 
-6. Kies in het deelvenster voor aangepaste rollen de optie **Toewijzen**.
+6. Kies op de blade voor aangepaste rollen de optie **Toewijzen**.
 
-7. Voer in het deelvenster **Roltoewijzingen** een **naam** en desgewenst een **beschrijving** in voor de toewijzing.
+7. Voer op de blade **Roltoewijzingen** een **Toewijzingsnaam** en desgewenst een **Beschrijving van toewijzing** in voor de toewijzing.
 
-8. **Leden**: kies de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
+8. **Leden (groepen)**: kies de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
 
-9. **Bereik**: kies de groep met de gebruikers die het bovenstaande lid mogen beheren.
-<br></br>
-10. Als u klaar bent, kiest u **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
+9. **Bereik (groepen)**: kies de groep die de gebruikers bevat die het hierboven genoemde lid mag beheren.
+
+10. **Bereik (tags)**: kies de tags waarop deze roltoewijzing moet worden toegepast.
+
+11. Als u klaar bent, kiest u **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
 
 ### <a name="intune-rbac-table"></a>Intune RBAC-tabel
 
@@ -116,31 +119,21 @@ U kunt een aangepaste rol maken die alle machtigingen bevat die vereist zijn voo
 
 2. Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
 
-3. Kies **Intune** > **Rollen** > **Alle rollen** > **Aangepaste toevoegen**.
+3. Kies **Intune** > **Rollen** > **Alle rollen** > **Toevoegen**.
 
-4. Voer in het deelvenster **Aangepaste rol toevoegen** een naam en beschrijving in voor de nieuwe rol en klik vervolgens op **Machtigingen**.
+4. Voer op de blade **Aangepaste rol toevoegen** een naam en beschrijving in voor de nieuwe rol en klik vervolgens op **Machtigingen**.
 
-5. Kies in het deelvenster **Machtigingen** de machtigingen die u voor deze rol wilt gebruiken. Gebruik de [Intune RBAC-tabel](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) om te bepalen welke machtigingen u wilt toepassen.
+5. Kies op de blade **Machtigingen** de machtigingen die u voor deze rol wilt gebruiken. Gebruik de [Intune RBAC-tabel](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) om te bepalen welke machtigingen u wilt toepassen.
 
-6. Als u klaar bent, kiest u **OK**.
+6. Kies op de blade **Bereik (tags)** de tags waarop deze aangepaste rol moet worden toegepast.
 
-7. Klik in het deelvenster **Aangepaste rol toevoegen** op **Maken**. De nieuwe rol wordt weergegeven in de lijst in het deelvenster **Intune-rollen - Alle rollen**.
+7. Als u klaar bent, kiest u **OK**.
+
+7. Klik op de blade **Aangepaste rol toevoegen** op **Maken**. De nieuwe rol wordt weergegeven in de lijst op de blade **Intune-rollen - Alle rollen**.
 
 ### <a name="to-assign-a-custom-role"></a>Een aangepaste rol toewijzen
 
-1. Kies in het deelvenster **Intune-rollen - Alle rollen** de aangepaste rol die u wilt toewijzen.
-
-2. Kies in het deelvenster <*Rolnaam*> - **Overzicht** de optie **Beheren** en vervolgens **Toewijzingen**. In dit deelvenster kunt u ook bestaande rollen bewerken of verwijderen.
-
-3. Kies in het deelvenster voor aangepaste rollen de optie **Toewijzen**.
-
-4. Voer in het deelvenster **Roltoewijzingen** een **naam** en desgewenst een **beschrijving** in voor de toewijzing.
-
-5. **Leden**: kies de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
-
-6. **Bereik**: kies de groep met de gebruikers die het bovenstaande lid mogen beheren.
-
-7. Als u klaar bent, kiest u **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
+Volg dezelfde stappen als in [Een ingebouwde rol toewijzen](https://docs.microsoft.com/intune/role-based-access-control#to-assign-a-built-in-role) en selecteer de aangepaste rol.
 
 ## <a name="next-steps"></a>Volgende stappen
 

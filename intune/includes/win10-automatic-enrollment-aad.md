@@ -32,6 +32,9 @@ Met automatische inschrijving kunnen gebruikers hun Windows 10-apparaten inschri
       >
       > Voor zakelijke apparaten krijgt het MDM-gebruikersbereik voorrang als beide bereiken zijn ingeschakeld. De apparaten worden via MDM geregistreerd.
 
+   > [!NOTE]
+   > Het gebruikersbereik van MAM moet worden ingesteld op een gebruikersgroep of -verzameling.
+
    ![Schermopname van de Azure-portal](../media/auto-enroll-scope.png)
 
 5. Gebruik de standaardwaarden voor de volgende URL's:

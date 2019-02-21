@@ -16,12 +16,13 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 996b4d85da41b480d73d7a79011e2bbd732ea334
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f6d346d7f060b5e997577b09c3ee8b006843ab7b
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690832"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302231"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -240,10 +241,15 @@ In **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS** voor p
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Nieuwe instellingen voor meldingen, hints en keyguard voor Android Enterprise-apparaten in zakelijk eigendom <!-- 3201839 3201843 -->
 Deze update omvat verschillende nieuwe functies in Android Enterprise-apparaten wanneer deze worden uitgevoerd in zakelijk eigendom. Als u deze functies wilt gebruiken, gaat u naar **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > als **Platform** kiest u **Android Enterprise** > in **Profieltype** kiest u **Alleen zakelijk eigendom** > **Apparaatbeperkingen**.
+
 Nieuwe functies omvatten: 
-- Systeemmeldingen uitschakelen, waaronder binnenkomende oproepen, systeemwaarschuwingen, systeemfouten en meer
-- Suggestie om uitleg en hints over te slaan voor apps die voor de eerste keer worden gestart
-- Geavanceerde keyguard-instellingen, zoals de camera, meldingen, ontgrendelen met vingerafdruk, uitschakelen Als u de instellingen wilt weergeven, gaat u naar de [apparaatbeperkingsinstellingen voor Android Enterprise](device-restrictions-android-for-work.md).
+
+- Systeemmeldingen uitschakelen, waaronder binnenkomende oproepen, systeemwaarschuwingen, systeemfouten en meer.
+- Suggestie om zelfstudies en tips over te slaan voor apps die voor de eerste keer worden geopend.
+- Geavanceerde keyguard-instellingen uitschakelen, bijvoorbeeld de camera, meldingen, ontgrendelen met vingerafdruk en meer.
+
+
+Ga naar [Android Enterprise device restriction settings](device-restrictions-android-for-work.md) (Apparaatbeperkingsinstellingen voor Android Enterprise-apparaten) om de instellingen wilt bekijken.
 
 #### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Android Enterprise-apparaten in zakelijk eigendom kunnen AlwaysOn-VPN-verbindingen gebruiken <!-- 3202194 -->
 In deze update kunt u ingeschakelde VPN-verbindingen gebruiken op Android Enterprise-apparaten in zakelijk eigendom. Altijd ingeschakelde VPN-verbindingen blijven verbonden en maken direct opnieuw verbinding wanneer gebruikers hun apparaat ontgrendelen, het apparaat opnieuw wordt opgestart of het draadloze netwerk wordt gewijzigd. U kunt de verbinding ook in de vergrendelingsmodus zetten. Hiermee wordt al het netwerkverkeer geblokkeerd totdat de VPN-verbinding actief is.
@@ -282,7 +288,7 @@ Met de nieuwe ervaring kunt u uw probleem in uw eigen woorden beschrijven en inf
 ### <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Bereiktags voor apps <!-- 1081941 -->
-U kunt bereiktags maken om de toegang voor rollen en apps te beperken. U kunt een bereiktag toevoegen aan een app, zodat alleen personen met rollen die ook zijn toegewezen aan de bereiktag, toegang tot de app hebben. Aan apps die zijn gekocht met het Apple Volume Purchase Program (VPP) kunnen geen bereiktags worden toegewezen.  Zie [Bereiktags gebruiken om beleidsregels te filteren](scope-tags.md) voor meer informatie.
+U kunt bereiktags maken om de toegang voor rollen en apps te beperken. U kunt een bereiktag toevoegen aan een app, zodat alleen personen met rollen die ook zijn toegewezen aan de bereiktag, toegang tot de app hebben. Momenteel kunnen er geen bereiktags worden toegewezen aan apps die vanuit de beheerde Google Play Store aan Intune zijn toegevoegd of aan apps die met behulp van het Apple Volume Purchase Program (VPP) zijn aangeschaft (dit zal in de toekomst wel worden ondersteund). Zie [Bereiktags gebruiken om beleidsregels te filteren](scope-tags.md) voor meer informatie.
 
 
 
