@@ -25,7 +25,6 @@
 
 ### [Veelvoorkomende problemen met Android oplossen](troubleshoot-your-device-android.md)
 #### [Apparaatcompatibiliteit controleren](check-compliance-on-your-device-android.md)
-#### [E-mailsynchronisatie in Outlook in batterijbesparingsmodus](power-saving-mode-android.md)
 #### [Veelvoorkomende problemen met Samsung Knox oplossen](samsung-knox-errors-android.md)
 #### [Uw apparaat bijwerken voor de installatie van Outlook](update-device-outlook-android.md)
 
