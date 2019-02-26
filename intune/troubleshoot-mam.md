@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: ae8113a603ae4c091005f7c82045708f7e9e3e97
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086145"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655388"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Problemen met Mobile Application Management oplossen
 
@@ -78,7 +78,7 @@ Foutbericht of dialoogvenster | Oorzaak | Herstel |
 **App niet ingesteld**: Deze app is niet ingesteld om door u te worden gebruikt. Neem contact op met uw IT-beheerder voor hulp. | Kan het vereiste app-beveiligingsbeleid voor de app niet detecteren. |Controleer of er een beveiligingsbeleid voor iOS-apps is geïmplementeerd voor de beveiligingsgroep van de gebruiker en op deze app wordt toegepast.
 **Welkom bij de Intune Managed Browser**: De app werkt het beste wanneer deze wordt beheerd in Microsoft Intune. U kunt deze app altijd gebruiken om op internet te browsen en als de app wordt beheerd met Microsoft Intune, hebt u toegang tot extra functies voor gegevensbescherming. | Kan het vereiste app-beveiligingsbeleid voor de Intune Managed Browser-app niet detecteren. <br><br>De gebruiker kan de app nog gewoon gebruiken om op internet te surfen, maar de app wordt niet beheerd met Intune. | Controleer of er een beveiligingsbeleid voor iOS-apps is geïmplementeerd voor de beveiligingsgroep van de gebruiker en wordt toegepast op de app Intune Managed Browser.
 **Aanmelden mislukt**: U kunt op dit moment niet worden aangemeld. Probeer het later opnieuw. | Kan de gebruiker niet registreren bij de MAM-service nadat de gebruiker heeft geprobeerd om zich aan te melden met het werk-of schoolaccount. | Controleer of er een beveiligingsbeleid voor iOS-apps is geïmplementeerd voor de beveiligingsgroep van de gebruiker en op deze app wordt toegepast.
-**Account niet ingesteld**: Uw organisatie heeft het account niet ingesteld voor toegang tot werk- of schoolgegevens. Neem contact op met uw IT-beheerder voor hulp. | Het gebruikersaccount heeft geen licentie voor Intune A Direct. | Zorg ervoor dat er een licentie in de [Office-portal](http://portal.office.com) is toegewezen aan het account van de gebruiker.
+**Account niet ingesteld**: Uw organisatie heeft het account niet ingesteld voor toegang tot werk- of schoolgegevens. Neem contact op met uw IT-beheerder voor hulp. | Het gebruikersaccount heeft geen licentie voor Intune A Direct. | Zorg ervoor dat er een licentie in de [Office-portal](https://portal.office.com) is toegewezen aan het account van de gebruiker.
 **Apparaat niet-compatibel**: Deze app kan niet worden gebruikt, omdat u een gekraakt apparaat gebruikt. Neem contact op met uw IT-beheerder voor hulp. | Intune heeft gedetecteerd dat de gebruiker een gekraakt apparaat gebruikt. | Zet de fabrieksinstellingen van het apparaat terug. Volg [deze instructies](https://support.apple.com/HT201274) op de ondersteuningssite van Apple.
 **Internetverbinding vereist**: U moet zijn verbonden met internet om te kunnen verifiëren of u deze app mag gebruiken. | Het apparaat is niet verbonden met internet. | Verbind het apparaat met een WiFi- of datanetwerk.
 **Onbekende fout**: Start de app opnieuw. Als het probleem zich blijft voordoen, neemt u contact op met uw IT-beheerder voor ondersteuning. | Er is een onbekende fout opgetreden. | Wacht enige tijd en probeer het opnieuw. Als de fout zich blijft voordoen, maakt u een [ondersteuningsticket](get-support.md#create-an-online-support-ticket) met Intune.
@@ -97,7 +97,7 @@ Dialoogvenster/foutbericht | Oorzaak | Herstel |
 **Aanmelden mislukt**: Probeer u opnieuw aan te melden. Als dit probleem zich blijft voordoen, neemt u contact op met uw IT-beheerder voor ondersteuning. | Fout bij het verifiëren van het account waarmee de gebruiker zich probeert aan te melden. | Zorg ervoor dat de gebruiker zich aanmeldt met het werk- of schoolaccount dat al is geregistreerd bij de Intune MAM-service (het eerste werk- of schoolaccount dat is aangemeld bij deze app). <br><br> Wis de gegevens van de app. <br><br> Zorg ervoor dat de versie van de app is bijgewerkt. <br><br> Zorg ervoor de versie van de bedrijfsportal up-to-date is.
 **Internetverbinding vereist**: U moet zijn verbonden met internet om te kunnen verifiëren of u deze app mag gebruiken. | Het apparaat is niet verbonden met internet. | Verbind het apparaat met een WiFi- of datanetwerk.
 **Apparaat niet-compatibel**: Deze app kan niet worden gebruikt, omdat u een geroot apparaat gebruikt. Neem contact op met uw IT-beheerder voor hulp. | Intune heeft gedetecteerd dat de gebruiker een gekraakt geroot gebruikt. | Zet de fabrieksinstellingen van het apparaat terug.
-**Account niet ingesteld**: Deze app moet worden beheerd met Microsoft Intune, maar uw account is niet ingesteld. Neem contact op met uw IT-beheerder voor hulp. | Het gebruikersaccount heeft geen licentie voor Intune A Direct. | Zorg ervoor dat er een licentie in de [Office-portal](http://portal.office.com) is toegewezen aan het account van de gebruiker.
+**Account niet ingesteld**: Deze app moet worden beheerd met Microsoft Intune, maar uw account is niet ingesteld. Neem contact op met uw IT-beheerder voor hulp. | Het gebruikersaccount heeft geen licentie voor Intune A Direct. | Zorg ervoor dat er een licentie in de [Office-portal](https://portal.office.com) is toegewezen aan het account van de gebruiker.
 **Kan de app niet registreren**: Deze app moet worden beheerd met Microsoft Intune, maar momenteel is het niet mogelijk de app te registreren. Neem contact op met uw IT-beheerder voor hulp. | De app wordt niet automatisch geregistreerd bij de MAM-service wanneer app-beveiligingsbeleid is vereist. | Wis de gegevens van de app. <br><br> Verzend logboeken via de bedrijfsportal-app naar Intune of dien een ondersteuningsticket in. Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md) voor meer informatie.
 
 ## <a name="next-steps"></a>Volgende stappen

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838121"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742734"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -364,10 +364,12 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 6. Voer de volgende instellingen in:
 
    - **Certificaattype**: Kies **Gebruiker** voor gebruikerscertificaten. Kies **Apparaat** voor apparaten zonder gebruiker, zoals kiosken. Er zijn **Apparaat**-certificaten beschikbaar voor de volgende platformen:  
+     - Android Enterprise
      - iOS
+     - macOS
      - Windows 8.1 en hoger
      - Windows 10 en hoger
-     - Android Enterprise
+
 
    - **Indeling van de onderwerpnaam**: Selecteer hoe de onderwerpnaam in de certificaataanvraag automatisch wordt gemaakt met Intune. De beschikbare opties kunnen verschillen, afhankelijk van het gekozen certificaattype: **Gebruiker** of **Apparaat**. 
 
