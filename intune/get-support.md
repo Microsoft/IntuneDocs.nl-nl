@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66ade3d833a82e717284c4abfe48b2c1b6d85add
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 01cffe9143034b9f4221cd760f9cb91f1cceebce
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836503"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334966"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen
 
@@ -50,7 +50,7 @@ De Help en ondersteuning-ervaring voor Intune is beschikbaar via de [Microsoft 3
 ![Intune-blades](./media/get-support/intune-blades.png)
 
 
-Deze nieuwe ervaring is vergelijkbaar met de ervaring in het [Microsoft 365-beheercentrum](https://portal.office.com/AdminPortal/Home) en vervangt de [vorige Help en ondersteuning-ervaring](#azure-help-+-and-support-experience). 
+Deze nieuwe ervaring is vergelijkbaar met de ervaring in het [Microsoft 365-beheercentrum](https://portal.office.com/AdminPortal/Home) en vervangt de [vorige Help en ondersteuning-ervaring](#azure-help-+-support-experience). 
 
 De Help en ondersteuning is als volgt toegankelijk:  
 - **Dashboard Apparaatbeheer:**

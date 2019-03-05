@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 683156b968c743c4c82b472c6e566d5762c22c1a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844663"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334949"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Een werkprofiel maken en uw apparaat registreren bij Intune
 
@@ -33,7 +33,7 @@ Het ondersteuningsteam van het bedrijf kan alleen het werkprofiel beheren dat uw
 
 Ga als volgt te werk om een werkprofiel te maken:
 
-1.  Tik in het **aanmeldingsscherm** van de Android-bedrijfsportal op **Aanmelden** en meld u vervolgens aan met uw werk- of schoolaccount. Als u de gratis app nog niet hebt geïnstalleerd, downloadt en installeert u deze vanaf [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  Tik in het **aanmeldingsscherm** van de Android-bedrijfsportal op **Aanmelden** en meld u vervolgens aan met uw werk- of schoolaccount. Als u de gratis app nog niet hebt geïnstalleerd, downloadt en installeert u deze vanaf [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
     ![Aanmeldingsscherm van de Android-bedrijfsportal-app](./media/and-enroll-0-welcome-screen.png)
 

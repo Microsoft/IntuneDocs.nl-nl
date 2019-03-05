@@ -18,21 +18,18 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840209"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335068"
 ---
 # <a name="sync-your-windows-device-manually"></a>Uw Windows-apparaat handmatig synchroniseren
 
 Voer een handmatige synchronisatie van uw apparaat uit als een app erg langzaam wordt geïnstalleerd. Bij een handmatige synchronisatie maakt uw apparaat verbinding met Intune en worden de nieuwste updates en communicatie opgehaald. De installatiesnelheid kan verbeteren nadat de apparaatsynchronisatie is voltooid.
 
-Intune ondersteunt handmatige synchronisatie via de bedrijfsportal-app, de taakbalk of het menu Start op desktops en vanuit de app Instellingen van een apparaat. 
-
-De functionaliteit van de bedrijfsportal-app wordt ondersteund op Windows 10-apparaten waarop de makersupdate (1703) of hoger wordt uitgevoerd. 
-* [Synchroniseren vanuit de bedrijfsportal-app](#Sync-from-Company-Portal-app-for-Windows)  
+Intune ondersteunt handmatige synchronisatie via de bedrijfsportal-app, de taakbalk of het menu Start op desktops en vanuit de app Instellingen van een apparaat. De functionaliteit van de bedrijfsportal-app wordt ondersteund op Windows 10-apparaten waarop de makersupdate (1703) of hoger wordt uitgevoerd. 
 
 Alle Windows-apparaten kunnen worden gesynchroniseerd vanuit de app Instellingen van het apparaat, met inbegrip van:
 
@@ -75,11 +72,11 @@ Voltooi deze stappen als u uw Microsoft HoloLens-, Windows 10 desktop-, Windows 
 
 3. Er bestaan meerdere versies van Windows 10 voor pc's. Vergelijk uw scherm met onderstaande schermafbeeldingen om te bepalen welke reeks stappen u moet volgen. 
 
-    * Als in het scherm **Toegang tot werk of school** wordt weergegeven, gaat u verder met de stappen in [Toegang tot werk of school](#access-work-or-school).
+    * Als in het scherm **Toegang tot werk of school** wordt weergegeven, gaat u verder met de stappen in [Toegang tot werk of school](#access-work-or-school-steps).
 
     ![Optie Toegang tot werk of school in app Instellingen](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-    * Als in het scherm **Toegang via het werknetwerk** wordt weergegeven, gaat u verder met de stappen onder [Toegang via het werknetwerk](#work-access).  
+    * Als in het scherm **Toegang via het werknetwerk** wordt weergegeven, gaat u verder met de stappen onder [Toegang via het werknetwerk](#work-access-steps).  
 
     ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10pc-sync-3-work-access.png)
 

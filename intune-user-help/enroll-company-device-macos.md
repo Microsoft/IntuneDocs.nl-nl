@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acbfafcc26aa924a5a9d0a7712bb56119099af43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f84eddaf9fac6dd678c7046664bf1feb9ea8cfc1
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848216"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335238"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Het door uw organisatie verstrekte iOS-apparaat voor beheer inschrijven
 
@@ -64,7 +64,7 @@ Voer de volgende stappen uit om uw macOS-apparaat voor beheer in te schrijven. A
     * Uw Mac instellen  
 ## <a name="get-the-company-portal-app"></a>De Bedrijfsportal-app downloaden      
 Download de Intune-bedrijfsportal-app voor macOS op uw apparaat. U kunt met de app uw apparaat controleren, synchroniseren, toevoegen aan en verwijderen uit beheer en apps installeren. In deze stappen wordt ook beschreven hoe u uw apparaat bij de bedrijfsportal registreert.  
-1. Ga op uw macOS-apparaat naar http://portal.manage.microsoft.com/EnrollmentRedirect.aspx.
+1. Ga op uw macOS-apparaat naar https://portal.manage.microsoft.com/EnrollmentRedirect.aspx.
 2. Meld u aan bij de bedrijfsportalwebsite met uw werk- of schoolaccount. 
 3. Klik op **De app downloaden** om het installatieprogramma voor de bedrijfsportal voor macOS te downloaden.
 4. Wanneer u hierom wordt gevraagd, opent u het .pkg-bestand en voltooit u de installatiestappen.
