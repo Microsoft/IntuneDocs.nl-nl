@@ -7,7 +7,7 @@
       "build_output_subfolder": "intune",
       "locale": "nl-nl",
       "monikers": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -23,7 +23,7 @@
       "build_output_subfolder": "intune-azure-redir",
       "locale": "nl-nl",
       "monikers": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -39,7 +39,7 @@
       "build_output_subfolder": "intune-classic",
       "locale": "nl-nl",
       "monikers": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -55,7 +55,7 @@
       "build_output_subfolder": "intune-user-help",
       "locale": "nl-nl",
       "monikers": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
