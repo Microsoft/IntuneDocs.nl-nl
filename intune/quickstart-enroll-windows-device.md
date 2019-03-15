@@ -9,6 +9,7 @@ ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c04dc3169fbf6a60d0c4d7db8358092909e90240
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841813"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57389986"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Quickstart: Uw Windows 10-apparaat registreren
 
@@ -59,7 +60,7 @@ Voordat u uw Windows 10 Desktop inschrijft, moet u controleren welke versie van 
 4. Controleer of de Windows 10-**versie** **1607 of hoger is**.
 
     > [!IMPORTANT]
-    > De stappen die in deze snelstartgids worden weergegeven zijn voor Windows 10-versie **1607 of hoger**. Als uw versie **1511 of lager** is, gaat u verder met [deze stappen](/intune-user-help/enroll-your-w10-device-your-account).
+    > De stappen die in deze snelstartgids worden weergegeven zijn voor Windows 10-versie **1607 of hoger**. Als uw versie **1511 of lager** is, gaat u verder met [deze stappen](/intune-user-help/enroll-windows-10-device.md).  
 
 ## <a name="enroll-windows-10-desktop"></a>Windows 10 Desktop inschrijven
 
