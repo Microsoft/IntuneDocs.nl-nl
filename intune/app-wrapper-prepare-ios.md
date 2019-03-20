@@ -6,9 +6,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a44b5b911d89a2e31f2a718aaa76702847ffb3d8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: b6e51e936a70580643cbaa232441e0ba21c3db14
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849200"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566655"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -187,7 +188,7 @@ Open macOS Terminal en voer de volgende opdracht uit:
 > [!NOTE]
 > Sommige parameters zijn optioneel, zoals wordt weergegeven in de volgende tabel.
 
-**Voorbeeld:** Met de volgende voorbeeldopdracht voert u de App Wrapping Tool uit voor een app met de naam MyApp.ipa. Een inrichtingsprofiel en een SHA-1-hash van het ondertekeningscertificaat worden opgegeven en gebruikt om de ingepakte app te ondertekenen. De uitvoer-app (MyApp_Wrapped.ipa) wordt gemaakt en opgeslagen in uw Bureaublad-map.
+**Voorbeeld:** met de volgende voorbeeldopdracht voert u de App Wrapping Tool uit voor een app met de naam MyApp.ipa. Een inrichtingsprofiel en een SHA-1-hash van het ondertekeningscertificaat worden opgegeven en gebruikt om de ingepakte app te ondertekenen. De uitvoer-app (MyApp_Wrapped.ipa) wordt gemaakt en opgeslagen in uw Bureaublad-map.
 
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
@@ -279,7 +280,7 @@ Als de App Wrapping Tool niet kan worden voltooid, wordt mogelijk een van de vol
 |De app voor invoer die u hebt opgegeven, is niet ondertekend. Geef een geldige ondertekende app op.|De App Wrapping Tool vereist dat apps zijn ondertekend. Raadpleeg de documentatie voor ontwikkelaars voor meer informatie over hoe u een verpakte app ondertekent.|
 |De app voor invoer die u hebt opgegeven, moet de indeling .ipa of .app hebben.|Alleen de extensies .app en .ipa worden geaccepteerd door de App Wrapping Tool. Zorg dat uw invoerbestand een geldige extensie heeft en is gecompileerd als bestand met de extensie .app of .ipa.|
 |De invoer-app die u hebt opgegeven, is al verpakt en heeft de meest recente beleidssjabloonversie.|De App Wrapping Tool pakt een bestaande verpakte app met de meest recente beleidssjabloonversie niet opnieuw in.|
-|Waarschuwing: U hebt geen SHA1-certificaat-hash opgegeven. Zorg dat uw verpakte app is ondertekend voordat u deze implementeert.|Zorg dat u een geldige SHA1-hash opgeeft na de opdrachtregeleigenschap –c. |
+|WAARSCHUWING: u hebt geen SHA1-certificaat-hash opgegeven. Zorg dat uw verpakte app is ondertekend voordat u deze implementeert.|Zorg dat u een geldige SHA1-hash opgeeft na de opdrachtregeleigenschap –c. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Logboekbestanden voor de App Wrapping Tool
 Apps die zijn verpakt met de App Wrapping Tool genereren logboeken die worden geschreven naar de console van het iOS-clientapparaat. Deze informatie is nuttig voor situaties waarin u een probleem ondervindt met de app en wilt achterhalen of dit probleem te maken heeft met de App Wrapping Tool. Als u deze informatie wilt ophalen, gebruikt u de volgende stappen:
@@ -438,7 +439,8 @@ Gebruik de volgende stappen om logboeken op te halen voor uw ingepakte toepassin
 > [!NOTE]
 > De logboekfunctionaliteit is ingeschakeld voor apps die zijn ingepakt met de Intune App Wrapping Tool versie 7.1.13 of hoger.
 
-### <a name="see-also"></a>Zie tevens
-- [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
-- [Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+## <a name="see-also"></a>Zie tevens
+
+- [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](apps-prepare-mobile-application-management.md)
+- [Veelvoorkomende vragen, problemen en oplossingen met apparaatbeleidsregels en profielen](device-profile-troubleshoot.md)
 - [De SDK gebruiken om apps geschikt te maken voor Mobile Application Management](app-sdk.md)

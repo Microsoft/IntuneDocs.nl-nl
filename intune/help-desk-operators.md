@@ -6,22 +6,23 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/23/2018
-ms.topic: conceptual
+ms.date: 03/11/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba74c93e2ef7dc469ebd7f5086659181b72a0981
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 135e93bf3cfb93b5299dfd005a3ca70bbba84d77
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230020"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57787131"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>De portal voor probleemoplossing gebruiken om gebruikers in uw bedrijf te helpen
 
@@ -69,176 +70,180 @@ U kunt het deelvenster **Probleemoplossing** gebruiken om gebruikersgegevens wee
 | 4.   | Gebruikersgegevens  | U kunt de lijst gebruiken om de gegevens te selecteren die u in het deelvenster wilt weergeven. <br>U kunt de volgende selecties maken: <ul><li>Client-apps<li>Nalevingsbeleid<li> Configuratiebeleid<li>Beleid voor app-beveiliging <li>Registratiebeperkingen</ul>      |
 | 5.   | Groepslidmaatschap  | Hiermee geeft u de groepen weer waarvan de geselecteerde gebruiker momenteel lid is.       |
 
-## <a name="client-apps-reference"></a>Verwijzing client-apps
+<!-- this section needs to be updated
 
-De apps waarop apparaten worden uitgevoerd die
-- worden beheerd door Intune en Azure Active Directory (AD) 
-- het eigendom zijn van gebruikers die in Intune en Azure Active Directory (AD) worden beheerd.
+## Client apps reference
 
-### <a name="properties"></a>Eigenschappen
+The apps that are running devices
+- managed by Intune and Azure Active Directory (AD) 
+- owned by users managed by Intune and Azure Active Directory (AD).
 
-De eigenschappen van client-apps.
+### Properties
 
-| Eigenschap      | Beschrijving                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+The properties of client apps.
+
+| Property      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Naam          | De naam van de toepassing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Besturingssysteem            | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Type          | U kunt een toewijzingstype kiezen voor elk apparaat.  <br> **Beschikbaar**: gebruikers installeren de app vanuit de bedrijfsportal-app of vanaf de website.  <br> **Niet van toepassing**: de app wordt niet geïnstalleerd en niet weergegeven in de bedrijfsportal. <br> **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen.  <br> **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen met gebruikers van wie de apparaten niet zijn ingeschreven met Intune. |
-| Laatst gewijzigd | De naam van het type apparaat.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Name          | The name of the application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| OS            | The operating system installed on the device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Type          | You can choose an assignment type for each app.  <br> **Available** - Users install the app from the Company Portal app or website.  <br> **Not Applicable** - The app is not installed or shown in the Company Portal. <br> **Uninstall** - The app is uninstalled from devices in the selected groups.  <br> **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune. |
+| Last Modified | The name of the type of device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-### <a name="devices"></a>Apparaten
+### Devices
 
-Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door Intune of Azure AD.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Eigenschap           | Beschrijving                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Apparaatnaam        | De naam van het type apparaat.                                                                                                     |
-| Beheerd door         | De timestamp van een beleidswijziging.                                                                                              |
-| Het type Azure AD-join | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Eigendom          | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**).                                               |
-| Compatibel met Intune   | De naam van het type apparaat.                                                                                                     |
-| Compatibel met Azure AD | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| App-installatie | Geeft aan of het installeren van een app op verschillende apparaten is voltooid of mislukt. |
-| Besturingssysteem                 | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                       |
-| Besturingssysteemversie         | Het versienummer van het besturingssysteem van het apparaat.                                                                                  |
-| Laatste check-in      | De naam van het type apparaat.                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| App install | Denotes whether an app install failure or success has occurred on the individual device. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-status"></a>Status app-beveiliging
+### App protection status
 
-Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met Enterprise Mobility Solution-technologieën (EMS). Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
+An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| Eigenschap    | Beschrijving                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**). |
-| App-naam    | De naam van de toepassing                                                           |
-| Apparaatnaam | De naam van het type apparaat.                                                       |
-| Apparaattype | De naam van het type apparaat.                                                       |
-| Beleid    | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**). |
-| Laatste synchronisatie   | De timestamp van de laatste keer dat het apparaat is gesynchroniseerd met Intune.                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="app-protection-policies-reference"></a>Verwijzing beveiligingsbeleid voor apps
+## App protection policies reference
 
-Er is een app-beschermingsbeleid beschikbaar voor mobiele apps die worden geïntegreerd met EMS-technologieën. Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-### <a name="properties"></a>Eigenschappen
+### Properties
 
-Deze tabel bevat de status van het app-beveiligingsbeleid voor apparaten die worden beheerd door Intune.
+The table summarizes app protection policies status for devices managed by Intune.
 
-| Eigenschap    | Beschrijving                                                                                                                                |
+| Property    | Description                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Naam        | De naam van de toepassing.                                                                                                        |
-| Geïmplementeerd    | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Platform    | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**).                                               |
-| Inschrijving  | De naam van het type apparaat.                                                                                                     |
-| Laatst bijgewerkt | De timestamp van een beleidswijziging.                                                                                              |
+| Name        | The name of the application.                                                                                                        |
+| Deployed    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Platform    | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Enrollment  | The name of the type of device.                                                                                                     |
+| Last Update | The timestamp the policy was modified.                                                                                              |
 
-### <a name="devices"></a>Apparaten
+### Devices
 
-Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door Intune of Azure AD.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Eigenschap           | Tekst                                                                                                                                |
+| Property           | Text                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Apparaatnaam        | De naam van het type apparaat.                                                                                                     |
-| Beheerd door         | De timestamp van een beleidswijziging.                                                                                              |
-| Het type Azure AD-join | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Eigendom          | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**).                                               |
-| Compatibel met Intune   | De naam van het type apparaat.                                                                                                     |
-| Compatibel met Azure AD | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Compatibel met Azure AD | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Besturingssysteem                 | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                       |
-| Besturingssysteemversie         | Het versienummer van het besturingssysteem van het apparaat.                                                                                  |
-| Laatste check-in      | De naam van het type apparaat.                                                                                                     |
+| Device Name        | The name of the type of device.                                                                                                     |
+| Managed By         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last Check in      | The name of the type of device.                                                                                                     |
 
-## <a name="compliance-policies-reference"></a>Verwijzing nalevingsbeleid
+## Compliance policies reference
 
-U moet ervoor zorgen dat de apparaten die worden gebruikt voor toegang tot bedrijfs-apps en -gegevens, voldoen aan bepaalde regels, zoals het gebruik van een pincode voor toegang tot het apparaat en versleuteling van gegevens die op het apparaat zijn opgeslagen.
+Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
 
-### <a name="properties"></a>Eigenschappen
+### Properties
 
-De eigenschappen het nalevingsbeleid.
+The properties of the compliance policies.
 
-| Eigenschap      | Beschrijving                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Toewijzing    | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Naam          | De naam van de toepassing.                                                                                                        |
-| Besturingssysteem            | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                       |
-| Beleidstype   | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** en **Onbekend**).                                               |
-| Laatst gewijzigd | De naam van het type apparaat.                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>Apparaten
+### Devices
 
-Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door Intune of Azure AD.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Eigenschap           | Beschrijving                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Apparaatnaam        | De naam van het type apparaat.                                                                                                     |
-| Beheerd door         | De timestamp van een beleidswijziging.                                                                                              |
-| Het type Azure AD-join | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Eigendom          | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** en **Onbekend**).                                               |
-| Compatibel met Intune   | De naam van het type apparaat.                                                                                                     |
-| Compatibel met Azure AD | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Besturingssysteem                 | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                       |
-| Besturingssysteemversie         | Het versienummer van het besturingssysteem van het apparaat.                                                                                  |
-| Laatste check-in      | De naam van het type apparaat.                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-policies"></a>Beleid voor app-beveiliging
+### App protection policies
 
-Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| Eigenschap    | Beschrijving                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**). |
-| App-naam    | De naam van de toepassing                                                           |
-| Apparaatnaam | De naam van het type apparaat.                                                       |
-| Apparaattype | De naam van het type apparaat.                                                       |
-| Beleid    | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**). |
-| Laatste synchronisatie   | De timestamp van de laatste keer dat het apparaat is gesynchroniseerd met Intune.                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="configuration-policies-reference"></a>Referentie voor configuratiebeleid
+## Configuration policies reference
 
-Er is een app-configuratiebeleid beschikbaar voor mobiele apps met leverancierspecifieke configuraties. 
+An app configuration policy is available to mobile apps with vendor-specific configuration. 
 
-### <a name="properties"></a>Eigenschappen
+### Properties
 
-De eigenschappen van het configuratiebeleid.
+The properties of the configuration policies.
 
-| Eigenschap      | Beschrijving                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Toewijzing    | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Naam          | De naam van de toepassing.                                                                                                        |
-| Besturingssysteem            | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                       |
-| Beleidstype   | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**).                                               |
-| Laatst gewijzigd | De naam van het type apparaat.                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>Apparaten
+### Devices
 
-Apparaten die worden beheerd door Intune of gebruikers die worden beheerd door Intune of Azure AD.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Eigenschap           | Beschrijving                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Apparaatnaam        | De naam van het type apparaat.                                                                                                     |
-| Beheerd door         | De timestamp van een beleidswijziging.                                                                                              |
-| Het type Azure AD-join | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Eigendom          | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**).                                               |
-| Compatibel met Intune   | De naam van het type apparaat.                                                                                                     |
-| Compatibel met Azure AD | De status van alle app-beveiligingsapps van de gebruikers. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben. |
-| Besturingssysteem                 | Het besturingssysteem dat op het apparaat is geïnstalleerd.                                                                                       |
-| Besturingssysteemversie         | Het versienummer van het besturingssysteem van het apparaat.                                                                                  |
-| Laatste check-in      | De naam van het type apparaat.                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
 
-### <a name="app-protection-policies"></a>Beleid voor app-beveiliging
+### App protection policies
 
-Er is een beveiligingsbeleid voor apps beschikbaar voor mobiele apps die integreren met EMS-technologieën. Deze beleidsregels bieden een basisbeveiliging voor uw bedrijfsgegevens wanneer deze worden gedownload naar mobiele apps, inclusief de mobiele Office-apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| Eigenschap    | Beschrijving                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**). |
-| App-naam    | De naam van de toepassing                                                           |
-| Apparaatnaam | De naam van het type apparaat.                                                       |
-| Apparaattype | De naam van het type apparaat.                                                       |
-| Beleid    | Het type apparaateigendom (**Bedrijf**, **Persoonlijk** of **Onbekend**). |
-| Laatste synchronisatie   | De timestamp van de laatste keer dat het apparaat is gesynchroniseerd met Intune.                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
+
+-->
 
 ## <a name="enrollment-failure-reference"></a>Verwijzing naar inschrijvingsfouten
 
