@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc5ed233bf3368ae9b0ce21b8688966a1ffdef
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: f38803d3be05182639ac8eca2578e9ce121f7c2f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232349"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566009"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Instellingen voor Windows Holographic for Business-apparaten om ze als kiosk uit te voeren via Intune
 
@@ -39,11 +40,11 @@ Zie voor meer informatie over de Windows-kioskfunctie in Intune [Configure kiosk
 
 Wanneer u een kioskmodus voor één app kiest, moet u de volgende instellingen opgeven:
 
-- **Aanmeldingstype gebruiker**: Selecteer **Lokaal gebruikersaccount** om het lokale gebruikersaccount (op het apparaat) of een Microsoft-account (MSA) in te voeren dat is gekoppeld aan de kiosk-app. Gebruikersaccounttypen met het kenmerk **AutoLogon** worden niet ondersteund in Windows Holographic for Business.
+- **Aanmeldingstype gebruiker**: selecteer **Lokaal gebruikersaccount** om het lokale gebruikersaccount (op het apparaat) of een Microsoft-account (MSA) in te voeren, dat is gekoppeld aan de kiosk-app. Gebruikersaccounttypen met het kenmerk **AutoLogon** worden niet ondersteund in Windows Holographic for Business.
 
-- **Toepassingstype**: Selecteer **Store-app**.
+- **Toepassingstype**: selecteer **Store-app**.
 
-- **App uitvoeren in kioskmodus**: Kies **Een Store-app toevoegen** en selecteer een app in de lijst.
+- **App wordt uitgevoerd in de kioskmodus**: kies **Een Store-app toevoegen** en selecteer een app in de lijst.
 
     Worden er geen apps in de lijst weergegeven? Voeg er een aantal toe met behulp van de stappen in [Client-apps](apps-add.md).
 
@@ -53,30 +54,30 @@ Wanneer u een kioskmodus voor één app kiest, moet u de volgende instellingen o
 
 Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige apps die de gebruiker kan openen. Wanneer u een kioskmodus voor meerdere apps kiest, moet u de volgende instellingen opgeven:
 
-- **Gericht op Windows 10-apparaten in de S-modus**: Kies **Nee**. De S-modus wordt niet ondersteund in Windows Holographic for Business.
+- **Gericht op Windows 10 S met apparaten in de S-modus**: kies **Nee**. De S-modus wordt niet ondersteund in Windows Holographic for Business.
 
-- **Aanmeldingstype gebruiker**: Voer een of meer gebruikersaccounts in die de apps kunnen gebruiken die u toevoegt. Uw opties zijn: 
+- **Aanmeldingstype gebruiker**: voeg een of meer gebruikersaccounts toe die de door u toegevoegde apps kunnen gebruiken. Uw opties zijn: 
 
-  - **Automatisch aanmelden**: Niet ondersteund in Windows Holographic for Business.
-  - **Lokale gebruikersaccounts**: **Voeg** het lokale (op het apparaat) gebruikersaccount toe. Het account dat u opgeeft wordt gebruikt om u aan te melden bij de kiosk.
-  - **Azure AD-gebruiker of -groep (Windows 10, versie 1803 of hoger)**: Hiervoor zijn gebruikersreferenties voor aanmelding op het apparaat vereist. Selecteer **Toevoegen** als u Azure AD-gebruikers of -groepen in de lijst wilt kiezen. U kunt meerdere gebruikers en groepen selecteren. Kies **Selecteren** om uw wijzigingen op te slaan.
-  - **HoloLens-bezoeker**: Het bezoekersaccount is een gastaccount waarvoor geen gebruikersreferenties zijn of verificatie is vereist, zoals wordt beschreven in [Gedeelde pc-modusconcepten](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+  - **Automatisch aanmelden**: wordt niet ondersteund in Windows Holographic for Business.
+  - **Lokale gebruikersaccounts**: **voeg** het lokale (op het apparaat) gebruikersaccount toe. Het account dat u opgeeft wordt gebruikt om u aan te melden bij de kiosk.
+  - **Azure AD-gebruiker of -groep (Windows 10, versie 1803 of hoger)**: een gebruiker moet referenties opgegeven om zich te kunnen aanmelden bij het apparaat. Selecteer **Toevoegen** als u Azure AD-gebruikers of -groepen in de lijst wilt kiezen. U kunt meerdere gebruikers en groepen selecteren. Kies **Selecteren** om uw wijzigingen op te slaan.
+  - **HoloLens-bezoeker**: het bezoekersaccount is een gastaccount waarvoor geen gebruikersreferenties of verificatie is vereist, zoals wordt beschreven in [Gedeelde pc-modusconcepten](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
-- **Toepassingen**: Voeg de apps toe die u op het apparaat in kioskmodus wilt uitvoeren. U kunt verschillende apps toevoegen.
+- **Toepassingen**: voeg de apps toe die u op het apparaat in kioskmodus wilt uitvoeren. U kunt verschillende apps toevoegen.
 
-  - **Store-apps toevoegen**: Selecteer een bestaande app die u hebt toegevoegd met [Client-apps](apps-add.md). Als er geen apps worden weergegeven, kunt u apps aanschaffen en deze [aan Intune toevoegen](store-apps-windows.md).
-  - **Win32-app toevoegen**: Niet ondersteund in Windows Holographic for Business.
-  - **Toevoegen via AUMID**: Gebruik deze optie om Postvak IN-apps voor Windows toe te voegen. Voer de volgende eigenschappen in: 
+  - **Store-apps toevoegen**: selecteer een bestaande app die u hebt toegevoegd met [Client-apps](apps-add.md). Als er geen apps worden weergegeven, kunt u apps aanschaffen en deze [aan Intune toevoegen](store-apps-windows.md).
+  - **Win32-app toevoegen**: wordt niet ondersteund in Windows Holographic for Business.
+  - **Toevoegen via AUMID**: gebruik deze optie om Postvak IN-apps voor Windows toe te voegen. Voer de volgende eigenschappen in: 
 
-    - **Toepassingsnaam**: Vereist. Geef een naam op voor de toepassing.
-    - **Model-id van toepassingsgebruiker (AUMID)**: Vereist. Voer de AUMID van de Windows-app in. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) als u wilt weten hoe u aan deze id komt.
-    - **Tegelgrootte**: Vereist. Kies een tegelgrootte Klein, Normaal, Breed of Groot voor de app.
+    - **Toepassingsnaam**: vereist. Geef een naam op voor de toepassing.
+    - **Model-id van toepassingsgebruiker (AUMID)**: vereist. Voer de AUMID van de Windows-app in. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) als u wilt weten hoe u aan deze id komt.
+    - **Tegelgrootte**: vereist. Kies een tegelgrootte Klein, Normaal, Breed of Groot voor de app.
 
-- **Browserinstellingen voor de kiosk**: Niet ondersteund in Windows Holographic for Business.
+- **Kioskbrowserinstellingen**: wordt niet ondersteund in Windows Holographic for Business.
 
-- **Alternatieve indeling van het menu Start gebruiken**: Selecteer **Ja** om een XML-bestand op te geven waarin wordt beschreven hoe de apps worden weergegeven in het menu Start, zoals de volgorde van de apps. Gebruik deze optie als u meer aanpassingsmogelijkheden wilt gebruiken in het startmenu. [Startopmaak aanpassen en exporteren](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) biedt instructies en bevat een specifiek XML-bestand voor apparaten met Windows Holographic for Business.
+- **Alternatieve lay-out van het menu Start gebruiken**: kies **Ja** om een XML-bestand op te geven, waarin wordt beschreven hoe de apps worden weergegeven in het startmenu, zoals de volgorde van de apps. Gebruik deze optie als u meer aanpassingsmogelijkheden wilt gebruiken in het startmenu. [Startopmaak aanpassen en exporteren](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) biedt instructies en bevat een specifiek XML-bestand voor apparaten met Windows Holographic for Business.
 
-- **Windows-taakbalk**: Niet ondersteund in Windows Holographic for Business.
+- **Windows-taakbalk**: wordt niet ondersteund in Windows Holographic for Business.
 
 ## <a name="next-steps"></a>Volgende stappen
 

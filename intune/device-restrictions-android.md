@@ -6,20 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f546fc66f7c602705289493eb2f5c96555ab7603
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: edb01e1cbe5fdbc79b48ee90e39fe45a2ccefb2a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728936"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566349"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Lijsten met apparaatbeperkingen voor Android en Samsung Knox Standard in Intune
 
@@ -164,4 +166,4 @@ Kioskinstellingen zijn alleen van toepassing op apparaten met Samsung Knox Stand
 
 [Het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
-U kunt ook kiosk-profielen maken voor apparaten met [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) en [Windows 10](kiosk-settings.md).
+U kunt ook kiosk-profielen maken voor apparaten met [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) en [Windows 10](kiosk-settings.md).

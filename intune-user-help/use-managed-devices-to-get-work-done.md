@@ -18,11 +18,11 @@ ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44aad280f0b8714adbb3c8a1e109b68a5af46d4d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: b7b67f1484ed74bd538cad53f02babd542b77fff
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55838832"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>Beheerde apparaten gebruiken om toegang te krijgen tot werk- of schoolresources
@@ -58,7 +58,7 @@ Voor meer informatie over wat het ondersteuningsteam van het bedrijf wel en niet
 - [De bedrijfsportal-app voor Android installeren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [De bedrijfsportal-app voor iOS installeren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [De bedrijfsportal-app voor macOS installeren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
-- [De bedrijfsportal-app voor Windows installeren](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+- [De bedrijfsportal-app voor Windows installeren](about-cp-app-for-windows-10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Wat voor computers of apparaten kunt u toevoegen aan de bedrijfsportal?
 -   Apple-apparaten met iOS (zoals iPhone en iPad) en Mac OS (zoals MacBook en iMac)

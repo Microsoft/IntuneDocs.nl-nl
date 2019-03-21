@@ -7,21 +7,23 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3993cb4e7ccbc04ccc1d341a9bd72594948f3262
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fe16111095051c1fddb4b87d5b4f815ae2798e92
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297516"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566366"
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
@@ -107,7 +109,7 @@ De entiteit **EnrollmentActivity** geeft de activiteit van een apparaatinschrijv
 | enrollmentFailureCategoryKey  | De sleutel van de categorie van de mislukte inschrijving (als de inschrijving is mislukt).        |
 | enrollmentFailureReasonKey    | De sleutel van de reden voor het mislukken van de inschrijving (als de inschrijving is mislukt).          |
 | osVersion                     | De versie van het besturingssysteem van het apparaat.                               |
-| count                         | Het totale aantal inschrijvingsactiviteiten die overeenkomen met de bovenstaande classificaties.  |
+| count                         | Het totale aantal inschrijvingsactiviteiten dat overeenkomt met de bovenstaande classificaties.  |
 
 ## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
 De entiteit **EnrollmentEventStatus** geeft het resultaat van een apparaatinschrijving aan.
@@ -143,7 +145,7 @@ De entiteit **EnrollmentFailureCategory** geeft aan waarom een apparaatinschrijv
 | Verificatie                  | Verificatie mislukt.                                                                                        |
 | Autorisatie                   | De aanroep is geverifieerd, maar niet geautoriseerd om in te schrijven.                                                         |
 | AccountValidation               | Kan het account niet valideren voor inschrijving. (Account geblokkeerd, inschrijving niet ingeschakeld)                      |
-| UserValidation                  | De gebruiker kan worden gevalideerd. (De gebruiker bestaat niet, ontbrekende licentie)                                           |
+| UserValidation                  | De gebruiker kan niet worden gevalideerd. (De gebruiker bestaat niet, ontbrekende licentie)                                           |
 | DeviceNotSupported              | Het apparaat wordt niet ondersteund voor Mobile Device Management.                                                         |
 | InMaintenance                   | Het account bevindt zich in de onderhoudsmodus.                                                                                    |
 | BadRequest                      | De client heeft een aanvraag verzonden die niet wordt begrepen/ondersteund door de service.                                        |
@@ -153,7 +155,7 @@ De entiteit **EnrollmentFailureCategory** geeft aan waarom een apparaatinschrijv
 | UserAbandonment                 | De inschrijving is afgebroken door de eindgebruiker. (Onboarding is gestart door de eindgebruiker, maar kon niet tijdig worden voltooid)  |
 
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
-De entiteit **EnrollmentFailureReason** geeft een meer gedetailleerde reden voor een apparaatinschrijvingsfout binnen een bepaalde foutcategorie.  
+De entiteit **EnrollmentFailureReason** geeft een meer gedetailleerde redenen voor een apparaatinschrijvingsfout binnen een bepaalde foutcategorie.  
 
 | Eigenschap                     | Beschrijving                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------|
@@ -170,7 +172,7 @@ De entiteit **EnrollmentFailureReason** geeft een meer gedetailleerde reden voor
 | UserNotLicensed                  | Kan de gebruiker niet vinden in Intune of de gebruiker heeft geen geldige licentie.                                                                                                                                     |
 | UserUnknown                      | De gebruiker is niet bekend bij Intune.                                                                                                                                                                           |
 | BulkAlreadyEnrolledDevice        | Slechts één gebruiker kan een apparaat inschrijven. Dit apparaat is eerder ingeschreven door een andere gebruiker.                                                                                                                |
-| EnrollmentOnboardingIssue        | Intune MDM-instantie (Mobile Device Management) is nog niet geconfigureerd.                                                                                                                                 |
+| EnrollmentOnboardingIssue        | De Intune MDM-instantie (Mobile Device Management) is nog niet geconfigureerd.                                                                                                                                 |
 | AppleChallengeIssue              | De installatie van het iOS-beheerprofiel is vertraagd of mislukt.                                                                                                                                         |
 | AppleOnboardingIssue             | Een Apple MDM-pushcertificaat is vereist om in te schrijven bij Intune.                                                                                                                                       |
 | DeviceCap                        | De gebruiker probeert meer apparaten in te schrijven dan maximaal is toegestaan.                                                                                                                                        |
@@ -214,7 +216,10 @@ Met de entiteit **EnrollmentTypes** wordt aangegeven of een apparaat bedrijfseig
 |---------|------------|--------|
 | ownerTypeID |Unieke id van het type eigenaar. | |
 | ownerTypeKey |Unieke id van het type eigenaar in het datawarehouse - surrogaatsleutel. | |
-| ownerTypeName |Vertegenwoordigt het eigenaartype van de apparaten:  <br>Company - apparaat is bedrijfseigendom. <br>Personal - apparaat is persoonlijk eigendom (BYOD).  <br>Unknown - er is geen informatie over dit apparaat. |Company Personal Unknown |
+| ownerTypeName |Vertegenwoordigt het eigenaartype van de apparaten:  <br>Bedrijfseigendom - apparaat is Bedrijfseigendom. <br>Personal - apparaat is persoonlijk eigendom (BYOD).  <br>Unknown - er is geen informatie over dit apparaat. |Zakelijke persoonlijke onbekend |
+
+> [!Note]  
+> Voor de `ownerTypeName` in AzureAD bij het maken van dynamische groepen voor apparaten, moet u de waarde voor het filter instellen `deviceOwnership` als `Company`. Zie voor meer informatie, [regels voor apparaten](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="mdmstatuses"></a>MdmStatuses
 

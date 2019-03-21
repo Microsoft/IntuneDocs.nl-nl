@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834650"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56742530"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Apps op uw apparaat installeren en delen
 Installeer apps op uw apparaat vanuit de bedrijfsportal-app voor Windows.
@@ -35,11 +35,12 @@ Installeer apps op uw apparaat vanuit de bedrijfsportal-app voor Windows.
     ![De startpagina van de bedrijfsportal-app voor Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)    
 2. Apps zoeken en installeren vanuit een van de volgende secties van de bedrijfsportal-app:  
 
-    * **Home**: Selecteer een app in een lijst met door uw organisatie aanbevolen apps.  
-    * **Alles weergeven**: Klik in de sectie **Startpagina** > **Apps** op **Alles weergeven** om alle beschikbare apps weer te geven.  
-    * **Alle apps**: Selecteer deze pagina in het navigatiedeelvenster om alle beschikbare apps te zien, inclusief apps die zijn geïnstalleerd en aanbevolen.  
-    * **Apps zoeken**: Een statische zoekbalk bevindt zich in het navigatiedeelvenster van de app.  Als u de beschikbare apps wilt vinden, zoekt u op de app-naam of uitgever.  
-    * **Alle apps**: Hiermee kunt u alle beschikbare apps weergeven, sorteren en filteren. Zoekresultaten worden automatisch op relevantie gesorteerd.  
+    * **Home**: selecteer een app in een lijst met door uw organisatie aanbevolen apps.  
+    * **Alles weergeven**: klik in de sectie **Startpagina** > **Apps** op **Alles weergeven** om alle beschikbare apps weer te geven.  
+    * **Alle apps**: selecteer deze pagina in het navigatiedeelvenster om alle beschikbare apps te zien, inclusief apps die zijn geïnstalleerd en aanbevolen.  
+    * **App-categorieën**: Selecteer deze pagina in het navigatiedeelvenster om apps op basis van type of functie te kiezen. Apps worden gesorteerd in categorieën, zoals **aanbevolen**, **Education**, en **productiviteit**.  
+    * **Apps zoeken**: een statische zoekbalk bevindt zich in het navigatiedeelvenster van de app.  Als u de beschikbare apps wilt vinden, zoekt u op de app-naam of uitgever.  
+    * **Alle apps**: hiermee kunt u alle beschikbare apps weergeven, sorteren en filteren. Zoekresultaten worden automatisch op relevantie gesorteerd.  
 
 3. Selecteer een app.   
 4. Klik op de pagina met app-gegevens op **Installeren**. Nadat de installatie is voltooid, ziet u de status **Geïnstalleerd**.  

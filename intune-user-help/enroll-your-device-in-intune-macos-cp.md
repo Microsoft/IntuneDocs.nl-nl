@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55834718"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Uw macOS-apparaten registreren bij Intune met de bedrijfsportal-app
@@ -58,7 +58,7 @@ Gebruik de volgende stappen om macOS-apparaten met OS X El Capitan 10.11 en hoge
 
 4. Op de pagina __Apparaten__ ziet u een lijst met beheerde apparaten of een banner. Wat u ziet, is afhankelijk van of u al over een beheerd apparaat beschikt. 
     * Als u een niet-vermeld apparaat wilt toevoegen, selecteert u de banner met de tekst **Tik hier om ons te laten weten welk apparaat u gebruikt of om een nieuw apparaat toe te voegen.**
-    * Als u geen apparaten hebt, ziet u het volgende op de banner: **U hebt geen beheerde apparaten. Voeg dit apparaat toe door hier te tikken.** Klik op de banner als u uw apparaat wilt toevoegen.  
+    * Als u geen apparaten hebt, toont de banner **U hebt geen beheerde apparaten. Voeg dit apparaat toe door hier te tikken.** Klik op de banner als u uw apparaat wilt toevoegen.  
 
      ![Een schermafbeelding van de pagina Apparaten met een rood vierkant rond de banner-optie om aan te geven waar u moet klikken.](./media/CP-enroll-MACOS-1808.png)  
 5.  Voer onderstaande stap uit in overeenstemming met het bericht u momenteel in de bedrijfsportal ziet.  

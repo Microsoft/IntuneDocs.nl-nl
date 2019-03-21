@@ -14,11 +14,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
-ms.translationtype: HT
+ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "20283566"
 ---
 # <a name="metadata-and-markdown-template"></a>Metagegevens en markdown-sjabloon
@@ -34,10 +34,10 @@ Het volledige metagegevensblok staat hierboven, onderverdeeld in verplichte en o
 
 - Voor een metagegevenselement **moet** er een spatie staan tussen de dubbele punt (:) en de waarde.
 - Als een optioneel metagegevenselement geen waarde heeft, markeert u het element als commentaar met een # (laat het element niet leeg en gebruik niet 'n.v.t.'). Als u een waarde toevoegt aan een element dat is gemarkeerd als commentaar , moet u # verwijderen.
-- Door dubbele punten in een waarde (bijvoorbeeld een titel) wordt de metagegevensparser verbroken. Gebruik in plaats daarvan de HTML-codering van &#58; (bijvoorbeeld 'titel: Azure Rights Management &#58; de basisbeginselen | Azure RMS').
+- Door dubbele punten in een waarde (bijvoorbeeld een titel) wordt de metagegevensparser verbroken. Gebruik in plaats daarvan de HTML-codering van & #58; (bijvoorbeeld 'titel: Azure Rights Management & #58; de basisbeginselen | Azure RMS').
 - **titel**: deze titel wordt weergegeven in zoekmachineresultaten. De titel moet eindigen met een sluisteken (|), gevolgd door de naam van de service (zoals hierboven). De titel hoeft niet gelijk te zijn (waarschijnlijk is dit ook geen goed idee) aan de titel in de H1-kop. De titel moet ongeveer 65 tekens bevatten (inclusief | SERVICENAAM).
 - **auteur**, **manager**, **revisor**: het veld 'auteur' moet de **Github-gebruikersnaam** van de auteur bevatten, niet zijn alias.  De velden manager en reviewer moeten daarentegen wel een alias bevatten. ms.reviewer geeft de naam aan van de projectmanager die is gekoppeld aan het artikel of de service.
-- **MS.AssetID**: dit is de GUID van het artikel van CAPS. Haal bij het maken van een nieuw markdown-bestand een GUID op van [https://www.guidgenerator.com](https://www.guidgenerator.com). 
+- **MS.AssetID**: dit is de GUID van het artikel van CAPS. Bij het maken van een nieuw markdown-bestand, krijgen een GUID van [ https://www.guidgenerator.com ](https://www.guidgenerator.com). 
 - **MS.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: mogelijke waarden voor deze elementen vindt u [hier](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
 ## <a name="basic-markdown-and-gfm"></a>Basis-markdown en markdown met een vleugje GitHub

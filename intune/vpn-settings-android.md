@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aff0aad055aee08dfbf17622e3d9f9c3061165b8
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 666b61eec021fa6a2cdad5126f572234d97b6883
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233964"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566094"
 ---
 # <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>VPN-instellingen configureren voor Android-apparaten in Intune
 
@@ -36,15 +37,15 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle volgende waarden w
 
 ## <a name="android-vpn-settings"></a>VPN-instellingen voor Android
 
-- **Verbindingsnaam**: Voer een naam in voor deze verbinding. Eindgebruikers zien deze naam wanneer ze op hun apparaat de beschikbare VPN-verbindingen zoeken.
+- **Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers zien deze naam wanneer ze op hun apparaat de beschikbare VPN-verbindingen zoeken.
 - **IP-adres of FQDN**: geef het IP-adres of de FQDN (Fully Qualified Domain Name) op van de VPN-server waarmee apparaten verbinding maken. Voer bijvoorbeeld **192.168.1.1** of **vpn.contoso.com** in.
 
   - **Verificatiemethode**: kies hoe apparaten worden geverifieerd bij de VPN-server. Uw opties zijn:
 
     - **Certificaten**: selecteer een bestaand SCEP- of PKCS-certificaatprofiel om de verbinding te verifiëren. [Certificaten configureren](certificates-configure.md) bevat de stappen voor het maken van een certificaatprofiel.
-    - **Gebruikersnaam en wachtwoord**: tijdens het aanmelden bij de VPN-server wordt de eindgebruikers gevraagd een gebruikersnaam en wachtwoord in te voeren.
+    - **Gebruikersnaam en wachtwoord**: tijdens het aanmelden bij de VPN-server worden de eindgebruikers gevraagd een gebruikersnaam en wachtwoord in te voeren.
 
-- **Type verbinding**: selecteer het type van de VPN-verbinding. Uw opties zijn:
+- **Verbindingstype**: selecteer het type VPN-verbinding. Uw opties zijn:
 
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**
@@ -58,15 +59,15 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle volgende waarden w
 
 ## <a name="android-enterprise-vpn-settings"></a>VPN-instellingen voor Android Enterprise
 
-- **Verbindingsnaam**: Voer een naam in voor deze verbinding. Eindgebruikers zien deze naam wanneer ze op hun apparaat de beschikbare VPN-verbindingen zoeken.
+- **Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers zien deze naam wanneer ze op hun apparaat de beschikbare VPN-verbindingen zoeken.
 - **IP-adres of FQDN**: geef het IP-adres of de FQDN (Fully Qualified Domain Name) op van de VPN-server waarmee apparaten verbinding maken. Voer bijvoorbeeld **192.168.1.1** of **vpn.contoso.com** in.
 
   - **Verificatiemethode**: kies hoe apparaten worden geverifieerd bij de VPN-server. Uw opties zijn:
   
     - **Certificaten**: selecteer een bestaand SCEP- of PKCS-certificaatprofiel om de verbinding te verifiëren. [Certificaten configureren](certificates-configure.md) bevat de stappen voor het maken van een certificaatprofiel.
-    - **Gebruikersnaam en wachtwoord**: tijdens het aanmelden bij de VPN-server wordt de eindgebruikers gevraagd een gebruikersnaam en wachtwoord in te voeren.
+    - **Gebruikersnaam en wachtwoord**: tijdens het aanmelden bij de VPN-server worden de eindgebruikers gevraagd een gebruikersnaam en wachtwoord in te voeren.
 
-- **Type verbinding**: selecteer het type van de VPN-verbinding. Uw opties zijn:
+- **Verbindingstype**: selecteer het type VPN-verbinding. Uw opties zijn:
 
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**

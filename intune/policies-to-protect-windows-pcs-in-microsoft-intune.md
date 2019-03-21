@@ -6,10 +6,11 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 784ad8366391c55a97ac58d9c1f7ab7707062aa8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 16992d8a80ca42db84cfa071422a779606a99891
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845665"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460076"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>Gebruik beleid voor het beveiligen van Windows-pc’s waarop de Intune-clientsoftware wordt uitgevoerd
 
@@ -43,7 +44,6 @@ Met Windows Firewall kunt u hackers, malware en andere dreigingen buiten Windows
 
 Als IT-beheerder is een van uw eerste prioriteiten [de Windows-pc's die u beheert vrij te houden van malware en virussen](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md). Intune kan worden geïntegreerd met Endpoint Protection voor realtime-beveiliging tegen bedreigingen door malware, voor het bijwerken van malware-definities en het automatisch scannen van computers. Ook biedt Endpoint Protection hulpmiddelen waarmee u malware-aanvallen kunt beheren en controleren.
 
+## <a name="see-also"></a>Zie tevens
 
-
-### <a name="see-also"></a>Zie tevens
-[Instellingen en functies op uw apparaten beheren met Microsoft Intune-beleid](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+[Veelvoorkomende vragen, problemen en oplossingen met apparaatbeleidsregels en profielen](device-profile-troubleshoot.md)

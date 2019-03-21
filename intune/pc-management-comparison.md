@@ -7,9 +7,10 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d94549f150b2c658ba422ea1d6f68c5b5df85e33
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 9c70dbee01c546f73052b8741ce339c7bfe92fc7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238486"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461138"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Het beheer van Windows-pc's als computers of mobiele apparaten vergelijken
 
@@ -53,4 +54,5 @@ Organisaties kunnen Microsoft Intune gebruiken voor het beheren van Windows-pc's
 Het beheer van Windows-pc's met het moderne Mobile Device Management heeft de volgende voordelen:
 - **Schaalbaarheid**: MDM-beheer kan worden opgeschaald voor Intune-cloudbeheer. De Intune-softwareclient is beperkt tot 7000 pc's.
 - **Eenvoud**: maakt gebruik van moderne beheermogelijkheden van het besturingssysteem zonder afhankelijk te zijn van een gedownloade softwareclient
-- **Consistentie**: uw Windows-pc's worden beheerd zoals alle andere mobiele apparaten in uw organisatie <!-- - **Cloud optimization** - -->
+- **Consistentie**: uw Windows-pc's worden beheerd zoals alle andere mobiele apparaten in uw organisatie
+<!-- - **Cloud optimization** - -->

@@ -18,16 +18,16 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cace30f5120bb5c02d3569d9668d336a00f69ff
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 85ccfb526ada4d6851fb32b077d07d3538f90361
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55846839"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows-apparaat inschrijft bij Intune?
 
-Wanneer u de bedrijfsportal-app installeert en deze vervolgens gebruikt om een Windows- of Windows Phone-apparaat in te schrijven, kan het ondersteuningsteam van uw bedrijf uw apparaat beheren ter beveiliging van de bedrijfs- of schoolgegevens. In dit onderwerp wordt beschreven wat er gebeurt met apparaten ouder dan Windows 10. Zie het [relevante onderwerp](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) als het gaat om apparaten met Windows 10.
+Wanneer u de bedrijfsportal-app installeert en deze vervolgens gebruikt om een Windows- of Windows Phone-apparaat in te schrijven, kan het ondersteuningsteam van uw bedrijf uw apparaat beheren ter beveiliging van de bedrijfs- of schoolgegevens. In dit onderwerp wordt beschreven wat er gebeurt met apparaten ouder dan Windows 10. Zie het [relevante onderwerp](about-cp-app-for-windows-10.md) als het gaat om apparaten met Windows 10.  
 
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Wat gebeurt er met alle Windows-apparaten na de inschrijving
 Wanneer u een Windows- of Windows Phone-apparaat in Intune inschrijft, profiteert u van het volgende:
