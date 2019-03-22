@@ -12,6 +12,8 @@ items:
     items:
     - name: Wat is er nieuw in de gebruikersinterface van de app?
       href: whats-new-app-ui.md
+    - name: Functies in ontwikkeling
+      href: in-development.md
   expanded: true
 - name: Snelstartgidsen
   items:
@@ -75,8 +77,6 @@ items:
     href: windows-information-protection-configure.md
   - name: VEELGESTELDE VRAGEN OVER MAM
     href: mam-faq.md
-  - name: Veelgestelde vragen over beleid en profiel
-    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: Handleidingen
   items:
   - name: Implementatie van abonnementen
@@ -225,9 +225,7 @@ items:
       items:
       - name: Device Enrollment Program of Apple School Manager
         href: device-enrollment-program-enroll-macos.md
-    - name: De Intune-softwareclient installeren op Windows-pc's
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: Rapport over afgebroken items
+    - name: Onvolledig inschrijvingsrapport
       href: enrollment-report-company-portal-abandon.md
     - name: Hoe los ik problemen met de inschrijving van apparaten op?
       href: troubleshoot-device-enrollment-in-intune.md
@@ -258,7 +256,7 @@ items:
       href: device-logout-user.md
     - name: Gebruiker verwijderen
       href: device-remove-user.md
-    - name: Apparaat wissen
+    - name: Een macOS-apparaat wissen
       href: device-erase.md
     - name: Extern beheer van mobiele apparaten
       href: device-profile-android-teamviewer.md
@@ -307,6 +305,7 @@ items:
     - name: Apparaatinstellingen en functies beperken
       href: device-restrictions-configure.md
     - name: Updates leveren
+      displayName: delivery optimization; updates
       href: delivery-optimization-windows.md
     - name: Upgrade-edities en S-modus
       href: edition-upgrade-configure-windows-10.md
@@ -363,7 +362,7 @@ items:
         - name: Gegevens die Intune naar Google verzendt
           href: data-intune-sends-to-google.md
         - name: Informatie die door Jamf Pro wordt gedeeld met Intune
-          href: conditional-access-integrate-jamf.md
+          href: data-jamf-sends-to-intune.md
       - name: Persoonlijke gegevens weergeven en corrigeren
         href: privacy-data-view-correct.md
       - name: Controleren, exporteren en verwijderen
@@ -376,6 +375,7 @@ items:
       - name: Exchange On-Premises Connector installeren
         href: exchange-connector-install.md
       - name: Maken en toewijzen van beleid voor voorwaardelijke toegang
+        href: conditional-access-exchange-create.md
       - name: Beleid voor voorwaardelijke toegang op basis van het apparaat
         href: create-conditional-access-intune.md
       - name: Beleid voor voorwaardelijke toegang overbrengen vanuit de klassieke Intune-portal
@@ -448,6 +448,8 @@ items:
       href: network-access-control-integrate.md
     - name: Windows Hello
       href: windows-hello.md
+    - name: Apparaatversleuteling controleren
+      href: encryption-monitor.md
     - name: Certificaten
       href: certificates-configure.md
       items:
@@ -532,6 +534,8 @@ items:
         href: apps-inc-exl-assignments.md
       - name: Windows 10-apps implementeren
         href: apps-windows-10-app-deploy.md
+      - name: Apps implementeren naar Government-omgevingen
+        href: apps-deploy-gcc-dod.md
     - name: Apps bewaken
       href: apps-monitor.md
     - name: Apps configureren
@@ -616,6 +620,8 @@ items:
       href: data-google-sends-to-intune.md
   - name: Help en ondersteuning
     items:
+    - name: Tenantstatus
+      href: tenant-status.md
     - name: Problemen oplossen
       items:
       - name: Gebruikers helpen problemen op te lossen
@@ -624,6 +630,8 @@ items:
         href: troubleshoot-company-resource-access-problems.md
       - name: Problemen met app-installatie oplossen
         href: troubleshoot-app-install.md
+      - name: Problemen met Mobile Application Management oplossen
+        href: troubleshoot-mam.md
       - name: Auditlogboeken voor Intune-activiteiten
         href: monitor-audit-logs.md
       - name: Logboeken controleren met Azure Monitor
@@ -636,14 +644,12 @@ items:
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Problemen met Endpoint Protection oplossen
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-      - name: Beleidsproblemen oplossen
+      - name: Problemen met beleidsregels en profielen oplossen
         href: troubleshoot-policies-in-microsoft-intune.md
       - name: Problemen met voorwaardelijke toegang oplossen
         href: troubleshoot-conditional-access.md
       - name: Problemen met Exchange Connector oplossen
         href: troubleshoot-exchange-connector.md
-    - name: Bekende problemen
-      href: known-issues.md
     - name: Ondersteuning krijgen
       href: get-support.md
 - name: Verwijzing
@@ -660,14 +666,6 @@ items:
           href: device-restrictions-android.md
         - name: E-mail
           href: email-settings-android.md
-        - name: Vertrouwd certificaat
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-certificaat
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS-geïmporteerd certificaat
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS-certificaat
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
@@ -687,16 +685,8 @@ items:
           href: device-restrictions-android-for-work.md
         - name: E-mail
           href: email-settings-android-enterprise.md
-        - name: Vertrouwd certificaat
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-certificaat
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS-geïmporteerd certificaat
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS-certificaat
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
-          href: vpn-settings-android.md#android-for-work-vpn-settings
+          href: vpn-settings-android.md#android-enterprise-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: Aangepast
@@ -713,12 +703,6 @@ items:
           href: device-restrictions-ios.md
         - name: E-mail
           href: email-settings-ios.md
-        - name: Vertrouwd certificaat
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-certificaat
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS-certificaat
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-ios.md
         - name: Wi-Fi
@@ -737,26 +721,20 @@ items:
           href: device-restrictions-macos.md
         - name: Endpoint Protection
           href: endpoint-protection-macos.md
-        - name: Vertrouwd certificaat
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-certificaat
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
         - name: Aangepast
           href: custom-settings-macos.md
-    - name: Beveiligingsbasislijnen
-      items:
-      - name: Instellingen voor Windows-beveiligingsbasislijn
-        href: security-baseline-settings-windows.md
     - name: Windows 10 en hoger
       items:
       - name: Instellingen voor nalevingsbeleid
         href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
       - name: Configuratieprofielinstellingen
         items:
+        - name: Instellingen voor leveringsoptimalisatie
+          href: delivery-optimization-settings.md
         - name: Apparaatbeperkingen
           href: device-restrictions-windows-10.md
         - name: Apparaatbeperkingen (Windows 10 Team)
@@ -771,12 +749,6 @@ items:
           href: identity-protection-windows-settings.md
         - name: Kiosk
           href: kiosk-settings-windows.md
-        - name: Vertrouwd certificaat
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-certificaat
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS-certificaat
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
@@ -787,6 +759,8 @@ items:
           href: shared-user-device-settings-windows.md
         - name: Aangepast
           href: custom-settings-windows-10.md
+      - name: Instellingen voor beveiligingsbasislijn
+        href: security-baseline-settings-windows.md
       - name: Windows Update-instellingen
         href: windows-update-settings.md
     - name: Windows Holographic for Business
@@ -809,10 +783,6 @@ items:
         items:
         - name: Apparaatbeperkingen
           href: device-restrictions-windows-8-1.md
-        - name: Vertrouwd certificaat
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-certificaat
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-8-1.md
         - name: Wi-Fi importeren
@@ -827,10 +797,6 @@ items:
           href: device-restrictions-windows-phone-8-1.md
         - name: E-mail
           href: email-settings-windows-phone-8-1.md
-        - name: Vertrouwd certificaat
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP-certificaat
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
         - name: Aangepast
@@ -854,6 +820,9 @@ items:
         href: app-wrapper-prepare-android.md
       - name: SDK voor Intune-apps voor Android
         href: app-sdk-android.md
+        items:
+        - name: Testhandleiding voor Intune App SDK voor Android
+          href: app-sdk-android-testing-guide.md
       - name: Microsoft Intune App SDK Xamarin Bindings
         href: app-sdk-xamarin.md
     - name: Het Intune-datawarehouse gebruiken
@@ -912,34 +881,6 @@ items:
       href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Resources
   items:
-  - name: Microsoft Intune-documentatiehandleiding
-    href: intune-documentation.md
-  - name: Problemen oplossen
-    items:
-    - name: Gebruikers helpen problemen op te lossen
-      href: help-desk-operators.md
-    - name: Problemen bij toegang tot bedrijfsbronnen oplossen
-      href: troubleshoot-company-resource-access-problems.md
-    - name: Problemen met app-installatie oplossen
-      href: troubleshoot-app-install.md
-    - name: Problemen met Mobile Application Management oplossen
-      href: troubleshoot-mam.md
-    - name: Auditlogboeken voor Intune-activiteiten
-      href: monitor-audit-logs.md
-    - name: App-logboeken voor beveiliging controleren
-      href: app-protection-policy-settings-log.md
-    - name: Problemen met e-mailprofielen oplossen
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: Problemen met software-updates oplossen
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Problemen met Endpoint Protection oplossen
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: Beleidsproblemen oplossen
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: Problemen met voorwaardelijke toegang oplossen
-      href: troubleshoot-conditional-access.md
-    - name: Problemen met Exchange Connector oplossen
-      href: troubleshoot-exchange-connector.md
   - name: Archief
     items:
     - name: Wat is er nieuw (archief)
@@ -1005,9 +946,9 @@ items:
       href: data-outside-protect.md
     - name: Gegevenslekken op niet-beheerde apparaten voorkomen
       href: data-leak-prevention.md
-ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742819"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306856"
