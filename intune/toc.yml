@@ -262,8 +262,6 @@ items:
       href: device-profile-android-teamviewer.md
     - name: Windows 10-pincode opnieuw instellen
       href: device-windows-pin-reset.md
-    - name: Exchange-serviceconnector installeren
-      href: exchange-service-connector-configure.md
     - name: Apparaat synchroniseren
       href: device-sync.md
     - name: Inventaris van mobiele apparaten controleren
@@ -329,6 +327,11 @@ items:
       href: education-settings-configure.md
     - name: Gedeelde apparaten voor meerdere gebruikers
       href: shared-user-device-settings.md
+    - name: Mobility-extensies op Zebra-apparaten
+      href: android-zebra-mx-overview.md
+      items:
+      - name: StageNow-logboeken en veelvoorkomende problemen
+        href: android-zebra-mx-logs-troubleshoot.md
     - name: Telecomkosten controleren
       href: telecom-expenses-monitor.md
     - name: Aangepaste apparaatinstellingen
@@ -854,8 +857,6 @@ items:
             href: reports-ref-user-timeline.md
           - name: Naslag voor toepassingsentiteiten
             href: reports-ref-application.md
-          - name: Naslaginformatie voor huidige gebruikersentiteit
-            href: reports-ref-current-user.md
           - name: Verwijzing voor datumentiteit
             href: reports-ref-date.md
           - name: Informatie voor apparaatentiteiten
@@ -946,9 +947,9 @@ items:
       href: data-outside-protect.md
     - name: Gegevenslekken op niet-beheerde apparaten voorkomen
       href: data-leak-prevention.md
-ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: f342d2ce12fb45db49cf06263807ed4a155fba55
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306856"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394677"
