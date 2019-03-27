@@ -45,7 +45,7 @@ Een gebruiker aan een pc koppelen:
 
    - Als u de pc gekoppeld wilt laten aan de huidige gebruiker (als er een is), kiest u **Annuleren**.
 
-   - Als u de koppeling met de huidige gebruiker (als er een is) wilt verwijderen, kiest u <strong>Koppeling verwijderen**&gt;** OK</strong>.
+   - Als u de koppeling met de huidige gebruiker (als er een is) wilt verwijderen, kiest u <strong>Koppeling verwijderen **&gt;** OK</strong>.
 
    - Als u de pc aan een nieuwe gebruiker wilt koppelen, selecteert u een gebruiker in de lijst **Alle gebruikers**. Controleer of de gebruikersgegevens juist zijn en kies vervolgens **OK**.
 
