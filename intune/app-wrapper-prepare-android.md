@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
-ms.topic: conceptual
+ms.date: 03/11/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b554bd4eb6aa5e49354501e69326b6eeb11098ef
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 64de72822ad8d2f8d9893e3428208ff1363d33e2
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236957"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566043"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Android-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -30,7 +31,6 @@ ms.locfileid: "57236957"
 Gebruik Microsoft Intune App Wrapping Tool voor Android om de werking van in-house Android-apps te wijzigen door de functies van de apps te beperken zonder de code van de apps zelf te wijzigen.
 
 Dit hulpprogramma is een Windows-opdrachtregelprogramma dat wordt uitgevoerd in PowerShell en een 'wrapper' (schil) rond uw app maakt. Als de app eenmaal is verpakt (van een 'wrapper' is voorzien), kunt u vervolgens de functionaliteit van de app wijzigen door [Mobile Application Management-beleid](app-protection-policies.md) te configureren in Intune.
-
 
 Controleer [Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool](#security-considerations-for-running-the-app-wrapping-tool) voordat u het hulpprogramma uitvoert. Als u dit hulpprogramma wilt downloaden, gaat u naar [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) op GitHub.
 
@@ -53,10 +53,12 @@ Controleer [Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool](#
 
 - Android vereist dat alle app-pakketten (.apks) zijn ondertekend. Zie [Ondertekeningscertificaten hergebruiken en apps verpakken](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps) als u bestaande certificaten **opnieuw wilt gebruiken** en voor hulp bij het algemeen ondertekenen van certificaten. Het uitvoerbare Java-bestand keytool.exe wordt gebruikt om **nieuwe** referenties te genereren die nodig zijn om de verpakte uitvoer-app te ondertekenen. Ingestelde wachtwoorden moeten veilig zijn, maar onthoud ze goed, want ze zijn later nodig om App Wrapping Tool uit te voeren.
 
-> [!NOTE]
-> De Intune App Wrapping Tool biedt geen ondersteuning voor handtekeningschema v2 en het toekomstige schema v3 van Google voor app-ondertekening. Nadat u het APK-bestand met de Intune App Wrapping Tool hebt verpakt, kunt u het beste het door [Google geleverde Apksigner-hulpprogramma]( https://developer.android.com/studio/command-line/apksigner) gebruiken. Dit zorgt ervoor dat wanneer uw app op apparaten van de eindgebruiker wordt gedownload, het correct kan worden gestart volgens Android-standaarden. 
+    > [!NOTE]
+    > De Intune App Wrapping Tool biedt geen ondersteuning voor handtekeningschema v2 en het toekomstige schema v3 van Google voor app-ondertekening. Nadat u het APK-bestand met de Intune App Wrapping Tool hebt verpakt, kunt u het beste het door [Google geleverde Apksigner-hulpprogramma]( https://developer.android.com/studio/command-line/apksigner) gebruiken. Dit zorgt ervoor dat wanneer uw app op apparaten van de eindgebruiker wordt gedownload, het correct kan worden gestart volgens Android-standaarden. 
 
-- (Optioneel) Schakel Multidex in binnen de invoer-app. Soms bereikt een app de Dalvik Executable-groottelimiet (DEX) als gevolg van de Intune MAM SDK-klassen die tijdens het verpakken worden toegevoegd. DEX-bestanden maken deel uit van de compilatie van een Android-app. In dit scenario wordt het aanbevolen Multidex binnen de app zelf in te schakelen. In bepaalde organisaties vereist dit mogelijk samenwerking met de persoon die de app compileert. 
+- (Optioneel) soms bereikt een app de Dalvik Executable-groottelimiet (DEX) als gevolg van de Intune MAM SDK-klassen die tijdens het verpakken worden toegevoegd. DEX-bestanden maken deel uit van de compilatie van een Android-app. De Intune App Wrapping Tool verwerkt automatisch DEX bestand overloop tijdens de wrapping voor apps met een minimale API-niveau van 21 of hoger (vanaf [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Voor apps met een minimale API-niveau van < 21, best practices zou zijn om te verhogen van de minimale waarde API-niveau met behulp van de wrapper `-UseMinAPILevelForNativeMultiDex` vlag. De volgende DEX overloop oplossingen zijn beschikbaar voor klanten kan niet van de app minimale API-niveau verhogen. In bepaalde organisaties vereist dit mogelijk samenwerking met de persoon die de app compileert:
+* ProGuard gebruiken voor het verwijderen van ongebruikte klasse verwijzingen van de primaire DEX-bestand van de app.
+* Voor klanten die gebruikmaken van v3.1.0 of hoger van de invoegtoepassing Android Gradle, schakelen de [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 
 ## <a name="install-the-app-wrapping-tool"></a>De App Wrapping Tool installeren
 
@@ -93,6 +95,7 @@ Onthoud in welke map het hulpprogramma is geïnstalleerd. De standaardlocatie is
 |**-KeyAlias**&lt;tekenreeks&gt;|Naam van de sleutel die moet worden gebruikt voor het ondertekenen.| |
 |**-KeyPassword**&lt;SecureString&gt;|Wachtwoord dat wordt gebruikt om de persoonlijke sleutel te ontsleutelen die wordt gebruikt voor het ondertekenen.| |
 |**-SigAlg**&lt;SecureString&gt;| (Optioneel) De naam van het handtekeningalgoritme dat moet worden gebruikt voor de ondertekening. Het algoritme moet compatibel zijn met de persoonlijke sleutel.|Voorbeelden: SHA256withRSA, SHA1withRSA|
+|**-UseMinAPILevelForNativeMultiDex**| (Optioneel) Deze vlag gebruiken voor het verhogen van de bron Android-app minimale API-niveau op 21. Met deze markering wordt gevraagd om bevestiging als deze wordt beperkt die deze app kunnen installeren. Gebruikers toevoegen door de parameter toe te voegen kunnen overslaan '-bevestigen: $false "aan hun PowerShell-opdracht. De vlag mag alleen worden gebruikt door klanten van apps met minimale API < 21 die niet voldoen aan het verpakken is vanwege DEX overloopfouten. | |
 | **&lt;CommonParameters&gt;** | (Optioneel) De opdracht ondersteunt algemene PowerShell-parameters, zoals verbose, debug enzovoort. |
 
 

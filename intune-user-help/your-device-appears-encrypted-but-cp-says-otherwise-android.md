@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9444a124b9b8a47633f544205940dadb3df0fd8f
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
-ms.translationtype: HT
+ms.openlocfilehash: 55935b2f69f9573d8df5ea5ca32fb4587c652b26
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57335000"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57389465"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Uw Android-apparaat lijkt versleuteld te zijn, maar de Bedrijfsportal geeft anders aan
 
@@ -63,16 +63,15 @@ Sommige Android-apparaten met versie 7.0+ versleutelen gegevens op een manier di
 
 ### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>Bekende apparaten die kunnen worden bijgewerkt om dit probleem op te lossen
 
-Als u een van de volgende apparaten hebt, kan dit probleem optreden als u uw apparaat niet hebt bijgewerkt naar de meest recente versie van Android. U kunt de updates voor deze apparaten installeren bij **Instellingen** > **Bijwerken**. 
+Als u uw apparaat nog niet hebt bijgewerkt naar de meest recente versie van Android, gaat u naar uw apparaat **instellingen** app en selecteer **Update**. Deze apparaten worden weergegeven als niet compatibel totdat u bijwerken:  
 
-- [Huawei Honor 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [Huawei P9](https://consumer.huawei.com/en/phones/p9/)
+- Huawei Honor 8
+- Huawei P9
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>Bekende apparaten die momenteel niet kunnen worden bijgewerkt om dit probleem op te lossen
+De volgende apparaten wordt altijd versleuteld weergegeven en kunnen niet worden gebruikt voor toegang tot bedrijfsresources. Voor toegang tot bedrijfsresources, moet u een ander apparaat gebruiken.  
 
-U kunt dit probleem niet oplossen voor de volgende apparaten. U moet wellicht een ander apparaat gebruiken voor toegang tot bedrijfsresources. 
-
-- [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [OPPO-apparaten](https://www.oppo.com/en/smartphones)
-- [Vivo-apparaten](https://www.vivo.co.in)
-- [Xiaomi Mi-smartphones](https://xiaomi-mi.com/mi-smartphones/)
+- Huawei Mate 8
+- OPPO-apparaten
+- Vivo-apparaten
+- Xiaomi Mi-smartphones

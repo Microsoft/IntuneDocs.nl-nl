@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/11/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bc681b017cef5a91e7bc10bbdfbd6e14943e43a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 1cf1daf42d1dfcd8dd25304040e868581a056943
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229085"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566404"
 ---
 # <a name="email-profile-settings-for-ios-devices-in-intune"></a>E-mailprofielinstellingen voor iOS-apparaten in Intune
 
@@ -33,27 +34,27 @@ In dit artikel worden alle e-mailinstellingen vermeld en beschreven, die beschik
 
 ## <a name="email-settings"></a>E-mailinstellingen
 
-- **E-mailserver**: Voer de hostnaam van uw Exchange-server in.
-- **Accountnaam**: Voer de weergavenaam voor het e-mailaccount in. Deze naam zien gebruikers op hun apparaat.
-- **Het kenmerk Gebruikersnaam van AAD**: Deze naam is het kenmerk dat Intune uit Azure Active Directory (AAD) ophaalt. In Intune wordt de gebruikersnaam die wordt gebruikt door dit profiel dynamisch gegenereerd. Uw opties zijn:
-  - **User Principal Name**: Hiermee wordt de naam opgehaald, zoals `user1` of `user1@contoso.com`
-  - **Primair SMTP-adres**: Hiermee haalt u de naam op in de indeling van het e-mailadres, zoals `user1@contoso.com`
-  - **sAM-accountnaam**: Hiervoor is het domein vereist, zoals `domain\user1`.
+- **E-mailserver**: voer de hostnaam in van uw Exchange-server.
+- **Accountnaam**: voer de weergavenaam in voor het e-mailaccount. Deze naam zien gebruikers op hun apparaat.
+- **Het kenmerk gebruikersnaam van AAD**: deze naam is het kenmerk dat Intune uit Azure Active Directory (AAD) ophaalt. In Intune wordt de gebruikersnaam die wordt gebruikt door dit profiel dynamisch gegenereerd. Uw opties zijn:
+  - **User Principal Name**: hiermee wordt de naam opgehaald, zoals `user1` of `user1@contoso.com`
+  - **Primair SMTP-adres**: haalt de naam op in de indeling van het e-mailadres, zoals `user1@contoso.com`
+  - **sAM-accountnaam**: hiervoor is het domein vereist, zoals `domain\user1`.
 
     Voer ook in:  
-    - **Bron van gebruikersdomeinnaam**: Kies **AAD** (Azure Active Directory) of **Aangepast**.
+    - **Bron van gebruikersdomeinnaam**: kies **AAD** (Azure Active Directory) of **Aangepast**.
 
       Voer, wanneer u ervoor kiest om de kenmerken op te halen van **AAD**, het volgende in:
-      - **Het kenmerk Gebruikersdomeinnaam van AAD**: Kies de optie om de **volledige domeinnaam** of het kenmerk **NetBIOS-naam** van de gebruiker op te halen
+      - **Kenmerk voor gebruikersdomeinnaam van AAD**: kies de optie om de **volledige domeinnaam** of het kenmerk **NetBIOS-naam** van de gebruiker op te halen
 
       Wanneer u ervoor kiest om **aangepaste** kenmerken te gebruiken, moet u het volgende invoeren:
-      - **Te gebruiken aangepaste domeinnaam**: Voer een waarde in die Intune voor de domeinnaam gebruikt, zoals `contoso.com` of `contoso`
+      - **Te gebruiken aangepaste domeinnaam**: voer een waarde in die Intune voor de domeinnaam gebruikt, zoals `contoso.com` of `contoso`
 
-- **Kenmerk van het e-mailadres van AAD**: Kies op welke manier het e-mailadres voor de gebruiker wordt gegenereerd. Selecteer **User principal name** (`user1@contoso.com` of `user1`) om de volledige principal-naam als het e-mailadres te gebruiken. Selecteer **Primair SMTP-adres** (`user1@contoso.com`) om u met het primaire SMTP-adres bij Exchange aan te melden.
-- **Verificatiemethode**: Selecteer **Gebruikersnaam en wachtwoord** of **Certificaten** als verificatiemethode voor het e-mailprofiel. Meervoudige verificatie van Azure wordt niet ondersteund.
+- **Kenmerk van het e-mailadres van AAD**: kies op welke manier het e-mailadres voor de gebruiker wordt gegenereerd. Selecteer **User principal name** (`user1@contoso.com` of `user1`) om de volledige principal-naam als het e-mailadres te gebruiken. Selecteer **Primair SMTP-adres** (`user1@contoso.com`) om u met het primaire SMTP-adres bij Exchange aan te melden.
+- **Verificatiemethode**: selecteer **Gebruikersnaam en wachtwoord** of **Certificaten** als verificatiemethode voor het e-mailprofiel. Meervoudige verificatie van Azure wordt niet ondersteund.
   - Als u **Certificaat** hebt geselecteerd, selecteert u een SCEP- of PKCS-clientcertificaatprofiel dat u eerder hebt gemaakt en dat wordt gebruikt voor verificatie van de Exchange-verbinding.
-- **SSL**: U kunt deze optie **inschakelen** om SSL-communicatie (Secure Sockets Layer) te gebruiken wanneer u e-mailberichten verzendt, e-mailberichten ontvangt en communiceert met de Exchange-server.
-- **OAuth**: Met **Inschakelen** gebruikt u OAuth-communicatie (Open Authorization) om e-mails te verzenden en te ontvangen en met Exchange te communiceren. Als uw OAuth-server verificatie van certificaten gebruikt, kiest u **Certificaat** als **Verificatiemethode** en voegt u het certificaat in het profiel in. Kies anders **Gebruikersnaam en wachtwoord** als **verificatiemethode**. Als u OAuth gebruikt, moet u:
+- **SSL**: u kunt deze optie **inschakelen** om SSL-communicatie (Secure Sockets Layer) te gebruiken wanneer u e-mailberichten verzendt, e-mailberichten ontvangt en communiceert met de Exchange-server.
+- **OAuth**: **Inschakelen** gebruikt OAuth-communicatie (Open Authorization) om e-mails te verzenden en te ontvangen en met Exchange te communiceren. Als uw OAuth-server verificatie van certificaten gebruikt, kiest u **Certificaat** als **Verificatiemethode** en voegt u het certificaat in het profiel in. Kies anders **Gebruikersnaam en wachtwoord** als **verificatiemethode**. Als u OAuth gebruikt, moet u:
 
   - Controleren of uw e-mailoplossing OAuth ondersteunt voordat u dit profiel naar uw gebruikers stuurt. Controleren of Office 365 Exchange online ondersteuning biedt voor OAuth. Mogelijk bieden on-premises Exchange en andere oplossingen van partners of derden geen ondersteuning voor OAuth. On-premises Exchange kan worden geconfigureerd voor Modern Authentication (zie de blogpost [Announcing Hybrid Modern Authentication for Exchange On-Premises](https://blogs.technet.microsoft.com/exchange/2017/12/06/announcing-hybrid-modern-authentication-for-exchange-on-premises/) (Aankondiging van Hybride moderne verificatie voor on-premises Exchange)).
 
@@ -70,29 +71,29 @@ In dit artikel worden alle e-mailinstellingen vermeld en beschreven, die beschik
   > 1. Apparaten die al als doel zijn ingesteld, krijgen een nieuw profiel.
   > 2. Eindgebruikers wordt gevraagd hun referenties opnieuw in te voeren.
 
-- **S/MIME**: **Schakel S/MIME in**, waarmee gebruikers zich kunnen aanmelden en/of e-mail kunnen versleutelen in de systeemeigen iOS-e-mailtoepassing. 
+- **S/MIME**: **schakel S/MIME in**, waarmee gebruikers zich kunnen aanmelden en/of e-mail kunnen versleutelen in de systeemeigen iOS-e-mailtoepassing. 
 
   Wanneer u S/MIME bij een e-mailbericht gebruikt, bevestigt u de authenticiteit van de afzender en de integriteit en vertrouwelijkheid van het bericht.
 
   - **S/MIME-ondertekening ingeschakeld**: Kies **Inschakelen** om gebruikers uitgaande e-mailberichten digitaal te laten ondertekenen voor het account dat u hebt ingevoerd. Ondertekening biedt gebruikers die berichten ontvangen de zekerheid dat het bericht afkomstig is van de specifieke afzender en niet van iemand die zich voordoet als de afzender. Met **Uitschakelen** wordt gebruikers niet toegestaan om het bericht digitaal te ondertekenen.
-    - **Gebruiker toestaan de instelling te wijzigen**: Kies **Inschakelen** om gebruikers toe te staan om S/MIME-ondertekeningsgedrag te wijzigen. Met **Uitschakelen** voorkomt u dat gebruikers de S/MIME-ondertekeningsinstelling wijzigen die u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
+    - **Gebruiker toestaan te wijzigen van de instelling**: kies **inschakelen** gebruikers van S/MIME-ondertekening gedrag wijzigen. Met **Uitschakelen** voorkomt u dat gebruikers de S/MIME-ondertekeningsinstelling wijzigen die u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
 
-  - **S/MIME-ondertekeningscertificaat**: Selecteer een bestaand PKCS- of SCEP-certificaatprofiel dat wordt gebruikt voor het ondertekenen van e-mailberichten.
-    - **Gebruiker toestaan de instelling te wijzigen**: Kies **Inschakelen** om gebruikers toe te staan om het ondertekeningscertificaat te wijzigen. Met **Uitschakelen** voorkomt u dat gebruikers het ondertekeningscertificaat wijzigen en dwingt u gebruikers het certificaat te gebruiken dat u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
+  - **S/MIME-ondertekeningscertificaat**: selecteer een bestaand PKCS- of SCEP-certificaatprofiel dat wordt gebruikt voor het ondertekenen van e-mailberichten.
+    - **Gebruiker toestaan te wijzigen van de instelling**: kies **inschakelen** waarmee gebruikers kunnen wijzigen van het certificaat voor ondertekening. Met **Uitschakelen** voorkomt u dat gebruikers het ondertekeningscertificaat wijzigen en dwingt u gebruikers het certificaat te gebruiken dat u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
 
-  - **Standaard versleutelen**: Met **Inschakelen** worden alle berichten standaard versleuteld. Met **Uitschakelen** worden alle berichten standaard niet versleuteld.
-    - **Gebruiker toestaan de instelling te wijzigen**: Kies **Inschakelen** om gebruikers toe te staan het standaardgedrag voor versleuteling te wijzigen. Met **Uitschakelen** voorkomt u dat gebruikers het standaardgedrag voor versleuteling wijzigen en dwingt u gebruikers de instelling te gebruiken die u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
+  - **Versleutelen standaard**: **inschakelen** versleutelt u alle berichten als standaardgedrag. Met **Uitschakelen** worden alle berichten standaard niet versleuteld.
+    - **Gebruiker toestaan te wijzigen van de instelling**: kies **inschakelen** waarmee gebruikers kunnen wijzigen van het standaardgedrag voor versleuteling. Met **Uitschakelen** voorkomt u dat gebruikers het standaardgedrag voor versleuteling wijzigen en dwingt u gebruikers de instelling te gebruiken die u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
 
-  - **Versleuteling per bericht afdwingen**: Met Versleuteling per bericht kunnen gebruikers kiezen welke e-mailberichten worden versleuteld voordat ze worden verzonden. Kies **Inschakelen** om de optie Versleuteling per bericht weer te geven bij het maken van een nieuw e-mailbericht. Gebruikers kunnen vervolgens voor opt-in of opt-out kiezen ten aanzien van Versleuteling per bericht. Met **Uitschakelen** wordt voorkomen dat de optie Versleuteling per bericht wordt weergegeven.
+  - **Versleuteling per bericht afdwingen**: met Versleuteling per bericht kunnen gebruikers kiezen welke e-mailberichten worden versleuteld voordat ze worden verzonden. Kies **Inschakelen** om de optie Versleuteling per bericht weer te geven bij het maken van een nieuw e-mailbericht. Gebruikers kunnen vervolgens voor opt-in of opt-out kiezen ten aanzien van Versleuteling per bericht. Met **Uitschakelen** wordt voorkomen dat de optie Versleuteling per bericht wordt weergegeven.
 
     Als de instelling **Standaard versleutelen** is ingeschakeld, kunnen gebruikers door Versleuteling per bericht in te schakelen ervoor kiezen om per bericht versleuteling uit te schakelen. Als de instelling **Standaard versleutelen** is uitgeschakeld, kunnen gebruikers door Versleuteling per bericht in te schakelen ervoor kiezen om per bericht versleuteling in te schakelen.
 
-  - **S/MIME-versleutelingscertificaat**: Selecteer een bestaand PKCS- of SCEP-certificaatprofiel dat wordt gebruikt voor het versleutelen van e-mailberichten.
-    - **Gebruiker toestaan de instelling te wijzigen**: Kies **Inschakelen** om gebruikers toe te staan om het versleutelingscertificaat te wijzigen. Met **Uitschakelen** voorkomt u dat gebruikers het versleutelingscertificaat wijzigen en dwingt u gebruikers het certificaat te gebruiken dat u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
-- **Aantal dagen e-mail voor synchronisatie**: Kies het aantal dagen waarvoor u e-mail wilt synchroniseren. Of selecteer **Onbeperkt** om alle beschikbare e-mail te synchroniseren.
-- **Toestaan dat berichten worden verplaatst naar andere e-mailaccounts**: Met **Inschakelen** wordt gebruikers toegestaan om e-mailberichten te verplaatsen tussen de verschillende accounts die ze op hun apparaat hebben geconfigureerd.
-- **Toestaan dat e-mail wordt verzonden vanuit toepassingen van derden**: Met **Inschakelen** kunnen gebruikers dit profiel als standaardaccount voor het verzenden van e-mail selecteren. Hiermee staat u toe dat toepassingen van derden e-mails kunnen openen in de systeemeigen e-mail-app om er bijvoorbeeld bestanden als bijlage aan toe te voegen.
-- **Recent gebruikte e-mailadressen synchroniseren**: Met **Inschakelen** staat u toe dat gebruikers de lijst synchroniseren met e-mailadressen die onlangs zijn gebruikt op het apparaat met de server.
+  - **S/MIME-versleutelingscertificaat**: selecteer een bestaand PKCS- of SCEP-certificaatprofiel dat wordt gebruikt voor het versleutelen van e-mailberichten.
+    - **Gebruiker toestaan te wijzigen van de instelling**: kies **inschakelen** waarmee gebruikers kunnen wijzigen van het versleutelingscertificaat. Met **Uitschakelen** voorkomt u dat gebruikers het versleutelingscertificaat wijzigen en dwingt u gebruikers het certificaat te gebruiken dat u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
+- **Aantal dagen e-mail voor synchronisatie**: kies het aantal dagen waarvoor u e-mail wilt synchroniseren. Of selecteer **Onbeperkt** om alle beschikbare e-mail te synchroniseren.
+- **Toestaan dat berichten worden verplaatst naar andere e-mailaccounts**: u kunt deze optie **inschakelen** om toe te staan dat gebruikers e-mailberichten verplaatsen naar andere accounts die gebruikers op hun apparaat hebben geconfigureerd.
+- **Toestaan dat e-mails worden verzonden vanuit toepassingen van derden**: met **Inschakelen** kunnen gebruikers dit profiel als standaardaccount voor het verzenden van e-mail selecteren. Hiermee staat u toe dat toepassingen van derden e-mails kunnen openen in de systeemeigen e-mail-app om er bijvoorbeeld bestanden als bijlage aan toe te voegen.
+- **Recent gebruikte e-mailadressen synchroniseren**: u kunt deze optie **inschakelen** om toe te staan dat gebruikers de lijst synchroniseren met e-mailadressen die onlangs zijn gebruikt op het apparaat met de server.
 
 ## <a name="next-steps"></a>Volgende stappen
 

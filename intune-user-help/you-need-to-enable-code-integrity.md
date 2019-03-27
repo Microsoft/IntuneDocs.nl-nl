@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,27 @@ ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: chrisbal
+ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34bad76c3b6ff00b42eac70bcd870ef4d59ab017
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: d258fcb7f338e4177c31a5c77b92b5941b7db212
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839944"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56426923"
 ---
-# <a name="you-need-to-enable-code-integrity"></a>U moet Code-integriteit inschakelen
+# <a name="enable-code-integrity"></a>Code-integriteit inschakelen
 
-Bij het bewaren van de gegevens van uw organisatie zijn verschillende beveiligingstypen vereist om verschillende soorten problemen te voorkomen. Een van de manieren om die beveiliging in stand te houden is het gebruik van Code-integriteit van Windows, waarmee wordt gecontroleerd of programma's op diepere niveaus (stuurprogramma's) en systeembestanden ongewijzigd zijn gebleven.
+Uw organisatie vereist mogelijk uw PC te worden ingeschakeld met een threat protection-functie, genaamd *code-integriteit*. Code-integriteit controleert u de stuurprogramma's en bestanden op uw apparaat voor het tekenen van beschadiging of schadelijke software. Code-integriteit te werken op uw apparaat, een andere beveiligingsfunctie genoemd [ *beveiligd opstarten* ](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) moet ook worden ingeschakeld. 
 
-Code-integriteit wordt automatisch ingeschakeld wanneer uw systeem actief gebruikmaakt van Beveiligd opstarten.
+Als uw PC is niet compatibel omdat de code-integriteit is uitgeschakeld, moet u contact opnemen van uw organisatie IT ondersteuningsteam. Ze helpen u bij het inschakelen van beveiligd opstarten, die code-integriteit de volgende keer dat u het apparaat start wordt geactiveerd. 
 
-> [!Tip]
-> Het inschakelen van Beveiligd opstarten is een geavanceerde taak. Het wordt aanbevolen contact op te nemen met het ondersteuningsteam van het bedrijf voor hulp bij deze taak.
+Als u zichzelf als de gebruiker van een geavanceerde apparaat identificeren en probeert u de stappen op uw eigen wilt, Zie [beveiligd opstarten opnieuw inschakelen](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
-Als u het idee hebt dat u in staat bent deze taak zelf uit te voeren, raadpleegt u de sectie 'Beveiligd opstarten opnieuw inschakelen' op de pagina [Beveiligd opstarten uitschakelen](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) als u Beveiligd opstarten wilt inschakelen.
+## <a name="additional-resources-for-it-administrators"></a>Aanvullende bronnen voor IT-beheerders  
+Als u een Intune-beheerder en wilt u meer informatie over de status van Intune-nalevingsbeleid apparaatinstellingen, Zie [toevoegen van een nalevingsbeleid voor Windows 10-apparaten in Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-10-and-later-policy-settings). Zie voor een gedetailleerde Kijk op de nalevingsacties die u in Intune kunt uitvoeren, de [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
+## <a name="next-steps"></a>Volgende stappen  
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

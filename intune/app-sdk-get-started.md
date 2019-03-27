@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
-ms.topic: article
+ms.date: 02/24/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
@@ -16,31 +17,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac9c8ca0b04cbb6f7cf570134a6f4bdce7bf57ed
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
-ms.translationtype: HT
+ms.openlocfilehash: 23c254094281c7591730b2972ec0de41f5243e66
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325449"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566383"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
-Met deze handleiding kunt u uw mobiele app snel geschikt maken voor beleid voor app-beveiliging met Microsoft Intune. Wellicht vindt u het handig om eerst inzicht te krijgen in de voordelen van de Intune App SDK, zoals uitgelegd in [Overzicht van de Intune App SDK](app-sdk.md).
+Met deze handleiding kunt u uw mobiele app snel geschikt maken voor ondersteuning van het beleid voor app-beveiliging met Microsoft Intune. Wellicht vindt u het handig om eerst inzicht te krijgen in de voordelen van de Intune App SDK, zoals uitgelegd in [Overzicht van de Intune App SDK](app-sdk.md).
 
-De Intune App SDK biedt ondersteuning voor vergelijkbare scenario's op iOS en Android, en is ervoor bedoeld om een consistente ervaring voor IT-beheerders te leveren op de verschillende platformen. Er zijn kleine verschillen in de ondersteuning van bepaalde functies vanwege beperkingen van de platformen.
+De Intune App SDK biedt ondersteuning voor vergelijkbare scenario's op iOS en Android, en is ervoor bedoeld om een consistente ervaring voor IT-beheerders te leveren op de verschillende platformen. Er zijn kleine verschillen in de ondersteuning van bepaalde functies vanwege vrschillen tussen en beperkingen van de platformen.
 
 ## <a name="register-your-store-app-with-microsoft"></a>Uw Store-app registreren bij Microsoft
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Als uw app alleen intern in uw organisatie wordt gebruikt en niet openbaar beschikbaar wordt gesteld, geldt het volgende:
 
-U hoeft uw app *niet* te registreren. Voor interne line-of-business-apps implementeert de beheerder de app intern. Intune detecteert dat de app is gemaakt met de SDK waarna de IT-beheerder het beleid voor app-beveiliging erop kan toepassen. U kunt verdergaan naar de sectie [Uw mobiele iOS- of Android-app geschikt maken voor beleid voor app-beveiliging](#enable-your-iOS-or-Android-app-for-app-protection-policy).
+U hoeft uw app _**niet**_ te registreren. Voor interne [line-of-business (LOB)-apps](apps-add.md#app-types-in-microsoft-intune) die zijn geschreven door of voor uw bedrijf, de IT-beheerder implementeert de app intern. Intune detecteert dat de app is gemaakt met de SDK waarna de IT-beheerder het beleid voor app-beveiliging erop kan toepassen. U kunt verdergaan naar de sectie [Uw mobiele iOS- of Android-app geschikt maken voor beleid voor app-beveiliging](#enable-your-iOS-or-Android-app-for-app-protection-policy).
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Als uw app wordt uitgebracht in een openbare app-store, zoals de Apple App Store of Google Play, geldt het volgende:
 
-U _**moet**_ uw app eerst registreren bij Microsoft Intune en akkoord gaan met de voorwaarden van de registratie. Na de registratie kunnen IT-beheerders beleid voor app-beveiliging toepassen op de beheerde app, die wordt vermeld als app-partner van Intune.
+U _**moet**_ uw app eerst registreren bij Microsoft Intune en akkoord gaan met de voorwaarden van de registratie. Na de registratie kunnen IT-beheerders een beleid voor app-beveiliging toepassen op de beheerde app, die wordt vermeld als met [Intune beveiligde app-partner](apps-supported-intune-apps.md#partner-apps).
 
 Zolang de registratie nog niet is voltooid en bevestigd door het team van Microsoft Intune, krijgen Intune-beheerders nog niet de mogelijkheid om beleid voor app-beveiliging toe te passen op de dieptekoppeling van uw app. Uw app wordt ook toegevoegd aan de [pagina voor Microsoft Intune-partners](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). Op deze pagina wordt het pictogram van uw app weergegeven om aan te geven dat de app het Intune-beleid voor app-beveiliging ondersteunt.
 
+### <a name="the-registration-process"></a>Het registratieproces
 Als u aan het registratieproces wilt beginnen en u nog niet werkt met een Microsoft-contactpersoon, vult u de [enquête voor Microsoft Intune-app-partners](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR80SNPjnVA1KsGiZ89UxSdVUMEpZNUFEUzdENENOVEdRMjM5UEpWWjJFVi4u) in.
 
 De e-mailadressen die u vermeldt in uw antwoorden, worden gebruikt om contact met u op te nemen voor het vervolg van het registratieproces. Ook wordt het e-mailadres voor registratie gebruikt om contact met u op te nemen bij verdere vragen.
@@ -84,7 +86,7 @@ U hebt een van de volgende handleidingen voor ontwikkelaars nodig om de App Intu
 
 * **[Ontwikkelaarshandleiding voor Intune App SDK voor Android](app-sdk-android.md)**: in dit document wordt u stapsgewijs begeleid bij het geschikt maken van uw systeemeigen Android-app voor de Intune App SDK.
 
-* **[Handleiding voor Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)**: dit document bevat informatie over het maken van iOS- en Android-apps met Xamarin voor het beveiligingsbeleid voor apps in Intune.
+* **[Handleiding Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)**: dit document bevat informatie over het bouwen van iOS- en Android-apps met Xamarin voor het Intune-beleid voor app-beveiliging.
 
 
 
@@ -94,17 +96,17 @@ U hebt een van de volgende handleidingen voor ontwikkelaars nodig om de App Intu
  
  * De app is gebouwd met de [Azure Active Directory-verificatiebibliotheek](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) en geschikt gemaakt voor AAD Broker-verificatie.
  
- * De [AAD-client-id](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) voor uw app moet uniek zijn voor de iOS- en Android-platformen.
+ * De [AAD-client-id](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) voor uw app moet uniek zijn voor de iOS- en Android-platformen.
  
 ## <a name="configure-telemetry-for-your-app"></a>Telemetrie configureren voor uw app
 
 Met Microsoft Intune worden gebruiksstatistieken verzameld voor uw app.
 
-* **Intune App SDK voor iOS**: de SDK registreert standaard SDK-telemetriegegevens voor gebruiksgebeurtenissen. Deze gegevens worden naar Microsoft Intune verzonden.
+* **Intune App SDK voor iOS**: de SDK registreert standaard SDK-telemetriegegevens van gebruiksgebeurtenissen. Deze gegevens worden naar Microsoft Intune verzonden.
 
     * Als u ervoor kiest geen SDK-telemetriegegevens vanuit uw app naar Microsoft Intune te verzenden, moet u het vastleggen van telemetriegegevens uitschakelen door 'JA' in te schakelen voor de eigenschap `MAMTelemetryDisabled` in het IntuneMAMSettings-woordenboek .
 
-* **Intune App SDK voor Android**: De Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-app registreert standaard telemetriegegevens. Deze gegevens worden naar Microsoft Intune verzonden. Geheel volgens het Microsoft-beleid worden er geen persoonsgegevens verzameld. 
+* **Intune App SDK voor Android**: de Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-app registreert standaard telemetriegegevens. Deze gegevens worden naar Microsoft Intune verzonden. Geheel volgens het Microsoft-beleid worden er geen persoonsgegevens verzameld. 
 
     * Als eindgebruikers ervoor kiezen deze gegevens niet te verzenden, moeten ze telemetrie uitschakelen onder Instellingen op de bedrijfsportal-app. Zie [Gegevensverzameling door Microsoft uitschakelen](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android) voor meer informatie. 
 
@@ -154,15 +156,15 @@ Buildnummer|CFBundleVersion|PackageVersionCode |Met dit nummer wordt een iterati
 ### <a name="test-your-app"></a>Uw app testen
 Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integreren met de Intune App SDK, moet u ervoor zorgen dat alle beleid voor app-beveiliging is ingeschakeld en correct werkt voor de gebruiker en de IT-beheerder. Als u uw geïntegreerde app wilt testen, gaat u als volgt te werk:
 
-* **Microsoft Intune-testaccount**: als u uw door Intune beheerde app wilt testen aan de hand van beveiligingsfuncties voor apps in Intune, hebt u een Microsoft Intune-account nodig.
+* **Microsoft Intune-testaccount**: als u uw door Intune beheerde app wilt testen aan de hand van beveiligingsfuncties voor Intune-apps, hebt u een Microsoft Intune-account nodig.
 
     * Als u een ISV bent die apps voor de iOS of Android Store wilt inschakelen voor Intune-beleid voor app-beveiliging, ontvangt u een promotiecode nadat u de registratie bij Microsoft Intune hebt voltooid. Dit wordt beschreven in de registratiestap. Met de promotiecode kunt u zich aanmelden voor een Microsoft Intune-proefversie met uitgebreid gebruik van één jaar.
 
-    * Als u een Line-Of-Business-app ontwikkelt die niet naar de Store word verzonden, wordt ervan uitgegaan dat u via uw organisatie toegang hebt tot Microsoft Intune. U kunt zich ook registreren voor een gratis proefversie van één maand via [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
+    * Als u een Line-Of-Business-app ontwikkelt die niet naar de Store word verzonden, wordt ervan uitgegaan dat u via uw organisatie toegang hebt tot Microsoft Intune. U kunt zich ook registreren voor een gratis proefversie van één maand via [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
     
-    * Zorg ervoor, als u uw app op een mobiel apparaat met een eindgebruikeraccount test, dat u dat account een Intune-licentie hebt gegeven in de beheerportal van de Office-website nadat u bent aangemeld met een beheerdersaccount. Zie [Microsoft Intune-licentie toewijzen](https://docs.microsoft.com/en-ca/intune/licenses-assign).
+    * Zorg ervoor, als u uw app op een mobiel apparaat met een eindgebruikeraccount test, dat u dat account een Intune-licentie hebt gegeven op de website van ht Microsoft 365-beheercentrum nadat u bent aangemeld met een beheerdersaccount. Zie [Microsoft Intune-licentie toewijzen](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
-* **Beveiligingsbeleid voor apps in Intune**: als u uw app wilt testen aan de hand van al het beveiligingsbeleid voor apps in Intune, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](app-protection-policy-settings-android.md).
+* **Intune-beleid voor app-beveiliging**: als u uw app wilt testen aan de hand van alle Intune-beleid voor app-beveiliging, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](app-protection-policy-settings-android.md).
 
 * **Probleemoplossing**: als u problemen ondervindt tijdens het handmatig testen van de gebruikerservaring van uw app-installatie, gaat u naar [Problemen met app-installatie oplossen](troubleshoot-app-install.md). 
 

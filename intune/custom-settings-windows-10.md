@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86c822ba197851fe7e05d91ff8aa703fb9fe3811
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 44be460ee910818d52179da55151d1bceeb8b306
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842778"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565907"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Aangepaste instellingen gebruiken voor Windows 10-apparaten in Intune
 
@@ -43,17 +44,17 @@ In dit artikel wordt het volgende beschreven:
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 3. Voer de volgende instellingen in:
 
-    - **Naam**: Voer een naam in voor het profiel, zoals `windows 10 custom profile`.
-    - **Beschrijving**: Voer een beschrijving in voor het profiel.
-    - **Platform**: Kies **Windows 10 en hoger**.
-    - **Profieltype**: Kies **Aangepast**.
+    - **Naam**: voer een naam in voor het profiel, zoals `windows 10 custom profile`.
+    - **Beschrijving:** voer een beschrijving in voor het profiel.
+    - **Platform**: kies **Windows 10 en hoger**.
+    - **Profieltype**: kies **Aangepast**.
 
 4. Selecteer in **Aangepaste OMA-URI-instellingen** de optie **Toevoegen**. Voer de volgende instellingen in:
 
-    - **Naam**: Voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.
-    - **Beschrijving**: Voer een beschrijving in met een overzicht van de instelling en eventuele andere belangrijke details.
-    - **OMA-URI** (hoofdlettergevoelig): Voer de OMA-URI in die u als instelling wilt gebruiken.
-    - **Gegevenstype**: Kies het gegevenstype dat u voor deze OMA-URI-instelling gaat gebruiken. Uw opties zijn:
+    - **Naam**: voer een unieke naam in voor de OMA-URI-instelling waaraan u deze kunt herkennen in de lijst met instellingen.
+    - **Beschrijving**: voer een beschrijving in met een overzicht van de instelling en eventuele andere belangrijke details.
+    - **OMA-URI** (hoofdlettergevoelig): voer de OMA-URI in die u als instelling wilt gebruiken.
+    - **Gegevenstype**: kies het gegevenstype dat u voor deze OMA-URI-instelling gaat gebruiken. Uw opties zijn:
 
         - Tekenreeks
         - Tekenreeks (XML-bestand)
@@ -63,7 +64,7 @@ In dit artikel wordt het volgende beschreven:
         - Boolean-waarde
         - Base64 (bestand)
 
-    - **Waarde**: Voer de gegevenswaarde in die moet worden gekoppeld aan de OMA-URI die u hebt ingevoerd. De waarde is afhankelijk van het gegevenstype dat u hebt geselecteerd. Als u bijvoorbeeld **Datum en tijd** hebt gekozen, selecteert u de waarde in een datumkiezer.
+    - **Waarde**: voer de gegevenswaarde in die moet worden gekoppeld aan de OMA-URI die u hebt ingevoerd. De waarde is afhankelijk van het gegevenstype dat u hebt geselecteerd. Als u bijvoorbeeld **Datum en tijd** hebt gekozen, selecteert u de waarde in een datumkiezer.
 
     Nadat u een aantal instellingen hebt toegevoegd, kunt u **Exporteren** selecteren. Met **Exporteren** maakt u een lijst met alle waarden die u hebt toegevoegd in een bestand met door komma's gescheiden waarden (.csv).
 
@@ -82,7 +83,7 @@ Een complete lijst met alle CSP's (configuratieserviceproviders) die door Window
 
 Niet alle instellingen zijn compatibele met alle versies van Windows 10. In [Referentie voor Configuration Service Providers](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) leest u welke versies worden ondersteund voor elke CSP.
 
-Bovendien biedt Intune geen ondersteuning voor alle instellingen die worden vermeld in de [naslaginformatie voor configuratieserviceproviders](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference). Als u wilt weten of de gewenste instelling door Intune wordt ondersteund, opent u het artikel voor de betreffende instelling. U kunt op elke instellingenpagina zien welke bewerkingen worden ondersteund. Voor gebruik in combinatie met Intune moet de instelling de bewerking **Toevoegen** of **Vervangen** ondersteunen.
+Bovendien biedt Intune geen ondersteuning voor alle instellingen die worden vermeld in de [naslaginformatie voor configuratieserviceproviders](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference). Als u wilt weten of de gewenste instelling door Intune wordt ondersteund, opent u het artikel voor de betreffende instelling. U kunt op elke instellingenpagina zien welke bewerkingen worden ondersteund. Voor gebruik in combinatie met Intune moet de instelling de bewerking **Toevoegen**, **Vervangen** en **Ophalen** ondersteunen. Als de waarde die is geretourneerd door de **ophalen** bewerking komt niet overeen met de waarde die is opgegeven door de **toevoegen** of **vervangen** operations en vervolgens Intune-rapporten een compatibiliteitsfout.
 
 ## <a name="next-steps"></a>Volgende stappen
 

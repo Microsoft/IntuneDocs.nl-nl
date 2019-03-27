@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: article
+ms.date: 02/21/2018
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
@@ -17,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f4ce34abdb0c1b3d7dbc2bbd3f41f618715fb3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 065535bc6bb4dc586ab45ffa0a9a1250c0a1c908
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837392"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566485"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Overzicht van de Microsoft Intune App SDK
-Met de Intune App SDK voor iOS en Android kan uw app worden in geschakeld voor Intune-beleid voor app-beveiliging. Deze streeft ernaar om het aantal door de app-ontwikkelaar vereiste codewijzigingen zo klein mogelijk te maken. U ziet dat u de meeste van de SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. U kunt de API's gebruiken voor het aanpassen van uw app-gedrag voor functies waarvoor de deelname van uw app is vereist, voor een verbeterde ervaring voor eindgebruikers en IT-beheerders.
+Met de Intune App SDK voor iOS en Android kan uw app worden in geschakeld voor ondersteuning van [Intune-beleid voor app-beveiliging](app-protection-policy.md). Wanneer uw app heeft de app-beveiligingsbeleid is toegepast, kunnen worden beheerd door Intune en wordt herkend door Intune als een beheerde app. De SDK streeft ernaar om het aantal door de app-ontwikkelaar vereiste codewijzigingen zo klein mogelijk te maken. U ziet dat u de meeste van de SDK-functies kunt inschakelen zonder het gedrag van uw app te wijzigen. U kunt de API's van de SDK gebruiken voor het aanpassen van uw app-gedrag voor ondersteuning van functies waarvoor de deelname van uw app is vereist, voor een verbeterde ervaring voor eindgebruikers en IT-beheerders.
 
-Als u uw app hebt ingeschakeld voor beleid voor app-beveiliging, kunnen IT-beheerders deze beleidsregels implementeren om de bedrijfsgegevens in de app te beveiligen.
+Als u uw app hebt ingeschakeld voor ondersteuning van het Intune-beleid voor app-beveiliging, kunnen IT-beheerders deze beleidsregels implementeren om de bedrijfsgegevens in de app te beveiligen.
 
 ## <a name="app-protection-features"></a>Functies voor app-beveiliging
 
@@ -51,13 +52,13 @@ IT-beheerders kunnen afdwingen dat webkoppelingen in de app worden geopend met d
 ### <a name="enforce-a-pin-policy"></a>Een pincodebeleid afdwingen
 IT-beheerders kunnen vereisen dat eindgebruikers een pincode invoeren om bedrijfsgegevens in de app te openen. Dit zorgt ervoor dat de persoon die de app gebruikt, dezelfde is als degene die zich aanvankelijk heeft aangemeld met een werk- of schoolaccount. Wanneer eindgebruikers hun pincode configureren, gebruikt Intune App SDK Azure Active Directory om te controleren of de referenties van eindgebruikers overeenkomen met het ingeschreven Intune account.
 
-### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a>Instellen dat gebruikers zich alleen met een werk-of schoolaccount kunnen aanmelden voor app-toegang
+### <a name="require-users-to-sign-in-with-a-work-or-school-account-for-app-access"></a>Instellen dat gebruikers zich alleen met een werk-of schoolaccount kunnen aanmelden voor app-toegang
 IT-beheerders kunnen vereisen dat gebruikers zich aanmelden met hun werk- of schoolaccount om toegang tot de app te krijgen. De Intune App SDK gebruikt Azure Active Directory voor eenmalige aanmelding, waarbij de referenties, nadat deze zijn opgegeven, opnieuw worden gebruikt bij alle daaropvolgende aanmeldingen. We bieden ook ondersteuning voor verificatie van oplossingen voor identiteitsbeheer die zijn gefedereerd met Azure Active Directory.
 
 ### <a name="check-device-health-and-compliance"></a>De status en compatibiliteit van apparaten controleren
 IT-beheerders kunnen een status en de compatibiliteit van apparaten met Intune-beleid controleren voordat eindgebruikers toegang tot de app krijgen. In iOS controleert dit beleid of het apparaat jailbroken, ofwel gekraakt, is. In Android controleert dit beleid of het apparaat geroot is.
 
-### <a name="multi-identity-support"></a>Ondersteuning voor meerdere identiteiten
+### <a name="support-multi-identity"></a>Meerdere identiteiten ondersteunen
 Ondersteuning voor meerdere identiteiten is een functie van de SDK die co-existentie van door beleid beheerde (zakelijke) accounts en niet-beheerde (privé-)accounts in één enkele app mogelijk maakt.
 
 Zo configureren veel gebruikers bijvoorbeeld zowel bedrijfs- als persoonlijke e‑mailaccounts in de mobiele Office-app voor iOS en Android. Wanneer een gebruiker zich toegang verschaft tot gegevens in een bedrijfsaccount, moet de IT-beheerder erop kunnen vertrouwen dat het beleid voor app-beveiliging wordt toegepast. Wanneer een gebruiker zich echter toegang wil verschaffen tot een persoonlijk e-mailaccount, moeten die gegevens buiten de controle van de IT-beheerder blijven. De Intune App SDK bereikt dit door het beleid voor app-beveiliging **alleen** toe te passen op de bedrijfsidentiteit in de app.
@@ -80,4 +81,4 @@ Zie [Informatie over de MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/1
 
 ## <a name="next-steps"></a>Volgende stappen
 
-- Meer informatie over [app-beveiligingsbeleid](app-protection-policy.md).
+- [Aan de slag met de Microsoft Intune App SDK](app-sdk-get-started.md).
