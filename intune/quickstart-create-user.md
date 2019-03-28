@@ -4,6 +4,7 @@ description: 'Snelstart: een gebruiker maken in Intune.'
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
@@ -11,14 +12,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: b5653c67766a3312cf7ce2872e8b0cd4301b0e8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189486"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991086"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Snelstart: een gebruiker maken en er een licentie aan toewijzen
+# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Quickstart: Een gebruiker maken en een licentie aan deze gebruiker toewijzen
 
 In deze snelstart maakt u een gebruiker en wijst u daarna een licentie toe aan die gebruiker. Als u Intune gebruikt, moet elke persoon die u toegang wilt bieden tot de bedrijfsgegevens beschikken over een gebruikersaccount. Intune-beheerders kunnen die gebruikers later configureren om de toegang te beheren.
 
@@ -45,9 +47,9 @@ Mensen moeten beschikken over een gebruikersaccount om zich te kunnen inschrijve
 
 ## <a name="assign-a-license-to-the-user"></a>Een licentie toewijzen aan de gebruiker
 
-Nadat u een gebruiker hebt gemaakt, moet u de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) gebruiken om een Intune-licentie toe te wijzen aan die gebruiker. Zonder een licentie kan het apparaat van de gebruiker namelijk niet worden ingeschreven bij Intune. 
+Nadat u een gebruiker hebt gemaakt, moet u het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854) gebruiken om een Intune-licentie toe te wijzen aan die gebruiker. Zonder een licentie kan het apparaat van de gebruiker namelijk niet worden ingeschreven bij Intune. 
 
-1. Meld u aan bij de [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) met dezelfde referenties die u hebt gebruikt om u aan te melden bij Intune.
+1. Meld u aan bij het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854) met dezelfde referenties die u hebt gebruikt om u aan te melden bij Intune.
 2. Kies **Gebruikers** > **Actieve gebruikers** > kies de gebruiker die u zojuist hebt gemaakt.
 3. Selecteer naast **Productlicenties** de optie **Bewerken**.
 4. Bij **Locatie** kiest u een locatie voor de gebruiker.
@@ -61,7 +63,7 @@ Voor de nieuwe actieve Intune-gebruiker wordt nu weergegeven dat deze een **Intu
 
 ## <a name="clean-up-resources"></a>Resources opschonen
 
-Als u deze gebruiker niet meer nodig hebt, kunt u deze verwijderen door te navigeren naar [Office 365 Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854). Hier kiest u **Gebruikers** > **Actieve gebruikers** > *kies de gebruiker in de lijst* > **Gebruiker verwijderen** > **Gebruiker verwijderen** > **Wijzigingen bevestigen** > **Sluiten**.
+Als u deze gebruiker niet meer nodig hebt, kunt u deze verwijderen door te navigeren naar het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854). Hier kiest u **Gebruikers** > **Actieve gebruikers** > *kies de gebruiker in de lijst* > **Gebruiker verwijderen** > **Gebruiker verwijderen** > **Wijzigingen bevestigen** > **Sluiten**.
 
 ## <a name="next-steps"></a>Volgende stappen
 
@@ -70,4 +72,4 @@ In deze snelstart hebt u een gebruiker gemaakt en een licentie toegewezen aan de
 Als u deze reeks snelstartgidsen voor Intune wilt volgen, kunt u doorgaan met de volgende snelstartgids.
 
 > [!div class="nextstepaction"]
-> [Snelstartgids: Een groep maken om gebruikers te beheren](quickstart-create-group.md)
+> [Quickstart: Een groep maken om gebruikers te beheren](quickstart-create-group.md)

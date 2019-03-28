@@ -10,20 +10,22 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1b89f2d-7937-46bb-926b-b05f6fa9c749
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186253"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991127"
 ---
-# <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Snelstartgids: Meldingen verzenden naar niet-compatibele apparaten
+# <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Quickstart: Meldingen verzenden naar niet-compatibele apparaten
 
 In deze snelstartgids gebruikt u Microsoft Intune om een e-mailmelding te verzenden naar degenen van uw personeel met niet-compatibele apparaten.
 
@@ -47,12 +49,12 @@ Maak een sjabloon voor berichtmeldingen om een e-mail naar uw gebruikers te vers
 1. Selecteer in Intune **Apparaatcompatibiliteit** > **Meldingen** > **Melding maken**. 
 2. Voer de volgende informatie in:
 
-   - **Naam**: *Beheerder van Contoso*
-   - **Onderwerp**: *Apparaatcompatibiliteit*
-   - **Bericht**: *Ons apparaat voldoet momenteel niet aan de compatibiliteitsvereisten van onze organisatie.*
-   - **E-mailkoptekst - Bedrijfslogo opnemen**: stel in op **Ingeschakeld** om het logo van uw organisatie weer te geven.
-   - **E- mailvoettekst -bedrijfsnaam opnemen**: stel in op **Ingeschakeld** om de naam van uw organisatie weer te geven.
-   - **E- mailvoettekst -contactgegevens opnemen**: stel in op **Ingeschakeld** om de contactgegevens van uw organisatie weer te geven.
+   - **Naam**: *Contoso Admin*
+   - **Onderwerp**: *Apparaatnaleving*
+   - **Bericht**: *Uw apparaat voldoet momenteel niet aan de compatibiliteitsvereisten van onze organisatie.*
+   - **E-mailkoptekst - Bedrijfslogo opnemen**: Stel in op **Ingeschakeld** om het logo van uw organisatie weer te geven.
+   - **E-mailvoettekst - Bedrijfsnaam opnemen**: Stel in op **Ingeschakeld** om de naam van uw organisatie weer te geven.
+   - **E-mailvoettekst - Contactgegevens opnemen**: Stel in op **Ingeschakeld** om de contactgegevens van uw organisatie weer te geven.
 
    ![Voorbeeld van een compatibel meldingsbericht in Intune](./media/quickstart-send-notification-01.png)
 
@@ -74,7 +76,7 @@ Via de volgende stappen kunt u een compatibiliteitsbeleid voor Windows 10-appara
 3. Voer de volgende informatie in:
 
    - **Naam**: *Compatibiliteit met Windows 10*
-   - **Beschrijving**: *Compatibiliteitsbeleid van Windows 10*
+   - **Beschrijving**: *Nalevingsbeleid van Windows 10*
    - **Platform**: Windows 10 en hoger
 
 4. Selecteer **Instellingen** > **Systeembeveiliging** om de instellingen met betrekking tot de apparaatbeveiliging weer te geven.
@@ -84,7 +86,7 @@ Via de volgende stappen kunt u een compatibiliteitsbeleid voor Windows 10-appara
     ![Systeembeveiligingsinstellingen voor een nieuw compatibiliteitsbeleid](./media/quickstart-send-notification-02.png) 
 
 7. Klik op **OK**, **OK** en **Maken** om uw compatibiliteitsbeleid te maken.
-8. Selecteer de naam van het nieuwe beleid: **Compatibiliteit met Windows 10**.
+8. Selecteer de naam van uw nieuwe beleid: **Compatibiliteit met Windows 10**.
 9. Selecteer **Eigenschappen** > **Actie voor niet-compatibiliteit** > **Toevoegen**.
 10. Controleer in de vervolgkeuzelijst **Actie** of **E-mailbericht verzenden naar eindgebruikers** is geselecteerd.
 11. Selecteer **Berichtsjabloon** > **Contoso-beheerder** > **Selecteren** om de berichtsjabloon te selcteren die u eerder in dit onderwerp hebt gemaakt.
@@ -112,4 +114,4 @@ In deze snelstartgids hebt u Intune gebruikt om een compatibiliteitsbeleid te ma
 Als u deze reeks snelstartgidsen voor Intune wilt volgen, kunt u doorgaan met de volgende snelstartgids.
 
 > [!div class="nextstepaction"]
-> [Snelstartgids: Een client-app toevoegen en toewijzen](quickstart-add-assign-app.md)
+> [Quickstart: Een client-app toevoegen en toewijzen](quickstart-add-assign-app.md)

@@ -1,6 +1,6 @@
 ---
 title: Wat is Microsoft Intune
-description: Leer over Intune als het MDM-onderdeel (beheer van mobiele apparaten) en MAM-onderdeel (beheer van mobiele apps) van de oplossing Enterprise Mobility + Security en hoe u hiermee bedrijfsgegevens kunt beschermen.
+description: Leer over Microsoft Intune als het MDM-onderdeel (beheer van mobiele apparaten) en MAM-onderdeel (beheer van mobiele apps) van de oplossing Enterprise Mobility + Security en hoe u hiermee bedrijfsgegevens kunt beschermen.
 keywords: wat is Intune
 author: dougeby
 ms.author: dougeby
@@ -9,6 +9,7 @@ ms.date: 02/26/2019
 ms.topic: overview
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
@@ -16,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92cd9a5a6c3ee49b2431b43b024c338e06b5dfe2
-ms.sourcegitcommit: 7d694e3cd01623513c2b163946e60a99ab9535d2
+ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56891603"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460577"
 ---
 # <a name="what-is-microsoft-intune"></a>Wat is Microsoft Intune?
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Intune is een clouddienst voor het beheren van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) die uw werknemers in staat stelt om productief te zijn terwijl uw zakelijke gegevens veilig blijven. Net als andere Azure-services is Microsoft Intune beschikbaar in Azure Portal. Met Intune kunt u het volgende doen:
+Microsoft Intune is een clouddienst voor het beheren van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) die uw werknemers in staat stelt om productief te zijn terwijl uw zakelijke gegevens veilig blijven. Net als andere Azure-services is Microsoft Intune beschikbaar in Azure Portal. Met Intune kunt u het volgende doen:
 * De mobiele apparaten en pc's beheren die door uw werknemers worden gebruikt voor toegang tot bedrijfsgegevens.
 * De mobiele apps beheren waarvan uw werknemers gebruikmaken.
 * Gegevens van uw bedrijf beschermen door te bepalen hoe uw werknemers toegang hebben tot de gegevens en deze delen.
@@ -77,7 +78,7 @@ Als we het over app-beheer hebben, bedoelen we:
 * Rapportage over de inventaris van mobiele apps
 * Bijhouden van het gebruik van mobiele apps
 
-Soms wordt de term beheer van mobiele apps (MAM) gebruikt om één van deze toepassingen afzonderlijk aan te duiden of om te verwijzen naar een specifieke combinatie ervan. Veelal wordt het concept van app-configuratie verward met het concept van de beveiliging van bedrijfsgegevens binnen mobiele apps. Dat is omdat sommige mobiele apps instellingen doorgeven waarmee hun functies voor gegevensbescherming kunnen worden geconfigureerd.
+Soms wordt de term beheer van mobiele apps (MAM) gebruikt om één van deze toepassingen afzonderlijk aan te duiden of om te verwijzen naar een specifieke combinatie ervan. Veelal wordt het concept van app-configuratie in verband gebracht met het concept van de beveiliging van bedrijfsgegevens binnen mobiele apps. Dat is omdat sommige mobiele apps instellingen doorgeven waarmee hun functies voor gegevensbescherming kunnen worden geconfigureerd.
 
 Wanneer we over app-configuratie en Intune spreken, verwijzen we specifiek naar technologieën zoals [beheerde app-configuratie in iOS](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html).
 
@@ -108,7 +109,7 @@ De meeste oplossingen voor het beheer van bedrijfsmobiliteit ondersteunen basist
 
 In verschillende organisaties worden verschillende 'zonder inschrijving'-scenario's gebruikt. Voor sommige organisaties is apparaatgebruik zonder inschrijving de norm. Andere organisaties staan dit soort scenario’s toe voor begeleidingsapparaten, zoals een persoonlijke tablet. Weer andere organisaties ondersteunen deze scenario’s helemaal niet. Zelfs in het laatste geval, als een organisatie vereist dat alle apparaten van werknemers worden ingeschreven in MDM, ondersteunen ze meestal 'zonder inschrijving'-scenario's voor uitzendkrachten en leveranciers, en voor andere apparaten waarvoor een specifieke uitzondering geldt.
 
-U kunt de 'zonder inschrijving'-technologie van Intune zelfs gebruiken op ingeschreven apparaten. Een apparaat dat is ingeschreven in MDM kan bijvoorbeeld 'Open-in'-beveiliging hebben die wordt geleverd door het mobiele besturingssysteem. 'Open-in'-beveiliging is een iOS-functie waarmee u documenten uit bepaalde apps, zoals Outlook, niet kunt openen in andere apps, zoals Word, tenzij beide apps worden beheerd door de MDM-provider. Bovendien kan de IT-afdeling app-beveiligingsbeleid toepassen op met EMS beheerde mobiele apps om de opslaan als-bewerkingen te controleren of om meervoudige verificatie te bieden.
+U kunt de 'zonder inschrijving'-technologie van Intune zelfs gebruiken op ingeschreven apparaten. Een apparaat dat is ingeschreven in MDM kan bijvoorbeeld 'Open-in'-beveiliging hebben die wordt geleverd door het mobiele besturingssysteem. 'Open-in'-beveiliging is een iOS-functie van Apple waarmee u documenten uit bepaalde apps, zoals Outlook, niet kunt openen in andere apps, zoals Word, tenzij beide apps worden beheerd door dezelfde MDM-provider. Bovendien kan de IT-afdeling app-beveiligingsbeleid toepassen op met EMS beheerde mobiele apps om de opslaan als-bewerkingen te controleren of om meervoudige verificatie te bieden.
 
 Intune als onderdeel van EMS heeft hulpprogramma's waarmee uw medewerkers hun productiviteit kunnen verhogen terwijl uw bedrijfsgegevens beschermd blijven, ongeacht hoe uw organisatie omgaat met ingeschreven en niet-ingeschreven mobiele apparaten en apps.
 
@@ -133,7 +134,7 @@ Zie [Aan de slag met Intune in Azure Portal](get-started-azure.md) voor een kort
 
 ### <a name="before-you-start"></a>Voordat u begint
 
-U moet een Intune-beheerder- en tenant-account hebben voor het gebruik van Intune in de Azure Portal. [Meld u aan voor een account](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) als u er nog geen hebt.
+U moet een Intune-beheerder- en tenant-account hebben voor het gebruik van Intune in de Azure Portal. [Meld u aan voor een account](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) als u er nog geen hebt.
 
 ### <a name="supported-web-browsers-for-the-azure-portal"></a>Ondersteunde webbrowsers voor de Azure Portal
 

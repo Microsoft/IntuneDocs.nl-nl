@@ -10,6 +10,7 @@ ms.date: 10/19/2018
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
@@ -17,12 +18,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187732"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57395990"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Zelfstudie: Autopilot gebruiken om Windows-apparaten in Intune in te schrijven
 Windows Autopilot maakt het makkelijker om apparaten in te schrijven. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen hoeft te bouwen, onderhouden en toe te passen. 
@@ -93,9 +95,9 @@ Nadat u een groep apparaten hebt gemaakt, moet u een implementatieprofiel maken 
 4. Als **implementatiemodus** kiest u **Op basis van gebruiker**. Apparaten met dit profiel worden gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn gebruikersreferenties vereist om het apparaat in te kunnen schrijven.
 5. In het vak **Toevoegen aan Azure AD als** kiest u **Toegevoegd aan Azure AD**.
 6. Kies **Out-Of-Box Experience (OOBE)**, configureer de volgende opties (laat andere gewoon op de standaardinstellingen staan) en kies vervolgens **Opslaan**:
-    - **Gebruiksrechtovereenkomst (EULA)**: **verbergen**
-    - **Privacy-instellingen**: **weergeven**
-    - **Gebruikersaccounttype**: **standaard**
+    - **Gebruiksrechtovereenkomst (EULA)**: **Verbergen**
+    - **Privacyinstellingen**: **Weergeven**
+    - **Gebruikersaccounttype**: **Standaard**
 
 6. Kies op **Maken** om het profiel te maken. Het Autopilot-implementatieprofiel is nu klaar om te worden toegewezen aan apparaten.
 

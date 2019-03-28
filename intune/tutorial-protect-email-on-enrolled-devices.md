@@ -3,27 +3,29 @@ title: Zelfstudie - Exchange Online e-mail beschermen op Intune-beheerde apparat
 titlesuffix: Microsoft Intune
 description: Meer informatie over hoe u Exchange Online kunt beveiligen met iOS Intune-nalevingsbeleid en Azure AD-voorwaardelijke toegang, door beheerde apparaten en de Outlook-app vereist te maken.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/19/2018
-ms.topic: quickstart
+ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181867"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57528204"
 ---
-# <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Zelfstudie - Exchange Online e-mail beschermen op beheerde apparaten
+# <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Zelfstudie: Exchange Online e-mail beschermen op beheerde apparaten
 Hier vindt u meer informatie over het gebruik van het nalevingsbeleid voor apparaten met voorwaardelijke toegang. Hiermee kunt u ervoor zorgen dat iOS-apparaten uitsluitend toegang tot Exchange Online e-mail hebben als ze door Intune worden beheerd en een goedgekeurde e-mailapplicatie gebruiken. 
 
 In deze zelfstudie leert u het volgende: 
@@ -37,7 +39,7 @@ Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor ee
   - Voor deze zelfstudie hebt u een testtenant nodig met de volgende abonnementen:
     - Azure Active Directory Premium ([ gratis proefversie](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
     - Office 365 Business-abonnement inclusief Exchange ([ gratis proefversie](https://go.microsoft.com/fwlink/p/?LinkID=510938))
-  - Voordat u begint, maakt u een test-apparaatprofiel voor iOS-apparaten aan door de stappen in de [Snelstartgids: Een e-mailprofiel voor iOS aanmaken](quickstart-email-profile.md) te volgen.
+  - Voordat u begint, maakt u een test-apparaatprofiel voor iOS-apparaten aan door de stappen in de [Snelstartgids: Een e-mailprofiel voor een apparaat voor iOS maken](quickstart-email-profile.md) te volgen.
 
 ## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
 

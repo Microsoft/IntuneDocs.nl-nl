@@ -10,20 +10,22 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dab6f5c8-1ebb-42c4-a7a7-7af001f94e15
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6d0a7485aa25dee74bf54192fa931d081be81cd8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184504"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391890"
 ---
-# <a name="quickstart-add-and-assign-a-client-app"></a>Snelstartgids: Een client-app toevoegen en toewijzen
+# <a name="quickstart-add-and-assign-a-client-app"></a>Quickstart: Een client-app toevoegen en toewijzen
 
 In deze snelstartgids gaat u met behulp van Microsoft Intune een client-app toevoegen en toewijzen aan de werknemers van uw bedrijf. Een van de prioriteiten van een beheerder is om ervoor te zorgen dat eindgebruikers toegang hebben tot de apps die ze nodig hebben voor hun werk. 
 
@@ -103,4 +105,4 @@ In deze snelstartgids hebt u apps aan Intune toegevoegd, de apps aan een groep t
 Als u deze reeks snelstartgidsen voor Intune wilt volgen, kunt u doorgaan met de volgende snelstartgids.
 
 > [!div class="nextstepaction"]
-> [Snelstartgids: Beveiligingsbeleid voor apps maken en toewijzen](quickstart-create-assign-app-policy.md)
+> [Quickstart: Een beveiligingsbeleid voor apps maken en toewijzen](quickstart-create-assign-app-policy.md)

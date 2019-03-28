@@ -10,20 +10,22 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2586fce0-5dca-4686-b9c4-791778838401
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ae378550a75f756390053e44eb4fbd04f665612
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179069"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57393368"
 ---
-# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Snelstartgids: App-beveiligingsbeleid maken en toewijzen
+# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Quickstart: Beveiligingsbeleid voor apps maken en toewijzen
 
 In deze snelstartgids gaat u met Intune app-beveiligingsbeleid maken en aan een client-app op een apparaat van een eindgebruiker toewijzen. Intune maakt gebruik van app-beveiligingsbeleid om te controleren dat uw apps aan de beveiligingsvereisten voor de gegevens van uw organisatie voldoen.
 
@@ -47,7 +49,7 @@ Gebruik de volgende stappen om app-beveiligingsbeleid te maken:
     - **Naam**: *Inhoudsbeveiliging Windows 10*
     - **Beschrijving**: *Gebruikers die zijn gekoppeld aan dit beleid kunnen niet inhoud van de toegewezen app knippen/plakken of naar andere niet-beheerde apps op het apparaat kopiëren en omgekeerd.*
     - **Platform**: *Windows 10*
-    - **De status van inschrijving**: *Ingeschreven*
+    - **Status van de inschrijving**: *Ingeschreven*
 
 3. Selecteer **Beveiligde apps** om de apps te kiezen die aan dit beleid moeten voldoen.
 4. Klik op **Apps toevoegen**.
@@ -84,4 +86,4 @@ In deze snelstartgids hebt u beveiligingsbeleid voor apps gemaakt en toegewezen.
 Als u deze reeks snelstartgidsen voor Intune wilt volgen, kunt u doorgaan met de volgende snelstartgids.
 
 > [!div class="nextstepaction"]
-> [Snelstartgids: Een aangepaste rol maken en toewijzen](quickstart-create-custom-role.md)
+> [Quickstart: Een aangepaste rol maken en toewijzen](quickstart-create-custom-role.md)
