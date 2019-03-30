@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39052860cefc562700608beda7f42c4146ccdf34
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d47d7a52a212733955d441b463ef66d89f8d9143
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566026"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358184"
 ---
 # <a name="reference-for-application-entities"></a>Naslag voor toepassingsentiteiten
 
@@ -128,17 +128,5 @@ De entiteit **MobileAppInstallState** vertegenwoordigt de installatiestatus van 
 | AppInstallState | Enum-waarde van de installatiestatus van de app. |
 | AppInstallStateName | Naam van de installatiestatus van de app. |
 
-## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
 
-De **MobileAppDeviceUserInstallStatus** toont de installatiestatus van een mobiele app voor een bepaald apparaat en een bepaalde gebruiker.
-
-
-|      Eigenschap      |                                                         Beschrijving                                                         |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
-|      DateKey       |                                  Sleutel van de datum waarop de installatiestatus van de app werd vastgelegd.                                  |
-|       AppKey       |                             Sleutel van de mobiele app die wordt gebruikt om een exemplaar van AppRevision te identificeren.                              |
-|     DeviceKey      |                              Sleutel van een doelapparaat die wordt gebruikt om een exemplaar van Device te identificeren.                               |
-|      UserKey       |                                Sleutel van een doelgebruiker die wordt gebruikt om een exemplaar van User te identificeren.                                 |
-| AppInstallStateKey |                     Sleutel van de installatiestatus van de app die wordt gebruikt om een exemplaar van MobileAppInstallState te identificeren.                     |
-|     ErrorCode      | De foutcode geretourneerd door het app-installatieprogramma, het mobiele platform of de service met betrekking tot de installatie van de app. |
 

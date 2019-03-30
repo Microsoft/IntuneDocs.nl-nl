@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fa6a68d1b5a8d2ccf87587ecab36c7807770d48
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565346"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330416"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Met macOS-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -46,7 +46,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
   Deze functie is van toepassing op:  
   - macOS 10.13 of hoger
 
-- **(Alleen onder supervisie) softwareupdates uitstellen**: als de waarde **niet geconfigureerd** (standaard), software-updates worden weergegeven op het apparaat als Apple worden vrijgegeven. Bijvoorbeeld, als een macOS-update opgehaald die zijn uitgebracht door Apple op een specifieke datum, wordt klikt u vervolgens deze update op een natuurlijke manier weergegeven op het apparaat om de releasedatum.
+- **Software-updates uitstellen**: als de waarde **niet geconfigureerd** (standaard), software-updates worden weergegeven op het apparaat als Apple worden vrijgegeven. Bijvoorbeeld, als een macOS-update opgehaald die zijn uitgebracht door Apple op een specifieke datum, wordt klikt u vervolgens deze update op een natuurlijke manier weergegeven op het apparaat om de releasedatum. Seed-build-updates zijn toegestaan zonder vertraging.
 
   **Schakel** kunt u als de software-updates worden weergegeven op apparaten van 0-90 dagen vertraging. Deze instelling bepalen niet wanneer updates worden of niet zijn geïnstalleerd. 
 

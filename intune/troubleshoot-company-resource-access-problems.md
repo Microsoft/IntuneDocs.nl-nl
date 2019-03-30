@@ -1,11 +1,11 @@
 ---
-title: Problemen bij toegang tot bedrijfsbronnen oplossen | Microsoft Docs
-description: Gebruik de Microsoft Intune fout- en statuscodes om problemen op te lossen met de toegang tot bedrijfsresources.
+title: Fout- en statuscodes in Microsoft Intune - Azure | Microsoft Docs
+description: Een overzicht van de fouten, statuscode, beschrijvingen en oplossingen bij het gebruik van MDM beheerde apparaten, de toegang tot bedrijfsbronnen en fouten op iOS-apparaten OMA antwoord fouten in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 03/20/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb311eab93abd66f6a23e58737573622b68f3e8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461495"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330475"
 ---
-# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Problemen bij toegang tot bedrijfsbronnen oplossen met Microsoft Intune
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Algemene foutcodes en beschrijvingen in Microsoft Intune
 
-Wanneer een Microsoft Intune-actie een foutcode retourneert, kunt u aan de hand van de fout- en statuscodes in dit onderwerp het probleem proberen op te lossen.
+Dit artikel worden veelvoorkomende fouten, statuscodes, beschrijvingen en mogelijke oplossingen bij het openen van bronnen van de organisatie. Deze informatie gebruiken voor het oplossen van problemen bij het gebruik van Microsoft Intune.
 
-Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
+Als u hulp nodig hebt ondersteunen, Zie [ondersteuning voor Microsoft Intune krijgen](get-support.md).
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Statuscodes voor met MDM beheerde Windows-apparaten
 
@@ -385,5 +385,6 @@ Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md) voor meer mani
 |-2016345912|0x87D100C8|De SyncML-opdracht is uitgevoerd.|
 |-2016346011|0x87D10065|De opgegeven SyncML-opdracht wordt uitgevoerd, maar is niet voltooid.|
 
-### <a name="next-steps"></a>Volgende stappen
-Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](get-support.md).
+## <a name="next-steps"></a>Volgende stappen
+
+Neem contact op met Microsoft Support op [ondersteuning voor Microsoft Intune krijgen](get-support.md).

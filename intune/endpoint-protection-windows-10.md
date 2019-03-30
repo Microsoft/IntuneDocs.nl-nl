@@ -2,8 +2,8 @@
 title: Beveiligingsinstellingen voor Windows 10-apparaten in Microsoft Intune - Azure | Microsoft Docs
 description: Gebruik of configureer op Windows 10-apparaten instellingen voor eindpuntbescherming om functies van Windows Defender in te schakelen, zoals Application Guard, Firewall, SmartScreen, versleuteling en bitlocker, Exploit Guard, Application Control, Security Center en beveiliging van lokale apparaten in Microsoft Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/04/2019
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbbdbbb92c033a99f1c439271c745c1abfbcd562
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 4c2df888e146a7f240530e5cbc6628dbce34cb61
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566689"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58342994"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Instellingen voor Windows 10 (en hoger) om apparaten te beveiligen met Intune
 
@@ -40,7 +40,7 @@ Zie [Apparaatbeperkingsinstellingen voor Windows 10](device-restrictions-windows
 
 Wordt ondersteund op de volgende edities van Windows 10:
 
-- Enterprise
+- Zakelijk
 - Professional
 
 Wanneer u Microsoft Edge gebruikt, beschermt Windows Defender Application Guard uw omgeving tegen sites die niet worden vertrouwd door uw organisatie. Als gebruikers sites bezoeken die niet worden vermeld in uw geïsoleerde netwerkgrens, worden deze sites geopend in een virtuele browsersessie in Hyper-V. Vertrouwde sites worden gedefinieerd door een netwerkgrens, die in Apparaatconfiguratie wordt geconfigureerd.
@@ -62,7 +62,7 @@ Wordt ondersteund op de volgende edities van Windows 10:
 - Home
 - Professional
 - Zakelijk
-- Enterprise
+- Zakelijk
 - Education
 - Mobiel
 - Mobile Enterprise
@@ -87,8 +87,7 @@ Deze instellingen gelden voor alle netwerktypen.
 
 Deze instellingen zijn van toepassing op specifieke netwerktypen, waaronder **Domeinnetwerk (werkplek)**, **Privénetwerk (detecteerbaar)** en **Openbaar netwerk (niet-detecteerbaar)**.
 
-#### <a name="general-settings"></a>Algemene instellingen
-
+#### <a name="general-settings"></a>Algemene instellingen  
 - **Windows Defender Firewall**: kies **Inschakelen** om de firewall en geavanceerde beveiliging aan te zetten. **Niet geconfigureerd** (standaard): hiermee staat u al het netwerkverkeer toe, ongeacht andere beleidsinstellingen.
 - **Verborgen modus**: met deze optie kunt u de firewall in de verborgen modus **Blokkeren**. Als u de verborgen modus blokkeert, blokkeert u ook **Uitsluiting van beveiligd IPsec-pakket**. Wanneer **Niet geconfigureerd** (standaard) is ingesteld, werkt de firewall in verborgen modus, waarmee reacties op probing-verzoeken worden verhinderd.
 - **Afgeschermd**: met **Blokkeren** schakelt u deze functie uit. Met **Niet geconfigureerd** (standaard): schakelt u deze instelling in. Wanneer deze instelling en Windows Defender Firewall zijn ingeschakeld, wordt al het binnenkomende verkeer geblokkeerd, ongeacht andere beleidsinstellingen.
@@ -109,7 +108,7 @@ Wordt ondersteund in de volgens edities van Windows 10 met Microsoft Edge geïns
 - Home
 - Professional
 - Zakelijk
-- Enterprise
+- Zakelijk
 - Education
 - Mobiel
 - Mobile Enterprise
@@ -127,7 +126,7 @@ Wordt ondersteund op de volgende edities van Windows 10:
 
 - Professional
 - Zakelijk
-- Enterprise
+- Zakelijk
 - Education
 - Mobiel
 - Mobile Enterprise
@@ -145,7 +144,7 @@ Wordt ondersteund op de volgende edities van Windows 10:
 
 Wordt ondersteund op de volgende edities van Windows 10:
 
-- Enterprise
+- Zakelijk
 - Education
 - Mobiel
 - Mobile Enterprise
@@ -165,7 +164,7 @@ Basisinstellingen zijn universele BitLocker-instellingen voor alle soorten gegev
 ### <a name="bitlocker-os-drive-settings"></a>BitLocker-instellingen voor station met besturingssysteem
 Wordt ondersteund op de volgende edities van Windows 10:
 
-- Enterprise
+- Zakelijk
 - Education
 - Mobiel
 - Mobile Enterprise
@@ -202,7 +201,7 @@ Deze instellingen zijn van toepassing zijn op gegevensstations van het besturing
 
 Wordt ondersteund op de volgende edities van Windows 10:
 
-- Enterprise
+- Zakelijk
 - Education
 - Mobiel
 - Mobile Enterprise
@@ -226,7 +225,7 @@ Wordt ondersteund op de volgende edities van Windows 10:
 
 Wordt ondersteund op de volgende edities van Windows 10:
 
-- Enterprise
+- Zakelijk
 - Education
 - Mobiel
 - Mobile Enterprise
@@ -244,7 +243,7 @@ Wordt ondersteund op de volgende edities van Windows 10:
 - Home
 - Professional
 - Zakelijk
-- Enterprise
+- Zakelijk
 - Education
 - Mobiel
 - Mobile Enterprise
@@ -337,13 +336,13 @@ Wordt ondersteund op de volgende edities van Windows 10:
 **Mobile Device Management (MDM)**: 
 - Professional
 - Zakelijk
-- Enterprise
+- Zakelijk
 - Education
 - Mobiel
 - Mobile Enterprise
 
 **Groepsbeleidsbeheer**: 
-- Enterprise
+- Zakelijk
 
 Gebruik **Integriteitsbeleidsregels van de stuurcode van de toepassing** om aanvullende apps te kiezen die worden gecontroleerd door of worden vertrouwd door Windows Defender Application Control. Windows-onderdelen en alle apps uit de Windows Store worden automatisch vertrouwd.
 
@@ -355,7 +354,7 @@ Als deze modus is ingeschakeld, kan toepassingsbeheer alleen worden uitgeschakel
 
 Wordt ondersteund op de volgende edities van Windows 10:
 
-- Enterprise
+- Zakelijk
 
 Windows Defender Credential Guard beschermt tegen aanvallen waarbij referenties worden gestolen. Het isoleert geheimen zodat alleen bevoegde systeemsoftware er toegang toe heeft.
 
@@ -382,7 +381,7 @@ Wordt ondersteund op de volgende edities van Windows 10:
 - Home
 - Professional
 - Zakelijk
-- Enterprise
+- Zakelijk
 - Education
 - Mobiel
 - Mobile Enterprise
@@ -415,7 +414,7 @@ Wordt ondersteund op de volgende edities van Windows 10:
 - Home
 - Professional
 - Zakelijk
-- Enterprise
+- Zakelijk
 - Education
 
 Gebruik deze opties voor het configureren van de lokale beveiligingsinstellingen op Windows 10-apparaten.

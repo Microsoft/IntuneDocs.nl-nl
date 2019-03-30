@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1e3e510cf1ef7e13e653f7793433045b0610ef
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f3addd79b20c685c5643a2b99fb7120e958cdecb
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565467"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394878"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Line-of-business-apps voorbereiden voor app-beveiligingsbeleid
 
@@ -87,6 +87,7 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |App mag gegevens overdragen naar ander apps|X|X|
 |App mag gegevens ontvangen van andere apps|X|X|
 |Knippen, kopiëren en plakken met andere apps beperken|X|X|
+|Geef het aantal tekens dat kan worden geknipt of gekopieerd van een beheerde app|X|X|
 |Eenvoudige pincode vereisen voor toegang|X|X|
 |Het aantal pogingen opgeven voordat de pincode opnieuw wordt ingesteld|X|X|
 |Vingerafdruk in plaats van pincode toestaan|X|X|
