@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/09/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 428025e5e56450fd859f6bf2c9a990cbdca4f263
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 151ceaa40f2993d3160b9de34eee92e53c35925d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835109"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565856"
 ---
 # <a name="windows-holographic-for-business-settings-to-manage-shared-devices-using-intune"></a>Windows Holographic for Business-instellingen voor het beheren van gedeelde apparaten met Intune
 
@@ -42,10 +43,10 @@ Zie [Control access, accounts, and power features on shared PC or multi-user dev
 > [!NOTE]
 > Apparaten met Windows Holographic for Business, met inbegrip van de Microsoft HoloLens, ondersteunen alleen de **accountbeheer**instellingen. Als u andere instellingen in Intune configureert, inclusief de **modus Gedeelde pc**, heeft dit geen invloed op deze apparaten.
 
-- **Accountbeheer**: Schakel deze optie **in** om lokale accounts die zijn gemaakt door gasten en accounts in AD en Azure AD automatisch te verwijderen. Wanneer een gebruiker zich afmeldt op het apparaat of wanneer er systeemonderhoud wordt uitgevoerd, worden deze accounts verwijderd. Als deze optie is ingeschakeld, stelt u ook de volgende zaken in:
-  - **Accountverwijdering**: Kies wanneer accounts worden verwijderd: **Bij drempelwaarde opslagruimte**, **Bij drempelwaarde opslagruimte en inactiviteit** of **Direct na afmelding**. Voer ook in:
-    - **Drempelwaarde verwijderen starten(%)**: Voer een percentage van de schijfruimte in (0-100). Als de totale schijf-/opslagruimte lager is dan de ingevoerde waarde, worden de accounts in de cache verwijderd. Er worden doorlopend accounts verwijderd om schijfruimte terug te winnen. De accounts die het langst inactief zijn, worden als eerste verwijderd.
-    - **Drempelwaarde verwijderen stoppen(%)**: Voer een percentage van de schijfruimte in (0-100). Als de totale schijf-/opslagruimte hetzelfde is als de ingevoerde waarde, wordt gestopt met verwijderen.
+- **Accountbeheer**: kies **Inschakelen** om lokale accounts die zijn gemaakt door gasten en accounts in AD en Azure AD automatisch te verwijderen. Wanneer een gebruiker zich afmeldt op het apparaat of wanneer er systeemonderhoud wordt uitgevoerd, worden deze accounts verwijderd. Als deze optie is ingeschakeld, stelt u ook de volgende zaken in:
+  - **Account verwijderen**: kiest u wanneer accounts worden verwijderd: **met storage space drempelwaarde**, **drempelwaarde voor de opslag en inactieve drempelwaarde**, of **onmiddellijk na log-out** . Voer ook in:
+    - **Start verwijderen threshold(%)**: Geef een percentage (0-100) aan schijfruimte. Als de totale schijf-/opslagruimte lager is dan de ingevoerde waarde, worden de accounts in de cache verwijderd. Er worden doorlopend accounts verwijderd om schijfruimte terug te winnen. De accounts die het langst inactief zijn, worden als eerste verwijderd.
+    - **Stop verwijderen threshold(%)**: Geef een percentage (0-100) aan schijfruimte. Als de totale schijf-/opslagruimte hetzelfde is als de ingevoerde waarde, wordt gestopt met verwijderen.
 
   Schakel deze optie **uit** om de lokale, AD- en Azure AD-accounts die zijn gemaakt door gasten te behouden.
 

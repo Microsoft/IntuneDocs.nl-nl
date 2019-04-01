@@ -6,10 +6,11 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a21194b218cc7df230bf1ef1969b8d4483940d75
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7ea3e2c87055e4f111c8f12c47c468dff2c4e587
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238758"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565686"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Naslag voor MAM-entiteiten (Mobile Application Management)
 
@@ -83,12 +84,12 @@ De entiteit **MamCheckin** vertegenwoordigt gegevens die worden verzameld wannee
 | Eigenschap | Beschrijving | Voorbeeld |
 |---------|------------|--------|
 | DateKey |De datum waarop het inchecken van de MAM-app is vastgelegd in het datawarehouse. | 20160703 |
-| ApplicationInstanceKey |De sleutel van het app-exemplaar dat is gekoppeld aan het inchecken van deze MAM-app. |5/2/1900 12:00:00 AM |
-| UserKey |De sleutel van de gebruiker die is gekoppeld aan het inchecken van deze MAM-app. |1/12/1900 12:00:00 AM |
-| ApplicationKey |De sleutel van de MAM-app die is ingecheckt. |1/10/1900 12:00:00 AM |
-| DeviceHealthKey |De sleutel van de apparaatstatus die is gekoppeld aan het inchecken van deze MAM-app. |1/2/1900 12:00:00 AM |
-| PlatformKey |Het platform van het apparaat dat is gekoppeld aan het inchecken van deze MAM-app. |1/1/1900 12:00:00 AM |
-| EffectiveAppliedPolicyKey |Het effectief toegepaste beleid dat is gekoppeld aan de MAM-app die is ingecheckt. Een effectief toegepast beleid is het resultaat van het samenvoegen van alle beleidsregels die relevant zijn voor een bepaalde app en gebruiker. |5/2/1900 12:00:00 AM |
+| ApplicationInstanceKey |De sleutel van het app-exemplaar dat is gekoppeld aan het inchecken van deze MAM-app. | 123 |
+| UserKey |De sleutel van de gebruiker die is gekoppeld aan het inchecken van deze MAM-app. | 4323 |
+| ApplicationKey |De sleutel van de MAM-app die is ingecheckt. |234 |
+| DeviceHealthKey |De sleutel van de apparaatstatus die is gekoppeld aan het inchecken van deze MAM-app. | 321 |
+| PlatformKey |Het platform van het apparaat dat is gekoppeld aan het inchecken van deze MAM-app. |123 |
+| EffectiveAppliedPolicyKey |Het effectief toegepaste beleid dat is gekoppeld aan de MAM-app die is ingecheckt. Een effectief toegepast beleid is het resultaat van het samenvoegen van alle beleidsregels die relevant zijn voor een bepaalde app en gebruiker. | 322 |
 | LastCheckInDate |De datum en tijd waarop deze MAM-app het laatst is ingecheckt. De waarde kan null zijn. |11/23/2016 12:00:00 AM |
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
@@ -97,8 +98,8 @@ De entiteit **MamDeviceHealth** vertegenwoordigt apparaten waarop MAM-beleid (Mo
 
 | Eigenschap | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| DeviceHealthKey |De unieke id van het apparaat en de bijbehorende status in het datawarehouse (surrogaatsleutel). |1/1/1900 12:00:00 AM |
-| DeviceHealth |De unieke id van het apparaat en de bijbehorende status, vergelijkbaar met DeviceHealthKey, maar de id is een natuurlijke sleutel. |1/1/1900 12:00:00 AM |
+| DeviceHealthKey |De unieke id van het apparaat en de bijbehorende status in het datawarehouse (surrogaatsleutel). |123 |
+| DeviceHealth |De unieke id van het apparaat en de bijbehorende status, vergelijkbaar met DeviceHealthKey, maar de id is een natuurlijke sleutel. |b66bc706-ffff-7777-0340-032819502773 |
 | DeviceHealthName |De status van het apparaat. <br>Niet beschikbaar: er is geen informatie over dit apparaat. <br>Goed: apparaat is niet opengebroken. <br>Slecht: apparaat is opengebroken. |Niet beschikbaar Goed Slecht |
 | RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop deze specifieke MAM-apparaatstatus het laatst is gewijzigd in het datawarehouse. |11/23/2016 12:00:00 AM |
 

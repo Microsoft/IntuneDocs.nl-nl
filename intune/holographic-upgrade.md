@@ -7,20 +7,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2176eda7ce54906c6af5b34cc3db49e21ecda274
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 1c6a2f4fc3e3cae171cea96520d075a659d4d1ca
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231958"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566332"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Apparaten met Windows Holographic upgraden naar Windows Holographic for Business
 
@@ -36,8 +37,8 @@ Zie [Upgrade Windows 10 editions or enable S mode](edition-upgrade-configure-win
 
 ## <a name="edition-upgrade"></a>Editie-upgrade
 
-- **Editie bijwerken naar**: selecteer **Windows 10 Holographic for Business**.
-- **Licentiebestand**: blader naar het XML-licentiebestand dat u hebt gekregen en selecteer dit bestand.
+- **Editie bijwerken naar**: Selecteer **Windows 10 Holographic voor bedrijven**.
+- **Licentiebestand**: blader naar het XML-licentiebestand dat voor u is opgegeven en selecteer dit bestand.
 
   ![Voer de naam van het XML-bestand in dat de gegevens over de licentie voor Holographic for Business bevat](media/Holographic-edition-upgrade.png)
  

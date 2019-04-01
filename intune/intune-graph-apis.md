@@ -7,20 +7,22 @@ author: dougeby
 manager: dougeby
 ms.author: dougeby
 ms.date: 03/08/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5129484a3cfea873be4009849b5989f9c2acd888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8625eddaa3c6223767c7c93022275b028b4a145b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187444"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566553"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD gebruiken voor toegang tot de Intune-API's in Microsoft Graph
 
@@ -146,13 +148,13 @@ __Externe acties die gebruikers beïnvloeden uitvoeren op apparaten met Microsof
 __Microsoft Intune-apparaten lezen en schrijven__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Microsoft Intune-apparaten lezen__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Microsoft Intune RBAC-instellingen lezen en schrijven__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Microsoft Intune RBAC-instellingen lezen__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__Microsoft Intune RBAC-instellingen lezen__ | DeviceManagementRBAC.Read.All
 __Microsoft Intune-apps lezen en schrijven__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __Microsoft Intune-apps lezen__ | [DeviceManagementApps.Read.All](#app-ro)
-__Microsoft Intune-apparaatconfiguratie en -beleid lezen en schrijven__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__Microsoft Intune-apparaatconfiguratie en -beleid lezen en schrijven__ | DeviceManagementConfiguration.ReadWrite.All
 __Microsoft Intune-apparaatconfiguratie en -beleid lezen__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __Microsoft Intune-configuratie lezen en schrijven__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__Microsoft Intune-configuratie lezen__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+__Microsoft Intune-configuratie lezen__ | DeviceManagementServiceConfig.Read.All
 
 De tabel bevat de instellingen zoals die worden weergegeven in Azure Portal. In de volgende secties worden de bereiken in alfabetische volgorde beschreven.
 
@@ -588,7 +590,7 @@ Vergeet indien van toepassing niet de gebruiker toe te voegen aan andere rollen.
 
 Ook:
 
-- Gebruiken om een Intune-licentie aan uw gebruikersaccount toe te voegen https://portal.office.com .
+- Gebruiken om een Intune-licentie aan uw gebruikersaccount toe te voegen https://admin.microsoft.com .
 
 - Werk de toepassingscode bij voor de verificatie van het Azure AD-tenantdomein van de klant, in plaats van uw eigen domein.
 

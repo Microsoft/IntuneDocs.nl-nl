@@ -5,20 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 518bb2ab0f59b5692ff2c2391fe971abba0639c6
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e6e82e24f051e64d07487d915ac6fd0848727ecf
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072521"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566808"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Een apparaatnalevingsbeleid maken voor Windows-apparaten in Intune
 
@@ -73,8 +75,8 @@ Deze beleidsinstellingen zijn van toepassing op apparaten met de volgende platfo
 
 ### <a name="device-properties"></a>Apparaateigenschappen
 
-- **Minimale versie van het besturingssysteem die is vereist**: als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-compatibel. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. Gebruikers kunnen dan kiezen om een upgrade van hun apparaat uit te voeren, waarna ze toegang tot bedrijfsresources krijgen.
-- **Maximale versie van het besturingssysteem dat is toegestaan**: Wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die is ingevoerd in de regel, wordt de toegang tot bedrijfsresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Het apparaat heeft geen toegang tot organisatieresources totdat u de regel wijzigt zodat de versie van het besturingssysteem is toegestaan.
+- **Minimale versie van het besturingssysteem die is vereist:** wanneer een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. Gebruikers kunnen dan kiezen om een upgrade van hun apparaat uit te voeren, waarna ze toegang tot bedrijfsresources krijgen.
+- **Maximale versie van het besturingssysteem die is toegestaan**: wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die in de regel is ingevoerd, wordt de toegang tot bedrijfsresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Het apparaat heeft geen toegang tot organisatieresources totdat u de regel wijzigt zodat de versie van het besturingssysteem is toegestaan.
 
 Windows 8.1-pc's retourneren versie **3**. Als de besturingssysteemversieregel is ingesteld op Windows 8.1 voor Windows, wordt het apparaat als in strijd met het nalevingsbeleid gerapporteerd, zelfs als het apparaat Windows 8.1 heeft.
 
@@ -82,17 +84,17 @@ Windows 8.1-pc's retourneren versie **3**. Als de besturingssysteemversieregel i
 
 #### <a name="password"></a>Wachtwoord
 
-- **Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**: hiermee kunt u **vereisen** dat gebruikers een wachtwoord invoeren voordat ze toegang kunnen krijgen tot hun apparaat.
-- **Eenvoudige wachtwoorden**: Stel deze optie in op **Blokkeren** zodat gebruikers geen eenvoudig wachtwoord kunnen maken, zoals **1234** of **1111**. Stel deze optie in op **Niet geconfigureerd** om gebruikers toe te staan wachtwoorden als **1234** of **1111** te maken.
-- **Minimale wachtwoordlengte**: Voer het aantal cijfers of tekens in waaruit het wachtwoord minimaal moet bestaan.
+- **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**: **verplicht** gebruikers een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
+- **Eenvoudige wachtwoorden**: stel deze optie in op **Blokkeren** zodat de gebruiker geen eenvoudig wachtwoord kan maken, zoals **1234** of **1111**. Stel deze optie in op **Niet geconfigureerd** om gebruikers toe te staan wachtwoorden als **1234** of **1111** te maken.
+- **Minimale wachtwoordlengte**: voer het minimale aantal cijfers of tekens aan waaruit het wachtwoord moet bestaan.
 
   Voor apparaten waarop Windows wordt uitgevoerd en met een Microsoft-account toegankelijk zijn, kan het nalevingsbeleid niet correct evalueren:
   - Als de minimale wachtwoordlengte langer is dan acht tekens
   - Of als het minimale aantal tekensets meer is dan twee
 
-- **Wachtwoordtype**: Kies of een wachtwoord alleen **numerieke** tekens mag bevatten of uit een combinatie van cijfers en andere tekens moet bestaan (**alfanumeriek**).
+- **Wachtwoordtype**: kies of een wachtwoord alleen **numerieke** tekens mag bevatten of uit een combinatie van cijfers en andere tekens moet bestaan (**alfanumeriek**).
   
-  - **Het aantal niet-alfanumerieke tekens in het wachtwoord**: Als **Vereist wachtwoordtype** is ingesteld op **Alfanumeriek**, wordt hier het minimale aantal tekensets opgegeven waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
+  - **Aantal niet-alfanumerieke tekens in wachtwoord**: als **Vereist wachtwoordtype** is ingesteld op **Alfanumeriek**, wordt met deze instelling het minimale aantal tekensets opgegeven waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
     - Kleine letters
     - Hoofdletters
     - Symbolen
@@ -103,57 +105,57 @@ Windows 8.1-pc's retourneren versie **3**. Als de besturingssysteemversieregel i
     - Als de minimale wachtwoordlengte langer is dan acht tekens
     - Of als het minimale aantal tekensets meer is dan twee
 
-- **Maximum aantal minuten inactief voordat wachtwoord is vereist**: Voer in na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren.
-- **Wachtwoordverlooptijd (dagen)**: selecteer het aantal dagen waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken.
-- **Aantal eerdere wachtwoorden dat niet opnieuw mag worden gebruikt**: Voer het aantal eerder gebruikte wachtwoorden in dat niet opnieuw mag worden gebruikt.
+- **Maximum aantal minuten van inactiviteit voordat wachtwoord is vereist**: geef aan na hoeveel niet-actieve tijd de gebruiker het wachtwoord opnieuw moet invoeren.
+- **Wachtwoord verloopt (in dagen)**: selecteer het aantal dagen waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken.
+- **Aantal eerdere wachtwoorden dat niet opnieuw mag worden gebruikt**: voer het aantal eerder gebruikte wachtwoorden in dat niet opnieuw mag worden gebruikt.
 
 #### <a name="encryption"></a>Versleuteling
 
-- **Versleuteling vereisen voor mobiel apparaat**: **Vereis** dat het apparaat versleuteld moet zijn om verbinding te maken met gegevensopslagresources.
+- **Versleuteling vereisen op een mobiel apparaat**: **vereis** dat het apparaat versleuteld moet zijn om verbinding te maken met gegevensopslag-resources.
 
 ## <a name="windows-10-and-later-policy-settings"></a>Beleidsinstellingen Windows 10 en hoger
 
 ### <a name="device-health"></a>Device health
 
-- **BitLocker vereisen**: Als Bitlocker is ingeschakeld, kan het apparaat gegevens die op de schijf zijn opgeslagen, beveiligen tegen onbevoegde toegang wanneer het systeem wordt uitgeschakeld of overschakelt naar de slaapstand. Windows BitLocker-stationsversleuteling versleutelt alle gegevens die zijn opgeslagen op het volume met het Windows-besturingssysteem. BitLocker gebruikt de TPM om het Windows-besturingssysteem en de gebruikersgegevens te beveiligen. Het helpt ook om te bevestigen dat een computer niet is gemanipuleerd, zelfs als deze zonder toezicht, kwijtgeraakt of gestolen is. Als de computer is uitgerust met een compatibele TPM, gebruikt BitLocker de TPM om de versleutelingssleutels te vergrendelen die de gegevens beschermen. Als gevolg hiervan kunnen de sleutels niet worden gebruikt tot met de TPM de status van de computer is gecontroleerd.
-- **Vereisen dat beveiligd opstarten wordt ingeschakeld op het apparaat**: Als Beveiligd opstarten is ingeschakeld, wordt het systeem geforceerd op te starten in een vertrouwde fabrieksstatus. Als beveiligd opstarten is ingeschakeld, moeten de belangrijkste onderdelen van de computer de juiste cryptografische handtekeningen hebben die worden vertrouwd door de organisatie die het apparaat heeft gemaakt. De UEFI-firmware verifieert de digitale handtekening voordat de computer kan worden opgestart. Als de bestanden zijn gemanipuleerd, waardoor de bijbehorende handtekening is beschadigd, kan het systeem niet worden gestart.
+- **Vereis BitLocker**: als Bitlocker is ingeschakeld, kan het apparaat gegevens die op de schijf zijn opgeslagen, beveiligen tegen onbevoegde toegang wanneer het systeem wordt uitgeschakeld of overschakelt naar de slaapstand. Windows BitLocker-stationsversleuteling versleutelt alle gegevens die zijn opgeslagen op het volume met het Windows-besturingssysteem. BitLocker gebruikt de TPM om het Windows-besturingssysteem en de gebruikersgegevens te beveiligen. Het helpt ook om te bevestigen dat een computer niet is gemanipuleerd, zelfs als deze zonder toezicht, kwijtgeraakt of gestolen is. Als de computer is uitgerust met een compatibele TPM, gebruikt BitLocker de TPM om de versleutelingssleutels te vergrendelen die de gegevens beschermen. Als gevolg hiervan kunnen de sleutels niet worden gebruikt tot met de TPM de status van de computer is gecontroleerd.
+- **Vereis dat Beveiligd opstarten is ingeschakeld op het apparaat**: als beveiligd opstarten is ingeschakeld, wordt het systeem gedwongen om in een vertrouwde fabrieksstatus op te starten. Als beveiligd opstarten is ingeschakeld, moeten de belangrijkste onderdelen van de computer de juiste cryptografische handtekeningen hebben die worden vertrouwd door de organisatie die het apparaat heeft gemaakt. De UEFI-firmware verifieert de digitale handtekening voordat de computer kan worden opgestart. Als de bestanden zijn gemanipuleerd, waardoor de bijbehorende handtekening is beschadigd, kan het systeem niet worden gestart.
 
   > [!NOTE]
-  > De instelling **Vereisen dat beveiligd opstarten wordt ingeschakeld op het apparaat** wordt ondersteund op TPM 1.2- en 2.0-apparaten. Voor apparaten die geen ondersteuning bieden voor TPM 2.0 of later, wordt de beleidsstatus in Intune weergegeven als **Niet-conform**. Dit is een beperking van de [Device Health Attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation)-service in Windows 10.
+  > De instelling **Vereisen dat beveiligd opstarten wordt ingeschakeld op het apparaat** wordt ondersteund op bepaalde TPM 1.2- en 2.0-apparaten. Voor apparaten die geen ondersteuning bieden voor TPM 2.0 of later, wordt de beleidsstatus in Intune weergegeven als **Niet-conform**. Zie voor meer informatie over de ondersteunde versies [Health Attestation van apparaten](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation).
 
-- **Code-integriteit vereisen**: Code-integriteit is een functie waarmee de integriteit van een stuurprogramma of systeembestand wordt gevalideerd telkens wanneer dit in het geheugen wordt geladen. Via deze functie wordt gedetecteerd of een niet-ondertekend stuurprogramma of systeembestand in de kernel is geladen. Ook wordt gedetecteerd of een systeembestand is gewijzigd vanwege schadelijke software die is uitgevoerd via een gebruikersaccount met beheerdersbevoegdheden.
+- **Vereis code-integriteit**: code-integriteit is een functie die voortdurend de integriteit valideert van een stuurprogramma- of systeembestand wanneer dat bestand in het geheugen wordt geladen. Via deze functie wordt gedetecteerd of een niet-ondertekend stuurprogramma of systeembestand in de kernel is geladen. Ook wordt gedetecteerd of een systeembestand is gewijzigd vanwege schadelijke software die is uitgevoerd via een gebruikersaccount met beheerdersbevoegdheden.
 
 Zie [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (CSP-statusverklaring) voor meer informatie over de werking van de HAS-service.
 
 ### <a name="device-properties"></a>Apparaateigenschappen
 
-- **Minimale versie van het besturingssysteem**: Voer de minimaal toegestane versie in de nummerindeling **major.minor.build.CU** in. Als u de juiste waarde wilt ophalen, opent u een opdrachtprompt en typt u `ver`. De opdracht `ver` retourneert de versie in de volgende indeling:
+- **Minimale versie van het besturingssysteem**: voer de minimaal toegestane versie in de nummerindeling **major.minor.build.CU** in. Als u de juiste waarde wilt ophalen, opent u een opdrachtprompt en typt u `ver`. De opdracht `ver` retourneert de versie in de volgende indeling:
 
   `Microsoft Windows [Version 10.0.17134.1]`
 
   Wanneer een apparaat een eerdere versie heeft dan de ingevoerde versie van het besturingssysteem, wordt de versie als niet-compatibel gerapporteerd. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan kiezen om het apparaat bij te werken. Na het bijwerken zijn de bedrijfsresources toegankelijk.
 
-- **Maximale versie van het besturingssysteem**: Voer de maximaal toegestane versie in de nummerindeling **major.minor.build.versienummer** in. Als u de juiste waarde wilt ophalen, opent u een opdrachtprompt en typt u `ver`. De opdracht `ver` retourneert de versie in de volgende indeling:
+- **Maximale versie van het besturingssysteem**: voer de maximaal toegestane versie in de nummerindeling **major.minor.build.versienummer** in. Als u de juiste waarde wilt ophalen, opent u een opdrachtprompt en typt u `ver`. De opdracht `ver` retourneert de versie in de volgende indeling:
 
   `Microsoft Windows [Version 10.0.17134.1]`
 
   Wanneer een apparaat een versie van het besturingssysteem gebruikt dat hoger is dan wat is ingevoerd in de regel, wordt de toegang tot bedrijfsbronnen geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel om de versie van het besturingssysteem toe te staan, heeft dit apparaat geen toegang tot bedrijfsresources.
 
-- **Minimale besturingssysteem voor mobiel apparaten**: Voer de minimaal toegestane versie in de nummerindeling major.minor.buildnummer in.
+- **Minimale versie van het besturingssysteem dat vereist is voor mobiele apparaten**: voer de minimaal toegestane versie in de nummerindeling major.minor.build in.
 
   Wanneer een apparaat een eerdere versie heeft dan de ingevoerde versie van het besturingssysteem, wordt de versie als niet-compatibel gerapporteerd. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan kiezen om het apparaat bij te werken. Na het bijwerken zijn de bedrijfsresources toegankelijk.
 
-- **Maximale besturingssysteem voor mobiel apparaten**: Voer de maximaal toegestane versie in de nummerindeling major.minor.buildnummer in.
+- **Maximale versie van het besturingssysteem dat vereist is voor mobiele apparaten**: voer de maximaal toegestane versie in de nummerindeling major.minor.build in.
 
   Wanneer een apparaat een versie van het besturingssysteem gebruikt dat hoger is dan de ingevoerde versie, wordt de toegang tot bedrijfsbronnen geblokkeerd en wordt de gebruiker gevraagd contact op te nemen met de IT-beheerder. Tot er een wijziging is doorgevoerd in de regel om de versie van het besturingssysteem toe te staan, heeft dit apparaat geen toegang tot bedrijfsresources.
 
-- **Geldige build van het besturingssysteem**: Voer een bereik in voor de acceptabele versies van besturingssystemen, met inbegrip van een minimum en maximum. U kunt ook een bestandslijst met door komma's gescheiden waarden (CSV) met de toegestane versienummers van besturingssystemen **exporteren**.
+- **Geldig besturingssysteem-builds**: voer een bereik in voor de acceptabele versies van besturingssystemen, met inbegrip van een minimum en maximum. U kunt ook een bestandslijst met door komma's gescheiden waarden (CSV) met de toegestane versienummers van besturingssystemen **exporteren**.
 
 ### <a name="configuration-manager-compliance"></a>Configuration Manager-compatibiliteit
 
 Geldt alleen voor gezamenlijk beheerde apparaten met Windows 10 en hoger. Apparaten met alleen Intune retourneren de status Niet beschikbaar.
 
-- **De apparaatcompatibiliteit vereisen van System Center Configuration Manager**: Kies **Vereisen** om af te dwingen dat alle instellingen (configuratie-items) in System Center Configuration Manager compatibel zijn. 
+- **Het nalevingsbeleid voor apparaten in System Center Configuration Manager vereist**: kies **vereisen** om af te dwingen van alle instellingen (configuratie-items) in System Center Configuration Manager aan het beleid voldoen. 
 
   U kunt bijvoorbeeld vereisen dat alle software-updates worden geïnstalleerd op apparaten. Deze vereiste heeft in Configuration Manager de status 'Geïnstalleerd'. Als programma's op het apparaat een onbekende status hebben, is het apparaat niet-compatibel in Intune.
   
@@ -163,11 +165,11 @@ Geldt alleen voor gezamenlijk beheerde apparaten met Windows 10 en hoger. Appara
 
 #### <a name="password"></a>Wachtwoord
 
-- **Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**: hiermee kunt u **vereisen** dat gebruikers een wachtwoord invoeren voordat ze toegang kunnen krijgen tot hun apparaat.
-- **Eenvoudige wachtwoorden**: Stel deze optie in op **Blokkeren** zodat gebruikers geen eenvoudig wachtwoord kunnen maken, zoals **1234** of **1111**. Stel deze optie in op **Niet geconfigureerd** om gebruikers toe te staan wachtwoorden als **1234** of **1111** te maken.
-- **Wachtwoordtype**: Kies of een wachtwoord alleen **numerieke** tekens mag bevatten of uit een combinatie van cijfers en andere tekens moet bestaan (**alfanumeriek**).
+- **Een wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**: **verplicht** gebruikers een wachtwoord in te voeren om toegang te krijgen tot hun apparaat.
+- **Eenvoudige wachtwoorden**: stel deze optie in op **Blokkeren** zodat de gebruiker geen eenvoudig wachtwoord kan maken, zoals **1234** of **1111**. Stel deze optie in op **Niet geconfigureerd** om gebruikers toe te staan wachtwoorden als **1234** of **1111** te maken.
+- **Wachtwoordtype**: kies of een wachtwoord alleen **numerieke** tekens mag bevatten of uit een combinatie van cijfers en andere tekens moet bestaan (**alfanumeriek**).
 
-  - **Het aantal niet-alfanumerieke tekens in het wachtwoord**: Als **Vereist wachtwoordtype** is ingesteld op **Alfanumeriek**, wordt hier het minimale aantal tekensets opgegeven waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
+  - **Aantal niet-alfanumerieke tekens in wachtwoord**: als **Vereist wachtwoordtype** is ingesteld op **Alfanumeriek**, wordt met deze instelling het minimale aantal tekensets opgegeven waaruit het wachtwoord moet bestaan. De vier tekensets zijn:
     - Kleine letters
     - Hoofdletters
     - Symbolen
@@ -175,31 +177,31 @@ Geldt alleen voor gezamenlijk beheerde apparaten met Windows 10 en hoger. Appara
 
     Als u een hogere waarde instelt, moet de gebruiker een wachtwoord maken dat complexer is.
 
-- **Minimale wachtwoordlengte**: Voer het aantal cijfers of tekens in waaruit het wachtwoord minimaal moet bestaan.
-- **Maximum aantal minuten inactief voordat wachtwoord is vereist**: Voer in na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren.
-- **Wachtwoordverlooptijd (dagen)**: selecteer het aantal dagen waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken.
-- **Aantal eerdere wachtwoorden dat niet opnieuw mag worden gebruikt**: Voer het aantal eerder gebruikte wachtwoorden in dat niet opnieuw mag worden gebruikt.
-- **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status (mobiel en Holographic)**: Vereisen dat de gebruiker het wachtwoord invoert wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status.
+- **Minimale wachtwoordlengte**: voer het minimale aantal cijfers of tekens aan waaruit het wachtwoord moet bestaan.
+- **Maximum aantal minuten van inactiviteit voordat wachtwoord is vereist**: geef aan na hoeveel niet-actieve tijd de gebruiker het wachtwoord opnieuw moet invoeren.
+- **Wachtwoord verloopt (in dagen)**: selecteer het aantal dagen waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken.
+- **Aantal eerdere wachtwoorden dat niet opnieuw mag worden gebruikt**: voer het aantal eerder gebruikte wachtwoorden in dat niet opnieuw mag worden gebruikt.
+- **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status (Mobile en Holographic)**: afdwingen dat gebruikers het wachtwoord invoeren telkens wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status.
 
 #### <a name="encryption"></a>Versleuteling
 
-- **Versleuteling van gegevensopslag op een apparaat**: kies **Vereisen** om de gegevensopslag op uw apparaten te versleutelen.
+- **Versleuteling van gegevensopslag op een apparaat**: kies **Vereisen** om gegevensopslag op uw apparaten te versleutelen.
 
   > [!NOTE]
   > Met de instelling **Versleuteling van gegevensopslag op een apparaat** wordt algemeen gecontroleerd of er op het apparaat wordt versleuteld. Voor betere versleutelingsinstelling kunt u overwegen om **BitLocker vereisen** te gebruiken. Hierbij wordt gebruikgemaakt van de Windows-apparaatstatusverklaring om de Bitlocker-status op TPM-niveau te valideren.
 
 #### <a name="device-security"></a>Apparaatbeveiliging
 
-- **Antivirus**: Als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antivirusoplossingen die zijn geregistreerd bij Microsoft Beveiligingscentrum, zoals Symantec en Windows Defender. Als dit **niet is geconfigureerd**, controleert Intune niet of er AV-oplossingen op het apparaat zijn geïnstalleerd.
-- **AntiSpyware**: Als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antivirusoplossingen die zijn geregistreerd bij het Microsoft Beveiligingscentrum, zoals Symantec en Windows Defender. Als dit **niet is geconfigureerd**, controleert Intune niet of er antispywareoplossingen op het apparaat zijn geïnstalleerd.
+- **Antivirus**: als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antivirusoplossingen die zijn geregistreerd bij [Azure Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), zoals Symantec en Windows Defender. Als dit **niet is geconfigureerd**, controleert Intune niet of er AV-oplossingen op het apparaat zijn geïnstalleerd.
+- **Antispyware**: als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antivirusoplossingen die zijn geregistreerd bij [Azure Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/) en Windows Defender. Als dit **niet is geconfigureerd**, controleert Intune niet of er antispywareoplossingen op het apparaat zijn geïnstalleerd.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 
-- **Vereisen dat het apparaat de risicoscore voor computers niet overschrijdt**: Gebruik deze instelling om de risicobeoordeling van de beveiligingsservices bij bedreigingen te gebruiken als voorwaarde voor naleving. Kies het maximaal toegestane bedreigingsniveau:
-  - **Veilig**: Deze optie is het veiligst, omdat het apparaat geen bedreigingen kan hebben. Als een van de bedreigingsniveaus voor het apparaat wordt gedetecteerd, wordt het apparaat geëvalueerd als niet-compatibel.
-  - **Laag**: het apparaat wordt als compatibel geëvalueerd als er alleen bedreigingen met een laag niveau op staan. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
-  - **Gemiddeld**: Het apparaat wordt als conform geëvalueerd als bestaande bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als bedreigingen met hoog niveau worden aangetroffen op het apparaat, wordt het apparaat als niet-compatibel beoordeeld.
-  - **Hoog**: Deze optie is het minst veilig, omdat alle bedreigingsniveaus zijn toegestaan. Deze optie kan handig zijn als u deze alleen gebruikt voor rapportagedoeleinden.
+- **Vereisen dat het apparaat de machinerisicoscore niet overschrijdt**: gebruik deze instelling om de risicobeoordeling uit uw diensten voor verdediging tegen bedreigingen te gebruiken als voorwaarde voor naleving. Kies het maximaal toegestane bedreigingsniveau:
+  - **Wissen**: deze optie is het veiligst, omdat het apparaat geen bedreigingen kan hebben. Als een van de bedreigingsniveaus voor het apparaat wordt gedetecteerd, wordt het apparaat geëvalueerd als niet-compatibel.
+  - **Laag**: het apparaat wordt als compatibel geëvalueerd als er bedreigingen van een laag niveau aanwezig zijn. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
+  - **Gemiddeld**: het apparaat wordt als conform geëvalueerd als bestaande bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als bedreigingen met hoog niveau worden aangetroffen op het apparaat, wordt het apparaat als niet-compatibel beoordeeld.
+  - **Hoog**: deze optie is het minst veilig, omdat alle bedreigingsniveaus zijn toegestaan. Deze optie kan handig zijn als u deze alleen gebruikt voor rapportagedoeleinden.
   
   Zie [Windows Defender ATP met voorwaardelijke toegang inschakelen](advanced-threat-protection.md) als u Windows Defender ATP (Advanced Threat Protection) wilt gebruiken tegen bedreigingen.
 

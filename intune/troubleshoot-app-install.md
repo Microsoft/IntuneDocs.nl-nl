@@ -6,28 +6,29 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 02/19/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65391ca620892dcd3b95719454dabc30eb35cb6f
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 5a5e000a973932db0bbaa215ea94976219ff905c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839377"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57577843"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Problemen met app-installatie oplossen
 
 Op apparaten die met Microsoft Intune MDM worden beheerd, mislukken app-installaties wel eens. Als deze apps niet kunnen worden geïnstalleerd, is het soms lastig om de reden van het probleem te achterhalen of om het probleem op te lossen. Microsoft Intune biedt details van app-installatiefouten. Zo kunnen helpdeskmedewerkers en Intune-beheerders app-informatie bekijken om de hulpverzoeken van gebruikers te beantwoorden. Het deelvenster voor probleemoplossing binnen Intune biedt foutdetails, waaronder details over beheerde apps op een apparaat van een gebruiker. Er worden details van de end-to-end-levenscyclus van een app van elk afzonderlijk apparaat getoond in het deelvenster **Beheerde apps**. U kunt installatieproblemen bekijken, zoals wanneer de app was gemaakt, bewerkt, ingericht op en geleverd aan een apparaat. 
 
-## <a name="to-review-app-troubleshooting-details"></a>Details voor app-probleemoplossing weergeven
+## <a name="app-troubleshooting-details"></a>Oplossen van problemen met App-details
 
 Intune biedt details van app-probleemoplossing op basis van de geïnstalleerde apps op een specifiek apparaat van een gebruiker.
 
@@ -52,6 +53,47 @@ De details van de app-installatieproblemen geven het probleem aan. U kunt deze d
 > [!Note]  
 > U kunt het deelvenster **Probleemoplossing** ook openen door in uw browser naar het volgende adres te gaan: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
+## <a name="win32-app-installation-troubleshooting"></a>Win32-app installatieproblemen oplossen
+
+Selecteer de Win32-app die is geïmplementeerd met behulp van de Intune-beheeruitbreiding. U kunt selecteren de **verzamelen van logboeken** wanneer de installatie van de Win32-app is mislukt. 
+
+> [!IMPORTANT]
+> De **verzamelen van logboeken** optie wordt niet ingeschakeld wanneer de Win32-app is geïnstalleerd op het apparaat.<p>Voordat u de Win32-app-logboekgegevens verzamelen kunt, moet u de Intune-beheeruitbreiding geïnstalleerd op de Windows-client. De Intune-beheerextensie wordt geïnstalleerd wanneer een PowerShell-script of een Win32-app wordt geïmplementeerd in een gebruikers- of apparaatbeveiligingsgroep. Zie voor meer informatie, [Intune-beheeruitbreiding - vereisten](intune-management-extension.md#prerequisites).
+
+### <a name="collect-log-file"></a>Verzamelen van logboekbestand
+
+Voor het verzamelen van de installatielogboeken van de Win32-app, volgt u eerst de stappen in de sectie [App probleemoplossingsdetails](troubleshoot-app-install.md#app-troubleshooting-details). Ga vervolgens verder met de volgende stappen uit:
+
+1. Klik op de **verzamelen van logboeken** kiezen op de **installatiegegevens** blade.
+
+    <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
+
+2. Bestandspaden bieden met log namen om te beginnen met het logboekverzamelproces van het bestand en klik op **OK**.
+    
+    > [!NOTE]
+    > Logboekverzameling duurt minder dan twee uur. Ondersteunde bestandstypen: *.log, txt, dmp, cab, ZIP-, .xml, .evtx en .evtl*. Een maximum van 25 paden zijn toegestaan.
+
+3. Zodra de logboekbestanden zijn verzameld, kunt u de **logboeken** koppeling om te downloaden van de logboekbestanden.
+
+    <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
+
+    > [!NOTE]
+    > Een melding weergegeven die wijzen op het succes van de logboekverzamelaar app.
+
+#### <a name="win32-log-collection-requirements"></a>Win32-logboekvereisten verzameling
+
+Er zijn specifieke vereisten die moeten worden gevolgd voor het verzamelen van logboekbestanden:
+
+- U moet het volledige logboek-bestandspad opgeven. 
+- U kunt omgevingsvariabelen voor de logboekverzameling, zoals het volgende opgeven:<br>
+  *% PROGRAMFILES %, % PROGRAMDATA % % OPENBARE %, % WINDIR %, % TEMP %, % TMP %*
+- Alleen exacte bestandsextensies zijn toegestaan, zoals:<br>
+  *.log, .txt, .dmp, .cab, .zip, .xml*
+- De maximale logboekbestand voor het uploaden is 60 MB of 25-bestanden, indien dit eerder gebeurt. 
+- Win32-app installeren-logboekverzameling is ingeschakeld voor apps die voldoen aan de vereiste beschikbaar is, en verwijder de toewijzingsopzet app.
+- Opgeslagen logboeken worden ter bescherming van eventuele PII-gegevens die zijn opgenomen in de logboeken versleuteld.
+- Tijdens het openen ondersteuning voor Win32-app fouten-tickets, koppelt u de gerelateerde fout-logboeken met behulp van de bovenstaande stappen.
+
 ## <a name="app-installation-errors"></a>App-installatiefouten
 
 De volgende foutberichten en beschrijvingen bieden informatie over Android- en iOS-installatiefouten. 
@@ -72,18 +114,28 @@ De volgende foutberichten en beschrijvingen bieden informatie over Android- en i
 
 ### <a name="ios-errors"></a>iOS-fouten
 
-|    Foutbericht/-code    |    Beschrijving    |
-|:----------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|    (0x87D12906)    |    Apple MDM-Agent heeft geretourneerd dat de installatieopdracht is mislukt.        |
-|    (0x87D1313C)    |    De netwerkverbinding is verbroken terwijl de bijgewerkte URL voor de downloadservice naar het apparaat werd verzonden. Een server met de opgegeven hostnaam kan niet worden gevonden.    |
-|    iOS-apparaat is momenteel bezig. (0x87D11388)    |    Het iOS-apparaat is bezet, wat leidt tot een fout.    |
-|    De installatie van de app is mislukt. (0x87D13B64)    |    Er is een fout opgetreden tijdens de installatie van de app. XCODE-logboeken zijn nodig om deze fout te kunnen oplossen.    |
-|    De app wordt beheerd, maar is verlopen of is verwijderd door de gebruiker. (0x87D13B66)    |    De gebruiker heeft de app expliciet verwijderd. Of de app is verlopen, maar kan niet worden gedownload. Of de app-detectie komt niet overeen met het antwoord van het apparaat.   Deze fout kan ook optreden op basis van een iOS 9.2.2 iOS-platformfout.    |
-|    Deze app staat ingepland om te worden geïnstalleerd, maar er is een inwisselcode vereist om de transactie te voltooien.   (0x87D13B60)    |    Deze fout treedt meestal op bij iOS Store-apps wat betaalde apps zijn.     |
-|    De toepassing is niet gedetecteerd nadat de installatie was voltooid. (0x87D1041C)    |    Het app-detectieproces komt niet overeen met het antwoord van het apparaat.    |
-|    De gebruiker heeft de aanbieding om de app te installeren afgewezen. (0x87D13B62)    |    Tijdens de eerste installatie van de app, heeft de gebruiker geklikt op annuleren.    |
-|    De gebruiker heeft de aanbieding voor een update van de app afgewezen. (0x87D13B63)    |    De eindgebruiker heeft op annuleren geklikt tijdens het updateproces.     |
-|    Onbekende fout (0x87D103E8)    |    Er is een onbekende app-installatiefout opgetreden. Dit is de resulterende fout als geen van de andere fouten is opgetreden.    |
+| Foutbericht/-code | Beschrijving/probleemoplossing tips |
+|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| (0x87D12906) | Apple MDM-Agent heeft geretourneerd dat de installatieopdracht is mislukt. |
+| (0x87D1313C) | De netwerkverbinding is verbroken terwijl de bijgewerkte URL voor de downloadservice naar het apparaat werd verzonden. Een server met de opgegeven hostnaam kan niet worden gevonden. |
+| Het iOS-apparaat is momenteel bezet. (0x87D11388) | Het iOS-apparaat is bezet, wat leidt tot een fout. |
+| De installatie van de app is mislukt. (0x87D13B64) | Er is een fout opgetreden tijdens de installatie van de app. XCODE-logboeken zijn nodig om deze fout te kunnen oplossen. |
+| De app wordt beheerd, maar is verlopen of is verwijderd door de gebruiker. (0x87D13B66) | De gebruiker heeft de app expliciet verwijderd. Of de app is verlopen, maar kan niet worden gedownload. Of de app-detectie komt niet overeen met het antwoord van het apparaat.   Deze fout kan ook optreden op basis van een iOS 9.2.2 iOS-platformfout. |
+| Deze app staat ingepland om te worden geïnstalleerd, maar er is een inwisselcode vereist om de transactie te voltooien. (0x87D13B60) | Deze fout treedt meestal op bij iOS Store-apps, die betaalde apps zijn. |
+| De toepassing is niet gedetecteerd nadat de installatie was voltooid.   (0x87D1041C) | Het app-detectieproces komt niet overeen met het antwoord van het apparaat. |
+| De gebruiker heeft de aanbieding om de app te installeren afgewezen. (0x87D13B62) | Tijdens de eerste installatie van de app heeft de gebruiker op Annuleren geklikt. |
+| De gebruiker heeft de aanbieding voor een update van de app afgewezen. (0x87D13B63) | De eindgebruiker heeft tijdens het updateproces op Annuleren geklikt. |
+| Onbekende fout (0x87D103E8) | Er is een onbekende app-installatiefout opgetreden. Dit is de resulterende fout als geen van de andere fouten is opgetreden. |
+| Kan de VPP-apps alleen installeren op gedeelde iPad (-2016330861). | De apps moeten worden verkregen met behulp van Apple Volume Purchase Program te installeren op een gedeelde iPad. |
+| Geen apps installeren als de App Store is uitgeschakeld (-2016330860).  | De Store-App moet zijn ingeschakeld voor de gebruiker de app te installeren. |
+| VPP-licentie voor app (-2016330859) is niet gevonden.  | Probeer intrekken en opnieuw toewijzen van de app-licentie. |
+| Geen system-apps niet installeren met de MDM-provider (-2016330858). | Installeren van apps die vooraf zijn geïnstalleerd door de iOS-besturingssysteem is niet een ondersteund scenario. |
+| Geen installeren apps, wanneer het apparaat zich in de modus apparaat verloren (-2016330857). | Alle gebruik van het apparaat wordt geblokkeerd in de modus apparaat verloren.   Modus apparaat verloren om apps te installeren uitschakelen. |
+| Geen installeren apps, wanneer het apparaat zich in de kioskmodus bevindt (-2016330856). | Probeer dit apparaat toevoegen aan een groep uitsluiten voor kioskmodus modus configuratiebeleid voor apps te installeren. |
+| Kan de 32-bits apps op dit apparaat (-2016330852) niet installeren. | Het apparaat biedt geen ondersteuning voor 32-bits apps installeren. Probeer de 64-bits versie van de app te implementeren. |
+| Gebruiker moet aanmelden bij de App Store (-2016330855). | De gebruiker moet zich aanmelden bij de App Store voordat de app kan worden geïnstalleerd. |
+| Onbekend probleem. Probeer het opnieuw (-2016330854). | Installatie van de app is mislukt vanwege een onbekende reden.   Probeer het later opnieuw. |
+| Installatie van de app is mislukt. Intune zal proberen opnieuw zodra het apparaat wordt gesynchroniseerd (-2016330853). | Installatie van de app is een fout opgetreden. Het apparaat probeert te installeren de app opnieuw synchroniseren. |
 
 ### <a name="other-installation-errors"></a>Overige installatiefouten
 
