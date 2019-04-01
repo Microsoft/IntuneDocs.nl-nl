@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78b47decc297c58feadb7cd507a3ff09070d46d4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565737"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429688"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Instellingen voor apparaten met Windows 10 en hoger om ze als kiosk uit te voeren via Intune
 
@@ -176,6 +176,7 @@ Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige ap
 
       Selecteer **OK** om uw wijzigingen op te slaan.
 
+    - **AutoLaunch**: optioneel. Kies een toepassing AutoLaunch wanneer de gebruiker zich aanmeldt. Slechts één app kan AutoLaunched zijn.
     - **Tegelgrootte**: vereist. Kies een tegelgrootte Klein, Normaal, Breed of Groot voor de app.
 
   > [!TIP]
@@ -184,6 +185,8 @@ Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige ap
 - **Alternatieve lay-out van het menu Start gebruiken**: kies **Ja** om een XML-bestand op te geven, waarin wordt beschreven hoe de apps worden weergegeven in het startmenu, zoals de volgorde van de apps. Gebruik deze optie als u meer aanpassingsmogelijkheden wilt gebruiken in het startmenu. [Customize and export Start layout (Aanpassen en indeling Start exporteren)](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) biedt een aantal richtlijnen en een XML-voorbeeld.
 
 - **Windows-taakbalk**: kies of u wilt dat de taakbalk wordt **weergegeven** of **verborgen**. Standaard wordt de taakbalk niet weergegeven. Pictogrammen, zoals het Wi-Fi-pictogram, worden weergegeven, maar de instellingen kunnen niet worden gewijzigd door eindgebruikers.
+
+- **Toegang tot de map Downloads**: kies **Ja** waarmee gebruikers toegang krijgen tot de map Downloads in Windows Verkenner. Standaard is toegang tot de map Downloads uitgeschakeld. Deze functie wordt vaak gebruikt voor eindgebruikers voor toegang tot items die zijn gedownload vanuit een browser.
 
 Selecteer **OK** om uw wijzigingen op te slaan.
 

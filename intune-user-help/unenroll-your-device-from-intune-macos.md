@@ -1,11 +1,11 @@
 ---
-title: De registratie van uw macOS-apparaat bij Intune ongedaan maken | Microsoft Docs
-description: Hierin wordt beschreven hoe u de registratie van een macOS-apparaat bij Intune ongedaan kunt maken
+title: De registratie van uw macOS-apparaat bij Intune-bedrijfsportal ongedaan maken | Microsoft Docs
+description: Hierin wordt beschreven hoe u de registratie van een macOS-apparaat bij Bedrijfsportal ongedaan kunt maken
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,24 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3518707aa90c3866fbf8b24936db6d781712bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55839963"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330395"
 ---
-# <a name="unenroll-your-macos-device-from-intune"></a>De registratie van uw macOS-apparaat bij Intune ongedaan maken
+# <a name="unenroll-your-macos-device-from-company-portal"></a>Registratie van uw macOS-apparaat bij de bedrijfsportal ongedaan maken
 
-Wanneer u de registratie van uw macOS-apparaat bij Intune ongedaan maakt, heeft het apparaat geen toegang meer tot bedrijfsresources.
+Wanneer u de registratie van uw macOS-apparaat bij Intune ongedaan maakt, heeft het apparaat geen toegang meer tot de bedrijfsbronnen.
 
 Volg deze stappen om de registratie van uw macOS-apparaat bij beheer ongedaan te maken:
 
-1.  Selecteer in de bedrijfsportal-app onder **Mijn apparaten**het apparaat dat u wilt uitschrijven.
+1.  Meld u aan bij de app Bedrijfsportal voor macOS.
+2.  Ga naar **Apparaten** en selecteer het apparaat waarvan u de registratie ongedaan wilt maken.
 
-2.  Klik op **Verwijderen** > **Verwijderen**.
+3.  Selecteer het pictogram van de menu weglatingstekens > **verwijderen**.
+4.  Er wordt een bevestigingsbericht weergegeven. Selecteer **verwijderen** uw apparaat ongedaan wilt maken. 
 
 Wanneer u uw apparaat bij Intune uitschrijft, gebeurt het volgende:
 

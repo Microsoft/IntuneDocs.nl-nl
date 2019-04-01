@@ -154,6 +154,10 @@ items:
       items:
       - name: Op rollen gebaseerd toegangsbeheer
         href: role-based-access-control.md
+      - name: Een rol toewijzen aan een gebruiker
+        href: assign-role.md
+      - name: Een aangepaste rol maken
+        href: create-custom-role.md
       - name: Bereiktags gebruiken
         href: scope-tags.md
   - name: Apparaten inschrijven
@@ -945,9 +949,9 @@ items:
       href: data-outside-protect.md
     - name: Gegevenslekken op niet-beheerde apparaten voorkomen
       href: data-leak-prevention.md
-ms.openlocfilehash: d273d9c300f49a2d78f8b9ed62031497b06a0060
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: c58e250d7aeb4913554874c8a1e931b2dc356dfd
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514419"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658571"

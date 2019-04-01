@@ -1,11 +1,11 @@
 ---
-title: Uw Android-apparaat beveiligen met versleuteling | Microsoft Docs
-description: Uw Android-apparaat beveiligen
+title: Android-apparaat versleutelt voor Intune-bedrijfsportal | Microsoft Docs
+description: Stappen voor het inschakelen van apparaatversleuteling op een Android-apparaat
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,31 +18,47 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 115025d60038daea6f43c97cbdc03a20d5b0bf59
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c9f1e7bbbad243e37f34cb298466adf886be9273
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838169"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490584"
 ---
-# <a name="how-to-protect-your-android-device-using-encryption"></a>Uw Android-apparaat beveiligen met versleuteling
+# <a name="encrypting-your-android-device"></a>Uw Android-apparaat versleutelen
 
-Wanneer u een apparaat versleutelt, kunt u de daarin opgeslagen informatie opnemen in een laag beschermende code die voorkomt dat onbevoegden toegang tot die informatie kunnen krijgen. Als eerste stap om uw informatie te beveiligen, vereist uw organisatie dat u uw Android-apparaat versleutelt voordat u toegang krijgt tot bedrijfsbestanden, e-mail of gegevens.
+Apparaatversleuteling beschermt uw bestanden en mappen tegen onbevoegde toegang als uw apparaat is zoekgeraakt of gestolen. Nadat u apparaatversleuteling inschakelen, zich alleen de personen met het juiste wachtwoord of pincode aanmelden bij uw apparaat. 
+
+Voordat u toegang hebt school of werk resources, uw organisatie moet u mogelijk voor het versleutelen van uw Android-apparaat. Sommige nieuwere Android-apparaten worden versleuteld standaard out-of-the-box.  
+
+## <a name="turn-on-encryption"></a>Versleuteling inschakelen
+
+Als u een bericht in bedrijfsportal-App die u nodig hebt om uw apparaat te versleutelen ontvangt, kunt u de volgende stappen. 
 
 > [!Note]
-> Bepaalde Android-apparaten, waaronder enkele van Huawei en de apparaten van Vivo en OPPO, kunnen niet worden versleuteld. Zie [hier](your-device-appears-encrypted-but-cp-says-otherwise-android.md) voor meer informatie.
+> Bepaalde Android-apparaten van Huawei, Vivo en OPPO, kunnen niet worden versleuteld. Zie [hier](your-device-appears-encrypted-but-cp-says-otherwise-android.md) voor meer informatie.  
 
-Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
+1.  Stel een apparaat voor het vergrendelde scherm.  
+    a. Ga naar **Instelling** > **Vergrendelscherm en beveiliging** > **Type schermvergrendeling**.  
+    b. Selecteer een **PINCODE**, **wachtwoord**, of **patroon**.  
+    c. Volg de instructies op het scherm uw schermvergrendeling configureren.  
 
-1.  Zorg ervoor dat er een pincode of wachtwoord voor schermvergrendeling is ingesteld voor het apparaat.
+2. Ga terug naar **scherm vergrendelen en beveiliging** en selecteer **beveiligd opstarten**.
+3. Kies **PINCODE vereisen wanneer het apparaat wordt ingeschakeld** > **OK**.
+4. Voer uw PINCODE in om te bevestigen en uw apparaat versleutelen.
+5. Open Bedrijfsportal, selecteer uw apparaat en tik op **Apparaatinstellingen controleren**.  
 
-2.  Kies onder **Instellingen** de optie **Beveiliging**  >  **Apparaat versleutelen**.
-    (Op bepaalde telefoons moet u **Opslag** > **Versleuteling van opslag** of op **Opslag** > **Schermvergrendeling en beveiliging** > **Overige beveiligingsinstellingen** kiezen om de optie 'Versleutelen' weer te geven).
+Apparaten met Android 4.4 en eerder niet mogelijk de **beveiligd opstarten** optie. In dat geval wordt de volgende stappen voor het versleutelen van uw apparaat.
 
-3.  Volg de instructies op het scherm. Tijdens het versleutelen kan het apparaat meerdere keren opnieuw opstarten.
+1. Ga naar **instellingen** > **Security** > **-apparaat versleutelt**. Op het scherm labels verschillen tussen de Android-apparaten. Als er geen de **apparaat versleutelen** optie, controleert u:
+    * **Opslag** > **versleuteling van opslag**
+    * **Opslag** > **scherm vergrendelen en beveiliging** > **overige beveiligingsinstellingen** 
 
-### <a name="what-to-do-if-you-have-issues"></a>Wat te doen bij problemen
-**Probleem**: u hebt uw apparaat al versleuteld en wordt geconfronteerd met het volgende:
+2. Volg de instructies op het scherm. Tijdens het versleutelen wordt het apparaat mogelijk meerdere keren opnieuw opgestart.
+3. Open Bedrijfsportal, selecteer uw apparaat en tik op **Apparaatinstellingen controleren**.  
+
+## <a name="troubleshoot"></a>Problemen oplossen  
+**Probleem**: U hebt uw apparaat al versleuteld en
 
 - De versleutelingsknop is uitgeschakeld.
 - Er wordt een bericht weergegeven dat u nog moet versleutelen.
@@ -50,20 +66,7 @@ Als u de registratie van uw telefoon ongedaan maakt, blijft deze versleuteld.
 
 **Wat u kunt doen**
 
-- Zorg dat het apparaat is geladen en aangesloten.
-- Zorg ervoor dat u een pincode of wachtwoord hebt ingesteld op het apparaat.
-- Als u al een pincode of wachtwoord op het apparaat hebt ingesteld, voert u de volgende stappen uit (die het ondersteuningsteam van het bedrijf kan vereisen om uw apparaat beter te beveiligen). De menunamen die u ziet, kunnen enigszins afwijken van de namen in deze stappen, afhankelijk van het type Android-apparaat dat u hebt.
+- Zorg dat het apparaat is geladen en aangesloten.  
+- Zorg ervoor dat u een pincode of wachtwoord hebt ingesteld op het apparaat.  
 
-    1. Ga naar **instellingen** > **Vergrendelscherm en beveiliging** > **Schermvergrendeling**. Verifieer uw huidige pincode of wachtwoord.
-
-    2. Kies op het scherm **Schermvergrendeling kiezen** het type schermvergrendeling dat u wilt gebruiken. 
-
-    3. Ga na het kiezen van uw schermvergrendeling terug naar het scherm **Vergrendelscherm en beveiliging** en selecteer **Beveiligd opstarten**. 
-    
-    4. Tik op het scherm **Beveiligd opstarten** op **Pincode vereist voor het starten van apparaat** en tik op **Doorgaan**.
-
-    5. Kies een pincode (u kunt dezelfde invoeren als die u eerder hebt opgegeven) en tik op **Uw pincode bevestigen**.
-
-    6. Open de bedrijfsportal-app, selecteer uw apparaat en tik op **Naleving controleren**.
-
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van het bedrijf (zie de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) voor contactgegevens) of stuur een e-mail naar het <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-team</a>.
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van het bedrijf (zie de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) voor contactgegevens) of stuur een e-mail naar het <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-team</a>.  

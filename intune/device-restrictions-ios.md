@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92d18615f6be7c1e0ce931d443d2ac986db991e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566706"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490723"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Met iOS-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -43,7 +43,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
     Deze functie is van toepassing op:  
     - iOS 9.3.2 en hoger
 
-- **Schermafbeeldingen**: kies **Blokkeren** om te voorkomen dat schermopnamen of schermafbeeldingen worden gemaakt met het apparaat. **Niet geconfigureerd** (standaard): stelt de gebruiker in staat om de inhoud van het scherm vast te leggen als afbeelding.
+- **Schermafbeeldingen**: kies **Blokkeren** om te voorkomen dat schermopnamen of schermafbeeldingen worden gemaakt met het apparaat. In iOS 9.0 en hoger omvat dit ook scherm opnamen blokkeren. **Niet geconfigureerd** (standaard): stelt de gebruiker in staat om de inhoud van het scherm vast te leggen als afbeelding of video.
   - **Observatie van extern scherm met de app Classroom (alleen onder supervisie)**: kies **Blokkeren** om te voorkomen dat het scherm van het apparaat extern kan worden weergegeven via de app Classroom. **Niet geconfigureerd** (standaard): staat de app Apple Classroom toe het scherm weer te geven.
 
     Deze functie is van toepassing op:  
@@ -158,7 +158,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **In-app aankopen**: kies **Blokkeren** om in-app aankopen van de Store te voorkomen. **Niet geconfigureerd**: staat gebruikers toe aankopen in de Store te doen vanuit een actieve app.
 - **Expliciete muziek-, podcast- of nieuwsinhoud op iTunes (alleen onder supervisie)**: kies **Blokkeren** om expliciete muziek-, podcast- of nieuwsinhoud op iTunes te blokkeren. **Niet geconfigureerd**: geeft het apparaat toegang tot inhoud voor volwassenen in de Store.
 - **Inhoud uit iBooks Store met de markering Erotisch downloaden**: kies **Blokkeren** om te voorkomen dat gebruikers media downloaden uit de iBook Store die is gelabeld als Erotisch. **Niet geconfigureerd**: staat de gebruiker toe om boeken te downloaden uit de categorie Erotisch.
-- **Zakelijke documenten weergeven in niet-beheerde apps**: **Blokkeren** voorkomt het weergeven van niet-zakelijke documenten in niet-beheerde apps. **Niet geconfigureerd**: staat gebruikers toe om zakelijke documenten weer te geven in elke willekeurige app. Voorbeeld: u wilt voorkomen dat gebruikers bestanden uit de OneDrive-app opslaan in Dropbox. Configureer deze instelling als **Blokkeren**. Nadat het apparaat het beleid heeft ontvangen (bijvoorbeeld nadat het opnieuw is opgestart), kunnen er geen bestanden meer worden opgeslagen.
+- **Zakelijke documenten weergeven in niet-beheerde apps**: **Blokkeren** voorkomt het weergeven van zakelijke documenten in niet-beheerde apps. **Niet geconfigureerd**: staat gebruikers toe om zakelijke documenten weer te geven in elke willekeurige app. Voorbeeld: u wilt voorkomen dat gebruikers bestanden uit de OneDrive-app opslaan in Dropbox. Configureer deze instelling als **Blokkeren**. Nadat het apparaat het beleid heeft ontvangen (bijvoorbeeld nadat het opnieuw is opgestart), kunnen er geen bestanden meer worden opgeslagen.
   - **Contactpersonen schrijven naar niet-beheerde contactpersonen accounts voor beheerde apps toestaan**: als de waarde **toestaan**, gebruikers kunnen toevoegen en synchroniseren van een persoon Outlook contact op met informatie, inclusief bedrijfs- en zakelijke contactpersonen, naar de ingebouwde contactpersonen-app op het apparaat. Wanneer deze optie is ingesteld op **Niet geconfigureerd**, kunnen gebruikers geen contactpersonen in Outlook toevoegen aan de ingebouwde Contacten-app op het apparaat.
   
     Als u deze instelling wilt gebruiken, stelt u **Zakelijke documenten weergeven in niet-beheerde apps** in op **Blokkeren**.
@@ -255,7 +255,7 @@ Als u apps wilt toevoegen aan deze lijsten, kunt u:
   Deze functie is van toepassing op:  
   - iOS 11.0 en hoger
 
-- **Persoonlijke hotspot**: **Blokkeren** voorkomt dat het apparaat wordt gebruikt als een persoonlijke hotspot. Mogelijk is deze instelling niet compatibel met bepaalde providers. **Niet geconfigureerd** deze functie is toegestaan (standaard).
+- **Persoonlijke Hotspot**: **blok** Hiermee schakelt u de persoonlijke hotspot op apparaten van de eindgebruikers met elke apparaatsynchronisatie uit. Mogelijk is deze instelling niet compatibel met bepaalde providers. **Niet geconfigureerd** (standaard) houdt u de configuratie van de persoonlijke hotspot als standaard instellen door de gebruiker.
 - **Toevoegen aan Wi-Fi-netwerken die alleen configuratieprofielen gebruiken (alleen onder supervisie)**: **Vereisen** dwingt af dat het apparaat alleen Wi-Fi-netwerken gebruikt die zijn ingesteld via Intune-configuratieprofielen. **Niet geconfigureerd** (standaard): staat het apparaat toe andere Wi-Fi-netwerken te gebruiken.
 - **Regels voor mobiel gebruik (alleen beheerde apps)**: definieer de gegevenstypen die beheerde apps kunnen gebruiken die zijn verbonden met een mobiel netwerk. Uw opties zijn:
   - **Gebruik van mobiel dataverkeer blokkeren**: u kunt het gebruik van mobiel dataverkeer blokkeren voor **Alle beheerde apps** of u kunt **Specifieke apps kiezen**.

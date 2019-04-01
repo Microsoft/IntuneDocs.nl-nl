@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e973e18a79c18af6b201194fc1a6534da5fa38a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838033"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58163425"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>De wachtwoordcode van uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
@@ -32,7 +32,7 @@ Als u de pincode of het wachtwoord van uw apparaat bent vergeten, kunt u de [bed
 Als u een apparaat in bedrijfseigendom gebruikt, ziet u misschien niet de optie voor het opnieuw instellen van de wachtwoordcode van uw apparaat. Neem contact op met het ondersteuningsteam van het bedrijf om de wachtwoordcode opnieuw in te stellen.
 
    > [!NOTE]
-   > Het is niet mogelijk om wachtwoordcodes voor apparaten met Android 7.0 en hoger opnieuw in te stellen. U moet het apparaat naar de fabrieksinstellingen terugzetten als u de wachtwoordcode bent vergeten. 
+   > Het is niet mogelijk om wachtwoordcodes voor apparaten met Android 7.0 en hoger opnieuw in te stellen. Als u uw wachtwoordcode vergeet, moet u de fabrieksinstellingen van het apparaat herstellen. 
 
 ## <a name="reset-your-passcode"></a>Uw wachtwoordcode opnieuw instellen
 

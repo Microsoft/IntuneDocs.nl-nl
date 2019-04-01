@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ccd9a14c29db5039ce0173d0c09fd3d2851755f3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4ab0674304f1e74c8bf2ad1aeecd419575484e5f
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566247"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358167"
 ---
 # <a name="reference-for-user-entity"></a>Naslag voor gebruikersentiteit
 
@@ -40,13 +40,10 @@ De entiteitverzameling **Gebruiker** bevat gebruikersgegevens. Deze records beva
 | UserKey |De unieke id van de gebruiker in het datawarehouse (surrogaatsleutel). |123 |
 | UserId |De unieke id van de gebruiker, vergelijkbaar met UserKey, maar het is een natuurlijke sleutel. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Het e-mailadres van de gebruiker. |John@constoso.com |
-| UPN | De UPN (user principal name) van de gebruiker. | John@constoso.com |
+| userPrincipalName | De UPN (user principal name) van de gebruiker. | John@constoso.com |
 | DisplayName |De weergavenaam van de gebruiker. |Jan |
 | IntuneLicensed |Geeft aan of deze gebruiker een licentie heeft voor Intune |Waar/onwaar |
 | IsDeleted | Geeft aan of alle licenties van de gebruiker zijn verlopen en of de gebruiker daarom uit Intune werd verwijderd. Deze markering verandert niet voor één record. In plaats daarvan wordt er een nieuwe record gemaakt voor een nieuwe gebruikersstatus. |Waar/onwaar |
-| StartDateInclusiveUTC |Als IsDeleted = FALSE: datum/tijd in UTC wanneer aan de gebruiker een licentie is toegewezen en de gebruiker zijn aanwezigheid in Intune kenbaar heeft gemaakt. Als IsDeleted = TRUE: datum/tijd in UTC wanneer de licentie van de gebruiker is verlopen en werd verwijderd uit Intune. |11/23/2016 12:00:00 AM |
-| EndDateExclusiveUTC |Als IsDeleted = FALSE: datum/tijd in UTC wanneer de licentie van de gebruiker is verlopen en werd verwijderd uit Intune. De licentie is ergens in de loop van de vorige dag verlopen. Als IsDeleted = TRUE: datum/tijd in UTC wanneer de gebruiker een nieuwe licentie heeft gekregen en opnieuw in Intune is gemaakt.  |11/23/2016 12:00:00 AM |
-| IsCurrent |Geeft aan of deze record de meest recente status van de gebruiker vertegenwoordigt. Er kunnen voor één gebruiker meerdere records bestaan, maar slechts één daarvan vertegenwoordigt de huidige status.  |Waar/onwaar |
 | RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop de record het laatst is gewijzigd in het datawarehouse  |11/23/2016 12:00:00 AM |
 
 ## <a name="next-steps"></a>Volgende stappen

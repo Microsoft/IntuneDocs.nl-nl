@@ -1,23 +1,30 @@
 ---
-ms.openlocfilehash: dc86f2c22410236368753acd4dd3b66698037241
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+title: Include-bestand
+description: Include-bestand
+author: ErikjeMS
+ms.service: microsoft-intune
+ms.topic: include
+ms.date: 03/28/2019
+ms.author: erikje
+ms.custom: include file
+ms.openlocfilehash: 073115d33f9a4f22fe3706ef15860c2a8d8a68ee
+ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57736849"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675490"
 ---
-
 Deze berichten bevatten belangrijke informatie waarmee u kunt voorbereiden op toekomstige Intune wijzigingen en functies. 
 
 ### <a name="change-in-enrollment-workflow-with-intune-company-portal-on-corporate-ios-devices-authenticating-with-setup-assistant----1927359---"></a>Wijziging in de werkstroom van de inschrijving met Intune-bedrijfsportal op zakelijke iOS-apparaten verifiëren met Configuratieassistent <!-- 1927359 -->
 Er is een toekomstige wijzigingen in de werkstroom voor het inschrijven van iOS-apparaten via een van de Apple bedrijfsapparaten registratiemethoden - Apple Configurator, Apple Business Manager, Apple School Manager of het Apple Device Enrollment Program (DEP) van bij het gebruik van Setup Assistant voor verificatie. Deze wijziging geldt alleen voor apparaten die zijn ingeschreven met gebruikersaffiniteit.
 
 #### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Wanneer deze wijziging in ~~maart~~ april wordt uitgerold, worden inschrijvingsprofielen in Intune in Azure Portal bijgewerkt zodat u kunt opgeven hoe apparaten zich verifiëren en hoe zij de bedrijfsportal-app ontvangen. Er is een verbeterde werkstroom voor iOS-apparaten inschrijven via de hierboven genoemde methoden. Opmerking:
+Wanneer deze wijziging in ~~maart~~ april wordt uitgerold, worden inschrijvingsprofielen in Intune in Azure Portal bijgewerkt zodat u kunt opgeven hoe apparaten zich verifiëren en hoe zij de bedrijfsportal-app ontvangen. Er is een verbeterde werkstroom voor iOS-apparaten inschrijven via de hierboven genoemde methoden. 
 
 - Wanneer nieuwe apparaten inschrijven en verificatie met Configuratieassistent, u zult kunnen kiezen of u de bedrijfsportal-app automatisch te implementeren. Eindgebruikers wordt niet meer zien het scherm 'Uw apparaat identificeren' en het scherm 'Bevestig uw apparaat' in de stroom voor inschrijving.  
 - Op apparaten die al zijn ingeschreven via Configuratieassistent via een van de Apple bedrijfsapparaten registratiemethoden, moet u actie ondernemen als u wilt inschakelen van voorwaardelijke toegang. Hebt u een configuratiebeleid voor apps configureren met een specifieke xml in de bedrijfsportal-App omlaag naar deze apparaten te pushen. Er zijn instructies om dit te doen in het blogbericht: op de koppeling meer informatie. Als u ervoor kiest om de bedrijfsportal-App op deze manier, zien eindgebruikers niet meer het scherm 'Uw apparaat identificeren' en het scherm 'Bevestig uw apparaat' in de stroom voor inschrijving. 
-- Nadat deze wijziging wordt geïmplementeerd, als u de bedrijfsportal-App met hebt geïmplementeerd er het app-configuratieprofiel hierboven genoemde en als ze, maar eindgebruikers kunnen downloaden van de bedrijfsportal-app vanuit de App store en ze kunt u zich aanmeldt, wordt een foutbericht weergegeven. Ze niet mogelijk de app voor voorwaardelijke toegang gebruiken. 
+- Na deze wijziging wordt geïmplementeerd, als u de bedrijfsportal-App met hebt geïmplementeerd krijgt het app-configuratieprofiel hierboven genoemde en als eindgebruikers downloaden van de bedrijfsportal-app vanuit de App store en deze zich kan aanmelden, maar u een foutmelding. Ze niet mogelijk de app voor voorwaardelijke toegang gebruiken. 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
 Als u van plan bent over het gebruik van de werkstroom gewijzigd, moet u de richtlijnen van uw eindgebruikers om aan te geven die bijwerken:
@@ -32,52 +39,6 @@ Zie onze blogbericht ondersteuning op de koppeling meer informatie voor meer inf
 #### <a name="additional-information"></a>Als u meer informatie 
 [https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
 
-
-### <a name="company-portal-changes-for-ios-122-enrollment-in-intune"></a>Portal wijzigingen in de bedrijfsportal voor iOS 12.2-inschrijving in Intune
-We hebben in MC172534 meegedeeld dat Apple een aantal wijzigingen heeft aangekondigd met betrekking tot iOS-apparaten die bij MDM-services (Mobile Device Management) worden geregistreerd. De wijziging is waarschijnlijk zichtbaar in de release van iOS in maart 2019 zit te komen, evenals alle toekomstige iOS-versies. We doorvoeren sommige updates in de bedrijfsportal-App in overeenstemming met de Apple-wijzigingen. 
- 
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Als uw gebruikers hun apparaten naar iOS 12.2 en hoger upgraden, weet u dat er een gewijzigde werkstroom en ze aanvullende maatregelen ingeschreven bij Intune nemen moeten. Na de update van maart aan Intune is dit wat ze doen:  
-
-- Beginnen met het inschrijvingsproces in de bedrijfsportal-app voor het downloaden van een beheerprofiel
-- Ga naar Instellingen > Algemeen > profielen en zoeken naar een rode badge-melding
-- Selecteer het juiste profiel en klik door voor installatie
-- Ga terug naar de bedrijfsportal-App-registratie moet voltooien
-
-Klik op aanvullende informatie voor gedetailleerde informatie over de registratie-stroom.
-
-Tenzij ze worden uitgeschreven en moeten een nieuwe inschrijving, apparaten die al ingeschreven en een upgrade uitvoeren naar iOS 12.2 zijn en hoger mag niet worden beïnvloed. De registratie-ervaring op apparaten met iOS 12.1 of eerder wordt niet veranderd met deze nieuwe release van Apple. Apparaten zijn ingeschreven via een of van Apple bedrijfsinschrijving methoden (Device Enrollment Program, Apple School Manager of Apple Business Manager) niet van invloed op.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
-Plan de upgrade van uw documentatie en de richtlijnen voor uw eindgebruikers. Informeer uw helpdesk over deze wijzigingen. Wij houden u op de hoogte via onze pagina Wat is er nieuw wanneer deze wijziging live meteen. 
-
-Als u profiteren van de bedrijfsportal-App-wijzigingen die we introduceren wilt, vraagt u uw eindgebruikers hun apparaat naar de nieuwe iOS-versie bijwerken nadat de update van maart naar de Intune-service wanneer Company Portal app-versie 3.9.0. Er wordt uitgebracht.
-
-Klik op aanvullende informatie voor een blogbericht ondersteuning met schermafbeeldingen van de Preview-versie van de bedrijfsportal-App-wijzigingen.
-
-Extra informatie[https://aka.ms/CP_changes_iOS12](https://aka.ms/CP_changes_iOS12)
-
-### <a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>Plannen voor wijziging: werkstroom gewijzigd voor iOS-12-inschrijving in Intune
-Apple heeft een aantal wijzigingen aangekondigd met betrekking tot iOS-apparaten die bij MDM-services (Mobile Device Management) worden geregistreerd. De wijziging zal waarschijnlijk worden doorgevoerd bij de iOS-release in het voorjaar van 2019, alsmede bij alle toekomstige iOS-releases.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Als uw eindgebruikers hun apparaten in het voorjaar bijwerken naar deze nieuwe versie van iOS 12, moet u zich ervan bewust zijn dat er een aangepaste workflow is en dat ze extra stappen moeten uitvoeren om hun registratie bij Intune te voltooien. Bij Apple deze wijzigingen introduceert, wordt eindgebruikers te hebben:
-
-- Beginnen met het inschrijvingsproces in de bedrijfsportal-app voor het downloaden van een beheerprofiel
-- Ga naar Instellingen > Algemeen > profielen
-- Selecteer het juiste profiel en klik door voor installatie
-- Ga terug naar de bedrijfsportal-App-registratie moet voltooien 
-
-Op apparaten die al zijn geregistreerd en naar de nieuwe iOS-release zijn geüpgraded, heeft deze wijziging geen invloed, tenzij de registratie van deze apparaten ongedaan wordt gemaakt en ze opnieuw moeten worden geregistreerd.
-
-De registratie-ervaring op apparaten met iOS 12.1 of eerder wordt niet veranderd met deze nieuwe release van Apple.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
-Plan de upgrade van uw documentatie en de richtlijnen voor uw eindgebruikers. Informeer uw helpdesk over deze wijzigingen. We houden u op de hoogte via het Berichtencentrum en onze pagina Wat is er nieuw wanneer deze wijziging beschikbaar is.
-
-#### <a name="additional-information"></a>Als u meer informatie
-[Ondersteuning voor blogbericht met schermafbeeldingen en video van de stroom verwachte inschrijving](https://aka.ms/iOS_enrollment_changes).
-
 ### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Geplande wijziging: update van de gebruikerservaring voor de iOS-bedrijfsportal-app van Intune
 Met trots kunnen we mededelen dat Intune binnenkort een geheel nieuwe gebruikerservaring biedt voor de iOS-bedrijfsportal-app. De startpagina is qua vormgeving geheel vernieuwd en bevat geavanceerde filters en snellere toegang tot apps en boeken.
 
@@ -88,35 +49,13 @@ Deze update behoudt de functionaliteit van de huidige iOS-bedrijfsportal en bied
 - Mogelijkheid om te zoeken naar eBooks
 - Zoekgeschiedenis voor apps en e-Books
 
-Als u meedoet aan het TestFlight-programma van Apple, krijgt u een melding zodra de voorlopige versie van de bijgewerkte iOS-bedrijfsportal-app van Intune beschikbaar is. Als u niet meedoet aan het TestFlight-programma van Apple, kunt u zich hiervoor alsnog aanmelden. Als u zich aanmeldt, kunt u de bijgewerkte bedrijfsportal-app gebruiken voordat deze beschikbaar is voor uw eindgebruikers. U zult kunnen ook feedback rechtstreeks naar de Intune-team.  
+Als u meedoet aan het TestFlight-programma van Apple, krijgt u een melding zodra de voorlopige versie van de bijgewerkte iOS-bedrijfsportal-app van Intune beschikbaar is. Als u niet meedoet aan het TestFlight-programma van Apple, kunt u zich hiervoor alsnog aanmelden. Als u zich aanmeldt, kunt u de bijgewerkte bedrijfsportal-app gebruiken voordat deze beschikbaar is voor uw eindgebruikers. U kunt ook feedback rechtstreeks naar de Intune-team.  
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
 U hoeft geen actie te ondernemen; deze wijzigingen zullen worden doorgevoerd in een nieuwe versie van de iOS-bedrijfsportal-app. 
 
 #### <a name="additional-information"></a>Als u meer informatie
 [https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
-
-
-### <a name="reminder-removal-of-existing-exchange-online-to-intune-connectors----3105122---"></a>Herinnering: Verwijderen van bestaande Exchange met Online-connectors van Intune <!-- 3105122 -->
-In MC165575 bekendgemaakt dat we zouden worden verwijderen van de Exchange Online in Intune 'Services' connector-functionaliteit in een toekomstige update. Met de update van februari naar de Intune-service, schakelen we uit de knop voor het instellen van nieuwe connectors. Wij van plan bent te verwijderen van alle bestaande Exchange Online-connectors van Intune in maart 2019.
- 
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-U ontvangt dit bericht omdat u volgens onze registratie de service-to-service-connector mogelijk in uw omgeving gebruikt. De service-to-service-connector ondersteunt Intune-beheer van Exchange Active Sync Only-apparaten voor Exchange Online en ondersteunt geen on-premises infrastructuur. Vanwege de weergave van de console lijkt het alsof deze connector nodig is voor voorwaardelijke toegang, terwijl dat niet zo is. U mogelijk al gebruikt deze connector om te begrijpen van het gebruik van Exchange Online voordat u voorwaardelijke toegang toepast. Deze informatie wordt al verstrekt door de Microsoft 365-beheercentrum. Hier vindt u hier gebruiksrapporten voor Exchange Online, met inbegrip van de app wordt gebruikt voor tussen 7 en 180 dagen. Zie voor meer informatie [Office 365-rapporten in het beheercentrum - gebruik van de E-mail-apps](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage?view=o365-worldwide).  
- 
-Als u deze connector gebruikt in uw omgeving, kunt u Exchange Active Sync Only-apparaten in Intune niet bewaken of wissen nadat de connectors in februari zijn uitgeschakeld. Er worden tijdens deze wijzigingen geen gevolgen verwacht voor uw eindgebruikers.
- 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
-Als u de service-to-service-connector hebt ingesteld en Exchange Active Sync Only-apparaten hebt, schakelt u over naar andere methoden om uw apparaten te beheren. U hebt de volgende opties:
-
-- Apparaten registreren in Mobile Device Management (MDM) 
-- Beleid voor Intune-app-beveiliging gebruiken om uw apparaten te beheren 
-- Exchange-besturingselementen gebruiken zoals wordt beschreven in [deze](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online) documentatie 
-
-#### <a name="additional-information"></a>Als u meer informatie  
-https://docs.microsoft.com/intune/exchange-service-connector-configure
-
-
-
 
 ### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Controleer de instelling 'Vertraging zichtbaarheid van de Software-updates' in Intune 
 
@@ -140,3 +79,38 @@ Zie onze ondersteuning-blogbericht op aanvullende informatie voor meer informati
 
 #### <a name="additional-information"></a>Als u meer informatie 
 [https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)
+
+### <a name="plan-for-change-upcoming-fix-for-windows-10-email-profiles-in-intune---3904031--"></a>Plannen voor wijziging: aankomende oplossing voor Windows 10-e-mailprofielen in Intune <!--3904031-->
+De manier waarop die intune e schrijft-profielen voor Windows 10 in de April naar de Intune-service ook is een fout opgelost bijwerken dat uw e-mailprofielen blijven werken in toekomstige versies van Windows 10 worden bijgewerkt. Er is een actie die u wilt uitvoeren nadat u hebt deze oplossing wordt geïmplementeerd.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Deze wijziging heeft gevolgen voor u als u e-mailprofielen en Windows 10
+- De systeemeigen e-mailclient op Windows 10-desktops of
+- De Outlook-e-mailclient op Windows 10 Mobile
+
+Dit heeft gevolgen voor zowel Intune standalone en hybride Mobile Device Management (MDM)-klanten.
+
+Nadat de update van April implementeert, moet u deze profielen in de Intune-beheerconsole (in de Configuration Manager-beheerconsole als u hybride MDM) opnieuw maken.
+
+Als u geen actie uitvoert, moet u dit is wat u ziet voor profielen die zijn gemaakt vóór de update van April:
+
+- Bestaande e-mailprofielen worden weergegeven in de foutstatus in de Intune-console of de Configuration Manager-beheerconsole, maar eindgebruikers wordt nog steeds toegang hebben tot e-mail. Nadat een nieuwe Windows-update implementeert, wordt deze profielen niet werken. Eindgebruikers op apparaten die worden toegepast met deze profielen verliest de toegang tot e-mail.
+- Wijzigingen in deze profielen nadat April wordt niet weerspiegeld in de beoogde apparaten.
+- Selectief wissen werkt niet voor het verwijderen van deze profielen, zelfs nadat de oplossing wordt geïmplementeerd in April.
+
+Als u actie ondernemen en opnieuw e-mailprofielen maken, moeten eindgebruikers vergelijkbaar met de stappen doorlopen wanneer een e-mailprofiel voor de eerste keer wordt geïmplementeerd. De e-mail kunnen worden gesynchroniseerd als ze akkoord gaat met de update die van toepassing het nieuwe profiel is.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+U moet actie ondernemen nadat de oplossing wordt geïmplementeerd met de update van April. We vragen u u via het berichtencentrum wanneer deze wijziging live meteen zodat u beginnen kunt met het opnieuw maken van de profielen in Intune.
+
+Als u Windows 10-e-mailprofielen in Intune gebruikt, moet u de volgende stappen uit:
+
+1. Bestaande Windows 10-profiel-instellingen vastleggen
+2. Toewijzing ongedaan maken en/of bestaande profielen verwijderen
+3. Nieuwe profielen met behulp van de vastgelegde instellingen maken en de nieuwe profielen toewijzen aan dezelfde groepen
+
+Mogelijk moet u uw eindgebruikers informeren en laat uw helpdesk weten van deze wijziging. Zie het blogbericht: ondersteuning voor de foutdetails en instructies voor het maken van deze profielen opnieuw op als u meer informatie.
+
+#### <a name="additional-information"></a>Als u meer informatie
+https://aka.ms/Win10EmailProfiles
+

@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise bevat Microsoft Intune. Ontdek hoe Intune 
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 03/29/2018
 ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
@@ -16,16 +16,16 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e34c3de77dde59b87829617b8cbbd2614f7081
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ea24101600c7a0e485440f50fc043c14bd840968
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57231244"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646485"
 ---
 # <a name="what-is-device-management"></a>Wat is apparaatbeheer? 
 
-Beheerders hebben de belangrijke taak om de resources en gegevens van en organisatie te beschermen en beveiligen. Dit heet apparaatbeheer. Gebruikers hebben veel apparaten van waaruit ze persoonlijke bestanden openen en delen, websites bezoeken en apps en games installeren. Diezelfde gebruikers zijn ook werknemers en leerlingen, en ze willen hun apparaten gebruiken om werk- en schoolresources te openen, zoals hun Postvak IN en OneNote. Met *apparaatbeheer* kunnen organisaties hun resources en gegevens beschermen en beveiligen. 
+Beheerders hebben de belangrijke taak om de resources en gegevens van en organisatie te beschermen en beveiligen. Dit heet *apparaatbeheer*. Gebruikers hebben veel apparaten van waaruit ze persoonlijke bestanden openen en delen, websites bezoeken en apps en games installeren. Diezelfde gebruikers zijn ook werknemers en leerlingen, en ze willen hun apparaten gebruiken om werk- en schoolresources te openen, zoals hun Postvak IN en OneNote. Met apparaatbeheer kunnen organisaties hun resources en gegevens beschermen en beveiligen. 
 
 Met een apparaatbeheerprovider zorgen organisaties ervoor dat alleen gemachtigde personen en apparaten toegang krijgen tot vertrouwelijke informatie. Op vergelijkbare manier kunnen apparaatgebruiker met een gerust hart gegevens op hun telefoon openen, omdat ze weten dat het apparaat voldoet aan de beveiligingsvereisten van de organisatie. Als organisatie vraagt u zich misschien af **wat er moet worden gebruikt om de resources te beschermen.**
 

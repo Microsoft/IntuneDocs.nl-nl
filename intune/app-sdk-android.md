@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a7ccc2da5fd99c3c72c8c9beb765f292e896eee
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
-ms.translationtype: HT
+ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069068"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514494"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -832,7 +832,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     > [!NOTE]
     > Zorg ervoor dat uw app gebruikmaakt van de `resourceId` en `aadId` parameters doorgegeven aan `acquireToken()` zodat het juiste token wordt verkregen.
 
-    ```
+    ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
         return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
@@ -1103,7 +1103,7 @@ U kunt met Intune alle [functies voor automatische back-ups](https://developer.a
     ```
 
 
-2. **[Optioneel] ** Als u een optionele aangepaste BackupAgent hebt geïmplementeerd, moet u ervoor zorgen dat MAMBackupAgent of MAMBackupAgentHelper gebruikt. Zie de volgende secties. Overweeg over te schakelen naar het gebruik van de **MAMDefaultFullBackupAgent** van Intune (zoals beschreven in stap 1). Hiermee kunt u eenvoudig back-ups maken op Android M en later.
+2. **[Optioneel]**  Als u een optionele aangepaste BackupAgent hebt geïmplementeerd, moet u ervoor zorgen dat MAMBackupAgent of MAMBackupAgentHelper gebruikt. Zie de volgende secties. Overweeg over te schakelen naar het gebruik van de **MAMDefaultFullBackupAgent** van Intune (zoals beschreven in stap 1). Hiermee kunt u eenvoudig back-ups maken op Android M en later.
 
 3. Als u beslist welk type volledige back-up uw app moet ontvangen (niet gefilterd, gefilterd of geen), moet u het kenmerk `android:fullBackupContent` instellen op waar, onwaar of een XML-bron in uw app.
 
@@ -1633,7 +1633,7 @@ Als een app met meerdere identiteiten wordt geregistreerd voor de melding `WIPE_
 
 Een app die wordt geregistreerd voor `WIPE_USER_DATA` profiteert niet van het voordeel van het standaardgedrag van de SDK voor selectief wissen. Voor apps die met meerdere identiteiten kunnen werken, kan dit verlies belangrijker zijn omdat met de standaard-MAM-actie voor selectief wissen alleen bestanden worden gewist waarvan de identiteit het doel is van een wisbewerking. Als een app die met meerdere identiteiten kan werken, de standaard-MAM-functie voor selectief wissen wil uitvoeren _**en**_ eigen wisacties wil uitvoeren, moet de app worden geregistreerd voor `WIPE_USER_AUXILIARY_DATA`-meldingen. Deze melding wordt direct door de SDK verzonden, nog voordat u de standaard-MAM-actie voor selectief wissen wordt uitgevoerd. Een app mag nooit voor zowel `WIPE_USER_DATA` als `WIPE_USER_AUXILIARY_DATA` worden geregistreerd.
 
-De standaardactie voor selectief wissen wordt de app sluiten zonder problemen, activiteiten is voltooid en het app-proces beëindigen. Als uw app de standaardactie voor wissen seletive overschrijft, kunt u rekening houden met het sluiten van uw app handmatig om te voorkomen dat de gebruiker toegang tot de in-memory-gegevens nadat een wisbewerking wordt uitgevoerd.
+De standaardactie voor selectief wissen wordt de app sluiten zonder problemen, activiteiten is voltooid en het app-proces beëindigen. Als uw app de standaardactie voor selectief wissen overschrijft, kunt u rekening houden met het sluiten van uw app handmatig om te voorkomen dat de gebruiker toegang tot de in-memory-gegevens nadat een wisbewerking wordt uitgevoerd.
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Op MAM gerichte configuratie inschakelen voor Android-toepassingen (optioneel)
@@ -1785,7 +1785,7 @@ De Intune SDK onderhoudt het contract geleverd door de Android-API, hoewel er va
 
 ## <a name="telemetry"></a>Telemetrie
 
-De Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-app registreert standaard telemetriegegevens. Deze gegevens worden naar Microsoft Intune verzonden. Geheel volgens het Microsoft-beleid worden er geen persoonsgegevens verzameld.
+De Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-App registreert het systeem gegenereerde gegevens standaard. Deze gegevens worden naar Microsoft Intune verzonden. Aan de hand van Microsoft Policy, kan er geen persoonlijke gegevens worden verzameld.
 
 > [!NOTE]
 > Als eindgebruikers ervoor kiezen deze gegevens niet te verzenden, moeten ze telemetrie uitschakelen onder Instellingen op de bedrijfsportal-app. Zie [Gegevensverzameling door Microsoft uitschakelen](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android) voor meer informatie. 

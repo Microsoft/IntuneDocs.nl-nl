@@ -6,24 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 03/19/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff80a5911c4bb027cbe2f9289a415ed9797277a6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460492"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394790"
 ---
 # <a name="review-client-app-protection-logs"></a>Logboeken voor beveiliging van de client-app controleren
 
@@ -43,6 +43,7 @@ In de volgende tabel ziet u de naam en een uitleg van de instellingen die worden
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x minuten                                                                                                                                                                                                                                                                                                   | [Toegang] Toegangsvereisten opnieuw controleren - Offline respijtperiode<br>Opmerking: dit is de tijdsperiode waarna toegangsvereisten voor de app opnieuw worden gecontroleerd als het apparaat offline is.             |
 | AccessRecheckOnlineTimeout  | _x_ minuten                                                                                                                                                                                                                                                                                                   | [Toegang] Toegangsvereisten opnieuw controleren - Timeout.<br>Opmerking: dit is de tijdsperiode waarna toegangsvereisten voor de app opnieuw worden gecontroleerd nadat de app is gestart als het apparaat online is. |
+| AllowedOutboundClipboardSharingExceptionLength               | x tekens                                                                                                                                                                                                                                                                                           | [Toegang] Geef het aantal tekens dat kan worden geknipt of gekopieerd van een beheerde app.  Deze instelling overschrijft de `AllowedOutboundClipboardSharingLevel` beperking. De standaardwaarde '0' wordt aangegeven dat die er geen uitzondering is toegestaan. 
 | AppPinDisabled              | 0 = Nee<br>1 = Ja                                                                                                                                                                                                                                                                                           | [Toegang] App-pincode uitschakelen wanneer de pincode van het apparaat wordt beheerd.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = Geen apps<br>1 = Beheerde apps<br>2 = Elke app                                                                                                                                                                                                                                                              | [Herlocatie van gegevens] Toestaan dat deze app gegevens van andere apps ontvangt.                                                                                                                        |
 | AppSharingToLevel           | 0 = Geen apps<br>1 = Beheerde apps<br>2 = Elke app                                                                                                                                                                                                                                                              | [Herlocatie van gegevens] Toestaan dat deze app gegevens overdraagt naar andere apps.                                                                                                                         |
