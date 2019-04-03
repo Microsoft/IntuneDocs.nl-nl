@@ -1,12 +1,12 @@
 ---
 title: Snelstart - Een groep maken om gebruikers te beheren
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In deze snelstart gebruikt u Microsoft Intune om een groep te maken op basis van bestaande gebruikers.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/25/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e22aecbeddeb03060ebd91f3b1d7109d01b8daad
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7cbfe19e4f7aea28c16cae50c9b79336be81c8fa
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391543"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871324"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Quickstart: Een groep maken om gebruikers te beheren
 
@@ -44,17 +44,18 @@ Meld u bij de [Intune](https://aka.ms/intuneportal)-portal aan als [globale behe
 
 ## <a name="create-a-group"></a>Een groep maken
 
-U maakt een groep die later in deze snelstartreeks wordt gebruikt.
+U maakt een groep die later in deze snelstartreeks wordt gebruikt. Ga als volgt te werk om een groep te maken:
 
 1. Wanneer u het deelvenster **Microsoft Intune** hebt geopend, selecteert u **Groepen** > **Nieuwe groep**.
 2. Selecteer in de vervolgkeuzelijst **Groepstype** de optie **Beveiliging**.
-3. Stel de **naam** in op Contoso Testers en voeg een **beschrijving** toe aan de groep.
-4. Stel **Type lidmaatschap** in op **Toegewezen**. 
-5. Klik op **Leden** en selecteer uit de bestaande lijst een of meer leden voor de groep.
+3. Geef in het veld **Groepsnaam** de naam van de nieuwe groep (bijvoorbeeld **Contoso Testers**) op.
+4. Voeg een **Beschrijving** aan de groep toe.
+5. Stel **Type lidmaatschap** in op **Toegewezen**. 
+6. Klik op **Leden** en selecteer uit de lijst een of meer leden voor de groep.
 
     ![Schermopname van het maken van een groep in Microsoft Intune](./media/quickstart-use-groups-01.png)
 
-6. Klik op **Selecteren** > **maken**.
+7. Klik op **Selecteren** > **maken**.
 
 Als u de groep hebt gemaakt, wordt deze weergegeven in de lijst **Alle groepen**. 
 

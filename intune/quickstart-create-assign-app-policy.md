@@ -1,12 +1,12 @@
 ---
 title: 'Snelstartgids: App-beveiligingsbeleid maken en toewijzen'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In deze snelstartgids gebruikt u Microsoft Intune om een beveiligingsbeleid voor apps te maken en toe te wijzen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393368"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871358"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Quickstart: Beveiligingsbeleid voor apps maken en toewijzen
 
@@ -41,7 +41,7 @@ Meld u aan bij [Intune](https://aka.ms/intuneportal) als [globale beheerder of I
 
 ## <a name="create-an-app-protection-policy"></a>Beveiligingsbeleid voor apps maken
 
-Gebruik de volgende stappen om app-beveiligingsbeleid te maken:
+Gebruik de volgende stappen om een app-beveiligingsbeleid te maken:
 
 1. Selecteer in [Intune](https://aka.ms/intuneportal) **Client-apps** > **App-beveiligingsbeleid** > **Beleid maken**. 
 2. Voer de volgende gegevens in: 
@@ -72,7 +72,7 @@ Gebruik de volgende stappen om beveiligingsbeleid voor apps toe te wijzen:
 3.  Selecteer **Toewijzingen**.
 4.  Selecteer de optie **Op te nemen groepen selecteren** op het tabblad **Opnemen**.
 5.  Selecteer **Contoso-testers** als de op te nemen groep.
-6.  Klik op **Selecteren**. 
+6.  Klik op **Selecteren** > **Opslaan**. 
 
 U hebt nu het beveiligingsbeleid voor apps toegewezen.
 

@@ -6,33 +6,33 @@ author: ErikjeMS
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 10/30/2018
+ms.date: 03/25/2019
 ms.author: erikje
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991086"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514260"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Quickstart: Een gebruiker maken en een licentie aan deze gebruiker toewijzen
+# <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Quickstart: Een gebruiker maken in Intune en er een licentie aan toewijzen
 
-In deze snelstart maakt u een gebruiker en wijst u daarna een licentie toe aan die gebruiker. Als u Intune gebruikt, moet elke persoon die u toegang wilt bieden tot de bedrijfsgegevens beschikken over een gebruikersaccount. Intune-beheerders kunnen die gebruikers later configureren om de toegang te beheren.
+In deze quickstart maakt u een gebruiker en daarna wijst u er een Intune-licentie aan toe. Als u Intune gebruikt, moet elke persoon die u toegang wilt bieden tot de bedrijfsgegevens, beschikken over een eigen gebruikersaccount. Intune-beheerders kunnen gebruikers later configureren om de toegang te beheren.
 
 Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor een gratis proefaccount](free-trial-sign-up.md).
 
 ## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
 
-Meld u aan bij [Intune](https://aka.ms/intuneportal) als [globale beheerder of Intune-servicebeheerder](users-add.md#types-of-administrators). Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
+Meld u aan bij [Intune](https://aka.ms/intuneportal) als [globale beheerder of beheerder van een Intune-service](users-add.md#types-of-administrators). Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
 
 ## <a name="create-a-user"></a>Een gebruiker maken
 
-Mensen moeten beschikken over een gebruikersaccount om zich te kunnen inschrijven voor Intune-apparaatbeheer.
+Gebruikers moeten beschikken over een gebruikersaccount om zich te kunnen inschrijven voor Intune-apparaatbeheer. Ga als volgt te werk om een nieuwe gebruiker te maken:
 
 1. Kies in Intune **Gebruikers** > **Alle gebruikers** > **Nieuwe gebruiker**.
 ![Browser](media/quickstart-create-user/create-user.png)
@@ -47,10 +47,12 @@ Mensen moeten beschikken over een gebruikersaccount om zich te kunnen inschrijve
 
 ## <a name="assign-a-license-to-the-user"></a>Een licentie toewijzen aan de gebruiker
 
-Nadat u een gebruiker hebt gemaakt, moet u het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854) gebruiken om een Intune-licentie toe te wijzen aan die gebruiker. Zonder een licentie kan het apparaat van de gebruiker namelijk niet worden ingeschreven bij Intune. 
+Nadat u een gebruiker hebt gemaakt, moet u het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854) gebruiken om een Intune-licentie aan die gebruiker toe te wijzen. Als u geen licentie aan de gebruiker toewijst, kan de gebruiker zijn apparaat niet registreren in Intune. 
+
+Ga als volgt te werk om een Intune-licentie aan een gebruiker toe te wijzen:
 
 1. Meld u aan bij het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854) met dezelfde referenties die u hebt gebruikt om u aan te melden bij Intune.
-2. Kies **Gebruikers** > **Actieve gebruikers** > kies de gebruiker die u zojuist hebt gemaakt.
+2. Kies **Gebruikers** > **Actieve gebruikers** > en selecteer de gebruiker die u zojuist hebt gemaakt.
 3. Selecteer naast **Productlicenties** de optie **Bewerken**.
 4. Bij **Locatie** kiest u een locatie voor de gebruiker.
 5. Klik op **Aan** naast de Intune-licentie (of een andere licentie waarin Intune is inbegrepen). De weergegeven [productnaam](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** wordt gebruikt als het serviceabonnement in Azure Management 
@@ -67,7 +69,7 @@ Als u deze gebruiker niet meer nodig hebt, kunt u deze verwijderen door te navig
 
 ## <a name="next-steps"></a>Volgende stappen
 
-In deze snelstart hebt u een gebruiker gemaakt en een licentie toegewezen aan deze gebruiker. Zie [Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen](users-add.md) voor meer informatie over het toevoegen van gebruikers aan Intune.
+In deze quickstart hebt u een gebruiker gemaakt en een Intune-licentie aan deze gebruiker toegewezen. Zie [Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen](users-add.md) voor meer informatie over het toevoegen van gebruikers aan Intune.
 
 Als u deze reeks snelstartgidsen voor Intune wilt volgen, kunt u doorgaan met de volgende snelstartgids.
 

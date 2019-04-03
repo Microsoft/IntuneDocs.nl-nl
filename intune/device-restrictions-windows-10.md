@@ -1,11 +1,11 @@
 ---
 title: Apparaatbeperkingsinstellingen voor Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: Bekijk een overzicht van alle instellingen en de bijbehorende beschrijvingen voor het maken van apparaatbeperkingen op apparaten met Windows 10 en hoger. Gebruik deze instellingen in een configuratieprofiel om controle te hebben over schermafdrukken, wachtwoordvereisten, instellingen voor de kioskmodus, apps in de store, de Edge-browser, Windows Defender, toegang tot de cloud, het startmenu en meer in Microsoft Intune.
+description: Bekijk een overzicht van alle instellingen en de bijbehorende beschrijvingen voor het maken van apparaatbeperkingen op apparaten met Windows 10 en hoger. Gebruik deze instellingen in een configuratieprofiel om controle te houden over schermafdrukken, wachtwoordvereisten, instellingen voor de kioskmodus, apps in de store, de Microsoft Edge-browser, Windows Defender, toegang tot de cloud, het startmenu en meer in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8190365ad2b50dfa7369b8899e8984b6a52f1cba
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566742"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394997"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -29,7 +29,7 @@ In dit artikel vindt u een overzicht en beschrijving van de verschillende instel
 Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intune en vervolgens toegewezen aan of geïmplementeerd op uw Windows 10-apparaten.
 
 > [!Note]
-> Niet alle opties zijn beschikbaar in alle edities van Windows
+> Niet alle opties zijn beschikbaar in alle edities van Windows. Zie de ondersteunde versies, de [beleid CSP's](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (opent u een andere Microsoft-website).
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
@@ -64,8 +64,8 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Wi-Fi**: hiermee kan de gebruiker Wi-Fi op het apparaat inschakelen en configureren (alleen voor Windows 10 Mobile).
 - **Automatisch verbinding maken met Wi-Fi-hotspots**: hiermee kunt u het apparaat automatisch verbinding laten maken met gratis Wi-Fi-hotspots en automatisch de voorwaarden voor de verbinding laten accepteren.
 - **Handmatige configuratie van Wi-Fi**: hiermee geeft u aan of de gebruiker zijn of haar eigen Wi-Fi-verbindingen kan instellen, of dat de gebruiker alleen verbindingen kan gebruiken die door een Wi-Fi-profiel zijn geconfigureerd (alleen voor Windows 10 Mobile).
-- **Wi-Fi-scaninterval**: geef op hoe vaak apparaten zoeken naar Wi-Fi-netwerken. Geef een waarde op tussen 1 (zo vaak mogelijk) en 500 (zo min mogelijk).
-- **Services waarvoor Bluetooth is toegestaan**: geef een lijst met toegestane Bluetooth-services en -profielen op, in de vorm van hexadecimale tekenreeksen.
+- **Wi-Fi-scaninterval**: voer in hoe vaak apparaten zoeken naar Wi-Fi-netwerken. Geef een waarde op tussen 1 (zo vaak mogelijk) en 500 (zo min mogelijk).
+- **Services waarvoor Bluetooth is toegestaan**: geef een lijst met toegestane Bluetooth-services en -profielen op in de vorm van hexadecimale tekenreeksen.
 
 ## <a name="cloud-and-storage"></a>Cloud en opslag
 
@@ -116,7 +116,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Schermafbeelding (alleen mobiel)**: hiermee kan de gebruiker het apparaatscherm vastleggen als afbeelding.
 - **Kopiëren en plakken (alleen mobiel)**: hiermee staat u kopieer- en plakbewerkingen tussen apps op het apparaat toe.
 - **Registratie handmatig ongedaan maken**: hiermee kan de gebruiker het werkplekaccount handmatig van het apparaat verwijderen.
-  - Deze beleidsinstelling wordt niet toegepast als de computer is toegevoegd aan Azure AD en automatische inschrijving is ingeschakeld. 
+  - Deze beleidsinstelling is niet van toepassing als de computer is toegevoegd aan Azure AD en automatische inschrijving is ingeschakeld. 
   - Deze beleidsinstelling geldt niet voor computers met Windows 10 Home.
 - **Handmatige installatie van het basiscertificaat (alleen mobiel)**: voorkomt dat de gebruiker handmatig basiscertificaten en tussenliggende CAP-certificaten kan installeren.
 
@@ -145,7 +145,6 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
 - **Beëindigen van processen in Taakbeheer**: deze instelling bepaalt of niet-beheerders Taakbeheer end taken kunnen gebruiken. Met **Blokkeren** voorkomt u dat standaardgebruikers (niet-beheerders) processen of taken op het apparaat kunnen beëindigen met behulp van Taakbeheer. Met **Niet geconfigureerd** (standaard) kunnen standaardgebruikers processen of taken beëindigen met behulp van Taakbeheer.
 
-
 ## <a name="locked-screen-experience"></a>Vergrendeld scherm
 
 - **Meldingen van het Actiecentrum (alleen mobiel)**: hiermee kunt u meldingen van het actiecentrum op het vergrendelingsscherm van het apparaat weergeven (alleen Windows 10 Mobile).
@@ -155,7 +154,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Pop-upmeldingen op vergrendeld scherm**: geen waarschuwingsberichten weergeven op het vergrendelingsscherm van het apparaat.
 - **Time-out voor het scherm (alleen mobiel)**: hiermee geeft u de tijd in seconden op waarna het scherm wordt uitgeschakeld nadat het scherm is vergrendeld.
 
-## <a name="messaging"></a>Messaging
+## <a name="messaging"></a>Berichten
 
 - **Berichten synchroniseren (alleen mobiel)**: schakel back-up en herstel van Berichten overal en tekstberichten uit.
 - **Mms (alleen mobiel)**: schakel de Mms-functie voor verzenden/ontvangen op het apparaat uit.
@@ -168,25 +167,25 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 De beschikbare instellingen wijzigen, afhankelijk van wat u kiest. Uw opties zijn:
 
 - **Geen** (standaard): Microsoft Edge wordt niet uitgevoerd in de kioskmodus bevindt. Alle instellingen voor Microsoft Edge zijn beschikbaar voor u om te wijzigen en te configureren.
-- **Digitale/interactief aankondigingen (kiosk voor één app)**: Filters Edge-instellingen die van toepassing voor digitale/interactief aankondigingen Edge kioskmodus alleen op één kiosken Windows 10 zijn. Kies deze instelling om een volledige URL-scherm te openen en de inhoud alleen weergeven op die website. [Instellen van digitale borden](https://docs.microsoft.com/windows/configuration/setup-digital-signage) vindt u meer informatie over deze functie.
-- **Openbare InPrivate-navigatie (kiosk voor één app)**: Filters Edge-instellingen die van toepassing voor de InPrivate-navigatie openbare bladeren Edge kioskmodus voor gebruik op Windows 10 één app kiosken zijn. Een meerdere tabblad-versie van Microsoft Edge wordt uitgevoerd.
-- **Normale modus (kiosk voor meerdere Apps)**: Filters Edge-instellingen die van toepassing voor de kioskmodus van normale Edge zijn. Voert een volledige versies van Microsoft Edge met alle functies van de browser.
-- **Openbare bladeren (kiosk voor meerdere Apps)**: Filters Edge-instellingen die van toepassing voor het openbare-bladeren door op een Windows 10-kiosk voor meerdere Apps zijn.  Een meerdere tabblad-versie van Microsoft Edge InPrivate-navigatie wordt uitgevoerd.
+- **Digitale/interactief aankondigingen (kiosk voor één app)**: Filters Microsoft Edge-instellingen die van toepassing voor digitale/interactief borden tot stand brengen Microsoft Edge in kioskmodus alleen op één kiosken Windows 10 zijn. Kies deze instelling om een volledige URL-scherm te openen en de inhoud alleen weergeven op die website. [Instellen van digitale borden](https://docs.microsoft.com/windows/configuration/setup-digital-signage) vindt u meer informatie over deze functie.
+- **Openbare InPrivate-navigatie (kiosk voor één app)**: Filters Microsoft Edge-instellingen die van toepassing voor de InPrivate-navigatie openbare bladeren door Microsoft Edge kioskmodus voor gebruik op Windows 10 één app kiosken zijn. Een meerdere tabblad-versie van Microsoft Edge wordt uitgevoerd.
+- **Normale modus (kiosk voor meerdere Apps)**: Filters Microsoft Edge-instellingen die voor de kioskmodus normaal Microsoft Edge gelden. Voert een volledige versies van Microsoft Edge met alle functies van de browser.
+- **Openbare bladeren (kiosk voor meerdere Apps)**: Filters Microsoft Edge-instellingen die van toepassing voor het openbare-bladeren door op een Windows 10-kiosk voor meerdere Apps zijn.  Een meerdere tabblad-versie van Microsoft Edge InPrivate-navigatie wordt uitgevoerd.
 
 > [!TIP]
 > Zie voor meer informatie over het doen van deze opties [Microsoft Edge kiosk modus configuratie typen](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
 Dit apparaatbeperkingsprofiel is direct gerelateerd aan de kiosk-profiel u maken met behulp van de [kiosk-instellingen voor Windows](kiosk-settings-windows.md). Samenvatting:
 
-1. Maak de [kiosk-instellingen voor Windows](kiosk-settings-windows.md) profiel voor het uitvoeren van het apparaat in kioskmodus bevindt. Selecteer Microsoft Edge als de toepassing en het Edge-kioskmodus instellen in de Kiosk-profiel.
-2. In dit artikel beschreven profiel voor de beperkingen van het apparaat maken en configureren van specifieke functies en instellingen die zijn toegestaan in Microsoft Edge. Zorg ervoor dat u kiest de hetzelfde type kiosk-modus Edge geselecteerd in de kiosk-profiel ([kiosk-instellingen voor Windows](kiosk-settings-windows.md)). 
+1. Maak de [kiosk-instellingen voor Windows](kiosk-settings-windows.md) profiel voor het uitvoeren van het apparaat in kioskmodus bevindt. Microsoft Edge als de toepassing te selecteren en stel de kioskmodus van Microsoft Edge in de Kiosk-profiel.
+2. In dit artikel beschreven profiel voor de beperkingen van het apparaat maken en configureren van specifieke functies en instellingen die zijn toegestaan in Microsoft Edge. Zorg ervoor dat de dezelfde type kiosk-modus Microsoft Edge geselecteerd in de kiosk-profiel te kiezen ([kiosk-instellingen voor Windows](kiosk-settings-windows.md)). 
 
     [Instellingen voor de kioskmodus ondersteund](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) is een fantastische bron.
 
 > [!IMPORTANT] 
 > Zorg ervoor dat u dit Microsoft Edge-profiel toewijzen aan de dezelfde apparaten als uw kiosk-profiel ([kiosk-instellingen voor Windows](kiosk-settings-windows.md)).
 
-CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+[ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>Gebruikerservaring
 
@@ -251,14 +250,14 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 
 ### <a name="privacy-and-security"></a>Privacy en beveiliging
 
-- **InPrivate-navigatie**: met ** Blokkeren** voorkomt u dat eindgebruikers InPrivate-navigatiesessies openen. Met **Niet geconfigureerd** wordt deze functie toegestaan.
+- **InPrivate-navigatie**: met  **Blokkeren** voorkomt u dat eindgebruikers InPrivate-navigatiesessies openen. Met **Niet geconfigureerd** wordt deze functie toegestaan.
 - **Browsegeschiedenis opslaan**: met **Blokkeren** voorkomt u dat Microsoft Edge de browsegeschiedenis opslaat. Met **Niet geconfigureerd** kan de browsegeschiedenis worden opgeslagen.
 - **Browsegegevens wissen bij afsluiten (alleen bureaublad)**: met **Vereisen** worden de geschiedenis en de browsegegevens gewist wanneer de gebruiker Microsoft Edge afsluit. Met **Niet geconfigureerd** wordt het standaardgedrag van het besturingssysteem gebruikt, wat betekent dat de browsegegevens mogelijk in de cache worden opgeslagen.
 - **Browserinstellingen synchroniseren tussen apparaten van gebruiker**: geef aan hoe u browserinstellingen wilt synchroniseren tussen apparaten. Uw opties zijn:
   - **Toestaan**: synchronisatie van instellingen van de Microsoft Edge-browser toestaan tussen apparaten van de gebruiker
   - **Blokkeren en overschrijven door gebruiker inschakelen**: synchronisatie van Microsoft Edge-browserinstellingen tussen apparaten van de gebruiker blokkeren. Gebruikers kunnen deze instelling wijzigen.
   - **Blokkeren**: synchronisatie van Microsoft Edge-browserinstellingen tussen apparaten van de gebruiker blokkeren. Gebruikers kunnen deze instelling niet wijzigen.
-- **Wachtwoordbeheer**: met ** Blokkeren** schakelt u de functie Wachtwoordbeheer van Microsoft Edge uit. Met **Niet geconfigureerd** wordt deze functie toegestaan.
+- **Wachtwoordbeheer**: met  **Blokkeren** schakelt u de functie Wachtwoordbeheer van Microsoft Edge uit. Met **Niet geconfigureerd** wordt deze functie toegestaan.
 - **Cookies**: geef aan hoe cookies worden verwerkt in de browser. Uw opties zijn:
   - **Toestaan**: cookies worden op het apparaat opgeslagen.
   - **Alle cookies blokkeren**: cookies worden niet op het apparaat opgeslagen.
@@ -266,7 +265,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **Automatisch doorvoeren**: met **Blokkeren** wordt de functie Automatisch doorvoeren uitgeschakeld op het apparaat. **Niet geconfigureerd**: hiermee kunnen gebruikers instellingen voor automatisch doorvoeren wijzigen in de browser (alleen Windows 10 Desktop).
 - **Do Not Track-headers verzenden**: met **Niet geconfigureerd** moeten apparaten Do Not Track-headers verzenden naar websites die om traceringsgegevens vragen (aanbevolen). Kies **Blokkeren** om te voorkomen dat het apparaat deze headers verstuurt, waarmee websites de gebruiker kunnen volgen.
 - **LocalHost IP-adres voor WebRTC**: met **Blokkeren** voorkomt u dat het IP-adres van de LocalHost van gebruikers wordt weergegeven tijdens het plaatsen van telefoonoproepen via het WebRTC-protocol. Met **Niet geconfigureerd** kan het IP-adres van de LocalHost van gebruikers worden weergegeven bij het plaatsen van telefoonoproepen met behulp van dit protocol.
-- **Verzamelen van livetegelgegevens**: kies ** Blokkeren** om te voorkomen dat Windows gegevens verzamelt van de livetegel waaraan een site is vastgemaakt in het startmenu van Microsoft Edge. Met **Niet geconfigureerd** kunnen deze gegevens worden verzameld.
+- **Verzamelen van livetegelgegevens**: kies  **Blokkeren** om te voorkomen dat Windows gegevens verzamelt van de livetegel waaraan een site is vastgemaakt in het startmenu van Microsoft Edge. Met **Niet geconfigureerd** kunnen deze gegevens worden verzameld.
 - **Gebruiker kan certificaatfouten negeren**: met **Blokkeren** wordt voorkomen dat gebruikers toegang hebben tot websites met SSL- of TLS-fouten. Met **Niet geconfigureerd** hebben gebruikers toegang tot deze sites.
 
 ### <a name="additional"></a>Aanvullende informatie
@@ -275,7 +274,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **Vervolgkeuzelijst van de adresbalk (alleen desktop)**: met **Blokkeren** voorkomt u dat er in Microsoft Edge een lijst met suggesties wordt weergeven wanneer u typt in het invoervak van een vervolgkeuzelijst. Deze optie helpt bij het beperken van de netwerkbandbreedte die nodig is tussen Microsoft Edge en Microsoft-services. Met **Niet geconfigureerd** kan Microsoft Edge een lijst met suggesties weergeven.
 - **Volledig scherm**: kies **Blokkeren** om te voorkomen dat Microsoft Edge alleen de webinhoud weergeeft en de interface van Microsoft Edge verbergt (volledig scherm). Met **Niet geconfigureerd** wordt het standaardgedrag van het besturingssysteem gebruikt, waardoor Microsoft Edge schermvullend kan worden weergegeven.
 - **Over-vlaggen**: met **Blokkeren** wordt voorkomen dat eindgebruikers toegang hebben tot de pagina `about:flags` in Microsoft Edge met onder andere informatie over de ontwikkelaar en experimentele instellingen. Met **Niet geconfigureerd** wordt het standaardgedrag van het besturingssysteem gebruikt, wat kan betekenen dat de pagina `about:flags` toegankelijk is.
-- **Ontwikkelhulpprogramma's**: met ** Blokkeren** voorkomt u dat eindgebruikers de ontwikkelhulpprogramma's van Microsoft Edge openen. Met **Niet geconfigureerd** kunnen gebruikers de ontwikkelhulpprogramma's openen.
+- **Ontwikkelhulpprogramma's**: met  **Blokkeren** voorkomt u dat eindgebruikers de ontwikkelhulpprogramma's van Microsoft Edge openen. Met **Niet geconfigureerd** kunnen gebruikers de ontwikkelhulpprogramma's openen.
 - **Extensies**: met **Niet geconfigureerd** kunnen eindgebruikers extensies van Microsoft Edge installeren op het apparaat. Met **Blokkeren** wordt de installatie hiervan voorkomen.
 - **Ontwikkelaarsuitbreidingen sideloaden**: met **Blokkeren** voorkomt u sideloading door Microsoft Edge, waarbij niet-geverifieerde extensies worden geïnstalleerd en uitgevoerd met behulp van de functie **Extensies laden**. Met **Niet geconfigureerd** wordt het standaardgedrag van het besturingssysteem gebruikt, wat kan betekenen dat sideloading is toegestaan.
 - **Vereiste extensies**: kies welke extensies niet kunnen worden uitgeschakeld door eindgebruikers in Microsoft Edge. Voer de familienamen van pakketten in en selecteer **Toevoegen**. De lijsten in [Een PFN (Package Family Name) zoeken](https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn) geven meer informatie.
@@ -300,7 +299,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **Wachtwoord**: hiermee geeft u aan dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat.
   - **Vereist wachtwoordtype**: hiermee geeft u aan of het wachtwoord alleen numeriek of alfanumeriek moet zijn.
   - **Minimale wachtwoordlengte**: alleen van toepassing op Windows 10 Mobile.
-  - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: voor apparaten met Windows 10: als BitLocker is ingeschakeld op het apparaat, wordt het in de herstelmodus van BitLocker gezet nadat het aanmelden het aantal keren dat u opgeeft is mislukt. Als BitLocker niet is ingeschakeld op het apparaat, is deze instelling niet van toepassing. Voor Windows 10 Mobile-apparaten: nadat het aanmelden het aantal keren dat u opgeeft is mislukt, wordt het apparaat gewist.
+  - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: voor apparaten met Windows 10: als BitLocker is ingeschakeld op het apparaat, wordt het in de herstelmodus van BitLocker gezet nadat het aanmelden het aantal keren dat u opgeeft is mislukt. Als BitLocker niet is ingeschakeld op het apparaat, is deze instelling niet van toepassing. Voor Windows 10 Mobile-apparaten: nadat het aanmelden het opgegeven aantal keer is mislukt, wordt het apparaat gewist.
   - **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**: hiermee geeft u de hoeveelheid tijd op die een apparaat inactief moet zijn voordat het scherm wordt vergrendeld.
   - **Wachtwoord verloopt (dagen)**: hiermee geeft u de hoeveelheid tijd op waarna het wachtwoord van een apparaat moet worden gewijzigd.
   - **Wachtwoorden niet opnieuw gebruiken**: hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.
@@ -331,7 +330,7 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 - **Telefoon**: geef aan of deze app toegang heeft tot de telefoon.
 - **Radio's**: sommige apps maken gebruik van radio's (bijvoorbeeld Bluetooth) in uw apparaat voor het verzenden en ontvangen van gegevens en moeten deze radio's kunnen in- of uitschakelen. Geef aan of deze app deze radio's kan beheren.
 - **Taken**: geef aan of deze app toegang heeft tot uw taken.
-- **Vertrouwde apparaten**: geef aan of deze app gebruik kan maken van vertrouwde apparaten (hardware die u al hebt aangesloten of die bij deze pc, tablet of telefoon wordt geleverd). Gebruik tv's, projectoren enzovoort bijvoorbeeld als vertrouwde apparaten.
+- **Vertrouwde apparaten**: Kies als deze app kan worden gebruikt voor het gebruik van vertrouwde apparaten. Onder vertrouwde apparaten wordt hardware verstaan die u al hebt aangesloten of die bij deze pc, tablet of telefoon wordt geleverd. Gebruik tv's, projectoren enzovoort bijvoorbeeld als vertrouwde apparaten.
 - **Feedback en diagnostische gegevens**: geef aan of deze app toegang heeft tot diagnostische gegevens.
 - **Synchroniseren met apparaten**: geef aan of deze app gegevens automatisch kan delen en synchroniseren met draadloze apparaten die niet expliciet aan dit apparaat zijn gekoppeld.
 
@@ -352,7 +351,7 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 - **Gebruikersactiviteiten publiceren**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar te voorkomen.
 - **Alleen lokale activiteiten**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar alleen op basis van de lokale activiteit te voorkomen.
 
-U kunt informatie configureren die voor alle apps op het apparaat toegankelijk is. U kunt ook uitzonderingen definiëren op een per-app basis met **Privacyuitzonderingen per app**.
+U kunt informatie configureren die voor alle apps op het apparaat toegankelijk is. Definieer ook uitzonderingen op een per-app basis met **Privacyuitzonderingen per app**.
 
 ### <a name="exceptions"></a>Uitzonderingen
 
@@ -371,7 +370,7 @@ U kunt informatie configureren die voor alle apps op het apparaat toegankelijk i
 - **Telefoon**: geef aan of deze app toegang heeft tot de telefoon.
 - **Radio's**: sommige apps maken gebruik van radio's (bijvoorbeeld Bluetooth) in uw apparaat voor het verzenden en ontvangen van gegevens en moeten deze radio's kunnen in- of uitschakelen. Geef aan of deze app deze radio's kan beheren.
 - **Taken**: geef aan of deze app toegang heeft tot uw taken.
-- **Vertrouwde apparaten**: Kies als deze app kan worden gebruikt voor het gebruik van vertrouwde apparaten. Onder vertrouwde apparaten wordt hardware verstaan die u al hebt aangesloten of die bij deze pc, tablet of telefoon wordt geleverd. Gebruik tv's, projectors enzovoort bijvoorbeeld als vertrouwde apparaten.
+- **Vertrouwde apparaten**: Kies als deze app kan worden gebruikt voor het gebruik van vertrouwde apparaten. Onder vertrouwde apparaten wordt hardware verstaan die u al hebt aangesloten of die bij deze pc, tablet of telefoon wordt geleverd. Gebruik tv's, projectoren enzovoort bijvoorbeeld als vertrouwde apparaten.
 - **Feedback en diagnostische gegevens**: geef aan of deze app toegang heeft tot diagnostische gegevens.
 - **Synchroniseren met apparaten**: geef aan of deze app gegevens automatisch kan delen en synchroniseren met draadloze apparaten die niet expliciet aan deze pc, tablet of telefoon zijn gekoppeld.
 
@@ -467,9 +466,9 @@ U kunt informatie configureren die voor alle apps op het apparaat toegankelijk i
 - **Alle downloads scannen**: hiermee bepaalt u of Windows Defender alle bestanden moet scannen die van internet worden gedownload.
 - **Scripts scannen die in webbrowsers van Microsoft worden geladen**: hiermee geeft u aan dat Defender scripts moet scannen die worden gebruikt in Internet Explorer.
 - **Toegang van eindgebruikers tot Defender**: hiermee geeft u aan of de gebruikersinterface van Windows Defender voor eindgebruikers wordt verborgen. Als deze instelling wordt gewijzigd, gaat de wijziging in wanneer de pc van de eindgebruiker de volgende keer opnieuw wordt opgestart.
-- **Interval voor handtekeningupdates (in uren)**: hiermee geeft u het interval op waarmee Defender op nieuwe handtekeningbestanden controleert.
+- **Interval voor handtekeningupdates (in uren)**: hier geeft u het interval op waarmee Defender op nieuwe handtekeningbestanden moet controleren.
 - **Activiteiten van bestanden en programma's bewaken**: hiermee staat u Defender toe activiteiten van bestanden en programma's op apparaten te bewaken.
-- **Het aantal dagen voordat in quarantaine geplaatste malware wordt verwijderd**: hiermee kunt u Defender gedurende het aantal dagen dat u opgeeft, opgeloste malware laten bijhouden, zodat u handmatig eerder aangevallen apparaten kunt controleren. Als u het aantal dagen instelt op **0**, blijft malware in de map Quarantaine staan en wordt malware niet automatisch verwijderd.
+- **Dagen voordat in quarantaine geplaatste malware wordt verwijderd**: blijven volgen opgeloste problemen met malware voor het aantal dagen dat u opgeeft, zodat u handmatig eerder aangevallen apparaten kunt controleren. Als u het aantal dagen instelt op **0**, blijft malware in de map Quarantaine staan en wordt malware niet automatisch verwijderd.
 - **Limiet voor het CPU-gebruik tijdens het scannen**: hiermee kunt u de hoeveelheid CPU beperken die scans mogen gebruiken (tussen **1** en **100**).
 - **Archiefbestanden scannen**: hiermee kunt u toestaan dat Defender gearchiveerde bestanden scant, zoals ZIP- of CAB-bestanden.
 - **Inkomende e-mailberichten scannen**: hiermee kunt u toestaan dat Defender e-mailberichten scant wanneer deze op het apparaat binnenkomen.
@@ -477,14 +476,36 @@ U kunt informatie configureren die voor alle apps op het apparaat toegankelijk i
 - **Toegewezen netwerkschijven scannen tijdens een volledige scan**: hiermee kunt u Defender op toegewezen netwerkstations laten scannen.
   Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.
 - **Bestanden die zijn geopend vanuit mappen op het netwerk scannen**: hiermee kunt u Defender bestanden op gedeelde stations laten scannen (bijvoorbeeld bestanden die via een UNC-pad toegankelijk zijn). Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.
-- **Cloudbeveiliging**: hiermee kunt u toestaan of blokkeren dat de Microsoft Active Protection-service informatie ontvangt over malware-activiteit op apparaten die u beheert. Deze informatie wordt gebruikt om de service in de toekomst te verbeteren.
+- **Cloudbeveiliging**: hiermee kunt u toestaan of blokkeren dat de Microsoft Active Protection-service informatie ontvangt over malware-activiteit op apparaten die u beheert. Deze informatie wordt de service in de toekomst verbeterd.
 - **Gebruikers vragen voordat een voorbeeld wordt verzonden**: hiermee bepaalt u of potentieel schadelijke bestanden waarvoor verdere analyse nodig is, automatisch naar Microsoft worden verzonden.
-- **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd**: hiermee kunt u een snelle scan plannen die dagelijks wordt uitgevoerd op het moment dat u selecteert.
-- **Type systeemscan dat moet worden uitgevoerd**: geef het niveau op waarop moet worden gescand tijdens een geplande systeemscan.
+- **Tijd voor het uitvoeren van een dagelijkse snelle scan**: Kies een dagelijkse snelle scan uitvoeren voor het uur. **Niet geconfigureerd** dagelijks een scan kan niet worden uitgevoerd. Als u meer aanpassingsmogelijkheden wilt, configureert u de **Type systeemscan** instelling.
+
+  [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **Type systeemscan**: plannen een systeemscan, met inbegrip van het niveau van het scannen, de dag en tijd om de scan. Uw opties zijn:
+  - **Niet geconfigureerd**: een systeemscan op het apparaat niet plannen. Eindgebruikers kunnen scans handmatig als vereist of gewenst uitvoeren op hun apparaten.
+  - **Uitschakelen**: schakelt een systeem scannen op het apparaat. Selecteer deze optie als u een partneroplossing antivirusprogramma's waarmee apparaten worden gescand.
+  - **Snelle scan**: kijkt naar veelvoorkomende locaties wanneer er schadelijke software kan worden geregistreerd, zoals registersleutels en bekende opstartmappen in Windows.
+    - **Geplande dag**: Kies de dag waarop de scan wordt uitgevoerd.
+    - **Geplande tijd**: Kies het uur de scan uit te voeren.
+  - **Volledige scan**: kijkt naar veelvoorkomende locaties waar er zijn mogelijk schadelijke software geregistreerd en ook scant alle bestanden en mappen op het apparaat.
+    - **Geplande dag**: Kies de dag waarop de scan wordt uitgevoerd.
+    - **Geplande tijd**: Kies het uur de scan uit te voeren.
+
+  Deze instelling kan strijdig zijn met de **tijd voor het uitvoeren van een dagelijkse snelle scan** instelling. Een aantal aanbevelingen:
+
+  - Als u wilt een dagelijkse snelle scan uitvoert, configureert de **tijd voor het uitvoeren van een dagelijkse snelle scan** instelling.
+  - Als u wilt een dagelijkse snelle scan en een volledige scan elke week uitvoert, configureert u de **tijd voor het uitvoeren van een dagelijkse snelle scan**, en stel **Type systeemscan** aan een volledige scan met de datum en tijd.
+  - Configureer niet de **tijd voor het uitvoeren van een dagelijkse snelle scan** tegelijkertijd instellen met de **Type systeemscan uit te voeren** ingesteld op **snelle scan**. Deze instellingen kunnen conflicteren en een scan kan niet worden uitgevoerd.
+  - Als u wilt een snelle scan elke dinsdag wordt uitgevoerd om 06.00, configureert u de **Type systeemscan** instelling.
+
+  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
 - **Mogelijk ongewenste toepassingen detecteren**: kies het niveau van beveiliging dat moet worden ingesteld als Windows toepassingen detecteert die mogelijk ongewenst zijn:
   - **Blokkeren**
   - **Controle** Zie [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus) (Mogelijk ongewenste toepassingen detecteren en blokkeren) voor meer informatie over mogelijk ongewenste apps.
-- **Acties voor gedetecteerde bedreiging van malware**: gebruik deze optie om de acties te kiezen die Defender moet uitvoeren voor de verschillende bedreigingsniveaus (Laag, Gemiddeld, Hoog en Ernstig). Uw opties zijn:
+- **Acties voor gedetecteerde bedreiging van malware**: kies welke acties Defender moet uitvoeren voor de verschillende bedreigingsniveaus (Laag, Gemiddeld, Hoog en Ernstig). Uw opties zijn:
   - **Reinigen**
   - **Quarantaine**
   - **Verwijderen**

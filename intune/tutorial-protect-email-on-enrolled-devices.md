@@ -1,12 +1,12 @@
 ---
 title: Zelfstudie - Exchange Online e-mail beschermen op Intune-beheerde apparaten
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Meer informatie over hoe u Exchange Online kunt beveiligen met iOS Intune-nalevingsbeleid en Azure AD-voorwaardelijke toegang, door beheerde apparaten en de Outlook-app vereist te maken.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a8e873c48ceb59bfb8ac98fec9a29fa51d6cd3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528204"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799765"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Zelfstudie: Exchange Online e-mail beschermen op beheerde apparaten
 Hier vindt u meer informatie over het gebruik van het nalevingsbeleid voor apparaten met voorwaardelijke toegang. Hiermee kunt u ervoor zorgen dat iOS-apparaten uitsluitend toegang tot Exchange Online e-mail hebben als ze door Intune worden beheerd en een goedgekeurde e-mailapplicatie gebruiken. 
@@ -43,7 +43,7 @@ Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor ee
 
 ## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
 
-Meld u aan bij [Intune](https://aka.ms/intuneportal) als globale beheerder of beheerder van een Intune-service. U gaat in Azure Portal naar Intune door **Alle services** > **Intune** te kiezen.
+Meld u aan bij [Intune](https://aka.ms/intuneportal) als globale beheerder of beheerder van een Intune-service. Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
 
 ## <a name="create-the-ios-device-compliance-policy"></a>Nalevingsbeleid voor iOS-apparaten maken
 Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepalen waaraan een apparaat moet voldoen om als conform te worden beschouwd. In deze zelfstudie maken we een nalevingsbeleid voor iOS-apparaten. Elk nalevingsbeleid is platformspecifiek, dus u hebt een apart nalevingsbeleid nodig voor elk platform dat u wilt evalueren.
@@ -93,7 +93,7 @@ Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaat
 5.  Onder **Toewijzingen** selecteert u **Voorwaarden** > **Apparaatplatforms**.
      
     1. Onder **Configureren** selecteert u **Ja**.
-    2. Op het tabblad **Opnemen** selecteert u **Alle platforms (inclusief niet-ondersteunde)** en vervolgens **Voltooid**. 
+    2. Op het tabblad **Opnemen** selecteert u **Elk apparaat** en vervolgens **Voltooid**. 
     3. Selecteer opnieuw **Voltooid**.
    
     ![De Office 365 Exchange Online-app selecteren](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)

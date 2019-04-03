@@ -1,6 +1,6 @@
 ---
 title: 'Snelstartgids: Microsoft Intune gratis proberen'
-titlesuffix: ''
+titleSuffix: ''
 description: In deze snelstartgids maakt u een gratis proefabonnement, leert u de ondersteunde configuraties en netwerkvereisten kennen en kunt u (optioneel) uw domeinnaam configureren.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756850"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871392"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Quickstart: Microsoft Intune gratis proberen 
 
@@ -67,7 +67,7 @@ U mag Intune 30 dagen gratis proberen. Als u al een werk- of schoolaccount hebt 
 
     ![Afbeelding van de aanmeldingspagina van Azure Portal](./media/azure-portal-signin.png)
 
-3. On Microsoft Intune in Azure Portal weer te geven, selecteert u **Alle services** in de zijbalk aan de linkerkant van de pagina.
+3. Als u Microsoft Intune in de Azure-portal wilt weergeven, selecteert u **Alle services** in de zijbalk links op de pagina.
 4. Zoek in het filtervak naar **Microsoft Intune** en selecteer dit.
 5. Selecteer het **sterretje** om Intune onder aan uw lijst met favoriete services toe te voegen en het Intune-dashboard te openen.
 
@@ -110,7 +110,7 @@ Zoals hierboven is gemeld, kunt u de domeinnaam wijzigen in het Microsoft 365-be
 
    ![Schermopname van Microsoft 365-beheercentrum - domein toevoegen](./media/domain-custom-add.png)
 
-4. Bevestig dat u de eigenaar van het domein bent dat u eerder hebt ingevoerd. 
+4. Bevestig dat u de eigenaar van het domein bent dat u in de vorige stap hebt opgegeven. 
     
     Wanneer u de optie **Code verzenden via e-mail** selecteert, wordt er een e-mail naar de geregistreerde contactpersoon van uw domein gestuurd. Nadat u de e-mail hebt ontvangen, kopieert u de code en voert u deze in bij het veld **Typ hier uw verificatiecode**. Als de verificatiecodes overeenkomen, wordt het domein toegevoegd aan uw tenant. Het e-mailadres dat wordt weergegeven, ziet er mogelijk niet bekend uit. Sommige registratieservices verbergen het echte e-mailadres. Het e-mailadres kan bovendien anders zijn dan is opgegeven tijdens de registratie van het domein.
 

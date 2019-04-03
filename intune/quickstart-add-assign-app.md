@@ -1,12 +1,12 @@
 ---
 title: 'Snelstartgids: Een client-app toevoegen en toewijzen'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In deze snelstartgids gaat u met Microsoft Intune een client-app toevoegen en toewijzen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/25/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391890"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798740"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Quickstart: Een client-app toevoegen en toewijzen
 
@@ -37,7 +37,7 @@ Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor ee
 
 ## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
 
-Meld u aan bij [Intune](https://aka.ms/intuneportal) als [globale beheerder of Intune-servicebeheerder](users-add.md#types-of-administrators). Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
+Meld u aan bij [Intune](https://aka.ms/intuneportal) als [globale beheerder of beheerder van een Intune-service](users-add.md#types-of-administrators). Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
 
 ## <a name="add-the-client-app-to-intune"></a>De client-app toevoegen aan Intune
 
@@ -66,7 +66,7 @@ Gebruik de volgende stappen om een app aan Intune toe te voegen:
 Wanneer u een app aan Microsoft Intune hebt toegevoegd, kunt u de app toewijzen aan groepen gebruikers en apparaten.
 
 > [!NOTE]
-> Deze snelstartgids is gebaseerd op eerdere snelstartgidsen in deze reeks. Raadpleeg [Vereisten](quickstart-add-assign-app.md#prerequisites) in deze snelstartgids voor meer informatie.
+> Deze quickstart bouwt voort op eerdere quickstarts in deze reeks. Raadpleeg [Vereisten](quickstart-add-assign-app.md#prerequisites) in deze snelstartgids voor meer informatie.
 
 Gebruik de volgende stappen om een app aan een groep toe te voegen:
 1. Selecteer in [Intune](https://aka.ms/intuneportal) de optie **Client-apps** > **Apps**. 

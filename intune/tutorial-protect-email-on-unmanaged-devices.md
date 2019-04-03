@@ -1,12 +1,12 @@
 ---
 title: 'Zelfstudie: Exchange Online-e-mail beschermen op onbeheerde apparaten'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Leer hoe u Office 365 Exchange Online kunt beveiligen met app-beveiligingsbeleid van Intune en voorwaardelijke toegang via Azure AD.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4692e19d657e19efe18a91273ce585eb59c6cb65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528272"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798781"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Zelfstudie: Exchange Online-e-mail beschermen op onbeheerde apparaten
 
@@ -91,8 +91,8 @@ U gaat nu twee beleidsregels voor voorwaardelijke toegang maken, om zo alle appa
 5.  Onder **Toewijzingen** selecteert u **Voorwaarden** > **Apparaatplatforms**.
      
     1. Onder **Configureren** selecteert u **Ja**.
-    2. Op het tabblad **Opnemen** selecteert u **Alle platforms (inclusief niet-ondersteunde)**. 
-    3. Selecteer **Voltooid**.
+    2. Op het tabblad **Opnemen** selecteert u **Elk apparaat**.
+    1. Selecteer **Voltooid**.
    
 6.  Selecteer in het deelvenster **Voorwaarden** de optie **Client-apps**.
      
@@ -136,7 +136,7 @@ Het beleid voor voorwaardelijke toegang voor clients met moderne verificatie is 
 5.  Onder **Toewijzingen** selecteert u **Voorwaarden** > **Apparaatplatforms**.
      
     1. Onder **Configureren** selecteert u **Ja**.
-    2. Op het tabblad **Opnemen** selecteert u **Alle platforms (inclusief niet-ondersteunde)** en vervolgens **Voltooid**. 
+    2. Op het tabblad **Opnemen** selecteert u **Elk apparaat** en vervolgens **Voltooid**. 
     3. Selecteer opnieuw **Voltooid**.
 
 6.  Selecteer in het deelvenster **Voorwaarden** de optie **Client-apps**.

@@ -1,12 +1,12 @@
 ---
 title: Snelstartgids - Een beleid voor wachtwoordcompatibiliteit maken voor Android-apparaten
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In deze snelstartgids gaat u Microsoft Intune gebruiken om de wachtwoordlengte in te stellen die is vereist voor Android-apparaten.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ae0c7b9a00c3e07bb49261ca1a20bd5ef5db15
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a16272f32b8546e7e9bb12a22f16235ab49aed
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397231"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799655"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Quickstart: Een beleid voor wachtwoordcompatibiliteit maken voor Android-apparaten
 
@@ -49,7 +49,8 @@ Voor deze snelstartgids gaat u Intune gebruiken om de gebruikers van Android ond
 3. Selecteer voor **Platform** de optie **Android**. 
 4. Selecteer **Instellingen** > **Systeembeveiliging** om de Android-blade **Systeembeveiliging** weer te geven.
 5. Klik op **Vereisen** naast **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten**.
-6. Voer **6** in naast **Minimale wachtwoordlengte**. 
+6. Selecteer **Ten minste numeriek** naast **Vereist wachtwoordtype**.
+7. Voer **6** in naast **Minimale wachtwoordlengte**. 
 
     ![Schermopname van het maken van een groep in Microsoft Intune](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 

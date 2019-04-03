@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/21/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d7d69c602471e8508744f2a00008294cbd335204
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565635"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358255"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Wijzigingenlogboek voor de API van Intune-datawarehouse
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Houd updates voor Intune-datawarehouse bij.
+
+## <a name="1903"></a>1903
+_Uitgebracht in maart 2019_
+
+### <a name="v10-changes-reflecting-back-to-beta"></a>V1.0 wijzigingen terug naar de bètaversie spiegelen
+Wanneer V1.0 is geïntroduceerd in 1808, verschilden het op een aantal belangrijke punten van de beta-API. In 1903 worden deze wijzigingen doorgevoerd in de bètaversie van de API. Als u belangrijke rapporten die gebruikmaken van de bètaversie van de API hebt, wordt aangeraden deze rapporten overschakelen naar V1.0 om te voorkomen dat belangrijke wijzigingen. Raadpleeg [API-versiegegevens](reports-api-url.md) voor meer informatie over de datawarehouse-API-versies en achterwaartse compatibiliteit. 
 
 ## <a name="1902"></a>1902 
 _Uitgebracht februari 2019_
@@ -42,7 +48,7 @@ Toegang tot uw Intune-datawarehouse bij het gebruik van Power BI Online de [Intu
 > Er zijn twee aanvullende filters die u op de app Intune-nalevingsbeleid toepassen kunt.
 
 #### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Aanvullende filters toevoegen aan de app Intune-nalevingsbeleid
-1. Open de [Intune-nalevingsbeleid (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) in uw browers web app.
+1. Open de [Intune-nalevingsbeleid (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) -app in uw webbrowser.
 2. Klik op **niet-compatibele apparaten** en selecteer **niet-compatibele** in de **complianceStatus** filter. 
 3. Klik op **onbekende apparaten** en selecteer **nog niet beschikbaar** in de **complianceStatus** filter. 
 
@@ -93,7 +99,7 @@ U kunt <code>$select</code> gebruiken als OData-queryparameter. De huidige versi
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>Nieuwe entiteiten in het Data Warehouse-gegevensmodel <!-- 2077804 -->
 
- - De entiteit [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) is toegevoegd. De **MobileAppDeviceUserInstallStatus** toont de installatiestatus van een mobiele app voor een bepaald apparaat en een bepaalde gebruiker.
+ - De entiteit [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md) is toegevoegd. De **MobileAppDeviceUserInstallStatus** toont de installatiestatus van een mobiele app voor een bepaald apparaat en een bepaalde gebruiker.
  - De entiteit [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) is toegevoegd. De entiteit **MobileAppInstallState** vertegenwoordigt de installatiestatus van een mobiele toepassing nadat deze is toegewezen aan een groep apparaten, gebruikers of beide. 
 
 ## <a name="1710"></a>1710

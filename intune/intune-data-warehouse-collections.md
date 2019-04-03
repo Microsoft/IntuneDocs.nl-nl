@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400480"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358314"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune-datawarehouse-verzamelingen
 
@@ -116,7 +116,7 @@ De volgende tabel geeft een overzicht van de toewijzingsstatus van nalevingsbele
 
 |  complianceStatus  |                       Beschrijving                      |
 |:------------------:|:------------------------------------------------------:|
-|    Onbekend         |    onbekend.                                                                        |
+|    Onbekend         |    Onbekend.                                                                        |
 |    Compliant       |    Voldoet aan het beleid.                                                                      |
 |    Noncompliant    |       Apparaat voldoet niet aan het beleid en heeft geen toegang tot bedrijfsresources.             |
 |    Conflict        |    Conflict met andere regels.                                                      |
@@ -281,7 +281,7 @@ De entiteit **deviceTypes** vertegenwoordigt het apparaattype waarnaar wordt ver
 | 12           | ISocConsumer      | iSoc Consumer-apparaat                                |
 | 13           | Unix              | UNIX-apparaat                                         |
 | 14           | MacMDM            | Mac OS X-apparaat dat wordt beheerd met de ingebouwde MDM-agent |
-| 15           | HoloLens          | Holo Lens-apparaat                                    |
+| 15           | HoloLens          | HoloLens-apparaat                                       |
 | 16           | SurfaceHub        | Surface Hub-apparaat                                  |
 | 17           | AndroidForWork    | Android-apparaat dat wordt beheerd met de Android-profieleigenaar  |
 | 18           | AndroidEnterprise | Android Enterprise-apparaat                          |
@@ -448,7 +448,7 @@ De entiteit **ManagementAgentTypes** vertegenwoordigt de agents die worden gebru
 | 5                     | EasIntuneClient                   | Het apparaat wordt beheerd door zowel Exchange Active Sync als de Intune-PC-agent |
 | 8                     | ConfigManagerClient               | Het apparaat wordt beheerd door de System Center Configuration Manager-agent     |
 | 10                    | ConfigurationManagerClientMdm     | Het apparaat wordt beheerd door Configuration Manager en MDM.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | Het apparaat wordt beheerd door Configuration Manager, MDM en EAS.               |
+| 11                    | ConfigurationManagerCLientMdmEas  | Het apparaat wordt beheerd door Configuration Manager, MDM en Exchange Active Sync.               |
 | 16                    | Onbekend                           | Onbekend type beheeragent                                              |
 | 32                    | Jamf                              | De apparaatkenmerken worden van Jamf opgehaald.                               |
 | 64                    | GoogleCloudDevicePolicyController |  Het apparaat wordt beheerd door Google's CloudDPC.                                 |
@@ -617,7 +617,7 @@ De entiteitverzameling **user** bevat gebruikersgegevens. Deze records bevatten 
 | UserKey                    | De unieke id van de gebruiker in het datawarehouse - surrogaatsleutel.                                                                                                                                                         | 123                                  |
 | UserId                     | De unieke id van de gebruiker, vergelijkbaar met UserKey, maar dit is een natuurlijke sleutel.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | Het e-mailadres van de gebruiker.                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | De UPN (user principal name) van de gebruiker.                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | De UPN (user principal name) van de gebruiker.                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | De weergavenaam van de gebruiker.                                                                                                                                                                                                      | Jan                                 |
 | IntuneLicensed             | Geeft aan of deze gebruiker een licentie heeft voor Intune                                                                                                                                                                              | Waar/onwaar                           |
 | IsDeleted                  | Geeft aan of alle licenties van de gebruiker zijn verlopen en of de gebruiker daarom uit Intune werd verwijderd. Deze markering verandert niet voor één record. In plaats daarvan wordt er een nieuwe record gemaakt voor een nieuwe gebruikersstatus. | Waar/onwaar                           |

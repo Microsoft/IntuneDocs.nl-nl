@@ -1,12 +1,12 @@
 ---
 title: Snelstartgids - Meldingen verzenden naar niet-compatibele apparaten
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In deze snelstartgids gebruikt u Microsoft Intune om e-mailmeldingen te verzenden naar niet-compatibele apparaten.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991127"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871430"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Quickstart: Meldingen verzenden naar niet-compatibele apparaten
 
@@ -40,7 +40,7 @@ Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor ee
 
 ## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
 
-Meld u aan bij de [Intune](https://aka.ms/intuneportal)-portal als [globale beheerder](users-add.md#types-of-administrators) of Intune-[servicebeheerder](users-add.md#types-of-administrators). 
+Meld u aan bij de [Intune](https://aka.ms/intuneportal)-portal als [globale beheerder](users-add.md#types-of-administrators) of Intune-[servicebeheerder](users-add.md#types-of-administrators). Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
 
 ## <a name="create-a-notification-message-template"></a>Een sjabloon voor een meldingsbericht maken
 
@@ -83,14 +83,13 @@ Via de volgende stappen kunt u een compatibiliteitsbeleid voor Windows 10-appara
 5. Stel **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten** in op **Vereisen**. Met deze beleidsinstelling geeft u aan of gebruikers een wachtwoord moeten invoeren om toegang te krijgen tot informatie op hun mobiele apparaat. 
 6. Stel **Minimale wachtwoordlengte** in op **6**. Met deze instelling bepaalt u het minimale aantal cijfers of tekens waaruit het wachtwoord moet bestaan.
 
-    ![Systeembeveiligingsinstellingen voor een nieuw compatibiliteitsbeleid](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
 7. Klik op **OK**, **OK** en **Maken** om uw compatibiliteitsbeleid te maken.
-8. Selecteer de naam van uw nieuwe beleid: **Compatibiliteit met Windows 10**.
-9. Selecteer **Eigenschappen** > **Actie voor niet-compatibiliteit** > **Toevoegen**.
-10. Controleer in de vervolgkeuzelijst **Actie** of **E-mailbericht verzenden naar eindgebruikers** is geselecteerd.
-11. Selecteer **Berichtsjabloon** > **Contoso-beheerder** > **Selecteren** om de berichtsjabloon te selcteren die u eerder in dit onderwerp hebt gemaakt.
-12. Selecteer **OK** > **OK** > **Opslaan** om uw wijzigingen op te slaan.
+8. Selecteer **Eigenschappen** > **Actie voor niet-compatibiliteit** > **Toevoegen**.
+9. Controleer in de vervolgkeuzelijst **Actie** of **E-mailbericht verzenden naar eindgebruikers** is geselecteerd.
+10. Selecteer **Berichtsjabloon** > **Contoso-beheerder** > **Selecteren** om de berichtsjabloon te selcteren die u eerder in dit onderwerp hebt gemaakt.
+11. Selecteer **TOEVOEGEN** > **OK** > **Opslaan** om uw wijzigingen op te slaan.
 
 ## <a name="assign-the-policy"></a>Wijs het beleid toe
 

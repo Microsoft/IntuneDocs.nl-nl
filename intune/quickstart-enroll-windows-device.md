@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 03/27/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6dfdf61159d899a81e1ef53a1aaa649c98833b0e
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389986"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871413"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Quickstart: Uw Windows 10-apparaat registreren
 
@@ -72,7 +72,7 @@ Voordat u uw Windows 10 Desktop inschrijft, moet u controleren welke versie van 
 
     ![Selecteer Werk- of school-account openen](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. Meld u aan bij Intune met uw werk- of schoolaccount en selecteer **Volgende**. Als u de snelstartgids [Een gebruiker maken en een licentie toewijzen] hebt gevolgd, kunt u zich aanmelden met het gebruikersaccount dat u hebt gemaakt.
+3. Meld u aan bij Intune met uw werk- of schoolaccount en selecteer **Volgende**. Als u de quickstart [Een gebruiker maken en een licentie toewijzen](quickstart-create-user.md) hebt gevolgd, kunt u zich aanmelden met het gebruikersaccount dat u hebt gemaakt.
 
     > [!NOTE]
     > Als u een '.onmicrosoft.com' hebt ingesteld, bevat het gebruikersaccount **.onmicrosoft.com** als onderdeel van het accountadres. 
