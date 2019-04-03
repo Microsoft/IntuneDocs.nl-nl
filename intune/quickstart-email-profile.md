@@ -1,12 +1,12 @@
 ---
 title: 'Snelstartgids: een e-mailprofiel voor apparaten maken voor iOS'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ontdek hoe u Microsoft Intune gebruikt om een e-mailprofiel voor apparaten te maken, zodat iOS-apparaten veilig verbinding kunnen maken met de e-mail van het bedrijf.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0c96ffdabca3a29b2e0ac5d0a26d5e23b0dabda
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b252c9d3d719847c8c0911b6cbce06c83bb4bf0e
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390434"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799279"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Quickstart: Een e-mailprofiel voor een apparaat voor iOS maken
 
@@ -33,7 +33,7 @@ Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor ee
 
 ## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
 
-Meld u aan bij [Intune](https://aka.ms/intuneportal) als globale beheerder of beheerder van een Intune-service. U gaat in Azure Portal naar Intune door **Alle services** > **Intune** te kiezen.
+Meld u aan bij [Intune](https://aka.ms/intuneportal) als globale beheerder of beheerder van een Intune-service. Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
 
 ## <a name="create-an-ios-email-profile"></a>Een e-mailprofiel voor iOS maken
 1. Selecteer in Intune de optie **Apparaatconfiguratie** en vervolgens **Profielen**.
