@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756799"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658546"
 ---
-# <a name="use-rbac-and-scope-tags-for-distributed-it"></a>RBAC en bereik tags gebruiken voor gedistribueerde IT
+# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken voor gedistribueerde IT
 
-U kunt op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken om ervoor te zorgen dat de juiste beheerders de juiste toegang en de zichtbaarheid van de juiste Intune-objecten hebben. Rollen bepalen welke toegang beheerders hebben op welke objecten. Bereiktags bepalen welke objecten die beheerders kunnen zien.
+U kunt op basis van de rol beheer- en scope-tags gebruiken om ervoor te zorgen dat de juiste beheerders de juiste toegang en de zichtbaarheid van de juiste Intune-objecten hebben. Rollen bepalen welke toegang beheerders hebben op welke objecten. Bereiktags bepalen welke objecten die beheerders kunnen zien.
 
 Laten we zeggen dat een beheerder van de regionale office Seattle de beleids- en Profielbeheerder rol is toegewezen. Wilt u deze beheerder om te zien en beheren van alleen de profielen en beleidsregels die alleen van toepassing op de Seattle-apparaten. U doet dit door u dat zou doen:
 
@@ -83,6 +83,21 @@ Laten we zeggen dat een beheerder van de regionale office Seattle de beleids- en
 3. Onder **labels selecteren**, kiest u de labels die u wilt toevoegen aan het profiel.
 4. Kies **Selecteer** > **OK** > **opslaan**.
 
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Een bereiktag toewijzen aan een configuratiebeleid voor apps
+Voor apparaten met **type apparaatregistratie** ingesteld op **beheerde apparaten**:
+1. Kies **Client-apps** > **App-configuratiebeleid** > Kies een configuratiebeleid voor apps.
+2. Kies **eigenschappen** > **bereik (Tags)** > Kies de labels die u wilt toewijzen aan het beleid.
+
+Voor apparaten met **type apparaatregistratie** ingesteld op **beheerde apps**:
+1. Kies **Client-apps** > **App-configuratiebeleid** > Kies een configuratiebeleid voor apps.
+2. Kies **bereik (Tags)** > Kies de labels die u wilt toewijzen aan het beleid.
+
+
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Een bereiktag toewijzen aan een iOS-app inrichtingsprofiel
+1. Kies in Intune **Client-apps** > **inrichtingsprofielen voor iOS-Apps** > een profiel kiezen.
+2. Kies **eigenschappen** > **bereik (Tags)** > Kies de labels die u wilt toewijzen aan het profiel.
+3. Kies **Selecteer** > **OK** > **opslaan**.
+
 ## <a name="scope-tag-details"></a>Bereik label details
 Wanneer u werkt met bereiktags, moet u deze gegevens:
 
@@ -96,20 +111,13 @@ Wanneer u werkt met bereiktags, moet u deze gegevens:
     - Het configuratiebeleid voor apps – beheerde apparaten
     - PowerShell-scripts
     - DEP-tokens
+    - Inrichtingsprofiel voor iOS-apps
 - Wanneer een beheerder een object in Intune maakt, worden alle bereiktags toegewezen aan die beheerder automatisch worden toegewezen aan het nieuwe object.
 - Intune RBAC niet van toepassing op Azure Active Directory-rollen. Dus hebben de rollen Intune-Service-beheerders en globale beheerders volledige beheerderstoegang tot Intune, ongeacht welke bereiktags die ze hebben.
 - Beheerders in een roltoewijzing met bereiktags ziet ook de Intune-objecten met geen bereiktags.
 - U kunt alleen een bereiktag die u in uw roltoewijzingen hebt toewijzen.
 - U kunt alleen de doelgroepen die worden vermeld in het bereik (groepen) van de roltoewijzing.
 - Als u een bereiktag toegewezen voor uw rol hebt, kunt u alle bereiktags op een Intune-object niet verwijderen. Ten minste één bereiktag is vereist.
-- Als een gebruiker meerdere roltoewijzingen heeft, worden machtigingen in deze roltoewijzingen als volgt uitbreiden naar verschillende objecten:
-    - Toegewezen machtigingen zijn alleen van toepassing op de objecten (zoals beleid of apps) in deze roltoewijzing bereik (groepen). Toegewezen machtigingen zijn niet van toepassing op objecten in andere roltoewijzingen, tenzij de andere toewijzing specifiek verleent.
-    - Andere machtigingen (zoals maken en lezen) toepassen op alle objecten van hetzelfde type (zoals alle beleidsregels of alle apps) in een van de toewijzingen van de gebruiker.
-    - Machtigingen voor objecten van verschillende typen (zoals beleid of apps), niet van toepassing aan elkaar. Een leesmachtiging voor een beleid, bijvoorbeeld, biedt geen een leesmachtiging voor apps in toewijzingen van de gebruiker.
-
-
-
-
 
 ## <a name="next-steps"></a>Volgende stappen
 
