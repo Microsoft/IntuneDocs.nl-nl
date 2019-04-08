@@ -1,6 +1,6 @@
 ---
 title: Softwarelicentieovereenkomsten voor pc's met de Intune-softwareclient beheren
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Gebruik Intune om licentieovereenkomsten te beheren voor software die is gekocht via Microsoft-volumelicentieovereenkomsten en voor software die op een andere manier is gekocht.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d79cf2e8d61de1737d3a47533fbf25976c32d7a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 92262a9d1f07b8756ced8788feee586ffa30088a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461206"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798798"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Licentieovereenkomsten voor Windows-pc-software in Microsoft Intune beheren
 

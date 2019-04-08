@@ -1,6 +1,6 @@
 ---
 title: Naslag voor beleidsentiteiten
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Naslagonderwerp voor de categorie Beleid van entiteitverzamelingen in de Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
 author: Erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af0c544540798a52dc018c749909da6cea50df6c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f168395be7f0656f18e9e44fe561e9ab3e2e6863
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566672"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799015"
 ---
 # <a name="reference-for-policy-entities"></a>Naslag voor beleidsentiteiten
 

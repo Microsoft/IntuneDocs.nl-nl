@@ -1,6 +1,6 @@
 ---
 title: Intune-datawarehouse-API
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: U kunt de Intune-datawarehouse-API gebruiken om rapporten te genereren die inzicht in de mobiele omgeving van uw bedrijf bieden.
 keywords: Intune-datawarehouse
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce06d1e5fafca484b0d5df080eac7c3f5b8de4f7
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: e730bc0de3023bd6c3954ae2e8344c6f68954f50
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068973"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798319"
 ---
 #  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune Data Warehouse-API
 

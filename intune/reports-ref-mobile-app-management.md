@@ -1,6 +1,6 @@
 ---
 title: Mobile App Management (MAM)
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Naslagonderwerp voor de categorie Mobile App Management van entiteitverzamelingen in de Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 524a4f39ba6a319f42ca23c7d85e84ffd86fce0d
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
-ms.translationtype: HT
+ms.openlocfilehash: 0e9f01ad981350f250e35961f9a41a62698061a1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358213"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799596"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Naslag voor MAM-entiteiten (Mobile Application Management)
 

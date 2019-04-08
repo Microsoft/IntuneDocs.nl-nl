@@ -1,12 +1,12 @@
 ---
 title: Gegevens ophalen uit de datawarehouse-API met een REST-client
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In dit onderwerp wordt beschreven hoe u gegevens kunt ophalen uit het Microsoft Intune-datawarehouse met behulp van een RESTful API.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e57d197cadf2ba6586aa39fdc5dbb9cddba554c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5aa85ee044eae5fba9dcb7c380a29dda727c6492
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566570"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871447"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Gegevens ophalen uit de Intune-datawarehouse-API met een REST-client
 
@@ -98,11 +98,11 @@ U hebt ook het eindpunt nodig. Om uw Data Warehouse-eindpunt te verkrijgen, hebt
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
 3. Selecteer **Intune Data Warehouse instellen** onder **Andere taken**.
-4. Kopieer de aangepaste url onder **Use third-party reporting services** (Rapportageservice van derde gebruiken). Het resultaat ziet er ongeveer als volgt uit: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. Kopieer de aangepaste url onder **Use third-party reporting services** (Rapportageservice van derde gebruiken). Het resultaat ziet er ongeveer als volgt uit: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 Het eindpunt heeft de volgende indeling: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
 
-De entiteit **datums** ziet er als volgt uit: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+De entiteit **datums** ziet er als volgt uit: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 
 Zie [Intune Data Warehouse API endpoint](reports-api-url.md) (Eindpunt van Intune-datawarehouse-API) voor meer informatie.
 
@@ -116,7 +116,7 @@ Om een nieuw toegangstoken voor Postman te verkrijgen, moet u de autorisatie-URL
 2.  Open Postman. Kies de HTTP-bewerking **GET**.
 3.  Plak de URL van het eindpunt in het adres. Het resultaat ziet er ongeveer als volgt uit:  
 
-    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4.  Kies het tabblad **Autorisatie** en selecteer **OAuth 2.0** in de lijst **Type**.
 5.  Selecteer **Nieuw toegangstoken ophalen**.
 6.  Controleer of u de callback-URL al aan uw app hebt toegevoegd in Azure. De callback-URL is `https://www.getpostman.com/oauth2/callback`.
@@ -197,7 +197,7 @@ Het volgende voorbeeld bevat een eenvoudige REST-client. De code gebruikt de kla
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
-   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta";
+   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0";
    var collectionName = "dates";
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");

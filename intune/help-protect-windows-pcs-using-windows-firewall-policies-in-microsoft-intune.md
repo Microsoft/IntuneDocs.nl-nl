@@ -1,6 +1,6 @@
 ---
 title: Firewall-beleid voor Windows-pc's
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune kan u helpen de pc’s die u beheert met de Intune-client op verschillende manieren te beveiligen, bijvoorbeeld door u te helpen de instellingen van Windows Firewall te configureren.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee84ca92d247a162653b398fd1332161fb887599
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b5edcfedcd03492d8634549147b70be14ffb742e
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461074"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798872"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune
 

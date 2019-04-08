@@ -1,6 +1,6 @@
 ---
 title: Gegevenslekken op niet-beheerde apparaten voorkomen
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Sta met Microsoft Intune toegang tot zakelijke gegevens op apparaten toe en beveilig gegevens tegen gegevenslekken.
 keywords: bescherming van gegevens voorkomt gegevenslekken op O365 Office 365-apparaten
 ms.author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4bbb6a09d9f81c5e5309e3ef04a63c8165a1f23
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 324187db4951ffb6b80e9cc488a2a0fb59f40a9a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461189"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799369"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Gegevenslekken op niet-beheerde apparaten voorkomen met Microsoft Intune
 
