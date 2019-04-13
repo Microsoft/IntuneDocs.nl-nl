@@ -1,5 +1,6 @@
 ---
-title: Problemen met Exchange-connectors oplossen| Microsoft Intune
+title: Problemen met Exchange Connector oplossen
+titleSuffix: Microsoft Intune
 description: Problemen met betrekking tot de Intune on-premises Exchange-connector oplossen.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2cbe4e213854c4dbf5cc29b8a05aec7fb0d46b3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 15108167b9f2495fb5c8d8257083606b439b0430
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460645"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292303"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Problemen met de Intune on-premises Exchange-connector oplossen
 
