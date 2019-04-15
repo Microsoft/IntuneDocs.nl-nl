@@ -1,5 +1,6 @@
 ---
-title: App-beveiligingsbeleid voor Windows-gegevensbescherming (WIP) maken en implementeren | Microsoft Intune
+title: App-beveiligingsbeleid voor Windows-gegevensbescherming (WIP) maken en dit implementeren
+titleSuffix: Microsoft Intune
 description: Met Microsoft Intune app-beveiligingsbeleid voor Windows-gegevensbescherming (WIP) maken en dit implementeren
 keywords: ''
 author: Erikre
@@ -9,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6494bbff9ca1c9d46c4af03ff90340fcca36ec97
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1b8257b315bc18b10e7c2c86e931af005e44730c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231567"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569763"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune
 
@@ -125,7 +127,8 @@ Nadat u de apps hebt toegevoegd die u wilt beveiligen met WIP, moet u een beveil
 
 WIP Learning is een rapport waarmee u uw apps met WIP-functionaliteit en uw voor WIP onbekende apps in de gaten kunt houden. Onbekende apps zijn apps die niet zijn geïmplementeerd door de IT-afdeling van uw organisatie. U kunt deze apps uit het rapport exporteren en toevoegen aan uw WIP-beleid om te voorkomen dat de productiviteit wordt onderbroken voordat WIP in de modus Blokkeren wordt afgedwongen.
 
-<!-- 1631908 --> Naast informatie over voor WIP geschikte apps kunt u een overzicht bekijken van de apparaten die zakelijke gegevens hebben gedeeld met websites. Met deze informatie kunt u bepalen welke websites er moeten worden toegevoegd aan WIP-beleid voor groepen en gebruikers. In het overzicht ziet u welke website-URL's worden gebruikt door apps waarvoor WIP is ingeschakeld.
+<!-- 1631908 -->
+Er wordt informatie over WIP-apps weergegeven en u kunt een overzicht bekijken van de apparaten die zakelijke gegevens hebben gedeeld met websites. Met deze informatie kunt u bepalen welke websites er moeten worden toegevoegd aan WIP-beleid voor groepen en gebruikers. In het overzicht ziet u welke website-URL's worden gebruikt door apps waarvoor WIP is ingeschakeld.
 
 Wanneer u met apps met WIP-functionaliteit en voor WIP onbekende apps werkt, wordt het aanbevolen dat u start met **Stil** of **Onderdrukkingen toestaan** als u met een kleine groep controleert of de juiste apps in de lijst met beschermde apps staan. Vervolgens kunt u uw uiteindelijke afdwingingsbeleid wijzigen via **Blokkeren**.
 

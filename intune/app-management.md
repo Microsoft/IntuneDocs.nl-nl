@@ -1,15 +1,16 @@
 ---
 title: Wat is appbeheer in Microsoft Intune?
-titlesuffix: ''
+titleSuffix: ''
 description: Hier vindt u meer informatie over de beheermogelijkheden voor client-apps per platform voor Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f2c5da7772ff137e44fead66f00fe34004bb1f4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 34807edabf99a107c259fdfae5e43db18084fb67
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850898"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59569061"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
@@ -44,7 +45,7 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Apps toevoegen en aan apparaten en gebruikers toewijzen | Ja | Ja | Ja | Ja | Ja |
 | Apps toewijzen aan apparaten die niet zijn geregistreerd met Intune | Ja | Ja | Nee | Nee | Nee |
-| Beleidsregels voor app-configuratie gebruiken om het opstartgedrag van apps te beheren | Nee | Ja | Nee | Nee | Nee |
+| Beleidsregels voor app-configuratie gebruiken om het opstartgedrag van apps te beheren | Ja | Ja | Nee | Nee | Nee |
 | Beleid gebruiken voor de inrichting van mobiele apps om verlopen apps te vernieuwen | Nee | Ja | Nee | Nee | Nee |
 | Bedrijfsgegevens in apps beveiligen met app-beveiligingsbeleid | Ja | Ja | Nee | Nee1 | Nee |
 | Alleen zakelijke gegevens verwijderen uit een geïnstalleerde app (app selectief wissen) | Ja | Ja | Nee | Ja | Ja |

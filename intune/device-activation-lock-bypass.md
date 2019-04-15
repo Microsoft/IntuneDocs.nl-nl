@@ -1,6 +1,6 @@
 ---
 title: Het iOS-activeringsslot overslaan met Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Meer informatie over het gebruik van Intune om het iOS-activeringslot over te slaan voor toegang tot vergrendelde apparaten.
 keywords: ''
 author: ErikjeMS
@@ -10,18 +10,19 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d44636baaa6b4be71ac6a80369286065e586293
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 406a08788663603340ab4af78217a07e68e66604
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237483"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568593"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Activeringsslot op iOS-apparaten onder supervisie overslaan met Intune
 

@@ -1,15 +1,16 @@
 ---
 title: Apps beheren die zijn gekocht via het iOS-volumeaankoopprogramma in Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Meer informatie over hoe u apps kunt synchroniseren die u via het volumeaankoopprogramma in de iOS Store hebt gekocht, hoe u deze apps in Microsoft Intune kunt beheren en hoe u het gebruik ervan kunt bijhouden.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 606fe0dfe7160d6fe61366db98b7f22a45216bd0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: dca219f1593265e0bf6447c054969548d5d79351
+ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229824"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59570634"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>iOS-apps beheren die zijn aangeschaft via een volumeaankoopprogramma met Microsoft Intune
 

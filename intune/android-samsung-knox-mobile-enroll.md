@@ -1,6 +1,6 @@
 ---
 title: Android-apparaten automatisch registreren met behulp van de Knox Mobile Enrollment van Samsung
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Meer informatie over de registratie van Android-apparaten met behulp van Samsung KME
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7bb2b8c57c8aa3f53a04150ce0ad692b0149dee8
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 3f753b959d7b2c64358abd92f4276a8e7f55c0f6
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235941"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567644"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android-apparaten automatisch registreren met behulp van de Knox Mobile Enrollment van Samsung
 

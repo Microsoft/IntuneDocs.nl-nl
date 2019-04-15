@@ -1,6 +1,6 @@
 ---
 title: Beveiligingsbeleid voor apps configureren bij een Intune-migratie
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In dit artikel wordt beschreven welke stappen u moet uitvoeren om het beveiligingsbeleid voor apps te configureren bij een Microsoft Intune-migratie.
 keywords: ''
 author: Erikre
@@ -10,18 +10,19 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 93cda587-bf56-4d41-b123-9fe203fad788
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cf2ccc9dd8db4457aa5f17738b1f42720735890
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 076750334c8faba6e9a99368d7af682b10de8962
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236965"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567358"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Beveiligingsbeleid voor apps configureren (optioneel)
 

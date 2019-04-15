@@ -1,5 +1,6 @@
 ---
-title: Windows Information Protection-instellingen in Microsoft Intune | Microsoft Intune
+title: Windows Information Protection-instellingen in Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In dit onderwerp vindt u meer informatie over de Microsoft Intune-instellingen die u kunt gebruiken om Windows-gegevensbescherming te beheren.
 keywords: ''
 author: brenduns
@@ -9,18 +10,19 @@ ms.date: 01/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6a5dea2075def1d7a30fdebc5722c4117a1579f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: fc3684a04611e0b7ec8cd17cb5cdf428c1150a55
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229629"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570374"
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Windows Information Protection configureren in Microsoft Intune
 

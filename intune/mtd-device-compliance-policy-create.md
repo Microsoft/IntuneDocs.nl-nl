@@ -1,5 +1,6 @@
 ---
-title: Een MTD-nalevingsbeleid voor apparaten maken met Microsoft Intune | Microsoft Intune
+title: Een MTD-nalevingsbeleid voor apparaten maken met Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Maak een Intune-nalevingsbeleid voor apparaten waarbij gebruik wordt gemaakt van de bedreigingsniveaus van uw MTD-partner om te bepalen of een mobiel apparaat toegang mag hebben tot bedrijfsresources.
 keywords: ''
 author: brenduns
@@ -9,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 876d9afb21d4f1fc00eebc21226eed189597fd17
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: fe3561bd664842e79f50f738307ce6a026464565
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237534"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569607"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>MTD-nalevingsbeleid (Mobile Threat Defense) voor apparaten maken met Intune
 

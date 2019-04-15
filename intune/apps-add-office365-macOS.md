@@ -1,6 +1,6 @@
 ---
 title: Office 365 installeren op macOS-apparaten met Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Meer informatie over hoe u Microsoft Intune kunt gebruiken om Office 365-apps op macOS-apparaten te installeren.
 keywords: ''
 author: Erikre
@@ -10,6 +10,7 @@ ms.date: 02/28/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8b837d129f8e2eb69f4dd1cb29af3b4df66f93e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 2104d35a179c324bda8455f27e090cadbcaf5e8c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231607"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567332"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Office 365 toewijzen aan macOS-apparaten met Microsoft Intune
 
