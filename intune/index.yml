@@ -4,138 +4,146 @@ title: Documentatie voor Microsoft Intune
 metadata:
   document_id: 99e91b60-d6a5-44a8-908f-442161fbb077
   title: Documentatie voor Microsoft Intune
-  description: Ga snel aan de slag met Microsoft Intune. Gebruik de in de cloud gebaseerde service voor het beheer van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) om uw werknemers in staat te stellen om productief te zijn terwijl uw zakelijke gegevens veilig blijven.
-  keywords: bescherm, bedrijf, gegevens, Azure, Intune, Emm, apparaat, app, beheer
+  description: 'Ga snel aan de slag met Microsoft Intune. Gebruik de in de cloud gebaseerde service voor het beheer van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) om uw werknemers in staat te stellen om productief te zijn terwijl uw zakelijke gegevens veilig blijven.'
+  keywords: 'bescherm, bedrijf, gegevens, Azure, Intune, Emm, apparaat, app, beheer'
   author: dougeby
   ms.author: dougeby
   manager: dougeby
-  ms.date: 10/31/2017
+  ms.date: 02/25/2019
   ms.topic: landing-page
-  ms.devlang: na
+  ms.devlang: null
   ms.service: microsoft-intune
-  ms.openlocfilehash: f359e36b07334866a1913e5eebd37a0960fc677d
-  ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
-  ms.translationtype: HT
-  ms.contentlocale: nl-NL
-  ms.lasthandoff: 03/22/2018
-  ms.locfileid: "30017806"
 sections:
-- items:
-  - type: markdown
-    text: Ga snel aan de slag met Microsoft Intune. Gebruik de in de cloud gebaseerde service voor het beheer van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) om uw werknemers in staat te stellen om productief te zijn terwijl uw zakelijke gegevens veilig blijven. Intune is geïntegreerd met Azure Active Directory voor identiteits- en toegangsbeheer en met Azure Information Protection voor gegevensbeveiliging.
-- items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+  - items:
+      - type: markdown
+        text: 'Ga snel aan de slag met Microsoft Intune. Gebruik de in de cloud gebaseerde service voor het beheer van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) om uw werknemers in staat te stellen om productief te zijn terwijl uw zakelijke gegevens veilig blijven. Intune is geïntegreerd met Azure Active Directory voor identiteits- en toegangsbeheer en met Azure Information Protection voor gegevensbeveiliging.'
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: introduction-intune.md
+            html: <p>Meer informatie over wat Intune doet en hoe het werkt.</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_overview.svg'
+            title: Wat is Intune?
+          - href: free-trial-sign-up.md
+            html: <p>Probeer Intune met deze eenvoudige zelfstudie.</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
+            title: Aan de slag
+          - href: get-support.md
+            html: <p>Informatie over het maken van een ondersteuningsticket en hulp vragen wanneer u deze nodig hebt.</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_support.svg'
+            title: Ondersteuning krijgen
+          - href: whats-new.md
+            html: <p>Ontdek wat er deze week nieuw is in Intune.</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_whats-new.svg'
+            title: Wat is er nieuw?
+  - title: Nieuwe artikelen en blogberichten
     items:
-    - href: introduction-intune.md
-      html: <p>Meer informatie over wat Intune doet en hoe het werkt.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
-      title: Wat is Intune?
-    - href: get-started-evaluation.md
-      html: <p>Ontdek met deze eenvoudige zelfstudie hoe Intune werkt.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
-      title: Aan de slag
-    - href: get-support.md
-      html: <p>Informatie over het maken van een ondersteuningsticket en hulp vragen wanneer u deze nodig hebt.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_support.svg
-      title: Ondersteuning krijgen
-    - href: whats-new.md
-      html: <p>Ontdek wat er deze week nieuw is in Intune.</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
-      title: Wat is er nieuw?
-- title: Nieuwe artikelen en blogberichten
-  items:
-  - type: paragraph
-    text: Lees de nieuwste en beste informatie die u moet kennen.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: paragraph
+        text: Lees de nieuwste en beste informatie die u moet kennen.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: what-is-intune.md
+            title: Meer informatie over Intune in de Azure-portal
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_portal.svg'
+          - href: ui-changes.md
+            title: Ontdek waar uw Intune-functies zich bevinden in de Azure-portal
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_guide.svg'
+          - href: high-level-architecture.md
+            title: Bekijk de architectuur van Intune in hoofdlijnen
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_architecture.svg'
+          - href: enrollment-autopilot.md
+            title: Ondersteuning Windows AutoPilot Deployment-programma in Microsoft Intune
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_generic-database.svg'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2018/09/12/support-tip-intune-support-for-ios-12/'
+            title: '[Blog] Ondersteuningstip: Intune-ondersteuning voor iOS 12'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_blog.svg'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2018/09/04/coming-soon-new-intune-support-experience-for-premier-customers/'
+            title: '[Blog] Nieuwe Intune-ondersteuningservaring voor Premier-klanten'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_blog.svg'
+  - title: Video 's
     items:
-    - href: what-is-intune.md
-      title: Meer informatie over Intune in de Azure-portal
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
-    - href: ui-changes.md
-      title: Ontdek waar uw Intune-functies zich bevinden in de Azure-portal
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
-    - href: high-level-architecture.md
-      title: Bekijk de architectuur van Intune in hoofdlijnen
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
-    - href: enrollment-autopilot.md
-      title: Ondersteuning Windows AutoPilot Deployment-programma in Microsoft Intune
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_generic-database.svg
-    - href: https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/
-      title: '[Blog] Verbeteringen in de beveiliging van de Intune-service '
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
-    - href: https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/
-      title: '[Blog] De portal voor problemen oplossen vergemakkelijkt het diagnosticeren en oplossen van problemen van eindgebruikers'
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
-- title: Video 's
-  items:
-  - type: markdown
-    text: '>[!VIDEO https://www.youtube.com/embed/FpkCI6xmsE4]'
-  - type: markdown
-    text: '>[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]'
-- title: Artikelen over planning
-  items:
-  - type: list
-    style: unordered
+      - type: markdown
+        text: '>[!VIDEO https://www.youtube.com/embed/offk-KH7eIA]'
+      - type: paragraph
+        text: ' '
+      - type: markdown
+        text: '>[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]'
+  - title: Gratis Intune-training
     items:
-    - html: <a href="/intune/planning-guide">Handleiding voor het plannen, ontwerpen en toepassen van een Intune-implementatie</a>
-    - html: <a href="/intune/migration-guide">Migratiehandleiding voor Intune</a>
-- title: Artikelen met procedures
-  items:
-  - type: list
-    style: unordered
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 1
+        items:
+          - href: 'https://www.pluralsight.com/courses/windows-10-configuring-intune-creators'
+            title: 'Windows 10 configureren: Microsoft Intune plannen en implementeren'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg'
+  - title: Artikelen over planning
     items:
-    - html: <a href="/intune/device-enrollment">Apparaten inschrijven</a>
-    - html: <a href="/intune/device-management">Apparaten beheren</a>
-    - html: <a href="/intune/app-management">Apps beheren</a>
-    - html: <a href="/intune/device-profiles">Apparaten configureren</a>
-    - html: <a href="/intune/device-compliance-get-started">Apparaatcompatibiliteit instellen</a>
-    - html: <a href="/intune/conditional-access">Voorwaardelijke toegang instellen</a>
-    - html: <a href="/intune/app-protection-policy">Apps beveiligen</a>
-    - html: <a href="/intune/mobile-threat-defense">Mobile Threat Defense instellen</a>
-    - html: <a href="/intune/network-access-control-integrate">Netwerktoegangsbeheer integreren</a>
-    - html: <a href="/intune/role-based-access-control">Rollen beheren</a>
-    - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Pc's beheren met de Intune-softwareclient</a>
-- title: Artikelen over probleemoplossing
-  items:
-  - type: list
-    style: unordered
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="/intune/planning-guide">Handleiding voor het plannen, ontwerpen en toepassen van een Intune-implementatie</a>'
+          - html: <a href="/intune/migration-guide">Migratiehandleiding voor Intune</a>
+  - title: Artikelen met procedures
     items:
-    - html: <a href="/intune/help-desk-operators">Gebruikers helpen met behulp van de portal voor probleemoplossing</a>
-    - html: <a href="/intune/known-issues">Bekende problemen met Intune</a>
-    - html: <a href="/intune/get-support">Ondersteuning krijgen</a>
-- title: Artikelen over ontwikkeling en aanpassing
-  items:
-  - type: list
-    style: unordered
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/device-enrollment">Apparaten inschrijven</a>
+          - html: <a href="/intune/device-management">Apparaten beheren</a>
+          - html: <a href="/intune/app-management">Apps beheren</a>
+          - html: <a href="/intune/device-profiles">Apparaten configureren</a>
+          - html: <a href="/intune/device-compliance-get-started">Apparaatcompatibiliteit instellen</a>
+          - html: <a href="/intune/conditional-access">Voorwaardelijke toegang instellen</a>
+          - html: <a href="/intune/app-protection-policy">Apps beveiligen</a>
+          - html: <a href="/intune/mobile-threat-defense">Mobile Threat Defense instellen</a>
+          - html: <a href="/intune/network-access-control-integrate">Netwerktoegangsbeheer integreren</a>
+          - html: <a href="/intune/role-based-access-control">Rollen beheren</a>
+          - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Pc's beheren met de Intune-softwareclient</a>
+  - title: Artikelen over probleemoplossing
     items:
-    - html: <a href="/intune/custom-settings-configure">Aangepaste apparaatinstellingen configureren</a>
-    - html: <a href="/intune/apps-prepare-mobile-application-management">Line-of-business (LOB)-apps voorbereiden met de Intune App Wrapper Tool</a>
-    - html: <a href="/intune/app-sdk">LOB-apps voorbereiden met de met de Intune App SDK</a>
-    - html: <a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Werken met Intune in Microsoft Graph</a>
-    - html: <a href="/intune/reports-nav-intune-data-warehouse">Intune-datawarehouse-API</a>
-- title: Andere resources
-  items:
-  - type: list
-    style: unordered
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/help-desk-operators">Gebruikers helpen met behulp van de portal voor probleemoplossing</a>
+          - html: <a href="/intune/known-issues">Bekende problemen met Intune</a>
+          - html: <a href="/intune/get-support">Ondersteuning krijgen</a>
+  - title: Artikelen over ontwikkeling en aanpassing
     items:
-    - html: <a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">Meer dan 150 licenties? Maak gebruik van uw FastTrack-voordelen</a>
-    - html: <a href="https://blogs.technet.microsoft.com/enterprisemobility/">Lees de Enterprise Mobility and Security Blog</a> (Engelstalig)
-    - html: <a href="https://blogs.technet.microsoft.com/intunesupport/">Hulp vragen bij de Intune-ondersteuningsblog</a>
-    - html: <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">Feedback geven over Intune via UserVoice</a>
-    - html: <a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">Vragen stellen of beantwoorden op het Intune-discussieforum</a>
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/custom-settings-configure">Aangepaste apparaatinstellingen configureren</a>
+          - html: <a href="/intune/apps-prepare-mobile-application-management">Line-of-business (LOB)-apps voorbereiden met de Intune App Wrapper Tool</a>
+          - html: <a href="/intune/app-sdk">LOB-apps voorbereiden met de met de Intune App SDK</a>
+          - html: '<a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Werken met Intune in Microsoft Graph</a>'
+          - html: <a href="/intune/reports-nav-intune-data-warehouse">Intune-datawarehouse-API</a>
+  - title: Andere resources
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">Meer dan 150 licenties? Maak gebruik van uw FastTrack-voordelen</a>'
+          - html: '<a href="https://docs.microsoft.com/microsoft-365">Maak kennis met Microsoft 365, een complete oplossing met Intune</a>'
+          - html: '<a href="https://blogs.technet.microsoft.com/enterprisemobility/">Lees de Enterprise Mobility and Security Blog</a> (Engelstalig)'
+          - html: '<a href="https://blogs.technet.microsoft.com/intunesupport/">Hulp vragen bij de Intune-ondersteuningsblog</a>'
+          - html: '<a href="https://microsoftintune.uservoice.com/forums/291681-ideas">Feedback geven over Intune via UserVoice</a>'
+          - html: '<a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">Vragen stellen of beantwoorden op het Intune-discussieforum</a>'
