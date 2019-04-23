@@ -1,24 +1,17 @@
-items:
 - name: Apparaatbeheer
   tocHref: /intune/
   topicHref: /intune/index
   items:
-  - name: Intune
-    tocHref: /enterprise-mobility-security/intune/index
-    topicHref: /device-mgmt/index
-  - name: Help voor Intune-gebruikers
-    tocHref: /intune-user-help/
-    topicHref: /intune-user-help
+    - name: Intune
+      tocHref: /enterprise-mobility-security/intune/index
+      topicHref: /device-mgmt/index
+    - name: Help voor Intune-gebruikers
+      tocHref: /intune-user-help/
+      topicHref: /intune-user-help
 - name: Apparaatbeheer
   tocHref: /azure/
   topicHref: /azure/index
   items:
-  - name: Azure Active Directory
-    tocHref: /azure/active-directory/
-    topicHref: /azure/active-directory/
-ms.openlocfilehash: 91b26562d216695baee982b4c57b2884d3b2facc
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
-ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564479"
+    - name: Azure Active Directory
+      tocHref: /azure/active-directory/
+      topicHref: /azure/active-directory/
