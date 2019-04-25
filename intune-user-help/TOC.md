@@ -8,10 +8,12 @@
 
 ## [Aanmelden bij de bedrijfsportal](sign-in-to-the-company-portal.md)
 
-## [Uw Android-apparaat gebruiken](using-your-android-device-with-intune.md)
-### [Wat gebeurt er wanneer u een Android-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-### [Uw apparaat inschrijven](enroll-your-device-in-Intune-android.md)
-#### [Een apparaat inschrijven bij Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+## Uw Android-apparaat gebruiken
+### [Redenen om uw Android-apparaat in te schrijven](why-enroll-android-device.md)
+### Uw apparaat inschrijven
+#### [Uw Android-apparaat inschrijven](enroll-device-android-company-portal.md)  
+#### [Inschrijven met Android-werkprofiel](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Inschrijven met Microsoft Intune-app](enroll-device-android-microsoft-intune-app.md)
 ### [Beheerde apps op een apparaat gebruiken](use-managed-apps-on-your-device-android.md)
 ### [Een apparaat versleutelen](encrypt-your-device-android.md)
 ### [Een pincode of wachtwoord instellen](set-your-pin-or-password-android.md)
@@ -23,16 +25,15 @@
 #### [De inschrijving van het apparaat ongedaan maken](unenroll-your-device-from-intune-android.md)
 #### [De registratie van een apparaat ongedaan maken als u de gebruiksvoorwaarden hebt afgewezen](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 
-### [Veelvoorkomende problemen met Android oplossen](troubleshoot-your-device-android.md)
+### Veelvoorkomende problemen met Android oplossen
 #### [Apparaatcompatibiliteit controleren](check-compliance-on-your-device-android.md)
 #### [Veelvoorkomende problemen met Samsung Knox oplossen](samsung-knox-errors-android.md)
 #### [Uw apparaat bijwerken voor de installatie van Outlook](update-device-outlook-android.md)
 
-#### Logboeken gebruiken om problemen op te lossen
+#### Logboekregistratie
 ##### [Uitgebreide logboekregistratie inschakelen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-##### [Logboeken via e-mail verzenden](send-logs-to-your-it-admin-by-email-android.md)
+##### [Logboeken uploaden en e-mailen](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Logboeken met een USB-kabel verzenden](send-logs-to-your-it-admin-using-cable-android.md)
-##### [Inschrijvingfouten verzenden](send-enrollment-errors-to-your-it-admin-android.md)
 ##### [Fouten naar Microsoft verzenden](send-logs-to-microsoft-android.md)
 
 ### Vragen voor het besturingssysteem
