@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f4a8e873c48ceb59bfb8ac98fec9a29fa51d6cd3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512225"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Zelfstudie: Exchange Online e-mail beschermen op beheerde apparaten
 Hier vindt u meer informatie over het gebruik van het nalevingsbeleid voor apparaten met voorwaardelijke toegang. Hiermee kunt u ervoor zorgen dat iOS-apparaten uitsluitend toegang tot Exchange Online e-mail hebben als ze door Intune worden beheerd en een goedgekeurde e-mailapplicatie gebruiken. 

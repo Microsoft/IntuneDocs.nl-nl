@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9cf507ba470013bddf4809b6ad6ad54b4cb52d9d
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59569425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507239"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-connector met Intune
 

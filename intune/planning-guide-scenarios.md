@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 69a4ee29a6d35623d6269a94a9c1b4fc7a1f956f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512609"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Gebruiksscenario's voor het beheer van mobiele apparaten identificeren
 

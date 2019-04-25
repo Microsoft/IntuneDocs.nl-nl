@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3b499f3171910f28a2d190d28e8ab6e945fa463a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511265"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Opslag en verwerking van gegevens in Intune
 

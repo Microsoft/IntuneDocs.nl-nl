@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 30e1ae80ccfdc94bf352b9596df5ea4b0752d43a
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "59567020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490175"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Uitzonderingen maken voor het gegevensoverdrachtbeleid van Intune MAM (Mobile Application Management)
 
