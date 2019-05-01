@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e51c13136b5dd79ba9ff395008c6a8cb3e67e9e4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61515508"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Apparaten die zijn gekoppeld aan Hybrid Azure AD implementeren met Intune en Windows Autopilot (preview)
 U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn gekoppeld aan Hybrid Azure Active Directory (Azure AD). Volg hiervoor de stappen in dit artikel.
@@ -36,6 +37,7 @@ De te registreren apparaten moeten ook voldoen aan de volgende voorwaarden:
 - Ze moeten toegang hebben tot internet.
 - Ze moeten toegang hebben tot uw Active Directory (VPN-verbinding wordt niet ondersteund).
 - Doorloop de OOBE (Out-of-Box Experience).
+- Zorg ervoor dat u de domeincontroller van het domein dat u probeert samen te voegen kunt pingen.
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Automatische inschrijving voor Windows 10 instellen
 
@@ -119,7 +121,7 @@ De Intune-connector voor Active Directory moet worden geïnstalleerd op een comp
 
 ### <a name="configure-web-proxy-settings"></a>Webproxyinstellingen configureren
 
-Als u in uw netwerkomgeving over een webproxy beschikt, zorgt u ervoor dat de Intune-connector voor Active Directory goed werkt door te verwijzen naar [Werken met bestaande on-premises proxyservers](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+Als u in uw netwerkomgeving over een webproxy beschikt, zorgt u ervoor dat de Intune-connector voor Active Directory goed werkt door te verwijzen naar [Werken met bestaande on-premises proxyservers](autopilot-hybrid-connector-proxy.md).
 
 
 ## <a name="create-a-device-group"></a>Een apparaatgroep maken
@@ -210,6 +212,9 @@ Het duurt ongeveer 15 minuten voordat de status van het apparaatprofiel is gewij
 1. Selecteer **OK** > **Maken**.  
     Het profiel wordt gemaakt en weergegeven in de lijst.
 1. Als u het profiel wilt toewijzen, volgt u de stappen onder [Een apparaatprofiel toewijzen](device-profile-assign.md#assign-a-device-profile). 
+
+> [!NOTE]
+> De naamgevingsmogelijkheden voor Windows Autopilot voor Hybrid Azure AD Join bieden geen ondersteuning voor variabelen zoals %SERIAL% en ondersteunen alleen voorvoegsels voor de computernaam.
 
 ## <a name="next-steps"></a>Volgende stappen
 

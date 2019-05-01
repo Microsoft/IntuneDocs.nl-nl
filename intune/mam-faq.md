@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69cc0d732c9dc850d55acedf4e6dbae0f43f350a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506811"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
@@ -62,7 +63,7 @@ Alle apps die zijn geïntegreerd met de [Intune App SDK](/intune/app-sdk) of die
 
 - Er moet een licentie voor Microsoft Intune Azure aan het Azure Active Directory-account van de eindgebruiker zijn toegewezen. Zie [Intune-licenties beheren](/intune/licenses-assign) voor informatie over het toewijzen van Intune-licenties aan eindgebruikers.
 
-- De eindgebruiker moet behoren tot een beveiligingsgroep waarop een beleidsregel voor de beveiliging van apps is gericht. Dezelfde beleidsregel voor de beveiliging van apps moet ook zijn gericht op de specifieke app die wordt gebruikt. Beleidsregels voor de beveiliging van apps kunnen worden gemaakt en geïmplementeerd in de Intune-console in [Azure Portal](https://portal.azure.com). Beveiligingsgroepen kunnen op dit moment worden gemaakt in de [Office-portal](https://portal.office.com).
+- De eindgebruiker moet behoren tot een beveiligingsgroep waarop een beleidsregel voor de beveiliging van apps is gericht. Dezelfde beleidsregel voor de beveiliging van apps moet ook zijn gericht op de specifieke app die wordt gebruikt. Beleidsregels voor de beveiliging van apps kunnen worden gemaakt en geïmplementeerd in de Intune-console in [Azure Portal](https://portal.azure.com). Beveiligingsgroepen kunnen op dit moment worden gemaakt in het [Microsoft 365-beheercentrum](https://admin.microsoft.com).
 
 - De eindgebruiker moet zich bij de app aanmelden met zijn AAD-account.
 
@@ -77,7 +78,7 @@ Alle apps die zijn geïntegreerd met de [Intune App SDK](/intune/app-sdk) of die
 
 **Wat zijn de aanvullende vereisten voor het gebruik van de apps [Word, Excel en PowerPoint](https://products.office.com/business/office)?**
 
-- De eindgebruiker moet een licentie voor [Office 365 Business of Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) aan zijn Azure Active Directory-account hebben gekoppeld. Het abonnement moet de Office-apps voor mobiele apparaten bevatten en kan een cloudopslagaccount met [OneDrive voor Bedrijven](https://onedrive.live.com/about/business/) bevatten. Office 365-licenties kunnen aan de hand van de volgende [instructies](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) worden toegewezen in de [Office-portal](https://portal.office.com).
+- De eindgebruiker moet een licentie voor [Office 365 Business of Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) aan zijn Azure Active Directory-account hebben gekoppeld. Het abonnement moet de Office-apps voor mobiele apparaten bevatten en kan een cloudopslagaccount met [OneDrive voor Bedrijven](https://onedrive.live.com/about/business/) bevatten. Office 365-licenties kunnen aan de hand van de volgende [instructies](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) worden toegewezen in het [Microsoft 365-beheercentrum](https://admin.microsoft.com).
 
 - De eindgebruiker moet een beheerde locatie hebben die is geconfigureerd met de gedetailleerde functie voor 'opslaan als', onder de instelling 'Opslaan als voorkomen' van het beveiligingsbeleid voor toepassingen. Als bijvoorbeeld OneDrive de beheerde locatie is, moet de [OneDrive](https://onedrive.live.com/about/)-app worden geconfigureerd in de Word-, Excel- of PowerPoint-app van de eindgebruiker.
 
@@ -170,6 +171,27 @@ Het Intune-app-beveiligingsbeleid voor toegang wordt in een bepaalde volgorde to
 
 Wanneer u te maken hebt met verschillende soorten instellingen, krijgt een app-versievereiste voorrang, gevolgd door de versievereiste van het Android-besturingssysteem en de versievereiste van de Android-patch. Vervolgens worden eventuele waarschuwingen voor alle typen instellingen in dezelfde volgorde gecontroleerd.
 
+**Intune-app-beveiligingsbeleid biedt beheerders de mogelijkheid om eindgebruikers te verplichten om aan de SafetyNet Attestation van Google voor Android-apparaten te voldoen. Hoe vaak wordt een nieuwe SafetyNet Attestation-resultaat naar de service verzonden?** <br><br> Er wordt een nieuwe Google Play-servicebepaling naar de IT-beheerder gerapporteerd, volgens een interval die door de Intune-service wordt bepaald. Hoe vaak de serviceaanroep wordt uitgevoerd, wordt vertraagd door de belasting. Deze waarde wordt daarom intern onderhouden en kan niet worden geconfigureerd. Elke actie voor de Google SafetyNet Attestation-instelling die door een IT-beheerder is geconfigureerd, wordt uitgevoerd op basis van het meest recent gerapporteerde resultaat naar de Intune-service op het moment van de voorwaardelijke start. Als er geen gegevens zijn, wordt toegang verleend als er geen andere voorwaardelijke opstartcontroles zijn mislukt, en start de Google Play Store-cyclus voor het bepalen van de attestation-resultaten in de back-end en wordt de gebruiker asynchroon gevraagd of het apparaat is mislukt. Als er verouderde gegevens zijn, wordt toegang geblokkeerd of toegestaan op basis van het laatst gerapporteerde resultaat, en start ook de Google Play Store-cyclus voor het bepalen van de attestation-resultaten en wordt de gebruiker asynchroon gevraagd of het apparaat is mislukt.
+
+**Intune-app-beveiligingsbeleid biedt beheerders de mogelijkheid om eindgebruikers te verplichten om signalen te verzenden via de Verify Apps-API van Google voor Android-apparaten. Hoe kunnen eindgebruikers de app-scan inschakelen zodat toegang niet voor hen als gevolg hiervan wordt geblokkeerd?**<br><br> De instructies hiervoor kunnen per apparaat enigszins verschillen. Bij het algemene proces gaat u naar de Google Play Store en klikt u op **Mijn apps en games**. Klik vervolgens op het resultaat van de laatste app-scan om naar het menu Play Protect te gaan. Zorg ervoor dat de wisselknop voor **Apparaat scannen op beveiligingsrisico's** is ingesteld op Aan.
+
+**Wat wordt er op Android-apparaten precies gecontroleerd met de SafetyNet Attestation-API van Google? Wat is het verschil tussen de configureerbare waarden van Basisintegriteit controleren en Basisintegriteit en gecertificeerde apparaten controleren?** <br><br>
+Intune gebruikt Google Play Protect SafetyNet-API's om aan onze bestaande rootdetectiecontroles toe te voegen voor niet-ingeschreven apparaten. Google heeft deze API-set ontwikkeld en onderhouden die door Android-apps kan worden gebruikt als deze niet op geroote apparaten moeten worden uitgevoerd. Dit is bijvoorbeeld opgenomen in de Android Pay-app. Hoewel Google niet de volledige rootdetectiecontroles die plaatsvinden openbaar deelt, verwachten we wel dat deze API's gebruikers detecteren die hun apparaten hebben geroot. Toegang van deze gebruikers kan vervolgens worden geblokkeerd, of hun zakelijke accounts kunnen worden gewist uit via beleid ingeschakelde apps. Bij Basisintegriteit controleren ziet u de algemene integriteit van het apparaat. Geroote apparaten, emulators, virtuele apparaten en apparaten met zichtbare sabotagesporen voldoen niet aan de basisintegriteit. Bij Basisintegriteit en gecertificeerde apparaten controleren krijgt u informatie over de compatibiliteit van het apparaat met de services van Google. Alleen niet-aangepaste apparaten die door Google zijn gecertificeerd, voldoen aan deze controle. De volgende apparaten zullen niet voldoen:
+* Apparaten die niet aan de basisintegriteit voldoen
+* Apparaten met een ontgrendelde bootloader
+* Apparaten met een aangepaste systeemkopie/ROM
+* Apparaten waarvoor de fabrikant geen Google-certificering heeft aangevraagd of die niet aan de Google-certificering voldoen 
+* Apparaten waarbij de systeemkopie rechtstreeks vanuit de bronbestanden van het Android open source-programma zijn is gemaakt
+* Apparaten met een preview-versie van de systeemkopie voor de bètaversie/ontwikkelaars
+
+Raadpleeg [De documentatie van Google over SafetyNet Attestation](https://developer.android.com/training/safetynet/attestation) voor technische informatie.
+
+**In het gedeelte Voorwaardelijke start staan twee vergelijkbare controles wanneer er een Intune-app-beveiligingsbeleid voor Android-apparaten wordt gemaakt. Moet ik de instelling SafetyNet Attestion voor apparaten of de instelling Jailbroken/geroote apparaten vereisen?** <br><br>
+Voor de SafetyNet-API-controles van Google Play is het vereist dat eindgebruikers online zijn voor ten minste de periode waarin de volledige cyclus voor het bepalen van de attestation-resultaten wordt uitgevoerd. Als eindgebruikers offline zijn, kunnen IT-beheerders er alsnog van uitgaan dat voor een resultaat de instelling Jailbroken/geroote apparaten wordt vereist. Dit gezegd hebbende: als de eindgebruiker te lang offline is geweest, wordt de waarde Offlinerespijtperiode geactiveerd en wordt de toegang tot alle werk- of schoolgegevens geblokkeerd zodra die timerwaarde is bereikt, tot de netwerktoegang weer beschikbaar is. Als beide instellingen worden ingeschakeld, is een gelaagde methode mogelijk om de apparaten van eindgebruikers gezond te houden. Dit is belangrijk als eindgebruikers hun werk- of schoolgegevens op een mobiel apparaat openen. 
+
+**Google Play Services moet actief zijn voor de instellingen van het app-beveiligingsbeleid die gebruikmaken van de Google Play Protect-API's. Wat moet ik doen als Google Play Services niet zijn toegestaan op de mogelijke locatie van de eindgebruiker?**<br><br>
+Voor zowel de instelling SafetyNet Attestion voor apparaten als de instelling Bedreigingsscan op apps moet de door Google bepaalde versie van Google Play Services naar behoren werken. Aangezien dit de instellingen zijn die in het gebied van beveiliging vallen, wordt de eindgebruiker geblokkeerd als deze instellingen op deze gebruiker zijn gericht en niet voldoen aan de juiste versie van Google Play Services of geen toegang hebben tot Google Play Services. 
+
 ## <a name="app-experience-on-ios"></a>Apps op iOS gebruiken
 **Wat gebeurt er als ik een vingerafdruk of gezicht toevoeg of verwijder op mijn apparaat?**
 Het Intune-beleid voor app-beveiliging geeft u de mogelijkheid app-toegang te beperken tot enkel de gebruiker met een Intune-licentie. Een van de manieren om toegang tot de app te beheren, is op ondersteunde apparaten Touch ID of Face ID van Apple te vereisen. Intune implementeert een gedrag waarbij Intune, na iedere wijziging in de biometrische database van het apparaat, de gebruiker vraagt een pincode in te voeren wanneer aan de volgende time-outwaarde voor inactiviteit wordt voldaan. Wijzigingen in biometrische gegevens omvatten het toevoegen of verwijderen van een vingerafdruk of gezicht. Als de Intune-gebruiker geen pincode heeft ingesteld, wordt gevraagd om een Intune-pincode in te stellen.
@@ -184,20 +206,13 @@ Het Intune-app-beveiligingsbeleid voor toegang wordt in een bepaalde volgorde to
 
 Wanneer u te maken hebt met verschillende soorten instellingen, krijgt een Intune App SDK-versie voorrang, dan een app-versievereiste, gevolgd door de versievereisten van het iOS-besturingssysteem. Vervolgens worden eventuele waarschuwingen voor alle typen instellingen in dezelfde volgorde gecontroleerd. We raden u aan om de Intune App SDK-versievereisten alleen te configureren op advies van het Intune-productteam voor essentiële blokkerende scenario's.
 
-## <a name="app-protection-policies---policy-refresh"></a>Beveiligingsbeleid voor apps: vernieuwen van het beleid
-- Elke dertig minuten worden apps ingecheckt bij de APP-service.
-- De drempelwaarde van dertig minuten is gebaseerd op een timer.
-    - Als de app na dertig minuten actief is, wordt deze in de dertigste minuut ingecheckt.
-    - Als de app na dertig minuten inactief is, wordt deze bij de volgende focus ingecheckt.
-- Als er geen beleid is toegewezen aan een gebruiker, wordt de app elke acht uur ingecheckt.
-- Als er geen Intune-licentie is toegewezen, wordt de app elke vierentwintig uur ingecheckt.
-
 
 ## <a name="see-also"></a>Zie tevens
 - [Uw Intune-abonnement implementeren](planning-guide-onboarding.md)
 - [Intune testen en valideren](planning-guide-test-validation.md)
 - [Mobile Application Management-beleidsinstellingen voor Android in Microsoft Intune](app-protection-policy-settings-android.md)
 - [Mobile Application Management-beleidsinstellingen voor iOS](app-protection-policy-settings-ios.md)
-- [Beveiligingsbeleid voor apps valideren](app-protection-policies-validate.md)
+- [Beveiligingsbeleid voor apps: vernieuwen van het beleid](app-protection-policy-delivery.md)
+- [Beveiligingsbeleid voor apps valideren](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving](app-configuration-policies-managed-app.md)
 - [Ondersteuning voor Microsoft Intune krijgen](get-support.md)

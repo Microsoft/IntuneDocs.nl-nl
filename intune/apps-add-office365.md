@@ -1,32 +1,33 @@
 ---
-title: Office 365-apps installeren op apparaten met Microsoft Intune
-titlesuffix: ''
-description: Meer informatie over hoe u Microsoft Intune kunt gebruiken om de installatie van Office 365-apps op Windows 10-apparaten te vereenvoudigen.
+title: Office 365-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
+titleSuffix: ''
+description: Meer informatie over hoe u Microsoft Intune kunt gebruiken om Office 365-apps op Windows 10-apparaten te installeren.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d3db1449ec583678924fadb0db930146c3cd848
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c640e3e02d7d016785b87d681443b2c49f7a6281
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507110"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
-Met dit type app kunt u eenvoudig Office 365-apps toewijzen aan de door u beheerde apparaten waarop Windows 10 wordt uitgevoerd. U kunt ook apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Pro voor Office 365, mits u daar licenties voor hebt. De apps die u wilt, worden als één vermelding weergegeven in de lijst met apps in de Intune-console.
+Voordat u apps kunt toewijzen, controleren, configureren of beveiligen, moet u ze aan Intune toevoegen. Een van de beschikbare [apptypen](apps-add.md#app-types-in-microsoft-intune) is Office 365-apps voor Windows 10-apparaten. Door dit apptype in Intune te selecteren, kunt u Office 365-apps toewijzen aan en installeren op door u beheerde apparaten waarop Windows 10 wordt uitgevoerd. U kunt ook apps toewijzen en installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Online Plan 2, mits u daar licenties voor hebt. De beschikbare Office 365-apps worden als één vermelding weergegeven in de lijst met apps in de Intune-console in Azure.
 
 > [!NOTE]
 > U moet Office 365 ProPlus-licenties gebruiken om Office 365 ProPlus-apps te activeren die via Microsoft Intune zijn geïmplementeerd. Momenteel wordt Office 365 Business-editie niet ondersteund door Intune.
@@ -54,18 +55,25 @@ Met dit type app kunt u eenvoudig Office 365-apps toewijzen aan de door u beheer
 5. Selecteer **Toevoegen**.
 6. Selecteer **Windows 10** in het deelvenster **Apps toevoegen**, in de lijst **App-type** onder **Office 365 Suite**.
 
-U kunt de app-suite nu configureren.
+## <a name="select-settings-format"></a>Indeling van instellingen selecteren
 
-## <a name="configure-the-app-suite"></a>Het app-pakket configureren
+Selecteer een **Indeling voor instellingen** om een configuratiemethode voor appinstellingen te kiezen. De volgende indelingsopties voor instellingen zijn beschikbaar:
+- Configuration Designer
+- XML-gegevens invoeren
 
-Selecteer de Office-apps die u wilt toewijzen aan apparaten.
+Wanneer u **Configuration Designer** kiest, worden op de blade **App toevoegen** twee extra instellingsopties weergegeven:
+- De app-suite configureren
+- Instellingen voor app-suite
 
-1. Selecteer in het deelvenster **App toevoegen** de optie **App-pakket configureren**.
-2. Kies in het deelvenster **App-pakket configureren** de standaard-apps van Office die u wilt toewijzen aan apparaten.  
-    Daarnaast kunt u apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Pro voor Office 365, mits u daar licenties voor hebt.
-3. Selecteer **OK**.
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-## <a name="configure-app-information"></a>App-gegevens configureren
+Als u **XML-gegevens invoeren** kiest, wordt op de blade **App toevoegen** de optie **XML-gegevens invoeren** weergegeven. Selecteer deze optie om de blade **Configuratiebestand** weer te geven. 
+
+![Office 365 Configuration Designer toevoegen](./media/apps-add-office365/apps-add-office365-01.png)
+    
+Zie [XML-gegevens invoeren](apps-add-office365.md#enter-xml-format) hieronder voor meer informatie over de optie **XML-gegevens invoeren**.
+
+## <a name="configure-app-suite-information"></a>Gegevens over app-suite configureren
 
 In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze informatie kunt u het app-pakket vinden in Intune en kunnen gebruikers het app-pakket vinden in de bedrijfsportal.
 
@@ -84,9 +92,18 @@ In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze inf
     - **Logo**: het Office 365-logo wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
 3. Selecteer **OK**.
 
-## <a name="configure-app-settings"></a>App-instellingen configureren
+## <a name="configure-app-suite"></a>De app-suite configureren
 
-In deze stap configureert u de installatieopties voor het app-pakket. De instellingen gelden voor alle apps die u aan het pakket hebt toegevoegd.
+Als u de optie **Configuration Designer** in de vervolgkeuzelijst **Instellingsindeling**, ziet u de optie **App-suite configureren** in de blade **App toevoegen**. Selecteer de Office-apps die u wilt toewijzen aan apparaten.
+
+1. Selecteer in het deelvenster **App toevoegen** de optie **App-pakket configureren**.
+2. Kies in het deelvenster **App-pakket configureren** de standaard-apps van Office die u wilt toewijzen aan apparaten.  
+    Daarnaast kunt u apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Online Plan 2, mits u daar licenties voor hebt.
+3. Selecteer **OK**.
+
+## <a name="configure-app-suite-settings"></a>Instellingen voor app-suite configureren
+
+Als u de optie **Configuration Designer** in de vervolgkeuzelijst **Instellingsindeling**, ziet u de optie **Instellingen app-suite** in de blade **App toevoegen**. In deze stap configureert u de installatieopties voor het app-pakket. De instellingen gelden voor alle apps die u aan het pakket hebt toegevoegd.
 
 1. Selecteer in het deelvenster **App toevoegen** de optie **Instellingen voor app-pakket**.
 2. Voer in het deelvenster **Instellingen voor app-pakket** het volgende uit:
@@ -110,6 +127,10 @@ In deze stap configureert u de installatieopties voor het app-pakket. De instell
     - **Activering van gedeelde computers gebruiken**: selecteer deze optie wanneer meerdere gebruikers een computer delen. Zie [Overzicht van activering van gedeelde computers voor Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus) voor meer informatie.
     - **Talen**: Office wordt automatisch geïnstalleerd in de ondersteunde talen die met Windows zijn geïnstalleerd op het apparaat van de eindgebruiker. Selecteer deze opties als u aanvullende talen wilt installeren met het app-pakket. <p></p>
     U kunt aanvullende talen implementeren voor Office 365 Pro Plus-apps die via Intune worden beheerd. De lijst met beschikbare talen bevat het taalpakket **Type** (kern, gedeeltelijk en spellingcontrole). Selecteer in Azure Portal **Microsoft Intune** > **Client-apps** > **Apps** > **Toevoegen**. In de lijst **App-type** op de blade **App toevoegen** selecteert u **Windows 10** onder **Office 365-suite**. Selecteer **Talen** in de blade **Instellingen voor app-suite**. Zie voor meer informatie het [overzicht van de implementatie van talen in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## <a name="enter-xml-format"></a>XML-indeling invoeren
+
+Als u de optie **XML-gegevens invoeren** in de vervolgkeuzelijst **Instellingsindeling**, ziet u de optie **XML-gegevens invoeren** in de blade **App toevoegen**. Raadpleeg [Configuratie-opties voor het Office-implementatieprogramma](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool) voor meer informatie.
 
 ## <a name="finish-up"></a>Voltooien
 

@@ -1,33 +1,34 @@
 ---
 title: Beleid voor voorwaardelijke toegang op basis van apparaten instellen met behulp van Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Hier vindt u meer informatie over het maken van beleid voor voorwaardelijke toegang op basis van apparaten met behulp van apparaatnalevingsbeleid van Microsoft Intune en Mobile Application Management (MAM).
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ca9a65d5a62c75c45541b42c9b2aa5c4871a18
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508654"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Beleid maken voor voorwaardelijke toegang op basis van apparaten
 
-Met Intune kunt u de voorwaardelijke toegang in Azure Active Directory verbeteren door nalevingsbeleid voor mobiele apparaten toe te voegen aan het toegangsbeheer. Zodra u een nalevingsbeleid in Intune hebt gemaakt waarin de nalevingsvereisten voor apparaten zijn vastgelegd, kunt u de nalevingsstatus van een apparaat gebruiken om de toegang tot uw apps en services toe te staan of te blokkeren. U kunt dit doen door beleid voor voorwaardelijke toegang te maken dat gebruikmaakt van de instelling **Vereisen dat het apparaat als compatibel is gemarkeerd**. 
+Met Intune kunt u de voorwaardelijke toegang in Azure Active Directory verbeteren door nalevingsbeleid voor mobiele apparaten toe te voegen aan het toegangsbeheer. Zodra u een nalevingsbeleid in Intune hebt gemaakt waarin de nalevingsvereisten voor apparaten zijn vastgelegd, kunt u de nalevingsstatus van een apparaat gebruiken om de toegang tot uw apps en services toe te staan of te blokkeren. U kunt dit doen door beleid voor voorwaardelijke toegang te maken dat gebruikmaakt van de instelling **Vereisen dat het apparaat als compatibel is gemarkeerd**.  
 
-Beleid voor voorwaardelijke toegang specificeert de app of services die u wilt beveiligen, de voorwaarden waaronder de apps of services toegankelijk zijn, en de gebruikers op wie het beleid van toepassing is. Voorwaardelijke toegang is een Azure AD premium-functie die configureerbaar is in Azure Active Directory, maar u kunt hetzelfde beleid ook instellen in de Intune-portal. 
+Beleid voor voorwaardelijke toegang specificeert de app of services die u wilt beveiligen, de voorwaarden waaronder de apps of services toegankelijk zijn, en de gebruikers op wie het beleid van toepassing is. Voorwaardelijke toegang is een Azure AD premium-functie die configureerbaar is in Azure Active Directory, maar u kunt hetzelfde beleid ook instellen in de Intune-portal. Het knooppunt voor voorwaardelijke toegang dat via *Intune* wordt geopend, is hetzelfde als het knooppunt dat u opent via *Azure AD*.  
 
 > [!IMPORTANT]
 > Voordat u het beleid voor voorwaardelijke toegang instelt, moet u apparaatnalevingsbeleid in Intune instellen om apparaten te evalueren op basis van de vraag of ze aan specifieke vereisten voldoen. Zie [Aan de slag met apparaatnalevingsbeleid in Intune](device-compliance-get-started.md).

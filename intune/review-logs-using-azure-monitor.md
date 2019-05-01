@@ -5,26 +5,27 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
-ms.topic: article
+ms.date: 03/18/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4f93ab1cd2c662cb97dafd19684b353268087f6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: fb33a1207e165323de2e82467c7a0dd5239d9713
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507336"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Logboekgegevens verzenden naar opslag, Event Hubs of Log Analytics in Intune (preview)
 
-Microsoft Intune omvat ingebouwde logboeken die informatie bieden over uw omgeving. In **auditlogboeken** worden details weergegeven van verschillende gebeurtenissen of taken in Intune. In **Operationele logboeken (preview)** worden details weergegeven van gebruikers en apparaten waarvan de inschrijving is geslaagd (of niet).
+Microsoft Intune omvat ingebouwde logboeken die informatie bieden over uw omgeving. In **auditlogboeken** worden details weergegeven van verschillende gebeurtenissen of taken in Intune. In **Operationele logboeken (preview-versie)** worden details weergegeven van gebruikers en apparaten waarvan de inschrijving is geslaagd (of niet), alsmede details over niet-compatibele apparaten.
 
 Deze logboeken kunnen ook worden verzonden naar Azure Monitor-services, inclusief opslagaccounts, Event Hubs, en Log Analytics. Meer specifiek, u kunt:
 
@@ -33,7 +34,7 @@ Deze logboeken kunnen ook worden verzonden naar Azure Monitor-services, inclusie
 * Intune-logboeken integreren met uw eigen aangepaste logboekoplossingen door ze naar een Event Hub te streamen.
 * Intune-logboeken naar Log Analytics verzenden om rijke visualisaties, bewaking, en waarschuwingen mogelijk te maken voor de verbonden gegevens.
 
-Deze functies maken deel uit van de **Diagnostische instellingen** in Intune. 
+Deze functies maken deel uit van de **Diagnostische instellingen** in Intune.
 
 In dit artikel ziet u hoe u **Diagnostische instellingen** kunt gebruiken om logboekgegevens te verzenden naar verschillende services. Ook worden er voorbeelden gegeven van de geschatte kosten, en wordt een aantal veelgestelde vragen beantwoord.
 
@@ -82,7 +83,7 @@ Afhankelijk van waarheen u de auditlogboekgegevens wilt routeren, hebt u een van
 
       Als u ervoor kiest om een opslagaccount te gebruiken, voert u ook in hoeveel dagen u de gegevens wilt behouden (retentie). Als u de gegevens voorgoed wilt behouden, stelt u **Retentie (dagen)** in op `0` (nul).
 
-    - **LOG** > **OperationalLogs**: Operationele logboeken (preview) laten zien of de inschrijving van gebruikers en apparaten in Intune is geslaagd of mislukt. Kies deze optie om de inschrijvingslogboeken te verzenden naar uw opslagaccount, Event Hub, of Log Analytics.
+    - **LOG** > **OperationalLogs**: Operationele logboeken (preview-versie) laten zien of de inschrijving van gebruikers en apparaten in Intune is geslaagd of mislukt, alsmede details over niet-compatibele apparaten. Kies deze optie om de inschrijvingslogboeken te verzenden naar uw opslagaccount, Event Hub, of Log Analytics.
 
       Als u ervoor kiest om een opslagaccount te gebruiken, voert u ook in hoeveel dagen u de gegevens wilt behouden (retentie). Als u de gegevens voorgoed wilt behouden, stelt u **Retentie (dagen)** in op `0` (nul).
 
@@ -94,6 +95,19 @@ Afhankelijk van waarheen u de auditlogboekgegevens wilt routeren, hebt u een van
     ![Voorbeeldafbeelding waarin Intune-auditlogboeken worden verzonden naar een Azure-opslagaccount](media/diagnostics-settings-example.png)
 
 4. U moet vervolgens de wijzigingen **Opslaan**. De instelling wordt weergegeven in de lijst. Zodra de instellingen zijn gemaakt, kunt u deze wijzigen door **Instelling bewerken** > **Opslaan** te selecteren.
+
+## <a name="use-audit-logs-throughout-intune"></a>Auditlogboeken gebruiken in Intune
+
+U kunt de auditlogboeken ook naar andere delen van Intune exporteren, zoals inschrijving, naleving, configuratie, apparaten, client-apps en meer.
+
+U kunt bijvoorbeeld de auditlogboeken als volgt exporteren bij het gebruik van apparaatcompliantie:
+
+1. Selecteer in [Azure Portal](https://portal.azure.com/) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
+2. Selecteer **Apparaatcompliantie** > **Monitor** > **Auditlogboeken**:
+
+    ![Auditlogboeken kiezen om Intune-gegevens naar Azure Monitor-opslag, Event Hubs of analytics door te sturen](media/audit-logs-under-monitor-in-compliance.png)
+
+3. Selecteer **Gegevensinstellingen exporteren**. Als dit niet is ingeschakeld, kunt u **Diagnostische instellingen** inschakelen. U kunt ook kiezen naar welke locatie de logboeken moeten worden verzonden, zoals beschreven in [Logboeken verzenden naar Azure Monitor](#send-logs-to-azure-monitor) (in dit artikel).
 
 ## <a name="cost-considerations"></a>Kostenoverwegingen
 

@@ -6,20 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 07/26/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de0df4878d2461d2f7c0a022a7e3d305e58aef7f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d042a160d016343c6e8374dff8f74560b9806014
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508476"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Partnercertificeringsinstanties toevoegen in Intune met behulp van SCEP
 
@@ -132,7 +134,7 @@ Als u een externe certificeringsinstantie bent en interesse hebt om uw product t
 - [Intune SCEP API GitHub-opslagplaats](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [Richtlijnen voor Intune SCEP-API voor externe CA's ](scep-libraries-apis.md)
 
-## <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
 
 - [Certificaatprofielen configureren](certificates-scep-configure.md)
 - [Intune SCEP API GitHub-opslagplaats](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)

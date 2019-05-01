@@ -1,7 +1,7 @@
 ---
  titel: inclusief bestandsbeschrijving: inclusief bestandsservices: auteur azure-beleid: eross-msft
  
-ms.service: azure-beleid ms.topic: inclusief ms.date: 04/24/2018 ms.author: lizross ms.custom: inclusief bestand
+ms.service: azure-policy ms.topic: ms.date invoegen: 04/24/2018 ms.author: lizross ms.custom: ms.collection van bestand invoegen: M365-identity-device-management
 ---
 
 >[!Note] 
