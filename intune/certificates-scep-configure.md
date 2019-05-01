@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510046"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -36,9 +37,9 @@ In dit artikel leest u hoe u uw infrastructuur kunt configureren en vervolgens S
 - **NDES-server**: Op een apparaat met Windows Server 2012 R2 of hoger moet u de serverrol Registratieservice voor netwerkapparaten (NDES) instellen. Intune biedt geen ondersteuning voor het gebruik van NDES op een server waarop ook de CA voor ondernemingen wordt uitgevoerd. Zie [Richtlijnen voor Registratieservice voor netwerkapparaten](http://technet.microsoft.com/library/hh831498.aspx) voor instructies over hoe u Windows Server 2012 R2 configureert om als host voor NDES te dienen.
 De NDES-server moet met een domein in hetzelfde forest als de Enterprise-CA worden gekoppeld. Meer informatie over het implementeren van de NDES-server in een afzonderlijke forest, een geïsoleerd netwerk of een intern domein vindt u in [Een beleidsmodule gebruiken met de registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Certificate Connector**: Download het installatieprogramma voor de **Certificaatconnector** (**NDESConnectorSetup.exe**) via de Intune-beheerportal. Voer dit installatieprogramma uit op de server met de NDES-rol.  
+- **Microsoft Intune Certificate Connector**: In de Intune-portal gaat u naar **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen** en volgt u de *stappen om de connector te installeren voor SCEP*. Gebruik de downloadkoppeling om het downloaden van het installatieprogramma voor de certificaatconnector **NDESConnectorSetup.exe** te starten.  Voer dit installatieprogramma uit op de server met de NDES-rol.  
 
-  - De NDES-certificaatconnector ondersteunt ook de Federal Information Processing Standard-modus (FIPS). FIPS is niet vereist, maar wanneer deze modus is ingeschakeld, kunt u certificaten uitgeven en intrekken.
+Deze NDES-certificaatconnector ondersteunt ook de Federal Information Processing Standard-modus (FIPS). FIPS is niet vereist, maar wanneer deze modus is ingeschakeld, kunt u certificaten uitgeven en intrekken.
 
 - **Webtoepassingsproxyserver** (optioneel): Gebruik een server die Windows Server 2012 R2 of hoger uitvoert als een webtoepassingsproxyserver (WAP-server). Deze configuratie:
   - Maakt het mogelijk dat apparaten certificaten ontvangen met een internetverbinding.
@@ -298,12 +299,13 @@ Bij deze stap doet u het volgende:
 > De Microsoft Intune-certificaatconnector **moet** worden geïnstalleerd op een afzonderlijke Windows-server. Deze kan niet worden geïnstalleerd op de verlenende certificeringsinstantie (CA). De connector **moet** ook worden geïnstalleerd op dezelfde server die de rol van Network Device Enrollment Service (NDES) vervult.
 
 1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-2. Selecteer **Apparaatconfiguratie** > **Certificeringsinstantie** > **Toevoegen**
-3. Download het connectorbestand en sla het op. Sla het bestand op op een locatie die toegankelijk is vanaf de server waar u de connector gaat installeren.
+2. Selecteer **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen**.
+3. Download de connector voor het SCEP-bestand en sla deze op. Sla het bestand op op een locatie die toegankelijk is vanaf de server waar u de connector gaat installeren.
 
-    ![ConnectorDownload](./media/certificates-download-connector.png)
+   ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
-4. Nadat het downloaden is voltooid, gaat u naar de server waarop de NDES-rol (Registratieservice voor netwerkapparaten) wordt uitgevoerd. Vervolgens:
+
+4. Nadat het downloaden is voltooid, gaat u naar de server waarop uw NDES-exemplaar (NDES: Registratieservice voor netwerkapparaten) wordt gehost. Vervolgens:
 
     1. Controleer of .NET 4.5 Framework is geïnstalleerd. Dit wordt vereist door de NDES-certificaatconnector. .NET Framework 4.5 wordt automatisch geïnstalleerd met Windows Server 2012 R2 en nieuwere versies.
     2. Voer het installatieprogramma uit (**NDESConnectorSetup.exe**). Het installatieprogramma installeert ook de beleidsmodule voor NDES en de CRP-webservice. De CRP-webservice, CertificateRegistrationSvc, wordt als een toepassing in IIS uitgevoerd.
@@ -323,7 +325,7 @@ Bij deze stap doet u het volgende:
     > [!TIP]
     > Als u de wizard sluit voordat u de gebruikersinterface van de certificaatconnector start, kunt u deze opnieuw openen door de volgende opdracht uit te voeren:
     >
-    > <installatiepad>\NDESConnectorUI\NDESConnectorUI.exe
+    > <install_Path>\NDESConnectorUI\NDESConnectorUI.exe
 
 7. In de gebruikersinterface van de **certificaatconnector** :
 
@@ -363,8 +365,8 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 5. Selecteer in de vervolgkeuzelijst **Profieltype** de optie **SCEP-certificaat**.
 6. Voer de volgende instellingen in:
 
-   - **Certificaattype**: Kies **Gebruiker** voor gebruikerscertificaten. Kies **Apparaat** voor apparaten zonder gebruiker, zoals kiosken. Er zijn **Apparaat**-certificaten beschikbaar voor de volgende platformen:  
-     - Android Enterprise
+   - **Certificaattype**: Kies **Gebruiker** voor gebruikerscertificaten. Een certificaattype **Gebruiker** kan zowel gebruikers- als apparaatkenmerken in het onderwerp en SAN van het certificaat bevatten.  Kies **Apparaat** voor scenario's zoals de apparaten zonder gebruiker, zoals kiosken, of voor Windows-apparaten en plaats het certificaat in het certificaatarchief van de lokale computer. **Apparaat**-certificaten kunnen alleen apparaatkenmerken in het onderwerp en SAN van het certificaat bevatten.  Er zijn **Apparaat**-certificaten beschikbaar voor de volgende platformen:  
+     - Android Enterprise - Werkprofiel
      - iOS
      - macOS
      - Windows 8.1 en hoger

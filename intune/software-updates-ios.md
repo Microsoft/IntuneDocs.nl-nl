@@ -5,56 +5,87 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/11/2018
-ms.topic: article
+ms.date: 04/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cce77976ea0cb31596ca0a1fd6c4becc9e3cee34
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: de73aa069765ce75068781674ff24d097346cdba
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505927"
 ---
-# <a name="configure-ios-update-policies-in-intune"></a>iOS-updatebeleid in Intune configureren
+# <a name="add-ios-software-update-policies-in-intune"></a>iOS-software-updatebeleid in Intune configureren
 
-Dankzij beleid voor software-updates kan de nieuwste iOS-update automatisch worden geïnstalleerd door iOS-apparaten die onder supervisie staan. Deze functie is alleen beschikbaar voor apparaten die onder supervisie staan. Wanneer u een beleid configureert, kunt u de dagen en tijden toevoegen wanneer u niet wilt dat apparaten updates installeren. 
+Dankzij beleid voor software-updates kan de nieuwste iOS-update automatisch worden geïnstalleerd door iOS-apparaten die onder supervisie staan. Wanneer u een beleid configureert, kunt u de dagen en tijden toevoegen wanneer u niet wilt dat apparaten updates installeren. 
+
+Deze functie is van toepassing op:
+
+- iOS 10.3 of hoger (onder supervisie)
 
 Het apparaat wordt ongeveer om de 8 uur bij Intune ingecheckt. Als een update beschikbaar is en het betreft geen beperkte periode, wordt de meest recente update van het besturingssysteem naar het apparaat gedownload en erop geïnstalleerd. Er is geen tussenkomst van de gebruiker nodig om het apparaat bij te werken. Het beleid belet gebruikers niet om het besturingssysteem handmatig bij te werken.
 
-Deze functie biedt ondersteuning voor apparaten met iOS 10.3 en latere versies. De vertragingsinstelling is beschikbaar in iOS 11.3 en in latere versies.
-
 ## <a name="configure-the-policy"></a>Het beleid configureren
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Software-updates** > **Beleidsregels voor iOS bijwerken** > **Maken**.
-4. Geef een naam en beschrijving op voor het beleid.
-5. Selecteer **Instellingen**. 
 
-    Voer de details in voor het geval waarbij iOS-apparaten niet worden gedwongen de meest recente update te installeren. Deze instellingen zorgen voor een beperkte tijdsperiode. U kunt de **dagen** van de week, de **tijdzone**, de **begintijd** en de **eindtijd** configureren, en instellen of u wel of niet **de zichtbaarheid van de software-update wilt vertragen (dagen)** om gebruikers in te voeren. U kunt een vertragingsbereik van software-updates selecteren van 1 tot 90 dagen. Wanneer de vertraging verloopt, krijgen gebruikers een melding om een update uit te voeren naar de vroegste versie van het besturingssysteem die beschikbaar was toen de vertraging werd geactiveerd. Als u geen vertraging van software-update wilt instellen, geeft u 0 op. Deze update-instellingen zijn alleen van toepassing op iOS-apparaten die onder supervisie staan.
-  
-    Als bijvoorbeeld iOS 12.a beschikbaar is op **1 januari** en u **Updates besturingssysteem vertragen** hebt ingesteld op **5 dagen**, dan wordt die specifieke versie niet als een beschikbare update weergegeven op apparaten van eindgebruikers die aan dat profiel zijn toegewezen. Op de **zesde dag** na de release wordt die update als beschikbaar weergegeven en mogen alle eindgebruikers een update starten.
+1. Selecteer in [Azure Portal](https://portal.azure.com) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
+2. Selecteer **Software-updates** > **Beleidsregels voor iOS bijwerken** > **Maken**.
+3. Voer de volgende instellingen in:
 
+    - **Naam**: Voer een naam in voor uw software-updatebeleid. Voer bijvoorbeeld `iOS restricted update times` in.
+    - **Beschrijving**: Voer een beschrijving in voor uw beleid. Deze instelling is optioneel, maar wordt aanbevolen.
 
-6. Selecteer **OK** om uw wijzigingen op te slaan. Selecteer **Maken** om het beleid te maken.
+4. Selecteer **Instellingen > Configureren**. Voer de volgende instellingen in:
 
-Het profiel wordt gemaakt en wordt weergegeven in de lijst met beleidsregels. Apple MDM staat u niet toe om een apparaat te dwingen om vóór een bepaald tijdstip of een bepaalde datum updates te installeren. 
+    - **Tijden selecteren om de installatie van updates te voorkomen**: Geef een beperkt tijdsbestek op waarin updates niet geforceerd worden geïnstalleerd. 
+      - Blokkering voor 's nachts wordt niet ondersteund en werkt mogelijk niet. Configureer bijvoorbeeld geen beleid met 20:00 uur als *begintijd* en 6:00 uur als *eindtijd*.
+      - Een beleid dat om 12:00 uur begint en eindigt om 12:00 uur, wordt als 0 uur beschouwd en niet als 24 uur, waardoor er dus geen beperking wordt ingesteld.
+
+      Wanneer u het beperkte tijdsbestek instelt, voert u de volgende gegevens in:
+
+      - **Dagen**: Kies de dag(en) van de week waarop updates niet worden geïnstalleerd. Schakel bijvoorbeeld maandag, woensdag en vrijdag in om te voorkomen dat updates op deze dagen worden geïnstalleerd.
+      - **Tijdzone**: Kies een tijdzone.
+      - **Begintijd**: Kies de begintijd van het beperkte tijdsbestek. Voer bijvoorbeeld 5:00 uur in, zodat updates vanaf 5:00 uur niet worden geïnstalleerd.
+      - **Eindtijd**: Kies de eindtijd van het beperkte tijdsbestek. Voer bijvoorbeeld 1:00 uur in, zodat updates vanaf 1:00 kunnen worden geïnstalleerd.
+
+    - **Zichtbaarheid van software-updates voor eindgebruikers vertragen zonder de geplande updates te wijzigen (dagen)**: 
+
+      **Deze instelling is verplaatst naar [Apparaatbeperkingen](device-restrictions-ios.md#general). Deze instelling wordt op deze locatie in de portal verwijderd.** Bestaande beleidsregels kunnen hier voor een korte periode worden gewijzigd. Na ongeveer een maand wordt deze instelling van de bestaande beleidsregels verwijderd.
+
+      Het volgende wordt aanbevolen om ervoor te zorgen dat dit zo weinig mogelijk gevolgen heeft:
+        - Verwijder het bestaande beleid op deze locatie in de portal.
+        - Maak een nieuw [apparaatbeperkingsbeleid](device-restrictions-ios.md#general).
+        - Gebruikt dezelfde gebruikers van het oorspronkelijke beleid als doelgroep.
+
+      Als er een conflict optreedt, doet deze instelling niets *tenzij* de twee waarden identiek zin. U kunt een conflict vermijden door het bestaande beleid op deze locatie in de portal te wijzigen of te verplaatsen.
+      > [! Belangrijk]  
+      > Een beleid waarvan de *begintijd* en *eindtijd* allebei op 12:00 uur zijn ingesteld, wordt als 0 uur beschouwd en niet als 24 uur. Dit leidt tot geen beperkingen.  
+
+5. Selecteer **OK** > **Maken** om wijzigingen op te slaan en het beleid te maken.
+
+Het profiel wordt gemaakt en wordt weergegeven in de lijst met beleidsregels.
+
+Zie [Zichtbaarheid van software-updates in Intune vertragen voor apparaten die onder toezicht staan](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Delaying-visibility-of-software-updates-in-Intune-for-supervised/ba-p/345753) voor hulp van het Intune-ondersteuningsteam.
+
+> [!NOTE]
+> Apple MDM staat u niet toe om een apparaat te dwingen om vóór een bepaald tijdstip of een bepaalde datum updates te installeren.
 
 ## <a name="change-the-restricted-times-for-the-policy"></a>De tijdstippen met beperkingen voor het beleid wijzigen
 
 1. Selecteer in **Software-updates** **Beleidsregels voor iOS bijwerken**.
 2. Kies een bestaand beleid > **Eigenschappen**.
 3. De tijd met beperkingen bijwerken:
-    
+
     1. De dagen van de week kiezen
     2. De tijdzone kiezen waarin dit beleid wordt toegepast
     3. De begin- en eindtijd opgeven voor niet-toegestane uren
 
     > [!NOTE]
-    > Als de **begintijd** en **eindtijd** beide zijn ingesteld op 12:00 uur, wordt de controle van het onderhoudstijdstip uitgeschakeld.
+    > Als de **begintijd** en de **eindtijd** allebei op 12:00 uur zijn ingesteld, controleert Intune niet of er beperkingen gelden voor de installatie van updates. Dit betekent dat al uw configuraties voor **Tijden selecteren om de installatie van updates te voorkomen** worden genegeerd en dat updates op elk moment kunnen worden geïnstalleerd.  
 
 ## <a name="assign-the-policy-to-users"></a>Het beleid toewijzen aan gebruikers
 
@@ -68,6 +99,9 @@ Bestaande beleidsregels worden toegewezen aan groepen, gebruikers of apparaten. 
 De apparaten die worden gebruikt door de gebruikers op wie het beleid wordt toegepast, worden gecontroleerd om te zien of ze voldoen aan de updatenaleving. Dit beleid ondersteunt ook apparaten zonder gebruikers.
 
 ## <a name="monitor-device-installation-failures"></a>Installatiefouten op apparaten controleren
-In <!-- 1352223 -->
-**Software-updates** > **Installatiefouten op iOS-apparaten** wordt een lijst opgegeven met gecontroleerde iOS-apparaten waarop een updatebeleid was gericht, waarvoor is geprobeerd een update uit te voeren, maar dit niet mogelijk was. Voor elk apparaat kunt u bekijken waarom het apparaat niet automatisch is bijgewerkt. Bijgewerkte apparaten die in orde zijn, worden niet weergegeven in de lijst. Een apparaat is bijgewerkt als de meest recente update is geïnstalleerd die door het apparaat zelf wordt ondersteund.
+<!-- 1352223 -->
+In **Software-updates** > **Installatiefouten op iOS-apparaten** wordt een lijst opgegeven met gecontroleerde iOS-apparaten waarop een updatebeleid was gericht, waarvoor is geprobeerd een update uit te voeren, maar dit niet mogelijk was. Voor elk apparaat kunt u bekijken waarom het apparaat niet automatisch is bijgewerkt. Bijgewerkte apparaten die in orde zijn, worden niet weergegeven in de lijst. Een apparaat is bijgewerkt als de meest recente update is geïnstalleerd die door het apparaat zelf wordt ondersteund.
 
+## <a name="next-steps"></a>Volgende stappen
+
+[Het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).

@@ -5,67 +5,81 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b853d42efc247f6080cc4ed6ad8b4943b85b3215
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506987"
 ---
-# <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Controleer de beveiligingsbasislijn en het beveiligingsprofiel in Microsoft Intune
+# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>De beveiligingsbasislijn en het beveiligingsprofiel controleren in Microsoft Intune  
 
-Er zijn verschillende controleopties bij het gebruik van beveiligingsbasislijnen. U kunt het beveiligingsbasislijnprofiel bewaken dat op uw gebruikers en apparaten van toepassing is. U kunt tevens de daadwerkelijke basislijn controleren evenals apparaten die (al dan niet) overeenkomen met de aanbevolen waarden.
+Intune biedt verschillende opties om uw beveiligingsbasislijnen te bewaken. U kunt het beveiligingsbasislijnprofiel bewaken dat op uw gebruikers en apparaten van toepassing is. U kunt tevens de daadwerkelijke basislijn controleren evenals apparaten die (al dan niet) overeenkomen met de aanbevolen waarden.
 
 Dit artikel bespreekt beide controleopties.
 
 In [Security baselines in Intune](security-baselines.md) (Beveiligingsbasislijnen in Intune) vindt u meer informatie over de basislijnbeveiligingsfunctie in Microsoft Intune.
 
-## <a name="monitor-the-baseline-and-your-devices"></a>Bewaak de basislijn en uw apparaten
+## <a name="monitor-the-baseline-and-your-devices"></a>Bewaak de basislijn en uw apparaten  
 
-Als u de basislijn controleert, krijgt u inzicht in de beveiligingsstatus van uw apparaten op basis van de aanbevelingen van Microsoft.
+Als u een basislijn controleert, krijgt u inzicht in de beveiligingsstatus van uw apparaten op basis van de aanbevelingen van Microsoft. U kunt deze inzichten weergeven in het overzichtsvenster van de beveiligingsbasislijn op de Intune-console.  Het kan tot 24 uur na de eerste toewijzing van een basislijn duren voordat gegevens worden weergegeven. Latere wijzigingen worden na maximaal zes uur weergegeven.  
 
-> [!NOTE]
-> Nadat een basislijn voor het eerst is toegewezen, kan het tot wel 24 uur duren om rapporten bij te werken. Daarna duurt een update maximaal 6 uur.
+Meld u aan bij de [Intune-portal](https://aka.ms/intuneportal) om bewakingsgegevens voor de basislijn en apparaten weer te geven. Selecteer vervolgens **Beveiligingsbasislijnen (preview-versie)**, kies een basislijn en bekijk het **overzichtsvenster**.
 
-1. Selecteer in [Azure Portal](https://portal.azure.com/) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
-2. Selecteer **Beveiligingsbasislijnen (preview)**> selecteer een basislijn.
-3. In **Overzicht** toont het diagram hoeveel apparaten worden beïnvloed door de basislijn die u hebt gekozen evenals de verschillende statussen:
+In het **overzichtsvenster** staan twee methoden om de status te bewaken:
+- **Apparaatweergave**: een samenvatting van het aantal apparaten in elke statuscategorie voor de basislijn.  
+- **Per categorie**: een weergave waarbij elke categorie in de basislijn wordt weergegeven, inclusief het percentage apparaten voor elke statusgroep voor elke basislijncategorie. 
 
-    ![Controleer de status van de apparaten](./media/security-baselines-monitor/overview.png)
+Elk apparaat wordt vertegenwoordigd door een van de volgende statussen, die zowel in de *apparaatweergave* als de *weergave per categorie* worden gebruikt:  
+- **Komt overeen met de basislijn**: alle instellingen in de basislijn komen overeen met de aanbevolen instellingen.
+- **Komt niet overeen met de basislijn**: minstens één instelling in de basislijn komt niet overeen met de aanbevolen instellingen.
+- **Onjuist geconfigureerd**: minstens één instelling is niet juist geconfigureerd. Deze status betekent dat de instelling een conflict of fout ervaart of in behandeling is.
+- **Niet van toepassing**: minstens één instelling is niet van toepassing en wordt niet toegepast.
 
-    De volgende statussen zijn beschikbaar:
 
-    - **Komt overeen met de basislijn**: Alle instellingen in de basislijn komen overeen met de aanbevolen instellingen.
-    - **Komt niet overeen met de basislijn**: Minstens één instelling in de basislijn komt niet overeen met de aanbevolen instellingen.
-    - **Onjuist geconfigureerd**: Minstens één instelling is niet juist geconfigureerd. Deze status betekent dat de instelling een conflict of fout ervaart of in behandeling is.
-    - **Niet van toepassing**: Minstens één instelling is niet van toepassing en wordt niet toegepast.
+### <a name="device-view"></a>Apparaatweergave
+In het overzichtsvenster staat een op diagrammen gebaseerde samenvatting van het aantal apparaten met een specifieke status voor de basislijn; **Security baseline posture for assigned Windows 10 devices** (Postuur van de beveiligingsbasislijn voor toegewezen Windows 10-apparaten).  
 
-4. Selecteer een van de statussen die apparaten heeft. Selecteer bijvoorbeeld de status **Onjuist geconfigureerd**.
+![Controleer de status van de apparaten](./media/security-baselines-monitor/overview.png)
 
-5. Er wordt een lijst weergegeven met alle apparaten die deze status hebben. Selecteer een specifiek apparaat voor meer informatie. 
+Als de status van een apparaat afwijkt van verschillende categorieën in de basislijn, wordt het apparaat door één status vertegenwoordigd. De status die het apparaat vertegenwoordigt, is afkomstig uit de volgende volgorde van prioriteit: **Onjuist geconfigureerd**, **Komt niet overeen met basislijn**, **Niet van toepassing**, **Komt overeen met basislijn**.  
 
-    Selecteer in het volgende voorbeeld **Apparaatconfiguratie** > Selecteer het profiel met een foutstatus:
+Als een apparaat bijvoorbeeld over een instelling beschikt die als *onjuist geconfigureerd* is geclassificeerd en een of meer instellingen die als *Komt niet overeen met basislijn* zijn geclassificeerd, dan wordt het apparaat als *Onjuist geconfigureerd* geclassificeerd.  
 
-    ![Controleer de status van de apparaten](./media/security-baselines-monitor/device-configuration-profile-list.png)
+Klik op het diagram om in te zoomen en door een lijst met apparaten met verschillende statussen te bladeren. U kunt vervolgens afzonderlijke apparaten uit die lijst selecteren om details over die afzonderlijke apparaten weer te geven. Bijvoorbeeld:
+- Selecteer **Apparaatconfiguratie** > selecteer het profiel met een foutstatus:
 
-    Selecteer het foutenprofiel. Er wordt een lijst met alle instellingen in het profiel en hun status weergegeven. Nu kunt u schuiven om de instelling te vinden die de fout veroorzaakt:
+  ![Controleer de status van de apparaten](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
-    ![Bekijk de instelling die de fout veroorzaakt](./media/security-baselines-monitor/profile-with-error-status.png)
+- Selecteer het foutenprofiel. Er wordt een lijst met alle instellingen in het profiel en hun status weergegeven. Nu kunt u schuiven om de instelling te vinden die de fout veroorzaakt:
+
+  ![Bekijk de instelling die de fout veroorzaakt](./media/security-baselines-monitor/profile-with-error-status.png)
 
 Gebruik deze rapportage om instellingen in een profiel te bekijken die een probleem veroorzaken. Krijg daarnaast meer informatie over beleidsregels en profielen die zijn geïmplementeerd op apparaten.
 
 > [!NOTE]
 > Wanneer een eigenschap in de basislijn is ingesteld op **Niet geconfigureerd**, wordt de instelling genegeerd en gelden er geen beperkingen. De eigenschap wordt niet in rapporten weergegeven.
+
+### <a name="per-category-view"></a>Per categorieweergave
+In het overzichtsvenster wordt een grafiek per categorie weergegeven voor de basislijn; **Security baseline posture by category** (Postuur van de beveiligingsbasislijn per categorie).  In deze weergave ziet u elke categorie van de basislijn en wordt het percentage apparaten geïdentificeerd dat in een bepaalde statusclassificiatie voor elk van die categorieën valt. 
+ 
+![Statusweergave per categorie](./media/security-baselines-monitor/monitor-baseline-per-category.png)
+
+De status voor **Komt overeen met basislijn** wordt pas weergegeven wanneer 100% van de apparaten die status voor de categorie hebben.   
+
+U kunt de weergave per categorie sorteren op elke kolom door bovenaan de kolom het pictogram met de pijl omhoog/omlaag te selecteren.  
+
 
 ## <a name="monitor-the-profile"></a>Bewaak het profiel
 

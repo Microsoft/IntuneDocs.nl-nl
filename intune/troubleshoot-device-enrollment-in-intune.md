@@ -1,32 +1,34 @@
 ---
 title: Hoe los ik problemen met de inschrijving van apparaten op?
-description: Suggesties voor het oplossen van problemen met het inschrijven van apparaten.
+titleSuffix: Microsoft Intune
+description: Suggesties voor het oplossen van problemen met het inschrijven van apparaten in Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
+ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2d345ba84eb963600a921c0f77f7a93ed6aa1b0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509144"
 ---
-# <a name="troubleshoot-device-enrollment-in-intune"></a>Problemen bij de apparaatinschrijving oplossen
+# <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Problemen bij de apparaatinschrijving in Microsoft Intune oplossen
 
-Dit artikel bevat suggesties voor het oplossen van problemen met de registratie van het apparaat. Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
+Dit artikel bevat suggesties voor het oplossen van problemen met de [inschrijving van het apparaat](device-enrollment.md). Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
 
 ## <a name="initial-troubleshooting-steps"></a>Eerste stappen om het probleem op te lossen
@@ -100,7 +102,7 @@ Om te voorkomen dat apparaatlimieten worden bereikt, moet u ervoor zorgen dat ve
 
 1.  Controleer of de MDM-instantie [op de juiste wijze is ingesteld](mdm-authority-set.md).
     
-2.  Controleer of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory. U kunt controleren of de UPN van de gebruiker overeenkomt met de Active Directory-gegevens in de Office 365-portal.
+2.  Controleer of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory. U kunt controleren of de UPN van de gebruiker overeenkomt met de Active Directory-gegevens in het Microsoft 365-beheercentrum.
     Als de UPN niet overeenkomt met de Active Directory-gegevens, doet u het volgende:
 
     1.  Schakel DirSync uit op de lokale server.
@@ -131,7 +133,7 @@ Om te voorkomen dat apparaatlimieten worden bereikt, moet u ervoor zorgen dat ve
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Kan geen beleid maken of apparaten registreren als de bedrijfsnaam speciale tekens bevat
 **Probleem:** U kunt geen beleid maken of apparaten registreren.
 
-**Oplossing:** Verwijder in het [Office 365-beheercentrum](https://portal.office.com/) de speciale tekens uit de bedrijfsnaam en sla de bedrijfsgegevens op.
+**Oplossing:** Verwijder in het [Microsoft 365-beheercentrum](https://admin.microsoft.com/) de speciale tekens uit de bedrijfsnaam en sla de bedrijfsgegevens op.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>U kunt zich niet aanmelden of apparaten registreren wanneer u meerdere geverifieerde domeinen hebt
 **Probleem:** Dit probleem kan optreden wanneer u een tweede geverifieerd domein aan de ADFS toevoegt. Gebruikers met het UPN-achtervoegsel (User Principal Name) van het tweede domein kunnen zich mogelijk niet aanmelden bij de portals of apparaten inschrijven.
@@ -225,7 +227,7 @@ Als oplossing 2 niet werkt, laat u gebruikers de volgende stappen uitvoeren om i
 
 **Oplossing 1**:
 
-De gebruiker kan wellicht het ontbrekende certificaat ophalen door de instructies in [Er ontbreekt een vereist certificaat voor uw apparaat](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) te volgen. Als de fout zich blijft voordoen, gaat u naar Oplossing 2.
+De gebruiker kan wellicht het ontbrekende certificaat ophalen door de instructies in [Er ontbreekt een vereist certificaat voor uw apparaat](/intune-user-help/your-device-is-missing-a-required-certificate-android) te volgen. Als de fout zich blijft voordoen, gaat u naar Oplossing 2.
 
 **Oplossing 2**:
 
@@ -492,7 +494,7 @@ Het accountcertificaat van het vorige account staat nog op de computer.
 |0x80043008, 0x80CF3008|De Microsoft Online Management Updates-service kan niet worden gestart.|Neem contact op met Microsoft Ondersteuning, zoals wordt beschreven in [Ondersteuning voor Microsoft Intune krijgen](get-support.md).|
 |0x80043009, 0x80CF3009|De clientcomputer is al ingeschreven bij de service.|U moet de clientcomputer buiten gebruik stellen voordat u deze opnieuw in de service kunt inschrijven.|
 |0x8004300B, 0x80CF300B|Het installatiepakket voor de clientsoftware kan niet worden uitgevoerd omdat de versie van Windows die op de client wordt uitgevoerd niet wordt ondersteund.|Intune biedt geen ondersteuning voor de versie van Windows die op de clientcomputer wordt uitgevoerd.|
-|0xAB2|Windows Installer heeft geen toegang tot de VBScript-runtime voor een aangepaste actie.|Deze fout wordt veroorzaakt door een aangepaste actie die is gebaseerd op DLL-bestanden. Bij het oplossen van problemen met de DLL moet u mogelijk gebruikmaken van de hulpmiddelen die worden beschreven in [KB198038 van Microsoft Ondersteuning: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/kb/198038).|
+|0xAB2|Windows Installer heeft geen toegang tot de VBScript-runtime voor een aangepaste actie.|Deze fout wordt veroorzaakt door een aangepaste actie die is gebaseerd op DLL-bestanden. Bij het oplossen van problemen met de DLL moet u mogelijk gebruikmaken van de hulpmiddelen die worden beschreven in [KB198038 van Microsoft Ondersteuning: Nuttige hulpprogramma's voor pakket- en implementatieproblemen](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|De verbinding met het service-eindpunt is beëindigd.|Het proefaccount of het betaalde account is onderbroken. Maak een nieuw proefaccount of betaald account en schrijf u opnieuw in.|
 
 

@@ -1,26 +1,28 @@
 ---
 title: Migratiehandleiding voor het beheer van mobiele apparaten in Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In deze handleiding vindt u instructies voor de migratie van een externe MDM-provider naar Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bde445601b6fe3612a1a3d8bcab4f6996a997228
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e293140838cd772dea4cdf810623cfe92fa0fe9e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512980"
 ---
 # <a name="intune-migration-guide"></a>Migratiehandleiding voor Intune
 
@@ -34,7 +36,7 @@ In deze handleiding vindt u instructies voor de migratie van een externe MDM-pro
 
 In deze handleiding wordt de migratie in twee fasen onderverdeeld die taken, strategieën en tactische richtlijnen omvatten, aan de hand waarvan u stapsgewijs de gehele procedure voor de migratie naar Intune MDM doorloopt.
 
--   [Fase 1: Intune voorbereiden op het beheer van mobiele apparaten](migration-guide-prepare.md)
+-   [Fase 1: Intune voorbereiden op Mobile Device Management](migration-guide-prepare.md)
 
     -   [De vereisten voor de MDM-migratie beoordelen](migration-guide-prepare.md#assess-mdm-requirements)
 
@@ -46,7 +48,7 @@ In deze handleiding wordt de migratie in twee fasen onderverdeeld die taken, str
 
     -   [Speciale overwegingen bij migratie](migration-guide-considerations.md)
 
--   [Fase 2: Migratiecampagne](migration-guide-campaign.md)
+-   [Fase 2: migratiecampagne](migration-guide-campaign.md)
 
     -   [Communicatieplanning](migration-guide-communication-plan.md)
 
@@ -70,4 +72,4 @@ Het is belangrijk dat u beseft dat de nieuwe Intune-implementatie kan afwijken v
 
 ## <a name="next-steps"></a>Volgende stappen
 
-[Fase 1: Intune voorbereiden op het beheer van mobiele apparaten](migration-guide-prepare.md)
+[Fase 1: Intune voorbereiden op Mobile Device Management](migration-guide-prepare.md)

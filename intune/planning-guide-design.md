@@ -1,15 +1,16 @@
 ---
 title: Uw Microsoft Intune-ontwerp maken
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Dit artikel helpt u bij het maken van een ontwerp voor een Microsoft Intune-ontwerp en -implementatie die uitsluitend voor de cloud zijn bestemd.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22af3d4de296d90a89bb3d812cab0e55983e786b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 307895935e1cd6fe2489a4ee8ae03333ce97d55b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512699"
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 
@@ -110,6 +111,10 @@ U kunt [een sjabloon van de bovenstaande tabel downloaden](https://gallery.techn
 
 Intune biedt twee opties voor implementatie: zelfstandig en hybride. Zelfstandig verwijst naar de Intune-service die wordt uitgevoerd in de cloud, hybride verwijst naar de integratie van Intune met System Center Configuration Manager. Deze handleiding is voornamelijk bedoeld voor het gebruik van de zelfstandige optie. [Beslis welke optie het beste aansluit op uw bedrijfsbehoeften.](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
 
+> [!Important]
+>De onboarding van nieuwe hybride MDM-klanten is afgeschaft. Zie de blogpost [Overstappen van hybride Mobile Device Management naar Intune op Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) voor meer informatie.
+
+
 ## <a name="intune-tenant-location"></a>Locatie van Intune-tenant
 
 Als uw organisatie wereldwijd opereert, moet u ook bepalen wat de locatie van uw tenant is wanneer u zich abonneert op de service. Het land wordt gedefinieerd wanneer u zich voor het eerst aanmeldt voor een Intune-abonnement en de regio's kiest die voor u van belang zijn, zoals hieronder worden gedefinieerd:
@@ -133,7 +138,7 @@ Externe afhankelijkheden zijn services en producten die geen deel uitmaken van I
 
 -   Public Key Infrastructure (PKI)
 
-Deze algemene externe afhankelijkheden worden hieronder nader onderzocht
+We onderzoeken deze algemene externe afhankelijkheden hieronder nader.
 
 ### <a name="identity"></a>Identiteit
 
@@ -399,11 +404,9 @@ Hieronder ziet u een voorbeeld van het ontwerpen van nalevingsbeleid:
 U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw nalevingsbeleid vast te stellen.
 #### <a name="conditional-access-policies"></a>Beleid voor voorwaardelijke toegang
 
-Voorwaardelijke toegang wordt gebruikt om alleen compatibele apparaten toegang tot e-mail en andere bedrijfsbronnen te verlenen. Intune werkt met Enterprise Mobility + Security (EMS) om toegang tot bedrijfsbronnen te bewaken. U moet besluiten of voorwaardelijke toegang is vereist en wat er moet worden beveiligd. Meer informatie over [voorwaardelijke toegang](conditional-access.md).
+Voorwaardelijke toegang wordt gebruikt om alleen compatibele apparaten toegang tot e-mail en andere bedrijfsbronnen te verlenen. Intune werkt met Enterprise Mobility + Security (EMS) om toegang tot bedrijfsbronnen te bewaken. Besluit of voorwaardelijke toegang is vereist en wat er moet worden beveiligd. Meer informatie over [voorwaardelijke toegang](conditional-access.md).
 
-Besluit met het oog op onlinetoegang voor welke platformen en gebruikersgroepen beleidsregels voor voorwaardelijke toegang gelden. Daarnaast moet u bepalen of de service-naar-service-connector van Intune moet worden geïnstalleerd of geconfigureerd voor Exchange Online of Exchange On-premises. Meer informatie over het installeren en configureren van de service-naar-service-connectors van Intune: <!---these links are correct--->
-
--   [Exchange Online](exchange-service-connector-configure.md)
+Besluit met het oog op onlinetoegang voor welke platformen en gebruikersgroepen beleidsregels voor voorwaardelijke toegang gelden. Daarnaast moet u bepalen of de connector van Intune moet worden geïnstalleerd of geconfigureerd voor Exchange On-premises: 
 
 -   [Exchange On-premises](exchange-connector-install.md)
 

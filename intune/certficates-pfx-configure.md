@@ -1,14 +1,15 @@
 ---
-title: Certificaten met een persoonlijke en openbare sleutel gebruiken in Microsoft Intune - Azure | Micrososft Docs
-description: PKCS-certificaten (Public Key Cryptography Standards) toevoegen of maken met Microsoft Intune, inclusief de stappen om een basiscertificaat te exporteren, de certificaatsjabloon te configureren, de Microsoft Intune Certificate Connector (NDES) te downloaden en installeren, een apparaatconfiguratieprofiel te maken, een PKCS-certificaatprofiel te maken in Azure en uw certificeringsinstantie (CA).
+title: Certificaten met een persoonlijke en openbare sleutel gebruiken in Microsoft Intune - Azure | Microsoft Docs
+description: 'PKCS-certificaten (PKCS: Public Key Cryptography Standards) toevoegen of maken met Microsoft Intune, inclusief de stappen om een basiscertificaat te exporteren, de certificaatsjabloon te configureren, de Intune Certificate Connector (NDES) te downloaden en installeren, een apparaatconfiguratieprofiel te maken en een PKCS-certificaatprofiel in Azure en uw certificeringsinstantie (CA) te maken.'
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 04/03/2019
+ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: lacranda
@@ -16,65 +17,80 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87a7f7f77914b899b7173b8bfacb82cd0c50c6e7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b8b05b7f2a0b56321023bc8444528578aeface0b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508543"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
-Met certificaten wordt de toegang tot uw bedrijfsbronnen, zoals een VPN of Wi-Fi-netwerk, geverifieerd en beveiligd. Veel organisaties maken gebruik van certificaten die gebruikmaken van een persoonlijk en openbaar sleutelpaar, ook wel bekend als PKCS-certificaten. Microsoft Intune bevat ingebouwde instellingen voor het gebruik van PKCS-certificaten voor toegang en verificatie van uw bedrijfsbronnen. Deze instellingen worden gepusht naar (of geïmplementeerd op) apparaten met behulp van apparaatconfiguratieprofielen in Intune.
+Intune ondersteunt het gebruik van certificaten voor persoonlijke en openbare sleutelparen (PKCS). Met behulp van dit artikel kunt u de vereiste infrastructuur, zoals on-premises certificaatconnectors, configureren, een PKCS-certificaat exporteren en vervolgens het certificaat toevoegen aan een Intune-apparaatconfiguratieprofiel.
 
-In dit artikel worden de vereisten beschreven voor het gebruik van PKCS-certificaten en leest u hoe u een PKCS-profiel exporteert en toevoegt aan een Intune-apparaatconfiguratieprofiel.
+Microsoft Intune bevat ingebouwde instellingen voor het gebruik van PKCS-certificaten voor toegang en verificatie van uw bedrijfsbronnen. Met certificaten wordt de toegang tot uw bedrijfsbronnen, zoals een VPN of Wi-Fi-netwerk, geverifieerd en beveiligd. U implementeert deze instellingen naar apparaten met behulp van apparaatconfiguratieprofielen in Intune.
+
 
 ## <a name="requirements"></a>Vereisten
 
-Als u PKCS-certificaten wilt gebruiken met Intune, moet u de volgende infrastructuur hebben:
+Als u PKCS-certificaten wilt gebruiken met Intune, hebt u de volgende infrastructuur nodig:
 
-- **Active Directory-domein**: Alle servers die in dit gedeelte worden genoemd, moeten lid zijn van uw Active Directory-domein.
+- **Active Directory-domein**:  
+  Alle servers die in dit gedeelte worden genoemd, moeten lid zijn van uw Active Directory-domein.
 
-  Zie [AD DS-ontwerp- en -planning](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning) voor meer informatie over het installeren en configureren van AD DS.
+  Zie [AD DS-ontwerp- en -planning](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning) voor meer informatie over het installeren en configureren van AD DS (Active Directory Domain Services).
 
-- **Certificeringsinstantie** (CA): Een certificeringsinstantie (CA) voor ondernemingen
+- **Certificeringsinstantie**:  
+   Een certificeringsinstantie (CA) voor ondernemingen.
 
-  Raadpleeg [Stapsgewijze handleiding bij Active Directory Certificate Services](https://technet.microsoft.com/library/cc772393) als u meer informatie wilt over het installeren en configureren van Active Directory Certificate Services (AD CS).
+  Raadpleeg [Stapsgewijze handleiding bij Active Directory Certificate Services](https://technet.microsoft.com/library/cc772393) als u informatie wilt over het installeren en configureren van Active Directory Certificate Services (AD CS).
 
-  > [!WARNING]
+  > [!WARNING]  
   > Voor Intune moet u AD CS uitvoeren met een certificeringsinstantie (CA) voor ondernemingen, niet met een zelfstandige certificeringsinstantie.
 
-- **Een client**: deze wordt gekoppeld aan de CA voor ondernemingen
+- **Een client**:  
+  deze wordt gekoppeld aan de CA voor ondernemingen.
 
-- **Basiscertificaat**: een geëxporteerde kopie van uw basiscertificaat van uw CA voor ondernemingen
+- **Basiscertificaat**:  
+  Een geëxporteerde kopie van uw basiscertificaat van uw CA voor ondernemingen.
 
-- **Microsoft Intune Certificate Connector**: gebruik Azure Portal om het installatieprogramma voor de **certificaatconnector** (**NDESConnectorSetup.exe**) te downloaden. 
+- **Intune-certificaatconnector** (ook wel de *NDES-certificaatconnector* genoemd):  
+  Ga in de Intune-portal naar **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen** en volgt u de *stappen om de connector te installeren voor PKCS #12*. Gebruik de downloadkoppeling om het downloaden van het installatieprogramma voor de certificaatconnector **NDESConnectorSetup.exe** te starten.  
 
-  De connector verwerkt PKCS-certificaataanvragen die worden gebruikt voor verificatie of S/MIME-e-mailondertekening.
+  Met deze connector worden PKCS-certificaataanvragen verwerkt die worden gebruikt voor verificatie of S/MIME-e-mailondertekening.
 
   De NDES-certificaatconnector ondersteunt ook de Federal Information Processing Standard-modus (FIPS). FIPS is niet vereist, maar wanneer deze modus is ingeschakeld, kunt u certificaten uitgeven en intrekken.
 
-- **PFX-certificaatconnector voor Microsoft Intune**: als u S/MIME-e-mailversleuteling wilt gebruiken, gebruikt u Azure Portal om het installatieprogramma voor de **PFX-certificaatconnector voor Microsoft Intune** ( **PfxCertificateConnectorBootstrapper.exe**) te downloaden. De connector verwerkt aanvragen voor PFX-bestanden die zijn geïmporteerd in Intune voor S/MIME-e-mailversleuteling voor een specifieke gebruiker.
+- **PFX-certificaatconnector voor Microsoft Intune**:  
+   Als u van plan bent om S/MIME-versleuteling te gebruiken voor e-mailberichten, moet u via de Intune-portal de connector voor *geïmporteerde PFX-certificaten* downloaden.  Ga naar **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen** en volg de *stappen om de connector installeren voor geïmporteerde PFX-certificaten*. Gebruik de downloadkoppeling om het downloaden van het installatieprogramma **PfxCertificateConnectorBootstrapper.exe** te starten. 
 
-- **Windows Server**: deze host het volgende:
+  Deze connector verwerkt aanvragen voor PFX-bestanden die zijn geïmporteerd in Intune voor S/MIME-e-mailversleuteling voor een specifieke gebruiker.  
 
-  - Microsoft Intune-certificaatconnector (NDESConnectorSetup.exe) voor scenario's voor verificatie en S/MIME-e-mailondertekening
-  - PFX-certificaatconnector voor Microsoft Intune (PfxCertificateConnectorBootstrapper.exe) voor scenario's voor S/MIME-e-mailversleuteling.
+  Deze connector kan automatisch worden bijgewerkt wanneer nieuwe versies beschikbaar komen. Als u de updatemogelijkheid wilt gebruiken, moet u:
+  - De connector voor geïmporteerde PFX-certificaten voor Microsoft Intune installeren op uw server.
+  - Voor het automatisch ontvangen van belangrijke updates moet u ervoor zorgen dat firewalls geopend zijn, waarmee de connector contact kan opnemen met **autoupdate.msappproxy.net** op poort **443**.  
 
-  U kunt beide connectors (**Microsoft Intune-certificaatconnector** en **PFX-certificaatconnector voor Microsoft Intune**) op dezelfde server uitvoeren.
+
+- **Windows Server**:  
+  U gebruikt een Windows Server als host voor:
+
+  - Microsoft Intune Certificate Connector: voor verificatie en voor scenario's met S/MIME-e-mailondertekening
+  - PFX-certificaatconnector voor Microsoft Intune: voor scenario's met S/MIME-e-mailversleuteling.
+
+  U kunt beide connectors (*Microsoft Intune Certificate Connector* en *PFX-certificaatconnector*) op dezelfde server installeren.
 
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>Het basiscertificaat exporteren vanuit de CA voor ondernemingen
 
-Voor verificatie met VPN, Wi-Fi of andere bronnen hebt u op elk apparaat een basis- of tussen-CA-certificaat nodig. In de volgende stappen wordt uitgelegd hoe u het vereiste certificaat kunt verkrijgen op basis van uw CA voor ondernemingen.
+Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op elk apparaat een basis- of tussen-CA-certificaat nodig. In de volgende stappen wordt uitgelegd hoe u het vereiste certificaat kunt verkrijgen op basis van uw CA voor ondernemingen.
 
-1. Meld u aan bij uw CA voor ondernemingen met een account met beheerdersbevoegdheden.
-2. Open een opdrachtprompt als beheerder.
-3. Exporteer het basis-CA-certificaat (.cer) naar een locatie waar u het later kunt gebruiken.
-4. Nadat de wizard is voltooid, maar voordat de wizard wordt gesloten, klikt u op **Gebruikersinterface van certificaatconnector starten**.
+**Opdrachtregel invoeren**:  
+1. Meld u aan bij de basiscertificeringsinstantieserver met een beheerdersaccount.
+ 
+2. Ga naar **Start** > **Uitvoeren** en voer vervolgens **Cmd** uit om de opdrachtprompt openen. 
+    
+3. Geef **certutil-ca.cert ca_name.cer** op om het basiscertificaat te exporteren als een bestand met de naam *ca_name.cer*.
 
-   `certutil -ca.cert certnew.cer`
 
-   Zie [Certutil-taken voor het beheren van certificaten](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign) voor meer informatie.
 
 ## <a name="configure-certificate-templates-on-the-ca"></a>Certificaatsjablonen configureren op de CA
 
@@ -118,14 +134,15 @@ Voor verificatie met VPN, Wi-Fi of andere bronnen hebt u op elk apparaat een bas
 
 ### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune-certificaatconnector
 
-> [!IMPORTANT] 
-> De Microsoft Intune-certificaatconnector **moet** worden geïnstalleerd op een afzonderlijke Windows-server. Deze kan niet worden geïnstalleerd op de verlenende certificeringsinstantie (CA).
+> [!IMPORTANT]  
+> De Microsoft Intune-certificaatconnector kan niet worden geïnstalleerd op de verlenende certificeringsinstantie (CA) en moet in plaats daarvan op een afzonderlijke Windows-server worden geïnstalleerd.  
 
 1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Intune**.
-2. Selecteer **Apparaatconfiguratie** > **Certificeringsinstantie** > **Toevoegen**.
-3. Download het connectorbestand en sla het op. Sla het bestand op op een locatie die toegankelijk is vanaf de server waar u de connector gaat installeren.
+2. Selecteer **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen**.
+3. Download het connectorbestand en sla dit op een locatie op waar u het kunt openen vanaf de server waarop u de connector gaat installeren.
 
-    ![ConnectorDownload][ConnectorDownload]
+    ![De NDES-connector downloaden](media/certificates-pfx-configure/download-ndes-connector.png)
+ 
 
 4. Nadat het downloaden is voltooid, meldt u zich aan bij de server. Vervolgens:
 
@@ -136,32 +153,31 @@ Voor verificatie met VPN, Wi-Fi of andere bronnen hebt u op elk apparaat een bas
 5. De NDES Connector opent het tabblad **Inschrijving**. Als u de verbinding met Intune wilt inschakelen, kiest u **Aanmelden** en geeft u een account met globale beheerdersmachtigingen op.
 6. U wordt aangeraden om op het tabblad **Geavanceerd** het keuzerondje **Systeemaccount van deze computer gebruiken (standaard)** ingeschakeld te laten.
 7. **Toepassen** > **Sluiten**
-8. Ga terug naar de Azure Portal (**Intune** > **Apparaatconfiguratie** > **Certificeringsinstantie**). Even later wordt een groen vinkje weergegeven en is de **Verbindingsstatus** **Actief**. Uw connector-server kan nu communiceren met Intune.
+8. Ga terug naar de Intune-portal (**Intune** > **Apparaatconfiguratie** > **Certificaatconnectors**). Even later wordt een groen vinkje weergegeven en is de **Verbindingsstatus** **Actief**. Uw connector-server kan nu communiceren met Intune.
 9. Als u een webproxy in uw netwerkomgeving hebt, hebt u mogelijk extra configuraties nodig voordat de connector werkt. Raadpleeg [Werken met bestaande on-premises proxyservers](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) in de Azure Active Directory-documentatie voor meer informatie.
 
-> [!NOTE]
-> TLS 1.2-ondersteuning wordt geleverd met de Microsoft Intune-certificaatconnector. Als de server met daarop de Microsoft Intune-certificaatconnector TLS 1.2 ondersteunt, wordt TLS 1.2 gebruikt. Als de server TLS 1.2 niet ondersteunt, wordt TLS 1.1 gebruikt. Momenteel wordt TLS 1.1 gebruikt voor verificatie tussen de apparaten en de server.
+> [!NOTE]  
+> Microsoft Intune Certificate Connector ondersteunt TLS 1.2. Als TLS 1.2 is geïnstalleerd op de server die als host fungeert voor de connector, maakt de connector gebruik van TLS 1.2. Anders wordt TLS 1.1 gebruikt. Momenteel wordt TLS 1.1 gebruikt voor verificatie tussen de apparaten en de server.
 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>PFX-certificaatconnector voor Microsoft Intune
 
 1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-2. Selecteer **Apparaatconfiguratie** > **Certificeringsinstantie** > **Toevoegen**
+2. Selecteer **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen**
 3. Download de PFX-certificaatconnector voor Microsoft Intune en sla deze op. Sla het bestand op op een locatie die toegankelijk is vanaf de server waar u de connector gaat installeren.
 4. Nadat het downloaden is voltooid, meldt u zich aan bij de server. Vervolgens:
 
     1. Controleer of .NET 4.6 Framework of hoger is geïnstalleerd. Dit is vereist voor de PFX-certificaatconnector voor Microsoft Intune. Als .NET 4.6 Framework niet is geïnstalleerd, wordt dit automatisch door het installatieprogramma geïnstalleerd.
-    2. Voer het installatieprogramma (PfxCertificateConnectorBootstrapper.exe) uit en accepteer de standaardlocatie. De connector wordt geïnstalleerd in `Program Files\Microsoft Intune\PFXCertificateConnector`.
+    2. Voer het installatieprogramma (PfxCertificateConnectorBootstrapper.exe) uit en accepteer de standaardlocatie, waardoor de connector op `Program Files\Microsoft Intune\PFXCertificateConnector` wordt geïnstalleerd.
     3. De connectorservice wordt uitgevoerd onder het lokale systeemaccount. Als een proxy is vereist voor toegang tot internet, moet u bevestigen dat het lokale serviceaccount toegang heeft tot de proxy-instellingen op de server.
 
 5. Het tabblad **Inschrijving** wordt na de installatie geopend. Als u de verbinding met Intune wilt inschakelen, kiest u **Aanmelden** en geeft u een account met globale beheerdersmachtigingen voor Azure of beheerdersbevoegdheden voor Intune op.
 6. Sluit het venster.
-7. Ga terug naar de Azure Portal (**Intune** > **Apparaatconfiguratie** > **Certificeringsinstantie**). Even later wordt een groen vinkje weergegeven en is de **Verbindingsstatus** **Actief**. Uw connector-server kan nu communiceren met Intune.
+7. Ga terug naar Azure Portal (**Intune** > **Apparaatconfiguratie** > **Certificaatconnectors**). Even later wordt een groen vinkje weergegeven en is de **Verbindingsstatus** **Actief**. Uw connector-server kan nu communiceren met Intune.
 
 ## <a name="create-a-trusted-certificate-profile"></a>Een vertrouwd certificaatprofiel maken
 
 1. Ga in de [Azure-portal](https://portal.azure.com) naar **Intune** > **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-
-   ![NavigateIntune][NavigateIntune]
+    ![Navigeren naar Intune en een nieuw profiel voor een vertrouwd certificaat maken](media/certificates-pfx-configure/certificates-pfx-configure-profile-new.png)
 
 2. Voer de volgende eigenschappen in:
 
@@ -175,7 +191,7 @@ Voor verificatie met VPN, Wi-Fi of andere bronnen hebt u op elk apparaat een bas
    > [!NOTE]
    > Afhankelijk van het platform dat u in **stap 3** kiest, hebt u al dan niet de mogelijkheid het **Doelarchief** voor het certificaat te kiezen.
 
-   ![ProfileSettings][ProfileSettings]
+   ![Een profiel maken en een vertrouwd certificaat uploaden](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
 
 4. Selecteer **OK** > **Maken** om het profiel op te slaan.
 5. Raadpleeg [Microsoft Intune-apparaatprofielen toewijzen](device-profile-assign.md) om het nieuwe profiel aan een of meer apparaten toe te wijzen.
@@ -228,6 +244,26 @@ Na het importeren van de certificaten naar Intune maakt u een **geïmporteerd PK
 
 4. Selecteer **OK** > **Maken** om het profiel op te slaan.
 5. Raadpleeg [Microsoft Intune-apparaatprofielen toewijzen](device-profile-assign.md) om het nieuwe profiel aan een of meer apparaten toe te wijzen.
+
+## <a name="whats-new-for-connectors"></a>Wat is er nieuw voor connectors
+Updates voor de twee certificaatconnectors worden regelmatig uitgebracht. Als we een connector bijwerken, kunt u hier over de wijzigingen lezen. 
+
+De *PFX-certificaatconnector* [biedt ondersteuning voor automatische updates](#requirements), terwijl de Intune-certificaatconnector handmatig wordt bijgewerkt.
+ 
+### <a name="april-2-2019"></a>2 april 2019
+- **NDES-certificaatconnector - versie 6.1904.1.0**  
+  Wijzigingen in deze release:  
+  - Er is een probleem opgelost waarbij de connector zich mogelijk niet kan inschrijven bij Intune na aanmelding bij de connector met een globale beheerdersaccount.  
+  - Deze bevat betrouwbaarheidsoplossingen voor het intrekken van certificaten.  
+  - Deze bevat prestatieoplossingen om de snelheid te verhogen waarmee PKCS-certificaataanvragen worden verwerkt.  
+
+- **PFX-certificaatconnector - versie 6.1904.0.401**
+  > [!NOTE]  
+  > Er is tot en met 11 april 2019 geen automatische update voor deze versie van het PFX-connector beschikbaar.  
+
+  Wijzigingen in deze release:  
+  - Er is een probleem opgelost waarbij de connector zich mogelijk niet kan inschrijven bij Intune na aanmelding bij de connector met een globale beheerdersaccount.  
+
 
 ## <a name="next-steps"></a>Volgende stappen
 

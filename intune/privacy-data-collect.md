@@ -6,21 +6,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1171740-936d-46a5-af37-f418bd6fa63e
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73cd8b4f0cf5bdfa02a301d476df31a01fc9691f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eede87fdca31e8e263d1dea78d766fec59f05f58
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511299"
 ---
 # <a name="data-collection-in-intune"></a>Gegevensverzameling in Intune
 
@@ -129,7 +131,7 @@ Geaggregeerde gegevens die door Intune worden verzameld, zijn mogelijk, maar nie
     - Aantal geïnstalleerde apparaten
     - installedDeviceCount: het aantal apparaten waarop de toepassing is geïnstalleerd.
     - notApplicableDeviceCount: het aantal apparaten waarvoor de toepassing niet van toepassing is.
-    - notInstalledDeviceCount het aantal apparaten waarvoor de toepassing van toepassing is, maar waarop de installatie niet is uitgevoerd.
+    - notInstalledDeviceCount: het aantal apparaten waarvoor de toepassing van toepassing is, maar waarop de installatie niet is uitgevoerd.
     - pendingInstallDeviceCount: het aantal apparaten waarvoor de toepassing van toepassing is en waarvoor de installatie in behandeling is.
     
 ## <a name="next-steps"></a>Volgende stappen

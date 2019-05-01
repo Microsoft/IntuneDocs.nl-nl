@@ -9,18 +9,20 @@ ms.date: 05/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 675e45a7f49a943cb57135c141a9331ba24fabe7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d43c999cf5dc90d62b9409e3c4565502b773ddf4
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508218"
 ---
 # <a name="microsoft-intune-service-description"></a>Beschrijving van de Microsoft Intune-service
 
@@ -35,7 +37,7 @@ Intune is nauw geïntegreerd met Azure Active Directory (Azure AD) voor identite
 Raadpleeg de [Intune-documentatie](https://docs.microsoft.com/intune/) voor meer informatie over hoe u apparaten en apps kunt beheren, en bedrijfsgegevens kunt beveiligen met Intune.
 
 ## <a name="30-day-free-trial"></a>Gratis proefversie van 30 dagen
-U kunt 30 dagen lang een gratis proefversie van Intune met 100 gebruikerslicenties gebruiken. [Ga naar de registratiepagina van Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) om aan de slag te gaan met uw gratis proefabonnement. Als uw organisatie een Enterprise Agreement of equivalente volumelicentieovereenkomst heeft, neemt u contact op met uw Microsoft-vertegenwoordiger om uw gratis proefabonnement in te stellen.
+U kunt 30 dagen lang een gratis proefversie van Intune met 100 gebruikerslicenties gebruiken. [Ga naar de registratiepagina van Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) om aan de slag te gaan met uw gratis proefabonnement. Als uw organisatie een Enterprise Agreement of equivalente volumelicentieovereenkomst heeft, neemt u contact op met uw Microsoft-vertegenwoordiger om uw gratis proefabonnement in te stellen.
 
 > [!NOTE]
 > Als uw organisatie een werk- of schoolaccount voor Microsoft Online Services heeft en u dit Intune-abonnement na de proefperiode mogelijk in uw productieomgeving wilt gebruiken, kiest u op de geopende pagina de optie **Aanmelden** en voert u de verificatie uit met het account voor de algemeen beheerder voor uw organisatie. Zo zorgt u ervoor dat uw Intune-proefabonnement wordt gekoppeld aan uw bestaande werk- of schoolaccount.
@@ -57,7 +59,7 @@ Omdat het MDM-ecosysteem regelmatig wordt gewijzigd met bijgewerkte versies van 
 
 - [Wat is er nieuw in Microsoft Intune?](whats-new.md) Dit onderwerp wordt maandelijks bijgewerkt met de service-update en wekelijks wanneer er bijvoorbeeld apps zoals de bedrijfsportal-app worden vrijgegeven.
 
-- Belangrijke updates van de service worden ook aangekondigd in het berichtencentrum van de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx). Als u de bijbehorende [mobiele Office 365-beheer-app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) installeert, kunt u meldingen ontvangen op uw mobiele apparaat. Lees hier meer over het werken met het [berichtencentrum voor Office 365](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
+- Belangrijke updates van de service worden ook aangekondigd in het berichtencentrum van de [Microsoft 365-beheerportal](https://admin.microsoft.com/). Als u de bijbehorende [mobiele Office 365-beheer-app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) installeert, kunt u meldingen ontvangen op uw mobiele apparaat. Lees hier meer over het werken met het [berichtencentrum voor Office 365](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
 
     Een paar nuttige tips:
 
@@ -76,7 +78,7 @@ Omdat het MDM-ecosysteem regelmatig wordt gewijzigd met bijgewerkte versies van 
     - [De blog Intune Support](https://blogs.technet.microsoft.com/intunesupport/)
 
 >[!Note]
->U kunt de servicestatus van Intune bewaken in de [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx). Kies **Servicestatus** in het linkerdeelvenster. U kunt ook de [mobiele app voor Office 365-beheer](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) gebruiken om de servicestatus weer te geven.
+>U kunt de servicestatus van Intune bewaken in de [Microsoft 365-beheerportal](https://admin.microsoft.com). Kies **Servicestatus** in het linkerdeelvenster. U kunt ook de [mobiele app voor Office 365-beheer](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) gebruiken om de servicestatus weer te geven.
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Typen meldingen die Microsoft over de Intune-service biedt
 
@@ -101,7 +103,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 - **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
 
 ## <a name="language-support"></a>Taalondersteuning
-Intune wordt uitgevoerd in Azure Portal, en die portal biedt ondersteuning voor de volgende talen: Chinees (Vereenvoudigd), Chinees (Traditioneel), Duits, Engels, Frans, Hongaars, Italiaans, Japans, Koreaans, Nederlands, Pools, Portugees (Brazilië), Portugees (Portugal), Russisch, Spaans, Tsjechisch, Turks en Zweeds.
+Intune wordt uitgevoerd in Azure Portal, die ondersteuning biedt voor deze talen: Chinees (Vereenvoudigd), Chinees (Traditioneel), Duits, Engels, Frans, Hongaars, Italiaans, Japans, Koreaans, Nederlands, Pools, Portugees (Brazilië), Portugees (Portugal), Russisch, Spaans, Tsjechisch, Turks en Zweeds.
 
 De Intune-beheerconsole en de interface voor mobiele gebruikers worden ondersteund in de talen Deens, Fins, Grieks, Noors en Roemeens, en in alle talen die worden ondersteund door de Azure-portal.
 

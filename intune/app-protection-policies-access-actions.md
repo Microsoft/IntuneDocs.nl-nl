@@ -10,6 +10,7 @@ ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb3038c85e34d3b366c759cdf645c5caf78aa43f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5b07081ceae3ba07148723490977546fb3edcdd6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490423"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Gegevens selectief wissen met toegangsacties voor het app-beveiligingsbeleid in Intune
 
@@ -83,6 +84,8 @@ Voor Android kunt u acties configureren voor de volgende instellingen met behulp
 -  Minimale versie van de app
 -  Minimale patchversie
 -  Apparaatfabrikant(en)
+-  SafetyNet-attestation voor apparaat
+-  Bedreigingsscan voor apps
 
 Als u de instelling **Apparaatfabrikant(en)** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in van Android-producenten. U vindt de Android-fabrikant van een apparaat in de apparaatinstellingen.<br>
 Voorbeeldinvoer: *Fabrikant A;Fabrikant B* 

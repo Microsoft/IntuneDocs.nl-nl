@@ -5,35 +5,33 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/27/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504276"
 ---
-# <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10-sjablonen voor het configureren van instellingen voor groepsbeleid in Microsoft Intune
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10-sjablonen gebruiken voor het configureren van instellingen voor groepsbeleid in Microsoft Intune
 
 Wanneer u apparaten in uw organisatie beheert, moet u een groep instellingen maken die wordt toegepast op verschillende apparaatgroepen. Stel dat u beschikt over verschillende apparaatgroepen. Aan GroupA wilt u een specifieke set instellingen toewijzen. Aan GroupB wilt u een andere set instellingen toewijzen. U wilt ook een eenvoudig overzicht verkrijgen van de instellingen die u kunt configureren.
 
-U kunt deze taak uitvoeren met **Beheersjablonen** in Microsoft Intune. De beheersjablonen bevatten honderden instellingen waarmee functies kunnen worden geconfigureerd voor Internet Explorer, Microsoft Office-programma's, Extern bureaublad, toegang tot OneDrive, het gebruik van een afbeeldingswachtwoord of een pincode voor aanmelding en nog veel meer. Deze sjablonen zijn vergelijkbaar met instellingen voor groepsbeleid (GPO) in Active Directory (AD) en zijn [door ADMX ondersteunde instellingen](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) waarbij gebruik wordt gemaakt van XML. De sjablonen in Intune zijn echter 100% cloudgebaseerd. De instellingen in deze sjablonen kunnen eenvoudiger worden geconfigureerd en het is eenvoudiger om de gewenste instellingen te zoeken.
+U kunt deze taak uitvoeren met **Beheersjablonen** in Microsoft Intune. De beheersjablonen bevatten honderden instellingen waarmee functies kunnen worden geconfigureerd voor Internet Explorer, Microsoft Office-programma's, Extern bureaublad, toegang tot OneDrive, het gebruik van een afbeeldingswachtwoord of een pincode voor aanmelding en nog veel meer. Deze sjablonen zijn vergelijkbaar met instellingen voor groepsbeleid (GPO) in Active Directory (AD) en zijn [door ADMX ondersteunde instellingen](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (hiermee opent u een andere Docs-site) waarbij gebruik wordt gemaakt van XML. De sjablonen in Intune zijn echter 100% cloudgebaseerd. De instellingen in deze sjablonen kunnen eenvoudiger worden geconfigureerd en het is eenvoudiger om de gewenste instellingen te zoeken.
 
 **Beheersjablonen** zijn ingebouwd in Intune en hoeven niet te worden aangepast; dit geldt ook voor het gebruik van de OMA-URI. Gebruik deze sjablooninstellingen als basis voor het beheren van uw Windows 10-apparaten, als onderdeel van uw MDM-oplossing (Mobile Device Management).
 
 In dit artikel staan de stappen voor het maken van een sjabloon voor Windows 10-apparaten. U leest hier ook meer over het filteren van de beschikbare instellingen in Microsoft Intune. Wanneer u de sjabloon maakt, wordt er ook een apparaatconfiguratieprofiel gemaakt. U kunt dit profiel vervolgens toewijzen aan of implementeren op Windows 10-apparaten in uw organisatie.
-
-> [!NOTE]
-> Beheersjablonen worden ondersteund voor zelfstandige apparaten. Ze worden momenteel niet ondersteund voor System Center Configuration Manager-apparaten (SCCM) die onder gezamenlijk beheer vallen.
 
 ## <a name="create-a-template"></a>Een sjabloon maken
 
@@ -75,6 +73,8 @@ In deze sjablonen zijn honderden verschillende instellingen beschikbaar. Gebruik
   ![Klik op Pad om op alfabetische volgorde te sorteren](./media/administrative-templates-windows/search-copy-settings.png)
 
   Zoek in een ander voorbeeld naar `microsoft word`. U ziet alle instellingen die u voor het programma Microsoft Word kunt instellen. Zoek naar `explorer` om te bekijken welke Internet Explorer-instellingen u allemaal aan uw sjabloon kunt toevoegen.
+
+Voor deze functie worden [Beleids-CSP’s voor Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) gebruikt (er wordt een andere Docs-site geopend). De CSP's werken op verschillende edities van Windows zoals Home, Professional, Enterprise enzovoort. Ga naar [Beleids-CSP's voor Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) om te zien of een bepaalde CSP op een specifieke editie werkt (er wordt een andere Docs-site geopend).
 
 ## <a name="next-steps"></a>Volgende stappen
 

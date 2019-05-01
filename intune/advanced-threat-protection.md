@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490541"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Naleving voor Windows Defender ATP met voorwaardelijke toegang in Intune afdwingen
 
@@ -109,12 +110,12 @@ Het nalevingsbeleid bepaalt een aanvaardbaar risiconiveau op een apparaat.
 2. Selecteer **Apparaatconformiteit** > **Beleid** > **Beleid maken**.
 3. Voer een **Naam** en **Beschrijving** in.
 4. In **Platform** selecteert u **Windows 10 en hoger**.
-5. Stel in de instellingen voor **Windows Defender ATP** de optie **Vereisen dat het apparaat op of onder het apparaatdreigingsniveau moet zijn** in op het gewenste niveau:
+5. Stel in de instellingen voor **Windows Defender ATP** de optie **Vereisen dat het apparaat op of onder het apparaatdreigingsniveau moet zijn** in op het gewenste niveau. De classificatie van bedreigingsniveaus wordt [bepaald door Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
 
-  - **Veilig**: Dit is het veiligste niveau. Het apparaat heeft geen toegang tot bedrijfsresources als er ook maar één bedreiging is gevonden. Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.
-  - **Laag**: Het apparaat is conform als er alleen bedreigingen van een laag niveau aanwezig zijn. Apparaten met gemiddelde of hoge dreigingsniveaus zijn niet conform.
-  - **Gemiddeld**: Het apparaat is conform als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
-  - **Hoog**: Dit niveau is het minst veilig en laat alle bedreigingsniveaus toe. Dus apparaten met hoge, gemiddelde of lage bedreigingsniveaus worden beschouwd als conform.
+   - **Veilig**: Dit is het veiligste niveau. Het apparaat heeft geen toegang tot bedrijfsresources als er ook maar één bedreiging is gevonden. Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel. (Windows Defender ATP gebruikt de waarde *Veilig*.)
+   - **Laag**: Het apparaat is conform als er alleen bedreigingen van een laag niveau aanwezig zijn. Apparaten met gemiddelde of hoge dreigingsniveaus zijn niet conform.
+   - **Gemiddeld**: Het apparaat is conform als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
+   - **Hoog**: Dit niveau is het minst veilig en laat alle bedreigingsniveaus toe. Dus apparaten met hoge, gemiddelde of lage bedreigingsniveaus worden beschouwd als conform.
 
 6. Selecteer **OK** en **Maken** om wijzigingen op te slaan (en het beleid aan te maken).
 
@@ -126,10 +127,13 @@ Het nalevingsbeleid bepaalt een aanvaardbaar risiconiveau op een apparaat.
 4. Neem uw Azure AD-groepen op of sluit ze uit om ze toe te wijzen aan het beleid.
 5. Selecteer **Opslaan** voor het implementeren van het beleid naar de groepen. De apparaten die worden gebruikt door de gebruikers op wie het beleid is toegepast, worden gecontroleerd om te zien of ze conform zijn.
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Beleid voor voorwaardelijke toegang voor Azure AD maken
-Het beleid voor voorwaardelijke toegang blokkeert de toegang tot resources *als* het apparaat niet conform is. Dus als een apparaat het risiconiveau overschrijdt, kunt u toegang tot bedrijfsresources zoals SharePoint of Exchange Online blokkeren.
+## <a name="create-a-conditional-access-policy"></a>Beleid voor voorwaardelijke toegang maken
+Het beleid voor voorwaardelijke toegang blokkeert de toegang tot resources *als* het apparaat niet conform is. Dus als een apparaat het risiconiveau overschrijdt, kunt u toegang tot bedrijfsresources zoals SharePoint of Exchange Online blokkeren.  
 
-1. Open in [Azure Portal](https://portal.azure.com) **Azure Active Directory** > **Voorwaardelijke toegang** > **Nieuw beleid**.
+> [!TIP]  
+> Voorwaardelijke toegang is een technologie van Azure Active Directory (Azure AD). Het knooppunt voor voorwaardelijke toegang dat via *Intune* wordt geopend, is hetzelfde als het knooppunt dat u opent via *Azure AD*.  
+
+1. Open in [Azure Portal](https://portal.azure.com) **Intune** > **Voorwaardelijke toegang** > **Nieuw beleid**.
 2. Voer een **Naam** voor het beleid in en selecteer **Gebruikers en groepen**. Gebruik de opties Opnemen of Uitsluiten om uw groepen voor het beleid toe te voegen en selecteer **Klaar**.
 3. Selecteer **Cloud-apps** en kies welke apps u wilt beveiligen. Kies bijvoorbeeld **Apps selecteren** en selecteer **Office 365 SharePoint Online** en **Office 365 Exchange Online**.
 

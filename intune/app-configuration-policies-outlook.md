@@ -10,17 +10,18 @@ ms.date: 01/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed3352bf494ddab61b2e8a53422de1adfae5f0c0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 0aff39eeb8a825c4161ee92d798dc817d5928995
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503964"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Configuratie-instellingen voor Microsoft Outlook 
 
@@ -35,5 +36,5 @@ Bij het toevoegen van een configuratiebeleid in Intune kunt u instellingen speci
 Zie voor informatie over het instellen van een Outlook-account en over procedurestappen voor iOS- en Android-apparaten in Microsoft Intune [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) (Outlook voor iOS- en Android-appconfiguratie-instellingen implementeren).
 
 ## <a name="next-steps"></a>Volgende stappen
-[E-mailinstellingen configureren in Intune](email-settings-configure.md)
 
+- Zie [App-configuratiebeleidsregels voor Microsoft Intune](app-configuration-policies-overview.md) voor meer informatie

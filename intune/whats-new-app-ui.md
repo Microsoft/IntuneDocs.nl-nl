@@ -1,49 +1,97 @@
 ---
 title: UI-updates voor Intune-apps voor eindgebruikers
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ontdek wat is gewijzigd in de gebruikersinterface voor apps op eindgebruikersapparaten met Microsoft Intune.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2018
-ms.topic: article
+ms.date: 04/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0d6a798f9f16f4eaa0e882fb7d90203be912051f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61517279"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
-Lees welke updates zijn aangebracht in de gebruikersinterface voor apps die uw eindgebruikers zien in deze versie van Microsoft Intune. Inzicht in deze updates kan u helpen bij de communicatie met gebruikers en het bijwerken van eventuele aangepaste documentatie die u hebt gemaakt om uw implementatie te ondersteunen. Zo kunt u beter problemen oplossen wanneer ze de helpdesk bellen voor ondersteuning via de bedrijfsportal.
+Informatie over de meest recente updates voor de Microsoft Intune-apps. We voegen regelmatig elementen toe aan de Intune-bedrijfsportal-app en de website en brengen verbeteringen aan. Als u een Intune-beheerder bent of iemand van de ondersteuning, biedt dit artikel de informatie die u nodig hebt om:
+
+* Studenten en werknemers te waarschuwen voor wijzigingen in de app en in de inschrijving ervoor.
+* De documentatie of de helpdeskprocedures van uw organisatie bij te werken.  
+
+Zorg ervoor dat, als u een werknemer of student bent, u de schermafbeeldingen en koppelingen naar de Help-documentatie voor de bedrijfsportal bekijkt. Zie de [Help-documentatie voor bedrijfsportalgebruikers](https://docs.microsoft.com/intune-user-help/) voor meer informatie over het gebruik van de bedrijfsportal-app.  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-15-2019"></a>Week van 15 april 2019  
+
+### <a name="new-end-user-app-microsoft-intune-app---3903244---"></a>Nieuwe eindgebruiker-app (Microsoft Intune-app) <!--3903244 -->  
+Er is een nieuwe eindgebruiker-app voor volledig beheerde Android-apparaten met de naam **Microsoft Intune**. Deze nieuwe app is licht en modern en biedt een functionaliteit die vergelijkbaar is met de bedrijfsportal-app, maar dan voor volledig beheerde, zakelijke apparaten. Zie [Microsoft Intune-app in Google Play](https://play.google.com/store/apps/details?id=com.microsoft.intune) voor meer informatie.  
+
+Voorbeeldschermopname van het scherm met apparaatgegevens: 
+
+![Schermafbeelding van de Microsoft Intune-app met apparaatgegevens voor de Android van Jane.](./media/1904-intune-app-device-details.png)   
+
+Voorbeeldschermopname van het scherm **Toegang instellen**:  
+
+![Schermopname van de Microsoft Intune-app waarop het scherm voor het inschrijven voor Toegang instellen is weergegeven.](./media/1904-intune-app-setup-access.png)   
+
+Voorbeeldschermopname van het app-menu:  
+
+![Schermopname van de Microsoft Intune-app met het zijmenu.](./media/1904-intune-app-navigation-menu.png)   
+
+Voorbeeldschermopname van het scherm **Help**:  
+
+![Schermopname van de Microsoft Intune-app, Help-scherm.](./media/1904-intune-app-help.png)   
+
+
+## <a name="week-of-april-1-2019"></a>Week van 1 april 2019  
+
+### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Wijzigingen in de bedrijfsportal-app-inschrijving voor gebruikers van iOS-12-apparaten <!--3448635 -->  
+De schermen en stappen in de bedrijfsportal-app voor iOS-inschrijving zijn bijgewerkt, zodat deze overeenkomen met de wijzigingen in de MDM-inschrijving die zijn uitgebracht in Apple iOS 12.2. In de bijgewerkte werkstroom wordt gebruikers gevraagd om:  
+
+* Safari op de bedrijfsportalwebsite te openen en het beheerprofiel te downloaden voordat ze terugkeren naar de bedrijfsportal-app.  
+* De app Instellingen te openen voor het installeren van het beheerprofiel op hun apparaat.  
+* Terug te gaan naar de bedrijfsportal-app om de inschrijving te voltooien.  
+
+Zie [iOS-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) voor de bijgewerkte stappen en schermen voor de inschrijving.  
+
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>Update van de gebruikerservaring voor de bedrijfsportal-app voor iOS <!-- 2536024 -->
+De startpagina van de bedrijfsportal-app voor iOS-apparaten is opnieuw ontworpen. Dankzij deze wijziging kunt u patronen van de iOS-gebruikersinterface beter volgen op de startpagina en is de zichtbaarheid van apps en e-Books verbeterd.  
+
+## <a name="week-of-february-19-2019"></a>Week van 19 februari 2019  
+### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Het scherm Nieuwe app-categorieën in de bedrijfsportal-app voor Windows 10<!-- 3834780 WNready4Review -->  
+Een nieuw scherm met de naam **App-categorieën** is toegevoegd voor een betere ervaring ten aanzien van het bladeren door en selecteren van apps in de bedrijfsportal voor Windows 10. Gebruikers zien nu hun apps gesorteerd onder categorieën, zoals **Aanbevolen**, **Opleiding** en **Productiviteit**. Deze wijziging wordt weergegeven in de bedrijfsportal-app-versies 10.3.3451.0 en hoger. Zie [Apps installeren en delen op uw apparaat](/intune-user-help/install-apps-cpapp-windows) voor meer informatie over het installeren van apps in de bedrijfsportal.  
+
+![Schermopname van de bedrijfsportal voor Windows 10, scherm voor app-categorieën.](./media/1902_CP_app_categories.png)   
+
 
 ## <a name="week-of-november-12-2018"></a>Week van 12 november 2018
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Sneltoetsen voor Windows-bedrijfsportal <!-- 2771518 -->
-Eindgebruikers kunnen nu app- en apparaatacties in de Windows-bedrijfsportal activeren met behulp van sneltoetsen (accelerators).
+Eindgebruikers kunnen nu app- en apparaatacties in de Windows-bedrijfsportal activeren [met behulp van sneltoetsen (accelerators)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts).
 
 ## <a name="week-of-october-22-2018"></a>Week van 22 oktober 2018
 
-### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>Aangepaste merkafbeelding toevoegen voor bedrijfsportal-app <!-- 1916266 -->
-Als Microsoft Intune-beheerder kunt u een aangepaste merkafbeelding uploaden die als achtergrondafbeelding wordt weergegeven op de profielpagina van de gebruiker in de bedrijfsportal-app voor iOS. Voor meer informatie over het configureren van de bedrijfsportal-app, zie [Handleiding voor configuratie van de Microsoft Intune bedrijfsportal-app](company-portal-app.md).
-
-
+### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>Aangepaste merkafbeelding toevoegen voor de bedrijfsportal-app <!-- 1916266 -->
+Als Microsoft Intune-beheerder kunt u een aangepaste merkafbeelding uploaden die als achtergrondafbeelding wordt weergegeven op de profielpagina van de gebruiker in de bedrijfsportal-app voor iOS. Voor meer informatie over het configureren van de bedrijfsportal-app, zie [Handleiding voor configuratie van de Microsoft Intune bedrijfsportal-app](company-portal-app.md).  
 
 ## <a name="week-of-august-27-2018"></a>Week van 27 augustus 2018  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Nieuwe update van de gebruikerservaring voor de bedrijfsportalwebsite <!--2000968 -->  
-Op basis van feedback van klanten zijn er nieuwe functies toegevoegd aan de website van de bedrijfsportal. U zult een aanzienlijke verbetering ervaren wat betreft de bestaande functionaliteit en bruikbaarheid van uw apparaten. Delen van de site &ndash;zoals apparaatgegevens, feedback en ondersteuning, en apparaatoverzicht&ndash; krijgen een nieuw, modern, responsief ontwerp. De [documentatie voor Intune-bedrijfsportalwebsite](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) is bijgewerkt, waarbij deze wijzigingen zijn meegenomen.   
+Op basis van feedback van klanten zijn er nieuwe functies toegevoegd aan de website van de bedrijfsportal. U zult een aanzienlijke verbetering ervaren wat betreft de bestaande functionaliteit en bruikbaarheid van uw apparaten. Delen van de site, zoals apparaatgegevens, feedback, ondersteuning en apparaatoverzicht, hebben nu een nieuw, modern, responsief ontwerp. De [documentatie voor Intune-bedrijfsportalwebsite](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) is bijgewerkt, waarbij deze wijzigingen zijn meegenomen.   
 
 De updates die u ziet zijn onder andere:  
 
@@ -63,13 +111,13 @@ De updates die u ziet zijn onder andere:
 ## <a name="week-of-july-16-2018"></a>Week van 16 juli 2018  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Meer synchronisatiemogelijkheden in de Bedrijfsportal-app voor Windows   
-Met de Bedrijfsportal-app voor Windows kunt u nu een synchronisatie rechtstreeks vanuit de Windows-taakbalk en het menu Start in werking stellen. Deze functie is vooral nuttig als uw enige taak bestaat uit het synchroniseren van apparaten en verkrijgen van toegang tot bedrijfsbronnen. Klik voor toegang tot de nieuwe functie met de rechtermuisknop op het Bedrijfsportal-pictogram dat is vastgemaakt aan de taakbalk of het menu Start. Selecteer in de menu-opties (ook wel een Jump List genoemd) **Dit apparaat synchroniseren**. De Bedrijfsportal-app wordt geopend op de pagina **Instellingen** en de synchronisatie wordt gestart.  
+Met de Bedrijfsportal-app voor Windows kunt u nu een synchronisatie rechtstreeks vanuit de Windows-taakbalk en het menu Start in werking stellen. Deze functie is vooral nuttig als uw enige taak bestaat uit het synchroniseren van apparaten en verkrijgen van toegang tot bedrijfsbronnen. Klik voor toegang tot de nieuwe functie met de rechtermuisknop op het bedrijfsportal-pictogram dat is vastgemaakt aan de taakbalk of het menu **Start**. Selecteer in de menu-opties (ook wel een Jump List genoemd) **Dit apparaat synchroniseren**. De Bedrijfsportal-app wordt geopend op de pagina **Instellingen** en de synchronisatie wordt gestart.  
 
 ![Schermafbeelding van de Windows-taakbalk op het bureaublad van een apparaat. Er is geklikt op het pictogram Bedrijfsportal-app, waardoor een menu met de opties Aan taakbalk vastmaken, Venster sluiten en Dit apparaat synchroniseren wordt weergegeven.](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Nieuwe bladerervaringen in de Bedrijfsportal-app voor Windows  
 
-Wanneer u bladert of apps zoekt in de Bedrijfsportal-app voor Windows, kunt u nu schakelen tussen de bestaande **Tegels**-weergave en de recent toegevoegde **Details**-weergave. De nieuwe weergave bevat informatie over toepassingen, zoals de naam, de uitgever, de publicatiedatum en de installatiestatus.  
+Wanneer u door apps bladert of naar apps zoekt in de bedrijfsportal-app voor Windows, kunt u nu schakelen tussen de bestaande **Tegels**-weergave en de nieuwe **Details**-weergave. Deze nieuwe weergave bevat informatie over toepassingen, zoals de naam, de uitgever, de publicatiedatum en de installatiestatus.  
 
 De pagina **Apps** bevat de weergave **Geïnstalleerd**, waarop u meer informatie kunt vinden over app-installaties die zijn voltooid en die nog worden uitgevoerd.  
 
@@ -90,7 +138,7 @@ De Intune-bedrijfsportal-app voor Windows 10 is bijgewerkt met de [Fluent Design
 
 ## <a name="week-of-april-2-2018"></a>Week van 2 april 2018
 
-### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Update van de gebruikerservaring voor de bedrijfsportal-app voor iOS<!-- 1412866 -->
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Update van de gebruikerservaring voor de bedrijfsportal-app voor iOS <!-- 1412866 -->
 Er is een grote update uitgebracht van de gebruikerservaring voor de bedrijfsportal-app voor iOS. De update is voorzien van een volledig nieuw visueel ontwerp met een gemoderniseerd uiterlijk. De functionaliteit van de app is behouden. De gebruiksvriendelijkheid en toegankelijkheid zijn echter verhoogd.  
 
 U ziet ook:
@@ -351,7 +399,7 @@ De bedrijfsportal-app voor Windows 10 voert nu automatisch een synchronisatie ui
 
 ![Een afbeelding van de Intune-bedrijfsportal-app voor Windows 10, met de nieuwe automatische synchronisatiestatus die aangeeft dat het apparaat wordt gesynchroniseerd en probeert de app te downloaden.](./media/w10_download_pending_syncing_after_1706.png)
 
-### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Nieuwe begeleide ervaring voor Windows 10-bedrijfsportal<!---1058938--->
+### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Nieuwe begeleide ervaring voor Windows 10-bedrijfsportal <!---1058938--->
 De bedrijfsportal-app voor Windows 10 bevat een begeleiding voor Intune voor apparaten die nog niet zijn geïdentificeerd of geregistreerd. Deze nieuwe ervaring biedt stapsgewijze instructies die gebruikers begeleidt bij de registratie bij Azure Active Directory (vereist voor de voorwaardelijke toegangsfuncties) en MDM-registratie (vereist voor apparaatbeheerfuncties). De stapsgewijze instructies zijn toegankelijk via de startpagina van de bedrijfsportal. Als gebruikers de registratie en inschrijving niet voltooien, kunnen ze de app gewoon blijven gebruiken, maar is de functionaliteit beperkt.
 
 Deze update is alleen zichtbaar op apparaten met Windows 10 Jubileumupdate (build 1607) of hoger.
@@ -391,7 +439,7 @@ Als gebruikers op hun iOS-apparaat hun werk- of schoolaccount hebben gebruikt om
 
 ## <a name="april-2017"></a>April 2017
 
-### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Nieuwe pictogrammen voor Managed Browser en de bedrijfsportal <!--918433, 918431-->
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Nieuwe pictogrammen voor de Managed Browser en bedrijfsportal <!--918433, 918431-->
 
 Zowel de Android- als iOS-versie van de Managed Browser heeft een nieuw pictogram. Het nieuwe pictogram bevat het bijgewerkte Intune-logo om het consistenter te maken met de andere apps in Enterprise Mobility + Security (EM+S).
 
@@ -414,7 +462,7 @@ De pictogrammen voor de Android-, iOS- en Windows-versies van de app in de bedri
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Voortgangsindicator voor aanmelden in Android-bedrijfsportal <!--953374-->
 
-De Android-bedrijfsportal-app is bijgewerkt met een voortgangsindicator voor het aanmelden wanneer de gebruiker de app opent of hervat. De indicator geeft de verschillende statussen weer, beginnend bij 'Verbinden...', gevolgd door 'Aanmelden...' en 'Beveiligingseisen controleren...', voordat de gebruiker de app kan gebruiken.
+De Android-bedrijfsportal-app is bijgewerkt met een voortgangsindicator voor het aanmelden wanneer de gebruiker de app opent of hervat. De indicator geeft de verschillende statussen weer, beginnend bij ‘Verbinden...’, gevolgd door ‘Aanmelden...’ en ‘Beveiligingseisen controleren...’, voordat de gebruiker de app kan gebruiken.
 
 <html>
 <body>
@@ -479,29 +527,10 @@ Te beginnen in februari ondersteunt de bedrijfsportalwebsite apps die zijn geric
 Dit zijn de plannen voor manieren waarop we de gebruikerservaring gaan verbeteren door onze gebruikersinterface bij te werken.
 
 > [!Note]
-> De onderstaande afbeeldingen zijn voorbeelden en het aangekondigde product kan verschillen van de weergegeven versies.
-
-### <a name="ui-iwp"></a>Nieuwe update van de gebruikerservaring voor de bedrijfsportalwebsite <!--2000968-->
-
-In augustus beginnen we met de introductie van een nieuwe ervaring voor de bedrijfsportalwebsite, met UI-updates, gestroomlijnde werkstromen en toegankelijkheidsverbeteringen. Deze omvat klantgestuurde verbeteringen zoals het delen van apps en verbeterde algehele prestaties voor een gebruikersvriendelijker ervaring.
-
-Er is een aantal nieuwe functies toegevoegd op basis van feedback van klanten zoals u. Hiermee worden de bestaande functionaliteit en bruikbaarheid aanzienlijk verbeterd:
-
--   UI-verbeteringen in de gehele website
--   Mogelijkheid om directe koppelingen naar apps te delen
-- Verbeterde prestaties voor grote app-catalogi
-
-U hoeft niets te doen om u op deze wijziging voor te bereiden. Wij brengen u op de hoogte wanneer de bijgewerkte bedrijfsportalwebsite voor u beschikbaar komt. U moet wellicht uw documentatie voor eindgebruikers met bijgewerkte schermafbeeldingen updaten. Ook moet u mogelijk documentatie voor de bedrijfsportal-app op iOS updaten, omdat de website de sectie **Apps** van de iOS-app mogelijk maakt.  
-
-### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Updates aan de gebruikersinterface van de bedrijfsportalwebsite <!--1313244 part 2-->
-
-__Updates voor aanbevolen apps__ Er is een speciale pagina aan de site toegevoegd waar gebruikers door apps kunnen bladeren die door u zijn aanbevolen. Ook zijn er enkele correcties aan de gebruikersinterface aangebracht aan de sectie Aanbevolen op de startpagina.
-
-![De kleurrijke tegels waarop de apps worden getoond. Het zijn grote, gekleurde vierkanten onder de apps, waarbij de gekozen kleur de primaire kleur van het app-logo is. De sectie Aanbevolen apps wordt bovenaan de bedrijfsportal-app weergegeven.](./media/cp_win10_colorful_tiles_after_1708.png)
+> De onderstaande afbeeldingen zijn voorbeelden en het aangekondigde product kan verschillen van de weergegeven versies.  
 
 
-
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 * [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap voor cloudplatform](https://www.microsoft.com/cloud-platform/roadmap)
 * [Wat is er nieuw in Intune?](https://docs.microsoft.com/intune/whats-new)

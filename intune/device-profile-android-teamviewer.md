@@ -2,24 +2,26 @@
 title: Extern beheer van apparaten in Microsoft Intune - Azure | Microsoft Docs
 description: De vereiste rollen bekijken om TeamViewer te gebruiken, hoe u de TeamViewer-connector installeert en stapsgewijze instructies voor het extern beheren van apparaten met Microsoft Intune in de Azure Portal
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 06/12/2018
-ms.topic: article
+ms.date: 02/05/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dd2d9f0a0caf87eb75ba3a9cdc123e69425ceb8b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509723"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer gebruiken voor het extern beheren van Intune-apparaten
 
@@ -32,9 +34,9 @@ Apparaten die worden beheerd door Intune kunnen extern worden beheerd met [TeamV
 - De Intune-beheerder binnen de Azure Portal moet de volgende [Intune-rollen](role-based-access-control.md) hebben:  
 
     - **Hulp op afstand bijwerken**: hiermee kunnen beheerders de instellingen van de TeamViewer-connector wijzigen
-    - **Hulp op afstand vragen**: hiermee kunnen beheerders een nieuwe sessie van hulp op afstand voor elke gebruiker starten. Gebruikers met deze rol zijn niet beperkt door een Intune-rol binnen een bereik. Gebruikers- of apparaatgroepen aan wie een Intune-rol is toegewezen binnen een scope, kunnen ook hulp op afstand aanvragen. 
+    - **Hulp op afstand aanvragen**: hiermee kunnen beheerders een nieuwe sessie van hulp op afstand voor elke gebruiker starten. Gebruikers met deze rol zijn niet beperkt door een Intune-rol binnen een bereik. Gebruikers- of apparaatgroepen aan wie een Intune-rol is toegewezen binnen een scope, kunnen ook hulp op afstand aanvragen. 
 
-- Een [TeamViewer](https://www.teamviewer.com)-account met de aanmeldingsreferenties
+- Een [TeamViewer](https://www.teamviewer.com)-account met de aanmeldingsreferenties. Alleen bepaalde TeamViewer-licenties bieden mogelijk ondersteuning voor integratie met Intune. Zie voor specifieke TeamViewer-behoeften [TeamViewer-integratiepartner: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/).
 
 Door TeamViewer te gebruiken, kunt u met de TeamViewer voor Intune-connector TeamViewer-sessies maken, Active Directory-gegevens lezen en het toegangstoken voor het TeamViewer-account opslaan.
 

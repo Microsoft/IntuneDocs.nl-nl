@@ -1,27 +1,29 @@
 ---
 title: Doelen, doelstellingen en uitdagingen voor de implementatie bepalen
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In dit artikel wordt beschreven hoe u de doelen, doelstellingen en uitdagingen voor de implementatie kunt bepalen voor een cloudimplementatie voor Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cd1fd6198e71dd585d0216c0850c0140f5e71344
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512675"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Doelen, doelstellingen en uitdagingen voor de implementatie bepalen
 
@@ -53,7 +55,7 @@ Implementatiedoelen zijn de langetermijndoelen die u beoogt met de implementatie
 
     -   **Beschrijving:** indien mogelijk moet het project zorgen voor lagere implementatie- en bedrijfskosten.
 
-    -    **Bedrijfswaarde:** door een efficiënt gebruik van bronnen kan het bedrijf investeren in andere gebieden, concurrerender opereren en betere service leveren aan klanten bieden.
+    -    **Bedrijfswaarde:** door een efficiënt gebruik van bronnen kan het bedrijf investeren in andere gebieden, concurrerender opereren en betere service aan klanten bieden.
 
 ## <a name="deployment-objectives"></a>Doelstellingen van implementatie
 
@@ -61,7 +63,7 @@ Implementatiedoelstellingen zijn de acties die een organisatie kan ondernemen om
 
 -   **Het aantal oplossingen voor apparaatbeheer verminderen**
 
-    -   **Implementatie:** voeg oplossingen samen tot één oplossing voor het beheer van mobiele apparaten: Microsoft Intune voor de beveiliging van bedrijfsgegevens in apps en op apparaten.
+    -   **Implementatie:** voeg samen tot één oplossing voor beheer van mobiele apparaten: Microsoft Intune voor de beveiliging van bedrijfsgegevens van apps en apparaten.
 
 -   **Veilige toegang tot Exchange en SharePoint Online bieden**
 
@@ -81,7 +83,7 @@ Implementatie-uitdagingen hebben betrekking op kwesties die topprioriteit hebben
 
 -   De gereedheid van de ondersteuning en ervaring van eindgebruikers worden niet opgenomen in een eerste projectbereik. Dit leidt tot een gebrekkige acceptatie van eindgebruikers en uitdagingen voor uw ondersteuningsorganisatie.
 
-    -   **Oplossing:** neem ondersteuningstraining op in het project. Valideer de ervaring van eindgebruikers met maatstaven voor succes in uw implementatieplan.
+    -   **Risicobeperking:** neem ondersteuningstraining op in het project. Valideer de ervaring van eindgebruikers met maatstaven voor succes in uw implementatieplan.
 
 -   Een gebrek aan duidelijk gedefinieerde doelen en maatstaven voor succes leidt tot niet-tastbare resultaten. Het kan er ook toe leiden dat uw organisatie alleen maar uit reactie handelt wanneer er zich problemen voordoen.
 
@@ -89,7 +91,7 @@ Implementatie-uitdagingen hebben betrekking op kwesties die topprioriteit hebben
 
 -   U laat het maken, valideren en het uitgebreid delen van een duidelijk waardevoorstel voor uw organisatie achterwege. Dit leidt vaak tot een beperkte acceptatie en een laag rendement op investeringen.
 
-    -   **Oplossing:** hoewel u misschien staat te springen om aan het project te beginnen, is het toch belangrijk om uw doelen en doelstellingen duidelijk te definiëren. Neem deze mee tijdens alle bewustwordings- en trainingsactiviteiten, zodat u zeker weet dat gebruikers begrijpen waarom uw organisatie voor Intune heeft gekozen.
+    -   **Risicobeperking:** hoewel u misschien staat te springen om aan het project te beginnen, is het toch belangrijk om uw doelen en doelstellingen duidelijk te definiëren. Neem deze mee tijdens alle bewustwordings- en trainingsactiviteiten, zodat u zeker weet dat gebruikers begrijpen waarom uw organisatie voor Intune heeft gekozen.
 
 ## <a name="next-steps"></a>Volgende stappen
 

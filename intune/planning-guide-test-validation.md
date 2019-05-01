@@ -1,27 +1,28 @@
 ---
 title: Intune testen en valideren
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Hoe u uw oplossing voor alleen in de Intune-cloud kunt testen en valideren.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4974dc3e86b26434cb633bd58e524d290573ecd0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ba257ad6ebd7c8dbb2ca6ef805c896a4584ed41f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512841"
 ---
 # <a name="intune-testing-and-validation"></a>Intune testen en valideren
 
@@ -43,7 +44,7 @@ Als een ontwerponderdeel niet is opgenomen in ten minste één testcriterium voo
 
 -   **Apparaten:** Testapparaten die kunnen worden gewist of teruggezet naar de fabrieksinstellingen.
 
--   **Integratieonderdelen:** Alle integratieonderdelen (Certificate Connector, Intune Service to Service Connector voor gehoste Exchange en Intune On-Premises Exchange Connector) moeten, indien nodig, worden geïnstalleerd en geconfigureerd.
+-   **Integratieonderdelen:** Alle integratieonderdelen (certificaatconnectors en de Intune on-premises Exchange-connector) moeten zo nodig worden geïnstalleerd en geconfigureerd.
 
 U kunt ontwerpwijzigingen nodig hebben om onvoorziene problemen het hoofd te bieden. Bovendien moeten alle ontwerpwijzigingen volledig worden gedocumenteerd met de reden voor elke wijziging. Hier volgt een voorbeeld van een mogelijke wijziging:
 

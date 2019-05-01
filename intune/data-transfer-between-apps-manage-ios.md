@@ -1,26 +1,29 @@
 ---
-title: Gegevensoverdracht tussen iOS-apps beheren | Microsoft Intune
+title: Gegevensoverdracht tussen iOS-apps beheren
+titleSuffix: Microsoft Intune
 description: Begrijpen hoe u Mobile Application Management-beleid in Microsoft Intune gebruikt om gegevensoverdracht tussen apps te beheren.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509506"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
 
@@ -49,11 +52,15 @@ Deze configuratie van de UPN-gebruikersinstelling is **vereist** voor apparaten 
 
 2.  Implementeer de apps en het e-mailprofiel die u wilt laten beheren via Intune of de MDM-oplossing van derden met behulp van de volgende algemene stappen. Deze ervaring wordt ook getoond in *voorbeeld 1*.
 
-3.  Implementeer de app met de volgende app-configuratie-instellingen:
+3.  Implementeer de app met de volgende app-configuratie-instellingen naar het beheerde apparaat:
 
       **sleutel** = IntuneMAMUPN, **waarde** = <username@company.com>
 
       Voorbeeld: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > In Intune moet het App Configuration-beleid bestemd zijn voor het inschrijvingstype Beheerde apparaten.
+       > Verder moet de app zijn geïnstalleerd vanuit de Intune-bedrijfsportal als deze als beschikbaar is ingesteld, of naar het apparaat worden gepusht. 
 
 4.  Implementeer het beleid **Openen in beheer** met Intune of de MDM-provider van derden op ingeschreven apparaten.
 
