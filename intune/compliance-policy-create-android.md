@@ -1,11 +1,11 @@
 ---
 title: Een Android-nalevingsbeleid voor apparaten maken in Microsoft Intune - Azure | Microsoft Docs
-description: Een Microsoft Intune-apparaatnalevingsbeleid maken of configureren voor Android-apparaten. Kies ervoor opengebroken apparaten toe te staan, stel het acceptabele dreigingsniveau in, controleer op Google Play, voer de minimale en maximale besturingssysteemversie in, kies uw wachtwoordvereisten en sta sideloading van toepassingen toe.
+description: Een overzicht van alle instellingen die u gebruiken kunt bij het instellen van naleving voor uw Android-apparaten in Microsoft Intune. Regels voor wachtwoorden instellen, kiest u een minimum of maximum besturingssysteemversie, bepaalde apps beperken, te voorkomen dat ondertekeningscertificaten hergebruiken wachtwoord en meer.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,51 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dc4fc0a0f16717bd0c21db3a9e7e57daf7867bc
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
-ms.translationtype: MTE75
+ms.openlocfilehash: 7670af46657fed048bfe10b8659eae6d45db7620
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069038"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423574"
 ---
-# <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Een apparaatnalevingsbeleid toevoegen voor Android-apparaten in Intune
+# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Instellingen voor android apparaten gemarkeerd als compatibel of niet compatibel met Intune
 
-Een Intune-apparaatnalevingsbeleid voor Android bepaalt de regels en instellingen waaraan een Android-apparaat moet voldoen om te voldoen aan het beleid. U kunt dit beleid met [voorwaardelijke toegang](conditional-access.md) gebruiken om toegang tot bedrijfsresources toe te staan of te blokkeren. U kunt ook apparaatrapporten krijgen en maatregelen nemen voor niet-naleving. 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over nalevingsbeleid en eventuele vereisten.
+In dit artikel geeft een lijst van en beschrijft de verschillende nalevingsinstellingen die u op Android-apparaten in Intune configureren kunt. Gebruik deze instellingen geroote (worden)-apparaten als niet-compatibel markeren, een toegestane bedreigingsniveau instellen, het inschakelen van Google Play Protect, en meer als onderdeel van uw beheeroplossing voor mobiele apparaten (MDM).
 
-In dit onderwerp leest u meer over de instellingen die u in een nalevingsbeleid voor Android-apparaten kunt gebruiken.
+Deze functie is van toepassing op:
 
-## <a name="non-compliance-and-conditional-access"></a>Niet-naleving en voorwaardelijke toegang
+- Android
 
-In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden beheerd wanneer een nalevingsbeleid wordt gebruikt in combinatie met beleid voor voorwaardelijke toegang.
+Als Intune-beheerder, gebruikt u deze instellingen voor naleving voor beveiliging van uw resources van de organisatie. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over nalevingsbeleid en eventuele vereisten.
 
---------------------
+## <a name="before-you-begin"></a>Voordat u begint
 
-|**Beleidsinstelling**| **Android 4.0 of hoger, Samsung Knox Standard 4.0 of hoger** |
-| --- | ----|
-| **Configuratie van pincode of wachtwoord** |  In quarantaine |
-| **Apparaatversleuteling** | In quarantaine |
-| **Opengebroken of geroot apparaat** | In quarantaine (geen instelling) |
-| **E-mailprofiel** | Niet van toepassing |
-| **Minimale versie van het besturingssysteem** | In quarantaine |
-| **Maximale versie van het besturingssysteem** |   In quarantaine |
-| **Windows Health Attestation** | Niet van toepassing |
-
---------------------------
-
-**Hersteld** = het besturingssysteem van het apparaat dwingt naleving af. De gebruiker wordt bijvoorbeeld gedwongen een pincode in te stellen.
-
-**In quarantaine** = het besturingssysteem van het apparaat dwingt geen naleving af. Bij Android-apparaten wordt de gebruiker bijvoorbeeld niet gedwongen het apparaat te versleutelen. Als het apparaat niet compatibel is, worden de volgende acties uitgevoerd:
-
-  - Het apparaat wordt geblokkeerd als een beleid voor voorwaardelijke toegang van toepassing is voor de gebruiker.
-  - De bedrijfsportal stelt de gebruiker op de hoogte van eventuele nalevingsproblemen.
-
-## <a name="create-a-device-compliance-policy"></a>Een nalevingsbeleid voor apparaten maken
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. Selecteer voor **Platform** de optie **Android**. 
-5. Kies **Instellingen configureren**. Geef instellingen op voor de **apparaatstatus**, de **apparaateigenschappen** en de **systeembeveiliging**, zoals in dit artikel wordt beschreven.
+[Een nalevingsbeleid maken](create-compliance-policy.md#create-the-policy). Selecteer voor **Platform** de optie **Android**.
 
 ## <a name="device-health"></a>Device health
 
@@ -71,6 +48,9 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
   - **Laag**: het apparaat wordt als compatibel geëvalueerd als er bedreigingen van een laag niveau aanwezig zijn. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
   - **Gemiddeld**: het apparaat wordt als conform geëvalueerd als bestaande bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als bedreigingen met hoog niveau worden aangetroffen op het apparaat, wordt het apparaat als niet-compatibel beoordeeld.
   - **Hoog**: deze optie is het minst veilig, omdat alle bedreigingsniveaus zijn toegestaan. Deze optie kan handig zijn als u deze alleen gebruikt voor rapportagedoeleinden.
+
+### <a name="google-play-protect"></a>Google Play beveiligen
+
 - **Google Play Services is geconfigureerd**: hiermee kunt u **vereisen** dat de app Google Play Services wordt geïnstalleerd en ingeschakeld. Google Play Services maakt beveiligingsupdates mogelijk en vormt een basisafhankelijkheid voor veel beveiligingsfuncties op door Google gecertificeerde apparaten. Als u **Niet geconfigureerd** (standaard) kiest, wordt deze instelling niet beoordeeld op naleving of niet-naleving.
 - **Bijgewerkte beveiligingsprovider**: hiermee kunt u **vereisen** dat het apparaat tegen bekende beveiligingsproblemen wordt beschermd door een bijgewerkte beveiligingsprovider. Als u **Niet geconfigureerd** (standaard) kiest, wordt deze instelling niet beoordeeld op naleving of niet-naleving.
 - **Bedreigingsscan voor apps**: hiermee kunt u **vereisen** dat de Android-functie **Apps controleren** is ingeschakeld. Als u **Niet geconfigureerd** (standaard) kiest, wordt deze instelling niet beoordeeld op naleving of niet-naleving.
@@ -82,6 +62,9 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
   - **Niet geconfigureerd** (standaard): deze instelling wordt niet beoordeeld op naleving of niet-naleving.
   - **Basisintegriteit controleren**
   - **Basisintegriteit en gecertificeerde apparaten controleren**
+
+> [!NOTE]
+> Google Play Protect om instellingen te configureren met behulp van app-beveiligingsbeleid, Zie [Intune app protection-beleidsinstellingen](app-protection-policy-settings-android.md#conditional-launch) op Android.
 
 ## <a name="device-property-settings"></a>Instellingen voor apparaateigenschappen
 
@@ -133,41 +116,18 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 - **Minimaal beveiligingspatchniveau**(Android 6.0 of hoger): selecteer het oudste beveiligingspatchniveau dat een apparaat kan hebben. Apparaten die niet ten minste dit patchniveau hebben, zijn niet-conform. De datum moet worden opgegeven in de indeling `YYYY-MM-DD`.
 - **Beperkte apps**: voer de **appnaam** en de **app-bundel-id** in van apps die moeten worden beperkt. Kies **Toevoegen**. Een apparaat waarop ten minste één beperkte app is geïnstalleerd, wordt gemarkeerd als niet-compatibel.
 
-Wanneer u klaar bent, selecteert u **OK** > **OK** om uw wijzigingen op te slaan.
+Selecteer **OK** > **Maken** om uw wijzigingen op te slaan.
 
-## <a name="locations"></a>Locaties
+## <a name="locations"></a>Locaties:
 
-Maak in uw beleid een keuze uit bestaande locaties. Hebt u nog geen locatie? In [Locaties (netwerk fence) in Intune gebruiken](use-network-locations.md) vindt u enkele richtlijnen.
+U kunt afdwingen dat naleving door de locatie van het apparaat in uw beleid. Kies uit bestaande locaties. Hebt u nog geen locatie? In [Locaties (netwerk fence) in Intune gebruiken](use-network-locations.md) vindt u enkele richtlijnen.
 
-1. Kies **Locaties**.
-2. Controleer uw locatie in de lijst en kies **Selecteren**.
+1. Kies **locaties** > **locaties selecteren**.
+2. Controleer uw locatie in de lijst > **Selecteer**.
 3. U kunt nu het beleid **opslaan**.
 
-## <a name="actions-for-noncompliance"></a>Acties voor niet-naleving
-
-Selecteer **Acties voor niet-naleving**. De standaardactie markeert het apparaat onmiddellijk als niet-compatibel.
-
-U kunt het schema veranderen wanneer het apparaat wordt gemarkeerd als niet-compatibel, zoals na één dag. U kunt ook een tweede actie toevoegen, waarbij een e-mailbericht wordt verzonden naar de gebruiker wanneer het apparaat niet voldoet.
-
-[Acties voor niet-compatibele apparaten toevoegen](actions-for-noncompliance.md) biedt meer informatie, onder andere over het maken van een e-mailmelding voor uw gebruikers.
-
-U gebruikt bijvoorbeeld de functie Locaties en u voegt een locatie toe aan een nalevingsbeleid. De standaardactie bij niet-naleving wordt uitgevoerd als u ten minste één locatie hebt geselecteerd. Als het apparaat niet is verbonden met de geselecteerde locaties, wordt het apparaat direct gezien als 'niet compatibel'. U kunt gebruikers bijvoorbeeld een respijtperiode van één dag bieden.
-
-## <a name="scope-tags"></a>Bereiktags
-
-Met bereiktags kunt u eenvoudig beleidsregels toewijzen aan specifieke groepen, zoals Verkoop, Engineering, HR en zo verder. U kunt bereiktags toevoegen aan nalevingsbeleid. Zie [Bereiktags gebruiken om beleidsregels te filteren](scope-tags.md). 
-
-## <a name="assign-user-groups"></a>Gebruikersgroepen toewijzen
-
-Wanneer een beleid is gemaakt, doet dit beleid niets tot u het ergens aan toewijst. Het beleid toewijzen: 
-
-1. Kies een beleid dat u hebt geconfigureerd. Bestaande beleidsregels bevinden zich in **Apparaatcompatibiliteit** > **Beleid**.
-2. Kies het beleid en kies **Toewijzingen**. U kunt Azure Active Directory-beveiligingsgroepen (AD) opnemen of uitsluiten.
-3. Kies **Geselecteerde groepen** om uw Azure AD-beveiligingsgroepen te zien. Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen en kies **Opslaan** om het beleid te implementeren op gebruikers.
-
-U hebt het beleid toegepast op gebruikers. De apparaten die worden gebruikt door de gebruikers op wie het beleid wordt toegepast, worden gecontroleerd om te zien of ze voldoen aan de vereisten.
-
 ## <a name="next-steps"></a>Volgende stappen
-[E-mail automatiseren en acties voor niet-conforme apparaten toevoegen](actions-for-noncompliance.md)  
-[Nalevingsbeleid voor Intune-apparaten controleren](compliance-policy-monitor.md)  
-[Instellingen voor nalevingsbeleid voor Android Enterprise](compliance-policy-create-android-for-work.md)
+
+- [Acties voor niet-compatibele apparaten toevoegen](actions-for-noncompliance.md) en [bereiktags aan beleidsregels voor het filter gebruiken](scope-tags.md).
+- [Uw nalevingsbeleid bewaken](compliance-policy-monitor.md).
+- [Instellingen voor nalevingsbeleid voor Android Enterprise](compliance-policy-create-android-for-work.md)

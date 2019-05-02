@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d0623e9d12132ac470813d65510bc2c76379109
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490723"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871468"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Met iOS-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -195,7 +195,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
 #### <a name="safari"></a>Safari
 
-- **Safari**: selecteer **Blokkeren** om te voorkomen dat gebruikers de Safari-browser op het apparaat kunnen gebruiken. **Niet geconfigureerd**: staat gebruikers toe de Safari-browser te gebruiken.
+- **Safari (alleen onder supervisie)**: gebruik van de Safari-browser op het apparaat **Blokkeren**. **Niet geconfigureerd**: staat gebruikers toe de Safari-browser te gebruiken.
 - **Automatisch doorvoeren**: met **Blokkeren** wordt de functie Automatisch doorvoeren in Safari uitgeschakeld op het apparaat. **Niet geconfigureerd**: staat gebruikers toe de instellingen voor automatisch doorvoeren te wijzigen in de webbrowser.
 - **Cookies**: kies hoe cookies moeten worden verwerkt op het apparaat. Uw opties zijn:
   - Toestaan
@@ -290,7 +290,7 @@ Als u apps wilt toevoegen aan deze lijsten, kunt u:
 ## <a name="cloud-and-storage"></a>Cloud en opslag
 
 - **Back-up naar iCloud**: **Niet geconfigureerd** staat de gebruiker toe een back-up van het apparaat op te slaan in iCloud. **Blokkeren**: zorgt ervoor dat de gebruiker geen back-ups van het apparaat meer kan opslaan in iCloud.
-- **Documenten synchroniseren met iCloud blokkeren**: **Niet geconfigureerd** staat het synchroniseren van documenten en sleutelwaarden met uw iCloud-opslagruimte toe. **Blokkeren**: voorkomt dat documenten en gegevens worden gesynchroniseerd met iCloud.
+- **Documenten synchroniseren met iCloud (alleen onder supervisie)**: **Niet geconfigureerd** staat het synchroniseren van documenten en sleutelwaarden met uw iCloud-opslagruimte toe. **Blokkeren**: voorkomt dat documenten en gegevens worden gesynchroniseerd met iCloud.
 - **Photo Stream synchroniseren met iCloud**: **Niet geconfigureerd** stelt gebruikers in staat **Mijn Photo Stream**  in te schakelen op hun apparaat om te synchroniseren met iCloud, en foto’s weer te geven op alle apparaten van de gebruikers. **Blokkeren**: voorkomt dat met Photo Stream foto’s worden gesynchroniseerd met iCloud.
 - **Versleutelde back-up**: kies **Vereisen** om ervoor te zorgen dat back-ups van het apparaat moeten worden versleuteld.
 - **iCloud-fotobibliotheek**: stel in op **Blokkeren** om het gebruik van de

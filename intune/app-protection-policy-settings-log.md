@@ -1,6 +1,6 @@
 ---
-title: Logboeken van het beleid voor app-beveiliging bekijken | Microsoft Intune
-titlesuffix: Microsoft Intune
+title: Logboeken van het beleid voor app-beveiliging bekijken
+titleSuffix: Microsoft Intune
 description: In dit onderwerp wordt beschreven hoe u de logboeken voor Intune app protection-beleid (APP) configureren.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
-ms.translationtype: MTE75
+ms.openlocfilehash: d593ee1389cfa183c5daaefdeae3ea7f6c44a8a8
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394790"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671863"
 ---
 # <a name="review-client-app-protection-logs"></a>Logboeken voor beveiliging van de client-app controleren
 
@@ -31,7 +31,7 @@ Kom meer te weten over de instellingen die u kunt bekijken in de app-bescherming
 
 Het proces voor het inschakelen en verzamelen van logboeken verschilt per platform:
 - **Android-apparaten**: gebruik de *bedrijfsportal*. Zie [Logboeken via e-mail naar het ondersteuningsteam van uw bedrijf verzenden](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
-- **iOS-apparaten**: gebruik een Managed Browser of *Microsoft Edge* om logboeken te verzamelen. Zie [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://blogs.technet.microsoft.com/intunesupport/2017/11/10/support-tip-new-intune-diagnostic-console-for-log-submission-in-the-intune-managed-browser) (Nieuwe Intune-diagnoseconsole voor logboekverzending in Intune Managed Browser) in het blog van het Intune-ondersteuningsteam voor meer informatie. 
+- **iOS-apparaten**: gebruik een Managed Browser of *Microsoft Edge* om logboeken te verzamelen. Zie [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021) (Nieuwe Intune-diagnoseconsole voor logboekverzending in Intune Managed Browser) in het blog van het Intune-ondersteuningsteam voor meer informatie. 
 - **Windows 10-apparaten**: gebruik *MDMDiag* en gebeurtenislogboeken. Zie [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) (MDM-fouten diagnosticeren in Windows 10) in de documentatie voor Windows-clientbeheer en het blog [Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures) (Problemen met het Windows 10 Intune-beleid oplossen)
 
 

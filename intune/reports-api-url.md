@@ -1,6 +1,6 @@
 ---
 title: Intune-datawarehouse-API-eindpunt
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Dit naslagonderwerp beschrijft de URL-structuur van de Microsoft Intune-datawarehouse-API. Er worden filtervoorbeelden gegeven.
 keywords: Intune-datawarehouse
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 50be11f9ada92670c201fc2540499effa5a7edef
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396474"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798494"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune-datawarehouse-API-eindpunt
 
@@ -53,7 +53,7 @@ De URL bevat de volgende elementen:
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | De basis-URL kan worden gevonden door de blade Datawarehouse-API in Azure Portal te bekijken. |
 | entiteitverzameling | dates | De naam van de OData-entiteitverzameling. Zie [Gegevensmodel](reports-ref-data-model.md) voor meer informatie over verzamelingen en entiteiten in het gegevensmodel. |
-| api-versie | beta | Version is de versie van de API waartoe toegang moet worden verkregen. Zie [Versie](#API-version-information) voor meer informatie. |
+| api-versie | beta | Version is de versie van de API waartoe toegang moet worden verkregen. Zie [Versie](reports-api-url.md#api-version-information) voor meer informatie. |
 | maxhistorydays | 7 | (Optioneel) Het maximum aantal dagen waarin de geschiedenis kan worden opgehaald. Deze parameter kan worden geleverd aan een verzameling, maar wordt pas van kracht voor verzamelingen met `dateKey` als onderdeel van de sleuteleigenschap ervan. Zie [Bereikfilters DateKey](reports-api-url.md#datekey-range-filters) voor meer informatie. |
 
 ## <a name="api-version-information"></a>API-versiegegevens

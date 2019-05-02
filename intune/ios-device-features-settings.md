@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566621"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799262"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>iOS-apparaatinstellingen algemene iOS-functies gebruiken in Intune
 
@@ -96,6 +96,9 @@ Gebruik de **Dock**-instellingen om maximaal zes items of mappen aan de dock ond
 
       3. Kies **Toevoegen**. U kunt maximaal **20** pagina's toevoegen voor de apparaatdock.
       4. Selecteer **OK** om uw wijzigingen op te slaan.
+
+> [!NOTE]
+> Wanneer u met behulp van de instellingen van de Dock pictogrammen toevoegt, wordt de pictogrammen op de pagina's en start scherm zijn vergrendeld en kunnen niet worden verplaatst. Dit kan zijn standaard met iOS- en Apple MDM-beleidsregels.
 
 #### <a name="example"></a>Voorbeeld
 

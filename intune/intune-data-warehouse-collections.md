@@ -1,12 +1,12 @@
 ---
 title: Intune-datawarehouse-verzamelingen
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: De Intune-datawarehouse-verzamelingen bieden informatie met betrekking tot de datawarehouse-API.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358314"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429221"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune-datawarehouse-verzamelingen
 
@@ -427,6 +427,85 @@ De entiteit **IntuneManagementExtensionVersion** bevat een lijst van alle versie
 |:-------------------:|:-------------------------------------------------------------:|:-------:|
 | ExtensionVersionKey | De unieke id van de IntuneManagementExtension-versie. | 1       |
 | ExtensionVersion    | Het versienummer, bestaande uit vier cijfers.                                   | 1.0.2.0 |
+
+## <a name="mamapplications"></a>MamApplications
+
+De entiteit **MamApplication** bevat een lijst met LOB-apps (Line-of-Business) die via Mobile Application Management (MAM) worden beheerd, maar die niet zijn ingeschreven in uw bedrijf.
+
+| Eigenschap | Beschrijving | Voorbeeld |
+|---------|------------|--------|
+| mamApplicationKey |De unieke id van de MAM-toepassing. | 432 |
+| mamApplicationName |Naam van de MAM-toepassing. |De naam van het voorbeeld voor MAM-toepassing |
+| mamApplicationId |De toepassings-ID van de MAM-app. | 123 |
+| IsDeleted |Geeft aan of deze MAM-app-record is bijgewerkt. <br>Waar: de MAM-app heeft een nieuwe record met bijgewerkte velden in deze tabel. <br>Onwaar: de meest recente record voor deze MAM-app. |Waar/onwaar |
+| StartDateInclusiveUTC |De datum en tijd in UTC waarop deze MAM-app is gemaakt in het datawarehouse. |11/23/2016 12:00:00 AM |
+| DeletedDateUTC |De datum en tijd in UTC waarop IsDeleted is gewijzigd in Waar. |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop deze MAM-app het laatst is gewijzigd in het datawarehouse. |11/23/2016 12:00:00 AM |
+
+
+## <a name="mamapplicationinstances"></a>MamApplicationInstances
+
+De entiteit **MamApplicationInstance** bevat een lijst met beheerde MAM-apps (Mobile Application Management) als zelfstandige exemplaren per gebruiker per apparaat. Alle gebruikers en apparaten die worden vermeld in de entiteit zijn beveiligd, wat inhoudt dat er ten minste één MAM-beleid aan de gebruiker of het apparaat is toegewezen.
+
+
+|          Eigenschap          |                                                                                                  Beschrijving                                                                                                  |               Voorbeeld                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               De unieke id van het MAM-app-exemplaar in het datawarehouse (surrogaatsleutel).                                                                |                 123                  |
+|           UserId           |                                                                              De gebruikers-id van de gebruiker die deze MAM-app heeft geïnstalleerd.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              De unieke id van het MAM-app-exemplaar, vergelijkbaar met ApplicationInstanceKey, maar de id is een natuurlijke sleutel.                                              | b66bc706-ffff-7437-0340-032819502773 |
+| mamApplicationId | Toepassings-Id van de Mam-toepassing waarvoor deze Mam-toepassing-exemplaar is gemaakt.   | 11/23/2016 12:00:00 AM   |
+|     ApplicationVersion     |                                                                                     De toepassingsversie van deze MAM-app.                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 De datum waarop deze record van het MAM-app-exemplaar is gemaakt. De waarde kan null zijn.                                                                 |        11/23/2016 12:00:00 AM        |
+|          Platform          |                                                                          Het platform van het apparaat waarop deze MAM-app is geïnstalleerd.                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      De versie van het platform van het apparaat waarop deze MAM-app is geïnstalleerd.                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            De MAM SDK-versie waarmee deze MAM-app is ingepakt.                                                                            |                 3.2                  |
+| mamDeviceId | Apparaat-Id van het apparaat waarmee MAM-toepassing-exemplaar is gekoppeld.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceType | Apparaattype van het apparaat waarmee MAM-toepassing-exemplaar is gekoppeld.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceName | De apparaatnaam van het apparaat waarmee MAM-toepassing-exemplaar is gekoppeld.   | 11/23/2016 12:00:00 AM   |
+|         IsDeleted          | Geeft aan of de record van dit MAM-app-exemplaar is bijgewerkt. <br>True: het MAM-app-exemplaar heeft een nieuwe record met bijgewerkte velden in deze tabel. <br>Onwaar: de meest recente record voor dit MAM-app-exemplaar. |              Waar/onwaar              |
+|   StartDateInclusiveUTC    |                                                              De datum en tijd in UTC waarop dit MAM-app-exemplaar is gemaakt in het datawarehouse.                                                               |        11/23/2016 12:00:00 AM        |
+|       DeletedDateUTC       |                                                                             De datum en tijd in UTC waarop IsDeleted is gewijzigd in Waar.                                                                              |        11/23/2016 12:00:00 AM        |
+| RowLastModifiedDateTimeUTC |                                                           De datum en tijd in UTC waarop dit MAM-app-exemplaar het laatst is gewijzigd in het datawarehouse.                                                            |        11/23/2016 12:00:00 AM        |
+
+## <a name="mamcheckins"></a>MamCheckins
+
+De entiteit **MamCheckin** vertegenwoordigt gegevens die worden verzameld wanneer een MAM-app-exemplaar (Mobile Application Management) heeft ingecheckt bij de Intune-service. 
+
+> [!Note]  
+> Wanneer een app-exemplaar meerdere keren per dag wordt ingecheckt, wordt dit slechts eenmaal geregistreerd in het datawarehouse.
+
+| Eigenschap | Beschrijving | Voorbeeld |
+|---------|------------|--------|
+| DateKey |De datum waarop het inchecken van de MAM-app is vastgelegd in het datawarehouse. | 20160703 |
+| ApplicationInstanceKey |De sleutel van het app-exemplaar dat is gekoppeld aan het inchecken van deze MAM-app. | 123 |
+| UserKey |De sleutel van de gebruiker die is gekoppeld aan het inchecken van deze MAM-app. | 4323 |
+| mamApplicationKey |Toepassing sleutel van de toepassing die is gekoppeld aan MAM-toepassing check-in. | 432 |
+| DeviceHealthKey |De sleutel van de apparaatstatus die is gekoppeld aan het inchecken van deze MAM-app. | 321 |
+| PlatformKey |Het platform van het apparaat dat is gekoppeld aan het inchecken van deze MAM-app. |123 |
+| LastCheckInDate |De datum en tijd waarop deze MAM-app het laatst is ingecheckt. De waarde kan null zijn. |11/23/2016 12:00:00 AM |
+
+## <a name="mamdevicehealths"></a>MamDeviceHealths
+
+De entiteit **MamDeviceHealth** vertegenwoordigt apparaten waarop MAM-beleid (Mobile Application Management) is geïmplementeerd, zelfs als ze opengebroken zijn.
+
+| Eigenschap | Beschrijving | Voorbeeld |
+|---------|------------|--------|
+| DeviceHealthKey |De unieke id van het apparaat en de bijbehorende status in het datawarehouse (surrogaatsleutel). |123 |
+| DeviceHealth |De unieke id van het apparaat en de bijbehorende status, vergelijkbaar met DeviceHealthKey, maar de id is een natuurlijke sleutel. |b66bc706-ffff-7777-0340-032819502773 |
+| DeviceHealthName |De status van het apparaat. <br>Niet beschikbaar: er is geen informatie over dit apparaat. <br>Goed: apparaat is niet opengebroken. <br>Slecht: apparaat is opengebroken. |Niet beschikbaar Goed Slecht |
+| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop deze specifieke MAM-apparaatstatus het laatst is gewijzigd in het datawarehouse. |11/23/2016 12:00:00 AM |
+
+## <a name="mamplatforms"></a>MamPlatforms
+
+De entiteit **MamPlatform** bevat de platformnamen en -typen waarop een MAM-app (Mobile Application Management) is geïnstalleerd.
+
+
+|          Eigenschap          |                                    Beschrijving                                    |                         Voorbeeld                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     De unieke id van het platform in het datawarehouse (surrogaatsleutel).      |                           123                           |
+|          Platform          | De unieke id van de platform, vergelijkbaar met PlatformKey, maar het is een natuurlijke sleutel. |                           123                           |
+|        PlatformName        |                                   De naam van het platform                                   | Niet beschikbaar <br>Geen <br>Windows <br>iOS <br>Android. |
+| RowLastModifiedDateTimeUTC | De datum en tijd in UTC waarop dit platform het laatst is gewijzigd in het datawarehouse.  |                 11/23/2016 12:00:00 AM                  |
 
 ## <a name="managementagenttypes"></a>managementAgentTypes
 De entiteit **ManagementAgentTypes** vertegenwoordigt de agents die worden gebruikt om een apparaat te beheren.

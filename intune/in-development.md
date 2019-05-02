@@ -1,12 +1,12 @@
 ---
 title: In ontwikkeling - Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune-functies in ontwikkeling
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e068e2c9834290b705e8e7bc2f895636415f9ba
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.openlocfilehash: aa38a684a32756d4f2c3be3b750f8e79b66e98f6
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675439"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587379"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>In de ontwikkeling voor Microsoft Intune - April 2019
 
 Om te helpen bij uw gereedheid en planning, deze pagina is een lijst met Intune UI-updates en functies die zijn in ontwikkeling, maar nog niet is vrijgegeven. Daarnaast:
 
-- Als we verwachten, moet u maatregelen nemen voordat u een wijziging, publiceren we een gratis Office Message Center-bericht.
+- Als we verwachten, moet u maatregelen nemen voordat u een wijziging, publiceren we een aanvullende Office Message Center-bericht.
 - Als een functie als een Preview-versie in productie, wordt gestart of algemeen beschikbaar is, de beschrijving van de functie worden verplaatst uit deze pagina en naar de [wat is er nieuw-pagina](whats-new.md).
 - Deze pagina en de [wat is er nieuw-pagina](whats-new.md) worden regelmatig bijgewerkt. Controleer op andere updates.
 - Raadpleeg de [M365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) voor strategische producten en tijdlijnen.
@@ -60,18 +60,6 @@ U binnenkort mogelijk om Intune te gebruiken voor het beheren van de aangepaste 
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>Voorwaardelijke toegang voor App-beveiliging is vereist  <!--1634317 -->
 U zult gebruiken *vereisen App-beveiligingsbeleid*, waarmee wordt bevestigd beleid wordt toegepast op van een gebruiker app voordat de aanmelding is voltooid om te voorkomen dat gebruikers toegang krijgen tot gegevens die u beveiligt met voorwaardelijke toegang. Terwijl beleid assurance de eerste gebruikerservaring van vertragen, wordt het helpt te beschermen tegen netwerkproblemen, administratieve onjuiste configuraties of opzettelijk inspanningen voor het beveiligingsbeleid voor toepassingen weren. 
-
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660---"></a>Implementatie van online gelicentieerde Microsoft Store voor Bedrijven-apps <!-- 16726660 -->
-U kunt vereiste online gelicentieerde Microsoft Store voor Bedrijven-apps in de apparaatcontext toewijzen. Wanneer u op deze manier een Microsoft Store voor bedrijven-app implementeert, kan de app worden geïnstalleerd voor alle gebruikers op het apparaat. Dit is alleen van toepassing op Windows 10 RS4+ Desktop-apparaten. De optie om de app in de apparaatcontext te installeren, is beschikbaar op de toewijzingspagina voor client-apps voor gelicentieerde MSFB Online-apps.
-
-### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>Opnemen en uitsluiten van de combinatie van gebruikersgroepen en apparaatgroepen bij het toewijzen van beleidsregels en profielen <!-- 1807547 -->
-Bij het toewijzen van beleidsregels voor naleving of configuratieprofielen, kunt u ze toewijzen aan beveiligingsgroepen met gebruikers of apparaten. U kunt op dit moment opnemen en uitsluiten alleen gebruikersgroepen *of* opnemen en uitsluiten alleen groepen apparaten. U kan opnemen en uitsluiten van een combinatie van groepen, bevatten, zoals gebruikersgroepen *en* uitsluiten van een groep apparaten.
-
-U zult kunnen opnemen en uitsluiten van een combinatie van gebruikersgroepen en apparaatgroepen. U kunt een groep gebruikers opnemen en uitsluiten van een groep apparaten. U kunt bijvoorbeeld toewijzen of implementeren van een apparaatconfiguratieprofiel voor een groep gebruikers, maar uitsluiten van persoonlijke apparaten.
-
-[Profielen voor apparaatconfiguratie toewijzen](device-profile-assign.md) bevat meer informatie over het toewijzen van profielen aan gebruikersgroepen en apparaatgroepen.
-
-Is van toepassing op: alle platforms
 
 ### <a name="retire-noncompliant-devices----1827291---"></a>Niet-compatibele apparaten buiten gebruik stellen <!-- 1827291 -->
 We gaan om toe te voegen een nieuwe nalevingsactie om een niet-compatibel apparaat buiten gebruik stellen. Buiten gebruik stellen van een niet-compatibel apparaat, worden alle bedrijfsgegevens verwijderd uit het en verwijdert u ook het apparaat wordt beheerd door Intune. Deze actie wordt uitgevoerd wanneer de geconfigureerde waarde in dagen is bereikt. De minimumwaarde is 30 dagen. 
@@ -142,7 +130,7 @@ Is van toepassing op: Android Enterprise volledig beheerde apparaten
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Controleer voor een TPM-chipset in een nalevingsbeleid voor Windows 10-apparaten <!-- 3617671 -->
 Groot aantal Windows 10 en hoger apparaten hebben chipsets Trusted Platform Module (TPM). Een nieuwe nalevingsinstelling wordt gecontroleerd of een TPM op het apparaat.
 
-[Windows 10 en hoger instellingen voor nalevingsbeleid](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) geeft een lijst van de huidige instellingen.
+[Windows 10 en hoger instellingen voor nalevingsbeleid](compliance-policy-create-windows.md) geeft een lijst van de huidige instellingen.
 
 Van toepassing op: 
 - Windows 10 en hoger
@@ -177,15 +165,6 @@ We voegen een nieuwe Windows update-ring instelling die u gebruiken kunt om te b
 
 ### <a name="windows-update-notifications----3316782---"></a>Windows Update-meldingen <!-- 3316782 -->
 We er ondersteuning toegevoegd voor de Windows Update-ring-configuraties, zodat u kunt het configureren van de Windows Update-meldingen die uw gebruikers te zien. Deze instelling niet beschikbaar zijn vanuit de portal, maar kan worden geconfigureerd met behulp van de Intune Graph API.
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Wijzigingen in de bedrijfsportal-App-registratie voor gebruikers van iOS-12-apparaten <!--3448635 --> 
-Bedrijfsportal-App voor iOS wordt de app-schermen voor inschrijving en de stappen om uit te lijnen met de MDM-inschrijving wijzigingen die zijn uitgebracht in Apple iOS 12.2 worden bijgewerkt. De bijgewerkte werkstroom wordt nu gevraagd voor gebruikers:
-
-- Safari op de website bedrijfsportal (via Safari) openen en downloaden van het beheerprofiel voordat u terugkeert naar de bedrijfsportal-app toestaan.
-- Open de app instellingen voor het installeren van het beheerprofiel op hun apparaat.
-- Ga terug naar de bedrijfsportal-app-registratie moet voltooien.
-
-Zie voor meer informatie over hoe u deze wijzigingen kunt voorbereiden, de [Microsoft Tech-Community post](https://aka.ms/CP_changes_iOS12). In de tussentijd ter ondersteuning van nieuwe iOS-inschrijvingen in bedrijfsportal-App, hebben we de stappen in bijgewerkt [iOS-apparaat inschrijven bij Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). Deze wijzigingen doc-bestand zijn live nadat Apple iOS-versie 12.2 worden vrijgegeven. 
 
 ### <a name="easier-access-to-diagnostic-settings----3804627---"></a>Eenvoudiger toegang tot diagnostische instellingen <!-- 3804627 -->
 We bij het toevoegen van een nieuwe optie om de **auditlogboeken** -blade in elke werkbelasting auditlogboek in de Intune-console die u kunt rechtstreeks openen de *diagnostische instellingen* pagina.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28f8a589f20cb63ad4f9873942e9ad511d729b37
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 535f66c68b066454ce9706b1dd1d7a4fce5c265c
+ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566451"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58788484"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Instellingen voor Windows 10 (en hoger) om gedeelde apparaten te beheren met Intune
 
@@ -60,6 +60,9 @@ Zie [Control access, accounts, and power features on shared PC or multi-user dev
 - **Onderwijsbeleid**: stel deze optie in op **ingeschakeld** om de aanbevolen instellingen voor apparaten op scholen te gebruiken. Met deze instellingen worden meer beperkingen opgelegd. Schakel deze optie **uit** om het standaard- en aanbevolen onderwijsbeleid niet te gebruiken. Door **niet te configureren** (standaard), wordt deze instelling niet beheerd via Intune en wordt er geen beleid gepusht voor het configureren van deze instelling op apparaten.
 
   Zie [Windows 10 configuration recommendations for education customers](https://docs.microsoft.com/education/windows/configure-windows-for-education) (Windows 10-configuratieaanbevelingen voor klanten uit het onderwijs) voor meer informatie over het onderwijsbeleid.
+
+> [!TIP]
+> [Instellen van een gedeelde of Gast PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) (opent u een andere website voor docs) is een fantastische bron voor deze functie van Windows 10, met inbegrip van de concepten en het groepsbeleid die kunnen worden ingesteld in de gedeelde modus.
 
 ## <a name="next-steps"></a>Volgende stappen
 

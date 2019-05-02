@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
-ms.translationtype: MTE75
+ms.openlocfilehash: 8957c8d8aad2eaa1741b1a625afd4b5a41a8bb51
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394997"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423693"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -138,7 +138,10 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Foutberichtvenster voor SIM-kaart (alleen mobiel)**: hiermee voorkomt u dat op het apparaat een foutbericht wordt weergegeven als er geen SIM-kaart wordt gedetecteerd.
 - **Ink-werkruimte**: hiermee voorkomt u dat gebruikers toegang hebben tot de Ink-werkruimte. Als dit is ingesteld op **Niet geconfigureerd**, wordt de Ink-werkruimte ingeschakeld (de functie wordt ingeschakeld) en mag de gebruiker deze gebruiken boven het vergrendelingsscherm.
 - **Automatisch opnieuw implementeren**: hiermee kunnen gebruikers met beheerdersrechten alle gebruikersgegevens en -instellingen verwijderen met **Ctrl + Win + R** op het vergrendelingsscherm van het apparaat. Het apparaat wordt automatisch opnieuw geconfigureerd en opnieuw ingeschreven bij het beheer.
-- **Gebruikers verplichten om verbinding te maken met het netwerk tijdens de configuratie van het apparaat (alleen Windows Insider)**: kies **Vereisen** om gebruikers tijdens de installatie van Windows 10 te verplichten het apparaat te verbinden met een netwerk voordat de configuratie van Windows 10 verder wordt uitgevoerd na de netwerkpagina. Hoewel deze functie nog in preview is, moet deze instelling worden gebruikt door een Windows Insider build 1809 of hoger.
+- **Gebruikers verplichten om verbinding te maken met het netwerk tijdens de configuratie van het apparaat (alleen Windows Insider)**: kies **Vereisen** om gebruikers tijdens de installatie van Windows 10 te verplichten het apparaat te verbinden met een netwerk voordat de configuratie van Windows 10 verder wordt uitgevoerd na de netwerkpagina.
+
+  De instelling van kracht wordt de volgende keer dat het apparaat is gewist of teruggezet. Net als elke andere Intune-configuratie, moet het apparaat worden geregistreerd en beheerd door Intune voor het ontvangen van configuratie-instellingen. Maar nadat deze geregistreerd en beleid ontvangt, klikt u vervolgens opnieuw instellen van het apparaat dwingt de instelling tijdens de volgende Windows-installatie.
+
 - **Directe geheugentoegang**: met **Blokkeren** blokkeert u directe geheugentoegang (DMA) voor alle downstream hot-pluggable PCI-poorten totdat een gebruiker zich bij Windows aanmeldt. **Ingeschakeld** (standaard) staat toegang tot DMA toe, zelfs wanneer een gebruiker niet is aangemeld.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
@@ -305,6 +308,29 @@ Dit apparaatbeperkingsprofiel is direct gerelateerd aan de kiosk-profiel u maken
   - **Wachtwoorden niet opnieuw gebruiken**: hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.
   - **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status (alleen voor Mobile)**: hiermee geeft u aan dat de gebruiker een wachtwoord moet opgeven om het apparaat te ontgrendelen (alleen voor Windows 10 Mobile).
   - **Eenvoudige wachtwoorden**: hiermee kunt u instellen dat eenvoudige wachtwoorden zijn toegestaan, zoals 1111 en 1234. Met deze instelling kunt u ook het gebruik van afbeeldingswachtwoorden toestaan of blokkeren.
+- **Automatische versleuteling tijdens toevoegen aan AAD**: **blok** wordt voorkomen dat automatische BitLocker-versleuteling voor apparaat wanneer het apparaat wordt voorbereid voor het eerste gebruik, wanneer het apparaat toegevoegd aan Azure AD is. **Niet geconfigureerd** (standaard) maakt gebruik van het besturingssysteem standaardoptie, Hierbij kan versleuteling inschakelen. Meer op [BitLocker apparaatversleuteling](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+
+  [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+
+- **Federal Information Processing Standard (FIPS) beleid**: **toestaan** maakt gebruik van de Federal Information Processing Standard (FIPS)-beleid, waarvan een US government standard voor versleuteling, hashing en ondertekening. **Niet geconfigureerd** (standaard) gebruikmaakt van het besturingssysteem, die geen gebruik maakt van FIPS.
+
+  [Cryptography/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+
+- **Windows Hello-apparaatverificatie**: **toestaan** gebruikers op een Windows Hello secundair apparaat gebruiken, zoals een telefoon, geschiktheid band of IoT-apparaat te melden bij een Windows 10-computer. **Niet geconfigureerd** (standaard) gebruikmaakt van het besturingssysteem, waardoor Windows Hello begeleidende apparaten van verificatie met Windows.
+
+  [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+
+- **Web-aanmelding**: Windows kan zich aanmelden voor ondersteuning voor niet-ADFS (Active Directory Federation Services) federatieve-providers, zoals Security Assertion Markup Language (SAML). SAML maakt gebruik van beveiligde tokens die biedt webbrowsers een eenmalige aanmelding (SSO). Uw opties zijn:
+
+  - **Niet geconfigureerd** (standaard): gebruikmaakt van het besturingssysteem op het apparaat.
+  - **Ingeschakeld**: de Web-Referentieprovider is ingeschakeld voor aanmelden.
+  - **Uitgeschakeld**: de Web-Referentieprovider voor aanmelding is uitgeschakeld.
+
+  [Verificatie/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+
+- **Azure Active Directory-tenantdomein voorkeur**: Voer de domeinnaam van een bestaande in uw organisatie Azure AD. Wanneer gebruikers in dit domein zich aanmelden, moet ze geen Typ de naam van het domein. Voer bijvoorbeeld `contoso.com` in. Gebruikers in de `contoso.com` domein kunt aanmelden met hun gebruikersnaam, zoals 'abby', in plaats van 'abby@contoso.com'.
+
+  [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>Privacy-uitzonderingen per app
 
