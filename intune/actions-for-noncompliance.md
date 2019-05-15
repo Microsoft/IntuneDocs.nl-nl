@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504198"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135228"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>E-mail automatiseren en acties voor niet-compatibele apparaten toevoegen in Intune
 
@@ -103,9 +103,6 @@ U kunt ook nog een actie toevoegen wanneer u een nalevingsbeleid maakt of wannee
          - Eventuele **extra ontvangers** invoeren door groepen te selecteren
     
     - **U kunt het niet-compatibele apparaat als volgt op afstand vergrendelen**: Als het apparaat niet compatibel is, vergrendelt u het apparaat. De gebruiker moet een pincode of wachtwoord invoeren om het apparaat te ontgrendelen. 
-
-    - **Het niet-compatibele apparaat buiten gebruik stellen**: Wanneer het apparaat niet compatibel is, verwijdert u alle bedrijfsgegevens van het apparaat en verwijdert u het apparaat uit Intune-beheer. Er wordt een minimale planning van **30** dagen ondersteund om te voorkomen dat u een apparaat per ongeluk wist.  
-
     
 5. Een **planning** configureren: Voer het aantal dagen (0 tot 365) na niet-naleving in voor het activeren van de actie op apparaten van gebruikers. Na deze respijtperiode kunt u een beleid voor voorwaardelijke toegang afdwingen. Als u **0** (nul) dagen invoert, wordt de voorwaardelijke toegang **onmiddellijk** van kracht. U kunt bijvoorbeeld onmiddellijk toegang tot bedrijfsbronnen blokkeren als een apparaat niet conform is.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426150"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135122"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
@@ -142,8 +142,8 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
     Als de bestandsnaam van uw app bijvoorbeeld **MyApp123** is, voegt u het volgende toe:<br>
     `msiexec /p “MyApp123.msp”`<p>
     En als de toepassing `ApplicationName.exe` is, bestaat de opdracht uit de naam van de toepassing, gevolgd door de opdrachtargumenten (schakelaars) die door het pakket worden ondersteund. <br>Bijvoorbeeld:<br>
-    `ApplicationName.exe /quite`<br>
-    In de bovenstaande opdracht biedt het `ApplicaitonName.exe`-pakket ondersteuning voor het opdrachtargument `/quite`.<p> Neem voor de specifieke argumenten die door het toepassingspakket worden ondersteund contact op met uw toepassingsleverancier.
+    `ApplicationName.exe /quiet`<br>
+    In de bovenstaande opdracht biedt het `ApplicationName.exe`-pakket ondersteuning voor het opdrachtargument `/quiet`.<p> Neem voor de specifieke argumenten die door het toepassingspakket worden ondersteund contact op met uw toepassingsleverancier.
 
 3.  Voeg de volledige opdrachtregel voor verwijdering toe om de app te verwijderen op basis van de unieke id van de app. 
 
@@ -282,9 +282,6 @@ U hebt nu de stappen voor het toevoegen van een Win32-app aan Intune voltooid. Z
 ## <a name="app-dependencies"></a>App-afhankelijkheden
 
 App-afhankelijkheden zijn toepassingen die moeten worden geïnstalleerd voordat u uw Win32-app kunt installeren. U kunt vereisen dat andere apps als afhankelijkheden worden geïnstalleerd. Specifiek moeten de afhankelijke apps op het apparaat worden geïnstalleerd vóór u de Win32-app installeert. Er is een maximum van 100 afhankelijkheden. Dit is inclusief de afhankelijkheden van eventueel opgenomen afhankelijkheden en de app zelf. U kunt alleen Win32-afhankelijkheden toevoegen nadat uw Win32-app is toegevoegd en naar Intune is geüpload. Zodra uw Win32-app is toegevoegd, ziet u de optie **Afhankelijkheden** op de blade voor uw Win32-app. 
-
-> [!NOTE]
-> De functionaliteit App-afhankelijkheid is alleen beschikbaar nadat de Intune-beheeragent naar versie 1904 (hoger dan 1.18.120.0) is geüpgraded. Dit kan 1 à 2 weken duren nadat wij de service naar 1904 hebben geüpgraded.
 
 Wanneer u een app-afhankelijkheid toevoegt, kunt u een zoekopdracht uitvoeren op basis van de naam en uitgever van de app. Daarnaast kunt u de toegevoegde afhankelijkheden sorteren op basis van de naam en uitgever van de app. Eerder toegevoegde app-afhankelijkheden kunnen niet worden geselecteerd in de lijst met toegevoegde app-afhankelijkheden. 
 
