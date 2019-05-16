@@ -552,6 +552,8 @@
               href: app-configuration-policies-use-ios.md
             - name: Android beheerde apparaten
               href: app-configuration-policies-use-android.md
+            - name: App Beheerd startscherm voor Android Enterprise
+              href: app-configuration-managed-home-screen-app.md
             - name: Managed apps
               href: app-configuration-policies-managed-app.md
             - name: Inrichtingsprofielen voor iOS-apps gebruiken
