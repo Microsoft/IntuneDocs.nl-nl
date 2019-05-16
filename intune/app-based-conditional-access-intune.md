@@ -1,27 +1,29 @@
 ---
 title: Op apps gebaseerde voorwaardelijke toegang met Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Meer informatie over hoe op apps gebaseerde voorwaardelijke toegang werkt met Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/31/2017
-ms.topic: article
+ms.date: 02/11/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 30f5b902619c84e6d1d193c252e76475d2e54e82
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b4c39a1d95a10c96b8f34703f99c4d8414efbbf0
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816732"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567371"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Op apps gebaseerde voorwaardelijke toegang met Intune
 
@@ -67,13 +69,13 @@ In dit voorbeeld heeft de beheerder beveiligingsbeleid voor de Outlook-app toege
 
 3. De broker-app wordt op het apparaat geïnstalleerd.
 
-4. De broker-app start het registratieproces van Azure AD om een apparaatrecord te maken in Azure AD. Dit is niet hetzelfde zijn als het inschrijvingsproces voor Mobile Device Management (MDM), maar deze record is nodig om het beleid voor voorwaardelijke toegang te kunnen afdwingen op het apparaat.
+4. Met de broker-app wordt het registratieproces van Azure AD gestart om een apparaatrecord te maken in Azure AD. Dit is niet hetzelfde zijn als het MDM-inschrijvingsproces (Mobile Device Management), maar deze record is nodig om het beleid voor voorwaardelijke toegang te kunnen afdwingen op het apparaat.
 
-5. De broker-app verifieert de identiteit van de app. Er is een beveiligingslaag zodat de broker-app kan valideren of de app gemachtigd is voor gebruik.
+5. De broker-app verifieert de identiteit van de app. Er is een beveiligingslaag zodat met de broker-app kan worden gevalideerd of de app is gemachtigd voor gebruik.
 
 6. De broker-app verzendt de client-id van de app naar Azure AD als onderdeel van het verificatieproces voor de gebruiker om te controleren of de app voorkomt in de lijst met goedgekeurde beleidsregels.
 
-7. Met Azure AD kan de gebruiker worden geverifieerd en wordt de app op de lijst met goedkeurde beleidsregels gebruikt. Als de app niet op deze lijst voorkomt, wordt de toegang tot de app geweigerd.
+7. Met Azure AD kan de gebruiker worden geverifieerd en wordt de app op de lijst met goedkeurde beleidsregels gebruikt. Als de app niet voorkomt op de lijst, wordt de toegang tot de app geweigerd.
 
 8. De Outlook-app communiceert met de Outlook-cloudservice voor communicatie met Exchange Online.
 

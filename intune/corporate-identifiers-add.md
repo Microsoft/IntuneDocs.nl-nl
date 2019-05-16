@@ -1,27 +1,29 @@
 ---
 title: Zakelijke id’s toevoegen aan Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Meer informatie over het toevoegen van zakelijke id's (registratiemethode, IMEI en serienummers) aan Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ae4691b21b9728a28f9cac0ae0af7fd42a8bdbde
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 28ad1e492c4bdd7c87371611530cd3f8e2abc2e1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199435"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567280"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
 
@@ -66,8 +68,9 @@ Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 ```
 
 > [!IMPORTANT]
-> Sommige Android-apparaten hebben meerdere IMEI-nummers. Intune leest maar één IMEI-nummer per ingeschreven apparaat. Als u een IMEI-nummer importeert dat niet het IMEI-nummer is dat door Intune is geïnventariseerd, wordt het apparaat geclassificeerd als een persoonlijk apparaat in plaats van een apparaat in bedrijfseigendom. Als u meerdere IMEI-nummers voor een apparaat importeert, krijgen niet-geïnventariseerde nummers de inschrijvingsstatus **Onbekend**.<br>
->Let ook hierop: Android-serienummers zijn niet gegarandeerd uniek of aanwezig. U kunt de leverancier van uw apparaat vragen of het serienummer van uw apparaat een betrouwbare id is.
+> Sommige Android- en iOS-apparaten hebben meerdere IMEI-nummers. Intune leest maar één IMEI-nummer per ingeschreven apparaat. Als u een IMEI-nummer importeert dat niet het IMEI-nummer is dat in Intune is geïnventariseerd, wordt het apparaat geclassificeerd als een persoonlijk apparaat in plaats van een apparaat in bedrijfseigendom. Als u meerdere IMEI-nummers voor een apparaat importeert, krijgen niet-geïnventariseerde nummers de inschrijvingsstatus **Onbekend**.<br>
+>Let ook hierop: Serienummers zijn de aanbevolen identificatiewijze voor iOS-apparaten.
+>Android-serienummers zijn niet gegarandeerd uniek of aanwezig. U kunt de leverancier van uw apparaat vragen of het serienummer van uw apparaat een betrouwbare id is.
 >De serienummers van het apparaat die aan Intune worden gemeld, komen mogelijk niet overeen met de id die wordt weergegeven in het menu Info of Instellingen van het apparaat. Controleer het type van het serienummer dat door de fabrikant van het apparaat wordt vermeld.
 >Wanneer wordt geprobeerd een bestand te uploaden met serienummers met punten (.), mislukt de upload. Serienummers met punten worden niet ondersteund.
 

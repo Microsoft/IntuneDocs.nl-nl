@@ -1,6 +1,6 @@
 ---
 title: Een aangepaste domeinnaam configureren
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Een aangepaste domeinnaam voor uw Microsoft Intune-abonnement toevoegen
 keywords: ''
 author: dougeby
@@ -10,18 +10,20 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: a4227399eb5cf1d2cc2e265215eccb2c05d73ac5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4d0c3d11eb3a031f34704dcd9ecf16f3312ac818
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181493"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567241"
 ---
 # <a name="configure-a-custom-domain-name"></a>Een aangepaste domeinnaam configureren
 
@@ -42,15 +44,15 @@ U kunt de initiële domeinnaam onmicrosoft.com niet wijzigen of verwijderen. U k
 
 ## <a name="to-add-and-verify-your-custom-domain"></a>Aangepaste domeinen toevoegen en controleren
 
-1. Ga naar [Office 365-beheerportal](https://portal.office.com/Admin/Default.aspx) en meld u aan bij uw beheerdersaccount.
+1. Ga naar het [Microsoft 365-beheercentrum](https://admin.microsoft.com/) en meld u aan bij uw beheerdersaccount.
 
 2. Kies in het navigatievenster **Configuratie** &gt; **Domeinen**.
 
 3. Kies **Domein toevoegen** en typ uw aangepaste domeinnaam. Selecteer **Volgende**.
-   ![Schermafbeelding van Office 365-beheercentrum met Instellingen > Domeinen geselecteerd en een nieuwe domeinnaam die wordt toegevoegd](./media/domain-custom-add.png)
+   ![Schermafbeelding van Microsoft 365-beheercentrum met Instellingen > Domeinen geselecteerd, en waar een nieuwe domeinnaam wordt toegevoegd](./media/domain-custom-add.png)
 4. Het weergegeven dialoogvenster **Domein controleren** bevat de waarden die u nodig hebt om de TXT-record in uw DNS-hostingprovider te maken.
-    - **GoDaddy-gebruikers**: u wordt vanuit de Office 365-beheerportal doorgestuurd naar de aanmeldingspagina van GoDaddy. Nadat u uw referenties hebt ingevoerd en de overeenkomst hebt geaccepteerd waarmee u toestemming voor het wijzigen van het domein geeft, wordt de TXT-record automatisch aangemaakt. U kunt ook de [TXT-record aanmaken](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
-    - **Register.com-gebruikers**: volg de [stapsgewijze instructies](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) om de TXT-record te maken.
+    - **GoDaddy-gebruikers**: In het Microsoft 365-beheercentrum wordt u naar de aanmeldingspagina van GoDaddy geleid. Nadat u uw referenties hebt ingevoerd en de overeenkomst hebt geaccepteerd waarmee u toestemming voor het wijzigen van het domein geeft, wordt de TXT-record automatisch aangemaakt. U kunt ook de [TXT-record aanmaken](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
+    - **Register.com-gebruikers**: Volg de [stapsgewijze instructies](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) om de TXT-record te maken.
 
 De stappen voor het toevoegen en controleren van een aangepast domein kunnen ook worden [uitgevoerd in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 

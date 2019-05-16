@@ -1,12 +1,12 @@
 ---
 title: Verbinding maken met het datawarehouse met Power BI
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: U kunt een bestand downloaden voor gebruik met Microsoft Power BI om interactieve, dynamisch gegenereerde rapporten te laden voor uw Microsoft Intune-tenant.
 keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b93bb9911fa93998e443a797d085a568280c278
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
-ms.translationtype: MTE75
+ms.openlocfilehash: 259d700d04547a801b0ebc37242dacf536ad61d3
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618498"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871375"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinding maken met het datawarehouse met Power BI
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-U kunt een bestand downloaden voor gebruik met Microsoft Power BI om interactieve, dynamisch gegenereerde rapporten te laden voor uw Intune-tenant. Het Power BI-bestand voor het datawarehouse (pbix) bevat verbindingsinstellingen voor uw tenant, plus de volgende voorbeelden van rapporten en grafieken:  
+U kunt de Compliance-app van Power BI gebruiken om interactieve, dynamisch gegenereerde rapporten voor uw Intune-tenant te laden. Verder kunt u uw tenantgegevens in Power BI laden met behulp van de OData-koppeling. Intune biedt verbindingsinstellingen voor uw tenant zodat u voorbeeldrapporten en -grafieken met betrekking tot het volgende kunt weergeven:  
 
   -  Apparaten
   -  Inschrijving
@@ -47,29 +47,36 @@ De volgende stappen laten zien hoe u het Power BI-bestand downloadt en hoe u de 
 
 ## <a name="install-power-bi"></a>Power BI installeren
 
-Installeer de nieuwste versie van Power BI Desktop. U kunt Power BI Desktop downloaden van: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
+Installeer de nieuwste versie van [Power BI Desktop](https://aka.ms/intune/datawarehouseapi/installpowerbi). Zie [Power BI Desktop](https://powerbi.microsoft.com/desktop) voor meer informatie
 
-## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Gegevens en rapporten laden via Power BI-bestand (pbix)
+## <a name="load-the-data-and-reports-using-the-power-bi-intune-compliance-data-warehouse-app"></a>De gegevens en rapporten laden met behulp van de Intune Compliance Data Warehouse-app van Power BI
 
-Het Power BI-bestand (pbix) bevat verbindingsgegevens voor uw tenant en een set vooraf gedefinieerde rapporten op basis van het datawarehouse-gegevensmodel. Open het bestand in Power BI Desktop en meld u aan bij Azure AD. De gegevens uit uw Intune-tenant worden in het rapport geladen.
+De [Intune Compliance Data Warehouse-app](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) van Power BI bevat verbindingsgegevens voor uw tenant en een set vooraf gedefinieerde rapporten op basis van het datawarehouse-gegevensmodel.
 
-> [!Important]  
-> Elk Power BI-bestand (pbix) is mogelijk anders afhankelijk van de locatie van de tenant. Als u meerdere Intune-tenants beheert, moet u ervoor zorgen dat u het bestand gebruikt dat u hebt gedownload van Azure Portal terwijl was aangemeld bij de betreffende tenant.  
+1.  Navigeer naar de [Intune Compliance Data Warehouse-app](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) om te beginnen met het installatieproces.
+2.  Wanneer u wordt gevraagd de Power BI-app uit vertrouwde bronnen te installeren, klikt u op **Installeren**.
+3.  Klik op de tegel **Intune Compliance Data Warehouse-app**.
+4.  Klik op de knop **Verbinding maken met gegevens**. 
+    Het dialoogvenster **Verbinding maken met de Intune Compliance Data Warehouse-app** wordt weergegeven.
+5.  Klik op de knop **Aanmelden**.
+6.  Meld u aan met een gebruikersaccount dat toegang heeft tot het Intune-datawarehouse voor de tenant die de rapporten bevat die u wilt weergeven. 
+7.  Klik op het tabblad **Rapporten** en klik vervolgens op het rapport **Naleving V1.0**.
+8.  U kunt later eenvoudig terugkeren naar deze rapporten als u op de ster naast het rapport **Naleving V1.0** klikt. Hiermee wordt het rapport toegevoegd aan uw Power BI-favorieten.
 
-1.  Meld u aan bij Azure Portal en kies **Bewaking en beheer** > **Intune**. U kunt ook zoeken naar resources voor **Intune**.  
-2.  Open de **Intune Data Warehouse instellen** blade.
-3.  Selecteer **Power BI-bestand downloaden**. Het bestand met de extensie pbix wordt gedownload naar de locatie die u hebt opgegeven.
-4.  Open het bestand met Power BI. De *Intune-datawarehouserapporten* worden geladen, maar het kan even duren omdat de gegevens van uw tenant moeten worden opgehaald.
-5.  Selecteer **Vernieuwen** om de gegevens van uw tenant te laden en de rapporten te bekijken.
-6.  Als Power BI niet is geverifieerd met uw Azure Active Directory-referenties, wordt u door Power BI gevraagd om uw referenties. Kies bij het selecteren van uw referenties **Organisatieaccount** als de verificatiemethode.
+U kunt ook de app ook installeren vanuit de Intune-portal:
+
+1.  Meld u aan bij Azure Portal en kies **Bewaking en beheer** > **Intune**. U kunt ook zoeken naar resources voor Intune.
+2.  Open de blade **Intune-datawarehouse instellen**.
+3.  Selecteer **Power BI-app ophalen** voor toegang tot en het delen van vooraf gemaakte Power BI-rapporten voor uw tenant in de browser.
+4.  Volg de bovenstaande stappen 2-8.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Gegevens via OData-koppeling laden in Power BI
 
 Nadat een client is geverifieerd bij Azure AD, wordt de OData-URL verbonden met het RESTful-eindpunt in de datawarehouse-API die het gegevensmodel weergeeft in de rapportageclient. Volg deze instructies om met behulp van Power BI Desktop een verbinding tot stand te brengen en uw eigen rapporten te maken. U bent niet beperkt tot Power BI Desktop, maar kunt uw favoriete analyseprogramma gebruiken met de OData-URL. Dit is echter alleen mogelijk als de client OAUTH2.0-verificatie en de OData-v4.0 standaard ondersteunt.
 
 1.  Meld u aan bij Azure Portal en kies **Bewaking en beheer** > **Intune**. U kunt ook zoeken naar resources voor **Intune**.  
-2.  Open de **Intune Data Warehouse instellen** blade.
-3. Haal via de rapportage-blade de aangepaste URL van de feed op, bijvoorbeeld `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+2.  Open de blade **Intune-datawarehouse instellen**.
+3. Haal via de rapportage-blade de aangepaste URL van de feed op, bijvoorbeeld `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. Open **Power BI Desktop**.
 5. Kies **Home** > **Get Data**. Selecteer **OData feed**.
 6. Selecteer **Basic**.
@@ -84,7 +91,7 @@ Nadat een client is geverifieerd bij Azure AD, wordt de OData-URL verbonden met 
 
 ## <a name="next-steps"></a>Volgende stappen
 
-U kunt antwoord vinden op vragen over uw omgeving, zoals het aantal apparaten dat per dag is geregistreerd gedurende de afgelopen week. U kunt inzicht krijgen in uw Intune-tenant en de clientpopulatie aan de hand van rapporten die u genereert met behulp van het Power BI-bestand (pbix) voor het Intune-datawarehouse dat u ophaalt van de blade in Azure. Intune biedt echter verschillende andere manieren waarop u de gegevens kunt uitbreiden of hergebruiken. U kunt nog allerlei andere dingen doen met Power BI en de Intune-datawarehouse-API, zoals:
+U kunt antwoord vinden op vragen over uw omgeving, zoals het aantal apparaten dat per dag is geregistreerd gedurende de afgelopen week. U kunt inzicht krijgen in uw Intune-tenant en de clientpopulatie met behulp van de Intune-datawarehouserapporten van Power BI die u ophaalt van de blade in Azure. Intune biedt echter verschillende andere manieren waarop u de gegevens kunt uitbreiden of hergebruiken. Power BI en de Intune-datawarehouse-API bieden aanvullende functionaliteit, bijvoorbeeld:
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  De gegevens van uw tenant zijn zo georganiseerd dat u op verschillende manieren inzicht kunt krijgen in uw gegevens. Zie [Data Warehouse Data Model](reports-ref-data-model.md) (Datawarehouse-gegevensmodel) voor meer informatie over de ordening van de gegevens.

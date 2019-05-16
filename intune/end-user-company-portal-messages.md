@@ -1,6 +1,6 @@
 ---
 title: Bedrijfsportal-berichten die gebruikers mogelijk te zien krijgen op apparaten
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Kom meer te weten over de verschillende berichten die eindgebruikers te zien kunnen krijgen in de bedrijfsportal.
 keywords: ''
 author: lenewsad
@@ -10,18 +10,19 @@ ms.date: 03/09/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2fd42ece4a0df60ebe6f15b67c91bba46f210ff
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233152"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569126"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Eindgebruikers helpen bij het begrijpen van berichten van de bedrijfsportal-app
 
@@ -110,6 +111,34 @@ Als u de bedrijfsportal-app niet hebt toegevoegd aan de lijst **Toegestane apps*
 ### <a name="what-it-means"></a>Wat het betekent
 
 Voeg de bedrijfsportal toe aan de lijst **Toegestane apps** of **Vrijgestelde apps** in het WIP-beveiligingsbeleid (Windows Information Protection) voor apps. Zie [Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune](windows-information-protection-policy-create.md).
+
+## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Een iOS-bedrijfsportalapp (line-of-business-app) op uw iOS-apparaat goedkeuren 
+
+### <a name="where-it-appears"></a>Waar deze wordt weergegeven
+iOS-apps die zijn ontwikkeld door uw organisatie en die niet beschikbaar zijn in de App Store worden niet standaard door uw apparaat vertrouwd. Wanneer u apps installeert als de bedrijfsportal en de app start, wordt het volgende bericht weergegeven:
+
+![iOS-appbericht - Niet-vertrouwde bedrijfsontwikkelaar](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+
+### <a name="what-it-means"></a>Wat het betekent
+Dit bericht betekent dat u uw iOS-apparaatinstellingen moet bewerken om een app die door uw organisatie is ontwikkeld goed te keuren en op uw iOS-apparaat te installeren.
+
+Wanneer u zulke apps installeert met de bedrijfsportal en de app start, volgt u deze stappen om de app goed te keuren nadat u deze hebt gedownload:
+
+1. Nadat een geïnstalleerde bedrijfsapp ( line-Of-Business-app) wordt gestart, ziet u het bericht over een niet-vertrouwde bedrijfsontwikkelaar. <br>
+   Druk op **Annuleren**.
+2. Navigeer naar **Instellingen** > **Algemeen** > **Apparaatbeheer**.
+
+   ![Gebruikersinterface van iOS-apparaat - Apparaatbeheer](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+
+3. Selecteer **Beheerprofiel** > **Bedrijfsapp**.
+4. Selecteer de naam van de ontwikkelaar.
+5. Druk op **Ontwikkelaar _vertrouwen_**.
+6. Bevestig de app door **Vertrouwen** te selecteren in het pop-upbericht van de app-installatie.
+
+   ![Gebruikersinterface van iOS-apparaat - Bericht over app vertrouwen](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+
+    U hoort de bedrijfsapp te kunnen starten en gebruiken.
+
 
 ### <a name="see-also"></a>Zie tevens
 [Wat u uw eindgebruikers vertelt over het gebruik van Intune](end-user-educate.md)

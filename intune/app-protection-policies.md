@@ -1,27 +1,29 @@
 ---
 title: Beveiligingsbeleid voor apps maken en implementeren
 titleSuffix: Microsoft Intune
-description: Meer informatie over het maken en toewijzen van app-beveiligingsbeleid van Microsoft Intune.
+description: In dit onderwerp wordt beschreven hoe app-beveiligingsbeleid (APP) van Microsoft Intune wordt gemaakt en toegewezen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e81a80dae9777cae96d9ddc6dfe9d64b2abf1204
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a7d7834719b42a1aaa6240510a951733a96f6add
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297363"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569789"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>App-beveiligingsbeleid maken en toewijzen
 
@@ -43,7 +45,7 @@ Zie [Add apps to Microsoft Intune](apps-add.md) (Apps toevoegen aan Microsoft In
 
    ![Schermafbeelding van de blade ‘Een beleid toevoegen’](./media/app-protection-add-policy.png)
 
-3. Geef een naam op voor het beleid, voeg een korte beschrijving toe en selecteer het platformtype voor uw beleid. U kunt meerdere beleidsregels maken voor elk platform.
+3. Geef een naam op voor het beleid, voeg een korte beschrijving toe en selecteer het platformtype voor uw beleid. U kunt meer dan één beleid voor elk platform maken.
 
 4. Selecteer **Apps** om de blade **Apps** te openen, zodat er een lijst met beschikbare apps wordt weergegeven. U kunt een of meer apps in de lijst selecteren die u wilt koppelen aan het beleid dat u maakt. Selecteer minste één app om een beleid te maken.  
 
@@ -52,7 +54,7 @@ Zie [Add apps to Microsoft Intune](apps-add.md) (Apps toevoegen aan Microsoft In
 6. Kies **Vereiste instellingen configureren** op de blade **Een beleid toevoegen** om **Instellingen** te openen.
 
    Er zijn drie soorten beleidsinstellingen:
-   - **Herlocatie van gegevens**: deze groep bevat de DLP-besturingselementen voor preventie van gegevensverlies, zoals knippen, kopiëren, plakken en beperkingen voor 'opslaan als'. Deze instellingen bepalen hoe gebruikers met gegevens in de apps kunnen werken.
+   - **Gegevensbeveiliging**: deze groep bevat de DLP-besturingselementen voor preventie van gegevensverlies, zoals knippen, kopiëren, plakken en beperkingen voor opslaan als. Deze instellingen bepalen hoe gebruikers met gegevens in de apps kunnen werken.
    - **Toegangsvereisten**: deze groep bevat de pincodeopties per app die bepalen hoe de gebruiker toegang heeft tot de apps in een werkcontext.  
    - **Voorwaardelijk starten**: deze groep bevat instellingen zoals de minimale instellingen van het besturingssysteem, detectie van opengebroken of geroote apparaten en offline respijtperioden.
 

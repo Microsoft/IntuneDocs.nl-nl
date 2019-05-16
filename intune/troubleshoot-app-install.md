@@ -28,7 +28,7 @@ ms.locfileid: "58799498"
 
 Op apparaten die met Microsoft Intune MDM worden beheerd, mislukken app-installaties wel eens. Als deze apps niet kunnen worden geïnstalleerd, is het soms lastig om de reden van het probleem te achterhalen of om het probleem op te lossen. Microsoft Intune biedt details van app-installatiefouten. Zo kunnen helpdeskmedewerkers en Intune-beheerders app-informatie bekijken om de hulpverzoeken van gebruikers te beantwoorden. Het deelvenster voor probleemoplossing binnen Intune biedt foutdetails, waaronder details over beheerde apps op een apparaat van een gebruiker. Er worden details van de end-to-end-levenscyclus van een app van elk afzonderlijk apparaat getoond in het deelvenster **Beheerde apps**. U kunt installatieproblemen bekijken, zoals wanneer de app was gemaakt, bewerkt, ingericht op en geleverd aan een apparaat. 
 
-## <a name="app-troubleshooting-details"></a>Oplossen van problemen met App-details
+## <a name="app-troubleshooting-details"></a>Details van de app-probleemoplossing
 
 Intune biedt details van app-probleemoplossing op basis van de geïnstalleerde apps op een specifiek apparaat van een gebruiker.
 
@@ -53,46 +53,46 @@ De details van de app-installatieproblemen geven het probleem aan. U kunt deze d
 > [!Note]  
 > U kunt het deelvenster **Probleemoplossing** ook openen door in uw browser naar het volgende adres te gaan: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
-## <a name="win32-app-installation-troubleshooting"></a>Win32-app installatieproblemen oplossen
+## <a name="win32-app-installation-troubleshooting"></a>Problemen met de installatie van Win32-app oplossen
 
-Selecteer de Win32-app die is geïmplementeerd met behulp van de Intune-beheeruitbreiding. U kunt selecteren de **verzamelen van logboeken** wanneer de installatie van de Win32-app is mislukt. 
+Selecteer de Win32-app die is geïmplementeerd met behulp van de Intune-beheerextensie. U kunt de optie **Logboeken verzamelen** selecteren wanneer de installatie van de Win32-app is mislukt. 
 
 > [!IMPORTANT]
-> De **verzamelen van logboeken** optie wordt niet ingeschakeld wanneer de Win32-app is geïnstalleerd op het apparaat.<p>Voordat u de Win32-app-logboekgegevens verzamelen kunt, moet u de Intune-beheeruitbreiding geïnstalleerd op de Windows-client. De Intune-beheerextensie wordt geïnstalleerd wanneer een PowerShell-script of een Win32-app wordt geïmplementeerd in een gebruikers- of apparaatbeveiligingsgroep. Zie voor meer informatie, [Intune-beheeruitbreiding - vereisten](intune-management-extension.md#prerequisites).
+> De optie **Logboeken verzamelen** wordt niet ingeschakeld wanneer de Win32-app succesvol is geïnstalleerd op het apparaat.<p>Voordat u logboekgegevens over de Win32-app kunt verzamelen, moet de Intune-beheerextensie geïnstalleerd zijn op de Windows-client. De Intune-beheerextensie wordt geïnstalleerd wanneer een PowerShell-script of een Win32-app wordt geïmplementeerd in een gebruikers- of apparaatbeveiligingsgroep. Zie [Intune-beheerextensie - vereisten](intune-management-extension.md#prerequisites). voor meer informatie.
 
-### <a name="collect-log-file"></a>Verzamelen van logboekbestand
+### <a name="collect-log-file"></a>Logboekbestand verzamelen
 
-Voor het verzamelen van de installatielogboeken van de Win32-app, volgt u eerst de stappen in de sectie [App probleemoplossingsdetails](troubleshoot-app-install.md#app-troubleshooting-details). Ga vervolgens verder met de volgende stappen uit:
+Volg eerst de stappen in de sectie [Details van de app-probleemoplossing](troubleshoot-app-install.md#app-troubleshooting-details) om de installatielogboeken van de Win32-app te verzamelen. Ga vervolgens verder met de volgende stappen:
 
-1. Klik op de **verzamelen van logboeken** kiezen op de **installatiegegevens** blade.
+1. Klik op de optie **Logboeken verzamelen** op de blade **Installatiegegevens**.
 
     <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
 
-2. Bestandspaden bieden met log namen om te beginnen met het logboekverzamelproces van het bestand en klik op **OK**.
+2. Geef bestandspaden met logboekbestandsnamen op om te beginnen met het verzamelen van logboekbestanden en klik op **OK**.
     
     > [!NOTE]
-    > Logboekverzameling duurt minder dan twee uur. Ondersteunde bestandstypen: *.log, txt, dmp, cab, ZIP-, .xml, .evtx en .evtl*. Een maximum van 25 paden zijn toegestaan.
+    > Het verzamelen van logboeken duur minder dan twee uur. Ondersteunde bestandstypen: *.log, .txt, .dmp, .cab, .zip, .xml, .evtx, en .evtl*. Er zijn maximaal 25 bestandspaden toegestaan.
 
-3. Zodra de logboekbestanden zijn verzameld, kunt u de **logboeken** koppeling om te downloaden van de logboekbestanden.
+3. Zodra de logboekbestanden zijn verzameld, kunt u de koppeling **Logboeken** selecteren om de logboekbestanden te downloaden.
 
     <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
 
     > [!NOTE]
-    > Een melding weergegeven die wijzen op het succes van de logboekverzamelaar app.
+    > Er wordt een melding weergegeven om aan te geven dat de app-logboeken zijn verzameld.
 
-#### <a name="win32-log-collection-requirements"></a>Win32-logboekvereisten verzameling
+#### <a name="win32-log-collection-requirements"></a>Vereisten voor het verzamelen van Win32-logboeken
 
-Er zijn specifieke vereisten die moeten worden gevolgd voor het verzamelen van logboekbestanden:
+Er zijn specifieke vereisten voor het verzamelen van logboekbestanden:
 
-- U moet het volledige logboek-bestandspad opgeven. 
-- U kunt omgevingsvariabelen voor de logboekverzameling, zoals het volgende opgeven:<br>
-  *% PROGRAMFILES %, % PROGRAMDATA % % OPENBARE %, % WINDIR %, % TEMP %, % TMP %*
-- Alleen exacte bestandsextensies zijn toegestaan, zoals:<br>
+- U moet het volledige pad naar het logboekbestand opgeven. 
+- U kunt omgevingsvariabelen voor het verzamelen van logboeken opgeven, bijvoorbeeld:<br>
+  *%PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%*
+- Alleen precieze bestandsextensies zijn toegestaan, zoals:<br>
   *.log, .txt, .dmp, .cab, .zip, .xml*
-- De maximale logboekbestand voor het uploaden is 60 MB of 25-bestanden, indien dit eerder gebeurt. 
-- Win32-app installeren-logboekverzameling is ingeschakeld voor apps die voldoen aan de vereiste beschikbaar is, en verwijder de toewijzingsopzet app.
-- Opgeslagen logboeken worden ter bescherming van eventuele PII-gegevens die zijn opgenomen in de logboeken versleuteld.
-- Tijdens het openen ondersteuning voor Win32-app fouten-tickets, koppelt u de gerelateerde fout-logboeken met behulp van de bovenstaande stappen.
+- U kunt maximaal een logboekbestand van 60 MB of 25 bestanden uploaden, wat zich het eerst voordoet. 
+- Het verzamelen van Win32-app-installatielogboeken is ingeschakeld voor apps die voldoen aan de vereiste, beschikbare en app-verwijdertoewijzingsintentie.
+- Opgeslagen logboeken worden versleuteld ter bescherming van persoonsgegevens in de logboeken.
+- Voeg bij het openen van ondersteuningstickets voor Win32-app-fouten de gerelateerde foutenlogboeken bij met behulp van de bovenstaande stappen.
 
 ## <a name="app-installation-errors"></a>App-installatiefouten
 
@@ -114,7 +114,7 @@ De volgende foutberichten en beschrijvingen bieden informatie over Android- en i
 
 ### <a name="ios-errors"></a>iOS-fouten
 
-| Foutbericht/-code | Beschrijving/probleemoplossing tips |
+| Foutbericht/-code | Beschrijving/probleemoplossingstips |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | (0x87D12906) | Apple MDM-Agent heeft geretourneerd dat de installatieopdracht is mislukt. |
 | (0x87D1313C) | De netwerkverbinding is verbroken terwijl de bijgewerkte URL voor de downloadservice naar het apparaat werd verzonden. Een server met de opgegeven hostnaam kan niet worden gevonden. |
@@ -126,16 +126,16 @@ De volgende foutberichten en beschrijvingen bieden informatie over Android- en i
 | De gebruiker heeft de aanbieding om de app te installeren afgewezen. (0x87D13B62) | Tijdens de eerste installatie van de app heeft de gebruiker op Annuleren geklikt. |
 | De gebruiker heeft de aanbieding voor een update van de app afgewezen. (0x87D13B63) | De eindgebruiker heeft tijdens het updateproces op Annuleren geklikt. |
 | Onbekende fout (0x87D103E8) | Er is een onbekende app-installatiefout opgetreden. Dit is de resulterende fout als geen van de andere fouten is opgetreden. |
-| Kan de VPP-apps alleen installeren op gedeelde iPad (-2016330861). | De apps moeten worden verkregen met behulp van Apple Volume Purchase Program te installeren op een gedeelde iPad. |
-| Geen apps installeren als de App Store is uitgeschakeld (-2016330860).  | De Store-App moet zijn ingeschakeld voor de gebruiker de app te installeren. |
-| VPP-licentie voor app (-2016330859) is niet gevonden.  | Probeer intrekken en opnieuw toewijzen van de app-licentie. |
-| Geen system-apps niet installeren met de MDM-provider (-2016330858). | Installeren van apps die vooraf zijn geïnstalleerd door de iOS-besturingssysteem is niet een ondersteund scenario. |
-| Geen installeren apps, wanneer het apparaat zich in de modus apparaat verloren (-2016330857). | Alle gebruik van het apparaat wordt geblokkeerd in de modus apparaat verloren.   Modus apparaat verloren om apps te installeren uitschakelen. |
-| Geen installeren apps, wanneer het apparaat zich in de kioskmodus bevindt (-2016330856). | Probeer dit apparaat toevoegen aan een groep uitsluiten voor kioskmodus modus configuratiebeleid voor apps te installeren. |
-| Kan de 32-bits apps op dit apparaat (-2016330852) niet installeren. | Het apparaat biedt geen ondersteuning voor 32-bits apps installeren. Probeer de 64-bits versie van de app te implementeren. |
-| Gebruiker moet aanmelden bij de App Store (-2016330855). | De gebruiker moet zich aanmelden bij de App Store voordat de app kan worden geïnstalleerd. |
-| Onbekend probleem. Probeer het opnieuw (-2016330854). | Installatie van de app is mislukt vanwege een onbekende reden.   Probeer het later opnieuw. |
-| Installatie van de app is mislukt. Intune zal proberen opnieuw zodra het apparaat wordt gesynchroniseerd (-2016330853). | Installatie van de app is een fout opgetreden. Het apparaat probeert te installeren de app opnieuw synchroniseren. |
+| Kan de VPP-apps alleen installeren op een gedeelde iPad (-2016330861). | De apps moeten worden verkregen met behulp van Apple Volume Purchase Program om deze te kunnen installeren op een gedeelde iPad. |
+| Kan geen apps installeren als de App Store is uitgeschakeld (-2016330860).  | De gebruiker kan de app alleen installeren als de App Store is ingeschakeld. |
+| Kan geen VPP-licentie voor de app vinden (-2016330859).  | Trek de app-licentie in en wijs deze opnieuw toe. |
+| Kan geen systeem-apps installeren met uw MDM-provider (-2016330858). | Het installeren van apps die vooraf zijn geïnstalleerd in het iOS-besturingssysteem is een scenario dat niet wordt ondersteund. |
+| Kan geen apps installeren op een apparaat dat zich in de modus Apparaat verloren bevindt (-2016330857). | Het gebruik van het apparaat is volledig geblokkeerd in de modus Apparaat verloren.   Schakel de modus Apparaat verloren uit om apps te installeren. |
+| Kan geen apps installeren op een apparaat dat zich in de kioskmodus bevindt (-2016330856). | Voeg dit apparaat toe aan een exclusieve groep voor configuratiebeleid voor de kioskmodus om apps te installeren. |
+| Kan geen 32-bits apps op dit apparaat installeren (-2016330852). | Het apparaat biedt geen ondersteuning voor het installeren van 32-bits apps. Implementeer de 64-bits versie van de app. |
+| De gebruiker moet zich aanmelden bij de App Store (-2016330855). | De gebruiker moet zich aanmelden bij de App Store voordat de app kan worden geïnstalleerd. |
+| Onbekend probleem. Probeer het opnieuw (-2016330854). | De installatie van de app is mislukt om een onbekende reden.   Probeer het later opnieuw. |
+| De installatie van de app is mislukt. De volgende keer dat het apparaat wordt gesynchroniseerd, wordt er vanuit Intune een nieuwe poging ondernomen (-2016330853). | Er is een apparaatfout opgetreden bij het installeren van de app. Synchroniseer het apparaat en probeer de app opnieuw te installeren. |
 
 ### <a name="other-installation-errors"></a>Overige installatiefouten
 
@@ -144,7 +144,7 @@ De volgende foutberichten en beschrijvingen bieden informatie over Android- en i
 |    0x80073CFF,   0x80CF201C (clientfout)    |    Als u deze app wilt installeren, moet u beschikken over een systeem waarop sideloading is ingeschakeld. Controleer of het app-pakket is ondertekend met een vertrouwde handtekening en is geïnstalleerd op een apparaat dat lid is van een domein en waarop het **AllowAllTrustedApps**-beleid is ingeschakeld, of op een apparaat dat een Windows Sideloading-licentie bevat en waarop het **AllowAllTrustedApps**-beleid is ingeschakeld. Meer informatie vindt u in [Troubleshooting packaging, deployment, and query of Windows Runtime-based apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Het oplossen van problemen bij het verpakken, implementeren en zoeken van Windows Store-apps).     |
 |    0x80073CF0    |    Het pakket kan niet worden geopend. Mogelijke oorzaken:<ul><li> Het pakket is niet ondertekend.</li><li> De naam van de uitgever komt niet overeen met de ondertekenende certificaathouder.</li></ul> Controleer het gebeurtenislogboek **AppxPackagingOM** voor meer informatie. Meer informatie vindt u in [Troubleshooting packaging, deployment, and query of Windows Runtime-based apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Het oplossen van problemen bij het verpakken, implementeren en zoeken van Windows Store-apps).    |
 |    0x80073CF3    |    Validatie van updates, afhankelijkheid of conflict voor het pakket is mislukt. Mogelijke oorzaken:<ul><li> Het binnenkomende pakket conflicteert met een geïnstalleerd pakket.</li><li> Er is geen opgegeven pakketafhankelijkheid gevonden.</li><li> Het pakket biedt geen ondersteuning voor de juiste processorarchitectuur.</li></ul> Controleer het gebeurtenislogboek **AppXDeployment-Server** voor meer informatie. Meer informatie vindt u in [Troubleshooting packaging, deployment, and query of Windows Runtime-based apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Het oplossen van problemen bij het verpakken, implementeren en zoeken van Windows Store-apps).    |
-|    0x80073CFB    |    Het opgegeven pakket is al geïnstalleerd en opnieuw installeren van het pakket is geblokkeerd. Dit foutbericht kan worden weergegeven als u een pakket installeert dat niet gelijk is aan het pakket dat al is geïnstalleerd. Controleer of de digitale handtekening ook onderdeel is van het pakket. Wanneer een pakket opnieuw is samengesteld of opnieuw is ondertekend, is dat pakket niet meer bitsgewijs identiek aan het eerder geïnstalleerde pakket. Er zijn twee mogelijke opties om deze fout te herstellen:<ul><li> Verhoog het versienummer van de app en stel het pakket opnieuw samen en onderteken het opnieuw.</li><li> Verwijder het oude pakket voor elke gebruiker op het systeem voordat u het nieuwe pakket installeert.</li></ul> Meer informatie vindt u in [Troubleshooting packaging, deployment, and query of Windows Runtime-based apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Het oplossen van problemen bij het verpakken, implementeren en zoeken van Windows Store-apps).    |
+|    0x80073CFB    |    Het opgegeven pakket is al geïnstalleerd en opnieuw installeren van het pakket is geblokkeerd. Dit foutbericht kan worden weergegeven als u een pakket installeert dat niet gelijk is aan het pakket dat al is geïnstalleerd. Controleer of de digitale handtekening ook onderdeel is van het pakket. Wanneer een pakket opnieuw is samengesteld of opnieuw is ondertekend, is dat pakket niet meer bitsgewijs identiek aan het eerder geïnstalleerde pakket. Er zijn twee mogelijke opties om deze fout te herstellen:<ul><li> Verhoog het versienummer van de app, stel het pakket vervolgens opnieuw samen en onderteken het opnieuw.</li><li> Verwijder het oude pakket voor elke gebruiker op het systeem voordat u het nieuwe pakket installeert.</li></ul> Meer informatie vindt u in [Troubleshooting packaging, deployment, and query of Windows Runtime-based apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Het oplossen van problemen bij het verpakken, implementeren en zoeken van Windows Store-apps).    |
 |    0x87D1041C    |    De toepassing is geïnstalleerd, maar de toepassing wordt niet gedetecteerd. De app is geïmplementeerd door Intune en daarna verwijderd. Redenen voor het verwijderen van de app zijn onder meer:<ul><li> De eindgebruiker heeft de app verwijderd.</li><li> De identiteitsgegevens in het pakket komen niet overeen met wat het apparaat aangeeft voor slechte apps.</li><li>Voor MSI's die automatisch worden bijgewerkt, komt de productversie niet overeen met de app-gegevens nadat deze buiten Intune zijn bijgewerkt.</li></ul> Geef de gebruiker de opdracht de app opnieuw te installeren via de bedrijfsportal. Houd er rekening mee dat vereiste apps automatisch opnieuw worden geïnstalleerd wanneer het apparaat opnieuw incheckt.    |
 
 ## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Het oplossen van problemen met apps van Microsoft Store

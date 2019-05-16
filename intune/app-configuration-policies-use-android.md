@@ -1,15 +1,16 @@
 ---
 title: App-configuratiebeleidsregels toevoegen voor beheerde Android-apparaten
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Gebruik app-configuratiebeleidsregels in Microsoft Intune om instellingen te leveren wanneer gebruikers een Android-werkprofiel-app uitvoeren.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/21/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 512fc924f71ba9a9fdd46ba8f5f5c087de83c2dd
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dccbfe597fa4bd461bb71cb86d38ffdfd52d719a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840413"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567423"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>App-configuratiebeleidsregels toevoegen voor beheerde Android-apparaten
 
@@ -44,13 +45,13 @@ Gebruik app-configuratiebeleidsregels in Microsoft Intune om instellingen te lev
 6. Selecteer **Android** voor **Platform**.
 7. Selecteer **Gekoppelde app** om de app te kiezen waarvoor u een app-configuratiebeleid wilt definiëren. Selecteer in de lijst met Android-werkprofiel-apps de apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune.
 8. Selecteer **Machtigingen**. U kunt configuraties instellen door gebruik te maken van:
-    - [Configuration Designer](#Use-the-configuration-designer)
-    - [JSON-editor](#Enter-the-JSON-editor)
+    - [Configuration Designer](#use-the-configuration-designer)
+    - [JSON-editor](#enter-the-json-editor)
 9. Kies **OK** en kies vervolgens **Toevoegen**.
 
 ## <a name="use-the-configuration-designer"></a>Configuration Designer gebruiken
 
-U kunt de Configuration Designer gebruiken voor Android-apps die configuratie ondersteunen. Configuratie is van toepassing op apparaten die zijn ingeschreven bij Intune. Met de Designer kunt u specifieke configuratiewaarden configureren voor de instellingen die voor een app beschikbaar zijn.
+U kunt Configuration Designer gebruiken voor Android-apps wanneer de app is ontworpen om configuratie-instellingen te ondersteunen. Configuratie is van toepassing op apparaten die zijn ingeschreven bij Intune. Met de Designer kunt u specifieke configuratiewaarden configureren voor de instellingen die voor een app beschikbaar zijn.
 
 Selecteer **Toevoegen** om de lijst met configuratie-instellingen te selecteren die u wilt opgeven voor de app.  
 Stel voor elke sleutel en waarde in de configuratie het volgende in:

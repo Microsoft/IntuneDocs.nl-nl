@@ -167,10 +167,10 @@ Met de entiteit **EnrollmentTypes** wordt aangegeven of een apparaat bedrijfseig
 |---------|------------|--------|
 | ownerTypeID |Unieke id van het type eigenaar. | |
 | ownerTypeKey |Unieke id van het type eigenaar in het datawarehouse - surrogaatsleutel. | |
-| ownerTypeName |Vertegenwoordigt het eigenaartype van de apparaten:  <br>Bedrijfseigendom - apparaat is Bedrijfseigendom. <br>Personal - apparaat is persoonlijk eigendom (BYOD).  <br>Unknown - er is geen informatie over dit apparaat. |Zakelijke persoonlijke onbekend |
+| ownerTypeName |Vertegenwoordigt het eigenaartype van de apparaten:  <br>Corporate - apparaat is bedrijfseigendom. <br>Personal - apparaat is persoonlijk eigendom (BYOD).  <br>Unknown - er is geen informatie over dit apparaat. |Corporate Personal Unknown |
 
 > [!Note]  
-> Voor de `ownerTypeName` in AzureAD bij het maken van dynamische groepen voor apparaten, moet u de waarde voor het filter instellen `deviceOwnership` als `Company`. Zie voor meer informatie, [regels voor apparaten](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
+> Bij het maken van dynamische groepen voor apparaten moet u voor de `ownerTypeName` in AzureAD de filterwaarde `deviceOwnership` instellen als `Company`. Zie [Regels voor apparaten](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) voor meer informatie. 
 
 ## <a name="managementstates"></a>ManagementStates
 

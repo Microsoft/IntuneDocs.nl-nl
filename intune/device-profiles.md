@@ -1,14 +1,15 @@
 ---
 title: Apparaatfuncties en -instellingen gebruiken in Microsoft Intune - Azure | Microsoft Docs
-description: Overzicht van de verschillende Microsoft Intune-apparaatprofielen, waaronder functies, beperkingen, e-mail, Wi-Fi, VPN, onderwijs, certificaten, Windows 10-upgrade, BitLocker en Windows Defender, Windows Information Protection, beheersjablonen en aangepaste configuratie-instellingen voor apparaten in Azure Portal. Gebruik deze profielen om gegevens en apparaten in uw bedrijf te beheren en te beveiligen.
+description: Overzicht van de verschillende Microsoft Intune-apparaatprofielen. Krijg informatie over functies, beperkingen, e-mail, Wi-Fi, VPN, onderwijs, certificaten, Windows 10-upgrade, BitLocker en Windows Defender, Windows Information Protection, beheersjablonen en aangepaste configuratie-instellingen voor apparaten in de Azure-portal. Gebruik deze profielen om gegevens en apparaten in uw bedrijf te beheren en te beveiligen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,90 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b9bd8aaca9aaf6e39c7a120518eeca1cef31511
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4dc68071886b8f2a0852feb69bf78c2c265f046d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845088"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570348"
 ---
-# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Functie-instellingen toepassen op uw apparaten met apparaatprofielen in Microsoft Intune
+# <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Functies en instellingen toepassen op uw apparaten met apparaatprofielen in Microsoft Intune
 
-Microsoft Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt in- of uitschakelen. Deze instellingen en functies worden toegevoegd aan 'configuratieprofielen'. U kunt profielen maken voor verschillende apparaten en verschillende platforms, waaronder iOS, Android en Windows, en vervolgens via Intune het profiel toepassen op apparaten in uw organisatie.
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Enkele profielvoorbeelden zijn:
+Microsoft Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt in- of uitschakelen. Deze instellingen en functies worden toegevoegd aan 'configuratieprofielen'. U kunt profielen voor verschillende apparaten en verschillende platforms maken, waaronder iOS, Android en Windows. Gebruik vervolgens Intune om het profiel toe te passen of toe te wijzen aan de apparaten.
+
+Als onderdeel van uw MDM-oplossing (Mobile Device Management) kunt u deze configuratieprofielen gebruiken om verschillende taken te voltooien. Enkele profielvoorbeelden zijn:
 
 - Gebruik op Windows 10-apparaten een profielsjabloon die ActiveX-besturingselementen blokkeert in Internet Explorer.
 - Sta gebruikers van iOS- en macOS-apparaten toe om in uw organisatie AirPrint-printers te gebruiken.
 - Sta wel of geen toegang toe tot bluetooth op het apparaat.
 - Maak een Wi-Fi of VPN-profiel waarmee verschillende apparaten toegang hebben tot uw bedrijfsnetwerk.
 - Beheer software-updates, inclusief het moment wanneer deze worden geïnstalleerd.
-- Voer een Android-apparaat uit op een speciaal kioskapparaat dat één app kan uitvoeren of veel apps kan uitvoeren.
+- Voer een Android-apparaat uit als een speciaal kioskapparaat dat één app kan uitvoeren of veel apps kan uitvoeren.
 
-Dit artikel bevat de stappen om een profiel te maken en een overzicht van de verschillende typen profielen die u kunt maken. Gebruik deze profielen om bepaalde functies op de apparaten al dan niet toe te staan.
-
-## <a name="create-the-profile"></a>Het profiel maken
-
-1. Selecteer in [Azure Portal](https://portal.azure.com) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
-
-2. Selecteer **Apparaatconfiguratie**. U hebt de volgende opties:
-
-    - **Overzicht**: geeft de status van uw profielen weer en biedt aanvullende details over de profielen die u aan gebruikers en apparaten hebt toegewezen.
-    - **Beheren**: maak apparaatprofielen en upload aangepaste [PowerShell-scripts](intune-management-extension.md) die binnen het profiel worden uitgevoerd, en voeg met [eSIM](esim-device-configuration.md) gegevensplannen toe aan apparaten.
-    - **Bewaken**: controleer de status van een profiel op slagen of falen, en bekijk ook logboeken over uw profielen.
-    - **Configureren**: voeg een certificeringsinstantie (SCEP of PFX) toe of schakel [Telecom-onkostenbeheer](telecom-expenses-monitor.md) aan het profiel toe.
-
-3. Selecteer **Profielen** > **Profiel maken**. Voer de volgende eigenschappen in:
-
-   - **Naam**: Voer een beschrijvende naam in voor het profiel.
-   - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
-   - **Platform**: Kies het platform van uw apparaten. Uw opties zijn:  
-
-       - **Android**
-       - **Android Enterprise**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 en hoger**
-       - **Windows 10 en hoger**
-
-   - **Profieltype**: Selecteer het type instellingen dat u wilt configureren. De lijst die wordt getoond, is afhankelijk van het **platform** dat u kiest:
-
-       - [Beheersjablonen](administrative-templates-windows.md)
-       - [Aangepast](custom-settings-configure.md)
-       - [Delivery optimization](delivery-optimization-windows.md)
-       - [Apparaatfuncties](device-features-configure.md)
-       - [Apparaatbeperkingen](device-restrictions-configure.md)
-       - [Editie-upgrade en modusschakelaar](edition-upgrade-configure-windows-10.md)
-       - [Onderwijs](education-settings-configure.md)
-       - [E-mail](email-settings-configure.md)
-       - [Endpoint Protection](endpoint-protection-configure.md)
-       - [Identiteitsbescherming](identity-protection-configure.md)  
-       - [Kiosk](kiosk-settings.md)
-       - [PKCS-certificaat](certficates-pfx-configure.md)
-       - [SCEP-certificaat](certificates-scep-configure.md)
-       - [Vertrouwd certificaat](certificates-configure.md)
-       - [Updatebeleid](software-updates-ios.md)
-       - [VPN](vpn-settings-configure.md)
-       - [Wi-Fi](wi-fi-settings-configure.md)
-       - [Windows Defender ATP](advanced-threat-protection.md)
-       - [Windows Information Protection](windows-information-protection-configure.md)
-
-     Als u bijvoorbeeld **iOS** selecteert als platform, zien uw opties voor het profieltype er ongeveer als volgt uit:
-
-     ![iOS-profiel maken in Intune](./media/create-device-profile.png)
-
-4. Selecteer **Instellingen**. De instellingen zijn ingedeeld per categorie. Selecteer een categorie voor een lijst van alle instellingen die u kunt configureren.
-
-5. Wanneer u klaar bent, selecteert u **OK** > **Maken** om uw wijzigingen op te slaan.
-
-Lees de volgende secties in dit artikel voor meer informatie over de verschillende profieltypen.
+Dit artikel biedt een overzicht van de verschillende typen profielen die u kunt maken. Gebruik deze profielen om bepaalde functies op de apparaten al dan niet toe te staan.
 
 ## <a name="administrative-templates-preview"></a>Beheersjablonen (Preview)
 
-[Beheersjablonen](administrative-templates-windows.md) bevat honderden instellingen die u kunt configureren voor Internet Explorer, OneDrive, extern bureaublad, Word, Excel en andere Office-programma's, en nog veel meer.
+[Beheersjablonen](administrative-templates-windows.md) bevatten honderden instellingen die u kunt configureren voor Internet Explorer, OneDrive, extern bureaublad, Word, Excel en andere Office-programma's.
 
-Deze sjablonen bieden beheerders een handige en vereenvoudigde weergave van instellingen die vergelijkbaar zijn met groepsbeleid, maar ze zijn voor 100% gebaseerd op de cloud. 
+Deze sjablonen bieden beheerders een vereenvoudigde weergave van instellingen die vergelijkbaar zijn met groepsbeleid, maar ze zijn voor 100% gebaseerd op de cloud.
 
 Deze functie ondersteunt:
 
@@ -164,7 +110,7 @@ Deze functie ondersteunt:
 
 - Windows 10 en hoger
 
-Kiosk-instellingen zijn ook beschikbaar als apparaatbeperkingen voor [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) en [iOS](device-restrictions-ios.md#kiosk-supervised-only).
+Kiosk-instellingen zijn ook beschikbaar als apparaatbeperkingen voor [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) en [iOS](device-restrictions-ios.md#kiosk-supervised-only).
 
 ## <a name="email"></a>E-mail
 
@@ -173,6 +119,7 @@ Kiosk-instellingen zijn ook beschikbaar als apparaatbeperkingen voor [Android](d
 Deze functie ondersteunt: 
 
 - Android
+- Android Enterprise
 - iOS
 - Windows Phone 8.1
 - Windows 10 en hoger
@@ -186,6 +133,7 @@ Met virtuele particuliere netwerken (VPN's) hebben gebruikers veilige externe to
 Deze functie ondersteunt: 
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows Phone 8.1
@@ -199,6 +147,7 @@ Deze functie ondersteunt:
 Deze functie ondersteunt: 
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows 8.1 (alleen importeren)
@@ -235,12 +184,14 @@ Deze functie ondersteunt:
 
 ## <a name="certificates"></a>Certificaten
 
-Met [Certificaten](certificates-configure.md) kunt u vertrouwde, SCEP- en PKCS-certificaten configureren die kunnen worden toegewezen aan apparaten en kunnen worden gebruikt voor het verifiëren van Wi-Fi-, VPN- en e-mailprofielen.
+Via [Certificaten](certificates-configure.md) worden vertrouwde , SCEP- en PKCS-certificaten geconfigureerd die zijn toegewezen aan apparaten. Met deze certificaten worden WiFi-, VPN- en e-mailprofielen geverifieerd.
 
 Deze functie ondersteunt: 
 
 - Android
+- Android Enterprise
 - iOS
+- macOS
 - Windows Phone 8.1
 - Windows 8.1
 - Windows 10 en hoger
@@ -255,7 +206,7 @@ Deze functie ondersteunt:
 
 ## <a name="shared-multi-user-device"></a>Gedeelde apparaat voor meerdere gebruikers
 
-[Windows 10](shared-user-device-settings-windows.md) en [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) omvatten instellingen voor het beheren van apparaten met meerdere gebruikers, ook wel bekend als gedeelde apparaten of gedeelde pc's. Wanneer een gebruiker zich aanmeldt met het apparaat, kiest u of de gebruiker de opties voor slaapstand kan wijzigen of bestanden op het apparaat kan opslaan. In een ander voorbeeld kunt u beleid maken waarmee inactieve referenties van Windows HoloLens-apparaten worden verwijderd om ruimte te maken.
+[Windows 10](shared-user-device-settings-windows.md) en [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) omvatten instellingen voor het beheren van apparaten met meerdere gebruikers, ook wel bekend als gedeelde apparaten of gedeelde pc's. Wanneer een gebruiker zich aanmeldt met het apparaat, kiest u of de gebruiker de opties voor slaapstand kan wijzigen of bestanden op het apparaat kan opslaan. In een ander voorbeeld kunt u, om ruimte te besparen, een profiel maken waarmee inactieve referenties van Windows HoloLens-apparaten worden verwijderd.
 
 Via deze instellingen voor gedeelde apparaten voor meerdere gebruikers kan een beheerder bepaalde apparaatfuncties beheren en deze gedeelde apparaten met Intune beheren.
 
@@ -264,21 +215,30 @@ Deze functie ondersteunt:
 - Windows 10 en hoger
 - Windows Holographic for Business
 
-## <a name="custom-profile"></a>Aangepast profiel
+## <a name="zebra-mobility-extensions-mx"></a>Zebra Mobility Extensions (MX)
 
-Met [Aangepaste instellingen](custom-settings-configure.md) kunnen beheerders apparaatinstellingen toewijzen die niet zijn ingebouwd in Intune. Op Android-apparaten kunt u bijvoorbeeld OMA-URI-waarden invoeren. Voor iOS-apparaten kunt u een configuratiebestand importeren dat u in Apple Configurator hebt gemaakt. 
+Met [Zebra Mobility Extensions (MX)](android-zebra-mx-overview.md) kunnen beheerders Zebra-apparaten gebruiken en beheren in Intune. In de instellingen kunt u StageNow-profielen maken, en vervolgens Intune gebruiken om deze profielen toe te wijzen aan en te implementeren op uw Zebra-apparaten. De documentatie [StageNow-logboeken en veelvoorkomende problemen](android-zebra-mx-logs-troubleshoot.md) is een handige resource voor het oplossen van problemen met profielen, en voor inzicht in potentiële problemen bij het gebruik van StageNow.
 
 Deze functie ondersteunt:
 
 - Android
+
+## <a name="custom-profile"></a>Aangepast profiel
+
+Met [Aangepaste instellingen](custom-settings-configure.md) kunnen beheerders apparaatinstellingen toewijzen die niet zijn ingebouwd in Intune. Op Android-apparaten kunt u OMA-URI-waarden invoeren. Voor iOS-apparaten kunt u een configuratiebestand importeren dat u in Apple Configurator hebt gemaakt.
+
+Deze functie ondersteunt:
+
+- Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows Phone 8.1
 
 ## <a name="manage-and-troubleshoot"></a>Beheren en problemen oplossen
 
-[Beheer uw profielen](device-profile-monitor.md) om de status van apparaten te controleren en te bekijken welke profielen zijn toegewezen. U kunt hiermee ook conflicten oplossen: u ziet welke instellingen leiden tot een conflict en welke profielen deze instellingen bevatten. [Veelvoorkomende problemen en oplossingen](device-profile-troubleshoot.md) bevat een lijst met vragen en antwoorden over profielen. Hierin leest u onder andere wat er gebeurt wanneer een profiel wordt verwijderd of wanneer meldingen naar apparaten worden verzonden.
+[Beheer uw profielen](device-profile-monitor.md) om de status van apparaten te controleren en te bekijken welke profielen zijn toegewezen. U kunt hiermee ook conflicten oplossen: u ziet welke instellingen leiden tot een conflict en welke profielen deze instellingen bevatten. De documentatie [Veelvoorkomende problemen en oplossingen](device-profile-troubleshoot.md) helpt beheerders bij het werken met profielen. Hierin wordt beschreven wat er gebeurt wanneer u een profiel verwijdert, waarom meldingen worden verzonden naar apparaten, en meer.
 
 ## <a name="next-steps"></a>Volgende stappen
-Kies uw platform en ga aan de slag:
 
+Kies uw platform en ga aan de slag.

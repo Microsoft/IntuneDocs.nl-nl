@@ -6,23 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
+ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbb6a8f159aebe837fabf671a84dd96223298227
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 45e9f50881ff7da0554a4731712441b5fedb01d8
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836350"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569412"
 ---
 # <a name="what-are-app-protection-policies"></a>Wat is beveiligingsbeleid voor apps?
 
@@ -50,7 +51,7 @@ Beveiligingsbeleid voor apps kan worden geconfigureerd voor apps die worden uitg
 > [!IMPORTANT]
 > U kunt MAM-beleid maken voor mobiele Office-apps die verbinding maken met Office 365-services. U kunt de toegang tot Exchange on-premises mailboxen tevens beveiligen door beveiligingsbeleid voor Intune-apps te maken voor Outlook voor iOS en Android met hybride moderne verificatie. Voordat u deze functie gebruikt, moet u ervoor zorgen dat u voldoet aan de [Outlook voor iOS- en Android-vereisten](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). Beveiligingsbeleid voor apps wordt niet ondersteund voor andere apps die verbinding maken met on-premises Exchange- of SharePoint-services.
 
-**De belangrijke voordelen van het gebruik van het beveiligingsbeleid voor apps zijn**
+**De belangrijke voordelen van het gebruik van het beveiligingsbeleid voor apps zijn**:
 
 -   Uw bedrijfsgegevens worden beschermd op het niveau van de app. Omdat voor Mobile Application Management geen apparaatbeheer is vereist, kunt u bedrijfsgegevens beveiligen op zowel beheerde als niet-beheerde apparaten. Het beheer wordt gecentreerd rond de identiteit van de gebruiker, waardoor er geen apparaatbeheer is vereist.
 
@@ -69,8 +70,8 @@ Het gebruik van MDM met het beveiligingsbeleid voor apps biedt extra voordelen e
 ### <a name="supported-platforms-for-app-protection-policies"></a>Ondersteunde platformen voor het beveiligingsbeleid voor apps
 De platformondersteuning voor beveiligingsbeleid voor apps in Intune is afgestemd op platformondersteuning voor mobiele Office-toepassingen voor Android- en iOS-apparaten. Zie de sectie **Mobiele apps** van [Systeemvereisten voor Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg) voor de details.
 
-Windows-apparaten worden momenteel niet ondersteund. U kunt echter wel Windows Information Protection gebruiken, dat vergelijkbare functionaliteit biedt. Zie [Uw ondernemingsgegevens beveiligen met Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip) voor meer informatie.
-
+> [!IMPORTANT]
+> De Intune-bedrijfsportalapp is vereist op het apparaat om appbeveiligingsbeleid op Android te ontvangen. Raadpleeg de [Appvereisten voor Intune-bedrijfsportaltoegang](end-user-mam-apps-android.md#access-apps) voor meer informatie.
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Hoe het beveiligingsbeleid voor apps app-gegevens beveiligen
 

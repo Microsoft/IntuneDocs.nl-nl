@@ -1,27 +1,29 @@
 ---
 title: Inleiding tot het plannen en ontwerpen van Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Dit artikel bevat een inleiding tot alle secties over het plannen, ontwerpen en implementeren van Microsoft Intune. Hulpprogramma's waarmee u de doelen, gebruiksscenario's en vereisten kunt bepalen en implementatie-, communicatie-, ondersteunings-, test- en validatieplannen kunt maken.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b2ddf29157255feaa7d336913640a1cf434f921c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185773"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568632"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Handleiding voor het plannen, ontwerpen en toepassen van een Intune-implementatie
 
@@ -39,9 +41,9 @@ Deze handleiding bevat secties waarin u stapsgewijs van begin tot eind door het 
 
 -   [Sectie 3: Use-casescenariovereisten bepalen](planning-guide-requirements.md)
 
--   [Sectie 4: Een rollout-plan ontwikkelen](planning-guide-rollout-plan.md)
+-   [Sectie 4: Een implementatieplan ontwikkelen](planning-guide-rollout-plan.md)
 
--   [Sectie 5: Een rollout-communicatieplan ontwikkelen](planning-guide-communication-plan.md)
+-   [Sectie 5: Een communicatieplan voor de implementatie ontwikkelen](planning-guide-communication-plan.md)
 
 -   [Sectie 6: Een ondersteuningsplan ontwikkelen](planning-guide-support-plan.md)
 
@@ -53,7 +55,7 @@ Deze handleiding bevat secties waarin u stapsgewijs van begin tot eind door het 
 
 Deze handleiding bevat ook aanvullende technische informatie en tabelsjablonen die kunnen worden gebruikt om u te helpen met het plannen, ontwerpen en implementeren van Intune.
 
--   [Aanvullende bronnen: koppelingen en tabelsjablonen](planning-guide-resources.md)
+-   [Aanvullende resources: Koppelingen en tabelsjablonen](planning-guide-resources.md)
 
 ## <a name="assumptions"></a>Aannames
 
@@ -63,4 +65,4 @@ Deze handleiding bevat ook aanvullende technische informatie en tabelsjablonen d
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Laten we beginnen met de eerste sectie: [Doelen, doelstellingen en uitdagingen voor de implementatie bepalen](planning-guide-deployment-goals.md).
+Aan de slag met de eerste sectie: [Doelen, doelstellingen en uitdagingen voor de implementatie bepalen](planning-guide-deployment-goals.md).

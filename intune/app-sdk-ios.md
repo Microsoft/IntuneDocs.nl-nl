@@ -155,7 +155,7 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
    |---------------|--------------------------------|
    |- i |  `<Path to the input plist>` |
    |- e | `<Path to the entitlements file>` |
-   |- o |  (optioneel) `<Path to the output plist>` |
+   |- o |  (Optioneel) `<Path to the output plist>` |
 
 Als de parameter 'o' niet wordt opgegeven, wordt in plaats daarvan het invoerbestand gewijzigd. Het hulpprogramma is idempotent en moet telkens worden gestart wanneer er wijzigingen in de Info.plist of rechten van de app zijn aangebracht. U moet ook de meest recente versie van het hulpprogramma downloaden en dat uitvoeren wanneer u de Intune SDK bijwerkt, voor het geval de config-vereisten voor Info.plist in de nieuwste versie zijn gewijzigd.
 
@@ -604,7 +604,7 @@ Het is de verantwoordelijkheid van de app om de identiteiten juist in te stellen
 
 Elke thread heeft op ieder moment een effectieve identiteit voor gebruikersinterface- en bestandstaken. Dit is de identiteit die wordt gebruikt om te controleren welk beleid er eventueel moet worden toegepast. Als de identiteit 'geen identiteit' is of als de gebruiker niet wordt beheerd, wordt er geen beleid toegepast. De volgende diagrammen tonen hoe de effectieve identiteiten worden bepaald.
 
-  ![Intune App SDK iOS: bepaling-proces identiteit](./media/ios-thread-identities.png)
+  ![Intune App SDK iOS: proces voor bepaling identiteit](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>Threadwachtrijen
 

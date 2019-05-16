@@ -1,6 +1,6 @@
 ---
 title: De instantie voor het beheer van mobiele apparaten instellen
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Stel de instantie in voor het beheer van mobiele apparaten in Intune.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99b913b23638a507ed9b0a5cb32afff66679a164
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 898c4eee19aa50136736f4ee72c55e4e8931317d
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231907"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567475"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>De instantie voor het beheer van mobiele apparaten instellen
 
@@ -34,12 +35,12 @@ Mogelijke configuraties zijn:
 
 - **Intune Standalone**: cloudbeheer dat u configureert met behulp van de Azure Portal. Bevat de volledige reeks mogelijkheden van Intune. [De MDM-instantie instellen in de Intune-beheerconsole](#set-mdm-authority-to-intune).
 
-- **Intune Hybrid**: integratie van de Intune-cloudoplossing met System Center Configuration Manager. U kunt Intune configureren met behulp van de Configuration Manager-console. [De MDM-instantie instellen in Configuratiebeheer](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
+- **Co-beheer voor Intune**: integratie van de Intune-cloudoplossing met System Center Configuration Manager voor Windows 10-apparaten. U kunt Intune configureren met behulp van de Configuration Manager-console. [Configureer de automatische inschrijving van apparaten in Intune](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
 
     > [!Important]
-    >Het onboarden van nieuwe klanten van hybride MDM wordt uitgeschakeld in een volgende versie. Zie de blogpost [Overstappen van hybride Mobile Device Management naar Intune op Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) voor meer informatie.
+    >De onboarding van nieuwe hybride MDM-klanten is afgeschaft. Zie de blogpost [Overstappen van hybride Mobile Device Management naar Intune op Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) voor meer informatie.
 
-- **Mobile Device Management voor Office 365**: integratie van Office 365 met de Intune-cloudoplossing. U kunt Intune configureren vanuit het Office 365-beheercentrum. Bevat een subset van de mogelijkheden die beschikbaar zijn met Intune Standalone. Stel de MDM-instantie in Office 365-beheercentrum in.
+- **Mobile Device Management voor Office 365**: integratie van Office 365 met de Intune-cloudoplossing. U kunt Intune configureren vanuit het Microsoft 365-beheercentrum. Bevat een subset van de mogelijkheden die beschikbaar zijn met Intune Standalone. Stel de MDM-instantie in het Microsoft 365-beheercentrum in.
 
 > [!IMPORTANT]
 > In Configuration Manager versie 1610 of hoger en Microsoft Intune versie 1705 kunt u de MDM-instantie wijzigen zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de inschrijving van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw in te schrijven. Zie [Voorbereiden op het wijzigen van de MDM-instantie naar Configuration Manager](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager) voor meer informatie.

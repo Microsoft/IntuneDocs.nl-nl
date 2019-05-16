@@ -1,15 +1,16 @@
 ---
 title: Profielen voor het inrichten van iOS-apps in Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Intune biedt u de hulpmiddelen om proactief een nieuw inrichtingsprofiel toe te wijzen aan apparaten met apps die bijna zijn verlopen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f02e4416f68fef7531f6d6ffa617273904b752c
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 888c136934deca80877d75879e270807af194a1e
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233845"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569555"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Inrichtingsprofielen gebruiken voor iOS-apps om te voorkomen dat uw apps verlopen
 
@@ -51,7 +52,7 @@ Als beheerder kunt u beveiligingsgroepen in- en uitsluiten om de inrichtingsconf
 3. Configureer de volgende waarden in het deelvenster **Profiel maken**:
     - **Naam**: geef een naam op voor dit mobiele inrichtingsprofiel.
     - **Beschrijving**: geef indien gewenst een beschrijving op voor het beleid.
-    - **Profielbestand uploaden**: klik op **Importeren** en kies een Apple-profielbestand voor mobiele configuratie (met de extensie `.mobileprovision`) dat u hebt gedownload van de Apple-website voor ontwikkelaars.
+    - **Profielbestand uploaden**: kies het pictogram **Openen** en kies vervolgens een Apple-profielbestand voor mobiele configuratie (met de extensie `.mobileprovision`) dat u hebt gedownload van de [Apple-website voor ontwikkelaars](https://developer.apple.com/).
 4. Als u klaar bent, kiest u **Maken**.
 
 ## <a name="next-steps"></a>Volgende stappen

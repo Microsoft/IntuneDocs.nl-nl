@@ -7,21 +7,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3ca1b95a6dcf7bdc30b61469fa747894d20fe73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 031db83302dfef8b99fc83ab7975e233c3eeb799
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188089"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396859"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Een Telecom Expense Management-service instellen in Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -56,7 +58,7 @@ Intune kan momenteel worden geïntegreerd met de volgende Telecom Expense Manage
 
 Voordat u begint, moet u ervoor zorgen dat u al een Intune en een DatalertTelecom Expense Management-service-abonnement hebt.
 
-### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>Stap 1: maak verbinding tussen de Datalert-service en Microsoft Intune
+### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>Stap 1: Verbinding maken tussen de Datalert-service en Microsoft Intune
 
 1. Meld u aan bij de Datalert-beheerconsole met uw beheerdersreferenties.
 
@@ -88,7 +90,7 @@ Voordat u begint, moet u ervoor zorgen dat u al een Intune en een DatalertTeleco
 
    ![Datalert-pagina die geslaagde verbinding toont](./media/tem-datalert-mdm-profiles.png)
 
-### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Stap 2: controleer of de functie Telecom Expense Management actief is in Intune
+### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Stap 2: Controleren of de functie Telecom Expense Management actief is in Intune
 
 Nadat u stap 1 hebt voltooid, wordt de verbinding automatisch ingeschakeld en wordt de status **Actief** weergegeven in de Azure-portal. Deze stappen laten zien hoe u controleert op de status **Actief**.
 
@@ -104,7 +106,7 @@ Nadat u stap 1 hebt voltooid, wordt de verbinding automatisch ingeschakeld en wo
 
    ![Intune-pagina met Datalert-verbindingsstatus Actief](./media/tem-azure-portal-enable-service.png)
 
-### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Stap 3: de app Datalert voor zakelijke geregistreerde apparaten implementeren
+### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Stap 3: De app Datalert voor zakelijke geregistreerde apparaten implementeren
 
 Om ervoor te zorgen dat alleen gegevensgebruik uit lijnen die in bedrijfseigendom zijn, wordt verzameld, moet u twee dingen doen:
 - apparaatcategorieën maken in Intune
@@ -152,7 +154,7 @@ Volg deze stappen om de app Datalert in Intune te maken voor elk platform. In de
 
    ![Schermafbeelding van het deelvenster Een beleid toevoegen](./media/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>Stap 4: zakelijk betaalde telefoonlijnen aan de Datalert-console toevoegen
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>Stap 4: Zakelijk betaalde telefoonlijnen aan de Datalert-console toevoegen
 
 U hebt nu de Intune- en Datalert-services geconfigureerd om met elkaar te communiceren. Nu moet u uw zakelijk betaalde telefoonlijnen in de Datalert-console toevoegen en drempelwaarden en acties voor schendingen van mobiel gebruik of roaming definiëren. U kunt zakelijk betaalde telefoonlijnen handmatig aan de Datalert-console toevoegen. U kunt de lijnen ook automatisch laten toevoegen nadat het apparaat is geregistreerd bij Intune.
 

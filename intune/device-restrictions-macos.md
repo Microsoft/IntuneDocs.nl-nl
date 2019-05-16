@@ -33,33 +33,33 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
-[Maken van een apparaatconfiguratieprofiel voor beperkingen](device-restrictions-configure.md#create-the-profile).
+[Maak een configuratieprofiel voor apparaatbeperkingen](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="general"></a>Algemeen
 
 - **Opzoeken van definities blokkeren**: **Blokkeren** voorkomt dat de gebruiker een woord markeert en vervolgens de definitie ervan opzoekt op het apparaat. **Niet geconfigureerd** (standaard): geeft toegang tot de functie Opzoeken van definities van woorden.
 - **Dicteren blokkeren**: met **Blokkeren** zorgt u ervoor dat de gebruiker geen spraak meer kan gebruiken om tekst in te voeren. **Niet geconfigureerd** (standaard): staat de gebruiker toe invoer van Dicteren te gebruiken.
-- **Inhoud in cache opslaan blokkeren**: kies **niet geconfigureerd** (standaard) waarmee de inhoud in cache opslaan. Inhoud in cache opslaan, slaat app-gegevens, web browsergegevens, downloads en meer lokaal op het apparaat. Selecteer **blok** om te voorkomen dat deze gegevens worden opgeslagen in de cache.
+- **Cacheopslag van inhoud blokkeren**: Kies **Niet geconfigureerd** (standaard) om cacheopslag van inhoud mogelijk te maken. Met cacheopslag van inhoud worden app-gegevens, webbrowsergegevens, downloads en meer lokale items op het apparaat opgeslagen. Selecteer **Blokkeren** om te voorkomen dat deze gegevens in de cache worden opgeslagen.
 
-  Zie voor meer informatie over de inhoud in cache opslaan op macOS, [beheren van inhoud in cache opslaan op een Mac](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (opent u een andere website).
+  Zie [Cacheopslag van inhoud beheren op een Mac](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (hiermee wordt een andere website geopend) voor meer informatie over cacheopslag van inhoud in macOS.
 
   Deze functie is van toepassing op:  
   - macOS 10.13 of hoger
 
-- **Software-updates uitstellen**: als de waarde **niet geconfigureerd** (standaard), software-updates worden weergegeven op het apparaat als Apple worden vrijgegeven. Bijvoorbeeld, als een macOS-update opgehaald die zijn uitgebracht door Apple op een specifieke datum, wordt klikt u vervolgens deze update op een natuurlijke manier weergegeven op het apparaat om de releasedatum. Seed-build-updates zijn toegestaan zonder vertraging.
+- **Software-updates uitstellen**: Als de waarde is ingesteld op **Niet geconfigureerd** (standaard), worden software-updates weergegeven op het apparaat wanneer Apple deze uitbrengt. Als Apple bijvoorbeeld op een bepaalde datum een macOS-update uitbrengt, wordt deze update rond de releasedatum automatisch op het apparaat weergegeven. Seed-buildupdates zijn zonder vertraging toegestaan.
 
-  **Schakel** kunt u als de software-updates worden weergegeven op apparaten van 0-90 dagen vertraging. Deze instelling bepalen niet wanneer updates worden of niet zijn geïnstalleerd. 
+  Met **Inschakelen** kunt u het weergeven van software-updates op apparaten uitstellen, van 0-90 dagen. Deze instelling bepaalt niet wanneer updates wel of niet worden geïnstalleerd. 
 
-  - **Zichtbaarheid van de software-updates uitstellen**: Voer een waarde van 0-90 dagen. Wanneer de vertraging verloopt, krijgen gebruikers een melding om een update uit te voeren naar de vroegste versie van het besturingssysteem die beschikbaar was toen de vertraging werd geactiveerd.
+  - **De zichtbaarheid van software-updates vertragen**: Voer een waarde van 0-90 dagen in. Wanneer de vertraging verloopt, krijgen gebruikers een melding om een update uit te voeren naar de vroegste versie van het besturingssysteem die beschikbaar was toen de vertraging werd geactiveerd.
 
-    Bijvoorbeeld, als een macOS-update is beschikbaar op **1 januari**, en **vertraging zichtbaarheid** is ingesteld op **5 dagen**, en vervolgens de update wordt niet als een update beschikbaar op apparaten weergegeven. Op de **zesde dag** na de release, de dat update beschikbaar is, en eindgebruikers kunnen installeren.
+    Als een macOS-update bijvoorbeeld beschikbaar komt op **1 januari** en **Zichtbaarheid vertragen** is ingesteld op **5 dagen**, wordt de update niet als beschikbare update weergeven op apparaten. Op de **zesde dag** na de release komt deze update beschikbaar en kunnen eindgebruikers deze installeren.
 
     Deze functie is van toepassing op:  
     - macOS 10.13.4 of hoger
 
 ## <a name="password"></a>Wachtwoord
 
-- **Wachtwoord**: kies **Vereisen** om af te dwingen dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat. **Niet geconfigureerd** (standaard) geen een wachtwoord vereist en de beperkingen, zoals eenvoudige wachtwoorden blokkeren of het instellen van een minimumlengte niet afdwingen.
+- **Wachtwoord**: kies **Vereisen** om af te dwingen dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat. Met **Niet geconfigureerd** (standaard) is er geen wachtwoord vereist en worden er geen beperkingen afgedwongen, zoals het blokkeren van eenvoudige wachtwoorden of het instellen van een minimumlengte.
   - **Vereist wachtwoordtype**: hiermee geeft u op of het wachtwoord alleen numerieke tekens mag bevatten of dat het wachtwoord alfanumeriek moet zijn (en dus letters en cijfers moet bevatten). Deze instelling wordt alleen ondersteund op Mac OS X-versie 10.10.3 en hoger.
   - **Het minimumaantal niet-alfanumerieke tekens in een wachtwoord**: hiermee geeft u het aantal complexe tekens (tussen **0** en **4** tekens) op dat het wachtwoord moet bevatten.<br>Een complex teken is een symbool zoals ‘**?**’.
   - **Minimale wachtwoordlengte**: voer de minimale lengte van het wachtwoord in dat een gebruiker moet configureren (tussen **4** en **16** tekens).
@@ -69,10 +69,10 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
   - **Wachtwoord verloopt (dagen)**: hiermee geeft u op na hoeveel dagen de gebruiker het wachtwoord moet wijzigen (tussen **1** en **255** dagen).
   - **Wachtwoorden niet opnieuw gebruiken**: hiermee geeft u op hoeveel eerder gebruikte wachtwoorden niet opnieuw mogen worden gebruikt (tussen **1** en **24**).
 
-- **Aanpassing van wachtwoordcode blokkeren dat gebruiker**: kies **blok** stoppen van de wachtwoordcode wordt gewijzigd, toegevoegd of verwijderd. **Niet geconfigureerd** (standaard): staat toe dat wachtwoordcodes worden toegevoegd, gewijzigd of verwijderd.
+- **Blokkeren dat gebruikers wachtwoordcodes kunnen wijzigen**: Kies **Blokkeren** om ervoor te zorgen dat de wachtwoordcode niet meer kan worden gewijzigd, toegevoegd of verwijderd. **Niet geconfigureerd** (standaard): staat toe dat wachtwoordcodes worden toegevoegd, gewijzigd of verwijderd.
 - **Ontgrendelen met vingerafdruk blokkeren**: kies **Blokkeren** om te voorkomen dat vingerafdrukken kunnen worden gebruikt om het apparaat te ontgrendelen. **Niet geconfigureerd** (standaard): staat de gebruiker toe het apparaat te ontgrendelen met een vingerafdruk.
 
-- **Automatisch wachtwoorden doorvoeren blokkeren**: kies **Blokkeren** om te voorkomen dat de functie Wachtwoorden automatisch doorvoeren wordt gebruikt in macOS. Kiezen **blok** heeft ook de volgende gevolgen:
+- **Automatisch wachtwoorden doorvoeren blokkeren**: kies **Blokkeren** om te voorkomen dat de functie Wachtwoorden automatisch doorvoeren wordt gebruikt in macOS. Als u **Blokkeren** kiest, heeft dat ook de volgende gevolgen:
 
   - Gebruikers wordt niet meer gevraagd om een wachtwoord te gebruiken dat is opgeslagen in Safari of in een app.
   - Automatische sterke wachtwoorden zijn uitgeschakeld en gebruikers krijgen geen suggesties voor sterke wachtwoorden.
@@ -88,33 +88,33 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Automatisch doorvoeren in Safari blokkeren**: met **Blokkeren** wordt de functie Automatisch doorvoeren in Safari uitgeschakeld op het apparaat. **Niet geconfigureerd** (standaard): staat gebruikers toe de instellingen voor automatisch doorvoeren te wijzigen in de webbrowser.
 - **Camera blokkeren**: kies **Blokkeren** als u de toegang tot de camera op het apparaat wilt blokkeren. **Niet geconfigureerd** (standaard): staat toegang tot de camera van het apparaat toe.
 - **Apple Music blokkeren**: met **Blokkeren** keert u terug naar de klassieke modus van de app Muziek en wordt de Muziek-service uitgeschakeld. **Niet geconfigureerd** (standaard): staat het gebruik van de app Apple Music toe.
-- **Blok zoeken Internetresultaten van Spotlight**: **blok** voorkomt dat Spotlight retourneren van resultaten van een Internet-zoekopdracht. **Niet geconfigureerd** (standaard): staat Zoeken met Spotlight toe om verbinding te maken met internet voor zoekresultaten.
-- **Blok-bestandsoverdracht gebruiken iTunes**: **blok** services voor bestandsdeling toepassing uitgeschakeld. Beschikbaar in macOS 10.13 en hoger. **Niet geconfigureerd** (standaard) kunt u services voor bestandsdeling toepassing.
+- **Zoekresultaten op internet retourneren met Spotlight blokkeren** : **Blokkeren** zorgt ervoor dat Spotlight geen resultaten meer retourneert na een zoekopdracht op internet. **Niet geconfigureerd** (standaard): staat Zoeken met Spotlight toe om verbinding te maken met internet voor zoekresultaten.
+- **Bestandsoverdracht via iTunes blokkeren**: Met **Blokkeren** worden services voor het delen van toepassingsbestanden uitgeschakeld. Beschikbaar in macOS 10.13 en later. Met **Niet geconfigureerd** (standaard) zijn services voor het delen van toepassingsbestanden toegestaan.
 
 ## <a name="restricted-apps"></a>Beperkte apps
 
 Configureer een van de volgende lijsten in de lijst met beperkte apps:
 
-- Lijst met **niet-toegestane apps**: hiermee maakt u een lijst met apps die niet worden beheerd door Intune en die gebruikers niet mogen installeren en uitvoeren. Worden niet voorkomen dat gebruikers een niet-toegestane app installeren, maar indien dit het geval is, wordt dit apparaat gerapporteerd aan de beheerder.
-- Lijst met **goedgekeurde apps**: hiermee maakt u een lijst met apps die gebruikers mogen installeren. Gebruikers mogen geen apps installeren die niet worden vermeld. Apps die worden beheerd door Intune, zijn automatisch toegestaan. Worden niet voorkomen dat gebruikers een app installeren die niet in de goedgekeurde lijst. Maar indien dit het geval is, wordt dit apparaat gerapporteerd aan de beheerder.
+- Lijst met **niet-toegestane apps**: hiermee maakt u een lijst met apps die niet worden beheerd door Intune en die gebruikers niet mogen installeren en uitvoeren. Er wordt niet voorkomen dat gebruikers een verboden app installeren, maar als zij dit doen, wordt dit wel aan de beheerder gemeld.
+- Lijst met **goedgekeurde apps**: hiermee maakt u een lijst met apps die gebruikers mogen installeren. Gebruikers mogen geen apps installeren die niet worden vermeld. Apps die worden beheerd door Intune, zijn automatisch toegestaan. Er wordt niet voorkomen dat gebruikers een app installeren die niet in de goedgekeurde lijst wordt vermeld. Als zij dit doen, wordt dit wel aan de beheerder gemeld.
 
 Als u de lijst wilt configureren, klikt u op **Toevoegen** en geeft u een naam van uw keuze op, eventueel de uitgever van de app, en de bundel-ID van de app (bijvoorbeeld *com.apple.calculator*).
 
 ## <a name="connected-devices"></a>Verbonden apparaten
 
 - **AirDrop blokkeren**: selecteer **Blokkeren** om het gebruik van AirDrop op het apparaat te voorkomen. **Niet geconfigureerd** (standaard): staat het gebruik van de functie AirDrop toe voor het uitwisselen van inhoud met apparaten in de omgeving.
-- **Blok Apple Watch automatisch ontgrendelen**: **blok** wordt voorkomen dat gebruikers hun macOS-apparaat met hun Apple Watch te ontgrendelen. **Niet geconfigureerd** (standaard) kan gebruikers hun macOS-apparaat met hun Apple Watch kan worden ontgrendeld.
+- **Automatisch ontgrendelen met Apple Watch blokkeren**: **Blokkeren** voorkomt dat gebruikers hun macOS-apparaat ontgrendelen met hun Apple Watch. Met **Niet geconfigureerd** (standaard) kunnen gebruikers hun macOS-apparaat ontgrendelen met hun Apple Watch.
 
 ## <a name="cloud-and-storage"></a>Cloud en opslag
 
 - **Synchronisatie van iCloud-sleutelhanger blokkeren**: kies **Blokkeren** om het synchroniseren van referenties die zijn opgeslagen in de Sleutelhanger, naar iCloud uit te schakelen. **Niet geconfigureerd** (standaard): staat gebruikers toe deze referenties te synchroniseren.
-- **Synchronisatie van documenten iCloud blokkeren**: **blok** voorkomt u dat iCloud synchroniseren van documenten en gegevens. Met **Niet geconfigureerd** (standaard) staat u het synchroniseren van documenten en sleutelwaarden met uw iCloud-opslagruimte toe.
-- **ICloud-back-up van e-Mail blokkeren**: **blok** voorkomt u dat iCloud worden gesynchroniseerd met de e-Mail-app voor macOS. **Niet geconfigureerd** (standaard) e-Mail de synchronisatie met iCloud toestaan.
-- **Neem contact op met back-up iCloud blokkeren**: **blok** iCloud voorkomt u dat de apparaten-contactpersonen worden gesynchroniseerd. **Niet geconfigureerd** (standaard) kunt u contact op met synchronisatie met iCloud.
-- **ICloud-back-up agenda blokkeren**: **blok** voorkomt u dat iCloud worden gesynchroniseerd met de app voor macOS-agenda. **Niet geconfigureerd** (standaard) agenda de synchronisatie met iCloud toestaan.
-- **ICloud-back-up herinnering blokkeren**: **blok** voorkomt u dat iCloud worden gesynchroniseerd met de app voor macOS herinneringen. **Niet geconfigureerd** (standaard) herinneringen voor de synchronisatie met iCloud toestaan.
-- **ICloud-back-up van de bladwijzer blokkeren**: **blok** voorkomt u dat iCloud synchroniseren van de apparaten bladwijzers. **Niet geconfigureerd** (standaard) bladwijzer de synchronisatie met iCloud toestaan.
-- **ICloud opmerkingen bij de back-up blokkeren**: **blok** iCloud voorkomt u dat de apparaten opmerkingen bij de synchronisatie. **Niet geconfigureerd** (standaard) opmerkingen bij de synchronisatie met iCloud toestaan.
+- **Documenten synchroniseren met iCloud blokkeren**: **Blokkeren** voorkomt dat documenten en gegevens worden gesynchroniseerd met iCloud. Met **Niet geconfigureerd** (standaard) staat u het synchroniseren van documenten en sleutelwaarden met uw iCloud-opslagruimte toe.
+- **Back-up van Mail in iCloud blokkeren**: **Blokkeren** voorkomt synchronisatie van de app Mail van macOS met iCloud. **Niet geconfigureerd** (standaard) staat synchronisatie van Mail met iCloud toe.
+- **Back-up van contactpersonen in iCloud blokkeren**: **Blokkeren** voorkomt synchronisatie van contactpersonen op het apparaat met iCloud. **Niet geconfigureerd** (standaard) staat synchronisatie van contactpersonen met behulp van iCloud toe.
+- **Back-up van Agenda in iCloud blokkeren**: **Blokkeren** voorkomt synchronisatie van de app Agenda van macOS met iCloud. **Niet geconfigureerd** (standaard) staat synchronisatie van Agenda met iCloud toe.
+- **Back-up van Herinneringen in iCloud blokkeren**: **Blokkeren** voorkomt synchronisatie van de app Herinneringen van macOS met iCloud. **Niet geconfigureerd** (standaard) staat synchronisatie van Herinneringen met iCloud toe.
+- **Back-up van Bladwijzers in iCloud blokkeren**: **Blokkeren** voorkomt synchronisatie van Bladwijzers op het apparaat met iCloud. **Niet geconfigureerd** (standaard) staat synchronisatie van Bladwijzers met iCloud toe.
+- **Back-up van Notities in iCloud blokkeren**: **Blokkeren** voorkomt synchronisatie van Notities op het apparaat met iCloud. **Niet geconfigureerd** (standaard) staat synchronisatie van Notities met iCloud toe.
 
 ## <a name="domains"></a>Domains
 
@@ -124,4 +124,4 @@ Als u de lijst wilt configureren, klikt u op **Toevoegen** en geeft u een naam v
 
 [Het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
-U kunt de instellingen en functies van het apparaat ook beperken op [iOS](device-restrictions-ios.md) apparaten.
+U kunt ook apparaatfuncties en -instellingen beperken op [iOS](device-restrictions-ios.md)-apparaten.

@@ -5,28 +5,29 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: ''
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e24043bb1c41d68de04669ff27cc659624dc56c1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 896008594e17c3773831edede263c8c47cde3c48
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846822"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570543"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Apparaten verwijderen via wissen of buiten gebruik stellen, of de registratie van het apparaat handmatig ongedaan maken
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Met de acties **Buiten gebruik stellen** of **Wissen** kunt u apparaten uit Intune verwijderen die niet meer nodig zijn, een nieuwe bestemming krijgen of zijn kwijtgeraakt. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal op afstand een opdracht geven voor persoonlijke apparaten die bij Intune zijn ingeschreven.
+Met de acties **Buiten gebruik stellen** of **Wissen** kunt u apparaten uit Intune verwijderen die niet meer nodig zijn, een nieuwe bestemming krijgen of zijn kwijtgeraakt. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal op afstand een opdracht geven voor apparaten die zijn ingeschreven bij Intune.
 
 > [!NOTE]
 > Gebruik de actie **Buiten gebruik stellen** of **Wissen** voor alle apparaten die aan een gebruiker zijn gekoppeld voordat u een gebruiker verwijdert uit Azure Active Directory (Azure AD). Als u gebruikers met beheerde apparaten uit Azure AD verwijdert, kan Intune die apparaten niet meer buiten gebruik stellen of wissen.
@@ -130,7 +131,7 @@ U kunt apparaten in de kioskmodus alleen wissen. U kunt Android-apparaten in de 
 
 |Gegevenstype|Windows 8.1 (MDM) en Windows RT 8.1|Windows RT|Windows Phone 8.1 en Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Bedrijfs-apps en de bijbehorende gegevens die door Intune zijn geïnstalleerd|Sleutels worden ingetrokken voor bestanden die zijn beveiligd met EFS. De gebruiker kan de bestanden niet openen.|Bedrijfs-apps worden niet verwijderd.|Apps die oorspronkelijk zijn geïnstalleerd via de bedrijfsportal, worden verwijderd. Gegevens van bedrijfs-apps worden verwijderd.|Apps worden verwijderd. Sideloadsleutels worden verwijderd.<br>Voor Windows 10 versie 1703 (makersupdate) en hoger worden Office 365 ProPlus-apps niet verwijderd.|
+|Bedrijfs-apps en de bijbehorende gegevens die door Intune zijn geïnstalleerd|Sleutels worden ingetrokken voor bestanden die zijn beveiligd met EFS. De gebruiker kan de bestanden niet openen.|Bedrijfs-apps worden niet verwijderd.|Apps die oorspronkelijk zijn geïnstalleerd via de bedrijfsportal, worden verwijderd. Gegevens van bedrijfs-apps worden verwijderd.|Apps worden verwijderd. Sideloadsleutels worden verwijderd.<br>Voor Windows 10 versie 1703 (makersupdate) en hoger worden Office 365 ProPlus-apps niet verwijderd. Win32-apps waarvoor de Intune-beheerextensie is geïnstalleerd, worden niet verwijderd van apparaten die niet meer ingeschreven zijn. Beheerders kunnen gebruikmaken van uitsluiting van opdrachten, zodat Win32-apps niet worden aangeboden op BYOD-apparaten.|
 |Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|Verwijderd.|Niet ondersteund.|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden verwijderd en ingetrokken.|Certificaten worden verwijderd en ingetrokken.|Niet ondersteund.|Certificaten worden verwijderd en ingetrokken.|
@@ -166,7 +167,7 @@ U kunt Intune configureren om automatisch apparaten te verwijderen die inactief 
 
 Vanwege communicatieproblemen of ontbrekende apparaten moet u wellicht apparaten verwijderen van Azure AD. U kunt de actie **Verwijderen** gebruiken voor het verwijderen van apparaatrecords uit Azure Portal die onbereikbaar zijn en vermoedelijk niet opnieuw met Azure gaan communiceren. Met de actie **Verwijderen** wordt het apparaat niet uit beheer verwijderd.
 
-1.  Meld u met uw beheerdersreferenties aan bij [Azure Active Directory in Azure Portal](http://aka.ms/accessaad). U kunt zich ook aanmelden bij de [Office 365-portal](https://portal.office.com). Selecteer **Beheercentrums** > **Azure AD** in het menu.
+1.  Meld u met uw beheerdersreferenties aan bij [Azure Active Directory in Azure Portal](http://aka.ms/accessaad). U kunt u ook aanmelden bij het [Microsoft 365-beheercentrum](https://admin.microsoft.com). Selecteer **Beheercentrums** > **Azure AD** in het menu.
 2.  Maak een Azure-abonnement maken als u er nog geen hebt. U kunt dit zonder creditcard of betaling doen als u beschikt over een betaald account (selecteer de abonnementskoppeling **Uw gratis Azure Active Directory registreren**).
 3.  Selecteer **Azure Active Directory** en vervolgens uw organisatie.
 4.  Selecteer het tabblad **Gebruikers** .

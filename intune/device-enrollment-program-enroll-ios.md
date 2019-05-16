@@ -7,9 +7,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/04/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60364d01f4ba4ca83ff91226f7738ec095e9152e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 19f0fbf401fee4bad660e946bb135544a29de310
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849247"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566502"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
 
@@ -102,8 +103,13 @@ Voer in Intune in de Apple-portal de Apple-id in, zodat u deze altijd kunt terug
 
 ![Schermopname van het invoeren van de Apple ID die is gebruikt voor het maken van het token voor het inschrijvingsprogramma en het uploaden van het token.](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>Stap 4. Upload uw token.
-Ga in het venster **Apple-token** naar het certificaatbestand (.pem), kies **Openen** en vervolgens **Maken**. Met het pushcertificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar geregistreerde mobiele apparaten te pushen. Intune wordt automatisch gesynchroniseerd met Apple om het account voor het inschrijvingsprogramma weer te geven.
+### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>Stap 4. Uw token uploaden en bereikstags kiezen.
+
+1. Ga in het venster **Apple-token** naar het certificaatbestand (.pem) en kies **Openen**.
+2. Als u [bereiktags](scope-tags.md) wilt toevoegen aan dit DEP-token, kiest u **Bereik (tags)** en selecteert u de bereiktags die u wilt toevoegen. Bereiktags die zijn toegepast op een token, worden overgenomen door profielen en apparaten die aan dit token zijn toegevoegd.
+3. Kies **Maken**.
+
+Met het pushcertificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar geregistreerde mobiele apparaten te pushen. Intune wordt automatisch gesynchroniseerd met Apple om het account voor het inschrijvingsprogramma weer te geven.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Een Apple-inschrijvingsprofiel maken
 
@@ -145,6 +151,8 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
 
 7. Als u voor een token hebt gekozen bij **Bedrijfsportal installeren met VPP**, hebt u de optie om het apparaat te vergrendelen in de modus voor enkele toepassing (met name de bedrijfsportal-app) direct nadat Configuratieassistent is voltooid. Kies **Ja** voor **Bedrijfsportal-app uitvoeren in de modus voor enkele toepassing tot verificatie** als u deze optie wilt instellen. Voor het gebruik van het apparaat moet de gebruiker eerst worden geverifieerd door zich via de bedrijfsportal-app aan te melden.
     Deze functie wordt alleen ondersteund voor iOS 11.3.1 en hoger.
+
+   ![Schermopname van de modus enkele app.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
 8. Kies **Instellingen voor apparaatbeheer** en selecteer of u wilt dat apparaten die dit profiel gebruiken, onder supervisie worden gesteld.
 

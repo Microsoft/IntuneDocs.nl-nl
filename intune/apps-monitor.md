@@ -1,27 +1,29 @@
 ---
 title: App-gegevens en -toewijzingen controleren
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Nadat u een app hebt toegewezen aan gebruikers of apparaten, kunt u met behulp van deze informatie de status van de app controleren.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
-ms.topic: article
+ms.date: 03/26/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2b3cba546be350f47c1a57f47b8eddf85323dc74
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325174"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567228"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>App-gegevens en -toewijzingen controleren met Microsoft Intune
 
@@ -49,7 +51,7 @@ De sectie **Essentiële informatie** bevat de volgende informatie over de app:
 |------------------------|------------------------------------------------------------------|
 | **Uitgever**          | De uitgever van de app.                                            |
 | **Besturingssysteem**   | Het app-besturingssysteem (Windows, iOS, Android, enzovoort). |
-| **Gemaakt**             | De datum en tijd waarop deze revisie is gemaakt.                         |
+| **Gemaakt**             | De datum en tijd waarop deze revisie is gemaakt. <b>**Opmerking**: Deze datumwaarde wordt bijgewerkt wanneer een IT-beheerder de app-metagegevens wijzigt, bijvoorbeeld door de app-categorie of app-beschrijving te wijzigen.                        |
 | **Toegewezen**           | Of de app is toegewezen (**Ja** of **Nee**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Apparaat- en gebruikersstatusgrafieken
@@ -80,7 +82,7 @@ Wanneer u **Apparaatinstallatiestatus** in de sectie **Controleren** van het men
 | **Apparaatnaam**      | De naam van het apparaat op platforms waarop het benoemen van een apparaat is toegestaan. Op andere platforms maakt Intune een naam op basis van andere eigenschappen. Dit kenmerk is niet beschikbaar op andere apparaten.                                                                       |
 | **Gebruikersnaam**        | De naam van de gebruiker.                                                                                                                                                                                                                                      |
 | **Platform**         | Het besturingssysteem van het apparaat (Windows, iOS, Android, enzovoort).                                                                                                                                                                                           |
-| **Versie**          | Het versienummer van de app. Voor Line-Of-Business-apps wordt het volledige versienummer van de app weergegeven. Het volledige versienummer duidt een specifieke release van de app aan. Het nummer wordt weergegeven als _Versie_(_Build_). Bijvoorbeeld 2.2(2.2.17560800). |
+| **Versie**          | Het versienummer van de app. Voor LOB-apps (Line-Of-Business) wordt het volledige versienummer van de app weergegeven. Het volledige versienummer duidt een specifieke release van de app aan. Het nummer wordt weergegeven als _Versie_(_Build_). Bijvoorbeeld 2.2(2.2.17560800). Voor Store-apps worden geen versies weergegeven. |
 | **Status**           | De status van de app.                                                                                                                                                                                                                                     |
 | **Statusdetails**   | De details van de status.                                                                                                                                                                                                                                     |
 | **Laatste check-in**    | De datum van de laatste synchronisatie van het apparaat met Intune.                                                                                                                                                                                                                  |

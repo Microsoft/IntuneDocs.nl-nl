@@ -23,11 +23,11 @@ ms.contentlocale: nl-NL
 ms.lasthandoff: 04/01/2019
 ms.locfileid: "58799262"
 ---
-# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>iOS-apparaatinstellingen algemene iOS-functies gebruiken in Intune
+# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>iOS-apparaatinstellingen voor het gebruik van algemene iOS-functies in Intune
 
 Intune bevat enkele ingebouwde instellingen, zodat iOS-gebruikers verschillende functies van Apple op hun apparaten kunnen gebruiken. Beheerders kunnen bepalen hoe iOS-gebruikers AirPrint-printers gebruiken, apps en mappen toevoegen aan de dock en pagina's op het startscherm, app-meldingen weergeven, details van inventaristags weergeven op het vergrendelingsscherm, verificatie met eenmalige aanmelding gebruiken en gebruikers met certificaten verifiëren.
 
-Deze functies gebruiken voor het beheren van iOS-apparaten als onderdeel van uw beheeroplossing voor mobiele apparaten (MDM).
+Gebruik deze functies om iOS-apparaten te beheren als onderdeel van uw Mobile Device Management-oplossing (MDM).
 
 Dit artikel beschrijft deze instellingen en wat elke instelling doet.
 
@@ -76,9 +76,9 @@ Gebruik de **Dock**-instellingen om maximaal zes items of mappen aan de dock ond
 1. Selecteer in **Instellingen** de optie **Indeling van het startscherm (alleen onder supervisie)** > **Dock** > **Toevoegen**. U kunt maximaal **zes** items (combinatie van apps en mappen) voor de apparaatdock toevoegen.
 2. Kies er bij **Type** voor om een **App** of een **Map** toe te voegen.
 
-    - **Een app toevoegen**: kies deze optie om apps aan het dock op het scherm toe te voegen. voer het volgende in:
+    - **Een app toevoegen**: kies deze optie om apps aan het dock op het scherm toe te voegen. Voer het volgende in:
 
-      - **App-naam**: Voer een naam voor de app. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
+      - **App-naam**: Voer een naam voor de app in. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
       - **App-bundel-id**: geef de bundel-id van de app op. Zie [Bundel-id's voor ingebouwde iOS-apps](#bundle-ids-for-built-in-ios-apps) (in dit artikel) voor enkele voorbeelden.
 
       Selecteer **OK** om uw wijzigingen op te slaan.
@@ -90,15 +90,15 @@ Gebruik de **Dock**-instellingen om maximaal zes items of mappen aan de dock ond
       1. Voer de **Mapnaam** in. Deze naam zien gebruikers op hun apparaat.
       2. Kies **Toevoegen** en voer de volgende eigenschappen in:
 
-          - **Paginanaam**: Voer een naam voor de pagina. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
-          - **App-naam**: Voer een naam voor de app. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
+          - **Paginanaam**: Voer een naam voor de pagina in. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
+          - **App-naam**: Voer een naam voor de app in. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
           - **App-bundel-id**: geef de bundel-id van de app op. Zie [Bundel-id's voor ingebouwde iOS-apps](#bundle-ids-for-built-in-ios-apps) (in dit artikel) voor enkele voorbeelden.
 
       3. Kies **Toevoegen**. U kunt maximaal **20** pagina's toevoegen voor de apparaatdock.
       4. Selecteer **OK** om uw wijzigingen op te slaan.
 
 > [!NOTE]
-> Wanneer u met behulp van de instellingen van de Dock pictogrammen toevoegt, wordt de pictogrammen op de pagina's en start scherm zijn vergrendeld en kunnen niet worden verplaatst. Dit kan zijn standaard met iOS- en Apple MDM-beleidsregels.
+> Wanneer u pictogrammen toevoegt met behulp van de Dock-instellingen, zijn de pictogrammen op het startscherm en de pagina's vergrendeld en kunnen deze niet worden verplaatst. Dit is mogelijk inherent aan iOS en de MDM-beleidsregels van Apple.
 
 #### <a name="example"></a>Voorbeeld
 
@@ -124,9 +124,9 @@ Voeg de pagina's toe die u wilt weergeven op het startscherm en de apps die moet
 
 3. Kies er bij **Type** voor om een **App** of een **Map** toe te voegen.
 
-    - **Een app toevoegen**: kies deze optie om apps aan een pagina op het scherm toe te voegen. voer het volgende in:
+    - **Een app toevoegen**: kies deze optie om apps aan een pagina op het scherm toe te voegen. Voer het volgende in:
 
-      - **App-naam**: Voer een naam voor de app. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
+      - **App-naam**: Voer een naam voor de app in. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
       - **App-bundel-id**: geef de bundel-id van de app op. Zie [Bundel-id's voor ingebouwde iOS-apps](#bundle-ids-for-built-in-ios-apps) (in dit artikel) voor enkele voorbeelden.
 
       Selecteer **OK** om uw wijzigingen op te slaan.
@@ -138,8 +138,8 @@ Voeg de pagina's toe die u wilt weergeven op het startscherm en de apps die moet
       1. Voer de **Mapnaam** in. Deze naam zien gebruikers op hun apparaat.
       2. Kies **Toevoegen** en voer de volgende eigenschappen in:
 
-          - **Paginanaam**: Voer een naam voor de pagina. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
-          - **App-naam**: Voer een naam voor de app. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
+          - **Paginanaam**: Voer een naam voor de pagina in. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
+          - **App-naam**: Voer een naam voor de app in. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
           - **App-bundel-id**: geef de bundel-id van de app op. Zie [Bundel-id's voor ingebouwde iOS-apps](#bundle-ids-for-built-in-ios-apps) (in dit artikel) voor enkele voorbeelden.
 
       3. Kies **Toevoegen**.
@@ -175,7 +175,7 @@ Kies hoe apps die op een iOS-apparaat zijn geïnstalleerd meldingen verzenden. D
          - **Geen**: er wordt geen melding weergegeven.
          - **Banner**: er wordt kort een banner weergegeven met de melding.
          - **Modaal**: de melding wordt weergegeven en de gebruiker moet deze handmatig sluiten voordat de gebruiker kan doorgaan en het apparaat kan gebruiken.
-       - **Badge op app-pictogram**: Selecteer **inschakelen** een badge toevoegen aan het app-pictogram. De badge betekent dat de app een melding heeft verzonden.
+       - **Badge op app-pictogram**: Selecteer **Inschakelen** om een badge toe te voegen aan het app-pictogram. De badge betekent dat de app een melding heeft verzonden.
        - **Geluiden**: selecteer **Inschakelen** om een geluid af te spelen wanneer een melding wordt afgeleverd.
 
 3. Selecteer **OK** om uw wijzigingen op te slaan. Ga verder met het toevoegen van de gewenste apps. Selecteer **OK** als u klaar bent.
@@ -269,7 +269,7 @@ Deze instellingen bepalen browsertoegang tot URL's op iOS-apparaten.
 
     - **URL's configureren**: gebruik het ingebouwde webfilter van Apple dat zoekt naar ongepaste termen, zoals grof en seksueel getint taalgebruik. Deze functie evalueert elke webpagina terwijl deze wordt geladen, en identificeert en blokkeert ongeschikte inhoud. U kunt ook URL's toevoegen waarvan u niet wilt dat deze worden gecontroleerd door het filter. U kunt ook specifieke URL's blokkeren, ongeacht de filterinstellingen van Apple.
 
-      - **URL's toegestaan**: **toevoegen** URL's die u wilt toestaan. Deze URL's omzeilen het webfilter van Apple.
+      - **Toegestane URL's**: **Voeg** de URL's toe die u wilt toestaan. Deze URL's omzeilen het webfilter van Apple.
 
         > [!NOTE]
         > De URL's die u invoert, zijn de URL's die u niet wilt laten evalueren door het webfilter van Apple. Deze URL's zijn geen lijst met toegestane websites. Als u een lijst met toegestane websites wilt maken, stelt u het **Filtertype** in op **Alleen specifieke websites**.
@@ -283,7 +283,7 @@ Deze instellingen bepalen browsertoegang tot URL's op iOS-apparaten.
     - **Alleen specifieke websites** (alleen voor Safari): deze URL's worden toegevoegd aan de bladwijzers van de Safari-browser. De gebruiker mag **alleen** deze sites bezoeken. Andere sites kunnen niet worden geopend. Gebruik deze optie alleen als u de exacte lijst van URL's weet die gebruikers mogen bezoeken.
 
       - **URL**: voer de URL in van de website die u wilt toestaan. Voer bijvoorbeeld `https://www.contoso.com` in.
-      - **Pad naar bladwijzer**: Geef het pad voor het opslaan van de bladwijzer. Voer bijvoorbeeld `/Contoso/Business Apps` in. Als u geen pad toevoegt, wordt de bladwijzer toegevoegd aan de standaardmap voor bladwijzers op het apparaat.
+      - **Pad naar bladwijzer**: Voer het pad in waarin u de bladwijzer wilt opslaan. Voer bijvoorbeeld `/Contoso/Business Apps` in. Als u geen pad toevoegt, wordt de bladwijzer toegevoegd aan de standaardmap voor bladwijzers op het apparaat.
       - **Titel**: geef een beschrijvende titel voor de bladwijzer op.
 
       Als u geen URL's opgeeft, hebben eindgebruikers geen toegang tot websites, met uitzondering van `microsoft.com`, `microsoft.net` en `apple.com`. Deze URL's zijn automatisch toegestaan door Intune.
@@ -296,11 +296,11 @@ Een aangepaste PNG-, JPG- of JPEG-afbeelding toevoegen aan uw onder supervisie s
 
 Mogelijk ervaart u onverwacht gedrag wanneer een profiel zonder afbeelding wordt toegewezen aan apparaten met een bestaande afbeelding. U maakt bijvoorbeeld een profiel zonder afbeelding. Dit profiel wordt toegewezen aan apparaten die al een afbeelding hebben. In dit scenario kan de afbeelding worden gewijzigd in de standaardinstelling van het apparaat of de oorspronkelijke afbeelding blijft op het apparaat staan. Dit gedrag wordt geregeld en beperkt door het MDM-platform van Apple.
 
-- **Achtergrond locatie**: Kies een locatie op het apparaat om de installatiekopie weer te geven. Uw opties zijn:
-  - **Niet geconfigureerd**: een aangepaste installatiekopie is niet toegevoegd aan het apparaat. Het apparaat gebruikt de standaardinstelling van het besturingssysteem.
-  - **Vergrendelingsscherm**: voegt u de installatiekopie toe aan het vergrendelingsscherm.
-  - **Startscherm**: Hiermee wordt de installatiekopie toegevoegd aan het startscherm.
-  - **Vergrendeld scherm en het startscherm**: maakt gebruik van dezelfde installatiekopie van het vergrendelingsscherm en het startscherm.
+- **Weergavelocatie voor achtergrond**: Kies een locatie op het apparaat om de afbeelding weer te geven. Uw opties zijn:
+  - **Niet geconfigureerd**: Er is geen aangepaste afbeelding toegevoegd aan het apparaat. Het apparaat gebruikt de standaardinstelling van het besturingssysteem.
+  - **Vergrendelingsscherm**: hiermee wordt de afbeelding toegevoegd aan het vergrendelingsscherm.
+  - **Startscherm**: hiermee wordt de afbeelding toegevoegd aan het startscherm.
+  - **Vergrendelingsscherm en startscherm**: dezelfde afbeelding wordt op het vergrendelingsscherm en het startscherm gebruikt.
 - **Achtergrondafbeelding**: upload een bestaande PNG-, JPG- of JPEG-afbeelding die u wilt gebruiken. Zorg ervoor dat de bestandsgrootte minder is dan 750 KB. U kunt een afbeelding die u hebt toegevoegd ook **verwijderen**.
 
 > [!TIP]

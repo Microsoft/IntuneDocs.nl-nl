@@ -1,27 +1,29 @@
 ---
 title: Aangepast VPN-profiel per app voor Android
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Meer informatie over het maken van een VPN-profiel per app maken voor Android-apparaten die worden beheerd met Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 04/05/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 48f1227da6260217105120d31301f60b6e06110c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 38763d5c16d5cba36220c03e9d74b30a465d752b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186015"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568463"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Een aangepast Microsoft Intune-profiel gebruiken voor het maken van een VPN-profiel per app voor Android-apparaten
 
@@ -81,6 +83,6 @@ U kunt ook de waarde **WHITELIST** gebruiken om een lijst met apps op te geven d
 
 
 
-## <a name="step-3-assign-both-policies"></a>Stap 3: beide beleidsregels toewijzen
+## <a name="step-3-assign-both-policies"></a>Stap 3: Beide beleidsregels toewijzen
 
 Volg de instructies in [How to assign device profiles](device-profile-assign.md) (Apparaatprofielen toewijzen) om beide profielen aan de vereiste gebruikers of apparaten toe te wijzen.

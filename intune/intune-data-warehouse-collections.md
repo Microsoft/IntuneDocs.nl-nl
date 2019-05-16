@@ -435,8 +435,8 @@ De entiteit **MamApplication** bevat een lijst met LOB-apps (Line-of-Business) d
 | Eigenschap | Beschrijving | Voorbeeld |
 |---------|------------|--------|
 | mamApplicationKey |De unieke id van de MAM-toepassing. | 432 |
-| mamApplicationName |Naam van de MAM-toepassing. |De naam van het voorbeeld voor MAM-toepassing |
-| mamApplicationId |De toepassings-ID van de MAM-app. | 123 |
+| mamApplicationName |De naam van de MAM-toepassing. |Voorbeeldnaam voor de MAM-toepassing |
+| mamApplicationId |De toepassings-id van de MAM-toepassing. | 123 |
 | IsDeleted |Geeft aan of deze MAM-app-record is bijgewerkt. <br>Waar: de MAM-app heeft een nieuwe record met bijgewerkte velden in deze tabel. <br>Onwaar: de meest recente record voor deze MAM-app. |Waar/onwaar |
 | StartDateInclusiveUTC |De datum en tijd in UTC waarop deze MAM-app is gemaakt in het datawarehouse. |11/23/2016 12:00:00 AM |
 | DeletedDateUTC |De datum en tijd in UTC waarop IsDeleted is gewijzigd in Waar. |11/23/2016 12:00:00 AM |
@@ -453,15 +453,15 @@ De entiteit **MamApplicationInstance** bevat een lijst met beheerde MAM-apps (Mo
 |   ApplicationInstanceKey   |                                                               De unieke id van het MAM-app-exemplaar in het datawarehouse (surrogaatsleutel).                                                                |                 123                  |
 |           UserId           |                                                                              De gebruikers-id van de gebruiker die deze MAM-app heeft geïnstalleerd.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              De unieke id van het MAM-app-exemplaar, vergelijkbaar met ApplicationInstanceKey, maar de id is een natuurlijke sleutel.                                              | b66bc706-ffff-7437-0340-032819502773 |
-| mamApplicationId | Toepassings-Id van de Mam-toepassing waarvoor deze Mam-toepassing-exemplaar is gemaakt.   | 11/23/2016 12:00:00 AM   |
+| mamApplicationId | De toepassings-id van de MAM-toepassing waarvoor dit MAM-toepassingsexemplaar is gemaakt.   | 11/23/2016 12:00:00 AM   |
 |     ApplicationVersion     |                                                                                     De toepassingsversie van deze MAM-app.                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 De datum waarop deze record van het MAM-app-exemplaar is gemaakt. De waarde kan null zijn.                                                                 |        11/23/2016 12:00:00 AM        |
 |          Platform          |                                                                          Het platform van het apparaat waarop deze MAM-app is geïnstalleerd.                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      De versie van het platform van het apparaat waarop deze MAM-app is geïnstalleerd.                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            De MAM SDK-versie waarmee deze MAM-app is ingepakt.                                                                            |                 3.2                  |
-| mamDeviceId | Apparaat-Id van het apparaat waarmee MAM-toepassing-exemplaar is gekoppeld.   | 11/23/2016 12:00:00 AM   |
-| mamDeviceType | Apparaattype van het apparaat waarmee MAM-toepassing-exemplaar is gekoppeld.   | 11/23/2016 12:00:00 AM   |
-| mamDeviceName | De apparaatnaam van het apparaat waarmee MAM-toepassing-exemplaar is gekoppeld.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceId | De apparaat-id van het apparaat waaraan het MAM-toepassingsexemplaar is gekoppeld.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceType | Het apparaattype van het apparaat waaraan het MAM-toepassingsexemplaar is gekoppeld.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceName | De apparaatnaam van het apparaat waaraan het MAM-toepassingsexemplaar is gekoppeld.   | 11/23/2016 12:00:00 AM   |
 |         IsDeleted          | Geeft aan of de record van dit MAM-app-exemplaar is bijgewerkt. <br>True: het MAM-app-exemplaar heeft een nieuwe record met bijgewerkte velden in deze tabel. <br>Onwaar: de meest recente record voor dit MAM-app-exemplaar. |              Waar/onwaar              |
 |   StartDateInclusiveUTC    |                                                              De datum en tijd in UTC waarop dit MAM-app-exemplaar is gemaakt in het datawarehouse.                                                               |        11/23/2016 12:00:00 AM        |
 |       DeletedDateUTC       |                                                                             De datum en tijd in UTC waarop IsDeleted is gewijzigd in Waar.                                                                              |        11/23/2016 12:00:00 AM        |
@@ -479,7 +479,7 @@ De entiteit **MamCheckin** vertegenwoordigt gegevens die worden verzameld wannee
 | DateKey |De datum waarop het inchecken van de MAM-app is vastgelegd in het datawarehouse. | 20160703 |
 | ApplicationInstanceKey |De sleutel van het app-exemplaar dat is gekoppeld aan het inchecken van deze MAM-app. | 123 |
 | UserKey |De sleutel van de gebruiker die is gekoppeld aan het inchecken van deze MAM-app. | 4323 |
-| mamApplicationKey |Toepassing sleutel van de toepassing die is gekoppeld aan MAM-toepassing check-in. | 432 |
+| mamApplicationKey |De toepassingssleutel van de toepassing waaraan de MAM-toepassingcheck-in is gekoppeld. | 432 |
 | DeviceHealthKey |De sleutel van de apparaatstatus die is gekoppeld aan het inchecken van deze MAM-app. | 321 |
 | PlatformKey |Het platform van het apparaat dat is gekoppeld aan het inchecken van deze MAM-app. |123 |
 | LastCheckInDate |De datum en tijd waarop deze MAM-app het laatst is ingecheckt. De waarde kan null zijn. |11/23/2016 12:00:00 AM |
@@ -586,10 +586,10 @@ Met de entiteit **ownerType** wordt aangegeven of een apparaat bedrijfseigendom 
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Unieke id van het type eigenaar.                                                                                                                                               |                            |
 | ownerTypeKey  | Unieke id van het type eigenaar in het datawarehouse - surrogaatsleutel.                                                                                                       |                            |
-| ownerTypeName | Hiermee wordt het type eigenaar van de apparaten voorgesteld: Corporate - apparaat is eigendom van de onderneming.  Personal - apparaat is persoonlijk eigendom (BYOD).   Unknown - er is geen informatie over dit apparaat. | Zakelijke persoonlijke onbekend |
+| ownerTypeName | Hiermee wordt het type eigenaar van de apparaten voorgesteld: Corporate - apparaat is eigendom van de onderneming.  Personal - apparaat is persoonlijk eigendom (BYOD).   Unknown - er is geen informatie over dit apparaat. | Corporate Personal Unknown |
 
 > [!Note]  
-> Voor de `ownerTypeName` filter in AzureAD bij het maken van dynamische groepen voor apparaten, moet u de waarde `deviceOwnership` als `Company`. Zie voor meer informatie, [regels voor apparaten](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
+> Bij het maken van dynamische groepen voor apparaten moet u voor het `ownerTypeName`-filter in AzureAD de waarde `deviceOwnership` instellen als `Company`. Zie [Regels voor apparaten](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) voor meer informatie. 
 
 ## <a name="policies"></a>policies
 De entiteit **Policy** bevat apparaatconfiguratieprofielen, app-configuratieprofielen en nalevingsbeleid. U kunt het beleid met MDM (Mobile Device Management) toewijzen aan een groep in uw onderneming.

@@ -46,4 +46,4 @@ Als IT-beheerder is een van uw eerste prioriteiten [de Windows-pc's die u beheer
 
 ## <a name="see-also"></a>Zie tevens
 
-[Veelvoorkomende vragen, problemen en oplossingen met apparaatbeleidsregels en profielen](device-profile-troubleshoot.md)
+[Algemene vragen, problemen en oplossingen met apparaatbeleid en -profielen](device-profile-troubleshoot.md)

@@ -1,6 +1,6 @@
 ---
 title: Bulkinschrijving voor Windows 10
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Een bulkregistratiepakket voor Microsoft Intune maken
 keywords: ''
 author: ErikjeMS
@@ -10,18 +10,19 @@ ms.date: 5/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7df624f0a3db11b058498c650a9f9c3dd95e8d12
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236803"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568164"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Bulkregistratie voor Windows-apparaten
 
@@ -29,7 +30,7 @@ ms.locfileid: "57236803"
 
 Als beheerder kunt u grote aantallen nieuwe Windows-apparaten toevoegen aan Azure Active Directory en Intune. Voor bulkregistratie van apparaten voor uw Azure AD-tenant, maakt u een inrichtingspakket met de app Windows Configuration Designer (WCD). Als u het inrichtingspakket toepast op apparaten die bedrijfseigendom zijn, worden de apparaten toegevoegd aan uw Azure AD-tenant en geregistreerd voor het beheer van Intune. Zodra het pakket is toegepast, kunnen uw Azure AD-gebruikers zich hierbij aanmelden.
 
-Azure AD-gebruikers zijn standaardgebruikers op deze apparaten en ontvangen toegewezen Intune-beleid en de vereiste apps. Scenario's voor Selfservice portal en bedrijfsportal worden momenteel niet ondersteund.
+Azure AD-gebruikers zijn standaardgebruikers op deze apparaten en ontvangen toegewezen Intune-beleid en de vereiste apps. Windows-apparaten die zijn geregistreerd bij Intune via Windows-bulkinschrijving, kunnen de bedrijfsportal-app gebruiken voor het installeren van beschikbare apps. 
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Vereisten voor bulkregistratie van Windows-apparaten
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3dfd2442d737b91d5722f26313ac1d0200a341a7
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 58fea39d7461f4ce6b1838b0df78434f6bc53372
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568372"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571787"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune 
 
@@ -143,6 +143,9 @@ De vereisten voor cloudopslag zijn als volgt:
 
 - Alle app-installatiebestanden moeten zich in dezelfde map bevinden.
 - De maximale bestandsgrootte voor elk bestand dat u uploadt, is 8 GB.
+
+  > [!NOTE]
+  > Windows Line-Of-Business-apps (LOB) hebben een maximale grootte van 8 GB per app. iOS LOB-apps hebben een maximale grootte van 4 GB per app.
 
 ## <a name="create-and-edit-categories-for-apps"></a>Categorieën voor apps maken en bewerken
 

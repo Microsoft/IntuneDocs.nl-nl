@@ -91,18 +91,18 @@ Als uw toepassing al is geconfigureerd voor het gebruik van ADAL of MSAL en een 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Intune App-beveiligingsbeleid inschakelen in uw mobiele Android-app
 
 1. Voeg het [Microsoft.Intune.MAM.Xamarin.Android NuGet-pakket](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) toe aan uw Xamarin.Android-project.
-    1. Voor een Xamarin.Forms-app, voeg de [Microsoft.Intune.MAM.Remapper.Tasks NuGet-pakket](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) aan uw Xamarin.Android-project. 
-2. Ga als volgt de algemene stappen die nodig zijn voor [de Intune App SDK integreren](app-sdk-android.md) in een mobiele Android-app tijdens het verwijzen naar dit document voor meer informatie.
+    1. Voeg voor een Xamarin.Forms-app ook het [Microsoft.Intune.MAM.Remapper.Tasks NuGet-pakket](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) toe aan uw Xamarin.Android-project. 
+2. Volg de algemene stappen die nodig zijn om [de Intune App SDK te integreren](app-sdk-android.md) in een mobiele Android-app en raadpleeg dit document voor aanvullende informatie.
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android-integratie
 
-Een volledig overzicht voor het integreren van de Intune App SDK kunt u vinden in de [Microsoft Intune App SDK voor Android-ontwikkelaarshandleiding](app-sdk-android.md). Als u lees de handleiding en de Intune App SDK integreren in uw Xamarin-app in de volgende secties zijn bedoeld om de verschillen tussen de implementatie voor een systeemeigen Android-app ontwikkeld in Java en een Xamarin-app ontwikkeld in C#. Deze secties moeten worden behandeld als aanvullende en kunnen niet fungeren als vervanging voor het lezen van de handleiding in zijn geheel toe.
+Een volledig overzicht voor het integreren van de Intune App SDK kunt u vinden in de [Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android](app-sdk-android.md). Als u de handleiding leest en de Intune App SDK integreert in uw Xamarin-app, zijn de volgende secties bedoeld om de verschillen te belichten tussen de implementatie voor een systeemeigen Android-app die is ontwikkeld in Java en een Xamarin-app die is ontwikkeld in C#. Deze secties moeten worden beschouwd als aanvullend en zijn geen vervanging voor het lezen van de handleiding als geheel.
 
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Methoden waarvan de naam is gewijzigd](app-sdk-android.md#renamed-methods)
 In veel gevallen is een methode die in de Android-klasse beschikbaar is, in de vervangende MAM-klasse als definitief gemarkeerd. De vervangende MAM-klasse biedt in dit geval een gelijknamige methode (voorafgegaan door `MAM`) die in plaats daarvan moet worden overschreven. Wanneer een activiteit wordt afgeleid van `MAMActivity`, moet niet `OnCreate()` worden overschreven en niet `base.OnCreate()` worden aangeroepen, maar moet `Activity` `OnMAMCreate()` overschrijven en `base.OnMAMCreate()` aanroepen.
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM-toepassing](app-sdk-android.md#mamapplication)
-Uw app moet definieert een `Android.App.Application` klasse die eigenschappen van overneemt `MAMApplication`. Controleer of uw subklasse op de juiste manier is voorzien van het `[Application]`-kenmerk en de `(IntPtr, JniHandleOwnership)`-constructor overschrijdt.
+Er moet voor uw app een `Android.App.Application`-klasse zijn gedefinieerd die eigenschappen overneemt van `MAMApplication`. Controleer of uw subklasse op de juiste manier is voorzien van het `[Application]`-kenmerk en de `(IntPtr, JniHandleOwnership)`-constructor overschrijdt.
 ```csharp
     [Application]
     class TaskrApp : MAMApplication
@@ -111,7 +111,7 @@ Uw app moet definieert een `Android.App.Application` klasse die eigenschappen va
         : base(handle, transfer) { }
 ```
 > [!NOTE]
-> Een probleem met de MAM Xamarin bindings kan leiden tot de toepassing op het vastlopen wanneer ze worden geïmplementeerd in de foutopsporingsmodus. Als tijdelijke oplossing, de `Debuggable=false` kenmerk moet worden toegevoegd aan de `Application` klasse en de `android:debuggable="true"` markering moet worden verwijderd uit het manifest als deze handmatig is ingesteld.
+> Een probleem met de MAM Xamarin-bindingen kan ertoe leiden dat de toepassing crasht indien deze is geïmplementeerd in de foutopsporingsmodus. Als tijdelijke oplossing moet het kenmerk `Debuggable=false` worden toegevoegd aan de `Application`-klasse en moet de markering `android:debuggable="true"` worden verwijderd uit het manifest als deze handmatig was ingesteld.
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[Functies inschakelen waarvoor app-deelname is vereist](app-sdk-android.md#enable-features-that-require-app-participation)
 Voorbeeld: bepalen of er een pincode is vereist voor de app
@@ -142,19 +142,19 @@ public override void OnMAMCreate()
     ...
 ```
 
-#### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[MAM-beheerfunctie voor apparaatregistratie](app-sdk-android.md#mamenrollmentmanager)
+#### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[MAM-inschrijvingsmanager](app-sdk-android.md#mamenrollmentmanager)
 ```csharp
 IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 ```
 
 ### <a name="xamarinforms-integration"></a>Xamarin.Forms-integratie
 
-Voor `Xamarin.Forms` toepassingen bieden wij de `Microsoft.Intune.MAM.Remapper` pakket om uit te voeren van de MAM-vervangings-klasse automatisch door het injecteren `MAM` klassen in de Klassehiërarchie van veelgebruikte `Xamarin.Forms` klassen. 
+Voor `Xamarin.Forms`-toepassingen bieden wij het pakket `Microsoft.Intune.MAM.Remapper` om automatisch MAM-klassevervanging uit te voeren door `MAM`-klassen in te voeren in de klassehiërarchie van veelgebruikte `Xamarin.Forms`-klassen. 
 
 > [!NOTE]
-> De Xamarin.Forms-integratie is verder worden uitgevoerd op de Xamarin.Android-integratie hierboven gespecificeerd.
+> De Xamarin.Forms-integratie moet worden uitgevoerd naast de Xamarin.Android-integratie die hierboven is beschreven.
 
-Wanneer het Remapper is toegevoegd aan uw project moet u de MAM-equivalent vervangingen uitvoeren. Bijvoorbeeld, `FormsAppCompatActivity` en `FormsApplicationActivity` kunt blijven gebruiken in uw toepassing opgegeven overschrijvingen `OnCreate` en `OnResume` zijn vervangen door de MAM-equivalenten `OnMAMCreate` en `OnMAMResume` respectievelijk.
+Zodra de remapper is toegevoegd aan uw project moet u de vervangingen door MAM-equivalenten uitvoeren. U kunt bijvoorbeeld `FormsAppCompatActivity` en `FormsApplicationActivity` in uw toepassing blijven gebruiken mits overschrijvingen van `OnCreate` en `OnResume` zijn vervangen door respectievelijk de MAM-equivalenten `OnMAMCreate` en `OnMAMResume`.
 
 ```csharp
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
@@ -166,13 +166,13 @@ Wanneer het Remapper is toegevoegd aan uw project moet u de MAM-equivalent verva
             LoadApplication(new App());
         }
 ```
-Als de vervangingen zijn niet gemaakt kan u de volgende compilatiefouten optreden totdat u de vervangingen:
+Zolang u de vervangingen niet doorvoert, kunnen de volgende compilatiefouten optreden:
 * [Compilatiefout CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239). Deze fout wordt veelal gezien in deze vorm ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
 Dit is verwacht want wanneer de remapper de overname van Xamarin-klassen wijzigt, worden sommige functies `sealed` en wordt een nieuwe MAM-variant toegevoegd aan de overschrijving.
-* [Compiler fout CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507): deze fout wordt algemeen gezien in dit formulier ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. Wanneer de remapper de overname van sommige Xamarin-klassen wijzigt, worden sommige lidfuncties gewijzigd in `public`. Als u een van deze functies overschrijven, moet u om te wijzigen die de aanpassingsfuncties voor degenen die onderdrukkingen om te worden `public` ook.
+* [Compilatiefout CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507): deze fout wordt veelal gezien in deze vorm ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. Wanneer de remapper de overname van sommige Xamarin-klassen wijzigt, worden sommige lidfuncties gewijzigd in `public`. Als u een van deze functies overschrijft, moet u de toegangsmodificator voor deze overschrijvingen ook wijzigen in `public`.
 
 > [!NOTE]
-> Het Remapper herschrijft een afhankelijkheid die Visual Studio voor IntelliSense automatisch aanvullen gebruikt. U moet daarom opnieuw te laden en bouw het project opnieuw wanneer het Remapper voor IntelliSense voor het herkennen van de wijzigingen goed wordt toegevoegd.
+> Met de remapper wordt een afhankelijkheid herschreven die in Visual Studio wordt gebruikt voor automatische aanvulling via IntelliSense. Wanneer de remapper is toegevoegd, moet u het project daarom mogelijk opnieuw laden en bouwen zodat de wijzigingen juist worden herkend in IntelliSense.
 
 ## <a name="support"></a>Support
-Als uw organisatie een bestaande Intune-klant is, kunt u contact opnemen met uw ondersteuningsmedewerker van Microsoft om een ondersteuningsticket te openen en een probleem te melden op de [Github-problemenpagina](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues). U wordt zo snel mogelijk geholpen. 
+Als uw organisatie een bestaande Intune-klant is, kunt u contact opnemen met uw ondersteuningsmedewerker van Microsoft om een ondersteuningsticket te openen en een probleem te melden op de [GitHub-problemenpagina](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues). U wordt zo snel mogelijk geholpen. 

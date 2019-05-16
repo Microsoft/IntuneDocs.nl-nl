@@ -34,7 +34,7 @@ De Intune App SDK biedt ondersteuning voor vergelijkbare scenario's op iOS en An
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Als uw app alleen intern in uw organisatie wordt gebruikt en niet openbaar beschikbaar wordt gesteld, geldt het volgende:
 
-U hoeft uw app _**niet**_ te registreren. Voor interne [line-of-business (LOB)-apps](apps-add.md#app-types-in-microsoft-intune) die zijn geschreven door of voor uw bedrijf, de IT-beheerder implementeert de app intern. Intune detecteert dat de app is gemaakt met de SDK waarna de IT-beheerder het beleid voor app-beveiliging erop kan toepassen. U kunt verdergaan naar de sectie [Uw mobiele iOS- of Android-app geschikt maken voor beleid voor app-beveiliging](#enable-your-ios-or-android-app-for-app-protection-policy).
+U hoeft uw app _**niet**_ te registreren. Voor interne [line-Of-Business-apps (LOB)](apps-add.md#app-types-in-microsoft-intune) die zijn geschreven door of voor uw bedrijf implementeert de IT-beheerder de app intern. Intune detecteert dat de app is gemaakt met de SDK waarna de IT-beheerder het beleid voor app-beveiliging erop kan toepassen. U kunt verdergaan naar de sectie [Uw mobiele iOS- of Android-app geschikt maken voor beleid voor app-beveiliging](#enable-your-ios-or-android-app-for-app-protection-policy).
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Als uw app wordt uitgebracht in een openbare app-store, zoals de Apple App Store of Google Play, geldt het volgende:
 

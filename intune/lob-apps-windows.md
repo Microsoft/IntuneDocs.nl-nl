@@ -1,15 +1,16 @@
 ---
 title: Een Windows Line-Of-Business-app toevoegen aan Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Hier vindt u meer informatie over het toevoegen van Windows Line-Of-Business-apps (LOB) met Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 04/10/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7776c1bddb459347679cb4aea3bc4e14e05e1418
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
+ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238775"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59570764"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Een Windows Line-Of-Business-app toevoegen aan Microsoft Intune
 
@@ -92,4 +93,4 @@ Met deze functie kunt u voorkomen dat er een racevoorwaarde optreedt. Een racevo
 
 - Meer informatie over de manieren waarop u de eigenschappen en de toewijzing van uw app kunt controleren. Zie [App-gegevens en -toewijzingen controleren](apps-monitor.md).
 
-- Meer informatie over de context van uw app in Intune. Zie [Overzicht van de levenscycli van apparaten en apps](introduction-device-app-lifecycles.md).
+- Meer informatie over de context van uw app in Intune. Zie [Overzicht van de app-levenscyclus in Microsoft Intune](app-lifecycle.md).

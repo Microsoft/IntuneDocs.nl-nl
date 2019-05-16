@@ -64,7 +64,7 @@ U kunt de meest recente functionaliteit van het datawarehouse met behulp van de 
 
 ## <a name="odata-query-options"></a>OData-queryopties
 
-De huidige versie ondersteunt de volgende OData-queryparameters: `$filter`, `$select`, `$skip,` en `$top`. In `$filter`, alleen `DateKey` of `RowLastModifiedDateTimeUTC` kan worden ondersteund wanneer de kolommen van toepassing zijn, en andere eigenschappen van een ongeldige aanvraag wilt activeren.
+De huidige versie ondersteunt de volgende OData-queryparameters: `$filter`, `$select`, `$skip,` en `$top`. In `$filter` worden mogelijk alleen `DateKey` of `RowLastModifiedDateTimeUTC` ondersteund wanneer de kolommen van toepassing zijn, en andere eigenschappen zouden een ongeldige aanvraag activeren.
 
 ## <a name="datekey-range-filters"></a>Bereikfilters DateKey
 
@@ -84,4 +84,4 @@ De huidige versie ondersteunt de volgende OData-queryparameters: `$filter`, `$se
 |    `$filter=DateKey eq 20180214`                                 |    Volledig                                      |    Gegevens retourneren met `DateKey` gelijk aan 20180214.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Volledig                                      |    Gegevens retourneren met `DateKey` tussen 20180214 en 20180220.                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Volledig                                      |    Gegevens retourneren met `DateKey` gelijk aan 20180214. `maxhistorydays` wordt genegeerd.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Volledig                                       |    Als resultaat de gegevens met `RowLastModifiedDateTimeUTC` is groter dan of gelijk zijn aan `2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Volledig                                       |    Retourgegevens met `RowLastModifiedDateTimeUTC` zijn groter dan of gelijk aan `2018-02-21T23:18:51.3277273Z`                             |

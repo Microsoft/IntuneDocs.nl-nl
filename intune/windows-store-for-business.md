@@ -1,35 +1,36 @@
 ---
-title: Apps beheren via Microsoft Store voor Bedrijven
-titlesuffix: Microsoft Intune
-description: Meer informatie over hoe u apps kunt synchroniseren in Intune vanuit Microsoft Store voor Bedrijven en hoe u de apps vervolgens kunt toewijzen en bijhouden.
+title: In volume aangeschafte of gratis apps beheren vanuit Microsoft Store voor Bedrijven
+titleSuffix: Microsoft Intune
+description: Meer informatie over hoe u gekochte (of gratis) apps synchroniseert in Intune vanuit de Microsoft Store voor Bedrijven.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75e6cdd97bbc591a76e541874152455c4fe258c0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 67d99977776657219638980eb6de8a4079384185
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234923"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587498"
 ---
-# <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Apps die u hebt aangeschaft in Microsoft Store voor Bedrijven, beheren met Microsoft Intune
+# <a name="how-to-manage-volume-purchased-or-free-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>In volume aangeschafte (of gratis) apps beheren vanuit de Microsoft Store voor Bedrijven met Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 [Microsoft Store voor Bedrijven](https://www.microsoft.com/business-store) biedt een centrale locatie om apps te zoeken en aan te schaffen voor uw organisatie. U kunt zowel afzonderlijke exemplaren van een app als grotere volumes aanschaffen. Als u Windows Store voor Bedrijven aan Microsoft Intune koppelt, kunt u apps die zijn aangeschaft via een volume-aankoopprogramma, beheren in de Azure-portal. Bijvoorbeeld:
-* U kunt de lijst met aangeschafte apps synchroniseren met Intune.
+* U kunt de lijst met apps die u hebt aangeschaft (of die gratis zijn) vanuit de Store synchroniseren met Intune.
 * Apps die zijn gesynchroniseerd, worden weergegeven in de Intune-beheerconsole en u kunt deze apps op dezelfde manier toewijzen als andere apps.
 * U kunt in de Intune-beheerconsole bijhouden hoeveel licenties er beschikbaar zijn en hoeveel licenties er worden gebruikt.
 * Als er onvoldoende licenties beschikbaar zijn, worden de toewijzing en installatie van apps geblokkeerd met Intune.
@@ -80,7 +81,7 @@ U kunt nu doorgaan en synchronisatie instellen in de Intune-console.
 
 ## <a name="assign-apps"></a>Apps toewijzen
 
-U kunt apps uit de store op dezelfde manier toewijzen als elke andere Intune-app. Zie [Apps aan groepen toewijzen](apps-deploy.md) voor meer informatie. In plaats van apps toe te wijzen vanaf de pagina **Alle apps** wijst u ze toe vanaf de pagina **Apps met een licentie**.
+U kunt apps uit de store op dezelfde manier toewijzen als elke andere Intune-app. Zie [Apps aan groepen toewijzen](apps-deploy.md) voor meer informatie. 
 
 Offline-apps kunnen worden gericht op gebruikersgroepen, apparaatgroepen of groepen met gebruikers en apparaten.
 Offline-apps kunnen worden geïnstalleerd voor een specifieke gebruiker op een apparaat of voor alle gebruikers op een apparaat. 

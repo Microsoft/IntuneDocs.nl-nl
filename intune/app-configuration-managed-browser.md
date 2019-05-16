@@ -1,39 +1,52 @@
 ---
-title: Webtoegang beheren met een met beleid beveiligde browser
-titlesuffix: Microsoft Intune
-description: Met behulp van een browser die met beleid is beveiligd kan surfen op het web en de overdracht van gegevens van internet worden beperkt.
+title: Bedrijfstoegang tot het web beheren via een met beleid beveiligde browser
+titleSuffix: Microsoft Intune
+description: Gebruik een met beleid beveiligde browser die is toegewezen met Intune, om zakelijke browsersessies en de overdracht van webgegevens te beheren.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.custom: intune-azure, seoapril2019
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8f32cfbb5e05958ec9d8f303809d3ffa28c3a3ec
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324970"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569724"
 ---
-# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Internettoegang beheren met een met Microsoft Intune-beleid beveiligde browser
+# <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Webtoegang beheren via een met Microsoft Intune-beleid beveiligde browser
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Met behulp van een browser die wordt beveiligd met Intune-beleid (Microsoft Edge of Intune Managed Browser), kunt u ervoor zorgen dat de toegang tot zakelijke websites altijd is beveiligd.  Als u deze configureert met Intune, bieden beveiligde browsers de volgende voordelen:
 
-- Beleid voor toepassingsbeveiliging.
-- Voorwaardelijke toegang.
-- Eenmalige aanmelding.
-- Configuratie-instellingen voor toepassingen.
-- Proxy-integratie met Azure-toepassingen.
+- Beleid voor toepassingsbeveiliging
+- Voorwaardelijke toegang
+- Eenmalige aanmelding
+- Configuratie-instellingen voor toepassingen
+- Proxyintegratie met Azure-toepassingen
+
+## <a name="microsoft-edge-support"></a>Microsoft Edge-ondersteuning
+
+U kunt Microsoft Edge gebruiken voor zakelijke scenario’s op iOS- en Android-apparaten. Microsoft Edge biedt ondersteuning voor dezelfde beheerscenario's als de Intune Managed Browser met de toevoeging van verbeteringen in de eindgebruikerservaring. Op basis van Intune-beleid zijn de volgende zakelijke functies van Microsoft Edge beschikbaar. Deze zakelijke functies omvatten:
+
+1. **Dual-Identity**. Gebruikers kunnen zowel een werkaccount als een persoonlijk account maken om mee te browsen. Er is sprake van een volledige scheiding tussen de twee identiteiten. Dit is vergelijkbaar met de architectuur en ervaring in Office 365 en Outlook. Intune-beheerders kunnen het gewenste beleid instellen voor beveiligde browsersessies binnen het werkaccount. 
+2. **Integratie van beveiligingsbeleid voor Intune-apps**. Beheerders kunnen nu app-beveiligingsbeleid instellen voor Microsoft Edge, inclusief beheer over knippen, kopiëren en plakken, waardoor er geen schermopnamen kunnen worden vastgelegd. Ook kunnen ze ervoor zorgen dat door de gebruiker geselecteerde koppelingen alleen kunnen worden geopend in andere beheerde apps.
+3. **Proxyintegratie met Azure-toepassingen**. Beheerders kunnen toegang tot SaaS-app en web-apps beheren, en ervoor zorgen dat browser-apps alleen worden uitgevoerd in de beveiligde Microsoft Edge-browser, of eindgebruikers nu verbinding maken vanuit het bedrijfsnetwerk of vanaf internet. 
+4. **Beheerde snelkoppelingen naar Favorieten en naar de startpagina**. Beheerders kunnen, voor een betere toegankelijkheid, URL’s instellen die worden weergegeven onder Favorieten wanneer eindgebruikers zich in hun zakelijke context bevinden. Beheerders kunnen een snelkoppeling naar de startpagina instellen, die wordt weergegeven als primaire snelkoppeling wanneer de zakelijke gebruiker een nieuwe pagina of een nieuw tabblad opent in Microsoft Edge.
+
+Beveiligingsbeleid van Microsoft Intune voor Microsoft Edge helpt u om de gegevens en resources in uw organisatie te beveiligen. Met Intune beveiligde Microsoft Edge-sessies zorgen ervoor dat de resources in uw bedrijf niet alleen zijn beveiligd in systeemeigen geïnstalleerde apps, maar ook bij toegang via een webbrowser.
 
 ## <a name="getting-started"></a>Aan de slag
 
@@ -71,11 +84,15 @@ Omdat Managed Browser of Microsoft Edge niet worden beheerd door Intune, kunnen 
 
 ## <a name="conditional-access-for-protected-browsers"></a>Voorwaardelijke toegang voor de beveiligde browsers
 
-Managed Browser is nu een goedgekeurde client-app voor voorwaardelijke toegang. Dit betekent dat u de mobiele browsertoegang kunt beperken tot met Azure AD verbonden web-apps waarbij gebruikers alleen Managed Browser kunnen gebruiken en toegang vanaf andere niet-beveiligde browsers zoals Safari of Chrome wordt geblokkeerd. Deze beveiliging kan worden toegepast op Azure-resources zoals Exchange Online en SharePoint Online, de Office-portal en zelfs on-premises sites die u beschikbaar hebt gemaakt voor externe gebruikers via de [Azure AD-toepassingsproxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
+Managed Browser is nu een goedgekeurde client-app voor voorwaardelijke toegang. Dit betekent dat u de mobiele browsertoegang kunt beperken tot met Azure AD verbonden web-apps waarbij gebruikers alleen Managed Browser kunnen gebruiken en toegang vanaf andere niet-beveiligde browsers zoals Safari of Chrome wordt geblokkeerd. Deze beveiliging kan worden toegepast op Azure-resources zoals Exchange Online en SharePoint Online, het Microsoft 365 Office-beheercentrum en zelfs on-premises sites die u beschikbaar hebt gemaakt voor externe gebruikers via de [Azure AD-toepassingsproxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
 
-Als u met Azure AD verbonden web-apps wilt beperken tot het gebruik van Intune Managed Browser op mobiele platforms, kunt u een voorwaardelijk Azure AD-toegangsbeleid maken waarbij goedgekeurde clienttoepassingen worden vereist. 
+Als u met Azure AD verbonden web-apps wilt beperken tot het gebruik van Intune Managed Browser op mobiele platforms, kunt u voorwaardelijk toegangsbeleid maken waarbij goedgekeurde clienttoepassingen worden vereist. 
 
-1. Selecteer in Azure Portal **Azure Active Directory** > **Bedrijfstoepassingen** > **Voorwaardelijke toegang** > **Nieuw beleid**. 
+> [!TIP]  
+> Voorwaardelijke toegang is een technologie van Azure Active Directory (Azure AD). Het knooppunt voor voorwaardelijke toegang dat via *Intune* wordt geopend, is hetzelfde als het knooppunt dat u opent via *Azure AD*.  
+
+
+1. Selecteer in de Intune-portal achtereenvolgens **Voorwaardelijke toegang** > **Nieuw beleid**. 
 2. Selecteer vervolgens **Verlenen** in de sectie **Besturingselementen voor toegang** van de blade. 
 3. Klik op **Goedgekeurde client-apps vereisen**. 
 4. Klik op **Selecteren** op de blade **Verlenen**. Dit beleid moet worden toegewezen aan de cloud-apps die u alleen voor de Intune Managed Browser-app toegankelijk wilt maken.
@@ -150,9 +167,9 @@ Microsoft Edge en Intune Managed Browser en de [Azure AD-toepassingsproxy]( http
 ### <a name="before-you-start"></a>Voordat u begint
 
 - Stel de interne toepassingen in via de toepassingsproxy van Azure AD.
-    - Raadpleeg [deze documentatie](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started) voor het configureren van de toepassingsproxy en het publiceren van toepassingen. 
+    - Raadpleeg [deze documentatie](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) voor het configureren van de toepassingsproxy en het publiceren van toepassingen. 
 - U moet minimaal versie 1.2.0 van de Managed Browser-app gebruiken.
-- Er is een [beleid voor app-beveiliging van Intune]( app-protection-policy.md) toegewezen aan de Managed Browser- of Microsoft Edge-app.
+- Er is een [beleid voor app-beveiliging van Intune](app-protection-policy.md) toegewezen aan de Managed Browser- of Microsoft Edge-app.
 
     > [!NOTE]
     > Het kan tot 24 uur duren voordat bijgewerkte omleidingsgegevens voor de toepassingsproxy worden doorgevoerd in Managed Browser en Microsoft Edge.
@@ -168,7 +185,7 @@ Met deze procedure wordt de Managed Browser- of Microsoft Edge-app geconfigureer
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-Voor meer informatie over het gecombineerde gebruik van Managed Browser, Microsoft Edge en de Azure AD-toepassingsproxy voor een naadloze (en beveiligde) toegang tot on-premises web-apps, raadpleegt u de blogpost voor Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Beter samen: Intune en Azure Active Directory werken samen om de toegang voor gebruikers te verbeteren).
+Voor meer informatie over het gecombineerde gebruik van Managed Browser, Microsoft Edge en de Azure AD-toepassingsproxy voor naadloze (en beveiligde) toegang tot on-premises web-apps, raadpleegt u de blogpost voor Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access). (Beter samen: Intune en Azure Active Directory werken samen om de toegang voor gebruikers te verbeteren.)
 
 > [!NOTE]
 > Voor Microsoft Edge wordt hetzelfde sleutel- en waardepaar gebruikt als voor Managed Browser. 
@@ -266,14 +283,14 @@ Gebruik de volgende gegevens voor meer informatie over de toegestane indelingen 
 Zowel de Intune Managed Browser als Microsoft Edge worden nu beschouwd als door beleid beheerde browsers/beveiligde browsers. Tegenwoordig resulteert beleid voor app-beveiliging in webkoppelingen vanuit door Intune beheerde apps, die moeten worden geopend in een specifieke browser, afhankelijk van uw scenario en platform. 
 
 Op Android: 
-* Managed Browser indien zowel MB als Edge op het apparaat staan, tenzij de app-configuratie-instelling 'com.microsoft.intune.useEdge' is ingesteld op 'true' (waar) voor alle door Intune beheerde apps waarbij een door beleid beheerde browser is vereist.  
-* Microsoft Edge als alleen Microsoft Edge op het apparaat staat en onder beleid valt.
-* Managed Browser als alleen Managed Browser op het apparaat staat en onder beleid valt. 
+* Managed Browser wordt geopend als een gebruiker zowel Managed Browser als Microsoft Edge op het apparaat heeft geïnstalleerd. Om ervoor te zorgen dat Microsoft Edge wordt geopend in plaats van Managed Browser, stelt u de app-configuratie-instelling com.microsoft.intune.useEdge in op true (waar) voor alle met Intune beheerde apps waarbij een door beleid beheerde browser is vereist.  
+* Als alleen Microsoft Edge op het apparaat staat en onder beleid valt, wordt Microsoft Edge geopend.
+* Als alleen Managed Browser op het apparaat staat en onder beleid valt, wordt Managed Browser geopend. 
 
-Op iOS, voor apps waarvoor de Intune SDK voor iOS v. 9.0.9+ is geïntegreerd: 
-* Managed Browser indien zowel MB als Edge op het apparaat staan, tenzij de app-configuratie-instelling 'com.microsoft.intune.useEdge' is ingesteld op 'true' (waar) voor alle door Intune beheerde apps waarbij een door beleid beheerde browser is vereist, **of** Microsoft Edge als Microsoft Edge is geïnstalleerd en beleid heeft ontvangen. 
-* Microsoft Edge als alleen Microsoft Edge op het apparaat staat, onder beleid valt en beleid heeft ontvangen. 
-* Managed Browser als alleen Managed Browser op het apparaat staat, onder beleid valt en beleid heeft ontvangen.
+Op iOS, voor apps waarvoor de Intune SDK is geïntegreerd voor iOS v. 9.0.9+ : 
+* Managed Browser, als zowel MB als Edge op het apparaat staan, tenzij de app-configuratie-instelling com.microsoft.intune.useEdge is ingesteld op true (waar) voor alle met Intune beheerde apps waarbij een door beleid beheerde browser is vereist, **of** Microsoft Edge, als Microsoft Edge is geïnstalleerd en beleid heeft ontvangen. 
+* Microsoft Edge, als alleen Microsoft Edge op het apparaat staat, onder beleid valt en beleid heeft ontvangen. 
+* Managed Browser, als alleen Managed Browser op het apparaat staat, onder beleid valt en beleid heeft ontvangen.
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Toegang tot logboeken van beheerde apps met Managed Browser in iOS
 

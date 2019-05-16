@@ -1,15 +1,16 @@
 ---
 title: Inschrijvingsbeperkingen instellen in Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Beperk het registreren per platform en geef een registratielimiet voor apparaten op in Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/17/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfbfb26569a85d8cd19b840ab86ec58160a1dec4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1080ae8a73223ad16445d0d2233434faa818b04b
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839664"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569113"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -42,10 +43,11 @@ U kunt onder ander de volgende registratiebeperkingen maken:
   - iOS
   - macOS
   - Windows
-- Platformbesturingssysteemversie voor iOS, Android, Android-werkprofielen en Windows. (Alleen Windows 10-versies kunnen worden gebruikt. Laat dit veld leeg als Windows 8.1 is toegestaan.)
+  - Windows Mobile
+- Platformbesturingssysteemversie voor iOS, Android, Android-werkprofielen, Windows en Windows Mobile. (Alleen Windows 10-versies kunnen worden gebruikt. Laat dit veld leeg als Windows 8.1 is toegestaan.)
   - Minimale versie.
   - Maximale versie.
-- Beperkingen opleggen voor apparaten die persoonlijk eigendom zijn (alleen iOS, Android, Android-werkprofielen en macOS, Windows).
+- Beperkingen opleggen voor apparaten die persoonlijk eigendom zijn (alleen iOS, Android, Android-werkprofielen, macOS, Windows en Windows Mobile).
 
 ## <a name="default-restrictions"></a>Standaardbeperkingen
 
@@ -103,7 +105,7 @@ De volgende methoden worden gezien als een zakelijke Windows-registratie:
 - Het apparaat is geregistreerd via een [pakket voor bulkinrichting](windows-bulk-enroll.md).
 - Het apparaat is geregistreerd via GPO, of er is sprake van [automatische inschrijving met behulp van SCCM voor co-beheer](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
-De volgende inschrijvingen worden door Intune wel als zakelijk gemarkeerd, maar toch geblokkeerd omdat ze de Intune-beheerder geen beheer op apparaatniveau bieden:
+De volgende inschrijvingen zijn door Intune gemarkeerd als zakelijk. Maar omdat ze de controle Intune-beheerder per apparaat niet aanbieden, worden ze geblokkeerd:
  - [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling tijdens het instellen van Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
 - [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling vanuit Windows-instellingen](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*.
  
@@ -126,9 +128,20 @@ U kunt de instellingen voor een beperking van de apparaatlimiet als volgt wijzig
 6. Selecteer **Opslaan**.
 
 
-Bij BYOD-registraties wordt er een melding aan gebruikers weergegeven waarin staat wanneer zij hun limiet van geregistreerde apparaten hebben bereikt. In iOS ziet dit er bijvoorbeeld als volgt uit:
+Bij BYOD-registraties wordt er een melding aan gebruikers weergegeven waarin staat wanneer zij hun limiet van geregistreerde apparaten hebben bereikt. Bijvoorbeeld in iOS:
 
 ![Limietmelding op iOS-apparaat](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
+> [!IMPORTANT]
+> Apparaatlimietbeperkingen zijn niet van toepassing op de volgende typen Windows-inschrijvingen:
+> - Gezamenlijk beheerde inschrijvingen
+> - GPO-inschrijvingen
+> - Gezamenlijke Azure Active Directory-inschrijvingen
+> - Gezamenlijke Azure Active Directory-inschrijvingen in bulk
+> - Autopilot-inschrijvingen
+>
+> Apparaatlimietbeperkingen worden niet afgedwongen voor deze typen inschrijven, omdat ze worden beschouwd als gedeelde apparaten.
+> U kunt [in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) vaste limieten instellen voor deze typen inschrijvingen.
 
 ## <a name="change-enrollment-restriction-priority"></a>De prioriteit van de registratiebeperking wijzigen
 

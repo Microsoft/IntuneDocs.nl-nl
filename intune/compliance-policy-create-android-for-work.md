@@ -1,6 +1,6 @@
 ---
-title: Apparaatinstellingen voor Android Enterprise in Microsoft Intune - Azure | Microsoft Docs
-description: Een overzicht van alle instellingen die u gebruiken kunt bij het instellen van naleving voor uw zakelijk Android-apparaten in Microsoft Intune. Regels voor wachtwoorden instellen, kiest u een minimum of maximum besturingssysteemversie, bepaalde apps beperken, te voorkomen dat ondertekeningscertificaten hergebruiken wachtwoord en meer.
+title: Naleving voor Android Enterprise in Microsoft Intune - Azure | Microsoft Docs
+description: Bekijk een overzicht van alle instellingen die u kunt gebruiken bij het instellen van naleving voor uw Android Enterprise-apparaten in Microsoft Intune. Stel regels voor wachtwoorden in, kies een minimum- of maximumversie van het besturingssysteem, beperk bepaalde apps, voorkomen hergebruik van wachtwoorden, en meer.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -24,17 +24,17 @@ ms.contentlocale: nl-NL
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59423557"
 ---
-# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Instellingen voor android Enterprise apparaten gemarkeerd als compatibel of niet compatibel met Intune
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Android Enterprise-instellingen om te markeren of apparaten wel of niet conform zijn met behulp van Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-In dit artikel geeft een lijst van en beschrijft de verschillende nalevingsinstellingen die u op Android Enterprise-apparaten in Intune kunt configureren. Gebruik deze instellingen geroote (worden)-apparaten als niet-compatibel markeren, een toegestane bedreigingsniveau instellen, het inschakelen van Google Play Protect, en meer als onderdeel van uw beheeroplossing voor mobiele apparaten (MDM).
+Dit artikel bevat een overzicht en beschrijving van de verschillende instellingen die u kunt configureren op Android Enterprise-apparaten in Intune. Gebruik deze instellingen als onderdeel van uw MDM-oplossing (Mobile Device Management) om geroote (opengebroken) apparaten als niet-conform te markeren, een toegestaan bedreigingsniveau in te stellen, Google Play Protect in te schakelen, en meer.
 
 Deze functie is van toepassing op:
 
 - Android Enterprise
 
-Als Intune-beheerder, gebruikt u deze instellingen voor naleving voor beveiliging van uw resources van de organisatie. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over nalevingsbeleid en eventuele vereisten.
+Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw organisatie beter te beschermen. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over nalevingsbeleid en wat dit doet.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
@@ -49,7 +49,7 @@ Als Intune-beheerder, gebruikt u deze instellingen voor naleving voor beveiligin
   - **Gemiddeld**: Het apparaat wordt als compatibel geëvalueerd als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als bedreigingen met hoog niveau worden aangetroffen op het apparaat, wordt het apparaat als niet-compatibel beoordeeld.
   - **Hoog**: deze optie is het minst veilig, omdat alle bedreigingsniveaus zijn toegestaan. Deze optie kan handig zijn als u deze alleen gebruikt voor rapportagedoeleinden.
 
-### <a name="google-play-protect"></a>Google Play beveiligen
+### <a name="google-play-protect"></a>Google Play Protect
 
 - **Google Play Services is geconfigureerd**: hiermee kunt u **vereisen** dat de app Google Play Services wordt geïnstalleerd en ingeschakeld. Google Play Services maakt beveiligingsupdates mogelijk en vormt een basisafhankelijkheid voor veel beveiligingsfuncties op door Google gecertificeerde apparaten. Als u **Niet geconfigureerd** (standaard) kiest, wordt deze instelling niet beoordeeld op naleving of niet-naleving.
 - **Bijgewerkte beveiligingsprovider**: hiermee kunt u **vereisen** dat het apparaat tegen bekende beveiligingsproblemen wordt beschermd door een bijgewerkte beveiligingsprovider. Als u **Niet geconfigureerd** (standaard) kiest, wordt deze instelling niet beoordeeld op naleving of niet-naleving.
@@ -59,7 +59,7 @@ Als Intune-beheerder, gebruikt u deze instellingen voor naleving voor beveiligin
   - **Basisintegriteit en gecertificeerde apparaten controleren**
 
 > [!NOTE]
-> Op apparaten met Android Enterprise, **bedreigingsscan voor apps** is een beleid voor apparaatconfiguratie. Met behulp van een configuratiebeleid, kunnen beheerders de instelling op een apparaat inschakelen. Zie [Android Enterprise-apparaatbeperkingsinstellingen](device-restrictions-android-for-work.md).
+> Op apparaten met Android Enterprise is **Bedreigingsscan voor apps** een configuratiebeleidsregel voor apparaten. Met behulp van een configuratiebeleidsregel kunnen beheerders de instelling op een apparaat inschakelen. Zie [Android Enterprise-apparaatbeperkingsinstellingen](device-restrictions-android-for-work.md).
 
 ## <a name="device-properties-settings"></a>Apparaateigenschapsinstellingen
 
@@ -89,7 +89,7 @@ Als Intune-beheerder, gebruikt u deze instellingen voor naleving voor beveiligin
 
 - **Versleuteling van gegevensopslag op een apparaat**: kies **Vereisen** om gegevensopslag op uw apparaten te versleutelen. Als u **Niet geconfigureerd** (standaard) kiest, wordt deze instelling niet beoordeeld op naleving of niet-naleving. 
 
-  U hoeft deze instelling niet te configureren omdat versleuteling wordt afgedwongen op apparaten met een Android-werkprofiel.
+  U hoeft deze instelling niet te configureren omdat versleuteling op apparaten met Android Enterprise wordt afgedwongen.
 
 ### <a name="device-security"></a>Apparaatbeveiliging
 
@@ -100,7 +100,7 @@ Als Intune-beheerder, gebruikt u deze instellingen voor naleving voor beveiligin
   > [!IMPORTANT]
   > Voor sideloading van toepassingen moet de instelling **Apps uit onbekende bronnen blokkeren** zijn ingeschakeld. Dwing dit nalevingsbeleid alleen af als u Android-apps niet met behulp van sideloading op apparaten laadt.
 
-  U hoeft deze instelling niet te configureren omdat installatie vanuit onbekende bronnen altijd wordt voorkomen op apparaten met een Android-werkprofiel.
+  U hoeft deze instelling niet te configureren omdat installatie vanuit onbekende bronnen altijd wordt voorkomen op apparaten met Android Enterprise.
 
 - **Runtime-integriteit van de bedrijfsportal-app**: kies **Vereisen** om te bevestigen dat de bedrijfsportal-app aan de volgende vereisten voldoet:
 
@@ -113,7 +113,7 @@ Als Intune-beheerder, gebruikt u deze instellingen voor naleving voor beveiligin
 
 - **USB-foutopsporing op apparaat blokkeren**: kies **Blokkeren** om te voorkomen dat apparaten de functie voor USB-foutopsporing gebruiken. Als u **Niet geconfigureerd** (standaard) kiest, wordt deze instelling niet beoordeeld op naleving of niet-naleving.
 
-  U hoeft deze instelling niet te configureren omdat USB-foutopsporing altijd al is uitgeschakeld op apparaten met een Android-werkprofiel.
+  U hoeft deze instelling niet te configureren omdat USB-foutopsporing altijd al is uitgeschakeld op apparaten met Android Enterprise.
 
 - **Minimaal beveiligingspatchniveau**: selecteer het oudste beveiligingspatchniveau dat een apparaat kan hebben. Apparaten die niet ten minste dit patchniveau hebben, zijn niet-conform. De datum moet worden opgegeven in de indeling *jjjj-mm-dd*.
 
@@ -121,6 +121,6 @@ Selecteer **OK** > **Maken** om uw wijzigingen op te slaan.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-- [Acties voor niet-compatibele apparaten toevoegen](actions-for-noncompliance.md) en [bereiktags aan beleidsregels voor het filter gebruiken](scope-tags.md).
-- [Uw nalevingsbeleid bewaken](compliance-policy-monitor.md).
-- [Instellingen voor nalevingsbeleid voor Android-apparaten](compliance-policy-create-android.md)
+- [Voeg acties voor niet-conforme apparaten toe](actions-for-noncompliance.md) en [gebruik bereiktags om beleidsregels te filteren](scope-tags.md).
+- [Controleer uw nalevingsbeleid](compliance-policy-monitor.md).
+- Zie de [Instellingen voor nalevingsbeleid voor Android-apparaten](compliance-policy-create-android.md).

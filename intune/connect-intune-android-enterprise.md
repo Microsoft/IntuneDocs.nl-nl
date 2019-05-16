@@ -1,15 +1,16 @@
 ---
-title: Uw Intune-account met uw Android Enterprise-account verbinden
-titlesuffix: Microsoft Intune
-description: Meer informatie over het verbinden van uw Intune-account met uw Android Enterprise-account.
+title: Verbind uw Intune-account met uw Beheerde Google Play-account.
+titleSuffix: Microsoft Intune
+description: Meer informaite over het verbinden van uw Intune-account met uw Beheerde Google Play-account.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 6/21/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 421d9c56f959fe30d35c0c55ce34017a7a0ba5a6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 19efd0821deeac0e76c60ee67e6230da554391a0
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838255"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567384"
 ---
-# <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Uw Intune-account met uw Android Enterprise-account verbinden
+# <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Uw Intune-account verbinden met uw Beheerde Google Play-account
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ter ondersteuning van apparaten met een [Android-werkprofiel](android-work-profile-enroll.md), [volledig beheerde Android-apparaten](android-fully-managed-enroll.md) en [toegewezen Android-apparaten](android-kiosk-enroll.md) moet u uw Intune-tenantaccount koppelen aan uw Android Enterprise-account.  
+Ter ondersteuning van apparaten met een [Android Enterprise-werkprofiel](android-work-profile-enroll.md), [volledig beheerde Android Enterprise-apparaten](android-fully-managed-enroll.md) en [toegewezen Android Enterprise-apparaten](android-kiosk-enroll.md) moet u uw Intune-tenantaccount koppelen aan uw Beheerde Google Play-account.  
 
 > [!NOTE]
 > Als gevolg van interactie tussen domeinen van Google en Microsoft moet u in deze stap mogelijk uw browserinstellingen aanpassen.  Zorg ervoor dat 'portal.azure.com' en 'play.google.com' zich in dezelfde beveiligingszone bevinden in uw browser.
@@ -53,7 +54,7 @@ Ter ondersteuning van apparaten met een [Android-werkprofiel](android-work-profi
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>De verbinding met uw Android Enterprise-beheeraccount verbreken
 
-U kunt Android Enterprise-inschrijving en -beheer uitschakelen. Hiervoor moet u eerst alle geregistreerde apparaten met een Android-werkprofiel buiten gebruik stellen. Kies vervolgens **Verbinding verbreken** in de Intune-beheerconsole om de registratie van alle geregistreerde apparaten met een Android-werkprofiel en de kioskapparaten ongedaan te maken. U verwijdert hiermee ook de relatie tussen het Android Enterprise-account en Intune.
+U kunt Android Enterprise-inschrijving en -beheer uitschakelen. Hiervoor moet u eerst alle ingeschreven apparaten met een Android Enterprise-werkprofiel buiten gebruik stellen. Kies vervolgens **Verbinding verbreken** in de Intune-beheerconsole om de inschrijving van alle ingeschreven apparaten met een Android Enterprise-werkprofiel en alle toegewezen apparaten ongedaan te maken. U verwijdert hiermee ook de relatie tussen het Beheerde Google Play-account en Intune.
 
 1. Meld u als Intune-beheerder aan bij [Azure Portal](https://portal.azure.com) en kies **Alle services** > **Bewaking en beheer** > **Intune**.
 2. Kies **Apparaatinschrijving** > **Android-inschrijving** > **Beheerde Google Play** > **Verbinding verbreken**.
@@ -61,4 +62,4 @@ U kunt Android Enterprise-inschrijving en -beheer uitschakelen. Hiervoor moet u 
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Wanneer u verbinding met het Android Enterprise-account hebt gemaakt, kunt u[apparaten met een Android-werkprofiel instellen](android-work-profile-enroll.md) en [Android-kioskapparaten instellen](android-kiosk-enroll.md).
+Wanneer u verbinding met het Beheerde Google Play-account hebt gemaakt, kunt u [apparaten met een Android Enterprise-werkprofiel instellen](android-work-profile-enroll.md) en [toegewezen Android Enterprise-apparaten instellen](android-kiosk-enroll.md).

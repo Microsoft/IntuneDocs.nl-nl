@@ -1,6 +1,6 @@
 ---
-title: Onderwijsinstellingen voor Windows 8.1 in Microsoft Intune - Azure | Microsoft Docs
-description: Een overzicht van alle instellingen die u gebruiken kunt bij het instellen van naleving voor uw Windows 8.1 en Windows Phone 8.1-apparaten in Microsoft Intune. Controleren op naleving op het minimale en maximale besturingssysteem, set-wachtwoordbeperkingen en lengte, schakelt u versleuteling op de opslag van gegevens en meer.
+title: Nalevingsinstellingen voor Windows 8.1 in Microsoft Intune - Azure | Microsoft Docs
+description: Bekijk een overzicht van alle instellingen die u kunt gebruiken bij het instellen van naleving voor uw Windows 8.1- en Windows Phone 8.1-apparaten in Microsoft Intune. Controleer naleving van het minimale en maximale besturingssysteem, stel wachtwoordbeperkingen en -lengte in, schakel versleuteling voor de gegevensopslag in en meer.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,29 +22,29 @@ ms.contentlocale: nl-NL
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59424933"
 ---
-# <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Instellingen voor Windows 8.1-apparaten gemarkeerd als compatibel of niet compatibel met Intune
+# <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Windows 8.1-instellingen om te markeren of apparaten wel of niet conform zijn met behulp van Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-In dit artikel geeft een lijst van en beschrijft de verschillende nalevingsinstellingen die u op Windows 8.1-apparaten in Intune configureren kunt. Als onderdeel van uw beheeroplossing voor mobiele apparaten (MDM), door deze instellingen te gebruiken voor eenvoudige wachtwoorden blokkeren, stelt u een minimale en maximale versie van het besturingssysteem en meer.
+Dit artikel bevat een overzicht en beschrijving van de verschillende instellingen die u kunt configureren op Windows 8.1-apparaten in Intune. Gebruik als deze instellingen als onderdeel van uw MDM-oplossing (Mobile Device Management) om eenvoudige wachtwoorden te blokkeren, een minimale en maximale versie van het besturingssysteem in te stellen, en meer.
 
 Deze functie is van toepassing op:
 
 - Windows Phone 8.1
 - Windows 8.1 en hoger
 
-Als Intune-beheerder, gebruikt u deze instellingen voor naleving voor beveiliging van uw resources van de organisatie. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over nalevingsbeleid en eventuele vereisten.
+Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw organisatie beter te beschermen. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over nalevingsbeleid en wat dit doet.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
-[Een nalevingsbeleid maken](create-compliance-policy.md#create-the-policy). Voor **Platform**, selecteer **Windows Phone 8.1** of **Windows 8.1 en hoger**.
+[Een nalevingsbeleid maken](create-compliance-policy.md#create-the-policy). Voor **Platform**, selecteert u **Windows Phone 8.1** of **Windows 8.1 en hoger**.
 
 ## <a name="device-properties"></a>Apparaateigenschappen
 
-- **Minimale OS vereist**: Voer de minimaal toegestane versie. als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-compatibel. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. Gebruikers kunnen dan kiezen om een upgrade van hun apparaat uit te voeren, waarna ze toegang tot bedrijfsresources krijgen.
-- **Maximale versie van besturingssysteem toegestaan**: Voer de maximaal toegestane versie. Wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die is ingevoerd in de regel, wordt de toegang tot bedrijfsresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Het apparaat heeft geen toegang tot organisatieresources totdat u de regel wijzigt zodat de versie van het besturingssysteem is toegestaan.
+- **Minimale versie van het besturingssysteem die is vereist**: Voer de minimaal toegestane versie in. Als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. Gebruikers kunnen dan kiezen om een upgrade van hun apparaat uit te voeren, waarna ze toegang tot bedrijfsresources krijgen.
+- **Maximale versie van besturingssysteem die is toegestaan**: Voer de maximaal toegestane versie in. Wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie die is ingevoerd in de regel, wordt de toegang tot bedrijfsresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Het apparaat heeft geen toegang tot organisatieresources totdat u de regel wijzigt zodat de versie van het besturingssysteem is toegestaan.
 
-Windows 8.1-pc's retourneren versie **3**. Als de besturingssysteemversieregel is ingesteld op Windows 8.1 voor Windows, wordt het apparaat als in strijd met het nalevingsbeleid gerapporteerd, zelfs als het apparaat Windows 8.1 heeft.
+Windows 8.1-pc's retourneren versie **3**. Als de besturingssysteemversieregel is ingesteld op Windows 8.1 voor Windows, wordt het apparaat gerapporteerd als niet-conform, zelfs als het apparaat Windows 8.1 heeft.
 
 ## <a name="system-security"></a>Systeembeveiliging
 
@@ -83,6 +83,6 @@ Selecteer **OK** > **Maken** om uw wijzigingen op te slaan.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-- [Acties voor niet-compatibele apparaten toevoegen](actions-for-noncompliance.md) en [bereiktags aan beleidsregels voor het filter gebruiken](scope-tags.md).
-- [Uw nalevingsbeleid bewaken](compliance-policy-monitor.md).
-- Zie de [instellingen voor nalevingsbeleid voor Windows 10 en hoger](compliance-policy-create-windows.md) apparaten.
+- [Voeg acties voor niet-conforme apparaten toe](actions-for-noncompliance.md) en [gebruik bereiktags om beleidsregels te filteren](scope-tags.md).
+- [Controleer uw nalevingsbeleid](compliance-policy-monitor.md).
+- Zie de [Instellingen voor nalevingsbeleid voor apparaten met Windows 10 en later](compliance-policy-create-windows.md).

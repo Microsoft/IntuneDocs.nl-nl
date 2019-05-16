@@ -1,15 +1,16 @@
 ---
 title: Android-apparaten inschrijven in Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Meer informatie over het inschrijven van Android-apparaten in Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/31/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 866db22b79f2ca9255f9eccdfdba28dc353836ed
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 363a7d0ef32aee0c21c6e5cecbd55cc3087f4613
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846754"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568671"
 ---
 # <a name="enroll-android-devices"></a>Android-apparaten inschrijven
 
@@ -31,9 +32,9 @@ ms.locfileid: "55846754"
 Als Intune-beheerder kunt u de volgende Android-apparaten beheren:
 - Android-apparaten, inclusief Samsung Knox Standard-apparaten.
 - Android Enterprise-apparaten, waaronder:
-    - **Apparaten met een Android-werkprofiel**: Persoonlijke apparaten die zijn gemachtigd voor toegang tot bedrijfsgegevens. Beheerders kunnen werkaccounts, apps en gegevens beheren. Persoonlijke gegevens op het apparaat worden geïsoleerd van bedrijfsgegevens en beheerders hebben geen toegang tot persoonlijke instellingen of gegevens. 
-    - **Toegewezen Android-apparaten**: Apparaten in bedrijfseigendom voor eenmalig gebruik, bijvoorbeeld voor digitale ondertekening, het afdrukken van tickets of inventarisbeheer. Beheerders vergrendelen het gebruik van een apparaat voor een beperkt aantal apps en webkoppelingen. Ook wordt voorkomen dat gebruikers andere apps kunnen toevoegen of andere acties op het apparaat kunnen uitvoeren.
-    - **Volledig beheerde Android-apparaten**: Apparaten in bedrijfseigendom voor één gebruiker, die exclusief worden gebruikt voor werk, niet voor persoonlijk gebruik. Beheerders kunnen het hele apparaat beheren en beleidscontroles afdwingen die niet beschikbaar zijn voor werkprofielen. 
+    - **Apparaten met Android Enterprise-werkprofiel:** Persoonlijke apparaten die zijn gemachtigd voor toegang tot bedrijfsgegevens. Beheerders kunnen werkaccounts, apps en gegevens beheren. Persoonlijke gegevens op het apparaat worden geïsoleerd van bedrijfsgegevens en beheerders hebben geen toegang tot persoonlijke instellingen of gegevens. 
+    - **Toegewezen Android Enterprise-apparaten**: Apparaten in bedrijfseigendom voor eenmalig gebruik, bijvoorbeeld voor digitale ondertekening, het afdrukken van tickets of inventarisbeheer. Beheerders vergrendelen het gebruik van een apparaat voor een beperkt aantal apps en webkoppelingen. Ook wordt voorkomen dat gebruikers andere apps kunnen toevoegen of andere acties op het apparaat kunnen uitvoeren.
+    - **Volledig beheerde Android Enterprise-apparaten**: Apparaten in bedrijfseigendom voor één gebruiker, die exclusief worden gebruikt voor werk, niet voor persoonlijk gebruik. Beheerders kunnen het hele apparaat beheren en beleidscontroles afdwingen die niet beschikbaar zijn voor werkprofielen. 
 
 ## <a name="prerequisite"></a>Vereiste
 
@@ -54,11 +55,11 @@ Zie [Beperkingen voor apparaattypen instellen](enrollment-restrictions-set.md) a
 
 ## <a name="set-up-android-enterprise-enrollment"></a>Android Enterprise-inschrijving instellen
 
-Android Enterprise omvat een reeks functies en services voor Android-apparaten waarmee persoonlijke apps en gegevens worden gescheiden van een werkprofiel met zakelijke apps en gegevens. Android Enterprise-apparaten zijn apparaten met een werkprofiel, volledig beheerde apparaten en toegewezen apparaten. 
+Android Enterprise biedt een reeks registratie-opties waardoor gebruikers over de meest recente en veilige functies beschikken. Android Enterprise-inschrijvingsopties omvatten werkprofiel, volledig beheerd en toegewezen apparaten.
 
-- [Inschrijving van Android-werkprofiel instellen](android-work-profile-enroll.md)
-- [Inschrijving van toegewezen Android-apparaat instellen](android-kiosk-enroll.md)
-- [Inschrijving van volledig beheerd Android-apparaat instellen](android-fully-managed-enroll.md)
+- [Inschrijvingen met Android Enterprise-werkprofiel instellen](android-work-profile-enroll.md)
+- [Inschrijvingen van toegewezen Android Enterprise-apparaat instellen](android-kiosk-enroll.md)
+- [Volledig beheerde Android Enterprise-inschrijvingen instellen](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Ervaring van eindgebruikers bij het inschrijven van een Samsung Knox-apparaat
 
@@ -76,6 +77,6 @@ Er zijn verschillende overwegingen bij het inschrijven van Samsung Knox-apparate
 
 ## <a name="next-steps"></a>Volgende stappen
 
-- [Inschrijving van Android-werkprofiel instellen](android-work-profile-enroll.md)
-- [Inschrijving van toegewezen Android-apparaat instellen](android-kiosk-enroll.md)
-- [Inschrijving van volledig beheerd Android-apparaat instellen](android-fully-managed-enroll.md)
+- [Inschrijvingen met Android Enterprise-werkprofiel instellen](android-work-profile-enroll.md)
+- [Inschrijvingen van toegewezen Android Enterprise-apparaat instellen](android-kiosk-enroll.md)
+- [Volledig beheerde Android Enterprise-inschrijvingen instellen](android-fully-managed-enroll.md)

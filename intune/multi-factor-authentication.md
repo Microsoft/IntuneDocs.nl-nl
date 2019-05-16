@@ -1,27 +1,28 @@
 ---
 title: Multi-Factor Authentication vereisen voor Intune-apparaatinschrijving
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Hoe u in Azure AD Multi-Factor Authentication vereist voor Intune-apparaatinschrijving.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2018
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cf5611b3b9292222582d66cae39b4f751279dcec
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834089"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568788"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Multi-Factor Authentication vereisen voor Intune-apparaatinschrijvingen
 
@@ -50,11 +51,10 @@ Voer de volgende stappen uit om MFA te vereisen wanneer een apparaat wordt gereg
 >Configureer geen **op het apparaat gebaseerde toegangsregels** voor Microsoft Intune-registratie.
 
 1. Meld u met uw referenties aan bij uw [Microsoft Azure Portal](https://portal.azure.com).
-2. Ga in de portal naar **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
-3. Kies in **Azure Active Directory** onder Beveiliging de optie **[Voorwaardelijke toegang](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**.
+2. In de portal gaat u naar **Intune** en kiest u **Voorwaardelijke toegang**. Het knooppunt voor voorwaardelijke toegang dat via *Intune* wordt geopend, is hetzelfde als het knooppunt dat u opent via *Azure AD*.
 4. Kies **Nieuw beleid**.
 5. Typ onder **Nieuw** beleid een beschrijvende naam voor het beleid.
-6. Kies in de sectie **Toewijzingen** **Gebruikers en groepen**.
+6. Kies in de sectie **Toewijzingen** **Gebruikers en groepen**. 
 7. In **Gebruikers en groepen** kiest u **Gebruikers of groepen selecteren**  en schakelt u **Gebruikers en groepen** in. Selecteer vervolgens de gebruikers en/of groepen waarop dit beleid van toepassing is en kies vervolgens **Gereed**.
 8. Kies **Cloud-apps** in de sectie **Toewijzingen**.
 9. Kies op het tabblad **Opnemen** onder **Cloud-apps** de optie **Apps selecteren** en kies vervolgens **Selecteren** > **Microsoft Intune-inschrijving**. Klik ten slotte op **Gereed**.

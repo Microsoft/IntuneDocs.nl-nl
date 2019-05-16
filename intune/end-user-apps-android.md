@@ -6,21 +6,23 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 08/21/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5f8263f06fe33537a74a6d1889b02b89ee6a825f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f4169f5625965ebc7d2bbbf9153cb4183fcd22b3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183397"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57388093"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Hoe uw Android-gebruikers apps downloaden
 
@@ -37,8 +39,8 @@ Gebruik deze informatie om te begrijpen hoe en waar uw Android-eindgebruikers de
 
 Uw eindgebruikers moeten installatie van onbekende bronnen toestaan om [LOB-apps](lob-apps-android.md) te kunnen installeren. Deze zijn normaal gesproken op twee verschillende plaatsen te vinden:
 
-* **Android 7.1.2 en ouder**: **Instellingen** > **Beveiliging** > **Onbekende bronnen**
-* **Android 8.0 en nieuwer**: **Instellingen** > **Apps en meldingen** > **Toegang tot speciale apps** > **Onbekende apps installeren** > **Bedrijfsportal** > **Toestaan van deze bron**
+* **Android 7.1.2 en lager**: **Instellingen** > **Beveiliging** > **Onbekende bronnen**
+* **Android 8.0 en hoger**: **Instellingen** > **Apps en meldingen** > **Toegang tot speciale apps** > **Onbekende apps installeren** > **Bedrijfsportal** > **Toestaan van deze bron**
 
 Als dit het geval is, zal de bedrijfsportal-app de eindgebruiker informeren en direct naar de juiste instelling begeleiden. 
 
@@ -56,7 +58,7 @@ Apps kunnen wel of niet worden beheerd, zoals hieronder wordt beschreven. Het pr
 
 **Niet-beheerde apps**: dit zijn apps die niet kunnen worden beheerd via beleid. Deze zijn niet verpakt door Intune of opgenomen in de Intune App SDK. Het toepassingsbeleid kan niet worden toegepast op deze apps.
 
-### <a name="see-also"></a>Zie ook
+### <a name="see-also"></a>Zie tevens
 [Apps toevoegen met Microsoft Intune](apps-add.md)
 
 [Hoe uw iOS-gebruikers hun apps downloaden](end-user-apps-ios.md)

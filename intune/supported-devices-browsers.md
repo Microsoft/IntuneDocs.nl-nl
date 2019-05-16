@@ -10,6 +10,7 @@ ms.date: 01/03/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbddbd1bd74044e161b1a18fcf58c5a64bdb8c70
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842487"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460611"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Ondersteunde besturingssystemen en browsers in Intune
 
@@ -99,7 +100,7 @@ You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-
 
 Voor de verschillende beheertaken moet u een van de volgende beheerwebsites gebruiken.
 
-- [Office 365-portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Azure Portal](https://portal.azure.com/)
 
 De volgende browsers worden ondersteund voor deze portals:

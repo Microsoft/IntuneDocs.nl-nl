@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c61eb47f29b201997d04fa6b1405ad2f186e4fcc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 33f24a3d7b30973855bb303bb97bf703cd4dc5fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237185"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567267"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -33,7 +34,7 @@ De Microsoft Intune-bedrijfsportal is de plaats waar gebruikers toegang hebben t
 > [!Tip]        
 > Wanneer u de bedrijfsportal aanpast, zijn de configuraties zowel van toepassing op de website als op de apps van de bedrijfsportal. Houd er rekening mee dat gebruikers een Intune-licentie nodig hebben die is toegewezen aan de bedrijfsportal-website.
 
-Een aangepaste bedrijfsportal geeft uw eindgebruikers een vertrouwde en nuttige ervaring. Voor het aanpassen van de bedrijfsportal kiest u vanuit de workload **Client-apps** de optie **Instellen** > **Aangepaste stijl van de bedrijfsportal** en configureert u vervolgens de vereiste instellingen.  
+Door de bedrijfsportal aan te passen geeft u uw eindgebruikers een vertrouwde en efficiënte ervaring. Selecteer hiervoor in de Intune-portal achtereenvolgens **Client-apps** > **Huisstijl en aanpassing**, en configureer vervolgens de vereiste instellingen. 
 
 > [!Note]       
 > Als u gebruikmaakt van Azure Government, worden er app-logboeken aangeboden aan de eindgebruiker zodat deze kan beslissen hoe deze de logboeken graag wil delen wanneer er een probleem moet worden opgelost. Als u niet gebruikmaakt van Azure Government, worden vanuit de bedrijfsportal voor Windows 10 app-logboeken rechtstreeks naar Microsoft verzonden wanneer de gebruiker hulp nodig heeft bij het oplossen van een probleem. Als de app-logboeken naar Microsoft worden verzonden, is het eenvoudiger om problemen op te lossen. 
@@ -90,7 +91,7 @@ Geef een merkafbeelding weer die de huisstijl van uw bedrijf uitstraalt. Nadat u
 
 |Veldnaam|Meer informatie|
 |---|---|
-|**Uw merkafbeelding uploaden**| Deze optie is beschikbaar zodat een achtergrondafbeelding kan worden weergegeven op de profielpagina van de gebruiker in de bedrijfsportal-app.<p>*Opmerking*: de afbeelding wordt op verschillende platformen mogelijk anders weergegeven.<p><ul><li>Aanbevolen breedte van afbeelding: kleiner dan 1125 px, maar niet kleiner dan 640 px</li><li>Maximale afbeeldingsgrootte: 1,3 MB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
+|**Uw merkafbeelding uploaden**| Met deze optie kunt u een merkafbeelding weergeven. Deze wordt op de profielpagina van de gebruiker in de iOS-bedrijfsportal weergegeven als een achtergrondafbeelding.<p><ul><li>Aanbevolen breedte van afbeelding: kleiner dan 1125 px, maar niet kleiner dan 640 px</li><li>Maximale afbeeldingsgrootte: 1,3 MB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
 
 Met de juiste merkafbeelding kan het vertrouwen van de gebruiker in de bedrijfsportal-app worden versterkt, doordat de app uw huisstijl weerspiegelt. Hier volgen enkele tips die u kunt gebruiken voor het verkrijgen, kiezen en optimaliseren van een afbeelding voor de bedrijfsportal. 
 

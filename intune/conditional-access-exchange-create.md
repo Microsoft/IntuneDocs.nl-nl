@@ -1,27 +1,28 @@
 ---
-title: Beleid maken voor voorwaardelijke toegang tot Exchange | Microsoft Intune
-titlesuffix: Microsoft Intune
+title: Beleid voor voorwaardelijke toegang tot Exchange maken
+titleSuffix: Microsoft Intune
 description: Configureer voorwaardelijke toegang voor Exchange On-Premises en oudere Exchange Online Dedicated in Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: article
+ms.date: 04/15/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b4f35dba38dd1b69f770a3a10689ce87eaf3a27
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 003e6e5aa78440861e6aff5be138c4a302171c1b
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840396"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571736"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Een beleid voor voorwaardelijke toegang maken voor Exchange On-Premises en verouderde Exchange Online Dedicated
 
@@ -79,52 +80,54 @@ De native **Mail**-toepassing voor Windows 8.1 en hoger (indien geregistreerd bi
 
 1. Ga naar [Azure Portal](https://portal.azure.com/) en meld u aan met uw Intune-referenties.
 
-1. Nadat u zich hebt aangemeld, ziet u het **Azure-dashboard**.
+2. Ga naar **Intune** > **Exchange-toegang** en selecteer vervolgens **On-premises toegang tot Exchange**. 
 
-1. Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
+3. Kies **Ja** in het deelvenster **On-premises toegang tot Exchange** om *on-premises toegang tot Exchange in te schakelen*.
 
-1. Kies **Intune**. Vervolgens ziet u het **Intune-Dashboard**.
+4. Kies **Alle services** in het linkermenu en typ dan **Intune** in het filtertekstvak.
 
-1. Kies **On-premises toegang**. In het deelvenster **On-premises toegang** vindt u de status van het beleid voor voorwaardelijke toegang en de apparaten die door het beleid worden beïnvloed.
+5. Kies **Intune**. Vervolgens ziet u het **Intune-Dashboard**.
 
-1. Kies **On-premises toegang tot Exchange** onder **Beheer**.
+6. Kies **On-premises toegang**. In het deelvenster **On-premises toegang** vindt u de status van het beleid voor voorwaardelijke toegang en de apparaten die door het beleid worden beïnvloed.
 
-1. Kies **Ja** in het deelvenster **On-premises toegang tot Exchange** om on-premises toegang tot Exchange in te schakelen.
+7. Kies **On-premises toegang tot Exchange** onder **Beheer**.
+
+8. Kies **Ja** in het deelvenster **On-premises toegang tot Exchange** om on-premises toegang tot Exchange in te schakelen.
 
     > [!NOTE]
     > Als u geen on-premises Exchange Active Sync-connector hebt geconfigureerd, is deze optie uitgeschakeld.  U moet eerst minimaal één connector installeren en configureren voordat u voorwaardelijke toegang voor Exchange On-Premises inschakelt. Zie [Intune On-Premises Exchange Connector installeren](exchange-connector-install.md) voor meer informatie.
 
-1. Kies **Opgenomen groepen** onder **Toewijzing**.  Gebruik de beveiligingsgebruikersgroep waarop u voorwaardelijke toegang wilt toepassen. Voor deze actie moeten de gebruikers hun apparaten inschrijven in Intune en moeten de apparaten voldoen aan de nalevingsprofielen.
+9. Kies **Opgenomen groepen** onder **Toewijzing**.  Gebruik de beveiligingsgebruikersgroep waarop u voorwaardelijke toegang wilt toepassen. Voor deze actie moeten de gebruikers hun apparaten inschrijven in Intune en moeten de apparaten voldoen aan de nalevingsprofielen.
 
-1. Als u bepaalde groepen met gebruikers wilt uitsluiten, kiest u **Uitgesloten groepen** en selecteert u de gebruikersgroep die u wilt uitsluiten van vereiste apparaatinschrijving en -naleving.
+10. Als u bepaalde groepen met gebruikers wilt uitsluiten, kiest u **Uitgesloten groepen** en selecteert u de gebruikersgroep die u wilt uitsluiten van vereiste apparaatinschrijving en -naleving.
 
-1. Kies **Gebruikersmeldingen** onder **Instellingen** om het standaard-e-mailbericht te wijzigen. Dit bericht wordt naar gebruikers verzonden als hun apparaten niet compatibel zijn en gebruikers toegang willen tot Exchange On-Premises. Voor de berichtsjabloon wordt Markup Language gebruikt.  Tijdens het typen ziet u een voorbeeld van het bericht.
+11. Kies **Gebruikersmeldingen** onder **Instellingen** om het standaard-e-mailbericht te wijzigen. Dit bericht wordt naar gebruikers verzonden als hun apparaten niet compatibel zijn en gebruikers toegang willen tot Exchange On-Premises. Voor de berichtsjabloon wordt Markup Language gebruikt.  Tijdens het typen ziet u een voorbeeld van het bericht.
     > [!TIP]
     > Zie dit Wikipedia-[artikel](https://en.wikipedia.org/wiki/Markup_language) voor meer informatie over Markup Language.
 
-1. Stel in het deelvenster **Geavanceerde toegangsinstellingen voor Exchange Active Sync** de globale standaardregel in voor toegang van apparaten die niet worden beheerd door Intune, en voor regels op platformniveau zoals in de volgende twee stappen wordt beschreven.
+12. Stel in het deelvenster **Geavanceerde toegangsinstellingen voor Exchange Active Sync** de globale standaardregel in voor toegang van apparaten die niet worden beheerd door Intune, en voor regels op platformniveau zoals in de volgende twee stappen wordt beschreven. Als u naar het venster geavanceerde instellingen wilt gaan, selecteert u in de weergave *Exchange-toegang - On-premises toegang tot Exchange* de optie *Exchange ActiveSync - on-premises connector*.
 
-1. Als er apparaten zijn die niet worden beïnvloed door voorwaardelijke toegang of door andere regels, kunt u zelf kiezen of deze toegang krijgen tot Exchange, of de toegang blokkeren.
+13. Als er apparaten zijn die niet worden beïnvloed door voorwaardelijke toegang of door andere regels, kunt u zelf kiezen of deze toegang krijgen tot Exchange, of de toegang blokkeren.
 
    - Wanneer u toegang toestaat, kunnen alle apparaten direct toegang krijgen tot Exchange On-Premises.  Apparaten die deel uitmaken van de gebruikers in de **opgenomen groepen**, worden geblokkeerd als wordt bepaald dat ze niet aan het nalevingsbeleid voldoen of niet zijn ingeschreven in Intune.
    - Wanneer u de toegang blokkeert, wordt de toegang van alle apparaten tot Exchange On-Premises in eerste instantie geblokkeerd.  Apparaten die deel uitmaken van gebruikers in de **opgenomen groepen** krijgen toegang zodra de apparaten zijn ingeschreven in Intune en zijn geëvalueerd als compatibel. Android-apparaten waarop Samsung Knox Standard niet wordt uitgevoerd, worden altijd geblokkeerd omdat deze instelling niet wordt ondersteund op deze apparaten.
 
-1. Kies **Toevoegen** onder **Uitzonderingen van apparaatplatform** om de platformen op te geven. Als de instelling **Toegang tot onbeheerde apparaten** is ingesteld op **Geblokkeerd**, kunnen apparaten die zijn ingeschreven en compatibel zijn ook toegang krijgen, zelfs als er een platformuitzondering van toepassing is waardoor de apparaten worden geblokkeerd. Kies **OK** om de instellingen op te slaan.
+14. Kies **Toevoegen** onder **Uitzonderingen van apparaatplatform** om de platformen op te geven. Als de instelling **Toegang tot onbeheerde apparaten** is ingesteld op **Geblokkeerd**, kunnen apparaten die zijn ingeschreven en compatibel zijn ook toegang krijgen, zelfs als er een platformuitzondering van toepassing is waardoor de apparaten worden geblokkeerd. Kies **OK** om de instellingen op te slaan.
 
-1. Klik in het deelvenster **On-premises** op **Opslaan** om het beleid voor voorwaardelijke toegang op te slaan.
+15. Klik in het deelvenster **On-premises** op **Opslaan** om het beleid voor voorwaardelijke toegang op te slaan.
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Voorwaardelijk toegangsbeleid voor Azure AD maken in Intune
 
-Vanaf versie Intune 1704 kunnen beheerders Azure AD-beleidsregels voor voorwaardelijke toegang vanuit Intune Azure Portal maken, zodat u niet hoeft te wisselen tussen de workloads in Azure en Intune.
+Voorwaardelijke toegang is een technologie van Azure Active Directory (Azure AD). Het knooppunt voor voorwaardelijke toegang dat via *Intune* wordt geopend, is hetzelfde als het knooppunt dat u opent via *Azure AD*.  
 
 > [!IMPORTANT]
 > Als u beleid voor voorwaardelijke toegang voor Azure AD wilt instellen vanuit Intune Azure Portal, moet u een Azure AD Premium-licentie hebben.
 
-### <a name="to-create-azure-ad-conditional-access-policy"></a>Beleid voor voorwaardelijke toegang voor Azure AD maken
+### <a name="to-create-a-conditional-access-policy"></a>Als u beleid voor voorwaardelijke toegang wilt maken
 
-1. Kies in het**Intune-dashboard** **Voorwaardelijke toegang**.
+1. Selecteer in het **Intune-dashboard** de optie **Voorwaardelijke toegang**.
 
-2. Kies in het deelvenster **Beleid** de optie **Nieuw beleid** om uw nieuwe beleid voor voorwaardelijke toegang in Azure AD te maken.
+2. Selecteer in het deelvenster **Beleid** de optie **Nieuw beleid** om uw nieuwe beleid voor voorwaardelijke toegang in Azure AD te maken.
 
 ## <a name="see-also"></a>Zie tevens
 
