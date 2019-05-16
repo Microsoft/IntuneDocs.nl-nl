@@ -1,26 +1,28 @@
 ---
-title: Scenario's voor voorwaardelijke toegang | Microsoft Intune
+title: Scenario's voor voorwaardelijke toegang
+titleSuffix: Microsoft Intune
 description: Meer informatie over hoe voorwaardelijke toegang van Intune doorgaans wordt gebruikt voor voorwaardelijke toegang op basis van apparaten of apps.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd29f52b4d108173b8f08b68cf8b85ce291a0077
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 666a62e9aa42212bacba0e0222a828d89d780eef
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842759"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569373"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Wat zijn gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken?
 
@@ -31,7 +33,7 @@ Er zijn twee soorten voorwaardelijke toegang met Intune: voorwaardelijke toegang
 Op basis van de onderstaande informatie krijgt u meer inzicht in hoe u de Intune-nalevingsmogelijkheden voor mobiele *apparaten* kunt gebruiken én in hoe Intune Mobile *Application* Management (MAM) werkt. 
 
 > [!NOTE]
-> Voorwaardelijke toegang is een Azure Active Directory-functie die is opgenomen in een Azure Active Directory Premium-licentie. Deze mogelijkheid wordt verbeterd door Intune door het toevoegen van nalevingsbeleid voor mobiele apparaten en beheer van mobiele apps aan de oplossing.
+> Voorwaardelijke toegang is een Azure Active Directory-functie die is opgenomen in een Azure Active Directory Premium-licentie. Deze mogelijkheid wordt verbeterd door Intune door het toevoegen van nalevingsbeleid voor mobiele apparaten en beheer van mobiele apps aan de oplossing. Het knooppunt voor voorwaardelijke toegang dat via *Intune* wordt geopend, is hetzelfde als het knooppunt dat u opent via *Azure AD*.  
 
 ## <a name="device-based-conditional-access"></a>Voorwaardelijke toegang op basis van het apparaat
 
@@ -71,7 +73,7 @@ Wanneer apparaten niet voldoen aan de gestelde voorwaarden, wordt de eindgebruik
 
 Intune Exchange Connector haalt alle EAS-records (Exchange Active Sync) op de Exchange-server op, zodat de EAS-records via Intune kunnen worden gekoppeld aan records Intune-apparaten. Deze records zijn apparaten die zijn geregistreerd bij Intune en door Intune worden herkend. Met dit proces wordt de toegang tot e-mail toegestaan of geblokkeerd.
 
-Als de EAS-record nieuw is en deze niet door Intune wordt herkend, wordt er een cmdlet uitgegeven waarmee de toegang tot e-mail wordt geblokkeerd. Hier volgt meer informatie over de werking van dit proces:
+Als de EAS-record nieuw is en deze niet door Intune wordt herkend, wordt er een cmdlet (uitgesproken als commandlet) uitgegeven waarmee de toegang tot e-mail wordt geblokkeerd. Hier volgt meer informatie over de werking van dit proces:
 
 ![Exchange on-Premises met CA-stroomdiagram](./media/ca-intune-common-ways-1.png)
 
@@ -101,10 +103,10 @@ Met Intune wordt de apparaatstatus beoordeeld en beheerd.
 
 #### <a name="whats-the-exchange-server-role"></a>Wat is de rol van de Exchange-server?
 
-De Exchange-server biedt de API en infrastructuur om apparaten naar in quarantaine te plaatsen.
+De Exchange-server biedt de API en infrastructuur om apparaten in quarantaine te plaatsen.
 
 > [!IMPORTANT]
-> Houd er rekening mee dat er nalevingsbeleid moet worden toegewezen aan de gebruiker van het apparaat, zodat de naleving door het apparaat kan worden beoordeeld. Als er geen nalevingsbeleid wordt geïmplementeerd voor de gebruiker, wordt het apparaat beschouwd als een apparaat dat voldoet aan het beleid en worden er geen toegangsbeperkingen toegepast.
+> Houd er rekening mee dat er nalevingsbeleid moet worden toegewezen aan de gebruiker van het apparaat, zodat het apparaat op naleving kan worden gecontroleerd. Als er geen nalevingsbeleid wordt geïmplementeerd voor de gebruiker, wordt het apparaat beschouwd als een apparaat dat voldoet aan het beleid en worden er geen toegangsbeperkingen toegepast.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Voorwaardelijke toegang op basis van netwerktoegangsbeheer
 
