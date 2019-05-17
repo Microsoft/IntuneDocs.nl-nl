@@ -29,7 +29,7 @@ In dit artikel vindt u een overzicht en beschrijving van de verschillende instel
 Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intune en vervolgens toegewezen aan of geïmplementeerd op uw Windows 10-apparaten.
 
 > [!Note]
-> Niet alle opties zijn beschikbaar in alle edities van Windows. Zie de ondersteunde versies, de [beleid CSP's](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (opent u een andere Microsoft-website).
+> Niet alle opties zijn beschikbaar in alle edities van Windows. Bekijk de ondersteunde edities op [Beleid-CSP's](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (wordt op een andere Microsoft-website geopend).
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
@@ -138,15 +138,15 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Foutberichtvenster voor SIM-kaart (alleen mobiel)**: hiermee voorkomt u dat op het apparaat een foutbericht wordt weergegeven als er geen SIM-kaart wordt gedetecteerd.
 - **Ink-werkruimte**: hiermee voorkomt u dat gebruikers toegang hebben tot de Ink-werkruimte. Als dit is ingesteld op **Niet geconfigureerd**, wordt de Ink-werkruimte ingeschakeld (de functie wordt ingeschakeld) en mag de gebruiker deze gebruiken boven het vergrendelingsscherm.
 - **Automatisch opnieuw implementeren**: hiermee kunnen gebruikers met beheerdersrechten alle gebruikersgegevens en -instellingen verwijderen met **Ctrl + Win + R** op het vergrendelingsscherm van het apparaat. Het apparaat wordt automatisch opnieuw geconfigureerd en opnieuw ingeschreven bij het beheer.
-- **Gebruikers verplichten om verbinding te maken met het netwerk tijdens de configuratie van het apparaat (alleen Windows Insider)**: kies **Vereisen** om gebruikers tijdens de installatie van Windows 10 te verplichten het apparaat te verbinden met een netwerk voordat de configuratie van Windows 10 verder wordt uitgevoerd na de netwerkpagina.
+- **Gebruikers verplichten om verbinding te maken met het netwerk tijdens de configuratie van het apparaat**: Kies **Vereisen** om gebruikers tijdens de installatie van Windows 10 te verplichten het apparaat te verbinden met een netwerk voordat de configuratie van Windows 10 verder wordt uitgevoerd na de netwerkpagina.
 
-  De instelling van kracht wordt de volgende keer dat het apparaat is gewist of teruggezet. Net als elke andere Intune-configuratie, moet het apparaat worden geregistreerd en beheerd door Intune voor het ontvangen van configuratie-instellingen. Maar nadat deze geregistreerd en beleid ontvangt, klikt u vervolgens opnieuw instellen van het apparaat dwingt de instelling tijdens de volgende Windows-installatie.
+  De instelling wordt van kracht de volgende keer dat het apparaat wordt gewist of opnieuw wordt ingesteld. Net als bij elke andere Intune-configuratie moet het apparaat worden geregistreerd bij en worden beheerd door Intune om configuratie-instellingen te kunnen ontvangen. Als het apparaat echter eenmaal is geregistreerd en beleid ontvangt en u het apparaat vervolgens opnieuw instelt, wordt de instelling afgedwongen bij de volgende Windows-installatie.
 
 - **Directe geheugentoegang**: met **Blokkeren** blokkeert u directe geheugentoegang (DMA) voor alle downstream hot-pluggable PCI-poorten totdat een gebruiker zich bij Windows aanmeldt. **Ingeschakeld** (standaard) staat toegang tot DMA toe, zelfs wanneer een gebruiker niet is aangemeld.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
-- **Beëindigen van processen in Taakbeheer**: deze instelling bepaalt of niet-beheerders Taakbeheer end taken kunnen gebruiken. Met **Blokkeren** voorkomt u dat standaardgebruikers (niet-beheerders) processen of taken op het apparaat kunnen beëindigen met behulp van Taakbeheer. Met **Niet geconfigureerd** (standaard) kunnen standaardgebruikers processen of taken beëindigen met behulp van Taakbeheer.
+- **Processen in Taakbeheer beëindigen**: Met deze instelling bepaalt u of niet-beheerders taken kunnen beëindigen via Taakbeheer. Met **Blokkeren** voorkomt u dat standaardgebruikers (niet-beheerders) processen of taken op het apparaat kunnen beëindigen met behulp van Taakbeheer. Met **Niet geconfigureerd** (standaard) kunnen standaardgebruikers processen of taken beëindigen met behulp van Taakbeheer.
 
 ## <a name="locked-screen-experience"></a>Vergrendeld scherm
 
@@ -165,28 +165,28 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge-browser
 
-### <a name="use-microsoft-edge-kiosk-mode"></a>Gebruik Microsoft Edge-kioskmodus
+### <a name="use-microsoft-edge-kiosk-mode"></a>Gebruik van Microsoft Edge-kioskmodus
 
-De beschikbare instellingen wijzigen, afhankelijk van wat u kiest. Uw opties zijn:
+De beschikbare instellingen veranderen, afhankelijk van wat u kiest. Uw opties zijn:
 
-- **Geen** (standaard): Microsoft Edge wordt niet uitgevoerd in de kioskmodus bevindt. Alle instellingen voor Microsoft Edge zijn beschikbaar voor u om te wijzigen en te configureren.
-- **Digitale/interactief aankondigingen (kiosk voor één app)**: Filters Microsoft Edge-instellingen die van toepassing voor digitale/interactief borden tot stand brengen Microsoft Edge in kioskmodus alleen op één kiosken Windows 10 zijn. Kies deze instelling om een volledige URL-scherm te openen en de inhoud alleen weergeven op die website. [Instellen van digitale borden](https://docs.microsoft.com/windows/configuration/setup-digital-signage) vindt u meer informatie over deze functie.
-- **Openbare InPrivate-navigatie (kiosk voor één app)**: Filters Microsoft Edge-instellingen die van toepassing voor de InPrivate-navigatie openbare bladeren door Microsoft Edge kioskmodus voor gebruik op Windows 10 één app kiosken zijn. Een meerdere tabblad-versie van Microsoft Edge wordt uitgevoerd.
-- **Normale modus (kiosk voor meerdere Apps)**: Filters Microsoft Edge-instellingen die voor de kioskmodus normaal Microsoft Edge gelden. Voert een volledige versies van Microsoft Edge met alle functies van de browser.
-- **Openbare bladeren (kiosk voor meerdere Apps)**: Filters Microsoft Edge-instellingen die van toepassing voor het openbare-bladeren door op een Windows 10-kiosk voor meerdere Apps zijn.  Een meerdere tabblad-versie van Microsoft Edge InPrivate-navigatie wordt uitgevoerd.
+- **Nee** (standaard): Microsoft Edge wordt niet uitgevoerd in de kioskmodus. U kunt alle Microsoft Edge-instellingen wijzigen en configureren.
+- **Digitale/interactieve display (kiosk voor één app)**: Filtert Microsoft Edge-instellingen die van toepassing zijn op de Microsoft Edge-kioskmodus Digitale/interactieve display, alleen voor gebruik in Windows 10-kiosken voor één app. Kies deze instelling om een volledig URL-scherm te openen en alleen de inhoud op die website weer te geven. [Digitale displays instellen](https://docs.microsoft.com/windows/configuration/setup-digital-signage) biedt meer informatie over deze functie.
+- **InPrivate openbaar bladeren (kiosk voor één app)**: Filtert Microsoft Edge-instellingen die van toepassing zijn op de Microsoft Edge-kioskmodus Inprivate openbaar bladeren voor gebruik in Windows 10-kiosken voor één app. Er wordt een versie met meerdere tabbladen van Microsoft Edge uitgevoerd.
+- **Normale modus (kiosk voor meerdere apps)**: Filtert Microsoft Edge-instellingen die van toepassing zijn op de normale Microsoft Edge-kioskmodus. Er wordt een volledige versies van Microsoft Edge uitgevoerd met alle browserfuncties.
+- **Openbaar bladeren (kiosk voor meerdere apps)**: Filters Microsoft Edge-instellingen die van toepassing zijn op openbaar bladeren in een Windows 10-kiosk voor meerdere apps.  Er wordt een versie met meerdere tabbladen van Microsoft Edge InPrivate uitgevoerd.
 
 > [!TIP]
-> Zie voor meer informatie over het doen van deze opties [Microsoft Edge kiosk modus configuratie typen](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+> Zie [Configuratietypen van de Microsoft Edge-kioskmodus](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).voor meer informatie over deze opties.
 
-Dit apparaatbeperkingsprofiel is direct gerelateerd aan de kiosk-profiel u maken met behulp van de [kiosk-instellingen voor Windows](kiosk-settings-windows.md). Samenvatting:
+Dit apparaatbeperkingsprofiel is direct gerelateerd aan het kioskprofiel dat u maakt met behulp van de [Windows-kioskinstellingen](kiosk-settings-windows.md). Samenvatting:
 
-1. Maak de [kiosk-instellingen voor Windows](kiosk-settings-windows.md) profiel voor het uitvoeren van het apparaat in kioskmodus bevindt. Microsoft Edge als de toepassing te selecteren en stel de kioskmodus van Microsoft Edge in de Kiosk-profiel.
-2. In dit artikel beschreven profiel voor de beperkingen van het apparaat maken en configureren van specifieke functies en instellingen die zijn toegestaan in Microsoft Edge. Zorg ervoor dat de dezelfde type kiosk-modus Microsoft Edge geselecteerd in de kiosk-profiel te kiezen ([kiosk-instellingen voor Windows](kiosk-settings-windows.md)). 
+1. Maak het profiel [Windows-kioskinstellingen](kiosk-settings-windows.md) om het apparaat in de kioskmodus uit te voeren. Selecteer Microsoft Edge als de toepassing en stel de Microsoft Edge-kioskmodus in het Kioskprofiel in.
+2. Maak het apparaatbeperkingsprofiel dat in dit artikel wordt beschreven en configureer specifieke functies en instellingen die zijn toegestaan in Microsoft Edge. Zorg ervoor dat u hetzelfde type Microsoft Edge-kioskmodus selecteert als is geselecteerd in uw kioskprofiel ([Windows-kioskinstellingen](kiosk-settings-windows.md)). 
 
-    [Instellingen voor de kioskmodus ondersteund](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) is een fantastische bron.
+    [Ondersteunde kioskmodusinstellingen](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) is een geweldige resource.
 
 > [!IMPORTANT] 
-> Zorg ervoor dat u dit Microsoft Edge-profiel toewijzen aan de dezelfde apparaten als uw kiosk-profiel ([kiosk-instellingen voor Windows](kiosk-settings-windows.md)).
+> Zorg ervoor dat u dit Microsoft Edge-profiel toewijst aan de dezelfde apparaten als uw kioskprofiel ([Windows-kioskinstellingen](kiosk-settings-windows.md)).
 
 [ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
@@ -208,9 +208,9 @@ Dit apparaatbeperkingsprofiel is direct gerelateerd aan de kiosk-profiel u maken
 - **Gebruiker kan de knop Start wijzigen**: met **Toestaan** kunnen gebruikers de knop Start wijzigen. Wijzigingen van de gebruiker overschrijven instellingen van een beheerder voor de knop Start. Met **Niet geconfigureerd** wordt het standaardgedrag van het besturingssysteem op het apparaat gebruikt, waardoor gebruikers mogelijk niet kunnen wijzigen hoe de beheerder de knop Start heeft geconfigureerd.
 - **Pagina voor first-run experience weergeven**: met **Blokkeren** wordt de introductiepagina niet weergegeven wanneer Microsoft Edge de eerste keer wordt uitgevoerd. Bedrijven kunnen deze functie gebruiken om deze pagina te blokkeren, bijvoorbeeld omdat ze werken met 'zero configuration'. Met **Niet geconfigureerd** wordt de introductiepagina weergegeven.
   - **URL van first-run experience**: voer de URL in van de pagina die moet worden weergegeven wanneer een gebruiker de eerste keer Microsoft Edge uitvoert (alleen Windows 10 Mobile).
-- **Vernieuw de browser na niet-actieve tijd**: Voer het aantal niet-actieve minuten op waarna de browser wordt vernieuwd, van 0-1440 minuten. De standaardwaarde is `5` minuten. Als de waarde `0` (nul), de browser niet na een inactiviteit wordt vernieuwd.
+- **De browser vernieuwen na niet-actieve tijd**: voer het aantal niet-actieve minuten, tussen 0 en 1440, in waarna de browser wordt vernieuwd. De standaard is `5` minuten. Als de waarde is ingesteld op `0` (nul), wordt de browser niet vernieuwd na inactiviteit.
 
-  Deze instelling is alleen beschikbaar bij het uitvoeren van [openbare InPrivate-browsing (kiosk voor één app)](#use-microsoft-edge-kiosk-mode).
+  Deze instelling is alleen beschikbaar bij uitvoering in [Inprivate openbaar bladeren (kiosk voor één app)](#use-microsoft-edge-kiosk-mode).
 
   CSP: [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
 
@@ -245,9 +245,9 @@ Dit apparaatbeperkingsprofiel is direct gerelateerd aan de kiosk-profiel u maken
   - Yahoo
   - Aangepaste waarde
 - **Zoeksuggesties**: met **Niet geconfigureerd** stelt u in dat de zoekmachine sites kan voorstellen wanneer u zoektermen typt op de adresbalk. Met **Blokkeren** wordt deze functie geblokkeerd.
-- **Wijzigingen in de zoekmachine toestaan**: **Ja** (standaard) kan gebruikers nieuwe zoekmachines toevoegen of wijzigen van de standaardzoekmachine in Microsoft Edge. Kies **Nee** om te voorkomen dat gebruikers de zoekmachine aanpassen.
+- **Zoekprogrammawijzigingen toestaan**: Met **Ja** (standaard) kunnen gebruikers nieuwe zoekprogramma's toevoegen of het standaardzoekprogramma in Microsoft Edge wijzigen. Kies **Nee** om te voorkomen dat gebruikers het zoekprogramma aanpassen.
 
-  Deze instelling is alleen beschikbaar bij het uitvoeren van [normale modus (kiosk voor meerdere Apps)](#use-microsoft-edge-kiosk-mode).
+  Deze instelling is alleen beschikbaar bij uitvoering in de [Normale modus (kiosk voor meerdere apps)](#use-microsoft-edge-kiosk-mode).
 
   CSP: [AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
 
@@ -308,27 +308,27 @@ Dit apparaatbeperkingsprofiel is direct gerelateerd aan de kiosk-profiel u maken
   - **Wachtwoorden niet opnieuw gebruiken**: hiermee geeft u het aantal eerder gebruikte wachtwoorden op dat door het apparaat wordt onthouden.
   - **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status (alleen voor Mobile)**: hiermee geeft u aan dat de gebruiker een wachtwoord moet opgeven om het apparaat te ontgrendelen (alleen voor Windows 10 Mobile).
   - **Eenvoudige wachtwoorden**: hiermee kunt u instellen dat eenvoudige wachtwoorden zijn toegestaan, zoals 1111 en 1234. Met deze instelling kunt u ook het gebruik van afbeeldingswachtwoorden toestaan of blokkeren.
-- **Automatische versleuteling tijdens toevoegen aan AAD**: **blok** wordt voorkomen dat automatische BitLocker-versleuteling voor apparaat wanneer het apparaat wordt voorbereid voor het eerste gebruik, wanneer het apparaat toegevoegd aan Azure AD is. **Niet geconfigureerd** (standaard) maakt gebruik van het besturingssysteem standaardoptie, Hierbij kan versleuteling inschakelen. Meer op [BitLocker apparaatversleuteling](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+- **Automatische versleuteling tijdens AADJ**: Met **Blokkeren** voorkomt u automatische BitLocker-apparaatversleuteling wanneer het apparaat wordt voorbereid op het eerste gebruik, wanneer het apparaat is toegevoegd aan Microsoft Azure AD. Bij **Niet geconfigureerd** (standaard) worden de standaardinstelling van het besturingssysteem gebruikt, waarbij versleuteling kan worden ingeschakeld. Zie [BitLocker-apparaatversleuteling](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
 
   [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **Federal Information Processing Standard (FIPS) beleid**: **toestaan** maakt gebruik van de Federal Information Processing Standard (FIPS)-beleid, waarvan een US government standard voor versleuteling, hashing en ondertekening. **Niet geconfigureerd** (standaard) gebruikmaakt van het besturingssysteem, die geen gebruik maakt van FIPS.
+- **Federal Information Processing Standard (FIPS)-beleid**: Bij **Toestaan** wordt gebruik gemaakt van het Federal Information Processing Standard (FIPS)-beleid. Dat is een standaard van de Amerikaanse overheid voor versleuteling, hashing en ondertekening. Bij **Niet geconfigureerd** (standaard) worden de standaardinstelling van het besturingssysteem gebruikt, waarbij FIPS niet wordt gebruikt.
 
   [Cryptography/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Windows Hello-apparaatverificatie**: **toestaan** gebruikers op een Windows Hello secundair apparaat gebruiken, zoals een telefoon, geschiktheid band of IoT-apparaat te melden bij een Windows 10-computer. **Niet geconfigureerd** (standaard) gebruikmaakt van het besturingssysteem, waardoor Windows Hello begeleidende apparaten van verificatie met Windows.
+- **Windows Hello-apparaatverificatie**: U kunt gebruikers **Toestaan** om zich via een Windows Hello-bedrijfsapparaat, zoals een telefoon, fitnessband of IoT-apparaat, aan te melden bij een Windows 10-computer. Bij **Niet geconfigureerd** (standaard) worden de standaardinstelling van het besturingssysteem gebruikt, waardoor verificatie bij Windows voor Windows Hello-bedrijfsapparaten kan worden voorkomen.
 
   [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
-- **Web-aanmelding**: Windows kan zich aanmelden voor ondersteuning voor niet-ADFS (Active Directory Federation Services) federatieve-providers, zoals Security Assertion Markup Language (SAML). SAML maakt gebruik van beveiligde tokens die biedt webbrowsers een eenmalige aanmelding (SSO). Uw opties zijn:
+- **Webaanmelding**: Maakt ondersteuning voor Windows-aanmelding mogelijk voor federatieve niet-ADFS-providers (Active Directory Federation Services), zoals Security Assertion Markup Language (SAML). SAML maakt gebruik van beveiligde tokens om in webbrowsers een SSO-ervaring (eenmalige aanmelding) te bieden. Uw opties zijn:
 
-  - **Niet geconfigureerd** (standaard): gebruikmaakt van het besturingssysteem op het apparaat.
-  - **Ingeschakeld**: de Web-Referentieprovider is ingeschakeld voor aanmelden.
-  - **Uitgeschakeld**: de Web-Referentieprovider voor aanmelding is uitgeschakeld.
+  - **Niet geconfigureerd** (standaard): de standaardinstelling van het besturingssysteem worden gebruikt.
+  - **Ingeschakeld**: de webreferentieprovider is ingeschakeld voor aanmelden.
+  - **Uitgeschakeld**: de webreferentieprovider is uitgeschakeld voor aanmelden.
 
-  [Verificatie/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+  [Authentication/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
 
-- **Azure Active Directory-tenantdomein voorkeur**: Voer de domeinnaam van een bestaande in uw organisatie Azure AD. Wanneer gebruikers in dit domein zich aanmelden, moet ze geen Typ de naam van het domein. Voer bijvoorbeeld `contoso.com` in. Gebruikers in de `contoso.com` domein kunt aanmelden met hun gebruikersnaam, zoals 'abby', in plaats van 'abby@contoso.com'.
+- **Azure Active Directory-voorkeurstenantdomein**: Voer een bestaande domeinnaam in uw Azure AD-organisatie in. Wanneer gebruikers in dit domein zich aanmelden, hoeven ze de domeinnaam niet te typen. Voer bijvoorbeeld `contoso.com` in. Gebruikers in het `contoso.com`-domein kunnen zich aanmelden met hun gebruikersnaam, bijvoorbeeld 'abby', in plaats van abby@contoso.com.
 
   [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
@@ -356,7 +356,7 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u heb
 - **Telefoon**: geef aan of deze app toegang heeft tot de telefoon.
 - **Radio's**: sommige apps maken gebruik van radio's (bijvoorbeeld Bluetooth) in uw apparaat voor het verzenden en ontvangen van gegevens en moeten deze radio's kunnen in- of uitschakelen. Geef aan of deze app deze radio's kan beheren.
 - **Taken**: geef aan of deze app toegang heeft tot uw taken.
-- **Vertrouwde apparaten**: Kies als deze app kan worden gebruikt voor het gebruik van vertrouwde apparaten. Onder vertrouwde apparaten wordt hardware verstaan die u al hebt aangesloten of die bij deze pc, tablet of telefoon wordt geleverd. Gebruik tv's, projectoren enzovoort bijvoorbeeld als vertrouwde apparaten.
+- **Vertrouwde apparaten**: Geef aan of deze app gebruik kan maken van vertrouwde apparaten. Onder vertrouwde apparaten wordt hardware verstaan die u al hebt aangesloten of die bij deze pc, tablet of telefoon wordt geleverd. Gebruik tv's, projectoren enzovoort bijvoorbeeld als vertrouwde apparaten.
 - **Feedback en diagnostische gegevens**: geef aan of deze app toegang heeft tot diagnostische gegevens.
 - **Synchroniseren met apparaten**: geef aan of deze app gegevens automatisch kan delen en synchroniseren met draadloze apparaten die niet expliciet aan dit apparaat zijn gekoppeld.
 
@@ -396,7 +396,7 @@ U kunt informatie configureren die voor alle apps op het apparaat toegankelijk i
 - **Telefoon**: geef aan of deze app toegang heeft tot de telefoon.
 - **Radio's**: sommige apps maken gebruik van radio's (bijvoorbeeld Bluetooth) in uw apparaat voor het verzenden en ontvangen van gegevens en moeten deze radio's kunnen in- of uitschakelen. Geef aan of deze app deze radio's kan beheren.
 - **Taken**: geef aan of deze app toegang heeft tot uw taken.
-- **Vertrouwde apparaten**: Kies als deze app kan worden gebruikt voor het gebruik van vertrouwde apparaten. Onder vertrouwde apparaten wordt hardware verstaan die u al hebt aangesloten of die bij deze pc, tablet of telefoon wordt geleverd. Gebruik tv's, projectoren enzovoort bijvoorbeeld als vertrouwde apparaten.
+- **Vertrouwde apparaten**: Geef aan of deze app gebruik kan maken van vertrouwde apparaten. Onder vertrouwde apparaten wordt hardware verstaan die u al hebt aangesloten of die bij deze pc, tablet of telefoon wordt geleverd. Gebruik tv's, projectoren enzovoort bijvoorbeeld als vertrouwde apparaten.
 - **Feedback en diagnostische gegevens**: geef aan of deze app toegang heeft tot diagnostische gegevens.
 - **Synchroniseren met apparaten**: geef aan of deze app gegevens automatisch kan delen en synchroniseren met draadloze apparaten die niet expliciet aan deze pc, tablet of telefoon zijn gekoppeld.
 
@@ -494,7 +494,7 @@ U kunt informatie configureren die voor alle apps op het apparaat toegankelijk i
 - **Toegang van eindgebruikers tot Defender**: hiermee geeft u aan of de gebruikersinterface van Windows Defender voor eindgebruikers wordt verborgen. Als deze instelling wordt gewijzigd, gaat de wijziging in wanneer de pc van de eindgebruiker de volgende keer opnieuw wordt opgestart.
 - **Interval voor handtekeningupdates (in uren)**: hier geeft u het interval op waarmee Defender op nieuwe handtekeningbestanden moet controleren.
 - **Activiteiten van bestanden en programma's bewaken**: hiermee staat u Defender toe activiteiten van bestanden en programma's op apparaten te bewaken.
-- **Dagen voordat in quarantaine geplaatste malware wordt verwijderd**: blijven volgen opgeloste problemen met malware voor het aantal dagen dat u opgeeft, zodat u handmatig eerder aangevallen apparaten kunt controleren. Als u het aantal dagen instelt op **0**, blijft malware in de map Quarantaine staan en wordt malware niet automatisch verwijderd.
+- **Het aantal dagen voordat in quarantaine geplaatste malware wordt verwijderd**: Hiermee kunt u gedurende het aantal dagen dat u invoert, opgeloste malware laten bijhouden zodat u handmatig eerder aangevallen apparaten kunt controleren. Als u het aantal dagen instelt op **0**, blijft malware in de map Quarantaine staan en wordt malware niet automatisch verwijderd.
 - **Limiet voor het CPU-gebruik tijdens het scannen**: hiermee kunt u de hoeveelheid CPU beperken die scans mogen gebruiken (tussen **1** en **100**).
 - **Archiefbestanden scannen**: hiermee kunt u toestaan dat Defender gearchiveerde bestanden scant, zoals ZIP- of CAB-bestanden.
 - **Inkomende e-mailberichten scannen**: hiermee kunt u toestaan dat Defender e-mailberichten scant wanneer deze op het apparaat binnenkomen.
@@ -502,27 +502,27 @@ U kunt informatie configureren die voor alle apps op het apparaat toegankelijk i
 - **Toegewezen netwerkschijven scannen tijdens een volledige scan**: hiermee kunt u Defender op toegewezen netwerkstations laten scannen.
   Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.
 - **Bestanden die zijn geopend vanuit mappen op het netwerk scannen**: hiermee kunt u Defender bestanden op gedeelde stations laten scannen (bijvoorbeeld bestanden die via een UNC-pad toegankelijk zijn). Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.
-- **Cloudbeveiliging**: hiermee kunt u toestaan of blokkeren dat de Microsoft Active Protection-service informatie ontvangt over malware-activiteit op apparaten die u beheert. Deze informatie wordt de service in de toekomst verbeterd.
+- **Cloudbeveiliging**: hiermee kunt u toestaan of blokkeren dat de Microsoft Active Protection-service informatie ontvangt over malware-activiteit op apparaten die u beheert. Met deze informatie wordt de service in de toekomst verbeterd.
 - **Gebruikers vragen voordat een voorbeeld wordt verzonden**: hiermee bepaalt u of potentieel schadelijke bestanden waarvoor verdere analyse nodig is, automatisch naar Microsoft worden verzonden.
-- **Tijd voor het uitvoeren van een dagelijkse snelle scan**: Kies een dagelijkse snelle scan uitvoeren voor het uur. **Niet geconfigureerd** dagelijks een scan kan niet worden uitgevoerd. Als u meer aanpassingsmogelijkheden wilt, configureert u de **Type systeemscan** instelling.
+- **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd**: Kies het uur waarop een dagelijkse snelle scan moet worden uitgevoerd. Met **Niet geconfigureerd** wordt er geen dagelijkse scan uitgevoerd. Als u meer aanpassingsmogelijkheden wilt, configureert u de instelling **Type systeemscan dat moet worden uitgevoerd**.
 
   [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
-- **Type systeemscan**: plannen een systeemscan, met inbegrip van het niveau van het scannen, de dag en tijd om de scan. Uw opties zijn:
-  - **Niet geconfigureerd**: een systeemscan op het apparaat niet plannen. Eindgebruikers kunnen scans handmatig als vereist of gewenst uitvoeren op hun apparaten.
-  - **Uitschakelen**: schakelt een systeem scannen op het apparaat. Selecteer deze optie als u een partneroplossing antivirusprogramma's waarmee apparaten worden gescand.
-  - **Snelle scan**: kijkt naar veelvoorkomende locaties wanneer er schadelijke software kan worden geregistreerd, zoals registersleutels en bekende opstartmappen in Windows.
-    - **Geplande dag**: Kies de dag waarop de scan wordt uitgevoerd.
-    - **Geplande tijd**: Kies het uur de scan uit te voeren.
-  - **Volledige scan**: kijkt naar veelvoorkomende locaties waar er zijn mogelijk schadelijke software geregistreerd en ook scant alle bestanden en mappen op het apparaat.
-    - **Geplande dag**: Kies de dag waarop de scan wordt uitgevoerd.
-    - **Geplande tijd**: Kies het uur de scan uit te voeren.
+- **Type systeemscan dat moet worden uitgevoerd**: Plan een systeemscan, waaronder het scanniveau en de dag en tijd waarop de scan moet worden uitgevoerd. Uw opties zijn:
+  - **Niet geconfigureerd**: er wordt geen systeemscan op het apparaat gepland. Eindgebruikers kunnen handmatig scans uitvoeren op dat apparaat als ze dat nodig of gewenst vinden.
+  - **Uitschakelen**: Alle systeemscans op het apparaat worden uitgeschakeld. Selecteer deze optie als u een antivirusoplossing van een partner gebruikt om apparaten te scannen.
+  - **Snelle scan**: de gebruikelijke locaties waar malware kan zijn geregistreerd worden bekeken, zoals registersleutels en bekende opstartmappen in Windows.
+    - **Geplande dag**: kies de dag waarop de scan moet worden uitgevoerd.
+    - **Geplande tijd**: kies de tijd waarop de scan moet worden uitgevoerd.
+  - **Volledige scan**: de gebruikelijke locaties waar malware kan zijn geregistreerd worden bekeken en alle mappen en bestanden op het apparaat worden gescand.
+    - **Geplande dag**: kies de dag waarop de scan moet worden uitgevoerd.
+    - **Geplande tijd**: kies de tijd waarop de scan moet worden uitgevoerd.
 
-  Deze instelling kan strijdig zijn met de **tijd voor het uitvoeren van een dagelijkse snelle scan** instelling. Een aantal aanbevelingen:
+  Deze instelling kan strijdig zijn met de instelling **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd**. Een aantal aanbevelingen:
 
-  - Als u wilt een dagelijkse snelle scan uitvoert, configureert de **tijd voor het uitvoeren van een dagelijkse snelle scan** instelling.
-  - Als u wilt een dagelijkse snelle scan en een volledige scan elke week uitvoert, configureert u de **tijd voor het uitvoeren van een dagelijkse snelle scan**, en stel **Type systeemscan** aan een volledige scan met de datum en tijd.
-  - Configureer niet de **tijd voor het uitvoeren van een dagelijkse snelle scan** tegelijkertijd instellen met de **Type systeemscan uit te voeren** ingesteld op **snelle scan**. Deze instellingen kunnen conflicteren en een scan kan niet worden uitgevoerd.
-  - Als u wilt een snelle scan elke dinsdag wordt uitgevoerd om 06.00, configureert u de **Type systeemscan** instelling.
+  - Als u dagelijks een snelle scan wilt uitvoeren, configureert u de instelling: **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd**.
+  - Als u dagelijks een snelle scan en elke week een volledige scan wilt uitvoeren, configureert u **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd** en stelt u **Type systeemscan dat moet worden uitgevoerd** in op een volledige scan met dag en tijd.
+  - Configureer de instelling **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd** niet wanneer op hetzelfde moment **Type systeemscan dat moet worden uitgevoerd** is ingesteld op **Snelle scan**. Deze instellingen kunnen conflicteren, waardoor scans mogelijk niet worden uitgevoerd.
+  - Als u elke dinsdag om 06.00 uur een snelle scan wilt uitvoeren, configureert u de instelling **Type systeemscan dat moet worden uitgevoerd**.
 
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
