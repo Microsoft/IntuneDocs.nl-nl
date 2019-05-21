@@ -19,14 +19,14 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501235"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Problemen met de registratie van uw Windows 10-apparaat oplossen
-Als u uw apparaat hebt ingeschreven, maar nog steeds geen toegang uw werk of school-e-mailbericht en bestanden tot, probeert u deze stappen voor probleemoplossing.  
+Volg deze probleemoplossingsstappen als u uw apparaat hebt ingeschreven, maar u nog steeds geen toegang hebt tot e-mails en bestanden van uw werk of school.  
 
 1.  Bekijk de volgende twee schermen en kies het scherm dat lijkt op het scherm op uw apparaat. Volg de stappen die bij het scherm horen dat u op het apparaat ziet.
 
@@ -48,13 +48,13 @@ Als u uw apparaat hebt ingeschreven, maar nog steeds geen toegang uw werk of sch
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - Als u de bovenstaande verbindingsinformatie niet ziet of u deze ziet, maar er van de opties ontbreken, tikt u op **Connect**. Meld u aan met de referenties van uw werk- of schoolaccount om verbinding te maken.  
+   - Als de bovenstaande verbindingsinformatie niet wordt weergegeven, of wel wordt weergegeven maar er opties ontbreken, tikt u op **Verbinden**. Meld u aan met de referenties van uw werk- of schoolaccount om verbinding te maken.  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Probleemoplossingsstappen als u Uw account ziet
 
 Als u bovenstaande stappen hebt uitgevoerd, maar nog steeds geen toegang hebt tot e-mail, bestanden en andere gegevens van uw werk of school, gaat u terug naar **Accounts** en tikt u op **Toegang via het werknetwerk**.
 
-- Als u uw werk ziet of school-account vermeld, kunt u bent verbonden.  
+- Als uw werk- of schoolaccount wordt weergegeven, bent u verbonden.  
 
 - Als u uw werk- of schoolaccount niet ziet, tikt u op **Verbinding maken** en meldt u zich aan met de referenties van uw werk- of schoolaccount.
 

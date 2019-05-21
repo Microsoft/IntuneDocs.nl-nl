@@ -1,11 +1,11 @@
 ---
 title: Apparaatinstellingen voor Android Enterprise in Microsoft Intune - Azure | Microsoft Docs
-description: Op apparaten met Android Enterprise of Android for Work kunt u beperkingen op het apparaat instellen, zoals voor kopiëren en plakken, het weergeven van meldingen, app-machtigingen, het delen van gegevens, de wachtwoordlengte, mislukte aanmeldpogingen, het gebruik van vingerafdrukken om te ontgrendelen, het opnieuw gebruiken van wachtwoorden en het delen van zakelijke contactpersonen via Bluetooth. Apparaten configureren als een specifiek apparaat kiosk voor één app of meerdere apps uit te voeren.
+description: Op apparaten met Android Enterprise of Android for Work kunt u beperkingen op het apparaat instellen, zoals voor kopiëren en plakken, het weergeven van meldingen, app-machtigingen, het delen van gegevens, de wachtwoordlengte, mislukte aanmeldpogingen, het gebruik van vingerafdrukken om te ontgrendelen, het opnieuw gebruiken van wachtwoorden en het delen van zakelijke contactpersonen via Bluetooth. Configureer apparaten als een toegewezen apparaatkiosk voor het uitvoeren van een of meer apps.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 493a5be89e747c2de1eca3a63907b79228fcdfa2
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
-ms.translationtype: MTE75
+ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505774"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -65,32 +65,24 @@ In dit artikel vindt u een overzicht en beschrijving van de verschillende instel
 
   **Niet geconfigureerd**: hiermee wordt voorkomen dat gebruikers de functie Netwerknooduitgang inschakelen op het apparaat.
 
-- **Installatie via onbekende bronnen toestaan**: kies **Toestaan** zodat gebruikers de optie **Onbekende bronnen** kunnen inschakelen. Met deze instelling kunnen apps worden geïnstalleerd vanuit onbekende bronnen. **Niet geconfigureerd**: voorkomt dat gebruikers **Onbekende bronnen** kunnen inschakelen.
 - **Systeemupdate**: kies een optie om te bepalen hoe het apparaat omgaat met draadloze updates:
   - **Standaardwaarde apparaat**: gebruik de standaardinstelling van het apparaat.
   - **Automatisch**: updates worden automatisch geïnstalleerd zonder interactie van de gebruiker. Wanneer u dit beleid instelt, worden alle eventuele updates die nog niet zijn uitgevoerd, meteen geïnstalleerd.
   - **Uitgesteld**: updates worden gedurende 30 dagen uitgesteld. Na 30 dagen wordt de gebruiker door Android gevraagd om de update te installeren. Het is mogelijk dat apparaatfabrikanten of leveranciers het uitstellen van belangrijke beveiligingsupdates voorkomen (uitzonderen). Voor een uitzonderingsupdate wordt een systeembericht weergegeven op het apparaat. 
   - **Onderhoudsperiode**: hiermee worden updates automatisch geïnstalleerd tijdens een dagelijkse onderhoudsperiode die u in Intune instelt. Er wordt gedurende 30 dagen geprobeerd om de updates te installeren. Dit kan mislukken als er te weinig ruimte of onvoldoende accuvermogen is. Na 30 dagen vraagt Android de gebruiker om te installeren. Deze periode wordt is ook gebruikt om updates voor Play-apps te installeren. Gebruik deze optie voor specifieke apparaten, zoals kiosken, omdat toegewezen apparaten mt maar één app op de voorgrond kunnen worden bijgewerkt.
-- **App wordt automatisch bijgewerkt**: kies dit wanneer updates automatisch worden geïnstalleerd. Uw opties zijn:
-  - **Niet geconfigureerd**
-  - **Gebruiker kiezen**
-  - **Nooit**
-  - **Alleen Wi-Fi**
-  - **Altijd**
 
 - **Meldingsvensters**: als de optie **Uitschakelen** is ingesteld, worden venstermeldingen, inclusief pop-ups, inkomende aanroepen, uitgaande aanroepen, systeemwaarschuwingen en systeemfouten niet weergegeven op het apparaat. Als de optie **Niet geconfigureerd** is ingesteld, wordt de standaardinstelling van het besturingssysteem gebruikt, die mogelijk bepaalt dat meldingen worden weergegeven.
 - **Hints voor eerste gebruik overslaan**: kies **Inschakelen** als u suggesties van apps wilt verbergen of overslaan voor het doorlopen van zelfstudies of voor het lezen van inleidende hints wanneer de app wordt gestart. Als de optie **Niet geconfigureerd** is ingesteld, wordt de standaardinstelling van het besturingssysteem gebruikt, die mogelijk bepaalt dat suggesties worden weergegeven wanneer de app wordt gestart.
 
-
 ### <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
 
-- **Bedreigingenscan voor apps**: **Vereisen**: hiermee dwingt u af dat de instelling **Apps controleren** wordt ingeschakeld voor werk- en persoonlijke profielen.
+- **Bedreigingsscan voor apps**: Met **Vereisen** (standaard) kunnen apps worden gescand door Google Play Protect voor- en nadat deze zijn geïnstalleerd. Als er een bedreiging wordt gedetecteerd, kan de gebruiker de waarschuwing krijgen dat de app moet worden verwijderd van het apparaat. **Niet geconfigureerd**: hiermee wordt Google Play Protect niet in staat gesteld of uitgevoerd om apps te scannen.
 
-### <a name="dedicated-device-settings"></a>Instellingen voor toegewezen apparaten
+### <a name="dedicated-device-settings"></a>Toegewezen apparaatinstellingen
 
-Gebruik deze instellingen voor het configureren van een kiosk-stijl-ervaring op uw specifieke apparaten. U kunt een apparaat configureren voor het uitvoeren van één app of een aantal apps. Wanneer een apparaat op de kioskmodus is ingesteld, zijn alleen de apps beschikbaar die u expliciet hebt toegevoegd. Deze instellingen gelden voor Android Enterprise toegewezen apparaten. Ze zijn niet van toepassing op Android Enterprise volledig beheerde apparaten.
+Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten te configureren. U kunt een apparaat configureren voor het uitvoeren van één app of een aantal apps. Wanneer een apparaat op de kioskmodus is ingesteld, zijn alleen de apps beschikbaar die u expliciet hebt toegevoegd. Deze instellingen zijn van toepassing op toegewezen Android Enterprise-apparaten. Deze zijn niet van toepassing op volledig beheerde Android Enterprise-apparaten.
 
-**Kioskmodus**: Kies als het apparaat een app uitvoert of meerdere apps wordt uitgevoerd.
+**Kioskmodus**: kies dit als op het apparaat één app of meerdere apps worden uitgevoerd.
 
 - **Eén app**: gebruikers hebben slechts toegang tot één app op het apparaat. Wanneer het apparaat wordt gestart, wordt alleen de specifieke app gestart. Gebruikers kunnen geen nieuwe apps openen of de actieve app wijzigen.
 
@@ -117,30 +109,63 @@ Gebruik deze instellingen voor het configureren van een kiosk-stijl-ervaring op 
     U kunt ook andere [Android-apps](apps-add-android-for-work.md) toevoegen aan het apparaat, evenals [web-apps](web-app.md) die zijn gemaakt door uw organisatie. Zorg ervoor dat u [de app toewijst](apps-deploy.md) aan de apparaatgroep die is gemaakt voor uw toegewezen apparaten.
 
   - **Virtuele startknop**: kies **Inschakelen** om een startknop weer te geven op het toegewezen apparaat. Als deze knop wordt geselecteerd, gaan gebruikers terug naar het startscherm van het apparaat, zodat ze eenvoudig kunnen schakelen tussen apps. Op sommige Android-apparaten moeten gebruikers misschien omhoog vegen op het scherm om de startknop weer te geven. **Uitschakelen**: er wordt geen startknop weergegeven, wat betekent dat gebruikers de knop Terug moeten gebruiken om te schakelen tussen apps.
-  - **Kioskmodus verlaten**: kies **Inschakelen** om beheerders toestemming te geven de kioskmodus tijdelijk te onderbreken om het apparaat bij te werken. Deze functie wilt gebruiken, de beheerder: 
+  - **Kioskmodus verlaten**: kies **Inschakelen** om beheerders toestemming te geven de kioskmodus tijdelijk te onderbreken om het apparaat bij te werken. Voor gebruik van deze functie moet de beheerder het volgende doen: 
   
     1. Doorgaan met het selecteren van de knop Terug totdat de knop Kiosk verlaten wordt weergegeven. 
     2. Hiermee wordt de knop geselecteerd en de pincode voor het **verlaten van de kioskmodus** ingevoerd.
     3. Nadat de wijzigingen zijn aangebracht, de app **Managed Home Screen** selecteren. Met deze stap wordt het apparaat weer vergrendeld in de kioskmodus voor gebruik van meerdere apps. 
-    
+
     **Uitschakelen**: hiermee voorkomt u dat de kioskmodus kan worden onderbroken. Als de beheerder de knop Terug blijft selecteren en vervolgens de knop Kiosk verlaten selecteert, verschijnt er een bericht dat er een wachtwoordcode moet worden ingevoerd.
-    
+
     - **Code voor verlaten van kioskmodus**: voer een pincode van 4-6-cijfers in. De beheerder gebruikt deze pincode om de kioskmodus tijdelijk te onderbreken.
- 
+
   - **URL voor aangepaste achtergrond**: voer een URL in voor het aanpassen van het achtergrondscherm op het toegewezen apparaat.
+    
+    > [!NOTE]
+    > In de meeste gevallen is het aan te raden om te beginnen met installatiekopieën van ten minste de volgende grootten:
+    >
+    > - Telefoon: 1080 x 1920 pixels
+    > - Tablet: 1920 x 1080 pixels
+    >    
+    > Voor de beste ervaring en heldere details is het aan te raden om per apparaatinstallatiekopie assets te maken voor de schermspecificaties.
+    >
+    > Moderne schermen hebben een hogere pixeldichtheid met de mogelijkheid om definitie-installatiekopieën gelijkwaardig aan 2K/4K weer te geven.
+  - **Wificonfiguratie**: Kies **Inschakelen** als eindgebruikers het apparaat mogen verbinden met verschillende wifinetwerken. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard): gebruikers mogen op het beheerde startscherm (in de taakvergrendelingsmodus) geen verbinding maken met wifinetwerken.
+
+    Meer informatie over de [taakvergrendelingsmodus](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (hiermee wordt een Android-website geopend).
+
+  - **Bluetooth-configuratie**: Kies **inschakelen** om eindgebruikers toe te staan Bluetooth te gebruiken op het apparaat en apparaten te koppelen via Bluetooth. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard): gebruikers kunnen op het beheerde startscherm (in de taakvergrendelingsmodus) geen Bluetooth configureren en geen apparaten koppelen. 
+
+    Meer informatie over de [taakvergrendelingsmodus](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (hiermee wordt een Android-website geopend).
 
 ### <a name="device-password-settings"></a>Instellingen voor apparaatwachtwoord
 
-- **Keyguard**: kies **Uitschakelen** om te voorkomen dat de functie voor het vergrendelen van het scherm Keyguard op het apparaat wordt gebruikt. **Niet geconfigureerd**: staat de gebruiker toe de Keyguard-functies te gebruiken.
-- **Keyguard functies uitgeschakeld**: wanneer keyguard is ingeschakeld op het apparaat, kies welke functies om uit te schakelen. Wanneer bijvoorbeeld de optie **Veilige camera** is geselecteerd, wordt de functie van de camera op het apparaat is uitgeschakeld. Alle functies die niet zijn geselecteerd, zijn op het apparaat ingeschakeld.
+- **Vergrendelingsscherm uitschakelen**: Kies **Uitschakelen** als u wilt voorkomen dat gebruikers de Keyguard-functie voor schermvergrendeling op het apparaat gebruiken. **Niet geconfigureerd**: staat de gebruiker toe de Keyguard-functies te gebruiken.
+- **Schermvergrendelingsfuncties uitschakelen**: Kies welke functies u wilt uitschakelen wanneer Keyguard is ingeschakeld op het apparaat. Wanneer bijvoorbeeld de optie **Veilige camera** is geselecteerd, wordt de functie van de camera op het apparaat is uitgeschakeld. Alle functies die niet zijn geselecteerd, zijn op het apparaat ingeschakeld.
+
+  Deze functies zijn beschikbaar voor gebruikers wanneer het apparaat is vergrendeld. De geselecteerde functies zijn niet zichtbaar en niet toegankelijk voor gebruikers.
+
 - **Vereist wachtwoordtype**: bepaal welk type wachtwoord wordt vereist voor het apparaat. Uw opties zijn:
-  - **Ten minste numeriek**
-  - **Numeriek complex**: herhaalde of opeenvolgende cijfers, zoals '1111' of '1234', zijn niet toegestaan.
-  - **Ten minste alfabetisch**
-  - **Ten minste alfanumeriek**
-  - **Minstens alfanumeriek met symbolen**
-- **Minimale wachtwoordlengte**: voer de minimale lengte van het wachtwoord in dat een gebruiker moet invoeren (tussen 4 en 16 tekens).
-- **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: voer het aantal mislukte aanmeldingen in dat is toegestaan voordat het apparaat wordt gewist (tussen 1 en 11).
+  - **Standaardwaarde apparaat**
+  - **Wachtwoord vereist, geen beperkingen**
+  - **Zwakke biometrie**: [Sterke versus zwakke biometrie](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (hiermee wordt een Android-website geopend)
+  - **Numeriek**: Het wachtwoord mag alleen uit getallen bestaan, bijvoorbeeld `123456789`. Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
+  - **Numeriek complex**: herhaalde of opeenvolgende cijfers, zoals '1111' of '1234', zijn niet toegestaan. Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
+  - **Alfabetisch**: Er zijn letters uit het alfabet vereist. Er zijn geen cijfers en symbolen vereist. Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
+  - **Alfanumeriek**: Dit zijn hoofdletters, kleine letters en numerieke tekens. Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
+  - **Alfanumeriek met symbolen**: dit zijn hoofdletters, kleine letters, numerieke tekens, leestekens en symbolen. Voer ook in:
+
+    - **Minimale wachtwoordlengte**: voer de minimale lengte van het wachtwoord in, tussen 4 en 16 tekens.
+    - **Het vereiste aantal tekens**: voer het aantal tekens in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
+    - **Het vereiste aantal kleine letters**: voer het aantal kleine letters in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
+    - **Het vereiste aantal hoofdletters**: voer het aantal hoofdletters in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
+    - **Het vereiste aantal andere tekens dan letters**: voer het aantal andere tekens dan alfabetische letters in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
+    - **Het vereiste aantal numerieke tekens**: voer het numerieke tekens (`1`, `2`, `3` enzovoort) in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
+    - **Het vereiste aantal symbolen**: voer het aantal symbolen (`&`, `#`, `%` enzovoort) in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
+
+- **Het aantal dagen totdat het wachtwoord verloopt**: Voer het aantal dagen in voordat het wachtwoord voor het apparaat moet worden gewijzigd, tussen 1 en 365. Als u bijvoorbeeld wilt dat het wachtwoord na zestig dagen moet worden gewijzigd, voert u `60` in. Wanneer het wachtwoord is verlopen, wordt gebruikers gevraagd een nieuw wachtwoord te maken.
+- **Het vereiste aantal wachtwoorden voordat de gebruiker een wachtwoord opnieuw kan gebruiken**: Voer het aantal recente wachtwoorden in dat niet opnieuw mag worden gebruikt, tussen 1 en 24. Gebruik deze instelling om te voorkomen dat de gebruiker eerder gebruikte wachtwoorden hergebruikt.
+- **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: voer het aantal mislukte aanmeldingen in dat is toegestaan voordat het apparaat wordt gewist, tussen 4 en 11.
 
 ### <a name="power-settings"></a>Energie-instellingen
 
@@ -152,6 +177,17 @@ Gebruik deze instellingen voor het configureren van een kiosk-stijl-ervaring op 
 - **Nieuwe gebruikers toevoegen**: kies **Blokkeren** om te voorkomen dat gebruikers nieuwe gebruikers toevoegen. Elke gebruiker heeft een persoonlijke ruimte op het apparaat voor aangepaste beginschermen, accounts, apps en instellingen. **Niet geconfigureerd**: staat gebruikers toe om andere gebruikers toe te voegen aan het apparaat.
 - **Gebruikers verwijderen**: kies **Blokkeren** om te voorkomen dat gebruikers gebruikers verwijderen. **Niet geconfigureerd**: staat gebruikers toe om andere gebruikers te verwijderen van het apparaat.
 - **Accountwijzigingen**: kies **Blokkeren** om te voorkomen dat gebruikers accounts wijzigen. **Niet geconfigureerd**: staat gebruikers toe om gebruikersaccounts op het apparaat bij te werken.
+
+### <a name="applications"></a>Toepassingen
+
+- **Installatie via onbekende bronnen toestaan**: Kies **Toestaan** zodat gebruikers **Onbekende bronnen** kunnen inschakelen. Met deze instelling kunnen apps van onbekende bronnen worden geïnstalleerd, met inbegrip van andere bronnen dan Google Play Store. **Niet geconfigureerd**: voorkomt dat gebruikers **Onbekende bronnen** kunnen inschakelen.
+- **Toegang tot alle apps in Google Play Store toestaan**: Als deze optie is ingesteld op **Toestaan**, krijgen gebruikers toegang tot alle apps in Google Play store. Ze krijgen geen toegang tot apps die de beheerder blokkeert in[Client-apps](apps-add-android-for-work.md). **Niet geconfigureerd**: gebruikers hebben alleen toegang tot apps die de beheerder beschikbaar maakt in Google Play Store of apps die zijn vereist in [Client-apps](apps-add-android-for-work.md).
+- **App wordt automatisch bijgewerkt**: kies dit wanneer updates automatisch worden geïnstalleerd. Uw opties zijn:
+  - **Niet geconfigureerd**
+  - **Gebruiker kiezen**
+  - **Nooit**
+  - **Alleen Wi-Fi**
+  - **Altijd**
 
 ### <a name="connectivity"></a>Connectiviteit
 

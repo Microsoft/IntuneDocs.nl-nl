@@ -19,20 +19,20 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 16a610050a7c4ce094005617304249acdb961878
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57335102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61497515"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Uw Windows Phone 8.1-apparaat registreren bij Intune  
 
-Uw apparaten registreren voor toegang tot werk of school-e-mailbericht, bestanden en andere bronnen. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat het ondersteuningsteam van het bedrijf kan zien op het apparaat](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) voor meer informatie over registratie.  
+Registreer uw apparaten om toegang te krijgen tot e-mails, bestanden en andere werk- of schoolresources. Door uw apparaten te registreren, kan uw organisatie bedrijfsgegevens veilig houden. Zie [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) en [Wat het ondersteuningsteam van het bedrijf kan zien op het apparaat](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) voor meer informatie over registratie.  
 
-Als u wilt uw apparaat bij Intune inschrijft, volgt u de set met instructies die overeenkomen met de machtigingen of de status van de huidige account.
+Volg de set instructies voor uw machtigingen of huidige accountstatus om uw apparaat in te schrijven bij Intune.
 
-## <a name="enroll-through-company-portal"></a>Registreren via de bedrijfsportal-App  
-Volg deze stappen als u de bedrijfsportal-app via de Microsoft Store installeren kunt. 
+## <a name="enroll-through-company-portal"></a>Registreren via Bedrijfsportal  
+Volg deze stappen als u de Bedrijfsportal-app vanuit de Microsoft Store kunt installeren. 
 
 1.  Tik op **Start** > **Store**.  
 
@@ -77,8 +77,8 @@ Uw apparaat inschrijven:
 
     ![Het scherm Account toegevoegd](./media/WP81-enroll-4-account-added.png)  
 
-## <a name="enroll-through-settings-app"></a>Registreren via de app instellingen  
-Volg deze stappen als u geen toegang tot de Microsoft Store van uw Windows Phone-apparaat, of als u geen Microsoft-Account hebt.
+## <a name="enroll-through-settings-app"></a>Registreren via de app Instellingen  
+Volg deze stappen als u geen toegang tot de Microsoft Store hebt vanaf uw Windows Phone-apparaat of als u geen Microsoft-account hebt.
 
 1.  Tik op **Instellingen** &gt; **Werkplek**.  
 
