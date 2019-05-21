@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 4/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d089d0e9724a1ce150fa7e8697c80734fb0d7e9c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 68f5fad9d05787b6e79792d594480547ce10cf81
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568424"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764911"
 ---
 # <a name="what-is-device-enrollment"></a>Wat is apparaatinschrijving?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -67,11 +67,19 @@ Standaard kunnen apparaten voor alle platforms worden ingeschreven in Intune. U 
 
 ## <a name="android-enrollment-methods"></a>Android-registratiemethoden
 
-| **Methode** |  **Opnieuw instellen vereist** |    **Gebruikersaffiniteit**   |   **Vergrendeld** | **Details**|
+| **Persoonlijk** | **Inschrijvingsmethoden** | **Opnieuw instellen vereist** | **Gebruikersaffiniteit** | **Vergrendeld** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | Nee|   Ja |   Nee | [Meer informatie](./android-enroll.md)|
-|**[DEM](#device-enrollment-manager)**| Nee |Nee |Nee  |[Meer informatie](./device-enrollment-manager-enroll.md)|
-|**Android-werkprofielen**| Nee | Ja | Nee| [Meer informatie](./android-work-profile-enroll.md) |
+|**Android-apparaatbeheer**|**Gebruiker geïnitieerd via bedrijfsportal** | Nee | Ja | Nee | [Meer informatie](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
+|**Android Enterprise - Werkprofiel**|**Gebruiker geïnitieerd via bedrijfsportal**| Nee | Ja | Nee | [Meer informatie](./android-work-profile-enroll.md)|
+
+
+| **Bedrijf** | **Inschrijvingsmethoden** | **Opnieuw instellen vereist** | **Gebruikersaffiniteit** | **Vergrendeld** | **Details**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**Android-apparaatbeheer**|**[DEM](#device-enrollment-manager) geïnitieerd via de bedrijfsportal**| Nee | Nee | Nee |[Meer informatie](./device-enrollment-manager-enroll.md)|
+|**Android-apparaatbeheer**|**(Vooraf gedeclareerde IMEI of SN) Door gebruiker geïnitieerd via bedrijfsportal**| Nee | Ja | Nee | [Meer informatie](./corporate-identifiers-add.md)|
+|**Android-apparaatbeheer met Zebra-mobiliteitsextensies**|**Door gebruiker of [DEM](#device-enrollment-manager) geïnitieerd via de bedrijfsportal**| Nee | Ja, als dit door de gebruiker is geïnitieerd, Nee als dit door [DEM](#device-enrollment-manager) is geïnitieerd | Nee | [Meer informatie](./android-zebra-mx-overview.md)|
+|**Toegewezen Android Enterprise-apparaten**|**NFC, Token, QR-code, Zero Touch**| Ja | Nee | Configureerbaar via beleid | [Meer informatie](./android-kiosk-enroll.md)|
+|**Volledig beheerde Android Enterprise-apparaten (preview-versie)**|**NFC, Token, QR-code, Zero Touch**| Ja | Ja | Configureerbaar via beleid | [Meer informatie](./android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## <a name="bring-your-own-device"></a>Bring Your Own Device

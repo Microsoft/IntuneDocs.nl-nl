@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
+ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515508"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65619447"
 ---
-# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Apparaten die zijn gekoppeld aan Hybrid Azure AD implementeren met Intune en Windows Autopilot (preview)
+# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Apparaten die aan hybride Azure AD zijn gekoppeld implementeren met Intune en Windows Autopilot
 U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn gekoppeld aan Hybrid Azure Active Directory (Azure AD). Volg hiervoor de stappen in dit artikel.
 
 ## <a name="prerequisites"></a>Vereisten
@@ -35,7 +35,7 @@ Configureer uw [gekoppelde Hybrid Azure AD-apparaten](https://docs.microsoft.com
 De te registreren apparaten moeten ook voldoen aan de volgende voorwaarden:
 - Er moet Windows 10 met de [update van oktober 2018](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/) op worden uitgevoerd.
 - Ze moeten toegang hebben tot internet.
-- Ze moeten toegang hebben tot uw Active Directory (VPN-verbinding wordt niet ondersteund).
+- Ze moeten toegang hebben tot uw Active Directory (een VPN-verbinding wordt momenteel niet ondersteund).
 - Doorloop de OOBE (Out-of-Box Experience).
 - Zorg ervoor dat u de domeincontroller van het domein dat u probeert samen te voegen kunt pingen.
 
@@ -211,7 +211,14 @@ Het duurt ongeveer 15 minuten voordat de status van het apparaatprofiel is gewij
 1. Selecteer **Instellingen** en geef vervolgens een **computernaamvoorvoegsel**, **domeinnaam** en (optioneel) **organisatie-eenheid** in [DN-indeling](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name) op. 
 1. Selecteer **OK** > **Maken**.  
     Het profiel wordt gemaakt en weergegeven in de lijst.
-1. Als u het profiel wilt toewijzen, volgt u de stappen onder [Een apparaatprofiel toewijzen](device-profile-assign.md#assign-a-device-profile). 
+1. Als u het profiel wilt toewijzen, volgt u de stappen onder [Een apparaatprofiel toewijzen](device-profile-assign.md#assign-a-device-profile) en wijst u het profiel toe aan dezelfde groep die u bij de stap [Een apparaatgroep maken](windows-autopilot-hybrid.md#create-a-device-group) hebt gebruikt
+   - Meerdere Domeindeelname-profielen implementeren
+   
+     a. Maak een dynamische groep waarin al uw Autopilot-apparaten met een specifiek Autopilot-implementatieprofiel staan en voer (device.enrollmentProfileName, bijv. 'Autopilot-profielnaam') in. 
+     
+     b. Vervang 'Naam Autopilot-profiel' door de weergavenaam van het profiel dat u onder [Een Autopilot-implementatieprofiel maken en toewijzen](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile) hebt gemaakt. 
+     
+     c. Maak meerdere Autopilot-implementatieprofielen en wijs dat apparaat toe aan het profiel dat in deze dynamische groep is opgegeven.
 
 > [!NOTE]
 > De naamgevingsmogelijkheden voor Windows Autopilot voor Hybrid Azure AD Join bieden geen ondersteuning voor variabelen zoals %SERIAL% en ondersteunen alleen voorvoegsels voor de computernaam.

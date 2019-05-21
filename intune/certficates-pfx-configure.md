@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 05/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8b05b7f2a0b56321023bc8444528578aeface0b
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 491610fcefa1b20159ebfe487c9e2d95a6f5e7c6
+ms.sourcegitcommit: 586114e1beee31aa8553f69c0ba4d731afcb45e8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508543"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65402073"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -189,7 +189,7 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 3. Ga naar **Instellingen** en voer het eerder geëxporteerde CER-bestand van het basis-CA-certificaat in.
 
    > [!NOTE]
-   > Afhankelijk van het platform dat u in **stap 3** kiest, hebt u al dan niet de mogelijkheid het **Doelarchief** voor het certificaat te kiezen.
+   > Afhankelijk van het platform dat u in **stap 2** kiest, hebt u al dan niet de mogelijkheid het **Doelarchief** voor het certificaat te kiezen.
 
    ![Een profiel maken en een vertrouwd certificaat uploaden](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
 
@@ -248,16 +248,21 @@ Na het importeren van de certificaten naar Intune maakt u een **geïmporteerd PK
 ## <a name="whats-new-for-connectors"></a>Wat is er nieuw voor connectors
 Updates voor de twee certificaatconnectors worden regelmatig uitgebracht. Als we een connector bijwerken, kunt u hier over de wijzigingen lezen. 
 
-De *PFX-certificaatconnector* [biedt ondersteuning voor automatische updates](#requirements), terwijl de Intune-certificaatconnector handmatig wordt bijgewerkt.
+De *PFX-certificaatconnector voor Microsoft Intune* [biedt ondersteuning voor automatische updates](#requirements), terwijl de *Intune-certificaatconnector* handmatig wordt bijgewerkt.
+
+### <a name="may-6-2019"></a>6 mei 2019
+- **PFX-certificaatconnector voor Microsoft Intune - versie 6.1905.0.402**  
+  Wijzigingen in deze release:  
+  - De polling-interval voor de connector wordt verlaagd van 5 minuten naar 30 seconden.
  
 ### <a name="april-2-2019"></a>2 april 2019
-- **NDES-certificaatconnector - versie 6.1904.1.0**  
+- **Intune-certificaatconnector - versie 6.1904.1.0**  
   Wijzigingen in deze release:  
   - Er is een probleem opgelost waarbij de connector zich mogelijk niet kan inschrijven bij Intune na aanmelding bij de connector met een globale beheerdersaccount.  
   - Deze bevat betrouwbaarheidsoplossingen voor het intrekken van certificaten.  
   - Deze bevat prestatieoplossingen om de snelheid te verhogen waarmee PKCS-certificaataanvragen worden verwerkt.  
 
-- **PFX-certificaatconnector - versie 6.1904.0.401**
+- **PFX-certificaatconnector voor Microsoft Intune - versie 6.1904.0.401**
   > [!NOTE]  
   > Er is tot en met 11 april 2019 geen automatische update voor deze versie van het PFX-connector beschikbaar.  
 

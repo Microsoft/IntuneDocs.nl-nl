@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a18c579853b162024aaa93d5dad2bfd854d8c0d2
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
+ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512925"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527226"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker en apparaatversleuteling bewaken  
 Intune biedt een gecentraliseerde locatie om de versleutelingsstatus van uw Windows 10-apparaten te identificeren. Ook krijgt u belangrijke informatie voor BitLocker van uw apparaten van Azure Active Directory (Azure AD).  

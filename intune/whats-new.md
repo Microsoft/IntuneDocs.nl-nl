@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dff7e28daff503570350950b60ae974cd048c5c
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 401bc833b2b864983ec301972950ffbd04fe2229
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426227"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135192"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -46,6 +46,25 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [geplande
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-6-2019"></a>Week van 6 mei 2019 
+
+### <a name="device-configuration"></a>Apparaatconfiguratie
+
+#### <a name="network-access-control-nac-support-for-f5-access-for-ios-devices----4500808---"></a>Ondersteuning voor netwerktoegangsbeheer (NAC) voor F5 Access voor iOS-apparaten <!-- 4500808 -->
+
+F5 heeft een update voor BIG-IP 13 uitgebracht waardoor de NAC-functionaliteit is toegestaan voor F5-toegang op iOS in Intune. Om deze functie te gebruiken, moet u ook het volgende doen:
+
+- Werk BIG-IP bij naar 13.1.1.5, vernieuwen. BIG-IP 14 wordt niet ondersteund.
+- Integreer BIG-IP met Intune voor NAC. Stappen in [Overzicht: APM configureren voor apparaatpostuurcontroles met eindpuntbeheersystemen](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- Schakel de instelling **Netwerktoegangsbeheer (NAC) inschakelen** in het VPN-profiel in Intune in.
+
+Ga naar [VPN-instellingen configureren op iOS-apparaten](vpn-settings-ios.md) om de beschikbare instelling te zien.
+
+Van toepassing op: iOS
+
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune----doc-vso-1521237----"></a>Bijgewerkte PFX-certificaatconnector voor Microsoft Intune <!-- doc-vso 1521237  -->  
+We hebben een update uitgebracht voor de [PFX-certificaatconnector voor Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors), waardoor de polling-interval wordt verlaagd van 5 minuten naar 30 seconden.
 
 ## <a name="week-of-april-22-2019"></a>Week van 22 april 2019
 
@@ -75,7 +94,7 @@ In het volgende voorbeeld ziet u de indeling van AVG-besturingselementen. Micros
 Intune app-beveiligingsbeleid (APP) op Android-apparaten maakt nu gebruik van een OpenSSL-versleutelingsbibliotheek die compatibel is met FIPS 140-2. Zie de sectie over [versleuteling](app-protection-policy-settings-android.md#encryption) van [instellingen van app-beveiligingsbeleid voor Android in Microsoft Intune](app-protection-policy-settings-android.md) voor meer informatie.
 
 #### <a name="enable-win32-app-dependencies----2617348----"></a>Win32-app-afhankelijkheden inschakelen <!-- 2617348  -->
-Als beheerder kunt u vereisen dat andere apps worden geïnstalleerd als afhankelijkheden voordat uw Win32-app wordt geïnstalleerd. Op het apparaat moet(e) met name de afhankelijke app(s) worden geïnstalleerd voordat de Win32-app wordt geïnstalleerd. Selecteer in Intune, **Client-apps** > **Apps** > **Toevoegen** om de blade **App toevoegen** weer te geven. Selecteer **Windows-app (Win32)** als **App-type**. Nadat u de app hebt toegevoegd, kunt u **Afhankelijkheden** selecteren om de afhankelijke apps toe te voegen die moeten worden geïnstalleerd voordat de Win32-app kan worden geïnstalleerd. Zie [Intune Standalone - Win32-app-beheer](apps-win32-app-management.md) voor meer informatie. Deze functionaliteit is alleen beschikbaar nadat de Intune-beheeragent naar versie 1904 (hoger dan 1.18.120.0) is geüpgraded. Dit kan 1 à 2 weken duren nadat wij de service naar 1904 hebben geüpgraded.
+Als beheerder kunt u vereisen dat andere apps worden geïnstalleerd als afhankelijkheden voordat uw Win32-app wordt geïnstalleerd. Op het apparaat moet(e) met name de afhankelijke app(s) worden geïnstalleerd voordat de Win32-app wordt geïnstalleerd. Selecteer in Intune, **Client-apps** > **Apps** > **Toevoegen** om de blade **App toevoegen** weer te geven. Selecteer **Windows-app (Win32)** als **App-type**. Nadat u de app hebt toegevoegd, kunt u **Afhankelijkheden** selecteren om de afhankelijke apps toe te voegen die moeten worden geïnstalleerd voordat de Win32-app kan worden geïnstalleerd. Zie [Intune Standalone - Win32-app-beheer](apps-win32-app-management.md) voor meer informatie. 
 
 #### <a name="app-version-installation-information-for-microsoft-store-for-business-apps----3537391-----"></a>Installatie-informatie voor de app-versie voor Microsoft Store voor Bedrijven-apps <!-- 3537391   -->
 App-installatierapporten bevatten informatie over de app-versie voor Microsoft Store voor bedrijven-apps. Selecteer in Intune **Client-apps** > **Apps**. Selecteer een **Microsoft Store voor bedrijven-app** en selecteer vervolgens **Installatiestatus apparaat** onder de sectie **Monitor**.
@@ -91,6 +110,9 @@ In de overzichtspagina van het apparaat ziet u de primaire gebruiker, ook wel de
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Aanvullende rapportage van beheerde Google Play-apps voor apparaten met Android Enterprise-werkprofiel <!-- 4105925  -->
 Voor beheerde Google Play-apps die op apparaten met Android Enterprise-werkprofiel zijn geïmplementeerd, kunt u het specifieke versienummer van de op een apparaat geïnstalleerde app weergeven. Dit geldt alleen voor vereiste apps. Dezelfde functionaliteit voor beschikbare apps wordt ingeschakeld in een toekomstige release. 
+
+#### <a name="ios-third-party-keyboards----4111843-idready-eeready---"></a>iOS-toetsenborden van derden <!-- 4111843 idready eeready -->
+De ondersteuning voor het Intune-app-beveiligingsbeleid (APP) voor de instelling **Toetsenborden van derden** voor iOS wordt beëindigd vanwege een iOS-platformwijziging. U zult deze instelling niet meer kunnen configureren op de Intune-beheerconsole en deze wordt niet meer afgedwongen op de client in de Intune App SDK.
 
 ### <a name="device-configuration"></a>Apparaatconfiguratie
 
@@ -124,7 +146,7 @@ Ga naar [Android-bedrijfsapparaten met OEMConfig gebruiken en beheren in Microso
 Van toepassing op: Android Enterprise
 
 #### <a name="windows-update-notifications-----3316758-3316782----"></a>Windows Update-meldingen  <!-- 3316758, 3316782  -->
-We hebben twee instellingen voor *gebruikerservaringsconfiguraties* toegevoegd aan de Windows Update-ringconfiguraties die u vanuit de Intune-console kunt beheren. U kunt nu het volgende doen:
+We hebben twee *instellingen voor de gebruikerservaring* toegevoegd aan de Windows Update-ringconfiguraties die u vanuit de Intune-console kunt beheren. U kunt nu het volgende doen:
 - Gebruikers weigeren of toestaan om [te scannen op Windows-updates](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
 - Het [meldingsniveau van Windows Update](windows-update-settings.md#windows-update-notification-level) dat gebruikers zien, beheren.
 
@@ -207,7 +229,7 @@ U kunt nu bereiktags toevoegen aan Apple VPP-tokens. Alleen gebruikers aan wie d
 ### <a name="device-configuration"></a>Apparaatconfiguratie
 
 #### <a name="updated-certificate-connectors-----icm-113304612---"></a>Bijgewerkte certificaatconnectors  <!-- ICM 113304612 -->
-We hebben updates uitgebracht voor zowel de [Intune-certificaatconnector als de PFX-certificaatconnector](certficates-pfx-configure.md#whats-new-for-connectors). Met de nieuwe releases worden verschillende bekende problemen opgelost.  
+We hebben updates uitgebracht voor zowel de [Intune-certificaatconnector als de PFX-certificaatconnector voor Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors). Met de nieuwe releases worden verschillende bekende problemen opgelost.  
 
 ### <a name="app-management"></a>Appbeheer
 
@@ -376,7 +398,7 @@ In Intune selecteert u **Client-apps** > **Apps** > naam van de app > **Apparaat
 Een nieuw scherm met de naam **App-categorieën** is toegevoegd om de blader- en selectie-ervaring voor apps te verbeteren in de bedrijfsportal voor Windows 10. Gebruikers zien nu hun apps gesorteerd onder categorieën, zoals **Aanbevolen**, **Opleiding** en **Productiviteit**. Deze wijziging wordt weergegeven in de bedrijfsportal-app-versies 10.3.3451.0 en hoger. Zie [Wat is er nieuw in de gebruikersinterface van de app?](https://docs.microsoft.com/intune/whats-new-app-ui) om het nieuwe scherm te bekijken. Zie [Apps installeren en delen op uw apparaat](/intune-user-help/install-apps-cpapp-windows) voor meer informatie over apps in de bedrijfsportal.  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Power BI-compatibiliteit-app <!-- 1455231 doc-work-item -->
-Krijg toegang tot uw Intune-datawarehouse in Power BI Online met behulp van de [Intune-compatibiliteit-app (datawarehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance). Met deze Power BI-app kunt u nu vooraf gemaakte rapporten openen en delen zonder iets te hoeven instellen en zonder uw webbrowser te verlaten. Zie [Wijzigingenlogboek - Power BI-compatibiliteit-app](reports-changelog.md#power-bi-compliance-app) voor meer informatie.
+Krijg toegang tot uw Intune-datawarehouse in Power BI Online met behulp van de [Intune-compatibiliteit-app (datawarehouse)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp). Met deze Power BI-app kunt u nu vooraf gemaakte rapporten openen en delen zonder iets te hoeven instellen en zonder uw webbrowser te verlaten. Zie [Wijzigingenlogboek - Power BI-compatibiliteit-app](reports-changelog.md#power-bi-compliance-app) voor meer informatie.
 
 
 ### <a name="device-configuration"></a>Apparaatconfiguratie

@@ -1,49 +1,48 @@
 ---
-title: 'Zelfstudie: het programma voor apparaatregistratie gebruiken om iOS-apparaten in Intune te registreren'
+title: 'Zelfstudie: Apple Business Manager of het Device Enrollment Program gebruiken om iOS-apparaten in Intune in te schrijven'
 titleSuffix: Microsoft Intune
-description: In deze zelfstudie gaat u DEP van Apple instellen om iOS-apparaten in Intune te registreren.
+description: In deze zelfstudie gaat u de zakelijke Apple-apparaatinschrijvingsfuncties van ABM instellen om iOS-apparaten bij Intune in te schrijven.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/30/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-Customer intent: As an Intune admin, I want to set up the Device Enrollment Program so that users can automatically enroll in Intune.
+Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9cd0eec492f5131e4015aa64eccb4c081c663ee
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0e006ce1be5a19d0557ef0a5d6046afea2c13986
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515647"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135181"
 ---
-# <a name="tutorial-use-the-device-enrollment-program-to-enroll-ios-devices-in-intune"></a>Zelfstudie: iOS-apparaten in Intune registreren met het programma voor apparaatregistratie
-Met DEP (het programma voor apparaatregistratie van Apple) kunt u eenvoudiger apparaten registreren. Met Microsoft Intune en DEP worden apparaten automatisch geregistreerd wanneer gebruikers het apparaat voor de eerste keer inschakelen. U kunt apparaten daarom naar vele gebruikers verzenden zonder elk apparaat afzonderlijk te hoeven instellen. 
+# <a name="tutorial-use-apples-corpoate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Zelfstudie: De zakelijke Apple-apparaatinschrijvingsfuncties in Apple Business Manager (ABM) gebruiken om iOS-apparaten bij Intune in te schrijven
+Met behulp van de functies voor apparaatinschrijving in Apple Business Manager kunt u apparaten eenvoudiger inschrijven. Intune biedt ook ondersteuning voor de oudere DEP-portal (Device Enrollment Program) van Apple, maar we raden u aan opnieuw te beginnen met Apple Business Manager. Met Microsoft Intune en Apple Corporate Device Enrollment worden apparaten automatisch veilig ingeschreven wanneer gebruikers het apparaat voor de eerste keer inschakelen. U kunt apparaten daarom naar vele gebruikers verzenden zonder elk apparaat afzonderlijk te hoeven instellen. 
 
 In deze zelfstudie leert u het volgende:
 > [!div class="checklist"]
-> * Een Apple DEP-token ophalen
-> * Een Autopilot-apparaatgroep maken
-> * Een Autopilot-implementatieprofiel maken
-> * Het Autopilot-implementatieprofiel toewijzen aan de apparaatgroep
-> * Windows-apparaten naar gebruikers distribueren
+> * Een Apple-token voor apparaatinschrijving ophalen
+> * Beheerde apparaten synchroniseren met Intune
+> * Een inschrijvingsprofiel maken
+> * Het inschrijvingsprofiel toewijzen aan apparaten
 
 Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor een gratis proefaccount](free-trial-sign-up.md).
 
 ## <a name="prerequisites"></a>Vereisten
-- Apparaten die zijn gekocht in het [Device Enrollment Program van Apple](http://deploy.apple.com)
+- Apparaten die zijn gekocht in [Apple Business Manager](http://deploy.apple.com) of het [Device Enrollment Program van Apple](https://business.apple.com)
 - De [instantie voor het beheer van mobiele apparaten](mdm-authority-set.md) instellen
 - Een [Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md) ophalen
 
-## <a name="get-an-apple-dep-token"></a>Een Apple DEP-token ophalen
-Voordat u iOS-apparaten met DEP gaat registreren, hebt u het DEP-tokenbestand (.pem) van Apple nodig. Intune kan met deze token informatie synchroniseren over DEP-apparaten die in eigendom zijn van uw bedrijf. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen.
+## <a name="get-an-apple-device-enrollment-token"></a>Een Apple-token voor apparaatinschrijving ophalen
+Voordat u iOS-apparaten inschrijft met behulp van de zakelijke inschrijvingsfuncties van Apple, hebt u een bestand met een apparaatinschrijvingstoken van Apple (.pem-bestand) nodig. Intune kan met deze token informatie synchroniseren over Apple-apparaten die het eigendom zijn van uw bedrijf. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen.
 
-U gebruikt de Apple DEP-portal om een DEP-token te maken. U gebruikt de DEP-portal ook om apparaten aan Intune toe te wijzen voor beheer.
+U maakt een apparaatinschrijvingstoken met behulp van ABM of de DEP-portal. U gebruikt de portals ook om apparaten aan Intune toe te wijzen voor beheer.
 
 1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens inschrijvingsprogramma** > **Toevoegen**.
 
@@ -51,11 +50,11 @@ U gebruikt de Apple DEP-portal om een DEP-token te maken. U gebruikt de DEP-port
 
    ![Schermopname van het deelvenster Token voor het inschrijvingsprogramma in de werkruimte Apple-certificaten voor het downloaden van de openbare sleutel.](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
 
-3. Kies **Uw openbare-sleutelcertificaat downloaden** en sla het bestand met de versleutelingssleutel (.pem) lokaal op. Het .pem-bestand wordt gebruikt om een vertrouwensrelatiecertificaat bij de portal Apple Device Enrollment Program aan te vragen.
+3. Kies **Uw openbare-sleutelcertificaat downloaden** en sla het bestand met de versleutelingssleutel (.pem) lokaal op. Het .pem-bestand wordt gebruikt om een vertrouwensrelatiecertificaat aan te vragen bij de ABM- of DEP-portal.
 
 4. Kies **Een token voor Apple Device Enrollment Program maken** om de Deployment Program-portal van Apple te openen en meld u aan met uw Apple-id. Deze Apple-id kunt u gebruiken om uw DEP-token te verlengen.
 
-5.  Kies **Aan de slag** bij **Device Enrollment Program** in de [Deployment Programs-portal](https://deploy.apple.com) van Apple.
+5.  Kies **Aan de slag** bij **Device Enrollment Program** in de [Deployment Programs-portal](https://deploy.apple.com) van Apple. Uw proces verloopt mogelijk iets anders dan de volgende stappen in [Apple Business Manager](https://business.apple.com).
 
 4. Kies **MDM-server toevoegen** op de pagina **Servers beheren**.
 
@@ -76,8 +75,10 @@ U gebruikt de Apple DEP-portal om een DEP-token te maken. U gebruikt de DEP-port
 
 10. Ga in het venster **Apple-token** naar het certificaatbestand (.pem), kies **Openen** en vervolgens **Maken**. 
 
+11. Als u bereiktags wilt toepassen om te beperken welke beheerders toegang tot dit token hebben, selecteert u bereiken.
+
 ## <a name="create-an-apple-enrollment-profile"></a>Een Apple-inschrijvingsprofiel maken
-Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten maken. Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving.
+Na installatie van de token kunt u een inschrijvingsprofiel voor iOS-apparaten in het eigendom van uw bedrijf maken. Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving.
 
 1. Kies in Intune in Azure Portal **Apparaatinschrijving** > **Apple-inschrijving** > **Token voor het inschrijvingsprogramma**.
 
@@ -85,31 +86,43 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
 
 3. Voer onder **Profiel maken** *TestDEPProfile* als **naam** in en geef *DEP testen voor iOS-apparaten* op als **beschrijving**. Gebruikers zien deze gegevens niet.
 
-4. Kies **Registreren met gebruikersaffiniteit** als **Gebruikersaffiniteit**. Deze optie is voor apparaten die eigendom zijn van gebruikers die de bedrijfsportal willen gebruiken voor services als het installeren van apps.
+4. Kies **iOS** onder **Platform**.
 
-5. Kies **Nee** onder **Verifiëren met de bedrijfsportal in plaats van met de Apple-configuratieassistent**.
+5. Bepaal of uw apparaten met of zonder **Gebruikersaffiniteit** moeten worden ingeschreven. Gebruikersaffiniteit is ontworpen voor apparaten die door specifieke gebruikers worden gebruikt. Kies **Inschrijven met gebruikersaffiniteit** als uw gebruikers de bedrijfsportal willen gebruiken voor services zoals het installeren van apps. Als uw gebruikers de bedrijfsportal niet nodig hebben of als u het apparaat voor veel gebruikers wilt inrichten, kiest u **Inschrijven zonder Gebruikersaffiniteit**.
 
-6. Kies **Instellingen apparaatbeheer** en kies **Nee** onder **Onder toezicht**. Apparaten die onder toezicht staan bieden u meer beheeropties, maar in deze zelfstudie gaan we deze niet gebruiken.
+6. Als u ervoor kiest om een apparaat met Gebruikersaffiniteit in te schrijven, moet u bepalen of u de verificatie wilt uitvoeren via de bedrijfsportal of via Apple-configuratieassistent. Als u meervoudige verificatie wilt gebruiken, gebruikers wilt toestaan om wachtwoorden te wijzigen wanneer zij zich voor het eerst aanmelden of als u gebruikers wilt vragen hun verlopen wachtwoorden opnieuw in te stellen tijdens de inschrijving, kiest u **Ja** onder **Verificatie met bedrijfsportal in plaats van Apple-configuratieassistent**. Kies **Nee** als er geen problemen mee hebt om de door Apple aangeboden HTTP-basisverificatie via de Apple-configuratieassistent te gebruiken.
 
-7. Kies **OK**.
+7. Als u hebt gekozen voor inschrijving met Gebruikersaffiniteit en Verificatie met bedrijfsportal, bepaalt u nu of u de bedrijfsportal wilt installeren in combinatie met het Apple Volume Purchase Program (VPP). Als u de bedrijfsportal installeert met een VPP-token, hoeven gebruikers geen Apple-id en wachtwoord in te voeren om de bedrijfsportal tijdens de inschrijving in de App Store te downloaden. Kies **Token gebruiken:** onder **Bedrijfsportal installeren met VPP** om een VPP-token te selecteren waarvoor gratis licenties van de bedrijfsportal beschikbaar zijn. Als u VPP niet wilt gebruiken om de bedrijfsportal te implementeren, kiest u **VPP niet gebruiken** onder **Bedrijfsportal installeren met VPP**. 
 
-8. Kies **Aanpassing Configuratieassistent** en voer *Afdeling Zelfstudie* als **Afdelingsnaam** in. Dit is de tekenreeks die gebruikers zien wanneer ze tijdens het activeren van het apparaat op **Over configuratie** tikken.
+8. Als u de inschrijving uitvoert met Gebruikersaffiniteit, Verificatie met bedrijfsportal en Bedrijfsportal installeren met VPP, moet u bepalen of u de bedrijfsportal wilt uitvoeren in de Eén-app-modus totdat de verificatie wordt uitgevoerd. Met behulp van deze instelling kunt ervoor zorgen dat gebruikers geen toegang hebben tot andere apps, totdat ze de bedrijfsinschrijving hebben voltooid. Als u de gebruiker tot deze stroom wilt beperken totdat de inschrijving is voltooid, kiest u **Ja** onder **Bedrijfsportal tot verificatie uitvoeren in één-app-modus**. 
 
-9. Voer onder **Telefoonnummer afdeling** een telefoonnummer in. Dit is het nummer dat wordt weergegeven wanneer gebruikers tijdens de activering op de knop **Hulp nodig?** drukken.
+9. Kies **Instellingen apparaatbeheer** en kies **Ja** onder **Onder toezicht**. U krijgt de meeste beheeropties voor uw zakelijke iOS-apparaten door apparaten onder toezicht te stellen.
 
-10. U kunt tijdens de activering van apparaten diverse schermen **weergeven** of **verbergen**. Voor deze zelfstudie stellen we **Wachtwoordcode** in op **Weergeven** en alle andere opties op **Verbergen**.
+10. Kies **Ja** onder **Vergrendelde inschrijving** om ervoor te zorgen dat gebruikers het beheer van de bedrijfsapparaten niet kunnen verwijderen. 
 
-11. Kies **OK** > **Maken**.
+11. Kies een optie onder **Synchroniseren met computers** om te bepalen of de iOS-apparaten met computers kunnen worden gesynchroniseerd.
 
-## <a name="sync-managed-devices"></a>Beheerde apparaten synchroniseren
+12. Standaard krijgen apparaten bij Apple de naam van het apparaattype (bijv. iPad). Als u een andere naamsjabloon wilt opgeven, kiest u **Ja** onder **Sjabloon voor apparaatnamen toepassen**. Voer de naam in die u op de apparaten wilt toepassen, waarbij u de tekenreeksen *{{SERIAL}}* en *{{DEVICETYPE}}* vervangt door het serienummer en het apparaattype van elk apparaat. Anders kiest u **Nee** onder **Sjabloon voor apparaatnamen toepassen**.
 
-U ziet nu welke apparaten aan deze token zijn toegewezen.
+13. Kies **OK**.
+
+14. Kies **Aanpassing Configuratieassistent** en voer *Afdeling Zelfstudie* als **Afdelingsnaam** in. Dit is de tekenreeks die gebruikers zien wanneer ze tijdens het activeren van het apparaat op **Over configuratie** tikken.
+
+15. Voer onder **Telefoonnummer afdeling** een telefoonnummer in. Dit is het nummer dat wordt weergegeven wanneer gebruikers tijdens de activering op de knop **Hulp nodig?** drukken.
+
+16. U kunt tijdens de activering van apparaten diverse schermen **weergeven** of **verbergen**. Voor de beste inschrijvingservaring stelt u alle schermen in op **Verbergen**.
+
+17. Kies **OK** > **Maken**.
+
+## <a name="sync-managed-devices-to-intune"></a>Beheerde apparaten synchroniseren met Intune
+
+Zodra u een inschrijvingsprogrammatoken hebt ingesteld via de ABM-, ASM- of DEP-portal en daar apparaten aan de MDM-server hebt toegewezen, wacht u totdat deze apparaten met de Intune-service zijn gesynchroniseerd of voert u handmatig een synchronisatie uit. Als u geen handmatige synchronisatie uitvoert, kan het tot 24 uur duren voordat apparaten in Azure Portal worden weergegeven.
 
 1. Kies in Intune in Azure Portal **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token uit de lijst > **Apparaten** > **Synchroniseren**.
 
 ## <a name="assign-an-enrollment-profile-to-ios-devices"></a>Een inschrijvingsprofiel toewijzen aan iOS-apparaten
 
-U moet een profiel voor een inschrijvingsprogramma aan apparaten toewijzen voordat deze kunnen worden ingeschreven.
+U moet een profiel voor een inschrijvingsprogramma aan apparaten toewijzen voordat deze kunnen worden ingeschreven. Deze apparaten worden via Apple met Intune gesynchroniseerd en moeten aan de juiste MDM-servertoken in de ABM-, ASM- of DEP-portal worden toegewezen.
 
 1. Kies in Intune in Azure Portal **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token uit de lijst.
 2. Kies **Apparaten** > kies apparaten uit de lijst > **Profiel toewijzen**.
@@ -119,17 +132,14 @@ U moet een profiel voor een inschrijvingsprogramma aan apparaten toewijzen voord
 
 U hebt beheer en synchronisatie tussen Apple en Intune ingesteld en een profiel toegewezen om uw DEP-apparaten te kunnen inschrijven. De apparaten kunnen nu worden uitgedeeld aan de gebruikers. Voor apparaten met gebruikersaffiniteit moet aan elke gebruiker een Intune-licentie worden toegewezen.
 
-## <a name="clean-up-resources"></a>Resources opschonen
-
-Als u de Autopilot-apparaten niet meer wilt gebruiken, kunt u deze verwijderen.
-
-- Als de apparaten zijn ingeschreven bij Intune, moet u ze eerst [verwijderen uit de Azure Active Directory-portal](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
-
-<!--ask tiffany how to do this-->
-
 ## <a name="next-steps"></a>Volgende stappen
 
 Er bestaat aanvullende informatie over andere opties die voor het registreren van iOS-apparaten beschikbaar zijn.
 
 > [!div class="nextstepaction"]
 > [Diepgaand artikel over iOS DEP-registratie](device-enrollment-program-enroll-ios.md)
+
+<!--commenting out because inaccurate>
+## Clean up resources
+<!--If you don't want to use iOS corporate enrolled devices anymore, you can delete them.>
+<!--- If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).>

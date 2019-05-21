@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/30/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e364ad88591b8ecc945702659255d9378723624f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6296328a8f994e9f22a6ecd863d09396c0676094
+ms.sourcegitcommit: b1ad73f5c9fd0ad8026c572aef8d15e258951c8f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513012"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64880429"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Wat is Mobile Threat Defense-integratie met Intune?
 Intune kan gegevens van een Mobile Threat Defense-leverancier als gegevensbron voor nalevingsbeleid en regels voor voorwaardelijke toegang integreren. U kunt deze gegevens gebruiken voor de beveiliging van bedrijfsresources zoals Exchange en SharePoint door de toegang te blokkeren voor mobiele apparaten die zijn gecompromitteerd.  
@@ -80,5 +80,5 @@ Meer informatie over het beveiligen van de toegang tot bedrijfsresources op basi
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [Better Mobile](better-mobile-threat-defense-connector.md)
-- Sophos (details binnenkort beschikbaar)
+- [Sophos Mobile](sophos-mtd-connector.md)
 - Wandera (details binnenkort beschikbaar)

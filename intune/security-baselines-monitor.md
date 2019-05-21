@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a013698e56b342953e52296270e7571a257db860
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506987"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135079"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>De beveiligingsbasislijn en het beveiligingsprofiel controleren in Microsoft Intune  
 
@@ -35,7 +35,7 @@ In [Security baselines in Intune](security-baselines.md) (Beveiligingsbasislijne
 
 Als u een basislijn controleert, krijgt u inzicht in de beveiligingsstatus van uw apparaten op basis van de aanbevelingen van Microsoft. U kunt deze inzichten weergeven in het overzichtsvenster van de beveiligingsbasislijn op de Intune-console.  Het kan tot 24 uur na de eerste toewijzing van een basislijn duren voordat gegevens worden weergegeven. Latere wijzigingen worden na maximaal zes uur weergegeven.  
 
-Meld u aan bij de [Intune-portal](https://aka.ms/intuneportal) om bewakingsgegevens voor de basislijn en apparaten weer te geven. Selecteer vervolgens **Beveiligingsbasislijnen (preview-versie)**, kies een basislijn en bekijk het **overzichtsvenster**.
+Meld u aan bij de [Intune-portal](https://go.microsoft.com/fwlink/?linkid=2090973) om bewakingsgegevens voor de basislijn en apparaten weer te geven. Selecteer vervolgens **Apparaatbeveiliging** > **Beveiligingsbasislijnen (preview-versie)**, selecteer een basislijn en bekijk het **overzichtsvenster**.
 
 In het **overzichtsvenster** staan twee methoden om de status te bewaken:
 - **Apparaatweergave**: een samenvatting van het aantal apparaten in elke statuscategorie voor de basislijn.  
