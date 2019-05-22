@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98e2229194287ff644e9503fa21c9536cbff4734
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 895b358760775b1021e545b271acb7ced7fa7b1d
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507304"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942081"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune
 
@@ -42,7 +42,7 @@ Als u een rol wilt bekijken, kiest u **Intune** > **Rollen** > **Alle rollen** >
 -   **Toewijzingen**: een lijst met [roltoewijzingen]( assign-role.md) waarin wordt gedefinieerd welke gebruikers toegang hebben tot welke gebruikers/apparaten. Een rol kan over meerdere toewijzingen beschikken, en een gebruiker kan zich in meerdere toewijzingen bevinden.
 
 ### <a name="built-in-roles"></a>Ingebouwde rollen
-U kunt ingebouwde rollen toewijzen aan groepen zonder verdere configuratie. U kunt de naam, de beschrijving, het type of de machtigingen van een ingebouwde rol niet verwijderen of bewerken. Zie voor een volledige lijst van de machtigingen voor elke ingebouwde rol, de [Intune RBAC-tabel] ((https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
+U kunt ingebouwde rollen toewijzen aan groepen zonder verdere configuratie. U kunt de naam, de beschrijving, het type of de machtigingen van een ingebouwde rol niet verwijderen of bewerken. Zie [Intune RBAC-tabel](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) voor een volledige lijst met de machtigingen voor elke ingebouwde rol.
 
 - **Helpdesk-medewerker**: voert externe taken uit voor gebruikers en apparaten en kan toepassingen of beleid toewijzen aan gebruikers of apparaten.
 - **Beleid- en profielbeheerder**: Hiermee worden het nalevingsbeleid, de configuratieprofielen, de Apple-inschrijving en id's van bedrijfsapparaten en beveiligingsbasislijnen beheerd.
