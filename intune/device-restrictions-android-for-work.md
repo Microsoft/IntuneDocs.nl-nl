@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: HT
+ms.openlocfilehash: d2eac8c396e63fa2f3a4e8ef2c2b88b883c87433
+ms.sourcegitcommit: b7f3a6d67f7ae2356bbca1934056d28cdfc6e45e
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505774"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65836456"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -327,3 +327,7 @@ Deze wachtwoordinstellingen zijn van toepassing op persoonlijke profielen op app
 [Het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
 U kunt ook kioskprofielen maken voor toegewezen apparaten met [Android](device-restrictions-android.md#kiosk) en [Windows 10](kiosk-settings.md).
+
+## <a name="see-also"></a>Zie tevens
+
+[Apparaten met Android Enterprise configureren en problemen met deze apparaten oplossen in Microsoft Intune](https://support.microsoft.com/help/4476974)
