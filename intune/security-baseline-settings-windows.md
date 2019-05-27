@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/05/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d9d095db4d10630555e5696610535bb828f0b5f
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
-ms.translationtype: HT
+ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65733066"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045058"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Windows-beveiligingsbasislijninstellingen voor Intune  
 
@@ -1086,7 +1085,7 @@ Zie [Beleids-CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/wind
   **Standaardinstelling**: Ja
 
 - **Schrijffouten in bestanden en registers in locaties per gebruiker virtualiseren**  
-  Met deze beleidsinstelling wordt bepaald of schrijffouten voor toepassingen worden omgeleid naar gedefinieerde register- en bestandssysteemlocaties. Met deze beleidsinstelling worden toepassingen beperkt die als administrator worden uitgevoerd en waarvoor toepassingsgegevens van de runtime naar *%ProgramFiles%*, *%Windir%*, *%Windir%\system32* of *HKLM\Software* worden schrijven.
+  Met deze beleidsinstelling wordt bepaald of schrijffouten voor toepassingen worden omgeleid naar gedefinieerde register- en bestandssysteemlocaties. Met deze beleidsinstelling worden toepassingen beperkt die als administrator worden uitgevoerd en waarvoor toepassingsgegevens van de runtime naar *%ProgramFiles%* , *%Windir%* , *%Windir%\system32* of *HKLM\Software* worden schrijven.
   
   **Standaardinstelling**: Ja
 
