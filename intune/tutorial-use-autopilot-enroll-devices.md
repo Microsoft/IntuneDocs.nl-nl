@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511517"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732996"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Zelfstudie: Autopilot gebruiken om Windows-apparaten in Intune in te schrijven
 Windows Autopilot maakt het makkelijker om apparaten in te schrijven. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen hoeft te bouwen, onderhouden en toe te passen. 
@@ -90,23 +90,20 @@ Vervolgens gaat u een apparaatgroep maken en de Autopilot-apparaten die u zojuis
 Nadat u een groep apparaten hebt gemaakt, moet u een implementatieprofiel maken zodat u de Autopilot-apparaten kunt configureren.
 
 1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaatprofielen** > **Profiel maken**.
-2. Als **naam** voert u *Autopilot-profiel* in. Als **beschrijving** voert u *Testprofiel voor Autopilot-apparaten* in.
+2. Geef op de pagina **Basisinformatie** de waarde *Autopilot-profiel* op voor **Naam**. Als **beschrijving** voert u *Testprofiel voor Autopilot-apparaten* in.
 3. Stel **Alle doelapparaten converteren naar Autopilot** in op **Ja**. Deze instelling zorgt ervoor dat alle apparaten in de lijst worden ingeschreven bij de Autopilot-implementatieservice. Het kan 48 uur duren voordat de registratie is verwerkt.
-4. Als **implementatiemodus** kiest u **Op basis van gebruiker**. Apparaten met dit profiel worden gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn gebruikersreferenties vereist om het apparaat in te kunnen schrijven.
-5. In het vak **Toevoegen aan Azure AD als** kiest u **Toegevoegd aan Azure AD**.
-6. Kies **Out-Of-Box Experience (OOBE)**, configureer de volgende opties (laat andere gewoon op de standaardinstellingen staan) en kies vervolgens **Opslaan**:
+4. Selecteer **Volgende**.
+5. Ga op de pagina **Out-Of-Box Experience (OOBE)** naar **Implementatiemodus** en kies **Op basis van gebruiker**. Apparaten met dit profiel worden gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn gebruikersreferenties vereist om het apparaat in te kunnen schrijven.
+6. In het vak **Toevoegen aan Azure AD als** kiest u **Toegevoegd aan Azure AD**.
+7. Configureer de volgende opties en gebruik voor de overige opties de standaardwaarde:
     - **Gebruiksrechtovereenkomst (EULA)**: **Verbergen**
     - **Privacyinstellingen**: **Weergeven**
     - **Gebruikersaccounttype**: **Standaard**
-
-6. Kies op **Maken** om het profiel te maken. Het Autopilot-implementatieprofiel is nu klaar om te worden toegewezen aan apparaten.
-
-## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Een Autopilot-implementatieprofiel toewijzen aan een apparaatgroep
-
-Nu het implementatieprofiel is gemaakt, moet u dit toewijzen aan de apparaatgroep.
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaatprofielen** > kies een profiel.
-2. Op de specifieke profielblade kiest u **Toewijzingen**. 
-3. Kies **Groepen selecteren**, kies vervolgens in de blade **Groepen selecteren** de optie **Autopilot-groep** en kies daarna **Selecteren**.
+8. Selecteer **Volgende**.
+9. Kies op de pagina **Toewijzingen** de optie **Selecteerde groepen** bij **Toewijzen aan**.
+10. Kies **Groepen selecteren die moeten worden opgenomen** en kies **Autopilot-groep**.
+11. Selecteer **Volgende**.
+12. Kies op de pagina **Beoordelen en maken** de optie **Maken** om het profiel te maken.
 
 ## <a name="distribute-devices-to-users"></a>Apparaten onder gebruikers distribueren
 

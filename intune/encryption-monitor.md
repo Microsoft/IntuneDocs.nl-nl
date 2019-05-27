@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: 72121aa48e7b5d46e25aac28ad386832b6b4ea72
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527226"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733091"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker en apparaatversleuteling bewaken  
 Intune biedt een gecentraliseerde locatie om de versleutelingsstatus van uw Windows 10-apparaten te identificeren. Ook krijgt u belangrijke informatie voor BitLocker van uw apparaten van Azure Active Directory (Azure AD).  
 
-- In het [Versleutelingsrapport (openbare preview-versie)](#encryption-report) krijgt u meer informatie over de versleutelingsstatus en gereedheid van een apparaat. Aan de hand van de rapportdetails kunt u problemen identificeren die ervoor zorgen dat de apparaten die u wilt beveiligen niet goed kunnen worden versleuteld.  
-- U kunt in de Intune-portal [BitLocker-details weergeven (openbare preview-versie)](#bitlocker-recovery-keys) zoals de sleutel-id en herstelsleutels voor uw apparaten.  
+- Het [versleutelingsrapport](#encryption-report) bevat meer informatie over de versleutelingsstatus en gereedheid van een apparaat. Aan de hand van de rapportdetails kunt u problemen identificeren die ervoor zorgen dat de apparaten die u wilt beveiligen niet goed kunnen worden versleuteld.  
+- U kunt in de Intune-portal [BitLocker-details weergeven](#bitlocker-recovery-keys) zoals de sleutel-id en herstelsleutels voor uw apparaten.  
 
 ## <a name="encryption-report"></a>Versleutelingsrapport
-U kunt met het versleutelingsrapport (openbare preview-versie) details weergeven over de versleutelingsstatus van uw Windows 10-apparaten.  
+U kunt met het versleutelingsrapport details weergeven over de versleutelingsstatus van uw Windows 10-apparaten.  
 
-Voor het rapport meldt u zich aan bij [Intune](https://aka.ms/intuneportal). Ga naar **Apparaatconfiguratie** en selecteer vervolgens bij *Monitor* de optie **Versleutelingsrapport (preview-versie)**.  
+Voor het rapport meldt u zich aan bij [Intune](https://aka.ms/intuneportal). Ga naar **Apparaatconfiguratie** en selecteer vervolgens bij *Monitor* de optie **Versleutelingsrapport**.  
 
 ### <a name="prerequisites"></a>Vereisten:
 Op een apparaat moet Windows-versie 1607 of hoger worden uitgevoerd om het apparaat in het versleutelingsrapport weer te geven.  
@@ -95,9 +95,9 @@ In dit deelvenster worden de volgende details weergegeven:
    - Het netwerk is niet beschikbaar, maar wel vereist voor back-ups van herstelsleutels.  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker-herstelsleutels
-Intune biedt in een openbare preview-versie toegang tot de Azure AD-blade voor BitLocker, zodat u via de Intune-portal BitLocker-sleutel-id's en herstelsleutels voor uw Windows 10-apparaten kunt weergeven.  Een apparaat is alleen toegankelijk als de sleutels van dat apparaat naar Azure AD worden geborgd. 
+Intune biedt toegang tot de Azure AD-blade voor BitLocker, zodat u via de Intune-portal BitLocker-sleutel-id's en herstelsleutels voor uw Windows 10-apparaten kunt weergeven.  Een apparaat is alleen toegankelijk als de sleutels van dat apparaat naar Azure AD worden geborgd. 
 1. Meld u aan bij [Intune](https://aka.ms/intuneportal), ga naar **Apparaten** en selecteer onder *Beheren* de optie **Alle apparaten**.
-2. Selecteer een apparaat in de lijst en selecteer vervolgens onder *Monitor* **Herstelsleutels - preview-versie**.  
+2. Selecteer een apparaat in de lijst en selecteer vervolgens onder *Monitor* **Herstelsleutels**.  
   
 Als er sleutels in Azure AD beschikbaar zijn, is de volgende informatie beschikbaar:
 - BitLocker-sleutel-id

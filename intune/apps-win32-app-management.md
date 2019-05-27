@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: 07922ff771f8dea2e19a94cd965fb7779f20f131
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135122"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853954"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
@@ -153,6 +153,8 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
     > U kunt een Win32-app configureren voor installatie in een **gebruikers**- of **systeem**context. Een **gebruiker**scontext verwijst naar alleen een bepaalde gebruiker. Een **systeem**context verwijst naar alle gebruikers van een Windows 10-apparaat.
     >
     > Eindgebruikers hoeven niet te zijn aangemeld bij het apparaat om Win32-apps te installeren.
+    > 
+    > Het installeren en verwijderen van de Win32-app wordt uitgevoerd met de beheerdersbevoegdheden (standaard) wanneer voor de app is ingesteld dat deze in de gebruikerscontext moet worden geïnstalleerd en de eindgebruiker op het apparaat beheerdersbevoegdheden heeft.
 
 4.  Klik op **OK** wanneer u klaar bent.
 
@@ -243,7 +245,7 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
             Intune-agent controleert de resultaten vanuit het script. Het leest de waarden die door het script zijn geschreven naar de standaard uitvoerstroom (STDOUT), de standaardfoutstroom (STDERR) en de afsluitcode. Als het script wordt afgesloten met een andere waarde dan nul, mislukt het script en is de app-detectiestatus Niet geïnstalleerd. Als de afsluitcode nul is en STDOUT gegevens heeft, is de toepassingsdetectiestatus Geïnstalleerd. 
 
             > [!NOTE]
-            > Als het script wordt afgesloten met de waarde 0, is de uitvoering van het script gelukt. Het tweede uitvoerkanaal geeft aan dat de app is gedetecteerd: STDOUT-gegevens geven aan dat de app is gevonden op de client. We zoeken niet naar een bepaalde tekenreeks van STDOUT.
+            > Microsoft adviseert om uw script te coderen als UTF-8. Als het script wordt afgesloten met de waarde 0, is de uitvoering van het script gelukt. Het tweede uitvoerkanaal geeft aan dat de app is gedetecteerd: STDOUT-gegevens geven aan dat de app is gevonden op de client. We zoeken niet naar een bepaalde tekenreeks van STDOUT.
 
         4.  Nadat u uw regel(s) hebt toegevoegd, selecteert u **Toevoegen** > **OK**.
 

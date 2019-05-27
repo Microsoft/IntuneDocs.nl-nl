@@ -1,11 +1,11 @@
 ---
-title: Externe CA gebruiken met SCEP in Microsoft Intune - Azure | Microsoft Docs
+title: Externe certificeringsinstanties (CA) gebruiken met SCEP in Microsoft Intune - Azure | Microsoft Docs
 description: In Microsoft Intune kunt u een leverancier of externe CA (certificeringsinstantie) toevoegen om certificaten uit te geven voor mobiele apparaten met het SCEP-protocol. In dit overzicht geeft een Azure Active Directory-toepassing (Azure AD) Microsoft Intune machtigingen om certificaten te valideren. Gebruik vervolgens de toepassings-id, verificatiesleutel en tenant-id van de AAD-toepassing in de installatie van uw SCEP-server om certificaten uit te geven.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d042a160d016343c6e8374dff8f74560b9806014
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5e87b7397d994b089a30fedd9ccedc0107bf0cef
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508476"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732499"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Partnercertificeringsinstanties toevoegen in Intune met behulp van SCEP
 
@@ -69,47 +69,40 @@ Voordat u externe certificeringsinstanties gaat integreren met Intune, moet u be
 
 Als u wilt toestaan dat een externe SCEP-server aangepaste vragen kan valideren met Intune, moet u een app maken in Azure AD. Deze app verleent gedelegeerde rechten aan Intune om SCEP-aanvragen te valideren.
 
-Zorg ervoor dat u over de vereiste machtigingen beschikt om een Azure AD-app te registreren. Bij [Vereiste machtigingen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions) worden de stappen vermeld.
+Zorg ervoor dat u over de vereiste machtigingen beschikt om een Azure AD-app te registreren. Zie [Vereiste machtigingen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions) in de documentatie van Azure AD.
 
-**Stap 1: een Azure AD-toepassing maken**
+#### <a name="create-an-application-in-azure-active-directory"></a>Een toepassing maken in Azure Active Directory  
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Azure Active Directory** > **App-registraties** > **Nieuwe toepassing registreren**.
-3. Voer een naam en aanmeldings-URL in. Selecteer **Web-app/API** als het toepassingstype.
-4. Selecteer **Maken**.
+1. Ga in de [Azure-portal](https://portal.azure.com) naar **Azure Active Directory** > **App-registraties** en selecteer **Nieuwe registratie**.  
 
-[Toepassingen integreren met Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) bevat een aantal richtlijnen voor het maken van een app, waaronder tips voor de URL en de naam.
+2. Geef op de pagina **Een toepassing registreren** de volgende gegevens op:  
+   - Voer bij **Naam** een betekenisvolle toepassingsnaam in.  
+   - Selecteer **Accounts in een organisatieadreslijst** bij **Ondersteunde accounttypen**.  
+   - Laat bij **Omleidings-URI** de standaardwaarde Web staan en geef vervolgens de aanmeldings-URL voor de externe SCEP-server op.  
 
-**Stap 2: machtigingen afgeven**
+3. Selecteer **Registreren** om de toepassing te maken en om de pagina Overzicht voor de nieuwe app te openen.  
 
-Na het maken van uw toepassing geeft u de Microsoft Intune-API de vereiste machtigingen:
+4. Kopieer op de pagina **Overzicht** de waarde van **Toepassings-id (client-id)** en noteer de waarde voor later gebruik. U hebt deze waarde later nog nodig.  
 
-1. Open **Instellingen** > **Vereiste machtigingen** in uw Azure AD-app.  
-2. Selecteer **Toevoegen** > **Een API selecteren** > selecteer **Microsoft Intune-API** > **Selecteren**.
-3. Bij **Machtigingen selecteren** kiest u **SCEP-vraagvalidatie** > **Selecteren**.
-4. Selecteer **OK** om uw wijzigingen op te slaan.
+5. Ga in het navigatievenster van de app naar **Certificaten en geheimen** onder **Beheren**. Selecteer de knop **Nieuw clientgeheim**. Typ tekst in het vak Beschrijving, selecteer een optie voor **Verloopt op** en kies vervolgens **Toevoegen** om een *waarde* te genereren voor het clientgeheim. 
+   > [!IMPORTANT]  
+   > Voordat u deze pagina verlaat, moet u de waarde voor het clientgeheim kopiëren en bewaren voor later gebruik met de implementatie van uw externe certificeringsinstantie. Deze waarde wordt namelijk niet meer weergegeven. Lees de richtlijnen van de externe certificeringsinstantie, zodat u weet hoe de toepassings-id, verificatiesleutel en tenant-id moeten worden geconfigureerd.  
 
-**Stap 3: de toepassings-id en verificatiesleutel ophalen**
+6. Noteer uw **tenant-id**. De tenant-id is de domeintekst na het teken @ in uw account. Als uw account bijvoorbeeld *admin@name.onmicrosoft.com* is, dan is uw tenant-id **naam.onmicrosoft.com**.  
 
-Vervolgens moet u de id- en sleutelwaarden van uw Azure AD-toepassing ophalen. De volgende waarden zijn vereist:
+7. Ga in het navigatievenster van de app naar **API-machtigingen** onder **Beheren** en selecteer vervolgens **Een machtiging toevoegen**.  
 
-- Toepassings-id
-- Verificatiesleutel
-- Tenant-id
+8. Selecteer op de pagina **API-machtigingen aanvragen** de optie **Intune** en selecteer vervolgens **Toepassingsmachtigingen**. Schakel het selectievakje voor **scep_challenge_provider** in (validatie van SCEP-challenge).  
 
-**U kunt als volgt de toepassings-id en verificatiesleutel ophalen**:
+   Selecteer **Machtigingen toevoegen** om deze configuratie op te slaan.  
 
-1. Selecteer uw nieuwe toepassing in Azure AD (**App-registraties**).
-2. Kopieer de **toepassings-id** en sla deze id op in de code van uw toepassing.
-3. Genereer nu een verificatiesleutel. Open **Instellingen** > **Sleutels** in uw Azure AD-app.
-4. Voer bij **Wachtwoorden** een beschrijving in en kies de duur van de sleutel. U moet vervolgens de wijzigingen **Opslaan**. Kopieer de getoonde waarde en sla deze op.
+9. Blijf op de pagina **API-machtigingen**, selecteer **Beheerder toestemming geven voor Microsoft** en selecteer vervolgens **Ja**.  
+   
+   Het registratieproces voor de app in Azure AD is voltooid.
 
-    > [!IMPORTANT]
-    > Kopieer en bewaar deze sleutel onmiddellijk, aangezien deze niet opnieuw wordt weergegeven. De waarde van deze sleutel is nodig voor de implementatie van de externe CA. Lees hun richtlijnen door over de manier waarop zij de toepassings-id, verificatiesleutel en tenant-id geconfigureerd willen hebben.
 
-De **Tenant-id** is de domeintekst na het @-teken in uw account. Als uw account bijvoorbeeld `admin@name.onmicrosoft.com` is, dan is uw tenant-id **naam.onmicrosoft.com**.
 
-Bij [Toepassings-id en verificatiesleutel ophalen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key) wordt een lijst weergegeven met de stappen om deze waarden op te halen, en wordt meer informatie gegeven over Azure AD-apps.
+
 
 ### <a name="configure-and-deploy-a-scep-certificate-profile"></a>Een SCEP-certificaatprofiel configureren en implementeren
 Als beheerder maakt u een SCEP-certificaatprofiel voor gebruikers of apparaten. Wijs vervolgens het profiel toe.
@@ -128,6 +121,9 @@ De volgende externe certificeringsinstanties bieden ondersteuning voor Intune:
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
 - [EJBCA GitHub open-sourceversie](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
+- [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
+- [IDnomic](https://www.idnomic.com/)
+- [Sectigo](https://sectigo.com/products)
 
 Als u een externe certificeringsinstantie bent en interesse hebt om uw product te integreren met Intune, controleert u de API-richtlijnen:
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66a23b75913f6465064a988bd8f2ba9c2b4c36d6
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6b7ea047daca5dad327b431986840a59074614d1
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61514117"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732635"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-scripts op Windows 10-apparaten gebruiken in Intune
 
@@ -70,6 +70,9 @@ De Intune-beheeruitbreiding heeft de volgende vereisten:
 
     ![PowerShell-scripts toevoegen en gebruiken in Microsoft Intune](./media/mgmt-extension-add-script.png)
 5. Selecteer **OK** > **Maken** om het script op te slaan.
+
+> [!NOTE]
+> Het PowerShell-script wordt onder beheerdersbevoegdheden uitgevoerd (standaard) wanneer het script is ingesteld op gebruikerscontext en de eindgebruiker op het apparaat beheerdersbevoegdheden heeft.
 
 ## <a name="assign-the-policy"></a>Wijs het beleid toe
 

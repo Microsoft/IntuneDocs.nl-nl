@@ -1,11 +1,11 @@
 ---
 title: Problemen met beveiligingsbasislijnen oplossen in Microsoft Intune - Azure | Microsoft Docs
-description: Aanbevolen groepsbeveiligingsinstellingen toevoegen of configureren ter bescherming van gebruikers en gegevens op apparaten met behulp van Microsoft Intune voor Mobile Device Management. Bitlocker inschakelen, Windows Defender Advanced Threat Protection configureren, Internet Explorer beheren, Smart Screen gebruiken, lokaal beveiligingsbeleid instellen, een wachtwoord vereisen, internetdownloads blokkeren en meer.
+description: Aanbevolen groepsbeveiligingsinstellingen toevoegen of configureren ter bescherming van gebruikers en gegevens op apparaten met behulp van Microsoft Intune voor Mobile Device Management. BitLocker inschakelen, Windows Defender Advanced Threat Protection configureren, Internet Explorer beheren, Smart Screen gebruiken, lokaal beveiligingsbeleid instellen, een wachtwoord vereisen, internetdownloads blokkeren en meer.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
-ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
+ms.openlocfilehash: 9dd289535ba4276b1bca21044d362172517b07e0
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197627"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732535"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Een Windows 10-beveiligingsbasislijn maken in Intune
 
@@ -44,9 +44,19 @@ Met beveiligingsbasislijnen wordt een "configuratieprofiel" gemaakt in Intune. D
 
 Nadat het profiel is toegewezen, kunt u het profiel controleren en de basislijn controleren. U kunt bijvoorbeeld zien welke apparaten overeenkomen met de basislijn, of niet overeenkomen met de basislijn.
 
-In dit artikel wordt uitgelegd hoe u beveiligingsbasislijnen gebruikt om een profiel te maken, het profiel toe te wijzen en het profiel te controleren.
+In dit artikel leest hoe u beveiligingsbasislijnen gebruikt om een profiel te maken, het profiel toe te wijzen en het profiel te controleren.
 
 [Windows-beveiligingsbasislijnen](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) is een goede bron voor meer informatie over deze functie. [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) is een goede bron meer informatie over MDM en wat u op Windows-apparaten kunt doen.
+
+## <a name="available-security-baselines"></a>Beschikbare beveiligingsbasislijnen  
+
+De volgende beveiligingsbasislijnen zijn beschikbaar voor gebruik met Intune.
+- **Voorbeeld: MDM-basislijn voor beveiliging voor oktober 2018**  
+  [Instellingen bekijken](security-baseline-settings-windows.md)
+
+- **PREVIEW: Windows Defender ATP-basislijn**  
+  [Instellingen bekijken](security-baseline-settings-defender-atp.md)
+
 
 ## <a name="prerequisites"></a>Vereisten
 Als u basislijnen in Intune wilt beheren, moet de ingebouwde rol [Beleids- en profielbeheerder](role-based-access-control.md#built-in-roles) deel uitmaken van uw account.
@@ -60,51 +70,36 @@ Wanneer u apparaten met co-beheer gebruikt, moet u de workload **Apparaatconfigu
 
 ## <a name="create-the-profile"></a>Het profiel maken
 
-1. Selecteer in [Azure Portal](https://portal.azure.com/) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
-2. Selecteer **Apparaatbeveiliging** > **Beveiligingsbasislijnen (preview-versie)**. Er is een lijst van de beschikbare basislijnen beschikbaar. Als er meer basislijnen worden toegevoegd, ziet u deze hier:
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=20909) en selecteer vervolgens **Apparaatbeveiliging** > **Beveiligingsbasislijnen (preview-versie)**. Er is een lijst van de beschikbare basislijnen beschikbaar. 
 
-    ![Een overzicht weergeven van de momenteel beschikbare beveiligingsbasislijnen in Intune](./media/security-baselines/available-baselines.png)
+    ![Beveiligingsbasislijn selecteren om te configureren](./media/security-baselines/available-baselines.png)
 
-3. Selecteer de basislijn die u wilt gebruiken > **Profiel maken**.
-4. Voer in **Basisinformatie** de volgende eigenschappen in:
 
-    - **Naam**: voer een naam in voor uw beveiligingsbasislijnprofiel. Voer bijvoorbeeld `pilot Windows 10 MDM baseline - Oct 2018` in.
+2. Selecteer de basislijn die u wilt gebruiken en selecteer vervolgens **Profiel maken**.  
+
+3. Geef op het tabblad **Basisinformatie** de volgende eigenschappen op:
+
+    - **Naam**: voer een naam in voor uw beveiligingsbasislijnprofiel. Voer bijvoorbeeld *Standaardprofiel voor Defender ATP* in
     - **Beschrijving**: voer tekst waarin wordt beschreven wat deze basislijn doet. In de beschrijving kunt u de door u gewenste tekst opgeven. Dit is optioneel, maar wordt zeker aanbevolen.
 
-5. Vouw **Instellingen** uit. In de lijst ziet u alle instellingen in deze beveiligingsbasislijn, en waarop de instelling automatisch wordt ingesteld. De instellingen en de bijbehorende waarden worden aanbevolen en kunnen door u worden gewijzigd.
+4. Selecteer het tabblad **Configuratie** om de beschikbare groepen met **instellingen** in deze basislijn weer te geven. Selecteer een groep om deze uit te vouwen en de afzonderlijke instellingen te bekijken. De instellingen hebben standaardconfiguraties voor de beveiligingsbasislijn. Pas de standaardinstellingen aan om te voldoen aan de behoeften van uw bedrijf.  
 
-    ![Instellingen uitvouwen om alle instellingen in deze beveiligingsbasislijn in Intune weer te geven](./media/security-baselines/sample-list-of-settings.png)
+    ![Vouw een groep uit om de instellingen voor die groep weer te geven](./media/security-baselines/sample-list-of-settings.png)
 
-    Vouw enkele van de instellingen uit om de waarden te controleren. Vouw bijvoorbeeld **Windows Defender** uit. Bekijk enkele instellingen en waarop ze zijn ingesteld:
+5. Selecteer het tabblad **Toewijzingen** om de basislijn aan groepen toe te wijzen. Wijs de basislijn toe aan een bestaande groep, of maak een nieuwe groep met behulp van het standaardproces in de Intune-console om uw configuratie te voltooien.  
 
-    ![Bekijken waarop enkele van de Windows Defender-instellingen automatisch zijn ingesteld in Intune](./media/security-baselines/expand-windows-defender.png)
+   ![Een profiel toewijzen](./media/security-baselines/assignments.png)
+  
+6. Wanneer u klaar bent om de basislijn te implementeren, selecteert u het tabblad **Controleren en maken** om de gegevens van de basislijn te controleren. Selecteer vervolgens **Profiel opslaan** om het profiel op te slaan en te implementeren. 
 
-6. **Maak** het profiel. 
-7. Selecteer **Profielen**. Uw profiel wordt gemaakt en weergegeven in de lijst. Maar het werkt nog niet. Voeg het profiel vervolgens toe.
+   ![De basislijn controleren](./media/security-baselines/review.png) 
 
-## <a name="assign-the-profile"></a>Het profiel toewijzen
+   Zodra u hebt opgeslagen, wordt het profiel doorgestuurd naar apparaten wanneer deze inchecken bij Intune. Dit kan dus onmiddellijk plaatsvinden.
 
-Nadat het profiel is gemaakt, is het klaar om te worden toegewezen aan uw gebruikers, apparaten en groepen. Wanneer het profiel is toegewezen, worden het profiel en de bijbehorende instellingen toegepast op de door u gekozen gebruikers, apparaten en groepen.
+   > [!TIP]  
+   > U kunt een profiel opslaan zonder dit eerst aan groepen toe te wijzen. U kunt het profiel later bewerken om groepen toe te voegen. 
 
-1. Selecteer in Intune **Beveiligingsbasislijnen** > kies een basislijn > **Profielen**.
-2. Selecteer het gewenste profiel > **Toewijzingen**.
-
-    ![Kies het beveiligingsbasislijnprofiel in Intune en klik op Toewijzingen om het profiel te implementeren](./media/security-baselines/assignments.png)
-
-3. Voeg op het tabblad **Opnemen** de groepen, gebruikers of apparaten toe waarop u dit beleid wilt toepassen.
-
-    > [!TIP]
-    > U ziet dat u groepen ook kunt **Uitsluiten**. Als u een beleid toepast op **Alle gebruikers**, kunt u overwegen de beheerdersgroepen uit te sluiten. In het geval er iets gebeurt, wilt u niet dat u en uw beheerders worden vergrendeld.
-
-4. U moet vervolgens de wijzigingen **Opslaan**.
-
-Zodra u hebt opgeslagen, wordt het profiel doorgestuurd naar apparaten wanneer deze inchecken bij Intune. Dit kan dus onmiddellijk plaatsvinden.
-
-## <a name="available-security-baselines"></a>Beschikbare beveiligingsbasislijnen  
-
-De volgende beveiligingsbasislijnen zijn beschikbaar om bij Intune te gebruiken.
-- **Voorbeeld: MDM-basislijnen voor beveiliging**
-  - Versie: [Oktober 2018](security-baseline-settings-windows.md)
+7. Nadat u het profiel hebt maakt, kunt u het bewerken door naar **Apparaatbeveiliging** > **Beveiligingsbasislijnen** te gaan, de basislijn te selecteren die u hebt geconfigureerd en vervolgens **Profielen** te selecteren.  Selecteer het profiel en selecteer vervolgens **Eigenschappen** om de instellingen te bewerken, en selecteer **Toewijzingen** om de groepen te bewerken die deze basislijn ontvangen. 
 
 ## <a name="q--a"></a>Vragenronde
 

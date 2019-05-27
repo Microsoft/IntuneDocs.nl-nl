@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
-ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
+ms.openlocfilehash: 7ac370ffe297cb62af6ed55cfd5c4c41cf8452d3
+ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65619447"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65816293"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Apparaten die aan hybride Azure AD zijn gekoppeld implementeren met Intune en Windows Autopilot
 U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn gekoppeld aan Hybrid Azure Active Directory (Azure AD). Volg hiervoor de stappen in dit artikel.
@@ -119,6 +119,9 @@ De Intune-connector voor Active Directory moet worden geïnstalleerd op een comp
 > [!NOTE]
 > Nadat u zich bij de Connector hebt aangemeld, kan het een aantal minuten duren voordat deze in [Intune](https://aka.ms/intuneportal) wordt weergegeven. De connector wordt alleen weergegeven als deze met de Intune-service kan communiceren.
 
+### <a name="turn-off-ie-enhanced-security-configuration"></a>Verbeterde beveiliging van Internet Explorer uitschakelen
+De functie Verbeterde beveiliging van Internet Explorer is standaard ingeschakeld in Windows Server. Als u zich niet kunt aanmelden bij de Intune-connector voor Active Directory, schakelt u de functie Verbeterde beveiliging van Internet Explorer uit voor de beheerder. [Verbeterde beveiliging van Internet Explorer uitschakelen](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)
+
 ### <a name="configure-web-proxy-settings"></a>Webproxyinstellingen configureren
 
 Als u in uw netwerkomgeving over een webproxy beschikt, zorgt u ervoor dat de Intune-connector voor Active Directory goed werkt door te verwijzen naar [Werken met bestaande on-premises proxyservers](autopilot-hybrid-connector-proxy.md).
@@ -194,7 +197,7 @@ Het duurt ongeveer 15 minuten voordat de status van het apparaatprofiel is gewij
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>(Optioneel) De pagina Status van de registratie inschakelen
 
-1. Selecteer in [Intune](https://aka.ms/intuneportal) **Apparaatregistratie** > **Windows-registratie** > **Pagina Status van de registratie (preview)**.
+1. Selecteer in [Intune](https://aka.ms/intuneportal) **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving**.
 1. In het deelvenster **Pagina Registratiestatus** selecteert u **Standaard** > **Instellingen**.
 1. In het vak **Voortgang app- en profielinstallatie weergeven** selecteert u **Ja**.
 1. Configureer de andere opties indien nodig.

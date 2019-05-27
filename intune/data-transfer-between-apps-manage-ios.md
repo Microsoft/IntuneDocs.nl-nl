@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: dffdf67597ccb7a1719b2b769a79a6a5f365198c
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509506"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853911"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
 
@@ -80,6 +80,7 @@ Deze configuratie van de UPN-gebruikersinstelling is **vereist** voor apparaten 
    |Microsoft Intune| IntuneMAMUPN | Tekenreeks | {{UserPrincipalName}}|
    |VMware AirWatch| IntuneMAMUPN | Tekenreeks | {UserPrincipalName}|
    |MobileIron | IntuneMAMUPN | Tekenreeks | ${userUPN} **of** ${userEmailAddress} |
+   |Beheer van Citrix-eindpunt | IntuneMAMUPN | Tekenreeks | ${user.userprincipalname} |
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | Tekenreeks | %upn% |
 
 

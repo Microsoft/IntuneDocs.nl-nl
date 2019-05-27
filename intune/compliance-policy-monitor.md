@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508992"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942045"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
@@ -75,7 +75,9 @@ Beschrijvingen van verschillende statussen van het nalevingsbeleid voor apparate
 
   - Apparaten die niet aan nalevingsbeleid zijn toegewezen en geen trigger bevatten voor de controle op naleving
   - Apparaten die niet zijn ingecheckt nadat het nalevingsbeleid voor het laatst is bijgewerkt
-  - Apparaten die niet aan een specifieke gebruiker zijn gekoppeld
+  - Apparaten die niet aan een specifieke gebruiker zijn gekoppeld, zoals:
+    - iOS-apparaten die zijn gekocht via het Device Enrollment Program (DEP) van Apple en zonder gebruikersaffiniteit
+    - Kiosk-apparaten met Android of toegewezen Android Enterprise-apparaten
   - Apparaten die zijn ingeschreven met een DEM-account (apparaatinschrijvingsmanager)
 
 - **Niet compatibel**: Op het apparaat kunnen een of meer nalevingsbeleidsinstellingen voor apparaten niet worden toegepast. Of de gebruiker heeft niet voldaan aan het beleid.

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506811"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992902"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
@@ -51,6 +51,13 @@ Beleidsregels voor de beveiliging van apps zijn regels die ervoor zorgen dat de 
 
 **Wat zijn voorbeelden van beleidsregels voor de beveiliging van apps?**<br></br>
 Zie de [beleidsinstellingen voor de beveiliging van Android-apps](app-protection-policy-settings-android.md) en de [beleidsinstellingen voor de beveiliging van iOS-apps](app-protection-policy-settings-ios.md) voor gedetailleerde informatie over elke beleidsinstelling voor de beveiliging van apps.
+
+**Is het mogelijk om op hetzelfde moment, maar voor verschillende apparaten, beleid van zowel MDM als MAM toe te passen op dezelfde gebruiker? Bijvoorbeeld in een situatie waarin een gebruiker thuis toegang kan krijgen tot bedrijfsresources vanaf een eigen computer met MAM, maar ook op kantoor vanaf een apparaat dat met Intune MDM wordt beheerd. Zijn er nog aandachtspunten voor dit idee?**<br></br>
+Als u een MAM-beleid toepast op de gebruiker zonder de apparaatstatus in te stellen, krijgt de gebruiker het MAM-beleid op zowel het BYOD-apparaat als het door Intune beheerde apparaat. U kunt een MAM-beleid ook toepassen op basis van de beheerde status. Bij het maken van een beleid voor de beveiliging van apps selecteert u dan Nee voor Doel voor alle app-typen. Ga vervolgens op een van de volgende manieren te werk:
+- Pas een minder streng MAM-beleid toe op apparaten die met Intune worden beheerd en een meer beperkend MAM-beleid op apparaten die niet bij MDM zijn ingeschreven.
+- Pas alleen een MAM-beleid toe op niet-ingeschreven apparaten.
+
+Zie [How to monitor app protection policies](app-protection-policies-monitor.md) (App-beveiligingsbeleid controleren) voor meer informatie.
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Apps die u kunt beheren met beleidsregels voor de beveiliging van apps
 
