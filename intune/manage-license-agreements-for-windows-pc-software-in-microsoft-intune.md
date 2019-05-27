@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92262a9d1f07b8756ced8788feee586ffa30088a
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798798"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046953"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Licentieovereenkomsten voor Windows-pc-software in Microsoft Intune beheren
 
@@ -68,7 +67,7 @@ Intune-volumelicentieovereenkomsten bieden licentie-informatie voor software die
 
         -   Alleen ASCII-tekens worden ondersteund.
 
-        -   De volgende tekens zijn niet toegestaan in de naam van overeenkomst: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Spaties zijn toegestaan in de naam.
+        -   De volgende tekens zijn niet toegestaan in de naam van overeenkomst: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Spaties zijn toegestaan in de naam.
 
         -   De bestandsnaam mag niet meer dan 128 tekens bevatten.
 
@@ -94,7 +93,7 @@ Intune-volumelicentieovereenkomsten bieden licentie-informatie voor software die
 
         -   **Naam overeenkomst**: geef een unieke naam op voor de overeenkomst.
 
-            De naam van een overeenkomst mag uit maximaal 256 tekens bestaan en mag niet de volgende tekens bevatten: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Spaties zijn toegestaan in de naam.
+            De naam van een overeenkomst mag uit maximaal 256 tekens bestaan en mag niet de volgende tekens bevatten: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Spaties zijn toegestaan in de naam.
 
         -   **Autorisatie-/overeenkomstnummer**: voer het autorisatie-/overeenkomstnummer van de licentieset in.
 
@@ -147,7 +146,7 @@ Naast Microsoft-volumelicentieovereenkomsten kunt u ook andere typen licentieove
 
 4.  Geef in het gedeelte **Gegevens van overeenkomst toevoegen** het volgende op:
 
-    -   **Agreement name** (vereist). De naam van een overeenkomst mag uit maximaal 256 tekens bestaan en mag niet de volgende tekens bevatten: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Spaties zijn toegestaan in de naam.
+    -   **Agreement name** (vereist). De naam van een overeenkomst mag uit maximaal 256 tekens bestaan en mag niet de volgende tekens bevatten: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Spaties zijn toegestaan in de naam.
 
     -   **Uitgever** (vereist). Terwijl u de naam van een uitgever typt, worden alle namen van uitgevers opgehaald die de door u getypte letters bevatten. Als u bijvoorbeeld 'soft' typt, worden alle namen opgehaald van uitgevers die 'soft' bevatten, bijvoorbeeld 'Microsoft' en 'Microsoft Research.' De namen van de uitgevers worden opgehaald uit de Software Asset Catalog. Voordat u de titel van het product kunt invoeren, moet u de uitgever selecteren.
 

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/8/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.reviewer: tycast
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 880a81b49a78e7afd83aca510f85133e91416cf4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 502babf80b4286adb19a09988d16bd56562d4925
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566264"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046671"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Wi-Fi-instellingen toevoegen voor apparaten met Windows 10 en hoger in Intune
 
@@ -37,7 +36,7 @@ In dit artikel worden deze instellingen beschreven.
 
 - **Wi-Fi-type**: kies **Basic**. 
 
-- **Wi-Fi-naam (SSID)**: afkorting voor Service Set Identifier. Deze waarde is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de **Verbindingsnaam** die u hebt geconfigureerd wanneer ze de verbinding kiezen.
+- **Wi-Fi-naam (SSID)** : afkorting voor Service Set Identifier. Deze waarde is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de **Verbindingsnaam** die u hebt geconfigureerd wanneer ze de verbinding kiezen.
 
 - **Verbindingsnaam**: voer een gebruikersvriendelijke naam voor deze Wi-Fi-verbinding in. De tekst die u invoert, is de naam die gebruikers op hun apparaat te zien krijgen in de lijst met beschikbare verbindingen.
 
@@ -56,7 +55,7 @@ In dit artikel worden deze instellingen beschreven.
   - **Variabel**: gebruik deze optie als het netwerkverkeer per byte in rekening wordt gebracht (kosten per byte).
 
 - **Draadloos beveiligingstype**: voer het beveiligingsprotocol in dat wordt gebruikt om apparaten in uw netwerk te verifiëren. Uw opties zijn:
-  - **Open (geen verificatie)**: gebruik deze optie alleen als het netwerk niet beveiligd is.
+  - **Open (geen verificatie)** : gebruik deze optie alleen als het netwerk niet beveiligd is.
   - **WPA/WPA2-Personal**: dit is een veiligere optie die doorgaans wordt gebruikt voor Wi-Fi-connectiviteit. Voor betere beveiliging kunt u ook een vooraf gedeelde wachtwoordsleutel of netwerksleutel invoeren. 
 
     - **Vooraf gedeelde sleutel** (pre-shared key - PSK): optioneel. Dit wordt weergegeven wanneer u de optie **WPA/WPA2-Personal** kiest als beveiligingstype. Wanneer het netwerk van uw organisatie is ingesteld of geconfigureerd, wordt er ook een wachtwoord of netwerksleutel geconfigureerd. Voer dit wachtwoord of deze netwerksleutel in voor de PSK-waarde. Voer een tekenreeks in van minimaal 8 en maximaal 64 tekens. Als het wachtwoord of de netwerksleutel 64 tekens lang is, voert u hexadecimale tekens in.
@@ -75,7 +74,7 @@ Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt ge
 
 - **Wi-Fi-type**: kies **Enterprise**. 
 
-- **Wi-Fi-naam (SSID)**: afkorting voor Service Set Identifier. Deze waarde is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de **Verbindingsnaam** die u hebt geconfigureerd wanneer ze de verbinding kiezen.
+- **Wi-Fi-naam (SSID)** : afkorting voor Service Set Identifier. Deze waarde is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de **Verbindingsnaam** die u hebt geconfigureerd wanneer ze de verbinding kiezen.
 
 - **Verbindingsnaam**: voer een gebruikersvriendelijke naam voor deze Wi-Fi-verbinding in. De tekst die u invoert, is de naam die gebruikers op hun apparaat te zien krijgen in de lijst met beschikbare verbindingen.
 
@@ -92,7 +91,7 @@ Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt ge
   - **Vast**: gebruik deze optie als het netwerk is geconfigureerd met een vaste limiet voor het netwerkverkeer. Nadat deze limiet is bereikt, is toegang tot het netwerk niet meer toegestaan.
   - **Variabel**: gebruik deze optie als het netwerkverkeer per byte in rekening wordt gebracht.
 
-- **Eenmalige aanmelding (SSO)**: hiermee kunt u eenmalige aanmelding (SSO) configureren, waarbij referenties worden gedeeld voor aanmelden via een computer en via een Wi-Fi-netwerk. Uw opties zijn:
+- **Eenmalige aanmelding (SSO)** : hiermee kunt u eenmalige aanmelding (SSO) configureren, waarbij referenties worden gedeeld voor aanmelden via een computer en via een Wi-Fi-netwerk. Uw opties zijn:
   - **Uitschakelen**: hiermee schakelt u SSO-gedrag uit. De gebruiker moet afzonderlijk bij het netwerk worden geverifieerd.
   - **Inschakelen voordat de gebruiker zich aanmeldt bij apparaat**: gebruik eenmalige aanmelding om te verifiëren bij het netwerk net vóór het aanmeldingsproces voor de gebruiker.
   - **Inschakelen nadat de gebruiker zich aanmeldt bij apparaat**: gebruik eenmalige aanmelding om te verifiëren bij het netwerk direct nadat het aanmeldingsproces voor de gebruiker is voltooid.
@@ -126,11 +125,11 @@ Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt ge
 
         **Basiscertificaat voor servervalidatie**: gebruiken met EAP-typen **EAP-TLS**, **EAP-TTLS** of **PEAP**. Kies het profiel voor een vertrouwd basiscertificaat dat wordt gebruikt om de verbinding te verifiëren.  
 
-        **Identiteitsprivacy (externe identiteit)**: gebruiken met EAP-type **PEAP**. Voer de tekst in die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.  
+        **Identiteitsprivacy (externe identiteit)** : gebruiken met EAP-type **PEAP**. Voer de tekst in die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.  
 
       - **Clientauthenticatie**
 
-        **Clientcertificaat voor clientverificatie (identiteitscertificaat)**: gebruiken met EAP-type **PEAP-TLS**. Kies het certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren.
+        **Clientcertificaat voor clientverificatie (identiteitscertificaat)** : gebruiken met EAP-type **PEAP-TLS**. Kies het certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren.
 
         **Verificatiemethode**: gebruiken met EAP-type **EAP-TTLS**. Selecteer de verificatiemethode voor de verbinding:  
 
@@ -142,14 +141,14 @@ Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt ge
             - **Microsoft CHAP (MS-CHAP)**
             - **Microsoft CHAP versie 2 (MS-CHAP v2)**
 
-        **Identiteitsprivacy (externe identiteit)**: gebruiken met EAP-type **EAP-TTLS**. Voer de tekst in die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.
+        **Identiteitsprivacy (externe identiteit)** : gebruiken met EAP-type **EAP-TTLS**. Voer de tekst in die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.
 
 - **Bedrijfsproxyinstellingen**: kies deze optie om de proxyinstellingen binnen uw organisatie te gebruiken. Uw opties zijn:
   - **Geen**: er zijn geen proxyinstellingen geconfigureerd.
   - **Handmatig configureren**: voer het **IP-adres van de proxyserver** en het bijbehorende **poortnummer** in.
   - **Automatisch configureren**: voer de URL in die naar een proxyscript voor automatische configuratie (PAC) verwijst. Voer bijvoorbeeld `http://proxy.contoso.com/proxy.pac` in.
 
-- **Naleving van Wi-Fi-profiel afdwingen met de Federal Information Processing Standard (FIPS)**: kies **Ja** wanneer u wilt valideren op basis van de FIPS 140-2-standaard. Deze standaard is vereist voor alle instanties van de Amerikaanse federale overheid die beveiligingssystemen op basis van cryptografie gebruiken om gevoelige, niet-geclassificeerde informatie te beveiligen die digitaal is opgeslagen. Kies **Nee** om niet FIPS-compatibel te zijn.
+- **Naleving van Wi-Fi-profiel afdwingen met de Federal Information Processing Standard (FIPS)** : kies **Ja** wanneer u wilt valideren op basis van de FIPS 140-2-standaard. Deze standaard is vereist voor alle instanties van de Amerikaanse federale overheid die beveiligingssystemen op basis van cryptografie gebruiken om gevoelige, niet-geclassificeerde informatie te beveiligen die digitaal is opgeslagen. Kies **Nee** om niet FIPS-compatibel te zijn.
 
 Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt gemaakt en wordt weergegeven in de lijst met profielen.
 

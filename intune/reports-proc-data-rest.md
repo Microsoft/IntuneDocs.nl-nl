@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/02/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5aa85ee044eae5fba9dcb7c380a29dda727c6492
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.openlocfilehash: 894ce1fcf270af0169661359c2ab088bb30fab62
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871447"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041159"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Gegevens ophalen uit de Intune-datawarehouse-API met een REST-client
 
@@ -156,7 +155,7 @@ Het volgende voorbeeld bevat een eenvoudige REST-client. De code gebruikt de kla
 > U kunt het volgende codevoorbeeld openen [op GitHub](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs). Raadpleeg de GitHub-repo voor de meest recente wijzigingen en updates van het voorbeeld.
 
 1. Open **Microsoft Visual Studio**.
-2. Kies **Bestand** > **Nieuw project**. Vouw **Visual C#** uit en kies **Console-app (.Net Framework)**.
+2. Kies **Bestand** > **Nieuw project**. Vouw **Visual C#** uit en kies **Console-app (.Net Framework)** .
 3. Noem het project ` IntuneDataWarehouseSamples`, blader naar de locatie waar u het project wilt opslaan en selecteer vervolgens **OK**.
 4. Klik met de rechtermuisknop op de naam van de oplossing in Solution Explorer en selecteer vervolgens **NuGet-pakketten beheren voor oplossing**. Selecteer **Bladeren** en typ vervolgens `Microsoft.IdentityModel.Clients.ActiveDirectory` in het zoekvak.
 5. Kies het pakket, selecteer het project **IntuneDataWarehouseSamples** onder Pakketten beheren voor uw oplossing en selecteer vervolgens **Installeren**.

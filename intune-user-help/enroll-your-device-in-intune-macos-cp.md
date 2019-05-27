@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834718"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196771"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Uw macOS-apparaten registreren bij Intune met de bedrijfsportal-app
 
@@ -31,7 +31,9 @@ Registreer uw macOS-apparaat met de bedrijfsportal-app van Intune voor beveiligd
 
 Organisaties verplichten u vaak om uw apparaat te laten beheren voordat u toegang krijgt tot de vertrouwelijke gegevens van de organisatie. Nadat een apparaat wordt beheerd, kunnen organisaties beleid en apps pushen naar het apparaat via hun provider voor het beheer van mobiele apparaten. Voor continue toegang tot werk- of schoolgegevens op uw apparaat moet u uw apparaat zo configureren dat deze overeenkomt met de beleidsinstellingen.  
 
-In dit artikel wordt beschreven hoe u met behulp van de Intune-bedrijfsportal-app voor macOS uw apparaat zo kunt registreren, configureren en onderhouden dat dit voldoet aan de vereisten van uw organisatie.
+In dit artikel wordt beschreven hoe u met behulp van de Intune-bedrijfsportal-app voor macOS uw apparaat zo kunt registreren, configureren en onderhouden dat dit voldoet aan de vereisten van uw organisatie.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Wat u kunt verwachten van de bedrijfsportal-app
 

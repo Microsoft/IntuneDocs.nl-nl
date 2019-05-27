@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e7ec762e7e7299e400fefedbf7a8810e1da929f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 000f48f062e9e7300337ade04c8cf872d96eab2a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461342"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040218"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Problemen met software-updates oplossen in Microsoft Intune
 
@@ -173,7 +172,7 @@ De volgende tabel bevat de foutcodes voor de Intune **Update-agent**. Als u een 
 |**0x80cf4028**|OM_E_PT_NO_AUTH_COOKIES_CREATED|De agent kan geen geldige verificatiecookies maken.|
 |**0x80cf4029**|OM_E_PT_INVALID_CONFIG_PROP|Een configuratie-eigenschapwaarde is onjuist.|
 |**0x80cf402A**|OM_E_PT_CONFIG_PROP_MISSING|Er ontbreekt een configuratie-eigenschapwaarde.|
-|**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|De HTTP-aanvraag kan niet worden voltooid en de reden komt niet overeen met een van de **OM_E_PT_HTTP_&#42;**-foutcodes.|
+|**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|De HTTP-aanvraag kan niet worden voltooid en de reden komt niet overeen met een van de **OM_E_PT_HTTP_&#42;** -foutcodes.|
 |**0x80cf402C**|OM_E_PT_WINHTTP_NAME_NOT_RESOLVED|Hetzelfde als **ERROR_WINHTTP_NAME_NOT_RESOLVED**. De naam van de proxyserver of doelserver kan niet worden omgezet.|
 |**0x80cf402F**|OM_E_PT_ECP_SUCCEEDED_WITH_ERRORS|De verwerking van het externe CAB-bestand is voltooid met fouten.|
 |**0x80cf4030**|OM_E_PT_ECP_INIT_FAILED|De initialisatie van de externe CAB-processor is niet voltooid.|
@@ -182,7 +181,7 @@ De volgende tabel bevat de foutcodes voor de Intune **Update-agent**. Als u een 
 |**0x80cf4033**|OM_E_PT_ECP_FAILURE_TO_EXTRACT_DIGEST|De controlesom kan niet uit een extern cabinetbestand worden gehaald.|
 |**0x80cf4034**|OM_E_PT_ECP_FAILURE_TO_DECOMPRESS_CAB_FILE|Een extern cabinetbestand kan niet worden gedecomprimeerd.|
 |**0x80cf4035**|OM_E_PT_ECP_FILE_LOCATION_ERROR|Externe cabinetprocessor kan bestandslocaties niet ophalen.|
-|**0x80cf4FFF**|OM_E_PT_UNEXPECTED|Er is een communicatiefout opgetreden die niet wordt gedekt door een andere **OM_E_PT_&#42;**-foutcode.|
+|**0x80cf4FFF**|OM_E_PT_UNEXPECTED|Er is een communicatiefout opgetreden die niet wordt gedekt door een andere **OM_E_PT_&#42;** -foutcode.|
 |**0x80cf6001**|OM_E_DM_URLNOTAVAILABLE|Een downloadbeheerbewerking kan niet worden voltooid omdat het gevraagde bestand geen URL heeft.|
 |**0x80cf6002**|OM_E_DM_INCORRECTFILEHASH|Een downloadbeheerbewerking kan niet worden voltooid omdat de controlesom niet is herkend.|
 |**0x80cf6003**|OM_E_DM_UNKNOWNALGORITHM|Een downloadbeheerbewerking kan niet worden voltooid omdat de bestandsmetagegevens een niet-herkend hash-algoritme heeft gevraagd.|
@@ -192,7 +191,7 @@ De volgende tabel bevat de foutcodes voor de Intune **Update-agent**. Als u een 
 |**0x80cf6009**|OM_E_DM_BITSTRANSFERERROR|Er is een downloadbeheerbewerking mislukt omdat er een niet-opgegeven BITS-overdrachtsfout (Background Intelligent Transfer Service) is opgetreden.|
 |**0x80cf600a**|OM_E_DM_DOWNLOADLOCATIONCHANGED|Een download moet opnieuw worden gestart omdat de locatie van de bron van de download is gewijzigd.|
 |**0x80cf600B**|OM_E_DM_CONTENTCHANGED|Een download moet opnieuw worden gestart omdat de update-inhoud is gewijzigd in een nieuwe revisie.|
-|**0x80cf6FFF**|OM_E_DM_UNEXPECTED|Er is een downloadbeheerfout opgetreden die niet wordt gedekt door een andere **OM_E_DM_&#42;**-foutcode.|
+|**0x80cf6FFF**|OM_E_DM_UNEXPECTED|Er is een downloadbeheerfout opgetreden die niet wordt gedekt door een andere **OM_E_DM_&#42;** -foutcode.|
 |**0x80cf7003**|OM_E_INVALID_EVENT_PAYLOAD|Er is een ongeldige nettolading opgegeven.|
 |**0x80cf7004**|OM_E_INVALID_EVENT_PAYLOADSIZE|De grootte van de verzonden nettolading is ongeldig.|
 |**0x80cf7005**|OM_E_SERVICE_NOT_REGISTERED|De service is niet geregistreerd.|
@@ -224,13 +223,13 @@ De volgende tabel bevat de foutcodes voor de Intune **Update-agent**. Als u een 
 |**0x80cf801B**|OM_E_DS_SCHEMAMISMATCH|De planning van de huidige gegevensarchiefopslag en de planning van een tabel in een XML-reservekopiedocument komen niet overeen.|
 |**0x80cf801C**|OM_E_DS_RESETREQUIRED|Het gegevensarchief vereist dat de sessie opnieuw wordt gestart. Breek de sessie af en probeer opnieuw met een nieuwe sessie.|
 |**0x80cf801D**|OM_E_DS_IMPERSONATED|Een gegevensarchiefbewerking is niet voltooid omdat deze is gevraagd met een geïmiteerde identiteit.|
-|**0x80cf8FFF**|OM_E_DS_UNEXPECTED|Er is een gegevensarchieffout opgetreden die niet wordt gedekt door een andere **OM_E_DS_&#42;**-code.|
+|**0x80cf8FFF**|OM_E_DS_UNEXPECTED|Er is een gegevensarchieffout opgetreden die niet wordt gedekt door een andere **OM_E_DS_&#42;** -code.|
 |**0x80cfA000**|OM_E_AU_NOSERVICE|Automatische updates kan binnenkomende verzoeken niet verwerken.|
 |**0x80cfA004**|OM_E_AU_PAUSED|Windows Update Agent kan geen binnenkomende verzoeken verwerken omdat het programma is onderbroken.|
 |**0x80cfA005**|OM_E_AU_NO_REGISTERED_SERVICE|Er is geen onbeheerde service geregistreerd bij AU.|
 |**0x80cfA006**|OM_E_AU_DETECT_SVCID_MISMATCH|De standaardservice die is geregistreerd bij Automatische updates, is gewijzigd tijdens de zoekopdracht.|
 |**0x80cfA007**|OM_E_AU_ALREADY_PROMPTING_FOR_REBOOT|Automatische updates vraagt de gebruiker al om opnieuw op te starten.|
-|**0x80cfAFFF**|OM_E_AU_UNEXPECTED|Er is een Automatische updates-fout opgetreden die niet wordt gedekt door een andere **OM_E_AU &#42;**-code.|
+|**0x80cfAFFF**|OM_E_AU_UNEXPECTED|Er is een Automatische updates-fout opgetreden die niet wordt gedekt door een andere **OM_E_AU &#42;** -code.|
 |**0x80cfE001**|OM_E_EE_UNKNOWN_EXPRESSION|Een expressie-evaluatorbewerking kan niet worden voltooid omdat een expressie niet wordt herkend.|
 |**0x80cfE002**|OM_E_EE_INVALID_EXPRESSION|Een expressie-evaluatorbewerking kan niet worden voltooid omdat een expressie ongeldig is.|
 |**0x80cfE003**|OM_E_EE_MISSING_METADATA|Een expressie-evaluatorbewerking kan niet worden voltooid omdat een expressie een onjuist aantal metagegevensknooppunten bevat.|
@@ -238,7 +237,7 @@ De volgende tabel bevat de foutcodes voor de Intune **Update-agent**. Als u een 
 |**0x80cfE005**|OM_E_EE_NOT_INITIALIZED|De expressie-evaluator kan niet worden geïnitialiseerd.|
 |**0x80cfE006**|OM_E_EE_INVALID_ATTRIBUTEDATA|Een expressie-evaluatorbewerking kan niet worden voltooid omdat er een ongeldig kenmerk is.|
 |**0x80cfE007**|OM_E_EE_CLUSTER_ERROR|Een expressie-evaluatorbewerking kan niet worden voltooid omdat de clusterstatus van de computer niet kan worden bepaald.|
-|**0x80cfEFFF**|OM_E_EE_UNEXPECTED|Er is een fout opgetreden in de expressie-evaluator die niet wordt gedekt door een andere **OM_E_EE_&#42;**-foutcode.|
+|**0x80cfEFFF**|OM_E_EE_UNEXPECTED|Er is een fout opgetreden in de expressie-evaluator die niet wordt gedekt door een andere **OM_E_EE_&#42;** -foutcode.|
 |**0x80cfF001**|OM_E_REPORTER_EVENTCACHECORRUPT|Het gebeurteniscachebestand is defect.|
 |**0x80cfF002**|OM_E_REPORTER_EVENTNAMESPACEPARSEFAILED|De XML in de naamruimtebeschrijving van de gebeurtenis kan niet worden geparseerd.|
 |**0x80cfF003**|OM_E_INVALID_EVENT|De XML in de naamruimtebeschrijving van de gebeurtenis is ongeldig.|

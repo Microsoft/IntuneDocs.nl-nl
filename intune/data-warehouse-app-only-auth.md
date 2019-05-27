@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30d7b2acb6acf48699df92075349b06e5ad9e742
-ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
+ms.openlocfilehash: 4edf6e1e2b0ed57ec221e445bc171895fb9e0072
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59476507"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042674"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune Datawarehouse-verificatie enkel voor toepassing
 
@@ -91,10 +90,10 @@ Maak in Visual Studio een Console-app-project (.NET Framework) dat het .NET Fram
 
 1.  Selecteer **Bestand** > **Nieuw** > **Project** om het dialoogvenster **Nieuw project** weer te geven.
 2.  Selecteer aan de linkerkant **Visual C#** om alle .NET Framework-projecten weer te geven.
-3.  Selecteer **Console-app (.NET Framework)**, voeg een naam voor de app toe en klik vervolgens op **OK** om de app te maken.
+3.  Selecteer **Console-app (.NET Framework)** , voeg een naam voor de app toe en klik vervolgens op **OK** om de app te maken.
 4.  Selecteer **Program.cs** in **Solution Explorer** om de code weer te geven.
 5.  Selecteer in het pop-upmenu **Toevoegen** > **Nieuw item**. Het dialoogvenster **Nieuw item toevoegen** wordt weergegeven.
-6.  Selecteer aan de linkerkant **Code** onder **Visual C#**.
+6.  Selecteer aan de linkerkant **Code** onder **Visual C#** .
 7.  Selecteer **Klasse**, wijzig de naam van de klasse in *IntuneDataWarehouseClass.cs* en klik op **Toevoegen**.
 8.  Voeg de volgende code in in de methode <code>Main</code>:
 

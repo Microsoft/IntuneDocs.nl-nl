@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f38803d3be05182639ac8eca2578e9ce121f7c2f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: aef2db158e0572c1eec056a1d6e33b4b97aea77a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566009"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047019"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Instellingen voor Windows Holographic for Business-apparaten om ze als kiosk uit te voeren via Intune
 
@@ -60,7 +59,7 @@ Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige ap
 
   - **Automatisch aanmelden**: wordt niet ondersteund in Windows Holographic for Business.
   - **Lokale gebruikersaccounts**: **voeg** het lokale (op het apparaat) gebruikersaccount toe. Het account dat u opgeeft wordt gebruikt om u aan te melden bij de kiosk.
-  - **Azure AD-gebruiker of -groep (Windows 10, versie 1803 of hoger)**: een gebruiker moet referenties opgegeven om zich te kunnen aanmelden bij het apparaat. Selecteer **Toevoegen** als u Azure AD-gebruikers of -groepen in de lijst wilt kiezen. U kunt meerdere gebruikers en groepen selecteren. Kies **Selecteren** om uw wijzigingen op te slaan.
+  - **Azure AD-gebruiker of -groep (Windows 10, versie 1803 of hoger)** : een gebruiker moet referenties opgegeven om zich te kunnen aanmelden bij het apparaat. Selecteer **Toevoegen** als u Azure AD-gebruikers of -groepen in de lijst wilt kiezen. U kunt meerdere gebruikers en groepen selecteren. Kies **Selecteren** om uw wijzigingen op te slaan.
   - **HoloLens-bezoeker**: het bezoekersaccount is een gastaccount waarvoor geen gebruikersreferenties of verificatie is vereist, zoals wordt beschreven in [Gedeelde pc-modusconcepten](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
 - **Toepassingen**: voeg de apps toe die u op het apparaat in kioskmodus wilt uitvoeren. U kunt verschillende apps toevoegen.
@@ -70,7 +69,7 @@ Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige ap
   - **Toevoegen via AUMID**: gebruik deze optie om Postvak IN-apps voor Windows toe te voegen. Voer de volgende eigenschappen in: 
 
     - **Toepassingsnaam**: vereist. Geef een naam op voor de toepassing.
-    - **Model-id van toepassingsgebruiker (AUMID)**: vereist. Voer de AUMID van de Windows-app in. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) als u wilt weten hoe u aan deze id komt.
+    - **Model-id van toepassingsgebruiker (AUMID)** : vereist. Voer de AUMID van de Windows-app in. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) als u wilt weten hoe u aan deze id komt.
     - **Tegelgrootte**: vereist. Kies een tegelgrootte Klein, Normaal, Breed of Groot voor de app.
 
 - **Kioskbrowserinstellingen**: wordt niet ondersteund in Windows Holographic for Business.

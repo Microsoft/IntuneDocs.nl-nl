@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edb01e1cbe5fdbc79b48ee90e39fe45a2ccefb2a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566349"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042470"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Lijsten met apparaatbeperkingen voor Android en Samsung Knox Standard in Intune
 
@@ -33,17 +32,17 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
 ## <a name="general"></a>Algemeen
 
 - **Camera**: kies **Blokkeren** om toegang tot de camera te voorkomen. **Niet geconfigureerd**: staat toegang tot de camera van het apparaat toe.
-- **Kopiëren en plakken (alleen voor Samsung Knox)**: kies **Blokkeren** om kopiëren en plakken te voorkomen. **Niet geconfigureerd**: hiermee worden functies voor kopiëren en plakken toegestaan op het apparaat.
-- **Klembord delen tussen apps (alleen voor Samsung Knox)**: kies  **Blokkeren** om het kopiëren en plakken via het Klembord niet toe te staan tussen apps. **Niet geconfigureerd**: hiermee staat u het gebruik van het Klembord toe voor kopiëren en plakken tussen apps.
-- **Verzenden van diagnostische gegevens (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat de gebruiker diagnostische gegevens vanaf het apparaat kan verzenden. **Niet geconfigureerd**: staat de gebruiker toe de gegevens te verzenden.
-- **Wissen (alleen voor Samsung Knox)**: hiermee staat u de gebruiker toe het apparaat te [wissen](devices-wipe.md).
-- **Geolocatie (alleen voor Samsung Knox)**: kies **Blokkeren** als er op het apparaat geen locatiegegevens mogen worden gebruikt. **Niet geconfigureerd**: hiermee kunnen op het apparaat locatiegegevens worden gebruikt.
-- **Uitschakelen (alleen Samsung Knox)**: kies **Blokkeren** om te voorkomen dat de gebruiker het apparaat uitschakelt. Als deze instelling is uitgeschakeld, kan **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist** niet worden ingesteld en werkt deze optie niet. **Niet geconfigureerd**: hiermee staat u toe dat de gebruiker het apparaat mag uitschakelen.
-- **Schermafbeelding (alleen voor Samsung Knox)**: kies **Blokkeren** om het maken van schermafbeeldingen te voorkomen. **Niet geconfigureerd**: stelt de gebruiker in staat om de inhoud van het scherm vast te leggen als afbeelding.
-- **Spraakassistent (alleen voor Samsung Knox)**: kies **Blokkeren** om de service S Voice uit te schakelen. **Niet geconfigureerd**: hiermee staat u het gebruik van de S Voice-service en -app toe op het apparaat. Deze instelling geldt niet voor Bixby of de spraakassistent voor toegankelijkheid waarmee inhoud op het scherm hardop wordt voorgelezen.
-- **YouTube (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat gebruikers de YouTube-app gebruiken. **Niet geconfigureerd**: staat gebruik van de YouTube-app toe op het apparaat.
-- **Gedeelde apparaten (alleen voor Samsung Knox)**: hiermee kunt u een beheerd Samsung Knox Standard-apparaat configureren als een gedeeld apparaat. Als deze optie is ingesteld op  **Toestaan**, kunnen eindgebruikers hun Azure AD-referenties gebruiken om zich aan en af te melden bij het apparaat. Het apparaat blijft beheerd, ongeacht of het in gebruik is of niet.</br>Wanneer deze functie wordt gebruikt met een SCEP-certificaatprofiel, zorgt u er hiermee voor dat eindgebruikers een apparaat met dezelfde apps kunnen delen voor alle gebruikers. Elke gebruiker heeft wel een eigen SCEP-gebruikerscertificaat. Wanneer ze zich afmelden, worden alle app-gegevens gewist. Deze functie is beperkt tot LOB-apps. </br>**Niet geconfigureerd**: hiermee wordt voorkomen dat meerdere eindgebruikers zich met hun eigen Azure AD-referenties aanmelden bij de bedrijfsportal-app op het apparaat.
-- **Wijzigingen in datum en tijd blokkeren (Samsung Knox)**: kies **Blokkeren** om te voorkomen dat de gebruiker de datum- en tijdinstellingen op het apparaat kan wijzigen. **Niet geconfigureerd**: staat gebruikers toe om de datum- en tijdinstellingen te wijzigen.
+- **Kopiëren en plakken (alleen voor Samsung Knox)** : kies **Blokkeren** om kopiëren en plakken te voorkomen. **Niet geconfigureerd**: hiermee worden functies voor kopiëren en plakken toegestaan op het apparaat.
+- **Klembord delen tussen apps (alleen voor Samsung Knox)** : kies  **Blokkeren** om het kopiëren en plakken via het Klembord niet toe te staan tussen apps. **Niet geconfigureerd**: hiermee staat u het gebruik van het Klembord toe voor kopiëren en plakken tussen apps.
+- **Verzenden van diagnostische gegevens (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat de gebruiker diagnostische gegevens vanaf het apparaat kan verzenden. **Niet geconfigureerd**: staat de gebruiker toe de gegevens te verzenden.
+- **Wissen (alleen voor Samsung Knox)** : hiermee staat u de gebruiker toe het apparaat te [wissen](devices-wipe.md).
+- **Geolocatie (alleen voor Samsung Knox)** : kies **Blokkeren** als er op het apparaat geen locatiegegevens mogen worden gebruikt. **Niet geconfigureerd**: hiermee kunnen op het apparaat locatiegegevens worden gebruikt.
+- **Uitschakelen (alleen Samsung Knox)** : kies **Blokkeren** om te voorkomen dat de gebruiker het apparaat uitschakelt. Als deze instelling is uitgeschakeld, kan **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist** niet worden ingesteld en werkt deze optie niet. **Niet geconfigureerd**: hiermee staat u toe dat de gebruiker het apparaat mag uitschakelen.
+- **Schermafbeelding (alleen voor Samsung Knox)** : kies **Blokkeren** om het maken van schermafbeeldingen te voorkomen. **Niet geconfigureerd**: stelt de gebruiker in staat om de inhoud van het scherm vast te leggen als afbeelding.
+- **Spraakassistent (alleen voor Samsung Knox)** : kies **Blokkeren** om de service S Voice uit te schakelen. **Niet geconfigureerd**: hiermee staat u het gebruik van de S Voice-service en -app toe op het apparaat. Deze instelling geldt niet voor Bixby of de spraakassistent voor toegankelijkheid waarmee inhoud op het scherm hardop wordt voorgelezen.
+- **YouTube (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat gebruikers de YouTube-app gebruiken. **Niet geconfigureerd**: staat gebruik van de YouTube-app toe op het apparaat.
+- **Gedeelde apparaten (alleen voor Samsung Knox)** : hiermee kunt u een beheerd Samsung Knox Standard-apparaat configureren als een gedeeld apparaat. Als deze optie is ingesteld op  **Toestaan**, kunnen eindgebruikers hun Azure AD-referenties gebruiken om zich aan en af te melden bij het apparaat. Het apparaat blijft beheerd, ongeacht of het in gebruik is of niet.</br>Wanneer deze functie wordt gebruikt met een SCEP-certificaatprofiel, zorgt u er hiermee voor dat eindgebruikers een apparaat met dezelfde apps kunnen delen voor alle gebruikers. Elke gebruiker heeft wel een eigen SCEP-gebruikerscertificaat. Wanneer ze zich afmelden, worden alle app-gegevens gewist. Deze functie is beperkt tot LOB-apps. </br>**Niet geconfigureerd**: hiermee wordt voorkomen dat meerdere eindgebruikers zich met hun eigen Azure AD-referenties aanmelden bij de bedrijfsportal-app op het apparaat.
+- **Wijzigingen in datum en tijd blokkeren (Samsung Knox)** : kies **Blokkeren** om te voorkomen dat de gebruiker de datum- en tijdinstellingen op het apparaat kan wijzigen. **Niet geconfigureerd**: staat gebruikers toe om de datum- en tijdinstellingen te wijzigen.
 
 ## <a name="password"></a>Wachtwoord
 
@@ -55,7 +54,7 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
 - **Minimale wachtwoordlengte**: voer de minimale lengte van het wachtwoord in dat een gebruiker moet invoeren (tussen 4 en 16 tekens).
 - **Maximale aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**: voer het maximale aantal minuten van inactiviteit in dat is toegestaan op het apparaat totdat het scherm wordt vergrendeld. Een eindgebruiker kan op een apparaat geen tijdwaarde instellen die groter is dan de geconfigureerde tijd in het profiel. Een eindgebruiker kan een lagere tijdwaarde instellen. Bijvoorbeeld: als het profiel is ingesteld op 15 minuten, kan een eindgebruiker de waarde instellen op 5 minuten. Een eindgebruiker kan de waarde niet instellen op 30 minuten. 
 - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: voer het aantal mislukte aanmeldingen in dat is toegestaan voordat het apparaat wordt gewist.
-- **Wachtwoord verloopt (dagen)**: voer het aantal dagen in voordat het wachtwoord voor het apparaat moet worden gewijzigd.
+- **Wachtwoord verloopt (dagen)** : voer het aantal dagen in voordat het wachtwoord voor het apparaat moet worden gewijzigd.
 - **Vereist wachtwoordtype**: geef het vereiste complexiteitsniveau voor het wachtwoord op en of biometrische apparaten kunnen worden gebruikt. Uw opties zijn:
   - **Standaardwaarde apparaat**
   - **Lage beveiligingsbiometrie**
@@ -65,7 +64,7 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
   - **Ten minste alfanumeriek**
   - **Minstens alfanumeriek met symbolen**
 - **Wachtwoorden niet opnieuw gebruiken**: hiermee voorkomt u dat eindgebruikers een wachtwoord kunnen maken dat zij al eerder hebben gebruikt.
-- **Ontgrendelen met vingerafdruk (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat vingerafdrukken kunnen worden gebruikt om het apparaat te ontgrendelen. **Niet geconfigureerd**: staat de gebruiker toe het apparaat te ontgrendelen met een vingerafdruk.
+- **Ontgrendelen met vingerafdruk (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat vingerafdrukken kunnen worden gebruikt om het apparaat te ontgrendelen. **Niet geconfigureerd**: staat de gebruiker toe het apparaat te ontgrendelen met een vingerafdruk.
 - **Smart Lock en andere trustagenten**: kies **Blokkeren** om te voorkomen dat Smart Lock of andere trustagenten instellingen voor het vergrendelingsscherm aanpassen (Samsung KNOX Standard 5.0 +). Met deze telefoonfunctie, ook wel een vertrouwensagent genoemd, kunt u het wachtwoord voor het vergrendelingsscherm op het apparaat uitschakelen of overslaan als het apparaat zich op een vertrouwde locatie bevindt. Deze functie kan bijvoorbeeld worden gebruikt wanneer het apparaat is verbonden met een bepaald Bluetooth-apparaat of wanneer het zich in de buurt van een NFC-tag bevindt. U kunt deze instelling gebruiken om te voorkomen dat gebruikers Smart Lock configureren.
 - **Versleuteling**: kies **Vereisen** om bestanden op het apparaat te versleutelen. Niet alle apparaten ondersteunen versleuteling. Om deze functie te gebruiken, moet u ook het volgende doen: 
   1. Stel **Wachtwoord** in op **Vereisen**.
@@ -84,7 +83,7 @@ Als u  **Vereist wachtwoordtype** instelt op **Numeriek complex** en het beleid 
 
 ## <a name="google-play-store"></a>Google Play Store
 
-- **Google Play Store (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat gebruikers de Google Play Store gebruiken. **Niet geconfigureerd**: hiermee staat u toe dat de gebruiker toegang heeft tot de Google Play Store op het apparaat.
+- **Google Play Store (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat gebruikers de Google Play Store gebruiken. **Niet geconfigureerd**: hiermee staat u toe dat de gebruiker toegang heeft tot de Google Play Store op het apparaat.
 
 ## <a name="restricted-apps"></a>Beperkte apps
 
@@ -103,15 +102,15 @@ Als u apps wilt toevoegen aan deze lijsten, kunt u:
 
 ## <a name="browser"></a>Browser
 
-- **Webbrowser (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat de standaardwebbrowser op het apparaat wordt gebruikt. **Niet geconfigureerd**: hiermee kan de standaardwebbrowser van het apparaat worden gebruikt.
-- **Automatisch invullen (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat tekst automatisch wordt ingevuld in de browser. **Niet geconfigureerd**: hiermee staat u het gebruik van de functie voor automatisch invullen van de webbrowser toe.
-- **Cookies (alleen voor Samsung Knox)**: geef aan hoe u cookies van websites wilt afhandelen op het apparaat. Uw opties zijn:
+- **Webbrowser (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat de standaardwebbrowser op het apparaat wordt gebruikt. **Niet geconfigureerd**: hiermee kan de standaardwebbrowser van het apparaat worden gebruikt.
+- **Automatisch invullen (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat tekst automatisch wordt ingevuld in de browser. **Niet geconfigureerd**: hiermee staat u het gebruik van de functie voor automatisch invullen van de webbrowser toe.
+- **Cookies (alleen voor Samsung Knox)** : geef aan hoe u cookies van websites wilt afhandelen op het apparaat. Uw opties zijn:
   - Toestaan
   - Alle cookies blokkeren
   - Cookies van bezochte websites toestaan
   - Cookies van huidige website toestaan
-- **JavaScript (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat de webbrowser Java-scripts uitvoert. **Niet geconfigureerd**: hiermee staat u toe dat de webbrowser Java-scripts uitvoert op het apparaat.
-- **Pop-ups (alleen voor Samsung Knox)**: kies **Blokkeren** om de weergave van pop-ups in de webbrowser te voorkomen. Met **Niet geconfigureerd** zijn pop-ups toegestaan in de webbrowser.
+- **JavaScript (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat de webbrowser Java-scripts uitvoert. **Niet geconfigureerd**: hiermee staat u toe dat de webbrowser Java-scripts uitvoert op het apparaat.
+- **Pop-ups (alleen voor Samsung Knox)** : kies **Blokkeren** om de weergave van pop-ups in de webbrowser te voorkomen. Met **Niet geconfigureerd** zijn pop-ups toegestaan in de webbrowser.
 
 ## <a name="allow-or-block-apps"></a>Apps toestaan of blokkeren
 
@@ -131,21 +130,21 @@ Voeg voor elke instelling een lijst met apps toe. Uw opties zijn:
 
 ## <a name="cloud-and-storage"></a>Cloud en opslag
 
-- **Google-back-up (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat het apparaat synchroniseren met Google-back-up. **Niet geconfigureerd**: hiermee staat u het gebruik van Google-back-up toe.
-- **Google-account automatisch synchroniseren (alleen voor Samsung Knox)**: kies **Blokkeren** om de functie voor het automatisch synchroniseren van het Google-account op het apparaat te blokkeren. **Niet geconfigureerd**: toestaan dat instellingen voor Google-accounts automatisch worden gesynchroniseerd.
-- **Verwisselbare opslag (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat op het apparaat verwisselbare opslag wordt gebruikt. **Niet geconfigureerd**: hiermee staat u het gebruik toe van verwisselbare opslag, zoals een SD-kaart, op het apparaat.
-- **Versleuteling voor opslagkaarten (alleen voor Samsung Knox)**: kies **Vereisen** om in te stellen dat opslagkaarten moeten worden versleuteld. **Niet geconfigureerd**: hiermee kunnen niet-versleutelde opslagkaarten worden gebruikt. Niet alle apparaten ondersteunen versleuteling van opslagkaarten. Neem voor meer informatie contact op met de fabrikant van het apparaat.
+- **Google-back-up (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat het apparaat synchroniseren met Google-back-up. **Niet geconfigureerd**: hiermee staat u het gebruik van Google-back-up toe.
+- **Google-account automatisch synchroniseren (alleen voor Samsung Knox)** : kies **Blokkeren** om de functie voor het automatisch synchroniseren van het Google-account op het apparaat te blokkeren. **Niet geconfigureerd**: toestaan dat instellingen voor Google-accounts automatisch worden gesynchroniseerd.
+- **Verwisselbare opslag (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat op het apparaat verwisselbare opslag wordt gebruikt. **Niet geconfigureerd**: hiermee staat u het gebruik toe van verwisselbare opslag, zoals een SD-kaart, op het apparaat.
+- **Versleuteling voor opslagkaarten (alleen voor Samsung Knox)** : kies **Vereisen** om in te stellen dat opslagkaarten moeten worden versleuteld. **Niet geconfigureerd**: hiermee kunnen niet-versleutelde opslagkaarten worden gebruikt. Niet alle apparaten ondersteunen versleuteling van opslagkaarten. Neem voor meer informatie contact op met de fabrikant van het apparaat.
 
 ## <a name="cellular-and-connectivity"></a>Mobiel en connectiviteit
 
-- **Dataroaming (alleen voor Samsung Knox)**: kies **Blokkeren** om dataroaming via het mobiele netwerk te voorkomen. **Niet geconfigureerd**: staat dataroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.
-- **Sms-/mms-berichten (alleen voor Samsung Knox)**: kies **Blokkeren** om het gebruik van sms- en mms-berichten op het apparaat te voorkomen. **Niet geconfigureerd**: hiermee staat u het gebruik van sms- en mms-berichten toe op het apparaat.
-- **Nummer inspreken (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat gebruikers de functie Nummer inspreken op het apparaat gebruiken. **Niet geconfigureerd**: hiermee wordt Nummer inspreken toegestaan op het apparaat.
-- **Spraakroaming (alleen voor Samsung Knox)**: kies **Blokkeren** om spraakroaming via het mobiele netwerk te voorkomen. **Niet geconfigureerd**: staat spraakroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.
-- **Bluetooth (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat Bluetooth wordt gebruikt op het apparaat. **Niet geconfigureerd**: hiermee kan de gebruiker Bluetooth op het apparaat gebruiken.
-- **NFC (alleen voor Samsung Knox)**: kies **Blokkeren** om de NFC-technologie (Near Field Communication) te stoppen. **Niet geconfigureerd**: hiermee staat u bewerkingen toe waarvoor NFC wordt gebruikt op ondersteunde apparaten.
-- **Wi-Fi (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat Wi-Fi wordt gebruikt op het apparaat. **Niet geconfigureerd**: staat het gebruik van Wi-Fi-functies toe op het apparaat.
-- **Wi-Fi-tethering (alleen voor Samsung Knox)**: kies **Blokkeren** om te voorkomen dat Wi-Fi-tethering wordt gebruikt op het apparaat. **Niet geconfigureerd**: hiermee wordt het gebruik van Wi-Fi-tethering op het apparaat toegestaan.
+- **Dataroaming (alleen voor Samsung Knox)** : kies **Blokkeren** om dataroaming via het mobiele netwerk te voorkomen. **Niet geconfigureerd**: staat dataroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.
+- **Sms-/mms-berichten (alleen voor Samsung Knox)** : kies **Blokkeren** om het gebruik van sms- en mms-berichten op het apparaat te voorkomen. **Niet geconfigureerd**: hiermee staat u het gebruik van sms- en mms-berichten toe op het apparaat.
+- **Nummer inspreken (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat gebruikers de functie Nummer inspreken op het apparaat gebruiken. **Niet geconfigureerd**: hiermee wordt Nummer inspreken toegestaan op het apparaat.
+- **Spraakroaming (alleen voor Samsung Knox)** : kies **Blokkeren** om spraakroaming via het mobiele netwerk te voorkomen. **Niet geconfigureerd**: staat spraakroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.
+- **Bluetooth (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat Bluetooth wordt gebruikt op het apparaat. **Niet geconfigureerd**: hiermee kan de gebruiker Bluetooth op het apparaat gebruiken.
+- **NFC (alleen voor Samsung Knox)** : kies **Blokkeren** om de NFC-technologie (Near Field Communication) te stoppen. **Niet geconfigureerd**: hiermee staat u bewerkingen toe waarvoor NFC wordt gebruikt op ondersteunde apparaten.
+- **Wi-Fi (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat Wi-Fi wordt gebruikt op het apparaat. **Niet geconfigureerd**: staat het gebruik van Wi-Fi-functies toe op het apparaat.
+- **Wi-Fi-tethering (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat Wi-Fi-tethering wordt gebruikt op het apparaat. **Niet geconfigureerd**: hiermee wordt het gebruik van Wi-Fi-tethering op het apparaat toegestaan.
 
 ## <a name="kiosk"></a>Kiosk
 

@@ -473,8 +473,8 @@
               href: certificates-s-mime-encryption-sign.md
             - name: Externe certificeringsinstantie gebruiken met SCEP
               href: certificate-authority-add-scep-overview.md
-            - name: Symantec PKI Manager-webservice
-              href: certificates-symantec-configure.md
+            - name: DigiCert PKI gebruiken
+              href: certificates-digicert-configure.md
             - name: SCEP- of PKCS-certificaten verwijderen
               href: remove-certificates.md
         - name: Mobiele eSIM-profielen

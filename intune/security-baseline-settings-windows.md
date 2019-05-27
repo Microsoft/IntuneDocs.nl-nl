@@ -1,7 +1,7 @@
 ---
-title: Windows-beveiligingsbasislijninstellingen voor Intune
+title: Intune-beveiligingsbasislijninstellingen voor Windows 10
 titleSuffix: Microsoft Intune
-description: Windows-beveiligingsbasislijninstellingen die worden ondersteund door Intune
+description: Intune-beveiligingsbasislijninstellingen voor het beheer van Windows 10
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67938f8697002f94f275f953510d1b0f4864a3fa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 1d9d095db4d10630555e5696610535bb828f0b5f
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566723"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733066"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Windows-beveiligingsbasislijninstellingen voor Intune  
 
@@ -39,7 +39,7 @@ Zie [Beleids-CSP - AboveLock](https://docs.microsoft.com/windows/client-manageme
 - **Weergave van toast-meldingen blokkeren**  
   Met deze beleidsinstelling kunt u voorkomen dat app-meldingen in het vergrendelingsscherm worden weergegeven. Als u deze beleidsinstelling inschakelt, worden geen app-meldingen weergegeven op het vergrendelingsscherm. Als u deze beleidsinstelling uitschakelt of niet configureert, kunnen gebruikers kiezen voor welke app meldingen op het vergrendelingsscherm worden weergegeven.
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
 
 ## <a name="app-runtime"></a>App-runtime    
 Zie [Beleids-CSP - AppRuntime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-appruntime
@@ -56,7 +56,7 @@ Zie [Beleids-CSP - ApplicationManagement](https://docs.microsoft.com/windows/cli
 - **Game DVR blokkeren (alleen desktop)**  
   Hiermee bepaalt u of het opnemen en uitzenden van games is toegestaan.
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
 
 ## <a name="auto-play"></a>Automatisch afspelen   
 Zie [Beleids-CSP - Automatisch afspelen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-autoplay) in de Windows-documentatie voor meer informatie.  
@@ -64,7 +64,7 @@ Zie [Beleids-CSP - Automatisch afspelen](https://docs.microsoft.com/windows/clie
 - **Automatisch afspelen: standaardgedrag voor AutoRun**  
   Deze instelling beïnvloedt het standaardgedrag voor AutoRun-opdrachten. AutoRun-opdrachten worden opgeslagen in AutoRun.inf-bestanden en kunnen worden gebruikt voor het starten van installatieprogramma's of andere routines. Wanneer deze optie is *ingeschakeld*, kunnen beheerders het standaardgedrag van AutoRun wijzigen op een apparaat waarop Windows Vista of later wordt uitgevoerd. Gedrag kan worden ingesteld op: a) AutoRun-opdrachten volledig uitschakelen, of b) terugzetten naar gedrag voordat Windows Vista werd uitgevoerd, waarbij de AutoRun-opdracht automatisch werd uitgevoerd. Wanneer deze optie is ingesteld op *Uitgeschakeld* of *Niet geconfigureerd*,worden gebruikers op apparaten waarop Windows Vista of later wordt uitgevoerd, gevraagd om een AutoRun-opdracht moet worden uitgevoerd.
   
-  **Standaard**: niet uitvoeren  
+  **Standaardinstelling**: Niet uitvoeren  
   
 - **De modus Automatisch afspelen**  
   Met deze beleidsinstelling kunt u de functie Automatisch afspelen uitschakelen. Met Automatisch afspelen worden gegevens van een station afgelezen zodra u media in het station plaatst. Hierdoor worden installatiebestanden van programma's direct uitgevoerd en wordt muziek op audiomedia direct afgespeeld. Vóór Windows XP SP2 werd Automatisch afspelen standaard uitgeschakeld op losse stations, zoals het floppydiskstation (maar niet het cd-rom-station) en op netwerkstations. Vanaf Windows XP SP2 is Automatisch afspelen ook ingeschakeld voor losse stations, waaronder zip-stations en een aantal USB-apparaten voor massaopslag. Als u deze beleidsinstelling inschakelt, wordt Automatisch afspelen uitgeschakeld op cd-rom-stations en losse mediastations, of uitgeschakeld op alle stations. Met deze beleidsinstelling wordt Automatisch afspelen op andere stationstypen uitgeschakeld. U kunt deze instelling niet gebruiken voor het uitschakelen van Automatisch afspelen op stations waarop deze functie standaard is uitgeschakeld. Als u deze beleidsinstelling uitschakelt of niet configureert, wordt automatisch afspelen ingeschakeld. Opmerking: deze beleidsinstelling wordt zowel in de map Computerconfiguratie als Gebruikersconfiguratie weergegeven. Als de beleidsinstellingen conflicteren, heeft de beleidsinstelling in Computerconfiguratie een hogere prioriteit dan de beleidsinstelling in Gebruikersconfiguratie.
@@ -83,27 +83,27 @@ Zie [Beleids-CSP - Bitlocker](https://docs.microsoft.com/windows/client-manageme
 - **Bitlocker-beleid voor losse stations**  
   Deze beleidsinstelling wordt gebruikt om de versleutelingsmethode en coderingssterkte te regelen. De waarden van dit beleid bepalen de coderingssterkte die door BitLocker wordt gebruikt voor versleuteling. Ondernemingen kunnen het versleutelingsniveau bepalen voor extra beveiliging (AES-256 is sterker dan AES-128). Als u deze instelling inschakelt, kunt u afzonderlijke versleutelingsalgoritmen en belangrijke coderingssterkten configureren voor vaste gegevensstations, besturingssysteemstations en losse gegevensstations. Voor vaste stations en besturingssysteemstations wordt het gebruik van het XTS-AES-algoritme aanbevolen. Gebruik 128-bits AES-CBC of 256-bits AES-CBC voor losse stations als het station in andere apparaten wordt gebruikt waarop geen Windows 10, versie 1511 of later wordt uitgevoerd. Het wijzigen van de versleutelingsmethode heeft geen invloed als het station al is versleuteld of als de versleuteling nog wordt uitgevoerd. In deze gevallen wordt deze beleidsinstelling genegeerd.
 
-  Voor het beleid voor bits BitLocker verwisselbaar station, moet u de volgende instellingen configureren:
+  Voor het BitLocker-beleid voor verwisselbare stations moet u de volgende instellingen configureren:
 
     - **Versleuteling vereisen voor schrijftoegang**  
-      **Standaard**: Ja  
+      **Standaardinstelling**: Ja  
   
     - **Versleutelingsmethode**  
-      **Standaard**: AES 256-bits CBC  
+      **Standaardinstelling**: AES 256-bits CBC  
 
 - **Bitlocker-beleid voor vaste stations**  
   Deze beleidsinstelling wordt gebruikt om de versleutelingsmethode en coderingssterkte te regelen. De waarden van dit beleid bepalen de coderingssterkte die door BitLocker wordt gebruikt voor versleuteling. Ondernemingen kunnen het versleutelingsniveau bepalen voor extra beveiliging (AES-256 is sterker dan AES-128). Als u deze instelling inschakelt, kunt u afzonderlijke versleutelingsalgoritmen en belangrijke coderingssterkten configureren voor vaste gegevensstations, besturingssysteemstations en losse gegevensstations. Voor vaste stations en besturingssysteemstations wordt het gebruik van het XTS-AES-algoritme aanbevolen. Gebruik 128-bits AES-CBC of 256-bits AES-CBC voor losse stations als het station in andere apparaten wordt gebruikt waarop geen Windows 10, versie 1511 of later wordt uitgevoerd. Het wijzigen van de versleutelingsmethode heeft geen invloed als het station al is versleuteld of als de versleuteling nog wordt uitgevoerd. In deze gevallen wordt deze beleidsinstelling genegeerd.  
  
-   Voor BitLocker vast station beleid, moet u de volgende instellingen configureren: 
+   Voor het BitLocker-beleid voor vaste stations moet u de volgende instellingen configureren: 
    - **Versleutelingsmethode**
-     **standaard**: AES 256-bits XTS  
+     **Standaard**: AES 256-bits XTS  
 
 - **Bitlocker-beleid voor systeemstations**  
   Deze beleidsinstelling wordt gebruikt om de versleutelingsmethode en coderingssterkte te regelen. De waarden van dit beleid bepalen de coderingssterkte die door BitLocker wordt gebruikt voor versleuteling. Ondernemingen kunnen het versleutelingsniveau bepalen voor extra beveiliging (AES-256 is sterker dan AES-128). Als u deze instelling inschakelt, kunt u afzonderlijke versleutelingsalgoritmen en belangrijke coderingssterkten configureren voor vaste gegevensstations, besturingssysteemstations en losse gegevensstations. Voor vaste stations en besturingssysteemstations wordt het gebruik van het XTS-AES-algoritme aanbevolen. Gebruik 128-bits AES-CBC of 256-bits AES-CBC voor losse stations als het station in andere apparaten wordt gebruikt waarop geen Windows 10, versie 1511 of later wordt uitgevoerd. Het wijzigen van de versleutelingsmethode heeft geen invloed als het station al is versleuteld of als de versleuteling nog wordt uitgevoerd. In deze gevallen wordt deze beleidsinstelling genegeerd.  
 
-   Voor bits BitLocker station systeembeleid, moet u de volgende instellingen configureren:
+   Voor het BitLocker-beleid voor het systeemstation moet u de volgende instellingen configureren:
   - **Versleutelingsmethode**  
-    **Standaard**: AES 256-bits XTS  
+    **Standaardinstelling**: AES 256-bits XTS  
 
 ## <a name="browser"></a>Browser  
 Zie [Beleids-CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) in de Windows-documentatie voor meer informatie.  
@@ -111,26 +111,26 @@ Zie [Beleids-CSP - Browser](https://docs.microsoft.com/windows/client-management
 - **SmartScreen vereisen voor Microsoft Edge**  
   Microsoft Edge gebruikt standaard Windows Defender SmartScreen (ingeschakeld) om gebruikers tegen mogelijke oplichting door phishing en schadelijke software te beschermen. Bovendien kunnen gebruikers Windows Defender SmartScreen standaard niet uitschakelen (uitzetten). Als u dit beleid inschakelt, wordt Windows Defender SmartScreen uitgeschakeld en kunnen gebruikers deze functie niet inschakelen. Configureer dit beleid niet als u gebruikers Windows Defender SmartScreen zelf wilt kunnen laten in- of uitschakelen.  
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
   
 - **Toegang tot schadelijke sites blokkeren**  
   Standaard hebben gebruikers in Microsoft Edge toestemming om de Windows Defender SmartScreen-waarschuwingen over mogelijke schadelijke websites te omzeilen (negeren), zodat ze de site kunnen blijven gebruiken. Met dit beleid kunt u Microsoft Edge echter zo configureren dat gebruikers de waarschuwingen niet kunnen omzeilen, waardoor ze de website dus niet langer kunnen gebruiken.
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
   
 - **Downloaden van niet-geverifieerde bestanden blokkeren** Standaard hebben gebruikers in Microsoft Edge toestemming om de Windows Defender SmartScreen-waarschuwingen over mogelijk schadelijke bestanden te omzeilen (negeren), waardoor ze de niet-geverifieerde bestanden kunnen blijven downloaden. Als u dit beleid inschakelt, voorkomt u dat gebruikers de waarschuwingen kunnen omzeilen, waardoor ze de niet-geverifieerde bestanden niet meer kunnen downloaden.
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
   
 - **Wachtwoordbeheer blokkeren**  
   Standaard gebruikt Microsoft Edge Wachtwoordbeheer automatisch, waardoor gebruikers wachtwoorden lokaal kunnen beheren. Als u dit beleid uitschakelt, voorkomt u dat Microsoft Edge Wachtwoordbeheer kan gebruiken. Configureer dit beleid niet als u gebruikers wilt laten kiezen om wachtwoorden lokaal te laten opslaan en beheren met Wachtwoordbeheer.
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
   
 - **Overschrijving van certificaatfouten voorkomen**  
   Deze beleidsinstelling voorkomt dat gebruikers fouten in het SSL/TLS-certificaat (Secure Sockets Layer/Transport Layer Security) negeren die het bladeren in Internet Explorer onderbreken (zoals 'verlopen', 'ingetrokken' of 'namen komen niet overeen'). Als u deze beleidsinstelling inschakelt, kan de gebruiker niet doorgaan met bladeren. Als u deze beleidsinstelling uitschakelt of niet configureert, kan de gebruiker kiezen certificaatfouten te negeren en doorgaan met bladeren.
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
 
 ## <a name="connectivity"></a>Connectiviteit  
 Zie [Beleids-CSP - Connectiviteit](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) in de Windows-documentatie voor meer informatie.  
@@ -150,7 +150,7 @@ Zie [Beleids-CSP - CredentialsDelegation](https://docs.microsoft.com/windows/cli
 ) in de Windows-documentatie voor meer informatie.  
 
 - **Delegatie van externe host van aanmeldingsgegevens die niet kunnen worden geëxporteerd**  
-  Met een externe host staat u toe dat aanmeldingsgegevens die niet kunnen worden geëxporteerd, kunnen worden gedelegeerd. Wanneer u de overdracht van referenties, bieden-apparaten een exporteerbare versie van referenties met de externe host, waarmee gebruikers het risico van referentiediefstal tegen kwaadwillende personen op de externe host. Als u deze beleidsinstelling inschakelt, biedt de host ondersteuning voor de modi Beperkt beheer of Externe Credential Guard. Als u deze beleidsinstelling uitschakelt of niet configureert, worden de modi Beperkt beheer of Externe Credential Guard niet ondersteund. De gebruiker moet zijn of haar aanmeldingsgegevens altijd doorgeven aan de host.  
+  Met een externe host staat u toe dat aanmeldingsgegevens die niet kunnen worden geëxporteerd, kunnen worden gedelegeerd. Wanneer u overdracht van referenties gebruikt, leveren apparaten een exporteerbare versie van referenties aan de externe host, waarmee gebruikers het risico lopen op diefstal van referenties door aanvallers op de externe host. Als u deze beleidsinstelling inschakelt, biedt de host ondersteuning voor de modi Beperkt beheer of Externe Credential Guard. Als u deze beleidsinstelling uitschakelt of niet configureert, worden de modi Beperkt beheer of Externe Credential Guard niet ondersteund. De gebruiker moet zijn of haar aanmeldingsgegevens altijd doorgeven aan de host.  
 
   
   **Standaardinstelling**: ingeschakeld  
@@ -171,7 +171,7 @@ Zie [Beleids-CSP - DataProtection](https://docs.microsoft.com/windows/client-man
   Met deze beleidsinstelling kunt u Direct Memory Access (DMA) blokkeren voor alle hot-pluggable PCI-downstream-poorten totdat een gebruiker zich bij Windows aanmeldt. Zodra een gebruiker zich heeft aangemeld, somt Windows de PCI-apparaten op die met de PCI-poorten van de host zijn verbonden. Steeds wanneer de gebruiker het apparaat vergrendelt, wordt DMA geblokkeerd op hot-pluggable PCI-poorten zonder onderliggende apparaten totdat de gebruiker zich opnieuw aanmeldt. Apparaten die al waren geïnventariseerd toen het apparaat was ontgrendeld, blijven werken totdat ze worden losgekoppeld. Deze beleidsinstelling wordt uitsluitend afgedwongen wanneer BitLocker of apparaatversleuteling is ingeschakeld.
   
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
 
 ## <a name="device-guard"></a>Device Guard  
 Zie [Beleids-CSP - DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard
@@ -180,12 +180,12 @@ Zie [Beleids-CSP - DeviceGuard](https://docs.microsoft.com/windows/client-manage
 - **Credential Guard**  
   Met deze instelling kunnen gebruikers Credential Guard inschakelen met op virtualisatie gebaseerde beveiliging om aanmeldingsgegevens bij opnieuw opstarten te beschermen.
    
-  **Standaard**: inschakelen met UEFI-vergrendeling 
+  **Standaardinstelling**: Inschakelen met UEFI-vergrendeling 
 
 - **Beveiliging op basis van virtualisatie inschakelen**  </br>
   Met deze optie wordt Beveiliging op basis van virtualisatie (VBS) ingeschakeld bij de volgende keer opnieuw opstarten. Beveiliging op basis van virtualisatie maakt gebruik van de Windows-Hypervisor om ondersteuning te bieden voor beveiligingsservices.
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
 
 <!-- not yet available 
 - **Enable secure boot with DMA**  
@@ -205,24 +205,24 @@ Zie [Beleids-CSP - apparaatinstallatie](https://docs.microsoft.com/windows/clien
   
   **Standaardinstelling**: installatie van hardwareapparaten blokkeren  
 
-    Wanneer *installatie van de hardware-apparaten blokkeren* is geselecteerd, de volgende instellingen zijn beschikbaar.
+    Wanneer *installatie van hardwareapparaten blokkeren* wordt geselecteerd, zijn de volgende instellingen beschikbaar.
   
     - **Overeenkomende hardwareapparaten verwijderen**   
     Deze instelling is alleen beschikbaar als *Installatie hardwareapparaten op apparaat-id* is ingesteld op *Installatie van hardwareapparaten blokkeren*.
       
-      **Standaard**: Ja
+      **Standaardinstelling**: Ja
   
     - **Hardwareapparaat-id's die zijn geblokkeerd**  
        Deze instelling is alleen beschikbaar als *Installatie hardwareapparaten op apparaat-id* is ingesteld op *Installatie van hardwareapparaten blokkeren*.
       
-      **Standaard**: Ja  
+      **Standaardinstelling**: Ja  
   
 - **Installatie van hardwareapparaten op basis van installatieklassen**  
   Met deze beleidsinstelling kunt u een lijst opgeven met GUID's (Globally Unique Identifiers) voor de installatieklasse van apparaten voor apparaatstuurprogramma's die niet mogen worden geïnstalleerd in Windows. Deze beleidsinstelling heeft een hogere prioriteit dan welke andere beleidsinstelling dan ook waarmee Windows wordt toegestaan een apparaat te installeren. Als u deze beleidsinstelling inschakelt, mogen apparaatstuurprogramma's waarvan de GUID's voor de installatieklasse van apparaten niet in de door u gemaakte lijst staan, niet worden geïnstalleerd of bijgewerkt in Windows. Als u deze beleidsinstelling inschakelt op een externe desktopserver, heeft deze invloed op de omleiding van de opgegeven apparaten van een externe desktopclient naar de externe desktopserver. Als u deze beleidsinstelling uitschakelt of niet configureert, kan Windows apparaten installeren en bijwerken, voor zover dat door andere beleidsinstellingen is toegestaan of verboden.
   
   **Standaardinstelling**: installatie van hardwareapparaten blokkeren  
 
-    Wanneer *installatie van de hardware-apparaten blokkeren* is geselecteerd, de volgende instellingen zijn beschikbaar.
+    Wanneer *installatie van hardwareapparaten blokkeren* wordt geselecteerd, zijn de volgende instellingen beschikbaar.
     - **Overeenkomende hardwareapparaten verwijderen**    
     Deze instelling is alleen beschikbaar wanneer *Installatie hardwareapparaten op installatieklasse* is ingesteld op *Installatie van hardwareapparaten blokkeren*.  
 
@@ -244,12 +244,12 @@ Zie [Beleids-CSP - DeviceLock](https://docs.microsoft.com/windows/client-managem
 - **Wachtwoord vereisen**  
   Hiermee geeft u aan of apparaatvergrendeling is ingeschakeld.
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
   
-    Wanneer *wachtwoord vereisen* is ingesteld op *Ja*, de volgende instellingen zijn beschikbaar.
+    Wanneer *Wachtwoord vereisen* is ingesteld op *Ja*, zijn de volgende instellingen beschikbaar.
 
     - **Wachtwoord: minimumaantal tekensets**  
-      Het aantal complexe elementtypen (hoofdletters en kleine letters, cijfers en leestekens) dat is vereist voor een sterke pincode of een sterk wachtwoord. PINCODE wordt afgedwongen voor het volgende gedrag voor desktop- en mobiele apparaten: 1 - cijfers alleen 2 - cijfers en kleine letters zijn vereiste 3: cijfers, kleine letters, en hoofdletters vereist zijn. Niet ondersteund in Microsoft-desktopaccounts en domeinaccounts. 4 - Cijfers, kleine letters, hoofdletters en speciale tekens zijn vereist. Dit wordt niet ondersteund in desktop. De standaardwaarde is 1. 
+      Het aantal complexe elementtypen (hoofdletters en kleine letters, cijfers en leestekens) dat is vereist voor een sterke pincode of een sterk wachtwoord. Pincodes leiden tot het volgende gedrag op computers en mobiele apparaten: 1 - Alleen cijfers 2 - Cijfers en kleine letters zijn vereist 3 - Cijfers, kleine letters en hoofdletters zijn vereist. Niet ondersteund in Microsoft-desktopaccounts en domeinaccounts. 4 - Cijfers, kleine letters, hoofdletters en speciale tekens zijn vereist. Dit wordt niet ondersteund in desktop. De standaardwaarde is 1. 
       
       **Standaardinstelling**: 3  
   
@@ -266,7 +266,7 @@ Zie [Beleids-CSP - DeviceLock](https://docs.microsoft.com/windows/client-managem
     - **Vereist wachtwoordtype**  
       Hiermee bepaalt u het type pincode of wachtwoord dat is vereist.
       
-      **Standaard**: alfanumerieke  
+      **Standaardinstelling**: Alfanumeriek  
   
     - **Minimale wachtwoordlengte**  
       Met de beleidsinstelling Minimale wachtwoordlengte bepaalt u het minimumaantal tekens waaruit een wachtwoord voor een gebruikersaccount mag bestaan. U kunt een waarde tussen 1 en 14 tekens instellen, of u kunt instellen dat er geen wachtwoord is vereist door het aantal tekens in te stellen 0.
@@ -276,16 +276,16 @@ Zie [Beleids-CSP - DeviceLock](https://docs.microsoft.com/windows/client-managem
     - **Eenvoudige wachtwoorden blokkeren**  
       Hiermee geeft u aan of pincodes of wachtwoorden zoals '1111' en '1234' zijn toegestaan. Voor de desktop bepaalt u hiermee ook of afbeeldingswachtwoorden mogen worden gebruikt.
       
-      **Standaard**: Ja  
+      **Standaardinstelling**: Ja  
         *Wanneer u deze optie instelt op Ja mogen eenvoudige wachtwoorden niet worden gebruikt.* 
 
   - **Wachtwoorden niet opnieuw gebruiken**  
-    Hiermee geeft u op hoeveel wachtwoorden in de geschiedenis kunnen worden opgeslagen die niet mogen worden gebruikt. De waarde bevat ook het huidige wachtwoord van de gebruiker. Bijvoorbeeld, met een instelling van *1* niet de gebruiker opnieuw gebruiken van het huidige wachtwoord bij het kiezen van een nieuw wachtwoord. Een instelling van *5* betekent dat het nieuwe wachtwoord van een gebruiker kan niet worden ingesteld op het huidige wachtwoord of een van de vier wachtwoorden.
+    Hiermee geeft u op hoeveel wachtwoorden in de geschiedenis kunnen worden opgeslagen die niet mogen worden gebruikt. De waarde bevat ook het huidige wachtwoord van de gebruiker. Met de instelling *1* kan de gebruiker bijvoorbeeld zijn huidige wachtwoord niet opnieuw gebruiken bij het kiezen van een nieuw wachtwoord. De instelling *5* betekent een gebruiker zijn nieuwe wachtwoord niet kan instellen op zijn huidige wachtwoord of een van zijn vier wachtwoorden daarvoor.
     
     **Standaardinstelling**: 24  
 
 - **Diavoorstelling voorkomen**  
-  Hiermee schakelt u de instellingen voor een diavoorstelling op het vergrendelingsscherm bij de pc-instellingen uit en voorkomt u dat een diavoorstelling op het vergrendelingsscherm wordt afgespeeld. Standaard kunnen gebruikers een diavoorstelling inschakelen die wordt uitgevoerd nadat ze het apparaat vergrendelen. Als u deze instelling inschakelt, wordt gebruikers kunnen instellingen voor diavoorstelling in PC-instellingen niet wijzigen en geen diavoorstelling kan gaan.
+  Hiermee schakelt u de instellingen voor een diavoorstelling op het vergrendelingsscherm bij de pc-instellingen uit en voorkomt u dat een diavoorstelling op het vergrendelingsscherm wordt afgespeeld. Standaard kunnen gebruikers een diavoorstelling inschakelen die wordt uitgevoerd nadat ze het apparaat vergrendelen. Als u deze instelling inschakelt, kunnen gebruikers geen instellingen voor diavoorstellingen bij de pc-instellingen aanpassen en kan er geen diavoorstelling worden gestart.
   
     **Standaardinstelling**: ingeschakeld  
     *De instelling Ingeschakeld voorkomt dat diavoorstellingen worden uitgevoerd.* 
@@ -319,18 +319,18 @@ Zie [Beleids-CSP - Ervaring](https://docs.microsoft.com/windows/client-managemen
 - **Windows Spotlight blokkeren**  
   Hiermee kunnen IT-beheerders alle Windows Spotlight-functies uitschakelen: Window Spotlight op het vergrendelingsscherm, Windows Tips, Microsoft consumentenfuncties en andere gerelateerde functies.
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
 
-  Wanneer *Windows-Spotlight blokkeren* is ingesteld op *Ja*, de volgende instellingen zijn beschikbaar.
+  Wanneer *Windows-spotlight blokkeren* is ingesteld op *Ja*, zijn de volgende instellingen beschikbaar.
   
   - **Suggesties van derden in Windows Spotlight blokkeren**  
     Hiermee geeft u op of app- en inhoudssuggesties van uitgevers van externe software zijn toegestaan in Windows Spotlight-functies zoals Spotlight op het vergrendelingsscherm, voorgestelde apps in het startmenu en Windows Tips. Gebruikers zien mogelijk nog wel suggesties voor Microsoft-functies, apps en services.
       
-    **Standaard**: Ja  
+    **Standaardinstelling**: Ja  
    - **Specifieke functies voor consumenten blokkeren**  
       Hiermee kunnen IT-beheerders ervaringen inschakelen die doorgaans alleen voor consumenten worden gebruikt, zoals startsuggesties, lidmaatschapsmeldingen, Post-OOBE-app-installaties en omleidingstegels.
       
-     **Standaard**: Ja  
+     **Standaardinstelling**: Ja  
 
 
 ## <a name="exploit-guard"></a>ExploitGuard  
@@ -339,7 +339,7 @@ Zie [Beleids-CSP - ExploitGuard](https://docs.microsoft.com/windows/client-manag
 - **XML Exploit Guard-beveiliging**  
   Hiermee kan de IT-beheerder een configuratie pushen die de gewenste systeem- en toepassingbeperkingsopties voor alle apparaten in de organisatie aangeeft. De configuratie wordt vertegenwoordigd door een XML. Exploit Protection helpt apparaten te beschermen tegen malware die exploits gebruikt om zichzelf te verspreiden en andere apparaten te infecteren. U gebruikt de Windows-beveiligingsapp of PowerShell om een set beperkingen te maken (dit wordt een configuratie genoemd). U kunt deze configuratie vervolgens als XML-bestand exporteren en delen met meerdere apparaten in uw netwerk, zodat ze allemaal dezelfde set beperkingsinstellingen hebben. U kunt ook een bestaand XML-bestand met een EMET-configuratie naar een XML-bestand voor exploitbeveiligingsconfiguratie converteren en importeren.
   
-  **Standaard**: *voorbeeld xml is opgegeven* 
+  **Standaardinstelling**: *Er is een voorbeeld van een XML-bestand meegeleverd* 
  
 ## <a name="file-explorer"></a>Bestandsverkenner  
 Zie [Beleids-CSP - FileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-fileexplorer) in de Windows-documentatie voor meer informatie.  
@@ -381,7 +381,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: toegang tot gegevensbronnen via een internetzone**  
   Met deze beleidsinstelling kunt u beheren of Internet Explorer toegang heeft tot gegevens van een andere beveiligingszone met behulp van de Microsoft XML-parser (MSXML) of ActiveX-gegevensobjecten (ADO). Als u deze beleidsinstelling inschakelt, kunnen gebruikers een pagina laden in de zone die MSXML of ADO gebruikt voor toegang tot gegevens van een andere site in de zone. Als u Prompt selecteert in de vervolgkeuzelijst, wordt gebruikers gevraagd om te kiezen of een pagina mag worden geladen in de zone die MSXML of ADO gebruikt voor toegang tot gegevens van een andere site in de zone. Als u deze beleidsinstelling uitschakelt, kunnen gebruikers geen pagina laden in de zone die MSXML of ADO gebruikt voor toegang tot gegevens van een andere site in de zone. Als u deze beleidsinstelling niet configureert, kunnen gebruikers geen pagina laden in de zone die MSXML of ADO gebruikt voor toegang tot gegevens van een andere site in de zone.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: inhoud van verschillende domeinen in Windows in de beperkte zone verslepen**  
   Met deze beleidsinstelling kunt u opties instellen voor het verslepen van inhoud van het ene naar het andere domein wanneer de bron en de bestemming zich in hetzelfde venster bevinden. Als u deze beleidsinstelling inschakelt en op Inschakelen klikt, kunnen gebruikers inhoud van het ene naar het andere domein verslepen wanneer de bron en de bestemming zich in hetzelfde venster bevinden. Gebruikers kunnen deze instelling niet wijzigen. Als u deze beleidsinstelling inschakelt en op Uitschakelen klikt, kunnen gebruikers geen inhoud van het ene naar het andere domein verslepen wanneer de bron en de bestemming zich in hetzelfde venster bevinden. Gebruikers kunnen deze instelling niet wijzigen in het dialoogvenster Internetopties. Als u deze beleidsinstelling in Internet Explorer 10 uitschakelt of niet configureert, kunnen gebruikers geen inhoud van het ene naar het andere domein verslepen wanneer de bron en de bestemming zich in hetzelfde venster bevinden. Gebruikers kunnen deze instelling wijzigen in het dialoogvenster Internetopties. Als u deze beleidsinstelling in Internet Explorer 9 en eerdere versies uitschakelt of niet configureert, kunnen gebruikers inhoud van het ene naar het andere domein verslepen wanneer de bron en de bestemming zich in hetzelfde venster bevinden. Gebruikers kunnen deze instelling niet wijzigen in het dialoogvenster Internetopties.
@@ -396,7 +396,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: sites met minder machtigingen in de beperkte zone**  
   Met deze beleidsinstelling kunt u beheren of websites van zones met minder machtigingen, zoals internetsites, naar deze zone mogen navigeren. Als u deze beleidsinstelling inschakelt, kunnen websites van zones met minder machtigingen nieuwe vensters openen in, of navigeren naar, deze zone. De beveiligingszone wordt uitgevoerd zonder de toegevoegde beveiligingslaag die door de beveiliging van de beveiligingsfunctie Zoneverhoging wordt geleverd. Als u Vragen in de vervolgkeuzelijst selecteert, krijgt de gebruiker een waarschuwing dat er sprake is van mogelijk riskante navigatie. Als u deze beleidsinstelling uitschakelt, is mogelijk schadelijke navigatie verboden. De beveiligingsfunctie van Internet Explorer is in deze zone ingeschakeld, zoals dit is ingesteld bij de functie Zone-uitbreiding. Als u deze beleidsinstelling niet configureert, is mogelijk schadelijke navigatie verboden. De beveiligingsfunctie van Internet Explorer is in deze zone ingeschakeld, zoals dit is ingesteld bij de functie Zone-uitbreiding.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: automatische prompt voor bestanddownloads in de beperkte zone**  
   Met deze beleidsinstelling bepaalt u of gebruikers een melding krijgen bij bestanddownloads die niet door de gebruiker zijn geïnitieerd. Gebruikers krijgen, ongeacht deze instelling, dialoogvensters te zien voor bestanddownloads die ze zelf hebben geïnitieerd. Als u deze instelling inschakelt, krijgen gebruikers een dialoogvenster voor bestanddownloads te zien bij automatische downloadpogingen. Als u deze instelling uitschakelt of niet configureert, worden bestanddownloads die niet door de gebruiker zelf zijn geïnitieerd geblokkeerd en zien gebruikers de Meldingenbalk in plaats van het dialoogvenster voor bestanddownloads. Gebruikers kunnen vervolgens op de Meldingenbalk klikken voor de bestanddownloadprompt.
@@ -406,10 +406,10 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: onderdelen in de internetzone die afhankelijk zijn van .NET Framework**  
   Met deze beleidsinstelling kunt u beheren of .NET Framework-onderdelen die niet met Authenticode zijn ondertekend, kunnen worden uitgevoerd in Internet Explorer. Deze onderdelen bevatten beheerde besturingselementen waarnaar vanuit een objectlabel wordt verwezen en beheerde uitvoerbare bestanden waarnaar vanuit een koppeling wordt verwezen. Als u deze beleidsinstelling inschakelt, worden niet-ondertekende beheerde onderdelen in Internet Explorer uitgevoerd. Als u Prompt selecteert in de vervolgkeuzelijst, wordt de gebruiker gevraagd om te bepalen of niet-ondertekende beheerde onderdelen moeten worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, worden niet-ondertekende beheerde onderdelen niet in Internet Explorer uitgevoerd. Als u deze beleidsinstelling niet configureert, worden niet-ondertekende beheerde onderdelen in Internet Explorer uitgevoerd.
   
-  **Standaard**: uitschakelen 
+  **Standaard**: Uitschakelen 
   
 - **Internet Explorer: alleen goedgekeurde domeinen in de internetzone toestaan om TDC ActiveX-besturingselementen te gebruiken**  
-  Met deze beleidsinstelling bepaalt als de gebruiker het TDC ActiveX-besturingselement op websites kunt uitvoeren. Als u deze beleidsinstelling inschakelt, wordt het TDC ActiveX-besturingselement niet uitgevoerd vanaf websites in deze zone. Als u deze beleidsinstelling uitschakelt, wordt het TDC ActiveX-besturingselement uitgevoerd vanaf alle sites in deze zone.
+  Met deze beleidsinstelling bepaalt u of de gebruiker het TDC ActiveX-besturingselement op websites kan uitvoeren. Als u deze beleidsinstelling inschakelt, wordt het TDC ActiveX-besturingselement niet uitgevoerd vanaf websites in deze zone. Als u deze beleidsinstelling uitschakelt, wordt het TDC ActiveX-besturingselement uitgevoerd vanaf alle sites in deze zone.
   
   **Standaardinstelling**: ingeschakeld 
   
@@ -436,7 +436,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: XAML-bestanden laden in de internetzone**  
   Met deze beleidsinstelling kunt u het laden van XAML-bestanden (Extensible Application Markup Language) beheren. XAML is een op XML gebaseerde declaratieve opmaaktaal die veel wordt gebruikt voor het maken van uitgebreide gebruikersinterfaces en graphics waarmee gebruik kan worden gemaakt van de Windows Presentation Foundation. Als u deze beleidsinstelling inschakelt en de vervolgkeuzelijst op Inschakelen instelt, worden XAML-bestanden automatisch in Internet Explorer geladen. Gebruikers kunnen dit gedrag niet wijzigen. Als u de vervolgkeuzelijst instelt op Vragen, wordt de gebruiker gevraagd om XAML-bestanden te laden. Als u deze beleidsinstelling uitschakelt, worden XAML-bestanden niet in Internet Explorer geladen. Gebruikers kunnen dit gedrag niet wijzigen. Als u deze beleidsinstelling niet configureert, kan de gebruiker zelf bepalen of hij of zij XAML-bestanden in Internet Explorer wil laden.
   
-  **Standaard**: uitschakelen 
+  **Standaard**: Uitschakelen 
   
 - **Internet Explorer: automatische prompt voor bestanddownloads in internetzone**  
   Met deze beleidsinstelling bepaalt u of gebruikers een melding krijgen bij bestanddownloads die niet door de gebruiker zijn geïnitieerd. Gebruikers krijgen, ongeacht deze instelling, dialoogvensters te zien voor bestanddownloads die ze zelf hebben geïnitieerd. Als u deze instelling inschakelt, krijgen gebruikers een dialoogvenster voor bestanddownloads te zien bij automatische downloadpogingen. Als u deze instelling uitschakelt of niet configureert, worden bestanddownloads die niet door de gebruiker zelf zijn geïnitieerd geblokkeerd en zien gebruikers de Meldingenbalk in plaats van het dialoogvenster voor bestanddownloads. Gebruikers kunnen vervolgens op de Meldingenbalk klikken voor de bestanddownloadprompt.
@@ -446,7 +446,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: beperkte zonebeveiligingswaarschuwing voor mogelijk onveilige bestanden**  
   Met deze beleidsinstelling bepaalt u of het bericht 'Bestand openen - beveiligingswaarschuwing' wordt weergegeven wanneer de gebruiker uitvoerbare bestanden of andere mogelijk onveilige bestanden (van een intranetbestandsshare met de Verkenner, bijvoorbeeld) probeert te openen. Als u deze beleidsinstelling inschakelt en de vervolgkeuzelijst instelt op Inschakelen, worden deze bestanden geopend zonder beveiligingswaarschuwing. Als u de vervolgkeuzelijst instelt op Prompt, wordt een beveiligingswaarschuwing weergegeven voordat de bestanden worden geopend. Als u deze beleidsinstelling uitschakelt, worden deze bestanden niet geopend. Als u deze beleidsinstelling niet configureert, kan de gebruiker configureren hoe de computer deze bestanden verwerkt. Standaard worden deze bestanden geblokkeerd in de beperkte zone, ingeschakeld in de zones Intranet en Lokale computer en ingesteld op Prompt in de zones Internet en Vertrouwd.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: XSS-filters voor internetzones**  
   Met dit beleid bepaalt u of het XSS-filter (website-overschrijdende Scripting) website-overschrijdende scriptinjecties in websites in deze zone kan detecteren en voorkomen. Als u deze beleidsinstelling inschakelt, wordt het XSS-filter ingeschakeld voor sites in deze zone en probeert het XSS-filter website-overschrijdende scriptinjecties te blokkeren. Als u deze beleidsinstelling uitschakelt, wordt het XSS-filter uitgeschakeld voor sites in deze zone en staat Internet Explorer website-overschrijdende scriptinjecties toe.
@@ -456,7 +456,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer-terugval naar SSL3**  
   Met deze beleidsinstelling kunt u een onbeveiligde terugval naar SSL 3.0 blokkeren. Wanneer dit beleid is ingeschakeld, probeert Internet Explorer verbinding te maken met sites met behulp van SSL 3.0 of lager wanneer TLS 1.0 of hoger is mislukt. U wordt aangeraden onbeveiligde terugval niet toe te staan om een man-in-the-middle-aanval te voorkomen. Dit beleid heeft geen invloed op welke beveiligingsprotocollen worden ingeschakeld. Als u dit beleid uitschakelt, worden systeemstandaarden gebruikt.
   
-  **Standaard**: Er zijn geen sites 
+  **Standaardinstelling**: Geen sites 
   
 - **Internet Explorer: vergrendeld SmartScreen in internetzone**  
   Met deze beleidsinstelling bepaalt u of het SmartScreen-filter pagina's in deze zone scant op schadelijke inhoud. Als u deze beleidsinstelling inschakelt, scant het SmartScreen-filter pagina's in deze zone op schadelijke inhoud. Als u deze beleidsinstelling uitschakelt, scant het SmartScreen-filter geen pagina's in deze zone op schadelijke inhoud. Als u deze beleidsinstelling niet configureert, kan de gebruiker kiezen of het SmartScreen-filter pagina's in deze zone scant op schadelijke inhoud. Opmerking: in Internet Explorer 7 bepaalt deze beleidsinstelling of het phishing-filter pagina's in deze zone scant op schadelijke inhoud.
@@ -466,9 +466,9 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: toepassingen en bestanden in een IFRAME openen in een beperkte zone**  
   Met deze beleidsinstelling kunt u beheren of toepassingen kunnen worden uitgevoerd en of bestanden kunnen worden gedownload via een IFRAME-verwijzing in de HTML van de pagina's in deze zone. Als u deze beleidsinstelling inschakelt, kunnen gebruikers toepassingen uitvoeren en bestanden uit IFRAME's op de pagina's in deze zone downloaden zonder gebruikersinterventie. Als u Prompt selecteert in de vervolgkeuzelijst, wordt gebruikers gevraagd of ze toepassingen willen uitvoeren en bestanden willen downloaden van IFRAME's op de pagina's in deze zone. Als u deze beleidsinstelling uitschakelt, kunnen gebruikers geen toepassingen uitvoeren of bestanden downloaden van IFRAME's op de pagina's in deze zone. Als u deze beleidsinstelling niet configureert, kunnen gebruikers geen toepassingen uitvoeren of bestanden downloaden van IFRAME's op de pagina's in deze zone.
   
-  **Standaard**: uitschakelen 
+  **Standaard**: Uitschakelen 
   
-- **Internet Explorer mag over ongebruikelijke bestanden SmartScreen negeren**  
+- **SmartScreen-waarschuwingen over ongebruikelijke bestanden negeren in Internet Explorer**  
   Met deze beleidsinstelling bepaalt u of de gebruiker waarschuwingen van het SmartScreen-filter kan negeren. Het SmartScreen-filter waarschuwt de gebruiker voor uitvoerbare bestanden die Internet Explorer-gebruikers normaalgesproken niet van internet downloaden. Als u deze beleidsinstelling inschakelt, wordt de gebruiker door waarschuwingen van het SmartScreen-filter geblokkeerd. Als u deze beleidsinstelling uitschakelt of niet configureert, kan de gebruiker waarschuwingen van het SmartScreen-filter negeren.
   
   **Standaardinstelling**: uitgeschakeld  
@@ -476,17 +476,17 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: pop-upblokkering van internetzone**  
   Met deze beleidsinstelling kunt u beheren of ongewenste pop-upvensters worden weergegeven. Pop-upvensters die worden geopend wanneer de eindgebruiker op een koppeling klikt, worden niet geblokkeerd. Als u deze beleidsinstelling inschakelt, voorkomt u dat de meeste ongewenste pop-upvensters worden weergegeven. Als u deze beleidsinstelling uitschakelt, wordt het weergeven van pop-upvensters niet voorkomen. Als u deze beleidsinstelling niet configureert, voorkomt u dat de meeste ongewenste pop-upvensters worden weergegeven.
   
-  **Standaard**: inschakelen  
+  **Standaardinstelling**: Inschakelen  
   
 - **Internet Explorer: consistente MIME-verwerking met processen**  
   Internet Explorer bevat dynamisch binair gedrag: onderdelen die specifieke functionaliteit bevatten voor de HTML-elementen waaraan ze zijn gekoppeld. Met deze beleidsinstelling bepaalt u of de instelling Beveiligingsbeperkingen voor binair gedrag is verboden of is toegestaan. Als u deze beleidsinstelling inschakelt, is binair gedrag verboden voor de Bestandsverkenner en Internet Explorer-processen. Als u deze beleidsinstelling uitschakelt, is binair gedrag toegestaan voor de Bestandsverkenner en Internet Explorer-processen. Als u deze beleidsinstelling niet configureert, is binair gedrag verboden voor de Verkenner en Internet Explorer-processen.
   
   **Standaardinstelling**: ingeschakeld  
   
-- **Internet Explorer beperkte machtigingen die zone java**  
+- **Java-machtigingen voor de beperkte zone in Internet Explorer**  
   Met deze beleidsinstelling kunt u machtigingen voor Java-applets beheren. Als u deze beleidsinstelling inschakelt, kunt u opties kiezen in de vervolgkeuzelijst. Aangepast, om instellingen voor machtigingen afzonderlijk te beheren. Met Minimale beveiliging kunnen applets alle bewerkingen uitvoeren. Met Normale beveiliging kunnen applets worden uitgevoerd in hun eigen sandbox (een gebied in het geheugen waarbuiten het programma geen aanroepen kan doen). Daarnaast biedt deze optie mogelijkheden zoals een scratchruimte (een veilig en beveiligd opslaggebied op de clientcomputer) en door de gebruiker beheerde bestandsinvoer en-uitvoer (I/O). Met Strenge beveiliging kunnen applets in hun sandbox worden uitgevoerd. Schakel Java uit om te voorkomen dat er applets worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, kunnen Java-applets niet worden uitgevoerd. Als u deze beleidsinstelling niet configureert, worden Java-applets uitgeschakeld.
   
-  **Standaard**: java uitschakelen  
+  **Standaardinstelling**: Java uitschakelen  
     
   
 - **Internet Explorer: Active X-besturingselementen in de beveiligde modus**  
@@ -497,7 +497,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: XAML-bestanden laden in de beperkte zone**  
   Met deze beleidsinstelling kunt u het laden van XAML-bestanden (Extensible Application Markup Language) beheren. XAML is een op XML gebaseerde declaratieve opmaaktaal die veel wordt gebruikt voor het maken van uitgebreide gebruikersinterfaces en graphics waarmee gebruik kan worden gemaakt van de Windows Presentation Foundation. Als u deze beleidsinstelling inschakelt en de vervolgkeuzelijst op Inschakelen instelt, worden XAML-bestanden automatisch in Internet Explorer geladen. Gebruikers kunnen dit gedrag niet wijzigen. Als u de vervolgkeuzelijst instelt op Vragen, wordt de gebruiker gevraagd om XAML-bestanden te laden. Als u deze beleidsinstelling uitschakelt, worden XAML-bestanden niet in Internet Explorer geladen. Gebruikers kunnen dit gedrag niet wijzigen. Als u deze beleidsinstelling niet configureert, kan de gebruiker zelf bepalen of hij of zij XAML-bestanden in Internet Explorer wil laden.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer verwerkt beveiligingsbeperkingen voor scriptvensters**  
   Internet Explorer staat scripts toe om via een programma uiteenlopende soorten vensters te openen, groter of kleiner te maken en te verplaatsen. De beveiligingsfunctie Vensterbeperkingen beperkt pop-upvensters en verbiedt scripts om vensters weer te geven waarin de titel- en statusbalk niet zichtbaar zijn voor de gebruiker of die de titel- en statusbalk van andere Windows-vensters onleesbaar maken. Als u deze beleidsinstelling inschakelt, worden scriptvensters voor alle processen beperkt. Als u deze beleidsinstelling uitschakelt of niet configureert, gelden er geen beperkingen voor scriptvensters.
@@ -507,28 +507,28 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Active X-besturingselementen en invoegtoepassingen uitvoeren in beperkte zone van Internet Explorer**  
   Met deze beleidsinstelling kunt u beheren of ActiveX-besturingselementen en invoegtoepassingen kunnen worden uitgevoerd op de pagina's in de opgegeven zone. Als u deze beleidsinstelling inschakelt, kunnen besturingselementen en invoegtoepassingen zonder tussenkomst van de gebruiker worden uitgevoerd. Als u in de vervolgkeuzelijst Vragen hebt geselecteerd, wordt gebruikers gevraagd om te kiezen of ze de bedieningselementen of invoegtoepassing willen uitvoeren. Als u deze beleidsinstelling uitschakelt, worden de besturingselementen en invoegtoepassingen niet uitgevoerd. Als u deze beleidsinstelling niet configureert, worden de besturingselementen en invoegtoepassingen niet uitgevoerd.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **ActiveX-besturingselementen die als veilig zijn gemarkeerd voor het uitvoeren van scripts in de beperkte zone van Internet Explorer**  
   Met deze beleidsinstelling kunt u beheren of een ActiveX-besturingselement dat als veilig is gemarkeerd voor het uitvoeren van scripts kan communiceren met een script. Als u deze beleidsinstelling inschakelt, kunnen scripts automatisch communiceren zonder tussenkomst van de gebruiker. Als u in de vervolgkeuzelijst Vragen selecteert, moeten gebruikers kiezen of ze interactie van scripts willen toestaan. Als u deze beleidsinstelling uitschakelt, mag er geen interactie tussen scripts plaatsvinden. Als u deze beleidsinstelling niet configureert, mag er geen interactie tussen scripts plaatsvinden.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Opties voor aanmelden in de beperkte zone van Internet Explorer**  
   Met deze beleidsinstelling kunt u de instellingen voor aanmeldingsopties beheren. Als u deze beleidsinstelling inschakelt, kunt u kiezen uit de volgende aanmeldingsopties. 
   - *Anoniem*: anoniem aanmelden om HTTP-verificatie uit te schakelen en het gastaccount alleen gebruiken voor het CIFS-protocol (Common Internet File System). 
   - *Vragen*: om een gebruikersnaam en wachtwoord vragen om een query te maken voor de gebruikers-id's en wachtwoorden van gebruikers. Nadat een query voor een gebruiker is uitgevoerd, kunnen deze waarden op de achtergrond worden gebruikt gedurende de rest van de sessie. 
-  - *Automatische aanmelding alleen in de intranetzone* -Gebruik deze optie om gebruikers van de query voor gebruikersnamen en wachtwoorden in andere zones. Nadat een query voor een gebruiker is uitgevoerd, kunnen deze waarden op de achtergrond worden gebruikt gedurende de rest van de sessie. 
-  - *Automatisch aanmelden met de huidige gebruikersnaam en wachtwoord*-Gebruik deze optie om melden zich aan met Windows NT: reactie ongeldige uitdaging (ook wel bekend als NTLM-verificatie). Als de server Windows NT Challenge-antwoord wordt het teken wordt gebruikgemaakt van de gebruiker netwerk-gebruikersnaam en wachtwoord voor aanmelden ondersteunt. Als Windows NT-vraag-antwoord niet door de server wordt ondersteund, wordt de gebruiker gevraagd om de gebruikersnaam en het wachtwoord op te geven. 
+  - *Alleen automatisch aanmelden in de intranetzone*: gebruik deze optie om een query te maken voor de gebruikers-id's en wachtwoorden in andere zones. Nadat een query voor een gebruiker is uitgevoerd, kunnen deze waarden op de achtergrond worden gebruikt gedurende de rest van de sessie. 
+  - *Automatisch aanmelden met de huidige gebruikersnaam en het huidige wachtwoord*: gebruik deze optie om aanmelden te proberen met behulp van Windows NT-vraag-antwoord (ook wel NTLM-verificatie genoemd). Als de server Windows NT-vraag-antwoord ondersteunt, gebruikt de aanmelding de gebruikersnaam en het wachtwoord van de gebruiker voor het netwerk om de gebruiker aan te melden. Als Windows NT-vraag-antwoord niet door de server wordt ondersteund, wordt de gebruiker gevraagd om de gebruikersnaam en het wachtwoord op te geven. 
 
   Als u deze beleidsinstelling uitschakelt, wordt de aanmelding ingesteld op *Alleen automatisch aanmelden in de intranetzone*. Als u deze beleidsinstelling niet configureert, wordt de aanmelding ingesteld op *Om gebruikersnaam en wachtwoord vragen*.
   
-  **Standaard**: anonieme  
+  **Standaardinstelling**: Anoniem  
   
 - **ActiveX-besturingselementen die niet als veilig zijn gemarkeerd initialiseren en als script uitvoeren in de vertrouwde zone in Internet Explorer**  
   Met deze beleidsinstelling kunt u ActiveX-besturingselementen beheren die niet als veilig zijn gemarkeerd. Als u deze beleidsinstelling inschakelt, worden ActiveX-besturingselementen uitgevoerd, voorzien van parameters en als script uitgevoerd zonder de veiligheid van objecten in te stellen voor niet-vertrouwde gegevens of scripts. Deze instelling wordt niet aanbevolen, behalve voor veilige en beheerde zones. Deze instelling zorgt dat zowel onveilige als veilige besturingselementen worden geïnitialiseerd en als script worden uitgevoerd. Daarbij worden de ActiveX-besturingselementen van het script die als veilig zijn gemarkeerd, genegeerd. Als u deze beleidsinstelling inschakelt en in de vervolgkeuzelijst Vragen selecteert, worden gebruikers gevraagd of ze willen toestaan dat het besturingselement met parameters wordt geladen of als script wordt uitgevoerd. Als u deze beleidsinstelling uitschakelt, worden ActiveX-besturingselementen die niet veilig kunnen worden ingesteld, niet geladen met parameters of als script uitgevoerd. Als u deze beleidsinstelling niet configureert, worden gebruikers gevraagd of ze willen toestaan dat het besturingselement wordt geladen met parameters of als script wordt uitgevoerd.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Intrekking van servercertificaat verkennen in Internet Explorer**  
   Met deze beleidsinstelling kunt u beheren of Internet Explorer de intrekkingsstatus van servercertificaten zal controleren. Certificaten worden ingetrokken als ze zijn aangetast of niet meer geldig zijn. Deze optie beschermt gebruikers tegen het verzenden van vertrouwelijke gegevens op een website die mogelijk frauduleus of onveilig is. Als u deze beleidsinstelling inschakelt, zal Internet Explorer controleren of de servercertificaten zijn ingetrokken. Als u deze beleidsinstelling uitschakelt, wordt in Internet Explorer niet gecontroleerd of de servercertificaten zijn ingetrokken. Als u deze beleidsinstelling niet configureert, wordt in Internet Explorer niet gecontroleerd of de servercertificaten zijn ingetrokken.
@@ -538,17 +538,17 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: sites met minder machtigingen in de internetzone**  
   Met deze beleidsinstelling kunt u beheren of websites in zones met minder machtigingen, zoals beperkte websites, naar deze zone mogen navigeren. Als u deze beleidsinstelling inschakelt, kunnen websites van zones met minder machtigingen nieuwe vensters openen in, of navigeren naar, deze zone. De beveiligingszone wordt uitgevoerd zonder de toegevoegde beveiligingslaag die door de beveiliging van de beveiligingsfunctie Zoneverhoging wordt geleverd. Als u Vragen in de vervolgkeuzelijst selecteert, krijgt de gebruiker een waarschuwing dat er sprake is van mogelijk riskante navigatie. Als u deze beleidsinstelling uitschakelt, is de mogelijk schadelijke navigatie verboden. De beveiligingsfunctie van Internet Explorer is in deze zone ingeschakeld, zoals dit is ingesteld bij de functie Zone-uitbreiding. Als u deze beleidsinstelling niet configureert, kunnen websites van zones met minder bevoegdheden nieuwe vensters openen in, of navigeren naar, deze zone.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Bestanden downloaden in de beperkte zone van Internet Explorer**  
   Met deze beleidsinstelling kunt u beheren of het is toegestaan om bestanden te downloaden in de zone. Deze optie wordt bepaald door de zone van de pagina met de koppeling die de download activeert, niet door de zone waarin het bestand wordt geleverd. Als u deze beleidsinstelling inschakelt, kunnen bestanden in de zone worden gedownload. Als u deze beleidsinstelling uitschakelt, wordt het downloaden van bestanden in de zone voorkomen. Als u deze beleidsinstelling niet configureert, wordt het downloaden van bestanden in de zone voorkomen.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: onderdelen in de internetzone uitvoeren die afhankelijk zijn van .NET Framework en zijn ondertekend met Authenticode**  
   Met deze beleidsinstelling kunt u beheren of .NET Framework-onderdelen die met Authenticode zijn ondertekend, kunnen worden uitgevoerd in Internet Explorer. Deze onderdelen bevatten beheerde besturingselementen waarnaar vanuit een objectlabel wordt verwezen en beheerde uitvoerbare bestanden waarnaar vanuit een koppeling wordt verwezen. Als u deze beleidsinstelling inschakelt, zal Internet Explorer ondertekende beheerde onderdelen uitvoeren. Als u in de vervolgkeuzelijst Vragen selecteert, wordt de gebruiker gevraagd om te bepalen of ondertekende beheerde onderdelen moeten worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, zal Internet Explorer ondertekende beheerde onderdelen niet uitvoeren. Als u deze beleidsinstelling niet configureert, worden ondertekende beheerde onderdelen niet uitgevoerd in Internet Explorer.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Installatie van ActiveX-besturingselementen per gebruiker voorkomen in Internet Explorer**  
   Met deze beleidsinstelling kunt u voorkomen dat per gebruiker ActiveX-besturingselementen worden geïnstalleerd. Als u deze beleidsinstelling inschakelt, kunnen er geen ActiveX-besturingselementen per gebruiker worden geïnstalleerd. Als u deze beleidsinstelling uitschakelt of niet configureert, kunnen er ActiveX-besturingselementen per gebruiker worden geïnstalleerd.
@@ -558,7 +558,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Beheer van het SmartScreen-filter voorkomen in Internet Explorer**  
   Met deze beleidsinstelling voorkomt u dat de gebruiker SmartScreen Filter kan beheren, waarmee de gebruiker wordt gewaarschuwd als de website die wordt bezocht bekend staat om frauduleuze pogingen om persoonlijke gegevens te verzamelen via phishing of om het hosten van malware. Als u deze beleidsinstelling inschakelt, wordt de gebruiker niet gevraagd om het SmartScreen-filter in te schakelen. Alle websiteadressen die niet op de toegestane lijst van het filter staan, worden automatisch naar Microsoft verzonden zonder dat de gebruiker wordt gevraagd. Als u deze beleidsinstelling niet uitschakelt of configureert, wordt de gebruiker gevraagd om te bepalen of het SmartScreen-filter moet worden ingeschakeld tijdens de eerste uitvoersessie.
   
-  **Standaard**: inschakelen  
+  **Standaardinstelling**: Inschakelen  
   
 - **Internet Explorer verwerkt de veiligheidsfunctie MIME-sniffing**  
   Met deze beleidsinstelling wordt bepaald of Internet Explorer MIME-sniffing het niveau verhogen voorkomt van een bestand van het ene type naar een meer gevaarlijk bestandstype. Als u deze beleidsinstelling inschakelt, wordt bij MIME-sniffing nooit het niveau van een bestand van het ene type naar een meer gevaarlijk bestandstype verhoogd. Als u deze beleidsinstelling uitschakelt, kunnen Internet Explorer-processen toestaan dat bij MIME-sniffing het niveau van een bestand van het ene type naar een meer gevaarlijk bestandstype wordt verhoogd. Als u deze beleidsinstelling niet configureert, wordt bij MIME-sniffing nooit het niveau van een bestand van het ene type naar een meer gevaarlijk bestandstype verhoogd.
@@ -568,12 +568,12 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: ondertekende Active X-besturingselementen downloaden in de beperkte zone**  
   Met deze beleidsinstelling kunt u beheren of gebruikers ondertekende ActiveX-besturingselementen van een pagina in de zone kunnen downloaden. Als u dit beleid inschakelt, kunnen gebruikers ondertekende besturingselementen downloaden zonder tussenkomst van de gebruiker. Als u Vragen selecteert in de vervolgkeuzelijst, wordt aan gebruikers gevraagd of ze besturingselementen willen downloaden die zijn ondertekend door niet-vertrouwde uitgevers. Code die is ondertekend door vertrouwde uitgevers wordt op de achtergrond gedownload. Als u de beleidsinstelling uitschakelt, kunnen ondertekende besturingselementen niet worden gedownload. Als u deze beleidsinstelling niet configureert, wordt aan gebruikers gevraagd of ze besturingselementen willen downloaden die zijn ondertekend door niet-vertrouwde uitgevers. Code die is ondertekend door vertrouwde uitgevers wordt op de achtergrond gedownload.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: automatisch aanvullen**  
   Met de functie Automatisch aanvullen worden gebruikersnamen en wachtwoorden in formulieren onthouden en voorgesteld. Als u deze instelling inschakelt, kan de gebruiker opties voor gebruikersnaam en wachtwoorden op formulieren of vragen om wachtwoorden op te slaan niet wijzigen. De functie Automatisch aanvullen voor gebruikersnamen en wachtwoorden in formulieren is ingeschakeld. U moet bepalen of u de optie voor vragen om wachtwoorden op te slaan wilt inschakelen. Als u deze instelling uitschakelt, kan de gebruiker de opties Gebruikersnaam en wachtwoorden op formulieren en vragen om wachtwoorden op te slaan niet wijzigen. De functie Automatisch aanvullen voor gebruikersnamen en wachtwoorden in formulieren is ingeschakeld. De gebruiker kan ook niet kiezen om te worden gevraagd wachtwoorden op te slaan. Als u deze instelling niet configureert, heeft de gebruiker de vrijheid om Automatische aanvullen voor gebruikersnamen en wachtwoorden in formulieren en de optie voor vragen om wachtwoorden op te slaan in te schakelen. Om deze optie weer te geven, openen gebruikers het dialoogvenster Internetopties, klikken ze op het tabblad Inhoud en klikken ze op de knop Instellingen.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: toestaan om VBscript uit te voeren in de internetzone**  
   Met deze beleidsinstelling kunt u beslissen of VBScript mag worden uitgevoerd op pagina's in specifieke Internet Explorer-zones. Opties zijn onder andere: 
@@ -581,10 +581,10 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
   - *Vragen*: werknemers wordt gevraagd of ze willen toestaan dat VBScript wordt uitgevoerd in de zone. 
   - *Uitschakelen*: er wordt voorkomen dat VBScript wordt uitgevoerd in de zone. Als u deze beleidsinstelling uitschakelt of niet configureert, wordt VBScript in de opgegeven zone uitgevoerd zonder enige tussenkomst. 
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: alleen goedgekeurde domeinen mogen TDC Active X-besturingselementen gebruiken in de beperkt zone**  
-  Met deze beleidsinstelling bepaalt als de gebruiker het TDC ActiveX-besturingselement op websites kunt uitvoeren. Als u deze beleidsinstelling inschakelt, wordt het TDC ActiveX-besturingselement niet uitgevoerd vanaf websites in deze zone. Als u deze beleidsinstelling uitschakelt, wordt het TDC ActiveX-besturingselement uitgevoerd vanaf alle sites in deze zone.
+  Met deze beleidsinstelling bepaalt u of de gebruiker het TDC ActiveX-besturingselement op websites kan uitvoeren. Als u deze beleidsinstelling inschakelt, wordt het TDC ActiveX-besturingselement niet uitgevoerd vanaf websites in deze zone. Als u deze beleidsinstelling uitschakelt, wordt het TDC ActiveX-besturingselement uitgevoerd vanaf alle sites in deze zone.
   
   **Standaardinstelling**: ingeschakeld  
   
@@ -596,9 +596,9 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: Java-machtigingen voor de zone Lokale machine**  
   Met deze beleidsinstelling kunt u machtigingen voor Java-applets beheren. Als u deze beleidsinstelling inschakelt, kunt u opties kiezen in de vervolgkeuzelijst. Aangepast, om instellingen voor machtigingen afzonderlijk te beheren. Met Minimale beveiliging kunnen applets alle bewerkingen uitvoeren. Met Normale beveiliging kunnen applets worden uitgevoerd in hun eigen sandbox (een gebied in het geheugen waarbuiten het programma geen aanroepen kan doen). Daarnaast biedt deze optie mogelijkheden zoals een scratchruimte (een veilig en beveiligd opslaggebied op de clientcomputer) en door de gebruiker beheerde bestandsinvoer en-uitvoer (I/O). Met Strenge beveiliging kunnen applets in hun sandbox worden uitgevoerd. Schakel Java uit om te voorkomen dat er applets worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, kunnen Java-applets niet worden uitgevoerd. Als u deze beleidsinstelling niet configureert, wordt de machtiging ingesteld op Normale beveiliging.
   
-  **Standaard**: java uitschakelen 
+  **Standaardinstelling**: Java uitschakelen 
   
-- **Internet Explorer intranet zone worden niet uitgevoerd anti-malware op basis van ActiveX-besturingselementen** met deze beleidsinstelling bepaalt u of Internet Explorer antimalwareprogramma's worden uitgevoerd op basis van ActiveX-besturingselementen om te controleren of ze veilig op pagina's worden geladen. Als u deze beleidsinstelling inschakelt, controleert Internet Explorer niet met uw antimalware-programma om te zien of het veilig is om een exemplaar van het ActiveX-besturingselement te installeren. Als u deze beleidsinstelling uitschakelt, controleert Internet Explorer altijd met uw antimalware-programma om te zien of het veilig is om een exemplaar van het ActiveX-besturingselement te installeren. Als u deze beleidsinstelling niet configureert, controleert Internet Explorer niet met uw antimalware-programma om te zien of het veilig is om een exemplaar van het ActiveX-besturingselement te installeren. Gebruikers kunnen dit gedrag in- of uitschakelen met de beveiligingsinstellingen van Internet Explorer.
+- **Internet Explorer: er wordt geen antimalware uitgevoerd op ActiveX-besturingselementen in de intranetzone**: met deze beleidsinstelling wordt bepaald of Internet Explorer antimalwareprogramma's uitvoert op ActiveX-besturingselementen om te controleren of ze veilig zijn om te laden op pagina's. Als u deze beleidsinstelling inschakelt, controleert Internet Explorer niet met uw antimalware-programma om te zien of het veilig is om een exemplaar van het ActiveX-besturingselement te installeren. Als u deze beleidsinstelling uitschakelt, controleert Internet Explorer altijd met uw antimalware-programma om te zien of het veilig is om een exemplaar van het ActiveX-besturingselement te installeren. Als u deze beleidsinstelling niet configureert, controleert Internet Explorer niet met uw antimalware-programma om te zien of het veilig is om een exemplaar van het ActiveX-besturingselement te installeren. Gebruikers kunnen dit gedrag in- of uitschakelen met de beveiligingsinstellingen van Internet Explorer.
   
   **Standaardinstelling**: uitgeschakeld  
 
@@ -615,7 +615,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: ondertekende Active X-besturingselementen downloaden in internetzone**  
   Met deze beleidsinstelling kunt u beheren of gebruikers ondertekende ActiveX-besturingselementen van een pagina in de zone kunnen downloaden. Als u dit beleid inschakelt, kunnen gebruikers ondertekende besturingselementen downloaden zonder tussenkomst van de gebruiker. Als u Vragen selecteert in de vervolgkeuzelijst, wordt aan gebruikers gevraagd of ze besturingselementen willen downloaden die zijn ondertekend door niet-vertrouwde uitgevers. Code die is ondertekend door vertrouwde uitgevers wordt op de achtergrond gedownload. Als u de beleidsinstelling uitschakelt, kunnen ondertekende besturingselementen niet worden gedownload. Als u deze beleidsinstelling niet configureert, wordt aan gebruikers gevraagd of ze besturingselementen willen downloaden die zijn ondertekend door niet-vertrouwde uitgevers. Code die is ondertekend door vertrouwde uitgevers wordt op de achtergrond gedownload.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: SmartScreen in de beperkte zone**  
   Met deze beleidsinstelling bepaalt u of het SmartScreen-filter pagina's in deze zone scant op schadelijke inhoud. Als u deze beleidsinstelling inschakelt, scant het SmartScreen-filter pagina's in deze zone op schadelijke inhoud. Als u deze beleidsinstelling uitschakelt, scant het SmartScreen-filter geen pagina's in deze zone op schadelijke inhoud. Als u deze beleidsinstelling niet configureert, kan de gebruiker kiezen of het SmartScreen-filter pagina's in deze zone scant op schadelijke inhoud. Opmerking: in Internet Explorer 7 bepaalt deze beleidsinstelling of het phishing-filter pagina's in deze zone scant op schadelijke inhoud.
@@ -630,12 +630,12 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: toepassingen en bestanden in een IFRAME openen in een internetzone**  
   Met deze beleidsinstelling kunt u beheren of toepassingen kunnen worden uitgevoerd en of bestanden kunnen worden gedownload via een IFRAME-verwijzing in de HTML van de pagina's in deze zone. Als u deze beleidsinstelling inschakelt, kunnen gebruikers toepassingen uitvoeren en bestanden uit IFRAME's op de pagina's in deze zone downloaden zonder gebruikersinterventie. Als u Prompt selecteert in de vervolgkeuzelijst, wordt gebruikers gevraagd of ze toepassingen willen uitvoeren en bestanden willen downloaden van IFRAME's op de pagina's in deze zone. Als u deze beleidsinstelling uitschakelt, kunnen gebruikers geen toepassingen uitvoeren of bestanden downloaden van IFRAME's op de pagina's in deze zone. Als u deze beleidsinstelling niet configureert, wordt gebruikers gevraagd of ze toepassingen willen uitvoeren en bestanden willen downloaden van IFRAME's op de pagina's in deze zone
   
-  **Standaard**: uitschakelen 
+  **Standaard**: Uitschakelen 
   
 - **Vensters en frames door verschillende domeinen laten navigeren in de beperkte zone in Internet Explorer**  
   Met deze beleidsinstelling kunt u opties instellen voor het verslepen van inhoud van het ene naar het andere domein wanneer de bron en de bestemming zich in verschillende vensters bevinden. Als u deze beleidsinstelling inschakelt en op Inschakelen klikt, kunnen gebruikers inhoud van het ene naar het andere domein verslepen wanneer de bron en de bestemming zich in verschillende vensters bevinden. Gebruikers kunnen deze instelling niet wijzigen. Als u deze beleidsinstelling inschakelt en op Uitschakelen klikt, kunnen gebruikers geen inhoud van het ene naar het andere domein verslepen als de bron en de bestemming zich in verschillende vensters bevinden. Gebruikers kunnen deze instelling niet wijzigen. Als u deze beleidsinstelling in Internet Explorer 10 uitschakelt of niet configureert, kunnen gebruikers geen inhoud van het ene naar het andere domein verslepen wanneer de bron en de bestemming zich in verschillende vensters bevinden. Gebruikers kunnen deze instelling wijzigen in het dialoogvenster Internetopties. Als u dit beleid in Internet Explorer 9 en eerdere versies uitschakelt of niet configureert, kunnen gebruikers inhoud van het ene naar het andere domein verslepen als de bron en de bestemming zich in verschillende vensters bevinden. Gebruikers kunnen deze instelling niet wijzigen.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: SmartScreen van internetzone**  
   Met deze beleidsinstelling bepaalt u of het SmartScreen-filter pagina's in deze zone scant op schadelijke inhoud. Als u deze beleidsinstelling inschakelt, scant het SmartScreen-filter pagina's in deze zone op schadelijke inhoud. Als u deze beleidsinstelling uitschakelt, scant het SmartScreen-filter geen pagina's in deze zone op schadelijke inhoud. Als u deze beleidsinstelling niet configureert, kan de gebruiker kiezen of het SmartScreen-filter pagina's in deze zone scant op schadelijke inhoud. Opmerking: in Internet Explorer 7 bepaalt deze beleidsinstelling of het phishing-filter pagina's in deze zone scant op schadelijke inhoud.
@@ -645,7 +645,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Java-machtigingen voor de vertrouwde zone zijn vergrendeld in Internet Explorer**  
   Met deze beleidsinstelling kunt u machtigingen voor Java-applets beheren. Als u deze beleidsinstelling inschakelt, kunt u opties kiezen in de vervolgkeuzelijst. Aangepast, om instellingen voor machtigingen afzonderlijk te beheren. Met Minimale beveiliging kunnen applets alle bewerkingen uitvoeren. Met Normale beveiliging kunnen applets worden uitgevoerd in hun eigen sandbox (een gebied in het geheugen waarbuiten het programma geen aanroepen kan doen). Daarnaast biedt deze optie mogelijkheden zoals een scratchruimte (een veilig en beveiligd opslaggebied op de clientcomputer) en door de gebruiker beheerde bestandsinvoer en-uitvoer (I/O). Met Strenge beveiliging kunnen applets in hun sandbox worden uitgevoerd. Schakel Java uit om te voorkomen dat er applets worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, kunnen Java-applets niet worden uitgevoerd. Als u deze beleidsinstelling niet configureert, worden Java-applets uitgeschakeld.
   
-  **Standaard**: java uitschakelen 
+  **Standaardinstelling**: Java uitschakelen 
   
 - **Internet Explorer: handtekeningen controleren voor gedownloade programma's**  
   Met deze beleidsinstelling kunt u beheren of Internet Explorer digitale handtekeningen (met daarin de naam van de uitgever van ondertekende software, ter verificatie dat de software niet is gewijzigd of gesaboteerd) op computers van gebruikers controleert voordat uitvoerbare bestanden worden gedownload. Als u deze beleidsinstelling inschakelt, zal Internet Explorer de digitale handtekeningen van uitvoerbare programma's controleren en hun identiteit weergeven voordat ze op computers van gebruikers worden gedownload. Als u deze beleidsinstelling uitschakelt, worden in Internet Explorer de digitale handtekeningen van uitvoerbare programma's niet gecontroleerd en wordt hun identiteit niet weergeven voordat ze op computers van gebruikers worden gedownload. Als u dit beleid niet configureert, worden in Internet Explorer de digitale handtekeningen van uitvoerbare programma's niet gecontroleerd en wordt hun identiteit niet weergeven voordat ze op computers van gebruikers worden gedownload.
@@ -665,7 +665,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: binair gedrag en scriptgedrag in beperkte zones**  
   Met deze beleidsinstelling kunt u dynamische binaire gedragingen en scriptgedrag beheren: onderdelen die specifieke functionaliteit bevatten voor HTML-elementen waaraan ze zijn gekoppeld. Als u deze beleidsinstelling inschakelt, zijn binair gedrag en scriptgedrag beschikbaar. Als u in de vervolgkeuzelijst Goedgekeurd door beheerder selecteert, is alleen gedrag beschikbaar dat staat vermeld in het door de beheerder goedgekeurde gedrag onder het beveiligingsbeperkingsbeleid Binair gedrag. Als u deze beleidsinstelling uitschakelt, zijn binair gedrag en scriptgedrag niet beschikbaar tenzij voor toepassingen aangepast beveiligingsbeheer is geïmplementeerd. Als u deze beleidsinstelling niet configureert, zijn binair gedrag en scriptgedrag niet beschikbaar tenzij voor toepassingen aangepast beveiligingsbeheer is geïmplementeerd.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: beveiligingsinstellingen controleren**  
   Met deze beleidsinstelling schakelt u de functie Controle van beveiligingsinstellingen uit. met deze functie controleert u de beveiligingsinstellingen in Internet Explorer om vast te stellen wanneer de instellingen een risico vormen voor Internet Explorer. Als u deze beleidsinstelling inschakelt, wordt de functie uitgeschakeld. Als u deze beleidsinstelling uitschakelt of niet configureert, wordt de functie ingeschakeld.
@@ -675,12 +675,12 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: beveiligingswaarschuwing voor mogelijk onveilige bestanden in de internetzone**  
   Met deze beleidsinstelling bepaalt u of het bericht 'Bestand openen - beveiligingswaarschuwing' wordt weergegeven wanneer de gebruiker uitvoerbare bestanden of andere mogelijk onveilige bestanden (van een intranetbestandsshare met de Verkenner, bijvoorbeeld) probeert te openen. Als u deze beleidsinstelling inschakelt en de vervolgkeuzelijst instelt op Inschakelen, worden deze bestanden geopend zonder beveiligingswaarschuwing. Als u de vervolgkeuzelijst instelt op Prompt, wordt een beveiligingswaarschuwing weergegeven voordat de bestanden worden geopend. Als u deze beleidsinstelling uitschakelt, worden deze bestanden niet geopend. Als u deze beleidsinstelling niet configureert, kan de gebruiker configureren hoe de computer deze bestanden verwerkt. Standaard worden deze bestanden geblokkeerd in de beperkte zone, ingeschakeld in de zones Intranet en Lokale computer en ingesteld op Prompt in de zones Internet en Vertrouwd.
   
-  **Standaard**: vragen  
+  **Standaardinstelling**: Vragen  
   
 - **Java-machtigingen voor de intranetzone in Internet Explorer**  
   Met deze beleidsinstelling kunt u machtigingen voor Java-applets beheren. Als u deze beleidsinstelling inschakelt, kunt u opties kiezen in de vervolgkeuzelijst. Aangepast, om instellingen voor machtigingen afzonderlijk te beheren. Met Minimale beveiliging kunnen applets alle bewerkingen uitvoeren. Met Normale beveiliging kunnen applets worden uitgevoerd in hun eigen sandbox (een gebied in het geheugen waarbuiten het programma geen aanroepen kan doen). Daarnaast biedt deze optie mogelijkheden zoals een scratchruimte (een veilig en beveiligd opslaggebied op de clientcomputer) en door de gebruiker beheerde bestandsinvoer en-uitvoer (I/O). Met Strenge beveiliging kunnen applets in hun sandbox worden uitgevoerd. Schakel Java uit om te voorkomen dat er applets worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, kunnen Java-applets niet worden uitgevoerd. Als u deze beleidsinstelling niet configureert, wordt de machtiging ingesteld op Normale beveiliging.
   
-  **Standaard**: hoge beveiliging 
+  **Standaardinstelling**: Hoge beveiliging 
   
 - **Internet Explorer: verouderde ActiveX-besturingselementen blokkeren**  </br>
   Met deze beleidsinstelling bepaalt u of Internet Explorer bepaalde verouderde ActiveX-besturingselementen blokkeert. Verouderde ActiveX-besturingselementen worden nooit geblokkeerd in de intranetzone. Als u deze beleidsinstelling inschakelt, stopt Internet Explorer met het blokkeren van verouderde ActiveX-besturingselementen. Als u deze beleidsinstelling uitschakelt of niet configureert, blijft Internet Explorer bepaalde verouderde ActiveX-besturingselementen blokkeren. Zie Verouderde ActiveX-besturingselementen in de Internet Explorer TechNet-bibliotheek voor meer informatie.
@@ -690,7 +690,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Pop-upblokkering in de beperkte zone van Internet Explorer**  
   Met deze beleidsinstelling kunt u beheren of ongewenste pop-upvensters worden weergegeven. Pop-upvensters die worden geopend wanneer de eindgebruiker op een koppeling klikt, worden niet geblokkeerd. Als u deze beleidsinstelling inschakelt, voorkomt u dat de meeste ongewenste pop-upvensters worden weergegeven. Als u deze beleidsinstelling uitschakelt, wordt het weergeven van pop-upvensters niet voorkomen. Als u deze beleidsinstelling niet configureert, voorkomt u dat de meeste ongewenste pop-upvensters worden weergegeven.
   
-  **Standaard**: inschakelen  
+  **Standaardinstelling**: Inschakelen  
   
 - **Internet Explorer verwerkt beveiligingsbeperkingen voor het MK-protocol**  
   De beleidsinstelling Beveiligingsbeperking voor het MK-protocol vermindert het beveiligingsrisico door het MK-protocol te voorkomen. Resources die op het MK-protocol worden gehost, zullen mislukken. Als u deze beleidsinstelling inschakelt, wordt het MK-protocol voorkomen voor Verkenner en Internet Explorer en mislukken resources die op het MK-protocol worden gehost. Als u deze beleidsinstelling uitschakelt, kunnen toepassingen de API voor het MK-protocol gebruiken. Resources die op het MK-protocol worden gehost, werken voor de processen in Verkenner en Internet Explorer. Als u deze beleidsinstelling niet configureert, wordt het MK-protocol voorkomen voor de Verkenner en Internet Explorer en mislukken resources die op het MK-protocol worden gehost.
@@ -700,17 +700,17 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Java-machtigingen voor de vertrouwde zone in Internet Explorer**  </br>
   Met deze beleidsinstelling kunt u machtigingen voor Java-applets beheren. Als u deze beleidsinstelling inschakelt, kunt u opties kiezen in de vervolgkeuzelijst. Aangepast, om instellingen voor machtigingen afzonderlijk te beheren. Met Minimale beveiliging kunnen applets alle bewerkingen uitvoeren. Met Normale beveiliging kunnen applets worden uitgevoerd in hun eigen sandbox (een gebied in het geheugen waarbuiten het programma geen aanroepen kan doen). Daarnaast biedt deze optie mogelijkheden zoals een scratchruimte (een veilig en beveiligd opslaggebied op de clientcomputer) en door de gebruiker beheerde bestandsinvoer en-uitvoer (I/O). Met Strenge beveiliging kunnen applets in hun sandbox worden uitgevoerd. Schakel Java uit om te voorkomen dat er applets worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, kunnen Java-applets niet worden uitgevoerd. Als u deze beleidsinstelling niet configureert, wordt de machtiging ingesteld op Lage veiligheid.
   
-  **Standaard**: hoge beveiliging  
+  **Standaardinstelling**: Hoge beveiliging  
   
 - **Internet Explorer: scripts voor Java-applets uitvoeren in de beperkte zone**  
   Met deze beleidsinstelling kunt u beheren of applets beschikbaar worden gemaakt voor scripts in de zone. Als u deze beleidsinstelling inschakelt, hebben scripts automatisch toegang tot applets zonder tussenkomst van de gebruiker. Als u in de vervolgkeuzelijst Vragen selecteert, moeten gebruikers kiezen of ze scripts toegang tot applets willen bieden. Als u deze beleidsinstelling uitschakelt, hebben scripts geen toegang tot applets. Als u deze beleidsinstelling niet configureert, hebben scripts geen toegang tot applets.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Java-machtigingen voor de beperkte zone zijn vergrendeld in Internet Explorer**  </br>
   Met deze beleidsinstelling kunt u machtigingen voor Java-applets beheren. Als u deze beleidsinstelling inschakelt, kunt u opties kiezen in de vervolgkeuzelijst. Aangepast, om instellingen voor machtigingen afzonderlijk te beheren. Met Minimale beveiliging kunnen applets alle bewerkingen uitvoeren. Met Normale beveiliging kunnen applets worden uitgevoerd in hun eigen sandbox (een gebied in het geheugen waarbuiten het programma geen aanroepen kan doen). Daarnaast biedt deze optie mogelijkheden zoals een scratchruimte (een veilig en beveiligd opslaggebied op de clientcomputer) en door de gebruiker beheerde bestandsinvoer en-uitvoer (I/O). Met Strenge beveiliging kunnen applets in hun sandbox worden uitgevoerd. Schakel Java uit om te voorkomen dat er applets worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, kunnen Java-applets niet worden uitgevoerd. Als u deze beleidsinstelling niet configureert, worden Java-applets uitgeschakeld.
   
-  **Standaard**: java uitschakelen 
+  **Standaardinstelling**: Java uitschakelen 
   
 - **Internet Explorer: alleen goedgekeurde domeinen in de internetzone toestaan om ActiveX-besturingselementen te gebruiken**  </br>
   Met deze beleidsinstelling bepaalt u of de gebruiker wordt gevraagd om toe te staan dat ActiveX-besturingselementen op andere websites worden uitgevoerd dan de website waarop het ActiveX-besturingselement is geïnstalleerd. Als u deze beleidsinstelling inschakelt, wordt de gebruiker vooraf gevraagd of het ActiveX-besturingselement mag worden uitgevoerd vanaf websites in deze zone. De gebruiker kan ervoor kiezen dat het besturingselement vanaf de huidige site of vanaf alle sites kan worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, krijgt de gebruiker niet de sitespecifieke ActiveX-melding te zien en kunnen ActiveX-besturingselementen worden uitgevoerd vanaf alle sites in deze zone.
@@ -725,12 +725,12 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: beveiligde modus van internetzone**  
   Met deze beleidsinstelling kunt u de functie Beveiligde modus inschakelen. Met behulp van Beveiligde modus kunt u Internet Explorer beschermen tegen misbruikte zwakke plekken door het aantal locaties te verminderen waarnaar Internet Explorer in het register en het bestandssysteem kan schrijven. Als u deze beleidsinstelling inschakelt, wordt Beveiligde modus ingeschakeld. De gebruiker kan Beveiligde modus niet uitschakelen. Als u deze beleidsinstelling uitschakelt, wordt Beveiligde modus uitgeschakeld. De gebruiker kan Beveiligde modus niet inschakelen. Als u deze beleidsinstelling niet configureert, kan de gebruiker Beschermde modus in- of uitschakelen.
   
-  **Standaard**: inschakelen 
+  **Standaardinstelling**: Inschakelen 
   
 - **ActiveX-besturingselementen die niet als veilig zijn gemarkeerd initialiseren en als script uitvoeren in de internetzone in Internet Explorer**  
   Met deze beleidsinstelling kunt u ActiveX-besturingselementen beheren die niet als veilig zijn gemarkeerd. Als u deze beleidsinstelling inschakelt, worden ActiveX-besturingselementen uitgevoerd, voorzien van parameters en als script uitgevoerd zonder de veiligheid van objecten in te stellen voor niet-vertrouwde gegevens of scripts. Deze instelling wordt niet aanbevolen, behalve voor veilige en beheerde zones. Deze instelling zorgt dat zowel onveilige als veilige besturingselementen worden geïnitialiseerd en als script worden uitgevoerd. Daarbij worden de ActiveX-besturingselementen van het script die als veilig zijn gemarkeerd, genegeerd. Als u deze beleidsinstelling inschakelt en in de vervolgkeuzelijst Vragen selecteert, worden gebruikers gevraagd of ze willen toestaan dat het besturingselement met parameters wordt geladen of als script wordt uitgevoerd. Als u deze beleidsinstelling uitschakelt, worden ActiveX-besturingselementen die niet veilig kunnen worden ingesteld, niet geladen met parameters of als script uitgevoerd. Als u deze beleidsinstelling niet configureert, worden ActiveX-besturingselementen die niet veilig kunnen worden ingesteld, niet geladen met parameters of als script uitgevoerd.
   
-  **Standaard**: uitschakelen 
+  **Standaard**: Uitschakelen 
   
 - **Internet Explorer: vergrendeld SmartScreen in beperkte zone**  </br>
   Met deze beleidsinstelling bepaalt u of het SmartScreen-filter pagina's in deze zone scant op schadelijke inhoud. Als u deze beleidsinstelling inschakelt, scant het SmartScreen-filter pagina's in deze zone op schadelijke inhoud. Als u deze beleidsinstelling uitschakelt, scant het SmartScreen-filter geen pagina's in deze zone op schadelijke inhoud. Als u deze beleidsinstelling niet configureert, kan de gebruiker kiezen of het SmartScreen-filter pagina's in deze zone scant op schadelijke inhoud. Opmerking: in Internet Explorer 7 bepaalt deze beleidsinstelling of het phishing-filter pagina's in deze zone scant op schadelijke inhoud.
@@ -745,22 +745,22 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Java-machtigingen voor de internetzone in Internet Explorer**  
   Met deze beleidsinstelling kunt u machtigingen voor Java-applets beheren. Als u deze beleidsinstelling inschakelt, kunt u opties kiezen in de vervolgkeuzelijst. Aangepast, om instellingen voor machtigingen afzonderlijk te beheren. Met Minimale beveiliging kunnen applets alle bewerkingen uitvoeren. Met Normale beveiliging kunnen applets worden uitgevoerd in hun eigen sandbox (een gebied in het geheugen waarbuiten het programma geen aanroepen kan doen). Daarnaast biedt deze optie mogelijkheden zoals een scratchruimte (een veilig en beveiligd opslaggebied op de clientcomputer) en door de gebruiker beheerde bestandsinvoer en-uitvoer (I/O). Met Strenge beveiliging kunnen applets in hun sandbox worden uitgevoerd. Schakel Java uit om te voorkomen dat er applets worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, kunnen Java-applets niet worden uitgevoerd. Als u deze beleidsinstelling niet configureert, wordt de machtiging ingesteld op Hoge veiligheid.
   
-  **Standaard**: java uitschakelen  
+  **Standaardinstelling**: Java uitschakelen  
   
 - **Actieve scripts in de beperkte zone van Internet Explorer**  
   Met deze beleidsinstelling kunt u beheren of scriptcode op pagina's in de zone wordt uitgevoerd. Als u deze beleidsinstelling inschakelt, kan scriptcode op pagina's in de zone automatisch worden uitgevoerd. Als u in de vervolgkeuzelijst Vragen selecteert, moeten gebruikers kiezen of ze willen toestaan dat scripts op pagina's in de zone worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, kan scriptcode op pagina's in de zone niet worden uitgevoerd. Als u deze beleidsinstelling niet configureert, kan scriptcode op pagina's in de zone niet worden uitgevoerd.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: aanmeldingsopties voor internetzones**  
-  Met deze beleidsinstelling kunt u de instellingen voor aanmeldingsopties beheren. Als u deze beleidsinstelling inschakelt, kunt u kiezen uit de volgende aanmeldingsopties. Anoniem aanmelden om HTTP-verificatie uit te schakelen en het gastaccount alleen gebruiken voor het CIFS-protocol (Common Internet File System). Om een gebruikersnaam en wachtwoord vragen om een query te maken voor de gebruikers-id's en wachtwoorden van gebruikers. Nadat een query voor een gebruiker is uitgevoerd, kunnen deze waarden op de achtergrond worden gebruikt gedurende de rest van de sessie. Alleen automatisch aanmelden in de intranetzone om een query uit te voeren voor de gebruikers-id's en wachtwoorden in andere zones. Nadat een query voor een gebruiker is uitgevoerd, kunnen deze waarden op de achtergrond worden gebruikt gedurende de rest van de sessie. Automatisch aanmelden met de huidige gebruikersnaam en het huidige wachtwoord om te proberen aan te melden met behulp van Windows NT-vraag-antwoord (ook wel NTLM-verificatie genoemd). Als de server Windows NT Challenge-antwoord wordt het teken wordt gebruikgemaakt van de gebruiker netwerk-gebruikersnaam en wachtwoord voor aanmelding ondersteunt. Als Windows NT-vraag-antwoord niet door de server wordt ondersteund, wordt de gebruiker gevraagd om de gebruikersnaam en het wachtwoord op te geven. Als u deze beleidsinstelling uitschakelt, wordt de aanmelding ingesteld op Alleen automatisch aanmelden in de intranetzone. Als u deze beleidsinstelling niet configureert, aanmelden is ingesteld op automatische aanmelding in de alleen in intranetzone.
+  Met deze beleidsinstelling kunt u de instellingen voor aanmeldingsopties beheren. Als u deze beleidsinstelling inschakelt, kunt u kiezen uit de volgende aanmeldingsopties. Anoniem aanmelden om HTTP-verificatie uit te schakelen en het gastaccount alleen gebruiken voor het CIFS-protocol (Common Internet File System). Om een gebruikersnaam en wachtwoord vragen om een query te maken voor de gebruikers-id's en wachtwoorden van gebruikers. Nadat een query voor een gebruiker is uitgevoerd, kunnen deze waarden op de achtergrond worden gebruikt gedurende de rest van de sessie. Alleen automatisch aanmelden in de intranetzone om een query uit te voeren voor de gebruikers-id's en wachtwoorden in andere zones. Nadat een query voor een gebruiker is uitgevoerd, kunnen deze waarden op de achtergrond worden gebruikt gedurende de rest van de sessie. Automatisch aanmelden met de huidige gebruikersnaam en het huidige wachtwoord om te proberen aan te melden met behulp van Windows NT-vraag-antwoord (ook wel NTLM-verificatie genoemd). Als Windows NT-vraag-antwoord door de server wordt ondersteund, gebruikt de aanmelding de gebruikersnaam en het wachtwoord van de gebruiker voor het netwerk om de gebruiker aan te melden. Als Windows NT-vraag-antwoord niet door de server wordt ondersteund, wordt de gebruiker gevraagd om de gebruikersnaam en het wachtwoord op te geven. Als u deze beleidsinstelling uitschakelt, wordt de aanmelding ingesteld op Alleen automatisch aanmelden in de intranetzone. Als u deze beleidsinstelling niet configureert, wordt de aanmelding ingesteld op Alleen automatisch aanmelden in de intranetzone.
   
-  **Standaard**: vragen  
+  **Standaardinstelling**: Vragen  
   
 - **Beperkte zone van Internet Explorer: uitvoeren van VBScript toestaan**  </br>  
   Met deze beleidsinstelling kunt u beheren VBScript kan worden uitgevoerd op pagina's via de opgegeven zone in Internet Explorer. Als u in de vervolgkeuzelijst Inschakelen hebt geselecteerd, kan VBScript worden uitgevoerd zonder tussenkomst van de gebruiker. Als u in de vervolgkeuzelijst Vragen hebt geselecteerd, worden gebruikers gevraagd of ze willen toestaan dat VBScript wordt uitgevoerd. Als u in de vervolgkeuzelijst Uitschakelen hebt geselecteerd, wordt voorkomen dat VBScript wordt uitgevoerd. Als u deze beleidsinstelling niet configureert of uitschakelt, kan VBScript niet worden uitgevoerd.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Beperkte zone van Internet Explorer: inhoud van verschillende domeinen verslepen tussen vensters**  
   Met deze beleidsinstelling kunt u opties instellen voor het verslepen van inhoud van het ene naar het andere domein wanneer de bron en de bestemming zich in verschillende vensters bevinden. Als u deze beleidsinstelling inschakelt en op Inschakelen klikt, kunnen gebruikers inhoud van het ene naar het andere domein verslepen wanneer de bron en de bestemming zich in verschillende vensters bevinden. Gebruikers kunnen deze instelling niet wijzigen. Als u deze beleidsinstelling inschakelt en op Uitschakelen klikt, kunnen gebruikers geen inhoud van het ene naar het andere domein verslepen als de bron en de bestemming zich in verschillende vensters bevinden. Gebruikers kunnen deze instelling niet wijzigen. Als u deze beleidsinstelling in Internet Explorer 10 uitschakelt of niet configureert, kunnen gebruikers geen inhoud van het ene naar het andere domein verslepen wanneer de bron en de bestemming zich in verschillende vensters bevinden. Gebruikers kunnen deze instelling wijzigen in het dialoogvenster Internetopties. Als u dit beleid in Internet Explorer 9 en eerdere versies uitschakelt of niet configureert, kunnen gebruikers inhoud van het ene naar het andere domein verslepen als de bron en de bestemming zich in verschillende vensters bevinden. Gebruikers kunnen deze instelling niet wijzigen.
@@ -770,7 +770,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Intranetzone van Internet Explorer: ActiveX-besturingselementen die niet als veilig zijn gemarkeerd, initialiseren en als script uitvoeren**  
   Met deze beleidsinstelling kunt u ActiveX-besturingselementen beheren die niet als veilig zijn gemarkeerd. Als u deze beleidsinstelling inschakelt, worden ActiveX-besturingselementen uitgevoerd, voorzien van parameters en als script uitgevoerd zonder de veiligheid van objecten in te stellen voor niet-vertrouwde gegevens of scripts. Deze instelling wordt niet aanbevolen, behalve voor veilige en beheerde zones. Deze instelling zorgt dat zowel onveilige als veilige besturingselementen worden geïnitialiseerd en als script worden uitgevoerd. Daarbij worden de ActiveX-besturingselementen van het script die als veilig zijn gemarkeerd, genegeerd. Als u deze beleidsinstelling inschakelt en in de vervolgkeuzelijst Vragen selecteert, worden gebruikers gevraagd of ze willen toestaan dat het besturingselement met parameters wordt geladen of als script wordt uitgevoerd. Als u deze beleidsinstelling uitschakelt, worden ActiveX-besturingselementen die niet veilig kunnen worden ingesteld, niet geladen met parameters of als script uitgevoerd. Als u deze beleidsinstelling niet configureert, worden ActiveX-besturingselementen die niet veilig kunnen worden ingesteld, niet geladen met parameters of als script uitgevoerd.
   
-  **Standaard**: uitschakelen 
+  **Standaard**: Uitschakelen 
   
 - **Internet Explorer: bijlagen downloaden**  
   Met deze beleidsinstelling kunt u voorkomen dat de gebruiker bestandsbijlagen via een feed naar de computer van de gebruiker downloadt. Als u deze beleidsinstelling inschakelt, kan de gebruiker de feedsynchronisatie-engine niet zodanig instellen dat een bijlage wordt gedownload via de eigenschappenpagina van een feed. Een ontwikkelaar kan de downloadinstelling niet wijzigen via de feed-API's. Als u deze beleidsinstelling uitschakelt of niet configureert, kan de gebruiker de feedsynchronisatie-engine zodanig instellen dat een bijlage wordt gedownload via de eigenschappenpagina van een feed. Een ontwikkelaar kan de downloadinstelling wijzigen via de feed-API's.
@@ -780,7 +780,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Beperkte zone van Internet Explorer: niet-ondertekende Active X-besturingselementen downloaden**  </br>
   Met deze beleidsinstelling kunt u beheren of gebruikers niet-ondertekende ActiveX-besturingselementen in de zone kunnen downloaden. Een dergelijke code is mogelijk schadelijk, vooral als deze afkomstig is van een niet-vertrouwde zone. Als u deze beleidsinstelling inschakelt, kunnen gebruikers niet-ondertekende besturingselementen uitvoeren zonder tussenkomst van de gebruiker. Als u in de vervolgkeuzelijst Vragen selecteert, moeten gebruikers kiezen of ze het niet-ondertekende besturingselement wel of niet laten uitvoeren. Als u deze beleidsinstelling uitschakelt, kunnen gebruikers niet-ondertekende besturingselementen niet uitvoeren. Als u deze beleidsinstelling niet configureert, kunnen gebruikers niet-ondertekende besturingselementen niet uitvoeren.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Beperkte zone van Internet Explorer: inhoud van verschillende domeinen verslepen binnen vensters**  
   Met deze beleidsinstelling kunt u beheren of gebruikers niet-ondertekende ActiveX-besturingselementen in de zone kunnen downloaden. Een dergelijke code is mogelijk schadelijk, vooral als deze afkomstig is van een niet-vertrouwde zone. Als u deze beleidsinstelling inschakelt, kunnen gebruikers niet-ondertekende besturingselementen uitvoeren zonder tussenkomst van de gebruiker. Als u in de vervolgkeuzelijst Vragen selecteert, moeten gebruikers kiezen of ze het niet-ondertekende besturingselement wel of niet laten uitvoeren. Als u deze beleidsinstelling uitschakelt, kunnen gebruikers niet-ondertekende besturingselementen niet uitvoeren. Als u deze beleidsinstelling niet configureert, kunnen gebruikers niet-ondertekende besturingselementen niet uitvoeren.
@@ -794,12 +794,12 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
   
 - **Internetzone van Internet Explorer: scriptlets** Met deze beleidsinstelling kunt u beheren of de gebruiker scriptlets kan uitvoeren. Als u deze beleidsinstelling inschakelt, kan de gebruiker scriptlets uitvoeren. Als u deze beleidsinstelling uitschakelt, kan de gebruiker geen scriptlets uitvoeren. Als u deze beleidsinstelling niet configureert, kan de gebruiker scriptlets in- of uitschakelen.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Beperkte zone van Internet Explorer: bestanden slepen en neerzetten of kopiëren en plakken**  
   Met deze beleidsinstelling kunt u beheren of gebruikers bestanden kunnen slepen of kunnen kopiëren slepen en plakken vanuit een bron binnen de zone. Als u deze beleidsinstelling inschakelt, kunnen gebruikers automatisch bestanden slepen of bestanden kopiëren en plakken vanuit deze zone. Als u in de vervolgkeuzelijst Vragen selecteert, moeten gebruikers kiezen of ze bestanden willen slepen of kopiëren vanuit deze zone. Als u deze beleidsinstelling uitschakelt, kunnen geen bestanden slepen of kopiëren en plakken vanuit deze zone. Als u deze beleidsinstelling niet configureert, moeten gebruikers kiezen of ze bestanden willen slepen of kopiëren vanuit deze zone.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Software van Internet Explorer: bij ongeldige handtekening** </br>
   Met deze beleidsinstelling kunt u beheren of software, bijvoorbeeld ActiveX-besturingselementen en bestandsdownloads, kunnen worden uitgevoerd of geïnstalleerd door de gebruiker als de handtekening ongeldig is. Een ongeldige handtekening kan erop wijzen dat iemand het bestand onrechtmatig heeft gewijzigd. Als u deze beleidsinstelling inschakelt, worden gebruikers gevraagd of ze bestanden met een ongeldige handtekening willen uitvoeren of installeren. Als u deze beleidsinstelling uitschakelt, kunnen gebruikers bestanden met een ongeldige handtekening niet uitvoeren of installeren. Als u deze beleidsinstelling niet configureert, kunnen gebruikers kiezen of ze bestanden met een ongeldige handtekening willen uitvoeren of installeren.
@@ -808,7 +808,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
   
 - **Beperkte zone van Internet Explorer: kopiëren en plakken via scripts** </br> Met deze beleidsinstelling kunt u beheren of met scripts een klembordbewerking (zoals knippen, kopiëren en plakken) kan worden uitgevoerd in een opgegeven regio. Als u deze beleidsinstelling inschakelt, kan met een script een klembordbewerking worden uitgevoerd. Als u in de vervolgkeuzelijst Vragen selecteert, moeten gebruikers kiezen of ze klembordbewerkingen willen uitvoeren. Als u deze beleidsinstelling uitschakelt, kan er met een script geen klembordbewerking worden uitgevoerd. Als u deze beleidsinstelling niet configureert, kan met een script geen klembordbewerking worden uitgevoerd.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Beperkte zone van Internet Explorer: inhoud van verschillende domeinen in de verslepen tussen vensters**  
   Met deze beleidsinstelling kunt u opties instellen voor het verslepen van inhoud van het ene naar het andere domein wanneer de bron en de bestemming zich in verschillende vensters bevinden. Als u deze beleidsinstelling inschakelt en op Inschakelen klikt, kunnen gebruikers inhoud van het ene naar het andere domein verslepen wanneer de bron en de bestemming zich in verschillende vensters bevinden. Gebruikers kunnen deze instelling niet wijzigen. Als u deze beleidsinstelling inschakelt en op Uitschakelen klikt, kunnen gebruikers geen inhoud van het ene naar het andere domein verslepen als de bron en de bestemming zich in verschillende vensters bevinden. Gebruikers kunnen deze instelling niet wijzigen. Als u deze beleidsinstelling in Internet Explorer 10 uitschakelt of niet configureert, kunnen gebruikers geen inhoud van het ene naar het andere domein verslepen wanneer de bron en de bestemming zich in verschillende vensters bevinden. Gebruikers kunnen deze instelling wijzigen in het dialoogvenster Internetopties. Als u dit beleid in Internet Explorer 9 en eerdere versies uitschakelt of niet configureert, kunnen gebruikers inhoud van het ene naar het andere domein verslepen als de bron en de bestemming zich in verschillende vensters bevinden. Gebruikers kunnen deze instelling niet wijzigen.  <br><br>
@@ -832,7 +832,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Java-machtigingen voor de vergrendelde zone Lokale machine in Internet Explorer**  
   Met deze beleidsinstelling kunt u machtigingen voor Java-applets beheren. Als u deze beleidsinstelling inschakelt, kunt u opties kiezen in de vervolgkeuzelijst. Aangepast, om instellingen voor machtigingen afzonderlijk te beheren. Met Minimale beveiliging kunnen applets alle bewerkingen uitvoeren. Met Normale beveiliging kunnen applets worden uitgevoerd in hun eigen sandbox (een gebied in het geheugen waarbuiten het programma geen aanroepen kan doen). Daarnaast biedt deze optie mogelijkheden zoals een scratchruimte (een veilig en beveiligd opslaggebied op de clientcomputer) en door de gebruiker beheerde bestandsinvoer en-uitvoer (I/O). Met Strenge beveiliging kunnen applets in hun sandbox worden uitgevoerd. Schakel Java uit om te voorkomen dat er applets worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, kunnen Java-applets niet worden uitgevoerd. Als u deze beleidsinstelling niet configureert, worden Java-applets uitgeschakeld
   
-  **Standaard**: java uitschakelen 
+  **Standaardinstelling**: Java uitschakelen 
   
 - **Er wordt geen antimalware uitgevoerd op ActiveX-besturingselementen in de beperkte zone van Internet Explorer**  </br>
   Met deze beleidsinstelling wordt bepaald of Internet Explorer antimalwareprogramma's uitvoert op ActiveX-besturingselementen om te controleren of ze veilig zijn om te laden op pagina's. Als u deze beleidsinstelling inschakelt, controleert Internet Explorer niet met uw antimalware-programma om te zien of het veilig is om een exemplaar van het ActiveX-besturingselement te installeren. Als u deze beleidsinstelling uitschakelt, controleert Internet Explorer altijd met uw antimalware-programma om te zien of het veilig is om een exemplaar van het ActiveX-besturingselement te installeren. Als u deze beleidsinstelling niet configureert, controleert Internet Explorer altijd met uw antimalware-programma om te zien of het veilig is om een exemplaar van het ActiveX-besturingselement te installeren. Gebruikers kunnen dit gedrag in- of uitschakelen met de beveiligingsinstellingen van Internet Explorer.
@@ -842,12 +842,12 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Internet Explorer: onderdelen in de beperkte zone uitvoeren die afhankelijk zijn van .NET Framework en zijn ondertekend met Authenticode**  
   Met deze beleidsinstelling kunt u beheren of .NET Framework-onderdelen die met Authenticode zijn ondertekend, kunnen worden uitgevoerd in Internet Explorer. Deze onderdelen bevatten beheerde besturingselementen waarnaar vanuit een objectlabel wordt verwezen en beheerde uitvoerbare bestanden waarnaar vanuit een koppeling wordt verwezen. Als u deze beleidsinstelling inschakelt, zal Internet Explorer ondertekende beheerde onderdelen uitvoeren. Als u in de vervolgkeuzelijst Vragen selecteert, wordt de gebruiker gevraagd om te bepalen of ondertekende beheerde onderdelen moeten worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, zal Internet Explorer ondertekende beheerde onderdelen niet uitvoeren. Als u deze beleidsinstelling niet configureert, worden ondertekende beheerde onderdelen niet uitgevoerd in Internet Explorer.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: toegang tot gegevensbronnen via een beperkte zone**  
   Met deze beleidsinstelling kunt u beheren of Internet Explorer toegang heeft tot gegevens van een andere beveiligingszone met behulp van de Microsoft XML-parser (MSXML) of ActiveX-gegevensobjecten (ADO). Als u deze beleidsinstelling inschakelt, kunnen gebruikers een pagina laden in de zone die MSXML of ADO gebruikt voor toegang tot gegevens van een andere site in de zone. Als u Prompt selecteert in de vervolgkeuzelijst, wordt gebruikers gevraagd om te kiezen of een pagina mag worden geladen in de zone die MSXML of ADO gebruikt voor toegang tot gegevens van een andere site in de zone. Als u deze beleidsinstelling uitschakelt, kunnen gebruikers geen pagina laden in de zone die MSXML of ADO gebruikt voor toegang tot gegevens van een andere site in de zone. Als u deze beleidsinstelling niet configureert, kunnen gebruikers geen pagina laden in de zone die MSXML of ADO gebruikt voor toegang tot gegevens van een andere site in de zone.
   
-  **Standaard**: uitschakelen 
+  **Standaard**: Uitschakelen 
   
 - **Er wordt geen antimalware uitgevoerd op ActiveX-besturingselementen in de internetzone van Internet Explorer**  </br>
   Met deze beleidsinstelling wordt bepaald of Internet Explorer antimalwareprogramma's uitvoert op ActiveX-besturingselementen om te controleren of ze veilig zijn om te laden op pagina's. Als u deze beleidsinstelling inschakelt, controleert Internet Explorer niet met uw antimalware-programma om te zien of het veilig is om een exemplaar van het ActiveX-besturingselement te installeren. Als u deze beleidsinstelling uitschakelt, controleert Internet Explorer altijd met uw antimalware-programma om te zien of het veilig is om een exemplaar van het ActiveX-besturingselement te installeren. Als u deze beleidsinstelling niet configureert, controleert Internet Explorer altijd met uw antimalware-programma om te zien of het veilig is om een exemplaar van het ActiveX-besturingselement te installeren. Gebruikers kunnen dit gedrag in- of uitschakelen met de beveiligingsinstellingen van Internet Explorer.
@@ -856,7 +856,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
   
 - **Internet Explorer: kopiëren en plakken via een script in de internetzone** </br> Met deze beleidsinstelling kunt u beheren of met scripts een klembordbewerking (zoals knippen, kopiëren en plakken) kan worden uitgevoerd in een opgegeven regio. Als u deze beleidsinstelling inschakelt, kan met een script een klembordbewerking worden uitgevoerd. Als u in de vervolgkeuzelijst Vragen selecteert, moeten gebruikers kiezen of ze klembordbewerkingen willen uitvoeren. Als u deze beleidsinstelling uitschakelt, kan er met een script geen klembordbewerking worden uitgevoerd. Als u deze beleidsinstelling niet configureert, kan een script een klembordbewerking uitvoeren.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Internet Explorer: de ActiveX Installer-service gebruiken**  </br>
   Met deze beleidsinstelling kunt u opgeven hoe ActiveX-besturingselementen worden geïnstalleerd. Als u deze beleidsinstelling inschakelt, wordt ActiveX-besturingselementen alleen geïnstalleerd als de Installer-service aanwezig is en is geconfigureerd om de installatie van ActiveX-besturingselementen toe te staan. Als u deze beleidsinstelling uitschakelt of niet configureert, worden ActiveX-besturingselementen, inclusief besturingselementen per gebruiker, geïnstalleerd via het gewone installatieproces.
@@ -871,12 +871,12 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Niet-ondertekende Active X-besturingselementen downloaden in internetzone van Internet Explorer**  </br>
   Met deze beleidsinstelling kunt u beheren of gebruikers niet-ondertekende ActiveX-besturingselementen in de zone kunnen downloaden. Een dergelijke code is mogelijk schadelijk, vooral als deze afkomstig is van een niet-vertrouwde zone. Als u deze beleidsinstelling inschakelt, kunnen gebruikers niet-ondertekende besturingselementen uitvoeren zonder tussenkomst van de gebruiker. Als u in de vervolgkeuzelijst Vragen selecteert, moeten gebruikers kiezen of ze het niet-ondertekende besturingselement wel of niet laten uitvoeren. Als u deze beleidsinstelling uitschakelt, kunnen gebruikers niet-ondertekende besturingselementen niet uitvoeren. Als u deze beleidsinstelling niet configureert, kunnen gebruikers niet-ondertekende besturingselementen niet uitvoeren.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Vensters en frames door verschillende domeinen laten navigeren in de Internet Explorer-internetzone**  </br>
   Met deze beleidsinstelling kunt u het openen van vensters en frames en de toegang tot toepassingen in verschillende domeinen beheren. Als u deze beleidsinstelling inschakelt, kunnen gebruikers vensters en frames openen vanuit andere domeinen en toegang krijgen tot toepassingen van andere domeinen. Als u Vragen in de vervolgkeuzelijst selecteert, wordt aan gebruikers gevraagd of vensters en frames toegang mogen hebben tot toepassingen van andere domeinen. Als u deze beleidsinstelling uitschakelt, kunnen gebruikers geen vensters en frames openen om toegang te krijgen tot toepassingen vanuit andere domeinen. Als u deze beleidsinstelling niet configureert, kunnen gebruikers vensters en frames openen vanuit andere domeinen en toegang krijgen tot toepassingen van andere domeinen.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Updates van de statusbalk vinden plaats in de Internet Explorer-internetzone via script**  
   Met deze beleidsinstelling kunt u regelen of de statusbalk in de zone via script mag worden bijgewerkt. Als u deze beleidsinstelling inschakelt, kunnen scripts de statusbalk bijwerken. Als u deze beleidsinstelling uitschakelt of niet configureert, mag de statusbalk niet worden bijgewerkt via script.
@@ -899,7 +899,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **ActiveX-besturingselementen die niet als veilig zijn gemarkeerd initialiseren en als script uitvoeren in de beperkte zone in Internet Explorer**  
   Met deze beleidsinstelling kunt u ActiveX-besturingselementen beheren die niet als veilig zijn gemarkeerd. Als u deze beleidsinstelling inschakelt, worden ActiveX-besturingselementen uitgevoerd, voorzien van parameters en als script uitgevoerd zonder de veiligheid van objecten in te stellen voor niet-vertrouwde gegevens of scripts. Deze instelling wordt niet aanbevolen, behalve voor veilige en beheerde zones. Deze instelling zorgt dat zowel onveilige als veilige besturingselementen worden geïnitialiseerd en als script worden uitgevoerd. Daarbij worden de ActiveX-besturingselementen van het script die als veilig zijn gemarkeerd, genegeerd. Als u deze beleidsinstelling inschakelt en in de vervolgkeuzelijst Vragen selecteert, worden gebruikers gevraagd of ze willen toestaan dat het besturingselement met parameters wordt geladen of als script wordt uitgevoerd. Als u deze beleidsinstelling uitschakelt, worden ActiveX-besturingselementen die niet veilig kunnen worden ingesteld, niet geladen met parameters of als script uitgevoerd. Als u deze beleidsinstelling niet configureert, worden ActiveX-besturingselementen die niet veilig kunnen worden ingesteld, niet geladen met parameters of als script uitgevoerd.
   
-  **Standaard**: uitschakelen  
+  **Standaard**: Uitschakelen  
   
 - **Gebruikers van Internet Explorer die beleidsregels wijzigen**  
     Hiermee voorkomt u dat gebruikers instellingen voor beveiligingszones wijzigen. Een beveiligingszone is een groep websites met hetzelfde beveiligingsniveau. Als u dit beleid inschakelt, worden de knop Aangepast niveau en de schuifregelaar voor het beveiligingsniveau op het tabblad Beveiliging in het dialoogvenster Internetopties uitgeschakeld. Als u dit beleid uitschakelt of niet configureert, kunnen gebruikers de instellingen voor beveiligingszones wijzigen. Met dit beleid voorkomt u dat gebruikers de instellingen voor beveiligingszones die door de beheerder zijn gemaakt, kunnen wijzigen. Opmerking: het beleid 'De pagina Beveiliging uitschakelen' (te vinden in \Gebruikersconfiguratie\Beheersjablonen\Windows-onderdelen\Internet Explorer\Onderdeel Internetopties van het Configuratiescherm), waardoor het tabblad Beveiliging uit Internet Explorer in Configuratiescherm wordt verwijderd, heeft voorrang op dit beleid. Dit beleid wordt genegeerd als deze optie is ingeschakeld. Zie ook het beleid Beveiligingszones: alleen computerinstellingen gebruiken.
@@ -909,7 +909,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Beveiligde modus van de beperkte zone van Internet Explorer**  
   Met deze beleidsinstelling kunt u de functie Beveiligde modus inschakelen. Met behulp van Beveiligde modus kunt u Internet Explorer beschermen tegen misbruikte zwakke plekken door het aantal locaties te verminderen waarnaar Internet Explorer in het register en het bestandssysteem kan schrijven. Als u deze beleidsinstelling inschakelt, wordt Beveiligde modus ingeschakeld. De gebruiker kan Beveiligde modus niet uitschakelen. Als u deze beleidsinstelling uitschakelt, wordt Beveiligde modus uitgeschakeld. De gebruiker kan Beveiligde modus niet inschakelen. Als u deze beleidsinstelling niet configureert, kan de gebruiker Beschermde modus in- of uitschakelen.
   
-  **Standaard**: inschakelen  
+  **Standaardinstelling**: Inschakelen  
   
 - **Persistentie van gebruikersgegevens in de internetzone van Internet Explorer**  
   Met deze beleidsinstelling kunt u het bewaren van gegevens beheren in de geschiedenis van de browser, in Favorieten, in een XML-archief of direct in op een schijf opgeslagen webpagina's. Wanneer een gebruiker naar een permanent bewaarde pagina terugkeert, kan de status van de pagina worden hersteld als deze beleidsinstelling op de juiste wijze is geconfigureerd. Als u deze beleidsinstelling inschakelt, kunnen gebruikers informatie bewaren in de geschiedenis van de browser, in Favorieten, in een XML-archief of direct in op een schijf opgeslagen webpagina's. Als u deze beleidsinstelling uitschakelt, kunnen gebruikers geen informatie bewaren in de geschiedenis van de browser, in Favorieten, in een XML-archief of direct in op een schijf opgeslagen webpagina's. Als u deze beleidsinstelling niet configureert, kunnen gebruikers geen informatie bewaren in de geschiedenis van de browser, in Favorieten, in een XML-archief of direct in op een schijf opgeslagen webpagina's.
@@ -930,7 +930,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 - **Java-machtigingen voor de intranetzone zijn in Internet Explorer vergrendeld**  
   Met deze beleidsinstelling kunt u machtigingen voor Java-applets beheren. Als u deze beleidsinstelling inschakelt, kunt u opties kiezen in de vervolgkeuzelijst. Aangepast, om instellingen voor machtigingen afzonderlijk te beheren. Met Minimale beveiliging kunnen applets alle bewerkingen uitvoeren. Met Normale beveiliging kunnen applets worden uitgevoerd in hun eigen sandbox (een gebied in het geheugen waarbuiten het programma geen aanroepen kan doen). Daarnaast biedt deze optie mogelijkheden zoals een scratchruimte (een veilig en beveiligd opslaggebied op de clientcomputer) en door de gebruiker beheerde bestandsinvoer en-uitvoer (I/O). Met Strenge beveiliging kunnen applets in hun sandbox worden uitgevoerd. Schakel Java uit om te voorkomen dat er applets worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, kunnen Java-applets niet worden uitgevoerd. Als u deze beleidsinstelling niet configureert, worden Java-applets uitgeschakeld.
   
-  **Standaard**: java uitschakelen  
+  **Standaardinstelling**: Java uitschakelen  
   
 - **Uitgebreide beveiligde modus van Internet Explorer**   
   De uitgebreide beveiligde modus biedt extra bescherming tegen schadelijke websites door gebruik te maken van 64-bits processen op 64-bits versies van Windows. Op computers met minimaal Windows 8 beperkt de uitgebreide beveiligde modus ook de locaties die Internet Explorer in het register en bestandssysteem kan lezen. Als u deze beleidsinstelling inschakelt, wordt Uitgebreide beveiligde modus ingeschakeld. Voor elke zone waarvoor Beveiligde modus is ingeschakeld, wordt Uitgebreide beveiligde modus gebruikt. Gebruikers kunnen Uitgebreide beveiligde modus niet uitschakelen. Als u deze beleidsinstelling uitschakelt, wordt Uitgebreide beveiligde modus uitgeschakeld. In een zone waarvoor Beveiligde modus is ingeschakeld, wordt de Beveiligde modus-versie gebruikt die is geïntroduceerd in Internet Explorer 7 voor Windows Vista. Als u dit beleid niet configureert, kunnen gebruikers Uitgebreide beveiligde modus inschakelen of uitschakelen op het tabblad Geavanceerd van het dialoogvenster Internetopties.
@@ -951,12 +951,12 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
 Zie [Beleids-CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions) in de Windows-documentatie voor meer informatie. 
 
 - **Anonieme toegang tot named pipes en shares beperken**  
-  Wanneer dit is ingeschakeld, deze beveiligingsinstelling beperkt de anonieme toegang tot shares en pipes tot de instellingen voor: (1) Named pipes die kunnen worden benaderd anoniem (2)-Shares die anoniem toegankelijk zijn
+  Wanneer dit is ingeschakeld, wordt met deze beveiligingsinstelling anonieme toegang beperkt tot shares en pipes voor de instellingen van: (1) named pipes die anoniem kunnen worden benaderd (2) shares die anoniem kunnen worden benaderd
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
   
 - **Minimale sessiebeveiliging voor op NTLM SSP-gebaseerde servers**  
-  Via deze beveiligingsinstelling kan een server de onderhandeling van een 128-bits versleuteling en/of een NTLMv2-sessiebeveiliging vereisen. Deze waarden zijn afhankelijk van de beveiligingsinstellingswaarde van het LAN Manager-verificatieniveau. De opties zijn: NTLMv2-sessiebeveiliging vereisen: de verbinding mislukt als berichtintegriteit niet wordt onderhandeld. 128-bits versleuteling vereisen. De verbinding mislukt als niet wordt onderhandeld over sterke versleuteling (128-bits).
+  Via deze beveiligingsinstelling kan een server de onderhandeling van een 128-bits versleuteling en/of een NTLMv2-sessiebeveiliging vereisen. Deze waarden zijn afhankelijk van de beveiligingsinstellingswaarde van het LAN Manager-verificatieniveau. De opties zijn: NTLMv2-sessiebeveiliging vereisen: de verbinding mislukt als niet over berichtintegriteit wordt onderhandeld. 128-bits versleuteling vereisen. De verbinding mislukt als niet wordt onderhandeld over sterke versleuteling (128-bits).
   
   **Standaardinstelling**: NTLM V2 en 128-bits versleuteling vereisen  
   
@@ -965,9 +965,9 @@ Zie [Beleids-CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/wind
   
   **Standaardinstelling**: 15
   
-- **De client verplichten om altijd communicatie digitaal te ondertekenen** Met deze beveiligingsinstelling bepaalt u of al het verkeer via beveiligde kanalen dat is geïnitialiseerd door het domeinlid moet worden ondertekend of versleuteld. Wanneer een computer lid wordt van een domein, wordt een computeraccount gemaakt. Wanneer het systeem daarna wordt gestart, wordt het wachtwoord van het computeraccount gebruikt om een beveiligd kanaal te maken met een domeincontroller voor het domein. Dit beveiligde kanaal wordt gebruikt om bewerkingen uit te voeren zoals NTLM-PassThrough-verificatie, LSA SID/Name Lookup en meer. Met deze instelling bepaalt u of alle verkeer via beveiligde kanalen dat is geïnitialiseerd door een domeinlid aan de minimale beveiligingsvereisten voldoet. Hiermee bepaalt u specifiek of al het verkeer via beveiligde kanalen dat is gestart door een domeinlid moet worden ondertekend of versleuteld. Als dit beleid is ingeschakeld, dan wordt het beveiligde kanaal pas ingesteld als is onderhandeld over de ondertekening of versleuteling van al het verkeer via beveiligde kanalen. Als dit beleid uitgeschakeld, wordt versleuteling is en ondertekening van al het verkeer beveiligd kanaal wordt onderhandeld met de domeincontroller in dat geval het niveau van ondertekening en versleuteling is afhankelijk van de versie van de domeincontroller en de instellingen van de volgende twee beleid: lid van domein: gegevens (indien mogelijk) in beveiligd kanaal digitaal versleutelen lid van domein: digitaal ondertekenen gegevens in beveiligd kanaal (indien mogelijk)
+- **De client verplichten om altijd communicatie digitaal te ondertekenen** Met deze beveiligingsinstelling bepaalt u of al het verkeer via beveiligde kanalen dat is geïnitialiseerd door het domeinlid moet worden ondertekend of versleuteld. Wanneer een computer lid wordt van een domein, wordt een computeraccount gemaakt. Wanneer het systeem daarna wordt gestart, wordt het wachtwoord van het computeraccount gebruikt om een beveiligd kanaal te maken met een domeincontroller voor het domein. Dit beveiligde kanaal wordt gebruikt om bewerkingen uit te voeren zoals NTLM-PassThrough-verificatie, LSA SID/Name Lookup en meer. Met deze instelling bepaalt u of alle verkeer via beveiligde kanalen dat is geïnitialiseerd door een domeinlid aan de minimale beveiligingsvereisten voldoet. Hiermee bepaalt u specifiek of al het verkeer via beveiligde kanalen dat is gestart door een domeinlid moet worden ondertekend of versleuteld. Als dit beleid is ingeschakeld, dan wordt het beveiligde kanaal pas ingesteld als is onderhandeld over de ondertekening of versleuteling van al het verkeer via beveiligde kanalen. Als dit beleid is uitgeschakeld, wordt met de domeincontroller onderhandeld over de versleuteling en ondertekening van al het verkeer via beveiligde kanalen. In dat geval is het niveau van ondertekening en versleuteling afhankelijk van de domeincontrollerversie en de instellingen van de volgende twee beleidsregels: Lid van domein: gegevens in beveiligd kanaal digitaal versleutelen (indien mogelijk) Lid van domein: gegevens in beveiligd kanaal digitaal ondertekenen (indien mogelijk)
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
   
 - **Verificatieniveau**  
   Met deze beveiligingsinstelling bepaalt u welk vraag/antwoord-verificatieprotocol wordt gebruikt voor netwerkaanmeldingen. Deze keuze is als volgt van invloed op het niveau van het verificatieprotocol dat wordt gebruikt door clients, het sessiebeveiligingsniveau dat is onderhandeld en het verificatieniveau dat is geaccepteerd door servers:  
@@ -983,12 +983,12 @@ Zie [Beleids-CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/wind
 - **Voorkomen dat clients niet-versleutelde wachtwoorden verzenden naar de SMB-servers van derden**  
   Als deze beveiligingsinstelling is ingeschakeld, kan de SMB-redirector (Server Message Block) ongecodeerde wachtwoorden verzenden naar niet-Microsoft SMB-servers die geen ondersteuning voor wachtwoordversleuteling bieden tijdens verificatie. Niet-versleutelde wachtwoorden verzenden is een beveiligingsrisico.
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
   
 - **Servercommunicatie digitaal ondertekenen altijd uitschakelen**  
   Met deze beveiligingsinstelling wordt bepaald of de SMB-client probeert te onderhandelen over ondertekening van het SMB-pakket. Het SMB-protocol (Server Message Block) vormt de basis voor bestands- en printerdeling van Microsoft en veel andere netwerkbewerkingen, zoals extern Windows-beheer. Ter voorkoming van man-in-the-middle-aanvallen waardoor SMB-pakketten in-transit worden gewijzigd, ondersteunt het SMB-protocol de digitale ondertekening van SMB-pakketten. Met deze beleidsinstelling wordt bepaald of de SMB-clientonderdeel probeert te onderhandelen over SMB-pakketondertekening wanneer deze verbinding maakt met een SMB-server. Als deze beveiligingsinstelling is ingeschakeld, vraagt de Microsoft-netwerkclient de server om SMB-pakketondertekening uit te voeren bij het instellen van een sessie. Als pakketondertekening is ingeschakeld op de server, wordt over ondertekening van pakketten onderhandeld. Als dit beleid is uitgeschakeld, onderhandelt de SMB-client nooit over SMB-pakketondertekening.
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
   
 - **Gedrag bij vragen om uitbreiding van bevoegdheden van beheerders**  
   Met deze beleidsinstelling wordt het gedrag voor het vragen om uitbreiding van bevoegdheden voor beheerders gedefinieerd. U kunt kiezen uit de volgende opties: 
@@ -1003,8 +1003,8 @@ Zie [Beleids-CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/wind
   
 - **Minimale sessiebeveiliging voor op NTLM SSP-gebaseerde clients**  
   Via deze beveiligingsinstelling kan een client de onderhandeling van een 128-bits versleuteling en/of een NTLMv2-sessiebeveiliging vereisen. Deze waarden zijn afhankelijk van de beveiligingsinstellingswaarde van het LAN Manager-verificatieniveau. U kunt kiezen uit de volgende opties:
-  - NTLMv2-sessiebeveiliging vereisen: de verbinding mislukt als NTLMv2-protocol niet wordt onderhandeld. 
-  - *128-bits versleuteling vereisen*: de verbinding mislukt als sterke versleuteling (128-bits) niet wordt onderhandeld.
+  - NTLMv2-sessiebeveiliging vereisen: de verbinding mislukt als niet over het NTLMv2-protocol wordt onderhandeld. 
+  - *128-bits versleuteling vereisen*: de verbinding mislukt als niet wordt onderhandeld over sterke versleuteling (128-bits).
   - *NTLMv2 en 128-bits versleuteling vereisen*. 
 
   **Standaardinstelling**: NTLM V2-128-versleuteling vereisen
@@ -1012,29 +1012,29 @@ Zie [Beleids-CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/wind
 - **Gedrag bij verwijderen van smartcard**  
     Met deze beveiligingsinstelling bepaalt u wat er gebeurt wanneer de smartcard van een aangemelde gebruiker uit de lezer van de smartcard wordt verwijderd. U kunt kiezen uit de volgende opties:
      - *Geen actie*. 
-     - *Werkstation vergrendelen* -het werkstation is vergrendeld wanneer de smartcard wordt verwijderd, zodat gebruikers een voor laat het gebied, nemen de smartcard met hen en nog steeds onderhouden van een beveiligde sessie.
+     - *Werkstation vergrendelen*: het werkstation wordt vergrendeld wanneer de smartcard wordt verwijderd, zodat gebruikers de ruimte kunnen verlaten, hun smartcard met zich mee kunnen nemen en nog steeds een beveiligde sessie kunnen beheren.
      - *Afmelden forceren*: de gebruiker wordt automatisch afgemeld wanneer de smartcard wordt verwijderd.
      - *Verbinding verbreken met sessie met Extern bureaublad*: als de smartcard wordt verwijderd, wordt de sessie verbroken zonder de gebruiker af te melden. Zo kan de gebruiker de smartcard plaatsen en de sessie later of op een andere met smartcardlezer uitgeruste computer hervatten zonder zich opnieuw te moeten aanmelden. Als de sessie lokaal is, werkt dit beleid op dezelfde manier als Werkstation vergrendelen.  <br><br>
     
-  **Standaard**: werkstation vergrendelen
+  **Standaardinstelling**: Werkstation vergrendelen
   
 - **Anonieme inventarisatie van SAM-accounts en -shares blokkeren**  
   Met deze beveiligingsinstelling bepaalt u of anonieme inventarisatie van SAM-accounts en shares is toegestaan. Windows staat anonieme gebruikers toe bepaalde activiteiten uit te voeren, zoals het inventariseren van de namen van domeinaccounts en netwerkshares. Dit is bijvoorbeeld handig wanneer een beheerder toegang wil verlenen aan gebruikers in een vertrouwd domein dat geen wederzijdse vertrouwensrelatie onderhoudt. Als u anonieme inventarisatie van SAM-accounts en shares niet wilt toestaan, stelt u dit beleid in op *Ja*.
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
   
 - **Externe aanmelding met een leeg wachtwoord blokkeren**  
-  Met deze beveiligingsinstelling bepaalt u of de lokale accounts die niet zijn beveiligd met een wachtwoord kunnen worden gebruikt om aan te melden vanaf andere locaties dan de fysieke computerconsole. Indien ingeschakeld, moeten lokale accounts die niet beveiligd met een wachtwoord zijn van de computer toetsenbord gebruiken om aan te melden. 
+  Met deze beveiligingsinstelling bepaalt u of de lokale accounts die niet zijn beveiligd met een wachtwoord kunnen worden gebruikt om aan te melden vanaf andere locaties dan de fysieke computerconsole. Bij inschakeling moet voor aanmelden met lokale accounts die niet zijn beveiligd met een wachtwoord het toetsenbord van de computer worden gebruikt. 
 
   *Waarschuwing*: op computers die zich niet in een fysiek beveiligde locatie bevinden, moeten altijd beleidsregels voor sterke wachtwoorden voor alle lokale gebruikersaccounts worden gehandhaafd. Anders kan iedereen die fysiek toegang tot de computer heeft, zich aanmelden met een gebruikersaccount zonder wachtwoord. Dit is met name belangrijk voor draagbare computers. 
 
   Als u dit beveiligingsbeleid toepast op de groep Iedereen, kan niemand zich aanmelden via Extern bureaublad-services. Deze instelling heeft geen invloed op aanmeldingen die gebruikmaken van domeinaccounts. Voor toepassingen die gebruikmaken van externe interactieve aanmeldingen is het mogelijk om deze instelling te omzeilen.
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
   
 - **Gedrag bij vragen om benodigde bevoegdheden van standaardgebruikers**  
   Met deze beleidsinstelling wordt het gedrag voor het vragen om benodigde bevoegdheden voor standaardgebruikers gedefinieerd. 
-  - *Aanvragen voor benodigde bevoegdheden automatisch weigeren*: wanneer een bewerking nodig tot misbruik van bevoegdheden is, een configureerbare toegang geweigerd foutbericht wordt weergegeven. Een onderneming waar bureaubladen als standaardgebruikers worden uitgevoerd, kan deze instelling kiezen om het aantal telefoontje naar de helpdesk te beperken. 
+  - *Aanvragen voor benodigde bevoegdheden automatisch weigeren*: wanneer voor een bewerking onrechtmatige uitbreiding van toegangsrechten is vereist, wordt een configureerbaar foutbericht weergegeven met de melding dat de toegang is geweigerd. Een onderneming waar bureaubladen als standaardgebruikers worden uitgevoerd, kan deze instelling kiezen om het aantal telefoontje naar de helpdesk te beperken. 
   - *Vragen om referenties op het beveiligde bureaublad*: wanneer voor een bewerking onrechtmatige uitbreiding van toegangsrechten is vereist, wordt de gebruiker op het beveiligde bureaublad gevraagd een andere gebruikersnaam en bevoegd wachtwoord in te voeren. Als de gebruiker geldige referenties invoert, wordt de bewerking voortgezet met de toepasselijke bevoegdheid. 
   - *Vragen om referenties*: wanneer voor een bewerking onrechtmatige uitbreiding van toegangsrechten is vereist, wordt de gebruiker gevraagd een gebruikersnaam en wachtwoord voor een account met beheerdersrechten in te voeren. Als de gebruiker geldige referenties invoert, wordt de bewerking voortgezet met de toepasselijke bevoegdheid.  
   
@@ -1045,14 +1045,14 @@ Zie [Beleids-CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/wind
   - *Niet geconfigureerd*: de modus Door administrator goedkeuren en alle gerelateerde UAC-beleidsinstellingen zijn uitgeschakeld. Opmerking: als deze instelling is uitgeschakeld, ontvangt u een melding van Security Center dat de algehele beveiliging van het besturingssysteem is verminderd. 
   - *Ja*: de modus Door administrator goedkeuren is ingeschakeld. Dit beleid moet zijn ingeschakeld en de gerelateerde UAC-beleidsinstellingen moeten op de juiste wijze zijn ingesteld om ervoor te zorgen dat het ingebouwde administratoraccount en alle andere gebruikers die lid zijn van de groep Administrators kunnen worden uitgevoerd in de modus Door administrator goedkeuren.  
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
   
 - **Anonieme inventarisatie van SAM-accounts voorkomen**  
   Met deze beveiligingsinstelling wordt bepaald welke aanvullende machtigingen worden toegekend aan anonieme verbindingen met de computer. Windows staat anonieme gebruikers toe bepaalde activiteiten uit te voeren, zoals het inventariseren van de namen van domeinaccounts en netwerkshares. Dit is bijvoorbeeld handig wanneer een beheerder toegang wil verlenen aan gebruikers in een vertrouwd domein dat geen wederzijdse vertrouwensrelatie onderhoudt. Met deze beveiligingsoptie kunnen als volgt aanvullende beperkingen voor anonieme verbinding worden toegepast: 
   - *Ja*: geen inventarisatie van SAM-accounts toestaan. Met deze optie wordt de instelling Iedereen bij de beveiligingsmachtigingen voor resources vervangen door Geverifieerde gebruikers.
-  - *Niet geconfigureerd*: Er zijn geen extra beperkingen. Vertrouwen op standaardmachtigingen.  
+  - *Niet geconfigureerd*: geen aanvullende beperkingen. Vertrouwen op standaardmachtigingen.  
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
   
 - **Externe aanroepen van Security Accounts Manager toestaan**  
   Met deze beleidsinstelling kunt u verbindingen voor externe procedureaanroepen van SAM beperken. Als deze instelling niet is geselecteerd, wordt de standaard security descriptor gebruikt.
@@ -1064,31 +1064,31 @@ Zie [Beleids-CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/wind
   - *Ja*: de modus Door administrator goedkeuren wordt gebruikt voor het ingebouwde administratoraccount. Voor elke bewerking waarvoor onrechtmatige uitbreiding van toegangsrechten is vereist, wordt de gebruiker standaard gevraagd de bewerking goed te keuren. 
   - *Niet geconfigureerd*: met het ingebouwde administrator worden alle toepassingen met volledige administratorbevoegdheid uitgevoerd.  
 
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
   
 - **Toepassingen met UI-toegang toestaan voor veilige locaties**  
   Met deze beleidsinstelling wordt bepaald of UIA-programma's (User Interface Accessibility of UIAcces) het beveiligde bureaublad automatisch kunnen uitschakelen voor het vragen om benodigde bevoegdheden die door een standaardgebruiker. 
   - *Ja*: UIA-programma's, waaronder Windows Hulp op afstand, kunnen automatisch het beveiligde bureaublad uitschakelen bij vragen om benodigde bevoegdheden. Als u de beleidsinstelling Gebruikersaccountbeheer: naar het beveiligd bureaublad overschakelen tijdens het vragen om benodigde bevoegdheden niet uitschakelt, worden de vragen weergegeven op het bureaublad van de interactieve gebruiker in plaats op van het beveiligde bureaublad. 
   - *Niet geconfigureerd*: het beveiligde bureaublad kan alleen worden uitgeschakeld door de gebruiker van het interactieve bureaublad of door het uitschakelen van de beleidsinstelling Gebruikersaccountbeheer: naar het beveiligde bureaublad overschakelen tijdens het vragen om benodigde bevoegdheden.  
 
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
 
 - **Installatie van toepassingen detecteren en vragen om benodigde bevoegdheden**  
   Met deze beleidsinstelling wordt het gedrag van detectie voor installatie van toepassingen voor de computer bepaald. U kunt kiezen uit de volgende opties: 
   - *Ingeschakeld*: wanneer een installatiepakket van een toepassing wordt gedetecteerd waarvoor onrechtmatige uitbreiding van toegangsrechten is vereist, wordt de gebruiker gevraagd een gebruikersnaam en wachtwoord voor een account met beheerdersrechten in te voeren. Als de gebruiker geldige referenties invoert, wordt de bewerking voortgezet met de toepasselijke bevoegdheid. 
   - *Uitgeschakeld*: installatiepakketten voor toepassingen worden niet gedetecteerd en worden niet om benodigde bevoegdheden gevraagd. Ondernemingen waar bureaubladen als standaardgebruikers worden uitgevoerd en die gebruikmaken van gedelegeerde installatietechnologieën, zoals Installatie van software van groepsbeleid of Systems Management Server (SMS), moeten deze beleidsinstelling uitschakelen. In dit geval is de detectie van installatieprogramma's niet nodig.  
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
   
 - **Voorkomen dat de hashwaarde van LAN manager wordt opgeslagen opslaan bij volgende wachtwoordwijziging**  
   Met deze beveiligingsinstelling wordt bepaald of bij de volgende wachtwoordwijziging de hashwaarde van LAN Manager (LM) voor het nieuwe wachtwoord wordt opgeslagen. De LM-hash is relatief zwak en gevoelig voor aanvallen in vergelijking met de cryptografisch sterkere NT-hash van Windows. Omdat de LM-hash in de beveiligingsdatabase van de lokale computer wordt opgeslagen, kunnen de wachtwoorden worden aangetast als de beveiligingsdatabase wordt aangevallen.
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
 
 - **Schrijffouten in bestanden en registers in locaties per gebruiker virtualiseren**  
   Met deze beleidsinstelling wordt bepaald of schrijffouten voor toepassingen worden omgeleid naar gedefinieerde register- en bestandssysteemlocaties. Met deze beleidsinstelling worden toepassingen beperkt die als administrator worden uitgevoerd en waarvoor toepassingsgegevens van de runtime naar *%ProgramFiles%*, *%Windir%*, *%Windir%\system32* of *HKLM\Software* worden schrijven.
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
 
 ## <a name="ms-security-guide"></a>MS-beveiligingshandleiding  
 Raadpleeg [Policy CSP - MSSecurityGuide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) (Beleids-CSP - MSSecurityGuide) in de Windows-documentatie voor meer informatie.  
@@ -1097,7 +1097,7 @@ Raadpleeg [Policy CSP - MSSecurityGuide](https://docs.microsoft.com/windows/clie
   **Standaardinstelling**: ingeschakeld
   
 - **Configuratie voor starten van stuurprogramma voor SMB-v1-client**  
-  **Standaard**: stuurprogramma uitgeschakeld
+  **Standaardinstelling**: uitgeschakeld stuurprogramma
   
 - **SMB-v1-server**  
   **Standaardinstelling**: uitgeschakeld
@@ -1112,13 +1112,13 @@ Raadpleeg [Policy CSP - MSSecurityGuide](https://docs.microsoft.com/windows/clie
 Raadpleeg [Policy CSP - MSSLegacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) (Beleids-CSP - MSSLegacy) in de Windows-documentatie voor meer informatie.  
 
 - **Beveiligingsniveau voor routering van IP-bron voor netwerk**  
-  **Standaard**: hoogste beveiliging  
+  **Standaardinstelling**: hoogste beveiliging  
   
 - **Aanvragen voor NetBIOS-naamreleases van netwerk negeren met uitzondering van WINS-servers**  
   **Standaardinstelling**: ingeschakeld
   
 - **Beveiligingsniveau voor routering van IPv6-bron voor netwerk**  
-  **Standaard**: hoogste beveiliging
+  **Standaardinstelling**: hoogste beveiliging
 
 - **ICMP-omleidingen van netwerk overschrijven door OSPF gegenereerde omleidingen**  
   **Standaardinstelling**: uitgeschakeld
@@ -1132,12 +1132,12 @@ Raadpleeg [Policy CSP - Power](https://docs.microsoft.com/windows/client-managem
   **Standaardinstelling**: ingeschakeld
   
 - **Stand-bystatussen tijdens slaapstand bij gebruik van accu**  
-  Met deze beleidsinstelling worden beheerd als Windows stand-by-statussen gebruiken kunt wanneer de computer in slaapstand plaatsen. Als u deze beleidsinstelling inschakelt of niet configureert, worden in Windows de stand-bystatussen gebruikt om de computer in een slaapstand te zetten. Als u deze beleidsinstelling uitschakelt, zijn de stand-bystatussen (S1-S3) niet toegestaan.
+  Met deze beleidsinstelling wordt bepaald of de stand-bystatussen kunnen worden ingeschakeld met Windows wanneer de computer in de slaapstand wordt gezet. Als u deze beleidsinstelling inschakelt of niet configureert, worden in Windows de stand-bystatussen gebruikt om de computer in een slaapstand te zetten. Als u deze beleidsinstelling uitschakelt, zijn de stand-bystatussen (S1-S3) niet toegestaan.
   
   **Standaardinstelling**: uitgeschakeld
   
 - **Stand-bystatussen tijdens slaapstand in aangesloten toestand**  
-  Met deze beleidsinstelling worden beheerd als Windows stand-by-statussen gebruiken kunt wanneer de computer in slaapstand plaatsen. Als u deze beleidsinstelling inschakelt of niet configureert, worden in Windows de stand-bystatussen gebruikt om de computer in een slaapstand te zetten. Als u deze beleidsinstelling uitschakelt, zijn de stand-bystatussen (S1-S3) niet toegestaan.
+  Met deze beleidsinstelling wordt bepaald of de stand-bystatussen kunnen worden ingeschakeld met Windows wanneer de computer in de slaapstand wordt gezet. Als u deze beleidsinstelling inschakelt of niet configureert, worden in Windows de stand-bystatussen gebruikt om de computer in een slaapstand te zetten. Als u deze beleidsinstelling uitschakelt, zijn de stand-bystatussen (S1-S3) niet toegestaan.
   
   **Standaardinstelling**: uitgeschakeld
   
@@ -1177,7 +1177,7 @@ Zie [Beleids-CSP - RemoteDesktopServices](https://docs.microsoft.com/windows/cli
   
   Als u deze instelling uitschakelt of niet configureert, wordt het versleutelingsniveau dat moet worden gebruikt voor externe verbindingen met Extern bureaublad-sessiehostservers niet afgedwongen via groepsbeleid. Belangrijke FIPS-compatibiliteit kan worden geconfigureerd via de systeemcryptografie. FIPS-compatibele algoritmes gebruiken voor versleuteling, hashing en ondertekening van de instellingen in groepsbeleid (onder Computerconfiguratie\Windows-instellingen\Beveiligingsinstellingen\Lokaal Beleid\Beveiligingsopties.) Met de instelling FIPS-compatibiliteit worden gegevens die van de client naar de server en de server aan de client worden verzonden, versleuteld met de FIPS 140-versleutelingsalgoritmen (FIPS: Federal Information Processing Standard) met behulp van cryptografische modules van Microsoft. Gebruik dit versleutelingsniveau wanneer voor de communicatie tussen clients en de Extern bureaublad-sessiehostservers de hoogste mate van versleuteling is vereist.
   
-  **Standaard**: hoog
+  **Standaardinstelling**: Hoog
   
 ## <a name="remote-management"></a>Extern beheer  
 Zie [Beleids-CSP - RemoteManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) in de Windows-documentatie voor meer informatie.  
@@ -1222,7 +1222,7 @@ Zie [Beleids-CSP - RemoteProcedureCall](https://docs.microsoft.com/windows/clien
   - Via *Geverifieerd* kunnen alleen geverifieerde RPC-clients (volgens bovenstaande definitie) verbinding maken met RPC-servers die worden uitgevoerd op de computer waarop de beleidsinstelling wordt toegepast. Er kan een uitzondering worden gemaakt op interfaces wanneer daarvoor een aanvraag is gedaan. 
   - Via *Geverifieerd zonder uitzonderingen* kunnen alleen geverifieerde RPC-clients (volgens bovenstaande definitie) verbinding maken met RPC-servers die worden uitgevoerd op de computer waarop de beleidsinstelling wordt toegepast. Er zijn geen uitzonderingen toegestaan. Opmerking: deze beleidsinstelling wordt pas toegepast wanneer het systeem opnieuw wordt opgestart.  
 
-  **Standaard**: geverifieerd
+  **Standaardinstelling**: Geverifieerd
 
 ## <a name="search"></a>Zoeken 
 Zie [Beleids-CSP - Search](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) in de Windows-documentatie voor meer informatie.  
@@ -1230,9 +1230,9 @@ Zie [Beleids-CSP - Search](https://docs.microsoft.com/windows/client-management/
 - **Indexeren van versleutelde items uitschakelen**  
   Hiermee kunt u het indexeren van items toestaan of verbieden. Deze schakeloptie dient voor de Windows Search-indexeerfunctie. Hiermee bepaalt u of items die zijn versleuteld, worden geïndexeerd, zoals de bestanden met Windows Information Protection (WIP). Wanneer het beleid wordt ingeschakeld, worden de items met WIP-beveiliging geïndexeerd en worden de metagegevens opgeslagen op een niet-versleutelde locatie. De metagegevens bevatten gegevens zoals het bestandspad en de wijzigingsdatum. Als het beleid is uitgeschakeld, worden de items met WIP-beveiliging niet geïndexeerd en worden ze niet weergegeven in de resultaten in Cortana of Verkenner. Als er te veel mediabestanden met WIP-beveiliging op het apparaat staan, kunnen de prestaties bij gebruik van foto's en Groove-apps ook worden beïnvloed.
   
-**Standaard**: Ja
+**Standaardinstelling**: Ja
   
-## <a name="smart-screen"></a>Smartscreen  
+## <a name="smart-screen"></a>SmartScreen  
 Zie [Beleids-CSP - SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) in de Windows-documentatie voor meer informatie.  
 
 - **Uitvoering van niet-geverifieerde bestanden blokkeren**  
@@ -1240,7 +1240,7 @@ Zie [Beleids-CSP - SmartScreen](https://docs.microsoft.com/windows/client-manage
   - *Niet geconfigureerd*: werknemers kunnen SmartScreen-waarschuwingen negeren en schadelijke bestanden uitvoeren. 
   - *Ja*: werknemers kunnen SmartScreen-waarschuwingen negeren en schadelijke bestanden uitvoeren.
 
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
 
 <!-- Not currently available? - **Block unverified file download**  
   By default, Microsoft Edge allows users to bypass (ignore) the Windows Defender SmartScreen warnings about potentially malicious files, allowing them to continue downloading the unverified file(s). Enabling this policy prevents users from bypassing the warnings, blocking them from downloading of the unverified file(s).
@@ -1250,7 +1250,7 @@ Zie [Beleids-CSP - SmartScreen](https://docs.microsoft.com/windows/client-manage
 - **SmartScreen vereisen voor apps en bestanden**  
   Hiermee kunnen IT-beheerders SmartScreen voor Windows configureren.
 
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
   
 ## <a name="system"></a>Systeem  
 Zie [Beleids-CSP - System](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system) in de Windows-documentatie voor meer informatie.  
@@ -1258,7 +1258,7 @@ Zie [Beleids-CSP - System](https://docs.microsoft.com/windows/client-management/
 - **Initialisatie van systeemstartstuurprogramma**  
   Met deze beleidsinstelling kunt u opgeven welke systeemstartstuurprogramma's worden geïnitialiseerd op basis van een classificatie die is bepaald door het systeemstartstuurprogramma Early Launch Antimalware. Het systeemstartstuurprogramma Early Launch Antimalware kan de volgende classificaties retourneren voor elk systeemstartstuurprogramma: 
   - *Goed*: het stuurprogramma is ondertekend en is niet gemanipuleerd.  
-  - *Ongeldig*: het stuurprogramma is geïdentificeerd als schadelijke software. Het is raadzaam dat u bekend beschadigde stuurprogramma's is geïnitialiseerd niet toestaan. 
+  - *Ongeldig*: het stuurprogramma is geïdentificeerd als schadelijke software. Het is raadzaam om niet toe te staan dat bekende ongeldige stuurprogramma's worden geïnitialiseerd. 
   - *Ongeldig, maar vereist voor opstarten*: het stuurprogramma is geïdentificeerd als schadelijke software, maar de computer kan niet worden opgestart zonder dat dit stuurprogramma wordt geladen. 
   - *Onbekend*: dit stuurprogramma is niet beoordeeld door de toepassing voor de detectie van schadelijke software, en is niet geclassificeerd door het systeemstartstuurprogramma Early Launch Antimalware.  
 
@@ -1273,12 +1273,12 @@ Zie [Beleids-CSP - Wi-Fi](https://docs.microsoft.com/windows/client-management/m
 - **Internetverbinding delen blokkeren**  
   Hiermee geeft u op of het delen van internet op het apparaat mogelijk is.  
 
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
 
 - **Automatisch verbinding maken met Wi-Fi-hotspots blokkeren**  
   Toestaan of weigeren dat het apparaat automatisch verbinding maakt met Wi-Fi-hotspots.  
 
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
   
 ## <a name="windows-connection-manager"></a>Windows-verbindingsbeheer  
 Zie [Beleids-CSP - WindowsConnectionManager](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsconnectionmanager) in de Windows-documentatie voor meer informatie.  
@@ -1298,12 +1298,12 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
 - **Inkomende e-mailberichten scannen**  
   Hiermee kunt u het scannen van e-mail toestaan of niet toestaan.
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
 
 - **Onderliggend procestype voor starten van Office-apps**  
   Office-apps mogen geen onderliggende processen maken. Dit is inclusief Word, Excel, PowerPoint, OneNote en Access. Dit is typisch malwaregedrag, met name voor op macro's gebaseerde aanvallen die Office-apps proberen te gebruiken om schadelijke uitvoerbare bestanden te starten of te downloaden.
   
-  **Standaard**: blokkeren
+  **Standaardinstelling**: Blokkeren
   
 - **Voorbeeld van een Defender-toestemmingstype voor indiening**  
   Hiermee wordt het gebruikerstoestemmingsniveau in Windows Defender gecontroleerd om gegevens te verzenden. Als de vereiste toestemming al is verleend, worden de gegevens door Windows Defender ingediend. Als dit niet het geval is (en als de gebruiker heeft opgegeven dat deze vraag nooit mag worden gesteld), wordt de gebruikersinterface geopend om de gebruiker om toestemming te vragen (wanneer Defender/AllowCloudProtection is toegestaan) voordat gegevens worden verzonden.
@@ -1318,77 +1318,77 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
 - **Uitvoeringstype van de payload die is gedownload met een script**  
   Uitvoeringstype van de payload die is gedownload met een Defender-script
   
-  **Standaard**: blokkeren
+  **Standaardinstelling**: Blokkeren
   
 - **Type referentiediefstal voorkomen**  
   Windows Defender Credential Guard maakt gebruik van op virtualisatie gebaseerde beveiliging om geheime gegevens te isoleren. Zo hebt u er alleen met bevoegde systeemsoftware toegang toe. Niet-geautoriseerde toegang tot deze geheime gegevens kan leiden tot pogingen tot diefstal, zoals een Pass-the-Hash- of Pass-the-Ticket-aanval. Met Windows Defender Credential Guard worden deze aanvallen voorkomen, doordat NTLM-wachtwoord-hashes, Kerberos Ticket Granting Tickets en referenties die door toepassingen zijn opgeslagen als domeinreferenties worden beschermd.
   
-  **Standaard**: inschakelen
+  **Standaardinstelling**: Inschakelen
 
 - **Uitvoertype vanuit e-mailinhoud**  
-  Deze regel worden de volgende bestandstypen worden geblokkeerd uitvoeren of gestart vanuit een e-mailbericht bekijken in Microsoft Outlook of webmail (zoals Gmail.com of Outlook.com): uitvoerbare bestanden (zoals .exe, .dll of .scr) Script-bestanden (zoals een PowerShell-PS, VisualBasic .vbs, of JavaScript JS-bestand) archive-scriptbestanden.
+  Deze regel voorkomt dat de volgende bestandstypen worden uitgevoerd of gestart vanuit een e-mailbericht dat wordt weergegeven in Microsoft Outlook of webmail (zoals Gmail.com of Outlook.com): uitvoerbare bestanden (zoals .exe, .dll of .scr) Script-bestanden (zoals de volgende: PowerShell .ps, VisualBasic .vbs of JavaScript .js) Script-archiefbestanden.
   
-  **Standaard**: blokkeren
+  **Standaardinstelling**: Blokkeren
   
 - **Netwerkbeveiligingstype**  
-  Met dit beleid kunt u netwerkbeveiliging inschakelen (blokkeren/controleren) of uitschakelen in Windows Defender Exploit Guard. Netwerkbeveiliging is een functie van Windows Defender Exploit Guard die voorkomt dat werknemers die apps gebruiken in contact komen met phishing-praktijken, sites die misbruik maken en schadelijke inhoud op internet. Dit omvat het voorkomen dat browsers van derden verbinding maken met gevaarlijke websites. Waardetype is geheel getal. Als u deze instelling inschakelt, wordt netwerkbeveiliging ingeschakeld en kunnen werknemers dit niet uitschakelen. Het gedrag kan worden beheerd met de volgende opties: Blokkeren en Controleren. Als u dit beleid inschakelt met de optie Blokkeren, kunnen gebruikers en apps geen verbinding maken met gevaarlijke domeinen. Hier ziet u deze activiteit in Windows Defender Security Center. Als u dit beleid inschakelt met de optie Controleren, kunnen gebruikers en apps verbinding maken met gevaarlijke domeinen. Maar deze activiteit wordt nog steeds weergegeven in Windows Defender Security Center. Als u dit beleid uitschakelt, kunnen gebruikers/apps verbinding maken met gevaarlijke domeinen. U ziet geen netwerkactiviteit in Windows Defender Security Center. Als u dit beleid niet configureert, is netwerk blokkeren standaard uitgeschakeld.
+  Met dit beleid kunt u netwerkbeveiliging inschakelen (blokkeren/controleren) of uitschakelen in Windows Defender Exploit Guard. Netwerkbeveiliging is een functie van Windows Defender Exploit Guard die voorkomt dat werknemers die apps gebruiken in contact komen met phishing-praktijken, sites die misbruik maken en schadelijke inhoud op internet. Dit omvat het voorkomen dat browsers van derden verbinding maken met gevaarlijke websites. Waardetype is geheel getal. Als u deze instelling inschakelt, wordt netwerkbeveiliging ingeschakeld en kunnen werknemers dit niet uitschakelen. Het gedrag kan worden beheerd met de volgende opties: Blokkeren en Controleren. Als u dit beleid inschakelt met de optie Blokkeren, kunnen gebruikers en apps geen verbinding maken met gevaarlijke domeinen. U kunt deze activiteit bekijken in Windows Defender Security Center. Als u dit beleid inschakelt met de optie Controleren, kunnen gebruikers en apps verbinding maken met gevaarlijke domeinen. Maar deze activiteit wordt nog steeds weergegeven in Windows Defender Security Center. Als u dit beleid uitschakelt, kunnen gebruikers/apps verbinding maken met gevaarlijke domeinen. U ziet geen netwerkactiviteit in Windows Defender Security Center. Als u dit beleid niet configureert, wordt netwerkblokkering standaard uitgeschakeld.
   
-  **Standaard**: inschakelen
+  **Standaardinstelling**: Inschakelen
   
 - **Defender: scandag plannen**  
   Scandag voor Defender plannen.
   
-  **Standaard**: elke dag
+  **Standaardinstelling**: Elke dag
   
 - **Cloudbeveiliging**  
   Om uw pc zo goed mogelijk te beveiligen, verzendt Windows Defender gegevens naar Microsoft over problemen die worden gevonden. Microsoft analyseert die gegevens, verzamelt meer gegevens over problemen die u en andere klanten ondervinden en biedt verbeterde oplossingen.
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
 
 - **Defender: mogelijk ongewenste app-actie**  
-  De beveiligingsfunctie tegen mogelijk ongewenste toepassingen (PUA; potentially unwanted application) in Windows Defender Antivirus kan mogelijk ongewenste toepassingen identificeren en voorkomen dat ze worden gedownload en geïnstalleerd op eindpunten in uw netwerk. Deze toepassingen worden niet beschouwd als virussen, malware of andere soorten bedreigingen, maar kunnen mogelijk acties uitvoeren op eindpunten die nadelige invloed hebben op de prestaties of het gebruik. Mogelijk ongewenste toepassingen kan ook verwijzen naar toepassingen die een slechte reputatie hebben. Standaard worden pua's geblokkeerd gedrag bevat: verschillende typen software bundeling van Ad-injectie in webbrowsers stuurprogramma en de Register-optimalisatieprogramma's die problemen, aanvraag-betaling aan Corrigeer de fouten detecteren, maar blijven op het eindpunt en er zijn geen wijzigingen aanbrengen optimalisaties (ook wel bekend als' antivirus rogue' programma's). Het risico op deze toepassingen kunnen verhogen van het netwerk worden geïnfecteerd met schadelijke software, ertoe leiden dat de malware-infecties te zijn moeilijker om te identificeren en verspilt IT-resources in het opschonen van de toepassingen.  
+  De beveiligingsfunctie tegen mogelijk ongewenste toepassingen (PUA; potentially unwanted application) in Windows Defender Antivirus kan mogelijk ongewenste toepassingen identificeren en voorkomen dat ze worden gedownload en geïnstalleerd op eindpunten in uw netwerk. Deze toepassingen worden niet beschouwd als virussen, malware of andere soorten bedreigingen, maar kunnen mogelijk acties uitvoeren op eindpunten die nadelige invloed hebben op de prestaties of het gebruik. Mogelijk ongewenste toepassingen kan ook verwijzen naar toepassingen die een slechte reputatie hebben. Standaardgedrag van mogelijk ongewenste toepassingen is: Verschillende typen softwarebundeling Advertentietoevoeging in webbrowsers Optimalisatieprogramma's voor stuurprogramma's en registers die problemen detecteren en vragen om betaling om problemen op te lossen. Ze blijven op het eindpunt en er worden geen wijzigen of optimalisaties aangebracht (ook wel bekend als 'rogue antivirus'-programma's). Deze toepassingen kunnen het risico op infectie van uw netwerk met malware verhogen, ervoor zorgen dat malware-infecties moeilijker kunnen worden geïdentificeerd en kunnen IT-resources verspillen omdat deze de toepassingen moeten opschonen.  
   
-  **Standaard**: blokkeren  
+  **Standaardinstelling**: Blokkeren  
 
 - **Macrocode verborgen in scripts**  
   Malware en andere bedreigingen kunnen proberen hun schadelijke code te verbergen in sommige scriptbestanden. Met deze regel wordt voorkomen dat scripts die verborgen lijken te zijn, worden uitgevoerd.
   
-  **Standaard**: blokkeren
+  **Standaardinstelling**: Blokkeren
   
 - **Verwisselbare stations scannen tijdens een volledige scan**  
   Hiermee kan Windows Defender scannen op schadelijke en ongewenste software op verwisselbare stations (bijvoorbeeld flashstations) tijdens een volledige scan. Windows Defender Antivirus scant alle bestanden op USB-apparaten voordat ze worden uitgevoerd.
   
-  **Standaard**: Ja  
+  **Standaardinstelling**: Ja  
   
 - **Archiefbestanden scannen**  
   Archiefbestanden scannen met Defender.
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
   
 - **Gedragscontrole**  
-  Hiermee wordt de functie voor gedragscontrole van Windows Defender toegestaan of geweigerd. Deze sensoren zijn ingesloten in Windows 10 en verzamelen en verwerken gedragssignalen van het besturingssysteem en verzenden deze sensorgegevens naar uw persoonlijke, geïsoleerde, cloudinstantie van Windows Defender ATP.
+  Hiermee wordt de functie voor gedragscontrole van Windows Defender toegestaan of geweigerd. Deze sensoren zijn ingesloten in Windows 10 en verzamelen en verwerken gedragssignalen van het besturingssysteem en verzenden deze sensorgegevens naar uw persoonlijke, geïsoleerde, cloudinstantie van Microsoft Defender ATP.
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
 
 - **Bestanden scannen die zijn geopend vanuit mappen op het netwerk**  
   Als bestanden alleen-lezen zijn, kunnen gebruikers geen gedetecteerde malware verwijderen.
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
 
 - **Niet-vertrouwd USB-procestype**  
   Met deze regel kunnen beheerders voorkomen dat niet-ondertekende of niet-vertrouwde uitvoerbare bestanden worden uitgevoerd vanaf verwisselbare USB-stations, zoals SD-kaarten.
   
-  **Standaard**: blokkeren
+  **Standaardinstelling**: Blokkeren
   
 - **Office-apps: invoeringstype voor andere processen**  
   Office-apps, inclusief Word, Excel, PowerPoint en OneNote, kunnen geen code invoeren in andere processen. Dit wordt doorgaans gebruikt door malware om schadelijke code uit te voeren in een poging om de activiteit te verbergen voor antivirusscanegines.
   
-  **Standaard**: blokkeren
+  **Standaardinstelling**: Blokkeren
   
 - **Office-macrocode staat Win32-importtype toe**  
   Malware kan macrocode in Office-bestanden gebruiken om Win32-DLL's te importeren en laden, die vervolgens kunnen worden gebruikt om API-aanroepen uit te voeren voor verdere infectie in het hele systeem. Met deze regel wordt geprobeerd Office-bestanden te blokkeren die macrocode bevatten waarmee Win32-DLL's kunnen worden geïmporteerd. Dit is inclusief Word, Excel, PowerPoint en OneNote.
   
-  **Standaard**: blokkeren  
+  **Standaardinstelling**: Blokkeren  
   
 - **Defender op cloudblokniveau**  
   Defender op cloudblokniveau.
@@ -1398,12 +1398,12 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
 - **Realtimecontrole**  
   Voor Defender is realtimecontrole vereist.
   
-  **Standaard**: Ja
+  **Standaardinstelling**: Ja
   
 - **Office-apps: uitvoerbare inhoud maken of lanceren**  
   Deze regel is gericht op typisch gedrag van verdachte en schadelijke invoegtoepassingen en scripts (extensies) die uitvoerbare bestanden maken of openen. Dit is een typische malwaretechniek. Extensies kunnen niet worden gebruikt door Office-apps. Meestal gebruiken deze extensies Windows Scripting Host (WSH-bestanden) om scripts uit te voeren die bepaalde taken automatiseren of door gebruikers gemaakt extra functies te leveren
   
-  **Standaard**: blokkeren
+  **Standaardinstelling**: Blokkeren
 
 ## <a name="windows-ink-workspace"></a>Windows Ink-werkruimte  
 Raadpleeg [Policy CSP - WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) (Beleids-CSP - WindowsInkWorkspace) in de Windows-documentatie voor meer informatie.  
@@ -1412,7 +1412,7 @@ Raadpleeg [Policy CSP - WindowsInkWorkspace](https://docs.microsoft.com/windows/
   Hiermee wordt opgegeven of de gebruiker toegang kan krijgen tot de Windows Ink-werkruimte. 
   - *Uitgeschakeld*: toegang tot de Ink-werkruimte is uitgeschakeld. De functie is uitgeschakeld.
   - *Ingeschakeld*: de functie Ink-werkruimte is ingeschakeld, maar de gebruiker kan geen toegang krijgen verder dan het vergrendelingsscherm.
-  - *Niet geconfigureerd* : de werkruimte van Ink-functie is ingeschakeld en de gebruiker kan deze gebruiken boven het vergrendelingsscherm.  
+  - *Niet geconfigureerd*: de functie Ink-werkruimte is ingeschakeld en de gebruiker kan toegang krijgen verder dan het vergrendelingsscherm.  
 
   **Standaardinstelling**: ingeschakeld
  
