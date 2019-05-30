@@ -7,7 +7,6 @@ ms.author: tanvira
 manager: smantri
 ms.date: 4/16/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebefba3f912669166e5e077fe15b0b04f4a7b75f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5c47a7413d98467fffc26dee098a64cfeac770e4
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61489993"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043546"
 ---
 # <a name="work-with-existing-on-premises-proxy-servers"></a>Werken met bestaande on-premises proxyservers
 
 In dit artikel wordt uitgelegd hoe u de Intune Connector voor Active Directory configureert zodat u met uitgaande proxyservers kunt werken. Het is bedoeld voor klanten met netwerkomgevingen met bestaande proxy's.
 
-Zie [Meer informatie over Azure AD-toepassingsproxyconnectoren](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-connectors) voor meer informatie over de werking van connectoren.
+Zie [Meer informatie over Azure AD-toepassingsproxyconnectoren](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-connectors) voor meer informatie over de werking van connectoren.
 
 ## <a name="bypass-outbound-proxies"></a>Uitgaande proxy's overslaan
 

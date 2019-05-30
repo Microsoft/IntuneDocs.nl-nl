@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b91e3863a23d62921f4145db4460fa07f325df98
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515727"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040301"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Zelfstudie: Exchange Online-e-mail beschermen op onbeheerde apparaten
 
@@ -179,9 +178,9 @@ Met het beleid dat u hebt gemaakt, moeten apparaten zich inschrijven bij Intune 
 Als het testbeleid niet langer nodig is, kunt u dit verwijderen.
 1. Meld u aan bij [Intune](https://aka.ms/intuneportal) als globale beheerder of beheerder van een Intune-service.
 2. Selecteer **Apparaatnaleving** > **Beleid**.
-3. In de lijst **Naam beleid** selecteert u het contextmenu (**...**) voor uw testbeleid, en vervolgens selecteert u **Verwijderen**. Selecteer **OK** om te bevestigen.
+3. In de lijst **Naam beleid** selecteert u het contextmenu ( **...** ) voor uw testbeleid, en vervolgens selecteert u **Verwijderen**. Selecteer **OK** om te bevestigen.
 4. Selecteer **Voorwaardelijke toegang** > **Beleid**.
-5. Selecteer in de lijst **Naam beleid** het contextmenu (**...**) voor uw testbeleid en selecteer vervolgens **Verwijderen**. Selecteer **Ja** om te bevestigen.
+5. Selecteer in de lijst **Naam beleid** het contextmenu ( **...** ) voor uw testbeleid en selecteer vervolgens **Verwijderen**. Selecteer **Ja** om te bevestigen.
 
  ## <a name="next-steps"></a>Volgende stappen 
 In deze zelfstudie hebt u app-beveiligingsbeleid gemaakt om te beperken wat de gebruiker kan doen met de Outlook-app. Ook hebt u beleid voor voorwaardelijke toegang gemaakt om gebruik van de Outlook-app te vereisen en MFA te vereisen voor clients met moderne verificatie. Zie, voor meer informatie over het gebruik van Intune met voorwaardelijke toegang om andere apps en diensten te beschermen, [Voorwaardelijke toegang instellen](conditional-access.md).

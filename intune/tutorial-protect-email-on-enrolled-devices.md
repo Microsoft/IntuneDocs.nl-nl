@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4a8e873c48ceb59bfb8ac98fec9a29fa51d6cd3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 80f9d3d2799732f2d019189913c5c47cc6973809
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512225"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044592"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Zelfstudie: Exchange Online e-mail beschermen op beheerde apparaten
 Hier vindt u meer informatie over het gebruik van het nalevingsbeleid voor apparaten met voorwaardelijke toegang. Hiermee kunt u ervoor zorgen dat iOS-apparaten uitsluitend toegang tot Exchange Online e-mail hebben als ze door Intune worden beheerd en een goedgekeurde e-mailapplicatie gebruiken. 
@@ -134,9 +133,9 @@ Met het beleid dat u hebt gemaakt, moet elk iOS-apparaat dat probeert om zich bi
 Als het testbeleid niet langer nodig is, kunt u dit verwijderen.
 1. Meld u aan bij [Intune](https://aka.ms/intuneportal) als globale beheerder of beheerder van een Intune-service.
 2. Selecteer **Apparaatnaleving** > **Beleid**.
-3. In de lijst **Naam beleid** selecteert u het contextmenu (**...**) voor uw testbeleid, en vervolgens selecteert u **Verwijderen**. Selecteer **OK** om te bevestigen.
+3. In de lijst **Naam beleid** selecteert u het contextmenu ( **...** ) voor uw testbeleid, en vervolgens selecteert u **Verwijderen**. Selecteer **OK** om te bevestigen.
 4. Selecteer **Voorwaardelijke toegang** > **Beleid**.
-5. In de lijst **Naam beleid** selecteert u het contextmenu (**...**) voor uw testbeleid, en vervolgens selecteert u **Verwijderen**. Selecteer **Ja** om te bevestigen.
+5. In de lijst **Naam beleid** selecteert u het contextmenu ( **...** ) voor uw testbeleid, en vervolgens selecteert u **Verwijderen**. Selecteer **Ja** om te bevestigen.
 
  ## <a name="next-steps"></a>Volgende stappen 
 In deze tutorial hebt u beleid gemaakt dat vereist dat iOS-apparaten zich inschrijven bij Intune en de Outlook-app gebruiken om toegang te krijgen tot Exchange Online e-mail. Voor meer informatie over het gebruik van Intune met voorwaardelijke toegang om andere apps en diensten te beschermen (waaronder Exchange ActiveSync-clients voor Office 365 Exchange Online), zie [Voorwaardelijke toegang instellen](conditional-access.md).
