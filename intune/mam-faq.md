@@ -7,7 +7,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
-ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
+ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65992902"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041657"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
@@ -220,6 +219,6 @@ Wanneer u te maken hebt met verschillende soorten instellingen, krijgt een Intun
 - [Mobile Application Management-beleidsinstellingen voor Android in Microsoft Intune](app-protection-policy-settings-android.md)
 - [Mobile Application Management-beleidsinstellingen voor iOS](app-protection-policy-settings-ios.md)
 - [Beveiligingsbeleid voor apps: vernieuwen van het beleid](app-protection-policy-delivery.md)
-- [Beveiligingsbeleid voor apps valideren](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
+- [Beveiligingsbeleid voor apps valideren](app-protection-policy-delivery.md)
 - [App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving](app-configuration-policies-managed-app.md)
 - [Ondersteuning voor Microsoft Intune krijgen](get-support.md)

@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9955330d9f20c13b9239f900b77828d582d12bff
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61517279"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046425"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Informatie over de meest recente updates voor de Microsoft Intune-apps. We voegen regelmatig elementen toe aan de Intune-bedrijfsportal-app en de website en brengen verbeteringen aan. Als u een Intune-beheerder bent of iemand van de ondersteuning, biedt dit artikel de informatie die u nodig hebt om:
@@ -60,10 +59,10 @@ Voorbeeldschermopname van het scherm **Help**:
 ## <a name="week-of-april-1-2019"></a>Week van 1 april 2019  
 
 ### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Wijzigingen in de bedrijfsportal-app-inschrijving voor gebruikers van iOS-12-apparaten <!--3448635 -->  
-De schermen en stappen in de bedrijfsportal-app voor iOS-inschrijving zijn bijgewerkt, zodat deze overeenkomen met de wijzigingen in de MDM-inschrijving die zijn uitgebracht in Apple iOS 12.2. In de bijgewerkte werkstroom wordt gebruikers gevraagd om:  
+De schermen en stappen in de bedrijfsportal-app voor iOS-inschrijving zijn bijgewerkt, zodat deze overeenkomen met de wijzigingen in de MDM-inschrijving die zijn uitgebracht in Apple iOS 12.2. In de bijgewerkte werkstroom wordt gebruikers het volgende gevraagd:  
 
-* Safari op de bedrijfsportalwebsite te openen en het beheerprofiel te downloaden voordat ze terugkeren naar de bedrijfsportal-app.  
-* De app Instellingen te openen voor het installeren van het beheerprofiel op hun apparaat.  
+* Safari te openen op de bedrijfsportalwebsite en het beheerprofiel te downloaden voordat zij terugkeren naar de bedrijfsportal-app.  
+* De app instellingen te openen voor het installeren van het beheerprofiel op hun apparaat.  
 * Terug te gaan naar de bedrijfsportal-app om de inschrijving te voltooien.  
 
 Zie [iOS-apparaat inschrijven bij Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) voor de bijgewerkte stappen en schermen voor de inschrijving.  
@@ -73,7 +72,7 @@ De startpagina van de bedrijfsportal-app voor iOS-apparaten is opnieuw ontworpen
 
 ## <a name="week-of-february-19-2019"></a>Week van 19 februari 2019  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Het scherm Nieuwe app-categorieën in de bedrijfsportal-app voor Windows 10<!-- 3834780 WNready4Review -->  
-Een nieuw scherm met de naam **App-categorieën** is toegevoegd voor een betere ervaring ten aanzien van het bladeren door en selecteren van apps in de bedrijfsportal voor Windows 10. Gebruikers zien nu hun apps gesorteerd onder categorieën, zoals **Aanbevolen**, **Opleiding** en **Productiviteit**. Deze wijziging wordt weergegeven in de bedrijfsportal-app-versies 10.3.3451.0 en hoger. Zie [Apps installeren en delen op uw apparaat](/intune-user-help/install-apps-cpapp-windows) voor meer informatie over het installeren van apps in de bedrijfsportal.  
+Een nieuw scherm met de naam **App-categorieën** is toegevoegd om de blader- en selectie-ervaring voor apps te verbeteren in de bedrijfsportal voor Windows 10. Gebruikers zien nu hun apps gesorteerd onder categorieën, zoals **Aanbevolen**, **Opleiding** en **Productiviteit**. Deze wijziging wordt weergegeven in de bedrijfsportal-app-versies 10.3.3451.0 en hoger. Zie [Apps installeren en delen op uw apparaat](/intune-user-help/install-apps-cpapp-windows) voor meer informatie over het installeren van apps in de bedrijfsportal.  
 
 ![Schermopname van de bedrijfsportal voor Windows 10, scherm voor app-categorieën.](./media/1902_CP_app_categories.png)   
 
