@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/19/2018
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -19,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 2ee353e5e6c39c3b402c0b4f039bb02efcfa4532
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65732996"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044530"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Zelfstudie: Autopilot gebruiken om Windows-apparaten in Intune in te schrijven
 Windows Autopilot maakt het makkelijker om apparaten in te schrijven. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen hoeft te bouwen, onderhouden en toe te passen. 
@@ -53,9 +52,9 @@ De eerste stap bij het instellen van Windows Autopilot bestaat uit het toevoegen
 
 1. Maak in een willekeurige teksteditor een lijst met door komma's gescheiden waarden (CSV) die de Windows-apparaten aanduiden. Gebruik de volgende indeling:
     
-    *serial-number*, *windows-product-id*, *hardware-hash*, *optional-order-id*
+    *serial-number*, *windows-product-id*, *hardware-hash*, *optional-Group-Tag*
     
-    De eerste drie items zijn vereist, maar de order-id is optioneel.
+    De eerste drie items zijn vereist, maar de groepstag (eerder ook wel OrderID genoemd) is optioneel.
 
 2. Sla het CSV-bestand op.
 
@@ -96,7 +95,7 @@ Nadat u een groep apparaten hebt gemaakt, moet u een implementatieprofiel maken 
 5. Ga op de pagina **Out-Of-Box Experience (OOBE)** naar **Implementatiemodus** en kies **Op basis van gebruiker**. Apparaten met dit profiel worden gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn gebruikersreferenties vereist om het apparaat in te kunnen schrijven.
 6. In het vak **Toevoegen aan Azure AD als** kiest u **Toegevoegd aan Azure AD**.
 7. Configureer de volgende opties en gebruik voor de overige opties de standaardwaarde:
-    - **Gebruiksrechtovereenkomst (EULA)**: **Verbergen**
+    - **Gebruiksrechtovereenkomst (EULA)** : **Verbergen**
     - **Privacyinstellingen**: **Weergeven**
     - **Gebruikersaccounttype**: **Standaard**
 8. Selecteer **Volgende**.

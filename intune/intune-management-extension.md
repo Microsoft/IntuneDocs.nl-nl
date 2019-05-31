@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 05/28/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b7ea047daca5dad327b431986840a59074614d1
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 2c590f81b846fe3671d5ccddede28a4a4bd799ba
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65732635"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264161"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-scripts op Windows 10-apparaten gebruiken in Intune
 
@@ -42,11 +41,27 @@ De Intune-beheeruitbreiding is een aanvulling op de meegeleverde Windows 10-MDM-
 
 ## <a name="prerequisites"></a>Vereisten
 
-De Intune-beheeruitbreiding heeft de volgende vereisten:
+De Intune-beheeruitbreiding heeft de volgende vereisten. Zodra aan deze wordt voldaan, wordt de Intune-beheeruitbreiding altijd automatisch geïnstalleerd wanneer een PowerShell-script of Win32-app wordt toegewezen aan de gebruiker of het apparaat.
 
-- Apparaten moeten worden gekoppeld of ingeschreven bij Azure AD en Azure AD en Intune moeten zijn geconfigureerd voor [automatische inschrijving in Intune](quickstart-setup-auto-enrollment.md). De Intune-beheeruitbreiding biedt ondersteuning voor ingeschreven Windows-apparaten die zijn toegevoegd aan Azure AD, zijn toegevoegd aan een hybride Azure AD-domein en gezamenlijk worden beheerd.
-- Op apparaten moet Windows 10 versie 1607 of hoger worden uitgevoerd.
-- De agent van de Intune-beheeruitbreiding wordt geïnstalleerd wanneer een PowerShell-script of een Win32-app wordt geïmplementeerd in een gebruikers- of apparaatbeveiligingsgroep.
+- Apparaten met Windows 10 versie 1607 of hoger. Als het apparaat wordt ingeschreven via [bulksgewijze automatische inschrijving](windows-bulk-enroll.md), moeten deze zijn voorzien van Windows 10 versie 1703 of hoger. De Intune-beheeruitbreiding wordt in de S-modus niet ondersteund in Windows 10 omdat het in de S-modus niet is toegestaan om niet-Store-apps uit te voeren. 
+  
+- Apparaten die zijn gekoppeld aan Azure Active Directory (AD), met inbegrip van:
+  
+  - Hybride Azure AD-koppeling: Apparaten die aan Azure Active Directory (AD) én aan een on-premises Active Directory (AD) zijn gekoppeld. Zie [De implementatie van uw hybride Azure Active Directory-deelname plannen](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) voor hulp.
+
+- Apparaten die zijn ingeschreven bij Intune, met inbegrip van:
+
+  - Apparaten die zijn ingeschreven bij een groepsbeleid (GPO). Zie [Enroll a Windows 10 device automatically using Group Policy](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) (Windows 10-apparaten automatisch inschrijven aan de hand van groepsbeleid) voor hulp.
+  
+  - Handmatig bij Intune ingeschreven apparaten. Dit is in de volgende situaties het geval:
+  
+    - De gebruiker meldt zich via een lokaal gebruikersaccount aan op het apparaat en koppelt het apparaat vervolgens handmatig aan de Azure AD (en automatisch inschrijving bij Intune is in Azure AD ingeschakeld).
+    
+    Of
+    
+    - De gebruiker meldt zich op het apparaat aan bij diens Azure AD-account, waarna het apparaat bij Intune wordt ingeschreven.
+
+  - Gezamenlijk beheerde apparaten waarop gebruik wordt gemaakt Configuration Manager en Intune. Zie [Wat is co-beheer?](https://docs.microsoft.com/sccm/comanage/overview) voor hulp.
 
 ## <a name="create-a-script-policy"></a>Een scriptbeleid maken 
 
@@ -85,8 +100,7 @@ De Intune-beheeruitbreiding heeft de volgende vereisten:
 
 > [!NOTE]
 > - Eindgebruikers hoeven zich niet aan te melden bij het apparaat om PowerShell-scripts uit te voeren.
-> - PowerShell-scripts in Intune kunnen worden gericht op Azure AD-apparaatbeveiligingsgroepen.
-> - PowerShell-scripts in Intune kunnen worden gericht op Azure AD-gebruikersbeveiligingsgroepen.
+> - PowerShell-scripts in Intune kunnen worden gericht op Azure AD-apparaatbeveiligingsgroepen of op Azure AD-gebruikersbeveiligingsgroepen.
 
 De Intune-beheerextensieclient controleert één keer per uur en na elke keer dat er opnieuw is opgestart bij Intune of er nieuwe scripts of wijzigingen zijn. Wanneer u het beleid aan de Microsoft Azure Active Directory-groepen toewijst, wordt het PowerShell-script uitgevoerd en worden de resultaten van de uitvoering gerapporteerd. Zodra het script wordt uitgevoerd, wordt deze pas weer opnieuw uitgevoerd als het script of het beleid is gewijzigd.
 
@@ -111,41 +125,57 @@ Klik in **PowerShell-scripts** met de rechtermuisknop op het script en selecteer
 
 ## <a name="common-issues-and-resolutions"></a>Veelvoorkomende problemen en oplossingen
 
-De PowerShell-scripts worden niet bij elke aanmelding uitgevoerd. Ze worden alleen uitgevoerd wanneer ze opnieuw zijn opgestart of als de **Microsoft Intune-beheeruitbreiding** opnieuw wordt gestart. De client met de Intune-beheeruitbreiding controleert eenmaal per uur op wijzigingen in het script of het beleid in Intune.
-
 #### <a name="issue-intune-management-extension-doesnt-download"></a>Probleem: Intune-beheeruitbreiding wordt niet gedownload
 
 **Mogelijke oplossingen**:
 
-- Controleer of de apparaten automatisch zijn geregistreerd in Azure AD. Om dit te controleren, gaat u op het apparaat als volgt te werk: 
+- Het apparaat niet is gekoppeld aan Azure AD. Zorg ervoor dat de apparaten voldoen aan de [vereisten](#prerequisites) (uit dit artikel). 
+- Er zijn geen PowerShell-scripts of Win32-apps toegewezen aan de groepen waar de gebruiker of het apparaat onderdeel van is.
+- Het apparaat kan niet inchecken bij de Intune-service omdat er geen toegang tot internet, geen toegang tot Windows Push Notification Services (WNS) en meer is.
+- Het apparaat bevindt zich niet in de S-modus. De Intune-beheeruitbreiding wordt niet ondersteund op apparaten die worden uitgevoerd in de S-modus. 
+
+Als u wilt zien of het apparaat automatisch wordt ingeschreven, kunt u het volgende doen:
 
   1. Ga naar **Instellingen** > **Accounts** > **Toegang tot werk of school**.
   2. Selecteer het deelnemende account > **Info**.
   3. Selecteer onder **Geavanceerde diagnostische gegevens** de optie **Rapport maken**.
-  4. Open het `MDMDiagReport` in een webbrowser en ga naar de sectie **Geregistreerde configuratiebronnen**.
-  5. Zoek de eigenschap **MDMDeviceWithAAD**. Als deze eigenschap niet bestaat, is uw apparaat niet automatisch geregistreerd.
+  4. Open de `MDMDiagReport` in een webbrowser.
+  5. Zoek de eigenschap **MDMDeviceWithAAD**. Als de eigenschap bestaat, wordt het apparaat automatisch ingeschreven. Als deze eigenschap niet bestaat, wordt het apparaat niet automatisch ingeschreven.
 
-    [Automatische inschrijving voor Windows 10 inschakelen](windows-enroll.md#enable-windows-10-automatic-enrollment) bevat de stappen.
+[Automatische inschrijving voor Windows 10 inschakelen](windows-enroll.md#enable-windows-10-automatic-enrollment) bevat de stappen voor het configureren van automatische inschrijving in Intune.
 
 #### <a name="issue-powershell-scripts-do-not-run"></a>Probleem: De PowerShell-scripts worden niet uitgevoerd
 
 **Mogelijke oplossingen**:
 
+- De PowerShell-scripts worden niet bij elke aanmelding uitgevoerd. Ze worden uitgevoerd:
+
+  - Wanneer het script wordt toegewezen aan een apparaat
+  - Als u het script wijzigt, uploadt u het en wijst u het toe aan een gebruiker of apparaat
+  
+    > [!TIP]
+    > De **Microsoft Intune-beheeruitbreiding** is een service die wordt uitgevoerd op het apparaat, net als andere services die in de app Services worden vermeld (services.msc). Nadat een apparaat opnieuw is opgestart, wordt deze service mogelijk ook opnieuw opgestart. Er wordt dan gecontroleerd op aan de Intune-service toegewezen PowerShell-scripts. Als de **Microsoft Intune-beheeruitbreiding** is ingesteld op Handmatig, wordt de service mogelijk niet opnieuw opgestart wanneer het apparaat opnieuw wordt opgestart.
+
+- De client met de Intune-beheeruitbreiding controleert eenmaal per uur op wijzigingen in het script of het beleid in Intune.
 - Controleer of de Intune-beheeruitbreiding is gedownload naar `%ProgramFiles(x86)%\Microsoft Intune Management Extension`.
-- Scripts worden niet uitgevoerd op Surface Hubs.
-- Raadpleeg de logboeken in `\ProgramData\Microsoft\IntuneManagementExtension\Logs` op fouten.
+- Scripts worden in de S-modus niet uitgevoerd op Surface Hubs en in Windows 10.
+- Controleer de logboeken op fouten. Zie [Problemen met scripts oplossen](#troubleshoot-scripts) (in dit artikel).
 - Als u wilt weten of er problemen zijn met machtigingen, controleert u of de eigenschappen van het PowerShell-script zijn ingesteld op `Run this script using the logged on credentials`. Controleer ook of de aangemelde gebruiker de juiste machtigingen heeft om het script uit te voeren.
-- Voer een voorbeeldscript uit om scriptproblemen te isoleren. Maak bijvoorbeeld een map `C:\Scripts` en geef iedereen volledig beheer voor die map. Voer het volgende script uit:
 
-  ```powershell
-  write-output "Script worked" | out-file c:\Scripts\output.txt
-  ```
+- Doe het volgende om scriptproblemen te isoleren:
 
-  Als dat lukt, moet output.txt worden gemaakt dat de tekst 'Script worked' bevat.
+  - Controleer de configuratie van PowerShell-uitvoering op uw apparaten. Zie het [PowerShell-uitvoeringsbeleid](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) voor hulp.
+  - Voer een voorbeeldscript uit via de Intune-beheeruitbreiding. Maak bijvoorbeeld een map `C:\Scripts` en geef iedereen volledig beheer voor die map. Voer het volgende script uit:
 
-- Als u de uitvoering van het script wilt testen zonder Intune, voert u de scripts lokaal in de systeemcontext uit met behulp van het hulpprogramma [psexec](https://docs.microsoft.com/sysinternals/downloads/psexec):
+    ```powershell
+    write-output "Script worked" | out-file c:\Scripts\output.txt
+    ```
 
-  `psexec -i -s`
+    Als dat lukt, moet output.txt worden gemaakt dat de tekst 'Script worked' bevat.
+
+  - Als u de uitvoering van het script wilt testen zonder Intune, voert u de scripts lokaal in het systeemaccount uit met behulp van het hulpprogramma [psexec](https://docs.microsoft.com/sysinternals/downloads/psexec):
+
+    `psexec -i -s`
 
 ## <a name="next-steps"></a>Volgende stappen
 

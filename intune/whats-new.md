@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf40c3b8f31e042a501e1502097f147d48fc328d
-ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
+ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975822"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264174"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -45,8 +44,20 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [geplande
 
 -->  
 
-
 <!-- ########################## -->
+
+## <a name="week-of-may-20-2019"></a>Week van 20 mei 2019 
+
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="windows-company-portal-app----3316993---"></a>Windows-bedrijfsportal-app <!-- 3316993 -->
+De Windows-bedrijfsportal-app heeft nu een nieuwe pagina met het label **Apparaten**. Op de pagina **Apparaten** staan de eindgebruikers van alle ingeschreven apparaten. Gebruikers zien deze wijziging in de bedrijfsportal als ze versie 10.3.4291.0 of hoger gebruiken. Voor informatie over het configureren van de bedrijfsportal-app, ziet u [How to configure the Microsoft Intune Company Portal app](company-portal-app.md) (De app Microsoft Intune-bedrijfsportal configureren).
+
+### <a name="device-enrollment"></a>Apparaatinschrijving
+
+#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>De kenmerknaam OrderID voor Autopilot-apparaten is gewijzigd in Groepstag <!-- 4659453 -->
+
+Voor een meer intuïtieve benadering is de kenmerknaam **OrderID** voor Autopilot-apparaten gewijzigd in **Groepstag**. Als u CSV's gebruikt voor het uploaden van Autopilot-apparaatgegevens, moet u Groepstag als kolomkop gebruiken en niet OrderID.  
 
 ## <a name="week-of-may-13-2019"></a>Week van 13 mei 2019 
 
@@ -64,7 +75,7 @@ Intune biedt geen ondersteuning meer voor de Bedrijfsportal wanneer deze handmat
 
 Als gebruikers de Bedrijfsportal-app installeren uit de App Store en vervolgens apparaten via de app proberen te registreren, treedt er een foutmelding op. Er wordt van uitgegaan dat deze apparaten de Bedrijfsportal alleen gebruiken wanneer het automatisch door Intune tijdens de registratie is gepusht. Inschrijvingsprofielen in Intune in de Azure-portal worden bijgewerkt zodat u kunt opgeven hoe apparaten zich verifiëren en hoe zij de Bedrijfsportal-app ontvangen. Als u wilt dat uw DEP-apparaatgebruikers de Bedrijfsportal hebben, moet u uw voorkeuren in een inschrijvingsprofiel opgeven. 
 
-Bovendien wordt het scherm **Uw apparaat identificeren** in de Bedrijfsportal-app van iOS binnenkort niet meer gebruikt. Beheerders die voorwaardelijke toegang willen inschakelen of bedrijfs-apps willen implementeren moeten daarom het DEP-inschrijvingsprofiel bijwerken. Deze vereiste geldt alleen als de DEP-inschrijving wordt geverifieerd met Configuratieassistent. In dat geval moet u de Bedrijfsportal naar het apparaat pushen. Hiervoor kiest u **Intune** > **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijfprogramma** > kies een token > **Profielen** > kies een profiel > **Eigenschappen** > stel **Bedrijfsportal installeren** in op **Waar**.
+Bovendien wordt het scherm **Uw apparaat identificeren** in de Bedrijfsportal-app van iOS binnenkort niet meer gebruikt. Beheerders die voorwaardelijke toegang willen inschakelen of bedrijfs-apps willen implementeren moeten daarom het DEP-inschrijvingsprofiel bijwerken. Deze vereiste geldt alleen als de DEP-inschrijving wordt geverifieerd met Configuratieassistent. In dat geval moet u de Bedrijfsportal naar het apparaat pushen. Hiervoor kiest u **Intune** > **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijfprogramma** > kies een token > **Profielen** > kies een profiel > **Eigenschappen** > stel **Bedrijfsportal installeren** in op **Ja**.
 
 Als u de Bedrijfsportal wilt installeren op DEP-apparaten die al zijn ingeschreven, gaat u naar Intune > Client-apps en pusht u de app als beheerde app met app-configuratiebeleid. 
 
@@ -77,9 +88,9 @@ U kunt configureren dat PowerShell-scripts worden uitgevoerd met de beheerdersbe
 #### <a name="android-enterprise-app-management----4459905---"></a>Beheer van Android Enterprise-apps <!-- 4459905 -->
 Om het eenvoudiger te maken voor IT-beheerders om Android Enterprise-beheer te configureren en gebruiken, voegt Intune automatisch vier veelgebruikte Android Enterprise apps toe aan de beheerconsole van Intune. Het betreft de volgende vier Android Enterprise-apps:
 
-- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)**: wordt gebruikt voor scenario's met volledig beheer door Android Enterprise.
-- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)**: helpt om u aan te melden bij uw accounts als u tweeledige verificatie gebruikt.
-- **[Intune-bedrijfsportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)**: wordt gebruikt voor beleidsregels voor app-beveiliging (APP) en werkprofielscenario's van Android Enterprise.
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** : wordt gebruikt voor scenario's met volledig beheer door Android Enterprise.
+- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** : helpt om u aan te melden bij uw accounts als u tweeledige verificatie gebruikt.
+- **[Intune-bedrijfsportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** : wordt gebruikt voor beleidsregels voor app-beveiliging (APP) en werkprofielscenario's van Android Enterprise.
 - [Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise): wordt gebruikt voor toegewezen/kiosk-scenario's van Android Enterprise.
 
 Eerder moesten IT-beheerders deze apps als onderdeel van de installatie handmatig zoeken en goedkeuren in de [beheerde Google Play Store](https://play.google.com/store/apps). Met deze wijziging worden deze eerdere handmatige stappen weggenomen om het gemakkelijker en sneller te maken voor klanten om Android Enterprise-beheer te gebruiken.
@@ -432,7 +443,7 @@ De Intune-console ondersteunt niet langer de weergave en het beheer van apparate
 - Exchange-besturingselementen gebruiken zoals wordt beschreven in [Clients en mobiel in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
 
 ### <a name="search-the-all-devices-page-for-an-exact-device-by-using-name---4254930---"></a>De pagina Alle apparaten doorzoeken voor een exact apparaat met behulp van [naam] <!--4254930 -->
-U kunt nu zoeken naar een exacte apparaatnaam. Ga naar **Intune** > **Apparaten** > **Alle apparaten** > plaats in het zoekvak de naam van het apparaat tussen {} om naar een exacte overeenkomst te zoeken. Bijvoorbeeld **{Device12345}**.
+U kunt nu zoeken naar een exacte apparaatnaam. Ga naar **Intune** > **Apparaten** > **Alle apparaten** > plaats in het zoekvak de naam van het apparaat tussen {} om naar een exacte overeenkomst te zoeken. Bijvoorbeeld **{Device12345}** .
 
 ### <a name="monitor-and-troubleshoot"></a>Bewaken en problemen oplossen
 
@@ -581,8 +592,8 @@ Android Enterprise
 #### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui----3640850-3803313-----"></a>iOS-instellingen voor de zichtbaarheid van Safari-software-updates en het vertragen van die zichtbaarheid voor gebruikers worden verplaatst in de Intune-gebruikersinterface <!-- 3640850, 3803313   -->
 Voor iOS-apparaten kunt u Safari-instellingen instellen en software-updates configureren. In deze update worden deze instellingen naar verschillende delen van de Intune-gebruikersinterface verplaatst:
 
-- De Safari-instellingen zijn verplaatst van **Safari** (**Apparaatconfiguratie** > **Profielen** > **Nieuw profiel** > **iOS** als platform > **Apparaatbeperkingen** als profieltype) naar **[Ingebouwde apps](device-restrictions-ios.md#built-in-apps)**.
-- De instelling **Zichtbaarheid van software-updates voor gebruikers voor iOS-apparaten onder toezicht vertragen** (**Software-updates** > **Updatebeleid voor iOS**) wordt verplaatst naar **Apparaatbeperkingen** > **[Algemeen](device-restrictions-ios.md#general)**.  Zie [Software-updates voor iOS](software-updates-ios.md#configure-the-policy) voor meer informatie over de gevolgen voor bestaand beleid. 
+- De Safari-instellingen zijn verplaatst van **Safari** (**Apparaatconfiguratie** > **Profielen** > **Nieuw profiel** > **iOS** als platform > **Apparaatbeperkingen** als profieltype) naar **[Ingebouwde apps](device-restrictions-ios.md#built-in-apps)** .
+- De instelling **Zichtbaarheid van software-updates voor gebruikers voor iOS-apparaten onder toezicht vertragen** (**Software-updates** > **Updatebeleid voor iOS**) wordt verplaatst naar **Apparaatbeperkingen** >  **[Algemeen](device-restrictions-ios.md#general)** .  Zie [Software-updates voor iOS](software-updates-ios.md#configure-the-policy) voor meer informatie over de gevolgen voor bestaand beleid. 
 
 Ga voor een lijst met de instellingen naar:
 
@@ -594,7 +605,7 @@ Deze functie is van toepassing op:
 - iOS
 
 #### <a name="enabling-restrictions-in-the-device-settings-is-renamed-to-screen-time-on-ios-devices----3699164-----"></a>De naam Beperkingen inschakelen bij de apparaatinstellingen wordt gewijzigd in Schermtijd op iOS-apparaten <!-- 3699164   -->
-U kunt **Beperkingen inschakelen bij de apparaatinstellingen** op iOS-apparaten onder toezicht configureren (**Apparaatconfiguratie** > **Profielen** > **Nieuw profiel** > **iOS** voor platform > **Apparaatbeperkingen** voor profieltype > **Algemeen**). In deze update wordt de naam van deze instelling gewijzigd in **Schermtijd (alleen onder toezicht)**. 
+U kunt **Beperkingen inschakelen bij de apparaatinstellingen** op iOS-apparaten onder toezicht configureren (**Apparaatconfiguratie** > **Profielen** > **Nieuw profiel** > **iOS** voor platform > **Apparaatbeperkingen** voor profieltype > **Algemeen**). In deze update wordt de naam van deze instelling gewijzigd in **Schermtijd (alleen onder toezicht)** . 
 
 Het gedrag blijft hetzelfde. Specifiek: 
 
@@ -1122,7 +1133,7 @@ Een nieuwe PowerShell-module die ondersteuning biedt voor de Intune-API via Micr
 ## <a name="week-of-october-15-2018"></a>Week van 15 oktober 2018
 
 ### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>Pincode vragen bij het wijzigen van vingerafdrukken of Face ID op een iOS-apparaat  <!-- 2637704  -->
-Gebruikers wordt nu gevraagd om een pincode na het doorvoeren van biometrische wijzigingen op hun iOS-apparaat. Dit gebeurt ook bij wijzigingen in de geregistreerde gegevens voor Touch ID of Face ID. De timing van dit verzoek is afhankelijk van de configuratie van de time-out die is ingesteld bij *De toegangsvereisten opnieuw controleren na (minuten)*.  Als er geen pincode is ingesteld, wordt de gebruiker gevraagd om dit te doen. 
+Gebruikers wordt nu gevraagd om een pincode na het doorvoeren van biometrische wijzigingen op hun iOS-apparaat. Dit gebeurt ook bij wijzigingen in de geregistreerde gegevens voor Touch ID of Face ID. De timing van dit verzoek is afhankelijk van de configuratie van de time-out die is ingesteld bij *De toegangsvereisten opnieuw controleren na (minuten)* .  Als er geen pincode is ingesteld, wordt de gebruiker gevraagd om dit te doen. 
  
 Deze functie is alleen beschikbaar voor iOS en vereist het gebruik van toepassingen die de Intune-APP SDK voor iOS, versie 9.0.1 of hoger, hebben geïntegreerd. Integratie van de SDK is nodig om het gedrag te kunnen afdwingen in de betreffende toepassingen. Deze integratie vindt doorlopend plaats en is afhankelijk van de specifieke toepassingsteams. Apps die hieraan deelnemen, zijn onder meer WXP, Outlook, Managed Browser en Yammer.
 
