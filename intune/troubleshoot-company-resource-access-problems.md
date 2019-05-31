@@ -1,13 +1,12 @@
 ---
 title: Fout- en statuscodes in Microsoft Intune - Azure | Microsoft Docs
-description: Een overzicht van de fouten, statuscode, beschrijvingen en oplossingen bij het gebruik van MDM beheerde apparaten, de toegang tot bedrijfsbronnen en fouten op iOS-apparaten OMA antwoord fouten in Microsoft Intune.
+description: Bekijk een lijst met fouten, statuscodes, beschrijvingen en oplossingen bij het gebruik van door MDM beheerde apparaten, waarbij u toegang krijgt tot bedrijfsresources, fouten op iOS-apparaten en fouten in OMA-antwoorden in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/20/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 36d21c0b80a2737be39bbee2399f6005c43edc43
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330475"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040436"
 ---
 # <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Algemene foutcodes en beschrijvingen in Microsoft Intune
 
-Dit artikel worden veelvoorkomende fouten, statuscodes, beschrijvingen en mogelijke oplossingen bij het openen van bronnen van de organisatie. Deze informatie gebruiken voor het oplossen van problemen bij het gebruik van Microsoft Intune.
+In dit artikel worden veelvoorkomende fouten, statuscodes, beschrijvingen en mogelijke oplossingen bij het openen van resources van de organisatie weergegeven. Gebruik deze informatie gebruiken voor het oplossen van toegangsproblemen bij het gebruik van Microsoft Intune.
 
-Als u hulp nodig hebt ondersteunen, Zie [ondersteuning voor Microsoft Intune krijgen](get-support.md).
+Zie [Ondersteuning krijgen voor Microsoft Intune](get-support.md) als u hulp nodig hebt van ondersteuning.
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Statuscodes voor met MDM beheerde Windows-apparaten
 
@@ -387,4 +386,4 @@ Als u hulp nodig hebt ondersteunen, Zie [ondersteuning voor Microsoft Intune kri
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Neem contact op met Microsoft Support op [ondersteuning voor Microsoft Intune krijgen](get-support.md).
+Neem contact op met Microsoft Ondersteuning, om [ondersteuning voor Microsoft Intune te krijgen](get-support.md).

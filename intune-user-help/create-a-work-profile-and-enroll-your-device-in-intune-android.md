@@ -1,11 +1,11 @@
 ---
-title: Uw apparaat inschrijven met een werkprofiel | Microsoft Docs
-description: Android-apparaten veiliger maken met werkprofielen.
+title: Een apparaat met een Android-werkprofiel inschrijven | Microsoft Docs
+description: Een werkprofiel maken en een apparaat inschrijven
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,20 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57334949"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196922"
 ---
-# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Een werkprofiel maken en uw apparaat registreren bij Intune
+# <a name="enroll-device-with-android-work-profile"></a>Een apparaat met een Android-werkprofiel inschrijven
 
-Door een Android-apparaat te registreren, hebt u toegang tot e-mail, apps en andere werkgegevens van het bedrijf. Als onderdeel van de inschrijving moet u een werkprofiel instellen dat de persoonlijke gegevens op uw apparaat onderscheidt van uw werkgegevens.
+Schrijf uw Android-apparaat in om toegang te krijgen tot zakelijke e-mail, apps en andere werkgegevens. Tijdens de inschrijving moet u een Android-werkprofiel instellen. Met dit profiel scheidt u de persoonlijke gegevens op het apparaat van uw werkgegevens. De ondersteuning van uw bedrijf beheert alleen het werkprofiel, dat uit de werkbestanden en gegevens bestaat. De ondersteuning van uw bedrijf kan geen persoonlijke gegevens op uw apparaat beheren. Zie [Wat gebeurt er wanneer u een werkprofiel maakt](what-happens-when-you-create-a-work-profile-android.md) voor meer informatie.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI?rel=0]
 
-Het ondersteuningsteam van het bedrijf kan alleen het werkprofiel beheren dat uw werkgegevens bevat. Het ondersteuningsteam van het bedrijf kan niet de persoonlijke gegevens op uw apparaat beheren. Zie [Wat gebeurt er wanneer u een werkprofiel maakt](what-happens-when-you-create-a-work-profile-android.md) voor meer informatie.
-
-Ga als volgt te werk om een werkprofiel te maken:
+## <a name="create-work-profile-and-enroll-device"></a>Een werkprofiel maken en een apparaat inschrijven
 
 1.  Tik in het **aanmeldingsscherm** van de Android-bedrijfsportal op **Aanmelden** en meld u vervolgens aan met uw werk- of schoolaccount. Als u de gratis app nog niet hebt geïnstalleerd, downloadt en installeert u deze vanaf [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
@@ -82,5 +82,7 @@ Ga als volgt te werk om een werkprofiel te maken:
     U kunt nu bedrijfsapps downloaden uit de Play Store for Work.
 
     ![Pagina voor Play Store for Work-apps](./media/andr-afw-tap-work-play-store-icon.png)
+
+## <a name="next-steps"></a>Volgende stappen  
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44be460ee910818d52179da55151d1bceeb8b306
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 5f1935ff839b9e2aa97d002bd98d1f5dac87c390
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565907"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043040"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Aangepaste instellingen gebruiken voor Windows 10-apparaten in Intune
 
@@ -83,7 +82,7 @@ Een complete lijst met alle CSP's (configuratieserviceproviders) die door Window
 
 Niet alle instellingen zijn compatibele met alle versies van Windows 10. In [Referentie voor Configuration Service Providers](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) leest u welke versies worden ondersteund voor elke CSP.
 
-Bovendien biedt Intune geen ondersteuning voor alle instellingen die worden vermeld in de [naslaginformatie voor configuratieserviceproviders](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference). Als u wilt weten of de gewenste instelling door Intune wordt ondersteund, opent u het artikel voor de betreffende instelling. U kunt op elke instellingenpagina zien welke bewerkingen worden ondersteund. Voor gebruik in combinatie met Intune moet de instelling de bewerking **Toevoegen**, **Vervangen** en **Ophalen** ondersteunen. Als de waarde die is geretourneerd door de **ophalen** bewerking komt niet overeen met de waarde die is opgegeven door de **toevoegen** of **vervangen** operations en vervolgens Intune-rapporten een compatibiliteitsfout.
+Bovendien biedt Intune geen ondersteuning voor alle instellingen die worden vermeld in de [naslaginformatie voor configuratieserviceproviders](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference). Als u wilt weten of de gewenste instelling door Intune wordt ondersteund, opent u het artikel voor de betreffende instelling. U kunt op elke instellingenpagina zien welke bewerkingen worden ondersteund. Voor gebruik in combinatie met Intune moet de instelling de bewerking **Toevoegen**, **Vervangen** en **Ophalen** ondersteunen. Als de waarde die is geretourneerd door de bewerking **Ophalen** niet overeenkomt met de waarde die is opgegeven door de bewerkingen **Toevoegen** of **Vervangen**, meldt Intune vervolgens een compatibiliteitsfout.
 
 ## <a name="next-steps"></a>Volgende stappen
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/05/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0c7ac239a67a51ba7165771206883f3c46f5f55
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
-ms.translationtype: HT
+ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292421"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196863"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Toegang tot uw bedrijfsbronnen instellen voor uw iOS-apparaat  
 
@@ -31,7 +31,9 @@ Uw iOS-apparaat registreren met de bedrijfsportal-app van Intune voor beveiligde
 
 Nadat uw apparaat is geregistreerd, wordt het *beheerd*. Uw organisatie kan beleid en apps aan het apparaat toewijzen via een MDM-provider (Mobile Device Management), zoals Intune.  
 
-Als u toegang wilt houden tot uw werk- of schoolgegevens op het apparaat, moet u de instellingen van uw apparaat aanpassen aan de voorkeursinstellingen van uw organisatie. In dit artikel wordt beschreven hoe u Bedrijfsportal gebruikt om uw apparaat te registreren en de vereiste instellingen van uw organisatie aan te houden. 
+Als u toegang wilt houden tot uw werk- of schoolgegevens op het apparaat, moet u de instellingen van uw apparaat aanpassen aan de voorkeursinstellingen van uw organisatie. In dit artikel wordt beschreven hoe u Bedrijfsportal gebruikt om uw apparaat te registreren en de vereiste instellingen van uw organisatie aan te houden.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/mJyv6YcHi7c?rel=0]
 
 > [!NOTE]
 > Als u hebt geprobeerd toegang te krijgen tot zakelijke e-mail in de Mail-app en een prompt ontving om uw apparaat te laten beheren, bent u op de juiste plek. Volg de onderstaande instructies om op uw iOS-apparaat toegang te krijgen tot uw e-mail en andere bedrijfsbronnen.  
@@ -39,7 +41,7 @@ Als u toegang wilt houden tot uw werk- of schoolgegevens op het apparaat, moet u
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Wat u kunt verwachten van de bedrijfsportal-app  
 
 ### <a name="security"></a>Beveiliging  
-Tijdens de eerste configuratie verplicht de app u om uzelf te verifiëren bij uw organisatie. Vervolgens krijgt u instructies over de bij te werken apparaatinstellingen. Organisaties stellen bijvoorbeeld vaak wachtwoordvereisten van een minimum- of maximumaantal tekens waaraan u moet voldoen.     
+Tijdens de eerste configuratie verplicht de app u om uzelf te verifiëren bij uw organisatie. Vervolgens krijgt u instructies over de bij te werken apparaatinstellingen. Organisaties stellen bijvoorbeeld vaak wachtwoordvereisten van een minimum- of maximumaantal tekens waaraan u moet voldoen.
 
 ### <a name="protection"></a>Protection  
 Nadat het apparaat is geregistreerd, zorgt de bedrijfsportal-app ervoor dat uw apparaat beveiligd blijft. Als u bijvoorbeeld een app installeert vanaf een niet-vertrouwde bron, geeft de app een waarschuwing en wordt soms de toegang tot bedrijfsgegevens ontzegd. Dit type beleid is gebruikelijk binnen organisaties en verplicht u vaak om niet-vertrouwde apps te verwijderen voordat u weer toegang kunt krijgen.  
@@ -118,6 +120,9 @@ Als u uw inschrijving langer dan een paar minuten onderbreekt, kan de app worden
 
 > [!Note]
 > Als uw organisatie bel- en datalimieten hanteert, of u een apparaat geeft dat bedrijfseigendom is, moet u mogelijk nog enkele andere stappen uitvoeren. Zie [Uw app registreren bij Telecom Expense Management](enroll-your-device-with-telecom-expense-management-ios.md) als u wordt gevraagd om de app **Datalert** te installeren. Ontdek [hoe u uw bedrijfsapparaat registreert](enroll-your-device-dep-ios.md) als uw organisatie meedoet aan het Device Enrollment Program van Apple.  
+
+## <a name="it-administrator-support"></a>Ondersteuning IT-beheerder  
+Als u een IT-beheerder bent en in de problemen raakt tijdens het inschrijven van apparaten, kunt u [Troubleshooting iOS device enrollment problems in Microsoft Intune (Problemen oplossen met de inschrijving van iOS-apparaten in Microsoft Intune)](https://support.microsoft.com/en-us/help/4039809) raadplegen. Dit artikel bevat algemene fouten, de oorzaken en de stappen om deze op te lossen.  
 
 ## <a name="next-steps"></a>Volgende stappen  
 Zoek nuttige apps voor op uw werk of op school. Informatie over [hoe apps beschikbaar worden gesteld](use-managed-apps-on-your-device-ios.md) aan u via Bedrijfsportal.  
