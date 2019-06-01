@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e4f94ead5ecc42f8ac67c596fc9424b112c2065
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 39aba38d808a770ee04f5d165ca8037b43576812
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048591"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374008"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Aangepaste instellingen gebruiken voor Android-apparaten in Microsoft Intune
 
@@ -42,7 +42,7 @@ In dit artikel wordt beschreven hoe u een aangepast profiel maakt voor Android-a
 
 ## <a name="create-the-profile"></a>Het profiel maken
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 3. Voer de volgende instellingen in:
 
