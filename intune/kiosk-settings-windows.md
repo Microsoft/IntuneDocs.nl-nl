@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 03/11/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429688"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046975"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Instellingen voor apparaten met Windows 10 en hoger om ze als kiosk uit te voeren via Intune
 
@@ -36,40 +35,40 @@ Zie voor meer informatie over de Windows-kioskfunctie in Intune [Configure kiosk
 
 - [Maak het profiel](kiosk-settings.md#create-the-profile).
 
-- Deze kiosk-profiel is direct gerelateerd aan het apparaatbeperkingsprofiel u maken met behulp van de [kiosk-instellingen voor Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser). Samenvatting:
+- Dit kioskprofiel is direct gerelateerd aan het apparaatbeperkingsprofiel dat u maakt met behulp van de [Windows Edge kioskinstellingen](device-restrictions-windows-10.md#microsoft-edge-browser). Samenvatting:
 
-  1. Maak deze kiosk-profiel voor het uitvoeren van het apparaat in kioskmodus bevindt.
-  2. Maak de [apparaatbeperkingsprofiel](device-restrictions-windows-10.md#microsoft-edge-browser), en configureren van specifieke functies en instellingen die zijn toegestaan in Microsoft Edge.
+  1. Maak dit kioskprofiel om het apparaat in de kioskmodus uit te voeren.
+  2. Maak het [apparaatbeperkingsprofiel](device-restrictions-windows-10.md#microsoft-edge-browser) en configureer specifieke functies en instellingen die zijn toegestaan in Microsoft Edge.
 
 > [!IMPORTANT] 
-> Zorg ervoor dat u deze kiosk-profiel toewijzen aan de dezelfde apparaten als uw [Microsoft Edge-profiel](device-restrictions-windows-10.md#microsoft-edge-browser).
+> Zorg ervoor dat u dit kioskprofiel toewijst aan de dezelfde apparaten als uw [Microsoft Edge-profiel](device-restrictions-windows-10.md#microsoft-edge-browser).
 
 ## <a name="single-full-screen-app-kiosks"></a>Kiosken met één app op een volledig scherm
 
-Slechts één app uitvoert op het apparaat.
+Hiermee wordt slechts één app op het apparaat uitgevoerd.
 
-- **Selecteer een kioskmodus**: kies **één app, volledig scherm kiosk**.
+- **Selecteer een kioskmodus**: kies **één app, volledig-schermweergave**.
 
 - **Aanmeldingstype gebruiker**: de apps die u toevoegt worden uitgevoerd als het gebruikersaccount dat u invoert. Uw opties zijn:
 
-  - **Automatisch aanmelden (Windows 10, versie 1803 en hoger)**: gebruik deze optie in kiosken in openbare omgevingen waar een gebruiker zich niet hoeft aan te melden, vergelijkbaar met een gastaccount. Deze instelling maakt gebruik van [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
-  - **Lokaal gebruikersaccount**: voer het lokale (op het apparaat) gebruikersaccount in. Het account dat u zich aanmeldt en de kiosk opgeven.
+  - **Automatisch aanmelden (Windows 10, versie 1803 en hoger)** : gebruik deze optie in kiosken in openbare omgevingen waar een gebruiker zich niet hoeft aan te melden, vergelijkbaar met een gastaccount. Deze instelling maakt gebruik van [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Lokaal gebruikersaccount**: voer het lokale (op het apparaat) gebruikersaccount in. Met het account dat u invoert, kunt u zich aanmelden bij de kiosk.
 
-- **Toepassingstype**: Selecteer het toepassingstype. Uw opties zijn:
+- **Toepassingstype**: selecteer het toepassingstype. Uw opties zijn:
 
-  - **Toevoegen van Microsoft Edge-browser**: Selecteer **Microsoft Edge-browser**, en kies de **kiosk modus type van de rand**:
+  - **Toevoegen van Microsoft Edge-browser**: selecteer **Microsoft Edge-browser**, en kies het **Edge-kioskmodustype**:
 
-    - **Digitale/interactief borden tot stand brengen**: een URL-volledig scherm geopend en ziet u alleen de inhoud op die website. [Instellen van digitale borden](https://docs.microsoft.com/windows/configuration/setup-digital-signage) vindt u meer informatie over deze functie.
-    - **Openbare bladeren (InPrivate)**: een beperkte meerdere tabblad-versie van Microsoft Edge wordt uitgevoerd. Gebruikers kunnen bladeren openbaar of beëindigen van de browsersessie.
+    - **Digitale/interactieve ondertekening**: hiermee wordt een volledig URL-scherm geopend en is alleen de inhoud op die website zichtbaar. [Digitale displays instellen](https://docs.microsoft.com/windows/configuration/setup-digital-signage) biedt meer informatie over deze functie.
+    - **Openbaar bladeren (InPrivate)** : hiermee wordt een beperkte versie met meerdere tabbladen van Microsoft Edge uitgevoerd. Gebruikers kunnen openbaar bladeren of de browsersessie beëindigen.
 
-    Zie voor meer informatie over deze opties [implementeren Microsoft Edge-kioskmodus](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+    Zie [Microsoft Edge-kioskmodus implementeren](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types) voor meer informatie over deze opties.
 
     > [!NOTE]
-    > Deze instelling schakelt u de browser Microsoft Edge op het apparaat. Als u wilt configureren in Microsoft Edge-specifieke instellingen, een apparaatconfiguratieprofiel maken (**apparaatconfiguratie** > **profielen** > **-profielmaken**  >  **Windows 10** voor platform > **Apparaatbeperkingen** >  **Microsoft Edge-Browser**). [Microsoft Edge-browser](device-restrictions-windows-10.md#microsoft-edge-browser) bevat en een beschrijving van de beschikbare instellingen.
+    > Via deze instelling schakelt u de Microsoft Edge-browser in op het apparaat. Als u specifieke Microsoft Edge-instellingen wilt configureren, maakt u een apparaatconfiguratieprofiel (**Apparaatconfiguratie** > **Profielen** > **Profiel maken**  >  **Windows 10** voor platform > **Apparaatbeperkingen** >  **Microsoft Edge-browser**). De beschikbare instellingen worden in de [Microsoft Edge-browser](device-restrictions-windows-10.md#microsoft-edge-browser) vermeld en beschreven.
 
     Selecteer **OK** om uw wijzigingen op te slaan.
 
-  - **Toevoegen van de Kiosk-browser**: Selecteer **browser kioskinstellingen**. Met deze instellingen beheert u een webbrowser-app op de kiosk. Zorg ervoor dat u de [Kioskbrowser-app](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) uit de Store ophaalt, deze aan Intune toevoegt als een [client-app](apps-add.md) en vervolgens de app aan de kioskapparaten toewijst.
+  - **Kioskbrowser toevoegen**: Selecteer **Browserinstellingen voor de kiosk**. Met deze instellingen beheert u een webbrowser-app op de kiosk. Zorg ervoor dat u de [Kioskbrowser-app](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) uit de Store ophaalt, deze aan Intune toevoegt als een [client-app](apps-add.md) en vervolgens de app aan de kioskapparaten toewijst.
 
     Voer de volgende instellingen in:
 
@@ -96,7 +95,7 @@ Slechts één app uitvoert op het apparaat.
 
     Selecteer **OK** om uw wijzigingen op te slaan.
 
-  - **De app Store toevoegen**: Selecteer **een store-app toevoegen**, en kiest u een app in de lijst.
+  - **Een Store-app toevoegen**: selecteer **Een Store-app toevoegen** en kies een app uit de lijst.
 
     Worden er geen apps in de lijst weergegeven? Voeg er een aantal toe met behulp van de stappen in [Client-apps](apps-add.md).
 
@@ -104,34 +103,34 @@ Slechts één app uitvoert op het apparaat.
 
 ## <a name="multi-app-kiosks"></a>Kiosken voor meerdere apps
 
-Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige apps die de gebruiker kan openen. Als een app een afhankelijkheid van een andere app heeft, moeten beide worden opgenomen in de lijst met toegestane apps. Internet Explorer, 64-bits heeft bijvoorbeeld een afhankelijkheid van Internet Explorer 32-bits, dus moet u zowel "C:\Program Files\internet explorer\iexplore.exe" en 'C:\Program Files (x86) \Internet' toestaan. 
+Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige apps die de gebruiker kan openen. Als een app een afhankelijkheid van een andere app heeft, moeten beide worden opgenomen in de lijst met toegestane apps. De 64-bits Internet Explorer-versie heeft bijvoorbeeld een afhankelijkheid van de 32-bits Internet Explorer-versie, dus moet u zowel C:\Program Files\internet explorer\iexplore.exe als C:\Program Files (x86)\Internet Explorer\iexplore.exe toestaan. 
 
-- **Selecteer een kioskmodus**: kies **kiosk voor meerdere Apps**.
+- **Een kioskmodus selecteren**: Kies de optie **Kiosk voor meerdere apps**.
 
 - **Gericht op Windows 10-apparaten in de S-modus**:
   - **Ja**: hiermee staat u Store-apps en AUMID-apps (geen Win32-apps) in het kioskprofiel toe.
-  - **Nee**: hiermee staat u Store-apps, Win32-apps en AUMID-apps in het kioskprofiel toe. Deze kiosk-profiel is niet geïmplementeerd op apparaten van de S-modus.
+  - **Nee**: hiermee staat u Store-apps, Win32-apps en AUMID-apps in het kioskprofiel toe. Dit kioskprofiel wordt niet geïmplementeerd op apparaten in de S-modus.
 
 - **Aanmeldingstype gebruiker**: de apps die u toevoegt worden uitgevoerd als het gebruikersaccount dat u invoert. Uw opties zijn:
 
-  - **Automatisch aanmelden (Windows 10, versie 1803 en hoger)**: gebruik deze optie in kiosken in openbare omgevingen waar een gebruiker zich niet hoeft aan te melden, vergelijkbaar met een gastaccount. Deze instelling maakt gebruik van [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
-  - **Lokaal gebruikersaccount**: **voeg** het lokale (op het apparaat) gebruikersaccount toe. Het account dat u zich aanmeldt en de kiosk opgeven.
-  - **Azure AD-gebruiker of -groep (Windows 10, versie 1803 en hoger)**: selecteer **Toevoegen** en kies Azure AD-gebruikers of -groepen in de lijst. U kunt meerdere gebruikers en groepen selecteren. Kies **Selecteren** om uw wijzigingen op te slaan.
+  - **Automatisch aanmelden (Windows 10, versie 1803 en hoger)** : gebruik deze optie in kiosken in openbare omgevingen waar een gebruiker zich niet hoeft aan te melden, vergelijkbaar met een gastaccount. Deze instelling maakt gebruik van [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Lokaal gebruikersaccount**: **voeg** het lokale (op het apparaat) gebruikersaccount toe. Met het account dat u invoert, kunt u zich aanmelden bij de kiosk.
+  - **Azure AD-gebruiker of -groep (Windows 10, versie 1803 en hoger)** : selecteer **Toevoegen** en kies Azure AD-gebruikers of -groepen in de lijst. U kunt meerdere gebruikers en groepen selecteren. Kies **Selecteren** om uw wijzigingen op te slaan.
   - **HoloLens-bezoeker**: het bezoekersaccount is een gastaccount waarvoor geen gebruikersreferenties of verificatie is vereist, zoals wordt beschreven in [Gedeelde pc-modusconcepten](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
 - **Browser en toepassingen**: voeg de apps toe die u op het apparaat in kioskmodus wilt uitvoeren. U kunt verschillende apps toevoegen.
 
   - **Browsers**
 
-    - **Toevoegen van Microsoft Edge**: Microsoft Edge wordt toegevoegd aan het raster app en alle toepassingen kunnen worden uitgevoerd op deze kiosk. Kies de **Microsoft Edge kiosk modus type**:
+    - **Microsoft Edge toevoegen**: Microsoft Edge wordt toegevoegd aan het app-raster en alle toepassingen kunnen op deze kiosk worden uitgevoerd. Het **Microsoft Edge-kioskmodustype kiezen**:
 
-      - **Normale modus (volledige versie van Microsoft Edge)**: een volledige-versie van Microsoft Edge wordt uitgevoerd met alle functies van de browser. Gebruikersgegevens en -status worden tussen sessies opgeslagen.
-      - **Openbare bladeren (InPrivate)**: een meerdere tabblad-versie van Microsoft Edge InPrivate-navigatie wordt uitgevoerd met een op maat gemaakte ervaring voor kiosken die worden uitgevoerd in de modus volledig scherm.
+      - **Normale modus (volledige versie van Microsoft Edge)** : hiermee wordt een volledige-versie van Microsoft Edge uitgevoerd met alle bladerfuncties. Gebruikersgegevens en -statussen worden tussen sessies opgeslagen.
+      - **Openbaar bladeren (InPrivate)** : hiermee wordt een versie met meerdere tabbladen van Microsoft Edge InPrivate uitgevoerd met een op maat gemaakte ervaring voor kiosken die worden uitgevoerd in de modus Volledig scherm.
 
-      Zie voor meer informatie over deze opties [implementeren Microsoft Edge-kioskmodus](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+      Zie [Microsoft Edge-kioskmodus implementeren](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types) voor meer informatie over deze opties.
 
       > [!NOTE]
-      > Deze instelling schakelt u de browser Microsoft Edge op het apparaat. Als u wilt configureren in Microsoft Edge-specifieke instellingen, een apparaatconfiguratieprofiel maken (**apparaatconfiguratie** > **profielen** > **-profielmaken**  >  **Windows 10** voor platform > **Apparaatbeperkingen** >  **Microsoft Edge-Browser**). [Microsoft Edge-browser](device-restrictions-windows-10.md#microsoft-edge-browser) bevat en een beschrijving van de beschikbare instellingen.
+      > Via deze instelling schakelt u de Microsoft Edge-browser in op het apparaat. Als u specifieke Microsoft Edge-instellingen wilt configureren, maakt u een apparaatconfiguratieprofiel (**Apparaatconfiguratie** > **Profielen** > **Profiel maken**  >  **Windows 10** voor platform > **Apparaatbeperkingen** >  **Microsoft Edge-browser**). De beschikbare instellingen worden in de [Microsoft Edge-browser](device-restrictions-windows-10.md#microsoft-edge-browser) vermeld en beschreven.
 
       Selecteer **OK** om uw wijzigingen op te slaan.
 
@@ -165,18 +164,18 @@ Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige ap
 
       - **Toepassingsnaam**: vereist. Geef een naam op voor de toepassing.
       - **Lokaal pad**: vereist. Voer het pad naar het uitvoerbare bestand in, zoals `C:\Program Files (x86)\Microsoft VS Code\Code.exe` of `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-      - **Model-id van de toepassingsgebruiker (AUMID)**: voer het model-id van de toepassingsgebruiker (AUMID) van de Win32-app in. Deze instelling bepaalt de indeling van de tegel na het opstarten op het bureaublad. Raadpleeg [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps) om deze id op te halen.
+      - **Model-id van de toepassingsgebruiker (AUMID)** : voer het model-id van de toepassingsgebruiker (AUMID) van de Win32-app in. Deze instelling bepaalt de indeling van de tegel na het opstarten op het bureaublad. Raadpleeg [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps) om deze id op te halen.
 
       Selecteer **OK** om uw wijzigingen op te slaan.
 
     - **Toevoegen via AUMID**: gebruik deze optie om Postvak IN-apps voor Windows, zoals Kladblok of Calculator toe te voegen. Voer de volgende eigenschappen in:
 
       - **Toepassingsnaam**: vereist. Geef een naam op voor de toepassing.
-      - **Model-id van toepassingsgebruiker (AUMID)**: vereist. Voer de AUMID van de Windows-app in. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) als u wilt weten hoe u aan deze id komt.
+      - **Model-id van toepassingsgebruiker (AUMID)** : vereist. Voer de AUMID van de Windows-app in. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) als u wilt weten hoe u aan deze id komt.
 
       Selecteer **OK** om uw wijzigingen op te slaan.
 
-    - **AutoLaunch**: optioneel. Kies een toepassing AutoLaunch wanneer de gebruiker zich aanmeldt. Slechts één app kan AutoLaunched zijn.
+    - **AutoLaunch**: optioneel. Kies de AutoLaunch-instelling om een toepassing automatisch te starten wanneer de gebruiker zich aanmeldt. Er kan slechts één app automatisch worden gestart.
     - **Tegelgrootte**: vereist. Kies een tegelgrootte Klein, Normaal, Breed of Groot voor de app.
 
   > [!TIP]
@@ -186,7 +185,7 @@ Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige ap
 
 - **Windows-taakbalk**: kies of u wilt dat de taakbalk wordt **weergegeven** of **verborgen**. Standaard wordt de taakbalk niet weergegeven. Pictogrammen, zoals het Wi-Fi-pictogram, worden weergegeven, maar de instellingen kunnen niet worden gewijzigd door eindgebruikers.
 
-- **Toegang tot de map Downloads**: kies **Ja** waarmee gebruikers toegang krijgen tot de map Downloads in Windows Verkenner. Standaard is toegang tot de map Downloads uitgeschakeld. Deze functie wordt vaak gebruikt voor eindgebruikers voor toegang tot items die zijn gedownload vanuit een browser.
+- **Toegang tot de map Downloads toestaan**: kies **Ja** om gebruikers toegang te verlenen tot de map Downloads in Windows Verkenner. Toegang tot de map Downloads is standaard uitgeschakeld. Deze functie wordt vaak gebruikt voor eindgebruikers om items te openen die zijn gedownload vanuit een browser.
 
 Selecteer **OK** om uw wijzigingen op te slaan.
 

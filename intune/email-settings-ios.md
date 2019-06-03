@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 12/11/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1cf1daf42d1dfcd8dd25304040e868581a056943
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0faf9220b4859c41ef8c4393fe15f385eaac8cc3
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566404"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042101"
 ---
 # <a name="email-profile-settings-for-ios-devices-in-intune"></a>E-mailprofielinstellingen voor iOS-apparaten in Intune
 
@@ -76,20 +75,20 @@ In dit artikel worden alle e-mailinstellingen vermeld en beschreven, die beschik
   Wanneer u S/MIME bij een e-mailbericht gebruikt, bevestigt u de authenticiteit van de afzender en de integriteit en vertrouwelijkheid van het bericht.
 
   - **S/MIME-ondertekening ingeschakeld**: Kies **Inschakelen** om gebruikers uitgaande e-mailberichten digitaal te laten ondertekenen voor het account dat u hebt ingevoerd. Ondertekening biedt gebruikers die berichten ontvangen de zekerheid dat het bericht afkomstig is van de specifieke afzender en niet van iemand die zich voordoet als de afzender. Met **Uitschakelen** wordt gebruikers niet toegestaan om het bericht digitaal te ondertekenen.
-    - **Gebruiker toestaan te wijzigen van de instelling**: kies **inschakelen** gebruikers van S/MIME-ondertekening gedrag wijzigen. Met **Uitschakelen** voorkomt u dat gebruikers de S/MIME-ondertekeningsinstelling wijzigen die u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
+    - **Gebruiker toestaan om instelling te wijzigen**: kies **Inschakelen** om gebruikers toe te staan om S/MIME-ondertekeningsgedrag te wijzigen. Met **Uitschakelen** voorkomt u dat gebruikers de S/MIME-ondertekeningsinstelling wijzigen die u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
 
   - **S/MIME-ondertekeningscertificaat**: selecteer een bestaand PKCS- of SCEP-certificaatprofiel dat wordt gebruikt voor het ondertekenen van e-mailberichten.
-    - **Gebruiker toestaan te wijzigen van de instelling**: kies **inschakelen** waarmee gebruikers kunnen wijzigen van het certificaat voor ondertekening. Met **Uitschakelen** voorkomt u dat gebruikers het ondertekeningscertificaat wijzigen en dwingt u gebruikers het certificaat te gebruiken dat u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
+    - **Gebruiker toestaan om instelling te wijzigen**: kies **Inschakelen** om gebruikers toe te staan om het ondertekeningscertificaat te wijzigen. Met **Uitschakelen** voorkomt u dat gebruikers het ondertekeningscertificaat wijzigen en dwingt u gebruikers het certificaat te gebruiken dat u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
 
-  - **Versleutelen standaard**: **inschakelen** versleutelt u alle berichten als standaardgedrag. Met **Uitschakelen** worden alle berichten standaard niet versleuteld.
-    - **Gebruiker toestaan te wijzigen van de instelling**: kies **inschakelen** waarmee gebruikers kunnen wijzigen van het standaardgedrag voor versleuteling. Met **Uitschakelen** voorkomt u dat gebruikers het standaardgedrag voor versleuteling wijzigen en dwingt u gebruikers de instelling te gebruiken die u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
+  - **Standaard versleutelen**: met **Inschakelen** worden alle berichten standaard versleuteld. Met **Uitschakelen** worden alle berichten standaard niet versleuteld.
+    - **Gebruiker toestaan om instelling te wijzigen**: kies **Inschakelen** om gebruikers toe te staan het standaardgedrag voor versleuteling te wijzigen. Met **Uitschakelen** voorkomt u dat gebruikers het standaardgedrag voor versleuteling wijzigen en dwingt u gebruikers de instelling te gebruiken die u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
 
   - **Versleuteling per bericht afdwingen**: met Versleuteling per bericht kunnen gebruikers kiezen welke e-mailberichten worden versleuteld voordat ze worden verzonden. Kies **Inschakelen** om de optie Versleuteling per bericht weer te geven bij het maken van een nieuw e-mailbericht. Gebruikers kunnen vervolgens voor opt-in of opt-out kiezen ten aanzien van Versleuteling per bericht. Met **Uitschakelen** wordt voorkomen dat de optie Versleuteling per bericht wordt weergegeven.
 
     Als de instelling **Standaard versleutelen** is ingeschakeld, kunnen gebruikers door Versleuteling per bericht in te schakelen ervoor kiezen om per bericht versleuteling uit te schakelen. Als de instelling **Standaard versleutelen** is uitgeschakeld, kunnen gebruikers door Versleuteling per bericht in te schakelen ervoor kiezen om per bericht versleuteling in te schakelen.
 
   - **S/MIME-versleutelingscertificaat**: selecteer een bestaand PKCS- of SCEP-certificaatprofiel dat wordt gebruikt voor het versleutelen van e-mailberichten.
-    - **Gebruiker toestaan te wijzigen van de instelling**: kies **inschakelen** waarmee gebruikers kunnen wijzigen van het versleutelingscertificaat. Met **Uitschakelen** voorkomt u dat gebruikers het versleutelingscertificaat wijzigen en dwingt u gebruikers het certificaat te gebruiken dat u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
+    - **Gebruiker toestaan om instelling te wijzigen**: kies **Inschakelen** om gebruikers toe te staan het versleutelingscertificaat te wijzigen. Met **Uitschakelen** voorkomt u dat gebruikers het versleutelingscertificaat wijzigen en dwingt u gebruikers het certificaat te gebruiken dat u hebt geconfigureerd. Beschikbaar in iOS 12 en hoger.
 - **Aantal dagen e-mail voor synchronisatie**: kies het aantal dagen waarvoor u e-mail wilt synchroniseren. Of selecteer **Onbeperkt** om alle beschikbare e-mail te synchroniseren.
 - **Toestaan dat berichten worden verplaatst naar andere e-mailaccounts**: u kunt deze optie **inschakelen** om toe te staan dat gebruikers e-mailberichten verplaatsen naar andere accounts die gebruikers op hun apparaat hebben geconfigureerd.
 - **Toestaan dat e-mails worden verzonden vanuit toepassingen van derden**: met **Inschakelen** kunnen gebruikers dit profiel als standaardaccount voor het verzenden van e-mail selecteren. Hiermee staat u toe dat toepassingen van derden e-mails kunnen openen in de systeemeigen e-mail-app om er bijvoorbeeld bestanden als bijlage aan toe te voegen.

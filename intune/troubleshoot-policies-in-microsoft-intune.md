@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d1f790aeedff1e13ecc220ed7a6d8f311e12585
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460509"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044603"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Beleidsregels en profielen voor het oplossen van problemen in Intune
 
@@ -56,19 +55,19 @@ In dit artikel staan een aantal oplossingstechnieken en er worden problemen besc
 
       - Voor beveiligingsbeleid voor apps (mobiel toepassingsbeheer) hoeven apparaten niet te zijn geregistreerd. Zie [App-beveiligingsbeleid maken en toewijzen](app-protection-policies.md) voor meer informatie.
 
-    - **Azure AD Join-Type**: moet worden ingesteld op **werkplek** of **AzureAD**.
+    - **Azure AD-verbindingsype**: moet worden ingesteld op **Werkplek** of **AzureAD**.
  
       - Als deze kolom op **Niet geregistreerd** is ingesteld, is er mogelijk een probleem met de registratie. Doorgaans kunt u dit probleem oplossen door de registratie van het apparaat ongedaan te maken en het apparaat vervolgens opnieuw te registreren.
 
-    - **Compatibel met Intune**: moet **Ja**. Als **Nee** wordt weergegeven, is er mogelijk een probleem met nalevingsbeleidsregels of maakt het apparaat geen verbinding met de Intune-service. Het apparaat is bijvoorbeeld uitgeschakeld of er is geen netwerkverbinding. Uiteindelijk wordt het apparaat niet-compatibel, mogelijk na 30 dagen.
+    - **Compatibel met Intune**: moet **Ja** zijn. Als **Nee** wordt weergegeven, is er mogelijk een probleem met nalevingsbeleidsregels of maakt het apparaat geen verbinding met de Intune-service. Het apparaat is bijvoorbeeld uitgeschakeld of er is geen netwerkverbinding. Uiteindelijk wordt het apparaat niet-compatibel, mogelijk na 30 dagen.
 
       Zie [Aan de slag met apparaatnalevingsbeleid in Intune](device-compliance-get-started.md) voor meer informatie.
 
-    - **Compatibel met Azure AD**: moet **Ja**. Als **Nee** wordt weergegeven, is er mogelijk een probleem met nalevingsbeleidsregels of maakt het apparaat geen verbinding met de Intune-service. Het apparaat is bijvoorbeeld uitgeschakeld of er is geen netwerkverbinding. Uiteindelijk wordt het apparaat niet-compatibel, mogelijk na 30 dagen.
+    - **Compatibel met Azure AD**: moet **Ja** zijn. Als **Nee** wordt weergegeven, is er mogelijk een probleem met nalevingsbeleidsregels of maakt het apparaat geen verbinding met de Intune-service. Het apparaat is bijvoorbeeld uitgeschakeld of er is geen netwerkverbinding. Uiteindelijk wordt het apparaat niet-compatibel, mogelijk na 30 dagen.
 
       Zie [Aan de slag met apparaatnalevingsbeleid in Intune](device-compliance-get-started.md) voor meer informatie.
 
-    - **Laatst ingecheckt**: moet een recente tijd en datum. Standaard worden Intune-apparaten elke 8 uur ingecheckt.
+    - **Laatst ingecheckt**: moet een recente tijd en datum zijn. Standaard worden Intune-apparaten elke 8 uur ingecheckt.
 
       - Als de **Laatste incheckdatum** meer dan 24 uur geleden is, is er mogelijk een probleem met het apparaat. Een apparaat dat niet kan worden ingecheckt, kan geen beleidsregels uit Intune ontvangen.
 
@@ -110,7 +109,7 @@ In dit artikel staan een aantal oplossingstechnieken en er worden problemen besc
 
     - **In behandeling**: het profiel wordt naar het apparaat verzonden, maar de status is nog niet naar Intune gerapporteerd. Zo moet de gebruiker in geval van versleuteling voor Android versleuteling inschakelen, waardoor de actie mogelijk in behandeling is.
 
-**Handige koppeling**: [configuratie apparaatprofielen controleren](device-profile-monitor.md)
+**Handige koppeling**:[Configuratieprofielen voor apparaten bewaken](device-profile-monitor.md)
 
 > [!NOTE]
 > Wanneer er twee sets beleidsregels met verschillende beperkingsniveaus zijn die op hetzelfde apparaat of dezelfde gebruiker van toepassing zijn, wordt het meest beperkende beleid toegepast.

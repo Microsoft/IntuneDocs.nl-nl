@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 206bc3276f3c175fe61852f235c722b835ad60b4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 61d8f5f66d424c434edf119ad7fe221c35ee35ae
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564853"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042213"
 ---
 # <a name="configure-the-take-a-test-app-on-windows-10-devices-using-intune"></a>De app Toets maken configureren op Windows 10-apparaten in Microsoft Intune
 
@@ -38,7 +37,7 @@ In [De app Toets maken in Intune](education-settings-configure.md) vindt u meer 
 
 ## <a name="take-a-test-settings"></a>Instellingen voor Toets maken
 
-- **Accounttype**: Kies hoe gebruikers zich aanmelden met de test. Uw opties zijn:
+- **Accounttype**: kies hoe gebruikers zich aanmelden voor de toets. Uw opties zijn:
   - Microsoft Azure Active Directory-account
   - Domeinaccount
   - Lokaal account

@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 03/08/2019
 ms.topic: article
-ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
@@ -15,109 +14,115 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
-ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658546"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045181"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken voor gedistribueerde IT
 
-U kunt op basis van de rol beheer- en scope-tags gebruiken om ervoor te zorgen dat de juiste beheerders de juiste toegang en de zichtbaarheid van de juiste Intune-objecten hebben. Rollen bepalen welke toegang beheerders hebben op welke objecten. Bereiktags bepalen welke objecten die beheerders kunnen zien.
+U kunt op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken om ervoor te zorgen dat de juiste beheerders de juiste toegang tot en zichtbaarheid van de juiste Intune-objecten hebben. Rollen bepalen welke toegang beheerders hebben tot welke objecten. Bereiktags bepalen welke objecten zichtbaar zijn voor beheerders.
 
-Laten we zeggen dat een beheerder van de regionale office Seattle de beleids- en Profielbeheerder rol is toegewezen. Wilt u deze beheerder om te zien en beheren van alleen de profielen en beleidsregels die alleen van toepassing op de Seattle-apparaten. U doet dit door u dat zou doen:
+Laten we bijvoorbeeld zeggen dat een beheerder van het regionale kantoor in Seattle de rol van beleids- en profielbeheerder is toegewezen. U wilt dat deze beheerder alleen de profielen en beleidsregels ziet en beheert die van toepassing zijn op de apparaten in Seattle. Hiervoor zou u het volgende moeten doen:
 
-1. Maak een bereiktag Seattle genoemd.
-2. Maak een roltoewijzing voor de functie beleid- en Profielbeheerder met: 
-    - Leden (groepen) = van een beveiligingsgroep met de naam Seattle IT-beheerders. Alle beheerders in deze groep hebben toestemming voor het beheren van beleidsregels en profielen voor gebruikers/apparaten binnen het bereik (groepen).
-    - Bereik (groepen) = van een groep met de naam Seattle gebruikers. Alle gebruikers/apparaten in deze groep kunnen hebben hun profielen en beleidsregels die worden beheerd door de beheerders in de leden (groepen). 
-    - Bereik (Tags) = Seattle. Beheerders in het lid (groepen) ziet apparaten waarvoor ook de bereiktag Seattle.
-3. De bereiktag Seattle aan beleidsregels en profielen die u dat beheerders in leden (groepen wilt) om toegang te kunnen toevoegen.
-4. De bereiktag Seattle aan apparaten die u wilt dat zichtbaar voor beheerders in de leden (groepen) toevoegen. 
+1. Maak een bereiktag met de naam Seattle.
+2. Maak een roltoewijzing voor de rol beleids- en profielbeheerder met: 
+    - Leden (groepen) = een beveiligingsgroep met de naam IT-beheerders in Seattle. Alle beheerders in deze groep hebben toestemming voor het beheren van beleidsregels en profielen voor gebruikers/apparaten binnen het bereik (Groepen).
+    - Bereik (Groepen) = een beveiligingsgroep met de naam gebruikers in Seattle. Alle gebruikers/apparaten in deze groep kunnen hun profielen en beleidsregels laten beheren door de beheerders in Leden (Groepen). 
+    - Bereik(tags) = Seattle. Beheerders in Leden (Groepen) ziet apparaten waarvoor ook de bereiktag Seattle.
+3. Voeg de bereiktag Seattle toe aan beleidsregels en profielen waartoe beheerders in Leden (Groepen) toegang moeten hebben.
+4. Voeg de bereiktag Seattle toe aan apparaten die zichtbaar moeten zijn voor beheerders in Leden (Groepen). 
 
 
 ## <a name="to-create-a-scope-tag"></a>Een bereiktag maken
 
-1. Kies in Intune **rollen** > **bereik (Tags)** > **maken**.
+1. Kies in Intune **Rollen** > **Bereik(tags)**  > **Maken**.
 
-    ![Schermafbeelding van een bereiktag maken.](./media/scope-tags/create-scope-tag.png)
+    ![Schermopname van Een bereiktag maken.](./media/scope-tags/create-scope-tag.png)
 
 2. Geef een **naam** en **beschrijving** op.
 3. Kies **Maken**.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Een bereiktag toewijzen aan een rol
 
-1. Kies in Intune **rollen** > **alle rollen** > Kies een rol > **toewijzingen** > **toewijzen**.
+1. Kies in Intune **Rollen** > **Alle rollen** > kies een rol > **Toewijzingen** > **Toewijzen**.
 
     ![Schermopname van het bereik aan een rol toewijzen.](./media/scope-tags/assign-scope-to-role.png)
 
-2. Geef een **opdrachtnaam** en **beschrijving**.
-3. Kies **leden (groepen)** > **toevoegen** > Kies de groepen die u wilt gebruiken als onderdeel van deze toewijzing > **Selecteer**  >   **OK**. mUsers in deze groep hebben machtigingen voor het beheren van beleidsregels en profielen voor gebruikers/apparaten binnen het bereik (groepen).
+2. Geef een **toewijzingsnaam** en een **beschrijving** op.
+3. Kies **Leden (Groepen)**  > **Toevoegen** > kies de groepen die deel moeten uitmaken van deze toewijzing > **Selecteren** > **OK**. Gebruikers in deze groep zijn gemachtigd om beleidsregels en profielen voor gebruikers/apparaten binnen het bereik (Groepen) te beheren.
 
-    ![Schermopname van lidgroepen selecteren.](./media/scope-tags/select-member-groups.png)
+    ![Schermopname van Lidgroepen selecteren.](./media/scope-tags/select-member-groups.png)
 
-4. Als u beheren van gebruikers/apparaten in een specifieke set van groepen wilt, kiest u **bereik (groepen)** > **groepen geselecteerd** > **Selecteer groepen om op te nemen**> Kies de groepen > **Selecteer** > **OK**. Alle gebruikers/apparaten in deze groep kunnen hebben hun profielen en beleidsregels die worden beheerd door de beheerders in de leden (groep).
+4. Als u gebruikers/apparaten in een specifieke reeks groepen wilt beheren, kiest u **Bereik (Groepen)**  > **Geselecteerde groepen** > **Groepen selecteren om op te nemen** > kies de groepen > **Selecteren** > **OK**. Alle gebruikers/apparaten in deze groep kunnen hun profielen en beleidsregels laten beheren door de beheerders in Leden (Groep).
 
-    ![Schermopname van de optie bereikgroepen.](./media/scope-tags/select-scope-groups.png)
+    ![Schermopname van Bereikgroepen selecteren.](./media/scope-tags/select-scope-groups.png)
 
-    U kunt ook **alle apparaten**, **alle gebruikers**, of **alle gebruikers en alle apparaten**.
+    U kunt ook **Alle apparaten**, **Alle gebruikers**, of **Alle gebruikers en alle apparaten** kiezen.
 
-    ![Schermafbeelding van de andere opties voor select bereikgroepen.](./media/scope-tags/scope-group-other-options.png)
+    ![Schermopname van de andere opties voor het selecteren van bereikgroepen.](./media/scope-tags/scope-group-other-options.png)
     
-5. Kies **bereik (Tags)** > **toevoegen** > Kies de labels die u wilt toevoegen aan deze rol > **Selecteer** > **OK**. Gebruikers in leden (groepen) hebben toegang tot de beleidsregels en profielen die ook hetzelfde bereik label hebben.
+5. Kies **Bereik(tags)**  > **Toevoegen** > kies de tags die u aan deze rol wilt toevoegen > **Selecteren** > **OK**. Gebruikers in Leden (Groepen) hebben toegang tot de beleidsregels en profielen die ook dezelfde bereiktag hebben.
 
-    ![Schermopname van bereiktags selecteren.](./media/scope-tags/select-scope-tags.png)
+    ![Schermopname van Bereiktags selecteren.](./media/scope-tags/select-scope-tags.png)
 
 6. Kies **OK**. 
 
 ## <a name="to-add-a-scope-tag-to-a-configuration-profile"></a>Een bereiktag toevoegen aan een configuratieprofiel
-1. Kies in Intune **apparaatconfiguratie** > **profielen** > een profiel kiezen.
+1. Kies in Intune **Apparaatconfiguratie** > **Profielen** > kies een profiel.
 
-    ![Schermopname van het profiel selecteren.](./media/scope-tags/choose-profile.png)
+    ![Schermopname van Profiel selecteren.](./media/scope-tags/choose-profile.png)
 
-2. Kies **eigenschappen** > **bereik (Tags)** > **toevoegen**.
+2. Kies **Eigenschappen** > **Bereik(tags)**  > **Toevoegen**.
 
-    ![Schermopname van het bereik-tags toevoegen.](./media/scope-tags/add-scope-tags.png)
+    ![Schermopname van Bereik-tags toevoegen.](./media/scope-tags/add-scope-tags.png)
 
-3. Onder **labels selecteren**, kiest u de labels die u wilt toevoegen aan het profiel.
-4. Kies **Selecteer** > **OK** > **opslaan**.
+3. Kies onder **Tags selecteren** de tags die u wilt toevoegen aan het profiel.
+4. Kies **Selecteren** > **OK** > **Opslaan**.
 
-## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Een bereiktag toewijzen aan een configuratiebeleid voor apps
-Voor apparaten met **type apparaatregistratie** ingesteld op **beheerde apparaten**:
-1. Kies **Client-apps** > **App-configuratiebeleid** > Kies een configuratiebeleid voor apps.
-2. Kies **eigenschappen** > **bereik (Tags)** > Kies de labels die u wilt toewijzen aan het beleid.
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Een bereiktag toewijzen aan een app-configuratiebeleid
+Voor apparaten met het **Type apparaatinschrijving** ingesteld op **Beheerde apparaten**:
+1. Kies **Client-apps** > **App-configuratiebeleid** > Kies een app-configuratiebeleid.
+2. Kies **Eigenschappen** > **Bereik(tags)** > kies de tags die u wilt toewijzen aan het beleid.
 
-Voor apparaten met **type apparaatregistratie** ingesteld op **beheerde apps**:
-1. Kies **Client-apps** > **App-configuratiebeleid** > Kies een configuratiebeleid voor apps.
-2. Kies **bereik (Tags)** > Kies de labels die u wilt toewijzen aan het beleid.
+Voor apparaten met het **Type apparaatinschrijving** ingesteld op **Beheerde apps**:
+1. Kies **Client-apps** > **App-configuratiebeleid** > kies een app-configuratiebeleid.
+2. Kies **Bereik(tags)** > kies de tags die u wilt toewijzen aan het beleid.
 
 
-## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Een bereiktag toewijzen aan een iOS-app inrichtingsprofiel
-1. Kies in Intune **Client-apps** > **inrichtingsprofielen voor iOS-Apps** > een profiel kiezen.
-2. Kies **eigenschappen** > **bereik (Tags)** > Kies de labels die u wilt toewijzen aan het profiel.
-3. Kies **Selecteer** > **OK** > **opslaan**.
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Een bereiktag toewijzen aan een inrichtingsprofiel van een iOS-app
+1. Kies in Intune **Client-apps** > **inrichtingsprofielen voor iOS-apps** > kies een profiel.
+2. Kies **Eigenschappen** > **Bereik(tags)** > kies de tags die u wilt toewijzen aan het profiel.
+3. Kies **Selecteren** > **OK** > **Opslaan**.
 
-## <a name="scope-tag-details"></a>Bereik label details
-Wanneer u werkt met bereiktags, moet u deze gegevens:
+## <a name="to-assign-a-scope-tag-to-an-apple-volume-purchase-program-vpp-token"></a>Een bereiktag toewijzen aan een Apple VPP-token (VPP: Volume Purchase Program)
+1. Kies in Intune **Client-apps** > **Apple VPP-tokens** > kies een VPP-token.
+2. Selecteer **Bereik(tags)** > kies de tags die u wilt toewijzen aan het profiel. De toegewezen tags wordt overgenomen door de VPP-apps en ebooks die zijn gekoppeld aan het VPP-token.
+3. Kies **Selecteren** > **OK** > **Opslaan**.
 
-- U kunt op dit moment bereiktags aan toewijzen:
+## <a name="scope-tag-details"></a>Details bereiktags
+Wanneer u met bereiktags werkt, moet u deze details onthouden:
+
+- U kunt op dit moment bereiktags toewijzen aan:
     - Roltoewijzingen
     - Nalevingsbeleid voor apparaten
     - Apparaatconfiguratieprofielen
-    - Windows 10-ringen updates
+    - Windows 10-updateringen
     - Beheerde apparaten
     - Apps
-    - Het configuratiebeleid voor apps – beheerde apparaten
+    - App-configuratiebeleidsregels - beheerde apparaten toevoegen
     - PowerShell-scripts
     - DEP-tokens
     - Inrichtingsprofiel voor iOS-apps
-- Wanneer een beheerder een object in Intune maakt, worden alle bereiktags toegewezen aan die beheerder automatisch worden toegewezen aan het nieuwe object.
-- Intune RBAC niet van toepassing op Azure Active Directory-rollen. Dus hebben de rollen Intune-Service-beheerders en globale beheerders volledige beheerderstoegang tot Intune, ongeacht welke bereiktags die ze hebben.
-- Beheerders in een roltoewijzing met bereiktags ziet ook de Intune-objecten met geen bereiktags.
-- U kunt alleen een bereiktag die u in uw roltoewijzingen hebt toewijzen.
-- U kunt alleen de doelgroepen die worden vermeld in het bereik (groepen) van de roltoewijzing.
-- Als u een bereiktag toegewezen voor uw rol hebt, kunt u alle bereiktags op een Intune-object niet verwijderen. Ten minste één bereiktag is vereist.
+    - VPP-tokens (Volume Purchase Program)
+- Wanneer een beheerder een object in Intune maakt, worden alle aan die beheerder toegewezen bereiktags automatisch toegewezen aan het nieuwe object.
+- Intune RBAC is niet van toepassing op Azure Active Directory-rollen. Dus hebben de rollen Intune-servicebeheerders en Globale beheerders volledige beheerderstoegang tot Intune, ongeacht welke bereiktags ze hebben.
+- Voor beheerders in een roltoewijzing met bereiktags zijn ook de Intune-objecten zonder bereiktags zichtbaar.
+- U kunt alleen een bereiktag toewijzen die zich in uw roltoewijzingen bevindt.
+- U kunt alleen groepen die worden vermeld in Bereik (Groepen) van uw roltoewijzing als doelwit kiezen.
+- Als een bereiktag aan uw rol is toegewezen, kunt u niet alle bereiktags voor een Intune-object verwijderen. Er is ten minste één bereiktag vereist.
 
 ## <a name="next-steps"></a>Volgende stappen
 

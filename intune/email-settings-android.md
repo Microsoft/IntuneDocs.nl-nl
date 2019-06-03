@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/15/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94f907ee8805c5f0559e8751a7cd69bacf1612ee
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 647e1cd6925df27d42186599ad6786e866742b44
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565500"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042282"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Android-apparaatinstellingen voor het configureren van e-mail, verificatie en synchronisatie in Intune
 
@@ -52,9 +51,9 @@ Zie voor meer informatie over e-mailprofielen in Intune [Configure email setting
       Wanneer u ervoor kiest om **aangepaste** kenmerken te gebruiken, moet u het volgende invoeren:
       - **Te gebruiken aangepaste domeinnaam**: voer een waarde in die Intune voor de domeinnaam gebruikt, zoals `contoso.com` of `contoso`
 
-- **E-mailadreskenmerk van AAD**: deze naam is het e-kenmerk dat Intune uit Azure AD ophaalt. In Intune wordt het e-mailadres dat voor dit profiel wordt gebruikt, dynamisch gegenereerd. Uw opties zijn:
-  - **User principal name**: maakt gebruik van de volledige principal name, zoals `user1@contoso.com` of `user1`, als het e-mailadres.
-  - **Primair SMTP-adres**: maakt gebruik van het primaire SMTP-adres, zoals `user1@contoso.com`, zich aanmelden bij Exchange.
+- **Het kenmerk e-mailadres van AAD**: deze naam is het e-mailadreskenmerk dat Intune uit Azure AD ophaalt. In Intune wordt het e-mailadres dat voor dit profiel wordt gebruikt, dynamisch gegenereerd. Uw opties zijn:
+  - **User principal name**: Maakt gebruik van de volledige principal name, zoals `user1@contoso.com` of `user1`, als het e-mailadres.
+  - **Primaire SMTP-adres**: Maakt gebruik van het primaire SMTP-adres, zoals `user1@contoso.com`, voor aanmelding bij Exchange.
 
 - **Verificatiemethode**: selecteer **Gebruikersnaam en wachtwoord** of **Certificaten** als verificatiemethode voor het e-mailprofiel.
   - Als u **Certificaat** hebt geselecteerd, selecteert u een SCEP- of PKCS-clientcertificaatprofiel dat u eerder hebt gemaakt voor verificatie van de Exchange-verbinding.
@@ -77,7 +76,7 @@ Zie voor meer informatie over e-mailprofielen in Intune [Configure email setting
   U kunt de volgende inhoud synchroniseren:  
   - **Contacten**: Kies **Inschakelen** zodat eindgebruikers contactpersonen naar hun apparaten kunnen synchroniseren.
   - **Agenda**: kies **Inschakelen** zodat eindgebruikers de agenda naar hun apparaten kunnen synchroniseren.
-  - **Taken**: kies **Inschakelen** zodat eindgebruikers om het even welke taken naar hun apparaten kunnen synchroniseren.
+  - **Taken**: kies **Inschakelen** zodat eindgebruikers taken naar hun apparaten kunnen synchroniseren.
 
 ## <a name="next-steps"></a>Volgende stappen
 

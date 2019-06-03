@@ -1,5 +1,5 @@
 ---
-title: Controle van wijzigingen en gebeurtenissen in Microsoft Intune - Azure | Microsoft Docs
+title: Wijzigingen en gebeurtenissen in Microsoft Intune controleren - Azure | Microsoft Docs
 description: Meer informatie over het bekijken van auditlogboeken waarin Microsoft Intune-activiteiten worden opgenomen.
 keywords: ''
 ms.author: dougeby
@@ -7,26 +7,25 @@ author: dougeby
 manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93072ba4730de0252f54d93fa1169062d496ce38
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
-ms.translationtype: MTE75
+ms.openlocfilehash: 9d01b1f745450785209bf289be5b6e36ac65cc2d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394898"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046308"
 ---
-# <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Gebruik auditlogboeken volgen en controleren van gebeurtenissen in Microsoft Intune
+# <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Gebruik auditlogboeken om gebeurtenissen in Microsoft Intune te volgen en te controleren
 
-Auditlogboeken bevatten een lijst met activiteiten die een wijziging in Microsoft Intune genereren. Maken, bijwerken (bewerken), verwijderen, toewijzen en externe acties maken controlegebeurtenissen die beheerders voor de meeste werkbelastingen van Intune kunnen bekijken. Standaard is controle ingeschakeld voor alle klanten. Het kan niet worden uitgeschakeld.
+Auditlogboeken bevatten een lijst met activiteiten die een wijziging in Microsoft Intune genereren. De acties maken, bijwerken (bewerken), verwijderen, toewijzen en externe acties zorgen voor controlegebeurtenissen die beheerders voor de meeste werkbelastingen van Intune kunnen bekijken. Standaard is controle ingeschakeld voor alle klanten. De functie kan niet worden uitgeschakeld.
 
 > [!NOTE]
-> Gebeurtenissen voor beveiligingscontrole gestart opname in de functie-release van December 2017. Eerdere gebeurtenissen zijn niet beschikbaar.
+> Het vastleggen van controlegebeurtenissen is gestart bij de functierelease van december 2017. Eerdere gebeurtenissen zijn niet beschikbaar.
 
 ## <a name="who-can-access-the-data"></a>Wie hebben er toegang tot de gegevens?
 
@@ -41,20 +40,20 @@ Gebruikers met de volgende machtigingen kunnen auditlogboeken bekijken:
 U kunt auditlogboeken in de controlegroep voor elke Intune-workload bekijken:
 
 1. Selecteer in [Azure Portal](https://portal.azure.com/) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
-2. Kiest u de werkbelasting die u wilt bekijken van auditlogboeken. Selecteer bijvoorbeeld **apparaten**.
-3. Onder **bewaking**, kiest u **auditlogboeken**.
+2. Kies de gewenste werkbelasting voor het bekijken van auditlogboeken. Selecteer bijvoorbeeld **Apparaten**.
+3. Kies onder **Bewaking** **Auditlogboeken**.
 
 ## <a name="route-logs-to-azure-monitor"></a>Logboeken routeren naar Azure Monitor
 
-Operationele logboeken en auditlogboeken kunnen ook worden gerouteerd naar Azure Monitor. In **auditlogboeken**, selecteer **gegevensinstellingen exporteren**:
+Auditlogboeken en operationele logboeken kunnen ook naar Azure Monitor worden gerouteerd. Selecteer in **Auditlogboeken** **Gegevensinstellingen exporteren**:
 
-![Logboekgegevens exporteren naar Azure monitor door het selecteren van instellingen voor exporteren van gegevens in Intune](./media/audit-logs-export-data-settings.png)
+![Logboekgegevens exporteren naar Azure Monitor door Gegevensinstellingen exporteren in Intune te selecteren](./media/audit-logs-export-data-settings.png)
 
 Voor meer informatie over deze functie raadpleegt u [Logboekgegevens verzenden naar Storage, Event Hubs of Log Analytics in Intune](review-logs-using-azure-monitor.md).
 
 ## <a name="review-audit-events"></a>Auditgebeurtenissen bekijken
 
-![Kies auditlogboeken in Intune om te zien van acties en datums wanneer gebeurtenissen zich hebben voorgedaan](./media/monitor-audit-logs.png "auditlogboeken")
+![Kies auditlogboeken in Intune om acties en datums te zien bij het optreden van gebeurtenissen](./media/monitor-audit-logs.png "Auditlogboeken")
 
 Een auditlogboek heeft een standaardlijstweergave waarin de volgende items worden weergegeven:
 
@@ -66,12 +65,12 @@ Een auditlogboek heeft een standaardlijstweergave waarin de volgende items worde
 - Categorie
 - Status
 
-Meer informatie over een gebeurtenis, selecteer een item in de lijst:
+Selecteer een item in de lijst als u meer informatie over een gebeurtenis wilt bekijken:
 
-![Meer gedetailleerde informatie over wie deed wat in audit registreert in Intune](./media/monitor-audit-log-detail.png "details van het auditlogboek")
+![Meer gedetailleerde informatie krijgen over wie wat deed in auditlogboeken in Intune](./media/monitor-audit-log-detail.png "Details van auditlogboeken")
 
 > [!NOTE]
-> **Gestart door (actor)** bevat informatie over wie de taak is uitgevoerd en wanneer deze is uitgevoerd. Als u de activiteit bijvoorbeeld in Intune in de Azure-portal uitvoert, vermeldt **Toepassing** altijd **Uitbreiding voor Microsoft Intune-portal** en maakt de **Toepassings-id** altijd gebruik van dezelfde GUID.
+> **Gestart door (actor)** bevat informatie over wie de taak heeft uitgevoerd en waar deze is uitgevoerd. Als u de activiteit bijvoorbeeld in Intune in de Azure-portal uitvoert, vermeldt **Toepassing** altijd **Uitbreiding voor Microsoft Intune-portal** en maakt de **Toepassings-id** altijd gebruik van dezelfde GUID.
 > 
 > In de sectie **Doel(en)** worden mogelijk meerdere doelen vermeld, samen met de eigenschappen die zijn gewijzigd.  
 
@@ -81,10 +80,10 @@ Elke workload kent een menu-item dat vooraf op de categorie van auditgebeurtenis
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>Graph API gebruiken om auditgebeurtenissen op te halen
 
-Zie voor meer informatie over het gebruik van de graph API om op te halen van één jaar aan auditgebeurtenissen [auditEvents lijst](https://docs.microsoft.com/graph/api/intune-auditing-auditevent-list?view=graph-rest-1.0).
+Zie [List auditEvents](https://docs.microsoft.com/graph/api/intune-auditing-auditevent-list?view=graph-rest-1.0) (Auditgebeurtenissen weergeven) voor meer informatie over het gebruik van de Graph API voor het ophalen van één jaar aan auditgebeurtenissen.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-[Logboekgegevens verzenden naar eventhubs-opslag of meld u analytics](review-logs-using-azure-monitor.md).
+[Logboekgegevens verzenden naar opslag, Event Hubs of Log Analytics](review-logs-using-azure-monitor.md).
 
 [Logboeken voor beveiliging van de client-app controleren](app-protection-policy-settings-log.md).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91ea3aab5cd04624bfa036615b8d7710573bcae1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7f47d7e238bc810db9057a4a7c86dbfa523b0e7b
+ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846975"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174210"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Welke gegevens kan mijn organisatie zien wanneer ik mijn apparaat inschrijf?
 
@@ -43,7 +43,7 @@ Uw organisatie kan uw persoonlijke gegevens niet zien wanneer u een apparaat met
 - Apparaatmodel, zoals Google Pixel
 - Apparaatfabrikant, zoals Microsoft
 - Besturingssysteem en versie, zoals iOS 12.0.1
-- Namen van apps, zoals Microsoft Word: op persoonlijke apparaten kan uw organisatie alleen uw beheerde apps zien. Op apparaten waar het bedrijf eigenaar van is, kan uw organisatie al uw apps zien.
+- Inventaris en namen van apps, zoals Microsoft Word. op persoonlijke apparaten kan uw organisatie alleen uw beheerde apps zien. Op apparaten waar het bedrijf eigenaar van is, kan uw organisatie al uw apps zien.
 - Eigenaar van het apparaat
 - Apparaatnaam
 - Serienummer van apparaat
@@ -54,5 +54,5 @@ Uw organisatie kan uw persoonlijke gegevens niet zien wanneer u een apparaat met
 -  Telefoonnummer: Op apparaten die eigendom zijn van het **organisatie** is uw volledige telefoonnummer zichtbaar. Van **persoonlijke** apparaten zijn alleen de laatste vier cijfers van uw telefoonnummer zichtbaar voor uw organisatie. U kunt het **eigendomstype** van elk apparaat zien door de pagina **Apparaatdetails** voor het apparaat te openen.
 - Apparaatopslagruimte: als u een vereiste app niet kunt installeren, kan uw organisatie kijken naar de opslagruimte van het apparaat om te controleren of er wellicht te weinig ruimte is.  
 -  Locatie: uw organisatie kan nooit de locatie van uw apparaat zien, tenzij u een verloren iOS-apparaat onder supervisie moet herstellen. Raadpleeg de [Apple iOS-documentatie](https://go.microsoft.com/fwlink/?linkid=853816) voor meer informatie over apparaten onder supervisie.  
-- App-inventaris: als uw organisatie gebruikmaakt van Mobile Threat Defense, kunnen er meer details worden weergegeven over de apps die op uw iOS-apparaat zijn geïnstalleerd. Meer informatie over [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- Details app-inventaris: als uw organisatie gebruikmaakt van Mobile Threat Defense, kunnen er meer details worden weergegeven over de apps die op uw iOS-apparaat zijn geïnstalleerd. Meer informatie over [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
 - Netwerkgegevens: bepaalde informatie over netwerkverbindingen voor Android-apparaten kan voor de ondersteuning van uw organisatie beschikbaar zijn. Als uw organisatie bijvoorbeeld vereist dat apparaten binnen een bepaald gebouw blijven, herkent uw apparaat het netwerk waarmee het is verbonden. 

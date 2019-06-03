@@ -1,13 +1,12 @@
 ---
 title: Testhandleiding voor ontwikkelaars voor Microsoft Intune App SDK voor Android
-description: De Microsoft Intune App SDK voor Android-handleiding testen kunt u uw Intune beheerde Android-app te testen.
+description: Met de testhandleiding voor de Intune App-SDK voor Android kunt u uw door Intune beheerde Android-app testen.
 keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/14/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,114 +16,114 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4203f424c395399cb0ed1e7472b006602aa0b210
-ms.sourcegitcommit: db7a6b8fc9e82dae4f2111ca0b2d3c14e33658f9
+ms.openlocfilehash: 9f8fa8f361e886c8eac697bb585ccf15eb9152f1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58072468"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043841"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Testhandleiding voor ontwikkelaars voor Microsoft Intune App SDK voor Android
 
-De Microsoft Intune App SDK voor Android-testen handleiding is ontworpen om u te helpen u uw Intune beheerde Android-app testen.  
+De testhandleiding voor de Intune App-SDK voor Android is ontworpen om uw door Intune beheerde Android-app testen.  
 
 ## <a name="prerequisite-test-accounts"></a>Vereiste testaccounts
-Nieuwe accounts kunnen worden gemaakt met en zonder vooraf gegenereerde gegevens. Een nieuw account maken:
-1. Navigeer naar de [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant) site. 
-2. [Intune instellen](https://docs.microsoft.com/intune/setup-steps) beheer van mobiele apparaten (MDM) inschakelen.
+Er kunnen nieuwe accounts worden gemaakt met en zonder vooraf gegenereerde gegevens. Een nieuw account maken:
+1. Navigeer naar de site [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant). 
+2. [Stel Intune in](https://docs.microsoft.com/intune/setup-steps) om Mobile Device Management (MDM) in te schakelen.
 3. [Gebruikers maken](https://docs.microsoft.com/intune/users-add).
 4. [Groepen maken](https://docs.microsoft.com/intune/groups-add).
 5. [Licenties toewijzen](https://docs.microsoft.com/intune/licenses-assign) die geschikt zijn voor het testen.
 
 
-## <a name="azure-portal-policy-configuration"></a>Azure portal-beleidsconfiguratie
-[Maken en toewijzen van app-beveiligingsbeleid](https://docs.microsoft.com/intune/app-protection-policies) in de [de blade Intune van Azure portal](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Uw [app-configuratiebeleid](https://docs.microsoft.com/intune/app-configuration-policies-overview) kan ook worden gemaakt en toegewezen op de blade Intune.
+## <a name="azure-portal-policy-configuration"></a>Beleidsconfiguratie Azure Portal
+[Maak beveiligingsbeleid voor apps en wijs dit toe](https://docs.microsoft.com/intune/app-protection-policies) in de [Intune-blade van Azure Portal](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Uw [app-configuratiebeleid](https://docs.microsoft.com/intune/app-configuration-policies-overview) kan ook worden gemaakt en toegewezen in de Intune-blade.
 
 > [!NOTE]
-> Als uw app niet wordt vermeld in de Azure-portal, kunt u deze richten met een beleid dat door het selecteren van de **meer apps** optie en het geven van de naam van het pakket in het tekstvak in.
+> Als uw app niet wordt vermeld in Azure Portal, kunt u deze toch doelwit maken van een beleid door het selecteren van de optie **Meer apps** en het opgeven van de naam van het pakket in het tekstvak.
 
 > [!IMPORTANT]
-> Voor een app-configuratiebeleid om toe te passen, de registratie gebruiker moet het doel zijn van een [Intune-beveiligingsbeleid voor](https://docs.microsoft.com/intune/app-protection-policy).
+> Als u een app-configuratiebeleid wilt toepassen, moet de gebruiker die zich inschrijft aan een [Intune-beveiligingsbeleid](https://docs.microsoft.com/intune/app-protection-policy) zijn onderworpen.
 
-## <a name="test-cases"></a>Testscenario 's
+## <a name="test-cases"></a>Testcases
 
-De volgende testcases bieden stappen voor configuratie en de bevestiging. Gebruik deze richtlijnen bij het oplossen van problemen met Intune beheerde Android-app.
+De volgende testcases bieden configuratie- en bevestigingsstappen. Gebruik deze richtlijnen bij het oplossen van problemen door Intune beheerde Android-apps.
 
-### <a name="required-pin-and-corporate-credentials"></a>Vereiste PINCODE en zakelijke referenties
+### <a name="required-pin-and-corporate-credentials"></a>Vereiste pincode en zakelijke referenties
 
-U kunt een pincode vereisen voor toegang tot bedrijfsbronnen. U kunt ook zakelijke verificatie afdwingen voordat gebruikers de beheerde apps kunnen gebruiken. Gebruik de volgende stappen uit om in te stellen van deze vereisten:
+U kunt een pincode vereisen voor toegang tot bedrijfsresources. U kunt ook een zakelijke verificatie afdwingen voordat gebruikers de beheerde apps kunnen gebruiken. Gebruik de volgende stappen uit om deze vereisten in te stellen:
 
-1. Configureer **PINCODE vereisen voor toegang tot** en **bedrijfsreferenties vereisen voor toegang tot** naar **Ja**. Zie voor meer informatie, [beveiligingsbeleidsinstellingen voor Android-app in Microsoft Intune](app-protection-policy-settings-android.md#access-requirements).
-2. Controleer of de volgende voorwaarden:
-    - Starten van de App dient een prompt voor PINCODE invoer/instellen en/of de productie-gebruiker die is gebruikt tijdens de inschrijving met de bedrijfsportal-App te presenteren.
-    - Fout om een geldige aanmeldingsprompt kan worden veroorzaakt door een onjuist geconfigureerde android manifest specifiek de waarden voor de integratie van ADAL (SkipBroker, ClientID en -instantie).
-    - Fout om een prompt wordt mogelijk veroorzaakt door een onjuist geïntegreerde `MAMActivity` waarde. Voor meer informatie over `MAMActivity`, Zie [Microsoft Intune App SDK voor Android-ontwikkelaarshandleiding](app-sdk-android.md).
+1. Stel **Pincode vereisen voor toegang** en **Zakelijke referenties vereisen voor toegang** in op **Ja**. Zie [Instellingen beveiligingsbeleid voor Android-apps in Microsoft Intune](app-protection-policy-settings-android.md#access-requirements) voor meer informatie.
+2. Bevestig de volgende voorwaarden:
+    - Bij het starten van de app dient een prompt voor invoer/instellen van de pincode en/of de productiegebruiker die is gebruikt tijdens de inschrijving bij de bedrijfsportal te worden weergegeven.
+    - Wanneer er geen geldige aanmeldingsprompt wordt weergegeven, kan dit zijn veroorzaakt door een onjuist geconfigureerd Android-manifest, in het bijzonder de waarden voor de integratie van ADAL (SkipBroker, ClientID en Authority).
+    - Wanneer er geen prompt wordt weergegeven, wordt dit mogelijk veroorzaakt door een onjuist geïntegreerde `MAMActivity`-waarde. Zie de [ontwikkelaarshandleiding voor de Microsoft Intune App-SDK voor Android](app-sdk-android.md) voor meer informatie over `MAMActivity`.
 
 > [!NOTE] 
-> Als de bovenstaande test niet werkt, wordt waarschijnlijk ook de onderstaande tests mislukken. Beoordeling [SDK](app-sdk-android.md##sdk-integration) en [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) integratie.
+> Als de bovenstaande test niet werkt, mislukken de onderstaande tests waarschijnlijk ook. Controleer de integratie van de [SDK](app-sdk-android.md##sdk-integration) en [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
 
-### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>Overbrengen en ontvangen van gegevens met andere apps beperken
-U kunt de overdracht van gegevens tussen beheerde bedrijfstoepassingen als volgt beheren:
+### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>Overdracht en ontvangst van gegevens ten aanzien van andere apps beperken
+U kunt de overdracht van gegevens tussen door het bedrijf beheerde toepassingen als volgt regelen:
 
-1. Stel **toestaan dat app gegevens overdraagt naar andere apps** naar **door beleid beheerde apps**.
-2. Stel **App mag gegevens ontvangen van andere apps** in op **Alle apps**. Gebruik van intents en inhoudsproviders zullen worden beïnvloed door dit beleid.
-3. Controleer of de volgende voorwaarden:
-    - Vanuit een niet-beheerde app op in de functies van uw app juist geopend.
-    - Delen van inhoud tussen beheerde apps is toegestaan.
+1. Stel **Apps toestaan om gegevens over te dragen aan andere apps** in op **Door beleid beheerde apps**.
+2. Stel **App mag gegevens ontvangen van andere apps** in op **Alle apps**. Het gebruik van intents en inhoudsproviders zullen worden beïnvloed door dit beleid.
+3. Bevestig de volgende voorwaarden:
+    - Het in uw app openen van gegevens uit een niet-beheerde app werkt correct.
+    - Het delen van inhoud tussen beheerde apps is toegestaan.
     - Delen van beheerde apps op niet-beheerde apps (bijvoorbeeld Chrome) is geblokkeerd.
 
 ### <a name="restrict-cut-copy-and-paste"></a>Knippen, kopiëren en plakken beperken
-U kunt het systeemklembord beperken tot beheerde toepassingen als volgt te werk:
+U kunt het systeemklembord als volgt beperken tot beheerde toepassingen:
 
-1. Stel **beperken knippen, kopiëren en plakken met andere apps** naar **met beleidsbeheer met plakken in**.
-2. Controleer of de volgende voorwaarden:
-    - Tekst uit uw app kopieert naar een beheerde is een niet-beheerde app (bijvoorbeeld berichten) geblokkeerd.
+1. Stel **Knippen, kopiëren en plakken met andere apps beperken** in op **Door beleid beheerde apps met Plakken in**.
+2. Bevestig de volgende voorwaarden:
+    - Tekst kopiëren uit uw app naar beheerde en niet-beheerde apps (bijvoorbeeld Berichten) is geblokkeerd.
 
 ### <a name="prevent-save-as"></a>**Opslaan als** voorkomen
-U kunt bepalen **opslaan als** functionaliteit als volgt te werk:
+U kunt de functionaliteit **Opslaan als** als volgt regelen:
 
-1. Als uw app nodig heeft [geïntegreerde besturingselementen 'opslaan als'](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted), stel **te voorkomen dat OpslaanAls** naar **Ja**.
-2. Controleer of de volgende voorwaarden:
-    - Opslaan is beperkt tot alleen juiste beheerde locaties.
+1. Als voor uw app [geïntegreerde Opslaan als-besturingselementen](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted) vereist zijn, stelt u **Opslaan als voorkomen** in op **Ja**.
+2. Bevestig de volgende voorwaarden:
+    - Opslaan is beperkt tot alleen geschikte, beheerde locaties.
 
 ### <a name="file-encryption"></a>Bestandsversleuteling
 U kunt gegevens op het apparaat als volgt versleutelen:
 
-1. Stel **app-gegevens versleutelen** naar **Ja**.
-2. Controleer of de volgende voorwaarden:
-    - Werking van de normale toepassing wordt niet negatief beïnvloed.
+1. Stel **App-gegevens versleutelen** in op **Ja**.
+2. Bevestig de volgende voorwaarden:
+    - Normaal toepassingsgedrag wordt niet beïnvloed.
 
 ### <a name="prevent-android-backups"></a>Back-ups van Android voorkomen
-U kunt als volgt back-up app beheren:
+U kunt als volgt back-ups van apps regelen:
 
-1. Als u hebt ingesteld [geïntegreerde back-beperkingen](app-sdk-android.md#protecting-backup-data), configureren **back-ups van Android voorkomen** naar **Ja**.
-2. Controleer of de volgende voorwaarden:
+1. Als u [Geïntegreerde back-upbeperkingen](app-sdk-android.md#protecting-backup-data) hebt ingesteld, stelt u **Back-ups van Android voorkomen** in op **Ja**.
+2. Bevestig de volgende voorwaarden:
     - Back-ups zijn beperkt.
 
 ### <a name="unenrollment"></a>Registratie ongedaan maken
-U kunt beheerde apps door zakelijke e-mail en documenten die op afstand wissen en persoonlijke gegevens worden ontsleuteld wanneer deze is niet langer beheerd als volgt:
+U kunt zakelijke e-mails en documenten op beheerde apps wissen op afstand, en zorgen dat persoonlijke gegevens worden ontsleuteld wanneer deze niet meer worden beheerd, als volgt:
 
-1. Vanuit de Azure-portal, [uitgeven van een wisbewerking](https://docs.microsoft.com/intune/apps-selective-wipe).
-2. Als uw app wordt niet geregistreerd voor elke handlers wissen Bevestig de volgende voorwaarden:
-    - Een volledig wissen van de app wordt uitgevoerd.
-3. Als uw app is geregistreerd voor `WIPE_USER_DATA` of `WIPE_USER_AUXILARY_DATA`, Controleer of de volgende voorwaarden:
-    - De beheerde inhoud wordt verwijderd uit de app. Zie voor meer informatie, [Intune App SDK voor Android-ontwikkelaarshandleiding - selectief wissen](app-sdk-android.md#selective-wipe).
+1. [Geef opdracht om te wissen](https://docs.microsoft.com/intune/apps-selective-wipe) vanuit Azure Portal.
+2. Bevestig de volgende voorwaarden als er uw app niet voor handlers voor wissen is geregistreerd:
+    - De app wordt volledig gewist.
+3. Bevestig of de volgende voorwaarden als uw app is geregistreerd voor `WIPE_USER_DATA` of `WIPE_USER_AUXILARY_DATA`:
+    - De beheerde inhoud wordt verwijderd uit de app. Zie de [ontwikkelaarshandleiding voor de Microsoft Intune App-SDK voor Android - Selectief wissen](app-sdk-android.md#selective-wipe) voor meer informatie.
 
 ### <a name="multi-identity"></a>Meerdere identiteiten
-Integratie van [ondersteuning voor meerdere identiteiten](app-sdk-android.md#multi-identity-optional) een hoog risico wijziging die moet worden getest. De meest voorkomende problemen worden vanwege onjuiste instelling van de identiteit (context versus threat-niveau) en ook bestanden bijhouden (`MAMFileProtectionManager`).
+De integratie van [ondersteuning voor meerdere identiteiten](app-sdk-android.md#multi-identity-optional) is een wijziging met een hoog risico die grondig moet worden getest. De meest voorkomende problemen zijn te wijten aan een onjuiste instelling van de identiteit (context versus bedreigingsniveau), evenals het bijhouden van bestanden (`MAMFileProtectionManager`).
 
-Minimaal de volgende scenario's voor meerdere identiteiten moeten opnieuw worden gevalideerd:
+Ten minste de volgende scenario's voor meerdere identiteiten moeten opnieuw worden gevalideerd:
 
-- **OpslaanAls** beleid correct werkt voor beheerde identiteiten.
-- Kopiëren en plakken beperkingen correct van gelden beheerd naar persoonlijke.
-- Alleen gegevens die behoren tot de beheerde identiteit wordt gecodeerd en persoonlijke bestanden niet worden gewijzigd.
-- Selectief wissen tijdens het uitschrijven van apparaten verwijdert alleen gegevens beheerde identiteit.
-- De gebruiker wordt gevraagd voor voorwaardelijk starten wanneer het wijzigen van niet-beheerde naar beheerde account (alleen de eerste keer).
+- Het beleid voor **Opslaan als** werkt correct voor beheerde identiteiten.
+- Beperkingen voor kopiëren en plakken worden correct gehandhaafd van beheerd naar persoonlijk.
+- Alleen gegevens die behoren tot de beheerde identiteit worden versleuteld, en persoonlijke bestanden worden niet gewijzigd.
+- Met selectief wissen worden tijdens het uitschrijven van apparaten alleen gegevens van de beheerde identiteit verwijderd.
+- De eindgebruiker wordt gevraagd om voorwaardelijk te starten wanneer wijziging plaatsvindt van een niet-beheerde in een beheerde account (alleen de eerste keer).
 
 ### <a name="app-configuration-optional"></a>App-configuratie (optioneel)
 Gedrag van beheerde apps kunt u als volgt configureren:
 
-1. Als uw app de app-configuratie-instellingen gebruikt, moet u testen of uw app correct alle waarden die u (als de beheerder verwerkt) kunt instellen. [App-configuratiebeleid](https://docs.microsoft.com/intune/app-configuration-policies-overview) kan worden gemaakt en toegewezen in met behulp van Intune.
+1. Als uw app de instellingen van de app-configuratie gebruikt, moet u testen of uw app alle waarden correct verwerkt die u (als beheerder) kunt instellen. [App-configuratiebeleid](https://docs.microsoft.com/intune/app-configuration-policies-overview) kan worden gemaakt en toegewezen met behulp van Intune.
 
 ## <a name="next-steps"></a>Volgende stappen
 

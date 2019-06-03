@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbce65fc22bb1d3ecafcd2ffbb3a35dec703ccc4
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: e39766bc8a880c104bd5af9ff530144e2b5d2beb
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069013"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041686"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows-pc's beheren als computers via de Intune-softwareclient
 
@@ -50,7 +49,7 @@ Hieronder vindt u de minimale hardwarevereisten voor het installeren van de Intu
 |---------------|--------------------|
 |Netwerk|De client vereist dat de computer een internetverbinding heeft.|
 |Processor en geheugen|Raadpleeg de vereisten voor de processor en het RAM-geheugen voor het besturingssysteem van de computer.|
-|Schijfruimte|200 MB vrije schijfruimte voordat de clientsoftware wordt geïnstalleerd.|
+|Schijfruimte|200 MB vrije schijfruimte voordat de clientsoftware wordt geïnstalleerd.|
 
 **Software**:  
 Hieronder staan de softwarevereisten beschreven voor het installeren van de clientsoftware:
@@ -71,16 +70,16 @@ Als Intune-beheerder kunt u op verschillende manieren de Intune-softwareclient b
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Mogelijkheden voor computerbeheer met de Intune-clientsoftware
 In de meeste gevallen registreert u uw apparaten bij Microsoft Intune, waarmee u over een groter aantal mogelijkheden beschikt. U kunt echter ook pc's beheren met behulp van de Intune-softwareclient, die u de volgende functies biedt:
 
--   **[Beheer van software-updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)**: u kunt computers up-to-date houden en bepalen wanneer updates moeten worden toegepast.
+-   **[Beheer van software-updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** : u kunt computers up-to-date houden en bepalen wanneer updates moeten worden toegepast.
 
--   **[Windows Firewall-beleid](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)**: hiermee kunt u ervoor zorgen dat geen enkele computer die door uw bedrijf wordt gebruikt, een niet-actieve of niet goed geconfigureerde Windows Firewall heeft.
+-   **[Windows Firewall-beleid](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** : hiermee kunt u ervoor zorgen dat geen enkele computer die door uw bedrijf wordt gebruikt, een niet-actieve of niet goed geconfigureerde Windows Firewall heeft.
 
--   **[Anti-malwarebeveiliging](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)**: in Intune is Endpoint Protection opgenomen, waarmee uw computers worden beschermd tegen malware.
+-   **[Anti-malwarebeveiliging](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** : in Intune is Endpoint Protection opgenomen, waarmee uw computers worden beschermd tegen malware.
 
--   **[Hulp op afstand](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)**: met Intune kunnen gebruikers contact opnemen met IT-ondersteuningsmedewerkers, die vervolgens hulp kunnen bieden met de functie Extern bureaublad, die in Intune is opgenomen (vereist TeamViewer-software).
+-   **[Hulp op afstand](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** : met Intune kunnen gebruikers contact opnemen met IT-ondersteuningsmedewerkers, die vervolgens hulp kunnen bieden met de functie Extern bureaublad, die in Intune is opgenomen (vereist TeamViewer-software).
 
--   **[Softwarelicentiebeheer](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)**: hiermee kunt u bijhouden hoeveel softwarelicenties er nog beschikbaar zijn en hoeveel licenties er al worden gebruikt.
--   **[App-implementatie](add-apps-for-windows-pcs-in-microsoft-intune.md)**: implementeer software op pc's die u beheert. Bepaalde app-beheerfuncties zijn niet beschikbaar wanneer u pc's met de softwareclient beheert.
+-   **[Softwarelicentiebeheer](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** : hiermee kunt u bijhouden hoeveel softwarelicenties er nog beschikbaar zijn en hoeveel licenties er al worden gebruikt.
+-   **[App-implementatie](add-apps-for-windows-pcs-in-microsoft-intune.md)** : implementeer software op pc's die u beheert. Bepaalde app-beheerfuncties zijn niet beschikbaar wanneer u pc's met de softwareclient beheert.
 
 <!-- - **Compliance settings reporting** -->
 
