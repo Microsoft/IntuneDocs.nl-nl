@@ -7,36 +7,14 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: ffcef5b4d78856709f8563ee1f667ec7e5d993b3
-ms.sourcegitcommit: d2e04a38e024b0f5afb0ca202823227de9da3ad1
+ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65732614"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454118"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune. 
-
-### <a name="change-in-enrollment-workflow-with-intune-company-portal-on-corporate-ios-devices-authenticating-with-setup-assistant----1927359---"></a>Wijziging in de werkstroom voor registratie bij de Intune-bedrijfsportal op zakelijke iOS-apparaten die zich verifiëren met Configuratieassistent <!-- 1927359 -->
-Er komt een wijziging in de werkstroom voor het registreren van iOS-apparaten via een van de registratiemethoden van Apple voor zakelijke apparaten, te weten Apple Configurator, Apple Business Manager, Apple School Manager of DEP (Apple Device Enrollment Program), als Configuratieassistent wordt gebruikt voor verificatie. Deze wijziging geldt alleen voor apparaten die worden ingeschreven met gebruikersaffiniteit.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Wanneer deze wijziging wordt uitgerold, worden registratieprofielen in Intune in de Azure-portal bijgewerkt zodat u kunt opgeven hoe apparaten zich verifiëren en of zij de bedrijfsportal-app ontvangen. Er ontstaat een verbeterde werkstroom om iOS-apparaten te registreren via de hierboven genoemde methoden. 
-
-- Bij het registreren van nieuwe apparaten en het verifiëren van deze apparaten met Configuratieassistent, kunt u kiezen of u de bedrijfsportal-app al dan niet automatisch wilt implementeren. Eindgebruikers zien niet meer zien het scherm 'Uw apparaat identificeren' en het scherm 'Uw apparaat bevestigen' in de werkstroom voor registratie.  
-- Op apparaten die al zijn geregistreerd via Configuratieassistent en een van de registratiemethoden van Apple voor zakelijke apparaten, moet u actie ondernemen als u voorwaardelijke toegang wilt inschakelen. U moet [een configuratiebeleid voor apps configureren](https://aka.ms/enrollment_setup_assistant) met een specifieke xml om de bedrijfsportal-app naar deze apparaten te pushen.  Als u ervoor kiest om de bedrijfsportal op deze manier te pushen, zien eindgebruikers niet meer zien het scherm 'Uw apparaat identificeren' en het scherm 'Uw apparaat bevestigen' in de werkstroom voor registratie. 
-- Nadat deze wijziging is uitgerold, en u de bedrijfsportal-app niet hebt geïmplementeerd met het hierboven genoemde app-configuratieprofiel, en eindgebruikers de bedrijfsportal-app downloaden uit de App Store, kunnen ze zich wel aanmelden maar krijgen ze een foutmelding. Ze kunnen de app niet gebruiken voor voorwaardelijke toegang. 
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
-Als u van plan bent om de gewijzigde werkstroom te gaan gebruiken, moet u de instructies voor uw eindgebruikers aanpassen om het volgende duidelijk te maken:
-
-- Eindgebruikers zien de twee hierboven genoemde schermen niet meer in de werkstroom voor registratie. 
-- Ze moeten zich aanmelden bij de bedrijfsportal-app wanneer deze automatisch wordt geïmplementeerd en de app niet downloaden uit de App Store. 
-
-U kunt ervoor kiezen om nu een configuratiebeleid voor apps te maken indien dat nodig is, ter voorbereiding op deze wijziging. Wanneer deze nieuwe werkstroom wordt uitgerold, ziet u dan bijgewerkte registratieprofielen in de console. We informeren u ook over deze implementatie via het berichtencentrum. Vervolgens moet u actie ondernemen zodat uw eindgebruikers zich kunnen registreren via DEP door verificatie met Configuratieassistent en kunt u de bedrijfsportal-app gebruiken voor voorwaardelijke toegang.
-
-#### <a name="additional-information"></a>Aanvullende informatie 
-[https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
-
 
 ### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Android-bedrijfsportal-app bijwerken naar de nieuwste versie <!--4536963-->
 Er worden regelmatig updates van Intune gepubliceerd voor de Android-versie van de bedrijfsportal-app. In november 2018 hebben we een update voor de bedrijfsportal gepubliceerd, met onder andere een schakeloptie voor de back-end om u voor te bereiden op de wijziging van Google waarbij ze hun bestaande meldingenplatform gaan overzetten naar Firebase Cloud Messaging (FCM) van Google. Als Google hun bestaande meldingenplatform uit de lucht haalt en overstapt naar FCM, moeten eindgebruikers hun bedrijfsportal-app hebben bijgewerkt naar ten minste de versie van november 2018 om te kunnen blijven communiceren met de Google Play Store.
@@ -49,3 +27,16 @@ Vraag eindgebruikers van Android-apparaten die niet up-to-date zijn om de bedrij
 
 #### <a name="additional-information"></a>Aanvullende informatie
 https://firebase.google.com/docs/cloud-messaging/
+
+
+### <a name="new-fullscreen-experience-coming-to-intune---4593669--"></a>Er komt een nieuwe ervaring voor volledig scherm naar Intune <!--4593669-->
+We brengen bijgewerkte gebruikersinterfaces voor maken en bewerken uit in Intune in de Azure-portal. Deze nieuwe ervaring vereenvoudigt de bestaande werkstromen door een wizardachtige indeling te gebruiken die op één blade is samengevoegd. Deze update zorgt ervoor dat er minder blades of werkstromen voor maken en bewerken zijn waarbij u in verschillende blades ver moet doorklikken. De werkstromen voor maken worden ook bijgewerkt, want Toewijzingen wordt toegevoegd (behalve app-toewijzing).
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+De ervaring wordt in de komende maanden uitgebracht voor Intune via portal.azure.com en devicemanagement.microsoft.com. Deze update voor de gebruikersinterface is niet van invloed op de functionaliteit van uw bestaande beleid en profielen, maar u ziet een licht aangepaste werkstroom. Wanneer u bijvoorbeeld nieuw beleid maakt, kunt u toewijzingen instellen als onderdeel van deze stroom, in plaats van dat te doen nadat u het beleid hebt gemaakt. Bekijk de blogpost bij Aanvullende informatie voor schermopnames van hoe de nieuwe ervaring er in de console uitziet.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
+U hoeft geen actie meer te ondernemen, maar u kunt overwegen uw IT-begeleiding bij te werken, indien nodig. We werken onze documentatie bij wanneer deze ervaring wordt uitgebracht in verschillende blades in Intune in de Azure-portal.
+
+#### <a name="additional-information"></a>Aanvullende informatie 
+https://aka.ms/intune_fullscreen
