@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b3e8d7de7f80017d65e80860d217f1a9bc71fbe
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 72a9156ce9b7b1b43acf9b39d9186a52dd6c3e8d
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050253"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373716"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>E-mail automatiseren en acties voor niet-compatibele apparaten toevoegen in Intune
 
@@ -61,7 +61,7 @@ In dit artikel leest u informatie over:
 
 Maak een sjabloon voor berichtmeldingen om een e-mail naar uw gebruikers te versturen. Wanneer een apparaat niet conform is, worden de gegevens die u in de sjabloon invoert, weergegeven in de e-mail die naar uw gebruikers wordt verzonden.
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatnaleving** > **Meldingen**.
 3. Selecteer **Melding maken**. Voer de volgende informatie in:
 

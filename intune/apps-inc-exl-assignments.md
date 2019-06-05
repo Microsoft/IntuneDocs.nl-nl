@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb55951390c3fe19651087e16c3185018cfd9dab
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c8353cf2f0c24c3a894fa219df9fc9a8272e17af
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049294"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454063"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>App-toewijzingen opnemen en uitsluiten in Microsoft Intune
 
@@ -44,9 +44,8 @@ Intune houdt geen rekening met koppelingen van gebruikers aan apparaten bij het 
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Groepen opnemen en uitsluiten bij het toewijzen van apps 
 U kunt een app toewijzen aan groepen met behulp van de toewijzing voor opnemen en uitsluiten:
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Selecteer in het menu **Intune** de optie **Client-apps**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
 4. Selecteer in het deelvenster **Client-apps** de optie **Apps**. De lijst met toegevoegde apps wordt weergegeven.
 5. Selecteer de app die u wilt beheren. In een dashboard worden gegevens over de app weergegeven. 
 6. Selecteer **Toewijzingen** in de sectie **Beheren** van het menu. 
@@ -76,7 +75,7 @@ U kunt een app toewijzen aan groepen met behulp van de toewijzing voor opnemen e
 
 Als u groepstoewijzingen maakt, kunnen groepen die al zijn toegewezen, niet worden gewijzigd. Als u een groep wilt selecteren die momenteel niet beschikbaar is, verwijdert u eerst de app uit de lijst met toegewezen apps. 
 
-Als u toewijzingen wilt bewerken, selecteert u in de lijst **Toewijzingen** in de app de rij met de specifieke toewijzing die u wilt wijzigen. U kunt een toewijzing ook verwijderen door aan het eind van een rij op het weglatingsteken (**...**) te klikken en **Verwijderen** te selecteren. Groepeer op **Toewijzingstype** of op **Opgenomen/uitgesloten** om de weergave van de lijst **Toewijzingen** te wijzigen.
+Als u toewijzingen wilt bewerken, selecteert u in de lijst **Toewijzingen** in de app de rij met de specifieke toewijzing die u wilt wijzigen. U kunt een toewijzing ook verwijderen door aan het eind van een rij op het weglatingsteken ( **...** ) te klikken en **Verwijderen** te selecteren. Groepeer op **Toewijzingstype** of op **Opgenomen/uitgesloten** om de weergave van de lijst **Toewijzingen** te wijzigen.
 
 ![App-toewijzingen van Intune - Voltooid](./media/apps-inc-exl-05.png)
 

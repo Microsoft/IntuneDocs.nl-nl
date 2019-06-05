@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02a5a7bd3625b5e95ddb304df7cf64461cca9c10
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 13858b257c1adbc8ce3147710d450c4a09ec9dc2
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049124"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454052"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -136,7 +136,7 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 > [!IMPORTANT]  
 > De Microsoft Intune-certificaatconnector kan niet worden geïnstalleerd op de verlenende certificeringsinstantie (CA) en moet in plaats daarvan op een afzonderlijke Windows-server worden geïnstalleerd.  
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen**.
 3. Download het connectorbestand en sla dit op een locatie op waar u het kunt openen vanaf de server waarop u de connector gaat installeren.
 
@@ -160,7 +160,7 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>PFX-certificaatconnector voor Microsoft Intune
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen**
 3. Download de PFX-certificaatconnector voor Microsoft Intune en sla deze op. Sla het bestand op op een locatie die toegankelijk is vanaf de server waar u de connector gaat installeren.
 4. Nadat het downloaden is voltooid, meldt u zich aan bij de server. Vervolgens:
@@ -207,9 +207,9 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 
 3. Ga naar **Instellingen** en voer de volgende eigenschappen in:
 
-    - **Drempelwaarde voor verlenging (%)**: 20% wordt aanbevolen.
+    - **Drempelwaarde voor verlenging (%)** : 20% wordt aanbevolen.
     - **Geldigheidsduur van certificaat**: Als u de certificaatsjabloon niet hebt gewijzigd, kan deze optie worden ingesteld op één jaar.
-    - **Sleutelarchiefprovider (KSP)**: Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan.
+    - **Sleutelarchiefprovider (KSP)** : Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan.
     - **Certificeringsinstantie**: Geeft de interne FQDN (Fully Qualified Domain Name) van uw CA voor ondernemingen weer.
     - **Naam van certificeringsinstantie**: Geeft de naam van uw CA voor ondernemingen weer, bijvoorbeeld "Contoso Certification Authority".
     - **Certificaatsjabloonnaam**: De naam van de sjabloon die eerder is gemaakt. Nogmaals, **Sjabloonnaam** is standaard hetzelfde als **Weergavenaam van sjabloon**, maar dan *zonder spaties*.
@@ -239,7 +239,7 @@ Na het importeren van de certificaten naar Intune maakt u een **geïmporteerd PK
 
     - **Beoogd doeleinde**: Het beoogde doel van de certificaten die voor dit profiel worden geïmporteerd. Een beheerder kan certificaten met verschillende beoogde doelen (zoals verificatie, S/MIME-ondertekening of S/MIME-versleuteling) importeren. Het beoogde doel dat is geselecteerd in het certificaatprofiel komt overeen met het certificaatprofiel met de juiste geïmporteerde certificaten.
     - **Geldigheidsduur van certificaat**: Als u de certificaatsjabloon niet hebt gewijzigd, kan deze optie worden ingesteld op één jaar.
-    - **Sleutelarchiefprovider (KSP)**: Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan.
+    - **Sleutelarchiefprovider (KSP)** : Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan.
 
 4. Selecteer **OK** > **Maken** om het profiel op te slaan.
 5. Raadpleeg [Microsoft Intune-apparaatprofielen toewijzen](device-profile-assign.md) om het nieuwe profiel aan een of meer apparaten toe te wijzen.

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bb4d94048025f4b0b6c984c4bf0972b432707b6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 68a0372180cf516f5a0111cd8fdb7cbd9535f075
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041881"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402723"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Mobiele eSIM-profielen configureren in Intune - Openbare preview
 
@@ -68,7 +68,6 @@ De volgende apparaten zijn geschikt voor eSIM en zijn momenteel verkrijgbaar. Co
 - Surface Pro LTE
 - HP Spectre Folio 13
 - Lenovo Yoga C630
-- Samsung Galaxy Book 2
 
 ## <a name="step-1-add-cellular-activation-codes"></a>Stap 1: Activeringscodes voor mobiele apparaten toevoegen
 

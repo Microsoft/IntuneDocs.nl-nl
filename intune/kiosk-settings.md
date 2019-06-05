@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbd545d13d9241edd55c01e4353a28b3851d2ac2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 19641a36cf429773a8c0e06a90ee279d2baa06f7
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046903"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412250"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Instellingen voor Windows 10- en Windows Holographic for Business-apparaten om ze als toegewezen kiosk uit te voeren via Intune
 
@@ -38,7 +38,7 @@ In dit artikel wordt beschreven hoe u een apparaatconfiguratieprofiel maakt. Zie
 
 ## <a name="create-the-profile"></a>Het profiel maken
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services** > filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 3. Voer de volgende eigenschappen in:
 

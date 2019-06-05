@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618557c129b693ad035dd82c823db43dcca2ee4d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2ae63fa19bb24381580a206481a9ac2e3684314a
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049448"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412377"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Office 365 toewijzen aan macOS-apparaten met Microsoft Intune
 
@@ -40,8 +40,7 @@ Voordat u Office 365 gaat toevoegen aan macOS-apparaten, moet u de volgende deta
 ## <a name="create-and-configure-the-app-suite"></a>Het app-pakket maken en configureren
 
 Voeg Office 365 toe vanuit het deelvenster **Apps**.
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services** > **Controle en beheer** > **Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
 4. Selecteer in het workloaddeelvenster **Client-apps** onder **Beheren** de optie **Apps**. 
 5. Selecteer **Toevoegen**.

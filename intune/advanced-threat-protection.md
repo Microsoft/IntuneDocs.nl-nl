@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a53ae7f43f135f7316b665672dc410812ef14d08
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050133"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374088"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Naleving voor Windows Defender ATP met voorwaardelijke toegang in Intune afdwingen
 
@@ -83,11 +83,11 @@ Wanneer u eenmaal onboarding van een apparaat met het configuratiepakket hebt ui
 
 ### <a name="create-the-configuration-profile"></a>Het configuratieprofiel maken
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 3. Voer een **Naam** en **Beschrijving** in.
 4. Voor **Platform** selecteert u **Windows 10 en hoger**
-5. Voor **Profieltype** selecteert u **Windows Defender ATP (Windows 10 Desktop)**.
+5. Voor **Profieltype** selecteert u **Windows Defender ATP (Windows 10 Desktop)** .
 6. Configureer de gewenste instellingen:
 
   - **Type clientconfiguratiepakket voor Windows Defender ATP**: Selecteer **Onboarding uitvoeren** om het configuratiepakket aan het profiel toe te voegen. Selecteer **Offboarding uitvoeren** om configuratiepakket uit het profiel te verwijderen.
@@ -105,11 +105,11 @@ Wanneer u eenmaal onboarding van een apparaat met het configuratiepakket hebt ui
 ## <a name="create-the-compliance-policy"></a>Het nalevingsbeleid maken
 Het nalevingsbeleid bepaalt een aanvaardbaar risiconiveau op een apparaat.
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconformiteit** > **Beleid** > **Beleid maken**.
 3. Voer een **Naam** en **Beschrijving** in.
 4. In **Platform** selecteert u **Windows 10 en hoger**.
-5. Stel in de instellingen voor **Windows Defender ATP** de optie **Vereisen dat het apparaat op of onder het apparaatdreigingsniveau moet zijn** in op het gewenste niveau. De classificatie van bedreigingsniveaus wordt [bepaald door Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
+5. Stel in de instellingen voor **Windows Defender ATP** de optie **Vereisen dat het apparaat op of onder het apparaatdreigingsniveau moet zijn** in op het gewenste niveau. De classificatie van bedreigingsniveaus wordt [bepaald door Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection).
 
    - **Veilig**: Dit is het veiligste niveau. Het apparaat heeft geen toegang tot bedrijfsresources als er ook maar één bedreiging is gevonden. Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel. (Windows Defender ATP gebruikt de waarde *Veilig*.)
    - **Laag**: Het apparaat is conform als er alleen bedreigingen van een laag niveau aanwezig zijn. Apparaten met gemiddelde of hoge dreigingsniveaus zijn niet conform.
@@ -120,7 +120,7 @@ Het nalevingsbeleid bepaalt een aanvaardbaar risiconiveau op een apparaat.
 
 ## <a name="assign-the-policy"></a>Wijs het beleid toe
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconformiteit** > **beleid**> Selecteer uw Windows Defender ATP-nalevingsbeleid.
 3. Selecteer **Toewijzingen**.
 4. Neem uw Azure AD-groepen op of sluit ze uit om ze toe te wijzen aan het beleid.
@@ -153,7 +153,7 @@ Het beleid voor voorwaardelijke toegang blokkeert de toegang tot resources *als*
 ## <a name="monitor-device-compliance"></a>Apparaatcompatibiliteit bewaken
 Bewaak vervolgens de status van apparaten die het nalevingsbeleid voor Windows Defender ATP hebben.
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **apparaatconformiteit** > **Beleidsnaleving**.
 3. Vind uw Windows Defender ATP-beleid in de lijst en zie welke apparaten conform of non-conform zijn.
 

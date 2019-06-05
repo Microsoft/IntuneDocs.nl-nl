@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045295"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412694"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Logboekgegevens verzenden naar opslag, Event Hubs of Log Analytics in Intune (preview)
 
@@ -53,7 +53,7 @@ Afhankelijk van waarheen u de auditlogboekgegevens wilt routeren, hebt u een van
 
 ## <a name="send-logs-to-azure-monitor"></a>Logboeken verzenden naar Azure Monitor
 
-1. Selecteer in [Azure Portal](https://portal.azure.com/) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer onder **Bewaking** de optie **Diagnostische instellingen**. De eerste keer dat u dit opent, schakelt u het in:
 
     ![Diagnostische instellingen inschakelen in Intune om logboeken te verzenden naar Azure Monitor](media/diagnostics-settings-turn-on.png)
@@ -101,7 +101,7 @@ U kunt de auditlogboeken ook naar andere delen van Intune exporteren, zoals insc
 
 U kunt bijvoorbeeld de auditlogboeken als volgt exporteren bij het gebruik van apparaatcompliantie:
 
-1. Selecteer in [Azure Portal](https://portal.azure.com/) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatcompliantie** > **Monitor** > **Auditlogboeken**:
 
     ![Auditlogboeken kiezen om Intune-gegevens naar Azure Monitor-opslag, Event Hubs of analytics door te sturen](media/audit-logs-under-monitor-in-compliance.png)

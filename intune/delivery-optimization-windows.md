@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4190d84fda46e4be3cdc4c4f7bfe4ac8a1852ebc
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042641"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373953"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Delivery Optimization-instellingen in Microsoft Intune
 
@@ -36,7 +36,7 @@ Raadpleeg [Delivery Optimization-updates](https://docs.microsoft.com/windows/dep
 > **Software-updates – Windows 10-updateringen** worden vervangen door de **Delivery optimization**-instellingen. Bestaande updateringen kunnen worden gewijzigd voor gebruik van de **Delivery Optimization**-instellingen. [Bestaande update-ringen verplaatsen naar Delivery Optimization](#move-existing-update-rings-to-delivery-optimization) (in dit artikel) 
 ## <a name="create-the-profile"></a>Het profiel maken
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 

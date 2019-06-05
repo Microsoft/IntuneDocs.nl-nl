@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf07f942feeab0a73c01625f90c04ec3b989c1c2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044839"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373420"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>iOS-software-updatebeleid in Intune configureren
 
@@ -31,7 +31,7 @@ Het apparaat wordt ongeveer om de 8 uur bij Intune ingecheckt. Als een update be
 
 ## <a name="configure-the-policy"></a>Het beleid configureren
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Software-updates** > **Beleidsregels voor iOS bijwerken** > **Maken**.
 3. Voer de volgende instellingen in:
 
@@ -51,7 +51,7 @@ Het apparaat wordt ongeveer om de 8 uur bij Intune ingecheckt. Als een update be
       - **Begintijd**: Kies de begintijd van het beperkte tijdsbestek. Voer bijvoorbeeld 5:00 uur in, zodat updates vanaf 5:00 uur niet worden geïnstalleerd.
       - **Eindtijd**: Kies de eindtijd van het beperkte tijdsbestek. Voer bijvoorbeeld 1:00 uur in, zodat updates vanaf 1:00 kunnen worden geïnstalleerd.
 
-    - **Zichtbaarheid van software-updates voor eindgebruikers vertragen zonder de geplande updates te wijzigen (dagen)**: 
+    - **Zichtbaarheid van software-updates voor eindgebruikers vertragen zonder de geplande updates te wijzigen (dagen)** : 
 
       **Deze instelling is verplaatst naar [Apparaatbeperkingen](device-restrictions-ios.md#general). Deze instelling wordt op deze locatie in de portal verwijderd.** Bestaande beleidsregels kunnen hier voor een korte periode worden gewijzigd. Na ongeveer een maand wordt deze instelling van de bestaande beleidsregels verwijderd.
 

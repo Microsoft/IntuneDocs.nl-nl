@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68fce40c194c831e65fb6631bf079f8703b039af
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6a80ff2ca7c2265da358f57291032f59d47d22dd
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047952"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412339"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>E-mailinstellingen toevoegen aan apparaten met Intune
 
@@ -38,7 +38,7 @@ In dit artikel wordt uitgelegd hoe u een e-mailprofiel maakt in Microsoft Intune
 
 ## <a name="create-a-device-profile"></a>Een apparaatprofiel maken
 
-1. Selecteer in de [Azure-portal](https://portal.azure.com) **Alle services** > filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 3. Geef een **Naam** en **Beschrijving** op voor het e-mailprofiel.
 4. Kies uw **Platform** uit de vervolgkeuzelijst. Uw opties zijn:

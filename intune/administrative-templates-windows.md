@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0965d08dc2981fbd35bcb5aa3c2652726a96ccd5
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9309b110d37795f840e10f22b71b06507aea4c62
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050101"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373728"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10-sjablonen gebruiken voor het configureren van instellingen voor groepsbeleid in Microsoft Intune
 
@@ -34,14 +34,14 @@ In dit artikel staan de stappen voor het maken van een sjabloon voor Windows 10-
 
 ## <a name="create-a-template"></a>Een sjabloon maken
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 3. Voer de volgende eigenschappen in:
 
     - **Naam**: Voer een naam voor het profiel in.
     - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
     - **Platform**: Kies **Windows 10 en hoger**.
-    - **Profieltype**: Selecteer **Beheersjablonen (preview)**.
+    - **Profieltype**: Selecteer **Beheersjablonen (preview)** .
 
 4. Selecteer **Maken**. Selecteer in het nieuwe venster de optie **Instellingen**. Alle instellingen worden vermeld. U kunt de pijlen Vorige/Volgende gebruiken om meer instellingen te bekijken:
 

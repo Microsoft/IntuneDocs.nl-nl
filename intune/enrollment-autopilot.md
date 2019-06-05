@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03d5d4b9cb69e2d95706357280e324c58656a866
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: d58a10e62e4ff65c0c1589fcf948a6704224bc51
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264139"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402752"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -47,7 +47,7 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
 
     ![Schermafbeelding van Windows Autopilot-apparaten](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Onder **Windows AutoPilot-apparaten toevoegen** bladert u naar het CSV-bestand met de apparaten die u wilt toevoegen. Het CSV-bestand moet de serienummers, optionele Windows-product-id's, hardwarehashes en optionele groepstags van de apparaten vermelden. Er mogen maximaal 500 rijen in de lijst staan. Gebruik de header- en regelindeling die hieronder wordt weergegeven: `Device Serial Number,Windows Product ID,Hardware Hash,GroupTag`
+2. Onder **Windows AutoPilot-apparaten toevoegen** bladert u naar het CSV-bestand met de apparaten die u wilt toevoegen. Het CSV-bestand moet de serienummers, optionele Windows-product-id's, hardwarehashes en optionele groepstags van de apparaten vermelden. Er mogen maximaal 500 rijen in de lijst staan. Gebruik de header- en regelindeling die hieronder wordt weergegeven: `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
     `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![Schermafbeelding van het toevoegen van Windows Autopilot-apparaten](media/enrollment-autopilot/autopilot-import-device2.png)
