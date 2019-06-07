@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45df3e3b217e25c9e61fd51d7f458f33c7c0481d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0d2e52ed64bfee2da8eafbc228abe61f109b3c27
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045523"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412439"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Een rapport maken van de OData-feed met Power BI
 
@@ -53,14 +53,13 @@ Installeer de nieuwste versie van Power BI Desktop. U kunt Power BI Desktop down
 > [!Note]  
 > U hebt machtigingen nodig om **Rapporten** te maken in Intune. Zie [Autorisatie](reports-api-url.md) voor meer informatie.
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
-3. Open het deelvenster **Intune-datawarehouse**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Open het deelvenster **Intune Data Warehouse** door de link Data Warehouse onder **Andere taken** te selecteren aan de rechterkant van de blade **Microsoft Intune - Overzicht**.
 4. Kopieer de aangepaste feed-URL. Bijvoorbeeld: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-5. Open Power BI Desktop.
-6. Kies **Gegevens ophalen** > **OData-feed**.
-7. Plak de aangepaste feed-URL in het vak voor de URL in het venster **OData-feed**.
-8. Selecteer **Eenvoudig**.
+1. Open Power BI Desktop.
+2. Kies **Gegevens ophalen** > **OData-feed**.
+3. Plak de aangepaste feed-URL in het vak voor de URL in het venster **OData-feed**.
+4. Selecteer **Eenvoudig**.
 
     ![OData-feed voor het Intune-datawarehouse van uw tenant](media/reports-create-01-odatafeed.png)
 

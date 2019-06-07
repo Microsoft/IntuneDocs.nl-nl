@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
+ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264174"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469584"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -45,6 +45,13 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [geplande
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-27-2019"></a>Week van 27 mei 2019 
+
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="reporting-for-potentially-harmful-apps-on-android-devices----4223162---"></a>Rapportage voor mogelijk schadelijke apps op Android-apparaten <!-- 4223162 -->
+Intune biedt nu aanvullende rapportagegegevens over mogelijk schadelijke apps op Android-apparaten. 
 
 ## <a name="week-of-may-20-2019"></a>Week van 20 mei 2019 
 
@@ -134,7 +141,7 @@ Als u de beschikbare instellingen wilt zien, gaat u naar [App Store, documenten 
 Van toepassing op: iOS
 
 ####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Microsoft Defender Advanced Threat Protection-basislijn (preview)  <!--  3754134 -->
-We hebben een preview van een basislijn voor beveiliging toegevoegd voor [Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md)-instellingen.  
+We hebben een preview van een basislijn voor beveiliging toegevoegd voor [Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md)-instellingen. Deze basislijn is beschikbaar als uw omgeving voldoet aan de vereisten voor het gebruik van [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites).
 
 ### <a name="device-enrollment"></a>Apparaatinschrijving
 
@@ -153,6 +160,14 @@ U hoeft geen spaties op te nemen in IMEI-nummers wanneer u zoekt met **Alle appa
 
 #### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>Verwijderen van apparaat in de Apple-portal wordt doorgevoerd in de Intune-portal <!--2489996 -->
 Als een apparaat wordt verwijderd uit de portal van het Device Enrollment Program van Apple of van Apple Business Manager, wordt het apparaat bij de volgende synchronisatie automatisch verwijderd uit Intune.
+
+### <a name="the-enrollment-status-page-now-tracks-win32-apps----2714451---"></a>Op de pagina Status van inschrijving worden nu Win32-apps bijgehouden <!-- 2714451 -->
+Dit is alleen van toepassing op apparaten met Windows 10 versie 1903 en hoger. Raadpleeg [Een pagina voor de status van de inschrijving instellen](windows-enrollment-status.md) voor meer informatie.
+
+### <a name="device-management"></a>Apparaatbeheer
+
+#### <a name="reset-and-wipe-devices-in-bulk-by-using-the-graph-api----3295288---"></a>Apparaten in bulk opnieuw instellen en wissen met behulp van de Graph API <!-- 3295288 -->
+U kunt nu in één bulkbewerking tot wel 100 apparaten opnieuw instellen en wissen met behulp van de Graph API.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Bewaken en problemen oplossen
@@ -227,7 +242,7 @@ U kunt uw Win32-apps toewijzen voor een installatie op bij Intune ingeschreven a
 In de overzichtspagina van het apparaat ziet u de primaire gebruiker, ook wel de UDA-gebruiker genoemd (UDA: User Device Affinity, gebruikersaffiniteit apparaat). Als u de primaire gebruiker van een apparaat wilt zien, kiest u **Intune** > **Apparaten** > **Alle apparaten** > Een apparaat kiezen. De primaire gebruiker wordt bovenaan de pagina **Overzicht** weergegeven.
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Aanvullende rapportage van beheerde Google Play-apps voor apparaten met Android Enterprise-werkprofiel <!-- 4105925  -->
-Voor beheerde Google Play-apps die op apparaten met Android Enterprise-werkprofiel zijn geïmplementeerd, kunt u het specifieke versienummer van de op een apparaat geïnstalleerde app weergeven. Dit geldt alleen voor vereiste apps. Dezelfde functionaliteit voor beschikbare apps wordt ingeschakeld in een toekomstige release. 
+Voor beheerde Google Play-apps die op apparaten met Android Enterprise-werkprofiel zijn geïmplementeerd, kunt u het specifieke versienummer van de op een apparaat geïnstalleerde app weergeven. Dit geldt alleen voor vereiste apps.  
 
 #### <a name="ios-third-party-keyboards----4111843-----"></a>iOS-toetsenborden van derden <!-- 4111843   -->
 De ondersteuning voor het Intune-app-beveiligingsbeleid (APP) voor de instelling **Toetsenborden van derden** voor iOS wordt beëindigd vanwege een iOS-platformwijziging. U zult deze instelling niet meer kunnen configureren op de Intune-beheerconsole en deze wordt niet meer afgedwongen op de client in de Intune App SDK.
@@ -277,7 +292,7 @@ Van toepassing op: Volledig beheerde Android Enterprise-apparaten
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Controleren of er zich een TPM-chipset in een nalevingsbeleid voor Windows 10-apparaten bevindt <!-- 3617671 -->
 
-Deze functie is vertraagd en moet worden opgenomen in een toekomstige release.
+Deze functie is vertraagd en wordt later uitgebracht.
 
 #### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices----3775833-----"></a>Bijgewerkte wijzigingen aan de gebruikersinterface voor de Microsoft Edge-browser op Windows 10 en hoger <!-- 3775833   -->
 Wanneer u een apparaatconfiguratieprofiel maakt, kunt u Microsoft Edge-functies op Windows 10 en hoger toestaan of beperken (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** als platform > **Apparaatbeperkingen** als profieltype >  **Microsoft Edge-browser**). In deze update worden de instellingen voor Microsoft Edge meer beschrijvend en gemakkelijker te begrijpen. 
@@ -320,7 +335,7 @@ We hebben het standaard time-outbericht bijgewerkt dat gebruikers zien wanneer d
 ### <a name="device-management"></a>Apparaatbeheer
 
 #### <a name="retire-noncompliant-devices-----1827291-----"></a>Niet-compatibele apparaten buiten gebruik stellen  <!-- 1827291   -->
-Deze functie is vertraagd en zal in een toekomstige release verschijnen.
+Deze functie is vertraagd en wordt in een toekomstige release geïntroduceerd.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Bewaken en problemen oplossen
@@ -878,7 +893,7 @@ Met de nieuwe ervaring kunt u uw probleem in uw eigen woorden beschrijven en inf
 ### <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Bereiktags voor apps <!-- 1081941 -->
-U kunt bereiktags maken om de toegang voor rollen en apps te beperken. U kunt een bereiktag toevoegen aan een app, zodat alleen personen met rollen die ook zijn toegewezen aan de bereiktag, toegang tot de app hebben. Momenteel kunnen er geen bereiktags worden toegewezen aan apps die vanuit de beheerde Google Play Store aan Intune zijn toegevoegd of aan apps die met behulp van het Apple Volume Purchase Program (VPP) zijn aangeschaft (dit zal in de toekomst wel worden ondersteund). Zie [Bereiktags gebruiken om beleidsregels te filteren](scope-tags.md) voor meer informatie.
+U kunt bereiktags maken om de toegang voor rollen en apps te beperken. U kunt een bereiktag toevoegen aan een app, zodat alleen personen met rollen die ook zijn toegewezen aan de bereiktag, toegang tot de app hebben. Momenteel kunnen er geen bereiktags worden toegewezen aan apps die vanuit de beheerde Google Play Store aan Intune zijn toegevoegd of aan apps die met behulp van het Apple Volume Purchase Program (VPP) zijn aangeschaft (er zijn wel plannen voor ondersteuning in de toekomst). Zie [Bereiktags gebruiken om beleidsregels te filteren](scope-tags.md) voor meer informatie.
 
 <!-- ########################## -->
 ## <a name="week-of-december-10-2018"></a>Week van 10 december 2018
@@ -908,7 +923,7 @@ Voor Intune is nu macOS versie 10.12 of hoger vereist. Apparaten met eerdere ver
 U kunt alle apps op onder supervisie staande iOS-apparaten in bedrijfseigendom verwijderen. U kunt alle apps verwijderen voor gebruikers- of apparaatgroepen met het toewijzingstype **Verwijderen**. Voor persoonlijke of niet onder supervisie staande iOS-apparaten kunt u nog steeds alleen de apps verwijderen die zijn geïnstalleerd met behulp van Intune.
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>Intune Win32-app-inhoud downloaden <!-- 2617320 -->
-Clients van Windows 10 RS3 en hoger downloaden Intune Win32-app-inhoud via een Delivery Optimization-onderdeel in de Windows 10-client. Delivery Optimization biedt peer-to-peer-functionaliteit die standaard is ingeschakeld. Delivery Optimization kan worden geconfigureerd via groepsbeleid en in de toekomst via Intune MDM. Raadpleeg [Delivery Optimization voor Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) voor meer informatie. 
+Clients van Windows 10 RS3 en hoger downloaden Intune Win32-app-inhoud via een Delivery Optimization-onderdeel in de Windows 10-client. Delivery Optimization biedt peer-to-peer-functionaliteit die standaard is ingeschakeld. Momenteel kan Delivery Optimization worden geconfigureerd via groepsbeleid. Raadpleeg [Delivery Optimization voor Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) voor meer informatie. 
 
 #### <a name="end-user-device-and-app-content-menu----2771453---"></a>Apparaat- en app-inhoudmenu voor eindgebruikers <!-- 2771453 -->
 Eindgebruikers kunnen nu het contextmenu van apparaten en apps gebruiken om veelvoorkomende acties te activeren, zoals de naam van een apparaat wijzigen of de nalevingsstatus controleren.

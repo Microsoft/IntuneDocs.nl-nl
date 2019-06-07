@@ -5,7 +5,7 @@ description: Beveiligingsbasislijninstellingen die door Intune worden ondersteun
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,16 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f96393e0d6071b1b56700e954714324b01ffcf25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: MTE75
+ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040729"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373501"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-basislijninstellingen voor Intune
 
 Bekijk de basislijninstellingen voor Microsoft Defender Advanced Threat Protection (voorheen Windows Defender Advanced Threat Protection) die worden ondersteund door Microsoft Intune. De standaardwaarden in dit artikel vertegenwoordigen de standaard basislijnconfiguratie voor Intune. Deze standaardwaarden vertegenwoordigen de aanbevolen configuratie voor Intune en komen mogelijk niet overeen met de standaardinstellingen voor Windows.
+
+  De basislijn Microsoft Defender Advanced Threat Protection is beschikbaar als uw omgeving voldoet aan de vereisten voor het gebruik van [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites).
+
+
+
 
 > [!NOTE]  
 > De WDATP-basislijninstellingen bevinden zich in de **previewfase**. Tijdens de previewfase komt de lijst met beschikbare instellingen en de volgorde waarin de instellingen in deze inhoud worden weergegeven, mogelijk niet overeen met de opties die in de portal beschikbaar zijn. 

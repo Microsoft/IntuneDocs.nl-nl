@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044603"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402663"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Beleidsregels en profielen voor het oplossen van problemen in Intune
 
@@ -32,13 +32,12 @@ In dit artikel staan een aantal oplossingstechnieken en er worden problemen besc
 
 ## <a name="use-built-in-troubleshooting"></a>Ingebouwde probleemoplossing gebruiken
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
-2. Selecteer **Problemen oplossen**:
+1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) selecteert u **Probleem oplossen**:
 
     ![Ga in Intune naar Help en Ondersteuning en selecteer Problemen oplossen](./media/help-and-support-troubleshoot.png)
 
-3. Kies **Gebruiker selecteren** > selecteer de gebruiker die het probleem ervaart > **Selecteren**.
-4. Controleer of er naast zowel **Intune-licentie** als **Accountstatus** een groen vinkje staat:
+2. Kies **Gebruiker selecteren** > selecteer de gebruiker die het probleem ervaart > **Selecteren**.
+3. Controleer of er naast zowel **Intune-licentie** als **Accountstatus** een groen vinkje staat:
 
     ![Selecteer in Intune de gebruiker en controleer of er naast Accountstatus en Intune-licentie een groen vinkje staat voor de status](./media/account-status-intune-license-show-green.png)
 
@@ -47,7 +46,7 @@ In dit artikel staan een aantal oplossingstechnieken en er worden problemen besc
     - [Licenties toewijzen zodat gebruikers apparaten kunnen registreren](licenses-assign.md)
     - [Gebruikers toevoegen aan Intune](users-add.md)
 
-5. Zoek onder **Apparaten** het apparaat waarop het probleem zich voordoet. Controleer de verschillende kolommen:
+4. Zoek onder **Apparaten** het apparaat waarop het probleem zich voordoet. Controleer de verschillende kolommen:
 
     - **Beheerd**: wanneer een apparaat nalevings- of configuratiebeleidsregels moet ontvangen, moet voor deze eigenschap **MDM** of **EAS/MDM** worden weergegeven.
 
@@ -98,7 +97,7 @@ In dit artikel staan een aantal oplossingstechnieken en er worden problemen besc
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>U weet niet zeker of een profiel op de juiste manier is toegepast
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) de optie **Alle services** > filter op **Intune** > selecteer **Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaten** > **Alle apparaten** > selecteer het apparaat > **Apparaatconfiguratie**. 
 
     Bij elk apparaat worden de bijbehorende profielen vermeld. Elk profiel heeft een **status**. De status is van toepassing wanneer alle toegewezen profielen, inclusief hardware- en besturingssysteembeperkingen en -vereisten, als geheel worden overwogen. Mogelijke statussen zijn:
@@ -164,4 +163,6 @@ Stel de lokale systeemtijd zo dicht mogelijk bij de internettijd in om dit probl
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Als u nog steeds hulp nodig hebt, kunt u [ondersteuning voor Microsoft Intune krijgen](get-support.md).
+[Veelvoorkomende problemen met en oplossingen voor e-mailprofielen](troubleshoot-email-profiles-in-microsoft-intune.md)
+
+Krijg [ondersteuning van Microsoft](get-support.md) of gebruik de [communityforums](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

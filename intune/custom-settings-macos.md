@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e30b90ff6f2189444f21b22fb5fd224ba3dc397
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fa043e667bf12db9e30bfc56522c92d530a88c75
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048636"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373623"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Aangepaste instellingen gebruiken voor macOS-apparaten in Microsoft Intune
 
@@ -51,7 +51,7 @@ In dit artikel wordt beschreven hoe u een aangepast profiel maakt voor macOS-app
 
 ## <a name="create-the-profile"></a>Het profiel maken
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 3. Voer de volgende instellingen in:
 

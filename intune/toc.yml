@@ -576,10 +576,12 @@
                   href: windows-store-for-business.md
                 - name: iOS eBooks
                   href: vpp-ebooks-ios.md
-            - name: De bedrijfsportal-app configureren
+            - name: De bedrijfsportal configureren
               href: company-portal-app.md
             - name: Managed Browser configureren
               href: app-configuration-managed-browser.md
+            - name: Microsoft Edge configureren
+              href: manage-microsoft-edge.md
             - name: Outlook configureren
               href: app-configuration-policies-outlook.md
         - name: Apps beveiligen

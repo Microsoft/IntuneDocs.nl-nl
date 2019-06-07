@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 05/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4edf6e1e2b0ed57ec221e445bc171895fb9e0072
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042674"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454035"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune Datawarehouse-verificatie enkel voor toepassing
 
@@ -92,10 +92,11 @@ Maak in Visual Studio een Console-app-project (.NET Framework) dat het .NET Fram
 2.  Selecteer aan de linkerkant **Visual C#** om alle .NET Framework-projecten weer te geven.
 3.  Selecteer **Console-app (.NET Framework)** , voeg een naam voor de app toe en klik vervolgens op **OK** om de app te maken.
 4.  Selecteer **Program.cs** in **Solution Explorer** om de code weer te geven.
-5.  Selecteer in het pop-upmenu **Toevoegen** > **Nieuw item**. Het dialoogvenster **Nieuw item toevoegen** wordt weergegeven.
-6.  Selecteer aan de linkerkant **Code** onder **Visual C#** .
-7.  Selecteer **Klasse**, wijzig de naam van de klasse in *IntuneDataWarehouseClass.cs* en klik op **Toevoegen**.
-8.  Voeg de volgende code in in de methode <code>Main</code>:
+5.  Voeg in Solution Explorer een verwijzing naar de assembly `System.Configuration` toe.
+6.  Selecteer in het pop-upmenu **Toevoegen** > **Nieuw item**. Het dialoogvenster **Nieuw item toevoegen** wordt weergegeven.
+7.  Selecteer aan de linkerkant **Code** onder **Visual C#** .
+8.  Selecteer **Klasse**, wijzig de naam van de klasse in *IntuneDataWarehouseClass.cs* en klik op **Toevoegen**.
+9.  Voeg de volgende code in in de methode <code>Main</code>:
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();
@@ -110,7 +111,7 @@ Maak in Visual Studio een Console-app-project (.NET Framework) dat het .NET Fram
                  new SecureClientSecret(applicationSecret))).Result;
     ``` 
 
-9. Voeg aanvullende naamruimtes toe door de volgende code bovenaan het codebestand in te voegen:
+10. Voeg aanvullende naamruimtes toe door de volgende code bovenaan het codebestand in te voegen:
 
     ``` csharp
      using System.Security;
@@ -118,7 +119,7 @@ Maak in Visual Studio een Console-app-project (.NET Framework) dat het .NET Fram
      using System.Configuration;
     ``` 
 
-10. Voeg na de methode <code>Main</code> de volgende persoonlijke methode toe om de app-sleutel te verwerken en te converteren:
+11. Voeg na de methode <code>Main</code> de volgende persoonlijke methode toe om de app-sleutel te verwerken en te converteren:
 
     ``` csharp
     private static SecureString ConvertToSecureStr(string appkey)
@@ -136,10 +137,10 @@ Maak in Visual Studio een Console-app-project (.NET Framework) dat het .NET Fram
     }
     ```
 
-11. Klik in **Solution Explorer** met de rechtermuisknop op **Referenties** en selecteer vervolgens **NuGet-pakketten beheren**.
-12. Zoek naar *Microsoft.IdentityModel.Clients.ActiveDirectory* en installeer het bijbehorende Microsoft NuGet-pakket.
-13. Selecteer en open in **Solution Explorer** het bestand *App.config*.
-14. Voeg de sectie <code>appSettings</code> toe, zodat de XML er als volgt uitziet:
+12. Klik in **Solution Explorer** met de rechtermuisknop op **Referenties** en selecteer vervolgens **NuGet-pakketten beheren**.
+13. Zoek naar *Microsoft.IdentityModel.Clients.ActiveDirectory* en installeer het bijbehorende Microsoft NuGet-pakket.
+14. Selecteer en open in **Solution Explorer** het bestand *App.config*.
+15. Voeg de sectie <code>appSettings</code> toe, zodat de XML er als volgt uitziet:
 
     ``` xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -155,8 +156,8 @@ Maak in Visual Studio een Console-app-project (.NET Framework) dat het .NET Fram
     </configuration>
     ``` 
 
-15. Werk de waarden <code>appId</code>, <code>appKey</code> en <code>tenantDomain</code> bij, zodat deze overeenkomen met uw unieke app-gerelateerde waarden.
-16. Bouw uw app.
+16. Werk de waarden <code>appId</code>, <code>appKey</code> en <code>tenantDomain</code> bij, zodat deze overeenkomen met uw unieke app-gerelateerde waarden.
+17. Bouw uw app.
 
     >[!NOTE] 
     > Bekijk het [Intune Datawarehouse-codevoorbeeld](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ) voor aanvullende implementatiecode.

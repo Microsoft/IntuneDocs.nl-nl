@@ -1,11 +1,11 @@
 ---
-title: Problemen met Endpoint Protection oplossen in Microsoft Intune | Microsoft Docs
-description: Problemmen oplossen tijdens het gebruik van Microsoft Intune Endpoint Protection.
+title: Veelvoorkomende Endpoint Protection-berichten in Microsoft Intune - Azure | Microsoft Docs
+description: Bekijk veelvoorkomende berichten en mogelijke oplossingen bij het gebruik van en het oplossen van problemen met Endpoint Protection en Windows Defender in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,36 +17,70 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec655a53018c2e45d1cb771c1ce9c0aad376b2b1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040154"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402649"
 ---
-# <a name="troubleshoot-endpoint-protection-in-intune"></a>Problemen met Endpoint Protection oplossen in Intune
+# <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemen met Endpoint Protection en mogelijke oplossingen in Microsoft Intune
 
-Gebruik deze informatie om problemen op te lossen tijdens het gebruik van Endpoint Protection. U kunt ook [gebeurtenislogboeken en foutcodes bekijken om problemen met Windows Defender AV op te lossen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
+In dit artikel worden mogelijke oorzaken en oplossingen voor sommige fouten en waarschuwingen vermeld en beschreven. Gebruik deze informatie om problemen op te lossen tijdens het gebruik van Endpoint Protection.
 
-Als deze informatie geen oplossing biedt, kunt u ook [ondersteuning voor Microsoft Intune krijgen](get-support.md).
+## <a name="windows-defender-error-codes"></a>Windows Defender-foutcodes
 
-### <a name="error-messages"></a>Foutberichten
-Deze sectie beschrijft mogelijke oorzaken en oplossingen voor de volgende fouten en waarschuwingen.
+Gebeurtenislogboeken en foutcodes bekijken om [problemen met Windows Defender AV op te lossen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
 
-|Statusitem|Mogelijke oorzaken|Mogelijke oplossingen|
-|---------------|--------------------|-----------------------|
-|**Endpoint Protection-engine niet beschikbaar**|De Intune Endpoint Protection-engine is beschadigd of verwijderd.|Als de Intune Endpoint Protection-engine is beschadigd, kunt u proberen om de software bij te werken of deze opnieuw te installeren.<br /><br />Als u een onmiddellijke update wilt afdwingen, kiest u in de Endpoint Protection-clientsoftware **Bijwerken** (in de taakbalk op beheerde computers).<br /><br />Als de engine niet kan worden bijgewerkt, moet u de Engine Protection-engine opnieuw installeren.<br /><br />Zoek in de lijst met geïnstalleerde programma's in het Configuratiescherm op de beheerde computer **Microsoft Intune Endpoint Protection-agent** en verwijder de toepassing.<br /><br />Tijdens de volgende updatesynchronisatie detecteert de Microsoft Online Management-updatebeheerder het ontbrekende programma en installeert het opnieuw op het geplande installatietijdstip.|
-|**Endpoint Protection uitgeschakeld**|Intune Endpoint Protection is uitgeschakeld door een beheerder (op basis van een configuratieprofiel) of door de gebruiker van een beheerde computer.|Endpoint Protection inschakelen. Zie [Instellingen voor Endpoint Protection toevoegen](endpoint-protection-configure.md) in Intune, of [ Windows Defender inschakelen om toegang tot bedrijfsresources te krijgen](/intune-user-help/turn-on-defender-windows).|
-|**Real-timebeveiliging is uitgeschakeld**|Realtime-beveiliging is uitgeschakeld door een beheerder (op basis van een profiel) of door de gebruiker van een beheerde computer.|Endpoint Protection inschakelen. Zie [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune, of [realtime-beveiliging inschakelen om toegang tot bedrijfsresources te krijgen](/intune-user-help/turn-on-defender-windows). |
-|**Scannen van downloads is uitgeschakeld**|Scannen van downloads is uitgeschakeld door een beheerder (op basis van een profiel) of door een gebruiker op een beheerde computer.|Scannen inschakelen. Zie [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune, of [realtime-beveiliging inschakelen om toegang tot bedrijfsresources te krijgen](/intune-user-help/turn-on-defender-windows). |
-|**Controle van bestands- en programma-activiteit is uitgeschakeld**|Controle van bestands- en programma-activiteit is uitgeschakeld door een beheerder (op basis van een profiel) of door een gebruiker op een beheerde computer.|Bestands en programma-activiteit inschakelen. Zie [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune, of [realtime-beveiliging inschakelen om toegang tot bedrijfsresources te krijgen](/intune-user-help/turn-on-defender-windows). |
-|**Gedragscontrole is uitgeschakeld**|Gedragscontrole is uitgeschakeld door een beheerder (op basis van een profiel) of door de gebruiker van een beheerde computer.|Gedragscontrole inschakelen. Zie [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune, of [realtime-beveiliging inschakelen om toegang tot bedrijfsresources te krijgen](/intune-user-help/turn-on-defender-windows). |
-|**Scannen van scripts is uitgeschakeld**|Het scannen van scripts is uitgeschakeld door een beheerder (op basis van een profiel) of door de gebruiker van een beheerde computer.|Scannen van scripts inschakelen. Zie [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune, of [realtime-beveiliging inschakelen om toegang tot bedrijfsresources te krijgen](/intune-user-help/turn-on-defender-windows). |
-|**Netwerkinspectiesysteem uitgeschakeld**|Het netwerkinspectiesysteem is uitgeschakeld door een beheerder (op basis van een profiel) of door een gebruiker op een beheerde computer.|Netwerkinspectiesysteem (NIS) inschakelen. Zie [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune, of [realtime-beveiliging inschakelen om toegang tot bedrijfsresources te krijgen](/intune-user-help/turn-on-defender-windows). |
-|**Definities van schadelijke software zijn verouderd**|De computer is mogelijk langere tijd losgekoppeld geweest van internet en de definities van schadelijke software zijn mogelijk nog niet bijgewerkt. Deze status wordt weergegeven als de malware-definities op de computer langer dan 14 dagen niet zijn bijgewerkt.|Als de malware-definities verouderd zijn, kunt u de definities bijwerken met [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).|
-|**Achterstallige volledige scan**|Het is 14 dagen geleden dat een volledige scan is voltooid. Dit kan zijn omdat een computer opnieuw is opgestart tijdens een volledige scan.|Als een volledige scan achterstallig is, kunt u een eenmalige volledige scan uitvoeren of terugkerende volledige scans plannen. Zie [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus). |
-|**Achterstallige snelle scan**|Het is 14 dagen geleden dat een snelle scan is voltooid. Dit kan zijn veroorzaakt door een herstart tijdens een snelle scan.|Als een snelle scan achterstallig is, kunt u een eenmalige volledige scan uitvoeren of terugkerende snelle scans plannen. Zie [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).|
-|**Er wordt een andere Endpoint Protection-toepassing uitgevoerd**|Er wordt een andere eindpuntbeveiligingstoepassing uitgevoerd en de computer is in orde.|Als er een andere Endpoint Protection-toepassing is geïnstalleerd en Intune de betreffende toepassing detecteert, kan het apparaat instabiel worden.|
+## <a name="common-intune-errors-and-possible-resolutions"></a>Veelvoorkomende fouten in Intune en mogelijke oplossingen
 
-### <a name="next-steps"></a>Volgende stappen
-Als deze informatie geen oplossing biedt, kunt u ook [ondersteuning voor Microsoft Intune krijgen](get-support.md).
+#### <a name="endpoint-protection-engine-unavailable"></a>Endpoint Protection-engine niet beschikbaar
+
+**Mogelijke oorzaak**: de Intune Endpoint Protection-engine is beschadigd of verwijderd.
+
+**Mogelijke oplossingen**:
+
+- Als Endpoint Protection beschadigd is of niet kan worden bijgewerkt, dient u het programma bij te werken of opnieuw te installeren.
+- Dwing een onmiddellijke update af. Kies in het Endpoint Protection-clientprogramma (mogelijk in de taakbalk) **Bijwerken**.
+- In Configuratiescherm > Programma's selecteert u **Microsoft Intune Endpoint Protection-agent**. Verwijder de toepassing.
+- Tijdens de volgende updatesynchronisatie detecteert de Microsoft Online Management-updatebeheerder het ontbrekende programma en installeert het opnieuw op het geplande installatietijdstip.
+
+#### <a name="features-are-disabled"></a>De functies zijn uitgeschakeld
+
+U krijgt mogelijk een bericht te zien waarin staat dat sommige functies zijn uitgeschakeld. Deze berichten kunnen verschijnen als Intune Endpoint Protection of Windows Defender is uitgeschakeld door een beheerder die een configuratieprofiel gebruikt. Of het programma is uitgeschakeld door een eindgebruiker op het apparaat. Mogelijke berichten:
+
+`Endpoint Protection disabled`  
+`Real-time protection disabled`  
+`Download scanning disabled`  
+`File and program activity monitoring disabled`  
+`Behavior monitoring disabled`  
+`Script scanning disabled`  
+`Network Inspection System disabled`  
+
+**Mogelijke oplossingen**: schakel deze functies in. Zie voor meer informatie:
+
+- [Instellingen voor Endpoint Protection toevoegen](endpoint-protection-configure.md)
+- [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Eindgebruikers: realtime-beveiliging voor toegang tot bedrijfsresources inschakelen](/intune-user-help/turn-on-defender-windows)
+
+#### <a name="malware-definitions-out-of-date"></a>De malware-definities zijn verouderd
+
+Deze status wordt weergegeven als de malwaredefinities op het apparaat langer dan 14 dagen niet zijn bijgewerkt. Het bericht kan bijvoorbeeld aangeven dat het apparaat niet met internet is verbonden of dat de malwaredefinities verouderd zijn.
+
+**Mogelijke oplossingen**: als de malwaredefinities verouderd zijn, werkt u de definities bij met [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
+
+#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Volledige of snelle scan is achterstallig
+
+Er is al 14 dagen geen volledige of snelle scan uitgevoerd. Dit scenario kan plaatsvinden als het apparaat tijdens een volledige scan opnieuw wordt opgestart.
+
+**Mogelijke oplossingen**: als een scan achterstallig is, kunt u een eenmalige scan uitvoeren of terugkerende scans plannen. Zie [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
+
+#### <a name="another-endpoint-protection-application-running"></a>Er wordt een andere eindpuntbeveiligingstoepassing uitgevoerd
+
+Er wordt een andere eindpuntbeveiligingstoepassing uitgevoerd en het apparaat is in orde.
+
+**Mogelijke oplossingen**: als er een andere Endpoint Protection-toepassing is geïnstalleerd en Intune de betreffende toepassing detecteert, kan het apparaat instabiel worden.
+
+## <a name="next-steps"></a>Volgende stappen
+
+Krijg [ondersteuning van Microsoft](get-support.md) of gebruik de [communityforums](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

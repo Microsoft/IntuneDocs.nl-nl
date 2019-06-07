@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9f421a54319878c4f985ecc08252d4e03a00919
-ms.sourcegitcommit: 95572ed540e90471963833c0bbf71478477b1813
+ms.openlocfilehash: 79edbf77f4f6b188d9fa4bf75ce8cacbad9dcf9c
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66269998"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402774"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Instellingen voor beveiligingsbeleid voor apps voor Android in Microsoft Intune
 In dit artikel worden de app-beveiligingsbeleidsinstellingen voor Android-apparaten beschreven. De beleidsinstellingen die worden beschreven, kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid op de blade **Instellingen** in Azure Portal.
@@ -36,7 +36,7 @@ Er zijn drie soorten beleidsinstellingen: gegevensbeschermingsinstellingen, toeg
 | Instelling | Gebruik | Standaardwaarde |
 |------|------|------|
 | **Back-up van organisatiegegevens maken naar de Android-back-upservices** | Selecteer **Blokkeren** om te voorkomen dat deze app back-ups maakt van gegevens voor werk of school in de [Android-back-upservice](https://developer.android.com/google/backup/index.html).<br><br> Selecteer **Toestaan** om toe te staan dat deze app back-ups maakt van gegevens voor werk of school.| **Toestaan** |
-| **Organisatiegegevens naar andere apps verzenden** | Geef aan welke apps gegevens uit deze app kunnen ontvangen: <ul><li> **Door beleid beheerde apps**: overdracht alleen toestaan naar andere door beleid beheerde apps.</li> <li>**Alle apps**: overdracht naar alle apps toestaan. </li> <li>**Geen**: geen gegevensoverdracht naar apps toestaan, met inbegrip van andere door beleid beheerde apps.</li></ul> <p>Er zijn enkele uitzonderings-apps en -services waarnaar Intune standaard gegevens mag overbrengen. U kunt bovendien uw eigen uitzonderingen maken als u wilt toestaan dat gegevens worden overgedragen naar een app die geen ondersteuning biedt voor Intune-apps. Zie [Uitzonderingen voor gegevensoverdracht](app-protection-policy-settings-android.md#data-transfer-exemptions) voor meer informatie.<p>Dit beleid kan ook van toepassing zijn op koppelingen naar Android-apps.  Algemene webkoppelingen worden beheerd door de beleidsinstelling **App-koppelingen openen in Intune Managed Browser**.<p>**Opmerking:** *Intune biedt momenteel geen ondersteuning voor de functie Android Instant Apps. Via Intune worden gegevensverbindingen naar of van de app geblokkeerd. Zie [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) in de documentatie voor Android-ontwikkelaars voor meer informatie.*</p>| **Alle apps** | 
+| **Organisatiegegevens naar andere apps verzenden** | Geef aan welke apps gegevens uit deze app kunnen ontvangen: <ul><li> **Door beleid beheerde apps**: overdracht alleen toestaan naar andere door beleid beheerde apps.</li> <li>**Alle apps**: overdracht naar alle apps toestaan. </li> <li>**Geen**: geen gegevensoverdracht naar apps toestaan, met inbegrip van andere door beleid beheerde apps.</li></ul> <p>Er zijn enkele uitzonderings-apps en -services waarnaar Intune standaard gegevens mag overbrengen. U kunt bovendien uw eigen uitzonderingen maken als u wilt toestaan dat gegevens worden overgedragen naar een app die geen ondersteuning biedt voor Intune-apps. Zie [Uitzonderingen voor gegevensoverdracht](app-protection-policy-settings-android.md#data-transfer-exemptions) voor meer informatie.<p>Dit beleid kan ook van toepassing zijn op koppelingen naar Android-apps.  Algemene webkoppelingen worden beheerd door de beleidsinstelling **App-koppelingen openen in Intune Managed Browser**.<p><div class="NOTE"><p>Opmerking</p><p>Intune biedt momenteel geen ondersteuning voor de functie Android Instant Apps. Via Intune worden gegevensverbindingen naar of van de app geblokkeerd. Zie [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) in de documentatie voor Android-ontwikkelaars voor meer informatie.</p><p>Als **Organisatiegegevens naar andere apps verzenden** is ingesteld op **Alle apps**, worden er via het besturingssysteem mogelijk nog steeds tekstgegevens overgedragen naar het klembord.</p></div> | **Alle apps** | 
 |<ul><ui> **Apps selecteren die moeten worden uitgesloten** | Deze optie is beschikbaar wanneer u bij de vorige optie *Door beleid beheerde apps* selecteert. | |
 | **Gegevens ontvangen van andere apps** | Geef aan welke apps gegevens naar deze app kunnen overdragen: <ul><li>**Door beleid beheerde apps**: overdracht alleen toestaan vanuit andere door beleid beheerde apps.</li><li>**Alle apps**: gegevensoverdracht vanuit alle apps toestaan.</li><li>**Geen**: geen gegevensoverdracht vanuit apps toestaan, met inbegrip van andere door beleid beheerde apps. </li></ul> <p>Er zijn enkele uitzonderingsapps en -services van waaruit Intune gegevensoverdracht mag toestaan. Zie [Uitzonderingen voor gegevensoverdracht](app-protection-policy-settings-android.md#data-transfer-exemptions) voor een volledige lijst met apps en services. | **Alle apps** |
 | **Kopieën van de organisatiegegevens opslaan** | Kies **Blokkeren** als u het gebruik van de optie Opslaan als wilt uitschakelen in deze app. Kies **Toestaan** als u het gebruik van de optie Opslaan als wilt toestaan. **Opmerking:** *Deze instelling wordt ondersteund voor Microsoft Excel, OneNote, PowerPoint en Word. Het wordt mogelijk ook ondersteund door externe apps en LOB-apps.*| **Toestaan** |  

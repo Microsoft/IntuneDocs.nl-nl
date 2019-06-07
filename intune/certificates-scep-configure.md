@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04c4cb95d9eacd8967ecacedfe1a5d335b729005
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ee0f7ce806b1ed2a17b59add467b1b0af2a40578
+ms.sourcegitcommit: 023b1293b47314b77eb80997bbd8aa679db90880
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043734"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448107"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -34,7 +34,7 @@ In dit artikel leest u hoe u uw infrastructuur kunt configureren en vervolgens S
     Als de certificeringsinstantie werkt met Windows Server 2008 R2, moet u [de hotfix uit KB2483564 installeren](http://support.microsoft.com/kb/2483564/).
 
 - **NDES-server**: Op een apparaat met Windows Server 2012 R2 of hoger moet u de serverrol Registratieservice voor netwerkapparaten (NDES) instellen. Intune biedt geen ondersteuning voor het gebruik van NDES op een server waarop ook de CA voor ondernemingen wordt uitgevoerd. Zie [Richtlijnen voor Registratieservice voor netwerkapparaten](http://technet.microsoft.com/library/hh831498.aspx) voor instructies over hoe u Windows Server 2012 R2 configureert om als host voor NDES te dienen.
-De NDES-server moet met een domein in hetzelfde forest als de Enterprise-CA worden gekoppeld. Meer informatie over het implementeren van de NDES-server in een afzonderlijke forest, een geïsoleerd netwerk of een intern domein vindt u in [Een beleidsmodule gebruiken met de registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/dn473016.aspx).
+De NDES-server moet met een domein in hetzelfde forest als de Enterprise-CA worden gekoppeld. Meer informatie over het implementeren van de NDES-server in een afzonderlijke forest, een geïsoleerd netwerk of een intern domein vindt u in [Een beleidsmodule gebruiken met de registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/dn473016.aspx). Het is niet mogelijk om een NDES-server te gebruiken die al met een andere MDM wordt gebruikt.
 
 - **Microsoft Intune Certificate Connector**: In de Intune-portal gaat u naar **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen** en volgt u de *stappen om de connector te installeren voor SCEP*. Gebruik de downloadkoppeling om het downloaden van het installatieprogramma voor de certificaatconnector **NDESConnectorSetup.exe** te starten.  Voer dit installatieprogramma uit op de server met de NDES-rol.  
 
@@ -272,8 +272,8 @@ Bij deze stap doet u het volgende:
 
 2. Selecteer **Functie-instellingen bewerken** en stel de waarden in:
 
-    - **querytekenreeks (bytes)** = **65534**
-    - **Maximale URL-lengte (bytes)** = **65534**
+    - **querytekenreeks (bytes)**  = **65534**
+    - **Maximale URL-lengte (bytes)**  = **65534**
 
 3. Controleer de volgende registersleutel:
 
@@ -297,7 +297,7 @@ Bij deze stap doet u het volgende:
 > [!IMPORTANT] 
 > De Microsoft Intune-certificaatconnector **moet** worden geïnstalleerd op een afzonderlijke Windows-server. Deze kan niet worden geïnstalleerd op de verlenende certificeringsinstantie (CA). De connector **moet** ook worden geïnstalleerd op dezelfde server die de rol van Network Device Enrollment Service (NDES) vervult.
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen**.
 3. Download de connector voor het SCEP-bestand en sla deze op. Sla het bestand op op een locatie die toegankelijk is vanaf de server waar u de connector gaat installeren.
 
@@ -350,7 +350,7 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 
 ## <a name="create-a-scep-certificate-profile"></a>Een SCEP-certificaatprofiel maken
 
-1. Selecteer in [Azure Portal](https://portal.azure.com) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 3. Voer een **naam** en een **beschrijving** in voor het SCEP-certificaatprofiel.
 4. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform voor dit SCEP-certificaat. Op dit moment kunt u een van de volgende platforms selecteren voor apparaatbeperkingsinstellingen:
@@ -384,17 +384,17 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
         - **Algemene naam als e-mailadres**
         - **IMEI (International Mobile Equipment Identity)**
         - **Serienummer**
-        - **Aangepast**: Wanneer u deze optie selecteert, wordt het tekstvak **Aangepast** ook weergegeven. Met dit veld kunt u een onderwerpnaam invoeren in een aangepaste indeling, inclusief variabelen. Aangepaste indeling ondersteunt twee variabelen: **Algemene naam (CN)** en **E-mail (E)**. **Algemene naam (CN)** kan worden ingesteld op een van de volgende variabelen:
+        - **Aangepast**: Wanneer u deze optie selecteert, wordt het tekstvak **Aangepast** ook weergegeven. Met dit veld kunt u een onderwerpnaam invoeren in een aangepaste indeling, inclusief variabelen. Aangepaste indeling ondersteunt twee variabelen: **Algemene naam (CN)** en **E-mail (E)** . **Algemene naam (CN)** kan worden ingesteld op een van de volgende variabelen:
 
-            - **CN={{UserName}}**: De principal-naam van de gebruiker, bijvoorbeeld janedoe@contoso.com
-            - **CN={{AAD_Device_ID}}**: Een id die wordt toegewezen wanneer u een apparaat in Azure Active Directory (AD) registreert. Deze id wordt doorgaans gebruikt voor verificatie met Azure AD.
-            - **CN={{SERIALNUMBER}}**: Het unieke serienummer dat doorgaans wordt gebruikt door de fabrikant om een apparaat te identificeren
-            - **CN={{IMEINumber}}**: Het unieke nummer van de International Mobile Equipment Identity (IMEI) dat wordt gebruikt om een mobiele telefoon te identificeren
-            - **CN={{OnPrem_Distinguished_Name}}**: Een reeks relatieve namen die door komma's worden gescheiden, bijvoorbeeld `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+            - **CN={{UserName}}** : De principal-naam van de gebruiker, bijvoorbeeld janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}** : Een id die wordt toegewezen wanneer u een apparaat in Azure Active Directory (AD) registreert. Deze id wordt doorgaans gebruikt voor verificatie met Azure AD.
+            - **CN={{SERIALNUMBER}}** : Het unieke serienummer dat doorgaans wordt gebruikt door de fabrikant om een apparaat te identificeren
+            - **CN={{IMEINumber}}** : Het unieke nummer van de International Mobile Equipment Identity (IMEI) dat wordt gebruikt om een mobiele telefoon te identificeren
+            - **CN={{OnPrem_Distinguished_Name}}** : Een reeks relatieve namen die door komma's worden gescheiden, bijvoorbeeld `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
                 Als u de variabele `{{OnPrem_Distinguished_Name}}` wilt gebruiken, moet u het gebruikerskenmerk `onpremisesdistingishedname` met behulp van [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw exemplaar van Azure AD.
 
-            - **CN={{onPremisesSamAccountName}}**: Beheerders kunnen het kenmerk samAccountName van Active Directory synchroniseren naar Azure AD via Azure AD Connect in een kenmerk met de naam `onPremisesSamAccountName`. Deze variabele kan in Intune worden vervangen als onderdeel van een aanvraag voor certificaatuitgifte in het onderwerp van een SCEP-certificaat.  Het kenmerk samAccountName is de aanmeldingsnaam van de gebruiker die wordt gebruikt ter ondersteuning van clients en servers uit een vorige versie van Windows (pre-Windows 2000). De indeling van de gebruikersaanmeldingsnaam is: `DomainName\testUser` of alleen `testUser`.
+            - **CN={{onPremisesSamAccountName}}** : Beheerders kunnen het kenmerk samAccountName van Active Directory synchroniseren naar Azure AD via Azure AD Connect in een kenmerk met de naam `onPremisesSamAccountName`. Deze variabele kan in Intune worden vervangen als onderdeel van een aanvraag voor certificaatuitgifte in het onderwerp van een SCEP-certificaat.  Het kenmerk samAccountName is de aanmeldingsnaam van de gebruiker die wordt gebruikt ter ondersteuning van clients en servers uit een vorige versie van Windows (pre-Windows 2000). De indeling van de gebruikersaanmeldingsnaam is: `DomainName\testUser` of alleen `testUser`.
 
                 Als u de variabele `{{onPremisesSamAccountName}}` wilt gebruiken, moet u het gebruikerskenmerk `onPremisesSamAccountName` met behulp van [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw exemplaar van Azure AD.
 
@@ -426,7 +426,7 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
 
         > [!IMPORTANT]
         >  - In de statische tekst van het onderwerp leiden accolades **{ }** die geen variabele insluiten, tot een fout. 
-        >  - Wanneer u een variabele voor een apparaatcertificaat gebruikt, plaatst u de variabele tussen accolades **{ }**.
+        >  - Wanneer u een variabele voor een apparaatcertificaat gebruikt, plaatst u de variabele tussen accolades **{ }** .
         >  - `{{FullyQualifiedDomainName}}` kan alleen worden gebruikt voor Windows-apparaten en apparaten die aan een domein zijn toegevoegd. 
         >  -  Houd er rekening mee dat wanneer u in het onderwerp of de alternatieve naam voor het onderwerp voor een apparaatcertificaat apparaateigenschappen gebruikt, zoals het IMEI-nummer, het serienummer en de Fully Qualified Domain Name, deze eigenschappen kunnen worden vervalst door een persoon met toegang tot het apparaat.
         >  - Het profiel wordt niet geïnstalleerd op het apparaat als de opgegeven apparaatvariabelen niet worden ondersteund. Als bijvoorbeeld {{IMEI}} wordt gebruikt in de onderwerpnaam van een SCEP-profiel dat wordt toegewezen aan een apparaat dat geen IMEI-nummer heeft, mislukt de profielinstallatie. 
@@ -468,8 +468,8 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
         Deze variabelen kunnen met statische tekst worden toegevoegd in het tekstvak voor aangepaste waarden. Het DNS-kenmerk kan bijvoorbeeld worden toegevoegd als `DNS name = {{AzureADDeviceId}}.domain.com`.
 
         > [!IMPORTANT]
-        >  - Accolades **{ }**, pijp-symbolen **|** en puntkomma's **;** kunnen niet worden gebruikt in de statische tekst van de alternatieve naam voor het onderwerp. 
-        >  - Wanneer u een variabele voor een apparaatcertificaat gebruikt, plaatst u de variabele tussen accolades **{ }**.
+        >  - Accolades **{ }** , pijp-symbolen **|** en puntkomma's **;** kunnen niet worden gebruikt in de statische tekst van de alternatieve naam voor het onderwerp. 
+        >  - Wanneer u een variabele voor een apparaatcertificaat gebruikt, plaatst u de variabele tussen accolades **{ }** .
         >  - `{{FullyQualifiedDomainName}}` kan alleen worden gebruikt voor Windows-apparaten en apparaten die aan een domein zijn toegevoegd. 
         >  -  Houd er rekening mee dat wanneer u in het onderwerp of de alternatieve naam voor het onderwerp voor een apparaatcertificaat apparaateigenschappen gebruikt, zoals het IMEI-nummer, het serienummer en de Fully Qualified Domain Name, deze eigenschappen kunnen worden vervalst door een persoon met toegang tot het apparaat.
         >  - Het profiel wordt niet geïnstalleerd op het apparaat als de opgegeven apparaatvariabelen niet worden ondersteund. Als bijvoorbeeld {{IMEI}} wordt gebruikt in de alternatieve onderwerpnaam van een SCEP-profiel dat wordt toegewezen aan een apparaat dat geen IMEI-nummer heeft, mislukt de profielinstallatie.  
@@ -484,12 +484,12 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
    - **Sleutelgebruik**: Voer opties voor sleutelgebruik voor het certificaat in. Uw opties zijn:
      - **Sleutelcodering**: Sta sleuteluitwisseling alleen toe als de sleutel is gecodeerd
      - **Digitale handtekening**: Sta sleuteluitwisseling alleen toe als een digitale handtekening de sleutel helpt beveiligen
-   - **Sleutelgrootte (bits)**: Selecteer het aantal bits in de sleutel
+   - **Sleutelgrootte (bits)** : Selecteer het aantal bits in de sleutel
    - **Hash-algoritme** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Selecteer een van de beschikbare typen hash-algoritme om met dit certificaat te gebruiken. Selecteer het sterkste beveiligingsniveau dat door de verbindende apparaten wordt ondersteund.
    - **Basiscertificaat**: Kies een basis-CA-certificaatprofiel dat u eerder hebt geconfigureerd en aan de gebruiker en/of het apparaat hebt toegewezen. Dit CA-certificaat moet het basiscertificaat zijn voor de CA die het certificaat verleent dat u in dit certificaatprofiel gaat configureren. Zorg ervoor dat u dit profiel voor vertrouwde basiscertificaten toewijst aan dezelfde groep die is toegewezen in het SCEP-certificaatprofiel.
    - **Uitgebreide-sleutelgebruik**: **Voeg waarden toe** voor het beoogde gebruik van het certificaat. In de meeste gevallen vereist het certificaat **Clientverificatie** zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. U kunt echter zo nodig andere sleutelgebruiken toevoegen.
    - **Registratie-instellingen**
-     - **Drempelwaarde voor verlenging (%)**: Geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
+     - **Drempelwaarde voor verlenging (%)** : Geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
      - **URL's van SCEP-server**: Voer een of meer URL's in voor de NDES-servers die certificaten via SCEP verlenen. Voer bijvoorbeeld iets in als `https://ndes.contoso.com/certsrv/mscep/mscep.dll`.
      - Selecteer **OK** en **maak** uw profiel.
 

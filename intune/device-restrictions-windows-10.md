@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18f8e072037d0ca9065201e0d0db2a9a2f6074ce
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
-ms.translationtype: HT
+ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
+ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174192"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66354226"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -58,6 +58,24 @@ Deze instellingen gebruiken de [beleid-CSP ApplicationManagement](https://docs.m
 - **Apps installeren op systeemstation**: Met **Blokkeren** kunnen apps geen gegevens opslaan op het systeemstation van het apparaat. Met **Niet geconfigureerd** (standaard) kunnen apps gegevens op het systeemstation installeren.
 - **Game DVR** (alleen desktop): Met **Blokkeren** wordt het opnemen en uitzenden van Windows Game uitgeschakeld. Met **Niet geconfigureerd** (standaard) is het opnemen en uitzenden van games toegestaan.
 - **Alleen voor apps uit de Store**: Met **Vereisen** kunnen eindgebruikers alleen apps uit de Windows App Store installeren. Met **Niet geconfigureerd** kunnen eindgebruikers ook apps installeren vanuit andere locaties dan de Windows App Store.
+- **Herstart van apps forceren tijdens updatefout**: wanneer een app wordt gebruikt, kan deze mogelijk niet worden bijgewerkt. Gebruik deze instelling om een app te forceren opnieuw op te starten. **Niet geconfigureerd** (standaard) dwingt de apps niet om opnieuw op te starten. **Vereisen** stelt beheerders in staat om een herstart te forceren op een specifieke datum en tijd of volgens een terugkerend schema. Bij de instelling **Vereisen** dient u tevens de volgende gegevens in te voeren:
+
+  - **Startdatum/-tijd**: kies een specifieke datum en tijd op waarop de apps opnieuw worden opgestart.
+  - **Herhaling**: kies een dagelijkse, wekelijkse of maandelijkse herstart.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+
+- **Gebruikersbesturingselement over installaties**: bij de instelling **Niet geconfigureerd** (standaard) voorkomt Windows Installer dat gebruikers de installatieopties wijzigen die normaal gesproken zijn gereserveerd voor systeembeheerders, zoals het invoeren van de map voor de installatie van de bestanden. **Blokkeren** stelt gebruikers in staat om deze installatieopties te wijzigen. Tevens worden enkele van de beveiligingsfuncties van Windows Installer omzeild.
+
+  [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
+
+- **Apps met verhoogde bevoegdheden installeren**: bij de instelling **Niet geconfigureerd** (standaard) past het systeem de machtigingen van de huidige gebruiker toe wanneer het programma's installeert die een systeembeheerder niet implementeert of aanbiedt. **Blokkeren** geeft Windows Installer de opdracht om verhoogde bevoegdheden te gebruiken wanneer een programma op een systeem wordt geïnstalleerd. Deze bevoegdheden worden aan alle programma's aangeboden.
+
+  [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
+
+- **Opstartapps**: voer een lijst met apps in die worden geopend nadat een gebruiker zich aanmeldt bij het apparaat. Gebruik een door puntkomma's gescheiden lijst met familienamen van pakketten (PFN) van Windows-toepassingen. Om dit beleid te doen functioneren moet het manifest in de Windows-apps gebruikmaken van een opstarttaak.
+
+  [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
 Selecteer **OK** om uw wijzigingen op te slaan.
 
@@ -70,7 +88,7 @@ Deze instellingen gebruiken de beleids-CPS's [Connectivity](https://docs.microso
 - **Mobiel gegevenskanaal**: Hiermee kunt u instellen of gebruikers toegang hebben tot gegevens, bijvoorbeeld tijdens het surfen op internet, wanneer ze zijn verbonden met een mobiel netwerk. Uw opties zijn:
   - **Niet geconfigureerd** (standaard): De standaardinstelling van het besturingssysteem wordt gebruikt, waarbij het mobiele gegevenskanaal kan worden gebruikt. Eindgebruikers kunnen dit uitschakelen.
   - **Blokkeren**: Het mobiele gegevenskanaal is niet toegestaan. Eindgebruikers kunnen dit niet inschakelen.
-  - **Toestaan (kan niet worden bewerkt)**: Hiermee kan het mobiele gegevenskanaal worden gebruikt. Eindgebruikers kunnen dit niet uitschakelen.
+  - **Toestaan (kan niet worden bewerkt)** : Hiermee kan het mobiele gegevenskanaal worden gebruikt. Eindgebruikers kunnen dit niet uitschakelen.
 
 - **Dataroaming**: Met **Blokkeren** is mobiele dataroaming op het apparaat niet mogelijk. Met **Niet geconfigureerd** (standaard) is roaming tussen netwerken toegestaan tijdens het ophalen van gegevens.
 - **VPN via het mobiele netwerk**: Met **Blokkeren** heeft het apparaat geen toegang tot VPN-verbindingen wanneer het is verbonden met een mobiel netwerk. Met **Niet geconfigureerd** (standaard) kan VPN gebruikmaken van elke verbinding, inclusief mobiele verbindingen.
@@ -181,7 +199,7 @@ Deze instellingen gebruiken de [beleid-CSP Experience](https://docs.microsoft.co
 - **Verwisselbare opslag**: Met **Blokkeren** kunnen eindgebruikers geen externe opslagapparaten gebruiken, zoals SD-kaarten. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
 - **Geolocatie**: Met **Blokkeren** kunnen eindgebruikers geen locatieservices op het apparaat inschakelen. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
 - **Gedeeld internet**: Met **Blokkeren** kan de internetverbinding op het apparaat niet worden gedeeld. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Telefoon opnieuw instellen:**: Met **Blokkeren** kunnen eindgebruikers de instellingen niet wissen of de fabrieksinstellingen op het apparaat terugzetten. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
+- **Telefoon opnieuw instellen:** : Met **Blokkeren** kunnen eindgebruikers de instellingen niet wissen of de fabrieksinstellingen op het apparaat terugzetten. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
 - **USB-verbinding**: Met **Blokkeren** is er geen toegang tot externe opslagapparaten via een USB-verbinding op het apparaat. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan. Opladen via USB wordt niet beïnvloed door deze instelling.
 - **Antidiefstalmodus** (alleen mobiel): Met **Blokkeren** kunnen eindgebruikers de voorkeursinstelling Antidiefstalmodus niet selecteren op het apparaat. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
 - **Cortana**: Met **Blokkeren** wordt de spraakassistent Cortana uitgeschakeld. Als Cortana is uitgeschakeld, kunnen gebruikers nog wel zoeken naar items op het apparaat. Met **Niet geconfigureerd** (standaard) is Cortana ingeschakeld.
@@ -256,10 +274,10 @@ Deze instellingen gebruiken de [beleid-CSP Browser](https://docs.microsoft.com/w
 De beschikbare instellingen veranderen, afhankelijk van wat u kiest. Uw opties zijn:
 
 - **Nee** (standaard): Microsoft Edge wordt niet uitgevoerd in de kioskmodus. U kunt alle Microsoft Edge-instellingen wijzigen en configureren.
-- **Digitale/interactieve display (kiosk voor één app)**: Filtert Microsoft Edge-instellingen die van toepassing zijn op de Microsoft Edge-kioskmodus Digitale/interactieve display, alleen voor gebruik in Windows 10-kiosken voor één app. Kies deze instelling om een volledig URL-scherm te openen en alleen de inhoud op die website weer te geven. [Digitale displays instellen](https://docs.microsoft.com/windows/configuration/setup-digital-signage) biedt meer informatie over deze functie.
-- **InPrivate openbaar bladeren (kiosk voor één app)**: Filtert Microsoft Edge-instellingen die van toepassing zijn op de Microsoft Edge-kioskmodus Inprivate openbaar bladeren voor gebruik in Windows 10-kiosken voor één app. Er wordt een versie met meerdere tabbladen van Microsoft Edge uitgevoerd.
-- **Normale modus (kiosk voor meerdere apps)**: Filtert Microsoft Edge-instellingen die van toepassing zijn op de normale Microsoft Edge-kioskmodus. Er wordt een volledige versies van Microsoft Edge uitgevoerd met alle browserfuncties.
-- **Openbaar bladeren (kiosk voor meerdere apps)**: Filters Microsoft Edge-instellingen die van toepassing zijn op openbaar bladeren in een Windows 10-kiosk voor meerdere apps.  Er wordt een versie met meerdere tabbladen van Microsoft Edge InPrivate uitgevoerd.
+- **Digitale/interactieve display (kiosk voor één app)** : Filtert Microsoft Edge-instellingen die van toepassing zijn op de Microsoft Edge-kioskmodus Digitale/interactieve display, alleen voor gebruik in Windows 10-kiosken voor één app. Kies deze instelling om een volledig URL-scherm te openen en alleen de inhoud op die website weer te geven. [Digitale displays instellen](https://docs.microsoft.com/windows/configuration/setup-digital-signage) biedt meer informatie over deze functie.
+- **InPrivate openbaar bladeren (kiosk voor één app)** : Filtert Microsoft Edge-instellingen die van toepassing zijn op de Microsoft Edge-kioskmodus Inprivate openbaar bladeren voor gebruik in Windows 10-kiosken voor één app. Er wordt een versie met meerdere tabbladen van Microsoft Edge uitgevoerd.
+- **Normale modus (kiosk voor meerdere apps)** : Filtert Microsoft Edge-instellingen die van toepassing zijn op de normale Microsoft Edge-kioskmodus. Er wordt een volledige versies van Microsoft Edge uitgevoerd met alle browserfuncties.
+- **Openbaar bladeren (kiosk voor meerdere apps)** : Filters Microsoft Edge-instellingen die van toepassing zijn op openbaar bladeren in een Windows 10-kiosk voor meerdere apps.  Er wordt een versie met meerdere tabbladen van Microsoft Edge InPrivate uitgevoerd.
 
 > [!TIP]
 > Zie [Configuratietypen van de Microsoft Edge-kioskmodus](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).voor meer informatie over deze opties.
@@ -408,14 +426,18 @@ Deze instellingen gebruiken de [beleid-CSP DeviceLock](https://docs.microsoft.co
     - **Numeriek**: Het wachtwoord mag alleen uit cijfers bestaan.
     - **Alfanumeriek**: Het wachtwoord moet een combinatie van cijfers en letters zijn.
   - **Minimale wachtwoordlengte**: Voer het minimale aantal of het vereiste aantal tekens in, van 4-16 tekens. Voer bijvoorbeeld `6` in om in te stellen dat een wachtwoord minimaal 6 tekens bevat.
+  
+    > [!IMPORTANT]
+    > Als de wachtwoordvereiste op een Windows-bureaublad wordt gewijzigd, heeft dit een invloed op gebruikers de volgende keer dat ze zich aanmelden, omdat het apparaat op dat moment van niet-actief naar actief gaat. Gebruikers met wachtwoorden die aan de vereisten voldoen, worden nog steeds gevraagd hun wachtwoord te wijzigen.
+    
   - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: Voer het aantal mislukte verificaties in dat is toegestaan voordat het apparaat wordt gewist (tussen 1-11). Met `0` (nul) kan de functionaliteit voor het wissen van apparaten worden uitgeschakeld.
 
     Deze instelling heeft een verschillend effect per editie. Zie voor meer informatie [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
   - **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**: Hiermee voert u de hoeveelheid tijd in die een apparaat inactief moet zijn voordat het scherm wordt vergrendeld.
-  - **Wachtwoord verloopt (dagen)**: Hiermee voert u de hoeveelheid tijd in waarna het wachtwoord van een apparaat moet worden gewijzigd (tussen 1-365). Voer bijvoorbeeld `90` als u wilt dat het wachtwoord na 90 dagen verloopt.
+  - **Wachtwoord verloopt (dagen)** : Hiermee voert u de hoeveelheid tijd in waarna het wachtwoord van een apparaat moet worden gewijzigd (tussen 1-365). Voer bijvoorbeeld `90` als u wilt dat het wachtwoord na 90 dagen verloopt.
   - **Wachtwoorden niet opnieuw gebruiken**: Hiermee geeft u op hoeveel eerder gebruikte wachtwoorden niet opnieuw mogen worden gebruikt (tussen 1-24). Als u bijvoorbeeld `5` invoert, kan een gebruiker zijn nieuwe wachtwoord niet instellen op zijn huidige wachtwoord of een van zijn vier wachtwoorden daarvoor.
-  - **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status ** (mobiel en Holographic): Met **Vereisen** moeten gebruikers een wachtwoord opgeven om het apparaat te ontgrendelen na een periode van inactiviteit. Met **Niet geconfigureerd** (standaard) is geen pincode of wachtwoord vereist wanneer het apparaat wordt hervat vanuit een niet-actieve status.
+  - **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status**  (mobiel en Holographic): Met **Vereisen** moeten gebruikers een wachtwoord opgeven om het apparaat te ontgrendelen na een periode van inactiviteit. Met **Niet geconfigureerd** (standaard) is geen pincode of wachtwoord vereist wanneer het apparaat wordt hervat vanuit een niet-actieve status.
   - **Eenvoudige wachtwoorden**: Met **Blokkeren** kunnen gebruikers geen eenvoudige wachtwoorden maken, zoals `1234` of `1111`. Met **Niet geconfigureerd** (standaard) kunnen gebruikers wachtwoorden maken als `1234` of `1111`. Met deze instelling kunt u ook het gebruik van afbeeldingswachtwoorden toestaan of blokkeren.
 - **Automatische versleuteling tijdens AADJ**: Met **Blokkeren** voorkomt u automatische BitLocker-apparaatversleuteling wanneer het apparaat wordt voorbereid op het eerste gebruik, wanneer het apparaat is toegevoegd aan Microsoft Azure AD. Bij **Niet geconfigureerd** (standaard) worden de standaardinstelling van het besturingssysteem gebruikt, waarbij versleuteling kan worden ingeschakeld. Zie [BitLocker-apparaatversleuteling](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
 
@@ -572,7 +594,7 @@ Selecteer **OK** om uw wijzigingen op te slaan.
 
 Deze instellingen gebruiken de [beleid-CSP Search](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search), waarbij ook de ondersteunde Windows-edities worden vermeld. 
 
-- **Veilig zoeken (alleen mobiel)**: hiermee bepaalt u hoe Cortana inhoud voor volwassenen filtert in de zoekresultaten. Uw opties zijn:
+- **Veilig zoeken (alleen mobiel)** : hiermee bepaalt u hoe Cortana inhoud voor volwassenen filtert in de zoekresultaten. Uw opties zijn:
   - **Door de gebruiker gedefinieerd**: Hiermee staat u toe dat eindgebruikers hun eigen instellingen kiezen.
   - **Strict** : De hoogste filtering tegen inhoud voor volwassenen.
   - **Gemiddeld** : Gemiddelde filtering tegen inhoud voor volwassenen. Geldige zoekresultaten worden niet gefilterd.
@@ -680,8 +702,8 @@ Deze instellingen gebruiken de [beleid-CSP Experience](https://docs.microsoft.co
   - **Suggesties van derden in Windows Spotlight**: Met**Blokkeren** stelt Windows Spotlight geen inhoud voor die niet is gepubliceerd door Microsoft. Met **Niet geconfigureerd** zijn app- en inhoudssuggesties van uitgevers van externe software toegestaan in Windows Spotlight-functies, zoals Spotlight op het vergrendelingsscherm, voorgestelde apps in het menu Start en Windows Tips.
   - **Consumentfuncties**: Met **Blokkeren** worden ervaringen uitgeschakeld die doorgaans alleen voor consumenten worden gebruikt, zoals startsuggesties, lidmaatschapsmeldingen, post-out of box experience-app-installaties en omleidingstegels. **Niet geconfigureerd** (standaard) staat deze functies toe.
   - **Windows Tips**: Met **Blokkeren** worden pop-ups van Windows Tips uitgeschakeld. Met **Niet geconfigureerd** (standaard) worden Windows Tips weergegeven.
-  - **Windows Spotlight in Onderhoudscentrum:**: Met **Blokkeren** worden meldingen van Windows Spotlight niet weergegeven in Onderhoudscentrum. Met **Niet geconfigureerd** (standaard) kunnen meldingen worden weergegeven in Onderhoudscentrum, zoals suggesties voor nieuwe apps of functies waarmee gebruikers productiever kunnen zijn.
-  - **Persoonlijke instellingen voor Windows Spotlight:**: Met **Blokkeren** gebruikt Windows geen diagnostische gegevens om gebruikers aangepaste ervaringen te bieden. Met **Niet geconfigureerd** (standaard) worden diagnostische gegevens gebruikt om persoonlijke aanbevelingen te doen, tips te geven en aanbiedingen weer te geven die op de behoeften van de gebruiker zijn afgestemd.
+  - **Windows Spotlight in Onderhoudscentrum:** : Met **Blokkeren** worden meldingen van Windows Spotlight niet weergegeven in Onderhoudscentrum. Met **Niet geconfigureerd** (standaard) kunnen meldingen worden weergegeven in Onderhoudscentrum, zoals suggesties voor nieuwe apps of functies waarmee gebruikers productiever kunnen zijn.
+  - **Persoonlijke instellingen voor Windows Spotlight:** : Met **Blokkeren** gebruikt Windows geen diagnostische gegevens om gebruikers aangepaste ervaringen te bieden. Met **Niet geconfigureerd** (standaard) worden diagnostische gegevens gebruikt om persoonlijke aanbevelingen te doen, tips te geven en aanbiedingen weer te geven die op de behoeften van de gebruiker zijn afgestemd.
   - **Welkomstbericht van Windows**: Met **Blokkeren** wordt het welkomstbericht van Windows Spotlight uitgeschakeld. Het welkomstbericht van Windows wordt niet weergegeven als er updates en wijzigingen in Windows en Windows-apps zijn. Met **Niet geconfigureerd** (standaard) wordt het welkomstbericht van Windows weergegeven met informatie over nieuwe of bijgewerkte functies.
 
 Selecteer **OK** om uw wijzigingen op te slaan.
@@ -692,11 +714,11 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Realtime-controle**: Met **Inschakelen** wordt realtime scannen op malware, spyware en andere ongewenste software uitgeschakeld. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
 - **Gedragscontrole**: Met **Inschakelen** controleert Defender niet op de aanwezigheid van bepaalde bekende patronen van verdachte activiteiten op apparaten. Met **Niet geconfigureerd** (standaard) wordt Windows Defender-gedragscontrole ingeschakeld.
-- **Netwerkinspectiesysteem (NIS)**: NIS helpt bij de bescherming van apparaten tegen aanvallen vanaf het netwerk. NIS maakt gebruik van handtekeningen van bekende beveiligingsproblemen uit het Microsoft Endpoint Protection Center om schadelijk netwerkverkeer te detecteren en blokkeren.
+- **Netwerkinspectiesysteem (NIS)** : NIS helpt bij de bescherming van apparaten tegen aanvallen vanaf het netwerk. NIS maakt gebruik van handtekeningen van bekende beveiligingsproblemen uit het Microsoft Endpoint Protection Center om schadelijk netwerkverkeer te detecteren en blokkeren.
 - **Alle downloads scannen**: hiermee bepaalt u of Windows Defender alle bestanden moet scannen die van internet worden gedownload.
 - **Scripts scannen die in webbrowsers van Microsoft worden geladen**: Met **Niet geconfigureerd** (standaard) worden door Defender scripts gescand die worden gebruikt in Internet Explorer. Met **Inschakelen** wordt het scannen voorkomen.
 - **Toegang van eindgebruikers tot Defender**: Met **Blokkeren** wordt de gebruikersinterface van Windows Defender voor eindgebruikers verborgen. Daarnaast worden alle meldingen van Windows Defender onderdrukt. Met **Niet geconfigureerd** (standaard) hebben gebruikers toegang tot de gebruikersinterface van Windows Defender. Als deze instelling wordt gewijzigd, gaat de wijziging in wanneer de pc van de eindgebruiker de volgende keer opnieuw wordt opgestart.
-- **Interval voor handtekeningupdates (in uren)**: Geef het interval op waarmee Defender op nieuwe handtekeningbestanden moet controleren (tussen 0-24). Uw opties zijn:
+- **Interval voor handtekeningupdates (in uren)** : Geef het interval op waarmee Defender op nieuwe handtekeningbestanden moet controleren (tussen 0-24). Uw opties zijn:
 
   - **Niet geconfigureerd** (standaard)
   - **Niet controleren**: Defender controleert niet op nieuwe handtekeningbestanden.
@@ -755,7 +777,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
   Zie [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus) (Mogelijk ongewenste toepassingen detecteren en blokkeren) voor meer informatie over mogelijk ongewenste apps.
 
-- **Acties voor gedetecteerde bedreiging van malware**: kies welke acties Defender moet uitvoeren voor de verschillende bedreigingsniveaus (Laag, Gemiddeld, Hoog en Ernstig). Uw opties zijn:
+- **Acties voor gedetecteerde bedreiging van malware**: kies welke acties Defender moet uitvoeren voor de verschillende bedreigingsniveaus (Laag, Gemiddeld, Hoog en Ernstig). Als dit niet mogelijk is, kiest Windows Defender de beste optie om te garanderen dat de bedreiging wordt hersteld. Uw opties zijn:
   - **Reinigen**
   - **Quarantaine**
   - **Verwijderen**
