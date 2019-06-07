@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 06/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,19 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9884f1c5d794b527aeaf8fb522d9118d59468b3b
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041657"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506885"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Veelgestelde vragen over MAM en app-beveiliging
 
 In dit artikel vindt u antwoorden op enkele veelgestelde vragen over Intune Mobile Application Management (MAM) en de bescherming van apps met Intune.
 
 ## <a name="mam-basics"></a>Basisinformatie over MAM
-
 
 **Wat is MAM?**<br></br>
 [Intune Mobile Application Management](/intune/app-lifecycle) verwijst naar de suite met Intune-beheerfuncties waarmee u mobiele apps voor uw gebruikers kunt publiceren, pushen, configureren, beveiligen, controleren en bijwerken.
@@ -45,7 +44,7 @@ Intune MAM ondersteunt twee configuraties:
 
 ## <a name="app-protection-policies"></a>Beleid voor app-beveiliging
 
-**Wat zijn beleidsregels voor de beveiliging van apps**?<br></br>
+**Wat zijn beleidsregels voor de beveiliging van apps?**<br></br>
 Beleidsregels voor de beveiliging van apps zijn regels die ervoor zorgen dat de bedrijfsgegevens die zijn opgenomen in een app, veilig of binnen de app blijven. Een beleidsregel kan een regel zijn die wordt afgedwongen wanneer de gebruiker bedrijfsgegevens probeert te openen of te verplaatsen, of een reeks acties die zijn verboden of worden gecontroleerd wanneer de gebruiker zich in de app bevindt.
 
 **Wat zijn voorbeelden van beleidsregels voor de beveiliging van apps?**<br></br>
@@ -72,6 +71,13 @@ Alle apps die zijn geïntegreerd met de [Intune App SDK](/intune/app-sdk) of die
 - De eindgebruiker moet behoren tot een beveiligingsgroep waarop een beleidsregel voor de beveiliging van apps is gericht. Dezelfde beleidsregel voor de beveiliging van apps moet ook zijn gericht op de specifieke app die wordt gebruikt. Beleidsregels voor de beveiliging van apps kunnen worden gemaakt en geïmplementeerd in de Intune-console in [Azure Portal](https://portal.azure.com). Beveiligingsgroepen kunnen op dit moment worden gemaakt in het [Microsoft 365-beheercentrum](https://admin.microsoft.com).
 
 - De eindgebruiker moet zich bij de app aanmelden met zijn AAD-account.
+
+**Wat zijn de mogelijkheden als ik een app met Intune-app-beveiliging wil inschakelen, maar die app geen ondersteund platform voor app-ontwikkeling gebruikt?** 
+
+Het Intune SDK-ontwikkelingsteam houdt zich actief bezig met het testen en onderhouden van ondersteuning voor apps die zijn gebouwd met de systeemeigen Android-, iOS- (Objective-C, Swift), Xamarin-, Xamarin.Forms- en Cordova-platforms. Hoewel het sommige klanten is gelukt om de Intune SDK te integreren in andere platforms, zoals React Native en NativeScript, bieden we geen specifieke instructies of plug-ins voor app-ontwikkelaars die andere platforms gebruiken dan de platforms die door ons worden ondersteund.
+
+**Ondersteunt de Intune APP SDK de bibliotheek voor Microsoft-verificatie (MSAL) of sociale accounts?**<br></br>
+De Intune APP SDK gebruikt enkele geavanceerde mogelijkheden van ADAL voor zowel eigen als externe versies van de SDK. Hierdoor werkt MSAL niet goed met de meeste belangrijkste scenario's, zoals verificatie in de Intune-app-beveiligingsservice en voorwaardelijk starten. Gezien het feit dat het Identity-team van Microsoft gebruikers over het algemeen aanraadt om voor alle Microsoft Office-apps over te stappen naar MSAL, zal de Intune SDK daar uiteindelijk ondersteuning voor moeten gaan bieden, maar hier zijn momenteel nog geen plannen voor.
 
 **Wat zijn de aanvullende vereisten voor het gebruik van de [mobiele app van Outlook](https://products.office.com/outlook)?**
 
@@ -164,8 +170,7 @@ Voor de app-beveiliging van Intune moet de identiteit van de gebruiker voor de t
 **Is er een veilige manier om webkoppelingen te openen vanuit beheerde apps?**<br></br>
 Ja. De IT-beheerder kan een app-beveiligingsbeleid implementeren en instellen voor de [Intune Managed Browser-app](app-configuration-managed-browser.md), een webbrowser die is ontwikkeld door Microsoft Intune en eenvoudig kan worden beheerd met Intune. De IT-beheerder kan ervoor zorgen dat alle webkoppelingen in de door Intune beheerde apps moeten worden geopend met de Managed Browser-app.
 
-**Ondersteunt de Intune APP SDK de bibliotheek voor Microsoft-verificatie (MSAL) of sociale accounts?**
-De Intune APP SDK gebruikt enkele geavanceerde mogelijkheden van ADAL voor zowel eigen als externe versies van de SDK. Hierdoor werkt MSAL niet goed met de meeste belangrijkste scenario's, zoals verificatie in de Intune-app-beveiligingsservice en voorwaardelijk starten. Er zijn momenteel geen plannen om dit te ondersteunen.
+
 
 ## <a name="app-experience-on-android"></a>Apps op Android gebruiken
 
@@ -199,13 +204,13 @@ Voor de SafetyNet-API-controles van Google Play is het vereist dat eindgebruiker
 Voor zowel de instelling SafetyNet Attestion voor apparaten als de instelling Bedreigingsscan op apps moet de door Google bepaalde versie van Google Play Services naar behoren werken. Aangezien dit de instellingen zijn die in het gebied van beveiliging vallen, wordt de eindgebruiker geblokkeerd als deze instellingen op deze gebruiker zijn gericht en niet voldoen aan de juiste versie van Google Play Services of geen toegang hebben tot Google Play Services. 
 
 ## <a name="app-experience-on-ios"></a>Apps op iOS gebruiken
-**Wat gebeurt er als ik een vingerafdruk of gezicht toevoeg of verwijder op mijn apparaat?**
+**Wat gebeurt er als ik een vingerafdruk of gezicht toevoeg of verwijder op mijn apparaat?**<br></br>
 Het Intune-beleid voor app-beveiliging geeft u de mogelijkheid app-toegang te beperken tot enkel de gebruiker met een Intune-licentie. Een van de manieren om toegang tot de app te beheren, is op ondersteunde apparaten Touch ID of Face ID van Apple te vereisen. Intune implementeert een gedrag waarbij Intune, na iedere wijziging in de biometrische database van het apparaat, de gebruiker vraagt een pincode in te voeren wanneer aan de volgende time-outwaarde voor inactiviteit wordt voldaan. Wijzigingen in biometrische gegevens omvatten het toevoegen of verwijderen van een vingerafdruk of gezicht. Als de Intune-gebruiker geen pincode heeft ingesteld, wordt gevraagd om een Intune-pincode in te stellen.
  
 De heeft als doel de gegevens van uw organisatie in de app op app-niveau veilig en beschermd te houden. Deze functie is alleen beschikbaar voor iOS en vereist het gebruik van toepassingen die de Intune-APP SDK voor iOS, versie 9.0.1 of hoger, hebben geïntegreerd. Integratie van de SDK is nodig om het gedrag te kunnen afdwingen in de betreffende toepassingen. Deze integratie vindt doorlopend plaats en is afhankelijk van de specifieke toepassingsteams. Apps die hieraan deelnemen, zijn onder meer WXP, Outlook, Managed Browser en Yammer. 
   
 **Ik kan de iOS-extensie voor delen gebruiken om werk- of schoolgegevens te openen in niet-beheerde apps, zelfs wanneer het beleid voor het overdragen van gegevens is ingesteld op 'alleen voor beheerde apps' of 'geen apps'. Ontstaat hierdoor geen gegevenslek?**<br></br>
-De iOS-extensie voor delen kan alleen met het app-beveiligingsbeleid worden beheerd als ook het apparaat wordt beheerd. Daarom worden _**'zakelijke' gegevens door Intune versleuteld voordat ze buiten de app worden gedeeld**_. U kunt dit controleren door een 'zakelijk' bestand te openen buiten de beheerde app. Het bestand moet zijn versleuteld en kan niet worden geopend bijten de beheerde app.
+De iOS-extensie voor delen kan alleen met het app-beveiligingsbeleid worden beheerd als ook het apparaat wordt beheerd. Daarom worden _ **'zakelijke' gegevens door Intune versleuteld voordat ze buiten de app worden gedeeld**_ . U kunt dit controleren door een 'zakelijk' bestand te openen buiten de beheerde app. Het bestand moet zijn versleuteld en kan niet worden geopend bijten de beheerde app.
 
 **Hoe werken meerdere toegangsinstellingen voor Intune-app-beveiliging die zijn geconfigureerd voor dezelfde set apps en gebruikers op iOS?**<br></br>
 Het Intune-app-beveiligingsbeleid voor toegang wordt in een bepaalde volgorde toegepast op apparaten van eindgebruikers wanneer ze vanaf hun bedrijfsaccount proberen toegang te krijgen tot een doel-app. In het algemeen krijgt wissen voorrang, dan volgt een waarschuwing die kan worden gesloten. Indien van toepassing op de specifieke gebruiker/app, wordt een instelling van een minimumversie van het iOS-besturingssysteem die een gebruiker waarschuwt om de iOS-versie bij te werken bijvoorbeeld toegepast na de instelling van de minimumversie van het iOS-besturingssysteem die toegang door de gebruiker blokkeert. Dus in het scenario waarin de IT-beheerder de minimumversie van het iOS-besturingssysteem configureert naar 11.0.0.0 en de minimumversie van het iOS-besturingssysteem (alleen Waarschuwing) naar 11.1.0.0, terwijl het apparaat dat de app probeert te openen op iOS 10 zit, wordt de eindgebruiker geblokkeerd op basis van de restrictievere instelling voor de minimumversie van het iOS-besturingssysteem die resulteert in geblokkeerde toegang.
