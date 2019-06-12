@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 490c7312f510651cafc6ade516e5f7dca8131b3a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043955"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804680"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Gegevens selectief wissen met toegangsacties voor het app-beveiligingsbeleid in Intune
 
@@ -32,9 +32,7 @@ U kunt er expliciet voor kiezen om de zakelijke gegevens van uw bedrijf te wisse
 
 ## <a name="create-an-app-protection-policy-using-access-actions"></a>Een app-beveiligingsbeleid maken met behulp van toegangsacties
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services** > **Intune**.  
-    Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecteer in het deelvenster **Intune** **Client-apps** > **App-beveiligingsbeleid**.
 4. Klik op **Een beleid toevoegen** (u kunt ook een bestaand beleid bewerken). 
 5. Klik op **Vereiste instellingen configureren** om de lijst met instellingen weer te geven die voor het beleid kunnen worden geconfigureerd. 

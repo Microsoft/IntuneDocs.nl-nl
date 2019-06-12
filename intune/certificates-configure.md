@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37938287cc5ddde6285ec09aa0fffea56f98b3c3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e0e0eda1c60e420adcdab9364ecb0da1f52fe4e6
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048940"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713894"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Een certificaatprofiel configureren voor uw apparaten in Microsoft Intune
 
@@ -90,8 +90,7 @@ U importeert dit certificaat wanneer u een vertrouwd certificaatprofiel instelt.
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Stap 3: profielen voor vertrouwde certificaten maken
 Maak een profiel voor een vertrouwd certificaat voordat u een SCEP- of PKCS-certificaatprofiel kunt maken. Voor elk apparaatplatform is een vertrouwd certificaatprofiel en een SCEP- of PKCS-profiel vereist. De stappen voor het maken van vertrouwde certificaten zijn voor elk apparaatplatform ongeveer gelijk.
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecteer **Apparaatconfiguratie** > **Beheren** > **Profielen** > **Profiel maken**.
 4. Voer een **naam** en een **beschrijving** in voor het vertrouwde certificaatprofiel.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform voor dit vertrouwde certificaat. Uw opties zijn:

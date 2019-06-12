@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7998eb82b27a7e70d5a77374950e544fd603f6d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1929b811a5a5320bc0ceefcef4f05ed2443ac070
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046287"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819657"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>De Mobile Threat Defense-connector inschakelen in Intune
 
@@ -33,11 +33,7 @@ Tijdens de configuratie van Mobile Threat Defense (MTD) hebt u een beleid geconf
 
 ## <a name="to-enable-the-mtd-connector"></a>De MTD-connector inschakelen
 
-1. Ga naar [Azure Portal](https://portal.azure.com) en meld u aan met uw Intune-referenties. Nadat u zich hebt aangemeld, ziet u het **Azure-dashboard**.
-
-2. Kies in het **Azure-dashboard** in het linkermenu de optie **Alle services** en typ vervolgens **Intune** in het filtertekstvak.
-
-3. Kies **Intune**; het **Intune-dashboard** wordt geopend.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 4. Kies in het **Intune-dashboard** de optie **Apparaatcompatibiliteit** en kies vervolgens **Mobile Threat Defense** onder de sectie **Configuratie**.
 
@@ -61,7 +57,7 @@ U kunt bepalen welke wisselopties voor MTD overeenkomstig de wensen van uw organ
 <br></br>
 - **Synchronisatie van app inschakelen voor iOS-apparaten**: hiermee staat u toe dat deze Mobile Threat Defense-partner metagegevens van iOS-toepassingen kan aanvragen bij Intune om te gebruiken voor bedreigingsanalyse.
 
-- **Niet-ondersteunde besturingssysteemversies blokkeren **: blokkeer het apparaat als hierop een besturingssysteem met een lagere versie wordt uitgevoerd dan de minimaal ondersteunde versie.
+- **Niet-ondersteunde besturingssysteemversies blokkeren** : blokkeer het apparaat als hierop een besturingssysteem met een lagere versie wordt uitgevoerd dan de minimaal ondersteunde versie.
 
 - **Aantal dagen dat partner niet reageert**: aantal dagen van inactiviteit waarna de partner in Intune als niet-reagerend wordt beschouwd omdat de verbinding is verbroken. Intune negeert de compatibiliteitsstatus voor niet-reagerende MTD-partners.
 
