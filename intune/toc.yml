@@ -270,7 +270,7 @@
         - name: Een macOS-apparaat wissen
           href: device-erase.md
         - name: Extern beheer van mobiele apparaten
-          href: device-profile-android-teamviewer.md
+          href: teamviewer-support.md
         - name: Windows 10-pincode opnieuw instellen
           href: device-windows-pin-reset.md
         - name: Apparaat synchroniseren
