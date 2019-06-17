@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc5ea7076e77e5071724168fab58fa78f59601c4
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
-ms.translationtype: HT
+ms.openlocfilehash: 1c8a7be6646c0035eaefed6d61d749c8469c8a4e
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744315"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031651"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>In ontwikkeling voor Microsoft Intune - juni 2019
 
@@ -51,14 +51,11 @@ Als ondersteuning bij uw gereedheid en planning worden op deze pagina updates vo
 #### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Apparaatgebruikers kunnen alle beheerde apps bekijken die ze hebben geïnstalleerd of hebben geprobeerd te installeren <!-- 2352913 -->
 In de bedrijfsportal voor Windows worden alle beheerde apps (zowel vereiste als beschikbare) weergegeven die op het apparaat van een gebruiker zijn geïnstalleerd. Gebruikers kunnen geprobeerde en in behandeling zijnde app-installaties bekijken met de huidige status ervan. Als uw organisatie geen apps verplicht of beschikbaar stelt, krijgen gebruikers het bericht te zien dat er geen bedrijfs-apps zijn geïnstalleerd. Gebruikers kunnen hun apps ook sorteren of filteren op installatiestatus.
 
-#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956---"></a>Beschikbare rapportage over Google Play-apps voor Android-werkprofielen <!-- 3041956 -->
-U kunt voor beschikbare app-installaties op apparaten met Android-werkprofielen de status van de app-installatie evenals de geïnstalleerde versie van beheerde Google Play-apps bekijken. Zie [How to monitor app protection policies](app-protection-policies-monitor.md) (App-beveiligingsbeleid controleren), [Manage Android work profile devices with Intune](android-enterprise-overview.md) (Apparaten met Android-werkprofielen beheren met Intune) en [Managed Google Play app type](apps-add-android-for-work.md#managed-google-play-app-type) (Type beheerde Google Play-app) voor meer informatie.
-
 #### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>Configureren welke browser een koppeling met organisatiegegevens mag maken <!-- 3145939 -->
 U kunt met Intune App Protection Policies (APP) op Android- en iOS-apparaten webkoppelingen van een organisatie overbrengen naar een specifieke browser buiten Intune Managed Browser of Microsoft Edge.  Zie [Wat is beveiligingsbeleid voor apps?](app-protection-policy.md) voor meer informatie over APP.
 
 #### <a name="installed-apps-page-on-the-company-portal-website-----4224326---"></a>Pagina met geïnstalleerde apps op de bedrijfsportalwebsite  <!-- 4224326 -->
-De [bedrijfsportalwebsite](https://portal.manage.microsoft.com/) bevat een nieuwe pagina om voor gebruikers alle apps weer te geven die op hun apparaat zijn geïnstalleerd. Deze lijst bevat zowel de beschikbare apps als de apps die worden vereist door hun organisatie. Gebruikers kunnen op deze pagina de installatie- en vereiste-status van de apps op hun apparaat zien. Zie [De Intune-bedrijfsportalwebsite gebruiken](/intune-user-help/using-the-intune-company-portal-website.md) en [De Microsoft Intune-bedrijfsportal-app configureren](company-portal-app.md) voor meer informatie over de bedrijfsportalwebsite.
+De [bedrijfsportalwebsite](https://portal.manage.microsoft.com/) bevat een nieuwe pagina om voor gebruikers alle apps weer te geven die op hun apparaat zijn geïnstalleerd. Deze lijst bevat zowel de beschikbare apps als de apps die worden vereist door hun organisatie. Gebruikers kunnen op deze pagina de installatie- en vereiste-status van de apps op hun apparaat zien. Zie [De Intune-bedrijfsportalwebsite gebruiken](/intune-user-help/using-the-intune-company-portal-website) en [De Microsoft Intune-bedrijfsportal-app configureren](company-portal-app.md) voor meer informatie over de bedrijfsportalwebsite.
 
 #### <a name="call-graph-api-read-operations-from-an-application-without-user-credentials----4655885---"></a>Graph API-leesbewerkingen aanroepen vanuit een toepassing zonder gebruikersreferenties <!-- 4655885 -->
 Toepassingen kunnen met app-identiteiten Intune Graph API-leesbewerkingen aanroepen zonder dat er gebruikersreferenties nodig zijn. Zie [Get access without a user](https://docs.microsoft.com/graph/auth-v2-service) (Toegang verkrijgen zonder een gebruiker) voor meer informatie.
