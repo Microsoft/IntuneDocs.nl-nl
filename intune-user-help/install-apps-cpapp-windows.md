@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56742530"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828945"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Apps op uw apparaat installeren en delen
 Installeer apps op uw apparaat vanuit de bedrijfsportal-app voor Windows.
@@ -70,6 +70,10 @@ Nadat u iets hebt gedeeld, krijgt de ontvanger een koppeling en een bericht om d
 Uw organisatie selecteert apps die geschikt en nuttig zijn voor u op het werk of op school. Deze apps zijn de enige u in Bedrijfsportal vindt.  
 
 Apps zijn ook aan u beschikbaar gesteld op basis van uw apparaattype. Als u bijvoorbeeld de app Bedrijfsportal voor Windows gebruikt, hebt u toegang tot Windows-apps, maar niet tot iOS-apps.  
+
+## <a name="required-apps"></a>Required apps  
+
+Uw organisatie mogelijk sommige apps rechtstreeks op uw apparaat te implementeren en markeer ze als **vereist**. Deze apps worden automatisch voor u geïnstalleerd zonder tussenkomst van de.
 
 ## <a name="request-an-app-for-work-or-school"></a>Een app aanvragen voor werk of school  
 Als er een app is die u nodig hebt, maar die niet wordt weergegeven in de bedrijfsportal, kunt u deze aanvragen. Zoek de contactgegevens voor uw **Helpdesk** op de pagina Help en ondersteuning van de app Bedrijfsportal. U vindt dezelfde contactgegevens op de [Bedrijfsportal-website](https://go.microsoft.com/fwlink/?linkid=2010980).    

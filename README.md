@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: fc2e17c605af2c9cec021724852bcf1b48012ba8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "58068946"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804421"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Gedragscode voor Microsoft Open Source
 
@@ -20,24 +20,24 @@ We **willen en stimuleren bijdragen** van onze community (gebruikers, klanten, p
 
 * **Een GitHub-account maken**: aanmelden op [GitHub.com](https://www.github.com) is gratis.
 
-* **Uw browser**: Er zijn twee opties: 
+* **Uw browser gebruiken**: er zijn twee opties: 
 
-    **Optie 1: Rechtstreeks vanuit docs.microsoft.com bewerken**  
-    1. Ga naar het onderwerp, zoals [ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune ](https://docs.microsoft.com/ntune/troubleshoot-policies-in-microsoft-intune). 
-    2. Selecteer **bewerken** (top rechts). Dit ziet u het markdown-bestand in de GitHub-opslagplaats.
-    3. Selecteer het potloodpictogram. Wanneer u de muisaanwijzer op het potloodpictogram, ziet u de **dit bestand bewerken** knopinfo. 
-    4. Breng uw wijzigingen, en vervolgens **doorvoeren** uw wijzigingen. 
+    **Optie 1: rechtstreeks vanuit docs.microsoft.com bewerken**  
+    1. Ga naar het onderwerp, zoals [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune). 
+    2. Selecteer **Bewerken** (rechtsboven). Hierop wordt het markdown-bestand in de GitHub-opslagplaats weergegeven.
+    3. Selecteer het potloodpictogram. Wanneer u het potloodpictogram aanwijst, ziet u de knopinfo **Dit bestand bewerken**. 
+    4. Na het aanbrengen van de wijzigingen kunt u deze **doorvoeren**. 
     5. Maak de pull-aanvraag.
     
-    **Optie 2: Zoek het artikel in deze opslagplaats en bijwerken**  
-    1.  De meeste onderwerpen zijn `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. In deze map, zoek de naam van het onderwerp, zoals `troubleshoot-policies-in-microsoft-intune`. 
-    2. Selecteer de koppeling en klik op het potloodpictogram. Wanneer u de muisaanwijzer op het potloodpictogram, ziet u de **dit bestand bewerken** knopinfo. 
-    3. Breng uw wijzigingen, en vervolgens **doorvoeren** uw wijzigingen. 
+    **Optie 2: het artikel zoeken in deze opslagplaats en het artikel bijwerken**  
+    1.  De meeste onderwerpen vindt u in `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Zoek in deze map de naam van het onderwerp, zoals `troubleshoot-policies-in-microsoft-intune`. 
+    2. Selecteer de koppeling en klik op het potloodpictogram. Wanneer u het potloodpictogram aanwijst, ziet u de knopinfo **Dit bestand bewerken**. 
+    3. Na het aanbrengen van de wijzigingen kunt u deze **doorvoeren**. 
     4. Maak de pull-aanvraag. 
 
   Wanneer u een update uitvoert, wordt u mogelijk gevraagd om een licentieovereenkomst te ondertekenen. Dit is een eenmalige taak. U hoeft eventuele toekomstige updates onder uw GitHub-gebruikersnaam niet opnieuw te ondertekenen. 
   
-  De waarde in de `author` metagegevens (boven aan elk onderwerp) geeft een lijst van de GitHub-auteur. In de `troubleshoot-policies-in-microsoft-intune` voorbeeld ziet u `MandiOhlinger`. In uw pull-aanvraag, u kunt ook aangeven (@*authorValue*) de auteur als u tevreden bent.
+  De waarde in de `author`-metagegevens (bovenaan elk onderwerp) vermeldt de GitHub-auteur. In het `troubleshoot-policies-in-microsoft-intune`-voorbeeld ziet u `MandiOhlinger`. U kunt in uw pull-aanvraag desgewenst ook de auteur vermelden (@*authorValue*).
   
 * **MSFT-medewerkers**: nadat u een GitHub-account hebt gemaakt, koppelt u dit aan uw Microsoft-e-mailadres. Wanneer uw account is gekoppeld, hoeft u geen licentieovereenkomst te ondertekenen om een update uit te voeren. Stappen:
 

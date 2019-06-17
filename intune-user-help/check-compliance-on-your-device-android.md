@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,19 +18,19 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812c012bbb69c32d518c9dfa772ed4b37e1260a6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837982"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506850"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Naleving op uw Android-apparaat controleren
 
-Als u al een tijd niet bij Intune heeft ingecheckt met uw apparaat, heeft u mogelijk geen toegang tot de bronnen van uw bedrijf of school. Probeer het volgende om weer toegang te krijgen:
+Als u al een tijd niet bij Intune heeft ingecheckt met uw apparaat, heeft u mogelijk geen toegang tot de bronnen van uw bedrijf of school. Probeer de volgende stappen om weer toegang te krijgen.  
 
-1. Open de bedrijfsportal-app voor Android op uw apparaat.
+1. Open de bedrijfsportal-app voor Android op uw apparaat.  
 
-2. Tik op **Naleving controleren**.
+2. Tik op **Apparaatinstellingen controleren**.  
 
-Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u het ondersteuningsteam van het bedrijf om dit voor u te doen. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
+Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u het ondersteuningsteam van het bedrijf om dit voor u te doen. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  

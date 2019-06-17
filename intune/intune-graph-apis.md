@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6276f38eed4d20e7e81437c2ba3e2c9bc58ae1c1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4d838d0cd0d0f92cb344592d18d9e04e18d7e456
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047755"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819734"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD gebruiken voor toegang tot de Intune-API's in Microsoft Graph
 
@@ -61,7 +61,7 @@ Zie voor meer informatie:
 
 U registreert als volgt apps voor het gebruik van de Microsoft Graph API:
 
-1.  Meld u met beheerdersreferenties aan bij [Azure Portal](https://portal.azure.com).
+1.  Aanmelden bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) met beheerdersreferenties.
 
     U kunt het volgende gebruiken:
     - De beheerdersaccount van de tenant.

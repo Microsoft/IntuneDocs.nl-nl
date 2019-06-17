@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e861348e3ba8e3caef92eac04899d48cc790262a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bc2173e2972e422ac629331110d3b86b787765da
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55842791"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040950"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>De bedrijfsportal-app installeren en u hierbij aanmelden
 
@@ -37,6 +37,6 @@ Installeer de bedrijfsportal-app op uw iOS-apparaat om toegang te krijgen tot uw
 
 3.  Open de bedrijfsportal-app, voer het e-mailadres en het wachtwoord van uw werk of school in en tik vervolgens op **Aanmelden**.
 
-    Als u zich voor het eerst aanmeldt bij de bedrijfsportalapp en uw bedrijf of school gebruikmaakt van Intune, wordt u gevraagd om uw apparaat in te schrijven bij Intune. Volg de stappen in [Uw iOS-apparaat inschrijven bij Intune](enroll-your-device-in-intune-ios.md) om uw apparaat in te schrijven. U kunt [zich ook aanmelden met een ander apparaat](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
+    Als u zich voor het eerst aanmeldt bij de bedrijfsportalapp en uw bedrijf of school gebruikmaakt van Intune, wordt u gevraagd om uw apparaat in te schrijven bij Intune. Volg de stappen in [Uw iOS-apparaat inschrijven bij Intune](enroll-your-device-in-intune-ios.md) om uw apparaat in te schrijven. U kunt [zich ook aanmelden met een ander apparaat](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#sign-in-from-another-device).
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

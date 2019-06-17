@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
-ms.translationtype: HT
+ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373501"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749917"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-basislijninstellingen voor Intune
 
-Bekijk de basislijninstellingen voor Microsoft Defender Advanced Threat Protection (voorheen Windows Defender Advanced Threat Protection) die worden ondersteund door Microsoft Intune. De standaardwaarden in dit artikel vertegenwoordigen de standaard basislijnconfiguratie voor Intune. Deze standaardwaarden vertegenwoordigen de aanbevolen configuratie voor Intune en komen mogelijk niet overeen met de standaardinstellingen voor Windows.
+Bekijk de basislijninstellingen voor Microsoft Defender Advanced Threat Protection (voorheen Windows Defender Advanced Threat Protection) die worden ondersteund door Microsoft Intune. De standaardinstellingen van de basislijn Advanced Threat Protection (ATP) vertegenwoordigen de aanbevolen configuratie voor ATP en komen mogelijk niet overeen met de standaardinstellingen voor andere beveiligingsbasislijnen.  
 
   De basislijn Microsoft Defender Advanced Threat Protection is beschikbaar als uw omgeving voldoet aan de vereisten voor het gebruik van [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites).
 
@@ -33,7 +33,7 @@ Bekijk de basislijninstellingen voor Microsoft Defender Advanced Threat Protecti
 
 
 > [!NOTE]  
-> De WDATP-basislijninstellingen bevinden zich in de **previewfase**. Tijdens de previewfase komt de lijst met beschikbare instellingen en de volgorde waarin de instellingen in deze inhoud worden weergegeven, mogelijk niet overeen met de opties die in de portal beschikbaar zijn. 
+> De ATP-basislijninstellingen bevinden zich in de **previewfase**. Tijdens de previewfase komt de lijst met beschikbare instellingen en de volgorde waarin de instellingen in deze inhoud worden weergegeven, mogelijk niet overeen met de opties die in de portal beschikbaar zijn.  
 >
 > Wanneer de basislijninstellingen zich niet meer in de previewfase bevinden, wordt deze inhoud bijgewerkt volgens een huidige lijst met beveiligingsbasislijninstellingen die door Intune worden ondersteund.
 

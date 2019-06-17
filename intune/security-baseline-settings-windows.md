@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 82fa4fc7f9e60dff3c08adf3281351cbfa8eb743
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045058"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749938"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Windows-beveiligingsbasislijninstellingen voor Intune  
 
-Bekijk de [Windows-beveiligingsbasislijninstellingen](security-baselines.md) die worden ondersteund door Microsoft Intune.  
+Bekijk de [Windows-beveiligingsbasislijninstellingen](security-baselines.md) die worden ondersteund door Microsoft Intune. De standaardinstellingen van de Windows-basislijn vertegenwoordigen de aanbevolen configuratie voor Windows en komen mogelijk niet overeen met de standaardwaarden van andere beveiligingsbasislijnen.  
 
 > [!NOTE]  
-> De Windows-beveiligingsbasislijninstellingen bevinden zich in de previewfase. Tijdens de previewfase varieert de lijst met beschikbare instellingen en de volgorde waarin de instellingen in deze inhoud worden weergegeven, al naargelang de opties die in de portal beschikbaar zijn.  
+> De Windows-beveiligingsbasislijninstellingen bevinden zich in de **previewfase**. Tijdens de previewfase varieert de lijst met beschikbare instellingen en de volgorde waarin de instellingen in deze inhoud worden weergegeven, al naargelang de opties die in de portal beschikbaar zijn.  
 >  
 > Wanneer de basislijninstellingen zich niet meer in de previewfase bevinden, wordt deze inhoud bijgewerkt met de niet-previewlijst met beveiligingsbasislijninstellingen die door Intune worden ondersteund.  
 
@@ -931,7 +931,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
   
   **Standaardinstelling**: Java uitschakelen  
   
-- **Uitgebreide beveiligde modus van Internet Explorer**   
+- **Uitgebreide beveiligde modus van Internet Explorer**  
   De uitgebreide beveiligde modus biedt extra bescherming tegen schadelijke websites door gebruik te maken van 64-bits processen op 64-bits versies van Windows. Op computers met minimaal Windows 8 beperkt de uitgebreide beveiligde modus ook de locaties die Internet Explorer in het register en bestandssysteem kan lezen. Als u deze beleidsinstelling inschakelt, wordt Uitgebreide beveiligde modus ingeschakeld. Voor elke zone waarvoor Beveiligde modus is ingeschakeld, wordt Uitgebreide beveiligde modus gebruikt. Gebruikers kunnen Uitgebreide beveiligde modus niet uitschakelen. Als u deze beleidsinstelling uitschakelt, wordt Uitgebreide beveiligde modus uitgeschakeld. In een zone waarvoor Beveiligde modus is ingeschakeld, wordt de Beveiligde modus-versie gebruikt die is geïntroduceerd in Internet Explorer 7 voor Windows Vista. Als u dit beleid niet configureert, kunnen gebruikers Uitgebreide beveiligde modus inschakelen of uitschakelen op het tabblad Geavanceerd van het dialoogvenster Internetopties.
   
   **Standaardinstelling**: ingeschakeld  

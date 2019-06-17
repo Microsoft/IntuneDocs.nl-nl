@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7068bb96b72861c0647c44261edef0c3e83a120c
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046953"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031672"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Licentieovereenkomsten voor Windows-pc-software in Microsoft Intune beheren
 
@@ -53,7 +53,7 @@ U kunt bovendien rapporten genereren waarin statistieken voor software-installat
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Microsoft-volumelicentieovereenkomsten toevoegen
 Intune-volumelicentieovereenkomsten bieden licentie-informatie voor software die is gekocht via Microsoft-volumelicentieovereenkomsten. U kunt Microsoft-volumelicentieovereenkomsten aan Intune toevoegen door overeenkomende sets overeenkomstnummers op te geven. De overeenkomst- of autorisatienummers moeten overeenkomen met de juiste licentie- of inschrijvingsnummers. Sets overeenkomstnummers worden verkregen bij de aankoop van de licentieovereenkomsten van het [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://account.manage.microsoft.com/admin/default.aspx) de optie **Licenties**.
+1.  Kies in de [Microsoft Intune-beheerconsole](https://admin.manage.microsoft.com/) de optie **Licenties**.
 
 2.  Selecteer op de pagina **Overeenkomsten toevoegen** in de sectie **Overeenkomsttype selecteren**de optie **Volumelicentieovereenkomst**.
 
@@ -138,7 +138,7 @@ Naast Microsoft-volumelicentieovereenkomsten kunt u ook andere typen licentieove
 
 ### <a name="to-add-other-software-agreements"></a>Andere softwareovereenkomsten toevoegen
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://account.manage.microsoft.com/admin/default.aspx) de optie **Licenties**.
+1.  Kies in de [Microsoft Intune-beheerconsole](https://admin.manage.microsoft.com/) de optie **Licenties**.
 
 2.  Kies **Overeenkomsten toevoegen** in de sectie **Andere softwarelicentieovereenkomsten**.
 
