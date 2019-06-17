@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454118"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744319"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune. 
 
@@ -40,3 +40,35 @@ U hoeft geen actie meer te ondernemen, maar u kunt overwegen uw IT-begeleiding b
 
 #### <a name="additional-information"></a>Aanvullende informatie 
 https://aka.ms/intune_fullscreen
+
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>Geplande wijziging: Intune zal vanaf september iOS 11 en hoger ondersteunen <!-- 4665342-->
+We verwachten dat iOS 13 in september wordt uitgebracht door Apple. Kort na de release van iOS 13 zullen Intune-inschrijving, de bedrijfsportal en de beheerde browser ondersteuning bieden voor iOS 11 en hoger.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Onder voorwaarde dat de mobiele Office 365-apps worden ondersteund in iOS 11.0 en hoger, heeft dit mogelijk geen gevolgen voor u omdat u waarschijnlijk het besturingssysteem of de apparaten al hebt geüpgraded. Als u echter over een van de hieronder vermelde apparaten beschikt of als u een van de hieronder vermelde apparaten wilt inschrijven, moet u er rekening mee houden dat de onderstaande apparaten alleen iOS 10 en eerdere versies ondersteunen. Deze apparaten moeten worden geüpgraded naar een apparaat dat ondersteuning biedt voor iOS 11 of hoger:
+
+- iPhone 5
+- iPhone 5c
+- iPad (4e generatie)
+
+Vanaf juli krijgen apparaten met iOS 10 en de bedrijfsportal die bij MDM zijn ingeschreven een bericht waarin wordt vermeld dat het besturingssysteem of het apparaat moet worden geüpgraded. Als u Application Protection Policies (APP) gebruikt, kunt u ook de toegangsinstelling 'Minimumversie van het iOS-besturingssysteem vereisen (alleen waarschuwing)' instellen.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+Controleer uw Intune-rapporten om te zien voor welke apparaten of gebruikers dit gevolgen kan hebben. Ga naar **Apparaten** > **Alle apparaten** en filter op besturingssysteem. U kunt extra kolommen toevoegen, zodat u eenvoudiger kunt vaststellen wie in uw organisatie apparaten met iOS 10 gebruikt. Verzoek uw eindgebruikers om vóór september hun apparaten te upgraden naar een ondersteunde besturingssysteemversie.
+
+### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>Geplande wijziging: Ondersteuning voor versie 8.1.1 en hoger van de Intune App SDK voor iOS <!-- 3586942-->
+Vanaf september 2019 biedt Intune ondersteuning voor iOS-apps met Intune App SDK 8.1.1 en hoger. Apps die zijn gemaakt met SDK-versies lager dan 8.1.1 worden niet meer ondersteund. Deze wijziging wordt van kracht met de Apple-release van iOS 13, die rond september wordt verwacht en ook is aangekondigd in MC181399.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Met de integratie van de Intune App SDK of App Wrapping kunt u bedrijfsgegevens via gegevensversleuteling beveiligen tegen niet-goedgekeurde toepassingen en gebruikers. De Intune App SDK voor iOS gebruikt standaard 256-bits versleutelingssleutels wanneer versleuteling is ingeschakeld door Intune App Protection Policies (APP). Na deze wijziging kunnen iOS-apps voor SDK-versies lager dan 8.1.1, die gebruikmaken van 128-bits versleutelingssleutels, geen gegevens meer delen met toepassingen die zijn geïntegreerd met SDK 8.1.1 of die gebruikmaken van de 256-bits sleutels. Alle iOS-apps moeten eerst over een SDK-versie 8.1.1 of hoger beschikken, als u het beveiligd delen van gegevens wilt toestaan.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
+Controleer uw Microsoft-apps, apps van derden en LOB-apps (Line-Of-Business). U moet ervoor zorgen dat al uw toepassingen die met Intune APP worden beveiligd, gebruikmaken van SDK-versie 8.1.1 of hoger.
+
+- Voor LOB-apps: U moet uw apps die zijn geïntegreerd met SDK-versie 8.1.1 of hoger mogelijk opnieuw publiceren. U wordt aangeraden de meest recente SDK-versie te gebruiken. Bekijk [Line-Of-Business-apps voorbereiden voor app-beveiligingsbeleid](../apps-prepare-mobile-application-management.md) om te zien hoe u uw LOB-apps voorbereidt voor app-beveiligingsbeleid.
+- Voor Microsoft-apps/apps van derden: Zorg ervoor dat u de meest recente versie van deze apps naar uw gebruikers implementeert.
+
+U moet zo nodig ook uw documentatie of de richtlijnen voor ontwikkelaars bijwerken, zodat deze wijziging in de ondersteuning voor de SDK is opgenomen.
+
+#### <a name="additional-information"></a>Aanvullende informatie
+https://docs.microsoft.com/intune/apps-prepare-mobile-application-management

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7419a316018ed5c883f89a51090a852680cd9e38
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040669"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804478"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune
 
@@ -30,6 +30,8 @@ Met op rollen gebaseerd toegangsbeheer (RBAC) kunt u beheren wie toegang heeft t
 Als u rollen wilt maken, bewerken of toewijzen, moet uw account een van de volgende machtigingen hebben in Azure AD:
 - **Globale beheerder**
 - **Intune-servicebeheerder** (ook wel bekend als **Intune-beheerder**)
+
+Voor advies en suggesties over Intune RBAC kunt u de volgende vijf video's bekijken, waarin voorbeelden en procedures worden getoond: [1](https://www.youtube.com/watch?v=5deXLMLcnKY), [2](https://www.youtube.com/watch?v=38dnMBLuxbQ), [3](https://www.youtube.com/watch?v=6vqg9cAkMbY), [4](https://www.youtube.com/watch?v=5yOLajFFMHE), [5](https://www.youtube.com/watch?v=P5DDvsSF4Wk).
 
 ## <a name="roles"></a>Rollen
 Met een rol wordt bepaald welke set machtigingen aan gebruikers wordt verleend die zijn toegewezen aan die rol.
@@ -84,8 +86,8 @@ Als u een rol wilt bekijken, kiest u **Intune** > **Rollen** > **Alle rollen** >
 
 -   **Eigenschappen**: De naam, beschrijving, rol, leden, bereiken en tags van de toewijzing.
 -   **Leden**: Alle gebruikers in vermelde groepen hebben een machtiging voor het beheren van de gebruikers/apparaten die in Bereik (groepen) worden vermeld.
--   **Bereik (groepen)**: Alle gebruikers/apparaten in deze groepen kunnen worden beheerd door de gebruikers in Leden.
--   **[Bereik (tags)](scope-tags.md)**: Gebruikers in Leden kunnen de resources zien die over dezelfde bereiktags beschikken.
+-   **Bereik (groepen)** : Alle gebruikers/apparaten in deze groepen kunnen worden beheerd door de gebruikers in Leden.
+-   **[Bereik (tags)](scope-tags.md)** : Gebruikers in Leden kunnen de resources zien die over dezelfde bereiktags beschikken.
 
 ### <a name="multiple-role-assignments"></a>Meerdere roltoewijzingen
 Als een gebruiker meerdere roltoewijzingen heeft, worden machtigingen in deze roltoewijzingen als volgt uitgebreid naar verschillende objecten:

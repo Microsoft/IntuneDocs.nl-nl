@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 06/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b3a566fd5c040e1c0007c10b1b57a64788a2323
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043825"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804699"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
@@ -97,8 +97,7 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
 
 ### <a name="step-1-specify-the-software-setup-file"></a>Stap 1: locatie van het software-installatiebestand opgeven
 
-1.  Meld u aan bij [Azure Portal](https://portal.azure.com/).
-2.  Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3.  Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps** > **Toevoegen**.
 4.  Selecteer in het app-deelvenster **Toevoegen** **Windows-app (Win32)** uit de opgegeven vervolgkeuzelijst.
 
@@ -163,10 +162,10 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
 2.  Configureer de volgende gegevens in het deelvenster **Een regel voor vereisten toevoegen**. Sommige van de waarden in dit deelvenster worden mogelijk automatisch ingevuld.
     - **Architectuur van besturingssysteem**: kies de architecturen die nodig zijn om de app te installeren.
     - **Minimumversie van het besturingssysteem**: selecteer de minimumversie van het besturingssysteem die nodig is om de app te installeren.
-    - **Vereiste schijfruimte (MB)**: voeg optioneel de vrije schijfruimte op het systeemstation toe die nodig is om de app te installeren.
-    - **Vereiste fysieke geheugen (MB)**: voeg optioneel het fysieke geheugen (RAM) toe dat nodig is om de app te installeren.
+    - **Vereiste schijfruimte (MB)** : voeg optioneel de vrije schijfruimte op het systeemstation toe die nodig is om de app te installeren.
+    - **Vereiste fysieke geheugen (MB)** : voeg optioneel het fysieke geheugen (RAM) toe dat nodig is om de app te installeren.
     - **Minimumaantal vereiste logische processors**: voeg optioneel het minimumaantal logische processors toe dat nodig is om de app te installeren.
-    - **Minimale vereiste processorsnelheid (MHz)**: voeg optioneel de minimale processorsnelheid toe die nodig is om de app te installeren.
+    - **Minimale vereiste processorsnelheid (MHz)** : voeg optioneel de minimale processorsnelheid toe die nodig is om de app te installeren.
 
 3. Klik op **Toevoegen** om de blade **Een vereisteregel toevoegen** weer te geven en aanvullende vereisteregels te configureren. Selecteer het **Vereistetype** om het regeltype te kiezen dat u wilt gebruiken om te bepalen hoe een vereiste moet worden gevalideerd. Vereisteregels kunnen op informatie over het bestandssysteem, registerwaarden of PowerShell-scripts worden gebaseerd. 
     - **Bestand**: Als u **Bestand** als **Vereistetype** kiest, moet de vereisteregel een bestand of map, datum, versie of grootte selecteren. 
@@ -291,7 +290,7 @@ U kunt kiezen of elke afhankelijke app automatisch moet worden geïnstalleerd. S
 U kunt met de volgende stappen een app-afhankelijkheid aan uw Win32-app toevoegen:
 
 1. Selecteer **Client-apps** > **Apps** in Intune om uw lijst met toegevoegde client-apps weer te geven. 
-2. Selecteer een toegevoegde **Windows-app (Win32-app)**. 
+2. Selecteer een toegevoegde **Windows-app (Win32-app)** . 
 3. Selecteer **Afhankelijkheden** om de afhankelijke apps toe te voegen die moeten worden geïnstalleerd voordat de Win32-app kan worden geïnstalleerd. 
 4. Klik op **Toevoegen** om een app-afhankelijkheid toe te voegen.
 5. Zodra u de afhankelijke app(s) hebt toegevoegd, klikt u op **Selecteren**.
@@ -342,12 +341,50 @@ Agentlogboeken op de clientcomputer staan doorgaans in `C:\ProgramData\Microsoft
 > *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
 > *C:\windows\IMECache*
 
-Zie [Problemen met de installatie van Win32-apps oplossen](troubleshoot-app-install.md#win32-app-installation-troubleshooting) voor meer informatie over het oplossen van problemen met Win32-apps.
+### <a name="detecting-the-win32-app-file-version-using-powershell"></a>De bestandsversie van de Win32-app detecteren met behulp van PowerShell
 
-### <a name="troubleshooting-areas-to-consider"></a>Gebieden voor probleemoplossing om te overwegen
+Als u problemen ondervindt bij het detecteren van de bestandsversie van de Win32-app, kunt u de volgende PowerShell-opdracht gebruiken of aanpassen:
+
+``` PowerShell
+
+$FileVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+#The below line trims the spaces before and after the version name
+$FileVersion = $FileVersion.Trim();
+if ("<file version of successfully detected file>" -eq $FileVersion)
+{
+#Write the version to STDOUT by default
+$FileVersion
+exit 0
+}
+else
+{
+#Exit with non-zero failure code
+exit 1
+}
+
+```
+Vervang in de bovenstaande PowerShell-opdracht de tekenreeks `<path to binary file>` door het pad naar uw Win32-appbestand. Een voorbeeld van een pad ziet er als volgt uit:<br>
+`C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
+
+Vervang ook de tekenreeks `<file version of successfully detected file>` door de bestandsversie die u moet detecteren. Een voorbeeld van een tekenreeks voor een bestandsversie ziet er als volgt uit:<br>
+`2019.0150.18118.00 ((SSMS_Rel).190420-0019)`
+
+Als u de versiegegevens van uw Win32-app moet ophalen, kunt u de volgende PowerShell-opdracht gebruiken:
+
+``` PowerShell
+
+[System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+
+```
+
+Vervang in de bovenstaande PowerShell-opdracht `<path to binary file>` door het bestandspad.
+
+### <a name="additional-troubleshooting-areas-to-consider"></a>Aanvullende gebieden voor probleemoplossing die u kunt overwegen
 - Controleer de targeting om ervoor te zorgen dat de agent op het apparaat is geïnstalleerd: een Win32-app gericht op een groep of een PowerShell-Script gericht op een groep maken een agentinstallatiebeleid voor de beveiligingsgroep.
 - Controleer de versie van het besturingssysteem: Windows 10 1607 en hoger.  
 - Controleer de Windows 10-SKU; Windows 10 S en Windows-versies met de S-modus ingeschakeld bieden geen ondersteuning voor MSI-installatie.
+
+Zie [Problemen met de installatie van Win32-apps oplossen](troubleshoot-app-install.md#win32-app-installation-troubleshooting) voor meer informatie over het oplossen van problemen met Win32-apps.
 
 ## <a name="next-steps"></a>Volgende stappen
 

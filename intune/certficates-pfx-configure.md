@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/08/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13858b257c1adbc8ce3147710d450c4a09ec9dc2
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: c1119a5681033574ec0a114442b122990da872bf
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454052"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749818"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -249,12 +249,17 @@ Updates voor de twee certificaatconnectors worden regelmatig uitgebracht. Als we
 
 De *PFX-certificaatconnector voor Microsoft Intune* [biedt ondersteuning voor automatische updates](#requirements), terwijl de *Intune-certificaatconnector* handmatig wordt bijgewerkt.
 
-### <a name="may-6-2019"></a>6 mei 2019
+### <a name="may-17-2019"></a>17 mei 2019  
+- **Connector voor PFX-certificaten voor Microsoft Intune - versie 6.1905.0.404**  
+  Wijzigingen in deze release:  
+  - Er is een probleem opgelost waarbij bestaande PFX-certificaten steeds opnieuw worden verwerkt, zodat de connector stopt met het verwerken van nieuwe aanvragen. 
+
+### <a name="may-6-2019"></a>6 mei 2019  
 - **PFX-certificaatconnector voor Microsoft Intune - versie 6.1905.0.402**  
   Wijzigingen in deze release:  
   - De polling-interval voor de connector wordt verlaagd van 5 minuten naar 30 seconden.
  
-### <a name="april-2-2019"></a>2 april 2019
+### <a name="april-2-2019"></a>2 april 2019  
 - **Intune-certificaatconnector - versie 6.1904.1.0**  
   Wijzigingen in deze release:  
   - Er is een probleem opgelost waarbij de connector zich mogelijk niet kan inschrijven bij Intune na aanmelding bij de connector met een globale beheerdersaccount.  

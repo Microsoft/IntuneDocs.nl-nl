@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374088"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819872"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Naleving voor Windows Defender ATP met voorwaardelijke toegang in Intune afdwingen
 
@@ -52,8 +52,7 @@ Om ATP met Intune te gebruiken, moet u het volgende geconfigureerd en klaar voor
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>Windows Defender ATP in Intune inschakelen
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecteer **Apparaatcompatibiliteit** > **Windows Defender ATP** > **Het Windows Defender-beveiligingscentrum openen**.
 
     ![Selecteren om het Windows Defender-beveiligingscentrum te openen](./media/atp-device-compliance-open-windows-defender.png)
@@ -132,7 +131,7 @@ Het beleid voor voorwaardelijke toegang blokkeert de toegang tot resources *als*
 > [!TIP]  
 > Voorwaardelijke toegang is een technologie van Azure Active Directory (Azure AD). Het knooppunt voor voorwaardelijke toegang dat via *Intune* wordt geopend, is hetzelfde als het knooppunt dat u opent via *Azure AD*.  
 
-1. Open in [Azure Portal](https://portal.azure.com) **Intune** > **Voorwaardelijke toegang** > **Nieuw beleid**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en selecteer **Voorwaardelijke toegang** > **Nieuw beleid**.
 2. Voer een **Naam** voor het beleid in en selecteer **Gebruikers en groepen**. Gebruik de opties Opnemen of Uitsluiten om uw groepen voor het beleid toe te voegen en selecteer **Klaar**.
 3. Selecteer **Cloud-apps** en kies welke apps u wilt beveiligen. Kies bijvoorbeeld **Apps selecteren** en selecteer **Office 365 SharePoint Online** en **Office 365 Exchange Online**.
 

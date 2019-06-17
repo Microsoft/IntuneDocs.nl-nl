@@ -16,51 +16,38 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80292fab9a8e35db23163f7c5a0dfc1c01b65848
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050533"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804667"
 ---
-# <a name="plan-communications"></a>De communicatie plannen
+# <a name="plan-communications"></a>De communicatie plannen 
+Het communicatieplan is een belangrijk element bij een Intune-migratie. Met de volgende hulpprogramma's en sjablonen kunt u eindgebruikers informeren en op weg helpen. De Intune Adoption Kit omvat e-mailsjablonen, een handleiding voor Intune-inschrijving en koppelingen naar instructievideo's voor de inschrijving van eindgebruikers.  
 
-Het communicatieplan is een belangrijk element bij een Intune-migratie. U kunt hetzelfde communicatieplan volgen voor elke fase van de migratie.
+Download:  [Intune Adoption Kit](http://aka.ms/IntuneAdoptionKit)
 
-## <a name="email-templates"></a>E-mail-sjablonen
+## <a name="email-templates"></a>E-mail-sjablonen 
+Het volgende e-mailcommunicatieplan wordt aangeraden. We bieden u sjablonen aan die u kunt aanpassen voor uw communicatieplan:
+- **E-mail 1**: informeer over de voordelen, verwachtingen en planning. Maak van de gelegenheid gebruik om te wijzen op eventuele andere nieuwe services waartoe gebruikers toegang zullen hebben op apparaten die met Intune worden beheerd. 
 
-Het volgende e-mailcommunicatieplan wordt aangeraden. Sjablonen voor u om uw communicatieplan aan te passen:
-
--   **E-mail \#1:** informeer over de voordelen, verwachtingen en planning. Maak van de gelegenheid gebruik om te wijzen op eventuele andere nieuwe services waartoe gebruikers toegang zullen hebben op apparaten die met Intune worden beheerd.<br/><br/>
-
-
-    -   [Sjabloon voor \#e-mail 1 downloaden](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
-<br></br>
-
--   **E-mail \#2:** kondig aan dat services nu kunnen worden gebruikt via Intune. Deel de gebruikers mee dat zij hun apparaten nu moeten inschrijven. Herinner gebruikers aan de voordelen en de strategische redenen voor de migratie.<br/><br/>
-
-
-    -   [Sjabloon voor \#e-mail 2 downloaden](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
-<br></br>
-
--   **E-mail \#3:** geef de gebruikers een tijdlijn voordat hun toegang wordt beïnvloed. Herinner de gebruikers nogmaals aan de voordelen en de strategische redenen voor de migratie. De timing van de e-mails moet een sliding window hebben die overeenkomt met uw faseperioden. Verstuur bijvoorbeeld in juni e-mail \#1 aan gebruikers voor fase 1, e-mail \#2 aan gebruikers voor fase 2 en e-mail \#3 aan gebruikers voor fase 3.<br/><br/>
-
-    -   [E-mail downloaden \#3 sjabloon](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
-
+- **E-mail 2**: kondig aan dat services nu kunnen worden gebruikt via Intune. Deel de gebruikers mee dat zij hun apparaten nu moeten inschrijven.  geef de gebruikers een tijdlijn voordat hun toegang wordt beïnvloed. Herinner gebruikers aan de voordelen en de strategische redenen voor de migratie.
 Na een bepaalde periode kunt u naleving afdwingen via het beleid voor voorwaardelijke toegang en dit als criterium gebruiken voor de toegang tot bedrijfsgegevens zoals is uitgelegd in [Eindgebruikers accepteren door middel van voorwaardelijke toegang](migration-guide-drive-adoption.md).
 
-## <a name="additional-communication-templates"></a>Aanvullende communicatiesjablonen
+## <a name="intune-enrollment-guide"></a>Handleiding voor Intune-inschrijving 
+U kunt deze PDF-bijlage zonder wijzigingen aan de gebruikers verstrekken of u kunt de Word-versie aanpassen en uw interne bronnen en contactinformatie opnemen.
 
-Intune beschikt over aanvullende sjablonen die u kunt gebruiken om apparaatregistratie bij eindgebruikers te promoten:
-
--   [Eindgebruikers informeren over het gebruik van Microsoft Intune](end-user-educate.md) voor de stappen die voor de registratie moeten worden uitgevoerd voor de verschillende platformen van mobiele besturingssystemen.
-
--   De [Intune-eindgebruikersimplementatiesjabloon voor IT-beheerders](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) is een aanpasbaar Word-document met uitleg over het registreren van Android, iOS en Mac-apparaten in Intune is.
-
--   De [FastTrack for EMS how to guides & emails](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) (De gebruiksaanwijzingen en e-mails voor FastTrack foor EMS) kunnen worden aangepast met uw bedrijfslogo om het gebruik van Intune en EMS binnen uw organisatie promoten.
-
--   Deel de [URL van de bedrijfsportal-app](http://go.microsoft.com/fwlink/?LinkID=396941) met uw Android-, iOS- en Windows-gebruikers. Met deze URL wordt omgeleid naar de juiste bedrijfsportal-app die op Android-, iOS- en Windows-apparaten wordt vermeld.
+## <a name="instructional-videos"></a>Instructievideo's
+We hebben korte video's gemaakt waarin de procedure stapsgewijs wordt besproken en aan de hand waarvan de gebruikers eenvoudig hun apparaten in Intune kunnen inschrijven.
+- [Uw Android-apparaat inschrijven](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
+- [Uw Android-apparaat met werkprofiel inschrijven](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
+- [iOS-apparaten inschrijven](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [macOS-apparaten inschrijven](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
+- [Uw Windows-apparaat inschrijven](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
 ## <a name="next-steps"></a>Volgende stappen
-
-[Eindgebruikers accepteren door middel van voorwaardelijke toegang](migration-guide-drive-adoption.md).
+Intune beschikt over aanvullende bronnen waarmee u de inschrijving van apparaten bij eindgebruikers onder de aandacht kunt brengen:
+- [Eindgebruikers informeren over het gebruik van Microsoft Intune](https://docs.microsoft.com/intune/end-user-educate) voor de stappen die voor de registratie moeten worden uitgevoerd voor de verschillende platformen van mobiele besturingssystemen. 
+- In [Intune-apparaatinschrijving voor IT-beheerders](https://docs.microsoft.com/intune/device-enrollment) wordt uitgelegd hoe Android-, iOS- en Mac-apparaten bij Intune worden ingeschreven.
+- Deel de [URL van de bedrijfsportal-app](http://go.microsoft.com/fwlink/?LinkID=396941) met uw Android-, iOS- en Windows-gebruikers. Met deze URL wordt omgeleid naar de juiste bedrijfsportal-app die op Android-, iOS- en Windows-apparaten wordt vermeld.

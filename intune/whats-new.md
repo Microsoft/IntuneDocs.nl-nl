@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
-ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
+ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469584"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749943"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -106,8 +106,11 @@ Deze vier apps worden automatisch toegevoegd aan de lijst met Intune-apps van be
 
 ### <a name="device-configuration"></a>Apparaatconfiguratie
 
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune-----1533038---"></a>Bijgewerkte PFX-certificaatconnector voor Microsoft Intune  <!-- 1533038 -->
+We hebben een update uitgebracht voor de [PFX Certificate Connector voor Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) die een oplossing biedt voor een probleem waarbij bestaande PFX-certificaten steeds opnieuw worden verwerkt. Hierdoor stopt de connector met het verwerken van nieuwe aanvragen.
+
 ####  <a name="intune-security-tasks-for-defender-atp-in-public-preview--------3208597---"></a>Intune-beveiligingstaken voor Defender ATP (in openbare preview)     <!-- 3208597 -->
-In de openbare preview kunt u Intune gebruiken voor het beheren van beveiligingstaken voor Microsoft Defender Advanced Threat Protection (ATP). Door deze integratie met ATP wordt er een op risico's gebaseerde aanpak voor het detecteren, classificeren en oplossen van beveiligingsproblemen en onjuiste configuraties van eindpunten toegevoegd, terwijl er ook minder tijd zit tussen het detecteren en oplossen van beveiligingsproblemen.
+In de openbare preview-versie kunt u Intune gebruiken voor het beheren van [beveiligingstaken voor Microsoft Defender Advanced Threat Protection (ATP)](atp-manage-vulnerabilities.md). Door deze integratie met ATP wordt er een op risico's gebaseerde aanpak voor het detecteren, classificeren en oplossen van beveiligingsproblemen en onjuiste configuraties van eindpunten toegevoegd, terwijl er ook minder tijd zit tussen het detecteren en oplossen van beveiligingsproblemen.
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---idstaged--"></a>Controleren of er zich een TPM-chipset in een nalevingsbeleid voor Windows 10-apparaten bevindt <!-- 3617671   idstaged-->
 Veel apparaten met Windows 10 en hoger hebben TPM-chipsets (Trusted Platform Module). Deze update bevat een nieuwe nalevingsinstelling die de versie van de TPM-chip in het apparaat controleert. 
@@ -116,7 +119,7 @@ Deze instelling wordt beschreven in [Instellingen voor nalevingsbeleid voor appa
 
 Van toepassing op: Windows 10 en hoger
 
-#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>Voorkomen dat gebruikers hun persoonlijke hotspot wijzigen en logboekregistratie van Siri-server op iOS-apparaten uitschakelen <!-- 4097904   --> 
+#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>Voorkomen dat gebruikers hun persoonlijke hotspot wijzigen en logboekregistratie van Siri-server op iOS-apparaten uitschakelen <!-- 4097904   -->  
 U maakt een profiel met apparaatbeperkingen op het iOS-apparaat (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS** voor platform > **Apparaatbeperkingen** voor profieltype). Deze update bevat nieuwe instellingen die u kunt configureren:
 
 - **Ingebouwde apps**: logboekregistratie op de server voor Siri-opdrachten

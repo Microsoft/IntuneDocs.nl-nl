@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9edfa2ec7a408f512d4cb0b99a468db0b29f5868
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f1b1197671b54cb5374bd79b6acbeb8137c0135c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044192"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819892"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Intune-inschrijving van volledig beheerde Android Enterprise-apparaten instellen (preview-versie)
 
@@ -55,8 +55,11 @@ Volg deze stappen om het beheer van volledig beheerde Android Enterprise-apparat
 
 ### <a name="enable-corporate-owned-user-devices"></a>Apparaten in bedrijfseigendom inschakelen
 
-1. Kies in de [Intune-portal](https://portal.azure.com) **Apparaatinschrijving** > **Android-inschrijving** > **Bedrijfseigendom, volledig beheerde gebruikersapparaten (preview)**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Bedrijfseigendom, volledig beheerde gebruikersapparaten (preview)** .
 2. Onder **Allow users to enroll corporate-owned user devices** (Gebruikers toestaan apparaten in bedrijfseigendom in te schrijven) kiest u **Ja**.
+
+[!NOTE]
+Als u een Azure AD-beleid voor voorwaardelijke toegang hebt gedefinieerd dat gebruikmaakt van de regel *vereisen dat een apparaat moet worden gemarkeerd als compatibel* en dat geldt voor **alle cloud-apps**, **Android** en **browsers**, moet u de cloud-app van **Microsoft Intune** uitsluiten van dit beleid. Dit komt omdat bij Android-installaties gebruik wordt gemaakt van een Chrome-tabblad om de gebruikers bij de inschrijving te verifiëren. Zie [Documentatie voor voorwaardelijke toegang van Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/) voor meer informatie.
 
 Wanneer deze instelling is ingesteld op **Ja**, ontvangt u een inschrijvingstoken (een willekeurige tekenreeks) en een QR-code voor uw Intune-tenant. Deze inschrijvingstoken is geldig voor alle gebruikers en verloopt niet. Afhankelijk van het Android-besturingssysteem en de versie van het apparaat kunt u het token of de QR-code gebruiken om het kioskapparaat in te schrijven.
 

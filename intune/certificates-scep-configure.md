@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 06/06/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0f7ce806b1ed2a17b59add467b1b0af2a40578
-ms.sourcegitcommit: 023b1293b47314b77eb80997bbd8aa679db90880
+ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448107"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744330"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -115,7 +115,8 @@ Bij deze stap doet u het volgende:
    - Selecteer in **Beveiliging** het NDES-serviceaccount en wijs hieraan de machtiging **Registreren** toe voor de sjabloon. Intune-beheerders die SCEP-profielen maken, vereisen **leesrechten** om naar de sjabloon te kunnen bladeren tijdens het maken van SCEP-profielen.
 
      > [!NOTE]
-     > Voor het intrekken van certificaten moet het NDES-serviceaccount voor elke certificaatsjabloon dat door een certificaatprofiel wordt gebruikt, beschikken over rechten voor het *verlenen en beheren van certificaten*.
+     > Het NDES-serviceaccount moet over rechten voor het *verlenen en beheren van certificaten* beschikken om certificaten in te trekken. Als u deze machtiging wilt delegeren, opent u de beheerconsole voor de certificeringsinstantie en klikt u met de rechtermuisknop op de naam van de certificeringsinstantie. Voeg vervolgens op het tabblad Beveiliging het account toe of selecteer dit en schakel daarna het selectievakje voor **Certificaten verlenen en beheren** in.
+
 
 3. Controleer de **geldigheidsperiode** op het tabblad **Algemeen** van de sjabloon. Standaard gebruikt Intune de waarde die is geconfigureerd in de sjabloon. U kunt de CA echter zodanig configureren dat de aanvrager een andere waarde kan invoeren, die u vervolgens vanuit de Intune-beheerconsole kunt instellen. Als u altijd de waarde in de sjabloon wilt gebruiken, slaat u de rest van deze stap over.
 
@@ -299,15 +300,15 @@ Bij deze stap doet u het volgende:
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen**.
-3. Download de connector voor het SCEP-bestand en sla deze op. Sla het bestand op op een locatie die toegankelijk is vanaf de server waar u de connector gaat installeren.
+3. Download de connector voor het SCEP-bestand en sla deze op. U moet het bestand op een locatie opslaan die toegankelijk is vanaf de NDES-server waarop u de connector gaat installeren.
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
 
-4. Nadat het downloaden is voltooid, gaat u naar de server waarop uw NDES-exemplaar (NDES: Registratieservice voor netwerkapparaten) wordt gehost. Vervolgens:
+4. Nadat het downloaden is voltooid, gaat u naar de NDES-server waarop uw NDES (Network Device Enrollment Service) wordt gehost. Vervolgens:
 
     1. Controleer of .NET 4.5 Framework is geïnstalleerd. Dit wordt vereist door de NDES-certificaatconnector. .NET Framework 4.5 wordt automatisch geïnstalleerd met Windows Server 2012 R2 en nieuwere versies.
-    2. Voer het installatieprogramma uit (**NDESConnectorSetup.exe**). Het installatieprogramma installeert ook de beleidsmodule voor NDES en de CRP-webservice. De CRP-webservice, CertificateRegistrationSvc, wordt als een toepassing in IIS uitgevoerd.
+    2. Gebruik een account met beheerdersrechten voor de server om het installatieprogramma (**NDESConnectorSetup.exe**) uit te voeren. Het installatieprogramma installeert ook de beleidsmodule voor NDES en de CRP-webservice. De CRP-webservice, CertificateRegistrationSvc, wordt als een toepassing in IIS uitgevoerd.
 
     > [!NOTE]
     > Wanneer u NDES installeert en Intune zelfstandig wordt gebruikt, wordt de CRP-service automatisch met de certificaatconnector geïnstalleerd. Wanneer u Intune met Configuration Manager gebruikt, installeert u het certificaatregistratiepunt als een afzonderlijke sitesysteemfunctie.
@@ -335,7 +336,7 @@ Bij deze stap doet u het volgende:
 
     Als uw organisatie een proxyserver gebruikt en de NDES-server de proxy nodig heeft om toegang tot internet te krijgen, selecteert u **Proxyserver gebruiken**. Voer vervolgens de naam van de proxyserver, de poort en de accountreferenties in om verbinding te maken.
 
-    Selecteer het tabblad **Geavanceerd** en voer vervolgens referenties in voor een account met de machtiging **Certificaten verlenen en beheren** op uw verlenende certificeringsinstantie. **Pas** de wijzigingen toe.
+    Selecteer het tabblad **Geavanceerd** en voer vervolgens referenties in voor een account met de machtiging **Certificaten verlenen en beheren** op uw verlenende certificeringsinstantie. **Pas** de wijzigingen toe. Als u deze machtiging voor uw NDES-serviceaccount hebt gedelegeerd bij het [configureren van uw certificeringsinstantie](#configure-the-certification-authority), geeft u hier dat account op. 
 
     U kunt nu de gebruikersinterface van de certificaatconnector sluiten.
 
