@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87bd539199ec4f8b43f0679b251bd550cd837651
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 659fdb9b67b941a27cef5a3680537f3eeb3bbbeb
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041316"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031683"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Persoonlijke gegevens controleren, exporteren of verwijderen in Intune
 
@@ -58,13 +58,13 @@ Er zijn drie manieren om persoonlijke gegevens te verwijderen uit Intune-beheer:
 
 ### <a name="delete-a-user-from-intune"></a>Een gebruiker uit Intune verwijderen
 
-Als u de persoonlijke gegevens van een eindgebruiker uit Intune wilt verwijderen, moet een beheerder [de gebruiker verwijderen uit Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad). Wanneer de gebruiker wordt verwijderd uit AAD (permanent verwijderd), ontvangt Intune het verwijdersignaal van AAD. Vervolgens worden alle persoonlijke gegevens van de gebruiker verwijderd uit de Intune-service. De gegevens van de gebruiker worden binnen 30 dagen na de verwijderingsactie verwijderd uit de Intune-service.
+Als u de persoonlijke gegevens van een eindgebruiker uit Intune wilt verwijderen, moet een beheerder [de gebruiker verwijderen uit Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user). Wanneer de gebruiker wordt verwijderd uit AAD (permanent verwijderd), ontvangt Intune het verwijdersignaal van AAD. Vervolgens worden alle persoonlijke gegevens van de gebruiker verwijderd uit de Intune-service. De gegevens van de gebruiker worden binnen 30 dagen na de verwijderingsactie verwijderd uit de Intune-service.
 
 ### <a name="reset-device-to-factory-settings"></a>De fabrieksinstellingen van het apparaat terugzetten
 Wanneer u de fabrieksinstellingen van het apparaat terugzet, worden alle bedrijfsgegevens en persoonlijke gegevens teruggezet naar de oorspronkelijke fabrieksinstellingen. Dit is bijvoorbeeld handig als u het apparaat aan een volgende werknemer wilt geven. Gebruikersbestanden, door de gebruiker geïnstalleerde toepassingen en niet-standaardinstellingen worden verwijderd. Deze gegevens worden binnen 30 dagen na de verwijderingsactie verwijderd uit de Intune-service.
 
 ### <a name="user-self-removal-from-intune-management"></a>De gebruiker verwijdert zichzelf uit Intune-beheer
-Gebruikers kunnen hun persoonlijke [Android-, Apple- of Windows-](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android.md)apparaat uit Intune-beheer verwijderen zonder hulp van de beheerder.   
+Gebruikers kunnen hun persoonlijke [Android-, Apple- of Windows-](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)apparaat uit Intune-beheer verwijderen zonder hulp van de beheerder.   
 
 ### <a name="retire"></a>Buiten gebruik stellen
 Via de actie **Buiten gebruik stellen** worden door Intune ingerichte gegevens verwijderd, zoals bedrijfstoepassingen, gegevens over apps die door Intune worden beheerd, beleidsinstellingen en e-mailprofielen die via Intune worden ingericht. Bij deze actie blijven de persoonlijke gegevens van de gebruiker op het apparaat behouden.
@@ -78,7 +78,7 @@ Wanneer u een hybride MDM-omgeving hebt (hierin is Intune geïntegreerd met Conf
 
 1. Verwijder de gebruiker uit uw lokale Active Directory (AD). Hierdoor wordt de gebruiker niet meer gesynchroniseerd naar Azure AD en ook niet meer gedetecteerd via Configuration Manager-detectie. 
 2. Verwijder de gebruiker uit de Configuration Manager-console om de gebruiker en gekoppelde gegevens uit Configuration Manager te verwijderen. Ga in de console naar **Asset en naleving** > **Gebruikers**, klik met de rechtermuisknop op de gebruiker om deze te verwijderen en klik vervolgens op **Verwijderen**.
-3. [Gebruiker uit AAD verwijderen](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad). Hierdoor worden de gebruiker en gekoppelde gegevens zowel uit Azure Active Directory als Intune verwijderd. Wanneer de gebruiker wordt verwijderd uit AAD (permanent verwijderd), ontvangt Intune het verwijdersignaal van AAD. Vervolgens worden alle persoonlijke gegevens van de gebruiker verwijderd uit de Intune-service. De gegevens van de gebruiker worden binnen 30 dagen na de verwijderingsactie verwijderd uit de Intune-service.
+3. [Gebruiker uit AAD verwijderen](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user). Hierdoor worden de gebruiker en gekoppelde gegevens zowel uit Azure Active Directory als Intune verwijderd. Wanneer de gebruiker wordt verwijderd uit AAD (permanent verwijderd), ontvangt Intune het verwijdersignaal van AAD. Vervolgens worden alle persoonlijke gegevens van de gebruiker verwijderd uit de Intune-service. De gegevens van de gebruiker worden binnen 30 dagen na de verwijderingsactie verwijderd uit de Intune-service.
 
 > [!Important]
 >De onboarding van nieuwe hybride MDM-klanten is afgeschaft. Zie de blogpost [Overstappen van hybride Mobile Device Management naar Intune op Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) voor meer informatie.

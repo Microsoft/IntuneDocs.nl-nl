@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ddd08baa99ebf7d6e7701d8345e42a72f0dbd57
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: db7f008e67c0523a373da24dd0a04f3556d9dd4c
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046556"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031377"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium integreren met Intune
 
@@ -31,7 +31,7 @@ Voer de volgende stappen uit om de Zimperium Mobile Threat Defense-oplossing te 
 ## <a name="before-you-begin"></a>Voordat u begint
 
 > [!NOTE]
-> De volgende stappen moeten worden uitgevoerd in de [Zimperium MTD-console](https://sso.zimperium.com/signon/aad/).
+> De volgende stappen moeten worden uitgevoerd in de [Zimperium MTD-console](https://www.zimperium.com/platform).
 
 Zorg ervoor dat u de volgende abonnementen en referenties bij de hand hebt voordat u begint met de integratie van Zimperium met Intune:
 
@@ -66,7 +66,7 @@ Zie voor meer informatie over toestemming en Azure Active Directory-toepassingen
 
 ## <a name="to-set-up-zimperium-integration"></a>Instellen van Zimperium-integratie
 
-1.  Ga naar [Zimperium MTD-console](https://sso.zimperium.com/signon/aad/) en meld u aan met uw referenties. Om het installatieproces van de Zimperium-integratie uit te voeren, moet u zich aanmelden als een Azure Active Directory-gebruiker die de rol Globale beheerder heeft. Bij deze eenmalige installatiebewerking worden de globale beheerdersrechten gebruikt om de Zimperium-apps in uw organisatie toestemming te verlenen om te communiceren met Intune. 
+1.  Ga naar [Zimperium MTD-console](https://www.zimperium.com/platform) en meld u aan met uw referenties. Om het installatieproces van de Zimperium-integratie uit te voeren, moet u zich aanmelden als een Azure Active Directory-gebruiker die de rol Globale beheerder heeft. Bij deze eenmalige installatiebewerking worden de globale beheerdersrechten gebruikt om de Zimperium-apps in uw organisatie toestemming te verlenen om te communiceren met Intune. 
 
 2.  Kies **Beheer** in het menu links.
 
