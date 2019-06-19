@@ -1,7 +1,7 @@
 ---
 title: Problemen met voorwaardelijke toegang oplossen
 titleSuffix: Microsoft Intune
-description: Dit kunt u doen wanneer uw gebruikers geen toegang krijgen tot bedrijfsbronnen via de voorwaardelijke toegang van Intune.
+description: Dit kunt u doen wanneer uw gebruikers geen toegang krijgen tot bedrijfsresources via voorwaardelijke toegang van Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5aeae0d4256232d01c7e6171b10159a130b513
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044673"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043916"
 ---
 # <a name="troubleshoot-conditional-access"></a>Problemen met voorwaardelijke toegang oplossen
 
-U kunt toegang tot Office 365-services zoals Exchange Online, SharePoint Online, Skype voor Bedrijven Online, Exchange on-premises en andere services beschermen door Intune en voorwaardelijke toegang te gebruiken. Hiermee kunt u ervoor zorgen dat de toegang tot bedrijfsresources wordt beperkt tot apparaten die bij Intune zijn ingeschreven en de regels voor voorwaardelijke toegang naleven die u in de Intune-beheerconsole of via Azure Active Directory hebt ingesteld. In dit artikel wordt beschreven wat u moet doen wanneer uw gebruikers geen toegang kunnen krijgen tot resources die met voorwaardelijke toegang zijn beschermd, of wanneer gebruikers wel toegang tot beschermde resources kunnen krijgen, maar eigenlijk zouden moeten worden geblokkeerd.
+U kunt toegang tot Office 365-services, zoals Exchange Online, SharePoint Online, Skype voor Bedrijven Online, Exchange on-premises en andere services, beschermen door Intune en voorwaardelijke toegang te gebruiken. Hiermee zorgt u ervoor dat de toegang tot bedrijfsresources wordt beperkt tot apparaten die bij Intune zijn ingeschreven en de regels voor voorwaardelijke toegang naleven die u in de Intune-beheerconsole of via Azure Active Directory hebt ingesteld. In dit artikel wordt beschreven wat u moet doen wanneer uw gebruikers geen toegang kunnen krijgen tot resources die met voorwaardelijke toegang zijn beschermd, of wanneer gebruikers wel toegang tot beschermde resources kunnen krijgen, maar eigenlijk zouden moeten worden geblokkeerd.
 
 ## <a name="requirements-for-conditional-access"></a>Vereisten voor voorwaardelijke toegang
 
@@ -64,9 +64,9 @@ Deze voorwaarden voor elk apparaat zijn terug te vinden in Azure Portal en in he
 
 ## <a name="devices-are-noncompliant-but-users-are-not-blocked"></a>Apparaten zijn niet-conform maar gebruikers worden niet geblokkeerd
 
-- Voor Windows-pc's wordt met voorwaardelijke toegang alleen de systeemeigen e-mail-app, Office 2013 met moderne verificatie of Office 2016 geblokkeerd. Voor het blokkeren van eerdere versies van Outlook of alle mail-apps op Windows-pc's zijn AAD-apparaatregistraties en Active Directory Federation Services-configuraties (AD FS) vereist conform de instructies bij [Voorwaardelijke toegang instellen voor SharePoint Online en Exchange Online voor Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
+- Voor Windows-pc's wordt met voorwaardelijke toegang alleen de systeemeigen e-mail-app, Office 2013 met moderne verificatie of Office 2016 geblokkeerd. Voor het blokkeren van eerdere versies van Outlook of alle mail-apps op Windows-pc's zijn AAD-apparaatregistraties en Active Directory Federation Services-configuraties (AD FS) vereist conform de instructies in [Voorwaardelijke toegang instellen voor SharePoint Online en Exchange Online voor Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
 - Als het apparaat selectief wordt gewist of buiten gebruik wordt gesteld in Intune, kan het zijn dat het apparaat nog enige uren na de buitengebruikstelling toegang heeft. Dit komt doordat Exchange de toegangsrechten gedurende zes uur in het cachegeheugen opslaat. Overweeg andere manieren om gegevens op buiten gebruik gestelde apparaten te beveiligen in dit scenario.
-- Surface Hub-apparaten bieden ondersteuning voor voorwaardelijke toegang; u moet echter wel het nalevingsbeleid implementeren in apparaatgroepen (niet in gebruikersgroepen) voor een juiste evaluatie.
+- Surface Hub-apparaten bieden ondersteuning voor voorwaardelijke toegang; voor een juiste evaluatie moet u echter wel het nalevingsbeleid implementeren in apparaatgroepen (niet in gebruikersgroepen).
 - Controleer de toewijzingen voor uw nalevingsbeleid en uw beleid voor voorwaardelijke toegang. Als een gebruiker geen deel uitmaakt van de groep waaraan het beleid wordt toegewezen, of wanneer hij of zij deel uitmaakt van een groep die wordt uitgesloten, wordt de gebruiker niet geblokkeerd. Alleen apparaten voor gebruikers in een toegewezen groep worden gecontroleerd op naleving.
 
 ## <a name="noncompliant-device-is-not-blocked"></a>Niet-compatibel apparaat wordt niet geblokkeerd

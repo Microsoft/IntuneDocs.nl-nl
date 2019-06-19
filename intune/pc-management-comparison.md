@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47c5892541359263383621307d269936f01fa2c6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041536"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044518"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Het beheer van Windows-pc's als computers of mobiele apparaten vergelijken
 
@@ -43,7 +43,7 @@ Organisaties kunnen Microsoft Intune gebruiken voor het beheren van Windows-pc's
 |**Inventaris**|Beschikbaar <br>[Hardware- en software-inventaris voor Windows-pc's weergeven](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|Beschikbaar <br>[App-gegevens controleren](apps-monitor.md)<br>[Wat is apparaatbeheer](device-management.md)|
 |**Windows-firewallbeleid**|Beschikbaar <br>[Windows-pc's beschermen met Windows Firewall-beleid](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Beschikbaar <br>[Windows Defender Firewall](endpoint-protection-windows-10.md#windows-defender-firewall)|
 |**Antimalwarebeveiliging**|Endpoint Protection<br>[Voor een betere beveiliging van Windows-pc's zorgen met Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[Windows Defender inschakelen](advanced-threat-protection.md)|
-|**Hulp op afstand** |TeamViewer<br>[Hulp op afstand voor Windows-pc's aanvragen en bieden](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [TeamViewer gebruiken voor het extern beheren van Intune-apparaten](device-profile-android-teamviewer.md) |
+|**Hulp op afstand** |TeamViewer<br>[Hulp op afstand voor Windows-pc's aanvragen en bieden](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [TeamViewer gebruiken voor het extern beheren van Intune-apparaten](teamviewer-support.md) |
 |**App-implementatie** | Niet beschikbaar voor Microsoft Store voor Bedrijven,<br>alleen .exe, .appx, en .msi die uit meerdere bestanden bestaat<br>[Apps toevoegen voor Windows-pc's met de Intune-softwareclient ](add-apps-for-windows-pcs-in-microsoft-intune.md)|Beschikbaar voor Microsoft Store-apps en Line-Of-Business-apps<br>[Windows Store-apps toevoegen](store-apps-windows.md)<br>[Windows-Line-Of-Business (LOB)-apps toevoegen](lob-apps-windows.md)|
 |**App-beveiliging**|Niet beschikbaar|Beschikbaar <br>[Wat zijn beleidsregels voor de beveiliging van apps?](app-protection-policy.md)|
 |**Health Attestation**|Niet beschikbaar|Beschikbaar|

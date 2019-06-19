@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7fcee9a5d721eb3c898c65e18c6fd56189739ffa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
+ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840523"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66840961"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>De bedrijfsportal-app bijwerken
 
@@ -29,7 +29,7 @@ In dit artikel wordt beschreven hoe u uw versie van de bedrijfsportal-app kunt b
 * Er een nieuwere versie van de bedrijfsportal beschikbaar is.
 * Uw versie van de bedrijfsportal niet meer wordt ondersteund.
 
-Met deze stappen wordt beschreven hoe u de app op Android-, iOS- en Windows-apparaten kunt bijwerken of de nieuwste versie van de app kunt downloaden.    
+Met deze stappen wordt beschreven hoe u de app op Android-, iOS-, macOS- en Windows-apparaten bijwerkt of de nieuwste versie van de app downloadt.    
 
 ## <a name="update-the-company-portal-app-on-your-android-device"></a>De bedrijfsportal-app op uw Android-apparaat bijwerken  
 
@@ -41,6 +41,16 @@ Wanneer een nieuwe versie beschikbaar is, wordt de optie **Update** weergegeven 
 
 1. Ga naar de App Store en zoek naar **Intune**.  
 2. Wanneer u de app hebt gevonden, tikt u op **Bijwerken**.  
+
+## <a name="update-the-company-portal-app-on-your-macos-device"></a>De bedrijfsportal-app op uw macOS-apparaat bijwerken
+
+Bedrijfsportal ingesteld om automatisch te installeren updates zodra deze beschikbaar komen. 
+
+1. Open de bedrijfsportal-App en Ga naar **Help**. 
+2. Selecteer **controleren op updates**. 
+3. Selecteer op het scherm Microsoft AutoUpdate **automatisch downloaden en installeren**. 
+
+Beschikbare updates wil weergeven, selecteert u **controleren op updates**.  
 
 ## <a name="update-the-company-portal-app-on-your-windows-device"></a>De bedrijfsportal-app op uw Windows-apparaat bijwerken
 Als u automatisch updates wilt ontvangen zodra deze beschikbaar zijn, opent u de Microsoft Store en gaat u naar **Instellingen**. Schakel **App-updates** in. Als u recente updates en apps in de downloadwachtrij wilt bekijken, gaat u naar **Downloads en updates**.  

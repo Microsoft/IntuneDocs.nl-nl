@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
-ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
-ms.translationtype: MTE75
+ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354226"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041125"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -430,9 +430,9 @@ Deze instellingen gebruiken de [beleid-CSP DeviceLock](https://docs.microsoft.co
     > [!IMPORTANT]
     > Als de wachtwoordvereiste op een Windows-bureaublad wordt gewijzigd, heeft dit een invloed op gebruikers de volgende keer dat ze zich aanmelden, omdat het apparaat op dat moment van niet-actief naar actief gaat. Gebruikers met wachtwoorden die aan de vereisten voldoen, worden nog steeds gevraagd hun wachtwoord te wijzigen.
     
-  - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: Voer het aantal mislukte verificaties in dat is toegestaan voordat het apparaat wordt gewist (tussen 1-11). Met `0` (nul) kan de functionaliteit voor het wissen van apparaten worden uitgeschakeld.
+  - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: Voer het aantal mislukte verificaties in dat is toegestaan voordat het apparaat kan worden gewist. Het maximum is 11 keer. Het geldige dat u invoert, is afhankelijk van de editie. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) bevat de ondersteunde waarden. Met `0` (nul) kan de functionaliteit voor het wissen van apparaten worden uitgeschakeld.
 
-    Deze instelling heeft een verschillend effect per editie. Zie voor meer informatie [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
+    Deze instelling heeft per editie een verschillend effect. Raadpleeg [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) voor meer informatie over deze instelling.
 
   - **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**: Hiermee voert u de hoeveelheid tijd in die een apparaat inactief moet zijn voordat het scherm wordt vergrendeld.
   - **Wachtwoord verloopt (dagen)** : Hiermee voert u de hoeveelheid tijd in waarna het wachtwoord van een apparaat moet worden gewijzigd (tussen 1-365). Voer bijvoorbeeld `90` als u wilt dat het wachtwoord na 90 dagen verloopt.

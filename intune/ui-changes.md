@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 207a3f950d6fca2d6fcbe024f24fbf05487f2151
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040395"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046335"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Waar is de Intune-functie die ik zoek gebleven in Azure?
 Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid gebruikgemaakt om een aantal taken logischer in te delen. Maar dergelijke verbeteringen betekenen wel dat u de nieuwe indeling moet leren kennen. Deze referentiegids is speciaal bedoeld voor degenen die heel vertrouwd zijn met Intune in de klassieke portal, en die zich afvragen waar bepaalde functies in Intune zijn gebleven in Azure Portal. Als een functie die u zoekt niet wordt behandeld in dit artikel, laat dan een reactie achter onder het artikel, zodat we het kunnen bijwerken.
@@ -70,14 +70,14 @@ De mogelijkheid om apparaten in persoonlijk eigendom toe te staan of te blokkere
 Nieuwe beperkingsmogelijkheden worden uitsluitend toegevoegd aan Azure Portal.
 
 ## <a name="where-did-my-conditional-access-policies-go"></a>Waar is mijn beleid voor voorwaardelijke toegang?
-Nadat uw tenant is gemigreerd naar Azure Portal, blijven de beleidsregels voor voorwaardelijke toegang van uw tenant van kracht. U kunt deze echter niet weergeven of wijzigen via Intune in Azure Portal.
+Nadat uw tenant is gemigreerd naar de Azure-portal, blijven de beleidsregels voor voorwaardelijke toegang van uw tenant van kracht. U kunt deze echter niet weergeven of wijzigen via Intune in Azure Portal.
 
-Als u beleidsregels voor voorwaardelijke toegang wilt weergeven en er wijzigingen in wilt aanbrengen via Azure Portal, moet u de oude beleidsregels verwijderen uit de klassieke portal. U maakt ze daarna opnieuw in Azure Portal. Zie [Klassiek beleid migreren in Azure Portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration) voor meer informatie over het migreren van beleidsregels voor voorwaardelijke toegang. 
+Als u beleidsregels voor voorwaardelijke toegang wilt weergeven en er wijzigingen in wilt aanbrengen via de Azure-portal, moet u de oude beleidsregels verwijderen uit de klassieke portal. U maakt ze daarna opnieuw in Azure Portal. Raadpleeg [Klassiek beleid migreren in de Azure-portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration) voor meer informatie over het migreren van beleidsregels voor voorwaardelijke toegang. 
 
 ## <a name="where-did-my-compliance-policies-go"></a>Waar is mijn nalevingsbeleid gebleven?
 Nadat uw tenant is gemigreerd naar Azure Portal, blijft het nalevingsbeleid van uw tenant van kracht. U kunt deze echter niet weergeven of wijzigen via Intune in Azure Portal.
 
-Als u het nalevingsbeleid wilt weergeven en er wijzigingen in wilt aanbrengen vanuit Azure Portal, moet u de oude beleidsregels verwijderen uit de klassieke portal. U maakt ze daarna opnieuw in Azure Portal. Zie [Aan de slag met apparaatnalevingsbeleid](https://docs.microsoft.com/intune/known-issues#compliance) voor meer informatie over beleidsregels voor apparaatnaleving. 
+Als u het nalevingsbeleid wilt weergeven en er wijzigingen in wilt aanbrengen vanuit Azure Portal, moet u de oude beleidsregels verwijderen uit de klassieke portal. U maakt ze daarna opnieuw in Azure Portal. Zie [Aan de slag met apparaatnalevingsbeleid](https://docs.microsoft.com/intune/device-compliance-get-started) voor meer informatie over beleidsregels voor apparaatnaleving. 
 
 ## <a name="where-did-apple-dep-go"></a>Waar is Apple DEP gebleven?
 In de klassieke portal kunt u Intune instellen voor integratie met het Device Enrollment Program van Apple, en handmatig synchroniseren met de service van Apple:

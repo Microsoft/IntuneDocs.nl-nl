@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9a18bceb6b42f06464baf31a4cdd4dea21d19675
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 984b78b271d130618ec0994f76e966f1dc338706
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461291"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044708"
 ---
 ## <a name="april-2017"></a>April 2017
 
@@ -26,7 +26,7 @@ De Android-bedrijfsportal-app is bijgewerkt met een voortgangsindicator voor het
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Toegang tot SharePoint Online blokkeren voor apps <!-- 679339 -->
 
-U kunt een beleid voor voorwaardelijke toegang op basis van een app maken om apps waarop geen app-beveiligingsbeleid is toegepast te blokkeren tegen toegang tot [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). In het scenario voor voorwaardelijke toegang op basis van apps kunt u via Azure Portal de apps opgeven die u toegang wilt verlenen tot SharePoint Online.
+U kunt nu beleid voor voorwaardelijke toegang op basis van een app maken om apps te blokkeren waarop geen app-beveiligingsbeleid is toegepast, zodat deze apps geen toegang hebben tot [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). In het scenario voor voorwaardelijke toegang op basis van een app kunt u via de Azure-portal de apps opgeven die u toegang wilt verlenen tot SharePoint Online.
 
 #### <a name="single-sign-in-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Ondersteuning voor eenmalige aanmelding vanuit Bedrijfsportal voor iOS bij Outlook voor iOS <!--834012-->
 Gebruikers hoeven zich niet langer aan te melden bij de Outlook-app als ze op hetzelfde apparaat en met hetzelfde account zijn aangemeld bij de bedrijfsportal-app voor iOS. Wanneer gebruikers de Outlook-app starten, kunnen ze hun account selecteren en worden ze automatisch aangemeld. In de toekomst wordt deze functionaliteit ook toegevoegd aan andere Microsoft-apps.
@@ -112,14 +112,14 @@ Een versie van de bedrijfsportal-app is beschikbaar gemaakt voor iOS via het App
 
 #### <a name="support-for-skycure"></a>Ondersteuning voor Skycure
 
-U kunt nu de toegang van mobiele apparaten tot bedrijfsresources beheren door middel van voorwaardelijke toegang op basis van een risicoanalyse die door Skycure wordt uitgevoerd. Skycure is een oplossing voor de beveiliging tegen bedreigingen op mobiele apparaten die met Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetrische gegevens die zijn verzameld op apparaten met Skycure, zoals:
+U kunt nu de toegang van mobiele apparaten tot bedrijfsresources beheren door middel van voorwaardelijke toegang op basis van een risicoanalyse die door Skycure wordt uitgevoerd. Skycure is een oplossing voor beveiliging tegen bedreigingen op mobiele apparaten die met Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetrische gegevens die zijn verzameld op apparaten met Skycure, zoals:
 
 - Fysieke beveiliging
 - Netwerkbeveiliging
 - Toepassingsbeveiliging
 - Beveiliging tegen zwakke plekken
 
-U kunt het EMS-beleid voor voorwaardelijke toegang configureren op basis van de risicoanalyse van Skycure die wordt ingeschakeld via het Intune-nalevingsbeleid voor apparaten. U kunt aan de hand van dit beleid de toegang van apparaten die niet voldoen aan het beleid tot bedrijfsresources toestaan of blokkeren op basis van de gedetecteerde bedreigingen. Zie [Skycure Mobile Threat Defense-connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector) voor meer informatie.
+U kunt het EMS-beleid voor voorwaardelijke toegang configureren op basis van de risicoanalyse van Skycure, die wordt ingeschakeld via het Intune-nalevingsbeleid voor apparaten. U kunt aan de hand van dit beleid de toegang van apparaten die niet voldoen aan het beleid tot bedrijfsresources toestaan of blokkeren op basis van de gedetecteerde bedreigingen. Zie [Skycure Mobile Threat Defense-connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector) voor meer informatie.
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nieuwe gebruikerservaring voor de bedrijfsportal-app voor Android <!--621622-->
 
