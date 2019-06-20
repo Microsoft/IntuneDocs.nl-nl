@@ -50,6 +50,8 @@
       href: tutorial-use-autopilot-enroll-devices.md
     - name: De DEP gebruiken om iOS-apparaten in te schrijven
       href: tutorial-use-device-enrollment-program-enroll-ios.md
+    - name: Slack configureren om Intune te gebruiken
+      href: tutorial-configure-slack-enterprise-grid.md
 - name: Concepten
   items:
     - name: Wat is apparaatbeheer?
@@ -662,10 +664,6 @@
               href: troubleshoot-policies-in-microsoft-intune.md
             - name: 'E-mailprofielen: problemen en oplossingen'
               href: troubleshoot-email-profiles-in-microsoft-intune.md
-            - name: Problemen met software-updates oplossen
-              href: troubleshoot-software-updates-in-microsoft-intune.md
-            - name: Algemene fouten in Endpoint Protection
-              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
             - name: Problemen met voorwaardelijke toegang oplossen
               href: troubleshoot-conditional-access.md
             - name: Problemen met Exchange Connector oplossen
@@ -968,6 +966,10 @@
               href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
             - name: Beleidsconflicten oplossen
               href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+            - name: Problemen met software-updates oplossen
+              href: troubleshoot-software-updates-in-microsoft-intune.md
+            - name: Algemene fouten in Endpoint Protection
+              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
     - name: Scenario-implementatiehandleidingen
       items:
         - name: Exchange Online beveiligen
