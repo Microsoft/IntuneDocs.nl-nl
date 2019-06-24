@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aef2db158e0572c1eec056a1d6e33b4b97aea77a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d6366034af09acdbecdc0cb0e670f6d57766b35
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047019"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197519"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Instellingen voor Windows Holographic for Business-apparaten om ze als kiosk uit te voeren via Intune
 
@@ -64,7 +64,7 @@ Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige ap
 
 - **Toepassingen**: voeg de apps toe die u op het apparaat in kioskmodus wilt uitvoeren. U kunt verschillende apps toevoegen.
 
-  - **Store-apps toevoegen**: selecteer een bestaande app die u hebt toegevoegd met [Client-apps](apps-add.md). Als er geen apps worden weergegeven, kunt u apps aanschaffen en deze [aan Intune toevoegen](store-apps-windows.md).
+  - **Store-apps toevoegen**: Selecteer een bestaande app u toegevoegd of geïmplementeerd in Intune als [Client-Apps](apps-add.md), met inbegrip van LOB-apps. Als u geen apps die worden vermeld, Intune ondersteunt veel [app-typen](apps-add.md) die u [toevoegen aan Intune](store-apps-windows.md).
   - **Win32-app toevoegen**: wordt niet ondersteund in Windows Holographic for Business.
   - **Toevoegen via AUMID**: gebruik deze optie om Postvak IN-apps voor Windows toe te voegen. Voer de volgende eigenschappen in: 
 

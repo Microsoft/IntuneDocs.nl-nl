@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749917"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197547"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-basislijninstellingen voor Intune
 
@@ -83,7 +83,7 @@ Zie [Beleids-CSP - SmartScreen](https://docs.microsoft.com/windows/client-manage
 
   **Standaardinstelling**: Ja
 
-## <a name="attach-surface-reduction"></a>Kwetsbaarheid voor aanvallen verminderen  
+## <a name="attack-surface-reduction"></a>Kwetsbaarheid voor aanvallen verminderen  
 
 - **Onderliggend procestype voor starten van Office-apps**  
   [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules): als de regel is ingesteld op *Blokkeren*, kunnen Office-apps geen onderliggende processen maken. Office-apps zijn onder meer Word, Excel, PowerPoint, OneNote en Access. Het maken van een onderliggend proces is typisch malwaregedrag, met name voor op macro's gebaseerde aanvallen die Office-apps proberen te gebruiken om schadelijke uitvoerbare bestanden te starten of te downloaden.  
