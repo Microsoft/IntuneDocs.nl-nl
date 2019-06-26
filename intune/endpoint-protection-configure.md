@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 184781a315dcaeaac9540294746a9c2cd85da917
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041910"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251168"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Instellingen voor Endpoint Protection toevoegen in Intune
 
@@ -38,7 +38,7 @@ Lees voordat u een profiel maakt de volgende artikelen door, zodat u precies wee
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>Een apparaatprofiel met instellingen voor Endpoint Protection maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=20909).
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 4. Geef een **naam** en **beschrijving** op voor het Endpoint Protection-profiel.
 5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de aangepaste instellingen wilt toepassen. Op dit moment kunt u een van de volgende platformen kiezen voor apparaatbeperkingsinstellingen:
