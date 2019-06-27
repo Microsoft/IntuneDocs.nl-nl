@@ -157,6 +157,7 @@
 ### [Apparaat opnieuw instellen](reset-device-cp-app.md)
 
 ## [De Intune-bedrijfsportalwebsite gebruiken](using-the-intune-company-portal-website.md)
+### [Apps beheren](manage-apps-cpweb.md)  
 ### [Apparaat extern vergrendelen](remote-lock-your-device-cpwebsite.md)  
 ### [Naam van apparaat wijzigen](rename-your-device-cpwebsite.md)  
 ### [Apparaat verwijderen](remove-your-device-cpwebsite.md)  
