@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
-ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67234971"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403080"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -57,7 +57,16 @@ Deze instellingen gebruiken de [beleid-CSP ApplicationManagement](https://docs.m
 - **Appgegevens installeren op systeemvolume**: Met **Blokkeren** kunnen apps geen gegevens opslaan op het systeemvolume van het apparaat. Met **Niet geconfigureerd** (standaard) kunnen apps gegevens op het systeemvolume van het apparaat opslaan.
 - **Apps installeren op systeemstation**: Met **Blokkeren** kunnen apps geen gegevens opslaan op het systeemstation van het apparaat. Met **Niet geconfigureerd** (standaard) kunnen apps gegevens op het systeemstation installeren.
 - **Game DVR** (alleen desktop): Met **Blokkeren** wordt het opnemen en uitzenden van Windows Game uitgeschakeld. Met **Niet geconfigureerd** (standaard) is het opnemen en uitzenden van games toegestaan.
-- **Alleen voor apps uit de Store**: Met **Vereisen** kunnen eindgebruikers alleen apps uit de Windows App Store installeren. Met **Niet geconfigureerd** kunnen eindgebruikers ook apps installeren vanuit andere locaties dan de Windows App Store.
+- **Apps uit de store alleen**: deze instelling bepaalt de gebruikerservaring wanneer gebruikers apps vanuit locaties anders dan de Microsoft Store installeren. Uw opties zijn:
+
+  - **Niet geconfigureerd** (standaard): Hiermee kunnen eindgebruikers apps installeren vanuit locaties anders dan de Microsoft Store, met inbegrip van apps die zijn gedefinieerd in andere beleidsinstellingen.  
+  - **Overal**: schakelt aanbevelingen voor apps, en kunnen gebruikers apps installeren vanaf elke locatie.  
+  - **Alleen Store**: zorgt ervoor dat eindgebruikers alleen apps installeren uit de Microsoft Store.
+  - **Aanbevelingen**: bij het installeren van een app op het web die beschikbaar is in de Microsoft Store-, gebruikers zien een bericht die ze in de store downloaden aanbevelen.  
+  - **De voorkeur geeft aan Store**: waarschuwt gebruikers wanneer ze apps vanuit locaties anders dan de Microsoft Store installeren.
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **Herstart van apps forceren tijdens updatefout**: wanneer een app wordt gebruikt, kan deze mogelijk niet worden bijgewerkt. Gebruik deze instelling om een app te forceren opnieuw op te starten. **Niet geconfigureerd** (standaard) dwingt de apps niet om opnieuw op te starten. **Vereisen** stelt beheerders in staat om een herstart te forceren op een specifieke datum en tijd of volgens een terugkerend schema. Bij de instelling **Vereisen** dient u tevens de volgende gegevens in te voeren:
 
   - **Startdatum/-tijd**: kies een specifieke datum en tijd op waarop de apps opnieuw worden opgestart.

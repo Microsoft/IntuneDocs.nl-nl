@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b289f9edc1522333f70308a6979b2ea2e71b17c6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047527"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403018"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> De informatie in dit onderwerp geldt alleen voor Windows-desktops die u als pc's beheert met behulp van de Intune-softwareclient. Als u wilt beheren firewall-instellingen voor Windows-pc's die zijn ingeschreven als mobiele apparaten, Zie [instellingen voor endpoint protection toevoegen in Intune](endpoint-protection-configure.md).
 
 Microsoft Intune kan u helpen de Windows-pc’s die u beheert met de Intune-client op verschillende manieren te beveiligen. Een van de manieren waarop dit gebeurt is het bieden van beleid waarmee u Windows Firewall-instellingen kunt configureren op pc's.
 

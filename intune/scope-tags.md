@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045181"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403789"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken voor gedistribueerde IT
 
@@ -42,8 +42,10 @@ Laten we bijvoorbeeld zeggen dat een beheerder van het regionale kantoor in Seat
 
     ![Schermopname van Een bereiktag maken.](./media/scope-tags/create-scope-tag.png)
 
-2. Geef een **naam** en **beschrijving** op.
-3. Kies **Maken**.
+3. Als u wilt dat alle apparaten in specifieke groepen, kiest u **bereiktag toewijzen aan alle apparaten in de geselecteerde groepen**.
+    1. In de **Selecteer groepen om op te nemen** pagina, kies de groepen met daarin de apparaten die u wilt deze bereiktag aan toewijzen.
+    2. Kies **Selecteren**.
+4. Kies **Maken**.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Een bereiktag toewijzen aan een rol
 
