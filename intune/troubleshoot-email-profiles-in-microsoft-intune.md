@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/17/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,20 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0fe37deb63457fef869df0f7263970a4e53cb29
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 2246e3f6faa853f620327558a7faf4dc9d6a6e85
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402709"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197515"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Veelvoorkomende problemen met en oplossingen voor e-mailprofielen in Microsoft Intune
 
 Lees welke problemen met e-mailprofielen zich vaak voordoen en hoe u deze kunt oplossen.
 
+## <a name="what-you-need-to-know"></a>Wat u dient te weten
+
+- E-mailprofielen worden geïmplementeerd voor de gebruiker die het apparaat heeft geregistreerd. Voor het configureren van het e-mailprofiel, Intune maakt gebruik van de Azure Active Directory (AD)-eigenschappen in het e-mailprofiel van de gebruiker tijdens de inschrijving. [E-mailinstellingen op apparaten toevoegen](email-settings-configure.md) mogelijk een goede bron.
+- Na de migratie vanuit Configuration Manager hybrid zelfstandige versie van Intune, blijft het e-mailprofiel van Configuration Manager-hybride gedurende zeven dagen op het apparaat. Dit is normaal. Als u het e-mailprofiel dat eerder is verwijderd, neem dan contact op met [ondersteuning voor Intune](get-support.md).
+- Voor Android Enterprise, Gmail of negen for Work met behulp van de beheerde Google Play Store te implementeren. [Beheerde Google Play-apps toevoegen](apps-add-android-for-work.md) vermeldt de stappen.
+- E-mailprofielen biedt geen ondersteuning voor Microsoft Outlook voor iOS en Android. In plaats daarvan implementeert u een configuratiebeleid voor apps. Zie voor meer informatie, [Outlook-configuratie-instelling](app-configuration-policies-outlook.md).
+- E-mailprofielen die zijn gericht op groepen van apparaten (niet gebruikersgroepen) kunnen niet worden bezorgd op het apparaat. Wanneer het apparaat een hoofdgebruiker heeft, klikt u vervolgens apparaat die gericht is op kunnen worden gebruikt. Als het e-mailprofiel gebruikerscertificaten bevat, moet u gebruikersdoelgroepen.
+- Gebruikers kunnen herhaaldelijk gevraagd om hun wachtwoord invoeren voor het e-mailprofiel. In dit scenario, controleert u alle certificaten waarnaar wordt verwezen in het e-mailprofiel. Als een van de certificaten is niet bedoeld voor een gebruiker, klikt u vervolgens Intune nieuwe pogingen voor het implementeren van het e-mailprofiel.
+
 ## <a name="device-already-has-an-email-profile-installed"></a>Er is al een e-mailprofiel geïnstalleerd op het apparaat
 
-Als gebruikers een e-mailprofiel maken voordat ze zich inschrijven bij Intune, werkt het Intune-e-mailprofiel mogelijk niet zoals verwacht:
+Als gebruikers een e-mailprofiel maken voordat ze zich inschrijven bij Intune of Office 365 MDM, werkt het e-mailprofiel dat is geïmplementeerd door Intune mogelijk niet zoals verwacht:
 
 - **iOS**: Intune detecteert een bestaand, dubbel e-mailprofiel op basis van hostnaam en e-mailadres. Het door de gebruiker gemaakte e-mailprofiel blokkeert de implementatie van het in Intune gemaakte profiel. Dit is een veelvoorkomend probleem, omdat iOS-gebruikers vaak zelf een e-mailprofiel maken en het apparaat vervolgens inschrijven. De bedrijfsportal-app geeft aan dat de gebruiker niet compatibel is en kan de gebruiker vragen om het e-mailprofiel te verwijderen.
 
@@ -50,19 +59,16 @@ Controleer de configuratie van uw EAS-profiel voor Samsung KNOX en het bronbelei
 
 ## <a name="unable-to-send-images-from--email-account"></a>Kan geen afbeeldingen verzenden vanuit e-mailaccount
 
-Van toepassing op Intune in de klassieke Azure-portal.
-
 Gebruikers met automatisch geconfigureerde e-mailaccounts kunnen geen afbeeldingen of foto's verzenden vanaf hun apparaat. Dit scenario kan zich voordoen als de optie **Toestaan dat e-mails worden verzonden vanuit toepassingen van derden** niet is ingeschakeld.
 
 ### <a name="intune-solution"></a>Intune-oplossing
 
-1. Open de Microsoft Intune-beheerconsole en selecteer achtereenvolgens de workload **Beleid** > **Configuratiebeleid**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selecteer **Apparaatconfiguratie** > **Profielen**.
+3. Selecteer uw e-mailprofiel > **eigenschappen** > **instellingen**.
+4. Stel de **toestaan dat e-mails worden verzonden vanuit toepassingen van derden** instelt op **inschakelen**.
 
-2. Selecteer het e-mailprofiel en kies **Bewerken**.
-
-3. Selecteer **Toestaan dat e-mails worden verzonden vanuit toepassingen van derden**.
-
-### <a name="configuration-manager-integrated-with-intune-solution"></a>Configuration Manager geïntegreerd met Intune-oplossing
+### <a name="configuration-manager-hybrid"></a>Hybride Configuration Manager
 
 1. Open de Configuration Manager-console > **Assets en naleving**.
 

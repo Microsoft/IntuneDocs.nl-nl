@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/20/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402663"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298399"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Beleidsregels en profielen voor het oplossen van problemen in Intune
 
 Microsoft Intune bevat een aantal ingebouwde functies voor probleemoplossing. Gebruik deze functies voor het oplossen van problemen met nalevingsbeleidsregels en configuratieprofielen in uw omgeving.
 
 In dit artikel staan een aantal oplossingstechnieken en er worden problemen beschreven die u mogelijk ervaart.
+
+## <a name="check-tenant-status"></a>Status van de tenant controleren
+Controleer de [Tenantstatus](tenant-status.md) en controleer of het abonnement actief is. U kunt ook details voor actieve incidenten en adviezen die mogelijk van invloed op uw implementatie van beleid of een profiel bekijken.
 
 ## <a name="use-built-in-troubleshooting"></a>Ingebouwde probleemoplossing gebruiken
 
@@ -113,6 +116,13 @@ In dit artikel staan een aantal oplossingstechnieken en er worden problemen besc
 > [!NOTE]
 > Wanneer er twee sets beleidsregels met verschillende beperkingsniveaus zijn die op hetzelfde apparaat of dezelfde gebruiker van toepassing zijn, wordt het meest beperkende beleid toegepast.
 
+## <a name="policy-troubleshooting-resources"></a>Problemen met beleidsresources polossen
+
+- [Problemen met iOS of Android-beleid niet toegepast op apparaten](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (opent u een andere Microsoft-site)
+- [Problemen met Windows 10 Intune-beleid fouten oplossen](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (opent een blog)
+- [Aangepaste instellingen voor Windows 10 CSP oplossen](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (opent u een andere Microsoft-site)
+- [Groepsbeleid voor Windows 10 vs Intune MDM beleid](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (opent u een andere Microsoft-site)
+
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Waarschuwing: het opslaan van de toegangsregels in Exchange is mislukt
 
 **Probleem**: u ontvangt in de beheerconsole de waarschuwing **Het opslaan van de toegangsregels in Exchange is mislukt**  .
@@ -125,11 +135,13 @@ Als u beleid hebt gemaakt in de werkruimte Beleid voor Exchange On-Premises (beh
 
 Bij Windows Phone-apparaten wordt niet toegestaan dat de beveiligingsbeleidsregels die via MDM of EAS zijn ingesteld, worden teruggebracht naar een lager niveau wanneer u die eenmaal hebt ingesteld. U stelt bijvoorbeeld het **minimumaantal tekens voor het wachtwoord** in op 8 en wilt dit vervolgens terugbrengen tot 4. Het meer beperkende beleid wordt op het apparaat toegepast.
 
+Windows 10-apparaten kunnen beveiligingsbeleid niet verwijderen wanneer u de toewijzing van het beleid (stop-implementatie). Mogelijk moet u laat u het beleid is toegewezen, en wijzig vervolgens de beveiligingsinstellingen terug naar de standaardwaarden.
+
 Afhankelijk van het apparaatplatform moet u mogelijk het beveiligingsbeleid opnieuw instellen als u de beveiliging naar beneden toe wilt bijstellen.
 
-Veeg bijvoorbeeld in Windows op het bureaublad vanaf rechts over het scherm om de balk **Charms** te openen. Kies **Instellingen** > **Configuratiescherm** > **Gebruikersaccounts**. Selecteer aan de linkerkant de koppeling **Beveiligingsbeleid opnieuw instellen** en kies **Beleid opnieuw instellen**.
+Veeg bijvoorbeeld in Windows 8.1 op het bureaublad vanaf rechts over het scherm om de balk **Charms** te openen. Kies **Instellingen** > **Configuratiescherm** > **Gebruikersaccounts**. Selecteer aan de linkerkant de koppeling **Beveiligingsbeleid opnieuw instellen** en kies **Beleid opnieuw instellen**.
 
-Andere MDM-apparaten, zoals Android, iOS en Windows Phone 8.1, moeten mogelijk buiten gebruik worden gesteld en weer opnieuw worden geregistreerd voordat u een minder beperkend beleid kunt toepassen.
+Andere platformen, zoals Android, iOS en Windows Phone 8.1, moeten mogelijk buiten gebruik worden gesteld en weer opnieuw worden geregistreerd voordat u een minder beperkend beleid kunt toepassen.
 
 Mogelijk is [Problemen met apparaatregistratie oplossen](troubleshoot-device-enrollment-in-intune.md) een goede bron.
 
@@ -160,6 +172,7 @@ Bij Windows-pc's die worden beheerd met de Intune-softwareclient kunnen beleidsf
 Dit gebeurt als de tijd op het lokale systeem met meer dan vijf minuten afwijkt. Als de tijd op de lokale computer afwijkt, mislukken beveiligde transacties omdat de tijdstempels ongeldig zijn.
 
 Stel de lokale systeemtijd zo dicht mogelijk bij de internettijd in om dit probleem op te lossen. Of stel de lokale systeemtijd in op de tijd van de domeincontrollers in het netwerk.
+
 
 ## <a name="next-steps"></a>Volgende stappen
 
