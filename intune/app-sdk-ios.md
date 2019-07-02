@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d229972c238756598694d2e3463f22290924ccc
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 4877920821b2471f752f9fdb8941e87576d937ba
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045483"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413864"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
 > [!NOTE]
 > U kunt eerst het artikel [Aan de slag met Intune App SDK](app-sdk-get-started.md) lezen, waarin wordt uitgelegd hoe u de integratie voor elk ondersteund platform kunt voorbereiden.
 
-Met de Microsoft Intune App SDK voor iOS kunt u Intune-beveiligingsbeleid voor apps (ook wel **APP-** of **MAM-beleid** genoemd) opnemen in uw systeemeigen iOS-app. Een MAM-app is geïntegreerd met de Intune App SDK. IT-beheerders kunnen app-beveiligingsbeleid implementeren in uw mobiele app wanneer die actief door Intune wordt beheerd.
+Met de Microsoft Intune App SDK voor iOS kunt u Intune-beveiligingsbeleid voor apps (ook wel APP- of MAM-beleid genoemd) opnemen in uw systeemeigen iOS-app. Een MAM-app is geïntegreerd met de Intune App SDK. IT-beheerders kunnen app-beveiligingsbeleid implementeren in uw mobiele app wanneer die actief door Intune wordt beheerd.
 
 ## <a name="prerequisites"></a>Vereisten
 
-* U hebt een Mac OS-computer met OS X 10.8.5 of hoger nodig, waarop Xcode 9 of hoger is geïnstalleerd.
+* U hebt een Mac OS-computer met OS X 10.8.5 of hoger nodig, waarop ook Xcode 9 of hoger is geïnstalleerd.
 
 * Uw app moet geschikt zijn voor iOS 10 of hoger.
 
@@ -40,19 +40,30 @@ Met de Microsoft Intune App SDK voor iOS kunt u Intune-beveiligingsbeleid voor a
 
 * Download de bestanden voor de Intune App SDK voor iOS op [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios).
 
-## <a name="whats-in-the-sdk"></a>Inhoud van de SDK
+## <a name="whats-in-the-sdk-repository"></a>Wat is er in de SDK-opslagplaats
 
-De ontwikkelaarshandleiding voor Intune App SDK voor iOS bevat een statische bibliotheek, resourcebestanden, API-headers, een PLIST-bestand met foutopsporingsinstellingen en een configuratiehulpprogramma. Client-apps omvatten mogelijk de bronbestanden en kunnen statisch aan de meeste bibliotheken voor beleidsafdwinging worden gekoppeld. Geavanceerde APP-functies van Intune worden afgedwongen met behulp van API's.
+De volgende bestanden zijn relevant zijn voor apps/extensies die geen Swift-code bevatten, of met een eerdere versie van Xcode dan 10.2 worden gecompileerd:
 
-In deze handleiding wordt ingegaan op het gebruik van de volgende onderdelen van de Intune App SDK voor iOS:
+* **IntuneMAM.framework**: het Intune-App SDK-framework. Het is raadzaam dat u dit framework koppelt aan uw app/extensies om in te schakelen van de Intune-client Toepassingsbeheer. Sommige ontwikkelaars desgewenst echter de prestatievoordelen van de statische bibliotheek. Zie de volgende onderwerpen.
 
-* **libIntuneMAM.a**: de statische bibliotheek van Intune App SDK. Als uw app geen extensies gebruikt, moet u deze bibliotheek aan uw project koppelen, zodat uw app gebruik kan maken van Intune Client Application Management.
+* **libIntuneMAM.a**: de statische bibliotheek van Intune App SDK. Ontwikkelaars kunnen kiezen om te koppelen van de statische bibliotheek in plaats van het framework. Omdat statische bibliotheken zijn ingesloten rechtstreeks in de app-/ extensie-binaire tijdens het opbouwen, zijn er enkele voordelen starten-tijd voor het gebruik van de statische bibliotheek. Het integreren in uw app is echter een complexer proces. Als uw app geen extensies bevat, de statische bibliotheek koppelen aan de app en extensies tot een groter formaat van de app-bundel leiden zal, als de statische bibliotheek worden ingesloten in elke app/uitbreiding binaire. Wanneer u het framework gebruikt, kunnen u de Intune SDK binaire, wat resulteert in een kleinere grootte van de app met apps en -extensies delen.
 
-* **IntuneMAM.framework**: het Intune-App SDK-framework. Koppel dit framework aan uw project, zodat uw app Intune Client Application Management kan gebruiken. Gebruik het framework in plaats van de statische bibliotheek als uw app gebruikmaakt van extensies, zodat uw project niet meerdere exemplaren van de statische bibliotheek maakt.
+* **IntuneMAMResources.bundle**: een bundel met resources waarvan de SDK afhankelijk is. De bundel met resources is alleen vereist voor apps die de statische bibliotheek (libIntuneMAM.a) integreren.
 
-* **IntuneMAMResources.bundle**: een bundel met resources waarvan de SDK afhankelijk is.
+De volgende bestanden zijn relevant zijn voor apps/extensies die Swift-code bevatten, en worden gecompileerd met Xcode 10.2 +:
 
-* **Headers**: beschrijft de Intune App SDK-API's. Als u een API gebruikt, moet u het headerbestand met de API opnemen. De volgende header-bestanden bevatten de API's, gegevenstypen en protocollen die de Intune App SDK beschikbaar maken voor ontwikkelaars:
+* **IntuneMAMSwift.framework**: de Intune App SDK Swift-framework. Dit framework bevat alle headers voor API's die uw app moet worden gebeld. Koppel dit framework aan uw app/extensies om in te schakelen van de Intune-client Toepassingsbeheer.
+
+* **IntuneMAMSwiftStub.framework**: de Intune App SDK Swift Stub-framework. Dit is een vereiste afhankelijkheid van IntuneMAMSwift.framework die apps/extensies moet koppelen.
+
+
+De volgende bestanden zijn relevant zijn voor alle apps/extensies:
+
+* **IntuneMAMConfigurator**: een hulpprogramma dat wordt gebruikt voor het configureren van de app of Info.plist van de extensie met de minimale vereiste wijzigingen voor het beheer van Intune. Afhankelijk van de functionaliteit van uw app of -extensie moet u mogelijk aanvullende handmatige wijzigingen aanbrengen in de Info.plist.
+
+* **Headers**: beschrijft de openbare Intune App SDK-API's. Deze headers zijn opgenomen in de IntuneMAM/IntuneMAMSwift-frameworks, zodat ontwikkelaars die een van de frameworks gebruiken niet hoeft de headers handmatig toevoegen aan hun project. Ontwikkelaars die ervoor kiezen om te koppelen aan de statische bibliotheek (libIntuneMAM.a) moet handmatig deze headers opnemen in hun project.
+
+De volgende header-bestanden bevatten de API's, gegevenstypen en protocollen die de Intune App SDK beschikbaar maken voor ontwikkelaars:
 
     * IntuneMAMAppConfig.h
     * IntuneMAMAppConfigManager.h
@@ -70,30 +81,32 @@ In deze handleiding wordt ingegaan op het gebruik van de volgende onderdelen van
     * IntuneMAMPolicyManager.h
     * IntuneMAMVersionInfo.h
 
-Ontwikkelaars kunnen de inhoud van de bovenstaande headers beschikbaar maken door IntuneMAM.h te importeren
+Ontwikkelaars kunnen de inhoud van de voorgaande headers beschikbaar maken door IntuneMAM.h te importeren
 
 
 ## <a name="how-the-intune-app-sdk-works"></a>De werking van de Intune App SDK
 
-Het doel van de Intune App SDK voor iOS is het toevoegen van beheermogelijkheden voor iOS-toepassingen met minimale codewijzigingen. Hoe minder codewijzigingen, hoe sneller u een mobiele app op de markt kunt brengen zonder negatieve gevolgen voor de consistentie en stabiliteit van de app.
+Het doel van de Intune App SDK voor iOS is het toevoegen van beheermogelijkheden voor iOS-toepassingen met minimale codewijzigingen. Hoe minder codewijzigingen, hoe sneller u een mobiele app op de markt kunt brengen, zonder negatieve gevolgen voor de consistentie en stabiliteit van de app.
 
 
 ## <a name="build-the-sdk-into-your-mobile-app"></a>De SDK in uw mobiele app inbouwen
 
 Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
 
-1. **Optie 1 (aanbevolen)** : koppel `IntuneMAM.framework` aan uw project. Sleep `IntuneMAM.framework` naar de lijst met **ingesloten binaire bestanden** van het projectdoel.
+1. **Optie 1 - Framework (aanbevolen)** : als u Xcode 10.2 + en uw app /-extensie Swift-code bevat, een koppeling `IntuneMAMSwift.framework` en `IntuneMAMSwiftStub.framework` naar het doel: Sleep `IntuneMAMSwift.framework` en `IntuneMAMSwiftStub.framework` naar de **ingesloten Binaire bestanden** lijst van het projectdoel.
+
+    Anders wordt een koppeling `IntuneMAM.framework` naar het doel: Sleep `IntuneMAM.framework` naar de **ingesloten binaire bestanden** lijst van het projectdoel.
 
    > [!NOTE]
    > Als u het framework gebruikt, moet u de simulatorarchitecturen handmatig verwijderen uit het universele framework voordat u uw app naar de App Store verzendt. Zie [Uw app naar de App Store verzenden](#submit-your-app-to-the-app-store) voor meer informatie.
 
-   **Optie 2**: maak een koppeling naar de bibliotheek `libIntuneMAM.a`. Sleep de bibliotheek `libIntuneMAM.a` naar de lijst **Linked Frameworks and Libraries** van het projectdoel.
+   **Optie 2: de statische bibliotheek**: deze optie is alleen beschikbaar voor apps/extensies die geen Swift-code bevatten, of zijn gebouwd met Xcode < 10.2. maak een koppeling naar de `libIntuneMAM.a`-bibliotheek. Sleep de bibliotheek `libIntuneMAM.a` naar de lijst **Linked Frameworks and Libraries** van het projectdoel.
 
     ![Intune App SDK iOS: gekoppelde frameworks en bibliotheken](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     Voeg `-force_load {PATH_TO_LIB}/libIntuneMAM.a` toe aan een van de volgende ter vervanging van `{PATH_TO_LIB}` met de Intune App SDK-locatie:
-   * de buildconfiguratie-instelling `OTHER_LDFLAGS` van het project
-   * De **Other Linker Flags** van de gebruikersinterface van Xcode
+   * De buildconfiguratie-instelling `OTHER_LDFLAGS` van het project.
+   * De **Other Linker Flags** van de gebruikersinterface van Xcode.
 
      > [!NOTE]
      > Voor het zoeken naar `PATH_TO_LIB`, selecteert u het bestand `libIntuneMAM.a` en kiest u **Get Info** in het menu **File**. Kopieer en plak de informatie onder **Where** (het pad) in het gedeelte **General** van het venster **Info**.
@@ -101,8 +114,21 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
      Voeg de resourcebundel `IntuneMAMResources.bundle` toe aan het project door deze binnen **Build Phases** naar **Copy Bundle Resources** te slepen.
 
      ![Intune App SDK iOS: bundelresources kopiëren](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+     
+2. Als u nodig hebt om aan te roepen een Intune-APIs van Swift, moet de vereiste Intune SDK-headers via een Objective-C bridging header importeren in uw app /-extensie. Als uw app /-extensie niet al een Objective-C bridging header onder, kunt u een via de `SWIFT_OBJC_BRIDGING_HEADER` configuratie-instelling of de Xcode-UI **Objective-C Bridging Header** veld. Uw bridging header moet er ongeveer als volgt uit:
 
-2. Voeg de volgende iOS-frameworks toe aan het project:  
+   ```objc
+      #import <IntuneMAMSwift/IntuneMAM.h>
+   ```
+   
+   Dit maakt alle de Intune SDK API's beschikbaar tijdens de snelle bronbestanden uw app /-extensie. 
+   
+    > [!NOTE]
+    > * U kunt kiezen om alleen bridge specifieke Intune SDK headers Swift, in plaats van de intunemam.h alomvattend te
+    > * Afhankelijk van welke framework/statische bibliotheek u hebt geïntegreerd, kan het pad naar de header-bestanden verschillen.
+    > * Zodat de Intune SDK API's beschikbaar zijn in Swift via de instructie van een module-import (ex: IntuneMAMSwift importeren) wordt momenteel niet ondersteund. Met behulp van een Objective-C bridging header is de aanbevolen methode.
+    
+3. Voeg de volgende iOS-frameworks toe aan het project:  
     * MessageUI.framework  
     * Security.framework  
     * MobileCoreServices.framework  
@@ -115,10 +141,10 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
     * QuartzCore.framework  
     * WebKit.framework
 
-3. Schakel het delen van sleutelhangers in (indien nog niet ingeschakeld) door in elk projectdoel op **Capabilities** te klikken en de schakelaar **Keychain Sharing** in te schakelen. Het delen van sleutelhangers is vereist als u wilt doorgaan met de volgende stap.
+4. Schakel het delen van sleutelhangers in (indien nog niet ingeschakeld) door in elk projectdoel op **Capabilities** te klikken en de schakelaar **Keychain Sharing** in te schakelen. Het delen van sleutelhangers is vereist als u wilt doorgaan met de volgende stap.
 
    > [!NOTE]
-   > Uw inrichtingsprofiel moet ondersteuning bieden voor nieuwe waarden voor het delen van sleutelhangers. De toegangsgroepen van de sleutelhanger moeten een jokerteken ondersteunen. U kunt dit controleren door het bestand .mobileprovision in een teksteditor te openen, te zoeken naar **keychain-access-groups** en te controleren of u een jokerteken ziet. Bijvoorbeeld:
+   > Uw inrichtingsprofiel moet ondersteuning bieden voor nieuwe waarden voor het delen van sleutelhangers. De toegangsgroepen van de sleutelhanger moeten een jokerteken ondersteunen. U controleert dit door het bestand .mobileprovision in een teksteditor te openen, te zoeken naar **keychain-access-groups** en te controleren of u een jokerteken ziet. Bijvoorbeeld:
    >  ```xml
    >  <key>keychain-access-groups</key>
    >  <array>
@@ -126,29 +152,29 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
    >  </array>
    >  ```
 
-4. Nadat u het delen van sleutelketens hebt ingeschakeld, volgt u deze stappen voor het maken van een afzonderlijke toegangsgroep waarin de gegevens van de Intune App SDK worden opgeslagen. U kunt een toegangsgroep voor de sleutelketen maken via de gebruikersinterface of met behulp van het rechtenbestand. Als u de toegangsgroep voor de sleutelketen maakt met de gebruikersinterface, moet u de onderstaande stappen uitvoeren:
+5. Nadat u het delen van sleutelketens hebt ingeschakeld, volgt u de stappen voor het maken van een afzonderlijke toegangsgroep waarin de gegevens van de Intune App SDK worden opgeslagen. U kunt een toegangsgroep voor de sleutelhanger maken via de gebruikersinterface of met behulp van het rechtenbestand. Als u de toegangsgroep voor de sleutelketen maakt met de gebruikersinterface, moet u deze stappen uitvoeren:
 
-    1. Als uw mobiele app geen toegangsgroepen voor de sleutelketen heeft gedefinieerd, moet u de bundel-id van de app toevoegen als **eerste** groep.
+     a. Als uw mobiele app geen toegangsgroepen voor de sleutelketen heeft gedefinieerd, moet u de bundel-id van de app toevoegen als **eerste** groep.
     
-    2. Voeg de groep voor de gedeelde sleutelketen `com.microsoft.intune.mam` aan uw bestaande toegangsgroepen toe. De Intune App SDK gebruikt deze toegangsgroepen voor het opslaan van gegevens.
+    b. Voeg de groep voor de gedeelde sleutelketen `com.microsoft.intune.mam` aan uw bestaande toegangsgroepen toe. De Intune App SDK gebruikt deze toegangsgroep voor het opslaan van gegevens.
     
-    3. Voeg `com.microsoft.adalcache` aan uw bestaande toegangsgroepen toe.
+    c. Voeg `com.microsoft.adalcache` aan uw bestaande toegangsgroepen toe.
     
-        ![Intune App SDK iOS: Sleutelhanger delen](./media/intune-app-sdk-ios-keychain-sharing.png)
+        ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
     
-    4. Als u het rechtenbestand rechtstreeks wilt bewerken om toegangsgroepen voor de sleutelketen te maken, in plaats van met behulp van de Xcode-UI die hierboven wordt weergegeven, voegt u vóór de toegangsgroepen voor de sleutelketen `$(AppIdentifierPrefix)` toe (Xcode doet dit automatisch). Bijvoorbeeld:
+    d. Als u het rechtenbestand rechtstreeks wilt bewerken om toegangsgroepen voor de sleutelketen te maken, in plaats van met behulp van de Xcode-UI die hierboven wordt weergegeven, voegt u vóór de toegangsgroepen voor de sleutelketen `$(AppIdentifierPrefix)` toe (Xcode doet dit automatisch). Bijvoorbeeld:
     
         - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
         - `$(AppIdentifierPrefix)com.microsoft.adalcache`
     
         > [!NOTE]
-        > Een rechtenbestand is een uniek XML-bestand voor uw mobiele toepassing. Het wordt gebruikt om speciale machtigingen en mogelijkheden in uw iOS-app op te geven. Als uw app geen nog een rechtenbestand had, zou het inschakelen van het delen van de sleutelhanger (stap 3) ervoor moeten zorgen dat Xcode er één voor uw app genereert. Zorg ervoor dat de bundel-id van de app het eerste item in de lijst is.
+        > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
 
-5. Neem elk protocol dat door uw mobiele app wordt doorgegeven aan `UIApplication canOpenURL` op in de matrix `LSApplicationQueriesSchemes` van het bestand Info.plist van uw app. Zorg ervoor dat u de wijzigingen opslaat voordat u doorgaat met de volgende stap.
+6. Neem elk protocol dat door uw mobiele app wordt doorgegeven aan `UIApplication canOpenURL` op in de matrix `LSApplicationQueriesSchemes` van het bestand Info.plist van uw app. Zorg ervoor dat u de wijzigingen opslaat voordat u doorgaat met de volgende stap.
 
-6. Als uw app nog geen Face ID gebruikt, controleert u of de [sleutel NSFaceIDUsageDescription Info.plist](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) is geconfigureerd met een standaardbericht. Dit is vereist om gebruikers in iOS te laten weten hoe de app Face ID gaat gebruiken. Met een beleidsinstelling voor de beveiliging van een Intune-app kan Face ID worden gebruikt als methode voor toegang tot apps wanneer deze instelling is geconfigureerd door de IT-beheerder.
+7. Als uw app nog geen Face ID gebruikt, controleert u of de [sleutel NSFaceIDUsageDescription Info.plist](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) is geconfigureerd met een standaardbericht. Dit is vereist om gebruikers in iOS te laten weten hoe de app Face ID gaat gebruiken. Met een beleidsinstelling voor de beveiliging van een Intune-app kan Face ID worden gebruikt als methode voor toegang tot apps wanneer deze instelling is geconfigureerd door de IT-beheerder.
 
-7. Gebruik het hulpprogramma IntuneMAMConfigurator dat is opgenomen in de [SDK-opslagplaats](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) om de configuratie van de Info.plist van uw app te voltooien. Het hulpprogramma heeft drie parameters:
+8. Gebruik het hulpprogramma IntuneMAMConfigurator dat is opgenomen in de [SDK-opslagplaats](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) om de configuratie van de Info.plist van uw app te voltooien. Het hulpprogramma heeft drie parameters:
 
    |Eigenschap|Gebruik|
    |---------------|--------------------------------|
@@ -238,7 +264,7 @@ MultiIdentity | Boolean-waarde| Hiermee wordt aangegeven of de app in staat is o
 SplashIconFile <br> SplashIconFile~ ipad | Tekenreeks  | Geeft het pictogrambestand van het Intune-opstartscherm aan. | Optioneel. |
 SplashDuration | Getal | Minimale tijdsduur in seconden voor de weergave van het Intune-opstartscherm bij het opstarten van de app. De standaardwaarde is 1,5 seconden. | Optioneel. |
 BackgroundColor| Tekenreeks| Hiermee geeft u de achtergrondkleur aan voor het opstartscherm en het scherm waarop een pincode moet worden ingevoerd. Accepteert een hexadecimale RGB-tekenreeks in de vorm van #XXXXXX, waarbij elke X een teken van 0-9 of A-F kan zijn. Het hekje kan worden weggelaten.   | Optioneel. De standaardkleur is lichtgrijs. |
-ForegroundColor| Tekenreeks| Hiermee geeft u de voorgrondkleur aan voor het opstartscherm en het scherm waarop een pincode moet worden ingevoerd, voor bijvoorbeeld tekstkleur. Accepteert een hexadecimale RGB-tekenreeks in de vorm #XXXXXX, waarbij elke X een teken van 0-9 of A-F kan zijn. Het hekje kan worden weggelaten.  | Optioneel. De standaardkleur is zwart. |
+ForegroundColor| Tekenreeks| Hiermee geeft u de voorgrondkleur aan voor het opstartscherm en het scherm waarop een pincode moet worden ingevoerd, voor bijvoorbeeld tekstkleur. Accepteert een hexadecimale RGB-tekenreeks in de vorm van #XXXXXX, waarbij elke X een teken van 0-9 of A-F kan zijn. Het hekje kan worden weggelaten.  | Optioneel. De standaardkleur is zwart. |
 AccentColor | Tekenreeks| Hiermee geeft u de accentkleur aan voor schermen waarop een pincode moet worden ingevoerd, voor bijvoorbeeld knoptekst en de kleur voor het markeren van vakken. Accepteert een hexadecimale RGB-tekenreeks in de vorm van #XXXXXX, waarbij elke X een teken van 0-9 of A-F kan zijn. Het hekje kan worden weggelaten.| Optioneel. De standaardkleur is systeemblauw. |
 MAMTelemetryDisabled| Boolean-waarde| Hiermee wordt aangegeven dat de SDK geen telemetriegegevens verzendt naar de back-end.| Optioneel. De standaardwaarde is No (Nee). |
 MAMTelemetryUsePPE | Boolean-waarde | Hiermee wordt aangegeven of MAM SDK gegevens verstuurt naar de back-end van de PPE-telemetrie. Gebruik deze instelling als u wilt testen of uw apps voldoen aan Intune-beleid zodat telemetrietestgegevens niet worden verward met klantgegevens. | Optioneel. De standaardwaarde is No (Nee). |
@@ -429,7 +455,7 @@ De geretourneerde waarde van deze methode geeft voor de SDK aan of de app het ve
 
 ## <a name="customize-your-apps-behavior-with-apis"></a>Uw app-gedrag aanpassen met API's
 
-De Intune App SDK heeft verschillende API's die u kunt aanroepen met informatie over het Intune APP-beleid voor apps dat op de app is geïmplementeerd. U kunt met deze gegevens uw app-gedrag aanpassen. De onderstaande tabel bevat informatie over sommige essentiële Intune-klassen die u gaat gebruiken.
+De Intune App SDK heeft verschillende API's die u kunt aanroepen met informatie over het Intune APP-beleid voor apps dat op de app is geïmplementeerd. U kunt met deze gegevens uw app-gedrag aanpassen. De volgende tabel bevat informatie over sommige essentiële Intune-klassen die u gaat gebruiken.
 
 Klasse | Beschrijving
 ----- | -----------

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/14/2019
+ms.date: 06/20/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 158840a73784516d13defa04785ca5990a9874cf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1cbf45fc337cbe7d7a45081a3b9e05002ca126d8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041829"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402925"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Windows 10 device settings to enable Windows Hello for Business in Intune (Instellingen voor Windows 10-apparaten om Windows Hello voor Bedrijven in Intune in te schakelen)
 
@@ -36,55 +36,106 @@ Zie [Identity Protection configureren](identity-protection-configure.md) voor me
 [Een configuratieprofiel maken](identity-protection-configure.md#create-the-device-profile).
 
 ## <a name="windows-hello-for-business"></a>Windows Hello voor Bedrijven
+- **Windows Hello voor Bedrijven configureren**:
+  - **Niet geconfigureerd**: selecteer deze instelling als u niet met Intune instellingen voor Windows Hello voor Bedrijven wilt beheren. Alle eventueel bestaande Windows Hello voor Bedrijven-instellingen voor Windows 10-apparaten worden niet gewijzigd. Alle andere instellingen in het deelvenster zijn niet beschikbaar.
 
-- **Windows Hello voor Bedrijven configureren**: Kies **Inschakelen** om deze functie te gebruiken en de bijbehorende instellingen te configureren.
-- **Minimumlengte voor pincode**: voer de minimale lengte voor de pincode in die u wilt toestaan op de apparaten. De standaardlengte voor pincodes is zes tekens. De minimale lengte is vier (4) tekens.
-- **Maximumlengte voor pincode**: voer de maximale lengte voor de pincode in die u wilt toestaan op de apparaten. De standaardlengte voor pincodes is zes (6) tekens. De maximumlengte voor de pincode is 127 tekens.  
-- **Kleine letters in pincode**: u kunt een sterkere pincode afdwingen door te vereisen dat eindgebruikers kleine letters opnemen. Uw opties zijn:
+  - **Uitgeschakeld**: als u Windows Hello voor Bedrijven niet wilt gebruiken, selecteert u deze instelling. Alle andere instellingen op het scherm zijn niet beschikbaar.
+  - **Ingeschakeld**: selecteer deze instelling als u instellingen voor Windows Hello voor Business wilt configureren.  
+  
+  **Standaard**: niet geconfigureerd
 
-  - **Niet toegestaan** (standaard): Blokkeren dat gebruikers kleine letters gebruiken in de pincode. Dit gedrag treedt ook op als de instelling niet is geconfigureerd.
-  - **Toegestaan**: toestaan dat gebruikers kleine letters gebruiken in de pincode. Dit is echter niet vereist.
-  - **Vereist**: gebruikers moeten minstens één kleine letter opnemen in hun pincode. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
+  Als de waarde *ingeschakeld*, de volgende instellingen zijn beschikbaar:
 
-- **Hoofdletters in pincode**: u kunt een sterkere pincode afdwingen door te vereisen dat eindgebruikers hoofdletters opnemen. Uw opties zijn:
+    - **Minimale lengte pincode**  
+     Geef een minimumlengte voor PINCODE voor apparaten, om u te helpen beveiligd aanmelden. Standaardinstellingen voor Windows-apparaat zijn zes tekens, maar deze instelling kan een minimum van 4 tot en met 127 tekens afdwingen. 
+  
+      **Standaard**: *niet geconfigureerd*
 
-  - **Niet toegestaan** (standaard): Blokkeren dat gebruikers hoofdletters gebruiken in de pincode. Dit gedrag treedt ook op als de instelling niet is geconfigureerd.
-  - **Toegestaan**: toestaan dat gebruikers hoofdletters gebruiken in de pincode. Dit is echter niet vereist.
-  - **Vereist**: gebruikers moeten minstens één hoofdletter opnemen in hun pincode. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
+    - **Maximale lengte pincode**  
+    Geef een maximumlengte voor PINCODE voor apparaten, om u te helpen beveiligd aanmelden. Standaardinstellingen voor Windows-apparaat zijn zes tekens, maar deze instelling kan een minimum van 4 tot en met 127 tekens afdwingen.  
 
-- **Speciale tekens in pincode**: u kunt een sterkere pincode afdwingen door te vereisen dat eindgebruikers speciale tekens opnemen. Uw opties zijn:
+      **Standaard**: *niet geconfigureerd*  
 
-  - **Niet toegestaan** (standaard): Blokkeren dat gebruikers speciale tekens gebruiken in de pincode. Dit gedrag treedt ook op als de instelling niet is geconfigureerd.
-    Tot de speciale tekens behoren: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`
-  - **Toegestaan**: toestaan dat gebruikers hoofdletters gebruiken in de pincode. Dit is echter niet vereist.
-  - **Vereist**: gebruikers moeten minstens één hoofdletter opnemen in hun pincode. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
+    - **Kleine letters in pincode**  
+      U kunt een sterkere pincode afdwingen door te vereisen dat eindgebruikers kleine letters opnemen. Uw opties zijn:
 
-- **Vervaldagen pincode**: Het is raadzaam om een vervalperiode voor een pincode op te geven, waarna gebruikers deze moeten wijzigen. De standaardwaarde is 41 dagen.
+      - **Niet toegestaan**: blokkeren dat gebruikers kleine letters gebruiken in de pincode. Dit gedrag treedt ook op als de instelling niet is geconfigureerd.
+      - **Toegestaan**: toestaan dat gebruikers kleine letters gebruiken in de pincode. Dit is echter niet vereist.
+      - **Vereist**: gebruikers moeten minstens één kleine letter opnemen in hun pincode. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
 
-- **Pincodegeschiedenis onthouden**: beperkt het hergebruik van eerder gebruikte pincodes. Standaard kunnen de laatste 5 gebruikte pincodes niet opnieuw worden gebruikt.  
-- **Herstel van de pincode inschakelen**: hiermee kan de gebruiker de pincode wijzigen met behulp van de pincodeherstelservice van Windows Hello voor Bedrijven.
+    - **Hoofdletters in pincode**  
+    U kunt een sterkere pincode afdwingen door te vereisen dat eindgebruikers hoofdletters opnemen. Uw opties zijn:
 
-       - **Enable**: The cloud service encrypts a PIN recovery secret to store on the device. The user can change their PIN if needed.  
-       - **Not configured** (default): A PIN recovery secret is not created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one. The user will need to re-register with any services the old PIN provided access to.  
+      - **Niet toegestaan**: blokkeren dat gebruikers hoofdletters gebruiken in de pincode. Dit gedrag treedt ook op als de instelling niet is geconfigureerd.
+      - **Toegestaan**: toestaan dat gebruikers hoofdletters gebruiken in de pincode. Dit is echter niet vereist.
+      - **Vereist**: gebruikers moeten minstens één hoofdletter opnemen in hun pincode. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
 
-- **Een Trusted Platform Module (TPM) gebruiken**: een TPM-chip biedt een extra laag voor gegevensbeveiliging. Kies een van de volgende waarden:  
-  - **Inschakelen**: alleen apparaten met een toegankelijke TPM kunnen Windows Hello voor Bedrijven inrichten.
-  - **Niet geconfigureerd**: alle apparaten kunnen Windows Hello voor Bedrijven inrichten, zelfs als er geen bruikbare TPM is. Apparaten proberen eerst gebruik te maken van een TPM, maar als er geen beschikbaar is, kunnen apparaten gebruik maken van softwareversleuteling.  
+    - **Speciale tekens in pincode**  
+    U kunt een sterkere pincode afdwingen door te vereisen dat eindgebruikers speciale tekens opnemen. Tot de speciale tekens behoren: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`  
+ 
+      Uw opties zijn:
+      - **Niet toegestaan**: blokkeren dat gebruikers speciale tekens gebruiken in de pincode. Dit gedrag treedt ook op als de instelling niet is geconfigureerd.
+      - **Toegestaan**: toestaan dat gebruikers hoofdletters gebruiken in de pincode. Dit is echter niet vereist.
+      - **Vereist**: gebruikers moeten minstens één hoofdletter opnemen in hun pincode. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
 
-- **Biometrische verificatie toestaan**: hiermee kunt u biometrische verificatie, zoals gezichtsherkenning of een vingerafdruk, inschakelen als alternatief voor een pincode voor Windows Hello voor Bedrijven. Gebruikers moeten toch een pincode voor Passport for Work configureren voor het geval dat biometrische verificatie mislukt. U kunt kiezen uit:
+      **Standaard**: niet toegestaan
 
-  - **Inschakelen**: Windows Hello voor bedrijven staat biometrische verificatie toe.
-  - **Niet geconfigureerd** (standaard): het gebruik van biometrische verificatie (voor alle accounttypen) is niet toegestaan in Windows Hello voor Bedrijven.
+  - **Verlooptijd pincode (dagen)**  
+      Het is raadzaam om een verloopperiode voor een pincode op te geven, waarna gebruikers deze moeten wijzigen. Standaardinstellingen voor Windows-apparaat zijn 41 dagen.
 
-- **Uitgebreide anti-spoofing gebruiken, indien beschikbaar**: kies deze optie als de anti-adresvervalsingsfuncties van Windows Hello worden gebruikt op apparaten die hier ondersteuning voor bieden. Detecteer bijvoorbeeld een foto van een gezicht in plaats van een echt gezicht.
+    **Standaardinstelling**: niet geconfigureerd
 
-  - **Inschakelen**: Windows verplicht alle gebruikers om anti-adresvervalsing te gebruiken voor gezichtskenmerken, indien dit wordt ondersteund.  
-  - **Niet geconfigureerd** (standaard): Windows houdt zich aan de anti-adresvervalsingsconfiguraties van het apparaat.
+  - **Pincodegeschiedenis onthouden**  
+    Beperkt het hergebruik van eerder gebruikte pincodes. Windows-apparaten standaard met het voorkomen van hergebruik van de laatste vijf pincodes.  
 
-- **Certificaat voor on-premises resources**: 
+    **Standaardinstelling**: niet geconfigureerd  
 
-  - **Inschakelen**: hiermee staat u Windows Hello voor Bedrijven toe certificaten te gebruiken voor verificatie bij on-premises resources.
-  - **Niet geconfigureerd** (standaard): hiermee voorkomt u dat Windows Hello voor Bedrijven certificaten gebruikt voor verificatie bij on-premises resources. In plaats daarvan maken apparaten gebruik van het standaardgedrag van *On-premises verificatie met sleutelvertrouwen*. Zie [Gebruikerscertificaat voor on-premises verificatie](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) in de Windows Hello-documentatie voor meer informatie.  
+  - **Herstel van pincode inschakelen**   
+    Kan de gebruiker met de Windows Hello voor bedrijven PINCODE recovery-service. 
+    
+    - **Ingeschakeld** - geheim voor herstel van de PINCODE is opgeslagen op het apparaat en de gebruiker kan PINCODE wijzigen, indien nodig.  
+    - **Uitgeschakelde** -het geheim herstel is niet gemaakt of die zijn opgeslagen.
+
+    **Standaard**: niet geconfigureerd
+
+  - **Een TPM (Trusted Platform Module) gebruiken**   
+    Een TPM-chip biedt een extra laag gegevensbeveiliging.  
+
+    - **Ingeschakeld**: alleen apparaten met een toegankelijke TPM kunnen Windows Hello voor Bedrijven inrichten.
+    - **Niet geconfigureerd**: apparaten proberen eerst een TPM te gebruiken. Als deze niet beschikbaar is, kunnen ze softwareversleuteling gebruiken.
+    
+    **Standaard**: niet geconfigureerd
+
+  - **Biometrische verificatie toestaan**  
+     Hiermee kunt u biometrische verificatie, zoals gezichtsherkenning of een vingerafdruk, inschakelen als alternatief voor een pincode voor Windows Hello voor Bedrijven. Gebruikers moeten toch een pincode voor Passport for Work configureren voor het geval dat biometrische verificatie mislukt. U kunt kiezen uit:
+
+    - **Inschakelen**: Windows Hello voor bedrijven staat biometrische verificatie toe.
+    - **Niet geconfigureerd**: het gebruik van biometrische verificatie (voor alle accounttypen) is niet toegestaan in Windows Hello voor Bedrijven.
+
+    **Standaard**: niet geconfigureerd
+
+  - **Verbeterde anti-adresvervalsing gebruiken, indien beschikbaar**  
+    Hiermee configureert u of de functies voor anti-adresvervalsing van Windows Hello worden gebruikt op apparaten die deze functie ondersteunen (bijvoorbeeld een foto van een gezicht in plaats van een echt gezicht detecteren).  
+    - **Inschakelen**: Windows verplicht alle gebruikers om anti-adresvervalsing te gebruiken voor gezichtskenmerken, indien dit wordt ondersteund.
+    - **Niet geconfigureerd**: Windows houdt zich aan de anti-adresvervalsingsconfiguraties van het apparaat.
+
+    **Standaard**: niet geconfigureerd
+
+  - **Certificaat voor on-premises resources**  
+
+    - **Inschakelen**: hiermee staat u Windows Hello voor Bedrijven toe certificaten te gebruiken voor verificatie bij on-premises resources.
+    - **Niet geconfigureerd**: hiermee voorkomt u dat Windows Hello voor Bedrijven certificaten gebruikt voor verificatie bij on-premises resources. In plaats daarvan maken apparaten gebruik van het standaardgedrag van *On-premises verificatie met sleutelvertrouwen*. Zie [Gebruikerscertificaat voor on-premises verificatie](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) in de Windows Hello-documentatie voor meer informatie.  
+
+  **Standaard**: niet geconfigureerd
+
+- **Sleutels gebruiken voor aanmelden**  
+  Deze instelling is beschikbaar voor apparaten met Windows 10 versie 1903 of hoger. Gebruik dit voor het beheren van ondersteuning voor het gebruik van Windows Hello beveiligingssleutels voor aanmelding bij.  
+
+  - **Ingeschakeld** -gebruikers kunnen een Windows Hello beveiligingssleutel gebruiken als een aanmeldingsreferenties voor pc's waarop dit beleid toegepast. 
+  - **Uitgeschakeld** - sleutels zijn uitgeschakeld en dat gebruikers deze niet gebruiken voor aanmelding bij pc's.   
+
+  **Standaard**: niet geconfigureerd
+
 ## <a name="next-steps"></a>Volgende stappen
 
 [Het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).

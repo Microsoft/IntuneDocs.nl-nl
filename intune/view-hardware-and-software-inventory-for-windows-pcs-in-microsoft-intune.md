@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 06/26/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e24e72951d473c2e7e49d5ae62b39df18635c16
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2c1717be830d88ed0a7d1b660b7910c8192c93c5
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040280"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403549"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Hardware- en software-inventaris voor Windows-computers weergeven
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
-Intune verzamelt gedetailleerde informatie over de hardware en software van desktops die u als pc's beheert met behulp van de Intune-softwareclient. Gebruik de informatie in de volgende procedures om het volgende te leren maken:
+> [!NOTE]
+> De informatie in dit onderwerp geldt alleen voor Windows-desktops die u als pc's beheert met behulp van de Intune-softwareclient. Als u wilt weergeven-inventaris voor Windows-pc's die zijn ingeschreven als mobiele apparaten, Zie [Apparaatdetails bekijken in Intune](device-inventory.md).
+
+Intune verzamelt gedetailleerde informatie over de hardware en software voor desktops die u als pc's beheert met behulp van de Intune-softwareclient. Gebruik de informatie in de volgende procedures om het volgende te leren maken:
 
 -   Een rapport met een overzicht van de informatie over de hardwaremogelijkheden van de pc's die u beheert.
 
