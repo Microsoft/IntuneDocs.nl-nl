@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046296"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528746"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Problemen bij de apparaatinschrijving in Microsoft Intune oplossen
 
@@ -34,10 +34,10 @@ Dit artikel bevat suggesties voor het oplossen van problemen met de [inschrijvin
 
 Voordat u het probleem probeert op te lossen, controleert u of u Intune op de juiste manier hebt geconfigureerd om registratie mogelijk te maken. U kunt meer over deze configuratievereisten lezen in:
 
--   [Bereid u voor op het registreren van apparaten in Microsoft Intune](setup-steps.md)
--   [iOS- en Mac-apparaatbeheer instellen](ios-enroll.md)
--   [Windows apparaatbeheer instellen](windows-enroll.md)
--   [Android-apparaatbeheer instellen](android-enroll.md): geen aanvullende stappen vereist
+- [Bereid u voor op het registreren van apparaten in Microsoft Intune](setup-steps.md)
+- [iOS- en Mac-apparaatbeheer instellen](ios-enroll.md)
+- [Windows apparaatbeheer instellen](windows-enroll.md)
+- [Android-apparaatbeheer instellen](android-enroll.md): geen aanvullende stappen vereist
 
 U kunt er ook voor zorgen dat de datum en tijd op het apparaat van de gebruiker juist zijn ingesteld:
 
@@ -236,15 +236,15 @@ De certificaatfout treedt op omdat er voor Android-apparaten tussencertificaten 
 
 Als u dit probleem wilt oplossen, importeert u als volgt de certificaten in het persoonlijke certificaatarchief op de AD FS-server of proxy’s:
 
-1.  Klik op de ADFS- en proxyservers met de rechtermuisknop op **Start** > **Uitvoeren** > **certlm.msc** om Local Machine Certificate Management Console te starten.
-2.  Vouw de optie **Persoonlijk** uit en kies **Certificaten**.
-3.  Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
-4.  Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
-5.  Kies voor elk bovenliggend certificaat de optie **Certificaat weergeven**.
-6.  Kies **Details** > **Kopiëren naar bestand...** .
-7.  Volg de aanwijzingen in de wizard om de openbare sleutel van het bovenliggende certificaat te exporteren of op te slaan op de bestandslocatie van uw keuze.
-8.  Klik met de rechtermuisknop op **Certificaten** > **Alle taken** > **Importeren**.
-9.  Volg de aanwijzingen van de wizard om de bovenliggende certificaten te importeren in **Lokale computer\Persoonlijk\Certificaten**.
+1. Klik op de ADFS- en proxyservers met de rechtermuisknop op **Start** > **Uitvoeren** > **certlm.msc** om Local Machine Certificate Management Console te starten.
+2. Vouw de optie **Persoonlijk** uit en kies **Certificaten**.
+3. Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
+4. Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
+5. Kies voor elk bovenliggend certificaat de optie **Certificaat weergeven**.
+6. Kies **Details** > **Kopiëren naar bestand...** .
+7. Volg de aanwijzingen in de wizard om de openbare sleutel van het bovenliggende certificaat te exporteren of op te slaan op de bestandslocatie van uw keuze.
+8. Klik met de rechtermuisknop op **Certificaten** > **Alle taken** > **Importeren**.
+9. Volg de aanwijzingen van de wizard om de bovenliggende certificaten te importeren in **Lokale computer\Persoonlijk\Certificaten**.
 10. Start de AD FS-servers opnieuw op.
 11. Herhaal de stappen hierboven op al uw AD FS- en proxyservers.
 

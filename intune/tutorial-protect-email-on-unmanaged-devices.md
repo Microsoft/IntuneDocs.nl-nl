@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046286"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528678"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Zelfstudie: Exchange Online-e-mail beschermen op onbeheerde apparaten
 
@@ -74,7 +74,7 @@ Voor deze zelfstudie stellen we een Intune-beveiligingsbeleid in voor de Outlook
 
     Selecteer **OK** om terug te keren naar het deelvenster Instellingen.  
 
-7.  Selecteer **OK** in het deelvenster Instellingen en vervolgens **Maken** in het deelvenster Beleid maken.
+7. Selecteer **OK** in het deelvenster Instellingen en vervolgens **Maken** in het deelvenster Beleid maken.
 
 Het app-beveiligingsbeleid voor Outlook is gemaakt. Nu kunt u voorwaardelijke toegang instellen om voor apparaten te vereisen dat de Outlook-app wordt gebruikt.
 
@@ -188,5 +188,5 @@ Als het testbeleid niet langer nodig is, kunt u dit verwijderen.
 4. Selecteer **Voorwaardelijke toegang** > **Beleid**.  
 5. Selecteer in de lijst **Naam beleid** het contextmenu ( **...** ) voor uw testbeleid en selecteer vervolgens **Verwijderen**. Selecteer **Ja** om te bevestigen.  
 
- ## <a name="next-steps"></a>Volgende stappen  
+## <a name="next-steps"></a>Volgende stappen  
 In deze zelfstudie hebt u app-beveiligingsbeleid gemaakt om te beperken wat de gebruiker kan doen met de Outlook-app. Ook hebt u beleid voor voorwaardelijke toegang gemaakt om gebruik van de Outlook-app te vereisen en MFA te vereisen voor clients met moderne verificatie. Zie, voor meer informatie over het gebruik van Intune met voorwaardelijke toegang om andere apps en diensten te beschermen, [Voorwaardelijke toegang instellen](conditional-access.md).

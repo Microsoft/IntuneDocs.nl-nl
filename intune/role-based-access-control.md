@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044163"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528234"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune
 
@@ -38,9 +38,9 @@ Met een rol wordt bepaald welke set machtigingen aan gebruikers wordt verleend d
 U kunt zowel ingebouwde als aangepaste rollen gebruiken. Ingebouwde rollen hebben betrekking op bepaalde algemene Intune-scenario's. U kunt [uw eigen aangepaste rollen maken](create-custom-role.md) met de exacte set machtigingen die u nodig hebt. Meerdere Azure Active Directory-rollen hebben machtigingen voor Intune.
 Als u een rol wilt bekijken, kiest u **Intune** > **Rollen** > **Alle rollen** > Een rol kiezen. Hier ziet u de volgende pagina's:
 
--   **Eigenschappen**: de naam, de beschrijving, het type, de toewijzingen en de bereiktags voor de rol. 
--   **Machtigingen**: hierin wordt een lange reeks schakelknoppen vermeld waarmee wordt bepaald over welke machtigingen de rol beschikt.
--   **Toewijzingen**: een lijst met [roltoewijzingen]( assign-role.md) waarin wordt gedefinieerd welke gebruikers toegang hebben tot welke gebruikers/apparaten. Een rol kan over meerdere toewijzingen beschikken, en een gebruiker kan zich in meerdere toewijzingen bevinden.
+- **Eigenschappen**: de naam, de beschrijving, het type, de toewijzingen en de bereiktags voor de rol. 
+- **Machtigingen**: hierin wordt een lange reeks schakelknoppen vermeld waarmee wordt bepaald over welke machtigingen de rol beschikt.
+- **Toewijzingen**: een lijst met [roltoewijzingen]( assign-role.md) waarin wordt gedefinieerd welke gebruikers toegang hebben tot welke gebruikers/apparaten. Een rol kan over meerdere toewijzingen beschikken, en een gebruiker kan zich in meerdere toewijzingen bevinden.
 
 ### <a name="built-in-roles"></a>Ingebouwde rollen
 U kunt ingebouwde rollen toewijzen aan groepen zonder verdere configuratie. U kunt de naam, de beschrijving, het type of de machtigingen van een ingebouwde rol niet verwijderen of bewerken. Zie [Intune RBAC-tabel](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) voor een volledige lijst met de machtigingen voor elke ingebouwde rol.
@@ -84,10 +84,10 @@ Met een roltoewijzing wordt gedefinieerd:
 U kunt aangepaste en ingebouwde rollen toewijzen aan uw gebruikers. Alleen aan gebruikers met een Intune-licentie kan een Intune-rol worden toegewezen.
 Als u een rol wilt bekijken, kiest u **Intune** > **Rollen** > **Alle rollen** > Een rol kiezen > Een toewijzing kiezen. Hier ziet u de volgende pagina's:
 
--   **Eigenschappen**: De naam, beschrijving, rol, leden, bereiken en tags van de toewijzing.
--   **Leden**: Alle gebruikers in vermelde groepen hebben een machtiging voor het beheren van de gebruikers/apparaten die in Bereik (groepen) worden vermeld.
--   **Bereik (groepen)** : Alle gebruikers/apparaten in deze groepen kunnen worden beheerd door de gebruikers in Leden.
--   **[Bereik (tags)](scope-tags.md)** : Gebruikers in Leden kunnen de resources zien die over dezelfde bereiktags beschikken.
+- **Eigenschappen**: De naam, beschrijving, rol, leden, bereiken en tags van de toewijzing.
+- **Leden**: Alle gebruikers in vermelde groepen hebben een machtiging voor het beheren van de gebruikers/apparaten die in Bereik (groepen) worden vermeld.
+- **Bereik (groepen)** : Alle gebruikers/apparaten in deze groepen kunnen worden beheerd door de gebruikers in Leden.
+- **[Bereik (tags)](scope-tags.md)** : Gebruikers in Leden kunnen de resources zien die over dezelfde bereiktags beschikken.
 
 ### <a name="multiple-role-assignments"></a>Meerdere roltoewijzingen
 Als een gebruiker meerdere roltoewijzingen heeft, worden machtigingen in deze roltoewijzingen als volgt uitgebreid naar verschillende objecten:
