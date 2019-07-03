@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbf04d771a9c1fd43cfe695dd2d27b9cfe1a0528
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bbd8d81dfab46a1e752084aab75fbcf0d8104187
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050309"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044276"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Quickstart: Een e-mailprofiel voor een apparaat voor iOS maken
 
@@ -67,11 +67,11 @@ Meld u aan bij [Intune](https://aka.ms/intuneportal) als globale beheerder of be
 Als u niet van plan bent om het profiel dat u hebt gemaakt te gebruiken voor aanvullende zelfstudies of testen, kunt u dit nu verwijderen.
 1. Selecteer in Intune de optie **Apparaatconfiguratie** en vervolgens **Profielen**.
 2. Selecteer het testprofiel dat u hebt gemaakt, **iOS vereist zakelijk e-mailadres**.
-3. Selecteer de beletselteken (**...**) naast het profiel en selecteer vervolgens **Verwijderen**.
+3. Selecteer de beletselteken ( **...** ) naast het profiel en selecteer vervolgens **Verwijderen**.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-In deze snelstartgids hebt u een e-mailprofiel voor iOS-apparaten gemaakt. U kunt nu met dit profiel bepalen of een iOS-apparaat voldoet aan het beleid door een nalevingsbeleid te maken, waarbij alle iOS-apparaten die niet overeenkomen met het profiel als niet-compatibel worden gemarkeerd. Als u uw e-mail nog verder wilt beveiligen, kunt u een beleid voor voorwaardelijke toegang maken, zodat niet-compatibele apparaten geen toegang krijgen tot de e-mail. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over beleidsregels voor apparaatnaleving.
+In deze snelstartgids hebt u een e-mailprofiel voor iOS-apparaten gemaakt. U kunt nu met dit profiel bepalen of een iOS-apparaat voldoet aan het beleid door een nalevingsbeleid te maken, waarbij alle iOS-apparaten die niet overeenkomen met het profiel als niet-compatibel worden gemarkeerd. Als u uw e-mail nog verder wilt beveiligen, kunt u een beleid voor voorwaardelijke toegang maken, zodat niet-compatibele iOS-apparaten geen toegang krijgen tot de e-mail. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over beleidsregels voor apparaatnaleving.
 
 > [!div class="nextstepaction"]
 > [Zelfstudie: Exchange Online e-mail beschermen op beheerde apparaten](tutorial-protect-email-on-enrolled-devices.md)

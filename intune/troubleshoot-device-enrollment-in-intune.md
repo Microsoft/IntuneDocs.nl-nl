@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6175fca13f1883338b7f5858538728132183b8db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040605"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046296"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Problemen bij de apparaatinschrijving in Microsoft Intune oplossen
 
@@ -143,7 +143,7 @@ Om te voorkomen dat apparaatlimieten worden bereikt, moet u ervoor zorgen dat ve
 - over meerdere domeinen op het hoogste niveau beschikken voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com).
 
 
-Een [updatepakket voor ADFS 2.0](http://support.microsoft.com/kb/2607496) kan worden gebruikt met de schakeloptie <strong>SupportMultipleDomain</strong> om de ADFS-server in te schakelen voor ondersteuning van dit scenario zonder extra ADFS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
+Een [updatepakket voor ADFS 2.0](http://support.microsoft.com/kb/2607496) kan worden gebruikt met de schakeloptie <strong>SupportMultipleDomain</strong> om de ADFS-server in te schakelen voor ondersteuning van dit scenario zonder extra ADFS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
 
 
 ## <a name="android-issues"></a>Problemen met Android
@@ -241,7 +241,7 @@ Als u dit probleem wilt oplossen, importeert u als volgt de certificaten in het 
 3.  Zoek het certificaat voor uw AD FS-servicecommunicatie (een openbaar ondertekend certificaat) en dubbelklik erop om de eigenschappen weer te geven.
 4.  Selecteer het tabblad **Certificeringspad** om de bovenliggende certificaten weer te geven.
 5.  Kies voor elk bovenliggend certificaat de optie **Certificaat weergeven**.
-6.  Kies **Details** > **Kopiëren naar bestand...**.
+6.  Kies **Details** > **Kopiëren naar bestand...** .
 7.  Volg de aanwijzingen in de wizard om de openbare sleutel van het bovenliggende certificaat te exporteren of op te slaan op de bestandslocatie van uw keuze.
 8.  Klik met de rechtermuisknop op **Certificaten** > **Alle taken** > **Importeren**.
 9.  Volg de aanwijzingen van de wizard om de bovenliggende certificaten te importeren in **Lokale computer\Persoonlijk\Certificaten**.

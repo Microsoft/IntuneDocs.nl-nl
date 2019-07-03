@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e236548002f2779377e7ac57443077d48869e1f9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 57684a1f5ef94b12c8f0e52a36d8432583391b8a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047702"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045679"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>De Intune on-premises Exchange-connector instellen in Microsoft Intune
 De informatie in dit artikel helpt u bij het installeren en vervolgens controleren van de on-premises Exchange Active Sync-connector voor Intune.  U gebruikt de Intune on-premises Exchange-connector met uw [beleid voor voorwaardelijke toegang om toegang tot uw on-premises Exchange-postvakken toe te staan of te blokkeren](conditional-access-exchange-create.md). 
 
-Wanneer een apparaat toegang tot uw on-premises Exchange probeert te krijgen, worden EAS-records (Exchange Active Syn) in Exchange Server met de Exchange-connector toegewezen aan Intune-records om op apparaatinschrijving met Intune en naleving van uw beleid voor apparaten te controleren. Afhankelijk van uw beleid voor voorwaardelijke toegang kan aan het apparaat toegang worden verleend of geblokkeerd. Zie [What are common ways to use conditional access with Intune?](conditional-access-intune-common-ways-use.md) (Wat zijn gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken?) voor meer informatie.
+Wanneer een apparaat toegang tot uw on-premises Exchange probeert te krijgen, worden EAS-records (Exchange Active Syn) in Exchange Server met de Exchange-connector toegewezen aan Intune-records om op apparaatinschrijving met Intune en naleving van uw beleid voor apparaten te controleren. Afhankelijk van uw beleid voor voorwaardelijke toegang kan aan het apparaat toegang worden verleend of geblokkeerd. Zie [What are common ways to use conditional access with Intune?](conditional-access-intune-common-ways-use.md) (Wat zijn gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken?) voor meer informatie
 
 Intune ondersteunt de installatie van meerdere on-premises Exchange-connectors per abonnement. Als u meer dan een on-premises Exchange-organisatie hebt, kunt u voor elke organisatie een afzonderlijke connector instellen. U kunt echter slechts één connector voor elke afzonderlijke Exchange-organisatie installeren. 
 

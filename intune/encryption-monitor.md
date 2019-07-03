@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d90bc17d01a76c9c566210edc3bdc265511fa16d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
+ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047823"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316936"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker en apparaatversleuteling bewaken  
 Intune biedt een gecentraliseerde locatie om de versleutelingsstatus van uw Windows 10-apparaten te identificeren. Ook krijgt u belangrijke informatie voor BitLocker van uw apparaten van Azure Active Directory (Azure AD).  
@@ -51,7 +51,7 @@ In het rapport staat de **apparaatnaam** voor uw Windows 10-apparaten en details
   - **Niet gereed**: Het apparaat beschikt niet over alle versleutelingsmogelijkheden, maar kan nog wel worden versleuteld. Het apparaat kan bijvoorbeeld handmatig door een gebruiker worden versleuteld of door een groepsbeleid dat zodanig kan worden ingesteld dat versleuteling mogelijk is zonder een TMP.
   - **Niet van toepassing**: Er is onvoldoende informatie beschikbaar om dit apparaat te classificeren.  
 
-- **Versleutelingsstatus**: deze optie geeft aan of de besturingssysteemschijf is versleuteld.  
+- **Versleutelingsstatus**: deze optie geeft aan of de besturingssysteemschijf is versleuteld. 
 
 
 ### <a name="device-encryption-status"></a>Status apparaatversleuteling
@@ -60,7 +60,7 @@ Wanneer u een apparaat selecteert, wordt in Intune het deelvenster **Status appa
 In dit deelvenster worden de volgende details weergegeven:  
 - **Apparaatnaam**: de naam van het apparaat dat wordt weergegeven.  
 - **Gereedheid voor versleuteling**: met deze functie controleert u of de apparaten gereed zijn om BitLocker-versleuteling te ondersteunen. Ook als de gereedheid voor versleuteling van een apparaat *Niet gereed* is, kan de versleutelingsstatus van dit apparaat *Versleuteld* zijn, omdat er geen TPM is. (Zie Gereedheid voor versleuteling in het vorige gedeelte voor meer informatie.)
-- **Versleutelingsstatus**: deze optie geeft aan of de besturingssysteemschijf is versleuteld.  
+- **Versleutelingsstatus**: deze optie geeft aan of de besturingssysteemschijf is versleuteld. Het kan tot 24 uur duren voordat Intune de versleutelingsstatus van apparaten of een wijziging in deze status rapporteert.  
 - **Profielen**: een lijst met de profielen voor *Apparaatconfiguratie* die op dit apparaat van toepassing zijn, inclusief de volgende profieltypen en instellingen:  
   - Profieltype = *Endpoint Protection*  
   - Instellingen > Windows-versleuteling > Apparaten versleutelen = *Vereist*  
@@ -95,7 +95,7 @@ In dit deelvenster worden de volgende details weergegeven:
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker-herstelsleutels
 Intune biedt toegang tot de Azure AD-blade voor BitLocker, zodat u via de Intune-portal BitLocker-sleutel-id's en herstelsleutels voor uw Windows 10-apparaten kunt weergeven.  Een apparaat is alleen toegankelijk als de sleutels van dat apparaat naar Azure AD worden geborgd. 
-1. Meld u aan bij [Intune](https://aka.ms/intuneportal), ga naar **Apparaten** en selecteer onder *Beheren* de optie **Alle apparaten**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), ga naar **Apparaten** en selecteer onder *Beheren* de optie **Alle apparaten**.
 2. Selecteer een apparaat in de lijst en selecteer vervolgens onder *Monitor* **Herstelsleutels**.  
   
 Als er sleutels in Azure AD beschikbaar zijn, is de volgende informatie beschikbaar:

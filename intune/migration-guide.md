@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51ca966347cde157a34d1d390306f6dd262d015c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 384b940182b86e769868e2fabce3a9674e695094
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046318"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528275"
 ---
 # <a name="intune-migration-guide"></a>Migratiehandleiding voor Intune
 

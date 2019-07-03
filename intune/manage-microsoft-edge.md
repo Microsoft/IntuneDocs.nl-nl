@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1a255391a2cf27a764da6122031fd0c9cbb64cf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751356"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044875"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Internettoegang beheren met behulp van Microsoft Edge met Microsoft Intune
 
@@ -57,7 +57,7 @@ Als Microsoft Edge niet wordt gekoppeld aan Intune-beleid, kunnen gebruikers het
 
 ## <a name="conditional-access-for-microsoft-edge"></a>Voorwaardelijke toegang voor Microsoft Edge
 
-U kunt gebruikmaken van voorwaardelijke toegang van Azure AD om de gebruikers om te leiden, zodat deze uitsluitend toegang hebben tot bedrijfsinhoud via Microsoft Edge. Op die manier wordt mobiele browsertoegang tot met Azure AD verbonden web-apps beperkt tot Microsoft Edge dat met beleid is beveiligd. Hierbij wordt toegang vanuit andere onbeveiligde browsers zoals Safari of Chrome geblokkeerd. Voorwaardelijke toegang kan worden toegepast op Azure-resources, zoals Exchange Online en SharePoint Online, het Microsoft 365 Office-beheercentrum en zelfs on-premises sites die u beschikbaar hebt gemaakt voor externe gebruikers via de [Azure AD-toepassingsproxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
+U kunt gebruikmaken van voorwaardelijke toegang van Azure AD om de gebruikers om te leiden, zodat deze uitsluitend toegang hebben tot bedrijfsinhoud via Microsoft Edge. Op die manier wordt mobiele browsertoegang tot met Azure AD verbonden web-apps beperkt tot Microsoft Edge dat met beleid is beveiligd. Hierbij wordt toegang vanuit andere onbeveiligde browsers zoals Safari of Chrome geblokkeerd. Voorwaardelijke toegang kan worden toegepast op Azure-resources, zoals Exchange Online en SharePoint Online, het Microsoft 365-beheercentrum en zelfs on-premises sites die u beschikbaar hebt gemaakt voor externe gebruikers via de [Azure AD-toepassingsproxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 Als u met Azure AD verbonden web-apps wilt beperken tot gebruik van Microsoft Edge in iOS en Android, voert u de onderstaande stappen uit:
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
@@ -66,7 +66,7 @@ Als u met Azure AD verbonden web-apps wilt beperken tot gebruik van Microsoft Ed
 4. Klik op **Goedgekeurde client-apps vereisen**.
 5. Klik op **Selecteren** op de blade **Verlenen**. Dit beleid moet worden toegewezen aan de cloud-apps die u alleen voor de Intune Managed Browser-app toegankelijk wilt maken.
 
-    ![Beleid voor voorwaardelijke toegang - Grant](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
+    ![Beleid voor voorwaardelijke toegang - Toekennen](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
 6. Selecteer Voorwaarden > Client-apps in de sectie Toewijzingen. De blade Client-apps wordt weergegeven.
 7. Klik op Ja onder Configureren om het beleid toe te passen op specifieke client-apps.

@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c84cd0ec61ea08956bbebd040167991c6285d073
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3c305cc579fedb9090faaf6c7270fcc546e36eb
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044989"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044340"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Zelfstudie: Walkthrough door Microsoft Intune in Azure Portal
 
@@ -104,7 +104,7 @@ Volg de onderstaande stappen voor meer informatie over Intune in Azure Portal. Z
 
     ![Schermopname van het deelvenster Voorwaardelijke toegang](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
 
-    Voorwaardelijke toegang verwijst naar de manieren waarop u de apparaten en apps die daarvoor toestemming hebben, kunt beheren om verbinding te maken met uw e-mail en bedrijfsgegevens. Zie [Wat is voorwaardelijke toegang?](conditional-access.md) voor meer informatie over apparaat- en appgebaseerde voorwaardelijke toegang en algemene scenario's voor het gebruiken van voorwaardelijke toegang met Intune.
+    Voorwaardelijke toegang verwijst naar de manieren waarop u de apparaten en apps kunt beheren die toestemming hebben om verbinding te maken met uw e-mail- en bedrijfsgegevens. Zie [Wat is voorwaardelijke toegang?](conditional-access.md) voor meer informatie over apparaat- en appgebaseerde voorwaardelijke toegang en algemene scenario's voor het gebruiken van voorwaardelijke toegang met Intune.
 
 8. Vanuit [Intune](https://aka.ms/intuneportal) selecteert u **Gebruikers** om details weer te geven over de gebruikers die u in Intune hebt opgenomen. Deze gebruikers vormen het personeel van uw bedrijf. 
  

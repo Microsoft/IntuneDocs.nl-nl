@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba3f6fc48a68122f0a192adc8e2140bb7a603b31
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c2e8c475cd52e199519db7a3d7ea83e6dbfef1a3
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043465"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530664"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Beslissingen voor de technologie voor het inschakelen van BYOD met Microsoft Enterprise Mobility + Security (EMS)
 
@@ -56,7 +56,7 @@ Zoals al is vermeld, kan er met voorwaardelijke toegang voor worden gezorgd dat 
 
 * Welke gebruiker probeert toegang te krijgen
 * Welke locatie wordt vertrouwd of niet vertrouwd
-*   Niveau van aanmeldingsrisico's
+* Niveau van aanmeldingsrisico's
 * Apparaatplatform
 
 Toch maken veel organisaties zich nog steeds zorgen over specifieke risico's waarmee ze te maken hebben.  De volgende tabel bevat de meest voorkomende zorgen en hoe MDM en MAM hierop reageren.

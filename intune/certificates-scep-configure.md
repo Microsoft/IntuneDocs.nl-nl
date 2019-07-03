@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
+ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744330"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344090"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -68,7 +68,7 @@ Het is zeer raadzaam de NDES-server te publiceren via een omgekeerde proxy, zoal
 |**Certificaatsjabloon**|Configureer deze sjabloon op uw verlenende CA.|
 |**Clientverificatiecertificaat**|Dit certificaat wordt aangevraagd bij uw verlenende CA of openbare CA. U installeert dit op de NDES-server.|
 |**Serververificatiecertificaat**|Dit SSL-certificaat wordt aangevraagd bij uw verlenende CA of openbare CA. U installeert en verbindt dit in IIS op de NDES-server. Als voor het certificaat het gebruik van client- en serververificatiesleutels is ingesteld (**Uitgebreid sleutelgebruik**), kunt u hetzelfde certificaat gebruiken.|
-|**Vertrouwd basis-CA-certificaat**|U kunt het certificaat exporteren als een **.cer**-bestand van de basis-CA of van een apparaat dat de basis-CA vertrouwt. Vervolgens kunt u het toewijzen aan gebruikers, apparaten of beide met het profiel voor vertrouwde CA-certificaten.<br /><b>Opmerking:<b />wanneer een SCEP-certificaatprofiel wordt toegewezen, moet u het profiel voor vertrouwde basis-CA-certificaten waarnaar wordt verwezen in uw SCEP-certificaatprofiel, aan dezelfde gebruiker of apparaatgroep toewijzen.<br /><br />U gebruikt één vertrouwd basis-CA-certificaat per besturingssysteemplatform en koppelt het aan elk vertrouwd basiscertificaatprofiel dat u maakt.<br /><br />U kunt extra vertrouwde basis-CA-certificaten gebruiken als dat nodig is. U kunt dit bijvoorbeeld doen om een vertrouwensrelatie met een CA te leveren die de serververificatiecertificaten voor uw Wi-Fi-toegangspunten ondertekent.|
+|**Vertrouwd basis-CA-certificaat**|U kunt het certificaat exporteren als een **.cer**-bestand van de basis-CA of van een apparaat dat de basis-CA vertrouwt. Vervolgens kunt u het toewijzen aan gebruikers, apparaten of beide met het profiel voor vertrouwde CA-certificaten.<br /> **Opmerking:<br />wanneer een SCEP-certificaatprofiel wordt toegewezen, moet u het *profiel voor vertrouwde basis-CA-certificaten* waarnaar wordt verwezen in uw SCEP-certificaatprofiel, aan dezelfde gebruiker of apparaatgroep toewijzen.  Zie voor het maken van dit profiel [Een vertrouwd certificaatprofiel maken](certficates-pfx-configure.md#create-a-trusted-certificate-profile), zoals wordt beschreven in het artikel over PKCS-certificaatprofielen.** <br/><br />U gebruikt één vertrouwd basis-CA-certificaat per besturingssysteemplatform en koppelt het aan elk vertrouwd basiscertificaatprofiel dat u maakt. <br /><br />U kunt extra vertrouwde basis-CA-certificaten gebruiken als dat nodig is. U kunt dit bijvoorbeeld doen om een vertrouwensrelatie met een CA te leveren die de serververificatiecertificaten voor uw Wi-Fi-toegangspunten ondertekent.|
 
 ### <a name="accounts"></a>Accounts
 
@@ -487,7 +487,7 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
      - **Digitale handtekening**: Sta sleuteluitwisseling alleen toe als een digitale handtekening de sleutel helpt beveiligen
    - **Sleutelgrootte (bits)** : Selecteer het aantal bits in de sleutel
    - **Hash-algoritme** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Selecteer een van de beschikbare typen hash-algoritme om met dit certificaat te gebruiken. Selecteer het sterkste beveiligingsniveau dat door de verbindende apparaten wordt ondersteund.
-   - **Basiscertificaat**: Kies een basis-CA-certificaatprofiel dat u eerder hebt geconfigureerd en aan de gebruiker en/of het apparaat hebt toegewezen. Dit CA-certificaat moet het basiscertificaat zijn voor de CA die het certificaat verleent dat u in dit certificaatprofiel gaat configureren. Zorg ervoor dat u dit profiel voor vertrouwde basiscertificaten toewijst aan dezelfde groep die is toegewezen in het SCEP-certificaatprofiel.
+   - **Basiscertificaat**: Kies een [vertrouwd basiscertificaatprofiel](certficates-pfx-configure.md#create-a-trusted-certificate-profile) dat u eerder hebt gemaakt en aan de gebruiker en/of het apparaat hebt toegewezen. Dit CA-certificaat moet het basiscertificaat zijn voor de CA die het certificaat verleent dat u in dit certificaatprofiel gaat configureren. Zorg ervoor dat u dit profiel voor vertrouwde basiscertificaten toewijst aan dezelfde groep die is toegewezen in het SCEP-certificaatprofiel.
    - **Uitgebreide-sleutelgebruik**: **Voeg waarden toe** voor het beoogde gebruik van het certificaat. In de meeste gevallen vereist het certificaat **Clientverificatie** zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. U kunt echter zo nodig andere sleutelgebruiken toevoegen.
    - **Registratie-instellingen**
      - **Drempelwaarde voor verlenging (%)** : Geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
@@ -508,6 +508,7 @@ Overweeg het volgende voordat u certificaatprofielen aan groepen toewijst:
 
     > [!NOTE]
     > In iOS worden als het goed is meerdere exemplaren van het certificaat weergegeven in het beheerprofiel als u meerdere resourceprofielen hebt geïmplementeerd die hetzelfde certificaatprofiel gebruiken.
+- Als u co-beheer gebruikt voor Intune en Configuration Manager, stelt u in Configuration Manager de [schuifregelaar workload](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) voor *Resource-toegangsbeleid* in op **Intune** of **Testfase van Intune**. Met deze instelling is het toegestaan dat Windows 10-clients het proces starten om het certificaat aan te vragen.  
 
 Zie [Apparaatprofielen toewijzen](device-profile-assign.md) voor informatie over het toewijzen van apparaatprofielen.
 
@@ -552,7 +553,7 @@ Vanaf versie 6.1806.x.x legt de Intune-connectorservice gebeurtenissen vast in d
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Geslaagd  | Geslaagd |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | Certificeringsinstantie is niet geldig of is niet bereikbaar. Controleer of de certificeringsinstantie beschikbaar is en of uw server ermee kan communiceren. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | Client-Auth Symantec-certificaat is niet gevonden in het lokale certificaatarchief. Zie het artikel [Het Symantec-certificaat voor registratie-autorisatie installeren](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) voor meer informatie.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Client-Auth Symantec-certificaat is niet gevonden in het lokale certificaatarchief. Raadpleeg het artikel [Intune Certificate Connector instellen voor het DigiCert PKI-platform](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting) voor meer informatie.  |
 | 0x00000402 | RevokeCert_AccessDenied  | Het opgegeven account heeft geen machtigingen om een certificaat van CA in te trekken. Zie het veld CA-naam in de berichtdetails van de gebeurtenis om de verlenende CA te bepalen.  |
 | 0x00000403 | CertThumbprint_NotFound  | Kan geen certificaat vinden dat overeenkomt met uw invoer. Registreer de certificaatconnector en probeer het opnieuw. |
 | 0x00000404 | Certificate_NotFound  | Kan geen certificaat vinden dat overeenkomt met de opgegeven invoer. Registreer de certificaatconnector nogmaals en probeer het opnieuw. |

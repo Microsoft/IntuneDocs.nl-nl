@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,17 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: d207d1ac51da5b34f48aeffd83791bdbb40bf971
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804667"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494556"
 ---
 # <a name="plan-communications"></a>De communicatie plannen 
 Het communicatieplan is een belangrijk element bij een Intune-migratie. Met de volgende hulpprogramma's en sjablonen kunt u eindgebruikers informeren en op weg helpen. De Intune Adoption Kit omvat e-mailsjablonen, een handleiding voor Intune-inschrijving en koppelingen naar instructievideo's voor de inschrijving van eindgebruikers.  
 
-Download:  [Intune Adoption Kit](http://aka.ms/IntuneAdoptionKit)
+Download:  [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit)
 
 ## <a name="email-templates"></a>E-mail-sjablonen 
 Het volgende e-mailcommunicatieplan wordt aangeraden. We bieden u sjablonen aan die u kunt aanpassen voor uw communicatieplan:

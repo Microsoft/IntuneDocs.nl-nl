@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373477"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298409"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-scripts op Windows 10-apparaten gebruiken in Intune
 
@@ -45,7 +45,7 @@ De Intune-beheeruitbreiding heeft de volgende vereisten. Zodra aan deze wordt vo
 
 - Apparaten met Windows 10 versie 1607 of hoger. Als het apparaat wordt ingeschreven via [bulksgewijze automatische inschrijving](windows-bulk-enroll.md), moeten deze zijn voorzien van Windows 10 versie 1703 of hoger. De Intune-beheeruitbreiding wordt in de S-modus niet ondersteund in Windows 10 omdat het in de S-modus niet is toegestaan om niet-Store-apps uit te voeren. 
   
-- Apparaten die zijn gekoppeld aan Azure Active Directory (AD), met inbegrip van:
+- Apparaten die zijn gekoppeld aan Azure Active Directory (AD), met inbegrip van:  
   
   - Hybride Azure AD-koppeling: Apparaten die aan Azure Active Directory (AD) én aan een on-premises Active Directory (AD) zijn gekoppeld. Zie [De implementatie van uw hybride Azure Active Directory-deelname plannen](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) voor hulp.
 
@@ -55,13 +55,20 @@ De Intune-beheeruitbreiding heeft de volgende vereisten. Zodra aan deze wordt vo
   
   - Handmatig bij Intune ingeschreven apparaten. Dit is in de volgende situaties het geval:
   
-    - De gebruiker meldt zich via een lokaal gebruikersaccount aan op het apparaat en koppelt het apparaat vervolgens handmatig aan de Azure AD (en automatisch inschrijving bij Intune is in Azure AD ingeschakeld).
+    - [Automatische inschrijving bij Intune](quickstart-setup-auto-enrollment.md) is ingeschakeld in Azure AD. De eindgebruiker meldt zich via een lokaal gebruikersaccount aan op het apparaat en koppelt het apparaat handmatig aan Azure AD. Vervolgens meldt de eindgebruiker zich op het apparaat aan met een Azure AD-account.
     
-    Of
+    OF  
     
     - De gebruiker meldt zich op het apparaat aan bij diens Azure AD-account, waarna het apparaat bij Intune wordt ingeschreven.
 
-  - Gezamenlijk beheerde apparaten waarop gebruik wordt gemaakt Configuration Manager en Intune. Zie [Wat is co-beheer?](https://docs.microsoft.com/sccm/comanage/overview) voor hulp.
+  - Gezamenlijk beheerde apparaten waarop gebruik wordt gemaakt Configuration Manager en Intune. Zorg ervoor dat de workload **Client-apps** is ingesteld op **testfase voor Intune** of **Intune**. Raadpleeg de volgende richtlijnen: 
+  
+    - [Wat is co-beheer?](https://docs.microsoft.com/sccm/comanage/overview) 
+    - [Workload Client-apps](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
+    - [Configuration Manager-workloads overschakelen naar Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+  
+> [!TIP]
+> Zorg ervoor dat apparaten zijn [gekoppeld](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) aan Azure AD. Apparaten die alleen [geregistreerd](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) zijn in Azure AD zullen scripts niet ontvangen.
 
 ## <a name="create-a-script-policy"></a>Een scriptbeleid maken 
 
@@ -87,7 +94,7 @@ De Intune-beheeruitbreiding heeft de volgende vereisten. Zodra aan deze wordt vo
 5. Selecteer **OK** > **Maken** om het script op te slaan.
 
 > [!NOTE]
-> Het PowerShell-script wordt onder beheerdersbevoegdheden uitgevoerd (standaard) wanneer het script is ingesteld op gebruikerscontext en de eindgebruiker op het apparaat beheerdersbevoegdheden heeft.
+> Als scripts zijn ingesteld op de gebruikerscontext en de gebruiker beheerdersrechten heeft, wordt het PowerShell-script standaard uitgevoerd met beheerdersrechten.
 
 ## <a name="assign-the-policy"></a>Wijs het beleid toe
 
@@ -156,6 +163,7 @@ Als u wilt zien of het apparaat automatisch wordt ingeschreven, kunt u het volge
     > [!TIP]
     > De **Microsoft Intune-beheeruitbreiding** is een service die wordt uitgevoerd op het apparaat, net als andere services die in de app Services worden vermeld (services.msc). Nadat een apparaat opnieuw is opgestart, wordt deze service mogelijk ook opnieuw opgestart. Er wordt dan gecontroleerd op aan de Intune-service toegewezen PowerShell-scripts. Als de **Microsoft Intune-beheeruitbreiding** is ingesteld op Handmatig, wordt de service mogelijk niet opnieuw opgestart wanneer het apparaat opnieuw wordt opgestart.
 
+- Zorg ervoor dat apparaten zijn [gekoppeld aan Azure AD](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network). Apparaten die alleen zijn toegevoegd aan uw werkplek of organisatie ([geregistreerd](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) in Azure AD) ontvangt uw scripts niet.
 - De client met de Intune-beheeruitbreiding controleert eenmaal per uur op wijzigingen in het script of het beleid in Intune.
 - Controleer of de Intune-beheeruitbreiding is gedownload naar `%ProgramFiles(x86)%\Microsoft Intune Management Extension`.
 - Scripts worden in de S-modus niet uitgevoerd op Surface Hubs en in Windows 10.

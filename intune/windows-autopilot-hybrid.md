@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 030467009e0fed8716a1aa622474188352c0e0b0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050357"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494533"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Apparaten die aan hybride Azure AD zijn gekoppeld implementeren met Intune en Windows Autopilot
 U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn gekoppeld aan Hybrid Azure Active Directory (Azure AD). Volg hiervoor de stappen in dit artikel.
@@ -32,7 +32,7 @@ U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn
 Configureer uw [gekoppelde Hybrid Azure AD-apparaten](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Zorg ervoor dat u [de registratie van uw apparaat verifieert]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) met behulp van de cmdlet Get-MsolDevice.
 
 De te registreren apparaten moeten ook voldoen aan de volgende voorwaarden:
-- Er moet Windows 10 met de [update van oktober 2018](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/) op worden uitgevoerd.
+- Apparaten werken met Windows 10 v1809 of hoger.
 - Ze moeten toegang hebben tot internet.
 - Ze moeten toegang hebben tot uw Active Directory (een VPN-verbinding wordt momenteel niet ondersteund).
 - Doorloop de OOBE (Out-of-Box Experience).
@@ -163,7 +163,7 @@ Als uw apparaten nog niet bij Intune zijn geregistreerd, kunt u ze zelf registre
 
 ### <a name="register-devices-from-an-oem"></a>OEM-apparaten registreren
 
-Als u nieuwe apparaten koopt, kunnen sommige OEM's de apparaten voor u registreren. Raadpleeg de [pagina Windows Autopilot](http://aka.ms/WindowsAutopilot) voor meer informatie.
+Als u nieuwe apparaten koopt, kunnen sommige OEM's de apparaten voor u registreren. Raadpleeg de [pagina Windows Autopilot](https://aka.ms/WindowsAutopilot) voor meer informatie.
 
 Wanneer uw Autopilot-apparaten worden *geregistreerd*, voordat ze worden geregistreerd bij Intune, worden ze op drie locaties weergegeven (met namen die zijn ingesteld op de serienummers):
 - Het deelvenster **Autopilot-apparaten** in Azure Portal in Intune. Selecteer **Apparaatregistratie** > **Windows-registratie** > **Apparaten**.

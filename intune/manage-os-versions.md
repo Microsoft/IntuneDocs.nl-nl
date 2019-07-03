@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e717895e039e46ba7877476f67f29c1ce83b767
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041663"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044921"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Besturingssysteemversies beheren met Intune
 Op moderne mobiele en bureaubladplatformen volgen belangrijke updates, patches en nieuwe versie elkaar in hoog tempo op. U hebt de middelen om updates en patches voor Windows volledig te beheren, maar bij andere platformen, zoals iOS en Android, is de medewerking van uw eindgebruikers vereist.  Microsoft Intune biedt de mogelijkheid om het beheer van besturingssysteemversies voor meerdere platformen beter te structureren.
@@ -46,7 +46,7 @@ Zie [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/intune
 Het Intune MDM-nalevingsbeleid voor apparaten biedt u de volgende hulpmiddelen: 
 - Nalevingsregels configureren
 - Nalevingsstatus weergeven via rapportage
-- Reageren op niet-naleving met quarantainemaatregelen en voorwaardelijke toegang
+- Op niet-naleving reageren met quarantainemaatregelen en voorwaardelijke toegang
 
 Net zoals inschrijvingsbeperkingen bevat het nalevingsbeleid voor apparaten zowel een minimale als maximale versie van een besturingssysteem. Het beleid heeft een planning, zodat gebruikers de tijd hebben om voor naleving te zorgen. Het nalevingsbeleid voor apparaten zorgt ervoor dat de ingeschreven gebruikersapparaten voldoen aan het organisatiebeleid.
 
@@ -81,7 +81,7 @@ U kunt de mogelijkheden van Intune die in dit artikel worden beschreven gebruike
   - U kunt een nalevingsrapport uitvoeren over niet-naleving bij gebruikers. 
 - **Stap 3a**: gebruik Intune-beveiligingsbeleid voor apps om gebruikers te blokkeren wanneer een app wordt geopend of hervat en besturingssysteem v2 niet wordt uitgevoerd op het apparaat.
 - **Stap 3b**: gebruik nalevingsbeleid voor apparaten om besturingssysteem v2 te vereisen als laagste versie voor naleving van het apparaat.
-  - Dit beleid vereist dat apparaten worden bijgewerkt om toegang te krijgen tot organisatiegegevens. Beveiligde services worden geblokkeerd bij gebruik van voorwaardelijk toegang voor apparaten. Apps waarvoor een beveiligingsbeleid is ingeschakeld worden geblokkeerd wanneer ze worden geopend of toegang proberen te krijgen tot organisatiegegevens.
+  - Dit beleid vereist dat apparaten worden bijgewerkt om toegang te krijgen tot organisatiegegevens. Beveiligde services worden geblokkeerd bij gebruik van voorwaardelijke toegang voor apparaten. Apps waarvoor een beveiligingsbeleid is ingeschakeld worden geblokkeerd wanneer ze worden geopend of toegang proberen te krijgen tot organisatiegegevens.
 
 ## <a name="next-steps"></a>Volgende stappen
 U kunt de volgende hulpmiddelen gebruiken voor het beheer van besturingssysteemversies in uw organisatie: 

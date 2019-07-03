@@ -6,25 +6,25 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/09/2017
+ms.date: 06/11/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
-ms.reviewer: heenamac
+ms.reviewer: davera
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da8ccc65b2091e96d7ef089994c3d34bbaf9b557
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a6dfce050726cfddadc493f73c91701021dc21ea
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041746"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529811"
 ---
-# <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-connector met Intune
+# <a name="lookout-mobile-endpoint-security-connector-with-intune"></a>Lookout Mobile Endpoint Security-connector met Intune
 
 U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren op basis van een risicoanalyse die door Lookout wordt uitgevoerd. Lookout is een Mobile Threat Defense-oplossing die met Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetrische gegevens afkomstig van apparaten die door Lookout-service zijn verzameld:
 - Beveiligingsproblemen voor besturingssystemen
@@ -33,28 +33,31 @@ U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren op basis v
 
 U kunt beleidsregels voor voorwaardelijke toegang configureren op basis van de risicoanalyse van Lookout die wordt ingeschakeld via het nalevingsbeleid van Intune. U kunt het toestaan of blokkeren van niet-compatibele apparaten instellen op basis van gedetecteerde bedreigingen.
 
-## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>Hoe kunnen bedrijfsresources worden beveiligd met Intune en Lookout Mobile Threat Defense?
+## <a name="how-do-intune-and-lookout-mobile-endpoint-security-help-protect-company-resources"></a>Hoe kunnen bedrijfsresources worden beveiligd met Intune en Lookout Mobile Endpoint Security?
 De mobiele app van Lookout, **Lookout for Work**, wordt geïnstalleerd en uitgevoerd op mobiele apparaten. Deze app legt telemetrische gegevens vast over het bestandssysteem, de netwerkstack, apparaten en apps waar dergelijke gegevens beschikbaar zijn, en verzendt die gegevens naar de Lookout-cloudservice om te bepalen welke risico's het apparaat loopt met mobiele bedreigingen. U kunt de classificaties van het risiconiveau voor bedreigingen in de Lookout-console wijzigen op basis van uw vereisten.  
 
 Het nalevingsbeleid van Intune bevat een regel voor Lookout Mobile Threat Defense die is gebaseerd op de risicoanalyse van Lookout. Als deze regel is ingeschakeld, controleert Intune of het apparaat voldoet aan het beleid dat u hebt ingeschakeld.
 
 Als het apparaat niet aan het beleid blijkt te voldoen, kan de toegang tot bronnen zoals Exchange Online en SharePoint Online worden geblokkeerd. Gebruikers op geblokkeerde apparaten ontvangen een stappenplan om het probleem op te lossen en weer toegang te krijgen. De richtlijnen worden vanuit de Lookout for Work-app toegestuurd.
 
-## <a name="supported-platforms"></a>Ondersteunde platforms
+## <a name="supported-platforms"></a>Ondersteunde platforms  
 De volgende platformen worden ondersteund door Lookout wanneer deze geregistreerd zijn in Intune:
-* **Android 4.1 en hoger**
-* **iOS 8 en hoger** Meer informatie over ondersteunde platformen en talen kunt u vinden op de [website van Lookout](https://personal.support.lookout.com/hc/articles/114094140253).
+* **Android 4.1 en hoger**  
+* **iOS 8 en hoger**  
+
+Meer informatie over ondersteunde platformen en talen kunt u vinden op de [website van Lookout](https://personal.support.lookout.com/hc/articles/114094140253).  
 
 ## <a name="prerequisites"></a>Vereisten
-* Microsoft Intune-abonnement
-* Azure Active Directory
 * Enterprise-abonnement op Lookout Mobile EndPoint Security  
+* Microsoft Intune-abonnement
+* Azure Active Directory Premium
+* EMS (Enterprise Mobility en Security) E3 of E5, met aan gebruikers toegewezen licenties.  
 
 Zie [Lookout Mobile Endpoint Security](https://www.lookout.com/products/mobile-endpoint-security) voor meer informatie
 
 ## <a name="sample-scenarios"></a>Voorbeeldscenario's
 
-Hier vindt u veelvoorkomende scenario's als u Lookout Mobile Threat Defense met Intune gebruikt.
+Hier vindt u veelvoorkomende scenario's als u Mobile Endpoint Security met Intune gebruikt.
 
 ### <a name="control-access-based-on-threats-from-malicious-apps"></a>Toegangsbeheer op basis van bedreigingen van schadelijke apps
 Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u apparaten blokkeren tegen zaken als de volgende totdat de bedreiging is opgelost:
@@ -95,7 +98,7 @@ Bedreigingen voor uw netwerk worden gedetecteerd, zoals man-in-the-middle-aanval
 
 ## <a name="next-steps"></a>Volgende stappen
 Hier volgen de belangrijkste stappen voor het implementeren van deze oplossing:
-1.  [De integratie van Lookout instellen](lookout-mtd-connector-integration.md)
-2.  [ Lookout Mobile Threat Defense inschakelen in Intune](mtd-connector-enable.md)
-3.  [De Lookout for Work-app toevoegen en toewijzen](mtd-apps-ios-app-configuration-policy-add-assign.md)
-4.  [Het nalevingsbeleid voor Lookout-apparaten configureren](mtd-device-compliance-policy-create.md)
+1. [De integratie van Lookout instellen](lookout-mtd-connector-integration.md)
+2. [Mobile Endpoint Security in Intune inschakelen](mtd-connector-enable.md)
+3. [De Lookout for Work-app toevoegen en toewijzen](mtd-apps-ios-app-configuration-policy-add-assign.md)
+4. [Het nalevingsbeleid voor Lookout-apparaten configureren](mtd-device-compliance-policy-create.md)

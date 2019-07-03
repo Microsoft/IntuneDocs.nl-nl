@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a37d6dac24049a10b5abaed41a44c0c391b095e6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050480"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044584"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Eindgebruikers accepteren door middel van voorwaardelijke toegang in Microsoft Intune
 
@@ -35,7 +35,7 @@ Hier volgt een gebruikelijke benadering voor het uitbreiden van de migratiecampa
 
 2.  Wanneer gebruikers migreren, verwijdert u ze uit de groep van gebruikers die zijn uitgesloten van voorwaardelijke toegang.
 
-3.  Nadat de migratie is voltooid, configureert u alle beleidsregels voor voorwaardelijke toegang om standaard gebruikers te blokkeren, tenzij Intune toegang verleent.
+3.  Nadat de migratie is voltooid, configureert u alle beleidsregels voor voorwaardelijke toegang om gebruikers standaard te blokkeren, tenzij Intune toegang verleent.
 
 ### <a name="advantages"></a>Voordelen
 
@@ -47,7 +47,7 @@ Hier volgt een gebruikelijke benadering voor het uitbreiden van de migratiecampa
 
 ### <a name="disadvantages"></a>Nadelen
 
--   Gebruikers van een voorgaande oplossing hebben mogelijk met niet-beheerde apparaten toegang tot resources totdat voorwaardelijke toegang voor die gebruikers is ingeschakeld.
+-   Gebruikers van een voorgaande oplossing zouden met niet-beheerde apparaten toegang tot resources kunnen krijgen totdat voorwaardelijke toegang voor die gebruikers is ingeschakeld.
 
 
 Dit is een van de vele benaderingen. U kunt een eenvoudigere procedure hanteren waarbij alle beleidsregels voor voorwaardelijke toegang worden uitgesteld totdat elke fase de instructie heeft gekregen om de apparaten in te schrijven. U kunt ook een striktere procedure hanteren waarbij vanaf het begin voorwaardelijke toegang wordt toegepast en volledige naleving voor alle toegang is vereist.
@@ -68,7 +68,7 @@ Kies een van de volgende opties:
 
 -   [De on-premises Exchange-connector installeren met Intune](exchange-connector-install.md)
 
--   [Beleid voor voorwaardelijke toegang op basis van apps instellen voor Exchange Online](app-based-conditional-access-intune-create.md)
+-   [Beleid voor voorwaardelijke toegang op basis van een app instellen voor Exchange Online](app-based-conditional-access-intune-create.md)
 
 -   [Beleid voor voorwaardelijke toegang op basis van apps instellen voor SharePoint Online](app-based-conditional-access-intune-create.md)
 

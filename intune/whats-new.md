@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/31/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 756fafc02a6d64b1495a838ab8eee4130ee77361
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749943"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389343"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
-Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [geplande wijzigingen](in-development.md), [belangrijke kennisgevingen](#notices) en informatie over [oudere releases](whats-new-archive.md). 
+Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [belangrijke kennisgevingen](#notices), [oudere releases](whats-new-archive.md) en informatie over [hoe service-updates voor Intune worden uitgebracht](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728). 
 
 > [!Note]
+> Het kan voor elke [maandelijkse update](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) tot drie dagen duren totdat deze wordt geïmplementeerd. Dit gebeurt in de volgende volgorde:
+> - Dag 1: Azië en Stille Oceaan (APAC)
+> - Dag 2: Europa, Midden-Oosten en Afrika (EMEA)
+> - Dag 3: Noord-Amerika
+> 
 > Sommige functies worden gedurende een aantal weken geïmplementeerd en zijn mogelijk niet voor alle gebruikers in de eerste week beschikbaar.
+>
+> Controleer de [pagina In ontwikkeling](in-development.md) voor een lijst met nieuwe functies in een versie.
 
 **RSS-feed**: ontvang een melding wanneer deze pagina wordt bijgewerkt door de volgende URL in uw feedlezer te kopiëren en plakken: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
@@ -45,6 +52,29 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [geplande
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-june-17-2019"></a>Week van 17 juni 2019   
+
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="new-features-in-microsoft-intune-app"></a>Nieuwe functies in Microsoft Intune-app
+We hebben nieuwe functies toegevoegd aan de Microsoft Intune-app (preview) voor Android. Gebruikers op volledig beheerde Android-apparaten kunnen nu:  
+
+* De apparaten weergeven en beheren die zij hebben ingeschreven via de Intune-bedrijfsportal of de Microsoft Intune-app.    
+* Contact opnemen met hun organisatie voor ondersteuning.    
+* Feedback naar Microsoft sturen.    
+* Algemene voorwaarden bekijken als deze zijn ingesteld door hun organisatie.  
+
+## <a name="week-of-june-10-2019"></a>Week van 10 juni 2019 
+
+### <a name="app-management"></a>Appbeheer  
+
+#### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>Er zijn nieuwe voorbeeld-apps met Intune SDK-integratie beschikbaar op GitHub <!-- 2653471 -->
+Het GitHub-account msintuneappsdk heeft nieuwe voorbeeldtoepassingen toegevoegd voor iOS (Swift), Android, Xamarin.iOS, Xamarin Forms en Xamarin.Android. Deze apps zijn bedoeld als aanvulling op onze bestaande documentatie en demonstraties van hoe u de Intune APP SDK kunt integreren in uw eigen mobiele apps. Als u als app-ontwikkelaar aanvullende begeleiding bij de Intune SDK nodig hebt, raadpleegt u de volgende gekoppelde voorbeelden:
+- [Chatr](https://github.com/msintuneappsdk/Chatr-Sample-Intune-iOS-App): een systeemeigen iOS (Swift)-berichtenapp die gebruikmaakt van de Azure Active Directory Authentication Library (ADAL) voor verificatie via een broker.
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App): een systeemeigen Android-app voor takenlijsten die gebruikmaakt van ADAL voor verificatie via een broker.
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps): een Xamarin.Android-app voor takenlijsten die gebruikmaakt van ADAL voor verificatie via een broker. Deze opslagplaats bevat ook de Xamarin.Forms-app.
+- [Voorbeeld-app voor Xamarin.iOS](https://github.com/msintuneappsdk/sample-intune-xamarin-ios): een barebones Xamarin.iOS-voorbeeld-app.
 
 ## <a name="week-of-may-27-2019"></a>Week van 27 mei 2019 
 
@@ -192,7 +222,7 @@ U kunt nu opgeven of de standaardhandtekening moet worden ingeschakeld in Outloo
 F5 heeft een update voor BIG-IP 13 uitgebracht waardoor de NAC-functionaliteit is toegestaan voor F5-toegang op iOS in Intune. Om deze functie te gebruiken, moet u ook het volgende doen:
 
 - Werk BIG-IP bij naar 13.1.1.5, vernieuwen. BIG-IP 14 wordt niet ondersteund.
-- Integreer BIG-IP met Intune voor NAC. Stappen in [Overzicht: APM configureren voor apparaatpostuurcontroles met eindpuntbeheersystemen](https://support.f5.com/kb/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- Integreer BIG-IP met Intune voor NAC. Stappen in [Overzicht: APM configureren voor apparaatpostuurcontroles met eindpuntbeheersystemen](https://techdocs.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html).
 - Schakel de instelling **Netwerktoegangsbeheer (NAC) inschakelen** in het VPN-profiel in Intune in.
 
 Ga naar [VPN-instellingen configureren op iOS-apparaten](vpn-settings-ios.md) om de beschikbare instelling te zien.
@@ -562,7 +592,7 @@ Van toepassing op:
 
 #### <a name="intune-conditional-access-ui-update------2432313-----"></a>Update voor gebruikersinterface voor voorwaardelijke toegang tot Intune   <!-- 2432313   -->
 We hebben verbeteringen aangebracht in de gebruikersinterface voor voorwaardelijke toegang in de Intune-console. Deze omvatten:
--  Vervanging van de Intune-blade *Voorwaardelijke toegang* door de blade van Azure Active Directory. Hiermee hebt u toegang tot het volledige bereik instellingen en configuraties voor [voorwaardelijke toegang](conditional-access.md) (die een Azure AD-technologie blijven) vanuit de Intune-console. 
+-  Vervanging van de Intune-blade *Voorwaardelijke toegang* door de blade van Azure Active Directory. Hiermee hebt u toegang tot alle instellingen en configuraties voor [voorwaardelijke toegang](conditional-access.md) (die een Azure AD-technologie blijven) vanuit de Intune-console. 
 - We hebben de naam van de blade *On-premises toegang* gewijzigd in *Toegang tot Exchange* en de configuratie van de *Exchange-serviceconnector* verplaatst naar deze hernoemde blade.  Door deze wijziging worden de locaties gecombineerd waar u [details met betrekking tot Exchange online en on-premises configureert en bewaakt](exchange-connector-install.md).  
 
 #### <a name="kiosk-browser-and-microsoft-edge-browser-apps-can-run-on-windows-10-devices-in-kiosk-mode----2935135-----"></a>Kiosk Browser- en Microsoft Edge Browser-apps kunnen worden uitgevoerd op Windows 10-apparaten in de kioskmodus <!-- 2935135   -->
@@ -1109,7 +1139,7 @@ Voor Samsung Knox Mobile Enrollment ondersteunt Intune nu het inschrijven van ap
 - Nu kunt u een waarschuwingsprompt configureren over het feit dat systemen opnieuw worden opgestart buiten werkuren, waardoor BYOD-scenario's worden ondersteund.
 
 #### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>Voor Windows Autopilot ingeschreven apparaten groeperen op correlator-ID <!-- 2075110 -->
-Intune ondersteunt nu het groeperen van ingeschreven Windows-apparaten op correlator-ID met behulp van [Autopilot voor bestaande apparaten](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) via Configuration Manager. De correlator-ID is een parameter van het Autopilot-configuratiebestand. Intune stelt automatisch de [enrollmentProfileName van het Azure Active Directory-apparaatkenmerk](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) in zodat deze aansluit bij de "OfflineAutopilotprofile-<correlator ID>". Hierdoor kunnen willekeurige dynamische groepen in Azure AD op basis van correlator-ID’s worden gecreëerd via het kenmerk enrollmentprofileName voor offline Autopilot-inschrijvingen. Zie [Windows Autopilot voor bestaande apparaten](enrollment-autopilot.md#windows-autopilot-for-existing-devices) voor meer informatie.
+Intune ondersteunt nu het groeperen van ingeschreven Windows-apparaten op correlator-ID met behulp van [Autopilot voor bestaande apparaten](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) via Configuration Manager. De correlator-ID is een parameter van het Autopilot-configuratiebestand. Intune stelt automatisch de [enrollmentProfileName van het Azure Active Directory-apparaatkenmerk](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) in zodat deze aansluit bij de "OfflineAutopilotprofile-<correlator ID>". Hierdoor kunnen willekeurige dynamische groepen in Azure AD op basis van correlator-ID’s worden gecreëerd via het kenmerk enrollmentprofileName voor offline Autopilot-inschrijvingen. Zie [Windows Autopilot voor bestaande apparaten](enrollment-autopilot.md#windows-autopilot-for-existing-devices) voor meer informatie.
 
 #### <a name="intune-app-protection-policies----2984657---"></a>Beveiligingsbeleid voor apps in Intune <!-- 2984657 -->
 Met behulp van beveiligingsbeleid voor apps in Intune kunt u verschillende instellingen voor gegevensbescherming voor met Intune beveiligde apps configureren, zoals Microsoft Outlook en Microsoft Word. We hebben het uiterlijk van deze instellingen voor zowel [iOS](app-protection-policy-settings-ios.md) als [Android](app-protection-policy-settings-android.md) gewijzigd, zodat u de afzonderlijke instellingen gemakkelijker kunt vinden. Er zijn drie soorten beleidsinstellingen:

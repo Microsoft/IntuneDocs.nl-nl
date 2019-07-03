@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80f9d3d2799732f2d019189913c5c47cc6973809
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7ab0ecd2802e68dbac32b757e472a74e697da13
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044592"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530743"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Zelfstudie: Exchange Online e-mail beschermen op beheerde apparaten
 Hier vindt u meer informatie over het gebruik van het nalevingsbeleid voor apparaten met voorwaardelijke toegang. Hiermee kunt u ervoor zorgen dat iOS-apparaten uitsluitend toegang tot Exchange Online e-mail hebben als ze door Intune worden beheerd en een goedgekeurde e-mailapplicatie gebruiken. 
@@ -47,19 +47,19 @@ Meld u aan bij [Intune](https://aka.ms/intuneportal) als globale beheerder of be
 ## <a name="create-the-ios-device-compliance-policy"></a>Nalevingsbeleid voor iOS-apparaten maken
 Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepalen waaraan een apparaat moet voldoen om als conform te worden beschouwd. In deze zelfstudie maken we een nalevingsbeleid voor iOS-apparaten. Elk nalevingsbeleid is platformspecifiek, dus u hebt een apart nalevingsbeleid nodig voor elk platform dat u wilt evalueren.
 
-1.  In Intune selecteert u **Apparaatconformiteit** > **Beleid** > **Beleid maken**.
-2.  Onder **Naam** voert u **Test iOS-nalevingsbeleid** in. 
-3.  Onder **Beschrijving** voert u **Test iOS-nalevingsbeleid** in.
-4.  Onder **Platform** selecteert u **iOS**. 
-5.  Selecteer **Instellingen** > **E-mail**. 
+1. In Intune selecteert u **Apparaatconformiteit** > **Beleid** > **Beleid maken**.
+2. Onder **Naam** voert u **Test iOS-nalevingsbeleid** in. 
+3. Onder **Beschrijving** voert u **Test iOS-nalevingsbeleid** in.
+4. Onder **Platform** selecteert u **iOS**. 
+5. Selecteer **Instellingen** > **E-mail**. 
      
     1.  Naast **Vereisen dat mobiele apparaten een beheerd e-mailprofiel hebben** selecteert u **Vereisen**.
     2. Selecteer **OK**.
 
     ![Nalevingsbeleid voor e-mail zodanig instellen dat een beheerd e-mailprofiel is vereist](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
     
-6.  Selecteer **Apparaatstatus**. Naast **Opengebroken apparaten** selecteert u **Blokkeren**, en vervolgens selecteert u **OK**.
-7.  Selecteer **Systeembeveiliging** en voer de **Wachtwoordinstellingen** in. Voor deze zelfstudie selecteert u de volgende aanbevolen instellingen:
+6. Selecteer **Apparaatstatus**. Naast **Opengebroken apparaten** selecteert u **Blokkeren**, en vervolgens selecteert u **OK**.
+7. Selecteer **Systeembeveiliging** en voer de **Wachtwoordinstellingen** in. Voor deze zelfstudie selecteert u de volgende aanbevolen instellingen:
      
     - Voor **Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten** selecteert u **Vereisen**.
     - Voor **Eenvoudige wachtwoorden**, selecteert u **Blokkeren**.
@@ -71,16 +71,16 @@ Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepale
  
     ![Wachtwoordinstellingen uitvoeren voor het nalevingsbeleid voor e-mail](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-system-security.png)
 
-8.  Selecteer **OK** en vervolgens weer **OK**.
-9.  Selecteer **Maken**.
+8. Selecteer **OK** en vervolgens weer **OK**.
+9. Selecteer **Maken**.
 
 ## <a name="create-the-conditional-access-policy"></a>Voorwaardelijk toegangsbeleid maken
-Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaatplatforms zich inschrijven bij Intune en voldoen aan ons Intune-nalevingsbeleid, voordat ze toegang krijgen tot Exchange Online. Ook maken we de Outlook-app vereist voor toegang tot de e-mailfunctie. Het voorwaardelijke toegangsbeleid kan in de Azure AD- of het Intune-portal worden geconfigureerd. Omdat we al in de Intune-portal zitten, maken we daarin het beleid.
-1.  In Intune selecteert u **Voorwaardelijke toegang** > **Beleid** > **Nieuw beleid**.
+Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaatplatforms zich inschrijven bij Intune en voldoen aan ons Intune-nalevingsbeleid, voordat ze toegang krijgen tot Exchange Online. Ook maken we de Outlook-app vereist voor toegang tot de e-mailfunctie. Het voorwaardelijke toegangsbeleid kan in de Azure AD- of Intune-portal worden geconfigureerd. Omdat we al in de Intune-portal zitten, maken we daarin het beleid.
+1. In Intune selecteert u **Voorwaardelijke toegang** > **Beleid** > **Nieuw beleid**.
 1.  Onder **Naam**, voert u **Testbeleid voor Office 365 e-mail** in. 
-3.  Onder **Toewijzingen** selecteert u **Gebruikers en groepen**. Op het tabblad **Opnemen** selecteert u **Alle gebruikers** en vervolgens **Voltooid**.
+3. Onder **Toewijzingen** selecteert u **Gebruikers en groepen**. Op het tabblad **Opnemen** selecteert u **Alle gebruikers** en vervolgens **Voltooid**.
 
-4.  Onder **Toewijzingen** selecteert u **Cloud-apps**. Omdat we Office 365 Exchange Online e-mail willen beschermen, selecteren we deze functie via de volgende stappen:
+4. Onder **Toewijzingen** selecteert u **Cloud-apps**. Omdat we Office 365 Exchange Online e-mail willen beschermen, selecteren we deze functie via de volgende stappen:
      
     1. Op het tabblad **Opnemen** selecteert u **Apps selecteren**.
     2. Kies **Selecteren**. 
@@ -89,7 +89,7 @@ Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaat
   
     ![De Office 365 Exchange Online-app selecteren](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-apps.png)
 
-5.  Onder **Toewijzingen** selecteert u **Voorwaarden** > **Apparaatplatforms**.
+5. Onder **Toewijzingen** selecteert u **Voorwaarden** > **Apparaatplatforms**.
      
     1. Onder **Configureren** selecteert u **Ja**.
     2. Op het tabblad **Opnemen** selecteert u **Elk apparaat** en vervolgens **Voltooid**. 
@@ -97,7 +97,7 @@ Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaat
    
     ![De Office 365 Exchange Online-app selecteren](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
-6.  Onder **Toewijzingen** selecteert u **Voorwaarden** > **Client-apps**.
+6. Onder **Toewijzingen** selecteert u **Voorwaarden** > **Client-apps**.
      
     1. Onder **Configureren** selecteert u **Ja**.
     2. Voor deze zelfstudie selecteert u **Mobiele apps en bureaubladclients** en **Moderne verificatieclients** (dit verwijst naar apps zoals Outlook voor iOS en voor Android). Schakel alle andere selectievakjes uit.
@@ -105,7 +105,7 @@ Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaat
     
     ![De Office 365 Exchange Online-app selecteren](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
-7.  Onder **Toegangscontroles** selecteert u **Verlenen**. 
+7. Onder **Toegangscontroles** selecteert u **Verlenen**. 
      
     1. In het deelvenster **Verlenen** selecteert u **Toegang verlenen**.
     2. Selecteer **Vereisen dat het apparaat als conform is gemarkeerd**. 
@@ -115,11 +115,11 @@ Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaat
      
     ![De Office 365 Exchange Online-app selecteren](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
-8.  Onder **Beleid inschakelen** selecteert u **Aan**.
+8. Onder **Beleid inschakelen** selecteert u **Aan**.
      
     ![De Office 365 Exchange Online-app selecteren](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
-9.  Selecteer **Maken**.
+9. Selecteer **Maken**.
 
 ## <a name="try-it-out"></a>Beleid uitproberen
 Met het beleid dat u hebt gemaakt, moet elk iOS-apparaat dat probeert om zich bij Office 365 e-mail aan te melden, zich inschrijven bij Intune en ook de mobiele Outlook-app voor iOS gebruiken. Om dit scenario op een iOS-apparaat te testen, probeert u zich aan te melden bij Exchange Online met de referenties van een gebruiker in uw testtenant. U wordt gevraagd om het apparaat in te schrijven en de mobiele Outlook-app te installeren.
@@ -137,5 +137,5 @@ Als het testbeleid niet langer nodig is, kunt u dit verwijderen.
 4. Selecteer **Voorwaardelijke toegang** > **Beleid**.
 5. In de lijst **Naam beleid** selecteert u het contextmenu ( **...** ) voor uw testbeleid, en vervolgens selecteert u **Verwijderen**. Selecteer **Ja** om te bevestigen.
 
- ## <a name="next-steps"></a>Volgende stappen 
+## <a name="next-steps"></a>Volgende stappen 
 In deze tutorial hebt u beleid gemaakt dat vereist dat iOS-apparaten zich inschrijven bij Intune en de Outlook-app gebruiken om toegang te krijgen tot Exchange Online e-mail. Voor meer informatie over het gebruik van Intune met voorwaardelijke toegang om andere apps en diensten te beschermen (waaronder Exchange ActiveSync-clients voor Office 365 Exchange Online), zie [Voorwaardelijke toegang instellen](conditional-access.md).

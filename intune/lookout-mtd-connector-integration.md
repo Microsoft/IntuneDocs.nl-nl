@@ -1,138 +1,168 @@
 ---
 title: Uw Lookout-integratie instellen met Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Meer informatie over de integratie van Intune met Lookout Mobile Threat Defense om toegang tot uw bedrijfsresources met mobiele apparaten te bepalen.
+description: Meer informatie over de integratie van Intune met Lookout Mobile Endpoint Security als Mobile Threat Defense-oplossing om toegang tot uw bedrijfsresources met mobiele apparaten te beheren.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 06/11/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
-ms.reviewer: heenamac
+ms.reviewer: davera
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffdfd203b2b67a25d5826798d89ae548e33d7756
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0d146b211c42c20b1381b238311db6a10295ef4a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047142"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044935"
 ---
-# <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Integratie van Lookout Mobile Threat Defense met Intune instellen
-
-Voor het instellen van uw Lookout Mobile Threat Defense-abonnement moeten de volgende stappen worden uitgevoerd:
-
-| #        |Stap  |
-| ------------- |:-------------|
-| 1 | [Azure AD-gegevens verzamelen](#collect-azure-ad-information) |
-| 2 | [Uw abonnement configureren](#configure-your-subscription) |
-| 3 | [Registratiegroepen configureren](#configure-enrollment-groups) |
-| 4 | [Statussynchronisatie configureren](#configure-state-sync) |
-| 5 | [Foutenrapport met informatie over geadresseerden configureren](#configure-error-report-email-recipient-information) |
-| 6 | [Registratie-instellingen configureren](#configure-enrollment-settings) |
-| 7 | [E-mailmeldingen configureren](#configure-email-notifications) |
-| 8 | [Bedreigingsclassificatie configureren](#configure-threat-classification) |
-| 9 | [Registratie bewaken](#watching-enrollment) |
+# <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Lookout Mobile Endpoint Security-integratie met Intune instellen
+Met een omgeving die aan de [vereisten](lookout-mobile-threat-defense-connector.md#prerequisites) voldoet, kunt u Lookout Mobile Endpoint Security integreren met Intune. De informatie in dit artikel helpt u bij het instellen van de integratie en het configureren van belangrijke instellingen in Lookout voor gebruik met Intune.  
 
 > [!IMPORTANT]
 > Het is niet mogelijk om een bestaande Lookout Mobile Endpoint Security-tenant die nog niet is gekoppeld aan uw Azure AD-tenant, te gebruiken voor de integratie met Azure AD en Intune. Neem contact op met de Lookout-ondersteuning om een nieuwe Lookout Mobile Endpoint Security-tenant te maken. Gebruik de nieuwe tenant voor de onboarding van Azure AD-gebruikers.
 
-## <a name="collect-azure-ad-information"></a>Azure AD-gegevens verzamelen
-Uw Lookout Mobility Endpoint Security-tenant wordt gekoppeld aan uw Azure AD-abonnement voor integratie van Lookout met Intune. Voor het inschakelen van uw abonnement voor de Lookout Mobile Threat Defense-service heeft Lookout-ondersteuning (enterprisesupport@lookout.com) de volgende informatie nodig:
+## <a name="collect-azure-ad-information"></a>Azure AD-gegevens verzamelen  
+Om Lookout met Intune te integreren koppelt u uw Lookout Mobility Endpoint Security-tenant aan uw AAD-abonnement (Azure Active Directory).
 
-* **Azure AD-tenant-id**
-* **Azure AD-groepsobject-id** voor **volledige** toegang tot de Lookout-console
-* **Azure AD-groepsobject-id** voor **beperkte** toegang tot de Lookout-console (optioneel)
+Om de integratie van uw Lookout Mobile Endpoint Security-abonnement met Intune in te schakelen, geeft u de volgende informatie aan de ondersteuning van Lookout (enterprisesupport@lookout.com):  
 
-Gebruik de volgende stappen om de gegevens te verzamelen die u aan het Lookout-ondersteuningsteam moet geven.
+- **Directory-id van de Azure AD-tenant**  
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com) en selecteer uw abonnement. 
+- **Azure AD-groepsobject-id** voor de groep met **volledige** toegang tot de Lookout MES-console (Mobile Endpoint Security).  
+  U maakt deze gebruikersgroep in Azure AD voor gebruikers die *volledige toegang* hebben om zich aan te melden bij de **Lookout-console**. Gebruikers moeten lid zijn van deze groep of van de optionele groep met *beperkte toegang* om zich aan te kunnen melden bij de Lookout-console. 
 
-2. Wanneer u de naam van uw abonnement kiest, bevat de resulterende URL de abonnements-id.  Als u problemen hebt met het vinden van uw abonnements-id, kunt u dit [artikel van Microsoft Ondersteuning](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) tips lezen over het vinden van uw abonnements-id.
+- **Azure AD-groepsobject-id** voor de groep met **beperkte** toegang tot de Lookout MES-console *(optionele groep)* . 
+  U kunt deze optionele gebruikersgroep in Azure AD maken voor gebruikers die geen toegang mogen hebben tot verschillende aan de configuratie en enrollment gerelateerde modules van de Lookout-console. In plaats daarvan hebben deze gebruikers alleen-lezentoegang tot de module **Beveiligingsbeleid** van de Lookout-console. Gebruikers moeten lid zijn van deze optionele groep of van de verplichte groep met *volledige toegang* om zich aan te kunnen melden bij de Lookout-console.
 
-3. Zoek uw Azure AD-groeps-id op. De Lookout-console ondersteunt twee toegangsniveaus:  
-   * **Volledige toegang:** de Azure AD-beheerder kan een groep maken met gebruikers die volledige toegang hebben en eventueel een groep maken voor gebruikers met beperkte toegang.  Alleen gebruikers in deze groepen kunnen zich aanmelden bij de **Lookout-console**.
-   * **Beperkte toegang:** de gebruikers in deze groep hebben geen toegang tot verschillende configuratie- en inschrijvingsgerelateerde modules van de Lookout-console, en hebben alleen-lezentoegang tot de module **Beveiligingsbeleid** van de Lookout-console.  
+ > [!TIP] 
+ > Lees [dit artikel](https://personal.support.lookout.com/hc/articles/114094105653) op de Lookout-website voor meer informatie over de machtigingen.
 
-     > [!TIP] 
-     > Lees [dit artikel](https://personal.support.lookout.com/hc/articles/114094105653) op de Lookout-website voor meer informatie over de machtigingen.
+### <a name="collect-information-from-azure-ad"></a>Gegevens verzamelen van Azure AD 
 
-     > [!NOTE] 
-     > De **groepsobject-id** bevindt zich op de pagina **Eigenschappen** van de groep in de **Azure AD-beheerportal**.
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com) met een account voor globale beheerders.
 
-4. Wanneer u deze informatie hebt verzameld, neemt u contact op met de Lookout-ondersteuning (e-mail: enterprisesupport@lookout.com) . Met behulp van de gegevens die u hebt verzameld, zal de Lookout-ondersteuning in samenwerking met uw primaire contactpersoon zorgen voor onboarding van uw abonnement en uw Lookout Enterprise-account maken.
+2. Ga naar **Azure Active Directory** > **Eigenschappen** en zoek uw **map-id**. Gebruik de knop *Kopiëren* om de map-id te kopiëren en sla deze vervolgens op in een tekstbestand.
 
-## <a name="configure-your-subscription"></a>Uw abonnement configureren
+   ![Azure AD-eigenschappen](./media/lookout-mtd-connector-integration/azure-ad-properties.png)  
 
-1. Nadat Lookout-ondersteuning uw Lookout Enterprise-account heeft gemaakt, ontvangt de primaire contactpersoon van uw bedrijf een e-mailbericht van Lookout met een koppeling naar de aanmeldings-URL: <https://aad.lookout.com/les?action=consent>.
+3. Zoek vervolgens de Azure AD-groeps-id voor de accounts die u gebruikt om Azure AD-gebruikers toegang te verlenen tot de Lookout-console. Eén groep is voor *volledige toegang*, en de tweede groep, voor *beperkte toegang*, is optioneel. Om de *object-id* voor elk account te achterhalen, gaat u als volgt te werk:  
+   1. Ga naar **Azure Active Directory** > **Groepen** om het deelvenster *Groepen - Alle groepen* te openen.  
 
-2. De eerste aanmelding bij de Lookout-console moet worden uitgevoerd met een gebruikersaccount met de Azure AD-rol van globale beheerder om uw Azure AD-tenant te registreren. Daarna is voor aanmelding niet meer dit niveau van Azure AD-bevoegdheden nodig. We wordt een instemmingspagina weergegeven. Kies **Accepteren** om de registratie te voltooien. Zodra u dat hebt gedaan, wordt u omgeleid naar de Lookout-console.
+   2. Selecteer de door u gemaakte groep met *volledige toegang* om het bijbehorende deelvenster *Overzicht* te kunnen openen.  
 
-   ![Schermafbeelding van de allereerste aanmeldingspagina van de Lookout-console](./media/lookout_mtp_initial_login.png)
+   3. Gebruik de knop *Kopiëren* om de object-id te kopiëren en sla deze vervolgens op in een tekstbestand.  
 
-3. Ga in de [Lookout-console](https://aad.lookout.com) naar de module **Systeem**, kies het tabblad **Connectors** en selecteer **Intune**.
+   4. Als u een groep met *beperkte toegang* gebruikt, herhaalt u het proces voor deze groep.  
 
-   ![Afbeelding van de Lookout-console met de Intune-optie op het tabblad Connectors](./media/lookout_mtp_setup-intune-connector.png)
+      ![Object-id van Azure AD-groep](./media/lookout-mtd-connector-integration/azure-ad-group-id.png)  
 
-4. Ga naar **Connectors** > **Verbindingsinstellingen** en geef de **heartbeatfrequentie** in minuten op.
+   Nadat u deze informatie hebt verzameld, neemt u contact op met de Lookout-ondersteuning (e-mailadres: enterprisesupport@lookout.com). Met behulp van de gegevens die u verstrekt zal de Lookout-ondersteuning in samenwerking met uw primaire contactpersoon uw abonnement onboarden en uw Lookout Enterprise-account maken.  
 
-   ![Afbeelding van het tabblad Verbindingsinstellingen waarop de heartbeatfrequentie is geconfigureerd](./media/lookout-mtp-connection-settings.png)
+## <a name="configure-your-lookout-subscription"></a>Uw Lookout-abonnement configureren  
+Nadat Lookout-ondersteuning uw Lookout Enterprise-account heeft gemaakt, stuurt deze een e-mail naar de primaire contactpersoon van uw bedrijf met een koppeling naar de aanmeldings-URL: https://aad.lookout.com/les?action=consent. 
 
-## <a name="configure-enrollment-groups"></a>Registratiegroepen configureren
-1. Maak als aanbevolen procedure een Azure AD-beveiligingsgroep in de [Azure AD-beheerportal](https://manage.windowsazure.com) met een klein aantal gebruikers om de Lookout-integratie te testen.
+### <a name="initial-sign-in"></a>Eerste aanmelding  
+De eerste keer dat u zich aanmeldt bij de Lookout MES-console wordt een instemmingspagina weergegeven (https://aad.lookout.com/les?action=consent) ). Een Azure AD-hoofdbeheerder moet zich aanmelden en voor **Accepteren** kiezen. Voor volgende aanmeldingen heeft de gebruiker dit niveau van Azure AD-bevoegdheden niet nodig. 
 
-    > [!NOTE] 
-    > Alle door Lookout ondersteunde en in Intune geregistreerde apparaten van gebruikers in een registratiegroep in Azure AD die worden geïdentificeerd en ondersteund, worden geregistreerd en komen in aanmerking voor activering in de Lookout MTD-console.
+ We wordt een instemmingspagina weergegeven. Kies **Accepteren** om de registratie te voltooien. 
+   ![schermafbeelding van de pagina voor de allereerste aanmelding bij de Lookout-console](./media/lookout-mtd-connector-integration/lookout_mtp_initial_login.png)
 
-2. Ga in de [Lookout-console](https://aad.lookout.com) naar de module **Systeem**, kies het tabblad **Connectors** en selecteer **Registratiebeheer** voor het definiëren van een groep gebruikers van wie de apparaten moeten worden geregistreerd bij Lookout. Voeg de Azure AD-beveiligingsgroep **Weergavenaam** toe voor registratie.
+Als u voor Accepteren kiest en toestemming geeft, wordt u doorgestuurd naar de Lookout-console.
 
-    ![schermopname van de registratiepagina van de Intune-connector](./media/lookout-mtp-enrollment.png)
+Na het voltooien van de eerste aanmelding en het verlenen van toestemming worden gebruikers die zich aanmelden vanaf https://aad.lookout.com doorgestuurd naar de MES-console. Als er nog geen toestemming is verleend, resulteren alle aanmeldpogingen in een aanmeldingsfout.
 
-    >[!IMPORTANT]
-    > De **Weergavenaam** is hoofdlettergevoelig zoals weergegeven in de **eigenschappen** van de beveiligingsgroep in Azure Portal. Zoals de onderstaande afbeelding laat zien, heeft de **Weergavenaam** van de beveiligingsgroep hoofd- en kleine letters terwijl de titel alleen uit kleine letters bestaat. Stel in de Lookout-console het lettergebruik van de **Weergavenaam** in voor de beveiligingsgroep.
-    >![Afbeelding van Azure Portal, Azure Active Directory-service, eigenschappenpagina](./media/aad-group-display-name.png)
+### <a name="configure-the-intune-connector"></a>De Intune-connector configureren  
+Bij de volgende procedure wordt ervan uitgegaan dat u eerder een groep in Azure AD hebt gemaakt voor het testen van uw Lookout-implementatie. De best practice is om te starten met een kleine groep gebruikers, zodat uw Lookout- en Intune-beheerders vertrouwd kunnen raken met de productintegraties. Daarna kunt u de enrollment uitbreiden naar meer gebruikersgroepen.
 
-    >[!NOTE] 
-    >U kunt het interval voor het controleren op nieuwe apparaten het best op de standaard 5 minuten laten staan. Huidige beperkingen, **Lookout kan geen groepsweergavenamen valideren:** Zorg ervoor dat het veld **WEERGAVENAAM** in de Azure-portal exact overeenkomt met de Azure AD-beveiligingsgroep. **Het maken van geneste groepen wordt niet ondersteund**:  In Lookout gebruikte Azure AD-beveiligingsgroepen mogen alleen gebruikers bevatten. Ze kunnen geen andere groepen bevatten.
+1. Meld u aan bij de [Lookout MES-console](https://aad.lookout.com), ga naar **Systeem** > **Connectors** en selecteer **Connector toevoegen**.  Selecteer **Intune**.
 
-3.  Nadat een groep is toegevoegd, wordt het apparaat in Lookout geactiveerd de eerstvolgende keer dat een gebruiker de Lookout for Work-app op een ondersteund apparaat opent.
+   ![Afbeelding van de Lookout-console met de Intune-optie op het tabblad Connectors](./media/lookout-mtd-connector-integration/lookout_mtp_setup-intune-connector.png)
 
-4.  Als u tevreden bent met de resultaten, breidt u de registratie uit naar andere gebruikersgroepen.
+2. In het deelvenster *Microsoft Intune* selecteert u **Verbindingsinstellingen** en geeft u de **heartbeatfrequentie** in minuten op. 
 
-## <a name="configure-state-sync"></a>Statussynchronisatie configureren
-Geef bij de optie **Statussynchronisatie** het type gegevens op dat naar Intune moet worden verzonden.  Zowel de apparaatstatus als de bedreigingsstatus zijn vereist voor een goede integratie van Lookout met Intune. Deze instellingen worden standaard ingeschakeld.
+   ![Afbeelding van het tabblad Verbindingsinstellingen waarop de heartbeatfrequentie is geconfigureerd](./media/lookout-mtd-connector-integration/lookout-mtp-connection-settings.png)
 
-## <a name="configure-error-report-email-recipient-information"></a>Foutenrapport met informatie over geadresseerden configureren
-Voer bij de optie **Foutbeheer** het e-mailadres in waarnaar het foutenrapport moet worden verzonden.
+3. Selecteer **Registratiebeheer** en geef bij **Use the following Azure AD security groups to identify devices that should be enrolled in Lookout for Work** (De volgende Azure AD-beveiligingsgroepen gebruiken om apparaten te identificeren die moeten zijn geregistreerd voor Lookout for Work) de *groepsnaam* van een Azure AD-groep op voor gebruik met Lookout en selecteer vervolgens **Wijzigingen opslaan**.
 
-![schermopname van de foutenbeheerpagina van de Intune-connector](./media/lookout-mtp-connector-error-notifications.png)
+    ![schermopname van de registratiepagina van de Intune-connector](./media/lookout-mtd-connector-integration/lookout-mtp-enrollment.png)  
 
-## <a name="configure-enrollment-settings"></a>Registratie-instellingen configureren
-Geef in de module **Systeem** op de pagina **Connectors** het aantal dagen op voordat een apparaat wordt beschouwd als niet-verbonden.  Niet-verbonden apparaten worden als niet-compatibel beschouwd en krijgen geen toegang meer tot uw bedrijfstoepassingen op basis van de Intune-beleidsregels voor voorwaardelijke toegang. U kunt waarden tussen 1 en 90 dagen opgeven.
+   **Over de groepen die u gebruikt**:
+   - Begin als best practice met een Azure AD-beveiligingsgroep met een klein aantal gebruikers om de Lookout-integratie te testen.
+   - De **groepsnaam** is hoofdlettergevoelig zoals weergegeven in de **eigenschappen** van de beveiligingsgroep in de Azure-portal.  
+   - De groepen die u opgeeft voor **registratiebeheer** bepalen van welke gebruikers de apparaten worden geregistreerd bij Lookout. Wanneer een gebruiker in een registratiegroep zit, worden zijn apparaten in Azure AD geregistreerd. Deze kunnen in Lookout MES worden geactiveerd. De eerste keer dat een gebruiker de toepassing *Lookout for Work* op een ondersteund apparaat opent, wordt hij gevraagd om deze te activeren.
 
-![Instellingen voor registratie van Lookout in de module Systeem](./media/lookout-console-enrollment-settings.png)
+4. Selecteer **Statussynchronisatie** en zorg ervoor dat zowel de *apparaatstatus* als de *bedreigingsstatus* zijn ingesteld op **Aan**.  Beide zijn vereist voor een goede integratie van Lookout met Intune.  
 
-## <a name="configure-email-notifications"></a>E-mailmeldingen configureren
-Als u e-mailwaarschuwingen voor bedreigingen wilt ontvangen, meldt u zich aan bij de [Lookout-console](https://aad.lookout.com) met het gebruikersaccount waarnaar meldingen moeten worden verzonden. Kies op het tabblad **Voorkeuren** van de **Systeem**-module de bedreigingsniveaus waarbij meldingen moeten worden verzonden en stel ze in op **AAN**. Sla de wijzigingen op.
+5. Selecteer **Foutbeheer**, geef het e-mailadres op waarnaar de foutrapporten moeten worden verzonden en selecteer vervolgens **Wijzigingen opslaan**.
+ 
+   ![schermopname van de foutenbeheerpagina van de Intune-connector](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
 
-![schermopname van de pagina Voorkeuren met het gebruikersaccount weergegeven](./media/lookout-mtp-email-notifications.png) Als u geen e-mailmeldingen meer wilt ontvangen, stelt u de meldingen in op **UIT** en slaat u de wijzigingen op.
+6. Selecteer **Connector maken** om de configuratie van de connector te voltooien. Als u tevreden bent met uw resultaten, kunt u de enrollment uitbreiden naar andere gebruikersgroepen.
 
-### <a name="configure-threat-classification"></a>Bedreigingsclassificatie configureren
-Met Lookout Mobile Threat Defense worden mobiele bedreigingen geclassificeerd in verschillende typen. Aan de [bedreigingsclassificaties van Lookout](https://personal.support.lookout.com/hc/articles/114094130693) zijn standaardrisiconiveaus gekoppeld. Deze kunnen op elk gewenst moment worden aangepast aan de vereisten van uw bedrijf.
+## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Configureer Intune om Lookout te gebruiken als een Mobile Threat Defense-provider
+Nadat u Lookout MES hebt geconfigureerd, moet u in Intune een verbinding met Lookout instellen.  
 
-![schermopname van de beleidspagina met bedreiging en classificaties](./media/lookout-mtp-threat-classification.png)
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+
+2. Ga naar **Apparaatcompatibiliteit** > **Mobile Threat Defense** en selecteer **Toevoegen**.
+
+3. Gebruik in het deelvenster *Connector toevoegen* de vervolgkeuzelijst om **Lookout for Work** te selecteren.  
+
+4. Selecteer **Maken**. Nadat de connector verbinding met Lookout MES maakt, worden de *connectorinstellingen* beschikbaar.
+
+5. Zet **Synchronisatie van app inschakelen voor iOS-apparaten** op **Aan**. 
+
+6. Selecteer **Opslaan** om de configuratie te voltooien.  Intune en Lookout MES zijn nu geïntegreerd en klaar voor gebruik.
+
+
+## <a name="additional-settings-in-the-lookout-mes-console"></a>Aanvullende instellingen in de Lookout MES-console
+Hieronder vindt u aanvullende instellingen die u in de Lookout MES-console kunt configureren.  
+
+### <a name="configure-enrollment-settings"></a>Enrollmentinstellingen configureren
+Selecteer in de Lookout MES-console achtereenvolgens **Systeem** > **Enrollment beheren** > **Enrollmentinstellingen**.  
+
+- Geef bij **de status Niet-verbonden** het aantal dagen op voordat een niet-verbonden apparaat als zodanig wordt gemarkeerd.  
+
+  Niet-verbonden apparaten worden als niet-compatibel beschouwd en krijgen geen toegang meer tot uw bedrijfstoepassingen op basis van de Intune-beleidsregels voor voorwaardelijke toegang. U kunt waarden tussen 1 en 90 dagen opgeven.
+
+  ![Instellingen voor registratie van Lookout in de module Systeem](./media/lookout-mtd-connector-integration/lookout-console-enrollment-settings.png)
+
+### <a name="configure-email-notifications"></a>E-mailmeldingen configureren
+Om e-mailwaarschuwingen voor bedreigingen te ontvangen, meldt u zich aan bij de [Lookout MES-console](https://aad.lookout.com) met het gebruikersaccount waarnaar meldingen moeten worden verzonden.  
+
+- Ga naar **Voorkeuren**, zet de meldingen die u wilt ontvangen op **AAN** en kies vervolgens voor **Opslaan** om de wijzigingen op te slaan.  
+
+- Als u geen e-mailmeldingen meer wilt ontvangen, stelt u de meldingen in op **UIT** en slaat u de wijzigingen op.
+
+  ![Schermopname van de pagina Voorkeuren met het gebruikersaccount weergegeven](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
+
+
+
+## <a name="configure-threat-classifications"></a>Bedreigingsclassificaties configureren  
+Met Lookout Mobile Endpoint Security worden mobiele bedreigingen geclassificeerd in verschillende typen. Aan de bedreigingsclassificaties van Lookout zijn standaardrisiconiveaus gekoppeld. De risiconiveaus kunnen op elk gewenst moment worden aangepast aan de vereisten van uw bedrijf.
+
+Zie voor meer informatie over de bedreigingsclassificaties en het beheer van de hieraan verbonden risiconiveaus [Lookout Threat Reference](https://enterprise.support.lookout.com/hc/articles/360011812974) (Lookout-bedreigingsreferentie).
 
 >[!IMPORTANT]
-> Risiconiveaus zijn een belangrijk aspect van Mobile Threat Defense omdat door de Intune-integratie tijdens runtime wordt berekend in hoeverre het apparaat compatibel is op basis van deze risiconiveaus. De Intune-beheerder stelt een beleidsregel in om een apparaat te identificeren als niet-compatibel als het een actieve bedreiging heeft met een minimumniveau van **Hoog**, **Gemiddeld** of **Laag**. Het bedreigingsclassificatiebeleid in Lookout Mobile Threat Defense staat rechtstreeks aan de basis van de berekening van de apparaatcompatibiliteit in Intune.
+> Risiconiveaus zijn een belangrijk aspect van Mobile Endpoint Security, omdat door de Intune-integratie tijdens runtime wordt berekend in hoeverre het apparaat compatibel is op basis van deze risiconiveaus.  
+> 
+> De Intune-beheerder stelt een beleidsregel in om een apparaat te identificeren als niet-compatibel als het een actieve bedreiging heeft met een minimumniveau van **Hoog**, **Gemiddeld** of **Laag**. Het bedreigingsclassificatiebeleid in Lookout Mobile Endpoint Security staat rechtstreeks aan de basis van de berekening van de apparaatcompatibiliteit in Intune.  
 
-## <a name="watching-enrollment"></a>Registratie bewaken
-Wanneer de instelling is voltooid, wordt Azure AD met Lookout Mobile Threat Defense gecontroleerd op apparaten die met de opgegeven inschrijvingsgroepen overeenkomen.  In de module Apparaten vindt u informatie over de apparaten die zijn geregistreerd.  De initiële status van apparaten wordt weergegeven als In behandeling.  De apparaatstatus wordt gewijzigd nadat de Lookout for Work-app op het apparaat is geïnstalleerd, geopend en geactiveerd.  Zie [Lookout for Work-apps met Intune toevoegen](mtd-apps-ios-app-configuration-policy-add-assign.md) voor meer informatie over het pushen van de Lookout for Work-app naar het apparaat.
+## <a name="monitor-enrollment"></a>Enrollment bewaken
+Nadat de instelling is voltooid, wordt Azure AD met Lookout Mobile Endpoint Security gecontroleerd op apparaten die met de opgegeven inschrijvingsgroepen overeenkomen.  U kunt informatie over geregistreerde apparaten vinden door te gaan naar **Apparaten** in de Lookout MES-console.  
+- De initiële status van apparaten is *in behandeling*.  
+- De apparaatstatus wordt bijgewerkt nadat de app *Lookout for Work* op het apparaat is geïnstalleerd, geopend en geactiveerd.
+
+Zie [Lookout for Work-apps met Intune toevoegen](mtd-apps-ios-app-configuration-policy-add-assign.md) voor meer informatie over het implementeren van de app *Lookout for Work* op het apparaat.
 
 ## <a name="next-steps"></a>Volgende stappen
 

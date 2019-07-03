@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb081dd52999f203420e8a1f0b4f9c52a313f75
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 06dcc730406af3ae2d715cbe7f0795253e2629f0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043276"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045110"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Beleid maken voor voorwaardelijke toegang op basis van apparaten
 
@@ -69,7 +69,7 @@ Beleid voor voorwaardelijke toegang specificeert de app of services die u wilt b
     - **Apparaatplatformen**: identificeer op het tabblad **Opnemen** u de apparaatplatformen waarop u dit beleid voor voorwaardelijke toegang wilt toepassen. Gebruik het tabblad **Uitsluiten** om platformen van dit beleid uit te sluiten.
     - **Locaties**: geef op het tabblad **Opnemen** op of het beleid van toepassing is op een locatie, op vertrouwde netwerklocaties die onder de controle van uw IT-afdeling vallen, of op specifieke netwerklocaties. Gebruik het tabblad **Uitsluiten** om netwerklocaties van dit beleid uit te sluiten. 
     - **Client-apps**: kies **Ja** om aan te geven of het beleid van toepassing moet zijn op browser-apps, mobiele apps en desktop-clients. U kunt ook **Moderne verificatieclients** (zoals Outlook voor iOS resp. Android) en **Exchange ActiveSync-clients** selecteren.
-    - **Apparaatstatus.**: het beleid voor voorwaardelijke toegang is van toepassing op alle apparaatstatussen, tenzij u Ja kiest en specifiek de statussen 'Apparaat aan Hybrid Azure AD toegevoegd' of 'Apparaat gemarkeerd als compatibel' (of beide) uitsluit.
+    - **Apparaatstatus.** : het beleid voor voorwaardelijke toegang is van toepassing op alle apparaatstatussen, tenzij u Ja kiest en specifiek de statussen 'Apparaat aan Hybrid Azure AD toegevoegd' of 'Apparaat gemarkeerd als compatibel' (of beide) uitsluit.
     
       ![Nieuw beleid voor voorwaardelijke toegang maken](media/create-conditional-access-intune/create-ca-device-platforms.png)
 
