@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bad416e738f1a0481c67480d9a83157a4781c71b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6ec42d122bf3da3fbacef513d6af2dbe124b196c
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050342"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530773"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Quickstart: Beveiligingsbeleid voor apps maken en toewijzen
 
@@ -66,12 +66,12 @@ Nadat u beveiligingsbeleid voor apps in Intune hebt gemaakt, kunt u dit toewijze
 
 Gebruik de volgende stappen om beveiligingsbeleid voor apps toe te wijzen:
 
-1.  Selecteer in [Intune](https://aka.ms/intuneportal) **Intune** > **Client-apps** > **App-beveiligingsbeleid**. 
-2.  Selecteer het app-beveiligingsbeleid dat u eerder hebt gemaakt. In deze snelstartgids is het beleid **Inhoudsbeveiliging Windows 10**.
-3.  Selecteer **Toewijzingen**.
-4.  Selecteer de optie **Op te nemen groepen selecteren** op het tabblad **Opnemen**.
-5.  Selecteer **Contoso-testers** als de op te nemen groep.
-6.  Klik op **Selecteren** > **Opslaan**. 
+1. Selecteer in [Intune](https://aka.ms/intuneportal) **Intune** > **Client-apps** > **App-beveiligingsbeleid**. 
+2. Selecteer het app-beveiligingsbeleid dat u eerder hebt gemaakt. In deze snelstartgids is het beleid **Inhoudsbeveiliging Windows 10**.
+3. Selecteer **Toewijzingen**.
+4. Selecteer de optie **Op te nemen groepen selecteren** op het tabblad **Opnemen**.
+5. Selecteer **Contoso-testers** als de op te nemen groep.
+6. Klik op **Selecteren** > **Opslaan**. 
 
 U hebt nu het beveiligingsbeleid voor apps toegewezen.
 

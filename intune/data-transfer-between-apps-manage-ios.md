@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9be961908920420dbb4111c2c3ba108b7e11c09f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f97b3365036271a7f41e7c3274e8a3bd966407f3
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042793"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512154"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
 
@@ -34,7 +34,7 @@ Beperk bestandsoverdrachten ter beveiliging van bedrijfsgegevens tot alleen de a
 
 De functie **Openen in beheer** voor iOS-apparaten beperkt de bestandsoverdracht tussen apps die zijn geïmplementeerd via het **MDM-kanaal**. Stel bij de configuratie-instellingen de beperkingen in voor de beheerde *Open in-functie* van iOS en implementeer de apparaten met uw MDM-oplossing.  Wanneer een gebruiker de geïmplementeerde app installeert, worden de door u ingestelde beperkingen toegepast.
 
-##  <a name="use-app-protection-with-ios-apps"></a>App-beveiliging gebruiken met iOS-apps
+## <a name="use-app-protection-with-ios-apps"></a>App-beveiliging gebruiken met iOS-apps
 Gebruik een app-beveiligingsbeleid met de beheerde **Open in-functie** van iOS om bedrijfsgegevens op de volgende manieren te beveiligen:
 
 -   **Apparaten die eigendom zijn van werknemers en die niet worden beheerd met een MDM-oplossing:** u kunt de app-beveiligingsbeleidsinstellingen instellen op **App toestaan om alleen gegevens over te dragen naar door beleid beheerde apps**. Het gedrag *Open-In* in een door beleid beheerde app presenteert alleen andere door beleid beheerde apps als opties voor delen. Als een gebruiker een met beleid beveiligd bestand als bijlage van OneDrive via de systeemeigen e-mail-app probeert te verzenden, is dat bestand onleesbaar.

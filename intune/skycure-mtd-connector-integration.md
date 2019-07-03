@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2f5eb5c6e8e454f6558aff7247f8ac10b7a5393
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1cab7957a0de1b26a6e172fc696cf887d5fe3916
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040559"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528378"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile-integratie met Intune instellen
 
@@ -87,7 +87,7 @@ U moet een Azure AD-beveiligingsgroep toevoegen met alle apparaten waarop SEP Mo
 
 -  Voer alle beveiligingsgroepen met apparaten in waarop SEP Mobile wordt uitgevoerd en selecteer de groepen. Sla vervolgens de wijzigingen op.
 
-    ![Afbeelding van de gebruikersgroepen voor SEP Mobile-apps](./media/symantec-portal-basic-groups.png)   
+    ![Afbeelding van de gebruikersgroepen voor SEP Mobile-apps](./media/symantec-portal-basic-groups.png)
 
 Met SEP Mobile worden apparaten waarop de Mobile Threat Defense-service wordt uitgevoerd, gesynchroniseerd met de Azure AD-beveiligingsgroepen.
 
@@ -126,25 +126,25 @@ Met SEP Mobile worden apparaten waarop de Mobile Threat Defense-service wordt ui
 
 4. Plak in het vak **Directory ID** de map-id die u in de vorige sectie hebt gekopieerd uit Azure Active Directory en sla de instellingen op.
 
-    ![Afbeelding van de map-id in de SEP Mobile-portal](./media/symantec-portal-directory-ID.png)     
+    ![Afbeelding van de map-id in de SEP Mobile-portal](./media/symantec-portal-directory-ID.png)
 
 5. Ga naar de sectie **Settings** > **Integrations** > **Intune** > **Basic Setup**.
 
 6. Kies naast **iOS Aapp** de knop **Add to Active Directory**.
 
-    ![Afbeelding van het toevoegen van de iOS-app aan Active Directory](./media/symantec-portal-basic-add.png)   
+    ![Afbeelding van het toevoegen van de iOS-app aan Active Directory](./media/symantec-portal-basic-add.png)
 
-7.  Meld u aan met de Azure Active Directory-referenties voor het Office 365-account waarmee de map wordt beheerd.
+7. Meld u aan met de Azure Active Directory-referenties voor het Office 365-account waarmee de map wordt beheerd.
 
-8.  Kies de knop **Accept** om de iOS-app SEP Mobile toe te voegen aan Azure Active Directory.
+8. Kies de knop **Accept** om de iOS-app SEP Mobile toe te voegen aan Azure Active Directory.
 
-    ![Afbeelding van de knop Accept](./media/symantec-portal-basic-accept.png)     
+    ![Afbeelding van de knop Accept](./media/symantec-portal-basic-accept.png)
 
-9.  Herhaal hetzelfde proces voor de **Android-app** en de **beheer-app**.
+9. Herhaal hetzelfde proces voor de **Android-app** en de **beheer-app**.
 
 10. Selecteer alle gebruikersgroepen waarvoor de SEP Mobile-apps moeten worden uitgevoerd, bijvoorbeeld de beveiligingsgroep die u eerder hebt gemaakt.
 
-    ![Afbeelding van de gebruikersgroepen voor SEP Mobile-apps](./media/symantec-portal-basic-groups.png)   
+    ![Afbeelding van de gebruikersgroepen voor SEP Mobile-apps](./media/symantec-portal-basic-groups.png)
 
 11.  De apparaten in de geselecteerde groepen worden gesynchroniseerd met SEP Mobile en de gegevens worden gerapporteerd in Intune. U kunt deze gegevens weergeven in de sectie Full Integration. Ga naar de sectie **Settings** > **Integrations** > **Intune** > **Full Integration**.
 

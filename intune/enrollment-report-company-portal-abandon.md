@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546694409e6f87d85c5ef934b5d084b0955e0bf7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041855"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529756"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Rapport over onvolledige gebruikersinschrijving
 
@@ -35,9 +35,9 @@ U kunt met deze informatie uw onboardingdocumenten bijwerken om gebruikers te he
 
 Er is sprake van een onvolledige inschrijving wanneer een gebruiker een van de volgende bewerkingen uitvoert:
 
--   Expliciet een actie uitvoert om de registratie te onderbreken
--   De bedrijfsportal sluit tijdens de registratie
--   Meer dan 30 minuten doet over de verschillende secties van de registratie
+- Expliciet een actie uitvoert om de registratie te onderbreken
+- De bedrijfsportal sluit tijdens de registratie
+- Meer dan 30 minuten doet over de verschillende secties van de registratie
 
 Als een gebruiker er meerdere keren voor kiest om de inschrijving te stoppen en deze opnieuw te starten, wordt dit weergegeven als meerdere pogingen en meerdere onvolledige inschrijvingen. Als een gebruiker 30 minuten wacht tussen de verschillende inschrijvingsschermen, wordt dit beschouwd als meerdere onvolledige inschrijvingen.
 
@@ -53,18 +53,18 @@ U kunt het datumbereik, het besturingssysteem en de registratiesectie filteren d
 
 Boven in het rapport ziet u het aantal en het percentage onvolledige inschrijvingen ten opzichte van alle inschrijvingen.
 
--   Geïnitieerde inschrijvingen: Het aantal gestarte inschrijvingen.
--   Onvolledige inschrijvingen: Het aantal gestarte inschrijvingen dat niet heeft geresulteerd in een volledig ingeschreven en compatibel apparaat.
--   Percentage onvolledige inschrijvingen: het percentage gestarte inschrijvingen dat is afgebroken (afgebroken inschrijvingen/gestarte inschrijvingen).
+- Geïnitieerde inschrijvingen: Het aantal gestarte inschrijvingen.
+- Onvolledige inschrijvingen: Het aantal gestarte inschrijvingen dat niet heeft geresulteerd in een volledig ingeschreven en compatibel apparaat.
+- Percentage onvolledige inschrijvingen: het percentage gestarte inschrijvingen dat is afgebroken (afgebroken inschrijvingen/gestarte inschrijvingen).
 
 ### <a name="line-graph"></a>Lijndiagram
 
 In het lijndiagram ziet u de dagelijkse onvolledige inschrijvingen voor elk van de vier kernsecties voor inschrijving:
 
--   Instellingencontrole
--   Platformschermen
--   Gebruiksvoorwaarden
--   Naleving/activering
+- Instellingencontrole
+- Platformschermen
+- Gebruiksvoorwaarden
+- Naleving/activering
 
 ### <a name="user-abandonment-actions"></a>Gebruikersacties voor afbreking
 

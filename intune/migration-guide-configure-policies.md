@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d3e36dbeb1fb7c90dfc5cc4c18fb30140c761db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046499"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512265"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Het nalevingsbeleid voor apparaten en het beleid voor appbeheer configureren bij een migratie naar Microsoft Intune
 
@@ -59,7 +59,7 @@ Door middel van resourcetoegangsprofielen worden certificaten en toegangsconfigu
 
 U moet een apparaatconfiguratieprofiel maken om instellingen op apparaatniveau door te voeren, zoals de instelling voor het uitschakelen van de camera, de App Store, het configureren van de modus voor één app, het beginscherm, enzovoort. Meer informatie over [apparaatprofielen](device-profiles.md).
 
-####  <a name="directly-import-ios-configuration-profiles-optional"></a>Rechtstreeks iOS-configuratieprofielen importeren (optioneel)
+#### <a name="directly-import-ios-configuration-profiles-optional"></a>Rechtstreeks iOS-configuratieprofielen importeren (optioneel)
 
 -   **iOS-profielen van Apple Configurator (iOS 7.1 en hoger):** Als uw bestaande MDM-oplossing gebruikmaakt van Apple Configurator-profielen (mobileconfig-bestanden), kunnen deze rechtstreeks door Intune worden geïmporteerd als aangepast configuratiebeleid.
 

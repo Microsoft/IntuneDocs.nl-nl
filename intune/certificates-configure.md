@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e0eda1c60e420adcdab9364ecb0da1f52fe4e6
-ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
+ms.openlocfilehash: 80be1d39d9a562dbc13b9384c6256eb02c9ef50e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66713894"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530555"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Een certificaatprofiel configureren voor uw apparaten in Microsoft Intune
 

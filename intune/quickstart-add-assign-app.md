@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17db2227303fe3937156ad6afa610dce48bd1992
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041355"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528304"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Quickstart: Een client-app toevoegen en toewijzen
 
@@ -69,7 +69,7 @@ Wanneer u een app aan Microsoft Intune hebt toegevoegd, kunt u de app toewijzen 
 
 Gebruik de volgende stappen om een app aan een groep toe te voegen:
 1. Selecteer in [Intune](https://aka.ms/intuneportal) de optie **Client-apps** > **Apps**. 
-2. Selecteer de app die u aan een groep wilt toewijzen.   
+2. Selecteer de app die u aan een groep wilt toewijzen.
 3. Klik op **Toewijzingen** > **Groep toevoegen** om de blade **Groep toevoegen** weer te geven.
 4. Selecteer **Beschikbaar voor ingeschreven apparaten** in de vervolgkeuzelijst **Toewijzingstype**. 
 5. Kies **Opgenomen groepen** > **Op te nemen groepen selecteren** > **Contoso-testers**.
