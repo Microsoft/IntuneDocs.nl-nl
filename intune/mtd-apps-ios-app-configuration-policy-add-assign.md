@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/14/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78d6b8faf5c5c3ef41f3eb5007d550c869491f60
-ms.sourcegitcommit: 268f495de486718b99d9c1b60d4576030cafd17b
+ms.openlocfilehash: c6065fda71688909dd7fcbc6ef1909e3d3ab36b8
+ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141810"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67407121"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>MTD-apps (Mobile Threat Defense) toevoegen en toewijzen met Intune  
 
@@ -56,6 +56,7 @@ Kies de sectie die overeenkomt met uw MTD-provider:
 - [Pradeo](#configure-pradeo-apps)
 - [Better Mobile](#configure-better-mobile-apps)
 - [Sophos Mobile](#configure-sophos-apps)
+- [Wandera](#configure-wandera-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Lookout for Work-app configureren  
 - **Android**  
@@ -129,6 +130,14 @@ Kies de sectie die overeenkomt met uw MTD-provider:
 - **iOS**
   - Zie de instructies in het artikel [iOS Store-apps toevoegen aan Microsoft Intune](store-apps-ios.md). Gebruik deze [URL voor de App Store voor ActiveShield](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) in **stap 11** voor de **URL App Store**.
 
+### <a name="configure-wandera-apps"></a>Wandera-apps configureren  
+ 
+- **Android**
+  - Zie de instructies in het artikel [Android Store-apps toevoegen aan Microsoft Intune](store-apps-android.md). Gebruik deze [URL voor de mobiele app-store van Wandera](https://play.google.com/store/apps/details?id=com.wandera.android) in **stap 7**. Selecteer **Android 5.0**  voor de **minimale versie van het besturingssysteem**.
+
+- **iOS**
+  - Zie de instructies in het artikel [iOS Store-apps toevoegen aan Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios). Gebruik deze [URL voor de mobiele app-store van Wandera](https://itunes.apple.com/app/wandera/id605469330) in **stap 11** voor de **URL App Store**.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>Uw MTD-apps configureren met een configuratiebeleid voor iOS-apps  
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Beleid voor de configuratie van Lookout for Work-apps  
@@ -196,6 +205,27 @@ Pradeo biedt geen ondersteuning voor toepassingsconfiguratiebeleid in iOS.  Als 
 
 ### <a name="sophos-mobile-app-configuration-policy"></a>Configuratiebeleid voor Sophos Mobile-apps  
 Maak het configuratiebeleid voor iOS-apps volgens de instructies in het artikel [using iOS app configuration policy](app-configuration-policies-use-ios.md) (App-configuratiebeleid voor iOS gebruiken).
+
+### <a name="wandera-app-configuration-policy"></a>Configuratiebeleid voor Wandera-app  
+Zie de Engelstalige instructies voor het [gebruiken van app-configuratiebeleid voor iOS van Microsoft Intune](app-configuration-policies-use-ios.md) om het configuratiebeleid voor de iOS-app Wandera toe te voegen.
+- Gebruik in **stap 8** de optie **XML-gegevens invoeren**. Meld u aan bij uw RADAR Wandera-portal en ga naar **Instellingen** > **EMM-integratie** > **App-push**. Selecteer **Intune** en kopieer en plak de onderstaande inhoud vervolgens in de hoofdtekst van het configuratiebeleid.  
+
+  ```
+  <dict><key>secretKey</key>
+  <string>SeeRADAR</string>
+  <key>apiKey</key>
+  <string> SeeRADAR </string>
+  <key>customerId</key>
+  <string> SeeRADAR </string>
+  <key>email</key>
+  <string>{{mail}}</string>
+  <key>firstName</key>
+  <string>{{username}}</string>
+  <key>lastName</key>
+  <string></string>
+  <key>activationType</key>
+  <string>PROVISION_THEN_AWP</string></dict>  
+  ```
 
 ## <a name="assign-apps-to-groups"></a>Apps aan groepen toewijzen  
 - Deze stap is van toepassing op alle MTD-partners. Zie de instructies voor het [toewijzen van apps aan groepen met Intune](apps-deploy.md).

@@ -17,21 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 50574a2d3dc4ba5731b1a90f563ddd1a08e7f833
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044875"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529638"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Internettoegang beheren met behulp van Microsoft Edge met Microsoft Intune
 
 Wanneer u het Intune-beveiligingsbeleid voor apps met Microsoft Edge hanteert, kan dat ervoor zorgen dat bedrijfswebsites altijd onder veilige omstandigheden toegankelijk zijn. Op basis van Intune-beleid zijn de volgende zakelijke functies van Microsoft Edge beschikbaar. Deze zakelijke functies omvatten:
 
-1.  **Dual-Identity**. Gebruikers kunnen zowel een werkaccount als een persoonlijk account maken om mee te browsen. Er is sprake van een volledige scheiding tussen de twee identiteiten. Dit is vergelijkbaar met de architectuur en ervaring in Office 365 en Outlook. Intune-beheerders kunnen het gewenste beleid instellen voor beveiligde browsersessies binnen het werkaccount.
-2.  **Integratie van het Intune-beveiligingsbeleid voor apps**: omdat Microsoft Edge is geïntegreerd met de Intune SDK, kunt u door middel van het beveiligingsbeleid voor apps zorgen voor een beveiliging tegen gegevensverlies. Met deze functies kan bijvoorbeeld het gebruik van knippen, kopiëren en plakken worden beheerd, het maken van schermafdrukken worden geblokkeerd en kan ervoor worden gezorgd dat door de gebruiker geselecteerde koppelingen uitsluitend worden geopend in andere beheerde apps.
-3.  **Integratie met Azure Active Directory-toepassingsproxy**: u kunt de toegang tot SaaS-app en web-apps beheren en ervoor zorgen dat browser-apps alleen worden uitgevoerd in de beveiligde Microsoft Edge-browser, of eindgebruikers nu verbinding maken vanuit het bedrijfsnetwerk of vanaf internet.
-4.  **Toepassingsconfiguratie**: u kunt door middel van de configuratie-instellingen voor toepassingen de beveiligingspositie van uw organisatie versterken en gebruiksvriendelijke functies configureren voor uw eindgebruikers. U kunt onder andere bladwijzers, een snelkoppeling naar de startpagina, toegestane/geblokkeerde websites en de Azure-toepassingsproxy definiëren.
+1. **Dual-Identity**. Gebruikers kunnen zowel een werkaccount als een persoonlijk account maken om mee te browsen. Er is sprake van een volledige scheiding tussen de twee identiteiten. Dit is vergelijkbaar met de architectuur en ervaring in Office 365 en Outlook. Intune-beheerders kunnen het gewenste beleid instellen voor beveiligde browsersessies binnen het werkaccount.
+2. **Integratie van het Intune-beveiligingsbeleid voor apps**: omdat Microsoft Edge is geïntegreerd met de Intune SDK, kunt u door middel van het beveiligingsbeleid voor apps zorgen voor een beveiliging tegen gegevensverlies. Met deze functies kan bijvoorbeeld het gebruik van knippen, kopiëren en plakken worden beheerd, het maken van schermafdrukken worden geblokkeerd en kan ervoor worden gezorgd dat door de gebruiker geselecteerde koppelingen uitsluitend worden geopend in andere beheerde apps.
+3. **Integratie met Azure Active Directory-toepassingsproxy**: u kunt de toegang tot SaaS-app en web-apps beheren en ervoor zorgen dat browser-apps alleen worden uitgevoerd in de beveiligde Microsoft Edge-browser, of eindgebruikers nu verbinding maken vanuit het bedrijfsnetwerk of vanaf internet.
+4. **Toepassingsconfiguratie**: u kunt door middel van de configuratie-instellingen voor toepassingen de beveiligingspositie van uw organisatie versterken en gebruiksvriendelijke functies configureren voor uw eindgebruikers. U kunt onder andere bladwijzers, een snelkoppeling naar de startpagina, toegestane/geblokkeerde websites en de Azure-toepassingsproxy definiëren.
 Beveiligingsbeleid van Microsoft Intune voor Microsoft Edge helpt u om de gegevens en resources in uw organisatie te beveiligen. Wanneer u dit beleid toepast met Microsoft Edge, zijn de resources van uw bedrijf beveiligd, niet alleen in systeemeigen geïnstalleerde apps, maar ook bij toegang via een webbrowser.
 
 ## <a name="getting-started"></a>Aan de slag
@@ -115,8 +115,8 @@ U voert de volgende stappen uit om een app-configuratie voor een beveiligde brow
     > [!NOTE]
     > Voor Microsoft Edge wordt hetzelfde sleutel- en waardepaar gebruikt als voor Managed Browser. 
 
-8.  Wanneer u klaar bent, klikt u op **OK**.
-9.  Kies op de blade **Configuratiebeleid toevoegen** de optie **Toevoegen**.<br>
+8. Wanneer u klaar bent, klikt u op **OK**.
+9. Kies op de blade **Configuratiebeleid toevoegen** de optie **Toevoegen**.<br>
     De nieuwe configuratie wordt gemaakt en weergegeven op de blade **App-configuratie**.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>De configuratie-instellingen toewijzen die u hebt gemaakt 
@@ -184,7 +184,7 @@ Gebruik het volgende sleutel-waardepaar om beheerde bladwijzers te configureren:
 
 |    Sleutel    |    Waarde    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    De waarde voor deze configuratie is een lijst met bladwijzers. Elke bladwijzer bestaat uit de titel en de URL van de bladwijzer. Scheid de titel en de URL met het teken `|`.      **Voorbeeld:**<br>`Microsoft Bing|https://www.bing.com`<p>Als u meerdere bladwijzers wilt configureren, typt u een dubbel scheidingsteken `||` tussen de bladwijzers.<p>**Voorbeeld:**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
+|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    De waarde voor deze configuratie is een lijst met bladwijzers. Elke bladwijzer bestaat uit de titel en de URL van de bladwijzer. Scheid de titel en de URL met het teken `|`.      **Voorbeeld:**<br>`Microsoft Bing|https://www.bing.com`<br>Als u meerdere bladwijzers wilt configureren, typt u een dubbel scheidingsteken `||` tussen de bladwijzers.<p>**Voorbeeld:**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
 ## <a name="how-to-display-myapps-within-microsoft-edge-bookmarks"></a>MyApps weergeven in Microsoft Edge-bladwijzers
 
@@ -201,16 +201,17 @@ U kunt de onderstaande sleutel-waardeparen gebruiken om een lijst met toegestane
 
 |    Sleutel    |    Waarde    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    U kunt kiezen uit:<p>1. Geef toegestane URL's op (alleen deze URL's zijn toegestaan; andere sites zijn niet toegankelijk):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Geef geblokkeerde URL's op (alle andere sites zijn toegankelijk):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    De overeenkomstige waarde voor de sleutel is een lijst met URL's. U geeft alle URL's die u wilt toestaan of blokkeren op als één waarde, gescheiden door een sluisteken `|`.<p>**Voorbeelden:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    U kunt kiezen uit:<p>1. Geef toegestane URL's op (alleen deze URL's zijn toegestaan; andere sites zijn niet toegankelijk):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Geef geblokkeerde URL's op (alle andere sites zijn toegankelijk):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    De overeenkomstige waarde voor de sleutel is een lijst met URL's. U geeft alle URL's die u wilt toestaan of blokkeren op als één waarde, gescheiden door een sluisteken `|`.<br>**Voorbeelden:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>URL-indelingen voor een lijst met toegestane sites en een lijst met geblokkeerde sites 
 U kunt verschillende URL-indelingen gebruiken om uw lijsten met toegestane/geblokkeerde sites te maken. De toegestane patronen worden in de onderstaande tabel beschreven. Enkele opmerkingen voordat u aan de slag gaat: 
 - Zorg ervoor dat u alle URL's voorziet van het voorvoegsel **http** of **https** wanneer u ze in de lijst invoert.
-- U kunt het jokerteken (*) gebruiken volgens de regels in de volgende lijst met toegestane patronen.
+- U kunt het jokerteken (\*) gebruiken volgens de regels in de volgende lijst met toegestane patronen.
+- Een jokerteken kan alleen overeenkomen met een volledige component van de hostnaam (gescheiden door punten) of volledige delen van het pad (gescheiden door slashes). `http://*contoso.com` wordt bijvoorbeeld **niet** ondersteund.
 - U kunt poortnummers in het adres opgeven. Als u geen poortnummer opgeeft, worden deze waarden gebruikt:
     - Poort 80 voor http
     - Poort 443 voor https
-- Het gebruik van jokertekens voor het poortnummer wordt **niet** ondersteund. `http://www.contoso.com:*` en `http://www.contoso.com:*/` bijvoorbeeld worden niet ondersteund.
+- Het gebruik van jokertekens voor het poortnummer wordt **niet** ondersteund. `http://www.contoso.com:*` en `http://www.contoso.com:*/` bijvoorbeeld worden niet ondersteund. 
 
     |    URL    |    Details    |    Komt overeen met    |    Komt niet overeen met    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -232,6 +233,7 @@ U kunt verschillende URL-indelingen gebruiken om uw lijsten met toegestane/geblo
     - IP-adressen
     - `https://*`
     - `http://*`
+    - `https://*contoso.com`
     - `http://www.contoso.com:*`
     - `http://www.contoso.com: /*`
   
@@ -247,13 +249,13 @@ Gebruik het onderstaande sleutel-waardepaar om te configureren als deze zachte o
 
 ## <a name="directing-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>Gebruikers doorsturen naar Microsoft Edge in plaats van de Intune Managed Browser 
 
-Zowel de Intune Managed Browser als Microsoft Edge kunnen nu worden gebruikt als door beleid beveiligde browsers. Geef de volgende configuratie-instelling op voor alle door Intune beheerde apps (bijvoorbeeld Outlook en OneDrive), zodat de gebruikers worden doorgestuurd naar de juiste browser-app:
+Zowel de Intune Managed Browser als Microsoft Edge kunnen nu worden gebruikt als door beleid beveiligde browsers. Geef de volgende configuratie-instelling op voor alle door Intune beheerde apps (bijvoorbeeld Outlook, OneDrive en SharePoint), zodat de gebruikers worden doorgestuurd naar de juiste browser-app:
 
 |    Sleutel    |    Waarde    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    Bij `true` wordt ervoor gezorgd dat de gebruikers Microsoft Edge gebruiken.<p>Bij `false` wordt ervoor gezorgd dat de gebruikers de Intune Managed Browser gebruiken.    |
+|    `com.microsoft.intune.useEdge`    |    De waarde `true` zal uw gebruikers instructies geven om Microsoft Edge te downloaden en gebruiken.<br>De waarde `false` stelt uw gebruikers in staat de Intune Managed Browser te gebruiken.    |
 
-Als deze app-configuratiewaarde niet wordt ingesteld, bepaalt de volgende logica welke browser wordt gebruikt om bedrijfskoppelingen te openen.
+Als deze app-configuratiewaarde **niet** wordt ingesteld, bepaalt de volgende logica welke browser wordt gebruikt om bedrijfskoppelingen te openen.
 
 Op Android:
 - De Intune Managed Browser wordt gestart als een gebruiker zowel de Intune Managed Browser als Microsoft Edge op het apparaat heeft geïnstalleerd. 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6a20ccec2ef0cbaba87637b3c44c2cc2be094ab
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67325543"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500650"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>De hoofdgebruiker van een Intune-apparaat zoeken
 
@@ -60,8 +60,8 @@ Intune voegt tijdens of kort na de inschrijving automatisch een hoofdgebruiker t
 | Windows | Azure AD-deelname (bij ingebruikname) | Gebruiker inschrijven | Tijdens inschrijving | 
 | Windows | Azure AD-deelname (automatisch bij ingebruikname) | Gebruiker inschrijven | Tijdens inschrijving | 
 | Windows | Alleen inschrijven in MDM | Gebruiker inschrijven | Tijdens inschrijving | 
-| Windows | Hybride AADJ + automatische inschrijving GPO | Eerste gebruiker die zich aanmeldt | Wanneer de eerste gebruiker zich aanmeldt | 
-| Windows | Co-beheer | Eerste gebruiker die zich aanmeldt | Wanneer de eerste gebruiker zich aanmeldt | 
+| Windows | Hybride AADJ + automatische inschrijving GPO | Eerste gebruiker die zich aanmeldt bij Windows | Als de eerste gebruiker zich aanmeldt bij Windows| 
+| Windows | Co-beheer | Eerste gebruiker die zich aanmeldt bij Windows | Als de eerste gebruiker zich aanmeldt bij Windows | 
 | Windows | Azure AD-deelname (token voor bulkinschrijving) | Geen | Niet van toepassing | 
 | Windows | Azure AD-deelname (modus voor automatische zelfimplementatie) | Geen | Niet van toepassing | 
 | Platformoverschrijdend | Door gebruiker gestarte inschrijving met de bedrijfsportal-app | Gebruiker inschrijven | Tijdens inschrijving |

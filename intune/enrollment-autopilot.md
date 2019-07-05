@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28c3da6d2e3390d20aecc3673cac38e8424ef57a
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: cbd73d22c2e42f0a379ec2a97179f9e3c4dec224
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389308"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512106"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -35,7 +35,7 @@ Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. H
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>Het CSV-bestand verkrijgen voor het importeren in Intune
 
-Zie de cmdlet powershell begrijpen voor meer informatie over het gebruik.
+Zie De cmdlet powershell begrijpen voor meer informatie.
 
 - [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
@@ -47,8 +47,9 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
 
     ![Schermafbeelding van Windows Autopilot-apparaten](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Onder **Windows AutoPilot-apparaten toevoegen** bladert u naar het CSV-bestand met de apparaten die u wilt toevoegen. Het CSV-bestand moet de serienummers, optionele Windows-product-id's, hardwarehashes en optionele groepstags van de apparaten vermelden. Er mogen maximaal 500 rijen in de lijst staan. Gebruik de header- en regelindeling die hieronder wordt weergegeven: `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
-    `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
+2. Onder **Windows AutoPilot-apparaten toevoegen** bladert u naar het CSV-bestand met de apparaten die u wilt toevoegen. Het CSV-bestand moet de serienummers, optionele Windows-product-id's, hardwarehashes en optionele groepstags, toegewezen gebruikers en bestellings-id's van de apparaten vermelden. Er mogen maximaal 500 rijen in de lijst staan. Gebruik de header- en regelindeling die hieronder wordt weergegeven:
+
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User, Order ID` `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>,<optionalOrderID>`
 
     ![Schermafbeelding van het toevoegen van Windows Autopilot-apparaten](media/enrollment-autopilot/autopilot-import-device2.png)
 
@@ -69,7 +70,7 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
     Autopilot-apparaten die nog niet zijn ingeschreven, zijn apparaten waarvan de naam overeenkomt met het serienummer van het apparaat.
 4. Als u hierboven de optie **Dynamische apparaten** hebt gekozen als **lidmaatschapstype**, kiest u op de blade **Groep** de optie **Leden van dynamisch apparaat** en typt u een de volgende codes in het vak **Geavanceerde regel**.
     - Als u een groep wilt maken met al uw Autopilot-apparaten, typt u: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - Het veld met groepstags van Intune komt overeen met het kenmerk OrderID op Azure AD-apparaten. Als u een groep wilt maken met al uw Autopilot-apparaten met een specifieke groepstag (OrderID), typt u: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
+    - Het veld met groepstags van Intune komt overeen met het kenmerk OrderID op Azure AD-apparaten. Als u een groep wilt maken met al uw Autopilot-apparaten met een specifieke groepstag (OrderID), typt u: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Als u een groep wilt maken met al uw Autopilot-apparaten en een specifieke inkooporder-id, typt u `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     Wanneer u de code **Geavanceerde regel** hebt toegevoegd, kiest u **Opslaan**.
@@ -95,7 +96,7 @@ Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren.
     - **Gebruiksrechtovereenkomst (EULA)** : (Windows 10, versie 1709 of hoger) Kies of u de gebruiksrechtovereenkomst wilt weergeven aan gebruikers.
     - **Privacyinstellingen**: kies of u de privacyinstellingen wilt weergeven voor de gebruikers.
     >[!IMPORTANT]
-    >Bij Autopilot-implementaties op apparaten met Windows 10 versie 1903 en hoger, is de instelling voor diagnostische gegevens automatisch ingesteld op Volledig. Zie [Windows Diagnostic Data](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) (Diagnostische gegevens in Windows) voor meer informatie <br>
+    >Bij Autopilot-implementaties op apparaten met Windows 10 versie 1903 en hoger, is de instelling voor diagnostische gegevens automatisch ingesteld op Volledig. Zie [Windows Diagnostic Data](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) (Diagnostische gegevens in Windows) voor meer informatie <br>
     
     - **Opties voor account wijzigen verbergen (Windows 10 versie 1809 of hoger vereist)** : kies **Verbergen** om te voorkomen dat opties voor account wijzigen worden weergegeven op de aanmeldings- en domeinfoutpagina's van het bedrijf. Voor deze optie is vereist dat er een [aangepaste huisstijl wordt geconfigureerd in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Gebruikersaccounttype**: kies het gebruikersaccounttype (**Beheerder** of **Standaardgebruiker**).
@@ -118,7 +119,7 @@ Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren.
     ![Schermopname van de pagina Beoordelen en maken](media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Er wordt regelmatig door Intune gecontroleerd of de toegewezen groepen nieuwe apparaten bevatten. Vervolgens worden er profielen aan eventuele nieuwe apparaten toegewezen. Dit proces kan enkele minuten duren. Zorg ervoor dat dit proces is voltooid voordat u een apparaat implementeert.  U kunt bij **Apparaatinschrijving** > **Windows-inschrijving ** > **Apparaten** controleren waar u de wijzigingen in de profielstatus van Niet-toegewezen naar Toewijzen en tot slot naar Toegewezen kunt bekijken.
+> Er wordt regelmatig door Intune gecontroleerd of de toegewezen groepen nieuwe apparaten bevatten. Vervolgens worden er profielen aan eventuele nieuwe apparaten toegewezen. Dit proces kan enkele minuten duren. Zorg ervoor dat dit proces is voltooid voordat u een apparaat implementeert.  U kunt bij **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** controleren waar u de wijzigingen in de profielstatus van 'Niet-toegewezen' naar 'Toewijzen' en tot slot naar 'Toegewezen' kunt bekijken.
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Een Windows Autopilot-implementatieprofiel bewerken
 Nadat u een Autopilot-implementatieprofiel hebt gemaakt, kunt u bepaalde delen ervan bewerken.   

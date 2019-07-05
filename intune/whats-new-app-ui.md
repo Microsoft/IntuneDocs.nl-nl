@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee16e40eea4d217cd78c3a026731656bfa4ca53
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 87e3b6bf1acbce88b45c9ebc78c45279d718a44c
+ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045634"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468759"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Informatie over de meest recente updates voor de Microsoft Intune-apps. We voegen regelmatig elementen toe aan de Intune-bedrijfsportal-app en de website en brengen verbeteringen aan. Als u een Intune-beheerder bent of iemand van de ondersteuning, biedt dit artikel de informatie die u nodig hebt om:
@@ -33,6 +33,29 @@ Informatie over de meest recente updates voor de Microsoft Intune-apps. We voege
 Zorg ervoor dat, als u een werknemer of student bent, u de schermafbeeldingen en koppelingen naar de Help-documentatie voor de bedrijfsportal bekijkt. Zie de [Help-documentatie voor bedrijfsportalgebruikers](https://docs.microsoft.com/intune-user-help/) voor meer informatie over het gebruik van de bedrijfsportal-app.  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-june-24-2019"></a>Week van 24 juni 2019  
+
+### <a name="view-all-installed-apps-from-new-company-portal-web-page----4224326---"></a>Alle geïnstalleerde apps weergeven op de nieuwe webpagina van de bedrijfsportal <!-- 4224326 -->
+De nieuwe pagina **Geïnstalleerde apps** van de website van de bedrijfsportal geeft alle beheerde apps (zowel vereiste als beschikbare) weer die op het apparaat van een gebruiker zijn geïnstalleerd. Naast het type toewijzing kunnen gebruikers de uitgever van de app, de publicatiedatum en de huidige installatiestatus weergeven. Als u geen apps voor uw gebruikers verplicht of beschikbaar hebt gesteld, zien zij het bericht dat er geen bedrijfs-apps zijn geïnstalleerd. Ga naar de [website van de bedrijfsportal](https://portal.manage.microsoft.com) en klik op **Geïnstalleerde apps** om de nieuwe pagina op het web te zien.   
+
+![Schermafbeelding van de pagina met geïnstalleerde apps op de bedrijfsportalwebsite.](/intune-user-help/media/intune-installed-apps-1907.png)     
+
+### <a name="new-view-lets-app-users-see-all-managed-apps-installed-on-device----2352913---"></a>In de nieuwe weergave kunnen app-gebruikers alle beheerde apps zien die op het apparaat zijn geïnstalleerd <!-- 2352913 -->
+De bedrijfsportal voor Windows toont nu alle beheerde apps (zowel vereiste als beschikbare) die op het apparaat van een gebruiker zijn geïnstalleerd. Gebruikers kunnen ook geprobeerde en in behandeling zijnde app-installaties weergeven met de huidige status ervan. Als u geen apps voor uw gebruikers verplicht of beschikbaar hebt gesteld, zien zij het bericht dat er geen bedrijfs-apps zijn geïnstalleerd. Ga naar het navigatievenster in de bedrijfsportal en selecteer **Apps** > **Geïnstalleerde apps** om de nieuwe weergave weer te geven.   
+
+![Voorbeeld van een schermafbeelding van de pagina met geïnstalleerde apps in de bedrijfsportal-app voor Windows 10. ](/intune-user-help/media/installed-apps-cp-1906.png)  
+
+
+## <a name="week-of-june-17-2019"></a>Week van 17 juni 2019  
+
+#### <a name="new-features-in-microsoft-intune-app"></a>Nieuwe functies in Microsoft Intune-app
+We hebben nieuwe functies toegevoegd aan de Microsoft Intune-app (preview) voor Android. Gebruikers op volledig beheerde Android-apparaten kunnen nu:  
+
+* De apparaten weergeven en beheren die zij hebben ingeschreven via de Intune-bedrijfsportal of de Microsoft Intune-app.    
+* Contact opnemen met hun organisatie voor ondersteuning.    
+* Feedback naar Microsoft sturen.    
+* Algemene voorwaarden bekijken als deze zijn ingesteld door hun organisatie. 
 
 ## <a name="week-of-april-15-2019"></a>Week van 15 april 2019  
 

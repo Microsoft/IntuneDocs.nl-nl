@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2019
+ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: b8b1c47e4a2eb46bb8f7190ede351ed77a1bfef4
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389249"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494500"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Intune-inschrijvingsmethoden voor Windows-apparaten
 
@@ -41,7 +41,7 @@ Gebruikers kunnen hun eigen Windows-apparaat zelf inschrijven via een van deze m
 Als een beheerder Automatische inschrijving heeft geconfigureerd (beschikbaar voor Azure AD Premium-abonnementen), hoeft de gebruiker zijn of haar referenties maar eenmaal in te voeren. Anders moeten ze zich afzonderlijk inschrijven via Alleen MDM-inschrijving en hun referenties opnieuw invoeren.  
 - **Alleen MDM-inschrijving**: hiermee kunnen gebruikers een bestaande werkgroep, Active Directory of een aan de Azure Active Directory toegevoegde pc in Intune inschrijven. Gebruikers voeren de inschrijving uit via Instellingen op hun bestaande Windows-pc. Deze methode wordt echter niet aanbevolen, aangezien het apparaat hiermee niet bij Azure Active Directory wordt ingeschreven. Ook kunnen bepaalde functies zoals Voorwaardelijke toegang niet worden gebruikt.
 - [Azure Active Directory (Azure AD) Join](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network): hiermee voegt u het apparaat toe aan Azure Active Directory en kunnen gebruikers zich bij Windows aanmelden met hun Azure AD-referenties. Als Automatische inschrijving is ingeschakeld, wordt het apparaat automatisch in Intune ingeschreven. Het voordeel van automatische inschrijving is dat de gebruiker maar één stap hoeft uit te voeren. Anders moeten ze zich afzonderlijk inschrijven via Alleen MDM-inschrijving en hun referenties opnieuw invoeren. Gebruikers kunnen zich ofwel tijdens de initiële Windows OOBE of bij Instellingen op deze manier inschrijven. Het apparaat wordt als een zakelijk apparaat in Intune gemarkeerd.
-- [Autopilot](enrollment-autopilot.md): deze functie zorgt ervoor dat gebruikers automatisch aan Azure AD worden toegevoegd en dat nieuwe zakelijke apparaten bij Intune worden ingeschreven. Met deze methode zorgt wordt de out-of-the-boxervaring vereenvoudigd. Bovendien hoeven er geen aangepaste installatiekopieën van het besturingssysteem meer op de apparaten te worden toegepast. Als beheerders Intune gebruiken om Autopilot-apparaten te beheren, kunnen ze beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven.  Er zijn twee typen Autopilot-implementatie: [De modus voor zelf implementeren](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (voor kiosken, digitale handtekeningen of een gedeeld apparaat) en [Gebruikersmodus](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (voor traditionele gebruikers). 
+- [Autopilot](enrollment-autopilot.md): deze functie zorgt ervoor dat gebruikers automatisch aan Azure AD worden toegevoegd en dat nieuwe zakelijke apparaten bij Intune worden ingeschreven. Met deze methode zorgt wordt de out-of-the-boxervaring vereenvoudigd. Bovendien hoeven er geen aangepaste installatiekopieën van het besturingssysteem meer op de apparaten te worden toegepast. Als beheerders Intune gebruiken om Autopilot-apparaten te beheren, kunnen ze beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven.  Er zijn vier typen Autopilot-implementatie: [Zelfimplementatiemodus](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (voor kiosken, digitale borden of een gedeeld apparaat), [Door gebruiker gestuurde modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (voor traditionele gebruikers, [White label] (met https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) kunnen partners of IT-medewerkers een Windows 10-pc alvast inrichten, zodat deze volledig is geconfigureerd en klaar is voor gebruik) en [Autopilot voor bestaande apparaten] (met https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) kan gemakkelijk de meest recente versie van Windows 10 op uw bestaande apparaten worden geïmplementeerd).
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Op beheerders gebaseerde inschrijving in Intune
 
@@ -51,7 +51,7 @@ Beheerders kunnen de volgende inschrijvingsmethoden instellen waarvoor geen gebr
 - Met [Co-beheer van Configuration Manager](https://docs.microsoft.com/sccm/comanage/overview) kunnen beheerders hun bestaande via Configuration Manager beheerde apparaten bij Intune inschrijven om te profiteren van zowel de voordelen van Intune als die van Configuration Manager. 
 - [Apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md) (Device enrollment manager, DEM) is een speciaal serviceaccount. DEM-accounts beschikken over machtigingen waarmee gemachtigde gebruikers meerdere apparaten in bedrijfseigendom kunnen inschrijven en beheren. Dergelijke apparaten zijn bijvoorbeeld geschikt voor gebruik bij een verkooppunt of met hulpprogramma-apps, maar niet voor gebruikers die toegang nodig hebben tot e-mail of bedrijfsresources. Bij deze methode is het gebruik van functies, zoals Voorwaardelijke toegang, niet toegestaan. 
 - Met [Bulksgewijs inschrijven](windows-bulk-enroll.md) kunnen gemachtigde gebruikers grote aantallen nieuwe apparaten in bedrijfseigendom samenvoegen met Azure Active Directory en Intune. U maakt een inrichtingspakket met de app Windows Configuration Designer (WCD). Vervolgens kunt u, met behulp van USB-sticks tijdens de initiële Windows OOBE-ervaring of vanaf een bestaande Windows-pc, het inrichtingspakket installeren zodat de apparaten automatisch in Intune worden ingeschreven. Bij deze methode is het gebruik van Voorwaardelijke toegang niet toegestaan. 
-- [Inschrijven van apparaten met Windows IoT Core](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/intunedeviceenrollment) is mogelijk met door het apparaat voor te bereiden met behulp van het Windows IoT Core-dashboard en vervolgens Windows Configuration Designer te gebruiken om een inrichtingspakket te maken. Dit inrichtingspakket wordt tijdens het opstarten dan vanaf een SD-kaart uitgevoerd om de apparaten automatisch bij Intune te registreren.
+- [Inschrijven van apparaten met Windows IoT Core](https://docs.microsoft.com/windows/iot-core/manage-your-device/intunedeviceenrollment) is mogelijk met door het apparaat voor te bereiden met behulp van het Windows IoT Core-dashboard en vervolgens Windows Configuration Designer te gebruiken om een inrichtingspakket te maken. Dit inrichtingspakket wordt tijdens het opstarten dan vanaf een SD-kaart uitgevoerd om de apparaten automatisch bij Intune te registreren.
 
 ## <a name="next-steps"></a>Volgende stappen
 

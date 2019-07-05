@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
-ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
+ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344090"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494293"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -30,10 +30,10 @@ In dit artikel leest u hoe u uw infrastructuur kunt configureren en vervolgens S
 
 - **Active Directory-domein**: Alle servers die in dit gedeelte worden genoemd (met uitzondering van de webtoepassingsproxyserver), moeten lid zijn van uw Active Directory-domein.
 
-- **Certificeringsinstantie** (CA): Moet een Microsoft-certificeringsinstantie (CA) voor ondernemingen zijn die wordt uitgevoerd in een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund. Zie [De certificeringsinstantie installeren](http://technet.microsoft.com/library/jj125375.aspx) voor meer informatie.
+- **Certificeringsinstantie** (CA): Moet een Microsoft-certificeringsinstantie (CA) voor ondernemingen zijn die wordt uitgevoerd in een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund. Zie [De certificeringsinstantie installeren](https://technet.microsoft.com/library/jj125375.aspx) voor meer informatie.
     Als de certificeringsinstantie werkt met Windows Server 2008 R2, moet u [de hotfix uit KB2483564 installeren](http://support.microsoft.com/kb/2483564/).
 
-- **NDES-server**: Op een apparaat met Windows Server 2012 R2 of hoger moet u de serverrol Registratieservice voor netwerkapparaten (NDES) instellen. Intune biedt geen ondersteuning voor het gebruik van NDES op een server waarop ook de CA voor ondernemingen wordt uitgevoerd. Zie [Richtlijnen voor Registratieservice voor netwerkapparaten](http://technet.microsoft.com/library/hh831498.aspx) voor instructies over hoe u Windows Server 2012 R2 configureert om als host voor NDES te dienen.
+- **NDES-server**: Op een apparaat met Windows Server 2012 R2 of hoger moet u de serverrol Registratieservice voor netwerkapparaten (NDES) instellen. Intune biedt geen ondersteuning voor het gebruik van NDES op een server waarop ook de CA voor ondernemingen wordt uitgevoerd. Zie [Richtlijnen voor Registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/hh831498.aspx) voor instructies over hoe u Windows Server 2012 R2 configureert om als host voor NDES te dienen.
 De NDES-server moet met een domein in hetzelfde forest als de Enterprise-CA worden gekoppeld. Meer informatie over het implementeren van de NDES-server in een afzonderlijke forest, een geïsoleerd netwerk of een intern domein vindt u in [Een beleidsmodule gebruiken met de registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/dn473016.aspx). Het is niet mogelijk om een NDES-server te gebruiken die al met een andere MDM wordt gebruikt.
 
 - **Microsoft Intune Certificate Connector**: In de Intune-portal gaat u naar **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen** en volgt u de *stappen om de connector te installeren voor SCEP*. Gebruik de downloadkoppeling om het downloaden van het installatieprogramma voor de certificaatconnector **NDESConnectorSetup.exe** te starten.  Voer dit installatieprogramma uit op de server met de NDES-rol.  
@@ -507,7 +507,8 @@ Overweeg het volgende voordat u certificaatprofielen aan groepen toewijst:
 - Hoewel u elk profiel afzonderlijk toewijst, moet u ook het vertrouwde basis-CA- en het SCEP- of PKCS-profiel toewijzen. Anders mislukt het SCEP- of PKCS-certificaatbeleid.
 
     > [!NOTE]
-    > In iOS worden als het goed is meerdere exemplaren van het certificaat weergegeven in het beheerprofiel als u meerdere resourceprofielen hebt geïmplementeerd die hetzelfde certificaatprofiel gebruiken.
+    > Als op iOS-apparaten een SCEP-certificaatprofiel aan een extra profiel, zoals een Wi-Fi- of VPN-profiel, is gekoppeld, ontvangt het apparaat een certificaat voor al deze extra profielen. Hierdoor ontvangt het iOS-apparaat meerdere certificaten na de SCEP-certificaataanvraag.  
+
 - Als u co-beheer gebruikt voor Intune en Configuration Manager, stelt u in Configuration Manager de [schuifregelaar workload](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) voor *Resource-toegangsbeleid* in op **Intune** of **Testfase van Intune**. Met deze instelling is het toegestaan dat Windows 10-clients het proces starten om het certificaat aan te vragen.  
 
 Zie [Apparaatprofielen toewijzen](device-profile-assign.md) voor informatie over het toewijzen van apparaatprofielen.
