@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7265eb7b4679d72fa6ab348c17f9f4f7508482e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f6e73b784f0e938058dcb9d6001082f86ac800ff
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836420"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545666"
 ---
 # <a name="your-computer-is-already-enrolled"></a>Uw computer is al geregistreerd
 
@@ -31,11 +31,11 @@ Als u een foutbericht ontvangt dat de computer al is geregistreerd, is de comput
 
 De computer koppelen:
 
-1.  Kies **Start** op de computer die u wilt koppelen aan uw account en kies vervolgens **Microsoft Intune Center**.
+1. Kies **Start** op de computer die u wilt koppelen aan uw account en kies vervolgens **Microsoft Intune Center**.
 
-2.  Open de bedrijfsportal.
+2. Open de bedrijfsportal.
 
-3.  Volg de aanwijzingen om de computer te koppelen aan uw gebruikersaccount.
+3. Volg de aanwijzingen om de computer te koppelen aan uw gebruikersaccount.
 
 Als u de registratie van uw apparaat ongedaan wilt maken, volgt u de instructies voor het type apparaat dat u hebt: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) of [Windows](unenroll-your-device-from-intune-windows.md).
 

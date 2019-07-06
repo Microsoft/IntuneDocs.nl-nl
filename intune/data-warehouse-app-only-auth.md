@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: f87256580ce3a0e31ef86f15244f49046d9dd35e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454035"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530245"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune Datawarehouse-verificatie enkel voor toepassing
 
@@ -41,18 +41,18 @@ Het volgende proces maakt gebruik van een persoonlijke methode om een app-sleute
 
 In deze sectie geeft u informatie over de web-app waarnaar u in Intune wilt verwijzen. Een web-app is een client-/servertoepassing. De server levert de web-app, waaronder de gebruikersinterface, inhoud en functionaliteit. Dit type app wordt afzonderlijk onderhouden op internet. U gebruikt Intune om de web-app toegang te geven tot Intune. De gegevensstroom wordt geïnitieerd door de web-app. 
 
-1.  Meld u aan bij [Azure Portal](https://portal.azure.com).
-2.  Zoek met behulp van het veld **Resources, services en documenten zoeken**, boven in Azure Portal, naar **Azure Active Directory**.
-3.  Selecteer **Azure Active Directory** in het vervolgkeuzemenu **Services**.
-4.  Selecteer **App-registraties**.
-5.  Klik op **Nieuwe toepassing registreren** om de blade **Maken** weer te geven.
-6.  Voeg op de blade **Maken** de app-details toe:
+1. Meld u aan bij [Azure Portal](https://portal.azure.com).
+2. Zoek met behulp van het veld **Resources, services en documenten zoeken**, boven in Azure Portal, naar **Azure Active Directory**.
+3. Selecteer **Azure Active Directory** in het vervolgkeuzemenu **Services**.
+4. Selecteer **App-registraties**.
+5. Klik op **Nieuwe toepassing registreren** om de blade **Maken** weer te geven.
+6. Voeg op de blade **Maken** de app-details toe:
 
     - Een app-naam, bijvoorbeeld *Intune App-Only Auth*.
     - Het **Toepassingstype**. Kies **Web-app/API** om een app toe te voegen die een webtoepassing, een web-API of beide is.
     - De **Aanmeldings-URL** van de toepassing. Dit is de locatie waar gebruikers tijdens het verificatieproces automatisch naartoe navigeren. Ze moeten bewijzen dat ze zijn wie ze beweren te zijn. Bekijk [What is application access and single sign-on with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis) (wat is toepassingstoegang en eenmalige aanmelding met Azure Active Directory?) voor meer informatie.
 
-7.  Klik onderaan de blade **Maken** op **Maken**.
+7. Klik onderaan de blade **Maken** op **Maken**.
 
     >[!NOTE] 
     > Kopieer de **Toepassings-id** uit de blade **Geregistreerde app** voor later gebruik.
@@ -61,12 +61,12 @@ In deze sectie geeft u informatie over de web-app waarnaar u in Intune wilt verw
 
 In deze sectie genereert Azure AD een sleutelwaarde voor uw app.
 
-1.  Selecteer op de blade **App-registraties** de nieuwe app om de app-blade weer te geven.
-2.  Selecteer **Instellingen** bovenaan de blade om de blade **Instellingen** weer te geven.
-3.  Selecteer **Sleutels** op de blade **Instellingen**.
-4.  Voeg de **Beschrijving** van de sleutel toe, evenals een periode in **Geldig tot** en een **Waarde** voor de sleutel.
-5.  Klik op **Opslaan** om de sleutels van de toepassing op te slaan en bij te werken.
-6.  U moet de gegenereerde sleutelwaarde (base64-gecodeerd) kopiëren.
+1. Selecteer op de blade **App-registraties** de nieuwe app om de app-blade weer te geven.
+2. Selecteer **Instellingen** bovenaan de blade om de blade **Instellingen** weer te geven.
+3. Selecteer **Sleutels** op de blade **Instellingen**.
+4. Voeg de **Beschrijving** van de sleutel toe, evenals een periode in **Geldig tot** en een **Waarde** voor de sleutel.
+5. Klik op **Opslaan** om de sleutels van de toepassing op te slaan en bij te werken.
+6. U moet de gegenereerde sleutelwaarde (base64-gecodeerd) kopiëren.
 
     >[!NOTE] 
     > De sleutelwaarde verdwijnt nadat u de blade **Sleutels** verlaat. U kunt de sleutel niet later ophalen uit deze blade. Kopieer de sleutel voor later gebruik.
@@ -75,28 +75,28 @@ In deze sectie genereert Azure AD een sleutelwaarde voor uw app.
 
 In deze sectie verleent u machtigingen aan de toepassingen.
 
-1.  Selecteer **Vereiste machtigingen** op de blade **Instellingen**.
-2.  Klik op **Toevoegen**.
-3.  Selecteer **Een API toevoegen** om de blade **Een API selecteren** weer te geven.
-4.  Selecteer **Microsoft Intune API (MicrosoftIntuneAPI)** en klik vervolgens op **Selecteren** op de blade **Een API selecteren**. De stap **Machtigingen selecteren** wordt geselecteerd en de blade **Toegang inschakelen** wordt weergegeven.
-5.  Kies de optie **Datawarehouse-gegevens ophalen uit Microsoft Intune** in de sectie **Toepassingsmachtigingen**.
-6.  Klik op **Selecteer** op de blade **Toegang inschakelen**.
-7.  Klik op **Gereed** op de blade **API-toegang toevoegen**.
-8.  Klik op **Machtigingen verlenen** op de blade **Vereiste machtigingen** en klik op **Ja** wanneer u wordt gevraagd om de bestaande machtigingen die deze toepassing al heeft, bij te werken.
+1. Selecteer **Vereiste machtigingen** op de blade **Instellingen**.
+2. Klik op **Toevoegen**.
+3. Selecteer **Een API toevoegen** om de blade **Een API selecteren** weer te geven.
+4. Selecteer **Microsoft Intune API (MicrosoftIntuneAPI)** en klik vervolgens op **Selecteren** op de blade **Een API selecteren**. De stap **Machtigingen selecteren** wordt geselecteerd en de blade **Toegang inschakelen** wordt weergegeven.
+5. Kies de optie **Datawarehouse-gegevens ophalen uit Microsoft Intune** in de sectie **Toepassingsmachtigingen**.
+6. Klik op **Selecteer** op de blade **Toegang inschakelen**.
+7. Klik op **Gereed** op de blade **API-toegang toevoegen**.
+8. Klik op **Machtigingen verlenen** op de blade **Vereiste machtigingen** en klik op **Ja** wanneer u wordt gevraagd om de bestaande machtigingen die deze toepassing al heeft, bij te werken.
 
 ## <a name="generate-token"></a>Token genereren
 
 Maak in Visual Studio een Console-app-project (.NET Framework) dat het .NET Framework ondersteunt en C# als codetaal gebruikt.
 
-1.  Selecteer **Bestand** > **Nieuw** > **Project** om het dialoogvenster **Nieuw project** weer te geven.
-2.  Selecteer aan de linkerkant **Visual C#** om alle .NET Framework-projecten weer te geven.
-3.  Selecteer **Console-app (.NET Framework)** , voeg een naam voor de app toe en klik vervolgens op **OK** om de app te maken.
-4.  Selecteer **Program.cs** in **Solution Explorer** om de code weer te geven.
-5.  Voeg in Solution Explorer een verwijzing naar de assembly `System.Configuration` toe.
-6.  Selecteer in het pop-upmenu **Toevoegen** > **Nieuw item**. Het dialoogvenster **Nieuw item toevoegen** wordt weergegeven.
-7.  Selecteer aan de linkerkant **Code** onder **Visual C#** .
-8.  Selecteer **Klasse**, wijzig de naam van de klasse in *IntuneDataWarehouseClass.cs* en klik op **Toevoegen**.
-9.  Voeg de volgende code in in de methode <code>Main</code>:
+1. Selecteer **Bestand** > **Nieuw** > **Project** om het dialoogvenster **Nieuw project** weer te geven.
+2. Selecteer aan de linkerkant **Visual C#** om alle .NET Framework-projecten weer te geven.
+3. Selecteer **Console-app (.NET Framework)** , voeg een naam voor de app toe en klik vervolgens op **OK** om de app te maken.
+4. Selecteer **Program.cs** in **Solution Explorer** om de code weer te geven.
+5. Voeg in Solution Explorer een verwijzing naar de assembly `System.Configuration` toe.
+6. Selecteer in het pop-upmenu **Toevoegen** > **Nieuw item**. Het dialoogvenster **Nieuw item toevoegen** wordt weergegeven.
+7. Selecteer aan de linkerkant **Code** onder **Visual C#** .
+8. Selecteer **Klasse**, wijzig de naam van de klasse in *IntuneDataWarehouseClass.cs* en klik op **Toevoegen**.
+9. Voeg de volgende code in in de methode <code>Main</code>:
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();

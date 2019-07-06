@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 122a7eef56f2850fced164a37b518f650ed2ecdf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 38e24bff110cea7d7a565ca00fc0e3e13e37744f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045861"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530758"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune-datawarehouse-API-eindpunt
 
@@ -69,8 +69,8 @@ De huidige versie ondersteunt de volgende OData-queryparameters: `$filter`, `$se
 
 `DateKey`-bereikfilters kunnen worden gebruikt voor het beperken van de hoeveelheid te downloaden gegevens voor enkele verzamelingen met `dateKey` als een sleuteleigenschap. Het `DateKey`-filter kan worden gebruikt voor het optimaliseren van serviceprestaties door de volgende `$filter`-queryparameter op te geven:
 
-1.  `DateKey` alleen in de `$filter`, waarbij de `lt/le/eq/ge/gt`-operators worden ondersteund en worden gekoppeld aan de logische operator `and`, waar ze kunnen worden toegewezen aan een begindatum en/of einddatum.
-2.  `maxhistorydays` wordt opgegeven als aangepaste query.<br>
+1. `DateKey` alleen in de `$filter`, waarbij de `lt/le/eq/ge/gt`-operators worden ondersteund en worden gekoppeld aan de logische operator `and`, waar ze kunnen worden toegewezen aan een begindatum en/of einddatum.
+2. `maxhistorydays` wordt opgegeven als aangepaste query.<br>
 
 ## <a name="filter-examples"></a>Voorbeelden van filters
 

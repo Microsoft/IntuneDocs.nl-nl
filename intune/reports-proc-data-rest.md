@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 733ac8eee551a3ddba7a5219827c09357659a06e
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 9fd99c0b42316a4425828cfa875f12d75dd86489
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412713"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558550"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Gegevens ophalen uit de Intune-datawarehouse-API met een REST-client
 
@@ -43,10 +43,10 @@ Maak een systeemeigen app in Azure. Deze systeemeigen app is de client-app. De c
 1. Meld u aan bij de Azure-portal voor uw tenant. Kies **Azure Active Directory** > **App-registraties** om het deelvenster **App-registraties** te openen.
 2. Selecteer **Nieuwe app-registratie**.
 3. Typ de app-gegevens.
-    1.  Typ een beschrijvende naam, zoals Intune-datawarehouseclient voor de **Naam**.
-    2.  Selecteer **Systeemeigen** als het **Toepassingstype**.
-    3.  Typ een URL voor de **Aanmeldings-URL**. De aanmeldings-URL is afhankelijk van het specifieke scenario. Typ echter `https://www.getpostman.com/oauth2/callback` als u Postman wilt gebruiken. U gebruikt tijdens het verifiëren via de Azure AD de aanroep voor clientverificatie.
-4.  Selecteer **Maken**.
+    1. Typ een beschrijvende naam, zoals Intune-datawarehouseclient voor de **Naam**.
+    2. Selecteer **Systeemeigen** als het **Toepassingstype**.
+    3. Typ een URL voor de **Aanmeldings-URL**. De aanmeldings-URL is afhankelijk van het specifieke scenario. Typ echter `https://www.getpostman.com/oauth2/callback` als u Postman wilt gebruiken. U gebruikt tijdens het verifiëren via de Azure AD de aanroep voor clientverificatie.
+4. Selecteer **Maken**.
 
      ![Client-app Intune-datawarehouse](./media/reports-get_rest_data_client_overview.png)
 
@@ -56,21 +56,21 @@ Maak een systeemeigen app in Azure. Deze systeemeigen app is de client-app. De c
 
 U hebt nu een app gedefinieerd in Azure. Verleen via de systeemeigen app toegang tot de Microsoft Intune-API.
 
-1.  Selecteer de systeemeigen app. U hebt de app een naam gegeven, zoals **Intune-datawarehouseclient**.
-2.  Selecteer **Vereiste machtigingen** in het deelvenster **Instellingen**
-3.  Selecteer **Toevoegen** in het deelvenster **Vereiste machtigingen**.
-4.  Selecteer **Een API selecteren**.
-5.  Zoek de naam van de webtoepassing. Deze heet **Microsoft Intune API**.
-6.  Selecteer de app in de lijst.
-7.  Selecteer **Selecteren**.
-8.  Schakel het selectievakje **Gedelegeerde machtigingen** in om **Datawarehouse-gegevens ophalen uit Microsoft Intune** toe te voegen.
+1. Selecteer de systeemeigen app. U hebt de app een naam gegeven, zoals **Intune-datawarehouseclient**.
+2. Selecteer **Vereiste machtigingen** in het deelvenster **Instellingen**
+3. Selecteer **Toevoegen** in het deelvenster **Vereiste machtigingen**.
+4. Selecteer **Een API selecteren**.
+5. Zoek de naam van de webtoepassing. Deze heet **Microsoft Intune API**.
+6. Selecteer de app in de lijst.
+7. Selecteer **Selecteren**.
+8. Schakel het selectievakje **Gedelegeerde machtigingen** in om **Datawarehouse-gegevens ophalen uit Microsoft Intune** toe te voegen.
 
     ![Toegang inschakelen - Microsoft Intune API](./media/reports-get_rest_data_client_access.png)
 
-9.  Selecteer **Selecteren**.
-10.  Selecteer **Voltooid**.
-11.  Selecteer eventueel **Machtigingen verlenen** in het deelvenster Vereiste machtigingen. Er wordt nu toegang verleend aan alle accounts in de huidige map. Zo wordt voorkomen dat het dialoogvenster voor toestemming wordt weergegeven voor elke gebruiker in de tenant. Raadpleeg [Toepassingen integreren met Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) voor meer informatie.
-12.  Selecteer **Ja**.
+9. Selecteer **Selecteren**.
+10. Selecteer **Voltooid**.
+11. Selecteer eventueel **Machtigingen verlenen** in het deelvenster Vereiste machtigingen. Er wordt nu toegang verleend aan alle accounts in de huidige map. Zo wordt voorkomen dat het dialoogvenster voor toestemming wordt weergegeven voor elke gebruiker in de tenant. Raadpleeg [Toepassingen integreren met Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) voor meer informatie.
+12. Selecteer **Ja**.
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>Gegevens van de Microsoft Intune-API ophalen met Postman
 
@@ -110,19 +110,19 @@ Om een nieuw toegangstoken voor Postman te verkrijgen, moet u de autorisatie-URL
 
 #### <a name="add-the-information-used-to-request-the-token"></a>Voeg de informatie toe die werd gebruikt om het token aan te vragen.
 
-1.  Download Postman als u deze nog niet hebt geïnstalleerd. U kunt Postman downloaden via [www.getpostman](https://www.getpostman.com).
-2.  Open Postman. Kies de HTTP-bewerking **GET**.
-3.  Plak de URL van het eindpunt in het adres. Het resultaat ziet er ongeveer als volgt uit:  
+1. Download Postman als u deze nog niet hebt geïnstalleerd. U kunt Postman downloaden via [www.getpostman](https://www.getpostman.com).
+2. Open Postman. Kies de HTTP-bewerking **GET**.
+3. Plak de URL van het eindpunt in het adres. Het resultaat ziet er ongeveer als volgt uit:  
 
     `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
-4.  Kies het tabblad **Autorisatie** en selecteer **OAuth 2.0** in de lijst **Type**.
-5.  Selecteer **Nieuw toegangstoken ophalen**.
-6.  Controleer of u de callback-URL al aan uw app hebt toegevoegd in Azure. De callback-URL is `https://www.getpostman.com/oauth2/callback`.
-7.  Typ Drager als **Tokennaam**.
-8.  Voeg de **Auth.-URL** toe. Het resultaat ziet er ongeveer als volgt uit:  
+4. Kies het tabblad **Autorisatie** en selecteer **OAuth 2.0** in de lijst **Type**.
+5. Selecteer **Nieuw toegangstoken ophalen**.
+6. Controleer of u de callback-URL al aan uw app hebt toegevoegd in Azure. De callback-URL is `https://www.getpostman.com/oauth2/callback`.
+7. Typ Drager als **Tokennaam**.
+8. Voeg de **Auth.-URL** toe. Het resultaat ziet er ongeveer als volgt uit:  
 
     `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/`
-9.  Voeg de **URL van toegangstoken** toe. Het resultaat ziet er ongeveer als volgt uit:  
+9. Voeg de **URL van toegangstoken** toe. Het resultaat ziet er ongeveer als volgt uit:  
 
      `https://login.microsoftonline.com/common/oauth2/token`
 
@@ -141,8 +141,8 @@ Om een nieuw toegangstoken voor Postman te verkrijgen, moet u de autorisatie-URL
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>De aanroep naar het eindpunt verzenden met Postman
 
-1.  Selecteer **Verzenden**.
-2.  De geretourneerde gegevens worden in de hoofdtekst van het antwoord van Postman weergegeven.
+1. Selecteer **Verzenden**.
+2. De geretourneerde gegevens worden in de hoofdtekst van het antwoord van Postman weergegeven.
 
     ![Status van de Postman-client is gelijk aan 200 OK](./media/reports-postman_200OK.png)
 
@@ -155,7 +155,7 @@ Het volgende voorbeeld bevat een eenvoudige REST-client. De code gebruikt de kla
 
 1. Open **Microsoft Visual Studio**.
 2. Kies **Bestand** > **Nieuw project**. Vouw **Visual C#** uit en kies **Console-app (.Net Framework)** .
-3. Noem het project ` IntuneDataWarehouseSamples`, blader naar de locatie waar u het project wilt opslaan en selecteer vervolgens **OK**.
+3. Noem het project `IntuneDataWarehouseSamples`, blader naar de locatie waar u het project wilt opslaan en selecteer vervolgens **OK**.
 4. Klik met de rechtermuisknop op de naam van de oplossing in Solution Explorer en selecteer vervolgens **NuGet-pakketten beheren voor oplossing**. Selecteer **Bladeren** en typ vervolgens `Microsoft.IdentityModel.Clients.ActiveDirectory` in het zoekvak.
 5. Kies het pakket, selecteer het project **IntuneDataWarehouseSamples** onder Pakketten beheren voor uw oplossing en selecteer vervolgens **Installeren**.
 6. Selecteer **Ik ga akkoord** om de licentie van het NuGet-pakket te accepteren.

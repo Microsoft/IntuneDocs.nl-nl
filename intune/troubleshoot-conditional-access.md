@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e8ebc708f76ed1f55f512edda75206d3ed5890a0
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043916"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530732"
 ---
 # <a name="troubleshoot-conditional-access"></a>Problemen met voorwaardelijke toegang oplossen
 
@@ -35,8 +35,8 @@ Er moet aan de volgende vereisten zijn voldaan voordat voorwaardelijke toegang w
 - Het apparaat moet worden ingeschreven en beheerd door Intune.
 - Zowel de gebruiker als het apparaat moeten voldoen aan het toegewezen nalevingsbeleid van Intune.
 - Aan de gebruiker moet standaard een apparaatnalevingsbeleid zijn toegewezen. Dit kan afhankelijk zijn van de manier waarop de instelling **Apparaten waaraan geen nalevingsbeleid is toegewezen markeren als** onder **Apparaatnaleving** > **Instellingen nalevingsbeleid** in de Intune-beheerportal is geconfigureerd.
--   EAS (Exchange ActiveSync) moet worden geactiveerd op het apparaat als de gebruiker de systeemeigen e-mailclient van het apparaat gebruikt in plaats van Outlook. Dit gebeurt automatisch voor iOS-, Windows Phone- en Android-apparaten.
--   Uw Intune Exchange-connector moet juist worden geconfigureerd. Zie [Het oplossen van problemen met de Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) voor meer informatie.
+- EAS (Exchange ActiveSync) moet worden geactiveerd op het apparaat als de gebruiker de systeemeigen e-mailclient van het apparaat gebruikt in plaats van Outlook. Dit gebeurt automatisch voor iOS-, Windows Phone- en Android-apparaten.
+- Uw Intune Exchange-connector moet juist worden geconfigureerd. Zie [Het oplossen van problemen met de Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) voor meer informatie.
 
 Deze voorwaarden voor elk apparaat zijn terug te vinden in Azure Portal en in het inventarisrapport van het apparaat.
 

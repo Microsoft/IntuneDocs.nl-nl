@@ -18,51 +18,51 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c92489b00bd8d504b89fe0cc590b1d1b27bb5dde
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b52fdb40f23e1756edb3c656c67d3d9d8c39ae51
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55833754"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546483"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-macos-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw macOS-apparaat bij Intune inschrijft?
 
 Wanneer u de bedrijfsportal-app installeert en uw macOS-apparaat bij Intune inschrijft, kunt u de bedrijfsportal-app gebruiken voor het volgende:
 
--   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden.
+- Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden.
 
--   Bedrijfsapps ophalen via de bedrijfsportal.
+- Bedrijfsapps ophalen via de bedrijfsportal.
 
--   De standaardinstellingen van uw telefoon op afstand herstellen als u deze verliest of als deze wordt gestolen.
+- De standaardinstellingen van uw telefoon op afstand herstellen als u deze verliest of als deze wordt gestolen.
 
--   Het e-mailaccount van uw bedrijf automatisch instellen.
+- Het e-mailaccount van uw bedrijf automatisch instellen.
 
 Wanneer u het apparaat inschrijft bij Intune, geeft u het ondersteuningsteam van het bedrijf toestemming om uw apparaat te beheren zodat de bedrijfsgegevens op het apparaat worden beschermd.
 
 Wanneer het apparaat is geregistreerd, kan het ondersteuningsteam van het bedrijf de volgende handelingen uitvoeren:
 
--   Het apparaat opnieuw instellen op de standaardinstellingen van de fabrikant, als het apparaat is zoekgeraakt of gestolen.
+- Het apparaat opnieuw instellen op de standaardinstellingen van de fabrikant, als het apparaat is zoekgeraakt of gestolen.
 
--   Alle geïnstalleerde bedrijfsgegevens en bedrijfsapps verwijderen. Uw persoonlijke instellingen en gegevens worden niet verwijderd.
+- Alle geïnstalleerde bedrijfsgegevens en bedrijfsapps verwijderen. Uw persoonlijke instellingen en gegevens worden niet verwijderd.
 
--   U verplichten om een wachtwoord of pincode voor het apparaat in te stellen.
+- U verplichten om een wachtwoord of pincode voor het apparaat in te stellen.
 
--   Vereisen dat u voorwaarden accepteert.
+- Vereisen dat u voorwaarden accepteert.
 
--   De camera op het apparaat uitschakelen om te voorkomen dat u foto's van gevoelige bedrijfsgegevens maakt.
+- De camera op het apparaat uitschakelen om te voorkomen dat u foto's van gevoelige bedrijfsgegevens maakt.
 
--   Browsen op het web op het apparaat in- of uitschakelen.
+- Browsen op het web op het apparaat in- of uitschakelen.
 
--   Back-up maken naar iCloud in- of uitschakelen.
+- Back-up maken naar iCloud in- of uitschakelen.
 
--   Synchronisatie van documenten naar iCloud in- of uitschakelen.
+- Synchronisatie van documenten naar iCloud in- of uitschakelen.
 
--   Fotostreams naar iCloud in- of uitschakelen.
+- Fotostreams naar iCloud in- of uitschakelen.
 
--   Dataroaming op het apparaat in- of uitschakelen. Als dataroaming is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
+- Dataroaming op het apparaat in- of uitschakelen. Als dataroaming is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
 
--   Spraakroaming op het apparaat in- of uitschakelen. Als spraakroaming is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
+- Spraakroaming op het apparaat in- of uitschakelen. Als spraakroaming is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
 
--   Automatische bestandssynchronisatie terwijl de roamingmodus op het apparaat is ingeschakeld, in- of uitschakelen. Als automatische bestandssynchronisatie is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
+- Automatische bestandssynchronisatie terwijl de roamingmodus op het apparaat is ingeschakeld, in- of uitschakelen. Als automatische bestandssynchronisatie is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
 
 Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

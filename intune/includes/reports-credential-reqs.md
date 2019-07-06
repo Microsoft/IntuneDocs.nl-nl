@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 015e50d24149a6b6242eda86d5f3d62489e9955d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 76706fb39c3c5a69cba4fbf3f57c0b58d92e4a27
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511326"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559990"
 ---
 <!-- This include is part of the Intune Data Warehouse documentation. -->
 
@@ -14,8 +14,8 @@ Verificatie en autorisatie zijn gebaseerd op Azure AD-referenties en Intune RBAC
 
 De vereisten voor toegang tot het Intune-datawarehouse (inclusief de API) zijn:
 
-  -  Gebruiker moet een van de volgende zijn:
-      -  Globale Azure AD-beheerder
-      -  Een Intune-servicebeheerder
-      -  Gebruiker met op rollen gebaseerde toegang tot de **Intune-datawarehouse**-resource
-      -  Verificatie zonder gebruiker via [verificatie via alleen de toepassing](../data-warehouse-app-only-auth.md) 
+  - Gebruiker moet een van de volgende zijn:
+      - Globale Azure AD-beheerder
+      - Een Intune-servicebeheerder
+      - Gebruiker met op rollen gebaseerde toegang tot de **Intune-datawarehouse**-resource
+      - Verificatie zonder gebruiker via [verificatie via alleen de toepassing](../data-warehouse-app-only-auth.md) 

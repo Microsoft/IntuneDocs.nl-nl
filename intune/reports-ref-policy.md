@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23476383abfddabffc411afa286c97b30ef04439
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: dc7b7cdc4388051761eafac322171e4c30075923
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040970"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549188"
 ---
 # <a name="reference-for-policy-entities"></a>Naslag voor beleidsentiteiten
 
 De categorie **Beleid** bevat entiteiten voor mobiele apparaten waarmee gegevens worden bijgehouden, zoals:
 
-  -  Inventarisatie van apparaatconfiguratieprofielen, app-configuratieprofielen en nalevingsbeleid  
-  -  Aantal apparaten met de status Geslaagd, In behandeling, Mislukt of Fout per dag  
-  -  Aantal gebruikers met de status Geslaagd, In behandeling, Mislukt of Fout per dag  
-  -  Cumulatief aantal apparaten met de status Geslaagd, In behandeling, Mislukt of Fout  
+  - Inventarisatie van apparaatconfiguratieprofielen, app-configuratieprofielen en nalevingsbeleid  
+  - Aantal apparaten met de status Geslaagd, In behandeling, Mislukt of Fout per dag  
+  - Aantal gebruikers met de status Geslaagd, In behandeling, Mislukt of Fout per dag  
+  - Cumulatief aantal apparaten met de status Geslaagd, In behandeling, Mislukt of Fout  
 
 ## <a name="policy"></a>Beleid
 

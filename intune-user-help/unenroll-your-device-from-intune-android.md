@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fafd9c92a51c8ef258d151a3c19c271fdc45f4c2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b68ea31a6c5d902e66c0eda8127e0f68383910f8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835857"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529127"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Uw Android-apparaat uitschrijven bij het beheer  
 
@@ -33,6 +33,9 @@ Verwijder een geregistreerd Android-apparaat zodat het niet meer wordt beheerd d
 * Het apparaat wordt niet meer weergegeven in de Bedrijfsportal.
 * U kunt geen apps meer installeren vanuit de Bedrijfsportal.
 * Instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte), zijn niet meer van toepassing.  
+
+> [!NOTE]
+> U kan de registratie ongedaan maken of uw apparaten in Bedrijfseigendom apparaat verwijderen uit de Microsoft Intune-app. Het apparaat is geregistreerd tijdens de initiële installatie en moet worden geregistreerd voor toegang tot resources van uw organisatie.  
 
 1. Ga in de Bedrijfsportal naar de rechterbovenhoek en tik op de drie verticale puntjes. Het actiemenu wordt geopend.
 
@@ -48,8 +51,8 @@ Verwijder een geregistreerd Android-apparaat zodat het niet meer wordt beheerd d
 
 U kunt als volgt alle gegevens verwijderen die de bedrijfsportal-app voor Android op uw apparaat opslaat:
 
--   Wis de appgegevens door op **Toepassingen** > **[*naam van de app*]** > **Gegevens wissen** te tikken.
--   Verwijder de volgende map: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
+- Wis de appgegevens door op **Toepassingen** > **[*naam van de app*]**  > **Gegevens wissen** te tikken.
+- Verwijder de volgende map: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
 
 ## <a name="uninstall-the-company-portal-app"></a>De Bedrijfsportal-app verwijderen  
 Bedrijfsportal is een app voor apparaatbeheer. Deze kan niet worden verwijderd voordat u uw apparaat bij het beheer hebt uitgeschreven. Nadat u dit hebt gedaan, tikt u op het pictogram van de Bedrijfsportal-app en houdt u dit ingedrukt totdat **Verwijderen** wordt weergegeven. Tik op **Verwijderen** om de app van uw apparaat te verwijderen.  

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe7ffa6ff024c719fc24209947b87b07ea2b6791
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: f7a4be4deddae2f2983996a6880232463924c948
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412692"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558513"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Problemen met app-installatie oplossen
 
@@ -50,6 +50,18 @@ De details van de app-installatieproblemen geven het probleem aan. U kunt deze d
 
 > [!Note]  
 > U kunt het deelvenster **Probleemoplossing** ook openen door in uw browser naar het volgende adres te gaan: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
+
+## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>Gebruikersgroep gericht app-installatie bereiken apparaat niet
+De volgende acties moeten worden beschouwd als er problemen met het installeren van apps:
+- Als de app niet wordt weergegeven in de bedrijfsportal-App, controleert u of de app is geïmplementeerd met **beschikbaar** intentie en dat de gebruiker de bedrijfsportal-App verbinding met het apparaat dat wordt ondersteund door de app.
+- Voor Windows BYOD-apparaten moet de gebruiker een werkaccount toevoegen aan het apparaat.
+- Controleer of de gebruiker dan de limiet van AAD-apparaat is:
+  1. Navigeer naar [Azure Active Directory-apparaatinstellingen](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId).
+  2. Noteer de waarde voor **maximum aantal apparaten per gebruiker**.
+  3. Navigeer naar [Azure Active Directory-gebruikers](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
+  4. Selecteer de betrokken gebruiker en klik op **apparaten**.
+  5. Als de gebruiker is gedurende de ingestelde limiet Verwijder verlopen records die niet langer nodig zijn.
+- Zorg ervoor dat de gebruiker wordt vermeld als voor iOS DEP-apparaten **ingeschreven door gebruiker** in de blade overzicht van de Intune-apparaat. Als u deze NA ziet, moet u vervolgens een beleid voor de configuratie voor de Intune-bedrijfsportal-App implementeren. Zie voor meer informatie, [configureren van de bedrijfsportal-app](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Problemen met de installatie van Win32-app oplossen
 

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: f0a8b0b633f64a2ed6e3e14d5d884df80342067a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196922"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545466"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Een apparaat met een Android-werkprofiel inschrijven
 
@@ -33,7 +33,7 @@ Schrijf uw Android-apparaat in om toegang te krijgen tot zakelijke e-mail, apps 
 
 ## <a name="create-work-profile-and-enroll-device"></a>Een werkprofiel maken en een apparaat inschrijven
 
-1.  Tik in het **aanmeldingsscherm** van de Android-bedrijfsportal op **Aanmelden** en meld u vervolgens aan met uw werk- of schoolaccount. Als u de gratis app nog niet hebt geïnstalleerd, downloadt en installeert u deze vanaf [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1. Tik in het **aanmeldingsscherm** van de Android-bedrijfsportal op **Aanmelden** en meld u vervolgens aan met uw werk- of schoolaccount. Als u de gratis app nog niet hebt geïnstalleerd, downloadt en installeert u deze vanaf [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
     ![Aanmeldingsscherm van de Android-bedrijfsportal-app](./media/and-enroll-0-welcome-screen.png)
 
@@ -41,15 +41,15 @@ Schrijf uw Android-apparaat in om toegang te krijgen tot zakelijke e-mail, apps 
 
     ![Het scherm Instellen van bedrijfstoegang](/intune/media/android_cp_enroll_01_1709_new.png)
 
-3.  Lees op het scherm **Waarom een werkprofiel maken?** wat u kunt doen en tik vervolgens op **DOORGAAN**.
+3. Lees op het scherm **Waarom een werkprofiel maken?** wat u kunt doen en tik vervolgens op **DOORGAAN**.
 
     ![Waarom een werkprofiel maken](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Bekijk een lijst met zaken die het ondersteuningsteam van het bedrijf wel en niet kan zien op het apparaat en tik op **DOORGAAN**.
+4. Bekijk een lijst met zaken die het ondersteuningsteam van het bedrijf wel en niet kan zien op het apparaat en tik op **DOORGAAN**.
 
     ![Wat het ondersteuningsteam van het bedrijf wel en niet kan zien op uw apparaat](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  Lees op het scherm **De volgende stap** wat er gebeurt tijdens het registreren en tik vervolgens op **REGISTREREN**.
+5. Lees op het scherm **De volgende stap** wat er gebeurt tijdens het registreren en tik vervolgens op **REGISTREREN**.
 
     ![Scherm De volgende stap](/intune/media/android_work_cp_enroll_03_after_1710.png)
 

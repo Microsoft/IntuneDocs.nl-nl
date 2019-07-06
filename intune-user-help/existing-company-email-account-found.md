@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a02a7b69245b9b6e7b8f62fdb9be8acb83d42981
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8326693717ac96a0e9d32617e7d7080d50206ac6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834752"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545415"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Er is een bestaand zakelijk e-mailaccount gevonden
 
@@ -34,7 +34,7 @@ Mogelijk had u al toegang met uw mobiele apparaat tot uw e-mailaccount van uw be
 
 Deze stappen zorgen ervoor dat uw apparaat voldoet aan de beveiligingsvereisten van uw bedrijf en dat uw e-mails veilig blijven.
 
-1.  Ga op uw apparaat naar **Instellingen** en zoek uw verbonden accounts. Op een iOS 11+ apparaat selecteert u bijvoorbeeld **Accounts en wachtwoorden**.
+1. Ga op uw apparaat naar **Instellingen** en zoek uw verbonden accounts. Op een iOS 11+ apparaat selecteert u bijvoorbeeld **Accounts en wachtwoorden**.
  
 2. Selecteer en verwijder het e-mailaccount van uw bedrijf.
 

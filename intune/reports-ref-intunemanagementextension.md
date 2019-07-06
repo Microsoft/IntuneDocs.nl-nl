@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebece46bac8ebee5cb3c6a573f0b09c4b308abe3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 571080f3d25753fdc423c45100b06377ecd426b5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040991"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549203"
 ---
 # <a name="reference-for-intune-management-extension"></a>Naslag voor Intune-beheeruitbreiding
 
 De categorie **IntuneManagementExtension** bevat entiteiten voor mobiele apparaten waarmee gegevens worden bijgehouden, zoals:
 
-  -  Versies van een IntuneManagementExtension
-  -  Installatiestatus van een IntuneManagementExtension
+  - Versies van een IntuneManagementExtension
+  - Installatiestatus van een IntuneManagementExtension
 
 ## <a name="intunemanagementextensionversion"></a>IntuneManagementExtensionVersion
 

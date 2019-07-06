@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f29e2d737dfd7bef709f239d6c8506c3bb746c
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: df0afecb006ef8837f888b3b9209d5892d90a228
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196887"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546368"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Inschrijving van een Windows-apparaat bij de Intune-bedrijfsportal  
 
@@ -61,17 +61,17 @@ De stappen voor inschrijving verschillen voor verschillende versies van Windows 
 
 4. Als uw versie  
 
-    *  __1607 of hoger__ is: schrijf het apparaat in via de route [**Instellingen** > **Account** > **Toegang tot werk of school**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
+    * __1607 of hoger__ is: schrijf het apparaat in via de route [**Instellingen** > **Account** > **Toegang tot werk of school**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
     * __1511 of lager__ is: schrijf het apparaat in via de route [**Instellingen** > **Account** > **Uw accounts**](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
-### <a name="windows-10-mobile-devices"></a>Windows 10 Mobile-apparaten       
+### <a name="windows-10-mobile-devices"></a>Windows 10 Mobile-apparaten
 
-1.  Ga naar __alle apps__ en selecteer de app __Instellingen__.  
-2.  Selecteer __Systeem__ > __Info__.      
-3.  Zoek onder __Apparaatgegevens__ de __versie__.  
+1. Ga naar __alle apps__ en selecteer de app __Instellingen__.
+2. Selecteer __Systeem__ > __Info__.
+3. Zoek onder __Apparaatgegevens__ de __versie__.  
 4. Als uw versie  
 
-    *  __1607 of hoger__ is: schrijf het apparaat in via de route [**Instellingen** > **Toegang tot werk of school**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
+    * __1607 of hoger__ is: schrijf het apparaat in via de route [**Instellingen** > **Toegang tot werk of school**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
     * __1511 of lager__ is: schrijf het apparaat in via de route [**Instellingen** > **Accounts**](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
 ## <a name="enroll-non-windows-10-devices"></a>Niet-Windows 10-apparaten inschrijven  

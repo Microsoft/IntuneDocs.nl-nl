@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58163425"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546808"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>De wachtwoordcode van uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
@@ -36,7 +36,7 @@ Als u een apparaat in bedrijfseigendom gebruikt, ziet u misschien niet de optie 
 
 ## <a name="reset-your-passcode"></a>Uw wachtwoordcode opnieuw instellen
 
-1.  Open de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) en selecteer de knop __Menu__ > __Apparaten__.  
+1. Open de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) en selecteer de knop __Menu__ > __Apparaten__.  
 
 2. Selecteer het apparaat waarvoor de wachtwoordcode opnieuw moet worden ingesteld.  
 
@@ -79,7 +79,7 @@ Deze sectie beschrijft het opnieuw instellen van de wachtwoordcode en het gedrag
 **iOS**: de bestaande wachtwoordcode wordt verwijderd en er wordt geen tijdelijke wachtwoordcode gemaakt. Als u de Touch ID-vingerafdrukscanner gebruikt voor het openen van uw apparaat of om aankopen te doen, moet u deze opnieuw instellen.  
 
 **Windows 10 Mobile**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers. Als deze is ingesteld, zal Windows Hello-gezichtsherkenning nog steeds met het apparaat werken.
-    
+
 **Windows Phone 8.1**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit cijfers.  
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  

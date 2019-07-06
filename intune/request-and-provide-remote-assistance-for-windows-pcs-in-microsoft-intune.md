@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a725ff5ba5a677a41fe2a89b999f1ae41b3b6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040910"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549139"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Hulp op afstand voor Windows-pc's aanvragen en bieden
 
@@ -79,13 +79,13 @@ Kies in het menu **Acties** van het venster **TeamViewer** de optie **Sessie be√
 ## <a name="remotely-restart-a-windows-pc"></a>Een Windows-pc op afstand opnieuw opstarten
 Wanneer u uw gebruikers helpt met problemen, is het mogelijk dat u af en toe de pc op afstand opnieuw moet opstarten. Gebruik de volgende stappen om een Windows-pc op afstand opnieuw op te starten.
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Groepen**&gt;**Alle apparaten** (of een andere groep die de pc bevat die u opnieuw wilt starten).
+1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Groepen**&gt;**Alle apparaten** (of een andere groep die de pc bevat die u opnieuw wilt starten).
 
-2.  Selecteer een of meer pc's en klik op **Externe taken**&gt;**Computer opnieuw opstarten**.
+2. Selecteer een of meer pc's en klik op **Externe taken**&gt;**Computer opnieuw opstarten**.
 
-3.  Als u de status van de taak wilt weergeven, klikt u op **Externe taken** in de rechterbenedenhoek van de pagina.
+3. Als u de status van de taak wilt weergeven, klikt u op **Externe taken** in de rechterbenedenhoek van de pagina.
 
-4.  In het dialoogvenster **Taakstatus** controleert u de huidige externe taken, de taakstatus, de apparaatnaam en eventuele gerapporteerde fouten.
+4. In het dialoogvenster **Taakstatus** controleert u de huidige externe taken, de taakstatus, de apparaatnaam en eventuele gerapporteerde fouten.
 
 ### <a name="see-also"></a>Zie tevens
 

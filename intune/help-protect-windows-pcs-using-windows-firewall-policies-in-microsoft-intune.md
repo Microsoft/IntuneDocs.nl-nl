@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403018"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572521"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune
 
@@ -48,14 +48,14 @@ U kunt met het Windows Firewall-beleid instellingen maken en implementeren waarm
 > [!IMPORTANT]
 > Als u Windows Firewall met Intune wilt beheren, moet u ervoor zorgen dat de volgende twee services zijn ingeschakeld op de computers die u beheert:
 >
-> -   Windows Firewall
-> -   IPsec Beleid Agent
+> - Windows Firewall
+> - IPsec Beleid Agent
 
 ## <a name="configure-a-windows-firewall-policy"></a>Windows Firewall-beleid configureren
 
-1.  Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) en kies**Beleid** &gt; **Beleid toevoegen**.
+1. Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) en kies**Beleid** &gt; **Beleid toevoegen**.
 
-2.  Configureer en implementeer een beleid voor **Windows Firewall-instellingen**. U kunt de aanbevolen instellingen gebruiken of de instellingen aanpassen. Als u meer informatie wilt over het maken en implementeren van beleid, raadpleegt u [Algemene beheertaken voor Windows-pc's met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+2. Configureer en implementeer een beleid voor **Windows Firewall-instellingen**. U kunt de aanbevolen instellingen gebruiken of de instellingen aanpassen. Als u meer informatie wilt over het maken en implementeren van beleid, raadpleegt u [Algemene beheertaken voor Windows-pc's met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     De volgende sectie biedt een overzicht van de waarden die u kunt configureren in het beleid, evenals de standaardwaarden die worden gebruikt als u het beleid niet aanpast.
 

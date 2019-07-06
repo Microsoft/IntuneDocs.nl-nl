@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196771"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545732"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Uw macOS-apparaten registreren bij Intune met de bedrijfsportal-app
 
@@ -63,7 +63,7 @@ Gebruik de volgende stappen om macOS-apparaten met OS X El Capitan 10.11 en hoge
     * Als u geen apparaten hebt, toont de banner **U hebt geen beheerde apparaten. Voeg dit apparaat toe door hier te tikken.** Klik op de banner als u uw apparaat wilt toevoegen.  
 
      ![Een schermafbeelding van de pagina Apparaten met een rood vierkant rond de banner-optie om aan te geven waar u moet klikken.](./media/CP-enroll-MACOS-1808.png)  
-5.  Voer onderstaande stap uit in overeenstemming met het bericht u momenteel in de bedrijfsportal ziet.  
+5. Voer onderstaande stap uit in overeenstemming met het bericht u momenteel in de bedrijfsportal ziet.  
     * Als u voor de eerste keer een apparaat toevoegt, wordt u gevraagd om de bedrijfsportal-app te downloaden naar uw apparaat. Klik op **Downloaden** om door te gaan.  
 
          ![Voorbeeldschermafbeelding van het scherm met de prompt om de bedrijfsportal-app voor macOS te downloaden. De gebruiker kan de volgende opties selecteren: klikken op de blauwe knop Downloaden linksonder de prompt, of op de grijze knop Annuleren rechtsonder.](./media/CP-enroll-download-macOS-1808.png)  

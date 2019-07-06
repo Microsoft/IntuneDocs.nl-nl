@@ -18,26 +18,26 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32dfb275e96ecf1d8c60f115881d7ceb0593a3b2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 73e9c42f69517d145c797b13ae9fa5aa779ebc5d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837425"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546516"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Wat gebeurt er als u de inschrijving van uw Android-apparaat bij Intune ongedaan maakt?
 
 Wanneer u de registratie van uw Android-apparaat bij Intune ongedaan maakt, gebeurt het volgende:
 
--   Het ondersteuningsteam van uw bedrijf beheert het apparaat niet meer.
+- Het ondersteuningsteam van uw bedrijf beheert het apparaat niet meer.
 
--   U hebt geen toegang meer tot bedrijfsgegevens en -bronnen.
+- U hebt geen toegang meer tot bedrijfsgegevens en -bronnen.
 
--   Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
+- Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
 
--   U kunt geen apps meer van de bedrijfsportal installeren.
+- U kunt geen apps meer van de bedrijfsportal installeren.
 
--   Instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte), zijn niet meer van toepassing.
+- Instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte), zijn niet meer van toepassing.
 
 Als uw apparaat zo is ingesteld dat hiervoor alleen zakelijke e-mail wordt opgehaald en u de inschrijving van uw apparaat ongedaan maakt, wordt uw apparaat niet meer in de bedrijfsportal weergegeven.
 

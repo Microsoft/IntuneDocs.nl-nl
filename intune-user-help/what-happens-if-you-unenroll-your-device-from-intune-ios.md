@@ -18,30 +18,30 @@ ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f6ae657361bea0ab89b8afa73976273fa000f4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4ba5705fa04d9eb28e74128228ca8a862f1cb772
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844238"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545683"
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>Wat gebeurt er als u de inschrijving van uw iOS- of macOS-apparaat bij Intune ongedaan maakt?
 
 Als u de inschrijving van uw iOS- of macOS-apparaat bij Intune ongedaan maakt:
 
--   Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
+- Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
 
--   U kunt geen apps meer van de bedrijfsportal installeren.
+- U kunt geen apps meer van de bedrijfsportal installeren.
 
--   Instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte), zijn niet meer van toepassing.
+- Instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte), zijn niet meer van toepassing.
 
--   Mogelijk hebt u vanaf het apparaat geen toegang meer tot een aantal bedrijfsresources, zoals bestandsshares of interne websites.
+- Mogelijk hebt u vanaf het apparaat geen toegang meer tot een aantal bedrijfsresources, zoals bestandsshares of interne websites.
 
--   U kunt geen bedrijfs-apps en bedrijfsgegevens meer op het apparaat gebruiken.
+- U kunt geen bedrijfs-apps en bedrijfsgegevens meer op het apparaat gebruiken.
 
--   Mogelijk kunt u geen verbinding meer maken met uw bedrijfsnetwerk via Wi-Fi of een virtueel particulier netwerk (VPN).
+- Mogelijk kunt u geen verbinding meer maken met uw bedrijfsnetwerk via Wi-Fi of een virtueel particulier netwerk (VPN).
 
--   Bedrijfse-mailprofielen worden verwijderd van het apparaat.
+- Bedrijfse-mailprofielen worden verwijderd van het apparaat.
 
 Zie [De registratie van het apparaat bij Intune ongedaan maken](unenroll-your-device-from-intune-ios.md) voor instructies om de registratie van uw apparaat ongedaan te maken.
 

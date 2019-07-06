@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3b9f69e745baffd21b55274e173bb75e8581525
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
-ms.translationtype: HT
+ms.openlocfilehash: 8fa5589f62900027b90659b8f570e7caa10b1cd8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418943"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549063"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>MDM-beveiligingsbasislijninstellingen voor Intune  
 
@@ -32,7 +32,7 @@ De meest recente versie van de basislijn is **MDM basisbeveiliging voor Spring 2
 Zie voor meer informatie over wat er gewijzigd in de meest recente versie van deze basislijn van de vorige versie, [wat er gewijzigd in de nieuwe sjabloon](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> In juni 2019, de Preview-versie MDM-basisbeveiliging is vervangen door de versie van de *MDM basisbeveiliging voor Spring 2019 Update (19 uur 1)* sjabloon, waarmee generaly beschikbaar (niet in de Preview-versie). Profielen die zijn gemaakt vóór de beschikbaarheid van de *MDM basisbeveiliging voor Spring 2019 Update (19 uur 1)* basislijn niet bijwerken om weer te geven de de instellingen en waarden die zich in de MDM-basisbeveiliging voor Spring 2019 Update () 19 uur 1) versie.  U kunt maar u kunt geen nieuwe profielen op basis van de preview-sjabloon maken, bewerken en echter ook doorgaan met profielen die u eerder hebt gemaakt en die zijn gebaseerd op de preview-sjabloon.   
+> In juni 2019, de Preview-versie MDM-basisbeveiliging is vervangen door de versie van de *MDM basisbeveiliging voor Spring 2019 Update (19 uur 1)* sjabloon, waarmee generaly beschikbaar (niet in de Preview-versie). Profielen die zijn gemaakt vóór de beschikbaarheid van de *MDM basisbeveiliging voor Spring 2019 Update (19 uur 1)* basislijn niet bijwerken om de instellingen en waarden die zich in de MDM-basisbeveiliging voor Spring 2019 Update (19 uur 1 weer te geven ) versie.  U kunt maar u kunt geen nieuwe profielen op basis van de preview-sjabloon maken, bewerken en echter ook doorgaan met profielen die u eerder hebt gemaakt en die zijn gebaseerd op de preview-sjabloon.   
   
 Zie voor meer informatie over het gebruik van basisbeveiliging met Intune, [security basislijnen gebruiken](security-baselines.md).  
 
@@ -57,7 +57,7 @@ Zie [Beleids-CSP - AppRuntime](https://docs.microsoft.com/windows/client-managem
 
 - **Optionele Microsoft-accounts voor Windows Store-apps**  
   Met deze beleidsinstelling kunt u regelen of Microsoft-accounts optioneel zijn voor Windows Store-apps waarvoor gebruikers een account nodig hebben om zich aan melden. Dit beleid heeft alleen invloed op Windows Store-apps die deze functie ondersteunen. Als u deze beleidsinstelling inschakelt, kunnen gebruikers zich aanmelden met een bedrijfsaccount bij Windows Store-apps waarvoor ze normaalgesproken een Microsoft-account nodig hebben om zich aan te melden. Als u deze beleidsinstelling uitschakelt of niet configureert, moeten gebruikers zich aanmelden met een Microsoft-account.  
-    [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067104)  
+  [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067104)  
   
   **Standaardinstelling**: ingeschakeld  
 
@@ -68,7 +68,7 @@ Zie [Beleids-CSP - ApplicationManagement](https://docs.microsoft.com/windows/cli
   Met deze beleidsinstelling kan gebruikers om installatieopties die gewoonlijk alleen beschikbaar voor systeembeheerders zijn te wijzigen. Als u deze beleidsinstelling inschakelt, zijn sommige van de beveiligingsfuncties van Windows Installer omzeild. U kunt hiermee installaties om uit te voeren die anders zouden worden afgebroken vanwege een beveiligingsfout. Als u deze beleidsinstelling niet configureert of uitschakelt, de beveiligingsfuncties van Windows Installer te voorkomen dat gebruikers wijzigen van opties voor de installatie normaal gesproken is gereserveerd voor systeembeheerders, zoals het opgeven van de map waarin bestanden worden geïnstalleerd. Als Windows-installatieprogramma detecteert dat een installatiepakket voor de gebruiker te wijzigen van een beveiligde optie is toegestaan, wordt de installatie gestopt en wordt een bericht weergegeven. Deze beveiligingsfuncties werken alleen als het installatieprogramma wordt uitgevoerd in een beveiligingscontext waarin het toegang tot mappen geweigerd voor de gebruiker heeft. Met deze beleidsinstelling is ontworpen voor minder beperkende omgevingen. Het kan worden gebruikt om fouten in een installatieprogramma dat verhindert dat de software wordt geïnstalleerd te omzeilen.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
-    **Standaardinstelling**: Ja
+  **Standaardinstelling**: Ja
 
 - **Blok-MSI-app-installaties met verhoogde bevoegdheden**  
   Deze beleidsinstelling geeft Windows Installer de opdracht om verhoogde bevoegdheden te gebruiken wanneer een programma op een systeem wordt geïnstalleerd.  
@@ -828,7 +828,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
   
 - **Java-machtigingen voor de vertrouwde zone in Internet Explorer**   
   Met deze beleidsinstelling kunt u machtigingen voor Java-applets beheren. Als u deze beleidsinstelling inschakelt, kunt u opties kiezen in de vervolgkeuzelijst. Aangepast, om instellingen voor machtigingen afzonderlijk te beheren. Met Minimale beveiliging kunnen applets alle bewerkingen uitvoeren. Met Normale beveiliging kunnen applets worden uitgevoerd in hun eigen sandbox (een gebied in het geheugen waarbuiten het programma geen aanroepen kan doen). Daarnaast biedt deze optie mogelijkheden zoals een scratchruimte (een veilig en beveiligd opslaggebied op de clientcomputer) en door de gebruiker beheerde bestandsinvoer en-uitvoer (I/O). Met Strenge beveiliging kunnen applets in hun sandbox worden uitgevoerd. Schakel Java uit om te voorkomen dat er applets worden uitgevoerd. Als u deze beleidsinstelling uitschakelt, kunnen Java-applets niet worden uitgevoerd. Als u deze beleidsinstelling niet configureert, wordt de machtiging ingesteld op Lage veiligheid.  
-    [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067200)  
+  [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067200)  
   
   **Standaardinstelling**: Hoge beveiliging  
   
@@ -1829,7 +1829,7 @@ De instellingen kunnen als volgt zijn:
 - *Herziene versie* op een bepaalde manier van hoe de instellingen in de vorige versie werd weergegeven. 
 
 *[Nieuw]*  [ **Vergrendeling**](#above-lock):
--  **Voice-mailapps vergrendeld scherm activeren**    
+- **Voice-mailapps vergrendeld scherm activeren**    
 
 *[Nieuw]* [**Toepassingsbeheer**](#application-management): 
 - **Controle van de gebruiker blokkeren over installaties**  
@@ -2602,7 +2602,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   **Default**: Disable  
   
 - **Internet Explorer internet zone logon options**  
-  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
+  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
   
   **Default**: Prompt  
   

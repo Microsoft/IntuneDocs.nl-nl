@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045825"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529180"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -160,8 +160,8 @@ Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integr
     * Als u een ISV bent die apps voor de iOS of Android Store wilt inschakelen voor Intune-beleid voor app-beveiliging, ontvangt u een promotiecode nadat u de registratie bij Microsoft Intune hebt voltooid. Dit wordt beschreven in de registratiestap. Met de promotiecode kunt u zich aanmelden voor een Microsoft Intune-proefversie met uitgebreid gebruik van één jaar.
 
     * Als u een Line-Of-Business-app ontwikkelt die niet naar de Store word verzonden, wordt ervan uitgegaan dat u via uw organisatie toegang hebt tot Microsoft Intune. U kunt zich ook registreren voor een gratis proefversie van één maand via [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
-    
-    * Zorg ervoor, als u uw app op een mobiel apparaat met een eindgebruikeraccount test, dat u dat account een Intune-licentie hebt gegeven op de website van ht Microsoft 365-beheercentrum nadat u bent aangemeld met een beheerdersaccount. Zie [Microsoft Intune-licentie toewijzen](https://docs.microsoft.com/en-ca/intune/licenses-assign).
+
+    * Zorg ervoor, als u uw app op een mobiel apparaat met een eindgebruikeraccount test, dat u dat account een Intune-licentie hebt gegeven op de website van ht Microsoft 365-beheercentrum nadat u bent aangemeld met een beheerdersaccount. Zie [Microsoft Intune-licentie toewijzen](https://docs.microsoft.com/intune/licenses-assign).
 
 * **Intune-beleid voor app-beveiliging**: als u uw app wilt testen aan de hand van alle Intune-beleid voor app-beveiliging, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](app-protection-policy-settings-android.md). Als uw app in de Intune SDK is geïntegreerd, maar nog niet als een doel-app wordt vermeld in de Azure-portal, kunt u een beleid erop toepassen door de optie + Meer apps te selecteren en de bundel-id (iOS) of pakketnaam (Android) in het tekstvak op te geven.
 
@@ -173,12 +173,12 @@ Als uw app zijn eigen aangepaste Azure Active Directory-instellingen (AAD) voor 
 
 Nadat u uw app hebt geregistreerd in een Azure-tenant en deze wordt weergegeven onder **Alle toepassingen**, moet u uw app toegang geven tot de Intune-app-beveiliging (eerder bekend als MAM-service). In Azure Portal:
 
-1.  Ga naar de blade **Azure Active Directory**.
-2.  Ga onder **App-registraties** naar de vermelding die voor de toepassing is ingesteld.
-3.  Klik op **+ Een machtiging toevoegen**.
-4.  Klik op **API's die in mijn organisatie worden gebruikt**. 
-5.  Voer in het zoekvak **Microsoft Mobile Application Management** in.
-6.  Schakel onder **Gedelegeerde machtigingen** het selectievakje **DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data*** (DeviceManagementManagedApps.ReadWrite: de app-beheergegevens van de gebruiker lezen en schrijven) in.
+1. Ga naar de blade **Azure Active Directory**.
+2. Ga onder **App-registraties** naar de vermelding die voor de toepassing is ingesteld.
+3. Klik op **+ Een machtiging toevoegen**.
+4. Klik op **API's die in mijn organisatie worden gebruikt**. 
+5. Voer in het zoekvak **Microsoft Mobile Application Management** in.
+6. Schakel onder **Gedelegeerde machtigingen** het selectievakje **DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data*** (DeviceManagementManagedApps.ReadWrite: de app-beheergegevens van de gebruiker lezen en schrijven) in.
 7. Klik op **Machtigingen toevoegen**.
 
 ### <a name="badge-your-app-optional"></a>Uw app van een logo voorzien (optioneel)

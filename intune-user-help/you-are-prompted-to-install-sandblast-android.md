@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b55d41939b9772227cee0f12da65040edbca0d0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a012cb7fe25b70ee260f2b3a2d49a47c3bae06a3
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843762"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558467"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>U moet SandBlast Mobile Protect installeren op uw Android-apparaat
 
@@ -47,9 +47,9 @@ Als u problemen met de installatie ondervindt, voert u de stappen voor probleemo
 
 8. SandBlast Mobile Protect begint uw apparaat meteen te controleren op beveiligingsrisico's.
 
-9.  Als SandBlast Mobile Protect een beveiligingsrisico op uw apparaat vindt, worden er instructies weergegeven voor het oplossen van het probleem.
+9. Als SandBlast Mobile Protect een beveiligingsrisico op uw apparaat vindt, worden er instructies weergegeven voor het oplossen van het probleem.
 
-10.  Als er geen beveiligingsrisico's worden gevonden, worden alle drie bedreigingstypen in het groen weergegeven.
+10. Als er geen beveiligingsrisico's worden gevonden, worden alle drie bedreigingstypen in het groen weergegeven.
 
 11. Op het scherm **Apparaatdetails** in de bedrijfsportal wordt vermeld dat u nu voldoet aan de beveiligingsvereisten van uw bedrijf.
 

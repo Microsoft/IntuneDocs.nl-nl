@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804421"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545241"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Gedragscode voor Microsoft Open Source
 
@@ -30,7 +30,7 @@ We **willen en stimuleren bijdragen** van onze community (gebruikers, klanten, p
     5. Maak de pull-aanvraag.
     
     **Optie 2: het artikel zoeken in deze opslagplaats en het artikel bijwerken**  
-    1.  De meeste onderwerpen vindt u in `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Zoek in deze map de naam van het onderwerp, zoals `troubleshoot-policies-in-microsoft-intune`. 
+    1. De meeste onderwerpen vindt u in `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Zoek in deze map de naam van het onderwerp, zoals `troubleshoot-policies-in-microsoft-intune`. 
     2. Selecteer de koppeling en klik op het potloodpictogram. Wanneer u het potloodpictogram aanwijst, ziet u de knopinfo **Dit bestand bewerken**. 
     3. Na het aanbrengen van de wijzigingen kunt u deze **doorvoeren**. 
     4. Maak de pull-aanvraag. 

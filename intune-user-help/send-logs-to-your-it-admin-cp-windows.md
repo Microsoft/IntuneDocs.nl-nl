@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9ecf976ea973fdb1a9b8025fec0bf49d7f87d0c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5df4fce5c07f416d5fa53ef653d62d9166fb1a11
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836469"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528769"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>Het ondersteuningsteam van het bedrijf een e-mailbericht over een probleem verzenden vanuit Bedrijfsportal voor Windows
 
@@ -32,7 +32,7 @@ Problemen met uw app oplossen in de app Bedrijfsportal voor Windows 10. Als u ee
 Wanneer u om hulp vraagt, wordt een vooraf ingevuld e-mailbericht geopend waarin u het probleem nader kunt beschrijven. Dit omvat ook een id van het diagnostische logboek. Als uw ondersteuningsteam het probleem op basis van uw beschrijving niet kan oplossen, moet de medewerker contact opnemen met Microsoft voor hulp. Microsoft heeft de diagnostische id nodig om naar de logboeken van de app te verwijzen.   
 
 
-> [!Note]       
+> [!Note]
 > Nadat u op **Hulp vragen** hebt geklikt, stuurt de bedrijfsportal uw logboeken automatisch naar het ondersteuningsteam van Microsoft. Dit is een proactieve stap die het gemakkelijker maakt om problemen op te lossen die naar Microsoft-ondersteuning zijn geëscaleerd. Zoals eerder vermeld, kan het ondersteuningsteam van Microsoft logboeken ophalen met behulp van de diagnose-id in uw e-mailbericht.  
 
 ## <a name="what-is-a-diagnostic-log"></a>Wat is een diagnostisch logboek?

@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbb6c3b771ae768fe45bea1eecb21f7083003010
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: 77b7f3adf4fa8675e3734f7eab8fbaa9391d952a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196852"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527952"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Windows 10-apparaten inschrijven bij de Intune-bedrijfsportal
 
@@ -94,7 +94,7 @@ Nog steeds geen toegang tot uw e-mail, bestanden of andere gegevens voor werk of
 
 ## <a name="it-administrator-support"></a>Ondersteuning IT-beheerder   
 
-Als u een IT-beheerder bent en in de problemen raakt tijdens het inschrijven van apparaten, kunt u [Problemen oplossen met de inschrijving van Windows-apparaten in Microsoft Intune](https://support.microsoft.com/help/4469913) raadplegen. Dit artikel bevat algemene fouten, de oorzaken en de stappen om deze op te lossen. 
+Als u een IT-beheerder bent en in de problemen raakt tijdens het inschrijven van apparaten, kunt u [Troubleshooting Windows device enrollment problems in Microsoft Intune (Problemen oplossen met de inschrijving van Windows-apparaten in Microsoft Intune)](https://support.microsoft.com/help/4469913) raadplegen. Dit artikel bevat algemene fouten, de oorzaken en de stappen om deze op te lossen. 
 
 ## <a name="next-steps"></a>Volgende stappen  
 Als u hulp nodig hebt met de bedrijfsportal of de inschrijving, neemt u contact op met het IT-ondersteuningsteam van uw organisatie. U vindt hun contactgegevens op de [website van de bedrijfsportal](https://go.microsoft.com/fwlink/?linkid=2010980). Meld u op de site aan met uw werk- of schoolaccount.  

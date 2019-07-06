@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0c72fb6e7ace6c603410ff0ffc9a96e4a0ff528d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846244"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527630"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Mobile Threat Defense installeren op uw iOS-apparaat
 
@@ -38,12 +38,12 @@ Voordat u toegang tot uw werk kunt krijgen, moet u voor het ondersteuningsteam v
 
 Mobile Threat Defense biedt bedrijven een manier om ervoor te zorgen dat uw apparaten zijn beveiligd tegen apps die proberen bedrijfsinformatie te stelen. Voor deze beveiliging moet extra informatie over de apps op uw apparaat worden gerapporteerd aan de Mobile Threat Defense-service die uw bedrijf gebruikt. Uw bedrijf kan de gegevens in uw persoonlijke apps niet zien. Alle apps op uw apparaat worden toegevoegd aan [wat uw bedrijf kan zien](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) wanneer ze gebruikmaken van een Mobile Threat Defense-service. Dit zijn de gedeelten van de app die uw bedrijf kan zien:
 
-*   App-naam
+* App-naam
 * App-id: de unieke naam waarmee de app wordt geïdentificeerd in de App Store
-*   App-versie en verkort versienummer: specifieke releasenummers van een app
+* App-versie en verkort versienummer: specifieke releasenummers van een app
 * App-bundel en dynamische grootte: de hoeveelheid ruimte die een app op uw apparaat gebruikt
 * App-geldigheid: geeft aan of een app is goedgekeurd voor gebruik
-*   Status van app-beheer: geeft aan of een app wordt beheerd door uw bedrijf of een persoonlijke app is
+* Status van app-beheer: geeft aan of een app wordt beheerd door uw bedrijf of een persoonlijke app is
 
 ## <a name="if-the-installation-doesnt-work"></a>Als de installatie niet werkt
 

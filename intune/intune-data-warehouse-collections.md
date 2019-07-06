@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8581d047e76ac1734b2d6c7816facf601e397957
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 816ac1d97e7be485717905fe9d5d62b812408446
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041723"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512213"
 ---
-#  <a name="intune-data-warehouse-collections"></a>Intune-datawarehouse-verzamelingen
+# <a name="intune-data-warehouse-collections"></a>Intune-datawarehouse-verzamelingen
 
 De volgende Intune-datawarehouse-verzamelingen bevatten de eigenschappen, beschrijvingen en voorbeelden voor de v1.0-verzamelingen van entiteiten voor de datawarehouse-API. 
 

@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b39cc879c9e1232335c38e8d95c0861a12662c6a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4784bcb706dd8eef395763729e04503682197f78
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564462"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545271"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Uw Windows-apparaat beveiligen met versleuteling
 
@@ -37,8 +37,8 @@ Als u een Windows Phone hebt en deze hebt geregistreerd, wordt het apparaat auto
 
 Als u een desktopapparaat hebt, volgt u de onderstaande instructies om het apparaat te versleutelen.
 
-1.  Zoek en start de app **BitLocker beheren**.
+1. Zoek en start de app **BitLocker beheren**.
 
-2.  Kies **BitLocker inschakelen** en volg de weergegeven instructies om al uw schijven te versleutelen.
+2. Kies **BitLocker inschakelen** en volg de weergegeven instructies om al uw schijven te versleutelen.
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Zie de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) voor de contactgegevens.

@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 328ec3111aae5f8363f2743d423a56eafc47d765
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57335068"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546254"
 ---
 # <a name="sync-your-windows-device-manually"></a>Uw Windows-apparaat handmatig synchroniseren
 
@@ -41,9 +41,9 @@ Alle Windows-apparaten kunnen worden gesynchroniseerd vanuit de app Instellingen
 ## <a name="sync-directly-from-company-portal-app-for-windows"></a>Rechtstreeks synchroniseren vanuit de bedrijfsportal-app voor Windows
 Voer deze stappen uit als u een Windows 10-apparaat wilt synchroniseren waarop makersupdate (versie 1703) of hoger wordt uitgevoerd.
 
-1.  Open de bedrijfsportal-app op uw apparaat.
+1. Open de bedrijfsportal-app op uw apparaat.
 
-2.  Selecteer **Instellingen** > **Synchroniseren**.
+2. Selecteer **Instellingen** > **Synchroniseren**.
 
     ![Schermafbeelding van de startpagina van de bedrijfsportal-app waarin Instellingen is gemarkeerd](./media/RS1_homePage_settings_04.png)  
     
@@ -96,7 +96,7 @@ Voltooi deze stappen als u uw Microsoft HoloLens-, Windows 10 desktop-, Windows 
 
 #### <a name="work-access-steps"></a>Stappen voor toegang via het werknetwerk
 
-1.  Klik op **Toegang via het werknetwerk**.
+1. Klik op **Toegang via het werknetwerk**.
 
     ![Toegang via het werknetwerk kiezen als het accounttype](./media/win10pc-sync-3-work-access.png)
 
@@ -128,12 +128,12 @@ Voltooi deze stappen als u uw Microsoft HoloLens-, Windows 10 desktop-, Windows 
        ![Het pictogram Synchroniseren kiezen](./media/win10m-sync-4-tap-sync.png)  
 ### <a name="microsoft-hololens"></a>Microsoft HoloLens  
 Deze instructies zijn van toepassing op HoloLens-apparaten waarop de Windows 10 Jubileumupdate (ook wel RS1 genoemd) wordt uitgevoerd. 
-1.  Open de app Instellingen op uw apparaat.  
+1. Open de app Instellingen op uw apparaat.  
 
-2.  Selecteer **Accounts** > **Toegang via werknetwerk**.  
+2. Selecteer **Accounts** > **Toegang via werknetwerk**.  
     ![Schermafbeelding van de app Instellingen in HoloLens waarin de koppeling Accounts is gemarkeerd](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-3.  Selecteer uw verbonden account > **Synchroniseren**. ![Schermafbeelding van de app Instellingen in HoloLens waarin de knop Synchroniseren is gemarkeerd](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+3. Selecteer uw verbonden account > **Synchroniseren**.  ![Schermafbeelding van de app Instellingen in HoloLens waarin de knop Synchroniseren is gemarkeerd](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
 
 ### <a name="windows-phone-81"></a>Windows Phone 8.1
 

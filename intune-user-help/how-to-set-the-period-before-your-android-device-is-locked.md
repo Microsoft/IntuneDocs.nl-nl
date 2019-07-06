@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 913e157e8b2f16376eccf8fc93af137792015eb9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ef8dbcda214e2c7cd260fe237e4b9cfd0b7ff326
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847995"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546274"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Instellen hoe lang het duurt voordat de schermvergrendeling van uw Android-apparaat wordt geactiveerd
 
@@ -31,18 +31,18 @@ Als u opnieuw verbinding met uw werk wilt maken, moet u de wachtwoordtime-out op
 
 ## <a name="native-non-samsung-knox-device"></a>Native apparaat (niet-Samsung Knox)
 
-1.  Tik in de **Instellingen** van het apparaat op **Beveiliging** &gt; **Automatisch vergrendelen** (dit wordt op sommige apparaten weergegeven als **Telefoon vergrendelen na**).
+1. Tik in de **Instellingen** van het apparaat op **Beveiliging** &gt; **Automatisch vergrendelen** (dit wordt op sommige apparaten weergegeven als **Telefoon vergrendelen na**).
 
     Als **Automatisch vergrendelen** (op sommige apparaten **Telefoon vergrendelen na**) niet wordt weergegeven, controleert u of u een geldig wachtwoord hebt ingesteld onder **Instellingen** &gt; **Schermvergrendeling** &gt; **Wachtwoord**.
 
-2.  Selecteer de waarde voor de wachtwoordtime-out.
+2. Selecteer de waarde voor de wachtwoordtime-out.
 
 ## <a name="samsung-knox-device"></a>Samsung Knox-apparaat
 
-1.  Tik in **Instellingen** op uw apparaat op **Scherm vergrendelen en beveiliging** &gt; **Automatisch vergrendelen**.
+1. Tik in **Instellingen** op uw apparaat op **Scherm vergrendelen en beveiliging** &gt; **Automatisch vergrendelen**.
 
     Als **Automatisch vergrendelen** (op sommige apparaten **Telefoon vergrendelen**) niet wordt weergegeven, moet u controleren of u een geldig wachtwoord hebt ingesteld onder **Instellingen** &gt; **Schermvergrendeling** &gt; **Wachtwoord** .
 
-2.  Selecteer een waarde voor de wachtwoordtime-out.
+2. Selecteer een waarde voor de wachtwoordtime-out.
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

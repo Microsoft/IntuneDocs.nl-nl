@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d838d0cd0d0f92cb344592d18d9e04e18d7e456
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: f182d356c151c569b9cf49adfe2f2c0cc34f1a54
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819734"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548909"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD gebruiken voor toegang tot de Intune-API's in Microsoft Graph
 
@@ -61,23 +61,23 @@ Zie voor meer informatie:
 
 U registreert als volgt apps voor het gebruik van de Microsoft Graph API:
 
-1.  Aanmelden bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) met beheerdersreferenties.
+1. Aanmelden bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) met beheerdersreferenties.
 
     U kunt het volgende gebruiken:
     - De beheerdersaccount van de tenant.
     - Een gebruikersaccount van de tenant waarin de instelling **Gebruikers kunnen toepassingen registreren** is ingeschakeld.
 
-2.  Kies in het menu **Azure Active Directory** &gt; **App-registraties**.
+2. Kies in het menu **Azure Active Directory** &gt; **App-registraties**.
 
     <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
-3.  Kies **Registratie van nieuwe toepassing** om een nieuwe toepassing te maken, of kies een bestaande toepassing.  (Als u een bestaande toepassing kiest, slaat u de volgende stap over.)
+3. Kies **Registratie van nieuwe toepassing** om een nieuwe toepassing te maken, of kies een bestaande toepassing.  (Als u een bestaande toepassing kiest, slaat u de volgende stap over.)
 
-4.  Geef de volgende informatie op de blade **Maken** op:
+4. Geef de volgende informatie op de blade **Maken** op:
 
-    1.  Een **naam** voor de toepassing (weergegeven wanneer gebruikers zich aanmelden).
+    1. Een **naam** voor de toepassing (weergegeven wanneer gebruikers zich aanmelden).
 
-    2.  De waarden voor het **toepassingstype** en de **omleidings-URI**.
+    2. De waarden voor het **toepassingstype** en de **omleidings-URI**.
 
         Dit is afhankelijk van uw vereisten. Bijvoorbeeld, als u een Azure AD-[verificatiebibliotheek](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) gebruikt, stelt u **toepassingstype** in op `Native` en **omleidings-URI** op `urn:ietf:wg:oauth:2.0:oob`.
 
@@ -85,19 +85,19 @@ U registreert als volgt apps voor het gebruik van de Microsoft Graph API:
 
         Zie [Verificatiescenario's voor Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios) voor meer informatie.
 
-5.  Op de toepassingsblade:
+5. Op de toepassingsblade:
 
-    1.  Noteer de waarde van de **toepassings-ID**.
+    1. Noteer de waarde van de **toepassings-ID**.
 
-    2.  Kies **Instellingen** &gt; **API-toegang** &gt; **Vereiste machtigingen**.
+    2. Kies **Instellingen** &gt; **API-toegang** &gt; **Vereiste machtigingen**.
 
     <img src="media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6.  Kies op de blade **Vereiste machtigingen** **Toevoegen** &gt; **API toevoegen toegang** &gt; **Een API selecteren**.
+6. Kies op de blade **Vereiste machtigingen** **Toevoegen** &gt; **API toevoegen toegang** &gt; **Een API selecteren**.
 
     <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7.  Kies op de blade **Een API selecteren** **Microsoft Graph** &gt; **Selecteren**.  De blade **Toegang inschakelen** wordt geopend en er wordt een lijst weergegeven met machtigingsbereiken die beschikbaar zijn voor uw toepassing.
+7. Kies op de blade **Een API selecteren** **Microsoft Graph** &gt; **Selecteren**.  De blade **Toegang inschakelen** wordt geopend en er wordt een lijst weergegeven met machtigingsbereiken die beschikbaar zijn voor uw toepassing.
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -334,28 +334,28 @@ Als dit gebeurt, moet u de volgende punten controleren:
 
 In dit voorbeeld ziet u hoe u C# gebruikt voor het ophalen van een lijst met apparaten die zijn gekoppeld aan uw Intune-account.
 
-1.  Start Visual Studio en maak een nieuw project voor een Visual C# Console-app (.NET Framework).
+1. Start Visual Studio en maak een nieuw project voor een Visual C# Console-app (.NET Framework).
 
-2.  Voer een naam in voor uw project en geef desgewenst andere informatie op.
+2. Voer een naam in voor uw project en geef desgewenst andere informatie op.
 
     <img src="media/aad-auth-cpp-new-console.png" width="624" height="433" alt="Creating a C# console app project in Visual Studio"  />
 
-3.  Gebruik Solution Explorer om het Microsoft ADAL NuGet-pakket toe te voegen aan het project.
+3. Gebruik Solution Explorer om het Microsoft ADAL NuGet-pakket toe te voegen aan het project.
 
-    1.  Klik met de rechtermuisknop op Solution Explorer.
-    2.  Kies **NuGet-pakketten beheren...** &gt; **Bladeren**.
-    3.  Selecteer `Microsoft.IdentityModel.Clients.ActiveDirectory` en kies vervolgens **Installeren**.
+    1. Klik met de rechtermuisknop op Solution Explorer.
+    2. Kies **NuGet-pakketten beheren...** &gt; **Bladeren**.
+    3. Selecteer `Microsoft.IdentityModel.Clients.ActiveDirectory` en kies vervolgens **Installeren**.
 
     <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
 
-4.  Voeg de volgende instructies toe bovenaan **Program.cs**:
+4. Voeg de volgende instructies toe bovenaan **Program.cs**:
 
     ``` csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;</p>
     using System.Net.Http;
     ```
 
-5.  Voeg een methode toe voor het maken van de autorisatie-header:
+5. Voeg een methode toe voor het maken van de autorisatie-header:
 
     ``` csharp
     private static async Task<string> GetAuthorizationHeader()
@@ -386,14 +386,14 @@ In dit voorbeeld ziet u hoe u C# gebruikt voor het ophalen van een lijst met app
     }
     ```
 
-7.  Werk **Main** bij om **GetMyManagedDevices** aan te roepen:
+7. Werk **Main** bij om **GetMyManagedDevices** aan te roepen:
 
     ``` csharp
     string devices = GetMyManagedDevices().GetAwaiter().GetResult();
     Console.WriteLine(devices);
     ```
 
-8.  Compileer uw programma en voer dit uit.  
+8. Compileer uw programma en voer dit uit.  
 
 Wanneer u het programma voor het eerst uitvoert, ontvangt u twee vragen.  In de eerste wordt u gevraagd om uw referenties en de tweede verleent machtigingen voor de `managedDevices`-aanvraag.  
 
@@ -553,11 +553,11 @@ Als uw organisatie ondersteuning biedt aan organisaties met hun eigen Azure AD-t
 
 Hiervoor doet u het volgende:
 
-1.  Controleer of de clientaccount bestaat in de doel-Azure AD-tenant.
+1. Controleer of de clientaccount bestaat in de doel-Azure AD-tenant.
 
-2.  Controleer of uw tenantaccount gebruikers toestaat om toepassingen te registreren (zie **gebruikersinstellingen**).
+2. Controleer of uw tenantaccount gebruikers toestaat om toepassingen te registreren (zie **gebruikersinstellingen**).
 
-3.  Breng een relatie tot stand tussen elke tenant.  
+3. Breng een relatie tot stand tussen elke tenant.  
 
     Hiervoor voert u een van de volgende acties uit:
 
@@ -567,15 +567,15 @@ Hiervoor doet u het volgende:
 
 De gebruiker uitnodigen een gast van uw tenant te zijn:
 
-1.  Kies **Een gastgebruiker toevoegen** in het deelvenster **Snelle taken**.
+1. Kies **Een gastgebruiker toevoegen** in het deelvenster **Snelle taken**.
 
     <img src="media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
 
-2.  Voer het e-mailadres van de client in en voeg desgewenst een persoonlijk bericht toe voor de uitnodiging (optioneel).
+2. Voer het e-mailadres van de client in en voeg desgewenst een persoonlijk bericht toe voor de uitnodiging (optioneel).
 
     <img src="media/azure-ad-guest-invite.png" width="203" height="106" alt="Inviting an external user as a guest" />
 
-3.  Kies **Uitnodigen**.
+3. Kies **Uitnodigen**.
 
 Hierdoor wordt een uitnodiging verzonden naar de gebruiker.
 

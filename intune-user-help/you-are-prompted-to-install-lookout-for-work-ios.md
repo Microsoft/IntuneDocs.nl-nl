@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b59dc8599ce2dd5c99875a0032ccce5326c376cd
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8290ccbb61308fb7f001b1a7d331fd366e13d902
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843745"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527724"
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>Lookout for Work installeren op uw iOS-apparaat
 
@@ -31,7 +31,7 @@ Voordat u toegang tot uw werk kunt krijgen, moet uw bedrijf de Lookout for Work-
 
 ## <a name="what-you-need-to-do"></a>Voer de volgende handelingen uit
 
-1.  Als het volgende bericht wordt weergegeven, tikt u op **Installeren** om ervoor te zorgen dat Lookout for Work op uw apparaat kan worden geïnstalleerd.
+1. Als het volgende bericht wordt weergegeven, tikt u op **Installeren** om ervoor te zorgen dat Lookout for Work op uw apparaat kan worden geïnstalleerd.
 
       ![Schermopname van de prompt voor installatie van de app, met de knoppen Annuleren en Installeren.](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 

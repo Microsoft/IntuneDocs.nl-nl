@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e9042b6c7c1890cd1829f803c05fbab7ae9b44
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040213"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548828"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Beleid gebruiken om het beheer van Windows-pc's te vereenvoudigen
 
@@ -35,13 +35,13 @@ Als u Windows-desktops als pc's wilt beheren, door daarop de Intune-softwareclie
 ### <a name="manage-the-microsoft-intune-center"></a>Het Microsoft Intune Center beheren
 Gebruikers zien de Intune-softwareclient als het **Microsoft Intune Center**. Met het Microsoft Intune Center kunnen gebruikers:
 
--   Toepassingen ophalen via de bedrijfsportal.
+- Toepassingen ophalen via de bedrijfsportal.
 
--   Controleren op updates.
+- Controleren op updates.
 
--   Microsoft Intune Endpoint Protection beheren.
+- Microsoft Intune Endpoint Protection beheren.
 
--  Hulp op afstand vragen.
+- Hulp op afstand vragen.
 
 Het Microsoft Intune Center wordt geïnstalleerd op alle beheerde computers. U kunt de volgende instellingen in een Intune-beleid configureren en deze instellingen worden weergegeven aan gebruikers in het Microsoft Intune Center:
 

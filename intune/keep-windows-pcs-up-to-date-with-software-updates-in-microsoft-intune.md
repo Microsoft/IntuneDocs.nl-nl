@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3cc84d8215a841b9ff8a70a6b6307d3452696cb0
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 70818e038be915a1b756eb391129e6cdb74fb069
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403004"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548656"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Windows-pc's up-to-date houden met software-updates in Microsoft Intune
 
@@ -49,9 +49,9 @@ Configureer en implementeer beleidsregels voor uw computers om te bepalen wannee
 
 ### <a name="to-configure-update-policy-settings"></a>Instellingen voor updatebeleid configureren
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Beleid** &gt; **Overzicht** &gt; **Beleid toevoegen**.
+1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) de optie **Beleid** &gt; **Overzicht** &gt; **Beleid toevoegen**.
 
-2.  Configureer en implementeer een beleid **Instellingen Microsoft Intune-agent** voor de update-instellingen. U kunt de aanbevolen instellingen gebruiken of de instellingen aanpassen. Als u meer informatie wilt over het maken en implementeren van beleid, raadpleegt u [Algemene beheertaken voor Windows-pc's met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+2. Configureer en implementeer een beleid **Instellingen Microsoft Intune-agent** voor de update-instellingen. U kunt de aanbevolen instellingen gebruiken of de instellingen aanpassen. Als u meer informatie wilt over het maken en implementeren van beleid, raadpleegt u [Algemene beheertaken voor Windows-pc's met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 De volgende tabel biedt een overzicht van de waarden die u kunt configureren in het beleid, evenals de aanbevolen waarden die worden gebruikt als u het beleid niet aanpast. U vindt deze instellingen in de sectie **Updates**.
 
@@ -70,49 +70,49 @@ De volgende tabel biedt een overzicht van de waarden die u kunt configureren in 
 ## <a name="update-software-made-by-microsoft"></a>Software bijwerken die is gemaakt door Microsoft
 U hoeft zelf niet veel te doen om Microsoft-software bij te werken. Voordat u begint, zijn er echter twee instellingen die u moet configureren:
 
--   **Productcategorieën en updateclassificaties** – Bepaalt de categorieën en classificaties van de updates die u beschikbaar wilt maken voor computers. U kunt bijvoorbeeld bepalen dat alleen essentiële updates voor Microsoft Office worden geïnstalleerd.
+- **Productcategorieën en updateclassificaties** – Bepaalt de categorieën en classificaties van de updates die u beschikbaar wilt maken voor computers. U kunt bijvoorbeeld bepalen dat alleen essentiële updates voor Microsoft Office worden geïnstalleerd.
 
--   **Automatische goedkeuringsregels** – Deze regels keuren opgegeven updatetypen automatisch goed en reduceren uw administratieve overhead. U kunt bijvoorbeeld automatisch alle essentiële software-updates goedkeuren.
+- **Automatische goedkeuringsregels** – Deze regels keuren opgegeven updatetypen automatisch goed en reduceren uw administratieve overhead. U kunt bijvoorbeeld automatisch alle essentiële software-updates goedkeuren.
 
 Met de volgende twee procedures kunt u zich voorbereiden op het gebruik van software-updates:
 
 ### <a name="configure-the-product-categories-and-update-classifications-you-want-to-make-available-to-managed-computers"></a>De productcategorieën en updateclassificaties configureren die u beschikbaar wilt maken voor beheerde computers
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** &gt; **Updates**.
+1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** &gt; **Updates**.
 
-2.  Selecteer op de pagina **Service-instellingen: updates** in de lijst **Productcategorie** de updatecategorieën die u beschikbaar wilt maken voor alle computers. De meest voorkomende updates zijn standaard al ingeschakeld.
+2. Selecteer op de pagina **Service-instellingen: updates** in de lijst **Productcategorie** de updatecategorieën die u beschikbaar wilt maken voor alle computers. De meest voorkomende updates zijn standaard al ingeschakeld.
 
     > [!IMPORTANT]
     > Als u ervoor wilt zorgen dat computers de updates ontvangen die zijn goedgekeurd door de beheerder, mag de instelling voor Groepsbeleid van WSUS (Windows Server Update Services), **Locatie van Microsoft-updateservice in intranet** niet worden toegepast op computers die zijn ingeschreven met Intune.
 
-3.  Selecteer in de lijst **Updateclassificatie** de updateklassen die u beschikbaar wilt maken voor beheerde computers. Ook hier zijn de meest voorkomende opties standaard al geselecteerd.
+3. Selecteer in de lijst **Updateclassificatie** de updateklassen die u beschikbaar wilt maken voor beheerde computers. Ook hier zijn de meest voorkomende opties standaard al geselecteerd.
 
-4.  Klik op **Opslaan** om uw selecties op te slaan.
+4. Klik op **Opslaan** om uw selecties op te slaan.
 
 ### <a name="to-configure-automatic-approval-rules-for-software-updates"></a>Automatische goedkeuringsregels voor software-updates configureren
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** &gt; **Updates**.
+1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** &gt; **Updates**.
 
-2.  Kies in de sectie **Automatische goedkeuringsregels** van de pagina **Service-instellingen: updates** de optie **Nieuw**.
+2. Kies in de sectie **Automatische goedkeuringsregels** van de pagina **Service-instellingen: updates** de optie **Nieuw**.
 
-3.  Geef op de pagina **Algemeen** van de wizard Automatische goedkeuringsregel maken een naam en optionele beschrijving voor de regel op.
+3. Geef op de pagina **Algemeen** van de wizard Automatische goedkeuringsregel maken een naam en optionele beschrijving voor de regel op.
 
-4.  Selecteer op de pagina **Productclassificaties** alle producten waarvoor u updates automatisch wilt goedkeuren.
+4. Selecteer op de pagina **Productclassificaties** alle producten waarvoor u updates automatisch wilt goedkeuren.
 
-5.  Geef op de pagina **Updateclassificaties** de updateclassificaties op die u automatisch wilt goedkeuren.
+5. Geef op de pagina **Updateclassificaties** de updateclassificaties op die u automatisch wilt goedkeuren.
 
-6.  Doe het volgende op de pagina **Implementatie** :
+6. Doe het volgende op de pagina **Implementatie** :
 
-    -   Selecteer de computergroepen waarvoor u de nieuwe regel wilt implementeren en kies vervolgens **Toevoegen**.
+    - Selecteer de computergroepen waarvoor u de nieuwe regel wilt implementeren en kies vervolgens **Toevoegen**.
 
-    -   Als u een installatiedeadline voor de updates wilt opgeven, schakelt u het selectievakje **Dwing een installatiedeadline af voor deze updates af** in en selecteert u vervolgens de gewenste deadline in de lijst **Installatiedeadline** .
+    - Als u een installatiedeadline voor de updates wilt opgeven, schakelt u het selectievakje **Dwing een installatiedeadline af voor deze updates af** in en selecteert u vervolgens de gewenste deadline in de lijst **Installatiedeadline** .
 
         > [!NOTE]
         > Als u een installatiedeadline opgeeft, moet de beheerde computer mogelijk een of meer keer opnieuw worden opgestart nadat het deadline-interval is verstreken.
 
-    -   Als u klaar bent, kiest u **Volgende**.
+    - Als u klaar bent, kiest u **Volgende**.
 
-7.  Bekijk op de pagina **Samenvatting** de instellingen voor de nieuwe regel en kies vervolgens **Voltooien**.
+7. Bekijk op de pagina **Samenvatting** de instellingen voor de nieuwe regel en kies vervolgens **Voltooien**.
 
 De nieuwe regel wordt weergegeven in de sectie **Automatische goedkeuringsregels** van de pagina **Service-instellingen: updates**.
 
@@ -122,15 +122,15 @@ De nieuwe regel wordt weergegeven in de sectie **Automatische goedkeuringsregels
 
 ### <a name="to-edit-run-or-delete-an-automatically-approved-update-rule"></a>Een automatische goedkeuringsregel voor updates bewerken, uitvoeren of verwijderen
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** &gt; **Updates**.
+1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Beheer** &gt; **Updates**.
 
-2.  Selecteer een regel in de sectie **Automatische goedkeuringsregel** en voer een van de volgende handelingen uit:
+2. Selecteer een regel in de sectie **Automatische goedkeuringsregel** en voer een van de volgende handelingen uit:
 
-    -   Als u de regel wilt bewerken, kiest u **Bewerken** en wijzigt u vervolgens de parameters voor de regel in de **wizard Automatische goedkeuringsregel bijwerken**.
+    - Als u de regel wilt bewerken, kiest u **Bewerken** en wijzigt u vervolgens de parameters voor de regel in de **wizard Automatische goedkeuringsregel bijwerken**.
 
-    -   Kies **Geselecteerde uitvoeren** om de regel uit te voeren.
+    - Kies **Geselecteerde uitvoeren** om de regel uit te voeren.
 
-    -   Als u de regel wilt verwijderen, kiest u **Verwijderen**.
+    - Als u de regel wilt verwijderen, kiest u **Verwijderen**.
 
         > [!NOTE]
         > Het verwijderen van een regel is niet van invloed op eerdere updates die zijn goedgekeurd door de verwijderde regel.
@@ -140,40 +140,40 @@ U kunt ook updates implementeren voor software die niet door Microsoft is gemaak
 
 ### <a name="to-upload-and-configure-a-third-party-update"></a>Updates van derden uploaden en configureren
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Updates** &gt; **Overzicht** &gt; **Uploaden**.
+1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Updates** &gt; **Overzicht** &gt; **Uploaden**.
 
-2.  Kies op de pagina **Updatebestanden** de optie **Bladeren** om de setup-bestanden te selecteren die nodig zijn om het updatepakket te installeren. Het bestand kan een Windows Installer-bestand (.msi), een Windows Installer-patchbestand (.msp) of een programmabestand (.exe) zijn. U kunt ook aanvullende bestanden en mappen uit dezelfde map als het setup-bestand opnemen.
+2. Kies op de pagina **Updatebestanden** de optie **Bladeren** om de setup-bestanden te selecteren die nodig zijn om het updatepakket te installeren. Het bestand kan een Windows Installer-bestand (.msi), een Windows Installer-patchbestand (.msp) of een programmabestand (.exe) zijn. U kunt ook aanvullende bestanden en mappen uit dezelfde map als het setup-bestand opnemen.
 
     Vervolgens wordt de totale uploadgrootte van de geselecteerde bestanden weergegeven. Deze grootte houdt geen rekening met de niet-gecomprimeerde of uitgevouwen grootte van de installatiebestanden.
 
-3.  Nadat u de setup-bestanden hebt opgegeven, wordt op de pagina **Beschrijving van update** de naam, de beschrijving en de classificatie van de software weergegeven die met Intune is geëxtraheerd uit de setup-bestanden van de software. U kunt een classificatie selecteren om het updatetype te labelen dat u implementeert (Updates, Essentiële Updates, Beveiligingsupdates, Updatepakketten of Servicepacks). Kies **Volgende** wanneer u klaar bent.
+3. Nadat u de setup-bestanden hebt opgegeven, wordt op de pagina **Beschrijving van update** de naam, de beschrijving en de classificatie van de software weergegeven die met Intune is geëxtraheerd uit de setup-bestanden van de software. U kunt een classificatie selecteren om het updatetype te labelen dat u implementeert (Updates, Essentiële Updates, Beveiligingsupdates, Updatepakketten of Servicepacks). Kies **Volgende** wanneer u klaar bent.
 
-4.  Kies op de pagina **Vereisten** van de wizard de architectuur (32 bits, 64 bits of beide) en de besturingssystemen van de beheerde computers waarop deze update van toepassing is.
+4. Kies op de pagina **Vereisten** van de wizard de architectuur (32 bits, 64 bits of beide) en de besturingssystemen van de beheerde computers waarop deze update van toepassing is.
 
-5.  Geef op de pagina **Detectieregels** op hoe in Intune kan worden bepaald of de update al bestaat op beheerde computers. Als u gebruikmaakt van de standaardoptie **De standaarddetectieregels gebruiken**, wordt met Intune het updatepakket altijd één keer geïnstalleerd op elke doelcomputer.
+5. Geef op de pagina **Detectieregels** op hoe in Intune kan worden bepaald of de update al bestaat op beheerde computers. Als u gebruikmaakt van de standaardoptie **De standaarddetectieregels gebruiken**, wordt met Intune het updatepakket altijd één keer geïnstalleerd op elke doelcomputer.
 
     > [!NOTE]
     > Als het setup-bestand dat u voor de update hebt opgegeven, een Windows Installer- of MSP-bestand is, wordt de pagina **Detectieregels** van de wizard niet weergegeven. Windows Installer- en MSP-bestanden bevatten hun eigen instructies voor het detecteren van eerdere update-installaties.
 
     Selecteer een of meer van de volgende regels om te bepalen of de update al is geïnstalleerd op beheerde computers:
 
-    -   **Bestand bestaat al**
+    - **Bestand bestaat al**
 
-    -   **MSI-productcode bestaat al**
+    - **MSI-productcode bestaat al**
 
-    -   **Registersleutel bestaat**
+    - **Registersleutel bestaat**
 
-6.  Geef alle overige informatie op die nodig is om de detectieregel te configureren, zoals een bestandspad en -naam, de productcode van Windows Installer of een registersleutel, en kies **Volgende**.
+6. Geef alle overige informatie op die nodig is om de detectieregel te configureren, zoals een bestandspad en -naam, de productcode van Windows Installer of een registersleutel, en kies **Volgende**.
 
-7.  Geef op de pagina **Vereisten** de software op die al moet zijn geïnstalleerd voordat deze update kan worden geïnstalleerd. U kunt **Geen** kiezen, een softwarepakket selecteren dat al is toegevoegd aan en wordt beheerd in Intune, of een van de volgende regels opgeven om de software te beschrijven:
+7. Geef op de pagina **Vereisten** de software op die al moet zijn geïnstalleerd voordat deze update kan worden geïnstalleerd. U kunt **Geen** kiezen, een softwarepakket selecteren dat al is toegevoegd aan en wordt beheerd in Intune, of een van de volgende regels opgeven om de software te beschrijven:
 
-    -   **Bestand bestaat al**
+    - **Bestand bestaat al**
 
-    -   **MSI-productcode bestaat al**
+    - **MSI-productcode bestaat al**
 
-    -   **Registersleutel bestaat**
+    - **Registersleutel bestaat**
 
-8.  Geef alle overige informatie op die nodig is om de detectieregel te configureren, zoals een bestandspad en -naam, de productcode van Windows Installer of een registersleutel, en kies **Volgende**.
+8. Geef alle overige informatie op die nodig is om de detectieregel te configureren, zoals een bestandspad en -naam, de productcode van Windows Installer of een registersleutel, en kies **Volgende**.
 
 9. Op de pagina **Opdrachtregelargumenten** van de wizard kunt u de vereiste eigenschappen voor de installatie toevoegen aan de opdrachtregel voor de installatie om het gedrag van het setup-bestand te wijzigen. Sommige software ondersteunt bijvoorbeeld de eigenschap **/q** voor een stille installatie. Raadpleeg de documentatie bij uw softwarepakket voor meer informatie over alle ondersteunde opdrachtregelargumenten. Geef de benodigde opdrachtregelargumenten op en kies **Volgende**.
 
@@ -216,48 +216,48 @@ Wanneer u een update uit de lijst selecteert, zijn opdrachten beschikbaar waarme
 
 ### <a name="to-approve-updates"></a>Updates goedkeuren
 
-1.  Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Updates** &gt; **Overzicht** &gt; **Nieuwe goed te keuren updates**.
+1. Kies in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) **Updates** &gt; **Overzicht** &gt; **Nieuwe goed te keuren updates**.
 
     Kies in de werkruimte **Updates** **Overzicht** &gt; **Nieuwe goed te keuren updates**.
 
     > [!NOTE]
     > De koppeling **Nieuwe goed te keuren updates** wordt alleen in het venster **Updatestatus** weergegeven als er ten minste één beheerde computer is waarvoor een update moet worden goedgekeurd.
 
-2.  Selecteer een update, controleer onder aan de pagina de eigenschappen van de update om er zeker van te zijn dat u de update wilt goedkeuren, en kies vervolgens **Goedkeuren**. U kunt meerdere updates selecteren door de **Ctrl**-toets ingedrukt te houden terwijl u elk item selecteert.
+2. Selecteer een update, controleer onder aan de pagina de eigenschappen van de update om er zeker van te zijn dat u de update wilt goedkeuren, en kies vervolgens **Goedkeuren**. U kunt meerdere updates selecteren door de **Ctrl**-toets ingedrukt te houden terwijl u elk item selecteert.
 
-3.  Selecteer op de pagina **Groepen selecteren** een groep waarvoor u de updates wilt implementeren, en kies **Toevoegen**. Wanneer u de gewenste groepen hebt opgegeven, kiest u **Volgende**.
+3. Selecteer op de pagina **Groepen selecteren** een groep waarvoor u de updates wilt implementeren, en kies **Toevoegen**. Wanneer u de gewenste groepen hebt opgegeven, kiest u **Volgende**.
 
-4.  Voer op de pagina **Implementatieactie** de volgende stappen uit voor elke groep in de lijst:
+4. Voer op de pagina **Implementatieactie** de volgende stappen uit voor elke groep in de lijst:
 
-    -   Selecteer in de lijst **Goedkeuring** een van de volgende opties:
+    - Selecteer in de lijst **Goedkeuring** een van de volgende opties:
 
-        -   **Vereiste installatie**: de update wordt geïnstalleerd op computers in de opgegeven groep.
+        - **Vereiste installatie**: de update wordt geïnstalleerd op computers in de opgegeven groep.
 
-        -   **Niet installeren**: er wordt alleen gemeld dat de update van toepassing is, maar de update wordt niet geïnstalleerd.
+        - **Niet installeren**: er wordt alleen gemeld dat de update van toepassing is, maar de update wordt niet geïnstalleerd.
 
-        -   **Beschikbare installatie**: de gebruiker kan de toepassing op verzoek installeren uit de bedrijfsportal.
+        - **Beschikbare installatie**: de gebruiker kan de toepassing op verzoek installeren uit de bedrijfsportal.
 
-        -   **Verwijderen**: updates worden verwijderd van computers in de doelgroep.
+        - **Verwijderen**: updates worden verwijderd van computers in de doelgroep.
 
             > [!IMPORTANT]
             > De update wordt verwijderd, ook als deze niet is geïnstalleerd met Intune.
 
-    -   Selecteer in de lijst **Deadline** een van de volgende opties:
+    - Selecteer in de lijst **Deadline** een van de volgende opties:
 
-        -   **Geen**: er wordt geen deadline afgedwongen voor de installatie van de update en gebruikers kunnen de update voortdurend weigeren.
+        - **Geen**: er wordt geen deadline afgedwongen voor de installatie van de update en gebruikers kunnen de update voortdurend weigeren.
 
-        -   **Zo spoedig mogelijk**: de update wordt bij de eerstvolgende gelegenheid op de doelcomputers geïnstalleerd.
+        - **Zo spoedig mogelijk**: de update wordt bij de eerstvolgende gelegenheid op de doelcomputers geïnstalleerd.
 
-        -   **Aangepast**: hiermee geeft u de datum en tijd op waarop goedgekeurde updates worden geïnstalleerd.
+        - **Aangepast**: hiermee geeft u de datum en tijd op waarop goedgekeurde updates worden geïnstalleerd.
 
-        -   **Een week**, **Twee weken**, **Een maand**: de update wordt binnen de opgegeven periode geïnstalleerd.
+        - **Een week**, **Twee weken**, **Een maand**: de update wordt binnen de opgegeven periode geïnstalleerd.
 
-5.  Klik op **Voltooien** om de instellingen op te slaan of kies **Annuleren** om de instellingen te negeren en terug te keren naar de lijst met updates.
+5. Klik op **Voltooien** om de instellingen op te slaan of kies **Annuleren** om de instellingen te negeren en terug te keren naar de lijst met updates.
 
     > [!IMPORTANT]
     > Tenzij de actie **Niet van toepassing**, **Vereiste installatie**of **Verwijderen** expliciet is geconfigureerd voor een onderliggende groep, wordt een actie die is geconfigureerd voor een bovenliggende groep overgenomen door alle onderliggende groepen.
 
-6.  Controleer het detailvenster onder aan de pagina **Alle updates** op herinneringsberichten voor de update.
+6. Controleer het detailvenster onder aan de pagina **Alle updates** op herinneringsberichten voor de update.
 
 
 ### <a name="see-also"></a>Zie tevens

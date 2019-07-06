@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46f2193a3a13183d41b10f03b6efe7100f0d9f9d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 50833b33583dcc1b49eb9009995b8ccd6c79e1f0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840362"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546653"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Windows-apparaat verwijderen uit beheer
 
@@ -76,24 +76,24 @@ Voer de volgende stappen uit om een Windows 10-apparaat te verwijderen uit behee
 ## <a name="remove-your-windows-81-computer"></a>Uw Windows 8.1-computer verwijderen
 Voer de volgende stappen uit om een Windows 8.1-apparaat te verwijderen uit Intune.
 
-1.  Ga naar **Pc-instellingen** > **Netwerk** > **Werkplek**.
-2.  Selecteer onder **Workplace Join** de optie **Verlaten**.
-3.  Selecteer onder **Apparaatbeheer inschakelen** de optie **Uitschakelen**.
-4.  Selecteer **Uitschakelen** in het pop-upvenster dat wordt geopend.
+1. Ga naar **Pc-instellingen** > **Netwerk** > **Werkplek**.
+2. Selecteer onder **Workplace Join** de optie **Verlaten**.
+3. Selecteer onder **Apparaatbeheer inschakelen** de optie **Uitschakelen**.
+4. Selecteer **Uitschakelen** in het pop-upvenster dat wordt geopend.
 
 ## <a name="remove-your-windows-81-phone"></a>Uw Windows 8.1-telefoon verwijderen
 Voer de volgende stappen uit om een Windows 8.1-telefoon te verwijderen uit Intune.
 
-1.  Ga naar **Instellingen** > **Werkplek**.
-2.  Tik op het werkplekaccount dat u wilt registreren.
-3.  Tik onder in het scherm op **Verwijderen**.
-4.  Tik in het dialoogvenster **Account verwijderen** op **Verwijderen**.  
+1. Ga naar **Instellingen** > **Werkplek**.
+2. Tik op het werkplekaccount dat u wilt registreren.
+3. Tik onder in het scherm op **Verwijderen**.
+4. Tik in het dialoogvenster **Account verwijderen** op **Verwijderen**.  
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Uw persoonlijke gegevens verwijderen na het verwijderen van de bedrijfsportal  
 
 Er zijn twee soorten gegevens die door de bedrijfsportal op uw Windows-apparaat worden opgeslagen:
 
--   **Diagnostische logboeken**: standaardgegevens over app-activiteit die door Microsoft worden verzameld. Deze wordenautomatisch gewist zodra u de Bedrijfsportal-app verwijdert. Activiteitgegevens van een app omvatten bijvoorbeeld gegevens over hoelang de app geopend was en of de app is vastgelopen.
--   **Toepassingscache**: ondersteuningsbestanden die de app nodig heeft om te kunnen werken, zoals pictogrammen en instellingen.
+- **Diagnostische logboeken**: standaardgegevens over app-activiteit die door Microsoft worden verzameld. Deze wordenautomatisch gewist zodra u de Bedrijfsportal-app verwijdert. Activiteitgegevens van een app omvatten bijvoorbeeld gegevens over hoelang de app geopend was en of de app is vastgelopen.
+- **Toepassingscache**: ondersteuningsbestanden die de app nodig heeft om te kunnen werken, zoals pictogrammen en instellingen.
 
 Als u de opgeslagen logboeken en de cache wilt verwijderen, voert u een van de volgende stappen uit:
 

@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61cbe326bbbd0e52c045491fe59ba837779ddb6e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c5b903cfa9a6700b8931ccedea0f44a9de0d8011
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041137"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549207"
 ---
-#  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune Data Warehouse-API
+# <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune Data Warehouse-API
 
 Met de Intune-datawarehouse-API krijgt u toegang tot uw Intune-gegevens in een machineleesbare indeling, voor gebruik in uw favoriete analyseprogramma. U kunt de API gebruiken om rapporten te genereren die inzicht in de mobiele omgeving van uw bedrijf bieden. De API maakt gebruikt van het OData-protocol, dat standaardpatronen volgt voor:
 
-  -   Aanvraag- en reactieheaders
-  -   Statuscodes
-  -   HTTP-methoden
-  -   URL-conventies
-  -   Mediatypen
-  -   Nettolading-indelingen
-  -   Queryopties
+  - Aanvraag- en reactieheaders
+  - Statuscodes
+  - HTTP-methoden
+  - URL-conventies
+  - Mediatypen
+  - Nettolading-indelingen
+  - Queryopties
 
 De OData (Open Data-protocol) is een OASIS-standaard (Organization for the Advancement of Structured Information Standards) waarmee de aanbevolen procedure voor het maken en gebruiken van RESTful API's wordt gedefinieerd. Het Intune-datawarehouse maakt gebruik van OData versie 4.0.
 
@@ -56,8 +56,8 @@ Zie [Gegevens ophalen uit de datawarehouse-API met een REST-client](reports-proc
 
 De API vereist autorisatie met Azure AD. Azure AD maakt gebruik van OAuth 2.0. Na autorisatie kunt u gegevens ophalen van de API door een HTTP GET-woord te gebruiken en contact te maken met de beschikbaar gemaakte entiteitverzamelingen. Zie voor meer informatie:
 
- -  [Autorisatie](reports-api-url.md)
- -  [API-URL-structuur](reports-api-url.md)
+ - [Autorisatie](reports-api-url.md)
+ - [API-URL-structuur](reports-api-url.md)
 
 ## <a name="intune-data-warehouse-data-model"></a>Intune-datawarehouse-gegevensmodel
 

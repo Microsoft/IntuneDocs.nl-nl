@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 633bf52084ad261f768cb4e59aaf4ce0ab5cd5bc
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
-ms.translationtype: HT
+ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468713"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494243"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>In ontwikkeling voor Microsoft Intune - juli 2019
 
@@ -58,8 +58,6 @@ Als ondersteuning bij uw gereedheid en planning worden op deze pagina updates vo
 <!-- ***********************************************-->
 ## <a name="app-management"></a>Appbeheer
 
-### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Apparaatgebruikers kunnen alle beheerde apps bekijken die ze hebben geïnstalleerd of hebben geprobeerd te installeren <!-- 2352913 -->
-In de bedrijfsportal voor Windows worden alle beheerde apps (zowel vereiste als beschikbare) weergegeven die op het apparaat van een gebruiker zijn geïnstalleerd. Gebruikers kunnen geprobeerde en in behandeling zijnde app-installaties bekijken met de huidige status ervan. Als uw organisatie geen apps verplicht of beschikbaar stelt, krijgen gebruikers het bericht te zien dat er geen bedrijfs-apps zijn geïnstalleerd. Gebruikers kunnen hun apps ook sorteren of filteren op installatiestatus.
 
 ### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>Aangepaste meldingen voor gebruikers en groepen    <!-- 16766574   -->
 Binnenkort kunnen aangepaste ad-hoc-pushmeldingen verzenden vanuit de bedrijfsportal-App voor gebruikers van iOS en Android-apparaten die u met Intune beheert. Deze aangepaste meldingen zijn niet gekoppeld aan specifieke Intune-functies en kan worden gebruikt voor enig doel dat u nodig hebt, met inbegrip van algemene meldingen die u wilt verzenden naar enkele of alle uw werknemers.  

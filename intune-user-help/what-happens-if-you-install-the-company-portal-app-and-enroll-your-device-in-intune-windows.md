@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85ccfb526ada4d6851fb32b077d07d3538f90361
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: efed9522f64cd7b34d702cd959f6b1aa4524f855
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490996"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545884"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw Windows-apparaat inschrijft bij Intune?
 
@@ -32,48 +32,48 @@ Wanneer u de bedrijfsportal-app installeert en deze vervolgens gebruikt om een W
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Wat gebeurt er met alle Windows-apparaten na de inschrijving
 Wanneer u een Windows- of Windows Phone-apparaat in Intune inschrijft, profiteert u van het volgende:
 
--   Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden.
+- Toegang tot het bedrijfsnetwerk en uw e-mail en werkbestanden.
 
--   Bedrijfsapps ophalen via de bedrijfsportalwebsite. (__Opmerking__: voor Windows 7 en Windows Vista kunt u alleen bedrijfsapps ophalen via de Bedrijfsportalwebsite.)
+- Bedrijfsapps ophalen via de bedrijfsportalwebsite. (__Opmerking__: voor Windows 7 en Windows Vista kunt u alleen bedrijfsapps ophalen via de Bedrijfsportalwebsite.)
 
--   Het e-mailaccount van uw bedrijf of school wordt automatisch ingesteld.
+- Het e-mailaccount van uw bedrijf of school wordt automatisch ingesteld.
 
--   De standaardinstellingen van uw telefoon herstellen als u deze verliest of als deze wordt gestolen.
+- De standaardinstellingen van uw telefoon herstellen als u deze verliest of als deze wordt gestolen.
 
 Wanneer u uw apparaat registreert, geeft u het ondersteuningsteam van uw bedrijf toestemming voor handelingen zoals:
 
--   Het herstellen van de standaardinstellingen van de fabrikant. Dit is handig als u het apparaat verliest of als dit wordt gestolen.
+- Het herstellen van de standaardinstellingen van de fabrikant. Dit is handig als u het apparaat verliest of als dit wordt gestolen.
 
--   Alleen bedrijfsgerelateerde bestanden en bedrijfsapps verwijderen. *Uw persoonlijke instellingen en gegevens worden niet verwijderd.*
+- Alleen bedrijfsgerelateerde bestanden en bedrijfsapps verwijderen. *Uw persoonlijke instellingen en gegevens worden niet verwijderd.*
 
--   Het ondersteuningsteam van uw bedrijf kan zien welke software op het apparaat is geïnstalleerd, inclusief software die u zelf hebt geïnstalleerd.
+- Het ondersteuningsteam van uw bedrijf kan zien welke software op het apparaat is geïnstalleerd, inclusief software die u zelf hebt geïnstalleerd.
 
--   Vereisten op uw apparaat instellen, zoals een wachtwoord of pincode voor het apparaat vereisen ter beveiliging van bedrijfsgegevens. Het ondersteuningsteam van uw bedrijf kan ook het aantal keren beperken dat u een onjuist wachtwoord mag invoeren. Als u te vaak een onjuist wachtwoord invoert, kan het apparaat worden vergrendeld.
+- Vereisten op uw apparaat instellen, zoals een wachtwoord of pincode voor het apparaat vereisen ter beveiliging van bedrijfsgegevens. Het ondersteuningsteam van uw bedrijf kan ook het aantal keren beperken dat u een onjuist wachtwoord mag invoeren. Als u te vaak een onjuist wachtwoord invoert, kan het apparaat worden vergrendeld.
 
--   Vereisen dat u de gegevens op uw apparaat versleutelt, zodat de bedrijfsgegevens beter zijn beveiligd als u het apparaat verliest of als dit wordt gestolen.
+- Vereisen dat u de gegevens op uw apparaat versleutelt, zodat de bedrijfsgegevens beter zijn beveiligd als u het apparaat verliest of als dit wordt gestolen.
 
--   Vereisen dat u voorwaarden accepteert.
+- Vereisen dat u voorwaarden accepteert.
 
--   Voorkomen dat u foto's van bedrijfsgerelateerde gegevens maakt.
+- Voorkomen dat u foto's van bedrijfsgerelateerde gegevens maakt.
 
 ## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>Wat gebeurt er met alle Windows-pc’s na de inschrijving
 
--  Er wordt software op de computer geïnstalleerd, zodat het ondersteuningsteam van uw bedrijf de computer kan beheren en u bedrijfsbronnen (zoals apps en ondersteuningsinformatie) kunt gebruiken. Het ondersteuningsteam van uw bedrijf kan deze software automatisch bijwerken.
+- Er wordt software op de computer geïnstalleerd, zodat het ondersteuningsteam van uw bedrijf de computer kan beheren en u bedrijfsbronnen (zoals apps en ondersteuningsinformatie) kunt gebruiken. Het ondersteuningsteam van uw bedrijf kan deze software automatisch bijwerken.
 
--  Intune Endpoint Protection wordt mogelijk op de computer geïnstalleerd. Dit is software die op virussen en kwaadaardige software controleert.
+- Intune Endpoint Protection wordt mogelijk op de computer geïnstalleerd. Dit is software die op virussen en kwaadaardige software controleert.
 
--  Het ondersteuningsteam van uw bedrijf kan gegevens van de harde schijf van uw computer verzamelen of verwijderen.
+- Het ondersteuningsteam van uw bedrijf kan gegevens van de harde schijf van uw computer verzamelen of verwijderen.
 
--  Het ondersteuningsteam van uw bedrijf kan apps en updates op uw computer installeren.
+- Het ondersteuningsteam van uw bedrijf kan apps en updates op uw computer installeren.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Wat gebeurt er elke acht uur na de inschrijving van het apparaat
 
 Ongeveer elke acht uur gebeurt er voor ingeschreven apparaten het volgende:
 
--   Beleids- of app-updates die het ondersteuningsteam van uw bedrijf beschikbaar heeft gemaakt, worden gedownload.
+- Beleids- of app-updates die het ondersteuningsteam van uw bedrijf beschikbaar heeft gemaakt, worden gedownload.
 
--   Eventuele hardware-inventarisatie-updates worden verzonden.
+- Eventuele hardware-inventarisatie-updates worden verzonden.
 
--   Eventuele inventarisupdates van de bedrijfsapps worden verzonden.
+- Eventuele inventarisupdates van de bedrijfsapps worden verzonden.
 
 Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

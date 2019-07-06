@@ -17,22 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: deea42bf9ef35d173761fddb16aa43eaa8876269
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a1ee376bdf2dff6dc59b6c51b20ff87c1ed81d82
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041079"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549225"
 ---
 # <a name="reference-for-application-entities"></a>Naslag voor toepassingsentiteiten
 
 De categorie **Toepassing** bevat entiteiten voor mobiele apparaten waarmee gegevens worden bijgehouden, zoals:
 
-  -  Versies van een app
-  -  Installatiebron van een app
-  -  Type ontwikkelaars die een app hebben gemaakt
-  -  Beheerde softwaretypen voor een app, bijvoorbeeld **sidecar** of **desktop**
-  -  VPP-status (Volume Purchasing Program) van een app
+  - Versies van een app
+  - Installatiebron van een app
+  - Type ontwikkelaars die een app hebben gemaakt
+  - Beheerde softwaretypen voor een app, bijvoorbeeld **sidecar** of **desktop**
+  - VPP-status (Volume Purchasing Program) van een app
 
 ## <a name="apprevision"></a>AppRevision
 

@@ -18,12 +18,12 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35d77c9aa739096f36f4dbf4b75a4186e55a3381
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5ae4e454a0ca41858cb670790fd5acd4d6bf998a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835060"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546617"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Beheerde apps op uw iOS-apparaat gebruiken
 
@@ -38,9 +38,9 @@ Wanneer u toegang krijgt tot bedrijfsgegevens in een beheerde app, wordt een ber
 ## <a name="how-do-i-get-managed-apps"></a>Hoe kom ik in het bezit van beheerde apps?  
 Beheerde apps zijn op verschillende manieren beschikbaar:
 
--   Wanneer het apparaat is geregistreerd bij Microsoft Intune, installeert u de app via de bedrijfsportal-app of de bedrijfsportalwebsite. Het is ook mogelijk dat de app door het ondersteuningsteam van het bedrijf op het apparaat wordt geïnstalleerd. Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md) voor meer informatie over het registreren van apparaten.
+- Wanneer het apparaat is geregistreerd bij Microsoft Intune, installeert u de app via de bedrijfsportal-app of de bedrijfsportalwebsite. Het is ook mogelijk dat de app door het ondersteuningsteam van het bedrijf op het apparaat wordt geïnstalleerd. Zie [Uw iOS-apparaat registreren bij Intune](enroll-your-device-in-intune-ios.md) of [Uw Mac OS-apparaat registreren bij Intune](enroll-your-device-in-intune-macos.md) voor meer informatie over het registreren van apparaten.
 
--   U installeert een app uit de App Store en vervolgens meldt u zich aan met uw zakelijke gebruikersaccount dat wordt beheerd met Intune.
+- U installeert een app uit de App Store en vervolgens meldt u zich aan met uw zakelijke gebruikersaccount dat wordt beheerd met Intune.
 
 Mogelijk koopt het ondersteuningsteam van het bedrijf soms meerdere licenties voor een app die u installeert. Het is normaal dat u wordt gevraagd om de voorwaarden van het Apple Volume Purchase Program te accepteren en dit kunt u dan ook doen. Als u ze niet accepteert, kunt u de app niet installeren.
 
@@ -56,22 +56,22 @@ Mogelijk koopt het ondersteuningsteam van het bedrijf soms meerdere licenties vo
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>Wat kan het ondersteuningsteam van mijn bedrijf beheren in een app?  
 Hier volgen enkele voorbeelden van opties die het ondersteuningsteam van het bedrijf in een app kan beheren en die van invloed kunnen zijn op het gebruik van bedrijfsgegevens op uw apparaat:
 
--   Toegang tot bepaalde websites
+- Toegang tot bepaalde websites
 
--   Overdracht van gegevens tussen apps
+- Overdracht van gegevens tussen apps
 
--   Opslaan van bestanden
+- Opslaan van bestanden
 
--   Kopiëren en plakken
+- Kopiëren en plakken
 
--   Vereisten voor toegang via een pincode
+- Vereisten voor toegang via een pincode
 
--   Uw aanmelding, met bedrijfsreferenties
+- Uw aanmelding, met bedrijfsreferenties
 
--   De mogelijkheid om een back-up te maken in de cloud
+- De mogelijkheid om een back-up te maken in de cloud
 
--   De mogelijkheid om schermafbeeldingen te maken
+- De mogelijkheid om schermafbeeldingen te maken
 
--   Vereisten voor de versleuteling van gegevens
+- Vereisten voor de versleuteling van gegevens
 
 Neem contact op met het ondersteuningsteam van het bedrijf voor meer informatie over de beheerde apps op uw apparaat. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
