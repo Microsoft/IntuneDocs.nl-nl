@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a87b54dde9afe9803d71f7cbef62f7c55375f51b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3bf59f75d41d50cfd9280251e20964a35a149a8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040644"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403579"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>De beveiligingsbasislijn en het beveiligingsprofiel controleren in Microsoft Intune  
 
@@ -34,7 +34,7 @@ In [Security baselines in Intune](security-baselines.md) (Beveiligingsbasislijne
 
 Als u een basislijn controleert, krijgt u inzicht in de beveiligingsstatus van uw apparaten op basis van de aanbevelingen van Microsoft. U kunt deze inzichten weergeven in het overzichtsvenster van de beveiligingsbasislijn op de Intune-console.  Het kan tot 24 uur na de eerste toewijzing van een basislijn duren voordat gegevens worden weergegeven. Latere wijzigingen worden na maximaal zes uur weergegeven.  
 
-Meld u aan bij de [Intune-portal](https://go.microsoft.com/fwlink/?linkid=2090973) om bewakingsgegevens voor de basislijn en apparaten weer te geven. Selecteer vervolgens **Apparaatbeveiliging** > **Beveiligingsbasislijnen (preview-versie)**, selecteer een basislijn en bekijk het **overzichtsvenster**.
+Meld u aan bij de [Intune-portal](https://go.microsoft.com/fwlink/?linkid=2090973) om bewakingsgegevens voor de basislijn en apparaten weer te geven. Selecteer vervolgens **Apparaatbeveiliging** > **Beveiligingsbasislijnen**, selecteer een basislijn en bekijk het **overzichtsvenster**.
 
 In het **overzichtsvenster** staan twee methoden om de status te bewaken:
 - **Apparaatweergave**: een samenvatting van het aantal apparaten in elke statuscategorie voor de basislijn.  

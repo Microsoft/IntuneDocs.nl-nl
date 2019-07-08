@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 3cfe2aef93fb8b7c420ee6513945f11bee5bd0be
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804699"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529722"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
@@ -65,7 +65,7 @@ Als u `IntuneWinAppUtil.exe` uitvoert zonder parameters vanuit het opdrachtvenst
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Help    |
 |    `-c <setup_folder>`     |    De map voor alle installatiebestanden. Alle bestanden in deze map worden gecomprimeerd in een *.intunewin*-bestand.    |
-|   ` -s <setup_file>`     |    Installatiebestand (zoals *setup.exe* of *setup.msi*).    |
+|    `-s <setup_file>`     |    Installatiebestand (zoals *setup.exe* of *setup.msi*).    |
 |    `-o <output_folder>`     |    Uitvoermap voor het gegenereerde *.intunewin*-bestand.    |
 |    `-q`       |    Stille modus    |
 
@@ -98,28 +98,28 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
 ### <a name="step-1-specify-the-software-setup-file"></a>Stap 1: locatie van het software-installatiebestand opgeven
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3.  Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps** > **Toevoegen**.
-4.  Selecteer in het app-deelvenster **Toevoegen** **Windows-app (Win32)** uit de opgegeven vervolgkeuzelijst.
+3. Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps** > **Toevoegen**.
+4. Selecteer in het app-deelvenster **Toevoegen** **Windows-app (Win32)** uit de opgegeven vervolgkeuzelijst.
 
     ![Schermafbeelding van de blade App toevoegen - vervolgkeuzelijst Type toevoegen](./media/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Stap 2: het app-pakketbestand uploaden
 
-1.  Selecteer in het deelvenster **App toevoegen** de optie **App-pakketbestand** om een bestand te selecteren. Het deelvenster App-pakketbestand wordt weergegeven.
+1. Selecteer in het deelvenster **App toevoegen** de optie **App-pakketbestand** om een bestand te selecteren. Het deelvenster App-pakketbestand wordt weergegeven.
 
     ![Schermafbeelding van de blade App-pakketbestand](./media/apps-win32-app-02.png)
 
-2.  Selecteer in het deelvenster **App-pakketbestand** de bladerknop. Selecteer vervolgens een Windows-installatiebestand met de extensie *.intunewin*.
+2. Selecteer in het deelvenster **App-pakketbestand** de bladerknop. Selecteer vervolgens een Windows-installatiebestand met de extensie *.intunewin*.
 
     > [!IMPORTANT]
     > Gebruik de nieuwste versie van het hulpprogramma voor voorbereiding van Microsoft Win32-inhoud. Als u de nieuwste versie niet gebruikt, ziet u een waarschuwing om aan te geven dat de app met een oudere versie van het hulpprogramma voor voorbereiding van Microsoft Win32-inhoud is ingepakt. 
 
-3.  Klik op **OK** wanneer u klaar bent.
+3. Klik op **OK** wanneer u klaar bent.
 
 ### <a name="step-3-configure-app-information"></a>Stap 3: App-gegevens configureren
 
-1.  Selecteer in het deelvenster **App toevoegen** de optie **App-gegevens** om de app te configureren.
-2.  Configureer de volgende gegevens in het deelvenster **App-gegevens**. Sommige van de waarden in dit deelvenster worden mogelijk automatisch ingevuld.
+1. Selecteer in het deelvenster **App toevoegen** de optie **App-gegevens** om de app te configureren.
+2. Configureer de volgende gegevens in het deelvenster **App-gegevens**. Sommige van de waarden in dit deelvenster worden mogelijk automatisch ingevuld.
     - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal wordt weergegeven. Als dezelfde app-naam twee keer voorkomt, wordt elke app in de bedrijfsportal weergegeven.
     - **Beschrijving**: Voer een beschrijving in voor de app. De beschrijving wordt weergegeven in de bedrijfsportal.
     - **Uitgever**: Voer de naam van de uitgever van de app in.
@@ -131,19 +131,20 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
     - **Eigenaar**: voer een naam in voor de eigenaar van deze app (optioneel). Bijvoorbeeld **HR-afdeling**.
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
     - **Logo**: upload een pictogram dat u aan de app wilt koppelen. Het pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-3.  Klik op **OK** wanneer u klaar bent.
+3. Klik op **OK** wanneer u klaar bent.
 
 ### <a name="step-4-configure-app-installation-details"></a>Stap 4: app-installatiegegevens configureren
-1.  Selecteer in het deelvenster **App toevoegen** de optie **Programma** om de installatie- en verwijderopdrachten voor de app te configureren.
-2.  Voeg de volledige installatieopdrachtregel toe om de app te installeren. 
+1. Selecteer in het deelvenster **App toevoegen** de optie **Programma** om de installatie- en verwijderopdrachten voor de app te configureren.
+2. Voeg de volledige installatieopdrachtregel toe om de app te installeren. 
 
     Als de bestandsnaam van uw app bijvoorbeeld **MyApp123** is, voegt u het volgende toe:<br>
     `msiexec /p “MyApp123.msp”`<p>
     En als de toepassing `ApplicationName.exe` is, bestaat de opdracht uit de naam van de toepassing, gevolgd door de opdrachtargumenten (schakelaars) die door het pakket worden ondersteund. <br>Bijvoorbeeld:<br>
     `ApplicationName.exe /quiet`<br>
-    In de bovenstaande opdracht biedt het `ApplicationName.exe`-pakket ondersteuning voor het opdrachtargument `/quiet`.<p> Neem voor de specifieke argumenten die door het toepassingspakket worden ondersteund contact op met uw toepassingsleverancier.
+    In de bovenstaande opdracht biedt het `ApplicationName.exe`-pakket ondersteuning voor het opdrachtargument `/quiet`.<p> 
+    Neem voor de specifieke argumenten die door het toepassingspakket worden ondersteund contact op met uw toepassingsleverancier.
 
-3.  Voeg de volledige opdrachtregel voor verwijdering toe om de app te verwijderen op basis van de unieke id van de app. 
+3. Voeg de volledige opdrachtregel voor verwijdering toe om de app te verwijderen op basis van de unieke id van de app. 
 
     Bijvoorbeeld: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
@@ -154,18 +155,18 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
     > 
     > Het installeren en verwijderen van de Win32-app wordt uitgevoerd met de beheerdersbevoegdheden (standaard) wanneer voor de app is ingesteld dat deze in de gebruikerscontext moet worden geïnstalleerd en de eindgebruiker op het apparaat beheerdersbevoegdheden heeft.
 
-4.  Klik op **OK** wanneer u klaar bent.
+4. Klik op **OK** wanneer u klaar bent.
 
 ### <a name="step-5-configure-app-requirements"></a>Stap 5: de app-vereisten configureren
 
-1.  Selecteer in het deelvenster **App toevoegen** de optie **Vereisten** om de vereisten waaraan apparaten moeten voldoen voordat de app wordt geïnstalleerd te configureren.
-2.  Configureer de volgende gegevens in het deelvenster **Een regel voor vereisten toevoegen**. Sommige van de waarden in dit deelvenster worden mogelijk automatisch ingevuld.
+1. Selecteer in het deelvenster **App toevoegen** de optie **Vereisten** om de vereisten waaraan apparaten moeten voldoen voordat de app wordt geïnstalleerd te configureren.
+2. Configureer de volgende gegevens in het deelvenster **Een regel voor vereisten toevoegen**. Sommige van de waarden in dit deelvenster worden mogelijk automatisch ingevuld.
     - **Architectuur van besturingssysteem**: kies de architecturen die nodig zijn om de app te installeren.
     - **Minimumversie van het besturingssysteem**: selecteer de minimumversie van het besturingssysteem die nodig is om de app te installeren.
-    - **Vereiste schijfruimte (MB)** : voeg optioneel de vrije schijfruimte op het systeemstation toe die nodig is om de app te installeren.
-    - **Vereiste fysieke geheugen (MB)** : voeg optioneel het fysieke geheugen (RAM) toe dat nodig is om de app te installeren.
+    - **Vereiste schijfruimte (MB)**: voeg optioneel de vrije schijfruimte op het systeemstation toe die nodig is om de app te installeren.
+    - **Vereiste fysieke geheugen (MB)**: voeg optioneel het fysieke geheugen (RAM) toe dat nodig is om de app te installeren.
     - **Minimumaantal vereiste logische processors**: voeg optioneel het minimumaantal logische processors toe dat nodig is om de app te installeren.
-    - **Minimale vereiste processorsnelheid (MHz)** : voeg optioneel de minimale processorsnelheid toe die nodig is om de app te installeren.
+    - **Minimale vereiste processorsnelheid (MHz)**: voeg optioneel de minimale processorsnelheid toe die nodig is om de app te installeren.
 
 3. Klik op **Toevoegen** om de blade **Een vereisteregel toevoegen** weer te geven en aanvullende vereisteregels te configureren. Selecteer het **Vereistetype** om het regeltype te kiezen dat u wilt gebruiken om te bepalen hoe een vereiste moet worden gevalideerd. Vereisteregels kunnen op informatie over het bestandssysteem, registerwaarden of PowerShell-scripts worden gebaseerd. 
     - **Bestand**: Als u **Bestand** als **Vereistetype** kiest, moet de vereisteregel een bestand of map, datum, versie of grootte selecteren. 
@@ -184,32 +185,32 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
         - **U kunt dit script als volgt uitvoeren met behulp van de aanmeldingsgegevens**: Selecteer **Ja** om het script uit te voeren met behulp van de referenties waarmee op het apparaat is aangemeld**.
         - **Controle van scripthandtekening afdwingen**: selecteer **Ja** om te verifiëren dat het script is ondertekend door een vertrouwde uitgever, zodat het script zonder waarschuwingen of prompts kan worden uitgevoerd. Het script wordt niet geblokkeerd terwijl het wordt uitgevoerd. Selecteer **Nee** (standaard) om het script met bevestiging van de eindgebruiker uit te voeren zonder handtekeningverificatie.
         - **Gegevenstype uitvoer selecteren**: Selecteer het gegevenstype dat is gebruikt voor het bepalen van de overeenkomst met een vereisteregel.
-4.  Klik op **OK** wanneer u klaar bent.
+4. Klik op **OK** wanneer u klaar bent.
 
 ### <a name="step-6-configure-app-detection-rules"></a>Stap 6: app-detectieregels configureren
 
-1.  Selecteer in het deelvenster **App toevoegen** de optie **Detectieregels** om de regels voor het detecteren van de aanwezigheid van de app te configureren.
-2.  Selecteer in het veld **Regelnotatie** hoe de aanwezigheid van de app moet worden gedetecteerd. U kunt de detectieregels handmatig configureren of een aangepast script gebruiken om de aanwezigheid van de app te detecteren. U moet minstens één detectieregel kiezen. 
+1. Selecteer in het deelvenster **App toevoegen** de optie **Detectieregels** om de regels voor het detecteren van de aanwezigheid van de app te configureren.
+2. Selecteer in het veld **Regelnotatie** hoe de aanwezigheid van de app moet worden gedetecteerd. U kunt de detectieregels handmatig configureren of een aangepast script gebruiken om de aanwezigheid van de app te detecteren. U moet minstens één detectieregel kiezen. 
 
     > [!NOTE]
     > U kunt in het deelvenster **Detectieregels** meerdere regels toevoegen. Er moet aan de voorwaarden van **alle** regels worden voldaan om de app te detecteren.
 
     - **Detectieregels handmatig configureren**: u kunt een van de volgende regeltypen selecteren:
-        1.  **MSI**: verifiëren op basis van een controle van de MSI-versie. Deze optie kan slechts eenmaal worden toegevoegd. Als u dit regeltype kiest, hebt u twee instellingen:
+        1. **MSI**: verifiëren op basis van een controle van de MSI-versie. Deze optie kan slechts eenmaal worden toegevoegd. Als u dit regeltype kiest, hebt u twee instellingen:
             - **MSI-productcode**: voeg een geldige MSI-productcode voor de app toe.
             - **Versiecontrole van MSI-product**: selecteer **Ja** om naast de MSI-productcode de productversie van MSI te controleren.
-        2.  **Bestand**: verifieer op basis van bestand- of mapdetectie, datum, versie of grootte.
+        2. **Bestand**: verifieer op basis van bestand- of mapdetectie, datum, versie of grootte.
             - **Pad**: het volledige pad van de map met het bestand of de map dat/die u wilt detecteren.
             - **Bestand of map**: het bestand of de map dat/die u wilt detecteren.
             - **Detectiemethode**: selecteer het type detectiemethode dat moet worden gebruikt om de aanwezigheid van de app te valideren.
             - **Gekoppeld aan een 32-bits app op 64-bits clients**: selecteer **Ja** om padomgevingsvariabelen in een 32-bits context op 64-bits clients uit te breiden. Selecteer **Nee** (standaard) om padvariabelen in een 64-bits context op 64-bits clients uit te breiden. 32-bits clients gebruiken altijd de 32-bits context.
             
             **Voorbeelden van detectie op basis van bestanden**
-            1.  Controleer op het bestaan van het bestand.
+            1. Controleer op het bestaan van het bestand.
          
                 ![Schermopname van het deelvenster Detectieregels: bestaan van bestand](./media/apps-win32-app-03.png)
         
-            2.  Controleer op het bestaan van de map.
+            2. Controleer op het bestaan van de map.
          
                 ![Schermopname van het deelvenster Detectieregels: bestaan van map](./media/apps-win32-app-04.png)
         
@@ -220,62 +221,62 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
             - **Gekoppeld aan een 32-bits app op 64-bits clients**: selecteer **Ja** om het 32-bits register te doorzoeken op 64-bits clients. Selecteer **Nee** (standaard) om het 64-bits register op 64-bits clients te doorzoeken. Voor 32-bits clients wordt altijd het 32-bits register doorzocht.
             
             **Voorbeelden voor detectie op basis van een register**
-            1.  Controleer of er een registersleutel bestaat.
+            1. Controleer of er een registersleutel bestaat.
             
                 ![Schermopname van het deelvenster Detectieregels: registersleutel bestaat](./media/apps-win32-app-05.png)    
             
-            2.  Controleer of er registerwaarden bestaan.
+            2. Controleer of er registerwaarden bestaan.
         
                 ![Schermopname van het deelvenster Detectieregels: registerwaarde bestaat](./media/apps-win32-app-06.png)    
         
-            3.  Controleer op gelijke tekenreeksen aan die van de registerwaarde.
+            3. Controleer op gelijke tekenreeksen aan die van de registerwaarde.
         
                 ![Schermopname van het deelvenster Detectieregels: gelijke tekenreeks registerwaarde](./media/apps-win32-app-07.png)    
      
     - **Een aangepast detectiescript gebruiken**: geef het PowerShell-script op dat wordt gebruikt voor het detecteren van deze app. 
     
-        1.  **Scriptbestand**: selecteer een PowerShell-script waarmee de aanwezigheid van de app op de client wordt gedetecteerd. De app worden gedetecteerd wanneer het script zowel een afsluitcode met waarde 0 retourneert als een tekenreekswaarde naar STDOUT schrijft.
+        1. **Scriptbestand**: selecteer een PowerShell-script waarmee de aanwezigheid van de app op de client wordt gedetecteerd. De app worden gedetecteerd wanneer het script zowel een afsluitcode met waarde 0 retourneert als een tekenreekswaarde naar STDOUT schrijft.
 
-        2.  **Script uitvoeren als 32-bits proces op 64-bits clients** - selecteer **Ja** om het script uit te voeren in een 32-bits proces op 64-bits clients. Selecteer **Nee** (standaard) om het script in een 64-bits proces op 64-bits clients uit te voeren. 32-bits clients voeren het script uit in een 32-bits proces.
+        2. **Script uitvoeren als 32-bits proces op 64-bits clients** - selecteer **Ja** om het script uit te voeren in een 32-bits proces op 64-bits clients. Selecteer **Nee** (standaard) om het script in een 64-bits proces op 64-bits clients uit te voeren. 32-bits clients voeren het script uit in een 32-bits proces.
 
-        3.  **Controle van scripthandtekening afdwingen**: selecteer **Ja** om te verifiëren dat het script is ondertekend door een vertrouwde uitgever, zodat het script zonder waarschuwingen of prompts kan worden uitgevoerd. Het script wordt niet geblokkeerd terwijl het wordt uitgevoerd. Selecteer **Nee** (standaard) om het script met bevestiging van de eindgebruiker uit te voeren zonder handtekeningverificatie.
+        3. **Controle van scripthandtekening afdwingen**: selecteer **Ja** om te verifiëren dat het script is ondertekend door een vertrouwde uitgever, zodat het script zonder waarschuwingen of prompts kan worden uitgevoerd. Het script wordt niet geblokkeerd terwijl het wordt uitgevoerd. Selecteer **Nee** (standaard) om het script met bevestiging van de eindgebruiker uit te voeren zonder handtekeningverificatie.
     
             Intune-agent controleert de resultaten vanuit het script. Het leest de waarden die door het script zijn geschreven naar de standaard uitvoerstroom (STDOUT), de standaardfoutstroom (STDERR) en de afsluitcode. Als het script wordt afgesloten met een andere waarde dan nul, mislukt het script en is de app-detectiestatus Niet geïnstalleerd. Als de afsluitcode nul is en STDOUT gegevens heeft, is de toepassingsdetectiestatus Geïnstalleerd. 
 
             > [!NOTE]
             > Microsoft adviseert om uw script te coderen als UTF-8. Als het script wordt afgesloten met de waarde 0, is de uitvoering van het script gelukt. Het tweede uitvoerkanaal geeft aan dat de app is gedetecteerd: STDOUT-gegevens geven aan dat de app is gevonden op de client. We zoeken niet naar een bepaalde tekenreeks van STDOUT.
 
-        4.  Nadat u uw regel(s) hebt toegevoegd, selecteert u **Toevoegen** > **OK**.
+        4. Nadat u uw regel(s) hebt toegevoegd, selecteert u **Toevoegen** > **OK**.
 
 ### <a name="step-7-configure-app-return-codes"></a>Stap 7: app-retourcodes configureren
 
-1.  Selecteer in het deelvenster **App toevoegen** de optie **Retourcodes** om de retourcodes toe te voegen om het gedrag voor opnieuw proberen van de installatie of het gedrag na installatie voor de app op te geven. De retourcodevermeldingen worden tijdens het maken van een app standaard toegevoegd. U kunt echter aanvullende retourcodes toevoegen of bestaande retourcodes wijzigen. 
-2.  Voeg in he deelvenster **Retourcodes** extra retourcodes toe of wijzig bestaande retourcodes.
+1. Selecteer in het deelvenster **App toevoegen** de optie **Retourcodes** om de retourcodes toe te voegen om het gedrag voor opnieuw proberen van de installatie of het gedrag na installatie voor de app op te geven. De retourcodevermeldingen worden tijdens het maken van een app standaard toegevoegd. U kunt echter aanvullende retourcodes toevoegen of bestaande retourcodes wijzigen. 
+2. Voeg in he deelvenster **Retourcodes** extra retourcodes toe of wijzig bestaande retourcodes.
     - **Mislukt**: de retourwaarde die wijst op een app-installatiefout.
     - **Hard opstarten**: de retourcode voor hard opstarten staat niet toe dat de volgende Win32-apps worden geïnstalleerd op de client zonder opnieuw op te starten. 
     - **Zacht opstarten**: de retourcode voor zacht opstarten staat toe dat de volgende Win32-app wordt geïnstalleerd zonder dat de client opnieuw moet worden opgestart. Opnieuw opstarten is nodig om de installatie van de huidige app te voltooien.
     - **Opnieuw**: de retourcode-agent Opnieuw probeert de app drie keer te installeren. Er wordt tussen elke poging 5 minuten gewacht. 
     - **Gelukt**: de retourwaarde die aangeeft dat de app is geïnstalleerd.
-3.  Selecteer **OK** nadat u iets hebt toegevoegd aan de lijst met retourcodes of deze hebt aangepast.
+3. Selecteer **OK** nadat u iets hebt toegevoegd aan de lijst met retourcodes of deze hebt aangepast.
 
 ### <a name="step-8-add-the-app"></a>Stap 8: De app toevoegen
 
-1.  Controleer in het deelvenster **App toevoegen** of de app-gegevens die u hebt geconfigureerd correct zijn.
-2.  Selecteer **Toevoegen** om de app te uploaden naar Intune.
+1. Controleer in het deelvenster **App toevoegen** of de app-gegevens die u hebt geconfigureerd correct zijn.
+2. Selecteer **Toevoegen** om de app te uploaden naar Intune.
 
 ### <a name="step-9-assign-the-app"></a>Stap 9: de app toewijzen
 
-1.  Selecteer in het deelvenster van de app de optie **Toewijzingen**.
-2.  Selecteer **Groep toevoegen** om het deelvenster **Groep toevoegen** te openen dat is gerelateerd aan de app.
-3.  Selecteer een **toewijzingstype** voor de specifieke app:
+1. Selecteer in het deelvenster van de app de optie **Toewijzingen**.
+2. Selecteer **Groep toevoegen** om het deelvenster **Groep toevoegen** te openen dat is gerelateerd aan de app.
+3. Selecteer een **toewijzingstype** voor de specifieke app:
     - **Beschikbaar voor ingeschreven apparaten**: gebruikers installeren de app vanuit de bedrijfsportal-app of -website.
     - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen.
     - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen.
-4.  Selecteer **Opgenomen groepen** en wijs de groepen toe die deze app gaan gebruiken.
-5.  Selecteer **OK** op het deelvenster **Toewijzen** de selectie te voltooien van de groepen die moeten worden opgenomen.
-6.  Selecteer **Groepen uitsluiten** als u gebruikersgroepen wilt uitsluiten zodat ze niet worden beïnvloed door deze app-toewijzing.
-7.  Selecteer **OK** in het deelvenster **Groep toevoegen**.
-8.  Selecteer **Opslaan** in het deelvenster **Toewijzingen**.
+4. Selecteer **Opgenomen groepen** en wijs de groepen toe die deze app gaan gebruiken.
+5. Selecteer **OK** op het deelvenster **Toewijzen** de selectie te voltooien van de groepen die moeten worden opgenomen.
+6. Selecteer **Groepen uitsluiten** als u gebruikersgroepen wilt uitsluiten zodat ze niet worden beïnvloed door deze app-toewijzing.
+7. Selecteer **OK** in het deelvenster **Groep toevoegen**.
+8. Selecteer **Opslaan** in het deelvenster **Toewijzingen**.
 
 U hebt nu de stappen voor het toevoegen van een Win32-app aan Intune voltooid. Zie [Apps toewijzen aan groepen met Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) en [App-gegevens en -toewijzingen controleren met Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor) voor meer informatie over app-toewijzing en -controle.
 
@@ -290,7 +291,7 @@ U kunt kiezen of elke afhankelijke app automatisch moet worden geïnstalleerd. S
 U kunt met de volgende stappen een app-afhankelijkheid aan uw Win32-app toevoegen:
 
 1. Selecteer **Client-apps** > **Apps** in Intune om uw lijst met toegevoegde client-apps weer te geven. 
-2. Selecteer een toegevoegde **Windows-app (Win32-app)** . 
+2. Selecteer een toegevoegde **Windows-app (Win32-app)**. 
 3. Selecteer **Afhankelijkheden** om de afhankelijke apps toe te voegen die moeten worden geïnstalleerd voordat de Win32-app kan worden geïnstalleerd. 
 4. Klik op **Toevoegen** om een app-afhankelijkheid toe te voegen.
 5. Zodra u de afhankelijke app(s) hebt toegevoegd, klikt u op **Selecteren**.

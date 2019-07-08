@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,18 +16,16 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568164"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403464"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Bulkregistratie voor Windows-apparaten
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Als beheerder kunt u grote aantallen nieuwe Windows-apparaten toevoegen aan Azure Active Directory en Intune. Voor bulkregistratie van apparaten voor uw Azure AD-tenant, maakt u een inrichtingspakket met de app Windows Configuration Designer (WCD). Als u het inrichtingspakket toepast op apparaten die bedrijfseigendom zijn, worden de apparaten toegevoegd aan uw Azure AD-tenant en geregistreerd voor het beheer van Intune. Zodra het pakket is toegepast, kunnen uw Azure AD-gebruikers zich hierbij aanmelden.
+Als beheerder kunt u grote aantallen nieuwe Windows-apparaten toevoegen aan Azure Active Directory en Intune. Voor bulkregistratie van apparaten voor uw Azure AD-tenant, maakt u een inrichtingspakket met de app Windows Configuration Designer (WCD). Als u het inrichtingspakket toepast op apparaten die bedrijfseigendom zijn, worden de apparaten toegevoegd aan uw Azure AD-tenant en geregistreerd voor het beheer van Intune. Nadat het pakket is toegepast, kunnen uw Azure AD-gebruikers zich hierbij aanmelden.
 
 Azure AD-gebruikers zijn standaardgebruikers op deze apparaten en ontvangen toegewezen Intune-beleid en de vereiste apps. Windows-apparaten die zijn geregistreerd bij Intune via Windows-bulkinschrijving, kunnen de bedrijfsportal-app gebruiken voor het installeren van beschikbare apps. 
 
@@ -51,6 +48,7 @@ Azure AD-gebruikers zijn standaardgebruikers op deze apparaten en ontvangen toeg
    - **Beschrijving**: een optionele beschrijving van het project ![Schermafbeelding van het opgeven van de naam, projectmap en beschrijving in de app Windows Configuration Designer](media/bulk-enroll-name.png)
 
 4. Voer een unieke naam in voor uw apparaten. Namen kunnen een serienummer (%SERIAL%) of een willekeurig aantal tekens bevatten. U kunt eventueel ook een productcode invoeren als u de editie van Windows bijwerkt, u kunt het apparaat configureren voor gedeeld gebruik en u kunt vooraf geïnstalleerde software verwijderen.
+   
    ![Schermafbeelding van het opgeven van de naam en productsleutel in de app Windows Configuration Designer](media/bulk-enroll-device.png)
 
 5. U kunt eventueel instellen met welk het Wi-Fi-netwerk apparaten verbinding maken wanneer ze de eerste keer worden gestart.  Als de netwerkapparaten niet zijn geconfigureerd, is een bekabelde netwerkverbinding vereist wanneer het apparaat voor de eerste keer wordt gestart.
@@ -92,12 +90,9 @@ Inrichten is bedoeld om te gebruiken op nieuwe Windows-apparaten. Bij inrichting
 - Als een inrichtingspakket probeert lid te worden van een Active Directory-domein of Azure Active Directory-tenant en er hierbij geen lokaal account wordt gemaakt, kan het apparaat onbereikbaar worden als het lid worden van het domein mislukt omdat er geen netwerkverbinding is.
 - Scripts van het inrichtingspakket worden uitgevoerd binnen de systeemcontext. De scripts kunnen willekeurige wijzigingen aanbrengen in het bestandssysteem en configuraties van het apparaat. Door een schadelijk of fout script kan het apparaat in een status komen die alleen kan worden beëindigd door een installatiekopie terug te zetten op het apparaat of het apparaat te wissen.
 
-### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemen met bulkinschrijving en de bedrijfsportal
-Als een gebruiker via de bedrijfsportal probeert een apparaat te registreren dat eerder bulksgewijs is geregistreerd, wordt er een waarschuwing weergegeven dat er verdere actie is vereist voor het apparaat, hetzij door installatie of registratie. Het apparaat wordt geregistreerd, maar de registratie wordt niet herkend door de bedrijfsportal-app of -website.
-
 ### <a name="bulk-enrollment-with-wi-fi"></a>Bulkregistratie met Wi-Fi 
 
 Voor in bulk geregistreerde apparaten kunnen geen op gebruikers gerichte certificaten en Wi-Fi-implementatie worden gebruikt. U moet [certificaten op apparaatniveau](certificates-configure.md) gebruiken voor het beheren van deze verbindingen. 
 
 ### <a name="conditional-access"></a>Voorwaardelijke toegang
-Voorwaardelijke toegang is niet beschikbaar voor Windows-apparaten die zijn geregistreerd met bulkinschrijving.
+Voorwaardelijke toegang is niet beschikbaar voor Windows-apparaten die zijn geregistreerd via bulkinschrijving.

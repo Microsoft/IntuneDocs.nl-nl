@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/08/2019
+ms.date: 06/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,24 +16,31 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: 99f51662894cac04e6ebcd821806b433dbf3117e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: de2f201e6a7d0181847db5d212625c9eed9ea698
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041248"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413777"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>SCEP- en PKCS-certificaten verwijderen in Microsoft Intune
 
-In Microsoft Intune kunt u SCEP-certificaten (Simple Certificate Enrollment Protocol) en PKCS-certificaten (Public Key Cryptography Standards) toevoegen aan apparaten. Deze certificaten kunnen ook worden verwijderd wanneer u het apparaat [wist](devices-wipe.md#wipe) of [buiten gebruik stelt](devices-wipe.md#retire). 
+In Microsoft Intune kunt u SCEP-certificaatprofielen (Simple Certificate Enrollment Protocol) en PKCS-certificaatprofielen (Public Key Cryptography Standards) gebruiken om certificaten aan apparaten toe te voegen. 
 
-Er zijn enkele andere situaties waarin certificaten automatisch worden verwijderd, en een aantal situaties waarin certificaten op het apparaat gehandhaafd blijven. In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS- en SCEP-certificaten beschreven.
+Deze certificaten kunnen worden verwijderd wanneer u het apparaat [wist](devices-wipe.md#wipe) of [buiten gebruik stelt](devices-wipe.md#retire). Er zijn ook scenario's waarin certificaten automatisch worden verwijderd en scenario's waarin certificaten op het apparaat blijven gehandhaafd. In dit artikel worden enkele veelvoorkomende situaties en de gevolgen voor PKCS- en SCEP-certificaten beschreven.
 
 > [!NOTE]
 > Als u certificaten wilt verwijderen en intrekken voor een gebruiker die uit on-premises Active Directory (AD) of Azure Active Directory (Azure AD) wordt verwijderd, moet u de stappen in de goede volgorde uitvoeren:
 >
 > 1. Wis het apparaat van de gebruiker of stel dit buiten gebruik.
 > 2. Verwijder de gebruiker uit de on-premises Active Directory of Azure AD.
+
+## <a name="manually-deleted-certificates"></a>Handmatig certificaten verwijderen  
+
+Handmatige verwijdering van een certificaat is een scenario dat van toepassing is op platformen en certificaten die zijn ingericht door SCEP- of PKCS-certificaatprofielen. Een gebruiker kan bijvoorbeeld een certificaat van een apparaat verwijderen wanneer het apparaat doel blijft van een certificaatbeleid.  
+
+Als het certificaat in dit scenario wordt verwijderd, is het apparaat de volgende keer dat het bij Intune incheckt niet compatibel, omdat het verwachte certificaat ontbreekt. Intune geeft vervolgens een nieuw certificaat uit om het apparaat weer compatibel te maken. Er is geen verdere actie nodig om het apparaat te herstellen.  
+
 
 ## <a name="windows-devices"></a>Windows-apparaten
 
