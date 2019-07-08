@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4877920821b2471f752f9fdb8941e87576d937ba
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: 9ec0ab28f2b32cf3c60d6d674cfac5a5b21d094d
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413864"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558414"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
@@ -70,6 +70,7 @@ De volgende header-bestanden bevatten de API's, gegevenstypen en protocollen die
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
     * IntuneMAMDefs.h
+    * IntuneMAMDiagnosticConsole.h
     * IntuneMAMEnrollmentDelegate.h
     * IntuneMAMEnrollmentManager.h
     * IntuneMAMEnrollmentStatus.h
@@ -735,6 +736,10 @@ Ja, de IT-beheerder kan een opdracht voor selectief wissen verzenden naar de app
 ### <a name="is-there-a-sample-app-that-demonstrates-how-to-integrate-the-sdk"></a>Is er een voorbeeld-app die de integratie van de SDK laat zien?
 
 Ja. Onlangs is het open-source-voorbeeld-app [Wagr voor iOS](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App) vernieuwd. Wagr is nu ingeschakeld voor app-beveiligingsbeleid met behulp van de Intune App SDK.
+
+### <a name="how-can-i-troubleshoot-my-app"></a>Hoe los ik mijn app?
+
+De Intune SDK voor iOS 9.0.3+ ondersteunt de mogelijkheid om toe te voegen een diagnostics-console in de mobiele app voor het testen van beleid en logboekregistratie van fouten. `IntuneMAMDiagnosticConsole.h` definieert de `IntuneMAMDiagnosticConsole` klasseninterface, welke ontwikkelaars gebruiken kunnen om de diagnostische Intune-console weer te geven. Dit kan eindgebruikers of ontwikkelaars tijdens de test voor het verzamelen en delen van de logboeken voor Intune om u te helpen bij het analyseren van elk probleem dat ze kunnen hebben. Deze API is optioneel voor integrators.
 
 ## <a name="submit-your-app-to-the-app-store"></a>Uw app naar de App Store verzenden
 

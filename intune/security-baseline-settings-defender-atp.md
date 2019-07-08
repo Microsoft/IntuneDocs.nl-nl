@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
-ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
+ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67197547"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549131"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-basislijninstellingen voor Intune
 
@@ -192,7 +192,7 @@ Zie [BitLocker Group Policy settings](https://docs.microsoft.com/windows/securit
 ## <a name="device-control"></a>Apparaatbeheer  
 
 - **Verwisselbare stations scannen tijdens een volledige scan**  
-  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning): als u de instelling *Ja* kiest, scant Defender naar schadelijke en ongewenste software op verwisselbare stations, zoals flashstations, tijdens een volledige scan. Defender Antivirus scant alle bestanden op USB-apparaten voordat ze kunnen worden uitgevoerd.
+  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning): als u de instelling *Ja* kiest, scant Defender tijdens een volledige scan naar schadelijke en ongewenste software op verwisselbare stations, zoals flashstations. Defender Antivirus scant alle bestanden op USB-apparaten voordat ze kunnen worden uitgevoerd.
 
   Gerelateerde instelling in deze lijst: *Defender/AllowFullScanOnMappedNetworkDrives*  
 

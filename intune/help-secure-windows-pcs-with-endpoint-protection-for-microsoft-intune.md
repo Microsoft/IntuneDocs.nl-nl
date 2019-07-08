@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19c02c8d4c9ece66d03b3510071bb90e7f35ad3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047521"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548768"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune
 
@@ -46,15 +46,15 @@ Als IT-beheerder is een van uw eerste prioriteiten de computers die u beheert vr
 
 Als u van uw huidige eindpuntbeveiligingstoepassing wilt overschakelen op Microsoft Intune Endpoint Protection, gaat u als volgt te werk:
 
-1.  Houd uw huidige eindpuntbeveiligingstoepassing actief, terwijl u de Intune-clientsoftware op de betreffende computers implementeert.
+1. Houd uw huidige eindpuntbeveiligingstoepassing actief, terwijl u de Intune-clientsoftware op de betreffende computers implementeert.
 
-2.  Controleer of Microsoft Intune Endpoint Protection is geïnstalleerd en u helpt bij de beveiliging van clientcomputers.
+2. Controleer of Microsoft Intune Endpoint Protection is geïnstalleerd en u helpt bij de beveiliging van clientcomputers.
 
-3.  Verwijder de eindpuntbeveiligingssoftware van derden door:
+3. Verwijder de eindpuntbeveiligingssoftware van derden door:
 
-    -   Intune-softwaredistributie te gebruiken om een softwareverwijderingshulpmiddel te implementeren dat is geleverd door de fabrikant van de eindpuntbeveiligingstoepassing van derden. Zie [Apps implementeren met Microsoft Intune](apps-deploy.md) voor meer informatie.
+    - Intune-softwaredistributie te gebruiken om een softwareverwijderingshulpmiddel te implementeren dat is geleverd door de fabrikant van de eindpuntbeveiligingstoepassing van derden. Zie [Apps implementeren met Microsoft Intune](apps-deploy.md) voor meer informatie.
 
-    -   De eindpuntbeveiligingstoepassing van derden handmatig te verwijderen.
+    - De eindpuntbeveiligingstoepassing van derden handmatig te verwijderen.
 
 > [!NOTE]
 > Intune verwijdert eindpuntbeveiligingstoepassingen van derden niet automatisch.
@@ -62,9 +62,9 @@ Als u van uw huidige eindpuntbeveiligingstoepassing wilt overschakelen op Micros
 ## <a name="configure-microsoft-intune-endpoint-protection"></a>Microsoft Intune Endpoint Protection configureren
 Gebruik de volgende stappen om u te helpen bij het configureren van Endpoint Protection voor Microsoft Intune.
 
-1.  Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) en kies **Beleid** > **Beleid toevoegen**.
+1. Ga naar de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) en kies **Beleid** > **Beleid toevoegen**.
 
-2.  Vouw **Computerbeheer** uit en selecteer **Instellingen Microsoft Intune-agent**. Selecteer **Aangepast beleid maken en implementeren** om beleid op te geven voor Endpoint Protection-instellingen. Klik vervolgens op de knop **Beleid maken**.
+2. Vouw **Computerbeheer** uit en selecteer **Instellingen Microsoft Intune-agent**. Selecteer **Aangepast beleid maken en implementeren** om beleid op te geven voor Endpoint Protection-instellingen. Klik vervolgens op de knop **Beleid maken**.
 
 U kunt de aanbevolen instellingen gebruiken of de instellingen aanpassen. Als u meer informatie wilt over het maken en implementeren van beleid, raadpleegt u het onderwerp [Algemene beheertaken voor Windows-pc’s met de Microsoft Intune-computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 

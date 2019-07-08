@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 07/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,20 +16,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5f1b4c0fd0c9d8cfdc443b2af3c6f90a6f32756
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: aea4a3d6f8d28e4277435b1d9fc092e68adb9e55
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373643"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530319"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Aangepaste instellingen gebruiken voor Android Enterprise-apparaten in Microsoft Intune
 
-Met Microsoft Intune kunt u aangepaste instellingen voor uw Android Enterprise-apparaten toevoegen of maken met behulp van een 'aangepast profiel'. Aangepaste profielen zijn een functie in Intune. Ze zijn ontworpen om apparaatinstellingen en -functies toe te voegen die niet in Intune zijn ingebouwd.
+Met Microsoft Intune kunt u met behulp van een 'aangepast profiel' aangepaste instellingen toevoegen of maken voor uw apparaten met een Android Enterprise-werkprofiel. Aangepaste profielen zijn een functie in Intune. Ze zijn ontworpen om apparaatinstellingen en -functies toe te voegen die niet in Intune zijn ingebouwd.
 
 In aangepaste profielen voor Android Enterprise worden OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) gebruikt om functies op Android Enterprise-apparaten te beheren. Deze instellingen worden doorgaans gebruikt door fabrikanten van mobiele apparaten om deze functies te beheren.
 
-Intune ondersteunt een beperkt aantal aangepaste profielen voor Android.
+Intune biedt ondersteuning voor een beperkt aantal Android Enterprise-aangepaste profielen, met inbegrip van:
+
+- ./Vendor/MSFT/WiFi/Profile/SSID /-instellingen: [een Wi-Fi-profiel maken met een vooraf gedeelde sleutel](wi-fi-profile-shared-key.md) heeft enkele voorbeelden.
+- ./Vendor/MSFT/VPN/Profile/Name/PackageList: [maken van een VPN-profiel per app](android-pulse-secure-per-app-vpn.md) heeft enkele voorbeelden.
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: Zie de [voorbeeld](#example) (in dit artikel).
+
+Als u aanvullende instellingen, Zie [OEMConfig voor Android Enterprise](android-oem-configuration-overview.md).
 
 In dit artikel wordt beschreven hoe u een aangepast profiel maakt voor Android Enterprise-apparaten. Het bevat ook een voorbeeld van een aangepast profiel waarmee kopieer- en plakbewerkingen worden geblokkeerd.
 

@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45f93416a8fd6190549a958f1b1a7e5f3bdf6df1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b1fe488ed7d295a40b42c1fb17a76693004be4d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045305"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547922"
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
 De categorie **Devices** bevat entiteiten voor mobiele apparaten waarmee gegevens worden bijgehouden, zoals:
 
-  -  Apparaattype
-  -  Apparaatregistratie en registratiestatus
-  -  Apparaateigendom
-  -  Apparaatbeheerstatus
-  -  Apparaatlidmaatschap voor Azure AD-status
-  -  Status van inschrijving
-  -  Historische informatie over het apparaat
-  -  Inventarisatie van apps op het apparaat
+  - Apparaattype
+  - Apparaatregistratie en registratiestatus
+  - Apparaateigendom
+  - Apparaatbeheerstatus
+  - Apparaatlidmaatschap voor Azure AD-status
+  - Status van inschrijving
+  - Historische informatie over het apparaat
+  - Inventarisatie van apps op het apparaat
 
 ## <a name="devicetypes"></a>DeviceTypes
 

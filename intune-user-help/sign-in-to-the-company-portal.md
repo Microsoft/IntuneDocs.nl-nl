@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,29 +18,30 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 370d6372cf3df2ff807069fe8d54f30da23e7ba2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6bfd8496061b4b3aba2589b73c3e98bce94a5011
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55842606"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528648"
 ---
-# <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Hoe meld ik me aan bij de bedrijfsportal-app? <!--User Story 1132123-->
+# <a name="sign-in-to-company-portal"></a>Aanmelden bij de bedrijfsportal-App  
 
-U gebruikt de bedrijfsportal-app om toegang te verkrijgen tot uw bedrijfsresources, zoals e-mail en zakelijke apps. Er zijn in principe twee manieren waarop u zich kunt aanmelden bij de bedrijfsportal:
+Er zijn drie manieren om aan te melden bij de bedrijfsportal-app:
 
-* Met het e-mailadres van uw werk en het bijbehorende wachtwoord
-* Aanmelden vanaf een ander apparaat
+* Aanmelden met uw zakelijke e-mailadres en wachtwoord.  
+* Aanmelden met verificatie op basis van een certificaat.  
+* Aanmelden vanaf een ander apparaat.    
 
-Hoewel de volgende afbeeldingen afkomstig zijn uit iOS, is het proces vrijwel identiek voor Android- en Windows-apparaten.
 
-## <a name="signing-in-with-your-email-address-and-password"></a>Aanmelden met uw e-mailadres en wachtwoord
+## <a name="sign-in-with-your-email-address-and-password"></a>Aanmelden met uw e-mailadres en wachtwoord
+De volgende stappen ziet schermafbeeldingen van de bedrijfsportal-App voor iOS.  
 
-1. Open de bedrijfsportal-app op uw apparaat en tik op **Aanmelden**.
+1. Open de app op uw apparaat en tik op **aanmelden**.  
 
-   ![De aanmeldingspagina van de bedrijfsportal met een pictogram van een persoon voor een grafische weergave van een website. Onderaan staan de tekst Toegang krijgen tot bedrijfsresources en deze beveiligen en de knop Aanmelden. Een koppeling onder aan de pagina leidt naar informatie over privacy en cookies van Microsoft.](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
+   ![De aanmeldingspagina van de bedrijfsportal met een pictogram van een persoon voor een grafische weergave van een website. Daaronder staan de tekst 'Toegang krijgen tot bedrijfsresources en deze beveiligen' en de knop 'Aanmelden'. Een koppeling onder aan de pagina leidt naar informatie over privacy en cookies van Microsoft.](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
 
-   Hebt u de bedrijfsportal-app nog niet? U vindt hier informatie over het installeren en downloaden van de app voor [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) of [Android](install-the-company-portal-app-android.md).
+
 
 2. Voer uw **werk- of schoolaccount** in en tik op **Volgende**.
 
@@ -50,46 +51,48 @@ Hoewel de volgende afbeeldingen afkomstig zijn uit iOS, is het proces vrijwel id
 
    ![De gebruiker wordt gevraagd om het wachtwoord nadat het e-mailadres is geaccepteerd.](/intune-user-help/media/cp_ios_aad_signin_after_1804_003.png)
 
-4. Zodra de bedrijfsportal uw aanmelding heeft geaccepteerd, wordt u aangemeld en hebt u toegang tot de bedrijfsresources.   
+4. De app controleert of uw referenties. Wanneer u klaar bent, kunt u toegang tot resources van uw organisatie en installeren van beschikbare apps.  
 
-   ![Nadat het verificatieproces is doorlopen, wordt er aangemeld met de bedrijfsportal-app. Hierbij wordt een laadbalk weergegeven.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
+   ![Nadat het verificatieproces is doorlopen, wordt er aangemeld met de bedrijfsportal-app. In deze app wordt een laadbalk weergegeven.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
-## <a name="signing-in-with-certificate-based-authentication"></a>Aanmelden met verificatie op basis van certificaten
+## <a name="sign-in-with-certificate-based-authentication"></a>Aanmelden met verificatie op basis van een certificaat
 
-1.  Open de bedrijfsportal-app op uw apparaat.
+1. Open de bedrijfsportal-app op uw apparaat.  
 
-2.  Voer uw **werk- of schoolaccount** in.
+2. Voer uw **werk- of schoolaccount** in.  
 
-3.  Tik op de koppeling **Aanmelden met een certificaat**.
+3. Tik op de koppeling **Aanmelden met een certificaat**.  
 
-4.  Tik op **Doorgaan** om het certificaat te gebruiken.
+4. Tik op **Doorgaan** om het certificaat te gebruiken.  
 
-## <a name="signing-in-from-another-device"></a>Aanmelden vanaf een ander apparaat
+## <a name="sign-in-from-another-device"></a>Aanmelden vanaf een ander apparaat
 
-Als u geen wachtwoord hoeft op te geven om u aan te melden bij uw bedrijfsresources, kunt u een ander apparaat gebruiken om te bevestigen dat u de juiste persoon bent met de juiste toegangsniveaus. Als in uw bedrijf smartcards worden gebruikt om toegang te verkrijgen tot computers, is de kans groot dat u zich met behulp van een ander apparaat moet aanmelden.
+Als uw bedrijf smartcards worden gebruikt voor toegang tot uw computers, is het waarschijnlijk dat u hebt om te verifiëren met het aanmelden vanaf een ander apparaat.  
 
-1. In plaats van uw e-mailadres in te voeren, selecteert u de koppeling **Aanmelden vanaf een ander apparaat** onder het invoervak voor het e-mailadres.
+1. Open de bedrijfsportal-app op uw apparaat. Zorg ervoor dat het apparaat dat u gebruiken wilt voor toegang tot de werkresources van uw is.       
 
-   ![Op de aanmeldingspagina van de bedrijfsportal wordt de gebruiker gevraagd een e-mailadres in te voeren.  Daaronder staan de knop Volgende en een koppeling naar Aanmelden vanaf een ander apparaat. Bevat ook een koppeling naar Hebt u geen toegang tot uw account? Een koppeling onder aan de pagina leidt naar informatie over privacy en cookies van Microsoft.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
+1. Selecteer **zich aanmelden vanaf een ander apparaat**.  
 
-2. U ontvangt een unieke, eenmalige code om u aan te melden bij de bedrijfsportal.
+   ![Op de aanmeldingspagina van de bedrijfsportal wordt de gebruiker gevraagd een e-mailadres in te voeren.  In de app worden de knop 'Volgende' en een koppeling naar 'Aanmelden vanaf een ander apparaat' weergegeven. Bevat ook een koppeling naar Hebt u geen toegang tot uw account? Een koppeling onder aan de pagina leidt naar informatie over privacy en cookies van Microsoft.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
+
+2. U ontvangt een unieke, eenmalige code om u aan te melden bij de bedrijfsportal. Kopieer de code.
 
    ![Hier vindt u instructies om vanaf uw werkcomputer met een unieke wachtwoordcode naar de pagina https://microsoft.com/devicelogin te gaan en de code te gebruiken om u aan te melden.](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. Open op het andere apparaat een browser en ga naar [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) om de code in te voeren.
+3. Op het andere apparaat (het account dat u gebruikt om te verifiëren), open uw browser en Ga naar [ https://microsoft.com/devicelogin ](https://microsoft.com/devicelogin). Typ of plak de code.  
 
    ![Een afbeelding van de browser van de gebruiker op de werkcomputer in plaats van de bedrijfsportal-app. Op de weergegeven pagina Apparaataanmelding wordt de gebruiker gevraagd om de code in de bedrijfsportal-app is ontvangen.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
-4. Als de code is gecontroleerd op de pagina **Apparaataanmelding**, selecteert u __Doorgaan__ om via de bedrijfsportal te worden aangemeld op uw andere apparaat.
+4. Selecteer __doorgaan__ om toe te staan van de bedrijfsportal-App aan te melden op uw apparaat werken.   
 
    ![De gebruiker heeft de unieke code ingevoerd in het veld en op de site Apparaataanmelding is gevraagd om te bevestigen dat de Intune bedrijfsportal-app de juiste app is om autorisatie te ontvangen voor aanmelding.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
-5. Zodra de code is geverifieerd, kunt u het venster sluiten.
+5. Zodra de code is geverifieerd, kunt u het venster sluiten.  
 
    ![Een bevestigingspagina met de mededeling dat de gebruiker nu is aangemeld bij de bedrijfsportal-app op hun apparaat en dat deze pagina kan worden gesloten.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
 
-6. Op het oorspronkelijke apparaat wordt het aanmeldingsproces gestart via de bedrijfsportal-app.
+6. De bedrijfsportal-app zich aanmeldt op uw apparaat werken.  
 
    ![Nadat het verificatieproces is doorlopen, wordt u aangemeld via de bedrijfsportal-app. Dit proces wordt aangegeven met een voortgangsbalk.](/intune-user-help/media/cp_ios_aad_signin_after_1804_007.png)
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  

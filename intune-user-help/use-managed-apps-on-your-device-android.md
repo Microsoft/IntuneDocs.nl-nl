@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ba4ca5ccc9083f2132a8b8893c3bc2070ed3c50
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841331"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546035"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Beheerde apps op uw Android-apparaat gebruiken
 Beheerde apps worden geconfigureerd om te voldoen aan de beveiligingsvereisten van uw organisatie en om gegevens voor uw werk en school te beveiligen. Deze apps worden voor u beschikbaar gesteld op uw apparaat zodat ze automatisch kunnen worden geïnstalleerd of gebruikt. 
@@ -45,32 +45,32 @@ Wanneer u voor het eerst toegang krijgt tot gegevens voor uw werk of school in e
 ## <a name="commonly-managed-apps"></a>Veelvoorkomende beheerde apps  
 Voorbeelden van veelvoorkomende vereiste of beschikbare beheerde apps op scholen en werkplekken zijn:
 
--   Microsoft Edge
+- Microsoft Edge
 
--   Microsoft Outlook
+- Microsoft Outlook
 
--   Microsoft Word, Excel en PowerPoint
+- Microsoft Word, Excel en PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>Hoe kom ik in het bezit van beheerde apps?
-Eerst moet u de Bedrijfsportal-app installeren en, zo nodig, ervoor zorgen dat uw apparaat wordt beheerd. Vervolgens kunt u op drie manieren in het bezit komen van beheerde apps.
-* Uw organisatie installeert op het moment van registratie automatisch apps op uw apparaat. Zie [Uw apparaat registreren bij Intune](enroll-your-device-in-Intune-android.md) voor meer informatie over het registreren van apparaten.
-* Uw organisatie stelt beheerde apps voor u beschikbaar in de Bedrijfsportal. Ga naar de Bedrijfsportal-app of de website om naar deze apps te zoeken en ze weer te geven en te installeren. 
-* U installeert een app vanuit Google Play Store en u meldt zich vervolgens bij de app aan met uw werk- of schoolaccount.  
+Er zijn drie manieren om op te halen van beheerde apps.  
+* Uw organisatie installeert op het moment van registratie automatisch apps op uw apparaat.  
+* U installeert een app vanuit Google Play Store en u meldt zich vervolgens bij de app aan met uw werk- of schoolaccount.    
+* Uw organisatie stelt beheerde apps voor u beschikbaar in de Bedrijfsportal. Ga naar de bedrijfsportal-app of -website om beschikbare apps te zoeken, weer te geven en te installeren. Zie de volgende sectie voor meer informatie over deze apps [beschikbare apps](#available-apps).  
 
- ## <a name="available-apps"></a>Available apps   
- Uw organisatie selecteert apps die geschikt en nuttig zijn voor u op het werk of op school. Deze apps zijn de enige u in Bedrijfsportal vindt.   
+### <a name="available-apps"></a>Available apps   
+ Uw organisatie kunt apps selecteren die nodig en nuttig voor u op het werk of school zijn, en deze beschikbaar voor u in de bedrijfsportal-App.  
 
  Apps zijn ook aan u beschikbaar gesteld op basis van uw apparaattype. Als u bijvoorbeeld de app Bedrijfsportal voor Android gebruikt, hebt u toegang tot Android-apps, maar niet tot iOS-apps.   
 
- ## <a name="request-an-app-for-work-or-school"></a>Een app aanvragen voor werk of school   
- Als er een app is die u nodig hebt, maar die niet wordt weergegeven in Bedrijfsportal, kunt u deze aanvragen. Zoek de contactgegevens op voor uw **Helpdesk** in het tabblad **Contact opnemen met IT** van de app Bedrijfsportal. U vindt dezelfde contactgegevens op de [Bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).   
+## <a name="request-an-app-for-work-or-school"></a>Een app aanvragen voor werk of school   
+ Als er een app is die u nodig hebt, maar die niet wordt weergegeven in Bedrijfsportal, kunt u deze aanvragen. Neem contact op met informatie voor uw **Helpdesk** van een App **contact opnemen met IT** tabblad. U vindt dezelfde contactgegevens op de [Bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>Wat kan het ondersteuningsteam van mijn bedrijf beheren in een app?  
 In de volgende lijst worden de instellingen beschreven die het ondersteuningsteam van uw bedrijf kan beheren in een app. Deze instellingen beïnvloeden de manier waarop de gegevens voor uw werk of school voor u worden weergeven, u hiertoe toegang hebt en deze verder op uw apparaat gebruikt:
 
 * Toegang tot bepaalde websites  
 
-* Toegang tot interne bedrijfswebsites via Edge en de Azure Active Directory-proxy  
+* Toegang tot interne bedrijfswebsites via Microsoft Edge en de Azure Active Directory-proxy  
 
 * Minimumversie van de app, besturingssysteemversie
 

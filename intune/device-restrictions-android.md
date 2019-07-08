@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f13b78e05b9f0b94d98677004c7059f1acaa80f9
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9ac25a0f3305cdfac9f3eeaa75b9e2106b3571b0
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045724"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572503"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Lijsten met apparaatbeperkingen voor Android en Samsung Knox Standard in Intune
 
@@ -41,7 +41,7 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
 - **Schermafbeelding (alleen voor Samsung Knox)** : kies **Blokkeren** om het maken van schermafbeeldingen te voorkomen. **Niet geconfigureerd**: stelt de gebruiker in staat om de inhoud van het scherm vast te leggen als afbeelding.
 - **Spraakassistent (alleen voor Samsung Knox)** : kies **Blokkeren** om de service S Voice uit te schakelen. **Niet geconfigureerd**: hiermee staat u het gebruik van de S Voice-service en -app toe op het apparaat. Deze instelling geldt niet voor Bixby of de spraakassistent voor toegankelijkheid waarmee inhoud op het scherm hardop wordt voorgelezen.
 - **YouTube (alleen voor Samsung Knox)** : kies **Blokkeren** om te voorkomen dat gebruikers de YouTube-app gebruiken. **Niet geconfigureerd**: staat gebruik van de YouTube-app toe op het apparaat.
-- **Gedeelde apparaten (alleen voor Samsung Knox)** : hiermee kunt u een beheerd Samsung Knox Standard-apparaat configureren als een gedeeld apparaat. Als deze optie is ingesteld op  **Toestaan**, kunnen eindgebruikers hun Azure AD-referenties gebruiken om zich aan en af te melden bij het apparaat. Het apparaat blijft beheerd, ongeacht of het in gebruik is of niet.</br>Wanneer deze functie wordt gebruikt met een SCEP-certificaatprofiel, zorgt u er hiermee voor dat eindgebruikers een apparaat met dezelfde apps kunnen delen voor alle gebruikers. Elke gebruiker heeft wel een eigen SCEP-gebruikerscertificaat. Wanneer ze zich afmelden, worden alle app-gegevens gewist. Deze functie is beperkt tot LOB-apps. </br>**Niet geconfigureerd**: hiermee wordt voorkomen dat meerdere eindgebruikers zich met hun eigen Azure AD-referenties aanmelden bij de bedrijfsportal-app op het apparaat.
+- **Gedeelde apparaten (alleen voor Samsung Knox)** : hiermee kunt u een beheerd Samsung Knox Standard-apparaat configureren als gedeeld apparaat. Als deze optie is ingesteld op  **Toestaan**, kunnen eindgebruikers hun Azure AD-referenties gebruiken om zich aan en af te melden bij het apparaat. Het apparaat blijft beheerd, ongeacht of het in gebruik is of niet.</br>Wanneer deze functie wordt gebruikt met een SCEP-certificaatprofiel, zorgt u er hiermee voor dat eindgebruikers een apparaat met dezelfde apps kunnen delen voor alle gebruikers. Elke gebruiker heeft wel een eigen SCEP-gebruikerscertificaat. Wanneer ze zich afmelden, worden alle app-gegevens gewist. Deze functie is beperkt tot LOB-apps. </br>**Niet geconfigureerd**: hiermee wordt voorkomen dat meerdere eindgebruikers zich met hun eigen Azure AD-referenties aanmelden bij de bedrijfsportal-app op het apparaat.
 - **Wijzigingen in datum en tijd blokkeren (Samsung Knox)** : kies **Blokkeren** om te voorkomen dat de gebruiker de datum- en tijdinstellingen op het apparaat kan wijzigen. **Niet geconfigureerd**: staat gebruikers toe om de datum- en tijdinstellingen te wijzigen.
 
 ## <a name="password"></a>Wachtwoord
