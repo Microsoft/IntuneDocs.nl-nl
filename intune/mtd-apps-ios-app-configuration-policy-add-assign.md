@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6065fda71688909dd7fcbc6ef1909e3d3ab36b8
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: fdc7434616db6c06f56438fb6d8774ae3f2deca9
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407121"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548440"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>MTD-apps (Mobile Threat Defense) toevoegen en toewijzen met Intune  
 
@@ -34,9 +34,9 @@ U kunt Intune gebruiken om MTD-apps (Mobile Threat Defense) toe te voegen en te 
 ## <a name="before-you-begin"></a>Voordat u begint    
 De onderstaande stappen moeten worden uitgevoerd in [Azure Portal](https://portal.azure.com/). Zorg ervoor dat u bekend bent met de volgende procedures:
 
--   [Een app toevoegen in Intune](apps-add.md).
--   [Een configuratiebeleid voor iOS-apps toevoegen in Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
--   [Een app toewijzen met Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+- [Een app toevoegen in Intune](apps-add.md).
+- [Een configuratiebeleid voor iOS-apps toevoegen in Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+- [Een app toewijzen met Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
 
 > [!TIP]
 > De Intune-bedrijfsportal werkt als de broker op Android-apparaten, zodat de identiteit van gebruikers kan worden gecontroleerd door Azure AD.

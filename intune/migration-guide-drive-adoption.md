@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 40e78d85c215bbb5cc126705f26041ce4f7786f4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044584"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549455"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Eindgebruikers accepteren door middel van voorwaardelijke toegang in Microsoft Intune
 
@@ -31,28 +31,28 @@ Wanneer u functies voor voorwaardelijke toegang bij Intune inschakelt, zoals het
 
 Hier volgt een gebruikelijke benadering voor het uitbreiden van de migratiecampagne met voorwaardelijke toegang:
 
-1.  Stel regels voor voorwaardelijke toegang in die moeten worden doorgevoerd voor alle gebruikers. Sluit echter de gebruikers uit die moeten migreren vanuit een voorgaande MDM-provider. U kunt een Azure AD-gebruikersgroep maken met daarin alle gebruikers die zijn uitgesloten van voorwaardelijke toegang.
+1. Stel regels voor voorwaardelijke toegang in die moeten worden doorgevoerd voor alle gebruikers. Sluit echter de gebruikers uit die moeten migreren vanuit een voorgaande MDM-provider. U kunt een Azure AD-gebruikersgroep maken met daarin alle gebruikers die zijn uitgesloten van voorwaardelijke toegang.
 
-2.  Wanneer gebruikers migreren, verwijdert u ze uit de groep van gebruikers die zijn uitgesloten van voorwaardelijke toegang.
+2. Wanneer gebruikers migreren, verwijdert u ze uit de groep van gebruikers die zijn uitgesloten van voorwaardelijke toegang.
 
-3.  Nadat de migratie is voltooid, configureert u alle beleidsregels voor voorwaardelijke toegang om gebruikers standaard te blokkeren, tenzij Intune toegang verleent.
+3. Nadat de migratie is voltooid, configureert u alle beleidsregels voor voorwaardelijke toegang om gebruikers standaard te blokkeren, tenzij Intune toegang verleent.
 
 ### <a name="advantages"></a>Voordelen
 
--   Het biedt toegangsbeheer voor nieuwe gebruikersaccounts of gebruikersaccounts die niet werden beheerd door de voorgaande oplossing.
+- Het biedt toegangsbeheer voor nieuwe gebruikersaccounts of gebruikersaccounts die niet werden beheerd door de voorgaande oplossing.
 
--   Het biedt een respijtperiode voor gebruikers van een voorgaande oplossing tot aan de migratie.
+- Het biedt een respijtperiode voor gebruikers van een voorgaande oplossing tot aan de migratie.
 
--   Het minimaliseert het verlies aan productiviteit.
+- Het minimaliseert het verlies aan productiviteit.
 
 ### <a name="disadvantages"></a>Nadelen
 
--   Gebruikers van een voorgaande oplossing zouden met niet-beheerde apparaten toegang tot resources kunnen krijgen totdat voorwaardelijke toegang voor die gebruikers is ingeschakeld.
+- Gebruikers van een voorgaande oplossing zouden met niet-beheerde apparaten toegang tot resources kunnen krijgen totdat voorwaardelijke toegang voor die gebruikers is ingeschakeld.
 
 
 Dit is een van de vele benaderingen. U kunt een eenvoudigere procedure hanteren waarbij alle beleidsregels voor voorwaardelijke toegang worden uitgesteld totdat elke fase de instructie heeft gekregen om de apparaten in te schrijven. U kunt ook een striktere procedure hanteren waarbij vanaf het begin voorwaardelijke toegang wordt toegepast en volledige naleving voor alle toegang is vereist.
 
--   Meer informatie over [voorwaardelijke toegang](conditional-access.md).
+- Meer informatie over [voorwaardelijke toegang](conditional-access.md).
 
 ## <a name="task-list-for-conditional-access"></a>Lijst met taken voor voorwaardelijke toegang
 
@@ -64,15 +64,15 @@ Dit is een van de vele benaderingen. U kunt een eenvoudigere procedure hanteren 
 
 Kies een van de volgende opties:
 
--   [Voorwaardelijke toegang in Azure Active Directory configureren](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+- [Voorwaardelijke toegang in Azure Active Directory configureren](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
--   [De on-premises Exchange-connector installeren met Intune](exchange-connector-install.md)
+- [De on-premises Exchange-connector installeren met Intune](exchange-connector-install.md)
 
--   [Beleid voor voorwaardelijke toegang op basis van een app instellen voor Exchange Online](app-based-conditional-access-intune-create.md)
+- [Beleid voor voorwaardelijke toegang op basis van een app instellen voor Exchange Online](app-based-conditional-access-intune-create.md)
 
--   [Beleid voor voorwaardelijke toegang op basis van apps instellen voor SharePoint Online](app-based-conditional-access-intune-create.md)
+- [Beleid voor voorwaardelijke toegang op basis van apps instellen voor SharePoint Online](app-based-conditional-access-intune-create.md)
 
--   [Apps die geen gebruik maken van moderne verificatie (ADAL) blokkeren](app-modern-authentication-block.md)
+- [Apps die geen gebruik maken van moderne verificatie (ADAL) blokkeren](app-modern-authentication-block.md)
 
 ## <a name="next-steps"></a>Volgende stappen
 

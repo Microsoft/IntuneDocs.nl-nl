@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1907ebf3d9233ca2324a4759b4f22a4c62e143c2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ec3685df5865d22874b68a8bf42539d37fb486d7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045791"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549248"
 ---
 # <a name="integrate-pradeo-with-intune"></a>Pradeo integreren met Intune
 
@@ -32,47 +32,47 @@ Voer de volgende stappen uit om de Pradeo Mobile Threat Defense-oplossing te int
 
 Zorg ervoor dat u over het volgende beschikt voordat u begint met de integratie van Pradeo met Intune:
 
--   Microsoft Intune-abonnement
+- Microsoft Intune-abonnement
 
--   Azure Active Directory-beheerdersreferenties om de volgende machtigingen te verlenen:
+- Azure Active Directory-beheerdersreferenties om de volgende machtigingen te verlenen:
 
-    -   Aanmelden en gebruikersprofiel lezen
+    - Aanmelden en gebruikersprofiel lezen
 
-    -   Toegang tot de map als de aangemelde gebruiker
+    - Toegang tot de map als de aangemelde gebruiker
 
-    -   Mapgegevens lezen
+    - Mapgegevens lezen
 
-    -   Gegevens van een apparaat verzenden naar Intune
+    - Gegevens van een apparaat verzenden naar Intune
 
--   Beheerdersreferenties voor toegang tot de Pradeo Security-console.
+- Beheerdersreferenties voor toegang tot de Pradeo Security-console.
 
 ### <a name="pradeo-app-authorization"></a>Pradeo-app-autorisatie
 
 Het autorisatieproces van de Pradeo-app is als volgt:
 
--   Sta de Pradeo-service toe informatie met betrekking tot de status van apparaten naar Intune te communiceren.
+- Sta de Pradeo-service toe informatie met betrekking tot de status van apparaten naar Intune te communiceren.
 
--   Pradeo wordt gesynchroniseerd met het Azure AD Enrollment-groepslidmaatschap om de database van het apparaat te vullen.
+- Pradeo wordt gesynchroniseerd met het Azure AD Enrollment-groepslidmaatschap om de database van het apparaat te vullen.
 
--   Sta toe dat de Pradeo-beheerconsole eenmalige aanmelding (SSO) van Azure AD gebruikt.
+- Sta toe dat de Pradeo-beheerconsole eenmalige aanmelding (SSO) van Azure AD gebruikt.
 
--   Sta toe dat de Pradeo-app eenmalige aanmelding van Azure AD gebruikt om aan te melden.
+- Sta toe dat de Pradeo-app eenmalige aanmelding van Azure AD gebruikt om aan te melden.
 
 ## <a name="to-set-up-pradeo-integration"></a>Pradeo-integratie instellen
 
-1.  Ga naar [Pradeo Security Console](https://www.apps-security.com) en meld u aan met uw referenties.
+1. Ga naar [Pradeo Security Console](https://www.apps-security.com) en meld u aan met uw referenties.
 
-2.  Kies **Administration - Enterprise Mobility Management** (Beheer - Enterprise Mobility Management) in het menu.
+2. Kies **Administration - Enterprise Mobility Management** (Beheer - Enterprise Mobility Management) in het menu.
 
-3.  Kies het **Intune-logo**.
+3. Kies het **Intune-logo**.
 
-4.  Kies in het venster **EMM (Enterprise mobility management) - Intune** onder **Stap 1** de knop **Pradeo Connector**. 
+4. Kies in het venster **EMM (Enterprise mobility management) - Intune** onder **Stap 1** de knop **Pradeo Connector**. 
 
     ![Schermopname van het Pradeo EMM Intune-venster](./media/pradeo_setup.png)
 
 5. Voer uw Intune-referenties in het venster Microsoft Intune connection (Microsoft Intune-verbinding) in.
 
-5.  De webpagina van Pradeo wordt opnieuw geopend. Kies onder **Stap 2** de knop **Pradeo Device Health** (Apparaatstatus Pradeo).
+5. De webpagina van Pradeo wordt opnieuw geopend. Kies onder **Stap 2** de knop **Pradeo Device Health** (Apparaatstatus Pradeo).
 
 7. Selecteer **Accept** (Accepteren) in het venster Pradeo-Intune Connector. 
 
@@ -86,4 +86,4 @@ Het autorisatieproces van de Pradeo-app is als volgt:
 
 ## <a name="next-steps"></a>Volgende stappen
 
--   [Pradeo-apps instellen](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Pradeo-apps instellen](mtd-apps-ios-app-configuration-policy-add-assign.md)

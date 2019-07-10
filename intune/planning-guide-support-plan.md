@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64349d2e4c681bf0fac8cf231085cc63e42ffc62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041466"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548336"
 ---
 # <a name="develop-a-support-plan"></a>Een ondersteuningsplan ontwikkelen
 
 Een ondersteuningsplan voor Intune kan ervoor zorgen dat u problemen met Intune sneller kunt herkennen en oplossen. Dit levert dan weer een positieve bijdrage aan de algehele Intune-ervaring van uw gebruikers. Hier volgen enkele vragen om te overwegen bij het ontwikkelen van uw ondersteuningsplan voor Intune:
 
--   Welke teams zijn verantwoordelijk voor het verstrekken van ondersteuning voor Intune?
+- Welke teams zijn verantwoordelijk voor het verstrekken van ondersteuning voor Intune?
 
--   Welk proces wordt gebruikt voor het bieden van ondersteuning voor Intune?
+- Welk proces wordt gebruikt voor het bieden van ondersteuning voor Intune?
 
--   Hoe wilt u training voor Intune-ondersteuning geven?
+- Hoe wilt u training voor Intune-ondersteuning geven?
 
--   Wat zijn de mogelijkheden om het ondersteuningsteam al vroeg in het implementatieproces van Intune te betrekken?
+- Wat zijn de mogelijkheden om het ondersteuningsteam al vroeg in het implementatieproces van Intune te betrekken?
 
 Laten we elk gebied eens nader bekijken.
 
@@ -50,23 +50,23 @@ Meer informatie over [Intune-ondersteuning](/intune/get-support).
 
 Voor de eerste fasen van de productie-rollout kunt u medewerkers van alle drie de lagen laten deelnemen aan een bridge- of Skype-vergadering. Hier volgt een voorbeeld van de wijze waarop een organisatie de processen voor de IT-ondersteuning of helpdesk zou kunnen implementeren:
 
-1.  Eindgebruikers nemen contact op met de IT-ondersteuning of helpdesk op laag 1 over een inschrijvingsprobleem.
+1. Eindgebruikers nemen contact op met de IT-ondersteuning of helpdesk op laag 1 over een inschrijvingsprobleem.
 
-2.  De IT-ondersteuning of helpdesk op laag 1 kan de hoofdoorzaak niet achterhalen en escaleert het probleem naar laag 2.
+2. De IT-ondersteuning of helpdesk op laag 1 kan de hoofdoorzaak niet achterhalen en escaleert het probleem naar laag 2.
 
-3.  De IT-ondersteuning of helpdesk op laag 2 onderzoekt het probleem maar kan het niet oplossen en escaleert het naar laag 3 met aanvullende informatie ter ondersteuning van het onderzoek.
+3. De IT-ondersteuning of helpdesk op laag 2 onderzoekt het probleem maar kan het niet oplossen en escaleert het naar laag 3 met aanvullende informatie ter ondersteuning van het onderzoek.
 
-4.  De IT-ondersteuning of helpdesk op laag 3 onderzoekt het probleem verder, bepaalt de hoofdoorzaak en geeft de oplossing door aan laag 2 en laag 1.
+4. De IT-ondersteuning of helpdesk op laag 3 onderzoekt het probleem verder, bepaalt de hoofdoorzaak en geeft de oplossing door aan laag 2 en laag 1.
 
-5.  IT-ondersteuning/helpdesk-laag 1 neemt vervolgens contact op met de klant en lost het probleem op.
+5. IT-ondersteuning/helpdesk-laag 1 neemt vervolgens contact op met de klant en lost het probleem op.
 
 Deze methode, met name in de eerste fasen van de Intune-implementatie, biedt tal van voordelen, zoals:
 
--   Helpen bij het steeds beter onder de knie krijgen van de technologie.
+- Helpen bij het steeds beter onder de knie krijgen van de technologie.
 
--   Snel identificeren van problemen en oplossingen.
+- Snel identificeren van problemen en oplossingen.
 
--   Verbeteren van de algehele gebruikerservaring.
+- Verbeteren van de algehele gebruikerservaring.
 
 ## <a name="how-you-plan-to-provide-intune-support-training"></a>Hoe wilt u training voor Intune-ondersteuning geven?
 
@@ -74,15 +74,15 @@ Het is belangrijk om aan uw team voor IT-ondersteuning of de helpdesk technische
 
 Hieronder vindt u een voorbeeld van een trainingsagenda voor Intune-ondersteuning.
 
--   Ondersteuningsplan voor Intune bespreken
+- Ondersteuningsplan voor Intune bespreken
 
--   Overzicht van Intune
+- Overzicht van Intune
 
--   Oplossen van algemene problemen
+- Oplossen van algemene problemen
 
--   Hulpprogramma's en informatiebronnen
+- Hulpprogramma's en informatiebronnen
 
--   Vragenronde
+- Vragenronde
 
 De [Intune-documentatie](https://docs.microsoft.com/intune/) biedt een overzicht van Intune, bevat gedetailleerde functiebeschrijvingen en ook informatie voor probleemoplossing. Het Engelstalige [Intune-forum](https://social.technet.microsoft.com/Forums/home) is een community voor vragen en onderwerpen die niet in de Intune-documentatie worden behandeld.
 

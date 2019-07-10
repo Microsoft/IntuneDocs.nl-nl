@@ -17,79 +17,79 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c279e21abf47d6ec067f3c75b36ecc7b58681e7e
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 02dcaa26e51f3b8c4632aed0fbc87131cc617532
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044396"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572286"
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 
 Uw Intune-ontwerp is gebaseerd op de informatie die u verzamelt en besluiten die u neemt bij het doorlopen van de overige [secties in deze handleiding](planning-guide.md). De volgende zaken worden bijeengebracht:
 
--   De huidige omgeving
+- De huidige omgeving
 
--   Intune-implementatieopties
+- Intune-implementatieopties
 
--   Identiteitsvereisten voor externe afhankelijkheden
+- Identiteitsvereisten voor externe afhankelijkheden
 
--   Overwegingen met betrekking tot het apparaatplatform
+- Overwegingen met betrekking tot het apparaatplatform
 
--   Vereisten waaraan moet worden voldaan  
+- Vereisten waaraan moet worden voldaan  
 
 Hoewel er een minimum aan vereisten voor de on-premises infrastructuur is, is een ontwerpplan nog steeds nuttig omdat u over de juiste beheeroplossing voor mobiele apparaten beschikt die aansluit bij uw doelen, doelstellingen en vereisten.
 
-Laten we elk van deze gebieden eens nader bekijken. 
+Laten we elk van deze gebieden eens nader bekijken. 
 
 ## <a name="record-your-current-environment"></a>Uw huidige omgeving vastleggen
 Bovendien vinden er tijdens de implementatie- en testfase regelmatig wijzigingen aan het ontwerp plaats. Gebruik het ontwerpplan om deze wijzigingen te documenteren zodra ze plaatsvinden, evenals de achterliggende idee.
 
 Uw huidige omgeving kan van invloed zijn op ontwerpbeslissingen en moet daarom worden gedocumenteerd als referentie bij het maken van andere Intune-ontwerpbeslissingen. Hieronder vindt u enkele voorbeelden van hoe u de huidige omgeving kunt vastleggen:
 
--   **Identiteit in de cloud**
+- **Identiteit in de cloud**
 
-    -   Gebruikt u DirSync of Azure Active Directory Connect (Azure AD)?
+    - Gebruikt u DirSync of Azure Active Directory Connect (Azure AD)?
 
-    -   Is uw omgeving federatief?
+    - Is uw omgeving federatief?
 
-    -   Is meervoudige authenticatie (MFA) ingeschakeld?
+    - Is meervoudige authenticatie (MFA) ingeschakeld?
 
--   **E-mailomgeving**
+- **E-mailomgeving**
 
-    -   Gebruikt u Exchange? On-premises of in de cloud?
+    - Gebruikt u Exchange? On-premises of in de cloud?
 
-    -   Zit u midden in een project en wilt u Exchange naar de cloud migreren?
+    - Zit u midden in een project en wilt u Exchange naar de cloud migreren?
 
--   **Huidige oplossing met Mobile Device Management (MDM)**
+- **Huidige oplossing met Mobile Device Management (MDM)**
 
-    -   Gebruikt u momenteel andere MDM-oplossingen?
+    - Gebruikt u momenteel andere MDM-oplossingen?
 
-    -   Welke MDM-oplossingen gebruikt u voor zakelijke en BOYD-scenario's?
+    - Welke MDM-oplossingen gebruikt u voor zakelijke en BOYD-scenario's?
 
-    -   Van welke mogelijkheden maakt u gebruik (bijvoorbeeld apparaatinstellingen voor apps of Wi-Fi-configuraties)?
+    - Van welke mogelijkheden maakt u gebruik (bijvoorbeeld apparaatinstellingen voor apps of Wi-Fi-configuraties)?
 
-    -   Welke apparaatplatformen worden ondersteund?
+    - Welke apparaatplatformen worden ondersteund?
 
-    -   Welke groepen en hoeveel gebruikers werken er met de MDM-oplossing?
+    - Welke groepen en hoeveel gebruikers werken er met de MDM-oplossing?
 
--   **Certificaatoplossing**
+- **Certificaatoplossing**
 
-    -   Hebt u een certificaatoplossing geïmplementeerd?
+    - Hebt u een certificaatoplossing geïmplementeerd?
 
-    -   Wat voor soort certificaten gebruikt u?
+    - Wat voor soort certificaten gebruikt u?
 
--   **Beheer van systemen**
+- **Beheer van systemen**
 
-    -   Hoe beheert u uw pc- en serveromgeving?
+    - Hoe beheert u uw pc- en serveromgeving?
 
-    -   Gebruikt u System Center Configuration Manager? Werkt u met een platform voor systeembeheer van derden?
+    - Gebruikt u System Center Configuration Manager? Werkt u met een platform voor systeembeheer van derden?
 
--   **VPN-oplossing**
+- **VPN-oplossing**
 
-    -   Wat is uw VPN-oplossing?
+    - Wat is uw VPN-oplossing?
 
-    -   Wordt deze gebruikt voor zowel zakelijke als BYOD-scenario's?
+    - Wordt deze gebruikt voor zowel zakelijke als BYOD-scenario's?
 
 Wanneer u de huidige MDM-omgeving vastlegt, moet u rekening houden met alle projecten of eventuele andere in gebruik zijnde plannen die van invloed kunnen zijn op uw omgeving. Hieronder ziet u een voorbeeld van een manier om de huidige omgeving vast te leggen bij het maken van uw Intune-ontwerp:
 
@@ -118,11 +118,11 @@ Intune biedt twee opties voor implementatie: zelfstandig en hybride. Zelfstandig
 
 Als uw organisatie wereldwijd opereert, moet u ook bepalen wat de locatie van uw tenant is wanneer u zich abonneert op de service. Het land wordt gedefinieerd wanneer u zich voor het eerst aanmeldt voor een Intune-abonnement en de regio's kiest die voor u van belang zijn, zoals hieronder worden gedefinieerd:
 
--   Noord-Amerika
+- Noord-Amerika
 
--   Europa, Midden-Oosten en Afrika
+- Europa, Midden-Oosten en Afrika
 
--   Azië en Pacific
+- Azië en Pacific
 
 >[!IMPORTANT]
 > Het is niet mogelijk het land of de tenantlocatie naderhand te wijzigen.
@@ -131,11 +131,11 @@ Als uw organisatie wereldwijd opereert, moet u ook bepalen wat de locatie van uw
 
 Externe afhankelijkheden zijn services en producten die geen deel uitmaken van Intune, maar wel een vereiste van Intune zijn of kunnen worden geïntegreerd met Intune. Het is belangrijk om vereisten voor alle externe afhankelijkheden vast te stellen en hoe ze moeten worden geconfigureerd. Enkele voorbeelden van veelvoorkomende externe afhankelijkheden zijn:
 
--   Identiteit
+- Identiteit
 
--   Gebruikers- en apparaatgroepen
+- Gebruikers- en apparaatgroepen
 
--   Public Key Infrastructure (PKI)
+- Public Key Infrastructure (PKI)
 
 We onderzoeken deze algemene externe afhankelijkheden hieronder nader.
 
@@ -157,9 +157,9 @@ De gebruikers- en apparaatgroepen bepalen het doel van een implementatie, waaron
 
 U wordt aangeraden alle groepen te maken in de on-premises Active Directory en vervolgens met Azure AD te synchroniseren. Meer informatie over het plannen en maken van gebruikers- en apparaatgroepen:
 
--   [Uw gebruikers- en apparaatgroepen plannen.](users-add.md)
+- [Uw gebruikers- en apparaatgroepen plannen.](users-add.md)
 
--   [Gebruikers- en apparaatgroepen maken.](groups-add.md)
+- [Gebruikers- en apparaatgroepen maken.](groups-add.md)
 
 ### <a name="public-key-infrastructure-pki"></a>Public Key Infrastructure (PKI)
 Public Key Infrastructure verstrekt certificaten aan apparaten of gebruikers voor een veilige verificatie van services. Intune biedt ondersteuning voor een Microsoft PKI-infrastructuur. Apparaat- en gebruikerscertificaten kunnen worden uitgegeven voor een mobiel apparaat om te voldoen aan verificatievereisten op basis van certificaten. Voordat u certificaten gaat gebruiken, moet u vaststellen of u ze nodig hebt, of de netwerkinfrastructuur verificatie op basis van certificaten kan ondersteunen en of er momenteel in de bestaande omgeving certificaten worden gebruikt.
@@ -170,11 +170,11 @@ Als er SCEP-certificaten worden uitgegeven, moet u bovendien bepalen welke serve
 
 Meer informatie over:
 
--   [Intune-certificaatprofielen configureren](certificates-configure.md)
+- [Intune-certificaatprofielen configureren](certificates-configure.md)
 
--   [De certificaatinfrastructuur voor SCEP configureren](certificates-scep-configure.md)
+- [De certificaatinfrastructuur voor SCEP configureren](certificates-scep-configure.md)
 
--   [De certificaatinfrastructuur voor PFX configureren](certficates-pfx-configure.md)
+- [De certificaatinfrastructuur voor PFX configureren](certficates-pfx-configure.md)
 
 
 
@@ -183,13 +183,13 @@ Meer informatie over:
 
 Kijk eens goed naar de volgende aspecten van uw apparaten, zodat u beter begrijpt hoe u ze op de juiste wijze moet beheren.
 
--   Ondersteunde apparaatplatformen
+- Ondersteunde apparaatplatformen
 
--   Apparaten
+- Apparaten
 
--   Apparaateigendom
+- Apparaateigendom
 
--   Bulkinschrijving
+- Bulkinschrijving
 
 Laten we deze gebieden eens nader bekijken.
 
@@ -226,17 +226,17 @@ Zie [sectie 3: use-casescenariovereisten bepalen](planning-guide-requirements.md
 
 In deze secties worden de volgende functies en mogelijkheden beschreven die zijn afgestemd op de vereisten voor uw use-case-scenario:
 
--   Beleidsregels voor voorwaarden
+- Beleidsregels voor voorwaarden
 
--   Configuratiebeleid
+- Configuratiebeleid
 
--   Resourceprofielen
+- Resourceprofielen
 
--   Apps
+- Apps
 
--   Nalevingsbeleid
+- Nalevingsbeleid
 
--   Voorwaardelijke toegang
+- Voorwaardelijke toegang
 
 Laten we elk van deze gebieden eens nader bekijken.
 
@@ -274,13 +274,13 @@ U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.techn
 
 Gebruik profielen om de eindgebruiker verbinding te laten maken met bedrijfsgegevens. Intune ondersteunt veel typen profielen. Raadpleeg de use-cases en vereisten om te bepalen wanneer de profielen worden geconfigureerd. Alle apparaatprofielen worden gecategoriseerd op platformtype en moeten worden opgenomen in de ontwerpdocumentatie.
 
--   Certificaatprofielen
+- Certificaatprofielen
 
--   Wi-Fi-profiel
+- Wi-Fi-profiel
 
--   VPN-profiel
+- VPN-profiel
 
--   E-mailprofiel
+- E-mailprofiel
 
 Laten we elk profieltype eens nader onderzoeken.
 
@@ -288,11 +288,11 @@ Laten we elk profieltype eens nader onderzoeken.
 
 Met behulp van certificaatprofielen kan Intune een certificaat uitgeven aan een gebruiker of apparaat. Intune ondersteunt het volgende:
 
--   Simple Certificate Enrollment Protocol (SCEP)
+- Simple Certificate Enrollment Protocol (SCEP)
 
--   Vertrouwd basis-CA-certificaat
+- Vertrouwd basis-CA-certificaat
 
--   PFX-certificaat.
+- PFX-certificaat.
 
 Het verdient aanbeveling om vast te leggen welke gebruikersgroep een certificaat nodig heeft, hoeveel certificaatprofielen u nodig hebt en voor welke gebruikersgroepen ze moeten worden geïmplementeerd.
 
@@ -353,27 +353,27 @@ U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.techn
 
 U kunt Intune gebruiken om de gebruikers of apparaten op verschillende manieren van apps te voorzien. Het type app kan bestaan uit apps voor software-installatie, apps uit een openbare app-store, externe koppelingen of beheerde iOS-apps. Naast de afzonderlijke app-implementaties kunt u in volumes aangeschafte apps beheren en implementeren via de volume-aankoopprogramma's voor iOS en Windows. Meer informatie over:
 
--   [De typen apps die u kunt leveren](app-management.md)
+- [De typen apps die u kunt leveren](app-management.md)
 
--   [iOS Volume Purchase Program for Business (VPP)](vpp-apps-ios.md)
+- [iOS Volume Purchase Program for Business (VPP)](vpp-apps-ios.md)
 
--   [Microsoft Store voor Bedrijven-apps](windows-store-for-business.md)
+- [Microsoft Store voor Bedrijven-apps](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Vereisten voor app-typen
 
 Aangezien apps kunnen worden geïmplementeerd voor gebruikers en apparaten, wordt u aangeraden te beslissen welke apps door Intune worden beheerd. Probeer de volgende vragen te beantwoorden tijdens het samenstellen van de lijst:
 
--   Is voor de apps integratie met cloudservices vereist?
+- Is voor de apps integratie met cloudservices vereist?
 
--   Zullen alle apps beschikbaar zijn voor BYOD-gebruikers?
+- Zullen alle apps beschikbaar zijn voor BYOD-gebruikers?
 
--   Welke implementatieopties zijn er voor deze apps beschikbaar?
+- Welke implementatieopties zijn er voor deze apps beschikbaar?
 
--   Moet uw bedrijf zijn partners toegang verlenen tot gegevens van SaaS-apps (Software-as-a-Service)?
+- Moet uw bedrijf zijn partners toegang verlenen tot gegevens van SaaS-apps (Software-as-a-Service)?
 
--   Hebben de apps internettoegang vanaf de apparaten van de gebruikers nodig?
+- Hebben de apps internettoegang vanaf de apparaten van de gebruikers nodig?
 
--   Zijn de apps openbaar beschikbaar in een app-store of zijn het aangepaste LOB-apps (Line-Of-Business)?
+- Zijn de apps openbaar beschikbaar in een app-store of zijn het aangepaste LOB-apps (Line-Of-Business)?
 
 
 #### <a name="app-protection-policies"></a>Beleid voor app-beveiliging
@@ -407,7 +407,7 @@ Voorwaardelijke toegang wordt gebruikt om alleen compatibele apparaten toegang t
 
 Besluit met het oog op onlinetoegang voor welke platformen en gebruikersgroepen beleidsregels voor voorwaardelijke toegang gelden. Daarnaast moet u bepalen of de connector van Intune moet worden geïnstalleerd of geconfigureerd voor Exchange On-premises: 
 
--   [Exchange On-premises](exchange-connector-install.md)
+- [Exchange On-premises](exchange-connector-install.md)
 
 Hieronder ziet u een voorbeeld van het vastleggen van beleidsregels voor voorwaardelijke toegang:
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4bd03075e6088b4cf06237429a723e93e87029fd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494589"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548364"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: Microsoft Intune voorbereiden op het beheer van mobiele apparaten (MDM)
 
@@ -31,30 +31,30 @@ Alvorens in te gaan op de details van de Intune-configuratie, komen eerst de ver
 
 ### <a name="what-kinds-of-devices-do-you-need-to-manage"></a>Wat voor apparaten moet u beheren?
 
--   Voor welke [platformen](supported-devices-browsers.md) moet u ondersteuning bieden?
+- Voor welke [platformen](supported-devices-browsers.md) moet u ondersteuning bieden?
 
--   Zijn de apparaten waarvoor u ondersteuning wilt bieden bedrijfs- of persoonlijke apparaten?
+- Zijn de apparaten waarvoor u ondersteuning wilt bieden bedrijfs- of persoonlijke apparaten?
 
--   Wat voor verbinding gebruikt u? Wi-Fi, mobiel, VPN?
+- Wat voor verbinding gebruikt u? Wi-Fi, mobiel, VPN?
 
 ### <a name="what-do-your-users-need-to-do-on-managed-devices"></a>Wat moeten de gebruikers op de beheerde apparaten doen?
 
--   Moet u apps verstrekken aan uw eindgebruikers?
+- Moet u apps verstrekken aan uw eindgebruikers?
 
--   Gebruikt u aangepaste LOB-apps? Of gebruikt u alleen openbare Store-apps?
+- Gebruikt u aangepaste LOB-apps? Of gebruikt u alleen openbare Store-apps?
 
--   Moet u e-mailaccounts inrichten?
+- Moet u e-mailaccounts inrichten?
 
 ### <a name="what-kinds-of-users"></a>Welke soorten gebruikers zijn er?
 
--   Hoeveel gebruikers maken gebruik van één apparaat?
+- Hoeveel gebruikers maken gebruik van één apparaat?
 
--   Welke gebruiksvoorwaarden hebt u nodig?
+- Welke gebruiksvoorwaarden hebt u nodig?
 
-    -   Zorg ervoor dat uw juridische afdeling in een vroeg stadium hierbij wordt betrokken.
-    -   Wat voor lokalisatie is er vereist?
+    - Zorg ervoor dat uw juridische afdeling in een vroeg stadium hierbij wordt betrokken.
+    - Wat voor lokalisatie is er vereist?
 
--   Zijn de gebruikers bekend bent met technologie en IT in het algemeen?
+- Zijn de gebruikers bekend bent met technologie en IT in het algemeen?
 
 ### <a name="what-is-your-device-security-policy"></a>Wat voor beveiligingsbeleid voor apparaten hanteert u?
 
@@ -68,11 +68,11 @@ Alvorens in te gaan op de details van de Intune-configuratie, komen eerst de ver
 
 - Voor welke soorten verificatie moet u ondersteuning bieden? Als u gebruikmaakt van verificatie op basis van certificaten, welke certificaten moeten er dan worden verstrekt?
   - Intune kan certificaten verstrekken met resourcetoegangsprofielen voor ingeschreven apparaten.
-  -   Voor wat voor PKI-infrastructuur (Public Key Infrastructure) moet u ondersteuning bieden?
+  - Voor wat voor PKI-infrastructuur (Public Key Infrastructure) moet u ondersteuning bieden?
   <br></br>
 - Moet u voor VPN (Virtual Private Network) ondersteuning bieden op apparaat- of appniveau?
 
-  -   Intune kan VPN-configuraties verstrekken voor externe VPN-providers.
+  - Intune kan VPN-configuraties verstrekken voor externe VPN-providers.
   <br/><br/>
 - Kunnen er tijdelijke uitzonderingen worden gemaakt voor bepaalde vereisten om uitvaltijd te voorkomen? Of moeten apparaten met toegang altijd voldoen aan alle beveiligingsvereisten?
 

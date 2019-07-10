@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ec922d76ca08639139a7d130fb14c5e8bfa413
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046229"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548355"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Een communicatieplan voor de implementatie ontwikkelen
 
 Effectief wijzigingsbeheer valt of staat met duidelijke en nuttige communicatie over toekomstige wijzigingen. Om de Intune-implementatie soepel te laten verlopen, moeten deze vier gebieden aan bod komen in uw communicatieplan voor de implementatie:
 
--   Welke informatie er moet worden gecommuniceerd
+- Welke informatie er moet worden gecommuniceerd
 
--   Hoe de communicatie plaatsvindt
+- Hoe de communicatie plaatsvindt
 
--   Wie de communicatieberichten ontvangt
+- Wie de communicatieberichten ontvangt
 
--   De tijdlijn voor de communicatie
+- De tijdlijn voor de communicatie
 
 Laten we elk gebied eens nader bekijken.
 
@@ -56,13 +56,13 @@ Deze Engelstalige [registratiehandleiding voor eindgebruikers](https://gallery.t
 
 Er zijn verschillende manieren waarop u informatie over de implementatie van Intune kunt uitwisselen met de beoogde groepen en gebruikers van de organisatie. In de volgende lijst ziet u enkele voorbeelden met de fase waarin u de communicatiemethode kunt toepassen:
 
--   Persoonlijke en/of Microsoft Teams-bijeenkomsten voor de gehele organisatie tijdens de introductie
+- Persoonlijke en/of Microsoft Teams-bijeenkomsten voor de gehele organisatie tijdens de introductie
 
--   E-mail gebruikt tijdens de fase vóór de inschrijving, de inschrijving en na de inschrijving
+- E-mail gebruikt tijdens de fase vóór de inschrijving, de inschrijving en na de inschrijving
 
--   Websites van de organisatie voor alle fasen
+- Websites van de organisatie voor alle fasen
 
--   Yammer, posters en folders gebruikt tijdens de introductie en vóór de inschrijving
+- Yammer, posters en folders gebruikt tijdens de introductie en vóór de inschrijving
 
 ## <a name="communications-timeline"></a>Communicatietijdlijn
 

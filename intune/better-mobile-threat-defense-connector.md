@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8134b9db0e478efa69391edeb570b39c91a41c9
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511768"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547293"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Better Mobile Threat Defense-connector met Intune
 
@@ -41,11 +41,11 @@ Hier volgen enkele veelvoorkomende scenario's.
 
 Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u apparaten blokkeren tegen acties als de volgende totdat de bedreiging is opgelost:
 
--   Verbinding met bedrijfs-e-mail
+- Verbinding met bedrijfs-e-mail
 
--   Synchronisatie van bedrijfsbestanden met de app OneDrive voor werk
+- Synchronisatie van bedrijfsbestanden met de app OneDrive voor werk
 
--   Toegang tot bedrijfs-apps
+- Toegang tot bedrijfs-apps
 
 **Blokkeren wanneer er schadelijke apps zijn gedetecteerd:**
 
@@ -81,19 +81,19 @@ Bedreigingen voor uw netwerk worden gedetecteerd, zoals **man-in-the-middle-aanv
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
--   **Android 4.1 en hoger**
+- **Android 4.1 en hoger**
 
--   **iOS 8.0 en hoger**
+- **iOS 8.0 en hoger**
 
 ## <a name="prerequisites"></a>Vereisten
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune-abonnement
+- Microsoft Intune-abonnement
 
--   Better Mobile Threat Defense-abonnement
+- Better Mobile Threat Defense-abonnement
 
-    -   Zie de [Better Mobile-website](https://www.better.mobi/) voor meer informatie.
+    - Zie de [Better Mobile-website](https://www.better.mobi/) voor meer informatie.
 
 ## <a name="next-steps"></a>Volgende stappen
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 86aefbfc37db7929f9748d4783db319cf97d4545
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512265"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548470"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Het nalevingsbeleid voor apparaten en het beleid voor appbeheer configureren bij een migratie naar Microsoft Intune
 
@@ -30,13 +30,13 @@ Het belangrijkste doel bij het migreren naar Intune is dat alle apparaten worden
 
 Voor elk apparaatplatform gelden mogelijk verschillende instellingen, maar het Intune-apparaatbeleid kan met elk apparaatplatform worden gebruikt en biedt daarbij de volgende mogelijkheden voor het beheer van mobiele apparaten:
 
--   Regulering van het aantal apparaten dat een gebruiker inschrijft.
+- Regulering van het aantal apparaten dat een gebruiker inschrijft.
 
--   Apparaatinstellingen beheren (zoals versleuteling op apparaatniveau, wachtwoordlengte en cameragebruik).
+- Apparaatinstellingen beheren (zoals versleuteling op apparaatniveau, wachtwoordlengte en cameragebruik).
 
--   Leveren van apps, e-mailprofielen, VPN-profielen, enzovoort.
+- Leveren van apps, e-mailprofielen, VPN-profielen, enzovoort.
 
--   Het beoordelen van de criteria op apparaatniveau voor het nalevingsbeleid voor de beveiliging.
+- Het beoordelen van de criteria op apparaatniveau voor het nalevingsbeleid voor de beveiliging.
 
 > [!IMPORTANT]
 > Het apparaatbeheerbeleid wordt niet rechtstreeks toegewezen aan de afzonderlijke apparaten of gebruikers, maar aan gebruikersgroepen. Het beleid kan rechtstreeks worden toegepast op een gebruikersgroep en op die manier op het apparaat van de gebruiker. Het beleid kan ook worden toegepast op een apparaatgroep en op die manier op de groepsleden.
@@ -61,9 +61,9 @@ U moet een apparaatconfiguratieprofiel maken om instellingen op apparaatniveau d
 
 #### <a name="directly-import-ios-configuration-profiles-optional"></a>Rechtstreeks iOS-configuratieprofielen importeren (optioneel)
 
--   **iOS-profielen van Apple Configurator (iOS 7.1 en hoger):** Als uw bestaande MDM-oplossing gebruikmaakt van Apple Configurator-profielen (mobileconfig-bestanden), kunnen deze rechtstreeks door Intune worden geïmporteerd als aangepast configuratiebeleid.
+- **iOS-profielen van Apple Configurator (iOS 7.1 en hoger):** Als uw bestaande MDM-oplossing gebruikmaakt van Apple Configurator-profielen (mobileconfig-bestanden), kunnen deze rechtstreeks door Intune worden geïmporteerd als aangepast configuratiebeleid.
 
--   **Configuratiebeleid voor mobiele apps voor iOS:** Als uw bestaande MDM-oplossing gebruikmaakt van een configuratiebeleid voor mobiele apps voor iOS, kan dit rechtstreeks door Intune worden geïmporteerd zolang het voldoet aan de XML-indeling die door Apple is opgegeven voor eigenschappenlijsten.
+- **Configuratiebeleid voor mobiele apps voor iOS:** Als uw bestaande MDM-oplossing gebruikmaakt van een configuratiebeleid voor mobiele apps voor iOS, kan dit rechtstreeks door Intune worden geïmporteerd zolang het voldoet aan de XML-indeling die door Apple is opgegeven voor eigenschappenlijsten.
 
 - Meer informatie over het toevoegen van een aangepast beleid voor [iOS](custom-settings-ios.md).
 
@@ -71,25 +71,25 @@ U moet een apparaatconfiguratieprofiel maken om instellingen op apparaatniveau d
 
 Met het nalevingsbeleid voor apparaten worden beveiligingsinstellingen geëvalueerd en wordt rapportage gegenereerd waarin wordt vermeld of de apparaten voldoen aan de bedrijfsnormen. Dergelijke instellingen zijn onder andere:
 
--   Lengte pincode
+- Lengte pincode
 
--   De status Jailbroken
+- De status Jailbroken
 
--   Besturingssysteemversie
+- Besturingssysteemversie
 
 Zie aanvullende resources voor de instellingen voor het nalevingsbeleid voor apparaten:
 
--   Meer informatie over het [nalevingsbeleid voor apparaten](device-compliance.md).
+- Meer informatie over het [nalevingsbeleid voor apparaten](device-compliance.md).
 
--   Meer informatie over het [maken van een nalevingsbeleid voor apparaten](device-compliance-get-started.md).
+- Meer informatie over het [maken van een nalevingsbeleid voor apparaten](device-compliance-get-started.md).
 
 ### <a name="task-5-publish-and-deploy-apps"></a>Taak 5: Apps publiceren en implementeren
 
 Wanneer u Intune MDM gebruikt, kunt u apps verstrekken door automatische installatie te vereisen of ze beschikbaar te stellen in de bedrijfsportal.
 
--   [Apps toevoegen](apps-add.md).
+- [Apps toevoegen](apps-add.md).
 
--   [Apps implementeren](apps-deploy.md).
+- [Apps implementeren](apps-deploy.md).
 
 ### <a name="task-6-enable-device-enrollment"></a>Taak 6: Apparaatinschrijving inschakelen
 

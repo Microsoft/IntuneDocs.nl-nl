@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 6480c6fb412c12e228b8bc3647045cf15da531e1
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044086"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548020"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile-connector
 
 U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren door middel van voorwaardelijke toegang op basis van een risicoanalyse die wordt uitgevoerd in SEP Mobile (Symantec Endpoint Protection Mobile), een oplossing voor de beveiliging tegen bedreigingen op mobiele apparaten die met Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetrische gegevens die zijn verzameld op apparaten waarop SEP Mobile wordt uitgevoerd, zoals:
 
--   Fysieke beveiliging
+- Fysieke beveiliging
 
--   Netwerkbeveiliging
+- Netwerkbeveiliging
 
--   Toepassingsbeveiliging
+- Toepassingsbeveiliging
 
--   Beveiliging tegen zwakke plekken
+- Beveiliging tegen zwakke plekken
 
 U kunt SEP Mobile-risicoanalyse inschakelen via het Intune-nalevingsbeleid voor apparaten. Vervolgens kunt u voorwaardelijk toegangsbeleid gebruiken om de toegang tot bedrijfsresources voor niet-conforme apparaten toe te staan of te blokkeren op basis van de gedetecteerde bedreigingen.
 
@@ -48,9 +48,9 @@ Als het apparaat niet aan het beleid blijkt te voldoen, wordt de toegang tot res
 
 Intune biedt ondersteuning voor twee integratiemodi met SEP Mobile:
 
--   **Basisinstallatie** op basis van een modus voor alleen-lezen waarbij voor SEP Mobile de apparaten in Intune worden weergegeven.
+- **Basisinstallatie** op basis van een modus voor alleen-lezen waarbij voor SEP Mobile de apparaten in Intune worden weergegeven.
 
--   **Volledige integratie** waarbij met SEP Mobile apparaatrisico- en beveiligingsincidentgegevens kunnen worden gemeld aan Intune.
+- **Volledige integratie** waarbij met SEP Mobile apparaatrisico- en beveiligingsincidentgegevens kunnen worden gemeld aan Intune.
 
 ## <a name="sample-scenarios"></a>Voorbeeldscenario's
 
@@ -60,11 +60,11 @@ Hier volgen enkele veelvoorkomende scenario's:
 
 Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u apparaten blokkeren totdat de bedreiging is opgelost:
 
--   Verbinding met bedrijfs-e-mail
+- Verbinding met bedrijfs-e-mail
 
--   Synchronisatie van bedrijfsbestanden met de app OneDrive voor werk
+- Synchronisatie van bedrijfsbestanden met de app OneDrive voor werk
 
--   Toegang tot bedrijfs-apps
+- Toegang tot bedrijfs-apps
 
 **Blokkeren wanneer er schadelijke apps zijn gedetecteerd:**
 
@@ -100,17 +100,17 @@ Detecteer bedreigingen zoals **man-in-the-middle**-aanvallen in het netwerk en v
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
--   **Android 4.1 en hoger**
+- **Android 4.1 en hoger**
 
--   **iOS 8 en hoger**
+- **iOS 8 en hoger**
 
 ## <a name="pre-requisites"></a>Vereisten
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune-abonnement
+- Microsoft Intune-abonnement
 
--   Symantec Endpoint Protection Mobile-abonnement
+- Symantec Endpoint Protection Mobile-abonnement
 
 Ga naar de [Symantec-website](https://www.skycure.com/skycure-microsoft-integration/) voor meer informatie.
 

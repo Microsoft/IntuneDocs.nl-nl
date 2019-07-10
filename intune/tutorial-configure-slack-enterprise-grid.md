@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da6c9b544d86c9c4b09c061c0f1500ed8612a047
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: e7ff4e1fd9f055268a461d1a81b8a2e31fe3d32b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530704"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548996"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Zelfstudie: Slack configureren om Intune te gebruiken voor de configuratie van EMM en de app
 
@@ -62,8 +62,8 @@ Voeg Slack voor EMM toe als een beheerde iOS-app in Intune en wijs uw Slack-gebr
 6. Voer in de zoekbalk 'Slack voor EMM' in en selecteer de app die u zojuist hebt toegevoegd.
 7. Selecteer bij Beheren **Toewijzingen**.
 8. Selecteer **Groep toevoegen**. Afhankelijk van wie u hiervoor hebt aangewezen bij het inschakelen van EMM voor Slack, kunt u onder **Toewijzingstype** de volgende opties selecteren:
-    -  **Beschikbaar voor ingeschreven apparaten**, indien u hebt gekozen voor 'Alle leden (inclusief gasten)', of
-    -  **Beschikbaar met of zonder inschrijving**, als u hebt gekozen voor 'Alle leden (met uitzondering van gasten)' of 'Optioneel'.
+    - **Beschikbaar voor ingeschreven apparaten**, indien u hebt gekozen voor 'Alle leden (inclusief gasten)', of
+    - **Beschikbaar met of zonder inschrijving**, als u hebt gekozen voor 'Alle leden (met uitzondering van gasten)' of 'Optioneel'.
 9. Selecteer **Opgenomen groepen** en selecteer bij Deze app beschikbaar maken voor alle gebruikers **Ja**.
 10. Klik op **OK** en klik vervolgens nogmaals op **OK**.
 11. Klik op **Opslaan**.
@@ -77,7 +77,7 @@ Voeg een app-configuratiebeleid toe voor Slack voor EMM iOS. App-configuratiebel
 5. Selecteer **Gekoppelde app**.
 6. Voer in de zoekbalk 'Slack voor EMM' in en selecteer de app.
 7. Klik op **OK** en selecteer vervolgens **Configuratie-instellingen**. 
-    -   Voor informatie over configuratiesleutels en hun waarden, raadpleegt u de documentatie op het tabblad 'Technisch' van [de AppConfig-webpagina van Slack](https://www.appconfig.org/company/slack/).
+    - Voor informatie over configuratiesleutels en hun waarden, raadpleegt u de documentatie op het tabblad 'Technisch' van [de AppConfig-webpagina van Slack](https://www.appconfig.org/company/slack/).
 8. Selecteer **OK** en selecteer vervolgens **Toevoegen**.
 9. Voer in de zoekbalk 'Testbeleid Slack-app-configuratie' in en selecteer het beleid dat u zojuist hebt toegevoegd.
 10. Selecteer bij Beheren **Toewijzingen**.
@@ -92,13 +92,13 @@ Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepale
 4. Selecteer bij Platform **iOS**.
 5. Selecteer **Apparaatstatus**. Naast Apparaten met jailbreak selecteert u **Blokkeren** en vervolgens selecteert u **OK**.
 6. Selecteer **Systeembeveiliging** en voer de Wachtwoordinstellingen in. Voor deze zelfstudie selecteert u de volgende aanbevolen instellingen:
-    -   Voor Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten selecteert u **Vereisen**.
-    -   Voor Eenvoudige wachtwoorden, selecteert u **Blokkeren**.
-    -   Voor Minimale wachtwoordlengte voert u 4 in.
-    -   Voor Vereist wachtwoordtype kiest u **Alfanumeriek**.
-    -   Voor Max. aantal minuten na schermvergrendeling voordat wachtwoord is vereist kiest u **Onmiddellijk**.
-    -   Voor Verlooptijd wachtwoord (dagen) voert u 41 in.
-    -   Voor Aantal vorige wachtwoorden dat niet opnieuw mag worden gebruikt voert u 5 in.
+    - Voor Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten selecteert u **Vereisen**.
+    - Voor Eenvoudige wachtwoorden, selecteert u **Blokkeren**.
+    - Voor Minimale wachtwoordlengte voert u 4 in.
+    - Voor Vereist wachtwoordtype kiest u **Alfanumeriek**.
+    - Voor Max. aantal minuten na schermvergrendeling voordat wachtwoord is vereist kiest u **Onmiddellijk**.
+    - Voor Verlooptijd wachtwoord (dagen) voert u 41 in.
+    - Voor Aantal vorige wachtwoorden dat niet opnieuw mag worden gebruikt voert u 5 in.
 7. Selecteer **OK** en vervolgens weer **OK**.
 8. Klik op **Maken**.
 
@@ -114,8 +114,8 @@ Voeg Slack toe als een beheerde Google Play-app in Intune en wijs uw Slack-gebru
 5. Voer in de zoekbalk 'Slack' in en selecteer de app die u zojuist hebt toegevoegd.
 6. Selecteer bij Beheren **Toewijzingen**.
 7. Selecteer **Groep toevoegen**. Afhankelijk van wie u hiervoor hebt aangewezen bij het inschakelen van EMM voor Slack, kunt u onder **Toewijzingstype** de volgende opties selecteren:
-    -   **Beschikbaar voor ingeschreven apparaten**, indien u hebt gekozen voor 'Alle leden (inclusief gasten)', of
-    -   **Beschikbaar met of zonder inschrijving**, als u hebt gekozen voor 'Alle leden (met uitzondering van gasten)' of 'Optioneel'.
+    - **Beschikbaar voor ingeschreven apparaten**, indien u hebt gekozen voor 'Alle leden (inclusief gasten)', of
+    - **Beschikbaar met of zonder inschrijving**, als u hebt gekozen voor 'Alle leden (met uitzondering van gasten)' of 'Optioneel'.
 8. Selecteer Opgenomen groepen en selecteer bij Deze app beschikbaar maken voor alle gebruikers **Ja**.
 9. Klik op **OK** en klik vervolgens nogmaals op **OK**.
 10. Klik op **Opslaan**.
@@ -129,7 +129,7 @@ Voeg een app-configuratiebeleid toe voor Slack. App-configuratiebeleidsregels vo
 5. Selecteer **Gekoppelde app**.
 6. Voer in de zoekbalk 'Slack' in en selecteer de app.
 7. Klik op **OK** en selecteer vervolgens **Configuratie-instellingen**.
-    -   Voor informatie over configuratiesleutels en hun waarden, raadpleegt u de documentatie op het tabblad 'Technisch' van [de AppConfig-webpagina van Slack](https://www.appconfig.org/company/slack/).
+    - Voor informatie over configuratiesleutels en hun waarden, raadpleegt u de documentatie op het tabblad 'Technisch' van [de AppConfig-webpagina van Slack](https://www.appconfig.org/company/slack/).
 8. Selecteer **OK** en selecteer vervolgens **Toevoegen**.
 9. Voer in de zoekbalk 'Testbeleid Slack-app-configuratie' in en selecteer het beleid dat u zojuist hebt toegevoegd.
 10. Selecteer bij Beheren **Toewijzingen**.
@@ -145,12 +145,12 @@ Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepale
 5. Selecteer onder Profieltype **Werkprofiel**.
 6. Selecteer **Apparaatstatus**. Naast Apparaten met roottoegang selecteert u **Blokkeren** en vervolgens selecteert u **OK**.
 7. Selecteer **Systeembeveiliging** en voer de **Wachtwoordinstellingen** in. Voor deze zelfstudie selecteert u de volgende aanbevolen instellingen:
-    -   Voor Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten selecteert u **Vereisen**.
-    -   Voor Vereist wachtwoordtype kiest u **Ten minste alfanumeriek**.
-    -   Voor Minimale wachtwoordlengte voert u 4 in.
-    -   Voor Maximaal aantal minuten na schermvergrendeling voordat wachtwoord is vereist kiest u **15 minuten**.
-    -   Voor Verlooptijd wachtwoord (dagen) voert u 41 in.
-    -   Voor Aantal vorige wachtwoorden dat niet opnieuw mag worden gebruikt voert u 5 in.
+    - Voor Wachtwoord vereisen voor het ontgrendelen van mobiele apparaten selecteert u **Vereisen**.
+    - Voor Vereist wachtwoordtype kiest u **Ten minste alfanumeriek**.
+    - Voor Minimale wachtwoordlengte voert u 4 in.
+    - Voor Maximaal aantal minuten na schermvergrendeling voordat wachtwoord is vereist kiest u **15 minuten**.
+    - Voor Verlooptijd wachtwoord (dagen) voert u 41 in.
+    - Voor Aantal vorige wachtwoorden dat niet opnieuw mag worden gebruikt voert u 5 in.
 8. Klik op **OK** en klik vervolgens nogmaals op **OK**.
 9. Klik op **Maken**.
 

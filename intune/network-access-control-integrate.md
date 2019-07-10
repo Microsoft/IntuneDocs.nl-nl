@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 400de55e26076a8d612ac31388d5c5daec68d4a0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 926d31e226bd25890afe5214b9e8c9247f7316a2
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044535"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572183"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Netwerktoegangsbeheer integreren met Intune
 
@@ -39,7 +39,7 @@ Als het apparaat is geregistreerd en compatibel is met Intune, moet de NAC-oplos
 
 Apparaten die actief worden gesynchroniseerd met Intune, kunnen niet worden omgezet van **Compatibel** / **Niet-compatibel** naar **Niet gesynchroniseerd** (of **Onbekend**). De status **Onbekend** is gereserveerd voor pas geregistreerde apparaten die nog niet zijn geëvalueerd voor naleving.
 
-Voor apparaten die zijn geblokkeerd voor toegang tot resources, moet de blokkerende service alle gebruikers doorsturen naar de [beheerportal](https://portal.manage.microsoft.com) om te bepalen waarom het apparaat is geblokkeerd.  Als de gebruikers deze pagina bezoeken, worden hun apparaten op synchrone wijze opnieuw geëvalueerd voor naleving.
+Voor apparaten die zijn geblokkeerd voor toegang tot resources, moet de blokkerende service alle gebruikers doorsturen naar de [beheerportal](https://portal.manage.microsoft.com) om te bepalen waarom het apparaat is geblokkeerd.  Als de gebruikers deze pagina bezoeken, worden hun apparaten op synchrone wijze opnieuw geëvalueerd voor naleving.
 
 ## <a name="nac-and-conditional-access"></a>NAC en voorwaardelijke toegang
 

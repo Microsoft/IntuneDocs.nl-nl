@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2820007f167b2f79b8dd98ca31d7e50968ac1969
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7aaeb94aad7e31c3346b088239024c14f9e190da
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046058"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549355"
 ---
 # <a name="intune-testing-and-validation"></a>Intune testen en valideren
 
@@ -33,17 +33,17 @@ Het is raadzaam uw team voor IT-ondersteuning en helpdesk te betrekken bij de te
 
 U wordt aangeraden het volgende te documenteren:
 
--   **Testcriteria:** Identificeer de te hanteren benchmarks.
+- **Testcriteria:** Identificeer de te hanteren benchmarks.
 
--   **Ontwerponderdelen:** Deze moeten in ten minste één testcriterium zijn opgenomen.
+- **Ontwerponderdelen:** Deze moeten in ten minste één testcriterium zijn opgenomen.
 
 Als een ontwerponderdeel niet is opgenomen in ten minste één testcriterium voor een vereiste of scenario, moet u beslissen of het ontwerponderdeel wel of niet vereist is. Zorg er bovendien voor dat u over de volgende items beschikt:
 
--   **Accounts:** Testaccounts die een licentie hebben voor EMS en Office 365 om alle use-casescenario's te testen.
+- **Accounts:** Testaccounts die een licentie hebben voor EMS en Office 365 om alle use-casescenario's te testen.
 
--   **Apparaten:** Testapparaten die kunnen worden gewist of teruggezet naar de fabrieksinstellingen.
+- **Apparaten:** Testapparaten die kunnen worden gewist of teruggezet naar de fabrieksinstellingen.
 
--   **Integratieonderdelen:** Alle integratieonderdelen (certificaatconnectors en de Intune on-premises Exchange-connector) moeten zo nodig worden geïnstalleerd en geconfigureerd.
+- **Integratieonderdelen:** Alle integratieonderdelen (certificaatconnectors en de Intune on-premises Exchange-connector) moeten zo nodig worden geïnstalleerd en geconfigureerd.
 
 U kunt ontwerpwijzigingen nodig hebben om onvoorziene problemen het hoofd te bieden. Bovendien moeten alle ontwerpwijzigingen volledig worden gedocumenteerd met de reden voor elke wijziging. Hier volgt een voorbeeld van een mogelijke wijziging:
 
@@ -51,9 +51,9 @@ U kunt ontwerpwijzigingen nodig hebben om onvoorziene problemen het hoofd te bie
 
 U kunt te maken krijgen met uitdagingen of problemen waarvoor technische hulp of gespecialiseerde probleemoplossing is vereist tijdens het testen en valideren. We raden u aan om naar hulp te zoeken via de kanalen van Microsoft-ondersteuning.
 
--   [Informatie over het verkrijgen van ondersteuning voor Intune](get-support.md)
+- [Informatie over het verkrijgen van ondersteuning voor Intune](get-support.md)
 
--   [Contact opnemen met telefonische ondersteuning voor Microsoft Intune](get-support.md)
+- [Contact opnemen met telefonische ondersteuning voor Microsoft Intune](get-support.md)
 
 ## <a name="functional-validation-testing"></a>Functionele-validatietests
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 22ce9ace7848ea1535b04ab6f0c0249c970e8c34
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494293"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547353"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -429,7 +429,7 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
         >  - In de statische tekst van het onderwerp leiden accolades **{ }** die geen variabele insluiten, tot een fout. 
         >  - Wanneer u een variabele voor een apparaatcertificaat gebruikt, plaatst u de variabele tussen accolades **{ }** .
         >  - `{{FullyQualifiedDomainName}}` kan alleen worden gebruikt voor Windows-apparaten en apparaten die aan een domein zijn toegevoegd. 
-        >  -  Houd er rekening mee dat wanneer u in het onderwerp of de alternatieve naam voor het onderwerp voor een apparaatcertificaat apparaateigenschappen gebruikt, zoals het IMEI-nummer, het serienummer en de Fully Qualified Domain Name, deze eigenschappen kunnen worden vervalst door een persoon met toegang tot het apparaat.
+        >  - Houd er rekening mee dat wanneer u in het onderwerp of de alternatieve naam voor het onderwerp voor een apparaatcertificaat apparaateigenschappen gebruikt, zoals het IMEI-nummer, het serienummer en de Fully Qualified Domain Name, deze eigenschappen kunnen worden vervalst door een persoon met toegang tot het apparaat.
         >  - Het profiel wordt niet geïnstalleerd op het apparaat als de opgegeven apparaatvariabelen niet worden ondersteund. Als bijvoorbeeld {{IMEI}} wordt gebruikt in de onderwerpnaam van een SCEP-profiel dat wordt toegewezen aan een apparaat dat geen IMEI-nummer heeft, mislukt de profielinstallatie. 
 
 
@@ -472,7 +472,7 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
         >  - Accolades **{ }** , pijp-symbolen **|** en puntkomma's **;** kunnen niet worden gebruikt in de statische tekst van de alternatieve naam voor het onderwerp. 
         >  - Wanneer u een variabele voor een apparaatcertificaat gebruikt, plaatst u de variabele tussen accolades **{ }** .
         >  - `{{FullyQualifiedDomainName}}` kan alleen worden gebruikt voor Windows-apparaten en apparaten die aan een domein zijn toegevoegd. 
-        >  -  Houd er rekening mee dat wanneer u in het onderwerp of de alternatieve naam voor het onderwerp voor een apparaatcertificaat apparaateigenschappen gebruikt, zoals het IMEI-nummer, het serienummer en de Fully Qualified Domain Name, deze eigenschappen kunnen worden vervalst door een persoon met toegang tot het apparaat.
+        >  - Houd er rekening mee dat wanneer u in het onderwerp of de alternatieve naam voor het onderwerp voor een apparaatcertificaat apparaateigenschappen gebruikt, zoals het IMEI-nummer, het serienummer en de Fully Qualified Domain Name, deze eigenschappen kunnen worden vervalst door een persoon met toegang tot het apparaat.
         >  - Het profiel wordt niet geïnstalleerd op het apparaat als de opgegeven apparaatvariabelen niet worden ondersteund. Als bijvoorbeeld {{IMEI}} wordt gebruikt in de alternatieve onderwerpnaam van een SCEP-profiel dat wordt toegewezen aan een apparaat dat geen IMEI-nummer heeft, mislukt de profielinstallatie.  
 
    - **Geldigheidsduur van certificaat**: Als u de opdracht `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` hebt uitgevoerd op de verlenende CA, waarop een aangepaste geldigheidsperiode mogelijk is, kunt u opgeven hoelang het certificaat geldig blijft.<br>U kunt een waarde invoeren die lager is dan de geldigheidsperiode in de certificaatsjabloon, maar niet hoger. Als de geldigheidsperiode van het certificaat in de certificaatsjabloon bijvoorbeeld twee jaar is, kunt u wel één jaar, maar niet vijf jaar opgeven. De waarde moet ook lager zijn dan de resterende geldigheidsperiode van het certificaat van de verlenende CA. 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef0c4f5fd3f8c92d1d78ed37946663a127df440f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f9438c3c566dc62acfa7567428ebe3a6a6be4777
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530689"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572567"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense-connector met Intune
 
@@ -45,11 +45,11 @@ Hier volgen enkele veelvoorkomende scenario's:
 
 Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u apparaten blokkeren totdat de bedreiging is opgelost:
 
--   Verbinding met bedrijfs-e-mail
+- Verbinding met bedrijfs-e-mail
 
--   Synchronisatie van bedrijfsbestanden met de app OneDrive voor werk
+- Synchronisatie van bedrijfsbestanden met de app OneDrive voor werk
 
--   Toegang tot bedrijfs-apps
+- Toegang tot bedrijfs-apps
 
 **Blokkeren wanneer er schadelijke apps zijn gedetecteerd:**
 
@@ -61,7 +61,7 @@ Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u a
 
 ### <a name="control-access-based-on-threat-to-network"></a>Toegangsbeheer op basis van bedreigingen voor het netwerk
 
-Detecteer bedreigingen zoals **man-in-the-middle-aanvallen** in het netwerk en beveilig de toegang tot Wi-Fi-netwerken op basis van het apparaatrisico.
+Detecteer bedreigingen zoals **man-in-the-middle**-aanvallen in het netwerk en beveilig de toegang tot Wi-Fi-netwerken op basis van het apparaatrisico.
 
 **Netwerktoegang via Wi-Fi blokkeren:**
 
@@ -73,7 +73,7 @@ Detecteer bedreigingen zoals **man-in-the-middle-aanvallen** in het netwerk en
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Toegangsbeheer voor SharePoint Online op basis van bedreigingen voor het netwerk
 
-Detecteer bedreigingen zoals **man-in-the-middle-aanvallen** in het netwerk en voorkom synchronisatie van bedrijfsbestanden op basis van het apparaatrisico.
+Detecteer bedreigingen zoals **man-in-the-middle**-aanvallen in het netwerk en voorkom synchronisatie van bedrijfsbestanden op basis van het apparaatrisico.
 
 **SharePoint Online blokkeren wanneer netwerkbedreigingen worden gedetecteerd:**
 
@@ -85,18 +85,18 @@ Detecteer bedreigingen zoals **man-in-the-middle-aanvallen** in het netwerk en
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
--   **Android 4.1 en hoger**
+- **Android 4.1 en hoger**
 
--   **iOS 8 en hoger**
+- **iOS 8 en hoger**
 
 ## <a name="pre-requisites"></a>Vereisten
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune-abonnement
+- Microsoft Intune-abonnement
 
--   Check Point SandBlast Mobile Threat Defense-abonnement
-    -   Zie de[CheckPoint SandBlast-website](https://www.checkpoint.com/) voor meer informatie.
+- Check Point SandBlast Mobile Threat Defense-abonnement
+    - Zie de[CheckPoint SandBlast-website](https://www.checkpoint.com/) voor meer informatie.
 
 ## <a name="next-steps"></a>Volgende stappen
 

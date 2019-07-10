@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58ee82e44e8aa8d68c0fb00c4497cc0455ed21d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2315136fe277f06f6dbb11c13139a9dc193ce6f7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528638"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549375"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>MTD-nalevingsbeleid (Mobile Threat Defense) voor apparaten maken met Intune
 
@@ -37,23 +37,23 @@ Als onderdeel van de configuratie van MTD in de MTD-partnerconsole, hebt u een b
 
 Vereisten voor apparaatnalevingsbeleid met MTD:
 
--   De integratie van MTD met Intune instellen
+- De integratie van MTD met Intune instellen
 
 ## <a name="to-create-an-mtd-device-compliance-policy"></a>Nalevingsbeleid voor MTD-apparaten maken
 
-1.  Ga naar [Azure Portal](https://portal.azure.com/) en meld u aan met uw Intune-referenties.
+1. Ga naar [Azure Portal](https://portal.azure.com/) en meld u aan met uw Intune-referenties.
 
-2.  Kies in het **Azure-dashboard** in het linkermenu de optie **Alle services** en typ vervolgens **Intune** in het filtertekstvak.
+2. Kies in het **Azure-dashboard** in het linkermenu de optie **Alle services** en typ vervolgens **Intune** in het filtertekstvak.
 
-3.  Kies **Intune**. Vervolgens ziet u het **Intune-dashboard**.
+3. Kies **Intune**. Vervolgens ziet u het **Intune-dashboard**.
 
 4. Kies in het **Intune-dashboard** de optie **Apparaatcompatibiliteit** en kies vervolgens **Beleidsregels** onder de sectie **Beheren**.
 
-5.  Kies **Beleid maken**, voer waarden in voor **Naam**, **Beschrijving** van apparaatcompatibiliteit, selecteer het **Platform** en kies vervolgens **Configureren** onder de sectie **Instellingen**.
+5. Kies **Beleid maken**, voer waarden in voor **Naam**, **Beschrijving** van apparaatcompatibiliteit, selecteer het **Platform** en kies vervolgens **Configureren** onder de sectie **Instellingen**.
 
-6.  Kies in het deelvenster **Nalevingsbeleid** de optie **Apparaatstatus**.
+6. Kies in het deelvenster **Nalevingsbeleid** de optie **Apparaatstatus**.
 
-7.  Kies in het deelvenster **Apparaatstatus** het Mobile Threat-niveau uit de vervolgkeuzelijst onder **Vereisen dat het apparaat het apparaatdreigingsniveau niet overschrijdt**.
+7. Kies in het deelvenster **Apparaatstatus** het Mobile Threat-niveau uit de vervolgkeuzelijst onder **Vereisen dat het apparaat het apparaatdreigingsniveau niet overschrijdt**.
 
     a.  **Beveiligd**: Dit is het veiligste niveau. Het apparaat kan geen enkele bedreiging hebben en heeft nog altijd toegang tot bedrijfsbronnen. Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.
 
@@ -63,7 +63,7 @@ Vereisten voor apparaatnalevingsbeleid met MTD:
 
     d.  **Hoog**: dit is het minst veilige niveau. Hiermee worden alle bedreigingsniveaus toegestaan en wordt Mobile Threat Defense uitsluitend gebruikt voor rapportagedoeleinden. Op apparaten moet de MTD-app met deze instelling zijn geactiveerd.
 
-8.  Klik tweemaal op **OK** en kies vervolgens **Maken**.
+8. Klik tweemaal op **OK** en kies vervolgens **Maken**.
 
 > [!IMPORTANT]
 > Als u beleid voor voorwaardelijke toegang voor Office 365 of andere services maakt, wordt de compatibiliteitsevaluatie van het apparaat bekeken en wordt niet-compatibele apparaten de toegang tot bedrijfsresources geweigerd tot de bedreiging op het apparaat is opgelost.

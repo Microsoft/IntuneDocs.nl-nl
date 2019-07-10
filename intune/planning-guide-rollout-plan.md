@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09e2f88168acd1bc77051df924f756a326a02b21
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7a369b3bde7967db04a76ae1794d7b8fb86c21e4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041493"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548417"
 ---
 # <a name="develop-a-rollout-plan"></a>Een rollout-plan ontwikkelen
 
@@ -53,11 +53,11 @@ Neem uw [communicatie](planning-guide-communication-plan.md)plan, [ondersteuning
 ### <a name="production-rollout"></a>Volledige implementatie
 Na een geslaagde testfase kunt u beginnen met een volledige implementatie die gericht is op de overige groepen van uw organisatie. Enkele voorbeelden van verschillende implementatiegroepen en -fasen zijn:
 
--   **Afdelingen** <br/>Elke afdeling kan een implementatiefase vormen. Een gehele afdeling is tegelijkertijd het doel van de implementatie. Bij dit type implementatie maken de gebruikers van elke afdeling hoogstwaarschijnlijk op dezelfde manier gebruik van het mobiele apparaat en hebben ze toegang tot dezelfde toepassingen. De gebruikers moeten waarschijnlijk voldoen aan hetzelfde soort beleid.
+- **Afdelingen** <br/>Elke afdeling kan een implementatiefase vormen. Een gehele afdeling is tegelijkertijd het doel van de implementatie. Bij dit type implementatie maken de gebruikers van elke afdeling hoogstwaarschijnlijk op dezelfde manier gebruik van het mobiele apparaat en hebben ze toegang tot dezelfde toepassingen. De gebruikers moeten waarschijnlijk voldoen aan hetzelfde soort beleid.
 
--   **Geografie** <br/>Bij deze methode vindt de implementatie plaats voor alle gebruikers in een specifiek geografisch gebied, of dat nu hetzelfde continent, hetzelfde land, dezelfde regio of hetzelfde bedrijfsgebouw is. Dit type gefaseerde implementatie biedt u de mogelijkheid om u te richten op een specifieke gebruikerslocatie. U kunt op deze manier een meer [intensieve](#user-assisted-enrollment) methode hanteren omdat het aantal locaties wordt beperkt waar Intune op hetzelfde moment wordt geïmplementeerd. Omdat het mogelijk is dat er op dezelfde locatie verschillende afdelingen of use cases zijn, kunnen er verschillende use cases op hetzelfde moment worden geïmplementeerd.
+- **Geografie** <br/>Bij deze methode vindt de implementatie plaats voor alle gebruikers in een specifiek geografisch gebied, of dat nu hetzelfde continent, hetzelfde land, dezelfde regio of hetzelfde bedrijfsgebouw is. Dit type gefaseerde implementatie biedt u de mogelijkheid om u te richten op een specifieke gebruikerslocatie. U kunt op deze manier een meer [intensieve](#user-assisted-enrollment) methode hanteren omdat het aantal locaties wordt beperkt waar Intune op hetzelfde moment wordt geïmplementeerd. Omdat het mogelijk is dat er op dezelfde locatie verschillende afdelingen of use cases zijn, kunnen er verschillende use cases op hetzelfde moment worden geïmplementeerd.
 
--   **Platform** <br/>Bij dit type implementatie worden soortgelijke platformen gelijktijdig geïmplementeerd. Een voorbeeld daarvan is de implementatie op alle iOS-apparaten tijdens de eerste maand, gevolgd door Android, gevolgd door Windows. De helpdeskondersteuning wordt met dit type gefaseerde implementatie vereenvoudigd omdat de helpdesk slechts voor één platform tegelijkertijd ondersteuning hoeft te bieden.
+- **Platform** <br/>Bij dit type implementatie worden soortgelijke platformen gelijktijdig geïmplementeerd. Een voorbeeld daarvan is de implementatie op alle iOS-apparaten tijdens de eerste maand, gevolgd door Android, gevolgd door Windows. De helpdeskondersteuning wordt met dit type gefaseerde implementatie vereenvoudigd omdat de helpdesk slechts voor één platform tegelijkertijd ondersteuning hoeft te bieden.
 
 Hier is een voorbeeld van een rollout-plan voor Intune met doelgroepen en tijdlijnen:
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e409683c294b9d0321458f40c9b7f66bc3660ac
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046515"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549413"
 ---
 # <a name="phase-2-migration-campaign"></a>Fase 2: Migratiecampagne
 
@@ -31,39 +31,39 @@ Kies een migratiestrategie die het beste past bij de behoeften van uw organisati
 
 Dit zijn de sleutels voor de migratie van een MDM-provider van derden naar Intune:
 
--   Heldere en nuttige communicatie kan uitvaltijd en ergernis bij de eindgebruiker minimaliseren.
+- Heldere en nuttige communicatie kan uitvaltijd en ergernis bij de eindgebruiker minimaliseren.
 
--   Zorg ervoor dat u specifieke en concrete instructies voor de migratie hanteert.
+- Zorg ervoor dat u specifieke en concrete instructies voor de migratie hanteert.
 
--   Alle beheerde apparaten moeten worden uitgeschreven bij uw bestaande MDM-provider voordat ze kunnen worden geregistreerd bij Intune.
+- Alle beheerde apparaten moeten worden uitgeschreven bij uw bestaande MDM-provider voordat ze kunnen worden geregistreerd bij Intune.
 
--   Help de eindgebruikers bij het uitschrijven van hun apparaten bij uw bestaande MDM-provider.
+- Help de eindgebruikers bij het uitschrijven van hun apparaten bij uw bestaande MDM-provider.
 
--   Hanteer een gefaseerde benadering. Begin met een kleine groep gebruikers als testfase en voeg steeds meer groepen gebruikers toe totdat u een volledige implementatie hebt bereikt.
+- Hanteer een gefaseerde benadering. Begin met een kleine groep gebruikers als testfase en voeg steeds meer groepen gebruikers toe totdat u een volledige implementatie hebt bereikt.
 
--   Controleer de belasting voor de helpdesk en het aantal geslaagde registraties in elke cyclus. Laat tijd open in de planning zodat de slagingscriteria voor elke groep kunnen worden geëvalueerd voordat u de migratie voor de volgende groep uitvoert. Bij de implementatie in de testfase moet het volgende worden gecontroleerd:
+- Controleer de belasting voor de helpdesk en het aantal geslaagde registraties in elke cyclus. Laat tijd open in de planning zodat de slagingscriteria voor elke groep kunnen worden geëvalueerd voordat u de migratie voor de volgende groep uitvoert. Bij de implementatie in de testfase moet het volgende worden gecontroleerd:
 
-    -   Het aantal geslaagde en mislukte inschrijvingen zijn naar verwachting.
+    - Het aantal geslaagde en mislukte inschrijvingen zijn naar verwachting.
 
-    -   De gebruikersproductiviteit:
+    - De gebruikersproductiviteit:
 
-        -   Bedrijfsresources zoals VPN, Wi-Fi-, e-mail en certificaten functioneren naar behoren.
+        - Bedrijfsresources zoals VPN, Wi-Fi-, e-mail en certificaten functioneren naar behoren.
 
-        -   De gebruikers kunnen toegang krijgen tot de aangeboden apps.
+        - De gebruikers kunnen toegang krijgen tot de aangeboden apps.
 
-    -   Gegevensbeveiliging:
+    - Gegevensbeveiliging:
 
-        -   Er wordt nalevingsrapportage uitgevoerd.
+        - Er wordt nalevingsrapportage uitgevoerd.
 
-        -   De beveiliging van mobiele apps wordt doorgevoerd.
+        - De beveiliging van mobiele apps wordt doorgevoerd.
 
 Wanneer u tevreden bent over de eerste fase van de migratie, herhaalt u de [migratiecyclus](migration-guide-cycle.md) voor de volgende fase.
 
--   Herhaal de gefaseerde cycli totdat alle gebruikers naar Intune zijn gemigreerd.
+- Herhaal de gefaseerde cycli totdat alle gebruikers naar Intune zijn gemigreerd.
 
--   Zorg ervoor dat het helpdeskteam er klaar voor is om gedurende de migratiecampagne ondersteuning te bieden aan de eindgebruikers. Hanteer een migratie op vrijwillige basis totdat u een idee hebt van de werkbelasting voor ondersteuningsgesprekken.
+- Zorg ervoor dat het helpdeskteam er klaar voor is om gedurende de migratiecampagne ondersteuning te bieden aan de eindgebruikers. Hanteer een migratie op vrijwillige basis totdat u een idee hebt van de werkbelasting voor ondersteuningsgesprekken.
 
--   Stel pas deadlines voor de registratie in als de ondersteuning voor de resterende gebruikers kan worden verwerkt door uw helpdesk
+- Stel pas deadlines voor de registratie in als de ondersteuning voor de resterende gebruikers kan worden verwerkt door uw helpdesk
 
 > [!IMPORTANT]
 > Configureer niet zowel Intune als uw bestaande MDM-oplossing van derden zo dat deze gebruikmaken van toegangsbeheer voor resources als Exchange of SharePoint Online. Daarnaast mogen apparaten maar in één oplossing tegelijk worden ingeschreven.

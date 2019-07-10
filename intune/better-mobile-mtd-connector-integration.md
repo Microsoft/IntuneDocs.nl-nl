@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e803eb3d47d44c8c8f3cd1b699b5ca220aeb91f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7072d7d3d24578e0f82ea21eb653906dfa30b4c
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049118"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546980"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Better Mobile integreren met Intune
 
@@ -32,31 +32,31 @@ Voer de volgende stappen uit om de Better Mobile Threat Defense-oplossing te int
 
 Zorg ervoor dat u over het volgende beschikt voordat u begint met de integratie van Better Mobile met Intune:
 
--   Microsoft Intune-abonnement
+- Microsoft Intune-abonnement
 
--   Azure Active Directory-beheerdersreferenties om de volgende machtigingen te verlenen:
+- Azure Active Directory-beheerdersreferenties om de volgende machtigingen te verlenen:
 
-    -   Aanmelden en gebruikersprofiel lezen
+    - Aanmelden en gebruikersprofiel lezen
 
-    -   Toegang tot de map als de aangemelde gebruiker
+    - Toegang tot de map als de aangemelde gebruiker
 
-    -   Mapgegevens lezen
+    - Mapgegevens lezen
 
-    -   Gegevens van een apparaat verzenden naar Intune
+    - Gegevens van een apparaat verzenden naar Intune
 
--   Beheerdersreferenties voor toegang tot de beheerconsole van Better Mobile.
+- Beheerdersreferenties voor toegang tot de beheerconsole van Better Mobile.
 
 ### <a name="better-mobile-app-authorization"></a>Autorisatie voor Better Mobile-apps
 
 Het autorisatieproces van de Better Mobile-app is als volgt:
 
--   De Better Mobile-service toestaan informatie met betrekking tot de status van apparaten naar Intune te communiceren.
+- De Better Mobile-service toestaan informatie met betrekking tot de status van apparaten naar Intune te communiceren.
 
--   Better Mobile wordt gesynchroniseerd met het Azure AD Enrollment-groepslidmaatschap om de database van het apparaat te vullen.
+- Better Mobile wordt gesynchroniseerd met het Azure AD Enrollment-groepslidmaatschap om de database van het apparaat te vullen.
 
--   Toestaan dat Better Mobile-beheerconsole Azure AD-enkelvoudige aanmelding (SSO) gebruikt.
+- Toestaan dat Better Mobile-beheerconsole Azure AD-enkelvoudige aanmelding (SSO) gebruikt.
 
--   De app Better Mobile toestaan zich aan te melden met Azure AD-eenmalige aanmelding.
+- De app Better Mobile toestaan zich aan te melden met Azure AD-eenmalige aanmelding.
 
 ## <a name="to-set-up-better-mobile-integration"></a>Better Mobile-integratie instellen
 
@@ -75,4 +75,4 @@ Het autorisatieproces van de Better Mobile-app is als volgt:
 
 ## <a name="next-steps"></a>Volgende stappen
 
--   [Betere client-apps instellen](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Betere client-apps instellen](mtd-apps-ios-app-configuration-policy-add-assign.md)

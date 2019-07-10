@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530677"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546887"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Beleid voor voorwaardelijke toegang vanuit de klassieke Intune-portal overbrengen naar Azure Portal
 
@@ -51,13 +51,13 @@ Als u klaar bent om over te stappen op Azure Portal, volgt u de stappen in dit o
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Op apparaat gebaseerd beleid voor voorwaardelijke toegang controleren in de klassieke Intune-portal
 
-1.  Ga naar de [klassieke Intune-portal](https://manage.microsoft.com) en meld u aan met uw referenties.
+1. Ga naar de [klassieke Intune-portal](https://manage.microsoft.com) en meld u aan met uw referenties.
 
-2.  Kies **Beleid** in het menu aan de linkerkant.
+2. Kies **Beleid** in het menu aan de linkerkant.
 
-3.  Kies **Voorwaardelijke toegang** en selecteer vervolgens de Microsoft-cloudservice (zoals Exchange Online of SharePoint Online) waarvoor u beleid voor voorwaardelijke toegang hebt opgesteld.
+3. Kies **Voorwaardelijke toegang** en selecteer vervolgens de Microsoft-cloudservice (zoals Exchange Online of SharePoint Online) waarvoor u beleid voor voorwaardelijke toegang hebt opgesteld.
 
-4.  Noteer de instellingen voor voorwaardelijke toegang en raadpleeg deze notities om hetzelfde voorwaardelijke toegangsbeleid te maken in Azure Portal.
+4. Noteer de instellingen voor voorwaardelijke toegang en raadpleeg deze notities om hetzelfde voorwaardelijke toegangsbeleid te maken in Azure Portal.
 
 ### <a name="app-and-device-based-conditional-access-policies-working-together"></a>Beleid voor voorwaardelijke toegang op basis van app en apparaat combineren
 
@@ -194,13 +194,13 @@ Nadat u het beleid voor voorwaardelijke toegang hebt toegewezen in Azure Portal,
 
 ### <a name="to-disable-the-conditional-access-policies"></a>Het beleid voor voorwaardelijke toegang uitschakelen
 
-1.  Ga naar de [klassieke Intune-portal](https://manage.microsoft.com) en meld u aan met uw referenties.
+1. Ga naar de [klassieke Intune-portal](https://manage.microsoft.com) en meld u aan met uw referenties.
 
-2.  Kies **Beleid** in het menu aan de linkerkant.
+2. Kies **Beleid** in het menu aan de linkerkant.
 
-3.  Kies **Voorwaardelijke toegang** en selecteer vervolgens de Microsoft-cloudservice (zoals Exchange Online of SharePoint Online) waarvoor u beleid voor voorwaardelijke toegang hebt opgesteld.
+3. Kies **Voorwaardelijke toegang** en selecteer vervolgens de Microsoft-cloudservice (zoals Exchange Online of SharePoint Online) waarvoor u beleid voor voorwaardelijke toegang hebt opgesteld.
 
-4.  Schakel de optie **Beleid voor voorwaardelijke toegang inschakelen** uit en klik op **Opslaan**.
+4. Schakel de optie **Beleid voor voorwaardelijke toegang inschakelen** uit en klik op **Opslaan**.
 
     ![Afbeelding van Beleid voor voorwaardelijke toegang uitschakelen in de klassieke Intune-portal](./media/reassign-ca-18.png)
 

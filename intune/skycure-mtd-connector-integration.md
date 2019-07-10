@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1cab7957a0de1b26a6e172fc696cf887d5fe3916
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd185a42d36de6aaf1e6d0ff0b8e34619b02c093
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528378"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572438"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile-integratie met Intune instellen
 
@@ -32,7 +32,7 @@ Voltooi de volgende stappen om de SEP Mobile-oplossing (Symantec Endpoint Protec
 
 ### <a name="azure-ad-account-used-to-integrate-intune-and-sep-mobile"></a>Het Azure AD-account dat wordt gebruikt voor de integratie van Intune en SEP Mobile
 
--   Zorg ervoor dat het Azure AD-account juist is geconfigureerd in de [Symantec Endpoint Protection Mobile-beheerconsole](https://aad.skycure.com) voordat u de SEP Mobile-basisinstallatie start.
+- Zorg ervoor dat het Azure AD-account juist is geconfigureerd in de [Symantec Endpoint Protection Mobile-beheerconsole](https://aad.skycure.com) voordat u de SEP Mobile-basisinstallatie start.
 - Het Azure AD-account moet een globaal beheerdersaccount zijn om de integratie uit te voeren.
 ### <a name="network-setup"></a>Netwerk instellen
 
@@ -42,40 +42,40 @@ Raadpleeg het Symantec-artikel [Uw netwerkconfiguratie instellen](https://portal
 
 SEP Mobile biedt ondersteuning voor twee integratiemodi met Intune:
 
--   **Alleen-lezenintegratie (basisconfiguratie):** hierbij worden alleen apparaten uit Azure Active Directory geïnventariseerd en wordt de Symantec Endpoint Protection Mobile-beheerconsole hiermee gevuld.
+- **Alleen-lezenintegratie (basisconfiguratie):** hierbij worden alleen apparaten uit Azure Active Directory geïnventariseerd en wordt de Symantec Endpoint Protection Mobile-beheerconsole hiermee gevuld.
 <br>
-    -   Als de selectievakjes **Report the health and risk of devices to Intune** en **Also report security incidents to Intune**  niet zijn ingeschakeld in de Symantec Endpoint Protection Mobile-beheerconsole, is er sprake van een integratie met alleen-lezen. Bij een dergelijke integratie wordt de status van een apparaat (compatibel of niet-compatibel) nooit gewijzigd in Intune.
+    - Als de selectievakjes **Report the health and risk of devices to Intune** en **Also report security incidents to Intune**  niet zijn ingeschakeld in de Symantec Endpoint Protection Mobile-beheerconsole, is er sprake van een integratie met alleen-lezen. Bij een dergelijke integratie wordt de status van een apparaat (compatibel of niet-compatibel) nooit gewijzigd in Intune.
 <br></br>
--   **Volledige integratie:** stelt SEP Mobile in staat om risico- en beveiligingsincidentgegevens voor apparaten aan Intune te melden. Hierbij wordt een tweerichtingscommunicatie tussen beide cloudservices tot stand gebracht.
+- **Volledige integratie:** stelt SEP Mobile in staat om risico- en beveiligingsincidentgegevens voor apparaten aan Intune te melden. Hierbij wordt een tweerichtingscommunicatie tussen beide cloudservices tot stand gebracht.
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>Hoe worden de SEP Mobile-apps gebruikt met Azure AD en Intune?
 
--   **iOS-app:** stelt eindgebruikers in staat om zich bij Azure AD aan te melden met een iOS-app.
+- **iOS-app:** stelt eindgebruikers in staat om zich bij Azure AD aan te melden met een iOS-app.
 
--   **Android-app:** stelt eindgebruikers in staat om zich bij Azure AD aan te melden met een Android-app.
+- **Android-app:** stelt eindgebruikers in staat om zich bij Azure AD aan te melden met een Android-app.
 
--   **Beheer-app:** dit is de SEP Mobile Azure AD-app voor meerdere tenants die communicatie tussen services met Intune mogelijk maakt.
+- **Beheer-app:** dit is de SEP Mobile Azure AD-app voor meerdere tenants die communicatie tussen services met Intune mogelijk maakt.
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-sep-mobile"></a>De integratie met alleen-lezen tussen Intune en SEP Mobile instellen
 
 > [!IMPORTANT]
 > De SEP Mobile-beheerdersreferenties moeten bestaan uit een e-mailaccount van een geldige gebruiker in Azure Active Directory. Als dit niet het geval is, mislukt de aanmelding. SEP Mobile maakt gebruik van Azure Active Directory om deze beheerder te verifiëren door middel van eenmalige aanmelding.
 
-1.  Ga naar de [Symantec Endpoint Protection Mobile-beheerconsole](https://aad.skycure.com).
+1. Ga naar de [Symantec Endpoint Protection Mobile-beheerconsole](https://aad.skycure.com).
 
-2.  Voer uw **SEP Mobile-beheerdersreferenties** in en kies vervolgens **Continue**.
+2. Voer uw **SEP Mobile-beheerdersreferenties** in en kies vervolgens **Continue**.
 
-3.  Ga naar **Settings** en kies onder **Intune Integration** de optie **Basic Setup**.
+3. Ga naar **Settings** en kies onder **Intune Integration** de optie **Basic Setup**.
 
-4.  Kies naast **iOS App** de optie **Add to Active Directory**.
+4. Kies naast **iOS App** de optie **Add to Active Directory**.
 
     ![Afbeelding van de Symantec Endpoint Protection Mobile-beheerconsole](./media/symantec-portal-basic-add.png)
 
-5.  Wanneer de aanmeldingspagina wordt geopend, voert u uw Intune-referenties in en kiest u vervolgens **Accept**.
+5. Wanneer de aanmeldingspagina wordt geopend, voert u uw Intune-referenties in en kiest u vervolgens **Accept**.
 
     ![Afbeelding van de aanmeldingsprompt in Intune voor iOS-app](./media/symantec-portal-basic-accept.png)
 
-6.  Nadat de app is toegevoegd aan Azure AD, ziet u een melding dat de app is toegevoegd.
+6. Nadat de app is toegevoegd aan Azure AD, ziet u een melding dat de app is toegevoegd.
 
     ![Afbeelding van het voltooiingsscherm voor de iOS-app](./media/symantec-portal-basic-added.png)
 
@@ -85,7 +85,7 @@ SEP Mobile biedt ondersteuning voor twee integratiemodi met Intune:
 
 U moet een Azure AD-beveiligingsgroep toevoegen met alle apparaten waarop SEP Mobile wordt uitgevoerd.
 
--  Voer alle beveiligingsgroepen met apparaten in waarop SEP Mobile wordt uitgevoerd en selecteer de groepen. Sla vervolgens de wijzigingen op.
+- Voer alle beveiligingsgroepen met apparaten in waarop SEP Mobile wordt uitgevoerd en selecteer ze.
 
     ![Afbeelding van de gebruikersgroepen voor SEP Mobile-apps](./media/symantec-portal-basic-groups.png)
 
@@ -118,11 +118,11 @@ Met SEP Mobile worden apparaten waarop de Mobile Threat Defense-service wordt ui
 
 ### <a name="set-up-the-integration-between-symantec-endpoint-protection-mobile-and-intune"></a>Symantec Endpoint Protection Mobile-integratie met Intune instellen
 
-1.  Ga naar de [Symantec Endpoint Protection Mobile-beheerconsole](https://aad.skycure.com).
+1. Ga naar de [Symantec Endpoint Protection Mobile-beheerconsole](https://aad.skycure.com).
 
-2.  Voer uw **SEP Mobile-beheerdersreferenties** in en kies vervolgens **Continue**.
+2. Voer uw **SEP Mobile-beheerdersreferenties** in en kies vervolgens **Continue**.
 
-3.  Ga naar de sectie **Settings** > **Integrations** > **Intune** > **EMM Integration Selection**.
+3. Ga naar de sectie **Settings** > **Integrations** > **Intune** > **EMM Integration Selection**.
 
 4. Plak in het vak **Directory ID** de map-id die u in de vorige sectie hebt gekopieerd uit Azure Active Directory en sla de instellingen op.
 
@@ -146,7 +146,7 @@ Met SEP Mobile worden apparaten waarop de Mobile Threat Defense-service wordt ui
 
     ![Afbeelding van de gebruikersgroepen voor SEP Mobile-apps](./media/symantec-portal-basic-groups.png)
 
-11.  De apparaten in de geselecteerde groepen worden gesynchroniseerd met SEP Mobile en de gegevens worden gerapporteerd in Intune. U kunt deze gegevens weergeven in de sectie Full Integration. Ga naar de sectie **Settings** > **Integrations** > **Intune** > **Full Integration**.
+11. De apparaten in de geselecteerde groepen worden gesynchroniseerd met SEP Mobile en de gegevens worden gerapporteerd in Intune. U kunt deze gegevens weergeven in de sectie Full Integration. Ga naar de sectie **Settings** > **Integrations** > **Intune** > **Full Integration**.
 
      ![Afbeelding van de voltooide volledige integratie van SEP Mobile](media/symantec-portal-basic-status.PNG)
 ## <a name="next-steps"></a>Volgende stappen

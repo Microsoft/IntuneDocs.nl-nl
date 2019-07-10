@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7ab0ecd2802e68dbac32b757e472a74e697da13
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 91c2ab71cb393bdf885c947c8f3cd93a5bb196c3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530743"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548045"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Zelfstudie: Exchange Online e-mail beschermen op beheerde apparaten
 Hier vindt u meer informatie over het gebruik van het nalevingsbeleid voor apparaten met voorwaardelijke toegang. Hiermee kunt u ervoor zorgen dat iOS-apparaten uitsluitend toegang tot Exchange Online e-mail hebben als ze door Intune worden beheerd en een goedgekeurde e-mailapplicatie gebruiken. 
@@ -53,7 +53,7 @@ Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepale
 4. Onder **Platform** selecteert u **iOS**. 
 5. Selecteer **Instellingen** > **E-mail**. 
      
-    1.  Naast **Vereisen dat mobiele apparaten een beheerd e-mailprofiel hebben** selecteert u **Vereisen**.
+    1. Naast **Vereisen dat mobiele apparaten een beheerd e-mailprofiel hebben** selecteert u **Vereisen**.
     2. Selecteer **OK**.
 
     ![Nalevingsbeleid voor e-mail zodanig instellen dat een beheerd e-mailprofiel is vereist](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
@@ -77,7 +77,7 @@ Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepale
 ## <a name="create-the-conditional-access-policy"></a>Voorwaardelijk toegangsbeleid maken
 Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaatplatforms zich inschrijven bij Intune en voldoen aan ons Intune-nalevingsbeleid, voordat ze toegang krijgen tot Exchange Online. Ook maken we de Outlook-app vereist voor toegang tot de e-mailfunctie. Het voorwaardelijke toegangsbeleid kan in de Azure AD- of Intune-portal worden geconfigureerd. Omdat we al in de Intune-portal zitten, maken we daarin het beleid.
 1. In Intune selecteert u **Voorwaardelijke toegang** > **Beleid** > **Nieuw beleid**.
-1.  Onder **Naam**, voert u **Testbeleid voor Office 365 e-mail** in. 
+1. Onder **Naam**, voert u **Testbeleid voor Office 365 e-mail** in. 
 3. Onder **Toewijzingen** selecteert u **Gebruikers en groepen**. Op het tabblad **Opnemen** selecteert u **Alle gebruikers** en vervolgens **Voltooid**.
 
 4. Onder **Toewijzingen** selecteert u **Cloud-apps**. Omdat we Office 365 Exchange Online e-mail willen beschermen, selecteren we deze functie via de volgende stappen:

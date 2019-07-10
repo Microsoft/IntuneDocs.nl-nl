@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce8d87a653e87a2b9ba91552f6857fdab6bee12
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 28e48d64ba220f75f412ef117a08b07dfd477d06
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045979"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549274"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Gebruiksscenario's voor het beheer van mobiele apparaten identificeren
 
@@ -33,9 +33,9 @@ Laten we een paar voorbeelden bespreken aan de hand waarvan uw organisatie gebru
 ## <a name="device-ownership"></a>Apparaateigendom
 U kunt als eerste nagaan wat de doelen en doelstellingen van de Intune-implementatie van uw organisatie zijn om de belangrijkste gebruiksscenario's voor uw implementatie te bepalen. Beantwoord voor uw Intune-implementatieplan de volgende vragen:
 
--   Bent u van plan om apparaten in bedrijfseigendom te ondersteunen?
+- Bent u van plan om apparaten in bedrijfseigendom te ondersteunen?
 
--   Bent u van plan om BYOD-apparaten te ondersteunen?
+- Bent u van plan om BYOD-apparaten te ondersteunen?
 
 U hoeft niet per se te kiezen tussen deze opties. Het kan zijn dat u beide vormen van apparaateigendom moet ondersteunen om de doelen van uw organisatie te realiseren. De subgebruikssituaties zullen duidelijk maken in welke omstandigheden de verschillende beleidsregels voor apparaatbeheer moeten worden toegepast.
 
@@ -43,11 +43,11 @@ U hoeft niet per se te kiezen tussen deze opties. Het kan zijn dat u beide vorme
 
 Bepaal of elk gebruiksscenario ook subgebruikssituaties omvat. Uw organisatie kan bijvoorbeeld hebben vastgesteld dat een bedrijfsgebruiksscenario moet worden ondersteund dat aanvullende subgebruikssituaties omvat die zijn gebaseerd op gebruikerstype of apparaatrol, zoals:
 
--   Informatiemedewerker
+- Informatiemedewerker
 
--   Executive
+- Executive
 
--   Kiosk
+- Kiosk
 
 Hier volgen enkele voorbeelden van gebruiksscenario's en subgebruiksscenario's:
 

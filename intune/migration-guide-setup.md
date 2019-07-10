@@ -15,12 +15,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 233b093ba9c062618740fd8f14c5ea306647acdd
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 76f5188a866e744c034fd592f9b1dfcbc9061ffa
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050499"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549392"
 ---
 # <a name="basic-setup"></a>Basisconfiguratie
 
@@ -32,15 +32,15 @@ Nadat u uw omgeving hebt geëvalueerd, is het tijd om Microsoft Intune in te ste
 
 Voor Intune is Azure Active Directory (Azure AD) vereist als id- en gebruikersgroepprovider. Meer informatie over:
 
--  [Identiteitsvereisten](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [Identiteitsvereisten](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   [Adreslijstsynchronisatie](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [Adreslijstsynchronisatie](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   [Multi-factor authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Multi-factor authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
--   [Gebruikers- en apparaatgroepen plannen](users-add.md)
+- [Gebruikers- en apparaatgroepen plannen](users-add.md)
 
--   [Gebruikers- en apparaatgroepen maken](groups-get-started.md)
+- [Gebruikers- en apparaatgroepen maken](groups-get-started.md)
 
 Als uw organisatie al met Office 365 werkt, moet Intune van dezelfde Azure Active Directory-omgeving gebruikmaken.
 
@@ -48,9 +48,9 @@ Als uw organisatie al met Office 365 werkt, moet Intune van dezelfde Azure Activ
 
 Als u van plan bent om bij Intune verificatie op basis van certificaten te gebruiken voor VPN-, Wi-Fi- of e-mailprofielen, moet u ervoor zorgen dat u over een ondersteunde [PKI-infrastructuur](certificates-configure.md) beschikt waarmee certificaatprofielen kunnen worden gemaakt en geïmplementeerd. Meer informatie over het configureren van certificaten in Intune:
 
--   [De certificaatinfrastructuur voor SCEP configureren](/intune/certificates-scep-configure)
+- [De certificaatinfrastructuur voor SCEP configureren](/intune/certificates-scep-configure)
 
--   [De certificaatinfrastructuur voor PFX configureren](/intune/certficates-pfx-configure).
+- [De certificaatinfrastructuur voor PFX configureren](/intune/certficates-pfx-configure).
 
 
 ## <a name="task-list-for-an-intune-setup"></a>Lijst met taken voor een Intune-configuratie
@@ -59,17 +59,17 @@ Als u van plan bent om bij Intune verificatie op basis van certificaten te gebru
 
 Voordat u naar Intune kunt migreren, moet u eerst beschikken over een Intune-abonnement.
 
--   U kunt naar [deze pagina](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) gaan, waar instructies worden gegeven voor het volgende:
+- U kunt naar [deze pagina](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) gaan, waar instructies worden gegeven voor het volgende:
 
-    -   Een nieuw Intune-abonnement maken dat is gekoppeld aan een nieuwe AAD-tenant.
+    - Een nieuw Intune-abonnement maken dat is gekoppeld aan een nieuwe AAD-tenant.
 
-    -   Het Intune-abonnement koppelen door aanmelding bij een bestaande AAD-tenant.
+    - Het Intune-abonnement koppelen door aanmelding bij een bestaande AAD-tenant.
 
 ### <a name="task-2-assign-intune-user-licenses"></a>Taak 2: Intune-gebruikerslicenties toewijzen
 
--   Meer informatie over het [toewijzen van Intune-gebruikerslicenties](licenses-assign.md).
+- Meer informatie over het [toewijzen van Intune-gebruikerslicenties](licenses-assign.md).
 
--   Als u een nieuwe AAD-tenant hebt gemaakt, lees dan [hoe u nieuwe gebruikers maakt of gebruikers uit uw on-premises Active Directory (AD) synchroniseert.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
+- Als u een nieuwe AAD-tenant hebt gemaakt, lees dan [hoe u nieuwe gebruikers maakt of gebruikers uit uw on-premises Active Directory (AD) synchroniseert.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>Taak 3: de MDM-instantie instellen op Intune
 

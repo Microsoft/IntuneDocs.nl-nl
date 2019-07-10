@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e470175829008b72b5b8991188f3c92e38a567
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: 3e4e1040913daef5418f0b4fa1e56f6ef827dd67
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67416839"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713277"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Beveiligingsbasislijnen gebruiken om Windows 10-apparaten te gebruiken in Intune
 
@@ -71,7 +71,7 @@ De volgende beveiligingsbasislijninstanties zijn beschikbaar voor gebruik met In
   - [Voorbeeld: MDM-basislijn voor beveiliging voor oktober 2018](security-baseline-settings-mdm-archive.md)
 
 - **Windows Defender ATP-basislijn**  
-  *(Voor het gebruik van deze basislijn moet uw omgeving voldoen aan de vereisten voor het gebruik van [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))*.
+  *(Voor het gebruik van deze basislijn moet uw omgeving voldoen aan de vereisten voor het gebruik van [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))* .
   - [Voorbeeld: Windows Defender ATP-basislijn](security-baseline-settings-defender-atp.md)  
 
 Profielen die u eerder hebt gemaakt op basis van een previewsjabloon, kunt u gewoon blijven gebruiken en bewerken, zelfs wanneer de sjabloon niet meer beschikbaar is voor nieuwe profielen. 
@@ -155,7 +155,7 @@ Wanneer u de basislijn opslaat nadat de conversie is voltooid, wordt deze onmidd
 3. Gebruik in het deelvenster **Versie wijzigen** de vervolgkeuzelijst **Een beveiligingsbasislijn selecteren om naar bij te werken** om de versie-instantie te selecteren die u wilt gebruiken.  
 
    ![Een versie selecteren](./media/security-baselines/select-instance.png)  
- 
+   
 4. Selecteer **Update bekijken** om een CSV-bestand te downloaden met de verschillen tussen de huidige instantieversie van het profiel en de nieuwe versie. Neem dit bestand door, zodat u weet welke instellingen er zijn verwijderd of toegevoegd, en wat de standaardwaarden zijn voor deze instellingen in het bijgewerkte profiel.  
 
    Wanneer u klaar bent, gaat u door naar de volgende stap.  

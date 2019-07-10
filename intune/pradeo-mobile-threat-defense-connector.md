@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 980138015cdbe063d6d4b05eb6dd8ab70be4b601
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 2f0a4b9a957948c9bda0b0ad2d9829ff9560f217
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512254"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548491"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Pradeo Mobile Threat Defense-connector met Intune
 
@@ -41,11 +41,11 @@ Hier volgen enkele veelvoorkomende scenario's.
 
 Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u apparaten blokkeren tegen acties als de volgende totdat de bedreiging is opgelost:
 
--   Verbinding met bedrijfs-e-mail
+- Verbinding met bedrijfs-e-mail
 
--   Synchronisatie van bedrijfsbestanden met de app OneDrive voor werk
+- Synchronisatie van bedrijfsbestanden met de app OneDrive voor werk
 
--   Toegang tot bedrijfs-apps
+- Toegang tot bedrijfs-apps
 
 **Blokkeren wanneer er schadelijke apps zijn gedetecteerd:**
 
@@ -81,19 +81,19 @@ Bedreigingen voor uw netwerk worden gedetecteerd, zoals **man-in-the-middle-aanv
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
--   **Android 4.0.3 en hoger**
+- **Android 4.0.3 en hoger**
 
--   **iOS 7 en hoger**
+- **iOS 7 en hoger**
 
 ## <a name="prerequisites"></a>Vereisten
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune-abonnement
+- Microsoft Intune-abonnement
 
--   Pradeo Security for Mobile Threat Defense-abonnement
+- Pradeo Security for Mobile Threat Defense-abonnement
 
-    -   Zie de [Pradeo-website](https://www.pradeo.com/en-US/mobile-threat-protection) voor meer informatie.
+    - Zie de [Pradeo-website](https://www.pradeo.com/en-US/mobile-threat-protection) voor meer informatie.
 
 ## <a name="next-steps"></a>Volgende stappen
 
