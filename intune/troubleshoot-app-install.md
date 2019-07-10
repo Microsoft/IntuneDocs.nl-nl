@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7a4be4deddae2f2983996a6880232463924c948
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: ebd8f15a8f8633043f64cb4e004aafbb3c399042
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558513"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648897"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Problemen met app-installatie oplossen
 
@@ -51,17 +51,17 @@ De details van de app-installatieproblemen geven het probleem aan. U kunt deze d
 > [!Note]  
 > U kunt het deelvenster **Probleemoplossing** ook openen door in uw browser naar het volgende adres te gaan: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
-## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>Gebruikersgroep gericht app-installatie bereiken apparaat niet
-De volgende acties moeten worden beschouwd als er problemen met het installeren van apps:
-- Als de app niet wordt weergegeven in de bedrijfsportal-App, controleert u of de app is geïmplementeerd met **beschikbaar** intentie en dat de gebruiker de bedrijfsportal-App verbinding met het apparaat dat wordt ondersteund door de app.
-- Voor Windows BYOD-apparaten moet de gebruiker een werkaccount toevoegen aan het apparaat.
-- Controleer of de gebruiker dan de limiet van AAD-apparaat is:
-  1. Navigeer naar [Azure Active Directory-apparaatinstellingen](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId).
-  2. Noteer de waarde voor **maximum aantal apparaten per gebruiker**.
-  3. Navigeer naar [Azure Active Directory-gebruikers](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
+## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>Het apparaat is niet bereikbaar voor de doel-app-installatie van de gebruikers groep
+U moet rekening houden met de volgende acties als u problemen hebt met het installeren van apps:
+- Als de app niet wordt weer gegeven in de Bedrijfsportal, moet u ervoor zorgen dat de app is geïmplementeerd met **beschik bare** intentie en dat de gebruiker toegang heeft tot de bedrijfsportal met het apparaattype dat wordt ondersteund door de app.
+- Voor Windows BYOD-apparaten moet de gebruiker een werk account toevoegen aan het apparaat.
+- Controleren of de gebruiker de limiet voor AAD-apparaten overschrijdt:
+  1. Navigeer naar [Azure Active Directory Apparaatinstellingen](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId).
+  2. Noteer de waarde die is ingesteld voor **maximum aantal apparaten per gebruiker**.
+  3. Navigeer naar [Azure Active Directory gebruikers](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
   4. Selecteer de betrokken gebruiker en klik op **apparaten**.
-  5. Als de gebruiker is gedurende de ingestelde limiet Verwijder verlopen records die niet langer nodig zijn.
-- Zorg ervoor dat de gebruiker wordt vermeld als voor iOS DEP-apparaten **ingeschreven door gebruiker** in de blade overzicht van de Intune-apparaat. Als u deze NA ziet, moet u vervolgens een beleid voor de configuratie voor de Intune-bedrijfsportal-App implementeren. Zie voor meer informatie, [configureren van de bedrijfsportal-app](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices).
+  5. Als de gebruiker de ingestelde limiet overschrijdt, verwijdert u alle verouderde records die niet meer nodig zijn.
+- Voor iOS DEP-apparaten zorgt u ervoor dat de gebruiker wordt vermeld als **geregistreerd door de gebruiker** in de Blade overzicht van intune-apparaten. Als er N.V.T. wordt weer gegeven, implementeert u een configuratie beleid voor de Intune-bedrijfsportal. Zie [Configure the bedrijfsportal app](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)(Engelstalig) voor meer informatie.
 
 ## <a name="win32-app-installation-troubleshooting"></a>Problemen met de installatie van Win32-app oplossen
 
@@ -161,8 +161,14 @@ De volgende foutberichten en beschrijvingen bieden informatie over Android- en i
 
 De informatie in het Engelstalige onderwerp [Troubleshooting packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (Het oplossen van problemen bij het verpakken, implementeren en zoeken van Microsoft Store-apps) helpt u om algemene problemen op te lossen die optreden tijdens het installeren van apps in Microsoft Store, hetzij met behulp van Intune of op een andere manier.
 
+## <a name="app-troubleshoooting-resources"></a>Troubleshoooting resources van de app
+- [Visio en project implementeren als onderdeel van uw Office Pro Plus-implementatie](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Deploying-Visio-and-Project-as-part-of-your-Office/ba-p/701795)
+- [Actie ondernemen om te zorgen voor MSfB-apps die zijn geïmplementeerd via intune-installatie op Windows 10 1903](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Take-Action-to-Ensure-MSfB-Apps-deployed-through/ba-p/658864)
+- [Problemen met de implementatie van MSI-apps in Microsoft Intune oplossen](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-MSI-App-deployments-in-Microsoft/ba-p/359125)
+- [Aanbevolen procedures voor software distributie naar de klassieke Windows-PC-agent van intune](https://support.microsoft.com/en-us/help/2583929/best-practices-for-intune-software-distribution-to-windows-pc)
+
 ## <a name="next-steps"></a>Volgende stappen
 
 - Raadpleeg [De portal voor probleemoplossing gebruiken om gebruikers in uw bedrijf te helpen](help-desk-operators.md) voor meer informatie over probleemoplossing met Intune. 
-- Ontdek meer over bekende problemen in Microsoft Intune. Zie [Bekende problemen in Microsoft Intune](known-issues.md) voor meer informatie.
+- Ontdek meer over bekende problemen in Microsoft Intune. Zie voor meer informatie intune- [klant succes](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess).
 - Extra hulp nodig? Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md).

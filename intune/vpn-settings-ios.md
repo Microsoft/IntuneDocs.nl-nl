@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d922ecde0159603acbfbc3dc0590592592d72645
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1eee827ace5dae92b485a250e6e4e0b9b426fbe6
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046207"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713189"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>VPN-instellingen voor iOS-apparaten configureren in Microsoft Intune
 
@@ -41,7 +41,7 @@ Selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
 - **Cisco (IPSec)**
 - **Citrix VPN**
 - **Citrix SSO**
-- **Zscaler**: Als u gebruik wilt maken van voorwaardelijke toegang of gebruikers wilt toestaan om het Zscaler-aanmeldingsscherm over te slaan, moet u Zscaler Private Access (ZPA) integreren met uw Microsoft Azure AD-account. Zie de [Zscaler documentatie](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO) voor gedetailleerde instructies. 
+- **Zscaler**: Als u gebruik wilt maken van voorwaardelijke toegang of gebruikers wilt toestaan om het Zscaler-aanmeldingsscherm over te slaan, moet u Zscaler Private Access (ZPA) integreren met uw Microsoft Azure AD-account. Zie de [Zscaler documentatie](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad) voor gedetailleerde instructies. 
 - **Aangepaste VPN**
 
 > [!NOTE]
