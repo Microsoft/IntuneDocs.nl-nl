@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 1cbf45fc337cbe7d7a45081a3b9e05002ca126d8
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 5a8111d2542269441c7305aad0aad0b7c2162037
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402925"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735609"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Windows 10 device settings to enable Windows Hello for Business in Intune (Instellingen voor Windows 10-apparaten om Windows Hello voor Bedrijven in Intune in te schakelen)
 
@@ -44,57 +44,57 @@ Zie [Identity Protection configureren](identity-protection-configure.md) voor me
   
   **Standaard**: niet geconfigureerd
 
-  Als de waarde *ingeschakeld*, de volgende instellingen zijn beschikbaar:
+  Als deze instelling is *ingeschakeld*, zijn de volgende instellingen beschikbaar:
 
-    - **Minimale lengte pincode**  
-     Geef een minimumlengte voor PINCODE voor apparaten, om u te helpen beveiligd aanmelden. Standaardinstellingen voor Windows-apparaat zijn zes tekens, maar deze instelling kan een minimum van 4 tot en met 127 tekens afdwingen. 
-  
-      **Standaard**: *niet geconfigureerd*
+  - **Minimale lengte pincode**  
+    Geef een minimale lengte voor de pincode voor apparaten op om het aanmelden te helpen beveiligen. De standaard waarden van Windows-apparaten zijn zes tekens, maar deze instelling kan ten minste vier tot 127 tekens afdwingen. 
 
-    - **Maximale lengte pincode**  
-    Geef een maximumlengte voor PINCODE voor apparaten, om u te helpen beveiligd aanmelden. Standaardinstellingen voor Windows-apparaat zijn zes tekens, maar deze instelling kan een minimum van 4 tot en met 127 tekens afdwingen.  
+    **Standaard**: *niet geconfigureerd*
 
-      **Standaard**: *niet geconfigureerd*  
+  - **Maximale lengte pincode**  
+  Geef een maximale lengte voor de pincode voor apparaten op om het aanmelden te helpen beveiligen. De standaard waarden van Windows-apparaten zijn zes tekens, maar deze instelling kan ten minste vier tot 127 tekens afdwingen.  
 
-    - **Kleine letters in pincode**  
-      U kunt een sterkere pincode afdwingen door te vereisen dat eindgebruikers kleine letters opnemen. Uw opties zijn:
+    **Standaard**: *niet geconfigureerd*  
 
-      - **Niet toegestaan**: blokkeren dat gebruikers kleine letters gebruiken in de pincode. Dit gedrag treedt ook op als de instelling niet is geconfigureerd.
-      - **Toegestaan**: toestaan dat gebruikers kleine letters gebruiken in de pincode. Dit is echter niet vereist.
-      - **Vereist**: gebruikers moeten minstens één kleine letter opnemen in hun pincode. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
+  - **Kleine letters in pincode**  
+    U kunt een sterkere pincode afdwingen door te vereisen dat eindgebruikers kleine letters opnemen. Uw opties zijn:
 
-    - **Hoofdletters in pincode**  
+    - **Niet toegestaan**: blokkeren dat gebruikers kleine letters gebruiken in de pincode. Dit gedrag treedt ook op als de instelling niet is geconfigureerd.
+    - **Toegestaan**: toestaan dat gebruikers kleine letters gebruiken in de pincode. Dit is echter niet vereist.
+    - **Vereist**: gebruikers moeten minstens één kleine letter opnemen in hun pincode. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
+
+  - **Hoofdletters in pincode**  
     U kunt een sterkere pincode afdwingen door te vereisen dat eindgebruikers hoofdletters opnemen. Uw opties zijn:
 
-      - **Niet toegestaan**: blokkeren dat gebruikers hoofdletters gebruiken in de pincode. Dit gedrag treedt ook op als de instelling niet is geconfigureerd.
-      - **Toegestaan**: toestaan dat gebruikers hoofdletters gebruiken in de pincode. Dit is echter niet vereist.
-      - **Vereist**: gebruikers moeten minstens één hoofdletter opnemen in hun pincode. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
+    - **Niet toegestaan**: blokkeren dat gebruikers hoofdletters gebruiken in de pincode. Dit gedrag treedt ook op als de instelling niet is geconfigureerd.
+    - **Toegestaan**: toestaan dat gebruikers hoofdletters gebruiken in de pincode. Dit is echter niet vereist.
+    - **Vereist**: gebruikers moeten minstens één hoofdletter opnemen in hun pincode. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
 
-    - **Speciale tekens in pincode**  
+  - **Speciale tekens in pincode**  
     U kunt een sterkere pincode afdwingen door te vereisen dat eindgebruikers speciale tekens opnemen. Tot de speciale tekens behoren: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`  
- 
-      Uw opties zijn:
-      - **Niet toegestaan**: blokkeren dat gebruikers speciale tekens gebruiken in de pincode. Dit gedrag treedt ook op als de instelling niet is geconfigureerd.
-      - **Toegestaan**: toestaan dat gebruikers hoofdletters gebruiken in de pincode. Dit is echter niet vereist.
-      - **Vereist**: gebruikers moeten minstens één hoofdletter opnemen in hun pincode. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
 
-      **Standaard**: niet toegestaan
+    Uw opties zijn:
+    - **Niet toegestaan**: blokkeren dat gebruikers speciale tekens gebruiken in de pincode. Dit gedrag treedt ook op als de instelling niet is geconfigureerd.
+    - **Toegestaan**: toestaan dat gebruikers hoofdletters gebruiken in de pincode. Dit is echter niet vereist.
+    - **Vereist**: gebruikers moeten minstens één hoofdletter opnemen in hun pincode. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
+
+    **Standaard**: niet toegestaan
 
   - **Verlooptijd pincode (dagen)**  
-      Het is raadzaam om een verloopperiode voor een pincode op te geven, waarna gebruikers deze moeten wijzigen. Standaardinstellingen voor Windows-apparaat zijn 41 dagen.
+    Het is raadzaam om een verloopperiode voor een pincode op te geven, waarna gebruikers deze moeten wijzigen. Standaard waarden voor Windows-apparaten zijn 41 dagen.
 
     **Standaardinstelling**: niet geconfigureerd
 
   - **Pincodegeschiedenis onthouden**  
-    Beperkt het hergebruik van eerder gebruikte pincodes. Windows-apparaten standaard met het voorkomen van hergebruik van de laatste vijf pincodes.  
+    Beperkt het hergebruik van eerder gebruikte pincodes. Windows-apparaten standaard om het hergebruik van de laatste vijf pincodes te voor komen.  
 
     **Standaardinstelling**: niet geconfigureerd  
 
   - **Herstel van pincode inschakelen**   
-    Kan de gebruiker met de Windows Hello voor bedrijven PINCODE recovery-service. 
+    Hiermee kan de gebruiker de Windows hello voor bedrijven-pincode herstel service gebruiken. 
     
-    - **Ingeschakeld** - geheim voor herstel van de PINCODE is opgeslagen op het apparaat en de gebruiker kan PINCODE wijzigen, indien nodig.  
-    - **Uitgeschakelde** -het geheim herstel is niet gemaakt of die zijn opgeslagen.
+    - **Ingeschakeld** : het geheim voor pincode herstel wordt opgeslagen op het apparaat en de gebruiker kan de pincode zo nodig wijzigen.  
+    - **Uitgeschakeld** : het herstel geheim is niet gemaakt of opgeslagen.
 
     **Standaard**: niet geconfigureerd
 
@@ -128,11 +128,11 @@ Zie [Identity Protection configureren](identity-protection-configure.md) voor me
 
   **Standaard**: niet geconfigureerd
 
-- **Sleutels gebruiken voor aanmelden**  
-  Deze instelling is beschikbaar voor apparaten met Windows 10 versie 1903 of hoger. Gebruik dit voor het beheren van ondersteuning voor het gebruik van Windows Hello beveiligingssleutels voor aanmelding bij.  
+- **Beveiligings sleutels gebruiken voor aanmelden**  
+  Deze instelling is beschikbaar voor apparaten waarop Windows 10 versie 1903 of hoger wordt uitgevoerd. Gebruik het om ondersteuning voor het gebruik van Windows hello-beveiligings sleutels voor aanmelden te beheren.  
 
-  - **Ingeschakeld** -gebruikers kunnen een Windows Hello beveiligingssleutel gebruiken als een aanmeldingsreferenties voor pc's waarop dit beleid toegepast. 
-  - **Uitgeschakeld** - sleutels zijn uitgeschakeld en dat gebruikers deze niet gebruiken voor aanmelding bij pc's.   
+  - **Ingeschakeld** : gebruikers kunnen een Windows hello-beveiligings sleutel gebruiken als aanmeldings referentie voor pc's waarop dit beleid is gericht. 
+  - **Uitgeschakeld** : beveiligings sleutels zijn uitgeschakeld en gebruikers kunnen ze niet gebruiken om zich aan te melden bij pc's.   
 
   **Standaard**: niet geconfigureerd
 

@@ -16,25 +16,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8fa5589f62900027b90659b8f570e7caa10b1cd8
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 30cdb6903caa7e1071a6781db13c761e64f8bd7a
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549063"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735764"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>MDM-beveiligingsbasislijninstellingen voor Intune  
 
-Bekijk de MDM security basislijn-instellingen die worden ondersteund door Microsoft Intune voor apparaten met Windows 10 of hoger. De standaardwaarden voor instellingen in deze basislijn vertegenwoordigen de aanbevolen configuratie voor de toepasselijke apparaten, en mogelijk niet overeen met de standaardinstellingen van de basislijn van andere basisbeveiliging.  
+Bekijk de basis instellingen voor de MDM-beveiliging die worden ondersteund door Microsoft Intune voor apparaten waarop Windows 10 of hoger wordt uitgevoerd. De standaard waarden voor instellingen in deze basis lijn vertegenwoordigen de aanbevolen configuratie voor toepasselijke apparaten en komen mogelijk niet overeen met de standaard instellingen van de basis lijn van andere beveiligings basislijnen.  
 
-De meest recente versie van de basislijn is **MDM basisbeveiliging voor Spring 2019 Update (19 uur 1)**  
+De meest recente basislijn versie is **MDM-beveiligings basislijn voor lente 2019-update (19H1)**  
 
-Zie voor meer informatie over wat er gewijzigd in de meest recente versie van deze basislijn van de vorige versie, [wat er gewijzigd in de nieuwe sjabloon](#whats-changed-in-the-new-template).  
+Zie [Wat is er gewijzigd in de nieuwe sjabloon](#whats-changed-in-the-new-template)voor meer informatie over de wijzigingen die zijn aangebracht in de nieuwste versie van deze basis lijn in de vorige versie.  
 
 > [!NOTE]  
-> In juni 2019, de Preview-versie MDM-basisbeveiliging is vervangen door de versie van de *MDM basisbeveiliging voor Spring 2019 Update (19 uur 1)* sjabloon, waarmee generaly beschikbaar (niet in de Preview-versie). Profielen die zijn gemaakt vóór de beschikbaarheid van de *MDM basisbeveiliging voor Spring 2019 Update (19 uur 1)* basislijn niet bijwerken om de instellingen en waarden die zich in de MDM-basisbeveiliging voor Spring 2019 Update (19 uur 1 weer te geven ) versie.  U kunt maar u kunt geen nieuwe profielen op basis van de preview-sjabloon maken, bewerken en echter ook doorgaan met profielen die u eerder hebt gemaakt en die zijn gebaseerd op de preview-sjabloon.   
+> In juni van 2019 is de preview MDM-beveiligings basislijn vervangen door de release van de *19H1-sjabloon (MDM-beveiligings basislijn voor lente 2019 update)* , die algemeen beschikbaar is (niet in Preview). Profielen die zijn gemaakt vóór de beschik baarheid van de basis lijn van de *MDM-beveiligings basislijn voor lente 2019-update (19H1)* , worden niet bijgewerkt met de instellingen en waarden in de MDM-beveiligings basislijn voor de lente 2019-update (19H1) versie.  U kunt geen nieuwe profielen maken op basis van de preview-sjabloon, maar u hebt ook de profielen die u eerder hebt gemaakt op basis van de preview-sjabloon bewerken en blijven gebruiken.   
   
-Zie voor meer informatie over het gebruik van basisbeveiliging met Intune, [security basislijnen gebruiken](security-baselines.md).  
+Zie [beveiligings basislijnen gebruiken](security-baselines.md)voor meer informatie over het gebruik van beveiligings basislijnen met intune.  
 
 
    
@@ -47,7 +47,7 @@ Zie [Beleids-CSP - AboveLock](https://docs.microsoft.com/windows/client-manageme
 
   **Standaardinstelling**: Ja  
 
-- **Voice-mailapps vergrendeld scherm activeren**  
+- **Spraak-apps op vergrendeld scherm activeren**  
 
   **Standaardinstelling**: uitgeschakeld
 
@@ -64,16 +64,16 @@ Zie [Beleids-CSP - AppRuntime](https://docs.microsoft.com/windows/client-managem
 ## <a name="application-management"></a>Toepassingsbeheer   
 Zie [Beleids-CSP - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) in de Windows-documentatie voor meer informatie.  
 
-- **Controle van de gebruiker blokkeren over installaties**  
-  Met deze beleidsinstelling kan gebruikers om installatieopties die gewoonlijk alleen beschikbaar voor systeembeheerders zijn te wijzigen. Als u deze beleidsinstelling inschakelt, zijn sommige van de beveiligingsfuncties van Windows Installer omzeild. U kunt hiermee installaties om uit te voeren die anders zouden worden afgebroken vanwege een beveiligingsfout. Als u deze beleidsinstelling niet configureert of uitschakelt, de beveiligingsfuncties van Windows Installer te voorkomen dat gebruikers wijzigen van opties voor de installatie normaal gesproken is gereserveerd voor systeembeheerders, zoals het opgeven van de map waarin bestanden worden geïnstalleerd. Als Windows-installatieprogramma detecteert dat een installatiepakket voor de gebruiker te wijzigen van een beveiligde optie is toegestaan, wordt de installatie gestopt en wordt een bericht weergegeven. Deze beveiligingsfuncties werken alleen als het installatieprogramma wordt uitgevoerd in een beveiligingscontext waarin het toegang tot mappen geweigerd voor de gebruiker heeft. Met deze beleidsinstelling is ontworpen voor minder beperkende omgevingen. Het kan worden gebruikt om fouten in een installatieprogramma dat verhindert dat de software wordt geïnstalleerd te omzeilen.  
+- **Gebruikers controle blok keren voor installaties**  
+  Met deze beleids instelling kunnen gebruikers installatie opties wijzigen die normaal gesp roken alleen beschikbaar zijn voor systeem beheerders. Als u deze beleids instelling inschakelt, worden enkele van de beveiligings functies van Windows Installer overs Laan. Hierdoor kunnen installaties worden voltooid die anders zouden worden gestopt vanwege een schending van de beveiliging. Als u deze beleids instelling uitschakelt of niet configureert, worden de beveiligings functies van Windows Installer voor komen dat gebruikers installatie opties wijzigen die doorgaans zijn gereserveerd voor systeem beheerders, zoals het opgeven van de map waarin de bestanden worden geïnstalleerd. Als Windows Installer detecteert dat een installatie pakket de gebruiker heeft toegestaan een beveiligde optie te wijzigen, wordt de installatie gestopt en wordt er een bericht weer gegeven. Deze beveiligings functies werken alleen wanneer het installatie programma wordt uitgevoerd in een geprivilegieerde beveiligings context waarin het toegang heeft tot mappen die aan de gebruiker zijn geweigerd. Deze beleids instelling is ontworpen voor minder beperkende omgevingen. Het kan worden gebruikt om fouten te omzeilen in een installatie programma dat voor komt dat software wordt geïnstalleerd.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
   **Standaardinstelling**: Ja
 
-- **Blok-MSI-app-installaties met verhoogde bevoegdheden**  
+- **MSI-app-installaties blok keren met verhoogde bevoegdheden**  
   Deze beleidsinstelling geeft Windows Installer de opdracht om verhoogde bevoegdheden te gebruiken wanneer een programma op een systeem wordt geïnstalleerd.  
-  - *Als u deze beleidsinstelling inschakelt*, bevoegdheden worden uitgebreid naar alle programma's. Deze rechten zijn meestal gereserveerd voor programma's die zijn toegewezen aan de gebruiker (aangeboden op het bureaublad), die worden toegewezen aan de computer (automatisch geïnstalleerd) f, of beschikbaar gesteld in software in het Configuratiescherm. Dit profiel bepaalt u of gebruikers die programma's die toegang tot mappen vereisen die de gebruiker niet gemachtigd om te bekijken of wijzigen, met inbegrip van mappen op zeer beperkte computers te installeren.
-  - *Als u uitschakelt of niet met deze beleidsinstelling configureert*, het systeem de machtigingen van de huidige gebruiker is van toepassing wanneer het programma's die niet worden gedistribueerd of aangeboden door een systeembeheerder wordt geïnstalleerd. Opmerking: deze beleidsinstelling wordt zowel in de map Computerconfiguratie als Gebruikersconfiguratie weergegeven. Als u wilt deze beleidsinstelling doorvoeren, moet u het inschakelen in beide mappen. Let op: Ervaren gebruikers kunnen profiteren van de machtigingen verleent aan hun bevoegdheden wijzigen en permanente toegang krijgen tot beperkte bestanden en mappen van deze beleidsinstelling. Houd er rekening mee dat de versie van de configuratie van de gebruiker van deze instelling kan niet worden gegarandeerd om te beveiligen.  
+  - *Als u deze beleids instelling*inschakelt, worden de bevoegdheden uitgebreid naar alle Program ma's. Deze bevoegdheden zijn doorgaans gereserveerd voor Program ma's die zijn toegewezen aan de gebruiker (aangeboden op het bureau blad), toegewezen aan de computer (automatisch geïnstalleerd) f of beschikbaar gemaakt in het onderdeel Software van het configuratie scherm. Met deze profiel instelling kunnen gebruikers Program ma's installeren die toegang nodig hebben tot mappen waarvoor de gebruiker mogelijk geen machtiging heeft om weer te geven of te wijzigen, inclusief mappen op zeer beperkte computers.
+  - *Als u deze beleids instelling uitschakelt of niet configureert*, past het systeem de machtigingen van de huidige gebruiker toe tijdens het installeren van Program ma's die een systeem beheerder niet distribueert of aanbiedt. Opmerking: deze beleidsinstelling wordt zowel in de map Computerconfiguratie als Gebruikersconfiguratie weergegeven. Als u deze beleids instelling effectief wilt maken, moet u deze inschakelen in beide mappen. Waarschuwing: ervaren gebruikers kunnen profiteren van de machtigingen die door deze beleids instelling worden verleend om hun bevoegdheden te wijzigen en permanente toegang te krijgen tot beperkte bestanden en mappen. Houd er rekening mee dat de gebruikers configuratie versie van deze beleids instelling niet gegarandeerd veilig is.  
   
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067134)    
 
@@ -270,44 +270,44 @@ Zie [Beleids-CSP - DeviceLock](https://docs.microsoft.com/windows/client-managem
   
   **Standaardinstelling**: Ja  
   
-    Wanneer *Wachtwoord vereisen* is ingesteld op *Ja*, zijn de volgende instellingen beschikbaar.
+  Wanneer *Wachtwoord vereisen* is ingesteld op *Ja*, zijn de volgende instellingen beschikbaar.
 
-    - **Wachtwoord: minimumaantal tekensets**  
-      Het aantal complexe elementtypen (hoofdletters en kleine letters, cijfers en leestekens) dat is vereist voor een sterke pincode of een sterk wachtwoord. Pincodes leiden tot het volgende gedrag op computers en mobiele apparaten: 1 - Alleen cijfers 2 - Cijfers en kleine letters zijn vereist 3 - Cijfers, kleine letters en hoofdletters zijn vereist. Niet ondersteund in Microsoft-desktopaccounts en domeinaccounts. 4 - Cijfers, kleine letters, hoofdletters en speciale tekens zijn vereist. Dit wordt niet ondersteund in desktop. De standaardwaarde is 1.  
-      [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067055)  
+  - **Wachtwoord: minimumaantal tekensets**  
+    Het aantal complexe elementtypen (hoofdletters en kleine letters, cijfers en leestekens) dat is vereist voor een sterke pincode of een sterk wachtwoord. Pincodes leiden tot het volgende gedrag op computers en mobiele apparaten: 1 - Alleen cijfers 2 - Cijfers en kleine letters zijn vereist 3 - Cijfers, kleine letters en hoofdletters zijn vereist. Niet ondersteund in Microsoft-desktopaccounts en domeinaccounts. 4 - Cijfers, kleine letters, hoofdletters en speciale tekens zijn vereist. Dit wordt niet ondersteund in desktop. De standaardwaarde is 1.  
+    [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067055)  
+    
+    **Standaardinstelling**: 3  
+
+  - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**  
+    Het aantal verificatiefouten dat is toegestaan voordat het apparaat wordt gewist. Met de waarde 0 wordt de wisfunctionaliteit van het apparaat uitgeschakeld.  
+    [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067030)  
       
-      **Standaardinstelling**: 3  
-  
-    - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**  
-      Het aantal verificatiefouten dat is toegestaan voordat het apparaat wordt gewist. Met de waarde 0 wordt de wisfunctionaliteit van het apparaat uitgeschakeld.  
-      [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067030)  
-        
-      **Standaard**: 10  
-  
-    - **Dagen tot wachtwoord verloopt**  
-      Met de beleidsinstelling Maximale wachtwoordduur bepaalt u hoe lang (in dagen) een wachtwoord kan worden gebruikt voordat de gebruiker dit moet wijzigen. U kunt instellen dat wachtwoorden na een aantal dagen tussen 1 en 999 verlopen, of u kunt opgeven dat wachtwoorden nooit verlopen door het aantal dagen in te stellen op 0. Als de Maximale wachtwoordduur tussen 1 en 999 dagen ligt, moet de Minimale wachtwoordduur minder zijn dan de Maximale wachtwoordduur. Als Maximale wachtwoordduur is ingesteld op 0, kan Minimale wachtwoordduur op elke waarde tussen 0 en 998 dagen worden ingesteld.  
-      [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067028)  
-      
-      **Standaardinstelling**: 60  
-  
-    - **Vereist wachtwoordtype**  
-      Hiermee bepaalt u het type pincode of wachtwoord dat is vereist.  
-      [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067027)  
-      
-      **Standaardinstelling**: Alfanumeriek  
-  
-    - **Minimale wachtwoordlengte**  
-      Met de beleidsinstelling Minimale wachtwoordlengte bepaalt u het minimumaantal tekens waaruit een wachtwoord voor een gebruikersaccount mag bestaan. U kunt een waarde tussen 1 en 14 tekens instellen, of u kunt instellen dat er geen wachtwoord is vereist door het aantal tekens in te stellen 0.  
-      [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067024)  
-      
-      **Standaardinstelling**: 8  
-  
-    - **Eenvoudige wachtwoorden blokkeren**  
-      Hiermee geeft u aan of pincodes of wachtwoorden zoals '1111' en '1234' zijn toegestaan. Voor de desktop bepaalt u hiermee ook of afbeeldingswachtwoorden mogen worden gebruikt.  
-      [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067127) 
-      
-      **Standaardinstelling**: Ja  
-        *Wanneer u deze optie instelt op Ja mogen eenvoudige wachtwoorden niet worden gebruikt.* 
+    **Standaard**: 10  
+
+  - **Dagen tot wachtwoord verloopt**  
+    Met de beleidsinstelling Maximale wachtwoordduur bepaalt u hoe lang (in dagen) een wachtwoord kan worden gebruikt voordat de gebruiker dit moet wijzigen. U kunt instellen dat wachtwoorden na een aantal dagen tussen 1 en 999 verlopen, of u kunt opgeven dat wachtwoorden nooit verlopen door het aantal dagen in te stellen op 0. Als de Maximale wachtwoordduur tussen 1 en 999 dagen ligt, moet de Minimale wachtwoordduur minder zijn dan de Maximale wachtwoordduur. Als Maximale wachtwoordduur is ingesteld op 0, kan Minimale wachtwoordduur op elke waarde tussen 0 en 998 dagen worden ingesteld.  
+    [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067028)  
+    
+    **Standaardinstelling**: 60  
+
+  - **Vereist wachtwoordtype**  
+    Hiermee bepaalt u het type pincode of wachtwoord dat is vereist.  
+    [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067027)  
+    
+    **Standaardinstelling**: Alfanumeriek  
+
+  - **Minimale wachtwoordlengte**  
+    Met de beleidsinstelling Minimale wachtwoordlengte bepaalt u het minimumaantal tekens waaruit een wachtwoord voor een gebruikersaccount mag bestaan. U kunt een waarde tussen 1 en 14 tekens instellen, of u kunt instellen dat er geen wachtwoord is vereist door het aantal tekens in te stellen 0.  
+    [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067024)  
+    
+    **Standaardinstelling**: 8  
+
+  - **Eenvoudige wachtwoorden blokkeren**  
+    Hiermee geeft u aan of pincodes of wachtwoorden zoals '1111' en '1234' zijn toegestaan. Voor de desktop bepaalt u hiermee ook of afbeeldingswachtwoorden mogen worden gebruikt.  
+    [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067127) 
+    
+    **Standaardinstelling**: Ja  
+      *Wanneer u deze optie instelt op Ja mogen eenvoudige wachtwoorden niet worden gebruikt.* 
 
   - **Wachtwoorden niet opnieuw gebruiken**  
     Hiermee geeft u op hoeveel wachtwoorden in de geschiedenis kunnen worden opgeslagen die niet mogen worden gebruikt. De waarde bevat ook het huidige wachtwoord van de gebruiker. Met de instelling *1* kan de gebruiker bijvoorbeeld zijn huidige wachtwoord niet opnieuw gebruiken bij het kiezen van een nieuw wachtwoord. De instelling *5* betekent een gebruiker zijn nieuwe wachtwoord niet kan instellen op zijn huidige wachtwoord of een van zijn vier wachtwoorden daarvoor.  
@@ -331,7 +331,7 @@ Zie [Beleids-CSP - DeviceLock](https://docs.microsoft.com/windows/client-managem
 ## <a name="dma-guard"></a>DMA Guard  
 Raadpleeg [Beleids-CSP - DmaGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard) in de Windows-documentatie voor meer informatie.
 - **Opsomming van externe apparaten die niet compatibel zijn met DMA-beveiliging van kernel**  
-  Dit beleid is bedoeld om extra te beveiligen tegen externe DMA-compatibele apparaten. Het geeft u meer controle over de opsomming van externe DMA-compatibele apparaten die niet compatibel zijn met hertoewijzing/apparaatgeheugenisolatie en sandbox van DMA. Dit beleid wordt alleen uitgevoerd als DMA-beveiliging van kernel wordt ondersteund en ingeschakeld door de systeemfirmware. Kernel DMA-beveiliging is een platform-functie die niet worden beheerd via beleid of door de eindgebruiker. De functie moet door het systeem worden ondersteund ten tijde van de productie. Als u wilt controleren of het systeem Kernel DMA-beveiliging ondersteunt, Controleer of het veld Kernel DMA beveiliging op de overzichtspagina van MSINFO32.exe.  
+  Dit beleid is bedoeld om extra beveiliging te bieden tegen apparaten met externe DMA-ondersteuning. Het geeft u meer controle over de opsomming van externe DMA-compatibele apparaten die niet compatibel zijn met hertoewijzing/apparaatgeheugenisolatie en sandbox van DMA. Dit beleid wordt alleen uitgevoerd als DMA-beveiliging van kernel wordt ondersteund en ingeschakeld door de systeemfirmware. De kernel DMA-beveiliging is een platform functie die niet kan worden beheerd via beleid of eind gebruiker. De functie moet door het systeem worden ondersteund ten tijde van de productie. Als u wilt controleren of het systeem de DMA-beveiliging van de kernel ondersteunt, raadpleegt u het veld kernel DMA-beveiliging op de pagina overzicht van MSINFO32. exe.  
   [Meer informatie](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)
 
   **Standaardinstelling**: Alles blokkeren   
@@ -531,12 +531,12 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
   
   **Standaardinstelling**: Geen sites  
 
-- **Ondersteuning voor de versleuteling van Internet Explorer**  
-  Met deze beleidsinstelling kunt u de ondersteuning voor Transport Layer Security (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0 of SSL 3.0 in de browser uitschakelen. TLS en SSL zijn protocollen die helpen bij het beveiligen van communicatie tussen de browser en de doelserver. Wanneer de browser probeert het instellen van een beveiligde communicatie met de doelserver, onderhandelen de browser en de server over welk protocol en de versie moet worden gebruikt. De browser en de server probeert zodat deze overeenkomen met elkaars lijst met ondersteunde protocollen en versies en selecteren ze de meest geschikte overeenkomst. Als u deze beleidsinstelling inschakelt, wordt de browser wordt onderhandeld over of onderhandelt niet over een tunnel codering met behulp van de versleutelingsmethoden die u in de vervolgkeuzelijst selecteren. Als u deze beleidsinstelling niet configureert of uitschakelt, kan de gebruiker selecteren welke versleuteling methode de browser ondersteunt.  
+- **Ondersteuning voor versleuteling van Internet Explorer**  
+  Met deze beleids instelling kunt u ondersteuning voor Transport Layer Security (TLS) 1,0, TLS 1,1, TLS 1,2, Secure Sockets Layer (SSL) 2,0 of SSL-3,0 uitschakelen in de browser. TLS en SSL zijn protocollen die de communicatie tussen de browser en de doel server helpen beveiligen. Wanneer de browser een beveiligde communicatie met de doel server probeert in te stellen, onderhandelen de browser en de server van het protocol en de versie die moeten worden gebruikt. De browser en server proberen elkaar te vergelijken met de lijst met ondersteunde protocollen en versies, en ze selecteren het meest voor keur. Als u deze beleids instelling inschakelt, onderhandelt de browser of onderhandelt geen versleutelings tunnel met behulp van de versleutelings methoden die u selecteert in de vervolg keuzelijst. Als u deze beleids instelling uitschakelt of niet configureert, kan de gebruiker selecteren welke versleutelings methode door de browser wordt ondersteund.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067057)
 
-  **Standaard**: 2 items: TLS v1.1 en TLS 1.2  
-  *Selecteer de pijl-omlaag om opties die u voor deze instelling selecteren kunt weer te geven.*
+  **Standaard**: 2 items: TLS v 1.1 en TLS v 1.2  
+  *Selecteer de pijl-omlaag om opties weer te geven die u voor deze instelling kunt selecteren.*
   
 - **Internet Explorer: vergrendeld SmartScreen in internetzone**  
   Met deze beleidsinstelling bepaalt u of het SmartScreen-filter pagina's in deze zone scant op schadelijke inhoud. Als u deze beleidsinstelling inschakelt, scant het SmartScreen-filter pagina's in deze zone op schadelijke inhoud. Als u deze beleidsinstelling uitschakelt, scant het SmartScreen-filter geen pagina's in deze zone op schadelijke inhoud. Als u deze beleidsinstelling niet configureert, kan de gebruiker kiezen of het SmartScreen-filter pagina's in deze zone scant op schadelijke inhoud. Opmerking: in Internet Explorer 7 bepaalt deze beleidsinstelling of het phishing-filter pagina's in deze zone scant op schadelijke inhoud.  
@@ -940,7 +940,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
   
   **Standaardinstelling**: ingeschakeld  
   
-- **Internet Explorer internet zone scriptlets**  
+- **Internet Explorer Internet zone Scriptlets**  
   Met deze beleidsinstelling kunt u beheren of gebruikers scriptlets kunnen uitvoeren. Als u deze beleidsinstelling inschakelt, kan de gebruiker scriptlets uitvoeren. Als u deze beleidsinstelling uitschakelt, kan de gebruiker geen scriptlets uitvoeren. Als u deze beleidsinstelling niet configureert, kan de gebruiker scriptlets in- of uitschakelen.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067176)  
   
@@ -1386,28 +1386,28 @@ Raadpleeg [Policy CSP - Power](https://docs.microsoft.com/windows/client-managem
   **Standaardinstelling**: ingeschakeld
 
 ## <a name="remote-assistance"></a>Hulp op afstand
-- **Hulp op afstand aangevraagde**  
-  Met deze beleidsinstelling kunt u inschakelen of uitschakelen van Hulp op afstand op deze computer aangevraagde (Ask voor). 
-  - *Als u deze beleidsinstelling inschakelt*, kunnen gebruikers op deze computer e-mailbericht of bestand overdracht gebruiken om iemand anders om hulp vragen. Bovendien kunnen gebruikers chatprogramma gebruiken om verbindingen met deze computer toestaan en kunt u aanvullende hulp op afstand-instellingen configureren. 
-  - *Als u deze beleidsinstelling uitschakelt*, gebruikers op deze computer niet e-mailbericht of bestand overdracht gebruiken om aan te vragen voor meer informatie over. Gebruikers niet chatprogramma ook gebruiken om toe te staan van verbindingen op deze computer. 
-  - *Als u deze beleidsinstelling niet configureert*, gebruikers kunnen inschakelen of uitschakelen hulp op afstand van aangevraagde (Ask voor) zich in de eigenschappen van het systeem in het Configuratiescherm. Gebruikers kunnen ook hulp op afstand-instellingen configureren. 
+- **Verzoek om hulp op afstand**  
+  Met deze beleids instelling kunt u Aangevraagde hulp op afstand op deze computer in-of uitschakelen. 
+  - *Als u deze beleids instelling*inschakelt, kunnen gebruikers op deze computer e-mail of bestands overdracht gebruiken om iemand om hulp te vragen. Gebruikers kunnen ook Program ma's voor chat berichten gebruiken om verbindingen met deze computer toe te staan en u kunt aanvullende instellingen voor hulp op afstand configureren. 
+  - *Als u deze beleids instelling*uitschakelt, kunnen gebruikers op deze computer geen e-mail of bestands overdracht gebruiken om iemand om hulp te vragen. Gebruikers kunnen ook geen Program ma's voor chat berichten gebruiken om verbindingen met deze computer toe te staan. 
+  - *Als u deze beleids instelling niet configureert*, kunnen gebruikers aangevraagde hulp op afstand in-of uitschakelen in de systeem eigenschappen van het configuratie scherm. Gebruikers kunnen ook instellingen voor hulp op afstand configureren. 
 
-  Als u deze beleidsinstelling inschakelt, hebt u twee manieren om toe te staan van hulpprogramma's voor hulp op afstand: 'Toestaan hulpprogramma's naar de weergave alleen de computer' of 'Hulpprogramma's voor het extern beheren van de computer toestaan'. De 'Maximum ticket time' beleidsinstelling een limiet op de hoeveelheid tijd die stelt een uitnodiging voor een Hulp op afstand gemaakt met behulp van e-mailbericht of bestand overdracht kan blijven open zijn. De "Selecteer de methode voor het verzenden van e-mailbericht uitnodigingen" instelling geeft u aan welke standaard e-mailadres gebruiken om hulp op afstand uitnodigingen te verzenden. Afhankelijk van uw e-mailprogramma, kunt u de standaard Mailto (de ontvanger uitnodiging verbinding maakt via een internetkoppeling) of de SMAPI (eenvoudige MAPI) standaard (de uitnodiging is gekoppeld aan uw e-mailbericht). Met deze beleidsinstelling is niet beschikbaar in Windows Vista omdat SMAPI de enige methode ondersteund is. Als u deze beleidsinstelling inschakelt, moet u ook juiste firewall-uitzonderingen om hulp op afstand-communicatie inschakelen.  
+  Als u deze beleids instelling inschakelt, hebt u twee manieren om hulp te bieden aan hulp op afstand: "Helpers kunnen alleen de computer weer geven" of "helpers toestaan om de computer op afstand te beheren". Met de beleids instelling ' maximale ticket tijd ' stelt u een limiet in voor de hoeveelheid tijd die een uitnodiging voor hulp op afstand die is gemaakt met behulp van e-mail of bestands overdracht, open blijft. De instelling ' Selecteer de methode voor het verzenden van e-mail berichten ' geeft aan welke e-mail standaard moet worden gebruikt om uitnodigingen voor hulp op afstand te verzenden. Afhankelijk van uw e-mail programma, kunt u de mailto-standaard (de ontvanger van de uitnodiging maakt verbinding maken via een Internet koppeling) of de SMAPI (Simple MAPI) standaard (de uitnodiging is gekoppeld aan uw e-mail bericht). Deze beleids instelling is niet beschikbaar in Windows Vista omdat SMAPI de enige ondersteunde methode is. Als u deze beleids instelling inschakelt, moet u ook de juiste firewall-uitzonde ringen inschakelen om communicatie van hulp op afstand mogelijk te maken.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067198)
 
   **Standaard**: hulp op afstand uitschakelen
 
-  Als de waarde *hulp op afstand inschakelen*, de volgende aanvullende instellingen configureren:  
-  - **Hulp op afstand aangevraagde machtiging**  
+  Wanneer dit is ingesteld om *hulp op afstand in te scha kelen*, configureert u de volgende aanvullende instellingen:  
+  - **Machtiging voor hulp op afstand**  
     **Standaard**: weergeven  
 
-  - **Maximale ticket tijd-waarde**  
+  - **Waarde voor maximale ticket tijd**  
     **Standaard**: *niet geconfigureerd*  
 
   - **Maximale ticket periode**  
     **Standaard**: minuten    
 
-  - **E-mailuitnodiging methode**  
+  - **Uitnodigings methode voor E-Mail**  
     **Standaard**: eenvoudige MAPI
 
   
@@ -1660,7 +1660,7 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
   **Standaardinstelling**: Ja
   
 - **Gedragscontrole**  
-  Toegestaan of geweigerd Gedragscontrole van Windows Defender-functionaliteit. Deze sensoren, ingesloten in Windows 10, verzamelen en verwerken gedragssignalen van het besturingssysteem en verzenden deze sensorgegevens naar uw persoonlijke, geïsoleerde cloudinstantie van Microsoft Defender ATP.  
+  Hiermee wordt de functionaliteit van Windows Defender-gedrag controle toegestaan of niet toegestaan. Deze sensoren, ingesloten in Windows 10, verzamelen en verwerken gedragssignalen van het besturingssysteem en verzenden deze sensorgegevens naar uw persoonlijke, geïsoleerde cloudinstantie van Microsoft Defender ATP.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067111)  
   
   **Standaardinstelling**: Ja
@@ -1709,9 +1709,9 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
   **Standaardinstelling**: Blokkeren
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall  
-Zie voor meer informatie, [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) in de documentatie van Windows-protocollen.  
+Zie [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) in de Windows protocols-documentatie voor meer informatie.  
 
-- **Firewall-profiel domein**  
+- **Domein Firewall-profiel**  
   Hiermee geeft u de profielen op waartoe de regel behoort: Domein, Privé of Openbaar. Deze waarde vertegenwoordigt het profiel voor netwerken die zijn verbonden met domeinen.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2066796)  
 
@@ -1727,7 +1727,7 @@ Zie voor meer informatie, [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/o
   - **Firewall ingeschakeld**  
     **Standaardinstelling**: Toegestaan
 
-- **Openbare Firewall-profiel**  
+- **Firewall profiel openbaar**  
   Hiermee geeft u de profielen op waartoe de regel behoort: Domein, Privé of Openbaar. Deze waarde vertegenwoordigt het profiel voor openbare netwerken. Deze netwerken wordt als openbaar geclassificeerd door de beheerders in de serverhost. De classificatie vindt plaats de eerste keer dat de host verbinding maakt met het netwerk. Deze netwerken bevinden zich meestal op luchthavens, in cafés en in andere openbare ruimten waar de peers in het netwerk of de netwerkbeheerder niet worden vertrouwd.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067143)  
 
@@ -1749,11 +1749,11 @@ Zie voor meer informatie, [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/o
   - **Beleidsregels van groepsbeleid niet samengevoegd**  
     **Standaardinstelling**: Ja
 
-- **Firewall-profiel privé**  
+- **Firewall profiel privé**  
   Hiermee geeft u de profielen op waartoe de regel behoort: Domein, Privé of Openbaar. Deze waarde vertegenwoordigt het profiel voor privénetwerken.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067041)  
 
-   - **Geblokkeerde binnenkomende verbindingen**  
+  - **Geblokkeerde binnenkomende verbindingen**  
     **Standaardinstelling**: Ja
 
   - **Uitgaande verbindingen vereist**  
@@ -1767,7 +1767,7 @@ Zie voor meer informatie, [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/o
 
 ## <a name="windows-hello-for-business"></a>Windows Hello voor Bedrijven  
 - **Verbeterde anti-adresvervalsing vereisen, indien beschikbaar**  
-  Zo ja, apparaten wordt verbeterde anti-adresvervalsing gebruiken, indien beschikbaar. Indien Nee, wordt anti-adresvervalsing geblokkeerd. Niet is geconfigureerd, worden configuraties op de client gerespecteerd.  
+  Zo ja, dan gebruiken apparaten verbeterde anti-adres vervalsing, indien beschikbaar. Als dat niet het geval is, wordt anti-spoofing geblokkeerd. Niet geconfigureerd, worden de configuraties die op de client worden uitgevoerd, gehonoreerd.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067192)
 
   **Standaardinstelling**: Ja
@@ -1778,22 +1778,22 @@ Zie voor meer informatie, [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/o
   **Standaardinstelling**: Ja
 
 - **Kleine letters in pincode vereisen**  
-  Indien vereist, moet de PINCODE van de gebruiker ten minste één kleine letter bevatten.
+  Indien vereist moet de pincode van de gebruiker ten minste één kleine letter bevatten.
 
   **Standaardinstelling**: Toegestaan
 
 - **Speciale tekens in pincode vereisen**  
-  Indien vereist, moet de PINCODE van de gebruiker ten minste één speciaal teken bevatten.
+  Indien vereist moet de pincode van de gebruiker ten minste één speciaal teken bevatten.
 
   **Standaardinstelling**: Toegestaan
 
 - **Minimale lengte pincode**  
-  Minimumlengte voor PINCODE moet tussen 4 en 127 tekens.
+  De minimale lengte van de pincode moet tussen 4 en 127 liggen.
 
   **Standaardinstelling**: 6
 
 - **Hoofdletters in pincode vereisen**  
-  Indien vereist, moet de PINCODE van de gebruiker ten minste één hoofdletter bevatten.
+  Indien vereist moet de pincode van de gebruiker ten minste één hoofd letter bevatten.
 
   **Standaardinstelling**: Toegestaan
 
@@ -1819,35 +1819,35 @@ Raadpleeg [Policy CSP - WindowsPowerShell](https://docs.microsoft.com/windows/cl
 
   **Standaardinstelling**: ingeschakeld
 
-## <a name="whats-changed-in-the-new-template"></a>Wat er gewijzigd in de nieuwe sjabloon
-De *MDM basisbeveiliging voor Spring 2019 Update (19 uur 1)* sjabloon bevat de volgende wijzigingen uit de *preview* sjabloon.
+## <a name="whats-changed-in-the-new-template"></a>Wat is er gewijzigd in de nieuwe sjabloon?
+De *MDM-beveiligings basislijn voor de lente 2019-update sjabloon (19H1)* heeft de volgende wijzigingen van de *voorbeeld* sjabloon.
 
-### <a name="changes-to-the-baseline-settings"></a>Wijzigingen in de basislijninstellingen van de
+### <a name="changes-to-the-baseline-settings"></a>Wijzigingen in de basislijn instellingen
 De instellingen kunnen als volgt zijn:
-- *Nieuwe* in deze meest recente versie van de basislijn.
-- *Verwijderd* uit deze meest recente versie van de basislijn, maar aanwezig waren in de vorige versie.
-- *Herziene versie* op een bepaalde manier van hoe de instellingen in de vorige versie werd weergegeven. 
+- *Nieuw* in deze meest recente versie van de basis lijn.
+- *Verwijderd* uit deze meest recente basislijn versie, maar waren aanwezig in de vorige versie.
+- Op een andere manier *gewijzigd* op basis van de manier waarop de instellingen werden weer gegeven in de vorige versie. 
 
-*[Nieuw]*  [ **Vergrendeling**](#above-lock):
-- **Voice-mailapps vergrendeld scherm activeren**    
+*[Nieuw]* [**Boven slot**](#above-lock):
+- **Spraak-apps op vergrendeld scherm activeren**    
 
 *[Nieuw]* [**Toepassingsbeheer**](#application-management): 
-- **Controle van de gebruiker blokkeren over installaties**  
-- **Blok-MSI-app-installaties met verhoogde bevoegdheden**  
+- **Gebruikers controle blok keren voor installaties**  
+- **MSI-app-installaties blok keren met verhoogde bevoegdheden**  
 
 *[Verwijderd]* [**Bitlocker**](#bitlocker):  
-- Bit van AppLocker verwisselbaar station beleid > **versleutelingsmethode**
-- **BitLocker vast station beleid** *(alle instellingen)*
-- **Bits BitLocker station systeembeleid** *(alle instellingen)*
+- > Versleutelings **methode** voor bits-kluis verwisselbaar station
+- **Beleid voor vaste BitLocker-stationsversleuteling** *(alle instellingen)*
+- Beleid voor BitLocker- **Systeem station** *(alle instellingen)*
 
 *[Nieuw]* [**Connectiviteit**](#connectivity):
-- **Beveiligde toegang tot het UNC-paden configureren**
+- **Veilige toegang tot UNC-paden configureren**
 
 *[Nieuw]* [**Device Guard**](#device-guard):
 - **Beveiliging op basis van virtualisatie**
 
 
-*[Nieuw]*  [ **DMA Guard**](#dma-guard):
+*[Nieuw]* [**DMA-beveiliging**](#dma-guard):
 - **Opsomming van externe apparaten die niet compatibel zijn met DMA-beveiliging van kernel**  
 
 *[Nieuw]* [**Internet Explorer**](#internet-explorer):
@@ -1855,17 +1855,17 @@ De instellingen kunnen als volgt zijn:
 - **Internetzone van Internet Explorer: bestanden slepen en neerzetten of kopiëren en plakken**  
 - **Internet Explorer: onderdelen in de beperkte zone die afhankelijk zijn van .NET Framework**  
 - **Internet Explorer: er wordt geen antimalware uitgevoerd op ActiveX-besturingselementen in de lokale machinezone**
-- **Ondersteuning voor de versleuteling van Internet Explorer**  
+- **Ondersteuning voor versleuteling van Internet Explorer**  
 
 *[Aangepast]* [**Internet Explorer**](#internet-explorer):
-- **Internet Explorer internet zone automatische prompt voor het downloaden van bestand** > de standaardwaarde is nu **uitgeschakelde**. Preview-versie is deze ingesteld op ingeschakeld.
+- **Automatische prompt van Internet Explorer Internet zone voor het downloaden van bestanden** > de standaard waarde is nu **uitgeschakeld**. In preview is ingesteld dat deze is ingeschakeld.
 
 *[Nieuw]* [**Hulp op afstand**](#remote-assistance):  
-- **Hulp op afstand aangevraagde** 
-  - **Hulp op afstand aangevraagde machtiging**
-  - **Maximale ticket tijd-waarde**  
+- **Verzoek om hulp op afstand** 
+  - **Machtiging voor hulp op afstand**
+  - **Waarde voor maximale ticket tijd**  
   - **Maximale ticket periode**  
-  - **E-mailuitnodiging methode**
+  - **Uitnodigings methode voor E-Mail**
 
 
 *[Nieuw]* [**Windows Defender**](#windows-defender):
@@ -1873,19 +1873,19 @@ De instellingen kunnen als volgt zijn:
 - **Office-communicatieapps worden gestart in een onderliggend proces** 
 
 *[Nieuw]* [**Windows Defender Firewall**](#windows-defender-firewall)
-- **Firewall-profiel domein**  
+- **Domein Firewall-profiel**  
   - **Geblokkeerde binnenkomende verbindingen**  
   - **Uitgaande verbindingen vereist**  
   - **Binnenkomende meldingen geblokkeerd**  
   - **Firewall ingeschakeld**  
-- **Openbare Firewall-profiel**  
+- **Firewall profiel openbaar**  
   - **Geblokkeerde binnenkomende verbindingen**  
   - **Uitgaande verbindingen vereist**  
   - **Binnenkomende meldingen geblokkeerd**  
   - **Firewall ingeschakeld** 
   - **Beveiligingsregels voor verbindingen van groepsbeleid niet samengevoegd**   
   - **Beleidsregels van groepsbeleid niet samengevoegd**  
-- **Firewall-profiel privé**  
+- **Firewall profiel privé**  
   - **Geblokkeerde binnenkomende verbindingen**  
   - **Uitgaande verbindingen vereist**  
   - **Binnenkomende meldingen geblokkeerd**  
