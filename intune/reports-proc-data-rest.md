@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fd99c0b42316a4425828cfa875f12d75dd86489
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 8090e9906cc8e3b3da25b21343093dd2f656afa6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558550"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735803"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Gegevens ophalen uit de Intune-datawarehouse-API met een REST-client
 
@@ -161,9 +161,10 @@ Het volgende voorbeeld bevat een eenvoudige REST-client. De code gebruikt de kla
 6. Selecteer **Ik ga akkoord** om de licentie van het NuGet-pakket te accepteren.
 7. Open `Program.cs` in de Solution Explorer.
 
-    ![Progam.cs en Solution Explorer in Visual Studio](./media/reports-get_rest_data_in.png)
+    ![Program.cs en Solution Explorer in Visual Studio](./media/reports-get_rest_data_in.png)
 
 8. Vervang de code in *Program.cs* door de volgende code:  
+
    ```csharp
    namespace IntuneDataWarehouseSamples
    {

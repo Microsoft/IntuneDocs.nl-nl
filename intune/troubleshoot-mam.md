@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/21/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bde64e9bbe756b61b41dd8e7d55ba327491ae55b
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1cf8f7753a92ad45a68f976359560ef6da2d1cec
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046224"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648726"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Problemen met Mobile Application Management oplossen
 
-Dit onderwerp bevat oplossingen voor veelvoorkomende problemen die kunnen optreden bij het gebruik van Mobile Application Management van Intune.
+Dit onderwerp bevat oplossingen voor veelvoorkomende problemen die zich hebben voorgedaan bij het gebruik van Intune-app-beveiliging (ook wel MAM of Mobile Application Management genoemd).
 
 Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md) voor meer manieren om hulp te krijgen als u het probleem niet kunt oplossen met deze informatie.
 
@@ -37,7 +37,7 @@ Dit zijn veelvoorkomende problemen die een IT-beheerder kan tegenkomen bij het g
 | -- | -- | -- |
 | Beleid niet toegepast op Skype voor Bedrijven | Het beleid voor app-beveiliging zonder apparaatregistratie, gemaakt in Azure Portal, is niet van toepassing op de Skype voor Bedrijven-app op iOS- en Android-apparaten. | Skype voor Bedrijven moet worden ingesteld voor moderne verificatie.  Volg de instructies in [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (Moderne verificatie inschakelen voor uw tenant) om moderne verificatie in te stellen voor Skype. |
 | Office-app-beleid niet toegepast | Het beleid voor app-beveiliging wordt niet toegepast op [ondersteunde Office-apps](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) voor alle gebruikers. | Controleer of de gebruiker een licentie voor Intune heeft en of een geïmplementeerd beleid voor app-beveiliging wordt toegepast op de Office-apps. Het kan tot 8 uur duren voordat een nieuw geïmplementeerd beleid voor app-beveiliging is toegepast. |
-| Beheerder kan geen beleid voor app-beveiliging configureren in Azure-portal | Een IT-beheerder kan geen beleid voor app-beveiliging configureren in Azure Portal. | De volgende gebruikersrollen hebben toegang tot Azure Portal: <ul><li>Globale beheerder, die u kunt instellen in het [Microsoft 365-beheercentrum](https://admin.microsoft.com/)</li><li>Eigenaar, die u kunt instellen in [Azure Portal](https://portal.azure.com/).</li><li>Bijdrager, die u kunt instellen in [Azure Portal](https://portal.azure.com/).</li></ul> Raadpleeg [RBAC (beheer op basis van rollen) met Microsoft Intune](role-based-access-control.md) voor hulp bij het instellen van deze rollen.|
+| Beheerder kan geen beleid voor app-beveiliging configureren in Azure-portal | Een IT-beheerder kan geen beleid voor app-beveiliging configureren in de Azure-portal. | De volgende gebruikersrollen hebben toegang tot de Azure-portal: <ul><li>Globale beheerder, die u kunt instellen in het [Microsoft 365-beheercentrum](https://admin.microsoft.com/)</li><li>Eigenaar, die u kunt instellen in de [Azure-portal](https://portal.azure.com/).</li><li>Bijdrager, die u kunt instellen in de [Azure-portal](https://portal.azure.com/).</li></ul> Raadpleeg [RBAC (beheer op basis van rollen) met Microsoft Intune](role-based-access-control.md) voor hulp bij het instellen van deze rollen.|
 |Gebruikersaccounts ontbreken in rapporten van beleid voor app-beveiliging | Er worden geen gebruikersaccounts in de beheerconsolerapporten weergegeven waarvoor onlangs beleid voor app-beveiliging is geïmplementeerd. | Als er onlangs beleid voor app-beveiliging is toegepast op een gebruiker, kan het tot 24 uur duren voor die gebruiker in rapporten als gebruiker in de doelgroep wordt weergegeven. |
 | Beleidswijzigingen werken niet | Het kan 8 uur duren voordat wijzigingen en updates voor beleid voor app-beveiliging worden toegepast. | Indien van toepassing, kunnen eindgebruikers zich bij de app afmelden en weer aanmelden om synchronisatie met de service af te dwingen. |
 | Beleid voor app-beveiliging werkt niet met DEP | Het beleid voor app-beveiliging wordt niet toegepast op Apple DEP-apparaten. | Zorg ervoor dat u gebruikersaffiniteit gebruikt bij het Device Enrollment Program (DEP) van Apple. Gebruikersaffiniteit is vereist voor elke app die verificatie van gebruikers vereist volgens het DEP. <br><br>Raadpleeg [iOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple](device-enrollment-program-enroll-ios.md) voor meer informatie over iOS DEP-inschrijving.|
@@ -47,7 +47,7 @@ Dit zijn veelvoorkomende problemen die een IT-beheerder kan tegenkomen bij het g
 
 Algemene problemen voor eindgebruikers worden onderverdeeld in de volgende categorieën:
 
-* **Normale gebruiksscenario's**: een eindgebruiker kan met deze scenario's te maken krijgen bij apps die werken met Intune-beleid voor app-beveiliging. Dit zijn geen daadwerkelijke problemen, maar kunnen wel worden beschouwd als bugs of fouten.
+* **Normale gebruiksscenario's**: een eindgebruiker ervaart deze scenario's op apps die een Intune-beleid voor app-beveiliging hebben. Dit zijn geen daadwerkelijke problemen, maar kunnen wel worden beschouwd als bugs of fouten.
 
 * **Dialoogvensters voor normaal gebruik**: dit zijn dialoogvensters die een eindgebruiker kan zien in apps met Intune-beleid voor app-beveiliging. Deze berichten en dialoogvensters geven **geen** fout of bug aan.
 
@@ -57,8 +57,16 @@ Algemene problemen voor eindgebruikers worden onderverdeeld in de volgende categ
 
 Platform | Scenario | Uitleg |
 ---| --- | --- |
-iOS | De eindgebruiker kan de iOS-extensie voor delen gebruiken om werk- of schoolgegevens te openen in niet-beheerde apps, zelfs wanneer het beleid voor gegevensoverdracht is ingesteld op **Alleen voor beheerde apps** of **Geen apps.** Ontstaat hierdoor geen gegevenslek? | De iOS-extensie voor delen kan alleen met Intune-beleid voor app-beveiliging worden beheerd als ook het apparaat wordt beheerd. Daarom worden **'bedrijfs'gegevens door Intune versleuteld voordat ze buiten de app worden gedeeld**. U kunt dit controleren door een 'bedrijfs'bestand te openen buiten de beheerde app. Het bestand moet zijn versleuteld en kan niet worden geopend buiten de beheerde app.
+iOS | De eindgebruiker kan de iOS-extensie voor delen gebruiken om werk- of schoolgegevens te openen in niet-beheerde apps, zelfs wanneer het beleid voor gegevensoverdracht is ingesteld op **Alleen voor beheerde apps** of **Geen apps.** Ontstaat hierdoor geen gegevenslek? | De iOS-extensie voor delen kan alleen met Intune-beleid voor app-beveiliging worden beheerd als ook het apparaat wordt beheerd. Daarom worden **'bedrijfs'gegevens door Intune versleuteld voordat ze buiten de app worden gedeeld**. U kunt dit controleren door een 'bedrijfs'bestand te openen buiten de beheerde app. Het bestand moet zijn versleuteld en kan niet worden geopend bijten de beheerde app.
+iOS | Waarom wordt de eind gebruiker **gevraagd de Microsoft Authenticator-app te installeren** | Dit is nodig wanneer voorwaardelijke toegang op basis van apps wordt toegepast, Zie [goedgekeurde client-app vereisen](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access).
 Android | Waarom moet de eindgebruiker **de bedrijfsportal-app installeren**, zelfs als ik MAM-app-beveiliging zonder apparaatregistratie gebruik?  | Veel functies voor app-beveiliging in Android zijn ingebouwd in de bedrijfsportal-app. **De bedrijfsportal-app is altijd vereist, maar dat geldt niet voor apparaatregistratie**. Voor app-beveiliging zonder registratie hoeft de eindgebruiker alleen de bedrijfsportal-app op het apparaat te hebben geïnstalleerd.
+iOS/Android | Beleid voor app-beveiliging wordt niet toegepast op een concept-e-mail in de Outlook-app | Aangezien Outlook zowel zakelijke als persoonlijke context ondersteunt, wordt MAM niet afgedwongen op een concept-e-mail.
+iOS/Android | Beleid voor app-beveiliging wordt niet toegepast op nieuwe documenten in WXP (Word, Excel, Power Point) | Aangezien WXP zowel zakelijke als persoonlijke context ondersteunt, wordt MAM op nieuwe documenten pas afgedwongen als ze zijn opgeslagen op een geïdentificeerde bedrijfs locatie, zoals OneDrive.
+iOS/Android | Apps die opslaan als niet toestaan voor lokale opslag wanneer beleid is ingeschakeld | Het app-gedrag voor deze instelling wordt bepaald door de ontwikkelaar van de app.
+Android | Android heeft meer beperkingen dan iOS op wat ' native ' apps toegang hebben tot MAM beveiligde inhoud | Android is een open platform en de toepassings koppeling ' native ' kunnen door de eind gebruiker worden gewijzigd naar mogelijk onveilige apps. [Beleids uitzonderingen voor gegevens overdracht](app-protection-policies-exception.md) Toep assen om specifieke apps uit te sluiten.
+Android | Azure Information Protection (beheerders) kan opslaan als PDF-bestand wanneer opslaan als wordt voor komen | BEHEERDERS het MAM-beleid voor het uitschakelen van afdrukken wanneer opslaan als PDF wordt gebruikt.
+iOS | Het openen van PDF-bijlagen in de Outlook-app mislukt met actie niet toegestaan | Dit kan optreden als de gebruiker niet is geverifieerd voor Acrobat Reader voor intune, of als de vinger afdruk is gebruikt om te verifiëren bij de organisatie. Open Acrobat Reader vooraf en verificatie met behulp van UPN-referenties.
+
 
 ### <a name="normal-usage-dialogs"></a>Dialoogvensters voor normaal gebruik
 
@@ -82,7 +90,7 @@ Foutbericht of dialoogvenster | Oorzaak | Herstel |
 **Het apparaat voldoet niet aan het beleid**: deze app kan niet worden gebruikt, omdat u een gekraakt apparaat gebruikt. Neem contact op met uw IT-beheerder voor hulp. | Intune heeft gedetecteerd dat de gebruiker een gekraakt apparaat gebruikt. | Zet de fabrieksinstellingen van het apparaat terug. Volg [deze instructies](https://support.apple.com/HT201274) op de ondersteuningssite van Apple.
 **Internetverbinding vereist**: u moet zijn verbonden met internet om te kunnen verifiëren of u deze app mag gebruiken. | Het apparaat is niet verbonden met internet. | Verbind het apparaat met een WiFi- of datanetwerk.
 **Onbekende fout**: probeer deze app opnieuw te starten. Als het probleem zich blijft voordoen, neemt u contact op met uw IT-beheerder voor ondersteuning. | Er is een onbekende fout opgetreden. | Wacht enige tijd en probeer het opnieuw. Als de fout zich blijft voordoen, maakt u een [ondersteuningsticket](get-support.md#create-an-online-support-ticket) met Intune.
-**Toegang tot gegevens van uw organisatie**: het werk- of schoolaccount dat u hebt opgegeven, heeft geen toegang tot deze app. Mogelijk moet u zich aanmelden met een ander account. Neem contact op met uw IT-beheerder voor hulp. | Intune heeft gedetecteerd dat de gebruiker zich probeert aan te melden met een tweede werk- of schoolaccount dat verschilt van het bij MAM geregistreerde account voor het apparaat. Er kan per apparaat slechts één werk- of schoolaccount tegelijkertijd door MAM worden beheerd. | Laat de gebruiker zich aanmelden met het account waarvan de gebruikersnaam vooraf is ingevuld op het aanmeldingsscherm. <br> <br> Of laat de gebruiker zich aanmelden met het nieuwe werk- of schoolaccount en verwijder het bestaande bij MAM geregistreerde account.
+**Toegang tot gegevens van uw organisatie**: het werk- of schoolaccount dat u hebt opgegeven, heeft geen toegang tot deze app. Mogelijk moet u zich aanmelden met een ander account. Neem contact op met uw IT-beheerder voor hulp. | Intune heeft gedetecteerd dat de gebruiker zich probeert aan te melden met een tweede werk- of schoolaccount dat verschilt van het bij MAM geregistreerde account voor het apparaat. Er kan per apparaat slechts één werk- of schoolaccount tegelijkertijd door MAM worden beheerd. | Laat de gebruiker zich aanmelden met het account waarvan de gebruikersnaam vooraf is ingevuld op het aanmeldingsscherm. Mogelijk moet u [de UPN-instelling van de gebruiker voor intune configureren](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). <br> <br> Of laat de gebruiker zich aanmelden met het nieuwe werk- of schoolaccount en verwijder het bestaande bij MAM geregistreerde account.
 **Verbindingsprobleem**: er is een onverwacht verbindingsprobleem opgetreden. Controleer uw verbinding en probeer het opnieuw.  |  Er is een onverwachte fout opgetreden. | Wacht enige tijd en probeer het opnieuw. Als de fout zich blijft voordoen, maakt u een [ondersteuningsticket](get-support.md#create-an-online-support-ticket) met Intune.
 **Waarschuwing**: deze app kan niet meer worden gebruikt. Neem contact op met uw IT-beheerder voor meer informatie. | Kan het certificaat van de app niet valideren. | Zorg ervoor dat de versie van de app is bijgewerkt. <br><br> installeer de app opnieuw.
 **Fout**: er is een probleem opgetreden waardoor deze app moet worden gesloten. Als de fout zich blijft voordoen, neemt u contact op met uw IT-beheerd. | Kan de pincode van de MAM-app in de sleutelhanger van Apple iOS niet lezen. | Start het apparaat opnieuw op. Zorg ervoor dat de versie van de app is bijgewerkt. <br><br> installeer de app opnieuw.
@@ -103,6 +111,7 @@ Dialoogvenster/foutbericht | Oorzaak | Herstel |
 ## <a name="next-steps"></a>Volgende stappen
 
 - [De Mobile Application Management-configuratie valideren](app-protection-policies-validate.md)
+- Meer informatie over het gebruik van logboek bestanden om Intune-app-beveiliging-beleid op te lossen. Zie[https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
 - Raadpleeg [De portal voor probleemoplossing gebruiken om gebruikers in uw bedrijf te helpen](help-desk-operators.md) voor meer informatie over probleemoplossing met Intune. 
 - Ontdek meer over bekende problemen in Microsoft Intune. Zie [Bekende problemen in Microsoft Intune](known-issues.md) voor meer informatie.
 - Extra hulp nodig? Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md).
