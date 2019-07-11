@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3cfe2aef93fb8b7c420ee6513945f11bee5bd0be
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 39b5581ae7dd2a93554c0371da3858f59d6e62b4
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529722"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735445"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
@@ -163,10 +163,10 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
 2. Configureer de volgende gegevens in het deelvenster **Een regel voor vereisten toevoegen**. Sommige van de waarden in dit deelvenster worden mogelijk automatisch ingevuld.
     - **Architectuur van besturingssysteem**: kies de architecturen die nodig zijn om de app te installeren.
     - **Minimumversie van het besturingssysteem**: selecteer de minimumversie van het besturingssysteem die nodig is om de app te installeren.
-    - **Vereiste schijfruimte (MB)**: voeg optioneel de vrije schijfruimte op het systeemstation toe die nodig is om de app te installeren.
-    - **Vereiste fysieke geheugen (MB)**: voeg optioneel het fysieke geheugen (RAM) toe dat nodig is om de app te installeren.
+    - **Vereiste schijfruimte (MB)** : voeg optioneel de vrije schijfruimte op het systeemstation toe die nodig is om de app te installeren.
+    - **Vereiste fysieke geheugen (MB)** : voeg optioneel het fysieke geheugen (RAM) toe dat nodig is om de app te installeren.
     - **Minimumaantal vereiste logische processors**: voeg optioneel het minimumaantal logische processors toe dat nodig is om de app te installeren.
-    - **Minimale vereiste processorsnelheid (MHz)**: voeg optioneel de minimale processorsnelheid toe die nodig is om de app te installeren.
+    - **Minimale vereiste processorsnelheid (MHz)** : voeg optioneel de minimale processorsnelheid toe die nodig is om de app te installeren.
 
 3. Klik op **Toevoegen** om de blade **Een vereisteregel toevoegen** weer te geven en aanvullende vereisteregels te configureren. Selecteer het **Vereistetype** om het regeltype te kiezen dat u wilt gebruiken om te bepalen hoe een vereiste moet worden gevalideerd. Vereisteregels kunnen op informatie over het bestandssysteem, registerwaarden of PowerShell-scripts worden gebaseerd. 
     - **Bestand**: Als u **Bestand** als **Vereistetype** kiest, moet de vereisteregel een bestand of map, datum, versie of grootte selecteren. 
@@ -291,7 +291,7 @@ U kunt kiezen of elke afhankelijke app automatisch moet worden geïnstalleerd. S
 U kunt met de volgende stappen een app-afhankelijkheid aan uw Win32-app toevoegen:
 
 1. Selecteer **Client-apps** > **Apps** in Intune om uw lijst met toegevoegde client-apps weer te geven. 
-2. Selecteer een toegevoegde **Windows-app (Win32-app)**. 
+2. Selecteer een toegevoegde **Windows-app (Win32-app)** . 
 3. Selecteer **Afhankelijkheden** om de afhankelijke apps toe te voegen die moeten worden geïnstalleerd voordat de Win32-app kan worden geïnstalleerd. 
 4. Klik op **Toevoegen** om een app-afhankelijkheid toe te voegen.
 5. Zodra u de afhankelijke app(s) hebt toegevoegd, klikt u op **Selecteren**.
@@ -362,8 +362,8 @@ else
 #Exit with non-zero failure code
 exit 1
 }
-
 ```
+
 Vervang in de bovenstaande PowerShell-opdracht de tekenreeks `<path to binary file>` door het pad naar uw Win32-appbestand. Een voorbeeld van een pad ziet er als volgt uit:<br>
 `C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
 
