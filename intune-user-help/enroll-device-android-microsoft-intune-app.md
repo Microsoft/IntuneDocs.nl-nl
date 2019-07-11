@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e68e404a91927192f1006626d1b865acd5eb589
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197053"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735756"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Uw bedrijfsapparaat inschrijven met de Microsoft Intune-app
 
@@ -46,9 +46,9 @@ Voltooi deze stappen voor het instellen en inschrijven van uw apparaat.
 2. Selecteer uw taal in het scherm **Welkom**.   Als u het apparaat moet inschrijven met een QR-code of via NFC, volgt u de bijbehorende stappen.  
      * NFC: Houd het apparaat dat NFC ondersteunt tegen een programmeerapparaat om verbinding te maken met het bedrijfsnetwerk. Volg de instructies op het scherm. Wanneer het scherm met de servicevoorwaarden van Chrome wordt weergegeven, kunt u verder met stap 5.  
 
-      * QR-code: Volg de stappen in [Inschrijven met behulp van QR-code](#qr-code-enrollment).  
+     * QR-code: Volg de stappen in [Inschrijven met behulp van QR-code](#qr-code-enrollment).  
 
-      Als u een andere methode moet volgen, gaat u verder naar stap 3.    
+     Als u een andere methode moet volgen, gaat u verder naar stap 3.    
 
 1. Maak verbinding met Wi-Fi en tik op **VOLGENDE**. Volg de stap die overeenkomt met uw inschrijvingsmethode. 
 

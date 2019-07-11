@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 2cad30b0cf446d6591cba2997261f049ad6ae983
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558427"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735631"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -105,6 +105,7 @@ buildscript {
 ```
 
 Vervolgens past u de invoegtoepassing in het bestand `build.gradle` voor uw APK-project toe als
+
 ```groovy
 apply plugin: 'com.microsoft.intune.mam'
 ```
@@ -141,8 +142,8 @@ intunemam {
     excludeClasses = ['com.contoso.SplashActivity']
     excludeVariants=['savory']
 }
-
 ```
+
 Hierdoor gebeurt het volgende:
 * `:product:FooLib` wordt niet opnieuw geschreven omdat het is opgenomen in `excludeProjects`
 * `:product:foo-project` wordt opnieuw geschreven, met uitzondering van `com.contoso.SplashActivity` dat wordt overgeslagen omdat het is opgenomen in `excludeClasses`
@@ -1072,9 +1073,10 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 
 > [!NOTE]
 > De `MAMServiceAuthenticationCallback.acquireToken()`-methode van de app moet *true* voor de nieuwe `forceRefresh`-vlag doorgeven aan `acquireTokenSilentSync()` om een vernieuwing van de broker af te dwingen.  Dit is bedoeld als oplossing van een probleem met de cache dat zich bij tokens in ADAL voordoet en dat invloed kan hebben op MAM-servicetokens. Dit ziet er over het algemeen als volgt uit:
-```java
-AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
-```
+>
+> ```java
+> AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
+> ```
 
 > [!NOTE]
 > Als u aangepaste blokkerende UX wilt weergeven tijdens de herstelpoging, moet u *false* voor de showUX-parameter doorgeven aan `remediateCompliance()`. U moet ervoor zorgen dat uw UX wordt weergegeven en dat u eerst uw meldingenlistener registreert voordat u `remediateCompliance()` aanroept.  Hierdoor voorkomt u dat er een racevoorwaarde optreedt waarbij de melding mogelijk wordt gemist als `remediateCompliance()` heel snel mislukt.  De methode `onCreate()` of `onMAMCreate()` van de subklasse Activiteit is bijvoorbeeld de ideale locatie om de meldingenlistener te plaatsen en vervolgens `remediateCompliance()` aan te roepen.  De parameters voor `remediateCompliance()` kunnen aan uw UX worden doorgegeven als extra intenties.  Zodra de melding over de nalevingsstatus is ontvangen, kunt u het resultaat weergeven of de activiteit simpelweg voltooien.
@@ -1415,6 +1417,7 @@ Met `MAMIdentityExecutors` kunt u een bestaand exemplaar van `Executor` of `Exec
   Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
   ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
 ```
+
 ### <a name="file-protection"></a>Bestandsbeveiliging
 
 Op het moment dat een bestand wordt gemaakt, wordt er op basis van een thread- en procesidentiteit een identiteit aan het bestand gekoppeld. Deze identiteit wordt gebruikt voor zowel bestandsversleuteling als selectief wissen. Alleen bestanden waarvan de identiteit word beheerd en een beleid heeft dat versleuteling vereist, worden versleuteld. De standaard-SDK-actie voor het selectief wissen van functies wist alleen bestanden die zijn gekoppeld aan de beheerde identiteit waarvoor wissen is aangevraagd. De app kan de identiteit van een bestand opvragen of wijzigen met de klasse `MAMFileProtectionManager`.
@@ -1643,6 +1646,7 @@ Deze sleutel-waardeparen worden niet geïnterpreteerd door Intune, maar doorgege
 > De installatie van configuraties voor levering via MAM-WE kan niet worden geleverd in `offline`.  In dit geval worden alleen Android Enterprise AppRestrictions via een `MAMUserNotification` voor een lege identiteit geleverd.
 
 ### <a name="example"></a>Voorbeeld
+
 ```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
@@ -1678,6 +1682,7 @@ Weergaven die worden gegenereerd door de MAM SDK kunnen visueel worden aangepast
 
 ### <a name="how-to-customize"></a>Aanpassingen maken
 Als de stijlwijzigingen moeten worden toegepast op de Intune MAM-weergavenviews, moet u eerst een XML-bestand met stijloverschrijvingen maken. Dit bestand moet in de map /res/xml van uw app worden geplaatst. U kunt het bestand elke gewenste naam geven. Hieronder volgt een voorbeeld van de indeling die voor dit bestand moet worden gevolgd.
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1722,16 +1727,20 @@ Schakel standaardinschrijving in aan de hand van de volgende stappen:
 1. Als ADAL in uw app is geïntegreerd of als u eenmalige aanmelding moet inschakelen, moet u [ADAL configureren](#configure-azure-active-directory-authentication-library-adal) volgens [algemene ADAL-configuratie](#common-adal-configurations) nummer 2. Als dit niet het geval is, kunt u deze stap overslaan.
    
 2. Schakel standaardinschrijving in door de volgende waarde in het manifest in te voeren:
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
    ```
+
    > [!NOTE] 
    > Dit moet de enige MAM-WE-integratie in de app zijn. Als er andere pogingen zijn gedaan om MAMEnrollmentManager-API's aan te roepen, treden er conflicten op.
 
 3. U schakelt vereist MAM-beleid in door de volgende waarde in het manifest in te voeren:
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
    ```
+
    > [!NOTE] 
    > Dit zorgt ervoor dat de gebruiker de bedrijfsportal op het apparaat moet downloaden en de standaardstroom voor inschrijving moet voltooien vóór gebruik.
 
@@ -1748,9 +1757,11 @@ Voor grote codebasissen die worden uitgevoerd zonder [ProGuard](http://proguard.
 ### <a name="policy-enforcement-limitations"></a>Beperkingen op het afdwingen van beleid
 
 * **Gebruik van inhoudsoplossers**: het Intune-beleid voor overdracht of ontvangst kan het gebruik van een inhoudsoplosser geheel of gedeeltelijk blokkeren voor toegang tot de inhoudsprovider in een andere app. Dit zorgt ervoor dat `ContentResolver`-methoden null retourneren of een foutwaarde afgeven (bijvoorbeeld: `openOutputStream` genereert `FileNotFoundException`, indien geblokkeerd). De app kan bepalen of het mislukte schrijven van gegevens via een inhoudsoplosser is veroorzaakt door beleid (of zou worden veroorzaakt door beleid) door de volgende oproep te plaatsen:
+
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```
+
     of als er geen gekoppelde activiteit is
 
     ```java

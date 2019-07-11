@@ -1,7 +1,7 @@
 ---
-title: Archief - van Intune MDM beveiligingsinstellingen basislijnen voor Windows 10
+title: Archief-van intune MDM-beveiligings regels instellingen voor Windows 10
 titleSuffix: Microsoft Intune
-description: Archief van eerdere versies van de MDM basislijn beveiligingsinstellingen voor het beheren van Windows 10 met Microsoft Intune
+description: Archief met eerdere release versies van de basis instellingen van de MDM-beveiliging voor het beheren van Windows 10 met Microsoft Intune
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,29 +16,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8e83aa6b13f192da87a78690b0040e545d8943e
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: bb6cd7b1d717cd289b65e1e05566bd07471ad84f
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418956"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735789"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
-# <a name="archive-of-mdm-security-baseline-settings"></a>Archief van de MDM-beveiligingsinstellingen basislijn  
+# <a name="archive-of-mdm-security-baseline-settings"></a>Archief met basis instellingen voor MDM-beveiliging  
 
-Bekijk de details van gearchiveerde versies van de MDM-basisbeveiliging voor Intune.  
+Details weer geven voor gearchiveerde versies van de MDM-beveiligings basislijn voor intune.  
 
-Wanneer een nieuw MDM-basisbeveiliging loslaat, wordt de vorige lijst met instellingen van het security basislijn instellingen artikel naar dit archief gaan. Deze versies worden nog steeds ondersteund voor gebruik en dit archief wordt aangeboden om te helpen bij het begrijpen van de standaardinstellingen voor oudere basislijnversies.
+Wanneer er een nieuwe basis lijn voor MDM-beveiliging wordt uitgebracht, wordt de vorige lijst met instellingen verplaatst van het artikel beveiligings basislijn instellingen naar dit archief. Deze versies worden nog steeds ondersteund voor gebruik, en dit archief wordt geboden om de standaard instellingen voor oudere basislijn versies te weten te komen.
 
-Wanneer een versie van de basislijn wordt niet meer ondersteund voor gebruik, wordt deze vervolgens verwijderd uit dit artikel.
+Wanneer een basislijn versie niet meer wordt ondersteund voor gebruik, wordt deze verwijderd uit dit artikel.
 
-- Bekijk de instellingen die beschikbaar zijn in [de huidige MDM-basisbeveiliging](security-baseline-settings-mdm.md) 
-- Meer informatie over [basisbeveiliging](security-baselines.md), en hoe u de versie van de basislijn in uw profielen van de basislijn beveiliging een upgrade uitvoert.
+- Bekijk de instellingen die beschikbaar zijn in [de huidige MDM-beveiligings basislijn](security-baseline-settings-mdm.md) 
+- Meer informatie [over beveiligings](security-baselines.md)basislijnen en het bijwerken van de basislijn versie in uw beveiligings basislijn profielen.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Preview: MDM-basislijn voor beveiliging voor oktober 2018  
 
-*Deze basislijn is vervangen door een andere [MDM basisbeveiliging voor Spring 2019 (19 uur 1)](security-baseline-settings-mdm.md)*
+*Deze basis lijn wordt vervangen door [de MDM-beveiligings basislijn voor lente 2019 (19H1)](security-baseline-settings-mdm.md)*
 
 ### <a name="above-lock"></a>Vergrendeling boven  
 
@@ -261,38 +261,38 @@ Zie [Beleids-CSP - DeviceLock](https://docs.microsoft.com/windows/client-managem
   
   **Standaardinstelling**: Ja  
   
-    Wanneer *Wachtwoord vereisen* is ingesteld op *Ja*, zijn de volgende instellingen beschikbaar.
+  Wanneer *Wachtwoord vereisen* is ingesteld op *Ja*, zijn de volgende instellingen beschikbaar.
 
-    - **Wachtwoord: minimumaantal tekensets**  
-      Het aantal complexe elementtypen (hoofdletters en kleine letters, cijfers en leestekens) dat is vereist voor een sterke pincode of een sterk wachtwoord. Pincodes leiden tot het volgende gedrag op computers en mobiele apparaten: 1 - Alleen cijfers 2 - Cijfers en kleine letters zijn vereist 3 - Cijfers, kleine letters en hoofdletters zijn vereist. Niet ondersteund in Microsoft-desktopaccounts en domeinaccounts. 4 - Cijfers, kleine letters, hoofdletters en speciale tekens zijn vereist. Dit wordt niet ondersteund in desktop. De standaardwaarde is 1. 
-      
-      **Standaardinstelling**: 3  
+  - **Wachtwoord: minimumaantal tekensets**  
+    Het aantal complexe elementtypen (hoofdletters en kleine letters, cijfers en leestekens) dat is vereist voor een sterke pincode of een sterk wachtwoord. Pincodes leiden tot het volgende gedrag op computers en mobiele apparaten: 1 - Alleen cijfers 2 - Cijfers en kleine letters zijn vereist 3 - Cijfers, kleine letters en hoofdletters zijn vereist. Niet ondersteund in Microsoft-desktopaccounts en domeinaccounts. 4 - Cijfers, kleine letters, hoofdletters en speciale tekens zijn vereist. Dit wordt niet ondersteund in desktop. De standaardwaarde is 1. 
+    
+    **Standaardinstelling**: 3  
   
-    - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**  
-      Het aantal verificatiefouten dat is toegestaan voordat het apparaat wordt gewist. Met de waarde 0 wordt de wisfunctionaliteit van het apparaat uitgeschakeld.
-        
-      **Standaard**: 10  
+  - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**  
+    Het aantal verificatiefouten dat is toegestaan voordat het apparaat wordt gewist. Met de waarde 0 wordt de wisfunctionaliteit van het apparaat uitgeschakeld.
+    
+    **Standaard**: 10  
   
-    - **Dagen tot wachtwoord verloopt**  
-      Met de beleidsinstelling Maximale wachtwoordduur bepaalt u hoe lang (in dagen) een wachtwoord kan worden gebruikt voordat de gebruiker dit moet wijzigen. U kunt instellen dat wachtwoorden na een aantal dagen tussen 1 en 999 verlopen, of u kunt opgeven dat wachtwoorden nooit verlopen door het aantal dagen in te stellen op 0. Als de Maximale wachtwoordduur tussen 1 en 999 dagen ligt, moet de Minimale wachtwoordduur minder zijn dan de Maximale wachtwoordduur. Als Maximale wachtwoordduur is ingesteld op 0, kan Minimale wachtwoordduur op elke waarde tussen 0 en 998 dagen worden ingesteld.
-      
-      **Standaardinstelling**: 60  
+  - **Dagen tot wachtwoord verloopt**  
+    Met de beleidsinstelling Maximale wachtwoordduur bepaalt u hoe lang (in dagen) een wachtwoord kan worden gebruikt voordat de gebruiker dit moet wijzigen. U kunt instellen dat wachtwoorden na een aantal dagen tussen 1 en 999 verlopen, of u kunt opgeven dat wachtwoorden nooit verlopen door het aantal dagen in te stellen op 0. Als de Maximale wachtwoordduur tussen 1 en 999 dagen ligt, moet de Minimale wachtwoordduur minder zijn dan de Maximale wachtwoordduur. Als Maximale wachtwoordduur is ingesteld op 0, kan Minimale wachtwoordduur op elke waarde tussen 0 en 998 dagen worden ingesteld.
+    
+    **Standaardinstelling**: 60  
   
-    - **Vereist wachtwoordtype**  
-      Hiermee bepaalt u het type pincode of wachtwoord dat is vereist.
-      
-      **Standaardinstelling**: Alfanumeriek  
+  - **Vereist wachtwoordtype**  
+    Hiermee bepaalt u het type pincode of wachtwoord dat is vereist.
+    
+    **Standaardinstelling**: Alfanumeriek  
   
-    - **Minimale wachtwoordlengte**  
-      Met de beleidsinstelling Minimale wachtwoordlengte bepaalt u het minimumaantal tekens waaruit een wachtwoord voor een gebruikersaccount mag bestaan. U kunt een waarde tussen 1 en 14 tekens instellen, of u kunt instellen dat er geen wachtwoord is vereist door het aantal tekens in te stellen 0.
-      
-      **Standaardinstelling**: 8  
-  
-    - **Eenvoudige wachtwoorden blokkeren**  
-      Hiermee geeft u aan of pincodes of wachtwoorden zoals '1111' en '1234' zijn toegestaan. Voor de desktop bepaalt u hiermee ook of afbeeldingswachtwoorden mogen worden gebruikt.
-      
-      **Standaardinstelling**: Ja  
-        *Wanneer u deze optie instelt op Ja mogen eenvoudige wachtwoorden niet worden gebruikt.* 
+  - **Minimale wachtwoordlengte**  
+    Met de beleidsinstelling Minimale wachtwoordlengte bepaalt u het minimumaantal tekens waaruit een wachtwoord voor een gebruikersaccount mag bestaan. U kunt een waarde tussen 1 en 14 tekens instellen, of u kunt instellen dat er geen wachtwoord is vereist door het aantal tekens in te stellen 0.
+    
+    **Standaardinstelling**: 8  
+
+  - **Eenvoudige wachtwoorden blokkeren**  
+    Hiermee geeft u aan of pincodes of wachtwoorden zoals '1111' en '1234' zijn toegestaan. Voor de desktop bepaalt u hiermee ook of afbeeldingswachtwoorden mogen worden gebruikt.
+    
+    **Standaardinstelling**: Ja  
+      *Wanneer u deze optie instelt op Ja mogen eenvoudige wachtwoorden niet worden gebruikt.* 
 
   - **Wachtwoorden niet opnieuw gebruiken**  
     Hiermee geeft u op hoeveel wachtwoorden in de geschiedenis kunnen worden opgeslagen die niet mogen worden gebruikt. De waarde bevat ook het huidige wachtwoord van de gebruiker. Met de instelling *1* kan de gebruiker bijvoorbeeld zijn huidige wachtwoord niet opnieuw gebruiken bij het kiezen van een nieuw wachtwoord. De instelling *5* betekent een gebruiker zijn nieuwe wachtwoord niet kan instellen op zijn huidige wachtwoord of een van zijn vier wachtwoorden daarvoor.
@@ -344,10 +344,10 @@ Zie [Beleids-CSP - Ervaring](https://docs.microsoft.com/windows/client-managemen
     Hiermee geeft u op of app- en inhoudssuggesties van uitgevers van externe software zijn toegestaan in Windows Spotlight-functies zoals Spotlight op het vergrendelingsscherm, voorgestelde apps in het startmenu en Windows Tips. Gebruikers zien mogelijk nog wel suggesties voor Microsoft-functies, apps en services.
       
     **Standaardinstelling**: Ja  
-   - **Specifieke functies voor consumenten blokkeren**  
-      Hiermee kunnen IT-beheerders ervaringen inschakelen die doorgaans alleen voor consumenten worden gebruikt, zoals startsuggesties, lidmaatschapsmeldingen, Post-OOBE-app-installaties en omleidingstegels.
-      
-     **Standaardinstelling**: Ja  
+  - **Specifieke functies voor consumenten blokkeren**  
+    Hiermee kunnen IT-beheerders ervaringen inschakelen die doorgaans alleen voor consumenten worden gebruikt, zoals startsuggesties, lidmaatschapsmeldingen, Post-OOBE-app-installaties en omleidingstegels.
+    
+    **Standaardinstelling**: Ja  
 
 
 ### <a name="exploit-guard"></a>ExploitGuard  
@@ -1440,5 +1440,5 @@ Raadpleeg [Policy CSP - WindowsPowerShell](https://docs.microsoft.com/windows/cl
  
 ## <a name="next-steps"></a>Volgende stappen  
 
-[De huidige versie van de basislijn weergeven](security-baseline-settings-mdm.md)  
-[Upgrade van profielen voor het gebruik van een nieuwe versie van de basislijn](security-baselines.md#change-the-baseline-instance-for-a-profile)
+[De huidige basislijn versie weer geven](security-baseline-settings-mdm.md)  
+[Profielen bijwerken om een nieuwe basislijn versie te gebruiken](security-baselines.md#change-the-baseline-instance-for-a-profile)
