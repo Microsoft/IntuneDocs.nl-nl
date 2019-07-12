@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,26 +17,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 81e50c3f79ffe9a3b9bc8068d49ba966c35dbbfd
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494533"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649089"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Apparaten die aan hybride Azure AD zijn gekoppeld implementeren met Intune en Windows Autopilot
 U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn gekoppeld aan Hybrid Azure Active Directory (Azure AD). Volg hiervoor de stappen in dit artikel.
 
 ## <a name="prerequisites"></a>Vereisten
 
-Configureer uw [gekoppelde Hybrid Azure AD-apparaten](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Zorg ervoor dat u [de registratie van uw apparaat verifieert]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) met behulp van de cmdlet Get-MsolDevice.
+Configureer uw [gekoppelde Hybrid Azure AD-apparaten](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Zorg ervoor dat u [de registratie van uw apparaat verifieert](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) met behulp van de cmdlet Get-MsolDevice.
 
 De te registreren apparaten moeten ook voldoen aan de volgende voorwaarden:
 - Apparaten werken met Windows 10 v1809 of hoger.
-- Ze moeten toegang hebben tot internet.
-- Ze moeten toegang hebben tot uw Active Directory (een VPN-verbinding wordt momenteel niet ondersteund).
-- Doorloop de OOBE (Out-of-Box Experience).
+- Toegang hebben tot internet [op basis van de gedocumenteerde Windows Autopilot-netwerkvereisten](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements).
+- Toegang tot een Active Directory-domeincontroller, zodat het kan worden verbonden met het netwerk van de organisatie. (Waar het DNS-records voor het AD-domein en de AD-domeincontroller kan oplossen en kan communiceren met de domeincontroller om de gebruiker te verifiëren. Een VPN-verbinding wordt momenteel niet ondersteund.)
 - Zorg ervoor dat u de domeincontroller van het domein dat u probeert samen te voegen kunt pingen.
+- Als u een proxy gebruikt, moet de optie WPAD Proxy-instellingen zijn ingeschakeld en geconfigureerd.
+- Doorloop de OOBE (Out-of-Box Experience).
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Automatische inschrijving voor Windows 10 instellen
 
@@ -139,7 +140,7 @@ Als u in uw netwerkomgeving over een webproxy beschikt, zorgt u ervoor dat de In
 
 1. Als u **Dynamische apparaten** hebt geselecteerd voor het lidmaatschapstype, selecteert u in het deelvenster **Groep** de optie **Leden van dynamisch apparaat** en voert u in het vak **Geavanceerde regel** een van de volgende acties uit:
     - Als u een groep wilt maken met al uw Autopilot-apparaten, voert u `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")` in.
-    - Het veld Groepstag van Intune komt overeen met het kenmerk OrderID op Azure AD-apparaten. Als u een groep wilt maken met al uw Autopilot-apparaten met een specifieke groepstag (OrderID), typt u: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Het veld Groepstag van Intune komt overeen met het kenmerk OrderID op Azure AD-apparaten. Als u een groep wilt maken met al uw Autopilot-apparaten met een specifieke groepstag (OrderID), typt u: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Als u een groep wilt maken met al uw Autopilot-apparaten en een specifieke inkooporder-id, voert u `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")` in.
     
 1. Selecteer **Opslaan**.

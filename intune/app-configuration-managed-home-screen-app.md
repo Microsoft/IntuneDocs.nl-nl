@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9a61b89f07bfacf1dc41be1412f79509e1e147d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049938"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735693"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>De app Microsoft Managed Home Screen voor Android Enterprise configureren
 
@@ -74,13 +74,13 @@ De volgende tabel bevat de beschikbare configuratiesleutels, waardetypen, standa
 | Feed van het startscherm inschakelen | Booleaanse waarde | ONWAAR | Hiermee kunt u de feed van het startscherm schakelen, die zichtbaar wordt wanneer u naar links op het startscherm veegt. Deze feed geeft een ander type inhoud weer, zoals nieuws, agenda, vaak gebruikte apps en de kaart voor Cortana-spraakassistent enz. Als u dit inschakelt, kan de eindgebruiker naar de feed navigeren door naar links op het startscherm te vegen. |
 | Overzichtsmodus inschakelen | Booleaanse waarde | ONWAAR | Hiermee kunnen de eindgebruikers verschillende pagina's toevoegen aan of verwijderen van het startscherm. Deze kunnen worden geopend door naar rechts te vegen op het standaardscherm. Als u dit inschakelt, kan de eindgebruiker pagina's toevoegen aan de rechterkant van de standaardpagina van het startscherm, maar ook de standaardpagina wijzigen en de instellingen op Managed Home Screen openen. |
 | Telemetrie van het apparaat inschakelen | Booleaanse waarde | ONWAAR | Hiermee kunt u de telemetrie inschakelen die wordt vastgelegd voor het beheerde startscherm. Als u dit inschakelt, kan Microsoft telemetrie over het apparaatgebruik vastleggen, zoals het aantal keren dat een bepaalde app op dit apparaat wordt gestart. |
-| De in de whitelist opgenomen toepassingen instellen | bundleArray | ONWAAR | Hiermee kunt u de apps definiëren die op het startscherm worden weergegeven. U kunt kiezen uit alle apps die op het apparaat zijn geïnstalleerd. U kunt de apps definiëren door de naam van het app-pakket in te voeren van de apps die u graag om zichtbaar te maken, com.android.settings zouden bijvoorbeeld instellingen toegankelijk maken op het startscherm. De apps die u in dit gedeelte op de whitelist plaatst, moeten al op het apparaat zijn geïnstalleerd om te worden weergegeven op het startscherm. |
+| De in de whitelist opgenomen toepassingen instellen | bundleArray | ONWAAR | Hiermee kunt u de apps definiëren die op het startscherm worden weergegeven. U kunt kiezen uit alle apps die op het apparaat zijn geïnstalleerd. U definieert de apps door de naam van het app-pakket in te voeren van de apps die u graag zichtbaar wilt maken. Met com.microsoft.emmx voegt u bijvoorbeeld Instellingen toe aan het startscherm. De apps die u in dit gedeelte op de whitelist plaatst, moeten al op het apparaat zijn geïnstalleerd om te worden weergegeven op het startscherm. |
 | Vastgemaakte webkoppelingen instellen | bundleArray | ONWAAR | Hiermee kunt u websites vastmaken als pictogrammen voor snel starten op het startscherm. Met deze configuratie kunt u de URL definiëren en toevoegen aan het startscherm waar de eindgebruiker deze met één keer tikken kan starten in de browser. |
 | Zoekbalk inschakelen | Booleaanse waarde | ONWAAR | Hiermee kunt u de zoekbalk inschakelen op het startscherm. Als u deze inschakelt, zien gebruikers van het apparaat de zoekbalk op het startscherm waarop ze alles kunnen invoeren wat ze op het internet willen opzoeken. |
 | De app-instellingen uitschakelen | Booleaanse waarde | ONWAAR | Hiermee kunt u de instellingenpagina voor Managed Home Screen uitschakelen. Als u deze uitschakelt, kan de eindgebruiker van het apparaat niet bij de instellingen komen van Managed Home Screen. |
-| De schermbeveiliging inschakelen | Booleaanse waarde | ONWAAR | De schermbeveiligingsmodus inschakelen of niet. Indien deze is ingesteld op true, kunt u **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver**, en **media_detect_ screen_saver** configureren. |
-| Installatiekopie van schermbeveiliging | string |   | De URL van de installatiekopie van de schermbeveiliging instellen. Als er geen URL is ingesteld, geven apparaten het standaardscherm weer wanneer de schermbeveiliging wordt geactiveerd.  |
-| Tijd weergeven bij schermbeveiliging | integer | 0 | Hiermee wordt de optie geboden om de hoeveelheid tijd in seconden in te stellen die op het apparaat wordt weergegeven tijdens de schermbeveiligingsmodus. Als deze is ingesteld op 0, wordt de schermbeveiliging voor onbepaalde tijd weergegeven in de schermbeveiligingsmodus totdat het apparaat geactiveerd wordt.  |
+| De schermbeveiliging inschakelen | Booleaanse waarde | ONWAAR | De schermbeveiligingsmodus wel of niet inschakelen. Indien deze is ingesteld op true, kunt u **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver**, en **media_detect_ screen_saver** configureren. |
+| Installatiekopie van schermbeveiliging | string |   | Hiermee stelt u de URL van de installatiekopie van de schermbeveiliging in. Als er geen URL is ingesteld, geven apparaten de standaard ingestelde schermbeveiligingsafbeelding weer wanneer de schermbeveiliging wordt geactiveerd. De standaardafbeelding geeft het pictogram van de Managed Home Screen-app weer.  |
+| Tijd weergeven bij schermbeveiliging | integer | 0 | Hiermee wordt de optie geboden om de hoeveelheid tijd in seconden in te stellen die op het apparaat wordt weergegeven tijdens de schermbeveiligingsmodus. Als deze is ingesteld op 0, wordt de schermbeveiliging voor onbepaalde tijd weergegeven in de schermbeveiligingsmodus totdat het apparaat wordt geactiveerd.  |
 | Duur van inactiviteit voor het inschakelen van de schermbeveiliging | integer | 30 | Het aantal seconden dat het apparaat niet actief is voordat de schermbeveiliging wordt geactiveerd. Als deze op 0 ia ingesteld, schakelt het apparaat nooit in de modus voor schermbeveiliging. |
 | Media wordt gedetecteerd voordat schermbeveiliging wordt weergegeven | Booleaanse waarde | WAAR | Kies of schermbeveiliging op het scherm van het apparaat moet worden weergegeven als audio/video wordt afgespeeld op apparaat. Als deze optie is ingesteld op waar, wordt op het apparaat geen audio/video afgespeeld, ongeacht de waarde in **inactive_time_to_show_scree_saver**. Als deze optie is ingesteld op onwaar, wordt schermbeveiliging weergegeven op het apparaatscherm op basis van de waarde die in **inactive_time_to_show_screen_saver** is ingesteld.   |
 | Virtuele startknop inschakelen | Booleaanse waarde | ONWAAR | Schakel deze instelling op `True` waardoor de eindgebruiker toegang heeft tot een startknop voor Managed Home Screen waardoor de gebruiker naar Managed Home Screen terugkeert vanuit de huidige taak waarin hij/zij zich bevindt.  |
@@ -89,6 +89,9 @@ De volgende tabel bevat de beschikbare configuratiesleutels, waardetypen, standa
 | Wachtwoord voor afsluiten taakvergrendelingsmodus | string |   | Voer een 4-6-cijferige code in waarmee u tijdelijk de taakvergrendelingsmodus kunt opheffen voor het oplossen van problemen. |
 | Wi-Fi-instellingen tonen | Booleaanse waarde | ONWAAR | Wanneer u deze instelling op `True` zet, kan de eindgebruiker Wi-Fi in- of uitschakelen of verbinding maken met verschillende Wi-Fi-netwerken.  |
 | Bluetooth-instelling tonen | Booleaanse waarde | ONWAAR | Wanneer u deze instelling op `True` zet, kan de eindgebruiker Bluetooth in- of uitschakelen of verbinding maken met verschillende voor Bluetooth geschikte netwerken.   |
+| Toepassingen in een map worden geordend op naam | Booleaanse waarde | WAAR | Als u deze instelling op `False` instelt, verschijnen items in een map in de volgorde waarin ze zijn opgegeven. Anders worden ze op alfabetische volgorde in de map weergegeven.   |
+| Alfabetische volgorde ingeschakeld | Booleaanse waarde | ONWAAR | Als u deze instellingen op `True` instelt, is het mogelijk om de volgorde van toepassingen, weblinks en mappen in de Managed Home Screen in te stellen. Als dit is ingeschakeld, stelt u de volgorde in met **app_order**. Dan kan de eindgebruiker Bluetooth in- of uitschakelen of verbinding maken met verschillende voor Bluetooth geschikte netwerken.   |
+| Toepassingsvolgorde | bundleArray | ONWAAR | Hiermee geeft u de volgorde van toepassingen, weblinks en mappen op in Managed Home Screen. Als u deze instelling wilt gebruiken, moet **Startscherm vergrendelen** zijn ingeschakeld, moet **Rastergrootte instellen** zijn gedefinieerd en moet **Toepassingsvolgorde ingeschakeld** zijn ingesteld op `True`.   |
 
 ## <a name="enter-json-data"></a>JSON-gegevens invoeren
 
@@ -111,10 +114,6 @@ Hier volgt een voorbeeld-JSON-script met alle beschikbare configuratiesleutels d
     "kind": "androidenterprise#managedConfiguration",
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
-        {
-            "key": "grid_size",
-            "valueString": "Auto"
-        },
         {
             "key": "keep_page_header",
             "valueBool": true
@@ -238,6 +237,87 @@ Hier volgt een voorbeeld-JSON-script met alle beschikbare configuratiesleutels d
             "valueBool": false
         },
         {
+            "key": "grid_size",
+            "valueString": "4;5"
+        },
+        {
+            "key": "app_order_enabled",
+            "valueBool": true
+        },
+        {
+            "key": "apps_in_folder_ordered_by_name",
+            "valueBool": true
+        },
+        {
+            "key": "app_orders",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.Microsoft.emmx"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 1
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "folder_name",
+                            "valueString": "Work"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "managed_folder"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 2
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.launcher.enterprise"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": "com.microsoft.launcher.launcher"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "key": "managed_folders",
             "valueBundleArray": [
                 {
@@ -302,8 +382,8 @@ Hier volgt een voorbeeld-JSON-script met alle beschikbare configuratiesleutels d
         }
     ]
 }
-
 ```
+
 ## <a name="next-steps"></a>Volgende stappen
 
 - Zie voor meer informatie over aan Android Enterprise toegewezen apparaten [Intune-inschrijving van aan Android Enterprise toegewezen apparaten instellen](android-kiosk-enroll.md).

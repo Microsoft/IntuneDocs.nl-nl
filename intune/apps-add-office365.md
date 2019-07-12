@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 095c2ee0aba0680de0c5fc55c1406dba41111b92
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 00712b891790fbf437e9fed024f7610f37fee129
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527440"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648700"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
 
@@ -42,6 +42,7 @@ Voordat u apps kunt toewijzen, controleren, configureren of beveiligen, moet u z
 - Deze installatiemethode wordt niet ondersteund op apparaten met Windows 10 S, Windows Home, Windows Team, Windows Holographic of Windows Holographic for Business.
 - Intune biedt geen ondersteuning voor het installeren van Office 365-desktop-apps vanuit Microsoft Store (die ook wel bekend staan als Office Centennial-apps) op een apparaat waarop u al Office 365-apps met Intune hebt geïmplementeerd. Als u deze configuratie installeert, kan dit leiden tot gegevensverlies of -beschadiging.
 - Meerdere vereiste of beschikbare app-toewijzingen tellen niet mee. Een latere app-toewijzing overschrijft reeds bestaande geïnstalleerde app-toewijzingen. Als de eerste set met Office-apps bijvoorbeeld Word bevat maar de laatste set niet, wordt Word verwijderd. Deze voorwaarde geldt niet voor Visio- of Project-toepassingen.
+- Meerdere Office 365-implementaties worden momenteel niet ondersteund. Er wordt slechts één implementatie geleverd op het apparaat
 - **Office-versie**: kies of u de 32-bits of 64-bits versie van Office wilt toewijzen. U kunt de 32-bits versie op zowel 32-bits als 64-bits apparaten installeren, maar de 64-bits versie kan alleen worden geïnstalleerd op 64-bits apparaten.
 - **MSI verwijderen van de apparaten van eindgebruikers**: kies of u bestaande Office MSI-apps wilt verwijderen van apparaten van eindgebruikers. De installatie mislukt als er zich bestaande MSI-apps op apparaten van eindgebruikers bevinden. De te verwijderen apps zijn niet beperkt tot de apps die zijn geselecteerd voor de installatie in **App-suite configureren**, omdat hierdoor alle Office-apps (MSI) van het apparaat van de eindgebruiker worden verwijderd. Zie [Bestaande MSI-versies van Office verwijderen bij een upgrade naar Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) voor meer informatie. Wanneer u Intune Office opnieuw op de computers van uw eindgebruikers installeert, krijgen eindgebruikers automatisch dezelfde taalpakketten als bij eerdere .MSI Office installaties.
 
@@ -142,7 +143,14 @@ Als u de optie **XML-gegevens invoeren** in de vervolgkeuzelijst **Instellingsin
 
 Als u klaar bent, selecteert u **Toevoegen** in het deelvenster **App toevoegen**. De app die u hebt gemaakt, wordt weergegeven in de lijst met apps.
 
+## <a name="troubleshooting"></a>Probleemoplossing
+Intune gebruikt het [Office-implementatiehulpprogramma](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) om Office 365 ProPlus te downloaden en op uw clientcomputers te implementeren met de [Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks). Bekijk de best practices die worden vermeld in [Office 365-eindpunten beheren](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints), om ervoor te zorgen dat uw netwerkconfiguratie toestaat dat clients rechtstreeks toegang hebben tot CDN, in plaats van dat CDN-verkeer door centrale proxy's wordt geleid. Zo voorkomt u onnodige latentie.
+
+Voer de [Microsoft Ondersteunings- en herstelassistent voor Office 365](https://diagnostics.office.com) uit op een doelapparaat als u tijdens de installatie of uitvoering problemen ondervindt.
+
 ## <a name="errors-during-installation-of-the-app-suite"></a>Fouten tijdens de installatie van het app-pakket
+
+Raadpleeg [ULS-logboekregistratie in Office 365 ProPlus inschakelen](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) voor informatie over hoe u uitgebreide installatielogboeken bekijkt.
 
 In de volgende tabellen worden algemene foutcodes en hun betekenis weergegeven.
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: bc785e7f714320d410d20e254125858f44131677
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044921"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548755"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Besturingssysteemversies beheren met Intune
 Op moderne mobiele en bureaubladplatformen volgen belangrijke updates, patches en nieuwe versie elkaar in hoog tempo op. U hebt de middelen om updates en patches voor Windows volledig te beheren, maar bij andere platformen, zoals iOS en Android, is de medewerking van uw eindgebruikers vereist.  Microsoft Intune biedt de mogelijkheid om het beheer van besturingssysteemversies voor meerdere platformen beter te structureren.
@@ -61,7 +61,7 @@ Zie [Aan de slag met apparaatnaleving](https://docs.microsoft.com/intune/device-
 Met het Intune-beveiligingsbeleid voor apps en de instellingen voor toegang in het beheer van mobiele toepassingen (MAM) kunt u de minimale versie van het besturingssysteem instellen op app-niveau. Hiermee kunt u eindgebruikers informatie geven en ze aanmoedigen of verplichten om hun besturingssysteem te updaten naar minimaal een bepaalde versie.
  
 Daarbij hebt u twee opties: 
-- **Waarschuwen**: bij Waarschuwen worden eindgebruikers geïnformeerd dat ze beter kunnen upgraden, wanneer ze een app met een beveiligingsbeleid of MAM-toegangsinstellingen openen op een apparaat met een besturingssysteemversie die lager is dan de gespecificeerde versie. Toegang is toegestaan voor de app en de bedrijfsgegevens.
+- **Waarschuwen**: bij Waarschuwen worden eindgebruikers geïnformeerd dat ze beter kunnen upgraden wanneer ze een app met een beveiligingsbeleid of MAM-toegangsinstellingen openen op een apparaat met een besturingssysteemversie die lager is dan de gespecificeerde versie. Toegang is toegestaan voor de app en de bedrijfsgegevens.
   ![Afbeelding van het dialoogvenster met waarschuwing over bijwerken in Android](./media/os-version-update-warning.png) 
 
 - **Blokkeren**: bij Blokkeren worden eindgebruikers geïnformeerd dat ze een upgrade moeten uitvoeren, wanneer ze een app met een beveiligingsbeleid of MAM-toegangsinstellingen openen op een apparaat met een besturingssysteemversie die lager is dan de gespecificeerde versie. Toegang is niet toegestaan voor de app en de bedrijfsgegevens.
@@ -77,7 +77,7 @@ U kunt de mogelijkheden van Intune die in dit artikel worden beschreven gebruike
 - **Stap 1**: gebruik inschrijvingsbeperkingen om besturingssysteem v2 verplicht te stellen als laagste versie voor de inschrijving van het apparaat. Dit zorgt voor naleving van nieuwe apparaten ten tijde van inschrijving.
 - **Stap 2a**: gebruik Intune-beveiligingsbeleid voor apps om gebruikers te waarschuwen dat besturingssysteem v2 is vereist, wanneer de app wordt geopend of hervat.
 - **Stap 2b**: gebruik nalevingsbeleid voor apparaten om besturingssysteem v2 te vereisen als laagste versie voor naleving van het apparaat. Gebruik **Acties** voor niet-naleving om gebruikers een overgangsperiode van zeven dagen te bieden, en ze een e-mail te sturen met de planning en vereisten.
-  -  Dit beleid informeert gebruikers op meerdere manieren dat hun bestaande apparaten moeten worden bijgewerkt: per e-mail, op de Intune-bedrijfsportal en wanneer de app wordt geopend als er een beveiligingsbeleid voor apps voor is ingeschakeld.
+  - Dit beleid informeert gebruikers op meerdere manieren dat hun bestaande apparaten moeten worden bijgewerkt: per e-mail, op de Intune-bedrijfsportal en wanneer de app wordt geopend als er een beveiligingsbeleid voor apps voor is ingeschakeld.
   - U kunt een nalevingsrapport uitvoeren over niet-naleving bij gebruikers. 
 - **Stap 3a**: gebruik Intune-beveiligingsbeleid voor apps om gebruikers te blokkeren wanneer een app wordt geopend of hervat en besturingssysteem v2 niet wordt uitgevoerd op het apparaat.
 - **Stap 3b**: gebruik nalevingsbeleid voor apparaten om besturingssysteem v2 te vereisen als laagste versie voor naleving van het apparaat.

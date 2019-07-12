@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0dc8d7cca42898db92412e2cec41252a9a9a4d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 39c3b606033ca8575e079bef9a627b087a3d3318
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046116"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572466"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense-connector inschakelen met Intune
 
@@ -44,11 +44,11 @@ Zie onderstaande scenario's bij het integreren van Zimperium met Intune:
 
 Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u apparaten blokkeren totdat de bedreiging is opgelost:
 
--   Verbinding met bedrijfs-e-mail
+- Verbinding met bedrijfs-e-mail
 
--   Synchronisatie van bedrijfsbestanden met de app OneDrive voor werk
+- Synchronisatie van bedrijfsbestanden met de app OneDrive voor werk
 
--   Toegang tot bedrijfs-apps
+- Toegang tot bedrijfs-apps
 
 **Blokkeren wanneer er schadelijke apps zijn gedetecteerd:**
 
@@ -60,7 +60,7 @@ Als er op apparaten schadelijke apps zoals malware worden gedetecteerd, kunt u a
 
 ### <a name="control-access-based-on-threat-to-network"></a>Toegangsbeheer op basis van bedreigingen voor het netwerk
 
-Detecteer bedreigingen zoals **man-in-the-middle-aanvallen** in het netwerk en beveilig de toegang tot Wi-Fi-netwerken op basis van het apparaatrisico.
+Detecteer bedreigingen zoals **man-in-the-middle**-aanvallen in het netwerk en beveilig de toegang tot Wi-Fi-netwerken op basis van het apparaatrisico.
 
 **Netwerktoegang via Wi-Fi blokkeren:**
 
@@ -72,7 +72,7 @@ Detecteer bedreigingen zoals **man-in-the-middle-aanvallen** in het netwerk en
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Toegangsbeheer voor SharePoint Online op basis van bedreigingen voor het netwerk
 
-Detecteer bedreigingen zoals **man-in-the-middle-aanvallen** in het netwerk en voorkom synchronisatie van bedrijfsbestanden op basis van het apparaatrisico.
+Detecteer bedreigingen zoals **man-in-the-middle**-aanvallen in het netwerk en voorkom synchronisatie van bedrijfsbestanden op basis van het apparaatrisico.
 
 **SharePoint Online blokkeren wanneer netwerkbedreigingen worden gedetecteerd:**
 
@@ -84,19 +84,19 @@ Detecteer bedreigingen zoals **man-in-the-middle-aanvallen** in het netwerk en
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
--   **Android 4.1 en hoger**
+- **Android 4.1 en hoger**
 
--   **iOS 8 en hoger**
+- **iOS 8 en hoger**
 
 ## <a name="prerequisites"></a>Vereisten
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune-abonnement
+- Microsoft Intune-abonnement
 
--   Zimperium Mobile Threat Defense-abonnement
+- Zimperium Mobile Threat Defense-abonnement
 
-    -   Zie de  [Zimperium-website](https://www.zimperium.com/zips-mobile-ips) voor meer informatie.
+    - Raadpleeg de [Zimperium-website](https://www.zimperium.com/zips-mobile-ips) voor meer informatie.
 
 ## <a name="next-steps"></a>Volgende stappen
 

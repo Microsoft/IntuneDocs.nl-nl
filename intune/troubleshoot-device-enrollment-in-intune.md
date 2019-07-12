@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 03b3b38819ea6bd0a34eff5b7eb8decfc2b9eb49
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528746"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548090"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Problemen bij de apparaatinschrijving in Microsoft Intune oplossen
 
@@ -84,47 +84,47 @@ Om te voorkomen dat apparaatlimieten worden bereikt, moet u ervoor zorgen dat ve
 
 **Oplossing:**
 
-1.  Verwijder de Intune-bedrijfsportal-app van het apparaat.
+1. Verwijder de Intune-bedrijfsportal-app van het apparaat.
 
-2.  Open de browser op het apparaat, ga naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en meld u aan.
+2. Open de browser op het apparaat, ga naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en meld u aan.
 
-3.  Als gebruikers zich niet kunnen aanmelden, vraagt u ze zich bij een ander netwerk aan te melden.
+3. Als gebruikers zich niet kunnen aanmelden, vraagt u ze zich bij een ander netwerk aan te melden.
 
-4.  Als dat mislukt, controleert u of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory.
+4. Als dat mislukt, controleert u of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory.
 
-5.  Als de gebruiker zich heeft aangemeld, wordt u op een iOS-apparaat gevraagd om de Intune-bedrijfsportal-app te installeren en het apparaat in te schrijven. Op een Android-apparaat moet u de Intune-bedrijfsportal-app handmatig installeren, waarna u het apparaat opnieuw kunt inschrijven.
+5. Als de gebruiker zich heeft aangemeld, wordt u op een iOS-apparaat gevraagd om de Intune-bedrijfsportal-app te installeren en het apparaat in te schrijven. Op een Android-apparaat moet u de Intune-bedrijfsportal-app handmatig installeren, waarna u het apparaat opnieuw kunt inschrijven.
 
 ### <a name="mdm-authority-not-defined"></a>De MDM-instantie is niet gedefinieerd
 **Probleem:** Een gebruiker ontvangt de fout **De MDM-instantie is niet gedefinieerd**.
 
 **Oplossing:**
 
-1.  Controleer of de MDM-instantie [op de juiste wijze is ingesteld](mdm-authority-set.md).
+1. Controleer of de MDM-instantie [op de juiste wijze is ingesteld](mdm-authority-set.md).
     
-2.  Controleer of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory. U kunt controleren of de UPN van de gebruiker overeenkomt met de Active Directory-gegevens in het Microsoft 365-beheercentrum.
+2. Controleer of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory. U kunt controleren of de UPN van de gebruiker overeenkomt met de Active Directory-gegevens in het Microsoft 365-beheercentrum.
     Als de UPN niet overeenkomt met de Active Directory-gegevens, doet u het volgende:
 
-    1.  Schakel DirSync uit op de lokale server.
+    1. Schakel DirSync uit op de lokale server.
 
-    2.  Verwijder de gebruiker waarvoor geen overeenkomende gegevens zijn gevonden uit de gebruikerslijst van de **Intune-accountportal** .
+    2. Verwijder de gebruiker waarvoor geen overeenkomende gegevens zijn gevonden uit de gebruikerslijst van de **Intune-accountportal** .
 
-    3.  Wacht ongeveer één uur zodat de onjuiste gegevens door de Azure-service kunnen worden verwijderd.
+    3. Wacht ongeveer één uur zodat de onjuiste gegevens door de Azure-service kunnen worden verwijderd.
 
-    4.  Schakel DirSync weer in en controleer of de gebruiker nu juist is gesynchroniseerd.
+    4. Schakel DirSync weer in en controleer of de gebruiker nu juist is gesynchroniseerd.
 
-3.  Als u gebruikmaakt van System Center Configuration Manager met Intune, controleert u of de gebruiker over een geldige cloudgebruikers-id beschikt:
+3. Als u gebruikmaakt van System Center Configuration Manager met Intune, controleert u of de gebruiker over een geldige cloudgebruikers-id beschikt:
 
-    1.  Open SQL Management Studio.
+    1. Open SQL Management Studio.
 
-    2.  Maak verbinding met de betreffende database.
+    2. Maak verbinding met de betreffende database.
 
-    3.  Open de databasemap, ga naar de map **CM_DBName** en open deze. Hierbij staat DBName voor de naam van de klantendatabase.
+    3. Open de databasemap, ga naar de map **CM_DBName** en open deze. Hierbij staat DBName voor de naam van de klantendatabase.
 
-    4.  Kies bovenaan **Nieuwe query** en voer de volgende query's uit:
+    4. Kies bovenaan **Nieuwe query** en voer de volgende query's uit:
 
-        -   Als u alle gebruikers wilt weergeven: `select * from [CM_ DBName].[dbo].[User_DISC]`
+        - Als u alle gebruikers wilt weergeven: `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   Als u specifieke gebruikers wilt weergeven, gebruikt u de volgende query waarbij %testuser1% een tijdelijke aanduiding is voor username@domain.com voor de gebruiker die u wilt weergeven: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        - Als u specifieke gebruikers wilt weergeven, gebruikt u de volgende query waarbij %testuser1% een tijdelijke aanduiding is voor username@domain.com voor de gebruiker die u wilt weergeven: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         Nadat u de query hebt opgesteld, kiest u **!Execute**.
         Wanneer de resultaten worden weergegeven, zoekt u naar de cloudgebruikers-id.  Als er geen id is gevonden, beschikt de gebruiker niet over een licentie om Intune te gebruiken.
@@ -212,13 +212,13 @@ Als oplossing 2 niet werkt, laat u gebruikers de volgende stappen uitvoeren om i
 
 **Oplossing:**
 
-1.  Controleer of er een juiste licentie aan de gebruiker is toegewezen voor de versie van de Intune-service die u gebruikt.
+1. Controleer of er een juiste licentie aan de gebruiker is toegewezen voor de versie van de Intune-service die u gebruikt.
 
-2.  Controleer of het apparaat niet al is ingeschreven bij een andere MDM-provider.
+2. Controleer of het apparaat niet al is ingeschreven bij een andere MDM-provider.
 
 3. Controleer of op het apparaat niet al een beheerprofiel is geïnstalleerd.
 
-4.  Controleer of Chrome for Android de is zijn en of cookies zijn ingeschakeld.
+4. Controleer of Chrome for Android de is zijn en of cookies zijn ingeschakeld.
 
 ### <a name="android-certificate-issues"></a>Problemen met Android-certificaten
 
@@ -321,15 +321,15 @@ Zie [Aanbevolen procedures voor het beveiligen van Active Directory Federation S
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Stappen voor de probleemoplossing bij een mislukte profielinstallatie
 
-1.  Controleer of er een juiste licentie aan de gebruiker is toegewezen voor de versie van de Intune-service die u gebruikt.
+1. Controleer of er een juiste licentie aan de gebruiker is toegewezen voor de versie van de Intune-service die u gebruikt.
 
-2.  Controleer of het apparaat niet al is ingeschreven bij een andere MDM-provider.
+2. Controleer of het apparaat niet al is ingeschreven bij een andere MDM-provider.
 
 3. Controleer of op het apparaat niet al een beheerprofiel is geïnstalleerd.
 
-4.  Ga naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en probeer het gevraagde profiel te installeren.
+4. Ga naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en probeer het gevraagde profiel te installeren.
 
-5.  Controleer of Safari for iOS de standaardbrowser is en of cookies zijn ingeschakeld.
+5. Controleer of Safari for iOS de standaardbrowser is en of cookies zijn ingeschakeld.
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Het geregistreerde iOS-apparaat wordt niet weergegeven in de console wanneer u System Center Configuration Manager met Intune gebruikt
 **Probleem:** Een gebruiker registreert zijn of haar iOS-apparaat, maar het apparaat wordt niet weergegeven in de beheerconsole van Configuration Manager. Op het apparaat wordt niet aangegeven dat het is ingeschreven. Mogelijke oorzaken:
@@ -428,17 +428,17 @@ Als u wilt nagaan door welk gebruikersaccount of proces het apparaat uit de Conf
 
 #### <a name="check-how-device-was-removed"></a>Controleer hoe het apparaat is verwijderd
 
-1.  Selecteer in de Configuration Manager-beheerconsole **Bewaking** &gt; **Systeemstatus** &gt; **Statusberichtquery's**.
+1. Selecteer in de Configuration Manager-beheerconsole **Bewaking** &gt; **Systeemstatus** &gt; **Statusberichtquery's**.
 
-2.  Klik met de rechtermuisknop op **Resources van verzamelingsleden die handmatig zijn verwijderd** en selecteer **Berichten weergeven**.
+2. Klik met de rechtermuisknop op **Resources van verzamelingsleden die handmatig zijn verwijderd** en selecteer **Berichten weergeven**.
 
-3.  Kies een passende tijd/datum of de afgelopen 12 uur.
+3. Kies een passende tijd/datum of de afgelopen 12 uur.
 
-4.  Zoek het betreffende apparaat en bekijk hoe het is verwijderd. In het volgende voorbeeld ziet u dat het apparaat via een onbekende toepassing is verwijderd door het account SCCMInstall.
+4. Zoek het betreffende apparaat en bekijk hoe het is verwijderd. In het volgende voorbeeld ziet u dat het apparaat via een onbekende toepassing is verwijderd door het account SCCMInstall.
 
     ![Schermopname voor diagnose van apparaatverwijdering](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-5.  Controleer of er geen geplande taak, script of ander proces voor Configuration Manager voorkomt waarmee apparaten die niet tot een domein behoren, mobiele apparaten of gerelateerde apparaten, worden gewist.
+5. Controleer of er geen geplande taak, script of ander proces voor Configuration Manager voorkomt waarmee apparaten die niet tot een domein behoren, mobiele apparaten of gerelateerde apparaten, worden gewist.
 
 ### <a name="other-ios-enrollment-errors"></a>iOS-registratiefouten
 U vindt een lijst met iOS-inschrijvingsfouten in onze documentatie in [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) (Problemen met iOS-apparaatinschrijving in Microsoft Intune oplossen).

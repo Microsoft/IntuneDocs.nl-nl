@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a50eb6e58c7b866af32387a85026eb87f825b15
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 89babf2eb60b7959c5c25a02b29135668efc32eb
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045905"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649076"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Met Microsoft Intune beveiligde apps  
 
@@ -46,6 +46,7 @@ In de volgende tabellen staan details van ondersteunde apps van Microsoft en par
 | **Microsoft Azure Information Protection-viewer**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | Werk veilig samen met anderen met AIP-viewer. Bekijk beschermde bestanden (met rechten beschermde e-mailberichten, PDF-bestanden, afbeeldingen, tekstbestanden) die iemand met u heeft gedeeld. | [Android Store-koppeling](https://play.google.com/store/apps/details?id=com.egress.switchdroid.intune), [iOS Store-koppeling](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) | 
 | **Microsoft Bookings**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings is een app waarmee u afspraken inplant en die u helpt uw afspraken, personeel en klanten bij te houden. U mist nooit meer een afspraak.<p>Met de Bookings-app kunt u:<br><ul><li>Uw agenda bekijken en beheren</li><li>Afspraken maken of onderweg bestaande afspraken bewerken</li><li>In realtime de beschikbaarheid van uw personeelsleden bekijken</li><li>Snel en eenvoudig reageren op klanten</li><li>Snel een routebeschrijving krijgen naar uw volgende afspraak</li><li>Uw klantenlijst beheren</li></ul> | [Android Store-koppeling](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings),<br>[iOS Store-koppeling](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
 | **Microsoft Connections**<p><img alt="Microsoft app - Microsoft Connections icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-connections.png" width="100"> | Microsoft Connections helpt kleine bedrijven klanten aan te trekken en te behouden met eenvoudig te gebruiken hulpprogramma's voor e-mailmarketing. Maak eenvoudig professioneel ogende e-mailmarketingcampagnes met vooraf ontworpen sjablonen voor aankondigingen, nieuwsbrieven en referenties. | [iOS Store-koppeling](https://itunes.apple.com/us/app/microsoft-connections/id1172261641?mt=8) |  
+| **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | Houd werk- en privézaken snel, eenvoudig en op een leuke manier in de hand met uw persoonlijke assistent Cortana. Installeer deze slimme digitale assistent op uw telefoon om alle belangrijke dingen bij te houden, overal, altijd en op al uw apparaten. | [Android Store-koppeling](https://play.google.com/store/apps/details?id=com.microsoft.cortana),<br>[iOS Store-koppeling](https://apps.apple.com/us/app/cortana/id1054501703) 
 | **Microsoft Dynamics CRM**<p><img alt="Microsoft app - Microsoft Dynamics CRM icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-dynamics-crm.png" width="100"> | Betrek uw klanten terwijl u op werk en onderweg productief blijft met Microsoft Dynamics CRM. U komt voorbereid aan bij elke afspraak en werkt notities, taken, contactpersonen, accounts, zaken en potentiële klanten bij wanneer alles nog vers in uw hoofd zit. Met Dynamics CRM kunnen verkopers onderweg hun verkoopgegevens beheren op basis van een contextueel bedrijfsproces. Vertegenwoordigers en leidinggevenden hebben bewegingsvrijheid met volledige case management. Een naadloze gebruikerservaring volgens het model 'één keer configureren, overal implementeren'. Beschikbaar voor iOS en Android. | [Android Store-koppeling](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone),<br>[iOS Store-koppeling](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8) |  
 | **Microsoft Edge**<p><img alt="Microsoft app - Microsoft Edge icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-edge.png" width="100"> | Microsoft Edge biedt een continue browse-ervaring voor Windows 10-gebruikers op al hun apparaten. Inhoud en gegevens worden op de achtergrond naadloos gesynchroniseerd, zodat gebruikers in meerdere apparaten probleemloos kunnen browsen. Met vertrouwde Microsoft Edge-functies als de Hub kunnen gebruikers het web organiseren op een manier waar ruis naar de achtergrond verdwijnt, zodat het makkelijker is om onderweg inhoud te zoeken, bekijken en beheren. Microsoft Edge is zo ontworpen dat Windows 10-gebruikers op hun eigen manier kunnen browsen, waar ze ook zijn, zonder processen te verstoren. | [Android Store-koppeling](https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en_US),<br>[iOS Store-koppeling](https://itunes.apple.com/us/app/microsoft-edge/id1288723196?mt=8) |  
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | Excel-spreadsheets zien er beter uit dan ooit op uw tablet en telefoon. U kunt er zeker van zijn dat wanneer u werkbladen bewerkt of maakt, ze er op computers, Macs, tablets en telefoons precies zo uitzien zoals u wilt. U bent in een handomdraai aan de slag dankzij een vertrouwd Office-uiterlijk en -gevoel en een intuïtieve aanraakervaring.<p><p>Deze app kan worden gebruikt als een app met meerdere identiteiten voor Android en iOS. | [Android Store-koppeling](https://play.google.com/store/apps/details?id=com.microsoft.office.excel),<br>[iOS Store-koppeling](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  

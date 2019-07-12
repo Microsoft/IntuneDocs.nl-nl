@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,28 +15,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5124796166f27823b7a13b0f3dd239446f778850
-ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
+ms.openlocfilehash: 0c5ddb32502aa15f6eaf8f5866772ecd32e970d4
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66713865"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648441"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Partnercertificeringsinstanties toevoegen in Intune met behulp van SCEP
 
-In Microsoft Intune kunnen externe certificeringsinstanties (CA) worden toegevoegd. Deze CA’s kunnen certificaten leveren aan mobiele apparaten met behulp van het Simple Certificate Enrollment Protocol (SCEP). Met deze functie kunnen nieuwe certificaten worden uitgegeven en certificaten worden vernieuwd op Windows-, iOS-, Android- en macOS-apparaten.
+Gebruik externe certificeringsinstanties (CA) met Intune. Externe CA's kunnen mobiele apparaten inrichten met nieuwe of vernieuwde certificaten met het Simple Certificate Enrollment Protocol (SCEP) en ondersteunen Windows-, iOS-, Android- en macOS-apparaten.
 
 Het gebruik van deze functie bestaat uit twee delen: open-source API en de Intune-beheerderstaken.
 
 **Deel 1: een open-source API gebruiken**  
-Microsoft heeft een API gemaakt die kan worden geïntegreerd met Intune om certificaten te valideren, meldingen over geslaagde of mislukte acties te verzenden en SSL te gebruiken, met name SSL socket factory, om met Intune te communiceren.
+Microsoft heeft een API gemaakt voor integratie met Intune. Via de API kunt u certificaten valideren, succes- of foutberichten verzenden en SSL gebruiken, in het bijzonder SSL socket factory, om met Intune te communiceren.
 
-De API is beschikbaar in de [Intune SCEP API openbare GitHub-opslagplaats](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation) en kan door u worden gedownload en gebruikt in uw oplossing. Gebruik deze API met externe SCEP-servers om aangepaste aangevraagde validatie tegen Intune uit te voeren voordat u een certificaat naar een apparaat levert.
+De API is beschikbaar in de [Intune SCEP API openbare GitHub-opslagplaats](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation) en kan door u worden gedownload en gebruikt in uw oplossing. Gebruik deze API met externe SCEP-servers om aangepaste aangevraagde validatie tegen Intune uit te voeren voordat SCEP een certificaat inricht op een apparaat.
 
 In [Integreren met Intune SCEP-beheeroplossing](scep-libraries-apis.md) vindt u meer informatie over het gebruik van de API, de bijbehorende methoden en het testen van oplossing die u bouwt.
 
 **Deel 2: de toepassing en het profiel maken**  
-Met behulp van een Azure Active Directory-toepassing (Azure AD) kunt u rechten delegeren naar Intune voor het verwerken van SCEP-aanvragen die afkomstig zijn van apparaten. De Azure AD-toepassing bevat waarden voor de toepassings-id en verificatiesleutel die worden gebruikt in de API-oplossing die de ontwikkelaar maakt. Beheerders kunnen vervolgens profielen voor SCEP-certificaten maken en implementeren met behulp van Intune. Ook kunt u rapporten over de implementatiestatus bekijken op de apparaten.
+Met behulp van een Azure Active Directory-toepassing (Azure AD) kunt u rechten delegeren naar Intune voor het verwerken van SCEP-aanvragen die afkomstig zijn van apparaten. De Azure AD-toepassing bevat waarden voor de toepassings-id en verificatiesleutel die worden gebruikt in de API-oplossing die de ontwikkelaar maakt. Beheerders kunnen vervolgens SCEP-certificaatprofielen maken en implementeren met Intune, en rapporten over de implementatiestatus op de apparaten bekijken.
 
 Dit artikel bevat een overzicht van deze functie vanuit het oogpunt van een beheerder, inclusief het maken van de Azure AD-toepassing.
 
@@ -117,13 +117,14 @@ Wanneer u de registratie ongedaan maakt of het apparaat wist, worden de certific
 ## <a name="third-party-certification-authority-partners"></a>Partners van externe certificeringsinstanties
 De volgende externe certificeringsinstanties bieden ondersteuning voor Intune:
 
-- [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
+- [Entrust Datacard](https://info.entrustdatacard.com/pki-eval-tool)
 - [EJBCA GitHub open-sourceversie](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
 - [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
+- [SCEPman](https://azuremarketplace.microsoft.com/marketplace/apps/gluckkanja.scepman)
 
 Als u een externe certificeringsinstantie bent en interesse hebt om uw product te integreren met Intune, controleert u de API-richtlijnen:
 
