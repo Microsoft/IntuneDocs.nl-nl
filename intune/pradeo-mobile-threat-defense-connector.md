@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f0a4b9a957948c9bda0b0ad2d9829ff9560f217
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 6ccfe9ccd186f38a971aa6bac5d58bf61e44450d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548491"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882748"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Pradeo Mobile Threat Defense-connector met Intune
 
@@ -93,7 +93,7 @@ Bedreigingen voor uw netwerk worden gedetecteerd, zoals **man-in-the-middle-aanv
 
 - Pradeo Security for Mobile Threat Defense-abonnement
 
-    - Zie de [Pradeo-website](https://www.pradeo.com/en-US/mobile-threat-protection) voor meer informatie.
+  - Zie de [Pradeo-website](https://www.pradeo.com/en-US/mobile-threat-protection) voor meer informatie.
 
 ## <a name="next-steps"></a>Volgende stappen
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 29ae889e99a843a8569782bad2b1303c7bb4304c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548364"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882842"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: Microsoft Intune voorbereiden op het beheer van mobiele apparaten (MDM)
 
@@ -51,8 +51,8 @@ Alvorens in te gaan op de details van de Intune-configuratie, komen eerst de ver
 
 - Welke gebruiksvoorwaarden hebt u nodig?
 
-    - Zorg ervoor dat uw juridische afdeling in een vroeg stadium hierbij wordt betrokken.
-    - Wat voor lokalisatie is er vereist?
+  - Zorg ervoor dat uw juridische afdeling in een vroeg stadium hierbij wordt betrokken.
+  - Wat voor lokalisatie is er vereist?
 
 - Zijn de gebruikers bekend bent met technologie en IT in het algemeen?
 
@@ -63,8 +63,8 @@ Alvorens in te gaan op de details van de Intune-configuratie, komen eerst de ver
 - Wat zijn de lengtes van uw huidige apparaatwachtwoordcode/-pin-code?
 
 - Moet u apparaatfuncties uitschakelen of bepaald gedrag van apparaten beperken? U kunt een aantal platformspecifieke instellingen beheren met apparaatconfiguratieprofielen, zoals:
-    - Camera uitschakelen
-    - Vergrendelen op de modus voor enkele toepassing<br/>
+  - Camera uitschakelen
+  - Vergrendelen op de modus voor enkele toepassing<br/>
 
 - Voor welke soorten verificatie moet u ondersteuning bieden? Als u gebruikmaakt van verificatie op basis van certificaten, welke certificaten moeten er dan worden verstrekt?
   - Intune kan certificaten verstrekken met resourcetoegangsprofielen voor ingeschreven apparaten.

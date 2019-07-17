@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d94f2bd9237e92b22b9d73e4f7777dc0faf3f0fe
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: ca51fc38a7469d865640840647280375eaa74bbe
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529618"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883030"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>iOS-apparaten registreren bij Intune
 
@@ -67,9 +67,9 @@ Meer informatie over [Apple Configurator-inschrijving](apple-configurator-setup-
 Op apparaten die zijn geconfigureerd met gebruikersaffiniteit kan de bedrijfsportal-app worden geïnstalleerd en uitgevoerd om apps te downloaden en apparaten te beheren. Nadat gebruikers hun apparaten hebben ontvangen, moeten zij een aantal extra stappen uitvoeren om de Configuratieassistent te voltooien en de bedrijfsportal-app te installeren.
 
 Gebruikersaffiniteit is vereist voor de ondersteuning van het volgende:
-  - MAM-apps (Mobile Application Management)
-  - Voorwaardelijke toegang tot e-mail en bedrijfsgegevens
-  - Bedrijfsportal-app
+- MAM-apps (Mobile Application Management)
+- Voorwaardelijke toegang tot e-mail en bedrijfsgegevens
+- Bedrijfsportal-app
 
 **iOS-apparaten in bedrijfseigendom inschrijven met gebruikersaffiniteit**
 1. Wanneer gebruikers hun apparaat inschakelen, wordt ze gevraagd de Configuratieassistent te voltooien. 

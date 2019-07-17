@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6082f4de6a881f211f2c7569fcd052ba1f37ad7b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d96167eb37ac7c3c90bad82783e9ce06814f8c88
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045909"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884783"
 ---
 # <a name="data-collection-in-intune"></a>Gegevensverzameling in Intune
 
@@ -41,48 +41,48 @@ De meeste persoonlijke gegevens die door Intune worden verzameld, zijn geïdenti
 Geïdentificeerde gegevens die door Intune worden verzameld, omvatten mogelijk, maar zijn niet beperkt tot: 
 
 - Gebruikersgegevens
-    - Weergaven van de eigenaar van de naam/gebruiker (de in Azure geregistreerde naam van de gebruiker, zoals aangegeven door de AzureUserID)
-    - User principal name of e-mailadres
-    - Identificaties van externe gebruikers (zoals Apple ID)
+  - Weergaven van de eigenaar van de naam/gebruiker (de in Azure geregistreerde naam van de gebruiker, zoals aangegeven door de AzureUserID)
+  - User principal name of e-mailadres
+  - Identificaties van externe gebruikers (zoals Apple ID)
 - Hardware-inventarisatiegegevens
-    - Apparaatnaam
-    - Fabrikant
-    - Besturingssysteem
-    - Serienummer
-    - IMEI-nummer
-    - Het IP-adres
-    - Wi-Fi MacAddress
-    - ICCID
-    - Telefoonnummer
+  - Apparaatnaam
+  - Fabrikant
+  - Besturingssysteem
+  - Serienummer
+  - IMEI-nummer
+  - Het IP-adres
+  - Wi-Fi MacAddress
+  - ICCID
+  - Telefoonnummer
 - Informatie uit auditlogboeken, waaronder gegevens over de volgende activiteiten
-    - Manage
-    - Maken
-    - Bijwerken (bewerken)
-    - Verwijderen
-    - Toewijzen
-    - Externe taken
+  - Manage
+  - Maken
+  - Bijwerken (bewerken)
+  - Verwijderen
+  - Toewijzen
+  - Externe taken
 - Ondersteuningsinformatie
-    - Contactgegevens (naam, telefoonnummer, e-mailadres)
-    - E-mailwisselingen met Microsoft Ondersteuning en leden van het product- en/of kwaliteitsverbeteringsteam
+  - Contactgegevens (naam, telefoonnummer, e-mailadres)
+  - E-mailwisselingen met Microsoft Ondersteuning en leden van het product- en/of kwaliteitsverbeteringsteam
 - Informatie over toegangsbeheer (Intune gebruikt deze gegevens voor het beheren van toegang tot administratieve rollen en functies via functies als [Op rollen gebaseerd toegangsbeheer](role-based-access-control.md)).
-    - Statische verificators (wachtwoord van de klant)
-    - Privacysleutels voor certificaten 
+  - Statische verificators (wachtwoord van de klant)
+  - Privacysleutels voor certificaten 
 - Beheer- en accountgegevens
-    - Voornaam en achternaam van de gebruiker met beheerdersrechten
-    - Naam van de gebruiker met beheerdersrechten
-    - UPN (e-mail)
-    - Telefoonnummer
-    - E-mailadres van accounteigenaar
-    - Active Directory-id van de IT-beheerder van elke klant
-    - Betalingsgegevens voor klantfacturering
-    - Abonnementssleutel
+  - Voornaam en achternaam van de gebruiker met beheerdersrechten
+  - Naam van de gebruiker met beheerdersrechten
+  - UPN (e-mail)
+  - Telefoonnummer
+  - E-mailadres van accounteigenaar
+  - Active Directory-id van de IT-beheerder van elke klant
+  - Betalingsgegevens voor klantfacturering
+  - Abonnementssleutel
 - Toepassingsinventaris, zoals
-    - app-naam
-    - Versie
-    - app-id
-    - grootte
-    - installatielocatie
-    - Inventarisgegevens van toepassingen worden alleen verzameld wanneer deze door de beheerder zijn gemarkeerd als een apparaat in bedrijfseigendom of wanneer de functie voor compatibele apps is ingeschakeld.  
+  - app-naam
+  - Versie
+  - app-id
+  - grootte
+  - installatielocatie
+  - Inventarisgegevens van toepassingen worden alleen verzameld wanneer deze door de beheerder zijn gemarkeerd als een apparaat in bedrijfseigendom of wanneer de functie voor compatibele apps is ingeschakeld.  
 - Tenant-id's van derden, zoals de Apple ID. 
 
 ## <a name="pseudonymized-data"></a>Gepseudonimiseerde gegevens
@@ -92,30 +92,30 @@ Gepseudonimiseerde gegevens zijn gekoppeld aan een unieke id, doorgaans een numm
 Gepseudonimiseerde gegevens die door Intune worden verzameld, omvatten mogelijk, maar zijn niet beperkt tot: 
 
 - Diagnostische gegevens, prestatiegegevens en gebruiksgegevens die zijn gekoppeld aan een gebruiker en/of apparaat
-    - Het aantal keer dat een functie wordt gebruikt
-    - De opdrachten die door de functie worden geleverd
-    - De reactietijd van een service
-    - Succespercentages van installaties en andere processen
-    - Toepassingsfouten van de Intune-bedrijfsportal
-    - Gebruikers- en apparaat-id's
-    - Id's voor verwijzing, correlatie en beheerdoeleinden 
+  - Het aantal keer dat een functie wordt gebruikt
+  - De opdrachten die door de functie worden geleverd
+  - De reactietijd van een service
+  - Succespercentages van installaties en andere processen
+  - Toepassingsfouten van de Intune-bedrijfsportal
+  - Gebruikers- en apparaat-id's
+  - Id's voor verwijzing, correlatie en beheerdoeleinden 
 - Gegevens van apparaten die niet zijn gekoppeld aan een apparaat of gebruiker (als deze gegevens zijn gekoppeld aan een apparaat of gebruiker, worden deze gegevens behandeld als geïdentificeerde gegevens)
-    - Intune-apparaat-id
-    - Apparaat-id van Azure Active Directory
-    - Intune-apparaatbeheer-id
-    - Tenant-id
-    - Account-id
-    - EAS-apparaat-id
-    - Platformspecifieke id's
-    - Apple ID voor iOS-apparaten
-    - MAC-adres voor Mac-apparaten
-    - Windows-id voor Windows-apparaten
+  - Intune-apparaat-id
+  - Apparaat-id van Azure Active Directory
+  - Intune-apparaatbeheer-id
+  - Tenant-id
+  - Account-id
+  - EAS-apparaat-id
+  - Platformspecifieke id's
+  - Apple ID voor iOS-apparaten
+  - MAC-adres voor Mac-apparaten
+  - Windows-id voor Windows-apparaten
 - Beheerde toepassingsgegevens
-    - Beheerde toepassing-id
-    - Apparaatlabel van beheerde toepassing
-    - Intune-apparaatbeheer-id
-    - Apparaat-id van Azure Active Directory
-    - Versleutelingssleutels
+  - Beheerde toepassing-id
+  - Apparaatlabel van beheerde toepassing
+  - Intune-apparaatbeheer-id
+  - Apparaat-id van Azure Active Directory
+  - Versleutelingssleutels
 
 ## <a name="aggregated-data"></a>Geaggregeerde gegevens
 
@@ -125,14 +125,14 @@ Geaggregeerde gegevens die door Intune worden verzameld, zijn mogelijk, maar nie
 
 - Beheerdersgebruiksgegevens van alle Intune-tenants (bijvoorbeeld beheerdersbesturingselementen die zijn geselecteerd voor de communicatie met de beheerconsole)
 - Gegevens van het tenantaccount (deze gegevens zijn beschikbaar via de blade van Intune)
-    - Aantal ingeschreven apparaten of gebruikers
-    - Aantal geïdentificeerde apparaatplatformen  
-    - Aantal geïnstalleerde apparaten
-    - installedDeviceCount: het aantal apparaten waarop de toepassing is geïnstalleerd.
-    - notApplicableDeviceCount: het aantal apparaten waarvoor de toepassing niet van toepassing is.
-    - notInstalledDeviceCount: het aantal apparaten waarvoor de toepassing van toepassing is, maar waarop de installatie niet is uitgevoerd.
-    - pendingInstallDeviceCount: het aantal apparaten waarvoor de toepassing van toepassing is en waarvoor de installatie in behandeling is.
-    
+  - Aantal ingeschreven apparaten of gebruikers
+  - Aantal geïdentificeerde apparaatplatformen  
+  - Aantal geïnstalleerde apparaten
+  - installedDeviceCount: het aantal apparaten waarop de toepassing is geïnstalleerd.
+  - notApplicableDeviceCount: het aantal apparaten waarvoor de toepassing niet van toepassing is.
+  - notInstalledDeviceCount: het aantal apparaten waarvoor de toepassing van toepassing is, maar waarop de installatie niet is uitgevoerd.
+  - pendingInstallDeviceCount: het aantal apparaten waarvoor de toepassing van toepassing is en waarvoor de installatie in behandeling is.
+
 ## <a name="next-steps"></a>Volgende stappen
 
 Meer informatie over hoe Intune persoonlijke gegevens [opslaat en verwerkt](privacy-data-store-process.md), en [deelt](privacy-data-secure-share.md). 

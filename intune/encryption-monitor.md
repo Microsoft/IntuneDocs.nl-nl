@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: b4c7e4b2d35eb2662ca74660e2133dcd2c89f0a1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316936"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883370"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker en apparaatversleuteling bewaken  
 Intune biedt een gecentraliseerde locatie om de versleutelingsstatus van uw Windows 10-apparaten te identificeren. Ook krijgt u belangrijke informatie voor BitLocker van uw apparaten van Azure Active Directory (Azure AD).  
@@ -76,22 +76,22 @@ In dit deelvenster worden de volgende details weergegeven:
 
   Hieronder volgt een aantal voorbeelden van de statusdetails die in een Intune-rapport kunnen staan:  
 
-   - Volgens het BitLocker-beleid moeten gebruikers toestemming geven om de wizard BitLocker-stationsversleuteling te starten om het besturingssysteemvolume te versleutelen, maar de gebruiker heeft geen toestemming gegeven.  
-   - De versleutelingsmethode van het besturingssysteemvolume komt niet overeen met het BitLocker-beleid.  
-   - Volgens het BitLocker-beleid moet TPM-beveiliging worden gebruikt om het besturingssysteemvolume te beveiligen, maar er is geen TPM gebruikt.  
-   - Volgens het BitLocker-beleid moet alleen TPM-beveiliging worden gebruikt om het besturingssysteemvolume te beveiligen, maar er is geen TPM-beveiliging gebruikt.  
-   - Volgens het BitLocker-beleid moet TPM- en pincodebeveiliging worden gebruikt om het besturingssysteemvolume te beveiligen, maar er is geen TPM- en pincodebeveiliging gebruikt.  
-   - Volgens het BitLocker-beleid moet TPM- en opstartsleutelbeveiliging worden gebruikt om het besturingssysteemvolume te beveiligen, maar er is geen TPM- en opstartsleutelbeveiliging gebruikt.  
-   - Volgens het BitLocker-beleid moet TPM-, pincode- en opstartsleutelbeveiliging worden gebruikt om het besturingssysteemvolume te beveiligen, maar er is geen TPM-, pincode- en opstartsleutelbeveiliging gebruikt.  
-   - Het besturingssysteemvolume is niet beveiligd.  
-   - Back-up van herstelsleutel is mislukt.  
-   - Een vaste schijf is niet beveiligd.  
-   - De versleutelingsmethode van de vaste schijf komt niet overeen met het BitLocker-beleid.  
-   - Als u schijven wilt versleutelen, moeten gebruikers zich volgens het BitLocker-beleid aanmelden als beheerder, of het AllowStandardUserEncryption-beleid moet zijn ingesteld op 1 als het apparaat met Azure AD wordt samengevoegd.  
-   - Windows Recovery Environment (WinRE) is niet geconfigureerd.  
-   - Er is geen TPM beschikbaar voor BitLocker. Dit komt omdat er geen TPM aanwezig is, er geen TPM in het register is of het besturingssysteem zich op een verwisselbaar station bevindt.  
-   - De TPM is niet gereed voor BitLocker.  
-   - Het netwerk is niet beschikbaar, maar wel vereist voor back-ups van herstelsleutels.  
+  - Volgens het BitLocker-beleid moeten gebruikers toestemming geven om de wizard BitLocker-stationsversleuteling te starten om het besturingssysteemvolume te versleutelen, maar de gebruiker heeft geen toestemming gegeven.  
+  - De versleutelingsmethode van het besturingssysteemvolume komt niet overeen met het BitLocker-beleid.  
+  - Volgens het BitLocker-beleid moet TPM-beveiliging worden gebruikt om het besturingssysteemvolume te beveiligen, maar er is geen TPM gebruikt.  
+  - Volgens het BitLocker-beleid moet alleen TPM-beveiliging worden gebruikt om het besturingssysteemvolume te beveiligen, maar er is geen TPM-beveiliging gebruikt.  
+  - Volgens het BitLocker-beleid moet TPM- en pincodebeveiliging worden gebruikt om het besturingssysteemvolume te beveiligen, maar er is geen TPM- en pincodebeveiliging gebruikt.  
+  - Volgens het BitLocker-beleid moet TPM- en opstartsleutelbeveiliging worden gebruikt om het besturingssysteemvolume te beveiligen, maar er is geen TPM- en opstartsleutelbeveiliging gebruikt.  
+  - Volgens het BitLocker-beleid moet TPM-, pincode- en opstartsleutelbeveiliging worden gebruikt om het besturingssysteemvolume te beveiligen, maar er is geen TPM-, pincode- en opstartsleutelbeveiliging gebruikt.  
+  - Het besturingssysteemvolume is niet beveiligd.  
+  - Back-up van herstelsleutel is mislukt.  
+  - Een vaste schijf is niet beveiligd.  
+  - De versleutelingsmethode van de vaste schijf komt niet overeen met het BitLocker-beleid.  
+  - Als u schijven wilt versleutelen, moeten gebruikers zich volgens het BitLocker-beleid aanmelden als beheerder, of het AllowStandardUserEncryption-beleid moet zijn ingesteld op 1 als het apparaat met Azure AD wordt samengevoegd.  
+  - Windows Recovery Environment (WinRE) is niet geconfigureerd.  
+  - Er is geen TPM beschikbaar voor BitLocker. Dit komt omdat er geen TPM aanwezig is, er geen TPM in het register is of het besturingssysteem zich op een verwisselbaar station bevindt.  
+  - De TPM is niet gereed voor BitLocker.  
+  - Het netwerk is niet beschikbaar, maar wel vereist voor back-ups van herstelsleutels.  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker-herstelsleutels
 Intune biedt toegang tot de Azure AD-blade voor BitLocker, zodat u via de Intune-portal BitLocker-sleutel-id's en herstelsleutels voor uw Windows 10-apparaten kunt weergeven.  Een apparaat is alleen toegankelijk als de sleutels van dat apparaat naar Azure AD worden geborgd. 

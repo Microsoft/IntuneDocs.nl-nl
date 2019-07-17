@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7072d7d3d24578e0f82ea21eb653906dfa30b4c
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 861c2dd73e3a78fd833a24500728bd977d1186a2
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546980"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883743"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Better Mobile integreren met Intune
 
@@ -36,13 +36,13 @@ Zorg ervoor dat u over het volgende beschikt voordat u begint met de integratie 
 
 - Azure Active Directory-beheerdersreferenties om de volgende machtigingen te verlenen:
 
-    - Aanmelden en gebruikersprofiel lezen
+  - Aanmelden en gebruikersprofiel lezen
 
-    - Toegang tot de map als de aangemelde gebruiker
+  - Toegang tot de map als de aangemelde gebruiker
 
-    - Mapgegevens lezen
+  - Mapgegevens lezen
 
-    - Gegevens van een apparaat verzenden naar Intune
+  - Gegevens van een apparaat verzenden naar Intune
 
 - Beheerdersreferenties voor toegang tot de beheerconsole van Better Mobile.
 

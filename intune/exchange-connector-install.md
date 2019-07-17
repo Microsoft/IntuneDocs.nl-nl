@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da828b162e008541cb5cb2b5d15092d0fce417c5
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572535"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883288"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>De Intune on-premises Exchange-connector instellen in Microsoft Intune
 De informatie in dit artikel helpt u bij het installeren en vervolgens controleren van de on-premises Exchange Active Sync-connector voor Intune.  U gebruikt de Intune on-premises Exchange-connector met uw [beleid voor voorwaardelijke toegang om toegang tot uw on-premises Exchange-postvakken toe te staan of te blokkeren](conditional-access-exchange-create.md). 
@@ -58,18 +58,18 @@ De volgende tabel bevat de vereisten voor de computer waarop u de on-premises Ex
 Maak een Active Directory-gebruikersaccount dat wordt gebruikt door de on-premises Exchange-connector. Het account moet gemachtigd zijn om de volgende vereiste Windows PowerShell Exchange-cmdlets uit te voeren:
 
 
- - Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
- - Get-CasMailbox, Set-CasMailbox
- - Get-ActiveSyncMailboxPolicy, Set-ActiveSyncMailboxPolicy, New-ActiveSyncMailboxPolicy, Remove-ActiveSyncMailboxPolicy
- - Get-ActiveSyncDeviceAccessRule, Set-ActiveSyncDeviceAccessRule, New-ActiveSyncDeviceAccessRule, Remove-ActiveSyncDeviceAccessRule
- - Get-ActiveSyncDeviceStatistics
- - Get-ActiveSyncDevice
- - Get-ExchangeServer
- - Get-ActiveSyncDeviceClass
- - Get-Recipient
- - Clear-ActiveSyncDevice, Remove-ActiveSyncDevice
- - Set-ADServerSettings
- - Get-Command
+- Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
+- Get-CasMailbox, Set-CasMailbox
+- Get-ActiveSyncMailboxPolicy, Set-ActiveSyncMailboxPolicy, New-ActiveSyncMailboxPolicy, Remove-ActiveSyncMailboxPolicy
+- Get-ActiveSyncDeviceAccessRule, Set-ActiveSyncDeviceAccessRule, New-ActiveSyncDeviceAccessRule, Remove-ActiveSyncDeviceAccessRule
+- Get-ActiveSyncDeviceStatistics
+- Get-ActiveSyncDevice
+- Get-ExchangeServer
+- Get-ActiveSyncDeviceClass
+- Get-Recipient
+- Clear-ActiveSyncDevice, Remove-ActiveSyncDevice
+- Set-ADServerSettings
+- Get-Command
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Het software-installatiepakket voor de on-premises Exchange-connector downloaden
 
@@ -184,9 +184,9 @@ Vanaf release 1710 Intune kunt u het [management pack Operations Manager voor Ex
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Een snelle synchronisatie of een volledige synchronisatie handmatig forceren
 Een on-premises Exchange-connector synchroniseert regelmatig automatisch EAS- en Intune-apparaatrecords. Als de nalevingsstatus van een apparaat wordt gewijzigd, worden met het proces van automatische synchronisatie regelmatig records bijgewerkt zodat apparaattoegang kan worden geblokkeerd of toegestaan.
 
-   - **Snelle synchronisatie** vindt regelmatig plaats, meerdere keren per dag. Een snelle synchronisatie haalt apparaatinformatie op voor gebruikers met een Intune-licentie en on-premises voorwaardelijke Exchange-toegang die zijn gewijzigd sinds de laatste synchronisatie.
+- **Snelle synchronisatie** vindt regelmatig plaats, meerdere keren per dag. Een snelle synchronisatie haalt apparaatinformatie op voor gebruikers met een Intune-licentie en on-premises voorwaardelijke Exchange-toegang die zijn gewijzigd sinds de laatste synchronisatie.
 
-   - **Volledige synchronisatie** vindt standaard eenmaal per dag plaats. Een volledige synchronisatie haalt apparaatinformatie op voor alle gebruikers met een Intune-licentie en on-premises voorwaardelijke Exchange-toegang. Een volledige synchronisatie haalt ook gegevens over de Exchange-server op en zorgt ervoor dat de door Intune opgegeven configuratie in de Azure-portal wordt bijgewerkt op de Exchange-server. 
+- **Volledige synchronisatie** vindt standaard eenmaal per dag plaats. Een volledige synchronisatie haalt apparaatinformatie op voor alle gebruikers met een Intune-licentie en on-premises voorwaardelijke Exchange-toegang. Een volledige synchronisatie haalt ook gegevens over de Exchange-server op en zorgt ervoor dat de door Intune opgegeven configuratie in de Azure-portal wordt bijgewerkt op de Exchange-server. 
 
 
 U kunt afdwingen dat een connector een synchronisatie uitvoert door de volgende stappen te volgen en de opties **Snelle synchronisatie** of **Volledige synchronisatie** op het Intune-dashboard te gebruiken:

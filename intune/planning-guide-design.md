@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02dcaa26e51f3b8c4632aed0fbc87131cc617532
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572286"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884881"
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 
@@ -49,47 +49,47 @@ Uw huidige omgeving kan van invloed zijn op ontwerpbeslissingen en moet daarom w
 
 - **Identiteit in de cloud**
 
-    - Gebruikt u DirSync of Azure Active Directory Connect (Azure AD)?
+  - Gebruikt u DirSync of Azure Active Directory Connect (Azure AD)?
 
-    - Is uw omgeving federatief?
+  - Is uw omgeving federatief?
 
-    - Is meervoudige authenticatie (MFA) ingeschakeld?
+  - Is meervoudige authenticatie (MFA) ingeschakeld?
 
 - **E-mailomgeving**
 
-    - Gebruikt u Exchange? On-premises of in de cloud?
+  - Gebruikt u Exchange? On-premises of in de cloud?
 
-    - Zit u midden in een project en wilt u Exchange naar de cloud migreren?
+  - Zit u midden in een project en wilt u Exchange naar de cloud migreren?
 
 - **Huidige oplossing met Mobile Device Management (MDM)**
 
-    - Gebruikt u momenteel andere MDM-oplossingen?
+  - Gebruikt u momenteel andere MDM-oplossingen?
 
-    - Welke MDM-oplossingen gebruikt u voor zakelijke en BOYD-scenario's?
+  - Welke MDM-oplossingen gebruikt u voor zakelijke en BOYD-scenario's?
 
-    - Van welke mogelijkheden maakt u gebruik (bijvoorbeeld apparaatinstellingen voor apps of Wi-Fi-configuraties)?
+  - Van welke mogelijkheden maakt u gebruik (bijvoorbeeld apparaatinstellingen voor apps of Wi-Fi-configuraties)?
 
-    - Welke apparaatplatformen worden ondersteund?
+  - Welke apparaatplatformen worden ondersteund?
 
-    - Welke groepen en hoeveel gebruikers werken er met de MDM-oplossing?
+  - Welke groepen en hoeveel gebruikers werken er met de MDM-oplossing?
 
 - **Certificaatoplossing**
 
-    - Hebt u een certificaatoplossing geïmplementeerd?
+  - Hebt u een certificaatoplossing geïmplementeerd?
 
-    - Wat voor soort certificaten gebruikt u?
+  - Wat voor soort certificaten gebruikt u?
 
 - **Beheer van systemen**
 
-    - Hoe beheert u uw pc- en serveromgeving?
+  - Hoe beheert u uw pc- en serveromgeving?
 
-    - Gebruikt u System Center Configuration Manager? Werkt u met een platform voor systeembeheer van derden?
+  - Gebruikt u System Center Configuration Manager? Werkt u met een platform voor systeembeheer van derden?
 
 - **VPN-oplossing**
 
-    - Wat is uw VPN-oplossing?
+  - Wat is uw VPN-oplossing?
 
-    - Wordt deze gebruikt voor zowel zakelijke als BYOD-scenario's?
+  - Wordt deze gebruikt voor zowel zakelijke als BYOD-scenario's?
 
 Wanneer u de huidige MDM-omgeving vastlegt, moet u rekening houden met alle projecten of eventuele andere in gebruik zijnde plannen die van invloed kunnen zijn op uw omgeving. Hieronder ziet u een voorbeeld van een manier om de huidige omgeving vast te leggen bij het maken van uw Intune-ontwerp:
 

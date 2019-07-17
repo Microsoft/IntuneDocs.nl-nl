@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce08545931d3580ce5ae524b1023d2b734b88f7b
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373660"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884520"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>VPN per app instellen voor iOS-apparaten in Intune
 
@@ -150,16 +150,16 @@ Wanneer uw VPN per app is geconfigureerd en aan uw app is gekoppeld, controleert
 
 ### <a name="before-you-attempt-to-connect"></a>Voordat u verbinding probeert te maken
 
- - Zorg ervoor dat u alle hierboven genoemde beleidsregels implementeert naar dezelfde groep. Anders werkt de VPN per app-ervaring niet.
- - Als u de Pulse Secure VPN-app of een aangepaste VPN-client-app gebruikt, kunt u ervoor kiezen om tunneling op app-niveau of pakketniveau te gebruiken. Stel de waarde **ProviderType** in op **app-proxy** voor tunneling op app-niveau of **pakkettunnel** voor tunneling op pakketniveau. Lees de documentatie van uw VPN-provider om te controleren of u de juiste waarde gebruikt.
+- Zorg ervoor dat u alle hierboven genoemde beleidsregels implementeert naar dezelfde groep. Anders werkt de VPN per app-ervaring niet.
+- Als u de Pulse Secure VPN-app of een aangepaste VPN-client-app gebruikt, kunt u ervoor kiezen om tunneling op app-niveau of pakketniveau te gebruiken. Stel de waarde **ProviderType** in op **app-proxy** voor tunneling op app-niveau of **pakkettunnel** voor tunneling op pakketniveau. Lees de documentatie van uw VPN-provider om te controleren of u de juiste waarde gebruikt.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Verbinding maken via VPN per app
 
 Controleer de zero-touch-ervaring door verbinding te maken zonder dat u de VPN-verbinding hoeft te selecteren of uw referenties hoeft te typen. De zero-touch-ervaring betekent:
 
- - Het apparaat vraagt u niet of u de VPN-server wilt vertrouwen. Dat betekent dat de gebruiker het dialoogvenster **Dynamisch vertrouwen** niet ziet.
- - De gebruiker hoeft geen aanmeldingsgegevens te typen.
- - Het apparaat van de gebruiker wordt verbonden met het VPN wanneer de gebruiker een van de gekoppelde apps opent.
+- Het apparaat vraagt u niet of u de VPN-server wilt vertrouwen. Dat betekent dat de gebruiker het dialoogvenster **Dynamisch vertrouwen** niet ziet.
+- De gebruiker hoeft geen aanmeldingsgegevens te typen.
+- Het apparaat van de gebruiker wordt verbonden met het VPN wanneer de gebruiker een van de gekoppelde apps opent.
 
 <!-- ## Troubleshooting the per-app VPN
 

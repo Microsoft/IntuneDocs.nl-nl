@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 35c0c6e6b65350d3b27c9dc1d9ab55d375dac070
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549413"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882852"
 ---
 # <a name="phase-2-migration-campaign"></a>Fase 2: Migratiecampagne
 
@@ -43,19 +43,19 @@ Dit zijn de sleutels voor de migratie van een MDM-provider van derden naar Intun
 
 - Controleer de belasting voor de helpdesk en het aantal geslaagde registraties in elke cyclus. Laat tijd open in de planning zodat de slagingscriteria voor elke groep kunnen worden geëvalueerd voordat u de migratie voor de volgende groep uitvoert. Bij de implementatie in de testfase moet het volgende worden gecontroleerd:
 
-    - Het aantal geslaagde en mislukte inschrijvingen zijn naar verwachting.
+  - Het aantal geslaagde en mislukte inschrijvingen zijn naar verwachting.
 
-    - De gebruikersproductiviteit:
+  - De gebruikersproductiviteit:
 
-        - Bedrijfsresources zoals VPN, Wi-Fi-, e-mail en certificaten functioneren naar behoren.
+    - Bedrijfsresources zoals VPN, Wi-Fi-, e-mail en certificaten functioneren naar behoren.
 
-        - De gebruikers kunnen toegang krijgen tot de aangeboden apps.
+    - De gebruikers kunnen toegang krijgen tot de aangeboden apps.
 
-    - Gegevensbeveiliging:
+  - Gegevensbeveiliging:
 
-        - Er wordt nalevingsrapportage uitgevoerd.
+    - Er wordt nalevingsrapportage uitgevoerd.
 
-        - De beveiliging van mobiele apps wordt doorgevoerd.
+    - De beveiliging van mobiele apps wordt doorgevoerd.
 
 Wanneer u tevreden bent over de eerste fase van de migratie, herhaalt u de [migratiecyclus](migration-guide-cycle.md) voor de volgende fase.
 

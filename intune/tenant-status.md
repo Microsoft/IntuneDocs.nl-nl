@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3b6aeb7efc60d32891f4b1c69b387a61a2bc25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040518"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882227"
 ---
 # <a name="intune-tenant-status-page"></a>Tenantstatuspagina in Intune
 De pagina Tenantstatus is een gecentraliseerde hub met de huidige en belangrijke details over uw tenant. Dit zijn onder andere details over de beschikbaarheid en het gebruik van licenties, de status van de connector en belangrijke communicatie over de Intune-service.  
@@ -48,14 +48,14 @@ Als er meer dan één connector van een bepaald type is, is de status een overzi
 
 **Connectorstatus:**
 - **Niet in orde:**
-    - Het certificaat of de referentie is verlopen
-    - De laatste synchronisatie is drie of meer dagen geleden
+  - Het certificaat of de referentie is verlopen
+  - De laatste synchronisatie is drie of meer dagen geleden
 - **Waarschuwing:**
-    - Het certificaat of de referentie verloopt binnen zeven dagen
-    - De laatste synchronisatie is meer dan een dag geleden
+  - Het certificaat of de referentie verloopt binnen zeven dagen
+  - De laatste synchronisatie is meer dan een dag geleden
 - **In orde:**
-    - Het certificaat of de referentie verloopt niet binnen zeven dagen
-    - De laatste synchronisatie is minder dan een dag geleden  
+  - Het certificaat of de referentie verloopt niet binnen zeven dagen
+  - De laatste synchronisatie is minder dan een dag geleden  
 
 Als u een connector uit de lijst selecteert, wordt in de portal de pagina weergegeven die relevant is voor het maken of configureren van die connector.  Als u bijvoorbeeld de connector **VVP Expiry Date** selecteert, wordt de pagina **iOS Volume-Purchased Program Tokens** geopend. Hier kunt u meer informatie over de connector bekijken. U kunt vervolgens een nieuwe configuratie maken, een bewerking doorvoeren of problemen met een bestaande configuratie oplossen.  
 

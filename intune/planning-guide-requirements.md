@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb08757732aa5cad08ed0a4b535fb20c0aa1df0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 703509c316a22995d26223f6c386de0a2ec66c31
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528258"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882721"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Vereisten voor gebruiksscenario's bepalen
 
@@ -50,21 +50,21 @@ U kunt [een sjabloon van de bovenstaande tabel downloaden](https://gallery.techn
 Hier zijn nog enkele voorbeelden die kunnen worden gebruikt in de kolom Vereisten:
 
 - **Beveiligde e-mail**
-    - Voorwaardelijke toegang voor Exchange Online/On-Premises
-    - Beveiligingsbeleid voor de Outlook-app
+  - Voorwaardelijke toegang voor Exchange Online/On-Premises
+  - Beveiligingsbeleid voor de Outlook-app
 
 - **Apparaatinstellingen**
-    - Pincode-instelling met vier, zes tekens
-    - Cloudback-up beperken
+  - Pincode-instelling met vier, zes tekens
+  - Cloudback-up beperken
 
 - **Profielen**
-    - Wi-Fi
-    - VPN
-    - E-mail (Windows 10 Mobile)
+  - Wi-Fi
+  - VPN
+  - E-mail (Windows 10 Mobile)
 
 - **Apps**
-    - Office 365 met beleid voor app-beveiliging
-    - Line-of-business (LOB) met beleid voor app-beveiliging
+  - Office 365 met beleid voor app-beveiliging
+  - Line-of-business (LOB) met beleid voor app-beveiliging
 
 ## <a name="next-steps"></a>Volgende stappen
 

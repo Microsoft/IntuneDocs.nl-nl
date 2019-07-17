@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3c305cc579fedb9090faaf6c7270fcc546e36eb
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a0fbddf54939a494087a7da1220f51ec77b45e7b
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044340"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882472"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Zelfstudie: Walkthrough door Microsoft Intune in Azure Portal
 
@@ -38,8 +38,8 @@ Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor ee
 ## <a name="prerequisites"></a>Vereisten
 Bekijk de volgende vereisten voordat u Microsoft Intune instelt:
 
-   - [Ondersteunde besturingssystemen en browsers](supported-devices-browsers.md) 
-   - [Netwerkconfiguratievereisten en bandbreedte](network-bandwidth-use.md)
+- [Ondersteunde besturingssystemen en browsers](supported-devices-browsers.md) 
+- [Netwerkconfiguratievereisten en bandbreedte](network-bandwidth-use.md)
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registreren voor een gratis proefversie van Microsoft Intune
 

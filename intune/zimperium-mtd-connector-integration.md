@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e78c9034058a5f60f01056711465b28deca77d83
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3eb18c45f81e427f1d14ce77086e0d7684994e82
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572169"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884164"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium integreren met Intune
 
@@ -39,13 +39,13 @@ Zorg ervoor dat u de volgende abonnementen en referenties bij de hand hebt voord
 
 - Globale Azure Active Directory-beheerdersreferenties om de volgende machtigingen te verlenen:
 
-    - Aanmelden en gebruikersprofiel lezen
+  - Aanmelden en gebruikersprofiel lezen
 
-    - Toegang tot de map als de aangemelde gebruiker
+  - Toegang tot de map als de aangemelde gebruiker
 
-    - Mapgegevens lezen
+  - Mapgegevens lezen
 
-    - Gegevens van een apparaat verzenden naar Intune
+  - Gegevens van een apparaat verzenden naar Intune
 
 - Administrator-referenties voor toegang tot Zimperium MTD-console.
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c05543884e0d9a00b570fb9ed4be1cdef65ca0
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: 397ca3c03c96adc9bd6b0ca691f835e3e579fba0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66841125"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882250"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer gebruiken voor het extern beheren van Intune-apparaten
 
@@ -32,8 +32,8 @@ Apparaten die worden beheerd door Intune kunnen extern worden beheerd met [TeamV
 
 - De Intune-beheerder binnen de Azure Portal moet de volgende [Intune-rollen](role-based-access-control.md) hebben:  
 
-    - **Hulp op afstand bijwerken**: hiermee kunnen beheerders de instellingen van de TeamViewer-connector wijzigen
-    - **Hulp op afstand aanvragen**: hiermee kunnen beheerders een nieuwe sessie van hulp op afstand voor elke gebruiker starten. Gebruikers met deze rol zijn niet beperkt door een Intune-rol binnen een bereik. Gebruikers- of apparaatgroepen aan wie een Intune-rol is toegewezen binnen een scope, kunnen ook hulp op afstand aanvragen. 
+  - **Hulp op afstand bijwerken**: hiermee kunnen beheerders de instellingen van de TeamViewer-connector wijzigen
+  - **Hulp op afstand aanvragen**: hiermee kunnen beheerders een nieuwe sessie van hulp op afstand voor elke gebruiker starten. Gebruikers met deze rol zijn niet beperkt door een Intune-rol binnen een bereik. Gebruikers- of apparaatgroepen aan wie een Intune-rol is toegewezen binnen een scope, kunnen ook hulp op afstand aanvragen. 
 
 - Een [TeamViewer](https://www.teamviewer.com)-account met de aanmeldingsreferenties. Alleen bepaalde TeamViewer-licenties bieden mogelijk ondersteuning voor integratie met Intune. Zie voor specifieke TeamViewer-behoeften [TeamViewer-integratiepartner: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/).
 

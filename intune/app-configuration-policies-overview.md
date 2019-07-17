@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 1e5ddf39a201f1a70f997e03f0b65706853adefa
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649029"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885123"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-configuratiebeleid voor Microsoft Intune
 
@@ -44,8 +44,8 @@ Het configuratiebeleid voor apps kan ervoor zorgen dat problemen met de instelli
 De configuratie-instellingen worden gebruikt wanneer de app deze controleert. Normaal gesproken controleert een app de configuratie-instellingen de eerste keer dat de app wordt uitgevoerd door de gebruiker.
 
 U hebt twee opties voor het gebruik van app-configuraties met Intune:
- - **Beheerde apparaten**: het apparaat wordt beheerd door Intune als MDM-provider (Mobile Device Management).
- - **Beheerde apps**: een app wordt beheerd zonder apparaatinschrijving.
+- **Beheerde apparaten**: het apparaat wordt beheerd door Intune als MDM-provider (Mobile Device Management).
+- **Beheerde apps**: een app wordt beheerd zonder apparaatinschrijving.
 
 > [!NOTE]
 > Als Microsoft Intune-beheerder kunt u bepalen welke gebruikersaccounts worden toegevoegd aan Microsoft Office-toepassingen op beheerde apparaten. U kunt de toegang beperken tot uitsluitend toegestane gebruikersaccounts van de organisatie, en persoonlijke accounts blokkeren op ingeschreven apparaten. De app-configuratie wordt verwerkt op de ondersteunende toepassingen, en niet-goedgekeurde accounts worden verwijderd en geblokkeerd.
@@ -66,9 +66,9 @@ U kunt bovendien Graph API gebruiken om app-configuratietaken uit te voeren. Zie
 
 ### <a name="managed-devices"></a>Beheerde apparaten
 
- - Informatie over het gebruik van app-configuratie met uw iOS-apparaten.  Raadpleeg [App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen](app-configuration-policies-use-ios.md).
- - Informatie over het gebruik van app-configuratie met uw Android-apparaten.  Zie [ App-configuratiebeleidsregels voor beheerde Android-apparaten](app-configuration-policies-use-android.md).
+- Informatie over het gebruik van app-configuratie met uw iOS-apparaten.  Raadpleeg [App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen](app-configuration-policies-use-ios.md).
+- Informatie over het gebruik van app-configuratie met uw Android-apparaten.  Zie [ App-configuratiebeleidsregels voor beheerde Android-apparaten](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>Managed apps
 
- - Informatie over het gebruik van app-configuratie met beheerde apps. Zie [App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving](app-configuration-policies-managed-app.md).
+- Informatie over het gebruik van app-configuratie met beheerde apps. Zie [App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving](app-configuration-policies-managed-app.md).

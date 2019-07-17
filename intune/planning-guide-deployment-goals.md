@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 714a595263475da98a48c982e0ed24d691440097
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 8cc4a109aac22617f2785a74de701e4d1d7bdf09
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572268"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885023"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Doelen, doelstellingen en uitdagingen voor de implementatie bepalen
 
@@ -34,27 +34,27 @@ Implementatiedoelen zijn de langetermijndoelen die u beoogt met de implementatie
 
 - **Integreren met Office 365 en ondersteuning voor het gebruik van mobiele Office-apps**
 
-    - **Beschrijving:** krachtige integratie met Office 365 en het gebruik van mobiele Office-apps die beveiligd zijn.
+  - **Beschrijving:** krachtige integratie met Office 365 en het gebruik van mobiele Office-apps die beveiligd zijn.
 
-    - **Bedrijfswaarde:** beveilig en verbeter de gebruikerservaring door gebruikers te laten werken met apps de ze kennen en waar ze de voorkeur aan geven.
+  - **Bedrijfswaarde:** beveilig en verbeter de gebruikerservaring door gebruikers te laten werken met apps de ze kennen en waar ze de voorkeur aan geven.
 
 - **Toegang tot interne bedrijfsservices op mobiele apparaten inschakelen**
 
-    - **Beschrijving:** medewerkers productief laten zijn op elke locatie waar ze werkzaam zijn en met elk apparaat dat ze daarbij gebruiken. Dit project moet mobiele productiviteit en veilige toegang tot bedrijfsgegevens mogelijk maken.
+  - **Beschrijving:** medewerkers productief laten zijn op elke locatie waar ze werkzaam zijn en met elk apparaat dat ze daarbij gebruiken. Dit project moet mobiele productiviteit en veilige toegang tot bedrijfsgegevens mogelijk maken.
 
-    - **Bedrijfswaarde:** door medewerkers flexibiliteit te bieden en ze te laten werken op de gewenste locatie wordt de concurrentiepositie van het bedrijf versterkt en een effectievere werkomgeving gecreëerd.
+  - **Bedrijfswaarde:** door medewerkers flexibiliteit te bieden en ze te laten werken op de gewenste locatie wordt de concurrentiepositie van het bedrijf versterkt en een effectievere werkomgeving gecreëerd.
 
 - **Gegevensbeveiliging op mobiele apparaten**
 
-    - **Beschrijving:** wanneer gegevens op mobiele apparaten worden opgeslagen, moeten deze worden beveiligd tegen diefstal en onopzettelijk verloren gaan of delen.
+  - **Beschrijving:** wanneer gegevens op mobiele apparaten worden opgeslagen, moeten deze worden beveiligd tegen diefstal en onopzettelijk verloren gaan of delen.
 
-    - **Bedrijfswaarde:** gegevensbeveiliging is essentieel om ervoor te zorgen dat de organisatie concurrerend blijft en dat klanten en hun gegevens met de grootst mogelijke zorg worden behandeld.
+  - **Bedrijfswaarde:** gegevensbeveiliging is essentieel om ervoor te zorgen dat de organisatie concurrerend blijft en dat klanten en hun gegevens met de grootst mogelijke zorg worden behandeld.
 
 - **Kosten verlagen**
 
-    - **Beschrijving:** indien mogelijk moet het project zorgen voor lagere implementatie- en bedrijfskosten.
+  - **Beschrijving:** indien mogelijk moet het project zorgen voor lagere implementatie- en bedrijfskosten.
 
-    - **Bedrijfswaarde:** door een efficiënt gebruik van bronnen kan het bedrijf investeren in andere gebieden, concurrerender opereren en betere service aan klanten bieden.
+  - **Bedrijfswaarde:** door een efficiënt gebruik van bronnen kan het bedrijf investeren in andere gebieden, concurrerender opereren en betere service aan klanten bieden.
 
 ## <a name="deployment-objectives"></a>Doelstellingen van implementatie
 
@@ -62,19 +62,19 @@ Implementatiedoelstellingen zijn de acties die een organisatie kan ondernemen om
 
 - **Het aantal oplossingen voor apparaatbeheer verminderen**
 
-    - **Implementatie:** voeg samen tot één oplossing voor beheer van mobiele apparaten: Microsoft Intune voor de beveiliging van bedrijfsgegevens van apps en apparaten.
+  - **Implementatie:** voeg samen tot één oplossing voor beheer van mobiele apparaten: Microsoft Intune voor de beveiliging van bedrijfsgegevens van apps en apparaten.
 
 - **Veilige toegang tot Exchange en SharePoint Online bieden**
 
-    - **Implementatie:** pas voorwaardelijke toegang voor Exchange en SharePoint Online toe.
+  - **Implementatie:** pas voorwaardelijke toegang voor Exchange en SharePoint Online toe.
 
 - **Voorkom dat bedrijfsgegevens worden opgeslagen of worden doorgestuurd naar services op het mobiele apparaat die niet tot het bedrijf behoren**
 
-    - **Implementatie:** pas Intune-beleid voor app-beveiliging toe voor Microsoft Office en Line-Of-Business-apps.
+  - **Implementatie:** pas Intune-beleid voor app-beveiliging toe voor Microsoft Office en Line-Of-Business-apps.
 
 - **De mogelijkheid bieden om bedrijfsgegevens van het apparaat te wissen**
 
-    - **Implementatie:** schrijf apparaten in bij Intune. Dit biedt u de mogelijkheid om op afstand bedrijfsgegevens en -resources te wissen wanneer dit nodig is.
+  - **Implementatie:** schrijf apparaten in bij Intune. Dit biedt u de mogelijkheid om op afstand bedrijfsgegevens en -resources te wissen wanneer dit nodig is.
 
 ## <a name="deployment-challenges"></a>Implementatie-uitdagingen
 
@@ -82,15 +82,15 @@ Implementatie-uitdagingen hebben betrekking op kwesties die topprioriteit hebben
 
 - De gereedheid van de ondersteuning en ervaring van eindgebruikers worden niet opgenomen in een eerste projectbereik. Dit leidt tot een gebrekkige acceptatie van eindgebruikers en uitdagingen voor uw ondersteuningsorganisatie.
 
-    - **Risicobeperking:** neem ondersteuningstraining op in het project. Valideer de ervaring van eindgebruikers met maatstaven voor succes in uw implementatieplan.
+  - **Risicobeperking:** neem ondersteuningstraining op in het project. Valideer de ervaring van eindgebruikers met maatstaven voor succes in uw implementatieplan.
 
 - Een gebrek aan duidelijk gedefinieerde doelen en maatstaven voor succes leidt tot niet-tastbare resultaten. Het kan er ook toe leiden dat uw organisatie alleen maar uit reactie handelt wanneer er zich problemen voordoen.
 
-    - **Risicobeperking:** bepaal uw doelen en maatstaven voor succes al vroeg in de projectverkenning en gebruik deze gegevens om de andere implementatiefasen verder uit te werken. Zorg ervoor dat de doelen voldoen aan het SMART-principe (Specific, Measurable, Attainable, Realistic en Timely, oftewel specifiek, meetbaar, haalbaar, realistisch en tijdig). Bekijk in elke fase of de resultaten overeenkomen met de gestelde doelen zodat het implementatieproject op schema blijft.
+  - **Risicobeperking:** bepaal uw doelen en maatstaven voor succes al vroeg in de projectverkenning en gebruik deze gegevens om de andere implementatiefasen verder uit te werken. Zorg ervoor dat de doelen voldoen aan het SMART-principe (Specific, Measurable, Attainable, Realistic en Timely, oftewel specifiek, meetbaar, haalbaar, realistisch en tijdig). Bekijk in elke fase of de resultaten overeenkomen met de gestelde doelen zodat het implementatieproject op schema blijft.
 
 - U laat het maken, valideren en het uitgebreid delen van een duidelijk waardevoorstel voor uw organisatie achterwege. Dit leidt vaak tot een beperkte acceptatie en een laag rendement op investeringen.
 
-    - **Risicobeperking:** hoewel u misschien staat te springen om aan het project te beginnen, is het toch belangrijk om uw doelen en doelstellingen duidelijk te definiëren. Neem deze mee tijdens alle bewustwordings- en trainingsactiviteiten, zodat u zeker weet dat gebruikers begrijpen waarom uw organisatie voor Intune heeft gekozen.
+  - **Risicobeperking:** hoewel u misschien staat te springen om aan het project te beginnen, is het toch belangrijk om uw doelen en doelstellingen duidelijk te definiëren. Neem deze mee tijdens alle bewustwordings- en trainingsactiviteiten, zodat u zeker weet dat gebruikers begrijpen waarom uw organisatie voor Intune heeft gekozen.
 
 ## <a name="next-steps"></a>Volgende stappen
 

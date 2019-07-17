@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39b5581ae7dd2a93554c0371da3858f59d6e62b4
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735445"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884038"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
@@ -37,9 +37,9 @@ Als u Win32-app-beheer wilt gebruiken, moet u aan de volgende criteria voldoen:
 
 - Windows 10 versie 1607 of hoger (Enterprise, Pro en Education)
 - De Windows 10-client moet aan het volgende voldoen: 
-    - Apparaten moeten worden gekoppeld aan Azure AD en automatisch worden ingeschreven. De Intune-beheeruitbreiding biedt ondersteuning voor apparaten die via een groepsbeleid zijn ingeschreven, zijn toegevoegd aan Azure AD en aan een hybride domein zijn toegevoegd. 
-    > [!NOTE]
-    > Voor het scenario met inschrijving via het groepsbeleid: eindgebruikers gebruiken het lokale gebruikersaccount om hun Windows 10-apparaat met AAD samen te voegen. Gebruikers moeten zich op het apparaat aanmelden met hun AAD-gebruikersaccount en zich bij inschrijven bij Intune. Intune installeert de Intune-beheerextensie op het apparaat als een PowerShell-script of een Win32-app op de gebruiker of het apparaat is gericht.
+  - Apparaten moeten worden gekoppeld aan Azure AD en automatisch worden ingeschreven. De Intune-beheeruitbreiding biedt ondersteuning voor apparaten die via een groepsbeleid zijn ingeschreven, zijn toegevoegd aan Azure AD en aan een hybride domein zijn toegevoegd. 
+  > [!NOTE]
+  > Voor het scenario met inschrijving via het groepsbeleid: eindgebruikers gebruiken het lokale gebruikersaccount om hun Windows 10-apparaat met AAD samen te voegen. Gebruikers moeten zich op het apparaat aanmelden met hun AAD-gebruikersaccount en zich bij inschrijven bij Intune. Intune installeert de Intune-beheerextensie op het apparaat als een PowerShell-script of een Win32-app op de gebruiker of het apparaat is gericht.
 - De grootte van Windows-toepassingen is beperkt tot 8 GB per app.
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>De Win32-app-inhoud voor upload voorbereiden

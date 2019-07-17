@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1649c6256e4df61b538e2adee87512617b677bb4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: e6a003e4ab912452f278c838c600f75ddec0c1f5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547494"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885127"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Android-apparaten met een werkprofiel beheren met Intune
 
@@ -71,9 +71,9 @@ VPN-ondersteuning is vergelijkbaar met Android VPN-profielen. Dezelfde VPN-provi
 - **VPN voor het werkprofiel**: VPN-verbindingen zijn beperkt tot de apps die zijn geïmplementeerd voor het werkprofiel. Alleen apps die met Android Enterprise worden beheerd, kunnen de VPN-verbinding gebruiken. Persoonlijke apps op het apparaat kunnen geen beheerde VPN-verbinding gebruiken. Zie [VPN-instellingen voor Android Enterprise](vpn-settings-android.md#android-enterprise-vpn-settings) voor meer informatie.
 
 - **App-specifiek VPN**: app-specifiek VPN kan in Intune worden geconfigureerd als de VPN-provider het volgende ondersteunt:
-    - configuratie voor app-specifiek VPN
-    - de mogelijkheid om VPN per app te configureren via het app-configuratieprofiel voor Android Enterprise.
-    Zie [Een aangepast Microsoft Intune-profiel gebruiken voor het maken van een VPN-profiel per app voor Android-apparaten](android-pulse-secure-per-app-vpn.md) voor meer informatie.
+  - configuratie voor app-specifiek VPN
+  - de mogelijkheid om VPN per app te configureren via het app-configuratieprofiel voor Android Enterprise.
+  Zie [Een aangepast Microsoft Intune-profiel gebruiken voor het maken van een VPN-profiel per app voor Android-apparaten](android-pulse-secure-per-app-vpn.md) voor meer informatie.
 
 ## <a name="certificate-profiles"></a>Certificaatprofielen
 

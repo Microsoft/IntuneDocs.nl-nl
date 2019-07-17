@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8168cdaec4d6616b12fa4da225c84fa2d239994d
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 804c6485252883672de13bf13729b28a4d7d2f94
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648660"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883841"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementatie van Windows 10-apps met Microsoft Intune 
 
@@ -47,22 +47,22 @@ Microsoft Store voor Bedrijven-apps zijn moderne apps die zijn aangeschaft in de
 Afhankelijk van het type app kan de app op twee manieren worden geïnstalleerd op een Windows 10-apparaat:
 
 - **Gebruikerscontext**: Wanneer een app wordt geïmplementeerd in de gebruikerscontext, wordt de beheerde app geïnstalleerd op het apparaat van de gebruiker wanneer de gebruiker zich aanmeldt op het apparaat. De installatie van de app wordt pas uitgevoerd als de gebruiker zich op het apparaat aanmeldt. 
-    - Moderne Line-Of-Business-apps en Microsoft Store voor Bedrijven-apps (zowel online als offline) kunnen in de gebruikerscontext worden geïmplementeerd en bieden ondersteuning voor zowel de intentie Vereist als Beschikbaar.
-    - Win32-apps die zijn gemaakt voor **Gebruikersmodus** of **Dual-modus**, kunnen in de gebruikerscontext worden geïmplementeerd en bieden ondersteuning voor zowel de intentie **Vereist** als de intentie **Beschikbaar**. 
+  - Moderne Line-Of-Business-apps en Microsoft Store voor Bedrijven-apps (zowel online als offline) kunnen in de gebruikerscontext worden geïmplementeerd en bieden ondersteuning voor zowel de intentie Vereist als Beschikbaar.
+  - Win32-apps die zijn gemaakt voor **Gebruikersmodus** of **Dual-modus**, kunnen in de gebruikerscontext worden geïmplementeerd en bieden ondersteuning voor zowel de intentie **Vereist** als de intentie **Beschikbaar**. 
 - **Apparaatcontext**: Wanneer een app wordt geïmplementeerd in de apparaatcontext, wordt de beheerde app rechtstreeks op het apparaat geïnstalleerd door Intune.
-    - Alleen moderne Line-Of-Business-apps en offline gelicentieerde Microsoft Store voor zakelijke apps kunnen in de apparaatcontext worden geïmplementeerd en ondersteunen alleen de intentie Vereist.
-    - Win32-apps die zijn gemaakt voor **Machinemodus** of **Dual-modus**, kunnen in de gebruikerscontext worden geïmplementeerd en bieden alleen ondersteuning voor de intentie **Vereist**.
+  - Alleen moderne Line-Of-Business-apps en offline gelicentieerde Microsoft Store voor zakelijke apps kunnen in de apparaatcontext worden geïmplementeerd en ondersteunen alleen de intentie Vereist.
+  - Win32-apps die zijn gemaakt voor **Machinemodus** of **Dual-modus**, kunnen in de gebruikerscontext worden geïmplementeerd en bieden alleen ondersteuning voor de intentie **Vereist**.
 
 > [!NOTE]
 > Voor Win32-apps die zijn gemaakt voor **Dual-modus**, moet u (de beheerder) aangeven of de app werkt in **Gebruikersmodus** of in **Machinemodus** voor alle toewijzingen die aan dat exemplaar zijn gekoppeld. De implementatiecontext kan niet per toewijzing worden gewijzigd.  
 
 Wanneer een app wordt geïmplementeerd in de apparaatcontext, slaagt de installatie alleen wanneer deze bestemd is voor een apparaat dat de apparaatcontext ondersteunt. Bovendien ondersteunt implementatie in de apparaatcontext de volgende voorwaarden:
 - Als een app is geïmplementeerd in de apparaatcontext en bestemd is voor een gebruiker, mislukt de installatie met de volgende status en wordt de volgende fout weergegeven in de beheerconsole:
-    - Status: Mislukt.
-    - Fout: Een gebruiker kan niet het doel zijn van de installatie van apparaatcontext.
+  - Status: Mislukt.
+  - Fout: Een gebruiker kan niet het doel zijn van de installatie van apparaatcontext.
 - Als een app is geïmplementeerd in de apparaatcontext en bestemd is voor een apparaat dat de apparaatcontext niet ondersteunt, mislukt de installatie met de volgende status en wordt de volgende fout weergegeven in de beheerconsole:
-    - Status: Mislukt.
-    - Fout: Dit platform biedt geen ondersteuning voor het installeren van apparaatcontext. 
+  - Status: Mislukt.
+  - Fout: Dit platform biedt geen ondersteuning voor het installeren van apparaatcontext. 
 
 > [!Note]
 > Wanneer een app-toewijzing is opgeslagen met een specifieke implementatie, kan de context niet worden gewijzigd voor deze toewijzing, met uitzondering van moderne apps. Bij moderne apps kan de context namelijk worden gewijzigd van gebruikerscontext naar apparaatcontext. 

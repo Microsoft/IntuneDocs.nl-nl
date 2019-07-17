@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88ca608027e6509eb56fad74a8edae405fa915fa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549431"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882885"
 ---
 # <a name="microsoft-intune-service-description"></a>Beschrijving van de Microsoft Intune-service
 
@@ -60,24 +60,24 @@ Omdat het MDM-ecosysteem regelmatig wordt gewijzigd met bijgewerkte versies van 
 
 - Belangrijke updates van de service worden ook aangekondigd in het berichtencentrum van de [Microsoft 365-beheerportal](https://admin.microsoft.com/). Als u de bijbehorende [mobiele Office 365-beheer-app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) installeert, kunt u meldingen ontvangen op uw mobiele apparaat. Lees hier meer over het werken met het [berichtencentrum voor Office 365](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
 
-    Een paar nuttige tips:
+  Een paar nuttige tips:
 
-    - De berichten in het Office 365-beheercentrum worden gericht gestuurd. Dit betekent dat als uw bedrijf niet beschikt over een Intune voor EDU-aanbieding, u geen berichten ontvangt over Intune voor EDU.
+  - De berichten in het Office 365-beheercentrum worden gericht gestuurd. Dit betekent dat als uw bedrijf niet beschikt over een Intune voor EDU-aanbieding, u geen berichten ontvangt over Intune voor EDU.
 
-    - Berichten verlopen. Zo is bijvoorbeeld de melding dat de service is bijgewerkt met een koppeling naar de Wat is er nieuw-pagina waarschijnlijk verlopen voordat u de volgende melding over service-updates ontvangt. Anders zou u wellicht een grote aantal berichten hebben die mogelijk niet meer relevant zijn.
+  - Berichten verlopen. Zo is bijvoorbeeld de melding dat de service is bijgewerkt met een koppeling naar de Wat is er nieuw-pagina waarschijnlijk verlopen voordat u de volgende melding over service-updates ontvangt. Anders zou u wellicht een grote aantal berichten hebben die mogelijk niet meer relevant zijn.
 
-    - Met de mobiele app voor Office 365-beheer kunt u alle berichten doorzoeken en de melding doorsturen als u deze wilt delen met collega's in uw organisatie.
+  - Met de mobiele app voor Office 365-beheer kunt u alle berichten doorzoeken en de melding doorsturen als u deze wilt delen met collega's in uw organisatie.
 
-    - Onder Edit message center preferences (Voorkeuren voor het berichtencentrum bewerken) komt een wisselknop voor **Intune** zodat u die berichten kunt bekijken die naar een Intune-abonnement zijn gestuurd. Als u Mobile Device Management voor Office 365 ziet: dat is niet Intune maar een andere service.
+  - Onder Edit message center preferences (Voorkeuren voor het berichtencentrum bewerken) komt een wisselknop voor **Intune** zodat u die berichten kunt bekijken die naar een Intune-abonnement zijn gestuurd. Als u Mobile Device Management voor Office 365 ziet: dat is niet Intune maar een andere service.
 
 - We gebruiken ook twee blogs gebruikt voor het delen van de EMS-berichten en de best practices voor Intune-ondersteuning:
 
-    - [De blog Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/)
+  - [De blog Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/)
 
-    - [De blog Intune Support](https://blogs.technet.microsoft.com/intunesupport/)
+  - [De blog Intune Support](https://blogs.technet.microsoft.com/intunesupport/)
 
->[!Note]
->U kunt de servicestatus van Intune bewaken in de [Microsoft 365-beheerportal](https://admin.microsoft.com). Kies **Servicestatus** in het linkerdeelvenster. U kunt ook de [mobiele app voor Office 365-beheer](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) gebruiken om de servicestatus weer te geven.
+> [!Note]
+> U kunt de servicestatus van Intune bewaken in de [Microsoft 365-beheerportal](https://admin.microsoft.com). Kies **Servicestatus** in het linkerdeelvenster. U kunt ook de [mobiele app voor Office 365-beheer](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) gebruiken om de servicestatus weer te geven.
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Typen meldingen die Microsoft over de Intune-service biedt
 

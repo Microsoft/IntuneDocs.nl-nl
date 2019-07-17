@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546887"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883797"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Beleid voor voorwaardelijke toegang vanuit de klassieke Intune-portal overbrengen naar Azure Portal
 
@@ -38,14 +38,14 @@ Als u klaar bent om over te stappen op Azure Portal, volgt u de stappen in dit o
 
 - Schakel de beleidsregels voor voorwaardelijke toegang uit in de klassieke Intune-portal, nadat u hebt gecontroleerd of de nieuwe beleidsregels naar behoren werken in Azure Portal.
 <br /><br />
-    - Voordat u de beleidsregels voor voorwaardelijke toegang **uitschakelt in de klassieke Intune-portal**, moet u een plan opstellen voor het overbrengen van gebruikers naar het nieuwe beleid. Er zijn twee manieren:
+  - Voordat u de beleidsregels voor voorwaardelijke toegang **uitschakelt in de klassieke Intune-portal**, moet u een plan opstellen voor het overbrengen van gebruikers naar het nieuwe beleid. Er zijn twee manieren:
 <br /><br />
-        - **Gebruik dezelfde insluitingsgroep om beleid toe te passen dat is gemaakt in Azure Portal, en maak een nieuwe uitsluitingsgroep voor gebruik met de beleidsregels die worden toegepast door de klassieke Intune-portal**.
-            - Verplaats steeds kleine aantallen gebruikers naar de uitsluitingsgroep die is opgegeven in de klassieke portal. Hiermee voorkomt u dat de beleidsregels van de klassieke Intune-portal op deze gebruikers worden toegepast. Het beleid dat is gemaakt en gericht op dezelfde gebruikersgroep in Azure Portal, wordt toegepast in aanvulling op het beleid van de klassieke Intune-portal. 
+    - **Gebruik dezelfde insluitingsgroep om beleid toe te passen dat is gemaakt in Azure Portal, en maak een nieuwe uitsluitingsgroep voor gebruik met de beleidsregels die worden toegepast door de klassieke Intune-portal**.
+      - Verplaats steeds kleine aantallen gebruikers naar de uitsluitingsgroep die is opgegeven in de klassieke portal. Hiermee voorkomt u dat de beleidsregels van de klassieke Intune-portal op deze gebruikers worden toegepast. Het beleid dat is gemaakt en gericht op dezelfde gebruikersgroep in Azure Portal, wordt toegepast in aanvulling op het beleid van de klassieke Intune-portal. 
 <br /><br />
-        - **Maak een nieuwe groep voor het beleid voor voorwaardelijke toegang van Azure Portal**. Als u deze aanpak kiest, moet u het volgende doen:
-            - Verwijder gebruikers geleidelijk uit de beveiligingsgroepen waarop beleid voor voorwaardelijke toegang uit de klassieke Intune-portal is toegepast.
-            - Nadat u hebt vastgesteld dat het nieuwe beleid werkt voor deze gebruikers, kunt u het beleid uitschakelen in de klassieke Intune-portal. 
+    - **Maak een nieuwe groep voor het beleid voor voorwaardelijke toegang van Azure Portal**. Als u deze aanpak kiest, moet u het volgende doen:
+      - Verwijder gebruikers geleidelijk uit de beveiligingsgroepen waarop beleid voor voorwaardelijke toegang uit de klassieke Intune-portal is toegepast.
+      - Nadat u hebt vastgesteld dat het nieuwe beleid werkt voor deze gebruikers, kunt u het beleid uitschakelen in de klassieke Intune-portal. 
 <br /><br />
 - Als het beleid voor voorwaardelijke toegang in de klassieke Intune-portal is geconfigureerd voor gebruik van Exchange Active Sync (EAS), volgt u de [instructies in dit onderwerp](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) om **de EAS-beleidsinstellingen voor voorwaardelijke toegang toe te wijzen in Azure Portal**.
 
@@ -64,10 +64,10 @@ Als u klaar bent om over te stappen op Azure Portal, volgt u de stappen in dit o
 Via de blade **Intune-app-beveiliging** in Azure Portal kunnen beheerders app-gebaseerde regels voor voorwaardelijke toegang instellen, zodat alleen apps die ondersteuning bieden voor Intune-app-beveiligingsbeleid toegang hebben tot bedrijfsresources. U kunt deze app-gebaseerde beleidsregels voor voorwaardelijke toegang laten overlappen met apparaat-gebaseerd beleid voor voorwaardelijke toegang. U kunt de apparaat- en app-beleidsregels voor voorwaardelijke toegang combineren (logische AND) of een keuze instellen (logische OR). Het werkt als volgt:
 
 - Vereis dat het apparaat compatibel is **EN** dat een goedgekeurde app wordt gebruikt.
-    - U moet het beleid voor voorwaardelijke toegang instellen met de blade [Voorwaardelijke toegang van Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) en de blade [Intune-app-beveiliging](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
+  - U moet het beleid voor voorwaardelijke toegang instellen met de blade [Voorwaardelijke toegang van Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) en de blade [Intune-app-beveiliging](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
 <br /><br />
 - Vereis dat het apparaat compatibel is **OF** dat een goedgekeurde app wordt gebruikt.
-    - U moet het beleid voor voorwaardelijke toegang instellen met de [klassieke Intune-portal](https://manage.microsoft.com) en de blade [Intune-app-beveiliging](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
+  - U moet het beleid voor voorwaardelijke toegang instellen met de [klassieke Intune-portal](https://manage.microsoft.com) en de blade [Intune-app-beveiliging](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
 
 > [!TIP] 
 > Dit onderwerp bevat schermafbeeldingen die de gebruikerservaring laten zien in zowel de klassieke Intune-portal als Azure Portal.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: cbe533e6a219adf1984c656506ceb7a3b95556ec
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4a0df4f32513eb37bd7396d8e6249f9c6e71a4e4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548676"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884183"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Intune-inschrijvingsmethoden voor Windows-apparaten
 
@@ -36,8 +36,8 @@ U kunt apparaten op twee manieren in Intune inschrijven:
 Gebruikers kunnen hun eigen Windows-apparaat zelf inschrijven via een van deze methoden:
 
 - [BYOD (Bring Your Own Device)](https://docs.microsoft.com/intune-user-help/enroll-windows-10-device): Gebruikers schrijven hun persoonlijke apparaten in door bij de **instellingen** van het apparaat verbinding te maken met een **werk- en schoolaccount**. Dit gebeurt er tijdens dit proces:
-    - Het apparaat wordt bij Azure Active Directory ingeschreven voor toegang tot zakelijke resources, zoals e-mail.
-    - Het apparaat wordt als persoonlijk apparaat (BYOD) in Intune ingeschreven.
+  - Het apparaat wordt bij Azure Active Directory ingeschreven voor toegang tot zakelijke resources, zoals e-mail.
+  - Het apparaat wordt als persoonlijk apparaat (BYOD) in Intune ingeschreven.
 Als een beheerder Automatische inschrijving heeft geconfigureerd (beschikbaar voor Azure AD Premium-abonnementen), hoeft de gebruiker zijn of haar referenties maar eenmaal in te voeren. Anders moeten ze zich afzonderlijk inschrijven via Alleen MDM-inschrijving en hun referenties opnieuw invoeren.  
 - **Alleen MDM-inschrijving**: hiermee kunnen gebruikers een bestaande werkgroep, Active Directory of een aan de Azure Active Directory toegevoegde pc in Intune inschrijven. Gebruikers voeren de inschrijving uit via Instellingen op hun bestaande Windows-pc. Deze methode wordt echter niet aanbevolen, aangezien het apparaat hiermee niet bij Azure Active Directory wordt ingeschreven. Ook kunnen bepaalde functies zoals Voorwaardelijke toegang niet worden gebruikt.
 - [Azure Active Directory (Azure AD) Join](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network): hiermee voegt u het apparaat toe aan Azure Active Directory en kunnen gebruikers zich bij Windows aanmelden met hun Azure AD-referenties. Als Automatische inschrijving is ingeschakeld, wordt het apparaat automatisch in Intune ingeschreven. Het voordeel van automatische inschrijving is dat de gebruiker maar één stap hoeft uit te voeren. Anders moeten ze zich afzonderlijk inschrijven via Alleen MDM-inschrijving en hun referenties opnieuw invoeren. Gebruikers kunnen zich ofwel tijdens de initiële Windows OOBE of bij Instellingen op deze manier inschrijven. Het apparaat wordt als een zakelijk apparaat in Intune gemarkeerd.

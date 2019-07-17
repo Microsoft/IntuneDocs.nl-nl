@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a7907889a1419ad6ff37b3975fa65adb02389ab6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528678"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884498"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Zelfstudie: Exchange Online-e-mail beschermen op onbeheerde apparaten
 
@@ -32,10 +32,10 @@ Meer informatie over het gebruik van app-beveiligingsbeleid met voorwaardelijke 
 > * Maak Azure AD-beleid (Active Directory) voor voorwaardelijke toegang, zodat alleen de Outlook-app toegang heeft tot zakelijke e-mail in Exchange Online. U gaat ook meervoudige verificatie (multi-factor authentication, MFA) vereisen voor clients met moderne verificatie, zoals Outlook voor iOS en Android.
 
 ## <a name="prerequisites"></a>Vereisten
-  - Voor deze zelfstudie hebt u een testtenant nodig met de volgende abonnementen:
-    - Azure Active Directory Premium ([ gratis proefversie](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Intune-abonnement ([gratis proefversie](free-trial-sign-up.md))
-    - Office 365 Business-abonnement inclusief Exchange ([ gratis proefversie](https://go.microsoft.com/fwlink/p/?LinkID=510938))
+- Voor deze zelfstudie hebt u een testtenant nodig met de volgende abonnementen:
+  - Azure Active Directory Premium ([ gratis proefversie](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Intune-abonnement ([gratis proefversie](free-trial-sign-up.md))
+  - Office 365 Business-abonnement inclusief Exchange ([ gratis proefversie](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
 ## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
 

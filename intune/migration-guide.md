@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b34143e17245de61026a536cc0b8c5e8a7f80107
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 97a0d9074b8617dec2fb28ed59168e08ada57fba
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549407"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882773"
 ---
 # <a name="intune-migration-guide"></a>Migratiehandleiding voor Intune
 
@@ -37,25 +37,25 @@ In deze handleiding wordt de migratie in twee fasen onderverdeeld die taken, str
 
 - [Fase 1: Intune voorbereiden op Mobile Device Management](migration-guide-prepare.md)
 
-    - [De vereisten voor de MDM-migratie beoordelen](migration-guide-prepare.md#assess-mdm-requirements)
+  - [De vereisten voor de MDM-migratie beoordelen](migration-guide-prepare.md#assess-mdm-requirements)
 
-    - [Basisconfiguratie](migration-guide-setup.md)
+  - [Basisconfiguratie](migration-guide-setup.md)
 
-    - [Beheerbeleid voor apparaten en apps configureren](migration-guide-configure-policies.md)
+  - [Beheerbeleid voor apparaten en apps configureren](migration-guide-configure-policies.md)
 
-    - [Beveiligingsbeleid voor apps configureren](migration-guide-app-protection-policies.md)
+  - [Beveiligingsbeleid voor apps configureren](migration-guide-app-protection-policies.md)
 
-    - [Speciale overwegingen bij migratie](migration-guide-considerations.md)
+  - [Speciale overwegingen bij migratie](migration-guide-considerations.md)
 
 - [Fase 2: migratiecampagne](migration-guide-campaign.md)
 
-    - [Communicatieplanning](migration-guide-communication-plan.md)
+  - [Communicatieplanning](migration-guide-communication-plan.md)
 
-    - [Eindgebruikers accepteren door middel van voorwaardelijke toegang](migration-guide-drive-adoption.md)
+  - [Eindgebruikers accepteren door middel van voorwaardelijke toegang](migration-guide-drive-adoption.md)
 
-    - [Normale migratiecyclus](migration-guide-cycle.md)
-        - [Migratiebewaking](migration-guide-cycle.md#monitoring-migration)
-        - [Na de migratie](migration-guide-cycle.md#post-migration)
+  - [Normale migratiecyclus](migration-guide-cycle.md)
+    - [Migratiebewaking](migration-guide-cycle.md#monitoring-migration)
+    - [Na de migratie](migration-guide-cycle.md#post-migration)
 
 ## <a name="assumptions"></a>Aannames
 

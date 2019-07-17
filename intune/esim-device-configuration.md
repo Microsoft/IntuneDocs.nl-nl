@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a0372180cf516f5a0111cd8fdb7cbd9535f075
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402723"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883260"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Mobiele eSIM-profielen configureren in Intune - Openbare preview
 
@@ -160,12 +160,12 @@ U kunt een gedetailleerde lijst met de apparaten uit Apparaatstatus controleren 
 1. Selecteer **Apparaatconfiguratie** > **Mobiele eSIM-profielen** > selecteer een bestaand abonnement.
 2. Selecteer **Apparaatstatus**. Intune bevat aanvullende informatie over het apparaat:
 
-  - **Apparaatnaam**: De naam van het doelapparaat
-  - **Gebruiker**: De gebruiker van het geregistreerde apparaat
-  - **ICCID**: De unieke code die door de provider wordt geleverd. Deze maakt deel uit van de activeringscode die op het apparaat wordt geïnstalleerd
-  - **Activeringsstatus**: De Intune-leverings- en installatiestatus van de activeringscode op het apparaat
-  - **Mobiele status**: De status die is opgegeven door de mobiele provider. Neem contact op met de provider om mogelijke problemen op te lossen.
-  - **Laatste check-in**: De datum waarop het apparaat het laatst met Intune heeft gecommuniceerd
+    - **Apparaatnaam**: De naam van het doelapparaat
+    - **Gebruiker**: De gebruiker van het geregistreerde apparaat
+    - **ICCID**: De unieke code die door de provider wordt geleverd. Deze maakt deel uit van de activeringscode die op het apparaat wordt geïnstalleerd
+    - **Activeringsstatus**: De Intune-leverings- en installatiestatus van de activeringscode op het apparaat
+    - **Mobiele status**: De status die is opgegeven door de mobiele provider. Neem contact op met de provider om mogelijke problemen op te lossen.
+    - **Laatste check-in**: De datum waarop het apparaat het laatst met Intune heeft gecommuniceerd
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>De eSIM-profielgegevens op het apparaat zelf controleren
 

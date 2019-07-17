@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49a6e8e625a08c9ad039d3106ff5d5c7001c2cab
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: ae9bd6d6f56ec85a993ffcb2f3c1af9897a2a87f
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547109"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883659"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Check Point SandBlast Mobile integreren met Intune
 
@@ -37,13 +37,13 @@ Zorg ervoor dat u het volgende hebt voordat u begint met de integratie van Check
 
 - Azure Active Directory-beheerdersreferenties om de volgende machtigingen te verlenen:
 
-    - Aanmelden en gebruikersprofiel lezen
+  - Aanmelden en gebruikersprofiel lezen
 
-    - Toegang tot de map als de aangemelde gebruiker
+  - Toegang tot de map als de aangemelde gebruiker
 
-    - Mapgegevens lezen
+  - Mapgegevens lezen
 
-    - Gegevens van een apparaat verzenden naar Intune
+  - Gegevens van een apparaat verzenden naar Intune
 
 - Administrator-referenties voor toegang tot de Check Point SandBlast Mobile MTD-console.
 
