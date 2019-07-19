@@ -12,7 +12,7 @@
 ### [Redenen om uw Android-apparaat in te schrijven](why-enroll-android-device.md)
 ### Uw apparaat inschrijven
 #### [Uw Android-apparaat inschrijven](enroll-device-android-company-portal.md)  
-#### [Inschrijven met Android-werkprofiel](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Inschrijven met Android-werkprofiel](enroll-device-android-work-profile.md)
 #### [Inschrijven met Microsoft Intune-app](enroll-device-android-microsoft-intune-app.md)
 ### [Beheerde apps op een apparaat gebruiken](use-managed-apps-on-your-device-android.md)
 ### [Een apparaat versleutelen](encrypt-your-device-android.md)
