@@ -1,5 +1,5 @@
 ---
-title: Internettoegang beheren met behulp van Microsoft Edge met Microsoft Intune
+title: Microsoft Edge voor iOS en Android beheren met Intune
 titleSuffix: ''
 description: Hanteer het Intune-beveiligingsbeleid voor apps met Microsoft Edge zodat bedrijfswebsites altijd onder veilige omstandigheden toegankelijk zijn.
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 147547577615c6e74a9c5b3dd8b200ba387bad79
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
+ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648471"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68287223"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Internettoegang beheren met behulp van Microsoft Edge met Microsoft Intune
 
@@ -157,7 +157,7 @@ Hier volgen enkele voorbeelden van de scenario's waarin de Azure AD-toepassingsp
 ### <a name="before-you-start"></a>Voordat u begint
 
 - Stel de interne toepassingen in via de Azure AD-toepassingsproxy.
-    - Raadpleeg [deze documentatie](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) voor het configureren van de toepassingsproxy en het publiceren van toepassingen.
+  - Raadpleeg [deze documentatie](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) voor het configureren van de toepassingsproxy en het publiceren van toepassingen.
 - Aan de Microsoft Edge-app moet een [Intune-beveiligingsbeleid](app-protection-policy.md) zijn toegewezen.
 
 > [!NOTE]
@@ -228,34 +228,34 @@ U kunt verschillende URL-indelingen gebruiken om uw lijsten met toegestane/geblo
 - U kunt het jokerteken (\*) gebruiken volgens de regels in de volgende lijst met toegestane patronen.
 - Een jokerteken kan alleen overeenkomen met een volledig onderdeel van de hostnaam (gescheiden door punten) of met volledige delen van het pad (gescheiden door slashes). `http://*contoso.com` wordt bijvoorbeeld **niet** ondersteund.
 - U kunt poortnummers in het adres opgeven. Als u geen poortnummer opgeeft, worden deze waarden gebruikt:
-    - Poort 80 voor http
-    - Poort 443 voor https
+  - Poort 80 voor http
+  - Poort 443 voor https
 - Het gebruik van jokertekens voor het poortnummer wordt **niet** ondersteund. `http://www.contoso.com:*` en `http://www.contoso.com:*/` bijvoorbeeld worden niet ondersteund. 
 
     |    URL    |    Details    |    Komt overeen met    |    Komt niet overeen met    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
     |    `http://www.contoso.com`    |    Komt overeen met één pagina    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Komt overeen met één pagina    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
-    |    `http://www.contoso.com/&#42;`   |    Komt overeen met alle URL's die beginnen met `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    Komt overeen met alle subdomeinen onder `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |
-    |    `http://www.contoso.com/images`    |    Komt overeen met een afzonderlijke map    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
+    |    `http://www.contoso.com/*;`   |    Komt overeen met alle URL's die beginnen met `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
+    |    `http://*.contoso.com/*`    |    Komt overeen met alle subdomeinen onder `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    Komt overeen met alle subdomeinen die eindigen op `contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    `http://www.contoso.com/images`    |    Komt overeen met een afzonderlijke map    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Komt overeen met één pagina, met gebruik van een poortnummer    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Komt overeen met een enkele, beveiligde pagina    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
     |    `http://www.contoso.com/images/*`    |    Komt overeen met een enkele map en alle submappen    |    `www.contoso.com/images/dogs`<br>`www.contoso.com/images/cats`    |    `www.contoso.com/videos`    |
   
 - Hier volgen enkele voorbeelden van een aantal invoerwaarden die u niet kunt opgeven:
-    - `*.com`
-    - `*.contoso/*`
-    - `www.contoso.com/*images`
-    - `www.contoso.com/*images*pigs`
-    - `www.contoso.com/page*`
-    - IP-adressen
-    - `https://*`
-    - `http://*`
-    - `https://*contoso.com`
-    - `http://www.contoso.com:*`
-    - `http://www.contoso.com: /*`
-  
+  - `*.com`
+  - `*.contoso/*`
+  - `www.contoso.com/*images`
+  - `www.contoso.com/*images*pigs`
+  - `www.contoso.com/page*`
+  - IP-adressen
+  - `https://*`
+  - `http://*`
+  - `https://*contoso.com`
+  - `http://www.contoso.com:*`
+  - `http://www.contoso.com: /*`
+
 ## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>Gedrag definiëren wanneer gebruikers toegang proberen te krijgen tot een geblokkeerde site
 
 Met het model voor dubbele identiteit dat is ingebouwd in Microsoft Edge, kunt u eindgebruikers meer flexibiliteit bieden dan mogelijk was met de Intune Managed Browser. Wanneer gebruikers een geblokkeerde site in Microsoft Edge tegenkomen, kunt u hen vragen de koppeling te openen in hun persoonlijke context in plaats van in hun zakelijke context. Op deze manier blijven de gebruikers beschermd en blijven de zakelijke resources veilig. Als een gebruiker bijvoorbeeld via Outlook een koppeling naar een nieuwsbericht krijgt toegestuurd, kan hij deze koppeling openen in zijn persoonlijke context of op een InPrivate-tabblad. In zijn werkcontext zijn nieuwswebsites niet toegestaan. Deze overgangen zijn standaard toegestaan.

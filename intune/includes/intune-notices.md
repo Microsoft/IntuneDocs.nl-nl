@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744319"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67812445"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune. 
 
@@ -65,10 +65,26 @@ Met de integratie van de Intune App SDK of App Wrapping kunt u bedrijfsgegevens 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
 Controleer uw Microsoft-apps, apps van derden en LOB-apps (Line-Of-Business). U moet ervoor zorgen dat al uw toepassingen die met Intune APP worden beveiligd, gebruikmaken van SDK-versie 8.1.1 of hoger.
 
-- Voor LOB-apps: U moet uw apps die zijn geïntegreerd met SDK-versie 8.1.1 of hoger mogelijk opnieuw publiceren. U wordt aangeraden de meest recente SDK-versie te gebruiken. Bekijk [Line-Of-Business-apps voorbereiden voor app-beveiligingsbeleid](../apps-prepare-mobile-application-management.md) om te zien hoe u uw LOB-apps voorbereidt voor app-beveiligingsbeleid.
+- Voor LOB-apps: U moet uw apps die zijn geïntegreerd met SDK-versie 8.1.1 of hoger mogelijk opnieuw publiceren. U wordt aangeraden de meest recente SDK-versie te gebruiken. Raadpleeg [Line-Of-Business-apps voorbereiden voor app-beveiligingsbeleid](../apps-prepare-mobile-application-management.md) om te zien hoe u uw LOB-apps voorbereidt voor app-beveiligingsbeleid.
 - Voor Microsoft-apps/apps van derden: Zorg ervoor dat u de meest recente versie van deze apps naar uw gebruikers implementeert.
 
 U moet zo nodig ook uw documentatie of de richtlijnen voor ontwikkelaars bijwerken, zodat deze wijziging in de ondersteuning voor de SDK is opgenomen.
 
 #### <a name="additional-information"></a>Aanvullende informatie
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+
+### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Geplande wijziging: Nieuwe instellingen voor Windows-updates in Intune <!-- 4464404 -->
+Vanaf de versie van augustus van de Intune-service of 1908 voegen we nieuwe 'Deadline-instellingen' toe die u kunt configureren in plaats van de instellingen 'Gebruikers toestaan opnieuw te starten (gepland opnieuw opstarten)'. We zijn van plan de instellingen voor gepland opnieuw opstarten in de gebruikersinterface uit te schakelen in 1909 of de update van september en om deze aan het eind van oktober volledig uit de console te verwijderen. 
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Als u Windows 10-apparaten in uw omgeving beheert: 
+- Met de Intune-update van augustus of update 1908 ziet u nieuwe deadline-instellingen in de console, naast de oude instellingen voor gepland opnieuw opstarten.
+- Wanneer zowel deze oude als nieuwe instellingen zijn geconfigureerd, overschrijven de deadline-instellingen de instellingswaarden voor gepland opnieuw opstarten.
+- De deadline-instellingen vervangen de optie 'Gebruikers toestaan opnieuw te starten (gepland opnieuw opstarten)' in update 1910.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
+Begin de deadline-instellingen in update 1908 te gebruiken door deze te configureren met de gewenste waarden. Als u dat hebt gedaan, kunt u de instelling voor gepland opnieuw opstarten instellen op 'Niet geconfigureerd' om u voor te bereiden op de verwijdering van deze instelling in oktober.
+
+Werk indien nodig uw documentatie en eventuele automatiseringsscripts bij. 
+
+We houden u op de hoogte en plaatsen een herinnering in het berichtencentrum voordat we de instellingen voor gepland opnieuw opstarten verwijderen.
