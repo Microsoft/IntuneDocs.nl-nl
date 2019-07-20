@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb4ac87bef7c822111e95c18f149fa8d0598c36e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 12e3b111572758ca8d77406287134df8cdf7e027
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546622"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883969"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>Uw apparaat uit beheer verwijderen als u de gebruiksvoorwaarden hebt afgewezen
 
@@ -49,8 +49,8 @@ U kunt uw apparaat als volgt uit Intune verwijderen en de bedrijfsportal-app ver
 
 U kunt als volgt alle gegevens verwijderen die de bedrijfsportal-app voor Android op uw apparaat opslaat:
 
-  - Wis appgegevens in Toepassingen -> Klik op app- -> knop Gegevens wissen
-  - Verwijder de map \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal
+- Wis appgegevens in Toepassingen -> Klik op app- -> knop Gegevens wissen
+- Verwijder de map \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal
 
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van het bedrijf (zie de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) voor contactgegevens) of stuur een e-mail naar het <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-team</a>.

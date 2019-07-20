@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 21f4f55c028c6ff06730e50d9f9862e85d0a9ef1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547893"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884750"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Gegevensmodel van Microsoft Intune-datawarehouse
 
@@ -32,22 +32,22 @@ In het Intune-datawarehouse worden dagelijks gegevens verzameld om een historisc
 
 De gegevens in het datawarehouse worden in de volgende algemene gebieden ingedeeld:
 
-  - Apps met ingeschakelde app-beveiliging en hun gebruik
-  - Ingeschreven apparaten, eigenschappen en inventarisatie
-  - App- en software-inventarisatie
-  - Apparaatconfiguratie en nalevingsbeleid
+- Apps met ingeschakelde app-beveiliging en hun gebruik
+- Ingeschreven apparaten, eigenschappen en inventarisatie
+- App- en software-inventarisatie
+- Apparaatconfiguratie en nalevingsbeleid
 
 Deze gebieden omvatten de entiteiten die relevant zijn voor uw Intune-omgeving. Informatie over de entiteitsets kunt u vinden in de volgende onderwerpen:
 
-  - [App](reports-ref-application.md)
-  - [Datum](reports-ref-date.md)
-  - [Apparaten](reports-ref-devices.md)
-  - [Intune-beheeruitbreiding](reports-ref-intunemanagementextension.md)
-  - [Beleid](reports-ref-policy.md)
-  - [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
-  - [Gebruiker](reports-ref-user.md)
-  - [Huidige gebruiker](reports-ref-current-user.md)
-  - [Associaties voor gebruikersapparaten](reports-ref-user-device.md)
+- [App](reports-ref-application.md)
+- [Datum](reports-ref-date.md)
+- [Apparaten](reports-ref-devices.md)
+- [Intune-beheeruitbreiding](reports-ref-intunemanagementextension.md)
+- [Beleid](reports-ref-policy.md)
+- [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
+- [Gebruiker](reports-ref-user.md)
+- [Huidige gebruiker](reports-ref-current-user.md)
+- [Associaties voor gebruikersapparaten](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>Relaties: ster-schema-model
 
@@ -63,6 +63,6 @@ Het datawarehouse bevindt zich downstream van uw Intune-gegevens. Intune maakt d
 
 ## <a name="next-steps"></a>Volgende stappen
 
- - Zie [Levensduur gebruikers weergeven in Intune-datawarehouse](reports-ref-user-timeline.md) voor meer informatie over hoe het datawarehouse de levensduur van een gebruiker in Intune bijhoudt.
- - Zie [Eerste datawarehouse maken](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) voor informatie over het werken met datawarehouses.
- - Zie [Een nieuw Power BI-rapport maken door een gegevensset te importeren](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/) voor meer informatie over het werken met Power BI en een datawarehouse. 
+- Zie [Levensduur gebruikers weergeven in Intune-datawarehouse](reports-ref-user-timeline.md) voor meer informatie over hoe het datawarehouse de levensduur van een gebruiker in Intune bijhoudt.
+- Zie [Eerste datawarehouse maken](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) voor informatie over het werken met datawarehouses.
+- Zie [Een nieuw Power BI-rapport maken door een gegevensset te importeren](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/) voor meer informatie over het werken met Power BI en een datawarehouse. 

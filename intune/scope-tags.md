@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 627899eafb2175b2d3034045bd765a10f4a203d6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403789"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882496"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken voor gedistribueerde IT
 
@@ -42,8 +42,8 @@ Laten we bijvoorbeeld zeggen dat een beheerder van het regionale kantoor in Seat
 
     ![Schermopname van Een bereiktag maken.](./media/scope-tags/create-scope-tag.png)
 
-3. Als u wilt dat alle apparaten in specifieke groepen, kiest u **bereiktag toewijzen aan alle apparaten in de geselecteerde groepen**.
-    1. In de **Selecteer groepen om op te nemen** pagina, kies de groepen met daarin de apparaten die u wilt deze bereiktag aan toewijzen.
+3. Als u alle apparaten in specifieke groepen wilt, kiest u **Scope-label toewijzen aan alle apparaten in de geselecteerde groepen**.
+    1. Kies op de pagina **groepen selecteren** die u wilt toevoegen de groepen met de apparaten waaraan u deze bereik markering wilt toewijzen.
     2. Kies **Selecteren**.
 4. Kies **Maken**.
 
@@ -108,17 +108,17 @@ Voor apparaten met het **Type apparaatinschrijving** ingesteld op **Beheerde app
 Wanneer u met bereiktags werkt, moet u deze details onthouden:
 
 - U kunt op dit moment bereiktags toewijzen aan:
-    - Roltoewijzingen
-    - Nalevingsbeleid voor apparaten
-    - Apparaatconfiguratieprofielen
-    - Windows 10-updateringen
-    - Beheerde apparaten
-    - Apps
-    - App-configuratiebeleidsregels - beheerde apparaten toevoegen
-    - PowerShell-scripts
-    - DEP-tokens
-    - Inrichtingsprofiel voor iOS-apps
-    - VPP-tokens (Volume Purchase Program)
+  - Roltoewijzingen
+  - Nalevingsbeleid voor apparaten
+  - Apparaatconfiguratieprofielen
+  - Windows 10-updateringen
+  - Beheerde apparaten
+  - Apps
+  - App-configuratiebeleidsregels - beheerde apparaten toevoegen
+  - PowerShell-scripts
+  - DEP-tokens
+  - Inrichtingsprofiel voor iOS-apps
+  - VPP-tokens (Volume Purchase Program)
 - Wanneer een beheerder een object in Intune maakt, worden alle aan die beheerder toegewezen bereiktags automatisch toegewezen aan het nieuwe object.
 - Intune RBAC is niet van toepassing op Azure Active Directory-rollen. Dus hebben de rollen Intune-servicebeheerders en Globale beheerders volledige beheerderstoegang tot Intune, ongeacht welke bereiktags ze hebben.
 - Voor beheerders in een roltoewijzing met bereiktags zijn ook de Intune-objecten zonder bereiktags zichtbaar.

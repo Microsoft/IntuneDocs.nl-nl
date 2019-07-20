@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b062dd12f7a9b77f30d4d831a829f3d0316cacf6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
-ms.translationtype: HT
+ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735467"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67794369"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -104,9 +104,10 @@ Als uw toepassing al is geconfigureerd voor het gebruik van ADAL of MSAL en een 
 Een volledig overzicht voor het integreren van de Intune App SDK kunt u vinden in de [Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android](app-sdk-android.md). Als u de handleiding leest en de Intune App SDK integreert in uw Xamarin-app, zijn de volgende secties bedoeld om de verschillen te belichten tussen de implementatie voor een systeemeigen Android-app die is ontwikkeld in Java en een Xamarin-app die is ontwikkeld in C#. Deze secties moeten worden beschouwd als aanvullend en zijn geen vervanging voor het lezen van de handleiding als geheel.
 
 #### <a name="remapper"></a>Remapper
-Vanaf de 1.4428.1-release kan het `Microsoft.Intune.MAM.Remapper` pakket worden toegevoegd aan een Xamarin. Android-toepassing als [build-hulp](app-sdk-android.md#build-tooling) programma voor het uitvoeren van de mam-klasse,-methode en-vervanging van de systeem services. Als de nieuwe toewijzing is opgenomen, worden de MAM equivalente vervangings gedeelten van de hernoemde methoden en de toepassings secties MAM automatisch uitgevoerd wanneer de toepassing wordt gebouwd.
+Vanaf de 1.4428.1-release kan het `Microsoft.Intune.MAM.Remapper` pakket worden toegevoegd aan een Xamarin. Android-toepassing als [Build-hulp programma](app-sdk-android.md#build-tooling) voor het uitvoeren van de mam-klasse,-methode en-vervanging van de systeem services. Als de nieuwe toewijzing is opgenomen, worden de MAM equivalente vervangings gedeelten van de hernoemde methoden en de toepassings secties MAM automatisch uitgevoerd wanneer de toepassing wordt gebouwd.
 
 Als u een klasse wilt uitsluiten van mam-ificatie door de hertoewijzing, kunt u de volgende eigenschap toevoegen `.csproj` aan uw project bestand.
+
 ```xml
   <PropertyGroup>
     <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
@@ -200,7 +201,7 @@ Dit is verwacht want wanneer de remapper de overname van Xamarin-klassen wijzigt
 > Met de remapper wordt een afhankelijkheid herschreven die in Visual Studio wordt gebruikt voor automatische aanvulling via IntelliSense. Wanneer de remapper is toegevoegd, moet u het project daarom mogelijk opnieuw laden en bouwen zodat de wijzigingen juist worden herkend in IntelliSense.
 
 ### <a name="company-portal-app"></a>Bedrijfsportal-app
-De intune SDK Xamarin-bindingen zijn afhankelijk van de aanwezigheid [van](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) de bedrijfsportal Android-app op het apparaat om beveiligings beleid voor apps in te scha kelen. De bedrijfsportal haalt het app-beveiligingsbeleid op van de Intune-service. Tijdens de initialisatie van de app worden het beleid en de code geladen om het betreffende beleid af te dwingen bij de bedrijfsportal. De gebruiker hoeft niet te zijn aangemeld.
+De intune SDK Xamarin-bindingen zijn afhankelijk van de aanwezigheid van de [bedrijfsportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android-app op het apparaat om beveiligings beleid voor apps in te scha kelen. De bedrijfsportal haalt het app-beveiligingsbeleid op van de Intune-service. Tijdens de initialisatie van de app worden het beleid en de code geladen om het betreffende beleid af te dwingen bij de bedrijfsportal. De gebruiker hoeft niet te zijn aangemeld.
 
 > [!NOTE]
 > Wanneer de bedrijfsportal-app zich niet op het **Android**-apparaat bevindt, gedraagt een door Intune beheerde app zich hetzelfde als een normale app die geen ondersteuning biedt voor Intune-beleid voor de beveiliging van apps.
@@ -208,7 +209,7 @@ De intune SDK Xamarin-bindingen zijn afhankelijk van de aanwezigheid [van](https
 Voor app-beveiliging zonder apparaatregistratie hoeft de gebruiker het apparaat _**niet**_ te registreren via de bedrijfsportal-app.
 
 ### <a name="sample-applications"></a>Voorbeeld toepassingen
-Voorbeeld toepassingen die mam-functionaliteit markeren in Xamarin. Android-en Xamarin Forms-apps [zijn](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)beschikbaar op github.
+Voorbeeld toepassingen die MAM-functionaliteit markeren in Xamarin. Android-en Xamarin Forms-apps zijn beschikbaar op [github](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps).
 
 ## <a name="support"></a>Support
 Als uw organisatie een bestaande Intune-klant is, kunt u contact opnemen met uw ondersteuningsmedewerker van Microsoft om een ondersteuningsticket te openen en een probleem te melden op de [GitHub-problemenpagina](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues). U wordt zo snel mogelijk geholpen. 

@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: b79f488fcaa221523b5833aa1cebcf872d5f9b3d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572521"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354017"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Windows-pc's beschermen met Windows Firewall-beleid in Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> De informatie in dit onderwerp geldt alleen voor Windows-desktops die u als pc's beheert met behulp van de Intune-softwareclient. Als u wilt beheren firewall-instellingen voor Windows-pc's die zijn ingeschreven als mobiele apparaten, Zie [instellingen voor endpoint protection toevoegen in Intune](endpoint-protection-configure.md).
+> De informatie in dit onderwerp geldt alleen voor Windows-desktops die u als pc's beheert met behulp van de Intune-softwareclient. Zie [Endpoint Protection-instellingen toevoegen in intune](endpoint-protection-configure.md)als u de firewall instellingen wilt beheren voor Windows-computers die zijn Inge schreven als mobiele apparaten.
 
 Microsoft Intune kan u helpen de Windows-pc’s die u beheert met de Intune-client op verschillende manieren te beveiligen. Een van de manieren waarop dit gebeurt is het bieden van beleid waarmee u Windows Firewall-instellingen kunt configureren op pc's.
 
@@ -140,5 +140,5 @@ U kunt uitzonderingen configureren om bepaalde typen netwerkverkeer via de firew
 |**Windows Virtual PC**<br>(Windows 7 of hoger)|Hiermee kunnen virtuele computers met andere computers communiceren.|
 |**Wireless Portable Devices**|Hiermee configureert u dat media vanaf een camera of media-apparaat in het netwerk kunnen worden overgedragen naar beheerde computers met MTP (Media Transfer Protocol). Deze instelling maakt gebruik van SSDP- en UPnP-netwerkprotocollen.|
 
-### <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie tevens
 [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)

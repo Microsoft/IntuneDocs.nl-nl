@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdb727b542cd66e0b8fcf4a0822eaf0107600ad
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 2718ee7936e82bffc50126eeb57f1b6f732df22d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735727"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354466"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Problemen met de Intune on-premises Exchange-connector oplossen
 
@@ -51,5 +51,5 @@ Controleer de [installatie van de Intune on-premises Exchange-connector](exchang
 - Gebruik Get-Mailbox -Identity user | select emailaddresses | fl om een lijst van SMTP-adressen voor een postvak op te halen
 - Gebruik Get-CASMailbox <upn> | fl om gedetailleerde informatie over de toegangsstatus van een apparaat op te halen
 
-### <a name="next-steps"></a>Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 Als deze informatie geen oplossing biedt, kunt u ook [ondersteuning voor Microsoft Intune krijgen](get-support.md).

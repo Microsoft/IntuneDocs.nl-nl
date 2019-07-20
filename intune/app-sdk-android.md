@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cad30b0cf446d6591cba2997261f049ad6ae983
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: b033052ebd5d3d26976482ea2435c8a0d7314c8e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735631"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885049"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -116,8 +116,8 @@ De testcompilatie wordt niet beïnvloed. Configuratie kan worden opgegeven voor 
 * [Externe afhankelijkheden die moeten worden ingesloten](#usage-of-includeexternallibraries) 
 * Specifieke klassen die moeten worden uitgesloten van verwerking
 * Varianten die moeten worden uitgesloten van verwerking. Deze kunnen verwijzen naar de volledige naam van een variant of naar een enkele smaak. Bijvoorbeeld
-     * Als u een app met de buildtypen `debug` en `release` met de smaken {`savory`, `sweet`} en {`vanilla`, `chocolate`} hebt, kunt u
-     * `savory` opgeven om alle varianten met de smaak 'hartig' uit te sluiten of `savoryVanillaRelease` opgeven om alleen die specifieke variant uit te sluiten.
+  * Als u een app met de buildtypen `debug` en `release` met de smaken {`savory`, `sweet`} en {`vanilla`, `chocolate`} hebt, kunt u
+  * `savory` opgeven om alle varianten met de smaak 'hartig' uit te sluiten of `savoryVanillaRelease` opgeven om alleen die specifieke variant uit te sluiten.
 
 #### <a name="example-partial-buildgradle"></a>Voorbeeld van gedeeltelijke build.gradle
 
@@ -680,15 +680,15 @@ Als u uw app wilt configureren en de juiste verificatie wilt inschakelen, voegt 
 
 * **NonBrokerRedirectURI** AAD-omleidings-URI die moet worden gebruikt in gevallen zonder broker. Als er niets is opgegeven, wordt er een standaardwaarde van `urn:ietf:wg:oauth:2.0:oob` gebruikt. Deze standaardinstellingen is geschikt voor meeste apps.
 
-    * De NonBrokerRedirectURI wordt alleen gebruikt als SkipBroker de waarde true heeft.
+  * De NonBrokerRedirectURI wordt alleen gebruikt als SkipBroker de waarde true heeft.
 
 * **SkipBroker** wordt gebruikt om het standaardgedrag van ADAL-deelname aan eenmalige aanmelding te overschrijven. SkipBroker moet alleen worden opgegeven voor apps waarvoor een ClientID is opgegeven **en** die geen ondersteuning bieden voor brokered verificatie/apparaatbrede eenmalige aanmelding. In dit geval moet de waarde true worden ingesteld. Voor de meeste apps moet de SkipBroker-parameter niet worden ingesteld.
 
-    * Er **moet** een ClientID worden opgegeven in het manifest om een SkipBroker-waarde op te geven.
+  * Er **moet** een ClientID worden opgegeven in het manifest om een SkipBroker-waarde op te geven.
 
-    * Als er een ClientID is opgegeven, is de standaardwaarde false.
+  * Als er een ClientID is opgegeven, is de standaardwaarde false.
 
-    * Als SkipBroker is ingesteld op true, wordt de NonBrokerRedirectURI gebruikt. Apps zonder integratie van ADAL (en die daarom geen ClientID hebben) worden standaard ook ingesteld op true.
+  * Als SkipBroker is ingesteld op true, wordt de NonBrokerRedirectURI gebruikt. Apps zonder integratie van ADAL (en die daarom geen ClientID hebben) worden standaard ook ingesteld op true.
 
 ### <a name="common-adal-configurations"></a>Algemene ADAL-configuraties
 
@@ -1317,48 +1317,48 @@ Naast de mogelijkheid van de app om de identiteit in te stellen, kan de identite
 
 #### <a name="examples"></a>Voorbeelden
 
-  1. Als een activiteit wordt gestart vanuit een `Intent` die door een andere MAM-app is verzonden, wordt de identiteit van de activiteit ingesteld op basis van de geldige identiteit in de andere app op het moment dat de `Intent` werd verzonden.
+1. Als een activiteit wordt gestart vanuit een `Intent` die door een andere MAM-app is verzonden, wordt de identiteit van de activiteit ingesteld op basis van de geldige identiteit in de andere app op het moment dat de `Intent` werd verzonden.
 
-  2. Voor services wordt de threadidentiteit op ongeveer dezelfde manier ingesteld als voor de duur van een `onStart`- of `onBind`-aanroep. Aanroepen naar de `Binder` die is geretourneerd door `onBind`, stellen ook tijdelijk de threadidentiteit in.
+2. Voor services wordt de threadidentiteit op ongeveer dezelfde manier ingesteld als voor de duur van een `onStart`- of `onBind`-aanroep. Aanroepen naar de `Binder` die is geretourneerd door `onBind`, stellen ook tijdelijk de threadidentiteit in.
 
-  3. Aanroepen naar een `ContentProvider` stellen op dezelfde manier de threadidentiteit voor hun duur in.
-
-
-  Bovendien kan de gebruikersinteractie met een activiteit een impliciete identiteitswisseling veroorzaken.
-
-  **Voorbeeld:** als een gebruiker tijdens `Resume` een autorisatieprompt annuleert, resulteert dit in een impliciete overgang naar een lege identiteit.
-
-  De app wordt de mogelijkheid geboden om op de hoogte te worden gebracht van deze wijzigingen en ze zo nodig te verbieden. `MAMService` en `MAMContentProvider` maken de volgende methode beschikbaar die door subklassen kan worden overschreven:
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  In de klasse `MAMActivity` is een extra parameter aanwezig in de methode:
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchReason reason,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  * De `AppIdentitySwitchReason` registreert de bron van de impliciete wisseling en kan de waarden `CREATE`, `RESUME_CANCELLED` en `NEW_INTENT` accepteren.  De reden `RESUME_CANCELLED` wordt gebruikt wanneer het voortzetten van de activiteit ertoe leidt dat de gebruikersinterface voor een pincode, verificatie of andere naleving wordt weergegeven en de gebruiker die gebruikersinterface probeert te annuleren, meestal door de knop Terug te gebruiken.
+3. Aanroepen naar een `ContentProvider` stellen op dezelfde manier de threadidentiteit voor hun duur in.
 
 
-  * De `AppIdentitySwitchResultCallback` ziet er als volgt uit:
+    Bovendien kan de gebruikersinteractie met een activiteit een impliciete identiteitswisseling veroorzaken.
+
+    **Voorbeeld:** als een gebruiker tijdens `Resume` een autorisatieprompt annuleert, resulteert dit in een impliciete overgang naar een lege identiteit.
+
+    De app wordt de mogelijkheid geboden om op de hoogte te worden gebracht van deze wijzigingen en ze zo nodig te verbieden. `MAMService` en `MAMContentProvider` maken de volgende methode beschikbaar die door subklassen kan worden overschreven:
 
     ```java
-    public interface AppIdentitySwitchResultCallback {
-        /**
-         * @param result
-         *            whether the identity switch can proceed.
-         */
-        void reportIdentitySwitchResult(AppIdentitySwitchResult result);
-    }
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchResultCallback callback);
     ```
 
-    Waarbij ```AppIdentitySwitchResult``` ofwel `SUCCESS` of `FAILURE` is.
+    In de klasse `MAMActivity` is een extra parameter aanwezig in de methode:
+
+    ```java
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchReason reason,
+      final AppIdentitySwitchResultCallback callback);
+    ```
+
+    * De `AppIdentitySwitchReason` registreert de bron van de impliciete wisseling en kan de waarden `CREATE`, `RESUME_CANCELLED` en `NEW_INTENT` accepteren.  De reden `RESUME_CANCELLED` wordt gebruikt wanneer het voortzetten van de activiteit ertoe leidt dat de gebruikersinterface voor een pincode, verificatie of andere naleving wordt weergegeven en de gebruiker die gebruikersinterface probeert te annuleren, meestal door de knop Terug te gebruiken.
+
+
+    * De `AppIdentitySwitchResultCallback` ziet er als volgt uit:
+
+      ```java
+      public interface AppIdentitySwitchResultCallback {
+          /**
+            * @param result
+            *            whether the identity switch can proceed.
+            */
+          void reportIdentitySwitchResult(AppIdentitySwitchResult result);
+        }
+        ```
+
+      Waarbij ```AppIdentitySwitchResult``` ofwel `SUCCESS` of `FAILURE` is.
 
 De methode `onMAMIdentitySwitchRequired` wordt aangeroepen voor alle impliciete identiteitswijzigingen behalve de wijzigingen die zijn aangebracht via een Binder die is geretourneerd door `MAMService.onMAMBind`. Met de standaardimplementaties van `onMAMIdentitySwitchRequired` wordt onmiddellijk het volgende aangeroepen:
 
@@ -1498,13 +1498,13 @@ public interface MAMFileProtectionInfo {
 MAM kan niet automatisch een relatie afleiden tussen bestanden die worden gelezen en gegevens die worden weergegeven in een `Activity`. Apps *moeten* de identiteit van de gebruikersinterface goed instellen voordat bedrijfsgegevens worden weergegeven. Dit geldt ook voor gegevens die worden gelezen uit bestanden. Als een bestand afkomstig is van buiten de app (van een `ContentProvider` of gelezen vanaf een openbaar leesbare locatie), *moet* de app proberen de bestandsidentiteit vast te stellen (met `MAMFileProtectionManager.getProtectionInfo`) voordat de uit het bestand gelezen informatie wordt weergegeven. Als `getProtectionInfo` aangeeft dat de identiteit niet null en niet leeg is, *moet* de identiteit van de gebruikersinterface worden ingesteld op deze identiteit (met `MAMActivity.switchMAMIdentity` of `MAMPolicyManager.setUIPolicyIdentity`). Als de identiteitswijziging mislukt, moeten de gegevens uit het bestand *niet* worden weergegeven.
 
 Het proces verloopt ongeveer als volgt:
-  * De gebruiker selecteert een document om in de app te openen.
-  * Tijdens het openen en voordat gegevens van schijf worden gelezen, bevestigt de app de identiteit die moet worden gebruikt voor het weergeven van de inhoud
-    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
-    * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
-    * De app wacht tot een resultaat wordt gerapporteerd voor retouraanroep
-    * Als het gerapporteerde resultaat ‘mislukt’ is, geeft de app het document niet weer.
-  * De app opent het bestand en geeft het weer.
+* De gebruiker selecteert een document om in de app te openen.
+* Tijdens het openen en voordat gegevens van schijf worden gelezen, bevestigt de app de identiteit die moet worden gebruikt voor het weergeven van de inhoud
+  * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+  * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+  * De app wacht tot een resultaat wordt gerapporteerd voor retouraanroep
+  * Als het gerapporteerde resultaat ‘mislukt’ is, geeft de app het document niet weer.
+* De app opent het bestand en geeft het weer.
   
 #### <a name="single-identity-to-multi-identity-transition"></a>Overgang van één identiteit naar meerdere identiteiten
 Als een app die eerder is uitgebracht met Intune-integratie met één identiteit, later wordt geïntegreerd met meerdere identiteiten, wordt voor eerder geïnstalleerde apps een overgang uitgevoerd (niet zichtbaar voor de gebruiker, er is geen gekoppelde UX). Het is niet *vereist* dat de app expliciet wordt gebruikt om deze overgang te verwerken. Alle bestanden die zijn gemaakt voordat de overgang wordt voorgezet, worden als beheerd beschouwd (ze blijven dus versleuteld als er versleutelingsbeleid is ingeschakeld). Indien gewenst kunt u de upgrade detecteren en `MAMFileProtectionManager.protect` gebruiken om specifieke bestanden of directory's met de lege identiteit te taggen (als deze zijn versleuteld, wordt hiermee de versleuteling verwijderd).
@@ -1513,11 +1513,11 @@ Als een app die eerder is uitgebracht met Intune-integratie met één identiteit
 
 Het labelen van de bestandsidentiteit is gevoelig voor de offlinemodus. U moet rekening houden met de volgende punten:
 
-  * Als de bedrijfsportal niet is geïnstalleerd, is taggen van bestandsidentiteit niet mogelijk.
+* Als de bedrijfsportal niet is geïnstalleerd, is taggen van bestandsidentiteit niet mogelijk.
 
-  * Als de bedrijfsportal is geïnstalleerd maar de app geen Intune MAM-beleid heeft, is niet mogelijk om bestanden op een betrouwbare manier worden getagd met identiteitslabels.
+* Als de bedrijfsportal is geïnstalleerd maar de app geen Intune MAM-beleid heeft, is niet mogelijk om bestanden op een betrouwbare manier worden getagd met identiteitslabels.
 
-  * Wanneer het taggen van bestandsidentiteit beschikbaar komt, worden alle eerder gemaakte bestanden als persoonlijk/onbeheerd behandeld (behorend bij de identiteit met een lege tekenreeks), tenzij de app eerder is geïnstalleerd als een beheerde app met één identiteit. In dat geval wordt deze behandeld als behorend tot de geregistreerde gebruiker.
+* Wanneer het taggen van bestandsidentiteit beschikbaar komt, worden alle eerder gemaakte bestanden als persoonlijk/onbeheerd behandeld (behorend bij de identiteit met een lege tekenreeks), tenzij de app eerder is geïnstalleerd als een beheerde app met één identiteit. In dat geval wordt deze behandeld als behorend tot de geregistreerde gebruiker.
 
 ### <a name="directory-protection"></a>Mapbeveiliging
 

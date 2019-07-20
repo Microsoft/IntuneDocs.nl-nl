@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d2e6c99d9493d935f4a8f87c6525af19796b5f6
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 59e2a681c542da46a2e938c7bf07e7185925aab2
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648785"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313748"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune-datawarehouse-API-eindpunt
 
@@ -51,7 +51,7 @@ De URL bevat de volgende elementen:
 | Element | Voorbeeld | Beschrijving |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | De basis-URL kan worden gevonden door de blade Datawarehouse-API in Azure Portal te bekijken. |
-| entiteitverzameling | dates | De naam van de OData-entiteitverzameling. Zie [Gegevensmodel](reports-ref-data-model.md) voor meer informatie over verzamelingen en entiteiten in het gegevensmodel. |
+| entiteitverzameling | devicePropertyHistories | De naam van de OData-entiteitverzameling. Zie [Gegevensmodel](reports-ref-data-model.md) voor meer informatie over verzamelingen en entiteiten in het gegevensmodel. |
 | api-versie | beta | Version is de versie van de API waartoe toegang moet worden verkregen. Zie [Versie](reports-api-url.md#api-version-information) voor meer informatie. |
 | maxhistorydays | 7 | (Optioneel) Het maximum aantal dagen waarin de geschiedenis kan worden opgehaald. Deze parameter kan worden geleverd aan een verzameling, maar wordt pas van kracht voor verzamelingen met `dateKey` als onderdeel van de sleuteleigenschap ervan. Zie [Bereikfilters DateKey](reports-api-url.md#datekey-range-filters) voor meer informatie. |
 

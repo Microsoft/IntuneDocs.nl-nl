@@ -14,12 +14,12 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509634"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354404"
 ---
 # <a name="metadata-and-markdown-template"></a>Metagegevens en markdown-sjabloon
 
@@ -124,13 +124,13 @@ Als een URL wordt weergegeven in een markdown-bestand, wordt deze omgezet in een
 - lijst
 
 
-##### <a name="unordered-list-with-an-embedded-lists"></a>Niet-geordende lijst met een ingesloten lijst
+#### <a name="unordered-list-with-an-embedded-lists"></a>Niet-geordende lijst met een ingesloten lijst
 
 - Deze 
 - met opsommingstekens 
 - lijst
-    - Mevr. Peacock
-    - Dhr. Green
+  - Mevr. Peacock
+  - Dhr. Green
 - bevat  
 - andere
     1. Kolonel Mustard

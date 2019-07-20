@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: c3287238900725acebefc23eb00246cd04c7a5bb
+ms.sourcegitcommit: fd2499df5123758ecb093b4cdd486e35f713b040
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506850"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230073"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Naleving op uw Android-apparaat controleren
 
@@ -31,6 +31,6 @@ Als u al een tijd niet bij Intune heeft ingecheckt met uw apparaat, heeft u moge
 
 1. Open de bedrijfsportal-app voor Android op uw apparaat.  
 
-2. Tik op **Apparaatinstellingen controleren**.  
+2. Tik op **Apparaatinstellingen controleren**.   
 
 Als u uw apparaat niet opnieuw kunt instellen wanneer dit kwijt of gestolen is, vraagt u het ondersteuningsteam van het bedrijf om dit voor u te doen. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  

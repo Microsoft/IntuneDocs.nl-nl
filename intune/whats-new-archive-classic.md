@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29aa32b02f5ab97707ce76eb10a84a8913a9f702
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: d09a996e3e1a47cae33e8a4189b4406a940acfe3
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572291"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353270"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Wat is er nieuw in de klassieke Intune-portal - vorige maanden
 
@@ -375,5 +375,5 @@ __Een Symantec-handtekeningcertificaat vereist geen ondertekend Windows Phone 8-
 __Ondersteuning voor de Windows Phone 8-bedrijfsportal__ Ondersteuning voor de Windows Phone 8-bedrijfsportal wordt nu afgeschaft. Ondersteuning voor het Windows Phone 8- en Windows RT-platform is afgeschaft in oktober 2016. Ondersteuning voor de Windows 8-bedrijfsportal is ook in oktober 2016 afgeschaft.
 
 
-### <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie tevens
 Zie [Wat is er nieuw in Microsoft Intune?](whats-new.md) voor meer informatie over recente ontwikkelingen.

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 502babf80b4286adb19a09988d16bd56562d4925
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3bbd90b5a317629bd5b4d87b619d89023053518d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046671"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884245"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Wi-Fi-instellingen toevoegen voor apparaten met Windows 10 en hoger in Intune
 
@@ -119,29 +119,29 @@ Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt ge
     > [!NOTE]
     > Momenteel worden alleen SCEP-certificaatprofielen ondersteund bij het gebruik van een EAP-type. PKCS-certificaatprofielen worden niet ondersteund. Steeds wanneer een gebruiker wordt gevraagd een certificaat in te voeren, moet u een SCEP-certificaat kiezen.
 
-      - **Server Trust**  
+    - **Server Trust**  
 
-        **Namen van certificaatserver**: gebruiken met EAP-typen **EAP-TLS**, **EAP-TTLS** of **PEAP**. Voer een of meer algemene namen in die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Als u deze informatie verstrekt, kunt u het dialoogvenster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers als zij verbinding maken met dit Wi-Fi-netwerk.  
+      **Namen van certificaatserver**: gebruiken met EAP-typen **EAP-TLS**, **EAP-TTLS** of **PEAP**. Voer een of meer algemene namen in die worden gebruikt in de certificaten die zijn uitgegeven door uw vertrouwde certificeringsinstantie (CA). Als u deze informatie verstrekt, kunt u het dialoogvenster Dynamisch vertrouwen negeren dat wordt weergegeven op apparaten van gebruikers als zij verbinding maken met dit Wi-Fi-netwerk.  
 
-        **Basiscertificaat voor servervalidatie**: gebruiken met EAP-typen **EAP-TLS**, **EAP-TTLS** of **PEAP**. Kies het profiel voor een vertrouwd basiscertificaat dat wordt gebruikt om de verbinding te verifiëren.  
+      **Basiscertificaat voor servervalidatie**: gebruiken met EAP-typen **EAP-TLS**, **EAP-TTLS** of **PEAP**. Kies het profiel voor een vertrouwd basiscertificaat dat wordt gebruikt om de verbinding te verifiëren.  
 
-        **Identiteitsprivacy (externe identiteit)** : gebruiken met EAP-type **PEAP**. Voer de tekst in die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.  
+      **Identiteitsprivacy (externe identiteit)** : gebruiken met EAP-type **PEAP**. Voer de tekst in die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.  
 
-      - **Clientauthenticatie**
+    - **Clientauthenticatie**
 
-        **Clientcertificaat voor clientverificatie (identiteitscertificaat)** : gebruiken met EAP-type **PEAP-TLS**. Kies het certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren.
+      **Clientcertificaat voor clientverificatie (identiteitscertificaat)** : gebruiken met EAP-type **PEAP-TLS**. Kies het certificaatprofiel dat wordt gebruikt om de verbinding te verifiëren.
 
-        **Verificatiemethode**: gebruiken met EAP-type **EAP-TTLS**. Selecteer de verificatiemethode voor de verbinding:  
+      **Verificatiemethode**: gebruiken met EAP-type **EAP-TTLS**. Selecteer de verificatiemethode voor de verbinding:  
 
-          - **Certificaten**: selecteer het clientcertificaat dat het identiteitscertificaat is dat aan de server wordt gepresenteerd.
-          - **Gebruikersnaam en wachtwoord**: voer een **niet-EAP-methode (interne identiteit)** in voor verificatie. Uw opties zijn:
+      - **Certificaten**: selecteer het clientcertificaat dat het identiteitscertificaat is dat aan de server wordt gepresenteerd.
+      - **Gebruikersnaam en wachtwoord**: voer een **niet-EAP-methode (interne identiteit)** in voor verificatie. Uw opties zijn:
 
-            - **Niet-versleuteld wachtwoord (PAP)**
-            - **Challenge Handshake (CHAP)**
-            - **Microsoft CHAP (MS-CHAP)**
-            - **Microsoft CHAP versie 2 (MS-CHAP v2)**
+        - **Niet-versleuteld wachtwoord (PAP)**
+        - **Challenge Handshake (CHAP)**
+        - **Microsoft CHAP (MS-CHAP)**
+        - **Microsoft CHAP versie 2 (MS-CHAP v2)**
 
-        **Identiteitsprivacy (externe identiteit)** : gebruiken met EAP-type **EAP-TTLS**. Voer de tekst in die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.
+      **Identiteitsprivacy (externe identiteit)** : gebruiken met EAP-type **EAP-TTLS**. Voer de tekst in die wordt verzonden in antwoord op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.
 
 - **Bedrijfsproxyinstellingen**: kies deze optie om de proxyinstellingen binnen uw organisatie te gebruiken. Uw opties zijn:
   - **Geen**: er zijn geen proxyinstellingen geconfigureerd.

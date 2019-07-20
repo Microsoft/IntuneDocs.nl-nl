@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043838"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884273"
 ---
 # <a name="what-is-device-management"></a>Wat is apparaatbeheer? 
 
@@ -58,8 +58,8 @@ Het is een belangrijke taak van elke apparaatbeheeroplossing om beveiliging en b
 
 - **Windows Defender** bevat veel beveiligingsfuncties ter bescherming van Windows 10-apparaten. Als u Intune en Windows Defender samen gebruikt, kunt u: 
 
-    - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) inschakelen om te zoeken naar verdachte activiteit in bestanden en apps op mobiele apparaten. 
-    - Gebruik [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) om beveiligingsschending op mobiele apparaten te voorkomen. En beperk de gevolgen van een schending door een gebruiker te blokkeren vanuit bedrijfsresources.
+  - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) inschakelen om te zoeken naar verdachte activiteit in bestanden en apps op mobiele apparaten. 
+  - Gebruik [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) om beveiligingsschending op mobiele apparaten te voorkomen. En beperk de gevolgen van een schending door een gebruiker te blokkeren vanuit bedrijfsresources.
 
 - **Voorwaardelijke toegang** wordt mogelijk gemaakt door Azure Active Directory en kan prima worden geïntegreerd in Intune. Met [voorwaardelijke toegang](https://docs.microsoft.com/intune/conditional-access) kunt u ervoor zorgen dat alleen apparaten die voldoen aan het beleid, toegang krijgen tot e-mail, SharePoint en andere apps. 
 

@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 210a11cbd6e2c3be85ed0b0f97c2bb4ab59d11e6
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2eb47240516737f03c10d1280887fea275c5ed99
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546600"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883947"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Uw iOS-apparaat uit Intune verwijderen
 
@@ -44,25 +44,25 @@ Voer deze stappen uit of bekijk deze video om uw apparaat uit Intune te verwijde
     |![Schermopname van het scherm Apparaten in de bedrijfsportal-app, met de opties die beschikbaar zijn nadat de gebruiker op de knop Apparaat verwijderen heeft geklikt. Toont de in het rood gemarkeerde knop Verwijderen en de in het blauw gemarkeerde knoppen Meer informatie en Annuleren.](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
 
 
-  Wanneer u uw apparaat bij Intune uitschrijft, gebeurt het volgende:
+    Wanneer u uw apparaat bij Intune uitschrijft, gebeurt het volgende:
 
-  - Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
+    - Het apparaat wordt niet meer in de bedrijfsportal weergegeven.
 
-  - U kunt geen apps meer van de bedrijfsportal installeren.
+    - U kunt geen apps meer van de bedrijfsportal installeren.
 
-  - Alle instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte) zijn niet meer van toepassing.
+    - Alle instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte) zijn niet meer van toepassing.
 
-  - Mogelijk hebt u vanaf het apparaat geen toegang meer tot een aantal bedrijfsresources, zoals bestandsshares of interne websites.
+    - Mogelijk hebt u vanaf het apparaat geen toegang meer tot een aantal bedrijfsresources, zoals bestandsshares of interne websites.
 
-  - U kunt geen bedrijfs-apps en bedrijfsgegevens meer op het apparaat gebruiken.
+    - U kunt geen bedrijfs-apps en bedrijfsgegevens meer op het apparaat gebruiken.
 
-  - Mogelijk kunt u geen verbinding meer met uw bedrijfsnetwerk maken met behulp van Wi-Fi of een virtueel particulier netwerk (VPN).
+    - Mogelijk kunt u geen verbinding meer met uw bedrijfsnetwerk maken met behulp van Wi-Fi of een virtueel particulier netwerk (VPN).
 
-  - Bedrijfse-mailprofielen worden verwijderd van het apparaat.
+    - Bedrijfse-mailprofielen worden verwijderd van het apparaat.
 
-  - Apparaten die alleen zijn geconfigureerd voor e-mail worden niet meer in de bedrijfsportal-app of op de website weergegeven.
-  
-  - Apps worden verwijderd. Gegevens van bedrijfs-apps worden verwijderd.
+    - Apparaten die alleen zijn geconfigureerd voor e-mail worden niet meer in de bedrijfsportal-app of op de website weergegeven.
+
+    - Apps worden verwijderd. Gegevens van bedrijfs-apps worden verwijderd.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>Gegevens verwijderen die door de bedrijfsportal-app zijn verzameld
 

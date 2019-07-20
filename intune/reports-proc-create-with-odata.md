@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8d8e1d1bb20f222b202e8c854fc4d1a8ba694fa
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 519ac8529737a870eb4f8ce9a3e06af5b1dcac79
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648903"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353661"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Een rapport maken van de OData-feed met Power BI
 
 In dit artikel leest u hoe u een treemapvisualisatie maakt in Power BI Desktop met een interactief filter. Uw CFO wil bijvoorbeeld weten hoe de algehele verdeling van apparaten is in vergelijking met de verhouding bedrijfseigen-persoonlijke apparatuur. Deze treemap biedt inzicht in het totaalaantal apparaattypen. U kunt het aantal iOS-, Android- en Windows-apparaten die al dan niet eigendom zijn van het bedrijf weergeven.
 
-### <a name="overview-of-creating-the-chart"></a>Overzicht van het maken van de grafiek
+## <a name="overview-of-creating-the-chart"></a>Overzicht van het maken van de grafiek
 
 Ga als volgt te werk voor het maken van deze grafiek:
 1. Installeer Power BI Desktop als u dat nog niet hebt gedaan.
@@ -120,5 +120,5 @@ U hebt nu een interactief filter dat u kunt gebruiken om te schakelen tussen app
 
 ## <a name="next-steps"></a>Volgende stappen
 
- - Lees de Power BI-documentatie voor meer informatie over het [maken en beheren van relaties](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) in Power BI Desktop.
- - Raadpleeg het [Intune-datawarehousemodel](https://docs.microsoft.com/intune/reports-ref-data-model).
+- Lees de Power BI-documentatie voor meer informatie over het [maken en beheren van relaties](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) in Power BI Desktop.
+- Raadpleeg het [Intune-datawarehousemodel](https://docs.microsoft.com/intune/reports-ref-data-model).

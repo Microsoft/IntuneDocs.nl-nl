@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb6cd7b1d717cd289b65e1e05566bd07471ad84f
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 220327c48712881e57efa1a91b9d00a64ba3e0be
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735789"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884689"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -34,11 +34,11 @@ Wanneer er een nieuwe basis lijn voor MDM-beveiliging wordt uitgebracht, wordt d
 Wanneer een basislijn versie niet meer wordt ondersteund voor gebruik, wordt deze verwijderd uit dit artikel.
 
 - Bekijk de instellingen die beschikbaar zijn in [de huidige MDM-beveiligings basislijn](security-baseline-settings-mdm.md) 
-- Meer informatie [over beveiligings](security-baselines.md)basislijnen en het bijwerken van de basislijn versie in uw beveiligings basislijn profielen.
+- Meer informatie over [beveiligings](security-baselines.md)basislijnen en het bijwerken van de basislijn versie in uw beveiligings basislijn profielen.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Preview: MDM-basislijn voor beveiliging voor oktober 2018  
 
-*Deze basis lijn wordt vervangen door [de MDM-beveiligings basislijn voor lente 2019 (19H1)](security-baseline-settings-mdm.md)*
+*Deze basis lijn wordt vervangen door de [MDM-beveiligings basislijn voor lente 2019 (19H1)](security-baseline-settings-mdm.md)*
 
 ### <a name="above-lock"></a>Vergrendeling boven  
 
@@ -97,23 +97,23 @@ Zie [Beleids-CSP - Bitlocker](https://docs.microsoft.com/windows/client-manageme
 
   Voor het BitLocker-beleid voor verwisselbare stations moet u de volgende instellingen configureren:
 
-    - **Versleuteling vereisen voor schrijftoegang**  
-      **Standaardinstelling**: Ja  
-  
-    - **Versleutelingsmethode**  
-      **Standaardinstelling**: AES 256-bits CBC  
+  - **Versleuteling vereisen voor schrijftoegang**  
+    **Standaardinstelling**: Ja  
+
+  - **Versleutelingsmethode**  
+    **Standaardinstelling**: AES 256-bits CBC  
 
 - **Bitlocker-beleid voor vaste stations**  
   Deze beleidsinstelling wordt gebruikt om de versleutelingsmethode en coderingssterkte te regelen. De waarden van dit beleid bepalen de coderingssterkte die door BitLocker wordt gebruikt voor versleuteling. Ondernemingen kunnen het versleutelingsniveau bepalen voor extra beveiliging (AES-256 is sterker dan AES-128). Als u deze instelling inschakelt, kunt u afzonderlijke versleutelingsalgoritmen en belangrijke coderingssterkten configureren voor vaste gegevensstations, besturingssysteemstations en losse gegevensstations. Voor vaste stations en besturingssysteemstations wordt het gebruik van het XTS-AES-algoritme aanbevolen. Gebruik 128-bits AES-CBC of 256-bits AES-CBC voor losse stations als het station in andere apparaten wordt gebruikt waarop geen Windows 10, versie 1511 of later wordt uitgevoerd. Het wijzigen van de versleutelingsmethode heeft geen invloed als het station al is versleuteld of als de versleuteling nog wordt uitgevoerd. In deze gevallen wordt deze beleidsinstelling genegeerd.  
  
-   Voor het BitLocker-beleid voor vaste stations moet u de volgende instellingen configureren: 
-   - **Versleutelingsmethode**
-     **Standaard**: AES 256-bits XTS  
+  Voor het BitLocker-beleid voor vaste stations moet u de volgende instellingen configureren: 
+  - **Versleutelingsmethode**  
+    **Standaardinstelling**: AES 256-bits XTS  
 
 - **Bitlocker-beleid voor systeemstations**  
   Deze beleidsinstelling wordt gebruikt om de versleutelingsmethode en coderingssterkte te regelen. De waarden van dit beleid bepalen de coderingssterkte die door BitLocker wordt gebruikt voor versleuteling. Ondernemingen kunnen het versleutelingsniveau bepalen voor extra beveiliging (AES-256 is sterker dan AES-128). Als u deze instelling inschakelt, kunt u afzonderlijke versleutelingsalgoritmen en belangrijke coderingssterkten configureren voor vaste gegevensstations, besturingssysteemstations en losse gegevensstations. Voor vaste stations en besturingssysteemstations wordt het gebruik van het XTS-AES-algoritme aanbevolen. Gebruik 128-bits AES-CBC of 256-bits AES-CBC voor losse stations als het station in andere apparaten wordt gebruikt waarop geen Windows 10, versie 1511 of later wordt uitgevoerd. Het wijzigen van de versleutelingsmethode heeft geen invloed als het station al is versleuteld of als de versleuteling nog wordt uitgevoerd. In deze gevallen wordt deze beleidsinstelling genegeerd.  
 
-   Voor het BitLocker-beleid voor het systeemstation moet u de volgende instellingen configureren:
+  Voor het BitLocker-beleid voor het systeemstation moet u de volgende instellingen configureren:
   - **Versleutelingsmethode**  
     **Standaardinstelling**: AES 256-bits XTS  
 
@@ -219,33 +219,33 @@ Zie [Beleids-CSP - apparaatinstallatie](https://docs.microsoft.com/windows/clien
   
   **Standaardinstelling**: installatie van hardwareapparaten blokkeren  
 
-    Wanneer *installatie van hardwareapparaten blokkeren* wordt geselecteerd, zijn de volgende instellingen beschikbaar.
-  
-    - **Overeenkomende hardwareapparaten verwijderen**   
-    Deze instelling is alleen beschikbaar als *Installatie hardwareapparaten op apparaat-id* is ingesteld op *Installatie van hardwareapparaten blokkeren*.
-      
-      **Standaardinstelling**: Ja
-  
-    - **Hardwareapparaat-id's die zijn geblokkeerd**  
-       Deze instelling is alleen beschikbaar als *Installatie hardwareapparaten op apparaat-id* is ingesteld op *Installatie van hardwareapparaten blokkeren*.
-      
-      **Standaardinstelling**: Ja  
+  Wanneer *installatie van hardwareapparaten blokkeren* wordt geselecteerd, zijn de volgende instellingen beschikbaar.
+
+  - **Overeenkomende hardwareapparaten verwijderen**   
+  Deze instelling is alleen beschikbaar als *Installatie hardwareapparaten op apparaat-id* is ingesteld op *Installatie van hardwareapparaten blokkeren*.
+    
+    **Standaardinstelling**: Ja
+
+  - **Hardwareapparaat-id's die zijn geblokkeerd**  
+      Deze instelling is alleen beschikbaar als *Installatie hardwareapparaten op apparaat-id* is ingesteld op *Installatie van hardwareapparaten blokkeren*.
+    
+    **Standaardinstelling**: Ja  
   
 - **Installatie van hardwareapparaten op basis van installatieklassen**  
   Met deze beleidsinstelling kunt u een lijst opgeven met GUID's (Globally Unique Identifiers) voor de installatieklasse van apparaten voor apparaatstuurprogramma's die niet mogen worden geïnstalleerd in Windows. Deze beleidsinstelling heeft een hogere prioriteit dan welke andere beleidsinstelling dan ook waarmee Windows wordt toegestaan een apparaat te installeren. Als u deze beleidsinstelling inschakelt, mogen apparaatstuurprogramma's waarvan de GUID's voor de installatieklasse van apparaten niet in de door u gemaakte lijst staan, niet worden geïnstalleerd of bijgewerkt in Windows. Als u deze beleidsinstelling inschakelt op een externe desktopserver, heeft deze invloed op de omleiding van de opgegeven apparaten van een externe desktopclient naar de externe desktopserver. Als u deze beleidsinstelling uitschakelt of niet configureert, kan Windows apparaten installeren en bijwerken, voor zover dat door andere beleidsinstellingen is toegestaan of verboden.
   
   **Standaardinstelling**: installatie van hardwareapparaten blokkeren  
 
-    Wanneer *installatie van hardwareapparaten blokkeren* wordt geselecteerd, zijn de volgende instellingen beschikbaar.
-    - **Overeenkomende hardwareapparaten verwijderen**    
-    Deze instelling is alleen beschikbaar wanneer *Installatie hardwareapparaten op installatieklasse* is ingesteld op *Installatie van hardwareapparaten blokkeren*.  
+  Wanneer *installatie van hardwareapparaten blokkeren* wordt geselecteerd, zijn de volgende instellingen beschikbaar.
+  - **Overeenkomende hardwareapparaten verwijderen**    
+  Deze instelling is alleen beschikbaar wanneer *Installatie hardwareapparaten op installatieklasse* is ingesteld op *Installatie van hardwareapparaten blokkeren*.  
 
-      **Standaardinstelling**: *Geen standaardconfiguratie*  
-  
-    - **Hardwareapparaat-id's die zijn geblokkeerd**  
-      Deze instelling is alleen beschikbaar wanneer *Installatie hardwareapparaten op installatieklasse* is ingesteld op *Installatie van hardwareapparaten blokkeren*.
-      
-      **Standaardinstelling**: *Geen standaardconfiguratie*  
+    **Standaardinstelling**: *Geen standaardconfiguratie*  
+
+  - **Hardwareapparaat-id's die zijn geblokkeerd**  
+    Deze instelling is alleen beschikbaar wanneer *Installatie hardwareapparaten op installatieklasse* is ingesteld op *Installatie van hardwareapparaten blokkeren*.
+    
+    **Standaardinstelling**: *Geen standaardconfiguratie*  
 
 ### <a name="device-lock"></a>Apparaatvergrendeling  
 
@@ -992,12 +992,12 @@ Zie [Beleids-CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/wind
   
 - **Gedrag bij vragen om uitbreiding van bevoegdheden van beheerders**  
   Met deze beleidsinstelling wordt het gedrag voor het vragen om uitbreiding van bevoegdheden voor beheerders gedefinieerd. U kunt kiezen uit de volgende opties: 
-    - *Verhogen zonder te vragen*: hiermee kunnen bevoegde accounts een bewerking uitvoeren waarvoor uitbreiding van bevoegdheden zonder toestemming of referenties is vereist. Opmerking: gebruik deze optie alleen in de meest beperkte omgevingen. 
-    - *Vragen om referenties op het beveiligde bureaublad*: wanneer voor een bewerking onrechtmatige uitbreiding van toegangsrechten is vereist, wordt de gebruiker op het beveiligde bureaublad gevraagd een bevoegde gebruikersnaam en bevoegd wachtwoord in te voeren. Als de gebruiker geldige referenties invoert, wordt de bewerking voortgezet met de hoogst beschikbare bevoegdheid. 
-    - *Vragen om toestemming op het beveiligde bureaublad*: wanneer voor een bewerking voor een niet-Windows-toepassing uitbreiding van toegangsrechten is vereist, wordt de gebruiker op het beveiligde bureaublad gevraagd om Toestaan of Weigeren te selecteren. Als de gebruiker Toestaan selecteert, wordt de bewerking voortgezet met de hoogst beschikbare bevoegdheid voor de gebruiker. 
-    - *Vragen om referenties*: wanneer voor een bewerking onrechtmatige uitbreiding van toegangsrechten is vereist, wordt de gebruiker gevraagd een gebruikersnaam en wachtwoord voor een account met beheerdersrechten in te voeren. Als de gebruiker geldige referenties invoert, wordt de bewerking voortgezet met de toepasselijke bevoegdheid. 
-    - *Vragen om toestemming*: wanneer voor een bewerking uitbreiding van toegangsrechten is vereist, wordt de gebruiker gevraagd om Toestaan of Weigeren te selecteren. Als de gebruiker Toestaan selecteert, wordt de bewerking voortgezet met de hoogst beschikbare bevoegdheid voor de gebruiker.  
-    - *Vragen om toestemming voor niet-Windows binaire bestanden*: wanneer voor een bewerking voor een niet-Windows-toepassing uitbreiding van toegangsrechten is vereist, wordt de gebruiker op het beveiligde bureaublad gevraagd om Toestaan of Weigeren te selecteren. Als de gebruiker Toestaan selecteert, wordt de bewerking voortgezet met de hoogst beschikbare bevoegdheid voor de gebruiker.   
+  - *Verhogen zonder te vragen*: hiermee kunnen bevoegde accounts een bewerking uitvoeren waarvoor uitbreiding van bevoegdheden zonder toestemming of referenties is vereist. Opmerking: gebruik deze optie alleen in de meest beperkte omgevingen. 
+  - *Vragen om referenties op het beveiligde bureaublad*: wanneer voor een bewerking onrechtmatige uitbreiding van toegangsrechten is vereist, wordt de gebruiker op het beveiligde bureaublad gevraagd een bevoegde gebruikersnaam en bevoegd wachtwoord in te voeren. Als de gebruiker geldige referenties invoert, wordt de bewerking voortgezet met de hoogst beschikbare bevoegdheid. 
+  - *Vragen om toestemming op het beveiligde bureaublad*: wanneer voor een bewerking voor een niet-Windows-toepassing uitbreiding van toegangsrechten is vereist, wordt de gebruiker op het beveiligde bureaublad gevraagd om Toestaan of Weigeren te selecteren. Als de gebruiker Toestaan selecteert, wordt de bewerking voortgezet met de hoogst beschikbare bevoegdheid voor de gebruiker. 
+  - *Vragen om referenties*: wanneer voor een bewerking onrechtmatige uitbreiding van toegangsrechten is vereist, wordt de gebruiker gevraagd een gebruikersnaam en wachtwoord voor een account met beheerdersrechten in te voeren. Als de gebruiker geldige referenties invoert, wordt de bewerking voortgezet met de toepasselijke bevoegdheid. 
+  - *Vragen om toestemming*: wanneer voor een bewerking uitbreiding van toegangsrechten is vereist, wordt de gebruiker gevraagd om Toestaan of Weigeren te selecteren. Als de gebruiker Toestaan selecteert, wordt de bewerking voortgezet met de hoogst beschikbare bevoegdheid voor de gebruiker.  
+  - *Vragen om toestemming voor niet-Windows binaire bestanden*: wanneer voor een bewerking voor een niet-Windows-toepassing uitbreiding van toegangsrechten is vereist, wordt de gebruiker op het beveiligde bureaublad gevraagd om Toestaan of Weigeren te selecteren. Als de gebruiker Toestaan selecteert, wordt de bewerking voortgezet met de hoogst beschikbare bevoegdheid voor de gebruiker.   
   
   **Standaardinstelling**: vragen om toestemming op het beveiligde bureaublad
   
@@ -1010,12 +1010,12 @@ Zie [Beleids-CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/wind
   **Standaardinstelling**: NTLM V2-128-versleuteling vereisen
   
 - **Gedrag bij verwijderen van smartcard**  
-    Met deze beveiligingsinstelling bepaalt u wat er gebeurt wanneer de smartcard van een aangemelde gebruiker uit de lezer van de smartcard wordt verwijderd. U kunt kiezen uit de volgende opties:
-     - *Geen actie*. 
-     - *Werkstation vergrendelen*: het werkstation wordt vergrendeld wanneer de smartcard wordt verwijderd, zodat gebruikers de ruimte kunnen verlaten, hun smartcard met zich mee kunnen nemen en nog steeds een beveiligde sessie kunnen beheren.
-     - *Afmelden forceren*: de gebruiker wordt automatisch afgemeld wanneer de smartcard wordt verwijderd.
-     - *Verbinding verbreken met sessie met Extern bureaublad*: als de smartcard wordt verwijderd, wordt de sessie verbroken zonder de gebruiker af te melden. Zo kan de gebruiker de smartcard plaatsen en de sessie later of op een andere met smartcardlezer uitgeruste computer hervatten zonder zich opnieuw te moeten aanmelden. Als de sessie lokaal is, werkt dit beleid op dezelfde manier als Werkstation vergrendelen.  <br><br>
-    
+  Met deze beveiligingsinstelling bepaalt u wat er gebeurt wanneer de smartcard van een aangemelde gebruiker uit de lezer van de smartcard wordt verwijderd. U kunt kiezen uit de volgende opties:
+  - *Geen actie*. 
+  - *Werkstation vergrendelen*: het werkstation wordt vergrendeld wanneer de smartcard wordt verwijderd, zodat gebruikers de ruimte kunnen verlaten, hun smartcard met zich mee kunnen nemen en nog steeds een beveiligde sessie kunnen beheren.
+  - *Afmelden forceren*: de gebruiker wordt automatisch afgemeld wanneer de smartcard wordt verwijderd.
+  - *Verbinding verbreken met sessie met Extern bureaublad*: als de smartcard wordt verwijderd, wordt de sessie verbroken zonder de gebruiker af te melden. Zo kan de gebruiker de smartcard plaatsen en de sessie later of op een andere met smartcardlezer uitgeruste computer hervatten zonder zich opnieuw te moeten aanmelden. Als de sessie lokaal is, werkt dit beleid op dezelfde manier als Werkstation vergrendelen.  <br><br>
+
   **Standaardinstelling**: Werkstation vergrendelen
   
 - **Anonieme inventarisatie van SAM-accounts en -shares blokkeren**  

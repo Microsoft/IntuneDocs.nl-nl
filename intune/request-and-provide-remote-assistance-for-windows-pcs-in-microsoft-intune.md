@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 41b6109d956272d6368ae294788a8bd54f2fb8f8
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549139"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353479"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Hulp op afstand voor Windows-pc's aanvragen en bieden
 
@@ -87,6 +87,6 @@ Wanneer u uw gebruikers helpt met problemen, is het mogelijk dat u af en toe de 
 
 4. In het dialoogvenster **Taakstatus** controleert u de huidige externe taken, de taakstatus, de apparaatnaam en eventuele gerapporteerde fouten.
 
-### <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie tevens
 
 [Algemene beheertaken voor Windows-pc's met de Intune-softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

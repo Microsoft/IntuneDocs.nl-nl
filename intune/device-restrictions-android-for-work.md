@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc91fc685c28beff38dc395dd83b60e99343af57
-ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
+ms.openlocfilehash: d4ab90a36254de49eb27e326086ffb137c782005
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67263681"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883421"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -56,7 +56,7 @@ In dit artikel vindt u een overzicht en beschrijving van de verschillende instel
 - **Gegevens beamen met NFC**: kies **Blokkeren** om te voorkomen dat met behulp van de NFC-technologie gegevens worden verzonden vanuit apps. **Niet geconfigureerd**: NFC kan worden gebruikt voor het delen van gegevens tussen apparaten.
 - **Foutopsporingsfuncties**: kies **Toestaan** om gebruikers de functies voor foutopsporing te laten gebruiken op het apparaat. **Niet geconfigureerd**: voorkomt dat gebruikers de functies voor foutopsporing kunnen gebruiken op het apparaat.
 - **Microfoon aanpassen**: kies **Blokkeren** om te voorkomen dat gebruikers de microfoon kunnen inschakelen of het volume van de microfoon kunnen aanpassen. **Niet geconfigureerd**: de gebruiker kan de microfoon van het apparaat gebruiken en het volume ervan aanpassen.
-- **E-mailadressen resetbeveiliging fabrieksinstellingen**: kies **E-mailadressen van Google-account**. Voer de e-mailadressen in van apparaatbeheerders die het apparaat kunnen ontgrendelen nadat dit is gewist. Plaats een puntkomma tussen de e-mailadressen, zoals `admin1@gmail.com;admin2@gmail.com`. Als u geen e-mailadres invoert, kan iedereen het apparaat ontgrendelen nadat de fabrieksinstellingen zijn hersteld. Deze e-mailberichten zijn alleen van toepassing als niet-gebruikers Fabrieksinstellingen terugzetten wordt uitgevoerd, zoals die wordt uitgevoerd de fabrieksinstellingen terug te zetten met behulp van het menu recovery.
+- **E-mailadressen resetbeveiliging fabrieksinstellingen**: kies **E-mailadressen van Google-account**. Voer de e-mailadressen in van apparaatbeheerders die het apparaat kunnen ontgrendelen nadat dit is gewist. Plaats een puntkomma tussen de e-mailadressen, zoals `admin1@gmail.com;admin2@gmail.com`. Als u geen e-mailadres invoert, kan iedereen het apparaat ontgrendelen nadat de fabrieksinstellingen zijn hersteld. Deze e-mail berichten zijn alleen van toepassing wanneer een niet-gebruikers fabrieks instelling is uitgevoerd, zoals het uitvoeren van een fabrieks instelling opnieuw instellen met het menu herstellen.
 - **Netwerknooduitgang**: kies **Inschakelen** als gebruikers de functie Netwerknooduitgang mogen inschakelen. Als er geen netwerkverbinding tot stand wordt gebracht bij het opstarten van het apparaat, vraagt de functie of er tijdelijk verbinding moet worden gemaakt met een netwerk en of het apparaatbeleid moet worden vernieuwd. Wanneer het beleid is toegepast, wordt het tijdelijke netwerk vergeten en gaat het apparaat verder met opstarten. Deze functie maakt in de volgende gevallen verbinding tussen een apparaat en netwerk:
   - Er bevindt zich geen geschikt netwerk in het laatste beleid.
   - Het apparaat wordt opgestart naar een app in de modus vergrendelingstaak.
@@ -101,7 +101,7 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
   > 
   > De app **Managed Home Screen** hoeft niet te zijn opgenomen in het configuratieprofiel, maar moet wel worden toegevoegd als een client-app. Wanneer de app **Managed Home Screen** wordt toegevoegd als een client-app, worden andere apps die u aan het configuratieprofiel toevoegt, weergegeven als pictogrammen in de app **Managed Home Screen**. 
   >
-  > Wanneer u meerdere Apps kioskmodus met beginscherm beheerd, is het mogelijk dat kiezer/phone-apps niet goed werkt. 
+  > Wanneer u de kiosk modus van meerdere apps met het beheerde Start scherm gebruikt, werken de apps in de telefoon kiezer mogelijk niet goed. 
 
   - Kies **Toevoegen** en selecteer uw apps in de lijst.
 
@@ -208,9 +208,9 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
     - **Pakket-id**: voer de pakket-id in van de app in Google Play. Als de URL voor de app in Google Play bijvoorbeeld `https://play.google.com/store/details?id=com.contosovpn.android.prod` is, is de pakket-id `com.contosovpn.android.prod`.
 
   > [!IMPORTANT]
-  >  - De VPN-client die u kiest moet op het apparaat worden geïnstalleerd en moet VPN per app in werkprofielen ondersteunen. Anders treedt er een fout op. 
-  >  - U dient de VPN-client-app goed te keuren in de **Beheerde Google Play Store**, de app te synchroniseren naar Intune en de app te implementeren op het apparaat. Nadat u dit hebt gedaan, is de app geïnstalleerd in het werkprofiel van de gebruiker.
-  >  - Er zijn mogelijk bekende problemen bij het gebruik van VPN per app met F5 Access voor Android 3.0.4. Zie [Releaseopmerkingen voor F5 Access voor Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) voor meer informatie.
+  > - De VPN-client die u kiest moet op het apparaat worden geïnstalleerd en moet VPN per app in werkprofielen ondersteunen. Anders treedt er een fout op. 
+  > - U dient de VPN-client-app goed te keuren in de **Beheerde Google Play Store**, de app te synchroniseren naar Intune en de app te implementeren op het apparaat. Nadat u dit hebt gedaan, is de app geïnstalleerd in het werkprofiel van de gebruiker.
+  > - Er zijn mogelijk bekende problemen bij het gebruik van VPN per app met F5 Access voor Android 3.0.4. Zie [Releaseopmerkingen voor F5 Access voor Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) voor meer informatie.
 
 - **Vergrendelingsmodus**: kies **Inschakelen** als u wilt afdwingen dat al het verkeer de VPN-tunnel gebruikt. Als er geen VPN-verbinding is ingesteld, heeft het apparaat geen toegang tot het netwerk.
 
@@ -315,9 +315,9 @@ Deze wachtwoordinstellingen zijn van toepassing op persoonlijke profielen op app
     - **Pakket-id**: voer de pakket-id in van de app in Google Play. Als de URL voor de app in Google Play bijvoorbeeld `https://play.google.com/store/details?id=com.contosovpn.android.prod` is, is de pakket-id `com.contosovpn.android.prod`.
 
   > [!IMPORTANT]
-  >  - De VPN-client die u kiest moet op het apparaat worden geïnstalleerd en moet VPN per app in werkprofielen ondersteunen. Anders treedt er een fout op. 
-  >  - U dient de VPN-client-app goed te keuren in de **Beheerde Google Play Store**, de app te synchroniseren naar Intune en de app te implementeren op het apparaat. Nadat u dit hebt gedaan, is de app geïnstalleerd in het werkprofiel van de gebruiker.
-  >  - Er zijn mogelijk bekende problemen bij het gebruik van VPN per app met F5 Access voor Android 3.0.4. Zie [Releaseopmerkingen voor F5 Access voor Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) voor meer informatie.
+  > - De VPN-client die u kiest moet op het apparaat worden geïnstalleerd en moet VPN per app in werkprofielen ondersteunen. Anders treedt er een fout op. 
+  > - U dient de VPN-client-app goed te keuren in de **Beheerde Google Play Store**, de app te synchroniseren naar Intune en de app te implementeren op het apparaat. Nadat u dit hebt gedaan, is de app geïnstalleerd in het werkprofiel van de gebruiker.
+  > - Er zijn mogelijk bekende problemen bij het gebruik van VPN per app met F5 Access voor Android 3.0.4. Zie [Releaseopmerkingen voor F5 Access voor Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) voor meer informatie.
 
 - **Vergrendelingsmodus**: kies **Inschakelen** als u wilt afdwingen dat al het verkeer de VPN-tunnel gebruikt. Als er geen VPN-verbinding is ingesteld, heeft het apparaat geen toegang tot het netwerk.
 

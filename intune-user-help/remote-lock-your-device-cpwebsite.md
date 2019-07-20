@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85435acffbad3117f6adbbafe60e1993b2d18bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b55368f5c512ff3efd4059d420717321729450ee
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835774"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884067"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Uw apparaat extern vergrendelen op de website van de bedrijfsportal
 
@@ -56,9 +56,9 @@ Na de bevestiging probeert de bedrijfsportal uw apparaat te vergrendelen. Het be
 
 De status Externe vergrendelen wordt op drie locaties weergegeven:
 
-   * Het meldingengebied van de website.
-   * De pagina **Details** voor het apparaat.
-   * De tegel met de naam van het apparaat in het paginagedeelte **Apparaten**.  
+* Het meldingengebied van de website.
+* De pagina **Details** voor het apparaat.
+* De tegel met de naam van het apparaat in het paginagedeelte **Apparaten**.  
 
 > [!Note]
 > Wacht enkele minuten als u de melding krijgt dat extern vergrendelen is mislukt. Probeer vervolgens opnieuw uw apparaat te vergrendelen. De status wordt weer gewijzigd in ‘Extern vergrendelen is in behandeling.’ Als ook de nieuwe poging niet werkt, neemt u contact op met het ondersteuningsteam van uw bedrijf voor hulp.

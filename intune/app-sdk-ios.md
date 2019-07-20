@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961470b9f5671dc39864dac45fdcb49862de4da9
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 673dd0cb751fcdd2a7036dc2bf52dd731a4b04ff
+ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735572"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306756"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
@@ -94,9 +94,9 @@ Het doel van de Intune App SDK voor iOS is het toevoegen van beheermogelijkheden
 
 Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
 
-1. **Optie 1: Framework (aanbevolen)** : als u Xcode 10.2 + gebruikt en uw app/extensie bevat SWIFT-code, een `IntuneMAMSwift.framework` koppeling `IntuneMAMSwiftStub.framework` en naar uw doel: `IntuneMAMSwift.framework` Sleep `IntuneMAMSwiftStub.framework` en naar **de Inge sloten De** lijst met binaire bestanden van het project doel.
+1. **Optie 1-Framework (aanbevolen)** : als u Xcode 10.2 + gebruikt en uw app/extensie bevat SWIFT-code, een `IntuneMAMSwift.framework` koppeling `IntuneMAMSwiftStub.framework` en naar uw doel: `IntuneMAMSwift.framework` Sleep `IntuneMAMSwiftStub.framework` en naar de lijst met **Inge sloten binaire bestanden** van de doel van het project.
 
-    U kunt ook `IntuneMAM.framework` een koppeling naar uw doel `IntuneMAM.framework` maken: **Sleep naar** de lijst met Inge sloten binaire bestanden van het project doel.
+    U kunt ook `IntuneMAM.framework` een koppeling naar uw doel `IntuneMAM.framework` maken: Sleep naar de lijst met **Inge sloten binaire bestanden** van het project doel.
 
    > [!NOTE]
    > Als u het framework gebruikt, moet u de simulatorarchitecturen handmatig verwijderen uit het universele framework voordat u uw app naar de App Store verzendt. Zie [Uw app naar de App Store verzenden](#submit-your-app-to-the-app-store) voor meer informatie.
@@ -116,7 +116,7 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
 
      ![Intune App SDK iOS: bundelresources kopiëren](./media/intune-app-sdk-ios-copy-bundle-resources.png)
      
-2. Als u een van de intune-Api's van SWIFT moet aanroepen, moet uw app/uitbrei ding de vereiste kopteksten van de intune SDK importeren via een overbruggings header van de doel-C. Als uw app/uitbrei ding nog geen header van doel-c-bridging bevat, kunt u er een `SWIFT_OBJC_BRIDGING_HEADER` opgeven via de instelling voor het maken van **de configuratie of door het Xcode** van de gebruikers interface van het veld doelstelling-c bridging. Uw bridging-header moet er ongeveer als volgt uitzien:
+2. Als u een van de intune-Api's van SWIFT moet aanroepen, moet uw app/uitbrei ding de vereiste kopteksten van de intune SDK importeren via een overbruggings header van de doel-C. Als uw app/uitbrei ding nog geen header van doel-c-bridging bevat, kunt u er een `SWIFT_OBJC_BRIDGING_HEADER` opgeven via de instelling voor het maken van de configuratie of door het Xcode van de gebruikers interface van het veld **doelstelling-c bridging** . Uw bridging-header moet er ongeveer als volgt uitzien:
 
    ```objc
       #import <IntuneMAMSwift/IntuneMAM.h>
@@ -162,15 +162,15 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
     
     c. Voeg `com.microsoft.adalcache` aan uw bestaande toegangsgroepen toe.
     
-        ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
+      ![Intune App SDK iOS: Sleutelhanger delen](./media/intune-app-sdk-ios-keychain-sharing.png)
     
     d. Als u het rechtenbestand rechtstreeks wilt bewerken om toegangsgroepen voor de sleutelketen te maken, in plaats van met behulp van de Xcode-UI die hierboven wordt weergegeven, voegt u vóór de toegangsgroepen voor de sleutelketen `$(AppIdentifierPrefix)` toe (Xcode doet dit automatisch). Bijvoorbeeld:
     
-        - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-        - `$(AppIdentifierPrefix)com.microsoft.adalcache`
+      - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+      - `$(AppIdentifierPrefix)com.microsoft.adalcache`
     
-        > [!NOTE]
-        > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
+      > [!NOTE]
+      > Een rechtenbestand is een uniek XML-bestand voor uw mobiele toepassing. Het wordt gebruikt om speciale machtigingen en mogelijkheden in uw iOS-app op te geven. Als uw app geen nog een rechtenbestand had, zou het inschakelen van het delen van de sleutelhanger (stap 3) ervoor moeten zorgen dat Xcode er één voor uw app genereert. Zorg ervoor dat de bundel-id van de app het eerste item in de lijst is.
 
 6. Neem elk protocol dat door uw mobiele app wordt doorgegeven aan `UIApplication canOpenURL` op in de matrix `LSApplicationQueriesSchemes` van het bestand Info.plist van uw app. Zorg ervoor dat u de wijzigingen opslaat voordat u doorgaat met de volgende stap.
 
@@ -742,7 +742,7 @@ Ja. Onlangs is het open-source-voorbeeld-app [Wagr voor iOS](https://github.com/
 
 ### <a name="how-can-i-troubleshoot-my-app"></a>Hoe kan ik problemen met mijn app oplossen?
 
-De intune SDK voor iOS 9.0.3 + ondersteunt de mogelijkheid om een diagnostische console toe te voegen in de mobiele app voor het testen van beleids regels en logboek fouten. `IntuneMAMDiagnosticConsole.h` Hiermee definieert `IntuneMAMDiagnosticConsole` u de klasse-interface, die ontwikkel aars kunnen gebruiken om de intune-diagnose console weer te geven. Hierdoor kunnen eind gebruikers of ontwikkel aars tijdens het testen intune-logboeken verzamelen en delen om te helpen bij het vaststellen van het probleem dat ze kunnen hebben. Deze API is optioneel voor integrators.
+De intune SDK voor iOS 9.0.3 + ondersteunt de mogelijkheid om een diagnostische console toe te voegen in de mobiele app voor het testen van beleids regels en logboek fouten. `IntuneMAMDiagnosticConsole.h`Hiermee definieert `IntuneMAMDiagnosticConsole` u de klasse-interface, die ontwikkel aars kunnen gebruiken om de intune-diagnose console weer te geven. Hierdoor kunnen eind gebruikers of ontwikkel aars tijdens het testen intune-logboeken verzamelen en delen om te helpen bij het vaststellen van het probleem dat ze kunnen hebben. Deze API is optioneel voor integrators.
 
 ## <a name="submit-your-app-to-the-app-store"></a>Uw app naar de App Store verzenden
 

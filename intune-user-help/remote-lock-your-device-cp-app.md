@@ -17,12 +17,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ada708c3ea6f9e8d835b667ac8162037c1de05f9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e8a3ee1aaf2c115d99e0eedfeb187ba23f623264
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836486"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884122"
 ---
 # <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>Uw apparaat vergrendelen vanuit de bedrijfsportal-app voor Windows 10
 
@@ -32,11 +32,11 @@ Vergrendel een verloren of gestolen apparaat extern vanuit de bedrijfsportal-app
 
 Extern vergrendelen wordt ondersteund op apparaten waarop het volgende wordt uitgevoerd:  
 
-  * Android
-  * iOS
-  * macOS
-  * Windows 10 Mobile (als voor het apparaat al een wachtwoordcode is ingesteld)
-  * Windows Phone 8.1 (als voor het apparaat al een wachtwoordcode is ingesteld) 
+* Android
+* iOS
+* macOS
+* Windows 10 Mobile (als voor het apparaat al een wachtwoordcode is ingesteld)
+* Windows Phone 8.1 (als voor het apparaat al een wachtwoordcode is ingesteld) 
   
 ## <a name="remote-lock-device"></a>Apparaat extern vergrendelen
 Voer de volgende stappen uit om uw apparaat te vergrendelen vanuit de bedrijfsportal-app.  

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acad6b0fa343bdbcc722929886a8e68a4fa4d8bc
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713297"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885068"
 ---
 # <a name="review-client-app-protection-logs"></a>Logboeken voor beveiliging van de client-app controleren
 
@@ -72,5 +72,5 @@ In de volgende tabel ziet u de naam en een uitleg van de instellingen die worden
 
 ## <a name="next-steps"></a>Volgende stappen
 
- - Zie [Wat zijn beleidsregels voor de beveiliging van apps?](app-protection-policy.md) voor meer informatie over beleid voor app-beveiliging.
- - Intune biedt een aantal hulpprogramma's om u te helpen bij het oplossen van problemen in uw omgeving. Zie [Gebruikers helpen met behulp van de portal voor probleemoplossing](help-desk-operators.md) voor meer informatie.
+- Zie [Wat zijn beleidsregels voor de beveiliging van apps?](app-protection-policy.md) voor meer informatie over beleid voor app-beveiliging.
+- Intune biedt een aantal hulpprogramma's om u te helpen bij het oplossen van problemen in uw omgeving. Zie [Gebruikers helpen met behulp van de portal voor probleemoplossing](help-desk-operators.md) voor meer informatie.

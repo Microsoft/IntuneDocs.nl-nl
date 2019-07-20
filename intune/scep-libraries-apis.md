@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2b324c8c6e1687b8ce5563aa85c155e21fc197
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040717"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882388"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API's gebruiken om CA's van derden voor SCEP aan Intune toe te voegen
 
@@ -176,8 +176,8 @@ Genereert:
 
 **Beveiligingsopmerkingen**  
 
-  - Als deze methode een uitzondering genereert, mag de SCEP-server **geen** certificaat aan de client verlenen.
-  - Het mislukken van de validatie van een SCEP-certificaataanvraag kan duiden op een probleem in de Intune-infrastructuur. Ook kan dit een teken zijn dat een aanvaller een certificaat probeert te krijgen.
+- Als deze methode een uitzondering genereert, mag de SCEP-server **geen** certificaat aan de client verlenen.
+- Het mislukken van de validatie van een SCEP-certificaataanvraag kan duiden op een probleem in de Intune-infrastructuur. Ook kan dit een teken zijn dat een aanvaller een certificaat probeert te krijgen.
 
 ##### <a name="sendsuccessnotification-method"></a>SendSuccessNotification-methode
 
@@ -217,8 +217,8 @@ Genereert:
 
 **Beveiligingsopmerkingen**
 
-  - Als deze methode een uitzondering genereert, mag de SCEP-server **geen** certificaat aan de client verlenen.
-  - Het mislukken van de validatie van een SCEP-certificaataanvraag kan duiden op een probleem in de Intune-infrastructuur. Ook kan dit een teken zijn dat een aanvaller een certificaat probeert te krijgen.
+- Als deze methode een uitzondering genereert, mag de SCEP-server **geen** certificaat aan de client verlenen.
+- Het mislukken van de validatie van een SCEP-certificaataanvraag kan duiden op een probleem in de Intune-infrastructuur. Ook kan dit een teken zijn dat een aanvaller een certificaat probeert te krijgen.
 
 ##### <a name="sendfailurenotification-method"></a>SendFailureNotification-methode
 
@@ -254,8 +254,8 @@ Genereert:
 
 **Beveiligingsopmerkingen**
 
-  - Als deze methode een uitzondering genereert, mag de SCEP-server **geen** certificaat aan de client verlenen.
-  - Het mislukken van de validatie van een SCEP-certificaataanvraag kan duiden op een probleem in de Intune-infrastructuur. Ook kan dit een teken zijn dat een aanvaller een certificaat probeert te krijgen.
+- Als deze methode een uitzondering genereert, mag de SCEP-server **geen** certificaat aan de client verlenen.
+- Het mislukken van de validatie van een SCEP-certificaataanvraag kan duiden op een probleem in de Intune-infrastructuur. Ook kan dit een teken zijn dat een aanvaller een certificaat probeert te krijgen.
 
 ##### <a name="setsslsocketfactory-method"></a>SetSslSocketFactory-methode
 

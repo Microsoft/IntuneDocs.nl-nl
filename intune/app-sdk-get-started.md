@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 428d9c333bb45d1f8456154104209690a95fb508
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529180"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885096"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -90,24 +90,24 @@ U hebt een van de volgende handleidingen voor ontwikkelaars nodig om de App Intu
 
 
 ## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>Uw mobiele iOS- of Android-app geschikt maken voor voorwaardelijke toegang op basis van een app
- 
- Als u uw app geschikt hebt gemaakt voor het app-beveiligingsbeleid, is daarnaast het volgende vereist voor uw app om deze correct te laten functioneren met voorwaardelijke toegang op basis van een app voor Azure ActiveDirectory (AAD):
- 
- * De app is gebouwd met de [Azure Active Directory-verificatiebibliotheek](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) en geschikt gemaakt voor AAD Broker-verificatie.
- 
- * De [AAD-client-id](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) voor uw app moet uniek zijn voor de iOS- en Android-platformen.
- 
+
+Als u uw app geschikt hebt gemaakt voor het app-beveiligingsbeleid, is daarnaast het volgende vereist voor uw app om deze correct te laten functioneren met voorwaardelijke toegang op basis van een app voor Azure ActiveDirectory (AAD):
+
+* De app is gebouwd met de [Azure Active Directory-verificatiebibliotheek](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) en geschikt gemaakt voor AAD Broker-verificatie.
+
+* De [AAD-client-id](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) voor uw app moet uniek zijn voor de iOS- en Android-platformen.
+
 ## <a name="configure-telemetry-for-your-app"></a>Telemetrie configureren voor uw app
 
 Met Microsoft Intune worden gebruiksstatistieken verzameld voor uw app.
 
 * **Intune App SDK voor iOS**: de SDK registreert standaard SDK-telemetriegegevens van gebruiksgebeurtenissen. Deze gegevens worden naar Microsoft Intune verzonden.
 
-    * Als u ervoor kiest geen SDK-telemetriegegevens vanuit uw app naar Microsoft Intune te verzenden, moet u het vastleggen van telemetriegegevens uitschakelen door 'JA' in te schakelen voor de eigenschap `MAMTelemetryDisabled` in het IntuneMAMSettings-woordenboek .
+  * Als u ervoor kiest geen SDK-telemetriegegevens vanuit uw app naar Microsoft Intune te verzenden, moet u het vastleggen van telemetriegegevens uitschakelen door 'JA' in te schakelen voor de eigenschap `MAMTelemetryDisabled` in het IntuneMAMSettings-woordenboek .
 
 * **Intune App SDK voor Android**: de Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-app registreert standaard telemetriegegevens. Deze gegevens worden naar Microsoft Intune verzonden. Geheel volgens het Microsoft-beleid worden er geen persoonsgegevens verzameld. 
 
-    * Als eindgebruikers ervoor kiezen deze gegevens niet te verzenden, moeten ze telemetrie uitschakelen onder Instellingen op de bedrijfsportal-app. Zie [Gegevensverzameling door Microsoft uitschakelen](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android) voor meer informatie. 
+  * Als eindgebruikers ervoor kiezen deze gegevens niet te verzenden, moeten ze telemetrie uitschakelen onder Instellingen op de bedrijfsportal-app. Zie [Gegevensverzameling door Microsoft uitschakelen](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android) voor meer informatie. 
 
 ## <a name="line-of-business-app-version-numbers"></a>Versienummers van line-of-business-apps
 
@@ -119,11 +119,11 @@ Het volledige versienummer duidt een specifieke release van de app aan. Het numm
 
 Het volledige versienummer bevat twee onderdelen:
 
- - **Versie**  
-   Het versienummer is het door mensen leesbare releasenummer van de app. Dit wordt door eindgebruikers gebruikt om de verschillende releases van de app aan te duiden.
+- **Versie**  
+  Het versienummer is het door mensen leesbare releasenummer van de app. Dit wordt door eindgebruikers gebruikt om de verschillende releases van de app aan te duiden.
 
- - **Buildnummer**  
-    Het buildnummer is een intern nummer dat voor de detectie van apps en het beheer van apps via een programma kan worden gebruikt. Het buildnummer verwijst naar een iteratie van de app die refereert aan wijzigingen in de code.
+- **Buildnummer**  
+  Het buildnummer is een intern nummer dat voor de detectie van apps en het beheer van apps via een programma kan worden gebruikt. Het buildnummer verwijst naar een iteratie van de app die refereert aan wijzigingen in de code.
 
 ### <a name="version-and-build-number-in-android-and-ios"></a>Versie- en buildnummer in Android en iOS
 
@@ -139,16 +139,16 @@ Buildnummer|CFBundleVersion|PackageVersionCode |Met dit nummer wordt een iterati
 #### <a name="ios"></a>iOS
 
 - **CFBundleShortVersionString**  
-    Hiermee wordt het releaseversienummer van de bundel opgegeven. Dit nummer duidt een releaseversie van de app aan. Met dit nummer kunnen eindgebruikers aan de app refereren.
+  Hiermee wordt het releaseversienummer van de bundel opgegeven. Dit nummer duidt een releaseversie van de app aan. Met dit nummer kunnen eindgebruikers aan de app refereren.
 - **CFBundleVersion**  
-    De buildversie van de bundel, die een iteratie van de bundel aanduidt. Het nummer duidt eventueel een release of een releasebundel aan. Met dit nummer vindt detectie van apps plaats.
+  De buildversie van de bundel, die een iteratie van de bundel aanduidt. Het nummer duidt eventueel een release of een releasebundel aan. Met dit nummer vindt detectie van apps plaats.
 
 #### <a name="android"></a>Android
 
- - **PackageVersionName**  
-    Het versienummer dat zichtbaar is voor gebruikers. Dit kenmerk kan als onbewerkte tekenreeks of als referentie aan een tekenreeksbron worden ingesteld. De tekenreeks is enkel bedoeld om aan gebruikers te worden getoond.
- - **PackageVersionCode**  
-    Een intern versienummer. Dit nummer wordt alleen gebruikt om te bepalen of een versie meer recent is dan een andere, waarbij hogere nummers meer recente versies aangeven. Dit is niet de versie 
+- **PackageVersionName**  
+  Het versienummer dat zichtbaar is voor gebruikers. Dit kenmerk kan als onbewerkte tekenreeks of als referentie aan een tekenreeksbron worden ingesteld. De tekenreeks is enkel bedoeld om aan gebruikers te worden getoond.
+- **PackageVersionCode**  
+  Een intern versienummer. Dit nummer wordt alleen gebruikt om te bepalen of een versie meer recent is dan een andere, waarbij hogere nummers meer recente versies aangeven. Dit is niet de versie 
 
 ## <a name="next-steps-after-integration"></a>Vervolgstappen na de integratie
 
@@ -157,11 +157,11 @@ Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integr
 
 * **Microsoft Intune-testaccount**: als u uw door Intune beheerde app wilt testen aan de hand van beveiligingsfuncties voor Intune-apps, hebt u een Microsoft Intune-account nodig.
 
-    * Als u een ISV bent die apps voor de iOS of Android Store wilt inschakelen voor Intune-beleid voor app-beveiliging, ontvangt u een promotiecode nadat u de registratie bij Microsoft Intune hebt voltooid. Dit wordt beschreven in de registratiestap. Met de promotiecode kunt u zich aanmelden voor een Microsoft Intune-proefversie met uitgebreid gebruik van één jaar.
+  * Als u een ISV bent die apps voor de iOS of Android Store wilt inschakelen voor Intune-beleid voor app-beveiliging, ontvangt u een promotiecode nadat u de registratie bij Microsoft Intune hebt voltooid. Dit wordt beschreven in de registratiestap. Met de promotiecode kunt u zich aanmelden voor een Microsoft Intune-proefversie met uitgebreid gebruik van één jaar.
 
-    * Als u een Line-Of-Business-app ontwikkelt die niet naar de Store word verzonden, wordt ervan uitgegaan dat u via uw organisatie toegang hebt tot Microsoft Intune. U kunt zich ook registreren voor een gratis proefversie van één maand via [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
+  * Als u een Line-Of-Business-app ontwikkelt die niet naar de Store word verzonden, wordt ervan uitgegaan dat u via uw organisatie toegang hebt tot Microsoft Intune. U kunt zich ook registreren voor een gratis proefversie van één maand via [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
 
-    * Zorg ervoor, als u uw app op een mobiel apparaat met een eindgebruikeraccount test, dat u dat account een Intune-licentie hebt gegeven op de website van ht Microsoft 365-beheercentrum nadat u bent aangemeld met een beheerdersaccount. Zie [Microsoft Intune-licentie toewijzen](https://docs.microsoft.com/intune/licenses-assign).
+  * Zorg ervoor, als u uw app op een mobiel apparaat met een eindgebruikeraccount test, dat u dat account een Intune-licentie hebt gegeven op de website van ht Microsoft 365-beheercentrum nadat u bent aangemeld met een beheerdersaccount. Zie [Microsoft Intune-licentie toewijzen](https://docs.microsoft.com/intune/licenses-assign).
 
 * **Intune-beleid voor app-beveiliging**: als u uw app wilt testen aan de hand van alle Intune-beleid voor app-beveiliging, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](app-protection-policy-settings-android.md). Als uw app in de Intune SDK is geïntegreerd, maar nog niet als een doel-app wordt vermeld in de Azure-portal, kunt u een beleid erop toepassen door de optie + Meer apps te selecteren en de bundel-id (iOS) of pakketnaam (Android) in het tekstvak op te geven.
 
