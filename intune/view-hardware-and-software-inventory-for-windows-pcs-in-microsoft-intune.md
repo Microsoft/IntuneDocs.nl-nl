@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ba447153996383b3f057c4776b643a7a4ccd48b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2b9d17426bf3dde3fd1684c12113adf0c5095d5f
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547975"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353299"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Hardware- en software-inventaris voor Windows-computers weergeven
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> De informatie in dit onderwerp geldt alleen voor Windows-desktops die u als pc's beheert met behulp van de Intune-softwareclient. Als u wilt weergeven-inventaris voor Windows-pc's die zijn ingeschreven als mobiele apparaten, Zie [Apparaatdetails bekijken in Intune](device-inventory.md).
+> De informatie in dit onderwerp geldt alleen voor Windows-desktops die u als pc's beheert met behulp van de Intune-softwareclient. Zie [Details van apparaten weer geven in intune](device-inventory.md)als u de inventarisatie wilt weer geven voor Windows-pc's die zijn Inge schreven als mobiele apparaten.
 
 Intune verzamelt gedetailleerde informatie over de hardware en software voor desktops die u als pc's beheert met behulp van de Intune-softwareclient. Gebruik de informatie in de volgende procedures om het volgende te leren maken:
 
@@ -71,6 +71,6 @@ Intune verzamelt gedetailleerde informatie over de hardware en software voor des
 
     Het dialoogvenster **Taakstatus** wordt weergegeven met huidige externe taken, taakstatus, apparaatnaam en gerapporteerde fouten, en het bevat een koppeling naar informatie voor probleemoplossing.
 
-### <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie tevens
 
 [Algemene beheertaken voor Windows-pc's met de Intune-softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

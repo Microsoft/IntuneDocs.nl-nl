@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402649"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353337"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemen met Endpoint Protection en mogelijke oplossingen in Microsoft Intune
 
@@ -34,7 +34,7 @@ Gebeurtenislogboeken en foutcodes bekijken om [problemen met Windows Defender AV
 
 ## <a name="common-intune-errors-and-possible-resolutions"></a>Veelvoorkomende fouten in Intune en mogelijke oplossingen
 
-#### <a name="endpoint-protection-engine-unavailable"></a>Endpoint Protection-engine niet beschikbaar
+### <a name="endpoint-protection-engine-unavailable"></a>Endpoint Protection-engine niet beschikbaar
 
 **Mogelijke oorzaak**: de Intune Endpoint Protection-engine is beschadigd of verwijderd.
 
@@ -45,7 +45,7 @@ Gebeurtenislogboeken en foutcodes bekijken om [problemen met Windows Defender AV
 - In Configuratiescherm > Programma's selecteert u **Microsoft Intune Endpoint Protection-agent**. Verwijder de toepassing.
 - Tijdens de volgende updatesynchronisatie detecteert de Microsoft Online Management-updatebeheerder het ontbrekende programma en installeert het opnieuw op het geplande installatietijdstip.
 
-#### <a name="features-are-disabled"></a>De functies zijn uitgeschakeld
+### <a name="features-are-disabled"></a>De functies zijn uitgeschakeld
 
 U krijgt mogelijk een bericht te zien waarin staat dat sommige functies zijn uitgeschakeld. Deze berichten kunnen verschijnen als Intune Endpoint Protection of Windows Defender is uitgeschakeld door een beheerder die een configuratieprofiel gebruikt. Of het programma is uitgeschakeld door een eindgebruiker op het apparaat. Mogelijke berichten:
 
@@ -63,19 +63,19 @@ U krijgt mogelijk een bericht te zien waarin staat dat sommige functies zijn uit
 - [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus)
 - [Eindgebruikers: realtime-beveiliging voor toegang tot bedrijfsresources inschakelen](/intune-user-help/turn-on-defender-windows)
 
-#### <a name="malware-definitions-out-of-date"></a>De malware-definities zijn verouderd
+### <a name="malware-definitions-out-of-date"></a>De malware-definities zijn verouderd
 
 Deze status wordt weergegeven als de malwaredefinities op het apparaat langer dan 14 dagen niet zijn bijgewerkt. Het bericht kan bijvoorbeeld aangeven dat het apparaat niet met internet is verbonden of dat de malwaredefinities verouderd zijn.
 
 **Mogelijke oplossingen**: als de malwaredefinities verouderd zijn, werkt u de definities bij met [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
 
-#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Volledige of snelle scan is achterstallig
+### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Volledige of snelle scan is achterstallig
 
 Er is al 14 dagen geen volledige of snelle scan uitgevoerd. Dit scenario kan plaatsvinden als het apparaat tijdens een volledige scan opnieuw wordt opgestart.
 
 **Mogelijke oplossingen**: als een scan achterstallig is, kunt u een eenmalige scan uitvoeren of terugkerende scans plannen. Zie [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
 
-#### <a name="another-endpoint-protection-application-running"></a>Er wordt een andere eindpuntbeveiligingstoepassing uitgevoerd
+### <a name="another-endpoint-protection-application-running"></a>Er wordt een andere eindpuntbeveiligingstoepassing uitgevoerd
 
 Er wordt een andere eindpuntbeveiligingstoepassing uitgevoerd en het apparaat is in orde.
 

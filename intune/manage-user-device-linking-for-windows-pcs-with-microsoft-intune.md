@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0eca9dfddbf9ea2c68cf58b1da64d9b046df7e77
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402899"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353641"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Koppeling tussen gebruiker en apparaat voor Windows-pc's beheren
 
@@ -32,7 +32,7 @@ De informatie in dit onderwerp geldt alleen voor Windows-desktops die u als pc's
 
 Voordat u software voor een gebruiker kunt implementeren, moet u de gebruiker aan een pc koppelen. U kunt een gebruiker aan meerdere pc's koppelen, maar elke pc kan aan slechts één gebruiker worden gekoppeld. Gebruikers worden automatisch gekoppeld aan pc's die ze registreren bij Intune met behulp van de bedrijfsportal.
 
-Zie voor meer informatie over de hoofdgebruiker van een apparaat, [primaire gebruiker zoeken](find-primary-user.md).
+Zie voor meer informatie over de primaire gebruiker van een apparaat [primaire gebruiker zoeken](find-primary-user.md).
 
 Een gebruiker aan een pc koppelen:
 
@@ -53,6 +53,6 @@ Een gebruiker aan een pc koppelen:
 > [!TIP]
 > Als u de mogelijkheden van eindgebruikers om zichzelf aan pc's te koppelen wilt beperken, schakelt u de optie **Koppelingen tussen gebruikers en computers beperken** in het beleid voor **Instellingen Microsoft Intune-agent** in.
 
-### <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie tevens
 
 [Algemene beheertaken voor Windows-pc's met de Intune-softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

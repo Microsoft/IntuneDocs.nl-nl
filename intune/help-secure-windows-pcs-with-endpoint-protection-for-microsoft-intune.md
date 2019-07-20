@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 61e0a7fa4fa63e17a1fa4165042d9e82a2ffacc2
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548768"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354099"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune
 
@@ -145,8 +145,8 @@ Met de instelling **Bestandsextensies die uitgesloten moeten worden bij het scan
 
 ### <a name="specify-microsoft-active-protection-service-settings"></a>Instellingen voor Microsoft Active Protection Service opgeven
 Microsoft Active Protection Service is een onlinecommunity die helpt bepalen hoe u op mogelijke bedreigingen reageert. De community helpt ook de verspreiding van nieuwe malware-infecties te stoppen. U kunt zich **aanmelden bij Microsoft Active Protection Service** door **Ja** te selecteren en vervolgens uw **lidmaatschapsniveau** op te geven:
-  - **Basis**: verzendt basisinformatie over de gedetecteerde malware naar Microsoft. Dit omvat waar de software van afkomstig is, de acties die u toepast of die Endpoint Protection automatisch toepast en of de acties met succes zijn uitgevoerd.
-  - **Geavanceerd**: verzendt meer informatie over malware, spyware en mogelijk ongewenste software naar Microsoft. Dit omvat informatie over de locatie van de software, bestandsnamen, hoe de software werkt en hoe deze uw computer heeft beïnvloed.
+- **Basis**: verzendt basisinformatie over de gedetecteerde malware naar Microsoft. Dit omvat waar de software van afkomstig is, de acties die u toepast of die Endpoint Protection automatisch toepast en of de acties met succes zijn uitgevoerd.
+- **Geavanceerd**: verzendt meer informatie over malware, spyware en mogelijk ongewenste software naar Microsoft. Dit omvat informatie over de locatie van de software, bestandsnamen, hoe de software werkt en hoe deze uw computer heeft beïnvloed.
 
 U kunt ook **Dynamische definities ontvangen, gebaseerd op rapporten van Microsoft Active Protection Service**.
 
@@ -197,5 +197,5 @@ U kunt met Intune een volledige of snelle malwarescan uitvoeren met Endpoint Pro
 ## <a name="need-more-help"></a>Meer hulp nodig?
 Zie [Problemen met Endpoint Protection in Microsoft Intune oplossen](troubleshoot-endpoint-protection-in-microsoft-intune.md) voor meer hulp en ondersteuning.
 
-### <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
 [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)

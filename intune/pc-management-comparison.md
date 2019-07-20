@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: fec72636a5d76ce4eb1fa0c28978eeb70d1e61b5
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044518"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353553"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Het beheer van Windows-pc's als computers of mobiele apparaten vergelijken
 
@@ -49,7 +49,7 @@ Organisaties kunnen Microsoft Intune gebruiken voor het beheren van Windows-pc's
 |**Health Attestation**|Niet beschikbaar|Beschikbaar|
 
 
-### <a name="advantages-of-mdm-windows-pc-management"></a>Voordelen van MDM-beheer voor Windows-pc's
+## <a name="advantages-of-mdm-windows-pc-management"></a>Voordelen van MDM-beheer voor Windows-pc's
 Het beheer van Windows-pc's met het moderne Mobile Device Management heeft de volgende voordelen:
 - **Schaalbaarheid**: MDM-beheer kan worden opgeschaald voor Intune-cloudbeheer. De Intune-softwareclient is beperkt tot 7000 pc's.
 - **Eenvoud**: maakt gebruik van moderne beheermogelijkheden van het besturingssysteem zonder afhankelijk te zijn van een gedownloade softwareclient

@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70818e038be915a1b756eb391129e6cdb74fb069
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a94c327c8595e83ec9808ed41e788c5756d5510a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548656"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353872"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Windows-pc's up-to-date houden met software-updates in Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> De informatie in dit onderwerp geldt alleen voor Windows-desktops die u als pc's beheert met behulp van de Intune-softwareclient. Als u wilt dat voor het beheren van updates voor Windows-pc's die zijn ingeschreven als mobiele apparaten, Zie [software-updates in Intune beheren](windows-update-for-business-configure.md).
+> De informatie in dit onderwerp geldt alleen voor Windows-desktops die u als pc's beheert met behulp van de Intune-softwareclient. Als u updates wilt beheren voor Windows-computers die zijn Inge schreven als mobiele apparaten, raadpleegt u [software-updates beheren in intune](windows-update-for-business-configure.md).
 
 Met Microsoft Intune kunt u beheerde computers op een aantal manieren helpen beveiligen. Zo kunt u software-updates beheren die de computers up-to-date houden door ervoor te zorgen dat de nieuwste patches en software-updates snel worden geïnstalleerd.
 
@@ -260,5 +260,5 @@ Wanneer u een update uit de lijst selecteert, zijn opdrachten beschikbaar waarme
 6. Controleer het detailvenster onder aan de pagina **Alle updates** op herinneringsberichten voor de update.
 
 
-### <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie tevens
 [Beleid voor het beveiligen van Windows-pc's](policies-to-protect-windows-pcs-in-microsoft-intune.md)
