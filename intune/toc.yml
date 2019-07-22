@@ -382,6 +382,8 @@
               href: privacy-data-view-correct.md
             - name: 'Controleren, exporteren en verwijderen'
               href: privacy-data-audit-export-delete.md
+        - name: Apparaten versleutelen
+          href: encrypt-devices.md
         - name: Voorwaardelijke toegang
           href: conditional-access.md
           items:
