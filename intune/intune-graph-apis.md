@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f182d356c151c569b9cf49adfe2f2c0cc34f1a54
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b655dc64958350623ea62caf848043f6baf3787c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548909"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883300"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD gebruiken voor toegang tot de Intune-API's in Microsoft Graph
 
@@ -30,13 +30,13 @@ Voor toegang tot de Intune-API's in Microsoft Graph is het volgende vereist:
 
 - Een toepassings-ID met:
 
-    - Machtiging voor het aanroepen van Azure AD en Microsoft Graph API's.
-    - Machtigingsbereiken die relevant zijn voor de specifieke toepassingstaken.
+  - Machtiging voor het aanroepen van Azure AD en Microsoft Graph API's.
+  - Machtigingsbereiken die relevant zijn voor de specifieke toepassingstaken.
 
 - Gebruikersreferenties met:
 
-    - Machtiging voor toegang tot de Azure AD-tenant die is gekoppeld aan de toepassing.
-    - Rolmachtigingen die zijn vereist voor ondersteuning van de machtigingsbereiken van de toepassing.
+  - Machtiging voor toegang tot de Azure AD-tenant die is gekoppeld aan de toepassing.
+  - Rolmachtigingen die zijn vereist voor ondersteuning van de machtigingsbereiken van de toepassing.
 
 - Verlenen van machtiging aan de app door de eindgebruiker om toepassingstaken uit te voeren voor hun Azure-tenant.
 
@@ -61,7 +61,7 @@ Zie voor meer informatie:
 
 U registreert als volgt apps voor het gebruik van de Microsoft Graph API:
 
-1. Aanmelden bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) met beheerdersreferenties.
+1. Meld u aan bij [intune](https://go.microsoft.com/fwlink/?linkid=2090973) met beheerders referenties.
 
     U kunt het volgende gebruiken:
     - De beheerdersaccount van de tenant.
@@ -164,10 +164,10 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 - Instelling **Toegang inschakelen**: __Microsoft Intune-apps lezen__
 
 - Staat leestoegang toe aan de volgende entiteitseigenschappen en -status:
-    - Client-apps
-    - Mobiele app-categorieën
-    - App-beveiligingsbeleid
-    - App-configuraties
+  - Client-apps
+  - Mobiele app-categorieën
+  - App-beveiligingsbeleid
+  - App-configuraties
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
@@ -177,19 +177,19 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 
 - Staat ook wijzigingen toe aan de volgende entiteiten:
 
-    - Client-apps
-    - Mobiele app-categorieën
-    - App-beveiligingsbeleid
-    - App-configuraties
+  - Client-apps
+  - Mobiele app-categorieën
+  - App-beveiligingsbeleid
+  - App-configuraties
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
 - Instelling **Toegang inschakelen**: __Microsoft Intune-apparaatconfiguratie en -beleid lezen__
 
 - Staat leestoegang toe aan de volgende entiteitseigenschappen en -status:
-    - Apparaatconfiguratie
-    - Nalevingsbeleid voor apparaten
-    - Meldingsberichten
+  - Apparaatconfiguratie
+  - Nalevingsbeleid voor apparaten
+  - Meldingsberichten
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
@@ -198,34 +198,34 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 - Hiermee kunt u dezelfde bewerkingen uitvoeren als met __DeviceManagementConfiguration.Read.All__
 
 - Apps kunnen ook de volgende entiteiten maken, toewijzen, verwijderen en wijzigen:
-    - Apparaatconfiguratie
-    - Nalevingsbeleid voor apparaten
-    - Meldingsberichten
+  - Apparaatconfiguratie
+  - Nalevingsbeleid voor apparaten
+  - Meldingsberichten
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
 - Instelling **Toegang inschakelen**: __Externe acties die gebruikers beïnvloeden uitvoeren op apparaten met Microsoft Intune__
 
 - De volgende externe acties zijn toegestaan op een beheerd apparaat:
-    - Buiten gebruik stellen
-    - Wissen
-    - Wachtwoordcode opnieuw instellen/herstellen
-    - Vergrendelen op afstand
-    - Modus Apparaat verloren in-/uitschakelen
-    - Pc opruimen
-    - Opnieuw opstarten
-    - Gebruiker verwijderen van het gedeelde apparaat
+  - Buiten gebruik stellen
+  - Wissen
+  - Wachtwoordcode opnieuw instellen/herstellen
+  - Vergrendelen op afstand
+  - Modus Apparaat verloren in-/uitschakelen
+  - Pc opruimen
+  - Opnieuw opstarten
+  - Gebruiker verwijderen van het gedeelde apparaat
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
 - Instelling **Toegang inschakelen**: __Microsoft Intune-apparaten lezen__
 
 - Staat leestoegang toe aan de volgende entiteitseigenschappen en -status:
-    - Beheerd apparaat
-    - Apparaatcategorie
-    - Gedetecteerde app
-    - Externe acties
-    - Malware-informatie
+  - Beheerd apparaat
+  - Apparaatcategorie
+  - Gedetecteerde app
+  - Externe acties
+  - Malware-informatie
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
@@ -234,22 +234,22 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 - Hiermee kunt u dezelfde bewerkingen uitvoeren als met __DeviceManagementManagedDevices.Read.All__
 
 - Apps kunnen ook de volgende entiteiten maken, verwijderen en wijzigen:
-    - Beheerd apparaat
-    - Apparaatcategorie
+  - Beheerd apparaat
+  - Apparaatcategorie
 
 - De volgende externe acties zijn ook toegestaan:
-    - Apparaten zoeken
-    - Activeringsvergrendeling overslaan
-    - Hulp op afstand vragen
+  - Apparaten zoeken
+  - Activeringsvergrendeling overslaan
+  - Hulp op afstand vragen
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
 - Instelling **Toegang inschakelen**: __Microsoft Intune RBAC-instellingen lezen__
 
 - Staat leestoegang toe aan de volgende entiteitseigenschappen en -status:
-    - Roltoewijzingen
-    - Roldefinities
-    - Resourcebewerkingen
+  - Roltoewijzingen
+  - Roldefinities
+  - Resourcebewerkingen
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
@@ -258,24 +258,24 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 - Hiermee kunt u dezelfde bewerkingen uitvoeren als met __DeviceManagementRBAC.Read.All__
 
 - Apps kunnen ook de volgende entiteiten maken, toewijzen, verwijderen en wijzigen:
-    - Roltoewijzingen
-    - Roldefinities
+  - Roltoewijzingen
+  - Roldefinities
 
 ### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
 - Instelling **Toegang inschakelen**: __Microsoft Intune-configuratie lezen__
 
 - Staat leestoegang toe aan de volgende entiteitseigenschappen en -status:
-    - Apparaatregistratie
-    - Apple Push Notification-certificaat
-    - Apple Device Enrollment Program
-    - Apple Volume Purchase Program
-    - Exchange Connector
-    - Voorwaarden
-    - Onkostenbeheer telecommunicatie
-    - Cloud PKI
-    - Huisstijl
-    - Mobile Threat Defense
+  - Apparaatregistratie
+  - Apple Push Notification-certificaat
+  - Apple Device Enrollment Program
+  - Apple Volume Purchase Program
+  - Exchange Connector
+  - Voorwaarden
+  - Onkostenbeheer telecommunicatie
+  - Cloud PKI
+  - Huisstijl
+  - Mobile Threat Defense
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
@@ -284,16 +284,16 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 - Hiermee kunt u dezelfde bewerkingen uitvoeren als met DeviceManagementServiceConfig.Read.All_
 
 - Apps kunnen ook de volgende functies van Intune configureren:
-    - Apparaatregistratie
-    - Apple Push Notification-certificaat
-    - Apple Device Enrollment Program
-    - Apple Volume Purchase Program
-    - Exchange Connector
-    - Voorwaarden
-    - Onkostenbeheer telecommunicatie
-    - Cloud PKI
-    - Huisstijl
-    - Mobile Threat Defense
+  - Apparaatregistratie
+  - Apple Push Notification-certificaat
+  - Apple Device Enrollment Program
+  - Apple Volume Purchase Program
+  - Exchange Connector
+  - Voorwaarden
+  - Onkostenbeheer telecommunicatie
+  - Cloud PKI
+  - Huisstijl
+  - Mobile Threat Defense
 
 ## <a name="azure-ad-authentication-examples"></a>Voorbeelden van Azure AD-verificatie
 
