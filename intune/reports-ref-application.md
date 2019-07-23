@@ -17,54 +17,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46e90d422afb8ebbd356031d4815708b5b0768f0
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: a5436de6b972e5cbe8b2b17d42f0974cb38df47e
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713145"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313817"
 ---
 # <a name="reference-for-application-entities"></a>Naslag voor toepassingsentiteiten
 
 De categorie **Toepassing** bevat entiteiten voor mobiele apparaten waarmee gegevens worden bijgehouden, zoals:
 
-  - Versies van een app
-  - Installatiebron van een app
-  - Type ontwikkelaars die een app hebben gemaakt
-  - Beheerde softwaretypen voor een app, bijvoorbeeld **sidecar** of **desktop**
-  - VPP-status (Volume Purchasing Program) van een app
+- Versies van een app
+- Installatiebron van een app
+- Type ontwikkelaars die een app hebben gemaakt
+- Beheerde softwaretypen voor een app, bijvoorbeeld **sidecar** of **desktop**
+- VPP-status (Volume Purchasing Program) van een app
 
-## <a name="apprevision"></a>AppRevision
+## <a name="apprevisions"></a>appRevisions
 
-De entiteit **AppRevision** bevat een overzicht van alle versies van apps.
+De entiteit **AppRevision** biedt een overzicht van alle versies van apps.
 
 | Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
-| AppKey |De unieke id van de app. |123 |
-| ApplicationID |De unieke id van de app, vergelijkbaar met AppKey, maar dit is een natuurlijke sleutel |b66bc706-ffff-7437-0340-032819502773 |
-| Revisie |De versie zoals vermeld door de beheerder tijdens het uploaden van het binaire bestand. |2 |
-| Titel |De titel van de app. |Excel |
-| Uitgever |De uitgever van de app. |Microsoft |
-| UploadState |De uploadstatus van de app. |1 |
-| AppTypeKey |Verwijzing naar AppType zoals beschreven in de volgende sectie | |
-| VppProgramTypeKey |Verwijzing naar VppProgramType zoals hieronder beschreven. | |
-| CreationTime |Het tijdstip waarop deze revisie is gemaakt. |11/23/2016 12:00:00 AM |
-| ModifiedTime |De laatste keer dat er iets aan deze revisie is gewijzigd. |11/23/2016 12:00:00 AM |
-| Grootte |De grootte van het binaire bestand. | |
-| StartDateInclusiveUTC |De datum en tijd in UTC waarop deze app-revisie is gemaakt in het datawarehouse. |11/23/2016 12:00:00 AM |
-| EndDateExclusiveUTC |De datum en tijd in UTC waarop deze app-revisie verouderd is geraakt. |11/23/2016 12:00:00 AM |
+| appKey |De unieke id van de app. |123 |
+| applicationId |De unieke id van de app, vergelijkbaar met AppKey, maar dit is een natuurlijke sleutel |b66bc706-ffff-7437-0340-032819502773 |
+| revision |De versie zoals vermeld door de beheerder tijdens het uploaden van het binaire bestand. |2 |
+| title |De titel van de app. |Excel |
+| publisher |De uitgever van de app. |Microsoft |
+| uploadState |De uploadstatus van de app. |1 |
+| appTypeKey |Verwijzing naar AppType zoals beschreven in de volgende sectie | |
+| vppProgramTypeKey |Verwijzing naar VppProgramType zoals hieronder beschreven. | |
+| creationTime |Het tijdstip waarop deze revisie is gemaakt. |11/23/2016 12:00:00 AM |
+| modifiedTime |De laatste keer dat er iets aan deze revisie is gewijzigd. |11/23/2016 12:00:00 AM |
+| grootte |De grootte van het binaire bestand. | |
+| startDateInclusiveUTC |De datum en tijd in UTC waarop deze app-revisie is gemaakt in het datawarehouse. |11/23/2016 12:00:00 AM |
+| endDateExclusiveUTC |De datum en tijd in UTC waarop deze app-revisie verouderd is geraakt. |11/23/2016 12:00:00 AM |
 | IsCurrent |Geeft aan of deze app-versie actueel is of niet aanwezig is in het datawarehouse. |Waar/onwaar |
-| RowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop deze app-versie het laatst is gewijzigd in het datawarehouse. |11/23/2016 12:00:00 AM |
+| rowLastModifiedDateTimeUTC |De datum en tijd in UTC waarop deze app-versie het laatst is gewijzigd in het datawarehouse. |11/23/2016 12:00:00 AM |
 
 ## <a name="apptypes"></a>AppTypes
 
-De entiteit **AppTypes** vermeldt de installatiebron van een app.
+De entiteit **appType** vermeldt de installatiebron van een app.
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
-| AppTypeID |De id voor het type |
-| AppTypeKey |De surrogaatsleutel voor de sleutel |
-| AppTypeName |App-type |
+| appTypeID |De id voor het type |
+| appTypeKey |De surrogaatsleutel voor de sleutel |
+| appTypeName |App-type |
 
 ### <a name="example"></a>Voorbeeld
 
@@ -85,15 +85,15 @@ De entiteit **AppTypes** vermeldt de installatiebron van een app.
 | 12 |Windows Phone LOB-app | Een Windows Phone Line-of-Business-app. |
 
 
-## <a name="vppprogramtypes"></a>VppProgramTypes
+## <a name="vppprogramtypes"></a>vppProgramTypes
 
-De entiteit **VppProgramTypes** bevat een lijst van mogelijke VPP-programmatypen voor een app.
+De entiteit **vppProgramTypes** bevat een lijst van mogelijke VPP-programmatypen voor een app.
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
-| VppProgramTypeID | De id voor het type. |
-| VppProgramTypeKey | De surrogaatsleutel voor de sleutel. |
-| VppProgramTypeName | Het type VPP-programma. |
+| vppProgramTypeID | De id voor het type. |
+| vppProgramTypeKey | De surrogaatsleutel voor de sleutel. |
+| vppProgramTypeName | Het type VPP-programma. |
 
 ### <a name="example"></a>Voorbeeld
 
@@ -105,27 +105,27 @@ De entiteit **VppProgramTypes** bevat een lijst van mogelijke VPP-programmatypen
 
 
 
-## <a name="applicationinventory"></a>ApplicationInventory
+## <a name="applicationinventories"></a>applicationInventories
 
-Met de entiteit **ApplicationInventory** worden de toepassingen weergegeven die zich op het moment van de inventarisatieverzameling op het apparaat bevinden.
+Met de entiteit **applicationInventory** worden de toepassingen weergegeven die zich op het moment van de inventarisatieverzameling op het apparaat bevinden.
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
-| DeviceKey | Dit is een verwijzing naar de tabel Device die de Intune-apparaat-id bevat. |
-| DateKey | Verwijzing naar datumtabel waarmee de dag van de inventarisatie wordt aangegeven. |
-| ApplicationName | De toepassingsnaam. |
-| ApplicationVersion | Versie van de toepassing. |
-| BundleSize | De grootte van de app in bytes. |
+| deviceKey | Dit is een verwijzing naar de tabel Device die de Intune-apparaat-id bevat. |
+| dateKey | Verwijzing naar datumtabel waarmee de dag van de inventarisatie wordt aangegeven. |
+| applicationName | De toepassingsnaam. |
+| applicationVersion | Versie van de toepassing. |
+| bundleSize | De grootte van de app in bytes. |
 
-## <a name="mobileappinstallstate"></a>MobileAppInstallState
+## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 
-De entiteit **MobileAppInstallState** vertegenwoordigt de installatiestatus van een mobiele toepassing nadat deze is toegewezen aan een groep apparaten, gebruikers of beide.
+De entiteit **mobileAppInstallState** vertegenwoordigt de installatiestatus van een mobiele toepassing nadat deze is toegewezen aan een groep apparaten, gebruikers of beide.
 
 | Eigenschap | Beschrijving |
 |---|---|
-| AppInstallStateKey | De unieke id van de installatiestatus van de app voor uw account. |
-| AppInstallState | Enum-waarde van de installatiestatus van de app. |
-| AppInstallStateName | Naam van de installatiestatus van de app. |
+| appInstallStateKey | De unieke id van de installatiestatus van de app voor uw account. |
+| appInstallState | Enum-waarde van de installatiestatus van de app. |
+| appInstallStateName | Naam van de installatiestatus van de app. |
 
 
 

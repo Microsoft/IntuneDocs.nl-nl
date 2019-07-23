@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 07/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,35 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b1fe488ed7d295a40b42c1fb17a76693004be4d
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d5231daf1d28f94b6e2e1ef0c976c5b9f1877d22
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547922"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313752"
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
-De categorie **Devices** bevat entiteiten voor mobiele apparaten waarmee gegevens worden bijgehouden, zoals:
+De categorie **Apparaten** bevat entiteiten voor mobiele apparaten waarmee gegevens worden bijgehouden, zoals:
 
-  - Apparaattype
-  - Apparaatregistratie en registratiestatus
-  - Apparaateigendom
-  - Apparaatbeheerstatus
-  - Apparaatlidmaatschap voor Azure AD-status
-  - Status van inschrijving
-  - Historische informatie over het apparaat
-  - Inventarisatie van apps op het apparaat
+- Apparaattype
+- Apparaatregistratie en registratiestatus
+- Apparaateigendom
+- Apparaatbeheerstatus
+- Apparaatlidmaatschap voor Azure AD-status
+- Status van inschrijving
+- Historische informatie over het apparaat
+- Inventarisatie van apps op het apparaat
 
-## <a name="devicetypes"></a>DeviceTypes
+## <a name="devicetypes"></a>deviceTypes
 
-De entiteit **DeviceTypes** vertegenwoordigt het apparaattype waarnaar wordt verwezen door andere datawarehouse-entiteiten. Met het apparaattype wordt doorgaans het model, de fabrikant of een combinatie van beide beschreven.
+De entiteit **deviceTypes** vertegenwoordigt het apparaattype waarnaar wordt verwezen door andere datawarehouse-entiteiten. Met het apparaattype wordt doorgaans het model, de fabrikant of een combinatie van beide beschreven.
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
-| DeviceTypeID |Unieke id van het apparaattype |
-| DeviceTypeKey |Unieke id van het apparaattype in het datawarehouse - surrogaatsleutel |
-| DeviceTypeName |Apparaattype |
+| deviceTypeID |Unieke id van het apparaattype |
+| deviceTypeKey |Unieke id van het apparaattype in het datawarehouse - surrogaatsleutel |
+| deviceTypeName |Apparaattype |
 
 ### <a name="example"></a>Voorbeeld
 
@@ -73,7 +73,7 @@ De entiteit **DeviceTypes** vertegenwoordigt het apparaattype waarnaar wordt ver
 | 255 |Onbekend |Onbekend apparaattype |
 
 ## <a name="enrollmentactivities"></a>enrollmentActivities 
-De entiteit **EnrollmentActivity** geeft de activiteit van een apparaatinschrijving aan.
+De entiteit **enrollmentActivity** geeft de activiteit van een apparaatinschrijving aan.
 
 | Eigenschap                      | Beschrijving                                                               |
 |-------------------------------|---------------------------------------------------------------------------|
@@ -87,7 +87,7 @@ De entiteit **EnrollmentActivity** geeft de activiteit van een apparaatinschrijv
 | count                         | Het totale aantal inschrijvingsactiviteiten dat overeenkomt met de bovenstaande classificaties.  |
 
 ## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
-De entiteit **EnrollmentEventStatus** geeft het resultaat van een apparaatinschrijving aan.
+De entiteit **enrollmentEventStatus** geeft het resultaat van een apparaatinschrijving aan.
 
 | Eigenschap                   | Beschrijving                                                                       |
 |----------------------------|-----------------------------------------------------------------------------------|
@@ -158,9 +158,9 @@ De entiteit **EnrollmentFailureReason** geeft een meer gedetailleerde redenen vo
 | FeatureNotSupported              | De gebruiker probeert een functie te gebruiken die nog niet is vrijgegeven voor alle klanten of die niet compatibel is met uw Intune-configuratie.                                                            |
 | UserAbandonment                  | De inschrijving is afgebroken door de eindgebruiker. (Onboarding is gestart door de eindgebruiker, maar kon niet tijdig worden voltooid)                                                                                           |
 | APNSCertificateExpired           | Apple-apparaten kunnen niet worden beheerd met een verlopen Apple MDM-pushcertificaat.                                                                                                                            |
-## <a name="ownertypes"></a>OwnerTypes
+## <a name="ownertypes"></a>ownerTypes
 
-Met de entiteit **EnrollmentTypes** wordt aangegeven of een apparaat bedrijfseigendom of privé-eigendom is of dat het niet bekend is wie de eigenaar is.
+Met de entiteit **enrollmentType** wordt aangegeven of een apparaat bedrijfseigendom of privé-eigendom is of dat het niet bekend is wie de eigenaar is.
 
 | Eigenschap  | Beschrijving | Voorbeeld |
 |---------|------------|--------|
@@ -171,9 +171,9 @@ Met de entiteit **EnrollmentTypes** wordt aangegeven of een apparaat bedrijfseig
 > [!Note]  
 > Bij het maken van dynamische groepen voor apparaten moet u voor de `ownerTypeName` in AzureAD de filterwaarde `deviceOwnership` instellen als `Company`. Zie [Regels voor apparaten](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) voor meer informatie. 
 
-## <a name="managementstates"></a>ManagementStates
+## <a name="managementstates"></a>managementStates
 
-De entiteit **ManagementStates** verschaft informatie over de status van het apparaat. Informatie kan nuttig zijn wanneer er externe acties zijn toegepast, het apparaat is gekraakt of geroot.
+De entiteit **managementStates** verschaft informatie over de status van het apparaat. Informatie kan nuttig zijn wanneer er externe acties zijn toegepast, het apparaat is gekraakt of geroot.
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
@@ -198,15 +198,15 @@ De entiteit **ManagementStates** verschaft informatie over de status van het app
 | 10 |RetireCanceled | De opdracht voor buiten gebruik stellen is geannuleerd. |
 | 11 |Discovered | Het apparaat is onlangs gedetecteerd door Intune. Wanneer er voor de eerste keer wordt ingecheckt, krijgt het de status Beheerd. |
 
-## <a name="managementagenttypes"></a>ManagementAgentTypes
+## <a name="managementagenttypes"></a>managementAgentTypes
 
-De entiteit **ManagementAgentTypes** vertegenwoordigt de agents die worden gebruikt om een apparaat te beheren.
+De entiteit **managementAgentTypes** vertegenwoordigt de agents die worden gebruikt om een apparaat te beheren.
 
 | Eigenschap  | Beschrijving |
 |---------|------------|
-| ManagementAgentTypeID | Unieke id van het type beheeragent. |
-| ManagementAgentTypeKey | Unieke id van het type beheeragent in het datawarehouse - surrogaatsleutel. |
-| ManagementAgentTypeName |Hiermee wordt aangegeven wat voor soort agent wordt gebruikt om het apparaat te beheren. |
+| managementAgentTypeID | Unieke id van het type beheeragent. |
+| managementAgentTypeKey | Unieke id van het type beheeragent in het datawarehouse - surrogaatsleutel. |
+| managementAgentTypeName |Hiermee wordt aangegeven wat voor soort agent wordt gebruikt om het apparaat te beheren. |
 
 ### <a name="example"></a>Voorbeeld
 
@@ -220,76 +220,64 @@ De entiteit **ManagementAgentTypes** vertegenwoordigt de agents die worden gebru
 | 8 |ConfigManagerClient | Het apparaat wordt beheerd door de System Center Configuration Manager-agent |
 | 16 |Onbekend | Onbekend type beheeragent |
 
-## <a name="devices"></a>Apparaten
+## <a name="devices"></a>devices
 
-Met de entiteit **Devices** worden alle geregistreerde apparaten voor beheer en de bijbehorende eigenschappen weergegeven.
+Met de entiteit **devices** worden alle geregistreerde apparaten voor beheer en de bijbehorende eigenschappen weergegeven.
 
 |          Eigenschap          |                                                                                       Beschrijving                                                                                      |
 |:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| DeviceKey                  | Unieke id van het apparaat in het datawarehouse - surrogaatsleutel.                                                                                                               |
-| DeviceId                   | Unieke id van het apparaat.                                                                                                                                                     |
-| DeviceName                 | Naam van het apparaat op platforms waarop het benoemen van een apparaat is toegestaan. Op andere platforms maakt Intune een naam op basis van andere eigenschappen. Dit kenmerk is niet beschikbaar voor alle apparaten. |
-| DeviceTypeKey              | Sleutel van het kenmerk voor het apparaattype voor dit apparaat.                                                                                                                                    |
-| DeviceRegistrationState    | Sleutel van het kenmerk voor de clientregistratiestatus voor dit apparaat.                                                                                                                      |
-| OwnerTypeKey               | Sleutel van het kenmerk voor het type eigenaar voor dit apparaat: zakelijk, persoonlijk of onbekend.                                                                                                    |
-| EnrolledDateTime           | De datum en tijd waarop het apparaat is ingeschreven.                                                                                                                                         |
-| LastSyncDateTime           | Laatste bekende keer dat een apparaat is ingecheckt bij Intune.                                                                                                                                              |
-| ManagementAgentKey         | Sleutel van de beheeragent die is gekoppeld aan dit apparaat.                                                                                                                             |
-| ManagementStateKey         | Sleutel van de aan dit apparaat gekoppelde beheerstatus waarmee de laatste status van een externe actie wordt aangegeven of dat het apparaat is gekraakt of geroot.                                                |
-| AzureADDeviceId            | De Azure-apparaat-id voor dit apparaat.                                                                                                                                                  |
-| AzureADRegistered          | Of het apparaat is geregistreerd bij Azure Active Directory.                                                                                                                             |
-| DeviceCategoryKey          | Sleutel van de categorie die is gekoppeld aan dit apparaat.                                                                                                                                     |
-| DeviceEnrollmentType       | Sleutel van het registratietype dat is gekoppeld aan dit apparaat (geeft de registratiemethode aan).                                                                                             |
-| ComplianceStateKey         | Sleutel van de Nalevingsstatus die is gekoppeld aan dit apparaat.                                                                                                                             |
-| OSVersion                  | Versie van het besturingssysteem van het apparaat.                                                                                                                                                |
-| EasDeviceId                | De Exchange ActiveSync-id van het apparaat.                                                                                                                                                  |
-| SerialNumber               | SerialNumber                                                                                                                                                                           |
-| UserId                     | De unieke id voor de gebruiker die is gekoppeld aan het apparaat.                                                                                                                           |
-| RowLastModifiedDateTimeUTC | De datum en tijd in UTC waarop dit apparaat het laatst is gewijzigd in het datawarehouse.                                                                                                       |
-| Fabrikant               | Fabrikant van het apparaat                                                                                                                                                             |
-| Model                      | Model van het apparaat                                                                                                                                                                    |
-| OperatingSystem            | Het besturingssysteem van het apparaat. Windows, iOS, enzovoort.                                                                                                                                   |
-| IsDeleted                  | Binaire code om weer te geven of het apparaat is verwijderd of niet.                                                                                                                                 |
-| AndroidSecurityPatchLevel  | Niveau Android-beveiligingspatch                                                                                                                                                           |
+| deviceKey                  | Unieke id van het apparaat in het datawarehouse - surrogaatsleutel.                                                                                                               |
+| deviceId                   | Unieke id van het apparaat.                                                                                                                                                     |
+| deviceName                 | Naam van het apparaat op platforms waarop het benoemen van een apparaat is toegestaan. Op andere platforms maakt Intune een naam op basis van andere eigenschappen. Dit kenmerk is niet beschikbaar voor alle apparaten. |
+| deviceTypeKey              | Sleutel van het kenmerk voor het apparaattype voor dit apparaat.                                                                                                                                    |
+| deviceRegistrationState    | Sleutel van het kenmerk voor de clientregistratiestatus voor dit apparaat.                                                                                                                      |
+| ownerTypeKey               | Sleutel van het kenmerk voor het type eigenaar voor dit apparaat: zakelijk, persoonlijk of onbekend.                                                                                                    |
+| enrolledDateTime           | De datum en tijd waarop het apparaat is ingeschreven.                                                                                                                                         |
+| lastSyncDateTime           | Laatste bekende keer dat een apparaat is ingecheckt bij Intune.                                                                                                                                              |
+| managementAgentKey         | Sleutel van de beheeragent die is gekoppeld aan dit apparaat.                                                                                                                             |
+| managementStateKey         | Sleutel van de aan dit apparaat gekoppelde beheerstatus waarmee de laatste status van een externe actie wordt aangegeven of dat het apparaat is gekraakt of geroot.                                                |
+| azureADDeviceId            | De Azure-apparaat-id voor dit apparaat.                                                                                                                                                  |
+| azureADRegistered          | Of het apparaat is geregistreerd bij Azure Active Directory.                                                                                                                             |
+| deviceCategoryKey          | Sleutel van de categorie die is gekoppeld aan dit apparaat.                                                                                                                                     |
+| deviceEnrollmentType       | Sleutel van het registratietype dat is gekoppeld aan dit apparaat (geeft de registratiemethode aan).                                                                                             |
+| complianceStateKey         | Sleutel van de Nalevingsstatus die is gekoppeld aan dit apparaat.                                                                                                                             |
+| osVersion                  | Versie van het besturingssysteem van het apparaat.                                                                                                                                                |
+| easDeviceId                | De Exchange ActiveSync-id van het apparaat.                                                                                                                                                  |
+| serialNumber               | SerialNumber                                                                                                                                                                           |
+| userId                     | De unieke id voor de gebruiker die is gekoppeld aan het apparaat.                                                                                                                           |
+| rowLastModifiedDateTimeUTC | De datum en tijd in UTC waarop dit apparaat het laatst is gewijzigd in het datawarehouse.                                                                                                       |
+| manufacturer               | Fabrikant van het apparaat                                                                                                                                                             |
+| model                      | Model van het apparaat                                                                                                                                                                    |
+| operatingSystem            | Het besturingssysteem van het apparaat. Windows, iOS, enzovoort.                                                                                                                                   |
+| isDeleted                  | Binaire code om weer te geven of het apparaat is verwijderd of niet.                                                                                                                                 |
+| androidSecurityPatchLevel  | Niveau Android-beveiligingspatch                                                                                                                                                           |
 | MEID                       | MEID                                                                                                                                                                                   |
 | isSupervised               | De supervisiestatus van het apparaat                                                                                                                                                               |
-| FreeStorageSpaceInBytes    | Beschikbare opslag in bytes.                                                                                                                                                                 |
-| TotalStorageSpaceInBytes   | Totale opslag in bytes.                                                                                                                                                                |
-| EncryptionState            | De versleutelingsstatus van het apparaat.                                                                                                                                                      |
-| SubscriberCarrier          | Provider van abonnee van het apparaat                                                                                                                                                       |
-| PhoneNumber                | Telefoonnummer van het apparaat                                                                                                                                                             |
+| freeStorageSpaceInBytes    | Beschikbare opslag in bytes.                                                                                                                                                                 |
+| totalStorageSpaceInBytes   | Totale opslag in bytes.                                                                                                                                                                |
+| encryptionState            | De versleutelingsstatus van het apparaat.                                                                                                                                                      |
+| subscriberCarrier          | Provider van abonnee van het apparaat                                                                                                                                                       |
+| phoneNumber                | Telefoonnummer van het apparaat                                                                                                                                                             |
 | IMEI                       | IMEI                                                                                                                                                                                   |
-| CellularTechnology         | Mobiele telefoontechnologie van het apparaat                                                                                                                                                    |
+| cellularTechnology         | Mobiele telefoontechnologie van het apparaat                                                                                                                                                    |
 | WiFiMacAddress             | MAC-adres Wi-Fi                                                                                                                                                                              |
+| ICCD                       | Geïntegreerde circuit kaart-id                                                                                                                                                     |
 
-## <a name="devicepropertyhistory"></a>DevicePropertyHistory
+## <a name="devicepropertyhistories"></a>devicePropertyHistories
 
-De entiteit **DevicePropertyHistory** heeft dezelfde eigenschappen als de apparatentabel en dagelijkse momentopnamen van elke apparaatrecord per dag voor de afgelopen 90 dagen. De kolom DateKey geeft de dag voor elke rij aan.
+De entiteit **devicePropertyHistory** heeft dezelfde eigenschappen als de apparatentabel en dagelijkse momentopnamen van elke apparaatrecord per dag voor de afgelopen 90 dagen. De kolom DateKey geeft de dag voor elke rij aan.
 
 |          Eigenschap          |                                                                                      Beschrijving                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| DateKey                    | Verwijzing naar datumtabel waarmee de dag wordt aangegeven.                                                                                                                                          |
-| DeviceKey                  | Unieke id van het apparaat in het datawarehouse - surrogaatsleutel. Dit is een verwijzing naar de apparaattabel die de Intune-apparaat-id bevat.                               |
-| DeviceName                 | Naam van het apparaat op platforms waarop het benoemen van een apparaat is toegestaan. Op andere platforms maakt Intune een naam op basis van andere eigenschappen. Dit kenmerk is niet beschikbaar voor alle apparaten. |
-| DeviceRegistrationStateKey | Sleutel van het kenmerk voor de apparaatregistratiestatus voor dit apparaat.                                                                                                                    |
-| OwnerTypeKey               | Sleutel van het kenmerk voor het type eigenaar voor dit apparaat: zakelijk, persoonlijk of onbekend.                                                                                                  |
-| ManagementStateKey         | Sleutel van de aan dit apparaat gekoppelde beheerstatus, waarmee de laatste status van een externe actie wordt aangegeven of dat het apparaat is gekraakt of geroot.                                                |
-| AzureADRegistered          | Of het apparaat is geregistreerd bij Azure Active Directory.                                                                                                                             |
-| ComplianceStateKey         | Een sleutel voor de ComplianceState.                                                                                                                                                            |
+| dateKey                    | Verwijzing naar datumtabel waarmee de dag wordt aangegeven.                                                                                                                                          |
+| deviceKey                  | Unieke id van het apparaat in het datawarehouse - surrogaatsleutel. Dit is een verwijzing naar de apparaattabel die de Intune-apparaat-id bevat.                               |
+| deviceName                 | Naam van het apparaat op platforms waarop het benoemen van een apparaat is toegestaan. Op andere platforms maakt Intune een naam op basis van andere eigenschappen. Dit kenmerk is niet beschikbaar voor alle apparaten. |
+| deviceRegistrationStateKey | Sleutel van het kenmerk voor de apparaatregistratiestatus voor dit apparaat.                                                                                                                    |
+| ownerTypeKey               | Sleutel van het kenmerk voor het type eigenaar voor dit apparaat: zakelijk, persoonlijk of onbekend.                                                                                                  |
+| managementStateKey         | Sleutel van de aan dit apparaat gekoppelde beheerstatus, waarmee de laatste status van een externe actie wordt aangegeven of dat het apparaat is gekraakt of geroot.                                                |
+| azureADRegistered          | Of het apparaat is geregistreerd bij Azure Active Directory.                                                                                                                             |
+| complianceStateKey         | Een sleutel voor de ComplianceState.                                                                                                                                                            |
 | OSVersion                  | Versie besturingssysteem.                                                                                                                                                                          |
-| JailBroken                 | Of het apparaat jailbroken of geroot is.                                                                                                                                         |
-| DeviceCategoryKey          | Sleutel van het kenmerk voor de apparaatcategorie voor dit apparaat. 
-
-## <a name="applicationinventory"></a>ApplicationInventory
-
-Met de entiteit **ApplicationInventory** worden de apps weergegeven die zich op het moment van de inventarisatieverzameling op het apparaat bevinden.
-
-
-|      Eigenschap      |                       Beschrijving                        |
-|--------------------|----------------------------------------------------------|
-|     DeviceKey      |              Een verwijzing naar de apparatentabel.               |
-|   ApplicationKey   | ? (overgenomen van ExchangeDeviceService\DeviceApplication). |
-|  ApplicationName   | ? (overgenomen van ExchangeDeviceService\DeviceApplication). |
-| ApplicationVersion | ? (overgenomen van ExchangeDeviceService\DeviceApplication). |
-|     BundleSize     | ? (overgenomen van ExchangeDeviceService\DeviceApplication). |
+| jailBroken                 | Of het apparaat jailbroken of geroot is.                                                                                                                                         |
+| deviceCategoryKey          | Sleutel van het kenmerk voor de apparaatcategorie voor dit apparaat. 
 

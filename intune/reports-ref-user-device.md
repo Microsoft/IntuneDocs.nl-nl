@@ -17,27 +17,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7401b5da7629addf03498afd44033a59839d39e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c8d24716f65d5ff8afba5fc0a89cfef082712429
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045324"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313673"
 ---
 # <a name="reference-for-user-device-association-entity"></a>Naslaginformatie voor entiteit gebruikersapparaatkoppelingen
 
-De entiteit **UserDeviceAssociation** bevat gebruikersapparaatkoppelingen in uw organisatie.
+De entiteit **userDeviceAssociation** bevat gebruikersapparaatkoppelingen in uw organisatie.
 
-## <a name="userdeviceassociation"></a>UserDeviceAssociation
+## <a name="userdeviceassociations"></a>userDeviceAssociations
 
 
 |        Naam        |                                           Beschrijving                                            |        Voorbeeld         |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
-|      UserKey       |              Een unieke id van gebruiker in het datawarehouse. (surrogaatsleutel).               |          123           |
-|     DeviceKey      |                      Een unieke id van het apparaat in het datawarehouse.                      |          123           |
-| CreatedDateTimeUTC |           De datum en tijd wanneer de gebruikersapparaatkoppeling is gemaakt. Hiervoor wordt de UTC-notatie gebruikt.           | 11/23/2016 12:00:00 AM |
-|     IsDeleted      | Geeft aan dat de gebruiker het apparaat heeft uitgeschreven en dat de koppeling niet meer actueel is. |       Waar/onwaar       |
-|  EndedDateTimeUTC  |              De datum en tijd in UTC waarop IsDeleted is gewijzigd in <strong>Waar</strong>.               | 23-06-2017 12.00.00 |
+|      userKey       |              Een unieke id van gebruiker in het datawarehouse. (surrogaatsleutel).               |          123           |
+|     deviceKey      |                      Een unieke id van het apparaat in het datawarehouse.                      |          123           |
+| createdDateTimeUTC |           De datum en tijd wanneer de gebruikersapparaatkoppeling is gemaakt. Hiervoor wordt de UTC-notatie gebruikt.           | 11/23/2016 12:00:00 AM |
+|     isDeleted      | Geeft aan dat de gebruiker het apparaat heeft uitgeschreven en dat de koppeling niet meer actueel is. |       Waar/onwaar       |
+|  endedDateTimeUTC  |              De datum en tijd in UTC waarop IsDeleted is gewijzigd in <strong>Waar</strong>.               | 23-06-2017 12.00.00 |
 
 ## <a name="next-steps"></a>Volgende stappen
 

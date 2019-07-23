@@ -16,20 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549131"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354433"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-basislijninstellingen voor Intune
 
 Bekijk de basislijninstellingen voor Microsoft Defender Advanced Threat Protection (voorheen Windows Defender Advanced Threat Protection) die worden ondersteund door Microsoft Intune. De standaardinstellingen van de basislijn Advanced Threat Protection (ATP) vertegenwoordigen de aanbevolen configuratie voor ATP en komen mogelijk niet overeen met de standaardinstellingen voor andere beveiligingsbasislijnen.  
 
-  De basislijn Microsoft Defender Advanced Threat Protection is beschikbaar als uw omgeving voldoet aan de vereisten voor het gebruik van [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites).
+De basislijn Microsoft Defender Advanced Threat Protection is beschikbaar als uw omgeving voldoet aan de vereisten voor het gebruik van [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites). 
 
-
+Deze basis lijn is geoptimaliseerd voor fysieke apparaten en wordt momenteel niet aanbevolen voor gebruik op virtuele machines (Vm's) of VDI-eind punten. Bepaalde basislijn instellingen kunnen invloed hebben op externe interactieve sessies in gevirtualiseerde omgevingen. Meer informatie vindt u in de Windows-documentatie [verg root de compatibiliteit met de micro soft Defender ATP-beveiligings basislijn](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) .
 
 
 > [!NOTE]  
@@ -164,22 +164,22 @@ Zie [BitLocker Group Policy settings](https://docs.microsoft.com/windows/securit
 
   Voor het BitLocker-beleid voor verwisselbare stations moet u de volgende instellingen configureren:
 
-    - **Versleuteling vereisen voor schrijftoegang**  
-      **Standaardinstelling**: Ja
+  - **Versleuteling vereisen voor schrijftoegang**  
+    **Standaardinstelling**: Ja
 
-    - **Versleutelingsmethode**  
-      **Standaardinstelling**: AES 128-bits CBC
+  - **Versleutelingsmethode**  
+    **Standaardinstelling**: AES 128-bits CBC
 
 - **Bitlocker-beleid voor vaste stations**  
   De waarden voor dit beleid bepalen de coderingssterkte die door BitLocker wordt gebruikt voor de versleuteling van vaste stations. Ondernemingen kunnen het versleutelingsniveau bepalen voor extra beveiliging (AES-256 is sterker dan AES-128). Als u deze instelling inschakelt, kunt u afzonderlijke versleutelingsalgoritmen en belangrijke coderingssterkten configureren voor vaste gegevensstations, besturingssysteemstations en losse gegevensstations. Voor vaste stations en besturingssysteemstations wordt het gebruik van het XTS-AES-algoritme aanbevolen. Gebruik 128-bits AES-CBC of 256-bits AES-CBC voor losse stations als het station in andere apparaten wordt gebruikt waarop geen Windows 10, versie 1511 of later wordt uitgevoerd. Het wijzigen van de versleutelingsmethode heeft geen invloed als het station al is versleuteld of als de versleuteling nog wordt uitgevoerd. In deze gevallen wordt deze beleidsinstelling genegeerd.
 
   Voor het BitLocker-beleid voor vaste stations moet u de volgende instellingen configureren:
 
-    - **Versleuteling vereisen voor schrijftoegang**  
-      **Standaardinstelling**: Ja
+  - **Versleuteling vereisen voor schrijftoegang**  
+    **Standaardinstelling**: Ja
 
-    - **Versleutelingsmethode**  
-      **Standaardinstelling**: AES 128-bits XTS
+  - **Versleutelingsmethode**  
+    **Standaardinstelling**: AES 128-bits XTS
 
 - **Bitlocker-beleid voor systeemstations**  
   De waarden voor dit beleid bepalen de coderingssterkte die door BitLocker wordt gebruikt voor de versleuteling van het systeemstation. Ondernemingen kunnen het versleutelingsniveau bepalen voor extra beveiliging (AES-256 is sterker dan AES-128). Als u deze instelling inschakelt, kunt u afzonderlijke versleutelingsalgoritmen en belangrijke coderingssterkten configureren voor vaste gegevensstations, besturingssysteemstations en losse gegevensstations. Voor vaste stations en besturingssysteemstations wordt het gebruik van het XTS-AES-algoritme aanbevolen. Gebruik 128-bits AES-CBC of 256-bits AES-CBC voor losse stations als het station in andere apparaten wordt gebruikt waarop geen Windows 10, versie 1511 of later wordt uitgevoerd. Het wijzigen van de versleutelingsmethode heeft geen invloed als het station al is versleuteld of als de versleuteling nog wordt uitgevoerd. In deze gevallen wordt deze beleidsinstelling genegeerd.  
