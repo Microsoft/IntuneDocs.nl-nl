@@ -171,6 +171,7 @@
       items:
         - name: Wat is apparaatinschrijving?
           href: device-enrollment.md
+          displayName: COD; BYOD; DEM; DEP; USB-SA; USB-Direct; co-management; GPO
         - name: Mogelijkheden voor apparaatbeheer
           href: device-management-capabilities.md
         - name: Opties voor inschrijving
@@ -184,6 +185,7 @@
               href: apple-mdm-push-certificate-get.md
             - name: Zakelijke id’s
               href: corporate-identifiers-add.md
+              displayName: COD
             - name: Meervoudige verificatie
               href: multi-factor-authentication.md
             - name: Apparaatinschrijvingsmanager
@@ -273,6 +275,8 @@
           href: device-remove-user.md
         - name: Primaire gebruiker zoeken
           href: find-primary-user.md
+        - name: Meldingen verzenden
+          href: custom-notifications.md
         - name: Een macOS-apparaat wissen
           href: device-erase.md
         - name: Extern beheer van mobiele apparaten
@@ -559,20 +563,27 @@
               href: apps-add-built-in.md
             - name: PowerShell-scripts
               href: intune-management-extension.md
-        - name: Apps implementeren
-          href: apps-deploy.md
+        - name: Apps toewijzen
           items:
+            - name: Apps aan groepen toewijzen
+              href: apps-deploy.md
+              displayName: app assignment; assignment
             - name: Apps opnemen en uitsluiten
               href: apps-inc-exl-assignments.md
+              displayName: app assignment
             - name: Windows 10-apps implementeren
               href: apps-windows-10-app-deploy.md
             - name: Apps implementeren naar Government-omgevingen
               href: apps-deploy-gcc-dod.md
         - name: Apps bewaken
           href: apps-monitor.md
+        - name: Gedetecteerde apps
+          href: app-discovered-apps.md
         - name: Apps configureren
-          href: app-configuration-policies-overview.md
           items:
+            - name: App-configuratiebeleid
+              href: app-configuration-policies-overview.md
+              displayName: App configuration policy; configuration policy
             - name: iOS beheerde apparaten
               href: app-configuration-policies-use-ios.md
             - name: Android beheerde apparaten
