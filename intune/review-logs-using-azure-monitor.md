@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412694"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354522"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Logboekgegevens verzenden naar opslag, Event Hubs of Log Analytics in Intune (preview)
 
@@ -149,7 +149,7 @@ De volgende tabel bevat de geschatte kosten per maand voor een eenvoudige Event 
 | | |
 |---|---|
 |Gebeurtenissen per seconde| 18|
-|Gebeurtenissen per interval van vijf minuten| 5.400|
+|Gebeurtenissen per interval van vijf minuten| 5\.400|
 |Volume per interval| 10,8 MB|
 |Berichten per interval| 43|
 |Berichten per maand| 371.520|
@@ -163,7 +163,7 @@ De volgende tabel bevat de geschatte kosten per maand voor een eenvoudige Event 
 |Gebeurtenissen per interval van vijf minuten| 52|
 |Volume per interval|104 kB |
 |Berichten per interval|1 |
-|Berichten per maand|8.640 |
+|Berichten per maand|8\.640 |
 |Geschatte kosten per maand (USD)|$ 10,80 |
 
 ### <a name="log-analytics-cost-considerations"></a>Kostenoverwegingen voor Log Analytics
@@ -174,43 +174,43 @@ Zie [Kosten beheren door gegevensvolume en retentie in Log Analytics te beheren]
 
 Krijg antwoorden op veelgestelde vragen en lees over eventuele bekende problemen met Intune-logboeken in Azure Monitor.
 
-#### <a name="which-logs-are-included"></a>Welke logboeken zijn opgenomen?
+### <a name="which-logs-are-included"></a>Welke logboeken zijn opgenomen?
 
 Auditlogboeken en (de preview-versie van) operationele logboeken zijn beschikbaar voor routering met behulp van deze functie.
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>Wanneer worden, na een actie, de bijbehorende logboeken weergegeven in de Event Hub?
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>Wanneer worden, na een actie, de bijbehorende logboeken weergegeven in de Event Hub?
 
 De logboeken worden meestal binnen enkele minuten nadat de actie is uitgevoerd, weergegeven in de Event Hub. [Wat is Azure Event Hubs?](https://docs.microsoft.com/azure/event-hubs/) biedt meer informatie.
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>Wanneer worden, na een actie, de bijbehorende logboeken weergegeven in het opslagaccount?
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>Wanneer worden, na een actie, de bijbehorende logboeken weergegeven in het opslagaccount?
 
 Voor Azure-opslagaccounts is de latentie ergens tussen de 5 tot 15 minuten nadat de actie is uitgevoerd.
 
-#### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>Wat gebeurt er als een beheerder de retentieperiode van een diagnostische instelling wijzigt?
+### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>Wat gebeurt er als een beheerder de retentieperiode van een diagnostische instelling wijzigt?
 
 Het nieuwe retentiebeleid wordt toegepast op de logboeken die zijn verzameld na de wijziging. Het is niet van toepassing op logboeken die zijn verzameld vóór de beleidswijziging.
 
-#### <a name="how-much-does-it-cost-to-store-my-data"></a>Hoeveel kost het om mijn gegevens op te slaan?
+### <a name="how-much-does-it-cost-to-store-my-data"></a>Hoeveel kost het om mijn gegevens op te slaan?
 
 De opslagkosten zijn afhankelijk van de grootte van uw logboeken en de retentieperiode die u kiest. Zie de [Opslaggrootte voor activiteitenlogboeken](#storage-size-for-activity-logs) (in dit artikel) voor een lijst met de geschatte kosten voor tenants, die afhankelijk zijn van het gegenereerde logboekvolume.
 
-#### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>Hoeveel kost het om mijn gegevens naar een Event Hub te streamen?
+### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>Hoeveel kost het om mijn gegevens naar een Event Hub te streamen?
 
 De kosten voor streamen zijn afhankelijk van het aantal berichten dat u per minuut ontvangt. Zie [Event Hub-berichten voor activiteitenlogboeken](#event-hub-messages-for-activity-logs) (in dit artikel) voor details over hoe de kosten worden berekend en op welke manier de kostenschattingen worden gebaseerd op het aantal berichten.
 
-#### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>Hoe integreer ik Intune-auditlogboeken met mijn SIEM-systeem?
+### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>Hoe integreer ik Intune-auditlogboeken met mijn SIEM-systeem?
 
 Gebruik Azure Monitor met Event Hubs om logboeken naar het SIEM-systeem te streamen. [Stream de logboeken eerst naar een Event Hub](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). [Stel het SIEM-hulpprogramma vervolgens in](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub) met de geconfigureerde Event Hub. 
 
-#### <a name="what-siem-tools-are-currently-supported"></a>Welke SIEM-hulpprogramma’s worden momenteel ondersteund?
+### <a name="what-siem-tools-are-currently-supported"></a>Welke SIEM-hulpprogramma’s worden momenteel ondersteund?
 
 Azure Monitor wordt momenteel ondersteund met [Splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk), QRadar en [Sumo Logic](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory) (een nieuwe website wordt geopend). Zie [Azure-bewakingsgegevens naar een Event Hub streamen voor gebruik met een extern hulpprogramma](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) voor meer informatie over de werking van connectors.
 
-#### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>Heb ik toegang tot de gegevens van een Event Hub zonder een extern SIEM-hulpprogramma te gebruiken?
+### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>Heb ik toegang tot de gegevens van een Event Hub zonder een extern SIEM-hulpprogramma te gebruiken?
 
 Ja. U kunt de [Event Hub API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph) gebruiken voor toegang tot de logboeken vanuit de aangepaste toepassing.
 
-#### <a name="what-data-is-stored"></a>Welke gegevens worden opgeslagen?
+### <a name="what-data-is-stored"></a>Welke gegevens worden opgeslagen?
 
 In Intune worden geen gegevens opgeslagen die zijn verzonden via de pijplijn. In Intune worden gegevens gerouteerd naar de Azure Monitor-pijplijn, met de tenant als autoriteit. Zie [Overzicht van Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) voor meer informatie.
 

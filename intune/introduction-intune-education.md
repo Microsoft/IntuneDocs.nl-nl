@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7775a0aec8bdba648cf809e3f797ce5606b2ca4f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fa084d2a52e23273effdfb035b218c8ee1f7f2ab
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047417"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354053"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Waarin verschilt Intune for Education van het volledige Intune-beheer?
 
@@ -41,7 +41,7 @@ Met Intune en Intune for Education kunt u:
 * Gegevens van uw organisatie beschermen door te bepalen hoe uw gebruikers toegang hebben tot de gegevens en hoe zij deze gegevens delen.
 * Zorgen dat apparaten en apps voldoen aan de beveiligingsvereisten.
 
-### <a name="next-steps"></a>Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 * Vertrouwd raken met het product [met een 90-daagse evaluatieversie van Intune](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1). Ga naar https://intuneeducation.portal.azure.com) als u al toegang hebt om aan de slag te gaan.
 * Meer informatie over de snelste manier om te [beginnen met het gebruik van Intune for Education](/intune-education/what-is-express-configuration).
 * Duik in de [technische vereisten en mogelijkheden](/intune/supported-devices-browsers) van Intune.

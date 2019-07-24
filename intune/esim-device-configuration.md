@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883260"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354383"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Mobiele eSIM-profielen configureren in Intune - Openbare preview
 
@@ -79,7 +79,7 @@ De activeringscodes voor mobiele apparaten worden door uw provider aangeleverd i
 4. Selecteer het CSV-bestand dat uw activeringscodes bevat.
 5. Selecteer **OK** om uw wijzigingen op te slaan.
 
-#### <a name="csv-file-requirements"></a>Vereisten voor het CSV-bestand
+### <a name="csv-file-requirements"></a>Vereisten voor het CSV-bestand
 
 Als u met een CSV-bestand met activeringscodes werkt, controleert u of uw provider zich aan de volgende vereisten heeft gehouden:
 
@@ -89,7 +89,7 @@ Als u met een CSV-bestand met activeringscodes werkt, controleert u of uw provid
 - Elk bestand moet specifiek voor één provider zijn. Alle activeringscodes moeten daarnaast voor hetzelfde abonnement gelden. Intune verdeelt de activeringscodes willekeurig onder de doelapparaten. Het is niet mogelijk aan te geven welk apparaat een bepaalde activeringscode zal ontvangen.
 - Er kunnen met één CSV-bestand maximaal 1000 activeringscodes worden geïmporteerd.
 
-#### <a name="csv-file-example"></a>Voorbeeld van een CSV-bestand
+### <a name="csv-file-example"></a>Voorbeeld van een CSV-bestand
 
 1. De eerste rij en eerste cel van het CSV-bestand bevat de URL van de eSIM-activeringsservice van de provider. Deze heet SM-DP+ (Subscription Manager Data Preparation-server). De URL moet een Fully Qualified Domain Name (FQDN) zijn zonder komma's.
 2. De tweede en daarop volgende rijen bevatten unieke, eenmalig te gebruiken activeringscodes met twee waarden:
@@ -129,7 +129,7 @@ eSIM-activeringscodes worden één keer gebruikt. Wanneer Intune een activerings
 
 ## <a name="step-4-monitor-deployment"></a>Stap 4: Implementatie controleren
 
-#### <a name="review-the-deployment-status"></a>De implementatiestatus controleren
+### <a name="review-the-deployment-status"></a>De implementatiestatus controleren
 
 Wanneer u het profiel hebt toegewezen, kunt u de implementatiestatus van een abonnementsgroep controleren.
 
@@ -138,7 +138,7 @@ Wanneer u het profiel hebt toegewezen, kunt u de implementatiestatus van een abo
 3. Selecteer **Apparaatconfiguratie** > **Mobiele eSIM-profielen**. Al uw bestaande mobiele eSIM-abonnementsgroepen worden weergegeven.
 4. Selecteer een abonnement en bekijk de **implementatiestatus**.
 
-#### <a name="check-the-profile-status"></a>De profielstatus controleren
+### <a name="check-the-profile-status"></a>De profielstatus controleren
 Nadat u een apparaatprofiel hebt gemaakt, biedt Intune grafieken. In deze grafieken wordt de status van een profiel weergegeven, zoals of het is toegewezen aan apparaten en of op het apparaat een conflict bestaat.
 
 1. Selecteer **Apparaatconfiguratie** > **Mobiele eSIM-profielen** > selecteer een bestaand abonnement.
@@ -167,7 +167,7 @@ U kunt een gedetailleerde lijst met de apparaten uit Apparaatstatus controleren 
     - **Mobiele status**: De status die is opgegeven door de mobiele provider. Neem contact op met de provider om mogelijke problemen op te lossen.
     - **Laatste check-in**: De datum waarop het apparaat het laatst met Intune heeft gecommuniceerd
 
-#### <a name="monitor-esim-profile-details-on-the-actual-device"></a>De eSIM-profielgegevens op het apparaat zelf controleren
+### <a name="monitor-esim-profile-details-on-the-actual-device"></a>De eSIM-profielgegevens op het apparaat zelf controleren
 
 1. Ga op uw apparaat naar **Instellingen** > **Netwerk en internet**.
 2. Selecteer **Mobiel** > **eSIM-profielen beheren**

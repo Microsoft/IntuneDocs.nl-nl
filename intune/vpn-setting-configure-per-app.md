@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: b3c2b5bc0091544136848bf92fc6cef7524ffa54
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884520"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354502"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>VPN per app instellen voor iOS-apparaten in Intune
 
@@ -48,7 +48,7 @@ Voor verificatie kan Zscaler Private Access (ZPA) met Azure Active Directory (Az
 
 Ter bevestiging van de identiteit van de VPN-server legt deze het certificaat voor. Dit moet door het apparaat zonder prompt worden geaccepteerd. Als u wilt bevestigen dat het certificaat automatisch wordt goedgekeurd, moet u een vertrouwd certificaatprofiel maken dat het door de certificeringsinstantie (CA) uitgegeven basiscertificaat van de VPN-server bevat. 
 
-#### <a name="export-the-certificate-and-add-the-ca"></a>Het certificaat exporteren en de CA toevoegen
+### <a name="export-the-certificate-and-add-the-ca"></a>Het certificaat exporteren en de CA toevoegen
 
 1. Open de beheerconsole op de VPN-server.
 2. Bevestig dat door de VPN-server verificatie op basis van certificaten wordt gebruikt. 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03b3b38819ea6bd0a34eff5b7eb8decfc2b9eb49
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548090"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375239"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Problemen bij de apparaatinschrijving in Microsoft Intune oplossen
 
@@ -69,7 +69,7 @@ Voer de volgende stappen uit om te controleren of aan de gebruiker niet meer dan
 
 3. Als het aantal ingeschreven apparaten van de gebruiker al gelijk is aan de apparaatlimietbeperking, kunnen er pas meer worden ingeschreven als:
     - [Bestaande apparaten worden verwijderd](devices-wipe.md) of
-    - U de apparaatlimiet verhoogt door [apparaatbeperkingen in te stellen](enrollment-restrictions-set.md#set-device-limit-restrictions).
+    - U de apparaatlimiet verhoogt door [apparaatbeperkingen in te stellen](enrollment-restrictions-set.md).
 
 Om te voorkomen dat apparaatlimieten worden bereikt, moet u ervoor zorgen dat verouderde apparaatrecords worden verwijderd.
 
@@ -499,5 +499,5 @@ Het accountcertificaat van het vorige account staat nog op de computer.
 
 
 
-### <a name="next-steps"></a>Volgende stappen
+## <a name="next-steps"></a>Volgende stappen
 Als deze informatie over probleemoplossing u niet heeft geholpen, kunt u contact opnemen met Microsoft Ondersteuning zoals is beschreven in [Ondersteuning voor Microsoft Intune krijgen](get-support.md).

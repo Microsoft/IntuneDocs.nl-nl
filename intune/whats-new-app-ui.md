@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8e87f8df43468428877d93be03e6f2d7316de9a
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: ecfd482df452c52d81621cdc49c6ca78c4d4c1f6
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572617"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354533"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Informatie over de meest recente updates voor de Microsoft Intune-apps. We voegen regelmatig elementen toe aan de Intune-bedrijfsportal-app en de website en brengen verbeteringen aan. Als u een Intune-beheerder bent of iemand van de ondersteuning, biedt dit artikel de informatie die u nodig hebt om:
@@ -49,7 +49,7 @@ De bedrijfsportal voor Windows toont nu alle beheerde apps (zowel vereiste als b
 
 ## <a name="week-of-june-17-2019"></a>Week van 17 juni 2019  
 
-#### <a name="new-features-in-microsoft-intune-app"></a>Nieuwe functies in Microsoft Intune-app
+### <a name="new-features-in-microsoft-intune-app"></a>Nieuwe functies in Microsoft Intune-app
 We hebben nieuwe functies toegevoegd aan de Microsoft Intune-app (preview) voor Android. Gebruikers op volledig beheerde Android-apparaten kunnen nu:  
 
 * De apparaten weergeven en beheren die zij hebben ingeschreven via de Intune-bedrijfsportal of de Microsoft Intune-app.    
@@ -552,7 +552,7 @@ Dit zijn de plannen voor manieren waarop we de gebruikerservaring gaan verbetere
 > De onderstaande afbeeldingen zijn voorbeelden en het aangekondigde product kan verschillen van de weergegeven versies.  
 
 
-### <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie tevens
 * [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap voor cloudplatform](https://www.microsoft.com/cloud-platform/roadmap)
 * [Wat is er nieuw in Intune?](https://docs.microsoft.com/intune/whats-new)

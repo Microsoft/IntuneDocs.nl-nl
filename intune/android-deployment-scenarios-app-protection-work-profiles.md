@@ -14,12 +14,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce7ad6b0254b1c3a8e2843cfcbe70a6b718ce88
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5814a4aac064394dbd0c7f5902dc3f62459ad1d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049904"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353802"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Toepassingsbeveiligingsbeleid en werkprofielen op Android Enterprise-apparaten in Intune
 
@@ -58,7 +58,7 @@ Zie [Intune-beheerde apps zijn uitgerust met een omvangrijke set beveiligings-po
 
 In deze sectie worden de belangrijkste kenmerken van implementatiescenario’s met APP-WE en Android Enterprise-werkprofielen beschreven.
 
-#### <a name="app-we"></a>APP-WE
+### <a name="app-we"></a>APP-WE
 
 Bij een APP-WE-implementatie (app-beveiligingsbeleid zonder inschrijving) wordt beleid gedefinieerd op apps, en niet op apparaten. In dit scenario worden apparaten doorgaans niet ingeschreven of beheerd door een MDM-instantie zoals Intune. Beheerders maken gebruik van met APP beheerbare apps om apps en toegang tot organisatiegegevens te beschermen, en passen gegevensbeschermingsbeleid toe op deze apps.
 
@@ -71,7 +71,7 @@ Deze functie is van toepassing op:
 
 APP-WE-scenario's zijn bedoeld voor eindgebruikers die zo min mogelijk aanwezigheid van de organisatie willen op hun apparaat, en zich niet willen inschrijven in MDM. Als beheerder moet u uw gegevens toch beschermen. Deze apparaten worden niet beheerd. Veelvoorkomende MDM-taken en -functies, zoals Wi-Fi, VPN en certificaatbeheer, maken dus geen deel uit van dit implementatiescenario.
 
-#### <a name="android-enterprise-work-profiles"></a>Android Enterprise-werkprofielen
+### <a name="android-enterprise-work-profiles"></a>Android Enterprise-werkprofielen
 
 Werkprofielen vormen de kern van het Android Enterprise-implementatiescenario, het enige scenario dat gericht is op BYOD. Het werkprofiel is een afzonderlijke partitie die wordt gemaakt op het niveau van Android OS, die kan worden beheerd door Intune.
 
@@ -95,7 +95,7 @@ Werkprofielen en APP vullen elkaars instellingen aan door extra dekking te biede
 
 ### <a name="suppress-app-policy-for-work-profiles"></a>APP-beleid onderdrukken voor werkprofielen
 
-Het kan voorkomen dat u afzonderlijke gebruikers moet ondersteunen die meerdere apparaten hebben: onbeheerde apparaten in een APP-WE-scenario, en beheerde apparaten met werkprofielen. 
+Het kan voorkomen dat u afzonderlijke gebruikers moet ondersteunen die meerdere apparaten hebben: onbeheerde apparaten in een APP-WE-scenario, en beheerde apparaten met werkprofielen.
 
 U vereist bijvoorbeeld dat eindgebruikers een pincode invoeren wanneer ze een werk-app openen. Afhankelijk van het apparaat, worden de pincodefuncties afgehandeld door APP of door het werkprofiel. Voor de APP-WE-apparaten wordt het invoeren van de pincode afgedwongen door APP. Voor apparaten met een werkprofiel kunt u een pincode voor het apparaat of werkprofiel gebruiken die wordt afgedwongen door het besturingssysteem. U implementeert dit scenario door APP-instellingen zo te configureren dat ze niet van toepassing zijn *wanneer* een app wordt geïmplementeerd in een werkprofiel. Als u het niet op deze manier configureert, wordt de eindgebruiker om een pincode gevraagd door het apparaat, en nogmaals op APP-niveau.
 
@@ -111,13 +111,13 @@ Zie voor meer informatie [Deploying Outlook for iOS and Android app configuratio
 
 Er zijn verschillende scenario's voor bedrijfsmobiliteit waarbij het gebruiken van Intune-APP de beste aanbeveling is.
 
-#### <a name="older-devices-running-android-44-51-are-being-used"></a>Er worden oudere apparaten met Android 4.4-5.1 gebruikt
+### <a name="older-devices-running-android-44-51-are-being-used"></a>Er worden oudere apparaten met Android 4.4-5.1 gebruikt
 
 Officieel bieden alle apparaten met Android 5.0 of hoger en Google Mobile Services ondersteuning voor werkprofielen, en kunnen op deze manier worden beheerd. Sommige Android 5.0- en 5.1-apparaten van sommige OEM’s ondersteunen echter geen werkprofielen.
 
 Als u versies gebruikt die geen werkprofielen ondersteunen, moet u Intune-APP-functies gebruiken om te zorgen voor DLP voor organisatiegegevens op apparaten.
 
-#### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>Geen MDM, geen inschrijving, Google-services zijn niet beschikbaar
+### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>Geen MDM, geen inschrijving, Google-services zijn niet beschikbaar
 
 Sommige klanten willen geen enkele vorm van apparaatbeheer gebruiken, waaronder werkprofielbeheer, om diverse redenen:
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22ce9ace7848ea1535b04ab6f0c0249c970e8c34
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b073047455cd21dc3ffe5efcb52f51584db5ff30
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547353"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353771"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -46,7 +46,7 @@ Deze NDES-certificaatconnector ondersteunt ook de Federal Information Processing
   
 - **Azure AD-toepassingsproxy** (optioneel): U kunt de Azure AD-toepassingsproxy gebruiken in plaats van een toegewezen webtoepassingsproxyserver (WAP-server) om de NDES-server op internet te publiceren. Zie voor meer informatie [Beveiligde externe toegang verschaffen voor on-premises toepassingen](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
-#### <a name="additional"></a>Aanvullende informatie
+### <a name="additional"></a>Aanvullende informatie
 
 - De server die als host voor WAP fungeert, [moet een update installeren](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) waarmee ondersteuning wordt geboden voor de lange URL's die worden gebruikt door de Network Device Enrollment Service. Deze update is opgenomen in het [updatepakket van december 2014](http://support.microsoft.com/kb/3013769)en is afzonderlijk verkrijgbaar in [KB3011135](http://support.microsoft.com/kb/3011135).
 - De WAP-server moet een SSL-certificaat hebben dat overeenkomt met de naam zoals die voor externe clients wordt gepubliceerd en het SSL-certificaat vertrouwen dat op de NDES-server wordt gebruikt. De WAP-server kan met deze certificaten de SSL-verbinding van clients beëindigen en een nieuwe SSL-verbinding naar de NDES-server maken.
@@ -79,17 +79,17 @@ Het is zeer raadzaam de NDES-server te publiceren via een omgekeerde proxy, zoal
 ## <a name="configure-your-infrastructure"></a>Uw infrastructuur configureren
 Voordat u certificaatprofielen kunt configureren, moet u de volgende stappen uitvoeren. Voor deze stappen is kennis nodig van Windows Server 2012 R2 of hoger en Active Directory Certificate Services (ADCS):
 
-#### <a name="step-1---create-an-ndes-service-account"></a>Stap 1: een NDES-serviceaccount maken
+### <a name="step-1---create-an-ndes-service-account"></a>Stap 1: een NDES-serviceaccount maken
 
 Maak een domeingebruikersaccount dat u als NDES-serviceaccount gaat gebruiken. U voert dit account in wanneer u sjablonen op de verlenende CA configureert voordat u NDES installeert en configureert. Zorg ervoor dat de gebruiker over de standaardrechten **Lokaal aanmelden**, **Aanmelden als service** en **Aanmelden als batchtaak** beschikt. Sommige organisaties voeren een beveiligingsbeleid dat ervoor zorgt dat deze rechten worden uitgeschakeld.
 
-#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Stap 2: certificaatsjablonen configureren op de certificeringsinstantie
+### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Stap 2: certificaatsjablonen configureren op de certificeringsinstantie
 Bij deze stap doet u het volgende:
 
 - Configureert u een certificaatsjabloon voor NDES
 - Publiceert u de certificaatsjabloon voor NDES
 
-##### <a name="configure-the-certification-authority"></a>Configureert u de certificeringsinstantie
+#### <a name="configure-the-certification-authority"></a>Configureert u de certificeringsinstantie
 
 1. Meld u aan als ondernemingsbeheerder.
 
@@ -150,7 +150,7 @@ Configureer de CA zodanig dat de aanvrager de geldigheidsperiode kan invoeren:
 
 3. Controleer in de map **Certificaatsjablonen** of de sjabloon is gepubliceerd.
 
-#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Stap 3: vereisten configureren op de NDES-server
+### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Stap 3: vereisten configureren op de NDES-server
 Bij deze stap doet u het volgende:
 
 - Voegt u NDES toe aan een Windows Server en configureert u IIS om NDES te ondersteunen
@@ -190,7 +190,7 @@ Bij deze stap doet u het volgende:
 
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
-#### <a name="step-4---configure-ndes-for-use-with-intune"></a>Stap 4: NDES configureren voor gebruik met Intune
+### <a name="step-4---configure-ndes-for-use-with-intune"></a>Stap 4: NDES configureren voor gebruik met Intune
 Bij deze stap doet u het volgende:
 
 - Configureert u NDES voor gebruik met de verlenende CA
@@ -241,7 +241,7 @@ Bij deze stap doet u het volgende:
 
     Als het bericht **503 - Service niet beschikbaar** wordt weergegeven, controleert u de logboeken. De groep van toepassing is waarschijnlijk gestopt vanwege een ontbrekend recht voor de NDES-gebruiker. Deze rechten worden beschreven in stap 1.
 
-##### <a name="install-and-bind-certificates-on-the-ndes-server"></a>Certificaten op de NDES-server installeren en verbinden
+#### <a name="install-and-bind-certificates-on-the-ndes-server"></a>Certificaten op de NDES-server installeren en verbinden
 
 1. Vraag op uw NDES-server een **serververificatie** certificaat van uw interne CA of een openbare CA aan en installeer het certificaat. Vervolgens verbindt u dit SSL-certificaat in IIS.
 
@@ -267,7 +267,7 @@ Bij deze stap doet u het volgende:
 
     - **Onderwerpnaam**: Deze waarde moet gelijk zijn aan de DNS-naam van de server waarop u het certificaat installeert (de NDES-server)
 
-##### <a name="configure-iis-request-filtering"></a>IIS-aanvraagfiltering configureren
+#### <a name="configure-iis-request-filtering"></a>IIS-aanvraagfiltering configureren
 
 1. Open op de NDES-server **IIS-beheer**, selecteer de **standaardwebsite** in het deelvenster **Verbindingen** en open vervolgens **Aanvraagfiltering**.
 
@@ -287,13 +287,13 @@ Bij deze stap doet u het volgende:
 
 4. Start de NDES-server opnieuw op. De server is nu klaar om de certificaatconnector te ondersteunen.
 
-#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Stap 5: de Intune-certificaatconnector inschakelen, installeren en configureren
+### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Stap 5: de Intune-certificaatconnector inschakelen, installeren en configureren
 Bij deze stap doet u het volgende:
 
 - Schakelt u de ondersteuning voor NDES in Intune in.
 - Download, installeer en configureer de certificaatconnector op de server waarop de NDES-rol (Registratieservice voor netwerkapparaten) wordt uitgevoerd/server in uw omgeving. Als u de schaal van de NDES-implementatie in uw organisatie wilt vergroten, kunt u op elke NDES-server meerdere NDES-servers met een certificaatconnector van Microsoft Intune installeren.
 
-##### <a name="download-install-and-configure-the-certificate-connector"></a>De certificaatconnector downloaden, installeren en configureren
+#### <a name="download-install-and-configure-the-certificate-connector"></a>De certificaatconnector downloaden, installeren en configureren
 
 > [!IMPORTANT] 
 > De Microsoft Intune-certificaatconnector **moet** worden geïnstalleerd op een afzonderlijke Windows-server. Deze kan niet worden geïnstalleerd op de verlenende certificeringsinstantie (CA). De connector **moet** ook worden geïnstalleerd op dezelfde server die de rol van Network Device Enrollment Service (NDES) vervult.

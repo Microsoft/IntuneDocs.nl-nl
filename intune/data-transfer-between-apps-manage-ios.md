@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91633aee190b5fb5bda9495f66d4503042aa6a80
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 9a1e370b65d8bfd7e61562347323bf1455dfe55b
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713330"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354297"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
 
@@ -109,5 +109,5 @@ De beleidsinstelling **Require app PIN** (Een app-pincode vereisen ) is bijvoorb
 [Maak allereerst een app-beveiligingsbeleid en wijs dit toe](app-protection-policies.md) aan de iOS-app. Zie [App-beveiligingsbeleid valideren](app-protection-policies-validate.md) voor meer informatie over het testen van beveiligingsbeleid voor apps.
 
 
-### <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie tevens
 [Wat is een app-beveiligingsbeleid in Intune?](app-protection-policy.md)

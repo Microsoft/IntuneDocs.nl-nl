@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 2f3c36e0fac3784828c6a4c0bbf077dea83da369
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045985"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354453"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Verschillende apparaatbeheerfuncties beheren en gebruiken op Windows Holographic- en HoloLens-apparaten met Intune
 
@@ -105,23 +105,23 @@ Intune omvat instellingen en functies die u op verschillende apparaten binnen uw
 
 U kunt OMA-URI in uw profielen gebruiken om een aantal instellingen aan te passen, apparaatbeperkingen in te stellen en een virtueel particulier netwerk (VPN) en Wi-Fi te configureren.
 
-#### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[Aangepaste apparaatinstellingen](custom-settings-windows-holographic.md)
+### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[Aangepaste apparaatinstellingen](custom-settings-windows-holographic.md)
 
 Als u instellingen voor OMA-URI (Open Mobile Alliance Uniform Resource Identifier) wilt configureren, kunt u een aangepast profiel maken in Intune. Met de OMA-URI-instellingen kunt u verschillende functies beheren op uw apparaten met Windows Holographic for Business, zoals VPN inschakelen of controleren op updates van Microsoft Update.
 
-#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[Kioskmodus configureren](kiosk-settings-holographic.md)
+### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[Kioskmodus configureren](kiosk-settings-holographic.md)
 
 Met behulp van de gedeelde of gastfuncties van de pc die beschikbaar zijn in Intune kunt u Windows Holographic for Business-apparaten in de kioskmodus uitvoeren. Deze apparaten kunnen één app (één app in de kioskmodus) of meerdere apps uitvoeren (meerdere apps in de kioskmodus).
 
-#### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[Apparaatbeperkingen](device-restrictions-windows-holographic.md)
+### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[Apparaatbeperkingen](device-restrictions-windows-holographic.md)
 
 Met apparaatbeperkingen kunt u verschillende instellingen en functies op uw apparaten beheren, zoals een wachtwoord vereisen, apps installeren apps uit de [Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps), Bluetooth inschakelen en meer. Deze beperkingen worden gemaakt in een Intune-profiel. Dit profiel kan worden toegepast op meerdere apparaten met Windows Holographic for Business.
 
-#### <a name="configure-vpnvpn-settings-configuremd"></a>[VPN configureren](vpn-settings-configure.md)
+### <a name="configure-vpnvpn-settings-configuremd"></a>[VPN configureren](vpn-settings-configure.md)
 
 Met virtuele particuliere netwerken (VPN's) geeft u uw gebruikers veilige externe toegang tot uw bedrijfsnetwerk. U kunt in Intune een VPN-profiel maken met specifieke instellingen voor uw apparaten met Windows Holographic for Business. U kunt bijvoorbeeld een VPN-profiel maken zodat alle apparaten met Windows Holographic for Business Citrix-VPN gebruiken als verbindingstype.
 
-#### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Wi-Fi configureren](wi-fi-settings-configure.md)
+### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Wi-Fi configureren](wi-fi-settings-configure.md)
 
 U kunt in Intune ook een Wi-Fi-profiel maken om draadloze netwerkinstellingen toe te wijzen aan apparaten met Windows Holographic for Business. Als u een Wi-Fi-profiel toewijst, krijgen uw eindgebruikers zonder netwerkconfiguratie toegang tot het bedrijfsnetwerk. U kunt bijvoorbeeld een Wi-Fi-netwerk uitsluitend voor apparaten met Windows Holographic for Business maken.
 
