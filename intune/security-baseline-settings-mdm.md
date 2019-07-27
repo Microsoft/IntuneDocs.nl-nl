@@ -5,7 +5,7 @@ description: Intune-beveiligingsbasislijninstellingen voor het beheer van Window
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882296"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491910"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>MDM-beveiligingsbasislijninstellingen voor Intune  
 
@@ -1773,7 +1773,12 @@ Zie [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_proto
   **Standaardinstelling**: Ja
 
 - **Windows Hello voor Bedrijven configureren**   
-  Windows Hello voor Bedrijven is een alternatieve aanmeldmethode voor Windows die wachtwoorden, smartcards en virtuele smartcards vervangt. Als u deze beleidsinstelling inschakelt of niet configureert, richt het apparaat Windows Hello voor Bedrijven in. Als u deze beleidsinstelling uitschakelt, richt het apparaat voor geen enkele gebruiker Windows Hello voor Bedrijven in.
+    Windows Hello voor Bedrijven is een alternatieve aanmeldmethode voor Windows die wachtwoorden, smartcards en virtuele smartcards vervangt.  
+
+  - Wanneer deze optie is ingesteld op *Ja*, schakelt u dit beleid in en wordt Windows hello voor bedrijven door het apparaat ingericht.  
+  - Als deze optie is ingesteld op *niet geconfigureerd*, is de basis lijn niet van invloed op de beleids instelling van het apparaat. Dit betekent dat als Windows hello voor bedrijven is uitgeschakeld op een apparaat, het uitgeschakeld blijft. Als de functie is ingeschakeld, blijft deze ingeschakeld. 
+
+  U kunt Windows hello voor bedrijven niet uitschakelen via deze basis lijn. U kunt Windows hello voor bedrijven uitschakelen wanneer u [Windows-inschrijving](windows-hello.md)configureert of als onderdeel van een configuratie profiel voor [identiteits beveiliging](identity-protection-configure.md).  
 
   **Standaardinstelling**: Ja
 

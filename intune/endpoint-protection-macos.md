@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d110013c10f0330c0edbbf230c508009fb47b2a6
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
-ms.translationtype: HT
+ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341311"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467423"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Instellingen in Intune voor eindpuntbescherming in macOS  
 
@@ -92,36 +92,24 @@ Zie [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fd
   - **Type herstel sleutel**  
     Sleutels voor herstel van *persoonlijke sleutels* worden gemaakt voor apparaten. Configureer de volgende instellingen voor de persoonlijke sleutel.  
 
-     - **Locatie van persoonlijke herstel sleutel** : Geef een kort bericht voor de gebruiker op waarin wordt uitgelegd hoe ze hun persoonlijke herstel sleutel kunnen ophalen. Deze tekst wordt ingevoegd in het bericht dat de gebruiker ziet wanneer FileVault wordt ingeschakeld.  
+    - **Locatie van persoonlijke herstel sleutel** : Geef een kort bericht voor de gebruiker op waarin wordt uitgelegd hoe en waar ze hun persoonlijke herstel sleutel kunnen ophalen. Deze tekst wordt ingevoegd in het bericht dat de gebruiker op het aanmeld scherm ziet wanneer u wordt gevraagd hun persoonlijke herstel sleutel in te voeren als een wacht woord is verg eten.  
       
-     - **Draaiing van persoonlijke herstel sleutel** : Geef op hoe vaak de persoonlijke herstel sleutel voor een apparaat wordt gedraaid. U kunt de standaard instelling **niet geconfigureerd**of een waarde van **1** tot **12** maanden selecteren.  
+    - **Draaiing van persoonlijke herstel sleutel** : Geef op hoe vaak de persoonlijke herstel sleutel voor een apparaat wordt gedraaid. U kunt de standaard instelling **niet geconfigureerd**of een waarde van **1** tot **12** maanden selecteren.  
 
-  - **Uitstellen FileVault tot afmelden** 
-    > [!NOTE]
-    > Ondersteuning voor FileVault is beperkt tot de implementatie van juli over een paar dagen is voltooid. Als de implementatie is voltooid, moet u FileVault instellen *voordat u zich* afmeldt om in te **scha kelen**.   
-
-    FileVault wordt pas ingeschakeld als de gebruiker zich afmeldt. De gebruiker van een lokale gebruiker of een mobiel account wordt gevraagd om FileVault in te scha kelen bij het afmelden of de volgende aanmelding.  
+  - **Prompt uitschakelen bij afmelden**  
+    Voor komen dat de gebruiker wordt gevraagd om FileVault in te scha kelen wanneer deze zich afmeldt.  Als deze instelling is uitgeschakeld, wordt de prompt bij het afmelden uitgeschakeld en wordt de gebruiker gevraagd om zich aan te melden.  
     - **Niet geconfigureerd**  
-    - **Inschakelen**  
-    
+    - **Uitschakelen**  
+
     **Standaard**: niet geconfigureerd  
 
+  - **Aantal keren dat mag worden omzeild**  
+  Stel het aantal keren in dat een gebruiker prompts kan negeren om FileVault in te scha kelen voordat FileVault is vereist om zich aan te melden.  
 
-
-    - **Prompt uitschakelen bij afmelden**  
-      Voor komen dat de gebruiker wordt gevraagd om FileVault in te scha kelen wanneer deze zich afmeldt.  
-      - **Niet geconfigureerd**  
-      - **Inschakelen**  
-
-      **Standaard**: niet geconfigureerd  
-
-    - **Aantal keren dat mag worden omzeild**  
-      Stel het aantal keren in dat een gebruiker prompts kan negeren om FileVault in te scha kelen voordat FileVault is vereist om zich aan te melden.  
-
-      - **Niet geconfigureerd** : versleuteling op het apparaat is vereist voordat de volgende aanmelding is toegestaan.  
-      -  **1** tot **10** : Hiermee staat u een gebruiker toe de prompt te negeren van 1 tot 10 keer voordat versleuteling op het apparaat is vereist.  
-      - **Geen limiet, altijd vragen** : de gebruiker wordt gevraagd om FileVault in te scha kelen, maar versleuteling is nooit vereist.  
+    - **Niet geconfigureerd** : versleuteling op het apparaat is vereist voordat de volgende aanmelding is toegestaan.  
+    - **1** tot **10** : Hiermee staat u een gebruiker toe de prompt te negeren van 1 tot 10 keer voordat versleuteling op het apparaat is vereist.  
+    - **Geen limiet, altijd vragen** : de gebruiker wordt gevraagd om FileVault in te scha kelen, maar versleuteling is nooit vereist.  
  
-      **Standaard**: niet geconfigureerd  
+    **Standaard**: niet geconfigureerd  
 
 

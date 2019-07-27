@@ -18,16 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e43fccabd142527d9e17317d56fa029844fa270d
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: bff8f2d74b06d1cd4ee7dffe594917b4d0946d5c
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329462"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467318"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Een apparaat met een Android-werkprofiel inschrijven
 
-Schrijf uw Android-apparaat in om toegang te krijgen tot zakelijke e-mail, apps en andere werkgegevens. Tijdens de inschrijving moet u een Android-werkprofiel instellen. Met dit profiel scheidt u de persoonlijke gegevens op het apparaat van uw werkgegevens. De ondersteuning van uw bedrijf beheert alleen het werkprofiel, dat uit de werkbestanden en gegevens bestaat. De ondersteuning van uw bedrijf kan geen persoonlijke gegevens op uw apparaat beheren. Zie [Wat gebeurt er wanneer u een werkprofiel maakt](what-happens-when-you-create-a-work-profile-android.md) voor meer informatie.  
+Schrijf uw Android-apparaat in om toegang te krijgen tot zakelijke e-mail, apps en andere werkgegevens. Tijdens de inschrijving moet u een Android-werkprofiel instellen. Met dit profiel scheidt u de persoonlijke gegevens op het apparaat van uw werkgegevens. De ondersteuning van uw bedrijf beheert alleen het werkprofiel, dat uit de werkbestanden en gegevens bestaat. De ondersteuning van uw bedrijf kan geen persoonlijke gegevens op uw apparaat beheren.
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
+
+Zie [Wat gebeurt er wanneer u een werkprofiel maakt](what-happens-when-you-create-a-work-profile-android.md) voor meer informatie.
 
 ## <a name="create-work-profile-and-enroll-device"></a>Een werkprofiel maken en een apparaat inschrijven
 
