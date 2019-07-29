@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883288"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427320"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>De Intune on-premises Exchange-connector instellen in Microsoft Intune
 De informatie in dit artikel helpt u bij het installeren en vervolgens controleren van de on-premises Exchange Active Sync-connector voor Intune.  U gebruikt de Intune on-premises Exchange-connector met uw [beleid voor voorwaardelijke toegang om toegang tot uw on-premises Exchange-postvakken toe te staan of te blokkeren](conditional-access-exchange-create.md). 
@@ -152,8 +152,22 @@ Hoge beschikbaarheid voor de on-premises Exchange-connector betekent dat de conn
 Om failover uit te voeren detecteert de connector na het tot stand brengen van een verbinding met Exchange met de opgegeven CAS aanvullende CAS-exemplaren voor die Exchange-organisatie. Door op de hoogte te zijn van aanvullende CAS-exemplaren is failover naar een andere CAS mogelijk als deze beschikbaar is totdat de primaire CAS beschikbaar komt. Detectie van aanvullende CAS-exemplaren is standaard ingeschakeld. U kunt failover als volgt uitschakelen:  
 1. Op de server waar de Exchange-connector is geïnstalleerd, gaat u naar %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
 2. Open **OnPremisesExchangeConnectorServiceConfiguration.xml** met behulp van een teksteditor.
-3. Wijzig &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; in &lt;IsCasFailoverEnabled&gt;**false** &lt;/IsCasFailoverEnabled&gt; om de functie uit te schakelen.    
+3. Wijzig &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; in &lt;IsCasFailoverEnabled&gt;**false** &lt;/IsCasFailoverEnabled&gt; om de functie uit te schakelen.  
  
+## <a name="optional-performance-tuning-for-the-exchange-connector"></a>Optionele prestatie-afstemming voor Exchange Connector  
+
+Als u 5000 of meer apparaten ondersteunt met Exchange ActiveSync kunt u een optionele instelling configureren om de prestaties van de connector te verbeteren. U kunt betere prestaties realiseren door voor Exchange in te stellen dat er meerdere exemplaren van een PowerShell-runspace voor opdrachten mogen worden gebruikt. 
+
+Voordat u deze wijziging aanbrengt, controleert u of het account dat u gebruikt voor Exchange Connector niet wordt gebruikt voor andere Exchange-beheerdoeleinden. Dit is belangrijk omdat Exchange een limiet heeft van 18 runspaces per account. De connector maakt over het algemeen gebruik van het overgrote deel van de runspaces. 
+
+De prestaties kunnen niet worden gewijzigd voor connectors die worden uitgevoerd op oudere of langzamere hardware.  
+
+1. Open op de server waarop de connector is geïnstalleerd de installatiemap van de connector.  De standaardlocatie is *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*. 
+2. Bewerk het bestand *OnPremisesExchangeConnectorServiceConfiguration.xml*.
+3. Zoek **EnableParallelCommandSupport** en stel de waarde in op **true**:  
+     
+   \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
+4. Sla het bestand op en start de Microsoft Intune Exchange Connector-service opnieuw op.
 
 ## <a name="reinstall-the-on-premises-exchange-connector"></a>De on-premises Exchange-connector opnieuw installeren
 U moet mogelijk een Exchange-connector opnieuw installeren. Omdat er één connector wordt ondersteund om verbinding te maken met elke Exchange-organisatie, vervangt de tweede connector die u voor een organisatie installeert de oorspronkelijke connector.

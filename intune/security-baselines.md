@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16586ece687b5d50ea89b28bfd524f50e65ceb46
-ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
+ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67851482"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353591"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Beveiligingsbasislijnen gebruiken om Windows 10-apparaten te gebruiken in Intune
 
@@ -73,6 +73,9 @@ De volgende beveiligingsbasislijninstanties zijn beschikbaar voor gebruik met In
 - **Microsoft Defender ATP-basislijn**  
   *(Voor het gebruik van deze basislijn moet uw omgeving voldoen aan de vereisten voor het gebruik van [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))* .
   - [Voorbeeld: Microsoft Defender ATP-basislijn](security-baseline-settings-defender-atp.md)  
+
+  > [!NOTE]
+  > De beveiligingsbasislijn van de Microsoft Defender ATP is geoptimaliseerd voor fysieke apparaten en wordt momenteel niet aanbevolen voor gebruik met virtuele machines (VM's) of VDI-eindpunten. Bepaalde basislijninstellingen kunnen invloed hebben op externe interactieve sessies in gevirtualiseerde omgevingen.  Voor meer informatie ziet u [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) (Naleving met de Microsoft Defender ATP-beveiligingsbasislijn vergroten) in de Windows-documentatie.
 
 Profielen die u eerder hebt gemaakt op basis van een previewsjabloon, kunt u gewoon blijven gebruiken en bewerken, zelfs wanneer de sjabloon niet meer beschikbaar is voor nieuwe profielen. 
 
@@ -177,19 +180,19 @@ Andere processen die later mogelijk de instellingen op het apparaat wijzigen, zi
 
 ## <a name="q--a"></a>Vragenronde
 
-#### <a name="why-these-settings"></a>Waarom deze instellingen?
+### <a name="why-these-settings"></a>Waarom deze instellingen?
 
 Het Microsoft-beveiligingsteam heeft jarenlang rechtstreeks met de Windows-ontwikkelaars en de beveiligingscommunity samengewerkt om deze aanbevelingen op te stellen. De instellingen in deze basislijn worden beschouwd als de meest relevante beveiligingsgerelateerde configuratieopties. In elke nieuwe build van Windows past het team de aanbevelingen aan op basis van onlangs uitgebrachte functies.
 
-#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>Is er een verschil in de aanbevelingen voor Windows-beveiligingsbasisrichtlijnen voor groepsbeleid t.o.v. Intune?
+### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>Is er een verschil in de aanbevelingen voor Windows-beveiligingsbasisrichtlijnen voor groepsbeleid t.o.v. Intune?
 
 De instellingen voor elke basislijn worden door hetzelfde beveiligingsteam van Microsoft gekozen en georganiseerd. Intune bevat alle relevante instellingen in de Intune-beveiligingsbasislijn. Er zijn enkele instellingen in de basislijn voor groepsbeleid die specifiek zijn voor een on-premises domeincontroller. Deze instellingen worden uitgesloten van de aanbevelingen voor Intune. Alle andere instellingen zijn hetzelfde.
 
-#### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Zijn de Intune-beveiligingsbasislijnen compatibel met CIS of NSIT?
+### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Zijn de Intune-beveiligingsbasislijnen compatibel met CIS of NSIT?
 
 Strikt genomen niet. Het Microsoft-beveiligingsteam raadpleegt adviesorganisaties, zoals CIS, voor het opstellen van de aanbevelingen. Maar er is niet één-op-één koppeling tussen "Compatibel met CIS" en Microsoft-basislijnen.
 
-#### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Welke certificeringen hebben Microsoft-beveiligingsbasislijnen? 
+### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Welke certificeringen hebben Microsoft-beveiligingsbasislijnen? 
 
 - Microsoft blijft beveiligingsbasislijnen publiceren voor groepsbeleid (GPO's) en de [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10), zoals het dit al vele jaren doet. Deze basislijnen worden door veel organisaties gebruikt. De aanbevelingen in deze basislijnen zijn het gevolg van de samenwerking van het Microsoft Security-team met zakelijke klanten en externe organisaties, inclusief het Ministerie van defensie, de NIST (National Institute of Standards en Technology) en meer. We delen onze aanbevelingen en basislijnen met deze organisaties. Deze organisaties hebben ook hun eigen aanbevelingen die nauw aansluiten bij de aanbevelingen van Microsoft. Aangezien Mobile Device Management (MDM) blijft groeien in de cloud, heeft Microsoft gelijkwaardige MDM-aanbevelingen voor deze basislijnen groepsbeleid opgesteld. Deze aanvullende basislijnen zijn ingebouwd in Microsoft Intune en omvatten nalevingsrapporten voor gebruikers, groepen en apparaten die de basislijn volgen (of niet volgen).
 
@@ -202,4 +205,5 @@ Strikt genomen niet. Het Microsoft-beveiligingsteam raadpleegt adviesorganisatie
   - [MDM-beveiligingsbasislijn](security-baseline-settings-mdm.md)  
   - [Microsoft Defender ATP-basislijn](security-baseline-settings-defender-atp.md)  
 
-- De status controleren en de [basislijn en het profiel](security-baselines-monitor.md) controleren.
+- De status controleren en de [basislijn en het profiel](security-baselines-monitor.md) controleren
+

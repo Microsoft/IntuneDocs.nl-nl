@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4712c2958e2beee8853ad0d2620414d823da327
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 9828b04ae30d8f35313564b93dfc9b997795bf76
+ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804493"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306725"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>US Government-eindpunten voor Microsoft Intune
 
@@ -45,14 +45,14 @@ De volgende tabel bevat de poorten en services waartoe de Intune-client toegang 
 | enterpriseregistration.microsoftonline.us | 13.72.188.239 <br> 13.72.55.179 |
 
 ## <a name="us-government-customer-designated-endpoints"></a>Eindpunten die aan US Government-klanten zijn toegewezen:
-- Azure Portal: https://portal.azure.us/ 
-- Office 365: https://portal.office365.us/ 
-- Intune-bedrijfsportal: https://portal.manage.microsoft.us/ 
+- Azure Portal: https:\//portal.azure.us/ 
+- Office 365: https:\//portal.office365.us/ 
+- Intune-bedrijfsportal: https:\//portal.manage.microsoft.us/ 
 
 ## <a name="partner-service-endpoints-that-intune-depends-on"></a>Service-eindpunten voor partners waarvan Intune afhankelijk is:
-- AAD Sync-service: https://syncservice.gov.us.microsoftonline.com/DirectoryService.svc
-- Evo STS: https://login.microsoftonline.us
-- Toepassingsproxy: https://directoryproxy.microsoftazure.us/DirectoryProxy.svc
-- AAD Graph: https://directory.microsoftazure.us en https://graph.microsoftazure.us
-- MS Graph: https://graph.microsoft.us
-- ADRS: https://enterpriseregistration.microsoftonline.us
+- AAD Sync Services: https:\//syncservice.gov.us.microsoftonline.com/DirectoryService.svc
+- Evo STS: https:\//login.microsoftonline.us
+- Directoryproxy: https:\//directoryproxy.microsoftazure.us/DirectoryProxy.svc
+- AAD Graph: https:\//directory.microsoftazure.us en https:\//graph.microsoftazure.us
+- MS Graph: https:\//graph.microsoft.us
+- ADRS: https:\//enterpriseregistration.microsoftonline.us

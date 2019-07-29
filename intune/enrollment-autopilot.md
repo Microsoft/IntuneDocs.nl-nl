@@ -17,15 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71e8760bde5f6c53f6e73d8c8dd0f795809726b2
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: aa4a0ff4c651e20a9f772551f1664bd8bf2d879f
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649106"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387327"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
+
+Er zijn vier typen Autopilot-implementatie: [Zelfimplementatiemodus](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) (voor kiosken, digitale borden of een gedeeld apparaat), [White label](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) (hiermee kunnen partners of IT-medewerkers een Windows 10-pc alvast inrichten, zodat deze volledig is geconfigureerd en klaar is voor gebruik), [Autopilot voor bestaande apparaten](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) (hiermee kunt u gemakkelijk de meest recente versie van Windows 10 op uw bestaande apparaten implementeren) en [Door gebruiker gestuurde modus](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven) (voor traditionele gebruikers). 
 
 
 ## <a name="prerequisites"></a>Vereisten

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 069658bdd231be96d7f9fbe23de1b4e38fdc5a9e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: af27a9b07434346a5425d0539759cb90ebf1ee6f
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885153"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427092"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Naleving voor Microsoft Defender ATP met voorwaardelijke toegang in Intune afdwingen  
 
@@ -52,6 +52,17 @@ Als u Microsoft Defender ATP met Intune wilt gebruiken, moet u het volgende geco
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>Microsoft Defender ATP in Intune inschakelen
 
+Wanneer u een nieuwe toepassing integreert in Intune Mobile Threat Defense en u de verbinding inschakelt, maakt Intune een klassiek beleid voor voorwaardelijke toegang in Azure Active Directory. Voor elke MTD-app die u integreert, zoals [Defender ATP](advanced-threat-protection.md) of een app van een van onze aanvullende [MTD-partners](mobile-threat-defense.md#mobile-threat-defense-partners), wordt er een nieuw klassiek beleid voor voorwaardelijke toegang gemaakt.  De beleidsregels kunnen worden genegeerd, maar mogen niet worden bewerkt, verwijderd of uitgeschakeld.
+
+Klassiek beleid voor voorwaardelijke toegang voor MTD-apps: 
+
+- Wordt door Intune MTD gebruikt om te vereisen dat apparaten in Azure AD worden geregistreerd; ze beschikken dan over een apparaat-id. De id is vereist omdat apparaten anders hun status niet kunnen doorgeven aan Intune.  
+- Verschilt van beleid voor voorwaardelijke toegang dat u normaal wellicht zou maken om MTD te helpen beheren.
+- Standaard wordt er niet gecommuniceerd met andere beleidsregels voor voorwaardelijke toegang die voor evaluatie worden gebruikt.  
+
+Als u klassiek beleid voor voorwaardelijke toegang wilt bekijken, gaat u in [Azure](https://portal.azure.com/#home) naar **Azure Active Directory** > **Voorwaardelijke toegang** > **Klassieke beleidsregels**.
+
+### <a name="to-enable-defender-atp"></a>Defender ATP inschakelen
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatcompatibiliteit** > **Microsoft Defender ATP** en selecteer vervolgens **Microsoft Defender Security Center openen** onder *Connectorinstellingen*.
 
