@@ -1,6 +1,6 @@
 ---
 title: Instellingen van apparaatfuncties voor iOS in Microsoft Intune - Azure | Microsoft Docs
-description: Alle instellingen bekijken voor het configureren van iOS-apparaten, de indeling van het startscherm, app-meldingen, gedeelde apparaten, eenmalige aanmelding en het filteren van webinhoud in Microsoft Intune. Gebruik deze instellingen in een apparaatconfiguratieprofiel om iOS-apparaten te configureren voor het gebruik van deze verschillende Apple-functies in uw organisatie.
+description: Alle instellingen bekijken voor het configureren van iOS-apparaten, de indeling van het startscherm, app-meldingen, gedeelde apparaten, eenmalige aanmelding en het filteren van webinhoud in Microsoft Intune. Gebruik deze instellingen in een apparaatconfiguratieprofiel om iOS-apparaten te configureren voor het gebruik van deze Apple-functies in uw organisatie.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43b87a90f90130a014817819b87ed5946b1ba15b
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: bac591a625fd915056234a75b26bc2f90f50cae7
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413811"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387107"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>iOS-apparaatinstellingen voor het gebruik van algemene iOS-functies in Intune
 
@@ -41,7 +41,7 @@ Dit artikel beschrijft deze instellingen en wat elke instelling doet.
 - **Poort**: voer de luisterpoort van de AirPrint-bestemming in. Als u deze eigenschap leeg laat, maakt AirPrint gebruik van de standaardpoort. Beschikbaar in iOS 11.0 en hoger.
 - **TLS**: kies **Inschakelen** voor het beveiligen van AirPrint-verbindingen met Transport Layer Security (TLS). Beschikbaar in iOS 11.0 en hoger.
 
-Met **Toevoegen** wordt de AirPrint-server aan de lijst toegevoegd. U kunt veel AirPrint-servers toevoegen. U kunt ook een door komma's gescheiden (.csv) bestand met deze informatie **importeren**. Nadat u de lijst hebt gemaakt, kunt u uw lijst met AirPrint-servers ook **exporteren**.
+Met **Toevoegen** wordt de AirPrint-server aan de lijst toegevoegd. Er kunnen veel afdruk servers worden toegevoegd. U kunt ook een door komma's gescheiden (.csv) bestand met deze informatie **importeren**. Met **exporteren** wordt een lijst gemaakt met de afdruk servers die u hebt toegevoegd.
 
 Selecteer **OK** om de lijst op te slaan.
 
@@ -195,7 +195,7 @@ Deze functie biedt ondersteuning voor apparaten onder supervisie waarop iOS 9.3 
   Apparaattokens kunnen ook worden gebruikt om apparaatspecifieke informatie aan deze velden toe te voegen. Als u bijvoorbeeld het serienummer wilt weergeven, voert u `Serial Number: {{serialnumber}}` in. De tekst die in het vergrendelingsscherm wordt weergegeven, is vergelijkbaar met `Serial Number 123456789ABC`. Wanneer u variabelen opgeeft, moet u ervoor zorgen dat u accolades `{{ }}` gebruikt. [App-configuratietokens](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) bevat een lijst met variabelen die kunnen worden gebruikt. U kunt ook `deviceName` of een andere apparaatspecifieke waarde gebruiken.
 
   > [!NOTE]
-  > Variabelen in de gebruikersinterface niet worden gevalideerd en zijn hoofdlettergevoelig. Hierdoor ziet u mogelijk profielen die met onjuiste invoer zijn opgeslagen. Als u bijvoorbeeld `{{DeviceID}}` invoert in plaats van `{{deviceid}}`, wordt de letterlijke tekenreeks weergegeven in plaats van de unieke id van het apparaat. Zorg ervoor dat de juiste informatie invoert.
+  > Variabelen worden niet gevalideerd in de gebruikers interface en zijn hoofdletter gevoelig. Hierdoor ziet u mogelijk profielen die met onjuiste invoer zijn opgeslagen. Als u bijvoorbeeld `{{DeviceID}}` invoert in plaats van `{{deviceid}}`, wordt de letterlijke tekenreeks weergegeven in plaats van de unieke id van het apparaat. Zorg ervoor dat u de juiste informatie invoert.
 
 Selecteer **OK** om uw wijzigingen op te slaan.
 
@@ -253,7 +253,7 @@ Selecteer **OK** om uw wijzigingen op te slaan.
 
 ## <a name="web-content-filter-settings"></a>Filterinstellingen voor webinhoud
 
-Deze instellingen bepalen browsertoegang tot URL's op iOS-apparaten.
+Met deze instellingen wordt browsertoegang tot URL's gecontroleerd op alle iOS-apparaten onder supervisie.
 
 - **Filtertype**: hiermee kunt u specifieke websites toestaan. Uw opties zijn:
 

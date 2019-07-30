@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 06/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4f9f3cabf0826380dfd97b9c0f772f9846912f0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f75317678034a488e689461982550bbb0a8afad8
+ms.sourcegitcommit: 7273100afc51fd808558dc05c651358145d4fa6b
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530261"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533160"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Aangepaste instellingen gebruiken voor iOS-apparaten in Microsoft Intune
 
@@ -31,13 +31,17 @@ Wanneer u iOS-apparaten gebruikt, kunt u op twee manieren aangepaste instellinge
 - [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
 - [Apple Profile Manager](https://support.apple.com/profile-manager)
 
-U kunt met deze hulpprogramma's instellingen exporteren naar een configuratieprofiel. U importeert dit bestand in Intune en wijst het profiel vervolgens toe aan uw iOS-gebruikers en -apparaten. Wanneer het profiel is toegewezen, worden de instellingen gedistribueerd en wordt er ook een basislijn of standaard gemaakt voor iOS in uw organisatie.
+U kunt met deze hulpprogramma's instellingen exporteren naar een configuratieprofiel. U importeert dit bestand in Intune en wijst het profiel vervolgens toe aan uw iOS-gebruikers en -apparaten. Zodra de instellingen zijn toegewezen, worden deze gedistribueerd. Ze maken ook een basis lijn of standaard voor iOS in uw organisatie.
 
-In dit artikel wordt beschreven hoe u een aangepast profiel maakt voor iOS-apparaten. Er worden ook enkele richtlijnen vermeld voor het gebruik van Apple Configurator en Apple Profile Manager.
+In dit artikel vindt u enkele richt lijnen voor het gebruik van Apple Configurator en Apple Profile Manager en een beschrijving van de eigenschappen die u kunt configureren.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
-- Wanneer u **Apple Configurator** gebruikt om het configuratieprofiel te maken, moet u ervoor zorgen dat de instellingen die u exporteert compatibel zijn met de iOS-versie op de apparaten die u gebruikt. Als u meer wilt weten over het oplossen van problemen bij incompatibele instellingen, zoekt u op de [Apple Developer](https://developer.apple.com/)-website naar **Configuration Profile Reference** (naslag voor configuratieprofielen) en **Mobile Device Management Protocol Reference** (naslag voor beheerprotocol voor mobiele apparaten).
+[Maak het profiel](device-profile-create.md).
+
+## <a name="what-you-need-to-know"></a>Wat u dient te weten
+
+- Wanneer u **Apple Configurator** gebruikt om het configuratieprofiel te maken, moet u ervoor zorgen dat de instellingen die u exporteert compatibel zijn met de iOS-versie op de apparaten. Zoek op de [Apple Developer](https://developer.apple.com/)-website naar **Configuration Profile Reference** (naslag voor configuratieprofielen) en **Mobile Device Management Protocol Reference** (naslag voor beheerprotocol voor mobiele apparaten) als u meer wilt weten over het oplossen van problemen bij incompatibele instellingen.
 
 - Wanneer u **Apple Profile Manager** gebruikt, moet u het volgende doen:
 
@@ -47,25 +51,19 @@ In dit artikel wordt beschreven hoe u een aangepast profiel maakt voor iOS-appar
 
     Download dit bestand en sla het op. U voert dit bestand in het Intune-profiel in.
 
-  - Zorg ervoor dat de instellingen die u uit Apple Profile Manager exporteert compatibel zijn met de iOS-versie op de apparaten die u gebruikt. Zoek op de [Apple Developer](https://developer.apple.com/)-website naar **Configuration Profile Reference** (naslag voor configuratieprofielen) en **Mobile Device Management Protocol Reference** (naslag voor beheerprotocol voor mobiele apparaten) als u meer wilt weten over het oplossen van problemen bij incompatibele instellingen.
+  - Zorg ervoor dat de instellingen die u uit Apple Profile Manager exporteert compatibel zijn met de iOS-versie op de apparaten. Zoek op de [Apple Developer](https://developer.apple.com/)-website naar **Configuration Profile Reference** (naslag voor configuratieprofielen) en **Mobile Device Management Protocol Reference** (naslag voor beheerprotocol voor mobiele apparaten) als u meer wilt weten over het oplossen van problemen bij incompatibele instellingen.
 
-## <a name="create-the-profile"></a>Het profiel maken
+## <a name="custom-configuration-profile-settings"></a>Aangepaste configuratieprofielinstellingen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-3. Voer de volgende instellingen in:
+- **Naam voor het aangepaste configuratieprofiel**: voer een naam in voor het beleid. Deze naam wordt weergegeven op het apparaat en in de Intune-status.
+- **Configuratieprofielbestand**: blader naar het configuratieprofiel dat u hebt gemaakt met Apple Configurator of Apple Profile Manager. Het bestand dat u hebt geïmporteerd, wordt weergegeven in het gebied **Bestandsinhoud**.
 
-    - **Naam**: voer een naam in voor het profiel, zoals `ios custom profile`.
-    - **Beschrijving:** voer een beschrijving in voor het profiel.
-    - **Platform**: kies **iOS**.
-    - **Profieltype**: kies **Aangepast**.
+  U kunt ook apparaat-tokens toevoegen aan uw aangepaste configuratie bestanden. Apparaat-tokens worden gebruikt om apparaatspecifieke informatie toe te voegen. Als u bijvoorbeeld het serienummer wilt weergeven, voert u `{{serialnumber}}` in. Op het apparaat wordt de tekst weer gegeven op `123456789ABC` een manier die uniek is voor elk apparaat. Wanneer u variabelen opgeeft, moet u ervoor zorgen dat u accolades `{{ }}` gebruikt. [App-configuratietokens](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) bevat een lijst met variabelen die kunnen worden gebruikt. U kunt ook `deviceid` of een andere apparaatspecifieke waarde gebruiken.
 
-4. Voer in **Aangepaste configuratie** de volgende instellingen in:
+  > [!NOTE]
+  > Variabelen worden niet gevalideerd in de gebruikers interface en zijn hoofdletter gevoelig. Hierdoor ziet u mogelijk profielen die met onjuiste invoer zijn opgeslagen. Als u bijvoorbeeld `{{DeviceID}}` invoert in plaats van `{{deviceid}}`, wordt de letterlijke tekenreeks weergegeven in plaats van de unieke id van het apparaat. Zorg ervoor dat u de juiste informatie invoert.
 
-    - **Naam voor het aangepaste configuratieprofiel**: voer een naam in voor het beleid. Deze naam wordt weergegeven op het apparaat en in de Intune-status.
-    - **Configuratieprofielbestand**: blader naar het configuratieprofiel dat u hebt gemaakt met Apple Configurator of Apple Profile Manager. Het bestand dat u hebt geïmporteerd, wordt weergegeven in het gebied **Bestandsinhoud**.
-
-5. Selecteer **OK** > **Maken** om het Intune-profiel te maken. Wanneer het profiel is gemaakt, wordt dit weergegeven in de lijst **Apparaatconfiguratie - profielen**.
+Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt gemaakt en weergegeven in de lijst met profielen.
 
 ## <a name="next-steps"></a>Volgende stappen
 

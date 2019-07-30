@@ -5,7 +5,7 @@ description: Beveiligingsbasislijninstellingen die door Intune worden ondersteun
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354433"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491916"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-basislijninstellingen voor Intune
 
@@ -292,7 +292,7 @@ Zie [WindowsAdvancedThreatProtection CSP](https://docs.microsoft.com/windows/cli
 
   **Standaardinstelling**: Controlemodus
 
-## <a name="web-network-protection"></a>Webnetwerkbeveiliging  
+## <a name="web--network-protection"></a>Web- en netwerkbeveiliging  
 
 - **Netwerkbeveiligingstype**  
   [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection): met dit beleid kunt u netwerkbeveiliging in- of uitschakelen in Windows Defender Exploit Guard. Netwerkbeveiliging is een functie van Windows Defender Exploit Guard die voorkomt dat werknemers die apps gebruiken in contact komen met phishing-praktijken, sites die misbruik maken en schadelijke inhoud op internet. Dit omvat het voorkomen dat browsers van derden verbinding maken met gevaarlijke websites.  
@@ -600,6 +600,13 @@ Raadpleeg [PassportForWork CSP](https://docs.microsoft.com/windows/client-manage
 
 - **Windows Hello voor Bedrijven configureren** - *TenantId/beleid/UsePassportForWork*    
   Windows Hello voor Bedrijven is een alternatieve aanmeldmethode voor Windows die wachtwoorden, smartcards en virtuele smartcards vervangt.  
+
+  - Wanneer deze optie is ingesteld op *Ja*, schakelt u dit beleid in en wordt Windows hello voor bedrijven door het apparaat ingericht.  
+  - Als deze optie is ingesteld op *niet geconfigureerd*, is de basis lijn niet van invloed op de beleids instelling van het apparaat. Dit betekent dat als Windows hello voor bedrijven is uitgeschakeld op een apparaat, het uitgeschakeld blijft. Als de functie is ingeschakeld, blijft deze ingeschakeld. 
+
+  U kunt Windows hello voor bedrijven niet uitschakelen via deze basis lijn. U kunt Windows hello voor bedrijven uitschakelen wanneer u [Windows-inschrijving](windows-hello.md)configureert of als onderdeel van een configuratie profiel voor [identiteits beveiliging](identity-protection-configure.md).  
+
+Windows Hello voor Bedrijven is een alternatieve aanmeldmethode voor Windows die wachtwoorden, smartcards en virtuele smartcards vervangt.  
 
   Als u deze beleidsinstelling inschakelt of niet configureert, richt het apparaat Windows Hello voor Bedrijven in. Als u deze beleidsinstelling uitschakelt, richt het apparaat voor geen enkele gebruiker Windows Hello voor Bedrijven in.
 

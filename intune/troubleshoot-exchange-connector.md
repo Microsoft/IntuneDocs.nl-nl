@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2718ee7936e82bffc50126eeb57f1b6f732df22d
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: ea3ae66a32353b4aa6c782b13e6a587ee1f4464e
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354466"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491824"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Problemen met de Intune on-premises Exchange-connector oplossen
 
@@ -47,9 +47,9 @@ Controleer de [installatie van de Intune on-premises Exchange-connector](exchang
 
 
 ## <a name="using-powershell-to-get-more-data-on-exchange-connector-issues"></a>Powershell gebruiken om meer gegevens over problemen met de Exchange Connector te verkrijgen
-- Gebruik Get-ActiveSyncDeviceStatistics -mailbox mbx om een lijst met alle mobiele apparaten voor een postvak op te halen
-- Gebruik Get-Mailbox -Identity user | select emailaddresses | fl om een lijst van SMTP-adressen voor een postvak op te halen
-- Gebruik Get-CASMailbox <upn> | fl om gedetailleerde informatie over de toegangsstatus van een apparaat op te halen
+- Als u een lijst met alle mobiele apparaten voor een postvak wilt weer geven, gebruikt u`Get-ActiveSyncDeviceStatistics -mailbox mbx`
+- Als u een lijst met SMTP-adressen voor een postvak wilt ophalen, gebruikt u`Get-Mailbox -Identity user | select emailaddresses | fl`
+- Gebruik `Get-CASMailbox <upn> | fl` om gedetailleerde informatie op te halen over de toegangsstatus van een apparaat
 
 ## <a name="next-steps"></a>Volgende stappen
 Als deze informatie geen oplossing biedt, kunt u ook [ondersteuning voor Microsoft Intune krijgen](get-support.md).

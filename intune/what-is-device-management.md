@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise bevat Microsoft Intune. Bekijk hoe op welk
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884273"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427313"
 ---
 # <a name="what-is-device-management"></a>Wat is apparaatbeheer? 
 
@@ -59,7 +59,7 @@ Het is een belangrijke taak van elke apparaatbeheeroplossing om beveiliging en b
 - **Windows Defender** bevat veel beveiligingsfuncties ter bescherming van Windows 10-apparaten. Als u Intune en Windows Defender samen gebruikt, kunt u: 
 
   - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) inschakelen om te zoeken naar verdachte activiteit in bestanden en apps op mobiele apparaten. 
-  - Gebruik [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) om beveiligingsschending op mobiele apparaten te voorkomen. En beperk de gevolgen van een schending door een gebruiker te blokkeren vanuit bedrijfsresources.
+  - Gebruik [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) om beveiligingsschending op mobiele apparaten te voorkomen. En beperk de gevolgen van een schending door een gebruiker te blokkeren vanuit bedrijfsresources.
 
 - **Voorwaardelijke toegang** wordt mogelijk gemaakt door Azure Active Directory en kan prima worden geïntegreerd in Intune. Met [voorwaardelijke toegang](https://docs.microsoft.com/intune/conditional-access) kunt u ervoor zorgen dat alleen apparaten die voldoen aan het beleid, toegang krijgen tot e-mail, SharePoint en andere apps. 
 
@@ -73,11 +73,11 @@ U kunt ook een combinatie van [MDM en MAM](https://docs.microsoft.com/intune/byo
 
 Wanneer u Intune instelt, kunt u er ook voor kiezen om alleen Azure Portal te gebruiken voor het beheren van apparaten. U kunt er daarnaast voor kiezen om zowel Intune als Microsoft 365 te gebruiken voor het beheren van apparaten. [Mobile Device Management migreren naar Intune via Azure Portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) is een Microsoft IT-casestudy. In deze casestudy is te zien hoe Microsoft IT tot de keuze voor een moderne apparaatbeheeraanpak is gekomen en is te lezen welke kennis hierbij is opgedaan.
 
-## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>IT-taken vereenvoudigen via het dashboard Apparaatbeheer
+## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>IT-taken vereenvoudigen via het beheercentrum Apparaatbeheer
 
-Het [dashboard Apparaatbeheer](https://devicemanagement.portal.azure.com/) biedt alles wat u nodig hebt om taken voor uw mobiele apparaten te beheren en voltooien. Het dashboard biedt services voor apparaatbeheer (inclusief Intune en Azure Active Directory) en voor het beheren van apps van klanten. 
+Het [beheercentrum Apparaatbeheer](https://devicemanagement.portal.azure.com/) biedt alles wat u nodig hebt om taken voor uw mobiele apparaten te beheren en voltooien. Deze werkruimte biedt services voor apparaatbeheer (inclusief Intune en Azure Active Directory) en voor het beheren van apps van klanten. 
 
-Op het dashboard Apparaatbeheer kunt u:
+In het beheer centrum voor Apparaatbeheer kunt u het volgende doen:
 
 - [Apparaten inschrijven](https://docs.microsoft.com/intune/device-enrollment)
 - [Apparaatcompatibiliteit instellen](https://docs.microsoft.com/intune/device-compliance-get-started)
