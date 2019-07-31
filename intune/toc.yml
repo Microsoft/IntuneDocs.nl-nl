@@ -8,7 +8,7 @@
       displayName: ems; emm; azure ad; active directory; ad
     - name: Wat kan Intune voor mijn bedrijf doen?
       href: get-started-evaluation.md
-    - name: Wat is er nieuw
+    - name: Wat is er nieuw?
       href: whats-new.md
       items:
         - name: Wat is er nieuw in de gebruikersinterface van de app?
@@ -107,7 +107,7 @@
               href: planning-guide-onboarding.md
             - name: Testen en valideren
               href: planning-guide-test-validation.md
-            - name: Aanvullende bronnen
+            - name: Extra resources
               href: planning-guide-resources.md
         - name: Migratiehandleiding
           href: migration-guide.md
@@ -164,7 +164,7 @@
           href: mdm-authority-set.md
         - name: Rollen beheren
           items:
-            - name: Toegangsbeheer op basis van rollen
+            - name: Op rollen gebaseerd toegangsbeheer
               href: role-based-access-control.md
             - name: Een rol toewijzen aan een gebruiker
               href: assign-role.md
@@ -233,6 +233,8 @@
               displayName: gms
             - name: Toegewezen Android Enterprise-apparaten of volledig beheerde apparaten inschrijven
               href: android-dedicated-devices-fully-managed-enroll.md
+            - name: Registratie van Android-apparaatbeheerder
+              href: android-enroll-device-administrator.md
             - name: Apparaten met Android Enterprise-werkprofiel beheren
               href: android-enterprise-overview.md
             - name: Samsung Knox Mobile Enrollment
@@ -599,7 +601,7 @@
               href: apps-windows-10-app-deploy.md
             - name: Apps implementeren naar Government-omgevingen
               href: apps-deploy-gcc-dod.md
-        - name: Apps controleren
+        - name: Apps bewaken
           href: apps-monitor.md
         - name: Gedetecteerde apps
           href: app-discovered-apps.md
@@ -705,6 +707,8 @@
               items:
                 - name: Problemen met iOS-apparaten inschrijven oplossen
                   href: troubleshoot-ios-enrollment-errors.md
+                - name: Problemen met Windows-apparaten inschrijven oplossen
+                  href: troubleshoot-windows-enrollment-errors.md
             - name: Gebruikers helpen problemen op te lossen
               href: help-desk-operators.md
             - name: Problemen bij toegang tot bedrijfsbronnen oplossen
@@ -804,7 +808,7 @@
                   href: vpn-settings-macos.md
                 - name: Wi-Fi
                   href: wi-fi-settings-macos.md
-                - name: Extensies
+                - name: Uitbreidingen
                   href: kernel-extensions-settings-macos.md
                 - name: Aangepast
                   href: custom-settings-macos.md
@@ -971,7 +975,7 @@
               href: 'https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview'
         - name: Graph-API's gebruikt om apparaten te configureren
           href: graph-apis-used-by-intune-device-configuration-windows.md
-- name: Bronnen
+- name: Resources
   items:
     - name: Archief
       items:
