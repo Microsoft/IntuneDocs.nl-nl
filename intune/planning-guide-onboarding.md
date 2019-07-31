@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e595ee2353a1554d97e49af666d20642a631596
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d05d9dd896321e48c3d1d9dec22cd0d1192dc0b6
+ms.sourcegitcommit: 7273100afc51fd808558dc05c651358145d4fa6b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549303"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533195"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Uw Microsoft Intune-abonnement implementeren
 
@@ -137,8 +137,4 @@ Intune ondersteunt platformen voor iOS-, Mac OS-, Android-, Windows- en Windows 
 
 
 ## <a name="next-steps"></a>Volgende stappen
-
-Bekijk deze [sessiemodule van Microsoft Virtual Academy Intune](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408) voor meer informatie over het implementatieproces van Intune.
-
-
 Meer informatie over het [testen en valideren van uw Intune-implementatie](planning-guide-test-validation.md).

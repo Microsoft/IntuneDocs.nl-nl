@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd310cea29a3dac7a178d88c0f29d1a4e36ad37d
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528304"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482816"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Quickstart: Een client-app toevoegen en toewijzen
 
@@ -43,7 +43,6 @@ Meld u aan bij [Intune](https://aka.ms/intuneportal) als [globale beheerder of b
 U kunt een app opnemen zodat u met Intune aspecten van de app kunt beheren. 
 
 Gebruik de volgende stappen om een app aan Intune toe te voegen:
-
 1. Selecteer in [Intune](https://aka.ms/intuneportal) de optie **Client-apps** > **Apps** > **Toevoegen**. 
 2. Selecteer **Windows 10** in de sectie **Office 365-suite** van de vervolgkeuzelijst **App-type**.
 3. Selecteer **App-suite configureren** om de Office-apps te selecteren die u wilt toewijzen aan de Intune-gebruiker.
@@ -56,9 +55,9 @@ Gebruik de volgende stappen om een app aan Intune toe te voegen:
 
     ![Schermopname van app-gegevens toevoegen](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. Selecteer **Instellingen voor app-suite**.
-9. Selecteer in de vervolgkeuzelijst **Kanaal bijwerken** **Maandelijks**.
-10. Klik op **OK** > **Toevoegen**.
+10. Selecteer **Instellingen voor app-suite**.
+11. Selecteer in de vervolgkeuzelijst **Kanaal bijwerken** **Maandelijks**.
+12. Klik op **OK** > **Toevoegen**.
 
 ## <a name="assign-the-app-to-a-group"></a>De app toewijzen aan een groep
 

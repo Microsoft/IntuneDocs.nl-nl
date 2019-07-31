@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: d0e3e67cd227c5ce8ac2cb42f79bdea1da8e2d75
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375124"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482775"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Instellingen voor Endpoint Protection toevoegen in Intune  
 
@@ -63,7 +63,7 @@ Als u van plan bent profielen met aangepaste firewallregels te gebruiken, moet u
 - Als één regel niet kan worden toegepast in een profiel, mislukt het uitvoeren van álle regels. Er wordt dan dus geen enkele regel toegepast op het apparaat.  
 - Als een regel niet kan worden toegepast, wordt van alle regels in het profiel gerapporteerd dat ze zijn mislukt. Intune kan niet identificeren welke specifieke regel dan is mislukt.  
 
-De firewallregels die door Intune kunnen worden beheerd, worden beschreven in de Windows [Firewall]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)-configuratieprovider (CSP). Zie [Aangepaste firewallregels](endpoint-protection-windows-10.md#custom-firewall-rules) voor een overzicht van de aangepaste-firewallinstellingen voor Windows 10-apparaten die door Intune worden ondersteund.  
+De firewallregels die door Intune kunnen worden beheerd, worden beschreven in de Windows [Firewall]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)-configuratieprovider (CSP). Zie [Aangepaste firewallregels](endpoint-protection-windows-10.md#firewall-rules) voor een overzicht van de aangepaste-firewallinstellingen voor Windows 10-apparaten die door Intune worden ondersteund.  
 
 ### <a name="to-add-custom-firewall-rules-to-an-endpoint-protection-profile"></a>Aangepaste firewallregels toevoegen aan een Endpoint Protection-profiel  
 
@@ -73,7 +73,7 @@ De firewallregels die door Intune kunnen worden beheerd, worden beschreven in de
 
 3. Selecteer **Windows Defender Firewall** om de configuratiepagina te openen en selecteer bij *Firewallregels* de optie **Toevoegen** om de pagina **Regel maken** te openen.  
 
-4. Geef instellingen voor de firewallregel op en selecteer **OK** om deze op te slaan. Zie [Aangepaste firewallregels](endpoint-protection-windows-10.md#custom-firewall-rules)om de beschikbare opties voor aangepaste firewallregels te bekijken in de documentatie.  
+4. Geef instellingen voor de firewallregel op en selecteer **OK** om deze op te slaan. Zie [Aangepaste firewallregels](endpoint-protection-windows-10.md#firewall-rules)om de beschikbare opties voor aangepaste firewallregels te bekijken in de documentatie.  
 
 5. Als u de regel hebt opgeslagen, wordt deze weergegeven op de pagina *Windows Defender Firewall*, in de lijst met regels.  
 
