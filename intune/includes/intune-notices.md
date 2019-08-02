@@ -7,14 +7,35 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: 4423e731bc1538cd2454de32f0d50f2d08eedc69
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67812445"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670932"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune. 
+
+
+### <a name="decreasing-support-for-android-device-administrator"></a>Afgenomen ondersteuning voor Android-apparaatbeheerder 
+Android-apparaatbeheerder (soms aangeduid met het verouderde Android-beheer, uitgebracht met Android 2.2) is een manier om Android-apparaten te beheren. Verbeterde beheerfunctionaliteit is nu echter beschikbaar met [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (uitgebracht met Android 5.0). In een poging om apparaatbeheer moderner, breder en veiliger te maken, vermindert Google ondersteuning voor apparaatbeheerder in nieuwe Android-versies.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Deze wijzigingen van Google zijn op de volgende manieren van invloed op Intune-gebruikers: 
+- Tot de zomer van 2020 biedt Intune alleen nog maar ondersteuning voor Android-apparaten met Android 10 (ook bekend als Android Q) en hoger die door apparaatbeheerder worden beheerd. Deze datum is wanneer de volgende primaire versie van Android wordt verwacht.  
+- Apparaten die worden beheerd met apparaatbeheerder en worden uitgevoerd met Android 10 of hoger, kunnen na de zomer van 2020 niet langer volledig worden beheerd.    
+- Android-apparaten die worden beheerd met apparaatbeheerder en worden uitgevoerd met oudere versies dan Android 10, worden niet getroffen en kunnen volledig beheerd blijven worden met apparaatbeheerder.  
+- Voor alle apparaten met Android 10 of hoger heeft Google de toegang voor apparaatbeheerderagents als de Bedrijfsportal tot apparaat-id's beperkt. Nadat een apparaat wordt bijgewerkt naar Android 10 of hoger, heeft dit gevolgen voor de volgende Intune-functies: 
+    - Netwerktoegangsbeheer voor VPN werkt niet meer.  
+    - Als u apparaten identificeert als 'In bedrijfseigendom' met een IMEI of serienummer, wordt het apparaat niet automatisch gemarkeerd als 'In bedrijfseigendom'. 
+    - IMEI en serienummers zijn niet langer zichtbaar voor IT-beheerder in Intune. 
+        > [!Note]
+        > Dit heeft alleen gevolgen voor apparaten die worden beheerder met apparaatbeheerder en worden uitgevoerd met Android 10 of hoger en is niet van invloed op apparaten die worden beheerd met Android Enterprise. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+We raden u het volgende aan om te voorkomen dat u in de zomer van 2020 te kampen heeft met beperkte functionaliteit:
+- Leg geen nieuwe apparaten vast in apparaatbeheerder.
+- Als bij een apparaat een update naar Android 10 wordt verwacht, migreert u deze van apparaatbeheerder naar Android Enterprise-beheer en/of app-beveiligingsbeleid.
 
 ### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Android-bedrijfsportal-app bijwerken naar de nieuwste versie <!--4536963-->
 Er worden regelmatig updates van Intune gepubliceerd voor de Android-versie van de bedrijfsportal-app. In november 2018 hebben we een update voor de bedrijfsportal gepubliceerd, met onder andere een schakeloptie voor de back-end om u voor te bereiden op de wijziging van Google waarbij ze hun bestaande meldingenplatform gaan overzetten naar Firebase Cloud Messaging (FCM) van Google. Als Google hun bestaande meldingenplatform uit de lucht haalt en overstapt naar FCM, moeten eindgebruikers hun bedrijfsportal-app hebben bijgewerkt naar ten minste de versie van november 2018 om te kunnen blijven communiceren met de Google Play Store.
@@ -63,7 +84,7 @@ Vanaf september 2019 biedt Intune ondersteuning voor iOS-apps met Intune App SDK
 Met de integratie van de Intune App SDK of App Wrapping kunt u bedrijfsgegevens via gegevensversleuteling beveiligen tegen niet-goedgekeurde toepassingen en gebruikers. De Intune App SDK voor iOS gebruikt standaard 256-bits versleutelingssleutels wanneer versleuteling is ingeschakeld door Intune App Protection Policies (APP). Na deze wijziging kunnen iOS-apps voor SDK-versies lager dan 8.1.1, die gebruikmaken van 128-bits versleutelingssleutels, geen gegevens meer delen met toepassingen die zijn geïntegreerd met SDK 8.1.1 of die gebruikmaken van de 256-bits sleutels. Alle iOS-apps moeten eerst over een SDK-versie 8.1.1 of hoger beschikken, als u het beveiligd delen van gegevens wilt toestaan.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
-Controleer uw Microsoft-apps, apps van derden en LOB-apps (Line-Of-Business). U moet ervoor zorgen dat al uw toepassingen die met Intune APP worden beveiligd, gebruikmaken van SDK-versie 8.1.1 of hoger.
+Controleer uw Microsoft-apps, apps van derden en LOB-apps (Line-Of-Business). Zorg ervoor dat al uw toepassingen die met Intune APP worden beveiligd, gebruikmaken van SDK-versie 8.1.1 of hoger.
 
 - Voor LOB-apps: U moet uw apps die zijn geïntegreerd met SDK-versie 8.1.1 of hoger mogelijk opnieuw publiceren. U wordt aangeraden de meest recente SDK-versie te gebruiken. Raadpleeg [Line-Of-Business-apps voorbereiden voor app-beveiligingsbeleid](../apps-prepare-mobile-application-management.md) om te zien hoe u uw LOB-apps voorbereidt voor app-beveiligingsbeleid.
 - Voor Microsoft-apps/apps van derden: Zorg ervoor dat u de meest recente versie van deze apps naar uw gebruikers implementeert.
@@ -83,8 +104,27 @@ Als u Windows 10-apparaten in uw omgeving beheert:
 - De deadline-instellingen vervangen de optie 'Gebruikers toestaan opnieuw te starten (gepland opnieuw opstarten)' in update 1910.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
-Begin de deadline-instellingen in update 1908 te gebruiken door deze te configureren met de gewenste waarden. Als u dat hebt gedaan, kunt u de instelling voor gepland opnieuw opstarten instellen op 'Niet geconfigureerd' om u voor te bereiden op de verwijdering van deze instelling in oktober.
+Begin de deadline-instellingen in update 1908 te gebruiken door deze te configureren met de gewenste waarden. Als u dat hebt gedaan, kunt u de instelling voor gepland opnieuw opstarten instellen op 'Niet geconfigureerd' om u voor te bereiden op de verwijdering van deze instellingen in oktober.
 
 Werk indien nodig uw documentatie en eventuele automatiseringsscripts bij. 
 
 We houden u op de hoogte en plaatsen een herinnering in het berichtencentrum voordat we de instellingen voor gepland opnieuw opstarten verwijderen.
+
+### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>Geplande wijziging: Intune App SDK en app-beveiligingsbeleid voor Android ondersteunen vanaf oktober Android 5.0 en hoger <!--4911065 -->
+Intune gaat Android 5.x (Lollipop) en hoger vanaf oktober ondersteunen. Werk alle verpakte apps bij met de nieuwste Intune App SDK en werk uw apparaten bij.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Als u niet van plan bent om de SDK of APP voor Android te gebruiken, is deze wijziging niet van invloed op u. Als u de Intune App SDK gebruikt, zorg er dan voor dat u deze bijwerkt naar de nieuwste versie en werk ook uw apparaten bij naar Android 5.x en hoger. Als u geen update uitvoert, ontvangen apps geen updates en gaat de kwaliteit van de ervaring langzaam achteruit. 
+
+Hieronder vindt u een lijst van algemene apparaten die worden geregistreerd bij Intune en die Android-versie 4.x uitvoeren. Als u een van deze apparaten hebt, voer dan de stappen uit om ervoor te zorgen dat dit apparaat Android-versie 5.0 of hoger ondersteunt, of dat het wordt vervangen door een apparaat dat Android-versie 5.0 of hoger ondersteunt. Deze lijst is niet aangevuld met alle apparaten die mogelijk opnieuw moeten worden geëvalueerd:
+- Samsung SM-T561  
+- Samsung SM-T365 
+- Samsung GT-I9195 
+- Samsung SM-G800F
+- Samsung SM-G357FZ
+- Motorola XT1080
+- Samsung GT-I9305
+- Samsung SM-T231
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+Verpak je apps met de nieuwste Intune App SDK. U kunt ook de voorwaardelijke startinstelling 'Minimale OS-versie vereisen (alleen waarschuwen)' instellen om eindgebruikers op persoonlijke apparaten een melding te sturen om een upgrade uit te voeren.

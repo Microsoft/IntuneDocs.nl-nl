@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57b459efa5b423f1c73a0d6b7b9172f71f4c86d3
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375172"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467446"
 ---
 # <a name="use-device-encryption-with-intune"></a>Apparaatversleuteling gebruiken met Intune  
 
@@ -66,10 +66,7 @@ Voor meer informatie over de FileVault-instelling die u met Intune kunt beheren,
 
    Bijvoorbeeld: Als u een verloren of onlangs vernieuwde herstelsleutel wilt ophalen, meldt u zich aan op de website van de Intune-bedrijfsportal. Dit kan vanaf elk apparaat. Ga in de portal naar *Apparaten* en selecteer het apparaat waarvoor FileVault is ingeschakeld. Selecteer dan *Herstelsleutel ophalen*. De huidige herstelsleutel wordt weergegeven.  
 
-6. Configureer de overige instellingen zodat er aan de vereisten van uw bedrijf wordt voldaan. Selecteer dan **OK**.  
-
-   > [!NOTE]
-   > FileVault wordt slechts ondersteund tot de versie van juli over enkele dagen volledig is geïmplementeerd. Wanneer de implementatie is voltooid, moet u voor het configureren van FileVault de optie *FileVault uitstellen tot afmelding* instellen op **Inschakelen**.  
+6. Configureer de overige [FileVault-instellingen](endpoint-protection-macos.md#filevault) zodanig dat er aan de vereisten van uw bedrijf wordt voldaan. Selecteer vervolgens **OK**.  
 
 7. Voltooi de configuratie van de aanvullende instellingen en sla het profiel op.  
 

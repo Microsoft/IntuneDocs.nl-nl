@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b073047455cd21dc3ffe5efcb52f51584db5ff30
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: b6db255cc4c4bb8466d36e25deaf36e5c3480106
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353771"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467504"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-certificaten configureren en gebruiken met Intune
 
@@ -373,7 +373,14 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
      - Windows 10 en hoger
 
 
-   - **Indeling van de onderwerpnaam**: Selecteer hoe de onderwerpnaam in de certificaataanvraag automatisch wordt gemaakt met Intune. De beschikbare opties kunnen verschillen, afhankelijk van het gekozen certificaattype: **Gebruiker** of **Apparaat**. 
+   - **Indeling van de onderwerpnaam**: Selecteer hoe de onderwerpnaam in de certificaataanvraag automatisch wordt gemaakt met Intune. De beschikbare opties kunnen verschillen, afhankelijk van het gekozen certificaattype: **Gebruiker** of **Apparaat**.  
+
+     > [!NOTE]  
+     > Er is een [bekend probleem](#avoid-certificate-signing-requests-with-escaped-special-characters) bij het gebruik van SCEP om certificaten op te halen wanneer in de onderwerpnaam in de resulterende aanvraag voor certificaatondertekening (Certificate Signing Request, CSR) een van de volgende tekens staat na een escape-teken (een backslash \\):
+     > - \+
+     > - ;
+     > - ,
+     > - =
 
         **Certificaattype Gebruiker**  
 
@@ -495,6 +502,42 @@ Controleer of de service wordt uitgevoerd door een browser te openen en de volge
      - Selecteer **OK** en **maak** uw profiel.
 
 Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profielenlijst.
+
+### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Aanvragen voor certificaatondertekening met speciale tekens met escape-teken vermijden
+Er is een bekend probleem met SCEP-certificaataanvragen die een onderwerpnaam (CN) bevatten met een of meer van de volgende speciale tekens na een escape-teken. Onderwerpnamen die in een CSR een van deze speciale tekens bevatten na een escape-teken, resulteren in een onjuiste onderwerpnaam. Dit leidt op zijn beurt tot het mislukken van de SCEP-validatievraag van Intune en het niet uitgeven van een certificaat.  
+
+Dit gaat over de volgende speciale tekens:
+- \+
+- ,
+- ;
+- =
+
+Wanneer de onderwerpnaam een van deze speciale tekens bevat, moet u een van de volgende opties gebruiken om deze beperking te omzeilen:  
+- Plaats aanhalingstekens om de CN-waarde die het speciale teken bevat.  
+- Verwijder het speciale teken uit de CN-waarde.  
+
+**Bijvoorbeeld**: u hebt een onderwerpnaam die wordt weergegeven als *Test User (TestCompany, LLC)* .  Een CSR waarin de CN een komma bevat tussen *TestCompany* en *LLC*, leidt tot problemen.  Deze problemen kunnen worden vermeden door aanhalingstekens te plaatsen rond de hele CN of door de komma te verwijderen tussen *TestCompany* en *LLC*:
+- **Aanhalingstekens toevoegen**: *CN=* ”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **De komma verwijderen**: *CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+ Pogingen om de komma te escapen met behulp van een backslash-teken mislukken, met een fout in de CRP-logboeken:  
+- **Komma met escape-teken**: *CN=Test User (TestCompany\\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+De fout is vergelijkbaar met de volgende foutmelding: 
+
+```
+Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
+
+  Exception: System.ArgumentException: Subject Name in CSR and challenge do not match
+
+   at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+   at Microsoft.ConfigurationManager.CertRegPoint.Controllers.CertificateController.VerifyRequest(VerifyChallengeParams value
+```
+
+
 
 ## <a name="assign-the-certificate-profile"></a>Het certificaatprofiel toewijzen
 

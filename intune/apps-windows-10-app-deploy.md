@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 804c6485252883672de13bf13729b28a4d7d2f94
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883841"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590932"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementatie van Windows 10-apps met Microsoft Intune 
 
@@ -41,7 +41,7 @@ Windows 10 LOB-apps worden ondertekend en geüpload naar de Intune-beheerconsole
 
 ## <a name="microsoft-store-for-business-apps"></a>Microsoft Store voor Bedrijven-apps
 
-Microsoft Store voor Bedrijven-apps zijn moderne apps die zijn aangeschaft in de Microsoft Store voor Bedrijven-beheerportal en vervolgens worden gesynchroniseerd met Microsoft Intune voor beheer. De apps kunnen zowel **online gelicentieerd** als **offline gelicentieerd** zijn. Updates van Microsoft Store voor Bedrijven-apps worden rechtstreeks door de Microsoft Store beheerd. Hiervoor is geen extra actie van de beheerder vereist. De beheerder kan bovendien met aangepaste Uniform Resource Identifier (URI) voorkomen dat bepaalde apps worden bijgewerkt. Zie [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates) (Bedrijfsappbeheer - Voorkomen dat apps automatisch worden bijgewerkt) voor meer informatie. De gebruiker kan ook op het apparaat updates voor alle Microsoft Store voor Bedrijven-apps uitschakelen. 
+Microsoft Store voor Bedrijven-apps zijn moderne apps die zijn aangeschaft in de Microsoft Store voor Bedrijven-beheerportal en vervolgens worden gesynchroniseerd met Microsoft Intune voor beheer. De apps kunnen zowel **online gelicentieerd** als **offline gelicentieerd** zijn. Updates van Microsoft Store voor Bedrijven-apps worden rechtstreeks door de Microsoft Store beheerd. Hiervoor is geen extra actie van u, de beheerder, vereist. U kunt bovendien met een aangepaste Uniform Resource Identifier (URI) voorkomen dat bepaalde apps worden bijgewerkt. Zie [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates) (Bedrijfsappbeheer - Voorkomen dat apps automatisch worden bijgewerkt) voor meer informatie. De gebruiker kan ook op het apparaat updates voor alle Microsoft Store voor Bedrijven-apps uitschakelen. 
 
 ## <a name="installing-apps-on-windows-10-devices"></a>Apps installeren op Windows 10-apparaten
 Afhankelijk van het type app kan de app op twee manieren worden geïnstalleerd op een Windows 10-apparaat:

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1827375dc1905b5c881f743777a73340f0215e0c
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68388510"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590910"
 ---
 # <a name="intune-discovered-apps"></a>Door Intune gedetecteerde apps
 
@@ -30,13 +30,22 @@ In de lijst door Intune **gedetecteerde apps** ziet u de apparaten die bij Intun
 
 ## <a name="monitor-discovered-apps-with-intune"></a>Gedetecteerde apps bewaken met Intune
 
-Intune biedt een lijst gedetecteerde apps. Hierin ziet u de apparaten die bij Intune zijn ingeschreven in uw tenant.
+Intune biedt een geaggregeerde lijst met apps die zijn gedetecteerd op de apparaten die in uw tenant bij Intune zijn ingeschreven.
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. In het deelvenster **Intune** selecteert u **Client-apps** > **Gedetecteerde apps**.
 
 >[!NOTE]
 >U kunt de lijst met gedetecteerde apps exporteren naar een CSV-bestand. Selecteer hiervoor **Exporteren** op de blade **Gedetecteerde apps**.
+>
+>Voor gedetecteerde Win32-apps is er momenteel geen totaal aantal. Dit type gegevens kan alleen per apparaat worden weergegeven.
+
+Intune biedt ook een lijst met gedetecteerde apps per afzonderlijk apparaat in uw tenant. 
+
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selecteer in het deelvenster Intune **Apparaten** > **Alle apparaten**.
+3. Selecteer een apparaat.
+4. Als u gedetecteerde apps voor dit apparaat wilt weergeven, selecteert u **Gedetecteerde apps** in het gedeelte **Monitor**. 
 
 ## <a name="details-of-discovered-apps"></a>Gegevens van gedetecteerde apps
 

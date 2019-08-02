@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b836e754b8c08397fccb0c74b40ba9fe0675076e
-ms.sourcegitcommit: 97a46f0f6a27eda0592ff6518fac46bc2447b622
+ms.openlocfilehash: 1dd836d8bbc4d6f32081c74fb6f9edc42aff2cac
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68411598"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482965"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Netwerkeindpunten voor Microsoft Intune  
 
@@ -146,7 +146,7 @@ Zie voor meer informatie de documentatie van Apple: [TCP and UDP ports used by A
 
 ## <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune-certificaatconnector  
 
-De server waarop de Microsoft Intune-certificaatconnector wordt gehost, moet toegang via **TCP**-poort **443** toegang kunnen verkrijgen tot de openbare IP-locaties die in de volgende tabel worden vermeld.  
+De server waarop de Microsoft Intune-certificaatconnector wordt gehost, moet toegang via **TCP**-poort **443** toegang kunnen verkrijgen tot de openbare IP-locaties die in de volgende tabel worden vermeld. Raadpleeg [PKCS-certificaten configureren en gebruiken met Intune](certficates-pfx-configure.md) en [SCEP-certificaten configureren en gebruiken met Intune](certificates-scep-configure.md) voor meer informatie over certificaten.
 
 |Domains                             |Het IP-adres       |
 |---------------|--------------------------------------|

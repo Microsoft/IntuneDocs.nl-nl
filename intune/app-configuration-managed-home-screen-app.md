@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 758230d3d2f1dd1cb42532cce9fe1ff530000a16
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374842"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482866"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>De app Microsoft Managed Home Screen voor Android Enterprise configureren
 
@@ -386,6 +386,9 @@ Hier volgt een voorbeeld-JSON-script met alle beschikbare configuratiesleutels d
 
 ## <a name="googles-android-device-policy-app"></a>De app Android Device Policy van Google
 De app Managed Home Screen biedt nu toegang tot de app Android Device Policy van Google. De app Managed Home Screen is een aangepast startprogramma dat wordt gebruikt voor apparaten die bij Intune zijn ingeschreven als toegewezen Android Enterprise-apparaat (AE) op basis van de kioskmodus voor meerdere apps. U kunt de app Android Device Policy openen of gebruikers naar de app leiden voor ondersteuning en foutopsporing. De opstartmogelijkheid is beschikbaar op het moment dat het apparaat wordt ingeschreven en wordt gekoppeld aan Managed Home Screen. Er zijn geen extra installaties nodig voor het gebruik van deze functionaliteit.
+
+## <a name="managed-home-screen-debug-screen"></a>Scherm voor probleemopsporing voor Managed Home Screen
+U kunt het scherm voor probleemopsporing voor Managed Home Screen openen door op de knop **Terug** te klikken tot het scherm voor foutopsporing wordt weergegeven (klik vijftien keer of vaker op de knop **Terug**). Vanuit dit scherm voor foutopsporing kunt u de toepassing Android Device Policy starten, logboeken weergeven en uploaden of de kioskmodus tijdelijk onderbreken om het apparaat bij te werken. Voor meer informatie over het onderbreken van de kioskmodus raadpleegt u het item **Kioskmodus verlaten** in de [toegewezen apparaatinstellingen](device-restrictions-android-for-work.md#dedicated-device-settings) voor Android Enterprise.
 
 ## <a name="next-steps"></a>Volgende stappen
 

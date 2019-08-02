@@ -16,14 +16,14 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a04a8b9f1973479fd0695ad0e782488fdef43d10
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375145"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671044"
 ---
-# <a name="monitor-device-encryption"></a>Apparaatversleuteling controleren  
+# <a name="monitor-device-encryption-with-intune"></a>Apparaatversleuteling bewaken met Intune   
 
 Het Microsoft Intune-versleutelingsrapport is een centrale locatie voor het bekijken van informatie over de versleutelingsstatus van uw beheerde apparaten. Bekijk details over de versleutelingsstatus van een apparaat en ontdek opties voor het beheren van herstelsleutels voor apparaten. Welke opties er voor herstelsleutels beschikbaar zijn, is afhankelijk van het type apparaat dat u bekijkt.  
 
@@ -59,7 +59,7 @@ In het deelvenster Versleutelingsrapport ziet u een lijst met de apparaten die u
     
     Zie de [BitLocker CSP (configuratieserviceprovider)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) in de Windows-documentatie voor meer informatie.  
 
-  - **Niet gereed**: Het apparaat beschikt niet over alle versleutelingsmogelijkheden, maar kan nog wel worden versleuteld. Het Windows-apparaat kan bijvoorbeeld handmatig door een gebruiker worden versleuteld of door een groepsbeleid dat zodanig kan worden ingesteld dat versleuteling mogelijk is zonder een TMP.
+  - **Niet gereed**: Het apparaat beschikt niet over alle versleutelingsmogelijkheden, maar kan nog wel worden versleuteld. Het Windows-apparaat kan bijvoorbeeld handmatig door een gebruiker worden versleuteld of door een groepsbeleid dat zodanig kan worden ingesteld dat versleuteling mogelijk is zonder een TPM.
   - **Niet van toepassing**: er is onvoldoende informatie beschikbaar om dit apparaat te classificeren.  
 
 - **Versleutelingsstatus**: deze optie geeft aan of de besturingssysteemschijf is versleuteld.  
@@ -93,8 +93,6 @@ Wanneer u een apparaat selecteert in het versleutelingsrapport, wordt in Intune 
 - **Samenvatting van de profielstatus**: een samenvatting van de profielen die op dit apparaat van toepassing zijn. De samenvatting staat voor de minst gunstige voorwaarde voor alle profielen die van toepassing zijn. Als één van meerdere van toepassing zijnde profielen bijvoorbeeld leidt tot een fout, wordt in de *samenvatting van de profielstatus* *Fout* weergegeven.  
 
 - **Statusdetails**: geavanceerde details over de versleutelingsstatus van het apparaat.  
-  > [!NOTE]
-  > FileVault wordt slechts ondersteund tot de versie van juli over enkele dagen volledig is geïmplementeerd. Totdat de implementatie is voltooid, worden de details van de apparaatstatus en de apparaatversleuteling in macOS mogelijk niet correct weergegeven in het versleutelingsrapport.
 
   > [!IMPORTANT]  
   > Op Windows 10-apparaten toont Intune alleen de *statusdetails* voor apparaten waarop de *Windows 10-update van april 2019* of hoger wordt uitgevoerd.  

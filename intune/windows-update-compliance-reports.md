@@ -1,5 +1,6 @@
 ---
-title: Updatenalevingsrapporten voor Windows-updates gebruiken in Microsoft Intune | Microsoft Docs
+title: Updatenalevingsrapporten voor Windows-updates gebruiken in Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Gebruik OMS-updatenaleving om rapportgegevens weer te geven voor de Windows-updates die u met Intune implementeert.
 keywords: ''
 author: brenduns
@@ -14,12 +15,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2b236d01cb5ffcf5a26e71ac0a9b65bb586dcb1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 09f3cafc16d8a08885731aa244a089367c6c0933
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66039672"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660392"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Intune-nalevingsrapporten voor updates
 Wanneer u Intune gebruikt om Windows-updates te implementeren naar Windows 10-apparaten, bekijkt u details over updatenaleving met behulp van Intune of de gratis oplossing *Updatenaleving*, wat deel uitmaakt van de Microsoft Operations Management Suite (OMS).

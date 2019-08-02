@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427320"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660947"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>De Intune on-premises Exchange-connector instellen in Microsoft Intune
 De informatie in dit artikel helpt u bij het installeren en vervolgens controleren van de on-premises Exchange Active Sync-connector voor Intune.  U gebruikt de Intune on-premises Exchange-connector met uw [beleid voor voorwaardelijke toegang om toegang tot uw on-premises Exchange-postvakken toe te staan of te blokkeren](conditional-access-exchange-create.md). 
@@ -121,7 +121,7 @@ Voer de volgende stappen uit om de Intune on-premises Exchange-connector te inst
 
 5. Geef de vereiste referenties op om meldingen te verzenden naar het Exchange Server-postvak van een gebruiker. Deze gebruiker kan worden toegewezen aan alleen meldingen. De meldingengebruiker moet een Exchange-postvak hebben om meldingen te verzenden via e-mail. U kunt deze meldingen configureren met beleid voor voorwaardelijke toegang in Intune.  
 
-       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
+   Zorg ervoor dat de Autodiscover-service en de Exchange-webservices zijn geconfigureerd op de Exchange-server voor clienttoegang. Zie [Server voor clienttoegang](https://technet.microsoft.com/library/dd298114.aspx) voor meer informatie.
 
 6. Geef in het veld **Wachtwoord** het wachtwoord voor dit account op om Intune in te schakelen voor toegang tot de Exchange-server.
 
@@ -158,7 +158,7 @@ Om failover uit te voeren detecteert de connector na het tot stand brengen van e
 
 Als u 5000 of meer apparaten ondersteunt met Exchange ActiveSync kunt u een optionele instelling configureren om de prestaties van de connector te verbeteren. U kunt betere prestaties realiseren door voor Exchange in te stellen dat er meerdere exemplaren van een PowerShell-runspace voor opdrachten mogen worden gebruikt. 
 
-Voordat u deze wijziging aanbrengt, controleert u of het account dat u gebruikt voor Exchange Connector niet wordt gebruikt voor andere Exchange-beheerdoeleinden. Dit is belangrijk omdat Exchange een limiet heeft van 18 runspaces per account. De connector maakt over het algemeen gebruik van het overgrote deel van de runspaces. 
+Voordat u deze wijziging aanbrengt, controleert u of het account dat u gebruikt voor Exchange Connector niet wordt gebruikt voor andere Exchange-beheerdoeleinden. Dit is belangrijk omdat Exchange een beperkt aantal runspaces per account heeft. De connector maakt over het algemeen gebruik van het overgrote deel van de runspaces. 
 
 De prestaties kunnen niet worden gewijzigd voor connectors die worden uitgevoerd op oudere of langzamere hardware.  
 
