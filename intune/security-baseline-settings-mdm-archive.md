@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 220327c48712881e57efa1a91b9d00a64ba3e0be
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 7871fa6f8655ff02242135d04385984368d52625
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884689"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680089"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -38,7 +38,7 @@ Wanneer een basislijn versie niet meer wordt ondersteund voor gebruik, wordt dez
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Preview: MDM-basislijn voor beveiliging voor oktober 2018  
 
-*Deze basis lijn wordt vervangen door de [MDM-beveiligings basislijn voor lente 2019 (19H1)](security-baseline-settings-mdm.md)*
+*Deze basis lijn is vervangen door de [MDM-beveiligings basislijn voor mei 2019](security-baseline-settings-mdm.md)*
 
 ### <a name="above-lock"></a>Vergrendeling boven  
 

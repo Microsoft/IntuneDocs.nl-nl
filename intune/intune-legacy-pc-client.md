@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 921934eead9ff3a1074203dad55ee60f3fe77947
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047277"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756534"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Console voor Intune in Azure en verouderde Intune-client voor pc
 
@@ -45,7 +45,7 @@ Vanwege de overstap naar Azure AD-groepen is het 'op groepen gebaseerd' filteren
 1. Selecteer een weergave.
 2. Voer in het vak **Filters** de naam in van de groep waarop u wilt filteren en druk op Enter. Hiermee wordt de lijstweergave gefilterd op de apparaten in die specifieke groep.
 
-   ![](media/intune-legacy-pc-client/image01.png)
+   ![Invoer vervolg keuzelijst voor filters met geen geselecteerd](media/intune-legacy-pc-client/image01.png)
 
 
 ## <a name="continue-to-manage-windows-7-by-using-intune-pc-client"></a>Doorgaan met het beheren van Windows 7 met behulp van Intune PC Client
@@ -61,7 +61,7 @@ Zie [Het beheren van Windows-pc's als computers of mobiele apparaten vergelijken
 Als u wilt overschakelen van het beheren van Windows 10-apparaten met de Intune PC Client naar beheer met MDM , voert u de volgende stappen uit:
 
 1. Voer in de Silverlight-console **selectief wissen** uit om de inschrijving van het apparaat in de PC Client ongedaan te maken.
-  ![](media/intune-legacy-pc-client/image02.png)
+  ![Pop-upvenster met het keuze rondje selectief wissen van apparaat geselecteerd](media/intune-legacy-pc-client/image02.png)
 2. Schrijf het apparaat opnieuw in met behulp van [MDM (en/of Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll). 
 
 ## <a name="next-steps"></a>Volgende stappen

@@ -1,7 +1,7 @@
 ---
 title: Intune-beveiligingsbasislijninstellingen voor Windows 10
 titleSuffix: Microsoft Intune
-description: Intune-beveiligingsbasislijninstellingen voor het beheer van Windows 10
+description: Bekijk de standaard instellingen en de beschik bare waarden die zijn gevonden in de Windows MDM-beveiligings basislijn voor Windows 10-apparaten die u beheert met intune.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
-ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.openlocfilehash: 5565ce7a355136a749d79b52e4830af91684440a
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491910"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680045"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>MDM-beveiligingsbasislijninstellingen voor Intune  
 
 Bekijk de basis instellingen voor de MDM-beveiliging die worden ondersteund door Microsoft Intune voor apparaten waarop Windows 10 of hoger wordt uitgevoerd. De standaard waarden voor instellingen in deze basis lijn vertegenwoordigen de aanbevolen configuratie voor toepasselijke apparaten en komen mogelijk niet overeen met de standaard instellingen van de basis lijn van andere beveiligings basislijnen.  
 
-De meest recente basislijn versie is **MDM-beveiligings basislijn voor lente 2019-update (19H1)**  
+De meest recente basislijn versie is **MDM-beveiligings basislijn voor mei 2019**  
 
 Zie [Wat is er gewijzigd in de nieuwe sjabloon](#whats-changed-in-the-new-template)voor meer informatie over de wijzigingen die zijn aangebracht in de nieuwste versie van deze basis lijn in de vorige versie.  
 
 > [!NOTE]  
-> In juni van 2019 is de preview MDM-beveiligings basislijn vervangen door de release van de *19H1-sjabloon (MDM-beveiligings basislijn voor lente 2019 update)* , die algemeen beschikbaar is (niet in Preview). Profielen die zijn gemaakt vóór de beschik baarheid van de basis lijn van de *MDM-beveiligings basislijn voor lente 2019-update (19H1)* , worden niet bijgewerkt met de instellingen en waarden in de MDM-beveiligings basislijn voor de lente 2019-update (19H1) versie.  U kunt geen nieuwe profielen maken op basis van de preview-sjabloon, maar u hebt ook de profielen die u eerder hebt gemaakt op basis van de preview-sjabloon bewerken en blijven gebruiken.   
+> In juni van 2019 is de preview MDM-beveiligings basislijn vervangen door de release van de *MDM-beveiligings basislijn voor mei 2019* -sjabloon, die algemeen beschikbaar is (niet in Preview). Profielen die zijn gemaakt vóór de beschik baarheid van de *MDM-beveiligings basislijn voor mei 2019* -basis lijn worden niet bijgewerkt met de instellingen en waarden in de MDM-beveiligings basislijn voor een mei 2019-versie.  U kunt geen nieuwe profielen maken op basis van de preview-sjabloon, maar u hebt ook de profielen die u eerder hebt gemaakt op basis van de preview-sjabloon bewerken en blijven gebruiken.   
   
 Zie [beveiligings basislijnen gebruiken](security-baselines.md)voor meer informatie over het gebruik van beveiligings basislijnen met intune.  
 
@@ -1825,7 +1825,7 @@ Raadpleeg [Policy CSP - WindowsPowerShell](https://docs.microsoft.com/windows/cl
   **Standaardinstelling**: ingeschakeld
 
 ## <a name="whats-changed-in-the-new-template"></a>Wat is er gewijzigd in de nieuwe sjabloon?
-De *MDM-beveiligings basislijn voor de lente 2019-update sjabloon (19H1)* heeft de volgende wijzigingen van de *voorbeeld* sjabloon.
+De *MDM-beveiligings basislijn voor mei 2019* -sjabloon bevat de volgende wijzigingen van de *voorbeeld* sjabloon.
 
 ### <a name="changes-to-the-baseline-settings"></a>Wijzigingen in de basislijn instellingen
 De instellingen kunnen als volgt zijn:

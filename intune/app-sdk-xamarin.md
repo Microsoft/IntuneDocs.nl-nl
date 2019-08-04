@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: a8d1ad3648348783306fb0bc1e61defc4197a9d9
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67794369"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680047"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -114,6 +114,9 @@ Als u een klasse wilt uitsluiten van mam-ificatie door de hertoewijzing, kunt u 
   </PropertyGroup>
 ```
 
+> [!NOTE]
+> Op dit moment voor komt een probleem met de remapper fout opsporing in Xamarin. Android-apps. Hand matige integratie wordt aanbevolen voor het opsporen van fouten in uw toepassing totdat dit probleem is opgelost.
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Methoden waarvan de naam is gewijzigd](app-sdk-android.md#renamed-methods)
 In veel gevallen is een methode die in de Android-klasse beschikbaar is, in de vervangende MAM-klasse als definitief gemarkeerd. De vervangende MAM-klasse biedt in dit geval een gelijknamige methode (voorafgegaan door `MAM`) die in plaats daarvan moet worden overschreven. Wanneer een activiteit wordt afgeleid van `MAMActivity`, moet niet `OnCreate()` worden overschreven en niet `base.OnCreate()` worden aangeroepen, maar moet `Activity` `OnMAMCreate()` overschrijven en `base.OnMAMCreate()` aanroepen.
 
@@ -177,7 +180,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 Voor `Xamarin.Forms`-toepassingen voert het pakket `Microsoft.Intune.MAM.Remapper` automatisch MAM-klassevervanging uit door `MAM`-klassen te injecteren in de klassehiërarchie van veelgebruikte `Xamarin.Forms`-klassen. 
 
 > [!NOTE]
-> De Xamarin.Forms-integratie moet worden uitgevoerd naast de Xamarin.Android-integratie die hierboven is beschreven.
+> De Xamarin.Forms-integratie moet worden uitgevoerd naast de Xamarin.Android-integratie die hierboven is beschreven. De hertoewijzing heeft een andere werking voor Xamarin. Forms-apps, zodat de hand matige MAM-vervangingen nog steeds moeten worden uitgevoerd.
 
 Zodra de remapper is toegevoegd aan uw project moet u de vervangingen door MAM-equivalenten uitvoeren. U kunt bijvoorbeeld `FormsAppCompatActivity` en `FormsApplicationActivity` in uw toepassing blijven gebruiken mits overschrijvingen van `OnCreate` en `OnResume` zijn vervangen door respectievelijk de MAM-equivalenten `OnMAMCreate` en `OnMAMResume`.
 
@@ -199,6 +202,9 @@ Dit is verwacht want wanneer de remapper de overname van Xamarin-klassen wijzigt
 
 > [!NOTE]
 > Met de remapper wordt een afhankelijkheid herschreven die in Visual Studio wordt gebruikt voor automatische aanvulling via IntelliSense. Wanneer de remapper is toegevoegd, moet u het project daarom mogelijk opnieuw laden en bouwen zodat de wijzigingen juist worden herkend in IntelliSense.
+
+#### <a name="troubleshooting"></a>Probleemoplossing
+* Als er tijdens het starten een leeg, wit scherm wordt weer gegeven in uw toepassing, moet u mogelijk de navigatie gesprekken afdwingen om uit te voeren op de hoofd thread.
 
 ### <a name="company-portal-app"></a>Bedrijfsportal-app
 De intune SDK Xamarin-bindingen zijn afhankelijk van de aanwezigheid van de [bedrijfsportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android-app op het apparaat om beveiligings beleid voor apps in te scha kelen. De bedrijfsportal haalt het app-beveiligingsbeleid op van de Intune-service. Tijdens de initialisatie van de app worden het beleid en de code geladen om het betreffende beleid af te dwingen bij de bedrijfsportal. De gebruiker hoeft niet te zijn aangemeld.
