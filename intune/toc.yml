@@ -703,18 +703,20 @@
           href: tenant-status.md
         - name: Problemen oplossen
           items:
+            - name: Gebruikers helpen problemen op te lossen
+              href: help-desk-operators.md
             - name: Problemen met oplossen inschrijven
               items:
                 - name: Problemen met iOS-apparaten inschrijven oplossen
                   href: troubleshoot-ios-enrollment-errors.md
                 - name: Problemen met Windows-apparaten inschrijven oplossen
                   href: troubleshoot-windows-enrollment-errors.md
-            - name: Gebruikers helpen problemen op te lossen
-              href: help-desk-operators.md
             - name: Problemen bij toegang tot bedrijfsbronnen oplossen
               href: troubleshoot-company-resource-access-problems.md
             - name: Problemen met app-installatie oplossen
               href: troubleshoot-app-install.md
+            - name: Problemen met apparaatacties oplossen
+              href: troubleshoot-device-actions.md
             - name: Problemen met Mobile Application Management oplossen
               href: troubleshoot-mam.md
             - name: Auditlogboeken voor Intune-activiteiten
