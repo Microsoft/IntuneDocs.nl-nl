@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467423"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756515"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Instellingen in Intune voor eindpuntbescherming in macOS  
 
@@ -97,11 +97,18 @@ Zie [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fd
     - **Draaiing van persoonlijke herstel sleutel** : Geef op hoe vaak de persoonlijke herstel sleutel voor een apparaat wordt gedraaid. U kunt de standaard instelling **niet geconfigureerd**of een waarde van **1** tot **12** maanden selecteren.  
 
   - **Prompt uitschakelen bij afmelden**  
-    Voor komen dat de gebruiker wordt gevraagd om FileVault in te scha kelen wanneer deze zich afmeldt.  Als deze instelling is uitgeschakeld, wordt de prompt bij het afmelden uitgeschakeld en wordt de gebruiker gevraagd om zich aan te melden.  
+    Voor komen dat de gebruiker wordt gevraagd om FileVault in te scha kelen wanneer deze zich afmeldt.  Wanneer deze optie is ingeschakeld, wordt de prompt bij het afmelden uitgeschakeld en wordt de gebruiker gevraagd om zich aan te melden.  
     - **Niet geconfigureerd**  
-    - **Uitschakelen**  
+    - **Schakel** de prompt in bij afmelden.
 
     **Standaard**: niet geconfigureerd  
+
+     > [!IMPORTANT]  
+     > Er is een bekend probleem wanneer de instelling **prompt uitschakelen bij afmelden** is ingesteld op *inschakelen*. Als u deze *optie*inschakelt, moet de instelling voor het **aantal toegestane tijden** voor bypass worden ingesteld op een waarde en moet deze niet worden ingesteld als *niet geconfigureerd*. Als deze instelling is ingesteld op *niet geconfigureerd*, mislukt het profiel op het apparaat. In dit scenario rapporteert het apparaat het **samen vatting van een profiel status** als **fout** zonder meer informatie.
+     > 
+     > Wanneer het uitschakelen van de **prompt bij afmelden** is ingesteld op *niet geconfigureerd*, kan het **aantal keren dat bypass mag** worden omzeild *niet worden geconfigureerd* of een waarde hebben.  
+     > 
+     > Dit probleem wordt opgelost in een toekomstige update. 
 
   - **Aantal keren dat mag worden omzeild**  
   Stel het aantal keren in dat een gebruiker prompts kan negeren om FileVault in te scha kelen voordat FileVault is vereist om zich aan te melden.  

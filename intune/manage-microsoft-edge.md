@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
-ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
+ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68287223"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701017"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Internettoegang beheren met behulp van Microsoft Edge met Microsoft Intune
 
@@ -76,9 +76,6 @@ Ga als volgt te werk als u met Azure AD verbonden web-apps wilt beperken tot geb
 
 9. Selecteer in het gedeelte **Toewijzingen** de optie **Gebruikers en groepen** en kies vervolgens de gebruikers of groepen die u wilt toewijzen aan dit beleid.
 
-    > [!NOTE]
-    > Gebruikers moeten ook onder Intune App Protection-beleid vallen om app-configuratiebeleid te kunnen ontvangen. Zie [Wat is beveiligingsbeleid voor apps?](app-protection-policy.md) voor meer informatie over het maken van Intune App Protection-beleid.
-
 10. Selecteer in de sectie **Toewijzingen** de optie **Cloud-apps** om te kiezen welke apps met dit beleid moeten worden beveiligd.
 
 Nadat het bovenstaande beleid is geconfigureerd, worden gebruikers gedwongen om Microsoft Edge te gebruiken voor toegang tot de met Azure AD verbonden web-apps die u met dit beleid hebt beveiligd. Als gebruikers in dit scenario een onbeheerde browser proberen te gebruiken, ontvangen zij een bericht waarin wordt vermeld dat Microsoft Edge moet worden gebruikt.
@@ -96,8 +93,6 @@ Voor eenmalige aanmelding moet uw apparaat zijn geregistreerd door de Microsoft 
 > Apparaatregistratie is eenvoudig inchecken met de Azure AD-service. Dit vereist geen volledige apparaatinschrijving en geeft IT geen extra bevoegdheden op het apparaat.
 
 ## <a name="create-a-protected-browser-app-configuration"></a>Een configuratie voor de beveiligde browser-app maken
-
-App-configuraties kunnen pas worden toegepast als de beveiligde browser van de gebruiker of een andere app op het apparaat al wordt beheerd door het [Intune-beveiligingsbeleid voor apps](app-protection-policy.md).
 
 Ga als volgt te werk als u een appconfiguratie wilt maken voor Microsoft Edge:
 

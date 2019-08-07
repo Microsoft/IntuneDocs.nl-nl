@@ -1,11 +1,12 @@
 ---
-title: Delivery Optimization-instellingen in Windows 10 voor Intune | Microsoft Docs
+title: Windows 10 Delivery Optimization-instellingen voor Intune
+titleSuffix: Microsoft Intune
 description: Delivery Optimization-instellingen voor Windows 10-apparaten die u kunt implementeren met behulp van Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/09/2019
+ms.date: 08/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +15,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab4871da52f5df0aec0a698f31daa5608a57c1c3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 11361b65735a7ed7e724a77349e3624e0e35ecaf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493912"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756555"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Delivery Optimization-instellingen voor Intune
 
@@ -66,6 +67,15 @@ Zie [Updates leveren](delivery-optimization-windows.md) voor het configureren va
 | [Maximale cacheleeftijd (in dagen)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | Geef op hoe lang nadat elk bestand is gedownload, het bestand op een apparaat wordt bewaard in de cache voor Delivery Optimization.   <br><br>Met Intune kunt u de cacheleeftijd configureren in dagen. Het aantal dagen dat u definieert, wordt omgezet in het toepasselijke aantal seconden. Dit is hoe deze instelling wordt gedefinieerd in Windows. Een Intune-configuratie van drie dagen wordt bijvoorbeeld op het apparaat geconverteerd naar 259200 seconden (drie dagen).  <br><br>**Standaard**: *Er is geen waarde geconfigureerd*     <br><br>**Aanbevolen**: 7   <br><br>Beleids-CSP: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
 | Type maximumcachegrootte  | *Zie details*    | Selecteer hoe u de hoeveelheid schijfruimte wilt beheren op een apparaat dat wordt gebruikt door Delivery Optimization. Wanneer dit niet is geconfigureerd, is standaard een cachegrootte van 20% van de vrije schijfruimte beschikbaar.  <br><ul><li>**Niet geconfigureerd** (standaard)</li><br><li>**Absoluut**: Geef de [Absolute maximale cachegrootte (in GB)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#absolute-max-cache-size) op om de maximale hoeveelheid schijfruimte te configureren die een apparaat kan gebruiken voor Delivery Optimization. Als de waarde op 0 (nul) is ingesteld, is de cachegrootte onbeperkt, hoewel de cache door Delivery Optimization wordt gewist wanneer het apparaat over onvoldoende schijfruimte beschikt. <br><br>Vereist Windows 1607<br><br> Beleids-CSP: [DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**Percentage** – Geef de [Maximale cachegrootte (in %)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-size) op om de maximale hoeveelheid schijfruimte te configureren die een apparaat kan gebruiken voor Delivery Optimization. Het percentage is van toepassing op de schijfruimte die beschikbaar is. Delivery Optimization voert voortdurend een beoordeling uit van de beschikbare schijfruimte en wist de cache om te voorkomen dat de maximale cachegrootte onder het ingestelde percentage komt. <br><br>Vereist Windows 1511<br><br>Beleids-CSP: [DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
 | [Peercaching via VPN](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | Selecteer **Ingeschakeld** om een apparaat te configureren voor deelname aan peercaching terwijl u via VPN bent verbonden met het domeinnetwerk. Apparaten die zijn ingeschakeld kunnen downloaden uit of uploaden naar andere apparaten in het domeinnetwerk; via VPN of via het bedrijfsdomeinnetwerk.  <br><br>**Standaard**: niet geconfigureerd  <br><br>Beleids-CSP: [DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
+
+## <a name="local-server-caching"></a>Lokaal server opslaan in cache  
+
+|Instelling  |Windows-versie  |Details  |
+|---------|-----------------|---------|
+|Hostnamen van cache server | 1809  |Geef het IP-adres of de FQDN op van de netwerk cache servers die door uw apparaten worden gebruikt voor de optimalisatie van de levering, en selecteer vervolgens **toevoegen** om die vermelding toe te voegen aan de lijst.  <br><br>**Standaard**: niet geconfigureerd  <br><br>CSP-beleid: [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)  |
+|[Terugval van de cache server voor de voor grond vertragen (in seconden)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-cache-server-fallback-in-secs) | 1903    |Geef een tijd in seconden (0-2592000) op om de terugval van een cache server naar de HTTP-bron te vertragen voor een down load van de inhoud van de voor grond. Wanneer het beleid de voorgrond down load van http uitstelt, wordt het eerst toegepast (om eerst down loads van peers toe te staan). (0-2.592.000)    <br><br>**Standaard**: 0  <br><br>CSP- [DODelayCacheServerFallbackForeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground) beleid  |
+|[Terugval van de cache server voor achtergrond Download vertraging (in seconden)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-cache-server-fallback-in-secs) | 1903    |Geef een tijd in seconden (0-2592000) op om de terugval van een cache server naar de HTTP-bron voor het downloaden van een achtergrond inhoud te vertragen. Wanneer het vertragen van de *achtergrond-http-down load (in seconden)* is geconfigureerd, wordt deze instelling eerst toegepast om down loads van peers toe te staan. (0-2.592.000)   <br><br>**Standaard**: 0 <br><br>CSP-beleid: [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)  |
+
 
 ## <a name="next-steps"></a>Volgende stappen
 

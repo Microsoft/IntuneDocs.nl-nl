@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 673dd0cb751fcdd2a7036dc2bf52dd731a4b04ff
-ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
+ms.openlocfilehash: e8f5f67661dbf33f2b0d6b44e32302a874c3f4de
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68306756"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625085"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor iOS
 
@@ -44,7 +44,7 @@ Met de Microsoft Intune App SDK voor iOS kunt u Intune-beveiligingsbeleid voor a
 
 De volgende bestanden zijn relevant voor apps/uitbrei dingen die geen SWIFT-code bevatten of worden gecompileerd met een versie van Xcode vóór 10,2:
 
-* **IntuneMAM.framework**: het Intune-App SDK-framework. U wordt aangeraden dit Framework te koppelen aan uw app/extensies om intune-client toepassings beheer in te scha kelen. Sommige ontwikkel aars kunnen de prestaties van de statische bibliotheek echter als voor keur hebben. Zie het volgende.
+* **IntuneMAM.framework**: het Intune-App SDK-framework. U wordt aangeraden dit Framework te koppelen aan uw app/extensies om intune-client toepassings beheer in te scha kelen. Sommige ontwikkel aars kunnen de prestaties van de statische bibliotheek echter als voor keur hebben. Bekijk het volgende.
 
 * **libIntuneMAM.a**: de statische bibliotheek van Intune App SDK. Ontwikkel aars kunnen ervoor kiezen om de statische bibliotheek te koppelen in plaats van het Framework. Omdat statische bibliotheken rechtstreeks zijn Inge sloten in de app/extensie binary tijdens het bouwen, zijn er enkele prestaties voor het gebruik van de statische bibliotheek. Het integreren van het bestand in uw app is echter een ingewik kelder proces. Als uw app uitbrei dingen bevat en u de statische bibliotheek koppelt aan de app en uitbrei dingen, resulteert dit in een grotere grootte van de app-bundel, omdat de statische bibliotheek wordt Inge sloten in elke binaire app/extensie. Wanneer u het Framework gebruikt, kunnen apps en uitbrei dingen hetzelfde intune SDK binaire bestand delen, wat resulteert in een kleinere app-grootte.
 
@@ -65,22 +65,22 @@ De volgende bestanden zijn relevant voor alle apps/uitbrei dingen:
 
 De volgende header-bestanden bevatten de API's, gegevenstypen en protocollen die de Intune App SDK beschikbaar maken voor ontwikkelaars:
 
-    * IntuneMAMAppConfig.h
-    * IntuneMAMAppConfigManager.h
-    * IntuneMAMDataProtectionInfo.h
-    * IntuneMAMDataProtectionManager.h
-    * IntuneMAMDefs.h
-    * IntuneMAMDiagnosticConsole.h
-    * IntuneMAMEnrollmentDelegate.h
-    * IntuneMAMEnrollmentManager.h
-    * IntuneMAMEnrollmentStatus.h
-    * IntuneMAMFileProtectionInfo.h
-    * IntuneMAMDataProtectionManager.h
-    * IntuneMAMLogger.h
-    * IntuneMAMPolicy.h
-    * IntuneMAMPolicyDelegate.h
-    * IntuneMAMPolicyManager.h
-    * IntuneMAMVersionInfo.h
+-  IntuneMAMAppConfig.h
+-  IntuneMAMAppConfigManager.h
+-  IntuneMAMDataProtectionInfo.h
+-  IntuneMAMDataProtectionManager.h
+-  IntuneMAMDefs.h
+-  IntuneMAMDiagnosticConsole.h
+-  IntuneMAMEnrollmentDelegate.h
+-  IntuneMAMEnrollmentManager.h
+-  IntuneMAMEnrollmentStatus.h
+-  IntuneMAMFileProtectionInfo.h
+-  IntuneMAMDataProtectionManager.h
+-  IntuneMAMLogger.h
+-  IntuneMAMPolicy.h
+-  IntuneMAMPolicyDelegate.h
+-  IntuneMAMPolicyManager.h
+-  IntuneMAMVersionInfo.h
 
 Ontwikkelaars kunnen de inhoud van de voorgaande headers beschikbaar maken door IntuneMAM.h te importeren
 
@@ -130,17 +130,17 @@ Als u de Intune App SDK wilt inschakelen, voert u de volgende stappen uit:
     > * Het is momenteel niet mogelijk om de intune SDK Api's beschikbaar te maken via een module-import instructie (bijvoorbeeld: import IntuneMAMSwift). Het gebruik van een doel-C-bridging-header is de aanbevolen benadering.
     
 3. Voeg de volgende iOS-frameworks toe aan het project:  
-    * MessageUI.framework  
-    * Security.framework  
-    * MobileCoreServices.framework  
-    * SystemConfiguration.framework  
-    * libsqlite3.tbd  
-    * libc++.tbd  
-    * ImageIO.framework  
-    * LocalAuthentication.framework  
-    * AudioToolbox.framework  
-    * QuartzCore.framework  
-    * WebKit.framework
+-  MessageUI.framework  
+-  Security.framework  
+-  MobileCoreServices.framework  
+-  SystemConfiguration.framework  
+-  libsqlite3.tbd  
+-  libc++.tbd  
+-  ImageIO.framework  
+-  LocalAuthentication.framework  
+-  AudioToolbox.framework  
+-  QuartzCore.framework  
+-  WebKit.framework
 
 4. Schakel het delen van sleutelhangers in (indien nog niet ingeschakeld) door in elk projectdoel op **Capabilities** te klikken en de schakelaar **Keychain Sharing** in te schakelen. Het delen van sleutelhangers is vereist als u wilt doorgaan met de volgende stap.
 

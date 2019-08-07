@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2017
+ms.date: 07/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,25 +18,36 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bdf97e6a36a49bc6df5a182af7676c357440f3e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: d44af8f40243596bda58d610b369db6f54be6d1e
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529324"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625117"
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Er ontbreekt een certificaat voor uw Android-apparaat dat is vereist door het ondersteuningsteam van uw bedrijf
+# <a name="install-missing-certificate-required-by-your-organization"></a>Een ontbrekend certificaat installeren dat is vereist voor uw organisatie  
 
 Als uw apparaat niet bij Intune is geregistreerd en er een bepaald certificaat ontbreekt dat is vereist door het ondersteuningsteam van uw bedrijf, kunt u zich niet aanmelden bij de bedrijfsportal-app. Wanneer u zich probeert aan te melden, wordt het volgende bericht weergegeven:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
-Om dit probleem op te lossen en het vereiste certificaat op te halen, moeten er twee belangrijke stappen worden uitgevoerd:
+Er zijn twee opties die u kunt proberen om het vereiste certificaat te downloaden en uw apparaat in te schrijven. 
 
-- Het ontbrekende certificaat identificeren door te kijken op een bedrijfs- of school-pc.
-- Het ontbrekende certificaat downloaden van internet met behulp van uw apparaat.
+- Browser toegang inschakelen in Bedrijfsportal-app.
+- Identificeer het ontbrekende certificaat op een pc op uw werk of school. Zoek vervolgens op internet om het ontbrekende certificaat te downloaden. 
 
-## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Het ontbrekende certificaat identificeren door te kijken op een bedrijfs- of school-pc
+Voltooi eerst de stappen voor het inschakelen van browser toegang. Als u het apparaat nog steeds niet kunt registreren, volgt u de stappen om het certificaat op internet te vinden. 
+
+## <a name="enable-browser-access"></a>Browser toegang inschakelen
+Voer deze stappen uit om browser toegang in te scha kelen. Nadat u toegang hebt ingeschakeld, installeert Bedrijfsportal het juiste certificaat en wordt de registratie voortgezet.    
+
+1. Ga in de Bedrijfsportal-app naar de rechter bovenhoek en selecteer het menu.  
+2. Selecteer **Instellingen**.  
+3. Selecteer **Enable**naast **browser toegang inschakelen** .  
+4. Selecteer in het scherm Apparaatbeheer de optie **activeren**. 
+
+## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>Het ontbrekende certificaat identificeren en downloaden via zoeken op Internet
+Voer deze stappen uit om het certificaat hand matig te identificeren en te installeren op uw apparaat.  
 
 1. Open Internet Explorer op een pc. Als u voor dit doel niet over een pc beschikt, neemt u contact op met het ondersteuningsteam van uw bedrijf. Ga naar de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) voor de contactgegevens van het ondersteuningsteam van uw bedrijf.
 
@@ -52,15 +63,13 @@ Om dit probleem op te lossen en het vereiste certificaat op te halen, moeten er 
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. Kies in het dialoogvenster **Certificaat** het tabblad **Certificaatpad** en identificeer vervolgens het certificaat dat u van internet moet ophalen. De naam van het certificaat dat u nodig hebt, bevindt zich op dezelfde positie als het gemarkeerde certificaat in het voorgaande voorbeeld.
+5. Kies het tabblad **Certificaatpad** en identificeer vervolgens het certificaat dat u van internet moet ophalen. De naam van het certificaat dat u nodig hebt, bevindt zich op dezelfde positie als het gemarkeerde certificaat in het voorgaande voorbeeld.
 
-## <a name="download-and-install-the-missing-certificate-on-your-android-mobile-device"></a>Het ontbrekende certificaat op uw mobiele Android-apparaat downloaden en installeren
+6. Gebruik een zoekmachine zoals Bing of Google, en zoek op de naam van het ontbrekende certificaat dat u in het vorige gedeelte hebt geïdentificeerd. Het certificaat kan verschillende extensies hebben, zoals '.crt' of '.pem', enzovoort.
 
-1. Gebruik een zoekmachine zoals Bing of Google, en zoek op de naam van het ontbrekende certificaat dat u in het vorige gedeelte hebt geïdentificeerd. Het certificaat kan verschillende extensies hebben, zoals '.crt' of '.pem', enzovoort.
+7. Download het basiscertificaat van de website.
 
-2. Download het basiscertificaat van de website.
-
-3. Nadat het certificaat is gedownload, sleept u omlaag vanaf de bovenkant van uw apparaat om de meldingen te openen en vervolgens tikt u op de naam van het certificaat in de lijst met meldingen.
+8. Nadat het certificaat is gedownload, sleept u omlaag vanaf de bovenkant van uw apparaat om de meldingen te openen en vervolgens tikt u op de naam van het certificaat in de lijst met meldingen.
 
 4. In het dialoogvenster **Benoem het certificaat** dat hieronder wordt weergegeven, accepteert u de standaardcertificaatnaam.
 
