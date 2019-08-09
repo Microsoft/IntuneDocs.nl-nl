@@ -39,8 +39,8 @@
 ### Vragen voor het besturingssysteem
 #### [Uw apparaat bijwerken](you-need-to-update-your-android-device.md)
 #### [Niet-ondersteunde versie](your-android-version-isnt-yet-supported.md)
-#### [Uw apparaat is geroot en u kunt geen verbinding maken](your-device-is-rooted-and-you-cant-connect-android.md)
-#### [Een vereist certificaat ontbreekt](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [Apparaat is geroot en kan geen verbinding maken](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [Een vereist certificaat ontbreekt](your-device-is-missing-an-IT-required-certificate-android.md)
 #### [Onbekende bronnen uitschakelen](you-need-to-turn-off-unknown-sources-android.md)
 #### [USB-foutopsporing uitschakelen](you-need-to-turn-off-usb-debugging-android.md)
 #### [Scannen op beveiligingsrisico's inschakelen](you-need-to-turn-on-scanning-for-security-threats-android.md)
