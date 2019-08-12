@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: df973b18-9166-417d-8aa3-49edd2bda256
 searchScope:
 - User help
-ROBOTS: ''
+ROBOTS: NOINDEX, NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 119e3399067297764abb8a14d2f5861cba33e408
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a91a6c934ba3b1a32ea2ef10da0256019fc25392
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529293"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862121"
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Er ontbreekt een certificaat voor uw Android-apparaat dat normaal gesproken op uw telefoon is geïnstalleerd
 
@@ -33,7 +33,7 @@ Als uw apparaat niet bij Intune is geregistreerd en er ontbreekt een certificaat
 
 U kunt dit probleem oplossen door het vereiste certificaat uit te downloaden via de [certificaatpagina van Digicert](https://www.digicert.com/digicert-root-certificates.htm).
 
-1. Zoek en download het certificaat __Baltimore CyberTrust Root__. U kunt het certificaat [hier](https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt) ook rechtstreeks downloaden.
+1. Zoek en download het certificaat __Baltimore CyberTrust Root__ . U kunt het certificaat [hier](https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt) ook rechtstreeks downloaden.
 
 2. Veeg vanaf de bovenkant van het scherm naar beneden om de lijst met recente meldingen te openen en tik op **BaltimoreCyberTrustRoot.crt**.
 
