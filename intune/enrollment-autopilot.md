@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9ac1830bcc407431cf0a5df8e8c11baa0c27c9c
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 7e0be106b47d933c4407a02369edff3645682b1c
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625099"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700999"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -99,7 +99,7 @@ Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren.
     - **Gebruiksrechtovereenkomst (EULA)** : (Windows 10, versie 1709 of hoger) Kies of u de gebruiksrechtovereenkomst wilt weergeven aan gebruikers.
     - **Privacyinstellingen**: kies of u de privacyinstellingen wilt weergeven voor de gebruikers.
     >[!IMPORTANT]
-    >Bij Autopilot-implementaties op apparaten met Windows 10 versie 1903 en hoger, is de instelling voor diagnostische gegevens automatisch ingesteld op Volledig. Zie [Windows Diagnostic Data](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) (Diagnostische gegevens in Windows) voor meer informatie <br>
+    >De standaardwaarde voor de instelling Diagnostische gegevens is afhankelijk van de Windows-versie. Voor apparaten met Windows 10 versie 1903 is de standaardwaarde tijdens de Out-Of-Box Experience ingesteld op Volledig. Zie [Windows Diagnostic Data](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) (Diagnostische gegevens in Windows) voor meer informatie <br>
     
     - **Opties voor account wijzigen verbergen (Windows 10 versie 1809 of hoger vereist)** : kies **Verbergen** om te voorkomen dat opties voor account wijzigen worden weergegeven op de aanmeldings- en domeinfoutpagina's van het bedrijf. Voor deze optie is vereist dat er een [aangepaste huisstijl wordt geconfigureerd in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Gebruikersaccounttype**: kies het gebruikersaccounttype (**Beheerder** of **Standaardgebruiker**).

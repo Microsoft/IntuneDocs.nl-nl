@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca51fc38a7469d865640840647280375eaa74bbe
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2254c1e83764e9b29ab6fb99c016edef75aad43e
+ms.sourcegitcommit: bc3450fc7f19006b500edf5b395c01559b483ea4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883030"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68738277"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>iOS-apparaten registreren bij Intune
 
@@ -32,8 +32,10 @@ Als Intune-beheerder kunt u registratie inschakelen voor iOS-apparaten. U kunt g
 
 ## <a name="prerequisites-for-ios-enrollment"></a>Vereisten voor iOS-registratie
 Voordat u de registratie van iOS-apparaten kunt inschakelen, moet u de volgende stappen uitvoeren:
+- [Zorg ervoor dat uw apparaat in aanmerking komt voor apparaatinschrijving bij Apple](https://support.apple.com/en-us/HT204142#eligibility).
 - [Intune instellen](setup-steps.md): hiermee stelt u de Intune-infrastructuur in. Voor apparaatinschrijving is met name het [instellen van uw MDM-instantie](mdm-authority-set.md) van belang.
 - [Een Apple MDM-pushcertificaat ophalen](apple-mdm-push-certificate-get.md): Apple vereist een certificaat voor het inschakelen van het beheer van iOS- en macOS-apparaten.
+
 
 ## <a name="user-owned-ios-devices-byod"></a>iOS-apparaten die het eigendom van gebruikers zijn (BYOD)
 

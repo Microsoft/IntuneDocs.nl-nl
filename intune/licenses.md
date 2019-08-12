@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 08/05/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,35 +16,40 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ec97819e49bdb1564b8dd75b23302608492e183
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 38b381fca17dec66303958ee04c018967ae0d999
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397335"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833529"
 ---
-# <a name="licenses-that-include-intune"></a>Licenties met Intune
+# <a name="microsoft-intune-licensing"></a>Licenties voor Microsoft Intune
+Microsoft Intune is beschikbaar voor verschillende klantbehoeften en organisatiegrootten, van een eenvoudig te gebruiken beheerervaring voor scholen en kleine bedrijven tot een meer geavanceerde functionaliteit die door zakelijke klanten wordt vereist. Zolang het abonnement actief is, verlenen de meeste licenties met Microsoft Intune ook rechten voor het gebruik van System Center Configuration Manager. 
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+## <a name="microsoft-intune"></a>Microsoft Intune
+Intune is opgenomen in de volgende licenties:
 
-In de volgende tabel ziet u welke versie van Intune beschikbaar is in elke licentie:
+- Microsoft 365 E5
+- Microsoft 365 E3
+- Enterprise Mobility + Security E5
+- Enterprise Mobility + Security E3
+- Microsoft 365 Business
+- Microsoft 365 F1
 
-| Licentie | Intune-versie | Vergelijking van functies en prijzen |
-|-----------------------------------------------------------------------|-------------------------------------------------------------|---|
-| Intune | Intune | [Meer informatie](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Enterprise Mobility + Security E3 | Intune | [Meer informatie](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Enterprise Mobility + Security E5 | Intune | [Meer informatie](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Microsoft 365 Education A1 | Intune voor onderwijs | [Meer informatie](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A3 | Intune voor onderwijs | [Meer informatie](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A5 | Intune voor onderwijs | [Meer informatie](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 E3 | Intune | [Meer informatie](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 E5 | Intune | [Meer informatie](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 F1 | Intune | [Meer informatie](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Microsoft 365 Business | Intune | [Meer informatie](https://www.microsoft.com/en-us/microsoft-365/business) |
 
-Intune is niet opgenomen in licenties die niet in deze lijst staan.
 
-Een juiste licentie is vereist als een gebruiker direct of indirect gebruikmaakt van een functie van de licentie.
+## <a name="microsoft-intune-for-education"></a>Microsoft Intune for Education
+Intune for Education is opgenomen in de volgende licenties:
 
-Zie het artikel [Intune-licenties toewijzen aan uw gebruikersaccounts](licenses-assign.md) als u een licentie wilt toewijzen aan een gebruiker.
+- Microsoft 365 Education A5
+- Microsoft 365 Education A3
 
+## <a name="additional-information"></a>Aanvullende informatie
+- Naast de hierboven genoemde bundels is een Microsoft Intune-abonnement voor gebruikers en apparaten beschikbaar als zelfstandig abonnement.
+- Een Microsoft Intune-abonnement alleen voor apparaten is beschikbaar voor kioskapparaten waarin geen functies met gebruikersaffiniteit worden gebruikt.
+- De juiste Microsoft Intune-licentie wordt vereist als een gebruiker of apparaat direct of indirect profiteert van de Microsoft Intune-service, waaronder toegang tot de Microsoft Intune-service via een [Microsoft API](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+- Intune is niet opgenomen in licenties die niet in de voorgaande tabellen staan.
+
+Ga naar de pagina met [Microsoft-licenties](https://www.microsoft.com/licensing/default) voor de meest recente informatie over productversies, updates van productlicenties, abonnementen voor volumelicenties en andere informatie met betrekking tot uw specifieke use-cases.  
+
+Zie het artikel [Intune-licenties toewijzen aan uw gebruikersaccounts](licenses-assign.md) voor informatie over hoe licenties voor gebruikers en apparaten van invloed zijn op toegang tot services en over hoe u een licentie aan een gebruiker toewijst.

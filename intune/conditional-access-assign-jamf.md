@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc4fdaea99a0e8fb247ac6a70b853497927cdc04
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d23e725db965a249522f7f8fa89f8bb27bc24fd8
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045214"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68679997"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Nalevingsbeleid afdwingen op Macs die door Jamf Pro worden beheerd
 
@@ -33,7 +33,10 @@ U kunt Azure Active Directory en het beleid voor voorwaardelijke toegang van Mic
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Nalevingsbeleid voor apparaten in Intune instellen
 
 1. Open Microsoft Azure en navigeer naar **Intune** > **Apparaatcompatibiliteit** > **Beleid**. U kunt beleidsregels maken voor macOS, zoals het kiezen van een reeks acties (bijvoorbeeld het versturen van waarschuwingse-mails naar niet-conforme gebruikers en groepen).
-2. Zoek de gewenste groepen en pas daar het beleid op toe.
+2. Selecteer het beleid > Toewijzingen. U kunt Azure Active Directory-beveiligingsgroepen (AD) opnemen of uitsluiten.
+3. Kies Geselecteerde groepen om uw Azure AD-beveiligingsgroepen weer te geven. Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen > kies Opslaan om het beleid voor gebruikers te implementeren.
+
+U hebt het beleid toegepast op gebruikers. De apparaten die worden gebruikt door de gebruikers op wie het beleid is gericht, worden geëvalueerd op naleving en gemarkeerd als compatibel voor de instelling Vereisen dat het apparaat moet worden gemarkeerd als compatibel in Azure Active Directory.
 
 > [!Note]
 > Voor Intune moet de schijf volledig worden versleuteld om aan het beleid te voldoen.

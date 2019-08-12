@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f576edb5dd0bd4baa960adb3519fa379397fb94c
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: 128856cf4e81f1ac9fbc93cef1160662e2b5cef0
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329025"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700967"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Instellingen voor beveiligingsbeleid voor apps voor Android in Microsoft Intune
 In dit artikel worden de app-beveiligingsbeleidsinstellingen voor Android-apparaten beschreven. De beleidsinstellingen die worden beschreven, kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid op de blade **Instellingen** in Azure Portal.
@@ -93,6 +93,7 @@ Er zijn drie soorten beleidsinstellingen: gegevensbeschermingsinstellingen, toeg
   | com.skype.raider | Skype | Voor de Skype-app zijn alleen bepaalde acties die in een telefonische oproep resulteren toegestaan. |
   | com.android.providers.media | Android media-inhoudsprovider | Voor de media-inhoudsprovider is alleen de actie beltoonselectie toegestaan. |
   | com.google.android.gms; com.google.android.gsf | Google Play-Services-pakketten | Voor deze pakketten zijn Google Cloud Messaging-acties zoals pushmeldingen toegestaan. |
+  | com.google.android.apps.maps | Google Maps | Adressen zijn toegestaan voor navigatie |
 
 Zie [Uitzonderingen voor gegevensoverdrachtsbeleid voor apps](app-protection-policies-exception.md) voor meer informatie.
 

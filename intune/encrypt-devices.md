@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 09b5e59f4af534d4919574631568a7581bb3fba9
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467446"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756548"
 ---
 # <a name="use-device-encryption-with-intune"></a>Apparaatversleuteling gebruiken met Intune  
 
@@ -67,6 +67,13 @@ Voor meer informatie over de FileVault-instelling die u met Intune kunt beheren,
    Bijvoorbeeld: Als u een verloren of onlangs vernieuwde herstelsleutel wilt ophalen, meldt u zich aan op de website van de Intune-bedrijfsportal. Dit kan vanaf elk apparaat. Ga in de portal naar *Apparaten* en selecteer het apparaat waarvoor FileVault is ingeschakeld. Selecteer dan *Herstelsleutel ophalen*. De huidige herstelsleutel wordt weergegeven.  
 
 6. Configureer de overige [FileVault-instellingen](endpoint-protection-macos.md#filevault) zodanig dat er aan de vereisten van uw bedrijf wordt voldaan. Selecteer vervolgens **OK**.  
+
+   > [!IMPORTANT]  
+   > Er is een bekend probleem wanneer de instelling **Vraag bij afmelden uitschakelen** is ingesteld op *Inschakelen*. Als deze optie is ingesteld op *Ingeschakeld*, moet de instelling voor **Toegestaan aantal keren voor overslaan** worden ingesteld op een waarde en niet worden ingesteld op *Niet geconfigureerd*. Als de optie is ingesteld op *Niet geconfigureerd*, mislukt het profiel op het apparaat. In dit scenario wordt gemeld dat het een **Overzicht profielstatus** betreft met de status **Fout**, zonder nadere informatie.
+   > 
+   > Als **Vraag bij afmelden uitschakelen** is ingesteld op *Niet geconfigureerd*, kan **Toegestaan aantal keren voor overslaan** zijn ingesteld op *Niet geconfigureerd* of op een waarde.  
+   > 
+   > Dit probleem wordt opgelost in een toekomstige update. 
 
 7. Voltooi de configuratie van de aanvullende instellingen en sla het profiel op.  
 

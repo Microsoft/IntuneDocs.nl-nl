@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 397ca3c03c96adc9bd6b0ca691f835e3e579fba0
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8b39c9f4f875ca458817940819716e1188d36eef
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882250"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783255"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer gebruiken voor het extern beheren van Intune-apparaten
 
@@ -28,7 +28,10 @@ Apparaten die worden beheerd door Intune kunnen extern worden beheerd met [TeamV
 
 ## <a name="prerequisites"></a>Vereisten
 
-- Gebruik een ondersteund apparaat. Door Intune beheerde Android-, Windows-, iOS- en macOS-apparaten ondersteunen extern beheer. TeamViewer biedt mogelijk geen ondersteuning voor Windows Holographic (HoloLens), Windows Team (Surface Hub) of Windows 10 S. Zie voor ondersteuning [TeamViewer](https://www.teamviewer.com) voor eventuele updates.
+- Gebruik een ondersteund apparaat. Door Intune beheerd Android-apparaatbeheer, Android-werkprofiel, en Windows-, iOS- en macOS-apparaten ondersteunen extern beheer. TeamViewer biedt mogelijk geen ondersteuning voor Windows Holographic (HoloLens), Windows Team (Surface Hub) of Windows 10 S. Zie voor ondersteuning [TeamViewer](https://www.teamviewer.com) voor eventuele updates.
+
+> [!NOTE]
+> Android Dedicated en Volledig beheerd worden niet ondersteund.
 
 - De Intune-beheerder binnen de Azure Portal moet de volgende [Intune-rollen](role-based-access-control.md) hebben:  
 

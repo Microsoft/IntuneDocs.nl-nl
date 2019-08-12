@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a369b3bde7967db04a76ae1794d7b8fb86c21e4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4a1ac47fd512323ce809d4ee13c5e98f563ce51c
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548417"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783107"
 ---
 # <a name="develop-a-rollout-plan"></a>Een rollout-plan ontwikkelen
 
@@ -55,7 +55,7 @@ Na een geslaagde testfase kunt u beginnen met een volledige implementatie die ge
 
 - **Afdelingen** <br/>Elke afdeling kan een implementatiefase vormen. Een gehele afdeling is tegelijkertijd het doel van de implementatie. Bij dit type implementatie maken de gebruikers van elke afdeling hoogstwaarschijnlijk op dezelfde manier gebruik van het mobiele apparaat en hebben ze toegang tot dezelfde toepassingen. De gebruikers moeten waarschijnlijk voldoen aan hetzelfde soort beleid.
 
-- **Geografie** <br/>Bij deze methode vindt de implementatie plaats voor alle gebruikers in een specifiek geografisch gebied, of dat nu hetzelfde continent, hetzelfde land, dezelfde regio of hetzelfde bedrijfsgebouw is. Dit type gefaseerde implementatie biedt u de mogelijkheid om u te richten op een specifieke gebruikerslocatie. U kunt op deze manier een meer [intensieve](#user-assisted-enrollment) methode hanteren omdat het aantal locaties wordt beperkt waar Intune op hetzelfde moment wordt geïmplementeerd. Omdat het mogelijk is dat er op dezelfde locatie verschillende afdelingen of use cases zijn, kunnen er verschillende use cases op hetzelfde moment worden geïmplementeerd.
+- **Geografie** <br/>Bij deze methode vindt de implementatie plaats voor alle gebruikers in een specifiek geografisch gebied, of dat nu hetzelfde continent, hetzelfde land of dezelfde regio, of hetzelfde bedrijfsgebouw is. Dit type gefaseerde implementatie biedt u de mogelijkheid om u te richten op een specifieke gebruikerslocatie. U kunt op deze manier een meer [intensieve](#user-assisted-enrollment) methode hanteren omdat het aantal locaties wordt beperkt waar Intune op hetzelfde moment wordt geïmplementeerd. Omdat het mogelijk is dat er op dezelfde locatie verschillende afdelingen of use cases zijn, kunnen er verschillende use cases op hetzelfde moment worden geïmplementeerd.
 
 - **Platform** <br/>Bij dit type implementatie worden soortgelijke platformen gelijktijdig geïmplementeerd. Een voorbeeld daarvan is de implementatie op alle iOS-apparaten tijdens de eerste maand, gevolgd door Android, gevolgd door Windows. De helpdeskondersteuning wordt met dit type gefaseerde implementatie vereenvoudigd omdat de helpdesk slechts voor één platform tegelijkertijd ondersteuning hoeft te bieden.
 
@@ -93,16 +93,16 @@ Hier volgt een bijgewerkt voorbeeld van het bovenstaande Intune-implementatiepla
 
 | **Rollout-fase** | **Juli** | **Augustus** | **September** | **Oktober** |
 |:---:|:---:|:---:|:---:|:---:|
-| Beperkte pilot |  |  |  |  |                                                         
+| Beperkte pilot |  |  |  |  |
 | Selfservice | IT |  |  |  |
-| Uitgebreide pilot |  |  |  |  |                                                         
+| Uitgebreide pilot |  |  |  |  |
 | Selfservice | IT |  |  |  |
 | Gebruikersregistratie met ondersteuning | IT-managers |  |  |  |
 | Productie-rollout fase 1 |  | Verkoop, Marketing |  |  |
 | Selfservice |  | Verkoop en Marketing |  |  |
 | Productie-rollout fase 2 |  |  | Retail |  |
-| Selfservice |  |  |  |  |
-| Productie-rollout fase 3 |  |  | Retail |  |
+| Selfservice |  |  | Retail |  |
+| Productie-rollout fase 3 |  |  |  | Leidinggevenden, HR, Financiën |
 | Selfservice |  |  |  | HR, Financiën |
 | Gebruikersregistratie met ondersteuning |  |  |  | Leidinggevenden |
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f938afb738e75789194db0c74fee56deb1476dbc
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660381"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680105"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Aangepaste meldingen verzenden in Intune  
 
@@ -38,8 +38,9 @@ Aangepaste meldingen hebben een korte titel en een hoofdtekst van maximaal 500 t
 ## <a name="considerations-for-using-custom-notifications"></a>Overwegingen voor het gebruik van aangepaste meldingen  
 
 **Apparaatconfiguratie**:  
-- Op apparaten moet de app Bedrijfsportal zijn geïnstalleerd, anders kunnen gebruikers geen aangepaste meldingen ontvangen. Er moeten ook machtigingen zijn geconfigureerd op basis waarvan de app Bedrijfsportal pushmeldingen mag verzenden. De app Bedrijfsportal vraagt gebruikers om meldingen toe te staan.  
+- Op apparaten moet de app Bedrijfsportal zijn geïnstalleerd, anders kunnen gebruikers geen aangepaste meldingen ontvangen. Er moeten ook machtigingen zijn geconfigureerd op basis waarvan de app Bedrijfsportal pushmeldingen mag verzenden. De Bedrijfsportal-app vraagt gebruikers om meldingen toe te staan als de app wordt geïnstalleerd of bijgewerkt.  
 - Op Android is Google Play Services een vereiste afhankelijkheid.  
+- Het apparaat moet bij MDM zijn ingeschreven.
 
 **Meldingen maken**:  
 - Als u een bericht wilt maken, gebruikt u een account waaraan een Intune-rol is toegewezen met de machtiging **Bijwerken** voor **Organisatie**. Voor het toewijzen van machtigingen aan een gebruiker ziet u [Roltoewijzingen](role-based-access-control.md#role-assignments)  
