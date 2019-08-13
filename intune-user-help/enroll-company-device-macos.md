@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3941c41b24d458d14acb1361bc463af657a0ca67
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511926"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783024"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Het door uw organisatie verstrekte iOS-apparaat voor beheer inschrijven
 
@@ -40,10 +40,10 @@ Uw organisatie heeft mogelijk hun apparaten aangeschaft via een programma met de
 Voer de volgende stappen uit om uw macOS-apparaat voor beheer in te schrijven. Als u uw eigen apparaat gebruikt in plaats van een door de organisatie verstrekt apparaat, volgt u de stappen voor [persoonlijke en bring-your-own-apparaten](enroll-your-device-in-intune-macos-cp.md).  
 
 1. Schakel uw macOS-apparaat in. 
-2. Kies uw land/regio en klik op **Doorgaan**.  
+2. Kies uw land of regio en klik op **Doorgaan**.  
 
    ![Schermafbeelding van het welkomstscherm van de configuratieassistent op het macOS-apparaat waarop een lijst met selecteerbare talen wordt weergegeven.](./media/macos-dep-welcome-1808.png)   
-3. Kies een toetsenbordindeling. De lijst bevat een of meer opties op basis van het geselecteerde land. Als u alle indelingsopties wilt weergeven, ongeacht het geselecteerde land, klikt u op **Alles weergeven**. Wanneer u klaar bent, klikt u op **Doorgaan**.  
+3. Kies een toetsenbordindeling. De lijst bevat een of meer opties op basis van het geselecteerde land of de geselecteerde regio. Als u alle indelingsopties wilt weergeven, ongeacht het geselecteerde land of de geselecteerde regio, klikt u op **Alles weergeven**. Wanneer u klaar bent, klikt u op **Doorgaan**.  
 
    ![Schermafbeelding van het scherm voor de toetsenbordindeling van de configuratieassistent op het macOS-apparaat waarop een lijst met selecteerbare toetsenbordtalen wordt weergegeven, een uitgeschakelde optie Alles weergeven en de knoppen Vorige en Doorgaan.](./media/macos-dep-keyboard-1808.png)  
 4. Selecteer uw Wi-Fi-netwerk. U moet een internetverbinding hebben om de configuratie voort te zetten. Als u uw netwerk niet ziet of als u verbinding wilt maken via een bekabeld netwerk, klikt u op **Andere netwerkopties**. Wanneer u klaar bent, klikt u op **Doorgaan**.  

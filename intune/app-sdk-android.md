@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f2015bb6997861d8856c7fe89662c21be105f5b
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
-ms.translationtype: MTE75
+ms.openlocfilehash: edc193c80960872cc3a0e25438432195de3a7c34
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482938"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783214"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -636,7 +636,7 @@ De volgende meldingen worden verzonden naar de app en enkele ervan vereisen moge
 > [!NOTE]
 > Een app moet nooit voor zowel `WIPE_USER_DATA`- als `WIPE_USER_AUXILIARY_DATA`-meldingen.
 
-### <a name="managementremoved"></a>MANAGEMENT_REMOVED
+### <a name="management_removed"></a>MANAGEMENT_REMOVED
 
 De melding `MANAGEMENT_REMOVED` geeft aan dat een eerder door beleid beheerde gebruiker niet langer door het Intune MAM-beleid wordt beheerd. Gebruikersgegevens hoeven hiervoor niet te worden gewist en gebruikers hoeven niet te worden afgemeld (als wissen is vereist, wordt een `WIPE_USER_DATA`-melding verzonden). Deze melding hoeft door de meeste apps helemaal niet te worden verwerkt, maar apps die `MAMDataProtectionManager` gebruiken, moeten wel [aandacht besteden van deze melding](#data-protection).
 
@@ -1370,7 +1370,7 @@ De methode `onMAMIdentitySwitchRequired` wordt aangeroepen voor alle impliciete 
 
   * Als het overschakelen naar een andere identiteit wordt geblokkeerd, is het resultaat hetzelfde als wanneer de `Receive`-instellingen voor delen de gegevensinvoer verbieden.
 
-  * Als een service wordt uitgevoerd op de hoofdthread, **moet** `reportIdentitySwitchResult` synchroon worden aangeroepen, anders loopt de UI-thread vast.
+  * Als een service wordt uitgevoerd op de hoofdthread, **moet** `reportIdentitySwitchResult` synchroon worden aangeroepen, anders reageert de UI-thread niet meer.
 
   * Voor het maken van **`Activity`** wordt eerst `onMAMIdentitySwitchRequired` en vervolgens `onMAMCreate` aangeroepen. Als de app UI moet weergeven om te bepalen of de identiteitswisseling is toegestaan, moet die UI worden weergegeven met een *andere* activiteit.
 
