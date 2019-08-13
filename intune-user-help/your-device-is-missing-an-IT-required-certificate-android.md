@@ -18,16 +18,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d44af8f40243596bda58d610b369db6f54be6d1e
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 16c6708fb730c459f41fec573a939bfb4fb5ddda
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625117"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862146"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>Een ontbrekend certificaat installeren dat is vereist voor uw organisatie  
 
-Als uw apparaat niet bij Intune is geregistreerd en er een bepaald certificaat ontbreekt dat is vereist door het ondersteuningsteam van uw bedrijf, kunt u zich niet aanmelden bij de bedrijfsportal-app. Wanneer u zich probeert aan te melden, wordt het volgende bericht weergegeven:
+Als uw apparaat niet bij intune is geregistreerd en er ontbreekt een vereist certificaat, kunt u zich niet aanmelden bij de app Bedrijfsportal. Wanneer u zich probeert aan te melden, wordt het volgende bericht weergegeven:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -43,7 +43,7 @@ Voer deze stappen uit om browser toegang in te scha kelen. Nadat u toegang hebt 
 
 1. Ga in de Bedrijfsportal-app naar de rechter bovenhoek en selecteer het menu.  
 2. Selecteer **Instellingen**.  
-3. Selecteer **Enable**naast **browser toegang inschakelen** .  
+3. **Selecteer** **enable**naast browser toegang inschakelen.  
 4. Selecteer in het scherm Apparaatbeheer de optie **activeren**. 
 
 ## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>Het ontbrekende certificaat identificeren en downloaden via zoeken op Internet
@@ -82,3 +82,7 @@ Voer deze stappen uit om het certificaat hand matig te identificeren en te insta
 7. Open de bedrijfsportal-app opnieuw. Nu moet u zich bij de bedrijfsportal-app kunnen aanmelden. Neem contact op met het ondersteuningsteam van uw bedrijf als u hulp nodig hebt.
 
 Als u dezelfde melding over een 'ontbrekend certificaat' ziet als de melding die eerder werd weergegeven en u de procedure al hebt uitgevoerd, is er waarschijnlijk nog een ander certificaat dat door het ondersteuningsteam van uw bedrijf moet worden geïnstalleerd. Neem contact op met het ondersteuningsteam van uw bedrijf voor hulp bij het gebruik van de contactgegevens die beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
+
+## <a name="next-steps"></a>Volgende stappen  
+
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  
