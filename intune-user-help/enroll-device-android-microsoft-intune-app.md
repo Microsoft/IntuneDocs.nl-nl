@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735756"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862243"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Uw bedrijfsapparaat inschrijven met de Microsoft Intune-app
 
@@ -50,9 +50,9 @@ Voltooi deze stappen voor het instellen en inschrijven van uw apparaat.
 
      Als u een andere methode moet volgen, gaat u verder naar stap 3.    
 
-1. Maak verbinding met Wi-Fi en tik op **VOLGENDE**. Volg de stap die overeenkomt met uw inschrijvingsmethode. 
+3. Maak verbinding met Wi-Fi en tik op **VOLGENDE**. Volg de stap die overeenkomt met uw inschrijvingsmethode. 
 
-    * Token: Wanneer het aanmeldscherm van Google wordt weergegeven, voert u de stappen uit die worden beschreven in [Tokeninschrijving](#token-enrollment).    
+    * Token: Wanneer het aanmeldscherm van Google wordt weergegeven, voert u de stappen uit die worden beschreven in [Tokeninschrijving](#token-enrollment).  
     * Google Zero Touch: Nadat u verbinding met Wi-Fi hebt gemaakt, wordt uw apparaat herkend door uw bedrijf. Ga verder met stap 4 en volg de instructies op het scherm totdat de installatie is voltooid.    
  
        ![Voorbeeldafbeelding van het scherm met de voorwaarden van Google dat verschijnt als u Google Zero Touch gebruikt, waarin de knop Accept & Continue is gemarkeerd.](./media/google-zero-touch-intune-app-01.png)   
@@ -78,21 +78,19 @@ Voltooi deze stappen voor het instellen en inschrijven van uw apparaat.
 
    ![Voorbeeldafbeelding van het instellen van uw zakelijke telefoon, waarin de knop Installeren is gemarkeerd.](./media/fully-managed-intune-app-11.png)   
 
-10. Wanneer het bericht verschijnt dat uw apparaat gereed is, tikt u op **GEREED**. 
+10. Tik **op** start om de Microsoft intune-app te openen en uw apparaat te registreren. 
 
-11. Ga naar uw apps en open de Microsoft Intune-app. Selecteer **AANMELDEN**. 
+    ![Voorbeeldafbeelding van het instellen van uw zakelijke telefoon, waarin de knop Starten is gemarkeerd.](./media/fully-managed-intune-app-17.png)   
 
-12. In het scherm **Toegang instellen** ziet u een lijst met alle lopende taken. Tik op **DOORGAAN**.  
+11. Tik op **aanmelden** en tik vervolgens op **volgende** om te beginnen met de registratie. Wanneer u het bericht ziet dat de registratie is voltooid, **tikt**u op gereed.  
 
-       ![Voorbeeldafbeelding van de Microsoft Intune-app, het scherm Toegang instellen en de lopende taken.](./media/fully-managed-intune-app-14.png)   
+    ![Voorbeeld afbeelding van het instellen van de toegang, het scherm van het apparaat registreren, de knop gereed markeren.](./media/fully-managed-intune-app-19.png)   
 
-13. Wanneer de registratie van het apparaat is voltooid, tikt u op **DOORGAAN**. U wordt mogelijk gevraagd om aanvullende apparaatinstellingen bij te werken.   
+10. Wanneer u het bericht ziet dat uw apparaat gereed is, tikt u op **GEREED**.  
 
-       ![Voorbeeldafbeelding van de Microsoft Intune-app en het scherm voor het bijwerken van de apparaatinstellingen.](./media/fully-managed-intune-app-15-2.png)   
+    ![Voorbeeldafbeelding van het instellen van uw zakelijke telefoon, waarin de knop Gereed is gemarkeerd.](./media/fully-managed-intune-app-18.png)   
 
-14. De installatie is voltooid wanneer alle items in de lijst met een groene cirkel worden weergegeven. U hebt nu toegang tot bedrijfsbronnen.  
-
-       ![Voorbeeldafbeelding van de Microsoft Intune-app, het scherm Toegang instellen en de voltooide taken.](./media/fully-managed-intune-app-16.png)   
+Als u problemen hebt met het verkrijgen van toegang tot de resources van uw organisatie, moet u mogelijk aanvullende instellingen op uw apparaat bijwerken. Meld u aan bij de app van Microsoft Intune om te controleren op vereiste updates.   
 
 
 ## <a name="qr-code-enrollment"></a>Inschrijven met behulp van QR-code  
@@ -118,11 +116,7 @@ In deze sectie gaat u het token invoeren dat u van uw bedrijf hebt ontvangen. Wa
 
 3. Selecteer **Volgende** in het scherm **Dit apparaat inschrijven**.  
 
-   ![Voorbeeldafbeelding van het scherm Dit apparaat inschrijven. Hierin wordt een QR-code weergegeven en is de knop Volgende gemarkeerd.](./media/token-intune-app-02.png)  
-
-4. Selecteer **Code invoeren**.
-
-   ![Voorbeeldschermopname van een actieve QR-codescanner. De knop Code invoeren is gemarkeerd.](./media/token-intune-app-03.png)  
+4. Selecteer **Code invoeren**.  
 
 5. Typ in het scherm **Code scannen of invoeren** de code die u van uw bedrijf hebt ontvangen.  Klik op **Volgende**.  
 
