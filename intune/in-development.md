@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 969e7bc4804e1f66230c76d742bec2c67c2fa006
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
-ms.translationtype: HT
+ms.openlocfilehash: 95eede7c62e728aa0dbade4478eb87f31c252558
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670922"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833542"
 ---
 # <a name="in-development-for-microsoft-intune---august-2019"></a>In ontwikkeling voor Microsoft Intune - augustus 2019
 
@@ -62,7 +62,7 @@ Als ondersteuning bij uw gereedheid en planning worden op deze pagina updates vo
 Beheerders kunnen beheren of een app wordt verwijderd of op een apparaat wordt bewaard wanneer het apparaat niet is inge schreven op het niveau van een gebruiker of apparaat. 
 
 ### <a name="categorize-microsoft-store-for-business-apps----3926922---"></a>Microsoft Store voor Bedrijven-apps categoriseren <!-- 3926922 -->
-U kunt Microsoft Store voor zakelijke apps categoriseren. Als u dit wilt doen ****  > , kiest u intune-**apps** voor**client-apps** > > Selecteer een Microsoft Store voor zakelijke app >**categorie**met **app-gegevens** > . Wijs een categorie toe aan de vervolg keuzelijst.
+U kunt Microsoft Store voor zakelijke apps categoriseren. Als u dit wilt doen **, kiest**u  > **intune-apps** >  **voorclient** **-apps > een Microsoft Store voor zakelijke app > app selecteren** Informatie > **categorie.** Wijs een categorie toe aan de vervolg keuzelijst.
 ### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>Inhoud van app-meldingen voor organisatie accounts configureren <!-- 2576686 -->
 Met intune app-beveiligings beleid (APP) op Android-en iOS-apparaten kunt u inhoud voor app-meldingen beheren voor organisatie accounts. Deze functie vereist ondersteuning van toepassingen en is mogelijk niet beschikbaar voor alle toepassingen die zijn ingeschakeld voor apps. Zie [Wat is beveiligingsbeleid voor apps?](app-protection-policy.md) voor meer informatie over APP.
 
@@ -73,7 +73,7 @@ U kunt voor beschikbare app-installaties op apparaten met Android-werkprofielen 
 ## <a name="device-configuration"></a>Apparaatconfiguratie
 
 ### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809----"></a>Sommige beperkingen van het iOS-apparaat zonder super visie worden alleen gecontroleerd met de iOS 13,0-release <!-- 4867809  -->
-Sommige instellingen zijn alleen van toepassing op apparaten met Super visie met de iOS 13,0-release. Deze instellingen omvatten:
+Sommige instellingen zijn van toepassing op apparaten onder Super visie, te beginnen met de iOS 13,0-release. Deze instellingen omvatten:
 
 - App Store, documenten bekijken, gamen
   - App Store
@@ -98,16 +98,16 @@ Van toepassing op:
 - iOS 13,0 en hoger
 
 ### <a name="new-settings-and-changes-to-existing-settings-to-restrict-features-on-ios-and-macos-devices----4867699-4867709----"></a>Nieuwe instellingen en wijzigingen in bestaande instellingen om functies op iOS-en macOS-apparaten te beperken <!-- 4867699 4867709  -->
-U kunt profielen maken om instellingen te beperken op apparaten met IOS en MacOS (**apparaatconfiguratie** > **profielen** > **profiel** > maken**IOS** of **MacOS** voor platform Typ > **beperkingen**van het apparaat). De volgende functies worden toegevoegd:
+U kunt profielen maken om instellingen te beperken op apparaten met IOS en macOS (**apparaatconfiguratie** >  **profielen** > **profiel maken**  > **IOS** of **macOSvoorplatform**type >-**beperkingen**). De volgende functies worden toegevoegd:
 
-- Gebruik voor de**beperkingen** **** ****  >  > van het MacOS-apparaat**Cloud en Storage**de nieuwe instelling besteld om te voor komen dat gebruikers vanaf een MacOS-apparaat aan de slag gaan en op een ander MacOS-of IOS-apparaat werken.
+- Gebruik de nieuwe instelling besteld voor**macOS** > **Device-beperkingen**  > **Cloudenopslag**. **blok** keren dat gebruikers geen werk kunnen starten op een macOS-apparaat en blijven werken op een ander macOS-of iOS-apparaat.
   Als u de huidige instellingen wilt zien, gaat u naar [macOS-apparaatinstellingen voor het toestaan of beperken van functies met Intune](device-restrictions-macos.md).
-- Op het **IOS** > -**apparaat gelden**enkele wijzigingen:
-  - **Ingebouwde apps** > **zoeken mijn iPhone (alleen onder Super visie)** : nieuwe instelling die deze functie blokkeert in de functie mijn app zoeken. 
-  - **Ingebouwde apps** > **zoeken naar mijn vrienden (alleen onder Super visie)** : nieuwe instelling die deze functie blokkeert in de functie mijn app zoeken. 
-  - **** Draadloze > **wijziging van de Wi-Fi-status (alleen onder Super visie)** : nieuwe instelling die voor komt dat gebruikers Wi-Fi op het apparaat in-of uitschakelen.
-  - **Toetsen bord en woorden lijst** > **QuickPath (alleen onder Super visie)** : nieuwe instelling die de QuickPath-functie blokkeert.
-  - **Cloud en opslag**: de voortzetting van de **activiteiten** wordt gewijzigd **** in de bewaarde.
+- Op **het**IOS > -apparaat**gelden enkele wijzigingen:**
+  - **Ingebouwde apps** >  **zoeken mijn iPhone (alleen onder Super visie)** : nieuwe instelling die deze functie blokkeert in de functie mijn app zoeken. 
+  - **Ingebouwde apps** >  **zoeken naar mijn vrienden (alleen onder Super visie)** : nieuwe instelling die deze functie blokkeert in de functie mijn app zoeken. 
+  - **Draadloze** >  **wijziging van de Wi-Fi-status (alleen onder Super visie)** : nieuwe instelling die voor komt dat gebruikers Wi-Fi op het apparaat in-of uitschakelen.
+  - **Toetsen bord en**woorden lijst > **QuickPath (alleen onder**Super visie): nieuwe instelling die de QuickPath-functie blokkeert.
+  - **Cloud en opslag**: **de voortzetting** van de activiteiten wordt gewijzigd **in**de bewaarde.
 
   Als u de huidige instellingen wilt zien, gaat u naar [iOS-apparaatinstellingen voor het toestaan of beperken van functies met Intune](device-restrictions-ios.md).
 
@@ -116,7 +116,7 @@ Van toepassing op:
 - iOS 13 en hoger
 
 ### <a name="control-the-apps-files-documents-and-folders-that-open-when-user-signs-in-to-macos-devices---3914202----"></a>De apps, bestanden, documenten en mappen beheren die worden geopend wanneer de gebruiker zich aanmeldt bij macOS-apparaten <!--3914202  -->
-U kunt functies inschakelen en configureren op macOS-apparaten (**apparaatconfiguratie** > **profielen** >  **** **profiel** > maken voor het platform > **apparaat-functies** voor Profiel type). 
+U kunt functies inschakelen en configureren op macOS-apparaten (**configuratie**  > **profielen** > **voor apparaten profiel**maken  >  **macOS** voor platform >**Device-** functies voor profiel type). 
 
 Er zijn nieuwe instellingen voor aanmeldings items om te bepalen welke apps, bestanden, documenten en mappen worden geopend wanneer een gebruiker zich aanmeldt bij het geregistreerde apparaat. 
 
@@ -126,13 +126,13 @@ Van toepassing op:
 - macOS
 
 ### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode----3755304-3041943-3041946----"></a>Nieuwe functies voor speciaal voor Android-apparaten in de modus voor meerdere apps <!-- 3755304 3041943 3041946  -->
-U kunt de functies en instellingen in een kiosk stijl beheren op uw door Android Enter prise toegewezen apparaten. Als u dit wilt doen, kiest u **configuratie** > **profielen** > voor apparaten**profiel** > maken**Android Enter prise** voor platform > **alleen apparaat-eigenaar, beperkingen** voor het profiel type.
+U kunt de functies en instellingen in een kiosk stijl beheren op uw door Android Enter prise toegewezen apparaten. **Hiertoe kiest u configuratieprofielenvoorapparaten**  > **profielmakenAndroidEnterprise**  >   **alleen voor platform** >  **> apparaat-eigenaar**, **beperkingen** van apparaten voor profiel type.
 
 De volgende functies worden toegevoegd:
-- **Gereserveerde apparaten** > **multi-app**: de knop voor de **virtuele start** kan worden weer gegeven door op het apparaat te vegen of op het scherm te zweven zodat gebruikers het kunnen verplaatsen.
-- **Toegewezen apparaten** > **multi-app**: met **zaklantaarn toegang** kunnen gebruikers de zaklantaarn gebruiken. 
-- **Toegewezen apparaten** > **multi-app**: met **volume regeling van media** kunnen gebruikers het Media volume van het apparaat beheren met behulp van een schuif regelaar. 
-- **Toegewezen apparaten** > **multi-app**: Schakel scherm beveiliging in, upload een aangepaste installatie kopie en bepaal wanneer de scherm beveiliging wordt weer gegeven.
+- **Gereserveerde**apparaten > multi **-app**: **deknop** voor de virtuele start kan worden weer gegeven door op het apparaat te vegen of op het scherm te zweven zodat gebruikers het kunnen verplaatsen.
+- **Toegewezen apparaten** > **multi-** app:metzaklantaarn **toegang kunnen gebruikers de zaklantaarn gebruiken.** 
+- **Toegewezen apparaten** > **multi-** app:metvolume **regeling van media kunnen gebruikers het Media volume van het apparaat beheren met behulp van een schuif regelaar.** 
+- **Toegewezen apparaten** > **multi-** app: Schakel scherm beveiliging in, upload een aangepaste installatie kopie en bepaal wanneer de scherm beveiliging wordt weer gegeven.
 
 Ga naar [Android Enterprise-apparaatinstellingen om beperkingsfuncties toe te staan of te beperken met behulp van Intune](device-restrictions-android-for-work.md#dedicated-device-settings) om de huidige instellingen te zien.
 
@@ -167,11 +167,11 @@ U kunt Device Enrollment Program profielen instellen om de volgende schermen van
 - Schermtijd
 - Touch ID instellen
 
-Als u dit wilt doen, gaat u naar **Device Enrollment** > **Apple inschrijving** > **Program tokens** > kiest u een token > **profielen** > Kies een profiel > **Eigenschappen** > **bewerken** naast de **aanpassing**van de Configuratieassistent.
-Zie [een Apple-inschrijvings profiel maken ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)voor meer informatie over het aanpassen van de Configuratieassistent.
+Als u dit wilt doen, **gaat u**naar  > **apparaatregistratie inschrijvings programma-**  >  tokens van Apple Enrollment **> kiest u een token** > **Profielen** > Kies een profiel > **eigenschappen** > **bewerken** naast aanpassingvan**de Configuratieassistent.**
+Zie [een Apple-inschrijvings profiel ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)maken voor meer informatie over het aanpassen van de Configuratieassistent.
 
 ### <a name="android-enrollment-device-administrator-support----4869749----"></a>Ondersteuning voor Android-registratie apparaat beheerder <!-- 4869749  -->
-De optie registratie voor Android-apparaten beheerder wordt toegevoegd aan de registratie pagina van ****  > Android (intune-inschrijving voor**Android**-**apparaten** > ). Android-Apparaatbeheer wordt standaard ingeschakeld voor alle tenants.  
+De optie registratie voor Android-apparaten beheerder wordt toegevoegd aan de inschrijvings pagina**van Android**(intune  > **Device Enrollment**Android >  **inschrijving**). Android-Apparaatbeheer wordt standaard ingeschakeld voor alle tenants.  
 
 ### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>Voor iOS-apparaten past u het scherm voor inschrijvings proces van de Bedrijfsportal aan <!-- 4394993  -->
 Met prijs verlaging kunt u het privacy-scherm van de Bedrijfsportal aanpassen dat eind gebruikers te zien krijgen tijdens de iOS-registratie. U kunt met name de lijst met dingen aanpassen die uw organisatie niet kan zien of op het apparaat kan doen.
