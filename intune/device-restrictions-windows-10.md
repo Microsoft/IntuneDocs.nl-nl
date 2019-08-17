@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/18/2019
+ms.date: 08/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe155c5b2a18b1931894b05694b53bbc2c497e0b
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494489"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550171"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -57,13 +57,13 @@ Deze instellingen gebruiken de [beleid-CSP ApplicationManagement](https://docs.m
 - **Appgegevens installeren op systeemvolume**: Met **Blokkeren** kunnen apps geen gegevens opslaan op het systeemvolume van het apparaat. Met **Niet geconfigureerd** (standaard) kunnen apps gegevens op het systeemvolume van het apparaat opslaan.
 - **Apps installeren op systeemstation**: Met **Blokkeren** kunnen apps geen gegevens opslaan op het systeemstation van het apparaat. Met **Niet geconfigureerd** (standaard) kunnen apps gegevens op het systeemstation installeren.
 - **Game DVR** (alleen desktop): Met **Blokkeren** wordt het opnemen en uitzenden van Windows Game uitgeschakeld. Met **Niet geconfigureerd** (standaard) is het opnemen en uitzenden van games toegestaan.
-- **Apps uit de store alleen**: deze instelling bepaalt de gebruikerservaring wanneer gebruikers apps vanuit locaties anders dan de Microsoft Store installeren. Uw opties zijn:
+- **Alleen apps uit de Store: met**deze instelling bepaalt u de gebruikers ervaring wanneer gebruikers apps van andere locaties dan de Microsoft Store installeren. Uw opties zijn:
 
-  - **Niet geconfigureerd** (standaard): Hiermee kunnen eindgebruikers apps installeren vanuit locaties anders dan de Microsoft Store, met inbegrip van apps die zijn gedefinieerd in andere beleidsinstellingen.  
-  - **Overal**: schakelt aanbevelingen voor apps, en kunnen gebruikers apps installeren vanaf elke locatie.  
-  - **Alleen Store**: zorgt ervoor dat eindgebruikers alleen apps installeren uit de Microsoft Store.
-  - **Aanbevelingen**: bij het installeren van een app op het web die beschikbaar is in de Microsoft Store-, gebruikers zien een bericht die ze in de store downloaden aanbevelen.  
-  - **De voorkeur geeft aan Store**: waarschuwt gebruikers wanneer ze apps vanuit locaties anders dan de Microsoft Store installeren.
+  - **Niet geconfigureerd** (standaard): Hiermee kunnen eind gebruikers apps van andere locaties dan de Microsoft Store installeren, met inbegrip van de apps die zijn gedefinieerd in andere beleids instellingen.  
+  - **Overal**: schakelt de app-aanbevelingen uit en kunnen gebruikers apps vanaf elke locatie installeren.  
+  - **Alleen Store**: dwingt eind gebruikers alleen apps van de Microsoft Store te installeren.
+  - **Aanbevelingen**: wanneer u een app installeert vanaf het web dat beschikbaar is in de Microsoft Store, krijgen gebruikers een bericht te zien waarin wordt aanbevolen het te downloaden uit de Store.  
+  - Voor **keur voor Store**: waarschuwt gebruikers wanneer ze apps van andere locaties dan de Microsoft Store installeren.
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
@@ -429,7 +429,7 @@ Selecteer **OK** om uw wijzigingen op te slaan.
 
 Deze instellingen gebruiken de [beleid-CSP DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), waarbij ook de ondersteunde Windows-edities worden vermeld.
 
-- **Wachtwoord**: kies **Vereisen** om af te dwingen dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat. Met **Niet geconfigureerd** (standaard) is toegang tot het apparaat zonder een wachtwoord toegestaan. Van toepassing op lokale accounts alleen. Domein-wachtwoorden blijven geconfigureerd in de Active Directory (AD) en Azure AD.
+- **Wachtwoord**: kies **Vereisen** om af te dwingen dat de eindgebruiker een wachtwoord moet invoeren voor toegang tot het apparaat. Met **Niet geconfigureerd** (standaard) is toegang tot het apparaat zonder een wachtwoord toegestaan. Is alleen van toepassing op lokale accounts. Wacht woorden van domein accounts blijven geconfigureerd door Active Directory (AD) en Azure AD.
 
   - **Wachtwoordtype vereisen**: Kies het type wachtwoord. Uw opties zijn:
     - **Niet geconfigureerd**: Het wachtwoord kan cijfers en letters bevatten.
@@ -440,7 +440,7 @@ Deze instellingen gebruiken de [beleid-CSP DeviceLock](https://docs.microsoft.co
     > [!IMPORTANT]
     > Als de wachtwoordvereiste op een Windows-bureaublad wordt gewijzigd, heeft dit een invloed op gebruikers de volgende keer dat ze zich aanmelden, omdat het apparaat op dat moment van niet-actief naar actief gaat. Gebruikers met wachtwoorden die aan de vereisten voldoen, worden nog steeds gevraagd hun wachtwoord te wijzigen.
     
-  - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: Voer het aantal mislukte verificaties in dat is toegestaan voordat het apparaat kan worden gewist. Het maximum is 11 keer. Het geldige dat u invoert, is afhankelijk van de editie. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) bevat de ondersteunde waarden. Met `0` (nul) kan de functionaliteit voor het wissen van apparaten worden uitgeschakeld.
+  - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: Voer het aantal mislukte verificaties in dat is toegestaan voordat het apparaat kan worden gewist. Het maximum is 11 keer. Het geldige nummer dat u invoert, is afhankelijk van de editie. [DeviceLock/MAXDEVICEPASSWORDFAILEDATTEMPTS CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) vermeldt de ondersteunde waarden. Met `0` (nul) kan de functionaliteit voor het wissen van apparaten worden uitgeschakeld.
 
     Deze instelling heeft per editie een verschillend effect. Raadpleeg [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) voor meer informatie over deze instelling.
 
@@ -753,9 +753,6 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
   [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
 
-  > [!WARNING]
-  > Deze instelling in Intune in Azure Portal geeft mogelijk de status Mislukt weer. Dit is een fout in de rapportagefunctie. Nadat het gedrag is gereproduceerd en problemen zijn opgelost, moet de status eigenlijk Geslaagd zijn. Deze fout is in een volgende versie opgelost. Hoe lang dit duurt is onduidelijk, aangezien de tijdlijnen wijzigen. Updates voor deze functie worden aangekondigd in [In ontwikkeling voor Microsoft Intune](in-development.md).
-
 - **Type systeemscan dat moet worden uitgevoerd**: Plan een systeemscan, waaronder het scanniveau en de dag en tijd waarop de scan moet worden uitgevoerd. Uw opties zijn:
   - **Niet geconfigureerd**: er wordt geen systeemscan op het apparaat gepland. Eindgebruikers kunnen handmatig scans uitvoeren op dat apparaat als ze dat nodig of gewenst vinden.
   - **Uitschakelen**: Alle systeemscans op het apparaat worden uitgeschakeld. Selecteer deze optie als u een antivirusoplossing van een partner gebruikt om apparaten te scannen.
@@ -776,9 +773,6 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
-
-  > [!WARNING]
-  > Deze instelling in Intune in Azure Portal geeft mogelijk de status Mislukt weer. Dit is een fout in de rapportagefunctie. Nadat het gedrag is gereproduceerd en problemen zijn opgelost, moet de status eigenlijk Geslaagd zijn. Deze fout is in een volgende versie opgelost. Hoe lang dit duurt is onduidelijk, aangezien de tijdlijnen wijzigen. Updates voor deze functie worden aangekondigd in [In ontwikkeling voor Microsoft Intune](in-development.md).
 
 - **Mogelijk ongewenste toepassingen detecteren**: Kies het beveiligingsniveau dat moet worden ingesteld als Windows toepassingen detecteert die mogelijk ongewenst zijn. Uw opties zijn:
   - **Niet geconfigureerd** (standaard): De detectie van mogelijk ongewenste toepassingen is uitgeschakeld.

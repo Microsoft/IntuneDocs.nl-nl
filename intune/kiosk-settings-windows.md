@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
+ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046975"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69487758"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Instellingen voor apparaten met Windows 10 en hoger om ze als kiosk uit te voeren via Intune
 
@@ -66,9 +66,7 @@ Hiermee wordt slechts één app op het apparaat uitgevoerd.
     > [!NOTE]
     > Via deze instelling schakelt u de Microsoft Edge-browser in op het apparaat. Als u specifieke Microsoft Edge-instellingen wilt configureren, maakt u een apparaatconfiguratieprofiel (**Apparaatconfiguratie** > **Profielen** > **Profiel maken**  >  **Windows 10** voor platform > **Apparaatbeperkingen** >  **Microsoft Edge-browser**). De beschikbare instellingen worden in de [Microsoft Edge-browser](device-restrictions-windows-10.md#microsoft-edge-browser) vermeld en beschreven.
 
-    Selecteer **OK** om uw wijzigingen op te slaan.
-
-  - **Kioskbrowser toevoegen**: Selecteer **Browserinstellingen voor de kiosk**. Met deze instellingen beheert u een webbrowser-app op de kiosk. Zorg ervoor dat u de [Kioskbrowser-app](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) uit de Store ophaalt, deze aan Intune toevoegt als een [client-app](apps-add.md) en vervolgens de app aan de kioskapparaten toewijst.
+  - **Kioskbrowser toevoegen**: Selecteer **Browserinstellingen voor de kiosk**. Met deze instellingen beheert u een webbrowser-app op de kiosk. Zorg ervoor dat u de [kiosk browser-app](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) uit de Store haalt, voeg deze toe aan intune als een [client-app](apps-add.md). Wijs vervolgens de app toe aan de kiosk apparaten.
 
     Voer de volgende instellingen in:
 
@@ -91,15 +89,14 @@ Hiermee wordt slechts één app op het apparaat uitgevoerd.
       `http://bing.com`  
       `https://bing.com`  
       `http://contoso.com/*`  
-      `https://contoso.com/*`  
+      `https://contoso.com/*`
 
-    Selecteer **OK** om uw wijzigingen op te slaan.
+    > [!NOTE]
+    > Windows 10-kiosken met automatische logo's ingeschakeld in micro soft kiosk browser moet een offline licentie van de Microsoft Store voor bedrijven gebruiken. Deze vereiste is omdat automatisch aanmelden gebruikmaakt van een lokale gebruikers account zonder referenties voor Azure Active Directory (AD). Online licenties kunnen daarom niet worden geëvalueerd. Zie voor meer informatie het [distribueren van offline-Apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
 
   - **Een Store-app toevoegen**: selecteer **Een Store-app toevoegen** en kies een app uit de lijst.
 
     Worden er geen apps in de lijst weergegeven? Voeg er een aantal toe met behulp van de stappen in [Client-apps](apps-add.md).
-
-  Selecteer **OK** om uw wijzigingen op te slaan.
 
 ## <a name="multi-app-kiosks"></a>Kiosken voor meerdere apps
 
@@ -132,8 +129,6 @@ Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige ap
       > [!NOTE]
       > Via deze instelling schakelt u de Microsoft Edge-browser in op het apparaat. Als u specifieke Microsoft Edge-instellingen wilt configureren, maakt u een apparaatconfiguratieprofiel (**Apparaatconfiguratie** > **Profielen** > **Profiel maken**  >  **Windows 10** voor platform > **Apparaatbeperkingen** >  **Microsoft Edge-browser**). De beschikbare instellingen worden in de [Microsoft Edge-browser](device-restrictions-windows-10.md#microsoft-edge-browser) vermeld en beschreven.
 
-      Selecteer **OK** om uw wijzigingen op te slaan.
-
     - **Kioskbrowser toevoegen**: met deze instellingen beheert u een webbrowser-app in de kiosk. Implementeer met [Client-apps](apps-add.md) een webbrowser-app op de kioskapparaten.
 
       Voer de volgende instellingen in:
@@ -152,13 +147,12 @@ Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige ap
 
         Als u alleen bepaalde websites wilt toestaan, moet u een CSV-bestand uploaden dat een lijst met toegestane websites bevat. Als u geen CSV-bestand toevoegt, zijn alle websites toegestaan.
 
-      Selecteer **OK** om uw wijzigingen op te slaan.
+      > [!NOTE]
+      > Windows 10-kiosken met automatische logo's ingeschakeld in micro soft kiosk browser moet een offline licentie van de Microsoft Store voor bedrijven gebruiken. Deze vereiste is omdat automatisch aanmelden gebruikmaakt van een lokale gebruikers account zonder referenties voor Azure Active Directory (AD). Online licenties kunnen daarom niet worden geëvalueerd. Zie voor meer informatie het [distribueren van offline-Apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
 
   - **Toepassingen**
 
     - **Store-app toevoegen**: voeg een app toe uit de Microsoft Store voor Bedrijven. Als er geen apps worden weergegeven, kunt u apps aanschaffen en deze [aan Intune toevoegen](store-apps-windows.md). U kunt bijvoorbeeld Kiosk-Browser, Excel, OneNote en meer toevoegen.
-
-      Selecteer **OK** om uw wijzigingen op te slaan.
 
     - **Win32-app toevoegen**: een Win32-app is een traditionele bureaublad-app, zoals Visual Studio Code of Google Chrome. Voer de volgende eigenschappen in:
 
@@ -166,14 +160,10 @@ Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige ap
       - **Lokaal pad**: vereist. Voer het pad naar het uitvoerbare bestand in, zoals `C:\Program Files (x86)\Microsoft VS Code\Code.exe` of `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
       - **Model-id van de toepassingsgebruiker (AUMID)** : voer het model-id van de toepassingsgebruiker (AUMID) van de Win32-app in. Deze instelling bepaalt de indeling van de tegel na het opstarten op het bureaublad. Raadpleeg [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps) om deze id op te halen.
 
-      Selecteer **OK** om uw wijzigingen op te slaan.
-
     - **Toevoegen via AUMID**: gebruik deze optie om Postvak IN-apps voor Windows, zoals Kladblok of Calculator toe te voegen. Voer de volgende eigenschappen in:
 
       - **Toepassingsnaam**: vereist. Geef een naam op voor de toepassing.
       - **Model-id van toepassingsgebruiker (AUMID)** : vereist. Voer de AUMID van de Windows-app in. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) als u wilt weten hoe u aan deze id komt.
-
-      Selecteer **OK** om uw wijzigingen op te slaan.
 
     - **AutoLaunch**: optioneel. Kies de AutoLaunch-instelling om een toepassing automatisch te starten wanneer de gebruiker zich aanmeldt. Er kan slechts één app automatisch worden gestart.
     - **Tegelgrootte**: vereist. Kies een tegelgrootte Klein, Normaal, Breed of Groot voor de app.
@@ -186,8 +176,6 @@ Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige ap
 - **Windows-taakbalk**: kies of u wilt dat de taakbalk wordt **weergegeven** of **verborgen**. Standaard wordt de taakbalk niet weergegeven. Pictogrammen, zoals het Wi-Fi-pictogram, worden weergegeven, maar de instellingen kunnen niet worden gewijzigd door eindgebruikers.
 
 - **Toegang tot de map Downloads toestaan**: kies **Ja** om gebruikers toegang te verlenen tot de map Downloads in Windows Verkenner. Toegang tot de map Downloads is standaard uitgeschakeld. Deze functie wordt vaak gebruikt voor eindgebruikers om items te openen die zijn gedownload vanuit een browser.
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ## <a name="next-steps"></a>Volgende stappen
 

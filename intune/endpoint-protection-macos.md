@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756515"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960420"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Instellingen in Intune voor eindpuntbescherming in macOS  
 
@@ -82,6 +82,9 @@ Gebruik de firewall om verbindingen per toepassing te beheren, in plaats van per
 ## <a name="filevault"></a>FileVault  
 Zie [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) in de inhoud van Apple Developer voor meer informatie over de Apple FileVault-instellingen. 
 
+> [!IMPORTANT]  
+> Vanaf macOS 10,15 is door de FileVault-configuratie een door de gebruiker goedgekeurde MDM-inschrijving vereist. 
+
 - **FileVault**  
   U kunt de volledige schijf versleuteling *inschakelen* met behulp van XTS-AES 128 met FileVault op apparaten waarop macOS 10,13 of hoger wordt uitgevoerd.  
   - **Niet geconfigureerd**  
@@ -104,9 +107,9 @@ Zie [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fd
     **Standaard**: niet geconfigureerd  
 
      > [!IMPORTANT]  
-     > Er is een bekend probleem wanneer de instelling **prompt uitschakelen bij afmelden** is ingesteld op *inschakelen*. Als u deze *optie*inschakelt, moet de instelling voor het **aantal toegestane tijden** voor bypass worden ingesteld op een waarde en moet deze niet worden ingesteld als *niet geconfigureerd*. Als deze instelling is ingesteld op *niet geconfigureerd*, mislukt het profiel op het apparaat. In dit scenario rapporteert het apparaat het **samen vatting van een profiel status** als **fout** zonder meer informatie.
+     > Er is een bekend probleem wanneer de instelling **Vraag bij afmelden uitschakelen** is ingesteld op *Inschakelen*. Als deze optie is ingesteld op *Ingeschakeld*, moet de instelling voor **Toegestaan aantal keren voor overslaan** worden ingesteld op een waarde en niet worden ingesteld op *Niet geconfigureerd*. Als de optie is ingesteld op *Niet geconfigureerd*, mislukt het profiel op het apparaat. In dit scenario wordt gemeld dat het een **Overzicht profielstatus** betreft met de status **Fout**, zonder nadere informatie.
      > 
-     > Wanneer het uitschakelen van de **prompt bij afmelden** is ingesteld op *niet geconfigureerd*, kan het **aantal keren dat bypass mag** worden omzeild *niet worden geconfigureerd* of een waarde hebben.  
+     > Als **Vraag bij afmelden uitschakelen** is ingesteld op *Niet geconfigureerd*, kan **Toegestaan aantal keren voor overslaan** zijn ingesteld op *Niet geconfigureerd* of op een waarde.  
      > 
      > Dit probleem wordt opgelost in een toekomstige update. 
 

@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc193c80960872cc3a0e25438432195de3a7c34
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
-ms.translationtype: HT
+ms.openlocfilehash: 527d71f0e48627498b05af8ee497579c648d3156
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783214"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960552"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -1726,7 +1726,7 @@ Schakel standaardinschrijving in aan de hand van de volgende stappen:
 
 1. Als ADAL in uw app is geïntegreerd of als u eenmalige aanmelding moet inschakelen, moet u [ADAL configureren](#configure-azure-active-directory-authentication-library-adal) volgens [algemene ADAL-configuratie](#common-adal-configurations) nummer 2. Als dit niet het geval is, kunt u deze stap overslaan.
    
-2. Schakel standaardinschrijving in door de volgende waarde in het manifest in te voeren:
+2. Schakel standaard inschrijving in door de volgende waarde in het manifest toe te `<application>` voegen onder de-tag:
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
@@ -1735,7 +1735,7 @@ Schakel standaardinschrijving in aan de hand van de volgende stappen:
    > [!NOTE] 
    > Dit moet de enige MAM-WE-integratie in de app zijn. Als er andere pogingen zijn gedaan om MAMEnrollmentManager-API's aan te roepen, treden er conflicten op.
 
-3. U schakelt vereist MAM-beleid in door de volgende waarde in het manifest in te voeren:
+3. Schakel het vereiste mam-beleid in door de volgende waarde toe te voegen aan het manifest onder de `<application>` -tag:
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
