@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 08/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 745bd930e43c9d034f66f6d529b489308a1bfe23
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1d341aeace950f62ae699aa7760a65c0fd2f74fa
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050282"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550059"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Wi-Fi-instellingen toevoegen in Microsoft Intune voor Android-apparaten
 
@@ -34,70 +34,62 @@ In dit artikel worden deze instellingen beschreven.
 
 [Maak een apparaatprofiel](device-profile-create.md).
 
-## <a name="basic-profile"></a>Basic-profiel
+## <a name="basic"></a>Eenvoudig
 
 - **Wi-Fi-type**: kies **Basic**.
-- **SSID**: afkorting voor **Service Set Identifier**. Deze instelling is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken.
+- **SSID**: Voer de **serviceset-id**in. Dit is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de **netwerknaam** die u hebt geconfigureerd wanneer ze de verbinding kiezen.
 - **Automatisch verbinding maken**: kies **Inschakelen** om automatisch verbinding te maken met dit netwerk wanneer het apparaat binnen het bereik daarvan is. Kies **Uitschakelen** om te voorkomen dat apparaten automatisch verbinding maken.
 - **Verborgen netwerk**: kies **Inschakelen** om te voorkomen dat dit netwerk op het apparaat wordt weergegeven in de lijst met beschikbare netwerken. De SSID wordt niet verzonden. Kies **Uitschakelen** om dit netwerk in de lijst met beschikbare netwerken op het apparaat weer te geven.
 
-## <a name="enterprise-profile"></a>Enterprise-profiel
+## <a name="enterprise"></a>Zakelijk
 
 - **Wi-Fi-type**: kies **Enterprise**.
-- **SSID**: afkorting voor **Service Set Identifier**. Deze instelling is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken.
+- **SSID**: Voer de **serviceset-id**in. Dit is de echte naam van het draadloze netwerk waarmee apparaten verbinding maken. Gebruikers zien echter alleen de **netwerknaam** die u hebt geconfigureerd wanneer ze de verbinding kiezen.
 - **Automatisch verbinding maken**: kies **Inschakelen** om automatisch verbinding te maken met dit netwerk wanneer het apparaat binnen het bereik daarvan is. Kies **Uitschakelen** om te voorkomen dat apparaten automatisch verbinding maken.
 - **Verborgen netwerk**: kies **Inschakelen** om te voorkomen dat dit netwerk op het apparaat wordt weergegeven in de lijst met beschikbare netwerken. De SSID wordt niet verzonden. Kies **Uitschakelen** om dit netwerk in de lijst met beschikbare netwerken op het apparaat weer te geven.
 - **EAP-type**: kies het type Extensible Authentication Protocol (EAP) dat wordt gebruikt om beveiligde draadloze verbindingen te verifiëren. Uw opties zijn: 
 
   - **EAP-TLS**: voer ook het volgende in:
 
-    - **Vertrouwelijke server** - **Basiscertificaat voor servervalidatie**: kies een profiel voor een bestaand vertrouwd basiscertificaat. Dit certificaat wordt aangeboden aan de server wanneer de client verbinding met het netwerk maakt, en wordt gebruikt om de verbinding te verifiëren.
-
-      Selecteer **OK** om uw wijzigingen op te slaan.
+    - **Vertrouwelijke server** - **Basiscertificaat voor servervalidatie**: kies een profiel voor een bestaand vertrouwd basiscertificaat. Dit certificaat wordt aan de server gepresenteerd wanneer de client verbinding maakt met het netwerk. De verbinding wordt geverifieerd.
 
     - **Clientverificatie** - **Clientcertificaat voor clientverificatie (identiteitscertificaat)** : kies het profiel van het SCEP- of PKCS-clientcertificaat dat ook op het apparaat wordt geïmplementeerd. Dit certificaat is de identiteit die door het apparaat wordt gepresenteerd aan de server om de verbinding te verifiëren.
 
-      Selecteer **OK** om uw wijzigingen op te slaan.
+    - **Identiteitsprivacy (externe identiteit)** : voer de tekst in die wordt verzonden als reactie op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben, zoals `anonymous`. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.
 
   - **EAP-TTLS**: voer ook het volgende in:
 
-    - **Vertrouwelijke server** - **Basiscertificaat voor servervalidatie**: kies een profiel voor een bestaand vertrouwd basiscertificaat. Dit certificaat wordt aangeboden aan de server wanneer de client verbinding met het netwerk maakt, en wordt gebruikt om de verbinding te verifiëren.
+    - **Vertrouwelijke server** - **Basiscertificaat voor servervalidatie**: kies een profiel voor een bestaand vertrouwd basiscertificaat. Dit certificaat wordt aan de server gepresenteerd wanneer de client verbinding maakt met het netwerk. De verbinding wordt geverifieerd.
 
-      Selecteer **OK** om uw wijzigingen op te slaan.
-
-    - **Clientverificatie**: kies een **verificatiemethode**. Uw opties zijn:
+    - **Clientverificatie**: Kies een **verificatiemethode**. Uw opties zijn:
 
       - **Gebruikersnaam en wachtwoord**: de gebruiker wordt gevraagd om een gebruikersnaam en wachtwoord om de verbinding te verifiëren. Voer ook in:
-        - **Niet-EAP-methode (interne identiteit)** : kies hoe u de verbinding verifieert. Zorg ervoor dat u hetzelfde protocol kiest dat op uw Wi-Fi-netwerk is geconfigureerd.
+        - **Niet-EAP-methode (interne identiteit)** : kies hoe u de verbinding verifieert. Zorg ervoor dat u hetzelfde protocol kiest dat op uw Wi-Fi-netwerk is geconfigureerd. Uw opties zijn:
 
-          Uw opties: **niet-versleuteld wachtwoord (PAP)** , **Challenge Handshake Authentication Protocol (CHAP)** , **Microsoft CHAP (MS-CHAP)** of **Microsoft CHAP versie 2 (MS-CHAP v2)**
+          - **Niet-versleuteld wachtwoord (PAP)**
+          - **Challenge Henshake Authentication Protocol (CHAP)**
+          - **Microsoft CHAP (MS-CHAP)**
+          - **Microsoft CHAP versie 2 (MS-CHAP v2)**
 
       - **Certificaten**: kies het profiel van het SCEP- of PKCS-clientcertificaat dat ook op het apparaat is geïmplementeerd. Dit certificaat is de identiteit die door het apparaat wordt gepresenteerd aan de server om de verbinding te verifiëren.
-
-        Selecteer **OK** om uw wijzigingen op te slaan.
 
       - **Identiteitsprivacy (externe identiteit)** : voer de tekst in die wordt verzonden als reactie op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben, zoals `anonymous`. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.
 
   - **PEAP**: voer ook het volgende in:
 
-    - **Vertrouwelijke server** - **Basiscertificaat voor servervalidatie**: kies een profiel voor een bestaand vertrouwd basiscertificaat. Dit certificaat wordt aangeboden aan de server wanneer de client verbinding met het netwerk maakt, en wordt gebruikt om de verbinding te verifiëren.
+    - **Vertrouwelijke server** - **Basiscertificaat voor servervalidatie**: kies een profiel voor een bestaand vertrouwd basiscertificaat. Dit certificaat wordt aan de server gepresenteerd wanneer de client verbinding maakt met het netwerk. De verbinding wordt geverifieerd.
 
-      Selecteer **OK** om uw wijzigingen op te slaan.
-
-    - **Clientverificatie**: kies een **verificatiemethode**. Uw opties zijn:
+    - **Clientverificatie**: Kies een **verificatiemethode**. Uw opties zijn:
 
       - **Gebruikersnaam en wachtwoord**: de gebruiker wordt gevraagd om een gebruikersnaam en wachtwoord om de verbinding te verifiëren. Voer ook in:
-        - **Niet-EAP-methode voor verificatie (interne identiteit)** : kies hoe u de verbinding verifieert. Zorg ervoor dat u hetzelfde protocol kiest dat op uw Wi-Fi-netwerk is geconfigureerd.
+        - **Niet-EAP-methode voor verificatie (interne identiteit)** : kies hoe u de verbinding verifieert. Zorg ervoor dat u hetzelfde protocol kiest dat op uw Wi-Fi-netwerk is geconfigureerd. Uw opties zijn:
 
-          Uw opties zijn: **Geen** of **Microsoft CHAP versie 2 (MS-CHAP v2)**
+          - **Geen**
+          - **Microsoft CHAP versie 2 (MS-CHAP v2)**
 
       - **Certificaten**: kies het profiel van het SCEP- of PKCS-clientcertificaat dat ook op het apparaat is geïmplementeerd. Dit certificaat is de identiteit die door het apparaat wordt gepresenteerd aan de server om de verbinding te verifiëren.
 
-        Selecteer **OK** om uw wijzigingen op te slaan.
-
       - **Identiteitsprivacy (externe identiteit)** : voer de tekst in die wordt verzonden als reactie op een EAP-identiteitsaanvraag. Deze tekst kan elke waarde hebben, zoals `anonymous`. Tijdens verificatie wordt deze anonieme identiteit in eerste instantie verzonden en wordt deze gevolgd door de echte identificatie in een beveiligde tunnel.
-
-Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt gemaakt en wordt weergegeven in de lijst met profielen.
 
 ## <a name="next-steps"></a>Volgende stappen
 
@@ -107,4 +99,4 @@ Het profiel is gemaakt, maar er gebeurt niets. Vervolgens [wijst u dit profiel t
 
 - [Overzicht Wi-Fi-instellingen](wi-fi-settings-configure.md), met inbegrip van andere platformen.
 
-- Gebruikt u Android Enterprise- of Android-Kiosk-apparaten? Zo ja, raadpleeg dan [Wi-Fi-instellingen voor apparaten met Android Enterprise en Android Kiosk](wi-fi-settings-android-enterprise.md).
+- Gebruikt u Android Enterprise- of Android-Kiosk-apparaten? Zo ja, raadpleeg dan [Wifi-instellingen voor apparaten met Android Enterprise en toegewezen apparaten](wi-fi-settings-android-enterprise.md).

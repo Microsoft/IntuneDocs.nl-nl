@@ -68,7 +68,7 @@ Dit is normaal. Met Google kan de fabrieks instellingen van het werk profiel nie
 Het intrekken van toegangs tokens wordt niet ingetrokken omdat een apparaat buiten gebruik wordt gesteld. U kunt beleid voor voorwaardelijke toegang gebruiken om dit probleem te verhelpen.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>Hoe kan ik een actie buiten gebruik stellen/wissen bewaken nadat deze is uitgegeven?
-Ga naar ****  > **apparaat acties**van intune-**apparaten** > .
+Ga naar  > **apparaat acties**van **intune**-**apparaten** > .
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>Waarom wordt soms voor onbepaalde tijd weer gegeven als in behandeling?
 Apparaten rapporteren hun status niet altijd terug naar de intune-service voordat het opnieuw instellen werd gestart. De actie wordt dus weer gegeven als in behandeling. Als u hebt bevestigd dat de actie is geslaagd, verwijdert u het apparaat uit de service.

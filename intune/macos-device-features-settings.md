@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 08/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1826498b3bfa2191900d7574f79051af8f758558
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 63f2832dd321425efe8092f1bb12dd0d479ef71b
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041704"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549935"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Instellingen van apparaatfuncties voor macOS in Intune
 
@@ -65,6 +65,19 @@ Om AirPrinter-servers toe te voegen, hebt u het IP-adres van de printer, het bro
    Noteer het IP-adres. Er wordt bijvoorbeeld iets in de trant van `PING myprinter.local (10.50.25.21)` geretourneerd.
 
 4. Gebruik de waarden van het IP-adres en het bronpad. In dit voorbeeld is het IP-adres `10.50.25.21` en het bronpad `/ipp/port1`.
+
+## <a name="login-items"></a>Aanmeldings items
+
+- **Bestanden, mappen en aangepaste apps**: Voeg het pad **toe** van een bestand, map, aangepaste app of systeem-app die u wilt openen wanneer een gebruiker zich aanmeldt bij het apparaat. Systeem-apps of apps die zijn gebouwd of aangepast voor uw organisatie, bevinden zich doorgaans in de `Applications` map, met een pad dat `/Applications/AppName.app`vergelijkbaar is met. 
+
+  U kunt veel bestanden, mappen en apps toevoegen. Voer bijvoorbeeld het volgende in:  
+  
+  - `/Applications/Calculator.app`
+  - `/Applications`
+  - `/Applications/Microsoft Office/root/Office16/winword.exe`
+  - `/Users/UserName/music/itunes.app`
+  
+  Zorg ervoor dat u het juiste pad opgeeft bij het toevoegen van een app, map of bestand. Niet alle items bevinden zich `Applications` in de map. Als een gebruiker een item verplaatst van de ene locatie naar een andere, verandert het pad. Dit verplaatste item wordt niet geopend wanneer de gebruiker zich aanmeldt.
 
 ## <a name="login-window"></a>Aanmeldingsvenster
 
