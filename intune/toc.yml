@@ -665,6 +665,8 @@
                   href: app-protection-policies-validate.md
                 - name: Beveiligingsbeleid leveren voor apps
                   href: app-protection-policy-delivery.md
+                - name: App-extensies beveiligen
+                  href: app-protection-policy-extensions.md
                 - name: Gebruikersstatus voor app-beveiliging bewaken
                   href: app-protection-policies-monitor.md
                 - name: Aan de slag met beveiligingsbeleid van Windows-gegevensbescherming voor apps

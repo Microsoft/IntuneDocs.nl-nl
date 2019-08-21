@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3c4b1541de3500089bafc388779a3cfe97fbd29
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756574"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68993706"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Problemen met inschrijving van Windows-apparaten in Microsoft Intune oplossen
 
@@ -46,8 +46,8 @@ Verzamel de volgende informatie over het probleem:
 
 ### <a name="this-user-is-not-authorized-to-enroll"></a>Deze gebruiker is niet gemachtigd om in te schrijven.
 
-Fout 0x801c003: deze gebruiker is niet gemachtigd om in te schrijven. U kunt dit opnieuw proberen of contact opnemen met de systeem beheerder met de fout code (0x801c0003). "
-Fout 80180003: Er is iets misgegaan. Deze gebruiker is niet gemachtigd om in te schrijven. U kunt dit opnieuw proberen of contact opnemen met de systeem beheerder m "
+Fout 0x801c003: deze gebruiker is niet gemachtigd om in te schrijven. U kunt dit opnieuw proberen of contact opnemen met de systeembeheerder met de foutcode (0x801c0003) "
+Fout 80180003: Er is iets misgegaan. Deze gebruiker is niet gemachtigd om in te schrijven. U kunt dit opnieuw proberen of contact opnemen met de systeembeheerder met de foutcode 80180003 "
 
 **Oorzaak:** Een van de volgende voor waarden: 
 
@@ -60,31 +60,31 @@ Er zijn verschillende mogelijke oplossingen voor dit probleem:
 
 ##### <a name="remove-devices-that-were-enrolled"></a>Apparaten verwijderen die zijn geregistreerd
 1. Meld u aan bij [Azure Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).    
-2. Ga naar **gebruikers** > van**alle gebruikers**.    
+2. Ga naar **gebruikers** > van**alle gebruikers**.    
 3. Selecteer het betrokken gebruikers account en klik vervolgens op **apparaten**.    
 4. Selecteer alle ongebruikte of ongewenste apparaten en klik vervolgens op **verwijderen**. 
 
-##### <a name="increase-thedevice-enrollment-limit"></a>Verhoog de limiet voor apparaatinschrijvingen
+##### <a name="increase-the-device-enrollment-limit"></a>Verhoog de limiet voor apparaatinschrijvingen
 
 > [!NOTE]
 > Deze methode verhoogt de registratie limiet voor apparaten voor alle gebruikers, niet alleen de betrokken gebruiker.
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
-2. Ga naar **inschrijvings beperkingen**voor **apparaatregistratie** >en selecteer vervolgens beperkingen voor het **aantal apparaten**.    
+2. Ga naar**inschrijvings beperkingen**voor **apparaatregistratie** > en selecteer vervolgens beperkingen voor het **aantal apparaten**.    
 3. Verhoog de waarde van de limiet van het **apparaat**. 
 
-##### <a name="checkdevice-type-restrictions"></a>Beperkingen voor apparaattypen controleren
-1. Meld u aan bij de  [Intune-portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)  met een account voor globale beheerders.
-2. Ga naar**inschrijvings beperkingen**voor **apparaatregistratie** > en selecteer vervolgens de **standaard** beperking onder **beperkingen**voor het apparaattype.    
-3. Selecteer **platforms**en selecteer vervolgens **toestaan** voor **Windows (MDM)** .
+##### <a name="check-device-type-restrictions"></a>Beperkingen voor apparaattypen controleren
+1. Meld u aan bij de [Intune-portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) met een account voor globale beheerders.
+2. Ga naar**inschrijvings beperkingen**voor **apparaatregistratie** > en selecteer vervolgens de **standaard** beperking onder **beperkingen**voor het apparaattype.    
+3. Selecteer **platforms**en selecteer vervolgens **toestaan** voor **Windows (MDM)** .
 
     > [!IMPORTANT]
-    > Als de huidige instelling al is **toegestaan**, wijzigt u deze in **blok keren**, slaat u de instelling op en wijzigt u deze weer in **toestaan** en slaat u de instelling opnieuw op. Hiermee wordt de instelling voor inschrijving opnieuw ingesteld.
+    > Als de huidige instelling al is **toegestaan**, wijzigt u deze in **blok keren**, slaat u de instelling op en wijzigt u deze weer in **toestaan** en slaat u de instelling opnieuw op. Hiermee wordt de instelling voor inschrijving opnieuw ingesteld.
 
 4. Wacht ongeveer 15 minuten en schrijf het betreffende apparaat vervolgens opnieuw in.    
 
 ##### <a name="upgrade-windows-10-home"></a>Windows 10-start pagina upgraden
-[Voer een upgrade uit van Windows 10 Home naar Windows 10 Pro](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro) of een hogere editie. 
+Voer een [upgrade uit van Windows 10 Home naar Windows 10 Pro](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro) of een hogere editie. 
 
 
 
@@ -92,17 +92,17 @@ Er zijn verschillende mogelijke oplossingen voor dit probleem:
 
 Fout 0x801c0003: ' deze gebruiker is niet gemachtigd om in te schrijven. U kunt het opnieuw proberen of contact opnemen met de systeem beheerder met de fout code 801c0003. "
 
-**Oorzaak:** De **gebruikers kunnen lid worden van apparaten met de Azure AD** -instelling is ingesteld op **geen**. Zo voor komt u dat nieuwe gebruikers hun apparaten kunnen toevoegen aan Azure AD. Daarom mislukt de intune-inschrijving.
+**Oorzaak:** De **gebruikers kunnen lid worden van apparaten met de Azure AD** -instelling is ingesteld op **geen**. Zo voor komt u dat nieuwe gebruikers hun apparaten kunnen toevoegen aan Azure AD. Daarom mislukt de intune-inschrijving.
 
 #### <a name="resolution"></a>Oplossing
-1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
-2. Ga naar de**Apparaatinstellingen**van **Azure Active Directory** > **apparaten** .>     
-3. Stel  **Gebruikers mogen apparaten aan Azure AD toevoegen** in op **Alle**.    
+1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
+2. Ga naar de**Apparaatinstellingen**van **Azure Active Directory** > **apparaten** > .    
+3. Stel **Gebruikers mogen apparaten aan Azure AD toevoegen** in op **Alle**.    
 4. Schrijf het apparaat opnieuw in.   
 
 ### <a name="the-device-is-already-enrolled"></a>Het apparaat is al Inge schreven.
 
-Fout 8018000a: er is iets verkeerd gegaan. Het apparaat is al Inge schreven.  U kunt contact opnemen met de systeem beheerder met de fout code 8018000a. "
+Fout 8018000a: er is iets verkeerd gegaan. Het apparaat is al Inge schreven.  U kunt contact opnemen met de systeem beheerder met de fout code 8018000a. "
 
 **Oorzaak:** Een van de volgende voor waarden is waar:
 - Een andere gebruiker heeft het apparaat al Inge schreven bij intune of het apparaat is toegevoegd aan Azure AD. Als u wilt weten of dit het geval is, gaat u naar **instellingen** > **accounts** > **werk toegang**. Zoek naar een bericht dat er ongeveer als volgt uitziet: ' een andere gebruiker op het systeem is al verbonden met een werk-of school account. Verwijder die werk-of school verbinding en probeer het opnieuw. "    
@@ -136,7 +136,7 @@ Wijs een geldige intune-licentie toe aan de gebruiker en schrijf het apparaat in
 ### <a name="looks-like-the-mdm-terms-of-use-endpoint-is-not-correctly-configured"></a>Het eind punt voor MDM-gebruiks voorwaarden is niet juist geconfigureerd.
 
 **Oorzaak:** Een van de volgende voor waarden is waar: 
- - U gebruikt voor het beheer van mobiele apparaten (MDM) voor Office 365 en intune op de Tenant, en de gebruiker die het apparaat probeert te registreren, heeft geen geldige intune-licentie of een Office 365-licentie.     
+ - U gebruikt voor het beheer van mobiele apparaten (MDM) voor Office 365 en intune op de Tenant, en de gebruiker die het apparaat probeert te registreren, heeft geen geldige intune-licentie of een Office 365-licentie.     
 - De MDM-voor waarden in azure AD zijn leeg of bevatten niet de juiste URL.    
 
 #### <a name="resolution"></a>Oplossing
@@ -144,18 +144,18 @@ Wijs een geldige intune-licentie toe aan de gebruiker en schrijf het apparaat in
 Gebruik een van de volgende methoden om dit probleem op te lossen: 
  
 ##### <a name="assign-a-valid-license-to-the-user"></a>Een geldige licentie toewijzen aan de gebruiker
-Ga naar het [Microsoft 365-beheer centrum](https://portal.office.com/adminportal/home)en wijs een intune-of een Office 365-licentie toe aan de gebruiker.
+Ga naar het [Microsoft 365-beheer centrum](https://portal.office.com/adminportal/home)en wijs een intune-of een Office 365-licentie toe aan de gebruiker.
 
-##### <a name="correct-themdm-terms-of-use-url"></a>De URL voor MDM-gebruiks voorwaarden corrigeren
-  1. Meld u aan bij de [Azure Portal](https://portal.azure.com/)en selecteer vervolgens **Azure Active Directory**.    
-  2. Selecteer **mobiliteit (MDM en mam)** en klik vervolgens op **Microsoft intune**.    
-  3. Selecteer **standaard MDM-Url's herstellen**, Controleer of de **URL voor MDM-gebruiks voorwaarden** is **https://portal.manage.microsoft.com/TermsofUse.aspx** ingesteld op.    
+##### <a name="correct-the-mdm-terms-of-use-url"></a>De URL voor MDM-gebruiks voorwaarden corrigeren
+  1. Meld u aan bij de [Azure-portal](https://portal.azure.com/) en selecteer vervolgens **Azure Active Directory**.    
+  2. Selecteer **mobiliteit (MDM en mam)** en klik vervolgens op **Microsoft intune**.    
+  3. Selecteer **standaard MDM-Url's herstellen**, Controleer of de **URL voor MDM-gebruiks voorwaarden** is **https://portal.manage.microsoft.com/TermsofUse.aspx** ingesteld op.    
   4. Kies **Opslaan**.    
 
 
 ### <a name="something-went-wrong"></a>Er is iets misgegaan.
 
-Fout 80180026: Er is iets misgegaan. Bevestig dat u de juiste aanmeldings gegevens gebruikt en dat uw organisatie deze functie gebruikt. U kunt dit opnieuw proberen of contact opnemen met de systeem beheerder met de fout code 80180026.
+Fout 80180026: Er is iets misgegaan. Bevestig dat u de juiste aanmeldings gegevens gebruikt en dat uw organisatie deze functie gebruikt. U kunt dit opnieuw proberen of contact opnemen met de systeembeheerder met de foutcode 80180026 "
 
 **Oorzaak:** Deze fout kan optreden wanneer u probeert een Windows 10-computer toe te voegen aan Azure AD en aan beide van de volgende voor waarden wordt voldaan: 
 - Automatische MDM-inschrijving is ingeschakeld in Azure.    
@@ -164,10 +164,10 @@ Fout 80180026: Er is iets misgegaan. Bevestig dat u de juiste aanmeldings gegeve
 #### <a name="resolution"></a>Oplossing
 Gebruik een van de volgende methoden om dit probleem op te lossen:
 
-##### <a name="disablemdm-automatic-enrollment-in-azure"></a>Schakel automatische inschrijving voor MDM in azure uit.
-1. Meld u aan bij de [Azure Portal](https://portal.azure.com/).    
-2. Ga naar **Azure Active Directory** > **Mobility (MDM en mam)**  > **Microsoft intune**.    
-3. Stel het **MDM-gebruikers bereik** in op **geen**, en klik vervolgens op **Opslaan**.    
+##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Schakel automatische inschrijving voor MDM in azure uit.
+1. Meld u aan bij [Azure Portal](https://portal.azure.com/).    
+2. Ga naar **Azure Active Directory** > **Mobility (MDM en mam)**  > **Microsoft intune**.    
+3. Stel het **MDM-gebruikers bereik** in op **geen**, en klik vervolgens op **Opslaan**.    
      
 ##### <a name="uninstall"></a>Verwijderen
 Verwijder de intune-PC-client of Configuration Manager client agent van de computer.    
@@ -179,34 +179,34 @@ Fout: de software kan niet worden geïnstalleerd, 0x80cf4017.
 **Oorzaak:** De client software is verouderd.
 
 #### <a name="resolution"></a>Oplossing
-1. Meld u aan bij [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com).    
-2. Ga naar **admin** > **client software down load**en klik vervolgens op **client software downloaden**.    
+1. Meld u aan bij [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com).    
+2. Ga naar **admin** > **client software down load**en klik vervolgens op **client software downloaden**.    
 3. Sla het installatie pakket op en installeer vervolgens de client software. 
 
 
 ### <a name="the-account-certificate-is-not-valid-and-may-be-expired"></a>Het accountcertificaat is niet geldig en is mogelijk verlopen.
 
-Fout: ' het account certificaat is niet geldig en is mogelijk verlopen, 0x80cf4017 '.
+Fout: "Het accountcertificaat is niet geldig en is mogelijk verlopen, 0x80cf4017."
 
 **Oorzaak:** De client software is verouderd.
 
 #### <a name="resolution"></a>Oplossing
-1. Meld u aan bij [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com).    
-2. Ga naar **admin** > **client software down load**en klik vervolgens op **client software downloaden**.    
+1. Meld u aan bij [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com).    
+2. Ga naar **admin** > **client software down load**en klik vervolgens op **client software downloaden**.    
 3. Sla het installatie pakket op en installeer vervolgens de client software.    
 
 ### <a name="your-organization-does-not-support-this-version-of-windows"></a>Deze versie van Windows wordt niet ondersteund in uw organisatie. 
 
-Fout: ' er is een probleem opgetreden. Deze versie van Windows wordt niet ondersteund in uw organisatie.  (0x80180014) "
+Fout: ' er is een probleem opgetreden. Deze versie van Windows wordt niet ondersteund in uw organisatie.  (0x80180014) "
 
 **Oorzaak:** Windows MDM-inschrijving is uitgeschakeld in uw intune-Tenant.
 
 #### <a name="resolution"></a>Oplossing
 Voer de volgende stappen uit om dit probleem in een zelfstandige intune-omgeving op te lossen: 
  
-1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
-2. Selecteer **intune** aan de linkerkant en ga vervolgens naar**registratie beperkingen**voor ****  > apparaatregistratie.    
-3. Klik in **beperkingen**voor het apparaattype op **platforms**en selecteer vervolgens **toestaan** voor **Windows (MDM)** .    
+1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
+2. Selecteer **intune** aan de linkerkant en ga vervolgens naar**registratie beperkingen**voor  > apparaatregistratie.    
+3. Klik **in beperkingen**voor het apparaattype op **platforms**en selecteer vervolgens **toestaan** voor **Windows (MDM)** .    
 4. Klik op **Opslaan**.    
  
 Voer de volgende stappen uit om dit probleem op te lossen in hybride MDM met intune en Configuration Manager: 
@@ -221,11 +221,11 @@ Voer de volgende stappen uit om dit probleem op te lossen in hybride MDM met int
 **Oorzaak:** De Azure AD-gebruikers accounts in het account pakket (Package_GUID) voor het betreffende inrichtings pakket mogen geen apparaten toevoegen aan Azure AD. Deze Azure AD-accounts worden automatisch gemaakt wanneer u een inrichtings pakket instelt met behulp van Windows Configuration Designer (WCD) of de app school Pc's instellen. deze accounts worden vervolgens gebruikt om de apparaten samen te voegen met Azure AD.
 
 #### <a name="resolution"></a>Oplossing
-1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
+1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
 2. Ga naar **Azure Active Directory > apparaten > Apparaatinstellingen**.    
-3. Stel in dat **gebruikers apparaten aan Azure AD** mogen **** toevoegen aan of **geselecteerd**.
+3. Stel in dat **gebruikers apparaten aan Azure AD mogen toevoegen** aan of **geselecteerd**.
 
-   Als u **geselecteerd**selecteert, klikt u op **geselecteerd**en klikt u vervolgens op **leden toevoegen** om alle gebruikers toe te voegen die hun apparaten kunnen toevoegen aan Azure AD. Zorg ervoor dat alle Azure AD-accounts voor het inrichtings pakket zijn toegevoegd.
+   Als u **geselecteerd**selecteert, klikt u op **geselecteerd**en klikt u vervolgens op **leden toevoegen** om alle gebruikers toe te voegen die hun apparaten kunnen toevoegen aan Azure AD. Zorg ervoor dat alle Azure AD-accounts voor het inrichtings pakket zijn toegevoegd.
  
 Zie [een inrichtings pakket maken voor Windows 10](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package)voor meer informatie over het maken van een inrichtings pakket voor Windows Configuration Designer.
 
@@ -246,7 +246,7 @@ Wanneer u een Windows 10-apparaat automatisch probeert te registreren met behulp
     ```
 **Oorzaak:** Een van de volgende voor waarden is waar: 
 - De UPN bevat een niet-geverifieerd of niet-routeerbaar domein, zoals. local ( joe@contoso.localzoals).    
-- **Het MDM-gebruikers bereik** is ingesteld op **geen**. 
+- Het **MDM-gebruikers bereik** is ingesteld op **geen**. 
 
 #### <a name="resolution"></a>Oplossing
 Als de UPN een niet-geverifieerd of niet-routeerbaar domein bevat, voert u de volgende stappen uit: 
@@ -261,7 +261,7 @@ Als de UPN een niet-geverifieerd of niet-routeerbaar domein bevat, voert u de vo
     Start-ADSyncSyncCycle -PolicyType Delta
     ```
 
-Als het **MDM-gebruikers bereik** is ingesteld op **geen**, voert u de volgende stappen uit: 
+Als het **MDM-gebruikers bereik** is ingesteld op **geen**, voert u de volgende stappen uit: 
  
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com/) en selecteer vervolgens **Azure Active Directory**.
 2. Selecteer **mobiliteit (MDM en mam)** en selecteer vervolgens **Microsoft intune**.    
@@ -327,7 +327,7 @@ Zie [Deploying a kiosk using Windows auto pilot](https://blogs.technet.microsoft
 
 ### <a name="something-went-wrong-error-code-80070774"></a>Er is iets misgegaan. Foutcode 80070774.
 
-Fout 0x80070774: er is iets verkeerd gegaan. Bevestig dat u de juiste aanmeldings gegevens gebruikt en dat uw organisatie deze functie gebruikt. U kunt dit opnieuw proberen of contact opnemen met de systeem beheerder met de fout code 80070774.
+Fout 0x80070774: er is iets verkeerd gegaan. Bevestig dat u de juiste aanmeldings gegevens gebruikt en dat uw organisatie deze functie gebruikt. U kunt dit opnieuw proberen of contact opnemen met de systeembeheerder met de foutcode 80070774.
 
 Dit probleem treedt doorgaans op voordat het apparaat opnieuw wordt opgestart in een hybride Azure AD Auto Pilot-scenario, wanneer het apparaat een time-out heeft tijdens het eerste aanmeldings scherm. Dit betekent dat de domein controller niet kan worden gevonden of niet kan worden bereikt vanwege verbindings problemen. Of het apparaat heeft een status opgegeven die niet kan worden toegevoegd aan het domein.
 
@@ -335,7 +335,7 @@ Dit probleem treedt doorgaans op voordat het apparaat opnieuw wordt opgestart in
 
 #### <a name="resolution"></a>Oplossing
 
-1. Ga naar ****  >  de**Windows**-inschrijvings **** ****  >  > apparaten van intune-apparaten.
+1. Ga naar  >  de**Windows**-inschrijvings  > apparaten van intune-apparaten.
 2. Selecteer het apparaat waarop het probleem zich voordoet > Klik op het weglatings teken (...) aan de rechter kant.
 3. Selecteer **gebruiker niet toewijzen** en wacht totdat het proces is voltooid.
 4. Controleer of het hybride Azure AD Auto Pilot-profiel is toegewezen voordat u OOBE opnieuw probeert uit te voeren.
@@ -370,12 +370,12 @@ Description:
 
 Dit probleem wordt meestal veroorzaakt door onjuiste delegering van machtigingen voor de organisatie-eenheid waar de Windows auto pilot-apparaten worden gemaakt. Zie [de limiet voor het computer account in de organisatie-eenheid verg Roten](windows-autopilot-hybrid.md#increase-the-computer-account-limit-in-the-organizational-unit)voor meer informatie.
 
-1. Open **Active Directory: gebruikers en computers (DSA.msc)** .
+1. Open **Active Directory: gebruikers en computers (DSA.msc)**.
 2. Klik met de rechtermuisknop op de organisatie-eenheid die u gaat gebruiken om aan Hybrid Azure AD gekoppelde computers te maken > **Beheer delegeren**.
 3. Kies in de wizard **Overdracht van beheer** **Volgende** > **Toevoegen** > **Objecttypen**.
 4. Selecteer in het deelvenster **Objecttypen** het selectievakje **Computers** > **OK**.
 5. Voer in het deelvenster voor het selecteren van **Gebruikers**, **Computers** of **Groepen** in het vak **Te selecteren objectnamen invoeren** de naam in van de computer waarop de connector is geïnstalleerd.
-6. Selecteer **Namen controleren** om uw vermelding te valideren ****  > > op**volgende**.
+6. Selecteer **Namen controleren** om uw vermelding te valideren  > > op**volgende**.
 7. Selecteer **Een aangepaste taak maken om te delegeren** > **Volgende**.
 8. Selecteer het selectievakje **Alleen de volgende objecten in de map** en schakel vervolgens de selectievakjes **Computerobjecten**, **Geselecteerde objecten in deze map maken** en **Geselecteerde objecten in deze map verwijderen** in.
 9. Selecteer **Volgende**.

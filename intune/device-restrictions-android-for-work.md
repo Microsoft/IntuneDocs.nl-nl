@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ab90a36254de49eb27e326086ffb137c782005
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883421"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550183"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -85,13 +85,13 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
 
 - **Eén app**: gebruikers hebben slechts toegang tot één app op het apparaat. Wanneer het apparaat wordt gestart, wordt alleen de specifieke app gestart. Gebruikers kunnen geen nieuwe apps openen of de actieve app wijzigen.
 
-  **Stappen**
-  1. Kies **Beheerde app selecteren** en selecteer de beheerde Google Play-app in de lijst. 
+  - **Beheerde app selecteren**: Selecteer de beheerde Google Play-app in de lijst.
 
-      Als er geen apps worden vermeld, [voegt u enkele Android-apps toe](apps-add-android-for-work.md) aan het apparaat. Zorg ervoor dat u [de app toewijst](apps-deploy.md) aan de apparaatgroep die is gemaakt voor uw toegewezen apparaten.
+    Als er geen apps worden vermeld, [voegt u enkele Android-apps toe](apps-add-android-for-work.md) aan het apparaat. Zorg ervoor dat u [de app toewijst](apps-deploy.md) aan de apparaatgroep die is gemaakt voor uw toegewezen apparaten.
 
-  2. Kies **OK** > **OK** om de app toe te voegen.
-
+  > [!IMPORTANT]
+  > Wanneer u de kiosk modus van één app gebruikt, werken de apps voor kiezer/telefoon mogelijk niet goed. 
+  
 - **Meerdere apps**: gebruikers hebben toegang tot een beperkte set apps op het apparaat. Wanneer het apparaat wordt gestart, worden alleen de toegevoegde apps gestart. U kunt ook enkele webkoppelingen toevoegen die gebruikers kunnen openen. Wanneer het beleid wordt toegepast, zien gebruikers pictogrammen voor de toegestane apps op het startscherm.
 
   > [!IMPORTANT]
@@ -101,43 +101,65 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
   > 
   > De app **Managed Home Screen** hoeft niet te zijn opgenomen in het configuratieprofiel, maar moet wel worden toegevoegd als een client-app. Wanneer de app **Managed Home Screen** wordt toegevoegd als een client-app, worden andere apps die u aan het configuratieprofiel toevoegt, weergegeven als pictogrammen in de app **Managed Home Screen**. 
   >
-  > Wanneer u de kiosk modus van meerdere apps met het beheerde Start scherm gebruikt, werken de apps in de telefoon kiezer mogelijk niet goed. 
+  > Wanneer u de kiosk modus van meerdere apps gebruikt, werken de apps voor kiezer/telefoon mogelijk niet goed. 
 
-  - Kies **Toevoegen** en selecteer uw apps in de lijst.
+  - **Toevoegen**: Selecteer uw apps in de lijst.
 
     Als de app **Managed Home Screen** niet wordt vermeld, [voegt u deze toe vanuit Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Zorg ervoor dat u [de app toewijst](apps-deploy.md) aan de apparaatgroep die is gemaakt voor uw toegewezen apparaten.
 
     U kunt ook andere [Android-apps](apps-add-android-for-work.md) toevoegen aan het apparaat, evenals [web-apps](web-app.md) die zijn gemaakt door uw organisatie. Zorg ervoor dat u [de app toewijst](apps-deploy.md) aan de apparaatgroep die is gemaakt voor uw toegewezen apparaten.
 
-  - **Virtuele startknop**: kies **Inschakelen** om een startknop weer te geven op het toegewezen apparaat. Als deze knop wordt geselecteerd, gaan gebruikers terug naar het startscherm van het apparaat, zodat ze eenvoudig kunnen schakelen tussen apps. Op sommige Android-apparaten moeten gebruikers misschien omhoog vegen op het scherm om de startknop weer te geven. **Uitschakelen**: er wordt geen startknop weergegeven, wat betekent dat gebruikers de knop Terug moeten gebruiken om te schakelen tussen apps.
-  - **Kioskmodus verlaten**: kies **Inschakelen** om beheerders toestemming te geven de kioskmodus tijdelijk te onderbreken om het apparaat bij te werken. Voor gebruik van deze functie moet de beheerder het volgende doen: 
-  
-    1. Doorgaan met het selecteren van de knop Terug totdat de knop Kiosk verlaten wordt weergegeven. 
-    2. Hiermee wordt de knop geselecteerd en de pincode voor het **verlaten van de kioskmodus** ingevoerd.
-    3. Nadat de wijzigingen zijn aangebracht, de app **Managed Home Screen** selecteren. Met deze stap wordt het apparaat weer vergrendeld in de kioskmodus voor gebruik van meerdere apps. 
+  - **Knop voor virtuele introductie**: een knop met zachte sleutel waarmee gebruikers worden geretourneerd naar het beheerde Start scherm, zodat gebruikers tussen apps kunnen scha kelen. Uw opties zijn:
 
-    **Uitschakelen**: hiermee voorkomt u dat de kioskmodus kan worden onderbroken. Als de beheerder de knop Terug blijft selecteren en vervolgens de knop Kiosk verlaten selecteert, verschijnt er een bericht dat er een wachtwoordcode moet worden ingevoerd.
+    - **Niet geconfigureerd** (standaard): er wordt geen knop Start weer gegeven. Gebruikers moeten de knop terug gebruiken om tussen apps te scha kelen.
+    - **Swipe omhoog**: er wordt een start knop weer gegeven wanneer een gebruiker naar het apparaat wordt geveegd.
+    - **Zwevend**: toont een permanente, zwevende knop Start op het apparaat.
+
+  - **Kioskmodus verlaten**: kies **Inschakelen** om beheerders toestemming te geven de kioskmodus tijdelijk te onderbreken om het apparaat bij te werken. Voor gebruik van deze functie moet de beheerder het volgende doen:
+  
+    1. Doorgaan met het selecteren van de knop Terug totdat de knop **Kiosk verlaten** wordt weergegeven. 
+    2. Hiermee wordt de knop **Kiosk verlaten** geselecteerd en de pincode voor het **verlaten van de kioskmodus ingevoerd**.
+    3. Wanneer u klaar bent, selecteert u de beheerde app voor het **Start scherm** . Met deze stap wordt het apparaat weer vergrendeld in de kioskmodus voor gebruik van meerdere apps.
+
+      Als de instelling is ingesteld op **niet geconfigureerd**, kunnen beheerders de kiosk modus niet onderbreken. Als de beheerder de knop Terug blijft selecteren en vervolgens de knop **Kiosk verlaten** selecteert, verschijnt er een bericht dat er een wachtwoordcode moet worden ingevoerd.
 
     - **Code voor verlaten van kioskmodus**: voer een pincode van 4-6-cijfers in. De beheerder gebruikt deze pincode om de kioskmodus tijdelijk te onderbreken.
 
   - **URL voor aangepaste achtergrond**: voer een URL in voor het aanpassen van het achtergrondscherm op het toegewezen apparaat.
-    
+
     > [!NOTE]
     > In de meeste gevallen is het aan te raden om te beginnen met installatiekopieën van ten minste de volgende grootten:
     >
     > - Telefoon: 1080 x 1920 pixels
     > - Tablet: 1920 x 1080 pixels
-    >    
+    >
     > Voor de beste ervaring en heldere details is het aan te raden om per apparaatinstallatiekopie assets te maken voor de schermspecificaties.
     >
     > Moderne schermen hebben een hogere pixeldichtheid met de mogelijkheid om definitie-installatiekopieën gelijkwaardig aan 2K/4K weer te geven.
-  - **Wificonfiguratie**: Kies **Inschakelen** als eindgebruikers het apparaat mogen verbinden met verschillende wifinetwerken. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard): gebruikers mogen op het beheerde startscherm (in de taakvergrendelingsmodus) geen verbinding maken met wifinetwerken.
 
-    Meer informatie over de [taakvergrendelingsmodus](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (hiermee wordt een Android-website geopend).
+  - **Wi-Fi-configuratie**: Hiermee wordt het besturings element Wi-Fi weer gegeven op het beheerde Start scherm en kunnen eind gebruikers het apparaat verbinden met verschillende WiFi-netwerken. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard) geeft niet het besturings element Wi-Fi weer op het beheerde Start scherm. Hiermee voor komt u dat gebruikers verbinding kunnen maken met Wi-Fi-netwerken terwijl ze het beheerde Start scherm gebruiken.
 
-  - **Bluetooth-configuratie**: Kies **inschakelen** om eindgebruikers toe te staan Bluetooth te gebruiken op het apparaat en apparaten te koppelen via Bluetooth. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard): gebruikers kunnen op het beheerde startscherm (in de taakvergrendelingsmodus) geen Bluetooth configureren en geen apparaten koppelen. 
+  - **Bluetooth-configuratie**: **inschakelen** Hiermee wordt het Bluetooth-besturings element weer gegeven op het beheerde Start scherm en kunnen eind gebruikers apparaten koppelen via Bluetooth. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard) wordt het besturings element Bluetooth niet weer gegeven op het beheerde Start scherm. Hiermee wordt voor komen dat gebruikers Bluetooth-en koppelings apparaten configureren tijdens het gebruik van het beheerde Start scherm.
 
-    Meer informatie over de [taakvergrendelingsmodus](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (hiermee wordt een Android-website geopend).
+  - **Zaklantaarn toegang**: **inschakelen** Hiermee wordt het besturings element zaklantaarn in het beheerde Start scherm weer gegeven en kunnen eind gebruikers de zaklantaarn in-of uitschakelen. **Niet geconfigureerd** (standaard) geeft niet het zaklantaarn-besturings element weer op het beheerde Start scherm. Hiermee wordt voor komen dat gebruikers de zaklantaarn gebruiken terwijl ze het beheerde Start scherm gebruiken.
+
+  - **Volume regeling van media**: **inschakelen** geeft de volume regeling voor media weer op het beheerde Start scherm. Hiermee kunnen eind gebruikers het Media volume van het apparaat aanpassen met behulp van een schuif regelaar. **Niet geconfigureerd** (standaard) de volume regeling voor media op het beheerde Start scherm wordt niet weer gegeven. Hiermee wordt voor komen dat gebruikers het Media volume van het apparaat aanpassen tijdens het gebruik van het beheerde Start scherm, tenzij hun hardwareknoppen dit ondersteunen. 
+
+  - **Scherm beveiligings modus**: **inschakelen** geeft een scherm afbeelding weer op het beheerde Start scherm wanneer het apparaat is vergrendeld of een time-out optreedt. **Niet geconfigureerd** (standaard) toont geen scherm beveiliging op het beheerde Start scherm.
+
+    Wanneer deze functie is ingeschakeld, moet u ook het volgende configureren:
+
+    - **Aangepaste scherm beveiliging instellen afbeelding**: Voer de URL naar een aangepaste installatie kopie in. Voer bijvoorbeeld het volgende in:
+
+      - `http://www.contoso.com/image.jpg`
+      - `www.contoso.com/image.bmp`
+      - `https://www.contoso.com/image.html`
+
+      Als u geen URL opgeeft, wordt de standaard installatie kopie van het apparaat gebruikt, als er een standaard installatie kopie is.
+
+    - **Het aantal seconden dat het apparaat scherm beveiliging bevat voordat het scherm wordt uitgeschakeld**: Kies hoe lang het apparaat de scherm beveiliging weergeeft. Voer een waarde tussen 0-9999999 seconden in. De standaard `0` waarde is seconden. Als u niets opgeeft of op nul (`0`) instelt, wordt de scherm beveiliging actief totdat een gebruiker met het apparaat communiceert.
+    - **Aantal seconden dat het apparaat inactief is voordat scherm beveiliging wordt weer gegeven**: Kies hoe lang het apparaat inactief moet zijn voordat de scherm beveiliging wordt weer gegeven. Voer een waarde tussen 1-9999999 seconden in. De standaard `30` waarde is seconden. U moet een getal opgeven dat groter is dan`0`nul ().
+    - **Media detecteren vóór start scherm beveiliging**: **inschakelen** (standaard) de scherm beveiliging wordt niet weer gegeven als audio of video wordt afgespeeld op het apparaat. **Niet geconfigureerd** toont de scherm beveiliging, zelfs als audio of video wordt afgespeeld.
 
 ### <a name="device-password-settings"></a>Instellingen voor apparaatwachtwoord
 
@@ -255,7 +277,7 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
 - **Minimale wachtwoordlengte**: hiermee geeft u het minimale aantal tekens op waaruit het wachtwoord moet bestaan (**4**-**16**).
 - **Maximum aantal minuten van inactiviteit voordat het werkprofiel wordt vergrendeld**: selecteer de hoeveelheid tijd voordat het werkprofiel wordt vergrendeld. De gebruiker moet vervolgens zijn referenties invoeren om weer toegang te krijgen.
 - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: voer in hoe vaak een onjuist wachtwoord kan worden ingevoerd voordat het werkprofiel wordt gewist van het apparaat.
-- **Wachtwoord verloopt (dagen)** : hiermee geeft u het aantal dagen op totdat het wachtwoord van de eindgebruiker moet worden gewijzigd (van **1**-**255**).
+- **Wachtwoord verloopt (dagen)**: hiermee geeft u het aantal dagen op totdat het wachtwoord van de eindgebruiker moet worden gewijzigd (van **1**-**255**).
 - **Vereist wachtwoordtype**: selecteer het type wachtwoord dat moet worden ingesteld op het apparaat. U kunt kiezen uit:
   - **Standaardwaarde apparaat**
   - **Lage beveiligingsbiometrie**
@@ -276,7 +298,7 @@ Deze wachtwoordinstellingen zijn van toepassing op persoonlijke profielen op app
 - **Minimale wachtwoordlengte**: hiermee geeft u het minimale aantal tekens op waaruit het wachtwoord moet bestaan (**4**-**14**).
 - **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**: selecteer de hoeveelheid tijd voordat een inactief apparaat automatisch wordt vergrendeld.
 - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: voer in hoe vaak een onjuist wachtwoord kan worden ingevoerd voordat alle gegevens worden gewist van het apparaat.
-- **Wachtwoord verloopt (dagen)** : hiermee geeft u het aantal dagen op totdat het wachtwoord van de eindgebruiker moet worden gewijzigd (van **1**-**255**).
+- **Wachtwoord verloopt (dagen)**: hiermee geeft u het aantal dagen op totdat het wachtwoord van de eindgebruiker moet worden gewijzigd (van **1**-**255**).
 - **Vereist wachtwoordtype**: selecteer het type wachtwoord dat moet worden ingesteld op het apparaat. U kunt kiezen uit:
   - **Standaardwaarde apparaat**
   - **Lage beveiligingsbiometrie**
