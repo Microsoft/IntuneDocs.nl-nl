@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81e50c3f79ffe9a3b9bc8068d49ba966c35dbbfd
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 399b0c6065c51343e4802d4e8aec29381c6dc468
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649089"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861857"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Apparaten die aan hybride Azure AD zijn gekoppeld implementeren met Intune en Windows Autopilot
 U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn gekoppeld aan Hybrid Azure Active Directory (Azure AD). Volg hiervoor de stappen in dit artikel.
@@ -106,15 +106,14 @@ De organisatie-eenheid waaraan het recht is verleend om computers te maken, moet
 
 De Intune-connector voor Active Directory moet worden geïnstalleerd op een computer waarop Windows Server 2016 of later wordt uitgevoerd. De computer moet ook toegang hebben tot internet en uw Active Directory. Als u de schaal en beschikbaarheid wilt verhogen of meerdere Active Directory-domeinen wilt ondersteunen, kunt u in uw omgeving meerdere connectors installeren. Het is raadzaam om de connector te installeren op een server waarop geen andere Intune-connectors worden uitgevoerd.
 
-1. Zorg ervoor dat u een taalpakket hebt geïnstalleerd en geconfigureerd zoals staat beschreven in [Taalvereisten voor de Intune-connector (preview)](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector).
-2. Selecteer [Intune](https://aka.ms/intuneportal) **Apparaatregistratie** > **Windows-registratie** > **Intune-connector voor Active Directory (preview-versie)**  > **Connector toevoegen**. 
-3. Volg de instructies voor het downloaden van de connector.
-4. Open het gedownloade installatiebestand *ODJConnectorBootstrapper.exe* voor de connector om deze te installeren.
-5. Aan het einde van de installatie selecteert u **Configureren**.
-6. Selecteer **Aanmelden.**
-7. Voer de referenties in voor de rol gebruiker, globale beheerder of Intune-beheerder.  
+1. Selecteer [Intune](https://aka.ms/intuneportal) **Apparaatregistratie** > **Windows-registratie** > **Intune-connector voor Active Directory (preview-versie)**  > **Connector toevoegen**. 
+2. Volg de instructies voor het downloaden van de connector.
+3. Open het gedownloade installatiebestand *ODJConnectorBootstrapper.exe* voor de connector om deze te installeren.
+4. Aan het einde van de installatie selecteert u **Configureren**.
+5. Selecteer **Aanmelden.**
+6. Voer de referenties in voor de rol gebruiker, globale beheerder of Intune-beheerder.  
    Aan het gebruikersaccount moet een Intune-licentie zijn toegewezen.
-8. Ga naar **Apparaatregistratie** > **Windows-registratie** > **Intune-connector voor Active Directory (preview)** en controleer of de status **Actief** is.
+7. Ga naar **Apparaatregistratie** > **Windows-registratie** > **Intune-connector voor Active Directory (preview)** en controleer of de status **Actief** is.
 
 > [!NOTE]
 > Nadat u zich bij de Connector hebt aangemeld, kan het een aantal minuten duren voordat deze in [Intune](https://aka.ms/intuneportal) wordt weergegeven. De connector wordt alleen weergegeven als deze met de Intune-service kan communiceren.
