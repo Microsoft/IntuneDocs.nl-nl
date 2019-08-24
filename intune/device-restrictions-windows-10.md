@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550171"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998950"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -66,13 +66,6 @@ Deze instellingen gebruiken de [beleid-CSP ApplicationManagement](https://docs.m
   - Voor **keur voor Store**: waarschuwt gebruikers wanneer ze apps van andere locaties dan de Microsoft Store installeren.
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
-
-- **Herstart van apps forceren tijdens updatefout**: wanneer een app wordt gebruikt, kan deze mogelijk niet worden bijgewerkt. Gebruik deze instelling om een app te forceren opnieuw op te starten. **Niet geconfigureerd** (standaard) dwingt de apps niet om opnieuw op te starten. **Vereisen** stelt beheerders in staat om een herstart te forceren op een specifieke datum en tijd of volgens een terugkerend schema. Bij de instelling **Vereisen** dient u tevens de volgende gegevens in te voeren:
-
-  - **Startdatum/-tijd**: kies een specifieke datum en tijd op waarop de apps opnieuw worden opgestart.
-  - **Herhaling**: kies een dagelijkse, wekelijkse of maandelijkse herstart.
-
-  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 - **Gebruikersbesturingselement over installaties**: bij de instelling **Niet geconfigureerd** (standaard) voorkomt Windows Installer dat gebruikers de installatieopties wijzigen die normaal gesproken zijn gereserveerd voor systeembeheerders, zoals het invoeren van de map voor de installatie van de bestanden. **Blokkeren** stelt gebruikers in staat om deze installatieopties te wijzigen. Tevens worden enkele van de beveiligingsfuncties van Windows Installer omzeild.
 
