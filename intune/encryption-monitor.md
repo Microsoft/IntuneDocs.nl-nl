@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671044"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550113"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Apparaatversleuteling bewaken met Intune   
 
@@ -102,15 +102,15 @@ Wanneer u een apparaat selecteert in het versleutelingsrapport, wordt in Intune 
   Hieronder volgt een aantal voorbeelden van de statusdetails die in een Intune-rapport kunnen staan:  
   
   **macOS**:
-  - Het profiel kan op dit moment niet worden geïnstalleerd omdat er wordt gewacht op een vereiste.  
+  - De herstelsleutel is nog niet opgehaald en opgeslagen. Waarschijnlijk is het apparaat niet ontgrendeld of is het niet ingecheckt.  
  
-    *Overweeg het volgende: Dit resultaat betekent niet per se dat er sprake is van een fout, maar juist dat er een tijdelijke status is. Deze status kan het gevolg zijn van timing op het apparaat: de escrow voor herstelsleutels moet worden ingesteld voordat de versleutelingsaanvraag naar het apparaat wordt verzonden. De status kan ook aangeven dat het apparaat vergrendeld blijft of niet recent heeft ingecheckt bij Intune. Daarnaast is het, omdat de FileVault-versleuteling pas begint wanneer een apparaat is ingestoken (wordt opgeladen), mogelijk dat een gebruiker een herstelsleutel ontvangt voor een apparaat dat nog niet is versleuteld*.  
+    *Overweeg het volgende: dit resultaat betekent niet per se dat er sprake is van een fout, maar juist dat er een tijdelijke status is. Deze status kan het gevolg zijn van timing op het apparaat: de escrow voor herstelsleutels moet worden ingesteld voordat de versleutelingsaanvraag naar het apparaat wordt verzonden. Deze status kan ook aangeven dat het apparaat vergrendeld blijft of niet recent heeft ingecheckt bij Intune. Daarnaast is het, omdat de FileVault-versleuteling pas begint wanneer een apparaat is ingestoken (wordt opgeladen), mogelijk dat een gebruiker een herstelsleutel ontvangt voor een apparaat dat nog niet is versleuteld*.  
 
-  - Het FileVault-profiel is geïnstalleerd, maar FileVault is nog niet ingeschakeld op het apparaat.  
+  - De gebruiker stelt versleuteling uit of is momenteel bezig met versleuteling.  
  
     *Overweeg het volgende: de gebruiker heeft zich nog niet afgemeld na het ontvangen van de versleutelingsaanvraag; dit moet wel gebeuren, want anders kan FileVault het apparaat niet versleutelen. Het kan ook zijn dat de gebruiker het apparaat handmatig heeft ontsleuteld. Intune kan niet voorkomen dat een gebruiker zijn of haar apparaat ontsleutelt.*  
 
-  - FileVault is al ingeschakeld door de gebruiker en daardoor kan Intune het herstel niet beheren.  
+  - Het apparaat is al versleuteld. De gebruiker van het apparaat moet het apparaat ontsleutelen om door te gaan.  
  
     *Overweeg het volgende: Intune kan FileVault niet instellen op een apparaat dat al is versleuteld. In een dergelijk geval moet de gebruiker het apparaat handmatig ontsleutelen; daarna kan het pas worden beheerd met een apparaatconfiguratiebeleid en Intune*. 
  
@@ -118,9 +118,9 @@ Wanneer u een apparaat selecteert in het versleutelingsrapport, wordt in Intune 
  
     *Overweeg het volgende: vanaf macOS-versie 10.15 (Catalina) kan het gebruik van door de gebruiker goedgekeurde inschrijvingsinstellingen ertoe leiden dat gebruikers de FileVault-versleuteling handmatig moeten goedkeuren. Zie [Door gebruiker goedgekeurde registratie](macos-enroll.md) in de Intune-documentatie voor meer informatie*.  
 
-  - Het iOS-apparaat heeft een NotNow geretourneerd (het apparaat is vergrendeld).  
+  - Onbekend.  
 
-    *Overweeg het volgende: het apparaat is momenteel vergrendeld en Intune kan niet beginnen met het escrow- of versleutelingsproces. Zodra het apparaat is ontgrendeld, kan het proces worden voortgezet*.  
+    *Overweeg het volgende: een mogelijke oorzaak van een onbekende status is dat het apparaat is vergrendeld en dat het escrow- of versleutelingsproces niet kan worden gestart door Intune. Zodra het apparaat is ontgrendeld, kan het proces worden voortgezet*.  
 
   **Windows 10**:  
   - Volgens het BitLocker-beleid moeten gebruikers toestemming geven om de wizard BitLocker-stationsversleuteling te starten om het besturingssysteemvolume te versleutelen, maar de gebruiker heeft geen toestemming gegeven.  
@@ -161,7 +161,7 @@ Tijdens het weergeven van het deelvenster Versleutelingsrapport kunt u **Exporte
   
 ![Details exporteren](./media/encryption-monitor/export.png) 
  
-Dit rapport kan worden gebruikt bij het identificeren van problemen voor groepen apparaten. U kunt het rapport bijvoorbeeld gebruiken om een lijst macOS-apparaten te maken waarvoor staat geregistreerd dat *FileVault al is ingeschakeld door de gebruiker*; dit geeft aan dat de apparaten handmatig moeten worden ontsleuteld voordat Intune de FileVault-instellingen in beheer kan nemen.  
+Dit rapport kan worden gebruikt bij het identificeren van problemen voor groepen apparaten. U kunt het rapport bijvoorbeeld gebruiken om een lijst macOS-apparaten te maken waarvoor staat geregistreerd dat *FileVault al is ingeschakeld door de gebruiker*; dit geeft aan dat de apparaten handmatig moeten worden ontsleuteld voordat Intune de FileVault-instellingen kan beheren.  
  
 ## <a name="filevault-recovery-keys"></a>FileVault-herstelsleutels   
 Wanneer Intune een macOS-apparaat voor het eerst versleutelt met FileVault, wordt er een persoonlijke herstelsleutel gemaakt. Na het versleutelen wordt de persoonlijke sleutel één keer weergegeven aan de eindgebruiker.  
@@ -202,7 +202,7 @@ Intune biedt ondersteuning voor meerdere opties voor het vernieuwen en herstelle
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker-herstelsleutels  
 
-Intune biedt toegang tot de Azure AD-blade voor BitLocker, zodat u via de Intune-portal BitLocker-sleutel-id's en herstelsleutels voor uw Windows 10-apparaten kunt weergeven.  Een apparaat is alleen toegankelijk als de sleutels van dat apparaat naar Azure AD worden geborgd. 
+Intune biedt toegang tot de Microsoft Azure Active Directory-blade voor BitLocker, zodat u via de Intune-portal BitLocker-sleutel-id's en herstelsleutels voor uw Windows 10-apparaten kunt weergeven.  Een apparaat is alleen toegankelijk als de sleutels van dat apparaat naar Azure AD worden geborgd. 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), ga naar **Apparaten** en selecteer onder *Beheren* de optie **Alle apparaten**.  
 
 2. Selecteer een apparaat in de lijst en selecteer vervolgens onder *Monitor* **Herstelsleutels**.  

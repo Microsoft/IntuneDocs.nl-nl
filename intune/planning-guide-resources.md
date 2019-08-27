@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3ed61f556cadf3ba04f7c33fbede2102c94b18f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 886241dcde88765c4879357ee42b2b281e7f3408
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549311"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861876"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Aanvullende resources voor het plannen van uw Intune-implementatie
 
@@ -45,17 +45,14 @@ Hier volgt een lijst met tabelsjablonen voor elke sectie.
 | | Nalevingsbeleid | |
 | | Beleid voor voorwaardelijke toegang|-|
 
-
 ## <a name="further-reading"></a>Meer lezen
 
 Neem de volgende resources door voor aanvullende informatie die nuttig kan zijn tijdens het plannen, ontwerpen en implementeren van Intune.
 
-- [Microsoft Intune-documentatie](/intune/): het volledige aanbod van Intune-documentatie.
+- [Microsoft Intune-documentatie](http://docs.microsoft.com/intune/): het volledige aanbod van Intune-documentatie.
 
-- [Intune-blog](https://blogs.technet.microsoft.com/enterprisemobility/): berichten waarin wordt beschreven hoe Intune past in het grotere geheel van Enterprise Mobility.
+- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter): informatie over de methode van Microsoft met betrekking tot de beveiliging, privacy, naleving en transparantie in alle Microsoft-cloudproducten en -services.
 
-- [Microsoft Trust Center](http://www.microsoft.com/TrustCenter): informatie over de methode van Microsoft met betrekking tot de beveiliging, privacy, naleving en transparantie in alle Microsoft-cloudproducten en -services.
+- [Intune UserVoice](https://microsoftintune.uservoice.com/): wilt u een functie aanvragen of met andere klanten voor functies stemmen? Feedback geven over Intune via Uservoice. Wij luisteren naar u.
 
-- [Intune UserVoice](http://microsoftintune.uservoice.com/): wilt u een functie aanvragen of met andere klanten voor functies stemmen? Feedback geven over Intune via Uservoice. Wij luisteren naar u.
-
-- [Inschrijvingshandleiding](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT): een reeks documenten, waarin u eventueel wijzigingen kunt aanbrengen en die onderdeel uitmaken van uw communicatieplan voor uw eindgebruikers. Hierin wordt uitgelegd wat de gevolgen zijn als hun persoonlijke apparaat wordt ingeschreven in Intune.
+- [De communicatie plannen](migration-guide-communication-plan.md): het communicatieplan is een belangrijk element bij een overstap naar Intune. In dit artikel kunt u de Intune Adoption Kit downloaden die e-mailsjablonen, een handleiding voor Intune-inschrijving en koppelingen naar instructievideo's bevat om u te helpen bij het trainen van uw eindgebruikers voor de inschrijving.

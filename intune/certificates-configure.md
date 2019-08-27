@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80be1d39d9a562dbc13b9384c6256eb02c9ef50e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f13b5b92ca442f4b5ae05d3567f8385288d92909
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530555"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582930"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Een certificaatprofiel configureren voor uw apparaten in Microsoft Intune
 
@@ -88,30 +88,35 @@ Exporteer het certificaat van vertrouwde basiscertificeringsinstanties (CA) als 
 U importeert dit certificaat wanneer u een vertrouwd certificaatprofiel instelt.
 
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Stap 3: profielen voor vertrouwde certificaten maken
+
 Maak een profiel voor een vertrouwd certificaat voordat u een SCEP- of PKCS-certificaatprofiel kunt maken. Voor elk apparaatplatform is een vertrouwd certificaatprofiel en een SCEP- of PKCS-profiel vereist. De stappen voor het maken van vertrouwde certificaten zijn voor elk apparaatplatform ongeveer gelijk.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer **Apparaatconfiguratie** > **Beheren** > **Profielen** > **Profiel maken**.
-4. Voer een **naam** en een **beschrijving** in voor het vertrouwde certificaatprofiel.
-5. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform voor dit vertrouwde certificaat. Uw opties zijn:
+1. Selecteer in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) de optie **Apparaatconfiguratie** > **Beheren** > **Profielen** > **Profiel maken**.
+2. Voer de volgende eigenschappen in:
 
-    - **Android**
-    - **Android Enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 en hoger**
-    - **Windows 10 en hoger**
+    - **Naam**: Voer een beschrijvende naam in voor het profiel. Geef uw profielen een naam zodat u ze later eenvoudig kunt identificeren. Een goede profielnaam is bijvoorbeeld **Vertrouwd certificaatprofiel voor Android Enterprise-apparaten in zakelijk eigendom** of **Vertrouwd certificaatprofiel voor iOS-apparaten.**
+    - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
+    - **Platform**: Kies het platform van uw apparaten. Uw opties zijn:
 
-6. Kies in de vervolgkeuzelijst **Profieltype** de optie **Vertrouwd certificaat**.
-7. Blader naar het certificaat dat u hebt opgeslagen in [Stap 2: uw vertrouwde basis-CA-certificaat exporteren](#step-2-export-your-trusted-root-ca-certificate) en klik vervolgens op **OK**.
-8. Voor Windows 8.1- en Windows 10-apparaten selecteert u het **doelarchief** voor het vertrouwde certificaat vanuit:
+      - **Android**
+      - **Alleen Android Enterprise** >  **-apparaateigenaar**
+      - **Alleen Android Enterprise** >  **-werkprofiel**
+      - **iOS**
+      - **macOS**
+      - **Windows Phone 8.1**
+      - **Windows 8.1 en hoger**
+      - **Windows 10 en hoger**
 
-    - **Certificaatarchief van de computer – basis**
-    - **Certificaatarchief van de computer – tijdelijk**
-    - **Certificaatarchief van de gebruiker – tijdelijk**
+    - **Profieltype**: kies **Vertrouwd**certificaat.
 
-9. Als u klaar bent, kiest u **OK**, gaat u terug naar het deelvenster **Profiel maken** en kiest u **Maken**.
+3. Blader naar het certificaat dat u hebt opgeslagen in [Stap 2: uw vertrouwde basis-CA-certificaat exporteren](#step-2-export-your-trusted-root-ca-certificate) en klik vervolgens op **OK**.
+4. Voor Windows 8.1- en Windows 10-apparaten selecteert u het **doelarchief** voor het vertrouwde certificaat vanuit:
+
+    - **Certificaatarchief van de computer - basis** (SCEP)
+    - **Certificaatarchief van de computer - tijdelijk** (SCEP)
+    - **Certificaatarchief van de gebruiker - tijdelijk** (PKCS,SCEP)
+
+5. Als u klaar bent, kiest u **OK**, gaat u terug naar het deelvenster **Profiel maken** en kiest u **Maken**.
 
 Het profiel wordt gemaakt en wordt weergegeven in de lijst. Zie [Apparaatprofielen toewijzen](device-profile-assign.md) om dit profiel toe te wijzen aan groepen.
 
@@ -128,6 +133,7 @@ Zie een van de volgende artikelen voor meer informatie over het configureren en 
 Nadat u een vertrouwd certificaatprofiel hebt gemaakt, maakt u SCEP- of PKCS-certificaatprofielen voor elk platform dat u wilt gebruiken. Wanneer u een SCEP-certificaatprofiel maakt, geeft u een profiel voor een vertrouwd certificaat op voor datzelfde platform. Door deze stap worden de twee certificaatprofielen gekoppeld. U moet nog wel elk profiel afzonderlijk toewijzen.
 
 ## <a name="next-steps"></a>Volgende stappen
+
 [Apparaatprofielen toewijzen](device-profile-assign.md)  
 [S/MIME gebruiken om e-mailberichten te ondertekenen en te versleutelen](certificates-s-mime-encryption-sign.md)  
 [Externe certificeringsinstantie gebruiken](certificate-authority-add-scep-overview.md)

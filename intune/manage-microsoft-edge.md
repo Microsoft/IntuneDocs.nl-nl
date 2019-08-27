@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
-ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
+ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701017"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651180"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Internettoegang beheren met behulp van Microsoft Edge met Microsoft Intune
 
@@ -181,7 +181,22 @@ Gebruik het volgende sleutel-waardepaar om een snelkoppeling naar de startpagina
 |    Sleutel    |    Waarde    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.homepage   |    Geef een geldige URL op. Uit veiligheidsoogpunt worden onjuiste URL's geblokkeerd.<br>**Voorbeeld:**  <`https://www.bing.com`>
-    |
+
+## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Het logo en de merkkleur van uw organisatie configureren voor nieuwe tabbladen in Microsoft Edge
+
+Met deze instellingen kunt u de nieuwe tabbladpagina voor Microsoft Edge aanpassen om het logo en de kleur van uw organisatie weer te geven als de achtergrond van de pagina.
+
+Als u het logo en de kleur van uw organisatie wilt uploaden, moet u eerst de volgende stappen uitvoeren:
+- Ga binnen de Azure Portal naar Intune -> Client-apps -> Huisstijl en aanpassing -> Huisstijl van bedrijfsidentiteit
+- Als u het logo van uw merk wilt instellen, kiest u onder 'Weergeven' de optie 'Alleen bedrijfslogo'. Transparante achtergrondlogo's worden aanbevolen. 
+- Als u de achtergrondkleur van uw merk wilt instellen, kiest u onder 'Weergeven' de optie 'Themakleur'. Microsoft Edge past een lichtere tint van de kleur toe op de nieuwe tabbladpagina. Dit zorgt ervoor dat de pagina goed leesbaar is. 
+
+Gebruik vervolgens de volgende sleutel-/waardeparen om het merk van uw organisatie in Microsoft Edge weer te geven:
+
+|    Sleutel    |    Waarde    |
+|--------------------------------------------------------------------|------------|
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Beheerde bladwijzers configureren voor Microsoft Edge
 
@@ -232,7 +247,8 @@ U kunt verschillende URL-indelingen gebruiken om uw lijsten met toegestane/geblo
     |    `http://www.contoso.com`    |    Komt overeen met één pagina    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Komt overeen met één pagina    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
     |    `http://www.contoso.com/*;`   |    Komt overeen met alle URL's die beginnen met `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    Komt overeen met alle subdomeinen onder `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    Komt overeen met alle subdomeinen die eindigen op `contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    |    `http://*.contoso.com/*`    |    Komt overeen met alle subdomeinen onder `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`
+    |    `http://*contoso.com/*`    |    Komt overeen met alle subdomeinen die eindigen op `contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
     `http://www.contoso.com/images`    |    Komt overeen met een afzonderlijke map    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Komt overeen met één pagina, met gebruik van een poortnummer    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Komt overeen met een enkele, beveiligde pagina    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2019
+ms.date: 08/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dc28a614514bf9b1a4987976cb057529b75a5fc
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 75cdd958d9663d5b2d330a947a19963c219feaea
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66411999"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69545928"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Wi-Fi-instellingen toevoegen en gebruiken op uw apparaten in Microsoft Intune
 
@@ -40,7 +40,7 @@ Wi-Fi-profielen ondersteunen de volgende apparaatplatformen:
 - Android 4 en hoger
 - Android Enterprise en kiosk
 - iOS 8.0 en hoger
-- macOS (Max OS X 10.11 en hoger)
+- macOS X 10.11 en hoger
 - Windows 10 en hoger, Windows 10 Mobile en Windows Holographic for Business
 
 > [!NOTE]
@@ -48,35 +48,39 @@ Wi-Fi-profielen ondersteunen de volgende apparaatplatformen:
 
 ## <a name="create-a-device-profile"></a>Een apparaatprofiel maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-3. Geef een **naam** en **beschrijving** op voor het Wi-Fi-profiel.
-4. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform waarop u de Wi-Fi-instellingen wilt toepassen. Uw opties zijn:
+1. Selecteer in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) de optie **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+2. Voer de volgende eigenschappen in:
 
-    - **Android**
-    - **Android Enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows 8.1 en hoger**
-    - **Windows 10 en hoger**
+    - **Naam**: Voer een beschrijvende naam in voor het profiel. Geef uw profielen een naam zodat u ze later eenvoudig kunt identificeren. Een goede profielnaam is bijvoorbeeld **Wi-Fi-profiel voor hele bedrijf**.
+    - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
+    - **Platform**: Kies het platform van uw apparaten. Uw opties zijn:
 
-5. In **Profieltype**, kiest u **Wi-Fi**.
+      - **Android**
+      - **Android Enterprise**
+      - **iOS**
+      - **macOS**
+      - **Windows 8.1 en hoger**
+      - **Windows 10 en hoger**
 
-    - Voor **Android Enterprise**-apparaten die als kiosk draaien, kunt u **Alleen apparaateigenaar** > **Wi-Fi** kiezen.
-    - Voor **Vensters 8.1 en hoger** kunt u **Wi-Fi-import** kiezen. Met deze optie kunt u Wi-Fi-instellingen die u eerder vanaf een ander apparaat hebt geëxporteerd, importeren als een XML-bestand.
+    - **Profieltype**: selecteer **Wi-Fi**.
 
-6. Sommige van de Wi-Fi instellingen zijn verschillend voor elk platform. Om de instellingen voor een specifiek platform te bekijken, kiest u:
+      > [!TIP]
+      >
+      > - Voor **Android Enterprise**-apparaten die als een toegewezen apparaat (kiosk) worden uitgevoerd, kiest u **Alleen apparaateigenaar** > **Wi-Fi**.
+      > - Voor **Vensters 8.1 en hoger** kunt u **Wi-Fi-import** kiezen. Met deze optie kunt u Wi-Fi-instellingen die u eerder vanaf een ander apparaat hebt geëxporteerd, importeren als een XML-bestand.
+
+3. Sommige van de Wi-Fi instellingen zijn verschillend voor elk platform. Om de instellingen voor een specifiek platform te bekijken, kiest u uw platform:
 
     - [Android](wi-fi-settings-android.md)
-    - [Android Enterprise en kiosk](wi-fi-settings-android-enterprise.md)
+    - [Android Enterprise](wi-fi-settings-android-enterprise.md), inclusief toegewezen apparaten
     - [iOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 en hoger](wi-fi-settings-windows.md)
     - [Instellingen voor Windows 8.1 en hoger](wi-fi-settings-import-windows-8-1.md), inclusief Windows Holographic for Business
 
-    De meeste platforms hebben **Basic**- en **Enterprise**-instellingen. **Basic** bevat functies zoals de netwerknaam en de SSID. Met **Enterprise** kunt u uitgebreidere informatie zoals het Extensible Authentication Protocol (EAP) opgeven.
+4. Wanneer u klaar bent, selecteert u **Profiel maken** > **Maken**.
 
-7. Wanneer u klaar bent met het toevoegen van uw Wi-Fi-instellingen, selecteert u **Profiel maken** > **Maken** om het configuratieprofiel toe te voegen. Het profiel wordt gemaakt en wordt weergegeven in de lijst met profielen (**Apparaatconfiguratie** > **Profielen**).
+Het profiel wordt gemaakt en wordt weergegeven in de lijst met profielen (**Apparaatconfiguratie** > **Profielen**).
 
 ## <a name="next-steps"></a>Volgende stappen
 

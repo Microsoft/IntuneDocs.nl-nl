@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ce117f21c1ad78c2c977466398ce6d30989cc6a
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 9f8560262d8c501af4127876eaafed293fbc4041
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041288"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651198"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
@@ -152,7 +152,9 @@ In het rapport **Apparaatcompliantie** > **Nalevingsinstelling** kunt u per nale
 Wanneer u een specifieke instelling selecteert, kunt u de **nalevingsstatus**, de **e-mailalias van de gebruiker**, het **apparaatmodel** en de **locatie** zien voor elk apparaat waarvoor die instelling is bedoeld.
 
 > [!NOTE]
-> Windows 10-apparaten die aan Azure AD zijn toegevoegd, kunnen het systeemaccount als een niet-conforme gebruiker weergeven. Dit is het verwachte gedrag en heeft geen invloed op de algemene naleving van het apparaat. 
+> Een beleid kan worden toegewezen aan een apparaat en een gebruiker op hetzelfde apparaat. In sommige gevallen kan een apparaat worden gesynchroniseerd voordat de gebruiker zich aanmeldt, bijvoorbeeld wanneer het apparaat opnieuw wordt opgestart. Door de nalevingsfunctie kan deze gebruiker worden geëvalueerd en het apparaat als niet-compatibel worden weergegeven. Dit gedrag kan ook het systeemaccount als een niet-compatibele gebruiker weergeven.
+>
+> Dit is een bekend probleem met Windows 10-apparaten voor meerdere gebruikers. Eventuele wijzigingen of updates van dit gedrag worden aangekondigd in [In ontwikkeling](in-development.md) en/of [Wat is er nieuw](whats-new.md).
 
 ## <a name="view-status-of-device-policies"></a>Status van apparaatbeleid weergeven
 

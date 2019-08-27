@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/19/2019
-ms.topic: article
+ms.date: 08/15/2019
+ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 985ca70dba2a5a486947bd2de08e7f8934e90d75
-ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
+ms.openlocfilehash: 330bfa319ca0202a5edc09d8f27e40c18ce89d39
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67263719"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582943"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -53,15 +53,19 @@ Als u PKCS-certificaten wilt gebruiken met Intune, hebt u de volgende infrastruc
 - **Basiscertificaat**:  
   Een geëxporteerde kopie van uw basiscertificaat van uw CA voor ondernemingen.
 
-- **Intune-certificaatconnector** (ook wel de *NDES-certificaatconnector* genoemd):  
+- **Microsoft Intune Certificate Connector** (ook wel de *NDES-certificaatconnector* genoemd):  
   Ga in de Intune-portal naar **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen** en volgt u de *stappen om de connector te installeren voor PKCS #12*. Gebruik de downloadkoppeling om het downloaden van het installatieprogramma voor de certificaatconnector **NDESConnectorSetup.exe** te starten.  
+
+  Intune ondersteunt maximaal 100 instanties van deze connector per tenant, met elke instantie op een afzonderlijke Windows-server. U kunt een instantie van deze connector op dezelfde server installeren als een instantie van de PFX-certificaatconnector voor Microsoft Intune. Wanneer u meerdere connectors gebruikt, ondersteunt de infrastructuur van de connector hoge beschikbaarheid en taakverdeling als een beschikbare connectorinstantie uw PKCS-certificaataanvragen kan verwerken. 
 
   Met deze connector worden PKCS-certificaataanvragen verwerkt die worden gebruikt voor verificatie of S/MIME-e-mailondertekening.
 
-  De NDES-certificaatconnector ondersteunt ook de Federal Information Processing Standard-modus (FIPS). FIPS is niet vereist, maar wanneer deze modus is ingeschakeld, kunt u certificaten uitgeven en intrekken.
+  De Microsoft Intune Certificate Connector ondersteunt ook de Federal Information Processing Standard-modus (FIPS). FIPS is niet vereist, maar wanneer deze modus is ingeschakeld, kunt u certificaten uitgeven en intrekken.
 
 - **PFX-certificaatconnector voor Microsoft Intune**:  
-   Als u van plan bent om S/MIME-versleuteling te gebruiken voor e-mailberichten, moet u via de Intune-portal de connector voor *geïmporteerde PFX-certificaten* downloaden.  Ga naar **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen** en volg de *stappen om de connector installeren voor geïmporteerde PFX-certificaten*. Gebruik de downloadkoppeling om het downloaden van het installatieprogramma **PfxCertificateConnectorBootstrapper.exe** te starten. 
+  Als u van plan bent om S/MIME-versleuteling te gebruiken voor e-mailberichten, moet u via de Intune-portal de connector voor *geïmporteerde PFX-certificaten* downloaden.  Ga naar **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen** en volg de *stappen om de connector installeren voor geïmporteerde PFX-certificaten*. Gebruik de downloadkoppeling om het downloaden van het installatieprogramma **PfxCertificateConnectorBootstrapper.exe** te starten. 
+
+  Elke Intune-tenant ondersteunt één instantie van deze connector. U kunt deze connector op dezelfde server installeren als een instantie van de Microsoft Intune Certificate Connector.
 
   Deze connector verwerkt aanvragen voor PFX-bestanden die zijn geïmporteerd in Intune voor S/MIME-e-mailversleuteling voor een specifieke gebruiker.  
 
@@ -87,7 +91,7 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
  
 2. Ga naar **Start** > **Uitvoeren** en voer vervolgens **Cmd** uit om de opdrachtprompt openen. 
     
-3. Geef **certutil-ca.cert ca_name.cer** op om het basiscertificaat te exporteren als een bestand met de naam *ca_name.cer*.
+3. Geef **certutil -ca.cert ca_name.cer** op om het basiscertificaat te exporteren als een bestand met de naam *ca_name.cer*.
 
 
 
@@ -140,7 +144,7 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 2. Selecteer **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen**.
 3. Download het connectorbestand en sla dit op een locatie op waar u het kunt openen vanaf de server waarop u de connector gaat installeren.
 
-    ![De NDES-connector downloaden](media/certificates-pfx-configure/download-ndes-connector.png)
+    ![Microsoft Intune Certificate Connector-download](media/certificates-pfx-configure/download-ndes-connector.png)
  
 
 4. Nadat het downloaden is voltooid, meldt u zich aan bij de server. Vervolgens:
@@ -149,7 +153,7 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
     2. Start het installatieprogramma (NDESConnectorSetup.exe) en accepteer de standaardlocatie. De connector wordt geïnstalleerd in `\Program Files\Microsoft Intune\NDESConnectorUI`. Selecteer in de opties voor het installatieprogramma **PFX-distributie**. Ga verder en voltooi de installatie.
     3. De connectorservice wordt standaard uitgevoerd onder het lokale systeemaccount. Als een proxy is vereist voor toegang tot internet, moet u bevestigen dat het lokale serviceaccount toegang heeft tot de proxy-instellingen op de server.
 
-5. De NDES Connector opent het tabblad **Inschrijving**. Als u de verbinding met Intune wilt inschakelen, kiest u **Aanmelden** en geeft u een account met globale beheerdersmachtigingen op.
+5. Het tabblad **Inschrijving** wordt geopend door de Microsoft Intune Certificate Connector. Als u de verbinding met Intune wilt inschakelen, kiest u **Aanmelden** en geeft u een account met globale beheerdersmachtigingen op.
 6. U wordt aangeraden om op het tabblad **Geavanceerd** het keuzerondje **Systeemaccount van deze computer gebruiken (standaard)** ingeschakeld te laten.
 7. **Toepassen** > **Sluiten**
 8. Ga terug naar de Intune-portal (**Intune** > **Apparaatconfiguratie** > **Certificaatconnectors**). Even later wordt een groen vinkje weergegeven en is de **Verbindingsstatus** **Actief**. Uw connector-server kan nu communiceren met Intune.
@@ -218,6 +222,9 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 
 4. Selecteer **OK** > **Maken** om het profiel op te slaan.
 5. Raadpleeg [Microsoft Intune-apparaatprofielen toewijzen](device-profile-assign.md) om het nieuwe profiel aan een of meer apparaten toe te wijzen.
+
+   > [!NOTE]
+   > Op apparaten met een Android Enterprise-profiel zijn certificaten die zijn geïnstalleerd met een PKCS-certificaatprofiel niet zichtbaar op het apparaat. Controleer de status van het profiel in de Intune-console om te controleren of de implementatie van het certificaat is geslaagd.
 
 ## <a name="create-a-pkcs-imported-certificate-profile"></a>Een geïmporteerd PKCS-certificaatprofiel maken
 

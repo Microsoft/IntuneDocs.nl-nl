@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c92f70844594fd8524f2e49c537f1afaadaf96
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: a637ae12f3a2ee395503bedd595c490579fdb43c
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783185"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68993554"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android-apparaten automatisch registreren met behulp van de Knox Mobile Enrollment van Samsung
 
@@ -68,7 +68,7 @@ Wanneer uw bedrijf is geregistreerd, kunt u uw MDM-profiel voor Microsoft Intune
 |MDM Agent APK (APK van MDM-agent)      | Ja       |https://aka.ms/intune_kme_deviceowner 
 |Deze app inschakelen als eigenaar van het Google-apparaat | Ja | Kies deze optie voor registratie bij Android Enterprise. 
 |Ondersteund MDM      | Ja       |Microsoft Intune 
-|Alle systeem-apps ingeschakeld laten | Nee | Selecteer deze optie om te controleren of alle apps zijn ingeschakeld en beschikbaar zijn voor het profiel. Als deze optie niet is geselecteerd, wordt slechts een zeer beperkt aantal systeem-apps weergeven in het app-overzicht van het apparaat. Apps als de e-mail-app blijven verborgen. 
+|Alle systeem-apps ingeschakeld laten | Nee | Selecteer deze optie om te controleren of alle apps zijn ingeschakeld en beschikbaar zijn voor het profiel. Als deze optie niet is geselecteerd, wordt slechts een beperkt aantal systeem-apps weergegeven in het app-overzicht van het apparaat. Apps als de e-mail-app blijven verborgen. 
 |Custom JSON (Aangepaste JSON)        | Nee        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Token-tekenreeks voor Intune-registratie invoeren"}. Meer informatie over het [maken van een inschrijvingsprofiel](android-kiosk-enroll.md). 
 | Juridische overeenkomsten toevoegen | Nee | Laat dit leeg. 
 
@@ -82,8 +82,8 @@ Raadpleeg de instructies in de [installatiewizard voor Samsung Knox-profiel](htt
 |Profile Name (Profielnaam)       | Ja       |Voer een profielnaam naar keuze in.
 |description        | Nee        |Voer een beschrijvende tekst voor het profiel in.
 |MDM Agent APK (APK van MDM-agent)      | Ja       |https://aka.ms/intune_kme
-|Deze app inschakelen als eigenaar van het Google-apparaat | Nee | Laat deze optie uitgeschakeld voor Android. Dit is alleen van toepassing op Android Enterprise.
-|Skip Setup wizard (Installatiewizard) overslaan  | Nee        |Kies deze optie als u de standaardvragen voor de installatie van het apparaat namens de gebruiker wilt overslaan.
+|Deze app inschakelen als eigenaar van het Google-apparaat | Nee | Laat deze optie uitgeschakeld voor Android. Deze optie is alleen van toepassing op Android Enterprise.
+|Skip Setup wizard (Installatiewizard) overslaan  | Nee        |Kies deze optie als u de standaardvragen voor de installatie van het apparaat voor de gebruiker wilt overslaan.
 |Allow End User to Cancel Enrollment (Toestaan dat eindgebruiker de registratie annuleert) | Nee | Kies deze optie als gebruikers KME mogen annuleren.
 |Custom JSON (Aangepaste JSON)        | Nee        |Laat dit leeg.
 | Juridische overeenkomsten toevoegen | Nee | Laat dit leeg.
@@ -103,7 +103,7 @@ U moet een MDM-profiel aan toegevoegde apparaten toewijzen in de Knox-portal voo
 
 Voor apparaten die in Intune worden geregistreerd met KME voor Android, kunt u als volgt configureren hoe een eindgebruiker zich aanmeldt:
 
-- **Zonder koppeling met gebruikersnaam:** Laat in de Knox-portal onder **Device details** (Apparaatdetails) de velden **User ID** (gebruikers-id) en **Password** (wachtwoord) leeg voor de toegevoegde apparaten. De gebruiker moet dan gebruikersnaam en wachtwoord invoeren tijdens de registratie bij Intune.
+- **Zonder koppeling met gebruikersnaam:** Laat in de Knox-portal onder **Device details** (Apparaatdetails) de velden **User ID** (gebruikers-id) en **Password** (wachtwoord) leeg voor de toegevoegde apparaten. De gebruiker moet dan zijn gebruikersnaam en wachtwoord invoeren tijdens de registratie bij Intune.
 
 - **Met koppeling met gebruikersnaam:** Geef in de Knox-portal onder **Device Details** (Apparaatdetails) een **gebruikers-id** op (bijvoorbeeld een gebruikersnaam voor de toegewezen gebruiker of een [Device Enrollment Manager](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)-account) voor de toegevoegde apparaten. De gebruikersnaam wordt dan al ingevuld en de gebruiker hoeft alleen een wachtwoord in te voeren tijdens de registratie bij Intune.
 
@@ -116,11 +116,11 @@ Voor apparaten die in Intune worden geregistreerd met KME voor Android, kunt u a
 
 Wanneer een MDM-profiel is gemaakt en toegewezen, een gebruikersnaam is gekoppeld en de apparaten in Intune als bedrijfseigendom zijn geïdentificeerd, kunt u apparaten aan gebruikers distribueren.
 
-Nog hulp nodig? Bekijk de volledige [gebruikershandleiding van Knox Mobile Enrollment](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm).
+Nog hulp nodig? Bekijk de volledige [KME-gebruikershandleiding](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm).
 
 ## <a name="frequently-asked-questions"></a>Veelgestelde vragen
 
-- **Ondersteuning voor apparaateigenaar:** Intune ondersteunt registratie van apparaten voor uitsluitend de kioskmodus met behulp van Android Enterprise. Andere modi voor apparaateigenaren in Android Enterprise worden ondersteund zodra ze beschikbaar zijn in Intune.
+- **Ondersteuning voor apparaateigenaar:**  - **Ondersteuning voor apparaateigenaar:** Intune biedt ondersteuning voor registratie van toegewezen en volledig beheerde apparaten met behulp van de KME-portal. Andere modi voor apparaateigenaren in Android Enterprise worden ondersteund zodra ze beschikbaar zijn in Intune.
 
 - **Geen ondersteuning voor werkprofielen:** KME is een methode voor registratie van bedrijfsapparaten. Door apparaten te registeren in een Android-werkprofiel kunnen werk- en persoonlijke gegevens worden gescheiden op persoonlijke apparaten. Daarom wordt registratie van apparaten in een werkprofiel met KME niet ondersteund in Intune.
 

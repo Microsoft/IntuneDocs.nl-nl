@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 890d398de938680447b71a46d4e329a6bdf52616
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884038"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960589"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
@@ -283,6 +283,8 @@ U hebt nu de stappen voor het toevoegen van een Win32-app aan Intune voltooid. Z
 ## <a name="app-dependencies"></a>App-afhankelijkheden
 
 App-afhankelijkheden zijn toepassingen die moeten worden geïnstalleerd voordat u uw Win32-app kunt installeren. U kunt vereisen dat andere apps als afhankelijkheden worden geïnstalleerd. Specifiek moeten de afhankelijke apps op het apparaat worden geïnstalleerd vóór u de Win32-app installeert. Er is een maximum van 100 afhankelijkheden. Dit is inclusief de afhankelijkheden van eventueel opgenomen afhankelijkheden en de app zelf. U kunt alleen Win32-afhankelijkheden toevoegen nadat uw Win32-app is toegevoegd en naar Intune is geüpload. Zodra uw Win32-app is toegevoegd, ziet u de optie **Afhankelijkheden** op de blade voor uw Win32-app. 
+
+Elke Win32-app-afhankelijkheid moet ook een Win32-app zijn. Er wordt geen ondersteuning geboden voor afhankelijkheid van andere typen apps, zoals enkelvoudige MSI LOB-apps of Store-apps.
 
 Wanneer u een app-afhankelijkheid toevoegt, kunt u een zoekopdracht uitvoeren op basis van de naam en uitgever van de app. Daarnaast kunt u de toegevoegde afhankelijkheden sorteren op basis van de naam en uitgever van de app. Eerder toegevoegde app-afhankelijkheden kunnen niet worden geselecteerd in de lijst met toegevoegde app-afhankelijkheden. 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2019
+ms.date: 08/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f2e4870d1a2614ecccc1647db828e214a6aede8
-ms.sourcegitcommit: e9911a6bbfb8532a27e70d70402a214a8b2b6c75
+ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
+ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68818792"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69620204"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -51,6 +51,176 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [belangri
 ### Role-based access control
 
 -->  
+
+<!-- ########################## -->
+
+## <a name="week-of-august-12-2019"></a>Week van 12 augustus 2019
+
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="control-ios-app-uninstall-behavior-at-device-unenrollment----3504144-----"></a>Gedrag van het verwijderen van iOS-apps beheren bij het uitschrijven van apparaten <!-- 3504144   -->
+Beheerders kunnen beheren of een app wordt verwijderd of behouden op een apparaat wanneer het apparaat wordt uitgeschreven op het niveau van een gebruikers- of apparaatgroep. 
+
+#### <a name="categorize-microsoft-store-for-business-apps----3926922---"></a>Microsoft Store voor Bedrijven-apps categoriseren <!-- 3926922 -->
+U kunt Microsoft Store voor Bedrijven-apps categoriseren. Selecteer hiertoe **Intune** > **Client-apps** > **Apps** > selecteer een Microsoft Store voor Bedrijven-app > **App-gegevens** > **Categorie**. Wijs een categorie toe in de vervolgkeuzelijst.
+
+#### <a name="customized-notifications-for-microsoft-intune-app-users----4843354----"></a>Aangepaste meldingen voor gebruikers van Microsoft Intune-apps <!-- 4843354  -->
+De Microsoft Intune-app voor Android ondersteunt nu het weergeven van aangepaste pushmeldingen. Dit is in lijn met de ondersteuning die recent is toegevoegd in de bedrijfsportal-apps voor iOS en Android. Zie [Aangepaste meldingen verzenden in Intune](custom-notifications.md) voor meer informatie.
+
+### <a name="device-configuration"></a>Apparaatconfiguratie
+
+#### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode----3755304-3041943-3041946-----"></a>Nieuwe functies voor aan Android Enterprise toegewezen apparaten in de modus voor meerdere apps <!-- 3755304 3041943 3041946   -->
+U kunt in Intune functies en instellingen beheren in een kioskstijl op uw toegewezen Android Enterprise-apparaten (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android Enterprise** voor platform > **Alleen apparaateigenaar, Apparaatbeperkingen** voor profieltype).
+
+In deze update worden de volgende functies toegevoegd:
+
+- **Toegewezen apparaten** > Meerdere apps **:** de **Virtuele startknop** kan worden weergegeven door op het apparaat te vegen of op het scherm te zweven zodat gebruikers deze kunnen verplaatsen.
+- **Toegewezen apparaten** > Meerdere apps **:** met **zaklantaarn**toegang kunnen gebruikers de zaklantaarn gebruiken. 
+- **Toegewezen apparaten** > Meerdere apps **:** met **volumeregeling van media** kunnen gebruikers het mediavolume van het apparaat beheren met behulp van een schuifregelaar. 
+- **Toegewezen apparaten** > Meerdere apps **:**  **een schermbeveiliging inschakelen**, een aangepaste afbeelding uploaden en bepalen wanneer de schermbeveiliging wordt weergegeven.
+
+Ga naar [Android Enterprise-apparaatinstellingen om beperkingsfuncties toe te staan of te beperken met behulp van Intune](device-restrictions-android-for-work.md#dedicated-device-settings) om de huidige instellingen te zien.
+
+Van toepassing op:  
+- Toegewezen Android Enterprise-apparaten
+
+#### <a name="new-app-and-configuration-profiles-for-android-enterprise-fully-managed-devices----3574215-3574238-3574235-3574232-----"></a>Nieuwe app- en configuratieprofielen voor volledig beheerde Android Enterprise-apparaten <!-- 3574215 3574238 3574235 3574232   -->
+Met behulp van profielen kunt u instellingen configureren die VPN-, e-mail-en Wi-Fi-instellingen toepassen op uw (volledig beheerde) Android Enterprise-apparaten in zakelijk eigendom. In deze update kunt u het volgende doen:
+
+- [App-configuratiebeleid](app-configuration-policies-use-android.md) gebruiken voor het implementeren van e-mail instellingen van Outlook, Gmail en Nine Work.
+- Apparaatconfiguratieprofielen gebruiken om [instellingen voor vertrouwde basiscertificaten](certificates-configure.md) te implementeren.
+- Apparaatconfiguratieprofielen gebruiken om instellingen voor [VPN](vpn-settings-android-enterprise.md) en [Wi-Fi](wi-fi-settings-android-enterprise.md) te implementeren.
+
+> [!IMPORTANT]
+> Met deze functie gebruiken gebruikers hun gebruikersnaam en wachtwoord voor verificatie bij VPN-, Wi-Fi- en e-mailprofielen. Op dit moment is verificatie op basis van certificaten niet beschikbaar. 
+
+Van toepassing op:  
+- Android Enterprise-apparaten in zakelijk eigendom (volledig beheerd)
+
+#### <a name="control-the-apps-files-documents-and-folders-that-open-when-users-sign-in-to-macos-devices---3914202-----"></a>De apps, bestanden, documenten en mappen beheren die worden geopend wanneer gebruikers zich aanmelden bij macOS-apparaten <!--3914202   -->
+U kunt functies inschakelen en configureren op macOS-apparaten (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **macOS** voor platform > **Apparaatfuncties** voor profieltype). 
+
+In deze update is er een nieuwe instelling voor Aanmeldingsitems om te bepalen welke apps, bestanden, documenten en mappen worden geopend wanneer een gebruiker zich aanmeldt bij het geregistreerde apparaat. 
+
+Ga naar [Instellingen van apparaatfuncties voor macOS in Intune](macos-device-features-settings.md) om de huidige instellingen te zien.
+
+Van toepassing op:  
+- macOS
+
+#### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>Deadlines vervangen instellingen voor gepland opnieuw opstarten voor Windows-updateringen   <!-- 4464404        -->
+In lijn met recente [wijzigingen in Windows-onderhoud](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing) ondersteunen de Windows 10-updateringen van Intune nu [instellingen voor deadlines](windows-update-settings.md). *Deadlines* bepalen wanneer door een apparaat functie-en beveiligingsupdates worden geïnstalleerd.  Op apparaten waarop Windows 10 1903 of hoger wordt uitgevoerd, vervangen *deadlines* de configuraties voor *gepland opnieuw opstarten*.  In de toekomst gaan *deadlines* ook *gepland opnieuw opstarten* in eerdere versies van Windows 10 vervangen.  
+
+Wanneer u geen *deadlines*configureert, blijven apparaten de instellingen voor *gepland opnieuw opstarten* gebruiken. In een toekomstige update gaat [Intune ondersteuning voor gepland opnieuw opstarten echter stopzetten](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-).  
+
+Plan het *gebruik* van deadlines voor al uw Windows 10-apparaten. Nadat de instellingen voor *deadlines* zijn ingesteld, kunt u de Intune-configuraties voor *gepland opnieuw opstarten* wijzigen in Niet geconfigureerd. Als deze zijn ingesteld op Niet geconfigureerd, stopt Intune het beheer van deze instellingen op apparaten, maar worden de laatste configuraties voor de instelling niet van het apparaat verwijderd. Daarom blijven de laatste configuraties die zijn ingesteld voor *gepland opnieuw opstarten* actief en in gebruik op apparaten totdat deze instellingen worden gewijzigd door een andere methode dan Intune. Later, wanneer de apparaatversie van Windows verandert of wanneer Intune ondersteuning voor *deadlines* uitbreidt naar de Windows-versie van het apparaat, gaat het apparaat de nieuwe instellingen gebruiken, die al aanwezig zijn.
+
+#### <a name="support-for-multiple-microsoft-intune-certificate-connectors--------4704642--------"></a>Ondersteuning voor meerdere Microsoft Intune Certificate Connectors   <!--   4704642      -->
+InTune biedt nu ondersteuning voor installatie en gebruik van meerdere [Microsoft Intune Certificate Connectors voor PKCS-bewerkingen](certficates-pfx-configure.md). Deze wijziging ondersteunt taakverdeling en hoge beschikbaarheid van de connector. Elke connectorinstantie kan certificaataanvragen van Intune verwerken.  Als er geen connector beschikbaar is, blijven andere connectors aanvragen verwerken. 
+
+Als u meerdere connectors wilt gebruiken, hoeft u geen upgrade uit te voeren naar de nieuwste versie van de connectorsoftware.  
+
+#### <a name="new-settings-and-changes-to-existing-settings-to-restrict-features-on-ios-and-macos-devices----4867699-4867709-----"></a>Nieuwe instellingen en wijzigingen in bestaande instellingen om functies op iOS-en macOS-apparaten te beperken <!-- 4867699 4867709   -->
+U kunt profielen maken om instellingen te beperken op apparaten waarop iOS en macOS worden uitgevoerd (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS** of **macOS** voor platform > **Apparaatbeperkingen**). Deze update bevat onder andere de volgende functies:
+
+- Gebruik in **macOS** > **Apparaatbeperkingen** > **Cloud en opslag** de nieuwe **Handoff**-instellingen om te blokkeren dat gebruikers werk starten op een macOS-apparaat en blijven werken op een ander macOS- of iOS-apparaat.
+
+  Als u de huidige instellingen wilt zien, gaat u naar [macOS-apparaatinstellingen voor het toestaan of beperken van functies met Intune](device-restrictions-macos.md).
+
+- Er zijn enkele wijzigingen in **iOS** > **Apparaatbeperkingen**:
+
+  - **Ingebouwde apps** > **Zoek mijn iPhone (alleen onder supervisie)** : nieuwe instelling die deze functie blokkeert in de functie Zoek mijn app. 
+  - **Ingebouwde apps** > **Zoek mijn vrienden (alleen onder supervisie)** : nieuwe instelling die deze functie blokkeert in de functie Zoek mijn app. 
+  - **Draadloos** > **Wijziging van Wi-Fi-status (alleen onder supervisie)** : nieuwe instelling die voorkomt dat gebruikers Wi-Fi op het apparaat in- of uitschakelen.
+  - **Toetsenbord en woordenboek** > **QuickPath (alleen onder toezicht)** : nieuwe instelling die de QuickPath-functie blokkeert.
+  - **Cloud en opslag**: de naam van de term **Voortzetting van activiteit** is gewijzigd in **Handoff**.
+
+  Als u de huidige instellingen wilt zien, gaat u naar [iOS-apparaatinstellingen voor het toestaan of beperken van functies met Intune](device-restrictions-ios.md).
+
+Van toepassing op:  
+- macOS 10.15 of hoger
+- iOS 13 en hoger
+
+#### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809-----"></a>Sommige iOS-apparaatbeperkingen zonder supervisie worden pas met de release van iOS 13.0 onder supervisie geplaatst <!-- 4867809   -->
+In deze update zijn sommige instellingen alleen van toepassing op apparaten met supervisie met de release van iOS 13.0. Als deze instellingen zijn geconfigureerd en toegewezen aan apparaten zonder supervisie vóór de iOS 13.0-release, worden de instellingen nog steeds toegepast op deze apparaten zonder supervisie. Ze zijn ook nog steeds van toepassing nadat de apparaten zijn bijgewerkt naar iOS 13.0. Deze beperkingen worden verwijderd op apparaten zonder supervisie waarvan een back-up is gemaakt en die zijn hersteld. 
+
+Deze instellingen omvatten:
+
+- App Store, documenten bekijken, gamen
+  - App Store
+  - Expliciete muziek-, podcast- of nieuwsinhoud op iTunes
+  - Game Center-vrienden toevoegen
+  - Games voor meerdere spelers
+- Ingebouwde apps
+  - Camera
+    - FaceTime
+  - Safari
+    - Automatisch doorvoeren
+- Cloud en opslag
+  - Back-up naar iCloud
+  - ICloud-documentsynchronisatie blokkeren
+  - Synchronisatie van iCloud-sleutelhanger blokkeren
+
+Als u de huidige instellingen wilt zien, gaat u naar [iOS-apparaatinstellingen voor het toestaan of beperken van functies met Intune](device-restrictions-ios.md).
+
+Van toepassing op:  
+- iOS 13.0 en hoger
+
+#### <a name="improved-device-status-for-macos-filevault-encryption-----4944983-----------"></a>Verbeterde apparaatstatus voor macOS FileVault-versleuteling  <!-- 4944983         -->
+We hebben een aantal van de [statusberichten](encryption-monitor.md#device-encryption-status) voor FileVault-versleuteling op macOS-apparaten bijgewerkt.
+
+#### <a name="some-windows-defender-antivirus-scan-settings-in-the-reporting-show-a-failed-status----5119229---"></a>Sommige scaninstellingen voor Windows Defender Antivirus geven in de rapporten de status Mislukt weer <!-- 5119229 -->
+In Intune kunt u beleidsregels maken om Windows Defender Antivirus te gebruiken voor het scannen van uw Windows 10-apparaten (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** voor platform > **Apparaatbeperkingen** voor profieltype > **Windows Defender Antivirus**). De rapporten **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd** en **Type systeemscan dat moet worden uitgevoerd** bevatten de status Mislukt, terwijl het in werkelijkheid de status Geslaagd was. 
+
+In deze update is dit opgelost. De instellingen **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd** en **Type systeemscan dat moet worden uitgevoerd** geven nu de status Geslaagd weer wanneer de scans met succes zijn uitgevoerd en geven de status Mislukt weer als de instellingen niet kunnen worden toegepast. 
+
+Zie [Apparaatinstellingen van Windows 10 (en hoger) voor het toestaan of beperken van functies met Intune](device-restrictions-windows-10.md#windows-defender-antivirus) voor meer informatie over de instellingen van Windows Defender Antivirus. 
+
+### <a name="device-enrollment"></a>Apparaatinschrijving
+
+#### <a name="default-scope-tags----3702875----"></a>Standaardbereiktags <!-- 3702875  -->
+Er is nu een nieuwe ingebouwde standaardbereiktag beschikbaar. Alle niet-getagde Intune-objecten die bereiktags ondersteunen, worden automatisch toegewezen aan de standaardbereiktag. De **standaard**bereiktag wordt toegevoegd aan alle bestaande roltoewijzingen om pariteit met de beheerderservaring te behouden. Als u niet wilt dat een beheerder Intune-objecten met de standaardbereiktag ziet, verwijdert u de standaardbereiktag uit de roltoewijzing. Deze functie is vergelijkbaar met de functie voor beveiligingsbereiken in System Center Configuration Manager. Zie [RBAC en bereiktags gebruiken voor gedistribueerde IT](scope-tags.md) voor meer informatie.
+
+#### <a name="android-enrollment-device-administrator-support----4869749-----"></a>Ondersteuning voor inschrijving van Android-apparaatbeheerder <!-- 4869749   -->
+De optie voor inschrijving van Android-apparaatbeheerders is toegevoegd aan de inschrijvingspagina voor Android (**Intune** > **Apparaatinschrijving** > **Android-inschrijving**). Android-apparaatbeheerders worden nog steeds standaard ingeschakeld voor alle tenants.  Zie [Inschrijving van Android-apparaatbeheerders](android-enroll-device-administrator.md) voor meer informatie.
+
+#### <a name="skip-more-screens-in-setup-assistant---4877451----"></a>Meer schermen in de Configuratieassistent overslaan <!--4877451  -->
+U kunt Device Enrollment Program-profielen instellen om de volgende schermen van de Configuratieassistent over te slaan:
+- Voor iOS
+    - Uiterlijk
+    - Express-taal
+    - Voorkeurstaal
+    - Migratie van apparaat naar apparaat
+- Voor macOS
+    - Schermtijd
+    - Touch ID instellen
+
+Zie [Een Apple-inschrijvingsprofiel maken voor iOS ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) en [Een Apple-inschrijvingsprofiel maken voor macOS ](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile) voor meer informatie over het aanpassen van de Configuratieassistent.
+
+#### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>Een gebruikerskolom toevoegen aan het CSV-uploadproces van het Autopilot-apparaat <!-- 3823054 -->
+U kunt nu een gebruikerskolom toevoegen aan de CSV-upload voor Autopilot-apparaten. Zo kunt u gebruikers bulksgewijs toewijzen op het moment dat u het CSV-bestand importeert. De nieuwe indeling voor de rijen in het CSV-bestand ziet er als volgt uit: serienummer, Windows-product-id, hardware-hash, optionele-groep-tag, optioneel toegewezen gebruiker. Zie [Windows-apparaten in Intune inschrijven met Windows Autopilot](enrollment-autopilot.md) voor meer informatie.
+
+
+### <a name="device-management"></a>Apparaatbeheer
+
+#### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>De tijdslimiet voor het automatisch opschonen van apparaten verkorten tot 30 dagen <!--4231059  -->
+U kunt de tijdslimiet voor automatische opschoning van apparaten instellen op 30 dagen (in plaats van de vorige limiet van 90 dagen) na de laatste aanmelding. Als u dit wilt doen, gaat u naar **intune** > **apparaten** > regels voor het opschonen**van**apparaten**instellen** > .
+
+#### <a name="build-number-included-on-android-device-hardware-page----4461910-----"></a>Buildnummer opgenomen op de hardwarepagina van het Android-apparaat <!-- 4461910   -->
+Een nieuw item op de hardwarepagina voor elk Android-apparaat bevat het buildnummer van het besturingssysteem van het apparaat. Zie [Apparaatdetails weergeven in Intune](device-inventory.md) voor meer informatie.
+
+
+<!-- ########################## -->
+
+## <a name="week-of-august-5-2019"></a>Week van 5 augustus 2019
+
+### <a name="zebra-technologies-is-a-supported-oem-for-oemconfig-on-android-enterprise-devices-----4843713---"></a>Zebra Technologies is een ondersteunde OEM voor OEMConfig op Android Enterprise-apparaten  <!-- 4843713 -->
+
+In Intune kunt u apparaatconfiguratieprofielen maken, en instellingen toepassen op Android Enterprise-apparaten met behulp van OEMConfig (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android Enterprise** voor platform > **OEMConfig** voor profieltype).
+
+In deze update is Zebra Technologies een ondersteunde OEM (Original Equipment Manufacturer) voor OEMConfig. Zie [Android Enterprise-apparaten gebruiken en beheren met OEMConfig](android-oem-configuration-overview.md) voor meer informatie over OEMConfig.
+
+Van toepassing op:  
+- Android Enterprise
 
 <!-- ########################## -->
 
@@ -138,7 +308,7 @@ U kunt inzoomen op de exacte coördinaten van een apparaat met behulp van de act
 
 ### <a name="device-security"></a>Apparaatbeveiliging
 
-#### <a name="advanced-settings-for-windows-defender-firewall--public-preview-------1311949-------"></a>Geavanceerde instellingen voor Windows Defender Firewall (openbare preview)  <!--  1311949     -->  
+#### <a name="advanced-settings-for-windows-defender-firewall--public-preview------1311949-------"></a>Geavanceerde instellingen voor Windows Defender Firewall (openbare preview)  <!--  1311949     -->  
 Gebruik Intune voor het beheren van [aangepaste firewallregels als onderdeel van een configuratieprofiel voor een apparaat](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) voor eindpuntbeveiliging in Windows 10. Met regels kunt u inkomend en uitgaand gedrag voor toepassingen, netwerkadressen en poorten opgeven. 
 
 #### <a name="updated-ui-for-managing-security-baselines------4091125-------"></a>Bijgewerkte gebruikersinterface voor het beheren van beveiligingsbasislijnen   <!-- 4091125     -->
@@ -269,9 +439,6 @@ In deze update wordt de functie **Apps** een onderliggend element van **Regio vo
 Van toepassing op: iOS
 
 ### <a name="device-enrollment"></a>Apparaatinschrijving
-
-#### <a name="windows-autopilot-reset-removes-the-devices-primary-user----4156123---"></a>Met Windows Autopilot opnieuw instellen wordt de primaire gebruiker van het apparaat verwijderd <!-- 4156123 -->
-Deze functie is uitgesteld en wordt uitgebracht in een aanstaande sprint.    
 
 #### <a name="windows-autopilot-support-for-hybrid-azure-ad-join----4809146--"></a>Ondersteuning voor Windows Autopilot voor Hybrid Azure AD Join <!-- 4809146-->
 Windows Autopilot voor bestaande apparaten ondersteunt nu Hybrid Azure AD Join (naast de bestaande ondersteuning voor Azure AD Join). Is van toepassing op Windows 10-apparaten, versie 1809 en hoger. Zie [Windows Autopilot voor bestaande apparaten](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) voor meer informatie.
@@ -539,7 +706,7 @@ U kunt vereisteregels maken op basis van PowerShell-scripts, registerwaarden en 
 #### <a name="configure-your-win32-apps-to-be-installed-on-intune-enrolled-azure-ad-joined-devices----3695227----"></a>Uw Win32-apps configureren voor een installatie op bij Intune ingeschreven apparaten die met Azure AD zijn gekoppeld <!-- 3695227  -->
 U kunt uw Win32-apps toewijzen voor een installatie op bij Intune ingeschreven apparaten die met Azure AD zijn gekoppeld. Zie [Win32-app-beheer](apps-win32-app-management.md) voor meer informatie over Win32-apps in Intune.
 
-#### <a name="device-overview-shows-primary-user---794259----"></a>Overzicht van apparaat geeft de primaire gebruiker weer <!--794259  -->
+#### <a name="device-overview-shows-primary-user---3794259----"></a>Overzicht van apparaat geeft de primaire gebruiker weer <!--3794259  -->
 In de overzichtspagina van het apparaat ziet u de primaire gebruiker, ook wel de UDA-gebruiker genoemd (UDA: User Device Affinity, gebruikersaffiniteit apparaat). Als u de primaire gebruiker van een apparaat wilt zien, kiest u **Intune** > **Apparaten** > **Alle apparaten** > Een apparaat kiezen. De primaire gebruiker wordt bovenaan de pagina **Overzicht** weergegeven.
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Aanvullende rapportage van beheerde Google Play-apps voor apparaten met Android Enterprise-werkprofiel <!-- 4105925  -->
@@ -581,8 +748,8 @@ Van toepassing op: Android Enterprise
 
 #### <a name="windows-update-notifications-----3316758-3316782----"></a>Windows Update-meldingen  <!-- 3316758, 3316782  -->
 We hebben twee *instellingen voor de gebruikerservaring* toegevoegd aan de Windows Update-ringconfiguraties die u vanuit de Intune-console kunt beheren. U kunt nu het volgende doen:
-- Gebruikers weigeren of toestaan om [te scannen op Windows-updates](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
-- Het [meldingsniveau van Windows Update](windows-update-settings.md#windows-update-notification-level) dat gebruikers zien, beheren.
+- Gebruikers weigeren of toestaan om [te scannen op Windows-updates](windows-update-settings.md).
+- Het [meldingsniveau van Windows Update](windows-update-settings.md) dat gebruikers zien, beheren.
 
 #### <a name="new-device-restriction-settings-for-android-enterprise-device-owner----3574254----"></a>Nieuwe apparaatbeperkingsinstellingen voor Android Enterprise-apparaateigenaar <!-- 3574254  -->
 Op Android Enterprise-apparaten kunt u een profiel voor apparaatbeperking maken om functies toe te staan of te beperken en regels voor wachtwoorden in te stellen (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > Kies **Android Enterprise** als platform > **Alleen apparaateigenaar > Apparaatbeperkingen** als profieltype). 

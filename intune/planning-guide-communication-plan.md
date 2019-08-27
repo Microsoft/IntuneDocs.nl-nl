@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: cba8b59931bd60db0d9169af5016f01118c64cf0
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548355"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022835"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Een communicatieplan voor de implementatie ontwikkelen
 
@@ -50,7 +50,7 @@ De informatie die moet worden gecommuniceerd is afhankelijk van de fase waarin d
 
 **Na de registratiefase**<br/> Communicatie die gericht is op groepen en gebruikers van de organisatie die zich hebben geregistreerd bij Intune. Geef informatie over aanvullende bronnen die mogelijk nuttig zijn voor de gebruikers, en verzamel feedback over hun ervaringen tijdens en na de registratie.
 
-Deze Engelstalige [registratiehandleiding voor eindgebruikers](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) kan hierbij van pas komen. U kunt de handleiding zo gebruiken of aanpassen voor uw organisatie.
+Mogelijk vindt u deze [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) nuttig. U kunt deze zo gebruiken of aanpassen voor uw organisatie.
 
 ## <a name="communication-delivery-methods"></a>Hoe de communicatie plaatsvindt
 

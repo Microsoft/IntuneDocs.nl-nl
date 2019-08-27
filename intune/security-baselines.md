@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 08/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 26ad26fedc6fe0e44328f5c77fa5f093c1230a28
+ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68679984"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978514"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Beveiligingsbasislijnen gebruiken om Windows 10-apparaten te gebruiken in Intune
 
@@ -37,7 +37,7 @@ Verschillende basislijntypen kunnen dezelfde instellingen omvatten, maar hiervoo
 > [!NOTE]
 > Microsoft raadt u af om previewversies van beveiligingsbasislijnen te gebruiken in een productieomgeving. De instellingen in de previewversie van een basislijn veranderen mogelijk in de loop van de preview. 
 
-Beveiligingsbasislijnen hebben als doel een veilige end-to-end-werkstroom in te richten voor het werken met Microsoft 365. Enkele voordelen zijn:
+Met beveiligingsbasislijnen kunt u een veilige end-to-end-werkstroom inrichten voor het werken met Microsoft 365. Enkele voordelen zijn:
 
 - Een beveiligingsbasislijn bevat de aanbevolen procedures en aanbevelingen voor instellingen die van invloed zijn op beveiliging. Intune werkt samen met hetzelfde Windows-beveiligingsteam dat beveiligingsbasislijnen voor groepsbeleid maakt. Deze aanbevelingen zijn gebaseerd op richtlijnen en uitgebreide ervaring.
 - Als Intune nieuw voor u is en u niet zeker weet waar moet beginnen, bieden beveiligingsbasislijnen uitkomst. U kunt snel een beveiligd profiel maken en implementeren, waarbij u er zeker van bent dat u de resources en de gegevens van uw organisatie helpt beschermen.
@@ -47,20 +47,21 @@ Beveiligingsbasislijnen hebben als doel een veilige end-to-end-werkstroom in te 
 
 [Windows-beveiligingsbasislijnen](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) is een goede bron voor meer informatie over deze functie. [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) is een goede bron meer informatie over MDM en wat u op Windows-apparaten kunt doen.
 
-## <a name="security-baseline-versions-and-instances"></a>Versies en instanties van beveiligingsbasislijnen
-Van tijd tot tijd worden basislijnen bijgewerkt. In elke nieuwe versie-instantie van een basislijn kunnen instellingen worden toegevoegd, verwijderd of veranderd. Als er in een nieuwe versie van Windows 10 bijvoorbeeld nieuwe Windows 10-instellingen beschikbaar komen, ontvangt de MDM-beveiligingsbasislijn mogelijk een nieuwe versie-instantie met de nieuwste instellingen.  
+## <a name="about-baseline-versions-and-instances"></a>Versies en instanties van basislijnen
 
-In de Intune-console ziet u welke beveiligingsbasislijnen er beschikbaar zijn, evenals informatie over deze basislijnen. Zo wordt er aangegeven hoeveel profielen u hebt die het type basislijn gebruiken, hoeveel verschillende instanties van het type basislijn er beschikbaar zijn en wanneer de nieuwste instantie beschikbaar is gesteld of is gepubliceerd.  In de volgende voorbeelden ziet u de tegel van een vaak gebruikte MDM-beveiligingsbasislijn:  
+In elke nieuwe versie-instantie van een basislijn kunnen instellingen worden toegevoegd, verwijderd of veranderd. Als er in een nieuwe versie van Windows 10 bijvoorbeeld nieuwe Windows 10-instellingen beschikbaar komen, ontvangt de MDM-beveiligingsbasislijn mogelijk een nieuwe versie-instantie met de nieuwste instellingen.  
+
+In de Intune-console worden op de tegel voor elke basislijn de naam van de basislijnsjabloon en basisgegevens over die basislijn weergegeven. Zo wordt er aangegeven hoeveel profielen u hebt die dat type basislijn gebruiken, hoeveel verschillende instanties (versies) van het type basislijn er beschikbaar zijn en een *laatste publicatiedatum*, die aangeeft wanneer die basislijnsjabloon aan uw tenant is toegevoegd. In de volgende voorbeelden ziet u de tegel van een vaak gebruikte MDM-beveiligingsbasislijn:  
 
 ![Basislijntegel](./media/security-baselines/baseline-tile.png)
 
-Als u informatie wilt bekijken over de basislijnversies die u gebruikt, selecteert u een basislijn en vervolgens **Versies**. Intune geeft details weer over de versies die door uw profielen worden gebruikt. In het deelvenster Versies kunt u een versie selecteren om meer informatie weer te geven over de profielen die hiervan gebruikmaken. U kunt ook twee verschillende versies selecteren en vervolgens kiezen voor **Basislijnen vergelijken** om een CSV-bestand te downloaden met de verschillen.  
+Als u meer gegevens wilt bekijken over de basislijnversies die u gebruikt, selecteert u een basislijntegel. Het deelvenster *Overzicht* wordt dan geopend. Selecteer vervolgens **Versies**. Intune geeft details weer over de versies van die basislijn die door uw profielen worden gebruikt. In het deelvenster Versies kunt u een versie selecteren om meer informatie weer te geven over de profielen die hiervan gebruikmaken. U kunt ook twee verschillende versies selecteren en vervolgens kiezen voor **Basislijnen vergelijken** om een CSV-bestand te downloaden met de verschillen.  
 
 ![Basislijnen vergelijken](./media/security-baselines/compare-baselines.png)
 
 Wanneer u een *beveiligingsbasislijnprofiel* maakt, gebruikt het profiel automatisch de meest recente instantie van de beveiligingsbasislijn.  Profielen die u eerder hebt gemaakt en die gebruikmaken van een eerdere instantie van de basislijnversie, kunt u gewoon blijven gebruiken en bewerken. Dit geldt ook voor basislijnen die met een previewversie zijn gemaakt. 
 
-Beveiligingsbasislijnprofielen ondersteunen een [wijziging van de versie](#change-the-baseline-instance-for-a-profile) van de gebruikte basislijn. Dit betekent dat wanneer er een nieuwe versie uitkomt, u geen nieuw basislijnprofiel hoeft te maken om er gebruik van te kunnen maken. In plaats daarvan selecteert u, wanneer u hier klaar voor bent, een basislijnprofiel en gebruikt u de ingebouwde optie om de instantieversie van dat profiel te wijzigen.  
+U kunt kiezen of u [de versie wilt wijzigen](#change-the-baseline-version-for-a-profile) van een basislijn die wordt gebruikt met een bepaald profiel. Dit betekent dat wanneer er een nieuwe versie uitkomt, u geen nieuw basislijnprofiel hoeft te maken om er gebruik van te kunnen maken. In plaats daarvan selecteert u, wanneer u hier klaar voor bent, een basislijnprofiel en gebruikt u de ingebouwde optie om de instantieversie van dat profiel te wijzigen in een nieuwe versie.  
 
 ## <a name="available-security-baselines"></a>Beschikbare beveiligingsbasislijnen 
 
@@ -79,18 +80,21 @@ De volgende beveiligingsbasislijninstanties zijn beschikbaar voor gebruik met In
 
 Profielen die u eerder hebt gemaakt op basis van een previewsjabloon, kunt u gewoon blijven gebruiken en bewerken, zelfs wanneer de sjabloon niet meer beschikbaar is voor nieuwe profielen. 
 
-## <a name="prerequisites"></a>Vereisten
+## <a name="manage-baselines"></a>Basislijnen beheren  
+
+Veelvoorkomende taken bij het werken met beveiligingsbasislijnen zijn onder meer:
+- [Een profiel maken](#create-the-profile): om de instellingen die u wilt gebruiken te configureren, en vervolgens de basislijn toe te wijzen aan groepen.
+- [De versie wijzigen](#change-the-baseline-version-for-a-profile): de basislijnversie die wordt gebruikt door een profiel wijzigen.
+- [Een basislijntoewijzing verwijderen](#remove-a-security-baseline-assignment): ontdek wat er gebeurt wanneer u stopt met het beheren van instellingen met een beveiligingsbasislijn.
+
+
+### <a name="prerequisites"></a>Vereisten
 - Als u basislijnen in Intune wilt beheren, moet de ingebouwde rol [Beleids- en profielbeheerder](role-based-access-control.md#built-in-roles) deel uitmaken van uw account.
 
 - Voor het gebruik van sommige basislijnen moet u mogelijk beschikken over een actief abonnement op aanvullende services, bijvoorbeeld Microsoft Defender ATP.  
 
-## <a name="co-managed-devices"></a>Apparaten met co-beheer
 
-Beveiligingsbasislijnen op met Intune-beheerde apparaten zijn vergelijkbaar met beheerde apparaten met co-beheer met Configuration Manager. Apparaten met co-beheer maken gebruik van System Center Configuration Manager en Microsoft Intune voor het tegelijkertijd beheren van de Windows 10-apparaten. Hiermee kunt u uw bestaande investering in Configuration Manager via de cloud koppelen aan de voordelen van Intune. [Overzicht van co-beheer](https://docs.microsoft.com/sccm/comanage/overview) is een goede informatiebron als u Configuration Manager gebruikt en ook wilt profiteren van de voordelen van de cloud.
-
-Wanneer u apparaten met co-beheer gebruikt, moet u de workload **Apparaatconfiguratie** (de instellingen ervan) overschakelen naar Intune. [Workloads voor apparaatconfiguratie](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) biedt meer informatie.
-
-## <a name="create-the-profile"></a>Het profiel maken
+### <a name="create-the-profile"></a>Het profiel maken
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en selecteer **Apparaatbeveiliging** > **Beveiligingsbaslijnen** om de lijst met beschikbare basislijnen weer te geven.
 
@@ -131,12 +135,13 @@ Wanneer u apparaten met co-beheer gebruikt, moet u de workload **Apparaatconfigu
    ![De basislijn controleren](./media/security-baselines/review.png) 
 
   
-8. Nadat u een profiel hebt maakt, bewerkt u dit door naar **Apparaatbeveiliging** > **Beveiligingsbasislijnen** te gaan, het type basislijn te selecteren dat u hebt geconfigureerd en vervolgens **Profielen** te selecteren.  Selecteer het profiel in de lijst met beschikbare profielen en selecteer vervolgens **Eigenschappen**. U kunt de instellingen bewerken op alle beschikbare configuratietabbladen en **Controleren en opslaan** selecteren om uw wijzigingen door te voeren.  
+8. Nadat u een profiel hebt maakt, bewerkt u dit door naar **Apparaatbeveiliging** > **Beveiligingsbasislijnen** te gaan, het type basislijn te selecteren dat u hebt geconfigureerd en vervolgens **Profielen** te selecteren. Selecteer het profiel in de lijst met beschikbare profielen en selecteer vervolgens **Eigenschappen**. U kunt de instellingen bewerken op alle beschikbare configuratietabbladen en **Controleren en opslaan** selecteren om uw wijzigingen door te voeren.  
 
-## <a name="change-the-baseline-instance-for-a-profile"></a>De basislijninstantie voor een profiel wijzigen
-Basislijnprofielen ondersteunen een wijziging van de basislijninstantie die door het profiel wordt gebruikt. U kunt een oudere instantie van de basislijn selecteren, maar ook (en dat is gebruikelijker) een nieuwere instantie.  U kunt echter niet wisselen van basislijn, bijvoorbeeld in een profiel de basislijn veranderen van Defender ATP in de MDM-beveiligingsbasislijn. 
+### <a name="change-the-baseline-version-for-a-profile"></a>De basislijnversie voor een profiel wijzigen  
 
-Wanneer u een wijziging van de basislijnversie configureert, hebt u de mogelijkheid om een CSV-bestand te downloaden met de verschillen tussen de twee basislijnversies. U krijgt ook de keuze om al uw aanpassingen in de oorspronkelijke basislijnversie te bewaren en deze toe te passen op de nieuwe versie, of alle standaardinstellingen te implementeren van de nieuwe basislijnversie die u hebt geselecteerd. 
+U kunt de versie van de basislijninstantie die wordt gebruikt met een profiel wijzigen.  Wanneer u de versie wijzigt, selecteert u een beschikbare instantie van dezelfde basislijn. U kunt echter niet wisselen tussen twee verschillende basislijntypen, bijvoorbeeld in een profiel de basislijn veranderen van Defender ATP in de MDM-beveiligingsbasislijn. 
+
+Wanneer u een wijziging van de basislijnversie configureert, kunt u een CSV-bestand downloaden met de verschillen tussen de twee basislijnversies. U kunt er ook voor kiezen om al uw aanpassingen in de oorspronkelijke basislijnversie te behouden of de nieuwe versie te implementeren met alle standaardwaarden. U kunt geen wijzigingen aanbrengen in afzonderlijke instellingen wanneer u de versie van een basislijn voor een profiel wijzigt. 
 
 Wanneer u de basislijn opslaat nadat de conversie is voltooid, wordt deze onmiddellijk geïmplementeerd in de toegewezen groepen.  
 
@@ -147,7 +152,7 @@ Wanneer u de basislijn opslaat nadat de conversie is voltooid, wordt deze onmidd
 
   Wanneer een instelling niet langer wordt beheerd door een basislijnprofiel, wordt deze niet opnieuw ingesteld op het apparaat. In plaats daarvan blijft de instelling op het apparaat ingesteld op de laatste configuratie, tot een ander proces de instelling wijzigt. Voorbeelden van processen die mogelijk een instelling wijzigen nadat u bent gestopt met het beheren hiervan, zijn onder meer een ander basislijnprofiel, een groepsbeleidinstelling of een handmatige configuratie op het apparaat. 
 
-### <a name="to-change-the-instance-for-a-baseline"></a>Ga als volgt te werk om de instantie van een basislijn te wijzigen  
+#### <a name="to-change-the-baseline-version-for-a-profile"></a>De basislijnversie voor een profiel wijzigen  
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecteer **Apparaatbeveiliging** > **Beveiligingsbasislijnen** en selecteer vervolgens de tegel voor het type basislijn met het profiel dat u wilt wijzigen.  
 
@@ -159,7 +164,7 @@ Wanneer u de basislijn opslaat nadat de conversie is voltooid, wordt deze onmidd
 
    ![Een versie selecteren](./media/security-baselines/select-instance.png)  
    
-4. Selecteer **Update bekijken** om een CSV-bestand te downloaden met de verschillen tussen de huidige instantieversie van het profiel en de nieuwe versie. Neem dit bestand door, zodat u weet welke instellingen er zijn verwijderd of toegevoegd, en wat de standaardwaarden zijn voor deze instellingen in het bijgewerkte profiel.  
+4. Selecteer **Update bekijken** om een CSV-bestand te downloaden met de verschillen tussen de huidige instantieversie van het profiel en de nieuwe versie. Neem dit bestand door, zodat u weet welke instellingen nieuw zijn of zijn verwijderd, en wat de standaardwaarden zijn voor deze instellingen in het bijgewerkte profiel.  
 
    Wanneer u klaar bent, gaat u door naar de volgende stap.  
 
@@ -169,14 +174,16 @@ Wanneer u de basislijn opslaat nadat de conversie is voltooid, wordt deze onmidd
 
 6. Selecteer **Verzenden**. Het profiel wordt bijgewerkt naar de geselecteerde basislijnversie en nadat de conversie is voltooid, wordt de basislijn onmiddellijk opnieuw geïmplementeerd in de toegewezen groepen.
 
-## <a name="remove-a-security-baseline-assignment"></a>Een beveiligingsbasislijntoewijzing verwijderen
+### <a name="remove-a-security-baseline-assignment"></a>Een beveiligingsbasislijntoewijzing verwijderen
 Wanneer een beveiligingsbasislijninstelling niet langer van toepassing is op een apparaat, of wanneer bepaalde instellingen in een basislijn zijn ingesteld op *Niet geconfigureerd*, worden deze instellingen op een apparaat niet teruggezet naar een vooraf beheerde configuratie. In plaats daarvan behouden de eerder beheerde instellingen op het apparaat de configuratie zoals die is ontvangen van de basislijn, tot een ander proces die instellingen op het apparaat bijwerkt.  
 
 Andere processen die later mogelijk de instellingen op het apparaat wijzigen, zijn onder meer implementatie van een andere of een nieuwe beveiligingsbasislijn, een apparaatconfiguratieprofiel, groepsbeleidconfiguraties of een handmatige bewerking van de instellingen op het apparaat.  
 
+## <a name="co-managed-devices"></a>Apparaten met co-beheer
 
+Beveiligingsbasislijnen op met Intune-beheerde apparaten zijn vergelijkbaar met beheerde apparaten met co-beheer met Configuration Manager. Apparaten met co-beheer maken gebruik van System Center Configuration Manager en Microsoft Intune voor het tegelijkertijd beheren van de Windows 10-apparaten. Hiermee kunt u uw bestaande investering in Configuration Manager via de cloud koppelen aan de voordelen van Intune. [Overzicht van co-beheer](https://docs.microsoft.com/sccm/comanage/overview) is een goede informatiebron als u Configuration Manager gebruikt en ook wilt profiteren van de voordelen van de cloud.
 
-
+Wanneer u apparaten met co-beheer gebruikt, moet u de workload **Apparaatconfiguratie** (de instellingen ervan) overschakelen naar Intune. [Workloads voor apparaatconfiguratie](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) biedt meer informatie.  
 
 ## <a name="q--a"></a>Vragenronde
 

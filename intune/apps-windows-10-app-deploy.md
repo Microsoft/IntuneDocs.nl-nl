@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: c853608f46bb01263ddd08193f729cdfb018fed9
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680075"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550066"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementatie van Windows 10-apps met Microsoft Intune 
 
@@ -44,6 +44,13 @@ Windows 10 LOB-apps worden ondertekend en geüpload naar de Intune-beheerconsole
 ## <a name="microsoft-store-for-business-apps"></a>Microsoft Store voor Bedrijven-apps
 
 Microsoft Store voor Bedrijven-apps zijn moderne apps die zijn aangeschaft in de Microsoft Store voor Bedrijven-beheerportal en vervolgens worden gesynchroniseerd met Microsoft Intune voor beheer. De apps kunnen zowel **online gelicentieerd** als **offline gelicentieerd** zijn. Updates van Microsoft Store voor Bedrijven-apps worden rechtstreeks door de Microsoft Store beheerd. Hiervoor is geen extra actie van u, de beheerder, vereist. U kunt bovendien met een aangepaste Uniform Resource Identifier (URI) voorkomen dat bepaalde apps worden bijgewerkt. Zie [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates) (Bedrijfsappbeheer - Voorkomen dat apps automatisch worden bijgewerkt) voor meer informatie. De gebruiker kan ook op het apparaat updates voor alle Microsoft Store voor Bedrijven-apps uitschakelen. 
+
+### <a name="categorize-microsoft-store-for-business-apps"></a>Microsoft Store voor Bedrijven-apps categoriseren 
+Voer de volgende stappen uit om Microsoft Store voor Bedrijven-apps te categoriseren: 
+
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selecteer **Client-apps** > **Apps** > selecteer een Microsoft Store voor Bedrijven-app > **App-gegevens** > **Categorie**. 
+3. Selecteer een categorie in de vervolgkeuzelijst.
 
 ## <a name="installing-apps-on-windows-10-devices"></a>Apps installeren op Windows 10-apparaten
 Afhankelijk van het type app kan de app op twee manieren worden geïnstalleerd op een Windows 10-apparaat:

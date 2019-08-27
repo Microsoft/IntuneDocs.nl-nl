@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e0be106b47d933c4407a02369edff3645682b1c
-ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
+ms.openlocfilehash: 6df8922f9f7252c493b4a2119814c0001245fa8b
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68700999"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550006"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
 
-Er zijn vier typen Autopilot-implementatie: [Zelfimplementatiemodus](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) (voor kiosken, digitale borden of een gedeeld apparaat), [White label](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) (hiermee kunnen partners of IT-medewerkers een Windows 10-pc alvast inrichten, zodat deze volledig is geconfigureerd en klaar is voor gebruik), [Autopilot voor bestaande apparaten](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) (hiermee kunt u gemakkelijk de meest recente versie van Windows 10 op uw bestaande apparaten implementeren) en [Door gebruiker gestuurde modus](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven) (voor traditionele gebruikers). 
+Er zijn vier typen Autopilot-implementatie: [Zelfimplementatiemodus](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (voor kiosken, digitale borden of een gedeeld apparaat), [White label](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) (hiermee kunnen partners of IT-medewerkers een Windows 10-pc alvast inrichten, zodat deze volledig is geconfigureerd en klaar is voor gebruik), [Autopilot voor bestaande apparaten](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) (hiermee kunt u gemakkelijk de meest recente versie van Windows 10 op uw bestaande apparaten implementeren) en [Door gebruiker gestuurde modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (voor traditionele gebruikers). 
 
 
 ## <a name="prerequisites"></a>Vereisten
@@ -49,10 +49,10 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
 
     ![Schermafbeelding van Windows Autopilot-apparaten](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Onder **Windows AutoPilot-apparaten toevoegen** bladert u naar het CSV-bestand met de apparaten die u wilt toevoegen. Het CSV-bestand moet de serienummers, Windows-product-id's, hardwarehashes en optionele groepstags vermelden. Er mogen maximaal 500 rijen in de lijst staan. Gebruik de header- en regelindeling die hieronder wordt weergegeven:
+2. Onder **Windows AutoPilot-apparaten toevoegen** bladert u naar het CSV-bestand met de apparaten die u wilt toevoegen. Het CSV-bestand moet de serienummers, Windows-product-id's, hardwarehashes, optionele groepstags en optionele toegewezen gebruiker vermelden. Er mogen maximaal 500 rijen in de lijst staan. Gebruik de header- en regelindeling die hieronder wordt weergegeven:
 
-    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`</br>
-    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>`
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User`</br>
+    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
 
     ![Schermafbeelding van het toevoegen van Windows Autopilot-apparaten](media/enrollment-autopilot/autopilot-import-device2.png)
 

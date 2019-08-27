@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 83b1de6c246baaef54a31c0b3f4c5094d066c64d
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528234"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549960"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune
 
@@ -85,16 +85,16 @@ U kunt aangepaste en ingebouwde rollen toewijzen aan uw gebruikers. Alleen aan g
 Als u een rol wilt bekijken, kiest u **Intune** > **Rollen** > **Alle rollen** > Een rol kiezen > Een toewijzing kiezen. Hier ziet u de volgende pagina's:
 
 - **Eigenschappen**: De naam, beschrijving, rol, leden, bereiken en tags van de toewijzing.
-- **Leden**: Alle gebruikers in vermelde groepen hebben een machtiging voor het beheren van de gebruikers/apparaten die in Bereik (groepen) worden vermeld.
-- **Bereik (groepen)** : Alle gebruikers/apparaten in deze groepen kunnen worden beheerd door de gebruikers in Leden.
+- **Leden**: Alle gebruikers in vermelde Azure-beveiligingsgroepen hebben een machtiging voor het beheren van de gebruikers/apparaten die in Bereik (groepen) worden vermeld.
+- **Bereik (groepen)** : Alle gebruikers/apparaten in deze Azure-beveiligingsgroepen kunnen worden beheerd door de gebruikers in Leden.
 - **[Bereik (tags)](scope-tags.md)** : Gebruikers in Leden kunnen de resources zien die over dezelfde bereiktags beschikken.
 
 ### <a name="multiple-role-assignments"></a>Meerdere roltoewijzingen
-Als een gebruiker meerdere roltoewijzingen heeft, worden machtigingen in deze roltoewijzingen als volgt uitgebreid naar verschillende objecten:
+Als een gebruiker meerdere roltoewijzingen, machtigingen en bereiktags heeft, worden deze roltoewijzingen als volgt uitgebreid naar verschillende objecten:
 
-- Toegewezen machtigingen zijn alleen van toepassing op de objecten (zoals beleid of apps) in het bereik van deze roltoewijzing (groepen). Toegewezen machtigingen zijn niet van toepassing op objecten in andere roltoewijzingen, tenzij de andere toewijzing deze specifiek verleent.
-- Andere machtigingen (zoals maken en lezen) zijn van toepassing op alle objecten van hetzelfde type (zoals alle beleidsregels of alle apps) in een van de toewijzingen van de gebruiker.
-- Machtigingen voor objecten van verschillende typen (zoals beleid of apps), zijn niet van toepassing op elkaar. Een leesmachtiging voor een beleid, bijvoorbeeld, biedt geen leesmachtiging voor apps in toewijzingen van de gebruiker.
+- Toegewezen machtigingen en bereiktags zijn alleen van toepassing op de objecten (zoals beleid of apps) in het bereik van deze roltoewijzing (groepen). Toegewezen machtigingen en bereiktags zijn niet van toepassing op objecten in andere roltoewijzingen, tenzij de andere toewijzing deze specifiek verleent.
+- Andere machtigingen (zoals maken, lezen, bijwerken en verwijderen) en bereiktags zijn van toepassing op alle objecten van hetzelfde type (zoals alle beleidsregels of alle apps) in een van de toewijzingen van de gebruiker.
+- Machtigingen en bereiktags voor objecten van verschillende typen (zoals beleid of apps), zijn niet van toepassing op elkaar. Een leesmachtiging voor een beleid, bijvoorbeeld, biedt geen leesmachtiging voor apps in toewijzingen van de gebruiker.
 
 ## <a name="next-steps"></a>Volgende stappen
 - [Een rol toewijzen aan een gebruiker](assign-role.md)
