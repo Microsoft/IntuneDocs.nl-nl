@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
-ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
+ms.openlocfilehash: e8300e9a4faf29ada79fad2a11e2470b965b53d1
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69487758"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998894"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Instellingen voor apparaten met Windows 10 en hoger om ze als kiosk uit te voeren via Intune
 
@@ -97,6 +97,17 @@ Hiermee wordt slechts één app op het apparaat uitgevoerd.
   - **Een Store-app toevoegen**: selecteer **Een Store-app toevoegen** en kies een app uit de lijst.
 
     Worden er geen apps in de lijst weergegeven? Voeg er een aantal toe met behulp van de stappen in [Client-apps](apps-add.md).
+    
+ - **Onderhouds venster voor het opnieuw opstarten van de app opgeven**: standaard is niet geconfigureerd, selecteer vereisen om te controleren of er apps zijn die opnieuw moeten worden opgestart om de installatie te volt ooien.
+ 
+     Als u kiosk browser of andere Microsoft Store voor zakelijke apps gebruikt, moet u bepalen hoe vaak moet worden gecontroleerd op app-updates die opnieuw moeten worden gestart om de installatie van de toepassing te volt ooien. Als dat niet zo is geconfigureerd, worden de Microsoft Store voor zakelijke apps na de installatie van een App-Update op een niet-gepland tijdstip 3 dagen opnieuw opgestart.
+     
+     - **Begin tijd**van onderhouds venster: Selecteer de datum en tijd van de dag waarop u clients wilt controleren op alle app-updates die opnieuw moeten worden gestart. De reguliere begintijd is middernacht, oftewel nul minuten.
+     
+     - **Terugkeer patroon**van onderhouds venster: standaard is dagelijks.
+         Stel in hoe vaak onderhouds Vensters voor app-updates worden uitgevoerd. Aanbeveling is dagelijks om te voor komen dat niet-geplande apps opnieuw worden gestart.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 ## <a name="multi-app-kiosks"></a>Kiosken voor meerdere apps
 
