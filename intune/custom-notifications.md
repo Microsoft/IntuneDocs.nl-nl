@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680105"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021754"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Aangepaste meldingen verzenden in Intune  
 
@@ -51,7 +51,6 @@ Aangepaste meldingen hebben een korte titel en een hoofdtekst van maximaal 500 t
 - Groepen kunnen gebruikers en apparaten omvatten, maar berichten worden alleen naar gebruikers verzonden. Ze worden naar alle iOS- en Android-apparaten verzonden die de gebruiker heeft geregistreerd.  
 
 **Levering**:  
-- Intune probeert berichten gedurende maximaal één uur nadat de melding is verzonden, af te leveren.  
 - Intune verzendt berichten naar de app Bedrijfsportal van de gebruikers. Deze app creëert vervolgens de pushmelding. Gebruikers hoeven niet bij de app aangemeld te zijn om meldingen naar het apparaat te kunnen pushen.  
 - Intune en de app Bedrijfsportal kunnen niet garanderen dat aangepaste meldingen worden afgeleverd. Aangepaste meldingen kunnen met enkele uren vertraging worden weergegeven (áls ze al worden weergegeven), dus het is geen goed idee om deze voor dringende berichten te gebruiken.  
 - Aangepaste meldingen vanuit Intune worden als reguliere pushmeldingen weergegeven op apparaten. Als de app Bedrijfsportal is geopend op een iOS-apparaat wanneer de melding wordt ontvangen, wordt de melding in de app weergegeven in plaats van als pushmelding.  
