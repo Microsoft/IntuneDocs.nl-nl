@@ -1,12 +1,12 @@
 ---
-title: Een rapport maken van de OData-feed met Power BI
+title: Een Intune-rapport maken van de OData-feed met Power BI
 titleSuffix: Microsoft Intune
 description: Maak een treemapvisualisatie met Power BI Desktop, met een interactief filter uit de Intune-datawarehouse-API.
 keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 519ac8529737a870eb4f8ce9a3e06af5b1dcac79
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
+ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353661"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69894337"
 ---
-# <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Een rapport maken van de OData-feed met Power BI
+# <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Een Intune-rapport maken van de OData-feed met Power BI
 
-In dit artikel leest u hoe u een treemapvisualisatie maakt in Power BI Desktop met een interactief filter. Uw CFO wil bijvoorbeeld weten hoe de algehele verdeling van apparaten is in vergelijking met de verhouding bedrijfseigen-persoonlijke apparatuur. Deze treemap biedt inzicht in het totaalaantal apparaattypen. U kunt het aantal iOS-, Android- en Windows-apparaten die al dan niet eigendom zijn van het bedrijf weergeven.
+In dit artikel wordt uitgelegd hoe u een Treemap-visualisatie van uw intune-gegevens maakt met behulp van Power BI Desktop die gebruikers een interactief filter hebben. Uw CFO kan bijvoorbeeld weten hoe de algehele distributie van apparaten vergelijkt tussen apparaten in bedrijfs eigendom en persoonlijke apparaten. Deze treemap biedt inzicht in het totaalaantal apparaattypen. U kunt het aantal iOS-, Android- en Windows-apparaten die al dan niet eigendom zijn van het bedrijf weergeven.
 
 ## <a name="overview-of-creating-the-chart"></a>Overzicht van het maken van de grafiek
 
@@ -42,7 +42,7 @@ Ga als volgt te werk voor het maken van deze grafiek:
 
 In Power BI werkt u met tabellen. Een tabel bevat gegevensvelden. Elk gegevensveld heeft een gegevenstype. Het veld kan alleen gegevens van dat gegevenstype bevatten. Gegevenstypen zijn getallen, tekst, datums enzovoort. De tabellen in Power BI worden gevuld met recente historische gegevens van uw tenant wanneer u het model laadt. Hoewel de specifieke gegevens in de loop der tijd veranderen, verandert de tabelstructuur niet tenzij het onderliggende gegevensmodel wordt bijgewerkt.
 
-Mogelijk zijn de termen _entiteit_ en _tabel_ enigszins verwarrend. Het gegevensmodel is toegankelijk via een OData-feed. De containers die in Power BI tabellen worden genoemd, heten entiteiten in de context van OData. Beide termen verwijzen naar hetzelfde item dat uw gegevens bevat.
+Mogelijk zijn de termen *entiteit* en *tabel* enigszins verwarrend. Het gegevens model is toegankelijk via een OData-feed (Open Data Protocol). De containers die in Power BI tabellen worden genoemd, heten entiteiten in de context van OData. Beide termen verwijzen naar hetzelfde item dat uw gegevens bevat. Zie [odata-overzicht](/odata/overview)voor meer informatie over odata.
 
 ## <a name="install-power-bi-desktop"></a>Power BI Desktop installeren
 
@@ -54,29 +54,29 @@ Installeer de nieuwste versie van Power BI Desktop. U kunt Power BI Desktop down
 > U hebt machtigingen nodig om **Rapporten** te maken in Intune. Zie [Autorisatie](reports-api-url.md) voor meer informatie.
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Open het deelvenster **Intune Data Warehouse** door de link Data Warehouse onder **Andere taken** te selecteren aan de rechterkant van de blade **Microsoft Intune - Overzicht**.
-4. Kopieer de aangepaste feed-URL. Bijvoorbeeld: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-1. Open Power BI Desktop.
-2. Kies **Gegevens ophalen** > **OData-feed**.
-3. Plak de aangepaste feed-URL in het vak voor de URL in het venster **OData-feed**.
-4. Selecteer **Eenvoudig**.
+2. Open het deelvenster **Intune Data Warehouse** door de link Data Warehouse onder **Andere taken** te selecteren aan de rechterkant van de blade **Microsoft Intune - Overzicht**.
+3. Kopieer de aangepaste feed-URL. Bijvoorbeeld: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. Open Power BI Desktop.
+5. Selecteer in de menu balk de optie **bestand** > **ophalen gegevens** > **Odata-feed**.
+6. Plak de aangepaste feed-URL, die u hebt gekopieerd uit de vorige stap, in het vak URL in het venster **OData-feed** .
+7. Selecteer **Eenvoudig**.
 
     ![OData-feed voor het Intune-datawarehouse van uw tenant](media/reports-create-01-odatafeed.png)
 
-9. Selecteer **OK**.
-10. Selecteer **Organisatieaccount** en meld u aan met uw Intune-referenties.
+8. Selecteer **OK**.
+9. Selecteer **Organisatieaccount** en meld u aan met uw Intune-referenties.
 
     ![Referenties organisatieaccount](media/reports-create-02-org-account.png)
 
-11. Selecteer **Verbinden**. De Navigator wordt geopenden er wordt een lijst met tabellen in het Intune-datawarehouse weergegeven.
+10. Selecteer **Verbinden**. De Navigator wordt geopenden er wordt een lijst met tabellen in het Intune-datawarehouse weergegeven.
 
     ![Schermopname van de Navigator: de lijst met datawarehousetabellen](media/reports-create-02-loadentities.png)
 
-12. Selecteer de tabellen **Apparaten** en **OwnerTypes**.  Selecteer **Laden**. Power BI laadt gegevens in het model.
+11. Selecteer de tabellen **Apparaten** en **OwnerTypes**.  Selecteer **Laden**. Power BI laadt gegevens in het model.
 
 ## <a name="create-a-relationship"></a>Relatie maken
 
-U kunt meerdere tabellen importeren, zodat u niet alleen de gegevens in een enkele tabel kunt analyseren, maar ook gerelateerde gegevens in meerdere tabellen.  Power BI heeft een functie genaamd **autodetectie** die relaties zoekt en maakt. De tabellen in het datawarehouse zijn gebouwd om te werken met de autodetectiefunctie in Power BI. Maar ook als Power BI de relaties niet automatisch vindt, beheert u de relaties toch.
+U kunt meerdere tabellen importeren, zodat u niet alleen de gegevens in een enkele tabel kunt analyseren, maar ook gerelateerde gegevens in meerdere tabellen. Power BI heeft een functie met de naam **autodetectie** die voor u relaties zoekt en maakt. De tabellen in het datawarehouse zijn gebouwd om te werken met de autodetectiefunctie in Power BI. Maar ook als Power BI de relaties niet automatisch vindt, kunt u toch nog de relaties beheren.
 
 ![Relaties beheren van gerelateerde gegevens in verschillende tabellen](media/reports-create-03-managerelationships.png)
 
@@ -87,15 +87,15 @@ De relatie wordt weergegeven met een kolom Van en een kolom Naar. In dit voorbee
 
 ## <a name="create-a-treemap-visualization"></a>Een treemapvisualisatie maken
 
-In een treemapgrafiek worden hiërarchische gegevens weergegeven als vakken binnen vakken. Elke vertakking van de hiërarchie is een vak dat kleinere vakken bevat, die subvertakkingen weergeven. U kunt Power BI Desktop gebruiken om een treemap van uw Intune-gegevens te maken.
+In een treemapgrafiek worden hiërarchische gegevens weergegeven als vakken binnen vakken. Elke vertakking van de hiërarchie is een vak dat kleinere vakken bevat, die subvertakkingen weergeven. U kunt Power BI bureau blad gebruiken om een Treemap van uw intune-Tenant gegevens te maken waarin de relatieve aantallen van de fabrikant typen van het apparaat worden weer gegeven.
 
 ![Power BI-treemapvisualizaties](media/reports-create-03-treemap.png)
 
-1. Selecteer een grafiektype. Selecteer **Treemap**.
-2. Ga naar de tabel **apparaten** in het gegevensmodel.
-3. Vouw de tabel **apparaten** uit en selecteer het gegevensveld **fabrikant** in het deelvenster **Velden**.
-4. Sleep het gegevensveld **fabrikant** naar de treemapgrafiek op het rapportcanvas.
-5. Sleep het gegevensveld **deviceKey** van de tabel **apparaten** naar de sectie **Waarden** onder het deelvenster **Visualisaties** en plaats het op het vak met de tekst **Gegevensveld hier neerzetten**.  
+1. Zoek in het deel venster **visualisaties** naar en selecteer **Treemap**. Het **Treemap** -diagram wordt toegevoegd aan het rapport canvas.
+2. Zoek in het deel venster **velden** de `devices` tabel.
+3. Vouw de `devices` tabel uit en selecteer `manufacturer` het gegevens veld.
+4. Sleep het `manufacturer` gegevens veld naar het canvas van het rapport en zet het neer in het **Treemap** -diagram.
+5. Sleep het `deviceKey` gegevens veld van de `devices` tabel naar het deel venster **Visualisaties** en zet het neer onder de sectie **waarden** in het vak **Voeg gegevens velden toe**.  
 
 U hebt nu een visueel element dat de verdeling van apparaten per fabrikant binnen uw organisatie weergeeft.
 
@@ -105,18 +105,19 @@ U hebt nu een visueel element dat de verdeling van apparaten per fabrikant binne
 
 U kunt een filter aan uw treemap toevoegen om aanvullende vragen te beantwoorden met uw app.
 
+1. Selecteer het rapportcanvas en selecteer vervolgens het **slicerpictogram** (![treemap met gegevensmodel en ondersteunde relaties](media/reports-create-slicer.png)) onder **Visualisaties** om een filter toe te voegen. De lege visualisatie van de **slicer** wordt weer gegeven op het canvas.
+2. Zoek in het deel venster **velden** de `ownerTypes` tabel.
+3. Vouw de `ownerTypes` tabel uit en selecteer `ownerTypeName` het gegevens veld.
+4. Sleep het `onwerTypeName` gegevens veld van de `ownerTypes` tabel naar het deel venster **filters** en zet het neer onder het gedeelte **filters op deze pagina** in het vak **Voeg gegevens velden toe**.  
 
-1. Selecteer het rapportcanvas en selecteer vervolgens het **slicerpictogram** (![treemap met gegevensmodel en ondersteunde relaties](media/reports-create-slicer.png)) onder **Visualisaties** om een filter toe te voegen.
-2. Ga naar de tabel **ownerTypes** en sleep het gegevensveld **ownertypeName** naar de sectie **Filters** in het deelvenster **Visualisaties**.  
-
-   Onder de tabel apparaten staat een gegevensveld genaamd **OwnerTypeKey**, dat ene code bevat die aangeeft of het apparaat persoonlijk is of eigendom van het bedrijf. Om de beschrijvende namen in dit filter weer te geven, gaat u naar de tabel **ownerTypes** en sleept u de **ownerTypeName**. Dit voorbeeld toont aan hoe het gegevensmodel relaties tussen tabellen ondersteunt.
+   In de `OwnerTypes` tabel is er een gegevens veld met de `OwnerTypeKey`naam dat een gegevens bevat over de vraag of een apparaat bedrijfs eigendom of persoonlijk is. Ga naar de tabel `ownerTypes` en sleep de **ownerTypeName** naar de slicer om de beschrijvende namen weer te geven. Dit voorbeeld toont aan hoe het gegevensmodel relaties tussen tabellen ondersteunt.
 
 ![Treemap met filter: ondersteunt relaties tussen tabellen](media/reports-create-08_ownertype.png)
 
 U hebt nu een interactief filter dat u kunt gebruiken om te schakelen tussen apparaten in bedrijfseigendom en persoonlijke apparaten. Gebruik dit filter om te zien hoe de distributie verandert.
 
-1. Selecteer **Bedrijf** om de apparaten in bedrijfseigendom weer te geven.
-2. Selecteer **Persoonlijk** om de persoonlijke apparaten weer te geven.
+1. Selecteer **bedrijf** in de slicer om te zien dat de apparaat-eigendom van het bedrijf is gedistribueerd.
+2. Selecteer **persoonlijk** in de slicer om de persoonlijke apparaten weer te geven.
 
 ## <a name="next-steps"></a>Volgende stappen
 
