@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2825286c652a7229c32435a24ca816f21b8f2ff4
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: 63ab31845ba4d084c81ff33970703ec630d67daa
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993744"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70002029"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Met Microsoft Intune beveiligde apps  
 
-Door Intune beheerde apps worden ingeschakeld met een uitgebreide reeks van beveiligingsbeleidsregels voor mobiele toepassingen. Met beheerde apps kunt u:
+De apps in dit onderwerp zijn apps van ondersteunde partners en Microsoft die vaak worden gebruikt met Microsoft Intune. Met Intune beschermde apps worden ingeschakeld met een uitgebreide reeks van beveiligingsbeleidsregels voor mobiele toepassingen. Met deze apps kunt u:
 - De functies Kopiëren en plakken en Opslaan als beperken
 - Webkoppelingen zo configureren dat deze binnen de beveiligde Microsoft-browser worden geopend
 - Het gebruik van meerdere identiteiten en voorwaardelijke toegang op app-niveau inschakelen
@@ -77,7 +77,7 @@ In de volgende tabellen staan details van ondersteunde apps van Microsoft en par
 | App-titel | App-beschrijving | App Store-koppelingen voor ondersteunde platforms | 
 |-------------------------------------------------|-------------------------|---------------------------------------------|
 | **Acronis Access**<p><img alt="Partner app - Acronis Access icon" src="./media/apps-supported-intune-apps/icon-p-acronis-access.png" width="100"> | Overal en met elk apparaat beveiligde toegang tot uw zakelijke bestanden met Acronis Access. Deel eenvoudig documenten met collega's, klanten en verkopers terwijl u bestanden en gegevens veilig en privé bewaart op een plek waar alleen u en uw organisatie bij kunnen. De app is ontworpen voor extreem gebruiksgemak met ongeëvenaarde mogelijkheden voor beveiliging, privacy en beheer. | [iOS Store-koppeling](https://itunes.apple.com/us/app/acronis-access/id429704844?mt=8) |                       
-| **Adobe Acrobat Reader voor Microsoft Intune**<p><img alt="Partner app - Adobe Acrobat Reader for Microsoft Intune icon" src="./media/apps-supported-intune-apps/icon-p-adobe-acrobat-reader.png" width="100"> | Open, bekijk en werk in PDF-bestanden in een door Microsoft Intune beheerde omgeving met Adobe Acrobat Reader voor Intune. Beschikbaar voor iOS en Android. | [Android Store-koppeling](https://play.google.com/store/apps/details?id=com.adobe.reader.intune),<br>[iOS Store-koppeling](https://geo.itunes.apple.com/us/app/adobe-acrobat-reader-for-microsoft/id1051980424?mt=8) |                      
+| **Adobe Acrobat Reader**<p><img alt="Partner app - Adobe Acrobat Reader icon" src="./media/apps-supported-intune-apps/icon-p-adobe-acrobat-reader.png" width="100"> | Open, bekijk en werk in PDF-bestanden in een door Microsoft Intune beheerde omgeving met Adobe Acrobat Reader. Beschikbaar voor iOS en Android. | [Android Store-koppeling](https://play.google.com/store/apps/details?id=com.adobe.reader),<br>[iOS Store-koppeling](https://apps.apple.com/app/adobe-acrobat-reader-for-pdf/id469337564) |                      
 | **Blackberry Enterprise BRIDGE**<p><img alt="Partner app - Blackberry Enterprise BRIDGE icon" src="./media/apps-supported-intune-apps/icon-p-blackberry-enterprise-bridge.png" width="100"> | Met BlackBerry Enterprise BRIDGE bekijkt, bewerkt en slaat u documenten veilig op met door Intune beheerde Microsoft-apps, zoals Microsoft Word, Microsoft PowerPoint en Microsoft Excel van BlackBerry Dynamics. U kunt uw documenten delen als e-mailbijlagen en gegevensversleuteling behouden tijdens deelprocessen voor documenten tussen BlackBerry Dynamics en door Intune beheerde mobiele apps. | [Android Store-koppeling](https://play.google.com/store/apps/details?id=com.blackberry.intune.bridge),<br>[iOS Store-koppeling](https://itunes.apple.com/us/app/blackberry-enterprise-bridge/id1305494864?mt=8) |
 | **Box for EMM**<p><img alt="Partner app - Box for EMM icon" src="./media/apps-supported-intune-apps/icon-p-box-for-emm.png" width="100"> | Laat werknemers verbinden en samenwerken terwijl u met Box voor EMM gecentraliseerd beveiliging, beleid en inrichting beheert in mobiele apparaten. | [iOS Store-koppeling](https://itunes.apple.com/us/app/box-for-emm/id882085676?mt=8) |
 | **CellTrust SL2™ voor Microsoft Intune**<p><img alt="Partner app - CellTrust SL2 for Microsoft Intune icon" src="./media/apps-supported-intune-apps/icon-p-celltrust-sl2.png" width="100"> | CellTrust SL2™ voor Microsoft Intune is een toepassing op bedrijfsniveau die werkt door een beveiligd mobiel bedrijfsnummer (MBN) toe te wijzen aan persoonlijke apparaten; zo blijven de persoonlijke en zakelijke communicatie op één apparaat van elkaar gescheiden. Met deze handige oplossing worden sms-berichten en zakelijke gesprekken po het apparaat beveiligd zonder dat er gebruik wordt gemaakt van het persoonlijke nummer. Dit is van groot belang binnen bedrijven waar zakelijke communicatie goed moet worden beveiligd en als eDiscovery moet worden gearchiveerd en er aan bepaalde beleidsregels moet worden voldaan. <br> Microsoft Intune is een clouddienst voor het beheren van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) die uw werknemers in staat stelt om productief te zijn terwijl uw zakelijke gegevens veilig blijven. <br> CellTrust SL2™ voor Microsoft Intune biedt een krachtig platform voor bedrijven waarmee werknemers onderweg kunnen werken. Ze krijgen hiermee eenvoudig toegang tot beveiligde zakelijke toepassingen en kunnen gewoon bellen en sms'en. De app is ontwikkeld op basis van Microsoft Intune SDK's en aangepaste functies zodat organisaties de app verder kunnen aanpassen aan hun branche en IT-vereisten. | [Android Store-koppeling](https://play.google.com/store/apps/details?id=com.celltrust.sl2_intune),<br>[iOS Store-koppeling](https://itunes.apple.com/us/app/celltrust-sl2-for-intune/id1442087513?mt=8) |

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 330bfa319ca0202a5edc09d8f27e40c18ce89d39
-ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.openlocfilehash: 0cda32e72956e5998d5ebc8d8bed2baea39951ec
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69582943"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021803"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -70,9 +70,10 @@ Als u PKCS-certificaten wilt gebruiken met Intune, hebt u de volgende infrastruc
   Deze connector verwerkt aanvragen voor PFX-bestanden die zijn geïmporteerd in Intune voor S/MIME-e-mailversleuteling voor een specifieke gebruiker.  
 
   Deze connector kan automatisch worden bijgewerkt wanneer nieuwe versies beschikbaar komen. Als u de updatemogelijkheid wilt gebruiken, moet u:
-  - De connector voor geïmporteerde PFX-certificaten voor Microsoft Intune installeren op uw server.
-  - Voor het automatisch ontvangen van belangrijke updates moet u ervoor zorgen dat firewalls geopend zijn, waarmee de connector contact kan opnemen met **autoupdate.msappproxy.net** op poort **443**.  
+  - De connector voor geïmporteerde PFX-certificaten voor Microsoft Intune installeren op uw server.  
+  - Voor het automatisch ontvangen van belangrijke updates moet u ervoor zorgen dat firewalls geopend zijn, waarmee de connector contact kan opnemen met **autoupdate.msappproxy.net** op poort **443**.   
 
+  Raadpleeg [Microsoft Intune Certificate Connector](intune-endpoints.md#microsoft-intune-certificate-connector) voor meer informatie over alle netwerkeindpunten waar de connector toegang tot moet hebben.
 
 - **Windows Server**:  
   U gebruikt een Windows Server als host voor:

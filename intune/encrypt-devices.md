@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b7c76439b734837b5a4dd7e5fdbba5d21d0681d7
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 5e97e23322150c7a030a3657b6476090d719a448
+ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960429"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70027405"
 ---
 # <a name="use-device-encryption-with-intune"></a>Apparaatversleuteling gebruiken met Intune  
 
@@ -80,6 +80,8 @@ Voor meer informatie over de FileVault-instelling die u met Intune kunt beheren,
 ### <a name="manage-filevault"></a>FileVault beheren  
 
 Wanneer Intune een macOS-apparaat versleutelt met FileVault, kunt u de FileVault-herstelsleutels bekijken en beheren tijdens het bekijken van het Intune-[versleutelingsrapport](encryption-monitor.md).  
+
+Nadat Intune een macOS-apparaat versleutelt met FileVault, kunt u op elk apparaat de persoonlijke herstelsleutel van het apparaat bekijken in de online bedrijfsportal. Kies in de online bedrijfsportal het versleutelde macOS-apparaat en kies vervolgens 'Herstelsleutel ophalen' als externe actie. 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>BitLocker-versleuteling voor Windows 10  
 

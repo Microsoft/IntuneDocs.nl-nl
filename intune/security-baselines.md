@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ad26fedc6fe0e44328f5c77fa5f093c1230a28
-ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
+ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978514"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063035"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Beveiligingsbasislijnen gebruiken om Windows 10-apparaten te gebruiken in Intune
 
@@ -64,6 +64,12 @@ Wanneer u een *beveiligingsbasislijnprofiel* maakt, gebruikt het profiel automat
 U kunt kiezen of u [de versie wilt wijzigen](#change-the-baseline-version-for-a-profile) van een basislijn die wordt gebruikt met een bepaald profiel. Dit betekent dat wanneer er een nieuwe versie uitkomt, u geen nieuw basislijnprofiel hoeft te maken om er gebruik van te kunnen maken. In plaats daarvan selecteert u, wanneer u hier klaar voor bent, een basislijnprofiel en gebruikt u de ingebouwde optie om de instantieversie van dat profiel te wijzigen in een nieuwe versie.  
 
 ## <a name="available-security-baselines"></a>Beschikbare beveiligingsbasislijnen 
+
+ U kunt een of meer van de beschikbare basislijnen tegelijkertijd gebruiken in uw Intune-omgeving. U kunt ook meerdere exemplaren van dezelfde beveiligingsbasislijnen gebruiken die verschillende aanpassingen hebben. 
+
+Wanneer u meerdere beveiligingsbasislijnen gebruikt, raadpleegt u de instellingen in elke basislijn om vast te stellen wanneer verschillende basislijnen conflicterende waarden voor dezelfde instelling opgeven. Aangezien u beveiligingsbasislijnen kunt implementeren die voor verschillende doeleinden zijn ontworpen en meerdere exemplaren van dezelfde basislijn met aangepaste instellingen kunt implementeren, onstaan er [configuratieconflicten voor apparaten die moeten worden onderzocht en opgelost](security-baselines-monitor.md#troubleshoot-using-per-setting-status).  Houd ook rekening met uw [apparaatconfiguratieprofielen](device-profiles.md), die veel van dezelfde instellingen configureren als beveiligingsbasislijnen. 
+
+
 
 De volgende beveiligingsbasislijninstanties zijn beschikbaar voor gebruik met Intune. Gebruik de koppelingen om de instellingen weer te geven voor de meest recente instantie van elke basislijn. 
 

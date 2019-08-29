@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
+ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550113"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70027392"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Apparaatversleuteling bewaken met Intune   
 
-Het Microsoft Intune-versleutelingsrapport is een centrale locatie voor het bekijken van informatie over de versleutelingsstatus van uw beheerde apparaten. Bekijk details over de versleutelingsstatus van een apparaat en ontdek opties voor het beheren van herstelsleutels voor apparaten. Welke opties er voor herstelsleutels beschikbaar zijn, is afhankelijk van het type apparaat dat u bekijkt.  
+Het Microsoft Intune-versleutelingsrapport is een centrale locatie om informatie over de versleutelingsstatus van een apparaat te bekijken en voor opties om herstelsleutels voor apparaten te beheren. Welke opties er voor herstelsleutels beschikbaar zijn, is afhankelijk van het type apparaat dat u bekijkt.  
 
 Voor het rapport meldt u zich aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Ga naar **Apparaatconfiguratie** en selecteer vervolgens bij *Monitor* de optie **Versleutelingsrapport**.  
 
@@ -64,7 +64,7 @@ In het deelvenster Versleutelingsrapport ziet u een lijst met de apparaten die u
 
 - **Versleutelingsstatus**: deze optie geeft aan of de besturingssysteemschijf is versleuteld.  
 
-- **Principal-naam gebruiker**: de primaire gebruiker van het apparaat.  
+- **Principalnaam naam van gebruiker**: de primaire gebruiker van het apparaat.  
 
 ### <a name="device-encryption-status"></a>Status apparaatversleuteling  
 
@@ -74,9 +74,11 @@ Wanneer u een apparaat selecteert in het versleutelingsrapport, wordt in Intune 
 
 - **Gereedheid voor versleuteling**: met deze functie controleert u of de apparaten gereed zijn om versleuteling te ondersteunen op basis van het MDM-beleid.  
   
-  Bijvoorbeeld: Als een Windows 10-apparaat de status *Niet gereed* heeft, kan het zijn dat het apparaat toch ondersteuning biedt voor versleuteling. De status *Gereed* wordt weergegeven als het Windows 10-apparaat beschikt over een TPM-chip. Er zijn geen TPM-chips vereist voor het ondersteunen van versleuteling. (Zie Gereedheid voor versleuteling in het vorige gedeelte voor meer informatie.)  
+  Bijvoorbeeld: Als een Windows 10-apparaat de status *Niet gereed* heeft, kan het zijn dat het apparaat toch ondersteuning biedt voor versleuteling. De status *Gereed* wordt weergegeven als het Windows 10-apparaat beschikt over een TPM-chip. Er zijn geen TPM-chips vereist voor het ondersteunen van versleuteling. (Raadpleeg *Gereedheid voor versleuteling* voor meer informatie)  
 
-- **Versleutelingsstatus**: deze optie geeft aan of de besturingssysteemschijf is versleuteld. Het kan tot 24 uur duren voordat Intune de versleutelingsstatus van apparaten of een wijziging in deze status rapporteert.  
+- **Versleutelingsstatus**: deze optie geeft aan of de besturingssysteemschijf is versleuteld. Het kan tot 24 uur duren voordat Intune de versleutelingsstatus van apparaten of een wijziging in deze status rapporteert. Deze tijd omvat de tijd om het besturingssysteem te versleutelen en de tijd die het apparaat nodig heeft om te rapporteren bij Intune.  
+
+  Als u de rapportage van de FileVault-versleutelingsstatus wilt versnellen voordat het apparaat normaal incheckt, moeten gebruikers hun apparaten synchroniseren nadat de versleuteling is voltooid.  
 
 - **Profielen**: een lijst met de profielen voor *apparaatconfiguratie* die op dit apparaat van toepassing zijn en die met de volgende waarden zijn geconfigureerd:  
 
@@ -86,11 +88,13 @@ Wanneer u een apparaat selecteert in het versleutelingsrapport, wordt in Intune 
 
   - Windows 10:
     - Profieltype = *Endpoint Protection*  
-    - Instellingen > Windows-versleuteling > Apparaten versleutelen = *Vereist*  
+    - Instellingen > Windows-versleuteling > Apparaten versleutelen = *Vereisen*  
 
   U kunt de lijst profielen gebruiken om afzonderlijke beleidsregels te zoeken om te beoordelen, als in de *samenvatting van de profielstatus* problemen worden aangeduid.  
 
 - **Samenvatting van de profielstatus**: een samenvatting van de profielen die op dit apparaat van toepassing zijn. De samenvatting staat voor de minst gunstige voorwaarde voor alle profielen die van toepassing zijn. Als één van meerdere van toepassing zijnde profielen bijvoorbeeld leidt tot een fout, wordt in de *samenvatting van de profielstatus* *Fout* weergegeven.  
+  
+  Voor meer informatie over een status gaat u naar **Intune** > **Apparaatconfiguratie** > **Profielen** en selecteert u het profiel. U kunt ook naar **Apparaatstatus** gaan en een apparaat selecteren.  
 
 - **Statusdetails**: geavanceerde details over de versleutelingsstatus van het apparaat.  
 
@@ -168,7 +172,7 @@ Wanneer Intune een macOS-apparaat voor het eerst versleutelt met FileVault, word
  
 Bij beheerde apparaten kan Intune een escrow-sleutel maken van de persoonlijke herstelsleutel. Met escrow-sleutels kunnen Intune-beheerders sleutels vernieuwen om de bescherming van apparaten te verbeteren en kunnen gebruikers verloren geraakte of vernieuwde persoonlijke herstelsleutels herstellen.  
  
-Intune biedt ondersteuning voor meerdere opties voor het vernieuwen en herstellen van persoonlijke herstelsleutels. Persoonlijke herstelsleutels kunnen bijvoorbeeld worden vernieuwd als de huidige persoonlijke herstelsleutel verloren is geraakt en er sprake is van een risico.  
+Intune biedt ondersteuning voor meerdere opties voor het vernieuwen en herstellen van persoonlijke herstelsleutels. Persoonlijke herstelsleutels kunnen bijvoorbeeld worden vernieuwd als de huidige persoonlijke herstelsleutel verloren is geraakt of er sprake is van een risico.  
  
 > [!IMPORTANT]  
 >  Apparaten die door gebruikers zijn versleuteld (en niet door Intune), kunnen niet door Intune worden beheerd. Dit betekent dat Intune geen escrow-sleutel kan maken voor het persoonlijke herstel van de apparaten en dat de vernieuwing van de herstelsleutel niet kan worden beheerd.  Voordat Intune kan worden gebruikt voor het beheer van FileVault en herstelsleutels voor het apparaat, moet de gebruiker het apparaat ontsleutelen. Daarna kan het apparaat met Intune worden versleuteld.  
