@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
+ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960420"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70158023"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Instellingen in Intune voor eindpuntbescherming in macOS  
 
@@ -100,14 +100,14 @@ Zie [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fd
     - **Draaiing van persoonlijke herstel sleutel** : Geef op hoe vaak de persoonlijke herstel sleutel voor een apparaat wordt gedraaid. U kunt de standaard instelling **niet geconfigureerd**of een waarde van **1** tot **12** maanden selecteren.  
 
   - **Prompt uitschakelen bij afmelden**  
-    Voor komen dat de gebruiker wordt gevraagd om FileVault in te scha kelen wanneer deze zich afmeldt.  Wanneer deze optie is ingeschakeld, wordt de prompt bij het afmelden uitgeschakeld en wordt de gebruiker gevraagd om zich aan te melden.  
+    Voor komen dat de gebruiker wordt gevraagd om FileVault in te scha kelen wanneer deze zich afmeldt.  Wanneer u deze optie inschakelt, wordt de prompt bij het afmelden uitgeschakeld en wordt de gebruiker gevraagd om zich aan te melden.  
     - **Niet geconfigureerd**  
-    - **Schakel** de prompt in bij afmelden.
+    - **Schakel** de prompt bij het afmelden uit.
 
     **Standaard**: niet geconfigureerd  
 
      > [!IMPORTANT]  
-     > Er is een bekend probleem wanneer de instelling **Vraag bij afmelden uitschakelen** is ingesteld op *Inschakelen*. Als deze optie is ingesteld op *Ingeschakeld*, moet de instelling voor **Toegestaan aantal keren voor overslaan** worden ingesteld op een waarde en niet worden ingesteld op *Niet geconfigureerd*. Als de optie is ingesteld op *Niet geconfigureerd*, mislukt het profiel op het apparaat. In dit scenario wordt gemeld dat het een **Overzicht profielstatus** betreft met de status **Fout**, zonder nadere informatie.
+     > Er treedt een bekend probleem op wanneer de instelling **Vraag bij afmelden uitschakelen** is ingesteld op *Uitschakelen*. Als deze optie is ingesteld op *Uitgeschakeld*, moet de instelling voor **Toegestaan aantal keren voor overslaan** worden ingesteld op een waarde en niet worden ingesteld op *Niet geconfigureerd*. Als de optie is ingesteld op *Niet geconfigureerd*, mislukt het profiel op het apparaat. In dit scenario wordt gemeld dat het een **Overzicht profielstatus** betreft met de status **Fout**, zonder nadere informatie.
      > 
      > Als **Vraag bij afmelden uitschakelen** is ingesteld op *Niet geconfigureerd*, kan **Toegestaan aantal keren voor overslaan** zijn ingesteld op *Niet geconfigureerd* of op een waarde.  
      > 
@@ -122,4 +122,5 @@ Zie [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fd
  
     **Standaard**: niet geconfigureerd  
 
+Zie [FileVault Recovery Keys](encryption-monitor.md#filevault-recovery-keys)(Engelstalig) voor meer informatie over FileVault met intune.
 
