@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993706"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70062999"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Problemen met inschrijving van Windows-apparaten in Microsoft Intune oplossen
 
@@ -90,7 +90,7 @@ Voer een [upgrade uit van Windows 10 Home naar Windows 10 Pro](https://support.m
 
 ### <a name="this-user-is-not-allowed-to-enroll"></a>Deze gebruiker mag zich niet inschrijven.
 
-Fout 0x801c0003: ' deze gebruiker is niet gemachtigd om in te schrijven. U kunt het opnieuw proberen of contact opnemen met de systeem beheerder met de fout code 801c0003. "
+Fout 0x801c0003: ' deze gebruiker is niet gemachtigd om in te schrijven. U kunt het opnieuw proberen of contact opnemen met uw systeembeheerder met de foutcode 801c0003."
 
 **Oorzaak:** De **gebruikers kunnen lid worden van apparaten met de Azure AD** -instelling is ingesteld op **geen**. Zo voor komt u dat nieuwe gebruikers hun apparaten kunnen toevoegen aan Azure AD. Daarom mislukt de intune-inschrijving.
 
@@ -100,9 +100,9 @@ Fout 0x801c0003: ' deze gebruiker is niet gemachtigd om in te schrijven. U kunt 
 3. Stel **Gebruikers mogen apparaten aan Azure AD toevoegen** in op **Alle**.    
 4. Schrijf het apparaat opnieuw in.   
 
-### <a name="the-device-is-already-enrolled"></a>Het apparaat is al Inge schreven.
+### <a name="the-device-is-already-enrolled"></a>Het apparaat is al ingeschreven.
 
-Fout 8018000a: er is iets verkeerd gegaan. Het apparaat is al Inge schreven.  U kunt contact opnemen met de systeem beheerder met de fout code 8018000a. "
+Fout 8018000a: er is iets verkeerd gegaan. Het apparaat is al ingeschreven.  U kunt contact opnemen met de systeem beheerder met de fout code 8018000a. "
 
 **Oorzaak:** Een van de volgende voor waarden is waar:
 - Een andere gebruiker heeft het apparaat al Inge schreven bij intune of het apparaat is toegevoegd aan Azure AD. Als u wilt weten of dit het geval is, gaat u naar **instellingen** > **accounts** > **werk toegang**. Zoek naar een bericht dat er ongeveer als volgt uitziet: ' een andere gebruiker op het systeem is al verbonden met een werk-of school account. Verwijder die werk-of school verbinding en probeer het opnieuw. "    
@@ -205,7 +205,7 @@ Fout: ' er is een probleem opgetreden. Deze versie van Windows wordt niet onders
 Voer de volgende stappen uit om dit probleem in een zelfstandige intune-omgeving op te lossen: 
  
 1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
-2. Selecteer **intune** aan de linkerkant en ga vervolgens naar**registratie beperkingen**voor  > apparaatregistratie.    
+2. Selecteer **intune** aan de linkerkant en ga **vervolgensnaar** > **registratiebeperkingenvoor apparaatregistratie.**    
 3. Klik **in beperkingen**voor het apparaattype op **platforms**en selecteer vervolgens **toestaan** voor **Windows (MDM)** .    
 4. Klik op **Opslaan**.    
  
@@ -223,7 +223,7 @@ Voer de volgende stappen uit om dit probleem op te lossen in hybride MDM met int
 #### <a name="resolution"></a>Oplossing
 1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
 2. Ga naar **Azure Active Directory > apparaten > Apparaatinstellingen**.    
-3. Stel in dat **gebruikers apparaten aan Azure AD mogen toevoegen** aan of **geselecteerd**.
+3. Stel **Gebruikers mogen apparaten aan Azure AD toevoegen** in op **Alle** of **Geselecteerd**.
 
    Als u **geselecteerd**selecteert, klikt u op **geselecteerd**en klikt u vervolgens op **leden toevoegen** om alle gebruikers toe te voegen die hun apparaten kunnen toevoegen aan Azure AD. Zorg ervoor dat alle Azure AD-accounts voor het inrichtings pakket zijn toegevoegd.
  
@@ -331,11 +331,11 @@ Fout 0x80070774: er is iets verkeerd gegaan. Bevestig dat u de juiste aanmelding
 
 Dit probleem treedt doorgaans op voordat het apparaat opnieuw wordt opgestart in een hybride Azure AD Auto Pilot-scenario, wanneer het apparaat een time-out heeft tijdens het eerste aanmeldings scherm. Dit betekent dat de domein controller niet kan worden gevonden of niet kan worden bereikt vanwege verbindings problemen. Of het apparaat heeft een status opgegeven die niet kan worden toegevoegd aan het domein.
 
-**Oorzaak:** De meest voorkomende oorzaak is dat hybride Azure AD-deelname wordt gebruikt en dat de functie gebruikers toewijzen is geconfigureerd in het auto pilot-profiel. Met de functie gebruiker toewijzen wordt een Azure AD-koppeling op het apparaat uitgevoerd tijdens het eerste aanmeldings scherm waarmee het apparaat in een staat wordt geplaatst waar het niet kan worden toegevoegd aan uw on-premises domein. Daarom mag de functie gebruikers toewijzen alleen worden gebruikt in de standaard Azure AD-deelname voor auto pilot.  De functie moet worden gebruikt in hybride Azure AD-samenvoegings scenario's.
+**Oorzaak:** De meest voorkomende oorzaak is dat hybride Azure AD-deelname wordt gebruikt en dat de functie gebruikers toewijzen is geconfigureerd in het auto pilot-profiel. Met de functie gebruiker toewijzen wordt een Azure AD-koppeling op het apparaat uitgevoerd tijdens het eerste aanmeldings scherm waarmee het apparaat in een staat wordt geplaatst waar het niet kan worden toegevoegd aan uw on-premises domein. Daarom mag de functie gebruikers toewijzen alleen worden gebruikt in de standaard Azure AD-deelname voor auto pilot.  De functie mag niet worden gebruikt in hybride Azure AD-samenvoegings scenario's.
 
 #### <a name="resolution"></a>Oplossing
 
-1. Ga naar  >  de**Windows**-inschrijvings  > apparaten van intune-apparaten.
+1. Ganaar de **Windows** >  **inschrijvings apparaten** >  van **intune** > -**apparaten**.
 2. Selecteer het apparaat waarop het probleem zich voordoet > Klik op het weglatings teken (...) aan de rechter kant.
 3. Selecteer **gebruiker niet toewijzen** en wacht totdat het proces is voltooid.
 4. Controleer of het hybride Azure AD Auto Pilot-profiel is toegewezen voordat u OOBE opnieuw probeert uit te voeren.
@@ -375,7 +375,7 @@ Dit probleem wordt meestal veroorzaakt door onjuiste delegering van machtigingen
 3. Kies in de wizard **Overdracht van beheer** **Volgende** > **Toevoegen** > **Objecttypen**.
 4. Selecteer in het deelvenster **Objecttypen** het selectievakje **Computers** > **OK**.
 5. Voer in het deelvenster voor het selecteren van **Gebruikers**, **Computers** of **Groepen** in het vak **Te selecteren objectnamen invoeren** de naam in van de computer waarop de connector is geïnstalleerd.
-6. Selecteer **Namen controleren** om uw vermelding te valideren  > > op**volgende**.
+6. Selecteer **Namen controleren** om uw vermelding te valideren > **op**  > **volgende**.
 7. Selecteer **Een aangepaste taak maken om te delegeren** > **Volgende**.
 8. Selecteer het selectievakje **Alleen de volgende objecten in de map** en schakel vervolgens de selectievakjes **Computerobjecten**, **Geselecteerde objecten in deze map maken** en **Geselecteerde objecten in deze map verwijderen** in.
 9. Selecteer **Volgende**.
