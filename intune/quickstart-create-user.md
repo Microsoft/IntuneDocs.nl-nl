@@ -13,16 +13,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 398b8c748fddfa032194cfa60547d76322e28c9a
+ms.sourcegitcommit: 2a7d621587471822b1428440b24f08c8722612dd
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511363"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70234804"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Quickstart: Een gebruiker maken in Intune en er een licentie aan toewijzen
 
-In deze quickstart maakt u een gebruiker en daarna wijst u er een Intune-licentie aan toe. Als u Intune gebruikt, moet elke persoon die u toegang wilt bieden tot de bedrijfsgegevens, beschikken over een eigen gebruikersaccount. Intune-beheerders kunnen gebruikers later configureren om de toegang te beheren.
+In deze quickstart maakt u een gebruiker en wijst u er vervolgens een Intune-licentie aan toe. Als u Intune gebruikt, moet elke persoon die u toegang wilt bieden tot de bedrijfsgegevens, beschikken over een eigen gebruikersaccount. Intune-beheerders kunnen gebruikers later configureren om de toegang te beheren.
 
 Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor een gratis proefaccount](free-trial-sign-up.md).
 
@@ -47,7 +47,7 @@ Gebruikers moeten beschikken over een gebruikersaccount om zich te kunnen inschr
 
 ## <a name="assign-a-license-to-the-user"></a>Een licentie toewijzen aan de gebruiker
 
-Nadat u een gebruiker hebt gemaakt, moet u het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854) gebruiken om een Intune-licentie aan die gebruiker toe te wijzen. Als u geen licentie aan de gebruiker toewijst, kan de gebruiker zijn apparaat niet registreren in Intune. 
+Nadat u een gebruiker hebt gemaakt, moet u het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854) gebruiken om een Intune-licentie aan die gebruiker toe te wijzen. Als u geen licentie aan de gebruiker toewijst, kan de gebruiker het apparaat niet registreren in Intune. 
 
 Ga als volgt te werk om een Intune-licentie aan een gebruiker toe te wijzen:
 

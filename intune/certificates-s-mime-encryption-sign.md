@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5dba3866df9ce5c779deb18cf13852b3d8af1b8d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 755073af455c1ee63fa52f435a397734d2897b47
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048899"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122230"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>S/MIME-overzicht voor het ondertekenen en versleutelen van e-mails in Intune
 
@@ -80,7 +80,7 @@ Nadat u S/MIME-certificaatprofielen voor ondertekening en versleuteling hebt gem
 
 ## <a name="next-steps"></a>Volgende stappen
 
-- [SCEP-certificaten gebruiken](certificates-scep-configure.md)
+- [SCEP voor certificaten gebruiken](certificates-scep-configure.md)
 - [PKCS-certificaten gebruiken](certficates-pfx-configure.md)
 - [Een partner-CA gebruiken](certificate-authority-add-scep-overview.md)
 - [PKCS-certificaten uitgeven via een webservice van Symantec PKI Manager](certificates-symantec-configure.md)

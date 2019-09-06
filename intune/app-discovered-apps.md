@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 1d545e5848330e8c4f34eca21a992ad05ca8c85d
+ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590910"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70206400"
 ---
 # <a name="intune-discovered-apps"></a>Door Intune gedetecteerde apps
 
@@ -62,6 +62,9 @@ De volgende lijst bevat de app-platformtypen, de apps die worden bewaakt op pers
 | macOS | Alle apps die op het apparaat zijn geïnstalleerd | Alle apps die op het apparaat zijn geïnstalleerd | Elke zeven dagen vanaf het moment dat het apparaat wordt ingeschreven |
 | Android | Alleen beheerde apps | Alle apps die op het apparaat zijn geïnstalleerd | Elke zeven dagen vanaf het moment dat het apparaat wordt ingeschreven |
 | Android Enterprise | Alleen beheerde apps | Alleen apps die in het werkprofiel zijn geïnstalleerd | Elke zeven dagen vanaf het moment dat het apparaat wordt ingeschreven |
+
+> [!NOTE]
+>Op apparaten met Windows 10 Hybrid Azure AD die zijn gekoppeld aan de Intune-beheeruitbreiding wordt momenteel geen app-inventaris verzameld volgens de bovenstaande planning. Dit is een bekend probleem. Eventuele wijzigingen of updates van dit gedrag worden aangekondigd in [In ontwikkeling](in-development.md) en/of [Wat is er nieuw](whats-new.md).
 
 Het aantal gedetecteerde apps komt mogelijk niet overeen met de status van het aantal geïnstalleerde apps. Mogelijkheden voor inconsistenties zijn onder andere:
 - Een gerichte wijziging in een geïnstalleerde beheerde app kan ervoor zorgen dat het aantal geïnstalleerde apps op de blade Status wordt verminderd. De apps blijven echter vermeld bij de gedetecteerde apps.

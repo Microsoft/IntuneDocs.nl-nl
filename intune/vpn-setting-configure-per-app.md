@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3c2b5bc0091544136848bf92fc6cef7524ffa54
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 4893f3484c497ed72352b2bbb229003c2d639107
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354502"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122288"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>VPN per app instellen voor iOS-apparaten in Intune
 
@@ -83,7 +83,7 @@ Op basis van het vertrouwde certificaatprofiel vertrouwt het apparaat automatisc
 
 Lees een van de volgende artikelen om het clientverificatiecertificaat te configureren en toe te wijzen:
 
-- [SCEP-certificaten configureren en beheren met Intune](certificates-scep-configure.md)
+- [Infrastructuur configureren om SCEP te ondersteunen in Intune](certificates-scep-configure.md)
 - [PKCS-certificaten configureren en beheren met Intune](certficates-pfx-configure.md)
 
 Configureer het certificaat voor clientverificatie. U kunt dit rechtstreeks in SCEP-certificaatprofielen instellen (de lijst **Uitgebreide-sleutelgebruik** > **Clientverificatie**). Voor PKCS stelt u de clientverificatie in op het certificaatsjabloon in de certificeringsinstantie (CA).
@@ -107,7 +107,7 @@ Het VPN-profiel bevat het SCEP- of PKCS-certificaat met de referenties van de cl
     - **Verificatiecertificaat**: Selecteer een bestaand SCEP- of PKCS-certificaat > **OK**.      
     - **Split tunneling**: Selecteer **Uitschakelen** om te forceren dat al het verkeer de VPN-tunnel gebruikt wanneer de VPN-verbinding actief is. 
 
-      ![In een VPN per app-profiel voert u een verbinding, IP-adres of FQDN, een verificatiemethode en split tunneling in Microsoft Intune in](./media/vpn-per-app-create-vpn-profile.png)
+      ![In een VPN per app-profiel voert u een verbinding, een IP-adres of FQDN, een verificatiemethode en Split tunneling in Microsoft Intune in](./media/vpn-per-app-create-vpn-profile.png)
 
     Zie [iOS VPN-instellingen](vpn-settings-ios.md) voor informatie over de overige instellingen.
 

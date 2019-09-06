@@ -1,5 +1,5 @@
 ---
-title: Levering en timing van app-beveiligingsbeleid begrijpen
+title: Informatie over levering en timing van app-beveiligingsbeleid
 titleSuffix: Microsoft Intune
 description: Krijg informatie over de verschillende implementatievensters voor app-beveiligingsbeleid, zodat u weet wanneer wijzigingen op de apparaten van uw eindgebruikers moeten worden weergegeven.
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14b4af7145e09e1af3d2a6d3a2fd3ef17319be35
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: e0dcc729eeb76dda1c2d6ddcedbedafdc7f999f0
+ms.sourcegitcommit: 7484ef8006f6b81d8976c328dd704512a31872ec
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649011"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70190228"
 ---
 # <a name="understand-app-protection-policy-delivery-timing"></a>Meer informatie over de timing van het leveren van app-beveiligingsbeleid
 

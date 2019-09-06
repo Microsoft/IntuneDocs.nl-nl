@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c5ddb32502aa15f6eaf8f5866772ecd32e970d4
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: faff917dfafaaedb988cbbfb8174547f0b0ccf3b
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648441"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122252"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Partnercertificeringsinstanties toevoegen in Intune met behulp van SCEP
 
@@ -42,7 +42,7 @@ Dit artikel bevat een overzicht van deze functie vanuit het oogpunt van een behe
 
 ## <a name="overview"></a>Overzicht
 
-In de volgende stappen vindt u een overzicht van het uitgeven van SCEP-certificaten in Intune:
+In de volgende stappen vindt u een overzicht van het gebruik van SCEP voor certificaten in Intune:
 
 1. In Intune maakt een beheerder een SCEP-certificaatprofiel en richt het profiel vervolgens op gebruikers of apparaten.
 2. Het apparaat wordt aangemeld bij Intune.
@@ -106,9 +106,9 @@ Zorg ervoor dat u over de vereiste machtigingen beschikt om een Azure AD-app te 
 ### <a name="configure-and-deploy-a-scep-certificate-profile"></a>Een SCEP-certificaatprofiel configureren en implementeren
 Als beheerder maakt u een SCEP-certificaatprofiel voor gebruikers of apparaten. Wijs vervolgens het profiel toe.
 
-- [Een SCEP-certificaatprofiel maken](certificates-scep-configure.md#create-a-scep-certificate-profile)
+- [Een SCEP-certificaatprofiel maken](certificates-profile-scep.md#create-a-scep-certificate-profile)
 
-- [Het certificaatprofiel toewijzen](certificates-scep-configure.md#assign-the-certificate-profile)
+- [Het certificaatprofiel toewijzen](certificates-profile-scep.md#assign-the-certificate-profile)
 
 ## <a name="removing-certificates"></a>Certificaten verwijderen
 
@@ -131,7 +131,7 @@ Als u een externe certificeringsinstantie bent en interesse hebt om uw product t
 - [Intune SCEP API GitHub-opslagplaats](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [Richtlijnen voor Intune SCEP-API voor externe CA's ](scep-libraries-apis.md)
 
-## <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie ook
 
 - [Certificaatprofielen configureren](certificates-scep-configure.md)
 - [Intune SCEP API GitHub-opslagplaats](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)

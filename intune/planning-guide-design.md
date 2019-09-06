@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: a3055d375c98f9a74d0e738b7e894ba038b31776
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783242"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70121865"
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 
@@ -166,7 +166,7 @@ Public Key Infrastructure verstrekt certificaten aan apparaten of gebruikers voo
 
 Als u van plan bent voor Intune certificaten te gebruiken met VPN-, Wi-Fi- of e-mailprofielen, moet u controleren of er een ondersteunde [PKI-infrastructuur](certificates-configure.md) is, die geschikt is om certificaatprofielen te maken en implementeren.
 
-Als er SCEP-certificaten worden uitgegeven, moet u bovendien bepalen welke server fungeert als host voor de functie Network Device Enrollment Service (NDES) en hoe de communicatie wordt uitgevoerd.
+Als er SCEP-certificaatprofielen worden gebruikt, moet u bovendien bepalen welke server fungeert als host voor de NDES-functie (Registratieservice voor netwerkapparaten) en hoe de communicatie wordt uitgevoerd.
 
 Meer informatie over:
 
@@ -297,7 +297,7 @@ Met behulp van certificaatprofielen kan Intune een certificaat uitgeven aan een 
 Het verdient aanbeveling om vast te leggen welke gebruikersgroep een certificaat nodig heeft, hoeveel certificaatprofielen u nodig hebt en voor welke gebruikersgroepen ze moeten worden geïmplementeerd.
 
 >[!NOTE]
-> Houd er rekening mee dat het vertrouwde basiscertificaat vereist is voor het SCEP-certificaat. Zorg er daarom voor dat alle gebruikers met het SCEP-certificaat ook een vertrouwd basiscertificaat krijgen toegewezen. Als u SCEP-certificaten nodig hebt, ontwerpt u welke SCEP-certificaatsjablonen u nodig hebt en legt u deze vast.
+> Houd er rekening mee dat het vertrouwde basiscertificaatprofiel vereist is voor het SCEP-certificaat. Zorg er daarom voor dat alle gebruikers met het SCEP-certificaatprofiel ook een vertrouwd basiscertificaat krijgen toegewezen. Als u SCEP-certificaten nodig hebt, ontwerpt u welke SCEP-certificaatsjablonen u nodig hebt en legt u deze vast.
 
 Hier volgt een voorbeeld van hoe u de certificaten tijdens het ontwerpen kunt vastleggen:
 

@@ -1,11 +1,11 @@
 ---
-title: Auditlogboeken in Azure Monitor routeren met behulp van Monitor Intune - Azure | Microsoft Docs
+title: Logboeken routeren naar Azure Monitor met behulp van Microsoft Intune - Azure | Microsoft Docs
 description: Gebruik Diagnostische instellingen om auditlogboeken en operationele logboeken in Microsoft Intune te verzenden naar opslagaccounts, Event Hubs of Log Analytics in Azure. Kies hoe lang u de gegevens wilt behouden en bekijk de geschatte kosten voor tenants van verschillende groottes.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 08/28/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: ed32ad564f850c06b37b15e1994ac066a929ffaa
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354522"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122414"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Logboekgegevens verzenden naar opslag, Event Hubs of Log Analytics in Intune (preview)
 
-Microsoft Intune omvat ingebouwde logboeken die informatie bieden over uw omgeving. In **auditlogboeken** worden details weergegeven van verschillende gebeurtenissen of taken in Intune. In **Operationele logboeken (preview-versie)** worden details weergegeven van gebruikers en apparaten waarvan de inschrijving is geslaagd (of niet), alsmede details over niet-compatibele apparaten.
+Microsoft Intune bevat ingebouwde logboeken die informatie bieden over uw omgeving:
+
+- In **auditlogboeken** worden details weergegeven van verschillende gebeurtenissen of taken in Intune.
+- In **Operationele logboeken (preview)** worden details weergegeven van gebruikers en apparaten waarvan de inschrijving is geslaagd (of mislukt), alsmede details over niet-compatibele apparaten.
+- In **Organisatielogboeken voor apparaatcompatibiliteit (preview)** wordt een organisatierapport weergeven voor apparaatcompatibiliteit in Intune en informatie over niet-compatibele apparaten.
 
 Deze logboeken kunnen ook worden verzonden naar Azure Monitor-services, inclusief opslagaccounts, Event Hubs, en Log Analytics. Meer specifiek, u kunt:
 
@@ -35,7 +39,7 @@ Deze logboeken kunnen ook worden verzonden naar Azure Monitor-services, inclusie
 
 Deze functies maken deel uit van de **Diagnostische instellingen** in Intune.
 
-In dit artikel ziet u hoe u **Diagnostische instellingen** kunt gebruiken om logboekgegevens te verzenden naar verschillende services. Ook worden er voorbeelden gegeven van de geschatte kosten, en wordt een aantal veelgestelde vragen beantwoord.
+In dit artikel ziet u hoe u **Diagnostische instellingen** kunt gebruiken om logboekgegevens te verzenden naar verschillende services. Ook worden er voorbeelden gegeven van de geschatte kosten, en wordt een aantal veelgestelde vragen beantwoord. Wanneer u deze functie inschakelt, worden uw logboeken gerouteerd naar de Azure Monitor-service die u kiest.
 
 ## <a name="prerequisites"></a>Vereisten
 
@@ -54,7 +58,7 @@ Afhankelijk van waarheen u de auditlogboekgegevens wilt routeren, hebt u een van
 ## <a name="send-logs-to-azure-monitor"></a>Logboeken verzenden naar Azure Monitor
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer onder **Bewaking** de optie **Diagnostische instellingen**. De eerste keer dat u dit opent, schakelt u het in:
+2. Selecteer onder **Bewaking** de optie **Diagnostische instellingen**. De eerste keer dat u de optie opent, schakelt u de optie in. Voeg anders een instelling toe.
 
     ![Diagnostische instellingen inschakelen in Intune om logboeken te verzenden naar Azure Monitor](media/diagnostics-settings-turn-on.png)
 
@@ -87,7 +91,14 @@ Afhankelijk van waarheen u de auditlogboekgegevens wilt routeren, hebt u een van
       Als u ervoor kiest om een opslagaccount te gebruiken, voert u ook in hoeveel dagen u de gegevens wilt behouden (retentie). Als u de gegevens voorgoed wilt behouden, stelt u **Retentie (dagen)** in op `0` (nul).
 
       > [!NOTE]
-      > Operationele logboeken zijn in de preview-versie. Als u feedback wilt geven, inclusief informatie die is opgenomen in de operationele logboeken, gaat u naar [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback) (wordt geopend op een nieuwe website).
+      > Operationele logboeken zijn in de preview-versie. Als u feedback wilt geven, inclusief informatie in de operationele logboeken, gaat u naar [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
+
+    - **LOG** > **DeviceComplianceOrg**: In Organisatielogboeken voor apparaatcompatibiliteit (preview) wordt het organisatierapport weergeven voor apparaatcompatibiliteit in Intune en informatie over niet-compatibele apparaten. Kies deze optie om de compatibiliteitslogboeken te verzenden naar uw opslagaccount, Event Hub, of Log Analytics.
+
+      Als u ervoor kiest om een opslagaccount te gebruiken, voert u ook in hoeveel dagen u de gegevens wilt behouden (retentie). Als u de gegevens voorgoed wilt behouden, stelt u **Retentie (dagen)** in op `0` (nul).
+ 
+      > [!NOTE]
+      > Organisatielogboeken voor apparaatcompatibiliteit zijn in preview. Als u feedback wilt geven, inclusief informatie in het rapport, gaat u naar [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
 
     Wanneer dit is voltooid, zien uw instellingen er ongeveer uit zoals de volgende instellingen: 
 

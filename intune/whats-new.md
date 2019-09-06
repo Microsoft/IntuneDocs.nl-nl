@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/16/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
-ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
+ms.openlocfilehash: 09d80964a417772b1f011478db59398ceede5c5e
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69620204"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122141"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -53,6 +53,18 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [belangri
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-august-26-2019"></a>Week van 26 augustus 2019
+
+### <a name="configure-microsoft-edge-settings-using-administrative-templates-for-windows-10-and-newer----5228061---"></a>Microsoft Edge-instellingen configureren met beheersjablonen voor Windows 10 en nieuwer <!-- 5228061 -->
+
+Op Windows 10- en nieuwere apparaten kunt u beheersjablonen maken om instellingen voor groepsbeleid te configureren in Intune. In deze update kunt u instellingen configureren die van toepassing zijn op Microsoft Edge-versie 77 en nieuwer.
+
+Zie [Windows 10-sjablonen gebruiken voor het configureren van instellingen voor groepsbeleid in Intune](administrative-templates-windows.md) voor meer informatie over deze beheersjalbonen.
+
+Van toepassing op:
+
+- Windows 10 en nieuwer (Windows RS4+)
 
 ## <a name="week-of-august-12-2019"></a>Week van 12 augustus 2019
 
@@ -477,7 +489,7 @@ Beveiligingsbasislijnen voor versiebeheer van de ondersteuning voor Intune. Nu e
 #### <a name="the-use-security-keys-for-sign-in-setting-has-moved-----4501151---"></a>De instelling Beveiligingssleutels gebruiken voor aanmelden is verplaatst  <!-- 4501151 -->
 De instelling voor apparaatconfiguratie voor identiteitsbeveiliging met de naam **Beveiligingssleutels gebruiken voor aanmelden** is niet meer aanwezig als subinstelling van *Windows Hello voor Bedrijven configureren*. Het is nu een instelling op het hoogste niveau die altijd beschikbaar is, ook als u het gebruik van Windows Hello voor Bedrijven niet inschakelt. Zie [Identity Protection](identity-protection-windows-settings.md) voor meer informatie.
 
-### <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
+### <a name="role-based-access-control"></a>Toegangsbeheer op basis van rollen
 
 #### <a name="new-permissions-for-assigned-group-admins------4504437-----"></a>Nieuwe machtigingen voor toegewezen groepsbeheerders   <!-- 4504437   -->
 De in Intune ingebouwde rol School Administrator bevat nu machtigingen voor maken, lezen, bijwerken en verwijderen (CRUD-machtigingen) voor beheerde apps. Deze update betekent dat als u in Intune for Education bent toegewezen als groepsbeheerder, u voortaan het iOS MDM-pushcertificaat, iOS MDM-servertokens en iOS VPP-tokens kunt maken, weergeven, bijwerken en verwijderen, in combinatie met [alle bestaande machtigingen die u hebt](https://docs.microsoft.com/intune-education/group-admin-delegate#group-admin-permissions). Als u een van deze acties wilt uitvoeren, gaat u naar **Tenantinstellingen** > **iOS-apparaatbeheer**.  
@@ -814,7 +826,7 @@ Toen V1.0 voor het eerst werd uitgebracht in 1808, verschilde deze op belangrijk
 #### <a name="monitor-security-baseline-status-public-preview----3082047---"></a>Status beveiligingsbasislijnen controleren (openbare preview) <!-- 3082047 --> 
 We hebben een [weergave per categorie](security-baselines-monitor.md#per-category-view) toegevoegd aan de controle van beveiligingsbasislijnen. (Beveiligingsbasislijnen blijven in preview). De weergave per categorie geeft elke categorie weer van de basislijn, samen met het percentage apparaten dat in elke statusgroep voor die categorie kan worden onderverdeeld. U kunt nu zien hoeveel apparaten niet overeenkomen met de afzonderlijke categorieën, onjuist zijn geconfigureerd of niet van toepassing zijn.
 
-### <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
+### <a name="role-based-access-control"></a>Toegangsbeheer op basis van rollen
 
 #### <a name="scope-tags-for-apple-vpp-tokens---2371886----"></a>Bereiktags voor Apple VPP-tokens <!--2371886  -->
 U kunt nu bereiktags toevoegen aan Apple VPP-tokens. Alleen gebruikers aan wie dezelfde bereiktag is toegewezen, hebben toegang tot het Apple VPP-token met die tag. VPP-apps en e-Books die zijn gekocht met dit token nemen de bereiktags ervan over. Zie [RBAC en bereiktags gebruiken](scope-tags.md) voor meer informatie over bereiktags.
@@ -930,7 +942,7 @@ U kunt nu zoeken naar een exacte apparaatnaam. Ga naar **Intune** > **Apparaten*
 #### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202----"></a>Ondersteuning voor extra connectors op de pagina Tenantstatus <!-- 3617202  -->
 De pagina [Tenantstatus](tenant-status.md) geeft nu de statusinformatie weer voor extra connectors, inclusief *Windows Defender Advanced Threat Protection* (ATP) en andere Mobile Threat Defense-connectors.
 
-### <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
+### <a name="role-based-access-control"></a>Toegangsbeheer op basis van rollen
 
 #### <a name="granting-intune-read-only-access-to-some-azure-active-directory-roles----3637917----"></a>Alleen-lezentoegang voor Intune verlenen aan bepaalde Azure Active Directory-rollen <!-- 3637917  -->
 Alleen-lezentoegang voor Intune is verleend aan de volgende Azure AD-rollen. Machtigingen met Azure AD-rollen hebben voorrang boven machtigingen die zijn verleend via de op rollen gebaseerd toegangsbeheer (RBAC) in Intune.
@@ -1016,8 +1028,8 @@ Wijzigingen in nieuw of bestaand wachtwoordbeleid door de beheerder zorgt ervoor
 Van toepassing op:  
 macOS
 
-#### <a name="assign-scep-certificates-to-a-userless-macos-device-----2340521----"></a>SCEP-certificaten aan een macOS-apparaat zonder gebruikers toewijzen  <!-- 2340521  -->
-U kunt met behulp van apparaatkenmerken SCEP-certificaten (SCEP: Simple Certificate Enrollment Protocol) toewijzen aan macOS-apparaten, inclusief apparaten zonder gebruikersaffiniteit, en het certificaatprofiel met Wi-Fi -of VPN-profielen koppelen. Dit is een uitbreiding van de bestaande ondersteuning voor het [toewijzen van SCEP-certificaten aan apparaten zonder gebruikersaffiniteit](certificates-scep-configure.md#create-a-scep-certificate-profile) die worden uitgevoerd op Windows, iOS en Android.  In deze update wordt de optie toegevoegd waarmee een certificaattype van *Apparaat* wordt geselecteerd wanneer u een SCEP-certificaatprofiel voor macOS configureert.
+#### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521------"></a>SCEP-certificaten aan een macOS-apparaat zonder gebruikers toewijzen    <!-- 2340521    -->
+U kunt met behulp van apparaatkenmerken SCEP-certificaten (SCEP: Simple Certificate Enrollment Protocol) toewijzen aan macOS-apparaten, inclusief apparaten zonder gebruikersaffiniteit, en het certificaatprofiel met Wi-Fi -of VPN-profielen koppelen. Dit is een uitbreiding van de bestaande ondersteuning voor het [toewijzen van SCEP-certificaten aan apparaten zonder gebruikersaffiniteit](certificates-profile-scep.md) die worden uitgevoerd op Windows, iOS en Android.  In deze update wordt de optie toegevoegd waarmee een certificaattype van *Apparaat* wordt geselecteerd wanneer u een SCEP-certificaatprofiel voor macOS configureert.
 
 Van toepassing op: 
 - macOS
@@ -1355,7 +1367,7 @@ Gebruikers kunnen de nieuwe pagina Help en ondersteuning van Bedrijfsportal gebr
 De nieuwe Help en ondersteuning-ervaring wordt de komende paar dagen uitgerold naar alle tenants. Deze nieuwe ervaring is beschikbaar voor Intune en is toegankelijk wanneer de Intune-blades in [Azure Portal](https://portal.azure.com/) worden gebruikt.
 Met de nieuwe ervaring kunt u uw probleem in uw eigen woorden beschrijven en informatie over probleemoplossing en op internet gevonden informatie over het oplossen van het probleem ontvangen. Deze oplossingen worden aangeboden via een op regels gebaseerde machine learning-algoritme, dat wordt aangestuurd door zoekvragen van gebruikers. Naast informatie die specifiek is voor problemen kunt u gebruikmaken van de nieuwe werkstroom voor het openen van een ondersteuningsvraag via e-mail of telefoon. Deze nieuwe ervaring vervangt de vorige Help en ondersteuning-ervaring die bestaat uit een statistische verzameling vooraf geselecteerde opties die zijn gebaseerd op het gebied van de console waarin u zich bevindt wanneer u Help en ondersteuning opent. Zie [Ondersteuning voor Microsoft Intune krijgen](get-support.md) voor meer informatie.
 
-### <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
+### <a name="role-based-access-control"></a>Toegangsbeheer op basis van rollen
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Bereiktags voor apps <!-- 1081941 -->
 U kunt bereiktags maken om de toegang voor rollen en apps te beperken. U kunt een bereiktag toevoegen aan een app, zodat alleen personen met rollen die ook zijn toegewezen aan de bereiktag, toegang tot de app hebben. Momenteel kunnen er geen bereiktags worden toegewezen aan apps die vanuit de beheerde Google Play Store aan Intune zijn toegevoegd of aan apps die met behulp van het Apple Volume Purchase Program (VPP) zijn aangeschaft (er zijn wel plannen voor ondersteuning in de toekomst). Zie [Bereiktags gebruiken om beleidsregels te filteren](scope-tags.md) voor meer informatie.

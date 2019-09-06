@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cda32e72956e5998d5ebc8d8bed2baea39951ec
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: bf4559d03f7dfc8ec8c48242defa391b4b49e41a
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021803"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122402"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -286,6 +286,5 @@ De *PFX-certificaatconnector voor Microsoft Intune* [biedt ondersteuning voor au
 
 Het profiel is gemaakt, maar er gebeurt nog niets. Vervolgens kunt u [het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
-[Gebruik SCEP-certificaten](certificates-scep-configure.md) of [geef PKCS-certificaten uit van een webservice van Digicert PKI-manager](certificates-digicert-configure.md).
-
+[Gebruik SCEP voor certificaten](certificates-scep-configure.md) of [verleen PKCS-certificaten via een webservice van Symantec PKI-manager](certificates-symantec-configure.md).
 
