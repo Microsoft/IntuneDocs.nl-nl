@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 08/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: c76466acb375fe49afefc542606350733970f416
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353337"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302337"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemen met Endpoint Protection en mogelijke oplossingen in Microsoft Intune
 
@@ -60,20 +60,20 @@ U krijgt mogelijk een bericht te zien waarin staat dat sommige functies zijn uit
 **Mogelijke oplossingen**: schakel deze functies in. Zie voor meer informatie:
 
 - [Instellingen voor Endpoint Protection toevoegen](endpoint-protection-configure.md)
-- [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Windows Defender Antivirus](device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [Eindgebruikers: realtime-beveiliging voor toegang tot bedrijfsresources inschakelen](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>De malware-definities zijn verouderd
 
 Deze status wordt weergegeven als de malwaredefinities op het apparaat langer dan 14 dagen niet zijn bijgewerkt. Het bericht kan bijvoorbeeld aangeven dat het apparaat niet met internet is verbonden of dat de malwaredefinities verouderd zijn.
 
-**Mogelijke oplossingen**: als de malwaredefinities verouderd zijn, werkt u de definities bij met [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
+**Mogelijke oplossingen**: als de malwaredefinities verouderd zijn, werkt u de definities bij met [Windows Defender Antivirus](device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Volledige of snelle scan is achterstallig
 
 Er is al 14 dagen geen volledige of snelle scan uitgevoerd. Dit scenario kan plaatsvinden als het apparaat tijdens een volledige scan opnieuw wordt opgestart.
 
-**Mogelijke oplossingen**: als een scan achterstallig is, kunt u een eenmalige scan uitvoeren of terugkerende scans plannen. Zie [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
+**Mogelijke oplossingen**: als een scan achterstallig is, kunt u een eenmalige scan uitvoeren of terugkerende scans plannen. Zie [Windows Defender Antivirus](device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="another-endpoint-protection-application-running"></a>Er wordt een andere eindpuntbeveiligingstoepassing uitgevoerd
 
