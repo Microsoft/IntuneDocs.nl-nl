@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 08/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e5ddf39a201f1a70f997e03f0b65706853adefa
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: cda0453009855d96e7c13e170ba908479a0773ea
+ms.sourcegitcommit: 513e805bbea8bf652c2901dfc5460e34946077df
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885123"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160597"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-configuratiebeleid voor Microsoft Intune
 
-Gebruik een app-configuratiebeleid in Microsoft Intune om configuratie-instellingen te leveren voor een iOS- of Android-app. Met deze configuratie-instellingen kan een app worden aangepast met een in de sector gangbare benadering voor appconfiguratie en -beheer. De instellingen van het configuratiebeleid worden gebruikt wanneer de app deze controleert, doorgaans bij de eerste keer dat de app wordt uitgevoerd.
+Door App-configuratiebeleid kunnen problemen met app-instellingen worden voorkomen doordat u configuratie-instellingen kunt toewijzen aan beleid dat aan eindgebruikers wordt toegewezen voordat ze de app uitvoeren. De instellingen worden vervolgens automatisch verstrekt wanneer de app wordt geconfigureerd op het apparaat van eindgebruikers. Eindgebruikers hoeven zelf geen actie te ondernemen. De configuratie-instellingen zijn uniek voor elke app. 
 
-U kunt een app-configuratiebeleid toewijzen aan een groep gebruikers en apparaten met een combinatie van toewijzingen voor opnemen en uitsluiten. Zodra u een appconfiguratiebeleid hebt toegevoegd, kunt u de toewijzingen voor het appconfiguratiebeleid instellen. Wanner u de toewijzingen voor het beleid instelt, kunt u ervoor kiezen de groep gebruikers voor wie het beleid van toepassing is op te nemen of uit te sluiten. Als u ervoor kiest een of meer groepen op te nemen, kunt u specifieke groepen selecteren waarvoor u ingebouwde groepen wilt opnemen of selecteren. Ingebouwde groepen zijn **Alle gebruikers**, **Alle apparaten** en **Alle gebruikers + alle apparaten**.
+U kunt app-configuratiebeleid maken en gebruiken om configuratie-instellingen te verstrekken voor zowel iOS- als Android-apps. Met deze configuratie-instellingen kan een app worden aangepast met behulp van een [in de sector gangbare benadering](https://www.appconfig.org/) voor app-configuratie en -beheer. De configuratiebeleidsinstellingen worden gebruikt wanneer deze instellingen in de app worden gecontroleerd, doorgaans als de app voor het eerst wordt uitgevoerd. 
 
 Het is bijvoorbeeld mogelijk dat u een van de volgende details moet opgeven voor een app-configuratie-instelling:
 
@@ -37,30 +37,65 @@ Het is bijvoorbeeld mogelijk dat u een van de volgende details moet opgeven voor
 - Beveiligingsinstellingen
 - Huisstijlinstellingen, zoals een bedrijfslogo
 
-Als gebruikers in plaats daarvan deze instellingen opgeven, is het mogelijk dat ze daarbij een fout maken, wat de werkbelasting van uw helpdesk zou kunnen verhogen en de acceptatie van nieuwe apps kan vertragen.
+Als deze instellingen in plaats daarvan door eindgebruikers zouden kunnen worden ingevoerd, zouden ze daarbij fouten kunnen maken. Met App-configuratiebeleid kan de consistentie in een onderneming toenemen en het aantal telefoontjes naar de helpdesk worden beperkt van eindgebruikers die proberen de instellingen zelf te configureren. Door gebruik te maken van app-configuratiebeleid kunnen apps eenvoudiger en sneller worden geaccepteerd.
 
-Het configuratiebeleid voor apps kan ervoor zorgen dat problemen met de instelling van apps worden voorkomen doordat u configuratie-instellingen kunt toewijzen aan een beleid dat aan gebruikers is toegewezen, voordat de gebruikers de app uitvoeren. De instellingen worden vervolgens automatisch aangeleverd, en de gebruikers hoeven geen enkele actie te ondernemen.
-
-De configuratie-instellingen worden gebruikt wanneer de app deze controleert. Normaal gesproken controleert een app de configuratie-instellingen de eerste keer dat de app wordt uitgevoerd door de gebruiker.
-
-U hebt twee opties voor het gebruik van app-configuraties met Intune:
-- **Beheerde apparaten**: het apparaat wordt beheerd door Intune als MDM-provider (Mobile Device Management).
-- **Beheerde apps**: een app wordt beheerd zonder apparaatinschrijving.
+De beschikbare configuratieparameters worden uiteindelijk bepaald door de ontwikkelaars van de app. De documentatie van de leverancier van de toepassing moet worden gecontroleerd om te zien of een app configuratie ondersteunt en welke configuraties beschikbaar zijn. Voor sommige toepassingen worden de beschikbare configuratie-instellingen door Intune bepaald. 
 
 > [!NOTE]
-> Als Microsoft Intune-beheerder kunt u bepalen welke gebruikersaccounts worden toegevoegd aan Microsoft Office-toepassingen op beheerde apparaten. U kunt de toegang beperken tot uitsluitend toegestane gebruikersaccounts van de organisatie, en persoonlijke accounts blokkeren op ingeschreven apparaten. De app-configuratie wordt verwerkt op de ondersteunende toepassingen, en niet-goedgekeurde accounts worden verwijderd en geblokkeerd.
+> In de beheerde Google Play Store worden apps die configuratie ondersteunen als zodanig gemarkeerd:
+> 
+> ![Schermopname van een geconfigureerde app](./media/app-configuration-policy-overview/configured-app.png)
+>
+> U krijgt alleen apps van de [Beheerde Google Play Store](https://play.google.com/work) te zien, niet van de [Google Play Store](https://play.google.com/store/apps), wanneer u Beheerde apparaten gebruikt als het registratietype voor Android-apparaten. Apps van de Beheerde Google Play Store, ook bekend als Android for work (AfW) en Android Enterprise, zijn de apps in het werkprofiel die de app-versies bevatten die app-configuratie ondersteunen.
+
+U kunt app-configuratiebeleid toewijzen aan een groep eindgebruikers en apparaten door een combinatie van [toewijzingen voor opnemen en uitsluiten](apps-inc-exl-assignments.md) te gebruiken. Zodra u een appconfiguratiebeleid hebt toegevoegd, kunt u de toewijzingen voor het appconfiguratiebeleid instellen. Wanner u de toewijzingen voor het beleid instelt, kunt u ervoor kiezen de [groepen](groups-add.md) eindgebruikers op wie het beleid van toepassing is op te nemen of uit te sluiten. Als u ervoor kiest een of meer groepen op te nemen, kunt u specifieke groepen selecteren waarvoor u ingebouwde groepen wilt opnemen of selecteren. Ingebouwde groepen zijn **Alle gebruikers**, **Alle apparaten** en **Alle gebruikers + alle apparaten**.
+
+U hebt twee opties voor het gebruik van app-configuratiebeleid met Intune:
+- **Beheerde apparaten**: het apparaat wordt beheerd door Intune als MDM-provider (Mobile Device Management). De app moet zodanig zijn ontworpen dat deze ondersteuning biedt voor app-configuratie.
+- **Beheerde apps**: een app die is ontwikkeld om de Intune App SDK te integreren. Dit is bekend als Mobile Application Management zonder registratie ([MAM-WE](app-management.md#mobile-application-management-mam-basics)). U kunt ook een app inpakken om de Intune App SDK te implementeren en te ondersteunen. Zie [Line-Of-Business-apps voor app-beveiligingsbeleid voorbereiden](apps-prepare-mobile-application-management.md) voor meer informatie over het inpakken van apps.
+
+    > [!NOTE]
+    > In door Intune beheerde apps wordt de status van App-configuratiebeleid van Intune gecontroleerd volgens een interval van 30 minuten wanneer deze zijn geïmplementeerd in combinatie met App-beveiliging van Intune. Als App-beveiliging van Intune niet aan de gebruiker is toegewezen, wordt de interval voor het controleren van App-configuratiebeleid van Intune ingesteld op 720 minuten.
 
 ## <a name="apps-that-support-app-configuration"></a>Apps die app-configuratie ondersteunen
 
 ### <a name="managed-devices"></a>Beheerde apparaten
-U kunt de app-configuratiebeleidsregels voor apps gebruiken die hiervoor ondersteuning bieden. Ter ondersteuning van app-configuratie in Intune moeten apps zijn geschreven voor het ondersteunen van het gebruik van app-configuraties, zoals is gedefinieerd door de [Appconfig-community](https://www.appconfig.org/members). Neem contact op met de leverancier van de app voor informatie.
+U kunt app-configuratiebeleid gebruiken voor apps die hiervoor ondersteuning bieden. Apps bieden alleen app-configuratie van Intune als deze zodanig zijn geschreven dat ze app-configuraties ondersteunen, zoals is gedefinieerd door de [AppConfig-community](https://www.appconfig.org/members). Neem contact op met de leverancier van de app voor informatie.
 
 ### <a name="managed-apps"></a>Managed apps
-U kunt uw line-of-business-apps voorbereiden door de Intune App SDK in de app te integreren, of door de app in te pakken, nadat deze is ontwikkeld. Met de Intune App SDK voor iOS en Android kan uw app worden ingeschakeld voor Intune-configuratiebeleid voor app-beveiliging. Deze streeft ernaar om het aantal door de app-ontwikkelaar vereiste codewijzigingen zo klein mogelijk te maken. Zie het [overzicht van de Intune App SDK](app-sdk.md) voor meer informatie.
+U kunt uw Line-Of-Business-apps voorbereiden door de [Intune App SDK](app-sdk.md) in de app te integreren of door de app nadat deze is ontwikkeld in te pakken met behulp van de [Intune App Wrapping Tool](apps-prepare-mobile-application-management.md). In de Intune App SDK wordt ernaar gestreefd om het aantal door de app-ontwikkelaar vereiste codewijzigingen zo laag mogelijk te houden. Zie het [overzicht van de Intune App SDK](app-sdk.md) voor meer informatie. Zie [Line-Of-Business-apps voorbereiden voor app-beveiligingsbeleid](apps-prepare-mobile-application-management.md#feature-comparison) voor een vergelijking tussen de Intune App SDK en de Intune App Wrapping tool.
+
+Als u **Beheerde apps** selecteert als het **Type apparaatregistratie**, verwijst dat gewoonlijk naar apps die zijn geconfigureerd via Intune-configuratiebeleid op een apparaat dat niet is geregistreerd bij Apparaatbeheer, terwijl **Beheerde apparaten** van toepassing zijn op apps die zijn geïmplementeerd via het MDM-kanaal en dus door Intune worden beheerd. Selecteer de gewenste keuze op basis van deze beschrijvingen. 
+
+![Type apparaatregistratie](./media/app-configuration-policy-overview/device-enrollment-type.png)
+
+> [!NOTE]
+> Voor apps met meerdere identiteiten, zoals Microsoft Outlook, kunnen gebruikersvoorkeuren worden overwogen. Zo worden voor het Postvak IN met prioriteit de gebruikersinstellingen gerespecteerd en wordt de configuratie ervan niet gewijzigd. Met andere parameters kunt u bepalen of een gebruiker de instelling wel of niet kan wijzigen. Zie [Configuratie-instellingen voor de Outlook-app voor iOS en Android implementeren](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) voor meer informatie.
+
+## <a name="validate-the-applied-app-configuration-policy"></a>Het toegepaste app-configuratiebeleid valideren
+
+U kunt op de volgende drie manieren het app-configuratiebeleid valideren:
+
+   1. Zichtbaar op het apparaat. Vertoont de doel-app het gedrag dat is toegepast in App-configuratiebeleid?
+   2. Via diagnostische logboeken (zie de sectie Diagnostische logboeken hieronder).
+   3. In de Intune-Portal. In de sectie **Controleren** van een beleidsregel is de relevante status te zien:
+
+      ![Eerste schermopname van de installatiestatus van het apparaat](./media/app-configuration-policy-overview/device-install-status-1.png)
+
+      ![Tweede schermopname van de installatiestatus van het apparaat](./media/app-configuration-policy-overview/device-install-status-2.png)
+
+      Onder **Intune** -> **Apparaten** -> **Alle apparaten** worden verder met de optie **App-configuratie**  aan de linkerkant van het scherm alle toegewezen beleidsregels en de status ervan weergegeven:
+
+      ![Schermopname van de app-configuratie](./media/app-configuration-policy-overview/app-configuration.png)
 
 ## <a name="graph-api-support-for-app-configuration"></a>Graph API-ondersteuning voor app-configuratie
 
-U kunt bovendien Graph API gebruiken om app-configuratietaken uit te voeren. Zie het Engelstalige [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) voor meer informatie.
+U kunt Graph API gebruiken om app-configuratietaken uit te voeren. Zie het Engelstalige [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) voor meer informatie.
+
+## <a name="troubleshooting"></a>Problemen oplossen
+
+### <a name="using-logs-to-show-a-configuration-parameter"></a>Logboeken gebruiken om een configuratieparameter weer te geven
+Wanneer in de logboeken een configuratieparameter wordt weergegeven die van toepassing is maar niet lijkt te werken, is er mogelijk een probleem met de configuratie-implementatie van de app-ontwikkelaar. Als u eerst contact opneemt met de app-ontwikkelaar of de kennisdatabase van de app-ontwikkelaar raadpleegt, kunt u zich mogelijk een ondersteuningsgesprek met Microsoft besparen. Als het een probleem betreft met de manier waarop de configuratie wordt verwerkt in een app, moet dit probleem worden opgelost in een toekomstige bijgewerkte versie van die app.
 
 ## <a name="next-steps"></a>Volgende stappen
 
