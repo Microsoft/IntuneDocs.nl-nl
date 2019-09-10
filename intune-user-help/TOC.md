@@ -4,7 +4,7 @@
 
 ## [Welke gegevens kan mijn bedrijf zien met Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Mijn wachtwoord bijwerken](password-does-not-meet-it-administrator-requirements.md)
+## [Vereisten voor het apparaatwachtwoord](password-does-not-meet-it-administrator-requirements.md)
 
 ## [Aanmelden bij de bedrijfsportal](sign-in-to-the-company-portal.md)
 

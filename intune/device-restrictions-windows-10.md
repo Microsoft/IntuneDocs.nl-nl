@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
-ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
+ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69998950"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302283"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
-In dit artikel vindt u een overzicht en beschrijving van de verschillende instellingen die u kunt beheren op apparaten met Windows 10 en hoger. Gebruik deze instellingen als onderdeel van de MDM-oplossing (Mobile Device Management) om functies toe te staan of uit te schakelen, wachtwoordregels in te stellen, het vergrendelingsscherm aan te passen, Windows Defender te gebruiken en nog veel meer.
+In dit artikel vindt u een overzicht en beschrijving van de verschillende instellingen die u kunt beheren op apparaten met Windows 10 en hoger. Gebruik deze instellingen als onderdeel van de MDM-oplossing (Mobile Device Management) om functies toe te staan of uit te schakelen, wachtwoordregels in te stellen, het vergrendelingsscherm aan te passen, Microsoft Defender te gebruiken en nog veel meer.
 
 Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intune en vervolgens toegewezen aan of geïmplementeerd op uw Windows 10-apparaten.
 
@@ -79,8 +79,6 @@ Deze instellingen gebruiken de [beleid-CSP ApplicationManagement](https://docs.m
 
   [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ## <a name="cellular-and-connectivity"></a>Mobiel en connectiviteit
 
 Deze instellingen gebruiken de beleids-CPS's [Connectivity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) en [Wi-Fi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) met daarbij een overzicht van de ondersteunde Windows-edities.
@@ -114,8 +112,6 @@ Deze instellingen gebruiken de [beleid-CSP Bluetooth](https://docs.microsoft.com
 
   [ServicesAllowedList usage guide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) (Engelstalig) bevat meer informatie over de lijst met services.
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ## <a name="cloud-and-storage"></a>Cloud en opslag
 
 Deze instellingen gebruiken de [beleid-CSP Accounts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts), waarbij ook de ondersteunde Windows-edities worden vermeld.
@@ -124,8 +120,6 @@ Deze instellingen gebruiken de [beleid-CSP Accounts](https://docs.microsoft.com/
 - **Niet-Microsoft-account**: Met **Blokkeren** kunnen eindgebruikers geen niet-Microsoft-accounts toevoegen via de gebruikersinterface. Met **Niet geconfigureerd** (standaard) kunnen gebruikers e-mailaccounts toevoegen die niet aan een Microsoft-account zijn gekoppeld.
 - **Synchronisatie van instellingen voor Microsoft-accounts**: Met **Niet geconfigureerd** (standaard) is synchronisatie van apparaat- en app-instellingen die aan een Microsoft-account zijn gekoppeld tussen apparaten toegestaan. Met **Blokkeren** wordt deze synchronisatie voorkomen.
 - **Aanmeldhulp voor Microsoft-account**: Met **Niet geconfigureerd** (standaard) kunnen eindgebruikers de **aanmeldhulp voor Microsoft-account**-service (wlidsvc) starten en stoppen. Met deze service kunnen gebruikers zich aanmelden bij hun Microsoft-account. Met **Uitschakelen** kunnen eindgebruikers de aanmeldhulp voor Microsoft-account-service (wlidsvc) niet beheren.
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ## <a name="cloud-printer"></a>Cloudprinter
 
@@ -140,8 +134,6 @@ Deze instellingen gebruiken de [beleid-CSP EnterpriseCloudPrint](https://docs.mi
 
 > [!TIP]
 > Na het instellen van een [Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview) kunt u deze instellingen configureren en vervolgens implementeren naar uw Windows-apparaten.
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ## <a name="control-panel-and-settings"></a>Configuratiescherm en instellingen
 
@@ -165,8 +157,6 @@ Selecteer **OK** om uw wijzigingen op te slaan.
   - **Privacy**: Met **Blokkeren** wordt de toegang tot het gebied Privacy van de app Instellingen op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
   - **Bijwerken en beveiliging**: Met **Blokkeren** wordt de toegang tot het gebied Bijwerken en beveiliging van de app Instellingen op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ## <a name="display"></a>Weergave
 
 Deze instellingen gebruiken de [beleid-CSP Display](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display), waarbij ook de ondersteunde Windows-edities worden vermeld.
@@ -182,8 +172,6 @@ Met GDI DPI-schaalbaarheid krijgen apps die geen DPI-status hebben, een per-moni
   GDI DPI-schaalbaarheid is uitgeschakeld voor alle verouderde apps in de lijst.
 
 U kunt ook een CSV-bestand **importeren** van de lijst met apps.
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ## <a name="general"></a>Algemeen
 
@@ -230,8 +218,6 @@ Deze instellingen gebruiken de [beleid-CSP Experience](https://docs.microsoft.co
 
 - **Processen in Taakbeheer beëindigen**: Met deze instelling bepaalt u of niet-beheerders taken kunnen beëindigen via Taakbeheer. Met **Blokkeren** voorkomt u dat standaardgebruikers (niet-beheerders) processen of taken op het apparaat kunnen beëindigen met behulp van Taakbeheer. Met **Niet geconfigureerd** (standaard) kunnen standaardgebruikers processen of taken beëindigen met behulp van Taakbeheer.
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ## <a name="locked-screen-experience"></a>Vergrendeld scherm
 
 - **Meldingen van Onderhoudscentrum** (alleen mobiel): met **Blokkeren** worden meldingen van Onderhoudscentrum niet op het vergrendelingsscherm van het apparaat weergegeven. Met **Niet geconfigureerd** (standaard) kunnen gebruikers kiezen welke apps meldingen weergeven op het vergrendelingsscherm.
@@ -255,8 +241,6 @@ Selecteer **OK** om uw wijzigingen op te slaan.
 
   [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ## <a name="messaging"></a>Berichten
 
 Deze instellingen gebruiken de [beleid-CSP Messaging](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging), waarbij ook de ondersteunde Windows-edities worden vermeld.
@@ -264,8 +248,6 @@ Deze instellingen gebruiken de [beleid-CSP Messaging](https://docs.microsoft.com
 - **Berichten synchroniseren** (alleen mobiel): Met **Blokkeren** wordt er geen back-up gemaakt van sms-berichten en worden deze niet hersteld. Ook worden er geen sms-berichten gesynchroniseerd tussen Windows-apparaten. Als u deze optie uitschakelt, worden er geen gegevens opgeslagen op servers die niet door het bedrijf worden beheerd. Met **Niet geconfigureerd** (standaard) kunnen gebruikers deze instellingen wijzigen en hun berichten synchroniseren.
 - **Mms** (alleen mobiel): Met **Blokkeren** wordt de functionaliteit voor het verzenden en ontvangen van mms-berichten op het apparaat uitgeschakeld. Ondernemingen kunnen dit beleid gebruiken om mms op apparaten uit te schakelen als onderdeel van de vereiste voor controle of beheer. Met **Niet geconfigureerd** (standaard) kunnen mms-berichten worden verzonden en ontvangen.
 - **RCS** (alleen mobiel): Met **Blokkeren** wordt de functionaliteit van Rich Communication Services (RCS) voor verzenden en ontvangen op het apparaat uitgeschakeld. Ondernemingen kunnen dit beleid gebruiken om RCS op apparaten uit te schakelen als onderdeel van de vereiste voor controle of beheer. Met **Niet geconfigureerd** (standaard) kan RCS verzenden en ontvangen.
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge-browser
 
@@ -327,7 +309,7 @@ Dit apparaatbeperkingsprofiel is direct gerelateerd aan het kioskprofiel dat u m
 - **Bericht bij openen van sites in Internet Explorer**: gebruik deze instelling om Microsoft Edge zo te configureren dat er een melding wordt weergeven voordat er een site wordt geopend in Internet Explorer 11. Uw opties zijn:
   - **Bericht niet weergeven**: De standaardinstelling van het besturingssysteem wordt gebruikt, waardoor er mogelijk geen bericht wordt weergegeven.
   - **Bericht weergeven dat de site wordt geopend in Internet Explorer 11**: Het bericht wordt weergegeven bij het openen van sites in IE. Sites worden geopend in IE. 
-  - **Bericht met de optie voor het openen van sites in Microsoft Edge weergeven**: Het bericht wordt weergegeven bij het openen van sites in Edge. Het bericht bevat een koppeling **Verdergaan in Microsoft Edge**, zodat gebruikers Microsoft Edge kunnen kiezen in plaats van Internet Explorer.
+  - **Bericht met de optie voor het openen van sites in Microsoft Edge weergeven**: Het bericht wordt weergegeven bij het openen van sites in Microsoft Edge. Het bericht bevat een koppeling **Verdergaan in Microsoft Edge**, zodat gebruikers Microsoft Edge kunnen kiezen in plaats van Internet Explorer.
 
   > [!IMPORTANT]
   > Voor deze instelling moet u de instelling **Locatie van de lijst met websites van Bedrijfsmodus**, de instelling **Intranetverkeer naar Internet Explorer sturen** of beide instellingen inschakelen.
@@ -335,8 +317,6 @@ Dit apparaatbeperkingsprofiel is direct gerelateerd aan het kioskprofiel dat u m
 - **Microsoft-compatibiliteitslijst toestaan**: Met **Ja** (standaard) is een Microsoft-compatibiliteitslijst toegestaan. Met **Nee**wordt de Microsoft-compatibiliteitslijst voorkomen in Microsoft Edge. Deze lijst van Microsoft helpt Microsoft Edge om sites met bekende compatibiliteitsproblemen toch goed weer te geven.
 - **Startpagina's en nieuw tabblad vooraf laden**: Met **Ja** (standaard) wordt de standaardinstelling van het besturingssysteem gebruikt, wat inhoudt dat deze pagina's mogelijk vooraf worden geladen. Vooraf laden minimaliseert de tijd voor het starten van Microsoft Edge en het laden van nieuwe tabbladen. Met **Nee** wordt voorkomen dat er vooraf startpagina's en een nieuw tabblad worden geladen door Microsoft Edge.
 - **Startpagina's en nieuw tabblad vooraf starten**: Met **Ja** (standaard) wordt de standaardinstelling van het besturingssysteem gebruikt, wat inhoudt dat deze pagina's mogelijk vooraf worden gestart. Vooraf starten verbetert de prestaties van Microsoft Edge en minimaliseert de tijd die nodig is om Microsoft Edge te starten. Met **Nee** wordt voorkomen dat er vooraf startpagina's en een nieuw tabblad worden gestart door Microsoft Edge.
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ### <a name="favorites-and-search"></a>Favorieten en zoeken
 
@@ -357,8 +337,6 @@ Selecteer **OK** om uw wijzigingen op te slaan.
 - **Zoekprogrammawijzigingen toestaan**: Met **Ja** (standaard) kunnen gebruikers nieuwe zoekprogramma's toevoegen of het standaardzoekprogramma in Microsoft Edge wijzigen. Kies **Nee** om te voorkomen dat gebruikers het zoekprogramma aanpassen.
 
   Deze instelling is alleen beschikbaar bij uitvoering in de [Normale modus (kiosk voor meerdere apps)](#use-microsoft-edge-kiosk-mode).
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ### <a name="privacy-and-security"></a>Privacy en beveiliging
 
@@ -383,8 +361,6 @@ Als de functie is ingesteld op Blokkeren en overschrijven door gebruiker inschak
 - **Verzamelen van gegevens van Live-tegel toestaan**: Met **Ja** (standaard) kan Microsoft Edge gegevens verzamelen van Live-tegels die zijn vastgemaakt in het menu Start. Met **Nee** wordt voorkomen dat deze gegevens worden verzameld, waardoor de ervaring van gebruikers mogelijk wordt beperkt.
 - **Gebruiker kan certificaatfouten negeren**: Met **Ja** (standaard) hebben gebruikers toegang tot websites met SSL- of TLS-fouten (Secure Sockets Layer/Transport Layer Security). Met **Nee** (aanbevolen voor een betere beveiliging) hebben gebruikers geen toegang tot dergelijke websites.
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ### <a name="additional"></a>Aanvullende informatie
 
 - **Microsoft Edge-browser toestaan** (alleen mobiel): Met **Ja** (standaard) staat u het gebruik van de Microsoft Edge-webbrowser toe op het apparaat. Met **Nee** is het gebruik van Microsoft Edge op het apparaat niet toegestaan. Als u **Nee** kiest, gelden de afzonderlijke instellingen alleen voor het desktopapparaat.
@@ -401,8 +377,6 @@ Selecteer **OK** om uw wijzigingen op te slaan.
 
   U kunt ook een CSV-bestand **importeren** met de familienamen van pakketten. Of u kunt de familienamen **exporteren** van pakketten die u invoert.
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ## <a name="network-proxy"></a>Netwerkproxy
 
 Deze instellingen gebruiken de [beleid-CSP NetworkProxy](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp), waarbij ook de ondersteunde Windows-edities worden vermeld.
@@ -415,8 +389,6 @@ Deze instellingen gebruiken de [beleid-CSP NetworkProxy](https://docs.microsoft.
   - **Poortnummer**: voer het poortnummer van uw proxyserver in.
   - **Proxy-uitzonderingen**: voer URL's in die geen gebruik mogen maken van de proxyserver. Scheid de items van elkaar met een puntkomma.
   - **Proxyserver niet gebruiken voor lokale adressen**: Met **Niet geconfigureerd** kan de proxyserver niet worden gebruikt voor lokale adressen in uw intranet. Met **Toestaan** wordt een proxyserver gebruikt voor lokale adressen.
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ## <a name="password"></a>Wachtwoord
 
@@ -466,8 +438,6 @@ Deze instellingen gebruiken de [beleid-CSP DeviceLock](https://docs.microsoft.co
 
   [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ## <a name="per-app-privacy-exceptions"></a>Privacy-uitzonderingen per app
 
 U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u definieert als 'Standaardprivacy'.
@@ -496,23 +466,17 @@ U kunt apps toevoegen waarvoor een ander privacybeleid moet gelden dan wat u def
 - **Feedback en diagnostische gegevens**: geef aan of deze app toegang heeft tot diagnostische gegevens.
 - **Synchroniseren met apparaten**: geef aan of deze app gegevens automatisch kan delen en synchroniseren met draadloze apparaten die niet expliciet aan dit apparaat zijn gekoppeld.
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ## <a name="personalization"></a>Persoonlijke instellingen
 
 Deze instellingen gebruiken de [beleid-CSP Personalization](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp), waarbij ook de ondersteunde Windows-edities worden vermeld.
 
 - **URL achtergrondafbeelding Bureaublad** (alleen desktop): Voer de URL in naar een afbeelding in .jpg-, .jpeg- of .png-indeling die u wilt gebruiken als de achtergrond van het Windows-bureaublad. Gebruikers kunnen de afbeelding niet wijzigen. Voer bijvoorbeeld `https://contoso.com/logo.png` in.
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ## <a name="printer"></a>Printer
 
 - **Printers**: lijst met lokale printers die zijn toegevoegd.
 - **Standaardprinter**: stel de standaardprinter in.
 - **Gebruikerstoegang om nieuwe printers toe te voegen**: het gebruik van lokale printers toestaan of blokkeren.
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ## <a name="privacy"></a>Privacy
 
@@ -524,8 +488,6 @@ Deze instellingen gebruiken de [beleid-CSP Privacy](https://docs.microsoft.com/w
 - **Alleen lokale activiteiten**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar alleen op basis van de lokale activiteit te voorkomen. Met **Niet geconfigureerd** (standaard) schakelt u deze functie in.
 
 U kunt informatie configureren die voor alle apps op het apparaat toegankelijk is. Definieer ook uitzonderingen op een per-app basis met **Privacyuitzonderingen per app**.
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ### <a name="exceptions"></a>Uitzonderingen
 
@@ -548,8 +510,6 @@ Selecteer **OK** om uw wijzigingen op te slaan.
 - **Feedback en diagnostische gegevens**: geef aan of deze app toegang heeft tot diagnostische gegevens.
 - **Synchroniseren met apparaten**: geef aan of deze app gegevens automatisch kan delen en synchroniseren met draadloze apparaten die niet expliciet aan deze pc, tablet of telefoon zijn gekoppeld.
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ## <a name="projection"></a>Projectie
 
 Deze instellingen gebruiken de [beleid-CSP WirelessDisplay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wirelessdisplay), waarbij ook de ondersteunde Windows-edities worden vermeld.
@@ -557,8 +517,6 @@ Deze instellingen gebruiken de [beleid-CSP WirelessDisplay](https://docs.microso
 - **Gebruikersinvoer van ontvangers van draadloze schermen**: Met **Blokkeren** wordt gebruikersinvoer van ontvangers van draadloze schermen voorkomen. Met **Niet geconfigureerd** (standaard) kan een draadloos scherm invoer van het toetsenbord, de muis, de pen en het touchoppervlak terugsturen naar het bronapparaat.
 - **Projectie naar deze pc**: Met **Blokkeren** kunnen andere apparaten de pc niet meer vinden voor projectie. Met **Niet geconfigureerd** (standaard) is het apparaat detecteerbaar en kan boven het vergrendelingsscherm worden geprojecteerd.
 - **Een pincode vereisen voor koppelen**: Met **Vereisen** is altijd een pincode vereist voor verbinding met een projectieapparaat. Met **Niet geconfigureerd** (standaard) is geen pincode vereist om het apparaat te koppelen met een projectieapparaat.
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ## <a name="reporting-and-telemetry"></a>Rapportage en telemetrie
 
@@ -602,8 +560,6 @@ Deze instellingen gebruiken de [beleid-CSP Search](https://docs.microsoft.com/wi
   - **Strict** : De hoogste filtering tegen inhoud voor volwassenen.
   - **Gemiddeld** : Gemiddelde filtering tegen inhoud voor volwassenen. Geldige zoekresultaten worden niet gefilterd.
 - **Webresultaten weergeven in zoekopdracht**:Met **Blokkeren** kunnen gebruikers niet zoeken en worden er geen webresultaten weergegeven in het zoekvak. Met **Niet geconfigureerd** (standaard) kunnen gebruikers op het web zoeken en worden de resultaten weergegeven op het apparaat.
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ## <a name="start"></a>start
 
@@ -675,8 +631,6 @@ Deze instellingen gebruiken de [beleid-CSP Start](https://docs.microsoft.com/win
   - **Verbergen**: De snelkoppeling wordt verborgen en de instelling in de app Instellingen wordt uitgeschakeld.
   - **Weergeven**: De snelkoppeling wordt weergegeven en de instelling in de app Instellingen wordt uitgeschakeld.
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
 - **SmartScreen voor Microsoft Edge**: Met **Vereisen** wordt Windows Defender SmartScreen uitgeschakeld en kunnen gebruikers deze functie niet inschakelen. Met **Niet geconfigureerd** (standaard) wordt SmartScreen ingeschakeld. Hiermee kunt u gebruikers beveiligen tegen potentiële dreigingen. Gebruikers kunne deze functie niet uitschakelen.
@@ -693,8 +647,6 @@ Selecteer **OK** om uw wijzigingen op te slaan.
 
   [Browser/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
 ## <a name="windows-spotlight"></a>Windows Spotlight
 
 Deze instellingen gebruiken de [beleid-CSP Experience](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), waarbij ook de ondersteunde Windows-edities worden vermeld.
@@ -709,38 +661,96 @@ Deze instellingen gebruiken de [beleid-CSP Experience](https://docs.microsoft.co
   - **Persoonlijke instellingen voor Windows Spotlight:** : Met **Blokkeren** gebruikt Windows geen diagnostische gegevens om gebruikers aangepaste ervaringen te bieden. Met **Niet geconfigureerd** (standaard) worden diagnostische gegevens gebruikt om persoonlijke aanbevelingen te doen, tips te geven en aanbiedingen weer te geven die op de behoeften van de gebruiker zijn afgestemd.
   - **Welkomstbericht van Windows**: Met **Blokkeren** wordt het welkomstbericht van Windows Spotlight uitgeschakeld. Het welkomstbericht van Windows wordt niet weergegeven als er updates en wijzigingen in Windows en Windows-apps zijn. Met **Niet geconfigureerd** (standaard) wordt het welkomstbericht van Windows weergegeven met informatie over nieuwe of bijgewerkte functies.
 
-Selecteer **OK** om uw wijzigingen op te slaan.
-
-## <a name="windows-defender-antivirus"></a>Windows Defender Antivirus
+## <a name="microsoft-defender-antivirus"></a>Micro soft Defender anti virus
 
 Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), waarbij ook de ondersteunde Windows-edities worden vermeld.
 
 - **Realtime-controle**: Met **Inschakelen** wordt realtime scannen op malware, spyware en andere ongewenste software uitgeschakeld. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Gedragscontrole**: Met **Inschakelen** controleert Defender niet op de aanwezigheid van bepaalde bekende patronen van verdachte activiteiten op apparaten. Met **Niet geconfigureerd** (standaard) wordt Windows Defender-gedragscontrole ingeschakeld.
-- **Netwerkinspectiesysteem (NIS)** : NIS helpt bij de bescherming van apparaten tegen aanvallen vanaf het netwerk. NIS maakt gebruik van handtekeningen van bekende beveiligingsproblemen uit het Microsoft Endpoint Protection Center om schadelijk netwerkverkeer te detecteren en blokkeren.
-- **Alle downloads scannen**: hiermee bepaalt u of Windows Defender alle bestanden moet scannen die van internet worden gedownload.
-- **Scripts scannen die in webbrowsers van Microsoft worden geladen**: Met **Niet geconfigureerd** (standaard) worden door Defender scripts gescand die worden gebruikt in Internet Explorer. Met **Inschakelen** wordt het scannen voorkomen.
-- **Toegang van eindgebruikers tot Defender**: Met **Blokkeren** wordt de gebruikersinterface van Windows Defender voor eindgebruikers verborgen. Daarnaast worden alle meldingen van Windows Defender onderdrukt. Met **Niet geconfigureerd** (standaard) hebben gebruikers toegang tot de gebruikersinterface van Windows Defender. Als deze instelling wordt gewijzigd, gaat de wijziging in wanneer de pc van de eindgebruiker de volgende keer opnieuw wordt opgestart.
-- **Interval voor handtekeningupdates (in uren)** : Geef het interval op waarmee Defender op nieuwe handtekeningbestanden moet controleren (tussen 0-24). Uw opties zijn:
 
-  - **Niet geconfigureerd** (standaard)
-  - **Niet controleren**: Defender controleert niet op nieuwe handtekeningbestanden.
+  [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+- **Gedragscontrole**: Met **Inschakelen** worden controles van Defender op de aanwezigheid van bepaalde bekende patronen van verdachte activiteit op apparaten uitgeschakeld. Met **Niet geconfigureerd** (standaard) wordt Windows Defender-gedragscontrole ingeschakeld.
+
+  [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
+
+- **Netwerkinspectiesysteem (NIS)** : NIS helpt bij de bescherming van apparaten tegen aanvallen vanaf het netwerk. NIS maakt gebruik van handtekeningen van bekende beveiligingsproblemen uit het Microsoft Endpoint Protection Center om schadelijk netwerkverkeer te detecteren en blokkeren.
+
+  Met **Niet geconfigureerd** (standaard) schakelt u deze functie uit. Gebruikers worden niet geblokkeerd om verbinding te maken met bekende beveiligings problemen. Wanneer deze optie is ingesteld op **inschakelen**, worden netwerk beveiliging en netwerk blokkering ingeschakeld en kunnen gebruikers deze niet uitschakelen. Gebruikers worden geblokkeerd om verbinding te maken met bekende beveiligings problemen.
+
+  [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+
+- **Alle down loads scannen**: **niet geconfigureerd** (standaard) heeft Defender scans alle bestanden die zijn gedownload van het internet. Wanneer deze optie is **ingeschakeld**, is deze functie uitgeschakeld. Daarom scant Defender niet alle gedownloade Internet bestanden.
+
+  [Defender/AllowIOAVProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
+
+- **Scripts scannen die in webbrowsers van Microsoft worden geladen**: Met **Niet geconfigureerd** (standaard) worden door Defender scripts gescand die worden gebruikt in Internet Explorer. Met **Inschakelen** wordt het scannen voorkomen.
+
+  [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
+
+- **Toegang van eindgebruikers tot Defender**: Met **Blokkeren** wordt de gebruikersinterface van Windows Defender voor eindgebruikers verborgen. Daarnaast worden alle meldingen van Windows Defender onderdrukt. Met **Niet geconfigureerd** (standaard) hebben gebruikers toegang tot de gebruikersinterface van Windows Defender. Als deze instelling wordt gewijzigd, gaat de wijziging in wanneer de pc van de eindgebruiker de volgende keer opnieuw wordt opgestart.
+
+  [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
+
+- **Interval voor Security Intelligence-updates (in uren)** : Voer het interval in dat Defender controleert op nieuwe beveiligings informatie, van 0-24. Uw opties zijn:
+
+  - **Niet geconfigureerd** (standaard): elke 8 uur op updates controleren.
+  - **Niet controleren**: Defender controleert niet op nieuwe beveiligings updates.
   - **1-24**: `1` controleert elk uur, `2` controleert elke twee uur, `24` controleert elke dag, enzovoort.
-- **Activiteiten van bestanden en programma's bewaken**: hiermee staat u Defender toe activiteiten van bestanden en programma's op apparaten te bewaken.
-- **Het aantal dagen voordat in quarantaine geplaatste malware wordt verwijderd**: Hiermee kunt u gedurende het aantal dagen dat u invoert opgeloste malware laten bijhouden, zodat u handmatig eerder aangevallen apparaten kunt controleren. Als u het aantal dagen instelt op **0**, blijft malware in de map Quarantaine staan en wordt malware niet automatisch verwijderd. Als de waarde is ingesteld op `90`, worden items in quarantaine 90 dagen bewaard op het systeem. Daarna worden de items verwijderd.
-- **Limiet voor het CPU-gebruik tijdens het scannen**: hiermee kunt u de hoeveelheid CPU beperken die scans mogen gebruiken (tussen **1** en **100**).
-- **Archiefbestanden scannen**: Met **Inschakelen** scant Defender geen gearchiveerde bestanden, zoals ZIP- of CAB-bestanden. Met **Niet geconfigureerd** (standaard) worden dergelijke bestanden gescand.
+  
+  [Defender/SignatureUpdateInterval CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
+  
+- **Activiteiten van bestanden en programma's bewaken**: hiermee staat u Defender toe activiteiten van bestanden en programma's op apparaten te bewaken. Uw opties zijn:
+
+  - **Niet geconfigureerd** (standaard): bewaakt alle bestanden
+  - **Bewaking is uitgeschakeld**
+  - **Alle bestanden bewaken**
+  - **Alleen inkomende bestanden controleren**
+  - **Alleen uitgaande bestanden controleren**
+
+  [Defender/RealTimeScanDirection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
+
+- **Het aantal dagen voordat in quarantaine geplaatste malware wordt verwijderd**: Hiermee kunt u gedurende het aantal dagen dat u invoert opgeloste malware laten bijhouden, zodat u handmatig eerder aangevallen apparaten kunt controleren. Als u het aantal dagen instelt op `0`, blijft malware in de map Quarantaine staan en wordt malware niet automatisch verwijderd. Als de waarde is ingesteld op `90`, worden items in quarantaine 90 dagen bewaard op het systeem. Daarna worden de items verwijderd.
+
+  [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
+
+- **Limiet voor het CPU-gebruik tijdens het scannen**: Hiermee beperkt u de hoeveelheid CPU die scans kunnen gebruiken, van `0` tot `100`.
+- **Archief bestanden scannen**: **Hiermee schakelt u** Defender in om archief bestanden te scannen, zoals zip-of CAB-bestanden. Met **Niet geconfigureerd** (standaard) worden dergelijke bestanden gescand.
+
+  [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
+
 - **Inkomende e-mailberichten scannen**: Met **Inschakelen** scant Defender e-mailberichten wanneer deze op het apparaat binnenkomen. Met **Niet geconfigureerd** (standaard) worden e-mailberichten niet gescand.
+
+  [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
+
 - **Verwisselbare stations scannen tijdens een volledige scan**: Met **Inschakelen** worden verwisselbare stations niet volledig gescand. Met **Niet geconfigureerd** (standaard) worden verwisselbare stations, zoals USB-sticks, door Defender gescand.
+
+  Tijdens een snelle scan kunnen Verwissel bare schijven nog steeds worden gescand.
+
+  [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
+
 - **Toegewezen netwerkschijven scannen tijdens een volledige scan**: Met **Inschakelen** scant Defender bestanden op toegewezen netwerkschijven. Met **Niet geconfigureerd** (standaard) voorkomt u een volledige scan. Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.
+
+  Tijdens een snelle scan kunnen toegewezen netwerk stations nog steeds worden gescand.
+
+  [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
+
 - **Bestanden die zijn geopend vanuit mappen op het netwerk scannen**: Met **Niet geconfigureerd** (standaard) scant Defender bestanden op gedeelde netwerkstations, bijvoorbeeld bestanden die via een UNC-pad toegankelijk zijn. Met **Inschakelen** wordt het scannen voorkomen. Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.
+
+  [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
+
 - **Cloudbeveiliging**: Met **Niet geconfigureerd** (standaard) ontvangt de Microsoft Active Protection-service informatie over malware-activiteit op apparaten die u beheert. Met **Inschakelen** wordt deze functie geblokkeerd.
+
+  [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
+
 - **Gebruikers vragen voordat een voorbeeld wordt verzonden**: hiermee bepaalt u of potentieel schadelijke bestanden waarvoor verdere analyse nodig is, automatisch naar Microsoft worden verzonden. Uw opties zijn:
-  - **Niet geconfigureerd**
+
+  - **Niet geconfigureerd** (standaard): Verzend veilige voor beelden automatisch.
   - **Altijd vragen**
   - **Vragen voordat persoonlijke gegevens worden verstuurd**
   - **Nooit gegevens verzenden**
-  - **Alle gegevens verzenden zonder te vragen**: Gegevens worden automatisch verzonden
+  - **Alle gegevens verzenden zonder te vragen**: Gegevens worden automatisch verzonden.
+
+  [Defender/SubmitSamplesConsent CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)
 
 - **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd**: Kies het uur waarop een dagelijkse snelle scan moet worden uitgevoerd. Met **Niet geconfigureerd** wordt er geen dagelijkse scan uitgevoerd. Als u meer aanpassingsmogelijkheden wilt, configureert u de instelling **Type systeemscan dat moet worden uitgevoerd**.
 
@@ -756,12 +766,16 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
     - **Geplande dag**: kies de dag waarop de scan moet worden uitgevoerd.
     - **Geplande tijd**: kies de tijd waarop de scan moet worden uitgevoerd.
 
-  Deze instelling kan strijdig zijn met de instelling **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd**. Een aantal aanbevelingen:
-
-  - Als u dagelijks een snelle scan wilt uitvoeren, configureert u de instelling: **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd**.
-  - Als u dagelijks een snelle scan en een keer per week een volledige scan wilt uitvoeren, configureert u de instelling **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd**. Stel **Type systeemscan dat moet worden uitgevoerd** in op een volledige scan en geef de datum en tijd op.
-  - Configureer de instelling **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd** niet wanneer op hetzelfde moment **Type systeemscan dat moet worden uitgevoerd** is ingesteld op **Snelle scan**. Deze instellingen kunnen conflicteren, waardoor scans mogelijk niet worden uitgevoerd.
-  - Als u elke dinsdag om 06.00 uur een snelle scan wilt uitvoeren, configureert u de instelling **Type systeemscan dat moet worden uitgevoerd**.
+  > [!TIP]
+  > Deze instelling kan strijdig zijn met de instelling **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd**. Een aantal aanbevelingen:  
+  >
+  > - Als u een dagelijkse snelle scan wilt plannen en een wekelijkse volledige scan wilt uitvoeren, gaat u als volgt te werk:
+  >   1. De **tijd configureren voor het uitvoeren van een dagelijkse snelle scan** instelling.
+  >   2. Configureer het **type systeem scan dat** moet worden uitgevoerd om een volledige scan uit te voeren.
+  > 
+  > - Als u slechts één snelle scan dagelijks wilt (geen volledige scan), gebruikt u een van de volgende instellingen: **tijd voor het uitvoeren van een dagelijkse snelle scan of het** **type systeem scan dat moet worden uitgevoerd**. Als u bijvoorbeeld elke dinsdag om 06.00 uur een snelle scan wilt uitvoeren, configureert u de instelling **Type systeemscan dat moet worden uitgevoerd**.
+  > 
+  > - Configureer de instelling **Tijd waarop een dagelijkse snelle scan moet worden uitgevoerd** niet wanneer op hetzelfde moment **Type systeemscan dat moet worden uitgevoerd** is ingesteld op **Snelle scan**. Deze instellingen kunnen conflicteren, waardoor scans mogelijk niet worden uitgevoerd.
 
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
@@ -774,7 +788,10 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
   Zie [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus) (Mogelijk ongewenste toepassingen detecteren en blokkeren) voor meer informatie over mogelijk ongewenste apps.
 
-- **Acties voor gedetecteerde bedreiging van malware**: kies welke acties Defender moet uitvoeren voor de verschillende bedreigingsniveaus (Laag, Gemiddeld, Hoog en Ernstig). Als dit niet mogelijk is, kiest Windows Defender de beste optie om te garanderen dat de bedreiging wordt hersteld. Uw opties zijn:
+  [Defender/PUAProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
+- **Acties voor gedetecteerde bedreigingen van schadelijke software**: Kies hoe u wilt omgaan met malware-threads. **Niet geconfigureerd** (standaard) Hiermee kan micro soft Defender de beste optie kiezen. Wanneer deze optie is ingesteld op **Inschakelen**, kiest u de acties die Defender moet uitvoeren voor de verschillende bedreigingsniveaus die worden gedetecteerd: laag, gemiddeld, hoog en ernstig. Uw opties zijn:
+  
   - **Reinigen**
   - **Quarantaine**
   - **Verwijderen**
@@ -782,15 +799,15 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
   - **Door de gebruiker gedefinieerd**
   - **Blokkeren**
 
-Selecteer **OK** om uw wijzigingen op te slaan.
+  Als uw actie niet mogelijk is, kiest Windows Defender de beste optie om ervoor te zorgen dat de dreiging wordt hersteld. 
+
+  [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
 ### <a name="windows-defender-antivirus-exclusions"></a>Uitsluitingen voor Windows Defender Antivirus
 
 - **Bestanden en mappen die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer bestanden aan de uitsluitingslijst toe, zoals **C:\pad** of **%ProgramFiles%\pad\bestandsnaam.exe**. Deze bestanden en mappen worden niet opgenomen in real-timescans of geplande scans.
 - **Bestandsextensies die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer bestandsextensies zoals **jpg** of **txt** aan de uitsluitingslijst toe. Bestanden met deze extensies worden niet opgenomen in realtime-scans of geplande scans.
 - **Processen die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer processen van het type **.exe**, **.com** of **.scr** aan de uitsluitingslijst toe. Deze processen worden niet opgenomen in real-timescans of geplande scans.
-
-Selecteer **OK** om uw wijzigingen op te slaan.
 
 ## <a name="next-steps"></a>Volgende stappen
 

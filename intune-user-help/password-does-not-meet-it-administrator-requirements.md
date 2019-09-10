@@ -1,11 +1,11 @@
 ---
-title: Uw wachtwoord voldoet niet aan de vereisten van het ondersteuningsteam van het bedrijf | Microsoft Docs
-description: ''
+title: Wachtwoord vereisten voor apparaten in Intune-bedrijfsportal | Microsoft Docs
+description: In dit artikel worden algemene wachtwoord vereisten beschreven die uw organisatie kan afdwingen.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 09/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,42 +16,86 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac0a8b076fe6f21621826dec32f7aaa72eba88c7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bce3ae1fd5386c749285313f29fc88cf7b464750
+ms.sourcegitcommit: d0d320fbac69b063b4264491d8a918cfe12bd485
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837013"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751769"
 ---
-# <a name="your-password-does-not-meet-your-company-supports-requirements"></a>Uw wachtwoord voldoet niet aan de vereisten van het ondersteuningsteam van het bedrijf
+# <a name="device-password-requirements-for-enrolled-devices"></a>Wachtwoord vereisten voor het apparaat voor Inge schreven apparaten
 
-Het ondersteuningsteam van het bedrijf vereist een wachtwoord voor het beveiligen van uw apparaat. Het wachtwoord dat u gebruikt voor toegang tot de resources van uw bedrijf of school voldoet momenteel niet aan een of meer vereisten die het ondersteuningsteam van het bedrijf heeft ingesteld. Los het probleem op aan de hand van de instructies die worden weergegeven op het apparaat. Beschrijvingen van de problemen worden hieronder vermeld.
+Uw organisatie kan vereisen dat u een veiliger wacht woord maakt voordat u toegang krijgt tot werk-of school resources. In dit artikel worden algemene wachtwoord vereisten voor Windows 10-, iOS-, macOS-en Android-apparaten beschreven. Uw organisatie dwingt mogelijk niet al deze vereisten af.  
 
-Voor het instellen van uw pincode of wachtwoord gebruikt u de koppeling die overeenkomt met uw type apparaat:
 
-- [De pincode of het wachtwoord voor uw Android-apparaat instellen](set-your-pin-or-password-android.md)
-- [De wachtwoordcode voor uw iOS-apparaat instellen of wijzigen](set-or-change-your-passcode-ios.md)
-- [Het wachtwoord voor uw Windows-apparaat instellen of wijzigen](set-or-change-your-password-windows.md)
+Wanneer een wacht woord of wachtwoord code niet meer aan een vereiste voldoet, ontvangt u een bericht van Bedrijfsportal. Hierin worden de wijzigingen beschreven die u moet aanbrengen. Als er geen details worden opgegeven in het bericht, gebruikt u dit artikel als referentie om te vergelijken met uw huidige wacht woord.  
 
-> [!NOTE]
-> Als u niet goed weet wat u moet doen om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten van het ondersteuningsteam van uw bedrijf, neemt u contact op met het ondersteuningsteam van het bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
+> [!IMPORTANT]
+> Als u uw wacht woord hebt gewijzigd om te voldoen aan de vereisten, maar nog steeds meldingen ontvangt, moet u het apparaat opnieuw opstarten.  
 
-## <a name="pin-or-password-issue-descriptions"></a>Beschrijvingen van problemen met de pincode of het wachtwoord
+Neem contact op met uw IT-ondersteunings medewerker voor meer informatie of om erachter te komen welke specifieke vereisten uw organisatie biedt. Bekijk de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) om te controleren of contactgegevens beschikbaar zijn.  
 
-| **Probleem** | **Beschrijving** |
+## <a name="windows-10-password-requirements"></a>Windows 10-wachtwoord vereisten
+
+| Bericht | Oplossen |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Het wachtwoord bevat geen complexe tekens.** | Van het ondersteuningsteam van het bedrijf moet u complexe tekens in uw wachtwoord gebruiken. Voorbeelden van complexe tekens zijn cijfers, hoofdletters en symbolen zoals $, % en #. |
-| **Het wachtwoord is te eenvoudig en niet veilig genoeg.** | Voorbeelden van te eenvoudige wachtwoorden zijn 1234 en 1111. Als u niet zeker weet welke soorten wachtwoorden zijn toegestaan, zorg er dan voor dat uw wachtwoord geen opeenvolgende of herhalende cijfers bevatten, zoals in het voorbeeld. |
-| **Het wachtwoord is verlopen.** | Omdat uw wachtwoord is verlopen, moet u een nieuw wachtwoord instellen dat voldoet aan de vereisten die door het ondersteuningsteam van het bedrijf zijn ingesteld. |
-| **Er is geen wachtwoord ingesteld.** | Voordat u toegang kunt krijgen tot werk-e-mail en -gegevens op uw apparaat, moet u een wachtwoord instellen dat voldoet aan de vereisten die zijn ingesteld door het ondersteuningsteam van het bedrijf. |
-| **Het wachtwoord is te kort.** | Van het ondersteuningsteam van het bedrijf moet u een langer wachtwoord gebruiken met meer tekens. |
-| **Het wachtwoord is nog te kort geleden gebruikt.** | Het ondersteuningsteam van het bedrijf voorkomt dat u de wachtwoorden kunt gebruiken die u in het verleden hebt gebruikt. Kies een wachtwoord dat u nog niet eerder hebt gebruikt. |
-| **Het wachtwoord is niet complex genoeg om aan de vereisten te voldoen.** | Van het ondersteuningsteam van het bedrijf moet u complexere tekens in uw wachtwoord gebruiken. Probeer tekens zoals cijfers, hoofdletters en symbolen zoals $, % en #. Dit kan ook gelden voor andere accounts op uw apparaat, controleer dus alle andere werkaccounts om ervoor te zorgen dat uw wachtwoord voldoet aan de vereisten die door IT zijn ingesteld voor uw apparaat. |
+| Het wachtwoord is vereist. | Stel een wachtwoord in. Uw organisatie vereist dat u een wacht woord invoert om uw apparaat te ontgrendelen. |
+| Het wachtwoord is te eenvoudig. |  Zorg ervoor dat uw wacht woord geen sequentiële of herhaalde getallen bevat, zoals 1234 of 1111. |
+| Het wachtwoord is te kort.| Een wacht woord bijwerken of instellen met meer tekens. Uw organisatie vereist dat uw wacht woord een bepaalde lengte heeft. Wat ze daad werkelijk kiezen, verschillen, maar de minimum lengte die ze nodig hebben, is 4 tekens en de maximum waarde is 16. |
+| Het wacht woord mag alleen getallen bevatten. | Stel een wacht woord in dat alleen getallen bevat.|
+| Het wacht woord mag alleen alfanumerieke tekens bevatten. | Stel een wacht woord in dat een combi natie van cijfers en letters bevat.|
+| Het wacht woord moet complexe tekens bevatten. | Voeg complexe tekens toe, zoals cijfers, hoofd letters en symbolen zoals `$`, `%`en `#`. Uw organisatie heeft een combi natie van letters, cijfers en niet-alfanumerieke tekens nodig om het voor anderen moeilijker te maken het wacht woord te raden.|  
+| Het wachtwoord is verlopen. | Stel een nieuw wacht woord in. Uw organisatie vereist dat u uw wacht woord na een bepaald aantal dagen wijzigt. |
+| Uw wachtwoord is recentelijk nog gebruikt. | Kies een wachtwoord dat u nog niet eerder hebt gebruikt. Uw organisatie vereist dat er een bepaalde hoeveelheid tijd wordt door gegeven voordat u een wacht woord opnieuw gebruikt. |
+
+## <a name="ios-passcode-requirements"></a>vereisten voor de iOS-wachtwoord code
+
+| Bericht | Oplossen |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| De wachtwoord code is vereist.| Stel een wachtwoordcode in. Uw organisatie vereist dat u een wachtwoord code invoert om uw apparaat te ontgrendelen. |
+| De wachtwoord code is te eenvoudig. |  Zorg ervoor dat uw wachtwoord code geen sequentiële of herhaalde getallen bevat, zoals 1234 of 1111. |
+| De wachtwoord code is te kort. | Een wachtwoord code met meer tekens bijwerken of instellen. Uw organisatie vereist dat uw wachtwoord code een bepaalde lengte heeft. Wat ze daad werkelijk kiezen, verschillen, maar de minimum lengte die ze nodig hebben, is 4 tekens en de maximum 14. Wanneer u uw wachtwoord code wijzigt, wordt er mogelijk een prompt van Apple weer gegeven waarin u 6 of meer tekens moet invoeren. Dit bericht is een Apple-systeem aanbeveling. Als uw organisatie alleen een wachtwoord code van 4 of 5 tekens vereist, hoeft u niet een 6-cijferige wachtwoord code in te voeren.|  
+| De wachtwoord code mag alleen getallen bevatten. | Stel een wachtwoord code in die alleen getallen bevat.|
+| De wachtwoord code mag alleen alfanumerieke tekens bevatten.| Stel een wachtwoord code in die een combi natie van cijfers en letters bevat.|
+| De wachtwoord code moet niet-alfanumerieke tekens bevatten. | Voeg `&`speciale tekens toe, zoals, `$` `!`, `%`, en `#`. Uw organisatie vereist een combi natie van letters, cijfers en niet-alfanumerieke tekens om het voor anderen moeilijker te maken om de wachtwoord code te raden.|
+| De wachtwoordcode is verlopen. | Stel een nieuw wacht woord in. Uw organisatie vereist dat u uw wacht woord na een bepaald aantal dagen wijzigt. |
+| De wachtwoord code is te recent gebruikt.| Kies een wachtwoord code die u nog niet eerder hebt gebruikt. Uw organisatie vereist dat er een bepaalde hoeveelheid tijd wordt door gegeven voordat u een wachtwoord code opnieuw gebruikt. |
+|Verificatie van aanraak-ID of gezichts-ID is vereist. | Stel een touch-ID of gezichts-id in. Uw organisatie vereist dat u met een van deze methoden verifieert voordat u automatisch invullen voor wacht woorden of creditcard gegevens gebruikt. | 
+
+## <a name="macos-password-requirements"></a>macOS-wachtwoord vereisten
+| Bericht | Oplossen |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Het wachtwoord is vereist. | Stel een wachtwoord in. Uw organisatie vereist dat u een wacht woord invoert om uw apparaat te ontgrendelen. |
+| Het wachtwoord is te eenvoudig.|  Zorg ervoor dat uw wacht woord geen sequentiële of herhaalde getallen bevat, zoals 1234 of 1111. |
+| Het wachtwoord is te kort. | Een wacht woord bijwerken of instellen met meer tekens. Uw organisatie vereist dat uw wacht woord een bepaalde lengte heeft.|
+| Het wacht woord mag alleen getallen bevatten. | Stel een wacht woord in dat alleen getallen bevat.|
+| Het wacht woord mag alleen alfanumerieke tekens bevatten. | Stel een wacht woord in dat een combi natie van cijfers en letters bevat.|
+| Het wacht woord moet niet-alfanumerieke tekens bevatten. | Voeg `&`speciale tekens toe, zoals, `$` `!`, `%`, en `#`. Uw organisatie heeft een combi natie van letters, cijfers en niet-alfanumerieke tekens nodig om het voor anderen moeilijker te maken het wacht woord te raden.|
+| Het wachtwoord is verlopen. | Stel een nieuw wacht woord in. Uw organisatie vereist dat u uw wacht woord na een bepaald aantal dagen wijzigt. |
+| Uw wachtwoord is recentelijk nog gebruikt. | Kies een wachtwoord dat u nog niet eerder hebt gebruikt. Uw organisatie vereist dat er een bepaalde hoeveelheid tijd wordt door gegeven voordat u een wacht woord opnieuw gebruikt. |
+
+## <a name="android-password-requirements"></a>Wachtwoord vereisten voor Android
+| Bericht | Oplossen |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Het wachtwoord is vereist. | Stel een wacht woord of pincode in. Uw organisatie vereist dat u een wacht woord invoert om uw apparaat te ontgrendelen. |
+| Het wachtwoord is te eenvoudig. |  Zorg ervoor dat uw wacht woord of pincode geen opeenvolgende of herhaalde getallen bevat, zoals 1234 of 1111. |
+| Het wachtwoord is te kort. | Een wacht woord bijwerken of instellen met meer tekens. Uw organisatie vereist dat uw wacht woord een bepaalde lengte heeft.|
+| Het wachtwoord moet getallen bevatten. | Stel een wacht woord of pincode in die getallen bevat.|
+| Het wachtwoord moet letters bevatten. | Stel een wacht woord in dat letters uit het alfabet bevat.|
+| Het wacht woord moet alfanumerieke tekens bevatten. | Stel een wacht woord in dat een combi natie van cijfers en letters bevat.|
+| Het wacht woord moet alfanumerieke tekens en symbolen bevatten. | Stel een wacht woord in dat bestaat uit een combi natie van letters, cijfers en speciale `&`tekens `!`, `$`zoals `%`,, `#`, en. |
+| Wacht woord moet biometrische technologie gebruiken.| Stel uw apparaat in voor het gebruik van biometrische verificatie, zoals vinger afdruk of gezichts herkenning.
+| Het wachtwoord is verlopen. | Stel een nieuw wacht woord in. Uw organisatie vereist dat u uw wacht woord na een bepaald aantal dagen wijzigt. |
+| Uw wachtwoord is recentelijk nog gebruikt. | Kies een wachtwoord dat u nog niet eerder hebt gebruikt. Uw organisatie vereist dat er een bepaalde hoeveelheid tijd wordt door gegeven voordat u een wacht woord opnieuw gebruikt. |
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Voor het instellen van uw pincode of wachtwoord gebruikt u de koppeling die overeenkomt met uw type apparaat:
+Raadpleeg de volgende artikelen voor het maken of wijzigen van het wacht woord, de wachtwoord code of de pincode van het apparaat.  
 
-- [De pincode of het wachtwoord voor uw Android-apparaat instellen](set-your-pin-or-password-android.md)
-- [De wachtwoordcode voor uw iOS-apparaat instellen of wijzigen](set-or-change-your-passcode-ios.md)
-- [Het wachtwoord voor uw Windows-apparaat instellen of wijzigen](set-or-change-your-password-windows.md)
+- [Wacht woord voor Windows 10-apparaat instellen](set-or-change-your-password-windows.md)  
+- [Wachtwoord code voor iOS-apparaat instellen](set-or-change-your-passcode-ios.md)  
+- [Een pincode of wachtwoord voor uw Android-apparaat instellen](set-your-pin-or-password-android.md)  
+
+Nog hulp nodig? Neem contact op met de ondersteunings medewerker. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+

@@ -857,8 +857,8 @@
                   href: custom-settings-windows-10.md
             - name: Beveiligingsbasislijnen
               items:
-                - name: Instellingen voor Windows 10-basislijn
-                  href: security-baseline-settings-mdm.md
+                - name: Instellingen voor Windows 10 MDM-basislijn
+                  href: security-baseline-settings-mdm-all.md
                 - name: Instellingen voor Microsoft Defender ATP-basislijn
                   href: security-baseline-settings-defender-atp.md
             - name: Windows Update-instellingen
@@ -1047,10 +1047,6 @@
               href: troubleshoot-software-updates-in-microsoft-intune.md
             - name: Algemene fouten in Endpoint Protection
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: Archief met beveiligingsbasislijnen
-          items:
-            - name: Gearchiveerde MDM-beveiligingsbasislijnen
-              href: security-baseline-settings-mdm-archive.md
     - name: Scenario-implementatiehandleidingen
       items:
         - name: Exchange Online beveiligen
