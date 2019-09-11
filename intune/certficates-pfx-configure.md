@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf4559d03f7dfc8ec8c48242defa391b4b49e41a
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 25beef7e6593865b92e349163768ded5ce3b9e2d
+ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122402"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70376942"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -73,7 +73,7 @@ Als u PKCS-certificaten wilt gebruiken met Intune, hebt u de volgende infrastruc
   - De connector voor geïmporteerde PFX-certificaten voor Microsoft Intune installeren op uw server.  
   - Voor het automatisch ontvangen van belangrijke updates moet u ervoor zorgen dat firewalls geopend zijn, waarmee de connector contact kan opnemen met **autoupdate.msappproxy.net** op poort **443**.   
 
-  Raadpleeg [Microsoft Intune Certificate Connector](intune-endpoints.md#microsoft-intune-certificate-connector) voor meer informatie over alle netwerkeindpunten waar de connector toegang tot moet hebben.
+  Raadpleeg [Microsoft Intune Certificate Connector](intune-endpoints.md) voor meer informatie over alle netwerkeindpunten waar de connector toegang tot moet hebben.
 
 - **Windows Server**:  
   U gebruikt een Windows Server als host voor:

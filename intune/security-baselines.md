@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 6b1b489bbc62e4f47847ad599debcecfc27e1918
+ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063035"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70815452"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Beveiligingsbasislijnen gebruiken om Windows 10-apparaten te gebruiken in Intune
 
@@ -74,8 +74,8 @@ Wanneer u meerdere beveiligingsbasislijnen gebruikt, raadpleegt u de instellinge
 De volgende beveiligingsbasislijninstanties zijn beschikbaar voor gebruik met Intune. Gebruik de koppelingen om de instellingen weer te geven voor de meest recente instantie van elke basislijn. 
 
 - **MDM-beveiligingsbasislijn**
-  - [MDM-beveiligingsbasislijn voor mei 2019](security-baseline-settings-mdm.md)
-  - [Voorbeeld: MDM-basislijn voor beveiliging voor oktober 2018](security-baseline-settings-mdm-archive.md)
+  - [MDM-beveiligingsbasislijn voor mei 2019](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
+  - [Voorbeeld: MDM-basislijn voor beveiliging voor oktober 2018](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
 
 - **Microsoft Defender ATP-basislijn**  
   *(Voor het gebruik van deze basislijn moet uw omgeving voldoen aan de vereisten voor het gebruik van [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))* .
@@ -215,7 +215,7 @@ Strikt genomen niet. Het Microsoft-beveiligingsteam raadpleegt adviesorganisatie
 
 ## <a name="next-steps"></a>Volgende stappen
 - Bekijk de instellingen in de nieuwste versies van de beschikbare basislijnen:  
-  - [MDM-beveiligingsbasislijn](security-baseline-settings-mdm.md)  
+  - [MDM-beveiligingsbasislijn](security-baseline-settings-mdm-all.md)  
   - [Microsoft Defender ATP-basislijn](security-baseline-settings-defender-atp.md)  
 
 - De status controleren en de [basislijn en het profiel](security-baselines-monitor.md) controleren
