@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64a66fde0f501bf2e1e7f6b0cc98eddd871717b2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b2947969c1c07d595a0a5baa48be11ba7a941424
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050373"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739214"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Opslag en verwerking van gegevens in Intune
 
@@ -41,7 +41,7 @@ Telemetrische gegevens (servicelogboeken, prestatielogboeken, fouten enzovoort) 
 
 Microsoft biedt in veel regio's wereldwijd Intune-services aan. Intune respecteert de opslaglocaties die zijn gekozen door de beheerder voor klantgegevens.
 
-Zie [Microsoft Intune Waar zijn mijn klantgegevens?](For more information, see Microsoft Intune Where is my customer data?) voor meer informatie.
+Raadpleeg voor meer informatie [Waar bevinden uw gegevens zich?](https://www.microsoft.com/trust-center/privacy/data-location)
 
 ### <a name="personal-data-retention"></a>Persoonlijke gegevens bewaren
 

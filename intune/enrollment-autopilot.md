@@ -17,17 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: e0f1f7d937f08e32b30ee9facdcca03d263bc27e
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70062930"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842175"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
 
-Er zijn vier typen Autopilot-implementatie: [Zelfimplementatiemodus](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (voor kiosken, digitale borden of een gedeeld apparaat), [White label](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) (hiermee kunnen partners of IT-medewerkers een Windows 10-pc alvast inrichten, zodat deze volledig is geconfigureerd en klaar is voor gebruik), [Autopilot voor bestaande apparaten](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) (hiermee kunt u gemakkelijk de meest recente versie van Windows 10 op uw bestaande apparaten implementeren) en [Door gebruiker gestuurde modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (voor traditionele gebruikers). 
+Er zijn vier typen Autopilot-implementatie:
+- [De modus voor zelf implementeren](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying), voor kiosken, digitale borden of een gedeeld apparaat
+- [White label](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove), waarmee partners of IT-medewerkers een Windows 10-pc alvast kunnen inrichten, zodat deze volledig is geconfigureerd en klaar is voor gebruik -[Autopilot voor bestaande apparaten](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices), waarmee u gemakkelijk de meest recente versie van Windows 10 op uw bestaande apparaten kunt implementeren
+- [Door gebruiker gestuurde modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven), voor traditionele gebruikers. 
 
 
 ## <a name="prerequisites"></a>Vereisten
@@ -74,9 +77,9 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
     3. Als **lidmaatschapstype** kiest u **Toegewezen** of **Dynamisch apparaat**.
 3. Als u in de vorige stap voor **Toegewezen** hebt gekozen als **lidmaatschapstype**, kiest u op de blade **Groep** de optie **Leden** en voegt u Autopilot-apparaten toe aan de groep.
     Autopilot-apparaten die nog niet zijn ingeschreven, zijn apparaten waarvan de naam overeenkomt met het serienummer van het apparaat.
-4. Als u hierboven de optie **Dynamische apparaten** hebt gekozen als **lidmaatschapstype**, kiest u op de blade **Groep** de optie **Leden van dynamisch apparaat** en typt u een de volgende codes in het vak **Geavanceerde regel**.
+4. Als u hierboven de optie **Dynamische apparaten** hebt gekozen als **lidmaatschapstype**, kiest u op de blade **Groep** de optie **Leden van dynamisch apparaat** en typt u een de volgende codes in het vak **Geavanceerde regel**. Alleen Autopilot-apparaten worden door deze regels verzameld, omdat ze doelkenmerken hebben die alleen zijn gelden voor Autopilot-apparaten.
     - Als u een groep wilt maken met al uw Autopilot-apparaten, typt u: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - Het veld met groepstags van Intune komt overeen met het kenmerk OrderID op Azure AD-apparaten. Als u een groep wilt maken met al uw Autopilot-apparaten met een specifieke groepstag (OrderID), typt u: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Het veld met groepstags van Intune komt overeen met het kenmerk OrderID op Azure AD-apparaten. Als u een groep wilt maken met al uw Autopilot-apparaten met een specifieke groepstag (de OrderID voor Azure AD-apparaten), typt u: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Als u een groep wilt maken met al uw Autopilot-apparaten en een specifieke inkooporder-id, typt u `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     Wanneer u de code **Geavanceerde regel** hebt toegevoegd, kiest u **Opslaan**.
@@ -93,7 +96,7 @@ Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren.
 4. Selecteer **Volgende**.
 5. Ga op de pagina **Out-Of-Box Experience (OOBE)** naar **Implementatiemodus** en kies een van deze twee opties:
     - **Op basis van gebruiker**: Apparaten met dit profiel worden gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn gebruikersreferenties vereist om het apparaat in te kunnen schrijven.
-    - **Zelf-implementerend (preview)** : (Windows 10 versie 1809 of hoger vereist) apparaten met dit profiel worden niet gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn geen gebruikersreferenties vereist om het apparaat te kunnen registreren.
+    - **Zelf-implementerend (preview)** : (Windows 10 versie 1809 of hoger vereist) apparaten met dit profiel worden niet gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn geen gebruikersreferenties vereist om het apparaat te kunnen registreren. Wanneer er geen gebruiker aan een apparaat is gekoppeld, is op het apparaat geen nalevingsbeleid op basis van gebruikers van toepassing. Wanneer u de modus voor zelf-implementatie gebruikt, wordt alleen nalevingsbeleid toegepast dat op het apparaat is gericht.
 
     ![Schermopname van de OOBE-pagina](media/enrollment-autopilot/create-profile-outofbox.png)
 

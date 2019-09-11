@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: bffbc96e945d522453c299717a6eb413354a4af4
+ms.sourcegitcommit: 98f2597eec28c6096985d5a1acae72430c2afb1a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021754"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70878051"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Aangepaste meldingen verzenden in Intune  
 
-Gebruik Microsoft Intune om aangepaste meldingen te verzenden naar de gebruikers van beheerde iOS- en Android-apparaten. Deze berichten worden op de apparaten van gebruikers weergegeven als reguliere pushmeldingen vanuit de Bedrijfsportal-app, net zoals meldingen van andere toepassingen op het apparaat worden weergegeven. De aangepaste meldingen van Intune worden niet ondersteund door Windows-apparaten.   
+Gebruik Microsoft Intune om aangepaste meldingen te verzenden naar de gebruikers van beheerde iOS- en Android-apparaten. Deze berichten worden op de apparaten van gebruikers weergegeven als reguliere pushmeldingen vanuit de Bedrijfsportal-app en de Microsoft Intune-app, net zoals meldingen van andere toepassingen op het apparaat worden weergegeven. De aangepaste meldingen van Intune worden niet ondersteund door Windows-apparaten.   
 
 Aangepaste meldingen hebben een korte titel en een hoofdtekst van maximaal 500 tekens. De berichten kunnen worden aangepast voor algemene communicatiedoeleinden.
 
@@ -38,7 +38,7 @@ Aangepaste meldingen hebben een korte titel en een hoofdtekst van maximaal 500 t
 ## <a name="considerations-for-using-custom-notifications"></a>Overwegingen voor het gebruik van aangepaste meldingen  
 
 **Apparaatconfiguratie**:  
-- Op apparaten moet de app Bedrijfsportal zijn geïnstalleerd, anders kunnen gebruikers geen aangepaste meldingen ontvangen. Er moeten ook machtigingen zijn geconfigureerd op basis waarvan de app Bedrijfsportal pushmeldingen mag verzenden. De Bedrijfsportal-app vraagt gebruikers om meldingen toe te staan als de app wordt geïnstalleerd of bijgewerkt.  
+- Op apparaten moet de Bedrijfsportal-app of de Microsoft Intune-app zijn geïnstalleerd, anders kunnen gebruikers geen aangepaste meldingen ontvangen. Er moeten ook machtigingen zijn geconfigureerd op basis waarvan de Bedrijfsportal-app of de Microsoft Intune-app pushmeldingen mag verzenden. Indien nodig, kunnen de Bedrijfsportal-app en de Microsoft Intune-app gebruikers vragen om meldingen toe te staan.  
 - Op Android is Google Play Services een vereiste afhankelijkheid.  
 - Het apparaat moet bij MDM zijn ingeschreven.
 
@@ -51,8 +51,8 @@ Aangepaste meldingen hebben een korte titel en een hoofdtekst van maximaal 500 t
 - Groepen kunnen gebruikers en apparaten omvatten, maar berichten worden alleen naar gebruikers verzonden. Ze worden naar alle iOS- en Android-apparaten verzonden die de gebruiker heeft geregistreerd.  
 
 **Levering**:  
-- Intune verzendt berichten naar de app Bedrijfsportal van de gebruikers. Deze app creëert vervolgens de pushmelding. Gebruikers hoeven niet bij de app aangemeld te zijn om meldingen naar het apparaat te kunnen pushen.  
-- Intune en de app Bedrijfsportal kunnen niet garanderen dat aangepaste meldingen worden afgeleverd. Aangepaste meldingen kunnen met enkele uren vertraging worden weergegeven (áls ze al worden weergegeven), dus het is geen goed idee om deze voor dringende berichten te gebruiken.  
+- Intune verzendt berichten naar de Bedrijfsportal-app of de Microsoft Intune-app van de gebruikers. Deze app creëert vervolgens de pushmelding. Gebruikers hoeven niet bij de app aangemeld te zijn om meldingen naar het apparaat te kunnen pushen.  
+- Intune en de Bedrijfsportal-app of de Microsoft Intune-app kunnen niet garanderen dat aangepaste meldingen worden afgeleverd. Aangepaste meldingen kunnen met enkele uren vertraging worden weergegeven (áls ze al worden weergegeven), dus het is geen goed idee om deze voor dringende berichten te gebruiken.  
 - Aangepaste meldingen vanuit Intune worden als reguliere pushmeldingen weergegeven op apparaten. Als de app Bedrijfsportal is geopend op een iOS-apparaat wanneer de melding wordt ontvangen, wordt de melding in de app weergegeven in plaats van als pushmelding.  
 - Aangepaste meldingen kunnen worden weergegeven op het vergrendelingsscherm van zowel iOS- als Android-apparaten, afhankelijk van de apparaatinstellingen.  
 - Op Android-apparaten hebben andere apps mogelijk toegang tot de gegevens in uw aangepaste meldingen. Gebruik ze niet voor het overdragen van gevoelige informatie.  
@@ -80,7 +80,7 @@ Intune volgt verzonden aangepaste meldingen niet. Apparaten registreren ontvangs
 
 ## <a name="receive-a-custom-notification"></a>Een aangepaste melding ontvangen  
 
-Gebruikers zien op hun apparaat aangepaste meldingen die door Intune worden verzonden als reguliere pushmeldingen uit de app Bedrijfsportal. Deze meldingen zijn vergelijkbaar met de pushmeldingen die gebruikers ontvangen van andere apps op het apparaat.  
+Gebruikers zien op hun apparaat aangepaste meldingen die door Intune worden verzonden als reguliere pushmeldingen uit de Bedrijfsportal-app of de Microsoft Intune-app. Deze meldingen zijn vergelijkbaar met de pushmeldingen die gebruikers ontvangen van andere apps op het apparaat.  
 
 Als de app Bedrijfsportal is geopend op een iOS-apparaat wanneer de melding wordt ontvangen, wordt de melding in de app weergegeven in plaats van als pushmelding.  
 

@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,19 +15,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 30910de4ae17aa3fde573155bde4643e2c3d67f7
+ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388102"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808629"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Apparaten synchroniseren met Intune om het meest recente beleid en de meest recente acties te verkrijgen
 
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Met apparaatactie **Synchroniseren** wordt het geselecteerde apparaat direct ingecheckt bij Intune. Wanneer een apparaat wordt ingecheckt, worden direct eventuele openstaande acties of toegewezen beleidsregels ontvangen die erop zijn toegepast. Met deze functie kunt u toegewezen beleid meteen controleren en in het geval van problemen direct aanpassen, zonder dat u hoeft te wachten op de volgende geplande check-in.
+Met apparaatactie **Synchroniseren** wordt het geselecteerde apparaat direct ingecheckt bij Intune. Wanneer een apparaat wordt ingecheckt, worden direct eventuele openstaande acties of toegewezen beleidsregels ontvangen die erop zijn toegepast. Met deze functie kunt u toegewezen beleid meteen controleren en in het geval van problemen direct aanpassen, zonder dat u hoeft te wachten op de volgende geplande check-in.
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
@@ -40,15 +37,14 @@ Met apparaatactie **Synchroniseren** wordt het geselecteerde apparaat direct ing
 
 ## <a name="sync-a-device"></a>Een apparaat synchroniseren
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**. 
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 
 3. Selecteer **Apparaten** > **Alle apparaten** in **Intune**.
-4. Selecteer een apparaat in de lijst met apparaten die u beheert, selecteer **Meer** en selecteer vervolgens **Synchroniseren**.
+4. Selecteer een apparaat in de lijst met apparaten die u beheert, selecteer een apparaat om het venster *Overzicht* te openen en selecteer vervolgens **Synchroniseren**.
 5. Selecteer **Ja** om de opdracht te bevestigen.
 
 Kies **Apparaten** > **Apparaatacties** om de status van de synchronisatieactie te zien.
 
-U vindt standaardfrequenties voor check-ins van Intune-beleid in [Cyclusduur vernieuwen](device-profiles.md).
+U vindt standaardfrequenties voor check-ins van Intune-beleid in [Cyclusduur vernieuwen](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 ## <a name="retryable-error-codes"></a>Codes van fouten waarvoor een nieuwe poging kan worden gedaan
 
@@ -64,7 +60,7 @@ Wanneer een beheerder de apparaatactie **Synchroniseren** uitvoert, zijn iOS- en
 | 2016330894 | De verbinding met internet is verbroken. Stel de verbinding opnieuw in. | Ja |
 | 2016330893 | De verbinding met internet is verbroken. Stel de verbinding opnieuw in. | Ja|
 | 2016330892 | Internationale roaming is uitgeschakeld. | Nee|
-| 2016330891 | De mobiele gegevensverbinding vor dit apparaat kan niet worden gebruikt terwijl er wordt gebeld. Wacht tot het gesprek is beëindigd. | Ja|
+| 2016330891 | De mobiele gegevensverbinding voor dit apparaat kan niet worden gebruikt terwijl er wordt gebeld. Wacht tot het gesprek is beëindigd. | Ja|
 | 2016330890 | Het mobiele netwerk voor dit apparaat. Deze apparaten kunnen momenteel niet worden gebruikt. | Nee|
 | 2016330889 | De beveiligde verbinding is mislukt. Stel de verbinding opnieuw in. | Ja|
 | 2016330888 | De evaluatie van de vertrouwelijke server is mislukt. | Nee|

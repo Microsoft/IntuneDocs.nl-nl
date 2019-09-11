@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373420"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739205"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>iOS-software-updatebeleid in Intune configureren
 
@@ -53,14 +53,8 @@ Het apparaat wordt ongeveer om de 8 uur bij Intune ingecheckt. Als een update be
 
     - **Zichtbaarheid van software-updates voor eindgebruikers vertragen zonder de geplande updates te wijzigen (dagen)** : 
 
-      **Deze instelling is verplaatst naar [Apparaatbeperkingen](device-restrictions-ios.md#general). Deze instelling wordt op deze locatie in de portal verwijderd.** Bestaande beleidsregels kunnen hier voor een korte periode worden gewijzigd. Na ongeveer een maand wordt deze instelling van de bestaande beleidsregels verwijderd.
-
-      Het volgende wordt aanbevolen om ervoor te zorgen dat dit zo weinig mogelijk gevolgen heeft:
-        - Verwijder het bestaande beleid op deze locatie in de portal.
-        - Maak een nieuw [apparaatbeperkingsbeleid](device-restrictions-ios.md#general).
-        - Gebruikt dezelfde gebruikers van het oorspronkelijke beleid als doelgroep.
-
-      Als er een conflict optreedt, doet deze instelling niets *tenzij* de twee waarden identiek zin. U kunt een conflict vermijden door het bestaande beleid op deze locatie in de portal te wijzigen of te verplaatsen.
+      ** Als u de zichtbaarheid van software-updates voor een bepaalde tijd wilt uitstellen op de iOS-apparaten onder uw supervisie, moet u deze instellingen configureren in de [Apparaatbeperkingen](device-restrictions-ios.md#general).
+     
       > [! Belangrijk]  
       > Een beleid waarvan de *begintijd* en *eindtijd* allebei op 12:00 uur zijn ingesteld, wordt als 0 uur beschouwd en niet als 24 uur. Dit leidt tot geen beperkingen.  
 

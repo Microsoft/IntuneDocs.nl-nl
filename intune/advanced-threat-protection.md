@@ -5,22 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 09/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b148abfaeffaf02178e34c3e9abfe86f70fb529c
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 0d9fe180e81c9e661954dd0986f05ac3b5e749ed
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960650"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739193"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Naleving voor Microsoft Defender ATP met voorwaardelijke toegang in Intune afdwingen  
 
@@ -101,6 +101,7 @@ Wanneer u verbinding maakte met Microsoft Defender ATP, heeft Intune van Microso
 
 Wanneer u eenmaal onboarding van een apparaat met het configuratiepakket hebt uitgevoerd, dan hoeft u dit niet opnieuw te doen. U kunt apparaten onboarden met behulp van een [Groepsbeleid of System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
+
 ### <a name="create-the-device-configuration-profile"></a>Een apparaatconfiguratieprofiel maken
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
@@ -122,6 +123,7 @@ Wanneer u eenmaal onboarding van een apparaat met het configuratiepakket hebt ui
 
 7. Selecteer **OK** en **Maken** om wijzigingen op te slaan. Hiermee maakt u het profiel aan.
 8. [Wijs een profiel voor apparaatconfiguratie toe](device-profile-assign.md) aan apparaten die u wilt beoordelen met Microsoft Defender ATP.  
+
 
 ## <a name="create-and-assign-the-compliance-policy"></a>Nalevingsbeleid maken en toewijzen  
 
@@ -179,6 +181,9 @@ Bewaak vervolgens de status van apparaten die het nalevingsbeleid voor Microsoft
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **apparaatconformiteit** > **Beleidsnaleving**.
 3. Zoek uw Microsoft Defender ATP-beleid in de lijst op en ga na welke apparaten conform of non-conform zijn.
+
+## <a name="view-onboarding-status"></a>Status voor onboarding weergeven
+Als u de status voor onboarding van alle door Intune beheerde Windows 10-apparaten wilt weergeven, gaat u naar **Apparaatcompatibiliteit** > **Microsoft Defender ATP**. Op deze pagina kunt u ook een apparaatconfiguratieprofiel maken om meer apparaten naar Microsoft Defender ATP te onboarden.
 
 ## <a name="next-steps"></a>Volgende stappen  
 

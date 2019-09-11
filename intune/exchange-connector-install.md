@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3bc5f8a3f0094c363a705b37b904435ef9e91781
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660947"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864487"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>De Intune on-premises Exchange-connector instellen in Microsoft Intune
 De informatie in dit artikel helpt u bij het installeren en vervolgens controleren van de on-premises Exchange Active Sync-connector voor Intune.  U gebruikt de Intune on-premises Exchange-connector met uw [beleid voor voorwaardelijke toegang om toegang tot uw on-premises Exchange-postvakken toe te staan of te blokkeren](conditional-access-exchange-create.md). 
@@ -124,6 +124,9 @@ Voer de volgende stappen uit om de Intune on-premises Exchange-connector te inst
    Zorg ervoor dat de Autodiscover-service en de Exchange-webservices zijn geconfigureerd op de Exchange-server voor clienttoegang. Zie [Server voor clienttoegang](https://technet.microsoft.com/library/dd298114.aspx) voor meer informatie.
 
 6. Geef in het veld **Wachtwoord** het wachtwoord voor dit account op om Intune in te schakelen voor toegang tot de Exchange-server.
+
+   > [!NOTE]
+   > Voor een geslaagde verbinding moet het account waarmee u zich aanmeldt bij de tenant ten minste Intune-servicebeheerder zijn. Zonder deze rol mislukt de verbinding met de volgende foutmelding: 'De externe server heeft een fout geretourneerd: (400) Ongeldige aanvraag'.
 
 7. Kies **Verbinding maken**.
 

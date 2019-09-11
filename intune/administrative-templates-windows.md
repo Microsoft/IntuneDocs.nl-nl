@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/28/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,20 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: c474ac2eccf90e829abe753c82d40bdfae9146ec
+ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214329"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70376926"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10-sjablonen gebruiken voor het configureren van instellingen voor groepsbeleid in Microsoft Intune
 
 Wanneer u apparaten in uw organisatie beheert, moet u groepen instellingen maken die van toepassing zijn op verschillende apparaatgroepen. Stel dat u beschikt over verschillende apparaatgroepen. Aan GroupA wilt u een specifieke set instellingen toewijzen. Aan GroupB wilt u een andere set instellingen toewijzen. U wilt ook een eenvoudig overzicht verkrijgen van de instellingen die u kunt configureren.
 
-U kunt deze taak uitvoeren met **Beheersjablonen** in Microsoft Intune. De beheersjablonen bevatten honderden instellingen waarmee functies kunnen worden geconfigureerd voor Microsoft Edge, Internet Explorer, Microsoft Office-programma's, Extern bureaublad, OneDrive, wachtwoorden en pincodes, en nog veel meer. Met deze instellingen kunnen groepsbeheerders groepsbeleid beheren via de cloud.
+U kunt deze taak uitvoeren met **Beheersjablonen** in Microsoft Intune. De beheersjablonen bevatten honderden instellingen waarmee functies kunnen worden geconfigureerd voor Microsoft Edge (versie 77 en hoger), Internet Explorer, Microsoft Office-programma's, Extern bureaublad, OneDrive, wachtwoorden en pincodes, en nog veel meer. Met deze instellingen kunnen groepsbeheerders groepsbeleid beheren via de cloud.
 
-De Windows-instellingen zijn vergelijkbaar met instellingen voor groepsbeleid (GPO) in Active Directory (AD). Deze instellingen zijn ingebouwd in Windows. Het zijn [door ADMX ondersteunde instellingen](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) die gebruikmaken van XML. De Office-instellingen worden door ADMX opgenomen en gebruiken ADMX-instellingen in [Office-bestanden met beheersjablonen](https://www.microsoft.com/download/details.aspx?id=49030). De Intune-sjablonen zijn echter 100% cloudgebaseerd. Ze bieden een eenvoudige en duidelijke manier om de instellingen te configureren en om de gewenste instellingen te zoeken.
+De Windows-instellingen zijn vergelijkbaar met instellingen voor groepsbeleid (GPO) in Active Directory (AD). Deze instellingen zijn ingebouwd in Windows. Het zijn [door ADMX ondersteunde instellingen](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) die gebruikmaken van XML. De instellingen voor Office en Microsoft Edge worden door ADMX opgenomen en gebruiken ADMX-instellingen in [Office-bestanden met beheersjablonen](https://www.microsoft.com/download/details.aspx?id=49030) en [Microsoft Edge-bestanden met beheersjablonen](https://www.microsoftedgeinsider.com/enterprise). De Intune-sjablonen zijn echter 100% cloudgebaseerd. Ze bieden een eenvoudige en duidelijke manier om de instellingen te configureren en om de gewenste instellingen te zoeken.
 
 **Beheersjablonen** zijn ingebouwd in Intune en hoeven niet te worden aangepast; dit geldt ook voor het gebruik van de OMA-URI. Gebruik deze sjablooninstellingen als basis voor het beheren van uw Windows 10-apparaten, als onderdeel van uw MDM-oplossing (Mobile Device Management).
 
@@ -58,16 +58,17 @@ In dit artikel vindt u de stappen voor het maken van een sjabloon voor Windows 1
     > [!TIP]
     > De Windows-instellingen in Intune correleren met het pad naar het on-premises groepsbeleidsobject dat u ziet in Lokale groepsbeleidsobjecteditor (`gpedit`).
 
-5. Standaard wordt in de vervolgkeuzelijst **Alle producten** weergegeven. In de lijst kunt u de instellingen ook filteren om alleen **Windows-instellingen**, alleen **Office-instellingen** of alleen **Microsoft Edge-instellingen** weer te geven:
+5. Standaard wordt in de vervolgkeuzelijst **Alle producten** weergegeven. In de lijst kunt u de instellingen ook filteren om alleen **Windows-instellingen**, alleen **Office-instellingen** of alleen **Edge-instellingen (versie 77 of hoger)** weer te geven:
 
     ![De lijst filteren om alle Windows- of alle Office-instellingen weer te geven in beheersjablonen in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > Instellingen voor Microsoft Edge zijn van toepassing op:
     >
-    > - Windows 10 RS4 en nieuwer waarvoor [KB 4512509](https://support.microsoft.com/kb/4512509) is geïnstalleerd.
-    > - Windows 10 RS5 en nieuwer waarvoor [KB 4512534](https://support.microsoft.com/kb/4512534) is geïnstalleerd.
-    > - Windows 10 19H1 en nieuwer waarvoor [KB 4512941](https://support.microsoft.com/kb/4512941) is geïnstalleerd.
+    > - Microsoft Edge versie 77 en hoger. Raadpleeg [Apparaatbeperkingsinstellingen voor de Microsoft Edge-browser](device-restrictions-windows-10.md#microsoft-edge-browser) om versie 45 of eerder van Microsoft Edge te configureren.
+    > - Windows 10 RS4 en nieuwer waarvoor [KB 4512509](https://support.microsoft.com/kb/4512509) is geïnstalleerd
+    > - Windows 10 RS5 en nieuwer waarvoor [KB 4512534](https://support.microsoft.com/kb/4512534) is geïnstalleerd
+    > - Windows 10 19H1 en nieuwer waarvoor [KB 4512941](https://support.microsoft.com/kb/4512941) is geïnstalleerd
 
 6. Selecteer een willekeurige instelling. U kunt bijvoorbeeld filteren op **Office** en **Beperkt browsen activeren** selecteren. Er wordt een gedetailleerde beschrijving van de instelling weergegeven. Kies **Ingeschakeld**, **Uitgeschakeld** of laat de instellingen op **Niet geconfigureerd** staan (standaard). In de gedetailleerde beschrijving wordt ook uitgelegd wat er gebeurt wanneer u kiest voor **Ingeschakeld**, **Uitgeschakeld** of **Niet geconfigureerd**.
 7. Selecteer **OK** om uw wijzigingen op te slaan.
