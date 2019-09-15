@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 04cafd2cf69bbd42a35ade3ae180e8af8789c938
+ms.sourcegitcommit: e8d788d033be4320cd72c98c892b383e1bb77e18
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402766"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70912818"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Bundel-id's voor ingebouwde iOS-apps die kunt u gebruiken in Intune
 
@@ -30,11 +30,12 @@ Als u functies op iOS-apparaten configureert, kunt u ook de ingebouwde apps toev
 
 | Bundel-id                   | App-naam     | Uitgever |
 |-----------------------------|--------------|-----------|
-| com.apple.AppStore          | App Store    | Apple     |
+| com. Apple. Store             | App Store    | Apple     |
 | com.apple.calculator        | Rekenmachine   | Apple     |
 | com.apple.mobilecal         | Kalender     | Apple     |
 | com.apple.camera            | Camera       | Apple     |
 | com.apple.mobiletimer       | Klok        | Apple     |
+| com. Apple. clips             | Geknipt        | Apple     |
 | com.apple.compass           | Kompas      | Apple     |
 | com.apple.MobileAddressBook | Contactpersonen     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -44,7 +45,7 @@ Als u functies op iOS-apparaten configureert, kunt u ook de ingebouwde apps toev
 | com.apple.gamecenter        | Game Center  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | Status       | Apple     |
-| com.apple.Home              | Privé         | Apple     |
+| com.apple.Home              | Home         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
 | com.apple.iMovie            | iMovie       | Apple     |
 | com.apple.itunesconnect.mobile | iTunes Connect | Apple |
@@ -74,7 +75,7 @@ Als u functies op iOS-apparaten configureert, kunt u ook de ingebouwde apps toev
 | com.apple.VoiceMemos        | Dictafoon   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | Watch        | Apple     |
-| com.apple.weather           | Weer      | Apple     |
+| com.apple.weather           | Weer      | Apple     |      
 
 ## <a name="next-steps"></a>Volgende stappen
 
