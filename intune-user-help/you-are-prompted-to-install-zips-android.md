@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 09/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f83504e5d651d7f981fa605fc9157287bdb09a4
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: b12cb83485c25181bdcc015857c68da795676219
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529287"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864437"
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>Zimperium zIPS op uw Android-apparaat installeren
 
@@ -31,7 +31,7 @@ Als u problemen met de installatie ondervindt, voert u de stappen voor probleemo
 
 ## <a name="what-you-need-to-do"></a>Voer de volgende handelingen uit
 
-1. Sleep omlaag vanaf de bovenkant van het scherm om de meldingenbalk te openen. Tik vervolgens op **Vereiste toepassing: Skycure vanuit Play Store installeren**. U kunt dit ook vinden in de bedrijfsportal-app onder __Details naleving__.
+1. Sleep omlaag vanaf de bovenkant van het scherm om de meldingenbalk te openen. Tik vervolgens op **Vereiste toepassing: Zimperium vanuit Play Store installeren**. U kunt dit ook vinden in de bedrijfsportal-app onder __Details naleving__.
 
 2. U gaat naar de Zimperium zIPS-installatiepagina in de Play Store. Installeer Zimperium zIPS en tik op **ACCEPTEREN**, zodat Zimperium zIPS toegang heeft tot uw apparaat.
 

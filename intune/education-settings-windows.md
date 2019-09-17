@@ -5,29 +5,29 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 07/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
-ms.reviewer: heenamac
+ms.reviewer: kakyker
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5c78f72e7ffc580cce6cfec7237a3efe3ceb3e5
-ms.sourcegitcommit: fd2499df5123758ecb093b4cdd486e35f713b040
+ms.openlocfilehash: 07d3488d509339fc48eb8449b12725b757775eb5
+ms.sourcegitcommit: 98f2597eec28c6096985d5a1acae72430c2afb1a
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68230103"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877970"
 ---
 # <a name="configure-the-take-a-test-app-on-windows-10-devices-using-intune"></a>De app Toets maken configureren op Windows 10-apparaten in Microsoft Intune
 
-In dit artikel komt u meer te weten over de Microsoft Intune-onderwijsinstellingen voor de app Toets maken die u kunt configureren op apparaten met Windows 10 en hoger. Met behulp van deze app, kunnen studenten zich aanmelden bij een apparaat en een toets maken.
+Met de app voor het maken van een test kunt u veilig online testen op de Windows 10-apparaten van uw klas beheren. Als u de app voor het maken van een test wilt instellen, moet u een configuratie profiel voor een apparaat in intune maken en de instellingen voor veilige evaluatie configureren. In dit artikel worden de instellingen beschreven die u vindt voor de app een test maken. 
 
-Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel, en vervolgens toegewezen aan of geïmplementeerd op uw apparaten met behulp van Microsoft Intune.
+Nadat u het profiel hebt geconfigureerd, wijst u het toe en implementeert u het aan uw studenten. 
 
 In [De app Toets maken in Intune](education-settings-configure.md) vindt u meer informatie over deze functie.
 
@@ -35,21 +35,26 @@ In [De app Toets maken in Intune](education-settings-configure.md) vindt u meer 
 
 [Maak een apparaatconfiguratieprofiel](education-settings-configure.md#create-a-device-profile).
 
-## <a name="take-a-test-settings"></a>Instellingen voor Toets maken  
+## <a name="take-a-test-settings"></a>Instellingen voor Toets maken
+Nadat u een configuratie profiel voor een apparaat hebt gemaakt, gaat u naar **profiel type** en selecteert u **beveiligde evaluatie (onderwijs)** . U vindt de volgende app-instellingen voor testen. 
+
 
 - **Accounttype**: kies hoe gebruikers zich aanmelden voor de toets. Uw opties zijn:
   - Microsoft Azure Active Directory-account
   - Domeinaccount
   - Lokaal account
+  - Lokaal gast account: alleen beschikbaar op apparaten met Windows 10, versie 1903 en hoger.    
 - **Gebruikersnaam voor het account**: voer de gebruikersnaam in voor het account dat wordt gebruikt voor de app Toets maken. U kunt accounts in de volgende indeling invoeren:
   - `user@contoso.com`
   - `domain\username`
   - `user@contoso.com`
   - `computerName\username`
+- **Account naam**: als u een lokaal gast account type wilt instellen, voert u de naam in van het account dat wordt gebruikt met de app een test maken. De account naam wordt weer gegeven als een tegel in het aanmeldings scherm. Studenten klikken op de tegel om de test te starten.  
 - **URL van de toets**: geef de URL op van de toets die de gebruikers moeten afleggen. Zie de [documentatie van Toets maken](https://docs.microsoft.com/education/windows/take-tests-in-windows-10) voor meer informatie over het ophalen van de URL.
+- **Printer verbinding**: Kies **vereist** om alleen toegang toe te staan tot de app voor het maken van een test vanaf apparaten die zijn verbonden met een printer. Met deze instelling wordt de afdruk knop van de app ook beschikbaar voor test-takers. **Niet geconfigureerd** staat studenten toe om toegang te krijgen tot de app vanaf apparaten die niet zijn verbonden met een printer.  
 - **Schermcontrole**: kies **Toestaan** om de schermactiviteit te controleren terwijl de gebruikers een toets afleggen. Met **Niet geconfigureerd** wordt voorkomen dat u het scherm controleert tijdens de toets.
-- **Tekstsuggestie**: kies **Toestaan** om makers van de toets toe te staan tekstsuggesties te zien. Met **Niet geconfigureerd** worden tekstsuggesties geblokkeerd terwijl gebruikers een toets afleggen.
+- **Tekstsuggesties**: kies **Toestaan** zodat mensen die de toets afleggen tekstsuggesties zien. Met **Niet geconfigureerd** worden tekstsuggesties geblokkeerd terwijl gebruikers een toets afleggen.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Het profiel is gemaakt, maar er gebeurt mogelijk nog niets. Zorg ervoor dat u [het profiel toewijst](device-profile-assign.md) en [de status ervan controleert](device-profile-monitor.md).
+Zorg ervoor dat u [het profiel toewijst](device-profile-assign.md) en [de status ervan controleert](device-profile-monitor.md).

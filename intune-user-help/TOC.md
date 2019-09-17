@@ -1,6 +1,6 @@
 # Help voor gebruikers bij het gebruik van Intune
 
-## [Werk gedaan krijgen met beheerde apparaten](use-managed-devices-to-get-work-done.md)
+## [Wat is apparaatinschrijving?](use-managed-devices-to-get-work-done.md)
 
 ## [Welke gegevens kan mijn bedrijf zien met Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
