@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
-ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
+ms.openlocfilehash: 469bdc54385f943fd0c42ccfd921293970b03b64
+ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70027392"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70905043"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Apparaatversleuteling bewaken met Intune   
 
@@ -201,8 +201,7 @@ Intune biedt ondersteuning voor meerdere opties voor het vernieuwen en herstelle
   1. Meld u op een apparaat aan bij de *Intune-bedrijfsportal*website.  
   2. Ga in de portal naar **Apparaten** en selecteer het macOS-apparaat dat is versleuteld met FileVault.  
   3. Selecteer **Herstelsleutel ophalen**. De huidige herstelsleutel wordt weergegeven.  
-  
-     Op een iPhone moet u de *drie* puntjes selecteren; daarna wordt de optie *Herstelsleutel ophalen* pas weer weergegeven.  
+ 
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker-herstelsleutels  
 

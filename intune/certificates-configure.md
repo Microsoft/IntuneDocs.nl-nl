@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d9554893a8317b014007bd7089ed62f222975c8
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: 76e6ba8cb1ed6804bfb50f69a00817a50fe1912e
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214324"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012439"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Certificaten voor verificatie gebruiken in Microsoft Intune  
 
@@ -89,7 +89,7 @@ Het profiel wordt weergegeven in de lijst met profielen in het weergavevenster *
 > [!NOTE]  
 > Op Android-apparaten wordt mogelijk een bericht weergegeven dat een derde partij een vertrouwd certificaat heeft geïnstalleerd.  
 
-## <a name="additional-resources"></a>Aanvullende bronnen  
+## <a name="additional-resources"></a>Extra resources  
 - [Apparaatprofielen toewijzen](device-profile-assign.md)  
 - [S/MIME gebruiken om e-mailberichten te ondertekenen en te versleutelen](certificates-s-mime-encryption-sign.md)  
 - [Een externe certificeringsinstantie gebruiken](certificate-authority-add-scep-overview.md)  
@@ -98,5 +98,5 @@ Het profiel wordt weergegeven in de lijst met profielen in het weergavevenster *
 Nadat u een vertrouwd certificaatprofiel hebt gemaakt en toegewezen, maakt u SCEP-, PKCS- of geïmporteerde PKCS-certificaatprofielen voor elk platform dat u wilt gebruiken. Raadpleeg de volgende artikelen om verder te gaan:  
 - [Infrastructuur configureren om SCEP-certificaten te ondersteunen in Intune](certificates-scep-configure.md)  
 - [PKCS-certificaten configureren en beheren met Intune](certficates-pfx-configure.md)  
-- [Een geïmporteerd PKCS-certificaatprofiel maken](certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
+- [Een geïmporteerd PKCS-certificaatprofiel maken](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
 

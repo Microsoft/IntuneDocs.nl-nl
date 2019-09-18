@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a22fef1c04ae52a8a4cc65eaadc1ef6fcd524c19
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0539e4d12173ba2c7ba8d3af3364daf69ddbbf34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043596"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071535"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Een rol aan een Intune-gebruiker toewijzen
 
@@ -47,11 +47,11 @@ Zie [Intune RBAC-tabel](https://gallery.technet.microsoft.com/Intune-RBAC-table-
 
 7. Voer op de blade **Roltoewijzingen** een **Toewijzingsnaam** en desgewenst een **Beschrijving van toewijzing** in voor de toewijzing.
 
-8. **Leden (groepen)**: kies de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
+8. **Leden (groepen)** : kies de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
 
-9. **Bereik (groepen)**: kies de groep die de gebruikers/apparaten bevat die het hierboven genoemde lid mag beheren.
+9. **Bereik (groepen)** : kies de groep die de gebruikers/apparaten bevat die het hierboven genoemde lid mag beheren.
 
-10. **Bereik (tags)**: kies de tags waarop deze roltoewijzing moet worden toegepast.
+10. **Bereik (tags)** : kies de tags waarop deze roltoewijzing moet worden toegepast.
 
 11. Als u klaar bent, kiest u **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
 
