@@ -8,17 +8,17 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6cf4e365f4e68920ea5d24dc3ce2e1bd5eb9f817
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f63bbc80c055cfcb3bd52f79e7b810094107ec2a
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511568"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080045"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Quickstart: Een aangepaste rol maken en toewijzen
 
@@ -56,10 +56,10 @@ Voordat de beveiligingsoperator gebruik kan maken van de nieuwe machtigingen moe
 1. Kies in Intune **Rollen** > **Alle rollen** > **Beveiligingsbewerkingen**.
 2. Bij **Intune-rollen** kiest u **Toewijzingen** > **Toewijzen**.
 3. In het vak **Toewijzingsnaam** voert u *Sec ops* in.
-4. Kies **Lid (groepen)** > **Toevoegen**.
+4. Kies **Lid (groepen)**  > **Toevoegen**.
 5. Kies de groep **Contoso Testers**.
 6. Kies **Selecteren** > **OK**.
-7. Kies **Bereik (groepen)** > **Selecteer groepen om op te nemen** > **Contoso Testers**.
+7. Kies **Bereik (groepen)**  > **Selecteer groepen om op te nemen** > **Contoso Testers**.
 8. Kies **Selecteren** > **OK** > **OK**.
 
 Iedereen in de groep is nu lid van de rol *Beveiligingsbewerkingen* en kan de volgende informatie van een apparaat bekijken: bedrijfsapparaat-id's, beleidsregels voor naleving, apparaatconfiguraties en bedrijfsinformatie.

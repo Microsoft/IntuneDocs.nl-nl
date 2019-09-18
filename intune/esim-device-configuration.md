@@ -14,19 +14,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 863d8d03836573a7425f2958e52a1e0331b34a10
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354383"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080078"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Mobiele eSIM-profielen configureren in Intune - Openbare preview
-
-> [!NOTE]
-> Microsoft hoort graag van u. Stuur vragen op of ga een gesprek aan door een e-mail te sturen naar `eSIMonIntune@microsoft.com`.
-
-## <a name="introduction"></a>Inleiding
 
 Een eSIM is een ingesloten SIM-chip. U kunt hiermee verbinding maken met internet via een mobiele dataverbinding op een met eSIM compatibel apparaat, zoals de [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro). Met een eSIM hebt u geen SIM-kaart van uw mobiele provider meer nodig. Als wereldreiziger hoeft u dan alleen nog maar te schakelen tussen mobiele providers en gegevensabonnementen om altijd online te blijven.
 
