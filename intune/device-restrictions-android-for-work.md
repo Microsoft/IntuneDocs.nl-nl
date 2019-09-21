@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 53a9c3e8b80f611bc9e293ba7e07c1aece0cfc58
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550183"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163039"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -137,7 +137,7 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
     >
     > Moderne schermen hebben een hogere pixeldichtheid met de mogelijkheid om definitie-installatiekopieën gelijkwaardig aan 2K/4K weer te geven.
 
-  - **Wi-Fi-configuratie**: Hiermee wordt het besturings element Wi-Fi weer gegeven op het beheerde Start scherm en kunnen eind gebruikers het apparaat verbinden met verschillende WiFi-netwerken. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard) geeft niet het besturings element Wi-Fi weer op het beheerde Start scherm. Hiermee voor komt u dat gebruikers verbinding kunnen maken met Wi-Fi-netwerken terwijl ze het beheerde Start scherm gebruiken.
+  - **Wi-Fi-configuratie** **: Hiermee** wordt het besturings element Wi-Fi weer gegeven op het beheerde Start scherm en kunnen eind gebruikers het apparaat verbinden met verschillende WiFi-netwerken. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard) geeft niet het besturings element Wi-Fi weer op het beheerde Start scherm. Hiermee voor komt u dat gebruikers verbinding kunnen maken met Wi-Fi-netwerken terwijl ze het beheerde Start scherm gebruiken.
 
   - **Bluetooth-configuratie**: **inschakelen** Hiermee wordt het Bluetooth-besturings element weer gegeven op het beheerde Start scherm en kunnen eind gebruikers apparaten koppelen via Bluetooth. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard) wordt het besturings element Bluetooth niet weer gegeven op het beheerde Start scherm. Hiermee wordt voor komen dat gebruikers Bluetooth-en koppelings apparaten configureren tijdens het gebruik van het beheerde Start scherm.
 
@@ -200,6 +200,9 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
 - **Nieuwe gebruikers toevoegen**: kies **Blokkeren** om te voorkomen dat gebruikers nieuwe gebruikers toevoegen. Elke gebruiker heeft een persoonlijke ruimte op het apparaat voor aangepaste beginschermen, accounts, apps en instellingen. **Niet geconfigureerd**: staat gebruikers toe om andere gebruikers toe te voegen aan het apparaat.
 - **Gebruikers verwijderen**: kies **Blokkeren** om te voorkomen dat gebruikers gebruikers verwijderen. **Niet geconfigureerd**: staat gebruikers toe om andere gebruikers te verwijderen van het apparaat.
 - **Accountwijzigingen**: kies **Blokkeren** om te voorkomen dat gebruikers accounts wijzigen. **Niet geconfigureerd**: staat gebruikers toe om gebruikersaccounts op het apparaat bij te werken.
+
+  > [!NOTE]
+  > Deze instelling wordt niet gehonoreerd op de apparaat-eigenaar (volledig beheerde) apparaten. Als u deze instelling configureert, wordt de instelling genegeerd en heeft dit geen invloed.
 
 ### <a name="applications"></a>Toepassingen
 
@@ -271,13 +274,17 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
 
 - **Camera**: kies **Blokkeren** om toegang tot de camera op het apparaat in het werkprofiel te blokkeren. De camera aan de persoonlijke zijde wordt niet beïnvloed door de instelling. **Niet geconfigureerd** staat de toegang tot de camera in het werkprofiel toe.
 
+- **Widgets toestaan van apps voor werk profielen**: als u **inschakelt** , kunnen eind gebruikers widgets toevoegen aan de slag met apps op het Start scherm. Met **Niet geconfigureerd** (standaard) schakelt u deze functie uit.
+
+  Outlook wordt bijvoorbeeld geïnstalleerd op de werk profielen van uw gebruikers. Als u deze **optie inschakelt**, kunnen gebruikers de object agenda op het Start scherm van het apparaat plaatsen.
+
 #### <a name="work-profile-password"></a>Werkprofielwachtwoord
 
 - **Werkprofielwachtwoord vereisen**: van toepassing op Android 7.0 en hoger waarvoor het werkprofiel is ingeschakeld. Kies **Vereisen** om een beleid voor wachtwoordcodes in te voeren dat alleen van toepassing is op de apps in het werkprofiel. De eindgebruiker kan standaard de twee afzonderlijk gedefinieerde pincodes gebruiken, maar kan er ook voor kiezen om de twee gedefinieerde pincodes te combineren in de sterkste van de twee. **Niet geconfigureerd**: staat de gebruiker toe om werk-apps te gebruiken, zonder een wachtwoord in te voeren.
 - **Minimale wachtwoordlengte**: hiermee geeft u het minimale aantal tekens op waaruit het wachtwoord moet bestaan (**4**-**16**).
 - **Maximum aantal minuten van inactiviteit voordat het werkprofiel wordt vergrendeld**: selecteer de hoeveelheid tijd voordat het werkprofiel wordt vergrendeld. De gebruiker moet vervolgens zijn referenties invoeren om weer toegang te krijgen.
 - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: voer in hoe vaak een onjuist wachtwoord kan worden ingevoerd voordat het werkprofiel wordt gewist van het apparaat.
-- **Wachtwoord verloopt (dagen)**: hiermee geeft u het aantal dagen op totdat het wachtwoord van de eindgebruiker moet worden gewijzigd (van **1**-**255**).
+- **Wachtwoord verloopt (dagen)** : hiermee geeft u het aantal dagen op totdat het wachtwoord van de eindgebruiker moet worden gewijzigd (van **1**-**255**).
 - **Vereist wachtwoordtype**: selecteer het type wachtwoord dat moet worden ingesteld op het apparaat. U kunt kiezen uit:
   - **Standaardwaarde apparaat**
   - **Lage beveiligingsbiometrie**
@@ -298,7 +305,7 @@ Deze wachtwoordinstellingen zijn van toepassing op persoonlijke profielen op app
 - **Minimale wachtwoordlengte**: hiermee geeft u het minimale aantal tekens op waaruit het wachtwoord moet bestaan (**4**-**14**).
 - **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**: selecteer de hoeveelheid tijd voordat een inactief apparaat automatisch wordt vergrendeld.
 - **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: voer in hoe vaak een onjuist wachtwoord kan worden ingevoerd voordat alle gegevens worden gewist van het apparaat.
-- **Wachtwoord verloopt (dagen)**: hiermee geeft u het aantal dagen op totdat het wachtwoord van de eindgebruiker moet worden gewijzigd (van **1**-**255**).
+- **Wachtwoord verloopt (dagen)** : hiermee geeft u het aantal dagen op totdat het wachtwoord van de eindgebruiker moet worden gewijzigd (van **1**-**255**).
 - **Vereist wachtwoordtype**: selecteer het type wachtwoord dat moet worden ingesteld op het apparaat. U kunt kiezen uit:
   - **Standaardwaarde apparaat**
   - **Lage beveiligingsbiometrie**

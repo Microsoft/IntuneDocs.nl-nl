@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b333c848368f00f005ed0febc61f67f098ee7e5e
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: eb470885be8f09f0c99dfe26a1d982570644ac8a
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979187"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167612"
 ---
 # <a name="intune-data-warehouse-collections"></a>Intune-datawarehouse-verzamelingen
 
@@ -731,5 +731,4 @@ De entiteit **vppProgramTypes** bevat een lijst van mogelijke VPP-programmatypen
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Zie het artikel [Datawarehouse-gegevensmodel](https://docs.microsoft.com/intune/reports-ref-data-model) voor meer informatie over het Intune-datawarehouse.
-
+Zie het artikel [Datawarehouse-gegevensmodel](reports-ref-data-model.md) voor meer informatie over het Intune-datawarehouse.

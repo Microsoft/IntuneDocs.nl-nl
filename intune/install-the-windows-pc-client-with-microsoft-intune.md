@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44ba77609b3fafd5518378f3edcbbbace0f6a551
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 2a31c55d030cd8d12bb00a6e0873a24612df70bf
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354076"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167692"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>De Intune-softwareclient installeren op Windows-pc's
 
@@ -48,7 +48,7 @@ Voor alle methoden, behalve die waarbij gebruikers de Intune-clientsoftware zelf
 
 1. Klik in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) op **Beheer** &gt; **Clientsoftware downloaden**.
 
-   ![De Intune-pc-client downloaden](./media/https://docs.microsoft.com/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
+   ![De Intune-pc-client downloaden](./media/install-the-windows-pc-client/pc-sa-client-download.png)
 
 2. Klik op de pagina **Clientsoftware downloaden** op **Clientsoftware downloaden**. Sla het pakket **Microsoft_Intune_Setup.zip** met de software vervolgens op een beveiligde locatie op uw netwerk op.
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6b07c77b0d92ceb7bdc960d8c2fd754c277499
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 91b7fc7414c3a6d6517cd4b704cb5e99ddcf96d0
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713238"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167182"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Testhandleiding voor ontwikkelaars voor Microsoft Intune App SDK voor Android
 
@@ -30,20 +30,20 @@ De testhandleiding voor de Intune App-SDK voor Android is ontworpen om uw door I
 ## <a name="prerequisite-test-accounts"></a>Vereiste testaccounts
 Er kunnen nieuwe accounts worden gemaakt met en zonder vooraf gegenereerde gegevens. Een nieuw account maken:
 1. Navigeer naar de site [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant). 
-2. [Stel Intune in](https://docs.microsoft.com/intune/setup-steps) om Mobile Device Management (MDM) in te schakelen.
-3. [Gebruikers maken](https://docs.microsoft.com/intune/users-add).
-4. [Groepen maken](https://docs.microsoft.com/intune/groups-add).
-5. [Licenties toewijzen](https://docs.microsoft.com/intune/licenses-assign) die geschikt zijn voor het testen.
+2. [Stel Intune in](setup-steps.md) om Mobile Device Management (MDM) in te schakelen.
+3. [Gebruikers maken](users-add.md).
+4. [Groepen maken](groups-add.md).
+5. [Licenties toewijzen](licenses-assign.md) die geschikt zijn voor het testen.
 
 
 ## <a name="azure-portal-policy-configuration"></a>Beleidsconfiguratie Azure Portal
-[Maak beveiligingsbeleid voor apps en wijs dit toe](https://docs.microsoft.com/intune/app-protection-policies) in de [Intune-blade van Azure Portal](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Uw [app-configuratiebeleid](https://docs.microsoft.com/intune/app-configuration-policies-overview) kan ook worden gemaakt en toegewezen in de Intune-blade.
+[Maak beveiligingsbeleid voor apps en wijs dit toe](app-protection-policies.md) in de [Intune-blade van Azure Portal](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Uw [app-configuratiebeleid](app-configuration-policies-overview.md) kan ook worden gemaakt en toegewezen in de Intune-blade.
 
 > [!NOTE]
 > Als uw app niet wordt vermeld in Azure Portal, kunt u deze toch doelwit maken van een beleid door het selecteren van de optie **Meer apps** en het opgeven van de naam van het pakket in het tekstvak.
 
 > [!IMPORTANT]
-> Als u een app-configuratiebeleid wilt toepassen, moet de gebruiker die zich inschrijft aan een [Intune-beveiligingsbeleid](https://docs.microsoft.com/intune/app-protection-policy) zijn onderworpen.
+> Als u een app-configuratiebeleid wilt toepassen, moet de gebruiker die zich inschrijft aan een [Intune-beveiligingsbeleid](app-protection-policy.md) zijn onderworpen.
 
 ## <a name="test-cases"></a>Testcases
 
@@ -103,7 +103,7 @@ U kunt als volgt back-ups van apps regelen:
 ### <a name="unenrollment"></a>Registratie ongedaan maken
 U kunt zakelijke e-mails en documenten op beheerde apps wissen op afstand, en zorgen dat persoonlijke gegevens worden ontsleuteld wanneer deze niet meer worden beheerd, als volgt:
 
-1. [Geef opdracht om te wissen](https://docs.microsoft.com/intune/apps-selective-wipe) vanuit Azure Portal.
+1. [Geef opdracht om te wissen](apps-selective-wipe.md) vanuit Azure Portal.
 2. Bevestig de volgende voorwaarden als er uw app niet voor handlers voor wissen is geregistreerd:
     - De app wordt volledig gewist.
 3. Bevestig of de volgende voorwaarden als uw app is geregistreerd voor `WIPE_USER_DATA` of `WIPE_USER_AUXILARY_DATA`:
@@ -123,7 +123,7 @@ Ten minste de volgende scenario's voor meerdere identiteiten moeten opnieuw word
 ### <a name="app-configuration-optional"></a>App-configuratie (optioneel)
 Gedrag van beheerde apps kunt u als volgt configureren:
 
-1. Als uw app de instellingen van de app-configuratie gebruikt, moet u testen of uw app alle waarden correct verwerkt die u (als beheerder) kunt instellen. [App-configuratiebeleid](https://docs.microsoft.com/intune/app-configuration-policies-overview) kan worden gemaakt en toegewezen met behulp van Intune.
+1. Als uw app de instellingen van de app-configuratie gebruikt, moet u testen of uw app alle waarden correct verwerkt die u (als beheerder) kunt instellen. [App-configuratiebeleid](app-configuration-policies-overview.md) kan worden gemaakt en toegewezen met behulp van Intune.
 
 ## <a name="next-steps"></a>Volgende stappen
 

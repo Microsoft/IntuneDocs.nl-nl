@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c592b558ace0a2a39059de9f64531f1e078c539d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 40fe8f1f54779d3ab0a49951ad13c0cb2d0f0ff5
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847757"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166790"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Het door uw organisatie verstrekte iOS-apparaat in beheer inschrijven
 
@@ -34,15 +34,16 @@ De iOS-apparaten die aan u worden vertrekt door werk of school zijn vaak geconfi
 U kunt de configuratie beginnen door uw apparaat in te schakelen en zich aan te melden met de referenties van uw werk- of schoolaccount. In de rest van dit artikel worden de stappen en de schermen beschreven die u ziet terwijl u de configuratieassistent uitvoert. 
 
 ## <a name="what-is-apple-dep"></a>Wat is Apple DEP?
-Uw organisatie heeft mogelijk hun apparaten aangeschaft via een programma met de naam *Apple Device Enrollment Program* (DEP). Organisaties kopen grote hoeveelheden iOS- of macOS-apparaten via Apple DEP. Organisaties kunnen die apparaten vervolgens configureren en beheren in hun favoriete provider voor mobiele apparaatbeheer, zoals Intune. Zie [iOS-apparaten automatisch inschrijven met Apple Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios) als u beheerder bent en informatie wilt over Apple DEP.  
 
-## <a name="set-up-your-ios-device"></a>Uw iOS-apparaten inschrijven  
+Uw organisatie heeft mogelijk hun apparaten aangeschaft via een programma met de naam *Apple Device Enrollment Program* (DEP). Organisaties kopen grote hoeveelheden iOS- of macOS-apparaten via Apple DEP. Organisaties kunnen die apparaten vervolgens configureren en beheren in hun favoriete provider voor mobiele apparaatbeheer, zoals Intune. Zie [iOS-apparaten automatisch inschrijven met Apple Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios.md) als u beheerder bent en informatie wilt over Apple DEP.  
+
+## <a name="set-up-your-ios-device"></a>Uw iOS-apparaten inschrijven
+
 Als u uw eigen iOS-apparaat gebruikt, in plaats van een door het bedrijf geleverd apparaat, volgt u de stappen voor [persoonlijke en bring-your-own-apparaten](enroll-your-device-in-intune-ios.md).  
 
-1. Schakel uw iOS-apparaat in. 
+1. Schakel uw iOS-apparaat in.
 2. Nadat u uw **Taal** hebt geselecteerd, verbindt u uw apparaat met wifi.
-3. Kies op het scherm **iOS-apparaat instellen** een van de volgende mogelijkheden: 
- 
+3. Kies op het scherm **iOS-apparaat instellen** een van de volgende mogelijkheden:
    - **Instellen als nieuw apparaat**
    - **Terugzetten vanaf iCloud-back-up**
    - **Terugzetten vanaf iTunes-back-up**
@@ -53,7 +54,7 @@ Als u uw eigen iOS-apparaat gebruikt, in plaats van een door het bedrijf gelever
  
    **Configuratie wordt mogelijk gemaakt door: het iOS-team van [uw bedrijf] [adres]**
 
-5. Meld u aan met uw Apple-id. Als u zich aanmeldt, kunt u de bedrijfsportal-app installeren en kunt u het beheerprofiel installeren waarmee uw bedrijf u toegang verschaft tot de bedrijfsbronnen, zoals e-mail en apps. 
+5. Meld u aan met uw Apple-id. Als u zich aanmeldt, kunt u de bedrijfsportal-app installeren en kunt u het beheerprofiel installeren waarmee uw bedrijf u toegang verschaft tot de bedrijfsbronnen, zoals e-mail en apps.
 6. Ga akkoord met de **Algemene voorwaarden** en beslis of u diagnostische gegevens naar Apple wilt verzenden.
 7. Nadat u uw registratie hebt voltooid, wordt u mogelijk gevraagd om meer acties te ondernemen. Bij sommige van deze stappen wordt mogelijk uw wachtwoord ingevoerd voor toegang tot e-mail of wordt een toegangscode ingesteld.
 

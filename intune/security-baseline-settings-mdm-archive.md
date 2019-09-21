@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6df943fdc0105b0f32401b79434045811f065bef
-ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
+ms.openlocfilehash: 19307f2ffc234a1eacf30b3aa43fe9c626073f6c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864531"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167822"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -34,12 +34,12 @@ Wanneer er een nieuwe basis lijn voor MDM-beveiliging wordt uitgebracht, wordt d
 
 Wanneer een basislijn versie niet meer wordt ondersteund voor gebruik, wordt deze verwijderd uit dit artikel.
 
-- Bekijk de instellingen die beschikbaar zijn in [de huidige basis voor MDM-beveiliging](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019). 
+- Bekijk de instellingen die beschikbaar zijn in [de huidige basis voor MDM-beveiliging](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019).
 - Meer informatie over [beveiligings](security-baselines.md)basislijnen en het bijwerken van de basislijn versie in uw beveiligings basislijn profielen.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Preview: MDM-basislijn voor beveiliging voor oktober 2018  
 
-*Deze basis lijn is vervangen door de [MDM-beveiligings basislijn voor mei 2019](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)*
+*Deze basis lijn is vervangen door de [MDM-beveiligings basislijn voor mei 2019](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)*
 
 ### <a name="above-lock"></a>Vergrendeling boven  
 
@@ -1441,5 +1441,5 @@ Raadpleeg [Policy CSP - WindowsPowerShell](https://docs.microsoft.com/windows/cl
  
 ## <a name="next-steps"></a>Volgende stappen  
 
-[De huidige basislijn versie weer geven](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)  
+[De huidige basislijn versie weer geven](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)  
 [Profielen bijwerken om een nieuwe basislijn versie te gebruiken](security-baselines.md#change-the-baseline-version-for-a-profile)

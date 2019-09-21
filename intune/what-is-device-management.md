@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37a1c9fad9b77e39145f1b4183b8176fb1677613
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 99dcf53d7571dfa660ee669c1d7adcea65f0797e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022873"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167725"
 ---
 # <a name="what-is-device-management"></a>Wat is apparaatbeheer? 
 
@@ -28,7 +28,7 @@ Beheerders hebben de belangrijke taak om de resources en gegevens van en organis
 
 Met een apparaatbeheerprovider kunnen organisaties ervoor zorgen dat alleen gemachtigde personen en apparaten toegang krijgen tot vertrouwelijke informatie. Op vergelijkbare manier kunnen apparaatgebruikers met een gerust hart gegevens op hun telefoon openen, omdat ze weten dat hun apparaat voldoet aan de beveiligingsvereisten van de organisatie. Als organisatie vraagt u zich misschien af **wat er moet worden gebruikt om de resources te beschermen.**
 
-Het antwoord is [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune). Intune biedt mogelijkheden voor Mobile Device Management (MDM) en Mobile Application Management (MAM). MDM- en MAM-oplossingen worden voor de volgende belangrijke zaken gebruikt:
+Het antwoord is [Microsoft Intune](introduction-intune.md). Intune biedt mogelijkheden voor Mobile Device Management (MDM) en Mobile Application Management (MAM). MDM- en MAM-oplossingen worden voor de volgende belangrijke zaken gebruikt:
 
 - Ondersteuning bieden voor een diverse mobiele omgeving en iOS-, Android-, Windows- en macOS-apparaten veilig beheren.
 - Ervoor zorgen dat apparaten en apps voldoen aan de beveiligingsvereisten van uw organisatie.
@@ -44,7 +44,7 @@ Het is gebruikelijk dat mensen meerdere apparaten hebben waarop gebruik wordt ge
 
 Met Intune kunt u meerdere apparaten voor één persoon beheren. Het is daarbij geen probleem als er verschillende platforms op de apparaten worden gebruikt, zoals iOS, macOS, Android en Windows. Beleidsregels en instellingen worden in Intune gescheiden per apparaatplatform. Hierdoor is het eenvoudig om apparaten van een specifiek platform te beheren en te bekijken.
 
-**[Veelvoorkomende scenario's](https://docs.microsoft.com/intune/common-scenarios)** is een uitstekende resource om te ontdekken hoe Intune met bepaalde kwesties omgaat ten aanzien van mobiele apparaten. Er zijn scenario's te vinden over:  
+**[Veelvoorkomende scenario's](common-scenarios.md)** is een uitstekende resource om te ontdekken hoe Intune met bepaalde kwesties omgaat ten aanzien van mobiele apparaten. Er zijn scenario's te vinden over:  
 - E-mail beveiligen met on-premises Exchange
 - Office 365 veilig gebruiken
 - Persoonlijke apparaten gebruiken voor toegang tot bedrijfsresources
@@ -52,16 +52,16 @@ Met Intune kunt u meerdere apparaten voor één persoon beheren. Het is daarbij 
 ## <a name="integration-with-secure-and-protect-services"></a>Integratie met services beveiligen en beschermen
 Het is een belangrijke taak van elke apparaatbeheeroplossing om beveiliging en bescherming te bieden. Intune kan hiervoor uitstekend worden geïntegreerd in andere services. Bijvoorbeeld:
 
-- **Microsoft 365** is belangrijk bij het vereenvoudigen van vaak uitgevoerde IT-taken. In het beheercentrum van Microsoft 365 kunt u gebruikers maken en groepen beheren. Ook krijgt u toegang tot andere services, zoals Intune, Microsoft Azure AD en meer. 
+- **Microsoft 365** is belangrijk bij het vereenvoudigen van vaak uitgevoerde IT-taken. In het beheercentrum van Microsoft 365 kunt u gebruikers maken en groepen beheren. Ook krijgt u toegang tot andere services, zoals Intune, Microsoft Azure AD en meer.
 
   U kunt bijvoorbeeld een iOS-apparaatgroep maken in Microsoft 365. Gebruik vervolgens Intune om beleid naar een iOS-apparaatgroep te pushen waarin de focus ligt op iOS-gerelateerde zaken, zoals toegang tot de App Store, gebruikmaken van AirDrop, back-ups maken in iCloud, gebruikmaken van het webfilter van Apple en meer.
 
 - **Windows Defender** bevat veel beveiligingsfuncties ter bescherming van Windows 10-apparaten. Als u Intune en Windows Defender samen gebruikt, kunt u: 
 
-  - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) inschakelen om te zoeken naar verdachte activiteit in bestanden en apps op mobiele apparaten. 
-  - Gebruik [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) om beveiligingsschending op mobiele apparaten te voorkomen. En beperk de gevolgen van een schending door een gebruiker te blokkeren vanuit bedrijfsresources.
+  - [Windows Defender SmartScreen](endpoint-protection-windows-10.md) inschakelen om te zoeken naar verdachte activiteit in bestanden en apps op mobiele apparaten. 
+  - Gebruik [Microsoft Defender Advanced Threat Protection (ATP)](advanced-threat-protection.md) om beveiligingsschending op mobiele apparaten te voorkomen. En beperk de gevolgen van een schending door een gebruiker te blokkeren vanuit bedrijfsresources.
 
-- **Voorwaardelijke toegang** wordt mogelijk gemaakt door Azure Active Directory en kan prima worden geïntegreerd in Intune. Met [voorwaardelijke toegang](https://docs.microsoft.com/intune/conditional-access) kunt u ervoor zorgen dat alleen apparaten die voldoen aan het beleid, toegang krijgen tot e-mail, SharePoint en andere apps. 
+- **Voorwaardelijke toegang** wordt mogelijk gemaakt door Azure Active Directory en kan prima worden geïntegreerd in Intune. Met [voorwaardelijke toegang](conditional-access.md) kunt u ervoor zorgen dat alleen apparaten die voldoen aan het beleid, toegang krijgen tot e-mail, SharePoint en andere apps. 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>De apparaatbeheeroplossing kiezen die het beste bij uw behoeften past
 
@@ -69,7 +69,7 @@ Er zijn verschillende manieren om apparaten te beheren. Ten eerste kunt u versch
 
 Bij de tweede aanpak beheert u de apps op apparaten. Deze aanpak heet **Mobile Application Management (MAM)** . Gebruikers kunnen hun persoonlijke apparaten gebruiken om toegang te krijgen tot bedrijfsresources. Wanneer gebruikers een app openen, zoals hun Postvak IN of SharePoint, wordt gevraagd om aanvullende verificatie. Als een apparaat ooit verloren raakt of wordt gestolen, kunt u alle bedrijfsgegevens van het apparaat verwijderen. 
 
-U kunt ook een combinatie van [MDM en MAM](https://docs.microsoft.com/intune/byod-technology-decisions) gebruiken.
+U kunt ook een combinatie van [MDM en MAM](byod-technology-decisions.md) gebruiken.
 
 Wanneer u Intune instelt, kunt u er ook voor kiezen om alleen Azure Portal te gebruiken voor het beheren van apparaten. U kunt er daarnaast voor kiezen om zowel Intune als Microsoft 365 te gebruiken voor het beheren van apparaten. [Mobile Device Management migreren naar Intune via Azure Portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) is een Microsoft IT-casestudy. In deze casestudy is te zien hoe Microsoft IT tot de keuze voor een moderne apparaatbeheeraanpak is gekomen en is te lezen welke kennis hierbij is opgedaan.
 
@@ -79,20 +79,20 @@ Het [beheercentrum Apparaatbeheer](https://devicemanagement.microsoft.com/) bied
 
 In het beheer centrum voor Apparaatbeheer kunt u het volgende doen:
 
-- [Apparaten inschrijven](https://docs.microsoft.com/intune/device-enrollment)
-- [Apparaatcompatibiliteit instellen](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [Apparaten beheren](https://docs.microsoft.com/intune/device-management)
-- [Apps beheren](https://docs.microsoft.com/intune/app-management)  
-- [iOS eBooks](https://docs.microsoft.com/intune/vpp-ebooks-ios)  
-- [Exchange On-Premises Connector installeren](https://docs.microsoft.com/intune/exchange-connector-install)  
-- [Rollen beheren](https://docs.microsoft.com/intune/role-based-access-control)  
+- [Apparaten inschrijven](device-enrollment.md)
+- [Apparaatcompatibiliteit instellen](device-compliance-get-started.md)
+- [Apparaten beheren](device-management.md)
+- [Apps beheren](app-management.md)  
+- [iOS eBooks](vpp-ebooks-ios.md)  
+- [Exchange On-Premises Connector installeren](exchange-connector-install.md)  
+- [Rollen beheren](role-based-access-control.md)  
 - Software-updates beheren
-  - [Windows 10-updates beheren](https://docs.microsoft.com/intune/windows-update-for-business-configure)  
-  - [iOS-updates beheren](https://docs.microsoft.com/intune/software-updates-ios)  
+  - [Windows 10-updates beheren](windows-update-for-business-configure.md)  
+  - [iOS-updates beheren](software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [Gebruikers beheren](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Groepen en leden beheren](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
-- [Problemen oplossen](https://docs.microsoft.com/intune/help-desk-operators)
+- [Problemen oplossen](help-desk-operators.md)
 
 ## <a name="next-step"></a>Volgende stap
 Wanneer u klaar bent om aan de slag te gaan met een MDM- of MAM-oplossing, doorloopt u de verschillende stappen voor het instellen van Intune, het inschrijven van apparaten en het maken van beleid. [Mobile Device Management voor Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure) is ook een goede resource.

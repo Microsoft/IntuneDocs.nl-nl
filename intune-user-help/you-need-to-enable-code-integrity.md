@@ -18,23 +18,25 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 167d091f212536ed94e3f4ce0c103649e4a2e537
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: c518e0eeb18f51fa17d15a72735e319aef1d647d
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413831"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167469"
 ---
 # <a name="enable-code-integrity"></a>Code-integriteit inschakelen
 
-Uw organisatie vereist mogelijk uw PC te worden ingeschakeld met een threat protection-functie, genaamd *code-integriteit*. Code-integriteit controleert u de stuurprogramma's en bestanden op uw apparaat voor het tekenen van beschadiging of schadelijke software. Code-integriteit te werken op uw apparaat, een andere beveiligingsfunctie genoemd [ *beveiligd opstarten* ](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) moet ook worden ingeschakeld. 
+Uw organisatie vereist mogelijk dat uw PC wordt ingeschakeld met een functie voor beveiliging tegen bedreigingen die *code-integriteit*wordt genoemd. Code-integriteit controleert de Stuur Programma's en systeem bestanden op uw apparaat voor tekenen van beschadiging of schadelijke software. Als u code-integriteit wilt gebruiken op uw apparaat, moet u ook een andere beveiligings functie met de naam [*beveiligd opstarten*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) inschakelen.
 
-Als uw PC is niet compatibel omdat de code-integriteit is uitgeschakeld, moet u contact opnemen van uw organisatie IT ondersteuningsteam. Ze helpen u bij het inschakelen van beveiligd opstarten, die code-integriteit de volgende keer dat u het apparaat start wordt geactiveerd. 
+Als uw PC niet compatibel is omdat code-integriteit is uitgeschakeld, neemt u contact op met het IT-ondersteunings team van uw organisatie. Ze helpen u om beveiligd opstarten in te scha kelen, waardoor code-integriteit wordt geactiveerd wanneer u uw apparaat de volgende keer opstart.
 
-Als u zichzelf als de gebruiker van een geavanceerde apparaat identificeren en probeert u de stappen op uw eigen wilt, Zie [beveiligd opstarten opnieuw inschakelen](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
+Als u zichzelf identificeert als een geavanceerde gebruiker van een apparaat en u de stappen zelf wilt proberen, raadpleegt u [beveiligd opstarten opnieuw inschakelen](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
-## <a name="additional-resources-for-it-administrators"></a>Aanvullende bronnen voor IT-beheerders  
-Als u een Intune-beheerder en wilt u meer informatie over de status van Intune-nalevingsbeleid apparaatinstellingen, Zie [toevoegen van een nalevingsbeleid voor Windows 10-apparaten in Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows). Zie voor een gedetailleerde Kijk op de nalevingsacties die u in Intune kunt uitvoeren, de [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
+## <a name="additional-resources-for-it-administrators"></a>Aanvullende resources voor IT-beheerders
 
-## <a name="next-steps"></a>Volgende stappen  
+Als u een intune-beheerder bent en meer wilt weten over de instellingen voor de naleving van de apparaatstatus van intune, raadpleegt u [een apparaatcompatibiliteit voor Windows 10-apparaten toevoegen in intune](https://docs.microsoft.com/intune/compliance-policy-create-windows.md). Zie de [HEALTHATTESTATION CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)voor een gedetailleerde weer gave van de nalevings acties die u in intune kunt uitvoeren.  
+
+## <a name="next-steps"></a>Volgende stappen
+
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

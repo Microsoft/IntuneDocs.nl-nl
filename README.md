@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 8d76ff182ea4402b6a4cd3242b15288d8bea16b9
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545241"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166463"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Gedragscode voor Microsoft Open Source
 
@@ -23,7 +23,7 @@ We **willen en stimuleren bijdragen** van onze community (gebruikers, klanten, p
 * **Uw browser gebruiken**: er zijn twee opties: 
 
     **Optie 1: rechtstreeks vanuit docs.microsoft.com bewerken**  
-    1. Ga naar het onderwerp, zoals [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune). 
+    1. Ga naar het onderwerp, zoals [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](troubleshoot-policies-in-microsoft-intune.md). 
     2. Selecteer **Bewerken** (rechtsboven). Hierop wordt het markdown-bestand in de GitHub-opslagplaats weergegeven.
     3. Selecteer het potloodpictogram. Wanneer u het potloodpictogram aanwijst, ziet u de knopinfo **Dit bestand bewerken**. 
     4. Na het aanbrengen van de wijzigingen kunt u deze **doorvoeren**. 

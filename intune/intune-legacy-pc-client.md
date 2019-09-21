@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: f3891ce150ea740baa3ba18591139c66d78d9d00
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756534"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166367"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Console voor Intune in Azure en verouderde Intune-client voor pc
 
@@ -31,7 +31,7 @@ Houd bij het gebruik van Intune in Azure voor het beheren van Windows-apparaten 
 
 ## <a name="manage-windows-10-devices-by-using-mdm"></a>Windows 10-apparaten beheren via MDM
 
-Het is raadzaam gebruik te maken van [Mobile Device Management (MDM) voor het beheren van uw Windows 10-apparaten](https://docs.microsoft.com/intune/device-restrictions-windows-10) in plaats van de verouderde Intune PC Client. De mogelijkheid voor het beheren van Windows 10 via MDM is beschikbaar in de Intune in Azure Portal. Windows 10 MDM biedt veel nieuwe beheer- en beveiligingsmogelijkheden die niet beschikbaar zijn via de verouderde Intune PC Client.
+Het is raadzaam gebruik te maken van [Mobile Device Management (MDM) voor het beheren van uw Windows 10-apparaten](device-restrictions-windows-10.md) in plaats van de verouderde Intune PC Client. De mogelijkheid voor het beheren van Windows 10 via MDM is beschikbaar in de Intune in Azure Portal. Windows 10 MDM biedt veel nieuwe beheer- en beveiligingsmogelijkheden die niet beschikbaar zijn via de verouderde Intune PC Client.
 
 ## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Verouderde PC Client-functies zijn alleen beschikbaar in de Silverlight-console
 
@@ -54,7 +54,7 @@ Voor Windows 7, dat niet kan worden beheerd via MDM, blijven we bestaande mogeli
 
 ## <a name="mdm-capabilities"></a>MDM-mogelijkheden
 
-Zie [Het beheren van Windows-pc's als computers of mobiele apparaten vergelijken](pc-management-comparison.md) voor een gedetailleerde vergelijking tussen de mogelijkheden voor PC Client en MDM. Met MDM-updates komen er voortdurend nieuwe beheermogelijkheden beschikbaar voor bij MDM ingeschreven Windows 10-apparaten, met inbegrip van evaluatie-opties voor Win 32-apps. Zie [Wat is er nieuw](https://docs.microsoft.com/intune/whats-new) voor de toevoegingen in de laatste release aan de service.
+Zie [Het beheren van Windows-pc's als computers of mobiele apparaten vergelijken](pc-management-comparison.md) voor een gedetailleerde vergelijking tussen de mogelijkheden voor PC Client en MDM. Met MDM-updates komen er voortdurend nieuwe beheermogelijkheden beschikbaar voor bij MDM ingeschreven Windows 10-apparaten, met inbegrip van evaluatie-opties voor Win 32-apps. Zie [Wat is er nieuw](whats-new.md) voor de toevoegingen in de laatste release aan de service.
 
 ## <a name="switch-from-pc-client-to-mdm"></a>Overschakelen van PC Client naar MDM
 
@@ -62,9 +62,7 @@ Als u wilt overschakelen van het beheren van Windows 10-apparaten met de Intune 
 
 1. Voer in de Silverlight-console **selectief wissen** uit om de inschrijving van het apparaat in de PC Client ongedaan te maken.
   ![Pop-upvenster met het keuze rondje selectief wissen van apparaat geselecteerd](media/intune-legacy-pc-client/image02.png)
-2. Schrijf het apparaat opnieuw in met behulp van [MDM (en/of Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll). 
+2. Schrijf het apparaat opnieuw in met behulp van [MDM (en/of Azure AD Join)](windows-enroll.md).
 
 ## <a name="next-steps"></a>Volgende stappen
-[Windows-apparaten inschrijven](https://docs.microsoft.com/intune/windows-enroll)
-
- 
+[Windows-apparaten inschrijven](windows-enroll.md)

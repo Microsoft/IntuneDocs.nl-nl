@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d63ecdb23b107d844c37d7a805247092116618e1
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 0ec52069c4c53c464cfe5a1e17718ba6725fd0b5
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022738"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167444"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Apparaat is versleuteld, maar apps zeggen anders
 
@@ -48,16 +48,17 @@ Deze sectie is alleen van toepassing op de app Bedrijfsportal. Als uw apparaat u
 
 ## <a name="specific-manufacturer-issues"></a>Fabrikant-specifieke problemen
 
-Sommige Android-apparaten met versie 7.0 en later versleutelen gegevens op een manier die inconsistent is met bepaalde Android-platformstandaarden. Met deze versleutelings methoden wordt een risico op de apparaatgegevens gelegd. Als gevolg hiervan worden deze apparaten niet ondersteund. 
+Sommige Android-apparaten met versie 7.0 en later versleutelen gegevens op een manier die inconsistent is met bepaalde Android-platformstandaarden. Met deze versleutelings methoden wordt een risico op de apparaatgegevens gelegd. Als gevolg hiervan worden deze apparaten niet ondersteund.
 
-Zie het artikel [ondersteunde besturings systemen en browsers in intune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)voor een niet-limitatieve lijst van ondersteunde Android-apparaten. Als uw apparaat niet wordt weer gegeven, raadpleegt u de fabrikant van het apparaat of neemt u contact op met de ondersteunings medewerker. 
+Zie het artikel [ondersteunde besturings systemen en browsers in intune](https://docs.microsoft.com/intune/supported-devices-browsers.md#supported-samsung-knox-standard-devices)voor een niet-limitatieve lijst van ondersteunde Android-apparaten. Als uw apparaat niet wordt weer gegeven, raadpleegt u de fabrikant van het apparaat of neemt u contact op met de ondersteunings medewerker.
 
 > [!Note]
-> Microsoft werkt samen met fabrikanten aan het oplossen van problemen die worden gevonden tijdens het testen of die gebruikers rapporteren. Dit artikel wordt bijgewerkt wanneer nieuwe informatie beschikbaar is. 
+> Microsoft werkt samen met fabrikanten aan het oplossen van problemen die worden gevonden tijdens het testen of die gebruikers rapporteren. Dit artikel wordt bijgewerkt wanneer nieuwe informatie beschikbaar is.
 
-## <a name="update-devices"></a>Apparaten bijwerken   
+## <a name="update-devices"></a>Apparaten bijwerken
 
 Als u uw apparaat niet hebt bijgewerkt naar de meest recente versie van Android, gaat u naar de **instellingen** -app van uw apparaat en selecteert u **bijwerken**.  
 
-## <a name="next-steps"></a>Volgende stappen   
+## <a name="next-steps"></a>Volgende stappen
+
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van het bedrijf (zie de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) voor contactgegevens) of stuur een e-mail naar het <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-team</a>.  

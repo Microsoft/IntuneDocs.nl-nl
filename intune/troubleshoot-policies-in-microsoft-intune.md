@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
-ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
+ms.openlocfilehash: 68ffdcccdd3588ac5127e6c54426acfdcad17d34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298399"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071707"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Beleidsregels en profielen voor het oplossen van problemen in Intune
 
@@ -30,8 +30,8 @@ Microsoft Intune bevat een aantal ingebouwde functies voor probleemoplossing. Ge
 
 In dit artikel staan een aantal oplossingstechnieken en er worden problemen beschreven die u mogelijk ervaart.
 
-## <a name="check-tenant-status"></a>Status van de tenant controleren
-Controleer de [Tenantstatus](tenant-status.md) en controleer of het abonnement actief is. U kunt ook details voor actieve incidenten en adviezen die mogelijk van invloed op uw implementatie van beleid of een profiel bekijken.
+## <a name="check-tenant-status"></a>Tenant status controleren
+Controleer de [status](tenant-status.md) van de Tenant en bevestig dat het abonnement actief is. U kunt ook details weer geven voor actieve incidenten en adviezen die van invloed kunnen zijn op de implementatie van uw beleid of profiel.
 
 ## <a name="use-built-in-troubleshooting"></a>Ingebouwde probleemoplossing gebruiken
 
@@ -118,10 +118,10 @@ Controleer de [Tenantstatus](tenant-status.md) en controleer of het abonnement a
 
 ## <a name="policy-troubleshooting-resources"></a>Problemen met beleidsresources polossen
 
-- [Problemen met iOS of Android-beleid niet toegepast op apparaten](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (opent u een andere Microsoft-site)
-- [Problemen met Windows 10 Intune-beleid fouten oplossen](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (opent een blog)
-- [Aangepaste instellingen voor Windows 10 CSP oplossen](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (opent u een andere Microsoft-site)
-- [Groepsbeleid voor Windows 10 vs Intune MDM beleid](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (opent u een andere Microsoft-site)
+- [Problemen oplossen met IOS-of Android-beleid dat niet wordt toegepast op apparaten](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (opent een andere micro soft-site)
+- [Problemen oplossen met Windows 10-beleids problemen met intune](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (opent een blog)
+- [Aangepaste CSP-instellingen voor Windows 10 oplossen](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (opent een andere micro soft-site)
+- [Windows 10-Groepsbeleid versus het intune MDM-beleid](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (opent een andere micro soft-site)
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Waarschuwing: het opslaan van de toegangsregels in Exchange is mislukt
 
@@ -135,7 +135,7 @@ Als u beleid hebt gemaakt in de werkruimte Beleid voor Exchange On-Premises (beh
 
 Bij Windows Phone-apparaten wordt niet toegestaan dat de beveiligingsbeleidsregels die via MDM of EAS zijn ingesteld, worden teruggebracht naar een lager niveau wanneer u die eenmaal hebt ingesteld. U stelt bijvoorbeeld het **minimumaantal tekens voor het wachtwoord** in op 8 en wilt dit vervolgens terugbrengen tot 4. Het meer beperkende beleid wordt op het apparaat toegepast.
 
-Windows 10-apparaten kunnen beveiligingsbeleid niet verwijderen wanneer u de toewijzing van het beleid (stop-implementatie). Mogelijk moet u laat u het beleid is toegewezen, en wijzig vervolgens de beveiligingsinstellingen terug naar de standaardwaarden.
+Windows 10-apparaten kunnen geen beveiligings beleid verwijderen wanneer u het beleid voor het opheffen van de toewijzing (implementatie stoppen) opheffen. Mogelijk moet u het beleid opnieuw toewijzen en vervolgens de beveiligings instellingen weer instellen op de standaard waarden.
 
 Afhankelijk van het apparaatplatform moet u mogelijk het beveiligingsbeleid opnieuw instellen als u de beveiliging naar beneden toe wilt bijstellen.
 

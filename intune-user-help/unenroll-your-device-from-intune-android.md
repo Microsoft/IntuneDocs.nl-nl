@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b68ea31a6c5d902e66c0eda8127e0f68383910f8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 0a472e4d8c3ef7b922f02b4d2407362ba738486c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529127"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167542"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Uw Android-apparaat uitschrijven bij het beheer  
 
@@ -35,7 +35,7 @@ Verwijder een geregistreerd Android-apparaat zodat het niet meer wordt beheerd d
 * Instellingen die op het apparaat zijn gewijzigd toen u dit hebt toegevoegd (bijvoorbeeld het uitschakelen van de camera of een vereiste wachtwoordlengte), zijn niet meer van toepassing.  
 
 > [!NOTE]
-> U kan de registratie ongedaan maken of uw apparaten in Bedrijfseigendom apparaat verwijderen uit de Microsoft Intune-app. Het apparaat is geregistreerd tijdens de initiële installatie en moet worden geregistreerd voor toegang tot resources van uw organisatie.  
+> U kunt de registratie of het apparaat van het bedrijf niet verwijderen uit de Microsoft Intune-app. Het apparaat is geregistreerd tijdens de eerste installatie van het apparaat en moet worden geregistreerd om toegang te krijgen tot de resources van uw organisatie.  
 
 1. Ga in de Bedrijfsportal naar de rechterbovenhoek en tik op de drie verticale puntjes. Het actiemenu wordt geopend.
 
@@ -54,24 +54,28 @@ U kunt als volgt alle gegevens verwijderen die de bedrijfsportal-app voor Androi
 - Wis de appgegevens door op **Toepassingen** > **[*naam van de app*]**  > **Gegevens wissen** te tikken.
 - Verwijder de volgende map: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
 
-## <a name="uninstall-the-company-portal-app"></a>De Bedrijfsportal-app verwijderen  
+## <a name="uninstall-the-company-portal-app"></a>De Bedrijfsportal-app verwijderen
+
 Bedrijfsportal is een app voor apparaatbeheer. Deze kan niet worden verwijderd voordat u uw apparaat bij het beheer hebt uitgeschreven. Nadat u dit hebt gedaan, tikt u op het pictogram van de Bedrijfsportal-app en houdt u dit ingedrukt totdat **Verwijderen** wordt weergegeven. Tik op **Verwijderen** om de app van uw apparaat te verwijderen.  
 
 U kunt ook op **Instellingen** > **Apps** > **Bedrijfsportal** > **Verwijderen** tikken.  
 
-### <a name="remove-the-company-portal-app-as-a-device-administrator"></a>De Bedrijfsportal-app verwijderen als apparaatbeheerder  
+### <a name="remove-the-company-portal-app-as-a-device-administrator"></a>De Bedrijfsportal-app verwijderen als apparaatbeheerder
+
 Als laatste redmiddel kunt u de app als apparaatbeheerder van uw apparaat verwijderen.  
 
-Als u een apparaat hebt waarvan het bedrijf de eigenaar is, kan uw organisatie mogelijk verplichten Bedrijfsportal te allen tijden op uw apparaat te houden. Als u deze app verwijdert, kan u de toegang tot beschermde bedrijfsresources worden ontzegd, zoals e-mail, apps, Wi-Fi of VPN, tot u de app opnieuw installeert. Zie [Apps toevoegen aan Microsoft Intune](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune) voor meer informatie over het installeren, bijwerken of verwijderen van vereiste apps.  
+Als u een apparaat hebt waarvan het bedrijf de eigenaar is, kan uw organisatie mogelijk verplichten Bedrijfsportal te allen tijden op uw apparaat te houden. Als u deze app verwijdert, kan u de toegang tot beschermde bedrijfsresources worden ontzegd, zoals e-mail, apps, Wi-Fi of VPN, tot u de app opnieuw installeert. Zie [Apps toevoegen aan Microsoft Intune](https://docs.microsoft.com/intune/apps-add.md#apps-that-are-added-automatically-by-intune) voor meer informatie over het installeren, bijwerken of verwijderen van vereiste apps.  
 
 U kunt de Bedrijfsportal als apparaatbeheerder als volgt uitschakelen. De daadwerkelijke naam van elke instelling kan afwijken op uw Android-apparaat.  
 
 **Optie 1**:  
+
 1. Selecteer **Instellingen** > **Beveiliging** > **Aanvullende beveiligingsinstellingen** > **Apparaatbeheerders**.  
 2. Wis de selectie **Bedrijfsportal**.  
 
-**Optie 2**:  
-1. Selecteer **Instellingen** > **Schermvergrendeling en beveiliging** > **Andere beveiligingsinstellingen** > **Apps voor apparaatbeheer**.  
-2. Wis de selectie **Bedrijfsportal**.    
+**Optie 2**:
+
+1. Selecteer **Instellingen** > **Schermvergrendeling en beveiliging** > **Andere beveiligingsinstellingen** > **Apps voor apparaatbeheer**.
+2. Wis de selectie **Bedrijfsportal**.
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

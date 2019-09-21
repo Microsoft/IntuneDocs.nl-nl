@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,20 +16,21 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346e6219c10cc8b90d3bf83170adffa677c6c484
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dddcb16a0067ed6e278ff3f9032695e075a0fb6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849003"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163287"
 ---
 # <a name="set-or-change-your-passcode"></a>Uw wachtwoordcode instellen of wijzigen
 
-Als uw iOS-apparaat niet aan het wachtwoordcodebeleid van het ondersteuningsteam van het bedrijf voldoet, wordt er een bericht weergegeven met een korte beschrijving van het probleem waarin wordt uitgelegd hoe u ervoor kunt zorgen dat uw wachtwoordcode voldoet aan de vereisten.
+Maak een nieuwe wachtwoordzin of wijzig een bestaande wachtwoord code zodat deze voldoet aan de vereisten van uw organisatie. De wachtwoord code voor komt dat niet-geautoriseerde personen het apparaat ontgrendelen en gebruiken. 
 
-Het ondersteuningsteam van het bedrijf kan meerdere wachtwoordcodevereisten instellen. Het is bijvoorbeeld mogelijk dat de wachtwoordcode een bepaald aantal tekens moet bevatten en dat er een combinatie van cijfers, letters en tekens moet worden gebruikt. Omdat er meerdere vereisten kunnen zijn ingesteld, kan aan de hand van deze instructies alleen worden uitgelegd hoe u de wachtwoordcode instelt of wijzigt. Ze beschrijven niet elke mogelijke combinatie van vereisten. Deze toegangscodes worden bijvoorbeeld gebruikt voor toegang tot het apparaat vanaf het vergrendelingsscherm.
+Uw organisatie kan meer dan één wachtwoord code vereiste instellen. Zie [vereisten voor het wacht woord voor het apparaat voor geregistreerde apparaten](password-does-not-meet-it-administrator-requirements.md)voor een lijst met algemene wachtwoord vereisten.  
 
-Als u problemen ondervindt bij het instellen van een wachtwoordcode die voldoet aan de vereisten, neemt u contact op met het ondersteuningsteam van het bedrijf voor hulp.
+Neem contact op met uw IT-ondersteunings medewerker als u problemen ondervindt bij het maken of wijzigen van de wachtwoord code.  
+
 
 ## <a name="set-your-passcode"></a>Uw wachtwoordcode instellen
 

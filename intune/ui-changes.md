@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ac74cc547d13e92b87a8e148845ff1bc7be8efe4
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046335"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166998"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Waar is de Intune-functie die ik zoek gebleven in Azure?
 Bij het verplaatsen van Intune naar de Azure-portal hebben we van de gelegenheid gebruikgemaakt om een aantal taken logischer in te delen. Maar dergelijke verbeteringen betekenen wel dat u de nieuwe indeling moet leren kennen. Deze referentiegids is speciaal bedoeld voor degenen die heel vertrouwd zijn met Intune in de klassieke portal, en die zich afvragen waar bepaalde functies in Intune zijn gebleven in Azure Portal. Als een functie die u zoekt niet wordt behandeld in dit artikel, laat dan een reactie achter onder het artikel, zodat we het kunnen bijwerken.
@@ -77,7 +77,7 @@ Als u beleidsregels voor voorwaardelijke toegang wilt weergeven en er wijziginge
 ## <a name="where-did-my-compliance-policies-go"></a>Waar is mijn nalevingsbeleid gebleven?
 Nadat uw tenant is gemigreerd naar Azure Portal, blijft het nalevingsbeleid van uw tenant van kracht. U kunt deze echter niet weergeven of wijzigen via Intune in Azure Portal.
 
-Als u het nalevingsbeleid wilt weergeven en er wijzigingen in wilt aanbrengen vanuit Azure Portal, moet u de oude beleidsregels verwijderen uit de klassieke portal. U maakt ze daarna opnieuw in Azure Portal. Zie [Aan de slag met apparaatnalevingsbeleid](https://docs.microsoft.com/intune/device-compliance-get-started) voor meer informatie over beleidsregels voor apparaatnaleving. 
+Als u het nalevingsbeleid wilt weergeven en er wijzigingen in wilt aanbrengen vanuit Azure Portal, moet u de oude beleidsregels verwijderen uit de klassieke portal. U maakt ze daarna opnieuw in Azure Portal. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over beleidsregels voor apparaatnaleving. 
 
 ## <a name="where-did-apple-dep-go"></a>Waar is Apple DEP gebleven?
 In de klassieke portal kunt u Intune instellen voor integratie met het Device Enrollment Program van Apple, en handmatig synchroniseren met de service van Apple:

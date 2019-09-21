@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1cf8f7753a92ad45a68f976359560ef6da2d1cec
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: a5e1ea8a0f8ea054b2eb75e1c98e60f184b0a45c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648726"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166754"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Problemen met Mobile Application Management oplossen
 
@@ -90,7 +90,7 @@ Foutbericht of dialoogvenster | Oorzaak | Herstel |
 **Het apparaat voldoet niet aan het beleid**: deze app kan niet worden gebruikt, omdat u een gekraakt apparaat gebruikt. Neem contact op met uw IT-beheerder voor hulp. | Intune heeft gedetecteerd dat de gebruiker een gekraakt apparaat gebruikt. | Zet de fabrieksinstellingen van het apparaat terug. Volg [deze instructies](https://support.apple.com/HT201274) op de ondersteuningssite van Apple.
 **Internetverbinding vereist**: u moet zijn verbonden met internet om te kunnen verifiëren of u deze app mag gebruiken. | Het apparaat is niet verbonden met internet. | Verbind het apparaat met een WiFi- of datanetwerk.
 **Onbekende fout**: probeer deze app opnieuw te starten. Als het probleem zich blijft voordoen, neemt u contact op met uw IT-beheerder voor ondersteuning. | Er is een onbekende fout opgetreden. | Wacht enige tijd en probeer het opnieuw. Als de fout zich blijft voordoen, maakt u een [ondersteuningsticket](get-support.md#create-an-online-support-ticket) met Intune.
-**Toegang tot gegevens van uw organisatie**: het werk- of schoolaccount dat u hebt opgegeven, heeft geen toegang tot deze app. Mogelijk moet u zich aanmelden met een ander account. Neem contact op met uw IT-beheerder voor hulp. | Intune heeft gedetecteerd dat de gebruiker zich probeert aan te melden met een tweede werk- of schoolaccount dat verschilt van het bij MAM geregistreerde account voor het apparaat. Er kan per apparaat slechts één werk- of schoolaccount tegelijkertijd door MAM worden beheerd. | Laat de gebruiker zich aanmelden met het account waarvan de gebruikersnaam vooraf is ingevuld op het aanmeldingsscherm. Mogelijk moet u [de UPN-instelling van de gebruiker voor intune configureren](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). <br> <br> Of laat de gebruiker zich aanmelden met het nieuwe werk- of schoolaccount en verwijder het bestaande bij MAM geregistreerde account.
+**Toegang tot gegevens van uw organisatie**: het werk- of schoolaccount dat u hebt opgegeven, heeft geen toegang tot deze app. Mogelijk moet u zich aanmelden met een ander account. Neem contact op met uw IT-beheerder voor hulp. | Intune heeft gedetecteerd dat de gebruiker zich probeert aan te melden met een tweede werk- of schoolaccount dat verschilt van het bij MAM geregistreerde account voor het apparaat. Er kan per apparaat slechts één werk- of schoolaccount tegelijkertijd door MAM worden beheerd. | Laat de gebruiker zich aanmelden met het account waarvan de gebruikersnaam vooraf is ingevuld op het aanmeldingsscherm. Mogelijk moet u [de UPN-instelling van de gebruiker voor intune configureren](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). <br> <br> Of laat de gebruiker zich aanmelden met het nieuwe werk- of schoolaccount en verwijder het bestaande bij MAM geregistreerde account.
 **Verbindingsprobleem**: er is een onverwacht verbindingsprobleem opgetreden. Controleer uw verbinding en probeer het opnieuw.  |  Er is een onverwachte fout opgetreden. | Wacht enige tijd en probeer het opnieuw. Als de fout zich blijft voordoen, maakt u een [ondersteuningsticket](get-support.md#create-an-online-support-ticket) met Intune.
 **Waarschuwing**: deze app kan niet meer worden gebruikt. Neem contact op met uw IT-beheerder voor meer informatie. | Kan het certificaat van de app niet valideren. | Zorg ervoor dat de versie van de app is bijgewerkt. <br><br> installeer de app opnieuw.
 **Fout**: er is een probleem opgetreden waardoor deze app moet worden gesloten. Als de fout zich blijft voordoen, neemt u contact op met uw IT-beheerd. | Kan de pincode van de MAM-app in de sleutelhanger van Apple iOS niet lezen. | Start het apparaat opnieuw op. Zorg ervoor dat de versie van de app is bijgewerkt. <br><br> installeer de app opnieuw.

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa723942c9633a3851f75e3e08bf843cbb4bdf55
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 850c7a28c4df1638e9f635713695dcf2e914ffce
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842161"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166932"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Problemen met app-installatie oplossen
 
@@ -61,7 +61,7 @@ U moet rekening houden met de volgende acties als u problemen hebt met het insta
   3. Navigeer naar [Azure Active Directory gebruikers](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
   4. Selecteer de betrokken gebruiker en klik op **apparaten**.
   5. Als de gebruiker de ingestelde limiet overschrijdt, verwijdert u alle verouderde records die niet meer nodig zijn.
-- Voor iOS DEP-apparaten zorgt u ervoor dat de gebruiker wordt vermeld als **geregistreerd door de gebruiker** in de Blade overzicht van intune-apparaten. Als er N.V.T. wordt weer gegeven, implementeert u een configuratie beleid voor de Intune-bedrijfsportal. Zie [Configure the bedrijfsportal app](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)(Engelstalig) voor meer informatie.
+- Voor iOS DEP-apparaten zorgt u ervoor dat de gebruiker wordt vermeld als **geregistreerd door de gebruiker** in de Blade overzicht van intune-apparaten. Als er N.V.T. wordt weer gegeven, implementeert u een configuratie beleid voor de Intune-bedrijfsportal. Zie [Configure the bedrijfsportal app](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)(Engelstalig) voor meer informatie.
 
 ## <a name="win32-app-installation-troubleshooting"></a>Problemen met de installatie van Win32-app oplossen
 
