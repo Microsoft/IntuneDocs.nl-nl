@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 527d71f0e48627498b05af8ee497579c648d3156
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 8d6f0182fed362cba1e4c383ac6b4e083b6baa8e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960552"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167158"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android
 
@@ -707,7 +707,7 @@ Waar nodig kan een autoriteit worden opgegeven.
 
 U moet uw app bij Azure AD registreren en uw app toegang geven tot de beveiligingsbeleidsservice voor apps:
 * Kijk [hier](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) voor informatie over het registreren van toepassingen met Azure AD.
-* Zorg ervoor dat de stappen om uw Android-app te machtigen voor het app-beschermingsbeleid (APP) zijn gevolgd. Gebruik de instructies in de handleiding [Aan de slag met de Intune-SDK](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) onder 'Uw app toegang geven tot de Intune-app-beveiliging (optioneel)'. 
+* Zorg ervoor dat de stappen om uw Android-app te machtigen voor het app-beschermingsbeleid (APP) zijn gevolgd. Gebruik de instructies in de handleiding [Aan de slag met de Intune-SDK](app-sdk-get-started.md#next-steps-after-integration) onder 'Uw app toegang geven tot de Intune-app-beveiliging (optioneel)'. 
 
 Bekijk hieronder ook de vereisten voor [Voorwaardelijke toegang](#conditional-access).
 
@@ -723,18 +723,18 @@ Autoriteit en NonBrokerRedirectURI kunnen indien gewenst worden opgegeven.
 
 ### <a name="conditional-access"></a>Voorwaardelijke toegang
 
-Voorwaardelijke toegang (CA) is een [functie](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer) van Azure Active Directory die kan worden gebruikt om toegang tot AAD-resources te beheren. [Intune-beheerders kunnen CA-regels definiëren](https://docs.microsoft.com/intune/conditional-access) waardoor toegang tot resources is beperkt tot apparaten of apps die worden beheerd door Intune. Als u ervoor wilt zorgen dat uw app waar nodig toegang heeft tot resources, moet u de onderstaande stappen volgen. Als uw app geen AAD-toegangstokens ophaalt, of alleen toegang heeft tot resources die niet door CA kunnen worden beveiligd, kunt u deze stappen overslaan.
+Voorwaardelijke toegang (CA) is een [functie](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer) van Azure Active Directory die kan worden gebruikt om toegang tot AAD-resources te beheren. [Intune-beheerders kunnen CA-regels definiëren](conditional-access.md) waardoor toegang tot resources is beperkt tot apparaten of apps die worden beheerd door Intune. Als u ervoor wilt zorgen dat uw app waar nodig toegang heeft tot resources, moet u de onderstaande stappen volgen. Als uw app geen AAD-toegangstokens ophaalt, of alleen toegang heeft tot resources die niet door CA kunnen worden beveiligd, kunt u deze stappen overslaan.
 
 1. Volg [de richtlijnen voor ADAL-integratie](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library). 
    Bekijk met name stap 11 voor brokergebruik.
 2. [Registreer uw toepassing met Azure Active Directory] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). 
    U vindt de omleidings-URI hierboven in de richtlijnen voor ADAL-integratie.
 3. Stel de metagegevensparameters voor het manifest in volgens de [algemene ADAL-configuraties](#common-adal-configurations), item 2, hierboven.
-4. Controleer of alles goed is geconfigureerd door [op apparaat gebaseerde CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) in te schakelen vanuit [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) en bevestig:
+4. Controleer of alles goed is geconfigureerd door [op apparaat gebaseerde CA](conditional-access-intune-common-ways-use.md) in te schakelen vanuit [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) en bevestig:
     - Dat er bij aanmelding bij uw app wordt gevraagd naar installatie en inschrijving van de Intune-bedrijfsportal
     - Dat na inschrijving goed wordt aangemeld bij uw app.
-5. Nadat uw app Intune APP SDK-integratie heeft verzonden, neemt u contact op met msintuneappsdk@microsoft.com om aan de lijst met goedgekeurde apps te worden toegevoegd voor [voorwaardelijke toegang op basis van een app](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
-6. Zodra uw app is toegevoegd aan de goedgekeurde lijst, voert u een validatie uit door [op apps gebaseerde CA te configureren](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) en te controleren of u zich bij uw app kunt aanmelden.
+5. Nadat uw app Intune APP SDK-integratie heeft verzonden, neemt u contact op met msintuneappsdk@microsoft.com om aan de lijst met goedgekeurde apps te worden toegevoegd voor [voorwaardelijke toegang op basis van een app](conditional-access-intune-common-ways-use.md#app-based-conditional-access)
+6. Zodra uw app is toegevoegd aan de goedgekeurde lijst, voert u een validatie uit door [op apps gebaseerde CA te configureren](app-based-conditional-access-intune-create.md) en te controleren of u zich bij uw app kunt aanmelden.
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>App-beveiligingsbeleid zonder apparaatrinschrijving
 
@@ -1639,7 +1639,7 @@ Dankzij de standaardinstelling voor selectief wissen wordt de app zorgvuldig ges
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Op MAM gerichte configuratie inschakelen voor Android-toepassingen (optioneel)
-Toepassingsspecifieke sleutel-waardeparen kunnen worden geconfigureerd in de Intune-console voor [MAM-WE](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) en [Android-werkprofiel-apps](https://docs.microsoft.com/intune/app-configuration-policies-use-android).
+Toepassingsspecifieke sleutel-waardeparen kunnen worden geconfigureerd in de Intune-console voor [MAM-WE](app-configuration-policies-managed-app.md) en [Android-werkprofiel-apps](app-configuration-policies-use-android.md).
 Deze sleutel-waardeparen worden niet geïnterpreteerd door Intune, maar doorgegeven aan de app. Toepassingen die een dergelijke configuratie moeten ontvangen, kunnen dat doen met de klassen `MAMAppConfigManager` en `MAMAppConfig`. Als er meerdere beleidsregels zijn gericht op dezelfde app, kunnen er meerdere conflicterende waarden beschikbaar zijn voor dezelfde sleutel.
 
 > [!NOTE] 
@@ -1673,7 +1673,7 @@ App-configuratie voegt een nieuw type melding toe:
 ### <a name="further-reading"></a>Meer lezen
 Zie [Graph API Reference](https://developer.microsoft.com/graph/docs/concepts/overview) (Naslaginformatie over Graph API) voor meer informatie over de mogelijkheden van Graph API. <br>
 
-Als u meer wilt weten over het maken van een op MAM gericht app-configuratiebeleid in Android, raadpleegt u het onderwerp over op MAM gerichte app-configuratie in [How to use Microsoft Intune app configuration policies for Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android) (App-configuratiebeleid van Microsoft Intune voor Android gebruiken).
+Als u meer wilt weten over het maken van een op MAM gericht app-configuratiebeleid in Android, raadpleegt u het onderwerp over op MAM gerichte app-configuratie in [How to use Microsoft Intune app configuration policies for Android](app-configuration-policies-use-android.md) (App-configuratiebeleid van Microsoft Intune voor Android gebruiken).
 
 ## <a name="style-customization-optional"></a>Stijlaanpassing (optioneel)
 

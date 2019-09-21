@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9333cda33142b9a0a4e0995b4bafe5365f7cb69f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c15f2434f67ec08baf04883da6f9525b5f803823
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545867"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099819"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>Wat gebeurt er als u de bedrijfsportal-app installeert en uw iOS-apparaat inschrijft bij Intune?
 
@@ -37,7 +37,10 @@ Wanneer u de bedrijfsportal-app installeert en uw iOS-apparaat bij Intune inschr
 
 - Het e-mailaccount van uw bedrijf automatisch instellen.
 
-Wanneer u het apparaat inschrijft bij Intune, geeft u het ondersteuningsteam van het bedrijf toestemming om uw apparaat te beheren zodat de bedrijfsgegevens op het apparaat worden beschermd.
+> [!NOTE]
+> We verkopen geen gegevens die door onze service worden verzameld om een of andere reden.  
+
+Wanneer u het apparaat inschrijft bij Intune, geeft u het ondersteuningsteam van het bedrijf toestemming om uw apparaat te beheren zodat de bedrijfsgegevens op het apparaat worden beschermd.  
 
 Wanneer het apparaat is geregistreerd, kan het ondersteuningsteam van het bedrijf de volgende handelingen uitvoeren:
 
@@ -64,5 +67,7 @@ Wanneer het apparaat is geregistreerd, kan het ondersteuningsteam van het bedrij
 - Spraakroaming op het apparaat in- of uitschakelen. Als spraakroaming is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
 
 - Automatische bestandssynchronisatie terwijl de roamingmodus op het apparaat is ingeschakeld, in- of uitschakelen. Als automatische bestandssynchronisatie is toegestaan, kunnen kosten voor roaming in rekening worden gebracht.
+
+
 
 Neem contact op met het ondersteuningsteam van uw bedrijf als u vragen hebt. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

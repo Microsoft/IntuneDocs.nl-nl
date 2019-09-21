@@ -18,25 +18,26 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9c25166ed9b004cc4e43e777008e33e88983912
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2ced8f1ec37f652b7e283328141bc591b5961587
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843490"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099824"
 ---
 # <a name="using-your-ios-device-with-intune-company-portal"></a>Uw iOS-apparaat gebruiken met de Intune-bedrijfsportal
 In dit artikel vindt u specifieke taken en informatie voor de bedrijfsportal voor iOS. Gebruik dit artikel om problemen met uw iOS-apparaat op te lossen of te beheren. Klik op een willekeurige koppeling voor meer informatie, stappen en schermafbeeldingen.
 
 ## <a name="supported-versions"></a>Ondersteunde versies
 
-De bedrijfsportal voor iOS biedt momenteel ondersteuning voor iOS 10.0 en later.
+De bedrijfsportal voor iOS biedt momenteel ondersteuning voor iOS 10.0 en later.  
+
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inschrijven in Intune en de Bedrijfsportal installeren
 
 - [De Intune-bedrijfsportal-app installeren en u hierbij aanmelden](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Uw iOS-apparaat inschrijven bij Intune](enroll-your-device-in-intune-ios.md)
-- [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Wat gebeurt er als u de bedrijfsportal-app installeert en uw apparaat registreert bij Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)  
 
 ## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>Wat u kunt doen wanneer het apparaat is ingeschreven bij Intune
 
