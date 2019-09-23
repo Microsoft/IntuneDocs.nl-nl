@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 0f78f069f46ce036752fde80519abc03dc7c424c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70062999"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167769"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Problemen met inschrijving van Windows-apparaten in Microsoft Intune oplossen
 
@@ -70,7 +70,7 @@ Er zijn verschillende mogelijke oplossingen voor dit probleem:
 > Deze methode verhoogt de registratie limiet voor apparaten voor alle gebruikers, niet alleen de betrokken gebruiker.
 
 1. Meld u aan bij [Azure Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
-2. Ga naar**inschrijvings beperkingen**voor **apparaatregistratie** > en selecteer vervolgens beperkingen voor het **aantal apparaten**.    
+2. Ga naar**inschrijvings beperkingen**voor **apparaatregistratie** > en selecteer vervolgens **beperkingen voor het aantal apparaten**.    
 3. Verhoog de waarde van de limiet van het **apparaat**. 
 
 ##### <a name="check-device-type-restrictions"></a>Beperkingen voor apparaattypen controleren
@@ -205,7 +205,7 @@ Fout: ' er is een probleem opgetreden. Deze versie van Windows wordt niet onders
 Voer de volgende stappen uit om dit probleem in een zelfstandige intune-omgeving op te lossen: 
  
 1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
-2. Selecteer **intune** aan de linkerkant en ga **vervolgensnaar** > **registratiebeperkingenvoor apparaatregistratie.**    
+2. Selecteer **intune** aan de linkerkant en ga vervolgens naar**registratie beperkingen**voor **apparaatregistratie**  > .    
 3. Klik **in beperkingen**voor het apparaattype op **platforms**en selecteer vervolgens **toestaan** voor **Windows (MDM)** .    
 4. Klik op **Opslaan**.    
  
@@ -335,7 +335,7 @@ Dit probleem treedt doorgaans op voordat het apparaat opnieuw wordt opgestart in
 
 #### <a name="resolution"></a>Oplossing
 
-1. Ganaar de **Windows** >  **inschrijvings apparaten** >  van **intune** > -**apparaten**.
+1. Ga naar de**Windows-inschrijvings** > **apparaten**van **intune** >   **-apparaten**  > .
 2. Selecteer het apparaat waarop het probleem zich voordoet > Klik op het weglatings teken (...) aan de rechter kant.
 3. Selecteer **gebruiker niet toewijzen** en wacht totdat het proces is voltooid.
 4. Controleer of het hybride Azure AD Auto Pilot-profiel is toegewezen voordat u OOBE opnieuw probeert uit te voeren.
@@ -370,12 +370,12 @@ Description:
 
 Dit probleem wordt meestal veroorzaakt door onjuiste delegering van machtigingen voor de organisatie-eenheid waar de Windows auto pilot-apparaten worden gemaakt. Zie [de limiet voor het computer account in de organisatie-eenheid verg Roten](windows-autopilot-hybrid.md#increase-the-computer-account-limit-in-the-organizational-unit)voor meer informatie.
 
-1. Open **Active Directory: gebruikers en computers (DSA.msc)**.
+1. Open **Active Directory: gebruikers en computers (DSA.msc)** .
 2. Klik met de rechtermuisknop op de organisatie-eenheid die u gaat gebruiken om aan Hybrid Azure AD gekoppelde computers te maken > **Beheer delegeren**.
 3. Kies in de wizard **Overdracht van beheer** **Volgende** > **Toevoegen** > **Objecttypen**.
 4. Selecteer in het deelvenster **Objecttypen** het selectievakje **Computers** > **OK**.
 5. Voer in het deelvenster voor het selecteren van **Gebruikers**, **Computers** of **Groepen** in het vak **Te selecteren objectnamen invoeren** de naam in van de computer waarop de connector is geïnstalleerd.
-6. Selecteer **Namen controleren** om uw vermelding te valideren > **op**  > **volgende**.
+6. Selecteer **Namen controleren** om uw vermelding te valideren **>**  > op**volgende**.
 7. Selecteer **Een aangepaste taak maken om te delegeren** > **Volgende**.
 8. Selecteer het selectievakje **Alleen de volgende objecten in de map** en schakel vervolgens de selectievakjes **Computerobjecten**, **Geselecteerde objecten in deze map maken** en **Geselecteerde objecten in deze map verwijderen** in.
 9. Selecteer **Volgende**.
@@ -388,4 +388,4 @@ Dit probleem wordt meestal veroorzaakt door onjuiste delegering van machtigingen
 - [Stel een vraag op het Intune-forum](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 - [Raadpleeg de blog van het Microsoft Intune-ondersteunings team](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Bekijk de micro soft Enter prise Mobility and Security-Blog](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
-- [Ondersteuning voor Microsoft Intune krijgen](https://docs.microsoft.com/intune/get-support) 
+- [Ondersteuning voor Microsoft Intune krijgen](get-support.md)

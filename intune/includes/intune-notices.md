@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68775860"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166329"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune. 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Afgenomen ondersteuning voor Android-apparaatbeheerder 
-Android-apparaatbeheerder (soms aangeduid met het verouderde Android-beheer, uitgebracht met Android 2.2) is een manier om Android-apparaten te beheren. Er is nu echter verbeterde beheerfunctionaliteit beschikbaar met [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (uitgebracht met Android 5.0). In een poging om apparaatbeheer moderner, breder en veiliger te maken, vermindert Google ondersteuning voor apparaatbeheerder in nieuwe Android-versies.
+Android-apparaatbeheerder (soms aangeduid met het verouderde Android-beheer, uitgebracht met Android 2.2) is een manier om Android-apparaten te beheren. Er is nu echter verbeterde beheerfunctionaliteit beschikbaar met [Android Enterprise](../connect-intune-android-enterprise.md) (uitgebracht met Android 5.0). In een poging om apparaatbeheer moderner, breder en veiliger te maken, vermindert Google ondersteuning voor apparaatbeheerder in nieuwe Android-versies.
 
 #### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
 Deze wijzigingen van Google zijn op de volgende manieren van invloed op Intune-gebruikers: 
@@ -66,7 +66,7 @@ U hoeft geen actie meer te ondernemen, maar u kunt overwegen uw IT-begeleiding b
 #### <a name="additional-information"></a>Aanvullende informatie 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>Geplande wijziging: Intune zal vanaf september iOS 11 en hoger ondersteunen <!-- 4665342-->
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>Geplande wijziging: Intune zal vanaf september iOS 11 en hoger ondersteunen <!-- 4665324-->
 We verwachten dat iOS 13 in september wordt uitgebracht door Apple. Kort na de release van iOS 13 zullen Intune-inschrijving, de bedrijfsportal en de beheerde browser ondersteuning bieden voor iOS 11 en hoger.
 
 #### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
@@ -76,7 +76,7 @@ Onder voorwaarde dat de mobiele Office 365-apps worden ondersteund in iOS 11.0 e
 - iPhone 5c
 - iPad (4e generatie)
 
-Vanaf juli krijgen apparaten met iOS 10 en de bedrijfsportal die bij MDM zijn ingeschreven een bericht waarin wordt vermeld dat het besturingssysteem of het apparaat moet worden geüpgraded. Als u Application Protection Policies (APP) gebruikt, kunt u ook de toegangsinstelling 'Minimumversie van het iOS-besturingssysteem vereisen (alleen waarschuwing)' instellen.
+Als u Application Protection Policies (APP) gebruikt, kunt u ook de toegangsinstelling 'Minimumversie van het iOS-besturingssysteem vereisen (alleen waarschuwing)' instellen.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
 Controleer uw Intune-rapporten om te zien voor welke apparaten of gebruikers dit gevolgen kan hebben. Ga naar **Apparaten** > **Alle apparaten** en filter op besturingssysteem. U kunt extra kolommen toevoegen, zodat u eenvoudiger kunt vaststellen wie in uw organisatie apparaten met iOS 10 gebruikt. Verzoek uw eindgebruikers om vóór september hun apparaten te upgraden naar een ondersteunde besturingssysteemversie.
@@ -96,7 +96,7 @@ Controleer uw Microsoft-apps, apps van derden en LOB-apps (Line-Of-Business). Zo
 U moet zo nodig ook uw documentatie of de richtlijnen voor ontwikkelaars bijwerken, zodat deze wijziging in de ondersteuning voor de SDK is opgenomen.
 
 #### <a name="additional-information"></a>Aanvullende informatie
-https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+[Line-of-business-apps voorbereiden voor app-beveiligingsbeleid](../apps-prepare-mobile-application-management.md)
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Geplande wijziging: Nieuwe instellingen voor Windows-updates in Intune <!-- 4464404 -->
 Vanaf de versie van augustus van de Intune-service of 1908 voegen we nieuwe 'Deadline-instellingen' toe die u kunt configureren in plaats van de instellingen 'Gebruikers toestaan opnieuw te starten (gepland opnieuw opstarten)'. We zijn van plan de instellingen voor gepland opnieuw opstarten in de gebruikersinterface uit te schakelen in 1909 of de update van september en om deze aan het eind van oktober volledig uit de console te verwijderen. 
