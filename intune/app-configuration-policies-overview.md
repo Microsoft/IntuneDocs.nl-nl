@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cda0453009855d96e7c13e170ba908479a0773ea
-ms.sourcegitcommit: 513e805bbea8bf652c2901dfc5460e34946077df
+ms.openlocfilehash: c0cbc2c7334675e91450b9c2d7129a098498d978
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160597"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061599"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-configuratiebeleid voor Microsoft Intune
 
 Door App-configuratiebeleid kunnen problemen met app-instellingen worden voorkomen doordat u configuratie-instellingen kunt toewijzen aan beleid dat aan eindgebruikers wordt toegewezen voordat ze de app uitvoeren. De instellingen worden vervolgens automatisch verstrekt wanneer de app wordt geconfigureerd op het apparaat van eindgebruikers. Eindgebruikers hoeven zelf geen actie te ondernemen. De configuratie-instellingen zijn uniek voor elke app. 
 
-U kunt app-configuratiebeleid maken en gebruiken om configuratie-instellingen te verstrekken voor zowel iOS- als Android-apps. Met deze configuratie-instellingen kan een app worden aangepast met behulp van een [in de sector gangbare benadering](https://www.appconfig.org/) voor app-configuratie en -beheer. De configuratiebeleidsinstellingen worden gebruikt wanneer deze instellingen in de app worden gecontroleerd, doorgaans als de app voor het eerst wordt uitgevoerd. 
+U kunt app-configuratiebeleid maken en gebruiken om configuratie-instellingen te verstrekken voor zowel iOS- als Android-apps. Met deze configuratie-instellingen kan een app worden aangepast met behulp van app-configuratie en -beheer. De configuratiebeleidsinstellingen worden gebruikt wanneer deze instellingen in de app worden gecontroleerd, doorgaans als de app voor het eerst wordt uitgevoerd. 
 
 Het is bijvoorbeeld mogelijk dat u een van de volgende details moet opgeven voor een app-configuratie-instelling:
 
@@ -60,7 +60,7 @@ U hebt twee opties voor het gebruik van app-configuratiebeleid met Intune:
 ## <a name="apps-that-support-app-configuration"></a>Apps die app-configuratie ondersteunen
 
 ### <a name="managed-devices"></a>Beheerde apparaten
-U kunt app-configuratiebeleid gebruiken voor apps die hiervoor ondersteuning bieden. Apps bieden alleen app-configuratie van Intune als deze zodanig zijn geschreven dat ze app-configuraties ondersteunen, zoals is gedefinieerd door de [AppConfig-community](https://www.appconfig.org/members). Neem contact op met de leverancier van de app voor informatie.
+U kunt app-configuratiebeleid gebruiken voor apps die hiervoor ondersteuning bieden. Apps bieden alleen ondersteuning voor app-configuratie van Intune als deze zodanig zijn geschreven dat ze app-configuraties ondersteunen, zoals is gedefinieerd door het besturingssysteem. Neem contact op met de leverancier van de app voor meer informatie over welke app-configuratiesleutels worden ondersteund.
 
 ### <a name="managed-apps"></a>Managed apps
 U kunt uw Line-Of-Business-apps voorbereiden door de [Intune App SDK](app-sdk.md) in de app te integreren of door de app nadat deze is ontwikkeld in te pakken met behulp van de [Intune App Wrapping Tool](apps-prepare-mobile-application-management.md). In de Intune App SDK wordt ernaar gestreefd om het aantal door de app-ontwikkelaar vereiste codewijzigingen zo laag mogelijk te houden. Zie het [overzicht van de Intune App SDK](app-sdk.md) voor meer informatie. Zie [Line-Of-Business-apps voorbereiden voor app-beveiligingsbeleid](apps-prepare-mobile-application-management.md#feature-comparison) voor een vergelijking tussen de Intune App SDK en de Intune App Wrapping tool.
@@ -92,7 +92,7 @@ U kunt op de volgende drie manieren het app-configuratiebeleid valideren:
 
 U kunt Graph API gebruiken om app-configuratietaken uit te voeren. Zie het Engelstalige [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) voor meer informatie.
 
-## <a name="troubleshooting"></a>Problemen oplossen
+## <a name="troubleshooting"></a>Probleemoplossing
 
 ### <a name="using-logs-to-show-a-configuration-parameter"></a>Logboeken gebruiken om een configuratieparameter weer te geven
 Wanneer in de logboeken een configuratieparameter wordt weergegeven die van toepassing is maar niet lijkt te werken, is er mogelijk een probleem met de configuratie-implementatie van de app-ontwikkelaar. Als u eerst contact opneemt met de app-ontwikkelaar of de kennisdatabase van de app-ontwikkelaar raadpleegt, kunt u zich mogelijk een ondersteuningsgesprek met Microsoft besparen. Als het een probleem betreft met de manier waarop de configuratie wordt verwerkt in een app, moet dit probleem worden opgelost in een toekomstige bijgewerkte versie van die app.

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842139"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061686"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -54,6 +54,21 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [belangri
 
 <!-- ########################## -->
 
+## <a name="week-of-september-16-2019"></a>Week van 16 september 2019
+
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="macos-support-for-web-apps----3174427---"></a>macOS-ondersteuning voor web-apps <!-- 3174427 -->
+Web-apps, waarmee u een snelkoppeling naar een URL op het web kunt toevoegen, kunnen in de Dock worden geïnstalleerd met behulp van de bedrijfsportal voor macOS. Eindgebruikers hebben toegang tot de actie **Installeren** op de pagina met app-details voor een web-app in de macOS-bedrijfsportal. Zie [Apps toevoegen aan Microsoft Intune](apps-add.md) en [Web-apps toevoegen aan Microsoft Intune](web-app.md) voor meer informatie over het app-type **Webkoppeling**.
+
+#### <a name="macos-support-for-vpp-apps----3173501----"></a>macOS-ondersteuning voor VPP-apps <!-- 3173501  -->
+macOS-apps, gekocht met Apple Business Manager, worden in de console weergegeven wanneer Apple VPP-tokens worden gesynchroniseerd in Intune. Met de Intune-console kunt u op apparaten en gebruikers gebaseerde licenties voor groepen toewijzen, intrekken en opnieuw toewijzen. Microsoft Intune maakt het makkelijker om VPP-apps te beheren die voor gebruik in uw bedrijf zijn gekocht door:
+- Licentiegegevens rapporteren vanuit de App Store.
+- Bijhouden hoeveel van de licenties u hebt gebruikt.
+- Niet meer exemplaren van de app installeren dan waar u recht op hebt.
+
+Voor meer informatie over Intune en VPP raadpleegt u [Apps en boeken met Microsoft Intune beheren die via het Volume Purchase Program zijn gekocht](vpp-apps.md).
+
 ## <a name="week-of-september-9-2019"></a>Week van 9 september 2019
 
 ### <a name="app-management"></a>Appbeheer
@@ -64,6 +79,10 @@ De Microsoft Intune-app voor Android is bijgewerkt met de volgende verbeteringen
 - Er is een extra pagina toegevoegd waarop het gebruikersprofiel wordt weergegeven.
 - Er is een weergave van meldingen toegevoegd waarvoor de gebruiker handelingen moet verrichten, zoals wanneer apparaatinstellingen moeten worden bijgewerkt.
 - Er is een weergave van aangepaste pushmeldingen toegevoegd. Dit is in lijn met de ondersteuning die recent is toegevoegd in de bedrijfsportal-apps voor iOS en Android. Zie [Aangepaste meldingen verzenden in Intune](custom-notifications.md) voor meer informatie.
+
+#### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993---"></a>Voor iOS-apparaten past u het privacyvenster voor het inschrijvingsproces van de Bedrijfsportal aan <!-- 4394993 -->
+Met behulp van Markdown kunt u het privacyvenster van de Bedrijfsportal aanpassen dat eindgebruikers te zien krijgen tijdens de iOS-registratie. U kunt met name de lijst met dingen aanpassen die uw organisatie niet op het apparaat kan zien of doen. Zie [De app Intune-bedrijfsportal configureren](company-portal-app.md#privacy-statement-customization) voor meer informatie.
+
 
 ## <a name="week-of-september-2-2019"></a>Week van 2 september 2019
 
@@ -228,7 +247,7 @@ U kunt Device Enrollment Program-profielen instellen om de volgende schermen van
 Zie [Een Apple-inschrijvingsprofiel maken voor iOS ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) en [Een Apple-inschrijvingsprofiel maken voor macOS ](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile) voor meer informatie over het aanpassen van de Configuratieassistent.
 
 #### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>Een gebruikerskolom toevoegen aan het CSV-uploadproces van het Autopilot-apparaat <!-- 3823054 -->
-U kunt nu een gebruikerskolom toevoegen aan de CSV-upload voor Autopilot-apparaten. Zo kunt u gebruikers bulksgewijs toewijzen op het moment dat u het CSV-bestand importeert. De nieuwe indeling voor de rijen in het CSV-bestand ziet er als volgt uit: serienummer, Windows-product-id, hardware-hash, optionele-groep-tag, optioneel toegewezen gebruiker. Zie [Windows-apparaten in Intune inschrijven met Windows Autopilot](enrollment-autopilot.md) voor meer informatie.
+U kunt nu een gebruikerskolom toevoegen aan de CSV-upload voor Autopilot-apparaten. Zo kunt u gebruikers bulksgewijs toewijzen op het moment dat u het CSV-bestand importeert. Zie [Windows-apparaten in Intune inschrijven met Windows Autopilot](enrollment-autopilot.md) voor meer informatie.
 
 
 ### <a name="device-management"></a>Apparaatbeheer

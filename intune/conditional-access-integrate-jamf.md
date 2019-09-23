@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: b439067d06cf49a4ff83288e109d1fccd3801106
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251080"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012515"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Jamf Pro integreren met Intune in verband met nalevingsbeleid
 
@@ -38,13 +38,13 @@ U hebt het volgende nodig om voorwaardelijke toegang met Jamf Pro te configurere
 - [Bedrijfsportal-app voor macOS ](https://aka.ms/macoscompanyportal)
 - macOS-apparaten met OS X 10.11 Yosemite of hoger
 
-## <a name="connecting-intune-to-jamf-pro"></a>Verbinding van Intune met Jamf Pro
+## <a name="connect-intune-to-jamf-pro"></a>Intune koppelen met Jamf Pro
 
-U kunt Intune als volgt verbinden met Jamf Pro:
+Om Intune te verbinden met Jamf Pro:
 
-1. Een nieuwe toepassing maken in Azure
-2. Intune instellen op integratie met Jamf Pro
-3. Voorwaardelijke toegang in Jamf Pro configureren
+1. Maak een nieuwe toepassing in Azure.
+2. Schakel Intune-integratie met Jamf Pro in.
+3. Configureer voorwaardelijke toegang in Jamf Pro.
 
 ## <a name="create-an-application-in-azure-active-directory"></a>Een toepassing maken in Azure Active Directory
 
@@ -55,7 +55,7 @@ U kunt Intune als volgt verbinden met Jamf Pro:
    - Selecteer **Accounts in een organisatieadreslijst** bij **Ondersteunde accounttypen**. 
    - Laat bij **Omleidings-URI** de standaardwaarde Web staan en geef vervolgens de URL voor uw exemplaar van Jamf Pro op.  
 
-3. Selecteer **Registreren** om de toepassing te maken en om de pagina Overzicht voor de nieuwe app te openen.  
+3. Selecteer **Registreren** om de toepassing te maken en om de pagina **Overzicht** voor de nieuwe app te openen.  
 
 4. Kopieer op de pagina **Overzicht** de waarde van **Toepassings-id (client-id)** en noteer de waarde voor later gebruik. U hebt deze waarde in latere procedures nodig.  
 
@@ -64,13 +64,13 @@ U kunt Intune als volgt verbinden met Jamf Pro:
    > [!IMPORTANT]  
    > Voordat u deze pagina verlaat, moet u de waarde voor het clientgeheim kopiëren en bewaren voor later gebruik. U hebt deze waarde in latere procedures nodig. Deze waarde kunt u niet meer weergeven, alleen door de app opnieuw te registreren.  
 
-6. Selecteer **API-machtigingen** onder Beheren.  Selecteer de bestaande machtigingen en selecteer vervolgens **Machtigingen verwijderen** om deze machtigingen te verwijderen. De bestaande machtigingen moeten allemaal worden verwijderd omdat u een nieuwe machtiging toevoegt en de toepassing alleen werkt als deze ene vereiste machtiging is toegekend.  
+6. Selecteer **API-machtigingen** onder **Beheren**. Selecteer de bestaande machtigingen en selecteer vervolgens **Machtigingen verwijderen** om deze machtigingen te verwijderen. De bestaande machtigingen moeten allemaal worden verwijderd omdat u een nieuwe machtiging toevoegt en de toepassing alleen werkt als deze ene vereiste machtiging is toegekend.  
 
 7. Als u een nieuwe machtiging wilt toewijzen, selecteert u **Een machtiging toevoegen**. Selecteer op de pagina **API-machtigingen aanvragen** de optie **Intune** en selecteer vervolgens **Toepassingsmachtigingen**. Schakel alleen het selectievakje voor **update_device_attributes** in.  
 
    Selecteer **Machtiging toevoegen** om deze configuratie op te slaan.  
 
-8. Selecteer op de pagina **API-machtigingen** de optie **Beheerder toestemming geven voor Microsoft** en selecteer vervolgens Ja.  
+8. Selecteer op de pagina **API-machtigingen** de optie **Beheerder toestemming geven voor Microsoft** en selecteer vervolgens **Ja**.  
 
    Het registratieproces voor de app in Azure AD is voltooid.
 
@@ -88,9 +88,9 @@ U kunt Intune als volgt verbinden met Jamf Pro:
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Microsoft Intune-integratie in Jamf Pro configureren
 
-1. Navigeer in Jamf Pro naar **Global Management** > **Conditional Access**. Klik op de knop **Edit** op het tabblad **Microsoft Intune Integration**.
+1. Navigeer in Jamf Pro naar **Global Management** > **Conditional Access**. Klik op de knop **Edit** op het tabblad **macOS Intune Integration**.
 
-2. Schakel het selectievakje voor **Enable Microsoft Intune Integration** in.
+2. Schakel het selectievakje voor **Enable Intune Integration for macOS** in.
 
 3. Geef de vereiste gegevens op van uw Azure-tenant, met inbegrip van **Location**, **Domain name**, plus de **Application ID** en de waarde voor het clientgeheim (*client secret*) dat u hebt opgeslagen bij het maken van de app in Azure AD.  
 
@@ -100,7 +100,17 @@ U kunt Intune als volgt verbinden met Jamf Pro:
 
 Nadat u de integratie tussen Intune en Jamf hebt geconfigureerd, moet u [nalevingsbeleid toepassen op door Jamf beheerde apparaten](conditional-access-assign-jamf.md).
 
+## <a name="disconnect-jamf-pro-and-intune"></a>Verbinding tussen Jamf Pro en Intune verbreken 
 
+Als u Jamf Pro niet meer gebruikt om Macs in uw organisatie te beheren en wilt dat gebruikers worden beheerd door Intune, moet u de verbinding tussen Jamf Pro en Intune verwijderen. Verwijder de verbinding met behulp van de Jamf Pro-console. 
+
+1. Ga in Jamf Pro naar **Global Management** > **Conditional Access**. Selecteer op het tabblad **macOS Intune Integration** de optie **Edit**.
+2. Schakel het selectievakje **Enable Intune Integration for macOS** uit.
+3. Selecteer **Opslaan**. Jamf Pro stuurt uw configuratie naar Intune en de integratie wordt beëindigd.
+4. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Ga naar **Microsoft Intune** > **Apparaatnaleving** >  **Beheer van partnerapparaten** en controleer of de status nu **Beëindigd** is. 
+
+   > [!NOTE]
+   > De Mac-apparaten in uw organisatie worden verwijderd op de datum (3 maanden) die wordt weergegeven in uw console. 
 
 ## <a name="next-steps"></a>Volgende stappen
 

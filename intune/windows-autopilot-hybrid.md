@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
-ms.reviewer: damionw
+ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 399b0c6065c51343e4802d4e8aec29381c6dc468
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 0bf683aebee50b4f2172f11ce205a910a47d0845
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68861857"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071151"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Apparaten die aan hybride Azure AD zijn gekoppeld implementeren met Intune en Windows Autopilot
 U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn gekoppeld aan Hybrid Azure Active Directory (Azure AD). Volg hiervoor de stappen in dit artikel.
@@ -106,14 +106,14 @@ De organisatie-eenheid waaraan het recht is verleend om computers te maken, moet
 
 De Intune-connector voor Active Directory moet worden geïnstalleerd op een computer waarop Windows Server 2016 of later wordt uitgevoerd. De computer moet ook toegang hebben tot internet en uw Active Directory. Als u de schaal en beschikbaarheid wilt verhogen of meerdere Active Directory-domeinen wilt ondersteunen, kunt u in uw omgeving meerdere connectors installeren. Het is raadzaam om de connector te installeren op een server waarop geen andere Intune-connectors worden uitgevoerd.
 
-1. Selecteer [Intune](https://aka.ms/intuneportal) **Apparaatregistratie** > **Windows-registratie** > **Intune-connector voor Active Directory (preview-versie)**  > **Connector toevoegen**. 
+1. Selecteer [Intune](https://aka.ms/intuneportal) **Apparaatregistratie** > **Windows-registratie** > **Intune-connector voor Active Directory** > **Toevoegen**. 
 2. Volg de instructies voor het downloaden van de connector.
 3. Open het gedownloade installatiebestand *ODJConnectorBootstrapper.exe* voor de connector om deze te installeren.
 4. Aan het einde van de installatie selecteert u **Configureren**.
 5. Selecteer **Aanmelden.**
 6. Voer de referenties in voor de rol gebruiker, globale beheerder of Intune-beheerder.  
    Aan het gebruikersaccount moet een Intune-licentie zijn toegewezen.
-7. Ga naar **Apparaatregistratie** > **Windows-registratie** > **Intune-connector voor Active Directory (preview)** en controleer of de status **Actief** is.
+7. Ga naar **Apparaatregistratie** > **Windows-registratie** > **Intune-connector voor Active Directory** en controleer of de status **Actief** is.
 
 > [!NOTE]
 > Nadat u zich bij de Connector hebt aangemeld, kan het een aantal minuten duren voordat deze in [Intune](https://aka.ms/intuneportal) wordt weergegeven. De connector wordt alleen weergegeven als deze met de Intune-service kan communiceren.
@@ -183,14 +183,17 @@ Nadat uw Autopilot-apparaten zijn geregistreerd, worden hun namen de hostnaam va
 Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren.
 
 1. Selecteer in [Intune](https://aka.ms/intuneportal) de optie **Apparaatregistratie** > **Windows-registratie** > **Apparaatprofielen** > **Profiel maken**.
-1. Typ een **naam** en (optioneel) een **beschrijving**.
-1. Als **implementatiemodus** selecteert u **Op basis van gebruiker**.
-1. Selecteer in het vak **Toevoegen aan Azure AD als** de optie **Gekoppeld aan Hybrid Azure AD (preview)** .
-1. Selecteer **Out-Of-Box Experience (OOBE)** , configureer de gewenste opties en selecteer vervolgens **Opslaan**.
-1. Selecteer **Maken** om het profiel te maken. 
-1. In het profieldeelvenster selecteert u **Toewijzingen**.
-1. Selecteer **Groepen selecteren**.
-1. In het deelvenster **Groepen selecteren** selecteert u de apparaatgroep. Klik vervolgens op **Selecteren**.
+2. Geef op de pagina **Basisinformatie** een waarde op voor **Naam** en eventueel ook voor **Beschrijving**.
+3. Als u wilt dat alle apparaten in de toegewezen groepen automatisch converteren naar Autopilot, stelt u **Alle doelapparaten converteren naar Autopilot** in op **Ja**. Alle niet-Autopilot-apparaten in toegewezen groepen worden geregistreerd met de Autopilot-implementatieservice. Het kan 48 uur duren voordat de registratie is verwerkt. Wanneer het apparaat wordt uitgeschreven en opnieuw wordt ingesteld, wordt het door Autopilot geregistreerd. Nadat een apparaat op deze manier is geregistreerd, wordt het apparaat niet meer uit de Autopilot-implementatieservice verwijderd door deze optie uit te schakelen of de profieltoewijzing te verwijderen. In plaats daarvan moet u [het apparaat rechtstreeks verwijderen](enrollment-autopilot.md#delete-autopilot-devices).
+4. Selecteer **Volgende**.
+5. Ga op de pagina **Out-Of-Box Experience (OOBE)** naar **Implementatiemodus** en selecteer **Op basis van gebruiker**.
+6. Selecteer in het vak **Toevoegen aan Azure AD als** de optie **Gekoppeld aan Hybrid Azure AD**.
+7. Configureer zo nodig de resterende opties op de pagina **Out-Of-Box Experience (OOBE)** .
+8. Selecteer **Volgende**.
+9. Selecteer op de pagina **Scope-tags** de [scope-tags](scope-tags.md) voor dit profiel.
+10. Selecteer **Volgende**.
+11. Selecteer op de pagina **Toewijzingen** de optie **Groepen selecteren die u wilt toevoegen** > zoek de apparaatgroep en selecteer deze > **Selecteren**.
+12. Selecteer **Volgende** > **Maken**.
 
 Het duurt ongeveer 15 minuten voordat de status van het apparaatprofiel is gewijzigd van *Niet toegewezen* in *Toewijzen* en tot slot in *Toegewezen*.
 

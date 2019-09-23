@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230f226cba70a7fc61efd236cc0fde0ca6b7fa68
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: cbf2031a316b1f7c2e22d165363cca12cfd70291
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374922"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061580"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-scripts op Windows 10-apparaten gebruiken in Intune
 
@@ -181,7 +181,7 @@ Als u wilt zien of het apparaat automatisch wordt ingeschreven, kunt u het volge
 - Controleer de logboeken op fouten. Raadpleeg [Intune-beheeruitbreidingslogboeken](#intune-management-extension-logs) (in dit artikel).
 - Als u wilt weten of er problemen zijn met machtigingen, controleert u of de eigenschappen van het PowerShell-script zijn ingesteld op `Run this script using the logged on credentials`. Controleer ook of de aangemelde gebruiker de juiste machtigingen heeft om het script uit te voeren.
 
-- Doe het volgende om scriptproblemen te isoleren:
+- Om scriptproblemen te isoleren, kunt u:
 
   - Controleer de configuratie van PowerShell-uitvoering op uw apparaten. Zie het [PowerShell-uitvoeringsbeleid](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) voor hulp.
   - Voer een voorbeeldscript uit via de Intune-beheeruitbreiding. Maak bijvoorbeeld een map `C:\Scripts` en geef iedereen volledig beheer voor die map. Voer het volgende script uit:
@@ -194,7 +194,31 @@ Als u wilt zien of het apparaat automatisch wordt ingeschreven, kunt u het volge
 
   - Als u de uitvoering van het script wilt testen zonder Intune, voert u de scripts lokaal in het systeemaccount uit met behulp van het hulpprogramma [psexec](https://docs.microsoft.com/sysinternals/downloads/psexec):
 
-    `psexec -i -s`
+    `psexec -i -s`  
+    
+  - Als het script rapporteert dat het is geslaagd, maar het niet geslaagd is, is het mogelijk dat uw antivirusservice AgentExecutor in een sandbox plaatst. Het volgende script meldt altijd een fout in Intune. Als test kunt u dit script gebruiken:
+  
+    ```powershell
+    Write-Error -Message "Forced Fail" -Category OperationStopped
+    mkdir "c:\temp" 
+    echo "Forced Fail" | out-file c:\temp\Fail.txt
+    ```
+
+    Als het script een succes rapporteert, raadpleegt u `AgentExecutor.log` om de uitvoer van de fout te bekijken. Als het script wordt uitgevoerd, moet de lengte >2 zijn.
+
+  - Als u de .ERROR- en .OUTPUT-bestanden wilt vastleggen, kunt u met het volgende codefragment het script via AgentExecutor uitvoeren naar PSx86 (`C:\Windows\SysWOW64\WindowsPowerShell\v1.0`). De logboeken worden dan bewaard, zodat u deze kunt bekijken. Houd er rekening mee dat de Intune Management Extension de logboeken opschoont nadat het script is uitgevoerd:
+  
+    ```powershell
+    $scriptPath = read-host "Enter the path to the script file to execute"
+    $logFolder = read-host "Enter the path to a folder to output the logs to"
+    $outputPath = $logFolder+"\output.output"
+    $errorPath =  $logFolder+"\error.error"
+    $timeoutPath =  $logFolder+"\timeout.timeout"
+    $timeoutVal = 60000 
+    $PSFolder = "C:\Windows\SysWOW64\WindowsPowerShell\v1.0"
+    $AgentExec = "C:\Program Files (x86)\Microsoft Intune Management Extension\agentexecutor.exe"
+    &$AgentExec -powershell  $scriptPath $outputPath $errorPath $timeoutPath $timeoutVal $PSFolder 0 0
+    ```
 
 ## <a name="next-steps"></a>Volgende stappen
 
