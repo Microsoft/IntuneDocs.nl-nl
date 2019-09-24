@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,21 +18,20 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 690fb81350c0c264677c6c75b8942e9cdcd4e8f0
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546808"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163362"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>De wachtwoordcode van uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
-Als u de pincode of het wachtwoord van uw apparaat bent vergeten, kunt u de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) gebruiken om de pincode of het wachtwoord opnieuw in te stellen.  
+Als u de pincode of het wachtwoord van uw apparaat bent vergeten, kunt u de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) gebruiken om de pincode of het wachtwoord opnieuw in te stellen. 
 
-Als u een apparaat in bedrijfseigendom gebruikt, ziet u misschien niet de optie voor het opnieuw instellen van de wachtwoordcode van uw apparaat. Neem contact op met het ondersteuningsteam van het bedrijf om de wachtwoordcode opnieuw in te stellen.
+De optie wachtwoord code opnieuw instellen wordt mogelijk niet weer gegeven voor een apparaat dat is inge schreven bij het bedrijf. Neem in dit geval contact op met het ondersteunings team van het bedrijf zodat het voor u opnieuw wordt ingesteld.  
 
-   > [!NOTE]
-   > Het is niet mogelijk om wachtwoordcodes voor apparaten met Android 7.0 en hoger opnieuw in te stellen. Als u uw wachtwoordcode vergeet, moet u de fabrieksinstellingen van het apparaat herstellen. 
+Wachtwoord code opnieuw instellen is niet beschikbaar voor apparaten met Android 7,0 en hoger. Als u uw wachtwoord code op een van deze apparaten vergeet, moet u deze opnieuw instellen op de fabrieks instellingen.  
 
 ## <a name="reset-your-passcode"></a>Uw wachtwoordcode opnieuw instellen
 
@@ -40,13 +39,13 @@ Als u een apparaat in bedrijfseigendom gebruikt, ziet u misschien niet de optie 
 
 2. Selecteer het apparaat waarvoor de wachtwoordcode opnieuw moet worden ingesteld.  
 
-    ![Een schermafbeelding van de pagina Apparaten, met 2 tegels met niet-geïdentificeerde apparaten met een algemene naam. Direct onder de apparaten wordt een grijze banner weergegeven. Er wordt gevraagd welk apparaat de gebruiker gebruikt of dat de gebruiker een nieuw apparaat wil toevoegen.](./media/rename-reset-device-step2-1808.png) 
+    ![Een schermafbeelding van de pagina Apparaten, met twee tegels met niet-geïdentificeerde apparaten met een algemene naam. Direct onder de apparaten wordt een grijze banner weergegeven. Er wordt gevraagd welk apparaat de gebruiker gebruikt of dat de gebruiker een nieuw apparaat wil toevoegen.](./media/rename-reset-device-step2-1808.png) 
 
 3. Selecteer **Wachtwoordcode opnieuw instellen**. Als de optie wachtwoordcode niet worden weergegeven aan de bovenkant van de pagina, selecteert u **Meer (...)**   >  **Wachtwoordcode opnieuw instellen**.   
 
    ![De pagina met apparaatgegevens van een geselecteerd apparaat op de bedrijfsportalwebsite, met een lijst met bovenaan koppelingen als Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/rename-reset-device-1808.png)   
 
-    ![Weergave door in te zoomen op het pictogram Meer, gemarkeerd met een rode pijl.](./media/rename-reset-device-step3-more-1808.png)  
+    ![Schermopname van het pictogram Meer, gemarkeerd met een rode pijl.](./media/rename-reset-device-step3-more-1808.png)  
 
 4. Klik desgevraagd op **Afmelden**. Wanneer u opnieuw wordt gevraagd, meldt u zich weer aan. U moet zich binnen vijf minuten opnieuw aanmelden bij de bedrijfsportalwebsite, anders wordt de wachtwoordcode niet opnieuw ingesteld door de bedrijfsportal-app.  
 
@@ -76,7 +75,7 @@ Deze sectie beschrijft het opnieuw instellen van de wachtwoordcode en het gedrag
 
 **Android**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers.
 
-**iOS**: de bestaande wachtwoordcode wordt verwijderd en er wordt geen tijdelijke wachtwoordcode gemaakt. Als u de Touch ID-vingerafdrukscanner gebruikt voor het openen van uw apparaat of om aankopen te doen, moet u deze opnieuw instellen.  
+**iOS**: de bestaande wachtwoordcode wordt verwijderd en er wordt geen tijdelijke wachtwoordcode gemaakt. Als u touch ID gebruikt om uw apparaat te openen of aankopen te doen, moet u het opnieuw instellen.  
 
 **Windows 10 Mobile**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers. Als deze is ingesteld, zal Windows Hello-gezichtsherkenning nog steeds met het apparaat werken.
 

@@ -18,31 +18,33 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: 9066fefccde39ccac281f3bda9008168ea28b77f
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783024"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166619"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Het door uw organisatie verstrekte iOS-apparaat voor beheer inschrijven
 
 Ontdek hoe u uw nieuwe macOS-apparaat kunt laten beheren in Intune.  
 
-Apparaten die aan u worden verstrekt door uw werk of school zijn vaak geconfigureerd voordat u ze hebt ontvangen. Uw organisatie verzendt vooraf geconfigureerde instellingen naar uw apparaat wanneer u het inschakelt en u zich voor de eerste keer aanmeldt. Nadat de installatie op het apparaat is voltooid, krijgt u toegang tot uw werk- of schoolresources. 
+Apparaten die aan u worden verstrekt door uw werk of school zijn vaak geconfigureerd voordat u ze hebt ontvangen. Uw organisatie verzendt vooraf geconfigureerde instellingen naar uw apparaat wanneer u het inschakelt en u zich voor de eerste keer aanmeldt. Nadat de installatie op het apparaat is voltooid, krijgt u toegang tot uw werk- of schoolresources.
 
-U kunt beheer instellen door uw apparaat in te schakelen en u aan te melden met de referenties van uw werk- of schoolaccount. In de rest van dit artikel worden de stappen en de schermen beschreven die u ziet terwijl u de configuratieassistent uitvoert.   
+U kunt beheer instellen door uw apparaat in te schakelen en u aan te melden met de referenties van uw werk- of schoolaccount. In de rest van dit artikel worden de stappen en de schermen beschreven die u ziet terwijl u de configuratieassistent uitvoert.
 
 ## <a name="what-is-apple-dep"></a>Wat is Apple DEP?
-Uw organisatie heeft mogelijk hun apparaten aangeschaft via een programma met de naam *Apple Device Enrollment Program* (DEP). Organisaties kopen grote hoeveelheden iOS- of macOS-apparaten via Apple DEP. Organisaties kunnen die apparaten vervolgens configureren en beheren in hun favoriete provider voor mobiele apparaatbeheer, zoals Intune. Zie [macOS-apparaten automatisch inschrijven met Apple Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos) als u beheerder bent en informatie wilt over Apple DEP.  
 
-## <a name="get-your-device-managed"></a>Uw apparaat laten beheren 
+Uw organisatie heeft mogelijk hun apparaten aangeschaft via een programma met de naam *Apple Device Enrollment Program* (DEP). Organisaties kopen grote hoeveelheden iOS- of macOS-apparaten via Apple DEP. Organisaties kunnen die apparaten vervolgens configureren en beheren in hun favoriete provider voor mobiele apparaatbeheer, zoals Intune. Zie [macOS-apparaten automatisch inschrijven met Apple Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos.md) als u beheerder bent en informatie wilt over Apple DEP.  
+
+## <a name="get-your-device-managed"></a>Uw apparaat laten beheren
+
 Voer de volgende stappen uit om uw macOS-apparaat voor beheer in te schrijven. Als u uw eigen apparaat gebruikt in plaats van een door de organisatie verstrekt apparaat, volgt u de stappen voor [persoonlijke en bring-your-own-apparaten](enroll-your-device-in-intune-macos-cp.md).  
 
-1. Schakel uw macOS-apparaat in. 
+1. Schakel uw macOS-apparaat in.
 2. Kies uw land of regio en klik op **Doorgaan**.  
 
-   ![Schermafbeelding van het welkomstscherm van de configuratieassistent op het macOS-apparaat waarop een lijst met selecteerbare talen wordt weergegeven.](./media/macos-dep-welcome-1808.png)   
+   ![Schermafbeelding van het welkomstscherm van de configuratieassistent op het macOS-apparaat waarop een lijst met selecteerbare talen wordt weergegeven.](./media/macos-dep-welcome-1808.png)
 3. Kies een toetsenbordindeling. De lijst bevat een of meer opties op basis van het geselecteerde land of de geselecteerde regio. Als u alle indelingsopties wilt weergeven, ongeacht het geselecteerde land of de geselecteerde regio, klikt u op **Alles weergeven**. Wanneer u klaar bent, klikt u op **Doorgaan**.  
 
    ![Schermafbeelding van het scherm voor de toetsenbordindeling van de configuratieassistent op het macOS-apparaat waarop een lijst met selecteerbare toetsenbordtalen wordt weergegeven, een uitgeschakelde optie Alles weergeven en de knoppen Vorige en Doorgaan.](./media/macos-dep-keyboard-1808.png)  
@@ -62,14 +64,17 @@ Voer de volgende stappen uit om uw macOS-apparaat voor beheer in te schrijven. A
     * Een computeraccount maken
     * Een snelle installatie doorlopen
     * Uw Mac instellen  
-## <a name="get-the-company-portal-app"></a>De Bedrijfsportal-app downloaden      
-Download de Intune-bedrijfsportal-app voor macOS op uw apparaat. U kunt met de app uw apparaat controleren, synchroniseren, toevoegen aan en verwijderen uit beheer en apps installeren. In deze stappen wordt ook beschreven hoe u uw apparaat bij de bedrijfsportal registreert.  
-1. Ga op uw macOS-apparaat naar https://portal.manage.microsoft.com/EnrollmentRedirect.aspx.
+
+## <a name="get-the-company-portal-app"></a>De Bedrijfsportal-app downloaden
+
+Download de Intune-bedrijfsportal-app voor macOS op uw apparaat. U kunt met de app uw apparaat controleren, synchroniseren, toevoegen aan en verwijderen uit beheer en apps installeren. In deze stappen wordt ook beschreven hoe u uw apparaat bij de bedrijfsportal registreert.
+
+1. Ga op uw macOS-apparaat naar [https://portal.manage.microsoft.com/EnrollmentRedirect.aspx](https://portal.manage.microsoft.com/EnrollmentRedirect.aspx).
 2. Meld u aan bij de bedrijfsportalwebsite met uw werk- of schoolaccount. 
 3. Klik op **De app downloaden** om het installatieprogramma voor de bedrijfsportal voor macOS te downloaden.
 4. Wanneer u hierom wordt gevraagd, opent u het .pkg-bestand en voltooit u de installatiestappen.
-4. Open de bedrijfsportal-app en meld u aan met het account van uw werk of school.
-5. Zoek uw apparaat en klik op **Registreren**.
-6. Klik op **Doorgaan** > **Gereed**. Uw apparaat moet nu worden weergegeven in de bedrijfsportal-app als een zakelijk apparaat dat aan de vereisten voldoet.
+5. Open de bedrijfsportal-app en meld u aan met het account van uw werk of school.
+6. Zoek uw apparaat en klik op **Registreren**.
+7. Klik op **Doorgaan** > **Gereed**. Uw apparaat moet nu worden weergegeven in de bedrijfsportal-app als een zakelijk apparaat dat aan de vereisten voldoet.
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

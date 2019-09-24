@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90865b8a8881ab85089fb379a8398e276574b771
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 2fb82b02057e1e028755da16a05755b0b8ddb93a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550037"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163806"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken voor gedistribueerde IT
 
@@ -35,10 +35,10 @@ Laten we bijvoorbeeld zeggen dat een beheerder van het regionale kantoor in Seat
 3. Voeg de bereiktag Seattle toe aan beleidsregels en profielen waartoe beheerders in Leden (Groepen) toegang moeten hebben.
 4. Voeg de bereiktag Seattle toe aan apparaten die zichtbaar moeten zijn voor beheerders in Leden (Groepen). 
 
-## <a name="default-scope-tag"></a>Label voor standaard bereik
+## <a name="default-scope-tag"></a>Standaardbereiktag
 De standaard bereik code wordt automatisch toegevoegd aan alle niet-gelabelde objecten die ondersteuning bieden voor bereik Tags.
 
-De standaard functie voor het bereik van de scope is vergelijkbaar met de functie beveiligingsbereiken in System Center Configuration Manager. 
+Deze functie voor standaardbereiktags is vergelijkbaar met de functie voor beveiligingsbereiken in System Center Configuration Manager. 
 
 ## <a name="to-create-a-scope-tag"></a>Een bereiktag maken
 
@@ -101,7 +101,6 @@ Wanneer u met bereiktags werkt, moet u deze details onthouden:
     - Apparaatcategorieën
     - Registratiebeperkingen
     - Corp-apparaat-Id's
-    - Voorwaarden
     - Auto Pilot-apparaten
     - Locaties voor apparaatcompatibiliteit
     - Jamf-apparaten

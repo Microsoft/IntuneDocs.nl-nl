@@ -60,7 +60,7 @@
 ##### [Zimperium zIPS gebruiken](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
 ## [Uw iOS-apparaat gebruiken](using-your-iOS-device-with-intune.md)
-### [Wat gebeurt er wanneer u een iOS-apparaat registreert?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### [Gevolgen van het opnieuw instellen van iOS-apparaten](effects-of-device-reset-company-portal-ios.md)
 ### [De bedrijfsportal-app installeren en u hierbij aanmelden](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS-apparaten inschrijven](enroll-your-device-in-intune-ios.md)
 ### [Het door uw organisatie verstrekte iOS-apparaat inschrijven](enroll-your-device-dep-ios.md)

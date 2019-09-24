@@ -321,30 +321,33 @@
           href: device-profiles.md
         - name: Een profiel maken
           href: device-profile-create.md
-        - name: Beheersjablonen
+        - name: Beheersjablonen in Windows
           href: administrative-templates-windows.md
-        - name: Apparaatfuncties
+          displayName: 'group policy, gpo, admx'
+        - name: Apparaatfuncties in iOS en macOS
           href: device-features-configure.md
         - name: Apparaatinstellingen en functies beperken
           href: device-restrictions-configure.md
           displayName: Device restrictions
-        - name: Updates leveren
+        - name: Updates
           href: delivery-optimization-windows.md
-          displayName: delivery optimization; updates
+          displayName: delivery optimization; Windows update
         - name: Upgrade-edities en S-modus
           href: edition-upgrade-configure-windows-10.md
-        - name: E-mailinstellingen configureren
+        - name: E-mail
           href: email-settings-configure.md
-        - name: Kioskmodus inschakelen
+        - name: Kiosken en toegewezen apparaten
           href: kiosk-settings.md
-        - name: Een VPN-verbinding toevoegen
+        - name: Gedeelde apparaten voor meerdere gebruikers
+          href: shared-user-device-settings.md
+        - name: VPN
           href: vpn-settings-configure.md
           items:
             - name: VPN per app voor Android
               href: android-pulse-secure-per-app-vpn.md
             - name: VPN per app voor iOS
               href: vpn-setting-configure-per-app.md
-        - name: Een draadloos Wi-Fi-netwerk toevoegen
+        - name: Wi-Fi-netwerk
           href: wi-fi-settings-configure.md
           displayName: wifi
           items:
@@ -354,8 +357,6 @@
           href: kernel-extensions-overview-macos.md
         - name: Education - Toets maken-app
           href: education-settings-configure.md
-        - name: Gedeelde apparaten voor meerdere gebruikers
-          href: shared-user-device-settings.md
         - name: Mobility-extensies op Zebra-apparaten
           href: android-zebra-mx-overview.md
           displayName: mx
@@ -594,6 +595,8 @@
                   href: app-sideload-windows.md
                 - name: macOS LOB-apps
                   href: lob-apps-macos.md
+            - name: Android Enterprise-systeem-apps
+              href: apps-ae-system.md
             - name: Win32-app-beheer
               href: apps-win32-app-management.md
             - name: PowerShell-scripts
@@ -623,12 +626,24 @@
               href: app-configuration-policies-use-ios.md
             - name: Android beheerde apparaten
               href: app-configuration-policies-use-android.md
-            - name: Het beheerde startscherm configureren
-              href: app-configuration-managed-home-screen-app.md
-            - name: Managed apps
+            - name: Beheerde apps zonder inschrijving configureren
               href: app-configuration-policies-managed-app.md
             - name: Inrichtingsprofielen voor iOS-apps gebruiken
               href: app-provisioning-profile-ios.md
+            - name: Specifieke apps configureren
+              items:
+                - name: Het beheerde startscherm configureren
+                  href: app-configuration-managed-home-screen-app.md
+                - name: De bedrijfsportal configureren
+                  href: company-portal-app.md
+                - name: Managed Browser configureren
+                  href: app-configuration-managed-browser.md
+                - name: Microsoft Launcher configureren
+                  href: configure-microsoft-launcher.md
+                - name: Microsoft Edge configureren
+                  href: manage-microsoft-edge.md
+                - name: Outlook configureren
+                  href: app-configuration-policies-outlook.md
             - name: Apps en boeken die zijn gekocht via het volume-aankoopprogramma
               items:
                 - name: VPP-apps en -boeken beheren
@@ -640,14 +655,6 @@
                   href: windows-store-for-business.md
                 - name: iOS eBooks
                   href: vpp-ebooks-ios.md
-            - name: De bedrijfsportal configureren
-              href: company-portal-app.md
-            - name: Managed Browser configureren
-              href: app-configuration-managed-browser.md
-            - name: Microsoft Edge configureren
-              href: manage-microsoft-edge.md
-            - name: Outlook configureren
-              href: app-configuration-policies-outlook.md
         - name: Apps beveiligen
           items:
             - name: Selectief wissen van apps
