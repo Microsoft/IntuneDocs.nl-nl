@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 972f58da34c73253c85f4ca6183ad6fd4ce4c2e7
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882885"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167845"
 ---
 # <a name="microsoft-intune-service-description"></a>Beschrijving van de Microsoft Intune-service
 
@@ -33,7 +33,7 @@ Intune is een cloudgebaseerde service voor het beheer van bedrijfsmobiliteit (En
 
 Intune is nauw geïntegreerd met Azure Active Directory (Azure AD) voor identiteits- en toegangsbeheer en met Azure Information Protection voor gegevensbeveiliging. U kunt Intune ook integreren met System Center Configuration Manager en zo de beheermogelijkheden uitbreiden.
 
-Raadpleeg de [Intune-documentatie](https://docs.microsoft.com/intune/) voor meer informatie over hoe u apparaten en apps kunt beheren, en bedrijfsgegevens kunt beveiligen met Intune.
+Raadpleeg de [Intune-documentatie](index.yml) voor meer informatie over hoe u apparaten en apps kunt beheren, en bedrijfsgegevens kunt beveiligen met Intune.
 
 ## <a name="30-day-free-trial"></a>Gratis proefversie van 30 dagen
 U kunt 30 dagen lang een gratis proefversie van Intune met 100 gebruikerslicenties gebruiken. [Ga naar de registratiepagina van Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) om aan de slag te gaan met uw gratis proefabonnement. Als uw organisatie een Enterprise Agreement of equivalente volumelicentieovereenkomst heeft, neemt u contact op met uw Microsoft-vertegenwoordiger om uw gratis proefabonnement in te stellen.

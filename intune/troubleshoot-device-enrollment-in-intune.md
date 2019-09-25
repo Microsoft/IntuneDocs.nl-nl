@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 23b3e8df9b3d5bafb567b6795b08d4be32aa8c88
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375239"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167819"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Problemen bij de apparaatinschrijving in Microsoft Intune oplossen
 
@@ -447,7 +447,7 @@ U vindt een lijst met iOS-inschrijvingsfouten in onze documentatie in [Troublesh
 
 |Foutbericht|Probleem|Oplossing|
 |---|---|---|
-|**De IT-beheerder moet een licentie toewijzen voor toegang**<br>Uw IT-beheerder heeft u geen toegang verleend om deze app te gebruiken. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|Het apparaat kan niet worden ingeschreven omdat het account van de gebruiker niet de benodigde licentie heeft.|Voordat gebruikers hun apparaat kunnen inschrijven, moet de benodigde licentie aan hen zijn toegewezen. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de Mobile Device Management-instantie. Ze krijgen deze fout bijvoorbeeld te zien als aan de twee volgende voorwaarden wordt voldaan: <ol><li>Intune is ingesteld als Mobile Device Management-instantie</li><li>De gebruiker gebruikt een System Center 2012 R2 Configuration Manager-licentie.</li></ol>Zie [Intune-licenties toewijzen aan uw gebruikersaccounts](https://docs.microsoft.com/intune/licenses-assign) voor meer informatie.|
+|**De IT-beheerder moet een licentie toewijzen voor toegang**<br>Uw IT-beheerder heeft u geen toegang verleend om deze app te gebruiken. Neem contact op met uw IT-beheerder of probeer het later opnieuw.|Het apparaat kan niet worden ingeschreven omdat het account van de gebruiker niet de benodigde licentie heeft.|Voordat gebruikers hun apparaat kunnen inschrijven, moet de benodigde licentie aan hen zijn toegewezen. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de Mobile Device Management-instantie. Ze krijgen deze fout bijvoorbeeld te zien als aan de twee volgende voorwaarden wordt voldaan: <ol><li>Intune is ingesteld als Mobile Device Management-instantie</li><li>De gebruiker gebruikt een System Center 2012 R2 Configuration Manager-licentie.</li></ol>Zie [Intune-licenties toewijzen aan uw gebruikersaccounts](licenses-assign.md) voor meer informatie.|
 
 
 

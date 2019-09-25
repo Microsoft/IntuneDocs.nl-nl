@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4236b3fd1b7dab25a3450b95b75f3623ec7ba95
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071649"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167419"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android-apparaten automatisch registreren met behulp van de Knox Mobile Enrollment van Samsung
 
@@ -105,7 +105,7 @@ Voor apparaten die in Intune worden geregistreerd met KME voor Android, kunt u a
 
 - **Zonder koppeling met gebruikersnaam:** Laat in de Knox-portal onder **Device details** (Apparaatdetails) de velden **User ID** (gebruikers-id) en **Password** (wachtwoord) leeg voor de toegevoegde apparaten. De gebruiker moet dan zijn gebruikersnaam en wachtwoord invoeren tijdens de registratie bij Intune.
 
-- **Met koppeling met gebruikersnaam:** Geef in de Knox-portal onder **Device Details** (Apparaatdetails) een **gebruikers-id** op (bijvoorbeeld een gebruikersnaam voor de toegewezen gebruiker of een [Device Enrollment Manager](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)-account) voor de toegevoegde apparaten. De gebruikersnaam wordt dan al ingevuld en de gebruiker hoeft alleen een wachtwoord in te voeren tijdens de registratie bij Intune.
+- **Met koppeling met gebruikersnaam:** Geef in de Knox-portal onder **Device Details** (Apparaatdetails) een **gebruikers-id** op (bijvoorbeeld een gebruikersnaam voor de toegewezen gebruiker of een [Device Enrollment Manager](device-enrollment-manager-enroll.md)-account) voor de toegevoegde apparaten. De gebruikersnaam wordt dan al ingevuld en de gebruiker hoeft alleen een wachtwoord in te voeren tijdens de registratie bij Intune.
 
 > [!NOTE]
 >

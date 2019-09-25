@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: c8378986b1cf405a92e34b4c5bd805b169feaf32
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061690"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167878"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 Informatie over de meest recente updates voor de Microsoft Intune-apps. We voegen regelmatig elementen toe aan de Intune-bedrijfsportal-app en de website en brengen verbeteringen aan. Als u een Intune-beheerder bent of iemand van de ondersteuning, biedt dit artikel de informatie die u nodig hebt om:
@@ -120,7 +120,7 @@ Een nieuw scherm met de naam **App-categorieën** is toegevoegd om de blader- en
 ## <a name="week-of-november-12-2018"></a>Week van 12 november 2018
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Sneltoetsen voor Windows-bedrijfsportal <!-- 2771518 -->
-Eindgebruikers kunnen nu app- en apparaatacties in de Windows-bedrijfsportal activeren [met behulp van sneltoetsen (accelerators)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts).
+Eindgebruikers kunnen nu app- en apparaatacties in de Windows-bedrijfsportal activeren [met behulp van sneltoetsen (accelerators)](company-portal-app.md#windows-company-portal-keyboard-shortcuts).
 
 ## <a name="week-of-october-22-2018"></a>Week van 22 oktober 2018
 
@@ -572,4 +572,4 @@ Dit zijn de plannen voor manieren waarop we de gebruikerservaring gaan verbetere
 ## <a name="see-also"></a>Zie tevens
 * [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap voor cloudplatform](https://www.microsoft.com/cloud-platform/roadmap)
-* [Wat is er nieuw in Intune?](https://docs.microsoft.com/intune/whats-new)
+* [Wat is er nieuw in Intune?](whats-new.md)

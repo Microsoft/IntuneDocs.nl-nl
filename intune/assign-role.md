@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0539e4d12173ba2c7ba8d3af3364daf69ddbbf34
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 83e321e932fa2214612836ec994a9a0aa8174dd7
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071535"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71094685"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Een rol aan een Intune-gebruiker toewijzen
 
@@ -30,8 +30,6 @@ U kunt een [ingebouwde](role-based-access-control.md#built-in-roles) of [aangepa
 Als u rollen wilt maken, bewerken of toewijzen, moet uw account een van de volgende machtigingen hebben in Azure AD:
 - **Globale beheerder**
 - **Intune-servicebeheerder**
-
-Zie [Intune RBAC-tabel](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) voor een volledige lijst met de machtigingen voor elke ingebouwde rol.
 
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
 

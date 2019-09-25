@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6425c1346255caf70e73feef2aec1097625f921
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 4465a8715b84e06e337fb7dee5af4308cdd153ae
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427106"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167650"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Besturingssysteemversies beheren met Intune
 Op moderne mobiele en bureaubladplatformen volgen belangrijke updates, patches en nieuwe versie elkaar in hoog tempo op. U hebt de middelen om updates en patches voor Windows volledig te beheren, maar bij andere platformen, zoals iOS en Android, is de medewerking van uw eindgebruikers vereist.  Microsoft Intune biedt de mogelijkheid om het beheer van besturingssysteemversies voor meerdere platformen beter te structureren.
@@ -32,30 +32,34 @@ U kunt Intune gebruiken in de volgende, veelvoorkomende scenario’s:
   
 ## <a name="operating-system-version-control-using-intune-mobile-device-management-mdm-enrollment-restrictions"></a>Beheer van besturingssysteemversies met Intune MDM-inschrijvingsbeperkingen (Mobile Device Management)
 Met Intune MDM-inschrijvingsbeperkingen kunt u de vereisten definiëren waaraan het clientapparaat moet voldoen voordat het kan worden ingeschreven. Het doel is om te vereisten dat uw eindgebruikers alleen compatibele apparaten inschrijven voordat ze toegang krijgen tot organisatiemiddelen. De apparaatvereisten omvatten zowel de toegestane laagste en hoogste besturingssysteemversie voor de ondersteunde platformen.
- 
-![Blade configuratiebeperkingen voor platformen](./media/os-version-platform-configurations.png) 
- 
+
+![Blade configuratiebeperkingen voor platformen](./media/os-version-platform-configurations.png)
+
 ### <a name="in-practice"></a>In de praktijk
-Organisaties gebruiken apparaattypebeperkingen om de toegang tot bedrijfsmiddelen te beheren met de volgende instellingen: 
-1. Gebruik een minimale besturingssysteemversie zodat eindgebruikers werken op actuele en ondersteunde platformen binnen de organisatie. 
+
+Organisaties gebruiken apparaattypebeperkingen om de toegang tot bedrijfsmiddelen te beheren met de volgende instellingen:
+
+1. Gebruik een minimale besturingssysteemversie zodat eindgebruikers werken op actuele en ondersteunde platformen binnen de organisatie.
 2. Laat de hoogste besturingssysteemversie ongedefinieerd (geen limiet) of stel die in op dat de laatste door uw organisatie gevalideerde versie, zodat u tijd hebt om nieuwe versies van besturingssystemen intern te testen.
 
-Zie [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction) voor meer informatie.
- 
+Zie [Beperkingen voor apparaattypen instellen](enrollment-restrictions-set.md#create-a-device-type-restriction) voor meer informatie.
+
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>Rapportage over besturingssysteemversies en naleving van het Intune MDM-nalevingsbeleid voor apparaten
-Het Intune MDM-nalevingsbeleid voor apparaten biedt u de volgende hulpmiddelen: 
+
+Het Intune MDM-nalevingsbeleid voor apparaten biedt u de volgende hulpmiddelen:
+
 - Nalevingsregels configureren
 - Nalevingsstatus weergeven via rapportage
 - Op niet-naleving reageren met quarantainemaatregelen en voorwaardelijke toegang
 
 Net zoals inschrijvingsbeperkingen bevat het nalevingsbeleid voor apparaten zowel een minimale als maximale versie van een besturingssysteem. Het beleid heeft een planning, zodat gebruikers de tijd hebben om voor naleving te zorgen. Het nalevingsbeleid voor apparaten zorgt ervoor dat de ingeschreven gebruikersapparaten voldoen aan het organisatiebeleid.
 
-![Apparaatnaleving - acties bij niet-naleving](./media/os-version-actions-noncompliance.png) 
+![Apparaatnaleving - acties bij niet-naleving](./media/os-version-actions-noncompliance.png)
 
 ### <a name="in-practice"></a>In de praktijk
 Organisaties gebruiken nalevingsbeleid voor apparaten in dezelfde scenario’s als inschrijvingsbeperkingen. Dit beleid zorgt ervoor dat gebruikers binnen uw organisatie werken met actuele, gevalideerde besturingssysteemversies. Als een apparaat van een gebruiker niet meer aan het nalevingsbeleid voldoet, kan de toegang tot bedrijfsmiddelen worden geblokkeerd met voorwaardelijke toegang, tot de eindgebruikers weer een ondersteunde besturingssysteemversie voor de organisatie hebben. Eindgebruikers worden op de hoogte gesteld van de niet-naleving en de stappen die ze moeten uitvoeren om weer toegang te krijgen.   
 
-Zie [Aan de slag met apparaatnaleving](https://docs.microsoft.com/intune/device-compliance-get-started) voor meer informatie.
+Zie [Aan de slag met apparaatnaleving](device-compliance-get-started.md) voor meer informatie.
  
 ## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>Beheer van besturingssysteemversies met Intune-beveiligingsbeleid voor apps    
 Met het Intune-beveiligingsbeleid voor apps en de instellingen voor toegang in het beheer van mobiele toepassingen (MAM) kunt u de minimale versie van het besturingssysteem instellen op app-niveau. Hiermee kunt u eindgebruikers informatie geven en ze aanmoedigen of verplichten om hun besturingssysteem te updaten naar minimaal een bepaalde versie.
@@ -70,7 +74,7 @@ Daarbij hebt u twee opties:
 ### <a name="in-practice"></a>In de praktijk
 Organisaties gebruiken de instellingen van beveiligingsbeleid voor apps wanneer apps worden geopend of hervat, als een manier om eindgebruikers te informeren over de noodzaak om hun apps up-to-date te houden. Een voorbeeld van een configuratie is dat eindgebruikers worden gewaarschuwd bij huidige versie min één, en geblokkeerd bij huidige versie min twee.
  
-Zie [App-beveiligingsbeleid maken en toewijzen](https://docs.microsoft.com/intune/app-protection-policies) voor meer informatie.
+Zie [App-beveiligingsbeleid maken en toewijzen](app-protection-policies.md) voor meer informatie.
 
 ## <a name="managing-a-new-operating-system-version-rollout"></a>De implementatie van een nieuwe besturingssysteemversie beheren
 U kunt de mogelijkheden van Intune die in dit artikel worden beschreven gebruiken om uw organisatie over te laten gaan naar een nieuwe besturingssysteemversie, binnen een door u opgestelde planning. De volgende stappen zijn een voorbeeld van een implementatiemodel waarmee u gebruikers in zeven dagen laat upgraden van besturingssysteem v1 naar besturingssysteem v2.
@@ -84,8 +88,9 @@ U kunt de mogelijkheden van Intune die in dit artikel worden beschreven gebruike
   - Dit beleid vereist dat apparaten worden bijgewerkt om toegang te krijgen tot organisatiegegevens. Beveiligde services worden geblokkeerd bij gebruik van voorwaardelijke toegang voor apparaten. Apps waarvoor een beveiligingsbeleid is ingeschakeld worden geblokkeerd wanneer ze worden geopend of toegang proberen te krijgen tot organisatiegegevens.
 
 ## <a name="next-steps"></a>Volgende stappen
-U kunt de volgende hulpmiddelen gebruiken voor het beheer van besturingssysteemversies in uw organisatie: 
 
-- [Beperkingen voor apparaattypen instellen](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)
-- [Aan de slag met apparaatnaleving](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [App-beveiligingsbeleid maken en toewijzen](https://docs.microsoft.com/intune/app-protection-policies)
+U kunt de volgende hulpmiddelen gebruiken voor het beheer van besturingssysteemversies in uw organisatie:
+
+- [Beperkingen voor apparaattypen instellen](enrollment-restrictions-set.md#create-a-device-type-restriction)
+- [Aan de slag met apparaatnaleving](device-compliance-get-started.md)
+- [App-beveiligingsbeleid maken en toewijzen](app-protection-policies.md)

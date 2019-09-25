@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b1b489bbc62e4f47847ad599debcecfc27e1918
-ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
+ms.openlocfilehash: 51f9dcd7a42951d42671888c9ceebcdd57458654
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70815452"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166963"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Beveiligingsbasislijnen gebruiken om Windows 10-apparaten te gebruiken in Intune
 
@@ -74,8 +74,8 @@ Wanneer u meerdere beveiligingsbasislijnen gebruikt, raadpleegt u de instellinge
 De volgende beveiligingsbasislijninstanties zijn beschikbaar voor gebruik met Intune. Gebruik de koppelingen om de instellingen weer te geven voor de meest recente instantie van elke basislijn. 
 
 - **MDM-beveiligingsbasislijn**
-  - [MDM-beveiligingsbasislijn voor mei 2019](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
-  - [Voorbeeld: MDM-basislijn voor beveiliging voor oktober 2018](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
+  - [MDM-beveiligingsbasislijn voor mei 2019](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)
+  - [Voorbeeld: MDM-basislijn voor beveiliging voor oktober 2018](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
 
 - **Microsoft Defender ATP-basislijn**  
   *(Voor het gebruik van deze basislijn moet uw omgeving voldoen aan de vereisten voor het gebruik van [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))* .

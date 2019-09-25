@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18d01692f8c42b67605c223f59e13b1e5197a8db
-ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
+ms.openlocfilehash: f68ee794ce1fce2fbdbae8898c412309906b3f5c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71017134"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167071"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Geïmporteerde PKCS-certificaten configureren en gebruiken met Intune
 
@@ -43,7 +43,7 @@ Als u geïmporteerde PKCS-certificaten wilt gebruiken met Intune, hebt u de volg
 
   Deze connector kan automatisch worden bijgewerkt wanneer nieuwe versies beschikbaar komen. Om de update-mogelijkheid te gebruiken, moet u ervoor zorgen dat firewalls zo zijn ingesteld dat de connector verbinding kan maken met **autoupdate.msappproxy.net** via poort **443**.  
 
-  Zie, voor meer informatie over alle netwerkeindpunten die de connector benadert, de [Netwerkconfiguratievereisten en bandbreedte voor Intune](https://docs.microsoft.com/intune/network-bandwidth-use).
+  Zie, voor meer informatie over alle netwerkeindpunten die de connector benadert, de [Netwerkconfiguratievereisten en bandbreedte voor Intune](network-bandwidth-use.md).
 
 
 - **Windows Server**:  

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
-ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
+ms.openlocfilehash: 69f214b4fd3f3b7767e719c0f68f19e178a8e29c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270285"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167249"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Intune gebruiken voor het oplossen van beveiligingsproblemen geïdentificeerd door Microsoft Defender ATP  
 
@@ -37,13 +37,15 @@ Beveiligingsbeheerders van ATP kunnen in het Microsoft Defender Security Center 
 Wanneer een taak is geaccepteerd, gaat de Intune-via Intune proberen om het beveiligingsprobleem op te lossen, aan de hand van de adviezen die zijn opgenomen in de beveiligingstaak.  
 
 Algemene acties voor probleemoplossing:  
+
 - De uitvoering van een toepassing **blokkeren**  
 - Een update van het besturingssysteem **implementeren**  
 - Een registerwaarde **wijzigen**  
 - Een configuratie **uitschakelen** of **inschakelen**  
 - De status **Aandacht vereist** waarschuwt de beheerder voor de bedreiging wanneer er geen geschikte oplossing beschikbaar is.  
 
-Hier volgt een voorbeeld van een werkstroom:  
+Hier volgt een voorbeeld van een werkstroom:
+
 - Binnen Microsoft Defender ATP is een beveiligingsprobleem voor een app met de naam Contoso Media Player v4 geconstateerd en een beheerder maakt een beveiligingstaak om de app bij te werken. Contoso Media Player is een niet-beheerde app die is geïmplementeerd met Intune.  
 
   Deze beveiligingstaak wordt in de Intune-beheerconsole weergegeven met de status In behandeling:  
@@ -61,13 +63,16 @@ Hier volgt een voorbeeld van een werkstroom:
 ## <a name="prerequisites"></a>Vereisten  
 
 **Abonnementen**:  
+
 - Microsoft Intune  
 - Microsoft Defender Advanced Threat Protection ([u kunt zich aanmelden voor een gratis proefversie](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink))  
 
 **Intune-configuraties voor ATP**:  
+
 - Configureer een verbinding tussen services met Microsoft Defender ATP.  
 - Implementeer een nalevingsbeleid voor apparaten met het profieltype **Microsoft Defender ATP (Windows 10 Desktop)** op apparaten waarvan het risico wordt beoordeeld door ATP.
-  Zie [Naleving voor Windows Defender ATP met voorwaardelijke toegang in Intune afdwingen](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune) voor meer informatie over het instellen van Intune voor gebruik met ATP.  
+
+  Zie [Naleving voor Windows Defender ATP met voorwaardelijke toegang in Intune afdwingen](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune) voor meer informatie over het instellen van Intune voor gebruik met ATP.  
 
 ## <a name="work-with-security-tasks"></a>Werken met beveiligingstaken  
 
@@ -89,6 +94,6 @@ Hier volgt een voorbeeld van een werkstroom:
 Als het probleem is opgelost, kan de risicoscore in ATP afnemen, gebaseerd op nieuwe informatie van de herstelde apparaten. 
 
 ## <a name="next-steps"></a>Volgende stappen
-Meer informatie over Intune en [Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection)  
-Meer informatie over Intune [Mobile Threat Defense](https://docs.microsoft.com/intune/mobile-threat-defense)  
+Meer informatie over Intune en [Microsoft Defender ATP](advanced-threat-protection.md)  
+Meer informatie over Intune [Mobile Threat Defense](mobile-threat-defense.md)  
 Meer informatie over het [dashboard Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) in Microsoft Defender ATP

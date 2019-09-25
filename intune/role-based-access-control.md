@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e636e2df8271210d8938727eb99491e1ffdd5bdc
-ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.openlocfilehash: a5372d079b08a3a324d8ef1d98d26c07073ccd45
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 09/18/2019
-ms.locfileid: "71080032"
+ms.locfileid: "71094662"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune
 
@@ -43,7 +43,7 @@ Als u een rol wilt bekijken, kiest u **Intune** > **Rollen** > **Alle rollen** >
 - **Toewijzingen**: een lijst met [roltoewijzingen]( assign-role.md) waarin wordt gedefinieerd welke gebruikers toegang hebben tot welke gebruikers/apparaten. Een rol kan over meerdere toewijzingen beschikken, en een gebruiker kan zich in meerdere toewijzingen bevinden.
 
 ### <a name="built-in-roles"></a>Ingebouwde rollen
-U kunt ingebouwde rollen toewijzen aan groepen zonder verdere configuratie. U kunt de naam, de beschrijving, het type of de machtigingen van een ingebouwde rol niet verwijderen of bewerken. Zie [Intune RBAC-tabel](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) voor een volledige lijst met de machtigingen voor elke ingebouwde rol.
+U kunt ingebouwde rollen toewijzen aan groepen zonder verdere configuratie. U kunt de naam, de beschrijving, het type of de machtigingen van een ingebouwde rol niet verwijderen of bewerken.
 
 - **Helpdesk-medewerker**: voert externe taken uit voor gebruikers en apparaten en kan toepassingen of beleid toewijzen aan gebruikers of apparaten.
 - **Beleid- en profielbeheerder**: Hiermee worden het nalevingsbeleid, de configuratieprofielen, de Apple-inschrijving en id's van bedrijfsapparaten en beveiligingsbasislijnen beheerd.

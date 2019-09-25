@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 12/04/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 691edceda70bf2e148d939635caf7bb94b9d1cd0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 86bfcf11ebaac6e53f9314bdf2b2ab670d814976
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392566"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71239463"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Overzicht van de MDM-levenscyclus (Mobile Device Management) van Microsoft Intune
 
@@ -38,13 +37,13 @@ Registratie van de apparaten is slechts de eerste stap. Om te profiteren van all
 
 - [**Apparaatconfiguratie**](device-profiles.md). Hiermee kunt u de functies en mogelijkheden configureren van de apparaten die u beheert. U kunt bijvoorbeeld configureren dat het gebruik van een wachtwoord op Windows Phones vereist is en het gebruik van de camera op iPhones uitschakelen.
 - [**Toegang tot bedrijfsresources**](device-profiles.md). Wanneer u uw gebruikers toegang biedt tot hun werk vanaf hun persoonlijke apparaten, brengt dit uitdagingen met zich mee. Hoe kunt u er bijvoorbeeld voor zorgen dat alle apparaten die toegang moeten krijgen tot bedrijfs-e-mail, correct zijn geconfigureerd? Hoe zorgt u dat gebruikers toegang krijgen tot het bedrijfsnetwerk via een VPN-verbinding zonder dat zij complexe instellingen hoeven te kennen? Intune kan helpen deze last te verlagen door automatisch de apparaten te configureren die u beheert, zodat deze toegang krijgen tot gemeenschappelijke bedrijfsbronnen.
-- [**Beleid voor beheer van Windows-pc’s (met de Intune-clientsoftware)**](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md). Hoewel de registratie van Windows-pc's met Intune u de meeste mogelijkheden voor apparaatbeheer geeft, blijft Intune ondersteuning bieden voor het beheer van Windows-pc's met de Intune-clientsoftware. Begin hier als u informatie wilt over de taken die u kunt uitvoeren met pc's.
+- [**Beleid voor beheer van Windows-pc’s (met de Intune-clientsoftware)** ](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md). Hoewel de registratie van Windows-pc's met Intune u de meeste mogelijkheden voor apparaatbeheer geeft, blijft Intune ondersteuning bieden voor het beheer van Windows-pc's met de Intune-clientsoftware. Begin hier als u informatie wilt over de taken die u kunt uitvoeren met pc's.
 
 ## <a name="protect"></a>Beveiligen
 In de huidige IT-wereld is het beveiligen van apparaten tegen ongeoorloofde toegang een van de belangrijkste taken die u moet uitvoeren. Naast de items die u in de levenscyclus van het apparaat in de stap **Configureren** vindt, biedt Intune deze mogelijkheden om apparaten die u beheert te beveiligen tegen onbevoegde toegang of aanvallen:
 - [**Multi-factor Authentication**](multi-factor-authentication.md). U kunt apparaten nog beter beveiligen door een extra verificatielaag toe te voegen voor gebruikersaanmelding. Veel apparaten ondersteunen meervoudige verificatie waarbij een tweede verificatieniveau is vereist, zoals een telefoongesprek of sms-bericht, voordat gebruikers toegang kunnen krijgen.
 - [**Instellingen voor Windows Hello voor Bedrijven**](windows-hello.md). Windows Hello voor Bedrijven is een alternatieve aanmeldingsmethode waarmee gebruikers gebruikmaken van een *gebaar*, zoals een vingerafdruk of Windows Hello, om zich aan te melden zonder een wachtwoord.
-- [**Beleid voor het beveiligen van Windows-pc’s (met de Intune-clientsoftware)**](policies-to-protect-windows-pcs-in-microsoft-intune.md). Bij het beheren van Windows-pc's met de Intune-clientsoftware zijn beleidsregels beschikbaar waarmee u instellingen voor Endpoint Protection, software-updates en Windows Firewall kunt configureren op pc's die u beheert.
+- [**Beleid voor het beveiligen van Windows-pc’s (met de Intune-clientsoftware)** ](policies-to-protect-windows-pcs-in-microsoft-intune.md). Bij het beheren van Windows-pc's met de Intune-clientsoftware zijn beleidsregels beschikbaar waarmee u instellingen voor Endpoint Protection, software-updates en Windows Firewall kunt configureren op pc's die u beheert.
 
 ## <a name="retire"></a>Buiten gebruik stellen
 Wanneer een apparaat kwijtraakt, wordt gestolen, moet worden vervangen, of als gebruikers een andere functie krijgen, is het meestal nodig het apparaat [buiten gebruik te stellen of te wissen](device-management.md). Er zijn verschillende manieren waarop u dit kunt doen, variërend van het opnieuw instellen van het apparaat, het verwijderen van het apparaat uit beheer en het wissen van de bedrijfsgegevens die erop staan.

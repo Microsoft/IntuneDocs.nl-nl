@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4e25ab5a546f20309853346d0d4ded42fee6e8b
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: fed90635a450ed59827482d2f2c03d17a05d9673
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568307"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "71239740"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen
 
@@ -56,7 +55,7 @@ U kunt handmatig gebruikers aan uw Intune-abonnement toevoegen via het [Microsof
 6. Kies **Toevoegen** om de nieuwe gebruiker te maken.
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Intune-gebruikers toevoegen in de Azure-portal
-1. Meld u aan bij [Azure Portal](https://portal.azure.com) en ga naar **Alle services** > **Bewaking en beheer** > **Intune**. U kunt ook *zoeken naar resources* voor **Intune**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Gebruikers** > **Alle gebruikers**.
 3. Selecteer **Nieuwe gebruiker** in het beheercentrum.
    ![Schermafbeelding van Nieuwe gebruiker toevoegen](media/intune-add-user.png)
@@ -65,7 +64,7 @@ U kunt handmatig gebruikers aan uw Intune-abonnement toevoegen via het [Microsof
    - **Gebruikersnaam**: de nieuwe naam in de Azure Active Directory-portal ![Schermafbeelding van het toevoegen van naam en gebruikersnaam](media/intune-add-user-info.png) Kies **OK** om door te gaan.
 5. U kunt desgewenst de volgende gebruikerseigenschappen opgeven:
    - **Profiel**: werkinformatie zoals **Functie** en **Afdeling**
-   -  **Groepen**: selecteer groepen die u wilt toevoegen voor de gebruiker
+   - **Groepen**: selecteer groepen die u wilt toevoegen voor de gebruiker
    - **Directory-rol**: verleen de gebruiker beheerdersmachtigingen, inclusief een Intune-servicebeheerdersrol.
 
    Selecteer **Maken** om de nieuwe gebruiker toe te voegen aan Intune.
@@ -113,10 +112,10 @@ Het account dat u gebruikt om uw Microsoft Intune-abonnement te maken, heeft de 
 Voor toegang tot het Microsoft 365-beheercentrum moet **Toegestane gebruikers aanmelden** zijn ingesteld voor uw account. Ga in de Azure-portal naar **Profiel** en stel **Aanmelden blokkeren** in op **Nee** om toegang te verlenen. Deze status is niet hetzelfde als wanneer u een licentie voor het abonnement hebt. Standaard hebben alle gebruikersaccounts de status **Toegestaan**. Gebruikers zonder beheerdersmachtigingen kunnen het Microsoft 365-beheercentrum gebruiken om Intune-wachtwoorden opnieuw in te stellen.
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>Active Directory synchroniseren en gebruikers toevoegen aan Intune
-U kunt directorysynchronisatie configureren voor het importeren van gebruikersaccounts uit de on-premises Active Directory in Microsoft Azure Active Directory (Azure AD) die Intune-gebruikers bevat. Het koppelen van uw on-premises Active Directory-service aan alle Azure Active Directory-services zorgt ervoor dat het beheer van gebruikersidentiteiten veel eenvoudiger wordt. U kunt ook eenmalige aanmelding configureren om de verificatie vertrouwd en eenvoudig te maken voor uw gebruikers. Door dezelfde [Azure AD-tenant](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) te koppelen met meerdere services, zijn de gebruikersaccounts die u eerder hebt gesynchroniseerd, beschikbaar voor alle cloudservices.
+U kunt adreslijstsynchronisatie configureren voor het importeren van gebruikersaccounts uit de on-premises Active Directory in Microsoft Azure Active Directory (Azure AD) die Intune-gebruikers bevat. Het koppelen van uw on-premises Active Directory-service aan alle Azure Active Directory-services zorgt ervoor dat het beheer van gebruikersidentiteiten veel eenvoudiger wordt. U kunt ook eenmalige aanmelding configureren om de verificatie vertrouwd en eenvoudig te maken voor uw gebruikers. Door dezelfde [Azure AD-tenant](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) te koppelen met meerdere services, zijn de gebruikersaccounts die u eerder hebt gesynchroniseerd, beschikbaar voor alle cloudservices.
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>On-premises gebruikers synchroniseren met Azure AD
 Het enige hulpprogramma dat u nodig hebt om uw gebruikersaccounts te synchroniseren met Azure AD, is de [Azure AD Connect-wizard](https://www.microsoft.com/download/details.aspx?id=47594). De Azure AD Connect-wizard biedt een vereenvoudigde begeleiding voor het verbinden van de on-premises infrastructuur voor identiteiten aan de cloud. Kies uw topologie en behoeften (één of meerdere mappen, synchronisatie van wachtwoordhashes, pass-through-verificatie of federatie). De wizard implementeert en configureert alle onderdelen die zijn vereist om de verbinding mogelijk te maken. Inclusief: synchronisatieservices, Active Directory Federation Services (AD FS) en de Azure AD PowerShell-module.
 
 > [!TIP]
-> Azure AD Connect bevat functionaliteit die eerder is uitgebracht als Dirsync en Azure AD Sync. Lees meer over [adreslijstintegratie](http://technet.microsoft.com/library/jj573653.aspx). Zie [Overeenkomsten tussen Active Directory en Azure AD](http://technet.microsoft.com/library/dn518177.aspx) voor meer informatie over het synchroniseren van gebruikersaccounts vanuit de lokale directory naar Azure AD.
+> Azure AD Connect bevat functionaliteit die eerder is uitgebracht als Dirsync en Azure AD Sync. Lees meer over [adreslijstintegratie](https://technet.microsoft.com/library/jj573653.aspx). Zie [Overeenkomsten tussen Active Directory en Azure AD](https://technet.microsoft.com/library/dn518177.aspx) voor meer informatie over het synchroniseren van gebruikersaccounts vanuit de lokale directory naar Azure AD.

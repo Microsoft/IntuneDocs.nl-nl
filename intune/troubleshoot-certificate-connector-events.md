@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a282662032fe77cbf39da279c587bff31ad9e24
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 682d51269798dff181a3bd8384268da862118a70
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70123221"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167754"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Gebeurtenissen en diagnostische codes van Intune Certificate Connector
 
@@ -60,7 +60,7 @@ Vanaf versie 6.1806.x.x legt de Intune-connectorservice gebeurtenissen vast in d
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Geslaagd  | Geslaagd |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | Certificeringsinstantie is niet geldig of is niet bereikbaar. Controleer of de certificeringsinstantie beschikbaar is en of uw server ermee kan communiceren. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | Client-Auth Symantec-certificaat is niet gevonden in het lokale certificaatarchief. Zie het artikel [Het Symantec-certificaat voor registratie-autorisatie installeren](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) voor meer informatie.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Client-Auth Symantec-certificaat is niet gevonden in het lokale certificaatarchief. Zie het artikel [Het Symantec-certificaat voor registratie-autorisatie installeren](certificates-digicert-configure.md#install-the-digicert-ra-certificate) voor meer informatie.  |
 | 0x00000402 | RevokeCert_AccessDenied  | Het opgegeven account heeft geen machtigingen om een certificaat van CA in te trekken. Zie het veld CA-naam in de berichtdetails van de gebeurtenis om de verlenende CA te bepalen.  |
 | 0x00000403 | CertThumbprint_NotFound  | Kan geen certificaat vinden dat overeenkomt met uw invoer. Registreer de certificaatconnector en probeer het opnieuw. |
 | 0x00000404 | Certificate_NotFound  | Kan geen certificaat vinden dat overeenkomt met de opgegeven invoer. Registreer de certificaatconnector nogmaals en probeer het opnieuw. |

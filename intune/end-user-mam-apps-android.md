@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6122016f660e01b19862145d1a358fa154bf18f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f7e4a1081c76e1d41b84a7fadc84e93a221007c4
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396944"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71238403"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid
 
@@ -30,7 +29,7 @@ ms.locfileid: "57396944"
 
 In dit artikel wordt de gebruikerservaring voor apps met app-beveiligingsbeleid beschreven. App-beveiligingsbeleid wordt alleen toegepast wanneer apps worden gebruikt in een werkcontext, bijvoorbeeld wanneer de gebruiker apps opent met een werkaccount of bestanden opent die zijn opgeslagen in een locatie van OneDrive voor Bedrijven.
 
-##  <a name="access-apps"></a>Toegang tot apps
+## <a name="access-apps"></a>Toegang tot apps
 
 De bedrijfsportal-app is vereist voor alle apps die zijn gekoppeld aan app-beveiligingsbeleid op Android-apparaten.
 
@@ -39,30 +38,30 @@ Op apparaten die niet zijn geregistreerd bij Intune, moet de bedrijfsportal-app 
 De bedrijfsportal-app is een manier voor Intune om op een veilige locatie gegevens te delen. De bedrijfsportal-app is daarom vereist voor alle apps die zijn gekoppeld aan app-beveiligingsbeleid, zelfs als het apparaat niet is geregistreerd bij Intune.
 
 
-##  <a name="use-apps-with-multi-identity-support"></a>Apps met ondersteuning voor meerdere identiteiten gebruiken
+## <a name="use-apps-with-multi-identity-support"></a>Apps met ondersteuning voor meerdere identiteiten gebruiken
 
 App-beveiligingsbeleid wordt alleen toegepast in een werkcontext. Daarom is het mogelijk dat de app zich anders gedraagt, afhankelijk of het om een persoonlijke of werkcontext gaat.
 
 De gebruiker moet bijvoorbeeld een pincode invoeren bij het openen van werkgegevens. Voor de **Outlook-app** wordt de gebruiker gevraagd een pincode in te voeren bij het starten van de app. Voor de **OneDrive app** wordt de gebruiker om een pincode gevraagd wanneer deze het werkaccount typt. Bij Microsoft **Word**, **PowerPoint** en **Excel** wordt de gebruiker om de pincode gevraagd wanneer deze documenten opent die zijn opgeslagen op de OneDrive voor Bedrijven-locatie van het bedrijf.
 
-##  <a name="manage-user-accounts-on-the-device"></a>Gebruikersaccounts op het apparaat beheren
+## <a name="manage-user-accounts-on-the-device"></a>Gebruikersaccounts op het apparaat beheren
 
 Met toepassingen met meerdere identiteiten kunnen gebruikers meerdere accounts toevoegen.  Intune-app-beveiliging ondersteunt slechts één beheerd account.  Intune-app-beveiliging beperkt niet het aantal niet-beheerde accounts.
 
 Wanneer er een beheerd account in een toepassing is:
-*   Als een gebruiker een tweede beheerd account probeert toe te voegen, moet de gebruiker selecteren welk beheerd account moet worden gebruikt.  Het andere account wordt verwijderd.
-*   Als de IT-beheerder een beleid toevoegt aan een tweede bestaand account, moet de gebruiker selecteren welk beheerd account moet worden gebruikt.  Het andere account wordt verwijderd.
+* Als een gebruiker een tweede beheerd account probeert toe te voegen, moet de gebruiker selecteren welk beheerd account moet worden gebruikt.  Het andere account wordt verwijderd.
+* Als de IT-beheerder een beleid toevoegt aan een tweede bestaand account, moet de gebruiker selecteren welk beheerd account moet worden gebruikt.  Het andere account wordt verwijderd.
 
 Lees het volgende voorbeeldscenario om meer inzicht te krijgen in hoe meerdere gebruikersaccounts worden behandeld.
 
 Gebruiker A werkt voor twee bedrijven: **bedrijf X** en **bedrijf Y**. Gebruiker A heeft voor elk bedrijf een werkaccount en voor beide accounts wordt gebruikgemaakt van Intune om app-beveiligingsbeleid te implementeren. **Bedrijf X** implementeert app-beveiligingsbeleid **voordat** **bedrijf Y** dat doet. Het app-beveiligingsbeleid wordt toegepast op het account dat is gekoppeld aan **bedrijf X**, niet op het account dat is gekoppeld aan bedrijf Y. Als u wilt dat het gebruikersaccount dat is gekoppeld aan bedrijf Y door het app-beveiligingsbeleid wordt beheerd, moet u het gebruikersaccount dat is gekoppeld aan bedrijf X verwijderen en het account toevoegen dat is gekoppeld aan bedrijf Y.
 ### <a name="add-a-second-account"></a>Een tweede account toevoegen
-####  <a name="android"></a>Android
+#### <a name="android"></a>Android
 Als u een Android-apparaat gebruikt, ziet u mogelijk een blokkeringsbericht met instructies voor het verwijderen van het bestaande account en toevoegen van een nieuwe account.  Als u het bestaande account wilt verwijderen, gaat u naar **Instellingen &gt;Algemeen &gt; Toepassingsbeheer &gt;Bedrijfsportal**. Vervolgens kiest u **Gegevens wissen**.
 
 ![Schermafbeelding van het foutbericht en instructies om het account te verwijderen](./media/Android_SwitchUser.png)
 
-##  <a name="view-media-files-with-the-azure-information-protection-app"></a>Mediabestanden weergeven met de Azure Information Protection-app
+## <a name="view-media-files-with-the-azure-information-protection-app"></a>Mediabestanden weergeven met de Azure Information Protection-app
 Als u AV-, PDF- en afbeeldingsbestanden van uw bedrijf op een Android-apparaat wilt weergeven, gebruikt u de [Microsoft Information Protection-app](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) (voorheen de Rights Management-app voor delen).
 
 U kunt deze app downloaden via de Google Play Store.  

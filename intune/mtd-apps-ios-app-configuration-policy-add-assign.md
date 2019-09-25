@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fef4b6969680101e2e4f045bc83a8974536eaf2a
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 55132570683742bd3e8dcec1c20726b9eb2c4b16
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660953"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166817"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>MTD-apps (Mobile Threat Defense) toevoegen en toewijzen met Intune  
 
@@ -35,8 +35,8 @@ U kunt Intune gebruiken om MTD-apps (Mobile Threat Defense) toe te voegen en te 
 De onderstaande stappen moeten worden uitgevoerd in [Azure Portal](https://portal.azure.com/). Zorg ervoor dat u bekend bent met de volgende procedures:
 
 - [Een app toevoegen in Intune](apps-add.md).
-- [Een configuratiebeleid voor iOS-apps toevoegen in Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
-- [Een app toewijzen met Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+- [Een configuratiebeleid voor iOS-apps toevoegen in Intune](app-configuration-policies-use-ios.md).
+- [Een app toewijzen met Intune](apps-deploy.md).
 
 > [!TIP]
 > De Intune-bedrijfsportal werkt als de broker op Android-apparaten, zodat de identiteit van gebruikers kan worden gecontroleerd door Azure AD.
@@ -136,7 +136,7 @@ Kies de sectie die overeenkomt met uw MTD-provider:
   - Zie de instructies in het artikel [Android Store-apps toevoegen aan Microsoft Intune](store-apps-android.md). Gebruik deze [URL voor de mobiele app-store van Wandera](https://play.google.com/store/apps/details?id=com.wandera.android) in **stap 7**. Selecteer **Android 5.0**  voor de **minimale versie van het besturingssysteem**.
 
 - **iOS**
-  - Zie de instructies in het artikel [iOS Store-apps toevoegen aan Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios). Gebruik deze [URL voor de mobiele app-store van Wandera](https://itunes.apple.com/app/wandera/id605469330) in **stap 11** voor de **URL App Store**.
+  - Zie de instructies in het artikel [iOS Store-apps toevoegen aan Microsoft Intune](store-apps-ios.md). Gebruik deze [URL voor de mobiele app-store van Wandera](https://itunes.apple.com/app/wandera/id605469330) in **stap 11** voor de **URL App Store**.
 
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>Uw MTD-apps configureren met een configuratiebeleid voor iOS-apps  
 

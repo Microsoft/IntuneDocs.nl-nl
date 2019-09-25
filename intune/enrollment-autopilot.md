@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bb6efa8bff9ff428a7ea6cc1bd245070cfc0e1f
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 301945f96b62dce9ee1cf6caedf40fe6b03499e3
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71070948"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166442"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -204,4 +204,4 @@ U kunt Windows-apparaten groeperen op correlator-id bij registratie met behulp v
 > - Begin een Autopilot- of Apple DEP-profielnaam nooit met 'OfflineAutopilotprofile-'.
 
 ## <a name="next-steps"></a>Volgende stappen
-Ontdek hoe u apparaten beheert nadat u Windows Autopilot hebt geconfigureerd voor geregistreerde Windows 10-apparaten. Zie [Wat is Microsoft Intune-apparaatbeheer?](https://docs.microsoft.com/intune/device-management) voor meer informatie.
+Ontdek hoe u apparaten beheert nadat u Windows Autopilot hebt geconfigureerd voor geregistreerde Windows 10-apparaten. Zie [Wat is Microsoft Intune-apparaatbeheer?](device-management.md) voor meer informatie.

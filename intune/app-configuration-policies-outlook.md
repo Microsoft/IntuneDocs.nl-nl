@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14eded43200aed7e9ebf4454bcde61133351e4e2
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: d6fe60cf53f88186448cd9586d5c75fca4d517ad
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979202"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167388"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Configuratie-instellingen voor Microsoft Outlook 
 
@@ -30,7 +30,7 @@ Voor ingeschreven apparaten:
 - Zie [App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen](app-configuration-policies-use-ios.md) voor het maken van een app-configuratiebeleid voor beheerde iOS-apparaten. 
 - Zie [App-configuratiebeleidsregels toevoegen voor beheerde Android-apparaten](app-configuration-policies-use-android.md) voor het maken van een app-configuratiebeleid voor beheerde Android-apparaten. 
 
-Zie [Add app configuration policies for managed apps without device enrollment](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) (App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving) om app-configuratiebeleidsregels te creëren voor Outlook voor iOS en Android.
+Zie [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-managed-app.md) (App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving) om app-configuratiebeleidsregels te creëren voor Outlook voor iOS en Android.
 
 ## <a name="configuration-settings"></a>Configuratie-instellingen
 
