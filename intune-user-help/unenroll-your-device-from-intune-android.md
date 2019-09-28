@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a472e4d8c3ef7b922f02b4d2407362ba738486c
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 91aefbc8c3960100ce5e9164ce48a2b9d33c3f3e
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167542"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238963"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Uw Android-apparaat uitschrijven bij het beheer  
 
@@ -64,7 +64,7 @@ U kunt ook op **Instellingen** > **Apps** > **Bedrijfsportal** > **Verwijderen**
 
 Als laatste redmiddel kunt u de app als apparaatbeheerder van uw apparaat verwijderen.  
 
-Als u een apparaat hebt waarvan het bedrijf de eigenaar is, kan uw organisatie mogelijk verplichten Bedrijfsportal te allen tijden op uw apparaat te houden. Als u deze app verwijdert, kan u de toegang tot beschermde bedrijfsresources worden ontzegd, zoals e-mail, apps, Wi-Fi of VPN, tot u de app opnieuw installeert. Zie [Apps toevoegen aan Microsoft Intune](https://docs.microsoft.com/intune/apps-add.md#apps-that-are-added-automatically-by-intune) voor meer informatie over het installeren, bijwerken of verwijderen van vereiste apps.  
+Als u een apparaat hebt waarvan het bedrijf de eigenaar is, kan uw organisatie mogelijk verplichten Bedrijfsportal te allen tijden op uw apparaat te houden. Als u deze app verwijdert, kan u de toegang tot beschermde bedrijfsresources worden ontzegd, zoals e-mail, apps, Wi-Fi of VPN, tot u de app opnieuw installeert. Zie [Apps toevoegen aan Microsoft Intune](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune) voor meer informatie over het installeren, bijwerken of verwijderen van vereiste apps.  
 
 U kunt de Bedrijfsportal als apparaatbeheerder als volgt uitschakelen. De daadwerkelijke naam van elke instelling kan afwijken op uw Android-apparaat.  
 

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec52069c4c53c464cfe5a1e17718ba6725fd0b5
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: caae22e59e8adb6952e9a69ff03c575ae4467b2d
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167444"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238980"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Apparaat is versleuteld, maar apps zeggen anders
 
@@ -50,7 +50,7 @@ Deze sectie is alleen van toepassing op de app Bedrijfsportal. Als uw apparaat u
 
 Sommige Android-apparaten met versie 7.0 en later versleutelen gegevens op een manier die inconsistent is met bepaalde Android-platformstandaarden. Met deze versleutelings methoden wordt een risico op de apparaatgegevens gelegd. Als gevolg hiervan worden deze apparaten niet ondersteund.
 
-Zie het artikel [ondersteunde besturings systemen en browsers in intune](https://docs.microsoft.com/intune/supported-devices-browsers.md#supported-samsung-knox-standard-devices)voor een niet-limitatieve lijst van ondersteunde Android-apparaten. Als uw apparaat niet wordt weer gegeven, raadpleegt u de fabrikant van het apparaat of neemt u contact op met de ondersteunings medewerker.
+Zie het artikel [ondersteunde besturings systemen en browsers in intune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)voor een niet-limitatieve lijst van ondersteunde Android-apparaten. Als uw apparaat niet wordt weer gegeven, raadpleegt u de fabrikant van het apparaat of neemt u contact op met de ondersteunings medewerker.
 
 > [!Note]
 > Microsoft werkt samen met fabrikanten aan het oplossen van problemen die worden gevonden tijdens het testen of die gebruikers rapporteren. Dit artikel wordt bijgewerkt wanneer nieuwe informatie beschikbaar is.

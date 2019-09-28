@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e0b8230a842a7b4e3b1368388cb186defa8df72
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8747a398447dc1f477e2b0149104c4c65d3ed741
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566587"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "71302193"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Intune-onderwijsinstellingen configureren voor gedeelde iPads
 
@@ -68,8 +67,7 @@ U kunt op een van de volgende manieren gegevens importeren in SDS:
 
 ### <a name="configure-general-settings"></a>Algemene instellingen configureren
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
 2. Kies in het deelvenster **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
 5. Kies **Profiel maken** in het deelvenster Profielen.
@@ -103,7 +101,7 @@ Configureer onder **PKCS #12-certificaat voor docent** de volgende waarden:
 - **Certificeringsinstantie**: een certificeringsinstantie (CA) voor ondernemingen die wordt uitgevoerd op een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund.
 - **Naam van certificeringsinstantie**: voer de naam van uw certificeringsinstantie in.
 - **Certificaatsjabloonnaam**: voer de naam in van een certificaatsjabloon die is toegevoegd aan een verlenende CA.
-- **Drempelwaarde voor verlenging (%)**: geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
+- **Drempelwaarde voor verlenging (%)** : geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
 - **Geldigheidsduur van certificaat**: geef de hoeveelheid resterende tijd op totdat het certificaat verloopt. U kunt een waarde opgeven die lager is dan de geldigheidsperiode in het opgegeven certificaatsjabloon, maar niet hoger. Als de geldigheidsperiode van het certificaat in het certificaatsjabloon bijvoorbeeld twee jaar is, kunt u wel één jaar, maar niet vijf jaar opgeven. De waarde moet ook lager zijn dan de resterende geldigheidsperiode van het certificaat van de verlenende CA.
 
 Wanneer u de docentcertificaten hebt geconfigureerd, kiest u **OK**.
@@ -125,7 +123,7 @@ Configureer onder **PKCS#12-certificaat voor student** de volgende waarden:
 - **Certificeringsinstantie**: een certificeringsinstantie (CA) voor ondernemingen die wordt uitgevoerd op een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund.
 - **Naam van certificeringsinstantie**: voer de naam van uw certificeringsinstantie in.
 - **Certificaatsjabloonnaam**: voer de naam in van een certificaatsjabloon die is toegevoegd aan een verlenende CA.
-- **Drempelwaarde voor verlenging (%)**: geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
+- **Drempelwaarde voor verlenging (%)** : geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
 - **Geldigheidsduur van certificaat**: geef de hoeveelheid resterende tijd op totdat het certificaat verloopt. U kunt een waarde opgeven die lager is dan de geldigheidsperiode in het opgegeven certificaatsjabloon, maar niet hoger. Als de geldigheidsperiode van het certificaat in het certificaatsjabloon bijvoorbeeld twee jaar is, kunt u wel één jaar, maar niet vijf jaar opgeven. De waarde moet ook lager zijn dan de resterende geldigheidsperiode van het certificaat van de verlenende CA.
 
 Wanneer u de certificaten hebt geconfigureerd, kiest u **OK**.
@@ -139,8 +137,7 @@ Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profiel
 
 ## <a name="step-3---create-a-device-category"></a>Stap 3: een apparaatcategorie maken
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Kies **Apparaatinschrijving** in het deelvenster **Intune**.
 4. Kies **Apparaatcategorieën - Overzicht** in het deelvenster **Apparaatinschrijving**.
 5. Kies **Maken** in het deelvenster **Apparaatinschrijving - Apparaatcategorieën**.
@@ -151,8 +148,7 @@ De apparaatcategorie wordt gemaakt in het deelvenster **Apparaatinschrijving –
 
 ## <a name="step-4--create-a-dynamic-group"></a>Stap 4: een dynamische groep maken
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Kies **Groepen** in het deelvenster **Intune**.
 4. Kies **Nieuwe groep** in het deelvenster **Gebruikers en groepen – Alle groepen**.
 5. Kies in het deelvenster **Groep** een **Type groep** en voer een **naam** en **beschrijving** voor de groep in.
@@ -169,8 +165,7 @@ De dynamische groep wordt gemaakt in het deelvenster **Gebruikers en groepen –
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>Stap 5: een apparaat toewijzen aan een categorie (Winkelwagens)
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Kies **Apparaten** in het deelvenster **Intune**.
 4. Kies **Alle apparaten** in het deelvenster **Apparaten**.
 5. Kies een apparaat in het deelvenster **Apparaten - Alle apparaten**.
@@ -182,14 +177,13 @@ Het apparaat is nu aan de apparaatcategorie gekoppeld. Herhaal dit proces voor a
 
 ## <a name="step-6--create-classroom-profiles"></a>Stap 6: klaslokaalprofielen maken
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
 4. Kies **Beheren** > **Winkelwagenprofielen** in het deelvenster **Apparaatconfiguratie**.
 5. Kies **Profiel maken** in het deelvenster Profielen.
 6. Voer in het deelvenster **Koppeling maken** waarden in voor **Naam** en **Beschrijving**.
 7. Kies **Klassen selecteren** > **Configureren** om groepen te koppelen aan het winkelwagenprofiel.
-8. Kies de klassen waaraan u het winkelwagenprofiel wilt toewijzen en kies vervolgens **Selecteren**. 
+8. Kies de klassen waaraan u het winkelwagenprofiel wilt toewijzen en kies vervolgens **Selecteren**. 
 9. Kies **Winkelwagens selecteren** > **Configureren** om groepen te koppelen aan het winkelwagenprofiel.
 10. Kies de groepen waaraan u het winkelwagenprofiel wilt toewijzen en kies vervolgens **Selecteren**.
 11. Kies **Opslaan** in het deelvenster **Koppeling maken** om het winkelwagenprofiel op te slaan.
@@ -198,13 +192,12 @@ Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profiel
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Stap 7: het winkelwagenprofiel toewijzen aan klassen
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
 4. Kies **Beheren** > **Toewijzingsstatus** in het deelvenster **Apparaatconfiguratie**.
 5. Selecteer in het deelvenster **Toewijzingsstatus** het **winkelwagenprofiel** dat u hebt gemaakt.
 6. Kies **Toewijzingen** in het deelvenster **Winkelwagenprofiel** en kies vervolgens **Groepen selecteren die moeten worden opgenomen** onder **Opnemen**.
-7. Selecteer de klassen waarop u het winkelwagenprofiel wilt toepassen (selecteer niet een groep) en kies vervolgens **Selecteren**. 
+7. Selecteer de klassen waarop u het winkelwagenprofiel wilt toepassen (selecteer niet een groep) en kies vervolgens **Selecteren**. 
 8. Als u klaar bent, kiest u **Opslaan**.
 
 De toewijzing wordt afgerond en Intune implementeer het klaslokaalprofiel naar de betreffende apparaten op basis van de klaslokaaltoewijzing.

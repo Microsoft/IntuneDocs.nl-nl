@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fed8c33bbf4ff302d08576dc5e34ce1257425090
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bea8d6d8e3503b9ec6fba7b2eda4842b68786e54
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565244"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71302305"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Windows Holographic for Business-apparaatinstellingen voor het toestaan of beperken van functies met behulp van Intune
 
@@ -91,9 +90,9 @@ Op een kioskapparaat wordt doorgaans een specifieke app uitgevoerd. Gebruikers h
   - **Kiosk voor één enkele app**: volgens het profiel kan het apparaat slechts één enkele app uitvoeren. Wanneer de gebruiker zich aanmeldt, wordt een specifieke app gestart. Deze modus voorkomt ook dat de gebruiker nieuwe apps kan openen of de actieve app kan wijzigen.
   - **Kiosk voor meerdere apps**: volgens het profiel kan het apparaat meerdere apps uitvoeren. Alleen de apps die u toevoegt, zijn beschikbaar voor de gebruiker. Het voordeel van een kiosk voor meerdere apps, of apparaat voor een vast doel, is dat het een eenvoudige ervaring biedt voor gebruikers door alleen toegang te geven tot apps die ze nodig hebben. En apps die ze niet nodig hebben, uit hun weergave verwijderen. 
   
-    Wanneer u apps toevoegt voor een kioskervaring met meerdere apps, kunt u ook een opmaakbestand voor het startmenu toevoegen. [Opmaakbestand voor startmenu](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune) bevat voorbeeld-XML die kan worden gebruikt in Intune. 
+    Wanneer u apps toevoegt voor een kioskervaring met meerdere apps, kunt u ook een opmaakbestand voor het startmenu toevoegen. [Opmaakbestand voor startmenu](/hololens/hololens-kiosk#start-layout-file-for-mdm-intune-and-others) bevat voorbeeld-XML die kan worden gebruikt in Intune. 
 
-#### <a name="single-app-kiosks"></a>Kiosken voor één enkele app
+### <a name="single-app-kiosks"></a>Kiosken voor één enkele app
 
 Voer de volgende instellingen in:
 
@@ -101,7 +100,7 @@ Voer de volgende instellingen in:
 
     Voor kiosken in openbare omgevingen waarvoor automatische aanmelding is ingeschakeld, moet een gebruikerstype met minimale bevoegdheden (zoals het lokale standaardgebruikersaccount) worden gebruikt. Voor de configuratie van een Azure Active Directory-account voor de kioskmodus gebruikt u de indeling `AzureAD\user@contoso.com`.
 
-- **Model-id van toepassingsgebruiker (AUMID)**: voer de AUMID van de kiosk-app in. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) voor meer informatie.
+- **Model-id van toepassingsgebruiker (AUMID)** : voer de AUMID van de kiosk-app in. Zie [De model-id van toepassingsgebruiker van een geïnstalleerde app vinden](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) voor meer informatie.
 
 ## <a name="reporting-and-telemetry"></a>Rapportage en telemetrie
 

@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f82950259746010c347e5dafa832a7335026721c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 20621246f76810ba7efaac3cadbdde1a0229c923
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799308"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71302349"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 Team-apparaatbeperkingsinstellingen
 
@@ -34,9 +33,9 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
 
 - **Scherm activeren wanneer iemand in de ruimte is**: hiermee kunt u het apparaat automatisch laten activeren als de sensor detecteert dat er iemand in de ruimte aanwezig is.
 - **Informatie over de vergadering die wordt weergegeven op het aanmeldingsscherm**: schakel deze optie in als u de informatie wilt kiezen die wordt weergegeven op de tegel Vergaderingen van het scherm Welkom. U kunt het volgende doen:
-    - **Alleen de organisator en tijd weergeven**
-    - **Organisator, tijd en onderwerp weergeven (onderwerp verborgen bij privévergaderingen)**
-- **URL van de achtergrondafbeelding voor het aanmeldingsscherm**: schakel deze instelling in om via de URL die u opgeeft, een aangepaste achtergrond weer te geven op het scherm **Welkom** van Windows 10 Team-apparaten.<br>De afbeelding moet een bestand met PNG-indeling zijn en de URL moet beginnen met **https://**.
+  - **Alleen de organisator en tijd weergeven**
+  - **Organisator, tijd en onderwerp weergeven (onderwerp verborgen bij privévergaderingen)**
+- **URL van de achtergrondafbeelding voor het aanmeldingsscherm**: schakel deze instelling in om via de URL die u opgeeft, een aangepaste achtergrond weer te geven op het scherm **Welkom** van Windows 10 Team-apparaten.<br>De afbeelding moet een bestand met PNG-indeling zijn en de URL moet beginnen met **https://** .
 
 ## <a name="azure-operational-insights"></a>Operational Insights van Azure
 

@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 05/9/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75628ab45d4c0d7f43f07d530a76988ca5f772b8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 578dcf8a714197d9414e8ffeeec9a6c6e8a30311
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461155"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "71302179"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>De Intune-instellingen voor de iOS-app Classroom configureren
 
@@ -78,15 +77,14 @@ U kunt op een van de volgende manieren gegevens importeren in SDS:
 
 ### <a name="configure-general-settings"></a>Algemene instellingen configureren
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
 2. Kies in het deelvenster **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
-5.  Kies **Profiel maken** in het deelvenster Profielen.
-6.  Voer in het deelvenster **Profiel maken** een **Naam** en **Beschrijving** in voor het iOS-opleidingsprofiel.
-7.  Kies **iOS** in de vervolgkeuzelijst **Platform**.
-8.  Kies **Onderwijs** in de vervolgkeuzelijst **Profieltype**.
-9.  Kies **Instellingen** > **Configureren**.
+5. Kies **Profiel maken** in het deelvenster Profielen.
+6. Voer in het deelvenster **Profiel maken** een **Naam** en **Beschrijving** in voor het iOS-opleidingsprofiel.
+7. Kies **iOS** in de vervolgkeuzelijst **Platform**.
+8. Kies **Onderwijs** in de vervolgkeuzelijst **Profieltype**.
+9. Kies **Instellingen** > **Configureren**.
 
 
 In de volgende sectie maakt u certificaten om een vertrouwensrelatie te maken tussen de iPads van de docent en studenten. Certificaten worden gebruikt voor het naadloos en op de achtergrond verifiëren van verbindingen tussen apparaten zonder gebruikersnamen en wachtwoorden in te voeren.
@@ -116,7 +114,7 @@ Configureer onder **PKCS #12-certificaat voor docent** de volgende waarden:
 - **Certificeringsinstantie**: een certificeringsinstantie (CA) voor ondernemingen die wordt uitgevoerd op een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund. 
 - **Naam van certificeringsinstantie**: voer de naam van uw certificeringsinstantie in.
 - **Certificaatsjabloonnaam**: voer de naam in van een certificaatsjabloon die is toegevoegd aan een verlenende CA. 
-- **Drempelwaarde voor verlenging (%)**: geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
+- **Drempelwaarde voor verlenging (%)** : geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
 - **Geldigheidsduur van certificaat**: geef de hoeveelheid resterende tijd op totdat het certificaat verloopt.
 U kunt een waarde opgeven die lager is dan de geldigheidsperiode in het opgegeven certificaatsjabloon, maar niet hoger. Als de geldigheidsperiode van het certificaat in het certificaatsjabloon bijvoorbeeld twee jaar is, kunt u wel één jaar, maar niet vijf jaar opgeven. De waarde moet ook lager zijn dan de resterende geldigheidsperiode van het certificaat van de verlenende CA.
 
@@ -124,8 +122,8 @@ Wanneer u de certificaten hebt geconfigureerd, kiest u **OK**.
 
 ### <a name="configure-student-certificates"></a>Studentencertificaten configureren
 
-1.  Kies **Studentencertificaten** in het deelvenster **Opleiding**.
-2.  Kies in het deelvenster **Studentencertificaten** in de lijst **Type studentapparaatcertificaten** de waarde **1:1**.
+1. Kies **Studentencertificaten** in het deelvenster **Opleiding**.
+2. Kies in het deelvenster **Studentencertificaten** in de lijst **Type studentapparaatcertificaten** de waarde **1:1**.
 
 #### <a name="configure-student-root-certificate"></a>Het basiscertificaat voor studenten configureren
 
@@ -141,7 +139,7 @@ Configureer onder **PKCS#12-certificaat voor student** de volgende waarden:
 - **Certificeringsinstantie**: een certificeringsinstantie (CA) voor ondernemingen die wordt uitgevoerd op een Enterprise-editie van Windows Server 2008 R2 of hoger. Een zelfstandige CA wordt niet ondersteund. 
 - **Naam van certificeringsinstantie**: voer de naam van uw certificeringsinstantie in.
 - **Certificaatsjabloonnaam**: voer de naam in van een certificaatsjabloon die is toegevoegd aan een verlenende CA. 
-- **Drempelwaarde voor verlenging (%)**: geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
+- **Drempelwaarde voor verlenging (%)** : geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt.
 - **Geldigheidsduur van certificaat**: geef de hoeveelheid resterende tijd op totdat het certificaat verloopt.
 U kunt een waarde opgeven die lager is dan de geldigheidsperiode in het opgegeven certificaatsjabloon, maar niet hoger. Als de geldigheidsperiode van het certificaat in het certificaatsjabloon bijvoorbeeld twee jaar is, kunt u wel één jaar, maar niet vijf jaar opgeven. De waarde moet ook lager zijn dan de resterende geldigheidsperiode van het certificaat van de verlenende CA.
 
@@ -149,9 +147,9 @@ Wanneer u de certificaten hebt geconfigureerd, kiest u **OK**.
 
 ## <a name="finish-up"></a>Voltooien
 
-1.  Kies OK in het deelvenster **Opleiding**.
-2.  Kies **Maken** in het deelvenster **Profiel maken**.
-    
+1. Kies OK in het deelvenster **Opleiding**.
+2. Kies **Maken** in het deelvenster **Profiel maken**.
+
 Het profiel wordt gemaakt en wordt weergegeven in het deelvenster met de profielenlijst.
 
 Wijs het profiel toe aan studentapparaten in de Classroom-groepen die zijn gemaakt toen u uw schoolgegevens synchroniseerde met Azure AD (Zie [Apparaatprofielen toewijzen](device-profile-assign.md)).

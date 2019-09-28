@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bbd90b5a317629bd5b4d87b619d89023053518d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 528819452accf4a7f17e54b3c05693dee5cab74f
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884245"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239459"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Wi-Fi-instellingen toevoegen voor apparaten met Windows 10 en hoger in Intune
 
@@ -62,6 +62,9 @@ In dit artikel worden deze instellingen beschreven.
     
       > [!NOTE]
       > Wanneer u het Wi-Fi-profiel opslaat, worden de door u ingevoerde waarde voor PSK om beveiligingsredenen niet weergegeven. In de vooraf gedeelde watermerk van de sleutel wordt nog steeds **Niet geconfigureerd** weergegeven, zelfs als de PSK in het profiel is opgeslagen. Als u wilt de PSK wijzigen, voert u een nieuwe sleutel in en slaat u het profiel op. Als u een PSK opslaat, het beleid bewerkt en de PSK leeg laat, wordt nog steeds de bestaande PSK gebruikt.
+      
+      > [!IMPORTANT]
+      > De PSK is hetzelfde voor alle apparaten waarop u de profule richt. Als de sleutel is aangetast, kan deze door elk apparaat worden gebruikt om verbinding te maken met het Wi-Fi-netwerk. Beveilig uw PSKs om onbevoegde toegang te voor komen.
 
 - **Bedrijfsproxyinstellingen**: kies deze optie om de proxyinstellingen binnen uw organisatie te gebruiken. Uw opties zijn:
   - **Geen**: er zijn geen proxyinstellingen geconfigureerd.

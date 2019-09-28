@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c518e0eeb18f51fa17d15a72735e319aef1d647d
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 6a545bff8624f4447ca9805aecf6d4d288fe4314
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167469"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239523"
 ---
 # <a name="enable-code-integrity"></a>Code-integriteit inschakelen
 
@@ -35,7 +35,7 @@ Als u zichzelf identificeert als een geavanceerde gebruiker van een apparaat en 
 
 ## <a name="additional-resources-for-it-administrators"></a>Aanvullende resources voor IT-beheerders
 
-Als u een intune-beheerder bent en meer wilt weten over de instellingen voor de naleving van de apparaatstatus van intune, raadpleegt u [een apparaatcompatibiliteit voor Windows 10-apparaten toevoegen in intune](https://docs.microsoft.com/intune/compliance-policy-create-windows.md). Zie de [HEALTHATTESTATION CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)voor een gedetailleerde weer gave van de nalevings acties die u in intune kunt uitvoeren.  
+Als u een intune-beheerder bent en meer wilt weten over de instellingen voor de naleving van de apparaatstatus van intune, raadpleegt u [een apparaatcompatibiliteit voor Windows 10-apparaten toevoegen in intune](https://docs.microsoft.com/intune/compliance-policy-create-windows). Zie de [HEALTHATTESTATION CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)voor een gedetailleerde weer gave van de nalevings acties die u in intune kunt uitvoeren.  
 
 ## <a name="next-steps"></a>Volgende stappen
 

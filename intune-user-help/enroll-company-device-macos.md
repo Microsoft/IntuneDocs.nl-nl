@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9066fefccde39ccac281f3bda9008168ea28b77f
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 0de0e676e72d46bde922fd97b651cc1a9268e45e
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166619"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239778"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Het door uw organisatie verstrekte iOS-apparaat voor beheer inschrijven
 
@@ -35,7 +35,7 @@ U kunt beheer instellen door uw apparaat in te schakelen en u aan te melden met 
 
 ## <a name="what-is-apple-dep"></a>Wat is Apple DEP?
 
-Uw organisatie heeft mogelijk hun apparaten aangeschaft via een programma met de naam *Apple Device Enrollment Program* (DEP). Organisaties kopen grote hoeveelheden iOS- of macOS-apparaten via Apple DEP. Organisaties kunnen die apparaten vervolgens configureren en beheren in hun favoriete provider voor mobiele apparaatbeheer, zoals Intune. Zie [macOS-apparaten automatisch inschrijven met Apple Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos.md) als u beheerder bent en informatie wilt over Apple DEP.  
+Uw organisatie heeft mogelijk hun apparaten aangeschaft via een programma met de naam *Apple Device Enrollment Program* (DEP). Organisaties kopen grote hoeveelheden iOS- of macOS-apparaten via Apple DEP. Organisaties kunnen die apparaten vervolgens configureren en beheren in hun favoriete provider voor mobiele apparaatbeheer, zoals Intune. Zie [macOS-apparaten automatisch inschrijven met Apple Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos) als u beheerder bent en informatie wilt over Apple DEP.  
 
 ## <a name="get-your-device-managed"></a>Uw apparaat laten beheren
 

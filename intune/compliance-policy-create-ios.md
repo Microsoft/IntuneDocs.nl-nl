@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ec071622a2e0d49068864f8bfb47954f54c8ba4
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: bde1c296abb99e8c0c81b44908e78b204c62388e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423608"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71304130"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>iOS-instellingen om te markeren of apparaten wel of niet conform zijn met behulp van Intune
 
@@ -85,7 +84,7 @@ Zie [De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Intune
     Als u een hogere waarde instelt, moet de gebruiker een wachtwoord maken dat complexer is.
 
 - **Maximum aantal minuten van inactiviteit voordat wachtwoord is vereist**: geef aan na hoeveel niet-actieve tijd de gebruiker het wachtwoord opnieuw moet invoeren.
-- **Wachtwoord verloopt (in dagen)**: selecteer het aantal dagen waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken.
+- **Wachtwoord verloopt (in dagen)** : selecteer het aantal dagen waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken.
 - **Aantal eerdere wachtwoorden dat niet opnieuw mag worden gebruikt**: voer het aantal eerder gebruikte wachtwoorden in dat niet opnieuw mag worden gebruikt.
 
 ### <a name="device-security"></a>Apparaatbeveiliging

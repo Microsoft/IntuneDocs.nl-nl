@@ -6,9 +6,8 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 08/27/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,29 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0728fefc40bc82db7926faf282a69d0471c3a1ea
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: HT
+ms.openlocfilehash: 88681696716080b38d0f7d9e79264d002f335029
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798116"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "71303296"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Het Intune-datawarehouse gebruiken
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Gebruik het Intune-datawarehouse om rapporten te genereren die inzicht in de mobiele omgeving van uw bedrijf bieden. Rapporten kunnen bijvoorbeeld het volgende bevatten:
--   Trend van gebruikers die zich registreren bij Intune, zodat u uw licentieaankopen kunt optimaliseren
--   Uitsplitsing van app- en besturingssysteemversies zodat u de status van mobiele apparaten kunt controleren
--   Registratie- en apparaatnalevingstrends zodat u de implementatie van beleidsupdates soepel kunt laten verlopen
+- Trend van gebruikers die zich registreren bij Intune, zodat u uw licentieaankopen kunt optimaliseren
+- Uitsplitsing van app- en besturingssysteemversies zodat u de status van mobiele apparaten kunt controleren
+- Registratie- en apparaatnalevingstrends zodat u de implementatie van beleidsupdates soepel kunt laten verlopen
 
 ## <a name="data-warehouse-benefits"></a>Voordelen van het datawarehouse
 
 Het datawarehouse biedt u toegang tot meer informatie over uw mobiele omgeving dan Azure Portal. U hebt met het Intune-datawarehouse toegang tot:
 
-  -  Historische Intune-gegevens
-  -  Gegevens die dagelijks worden vernieuwd
-  -  Een gegevensmodel waarbij de OData-standaard wordt gebruikt
+- Historische Intune-gegevens
+- Gegevens die dagelijks worden vernieuwd
+- Een gegevensmodel waarbij de OData-standaard wordt gebruikt
 
 > [!Note]
 > Als u gebruikmaakt van gezamenlijk beheerd Mobile Device Management (MDM) met System Center Configuration Manager en Microsoft Intune, moet u uw gegevens ophalen uit Configuration Manager. Het Intune-datawarehouse bevat alleen Intune-gegevens. U kunt een Configuration Manager Power BI-dashboard gebruiken voor uw aangepaste rapporten. Zie [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) (Introductie van de Power BI-oplossingssjabloon voor System Center Configuration Manager) en [Power BI content for Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page) (Power BI-inhoud voor Dynamics 365) voor meer informatie.

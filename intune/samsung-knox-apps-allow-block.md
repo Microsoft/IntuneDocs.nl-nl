@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4efa2a813dda16805effe55ff3d1b967ef5d6c88
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: edff9ca3e292a2b5653a8b156a8deaa02bb79e9d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798224"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71303172"
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Aangepast beleid gebruiken in Microsoft Intune om apps toe te staan of te blokkeren voor Samsung Knox Standard-apparaten 
 
@@ -36,8 +35,7 @@ Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung Knox 
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>En lijst met toegestane of geblokkeerde apps maken
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
 2. Kies **Beheren** > **Profielen** in het deelvenster **Apparaatconfiguratie**.
 2. Kies **Profiel maken** in het deelvenster met de profielenlijst.
@@ -51,9 +49,9 @@ Deze instellingen kunnen alleen worden gebruikt door apparaten met Samsung Knox 
 
    - **Naam**: voer **PreventStartPackages** in.
    - **Beschrijving**: voer eventueel een beschrijving in, zoals 'Lijst met apps die zijn geblokkeerd'.
-   -    **Gegevenstype**: kies **Tekenreeks** in de vervolgkeuzelijst.
-   -    **OMA-URI**: voer **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** in
-   -    **Waarde**: voer een lijst in met de app-pakketnamen die u wilt toestaan. U kunt **; : ,** of **|** gebruiken als scheidingsteken. (Voorbeeld: pakket1; pakket2;)
+   - **Gegevenstype**: kies **Tekenreeks** in de vervolgkeuzelijst.
+   - **OMA-URI**: voer **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** in
+   - **Waarde**: voer een lijst in met de app-pakketnamen die u wilt toestaan. U kunt **; : ,** of **|** gebruiken als scheidingsteken. (Voorbeeld: pakket1; pakket2;)
 
    Voor een lijst met apps die gebruikers mogen installeren vanuit de Google Play Store, terwijl alle andere apps worden uitgesloten:
    - **Naam**: voer **AllowInstallPackages** in.
