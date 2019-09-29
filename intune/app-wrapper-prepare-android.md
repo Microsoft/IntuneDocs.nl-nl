@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 07/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64de72822ad8d2f8d9893e3428208ff1363d33e2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 732e391ad3c85c1f3f5da36b3424544cf1cdf4aa
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566043"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71238791"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Android-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -36,35 +35,35 @@ Controleer [Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool](#
 
 ## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>Voldoen aan de vereisten voor het gebruik van App Wrapping Tool
 
--   U moet App Wrapping Tool uitvoeren op een Windows-computer met Windows 7 of hoger.
+- U moet App Wrapping Tool uitvoeren op een Windows-computer met Windows 7 of hoger.
 
--   Uw invoer-app moet een geldig Android-toepassingspakket zijn met de extensie .apk en:
+- Uw invoer-app moet een geldig Android-toepassingspakket zijn met de extensie .apk en:
 
-    -   Mag niet versleuteld zijn.
-    -   Mag niet al zijn verpakt met App Wrapping Tool.
-    -   Moet zijn geschreven voor Android 4.0 of hoger.
+  - Mag niet versleuteld zijn.
+  - Mag niet al zijn verpakt met App Wrapping Tool.
+  - Moet zijn geschreven voor Android 4.0 of hoger.
 
--   De app moet zijn ontwikkeld door of voor uw bedrijf. U kunt dit hulpprogramma niet gebruiken voor apps die zijn gedownload uit de Google Play Store.
+- De app moet zijn ontwikkeld door of voor uw bedrijf. U kunt dit hulpprogramma niet gebruiken voor apps die zijn gedownload uit de Google Play Store.
 
--   Als u App Wrapping Tool wilt uitvoeren, moet u de nieuwste versie van [Java Runtime Environment](https://java.com/download/) installeren en vervolgens controleren of het variabele Java-pad is ingesteld op C:\ProgramData\Oracle\Java\javapath in de Windows-omgevingsvariabelen. Zie de [Java-documentatie](https://java.com/download/help/) voor meer informatie.
+- Als u App Wrapping Tool wilt uitvoeren, moet u de nieuwste versie van [Java Runtime Environment](https://java.com/download/) installeren en vervolgens controleren of het variabele Java-pad is ingesteld op C:\ProgramData\Oracle\Java\javapath in de Windows-omgevingsvariabelen. Zie de [Java-documentatie](https://java.com/download/help/) voor meer informatie.
 
     > [!NOTE]
     > In bepaalde gevallen kan de 32-bits versie van Java leiden tot geheugenproblemen. Het is verstandig de 64-bits versie te installeren.
 
-- Android vereist dat alle app-pakketten (.apks) zijn ondertekend. Zie [Ondertekeningscertificaten hergebruiken en apps verpakken](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps) als u bestaande certificaten **opnieuw wilt gebruiken** en voor hulp bij het algemeen ondertekenen van certificaten. Het uitvoerbare Java-bestand keytool.exe wordt gebruikt om **nieuwe** referenties te genereren die nodig zijn om de verpakte uitvoer-app te ondertekenen. Ingestelde wachtwoorden moeten veilig zijn, maar onthoud ze goed, want ze zijn later nodig om App Wrapping Tool uit te voeren.
+- Android vereist dat alle app-pakketten (.apks) zijn ondertekend. Zie [Ondertekeningscertificaten hergebruiken en apps verpakken](app-wrapper-prepare-android.md#reusing-signing-certificates-and-wrapping-apps) als u bestaande certificaten **opnieuw wilt gebruiken** en voor hulp bij het algemeen ondertekenen van certificaten. Het uitvoerbare Java-bestand keytool.exe wordt gebruikt om **nieuwe** referenties te genereren die nodig zijn om de verpakte uitvoer-app te ondertekenen. Ingestelde wachtwoorden moeten veilig zijn, maar onthoud ze goed, want ze zijn later nodig om App Wrapping Tool uit te voeren.
 
     > [!NOTE]
     > De Intune App Wrapping Tool biedt geen ondersteuning voor handtekeningschema v2 en het toekomstige schema v3 van Google voor app-ondertekening. Nadat u het APK-bestand met de Intune App Wrapping Tool hebt verpakt, kunt u het beste het door [Google geleverde Apksigner-hulpprogramma]( https://developer.android.com/studio/command-line/apksigner) gebruiken. Dit zorgt ervoor dat wanneer uw app op apparaten van de eindgebruiker wordt gedownload, het correct kan worden gestart volgens Android-standaarden. 
 
-- (Optioneel) soms bereikt een app de Dalvik Executable-groottelimiet (DEX) als gevolg van de Intune MAM SDK-klassen die tijdens het verpakken worden toegevoegd. DEX-bestanden maken deel uit van de compilatie van een Android-app. De Intune App Wrapping Tool verwerkt automatisch DEX bestand overloop tijdens de wrapping voor apps met een minimale API-niveau van 21 of hoger (vanaf [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Voor apps met een minimale API-niveau van < 21, best practices zou zijn om te verhogen van de minimale waarde API-niveau met behulp van de wrapper `-UseMinAPILevelForNativeMultiDex` vlag. De volgende DEX overloop oplossingen zijn beschikbaar voor klanten kan niet van de app minimale API-niveau verhogen. In bepaalde organisaties vereist dit mogelijk samenwerking met de persoon die de app compileert:
-* ProGuard gebruiken voor het verwijderen van ongebruikte klasse verwijzingen van de primaire DEX-bestand van de app.
-* Voor klanten die gebruikmaken van v3.1.0 of hoger van de invoegtoepassing Android Gradle, schakelen de [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
+- (Optioneel) soms bereikt een app de Dalvik Executable-groottelimiet (DEX) als gevolg van de Intune MAM SDK-klassen die tijdens het verpakken worden toegevoegd. DEX-bestanden maken deel uit van de compilatie van een Android-app. De intune app Wrapping tool verwerkt automatisch geoverflowte bestanden tijdens het inpakken voor apps met een mini maal API-niveau van 21 of hoger (vanaf [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Voor apps met een mini maal API-niveau van < 21 moet best practice het minimale API-niveau verhogen met de vlag `-UseMinAPILevelForNativeMultiDex` van de wrapper. Voor klanten kan het minimale API-niveau van de app niet verhogen, de volgende DEX-tijdelijke oplossingen zijn beschikbaar. In bepaalde organisaties vereist dit mogelijk samenwerking met de persoon die de app compileert:
+* Gebruik proguard om ongebruikte klassen verwijzingen te verwijderen uit het primaire bestand van de app.
+* Voor klanten die gebruikmaken van v 3.1.0 of hoger van de Android Gradle-invoeg toepassing, schakelt u de [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)uit.  
 
 ## <a name="install-the-app-wrapping-tool"></a>De App Wrapping Tool installeren
 
-1.  Download vanuit de [GitHub-opslagplaats](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) het installatiebestand InstallAWT.exe voor Intune App Wrapping Tool voor Android naar een Windows-computer. Open het installatiebestand.
+1. Download vanuit de [GitHub-opslagplaats](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) het installatiebestand InstallAWT.exe voor Intune App Wrapping Tool voor Android naar een Windows-computer. Open het installatiebestand.
 
-2.  Accepteer de gebruiksrechtovereenkomst en voltooi de installatie.
+2. Accepteer de gebruiksrechtovereenkomst en voltooi de installatie.
 
 Onthoud in welke map het hulpprogramma is geïnstalleerd. De standaardlocatie is: C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
 
@@ -79,6 +78,7 @@ Onthoud in welke map het hulpprogramma is geïnstalleerd. De standaardlocatie is
    ```
 
 3. Voer het hulpprogramma uit met de opdracht **invoke-AppWrappingTool**, die wordt gebruikt met de volgende syntaxis:
+
    ```PowerShell
    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
@@ -95,7 +95,7 @@ Onthoud in welke map het hulpprogramma is geïnstalleerd. De standaardlocatie is
 |**-KeyAlias**&lt;tekenreeks&gt;|Naam van de sleutel die moet worden gebruikt voor het ondertekenen.| |
 |**-KeyPassword**&lt;SecureString&gt;|Wachtwoord dat wordt gebruikt om de persoonlijke sleutel te ontsleutelen die wordt gebruikt voor het ondertekenen.| |
 |**-SigAlg**&lt;SecureString&gt;| (Optioneel) De naam van het handtekeningalgoritme dat moet worden gebruikt voor de ondertekening. Het algoritme moet compatibel zijn met de persoonlijke sleutel.|Voorbeelden: SHA256withRSA, SHA1withRSA|
-|**-UseMinAPILevelForNativeMultiDex**| (Optioneel) Deze vlag gebruiken voor het verhogen van de bron Android-app minimale API-niveau op 21. Met deze markering wordt gevraagd om bevestiging als deze wordt beperkt die deze app kunnen installeren. Gebruikers toevoegen door de parameter toe te voegen kunnen overslaan '-bevestigen: $false "aan hun PowerShell-opdracht. De vlag mag alleen worden gebruikt door klanten van apps met minimale API < 21 die niet voldoen aan het verpakken is vanwege DEX overloopfouten. | |
+|**-UseMinAPILevelForNativeMultiDex**| Beschrijving Gebruik deze vlag om het minimale API-niveau van de bron-Android-app te verg Roten naar 21. Met deze vlag wordt om bevestiging gevraagd, waarna wordt beperkt wie deze app mag installeren. Gebruikers kunnen het bevestigings dialoogvenster overs Laan door de para meter '-confirm: $false ' toe te voegen aan de Power shell-opdracht. De vlag mag alleen worden gebruikt door klanten op apps met een minimale API < 21, waardoor er geen verloopt als gevolg van DEX-overloop fouten. | |
 | **&lt;CommonParameters&gt;** | (Optioneel) De opdracht ondersteunt algemene PowerShell-parameters, zoals verbose, debug enzovoort. |
 
 
@@ -110,10 +110,13 @@ Onthoud in welke map het hulpprogramma is geïnstalleerd. De standaardlocatie is
 **Voorbeeld:**
 
 Importeer de PowerShell-module.
+
 ```PowerShell
 Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
 ```
+
 Voer App Wrapping Tool uit in de oorspronkelijke app HelloWorld.apk.
+
 ```PowerShell
 invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped\HelloWorld_wrapped.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\mykeystorefile" -keyAlias mykeyalias -SigAlg SHA1withRSA -Verbose
 ```
@@ -128,12 +131,12 @@ De belangrijkste scenario's waarin u uw toepassingen opnieuw moet verpakken, zij
 * Er is een nieuwe versie uitgebracht van de Intune App Wrapping Tool voor Android, met oplossingen voor belangrijke problemen of nieuwe beveiligingsbeleidskenmerken specifiek voor de Intune-toepassing. Dit gebeurt elke 6-8 weken via de GitHub-opslagplaats van de [Microsoft Intune App Wrapping Tool voor Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
 
 Enkele best practices voor opnieuw verpakken: 
-* Ondertekeningscertificaten onderhouden die tijdens het bouwproces zijn gebruikt. Zie [Ondertekeningscertificaten hergebruiken en apps verpakken](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
+* Ondertekeningscertificaten onderhouden die tijdens het bouwproces zijn gebruikt. Zie [Ondertekeningscertificaten hergebruiken en apps verpakken](app-wrapper-prepare-android.md#reusing-signing-certificates-and-wrapping-apps)
 
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Ondertekeningscertificaten hergebruiken en apps verpakken
 Android vereist dat alle apps zijn ondertekend met een geldig certificaat voordat ze kunnen worden geïnstalleerd op Android-apparaten.
 
-Verpakte apps kunnen zijn ondertekend tijdens het wrapping-proces of *na* het verpakken, met gebruik van uw bestaande hulpmiddelen voor ondertekening. Alle aanwezige ondertekeningsinformatie in de app voorafgaand aan het verpakken wordt verwijderd. Indien mogelijk moet de ondertekeningsinformatie die is gebruikt tijdens het buildproces worden gebruikt tijdens het verpakken. In bepaalde organisaties vereist dit mogelijk samenwerking met de eigenaar van de informatie over de sleutelopslag (zoals degenen die de app maken). 
+Verpakte apps kunnen zijn ondertekend tijdens het wrapping-proces of *na* het verpakken, met gebruik van uw bestaande hulpmiddelen voor ondertekening. Alle aanwezige ondertekeningsinformatie in de app voorafgaand aan het verpakken wordt verwijderd. Indien mogelijk moet de ondertekeningsinformatie die is gebruikt tijdens het buildproces worden gebruikt tijdens het verpakken. In bepaalde organisaties vereist dit mogelijk samenwerking met de eigenaar van de informatie over de sleutelopslag (zoals degenen die de app maken). 
 
 Als het vorige ondertekeningscertificaat niet kan worden gebruikt of de app nog niet eerder is geïmplementeerd, kunt u een nieuw ondertekeningscertificaat maken aan de hand van de instructies in de [Android Developer Guide](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
 
@@ -142,17 +145,17 @@ Als de app al eerder is geïmplementeerd met een ander ondertekeningscertificaat
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>Beveiligingsoverwegingen voor het uitvoeren van App Wrapping Tool
 Potentiële adresvervalsing (spoofing), vrijgeven van informatie en uitbreiding van bevoegdheden voorkomen:
 
--   Zorg ervoor dat de invoer-Line-Of-Bussiness-app, de uitvoer-app en de Java KeyStore zich op de Windows-computer bevinden waarop ook App Wrapping Tool wordt uitgevoerd.
+- Zorg ervoor dat de invoer-Line-Of-Bussiness-app, de uitvoer-app en de Java KeyStore zich op de Windows-computer bevinden waarop ook App Wrapping Tool wordt uitgevoerd.
 
--   Importeer de uitvoer-app naar Intune op de machine waarop ook de App Wrapping Tool wordt uitgevoerd. Zie [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) voor meer informatie over de Java-keytool.
+- Importeer de uitvoer-app naar Intune op de machine waarop ook de App Wrapping Tool wordt uitgevoerd. Zie [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) voor meer informatie over de Java-keytool.
 
--   Als de uitvoertoepassing en het hulpprogramma zich in een UNC-pad (Universal Naming Convention) bevinden en u het hulpprogramma en de invoerbestanden niet op dezelfde computer uitvoert, stelt u de omgeving zodanig in dat deze wordt beveiligd met [IP-beveiligingsbeleid (IPsec)](https://wikipedia.org/wiki/IPsec) of [Server Message Block (SMB)-ondertekening](https://support.microsoft.com/kb/887429).
+- Als de uitvoertoepassing en het hulpprogramma zich in een UNC-pad (Universal Naming Convention) bevinden en u het hulpprogramma en de invoerbestanden niet op dezelfde computer uitvoert, stelt u de omgeving zodanig in dat deze wordt beveiligd met [IP-beveiligingsbeleid (IPsec)](https://wikipedia.org/wiki/IPsec) of [Server Message Block (SMB)-ondertekening](https://support.microsoft.com/kb/887429).
 
--   Zorg ervoor dat de app afkomstig is van een vertrouwde bron.
+- Zorg ervoor dat de app afkomstig is van een vertrouwde bron.
 
--   Beveilig de uitvoermap die de verpakte app bevat. Overweeg het gebruik van een map op gebruikersniveau voor de uitvoer.
+- Beveilig de uitvoermap die de verpakte app bevat. Overweeg het gebruik van een map op gebruikersniveau voor de uitvoer.
 
-### <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie tevens
 - [Bepalen hoe u apps voorbereidt op Mobile Application Management met Microsoft Intune](apps-prepare-mobile-application-management.md)
 
 - [Ontwikkelaarshandleiding voor Microsoft Intune App SDK voor Android](app-sdk-android.md)
