@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
+ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166329"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71279901"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune. 
 
@@ -66,38 +66,6 @@ U hoeft geen actie meer te ondernemen, maar u kunt overwegen uw IT-begeleiding b
 #### <a name="additional-information"></a>Aanvullende informatie 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>Geplande wijziging: Intune zal vanaf september iOS 11 en hoger ondersteunen <!-- 4665324-->
-We verwachten dat iOS 13 in september wordt uitgebracht door Apple. Kort na de release van iOS 13 zullen Intune-inschrijving, de bedrijfsportal en de beheerde browser ondersteuning bieden voor iOS 11 en hoger.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Onder voorwaarde dat de mobiele Office 365-apps worden ondersteund in iOS 11.0 en hoger, heeft dit mogelijk geen gevolgen voor u omdat u waarschijnlijk het besturingssysteem of de apparaten al hebt geüpgraded. Als u echter over een van de hieronder vermelde apparaten beschikt of als u een van de hieronder vermelde apparaten wilt inschrijven, moet u er rekening mee houden dat de onderstaande apparaten alleen iOS 10 en eerdere versies ondersteunen. Deze apparaten moeten worden geüpgraded naar een apparaat dat ondersteuning biedt voor iOS 11 of hoger:
-
-- iPhone 5
-- iPhone 5c
-- iPad (4e generatie)
-
-Als u Application Protection Policies (APP) gebruikt, kunt u ook de toegangsinstelling 'Minimumversie van het iOS-besturingssysteem vereisen (alleen waarschuwing)' instellen.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
-Controleer uw Intune-rapporten om te zien voor welke apparaten of gebruikers dit gevolgen kan hebben. Ga naar **Apparaten** > **Alle apparaten** en filter op besturingssysteem. U kunt extra kolommen toevoegen, zodat u eenvoudiger kunt vaststellen wie in uw organisatie apparaten met iOS 10 gebruikt. Verzoek uw eindgebruikers om vóór september hun apparaten te upgraden naar een ondersteunde besturingssysteemversie.
-
-### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>Geplande wijziging: Ondersteuning voor versie 8.1.1 en hoger van de Intune App SDK voor iOS <!-- 3586942-->
-Vanaf september 2019 biedt Intune ondersteuning voor iOS-apps met Intune App SDK 8.1.1 en hoger. Apps die zijn gemaakt met SDK-versies lager dan 8.1.1 worden niet meer ondersteund. Deze wijziging wordt van kracht met de Apple-release van iOS 13, die rond september wordt verwacht en ook is aangekondigd in MC181399.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Met de integratie van de Intune App SDK of App Wrapping kunt u bedrijfsgegevens via gegevensversleuteling beveiligen tegen niet-goedgekeurde toepassingen en gebruikers. De Intune App SDK voor iOS gebruikt standaard 256-bits versleutelingssleutels wanneer versleuteling is ingeschakeld door Intune App Protection Policies (APP). Na deze wijziging kunnen iOS-apps voor SDK-versies lager dan 8.1.1, die gebruikmaken van 128-bits versleutelingssleutels, geen gegevens meer delen met toepassingen die zijn geïntegreerd met SDK 8.1.1 of die gebruikmaken van de 256-bits sleutels. Alle iOS-apps moeten eerst over een SDK-versie 8.1.1 of hoger beschikken, als u het beveiligd delen van gegevens wilt toestaan.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
-Controleer uw Microsoft-apps, apps van derden en LOB-apps (Line-Of-Business). Zorg ervoor dat al uw toepassingen die met Intune APP worden beveiligd, gebruikmaken van SDK-versie 8.1.1 of hoger.
-
-- Voor LOB-apps: U moet uw apps die zijn geïntegreerd met SDK-versie 8.1.1 of hoger mogelijk opnieuw publiceren. U wordt aangeraden de meest recente SDK-versie te gebruiken. Raadpleeg [Line-Of-Business-apps voorbereiden voor app-beveiligingsbeleid](../apps-prepare-mobile-application-management.md) om te zien hoe u uw LOB-apps voorbereidt voor app-beveiligingsbeleid.
-- Voor Microsoft-apps/apps van derden: Zorg ervoor dat u de meest recente versie van deze apps naar uw gebruikers implementeert.
-
-U moet zo nodig ook uw documentatie of de richtlijnen voor ontwikkelaars bijwerken, zodat deze wijziging in de ondersteuning voor de SDK is opgenomen.
-
-#### <a name="additional-information"></a>Aanvullende informatie
-[Line-of-business-apps voorbereiden voor app-beveiligingsbeleid](../apps-prepare-mobile-application-management.md)
-
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Geplande wijziging: Nieuwe instellingen voor Windows-updates in Intune <!-- 4464404 -->
 Vanaf de versie van augustus van de Intune-service of 1908 voegen we nieuwe 'Deadline-instellingen' toe die u kunt configureren in plaats van de instellingen 'Gebruikers toestaan opnieuw te starten (gepland opnieuw opstarten)'. We zijn van plan de instellingen voor gepland opnieuw opstarten in de gebruikersinterface uit te schakelen in 1909 of de update van september en om deze aan het eind van oktober volledig uit de console te verwijderen. 
 
@@ -132,3 +100,19 @@ Hieronder vindt u een lijst van algemene apparaten die worden geregistreerd bij 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
 Verpak je apps met de nieuwste Intune App SDK. U kunt ook de voorwaardelijke startinstelling 'Minimale OS-versie vereisen (alleen waarschuwen)' instellen om eindgebruikers op persoonlijke apparaten een melding te sturen om een upgrade uit te voeren.
+
+
+### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Geplande wijziging voor Intune: aanstaand einde van ondersteuning voor Windows 7 <!-- 3042987 -->
+Zoals we in september 2018 in het bericht MC148476 en in maart 2019 in het bericht MC176794 hebben gemeld, bereikt Windows 7 op 14 januari 2020 het einde van de uitgebreide ondersteuning. Op dat moment wordt de ondersteuning voor apparaten met Windows 7 beëindigd, zodat we kunnen investeren in het ondersteunen van nieuwere technologieën en het bieden van fantastische nieuwe ervaringen voor eindgebruikers. Na deze datum zijn technische hulp en automatische updates ter beveiliging van uw Windows 7-pc niet langer beschikbaar via Intune. Microsoft raadt u ten zeerste aan om vóór januari 2020 over te stappen op Windows 10, om situaties te vermijden waarin u service of ondersteuning nodig hebt die niet meer beschikbaar is. Meer informatie over de levenscyclus voor Windows-ondersteuning leest u [hier](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+U ontvangt dit bericht omdat u momenteel Windows 7-pc's beheert met behulp van de verouderde Intune-software-agent voor pc's. Omdat de uitgebreide ondersteuning van Windows 7 in minder dan een jaar wordt beëindigd, raden wij uw organisatie ten zeerste aan om zo snel mogelijk een upgrade naar Windows 10 uit te voeren. Beheermogelijkheden voor pc's zijn rechtstreeks in het Windows 10-besturingssysteem ingebouwd, zodat u geen client-agent meer hoeft te installeren, zoals de Intune-software-client voor Windows 7. Vanaf Windows 8.1 gebruikt Microsoft architectuur voor Mobile Device Management (MDM) om Windows-pc's in te richten, te configureren, bij te werken en te beheren. Wanneer u Intune hebt ingesteld, kunt u Windows-enrollment vereenvoudigen door [Windows 10-pc's bij Intune te registreren](..\windows-enroll.md) met behulp van het MDM-kanaal. U wordt aangeraden om deze 'agentloze' MDM-beheeroplossing te gebruiken voor het beheren van uw Windows 10-pc's.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+We raden uw organisatie aan om dit actieplan onmiddellijk te overwegen:
+
+- Plan vóór 14 januari 2020 een upgrade naar Windows 10 voor uw Windows 7-apparaten en voer deze uit.
+- Lees meer over de [implementatie-ondersteuning voor Windows 10](https://docs.microsoft.com/windows/deployment/) voor meer informatie over het upgraden van uw bestaande Windows 7-pc's naar Windows 10.
+- Bekijk het aanbod voor [Desktop App Assure](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) via Fast Track voor hulp met de belofte van programmacompatibiliteit van Microsoft.
+- Migreer bestaande apparaten die worden beheerd met de verouderde Intune-softwareclient naar de door Microsoft aanbevolen oplossing om Windows 10 met behulp van MDM te beheren. Registreer alle nieuwe Windows 10-pc's met behulp van MDM-beheer voor Intune in de Azure-portal.
+- Raadpleeg [dit blogbericht](https://aka.ms/Windows7_Intune) voor meer informatie.
