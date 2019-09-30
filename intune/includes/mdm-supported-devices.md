@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d0a113a30ad7394491552fdbc3b3fb300e0ae6df
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 797d1c66c50bed91f58eab535696b34001fcb28d
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57333936"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "71239580"
 ---
 
 
@@ -24,6 +24,10 @@ ms.locfileid: "57333936"
 
 - Surface Hub
 - Windows 10 (versies Home, S, Pro, Education en Enterprise)
+- Windows 10 Enterprise 2019 LTSC
+
+  Zie [Nieuwe functies in Windows 10 Enterprise 2019 LTSC](https://docs.microsoft.com/en-us/windows/whats-new/ltsc/whats-new-windows-10-2019) voor meer informatie over het beheren van apparaten waarop Windows 10 2019 LTSC wordt uitgevoerd
+  
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)
 - Windows 10 IoT Mobile Enterprise
@@ -31,10 +35,13 @@ ms.locfileid: "57333936"
 
   Zie [Ondersteuning voor Windows Holographic for Business](../windows-holographic-for-business.md) voor meer informatie over het beheer van apparaten waarop Windows Holographic for Business wordt uitgevoerd.
 
+- Windows 10 Teams (Surface Hub)
+
+   Zie [Surface Hub beheren met MDM](https://docs.microsoft.com/en-us/surface-hub/manage-settings-with-mdm-for-surface-hub) voor meer informatie over het beheren van apparaten waarop Windows 10 Teams wordt uitgevoerd
 - Windows Phone 8.1, Windows 8.1 RT en pc's met Windows 8.1 (Sustaining modus)
 
 > [!NOTE]
-> Intune kan niet worden gebruikt voor het beheren van Windows Server-besturingssystemen. Sommige functies van Intune worden niet ondersteund in Home-SKU
+> Niet alle Windows-edities bieden ondersteuning voor alle beschikbare systeemfuncties die worden geconfigureerd via MDM. Raadpleeg de [referentiedocumenten voor de serviceprovider voor Windows-configuratie](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers). Elke CSP laat zien welke Windows-edities worden ondersteund.
 
 Klanten met Enterprise Management + Security (EMS) kunnen ook [Azure Active Directory (Azure AD) gebruiken voor het registreren van Windows 10-apparaten](/intune/windows-enroll).
 

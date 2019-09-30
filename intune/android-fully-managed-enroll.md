@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dff37794d6c58094749821748dcc96a4f36e28a
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 0035f8d5cd67a995924f7d07a662d8c0671bf063
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071630"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163785"
 ---
-# <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Intune-inschrijving van volledig beheerde Android Enterprise-apparaten instellen (preview-versie)
+# <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Intune-inschrijving van volledig beheerde Android Enterprise-apparaten instellen 
 
 Volledig beheerde Android Enterprise-apparaten zijn apparaten in bedrijfseigendom voor één gebruiker, die exclusief worden gebruikt voor werk, niet voor persoonlijk gebruik. Beheerders kunnen het hele apparaat beheren en beleidscontroles afdwingen die niet beschikbaar zijn voor werkprofielen, zoals:
 - Alleen app-installatie toestaan vanaf beheerde Google Play.
@@ -39,7 +39,7 @@ U hebt een zelfstandige Intune-tenant nodig om volledig beheerde Android Enterpr
 
 Apparaten moeten voldoen aan de volgende vereisten om te worden beheerd als een volledig beheerd Android Enterprise-apparaat:
 
-- Android-besturingssysteemversie 5.1 en hoger.
+- Android-besturingssysteemversie 6.0 en hoger.
 - Op de apparaten moet een build van Android worden uitgevoerd die connectiviteit met GMS (Google Mobile Services) heeft. Op de apparaten moet GMS beschikbaar zijn en de apparaten moeten in staat zijn om verbinding te maken met GMS.
 
 Er geldt geen beperking voor de apparaatfabrikant/OEM indien aan de bovenstaande vereisten is voldaan.
@@ -55,7 +55,7 @@ Volg deze stappen om het beheer van volledig beheerde Android Enterprise-apparat
 
 ### <a name="enable-corporate-owned-user-devices"></a>Apparaten in bedrijfseigendom inschakelen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Bedrijfseigendom, volledig beheerde gebruikersapparaten (preview)** .
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Bedrijfseigendom, volledig beheerde gebruikersapparaten**.
 2. Onder **Allow users to enroll corporate-owned user devices** (Gebruikers toestaan apparaten in bedrijfseigendom in te schrijven) kiest u **Ja**.
 
 > [!NOTE]
@@ -65,25 +65,6 @@ Wanneer deze instelling is ingesteld op **Ja**, ontvangt u een inschrijvingstoke
 
 ## <a name="enroll-the-fully-managed-devices"></a>De volledig beheerde apparaten inschrijven
 U kunt nu [uw volledig beheerde apparaten inschrijven](android-dedicated-devices-fully-managed-enroll.md).
-
-## <a name="considerations-for-this-preview-feature"></a>Overwegingen voor deze preview-functie
-Deze openbare preview bevat een kernset aan functies voor de oplossing voor volledig beheerde Android Enterprise-apparaten. We horen graag wat uw ervaringen zijn met het gebruik van de preview-functies met een van uw huidige communicatiekanalen naar het team (zoals [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853)).
-
-Deze preview-versie ondersteunt de volgende functies voor volledig beheerde Android Enterprise-apparaten:
-- Apparaten inschrijven met behulp van NFC, tokenvermelding, QR-code en Zero Touch
-- Apparaatconfiguratie voor gebruikersgroepen
-- App-distributie en configuratie voor gebruikersgroepen
-
-
-Houd rekening met het volgende wanneer u deze preview-functies gebruikt:
-- De functies in de preview-versie worden niet aanbevolen voor cruciale implementaties of productie-implementaties. 
-- Preview-functies zijn geïmplementeerd naar Microsoft Intune-productiestandaarden. Niet alle Intune-functies zijn echter beschikbaar voor volledig beheerde Android Enterprise-apparaten. De preview-functies zijn duidelijk gemarkeerd met '(preview)' in de Intune-console. 
-- De preview-functies worden volledig ondersteund via de gebruikelijke Intune-ondersteuningskanalen.
-- De inschrijving van volledig beheerde Android Enterprise-apparaten met Samsung Knox Mobile Enrollment wordt niet ondersteund in de preview-versie. 
-- Het gebruik van de Intune-bedrijfsportal-app wordt niet ondersteund op volledig beheerde Android Enterprise-apparaten. 
-- Intune-functies als voorwaardelijke toegang, beleidsregels voor de beveiliging van apps en certificaatimplementatie, worden niet ondersteund in de preview-versie. 
-- Apparaatgroepen die gericht zijn op een profiel of app worden niet ondersteund in de preview-versie. Alleen apparaatgroepen die gericht zijn op een gebruikersgroep worden ondersteund. 
-- Er is geen eersteklas gebruikersinterface voor de configuratie van e-mail, Wi-Fi of VPN. Gebruik app-configuratiebeleid om ondersteunde app-configuratie-instellingen te configureren.
 
 ## <a name="next-steps"></a>Volgende stappen
 - [Configuratiebeleid voor volledig beheerde Android Enterprise-apparaten toevoegen](device-restrictions-android-for-work.md#device-owner-only)

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b579849d9afdb50470b7a772e003cc616e1f94a0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2a534aef3cdb989376dc1c148abedfb4f4e4f78b
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530046"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162889"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>E-mailinstellingen toevoegen aan apparaten met Intune
 
@@ -40,23 +40,29 @@ In dit artikel wordt uitgelegd hoe u een e-mailprofiel maakt in Microsoft Intune
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-3. Geef een **Naam** en **Beschrijving** op voor het e-mailprofiel.
-4. Kies uw **Platform** uit de vervolgkeuzelijst. Uw opties zijn:
+3. Voer de volgende eigenschappen in:
 
-    - **Android** (alleen Samsung Android Knox Standard)
-    - **Android Enterprise**
-    - **iOS**
-    - **Windows Phone 8.1**
-    - **Windows 10 en hoger**
+    - **Naam**: Voer een beschrijvende naam in voor het beleid. Geef uw beleid een naam zodat u het later eenvoudig kunt identificeren. Een goede beleidsnaam is bijvoorbeeld **E-mailinstellingen voor alle Windows-apparaten**.
+    - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
+    - **Platform**: Kies het platform van uw apparaten. Uw opties zijn:
 
-5. Kies **E-mail** in de vervolgkeuzelijst **Profieltype**.
-6. De instellingen die u kunt configureren, kunnen voor elk platform verschillend zijn. Kies voor specifieke instellingen uw platform:
+        - **Android** (alleen Samsung Android Knox Standard)
+        - **Android Enterprise**
+        - **iOS/iPadOS**
+        - **Windows Phone 8.1**
+        - **Windows 10 en hoger**
+
+    - **Profieltype**: Selecteer **E-mail**.
+
+4. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Kies uw platform voor gedetailleerde instellingen:
 
     - [Instellingen voor Android Samsung Knox Standard](email-settings-android.md)
     - [Instellingen voor Android Enterprise](email-settings-android-enterprise.md)
-    - [iOS-instellingen](email-settings-ios.md)
+    - [Instellingen voor iOS/iPadOS](email-settings-ios.md)
     - [Windows Phone 8.1-instellingen](email-settings-windows-phone-8-1.md)
     - [Windows 10-instellingen](email-settings-windows-10.md)
+
+5. Wanneer u klaar bent, selecteert u **OK** > **Maken** om uw wijzigingen op te slaan.
 
 Nadat u uw instellingen hebt ingevoerd en het profiel maakt, wordt uw profiel weergegeven in de lijst met profielen. Vervolgens [wijst u dit profiel toe aan enkele groepen](device-profile-assign.md).
 

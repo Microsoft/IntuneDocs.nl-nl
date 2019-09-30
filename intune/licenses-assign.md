@@ -7,22 +7,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
-ms.reviewer: amyro
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dd8b35fbbff89ca7f4c259e1903f4c9f9a6e3b38
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459897"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71238333"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Licenties toewijzen aan gebruikers zodat ze kunnen apparaten inschrijven bij Intune
 
@@ -45,7 +44,7 @@ U kunt het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkI
 4. Het gebruikersaccount beschikt nu over de benodigde machtigingen om de service te gebruiken en apparaten in te schrijven bij het beheer.
 
 > [!NOTE]
-> Gebruikers worden pas weergegeven in de beheerconsole nadat zij een apparaat hebben ingeschreven. U kunt ook een groep gebruikers in één keer bewerken door de optie voor het toevoegen of vervangen van een licentie voor alle geselecteerde gebruikers te selecteren.
+> Gebruikers worden pas weergegeven in de klassieke Intune-portal nadat ze een apparaat hebben ingeschreven met behulp van de Intune-pc-client. U kunt ook een groep gebruikers in één keer bewerken door de optie voor het toevoegen of vervangen van een licentie voor alle geselecteerde gebruikers te selecteren.
 
 ## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>Een Intune-licentie toewijzen met behulp van Azure Active Directory
 
@@ -63,7 +62,7 @@ Als u een licentie voor Intune for Education toewijst, zorg er dan voor dat er o
 Zie [Overzicht van Schoolgegevens synchroniseren](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91) voor meer informatie over SDS.
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Invloed van gebruikers en apparaatlicenties op toegang tot services
-* Elke **gebruiker** aan wie u een gebruikerslicentie voor software toewijst, kan de online services en bijbehorende software (inclusief System Center-software) openen en gebruiken voor het beheren van toepassingen en maximaal 15 apparaten.
+* Elke **gebruiker** aan wie u een gebruikerslicentie voor software toewijst, kan de onlineservices en bijbehorende software (inclusief System Center-software) openen en gebruiken voor het beheren van toepassingen en maximaal 15 MDM-apparaten. De Intune-pc-agent staat 5 fysieke en 1 virtuele machine per gebruikerslicentie toe.
 * U kunt los van gebruikerslicenties voor alle apparaten licenties kopen. Apparaatlicenties hoeven niet te worden toegewezen aan de apparaten. Elk apparaat dat toegang heeft tot en gebruikmaakt van de onlineservices en bijbehorende software (inclusief System Center-software) moet een apparaatlicentie hebben.
 * Als een apparaat wordt gebruikt door meer dan een gebruiker, is voor elke gebruiker een apparaatlicentie voor de software vereist of is voor alle gebruikers een gebruikerslicentie voor software vereist.
 

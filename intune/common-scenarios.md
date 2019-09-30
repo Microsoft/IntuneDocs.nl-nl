@@ -7,7 +7,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 11/29/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32be10340e1e77d2f994c5f038e6328ea42a6303
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d158cb01dbd13f032916f4dc2bf443ed0f6bfaae
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394777"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "71238585"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Algemene manieren om Microsoft Intune te gebruiken
 
@@ -56,7 +55,7 @@ In dergelijke gevallen is de enige manier om toegang tot zakelijke gegevens te k
 ## <a name="protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Uw Office 365-e-mail en -gegevens beveiligen zodat deze veilig kunnen worden geopend vanaf mobiele apparaten
 Het beveiligen van bedrijfsgegevens in Office 365 (e-mail, documenten, chatberichten, contactpersonen) is enorm eenvoudig en biedt gebruikers een naadloze ervaring.
 
-Intune en Microsoft Enterprise Mobility + Security bieden een unieke, geïntegreerde oplossing voor voorwaardelijke toegang waardoor gebruikers, apps en apparaten geen toegang krijgen tot Office 365-gegevens tenzij ze voldoen aan de nalevingsvereisten van uw bedrijf ([meervoudige verificatie](multi-factor-authentication.md) uitgevoerd, geregistreerd bij Intune, gebruikt beheerde app, ondersteunde besturingssysteemversie, pincode op apparaat, gebruiker met laag risicoprofiel enzovoort).
+Intune en Microsoft Enterprise Mobility + Security bieden een unieke, geïntegreerde oplossing voor voorwaardelijke toegang waardoor gebruikers, apps en apparaten geen toegang krijgen tot Office 365-gegevens tenzij ze voldoen aan de nalevingsvereisten van uw bedrijf ([meervoudige verificatie](multi-factor-authentication.md) uitgevoerd, ingeschreven bij Intune, gebruikt beheerde app, ondersteunde besturingssysteemversie, pincode op apparaat, gebruiker met laag risicoprofiel, enzovoort).
 
 
 De mobiele Office-apps in hun respectieve app stores zijn klaar om te worden gebruikt met een gegevenscontainmentbeleid dat u via Intune kunt configureren. Hiermee kunt u voorkomen dat gegevens worden gedeeld met apps (zoals een ingebouwde e‑mailapp) en opslaglocaties (zoals Dropbox), die niet door IT worden beheerd. Deze functionaliteit is ook ingebouwd in Office 365 en het EMS. U hoeft geen aanvullende infrastructuur te implementeren om hiervan te profiteren.

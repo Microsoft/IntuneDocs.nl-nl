@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f8405aceaa1fd9c00b966d03a1f7b80e5946d96
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 52f8af06fffb3643714ed318e474b73be21963ed
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59569776"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239796"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Eindgebruikers instructies geven over Microsoft Intune
 
@@ -58,9 +57,9 @@ Lees de volgende lijst met tips om de Intune-implementatie van uw organisatie ge
 
 * __Zorg dat u toegankelijk bent.__ Laat gebruikers weten waar ze hulp kunnen vinden in het geval van problemen met apparaten. Wanneer u [de bedrijfsportal aanpast](company-portal-customize.md), moet u niet vergeten de contactgegevens van uw IT-beheerder op te nemen.
 
-* __Zorg dat u persoonlijk bent.__ Geef instructies die specifiek zijn voor de implementatie van uw organisatie. Hiermee laat u gebruikers zien dat u waarde hecht aan hun ervaring. Gebruik deze [voor Intune-gebruikers bestemde, aanpasbare sjabloon](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) om uw eigen inschrijvingsinstructies voor uw gebruikers te maken.
+* __Zorg dat u persoonlijk bent.__ Geef instructies die specifiek zijn voor de implementatie van uw organisatie. Hiermee laat u gebruikers zien dat u waarde hecht aan hun ervaring. Gebruik deze aanpasbare [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) om uw eigen inschrijvingsinstructies voor uw gebruikers te maken.
 
-* __Zoek verschillende manieren om te communiceren.__ Gebruikers hebben [verschillende leerstijlen](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) en voorkeuren over hoe ze informatie tot zich nemen. Voor visueel ingestelde mensen biedt Intune op Channel 9 [videoversies van hoe u verschillende apparaattypen inschrijft](https://channel9.msdn.com/Series/IntuneEnrollment). Video's kunnen direct worden ingesloten in uw eigen [SharePoint-site](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). U kunt ook lokale kopieën van de video of audiotrack downloaden.
+* __Zoek verschillende manieren om te communiceren.__ Gebruikers hebben [verschillende leerstijlen](https://www.umassd.edu/dss/resources/faculty--staff/how-to-teach-and-accommodate/how-to-accommodate-different-learning-styles/) en voorkeuren over hoe ze informatie tot zich nemen. Voor visueel ingestelde mensen biedt Intune op Channel 9 [videoversies van hoe u verschillende apparaattypen inschrijft](https://channel9.msdn.com/Series/IntuneEnrollment). Video's kunnen direct worden ingesloten in uw eigen [SharePoint-site](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). U kunt ook lokale kopieën van de video of audiotrack downloaden.
 
 * __Let op.__ De Intune-gebruikerservaring heeft ook invloed op uw productiviteit. Wanneer u de ervaring van gebruikers begrijpt, kunt u problemen met apparaten en van gebruikers eenvoudiger oplossen. U kunt bijvoorbeeld inzicht krijgen in hoe uw gebruikers hun apps ophalen. Wanneer u deze informatie vooraf hebt, kunt u problemen eenvoudiger en sneller opsporen en oplossen.
 

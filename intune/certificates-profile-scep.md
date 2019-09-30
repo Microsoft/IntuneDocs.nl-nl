@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 09/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e553229530f826ead91be981ff446b7cb3ebbf2
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: a9091b4623e456f5b00134542282b2032ce70e6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214281"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163742"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>SCEP-certificaatprofielen maken en toewijzen in Intune
 
@@ -38,9 +38,19 @@ Nadat u [uw infrastructuur hebt geconfigureerd](certificates-scep-configure.md) 
 3. Voer een **naam** en een **beschrijving** in voor het SCEP-certificaatprofiel.
 4. Selecteer in de vervolgkeuzelijst **Platform** een [ondersteund apparaatplatform](certificates-configure.md#supported-platforms-and-certificate-profiles) voor dit SCEP-certificaat. 
 5. Selecteer in de vervolgkeuzelijst **Profieltype** de optie **SCEP-certificaat**.  
+   
+   Voor het **Android Enterprise**-platform is het *Profieltype* onderverdeeld in twee categorieën: *Alleen apparaateigenaar* en *Alleen werkprofiel*. Zorg ervoor dat u het juiste SCEP-certificaatprofiel selecteert voor de apparaten die u beheert.  
 
-   > [!NOTE]  
-   > Voor het **Android Enterprise**-platform is het *Profieltype* onderverdeeld in twee categorieën: *Alleen apparaateigenaar* en *Alleen werkprofiel*.  SCEP-certificaatprofielen worden alleen ondersteund voor *Alleen werkprofiel*.
+   SCEP-certificaatprofielen voor het profiel *Alleen apparaateigenaar* hebben de volgende beperkingen:  
+
+   1. Hierbij worden de volgende variabelen niet ondersteund:  
+
+      - CN={{OnPrem_Distinguished_Name}}  
+      - CN={{onPremisesSamAccountName}}  
+
+   2. Certificaatrapportage is onder Bewaking niet beschikbaar voor de SCEP-certificaatprofielen voor apparaateigenaar.
+   
+   3. Het intrekken van certificaten die zijn ingericht met SCEP-certificaatprofielen voor apparaateigenaar, wordt niet ondersteund via Intune, maar kan worden beheerd via een extern proces of rechtstreeks bij de certificeringsinstantie.
 
 6. Selecteer **Instellingen** en voltooi de volgende configuraties:
 
@@ -71,17 +81,17 @@ Nadat u [uw infrastructuur hebt geconfigureerd](certificates-scep-configure.md) 
        - **Algemene naam als e-mailadres**
        - **IMEI (International Mobile Equipment Identity)**
        - **Serienummer**
-       - **Aangepast**: Wanneer u deze optie selecteert, wordt het tekstvak **Aangepast** ook weergegeven. Met dit veld kunt u een onderwerpnaam invoeren in een aangepaste indeling, inclusief variabelen. Aangepaste indeling ondersteunt twee variabelen: **Algemene naam (CN)** en **E-mail (E)**. **Algemene naam (CN)** kan worden ingesteld op een van de volgende variabelen:
+       - **Aangepast**: Wanneer u deze optie selecteert, wordt het tekstvak **Aangepast** ook weergegeven. Met dit veld kunt u een onderwerpnaam invoeren in een aangepaste indeling, inclusief variabelen. Aangepaste indeling ondersteunt twee variabelen: **Algemene naam (CN)** en **E-mail (E)** . **Algemene naam (CN)** kan worden ingesteld op een van de volgende variabelen:
 
-         - **CN={{UserName}}**: De user principal name van de gebruiker, bijvoorbeeld janedoe@contoso.com.
-         - **CN={{AAD_Device_ID}}**: Een id die wordt toegewezen wanneer u een apparaat in Azure Active Directory (AD) registreert. Deze id wordt doorgaans gebruikt voor verificatie met Azure AD.
-         - **CN={{SERIALNUMBER}}**: Het unieke serienummer (SN) dat doorgaans wordt gebruikt door de fabrikant om een apparaat te identificeren.
-         - **CN={{IMEINumber}}**: Het unieke nummer van de International Mobile Equipment Identity (IMEI) dat wordt gebruikt om een mobiele telefoon te identificeren.
-         - **CN={{OnPrem_Distinguished_Name}}**: Een reeks RDN's (Relative Distinguished Name), gescheiden door komma's, zoals *CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com*.
+         - **CN={{UserName}}** : De user principal name van de gebruiker, bijvoorbeeld janedoe@contoso.com.
+         - **CN={{AAD_Device_ID}}** : Een id die wordt toegewezen wanneer u een apparaat in Azure Active Directory (AD) registreert. Deze id wordt doorgaans gebruikt voor verificatie met Azure AD.
+         - **CN={{SERIALNUMBER}}** : Het unieke serienummer (SN) dat doorgaans wordt gebruikt door de fabrikant om een apparaat te identificeren.
+         - **CN={{IMEINumber}}** : Het unieke nummer van de International Mobile Equipment Identity (IMEI) dat wordt gebruikt om een mobiele telefoon te identificeren.
+         - **CN={{OnPrem_Distinguished_Name}}** : Een reeks RDN's (Relative Distinguished Name), gescheiden door komma's, zoals *CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com*.
 
            Als u de variabele *{{OnPrem_Distinguished_Name}}* wilt gebruiken, moet u het gebruikerskenmerk *onpremisesdistinguishedname* met behulp van [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw Azure AD.
 
-         - **CN={{onPremisesSamAccountName}}**: Beheerders kunnen het kenmerk samAccountName van Active Directory met behulp van Azure AD Connect synchroniseren met Azure AD in een kenmerk met de naam *onPremisesSamAccountName*. Deze variabele kan in Intune worden vervangen als onderdeel van een aanvraag voor certificaatuitgifte in het onderwerp van een certificaat. Het kenmerk samAccountName is de aanmeldingsnaam van de gebruiker die wordt gebruikt ter ondersteuning van clients en servers van een oudere versie dan Windows 2000. De indeling voor de aanmeldingsnaam van de gebruiker is: *DomainName\testUser* of alleen *testUser*.
+         - **CN={{onPremisesSamAccountName}}** : Beheerders kunnen het kenmerk samAccountName van Active Directory met behulp van Azure AD Connect synchroniseren met Azure AD in een kenmerk met de naam *onPremisesSamAccountName*. Deze variabele kan in Intune worden vervangen als onderdeel van een aanvraag voor certificaatuitgifte in het onderwerp van een certificaat. Het kenmerk samAccountName is de aanmeldingsnaam van de gebruiker die wordt gebruikt ter ondersteuning van clients en servers van een oudere versie dan Windows 2000. De indeling voor de aanmeldingsnaam van de gebruiker is: *DomainName\testUser* of alleen *testUser*.
 
             Als u de variabele *{{onPremisesSamAccountName}}* wilt gebruiken, moet u het gebruikerskenmerk *onPremisesSamAccountName* met behulp van [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw Azure AD.
 
@@ -149,7 +159,7 @@ Nadat u [uw infrastructuur hebt geconfigureerd](certificates-scep-configure.md) 
 
         > [!IMPORTANT]  
         > - Wanneer u een variabele voor een apparaatcertificaat gebruikt, plaatst u de variabele tussen accolades { }.  
-        > - Gebruik geen accolades **{}**, verticale streepjes **|** en puntkomma's **;** in de tekst die volgt op de variabele.  
+        > - Gebruik geen accolades **{}** , verticale streepjes **|** en puntkomma's **;** in de tekst die volgt op de variabele.  
         > - Apparaateigenschappen die worden gebruikt in het *onderwerp* of de *SAN* van een apparaatcertificaat, zoals **IMEI**, **SerialNumber** en **FullyQualifiedDomainName**, zijn eigenschappen die kunnen worden vervalst door een persoon die toegang tot het apparaat heeft.  
         > - Een apparaat moet alle variabelen ondersteunen die zijn opgegeven in een certificaatprofiel, anders kan het profiel niet worden geïnstalleerd op het apparaat.  Als bijvoorbeeld **{{IMEI}}** wordt gebruikt in de SAN van een SCEP-profiel en deze variabele wordt toegewezen aan een apparaat dat geen IMEI-nummer heeft, mislukt de installatie van het profiel.
 
@@ -158,7 +168,7 @@ Nadat u [uw infrastructuur hebt geconfigureerd](certificates-scep-configure.md) 
 
      Als de geldigheidsperiode van het certificaat in de certificaatsjabloon bijvoorbeeld twee jaar is, kunt u wel één jaar, maar niet vijf jaar opgeven. De waarde moet ook lager zijn dan de resterende geldigheidsperiode van het certificaat van de verlenende CA.
 
-   - **Sleutelarchiefprovider (KSP)**:  
+   - **Sleutelarchiefprovider (KSP)** :  
      *(Van toepassing op:  Windows 8.1 en later, en Windows 10 en later)*  
      
      Geef op waar de sleutel voor het certificaat wordt opgeslagen. Kies uit de volgende waarden:  
@@ -173,7 +183,7 @@ Nadat u [uw infrastructuur hebt geconfigureerd](certificates-scep-configure.md) 
      - **Digitale handtekening**: Sta sleuteluitwisseling alleen toe als de sleutel wordt beveiligd met een digitale handtekening.
      - **Sleutelcodering**: Sta sleuteluitwisseling alleen toe als de sleutel is versleuteld.  
 
-   - **Sleutelgrootte (bits)**:  
+   - **Sleutelgrootte (bits)** :  
      Selecteer het aantal bits in de sleutel.  
 
    - **Hash-algoritme**:  
@@ -187,11 +197,11 @@ Nadat u [uw infrastructuur hebt geconfigureerd](certificates-scep-configure.md) 
    - **Uitgebreide-sleutelgebruik**:  
      Voeg waarden toe voor het beoogde gebruik van het certificaat. In de meeste gevallen vereist het certificaat *clientverificatie* zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. U kunt zo nodig ook extra sleutelgebruik toevoegen.
 
-   - **Drempelwaarde voor verlenging (%)**:  
+   - **Drempelwaarde voor verlenging (%)** :  
      Geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt. Als u bijvoorbeeld 20 invoert, wordt geprobeerd het certificaat te vernieuwen wanneer het certificaat voor 80 procent is verlopen en wordt dat vervolgd tot het certificaat is vernieuwd. Bij het vernieuwen wordt een nieuw certificaat gegenereerd dat een nieuw paar openbare/persoonlijke sleutel oplevert.
 
    - **URL's van SCEP-server**:  
-     Voer een of meer URL's in voor de NDES-servers die certificaten via SCEP verlenen. Voer bijvoorbeeld iets in als *https://ndes.contoso.com/certsrv/mscep/mscep.dll*. U kunt indien nodig aanvullende SCEP-URL's voor taakverdeling toevoegen, omdat URL's willekeurig op het apparaat met het profiel worden gepusht. Als een van de SCEP-servers niet beschikbaar is, mislukt de SCEP-aanvraag. Dan wordt de volgende keer dat er apparaten worden ingecheckt, de certificaataanvraag mogelijk uitgevoerd op dezelfde niet-actieve server.
+     Voer een of meer URL's in voor de NDES-servers die certificaten via SCEP verlenen. Voer bijvoorbeeld iets in als *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . U kunt indien nodig aanvullende SCEP-URL's voor taakverdeling toevoegen, omdat URL's willekeurig op het apparaat met het profiel worden gepusht. Als een van de SCEP-servers niet beschikbaar is, mislukt de SCEP-aanvraag. Dan wordt de volgende keer dat er apparaten worden ingecheckt, de certificaataanvraag mogelijk uitgevoerd op dezelfde niet-actieve server.
 
 7. Selecteer **OK** en selecteer vervolgens **Maken**. Het profiel is gemaakt en wordt weergegeven in de lijst *Apparaatconfiguratie - Profielen*.
 
@@ -208,8 +218,8 @@ Wanneer de onderwerpnaam een van deze speciale tekens bevat, moet u een van de v
 - Plaats aanhalingstekens om de CN-waarde die het speciale teken bevat.  
 - Verwijder het speciale teken uit de CN-waarde.  
 
-**Bijvoorbeeld**: u hebt een onderwerpnaam die wordt weergegeven als *Test User (TestCompany, LLC)*.  Een CSR waarin de CN een komma bevat tussen *TestCompany* en *LLC*, leidt tot problemen.  Deze problemen kunnen worden vermeden door aanhalingstekens te plaatsen rond de hele CN of door de komma te verwijderen tussen *TestCompany* en *LLC*:
-- **Aanhalingstekens toevoegen**: *CN=*”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+**Bijvoorbeeld**: u hebt een onderwerpnaam die wordt weergegeven als *Test User (TestCompany, LLC)* .  Een CSR waarin de CN een komma bevat tussen *TestCompany* en *LLC*, leidt tot problemen.  Deze problemen kunnen worden vermeden door aanhalingstekens te plaatsen rond de hele CN of door de komma te verwijderen tussen *TestCompany* en *LLC*:
+- **Aanhalingstekens toevoegen**: *CN=* ”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
 - **De komma verwijderen**: *CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
 
  Pogingen om de komma te escapen met behulp van een backslash-teken mislukken, met een fout in de CRP-logboeken:  

@@ -5,9 +5,8 @@ keywords: wat is Intune
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/26/2019
+ms.date: 06/20/2019
 ms.topic: overview
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2cde4e37889b981decfd18138feeb4edac46c4c8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460577"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71238267"
 ---
 # <a name="what-is-microsoft-intune"></a>Wat is Microsoft Intune?
 
@@ -85,7 +84,7 @@ Wanneer we over app-configuratie en Intune spreken, verwijzen we specifiek naar 
 Als u Intune gebruikt met andere services in EMS, kunt u uw organisatie veel meer beveiliging van mobiele apps bieden dan door het mobiele besturingssysteem en de configuratie van mobiele apps zelf wordt geleverd. Een app die wordt beheerd met EMS heeft toegang tot een uitgebreidere reeks functies voor de bescherming van mobiele apps en gegevens, met onder meer:
 
 * [Eenmalige aanmelding](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
+* [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
 * [Voorwaardelijke toegang tot apps: toegang toestaan als de mobiele app bedrijfsgegevens bevat](app-based-conditional-access-intune.md)
 * [Het isoleren van bedrijfsgegevens ten opzichte van persoonlijke gegevens binnen dezelfde app](app-protection-policy.md)
 * [App-beveiligingsbeleid (pincode, codering, opslaan als, klembord, enzovoort)](app-protection-policies.md)

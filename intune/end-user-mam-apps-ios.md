@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f013ec1d40b9593e7eb8d317b5b63545c58f181
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4039c9e3ae53d8db8ee282f802cd86149b40021e
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399097"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "71239763"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid
 
@@ -30,7 +29,7 @@ ms.locfileid: "57399097"
 
  In dit onderwerp wordt de gebruikerservaring beschreven voor het gebruik van apps waarop app-beveiligingsbeleid is toegepast. App-beveiligingsbeleid wordt alleen toegepast wanneer apps worden gebruikt in een werkcontext, bijvoorbeeld wanneer de gebruiker apps gebruikt met een werkaccount of bestanden opent die zijn opgeslagen in de OneDrive voor Bedrijven-locatie van uw bedrijf.
 
-##  <a name="access-apps"></a>Toegang tot apps
+## <a name="access-apps"></a>Toegang tot apps
 
 Als het apparaat **niet is geregistreerd bij Intune**, wordt de gebruiker gevraagd de app opnieuw te starten wanneer deze voor het eerst wordt gebruikt. Er moet opnieuw worden opgestart zodat het app-beveiligingsbeleid kan worden toegepast op de app.
 
@@ -41,7 +40,7 @@ Als het apparaat **niet is geregistreerd bij Intune**, wordt de gebruiker gevraa
 
 Op apparaten die zijn **ingeschreven voor beheer in Intune**, wordt een bericht aan de gebruiker weergegeven dat de app nu wordt beheerd.
 
-##  <a name="use-apps-with-multi-identity-support"></a>Apps met ondersteuning voor meerdere identiteiten gebruiken
+## <a name="use-apps-with-multi-identity-support"></a>Apps met ondersteuning voor meerdere identiteiten gebruiken
 
 Met apps die ondersteuning bieden voor meerdere identiteiten, kunt u verschillende accounts (zakelijk en persoonlijk) gebruiken voor toegang tot dezelfde apps, terwijl beveiligingsbeleid voor apps wordt toegepast wanneer de apps worden gebruikt in zakelijke context.  
 
@@ -51,13 +50,13 @@ De gebruiker moet bijvoorbeeld een pincode invoeren bij het openen van werkgegev
 
 App-beveiligingsbeleid wordt alleen toegepast in een werkcontext. Daarom is het mogelijk dat de app zich anders gedraagt, afhankelijk of het om een persoonlijke of werkcontext gaat.
 
-##  <a name="manage-user-accounts-on-the-device"></a>Gebruikersaccounts op het apparaat beheren
+## <a name="manage-user-accounts-on-the-device"></a>Gebruikersaccounts op het apparaat beheren
 
 Met toepassingen met meerdere identiteiten kunnen gebruikers meerdere accounts toevoegen.  Intune-app-beveiliging ondersteunt slechts één beheerd account.  Intune-app-beveiliging beperkt niet het aantal niet-beheerde accounts.
 
 Wanneer er een beheerd account in een toepassing is:
-*   Als een gebruiker een tweede beheerd account probeert toe te voegen, moet de gebruiker selecteren welk beheerd account moet worden gebruikt.  Het andere account wordt verwijderd.
-*   Als de IT-beheerder een beleid toevoegt aan een tweede bestaand account, moet de gebruiker selecteren welk beheerd account moet worden gebruikt.  Het andere account wordt verwijderd.
+* Als een gebruiker een tweede beheerd account probeert toe te voegen, moet de gebruiker selecteren welk beheerd account moet worden gebruikt.  Het andere account wordt verwijderd.
+* Als de IT-beheerder een beleid toevoegt aan een tweede bestaand account, moet de gebruiker selecteren welk beheerd account moet worden gebruikt.  Het andere account wordt verwijderd.
 
 Lees het volgende voorbeeldscenario om meer inzicht te krijgen in hoe meerdere gebruikersaccounts worden behandeld.
 

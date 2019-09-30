@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d87b617f49a3df71b767fe91f1f03f88f36ee8a3
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 22cf93aa7418e5e8be2338e70f762a451bb3bdcf
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842200"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167154"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
@@ -194,6 +194,8 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
 
     > [!NOTE]
     > U kunt in het deelvenster **Detectieregels** meerdere regels toevoegen. Er moet aan de voorwaarden van **alle** regels worden voldaan om de app te detecteren.
+    >
+    > Als in Intune wordt gedetecteerd dat de app niet aanwezig is op het apparaat, wordt de app na 24 uur opnieuw aangeboden via Intune. Dit gebeurt alleen voor apps met een vereiste intentie.
 
     - **Detectieregels handmatig configureren**: u kunt een van de volgende regeltypen selecteren:
         1. **MSI**: verifiëren op basis van een controle van de MSI-versie. Deze optie kan slechts eenmaal worden toegevoegd. Als u dit regeltype kiest, hebt u twee instellingen:
@@ -278,7 +280,7 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
 7. Selecteer **OK** in het deelvenster **Groep toevoegen**.
 8. Selecteer **Opslaan** in het deelvenster **Toewijzingen**.
 
-U hebt nu de stappen voor het toevoegen van een Win32-app aan Intune voltooid. Zie [Apps toewijzen aan groepen met Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) en [App-gegevens en -toewijzingen controleren met Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor) voor meer informatie over app-toewijzing en -controle.
+U hebt nu de stappen voor het toevoegen van een Win32-app aan Intune voltooid. Zie [Apps toewijzen aan groepen met Microsoft Intune](apps-deploy.md) en [App-gegevens en -toewijzingen controleren met Microsoft Intune](apps-monitor.md) voor meer informatie over app-toewijzing en -controle.
 
 ## <a name="app-dependencies"></a>App-afhankelijkheden
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75cdd958d9663d5b2d330a947a19963c219feaea
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 80e70db4b64770af1a96ee7f24a3cf875269adce
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69545928"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163496"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Wi-Fi-instellingen toevoegen en gebruiken op uw apparaten in Microsoft Intune
 
@@ -57,7 +57,7 @@ Wi-Fi-profielen ondersteunen de volgende apparaatplatformen:
 
       - **Android**
       - **Android Enterprise**
-      - **iOS**
+      - **iOS/iPadOS**
       - **macOS**
       - **Windows 8.1 en hoger**
       - **Windows 10 en hoger**
@@ -73,7 +73,7 @@ Wi-Fi-profielen ondersteunen de volgende apparaatplatformen:
 
     - [Android](wi-fi-settings-android.md)
     - [Android Enterprise](wi-fi-settings-android-enterprise.md), inclusief toegewezen apparaten
-    - [iOS](wi-fi-settings-ios.md)
+    - [iOS/iPadOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 en hoger](wi-fi-settings-windows.md)
     - [Instellingen voor Windows 8.1 en hoger](wi-fi-settings-import-windows-8-1.md), inclusief Windows Holographic for Business

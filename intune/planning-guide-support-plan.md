@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c71edf84fb1ade261eefc1b3de4543e941bf0657
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548336"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166802"
 ---
 # <a name="develop-a-support-plan"></a>Een ondersteuningsplan ontwikkelen
 
@@ -84,7 +84,7 @@ Hieronder vindt u een voorbeeld van een trainingsagenda voor Intune-ondersteunin
 
 - Vragenronde
 
-De [Intune-documentatie](https://docs.microsoft.com/intune/) biedt een overzicht van Intune, bevat gedetailleerde functiebeschrijvingen en ook informatie voor probleemoplossing. Het Engelstalige [Intune-forum](https://social.technet.microsoft.com/Forums/home) is een community voor vragen en onderwerpen die niet in de Intune-documentatie worden behandeld.
+De [Intune-documentatie](index.yml) biedt een overzicht van Intune, bevat gedetailleerde functiebeschrijvingen en ook informatie voor probleemoplossing. Het Engelstalige [Intune-forum](https://social.technet.microsoft.com/Forums/home) is een community voor vragen en onderwerpen die niet in de Intune-documentatie worden behandeld.
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Wat zijn de mogelijkheden om het ondersteuningsteam eerder in het proces te betrekken?
 

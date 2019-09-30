@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,24 +16,27 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: 1ed123bcf8c5c1a5df1a356cf8d2522caad20ea2
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59569126"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "71239391"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Eindgebruikers helpen bij het begrijpen van berichten van de bedrijfsportal-app
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
-> De volgende informatie is alleen van toepassing op apparaten met Android 6.0 en hoger.
+> De volgende informatie is alleen van toepassing op apparaten met Android 6.0 en hoger en iOS 10 en hoger.
 
 Kom meer te weten over de verschillende app-berichten die eindgebruikers te zien kunnen krijgen in de bedrijfsportal. Deze app-berichten worden meestal op verschillende momenten in het inschrijvingsproces weergegeven. Ontdek waar de berichten worden weergegeven, wat de berichten betekenen en wat er gebeurt als gebruikers toegang weigeren. Kom daarnaast te weten hoe u de berichten het beste kunt uitleggen aan gebruikers.
 
 - __De bedrijfsportal toestaan telefoongesprekken uit te voeren en te beheren?__
 - __De bedrijfsportal toegang verlenen tot foto's, media en bestanden op uw apparaat?__
+
+> [!NOTE]
+> We verkopen gegevens die door onze service worden verzameld om geen enkele reden aan externe partijen.
 
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>De bedrijfsportal toestaan telefoongesprekken uit te voeren en beheren?
 
@@ -57,7 +59,7 @@ Als gebruikers toegang verlenen en deze later weer intrekken, wordt het bericht 
 Als gebruikers later alsnog besluiten om toegang te verlenen, kunnen ze naar **Instellingen** > **Apps** > **Bedrijfsportal** > **Machtigingen** > **Telefoon** gaan en de optie inschakelen.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Dit uitleggen aan uw gebruikers
-Stuur uw gebruikers naar [Uw Android-apparaat inschrijven bij Intune](/intune-user-help/enroll-your-device-in-intune-android) voor meer informatie.
+Stuur uw gebruikers naar [Uw Android-apparaat inschrijven bij Intune](/intune-user-help/enroll-device-android-company-portal) voor meer informatie.
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>Bedrijfsportal toegang tot uw contactpersonen toestaan?
 
@@ -78,7 +80,7 @@ Als gebruikers toegang verlenen en deze later weer intrekken, wordt het bericht 
 Als gebruikers later alsnog besluiten om toegang te verlenen, kunnen ze naar **Instellingen** > **Apps** > **Bedrijfsportal** > **Machtigingen** > **Telefoon** gaan en de optie inschakelen.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Dit uitleggen aan uw gebruikers
-Stuur uw gebruikers naar [Uw Android-apparaat inschrijven bij Intune](/intune-user-help/enroll-your-device-in-intune-android) voor meer informatie.
+Stuur uw gebruikers naar [Uw Android-apparaat inschrijven bij Intune](/intune-user-help/enroll-device-android-company-portal) voor meer informatie.  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>De bedrijfsportal toegang verlenen tot foto's, media en bestanden op uw apparaat?
 
@@ -132,7 +134,7 @@ Wanneer u zulke apps installeert met de bedrijfsportal en de app start, volgt u 
 
 3. Selecteer **Beheerprofiel** > **Bedrijfsapp**.
 4. Selecteer de naam van de ontwikkelaar.
-5. Druk op **Ontwikkelaar _vertrouwen_**.
+5. Druk op **Ontwikkelaar _vertrouwen_** .
 6. Bevestig de app door **Vertrouwen** te selecteren in het pop-upbericht van de app-installatie.
 
    ![Gebruikersinterface van iOS-apparaat - Bericht over app vertrouwen](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
@@ -140,5 +142,5 @@ Wanneer u zulke apps installeert met de bedrijfsportal en de app start, volgt u 
     U hoort de bedrijfsapp te kunnen starten en gebruiken.
 
 
-### <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie tevens
 [Wat u uw eindgebruikers vertelt over het gebruik van Intune](end-user-educate.md)

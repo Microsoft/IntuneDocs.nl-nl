@@ -5,9 +5,8 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/28/2016
+ms.date: 05/07/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 368eeec3c47b53d00e9130f41d36f05976a66b8f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8f069405d75b196c26c9c844e0d0a4bd57299199
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394250"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71239308"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>Hoe uw iOS-gebruikers hun apps downloaden
 
@@ -36,7 +35,7 @@ Gebruik deze informatie om te begrijpen hoe en waar uw eindgebruikers de apps do
 
 **Beheerde apps** zijn apps die kunnen worden beheerd via beleid en die zijn 'verpakt' door Intune of zijn gebouwd met de Intune App Software Development Kit (SDK). Deze apps kunnen worden beheerd door Intune en hierop kan app-beveiligingsbeleid worden toegepast.
 
-**Niet-beheerde apps**: apps die niet kunnen worden beheerd via beleid en die niet zijn verpakt door Intune of waarin de Intune App SDK niet is opgenomen. Het toepassingsbeleid kan niet worden toegepast op deze apps.
+**Niet-beheerde apps**: apps die gebruikers kunnen downloaden uit de iOS App Store die niet zijn geïntegreerd met de Intune App SDK. Intune heeft geen controle over de distributie, het beheer of het selectief wissen van deze apps.  
 
 Het wordt door Apple verboden om LOB- (Line-Of-Business) en beheerde App Store-apps in de bedrijfsportal-app te vermelden. Dit probleem wordt omzeild doordat gebruikers met tegels in de bedrijfsportal-app voor iOS op één locatie (de bedrijfsportalwebsite) naar verschillende weergaven worden verwezen voor alle apps.
 
@@ -53,7 +52,7 @@ Geregistreerde gebruikers krijgen hun apps door te tikken op de volgende tegels 
 
 Zie [Apps toevoegen aan Microsoft Intune](apps-add.md) voor informatie over het toevoegen van apps.
 
-### <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie tevens
 [Hoe uw Android-gebruikers apps downloaden](end-user-apps-android.md)
 
 [Hoe uw Windows-gebruikers apps downloaden](end-user-apps-windows.md)
