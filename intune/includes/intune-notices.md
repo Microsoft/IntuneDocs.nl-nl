@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
-ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
+ms.openlocfilehash: fa251a0edd943d566849b138af5cbab0be248a53
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71279901"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71726398"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune. 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Afgenomen ondersteuning voor Android-apparaatbeheerder 
-Android-apparaatbeheerder (soms aangeduid met het verouderde Android-beheer, uitgebracht met Android 2.2) is een manier om Android-apparaten te beheren. Er is nu echter verbeterde beheerfunctionaliteit beschikbaar met [Android Enterprise](../connect-intune-android-enterprise.md) (uitgebracht met Android 5.0). In een poging om apparaatbeheer moderner, breder en veiliger te maken, vermindert Google ondersteuning voor apparaatbeheerder in nieuwe Android-versies.
+Android-apparaatbeheerder (soms aangeduid met het verouderde Android-beheer, uitgebracht met Android 2.2) is een manier om Android-apparaten te beheren. Er is nu echter verbeterde beheerfunctionaliteit beschikbaar met [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (uitgebracht met Android 5.0). In een poging om apparaatbeheer moderner, breder en veiliger te maken, vermindert Google ondersteuning voor apparaatbeheerder in nieuwe Android-versies.
 
 #### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
 Deze wijzigingen van Google zijn op de volgende manieren van invloed op Intune-gebruikers: 
@@ -67,10 +67,11 @@ U hoeft geen actie meer te ondernemen, maar u kunt overwegen uw IT-begeleiding b
 https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Geplande wijziging: Nieuwe instellingen voor Windows-updates in Intune <!-- 4464404 -->
-Vanaf de versie van augustus van de Intune-service of 1908 voegen we nieuwe 'Deadline-instellingen' toe die u kunt configureren in plaats van de instellingen 'Gebruikers toestaan opnieuw te starten (gepland opnieuw opstarten)'. We zijn van plan de instellingen voor gepland opnieuw opstarten in de gebruikersinterface uit te schakelen in 1909 of de update van september en om deze aan het eind van oktober volledig uit de console te verwijderen. 
+Vanaf de versie van augustus van de Intune-service of 1908 voegen we nieuwe 'Deadline-instellingen' toe die u kunt configureren in plaats van de instellingen 'Gebruikers toestaan opnieuw te starten (gepland opnieuw opstarten)'. We zijn van plan de instellingen voor gepland opnieuw opstarten in de gebruikersinterface uit te schakelen in 1909 of de update van september en om deze aan het eind van oktober volledig uit de console te verwijderen.
 
 #### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Als u Windows 10-apparaten in uw omgeving beheert: 
+Als u Windows 10-apparaten in uw omgeving beheert:
+
 - Met de Intune-update van augustus of update 1908 ziet u nieuwe deadline-instellingen in de console, naast de oude instellingen voor gepland opnieuw opstarten.
 - Wanneer zowel deze oude als nieuwe instellingen zijn geconfigureerd, overschrijven de deadline-instellingen de instellingswaarden voor gepland opnieuw opstarten.
 - De deadline-instellingen vervangen de optie 'Gebruikers toestaan opnieuw te starten (gepland opnieuw opstarten)' in update 1910.
@@ -78,7 +79,7 @@ Als u Windows 10-apparaten in uw omgeving beheert:
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
 Begin de deadline-instellingen in update 1908 te gebruiken door deze te configureren met de gewenste waarden. Als u dat hebt gedaan, kunt u de instelling voor gepland opnieuw opstarten instellen op 'Niet geconfigureerd' om u voor te bereiden op de verwijdering van deze instellingen in oktober.
 
-Werk indien nodig uw documentatie en eventuele automatiseringsscripts bij. 
+Werk indien nodig uw documentatie en eventuele automatiseringsscripts bij.
 
 We houden u op de hoogte en plaatsen een herinnering in het berichtencentrum voordat we de instellingen voor gepland opnieuw opstarten verwijderen.
 
@@ -86,12 +87,13 @@ We houden u op de hoogte en plaatsen een herinnering in het berichtencentrum voo
 Intune gaat Android 5.x (Lollipop) en hoger vanaf oktober ondersteunen. Werk alle verpakte apps bij met de nieuwste Intune App SDK en werk uw apparaten bij.
 
 #### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Als u niet van plan bent om de SDK of APP voor Android te gebruiken, is deze wijziging niet van invloed op u. Als u de Intune App SDK gebruikt, zorg er dan voor dat u deze bijwerkt naar de nieuwste versie en werk ook uw apparaten bij naar Android 5.x en hoger. Als u geen update uitvoert, ontvangen apps geen updates en gaat de kwaliteit van de ervaring langzaam achteruit. 
+Als u niet van plan bent om de SDK of APP voor Android te gebruiken, is deze wijziging niet van invloed op u. Als u de Intune App SDK gebruikt, zorg er dan voor dat u deze bijwerkt naar de nieuwste versie en werk ook uw apparaten bij naar Android 5.x en hoger. Als u geen update uitvoert, ontvangen apps geen updates en gaat de kwaliteit van de ervaring langzaam achteruit.
 
 Hieronder vindt u een lijst van algemene apparaten die worden geregistreerd bij Intune en die Android-versie 4.x uitvoeren. Als u een van deze apparaten hebt, voer dan de stappen uit om ervoor te zorgen dat dit apparaat Android-versie 5.0 of hoger ondersteunt, of dat het wordt vervangen door een apparaat dat Android-versie 5.0 of hoger ondersteunt. Deze lijst is niet aangevuld met alle apparaten die mogelijk opnieuw moeten worden geëvalueerd:
+
 - Samsung SM-T561  
-- Samsung SM-T365 
-- Samsung GT-I9195 
+- Samsung SM-T365
+- Samsung GT-I9195
 - Samsung SM-G800F
 - Samsung SM-G357FZ
 - Motorola XT1080
@@ -100,7 +102,6 @@ Hieronder vindt u een lijst van algemene apparaten die worden geregistreerd bij 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
 Verpak je apps met de nieuwste Intune App SDK. U kunt ook de voorwaardelijke startinstelling 'Minimale OS-versie vereisen (alleen waarschuwen)' instellen om eindgebruikers op persoonlijke apparaten een melding te sturen om een upgrade uit te voeren.
-
 
 ### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Geplande wijziging voor Intune: aanstaand einde van ondersteuning voor Windows 7 <!-- 3042987 -->
 Zoals we in september 2018 in het bericht MC148476 en in maart 2019 in het bericht MC176794 hebben gemeld, bereikt Windows 7 op 14 januari 2020 het einde van de uitgebreide ondersteuning. Op dat moment wordt de ondersteuning voor apparaten met Windows 7 beëindigd, zodat we kunnen investeren in het ondersteunen van nieuwere technologieën en het bieden van fantastische nieuwe ervaringen voor eindgebruikers. Na deze datum zijn technische hulp en automatische updates ter beveiliging van uw Windows 7-pc niet langer beschikbaar via Intune. Microsoft raadt u ten zeerste aan om vóór januari 2020 over te stappen op Windows 10, om situaties te vermijden waarin u service of ondersteuning nodig hebt die niet meer beschikbaar is. Meer informatie over de levenscyclus voor Windows-ondersteuning leest u [hier](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
