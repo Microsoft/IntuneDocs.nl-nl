@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77b7f3adf4fa8675e3734f7eab8fbaa9391d952a
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2e4def9f0e4e91f7db9e0a81e2ad55852df524f7
+ms.sourcegitcommit: 0d1a02fb3d2a801a95c2244e9ef13ecf22be2eb1
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527952"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71302468"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Windows 10-apparaten inschrijven bij de Intune-bedrijfsportal
 
@@ -45,7 +45,7 @@ In deze stappen wordt beschreven hoe u een apparaat inschrijft met Windows 10 ve
 
     ![Selecteer Werk- of school-account openen](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-4. Geef uw e-mailadres van werk of school op en selecteer vervolgens **Volgende**.  
+4. Als u de aanmeldings pagina van uw organisatie wilt weer geven, voert u het e-mail adres van uw werk of school in. Selecteer vervolgens **Volgende**.  
 
 
    ![Uw werk- of schoolaccount opgeven](./media/w10-enroll-rs1-set-up-work-or-school-account.png)  
