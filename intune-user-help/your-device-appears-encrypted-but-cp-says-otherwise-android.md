@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: caae22e59e8adb6952e9a69ff03c575ae4467b2d
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: 13f22b66b5a0700eadda28b20e0db6edce507021
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238980"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721173"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Apparaat is versleuteld, maar apps zeggen anders
 
@@ -31,7 +31,7 @@ Als Bedrijfsportal of de Microsoft Intune-app zegt dat uw apparaat niet is versl
 
 ## <a name="add-a-startup-pin"></a>Een opstartpincode toevoegen
 
-Voor bepaalde Android-apparaten moet u een opstartpincode instellen om ervoor te zorgen dat uw apparaat beveiligd is. De locatie van deze instelling vindt u in de app **instellingen** van uw apparaat. De naam en locatie van de instelling kunnen verschillen. Op de Samsung Galaxy-S7 wordt de instelling bijvoorbeeld aangeduid als **beveiligd opstarten**. Als u deze functie wilt inschakelen en een wachtwoord code wilt maken, gaat u naar **instellingen** > **vergrendelings scherm en beveiliging** > **beveiligd opstarten**.  
+Voor bepaalde Android-apparaten moet u een opstartpincode instellen om ervoor te zorgen dat uw apparaat beveiligd is. De locatie van deze instelling vindt u in de app **instellingen** van uw apparaat. De naam en locatie van de instelling kunnen verschillen. Op de Samsung Galaxy-S7 wordt de instelling bijvoorbeeld aangeduid als **beveiligd opstarten**. Als u dit wilt inschakelen en een wachtwoord code wilt maken, gaat u naar **instellingen** > **vergrendelings scherm en beveiligings** > **beveiligd opstarten**.  
 
 ## <a name="encrypt-the-entire-device"></a>Versleutel het hele apparaat
 
@@ -50,7 +50,7 @@ Deze sectie is alleen van toepassing op de app Bedrijfsportal. Als uw apparaat u
 
 Sommige Android-apparaten met versie 7.0 en later versleutelen gegevens op een manier die inconsistent is met bepaalde Android-platformstandaarden. Met deze versleutelings methoden wordt een risico op de apparaatgegevens gelegd. Als gevolg hiervan worden deze apparaten niet ondersteund.
 
-Zie het artikel [ondersteunde besturings systemen en browsers in intune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)voor een niet-limitatieve lijst van ondersteunde Android-apparaten. Als uw apparaat niet wordt weer gegeven, raadpleegt u de fabrikant van het apparaat of neemt u contact op met de ondersteunings medewerker.
+Zie het artikel [ondersteunde besturings systemen en browsers in intune](https://docs.microsoft.com/intune/fundamentals/supported-devices-browsers#supported-samsung-knox-standard-devices)voor een niet-limitatieve lijst van ondersteunde Android-apparaten. Als uw apparaat niet wordt weer gegeven, raadpleegt u de fabrikant van het apparaat of neemt u contact op met de ondersteunings medewerker.
 
 > [!Note]
 > Microsoft werkt samen met fabrikanten aan het oplossen van problemen die worden gevonden tijdens het testen of die gebruikers rapporteren. Dit artikel wordt bijgewerkt wanneer nieuwe informatie beschikbaar is.

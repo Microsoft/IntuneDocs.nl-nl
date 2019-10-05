@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0de0e676e72d46bde922fd97b651cc1a9268e45e
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: f2e2ecc79cd24a68c1a5642f64474f2d31217bd7
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71239778"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721018"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Het door uw organisatie verstrekte iOS-apparaat voor beheer inschrijven
 
@@ -35,7 +35,7 @@ U kunt beheer instellen door uw apparaat in te schakelen en u aan te melden met 
 
 ## <a name="what-is-apple-dep"></a>Wat is Apple DEP?
 
-Uw organisatie heeft mogelijk hun apparaten aangeschaft via een programma met de naam *Apple Device Enrollment Program* (DEP). Organisaties kopen grote hoeveelheden iOS- of macOS-apparaten via Apple DEP. Organisaties kunnen die apparaten vervolgens configureren en beheren in hun favoriete provider voor mobiele apparaatbeheer, zoals Intune. Zie [macOS-apparaten automatisch inschrijven met Apple Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos) als u beheerder bent en informatie wilt over Apple DEP.  
+Uw organisatie heeft mogelijk hun apparaten aangeschaft via een programma met de naam *Apple Device Enrollment Program* (DEP). Organisaties kopen grote hoeveelheden iOS- of macOS-apparaten via Apple DEP. Organisaties kunnen die apparaten vervolgens configureren en beheren in hun favoriete provider voor mobiele apparaatbeheer, zoals Intune. Zie [macOS-apparaten automatisch inschrijven met Apple Device Enrollment Program](https://docs.microsoft.com/intune/enrollment/device-enrollment-program-enroll-macos.md) als u beheerder bent en informatie wilt over Apple DEP.  
 
 ## <a name="get-your-device-managed"></a>Uw apparaat laten beheren
 
@@ -63,7 +63,7 @@ Voer de volgende stappen uit om uw macOS-apparaat voor beheer in te schrijven. A
     * Akkoord gaan met de voorwaarden
     * Een computeraccount maken
     * Een snelle installatie doorlopen
-    * Uw Mac instellen  
+    * Uw Mac instellen
 
 ## <a name="get-the-company-portal-app"></a>De Bedrijfsportal-app downloaden
 
