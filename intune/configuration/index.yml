@@ -1,0 +1,150 @@
+### YamlMime:Landing
+title: Apparaatinstellingen configureren
+summary: Microsoft Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt in- of uitschakelen. Deze instellingen en functies worden aan 'configuratieprofielen' toegevoegd en vervolgens kunt u Intune gebruiken om het profiel toe te passen op of toe te wijzen aan de apparaten.
+metadata:
+  title: Apparaatinstellingen configureren
+  description: Microsoft Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt in- of uitschakelen. Deze instellingen en functies worden aan 'configuratieprofielen' toegevoegd en vervolgens kunt u Intune gebruiken om het profiel toe te passen op of toe te wijzen aan de apparaten.
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: dougeby
+  ms.author: dougeby
+  ms.date: 09/16/2019
+  ms.openlocfilehash: 38324e042e1d3b4bcfc3f16e05520118374bb5ff
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: nl-NL
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728938"
+landingContent:
+- title: Onderdelen en instellingen op apparaten toepassen
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Overzicht van apparaatconfiguratie
+      url: device-profiles.md
+  - linkListType: quickstart
+    links:
+    - text: Een e-mailprofiel voor een apparaat voor iOS maken
+      url: quickstart-email-profile.md
+  - linkListType: how-to-guide
+    links:
+    - text: Een profiel maken
+      url: device-profile-create.md
+    - text: Profielen toewijzen
+      url: device-profile-assign.md
+    - text: Profielen controleren
+      url: device-profile-monitor.md
+- title: Instellingen voor Windows 10 en hoger
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Windows 10-sjablonen gebruiken voor het configureren van instellingen voor groepsbeleid
+      url: administrative-templates-windows.md
+    - text: Apparaatbeperkingsinstellingen configureren
+      url: device-restrictions-configure.md
+    - text: Instellingen voor leveringsoptimalisatie
+      url: delivery-optimization-windows.md
+    - text: E-mailinstellingen aan apparaten toevoegen
+      url: email-settings-configure.md
+    - text: Instellingen die moeten worden uitgevoerd als een toegewezen kiosk
+      url: kiosk-settings.md
+    - text: VPN-profielen maken om verbinding te maken met VPN-servers
+      url: vpn-settings-configure.md
+    - text: Wi-Fi-instellingen toevoegen en gebruiken op uw apparaten
+      url: wi-fi-settings-configure.md
+- title: Instellingen voor Windows Holographic for Business
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Een upgrade uitvoeren van de Windows 10-edities of de S-modus uitschakelen
+      url: edition-upgrade-configure-windows-10.md
+    - text: Instellingen die moeten worden uitgevoerd als een toegewezen kiosk
+      url: kiosk-settings.md
+    - text: VPN-profielen maken om verbinding te maken met VPN-servers
+      url: vpn-settings-configure.md
+    - text: Wi-Fi-instellingen toevoegen en gebruiken op uw apparaten
+      url: wi-fi-settings-configure.md
+    - text: Toegang, accounts en energiefuncties op gedeelde pc's en apparaten met meerdere gebruikers beheren
+      url: shared-user-device-settings.md
+- title: Instellingen voor iOS
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Functie-instellingen voor iOS-apparaten toevoegen
+      url: device-features-configure.md
+    - text: Apparaatbeperkingsinstellingen configureren
+      url: device-restrictions-configure.md
+    - text: E-mailinstellingen aan apparaten toevoegen
+      url: email-settings-configure.md
+    - text: VPN-profielen maken om verbinding te maken met VPN-servers
+      url: vpn-settings-configure.md
+    - text: VPN-profielen per app maken voor iOS-apparaten
+      url: vpn-setting-configure-per-app.md
+    - text: Wi-Fi-instellingen toevoegen en gebruiken op uw apparaten
+      url: wi-fi-settings-configure.md
+- title: Instellingen voor macOS
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Functie-instellingen voor iOS-apparaten toevoegen
+      url: device-features-configure.md
+    - text: Apparaatbeperkingsinstellingen configureren
+      url: device-restrictions-configure.md
+    - text: VPN-profielen maken om verbinding te maken met VPN-servers
+      url: vpn-settings-configure.md
+    - text: Wi-Fi-instellingen toevoegen en gebruiken op uw apparaten
+      url: wi-fi-settings-configure.md
+    - text: MacOS-kernelextensies toevoegen
+      url: kernel-extensions-overview-macos.md
+- title: Instellingen voor Android
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Apparaatbeperkingsinstellingen configureren
+      url: device-restrictions-configure.md
+    - text: E-mailinstellingen aan apparaten toevoegen
+      url: email-settings-configure.md
+    - text: VPN-profielen maken om verbinding te maken met VPN-servers
+      url: vpn-settings-configure.md
+    - text: Wi-Fi-instellingen toevoegen en gebruiken op uw apparaten
+      url: wi-fi-settings-configure.md
+    - text: Een Wi-Fi-profiel maken met een vooraf gedeelde sleutel
+      url: wi-fi-profile-shared-key.md
+    - text: Zebra-apparaten met Zebra-mobiliteitsextensies beheren
+      url: android-zebra-mx-overview.md
+    - text: Android Enterprise-apparaten met OEMConfig beheren
+      url: android-oem-configuration-overview.md
+- title: Instellingen voor Android Enterprise
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Apparaatbeperkingsinstellingen configureren
+      url: device-restrictions-configure.md
+    - text: E-mailinstellingen aan apparaten toevoegen
+      url: email-settings-configure.md
+    - text: VPN-profielen maken om verbinding te maken met VPN-servers
+      url: vpn-settings-configure.md
+    - text: Wi-Fi-instellingen toevoegen en gebruiken op uw apparaten
+      url: wi-fi-settings-configure.md
+- title: Lijst met instellingen
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Android
+      url: device-restrictions-android.md
+    - text: Android Enterprise
+      url: device-restrictions-android-for-work.md
+    - text: iOS
+      url: ios-device-features-settings.md
+    - text: macOS
+      url: macos-device-features-settings.md
+    - text: Windows 10 en hoger
+      url: delivery-optimization-settings.md
+    - text: Windows Holographic for Business
+      url: device-restrictions-windows-holographic.md
+    - text: Windows 8.1
+      url: device-restrictions-windows-8-1.md
+    - text: Windows Phone 8.1
+      url: device-restrictions-windows-phone-8-1.md

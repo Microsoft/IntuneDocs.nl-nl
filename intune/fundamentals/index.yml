@@ -1,0 +1,85 @@
+### YamlMime:Landing
+title: Fundamentale voorzieningen van Microsoft Intune
+summary: Microsoft Intune is een cloudgebaseerde service die uw werknemers in staat stelt om productief te zijn terwijl uw zakelijke gegevens veilig blijven. Meer informatie over planning, migratie en het instellen van fundamentele voorzieningen voor Intune.
+metadata:
+  title: Fundamentale voorzieningen van Intune
+  description: Meer informatie over planning, migratie en het instellen van fundamentele voorzieningen voor Intune.
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: dougeby
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/29/2019
+  ms.openlocfilehash: c0d75116a31c668971950d144645009a9564654c
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: nl-NL
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728734"
+landingContent:
+- title: Over Microsoft Intune
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Wat is Intune?
+      url: what-is-intune.md
+    - text: Wat is er nieuw
+      url: whats-new.md
+    - text: Functies in ontwikkeling
+      url: in-development.md
+  - linkListType: tutorial
+    links:
+    - text: Walkthrough door Intune in de Azure-portal
+      url: tutorial-walkthrough-intune-portal.md
+  - linkListType: concept
+    links:
+    - text: Wat is apparaatbeheer?
+      url: what-is-device-management.md
+    - text: Architectuur op hoog niveau
+      url: high-level-architecture.md
+    - text: Algemene manieren om Intune te gebruiken
+      url: common-scenarios.md
+    - text: Beslissingen voor de technologie voor BYOD met EMS
+      url: byod-technology-decisions.md
+- title: Ingebruikname van Intune
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: De communicatie plannen
+      url: migration-guide-communication-plan.md
+    - text: Planning a DPM Deployment`(Een DPM-implementatie plannen)
+      url: planning-guide.md
+    - text: Migratiehandleiding
+      url: migration-guide.md
+    - text: Pakket voor de ingebruikname van Intune
+      url: https://www.microsoft.com/download/details.aspx?id=58348
+- title: Intune instellen
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Intune gratis proberen
+      url: free-trial-sign-up.md
+  - linkListType: concept
+    links:
+    - text: Ondersteunde configuraties
+      url: supported-devices-browsers.md
+    - text: Netwerkconfiguratievereisten
+      url: network-bandwidth-use.md
+    - text: Eindpunten van het Intune-netwerk
+      url: intune-endpoints.md
+    - text: Op rollen gebaseerd toegangsbeheer
+      url: role-based-access-control.md
+    - text: Intune-licenties
+      url: licenses.md
+  - linkListType: how-to-guide
+    links:
+    - text: Stappen om Intune in te stellen
+      url: setup-steps.md
+    - text: Gebruikers toevoegen
+      url: users-add.md
+    - text: Groepen toevoegen
+      url: groups-add.md
+    - text: Bereiktags gebruiken
+      url: scope-tags.md

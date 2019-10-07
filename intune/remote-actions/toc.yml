@@ -1,0 +1,67 @@
+- name: Externe acties
+  href: index.yml
+- name: Overzicht
+  expanded: true
+  items:
+    - name: Overzicht van apparaatbeheer
+      href: device-management.md
+- name: Handleidingen
+  items:
+    - name: Vergrendelingen en wachtwoorden
+      items:
+        - name: Apparaat vergrendelen
+          href: device-remote-lock.md
+        - name: Wachtwoordcode opnieuw instellen
+          href: device-passcode-reset.md
+        - name: Windows 10-pincode opnieuw instellen
+          href: device-windows-pin-reset.md
+    - name: Verwijderen en opnieuw opstarten
+      items:
+        - name: Apparaten verwijderen
+          href: devices-wipe.md
+        - name: Nieuwe start van Windows beheren
+          href: device-fresh-start.md
+        - name: Apparaat opnieuw opstarten
+          href: device-restart.md
+    - name: Acties voor Apple-apparaten
+      items:
+        - name: Verloren iOS-apparaat zoeken
+          href: device-locate.md
+        - name: Modus Apparaat verloren voor iOS inschakelen
+          href: device-lost-mode.md
+        - name: Supervisiemodus voor iOS inschakelen
+          href: device-supervised-mode.md
+        - name: Een macOS-apparaat wissen
+          href: device-erase.md
+        - name: Activeringsvergrendeling overslaan
+          href: device-activation-lock-bypass.md
+    - name: Gebruikersacties
+      items:
+        - name: Huidige gebruiker afmelden
+          href: device-logout-user.md
+        - name: Gebruiker verwijderen
+          href: device-remove-user.md
+        - name: Primaire gebruiker zoeken
+          href: find-primary-user.md
+    - name: Overige acties
+      items:
+        - name: Naam van apparaat wijzigen
+          href: device-rename.md
+        - name: Meldingen verzenden
+          href: custom-notifications.md
+        - name: Extern beheer van mobiele apparaten
+          href: teamviewer-support.md
+        - name: Apparaat synchroniseren
+          href: device-sync.md
+        - name: Inventaris van mobiele apparaten controleren
+          href: device-inventory.md
+    - name: Probleemoplossing
+      items:
+        - name: Problemen met apparaatacties oplossen
+          href: troubleshoot-device-actions.md
+- name: Resources
+  items:
+    - name: Scenario-implementatiehandleidingen
+      items:
+        - name: De helpdeskkosten verlagen
+          href: password-reset.md

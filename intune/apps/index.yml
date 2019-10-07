@@ -1,0 +1,111 @@
+### YamlMime:Landing
+title: Apps beheren
+summary: Met Microsoft Intune kunt u de clientapps beheren die uw organisatie gebruikt. U kunt apps van verschillende platforms en gebruikers configureren, toevoegen, toewijzen, beveiligen, bewaken, bijwerken en buiten gebruik stellen.
+metadata:
+  title: Apps beheren
+  description: Apps beheren en beveiligen
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: erikre
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/25/2019
+  ms.openlocfilehash: ba12c3a3253fd35bf803342214b73fc094abc3aa
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: nl-NL
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71729006"
+landingContent:
+- title: Aan de slag met apps
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Overzicht van app-beheer
+      url: app-management.md
+  - linkListType: quickstart
+    links:
+    - text: Een app toevoegen en toewijzen
+      url: quickstart-add-assign-app.md
+  - linkListType: concept
+    links:
+    - text: Levenscyclus van apps
+      url: app-lifecycle.md
+- title: Apps toevoegen
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Overzicht van Apps toevoegen
+      url: apps-add.md
+    - text: Met Intune beveiligde apps
+      url: apps-supported-intune-apps.md
+  - linkListType: how-to-guide
+    links:
+    - text: Store-apps
+      url: store-apps-android.md
+    - text: LOB-apps
+      url: lob-apps-android.md
+    - text: Win32-app-beheer voor Intune (zelfstandig)
+      url: apps-win32-app-management.md
+    - text: PowerShell-scripts op Windows 10-apparaten gebruiken
+      url: intune-management-extension.md
+    - text: Apps aan groepen toewijzen
+      url: apps-deploy.md
+- title: Apps toewijzen
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Apps aan groepen toewijzen
+      url: apps-deploy.md
+    - text: Intune en het uitsluiten van apps
+      url: apps-inc-exl-assignments.md
+    - text: Windows 10-apps implementeren
+      url: apps-windows-10-app-deploy.md
+    - text: Apps implementeren naar Government-omgevingen
+      url: apps-deploy-gcc-dod.md
+- title: Apps configureren
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Selectief wissen van apps
+      url: apps-selective-wipe.md
+    - text: iOS beheerde apparaten
+      url: app-configuration-policies-use-ios.md
+    - text: Beheerde Android Enterprise-apparaten
+      url: app-configuration-policies-use-android.md
+    - text: Beheerde apps zonder apparaatinschrijving
+      url: app-configuration-policies-managed-app.md
+    - text: Managed Browser configureren
+      url: app-configuration-managed-browser.md
+    - text: VPP-apps en -boeken beheren
+      url: vpp-apps.md
+- title: Apps beveiligen
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Overzicht van App-beveiligingsbeleid
+      url: app-protection-policy.md
+  - linkListType: how-to-guide
+    links:
+    - text: Beveiligingsbeleid voor apps maken en toewijzen
+      url: app-protection-policies.md
+    - text: Beveiligingsbeleid voor apps valideren
+      url: app-protection-policies-validate.md
+    - text: Gebruikersstatus voor app-beveiliging bewaken
+      url: app-protection-policies-monitor.md
+    - text: Beveiligingsbeleid van Windows-gegevensbescherming voor apps maken en toewijzen
+      url: windows-information-protection-policy-create.md
+    - text: Gegevensoverdracht tussen iOS-apps beheren
+      url: data-transfer-between-apps-manage-ios.md
+- title: Problemen met apps oplossen
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Problemen met app-installatie oplossen
+      url: troubleshoot-app-install.md
+    - text: Problemen met Mobile Application Management oplossen
+      url: troubleshoot-mam.md
+    - text: App-logboeken voor beveiliging controleren
+      url: app-protection-policy-settings-log.md

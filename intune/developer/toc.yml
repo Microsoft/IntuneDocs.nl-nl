@@ -1,0 +1,79 @@
+- name: Richtlijnen voor ontwikkelaars
+  href: index.yml
+- name: Handleidingen
+  expanded: true
+  items:
+    - name: Apps beveiligen met Intune App SDK
+      href: app-sdk.md
+      items:
+        - name: Aan de slag met Intune App SDK
+          href: app-sdk-get-started.md
+        - name: LOB-apps voorbereiden voor app-beveiliging
+          href: apps-prepare-mobile-application-management.md
+        - name: App Wrapping Tool voor iOS
+          href: app-wrapper-prepare-ios.md
+        - name: SDK voor Intune-apps voor iOS
+          href: app-sdk-ios.md
+        - name: App Wrapping Tool voor Android
+          href: app-wrapper-prepare-android.md
+          displayName: dex
+        - name: SDK voor Intune-apps voor Android
+          href: app-sdk-android.md
+          items:
+            - name: Testhandleiding voor Intune App SDK voor Android
+              href: app-sdk-android-testing-guide.md
+        - name: Microsoft Intune App SDK Xamarin Bindings
+          href: app-sdk-xamarin.md
+    - name: Het Intune-datawarehouse gebruiken
+      href: reports-nav-create-intune-reports.md
+      items:
+        - name: Wijzigingenlogboek voor het datawarehouse
+          href: reports-changelog.md
+        - name: Verbinding maken met het datawarehouse met Power BI
+          href: reports-proc-get-a-link-powerbi.md
+        - name: Een rapport maken van de OData-feed met Power BI
+          href: reports-proc-create-with-odata.md
+    - name: Rapporteren met de Intune-datawarehouse-API
+      href: reports-nav-intune-data-warehouse.md
+      items:
+        - name: Gegevens ophalen uit de datawarehouse-API met een REST-client
+          href: reports-proc-data-rest.md
+        - name: Datawarehouse-API-eindpunt
+          href: reports-api-url.md
+        - name: Datawarehouse-verificatie enkel voor toepassing
+          href: data-warehouse-app-only-auth.md
+        - name: Datawarehouse-gegevensmodel
+          href: reports-ref-data-model.md
+          items:
+            - name: Datawarehouse-verzamelingen
+              href: intune-data-warehouse-collections.md
+            - name: Datawarehouse-verzamelingen (bèta)
+              items:
+                - name: Levensduur gebruikers weergeven in Intune-datawarehouse
+                  href: reports-ref-user-timeline.md
+                - name: Naslag voor toepassingsentiteiten
+                  href: reports-ref-application.md
+                - name: Verwijzing voor datumentiteit
+                  href: reports-ref-date.md
+                - name: Informatie voor apparaatentiteiten
+                  href: reports-ref-devices.md
+                - name: Naslaginformatie voor Intune-beheeruitbreidingsentiteit
+                  href: reports-ref-intunemanagementextension.md
+                - name: Naslag voor MAM-entiteiten (Mobile Application Management)
+                  href: reports-ref-mobile-app-management.md
+                - name: Naslag voor beleidsentiteiten
+                  href: reports-ref-policy.md
+                - name: Naslaginformatie voor entiteit gebruikersapparaatkoppelingen
+                  href: reports-ref-user-device.md
+                - name: Naslag voor gebruikersentiteit
+                  href: reports-ref-user.md
+        - name: Uw Intune Data Warehouse-accountgegevens verplaatsen
+          href: data-warehouse-account-move.md
+    - name: Toegang tot Intune-API's in Microsoft Graph
+      items:
+        - name: Azure AD gebruiken voor toegang tot Intune-API's in Microsoft Graph
+          href: intune-graph-apis.md
+        - name: Intune-API-referentiemateriaal
+          href: 'https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: Graph-API's gebruikt om apparaten te configureren
+          href: graph-apis-used-by-intune-device-configuration-windows.md

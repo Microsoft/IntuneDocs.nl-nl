@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Richtlijnen voor ontwikkelaars
+summary: Leer hoe u Intune-resources voor ontwikkelaars kunt gebruiken, zoals de Intune-app-SDK, de App Wrapping Tool om LOB-apps te beveiligen, Intune-datawarehouse-rapportage, de API voor het bewaken van Intune-succes en Microsoft Graph om toegang te krijgen tot de Intune-functionaliteit met Azure AD.
+metadata:
+  title: Richtlijnen voor ontwikkelaars
+  description: Leer hoe u Intune-resources voor ontwikkelaars kunt gebruiken, zoals de Intune-app-SDK, de App Wrapping Tool om LOB-apps te beveiligen, Intune-datawarehouse-rapportage, de API voor het bewaken van Intune-succes en Microsoft Graph om toegang te krijgen tot de Intune-functionaliteit met Azure AD.
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: erikre
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/23/2019
+  ms.openlocfilehash: f7d48e1b5473d84743adee4a7ef7b6c83b960d19
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: nl-NL
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728870"
+landingContent:
+- title: Apps beveiligen met Intune App SDK
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Overzicht van de Microsoft Intune App SDK
+      url: app-sdk.md
+  - linkListType: concept
+    links:
+    - text: Aan de slag met de app-SDK van Microsoft Intune
+      url: app-sdk-get-started.md
+    - text: Line-of-business-apps voorbereiden om apps te beveiligen
+      url: apps-prepare-mobile-application-management.md
+  - linkListType: how-to-guide
+    links:
+    - text: Intune-app-SDK voor iOS
+      url: app-sdk-ios.md
+    - text: iOS-apps voorbereiden voor appbeveiligingsbeleid
+      url: app-wrapper-prepare-ios.md
+    - text: SDK voor Intune-apps voor Android
+      url: app-wrapper-prepare-android.md
+- title: Het Intune-datawarehouse gebruiken
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Overzicht van datawarehouse
+      url: reports-nav-create-intune-reports.md
+    - text: Wijzigingenlogboek voor de datawarehouse-API
+      url: reports-changelog.md
+    - text: Overzicht van de Intune-datawarehouse-API
+      url: reports-nav-intune-data-warehouse.md
+    - text: Overzicht van de Intune-datawarehouse-gegevensmodellen
+      url: reports-ref-data-model.md
+  - linkListType: concept
+    links:
+    - text: Intune-datawarehouse-verzamelingen
+      url: intune-data-warehouse-collections.md
+  - linkListType: how-to-guide
+    links:
+    - text: Verbinding maken met het datawarehouse met Power BI
+      url: reports-proc-get-a-link-powerbi.md
+    - text: Een Intune-rapport maken van de OData-feed met Power BI
+      url: reports-proc-create-with-odata.md
+    - text: Gegevens ophalen uit de Intune-datawarehouse-API met een REST-client
+      url: reports-proc-data-rest.md
+    - text: Intune-datawarehouse-API-eindpunt
+      url: reports-api-url.md
+- title: Toegang tot Intune-API's in Microsoft Graph
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Graph API's en overeenkomende Windows 10-CSP's die worden gebruikt in Intune
+      url: graph-apis-used-by-intune-device-configuration-windows.md
+  - linkListType: how-to-guide
+    links:
+    - text: Azure AD gebruiken voor toegang tot de Intune-API's in Microsoft Graph
+      url: intune-graph-apis.md
+  - linkListType: reference
+    links:
+    - text: Naslaginformatie over de Intune Graph API's
+      url: https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta
