@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ffc99b34016eba6511f63d1df2184abc3cae858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c07ce82bbc056e1d76abeb5d31bf57e0973fad6e
+ms.sourcegitcommit: bdf948be824cf5390d5166a277f389f3785c81f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725163"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71960881"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Android Enterprise-systeem-apps toevoegen aan Microsoft Intune
 
@@ -42,9 +42,13 @@ Met de volgende stappen kunt u een Android Enterprise-systeem-app toevoegen aan 
 5. Selecteer **OK**.
 6. Selecteer **Toevoegen**.
 
+> [!NOTE]
+> U moet samenwerken met de OEM van uw apparaat om de pakketnaam te vinden van de app die u wilt in- of uitschakelen.
+
 De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u selecteert. 
 
 Android Enterprise-systeem-apps schakelen apps die al deel uitmaken van het platform in of uit. Als u een app wilt inschakelen, wijst u de systeem-app toe als **Vereist**. Als u een app wilt uitschakelen, wijst u de systeem-app toe als **Verwijderen**. Systeem-apps kunnen niet worden toegewezen als beschikbaar voor een gebruiker.
+
 
 ## <a name="next-steps"></a>Volgende stappen
 
