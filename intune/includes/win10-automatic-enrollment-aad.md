@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56323381"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "71302599"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Automatische inschrijving voor Windows 10 inschakelen
 
@@ -21,7 +21,7 @@ Met automatische inschrijving kunnen gebruikers hun Windows 10-apparaten inschri
 
    ![Schermopname van de Azure-portal](../media/auto-enroll-azure-main.png)
 
-2. Selecteer **Mobiliteit (MDM en MAM)**.
+2. Selecteer **Mobiliteit (MDM en MAM)** .
 
    ![Schermopname van de Azure-portal](../media/auto-enroll-mdm.png)
 
@@ -41,7 +41,7 @@ Met automatische inschrijving kunnen gebruikers hun Windows 10-apparaten inschri
       > Voor zakelijke apparaten krijgt het MDM-gebruikersbereik voorrang als beide bereiken zijn ingeschakeld. De apparaten worden via MDM geregistreerd.
 
    > [!NOTE]
-   > Het gebruikersbereik van MAM moet worden ingesteld op een gebruikersgroep of -verzameling.
+   > Het MDM-gebruikersbereik moet worden ingesteld op een Azure AD-groep die gebruikersobjecten bevat.
 
    ![Schermopname van de Azure-portal](../media/auto-enroll-scope.png)
 
