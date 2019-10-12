@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/27/2019
+ms.date: 10/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 009b9cf22bcdd73eb563c772cc9995047f05a9c1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0e7c4e5ed45455dda941fb0c61c989c12c57135d
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735763"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999325"
 ---
 # <a name="in-development-for-microsoft-intune---october-2019"></a>In ontwikkeling voor Microsoft Intune - oktober 2019
 
@@ -117,7 +117,7 @@ Als u de huidige instellingen wilt zien, gaat u naar [iOS-apparaatinstellingen v
 
 Van toepassing op:
 - iOS 13.0 en hoger
-- iPadOS 13,0 en hoger
+- iPadOS 13.0 en hoger
 
 ### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-and-android-enterprise----5021055----"></a>De instelling automatisch verbinding maken wordt verwijderd in Wi-Fi-profielen op Android en Android Enter prise <!-- 5021055  -->
 Op Android-en Android Enter prise-apparaten kunt u een Wi-Fi-profiel maken voor het configureren van verschillende instellingen (**apparaatconfiguratie** > -**profielen** > **profiel maken** > **Android** of **Android Enter prise** voor platform > **Wi-Fi** voor profiel type). De instelling **verbinding automatisch maken** wordt verwijderd, omdat deze [niet wordt ondersteund door Android](https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork%28int%2c%20boolean%29). 
@@ -131,7 +131,7 @@ Van toepassing op:
 - Android Enterprise
 
 ### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339----"></a>Een algemene HTTP-proxy maken op Android Enter prise Device owner-apparaten <!-- 4816339  -->
-Op Android Enter prise-apparaten kunt u een VPN-profiel maken met verschillende VPN-clients (**apparaatconfiguratie** > **profielen** > **profiel maken** > **Android Enter prise** voor platform > eigenaar van het **apparaat > Beperkingen van apparaten** voor profiel type >- **connectiviteit**). U kunt een wereld wijde HTTP-proxy configureren om te voldoen aan de richt lijnen voor websurfen van uw organisatie. Alle apps die naar HTTP-websites gaan, gebruiken deze proxy.
+Op Android Enter prise-apparaten kunt u een algemene HTTP-proxy configureren om te voldoen aan de webbrowsers van uw organisatie (**apparaatconfiguratie** > **profielen** > **profiel maken** > **Android Enter prise** voor platform > **apparaat-eigenaar > beperkingen van apparaten** voor profiel type > **connectiviteit**). Zodra het HTTP-verkeer is geconfigureerd, wordt deze proxy gebruikt.
 
 Van toepassing op:
 - Android Enterprise-apparaateigenaar
@@ -139,10 +139,10 @@ Van toepassing op:
 ### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>Nieuw firmware configuratie interface profiel voor apparaten voor Windows 10 en hoger <!-- 2266073  -->
 In Windows 10 en hoger kunt u een configuratie profiel voor een apparaat maken om instellingen en functies te beheren (**apparaatconfiguratie** > **profielen** > **profiel maken** > **Windows 10 en hoger** voor platform). Er wordt een nieuw profiel type voor de firmware configuratie-interface van een apparaat weer waarmee intune UEFI-instellingen (BIOS) kan beheren.
 
-Voor een overzicht van alle instellingen die u kunt configureren, Zie [onderdelen en instellingen op uw apparaten Toep assen met apparaatprofielen in Microsoft intune](../configuration/device-profiles.md).
+Voor een overzicht van alle huidige instellingen die u kunt configureren, Zie [onderdelen en instellingen op uw apparaten Toep assen met apparaatprofielen in Microsoft intune](../configuration/device-profiles.md).
 
 Van toepassing op:
-- Windows 10 RS5 (1809) en nieuwere versie van sommige Oem's
+- Windows 10 RS5 (1809) en nieuwer op apparaten selecteren
 
 ### <a name="pkcs-certificates-for-macos-----1333650------------------"></a>PKCS-certificaten voor macOS  <!-- 1333650                -->
 We gaan de volledige ondersteuning voor PKCS-certificaten toevoegen op apparaten met macOS. Gebruikers kunnen certificaten van gebruikers en apparaten implementeren met de aangepaste naam van het onderwerp en alternatieve namen voor het onderwerp. We hebben ook een nieuwe instelling om alle apps toegang toe te staan, waardoor alle gekoppelde apps toegang hebben tot de persoonlijke sleutel. Ga voor meer informatie over deze instelling naar de volgende Apple-documentatie: https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.

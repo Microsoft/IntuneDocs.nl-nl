@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 10/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 484035603e4fb447b004aad6c6f85726034f3c23
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 493db6299aa8242d0ca6ab669b313e85d0dc14c6
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732825"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251581"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Instellingen in Windows 10 en later om te markeren of apparaten wel of niet conform zijn met behulp van Intune
 
@@ -138,6 +138,9 @@ Geldt alleen voor gezamenlijk beheerde apparaten met Windows 10 en hoger. Appara
 - **Firewall**: Stel deze optie in op **vereist** om de micro soft Defender firewall in te scha kelen en te voor komen dat gebruikers deze uitschakelen. **Niet geconfigureerd** (standaard) heeft geen invloed op de micro soft Defender firewall en de bestaande instellingen worden niet gewijzigd.
 
   [CSP van Firewall](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
+  > [!NOTE]
+  > Als het apparaat direct wordt gesynchroniseerd nadat het systeem opnieuw is opgestart of als het activeren vanuit de slaap stand direct wordt gesynchroniseerd, wordt deze instelling mogelijk gerapporteerd als **fout**. Dit scenario heeft mogelijk geen invloed op de algehele status van de apparaatcompatibiliteit. Als u de nalevings status opnieuw wilt evalueren, [synchroniseert u het apparaat](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows)hand matig.
 
 - **Trusted Platform Module (TPM)** : als u deze instelling instelt op **vereist**, controleert intune de versie op naleving. Het apparaat is compatibel als de versie van de TPM-chip groter is dan 0 (nul). Het apparaat is niet compatibel als er geen TPM-versie op het apparaat is. Wanneer dit **niet is geconfigureerd**, controleert intune het apparaat niet op een TPM-chip versie.
 

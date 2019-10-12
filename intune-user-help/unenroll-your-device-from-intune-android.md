@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecc73fc9c51ae11f7541d1b9d28f0ccc8297c187
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8f2e9313cf2a4d639096f783b895596fc2535649
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721211"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163554"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Uw Android-apparaat uitschrijven bij het beheer  
 
@@ -64,7 +64,7 @@ U kunt ook op **Instellingen** > **Apps** > **Bedrijfsportal** > **Verwijderen**
 
 Als laatste redmiddel kunt u de app als apparaatbeheerder van uw apparaat verwijderen.  
 
-Als u een apparaat hebt waarvan het bedrijf de eigenaar is, kan uw organisatie mogelijk verplichten Bedrijfsportal te allen tijden op uw apparaat te houden. Als u deze app verwijdert, kan u de toegang tot beschermde bedrijfsresources worden ontzegd, zoals e-mail, apps, Wi-Fi of VPN, tot u de app opnieuw installeert. Zie [Apps toevoegen aan Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-add.md#apps-that-are-added-automatically-by-intune) voor meer informatie over het installeren, bijwerken of verwijderen van vereiste apps.
+Als u een apparaat hebt waarvan het bedrijf de eigenaar is, kan uw organisatie mogelijk verplichten Bedrijfsportal te allen tijden op uw apparaat te houden. Als u deze app verwijdert, kan u de toegang tot beschermde bedrijfsresources worden ontzegd, zoals e-mail, apps, Wi-Fi of VPN, tot u de app opnieuw installeert. Zie [Apps toevoegen aan Microsoft Intune](/intune/apps/apps-add#apps-that-are-added-automatically-by-intune) voor meer informatie over het installeren, bijwerken of verwijderen van vereiste apps.
 
 U kunt de Bedrijfsportal als apparaatbeheerder als volgt uitschakelen. De daadwerkelijke naam van elke instelling kan afwijken op uw Android-apparaat.  
 

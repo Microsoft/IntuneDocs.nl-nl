@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7bba4617aa756c5f7168a2febf1a3f1ffdd2029
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1938f6862fa7b74dccc4ea23ac139fcd955d77d7
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735997"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237269"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>MDM-beveiligingsbasislijninstellingen voor Intune  
 
@@ -1622,7 +1622,7 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
 
 - **Uitvoertype vanuit e-mailinhoud**  
   Deze regel voorkomt dat de volgende bestandstypen worden uitgevoerd of gestart vanuit een e-mailbericht dat wordt weergegeven in Microsoft Outlook of webmail (zoals Gmail.com of Outlook.com): uitvoerbare bestanden (zoals .exe, .dll of .scr) Script-bestanden (zoals de volgende: PowerShell .ps, VisualBasic .vbs of JavaScript .js) Script-archiefbestanden.  
-  [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067063)  
+  [Meer informatie](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) 
   
   **Standaardinstelling**: Blokkeren
 
@@ -1632,7 +1632,7 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
 
 - **Netwerkbeveiligingstype**  
   Met dit beleid kunt u netwerkbeveiliging inschakelen (blokkeren/controleren) of uitschakelen in Windows Defender Exploit Guard. Netwerkbeveiliging is een functie van Windows Defender Exploit Guard die voorkomt dat werknemers die apps gebruiken in contact komen met phishing-praktijken, sites die misbruik maken en schadelijke inhoud op internet. Dit omvat het voorkomen dat browsers van derden verbinding maken met gevaarlijke websites. Waardetype is geheel getal. Als u deze instelling inschakelt, wordt netwerkbeveiliging ingeschakeld en kunnen werknemers dit niet uitschakelen. Het gedrag kan worden beheerd met de volgende opties: Blokkeren en Controleren. Als u dit beleid inschakelt met de optie Blokkeren, kunnen gebruikers en apps geen verbinding maken met gevaarlijke domeinen. U kunt deze activiteit bekijken in Windows Defender Security Center. Als u dit beleid inschakelt met de optie Controleren, kunnen gebruikers en apps verbinding maken met gevaarlijke domeinen. Maar deze activiteit wordt nog steeds weergegeven in Windows Defender Security Center. Als u dit beleid uitschakelt, kunnen gebruikers/apps verbinding maken met gevaarlijke domeinen. U ziet geen netwerkactiviteit in Windows Defender Security Center. Als u dit beleid niet configureert, wordt netwerkblokkering standaard uitgeschakeld.  
-  [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067102)  
+  [Meer informatie](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **Standaardinstelling**: Inschakelen
   
