@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af81552942805bed07e818d6005231e9305b3460
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 08017be16e4257ef0bd7bfb775197feaa20baf75
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725787"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940348"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-configuratiebeleid voor Microsoft Intune
 
@@ -88,6 +88,77 @@ U kunt op de volgende drie manieren het app-configuratiebeleid valideren:
 
       ![Schermopname van de app-configuratie](./media/app-configuration-policies-overview/app-configuration.png)
 
+## <a name="diagnostic-logs"></a>Diagnostische logboeken
+
+### <a name="ios-configuration-on-unmanaged-devices"></a>iOS-configuratie op niet-beheerde apparaten
+
+U kunt de iOS-configuratie valideren met het **diagnostische logboek van Intune** op niet-beheerde apparaten voor de configuratie van beheerde apps.
+
+1. Download en installeer **Intune Managed Browser** vanuit de App Store als het nog niet is geïnstalleerd op het apparaat. Zie [Met Microsoft Intune beveiligde apps](apps-supported-intune-apps.md) voor meer informatie.
+2. Start **Intune Managed Browser** en selecteer **about** > **intunehelp** in de navigatiebalk.
+3. Klik op **Aan de slag**.
+4. Klik op **Logboeken delen**.
+5. Gebruik de e-mail-app van uw keuze om de logboeken naar uzelf te verzenden zodat deze op uw pc kunnen worden weergegeven. 
+6. Open **IntuneMAMDiagnostics.txt** in uw tekstbestandsviewer.
+7. Zoek naar `ApplicationConfiguration`. De resultaten zien er ongeveer als volgt uit:
+
+    ``` JSON
+        {
+            (
+                {
+                    Name = "com.microsoft.intune.mam.managedbrowser.BlockListURLs";
+                    Value = "https://www.aol.com";
+                },
+                {
+                    Name = "com.microsoft.intune.mam.managedbrowser.bookmarks";
+                    Value = "Outlook Web|https://outlook.office.com||Bing|https://www.bing.com";
+                }
+            );
+        },
+        {
+            ApplicationConfiguration =             
+            (
+                {
+                Name = IntuneMAMUPN;
+                Value = "CMARScrubbedM:13c45c42712a47a1739577e5c92b5bc86c3b44fd9a27aeec3f32857f69ddef79cbb988a92f8241af6df8b3ced7d5ce06e2d23c33639ddc2ca8ad8d9947385f8a";
+                },
+                {
+                Name = "com.microsoft.outlook.Mail.NotificationsEnabled";
+                Value = false;
+                }
+            );
+        }
+    ```
+
+De configuratiedetails van uw toepassing moeten voldoen aan het toepassingsconfiguratiebeleid dat voor uw tenant is geconfigureerd. 
+
+![Configuratie van doel-app](./media/app-configuration-policies-overview/targeted-app-configuration-3.png)
+
+### <a name="ios-configuration-on-managed-devices"></a>iOS-configuratie op beheerde apparaten
+
+U kunt de iOS-configuratie valideren met het **diagnostische logboek van Intune** op beheerde apparaten voor de configuratie van beheerde apps.
+
+1. Download en installeer **Intune Managed Browser** vanuit de App Store als het nog niet is geïnstalleerd op het apparaat. Zie [Met Microsoft Intune beveiligde apps](apps-supported-intune-apps.md) voor meer informatie.
+2. Start **Intune Managed Browser** en selecteer **about** > **intunehelp** in de navigatiebalk.
+3. Klik op **Aan de slag**.
+4. Klik op **Logboeken delen**.
+5. Gebruik de e-mail-app van uw keuze om de logboeken naar uzelf te verzenden zodat deze op uw pc kunnen worden weergegeven. 
+6. Open **IntuneMAMDiagnostics.txt** in uw tekstbestandsviewer.
+7. Zoek naar `AppConfig`. Uw resultaten moeten voldoen aan het toepassingsconfiguratiebeleid dat voor uw tenant is geconfigureerd.
+
+### <a name="android-configuration-on-managed-devices"></a>Android-configuratie op beheerde apparaten
+
+U kunt de iOS-configuratie valideren met het **diagnostische logboek van Intune** op beheerde apparaten voor de configuratie van beheerde apps.
+
+Als u logboeken van een Android-apparaat wilt verzamelen, moet u of de eindgebruiker de logboeken van het apparaat downloaden via een USB-verbinding (of het equivalent van **File Explorer** op het apparaat). Dit zijn de stappen:
+
+1. Sluit het Android-apparaat met de USB-kabel aan op de computer.
+2. Zoek op de computer naar een map met de naam van uw apparaat. Zoek in die map naar `Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal`.
+3. Open de map Files in de map `com.microsoft.windowsintune.companyportal` en open `OMADMLog_0`.
+3. Zoek naar `AppConfigHelper` om berichten te vinden die gerelateerd zijn aan de app-configuratie. De resultaten moeten er ongeveer uitzien als het volgende gegevensblok:
+
+    `2019-06-17T20:09:29.1970000       INFO   AppConfigHelper     10888  02256  Returning app config JSON [{"ApplicationConfiguration":[{"Name":"com.microsoft.intune.mam.managedbrowser.BlockListURLs","Value":"https:\/\/www.aol.com"},{"Name":"com.microsoft.intune.mam.managedbrowser.bookmarks","Value":"Outlook Web|https:\/\/outlook.office.com||Bing|https:\/\/www.bing.com"},{"Name":"com.microsoft.intune.mam.managedbrowser.homepage","Value":"https:\/\/www.arstechnica.com"}]},{"ApplicationConfiguration":[{"Name":"IntuneMAMUPN","Value":"AdeleV@M365x935807.OnMicrosoft.com"},{"Name":"com.microsoft.outlook.Mail.NotificationsEnabled","Value":"false"},{"Name":"com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed","Value":"false"}]}] for user User-875363642`
+    
 ## <a name="graph-api-support-for-app-configuration"></a>Graph API-ondersteuning voor app-configuratie
 
 U kunt Graph API gebruiken om app-configuratietaken uit te voeren. Zie het Engelstalige [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) voor meer informatie.

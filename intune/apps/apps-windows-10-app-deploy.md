@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c853608f46bb01263ddd08193f729cdfb018fed9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 04e943f573fb2485a2ef7f1e3245f08d4222d142
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724968"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830566"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementatie van Windows 10-apps met Microsoft Intune 
 
@@ -36,6 +36,8 @@ LOB-apps (Line-Of-Business) en Microsoft Store voor Bedrijven-apps zijn de typen
 > - Voor Windows 10 1709: [21 juni 2018: KB4284822 (build van besturingssysteem: 16299.522)](https://support.microsoft.com/help/4284822).
 >
 > Alleen Windows 10 versie 1803 en hoger ondersteunt het installeren van apps wanneer er geen primaire gebruiker is gekoppeld.
+>
+> Implementatie van LOB-apps wordt niet ondersteund op apparaten met Windows 10 Home-edities.
 
 ## <a name="windows-10-line-of-business-apps"></a>Windows 10 Line-Of-Business-apps
 

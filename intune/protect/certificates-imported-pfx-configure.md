@@ -5,7 +5,7 @@ keywords: ''
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b801da3bd4245361e8c55a40c67daf2c8890fd1e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fead8b9d69f5356876c0b3a2a4ce02e9b754128e
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721601"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999338"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Geïmporteerde PKCS-certificaten configureren en gebruiken met Intune
 
@@ -168,7 +168,7 @@ Selecteer de sleutelopslagprovider die overeenkomt met de provider die u hebt ge
 
 7. Importeer het **UserPFXCertificate**-object in Intune door `Import-IntuneUserPfxCertificate -AuthenticationResult $authResult -CertificateList $userPFXObject` uit te voeren
 
-8. Voer `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UsertList "<UserUPN>"` uit om te controleren of het certificaat is geïmporteerd
+8. Voer `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UserList "<UserUPN>"` uit om te controleren of het certificaat is geïmporteerd
 
 Voor meer informatie over andere beschikbare opdrachten, raadpleegt u het leesmij-bestand in het [PowerShell-project PFXImport op GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
 
@@ -186,7 +186,7 @@ Na het importeren van de certificaten naar Intune maakt u een **geïmporteerd PK
 
 3. Ga naar **Instellingen** en voer de volgende eigenschappen in:
 
-   - **Beoogd doeleinde**: Geef het beoogde doel op van de certificaten die voor dit profiel worden geïmporteerd. Beheerders kunnen certificaten importeren met verschillende beoogde doelen (zoals verificatie, S/MIME-ondertekening of S/MIME-versleuteling). Het beoogde doel dat is geselecteerd in het certificaatprofiel komt overeen met het certificaatprofiel met de juiste geïmporteerde certificaten. Het beoogde doel is een tag om een groep geïmporteerde certificaten te groeperen. Dit garandeert niet dat certificaten die met die tag worden geïmporteerd, voldoen aan het beoogde doel.  
+   - **Beoogd doeleinde**: Geef het beoogde doel op van de certificaten die voor dit profiel worden geïmporteerd. Beheerders kunnen certificaten importeren met verschillende beoogde doelen (zoals S/MIME-ondertekening of S/MIME-versleuteling). Het beoogde doel dat is geselecteerd in het certificaatprofiel komt overeen met het certificaatprofiel met de juiste geïmporteerde certificaten. Het beoogde doel is een tag om een groep geïmporteerde certificaten te groeperen. Dit garandeert niet dat certificaten die met die tag worden geïmporteerd, voldoen aan het beoogde doel.  
    - **Geldigheidsduur van certificaat**: Tenzij de geldigheidsperiode in de certificaatsjabloon is gewijzigd, wordt deze optie standaard op één jaar ingesteld.  
    - **Sleutelarchiefprovider (KSP)** : Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan.  
 

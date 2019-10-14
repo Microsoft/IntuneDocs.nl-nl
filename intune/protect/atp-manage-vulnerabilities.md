@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69f214b4fd3f3b7767e719c0f68f19e178a8e29c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 06fdd8a6b64dfd58457b5d9b92144530aa2856cd
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723005"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940494"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Intune gebruiken voor het oplossen van beveiligingsproblemen geïdentificeerd door Microsoft Defender ATP  
 
@@ -70,7 +70,7 @@ Hier volgt een voorbeeld van een werkstroom:
 **Intune-configuraties voor ATP**:  
 
 - Configureer een verbinding tussen services met Microsoft Defender ATP.  
-- Implementeer een nalevingsbeleid voor apparaten met het profieltype **Microsoft Defender ATP (Windows 10 Desktop)** op apparaten waarvan het risico wordt beoordeeld door ATP.
+- Implementeer een configuratiebeleid voor apparaten met het profieltype **Microsoft Defender ATP (Windows 10 Desktop)** op apparaten waarvan het risico wordt beoordeeld door ATP.
 
   Zie [Naleving voor Windows Defender ATP met voorwaardelijke toegang in Intune afdwingen](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune) voor meer informatie over het instellen van Intune voor gebruik met ATP.  
 

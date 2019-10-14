@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b16dca0b6a73e7228e65c840bfbc91f3577bb59a
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723551"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999281"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android-apparaten automatisch registreren met behulp van de Knox Mobile Enrollment van Samsung
 
@@ -109,7 +109,8 @@ Voor apparaten die in Intune worden geregistreerd met KME voor Android, kunt u a
 
 > [!NOTE]
 >
->Koppeling van de gebruiker is alleen van toepassing op Android-registratie. Als een gebruikerskoppeling is gedefinieerd, kan alleen de gekoppelde gebruiker het apparaat met KME registreren. Dit geldt zelfs nadat de fabrieksinstellingen van het apparaat zijn teruggezet. Als in de Knox-portal geen gebruikerskoppeling is gedefinieerd, kan elke gebruiker met een geldige Intune-licentie het apparaat met KME registreren.
+>Koppeling van de gebruiker is alleen van toepassing op registratie van Android-apparaatbeheerder. Als een gebruikerskoppeling is gedefinieerd, kan alleen de gekoppelde gebruiker het apparaat met KME registreren. Dit geldt zelfs nadat de fabrieksinstellingen van het apparaat zijn teruggezet. Als in de Knox-portal geen gebruikerskoppeling is gedefinieerd, kan elke gebruiker met een geldige Intune-licentie het apparaat met KME registreren.
+>Bij volledige beheerde Android Enterprise-apparaten, zelfs als een gebruikerskoppeling is gedefinieerd, wordt deze niet doorgegeven aan het apparaat of wordt het apparaat niet aan de gebruiker gekoppeld.
 >
 
 ## <a name="distribute-devices"></a>Apparaten distribueren
@@ -126,7 +127,7 @@ Nog hulp nodig? Bekijk de volledige [KME-gebruikershandleiding](https://docs.sam
 
 - **Fabrieksinstellingen terugzetten voor registratie bij Android Enterprise:** Als u apparaten die al zijn ingesteld opnieuw wilt inzetten, moeten op het apparaat de fabrieksinstellingen worden hersteld voordat het kan worden geregistreerd bij Android Enterprise.
 
-- **Updates met behulp van een Google Play-account:** U hebt geen Google Play-account nodig om het apparaat te registreren bij Microsoft Intune. Maar voor toekomstige updates van de Intune-bedrijfsportal-app hebt u mogelijk wel een Google Play-account op het apparaat nodig. Een Google Play-account is niet vereist bij het registreren van de eigenaar van het Google-apparaat.
+- **Updates met behulp van een Google Play-account:** U hebt geen Google Play-account nodig om het apparaat te registreren bij Microsoft Intune. Maar voor toekomstige updates van de Intune-bedrijfsportal-app hebt u mogelijk wel een Google Play-account op het apparaat nodig voor het registreren van de Android-apparaatbeheerder. Een Google Play-account is niet vereist bij het registreren van de eigenaar van het Google-apparaat.
 
 - **Veld Password (Wachtwoord) wordt genegeerd:** Als het veld **Password** (Wachtwoord) in **Device details** (Apparaatdetails) van de Knox-portal is ingevuld, wordt het genegeerd door de Intune-bedrijfsportal-app tijdens de registratie bij Android. De eindgebruiker moet een wachtwoord invoeren op het apparaat om registratie van het apparaat te voltooien.
 

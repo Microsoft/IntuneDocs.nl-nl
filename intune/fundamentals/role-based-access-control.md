@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab50a21ea01cd4075bd78add980d2839606a1a2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6e9df15efc7a16a0ce1ee6b0412f9160831efdec
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721874"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163511"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune
 
@@ -66,6 +66,7 @@ U kunt uw eigen rollen maken met aangepaste machtigingen. Zie [Een aangepaste ro
 | Beveiligingslezer | Alleen-lezen | Alleen-lezen |
 | Beheerder voor naleving | Geen | Alleen-lezen |
 | Beheerder voor nalevingsgegevens | Geen | Alleen-lezen |
+| Algemene lezer | Alleen-lezen | Alleen-lezen |
 
 > [!TIP]
 > Intune bevat ook drie Azure AD-uitbreidingen: **Gebruikers**, **Groepen** en **Voorwaardelijke toegang**, die worden beheerd met Azure AD RBAC. Bovendien voert de **Beheerder van gebruikersaccounts** alleen activiteiten van AAD-gebruikers of -groepen uit en beschikt deze niet over volledige machtigingen voor het uitvoeren van alle activiteiten in Intune. Zie [RBAC met Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) voor meer informatie.

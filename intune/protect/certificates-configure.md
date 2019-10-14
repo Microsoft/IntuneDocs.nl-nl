@@ -16,22 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74b920deeb5255f6f938f0c8b07eaab6d765e68e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 345d039fede2a77ba0485944cb601683bdcebfda
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722966"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999306"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Certificaten voor verificatie gebruiken in Microsoft Intune  
 
 Gebruik certificaten in Intune om uw gebruikers te verifiëren voor toepassingen en bedrijfsresources via een VPN-, Wi-Fi- of e-mailprofiel. Wanneer u certificaten gebruikt om deze verbindingen te verifiëren, hoeven uw eindgebruikers geen gebruikersnamen en wachtwoorden in te voeren, waardoor ze naadloos toegang kunnen krijgen. Certificaten worden ook gebruikt voor het ondertekenen en versleutelen van e-mail met behulp van S/MIME.
 
-Intune ondersteunt de volgende certificaattypen:  
-
-- Simple Certificate Enrollment Protocol (SCEP)  
-- PKCS #12 (of PFX)  
-- Geïmporteerd PKCS-certificaat
+## <a name="intune-supported-certificates-and-usage"></a>Door Intune ondersteunde certificaten en ondersteund gebruik
+| Type              | Verificatie | S/MIME-ondertekening | S/MIME-versleuteling  |
+|--|--|--|--|
+| PKCS-geïmporteerd certificaat |  | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png)|
+| PKCS #12 (of PFX)    | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png) |  |
+| Simple Certificate Enrollment Protocol (SCEP)  | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png) | |
 
 Als u deze certificaten wilt implementeren, moet u certificaatprofielen maken en deze toewijzen aan apparaten.  
 

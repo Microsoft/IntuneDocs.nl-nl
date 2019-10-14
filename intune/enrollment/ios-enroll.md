@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80b9091b723e78631a13c9358687ae77c36b8d47
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c4f3424c0d9712affbbf8ba3929e825b62ce5864
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722446"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940323"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>iOS-apparaten registreren bij Intune
 
-Intune maakt Mobile Device Management (MDM) mogelijk voor iPads en iPhones en geeft gebruikers toegang tot zakelijke e-mail en apps.
+Intune maakt Mobile Device Management (MDM) mogelijk voor iPads en iPhones en geeft gebruikers beveiligde toegang tot zakelijke e-mail, gegevens en apps.
 
-Als Intune-beheerder kunt u registratie inschakelen voor iOS-apparaten. U kunt gebruikers toestaan persoonlijke apparaten in te schrijven. Dit wordt ook wel BYOD-inschrijving (Bring Your Own Device) genoemd. U kunt ook de registratie van apparaten in bedrijfseigendom inschakelen.
+Als Intune-beheerder kunt u de registratie voor iOS- en iPadOS-apparaten instellen voor toegang tot bedrijfsbronnen. U kunt gebruikers toestaan apparaten in persoonlijk eigendom in te schrijven. Dit wordt ook wel BYOD-inschrijving (Bring Your Own Device) genoemd. U kunt ook de inschrijving van apparaten in bedrijfseigendom inschakelen.
 
 ## <a name="prerequisites-for-ios-enrollment"></a>Vereisten voor iOS-registratie
 
@@ -38,9 +38,14 @@ Voordat u de registratie van iOS-apparaten kunt inschakelen, moet u de volgende 
 - [Intune instellen](../fundamentals/setup-steps.md): hiermee stelt u de Intune-infrastructuur in. Voor apparaatinschrijving is met name het [instellen van uw MDM-instantie](../fundamentals/mdm-authority-set.md) van belang.
 - [Een Apple MDM-pushcertificaat ophalen](apple-mdm-push-certificate-get.md): Apple vereist een certificaat voor het inschakelen van het beheer van iOS- en macOS-apparaten.
 
-## <a name="user-owned-ios-devices-byod"></a>iOS-apparaten die het eigendom van gebruikers zijn (BYOD)
+## <a name="user-owned-ios-and-ipados-devices-byod"></a>iOS- en iPadOS-apparaten die het eigendom van gebruikers zijn (BYOD)
 
-U kunt gebruikers hun persoonlijke apparaten laten inschrijven voor Intune-beheer, wat 'Bring Your Own Device' of BYOD wordt genoemd. Zodra u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen ze in de App Store de Intune-bedrijfsportal-app downloaden en in de app de inschrijvingsinstructies volgen. U kunt de privacyverklaring van het bedrijfsportal op iOS-apparaten aanpassen, zoals wordt uitgelegd in het artikel over [het aanpassen van de privacyverklaring](../apps/company-portal-app.md#privacy-statement-customization).
+U kunt gebruikers hun persoonlijke apparaten laten inschrijven voor Intune-beheer, wat 'Bring Your Own Device' of BYOD wordt genoemd. Er zijn drie opties voor het inschrijven van gebruikers:
+- Beveiligingsbeleid voor apps biedt u de lichtste BYOD-ervaring, met alleen beheer op app-niveau. Als u het apparaat echter ook wilt beveiligen met een complexere 6-cijferige pincode, kunt u dit beleid gebruiken in combinatie met gebruikersinschrijving.
+- Apparaatinschrijving is een veelgebruikte vorm van BYOD-inschrijving. Het biedt beheerders een breed scala aan beheeropties.
+- Gebruikersinschrijving is een meer gestroomlijnd inschrijvingsproces en biedt beheerders een subset aan apparaatbeheeropties. Deze functie is momenteel in preview. 
+
+Zodra u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen gebruikers in de App Store de Intune-bedrijfsportal-app downloaden en in de app de inschrijvingsinstructies volgen. U kunt de privacyverklaring van het bedrijfsportal op iOS-apparaten aanpassen, zoals wordt uitgelegd in het artikel over [het aanpassen van de privacyverklaring](../apps/company-portal-app.md#privacy-statement-customization).
 
 ## <a name="company-owned-ios-devices"></a>iOS-apparaten die bedrijfseigendom zijn
 
@@ -55,7 +60,10 @@ U kunt iOS-apparaten die bedrijfseigendom zijn ook inschrijven met een [Apparaat
 
 ## <a name="device-enrollment-program"></a>Programma voor apparaatinschrijving
 
-Organisaties kunnen nu iOS-apparaten aanschaffen via het Device Enrollment Program (DEP) van Apple. Met DEP kunt u een registratieprofiel draadloos implementeren om apparaten voor beheer in te schrijven. Meer informatie over het [Device Enrollment Program](device-enrollment-program-enroll-ios.md).
+Organisaties kunnen nu iOS-apparaten aanschaffen via het Device Enrollment Program (DEP) van Apple. Met DEP kunt u een registratieprofiel draadloos implementeren om apparaten voor beheer in te schrijven. Zie [Device Enrollment Program](device-enrollment-program-enroll-ios.md) voor meer informatie.
+
+## <a name="user-enrollment"></a>Gebruikersinschrijving
+Gebruikersinschrijving biedt beheerders een subset van beheeropties vergeleken met andere inschrijvingsmethoden. Zie de [ondersteunde acties, wachtwoorden en andere opties voor gebruikersinschrijving](ios-user-enrollment-supported-actions.md) en [iOS- en iPadOS-gebruikersinschrijving instellen](ios-user-enrollment.md) voor meer informatie.
 
 ## <a name="apple-school-manager"></a>Apple School Manager
 
