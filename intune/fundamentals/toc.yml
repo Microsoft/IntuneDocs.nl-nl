@@ -6,9 +6,10 @@
     - name: Overzicht van Microsoft Intune
       href: what-is-intune.md
       displayName: ems; emm; azure ad; active directory; ad
-    - name: Wat kan Intune voor mijn bedrijf doen?
-      href: get-started-evaluation.md
-    - name: Wat is er nieuw?
+    - name: Overzicht van apparaatbeheer
+      href: what-is-device-management.md
+      displayName: teamviewer
+    - name: Wat is er nieuw
       href: whats-new.md
       items:
         - name: Wat is er nieuw in de gebruikersinterface van de app?
@@ -32,9 +33,6 @@
       href: tutorial-walkthrough-intune-portal.md
 - name: Concepten
   items:
-    - name: Wat is apparaatbeheer?
-      href: what-is-device-management.md
-      displayName: teamviewer
     - name: Wat is Intune for Education?
       href: introduction-intune-education.md
     - name: Architectuur op hoog niveau
@@ -76,7 +74,7 @@
               href: planning-guide-onboarding.md
             - name: Testen en valideren
               href: planning-guide-test-validation.md
-            - name: Extra resources
+            - name: Aanvullende bronnen
               href: planning-guide-resources.md
         - name: Migratiehandleiding
           href: migration-guide.md
@@ -157,7 +155,7 @@
           href: mdm-authority-set.md
         - name: Rollen beheren
           items:
-            - name: Op rollen gebaseerd toegangsbeheer
+            - name: Toegangsbeheer op basis van rollen
               href: role-based-access-control.md
             - name: Een rol toewijzen aan een gebruiker
               href: assign-role.md
@@ -199,7 +197,7 @@
       items:
         - name: Problemen bij toegang tot bedrijfsbronnen oplossen
           href: troubleshoot-company-resource-access-problems.md
-- name: Resources
+- name: Bronnen
   items:
     - name: Archief
       items:

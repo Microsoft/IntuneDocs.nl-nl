@@ -9,12 +9,12 @@ metadata:
   ms.author: dougeby
   manager: mtillman
   ms.date: 09/16/2019
-  ms.openlocfilehash: b7e4a5c9dee8d8a47a90ceafa60290d726637ba1
-  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.openlocfilehash: 153ada78a5be6ed86f5a6d6b0e92c238928807d7
+  ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
   ms.translationtype: HT
   ms.contentlocale: nl-NL
-  ms.lasthandoff: 10/02/2019
-  ms.locfileid: "71721231"
+  ms.lasthandoff: 10/14/2019
+  ms.locfileid: "72310932"
 highlightedContent:
   items:
   - title: Wat is Intune?
@@ -61,7 +61,7 @@ conceptualContent:
       text: Ondersteunde besturingssystemen en browsers
     - url: ./fundamentals/role-based-access-control.md
       itemType: reference
-      text: Op rollen gebaseerd toegangsbeheer
+      text: Toegangsbeheer op basis van rollen
     - url: ./fundamentals/licenses.md
       itemType: concept
       text: Intune-licenties
@@ -195,7 +195,7 @@ conceptualContent:
     - url: ./apps/troubleshoot-app-install.md
       itemType: concept
       text: Problemen met app-installatie oplossen
-    - url: ./protect/troubleshoot-policies-in-microsoft-intune.md
+    - url: ./configuration/troubleshoot-policies-in-microsoft-intune.md
       itemType: concept
       text: Beleidsregels en profielen voor het oplossen van problemen in Intune
   - title: Ontwikkelaar
