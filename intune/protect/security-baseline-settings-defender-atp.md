@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 52420375ae5ed88ab713a1da3e927e43e433db83
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732955"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163487"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-basislijninstellingen voor Intune
 
@@ -86,7 +86,7 @@ Zie [Beleids-CSP - SmartScreen](https://docs.microsoft.com/windows/client-manage
 ## <a name="attack-surface-reduction"></a>Kwetsbaarheid voor aanvallen verminderen  
 
 - **Onderliggend procestype voor starten van Office-apps**  
-  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules): als de regel is ingesteld op *Blokkeren*, kunnen Office-apps geen onderliggende processen maken. Office-apps zijn onder meer Word, Excel, PowerPoint, OneNote en Access. Het maken van een onderliggend proces is typisch malwaregedrag, met name voor op macro's gebaseerde aanvallen die Office-apps proberen te gebruiken om schadelijke uitvoerbare bestanden te starten of te downloaden.  
+  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): als de regel is ingesteld op *Blokkeren*, kunnen Office-apps geen onderliggende processen maken. Office-apps zijn onder meer Word, Excel, PowerPoint, OneNote en Access. Het maken van een onderliggend proces is typisch malwaregedrag, met name voor op macro's gebaseerde aanvallen die Office-apps proberen te gebruiken om schadelijke uitvoerbare bestanden te starten of te downloaden.  
 
   **Standaardinstelling**: Blokkeren
 
@@ -101,7 +101,7 @@ Zie [Beleids-CSP - SmartScreen](https://docs.microsoft.com/windows/client-manage
   **Standaardinstelling**: Inschakelen
 
 - **Uitvoertype vanuit e-mailinhoud**  
-  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules): wanneer deze regel is ingesteld op *Blokkeren*, voorkomt deze at de volgende bestandstypen worden uitgevoerd of gestart vanuit een e-mailbericht dat wordt weergegeven in Microsoft Outlook of webmail (zoals Gmail.com of Outlook.com):  
+  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): wanneer deze regel is ingesteld op *Blokkeren*, voorkomt deze at de volgende bestandstypen worden uitgevoerd of gestart vanuit een e-mailbericht dat wordt weergegeven in Microsoft Outlook of webmail (zoals Gmail.com of Outlook.com):  
 
   - Uitvoerbare bestanden (zoals .exe, .dll of .scr)  
   - Scriptbestanden (zoals een .ps-bestand van PowerShell-PS, .vbs-bestand van VisualBasic of .js-bestand van JavaScript)  
@@ -110,17 +110,17 @@ Zie [Beleids-CSP - SmartScreen](https://docs.microsoft.com/windows/client-manage
   **Standaardinstelling**: Blokkeren
 
 - **Adobe Reader starten in een onderliggend proces**  
-  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules): u kunt deze regel *inschakelen* om te voorkomen dat Adobe Reader een onderliggend proces kan maken. Via social engineering of aanvallen kan malware aanvullende payloads downloaden en starten en uit Adobe Reader breken.  
+  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): u kunt deze regel *inschakelen* om te voorkomen dat Adobe Reader een onderliggend proces kan maken. Via social engineering of aanvallen kan malware aanvullende payloads downloaden en starten en uit Adobe Reader breken.  
 
   **Standaardinstelling**: Inschakelen
 
 - **Macrocode verborgen in scripts**  
-  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules): malware en andere bedreigingen kunnen proberen hun schadelijke code te verbergen in sommige scriptbestanden. Met deze regel wordt voorkomen dat scripts die verborgen lijken te zijn, worden uitgevoerd.  
+  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): malware en andere bedreigingen kunnen proberen hun schadelijke code te verbergen in sommige scriptbestanden. Met deze regel wordt voorkomen dat scripts die verborgen lijken te zijn, worden uitgevoerd.  
     
   **Standaardinstelling**: Blokkeren
 
 - **Niet-vertrouwd USB-procestype**  
-  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules): als u de instelling *Blokkeren* kiest, kunnen niet-ondertekende of niet-vertrouwde uitvoerbare bestanden op verwisselbare USB-stations en SD-kaarten niet worden uitgevoerd.
+  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): als u de instelling *Blokkeren* kiest, kunnen niet-ondertekende of niet-vertrouwde uitvoerbare bestanden op verwisselbare USB-stations en SD-kaarten niet worden uitgevoerd.
 
   Uitvoerbare bestanden zijn onder meer:
   - Uitvoerbare bestanden (zoals .exe, .dll of .scr)
@@ -129,22 +129,22 @@ Zie [Beleids-CSP - SmartScreen](https://docs.microsoft.com/windows/client-manage
   **Standaardinstelling**: Blokkeren
 
 - **Office-apps: invoeringstype voor andere processen**  
-  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules): als u de instelling *Blokkeren* kiest, kunnen Office-apps zoals Word, Excel, PowerPoint en OneNote geen code in andere processen invoegen. Het invoegen van code wordt doorgaans gebruikt door malware om schadelijke code uit te voeren in een poging om de activiteit te verbergen voor antivirusengines.  
+  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): als u de instelling *Blokkeren* kiest, kunnen Office-apps zoals Word, Excel, PowerPoint en OneNote geen code in andere processen invoegen. Het invoegen van code wordt doorgaans gebruikt door malware om schadelijke code uit te voeren in een poging om de activiteit te verbergen voor antivirusengines.  
 
   **Standaardinstelling**: Blokkeren
 
 - **Office-macrocode staat Win32-importtype toe**  
-  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules): als u de instelling *Blokkeren* kiest, probeert deze regel Office-bestanden met macrocode die Win32-DLL's kan importeren te blokkeren. Office-bestanden omvatten Word, Excel, PowerPoint en OneNote. Malware kan macrocode in Office-bestanden gebruiken om Win32-DLL's te importeren en laden, die vervolgens worden gebruikt om API-aanroepen uit te voeren voor verdere infectie in het hele systeem.  
+  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): als u de instelling *Blokkeren* kiest, probeert deze regel Office-bestanden met macrocode die Win32-DLL's kan importeren te blokkeren. Office-bestanden omvatten Word, Excel, PowerPoint en OneNote. Malware kan macrocode in Office-bestanden gebruiken om Win32-DLL's te importeren en laden, die vervolgens worden gebruikt om API-aanroepen uit te voeren voor verdere infectie in het hele systeem.  
 
   **Standaardinstelling**: Blokkeren
 
 - **Office-communicatieapps worden gestart in een onderliggend proces**  
-  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules): als u de instelling *Inschakelen* kiest, voorkomt deze regel dat Outlook onderliggende processen maakt. Door het maken van onderliggende processen te blokkeren, beschermt deze regel tegen social engineering-aanvallen en voorkomt deze dat kwaadaardige code misbruik van een beveiligingsprobleem in Outlook kan maken.  
+  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): als u de instelling *Inschakelen* kiest, voorkomt deze regel dat Outlook onderliggende processen maakt. Door het maken van onderliggende processen te blokkeren, beschermt deze regel tegen social engineering-aanvallen en voorkomt deze dat kwaadaardige code misbruik van een beveiligingsprobleem in Outlook kan maken.  
 
   **Standaardinstelling**: Inschakelen
 
 - **Office-apps: uitvoerbare inhoud maken of lanceren**  
-  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules): als u de instelling *Blokkeren* kiest, kunnen Office-apps geen uitvoerbare inhoud maken. Office-apps zijn onder meer Word, Excel, PowerPoint, OneNote en Access.  
+  [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): als u de instelling *Blokkeren* kiest, kunnen Office-apps geen uitvoerbare inhoud maken. Office-apps zijn onder meer Word, Excel, PowerPoint, OneNote en Access.  
 
   Deze regel is gericht op typisch gedrag van verdachte en schadelijke invoegtoepassingen en scripts (extensies) die uitvoerbare bestanden maken of openen. Dit is een typische malwaretechniek. Extensies kunnen niet worden gebruikt door Office-apps. Meestal gebruiken deze extensies Windows Scripting Host (WSH-bestanden) om scripts uit te voeren die bepaalde taken automatiseren of door gebruikers gemaakte extra functies leveren.
 
@@ -273,7 +273,7 @@ Zie [WindowsAdvancedThreatProtection CSP](https://docs.microsoft.com/windows/cli
 ## <a name="exploit-protection"></a>Exploit Protection  
 
 - **XML Exploit Guard-beveiliging**  
-  Zie [Import, export, and deploy exploit protection configurations](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/import-export-exploit-protection-emet-xml) (Exploit Protection-configuraties importeren, exporteren en implementeren) in de Windows-documentatie voor meer informatie.  
+  Zie [Import, export, and deploy exploit protection configurations](/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml) (Exploit Protection-configuraties importeren, exporteren en implementeren) in de Windows-documentatie voor meer informatie.  
 
   Hiermee kan de IT-beheerder een configuratie pushen die de gewenste systeem- en toepassingbeperkingsopties voor alle apparaten in de organisatie aangeeft. De configuratie wordt vertegenwoordigd door een XML. 
 

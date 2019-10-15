@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/29/2019
+ms.date: 10/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 149da4c5aafc436156b7b29566bb5d792506de7c
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734788"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251555"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -665,29 +665,55 @@ Deze instellingen gebruiken de [beleid-CSP Experience](https://docs.microsoft.co
 
 Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), waarbij ook de ondersteunde Windows-edities worden vermeld.
 
-- **Realtime-controle**: Met **Inschakelen** wordt realtime scannen op malware, spyware en andere ongewenste software uitgeschakeld. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
+- **Realtime-controle**: Met **Inschakelen** wordt realtime scannen op malware, spyware en andere ongewenste software ingeschakeld. Gebruikers kunnen dit niet uitschakelen. 
+
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard deze functie in en stelt gebruikers in staat om deze te wijzigen.
+
+  Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
   [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
-- **Gedragscontrole**: Met **Inschakelen** worden controles van Defender op de aanwezigheid van bepaalde bekende patronen van verdachte activiteit op apparaten uitgeschakeld. Met **Niet geconfigureerd** (standaard) wordt Windows Defender-gedragscontrole ingeschakeld.
+- **Gedragscontrole**: Met **Inschakelen** worden gedragscontroles en controles op de aanwezigheid van bepaalde bekende patronen van verdachte activiteit op apparaten ingeschakeld. Gebruikers kunnen gedrags controle niet uitschakelen. 
+
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard schakelt het besturings systeem gedrag bewaking in en kunnen gebruikers het wijzigen.
+
+  Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
   [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
 - **Netwerkinspectiesysteem (NIS)** : NIS helpt bij de bescherming van apparaten tegen aanvallen vanaf het netwerk. NIS maakt gebruik van handtekeningen van bekende beveiligingsproblemen uit het Microsoft Endpoint Protection Center om schadelijk netwerkverkeer te detecteren en blokkeren.
 
-  Met **Niet geconfigureerd** (standaard) schakelt u deze functie uit. Gebruikers worden niet geblokkeerd om verbinding te maken met bekende beveiligings problemen. Wanneer deze optie is ingesteld op **inschakelen**, worden netwerk beveiliging en netwerk blokkering ingeschakeld en kunnen gebruikers deze niet uitschakelen. Gebruikers worden geblokkeerd om verbinding te maken met bekende beveiligings problemen.
+  **Inschakelen** schakelt netwerk beveiliging en netwerk blokkering in. Gebruikers kunnen dit niet uitschakelen. Wanneer deze functie is ingeschakeld, kunnen gebruikers geen verbinding maken met bekende beveiligings problemen.
+
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard NIS in en stelt gebruikers in staat om deze te wijzigen.
+
+  Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
   [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
-- **Alle down loads scannen**: **niet geconfigureerd** (standaard) heeft Defender scans alle bestanden die zijn gedownload van het internet. Wanneer deze optie is **ingeschakeld**, is deze functie uitgeschakeld. Daarom scant Defender niet alle gedownloade Internet bestanden.
+- **Alle down loads scannen**: als u deze instelling **inschakelt** , worden alle bestanden gescand die zijn gedownload van het internet. Gebruikers kunnen deze instelling niet uitschakelen. 
+
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard wordt deze instelling door het besturings systeem ingeschakeld en kunnen gebruikers deze wijzigen.
+
+  Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
   [Defender/AllowIOAVProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
 
-- **Scripts scannen die in webbrowsers van Microsoft worden geladen**: Met **Niet geconfigureerd** (standaard) worden door Defender scripts gescand die worden gebruikt in Internet Explorer. Met **Inschakelen** wordt het scannen voorkomen.
+- **Scripts scannen die in webbrowsers van Microsoft worden geladen**: Met **Inschakelen** geeft u aan dat Defender scripts moet scannen die worden gebruikt in Internet Explorer. Gebruikers kunnen deze instelling niet uitschakelen. 
+
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard wordt deze instelling door het besturings systeem ingeschakeld en kunnen gebruikers deze wijzigen.
+
+  Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
   [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
-- **Toegang van eindgebruikers tot Defender**: Met **Blokkeren** wordt de gebruikersinterface van Windows Defender voor eindgebruikers verborgen. Daarnaast worden alle meldingen van Windows Defender onderdrukt. Met **Niet geconfigureerd** (standaard) hebben gebruikers toegang tot de gebruikersinterface van Windows Defender. Als deze instelling wordt gewijzigd, gaat de wijziging in wanneer de pc van de eindgebruiker de volgende keer opnieuw wordt opgestart.
+- **Toegang van eindgebruikers tot Defender**: Met **Blokkeren** wordt de gebruikersinterface van Microsoft Defender voor eindgebruikers verborgen. Daarnaast worden alle meldingen van Microsoft Defender onderdrukt.
+
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling blokkeert en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem biedt gebruikers standaard toegang tot de micro soft Defender-gebruikers interface en staat gebruikers toe om het te wijzigen.
+
+  Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
+
+  Als deze instelling wordt gewijzigd, gaat de wijziging in wanneer de pc van de eindgebruiker de volgende keer opnieuw wordt opgestart.
 
   [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
@@ -714,31 +740,55 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
   [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
 - **Limiet voor het CPU-gebruik tijdens het scannen**: Hiermee beperkt u de hoeveelheid CPU die scans kunnen gebruiken, van `0` tot `100`.
-- **Archief bestanden scannen**: **Hiermee schakelt u** Defender in om archief bestanden te scannen, zoals zip-of CAB-bestanden. Met **Niet geconfigureerd** (standaard) worden dergelijke bestanden gescand.
+- **Archief bestanden scannen**: **Hiermee schakelt u** Defender in om de archief bestanden, zoals zip-of CAB-bestanden, te scannen. Gebruikers kunnen deze instelling niet uitschakelen.
+
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard het scannen in en stelt gebruikers in staat om het te wijzigen.
+
+  Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
   [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- **Inkomende e-mailberichten scannen**: Met **Inschakelen** scant Defender e-mailberichten wanneer deze op het apparaat binnenkomen. Met **Niet geconfigureerd** (standaard) worden e-mailberichten niet gescand.
+- **Inkomende e-mailberichten scannen**: Met **Inschakelen** scant Defender e-mailberichten wanneer deze op het apparaat binnenkomen. Wanneer deze functie is ingeschakeld, parseert de engine het postvak en de e-mail bestanden voor het analyseren van de bericht tekst en bijlagen. U kunt de indelingen. pst (Outlook),. dbx,. mbx, MIME (Outlook Express) en BinHex (Mac) scannen.
+
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard deze scan uit en stelt gebruikers in staat om het te wijzigen.
+
+  Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
   [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
 
-- **Verwisselbare stations scannen tijdens een volledige scan**: Met **Inschakelen** worden verwisselbare stations niet volledig gescand. Met **Niet geconfigureerd** (standaard) worden verwisselbare stations, zoals USB-sticks, door Defender gescand.
+- **Verwissel bare stations scannen tijdens een volledige scan** **: Hiermee schakelt u** scannen van Verwissel bare schijven in Defender tijdens een volledige scan in. Gebruikers kunnen deze instelling niet uitschakelen.
+
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard biedt het besturings systeem Defender scan van Verwissel bare stations, zoals USB-sticks, en kunnen gebruikers deze instelling wijzigen.
 
   Tijdens een snelle scan kunnen Verwissel bare schijven nog steeds worden gescand.
 
+  Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
+
   [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 
-- **Toegewezen netwerkschijven scannen tijdens een volledige scan**: Met **Inschakelen** scant Defender bestanden op toegewezen netwerkschijven. Met **Niet geconfigureerd** (standaard) voorkomt u een volledige scan. Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.
+- **Toegewezen netwerkschijven scannen tijdens een volledige scan**: Met **Inschakelen** scant Defender bestanden op toegewezen netwerkschijven. Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen. Gebruikers kunnen deze instelling niet uitschakelen.
+
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard deze functie in en stelt gebruikers in staat om deze te wijzigen.
 
   Tijdens een snelle scan kunnen toegewezen netwerk stations nog steeds worden gescand.
 
+  Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
+
   [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
 
-- **Bestanden die zijn geopend vanuit mappen op het netwerk scannen**: Met **Niet geconfigureerd** (standaard) scant Defender bestanden op gedeelde netwerkstations, bijvoorbeeld bestanden die via een UNC-pad toegankelijk zijn. Met **Inschakelen** wordt het scannen voorkomen. Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.
+- **Bestanden die zijn geopend vanuit netwerk mappen scannen**: met **Enable** kan Defender bestanden scannen die zijn geopend vanuit netwerk mappen of gedeelde netwerk stations, zoals bestanden die toegankelijk zijn vanaf een UNC-pad. Gebruikers kunnen deze instelling niet uitschakelen. Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.
+
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard scant het besturings systeem bestanden die zijn geopend vanuit netwerk mappen en kunnen gebruikers deze wijzigen.
+
+  Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
   [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
 
-- **Cloudbeveiliging**: Met **Niet geconfigureerd** (standaard) ontvangt de Microsoft Active Protection-service informatie over malware-activiteit op apparaten die u beheert. Met **Inschakelen** wordt deze functie geblokkeerd.
+- **Cloudbeveiliging**: Met **Inschakelen** wordt ingeschakeld dat de Microsoft Active Protection-service informatie ontvangt over malware-activiteit op apparaten die u beheert. Gebruikers kunnen deze instelling niet wijzigen. 
+
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard kan het besturings systeem de Microsoft Active Protection Service informatie ontvangen en kunnen gebruikers deze instelling wijzigen.
+
+  Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
   [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
 

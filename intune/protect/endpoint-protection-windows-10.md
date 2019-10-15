@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9b9119294fe0757671568eb6b627974796b2de
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732721"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163584"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Instellingen voor Windows 10 (en hoger) om apparaten te beveiligen met Intune  
 
@@ -776,26 +776,27 @@ Deze instellingen zijn specifiek van toepassing op Verwissel bare gegevens stati
  
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
 
-Gebruik [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) om de kwetsbaarheid voor aanvallen te beheren en te verminderen van apps die door uw medewerkers worden gebruikt.  
+Gebruik [exploit Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) om de kwets baarheid te beheren en te verminderen van de apps die door uw werk nemers worden gebruikt.  
 
 ### <a name="attack-surface-reduction"></a>Kwetsbaarheid voor aanvallen verminderen  
 
-Zie voor meer informatie over de regels voor kwets baarheid voor *aanvallen* de kwets baarheid voor [aanvallen beperken met Windows Defender exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) in de documentatie van Windows Defender exploit Guard.  
+Regels voor het verminderen van kwets baarheid voor aanvallen helpen te voor komen dat malware wordt gebruikt om computers met schadelijke code te infecteren.  
 
 #### <a name="attack-surface-reduction-rules"></a>Regels voor het verminderen van kwetsbaarheid voor aanvallen  
 
 - **Referentiediefstal in het Windows-subsysteem voor de lokale beveiligingsautoriteit markeren**  
   **Standaard**: niet geconfigureerd  
-  Exploit Guard: [regels](https://go.microsoft.com/fwlink/?linkid=874499) voor het verminderen van kwets baarheid voor aanvallen
+  Regel: [Blokkeer referentiediefstal in het Windows-subsysteem voor de lokale beveiligingsautoriteit (lsass.exe)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe)
 
   Help acties en apps te voorkomen die meestal worden gebruikt door malware om computers te infecteren.  
+
   - **Niet geconfigureerd**  
   - **Inschakelen**: referentiediefstal in het Windows-subsysteem voor de lokale beveiligingsautoriteit (lsass.exe) markeren.  
   - **Alleen controle**  
 
 - **Het maken van processen vanuit Adobe Reader (bèta)**  
   **Standaard**: niet geconfigureerd  
-  Exploit Guard: [regels](https://go.microsoft.com/fwlink/?linkid=853979) voor het verminderen van kwets baarheid voor aanvallen  
+  Regel: voor [komen dat Adobe Reader een onderliggend proces maakt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-adobe-reader-from-creating-child-processes)  
 
   - **Niet geconfigureerd**  
   - **Schakel** onderliggende processen die zijn gemaakt vanuit Adobe Reader in.  
@@ -807,7 +808,7 @@ Blokkeer de volgende acties voor Office-apps:
 
 - **Office-apps injecteren in andere processen (geen uitzonderingen)**  
   **Standaard**: niet geconfigureerd  
-  [Documentatie voor exploit Guard](https://go.microsoft.com/fwlink/?linkid=872974)  
+  Regel: voor [komen dat Office-toepassingen code in andere processen injecteren](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-injecting-code-into-other-processes)  
 
   - **Niet geconfigureerd**  
   - **Blok** keren: de Office-apps mogen niet worden ingevoegd in andere processen.  
@@ -815,7 +816,7 @@ Blokkeer de volgende acties voor Office-apps:
 
 - **Uitvoerbare inhoud maken met Office-apps/-macro's**  
   **Standaard**: niet geconfigureerd  
-  [Documentatie voor exploit Guard](https://go.microsoft.com/fwlink/?linkid=872975)  
+  Regel: voor [komen dat Office-toepassingen uitvoer bare inhoud maken](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-creating-executable-content)  
 
   - **Niet geconfigureerd**  
   - **Blok** keren: blok keer Office-apps en macro's voor het maken van uitvoer bare inhoud.  
@@ -823,7 +824,7 @@ Blokkeer de volgende acties voor Office-apps:
 
 - **Onderliggende processen starten met Office-apps**  
   **Standaard**: niet geconfigureerd  
-  [Documentatie voor exploit Guard](https://go.microsoft.com/fwlink/?linkid=872976)  
+  Regel: [blok keer alle Office-toepassingen om onderliggende processen te maken](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
 
   - **Niet geconfigureerd**  
   - **Blok** keren: blok keer dat Office-apps onderliggende processen kunnen starten.  
@@ -831,7 +832,7 @@ Blokkeer de volgende acties voor Office-apps:
   
 - **Win32-importbewerkingen uit macrocode van Office**  
   **Standaard**: niet geconfigureerd  
-  [Documentatie voor exploit Guard](https://go.microsoft.com/fwlink/?linkid=872977)  
+  Regel: [Win32 API-aanroepen blok keren vanuit Office-macro's](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-win32-api-calls-from-office-macros)  
 
   - **Niet geconfigureerd**  
   - **Blok** keren: Win32-import bewerkingen uit macro code in Office.  
@@ -839,7 +840,7 @@ Blokkeer de volgende acties voor Office-apps:
   
 - **Het maken van processen van Office-communicatie producten**  
   **Standaard**: niet geconfigureerd  
-  [Documentatie voor exploit Guard](https://go.microsoft.com/fwlink/?linkid=874499)  
+  Regel: voor komen dat de [Office-communicatie toepassing onderliggende processen maakt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-communication-application-from-creating-child-processes)  
 
   - **Niet geconfigureerd**  
   - **Inschakelen** : het maken van een onderliggend proces vanuit Office Communications-apps blok keren.  
@@ -851,7 +852,7 @@ Blokkeer de volgende acties om scriptbedreigingen te voorkomen:
 
 - **Verborgen js-/vbs-/ps-/macrocode**  
   **Standaard**: niet geconfigureerd  
-  [Documentatie voor exploit Guard](https://go.microsoft.com/fwlink/?linkid=872978)    
+  Regel: de [uitvoering van mogelijk verborgen scripts blok keren](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-execution-of-potentially-obfuscated-scripts)    
 
   - **Niet geconfigureerd**  
   - **Blok** keren: wille keurige Codeer-js/vbs/PS/-macro codes blok keren.  
@@ -859,7 +860,7 @@ Blokkeer de volgende acties om scriptbedreigingen te voorkomen:
 
 - **Van internet gedownloade payloads uitvoeren met js-/vbs-bestanden (geen uitzonderingen)**  
   **Standaard**: niet geconfigureerd  
-  [Documentatie voor exploit Guard](https://go.microsoft.com/fwlink/?linkid=872979)  
+  Regel: voor [komen dat Java script of VBScript gedownloade uitvoer bare inhoud start](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-javascript-or-vbscript-from-launching-downloaded-executable-content)  
 
   - **Niet geconfigureerd**  
   - **Block** -Block js/vbs van het uitvoeren van Payload dat is gedownload van Internet.  
@@ -867,7 +868,7 @@ Blokkeer de volgende acties om scriptbedreigingen te voorkomen:
 
 - **Het maken van processen met PSExec- en WMI-opdrachten**  
   **Standaard**: niet geconfigureerd  
-  [Documentatie voor exploit Guard](https://go.microsoft.com/fwlink/?linkid=874500)  
+  Regel: [Blokkeer het maken van processen die afkomstig zijn van PSExec- en WMI-opdrachten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)  
 
   - **Niet geconfigureerd**  
   - **Blokkeren**: het maken van processen voorkomen die afkomstig zijn van PSExec- en WMI-opdrachten.  
@@ -876,7 +877,7 @@ Blokkeer de volgende acties om scriptbedreigingen te voorkomen:
 
 - **Niet-vertrouwde en niet-ondertekende processen die worden uitgevoerd via USB**  
   **Standaard**: niet geconfigureerd  
-  [Documentatie voor exploit Guard](https://go.microsoft.com/fwlink/?linkid=874502)    
+  Regel: [Blokkeer niet-vertrouwde en niet-ondertekende processen die worden uitgevoerd vanaf een USB](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-untrusted-and-unsigned-processes-that-run-from-usb)    
 
   - **Niet geconfigureerd**  
   - **Blokkeren**: voorkomen dat niet-vertrouwde en niet-ondertekende processen worden uitgevoerd vanaf een USB.  
@@ -884,7 +885,7 @@ Blokkeer de volgende acties om scriptbedreigingen te voorkomen:
   
 - **Uitvoerbare bestanden die niet voldoen aan een bepaalde gangbaarheid, ouderdom of aan criteria voor vertrouwde lijsten blokkeren**  
   **Standaard**: niet geconfigureerd  
-  [Documentatie voor exploit Guard](https://go.microsoft.com/fwlink/?linkid=874503)    
+  Regel: [Voorkom dat uitvoerbare bestanden worden uitgevoerd tenzij deze voldoen aan een bepaalde gangbaarheid, ouderdom of criteria voor vertrouwde lijsten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)    
 
   - **Niet geconfigureerd**  
   - **Blokkeren**: voorkomen dat uitvoerbare bestanden worden uitgevoerd tenzij deze voldoen aan een bepaalde gangbaarheid, ouderdom of criteria voor vertrouwde lijsten.  
@@ -896,7 +897,7 @@ Blokkeer de volgende acties om e-mailbedreigingen te voorkomen:
 
 - **Uitvoering van uitvoerbare inhoud (exe-, dll-, ps-, js-, vbs-bestanden enzovoort) die is verwijderd uit e-mail (webmail/e-mailclient) (geen uitzonderingen)**  
   **Standaard**: niet geconfigureerd  
-  [Documentatie voor exploit Guard](https://go.microsoft.com/fwlink/?linkid=872980)  
+  Regel: [uitvoer bare inhoud blok keren van e-mailclient en webmail](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail)  
 
   - **Niet geconfigureerd**  
   - **Blokkeren**: uitvoering voorkomen van uitvoerbare inhoud (exe-, dll-, ps-, js-, vbs-bestanden, enzovoort) die is verwijderd uit e-mail (webmail/e-mailclient).  
@@ -906,7 +907,7 @@ Blokkeer de volgende acties om e-mailbedreigingen te voorkomen:
 
 - **Geavanceerde ransomwarebeveiliging**  
   Standaard: niet geconfigureerd  
-  [Documentatie voor exploit Guard](https://go.microsoft.com/fwlink/?linkid=874504)  
+  Regel: [geavanceerde beveiliging gebruiken tegen Ransomware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#use-advanced-protection-against-ransomware)  
 
   - **Niet geconfigureerd**  
   - **Inschakelen**: agressieve ransomwarebeveiliging gebruiken.  
@@ -932,7 +933,7 @@ Blokkeer de volgende acties om e-mailbedreigingen te voorkomen:
 
 ### <a name="controlled-folder-access"></a>Gecontroleerde mappentoegang  
 
-Hiermee kunt u [waardevolle gegevens beter beveiligen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard) tegen schadelijke apps en bedreigingen zoals ransomware.  
+Hiermee kunt u [waardevolle gegevens beter beveiligen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) tegen schadelijke apps en bedreigingen zoals ransomware.  
 
 - **Mapbeveiliging**  
   **Standaard**: niet geconfigureerd  
@@ -979,7 +980,7 @@ Blok keer uitgaande verbindingen van elke app naar IP-adressen of domeinen met e
 - **XML uploaden**  
   **Standaard**: *niet geconfigureerd*  
 
-  Als u exploit Protection wilt gebruiken om [apparaten te beschermen tegen aanvallen](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), maakt u een XML-bestand met daarin de gewenste systeem-en toepassings beperkings instellingen. Er zijn twee methoden om het XML-bestand te maken:  
+  Als u exploit Protection wilt gebruiken om [apparaten te beschermen tegen aanvallen](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), maakt u een XML-bestand met daarin de gewenste systeem-en toepassings beperkings instellingen. Er zijn twee methoden om het XML-bestand te maken:  
 
   - *PowerShell*: gebruik een of meer van de PowerShell-cmdlets *Get-ProcessMitigation*, *Set-ProcessMitigation* en *ConvertTo-ProcessMitigationPolicy*. Met de cdmlets worden beperkingsinstellingen geconfigureerd en wordt hiervan een XML-weergave geëxporteerd.  
 

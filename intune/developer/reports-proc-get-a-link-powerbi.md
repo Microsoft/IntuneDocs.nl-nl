@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 10/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ee5cdb6bbdcce229fbc217726a1ee118f77beff
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9e8fadb625073af2a70d605d3ceabb9ba97906ae
+ms.sourcegitcommit: 46322ca7a92971e18dc0b230f436b9ca892b90c5
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733410"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72008332"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinding maken met het datawarehouse met Power BI
 
@@ -76,9 +76,10 @@ Nadat een client is geverifieerd bij Azure AD, wordt de OData-URL verbonden met 
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Klik op **intune-Data Warehouse instellen** onder het gedeelte **andere taken** aan de rechter kant van de Blade overzicht. De Blade **intune-Data Warehouse** wordt weer gegeven.
-3. Haal de aangepaste URL van de feed op via de rapportage-blade, bijvoorbeeld: `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
+3. Haal de aangepaste URL van de feed op via de rapportage-blade, bijvoorbeeld:<br>
+    `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. Open **Power BI Desktop**.
-5. Kies **Home** > **Get Data**. Selecteer **OData feed**.
+5. Kies **bestand** > **gegevens ophalen**. Selecteer **OData feed**.
 6. Selecteer **Basic**.
 7. Typ of plak de **OData-URL** in het vak URL.
 8. Selecteer **OK**.
