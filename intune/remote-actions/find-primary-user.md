@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 312aee3752525ab2898c6d4e4ea06da685d1cdec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 308f152a585fe7b605d309943545f242031ea177
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728361"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379700"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>De hoofdgebruiker van een Intune-apparaat zoeken
 
@@ -46,7 +46,7 @@ Voor de bedrijfsportal-app wordt aangenomen dat het gebruikersaccount waarmee wo
 
 Als er geen hoofdgebruiker is toegewezen aan een Intune-apparaat, wordt dit door de bedrijfsportal-app gedetecteerd als een gedeeld apparaat. Gedeelde apparaten zijn visueel identificeerbaar aan de hand van het label 'Gedeeld' dat wordt weergegeven op de apparaattegel. In deze modus kan de bedrijfsportal-app nog steeds worden gebruikt om beschikbare apps aan te vragen en te installeren. Selfservice-acties (opnieuw instellen/naam wijzigen/buiten gebruik stellen) zijn echter niet beschikbaar.  
 
-Apps moeten worden toegewezen aan een gebruikersgroep om voor gedeelde apparaten in de bedrijfsportal te worden weergegeven. Ze worden geïnstalleerd in de systeemcontext of in de gebruikerscontext, afhankelijk van hoe de app is geconfigureerd door de IT-beheerder. Zie voor meer informatie over app-context [Apps installeren op Windows 10-apparaten](../apps/apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices). Versie 10.3.4651.0 of hoger van de bedrijfsportal-app is vereist om deze functie te gebruiken.
+Apps moeten worden toegewezen aan een gebruikersgroep om voor gedeelde apparaten in de bedrijfsportal te worden weergegeven. Ze worden geïnstalleerd in de systeemcontext of in de gebruikerscontext, afhankelijk van hoe de app is geconfigureerd door de IT-beheerder. Zie voor meer informatie over app-context [Apps installeren op Windows 10-apparaten](../apps/apps-windows-10-app-deploy.md). Versie 10.3.4651.0 of hoger van de bedrijfsportal-app is vereist om deze functie te gebruiken.
 
 
 ## <a name="who-is-assigned-as-the-primary-user"></a>Wie is toegewezen als hoofdgebruiker?

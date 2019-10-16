@@ -1,5 +1,6 @@
 ---
 title: Persoonlijke gegevens weergeven en corrigeren
+titleSuffix: Microsoft Intune
 description: Informatie over het weergeven en corrigeren van persoonlijke gegevens.
 keywords: ''
 author: ErikjeMS
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9261c451a7a5bdf5f718193adbfcb2389fa285a0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9b6ca291f55511be9e88b0ff898d9383691542bf
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727919"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310903"
 ---
 # <a name="view-and-correct-personal-data"></a>Persoonlijke gegevens weergeven en corrigeren
 
@@ -43,7 +44,7 @@ Microsoft gebruikt strikte besturingselementen om de toegang tot klantgegevens t
 
 U kunt de toegang tot persoonlijke gegevens van eindgebruikers beveiligen en beheren met op rollen gebaseerd toegangsbeheer (RBAC). Zie [RBAC met Microsoft Intune](../fundamentals/role-based-access-control.md) voor meer informatie.
 
-U vindt meer informatie over de Microsoft-procedures voor gegevens in de voorwaarden voor onlineservices en de [privacyverklaring van Microsoft Online Services](http://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409). 
+U vindt meer informatie over de Microsoft-procedures voor gegevens in de voorwaarden voor onlineservices en de [privacyverklaring van Microsoft Online Services](https://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409). 
 
 ## <a name="correct-end-user-personal-data"></a>Persoonlijke gegevens van eindgebruikers corrigeren
 

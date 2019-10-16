@@ -158,7 +158,7 @@
                   href: app-protection-policy-settings-android.md
                 - name: iOS-instellingen
                   href: app-protection-policy-settings-ios.md
-                - name: Toegangsacties
+                - name: Voorwaardelijk starten
                   href: app-protection-policies-access-actions.md
                 - name: Uitzonderingen voor gegevensoverdracht
                   href: app-protection-policies-exception.md

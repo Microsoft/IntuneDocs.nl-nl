@@ -210,7 +210,7 @@
     - name: Problemen oplossen
       items:
         - name: Problemen met beleidsregels en profielen oplossen
-          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?context=./context/pr-context.yml
+          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?toc=/intune/protect/toc.json&bc=/protect/breadcrumb/toc.json
         - name: Problemen met voorwaardelijke toegang oplossen
           href: troubleshoot-conditional-access.md
         - name: Problemen met certificaatconnector oplossen

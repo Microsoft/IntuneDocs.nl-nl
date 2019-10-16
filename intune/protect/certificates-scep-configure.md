@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 909dba16e04b11989caa79112c5a89fbb7c52114
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 39858a74cd9503ff40de51ab3680ccf509d25c49
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722914"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310943"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Infrastructuur configureren om SCEP te ondersteunen in Intune  
   
@@ -37,7 +37,7 @@ Voordat u verdergaat, moet u ervoor zorgen dat u [een *vertrouwd certificaatprof
 
 ### <a name="servers-and-server-roles"></a>Servers en serverfuncties  
 De volgende on-premises infrastructuur moet worden uitgevoerd op servers die deel uitmaken van uw Active Directory-domein, met uitzondering van de webtoepassingsproxyserver.  
-- **Certificeringsinstantie**: gebruik een Microsoft Active Directory Certificate Services-certificeringsinstantie (CA) voor ondernemingen die wordt uitgevoerd in een Enterprise-editie van Windows Server 2008 R2 met servicepack 1 of later. De versie van Windows Server die u gebruikt, moet ondersteund blijven door Microsoft. Een zelfstandige CA wordt niet ondersteund. Zie [De certificeringsinstantie installeren](http://technet.microsoft.com/library/jj125375.aspx) voor meer informatie. Als uw certificeringsinstantie werkt met Windows Server 2008 R2 SP1, moet u [de hotfix van KB2483564 installeren](http://support.microsoft.com/kb/2483564/).  
+- **Certificeringsinstantie**: gebruik een Microsoft Active Directory Certificate Services-certificeringsinstantie (CA) voor ondernemingen die wordt uitgevoerd in een Enterprise-editie van Windows Server 2008 R2 met servicepack 1 of later. De versie van Windows Server die u gebruikt, moet ondersteund blijven door Microsoft. Een zelfstandige CA wordt niet ondersteund. Zie [De certificeringsinstantie installeren](https://technet.microsoft.com/library/jj125375.aspx) voor meer informatie. Als uw certificeringsinstantie werkt met Windows Server 2008 R2 SP1, moet u [de hotfix van KB2483564 installeren](https://support.microsoft.com/kb/2483564/).  
 
 - **NDES-serverfunctie**: u moet een NDES-serverfunctie (Registratieservice voor netwerkapparaten) configureren in Windows Server 2012 R2 of later. In een volgende sectie van dit artikel wordt u begeleid bij [het installeren van NDES](#set-up-ndes).  
 
@@ -45,7 +45,7 @@ De volgende on-premises infrastructuur moet worden uitgevoerd op servers die dee
   - U kunt niet gebruikmaken van NDES die is geïnstalleerd op de server waarop de ondernemings-CA wordt gehost.  
   - U gaat de Microsoft Intune Certificate-connector op dezelfde server installeren die als host fungeert voor NDES.  
 
-  Zie [Hulp bij Registratieservice voor netwerkapparaten](http://technet.microsoft.com/library/hh831498.aspx) in de Windows Server-documentatie en [Een beleidsmodule gebruiken met de Registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/dn473016.aspx) voor meer informatie over NDES.  
+  Zie [Hulp bij Registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/hh831498.aspx) in de Windows Server-documentatie en [Een beleidsmodule gebruiken met de Registratieservice voor netwerkapparaten](https://technet.microsoft.com/library/dn473016.aspx) voor meer informatie over NDES.  
 
 - **Microsoft Intune Certificate Connector**: de Microsoft Intune Certificate Connector is vereist voor het gebruik van SCEP-certificaatprofielen in Intune. In dit artikel vindt u instructies voor het [ installeren van deze connector](#install-the-intune-certificate-connector).  
 
@@ -61,7 +61,7 @@ De volgende on-premises infrastructuur is optioneel:
 
 - **Webtoepassingsproxyserver** (optioneel): gebruik een server met Windows Server 2012 R2 of later als webtoepassingsproxyserver (WAP-server) om uw NDES-URL op internet te publiceren.  Op die manier kunnen er certificaten worden verkregen voor zowel intranet- als internetgerichte apparaten.
 
-  De server die als host voor WAP fungeert, [moet een update installeren](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) waarmee ondersteuning wordt geboden voor de lange URL's die worden gebruikt door de Network Device Enrollment Service. Deze update is opgenomen in het [updatepakket van december 2014](http://support.microsoft.com/kb/3013769)en is afzonderlijk verkrijgbaar in [KB3011135](http://support.microsoft.com/kb/3011135).  
+  De server die als host voor WAP fungeert, [moet een update installeren](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) waarmee ondersteuning wordt geboden voor de lange URL's die worden gebruikt door de Network Device Enrollment Service. Deze update is opgenomen in het [updatepakket van december 2014](https://support.microsoft.com/kb/3013769)en is afzonderlijk verkrijgbaar in [KB3011135](https://support.microsoft.com/kb/3011135).  
 
   De WAP-server moet een SSL-certificaat hebben dat overeenkomt met de naam die op externe clients is gepubliceerd en het SSL-certificaat vertrouwen dat wordt gebruikt op de computer waarop de NDES-service wordt gehost. De WAP-server kan met deze certificaten de SSL-verbinding van clients beëindigen en een nieuwe SSL-verbinding naar de NDES-service maken.  
 
