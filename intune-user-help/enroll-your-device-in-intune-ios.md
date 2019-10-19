@@ -9,6 +9,7 @@ ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f207f1f94d34e6aa1768bb5ae0f5179710839c71
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: e468042ab81d563c9fa4b272661508a340d61aa9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71099872"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506247"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Toegang tot uw bedrijfsbronnen instellen voor uw iOS-apparaat  
 
@@ -32,7 +33,7 @@ Uw iOS-apparaat registreren met de bedrijfsportal-app van Intune voor beveiligde
 Nadat uw apparaat is geregistreerd, wordt het *beheerd*. Uw organisatie kan beleid en apps aan het apparaat toewijzen via een MDM-provider (Mobile Device Management), zoals Intune.  
 
 > [!NOTE]
-> We verkopen geen gegevens die door onze service worden verzameld om een of andere reden.  
+> We verkopen gegevens die door onze service worden verzameld om geen enkele reden aan externe partijen.  
 
 Als u toegang wilt houden tot uw werk- of schoolgegevens op het apparaat, moet u de instellingen van uw apparaat aanpassen aan de voorkeursinstellingen van uw organisatie. In dit artikel wordt beschreven hoe u Bedrijfsportal gebruikt om uw apparaat te registreren en de vereiste instellingen van uw organisatie aan te houden.  
 </br>

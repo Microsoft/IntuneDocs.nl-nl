@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 274b5a8d45f9fb525010e4d225172a6a1ce22275
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734151"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593793"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>VPN-instellingen toevoegen aan iOS-apparaten in Microsoft Intune
 
@@ -72,6 +73,8 @@ Welke instellingen in de volgende lijst worden weergegeven, is afhankelijk van h
     > [!NOTE]
     > Als gebruikersnaam en wachtwoord worden gebruikt als verificatiemethode voor Cisco IPsec VPN, moeten deze het SharedSecret bieden via een aangepast profiel voor de Apple Configurator.
 
+  - **Afgeleide referentie**: als er geen afgeleide referentie verlener is geconfigureerd, wordt u door intune gevraagd dit te doen.
+
 - **Uitgesloten URL's** (alleen Zscaler): wanneer u verbonden bent met het VPN van Zscaler, zijn de vermelde URL's toegankelijk buiten de Zscaler-cloud. 
 
 - **Split tunneling**: u kunt deze optie **inschakelen**  of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar gebruikt het standaardnetwerk van het hotel om gewoon op het web te surfen.
@@ -105,7 +108,7 @@ Welke instellingen in de volgende lijst worden weergegeven, is afhankelijk van h
 
 ## <a name="ikev2-settings"></a>IKEv2-instellingen
 
-Deze instellingen zijn van toepassing wanneer u **verbindings type** > **IKEv2**kiest.
+Deze instellingen zijn van toepassing wanneer u **verbindings type**  > **IKEv2**kiest.
 
 - **Externe ID**: Voer het netwerk-IP-adres, de FQDN-naam, de UserFQDN of de ASN1DN van de IKEv2-server in. Voer bijvoorbeeld `10.0.0.3` of `vpn.contoso.com` in. Normaal gesp roken voert u dezelfde waarde in als de naam van de [**verbinding**](#base-vpn-settings) (in dit artikel). Maar dit is afhankelijk van de instellingen van uw IKEv2-server.
 
@@ -135,8 +138,8 @@ Deze instellingen zijn van toepassing wanneer u **verbindings type** > **IKEv2**
   - **Gemiddeld** (standaard): Hiermee wordt elke 10 minuten een keepalive-bericht verzonden.
   - **Hoog**: Hiermee wordt elke 60 seconden een keepalive-bericht verzonden.
 
-- **Minimum TLS-versie bereik**: Voer de minimale TLS-versie in die moet worden gebruikt. Voer `1.0`, `1.1` of `1.2` in. Als dit veld leeg blijft, wordt de standaard waarde `1.0` gebruikt.
-- **TLS-versie bereik maximum**: Voer de maximale TLS-versie in die u wilt gebruiken. Voer `1.0`, `1.1` of `1.2` in. Als dit veld leeg blijft, wordt de standaard waarde `1.2` gebruikt.
+- **Minimum TLS-versie bereik**: Voer de minimale TLS-versie in die moet worden gebruikt. Voer `1.0`, `1.1` of `1.2` in. Als dit veld leeg blijft, wordt de standaard waarde van `1.0` gebruikt.
+- **TLS-versie bereik maximum**: Voer de maximale TLS-versie in die u wilt gebruiken. Voer `1.0`, `1.1` of `1.2` in. Als dit veld leeg blijft, wordt de standaard waarde van `1.2` gebruikt.
 - **Perfect Forward Secrecy**: Selecteer **inschakelen** om PFS (Perfect Forward Secrecy) in te scha kelen. PFS is een IP-beveiligings functie die de impact vermindert als een sessie sleutel wordt aangetast. Met **uitschakelen** (standaard) wordt PFS niet gebruikt.
 - **Controle van certificaat intrekking**: Selecteer **inschakelen** om ervoor te zorgen dat de certificaten niet worden ingetrokken voordat de VPN-verbinding kan slagen. Deze controle is de beste inspanning. Als er een time-out optreedt voor de VPN-server voordat wordt vastgesteld of het certificaat is ingetrokken, wordt toegang verleend. **Uitschakelen** (standaard) controleert niet op ingetrokken certificaten.
 
@@ -154,8 +157,8 @@ Deze instellingen zijn van toepassing wanneer u **verbindings type** > **IKEv2**
     - SHA2-256 (standaard)
     - SHA2-384
     - SHA2-512
-  - **Diffie-Hellman-groep**: Selecteer de groep die u wilt. De standaard waarde is groep `2`.
-  - **Levens duur** (minuten): Kies hoe lang de beveiligings koppeling actief blijft totdat de sleutels worden gedraaid. Voer een gehele waarde in tussen `10` en `1440` (1440 minuten is 24 uur). De standaard waarde is `1440`.
+  - **Diffie-Hellman-groep**: Selecteer de groep die u wilt. De standaard instelling is groeps `2`.
+  - **Levens duur** (minuten): Kies hoe lang de beveiligings koppeling actief blijft totdat de sleutels worden gedraaid. Voer een gehele waarde tussen `10` en `1440` (1440 minuten is 24 uur). De standaard waarde is `1440`.
 
 - **Een afzonderlijke set para meters voor onderliggende beveiligings koppelingen configureren**: met IOS kunt u afzonderlijke para meters voor de IKE-verbinding en eventuele onderliggende verbindingen configureren. 
 
@@ -173,8 +176,8 @@ Deze instellingen zijn van toepassing wanneer u **verbindings type** > **IKEv2**
     - SHA2-256 (standaard)
     - SHA2-384
     - SHA2-512
-  - **Diffie-Hellman-groep**: Selecteer de groep die u wilt. De standaard waarde is groep `2`.
-  - **Levens duur** (minuten): Kies hoe lang de beveiligings koppeling actief blijft totdat de sleutels worden gedraaid. Voer een gehele waarde in tussen `10` en `1440` (1440 minuten is 24 uur). De standaard waarde is `1440`.
+  - **Diffie-Hellman-groep**: Selecteer de groep die u wilt. De standaard instelling is groeps `2`.
+  - **Levens duur** (minuten): Kies hoe lang de beveiligings koppeling actief blijft totdat de sleutels worden gedraaid. Voer een gehele waarde tussen `10` en `1440` (1440 minuten is 24 uur). De standaard waarde is `1440`.
 
 ## <a name="automatic-vpn-settings"></a>Automatische VPN-instellingen
 

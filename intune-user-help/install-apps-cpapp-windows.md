@@ -9,6 +9,7 @@ ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,27 +19,28 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9cb8168075badda65b3cd02f8ae059119769c7c
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: d8cb6976121f4c5a9ce755e8feb189ea007e7ffd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413899"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506127"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Apps op uw apparaat installeren en delen
+
 Installeer apps op uw apparaat vanuit de bedrijfsportal-app voor Windows.
 
 ## <a name="install-apps"></a>Apps installeren
 
 1. Open de bedrijfsportal-app en meld u aan met het account van uw werk of school.  
 
-    ![De startpagina van de bedrijfsportal-app voor Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)    
+    ![De startpagina van de bedrijfsportal-app voor Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)
 2. Apps zoeken en installeren vanuit een van de volgende secties van de bedrijfsportal-app:  
 
     * **Home**: selecteer een app in een lijst met door uw organisatie aanbevolen apps.  
     * **Alles weergeven**: klik in de sectie **Startpagina** > **Apps** op **Alles weergeven** om alle beschikbare apps weer te geven.  
-    * **Alle apps**: selecteer deze pagina in het navigatiedeelvenster om alle beschikbare apps te zien, inclusief apps die zijn geïnstalleerd en aanbevolen. Weergeven, sorteren en filteren van de apps. Zoekresultaten worden automatisch op relevantie gesorteerd.  
-    * **App-categorieën**: Selecteer deze pagina in het navigatiedeelvenster om apps op basis van type of functie te kiezen. Apps worden gesorteerd in categorieën, zoals **aanbevolen**, **Education**, en **productiviteit**.  
+    * **Alle apps**: selecteer deze pagina in het navigatiedeelvenster om alle beschikbare apps te zien, inclusief apps die zijn geïnstalleerd en aanbevolen. De apps weer geven, sorteren en filteren. Zoekresultaten worden automatisch op relevantie gesorteerd.  
+    * **App-Categorieën**: Selecteer deze pagina in het navigatie deel venster om apps te kiezen op basis van type of functie. Apps worden gesorteerd onder Categorieën, zoals **Aanbevolen**, **onderwijs**en **productiviteit**.  
     * **Apps zoeken**: een statische zoekbalk bevindt zich in het navigatiedeelvenster van de app.  Als u de beschikbare apps wilt vinden, zoekt u op de app-naam of uitgever.  
 
 3. Selecteer een app.   
@@ -49,7 +51,7 @@ Installeer apps op uw apparaat vanuit de bedrijfsportal-app voor Windows.
     ![De bedrijfsportal-app voor Windows 10, pagina met app-details, status 'geïnstalleerd' wordt weergegeven nadat een app is geïnstalleerd. De installatieknop verandert in opnieuw installeren.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
 > [!IMPORTANT]
-> Als een vereiste app niet kan worden geïnstalleerd en uw organisatie deze beschikbaar voor u handmatig wilt installeren maakt, selecteert u **opnieuw**. Het kan tot tien minuten om te zien van de bijgewerkte status op te nemen. Als u selecteert **opnieuw** opnieuw gedurende deze tijd en een fout optreedt, dat klopt. Blijf de tien minuten voor een bijgewerkte status wachten.   
+> Als een vereiste app niet kan worden geïnstalleerd en uw organisatie het voor u mogelijk maakt om hand matig te installeren, selecteert u **opnieuw proberen**. Het kan tot tien minuten duren voordat de bijgewerkte status wordt weer geven. Als u opnieuw **proberen** tijdens deze periode selecteert en er een fout melding wordt weer geven, kunt u dat doen. Blijf de tien minuten wachten voor een bijgewerkte status.   
 
 Afhankelijk van de grootte van uw bedrijf kunnen er mogelijk meerdere versies van Office worden gedownload van de bedrijfsportal. Zie[Office 365 installeren op uw Windows-apparaat](./install-office-windows.md) voor meer informatie over het Office-pakket voor Windows-apparaten.
 
@@ -67,12 +69,12 @@ U kunt apps delen met en aanbevelen aan contactpersonen van uw werk of school. I
 
 Nadat u iets hebt gedeeld, krijgt de ontvanger een koppeling en een bericht om de details van de app weer te geven. Met de koppeling wordt de bedrijfsportalpagina **Appdetails** geopend. 
 
-## <a name="available-and-required-apps"></a>Beschikbaar en vereiste apps
-Apps zijn door uw organisatie aan u toegewezen en met het label in de bedrijfsportal-App als een **beschikbaar** of **vereist**. 
+## <a name="available-and-required-apps"></a>Beschik bare en vereiste apps
+Apps worden aan u toegewezen door uw organisatie en worden in Bedrijfsportal aangeduid als **beschikbaar** of **vereist**. 
 
-* Beschikbare apps: deze apps zijn geselecteerd door uw organisatie en zijn nodig en nuttig is voor werk of school. Ze zijn optioneel installeren en zijn de enige apps u in de bedrijfsportal-App vindt te installeren. 
+* Beschik bare apps: deze apps zijn door uw organisatie geselecteerd en zijn geschikt en nuttig voor werk of school. Ze zijn optioneel voor installatie en zijn de enige apps die u in de Bedrijfsportal kunt installeren. 
 
-* Vereiste apps: deze apps nodig zijn voor het werk en school en rechtstreeks op uw apparaat zijn geïmplementeerd. Deze apps worden automatisch voor u geïnstalleerd zonder tussenkomst van de. 
+* Vereiste apps: deze apps zijn nodig voor werk en school en worden rechtstreeks op uw apparaat geïmplementeerd. Deze apps worden automatisch voor u geïnstalleerd zonder tussen komst. 
 
 Apps zijn ook aan u beschikbaar gesteld op basis van uw apparaattype. Als u bijvoorbeeld de app Bedrijfsportal voor Windows gebruikt, hebt u toegang tot Windows-apps, maar niet tot iOS-apps.
 
@@ -81,20 +83,20 @@ Als er een app is die u nodig hebt, maar die niet wordt weergegeven in de bedrij
 
   ![De app Bedrijfsportal voor Windows 10, met de pagina Help en ondersteuning, met de gegevens van de Helpdesk gemarkeerd. ](./media/1812_UCP_Help_Support_helpdesk.png)  
 
-## <a name="view-installed-apps"></a>Apps weergeven die zijn geïnstalleerd  
-Een lijst van alle apps die zijn geïnstalleerd op uw apparaat weergeven. De **geïnstalleerde apps** pagina geeft een lijst van de volgende details over elke app:
+## <a name="view-installed-apps"></a>Geïnstalleerde apps weer geven  
+Een lijst weer geven met alle apps die op het apparaat zijn geïnstalleerd. Op de pagina **geïnstalleerde apps** worden de volgende details over elke app weer gegeven:
 
-* Naam: de naam van de app. Beschikbare apps bevatten een koppeling naar de **App-details** pagina.
-* Toewijzingstype: hoe de app is toegewezen en aan u beschikbaar gesteld. 
-* Uitgever: De naam van de ontwikkelaar of het bedrijf dat de app wordt gedistribueerd. Een uitgever is meestal een softwareleverancier of uw organisatie.  
-* Datum gepubliceerd: De datum waarop de app is beschikbaar om te downloaden. Publiceren datum kan de eerste release van een app weergeven of een app de meest recente update.
-* Status: De huidige installatiestatus van de app op uw apparaat. Apps kunnen worden weergegeven als u installeert, geïnstalleerd en installeer is mislukt. Vereiste apps kunnen om een actuele status weer te geven tot tien minuten duren. Zie de opmerking onder [apps installeren](#install-apps) voor belangrijke informatie over het installeren van een vereiste app. 
+* Naam: de naam van de app. Beschik bare apps bevatten een koppeling naar de pagina met details van de **app** .
+* Toewijzings type: hoe de app wordt toegewezen en beschikbaar wordt gesteld aan u. 
+* Uitgever: de naam van de ontwikkelaar of het bedrijf dat de app heeft gedistribueerd. Een uitgever is doorgaans een software leverancier of uw organisatie.  
+* Publicatie datum: de datum waarop de app beschikbaar is gesteld om te worden gedownload. Publicatie datum kan de initiële release van een app of de meest recente update van de app tonen.
+* Status: de huidige installatie status van de app op het apparaat. Apps kunnen worden weer gegeven als installatie, installatie en installatie mislukt. Het kan tot tien minuten duren voordat de vereiste apps een actuele status hebben. Zie de opmerking onder [apps installeren](#install-apps) voor belang rijke informatie over het installeren van een vereiste app. 
 
-Als u naar deze pagina, gaat u naar het navigatiemenu en selecteer **geïnstalleerde apps**. 
+Als u naar deze pagina wilt gaan, gaat u naar het navigatie menu en selecteert u **geïnstalleerde apps**. 
 
-  ![Schermopname van de bedrijfsportal-app voor Windows 10, geïnstalleerde apps pagina. ](./media/installed-apps-cp-1906.png)  
+  ![Voorbeeld van een schermafbeelding van de pagina met geïnstalleerde apps in de bedrijfsportal-app voor Windows 10. ](./media/installed-apps-cp-1906.png)  
 
 
-Gebruik **sorteren op** opnieuw rangschikken van het type van de toewijzing van apps, publisher, alfabetisch op naam of chronologische volgorde door publicatiedatum. Gebruik **filteren op** om te beperken van de apps die u door de status van de installatie ziet.  Als er zijn geen apps beschikbaar zijn, ziet u een bericht dat er geen bedrijfs-apps zijn geïnstalleerd.  
+Gebruik **sorteren op** om het toewijzings type van de apps, uitgever, alfabetisch op naam of chronologisch op publicatie datum te rangschikken. Gebruik **filter door** om de apps te beperken die u ziet met de installatie status.  Als er geen apps beschikbaar zijn, wordt er een bericht weer gegeven dat er geen bedrijfs-apps zijn geïnstalleerd.  
 
 Hebt u meer hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  

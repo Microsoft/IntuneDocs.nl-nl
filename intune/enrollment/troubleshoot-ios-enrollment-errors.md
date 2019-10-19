@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/25/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a02e403fdba34b576aa90b82062b7a602cbb517
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735685"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509227"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Problemen met inschrijving van iOS-apparaten in Microsoft Intune oplossen
 
@@ -62,7 +63,7 @@ Verzamel de volgende informatie over het probleem:
 1. Meld u aan bij Azure Portal.
 2. Selecteer **Meer Services**, zoek naar Intune en selecteer vervolgens **Intune**.
 3. Selecteer **Apparaatinschrijving** > **Inschrijvingsbeperkingen**.
-4. Onder **beperkingen voor het type apparaat**, selecteer de beperking die u wilt instellen **> Eigenschappen** > **platforms selecteren** > Selecteer **toestaan** voor **IOS**en klik vervolgens op **OK**.
+4. Onder **beperkingen voor het type apparaat**, selecteer de beperking die u wilt instellen > **Eigenschappen**  > **Selecteer platforms** > Selecteer **toestaan** voor **IOS**en klik vervolgens op **OK**.
 5. Selecteer **platforms configureren**, selecteer **toestaan** voor IOS-apparaten in persoonlijk eigendom en klik vervolgens op **OK**.
 6. Schrijf het apparaat opnieuw in.
 
@@ -89,10 +90,10 @@ Verzamel de volgende informatie over het probleem:
 **Oorzaak:** De gebruiker probeert meer apparaten in te schrijven dan de registratie limiet van het apparaat.
 
 #### <a name="resolution"></a>Oplossing
-1. Open de [intune-beheer portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **apparaten** > **alle apparaten**en controleer het aantal apparaten dat de gebruiker heeft inge schreven.
+1. Open de [intune-beheer portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)  > **apparaten**  > **alle apparaten**en controleer het aantal apparaten dat de gebruiker heeft inge schreven.
     > [!NOTE]
     > U moet ook de betrokken gebruiker aanmelden bij de [intune-gebruikers Portal](https://portal.manage.microsoft.com/) en apparaten controleren die zijn Inge schreven. Er zijn mogelijk apparaten die worden weer gegeven in de [intune-gebruikers Portal](https://portal.manage.microsoft.com/) , maar niet in de [intune-beheer Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview), maar deze apparaten tellen ook mee voor de registratie limiet van het apparaat.
-2. Ga naar **beheer** > **beheer van mobiele apparaten** > **inschrijvings regels** > Controleer de limiet voor de inschrijving van apparaten. De limiet is standaard ingesteld op 15. 
+2. Ga naar **beheer**  > **beheer van mobiele apparaten**  > **inschrijvings regels** > Controleer de limiet voor de inschrijving van apparaten. De limiet is standaard ingesteld op 15. 
 3. Als het aantal apparaten dat is inge schreven, de limiet heeft bereikt, overbodige apparaten verwijdert of de registratie limiet van het apparaat verhoogt. Omdat elk geregistreerd apparaat een intune-licentie gebruikt, raden we u aan om altijd eerst overbodige apparaten te verwijderen.
 4. Schrijf het apparaat opnieuw in.
 
@@ -110,8 +111,8 @@ Verzamel de volgende informatie over het probleem:
 **Oorzaak:** De gebruiker die het apparaat probeert te registreren heeft geen geldige intune-licentie.
 
 #### <a name="resolution"></a>Oplossing
-1. Ga naar het [Microsoft 365-beheer centrum](https://portal.office.com/adminportal/home#/homepage)en kies **gebruikers** > **actieve gebruikers**.
-2. Selecteer het betrokken gebruikers account > **product licenties** > **bewerken**.
+1. Ga naar het [Microsoft 365-beheer centrum](https://portal.office.com/adminportal/home#/homepage)en kies vervolgens **gebruikers**  > **actieve gebruikers**.
+2. Selecteer het betrokken gebruikers account > **product licenties**  > **bewerken**.
 3. Controleer of er een geldige intune-licentie is toegewezen aan deze gebruiker.
 4. Schrijf het apparaat opnieuw in.
 
@@ -119,8 +120,8 @@ Verzamel de volgende informatie over het probleem:
 
 **Oorzaak:** De gebruiker die het apparaat probeert te registreren heeft geen geldige intune-licentie.
 
-1. Ga naar het [Microsoft 365-beheer centrum](https://portal.office.com/adminportal/home#/homepage)en kies **gebruikers** > **actieve gebruikers**.
-2. Selecteer het betrokken gebruikers account en kies vervolgens **product licenties** > **bewerken**.
+1. Ga naar het [Microsoft 365-beheer centrum](https://portal.office.com/adminportal/home#/homepage)en kies vervolgens **gebruikers**  > **actieve gebruikers**.
+2. Selecteer het betrokken gebruikers account en kies vervolgens **product licenties**  > **bewerken**.
 3. Controleer of er een geldige intune-licentie is toegewezen aan deze gebruiker.
 4. Schrijf het apparaat opnieuw in.
 
@@ -130,7 +131,7 @@ Verzamel de volgende informatie over het probleem:
 
 #### <a name="resolution"></a>Oplossing
 
-1. Open de **instellingen** op het IOS-apparaat > **algemene** > -**Apparaatbeheer**.
+1. Open de **instellingen** op het IOS-apparaat > **algemene**  > **Apparaatbeheer**.
 2. Tik op het bestaande beheer profiel en tik op **beheer verwijderen**.
 3. Schrijf het apparaat opnieuw in.
 
@@ -183,7 +184,7 @@ Wanneer u een DEP-beheerd apparaat inschakelt dat is toegewezen aan een inschrij
 #### <a name="resolution"></a>Oplossing
 
 1. Bewerk het inschrijvings profiel. U kunt een wijziging aanbrengen in het profiel. Het doel is de wijzigings tijd van het profiel bij te werken.
-2. Met DEP beheerde apparaten synchroniseren: Open de intune-Portal >- **beheer** > **beheer van mobiele apparaten** > **iOS** > **Device Enrollment Program** > **Nu synchroniseren**. Er wordt een synchronisatieaanvraag verzonden naar Apple.
+2. Met DEP beheerde apparaten synchroniseren: Open de intune-Portal >- **beheerder**  > **beheer van mobiele apparaten**  > **IOS**  > **Device Enrollment Program**  > **Nu synchroniseren**. Er wordt een synchronisatieaanvraag verzonden naar Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>DEP-inschrijving is vastgelopen bij gebruikers aanmelding
 Wanneer u een DEP-beheerd apparaat inschakelt dat is toegewezen aan een inschrijvings profiel, wordt de eerste Setup-stickes nadat u referenties hebt ingevoerd.

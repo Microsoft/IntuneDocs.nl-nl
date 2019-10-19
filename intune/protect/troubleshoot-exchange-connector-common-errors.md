@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa4dbfb7c13d767df41655b391767fc7aa13d914
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817583"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508860"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>Veelvoorkomende fouten voor de intune Exchange connector oplossen
 
@@ -76,7 +77,7 @@ Wanneer u probeert de Microsoft Intune Exchange Connector te configureren, wordt
    Verify that you are connected to the Internet, check the Microsoft Intune Service Status, and try to connect again.  
    Error code: 0x00000006  
 ```  
-Deze fout kan optreden als een proxy server wordt gebruikt om verbinding te maken met internet en verkeer naar de intune-service blokkeert. Ga naar **configuratie scherm** > **Internet opties**, selecteer het tabblad **verbinding** en klik op **LAN-instellingen**om te bepalen of een proxy in gebruik is.
+Deze fout kan optreden als een proxy server wordt gebruikt om verbinding te maken met internet en verkeer naar de intune-service blokkeert. Ga naar **configuratie scherm**  > **Internet opties**, selecteer het tabblad **verbinding** en klik op **LAN-instellingen**om te bepalen of een proxy in gebruik is.
 
 **Oplossing**:  
 
@@ -131,7 +132,7 @@ Als u het recht **Aanmelden als service** gebruiker wilt toewijzen aan het **WIE
 
 1. Meld u bij de computer aan als beheerder of als lid van de groep Administrators.
 2. Voer **secpol. msc** uit om het lokale beveiligings beleid te openen.
-3. Ga naar **beveiligings instellingen** > **lokaal beleid**en selecteer vervolgens **toewijzing van gebruikers rechten**.
+3. Ga naar **beveiligings instellingen**  > **lokaal beleid**en selecteer vervolgens **toewijzing van gebruikers rechten**.
 4. Dubbel klik in het rechterdeel venster op **Aanmelden als een service**.
 5. Selecteer **gebruiker of groep toevoegen**, Voeg **WIEC_USER** toe aan het beleid en selecteer vervolgens twee keer op **OK** .
 

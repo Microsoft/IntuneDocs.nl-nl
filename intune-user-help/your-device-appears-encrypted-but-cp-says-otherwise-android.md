@@ -9,6 +9,7 @@ ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13f22b66b5a0700eadda28b20e0db6edce507021
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: af1c7d1f9d8236fd95413317acefbe8887d90f47
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721173"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507676"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Apparaat is versleuteld, maar apps zeggen anders
 
@@ -31,7 +32,7 @@ Als Bedrijfsportal of de Microsoft Intune-app zegt dat uw apparaat niet is versl
 
 ## <a name="add-a-startup-pin"></a>Een opstartpincode toevoegen
 
-Voor bepaalde Android-apparaten moet u een opstartpincode instellen om ervoor te zorgen dat uw apparaat beveiligd is. De locatie van deze instelling vindt u in de app **instellingen** van uw apparaat. De naam en locatie van de instelling kunnen verschillen. Op de Samsung Galaxy-S7 wordt de instelling bijvoorbeeld aangeduid als **beveiligd opstarten**. Als u dit wilt inschakelen en een wachtwoord code wilt maken, gaat u naar **instellingen** > **vergrendelings scherm en beveiligings** > **beveiligd opstarten**.  
+Voor bepaalde Android-apparaten moet u een opstartpincode instellen om ervoor te zorgen dat uw apparaat beveiligd is. De locatie van deze instelling vindt u in de app **instellingen** van uw apparaat. De naam en locatie van de instelling kunnen verschillen. Op de Samsung Galaxy-S7 wordt de instelling bijvoorbeeld aangeduid als **beveiligd opstarten**. Als u dit wilt inschakelen en een wachtwoord code wilt maken, gaat u naar **instellingen**  > **scherm vergren delen en beveiliging**  > **beveiligd opstarten**.  
 
 ## <a name="encrypt-the-entire-device"></a>Versleutel het hele apparaat
 

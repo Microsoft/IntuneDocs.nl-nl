@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/17/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec3a5a5aa4d30dcac0f954057f0cc51ffde6a950
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734294"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506576"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Veelvoorkomende problemen met en oplossingen voor e-mailprofielen in Microsoft Intune
 
@@ -65,7 +66,7 @@ Gebruikers met automatisch geconfigureerde e-mailaccounts kunnen geen afbeelding
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Apparaatconfiguratie** > **Profielen**.
-3. Selecteer uw e-mail Profiel > **eigenschappen** > -**instellingen**.
+3. Selecteer uw e-mail Profiel > **eigenschappen**  > **instellingen**.
 4. Stel in **dat de instelling E-mail mag worden verzonden vanuit toepassingen van derden** om in te **scha kelen**.
 
 ### <a name="configuration-manager-hybrid"></a>Hybride Configuration Manager

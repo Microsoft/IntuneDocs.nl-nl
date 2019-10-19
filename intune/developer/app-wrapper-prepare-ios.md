@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c535dbd91605a41fdc1c526ecd8ff9d9fc9e2448
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733670"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490971"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -204,7 +205,7 @@ U kunt de volgende opdrachtregelparameters gebruiken met de App Wrapping Tool:
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| Hiermee wordt gedetailleerde informatie weergegeven over de beschikbare opdrachtregeleigenschappen voor de App Wrapping Tool. |
 |**-AA**|(Optioneel) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`, d.w.z. `login.windows.net/common` |
-|**-ac**|(Optioneel) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` dit is de GUID in het veld client-ID van de vermelding van uw app in de Blade app-registratie. |
+|**-ac**|(Optioneel) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` dit de GUID in het veld client-ID is van de vermelding van uw app in de Blade app-registratie. |
 |**-ar**|(Optioneel) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` dit is de omleidings-URI die is geconfigureerd in de app-registratie. Normaal gesp roken zou het het URL-Protocol van de toepassing zijn die de Microsoft Authenticator-app zou terugsturen naar na een brokered-verificatie. |
 |**-v**| (Optioneel) Hiermee worden uitgebreide berichten naar de console uitgevoerd. Het wordt aanbevolen deze eigenschap te gebruiken voor opsporing van eventuele fouten. |
 |**-e**| (Optioneel) Gebruik deze eigenschap om ervoor te zorgen dat ontbrekende rechten worden verwijderd wanneer de app door de App Wrapping Tool wordt verwerkt. Zie [App-rechten instellen](#setting-app-entitlements) voor meer informatie.|

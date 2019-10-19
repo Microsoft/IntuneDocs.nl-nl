@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1b3139db8b217dceb495f67e809eae8319eae0c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735698"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508507"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Problemen met acties in intune oplossen
 
@@ -53,7 +54,7 @@ Nee. En u hoeft de streepjes niet in te voeren.
 ## <a name="remove-devices-action"></a>Actie apparaten verwijderen
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>Hoe kan ik weet wie een buiten gebruik stellen/wissen heeft gestart?
-Ga naar **intune**- > **apparaten** > **apparaat acties** > Controleer de kolom **gestart door** .
+Ga naar **intune** - > **apparaten**  > **apparaat acties** > Controleer de kolom **gestart door** .
 Als u geen vermelding ziet, is de meest waarschijnlijke persoon die de actie heeft gestart, de gebruiker van het apparaat. Ze hebben waarschijnlijk de Bedrijfsportal app of portal.manage.microsoft.com gebruikt.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>Waarom is mijn toepassing niet meer verwijderd na het gebruik van buiten gebruik stellen?

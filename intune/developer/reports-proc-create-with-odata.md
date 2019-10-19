@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1a508a6c9bf834268a797f028a32c7651cf394c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733475"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490469"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Een Intune-rapport maken van de OData-feed met Power BI
 
@@ -57,7 +58,7 @@ Installeer de nieuwste versie van Power BI Desktop. U kunt Power BI Desktop down
 2. Open het deelvenster **Intune Data Warehouse** door de link Data Warehouse onder **Andere taken** te selecteren aan de rechterkant van de blade **Microsoft Intune - Overzicht**.
 3. Kopieer de aangepaste feed-URL. Bijvoorbeeld: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. Open Power BI Desktop.
-5. Selecteer in de menu balk **File** > **gegevens ophalen** > **Odata-feed**.
+5. Selecteer in de menu balk **File**  > **gegevens ophalen**  > **Odata-feed**.
 6. Plak de aangepaste feed-URL, die u hebt gekopieerd uit de vorige stap, in het vak URL in het venster **OData-feed** .
 7. Selecteer **Eenvoudig**.
 
@@ -92,10 +93,10 @@ In een treemapgrafiek worden hiërarchische gegevens weergegeven als vakken binn
 ![Power BI-treemapvisualizaties](./media/reports-proc-create-with-odata/reports-create-03-treemap.png)
 
 1. Zoek in het deel venster **visualisaties** naar en selecteer **Treemap**. Het **Treemap** -diagram wordt toegevoegd aan het rapport canvas.
-2. Zoek in het deel venster **velden** de tabel `devices`.
-3. Vouw de tabel `devices` uit en selecteer het gegevens veld `manufacturer`.
-4. Sleep het gegevens veld `manufacturer` naar het teken papier van het rapport en zet het neer in het **Treemap** -diagram.
-5. Sleep het `deviceKey`-gegevens veld van de tabel `devices` naar het deel venster **Visualisaties** en zet het neer onder de sectie **waarden** in het vak **Voeg gegevens velden toe**.  
+2. Zoek in het deel venster **velden** de `devices` tabel.
+3. Vouw de tabel `devices` uit en selecteer het veld `manufacturer` data.
+4. Sleep het `manufacturer` gegevens veld naar het teken papier van het rapport en zet het neer in het **Treemap** -diagram.
+5. Sleep het `deviceKey` gegevens veld van de tabel `devices` naar het deel venster **Visualisaties** en zet het neer onder de sectie **waarden** in het vak **Voeg gegevens velden toe**.  
 
 U hebt nu een visueel element dat de verdeling van apparaten per fabrikant binnen uw organisatie weergeeft.
 
@@ -106,11 +107,11 @@ U hebt nu een visueel element dat de verdeling van apparaten per fabrikant binne
 U kunt een filter aan uw treemap toevoegen om aanvullende vragen te beantwoorden met uw app.
 
 1. Selecteer het rapportcanvas en selecteer vervolgens het **slicerpictogram** (![treemap met gegevensmodel en ondersteunde relaties](./media/reports-proc-create-with-odata/reports-create-slicer.png)) onder **Visualisaties** om een filter toe te voegen. De lege visualisatie van de **slicer** wordt weer gegeven op het canvas.
-2. Zoek in het deel venster **velden** de tabel `ownerTypes`.
-3. Vouw de tabel `ownerTypes` uit en selecteer het gegevens veld `ownerTypeName`.
-4. Sleep het `onwerTypeName`-gegevens veld van de tabel `ownerTypes` naar het deel venster **filters** en zet het neer onder het gedeelte **filters op deze pagina** in het vak **Voeg gegevens velden toe**.  
+2. Zoek in het deel venster **velden** de `ownerTypes` tabel.
+3. Vouw de tabel `ownerTypes` uit en selecteer het veld `ownerTypeName` data.
+4. Sleep het `onwerTypeName` gegevens veld van de tabel `ownerTypes` naar het deel venster **filters** en zet het neer onder het gedeelte **filters op deze pagina** in het vak **Voeg gegevens velden toe**.  
 
-   In de tabel `OwnerTypes` bevindt zich een gegevens veld met de naam `OwnerTypeKey` bevat een gegevens over de vraag of een apparaat bedrijfs eigendom of persoonlijk is. Ga naar de tabel `ownerTypes` en sleep de **ownerTypeName** naar de slicer om de beschrijvende namen weer te geven. Dit voorbeeld toont aan hoe het gegevensmodel relaties tussen tabellen ondersteunt.
+   In de `OwnerTypes` tabel bevindt zich een gegevens veld met de naam `OwnerTypeKey`that bevat een gegevens over de vraag of een apparaat bedrijfs eigendom of persoonlijk is. Ga naar de tabel `ownerTypes` en sleep de **ownerTypeName** naar de slicer om de beschrijvende namen weer te geven. Dit voorbeeld toont aan hoe het gegevensmodel relaties tussen tabellen ondersteunt.
 
 ![Treemap met filter: ondersteunt relaties tussen tabellen](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

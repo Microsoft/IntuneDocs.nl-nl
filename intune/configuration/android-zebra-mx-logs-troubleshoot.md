@@ -6,8 +6,9 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/26/2019
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 324550836cd8e7c8ea2786d15618d5f5010a043f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7ed93c86d3fbe7ed7a6ac5d4b1a3494fb55f2bc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735243"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506987"
 ---
 # <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Problemen oplossen en potentiële problemen op Android Zebra-apparaten in Microsoft Intune weer geven
 
@@ -60,7 +61,7 @@ Als u logboeken wilt ophalen nadat het profiel al is geïmplementeerd met intune
 
 ## <a name="read-the-logs"></a>De logboeken lezen
 
-Wanneer u de logboeken bekijkt, wordt er een fout bericht weer geven wanneer u de tag `<characteristic-error>` ziet. Fout Details worden geschreven naar de tag `<parm-error>` > eigenschap `desc`.
+Wanneer u de logboeken bekijkt, wordt er een fout bericht weer geven wanneer u het label `<characteristic-error>` ziet. Fout Details worden geschreven naar de `<parm-error>` tag > `desc` eigenschap.
 
 ## <a name="error-types"></a>Fouttypen
 

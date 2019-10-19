@@ -9,6 +9,7 @@ ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862243"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506290"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Uw bedrijfsapparaat inschrijven met de Microsoft Intune-app
 
@@ -78,11 +79,11 @@ Voltooi deze stappen voor het instellen en inschrijven van uw apparaat.
 
    ![Voorbeeldafbeelding van het instellen van uw zakelijke telefoon, waarin de knop Installeren is gemarkeerd.](./media/fully-managed-intune-app-11.png)   
 
-10. Tik **op** start om de Microsoft intune-app te openen en uw apparaat te registreren. 
+10. Tik op **Start** om de Microsoft intune-app te openen en uw apparaat te registreren. 
 
     ![Voorbeeldafbeelding van het instellen van uw zakelijke telefoon, waarin de knop Starten is gemarkeerd.](./media/fully-managed-intune-app-17.png)   
 
-11. Tik op **aanmelden** en tik vervolgens op **volgende** om te beginnen met de registratie. Wanneer u het bericht ziet dat de registratie is voltooid, **tikt**u op gereed.  
+11. Tik op **aanmelden** en tik vervolgens op **volgende** om te beginnen met de registratie. Wanneer u het bericht ziet dat de registratie is voltooid, tikt u op **gereed**.  
 
     ![Voorbeeld afbeelding van het instellen van de toegang, het scherm van het apparaat registreren, de knop gereed markeren.](./media/fully-managed-intune-app-19.png)   
 

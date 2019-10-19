@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5aaa964151477896c236e504ec9b378cf580e838
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736374"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584458"
 ---
 # <a name="windows-update-settings-for-intune"></a>Windows Update-instellingen voor Intune  
 
@@ -216,45 +217,9 @@ De instellingen voor de gebruikerservaring bepalen de ervaring van de eindgebrui
   - **Alle meldingen uitschakelen, met uitzonde ring van waarschuwingen voor opnieuw opstarten**
   - **Alle meldingen uitschakelen, inclusief waarschuwingen voor opnieuw opstarten**  
 
-- **Gebruikers toestaan opnieuw te starten (gepland opnieuw opstarten)**  
-  **Standaard**: niet geconfigureerd  
-  > [!IMPORTANT]  
-  > Instellingen voor *ingeschakelde opnieuw opstarten* worden niet meer aanbevolen voor gebruik. Gebruik in plaats daarvan de nieuwe *deadline* instellingen die de *ingeschakelde instellingen voor opnieuw opstarten* vervangen. InTune zal de [ondersteuning voor *ingeschakelde herstart* ](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) -instellingen in een toekomstige update afnemen.
-
-  De ingeschakelde herstart wordt ondersteund voor Windows 10 versie 1803 en hoger. 
-
-  > [!NOTE]  
-  > In versie 1809 van Windows 10 worden extra instellingen voor gepland opnieuw opstarten geïntroduceerd waarmee afzonderlijke instellingen kunnen worden toegepast op onderdelen- en kwaliteitsupdates. Door Intune beheerde instellingen worden echter niet afzonderlijk toegepast op de verschillende typen updates. In plaats daarvan past Intune dezelfde waarden toe op zowel onderdelen- als kwaliteitsupdates.  
-  
-  - **Niet geconfigureerd**  
-  - **Vereist**: Instellen op *Vereist* om gebruik van de opties voor gepland opnieuw opstarten voor Windows 10-updates in te schakelen. Met deze opties wordt de gebruiker van een apparaat ingeschakeld om te helpen beheren wanneer een apparaat opnieuw moet worden opgestart na het installeren van een update waarvoor opnieuw opstarten vereist is.  
-
-  Zie [Gepland opnieuw opstarten](https://docs.microsoft.com/windows/deployment/update/waas-restart#engaged-restart) in de Windows 10-documentatie voor het implementeren van updates voor meer informatie over deze optie.  
-
-  De volgende instellingen worden gebruikt om te bepalen wanneer acties voor gepland opnieuw opstarten worden uitgevoerd.  
-
-  - **Gebruikers overzetten naar gepland opnieuw opstarten na automatisch opnieuw opstarten (dagen)**  
-    **Standaard**: niet geconfigureerd Windows Update CSP: [Update-EngagedRestartTransitionSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
-    
-    Geef een waarde op van **2** tot **30** dagen op voor hoelang nadat de update is geïnstalleerd het apparaat overgaat op het gedrag voor gepland opnieuw opstarten. Na het geconfigureerde aantal dagen ontvangen gebruikers een prompt om het apparaat opnieuw op te starten.  
-
-  - **Herinnering voor gepland opnieuw opstarten uitstellen (dagen)**  
-    **Standaard**: niet geconfigureerd    
-    Windows Update CSP: [Update-EngagedRestartSnoozeSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
-    
-    Geef een waarde op van **1** tot **3** voor hoe lang de prompt voor opnieuw opstarten kan worden uitgesteld.  Na de uitstelperiode wordt de prompt voor opnieuw opstarten opnieuw aangeboden. De gebruiker kan de herinnering blijven uitstellen totdat de installatiedeadline wordt bereikt.  
-
-  - **Deadline instellen voor opnieuw opstarten (dagen)**  
-    **Standaard**: niet geconfigureerd  
-    Windows Update CSP: [Update-EngagedRestartDeadline](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
-  
-    Geef een waarde van **2** tot **30** op als maximumaantal dagen dat na het begin van het gedrag voor gepland opnieuw opstarten moet worden gewacht voordat een apparaat een vereiste herstart afdwingt. Bij het opnieuw opstarten wordt de gebruikers gevraagd hun werk op te slaan.
-
 - **Deadline instellingen gebruiken**  
   **Standaard**: niet geconfigureerd  
-  > [!IMPORTANT]  
-  > Vanaf de update van augustus voor intune, raden we u aan de volgende deadline-instellingen te gebruiken die de ingeschakelde instellingen voor opnieuw opstarten vervangen. InTune zal de [ondersteuning voor *ingeschakelde herstart* ](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) -instellingen in een toekomstige update van intune afnemen.  
-
+ 
   Hiermee kan de gebruiker deadline instellingen gebruiken.  
 
   - **Niet geconfigureerd**
@@ -263,21 +228,21 @@ De instellingen voor de gebruikerservaring bepalen de ervaring van de eindgebrui
   Wanneer u deze instelling instelt op *toestaan*, kunt u de volgende instellingen voor deadlines configureren:
 
   - **Deadline voor onderdeel updates**  
-    **Standaard**: 7  
+    **Standaard**: *niet geconfigureerd*  
     Windows Update CSP: [Update-ConfigureDeadlineForFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)  
 
     Hiermee geeft u het aantal dagen op dat een gebruiker heeft voordat de functie-updates automatisch worden geïnstalleerd op hun apparaten (2-30).
 
   - **Deadline voor kwaliteits updates**  
-    **Standaard**: 7  
+    **Standaard**: *niet geconfigureerd*  
     Windows Update CSP: [Update-ConfigureDeadlineForQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 
     Hiermee geeft u het aantal dagen op dat een gebruiker heeft voordat kwaliteits updates automatisch worden geïnstalleerd op hun apparaten (2-30).
 
   - **Respijtperiode**  
-    **Standaard**: 2 Windows Update CSP: [Update-ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+    **Standaard**: *niet geconfigureerd* Windows Update CSP: [Update-ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
 
-    Hiermee geeft u een minimum aantal dagen na de deadline op waarna de herstart automatisch wordt uitgevoerd (0-7).
+    Hiermee geeft u een minimum aantal dagen na de deadline op waarna de herstart automatisch wordt uitgevoerd (2-7).
 
   - **Automatisch opnieuw opstarten vóór deadline**  
     **Standaard**: Ja Windows Update CSP: [Update-ConfigureDeadlineNoAutoReboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
@@ -285,9 +250,6 @@ De instellingen voor de gebruikerservaring bepalen de ervaring van de eindgebrui
     Hiermee geeft u op of het apparaat automatisch opnieuw moet worden opgestart vóór de deadline.
     - **Ja**
     - **Nee**
-
-
-
 
 ### <a name="delivery-optimization-download-mode"></a>Delivery Optimization-downloadmodus  
 

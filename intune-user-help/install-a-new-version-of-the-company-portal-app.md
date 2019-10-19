@@ -9,6 +9,7 @@ ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: d2bdc4433e48fd77c12bfd5db706f8d226bf95a6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840961"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506055"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>De bedrijfsportal-app bijwerken
 
@@ -44,13 +45,13 @@ Wanneer een nieuwe versie beschikbaar is, wordt de optie **Update** weergegeven 
 
 ## <a name="update-the-company-portal-app-on-your-macos-device"></a>De bedrijfsportal-app op uw macOS-apparaat bijwerken
 
-Bedrijfsportal ingesteld om automatisch te installeren updates zodra deze beschikbaar komen. 
+Stel Bedrijfsportal in om automatisch updates te installeren zodra deze beschikbaar zijn. 
 
-1. Open de bedrijfsportal-App en Ga naar **Help**. 
+1. Open Bedrijfsportal en ga naar **Help**. 
 2. Selecteer **controleren op updates**. 
-3. Selecteer op het scherm Microsoft AutoUpdate **automatisch downloaden en installeren**. 
+3. Selecteer in het scherm micro soft auto update de optie **automatisch downloaden en installeren**. 
 
-Beschikbare updates wil weergeven, selecteert u **controleren op updates**.  
+Selecteer **controleren op updates**om beschik bare updates weer te geven.  
 
 ## <a name="update-the-company-portal-app-on-your-windows-device"></a>De bedrijfsportal-app op uw Windows-apparaat bijwerken
 Als u automatisch updates wilt ontvangen zodra deze beschikbaar zijn, opent u de Microsoft Store en gaat u naar **Instellingen**. Schakel **App-updates** in. Als u recente updates en apps in de downloadwachtrij wilt bekijken, gaat u naar **Downloads en updates**.  

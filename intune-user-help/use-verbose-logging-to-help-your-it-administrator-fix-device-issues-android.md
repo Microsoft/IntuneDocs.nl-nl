@@ -1,34 +1,52 @@
 ---
-title: Uitgebreide logboekregistratie gebruiken om het ondersteuningsteam van het bedrijf te helpen bij het oplossen van problemen met het apparaat| Microsoft Docs
+title: Logboek registratie-instellingen configureren in intune-apps | Microsoft Docs
 description: Uitgebreide logboekregistratie gebruiken zodat het ondersteuningsteam van het bedrijf problemen met het apparaat kan oplossen
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: arnab
+ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b0eb38b92ff5c18d58cf6ebe6f31e4b8a320dd9
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068994"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508017"
 ---
-# <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Het ondersteuningsteam van het bedrijf helpen met het oplossen van problemen met het apparaat via uitgebreide logboekregistratie
+# <a name="configure-logging-settings"></a>Instellingen voor logboek registratie configureren
 
-Wanneer uw Android-apparaat is geregistreerd bij Intune, kunt u *uitgebreide logboekregistratie* gebruiken om gedetailleerde logboekgegevens over de activiteiten op het apparaat vast te leggen voor de bedrijfsportal-app en de door Intune beheerde apps. Met deze logboeken kan het ondersteuningsteam van het bedrijf problemen oplossen die zich op uw apparaat kunnen voordoen, wanneer u de bedrijfsportal of een door Intune beheerde app gebruikt. Uitgebreide logboekregistratie is standaard op uw apparaat ingeschakeld en de logboeken die worden verzonden naar het ondersteuningsteam van het bedrijf bevatten uw e-mailadres.
+Configureer de instellingen voor logboek registratie zodat de app-acties voor de Bedrijfsportal app, Microsoft Intune app en door intune beheerde apps worden vastgelegd. Als u ooit een probleem ondervindt in de app en deze vervolgens rapporteert, zal het ondersteunings team deze logboeken bekijken voor meer informatie. 
 
-Als u uitgebreide logboekregistratie wilt in- of uitschakelen, meldt u zich aan bij de bedrijfsportal-app met de referenties voor uw werk- of schoolaccount, tikt u op **Instellingen** en tikt u op de aan/uit-knop naast de instelling **Uitgebreide logboekregistratie**.
+> [!NOTE]
+> De logboeken die u naar uw ondersteunings team verzendt, bevatten uw e-mail adres.  
 
-Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
+## <a name="configure-company-portal-logging"></a>Bedrijfsportal logboek registratie configureren
+Bij uitgebreide logboek registratie worden alle acties in de Bedrijfsportal-app vastgelegd. Het is standaard ingeschakeld op het apparaat. Uitgebreide logboek registratie uitschakelen in Bedrijfsportal:  
+
+1. Meld u aan bij de bedrijfsportal-app.
+2. Tik op **instellingen**.
+3. Naast **uitgebreide logboek registratie**, spiegelt u de switch naar **uit**.
+
+## <a name="configure-microsoft-intune-app-logging"></a>Microsoft Intune app-logboek registratie configureren
+In de Microsoft Intune-app kunt u het niveau van de logboek gegevens configureren. Het niveau wordt standaard ingesteld op **belang rijk**. Details van logboek registratie aanpassen:  
+
+1. Open de app Microsoft Intune.  
+2. Tik op **instellingen**.  
+3. Onder **Details logboek niveau**, selecteer **uitgebreid** om het niveau van de opgenomen gegevens te verhogen of selecteer **uitschakelen** om logboek registratie uit te scha kelen.  
+
+## <a name="next-steps"></a>Volgende stappen  
+
+Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  

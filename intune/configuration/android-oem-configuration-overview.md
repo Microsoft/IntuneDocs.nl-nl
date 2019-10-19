@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c46caf4d1c9f9a32a7f324fc5e1734dbe8043bd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2be1faa1296792d3d40de5ca0b304a287bae8e6f
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735256"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550819"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Android Enter prise-apparaten gebruiken en beheren met OEMConfig in Microsoft Intune
 
@@ -98,7 +99,7 @@ Zorg ervoor dat het apparaat OEMConfig ondersteunt, de juiste OEMConfig-app word
 5. Kies in **instellingen configureren met**de optie **Configuration Designer** of **JSON editor**gebruiken:
 
     > [!TIP]
-    > Lees de OEM-documentatie om te controleren of u de eigenschappen correct configureert. Deze app-eigenschappen zijn opgenomen in de OEM, niet in intune. InTune heeft een minimale validatie van de eigenschappen of wat u invoert. Als u bijvoorbeeld `abcd` invoert voor een poort nummer, wordt het profiel opgeslagen als-is en op uw apparaten geïmplementeerd met de waarden die u configureert. Zorg ervoor dat u de juiste informatie invoert.
+    > Lees de OEM-documentatie om te controleren of u de eigenschappen correct configureert. Deze app-eigenschappen zijn opgenomen in de OEM, niet in intune. InTune heeft een minimale validatie van de eigenschappen of wat u invoert. Als u bijvoorbeeld `abcd` opgeeft voor een poort nummer, wordt het profiel opgeslagen als-is en op uw apparaten geïmplementeerd met de waarden die u configureert. Zorg ervoor dat u de juiste informatie invoert.
 
     - **Configuration Designer**: wanneer u deze optie selecteert, worden de eigenschappen die beschikbaar zijn in het app-schema weer gegeven die u kunt configureren.
 
@@ -120,7 +121,7 @@ Zorg ervoor dat het apparaat OEMConfig ondersteunt, de juiste OEMConfig-app word
 
     Wijzigingen die zijn aangebracht in de configuratie Designer, worden ook automatisch gemaakt in de JSON-editor. Op dezelfde manier worden wijzigingen die in de JSON-editor zijn aangebracht, automatisch aangebracht in de Configuration Designer. Als uw invoer ongeldige waarden bevat, kunt u niet scha kelen tussen de Configuration Designer en de JSON-editor totdat u de problemen hebt opgelost.
 
-6. Selecteer **OK** > **toevoegen** om uw wijzigingen op te slaan. Het beleid wordt gemaakt en in de lijst weergegeven.
+6. Selecteer **OK** > **Toevoegen** om uw wijzigingen op te slaan. Het beleid wordt gemaakt en in de lijst weergegeven.
 
 Zorg ervoor dat u [het profiel toewijst](device-profile-assign.md) en [de status ervan controleert](device-profile-monitor.md).
 
@@ -144,6 +145,7 @@ Vergeleken met standaard-apps, OEMConfig-apps vouwen de bevoegdheden voor beheer
 | Zebra Technologies | com. Zebra. oemconfig. common | [Overzicht van Zebra OEMConfig](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | com. Datalogic. oemconfig | [Gebruikers documentatie voor Datalogic OEMConfig](https://datalogic.github.io/oemconfig/) |
 | Honeywell | com. Honeywell. oemconfig |  |
+| Kyocera | JP. Kyocera. enterprisedeviceconfig |  |
 
 -----------------
 
