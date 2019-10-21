@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92aa955558120f88afb31e787376fdd1281dd5f4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b2ebca165c067afbc3d830e5f75ac9f8e29effb2
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723174"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237234"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -110,7 +110,7 @@ Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren.
     - **Opties voor account wijzigen verbergen (Windows 10 versie 1809 of hoger vereist)** : kies **Verbergen** om te voorkomen dat opties voor account wijzigen worden weergegeven op de aanmeldings- en domeinfoutpagina's van het bedrijf. Voor deze optie is vereist dat er een [aangepaste huisstijl wordt geconfigureerd in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Gebruikersaccounttype**: kies het gebruikersaccounttype (**Beheerder** of **Standaardgebruiker**). De gebruiker die het apparaat koppelt, mag een lokale beheerder worden en wordt hiervoor toegevoegd aan de groep met lokale beheerders. De gebruiker wordt niet ingesteld als de standaardbeheerder op het apparaat.
     - **White Glove OOBE toestaan** (Windows 10, versie 1903 of hoger vereist; [aanvullende fysieke vereisten](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): Kies **Ja** om ondersteuning van nauwkeurige OOBE toe te staan.
-    - **Sjabloon apparaatnaam toepassen (Windows 10 versie 1809 of hoger vereist)** : kies **Ja** om een sjabloon te maken die tijdens de inschrijving kan worden gebruikt bij de naamgeving van een apparaat. Namen moeten 15 tekens of minder bevatten, en mogen letters, cijfers en afbreekstreepjes bevatten. Namen mogen niet alleen uit getallen bestaan. Gebruik de [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) om het serienummer toe te voegen van specifieke hardware. U kunt ook de optie [% RAND: x % macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) gebruiken om een willekeurige tekenreeks van getallen toe te voegen, waarbij x gelijk is aan het aantal toe te voegen cijfers. 
+    - **Sjabloon voor apparaatnaam toepassen** (Windows 10 versie 1809 of hoger, en Azure AD-inschrijving zijn vereist): kies **Ja** om een sjabloon te maken die tijdens de inschrijving kan worden gebruikt bij de naamgeving van een apparaat. Namen moeten 15 tekens of minder bevatten, en mogen letters, cijfers en afbreekstreepjes bevatten. Namen mogen niet alleen uit getallen bestaan. Gebruik de [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) om het serienummer toe te voegen van specifieke hardware. U kunt ook de optie [% RAND: x % macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) gebruiken om een willekeurige tekenreeks van getallen toe te voegen, waarbij x gelijk is aan het aantal toe te voegen cijfers. U kunt alleen een vooraf ingestelde oplossing opgeven voor hybride apparaten in een [domaindeelnameprofiel](windows-autopilot-hybrid.md#create-and-assign-a-domain-join-profile). 
     - **Taal (regio)** \*: Kies de taal die u voor het apparaat wilt gebruiken. Deze optie is alleen beschikbaar als u **Zelf-implementerend** hebt gekozen als **implementatiemodus**.
     - **Toetsenbord automatisch configureren**\*: Als er een **Taal (regio)** is geselecteerd, kiest u **Ja** om de toetsenbordselectiepagina over te slaan. Deze optie is alleen beschikbaar als u **Zelf-implementerend** hebt gekozen als **implementatiemodus**.
 8. Selecteer **Volgende**.

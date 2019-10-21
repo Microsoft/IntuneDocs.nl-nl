@@ -1,32 +1,32 @@
 ---
-title: Nalevingsbeleid voor apparaten in Microsoft Intune - Azure | Microsoft Docs
-description: Ga aan de slag met het gebruik van apparaatnalevingsbeleid, overzicht van status- en ernstniveaus, gebruik van Respijtperiode-status, werken met voorwaardelijke toegang, verwerking van apparaten zonder toegewezen beleid en de verschillen in naleving tussen de Azure-portal en de klassieke portal in Microsoft Intune
+title: Nalevingsbeleid voor apparaten maken in Microsoft Intune - Azure | Microsoft Docs
+description: Nalevingsbeleid voor apparaten maken, overzicht van status- en ernstniveaus zien, status voor Respijtperiode gebruiken, werken met voorwaardelijke toegang, apparaten zonder toegewezen beleid verwerken, en de verschillen in naleving bekijken in de Azure-portal en de klassieke portal in Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8b3a99744f830da3c88473e79bce78c97875d73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722628"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306576"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Een nalevingsbeleid maken in Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Nalevingsbeleid voor apparaten is belangrijk voor het beveiligen van de resources van uw organisatie als u gebruikmaakt van Intune. In Intune kunt u regels en instellingen maken waar apparaten zich aan moeten houden om te voldoen, zoals een minimale versie van het besturingssysteem. Als het apparaat niet voldoet, kunt u toegang tot gegevens en resources blokkeren middels [voorwaardelijke toegang](conditional-access.md).
+Nalevingsbeleid voor apparaten is belangrijk voor het beveiligen van de resources van uw organisatie als u gebruikmaakt van Intune. In Intune kunt u regels en instellingen maken waar apparaten zich aan moeten houden om te voldoen, zoals een minimale versie van het besturingssysteem. Als het apparaat niet voldoet, kunt u toegang tot gegevens en resources blokkeren met behulp van [voorwaardelijke toegang](conditional-access.md).
 
 U kunt ook maatregelen nemen bij niet-naleving; zo kunt u bijvoorbeeld een e-mailmelding naar de gebruiker verzenden. Zie [Aan de slag met apparaatnaleving](device-compliance-get-started.md) voor een overzicht van de werking van nalevingsbeleid.
 
@@ -44,7 +44,7 @@ Neem het volgende in acht voor het gebruik van het nalevingsbeleid voor apparate
 - Gebruik de volgende abonnementen:
 
   - Intune
-  - U hebt de Azure AD (Active Directory) Premium-editie is nodig om voorwaardelijke toegang te gebruiken. In [Prijzen van Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/) wordt vermeld wat u krijgt bij de verschillende edities. voor Intune-naleving is geen Azure AD vereist.
+  - U hebt de Azure AD (Active Directory) Premium-editie nodig om voorwaardelijke toegang te gebruiken. In [Prijzen van Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/) wordt vermeld wat u krijgt bij de verschillende edities. voor Intune-naleving is geen Azure AD vereist.
 
 - Gebruik een ondersteund platform:
 
@@ -95,15 +95,15 @@ Neem het volgende in acht voor het gebruik van het nalevingsbeleid voor apparate
 
 4. Wanneer u klaar bent, selecteert u **OK** > **Maken** om uw wijzigingen op te slaan. Het beleid wordt gemaakt en in de lijst weergegeven. Vervolgens wijst u het beleid toe aan uw groepen.
 
-## <a name="assign-user-groups"></a>Gebruikersgroepen toewijzen
+## <a name="assign-the-policy"></a>Wijs het beleid toe
 
 Als een beleid eenmaal is gemaakt, is de volgende stap dit beleid toewijzen aan uw groepen:
 
 1. Kies een beleid dat u hebt gemaakt. Bestaande beleidsregels bevinden zich in **Apparaatcompatibiliteit** > **Beleid**.
 2. Selecteer het beleid > **Toewijzingen**. U kunt Azure Active Directory-beveiligingsgroepen (AD) opnemen of uitsluiten.
-3. Kies **Geselecteerde groepen** om uw Azure AD-beveiligingsgroepen te zien. Selecteer de gebruikersgroepen waarop u dit beleid wilt toepassen > Kies **Opslaan** om het beleid te implementeren voor gebruikers.
+3. Kies **Geselecteerde groepen** om uw Azure AD-beveiligingsgroepen te zien. Selecteer de groepen waarop u dit beleid wilt toepassen > kies **Opslaan** om het beleid te implementeren.
 
-U hebt het beleid toegepast op gebruikers. De apparaten die worden gebruikt door de gebruikers op wie het beleid wordt toegepast, worden gecontroleerd om te zien of ze voldoen aan de vereisten.
+De gebruikers of apparaten waarop het beleid is gericht, worden beoordeeld op naleving wanneer ze worden ingecheckt bij Intune.
 
 ### <a name="evaluate-how-many-users-are-targeted"></a>Evalueren op hoeveel gebruikers een beleid is gericht
 
@@ -128,7 +128,7 @@ Met bereiktags kunt u eenvoudig beleid toewijzen aan en filteren voor specifieke
 
 ## <a name="refresh-cycle-times"></a>Cyclusduur vernieuwen
 
-In Intune worden verschillende vernieuwingscycli gebruikt om te controleren op updates voor nalevingsbeleid. Als het apparaat onlangs is ingeschreven, worden de check-ins vaker uitgevoerd. [Vernieuwingscycli voor beleidsregels en profielen](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) bevat de geschatte vernieuwingstijden.
+In Intune worden verschillende vernieuwingscycli gebruikt om te controleren op updates voor nalevingsbeleid. Als het apparaat onlangs is ingeschreven, worden de check-ins vaker uitgevoerd. In [Vernieuwingscycli voor beleidsregels en profielen](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) worden de geschatte vernieuwingstijden vermeld.
 
 Gebruikers kunnen ook op elk gewenst moment de bedrijfsportal-app openen en het apparaat synchroniseren om onmiddellijk op beleidsupdates te controleren.
 

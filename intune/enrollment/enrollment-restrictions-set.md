@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bdeb88f3a69db160dca61bf3038c5a7d0235f2b2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722459"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379817"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -48,7 +48,7 @@ U kunt onder ander de volgende registratiebeperkingen maken:
 - Platformbesturingssysteemversie voor iOS, Android-apparaatbeheerder, Android-werkprofiel, Windows en Windows Mobile. (Alleen Windows 10-versies kunnen worden gebruikt. Laat dit veld leeg als Windows 8.1 is toegestaan.)
   - Minimale versie.
   - Maximale versie.
-- Beperk apparaten in persoonlijk eigendom (alleen iOS, Android-apparaatbeheerder, Android-werkprofiel, macOS, Windows en Windows Mobile).
+- Beperk [apparaten in persoonlijk eigendom](device-enrollment.md#bring-your-own-device) (alleen iOS, Android-apparaatbeheerder, Android-werkprofiel, macOS, Windows en Windows Mobile).
 
 ## <a name="default-restrictions"></a>Standaardbeperkingen
 
@@ -68,9 +68,9 @@ Standaardbeperkingen worden automatisch opgegeven voor registratiebeperkingen vo
      Ondersteunde versie-indelingen omvatten:
     - Android-apparaatbeheerder en Android Enterprise-werkprofiel bieden ondersteuning voor major.minor.rev.build.
     - iOS ondersteunt major.minor.rev. Versies van besturingssystemen zijn niet van toepassing op Apple-apparaten die worden ingeschreven met Device Enrollment Program, Apple School Manager of de app Apple Configurator.
-    - Windows ondersteunt alleen major.minor.rev.build voor Windows 10.
+    - Windows biedt alleen ondersteuning voor major.minor.build.rev voor Windows 10.
     > [!Note]
-    > Windows 10 verstrekt niet het buildnummer tijdens het inschrijven. Als u bijvoorbeeld 10.0.17134.100 invoert en het apparaat nummer 10.0.17134.174 heeft, wordt het apparaat geblokkeerd.
+    > Windows 10 verstrekt niet het rev-nummer tijdens het inschrijven. Als u bijvoorbeeld 10.0.17134.100 invoert en het apparaat nummer 10.0.17134.174 heeft, wordt het apparaat geblokkeerd.
 
 8. Kies onder **Persoonlijk eigendom** de optie **Toestaan** voor de platforms die u wilt toestaan als apparaten in persoonlijk eigendom.
 9. Kies **Volgende** om naar de pagina **Toewijzingen** te gaan.
@@ -151,6 +151,12 @@ Ook de volgende persoonlijke registratiemethoden worden geblokkeerd:
 - De optie [Alleen inschrijven voor MDM]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) in de Windows-instellingen.
 
 \* Deze worden niet geblokkeerd als ze zijn geregistreerd met Autopilot.
+
+
+## <a name="blocking-personal-ios-devices"></a>Persoonlijke iOS-apparaten blokkeren
+iOS-apparaten worden in Intune standaard geclassificeerd als persoonlijk eigendom. Een iOS-apparaat moet voldoen aan een van de volgende voorwaarden om te worden geclassificeerd als bedrijfseigendom:
+- Het apparaat moet zijn geregistreerd met een serienummer of IMEI.
+- Het apparaat moet zijn ingeschreven met behulp van Automatische apparaatinschrijving (voorheen Device Enrollment Program)
 
 
 ## <a name="change-enrollment-restriction-priority"></a>De prioriteit van de registratiebeperking wijzigen

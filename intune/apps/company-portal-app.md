@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b32d34c1878bc0355c510ca342091010af43bca7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724916"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350010"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -165,7 +165,7 @@ Gebruikers kunnen acties uitvoeren op hun lokale of externe apparaten via de app
 - **Synchroniseren**: met deze actie wordt een apparaat ingecheckt bij de Intune-service. Dit wordt weergegeven als **Status controleren** in de bedrijfsportal.
 - **Extern vergrendelen**: hiermee wordt het apparaat vergrendeld en is een pincode vereist om het apparaat weer te ontgrendelen.
 - **Wachtwoordcode opnieuw instellen**: deze actie wordt gebruikt om de wachtwoordcode van het apparaat opnieuw in te stellen. Op iOS-apparaten wordt de wachtwoordcode verwijderd en moet de eindgebruiker een nieuwe code invoeren in Instellingen. Op ondersteunde Android-apparaten wordt een nieuwe wachtwoordcode gegenereerd door Intune, die tijdelijk wordt weergegeven in de bedrijfsportal.
-- **Sleutelherstel**: deze actie wordt gebruikt om een versleutelingssleutel voor versleutelde apparaten te herstellen.
+- **Sleutelherstel**: deze actie wordt gebruikt om een persoonlijke herstelsleutel te herstellen voor versleutelde macOS-apparaten vanaf de Bedrijfsportal-website. 
 
 ### <a name="self-service-actions"></a>Selfserviceacties
 
@@ -180,8 +180,8 @@ Voor sommige platforms en configuraties zijn geen selfserviceacties voor apparat
 
 
 <sup>(1) </sup> Buiten gebruik stellen wordt altijd geblokkeerd op Windows-apparaten die lid zijn van Azure AD.<br>
-<sup>(2) </sup> Sleutelherstel voor MacOS is alleen beschikbaar via de webportal.<br>
-<sup>(3) </sup> Alle externe acties worden uitgeschakeld als u een Apparaatinschrijvingsmanager-inschrijving gebruikt.<br>
+<sup>(2) </sup> Herstel van persoonlijke sleutels voor macOS is alleen beschikbaar via de Bedrijfsportal-website.<br> 
+<sup>(3)</sup> Alle externe acties worden uitgeschakeld als u een Apparaatinschrijvingsmanager-inschrijving gebruikt.<br>
 <sup>(4)</sup> Met Naam wijzigen wordt alleen de apparaatnaam in de app of op de website van de bedrijfsportal gewijzigd, niet op het apparaat zelf.<br>
 <sup>(5)</sup> Wissen op afstand is niet beschikbaar op MacOS-apparaten.<br>
 <sup>(6)</sup> Wachtwoordcode opnieuw instellen wordt niet ondersteund in bepaalde configuraties van Android en Android Enterprise. Zie [De wachtwoordcode van een apparaat opnieuw instellen of verwijderen via Intune](../remote-actions/device-passcode-reset.md) voor meer informatie.<br>

@@ -197,6 +197,8 @@
           displayName: ca; pkcs; pki; ra; registration authority
         - name: SCEP- of PKCS-certificaten verwijderen
           href: remove-certificates.md
+    - name: Afgeleide referenties
+      href: derived-credentials.md
     - name: Software-updates
       items:
         - name: Windows-updates

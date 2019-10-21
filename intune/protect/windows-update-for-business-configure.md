@@ -14,16 +14,14 @@ ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a9ecc1cabb00122d2812580b663fcd0c1dfabc3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: aa8cc396c05150006799c1e9b86ecb63351cdb36
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728088"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314719"
 ---
 # <a name="manage-software-updates-in-intune"></a>Software-updates beheren in Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Gebruik Intune om updateringen te definiëren die aangeven hoe en wanneer uw Windows 10-apparaten worden bijgewerkt via Windows als een service. Updateringen zijn beleidsregels die u toewijst aan een groep apparaten. Als u updateringen gebruikt, kunt u een updatestrategie maken die overeenkomt met de behoeften van uw bedrijf. Zie [Manage updates using Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb) (Updates beheren met Windows Update voor Bedrijven) voor meer informatie.
 
@@ -92,7 +90,7 @@ Naast het weergeven van de toewijzingsstatus kunt u ook boven aan het deelvenste
 ### <a name="delete"></a>Verwijderen  
 Selecteer **Verwijderen** om te stoppen met het afdwingen van de instellingen van de geselecteerde Windows 10-updatering. Als u een ring verwijdert, wordt ook de bijbehorende configuratie uit Intune verwijderd, waardoor deze instellingen niet meer worden toegepast en afgedwongen in Intune.  
 
-Als u een ring verwijdert uit Intune, worden de instellingen op apparaten waaraan de updatering is toegewezen, niet gewijzigd.  In plaats hiervan behoudt het apparaat de huidige instellingen. Dit komt omdat op apparaten geen historisch overzicht wordt bijgehouden van de instellingen die eerder zijn ingesteld, en omdat het apparaat mogelijk instellingen ontvangt van andere updateringen die actief blijven.  
+Als u een ring verwijdert uit Intune, worden de instellingen op apparaten waaraan de updatering is toegewezen, niet gewijzigd.  In plaats hiervan behoudt het apparaat de huidige instellingen. Apparaten behouden geen historisch overzicht van de instellingen die ze eerder hebben bewaard. Apparaten kunnen ook instellingen ontvangen van extra updateringen die actief blijven.  
 
 #### <a name="to-delete-a-ring"></a>Een ring verwijderen  
 1. Selecteer **Verwijderen** tijdens het weergeven van de overzichtspagina voor een updatering.  
@@ -129,6 +127,12 @@ Als een updatering is onderbroken, kunt u **Uitbreiden** selecteren om de onderb
 
 ### <a name="uninstall"></a>Verwijderen  
 Een Intune-beheerder kan **Verwijderen** gebruiken om de meest recente *onderdelenupdate* of de meest recente *kwaliteitsupdate* te verwijderen (terug te draaien) voor een actieve of onderbroken updatering. Nadat u één type hebt verwijderd, kunt u vervolgens ook het andere type verwijderen. Intune biedt geen ondersteuning voor het verwijderen van updates door gebruikers.  
+
+> [!IMPORTANT] 
+> Wanneer u de optie *Verwijderen* gebruikt, wordt de aanvraag voor verwijderen in Intune onmiddellijk doorgegeven aan apparaten. 
+> - Verwijderen van updates op Windows-apparaten wordt gestart zodra deze de wijziging in Intune-beleid ontvangen. Het verwijderen van updates is niet beperkt tot onderhoudsplanningen, zelfs wanneer ze zijn geconfigureerd als onderdeel van de updatering. 
+> - Als voor het verwijderen van updates is vereist dat het apparaat opnieuw wordt opgestart, wordt het apparaat opgestart zonder dat gebruikers de mogelijkheid hebben om dit uit te stellen.
+
 
 Om te kunnen verwijderen:  
 - Moet op een apparaat de Windows-update van 10 april 2018 (versie 1803) of hoger actief zijn.  

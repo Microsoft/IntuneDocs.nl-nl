@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 10/15/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618f88d6dbacb886f250b74f6a462b8449b59b18
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9944aa59f47b7263d46ac96f6aaca3f8ae5c9486
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724084"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349993"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Algemene vragen, problemen en oplossingen met apparaatbeleid en -profielen in Microsoft Intune
 
@@ -67,11 +67,11 @@ Als het apparaat onlangs is ingeschreven, wordt het inchecken voor naleving en c
 | iOS | Om de 15 minuten gedurende 1 uur en daarna ongeveer om de 8 uur |  
 | macOS | Om de 15 minuten gedurende 1 uur en daarna ongeveer om de 8 uur | 
 | Android | Om de 3 minuten gedurende 15 minuten en daarna om de 15 minuten gedurende 2 uur en vervolgens ongeveer om de 8 uur | 
-| Pc’s met Windows 10 die als apparaten zijn geregistreerd | Om de 3 minuten gedurende 30 minuten en daarna ongeveer om de 8 uur | 
+| Pc’s met Windows 10 die als apparaten zijn geregistreerd | Om de 3 minuten gedurende 15 minuten en daarna om de 15 minuten gedurende 2 uur en vervolgens ongeveer om de 8 uur | 
 | Windows Phone | Om de 5 minuten gedurende 15 minuten en daarna om de 15 minuten gedurende 2 uur en vervolgens ongeveer om de 8 uur | 
 | Windows 8.1 | Om de 5 minuten gedurende 15 minuten en daarna om de 15 minuten gedurende 2 uur en vervolgens ongeveer om de 8 uur | 
 
-Gebruikers kunnen ook de bedrijfsportal-app openen en het apparaat synchroniseren om direct te controleren of er updates voor een beleid of profiel zijn.
+Gebruikers kunnen ook op elk gewenst moment de Bedrijfsportal-app openen en naar **Instellingen** > **Synchroniseren** gaan, om onmiddellijk te controleren op beleids- of profielupdates.
 
 Voor apparaten zonder gebruikersaffiniteit kan de synchronisatiefrequentie die direct volgt op de inschrijving variëren van een aantal uur tot een of meer dagen. Intune verzendt aanvragen met verschillende intervallen om een apparaat in te checken bij Intune. Het is echter nog steeds aan het apparaat om in te checken. Na de initiële inschrijving is het niet te voorspellen hoelang het duurt voor het apparaat de check-in afrondt. Het hangt ook af van het type apparaatinschrijving en het beleid en de profielen die zijn toegewezen aan een apparaat. Nadat het apparaat is ingeschreven en alle initiële beleidsregels en profielen zijn toegepast, controleert het apparaat ongeveer elke 6-8 uur op nieuwe beleidsregels en profielen, op basis van de tijd dat het apparaat is ingeschreven bij Intune.
 

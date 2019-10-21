@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8beb8291ede1bf2fde32014fadf9f8cd52da5b6
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: 204a19546e9466fdf7064e15b8cba7268ec1b757
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830583"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349980"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Web-apps aan Microsoft Intune toevoegen
 
@@ -30,7 +30,9 @@ ms.locfileid: "71830583"
 
 Intune biedt ondersteuning voor diverse typen apps, waaronder web-apps. Een web-app is een client-/servertoepassing. De server levert de web-app, waaronder de gebruikersinterface, inhoud en functionaliteit. Bovendien bieden moderne webhostingplatformen meestal beveiliging, taakverdeling en andere voordelen. Een web-app wordt afzonderlijk onderhouden op internet. U gebruikt Microsoft Intune om naar dit type app te verwijzen. U wijst ook de groepen gebruikers toe die toegang krijgen tot deze app. 
 
-Voordat u een app kunt beheren en aan uw gebruikers kunt toewijzen, voegt u de app toe aan Intune. Er wordt door Intune een snelkoppeling gemaakt naar de web-app op het beginscherm van het apparaat van de gebruiker.
+Voordat u een app kunt beheren en aan uw gebruikers kunt toewijzen, voegt u de app toe aan Intune. 
+
+Er wordt door Intune een snelkoppeling gemaakt naar de web-app op het apparaat van de gebruiker. Voor iOS-apparaten wordt een snelkoppeling naar de web-app toegevoegd aan het Startscherm. Voor Android-apparaten wordt een snelkoppeling naar de web-app toegevoegd aan het de widget Intune-bedrijfsportal, en moet de widget handmatig worden vastgemaakt door de gebruiker. Voor Windows-apparaten wordt een snelkoppeling naar de web-app geplaatst op het Startscherm.
 
 > [!Note]
 > Web-apps worden niet ondersteund op apparaten met een Android-werkprofiel. Op het apparaat van de gebruiker moet een browser zijn geïnstalleerd om web-apps te kunnen starten.

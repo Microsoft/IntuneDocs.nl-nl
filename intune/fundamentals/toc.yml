@@ -9,7 +9,7 @@
     - name: Overzicht van apparaatbeheer
       href: what-is-device-management.md
       displayName: teamviewer
-    - name: Wat is er nieuw
+    - name: Wat is er nieuw?
       href: whats-new.md
       items:
         - name: Wat is er nieuw in de gebruikersinterface van de app?
@@ -41,6 +41,16 @@
       href: device-lifecycle.md
     - name: Levenscyclus van apps
       href: ../apps/app-lifecycle.md
+    - name: Begeleide scenario's
+      items:
+        - name: Overzicht van begeleide scenario's
+          href: guided-scenarios-overview.md
+        - name: Microsoft Edge voor mobiel implementeren
+          href: guided-scenarios-edge.md
+        - name: Modern bureaublad met cloudbeheer
+          href: guided-scenarios-cloud-managed-pc.md
+        - name: Veilige mobiele apps voor Microsoft Office
+          href: guided-scenarios-office-mobile.md
     - name: Algemene scenario's
       href: common-scenarios.md
     - name: Beslissingen voor de technologie voor BYOD met EMS
@@ -74,7 +84,7 @@
               href: planning-guide-onboarding.md
             - name: Testen en valideren
               href: planning-guide-test-validation.md
-            - name: Aanvullende bronnen
+            - name: Extra resources
               href: planning-guide-resources.md
         - name: Migratiehandleiding
           href: migration-guide.md
@@ -155,7 +165,7 @@
           href: mdm-authority-set.md
         - name: Rollen beheren
           items:
-            - name: Toegangsbeheer op basis van rollen
+            - name: Op rollen gebaseerd toegangsbeheer
               href: role-based-access-control.md
             - name: Een rol toewijzen aan een gebruiker
               href: assign-role.md
@@ -175,6 +185,8 @@
       href: ../protect/index.yml
     - name: Apps beheren en beveiligen
       href: ../apps/index.yml
+    - name: Beleidssets gebruiken
+      href: ~/fundamentals/policy-sets.md
     - name: Richtlijnen voor ontwikkelaars
       href: ../developer/index.yml
     - name: Help en ondersteuning
@@ -197,7 +209,7 @@
       items:
         - name: Problemen bij toegang tot bedrijfsbronnen oplossen
           href: troubleshoot-company-resource-access-problems.md
-- name: Bronnen
+- name: Resources
   items:
     - name: Archief
       items:

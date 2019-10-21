@@ -1,5 +1,5 @@
 ---
-title: Apparaten in Microsoft Intune versleutelen met behulp van de door platforms ondersteunde versleutelingsmethoden
+title: Apparaten versleutelen met de versleutelingsmethode die wordt ondersteund op platforms
 titleSuffix: Microsoft Intune
 description: Versleutel apparaten met ingebouwde versleutelingsmethoden zoals BitLocker of FileVault, en beheer de herstelsleutels voor deze versleutelde apparaten vanuit de Intune-portal.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad995a4b8b67a2ff7e3604f899fdbeebc2bad8cc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f885cbddf8ecb984dc6e98db38c9adbc6a07119a
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721393"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306847"
 ---
 # <a name="use-device-encryption-with-intune"></a>Apparaatversleuteling gebruiken met Intune  
 

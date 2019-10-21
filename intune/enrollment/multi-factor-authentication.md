@@ -16,12 +16,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea6af0fd71acb7aad22930c6173540e3aece4f98
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4b761672ceace57ae7c0939959d25b8d6e45be32
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726372"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379819"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Multi-Factor Authentication vereisen voor Intune-apparaatinschrijvingen
 
@@ -56,7 +56,7 @@ Voer de volgende stappen uit om MFA te vereisen wanneer een apparaat wordt gereg
 6. Kies in de sectie **Toewijzingen** **Gebruikers en groepen**. 
 7. In **Gebruikers en groepen** kiest u **Gebruikers of groepen selecteren**  en schakelt u **Gebruikers en groepen** in. Selecteer vervolgens de gebruikers en/of groepen waarop dit beleid van toepassing is en kies vervolgens **Gereed**.
 8. Kies **Cloud-apps** in de sectie **Toewijzingen**.
-9. Kies op het tabblad **Opnemen** onder **Cloud-apps** de optie **Apps selecteren** en kies vervolgens **Selecteren** > **Microsoft Intune-inschrijving**. Klik ten slotte op **Gereed**.
+9. Kies op het tabblad **Opnemen** onder **Cloud-apps** de optie **Apps selecteren** en kies vervolgens **Selecteren** > **Microsoft Intune-inschrijving**. Klik ten slotte op **Gereed**. Door **Microsoft Intune-inschrijving** te kiezen wordt MFA voor voorwaardelijke toegang alleen toegepast op de inschrijving van het apparaat (eenmalige MFA-prompt).
 10. In het gedeelte **Toewijzingen** hoeft u voor **Voorwaarden** geen instellingen voor MFA te configureren.
 11. Kies in de sectie **Besturingselementen voor toegang** de optie **Verlenen**.
 12. Kies onder **Verlenen** **Toegang verlenen** en selecteer vervolgens **Meervoudige verificatie vereisen**. Selecteer niet **Vereisen dat het apparaat moet worden gemarkeerd als compatibel**, omdat de compatibiliteit van het apparaat niet kan worden gecontroleerd totdat het is ingeschreven. Kies dan de optie **Selecteren**.

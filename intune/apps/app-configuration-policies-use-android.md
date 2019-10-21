@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59d93bed7bae2b757a4bd1e7b1dffc814629f6a1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d31126a259274a2c75f933428632e274d8710aa6
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725735"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350032"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>App-configuratiebeleidsregels toevoegen voor beheerde Android Enterprise-apparaten
 
@@ -31,7 +31,7 @@ ms.locfileid: "71725735"
 App-configuratiebeleidsregels in Microsoft Intune leveren instellingen voor beheerde Google Play apps op beheerde Android Enterprise-apparaten. De app-ontwikkelaar maakt configuratie-instellingen voor door Android beheerde apps beschikbaar. Deze beschikbare instelling worden door Intune gebruikt om de beheerder functies voor de app te laten configureren. Het app-configuratiebeleid wordt toegewezen aan uw gebruikersgroepen. De beleidsinstellingen worden gebruikt wanneer de app deze controleert, doorgaans bij de eerste keer dat de app wordt uitgevoerd.
 
 > [!NOTE]  
-> Niet elke app ondersteunt app-configuratie. Vraag aan de app-ontwikkelaar of de app app-configuratiebeleidsregels ondersteunt.
+> Niet elke app ondersteunt app-configuratie. Vraag aan de app-ontwikkelaar of app-configuratiebeleidsregels worden ondersteund in de app.
 
 1. Selecteer in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) **Client-apps** > **App-configuratiebeleid** >  **Toevoegen**.
 2. Voer de volgende eigenschappen in:
@@ -86,9 +86,8 @@ Gebruik voor Android-apparaten de volgende sleutel-/waardeparen:
 | **Waarden** | <ul><li>Een of meer door <code>;</code> gescheiden UPN’s.</li><li>Alleen beheerde gebruikersaccounts die met deze sleutel zijn gedefinieerd, zijn toegestaan.</li><li> Voor apparaten die zijn ingeschreven bij Intune, kan het <code>{{userprincipalname}}</code>-token worden gebruikt voor het ingeschreven gebruikersaccount.</li></ul> |
 
    > [!NOTE]
-   > U moet Outlook voor Android 2.2.222 of hoger gebruiken wanneer u alleen geconfigureerde organisatieaccounts met meerdere identiteiten toestaat.<p></p>
+   > U moet Outlook voor Android 2.2.222 en hoger, Word, Excel, PowerPoint voor Android 16.0.9327.1000 en hoger, of OneDrive voor Android 5.28 en hoger gebruiken, wanneer alleen organisatieaccounts met meerdere identiteiten zijn toegestaan.<p></p>
    > Als Microsoft Intune-beheerder kunt u bepalen welke gebruikersaccounts worden toegevoegd aan Microsoft Office-toepassingen op beheerde apparaten. U kunt de toegang beperken tot uitsluitend toegestane gebruikersaccounts van de organisatie, en persoonlijke accounts blokkeren op ingeschreven apparaten. De app-configuratie wordt verwerkt op de ondersteunende toepassingen, en niet-goedgekeurde accounts worden verwijderd en geblokkeerd.<p></p>
-   > Voor Microsoft Word, Microsoft Excel en Microsoft PowerPoint moet u app-versie 16.0.9327.1000 of hoger gebruiken. 
 
 ## <a name="enter-the-json-editor"></a>De JSON-editor invoeren
 
@@ -104,7 +103,7 @@ Wanneer de toegewezen app op een apparaat wordt uitgevoerd, worden de instelling
 
 ## <a name="preconfigure-the-permissions-grant-state-for-apps"></a>De status van de machtigingen voor apps vooraf configureren
 
-U kunt machtigingen voor apps ook vooraf configureren voor toegang tot Android-apparaatfuncties. Android-apps die apparaatmachtigingen vereisen, zoals voor toegang tot uw locatie of de apparaatcamera, vragen gebruikers de machtiging te accepteren of te weigeren.
+U kunt machtigingen voor apps ook vooraf configureren voor toegang tot Android-apparaatfuncties. Android-apps die apparaatmachtigingen vereisen, zoals voor toegang tot uw locatie of de camera van uw apparaat, vragen gebruikers de machtiging te accepteren of te weigeren.
 
 Een app maakt bijvoorbeeld gebruik van de microfoon van het apparaat. De gebruiker wordt gevraagd de app toestemming te verlenen voor het gebruik van de microfoon.
 

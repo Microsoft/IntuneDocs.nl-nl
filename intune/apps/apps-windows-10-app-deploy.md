@@ -1,5 +1,5 @@
 ---
-title: Implementatie van Windows 10-apps met Microsoft Intune
+title: Implementatie van Windows 10-apps met behulp van Microsoft Intune
 titleSuffix: ''
 description: Hier vindt u meer informatie over implementatiescenario's voor apps in Windows 10 die beschikbaar zijn met Microsoft Intune.
 keywords: ''
@@ -17,74 +17,74 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04e943f573fb2485a2ef7f1e3245f08d4222d142
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: b7772a7476f197f455191debf8e252ba83e06f49
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830566"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379764"
 ---
-# <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementatie van Windows 10-apps met Microsoft Intune 
+# <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implementatie van Windows 10-apps met behulp van Microsoft Intune 
 
-Microsoft Intune ondersteunt momenteel verschillende typen apps en implementatiescenario's op Windows 10-apparaten. Nadat u een app hebt toegevoegd aan Intune, kunt u de app toewijzen aan gebruikers en apparaten. De volgende informatie bevat meer details over de ondersteunde Windows 10-scenario's. Daarnaast vindt u hier belangrijke informatie die u in acht moet nemen wanneer u apps naar Windows implementeert. 
+Microsoft Intune ondersteunt verschillende typen apps en implementatiescenario's op Windows 10-apparaten. Nadat u een app hebt toegevoegd aan Intune, kunt u de app toewijzen aan gebruikers en apparaten. Dit artikel biedt meer details over de ondersteunde Windows 10-scenario’s, en behandelt ook de belangrijkste details die u in het achterhoofd moet houden wanneer u apps implementeert in Windows. 
 
-LOB-apps (Line-Of-Business) en Microsoft Store voor Bedrijven-apps zijn de typen apps die op Windows 10-apparaten worden ondersteund. De bestandsextensies voor Windows-apps omvatten **.msi**, **.appx** en **.appxbundle**.  
+LOB-apps (Line-Of-Business) en Microsoft Store voor Bedrijven-apps zijn de typen apps die op Windows 10-apparaten worden ondersteund. De bestandsextensies voor Windows-apps omvatten .msi, .appx en .appxbundle.  
 
 > [!Note]
-> Dit zijn de minimaal vereiste Windows 10-updates om moderne apps te implementeren:
+> Voor het implementeren van moderne apps hebt u minstens het volgende nodig:
 > - Voor Windows 10 1803: [23 mei 2018: KB4100403 (build van besturingssysteem: 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403).
 > - Voor Windows 10 1709: [21 juni 2018: KB4284822 (build van besturingssysteem: 16299.522)](https://support.microsoft.com/help/4284822).
 >
-> Alleen Windows 10 versie 1803 en hoger ondersteunt het installeren van apps wanneer er geen primaire gebruiker is gekoppeld.
+> Alleen Windows 10 versie 1803 en hoger bieden ondersteuning voor het installeren van apps wanneer er geen primaire gebruiker is gekoppeld.
 >
 > Implementatie van LOB-apps wordt niet ondersteund op apparaten met Windows 10 Home-edities.
 
-## <a name="windows-10-line-of-business-apps"></a>Windows 10 Line-Of-Business-apps
+## <a name="windows-10-lob-apps"></a>Windows 10 LOB-apps
 
-Windows 10 LOB-apps worden ondertekend en geüpload naar de Intune-beheerconsole en kunnen zowel moderne apps, zoals UWP-apps (Universal Windows Platform) en Windows-app-pakketten (AppX), als Win 32-apps bevatten, zoals eenvoudige Microsoft Installer-pakketbestanden (MSI). Updates van LOB-apps moeten handmatig worden geüpload en elke keer door de beheerder worden geïmplementeerd. Updates die zijn geïmplementeerd, worden automatisch geïnstalleerd op apparaten van eindgebruikers waarop de app is geïnstalleerd, zonder tussenkomst van de gebruiker. De gebruiker heeft geen controle over de updates. 
+U kunt Windows 10 LOB-apps ondertekenen en uploaden naar de Intune-beheerconsole. Deze kunnen zowel moderne apps, zoals UWP-apps (Universal Windows Platform) en Windows-app-pakketten (AppX), als Win 32-apps bevatten, zoals eenvoudige Microsoft Installer-pakketbestanden (MSI). De beheerder moet updates voor LOB-apps handmatig uploaden en implementeren. Deze updates worden automatisch geïnstalleerd op apparaten van gebruikers die de app hebben geïnstalleerd. Er is geen tussenkomst van de gebruiker vereist, en de gebruiker heeft geen controle over de updates. 
 
 ## <a name="microsoft-store-for-business-apps"></a>Microsoft Store voor Bedrijven-apps
 
-Microsoft Store voor Bedrijven-apps zijn moderne apps die zijn aangeschaft in de Microsoft Store voor Bedrijven-beheerportal en vervolgens worden gesynchroniseerd met Microsoft Intune voor beheer. De apps kunnen zowel **online gelicentieerd** als **offline gelicentieerd** zijn. Updates van Microsoft Store voor Bedrijven-apps worden rechtstreeks door de Microsoft Store beheerd. Hiervoor is geen extra actie van u, de beheerder, vereist. U kunt bovendien met een aangepaste Uniform Resource Identifier (URI) voorkomen dat bepaalde apps worden bijgewerkt. Zie [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates) (Bedrijfsappbeheer - Voorkomen dat apps automatisch worden bijgewerkt) voor meer informatie. De gebruiker kan ook op het apparaat updates voor alle Microsoft Store voor Bedrijven-apps uitschakelen. 
+Microsoft Store voor Bedrijven-apps zijn moderne apps die zijn aangeschaft in de Microsoft Store voor Bedrijven-beheerportal. Ze worden vervolgens gesynchroniseerd naar Microsoft Intune voor beheer. De apps kunnen zowel online gelicentieerd als offline gelicentieerd zijn. In Microsoft Store worden updates rechtstreeks beheert, zonder dat extra actie van de beheerder is vereist. U kunt bovendien met een aangepaste Uniform Resource Identifier (URI) voorkomen dat bepaalde apps worden bijgewerkt. Zie [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates) (Bedrijfsappbeheer - Voorkomen dat apps automatisch worden bijgewerkt) voor meer informatie. De gebruiker kan ook updates voor alle Microsoft Store voor Bedrijven-apps uitschakelen. 
 
 ### <a name="categorize-microsoft-store-for-business-apps"></a>Microsoft Store voor Bedrijven-apps categoriseren 
-Voer de volgende stappen uit om Microsoft Store voor Bedrijven-apps te categoriseren: 
+Microsoft Store voor Bedrijven-apps categoriseren: 
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Client-apps** > **Apps** > selecteer een Microsoft Store voor Bedrijven-app > **App-gegevens** > **Categorie**. 
-3. Selecteer een categorie in de vervolgkeuzelijst.
+2. Selecteer **Client-apps** > **Apps**. Selecteer een Microsoft Store voor Bedrijven-app. Selecteer vervolgens **App-gegevens** > **Categorie**. 
+3. Selecteer een categorie.
 
-## <a name="installing-apps-on-windows-10-devices"></a>Apps installeren op Windows 10-apparaten
-Afhankelijk van het type app kan de app op twee manieren worden geïnstalleerd op een Windows 10-apparaat:
+## <a name="install-apps-on-windows-10-devices"></a>Apps installeren op Windows 10-apparaten
+Afhankelijk van het type app kunt u de app op twee manieren installeren op een Windows 10-apparaat:
 
 - **Gebruikerscontext**: Wanneer een app wordt geïmplementeerd in de gebruikerscontext, wordt de beheerde app geïnstalleerd op het apparaat van de gebruiker wanneer de gebruiker zich aanmeldt op het apparaat. De installatie van de app wordt pas uitgevoerd als de gebruiker zich op het apparaat aanmeldt. 
-  - Moderne Line-Of-Business-apps en Microsoft Store voor Bedrijven-apps (zowel online als offline) kunnen in de gebruikerscontext worden geïmplementeerd en bieden ondersteuning voor zowel de intentie Vereist als Beschikbaar.
-  - Win32-apps die zijn gemaakt voor **Gebruikersmodus** of **Dual-modus**, kunnen in de gebruikerscontext worden geïmplementeerd en bieden ondersteuning voor zowel de intentie **Vereist** als de intentie **Beschikbaar**. 
+  - Moderne Line-Of-Business-apps en Microsoft Store voor Bedrijven-apps (zowel online als offline) kunnen in de gebruikerscontext worden geïmplementeerd. De apps bieden ondersteuning voor zowel de intentie Vereist als de intentie Beschikbaar.
+  - Win32-apps die zijn gemaakt voor Gebruikersmodus of Dual-modus, kunnen in de gebruikerscontext worden geïmplementeerd en bieden ondersteuning voor zowel de intentie Vereist als de intentie Beschikbaar. 
 - **Apparaatcontext**: Wanneer een app wordt geïmplementeerd in de apparaatcontext, wordt de beheerde app rechtstreeks op het apparaat geïnstalleerd door Intune.
-  - Alleen moderne Line-Of-Business-apps en offline gelicentieerde Microsoft Store voor zakelijke apps kunnen in de apparaatcontext worden geïmplementeerd en ondersteunen alleen de intentie Vereist.
-  - Win32-apps die zijn gemaakt voor **Machinemodus** of **Dual-modus**, kunnen in de gebruikerscontext worden geïmplementeerd en bieden alleen ondersteuning voor de intentie **Vereist**.
+  - Alleen moderne Line-Of-Business-apps en offline gelicentieerde Microsoft Store voor zakelijke apps kunnen in de apparaatcontext worden geïmplementeerd. Deze apps bieden alleen ondersteuning voor de intentie Vereist.
+  - Win32-apps die zijn gemaakt voor Machinemodus of Dual-modus, kunnen in de apparaatcontext worden geïmplementeerd en bieden alleen ondersteuning voor de intentie Vereist.
 
 > [!NOTE]
-> Voor Win32-apps die zijn gemaakt voor **Dual-modus**, moet u (de beheerder) aangeven of de app werkt in **Gebruikersmodus** of in **Machinemodus** voor alle toewijzingen die aan dat exemplaar zijn gekoppeld. De implementatiecontext kan niet per toewijzing worden gewijzigd.  
+> Voor Win32-apps die zijn gemaakt voor Dual-modus, moet de beheerder aangeven of de app werkt in Gebruikersmodus of in Machinemodus voor alle toewijzingen die aan dat exemplaar zijn gekoppeld. De implementatiecontext kan niet per toewijzing worden gewijzigd.  
 
 Wanneer een app wordt geïmplementeerd in de apparaatcontext, slaagt de installatie alleen wanneer deze bestemd is voor een apparaat dat de apparaatcontext ondersteunt. Bovendien ondersteunt implementatie in de apparaatcontext de volgende voorwaarden:
-- Als een app is geïmplementeerd in de apparaatcontext en bestemd is voor een gebruiker, mislukt de installatie met de volgende status en wordt de volgende fout weergegeven in de beheerconsole:
+- Als een app wordt geïmplementeerd in de apparaatcontext en is gericht op een gebruiker, mislukt de installatie. De volgende status en fout worden weergegeven in de beheerconsole:
   - Status: Mislukt.
   - Fout: Een gebruiker kan niet het doel zijn van de installatie van apparaatcontext.
-- Als een app is geïmplementeerd in de apparaatcontext en bestemd is voor een apparaat dat de apparaatcontext niet ondersteunt, mislukt de installatie met de volgende status en wordt de volgende fout weergegeven in de beheerconsole:
+- Wanneer een app wordt geïmplementeerd in de apparaatcontext, maar is gericht op een apparaat dat geen ondersteuning biedt voor apparaatcontext, mislukt de installatie. De volgende status en fout worden weergegeven in de beheerconsole:
   - Status: Mislukt.
   - Fout: Dit platform biedt geen ondersteuning voor het installeren van apparaatcontext. 
 
 > [!Note]
-> Wanneer een app-toewijzing is opgeslagen met een specifieke implementatie, kan de context niet worden gewijzigd voor deze toewijzing, met uitzondering van moderne apps. Bij moderne apps kan de context namelijk worden gewijzigd van gebruikerscontext naar apparaatcontext. 
+> Nadat u een app-toewijzing hebt opgeslagen met een specifieke implementatie, kunt u de context voor deze toewijzing niet wijzigen, met uitzondering van moderne apps. Voor moderne apps kunt u de context wijzigen van gebruikerscontext in apparaatcontext. 
 
-Wanneer er een conflict in het beleid voor één gebruiker/apparaat is, worden de volgende beleidsprioriteiten gebruikt om het uiteindelijke beleid te bepalen:
+Als er een conflict is in beleid voor één gebruiker of apparaat, gelden de volgende prioriteiten:
 - Het beleid voor apparaatcontext heeft een hogere prioriteit dan het beleid voor gebruikerscontext. 
 - Het beleid Installeren heeft een hogere prioriteit dan het beleid Verwijderen.
 
-Zie [Apps toewijzen aan groepen met Microsoft Intune](apps-deploy.md) en [App-toewijzingen opnemen en uitsluiten in Microsoft Intune](apps-inc-exl-assignments.md) voor meer informatie over het toewijzen van apps met Microsoft Intune. Zie [Apps toevoegen aan Microsoft Intune](apps-add.md) voor meer informatie over typen apps in Intune.
+Zie [App-toewijzingen opnemen en uitsluiten in Microsoft Intune](apps-inc-exl-assignments.md) voor meer informatie. Zie [Apps toevoegen aan Microsoft Intune](apps-add.md) voor meer informatie over typen apps in Intune.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-- Zie [Apps aan groepen toewijzen met Microsoft Intune](apps-deploy.md) voor meer informatie over het toewijzen van apps aan groepen.
-- Zie [Apps controleren](apps-monitor.md) voor meer informatie over het controleren van app-toewijzingen.
+- [Apps toewijzen aan groepen met Microsoft Intune](apps-deploy.md)
+- [Apps controleren](apps-monitor.md)

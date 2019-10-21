@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aafce5cefc26f4f86540a6858249e0bdd0af2328
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b1e72e16eba8bb29adc7360db9e923a15d144b6e
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723161"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350048"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Naleving voor Microsoft Defender ATP met voorwaardelijke toegang in Intune afdwingen  
 
@@ -135,7 +135,8 @@ Het nalevingsbeleid bepaalt het risiconiveau dat u voor een apparaat beschouwt a
 2. Selecteer **Apparaatconformiteit** > **Beleid** > **Beleid maken**.
 3. Voer een **Naam** en **Beschrijving** in.
 4. In **Platform** selecteert u **Windows 10 en hoger**.
-5. Stel in de instellingen voor **Microsoft Defender ATP** de optie **Vereisen dat het apparaat op of onder het apparaatdreigingsniveau moet zijn** in op het gewenste niveau. 
+5. Selecteer onder **Instellingen** de optie **Microsoft Defender ATP**.
+6. Stel **Vereisen dat het apparaat op of onder het apparaatdreigingsniveau moet zijn** in op het gewenste niveau. 
    
    De classificatie van bedreigingsniveaus wordt [bepaald door Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue).
 
@@ -145,7 +146,7 @@ Het nalevingsbeleid bepaalt het risiconiveau dat u voor een apparaat beschouwt a
    - **Hoog**: Dit niveau is het minst veilig en laat alle bedreigingsniveaus toe. Apparaten met een hoog, gemiddeld of laag bedreigingsniveau worden daarom beschouwd als conform.
 
 6. Selecteer **OK** en **Maken** om wijzigingen op te slaan (en het beleid aan te maken).  
-7. [Wijs het nalevingsbeleid voor apparaten toe](create-compliance-policy.md#assign-user-groups) aan de toepasselijke groepen.
+7. [Wijs het nalevingsbeleid voor apparaten toe](create-compliance-policy.md#assign-the-policy) aan de toepasselijke groepen.
 
 
 

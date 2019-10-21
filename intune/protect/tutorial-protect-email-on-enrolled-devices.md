@@ -1,5 +1,5 @@
 ---
-title: Zelfstudie - Exchange Online e-mail beschermen op Intune-beheerde apparaten
+title: 'Zelfstudie: Exchange Online e-mail beschermen op beheerde apparaten'
 titleSuffix: Microsoft Intune
 description: Meer informatie over hoe u Exchange Online kunt beveiligen met iOS Intune-nalevingsbeleid en Azure AD-voorwaardelijke toegang, door beheerde apparaten en de Outlook-app vereist te maken.
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2d6f14b4b3e1e981cce789664203b74523b2474
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c20c0c1543cd8fcbf7345a02295486aaaa6ddcea
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727932"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306864"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Zelfstudie: Exchange Online e-mail beschermen op beheerde apparaten
 Hier vindt u meer informatie over het gebruik van het nalevingsbeleid voor apparaten met voorwaardelijke toegang. Hiermee kunt u ervoor zorgen dat iOS-apparaten uitsluitend toegang tot Exchange Online e-mail hebben als ze door Intune worden beheerd en een goedgekeurde e-mailapplicatie gebruiken. 
@@ -95,7 +95,7 @@ Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaat
     2. Op het tabblad **Opnemen** selecteert u **Elk apparaat** en vervolgens **Voltooid**. 
     3. Selecteer opnieuw **Voltooid**.
    
-    ![De Office 365 Exchange Online-app selecteren](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
+    ![Neem alle apparaten op](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
 6. Onder **Toewijzingen** selecteert u **Voorwaarden** > **Client-apps**.
      
@@ -103,7 +103,7 @@ Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaat
     2. Voor deze zelfstudie selecteert u **Mobiele apps en bureaubladclients** en **Moderne verificatieclients** (dit verwijst naar apps zoals Outlook voor iOS en voor Android). Schakel alle andere selectievakjes uit.
     3. Selecteer **Voltooid** en vervolgens opnieuw **Voltooid**.
     
-    ![De Office 365 Exchange Online-app selecteren](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
+    ![Selecteer apps en clients](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
 7. Onder **Toegangscontroles** selecteert u **Verlenen**. 
      
@@ -113,11 +113,11 @@ Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaat
     4. Onder **Voor meerdere besturingselementen** selecteert u **Alle geselecteerde besturingselementen vereisen**. Deze instelling zorgt ervoor dat beide door u geselecteerde vereisten worden afgedwongen wanneer een apparaat toegang tot de e-mailfunctie probeert te krijgen.
     5. Kies **Selecteren**.
      
-    ![De Office 365 Exchange Online-app selecteren](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
+    ![Selecteer besturingselementen](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
 8. Onder **Beleid inschakelen** selecteert u **Aan**.
      
-    ![De Office 365 Exchange Online-app selecteren](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
+    ![Beleid inschakelen](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
 9. Selecteer **Maken**.
 

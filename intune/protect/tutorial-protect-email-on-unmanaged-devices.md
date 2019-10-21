@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7bb684e787a75900ca2157a04150a8fc6c4ba715
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7e0a01034bc35ddf8fd8eb1ede5fcf4c942dc735
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721263"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306801"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Zelfstudie: Exchange Online-e-mail beschermen op onbeheerde apparaten
 
@@ -113,7 +113,7 @@ U gaat nu twee beleidsregels voor voorwaardelijke toegang maken, om zo alle appa
    3. Schakel de andere selectievakjes uit.  
    4. Selecteer **Gereed** > **Gereed** om terug te keren naar het deelvenster Nieuw beleid.  
 
-   ![De Office 365 Exchange Online-app selecteren](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
+   ![Mobiele apps en clients selecteren](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
 
 7. Onder **Toegangscontroles** selecteert u **Verlenen**. 
      
@@ -123,11 +123,11 @@ U gaat nu twee beleidsregels voor voorwaardelijke toegang maken, om zo alle appa
    4. Onder **Voor meerdere besturingselementen** selecteert u **Alle geselecteerde besturingselementen vereisen**. Deze instelling zorgt ervoor dat beide door u geselecteerde vereisten worden afgedwongen wanneer een apparaat toegang tot de e-mailfunctie probeert te krijgen.
    5. Kies **Selecteren**.
      
-   ![De Office 365 Exchange Online-app selecteren](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
+   ![Besturingselementen selecteren](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
 
 7. Selecteer onder **Beleid inschakelen** de optie **Aan** en selecteer vervolgens **Maken**.  
      
-    ![De Office 365 Exchange Online-app selecteren](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
+    ![Beleid maken](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
 
 Het beleid voor voorwaardelijke toegang voor clients met moderne verificatie is gemaakt. U kunt nu een beleid maken voor Exchange ActiveSync-clients.
 
@@ -153,14 +153,14 @@ Het beleid voor voorwaardelijke toegang voor clients met moderne verificatie is 
    4. Schakel alle andere selectievakjes uit.  
    5. Selecteer **Voltooid** en vervolgens opnieuw **Voltooid**.  
     
-   ![De Office 365 Exchange Online-app selecteren](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
+   ![Toepassen op ondersteunde platforms](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
 
 7. Onder **Toegangscontroles** selecteert u **Verlenen**.  
    1. In het deelvenster **Verlenen** selecteert u **Toegang verlenen**.  
    2. Selecteer **Goedgekeurde client-app vereisen**. Schakel alle andere selectievakjes uit.  
    3. Kies **Selecteren**.  
      
-   ![De Office 365 Exchange Online-app selecteren](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
+   ![Goedgekeurde client-app vereisen](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
 
 8. Onder **Beleid inschakelen** selecteert u **Aan**.  
 

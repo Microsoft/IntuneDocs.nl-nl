@@ -1,11 +1,11 @@
 ---
-title: Wat is Microsoft Intune
+title: Wat is Microsoft Intune - Azure | Microsoft Docs
 description: Leer over Microsoft Intune als het MDM-onderdeel (beheer van mobiele apparaten) en MAM-onderdeel (beheer van mobiele apps) van de oplossing Enterprise Mobility + Security en hoe u hiermee bedrijfsgegevens kunt beschermen.
 keywords: wat is Intune
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 10/14/2019
 ms.topic: overview
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,138 +16,97 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0ba46314a7c44e8db89d11a2866c86375a4cdfd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 56c76663330cae5cb771358542fd22ff09398118
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726177"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314723"
 ---
-# <a name="what-is-microsoft-intune"></a>Wat is Microsoft Intune?
+# <a name="microsoft-intune-is-an-mdm-and-mam-provider-for-your-devices"></a>Microsoft Intune is een MDM- en MAM-provider voor uw apparaten
 
-Microsoft Intune is een clouddienst voor het beheren van bedrijfsmobiliteit (Enterprise Mobility Management, EMM) die uw werknemers in staat stelt om productief te zijn terwijl uw zakelijke gegevens veilig blijven. Net als andere Azure-services is Microsoft Intune beschikbaar in Azure Portal. Met Intune kunt u het volgende doen:
-
-- De mobiele apparaten en pc's beheren die door uw werknemers worden gebruikt voor toegang tot bedrijfsgegevens.
-- De mobiele apps beheren waarvan uw werknemers gebruikmaken.
-- Gegevens van uw bedrijf beschermen door te bepalen hoe uw werknemers toegang hebben tot de gegevens en deze delen.
-- Garanderen dat apparaten en apps compatibel zijn met de beveiligingsvereisten van het bedrijf.
-
-## <a name="common-business-problems-that-intune-helps-solve"></a>Algemene bedrijfsproblemen die Intune u helpt op te lossen
-
-- [Uw on-premises-e-mail en -gegevens beveiligen, zodat deze veilig kunnen worden geopend vanaf mobiele apparaten](common-scenarios.md#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
-- [Uw Office 365-e-mail en -gegevens beveiligen, zodat deze veilig kunnen worden geopend vanaf mobiele apparaten](common-scenarios.md#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
-- [Bedrijfstelefoons ter hand stellen aan uw medewerkers](common-scenarios.md#issue-corporate-owned-phones-to-your-employees)
-- [Een Bring Your Own Device-programma (BYOD) aan alle werknemers aanbieden](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
-- [Uw werknemers in staat stellen Office 365 veilig te gebruiken vanuit een niet-beheerde openbare kiosk](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
-- [Tablets voor beperkt gebruik verstrekken aan taakgerichte werknemers](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
-
-## <a name="how-does-intune-work"></a>Hoe werkt Intune?
-
-Intune is het onderdeel van Microsoft Enterprise Mobility + Security (EMS) dat mobiele apparaten en apps beheert. De oplossing is nauw geïntegreerd met andere EMS-onderdelen, zoals Azure Active Directory (Azure AD), voor identiteits- en toegangsbeheer en met Azure Information Protection voor gegevensbeveiliging. Als u de oplossing in combinatie met Office 365 gebruikt, kunt u uw medewerkers in staat stellen om productief te zijn op al hun apparaten terwijl de gegevens van uw organisatie beschermd blijven.
+Microsoft Intune is een cloudservice die is gericht op MDM (Mobile Device Management) en MAM (Mobile Application Management). Intune is opgenomen in de [EMS-suite (Enterprise Mobility en Security)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) van Microsoft, en biedt gebruikers de mogelijkheid om productief te zijn terwijl uw bedrijfsgegevens beschermd blijven. Het wordt geïntegreerd met andere services, waaronder Microsoft 365 en Azure AD (Active Directory) om te bepalen wie toegang heeft, en waartoe ze toegang hebben, en Azure Information Protection voor gegevensbescherming. Als u het gebruikt in combinatie met Microsoft 365, kunt u ervoor zorgen dat uw medewerkers productief werken op al hun apparaten terwijl de gegevens van uw organisatie beschermd blijven.
 
 ![Afbeelding van Intune-architectuur](./media/what-is-intune/intunearch_sm.png)
 
-Geef een [grotere versie](./media/intunearchitecture.svg) van het diagram van de Intune-architectuur weer.
+Geef een [grotere versie](./media/what-is-intune/intunearchitecture.svg) van het diagram van de Intune-architectuur weer.
 
-Hoe u de functies voor apparaat- en app-beheer in Intune en EMS-gegevensbescherming gebruikt, hangt af van het [bedrijfsprobleem dat u wilt oplossen](#common-business-problems-that-intune-helps-solve). Bijvoorbeeld:
-* U maakt volop gebruik van apparaatbeheer als u een groep van apparaten voor afzonderlijk gebruik maakt die worden gedeeld door winkelmedewerkers die elkaar in diensten afwisselen.
-* U vertrouwt op app-beheer en gegevensbescherming als u toestaat dat uw werknemers hun eigen apparaten gebruiken voor toegang tot bedrijfsgegevens (BYOD).  
-* Als u informatiemedewerkers bedrijfstelefoons ter hand stelt, zult u afhankelijk zijn van al deze technologieën.
+Met Intune kunt u het volgende doen:
 
-## <a name="intune-device-management-explained"></a>Apparaatbeheer in Intune uitgelegd
-Apparaatbeheer in Intune werkt met behulp van de protocollen of API's die beschikbaar zijn in de mobiele besturingssystemen. Het omvat taken zoals:
-* Apparaten inschrijven voor beheer, zodat uw IT-afdeling beschikt over een overzicht van de apparaten die toegang hebben tot bedrijfsservices
-* Apparaten configureren zodat ze voldoen aan de bedrijfsnormen voor beveiliging en gezondheid.
-* Certificaten en Wi-Fi-/VPN-profielen bieden voor toegang tot bedrijfsservices.
-* Rapportage over en beoordelen van apparaatcompatibiliteit ten opzichte van bedrijfsnormen.
-* Bedrijfsgegevens verwijderen van beheerde apparaten.  
+- Kiezen voor 100% werken in de cloud met Intune, of voor [co-beheer](https://docs.microsoft.com/sccm/comanage/overview) tussen Configuration Manager en Intune.
+- Regels instellen en instellingen configureren voor persoonlijke apparaten en apparaten die eigendom zijn van de organisatie, om toegang te krijgen tot gegevens en netwerken.
+- Apps implementeren en verifiëren op apparaten: on-premises en mobiel.
+- Uw bedrijfsgegevens beschermen door de manier te bepalen waarop gebruikers gegevens kunnen openen en delen.
+- Ervoor zorgen dat apparaten en apps voldoen aan de beveiligingsvereisten.
 
-Soms wordt gedacht dat **beheer van toegang tot bedrijfsgegevens** een functie binnen het apparaatbeheer is. Wij zien dat anders, omdat dit niet iets is dat door het mobiele besturingssysteem wordt geboden. Het is eerder iets waarin de identiteitsprovider voorziet. Bij ons is de identiteitsprovider Azure Active Directory (Azure AD) het beheersysteem voor identiteit en toegang van Microsoft.  
+## <a name="manage-devices"></a>Beheer apparaten
 
-Intune integreert met Azure AD om tal van scenario’s voor toegangsbeheer mogelijk te maken. U kunt bijvoorbeeld vereisen dat een mobiel apparaat voldoet aan bedrijfsnormen die u in Intune definieert voordat het apparaat toegang krijgt tot bedrijfsservices zoals Exchange. U kunt ook de bedrijfsservice vergrendelen voor een specifieke set mobiele apps. Zo kunt u Exchange Online bijvoorbeeld vergrendelen, zodat deze toepassing alleen toegankelijk is voor Outlook of Outlook Mobile.
+In Intune beheert u apparaten met behulp van de methode die het meest geschikt is voor u. Voor apparaten die eigendom zijn van de organisatie, wilt u mogelijk volledig beheer hebben op de apparaten, inclusief instellingen, functies en beveiliging. In deze methode worden apparaten en gebruikers van deze apparaten ingeschreven bij Intune. Nadat ze zijn ingeschreven, ontvangen ze uw regels en instellingen via beleid dat is geconfigureerd in Intune. U kunt bijvoorbeeld vereisten voor wachtwoorden en pincodes instellen, een VPN-verbinding maken, beveiliging tegen bedreigingen instellen, en meer.
 
-## <a name="intune-app-management-explained"></a>App-beheer in Intune uitgelegd
-Als we het over app-beheer hebben, bedoelen we:
-* Het toewijzen van mobiele apps aan medewerkers
-* Het configureren van apps met standaardinstellingen die worden gebruikt als de app wordt uitgevoerd
-* Beheren hoe bedrijfsgegevens worden gebruikt en gedeeld in mobiele apps
-* Bedrijfsgegevens verwijderen van mobiele apps   
-* Apps bijwerken
-* Rapportage over de inventaris van mobiele apps
-* Bijhouden van het gebruik van mobiele apps
+Voor persoonlijke apparaten, of BYOD-apparaten (Bring Your Own Devices), willen gebruikers mogelijk niet dat hun organisatiebeheerders volledig beheer krijgen. In deze methode kunt u gebruikers opties geven. Gebruikers kunnen hun apparaten bijvoorbeeld [inschrijven](../enrollment/device-enrollment.md) als ze volledige toegang tot uw organisatieresources willen. Of als deze gebruikers alleen toegang willen tot e-mail of Microsoft Teams, gebruikt u app-beveiligingsbeleid op basis waarvan MFA (Multi-Factor Authentication) is vereist om deze apps te gebruiken.
 
-Soms wordt de term beheer van mobiele apps (MAM) gebruikt om één van deze toepassingen afzonderlijk aan te duiden of om te verwijzen naar een specifieke combinatie ervan. Veelal wordt het concept van app-configuratie in verband gebracht met het concept van de beveiliging van bedrijfsgegevens binnen mobiele apps. Dat is omdat sommige mobiele apps instellingen doorgeven waarmee hun functies voor gegevensbescherming kunnen worden geconfigureerd.
+Als apparaten zijn ingeschreven en worden beheerd in Intune, kunnen beheerders het volgende doen:
 
-Wanneer we over app-configuratie en Intune spreken, verwijzen we specifiek naar technologieën zoals [beheerde app-configuratie in iOS](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html).
+- Zien welke apparaten zijn ingeschreven, en een inventaris krijgen van de apparaten die toegang hebben tot organisatieresources.
+- Apparaten configureren zodat ze voldoen aan uw beveiligings- en statusstandaarden. Zo wilt u waarschijnlijk bijvoorbeeld opengebroken apparaten blokkeren.
+- Certificaten naar apparaten pushen zodat gebruikers eenvoudig toegang kunnen krijgen tot uw Wi-Fi-netwerk, of een VPN gebruiken om verbinding te maken met het netwerk.
+- Rapporten bekijken over gebruikers en apparaten die voldoen en die niet voldoen aan het beleid.
+- Organisatiegegevens verwijderen als een apparaat is verloren of gestolen, of niet meer wordt gebruikt.
 
-Als u Intune gebruikt met andere services in EMS, kunt u uw organisatie veel meer beveiliging van mobiele apps bieden dan door het mobiele besturingssysteem en de configuratie van mobiele apps zelf wordt geleverd. Een app die wordt beheerd met EMS heeft toegang tot een uitgebreidere reeks functies voor de bescherming van mobiele apps en gegevens, met onder meer:
+**Onlineresources**:
 
-* [Eenmalige aanmelding](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-* [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
-* [Voorwaardelijke toegang tot apps: toegang toestaan als de mobiele app bedrijfsgegevens bevat](../protect/app-based-conditional-access-intune.md)
-* [Het isoleren van bedrijfsgegevens ten opzichte van persoonlijke gegevens binnen dezelfde app](../apps/app-protection-policy.md)
-* [App-beveiligingsbeleid (pincode, codering, opslaan als, klembord, enzovoort)](../apps/app-protection-policies.md)
-* [Bedrijfsgegevens wissen uit een mobiele app](../apps/apps-selective-wipe.md)
-* [Ondersteuning voor Rights Management-services](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
+- [Wat is apparaatinschrijving?](../enrollment/device-enrollment.md)
+
+- [Functies en instellingen toepassen op uw apparaten met behulp van apparaatprofielen](../configuration/device-profiles.md)
+
+- [Apparaten beveiligen met Microsoft Intune](../protect/device-protect.md)
+
+## <a name="manage-apps"></a>Apps beheren
+
+MAM (Mobile Application Management) in Intune is ontworpen om organisatiegegevens te beveiligen op toepassingsniveau, inclusief aangepaste apps en Store-apps. App-beheer kan worden gebruikt op persoonlijke apparaten en apparaten die eigendom zijn van de organisatie.
+
+Wanneer apps worden beheerd in Intune, kunnen beheerders het volgende doen:
+
+- Mobiele apps toevoegen en toewijzen aan gebruikersgroepen en apparaten, inclusief gebruikers in specifieke groepen, apparaten in specifieke groepen, en meer.
+- Apps configureren om te starten of te worden uitgevoerd met specifieke instellingen ingeschakeld, en bestaande apps op het apparaat bijwerken.
+- Rapporten bekijken over welke apps worden gebruikt, en hun gebruik bijhouden.
+- Selectief wissen door alleen organisatiegegevens te verwijderen uit apps.
+
+Een van de manieren waarop Intune beveiliging van mobiele apps biedt, is via **[app-beveiligingsbeleid](../apps/app-protection-policy.md)** . Onderdelen van app-beveiligingsbeleid:
+
+- Het maakt gebruik van Azure AD-identiteit om organisatiegegevens te isoleren van persoonlijke gegevens. Op deze manier worden persoonlijke gegevens geïsoleerd van de organisatie-IT. Gegevens die toegankelijk zijn via organisatiereferenties, zijn extra beveiligd.
+- Het helpt om de toegang via persoonlijke apparaten te beveiligen door te beperken welke acties gebruikers kunnen uitvoeren, zoals kopiëren en plakken, opslaan en weergeven.
+- Het kan worden gemaakt en geïmplementeerd op apparaten die zijn ingeschreven bij Intune, ingeschreven bij een andere MDM-service, of die niet zijn ingeschreven bij een MDM-service. Op ingeschreven apparaten kan beveiligingsbeleid voor apps een extra beveiligingslaag toevoegen.
+
+Bijvoorbeeld: een gebruiker meldt zich met behulp van de organisatiereferenties aan bij een apparaat. De organisatie-identiteit verleent toegang tot gegevens die op basis van een persoonlijke identiteit zouden worden geweigerd. Als deze organisatiegegevens worden gebruikt, bepaalt het app-beveiligingsbeleid hoe de gegevens worden opgeslagen en gedeeld. Wanneer gebruikers zich aanmelden met hun persoonlijke identiteit, worden deze beveiligingsmaatregelen niet toegepast. De IT-afdeling heeft zo het beheer over de organisatiegegevens, terwijl eindgebruikers het beheer houden over hun persoonlijke gegevens en de privacy hiervan.
+
+En u kunt Intune gebruiken met de andere services in EMS. Deze functie biedt uw organisatie beveiliging van mobiele apps die verder gaat dan de beveiliging die onderdeel uitmaakt van het besturingssysteem en eventuele apps. Apps die worden beheerd met EMS hebben toegang tot een uitgebreidere set functies voor de beveiliging van mobiele apps en gegevens.
 
 ![Installatiekopie waarin de niveaus van beheer van gegevensbeveiliging voor apps worden weergegeven](./media/what-is-intune/managing-mobile-apps.png)
 
-### <a name="intune-app-security"></a>App-beveiliging in Intune
-App-beveiliging is een onderdeel van app-beheer en wanneer we het in verband met Intune hebben over de beveiliging van mobiele apps, bedoelen we:
-* Persoonlijke gegevens geïsoleerd houden van bedrijfsgegevens en IT.
-* Beperken van de acties die gebruikers kunnen ondernemen met bedrijfsgegevens, zoals kopiëren, knippen en plakken, opslaan en weergeven.
-* Bedrijfsgegevens verwijderen uit mobiele apps, ook wel selectief wissen of zakelijk wissen genoemd.
+## <a name="compliance-and-conditional-access"></a>Naleving en voorwaardelijke toegang
 
-Een van de manieren waarop Intune beveiliging van mobiele apps biedt, is via de functie voor **app-beveiligingsbeleid**. App-beveiligingsbeleid maakt gebruik van Azure AD-identiteit om bedrijfsgegevens te isoleren van persoonlijke gegevens. Gegevens die toegankelijk zijn met behulp van zakelijke referenties, krijgen extra bedrijfsbeveiliging.
+Intune integreert met Azure AD om tal van scenario’s voor toegangsbeheer mogelijk te maken. Bijvoorbeeld, vereisen dat mobiele apparaten voldoen aan organisatiestandaarden die worden gedefinieerd in Intune vóórdat toegang kan worden verkregen tot netwerkresources, zoals e-mail of SharePoint. U kunt ook de services vergrendelen zodat ze alleen beschikbaar zijn voor een specifieke set mobiele apps. Zo kunt u Exchange Online bijvoorbeeld vergrendelen, zodat deze toepassing alleen toegankelijk is voor Outlook of Outlook Mobile.
 
-Als een gebruiker zich bijvoorbeeld op zijn apparaat aanmeldt met behulp van zijn zakelijke referenties, heeft hij via de bedrijfsidentiteit toegang tot gegevens die aan zijn persoonlijke identiteit worden geweigerd. Als die bedrijfsgegevens worden gebruikt, bepaalt het app-beveiligingsbeleid hoe ze worden opgeslagen en gedeeld. Dergelijke beveiligingen worden niet toegepast op gegevens waar gebruikers toegang toe krijgen als ze zich bij hun apparaat aanmelden met hun persoonlijke identiteit. De IT-afdeling heeft zo het beheer over de bedrijfsgegevens, terwijl de eindgebruikers het beheer houden over hun persoonlijke gegevens en de privacy daarvan.
+**Onlineresources**:
 
-## <a name="emm-with-and-without-device-enrollment"></a>EMM met en zonder apparaatinschrijving
-De meeste oplossingen voor het beheer van bedrijfsmobiliteit ondersteunen basistechnologieën voor mobiele apparaten en mobiele apps. Deze zijn meestal gekoppeld aan het apparaat dat wordt ingeschreven in de MDM-oplossing (beheer van mobiele apparaten) in uw organisatie. Intune biedt ondersteuning voor deze scenario's en ondersteunt daarnaast tal van 'zonder inschrijving'-scenario's.  
+- [Regels instellen op apparaten om toegang tot organisatieresources toe te staan](../protect/device-compliance-get-started.md)
 
-In verschillende organisaties worden verschillende 'zonder inschrijving'-scenario's gebruikt. Voor sommige organisaties is apparaatgebruik zonder inschrijving de norm. Andere organisaties staan dit soort scenario’s toe voor begeleidingsapparaten, zoals een persoonlijke tablet. Weer andere organisaties ondersteunen deze scenario’s helemaal niet. Zelfs in het laatste geval, als een organisatie vereist dat alle apparaten van werknemers worden ingeschreven in MDM, ondersteunen ze meestal 'zonder inschrijving'-scenario's voor uitzendkrachten en leveranciers, en voor andere apparaten waarvoor een specifieke uitzondering geldt.
+- [Gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken](../protect/conditional-access-intune-common-ways-use.md)
 
-U kunt de 'zonder inschrijving'-technologie van Intune zelfs gebruiken op ingeschreven apparaten. Een apparaat dat is ingeschreven in MDM kan bijvoorbeeld 'Open-in'-beveiliging hebben die wordt geleverd door het mobiele besturingssysteem. 'Open-in'-beveiliging is een iOS-functie van Apple waarmee u documenten uit bepaalde apps, zoals Outlook, niet kunt openen in andere apps, zoals Word, tenzij beide apps worden beheerd door dezelfde MDM-provider. Bovendien kan de IT-afdeling app-beveiligingsbeleid toepassen op met EMS beheerde mobiele apps om de opslaan als-bewerkingen te controleren of om meervoudige verificatie te bieden.
+## <a name="how-to-get-intune"></a>Intune verkrijgen
 
-Intune als onderdeel van EMS heeft hulpprogramma's waarmee uw medewerkers hun productiviteit kunnen verhogen terwijl uw bedrijfsgegevens beschermd blijven, ongeacht hoe uw organisatie omgaat met ingeschreven en niet-ingeschreven mobiele apparaten en apps.
+Intune is beschikbaar:
 
-## <a name="microsoft-intune-in-the-azure-portal"></a>Microsoft Intune in Azure Portal
+- Als een zelfstandige [Azure-service](https://go.microsoft.com/fwlink/?linkid=2090973)
+- Inbegrepen bij [Microsoft 365 ](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune) en [Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government)
+- Als [Mobile Device Management in Office 365 ](https://support.office.com/article/choose-between-mdm-for-office-365-and-microsoft-intune-c93d9ab9-efb2-4349-9b93-30c30562ee22), wat bestaat uit een beperkt aantal Intune-functies
 
-U vindt de Microsoft Intune-service in [Azure Portal](https://portal.azure.com).
-
-Belangrijke functies van de Microsoft Intune-ervaring in Azure Portal zijn onder andere:
-
-- Een geïntegreerde console voor al uw Enterprise Mobility + Security-onderdelen (EMS)
-- Een console op basis van HTML die is gebouwd op webstandaarden
-- Ondersteuning van Microsoft Graph API om veel acties te automatiseren
-- Azure Active Directory-groepen (AD) voor compatibiliteit voor al uw Azure-toepassingen
-- Ondersteuning voor de meeste moderne webbrowsers
-
-Zie [Aan de slag met Intune in Azure Portal](tutorial-walkthrough-intune-portal.md) voor een korte handleiding voor het aanpassen van uw portal-ervaring.
-
-> [!NOTE]
-> Als u een eerdere versie van Microsoft Intune hebt gebruikt, is de volgende informatie mogelijk nuttig voor u:
-> * In [Waar is de functie die ik zoek gebleven in Azure?](../ui-changes.md) kunt u nazoeken welke specifieke werkstromen en gebruiksinterfaces zijn veranderd bij de overgang naar Azure.
-> * In [Klassieke Intune-groepen in Azure Portal](groups-get-started.md) worden de gevolgen uitgelegd van de overstap naar Azure Active Directory-beveiligingsgroepen voor groepsbeheer.
-
-### <a name="before-you-start"></a>Voordat u begint
-
-U moet een Intune-beheerder- en tenant-account hebben voor het gebruik van Intune in de Azure Portal. [Meld u aan voor een account](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) als u er nog geen hebt.
-
-### <a name="supported-web-browsers-for-the-azure-portal"></a>Ondersteunde webbrowsers voor de Azure Portal
-
-Azure Portal is geschikt voor de meeste moderne pc's, Macs en tablets. Mobiele telefoons worden niet ondersteund.
-Momenteel worden de volgende webbrowsers ondersteund:
-
-- Microsoft Edge (meest recente versie)
-- Microsoft Internet Explorer 11
-- Safari (meest recente versie, alleen Mac)
-- Chrome (meest recente versie)
-- Firefox (meest recente versie)
-
-Controleer [Azure Portal](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices) voor de meest recente informatie over ondersteunde browsers.
+InTune wordt gebruikt in veel sectoren, waaronder [Government ](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description), [Education ](https://www.microsoft.com/en-us/education/intune), [Kiosk of toegewezen apparaat ](../configuration/kiosk-settings.md) voor productie en verkoop, en meer.
 
 ## <a name="next-steps"></a>Volgende stappen
-* Meer informatie over een aantal [algemene manieren om Intune te gebruiken](common-scenarios.md).
-* Vertrouwd raken met het product [met een 30-daagse evaluatieversie van Intune](free-trial-sign-up.md).
-* Duik in de [technische vereisten en mogelijkheden](supported-devices-browsers.md) van Intune.
+
+- Lees sommige [algemene bedrijfsproblemen die Intune u helpt op te lossen](https://docs.microsoft.com/intune/common-scenarios).
+- Begin met een [proefversie van 30 dagen](free-trial-sign-up.md).
+- Plan uw [migratie naar Intune](migration-guide.md).
+- Voer met behulp van uw gratis proefversie of abonnement de stappen uit in de [Quickstart: Een e-mailprofiel voor een apparaat voor iOS maken](../configuration/quickstart-email-profile.md) te volgen.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 344ffdfefd8b354c9d2ab31f2d08c2a25456f970
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724110"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237217"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Gebruikers- en apparaatprofielen toewijzen in Microsoft Intune
 
@@ -30,6 +30,9 @@ ms.locfileid: "71724110"
 U maakt een profiel en dit omvat alle instellingen die u hebt ingevoerd. De volgende stap is het implementeren of toewijzen van het profiel aan uw gebruikers- of apparaatgroepen in Azure AD (Active Directory). Wanneer het is toegewezen, ontvangen de gebruikers en apparaten uw profiel, en worden de ingevoerde instellingen toegewezen.
 
 In dit artikel ziet u hoe u een profiel kunt toewijzen, en krijgt u informatie over het gebruik van bereiktags in uw profielen.
+
+> [!NOTE]  
+> Wanneer beleid wordt verwijderd of niet meer is toegewezen aan een apparaat, behoudt de instelling mogelijk de bestaande waarde. De instelling wordt niet teruggezet naar een standaardwaarde. Als u de instelling wilt wijzigen in een andere waarde, maakt u nieuw beleid en wijst u dit toe.
 
 ## <a name="assign-a-device-profile"></a>Een apparaatprofiel toewijzen
 
