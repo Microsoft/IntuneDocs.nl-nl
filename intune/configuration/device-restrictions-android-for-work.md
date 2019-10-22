@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58eefffac670a12fc1d1a065534b4c1a4505426
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734944"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585388"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -67,7 +68,7 @@ In dit artikel vindt u een overzicht en beschrijving van de verschillende instel
 - **Systeemupdate**: kies een optie om te bepalen hoe het apparaat omgaat met draadloze updates:
   - **Standaardwaarde apparaat**: gebruik de standaardinstelling van het apparaat.
   - **Automatisch**: updates worden automatisch geïnstalleerd zonder interactie van de gebruiker. Wanneer u dit beleid instelt, worden alle eventuele updates die nog niet zijn uitgevoerd, meteen geïnstalleerd.
-  - **Uitgesteld**: updates worden gedurende 30 dagen uitgesteld. Na 30 dagen wordt de gebruiker door Android gevraagd om de update te installeren. Het is mogelijk dat apparaatfabrikanten of leveranciers het uitstellen van belangrijke beveiligingsupdates voorkomen (uitzonderen). Voor een uitzonderingsupdate wordt een systeembericht weergegeven op het apparaat. 
+  - **Uitgesteld**: updates worden gedurende 30 dagen uitgesteld. Na 30 dagen wordt de gebruiker door Android gevraagd om de update te installeren. Het is mogelijk dat apparaatfabrikanten of leveranciers het uitstellen van belangrijke beveiligingsupdates voorkomen (uitzonderen). Voor een uitzonderingsupdate wordt een systeembericht weergegeven op het apparaat.
   - **Onderhoudsperiode**: hiermee worden updates automatisch geïnstalleerd tijdens een dagelijkse onderhoudsperiode die u in Intune instelt. Er wordt gedurende 30 dagen geprobeerd om de updates te installeren. Dit kan mislukken als er te weinig ruimte of onvoldoende accuvermogen is. Na 30 dagen vraagt Android de gebruiker om te installeren. Deze periode wordt is ook gebruikt om updates voor Play-apps te installeren. Gebruik deze optie voor specifieke apparaten, zoals kiosken, omdat toegewezen apparaten mt maar één app op de voorgrond kunnen worden bijgewerkt.
 
 - **Meldingsvensters**: als de optie **Uitschakelen** is ingesteld, worden venstermeldingen, inclusief pop-ups, inkomende aanroepen, uitgaande aanroepen, systeemwaarschuwingen en systeemfouten niet weergegeven op het apparaat. Als de optie **Niet geconfigureerd** is ingesteld, wordt de standaardinstelling van het besturingssysteem gebruikt, die mogelijk bepaalt dat meldingen worden weergegeven.
@@ -98,8 +99,8 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
   > Voor toegewezen apparaten voor meerdere apps **moet** de [app Managed Home Screen](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) van Google Play zijn:
   >   - [Toegevoegd als een client-app](../apps/apps-add-android-for-work.md) in Intune
   >   - [Toegewezen aan de apparaatgroep](../apps/apps-deploy.md) die is gemaakt voor uw toegewezen apparaten
-  > 
-  > De app **Managed Home Screen** hoeft niet te zijn opgenomen in het configuratieprofiel, maar moet wel worden toegevoegd als een client-app. Wanneer de app **Managed Home Screen** wordt toegevoegd als een client-app, worden andere apps die u aan het configuratieprofiel toevoegt, weergegeven als pictogrammen in de app **Managed Home Screen**. 
+  >
+  > De app **Managed Home Screen** hoeft niet te zijn opgenomen in het configuratieprofiel, maar moet wel worden toegevoegd als een client-app. Wanneer de app **Managed Home Screen** wordt toegevoegd als een client-app, worden andere apps die u aan het configuratieprofiel toevoegt, weergegeven als pictogrammen in de app **Managed Home Screen**.
   >
   > Wanneer u de kiosk modus van meerdere apps gebruikt, werken de apps voor kiezer/telefoon mogelijk niet goed. 
 
@@ -157,7 +158,7 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
 
       Als u geen URL opgeeft, wordt de standaard installatie kopie van het apparaat gebruikt, als er een standaard installatie kopie is.
 
-    - **Het aantal seconden dat het apparaat scherm beveiliging bevat voordat het scherm wordt uitgeschakeld**: Kies hoe lang het apparaat de scherm beveiliging weergeeft. Voer een waarde tussen 0-9999999 seconden in. De standaard waarde is `0` seconden. Als dit veld leeg blijft, of op nul (@no__t 0) is ingesteld, is de scherm beveiliging actief totdat een gebruiker met het apparaat communiceert.
+    - **Het aantal seconden dat het apparaat scherm beveiliging bevat voordat het scherm wordt uitgeschakeld**: Kies hoe lang het apparaat de scherm beveiliging weergeeft. Voer een waarde tussen 0-9999999 seconden in. De standaard waarde is `0` seconden. Als u niets opgeeft of op nul (`0`) instelt, wordt de scherm beveiliging actief totdat een gebruiker met het apparaat communiceert.
     - **Aantal seconden dat het apparaat inactief is voordat scherm beveiliging wordt weer gegeven**: Kies hoe lang het apparaat inactief moet zijn voordat de scherm beveiliging wordt weer gegeven. Voer een waarde tussen 1-9999999 seconden in. De standaard waarde is `30` seconden. U moet een getal opgeven dat groter is dan nul (`0`).
     - **Media detecteren vóór start scherm beveiliging**: **inschakelen** (standaard) de scherm beveiliging wordt niet weer gegeven als audio of video wordt afgespeeld op het apparaat. **Niet geconfigureerd** toont de scherm beveiliging, zelfs als audio of video wordt afgespeeld.
 
@@ -241,7 +242,22 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
 
   Kies **Niet geconfigureerd** om toe te staan dat verkeer via de VPN-tunnel of via het mobiele netwerk gaat.
 
-## <a name="work-profile-only"></a>Alleen werkprofiel 
+- **Aanbevolen globale proxy**: Kies **inschakelen** om een algemene proxy toe te voegen aan de apparaten. Wanneer deze functie is ingeschakeld, wordt het HTTP-en HTTPS-verkeer, inclusief enkele apps op het apparaat, gebruikt voor de proxy die u invoert. Deze proxy is alleen een aanbeveling. Het is mogelijk dat sommige apps de proxy niet gebruiken. **Niet geconfigureerd** (standaard) voegt geen aanbevolen algemene proxy toe.
+
+  Zie [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (een Android-site openen) voor meer informatie over deze functie.
+
+  Wanneer deze functie is ingeschakeld, voert u ook het **type** proxy in. Uw opties zijn:
+
+  - **Direct**: Selecteer deze optie om de proxyserver gegevens hand matig in te voeren, waaronder:
+    - **Host**: Geef de hostnaam of het IP-adres van de proxy server op. Voer bijvoorbeeld `proxy.contoso.com` of `127.0.0.1` in.
+    - **Poortnummer**: voer het nummer van de TCP-poort in die wordt gebruikt door de proxyserver. Voer bijvoorbeeld `8080` in.
+    - **Uitgesloten hosts**: Voer een lijst in met hostnamen of IP-adressen die de proxy niet gebruiken. Deze lijst kan een asterisk (`*`) Joker teken bevatten en meerdere hosts gescheiden door punt komma's (`;`) zonder spaties. Voer bijvoorbeeld `127.0.0.1;web.contoso.com;*.microsoft.com` in.
+
+  - **Automatische proxy configuratie**: Voer de **Pac-URL** in voor een script voor automatische configuratie van de proxy. Voer bijvoorbeeld `https://proxy.contoso.com/proxy.pac` in.
+
+    Zie voor meer informatie over PAC-bestanden het [bestand voor automatische proxy-configuratie (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opent een niet-micro soft-site).
+
+## <a name="work-profile-only"></a>Alleen werkprofiel
 
 ### <a name="work-profile-settings"></a>Werkprofielinstellingen
 
@@ -249,9 +265,10 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
 
 - **Kopiëren en plakken tussen werkprofielen en persoonlijke profielen**: kies **Blokkeren** om kopiëren en plakken tussen zakelijke en persoonlijke apps te voorkomen. **Niet geconfigureerd**: staat gebruikers toe om gegevens met behulp van kopiëren en plakken te delen met apps in het persoonlijke profiel. 
 - **Gegevens delen tussen werkprofiel en persoonlijk profiel**: hiermee kunt u bepalen of apps in het werkprofiel gegevens mogen delen met apps in het persoonlijke profiel. Met deze instelling kunt u bijvoorbeeld deelacties binnen toepassingen bepalen, zoals de optie **Delen…** in de Chrome-browser-app. Deze instelling geldt niet voor kopiëren en plakken op het klembord. Uw opties voor delen:
-  - **Delen buiten grenzen toestaan**: dit is de standaardinstelling voor het delen van gegevens van het apparaat en deze is afhankelijk van de Android-versie. Delen van het persoonlijke profiel naar het werkprofiel is standaard toegestaan. Delen van het werkprofiel naar het persoonlijke profiel is standaard geblokkeerd. Met deze instelling wordt voorkomen dat er gegevens worden gedeeld van het werkprofiel met het persoonlijke profiel. Google blokkeert niet delen van het persoonlijke profiel naar het werkprofiel op apparaten met versie 6.0 of hoger.
+  - **Apparaatstandaard**: de standaardinstelling voor het delen van gegevens van het apparaat. Deze instelling is afhankelijk van de Android-versie. Delen van het persoonlijke profiel naar het werkprofiel is standaard toegestaan. Delen van het werkprofiel naar het persoonlijke profiel is standaard geblokkeerd. Met deze instelling wordt voorkomen dat er gegevens worden gedeeld van het werkprofiel met het persoonlijke profiel. Google blokkeert niet delen van het persoonlijke profiel naar het werkprofiel op apparaten met versie 6.0 of hoger.
   - **Met de apps in het werkprofiel kunnen aanvragen voor het delen van het persoonlijke profiel worden verwerkt**: hiermee kunt u de ingebouwde Android-functie inschakelen waarmee het delen van gegevens vanuit het persoonlijke profiel naar het werkprofiel is toegestaan. Wanneer dit is ingeschakeld, kan een deelverzoek van een app in het persoonlijke profiel worden gedeeld met apps in het werkprofiel. Dit is de standaardinstelling voor Android-apparaten met een oudere versie dan 6.0.
-  - **Standaardbeperkingen voor delen**: biedt de mogelijkheid om in beide richtingen buiten de grenzen van het werkprofiel te delen. Wanneer u deze instelling selecteert, kunnen apps met het werkprofiel gegevens delen met apps in het persoonlijke profiel die geen badge hebben. Met deze instelling kunnen beheerde apps in het werkprofiel gegevens delen met apps aan de onbeheerde zijde van het apparaat. Gebruik deze instelling daarom zorgvuldig.
+  - **Delen over grenzen voor komen**: Hiermee wordt voor komen dat het werk en het persoonlijke profiel worden gedeeld.
+  - **Geen beperkingen voor delen**: Hiermee wordt het delen van het werk profiel in beide richtingen verdeeld. Wanneer u deze instelling selecteert, kunnen apps met het werkprofiel gegevens delen met apps in het persoonlijke profiel die geen badge hebben. Met deze instelling kunnen beheerde apps in het werkprofiel gegevens delen met apps aan de onbeheerde zijde van het apparaat. Gebruik deze instelling daarom zorgvuldig.
 
 - **Werkprofielmeldingen terwijl het apparaat is vergrendeld**: hiermee kunt u bepalen of de apps in het werkprofiel gegevens in meldingen kunnen weergeven wanneer het apparaat is vergrendeld. **Blokkeren**: de gegevens worden niet weergegeven. **Niet geconfigureerd**: de gegevens worden weergegeven.
 - **Standaardapp-machtigingen**: hiermee stelt u het standaardmachtigingsbeleid in voor alle apps in het werkprofiel. Vanaf Android 6 wordt de gebruiker gevraagd bepaalde vereiste machtigingen aan apps toe te kennen wanneer de app wordt gestart. Met deze beleidsinstelling kunt u in het werkprofiel bepalen of gebruikers wordt gevraagd om machtigingen toe te kennen voor alle apps in het werkprofiel. U kunt bijvoorbeeld een app aan het werkprofiel toewijzen waarvoor toegang tot de locatie is vereist. Normaal gesproken wordt de gebruiker gevraagd of hij de app toegang tot de locatie wil geven. Gebruik dit beleid om automatisch machtigingen te verlenen zonder om bevestiging te vragen, automatisch machtigingen te weigeren zonder om bevestiging te vragen, of om de eindgebruiker te laten beslissen. U kunt kiezen uit:
@@ -325,6 +342,13 @@ Deze wachtwoordinstellingen zijn van toepassing op persoonlijke profielen op app
 
    > [!Note]
    > Deze instelling werkt alleen voor apparaten met Android O en later.
+
+- **Voor komen dat app-installaties van onbekende bronnen in het persoonlijke profiel**worden uitgevoerd: op basis van het ontwerp van Android Enter prise-werk profielen kunnen geen apps worden geïnstalleerd vanuit andere bronnen dan de Play Store. Op basis van de aard van het werk profiel zijn de volgende twee profielen bedoeld:
+
+  - Een werk profiel dat wordt beheerd met MDM.
+  - Een persoonlijk profiel dat is geïsoleerd van MDM-beheer.
+
+  Met deze instelling kunnen beheerders meer app-installaties beheren dan onbekende bronnen. **Niet geconfigureerd** (standaard) Hiermee staat u toe dat app-installaties afkomstig zijn van onbekende bronnen in het persoonlijke profiel. De **blok kering** voor komt dat app-installaties van andere bronnen dan de Play Store in het persoonlijke profiel.
 
 ### <a name="connectivity"></a>Connectiviteit
 

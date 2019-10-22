@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 09/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 675f98d952cb243b5aa43e94972b3ef42fbee463
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fb5fe19852ffff30566cb6758e156def3b7d64a5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734814"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72494022"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Met macOS-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -171,7 +172,7 @@ Als u apps wilt toevoegen aan deze lijsten, kunt u:
 
 ### <a name="settings-apply-to-device-enrollment"></a>Instellingen zijn van toepassing op: apparaatregistratie
 
-- **E-maildomein-URL**: voeg een of meer URL's toe aan de **** lijst. Wanneer gebruikers een e-mail ontvangen die afkomstig is van een ander domein dan het domein dat u hebt geconfigureerd, wordt de e-mail in de macOS-app Mail gemarkeerd als niet-vertrouwd.
+- **E-maildomein-URL**: **voeg** een of meer URL's toe aan de lijst. Wanneer gebruikers een e-mail ontvangen die afkomstig is van een ander domein dan het domein dat u hebt geconfigureerd, wordt de e-mail in de macOS-app Mail gemarkeerd als niet-vertrouwd.
 
 ## <a name="next-steps"></a>Volgende stappen
 

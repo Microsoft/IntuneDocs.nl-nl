@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230ee8c1206a4d091661b51dd239a4cb0b1a1963
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814041"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508841"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Problemen met Intune Exchange Connector oplossen
 
@@ -32,7 +33,7 @@ In dit artikel wordt beschreven hoe u problemen met betrekking tot de Intune Exc
 
 Voordat u begint met het oplossen van problemen met Exchange connector in intune, moet u enkele basis gegevens verzamelen, zodat u aan de slag gaat met een solide basis. Deze aanpak kan u helpen de aard van het probleem beter te begrijpen en het sneller te verhelpen.
 
-- Controleer of het proces voldoet aan de installatie vereisten. Zie [de on-premises intune Exchange connector instellen](exchange-connector-install.md).
+- Controleer of het proces voldoet aan de installatie vereisten. Zie [De on-premises Intune Exchange Connector instellen](exchange-connector-install.md).
 - Controleer of uw account zowel Exchange-als intune-beheerders machtigingen heeft.
 - Let op de tekst van het volledige en exacte fout bericht, Details en waar het bericht wordt weer gegeven.
 - Vaststellen wanneer het probleem is begonnen: 
@@ -44,7 +45,7 @@ Voordat u begint met het oplossen van problemen met Exchange connector in intune
 
 ### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>Powershell gebruiken om meer gegevens over problemen met de Exchange Connector te verkrijgen
 
-- Gebruik `Get-ActiveSyncDeviceStatistics -mailbox mbx` om een lijst met alle mobiele apparaten voor een postvak op te halen.
+- Gebruik `Get-ActiveSyncDeviceStatistics -mailbox mbx` om een lijst met alle mobiele apparaten voor een postvak op te halen
 - Gebruik `Get-Mailbox -Identity user | select emailaddresses | fl` om een lijst met SMTP-adressen voor een postvak op te halen
 - Gebruik `Get-CASMailbox <upn> | fl` om gedetailleerde informatie op te halen over de toegangsstatus van een apparaat
 

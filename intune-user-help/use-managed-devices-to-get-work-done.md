@@ -1,5 +1,5 @@
 ---
-title: Apparaatregistratie inschakelen | Microsoft Docs
+title: Wat is apparaatregistratie | Microsoft Docs
 description: Begrijp wat het betekent om uw apparaat in te schrijven met de Bedrijfsportal en Microsoft Intune app.
 keywords: ''
 author: lenewsad
@@ -9,6 +9,7 @@ ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98fd937ee379d71874f61152d88ddc94fa5b7a09
-ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
+ms.openlocfilehash: ca1776915d50858c28b43a49faa7c737c825c67d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012422"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501850"
 ---
 # <a name="what-is-device-enrollment"></a>Wat is apparaatinschrijving?
 Als u toegang wilt krijgen tot werk-of school resources van uw apparaat, moet u uw apparaat registreren bij de app voor Intune-bedrijfsportal of Microsoft Intune. 
@@ -43,11 +44,11 @@ Met de Bedrijfsportal en de Microsoft Intune-apps wordt u gewaarschuwd voor het 
 
 De Bedrijfsportal-app houdt uw persoonlijke en zakelijke gegevens gescheiden, zodat u productief en gefocust kunt blijven. Ook worden er werk-en school-apps beschikbaar gemaakt, zodat u deze kunt zoeken en installeren die relevant zijn voor uw werk.  
 
-### <a name="get-company-portal"></a>Ga als volgt te werk om de bedrijfsportal te downloaden:
+### <a name="get-company-portal"></a>Bedrijfsportal verkrijgen
 
 In sommige gevallen installeert uw organisatie de Bedrijfsportal-app op uw apparaat voor u. De app is ook beschikbaar voor installatie vanuit app stores, zoals de Microsoft Store, App Store en Google Play Store. Als u toegang wilt krijgen tot de app vanuit een webbrowser, meldt u zich aan bij de [bedrijfsportal website](https://go.microsoft.com/fwlink/?linkid=2010980) met uw werk-of school account.  
 
-### <a name="get-microsoft-intune-app"></a>Microsoft Intune App SDK
+### <a name="get-microsoft-intune-app"></a>Microsoft Intune-app verkrijgen
 
 Als u de app Microsoft Intune moet gebruiken, wordt deze door uw organisatie op uw apparaat geïnstalleerd.  
 
@@ -73,18 +74,18 @@ U kunt de volgende apparaten inschrijven met Bedrijfsportal:
 ## <a name="what-kind-of-devices-can-you-enroll-with-the-microsoft-intune-app"></a>Wat voor soort apparaten kunt u inschrijven met de Microsoft Intune-app?  
 U kunt Android-apparaten in bedrijfs eigendom inschrijven die uw organisatie heeft ingesteld voor gebruik met de app. De app ondersteunt Android 6,0 en hoger. 
 
-## <a name="can-you-remove-a-device-from-the-company-portal"></a>Een apparaat uit de bedrijfsportal verwijderen
+## <a name="can-you-remove-a-device-from-the-company-portal"></a>Kunt u een apparaat uit de bedrijfsportal verwijderen?
 U kunt een apparaat uit de Bedrijfsportal verwijderen of opnieuw instellen. Er is een verschil tussen **verwijderen** en **opnieuw instellen**.
 
 Tijdens het verwijderen van het apparaat wordt de Bedrijfsportal de registratie van het apparaat ongedaan gemaakt en wordt deze verwijderd. Dat apparaat heeft geen toegang meer tot de Bedrijfsportal. Werk-of school gegevens kunnen ook worden verwijderd. 
 
-Wanneer u een computer of een ander apparaat opnieuw instelt, probeert de bedrijfsportal uw computer of apparaat weer in de standaardinstellingen van de fabrikant te zetten. Alle werk-of school gegevens en alle persoonlijke gegevens worden verwijderd van het apparaat. Het opnieuw instellen is handig als u bijvoorbeeld uw apparaat kwijtraakt. U kunt deze op afstand opnieuw instellen vanaf de website van Bedrijfsportal.  
+Tijdens het opnieuw instellen van een apparaat, probeert de bedrijfsportal uw computer of apparaat weer in de standaardinstellingen van de fabrikant te zetten. Alle werk-of school gegevens en alle persoonlijke gegevens worden verwijderd van het apparaat. Het opnieuw instellen is handig als u bijvoorbeeld uw apparaat kwijtraakt. U kunt deze op afstand opnieuw instellen vanaf de website van Bedrijfsportal.  
 
 ## <a name="can-you-remove-a-device-from-the-microsoft-intune-app"></a>Kunt u een apparaat uit de Microsoft Intune-app verwijderen?
 Nee, er is geen manier om een apparaat in bedrijfs eigendom te verwijderen uit de app Microsoft Intune.  
 
 ## <a name="what-if-i-cant-see-my-device-in-the-company-portal-or-microsoft-intune-app"></a>Wat gebeurt er als ik mijn apparaat niet kan zien in de Bedrijfsportal-of Microsoft Intune-app?
-Als u een apparaat in Bedrijfsportal wilt zien, moet dit eerst worden inge schreven. Als na de inschrijving nog steeds niet al uw apparaten worden weer geven, kunt u proberen om de toegang te synchroniseren of door de Bedrijfsportal te controleren. Apparaten die eigendom zijn van en worden beheerd door uw bedrijf, zijn ook niet zichtbaar voor u.
+Als u een apparaat in Bedrijfsportal wilt zien, moet dit eerst worden inge schreven. Als na de inschrijving nog steeds niet al uw apparaten worden weer geven, kunt u proberen om de toegang te synchroniseren of door de Bedrijfsportal te controleren. Apparaten die eigendom zijn van en worden beheerd door uw bedrijf, zijn niet zichtbaar voor u.
 
 In de app Microsoft Intune ziet u alleen het apparaat dat u momenteel gebruikt. Andere geregistreerde apparaten zijn niet zichtbaar voor u in de app.  
 

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ae9637e827330fb33c407122450deb014b3725a
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816872"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506670"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Instellingen van apparaatfuncties voor macOS in Intune
 
@@ -67,11 +68,11 @@ Om AirPrinter-servers toe te voegen, hebt u het IP-adres van de printer, het bro
 
 4. Gebruik de waarden van het IP-adres en het bronpad. In dit voorbeeld is het IP-adres `10.50.25.21` en het bronpad `/ipp/port1`.
 
-## <a name="login-items"></a>Aanmeldings items
+## <a name="login-items"></a>Aanmeldingsitems
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvings typen
 
-- **Bestanden, mappen en aangepaste apps**: Voeg het pad **toe** van een bestand, map, aangepaste app of systeem-app die u wilt openen wanneer een gebruiker zich aanmeldt bij het apparaat. Systeem-apps of apps die zijn gebouwd of aangepast voor uw organisatie, bevinden zich doorgaans in de map `Applications`, met een pad dat lijkt op `/Applications/AppName.app`. 
+- **Bestanden, mappen en aangepaste apps**: Voeg het pad **toe** van een bestand, map, aangepaste app of systeem-app die u wilt openen wanneer een gebruiker zich aanmeldt bij het apparaat. Systeem-apps of apps die zijn gebouwd of aangepast voor uw organisatie, bevinden zich doorgaans in de map `Applications`, met een pad dat vergelijkbaar is met `/Applications/AppName.app`. 
 
   U kunt veel bestanden, mappen en apps toevoegen. Voer bijvoorbeeld het volgende in:  
   
@@ -176,7 +177,7 @@ Deze functie is van toepassing op:
 - **Minimale wachtwoord lengte** (alleen Kerberos): Geef het minimum aantal tekens op waaruit het wacht woord van een gebruiker kan bestaan. **Niet geconfigureerd** (standaard) dwingt geen minimale wachtwoord lengte af voor de gebruikers.
 - **Limiet voor het opnieuw gebruiken van wacht woorden** (alleen Kerberos): Voer het aantal nieuwe wacht woorden in, van 1-24, dat moet worden gebruikt totdat een vorig wacht woord opnieuw kan worden gebruikt in het domein. **Niet geconfigureerd** (standaard) dwingt de limiet voor het opnieuw instellen van wacht woorden niet af.
 - **Minimale wachtwoord duur** (alleen Kerberos): Geef het aantal dagen op dat een wacht woord moet worden gebruikt voor het domein voordat een gebruiker het kan wijzigen. **Niet geconfigureerd** (standaard) dwingt geen minimale leeftijd van wacht woorden af voordat deze kunnen worden gewijzigd.
-- **Melding over verlopen van wacht woord** (alleen Kerberos): Voer het aantal dagen in waarna een wacht woord verloopt dat gebruikers op de hoogte worden gesteld dat hun wacht woord verloopt. **Niet geconfigureerd** (standaard) maakt gebruik van `15` dagen.
+- **Melding over verlopen van wacht woord** (alleen Kerberos): Voer het aantal dagen in waarna een wacht woord verloopt dat gebruikers op de hoogte worden gesteld dat hun wacht woord verloopt. **Niet geconfigureerd** (standaard) gebruikt `15` dagen.
 - **Wachtwoord verloopt** (alleen Kerberos): voer het aantal dagen in waarna het wachtwoord voor het apparaat moet worden gewijzigd. **Niet geconfigureerd** (standaard) betekent dat gebruikers wachtwoorden nooit verlopen.
 - **Principal-naam** (alleen Kerberos): Voer de gebruikers naam van de Kerberos-principal in. U hoeft de realm-naam niet op te vermelden. In `user@contoso.com` is `user` bijvoorbeeld de principal-naam en is `contoso.com` de realm-naam.
 - **Active Directory site code** (alleen Kerberos): Voer de naam in van de Active Directory site die de Kerberos-uitbrei ding moet gebruiken. U hoeft deze waarde mogelijk niet te wijzigen, omdat de Kerberos-extensie de Active Directory site code mogelijk automatisch vindt.
@@ -200,7 +201,7 @@ Deze functie is van toepassing op:
 
 - **App-ID**: Voer de app-id in van de app die u wilt koppelen aan een website. De app-id bevat de team-ID en een bundel-ID: `TeamID.BundleID`.
 
-  De team-ID is een alfanumerieke teken reeks van 10 tekens (letters en cijfers) die door Apple wordt gegenereerd voor uw app-ontwikkel aars, zoals `ABCDE12345`. [Zoek uw team-ID](https://help.apple.com/developer-account/#/dev55c3c710c)  (opent de website van Apple) bevat meer informatie.
+  De team-ID is een alfanumerieke teken reeks van 10 tekens (letters en cijfers) die door Apple wordt gegenereerd voor uw app-ontwikkel aars, zoals `ABCDE12345`. [Zoek uw team-ID](https://help.apple.com/developer-account/#/dev55c3c710c)   (Open de website van Apple) voor meer informatie.
 
   De bundel-ID is een unieke identificatie van de app en wordt doorgaans ingedeeld in omgekeerde domeinnaam notatie. De bundel-ID van Finder is bijvoorbeeld `com.apple.finder`. Gebruik de Apple script in Terminal om de bundel-ID te vinden:
 
@@ -212,14 +213,14 @@ Deze functie is van toepassing op:
 
   Het Service type kan zijn:
 
-  - **authsrv**: app-extensie voor eenmalige aanmelding
+  - **authsrv** : app-extensie voor eenmalige aanmelding
   - **applink**: Universele koppeling
   - **Webreferenties**: wacht woord automatisch door voeren
 
 - **Toevoegen**: Selecteer deze optie om uw apps en gekoppelde domeinen toe te voegen.
 
 > [!TIP]
-> Als u problemen wilt oplossen, opent u **systeem voorkeuren** > **profielen**op uw macOS-apparaat. Bevestig dat het profiel dat u hebt gemaakt, zich in de lijst met apparaatprofielen bevindt. Als dit wordt vermeld, moet u ervoor zorgen dat de configuratie van de **gekoppelde domeinen** zich in het profiel bevindt en dat de juiste app-id en domeinen zijn opgenomen.
+> Als u problemen wilt oplossen, opent u **systeem voorkeuren**  > **profielen**op uw macOS-apparaat. Bevestig dat het profiel dat u hebt gemaakt, zich in de lijst met apparaatprofielen bevindt. Als dit wordt vermeld, moet u ervoor zorgen dat de configuratie van de **gekoppelde domeinen** zich in het profiel bevindt en dat de juiste app-id en domeinen zijn opgenomen.
 
 ## <a name="next-steps"></a>Volgende stappen
 

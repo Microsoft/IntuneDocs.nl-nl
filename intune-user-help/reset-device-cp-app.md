@@ -9,6 +9,7 @@ ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,16 +19,16 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5aff186d3850e8f9a6081168a5adc9956504019
-ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
+ms.openlocfilehash: 64612aa8a1d427284778a9aa43b966b05cb0a15f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71163342"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502110"
 ---
 # <a name="reset-device-from-the-company-portal-app"></a>Apparaat opnieuw instellen vanuit de Bedrijfsportal-app  
 
-Stel een gebruikt, verloren of gestolen apparaat opnieuw in op de fabrieks instellingen van de Bedrijfsportal-app.  
+De fabrieksinstellingen van een gebruikt, verloren of gestolen apparaat herstellen vanaf de bedrijfsportal.  
 
 Nadat u een apparaat opnieuw hebt ingesteld, wordt het niet meer weer gegeven in Bedrijfsportal. De bestaande apps en bestanden worden gewist en deze worden hersteld naar de out-of-Box-instellingen.  
 

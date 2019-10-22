@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/26/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcd86cedc7684f31483d7cd3c8294a76a9c306b2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734905"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584895"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Met instellingen voor iOS- en iPadOS-apparaten kunt u functies toestaan of beperken met behulp van Intune
 
@@ -140,13 +141,13 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatregistratie, automatische registratie van apparaten (onder Super visie)
 
 > [!IMPORTANT]
-> Als u een wacht woord instelt op apparaten die door gebruikers zijn Inge schreven, worden de instellingen voor **eenvoudige wacht woorden** automatisch ingesteld op **blok keren**en wordt een pincode van zes cijfers afgedwongen.
+> Als u op door de gebruiker ingeschreven apparaten een wachtwoordinstelling configureert, worden de instellingen voor **Eenvoudige wachtwoorden** automatisch ingesteld op **Blokkeren** en wordt een 6-cijferige pincode afgedwongen.
 >
-> U kunt bijvoorbeeld de instelling voor het verlopen van het **wacht woord** configureren en dit beleid pushen naar door de gebruiker Inge schreven apparaten. Op de apparaten gebeurt het volgende:
+> U kunt bijvoorbeeld de instelling **Wachtwoord verloopt** configureren en dit beleid pushen naar de door gebruikers ingeschreven apparaten. Op de apparaten gebeurt dan het volgende:
 >
-> - De instelling voor het verlopen van het **wacht woord** wordt genegeerd.
-> - Eenvoudige wacht woorden, zoals `1111` of `1234`, zijn niet toegestaan.
-> - Er wordt een pincode van zes cijfers afgedwongen.
+> - De instelling **Wachtwoord verloopt** wordt genegeerd.
+> - Eenvoudige wachtwoorden, zoals `1111` of `1234`, worden niet toegestaan.
+> - Er wordt een 6-cijferige pincode afgedwongen.
 
 - **Eenvoudige wachtwoorden**: kies **Blokkeren** om complexere wachtwoorden te vereisen. **Niet geconfigureerd**: staat eenvoudige wachtwoorden toe, zoals `0000` en `1234`.
 
@@ -267,6 +268,11 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
   Vanaf iOS 13,0 vereist deze instelling apparaten met een super visie.
 
+- **Toegang tot netwerk station in bestanden app**: met het SMB-protocol (Server Message Block) kunnen apparaten toegang krijgen tot bestanden of andere bronnen op een netwerk server. **Uitschakelen** voor komt dat toegang tot bestanden op een netwerk-SMB-station. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
+
+  Deze functie is van toepassing op:  
+  - iOS en iPadOS 13,0 en hoger
+
 ## <a name="built-in-apps"></a>Ingebouwde apps
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvings typen
@@ -377,7 +383,7 @@ Is van toepassing op apparaten met iOS 9,3 of hoger.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische registratie van apparaten (onder Super visie)
 
-- **Type lijst met apps**: een lijst met apps maken om weer te geven of te verbergen. Uw opties zijn:
+- **Type lijst met apps**: een lijst met apps maken om weer te geven of te verbergen. U kunt ingebouwde apps en line-of-Business-Apps weer geven of verbergen. De website van Apple bevat een lijst met [ingebouwde Apple-apps](https://support.apple.com/HT208094). Uw opties zijn:
 
   - **Verborgen apps**: voer een lijst met apps in die verborgen zijn voor gebruikers. Gebruikers kunnen deze apps niet weergeven of openen.
   - **Zichtbare apps**: voer een lijst met apps in die gebruikers kunnen weergeven en starten. Andere apps kunnen niet worden weergegeven of gestart.
@@ -386,7 +392,7 @@ Is van toepassing op apparaten met iOS 9,3 of hoger.
 
   - Voer `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` of `https://apps.apple.com/us/app/work-folders/id950878067?mt=8` in om de app Microsoft Werkmappen toe te voegen. 
 
-  - Als u de micro soft Word-app wilt toevoegen, voert u `https://itunes.apple.com/de/app/microsoft-word/id586447913` of `https://apps.apple.com/de/app/microsoft-word/id586447913` in.
+  - Als u de micro soft Word-app wilt toevoegen, voert u `https://itunes.apple.com/de/app/microsoft-word/id586447913` of `https://apps.apple.com/de/app/microsoft-word/id586447913`.
 
   Als u de URL van een app wilt vinden, opent u de iTunes App Store en gaat u naar de app. Zoek bijvoorbeeld naar `Microsoft Remote Desktop` of `Microsoft Word`. Selecteer de app en kopieer de URL.
 
@@ -432,7 +438,12 @@ Ga op een van de volgende manieren te werk om apps toe te voegen:
   - iOS 12.2 en hoger
 
 - **Toevoegen aan Wi-Fi-netwerken die alleen configuratieprofielen gebruiken**: **Vereisen** dwingt af dat het apparaat alleen Wi-Fi-netwerken gebruikt die zijn ingesteld via Intune-configuratieprofielen. **Niet geconfigureerd** (standaard): staat het apparaat toe andere Wi-Fi-netwerken te gebruiken.
-- **Wijziging van de Wi-Fi-status**: **niet geconfigureerd** (standaard) Hiermee kunnen gebruikers Wi-Fi op het apparaat inschakelen of uitschakelen. **Blok keren** dat Wi-Fi wordt in-of uitgeschakeld.
+- **Wi-Fi is altijd ingeschakeld**: wanneer de instelling **vereist**is, blijft Wi-Fi aanwezig in de instellingen-app. Het kan niet worden uitgeschakeld in instellingen of in het beheer centrum, zelfs wanneer het apparaat zich in de vliegtuig modus bevindt. **Niet geconfigureerd** (standaard) Hiermee staat u de gebruiker toe om in te scha kelen het in-of uitschakelen van Wi-Fi.
+
+  Als u deze instelling configureert, wordt niet voor komen dat gebruikers een Wi-Fi-netwerk selecteren.
+
+  Deze functie is van toepassing op:  
+  - iOS en iPadOS 13,0 en hoger
 
 ## <a name="connected-devices"></a>Verbonden apparaten
 
@@ -458,6 +469,11 @@ Ga op een van de volgende manieren te werk om apps toe te voegen:
 
   Deze functie is van toepassing op:  
   - iOS 11.0 en hoger
+
+- **Toegang tot bestanden op USB-station**: apparaten kunnen verbinding maken en bestanden openen op een USB-station. **Uitschakelen** Hiermee wordt voor komen dat het apparaat toegang heeft tot het USB-station in de app bestanden wanneer een USB-verbinding met het apparaat is gemaakt. Als u deze functie uitschakelt, kunnen eind gebruikers ook geen bestanden overbrengen naar een USB-station dat is verbonden met een iPad. **Niet geconfigureerd** (standaard) Hiermee wordt toegang tot een USB-station in de app bestanden toegestaan.
+
+  Deze functie is van toepassing op:  
+  - iOS en iPadOS 13,0 en hoger
 
 ## <a name="keyboard-and-dictionary"></a>Toetsenbord en woordenlijst
 
@@ -534,7 +550,7 @@ U kunt ook een CSV-bestand met de lijst met app-namen en de bijbehorende bundel-
 
   Deze instelling is van toepassing op:  
   - iOS 13.0 en hoger
-  - iPadOS 13,0 en hoger
+  - iPadOS 13.0 en hoger
   
   > [!TIP]
   > Als u beschikt over LOB-apps die beschikbaar zijn voor uw organisatie en u geen **spraak controle** hebt gemaakt op dag 0 wanneer IOS 13,0 wordt vrijgegeven, wordt u aangeraden deze instelling **niet geconfigureerd**te laten.
@@ -554,7 +570,7 @@ U kunt ook een CSV-bestand met de lijst met app-namen en de bijbehorende bundel-
 
   Deze instelling is van toepassing op:  
   - iOS 13.0 en hoger
-  - iPadOS 13,0 en hoger
+  - iPadOS 13.0 en hoger
 
 - **Besturingselement voor Voice-over**: wijzigingen in Voice-over **Toestaan**, zodat gebruikers de functie Voice-over kunnen bijwerken, bijvoorbeeld hoe snel schermtekst hardop wordt gelezen. **Niet geconfigureerd**: voorkomt wijzigingen in Voice-over.
 - **Besturingselement voor Inzoomen**: wijzigingen in Inzoomen door de gebruiker **Toestaan**. **Niet geconfigureerd**: voorkomt wijzigingen in Inzoomen.

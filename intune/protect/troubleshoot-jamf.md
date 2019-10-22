@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e92e3442e1347cb1a2cd1c737078912b74f075c9
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 44733eb369e520d2d5f0ff548d4f1921abcb8758
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817635"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503580"
 ---
 # <a name="troubleshoot-integration-of-jamf-pro-with-microsoft-intune"></a>Problemen met de integratie van Jamf Pro oplossen met Microsoft Intune
 
@@ -56,11 +57,11 @@ De volgende informatie kan u helpen bij het identificeren en oplossen van veelvo
 |-----------------|--------------------------|
 | **Apparaten zijn gemarkeerd als niet-reagerend in Jamf Pro**  | [Apparaten kunnen niet worden ingecheckt met Jamf Pro of met Azure AD](#devices-are-marked-as-unresponsive-in-jamf-pro) |
 | **Mac-apparaten vragen naar de sleutel hanger aanmelden wanneer u een app-apparaat opent, worden niet geregistreerd**  | [Gebruikers wordt gevraagd om hun wacht woord zodat apps zich kunnen registreren bij Azure AD](#mac-devices-prompt-for-keychain-sign-in-when-you-open-an-app). |
-| **Apparaten kunnen niet worden geregistreerd**  | De volgende oorzaken kunnen van toepassing zijn: <br> **-** [ ***Oorzaak 1*** : de Jamf Pro-app in azure heeft onjuiste machtigingen](#cause-1) <br> **-** [ ***oorzaak 2*** : er is een probleem met de *Jamf native macOS-connector* in azure AD](#cause-2) <br> **-** [ ***oorzaak 3*** : de gebruiker heeft geen geldige intune-of Jamf-licentie](#cause-3) <br> **-** [ ***oorzaak 4*** : de gebruiker heeft Jamf self service niet gebruikt om de bedrijfsportal-app te starten](#cause-4) <br> **-** [ ***oorzaak 5*** -integratie met intune is uitgeschakeld](#cause-5) <br> **-** [ ***oorzaak 6*** : het apparaat is eerder geregistreerd bij intune of de gebruiker heeft geprobeerd het apparaat meerdere keren te registreren](#cause-6) <br> **-** [ ***oorzaak 7*** -JamfAAD vraagt toegang tot een ' micro soft Workplace join-sleutel ' van de sleutel van de gebruiker](#cause-7) |
+| **Apparaten kunnen niet worden geregistreerd**  | De volgende oorzaken kunnen van toepassing zijn: <br> **-** [ ***Oorzaak 1*** : de Jamf Pro-app in azure heeft onjuiste machtigingen](#cause-1) <br> **-** [ ***oorzaak 2*** : er is een probleem met de *Jamf-systeem eigen macOS-connector* in azure AD](#cause-2) <br> **-** [ ***oorzaak 3*** : de gebruiker heeft geen geldige intune-of Jamf-licentie](#cause-3) <br> **-** [ ***oorzaak 4*** : de gebruiker heeft Jamf self service niet gebruikt om de bedrijfsportal-app te starten](#cause-4) <br> **-** [ ***oorzaak 5*** -integratie met intune is uitgeschakeld](#cause-5) <br> **-** [ ***oorzaak 6*** : het apparaat is eerder geregistreerd bij intune of de gebruiker heeft geprobeerd het apparaat meerdere keren te registreren](#cause-6) <br> **-** [ ***oorzaak dat 7*** -JamfAAD toegang tot een micro soft Workplace join-sleutel vraagt vanuit de sleutel keten van de gebruiker](#cause-7) |
 |  **Mac-apparaat geeft aan dat het compatibel is in intune, maar niet-compatibel in azure** | [Problemen met apparaatregistratie](#mac-device-shows-compliant-in-intune-but-noncompliant-in-azure) |
 | **Dubbele vermeldingen worden weer gegeven in de intune-console voor Mac-apparaten die zijn geregistreerd met Jamf** | [Meerdere registraties van hetzelfde apparaat](#duplicate-entries-appear-in-the-intune-console-for-mac-devices-enrolled-by-using-jamf) |
 | **Het apparaat kan niet worden geëvalueerd met het nalevings beleid** | [Beleid is bedoeld voor apparaatgroepen](#compliance-policy-fails-to-evaluate-the-device) |
-| **Kan het toegangs token voor de Microsoft Graph-API niet ophalen** | De volgende oorzaken kunnen van toepassing zijn: <br> -[machtigingen voor de Jamf Pro-app in azure](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure) <br> - -[licentie voor Jamf of intune is verlopen](#a-license-required-for-jamf-intune-integration-has-expired) <br> **-** [poorten zijn niet geopend](#the-required-ports-arent-open-on-your-network)|
+| **Kan het toegangs token voor de Microsoft Graph-API niet ophalen** | De volgende oorzaken kunnen van toepassing zijn: <br> -[machtigingen voor de Pro-app Jamf in azure](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure) <br> - [verlopen licentie voor Jamf of intune](#a-license-required-for-jamf-intune-integration-has-expired) <br> **-** [poorten niet zijn geopend](#the-required-ports-arent-open-on-your-network)|
  
 
 ### <a name="devices-are-marked-as-unresponsive-in-jamf-pro"></a>Apparaten zijn gemarkeerd als niet-reagerend in Jamf Pro  
@@ -145,7 +146,7 @@ Een apparaat kan alleen worden geregistreerd bij intune via Jamf als de gebruike
 
 Als u wilt bepalen welke service wordt gebruikt om het apparaat in te schrijven en te registreren, kijkt u in de Bedrijfsportal-app op het apparaat. Wanneer u bent geregistreerd via Jamf, ontvangt u een melding om de self-service app te openen en wijzigingen aan te brengen.
 
-De gebruiker kan in de Bedrijfsportal **-app `Not registered`** zien, en een vermelding die lijkt op het volgende voor beeld, kan worden weer gegeven in de bedrijfsportal logboeken:  
+De gebruiker kan in de Bedrijfsportal-app **`Not registered`** zien en een item dat lijkt op het volgende voor beeld, kan worden weer gegeven in de bedrijfsportal logboeken:  
 
 ```
    Line 7783: <DATE> <IP ADDRESS> INFO com.microsoft.ssp.application TID=1  
@@ -207,8 +208,8 @@ Als een apparaat niet is inge schreven bij Jamf, maar niet correct is verwijderd
    - /Library/Preferences/com.microsoft.CompanyPortal.plist
    - /Library/Preferences/com.jamfsoftware.selfservice.mac.plist
    - /Library/Preferences/com.jamfsoftware.management.jamfAAD.plist
-   - /Gebruikers/<username>/Library/cookies/com. micro soft. CompanyPortal. binarycookies
-   - /Gebruikers/<username>/Library/cookies/com. jamf. Management. jamfAAD. binarycookies
+   - /Gebruikers/<username>/Library/Cookies/com.microsoft.CompanyPortal.binarycookies
+   - /Gebruikers/<username>/Library/Cookies/com.jamf.management.jamfAAD.binarycookies
    - com. micro soft. CompanyPortal
    - com. micro soft. CompanyPortal. HockeySDK
    - enterpriseregistration.windows.net
@@ -273,7 +274,7 @@ U kunt dit probleem oplossen door de oplossing te volgen voor [*oorzaak 6*](#cau
 
 ### <a name="compliance-policy-fails-to-evaluate-the-device"></a>Het apparaat kan niet worden geëvalueerd met het nalevings beleid  
 
-**Oorzaak**: Jamf-integratie met intune biedt geen ondersteuning voor nalevings beleid dat is gericht op apparaatgroepen. 
+**Oorzaak**: Jamf-integratie met Intune ondersteunt geen nalevingsbeleid voor apparaatgroepen. 
 
 **Oplossing**  
 Wijzig het nalevings beleid voor macOS-apparaten die moeten worden toegewezen aan gebruikers groepen. 
@@ -293,7 +294,7 @@ De bron van deze fout kan een van de volgende oorzaken hebben:
 
 Tijdens het registreren van de Jamf Pro-app in Azure is een van de volgende voor waarden van toepassing:  
 - De app heeft meer dan één machtiging ontvangen.
-- De **instemmings beheerder toestemming geven voor *\<optie bedrijf 2your>***  is niet geselecteerd.  
+- De **uitstemmings beheerder toestemming geven voor *\<your bedrijfs >***  optie is niet geselecteerd.  
 
 **Oplossing**  
 Zie de oplossing voor oorzaak 1 voor [apparaten die niet kunnen worden geregistreerd](#devices-fail-to-register), eerder in dit artikel.

@@ -8,17 +8,18 @@ manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d999603abc539fda4d152d15dd1ab965c465f39e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736296"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585244"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Gebruik auditlogboeken om gebeurtenissen in Microsoft Intune te volgen en te controleren
 
@@ -49,7 +50,8 @@ Auditlogboeken en operationele logboeken kunnen ook naar Azure Monitor worden ge
 
 ![Logboekgegevens exporteren naar Azure Monitor door Gegevensinstellingen exporteren in Intune te selecteren](./media/monitor-audit-logs/audit-logs-export-data-settings.png)
 
-Voor meer informatie over deze functie raadpleegt u [Logboekgegevens verzenden naar Storage, Event Hubs of Log Analytics in Intune](review-logs-using-azure-monitor.md).
+> [!NOTE]
+> Zie [logboek gegevens naar opslag, Event hubs of log Analytics verzenden](review-logs-using-azure-monitor.md)voor meer informatie over deze functie en voor het controleren van de vereisten voor het gebruik ervan.
 
 ## <a name="review-audit-events"></a>Auditgebeurtenissen bekijken
 
@@ -67,11 +69,11 @@ Een auditlogboek heeft een standaardlijstweergave waarin de volgende items worde
 
 Selecteer een item in de lijst als u meer informatie over een gebeurtenis wilt bekijken:
 
-![Meer gedetailleerde informatie krijgen over wie wat deed in auditlogboeken in Intune](./media/monitor-audit-logs/monitor-audit-log-detail.png "Details van auditlogboeken")
+![Meer gedetailleerde informatie krijgen over wie wat deed in auditlogboeken in Intune](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
 
 > [!NOTE]
 > **Gestart door (actor)** bevat informatie over wie de taak heeft uitgevoerd en waar deze is uitgevoerd. Als u de activiteit bijvoorbeeld in Intune in de Azure-portal uitvoert, vermeldt **Toepassing** altijd **Uitbreiding voor Microsoft Intune-portal** en maakt de **Toepassings-id** altijd gebruik van dezelfde GUID.
-> 
+>
 > In de sectie **Doel(en)** worden mogelijk meerdere doelen vermeld, samen met de eigenschappen die zijn gewijzigd.  
 
 ## <a name="filter-audit-events"></a>Auditgebeurtenissen filteren
