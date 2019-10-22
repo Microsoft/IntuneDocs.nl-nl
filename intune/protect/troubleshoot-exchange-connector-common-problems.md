@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14da6274546cbd4c1867975c08c60ece313714b1
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: e9542212e1b75d97c96c024eed20e20e610e2b5d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71917991"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503645"
 ---
 # <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>Veelvoorkomende problemen met de intune Exchange connector oplossen
  
@@ -55,7 +56,7 @@ Een gebruiker ontvangt mogelijk geen e-mail bericht met de melding omdat:
 Bekijk de volgende secties om problemen met e-mail meldingen op te lossen.
 
 ### <a name="check-the-notification-account-that-retrieves-autodiscover-settings"></a>Controleer het account voor meldingen dat instellingen voor automatische detectie ophaalt
-1. Zorg ervoor dat de service autodis cover en EWS zijn geconfigureerd op de Exchange-services voor client toegang. Zie voor meer informatie [Services voor client toegang](https://docs.microsoft.com/Exchange/architecture/client-access/client-access) en de [service autodis cover in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019).
+1. Zorg ervoor dat de Autodiscover-service en EWS zijn geconfigureerd op de Exchange Client Access-services. Zie voor meer informatie [Services voor client toegang](https://docs.microsoft.com/Exchange/architecture/client-access/client-access) en de [service autodis cover in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019).
 
 
 2. Controleer of uw meldings account aan de volgende vereisten voldoet:
@@ -69,10 +70,10 @@ Bekijk de volgende secties om problemen met e-mail meldingen op te lossen.
    1. Voer bij een opdracht prompt *nslookup*in.  
 
    2. Voer *Autodiscover.SMTPdomain.com*in. De uitvoer moet er ongeveer uitzien als de volgende afbeelding:  
-      ![Nslookup resultaten](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
+      ![Nslookup resultaten ](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
 )
 
-   U kunt ook de service autodis cover van Internet op https://testconnectivity.microsoft.com testen. U kunt het ook testen vanuit een lokaal domein met behulp van het hulp programma micro soft Connectivity Analyzer. Zie het [hulp programma micro soft Connectivity Analyzer](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80))voor meer informatie. Als dat nodig is, kunt u [het hulp programma micro soft Connectivity Analyzer downloaden](http://go.microsoft.com/fwlink/?LinkID=313782).
+   U kunt ook de service autodis cover van Internet op https://testconnectivity.microsoft.com testen. U kunt het ook testen vanuit een lokaal domein met behulp van het hulp programma micro soft Connectivity Analyzer. Zie het [hulp programma micro soft Connectivity Analyzer](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80))voor meer informatie. Als dat nodig is, kunt u [het hulp programma micro soft Connectivity Analyzer downloaden](https://go.microsoft.com/fwlink/?LinkID=313782).
 
 
 ### <a name="check-autodiscovery"></a>Automatische detectie controleren  
@@ -82,7 +83,7 @@ Als automatische detectie mislukt, voert u de volgende stappen uit:
 
 2. Harde code de EWS-URL in het configuratie bestand van de intune Exchange connector:
 
-   1. Bepaal de EWS-URL. De standaard EWS-URL voor Exchange is `https://<mailServerFQDN>/ews/exchange.asmx`, maar uw URL kan verschillen. Neem contact op met de Exchange-beheerder om de juiste URL voor uw omgeving te controleren.
+   1. Bepaal de EWS-URL. De standaard EWS-URL voor Exchange is `https://<mailServerFQDN>/ews/exchange.asmx`, maar uw URL kan anders zijn. Neem contact op met de Exchange-beheerder om de juiste URL voor uw omgeving te controleren.
 
    2. Bewerk het bestand *OnPremisesExchangeConnectorServiceConfiguration.xml*. Het bestand bevindt zich standaard in *%ProgramData%\Microsoft\Windows intune Exchange connector* op de computer waarop de Exchange-connector wordt uitgevoerd. Open het bestand in een tekst editor en wijzig vervolgens de volgende regel zodat de EWS-URL voor uw omgeving wordt weer gegeven: `<ExchangeWebServiceURL>https://<YourExchangeHOST>/EWS/Exchange.asmx</ExchangeWebServiceURL>`
     
