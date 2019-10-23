@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa4157d82ae63336503a9348851ad75f3b8243f9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 00743e020fc9d42970dca5efa130908a53c6c5bf
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722693"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504585"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Wat zijn gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken?
 
@@ -41,7 +42,7 @@ Intune en Azure Active Directory werken samen om ervoor te zorgen dat alleen beh
 
 Met Intune beschikt u over mogelijkheden voor apparaatnalevingsbeleid waarmee u de nalevingsstatus van het apparaat kunt evalueren. De nalevingsstatus wordt gerapporteerd aan Azure Active Directory om het voorwaardelijke toegangsbeleid af te dwingen dat in Azure Active Directory wordt gemaakt wanneer de gebruiker zich toegang tot uw bedrijfsresources probeert te verschaffen.
 
-De op apparaten gebaseerde beleidsregels voor voorwaardelijke toegang voor Exchange Online en andere Office 365-producten geconfigureerd via [Azure Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).  
+De op apparaten gebaseerde beleidsregels voor voorwaardelijke toegang voor Exchange Online en andere Office 365-producten geconfigureerd via de [Azure-portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).  
 
 - Meer informatie over [het vereisen van beheerde apparaten met voorwaardelijke toegang in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/require-managed-devices).
 
@@ -58,7 +59,7 @@ De op apparaten gebaseerde beleidsregels voor voorwaardelijke toegang voor Excha
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Voorwaardelijke toegang op basis van netwerktoegangsbeheer
 
-Intune kan worden geïntegreerd met partners als Cisco ISE, Aruba Clear Pass en Citrix NetScaler voor toegangsbeheer op basis van de Intune-registratie en de nalevingsstatus van het apparaat.
+Intune kan worden geïntegreerd met partners als Cisco ISE, Aruba Clear Pass en Citrix NetScaler voor toegangsbeheer op basis van de Intune-inschrijving en de nalevingsstatus van het apparaat.
 
 Gebruikers kan toegang tot het Wi-Fi-netwerk of de VPN-resources worden verleend of geweigerd door te controleren of het apparaat dat ze gebruiken, wordt beheerd met en voldoet aan het Intune-nalevingsbeleid voor apparaten.
 

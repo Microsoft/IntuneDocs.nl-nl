@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3e459e4e22c7985e2e68e624c413ce967e1a8ba
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ce9a6916cc77714a87aeac33555c0be1e59463f5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723850"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506640"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Een Telecom Expense Management-service instellen in Intune
 
@@ -30,7 +31,7 @@ ms.locfileid: "71723850"
 
 Met Intune kunt u telecommunicatiekosten beheren van gegevensgebruik op mobiele apparaten die eigendom zijn van de organisatie. Intune kan worden geïntegreerd met [Datalert Telecom Expense Management](http://datalert.biz/get-started) van Saaswedo. Datalert is een realtime Telecom Expense Management-oplossing waarmee u telecomgegevensgebruik kunt beheren. Zo kunt u dure en onverwachte gegevens- en roaming-kosten voor uw door Intune beheerde apparaten voorkomen.
 
-Door de integratie met Datalert kunt u limieten instellen, controleren en afdwingen voor roaming en binnenlands gegevensgebruik. Wanneer de limieten de gedefinieerde drempelwaarden overschrijden, worden er automatisch waarschuwingen gegeven. U kunt de service ook configureren om verschillende acties, zoals het uitschakelen van roaming of overschrijden van de drempelwaarde, op personen of groepen toe te passen. In de Datalert-beheerconsole zijn rapporten over het gegevensgebruik en met controlegegevens beschikbaar.
+Door de integratie met Datalert kunt u limieten instellen, controleren en afdwingen voor roaming en binnenlands gegevensgebruik. Wanneer de limieten de gedefinieerde drempelwaarden overschrijden, worden er automatisch waarschuwingen gegeven. U kunt de service ook configureren om verschillende acties, zoals het uitschakelen van roaming of overschrijden van de drempelwaarde, op personen of groepen toe te passen. In de Datalert-beheerconsole zijn rapporten over het gegevensgebruik en rapporten met controlegegevens beschikbaar.
 
 De volgende afbeelding laat zien hoe Intune is geïntegreerd met Datalert:
 
@@ -110,7 +111,7 @@ Nadat u stap 1 hebt voltooid, wordt de verbinding automatisch ingeschakeld. In I
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
-2. Selecteer **Apparaatconfiguratie** > **Telecom Expense Management**. Zoek naar de verbindingsstatus **Actief**.
+2. Selecteer **Apparaatconfiguratie** > **Telecom Expense Management**. Zoek naar de verbindingsstatus **Actief**:
 
    ![Intune-pagina met Datalert-verbindingsstatus Actief](./media/telecom-expenses-monitor/tem-azure-portal-enable-service.png)
 
@@ -129,7 +130,7 @@ Afhankelijk van de behoeften van uw organisatie maakt u ten minste twee categori
 
 Zie [Apparaten toewijzen aan groepen](../enrollment/device-group-mapping.md) voor instructies over het maken van apparaatcategorieën in Intune.
 
-Deze categorieën worden weergegeven aan gebruikers tijdens de inschrijving ([Android-apparaten inschrijven](../enrollment/android-enroll.md)). Afhankelijk van welke categorie de gebruiker kiest, wordt het geregistreerde apparaat verplaatst naar de overeenkomstige apparaatgroep.
+Deze categorieën worden weergegeven aan gebruikers tijdens de inschrijving ([Android-apparaten inschrijven](../enrollment/android-enroll.md)). Afhankelijk van welke categorie de gebruiker kiest, wordt het ingeschreven apparaat verplaatst naar de overeenkomstige apparaatgroep.
 
   ![Schermafbeelding van het deelvenster Een beleid toevoegen](./media/telecom-expenses-monitor/tem-dynamic-membership-rules.png)
 

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83328652c366eea6e1a3cbb81ea4979d8844a96b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 54d7ccabf958c3b8532f1a115724559607783a57
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724188"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72495232"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Instellingen van apparaatfuncties voor iOS of macOS toevoegen in Intune
 
@@ -77,7 +78,7 @@ Hiermee kunt u een relatie maken tussen uw apps en uw domeinen, zoals `contoso.c
 
 Zie [Gekoppelde domeinen op macOS](macos-device-features-settings.md#associated-domains) voor een lijst met instellingen die u kunt configureren in Intune.
 
-Zie [Setting Up an App’s Associated Domains](https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains) op de website van Apple voor meer informatie over deze functie.
+Zie [Setting Up an App’s Associated Domains](https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains) (gekoppelde domeinen van een app instellen) op de website van Apple voor meer informatie over deze functie.
 
 Van toepassing op:
 
@@ -154,7 +155,7 @@ Met deze instellingen configureert u een app-extensie die eenmalige aanmelding (
 
 Gebruik deze instellingen in Intune voor het configureren van de ingebouwde Kerberos-extensie van Apple of een SSO-app-extensie die is gemaakt door uw organisatie. Met de SSO-app-extensie wordt de verificatie voor uw gebruikers afgehandeld. Met deze instellingen configureert u SSO-app-extensies voor referentietypen, die zijn ontworpen voor verificatiestromen met vraag en antwoord. U kunt kiezen tussen een Kerberos-referentie-extensie van Apple en een algemene referentie-extensie.
 
-Zie [SSO-app-extensie voor iOS](ios-device-features-settings.md#single-sign-on-app-extension) en [SSO-app-extensie voor macOS](macos-device-features-settings.md#single-sign-on-app-extension) voor een lijst met instellingen die u kunt configureren in Intune
+Zie [SSO-app-extensie voor iOS](ios-device-features-settings.md#single-sign-on-app-extension) en [SSO-app-extensie voor macOS](macos-device-features-settings.md#single-sign-on-app-extension) voor een lijst met instellingen die u kunt configureren in Intune.
 
 Bekijk [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) op de website van Apple voor meer informatie over het ontwikkelen van een SSO-app-extensie.
 

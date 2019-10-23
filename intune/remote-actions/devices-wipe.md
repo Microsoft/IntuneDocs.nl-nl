@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f81dcf6a3553b4ff08ec6c2dbffda24bc7946b73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: dbcc50d275a3d3e6a613640e96b363ce7608da81
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728400"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508564"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Apparaten verwijderen via wissen of buiten gebruik stellen, of de registratie van het apparaat handmatig ongedaan maken
 
@@ -42,7 +43,7 @@ Met de actie **Wissen** herstelt u de fabrieksinstellingen van het apparaat. De 
 
 
 > [!NOTE]
-> De actie Wissen is niet beschikbaar voor iOS-apparaten die zijn ingeschreven met Gebruikersregistratie.
+> De actie Wissen is niet beschikbaar voor iOS-apparaten die zijn ingeschreven met Gebruikersinschrijving.
 
 De optie **Inschrijvingsstatus en gebruikersaccount behouden** is alleen beschikbaar voor Windows 10 versie 1709 en hoger.
 
@@ -75,7 +76,7 @@ Als het apparaat is ingeschakeld en is verbonden, wordt de actie **Wissen** in m
 
 ## <a name="retire"></a>Buiten gebruik stellen
 
-Met de actie **Buiten gebruik stellen** worden gegevens (indien van toepassing), instellingen en e-mailprofielen van beheerde apps verwijderd die via Intune zijn toegewezen. Het apparaat wordt uit Intune-beheer verwijderd. Dit gebeurt wanneer het apparaat de volgende keer wordt ingecheckt en de actie **Buiten gebruik stellen** ontvangt. Het apparaat wordt nog steeds weergegeven in Intune, totdat het apparaat wordt ingecheckt. Als u verouderde apparaten onmiddellijk wilt verwijderen, gebruikt u in plaats daarvan de [Verwijderingsactie](devices-wipe.md#delete-devices-from-the-intune-portal).
+Met de actie **Buiten gebruik stellen** worden gegevens (indien van toepassing), instellingen en e-mailprofielen van beheerde apps verwijderd die via Intune zijn toegewezen. Het apparaat wordt uit Intune-beheer verwijderd. Dit gebeurt wanneer het apparaat de volgende keer wordt ingecheckt en de actie **Buiten gebruik stellen** ontvangt. Het apparaat wordt nog steeds weergegeven in Intune, totdat het apparaat wordt ingecheckt. Als u verouderde apparaten onmiddellijk wilt verwijderen, gebruikt u in plaats daarvan de [actie Verwijderen](devices-wipe.md#delete-devices-from-the-intune-portal).
 
 Bij de actie **Buiten gebruik stellen** blijven de persoonlijke gegevens van de gebruiker op het apparaat behouden.  
 

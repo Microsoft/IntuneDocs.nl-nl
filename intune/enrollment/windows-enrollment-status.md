@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bc472a8b15746a46b5e0cda3a8fe11db7aa4974
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722303"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503037"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Een pagina Status van de inschrijving instellen
  
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
  
-Op de pagina Status van de inschrijving wordt installatie-informatie weergegeven over Windows 10-apparaten (versie 1803 en later) tijdens de eerste apparaatinschrijving. Bijvoorbeeld:
+Op de pagina Status van de inschrijving vindt u de installatie-informatie over Windows 10-apparaten (versie 1803 en later) tijdens de eerste apparaatinschrijving. Bijvoorbeeld:
 - bij het gebruik van [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/) 
 - of telkens wanneer een beheerd apparaat de eerste keer wordt gestart nadat een beleid voor de pagina Status van de inschrijving is toegepast. 
 
@@ -131,7 +132,7 @@ Voor de installatie van het account worden op de pagina Status van de inschrijvi
 - Toepassingen
   - LOB (Line-of-Business) MSI-apps per gebruiker die worden toegewezen aan alle apparaten, aan alle gebruikers of aan een gebruikersgroep waarvan de gebruiker die het apparaat inschrijft, lid is.
   - LOB (Line-of-Business) MSI-apps per apparaat die worden toegewezen aan alle gebruikers of aan een gebruikersgroep waarvan de gebruiker die het apparaat inschrijft, lid is.
-  - LOB (Line-of-Business) store-apps, online store-apps en offline store-apps die aan een van de volgende objecten zijn toegewezen:
+  - LOB Store-apps, online Store-apps en offline Store-apps die aan een van de volgende objecten zijn toegewezen:
     - Alle apparaten
     - Alle gebruikers
     - Een gebruikersgroep waarvan de gebruiker die het apparaat inschrijft, lid is, met de installatiecontext ingesteld op Gebruiker.
@@ -153,12 +154,12 @@ Beste vragen voor probleemoplossing.
   - Op de pagina Status van de inschrijving wordt de installatiestatus voor alle inschrijvingsmethoden vermeld, met inbegrip van
       - Autopilot
       - co-beheer met Configuration Manager
-      - wanneer een nieuwe gebruiker zich voor de eerste keer aanmeldt bij een apparaat waarop het beleid Pagina Status van de inschrijving is toegepast
+      - wanneer een nieuwe gebruiker zich voor de eerste keer aanmeldt bij een apparaat waarop het beleid voor de pagina Status van de inschrijving is toegepast
 
 - Hoe kan ik de pagina Status van de inschrijving uitschakelen als deze is geconfigureerd op het apparaat?
   - Het beleid voor de pagina Status van de inschrijving wordt ingesteld op een apparaat op het moment van inschrijving. Als u de pagina Status van de inschrijving wilt uitschakelen, moet u de secties Disable User ESP en Disable Device ESP van de pagina Status van de inschrijving uitschakelen. U kunt dit doen door aangepaste OMA-URI-instellingen te maken met de volgende configuraties.
 
-      Sectie voor gebruikersinschrijving uitschakelen:
+      Pagina Status van de inschrijving voor gebruikers uitschakelen:
 
       ```
       Name:  Disable User ESP (choose a name you desire)
@@ -167,7 +168,7 @@ Beste vragen voor probleemoplossing.
       Data type:  Boolean
       Value:  True 
       ```
-      Sectie voor apparaatinschrijving uitschakelen:
+      Pagina Status van de inschrijving voor apparaten uitschakelen:
 
       ```
       Name:  Disable Device ESP (choose a name you desire)
@@ -191,16 +192,16 @@ Hieronder worden enkele bekende problemen beschreven.
 - Als er een aanvraag voor het opnieuw opstarten van het apparaat in behandeling is, treedt er altijd een time-out op. De time-out treedt op omdat het apparaat opnieuw moet worden opgestart. Opnieuw opstarten is nodig om tijd te bieden voor het voltooien van het item dat wordt bijgehouden op de pagina Status van de inschrijving. Als het apparaat opnieuw wordt opgestart, wordt de pagina Status van de inschrijving afgesloten en na het opnieuw opstarten wordt niet de pagina voor accountinstallatie weergegeven.  U kunt overwegen opnieuw opstarten achterwege te laten bij de installatie van een toepassing. 
 - Opnieuw opstarten tijdens apparaatinstallatie dwingt de gebruiker om referenties in te voeren voordat de fase voor installatie van het account wordt ingegaan. Gebruikersreferenties blijven niet behouden tijdens het opnieuw opstarten. Laat de gebruiker zijn of haar referenties invoeren, waarna de pagina Status van de inschrijving wordt weergegeven. 
 - SCEP-certificaten met beleid van Windows Hello voor Bedrijven veroorzaken een time-out omdat de gebruiker de configuratie van de Hello-pincode niet kan voltooien om de installatie van het SCEP-certificaat af te ronden.  Er is geen tijdelijke oplossing. Naar verwachting zal het probleem in de zomer van 2019 zijn opgelost. 
-- Er treedt altijd een time-out op voor de pagina Status van de inschrijving tijdens een inschrijving met Werk- en schoolaccount toevoegen in versies van Windows 10 lager dan 1903. De pagina Status van de inschrijving wacht totdat de Azure AD-registratie is voltooid. Het probleem is opgelost in Windows 10 versie 1903 en hoger.  
+- Er treedt altijd een time-out op voor de pagina Status van de inschrijving tijdens een inschrijving met Werk- en schoolaccount toevoegen in Windows 10-versie 1903 en lager. De pagina Status van de inschrijving wacht totdat de Azure AD-registratie is voltooid. Het probleem is opgelost in Windows 10-versie 1903 en hoger.  
 - Hybride Azure AD Auto Pilot-implementatie met ESP duurt langer dan de time-outperiode die is gedefinieerd in het ESP-profiel. Bij hybride Azure AD Auto Pilot-implementaties duurt de ESP 40 minuten langer dan de waarde die is ingesteld in het ESP-profiel. Deze vertraging geeft de on-premises AD-connector tijd om de nieuwe apparaatrecord te maken in Azure AD. 
-- De Windows-aanmeldingspagina wordt niet vooraf ingevuld met de gebruikersnaam in de modus Op basis van gebruiker van Autopilot. Als de het apparaat opnieuw wordt opgestart tijdens de installatiefase van het apparaat van ESP:
+- De Windows-aanmeldingspagina wordt niet vooraf ingevuld met de gebruikersnaam in de modus Op basis van gebruiker van Autopilot. Als het apparaat opnieuw wordt opgestart tijdens de installatiefase van het apparaat van ESP, gebeurt het volgende:
     - de gebruikersreferenties blijven niet behouden
     - de gebruiker moet de referenties opnieuw invoeren voordat de installatie van het apparaat kan worden gevolgd door de installatie van het account
-- De pagina Status van de inschrijving wordt erg lang weergegeven of de fase van 'identificeren' wordt nooit voltooid. InTune berekent de ESP-beleidsregels tijdens de identificatiefase. De kans bestaat dat een apparaat nooit de ESP-beleidsregels kan berekenen als aan de huidige gebruiker geen Intune-licentie is toegewezen.  
+- De ESP wordt erg lang weergegeven of de identificatiefase wordt nooit voltooid. In Intune worden de ESP-beleidsregels berekend tijdens de identificatiefase. De kans bestaat dat een apparaat nooit de ESP-beleidsregels kan berekenen als aan de huidige gebruiker geen Intune-licentie is toegewezen.  
 - De configuratie van Windows Defender Application Control heeft tot gevolg dat tijdens Autopilot een verzoek wordt weergegeven om het apparaat opnieuw op te starten. Het configureren van Windows Defender Application (AppLocker CSP) vereist opnieuw opstarten. Wanneer dit beleid is geconfigureerd, kan dit ertoe leiden dat het apparaat opnieuw wordt opgestart tijdens Autopilot. Op dit moment is er geen manier om het opnieuw opstarten te onderdrukken of uit te stellen.
-- Als het DeviceLock-beleid (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) is ingeschakeld als onderdeel van een ESP-profiel, kan de OOBE of het automatisch aanmelden bij het bureaublad van de gebruiker om twee redenen onverwachts mislukken.
-  - Als het apparaat niet opnieuw is opgestart vóór de fase van apparaatinstallatie van de pagina Status van de inschrijving, wordt de gebruiker mogelijk gevraagd om Azure AD-referenties in te voeren. Deze vraag wordt gesteld in plaats van een geslaagde automatische aanmelding waarbij de gebruiker de eerste aanmeldingsanimatie van Windows ziet.
-  - De automatische aanmelding mislukt als het apparaat opnieuw is opgestart nadat de gebruiker Azure AD-referenties heeft ingevoerd, maar voordat de installatiefase van het apparaat is afgesloten. Deze fout treedt op omdat de installatiefase van het apparaat nooit is voltooid. De tijdelijke oplossing is om het apparaat opnieuw in te stellen.
+- Als het DeviceLock-beleid (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) ) is ingeschakeld als onderdeel van een ESP-profiel, kan de OOBE of het automatisch aanmelden bij het bureaublad van de gebruiker om twee redenen onverwacht mislukken.
+  - Als het apparaat niet opnieuw is opgestart vóór de ESP-installatiefase van het apparaat, wordt de gebruiker mogelijk gevraagd om Azure AD-referenties in te voeren. Deze vraag wordt gesteld in plaats van een geslaagde automatische aanmelding waarbij de gebruiker de eerste aanmeldingsanimatie van Windows ziet.
+  - De automatische aanmelding mislukt als het apparaat opnieuw is opgestart nadat de gebruiker Azure AD-referenties heeft ingevoerd, maar voordat de ESP-installatiefase van het apparaat is afgesloten. Deze fout treedt op omdat de ESP-installatiefase van het apparaat nooit is voltooid. De tijdelijke oplossing is om het apparaat opnieuw in te stellen.
 
 ## <a name="next-steps"></a>Volgende stappen
 Nadat u Windows-inschrijvingspagina's hebt ingesteld, kunt u leren hoe u Windows-apparaten beheert. Zie [Wat is Microsoft Intune-apparaatbeheer?](../remote-actions/device-management.md) voor meer informatie.

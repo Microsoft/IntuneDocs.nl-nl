@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61a8815bdbb0121d727c80dda0421922e0531cf7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b7b4597106d1fffb65f112feae750aa7c8feefc0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724045"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72493981"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen configureren in Microsoft Intune
 
@@ -27,11 +28,11 @@ ms.locfileid: "71724045"
 
 Intune bevat beleidsregels voor apparaatbeperkingen waarmee beheerders Android-, iOS-, macOS-en Windows-apparaten kunnen beheren. Met deze beperkingen kunt u een breed scala aan instellingen en functies beheren voor het beveiligen van de resources van uw organisatie. Beheerders kunnen bijvoorbeeld het volgende:
 
-- het gebruik van de camera van het apparaat toestaan of blokkeren
-- toegang beheren tot Google Play, app-stores, documenten weergeven en gamen
-- ingebouwde apps blokkeren of een lijst maken met apps die zijn toegestaan of verboden
-- maken van een back-up van bestanden naar cloud- en opslagaccounts toestaan of voorkomen
-- minimale wachtwoordlengte instellen en eenvoudige wachtwoorden blokkeren
+- Het gebruik van de camera van het apparaat toestaan of blokkeren
+- Toegang beheren tot Google Play, app-stores, documenten weergeven en gamen
+- Ingebouwde apps blokkeren of een lijst maken met apps die zijn toegestaan of verboden
+- Het maken van een back-up van bestanden naar cloud- en opslagaccounts toestaan of voorkomen
+- De minimale wachtwoordlengte instellen en eenvoudige wachtwoorden blokkeren
 
 Deze functies zijn beschikbaar in Intune en kunnen worden geconfigureerd door de beheerder. Intune maakt gebruik van configuratieprofielen om deze instellingen te maken voor en af te stemmen op de behoeften van uw organisatie. Nadat u deze functies aan een profiel hebt toegevoegd, kunt u het profiel pushen naar en implementeren op apparaten in uw organisatie.
 

@@ -9,17 +9,18 @@ manager: dougeby
 ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
-ms.technology: ''
+ms.assetid: 7954a686-25dc-4fce-b395-324816f46d3b
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b55623dec2a89df700da8c0adb1c64e7e754043f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c79f24d44ad0aed78ed0ae6fce0873a080b2904d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721692"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504843"
 ---
 # <a name="use-the-intune-tenant-status-page"></a>De tenantstatuspagina in Intune gebruiken
 De Tenantstatuspagina in Microsoft Intune is een gecentraliseerde hub met de huidige en belangrijke details over uw tenant. Dit zijn onder andere details over de beschikbaarheid en het gebruik van licenties, de status van de connector en belangrijke communicatie over de Intune-service.  

@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 5ebab881a524bc361e271856b6762776974cea20
-ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
+ms.openlocfilehash: 9965c6e85173ea9958182be43b6c93d9578d534f
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601543"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749365"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune.
 
@@ -70,7 +70,6 @@ U hoeft geen actie meer te ondernemen, maar u kunt overwegen uw IT-begeleiding b
 
 #### <a name="additional-information"></a>Aanvullende informatie 
 https://aka.ms/intune_fullscreen
-
 
 ### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>Geplande wijziging: Intune App SDK en app-beveiligingsbeleid voor Android ondersteunen vanaf oktober Android 5.0 en hoger <!--4911065 -->
 Intune gaat Android 5.x (Lollipop) en hoger vanaf oktober ondersteunen. Werk alle verpakte apps bij met de nieuwste Intune App SDK en werk uw apparaten bij.

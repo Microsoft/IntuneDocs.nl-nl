@@ -3,7 +3,9 @@ title: 'Snelstartgids: automatische inschrijving in Intune instellen'
 description: 'Snelstartgids: automatische inschrijving voor Windows 10-apparaten in Intune instellen.'
 services: microsoft-intune
 author: ErikjeMS
+manager: dougeby
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
@@ -13,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbd00f507b4e1587e360c364719cf380759e8081
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6e64c7d977fef66af0fedf556eea34bef9b9079d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726567"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503128"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Quickstart: Automatische inschrijving voor Windows 10-apparaten instellen
 

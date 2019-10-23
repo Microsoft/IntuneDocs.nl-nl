@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e88371ac1ab51340f0f897d835f78562bed7d252
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a72477351425e9230200995658cc6f73a8565fb7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727971"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509492"
 ---
 # <a name="see-device-details-in-intune"></a>Apparaatdetails bekijken in Intune
 
@@ -54,7 +55,7 @@ In dit artikel leest u hoe u al uw apparaten en hun eigenschappen kunt bekijken 
 Afhankelijk van de provider die door de apparaten wordt gebruikt, worden mogelijk niet alle gegevens vermeld
 
 > [!Note]  
-> Hardware- en software-inventaris wordt om de zeven dagen vernieuwd in de Intune-service.
+> Hardware- en software-inventaris wordt om de 7 dagen vernieuwd in de Intune-service.
 
 |Detail|Beschrijving|Platform| 
 |--------------|----------------------|----|  
@@ -85,7 +86,7 @@ Afhankelijk van de provider die door de apparaten wordt gebruikt, worden mogelij
 |Laatste contact|De datum en tijd waarop het apparaat het laatst verbinding heeft gemaakt met Intune.|Windows, iOS, Android|
 |Code voor het overslaan van het activeringsslot|De code die kan worden gebruikt om het activeringsslot over te slaan.|Windows, iOS, Android|
 |Azure AD-geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Azure Active Directory.|Windows, iOS, Android|
-|Intune geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd Intune|Windows, iOS, Android|
+|Intune geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Intune|Windows, iOS, Android|
 |Naleving|De nalevingsstatus van het apparaat.|Windows, iOS, Android|
 |EAS geactiveerd|Als de waarde **Ja** is, wordt het apparaat gesynchroniseerd met een Exchange-postvak.|Windows, iOS, Android|
 |Activerings-id voor EAS|De Exchange ActiveSync-id van het apparaat.|Windows, iOS, Android|

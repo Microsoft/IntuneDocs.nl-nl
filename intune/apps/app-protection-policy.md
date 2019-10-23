@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee266d33b247941140569e416c4b43643bcd6a0f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 31bb0e2ff4379c55829afc65fb99b768c9099a47
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725371"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498950"
 ---
 # <a name="app-protection-policies-overview"></a>Overzicht van App-beveiligingsbeleid
 
@@ -136,7 +137,7 @@ Alle apps die zijn geïntegreerd met de [Intune App SDK](../developer/app-sdk.md
 
 Het Intune SDK-ontwikkelingsteam houdt zich actief bezig met het testen en onderhouden van ondersteuning voor apps die zijn gebouwd met de systeemeigen Android-, iOS- (Objective-C, Swift), Xamarin-, Xamarin.Forms- en Cordova-platforms. Hoewel het sommige klanten is gelukt om de Intune SDK te integreren in andere platforms, zoals React Native en NativeScript, bieden we geen specifieke instructies of plug-ins voor app-ontwikkelaars die andere platforms gebruiken dan de platforms die door ons worden ondersteund.
 
-De [Intune app SDK](../developer/app-sdk.md) maakt gebruik van een aantal geavanceerde moderne verificatiefuncties van [Azure Active Directory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) voor zowel de eigen als de externe versies van de SDK. Hierdoor werkt [Microsoft Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL) niet goed met de meeste belangrijkste scenario's, zoals verificatie in de Intune-app-beveiligingsservice en voorwaardelijk starten. Gezien het feit dat het Identity-team van Microsoft gebruikers over het algemeen aanraadt om voor alle Microsoft Office-apps over te stappen naar MSAL, zal de [Intune App SDK](../developer/app-sdk.md) daar uiteindelijk ondersteuning voor moeten gaan bieden, maar hier zijn momenteel nog geen plannen voor.
+De [Intune App SDK](../developer/app-sdk.md) maakt gebruik van een aantal geavanceerde moderne verificatiefuncties van [Azure Active Directory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) voor zowel de eigen als de externe versies van de SDK. Hierdoor werkt [Microsoft Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL) niet goed met de meeste belangrijkste scenario's, zoals verificatie in de Intune-app-beveiligingsservice en voorwaardelijk starten. Gezien het feit dat het Identity-team van Microsoft gebruikers over het algemeen aanraadt om voor alle Microsoft Office-apps over te stappen naar MSAL, zal de [Intune App SDK](../developer/app-sdk.md) daar uiteindelijk ondersteuning voor moeten gaan bieden, maar hier zijn momenteel nog geen plannen voor.
 
 ## <a name="end-user-requirements-to-use-app-protection-policies"></a>Vereisten voor eindgebruikers voor het gebruik van beveiligingsbeleid voor apps
 
@@ -199,7 +200,7 @@ Hoewel het **algemene** beleid van toepassing is op alle gebruikers in uw tenant
 
 Met ondersteuning voor meerdere identiteiten kan een app meerdere doelgroepen ondersteunen. Deze doelgroepen zijn zowel zakelijke gebruikers als persoonlijke gebruikers. Werk- en schoolaccounts worden gebruikt door zakelijke doelgroepen, terwijl persoonlijke accounts worden gebruikt voor consumentendoelgroepen, zoals Microsoft Office-gebruikers. Een app met ondersteuning voor meerdere identiteiten kan openbaar worden vrijgegeven, waarbij het app-beveiligingsbeleid alleen van toepassing is als de app wordt gebruikt in de werk- en schoolcontext (zakelijk). Via ondersteuning voor meerdere identiteiten kan de [Intune App SDK](../developer/app-sdk.md) beleidsregels voor de beveiliging van apps toepassen op alleen het werk- of schoolaccount dat is aangemeld bij de app. Als een persoonlijk account is aangemeld bij de app, blijven de gegevens ongewijzigd.
 
-Een voorbeeld van een persoonlijke context is een gebruiker die een nieuw document start in Word. Aangezien dit als persoonlijke context wordt beschouwd, wordt er geen beveiligingsbeleid voor apps van Intune toegepast. Zodra het document is opgeslagen in het zakelijke OneDrive-account, wordt het beschouwd als zakelijke context en wordt er Intune-app-beveiligingsbeleid op toegepast.
+Een voorbeeld van een persoonlijke context is een gebruiker die een nieuw document start in Word. Omdat dit als persoonlijke context wordt beschouwd, wordt er geen beveiligingsbeleid voor apps van Intune toegepast. Zodra het document is opgeslagen in het zakelijke OneDrive-account, wordt het beschouwd als zakelijke context en wordt er Intune-app-beveiligingsbeleid op toegepast.
 
 Een voorbeeld van een werk- of zakelijke context is een gebruiker die de OneDrive-app start met behulp van een werkaccount. In de werkcontext kan deze gebruiker bestanden niet verplaatsen naar een persoonlijke opslaglocatie. Later, wanneer OneDrive wordt gebruikt voor een persoonlijk account, kunnen de gegevens op de persoonlijke OneDrive-locatie zonder beperkingen worden gekopieerd en verplaatst.
 
@@ -229,10 +230,10 @@ Zelfs als de pincode wordt gedeeld met apps van andere uitgevers verschijnt bij 
 **Ingebouwde app-pincodes voor Outlook en OneDrive**<br>
 De pincode van Intune werkt op basis van een timer van inactiviteit (de waarde voor **Toegangsvereisten opnieuw controleren na (minuten)** ). Er wordt dus gevraagd om de pincode van Intune. Dit is onafhankelijk van de prompts voor de pincode van de app voor Outlook en OneDrive, die vaak standaard verschijnen bij het starten van de app. Als beide prompts tegelijk worden weergegeven, moet de pincode van Intune voorrang krijgen.
 
-**InTune-pincodebeveiliging**<br>
+**Intune-pincodebeveiliging**<br>
 De pincode zorgt ervoor dat alleen de juiste gebruiker toegang heeft tot de gegevens van de organisatie in de app. Daarom moet een eindgebruiker zich aanmelden met een werk- of schoolaccount voordat de pincode voor de Intune-app kan worden ingesteld of hersteld. Deze verificatie wordt verwerkt door Azure Active Directory via uitwisseling van een beveiligde token en is niet transparant voor de [Intune App SDK](../developer/app-sdk.md). Vanuit het oogpunt van veiligheid kunt u werk- of schoolgerelateerde gegevens het beste versleutelen. Versleuteling is niet gerelateerd aan de pincode van de app, maar is een eigen app-beveiligingsbeleid.
 
-**InTune-pincode: bescherming tegen beveiligingsaanvallen**<br>
+**Intune-pincode: bescherming tegen beveiligingsaanvallen**<br>
 Als onderdeel van het app-pincodebeleid kan de IT-beheerder een maximumaantal verificatiepogingen voor gebruikers instellen voordat de app wordt vergrendeld. Na het toegestane aantal aanmeldingspogingen kan de [Intune App SDK](../developer/app-sdk.md) de 'zakelijke' gegevens in de app wissen.
   
 **Twee keer een pincode instellen voor apps van dezelfde uitgever?**<br>
@@ -317,10 +318,10 @@ Het Intune-app-beveiligingsbeleid voor toegang wordt in een bepaalde volgorde to
 
 Wanneer u te maken hebt met verschillende soorten instellingen, krijgt een app-versievereiste voorrang, gevolgd door de versievereiste van het Android-besturingssysteem en de versievereiste van de Android-patch. Vervolgens worden eventuele waarschuwingen voor alle typen instellingen in dezelfde volgorde gecontroleerd.
 
-### <a name="intune-app-protection-policies-and-googles-safetynet-attestation-for-android-devices"></a>InTune-app-beveiligingsbeleid en SafetyNet-Attestation voor Android-apparaten van Google 
+### <a name="intune-app-protection-policies-and-googles-safetynet-attestation-for-android-devices"></a>Intune-app-beveiligingsbeleid en SafetyNet-Attestation voor Android-apparaten van Google 
 Intune-app-beveiligingsbeleid biedt beheerders de mogelijkheid om eindgebruikers te verplichten om aan de SafetyNet Attestation-API van Google voor Android-apparaten te voldoen. Er wordt een nieuwe Google Play-servicebepaling naar de IT-beheerder gerapporteerd, volgens een interval die door de Intune-service wordt bepaald. Hoe vaak de serviceaanroep wordt uitgevoerd, wordt vertraagd door de belasting. Deze waarde wordt daarom intern onderhouden en kan niet worden geconfigureerd. Elke actie voor de Google SafetyNet Attestation-instelling die door een IT-beheerder is geconfigureerd, wordt uitgevoerd op basis van het meest recent gerapporteerde resultaat naar de Intune-service op het moment van de voorwaardelijke start. Als er geen gegevens zijn, wordt toegang verleend als er geen andere voorwaardelijke opstartcontroles zijn mislukt, en start de Google Play Store-cyclus voor het bepalen van de attestation-resultaten in de back-end en wordt de gebruiker asynchroon gevraagd of het apparaat is mislukt. Als er verouderde gegevens zijn, wordt toegang geblokkeerd of toegestaan op basis van het laatst gerapporteerde resultaat, en start ook de Google Play Store-cyclus voor het bepalen van de attestation-resultaten en wordt de gebruiker asynchroon gevraagd of het apparaat is mislukt.
 
-### <a name="intune-app-protection-policies-and-googles-verify-apps-api-for-android-devices"></a>InTune-app-beveiligingsbeleid en Verify Apps-API voor Android-apparaten van Google
+### <a name="intune-app-protection-policies-and-googles-verify-apps-api-for-android-devices"></a>Intune-app-beveiligingsbeleid en Verify Apps-API voor Android-apparaten van Google
 Intune-app-beveiligingsbeleid biedt beheerders de mogelijkheid om eindgebruikers te verplichten om signalen te verzenden via de Verify Apps-API van Google voor Android-apparaten. De instructies hiervoor kunnen per apparaat enigszins verschillen. Bij het algemene proces gaat u naar de Google Play Store en klikt u op **Mijn apps en games**. Klik vervolgens op het resultaat van de laatste app-scan om naar het menu Play Protect te gaan. Zorg ervoor dat de wisselknop voor **Apparaat scannen op beveiligingsrisico's** is ingesteld op Aan.
 
 ### <a name="googles-safetynet-attestation-api"></a>SafetyNet Attestation-API van Google 

@@ -9,17 +9,18 @@ manager: dougeby
 ms.date: 04/30/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e221e67afa141612d6b565a511866087ce237d25
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 83a9467065bb5c1d1cde2035df936541bb804ddc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722368"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503077"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Zelfstudie: De zakelijke Apple-apparaatinschrijvingsfuncties in Apple Business Manager (ABM) gebruiken om iOS-apparaten bij Intune in te schrijven
 Met behulp van de functies voor apparaatinschrijving in Apple Business Manager kunt u apparaten eenvoudiger inschrijven. Intune biedt ook ondersteuning voor de oudere DEP-portal (Device Enrollment Program) van Apple, maar we raden u aan opnieuw te beginnen met Apple Business Manager. Met Microsoft Intune en Apple Corporate Device Enrollment worden apparaten automatisch veilig ingeschreven wanneer gebruikers het apparaat voor de eerste keer inschakelen. U kunt apparaten daarom naar vele gebruikers verzenden zonder elk apparaat afzonderlijk te hoeven instellen. 
