@@ -96,13 +96,21 @@
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
-            - name: Intune instellen voor MTD
+            - name: MTD op niet-ingeschreven apparaten
               items:
-                - name: MTD-apps toevoegen
+                - name: MTD-apps toevoegen aan niet-ingeschreven apparaten
+                  href: mtd-add-apps-unenrolled-devices.md
+                - name: Een beveiligingsbeleid voor MTD-apps maken
+                  href: mtd-app-protection-policy.md
+                - name: MTD inschakelen voor niet-ingeschreven apparaten
+                  href: mtd-enable-unenrolled-devices.md
+            - name: MTD op ingeschreven apparaten
+              items:
+                - name: MTD-apps toevoegen aan ingeschreven apparaten
                   href: mtd-apps-ios-app-configuration-policy-add-assign.md
                 - name: Een nalevingsbeleid voor MTD-apparaten maken
                   href: mtd-device-compliance-policy-create.md
-                - name: MTD in Intune inschakelen
+                - name: MTD inschakelen voor ingeschreven apparaten
                   href: mtd-connector-enable.md
             - name: MTD-apps
               items:
