@@ -9,12 +9,12 @@ metadata:
   ms.author: dougeby
   manager: mtillman
   ms.date: 09/16/2019
-  ms.openlocfilehash: 153ada78a5be6ed86f5a6d6b0e92c238928807d7
-  ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
+  ms.openlocfilehash: 94f010d249e5309604b3219670a74e8722464a38
+  ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
   ms.translationtype: HT
   ms.contentlocale: nl-NL
-  ms.lasthandoff: 10/14/2019
-  ms.locfileid: "72310932"
+  ms.lasthandoff: 10/24/2019
+  ms.locfileid: "72892603"
 highlightedContent:
   items:
   - title: Wat is Intune?
@@ -61,7 +61,7 @@ conceptualContent:
       text: Ondersteunde besturingssystemen en browsers
     - url: ./fundamentals/role-based-access-control.md
       itemType: reference
-      text: Toegangsbeheer op basis van rollen
+      text: Op rollen gebaseerd toegangsbeheer
     - url: ./fundamentals/licenses.md
       itemType: concept
       text: Intune-licenties
@@ -76,6 +76,9 @@ conceptualContent:
     - url: ./enrollment/device-management-capabilities.md
       itemType: concept
       text: Beheermogelijkheden voor geregistreerde apparaten
+    - url: ./enrollment/windows-enrollment-methods.md
+      itemType: how-to-guide
+      text: Intune-inschrijvingsmethoden voor Windows-apparaten
     - url: ./enrollment/windows-enroll.md
       itemType: how-to-guide
       text: Inschrijving instellen voor Windows
