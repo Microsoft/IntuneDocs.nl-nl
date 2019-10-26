@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585388"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915707"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -193,7 +193,8 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
 
 ### <a name="power-settings"></a>Energie-instellingen
 
-- **Tijd tot het scherm wordt vergrendeld**: stel in hoeveel niet-actieve tijd er moet zijn voordat het apparaat wordt vergrendeld.
+- **Tijd tot vergrendelings scherm**: Geef de maximale tijd op die een gebruiker kan instellen totdat het apparaat wordt vergrendeld. Als u deze instelling bijvoorbeeld instelt op **10 minuten**, kunnen gebruikers de tijd instellen van 15 seconden tot 10 minuten. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of beheerd.
+
 - **Scherm aan terwijl het apparaat is aangesloten**: kies bij welke energiebronnen het scherm aan blijft wanneer het apparaat is aangesloten.
 
 ### <a name="users-and-accounts-settings"></a>Gebruikers- en accountinstellingen

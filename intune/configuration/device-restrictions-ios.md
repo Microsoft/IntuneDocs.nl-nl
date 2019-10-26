@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584895"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785511"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Met instellingen voor iOS- en iPadOS-apparaten kunt u functies toestaan of beperken met behulp van Intune
 
@@ -300,6 +300,11 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
   Deze functie is van toepassing op:  
   - iOS 12.2 en hoger
+
+  > [!NOTE]
+  > De instelling **logboek registratie aan server zijde voor SIRI-opdrachten** is afgeschaft door Apple. In een aanstaande release wordt deze instelling verwijderd uit de intune-console.
+  >
+  > Deze instelling heeft momenteel geen effect op apparaten, hoewel de instelling wordt weer gegeven in Apparaatbeheer-profielen. Als u deze instelling uit elk beleid wilt verwijderen, opent u het beleid, maakt u een kleine wijziging en slaat u het beleid op. Het beleid wordt bijgewerkt en de instelling wordt verwijderd van apparaten.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische registratie van apparaten (onder Super visie)
 
