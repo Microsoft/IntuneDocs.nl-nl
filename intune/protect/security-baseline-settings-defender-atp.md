@@ -5,24 +5,24 @@ description: Beveiligingsbasislijninstellingen die door Intune worden ondersteun
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: karthib
+ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cb5d7375ae5b76a24861872d4abf786f199dfd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509004"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923409"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-basislijninstellingen voor Intune
 
@@ -31,12 +31,6 @@ Bekijk de basislijninstellingen voor Microsoft Defender Advanced Threat Protecti
 De basislijn Microsoft Defender Advanced Threat Protection is beschikbaar als uw omgeving voldoet aan de vereisten voor het gebruik van [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites). 
 
 Deze basis lijn is geoptimaliseerd voor fysieke apparaten en wordt momenteel niet aanbevolen voor gebruik op virtuele machines (Vm's) of VDI-eind punten. Bepaalde basislijninstellingen kunnen invloed hebben op externe interactieve sessies in gevirtualiseerde omgevingen. Voor meer informatie ziet u [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) (Naleving met de Microsoft Defender ATP-beveiligingsbasislijn vergroten) in de Windows-documentatie.
-
-
-> [!NOTE]  
-> De ATP-basislijninstellingen bevinden zich in de **previewfase**. Tijdens de previewfase komt de lijst met beschikbare instellingen en de volgorde waarin de instellingen in deze inhoud worden weergegeven, mogelijk niet overeen met de opties die in de portal beschikbaar zijn.  
->
-> Wanneer de basislijninstellingen zich niet meer in de previewfase bevinden, wordt deze inhoud bijgewerkt volgens een huidige lijst met beveiligingsbasislijninstellingen die door Intune worden ondersteund.
 
 ## <a name="application-guard"></a>Application Guard  
 Zie [WindowsDefenderApplicationGuard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp) in de Windows-documentatie voor meer informatie.  
@@ -55,13 +49,13 @@ Wanneer u Microsoft Edge gebruikt, beschermt Microsoft Defender Application Guar
 
   - **Klembordgedrag** - *Settings/ClipboardSettings*  
     Kies welke kopieer- en plakbewerkingen zijn toegestaan tussen de lokale pc en de virtuele browser van Application Guard.  Opties zijn onder andere:
-    - *Niet geconfigureerd*  
-    - *Beide blokkeren*: er kunnen geen gegevens tussen de pc en de virtuele browse worden overgedragen.  
-    - *Host naar container blokkeren*: er kunnen geen gegevens van de pc naar de virtuele browser worden overgedragen.
-    - *Container naar host blokkeren*: er kunnen geen gegevens van de virtuele browser naar de host-pc worden overgedragen.
-    - *Geen blokkeren*: er wordt geen inhoud geblokkeerd.  
+    - Niet geconfigureerd  
+    - Kopiëren en plakken tussen de PC en de browser blok keren... Er kunnen geen gegevens tussen de pc en de virtuele browser worden overgedragen.  
+    - Kopiëren en plakken van browser naar PC toestaan: gegevens kunnen niet worden overgedragen van de PC naar de virtuele browser.
+    - Kopiëren en plakken van PC naar browser toestaan: gegevens kunnen niet worden overgedragen van de virtuele browser naar de host-PC.
+    - Kopiëren en plakken tussen de PC en de browser toestaan: er bestaat geen blok voor inhoud.  
 
-    **Standaardinstelling**: Beide blokkeren  
+    **Standaard**: kopiëren en plakken tussen de PC en de browser blok keren  
 
 - **Windows-beleid voor netwerkisolatie – domeinnamen van bedrijfsnetwerk**  
   Zie [Beleids-CSP - NetworkIsolation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-networkisolation) in de Windows-documentatie voor meer informatie.
@@ -101,7 +95,7 @@ Zie [Beleids-CSP - SmartScreen](https://docs.microsoft.com/windows/client-manage
 
   **Standaardinstelling**: Inschakelen
 
-- **Uitvoertype vanuit e-mailinhoud**  
+- **Uitvoer e-mailinhoud**  
   [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): wanneer deze regel is ingesteld op *Blokkeren*, voorkomt deze at de volgende bestandstypen worden uitgevoerd of gestart vanuit een e-mailbericht dat wordt weergegeven in Microsoft Outlook of webmail (zoals Gmail.com of Outlook.com):  
 
   - Uitvoerbare bestanden (zoals .exe, .dll of .scr)  
@@ -120,7 +114,7 @@ Zie [Beleids-CSP - SmartScreen](https://docs.microsoft.com/windows/client-manage
     
   **Standaardinstelling**: Blokkeren
 
-- **Niet-vertrouwd USB-procestype**  
+- **Niet-vertrouwd USB-proces**  
   [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): als u de instelling *Blokkeren* kiest, kunnen niet-ondertekende of niet-vertrouwde uitvoerbare bestanden op verwisselbare USB-stations en SD-kaarten niet worden uitgevoerd.
 
   Uitvoerbare bestanden zijn onder meer:
@@ -129,12 +123,12 @@ Zie [Beleids-CSP - SmartScreen](https://docs.microsoft.com/windows/client-manage
 
   **Standaardinstelling**: Blokkeren
 
-- **Office-apps: invoeringstype voor andere processen**  
+- **Office-apps: invoering voor andere processen**  
   [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): als u de instelling *Blokkeren* kiest, kunnen Office-apps zoals Word, Excel, PowerPoint en OneNote geen code in andere processen invoegen. Het invoegen van code wordt doorgaans gebruikt door malware om schadelijke code uit te voeren in een poging om de activiteit te verbergen voor antivirusengines.  
 
   **Standaardinstelling**: Blokkeren
 
-- **Office-macrocode staat Win32-importtype toe**  
+- **Office-macrocode staat Win32-imports toe**  
   [Regel voor het verminderen van de kwetsbaarheid voor aanvallen](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules): als u de instelling *Blokkeren* kiest, probeert deze regel Office-bestanden met macrocode die Win32-DLL's kan importeren te blokkeren. Office-bestanden omvatten Word, Excel, PowerPoint en OneNote. Malware kan macrocode in Office-bestanden gebruiken om Win32-DLL's te importeren en laden, die vervolgens worden gebruikt om API-aanroepen uit te voeren voor verdere infectie in het hele systeem.  
 
   **Standaardinstelling**: Blokkeren
@@ -170,6 +164,10 @@ Zie [BitLocker Group Policy settings](https://docs.microsoft.com/windows/securit
 
   - **Versleutelingsmethode**  
     **Standaardinstelling**: AES 128-bits CBC
+
+- **Opslag kaart versleutelen (alleen mobiel)** Als u *Ja* selecteert, wordt de opslag kaart van het mobiele apparaat versleuteld.  
+
+   **Standaardinstelling**: Ja
 
 - **Bitlocker-beleid voor vaste stations**  
   De waarden voor dit beleid bepalen de coderingssterkte die door BitLocker wordt gebruikt voor de versleuteling van vaste stations. Ondernemingen kunnen het versleutelingsniveau bepalen voor extra beveiliging (AES-256 is sterker dan AES-128). Als u deze instelling inschakelt, kunt u afzonderlijke versleutelingsalgoritmen en belangrijke coderingssterkten configureren voor vaste gegevensstations, besturingssysteemstations en losse gegevensstations. Voor vaste stations en besturingssysteemstations wordt het gebruik van het XTS-AES-algoritme aanbevolen. Gebruik 128-bits AES-CBC of 256-bits AES-CBC voor losse stations als het station in andere apparaten wordt gebruikt waarop geen Windows 10, versie 1511 of later wordt uitgevoerd. Het wijzigen van de versleutelingsmethode heeft geen invloed als het station al is versleuteld of als de versleuteling nog wordt uitgevoerd. In deze gevallen wordt deze beleidsinstelling genegeerd.
@@ -224,12 +222,12 @@ Zie [BitLocker Group Policy settings](https://docs.microsoft.com/windows/securit
   - **Overeenkomende hardwareapparaten verwijderen**  
     Deze instelling is alleen beschikbaar als *Installatie hardwareapparaten op apparaat-id* is ingesteld op *Installatie van hardwareapparaten blokkeren*.  
 
-    **Standaardinstelling**: *Geen standaardconfiguratie*
+    **Standaardinstelling**: Ja
 
   - **Hardwareapparaat-id's die zijn geblokkeerd**  
     Deze instelling is alleen beschikbaar als *Installatie hardwareapparaten op apparaat-id* is ingesteld op *Installatie van hardwareapparaten blokkeren*. Als u deze instelling wilt configureren, vouwt u de optie uit, selecteert u **+ Toevoegen** en geeft u vervolgens de hardwareapparaat-id op die u wilt blokkeren.  
 
-    **Standaardinstelling**: *er worden geen apparaten geblokkeerd*  
+    **Standaard**: PCI\CC_0C0A
 
 - **Direct Memory Access blokkeren**  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess): met deze beleidsinstelling kunt u Direct Memory Access (DMA) blokkeren voor alle hot-pluggable PCI-downstream-poorten op een apparaat totdat een gebruiker zich bij Windows aanmeldt. Zodra een gebruiker zich heeft aangemeld, somt Windows de PCI-apparaten op die met de PCI-poorten van de host zijn verbonden. Steeds wanneer de gebruiker het apparaat vergrendelt, wordt DMA geblokkeerd op hot-pluggable PCI-poorten zonder onderliggende apparaten totdat de gebruiker zich opnieuw aanmeldt. Apparaten die al waren geïnventariseerd toen het apparaat was ontgrendeld, blijven werken totdat ze worden losgekoppeld. 
@@ -249,23 +247,23 @@ Zie [BitLocker Group Policy settings](https://docs.microsoft.com/windows/securit
   - **Overeenkomende hardwareapparaten verwijderen**  
     Deze instelling is alleen beschikbaar wanneer *Installatie hardwareapparaten op installatieklasse* is ingesteld op *Installatie van hardwareapparaten blokkeren*.  
  
-    **Standaardinstelling**: *Geen standaardconfiguratie*  
+    **Standaardinstelling**: Ja  
 
   - **Hardwareapparaat-id's die zijn geblokkeerd**  
     Deze instelling is alleen beschikbaar wanneer Installatie hardwareapparaten op installatieklasse is ingesteld op Installatie van hardwareapparaten blokkeren. Als u deze instelling wilt configureren, vouwt u de optie uit, selecteert u **+ Toevoegen** en geeft u vervolgens de hardwareapparaat-id op die u wilt blokkeren.  
  
-    **Standaardinstelling**: *er worden geen apparaten geblokkeerd*
+    **Standaard**: {d48179be-EC20-11D1-b6b8-00c04fa372a7}
 
 ## <a name="endpoint-detection-and-response"></a>Eindpuntdetectie en -respons  
 Zie [WindowsAdvancedThreatProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsadvancedthreatprotection-csp) in de Windows-documentatie voor meer informatie.  
 
-- **Frequentie van telemetrierapporten versnellen** - *Configuration/TelemetryReportingFrequency*  
+- **Frequentie van telemetrierapporten versnellen** - *Configuration/TelemetryReportingFrequency*
 
   De frequentie van telemetrierapporten van Microsoft Defender Advanced Threat Protection versnellen.  
 
   **Standaardinstelling**: Ja
 
-- **Voorbeelddeling voor alle bestanden** - *Configuration/SampleSharing*  
+- **Voorbeelddeling voor alle bestanden** - *Configuration/SampleSharing* 
 
   Hiermee wordt de configuratieparameter van de voorbeelddeling van Microsoft Defender Advanced Threat Protection geretourneerd of ingesteld.  
 
@@ -286,43 +284,7 @@ Zie [WindowsAdvancedThreatProtection CSP](https://docs.microsoft.com/windows/cli
   [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride): kies de instelling *Ja* als u wilt voorkomen dat gebruikers wijzigingen kunnen aanbrengen in de Exploit Protection-instellingen in het Windows Defender Security Center. Als u deze instelling niet configureert of uitschakelt, kunnen lokale gebruikers wijzigingen aanbrengen in de Exploit Protection-instellingen.  
   **Standaardinstelling**: Ja  
 
-- **Gecontroleerde mappentoegang**  
-  Zie [Defender/ControlledFolderAccessAllowedApplications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessallowedapplications) en [Defender/ControlledFolderAccessProtectedFolders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) 
-  
-   Beveilig bestanden en mappen tegen niet-geautoriseerde wijzigingen door niet-goedgekeurde apps.
-
-  **Standaardinstelling**: Controlemodus
-
-## <a name="web--network-protection"></a>Web- en netwerkbeveiliging  
-
-- **Netwerkbeveiligingstype**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection): met dit beleid kunt u netwerkbeveiliging in- of uitschakelen in Windows Defender Exploit Guard. Netwerkbeveiliging is een functie van Windows Defender Exploit Guard die voorkomt dat werknemers die apps gebruiken in contact komen met phishing-praktijken, sites die misbruik maken en schadelijke inhoud op internet. Dit omvat het voorkomen dat browsers van derden verbinding maken met gevaarlijke websites.  
-
-  Wanneer de functie is ingesteld op *Inschakelen* of *Controlemodus*, kunnen gebruikers netwerkbeveiliging niet uitschakelen en kunt u Windows Defender Security Center gebruiken om informatie over verbindingspogingen weer te geven.  
- 
-  - Met *Inschakelen* wordt voorkomen dat gebruikers en apps verbinding kunnen maken met gevaarlijke domeinen.  
-  - Met *Controlemodus* wordt niet voorkomen dat gebruikers en apps verbinding kunnen maken met gevaarlijke domeinen.  
-
-  Met de instelling *Door de gebruiker gedefinieerd* wordt niet voorkomen dat gebruikers en apps verbinding kunnen maken met gevaarlijke domeinen en is er geen informatie over verbindingen beschikbaar in Windows Defender Security Center.  
-
-  **Standaardinstelling**: Controlemodus
-
-- **SmartScreen vereisen voor Microsoft Edge**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen): Microsoft Edge gebruikt standaard Windows Defender SmartScreen (ingeschakeld) om gebruikers tegen mogelijke oplichting door phishing en schadelijke software te beschermen. Dit beleid is standaard ingeschakeld (ingesteld op *Ja*). Wanneer het is ingeschakeld, wordt voorkomen dat gebruikers Windows Defender SmartScreen kunnen uitschakelen.  Wanneer het effectieve beleid voor een apparaat gelijk is aan Niet geconfigureerd, kunnen gebruikers Windows Defender SmartScreen uitschakelen, waardoor het apparaat niet meer beveiligd is.  
-
-  **Standaardinstelling**: Ja
-  
-- **Toegang tot schadelijke sites blokkeren**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride): standaard hebben gebruikers in Microsoft Edge toestemming om de Windows Defender SmartScreen-waarschuwingen over mogelijke schadelijke websites te omzeilen (negeren), zodat de gebruikers de site kunnen blijven gebruiken. Als dit beleid is ingeschakeld (ingesteld op *Ja*) voorkomt Microsoft Edge dat gebruikers de waarschuwingen kunnen omzeilen, waardoor ze de website dus niet langer kunnen gebruiken.  
-
-  **Standaardinstelling**: Ja
-
-- **Downloaden van niet-geverifieerde bestanden blokkeren**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles): standaard hebben gebruikers in Microsoft Edge toestemming om de Windows Defender SmartScreen-waarschuwingen over mogelijk schadelijke bestanden te omzeilen (negeren), waardoor ze niet-geverifieerde bestanden kunnen blijven downloaden. Als dit beleid is ingeschakeld (ingesteld op *Ja*), kunnen gebruikers de waarschuwingen niet negeren en kunnen ze geen niet-geverifieerde bestanden downloaden.  
-
-  **Standaardinstelling**: Ja
-
-## <a name="windows-defender-anti-virus----settings-review-pending-for-this-section"></a>Windows Defender-antivirus   [instellingen controleren voor dit gedeelte is in behandeling]
+## <a name="microsoft-defender-antivirus"></a>Micro soft Defender anti virus  
 
 Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in de Windows-documentatie voor meer informatie.
 
@@ -336,7 +298,7 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
 
   **Standaardinstelling**: Ja
 
-- **Voorbeeld van een Defender-toestemmingstype voor indiening**  
+- **Voorbeeld van een Defender-toestemming voor indiening**  
   [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent): hiermee wordt het gebruikerstoestemmingsniveau in Windows Defender gecontroleerd om gegevens te verzenden. Als de vereiste toestemming al is verleend, worden de gegevens door Windows Defender ingediend. Als dit niet het geval is (en als de gebruiker heeft opgegeven dat deze vraag nooit mag worden gesteld), wordt de gebruikersinterface geopend om de gebruiker om toestemming te vragen (wanneer *Cloudbeveiliging* is ingesteld op *Ja*) voordat gegevens worden verzonden.  
 
   **Standaardinstelling**: veilige voorbeelden automatisch verzenden
@@ -594,6 +556,35 @@ Raadpleeg [Firewall CSP](https://docs.microsoft.com/windows/client-management/md
 
 - **Controle van certificaatintrekkingslijsten**  
   **Standaardinstelling**: standaardinstelling van apparaat
+
+## <a name="web--network-protection"></a>Web- en netwerkbeveiliging  
+
+- **Netwerkbeveiligingstype**  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection): met dit beleid kunt u netwerkbeveiliging in- of uitschakelen in Windows Defender Exploit Guard. Netwerkbeveiliging is een functie van Windows Defender Exploit Guard die voorkomt dat werknemers die apps gebruiken in contact komen met phishing-praktijken, sites die misbruik maken en schadelijke inhoud op internet. Dit omvat het voorkomen dat browsers van derden verbinding maken met gevaarlijke websites.  
+
+  Wanneer de functie is ingesteld op *Inschakelen* of *Controlemodus*, kunnen gebruikers netwerkbeveiliging niet uitschakelen en kunt u Windows Defender Security Center gebruiken om informatie over verbindingspogingen weer te geven.  
+ 
+  - Met *Inschakelen* wordt voorkomen dat gebruikers en apps verbinding kunnen maken met gevaarlijke domeinen.  
+  - Met *Controlemodus* wordt niet voorkomen dat gebruikers en apps verbinding kunnen maken met gevaarlijke domeinen.  
+
+  Met de instelling *Door de gebruiker gedefinieerd* wordt niet voorkomen dat gebruikers en apps verbinding kunnen maken met gevaarlijke domeinen en is er geen informatie over verbindingen beschikbaar in Windows Defender Security Center.  
+
+  **Standaardinstelling**: Controlemodus
+
+- **SmartScreen vereisen voor Microsoft Edge**  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen): Microsoft Edge gebruikt standaard Windows Defender SmartScreen (ingeschakeld) om gebruikers tegen mogelijke oplichting door phishing en schadelijke software te beschermen. Dit beleid is standaard ingeschakeld (ingesteld op *Ja*). Wanneer het is ingeschakeld, wordt voorkomen dat gebruikers Windows Defender SmartScreen kunnen uitschakelen.  Wanneer het effectieve beleid voor een apparaat gelijk is aan Niet geconfigureerd, kunnen gebruikers Windows Defender SmartScreen uitschakelen, waardoor het apparaat niet meer beveiligd is.  
+
+  **Standaardinstelling**: Ja
+  
+- **Toegang tot schadelijke sites blokkeren**  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride): standaard hebben gebruikers in Microsoft Edge toestemming om de Windows Defender SmartScreen-waarschuwingen over mogelijke schadelijke websites te omzeilen (negeren), zodat de gebruikers de site kunnen blijven gebruiken. Als dit beleid is ingeschakeld (ingesteld op *Ja*) voorkomt Microsoft Edge dat gebruikers de waarschuwingen kunnen omzeilen, waardoor ze de website dus niet langer kunnen gebruiken.  
+
+  **Standaardinstelling**: Ja
+
+- **Downloaden van niet-geverifieerde bestanden blokkeren**  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles): standaard hebben gebruikers in Microsoft Edge toestemming om de Windows Defender SmartScreen-waarschuwingen over mogelijk schadelijke bestanden te omzeilen (negeren), waardoor ze niet-geverifieerde bestanden kunnen blijven downloaden. Als dit beleid is ingeschakeld (ingesteld op *Ja*), kunnen gebruikers de waarschuwingen niet negeren en kunnen ze geen niet-geverifieerde bestanden downloaden.  
+
+  **Standaardinstelling**: Ja
 
 ## <a name="windows-hello-for-business"></a>Windows Hello voor Bedrijven  
 
