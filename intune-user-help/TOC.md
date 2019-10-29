@@ -6,7 +6,9 @@
 
 ## [Vereisten voor het apparaatwachtwoord](password-does-not-meet-it-administrator-requirements.md)
 
-## [Aanmelden bij de bedrijfsportal](sign-in-to-the-company-portal.md)
+## [Aanmelden bij de bedrijfsportal](sign-in-to-the-company-portal.md)  
+
+## [Mobile Threat Defense-app installeren](set-up-mobile-threat-defense.md)  
 
 ## Uw Android-apparaat gebruiken
 ### [Redenen om uw Android-apparaat in te schrijven](why-enroll-android-device.md)
