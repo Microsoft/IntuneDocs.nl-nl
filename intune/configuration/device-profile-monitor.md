@@ -5,34 +5,35 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2018
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
-ms.reviewer: heenamac
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd87b33d36d17f32945eb591307eb55241173ca9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a1c68421bf7c5dea0d93d45e0cbb748204d0f66b
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724071"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749391"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Apparaatprofielen controleren in Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Intune bevat functies in Azure Portal om u te helpen bij het controleren en beheren van uw apparaatconfiguratieprofielen. U kunt bijvoorbeeld de status van een profiel controleren, zien welke apparaten zijn toegewezen en de eigenschappen van een profiel bijwerken.
+Intune bevat functies om u te helpen bij het controleren en beheren van uw apparaatconfiguratieprofielen. U kunt bijvoorbeeld de status van een profiel controleren, zien welke apparaten zijn toegewezen en de eigenschappen van een profiel bijwerken.
 
 ## <a name="view-existing-profiles"></a>Bestaande profielen weergeven
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer **Apparaatconfiguratie** > **Profielen**.
+2. Selecteer **Apparaatconfiguratie** > **Profielen**.
 
 Al uw bestaande profielen worden weergegeven en bevatten gegevens zoals het platform en laat zien of het profiel is toegewezen aan een of meer apparaten.
 
@@ -43,13 +44,13 @@ Nadat u een apparaatprofiel hebt gemaakt, biedt Intune grafieken. In deze grafie
 1. Selecteer een bestaand profiel. Selecteer bijvoorbeeld een macOS-profiel.
 2. Selecteer het tabblad **Overzicht**.
 
-    In de bovenste grafiek wordt het aantal apparaten weergegeven dat is toegewezen aan het specifieke apparaatprofiel. Als het apparaatconfiguratieprofiel bijvoorbeeld is toegepast op macOS-apparaten, geeft de grafiek het aantal macOS-apparaten weer.
+    In de bovenste grafiek wordt het aantal apparaten weergegeven dat is toegewezen aan het apparaatprofiel. Als het apparaatconfiguratieprofiel bijvoorbeeld is toegepast op macOS-apparaten, geeft de grafiek het aantal macOS-apparaten weer.
 
     De grafiek geeft ook voor andere platforms het aantal apparaten weer dat is toegewezen aan hetzelfde apparaatprofiel. Zo wordt bijvoorbeeld het aantal niet-macOS-apparaten weergegeven.
 
     ![Het aantal apparaten weergeven dat is toegewezen aan het apparaatprofiel](./media/device-profile-monitor/device-configuration-profile-graphical-chart.png)
 
-    In de onderste grafiek wordt het aantal gebruikers weergegeven dat is toegewezen aan het specifieke apparaatprofiel. Als het apparaatconfiguratieprofiel bijvoorbeeld is toegepast op macOS-gebruikers, geeft de grafiek het aantal macOS-gebruikers weer.
+    In de onderste grafiek wordt het aantal gebruikers weergegeven dat is toegewezen aan het apparaatprofiel. Als het apparaatconfiguratieprofiel bijvoorbeeld is toegepast op macOS-gebruikers, geeft de grafiek het aantal macOS-gebruikers weer.
 
 3. Selecteer de cirkel in de bovenste grafiek. **Apparaatstatus** wordt geopend.
 
@@ -72,7 +73,7 @@ Nadat u een apparaatprofiel hebt gemaakt, biedt Intune grafieken. In deze grafie
 
 ## <a name="view-conflicts"></a>Conflicten weergeven
 
-In **Apparaten** > **Alle apparaten** kunt u alle instellingen bekijken die een conflict veroorzaken. Als er een conflict optreedt, krijgt u ook alle configuratieprofielen met deze instelling te zien. Beheerders kunnen deze functie gebruiken om problemen op te sporen bij deze profielen en eventuele discrepanties op te lossen.
+In **Apparaten** > **Alle apparaten** kunt u alle instellingen bekijken die een conflict veroorzaken. Als er een conflict optreedt, ziet u ook alle configuratieprofielen met deze instelling. Beheerders kunnen deze functie gebruiken om problemen op te sporen bij deze profielen en eventuele discrepanties op te lossen.
 
 1. Selecteer in Intune **Apparaten** > **Alle apparaten** > selecteer een bestaand apparaat in de lijst. Een eindgebruiker kan de naam van het apparaat ophalen van de bedrijfsportal-app.
 2. Selecteer **Apparaatconfiguratie**. Al het configuratiebeleid dat betrekking heeft op het apparaat wordt weergegeven.
@@ -80,6 +81,34 @@ In **Apparaten** > **Alle apparaten** kunt u alle instellingen bekijken die een 
 
 Nu u weet wat de conflicterende instelling is en welke beleidsregels die instelling omvatten, moet het eenvoudiger zijn om het conflict op te lossen. 
 
+## <a name="device-firmware-configuration-interface-profile-reporting"></a>Profielrapport configuratie-interface voor apparaatfirmware
+
+> [!WARNING]
+> Bewakingsgegevens van DFCI-profielen worden momenteel gemaakt. Wanneer DFCI in openbare preview is, kunnen bewakingsgegevens ontbreken of onvolledig zijn.
+
+DFCI-profielen worden op basis van instellingen per instelling gerapporteerd, net als andere apparaatconfiguratieprofielen. Afhankelijk van de ondersteuning van de fabrikant voor DFCI zijn sommige instellingen mogelijk niet van toepassing.
+
+Met uw DFCI-profielinstellingen ziet u mogelijk de volgende statussen:
+
+- **Compatibel**: Deze status geeft aan wanneer een instellingswaarde in het profiel overeenkomt met de instelling op het apparaat. Deze status kan zich in de volgende scenario's voordoen:
+
+  - Het DFCI-profiel heeft de instelling in het profiel geconfigureerd.
+  - Het apparaat beschikt niet over de hardwarefunctie die wordt beheerd door de instelling en de profielinstelling is **Uitgeschakeld**.
+  - UEFI staat DFCI niet toe om de functie uit te schakelen en de profielinstelling is **Ingeschakeld**.
+  - Op het apparaat ontbreekt de hardware om de functie uit te schakelen en de profielinstelling is **Ingeschakeld**.
+
+- **Niet van toepassing**: Deze status geeft aan wanneer een instellingswaarde in het profiel is **Ingeschakeld** en de overeenkomende instelling op het apparaat niet is gevonden. Deze status kan zich voordoen als de hardware van het apparaat niet beschikt over de functie.
+
+- **Niet-compatibel**: Deze status geeft aan wanneer een instellingswaarde in het profiel niet overeenkomt met de instelling op het apparaat. Deze status kan zich in de volgende scenario's voordoen:
+
+  - UEFI staat DFCI niet toe om een functie uit te schakelen en de profielinstelling wordt **Uitgeschakeld**.
+  - Op het apparaat ontbreekt de hardware om de functie uit te schakelen en de profielinstelling wordt **Uitgeschakeld**.
+  - Op het apparaat is niet de nieuwste versie van de DFCI-firmware geïnstalleerd.
+  - DFCI wordt uitgeschakeld voordat het wordt ingeschreven bij Intune met behulp van een lokaal 'opt-out'-besturingselement in het UEFI-menu.
+  - Het apparaat was geregistreerd bij Intune buiten de Autopilot-inschrijving.
+  - Het apparaat is niet geregistreerd voor Autopilot door een Microsoft-cryptografie provider of is rechtstreeks geregistreerd door de OEM.
+
 ## <a name="next-steps"></a>Volgende stappen
-[Gebruikers- en apparaatprofielen toewijzen](../device-profile-assign.md)  
-[Veelvoorkomende problemen met apparaatprofielen en oplossingen](device-profile-troubleshoot.md)
+
+[Algemene vragen, problemen en oplossingen met apparaatprofielen](device-profile-troubleshoot.md)  
+[Beleidsregels en profielen voor het oplossen van problemen in Intune](troubleshoot-policies-in-microsoft-intune.md)

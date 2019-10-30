@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c4d40d3f15fe23511f3f15f7c13181a0fa72f6b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 91627a47f9dccfb436e64aaadeeb392648dff821
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726515"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585300"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen  
 
@@ -82,7 +83,7 @@ Gebruik de volgende opties voor toegang tot Help en ondersteuning:
   4. Selecteer de koppeling naar de pagina Help en ondersteuning voor Intune.
 
 > [!NOTE]  
-> Als uw exemplaar van Intune wordt gehost op de Government Compute Cloud (GCC), ook wel een soevereine cloud zoals Azure Government genoemd, raadpleegt u Intune-ondersteuning voor Government Compute Cloud, verderop in dit artikel. De *Help en ondersteuning*-ervaring voor Intune is pas later dit jaar beschikbaar voor de GCC. 
+> Als uw exemplaar van Intune wordt gehost in de privécloud voor overheidsentiteiten, ook wel een soevereine cloud genoemd, zoals Azure Government, raadpleegt u [Intune-ondersteuning voor de privécloud voor de overheid](#intune-support-for-private-cloud-for-government) verderop in dit artikel. De *Help en ondersteuning*-ervaring voor Intune is pas later dit jaar beschikbaar voor de privécloud voor de overheid. 
 
 
 Wanneer u *Help en ondersteuning* opent, is de weergave in de portal afhankelijk van of u actieve ondersteuningsincidenten hebt. Als u Premier Support hebt, bevat de weergave ook enkele extra elementen en opties:
@@ -162,20 +163,20 @@ Selecteer de knop Geschiedenis om de ondersteuningsincidenten weer te geven die 
 
 Wanneer u het navigatiedeelvenster **Help en ondersteuning** aan de linkerkant gebruikt of de optie **?** rechtsboven in de Azure-portal gebruikt, opent u de Azure Help en ondersteuning-ervaring. Deze is anders dan de Intune Help en ondersteuning-ervaring.  
 
-Sinds april 2019 hebt u geen toegang tot de Azure *Help en ondersteuning*-ervaring om hulp te krijgen met Intune, tenzij u een abonnement op de Government Compute Cloud (GCC) hebt.  
+Sinds april 2019 hebt u geen toegang tot de *Help en ondersteuning*-ervaring van Azure om hulp te krijgen bij Intune, tenzij u een abonnement op een privécloud voor overheidsentiteiten hebt.  
 
-Als uw exemplaar van Intune niet op GCC wordt uitgevoerd, wordt u bij navigatie in Azure *Help en ondersteuning* omgeleid naar de Intune *Help en ondersteuning*-ervaring voor het maken en beheren van ondersteuningsincidenten.  
+Als uw exemplaar van Intune niet in een privécloud voor de overheid wordt uitgevoerd, wordt u bij navigatie in *Help en ondersteuning* van Azure omgeleid naar de *Help en ondersteuning*-ervaring van Intune voor het maken en beheren van ondersteuningsincidenten.  
 
 
-## <a name="intune-support-for-government-compute-cloud"></a>Intune-ondersteuning voor Government Compute Cloud  
+## <a name="intune-support-for-private-cloud-for-government"></a>Intune-ondersteuning voor de privécloud voor de overheid  
 
-Als uw Intune-abonnement wordt gehost op de Government Compute Cloud (GCC), ook wel een soevereine cloud zoals Azure Government genoemd, hebt u nog geen toegang tot de nieuwere Intune Help en ondersteuning-ervaring.  Gebruik in plaats daarvan de volgende informatie om ondersteuning te vragen voor Intune. 
+Als uw Intune-abonnement wordt gehost in de privécloud voor de overheid, ook wel een soevereine cloud genoemd, zoals Azure Government, hebt u nog geen toegang tot de nieuwere Help en ondersteuning-ervaring van Intune.  Gebruik in plaats daarvan de volgende informatie om ondersteuning te vragen voor Intune. 
 
 
 ### <a name="create-an-online-support-ticket"></a>Een onlineondersteuningsticket maken 
 
 >[!IMPORTANT]    
-> Als *Help en ondersteuning* wordt overgezet naar een nieuw systeem dat nog niet beschikbaar is voor de GCC en u een ondersteuningsincident maakt, wordt in de portal een ondersteuningscase voorzien van een identificatienummer van 15 cijfers. Wanneer het 15-cijferige geval wordt gemaakt, wordt die case gespiegeld voor gebruik door Microsoft Ondersteuning. Deze gespiegelde case wordt gemaakt in een nieuw ondersteuningssysteem, maakt gebruik van een 8-cijferige case-id en wordt gebruikt door ondersteuningsservices voor het bijhouden van alle activiteit en communicatie voor uw ondersteuningsincident. Kort nadat uw 15-cijferige case is gemaakt, ontvangt u een e-mailbericht met het 8-cijferige nummer van de gespiegelde ondersteuningscase die wordt gebruikt door de ondersteuningsservices.  
+> Als *Help en ondersteuning* wordt overgezet naar een nieuw systeem dat nog niet beschikbaar is voor de privécloud voor de overheid en u een ondersteuningsincident maakt, wordt in de portal een ondersteuningscase voorzien van een identificatienummer van 15 cijfers. Wanneer het 15-cijferige geval wordt gemaakt, wordt die case gespiegeld voor gebruik door Microsoft Ondersteuning. Deze gespiegelde case wordt gemaakt in een nieuw ondersteuningssysteem, maakt gebruik van een 8-cijferige case-id en wordt gebruikt door ondersteuningsservices voor het bijhouden van alle activiteit en communicatie voor uw ondersteuningsincident. Kort nadat uw 15-cijferige case is gemaakt, ontvangt u een e-mailbericht met het 8-cijferige nummer van de gespiegelde ondersteuningscase die wordt gebruikt door de ondersteuningsservices.  
 > 
 > Ondersteun persoonlijk werk en communiceer op basis van de 8-cijferige ondersteuningscase. Gebruik de 8-cijferige ondersteuningscase alleen om de communicatie te registreren en de voortgang van het incident bij te houden. U ontvangt updates per e-mail op basis van die 8-cijferige ondersteuningscase die fungeert als de record voor het bijhouden van het werk aan uw case. Er worden geen details gelogd in het 15-cijferige ondersteuningsincident. Wanneer de ondersteuning is voltooid en de 8-cijferige ondersteuningscase wordt gesloten, wordt deze status ook weergegeven in de 15-cijferige ondersteuningscase die u kunt bekijken in de Azure-portal.  Er mogen geen andere updates of statuswijzigingen worden verwacht voor de ondersteuningscase van 15 cijfers.  
 > 
@@ -223,7 +224,7 @@ U kunt uw ondersteuningsaanvragen weergeven in de Azure-portal. De beschikbare i
 2. Op de pagina **Help en ondersteuning** kunt u de lijst met **recente ondersteuningsaanvragen** weergeven.
 
    > [!IMPORTANT]  
-   > Government Compute Cloud-klanten kunnen alleen het ondersteuningscasenummer van 15 cijfers en de incidentstatus weergeven. Alle communicatie over de case en bijgehouden werk of waarschuwingen worden per e-mail verzonden en verwijzen naar het ondersteuningscasenummer van 8 cijfers dat is gemaakt als gespiegelde ondersteuningscase van de aanvraag die in de Intune-console is geopend.   
+   > Klanten van de privécloud voor de overheid kunnen alleen het ondersteuningscasenummer van 15 cijfers en de incidentstatus weergeven. Alle communicatie over de case en bijgehouden werk of waarschuwingen worden per e-mail verzonden en verwijzen naar het ondersteuningscasenummer van 8 cijfers dat is gemaakt als gespiegelde ondersteuningscase van de aanvraag die in de Intune-console is geopend.   
 
 ## <a name="additional-resources"></a>Extra resources  
 

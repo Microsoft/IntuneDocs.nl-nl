@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dac7069e30c173d80f15977ba2f06fcabcb7179b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9625243698bffc93ed969a8c2e4b06b4f3093f4d
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724435"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785536"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>iOS- en macOS-apps beheren die zijn aangeschaft via het Apple Volume Purchase Program met Microsoft Intune
 
@@ -57,7 +58,7 @@ Verder kunt u met Intune boeken op iOS-apparaten die u hebt gekocht via het Appl
 
 ### <a name="supports-apple-volume-purchase-program-volume-purchased-apps"></a>Ondersteunt apps die zijn gekocht via het Apple Volume Purchase Program
 
-U kunt meerdere licenties voor iOS- en macOS-apps kopen via het [Apple-VPP voor bedrijven (Apple Volume Purchase Program for Business)](https://www.apple.com/business/vpp/) of het [Apple VPP voor onderwijs (Apple Volume Purchase Program for Education)](https://volume.itunes.apple.com/us/store). Hiervoor moet u een Apple VPP-account via de website van Apple instellen en het Apple VPP-token uploaden naar Intune.  U kunt uw gegevens over volume-aankopen vervolgens synchroniseren met Intune en het gebruik bijhouden van uw via het volume-aankoopprogramma gekochte apps.
+U kunt meerdere licenties voor iOS- en macOS-apps kopen via het [Apple VPP voor bedrijven (Volume Purchase Program)](https://www.apple.com/business/vpp/) of het [Apple VPP voor onderwijs (Volume Purchase Program)](https://volume.itunes.apple.com/us/store). Hiervoor moet u een Apple VPP-account via de website van Apple instellen en het Apple VPP-token uploaden naar Intune.  U kunt uw gegevens over volume-aankopen vervolgens synchroniseren met Intune en het gebruik bijhouden van uw via het volume-aankoopprogramma gekochte apps.
 
 ### <a name="supports-business-to-business-volume-purchased-apps"></a>Ondersteunt apps die zijn gekocht via het business-to-business-volume-aankoopprogramma
 
@@ -93,7 +94,7 @@ Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar
         > Als u het land of de regio wijzigt, worden de metagegevens en store-URL van de apps bijgewerkt bij de volgende synchronisatie met de Apple-service voor de apps die met deze token zijn gemaakt. De app wordt niet bijgewerkt als deze niet bestaat in de store van het nieuwe land of de nieuwe regio.
 
     - **Type VPP-account**: u hebt de keuze uit **Bedrijven** of **Onderwijs**.
-    - **Automatische updates voor apps**: kies **Aan** of **Uit** om automatische updates in of uit te schakelen. Wanneer deze zijn ingeschakeld, detecteert Intune updates voor de VPP-app in de app store en pusht ze automatisch naar het apparaat als dit incheckt. Met automatische updates voor Apple VPP-apps worden alleen apps die zijn geïmplementeerd met de installatie-intentie **Vereiste**, automatisch bijgewerkt. Voor apps die zijn geïmplementeerd met de installatie-intentie **Beschikbaar**, wordt met de automatische update voor de beheerder een melding gegenereerd waarin staat dat een nieuwe versie van de app beschikbaar is. Daarnaast ziet de gebruiker dat de app niet is geïnstalleerd in de Bedrijfsportal, zelfs als er een eerdere versie van de app is geïnstalleerd. In dit geval kan de gebruiker de app opnieuw installeren door te klikken op **Installeren** in het app-detailscherm in de bedrijfsportal-app om de nieuwe versie van de app te installeren.
+    - **Automatische updates voor apps**: kies **Aan** of **Uit** om automatische updates in of uit te schakelen. Wanneer deze zijn ingeschakeld, detecteert Intune updates voor de VPP-app in de app store en pusht ze automatisch naar het apparaat als dit incheckt. Met automatische updates voor Apple VPP-apps worden alleen apps die zijn geïmplementeerd met de installatie-intentie **Vereiste**, automatisch bijgewerkt. Voor apps die zijn geïmplementeerd met de installatie-intentie **Beschikbaar**, wordt met de automatische update voor de IT-beheerder een statusbericht gegenereerd waarin staat dat een nieuwe versie van de app beschikbaar is. Dit statusbericht kan worden weergegeven door de app te selecteren, Apparaatinstallatiestatus te selecteren en de Statusdetails te controleren. Daarnaast ziet de gebruiker dat de app niet is geïnstalleerd in de Bedrijfsportal, zelfs als er een eerdere versie van de app is geïnstalleerd. In dit geval kan de gebruiker de app opnieuw installeren door te klikken op **Installeren** in het app-detailscherm in de bedrijfsportal-app om de nieuwe versie van de app te installeren.
 
         > [!NOTE]
         > Automatische updates voor apps worden gebruikt voor apps voor zowel gelicentieerde apparaten als gebruikers voor iOS-versie 11.0 en hoger of macOS 10.12 en hoger.

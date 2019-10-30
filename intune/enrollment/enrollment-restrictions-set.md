@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
@@ -17,20 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
+ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379817"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587960"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Als Intune-beheerder kunt u inschrijvingsbeperkingen maken en beheren waarmee wordt gedefinieerd welke apparaten kunnen worden ingeschreven bij Intune, inclusief:
-- aantal apparaten
-- besturingssystemen en versies. U kunt meerdere beperkingen maken en deze toepassen op verschillende gebruikersgroepen. U kunt de [volgorde van prioriteit](#change-enrollment-restriction-priority) voor uw andere beperkingen instellen.
+- Aantal apparaten.
+- Besturingssystemen en versies.
+
+U kunt meerdere beperkingen maken en deze toepassen op verschillende gebruikersgroepen. U kunt de [volgorde van prioriteit](#change-enrollment-restriction-priority) voor uw andere beperkingen instellen.
 
 >[!NOTE]
 >Inschrijvingsbeperkingen vormen geen beveiligingsfuncties. Aangetaste apparaten kunnen zich anders voordoen dan ze in werkelijkheid zijn. Deze beperkingen zijn een best-effort barrière voor niet-kwaadwillende gebruikers.
@@ -69,8 +72,17 @@ Standaardbeperkingen worden automatisch opgegeven voor registratiebeperkingen vo
     - Android-apparaatbeheerder en Android Enterprise-werkprofiel bieden ondersteuning voor major.minor.rev.build.
     - iOS ondersteunt major.minor.rev. Versies van besturingssystemen zijn niet van toepassing op Apple-apparaten die worden ingeschreven met Device Enrollment Program, Apple School Manager of de app Apple Configurator.
     - Windows biedt alleen ondersteuning voor major.minor.build.rev voor Windows 10.
-    > [!Note]
-    > Windows 10 verstrekt niet het rev-nummer tijdens het inschrijven. Als u bijvoorbeeld 10.0.17134.100 invoert en het apparaat nummer 10.0.17134.174 heeft, wordt het apparaat geblokkeerd.
+    
+    > [!IMPORTANT]
+    > Apparaatbeheerdersplatforms voor Android Enterprise (werkprofiel) en Android vertonen het volgende gedrag:
+    > - Als beide platforms zijn toegestaan voor dezelfde groep, worden gebruikers ingeschreven voor een werkprofiel als hun apparaat dit ondersteunt. Anders worden ze ingeschreven als apparaatbeheerder. 
+    > - Als beide platforms zijn toegestaan voor de groep en zijn verfijnd voor specifieke en niet-overlappende versies, ontvangen gebruikers de inschrijvingsstroom die is gedefinieerd voor hun besturingssysteemversie. 
+    > - Als beide platforms zijn toegestaan maar voor dezelfde versies zijn geblokkeerd, worden gebruikers op apparaten met de geblokkeerde versies naar de inschrijvingsstroom voor Android-apparaatbeheerders geleid. Vervolgens worden ze geblokkeerd voor inschrijving en moeten ze zich afmelden. 
+    >
+    > Let op: de inschrijving van het werkprofiel of de apparaatbeheerder werkt pas als bij de Android-inschrijving aan de juiste vereisten is voldaan. 
+    
+   > [!Note]
+   > Windows 10 verstrekt niet het rev-nummer tijdens het inschrijven. Als u bijvoorbeeld 10.0.17134.100 invoert en het apparaat nummer 10.0.17134.174 heeft, wordt het apparaat geblokkeerd.
 
 8. Kies onder **Persoonlijk eigendom** de optie **Toestaan** voor de platforms die u wilt toestaan als apparaten in persoonlijk eigendom.
 9. Kies **Volgende** om naar de pagina **Toewijzingen** te gaan.

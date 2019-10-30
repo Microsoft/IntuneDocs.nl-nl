@@ -5,10 +5,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
-ms.topic: article
-ms.prod: ''
+ms.date: 10/18/2019
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e6b9f7d6aeda219af0f0cf3d0f5c34a3f03d258
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4e28db0d24101ae65ff8c5e49febd0ff5dddc6e2
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722888"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585440"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>SCEP-certificaatprofielen maken en toewijzen in Intune
 
@@ -50,7 +50,7 @@ Nadat u [uw infrastructuur hebt geconfigureerd](certificates-scep-configure.md) 
 
    2. Certificaatrapportage is onder Bewaking niet beschikbaar voor de SCEP-certificaatprofielen voor apparaateigenaar.
    
-   3. Het intrekken van certificaten die zijn ingericht met SCEP-certificaatprofielen voor apparaateigenaar, wordt niet ondersteund via Intune, maar kan worden beheerd via een extern proces of rechtstreeks bij de certificeringsinstantie.
+   3. U kunt Intune niet gebruiken om certificaten in te trekken die zijn ingericht door SCEP-certificaatprofielen voor eigenaren van apparaten. U kunt het intrekken beheren via een extern proces of rechtstreeks met de certificeringsinstantie. 
 
 6. Selecteer **Instellingen** en voltooi de volgende configuraties:
 
@@ -113,15 +113,13 @@ Nadat u [uw infrastructuur hebt geconfigureerd](certificates-scep-configure.md) 
         - **{{DeviceName}}**
         - **{{FullyQualifiedDomainName}}** *(Alleen van toepassing op Windows-apparaten en apparaten die aan een domein zijn toegevoegd)*
         - **{{MEID}}**
-        
+
         U kunt deze variabelen opgeven in het tekstvak, gevolgd door de tekst voor de variabele. De algemene naam voor een apparaat met de naam *Device1* kan bijvoorbeeld worden toegevoegd als **CN={{DeviceName}}Device1**.
 
         > [!IMPORTANT]  
         > - Plaats bij het opgeven van een variabele de naam van de variabele tussen accolades {}, zoals in het voorbeeld te zien is, om fouten te voorkomen.  
         > - Apparaateigenschappen die worden gebruikt in het *onderwerp* of de *SAN* van een apparaatcertificaat, zoals **IMEI**, **SerialNumber** en **FullyQualifiedDomainName**, zijn eigenschappen die kunnen worden vervalst door een persoon die toegang tot het apparaat heeft.
         > - Een apparaat moet alle variabelen ondersteunen die zijn opgegeven in een certificaatprofiel, anders kan het profiel niet worden geïnstalleerd op het apparaat.  Als bijvoorbeeld **{{IMEI}}** wordt gebruikt in de onderwerpnaam van een SCEP-profiel en deze variabele wordt toegewezen aan een apparaat dat geen IMEI-nummer heeft, mislukt de installatie van het profiel.  
- 
-
 
    - **Alternatieve naam voor het onderwerp**:  
      Selecteer hoe Intune de alternatieve naam voor onderwerp (SAN) automatisch moet maken in de certificaataanvraag. De opties voor de SAN zijn afhankelijk van het certificaattype dat u hebt geselecteerd: **Gebruiker** of **Apparaat**.  
@@ -198,7 +196,7 @@ Nadat u [uw infrastructuur hebt geconfigureerd](certificates-scep-configure.md) 
      Voeg waarden toe voor het beoogde gebruik van het certificaat. In de meeste gevallen vereist het certificaat *clientverificatie* zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. U kunt zo nodig ook extra sleutelgebruik toevoegen.
 
    - **Drempelwaarde voor verlenging (%)** :  
-     Geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt. Als u bijvoorbeeld 20 invoert, wordt geprobeerd het certificaat te vernieuwen wanneer het certificaat voor 80 procent is verlopen en wordt dat vervolgd tot het certificaat is vernieuwd. Bij het vernieuwen wordt een nieuw certificaat gegenereerd dat een nieuw paar openbare/persoonlijke sleutel oplevert.
+     Geef het percentage van de levensduur van het certificaat op dat resteert voordat het apparaat verlenging van het certificaat aanvraagt. Als u bijvoorbeeld 20 invoert, wordt geprobeerd het certificaat te vernieuwen wanneer het certificaat voor 80 procent is verlopen. Het vernieuwen wordt steeds opnieuw geprobeerd tot het vernieuwen is voltooid. Bij het vernieuwen wordt een nieuw certificaat gegenereerd dat een nieuw paar openbare/persoonlijke sleutel oplevert.
 
    - **URL's van SCEP-server**:  
      Voer een of meer URL's in voor de NDES-servers die certificaten via SCEP verlenen. Voer bijvoorbeeld iets in als *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . U kunt indien nodig aanvullende SCEP-URL's voor taakverdeling toevoegen, omdat URL's willekeurig op het apparaat met het profiel worden gepusht. Als een van de SCEP-servers niet beschikbaar is, mislukt de SCEP-aanvraag. Dan wordt de volgende keer dat er apparaten worden ingecheckt, de certificaataanvraag mogelijk uitgevoerd op dezelfde niet-actieve server.
@@ -206,7 +204,7 @@ Nadat u [uw infrastructuur hebt geconfigureerd](certificates-scep-configure.md) 
 7. Selecteer **OK** en selecteer vervolgens **Maken**. Het profiel is gemaakt en wordt weergegeven in de lijst *Apparaatconfiguratie - Profielen*.
 
 ### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Aanvragen voor certificaatondertekening met speciale tekens met escape-teken vermijden
-Er is een bekend probleem met SCEP-certificaataanvragen die een onderwerpnaam (CN) bevatten met een of meer van de volgende speciale tekens na een escape-teken. Onderwerpnamen die in een CSR een van deze speciale tekens bevatten na een escape-teken, resulteren in een onjuiste onderwerpnaam. Dit leidt op zijn beurt tot het mislukken van de SCEP-validatievraag van Intune en het niet uitgeven van een certificaat.  
+Er is een bekend probleem met SCEP- en PKCS-certificaataanvragen die een onderwerpnaam (CN) bevatten met een of meer van de volgende speciale tekens na een escape-teken. Namen van onderwerpen die een van de speciale tekens bevatten als resultaat van een escape-teken in een CSR met een onjuiste onderwerpnaam. Een onjuiste onderwerpnaam resulteert in het mislukken van de Intune-validatie van de SCEP-controle en er wordt geen certificaat uitgegeven.
 
 Dit gaat over de volgende speciale tekens:
 - \+

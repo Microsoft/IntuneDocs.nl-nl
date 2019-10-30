@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03c38472a3100ec2d717e802e07e189a53ac0866
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ee22ee435830137a423423aa692376aabbb6cecb
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725007"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585419"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>App-gegevens en -toewijzingen controleren met Microsoft Intune
 
@@ -37,6 +38,8 @@ Intune biedt een aantal manieren om de eigenschappen te controleren van apps die
 
 > [!NOTE]
 > Van Android Store-apps die als **beschikbaar** worden ingericht, wordt de installatiestatus niet vermeld.
+>
+> Voor beheerde Google Play-apps die op apparaten met een Android Enterprise-werkprofiel zijn geïmplementeerd, kunt u de status en het versienummer van de op een apparaat geïnstalleerde app weergeven met Intune. 
 
 ## <a name="app-overview-pane"></a>Deelvenster met een app-overzicht
 
@@ -75,7 +78,7 @@ Wanneer u **Apparaatinstallatiestatus** in de sectie **Controleren** van het men
 | **Apparaatnaam**      | De naam van het apparaat op platforms waarop het benoemen van een apparaat is toegestaan. Op andere platforms maakt Intune een naam op basis van andere eigenschappen. Dit kenmerk is niet beschikbaar op andere apparaten.                                                                       |
 | **Gebruikersnaam**        | De naam van de gebruiker.                                                                                                                                                                                                                                      |
 | **Platform**         | Het besturingssysteem van het apparaat (Windows, iOS, Android, enzovoort).                                                                                                                                                                                           |
-| **Versie**          | Het versienummer van de app. Voor LOB-apps (Line-Of-Business) en Microsoft Store voor Bedrijven wordt het volledige versienummer van de app weergegeven. Het volledige versienummer duidt een specifieke release van de app aan. Het nummer wordt weergegeven als _Versie_(_Build_). Bijvoorbeeld 2.2(2.2.17560800). Voor standaard-Store-apps worden geen versies weergegeven. |
+| **Versie**          | Het versienummer van de app. Voor LOB-apps (Line-Of-Business) en Microsoft Store voor Bedrijven-apps wordt het volledige versienummer van de app weergegeven. Het volledige versienummer duidt een specifieke release van de app aan. Het nummer wordt weergegeven als _Versie_(_Build_). Bijvoorbeeld 2.2(2.2.17560800). Voor standaard-Store-apps worden geen versies weergegeven. |
 | **Status**           | De status van de app.                                                                                                                                                                                                                                     |
 | **Statusdetails**   | De details van de status.                                                                                                                                                                                                                                     |
 | **Laatste check-in**    | De datum van de laatste synchronisatie van het apparaat met Intune.                                                                                                                                                                                                                  |

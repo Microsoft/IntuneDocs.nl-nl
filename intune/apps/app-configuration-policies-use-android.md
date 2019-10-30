@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d31126a259274a2c75f933428632e274d8710aa6
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: 9561c50e21a9667ccec3f9de3627e7a933cf0736
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350032"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584999"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>App-configuratiebeleidsregels toevoegen voor beheerde Android Enterprise-apparaten
 
@@ -68,14 +69,16 @@ U kunt de volgende opties kiezen als u Variabele als het waardetype kiest:
 
 | Optie | Voorbeeld |
 |----|----|
-| Mail | john@contoso.com |
-| User Principal Name | john@contoso.com |
-| Partial UPN | jan |
-| Domein | contoso.com |
-| Gebruikersnaam | Jan de Vries |
+| AAD-apparaat-id | dc0dc142-11d8-4b12-bfea-cae2a8514c82 |
 | Account-id | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| Intune-apparaat-id | b9841cd9-9843-405f-be28-b2265c59ef97 |
+| Domein | contoso.com |
+| Mail | john@contoso.com |
+| Partial UPN | jan |
 | Gebruikers-id | 3ec2c00f-b125-4519-acf0-302ac3761822 |
-| Apparaat-id | b9841cd9-9843-405f-be28-b2265c59ef97 |
+| Gebruikersnaam | Jan de Vries |
+| User Principal Name | john@contoso.com |
+
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Alleen geconfigureerde organisatieaccounts toestaan in apps met meerdere identiteiten 
 

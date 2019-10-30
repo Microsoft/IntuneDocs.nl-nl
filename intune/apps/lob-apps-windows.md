@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2b20030bd6c7e1dc9108002cc43f105cb8c6784
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 6df77d168bb8be3775c566f63833b46130515b36
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036455"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601585"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Een Windows Line-Of-Business-app toevoegen aan Microsoft Intune
 
@@ -82,12 +83,12 @@ Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Dit type
 
    > [!NOTE]
    > De Intune-service kan alleen een nieuw APPX-bestand op het apparaat implementeren als u de tekenreeks `Version` in het bestand AppxManifest.xml in uw APPX-pakket verhoogt.
-    
+
 ## <a name="configure-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>Een mobiele MSI-app die automatisch wordt bijgewerkt configureren om de versiecontrole te negeren
 
-U kunt een bekende mobiele MSI-app die automatisch wordt bijgewerkt configureren om de versiecontrole te negeren. 
+U kunt een bekende mobiele MSI-app die automatisch wordt bijgewerkt configureren om de versiecontrole te negeren.
 
-Sommige op MSI-installer gebaseerde apps worden automatisch bijgewerkt door de app-ontwikkelaar. Voor deze automatisch bijgewerkte MSI-apps kunt u de instelling **App-versie negeren** in het deelvenster **App-gegevens** configureren. Wanneer u deze instelling op **Ja** instelt, dwingt Microsoft Intune de app-versie die is geïnstalleerd op de Windows-client niet af. 
+Sommige op het MSI-installatieprogramma gebaseerde apps worden automatisch bijgewerkt door de app-ontwikkelaar of via een andere bijwerkmethode. Voor deze automatisch bijgewerkte MSI-apps kunt u de instelling **App-versie negeren** in het deelvenster **App-gegevens** configureren. Wanneer u deze instelling op **Ja** instelt, dwingt Microsoft Intune de app-versie die is geïnstalleerd op de Windows-client niet af.
 
 Met deze functie kunt u voorkomen dat er een racevoorwaarde optreedt. Een racevoorwaarde kan bijvoorbeeld optreden wanneer de app automatisch wordt bijgewerkt door de ontwikkelaar van de app en door Intune wordt bijgewerkt. Er kan door beide partijen worden geprobeerd om een versie van de app op een Windows-client af te dwingen, waardoor een conflict kan ontstaan.
 

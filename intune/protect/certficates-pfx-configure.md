@@ -1,13 +1,14 @@
 ---
 title: Certificaten met een persoonlijke en openbare sleutel gebruiken in Microsoft Intune - Azure | Microsoft Docs
-description: 'PKCS-certificaten (PKCS: Public Key Cryptography Standards) toevoegen of maken met Microsoft Intune, inclusief de stappen om een basiscertificaat te exporteren, de certificaatsjabloon te configureren, de Intune Certificate Connector (NDES) te downloaden en installeren, een apparaatconfiguratieprofiel te maken en een PKCS-certificaatprofiel in Azure en uw certificeringsinstantie (CA) te maken.'
+description: Gebruik PKCS-certificaten (Public Key Cryptography Standards) met Microsoft Intune. Dit omvat het werken met basiscertificaten en certificaatsjablonen, de installatie van de Intune Certificate Connector (NDES) en apparaatconfiguratieprofielen voor een PKCS-certificaat.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ee5ef1b5c59bbef3834d44354508b767ae99088
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b0f31add65063665da5a7961e2caf9eb30a847e2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722927"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72787883"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -58,7 +59,7 @@ Als u PKCS-certificaten wilt gebruiken met Intune, hebt u de volgende infrastruc
 - **Microsoft Intune Certificate Connector** (ook wel de *NDES-certificaatconnector* genoemd):  
   Ga in de Intune-portal naar **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen** en volgt u de *stappen om de connector te installeren voor PKCS #12*. Gebruik de downloadkoppeling om het downloaden van het installatieprogramma voor de certificaatconnector **NDESConnectorSetup.exe** te starten.  
 
-  Intune ondersteunt maximaal 100 instanties van deze connector per tenant, met elke instantie op een afzonderlijke Windows-server. U kunt een instantie van deze connector op dezelfde server installeren als een instantie van de PFX-certificaatconnector voor Microsoft Intune. Wanneer u meerdere connectors gebruikt, ondersteunt de infrastructuur van de connector hoge beschikbaarheid en taakverdeling als een beschikbare connectorinstantie uw PKCS-certificaataanvragen kan verwerken. 
+  Intune ondersteunt maximaal honderd exemplaren van deze connector per tenant. Elk exemplaar van de connector moet zich op een afzonderlijke Windows-server bevinden. U kunt een instantie van deze connector op dezelfde server installeren als een instantie van de PFX-certificaatconnector voor Microsoft Intune. Wanneer u meerdere connectors gebruikt, ondersteunt de infrastructuur van de connector hoge beschikbaarheid en taakverdeling als een beschikbare connectorexempplaar uw PKCS-certificaataanvragen kan verwerken. 
 
   Met deze connector worden PKCS-certificaataanvragen verwerkt die worden gebruikt voor verificatie of S/MIME-e-mailondertekening.
 
@@ -75,7 +76,7 @@ Als u PKCS-certificaten wilt gebruiken met Intune, hebt u de volgende infrastruc
   - De connector voor PFX-certificaten voor Microsoft Intune installeren op uw server.  
   - Voor het automatisch ontvangen van belangrijke updates moet u ervoor zorgen dat firewalls geopend zijn, waarmee de connector contact kan opnemen met **autoupdate.msappproxy.net** op poort **443**.   
 
-  Raadpleeg [Netwerkeindpunten voor Microsoft Intune](../fundamentals/intune-endpoints.md) voor meer informatie over alle netwerkeindpunten waar de Intune en de connector toegang tot moeten hebben.
+  Raadpleeg [Netwerkeindpunten voor Microsoft Intune](../fundamentals/intune-endpoints.md) voor meer informatie over alle netwerkeindpunten waartoe Intune en de connector toegang hebben.
 
 - **Windows Server**:  
   U gebruikt een Windows Server als host voor:
@@ -102,7 +103,7 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 
 1. Meld u aan bij uw CA voor ondernemingen met een account met beheerdersbevoegdheden.
 2. Open de console **Certificeringsinstantie**, klik met de rechtermuisknop op **Certificaatsjablonen** en selecteer **Beheren**.
-3. Zoek naar de certificaatsjabloon **Gebruiker**, klik er met de rechtermuisknop op en kies **Sjabloon dupliceren**. **Eigenschappen van nieuwe sjabloon** wordt geopend.
+3. Zoek naar de certificaatsjabloon **Gebruiker**, klik er met de rechtermuisknop op en kies **Sjabloon dupliceren** om **Eigenschappen van nieuwe sjabloon** te openen.
 
     > [!NOTE]
     > Voor scenario's voor S/MIME-e-mailversleuteling en -ondertekening gebruiken veel beheerders afzonderlijke certificaten voor ondertekening en versleuteling. Als u Microsoft Active Directory Certificate Services gebruikt, kunt u de sjabloon **Alleen Exchange-handtekening** gebruiken voor S/MIME-e-mailondertekeningscertificaten en de sjabloon **Exchange-gebruiker** voor S/MIME-versleutelingscertificaten.  Als u een certificeringsinstantie van derden gebruikt, is het verstandig de richtlijnen te raadplegen voor het instellen van sjablonen voor ondertekening en versleuteling.
@@ -165,7 +166,7 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 
 ## <a name="create-a-trusted-certificate-profile"></a>Een vertrouwd certificaatprofiel maken
 
-1. Ga in de [Azure-portal](https://portal.azure.com) naar **Intune** > **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en ga naar **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
     ![Navigeren naar Intune en een nieuw profiel voor een vertrouwd certificaat maken](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
 
 2. Voer de volgende eigenschappen in:
@@ -187,7 +188,7 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 
 ## <a name="create-a-pkcs-certificate-profile"></a>Een PKCS-certificaatprofiel maken
 
-1. Ga in de [Azure-portal](https://portal.azure.com) naar **Intune** > **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en ga naar **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
 2. Voer de volgende eigenschappen in:
 
     - **Naam** voor het profiel
@@ -195,22 +196,81 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
     - **Platform** waarvoor het profiel moet worden geïmplementeerd
     - Stel **Profieltype** in op **PKCS-certificaat**
 
-3. Ga naar **Instellingen** en voer de volgende eigenschappen in:
-
-    - **Drempelwaarde voor verlenging (%)** : 20% wordt aanbevolen.
-    - **Geldigheidsduur van certificaat**: Als u de certificaatsjabloon niet hebt gewijzigd, kan deze optie worden ingesteld op één jaar.
-    - **Sleutelarchiefprovider (KSP)** : Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan.
-    - **Certificeringsinstantie**: Geeft de interne FQDN (Fully Qualified Domain Name) van uw CA voor ondernemingen weer.
-    - **Naam van certificeringsinstantie**: Geeft de naam van uw CA voor ondernemingen weer, bijvoorbeeld "Contoso Certification Authority".
-    - **Certificaatsjabloonnaam**: De naam van de sjabloon die eerder is gemaakt. Nogmaals, **Sjabloonnaam** is standaard hetzelfde als **Weergavenaam van sjabloon**, maar dan *zonder spaties*.
-    - **Indeling van de onderwerpnaam**: Stel deze optie in op **Algemene naam** tenzij anders aangegeven.
-    - **Alternatieve naam voor het onderwerp**: Stel deze optie in op **User principal name (UPN)** tenzij anders aangegeven.
+3. Ga naar **Instellingen** en configureer de eigenschappen die van toepassing zijn op het platform dat u hebt geselecteerd:  
+   
+   |Instelling     | Platform     | Details   |
+   |------------|------------|------------|
+   |**Drempelwaarde voor verlenging (%)**        |Alle         |20% wordt aanbevolen  | 
+   |**Geldigheidsduur van certificaat**  |Alle         |Als u de certificaatsjabloon niet hebt gewijzigd, kan deze optie worden ingesteld op één jaar. |
+   |**Sleutelarchiefprovider (KSP)**   |Windows 10  | Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan. |
+   |**Certificeringsinstantie**      |Alle         |Geeft de interne FQDN (Fully Qualified Domain Name) van uw CA voor ondernemingen weer.  |
+   |**Naam van certificeringsinstantie** |Alle         |Geeft de naam van uw CA voor ondernemingen weer, bijvoorbeeld "Contoso Certification Authority". |
+   |**Certificaattype**             |macOS       |Selecteer een type: <br> **-** **Gebruiker**-certificaten kunnen zowel gebruikers- als apparaatkenmerken in het onderwerp en de SAN van het certificaat bevatten. <br><br>**-** **Apparaat**-certificaten kunnen alleen apparaatkenmerken in het onderwerp en de SAN van het certificaat bevatten. Gebruik Apparaat voor scenario's als apparaten zonder gebruiker, zoals kiosken of andere gedeelde apparaten.  <br><br> Deze selectie is van invloed op de indeling van de onderwerpnaam. |
+   |**Indeling van de onderwerpnaam**          |Alle         |Voor de meeste platformen stelt u deze optie in op **Algemene naam** tenzij anders aangegeven.<br><br>Voor macOS wordt de indeling van de onderwerpnaam bepaald door het certificaattype. Zie [Indeling van de onderwerpnaam voor macOS](#subject-name-format-for-macos) verderop in dit artikel. |
+   |**Alternatieve naam voor het onderwerp**     |Alle         |Stel deze optie in op **User principal name (UPN)** tenzij anders aangegeven. |
+   |**Uitgebreide-sleutelgebruik**           |**-** Android-apparaatbeheerder <br>**-** Android Enterprise (*Apparaateigenaar*, *Werkprofiel*) <br> **-** Windows 10 |Certificaten vereisen meestal *Clientverificatie*, zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. |
+   |**Alle apps mogen toegang hebben tot de persoonlijke sleutel** |macOS  |Stel in op **Inschakelen** om apps die zijn geconfigureerd voor het bijbehorende Mac-apparaat toegang te geven tot de persoonlijke sleutel van de PKCS-certificaten. <br><br> Zie *AllowAllAppsAccess* in de sectie Nettolading van certificaat van [Referentiemateriaal configuratieprofiel](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in de Apple-documentatie voor ontwikkelaars voor meer informatie over deze instelling. |
+   |**Basiscertificaat**             |**-** Android-apparaatbeheerder <br> **-** Android Enterprise (*Apparaateigenaar*, *Werkprofiel*) |Selecteer een basis-CA-certificaatprofiel dat eerder is toegewezen. |
 
 4. Selecteer **OK** > **Maken** om het profiel op te slaan.
 5. Raadpleeg [Microsoft Intune-apparaatprofielen toewijzen](../configuration/device-profile-assign.md) om het nieuwe profiel aan een of meer apparaten toe te wijzen.
 
    > [!NOTE]
    > Op apparaten met een Android Enterprise-profiel zijn certificaten die zijn geïnstalleerd met een PKCS-certificaatprofiel niet zichtbaar op het apparaat. Controleer de status van het profiel in de Intune-console om te controleren of de implementatie van het certificaat is geslaagd.
+
+### <a name="subject-name-format-for-macos"></a>Indeling van de onderwerpnaam voor macOS
+
+Wanneer u een PKCS-certificaatprofiel voor macOS maakt, zijn de opties voor de indeling van de onderwerpnaam afhankelijk van het certificaattype dat u selecteert, ofwel **Gebruiker** ofwel **Apparaat**.  
+
+> [!NOTE]  
+> Er is een bekend probleem bij het gebruik van PKCS, [hetzelfde probleem dat ook bij SCEP optreedt](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters), om certificaten op te halen wanneer in de onderwerpnaam in de resulterende aanvraag voor certificaatondertekening (Certificate Signing Request, CSR) een van de volgende tekens staat na een escape-teken (een backslash \\):
+> - \+
+> - ;
+> - ,
+> - =
+
+- **Certificaattype Gebruiker**  
+  De indelingsopties voor de *Indeling van de onderwerpnaam* omvatten twee variabelen: **Algemene naam (CN)** en **E-mail (E)** . **Algemene naam (CN)** kan worden ingesteld op een van de volgende variabelen:
+
+  - **CN={{UserName}}** : De user principal name van de gebruiker, bijvoorbeeld janedoe@contoso.com.
+  - **CN={{AAD_Device_ID}}** : Een id die wordt toegewezen wanneer u een apparaat in Azure Active Directory (AD) registreert. Deze id wordt doorgaans gebruikt voor verificatie met Azure AD.
+  - **CN={{SERIALNUMBER}}** : Het unieke serienummer (SN) dat doorgaans wordt gebruikt door de fabrikant om een apparaat te identificeren.
+  - **CN={{IMEINumber}}** : Het unieke nummer van de International Mobile Equipment Identity (IMEI) dat wordt gebruikt om een mobiele telefoon te identificeren.
+  - **CN={{OnPrem_Distinguished_Name}}** : Een reeks RDN's (Relative Distinguished Name), gescheiden door komma's, zoals *CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com*.
+
+    Als u de variabele *{{OnPrem_Distinguished_Name}}* wilt gebruiken, moet u het gebruikerskenmerk *onpremisesdistinguishedname* met behulp van [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw Azure AD.
+
+  - **CN={{onPremisesSamAccountName}}** : Beheerders kunnen het kenmerk samAccountName van Active Directory met behulp van Azure AD Connect synchroniseren met Azure AD in een kenmerk met de naam *onPremisesSamAccountName*. Deze variabele kan in Intune worden vervangen als onderdeel van een aanvraag voor certificaatuitgifte in het onderwerp van een certificaat. Het kenmerk samAccountName is de aanmeldingsnaam van de gebruiker die wordt gebruikt ter ondersteuning van clients en servers van een oudere versie dan Windows 2000. De indeling voor de aanmeldingsnaam van de gebruiker is: *DomainName\testUser* of alleen *testUser*.
+
+    Als u de variabele *{{onPremisesSamAccountName}}* wilt gebruiken, moet u het gebruikerskenmerk *onPremisesSamAccountName* met behulp van [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) synchroniseren met uw Azure AD.
+
+  Door een combinatie van een of meer van deze variabelen en statische tekenreeksen te gebruiken, kunt u een aangepaste indeling voor de naam van een certificaathouder maken, bijvoorbeeld:  
+  - **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+  
+  Dat voorbeeld bevat een indeling van de onderwerpnaam waarin gebruik wordt gemaakt van de variabelen CN en E, plus tekenreeksen voor de waarden Organizational Unit, Organization, Location, State en Country. [De functie CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) beschrijft deze functie en de ondersteunde tekenreeksen.
+
+- **Certificaattype Apparaat**  
+  Indelingsopties voor de Indeling van de onderwerpnaam zijn de volgende variabelen: 
+  - **{{AAD_Device_ID}}**
+  - **{{Device_Serial}}**
+  - **{{Device_IMEI}}**
+  - **{{SerialNumber}}**
+  - **{{IMEINumber}}**
+  - **{{AzureADDeviceId}}**
+  - **{{WiFiMacAddress}}**
+  - **{{IMEI}}**
+  - **{{DeviceName}}**
+  - **{{FullyQualifiedDomainName}}** *(Alleen van toepassing op Windows-apparaten en apparaten die aan een domein zijn toegevoegd)*
+  - **{{MEID}}**
+   
+  U kunt deze variabelen opgeven in het tekstvak, gevolgd door de tekst voor de variabele. De algemene naam voor een apparaat met de naam *Device1* kan bijvoorbeeld worden toegevoegd als **CN={{DeviceName}}Device1**.
+
+  > [!IMPORTANT]  
+  > - Plaats bij het opgeven van een variabele de naam van de variabele tussen accolades {}, zoals in het voorbeeld te zien is, om fouten te voorkomen.  
+  > - Apparaateigenschappen die worden gebruikt in het *onderwerp* of de *SAN* van een apparaatcertificaat, zoals **IMEI**, **SerialNumber** en **FullyQualifiedDomainName**, zijn eigenschappen die kunnen worden vervalst door een persoon die toegang tot het apparaat heeft.
+  > - Een apparaat moet alle variabelen ondersteunen die zijn opgegeven in een certificaatprofiel, anders kan het profiel niet worden geïnstalleerd op het apparaat.  Als bijvoorbeeld **{{IMEI}}** wordt gebruikt in de onderwerpnaam van een SCEP-profiel en deze variabele wordt toegewezen aan een apparaat dat geen IMEI-nummer heeft, mislukt de installatie van het profiel.  
+ 
+
 
 ## <a name="whats-new-for-connectors"></a>Wat is er nieuw voor connectors
 Updates voor de twee certificaatconnectors worden regelmatig uitgebracht. Als we een connector bijwerken, kunt u hier over de wijzigingen lezen. 

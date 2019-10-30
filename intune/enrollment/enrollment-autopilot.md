@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2ebca165c067afbc3d830e5f75ac9f8e29effb2
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: f2a1d964f157f33e439f659713fe8c2e02f852b3
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237234"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749413"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -77,7 +78,7 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
     3. Als **lidmaatschapstype** kiest u **Toegewezen** of **Dynamisch apparaat**.
 3. Als u in de vorige stap voor **Toegewezen** hebt gekozen als **lidmaatschapstype**, kiest u op de blade **Groep** de optie **Leden** en voegt u Autopilot-apparaten toe aan de groep.
     Autopilot-apparaten die nog niet zijn ingeschreven, zijn apparaten waarvan de naam overeenkomt met het serienummer van het apparaat.
-4. Als u hierboven de optie **Dynamische apparaten** hebt gekozen als **lidmaatschapstype**, kiest u op de blade **Groep** de optie **Leden van dynamisch apparaat** en typt u een de volgende codes in het vak **Geavanceerde regel**. Alleen Autopilot-apparaten worden door deze regels verzameld, omdat ze doelkenmerken hebben die alleen zijn gelden voor Autopilot-apparaten.
+4. Als u hierboven de optie **Dynamische apparaten** hebt gekozen als **lidmaatschapstype**, kiest u op de blade **Groep** de optie **Leden van dynamisch apparaat** en typt u een de volgende codes in het vak **Geavanceerde regel**. Alleen Autopilot-apparaten worden door deze regels verzameld, omdat ze doelkenmerken hebben die alleen zijn gelden voor Autopilot-apparaten. Het maken van een groep op basis van niet-Autopilot-kenmerken garandeert niet dat apparaten die zijn opgenomen in de groep daadwerkelijk zijn geregistreerd bij Autopilot.
     - Als u een groep wilt maken met al uw Autopilot-apparaten, typt u: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
     - Het veld met groepstags van Intune komt overeen met het kenmerk OrderID op Azure AD-apparaten. Als u een groep wilt maken met al uw Autopilot-apparaten met een specifieke groepstag (de OrderID voor Azure AD-apparaten), typt u: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Als u een groep wilt maken met al uw Autopilot-apparaten en een specifieke inkooporder-id, typt u `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
@@ -167,6 +168,11 @@ Vereisten: de Azure Active Directory-bedrijfsportal is geconfigureerd en Windows
     ![Schermafbeelding van beschrijvende naam](./media/enrollment-autopilot/friendly-name.png)
 
 4. Kies **OK**.
+
+## <a name="autopilot-deployments-report"></a>Rapport Autopilot-implementaties
+U kunt de details bekijken van elk apparaat dat via Windows Autopilot is geïmplementeerd.
+U kunt het rapport bekijken door naar **Intune** te gaan en onder **Bewaken** de optie **Autopilot-implementaties** te selecteren.
+De gegevens zijn tot 30 dagen na de implementatie beschikbaar.
 
 
 ## <a name="delete-autopilot-devices"></a>Autopilot-apparaten verwijderen

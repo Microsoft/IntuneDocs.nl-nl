@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afc9d953e1d324adb3f00eb5209732a858bbbcda
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314673"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503299"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
 
@@ -121,7 +122,7 @@ Zie [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/Spec
 
 ## <a name="change-device-ownership"></a>Apparaateigendom wijzigen
 
-De apparaateigenschappen tonen **Eigendom** voor de records van elk apparaat in Intune. Als beheerder kunt u apparaten als **Persoonlijk** of **Zakelijk** opgeven.
+De apparaateigenschappen tonen **Eigendom** voor de records van elk apparaat in Intune. Als beheerder kunt u apparaten als **Persoonlijk** of **Zakelijk** opgeven. Wanneer het eigendomstype van een apparaat wordt gewijzigd van Persoonlijk in Zakelijk, worden alle app-gegevens die eerder van het apparaat zijn verzameld, binnen zeven dagen verwijderd door Intune. Indien van toepassing, verwijdert Intune ook het bewaarde telefoonnummer. 
 
 **Ga als volgt te werk om het apparaateigendom te wijzigen:**
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), ga naar **Apparaten** en kies het apparaat.

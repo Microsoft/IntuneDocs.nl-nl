@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9306c7429adbe4a5159879ccbe7cb0f13e65ed
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725566"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785676"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Selectief gegevens wissen met acties voor voorwaardelijke toegang in app-beveiligingsbeleid in Intune
 
@@ -59,6 +60,7 @@ Voor iOS kunt u acties configureren voor de volgende instellingen met behulp van
 - Minimale versie van de app
 - Minimale SDK-versie
 - Apparaatmodel(len)
+- Maximaal toegestaan bedreigingsniveau van apparaat
 
 Als u de instelling voor **apparaatmodellen** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in met iOS-modelaanduidingen. U vindt de iOS-modelaanduidingen onder de kolom Apparaattype in [Ondersteuningsdocumentatie voor HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Voorbeeldinvoer: *iPhone5,2;iPhone5,3*
@@ -83,6 +85,7 @@ Voor Android kunt u acties configureren voor de volgende instellingen met behulp
 - Apparaatfabrikant(en)
 - SafetyNet-attestation voor apparaat
 - Bedreigingsscan voor apps
+- Maximaal toegestaan bedreigingsniveau van apparaat
 
 Als u de instelling **Apparaatfabrikant(en)** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in van Android-producenten. U vindt de Android-fabrikant van een apparaat in de apparaatinstellingen.<br>
 Voorbeeldinvoer: *Fabrikant A;Fabrikant B* 

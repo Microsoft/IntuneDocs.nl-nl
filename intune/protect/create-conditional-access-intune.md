@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e27997b45f0a68f6eb9247c69fafc363787fb457
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b775bb09c289733cdc2837984874b7c1c7e286bc
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722589"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681373"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Beleid maken voor voorwaardelijke toegang op basis van apparaten
 
@@ -61,7 +62,7 @@ Beleid voor voorwaardelijke toegang specificeert de app of services die u wilt b
 
     - **Apps selecteren**: selecteer deze optie, kies **Selecteren** en gebruik vervolgens de lijst met toepassingen om de toepassingen of services te zoeken en te selecteren die u wilt beveiligen.
     
-      ![Nieuw beleid voor voorwaardelijke toegang maken](./media/create-conditional-access-intune/create-ca-select-apps.png)
+      ![Toewijzingen voor voorwaardelijke toegang configureren](./media/create-conditional-access-intune/create-ca-select-apps.png)
 
 7. Selecteer **Voltooid**.
 8. Onder **Toewijzingen** selecteert u **Voorwaarden**.
@@ -71,7 +72,7 @@ Beleid voor voorwaardelijke toegang specificeert de app of services die u wilt b
     - **Client-apps**: kies **Ja** om aan te geven of het beleid van toepassing moet zijn op browser-apps, mobiele apps en desktop-clients. U kunt ook **Moderne verificatieclients** (zoals Outlook voor iOS resp. Android) en **Exchange ActiveSync-clients** selecteren.
     - **Apparaatstatus.** : het beleid voor voorwaardelijke toegang is van toepassing op alle apparaatstatussen, tenzij u Ja kiest en specifiek de statussen 'Apparaat aan Hybrid Azure AD toegevoegd' of 'Apparaat gemarkeerd als compatibel' (of beide) uitsluit.
     
-      ![Nieuw beleid voor voorwaardelijke toegang maken](./media/create-conditional-access-intune/create-ca-device-platforms.png)
+      ![Voorwaarden instellen voor beleid voor voorwaardelijke toegang](./media/create-conditional-access-intune/create-ca-device-platforms.png)
 
       > [!TIP]  
       > Indien u zowel **Moderne verificatieclients** als **Exchange ActiveSync-clients** wilt beveiligen, maakt u twee afzonderlijke beleidsvarianten voor voorwaardelijke toegang, één voor elk clienttype. Exchange ActiveSync ondersteunt weliswaar moderne verificatie, maar alleen met de voorwaarde 'platform'. Andere voorwaarden, zoals meervoudige verificatie, worden niet ondersteund. Om de toegang tot Exchange Online vanaf Exchange ActiveSync effectief te beveiligen, maakt u een beleid voor voorwaardelijke toegang dat de cloud-app Office 365 Exchange Online en de client-app Exchange ActiveSync specificeert, waarbij de optie 'Beleid alleen toepassen op ondersteunde platformen' is geselecteerd.

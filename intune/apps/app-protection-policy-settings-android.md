@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc4c301ebc4e8dc4a26a49957d344ad52316f66a
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4be8c383ded85dbfa9cf1c1b293bb979201ee4ab
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036417"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785670"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Instellingen voor beveiligingsbeleid voor apps voor Android in Microsoft Intune
 In dit artikel worden de app-beveiligingsbeleidsinstellingen voor Android-apparaten beschreven. De beleidsinstellingen die worden beschreven, kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid op de blade **Instellingen** in Azure Portal.
@@ -126,3 +127,4 @@ Standaard wordt voorzien in verschillende instellingen met vooraf geconfigureerd
 | **Apparaatfabrikant(en)** | Geef een door puntkomma's gescheiden lijst met fabrikant(en) op. Vermijd spaties in lijsten met meerdere waarden. Deze waarden zijn niet hoofdlettergevoelig. De *acties* omvatten: <br><ul><li>**Opgegeven toestaan (niet opgegeven blokkeren)** : de app kan alleen worden uitgevoerd op apparaten van de opgegeven fabrikant. Alle andere apparaten worden geblokkeerd. </li></ul> <ul><li>**Opgegeven toestaan (niet opgegeven wissen)** : het gebruikersaccount dat is gekoppeld aan de toepassing wordt van het apparaat gewist. </li></ul> Zie [Acties voor voorwaardelijk starten](app-protection-policies-access-actions.md#android-policy-settings) voor meer informatie over het gebruik van deze instelling. |
 | **SafetyNet-attestation voor apparaat** | App-beveiligingsbeleid biedt ondersteuning voor API's van Google Play Protect. Met name via deze instelling wordt SafetyNet-Attestation van Google op apparaten van de eindgebruiker geconfigureerd. Geef **basisintegriteit** of **basisintegriteit en gecertificeerde apparaten** op. **Basisintegriteit** biedt informatie over de algemene integriteit van het apparaat. Basisintegriteit werkt niet met geroote apparaten, emulators, virtuele apparaten en apparaten met sporen van manipulatie. **Basisintegriteit en gecertificeerde apparaten** biedt informatie over de compatibiliteit van het apparaat met services van Google. Alleen ongewijzigde apparaten die zijn gecertificeerd door Google kunnen deze controle doorstaan. De *acties* omvatten: <br><ul><li>**Waarschuwen**: de gebruiker ziet een melding als het apparaat niet aan de door SafetyNet-Attestation van Google uitgevoerde scan voldoet op basis van de waarde die is geconfigureerd. De gebruiker kan deze melding negeren. </li></ul><ul><li>**Toegang blokkeren**: de toegang wordt geblokkeerd voor de gebruiker als het apparaat niet aan de door SafetyNet-Attestation van Google uitgevoerde scan voldoet op basis van de waarde die is geconfigureerd. </li></ul> <ul><li>**Gegevens wissen**: het gebruikersaccount dat is gekoppeld aan de toepassing wordt van het apparaat gewist. </li></ul> </li></ul> Zie [Veelgestelde vragen over MAM en app-beveiliging](mam-faq.md#app-experience-on-android) voor antwoorden op veelgestelde vragen met betrekking tot deze instelling. |
 | **Bedreigingsscan voor apps** | App-beveiligingsbeleid biedt ondersteuning voor API's van Google Play Protect. Met name deze instelling zorgt ervoor dat de scanfunctie voor Apps controleren van Google wordt ingeschakeld voor eindgebruikerapparaten. Als deze instelling is geconfigureerd, wordt de toegang geblokkeerd voor de eindgebruiker zolang deze de scanfunctie van Google voor apps niet inschakelt op het Android-apparaat. De *acties* omvatten: <br><ul><li>**Waarschuwen**: de gebruiker ziet een melding als de scanfunctie voor Apps controleren van Google niet is ingeschakeld op het apparaat. De gebruiker kan deze melding negeren. </li></ul><ul><li>**Toegang blokkeren**: de toegang wordt geblokkeerd voor de gebruiker als de scanfunctie voor Apps controleren van Google niet is ingeschakeld op het apparaat. </li></ul></li></ul> Resultaten van de scanfunctie voor Apps controleren van Google worden weergegeven in het rapport **Potentieel schadelijke Apps** in de console. |
+| **Maximaal toegestaan bedreigingsniveau van apparaat** | App-beveiligingsbeleid kan gebruikmaken van de Intune-MTD-connector. Geef een maximaal bedreigingsniveau op dat is toegestaan voor het gebruik van deze app. Bedreigingen worden bepaald door de gekozen leverancier-app voor Mobile Threat Defense (MTD) op het apparaat van de eindgebruiker. Geef *Beveiligd*, *Laag*, *Gemiddeld* of *Hoog* op. Voor *Beveiligd* zijn geen bedreigingen op het apparaat vereist en het is de meest beperkende configureerbare waarde, terwijl voor *Hoog* in feite een actieve Intune-naar-MTD-verbinding vereist is. De *acties* omvatten: <br><ul><li>**Toegang blokkeren**: toegang wordt voor de gebruiker geblokkeerd als het bedreigingsniveau dat wordt bepaald door de gekozen toepassing voor Mobile Threat Defense (MTD) op het apparaat van de eindgebruiker niet aan deze vereiste voldoet.</li></ul> <ul><li>**Gegevens wissen**: het gebruikersaccount dat is gekoppeld aan de toepassing wordt van het apparaat gewist.</li></ul>Zie (##Intune instellen voor MTD op niet-ingeschreven apparaten) voor meer informatie over het gebruik van deze instelling. |

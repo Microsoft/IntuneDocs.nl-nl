@@ -5,23 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afdb365d0ed88a58028287cc7010bb334e9001e
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036443"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749337"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Functies en instellingen toepassen op uw apparaten met apparaatprofielen in Microsoft Intune
 
@@ -48,7 +49,7 @@ Deze sjablonen bieden beheerders een vereenvoudigde weergave van instellingen di
 
 Deze functie ondersteunt:
 
-- Windows 10 en hoger
+- Windows 10 1809 en hoger op ondersteunde firmware.
 
 ## <a name="certificates"></a>Certificaten
 
@@ -66,7 +67,7 @@ Deze functie ondersteunt:
 
 ## <a name="custom-profile"></a>Aangepast profiel
 
-Met [Aangepaste instellingen](../custom-settings-configure.md) kunnen beheerders apparaatinstellingen toewijzen die niet zijn ingebouwd in Intune. Op Android-apparaten kunt u OMA-URI-waarden invoeren. Voor iOS-apparaten kunt u een configuratiebestand importeren dat u in Apple Configurator hebt gemaakt.
+Met [Aangepaste instellingen](custom-settings-configure.md) kunnen beheerders apparaatinstellingen toewijzen die niet zijn ingebouwd in Intune. Op Android-apparaten kunt u OMA-URI-waarden invoeren. Voor iOS-apparaten kunt u een configuratiebestand importeren dat u in Apple Configurator hebt gemaakt.
 
 Deze functie ondersteunt:
 
@@ -78,7 +79,7 @@ Deze functie ondersteunt:
 
 ## <a name="delivery-optimization"></a>Delivery Optimization
 
-[Delivery optimization](../delivery-optimization-windows.md) biedt een betere ervaring voor het leveren van software-updates. Deze instellingen vervangen de instellingen **Software-Updates** > **Windows 10-updatering**.
+[Delivery optimization](delivery-optimization-windows.md) biedt een betere ervaring voor het leveren van software-updates. Deze instellingen vervangen de instellingen **Software-Updates** > **Windows 10-updatering**.
 
 Gebruik deze instellingen om te bepalen hoe software-updates worden gedownload naar apparaten in uw organisatie. U kunt bijvoorbeeld gebruikers krijgen hun eigen updates laten downloaden of updates binnenhalen met behulp van de cloudservices voor delivery optimization in een apparaatprofiel.
 
@@ -88,12 +89,20 @@ Deze functie ondersteunt:
 
 ## <a name="device-features"></a>Apparaatfuncties
 
-Met [Apparaatfuncties](../device-features-configure.md) kunt u functies op iOS- en macOS-apparaten beheren, zoals AirPrint, meldingen en berichten voor schermvergrendeling.
+Met [Apparaatfuncties](device-features-configure.md) kunt u functies op iOS- en macOS-apparaten beheren, zoals AirPrint, meldingen en berichten voor schermvergrendeling.
 
 Deze functie ondersteunt:
 
 - iOS/iPadOS
 - macOS
+
+## <a name="device-firmware-configuration-interface"></a>Configuratie-interface voor apparaatfirmware
+
+Met de [configuratie-interface voor apparaatfirmware](device-firmware-configuration-interface-windows.md) (DFCI) kunnen beheerders UEFI-instellingen (BIOS) in- of uitschakelen met Intune. Gebruik deze instellingen om de beveiliging op firmwareniveau te verbeteren. Dit is meestal beter bestand tegen schadelijke aanvallen.
+
+Deze functie ondersteunt:
+
+- Windows 10 en hoger
 
 ## <a name="device-restrictions"></a>Apparaatbeperkingen
 
@@ -210,9 +219,9 @@ Deze functie ondersteunt:
 
 ## <a name="update-policies"></a>Updatebeleid
 
-In [Updatebeleid voor iOS](../software-updates-ios.md) ziet u hoe u iOS-beleid maakt en toewijst om software-updates te installeren op uw iOS-apparaten. U kunt ook de status van de installatie bekijken.
+In [Updatebeleid voor iOS](../protect/software-updates-ios.md) ziet u hoe u iOS-beleid maakt en toewijst om software-updates te installeren op uw iOS-apparaten. U kunt ook de status van de installatie bekijken.
 
-Zie [Delivery optimization](../delivery-optimization-windows.md) voor updatebeleid op Windows-apparaten. 
+Zie [Delivery optimization](delivery-optimization-windows.md) voor updatebeleid op Windows-apparaten. 
 
 Deze functie ondersteunt:
 
@@ -265,7 +274,7 @@ Deze functie ondersteunt:
 
 ## <a name="manage-and-troubleshoot"></a>Beheren en problemen oplossen
 
-[Beheer uw profielen](../device-profile-monitor.md) om de status van apparaten te controleren en te bekijken welke profielen zijn toegewezen. U kunt hiermee ook conflicten oplossen: u ziet welke instellingen leiden tot een conflict en welke profielen deze instellingen bevatten. De documentatie [Veelvoorkomende problemen en oplossingen](device-profile-troubleshoot.md) helpt beheerders bij het werken met profielen. Hierin wordt beschreven wat er gebeurt wanneer u een profiel verwijdert, waarom meldingen worden verzonden naar apparaten, en meer.
+[Beheer uw profielen](device-profile-monitor.md) om de status van apparaten te controleren en te bekijken welke profielen zijn toegewezen. U kunt hiermee ook conflicten oplossen: u ziet welke instellingen leiden tot een conflict en welke profielen deze instellingen bevatten. De documentatie [Veelvoorkomende problemen en oplossingen](device-profile-troubleshoot.md) helpt beheerders bij het werken met profielen. Hierin wordt beschreven wat er gebeurt wanneer u een profiel verwijdert, waarom meldingen worden verzonden naar apparaten, en meer.
 
 ## <a name="next-steps"></a>Volgende stappen
 

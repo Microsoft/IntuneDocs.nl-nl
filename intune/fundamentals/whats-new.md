@@ -6,9 +6,10 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/23/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 571974e1736fb78ae633c02fcfd6e6233056379b
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71920117"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786136"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -50,8 +51,170 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [belangri
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
-
 -->  
+
+
+<!-- ########################## -->
+
+## <a name="week-of-october-21-2019"></a>Week van 21 oktober 2019
+
+### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>Nieuw configuratie-interfaceprofiel voor apparaatfirmware voor Windows 10 en hoger <!-- 2266073 idready wnready -->
+
+In Windows 10 en hoger kunt u een configuratieprofiel voor een apparaat maken om instellingen en functies te beheren (**Configuratie van apparaten** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** voor platform). In deze update is er een nieuw profieltype voor de configuratie-interface voor apparaatfirmware waarmee Intune UEFI-instellingen (BIOS) kan beheren.
+
+Zie [DFCI-profielen gebruiken op Windows-apparaten in Microsoft Intune](../configuration/device-firmware-configuration-interface-windows.md) voor meer informatie over deze functie.
+
+Van toepassing op:
+
+- Windows 10 RS5 (1809) en nieuwer op ondersteunde firmware
+
+## <a name="week-of-october-14-2019"></a>Week van 14 oktober 2019
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>Appbeheer 
+
+#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956-----"></a>Beschikbare rapportage over Google Play-apps voor Android-werkprofielen <!-- 3041956   -->
+U kunt voor beschikbare app-installaties op toegewezen en volledig beheerde apparaten met Android Enterprise-werkprofielen de status van de app-installatie evenals de geïnstalleerde versie van beheerde Google Play-apps bekijken. Zie [How to monitor app protection policies](~/apps/app-protection-policies-monitor.md) (App-beveiligingsbeleid controleren), [Manage Android work profile devices with Intune](~/enrollment/android-enterprise-overview.md) (Apparaten met Android-werkprofielen beheren met Intune) en [Managed Google Play app type](~/apps/apps-add-android-for-work.md#managed-google-play-app-types) (Type beheerde Google Play-app) voor meer informatie.
+
+#### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Microsoft Edge versie 77 en later voor Windows 10 en macOS (openbare preview) <!-- 3872025, 4678761  -->
+Microsoft Edge versie 77 en hoger is nu beschikbaar voor implementatie op pc's met Windows 10 en macOS. De openbare preview biedt **Dev**- en **Bèta**-kanalen voor Windows 10 en een **Bèta**-kanaal voor macOS. De implementatie is alleen in het Engels (EN) beschikbaar, maar eindgebruikers kunnen de weergavetaal wijzigen in de browser via **Instellingen** > **Talen**. Microsoft Edge is een Win32-app die wordt geïnstalleerd in systeemcontext en in soortgelijke architecturen (x86-app in een x86-besturingssysteem en x64-app in een x64-besturingssysteem). Automatische updates van de browser is bovendien standaard **Ingeschakeld** en Microsoft Edge kan niet worden verwijderd. Zie [Microsoft Edge voor Windows 10 toevoegen aan Microsoft Intune](~/apps/apps-windows-edge.md) en [Documentatie bij Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2103823) voor meer informatie.
+
+#### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>Update van de gebruikersinterface voor app-beveiliging en de gebruikersinterface voor inrichting van iOS-apps <!-- 4102027, 4102029   -->
+De gebruikersinterface om app-beveiligingsbeleid en inrichtingsprofielen voor iOS-apps in Intune te maken en bewerken, is bijgewerkt. De gebruikersinterface wordt onder andere op deze punten gewijzigd:
+- Een vereenvoudigde ervaring in de vorm van een wizard, beknopt weergegeven binnen één blade. 
+- Een update van de maakstroom om toewijzingen toe te voegen.
+- Een samenvattingspagina van alle items die zijn ingesteld bij het weergeven van eigenschappen, vóór het maken van een nieuw beleid of bij het bewerken van een eigenschap. Tijdens het bewerken van eigenschappen toont de samenvatting ook alleen een lijst met items in de categorie met eigenschappen die wordt bewerkt.
+
+Zie [App-beveiligingsbeleid maken en toewijzen](~/apps/app-protection-policies.md) en [Inrichtingsprofielen voor iOS-apps gebruiken ](~/apps/app-provisioning-profile-ios.md)voor meer informatie.
+
+#### <a name="intune-guided-scenarios----4850318-4831296-3610611----"></a>Begeleide scenario's voor Intune <!-- 4850318, 4831296, 3610611  -->
+Intune biedt nu begeleide scenario's die u helpen bij het voltooien van een specifieke taak of een set taken in Intune. Een begeleid scenario is een aangepaste reeks stappen (werkstroom) die zijn gecentreerd rond een end-to-end-use-case. Algemene scenario's worden gedefinieerd op basis van de rol die een beheerder, gebruiker of apparaat in uw organisatie speelt. Deze werkstromen vereisen doorgaans een verzameling zorgvuldig gegroepeerde profielen, instellingen, toepassingen en beveiligingsmechanismen om de beste gebruikerservaring en beveiliging te kunnen bieden. Nieuwe begeleide scenario's zijn onder meer:
+- [Microsoft Edge voor mobiel implementeren](~/fundamentals/guided-scenarios-edge.md)
+- [Veilige mobiele apps voor Microsoft Office](~/fundamentals/guided-scenarios-office-mobile.md) 
+- [Modern bureaublad met cloudbeheer](~/fundamentals/guided-scenarios-cloud-managed-pc.md)
+
+Zie [Overzicht van begeleide scenario's voor Intune](guided-scenarios-overview.md) voor meer informatie.
+
+#### <a name="additional-app-configuration-variable-available----4969237-----"></a>Extra variabele voor app-configuratie beschikbaar <!-- 4969237   -->
+Wanneer u een app-configuratiebeleid maakt, kunt u de configuratievariabele `AAD Device ID` opnemen als onderdeel van de configuratie-instellingen. Selecteer in Intune **Client-apps** > **App-configuratiebeleid** > **Toevoegen**. Voer de gegevens van uw configuratiebeleid in en selecteer **Configuratie-instellingen** om de blade **Configuratie-instellingen** weer te geven. Zie voor meer informatie [App-configuratiebeleid voor beheerde Android Enterprise-apparaten: de configuratie-ontwerper gebruiken](~/apps/app-configuration-policies-use-android.md#use-the-configuration-designer).
+
+
+#### <a name="create-groups-of-management-objects-called-policy-sets----3762880----"></a>Groepen beheerobjecten, zogenaamde beleidssets, maken <!-- 3762880  -->
+Met beleidssets kunt u een bundel met verwijzingen maken naar reeds bestaande beheerentiteiten die moeten worden geïdentificeerd, waarop moet worden gericht en die moet worden bewaakt als één conceptuele eenheid. Met beleidssets worden geen bestaande concepten of objecten vervangen. U kunt afzonderlijke objecten blijven toewijzen in Intune en u kunt verwijzen naar afzonderlijke objecten als onderdeel van een beleidsset. Daarom worden wijzigingen aan deze afzonderlijke objecten weergegeven in de beleidsset.  In Intune selecteert u **Beleidssets** > **Maken** om een nieuwe beleidsset te maken. 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>Apparaatconfiguratie
+
+#### <a name="ui-update-for-creating-and-editing-windows-10-update-rings-----4099089-----------"></a>Update van de gebruikersinterface voor het maken en bewerken van Windows 10-update-ringen  <!-- 4099089         -->
+De gebruikersinterface-ervaring voor [het maken en bewerken van Windows 10-update-ringen](../protect/windows-update-for-business-configure.md#create-and-assign-update-rings) voor Intune is bijgewerkt. Wijzigingen in de gebruikersinterface zijn onder andere:  
+- Een indeling in de vorm van een wizard, beknopt weergegeven op één blade van de console waardoor de wildgroei aan blades komt te vervallen wanneer u update-ringen configureert.   
+- De gewijzigde werkstroom bevat Toewijzingen, voordat de initiële configuratie van de ring wordt voltooid.
+- Een overzichtspagina die u kunt gebruiken om alle configuraties te bekijken die u hebt gemaakt, voordat u een nieuwe update-ring opslaat en implementeert. Tijdens het bewerken van een update-ring toont de samenvatting alleen de lijst met items die zijn ingesteld binnen de categorie met eigenschappen die u hebt bewerkt.
+
+#### <a name="ui-update-for-creating-and-editing-ios-software-update-policy-----4099090---------"></a>Update van de gebruikersinterface voor het maken en bewerken van beleid voor iOS-software-updates  <!-- 4099090       --> 
+De gebruikersinterface-ervaring voor het [maken](../protect/software-updates-ios.md#configure-the-policy) en [ bewerken](../protect/software-updates-ios.md#edit-a-policy) van iOS-software-updatebeleid voor Intune is bijgewerkt.  Wijzigingen in de gebruikersinterface zijn onder andere:  
+- Een indeling in de vorm van een wizard, beknopt weergegeven op één blade van de console waardoor de wildgroei aan blades komt te vervallen bij het configureren van updatebeleid.   
+- De gewijzigde werkstroom bevat Toewijzingen, voordat de initiële configuratie van het beleid wordt voltooid.
+- Een overzichtspagina die u kunt gebruiken om alle configuraties te bekijken die u hebt gemaakt, voordat u een nieuw beleid opslaat en implementeert. Tijdens het bewerken van een beleid, toont het overzicht alleen de lijst met items die zijn ingesteld binnen de categorie met eigenschappen die u hebt bewerkt.
+
+#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings------4464404---wnready-----"></a>Instellingen voor gepland opnieuw opstarten zijn verwijderd uit Windows-update-ringen  <!--  4464404   WNReady   -->
+Zoals eerder aangekondigd, ondersteunen Windows 10-update-ringen van Intune nu [instellingen voor deadlines](../protect/windows-update-settings.md) en wordt *Gepland opnieuw opstarten* niet meer ondersteund. Instellingen voor *Gepland opnieuw opstarten* zijn niet meer beschikbaar wanneer u update-ringen in Intune configureert of beheert.  
+
+Deze wijziging ligt op één lijn met [wijzigingen in Windows-service](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing). Verder vervangen op apparaten met Windows 10 1903 of hoger *deadlines* configuraties voor *gepland opnieuw opstarten*.
+
+#### <a name="prevent-installation-of-apps-from-unknown-sources-on-android-enterprise-work-profile-devices----4760025-----"></a>Installatie van apps van onbekende bronnen op apparaten met een Android Enterprise-werkprofiel voorkomen <!-- 4760025   -->
+Op apparaten met een Android Enterprise-werkprofiel kunnen gebruikers nooit apps van onbekende bronnen installeren. In deze update is er een nieuwe instelling, namelijk **App-installaties van onbekende bronnen in het persoonlijke profiel voorkomen**. Met deze instelling wordt standaard voorkomen dat gebruikers apps van onbekende bronnen extern kunnen laden in het persoonlijke profiel op het apparaat.
+
+Ga naar [Met Android Enterprise-apparaatinstellingen functies toestaan of beperken met behulp van Intune](../configuration/device-restrictions-android-for-work.md) als u de configureerbare instelling wilt bekijken.
+
+Van toepassing op:
+- Android Enterprise - Werkprofiel
+
+#### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339-----"></a>Een algemene HTTP-proxy maken op Android Enterprise-apparaten met een apparaateigenaar <!-- 4816339   -->
+Op Android Enterprise-apparaten kunt u een globale HTTP-proxy configureren om te voldoen aan de standaarden voor webbrowsen van uw organisatie (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android Enterprise** voor platform > **Apparaateigenaar > Apparaatbeperkingen** voor profieltype > **Connectiviteit**). Zodra dit is geconfigureerd, gebruikt al het HTTP-verkeer deze proxy.
+
+Ga naar [Met Android Enterprise-apparaatinstellingen functies toestaan of beperken met behulp van Intune](../configuration/device-restrictions-android-for-work.md) als u deze functie wilt configureren en alle configureerbare instellingen wilt bekijken.
+
+Van toepassing op:
+- Android Enterprise-apparaateigenaar
+
+#### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-device-administrator-and-android-enterprise----5021055-----"></a>De instelling automatisch verbinding maken is verwijderd uit Wi-Fi-profielen op Android-apparaatbeheerder en Android Enterprise <!-- 5021055   -->
+Op Android-apparaatbeheerder en Android Enterprise-apparaten kunt u een Wi-Fi-profiel maken om verschillende instellingen te configureren (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android-apparaatbeheerder** of **Android Enterprise** voor platform > **Wi-Fi-** voor profieltype). In deze update is de instelling **Automatisch verbinding maken** verwijderd, omdat deze [niet door Android wordt ondersteund](https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork%28int%2c%20boolean%29). 
+
+Als u deze instelling in een Wi-Fi-profiel gebruikt, hebt u mogelijk opgemerkt dat **Automatisch verbinding maken** niet werkt. U hoeft geen actie te ondernemen, maar houd er rekening mee dat deze instelling wordt verwijderd uit de Intune-gebruikersinterface.
+
+Raadpleeg [Wi-Fi-instellingen van Android](../configuration/wi-fi-settings-android.md) of [Wi-Fi-instellingen van Android Enterprise](../configuration/wi-fi-settings-android-enterprise.md).
+
+Van toepassing op:
+- Android-apparaatbeheerder 
+- Android Enterprise
+
+
+#### <a name="new-device-configuration-settings-for-supervised-ios-and-ipados-devices----5199328-----"></a>Nieuwe instellingen voor apparaatconfiguratie voor iOS- en iPadOS-apparaten onder supervisie <!-- 5199328   -->
+Op iOS- en iPadOS-apparaten kunt u een profiel maken om functies en instellingen op apparaten te beperken (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS/iPadOS** voor platform > **Apparaatbeperkingen** voor profieltype). Deze update bevat nieuwe instellingen die u kunt beheren: 
+- Toegang tot netwerkstation in Bestanden-app  
+- Toegang tot USB-station in Bestanden-app 
+- Wi-Fi altijd ingeschakeld 
+
+Als u deze instellingen wilt bekijken, gaat u naar [iOS-apparaatinstellingen voor het toestaan of beperken van functies met behulp van Intune](../configuration/device-restrictions-ios.md).
+
+Van toepassing op:
+- iOS 13.0 en hoger
+- iPadOS 13.0 en hoger
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-enrollment"></a>Apparaatinschrijving
+
+#### <a name="specify-which-android-device-operating-system-versions-enroll-with-work-profile-or-device-administrator-enrollment----4350697-----"></a>Opgeven welke besturingssysteemversies van Android-apparaten registreren met werkprofiel of apparaatbeheerderinschrijving <!-- 4350697   -->
+Met behulp van de Intune-beperkingen voor apparaattypen kunt u de besturingssysteemversie van het apparaat gebruiken om op te geven welke gebruikersapparaten de Android Enterprise-werkprofiel-inschrijving of Android-apparaatbeheerderinschrijving gebruiken.  Zie [Inschrijvingsbeperkingen instellen](../enrollment/enrollment-restrictions-set.md) voor meer informatie.
+
+#### <a name="windows-autopilot-deployment-reports----3856172---"></a>Windows Autopilot-implementatierapporten <!-- 3856172 -->
+In een nieuw rapport kunt u de details bekijken van elk apparaat dat via Windows Autopilot is geïmplementeerd. Zie [Autopilot-implementatierapport](../enrollment/enrollment-autopilot.md#autopilot-deployments-report) voor meer informatie. Deze functie wordt momenteel geïmplementeerd voor alle klanten. We verwachten dat dit proces eind volgende week is voltooid.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>Apparaatbeheer
+
+#### <a name="new-restrictions-for-renaming-windows-devices----3478938----"></a>Nieuwe beperkingen voor het wijzigen van de naam van Windows-apparaten <!-- 3478938  -->
+Wanneer u de naam van een Windows-apparaat wijzigt, moet u nieuwe regels volgen:
+- Maximaal 15 tekens (moet kleiner zijn dan of gelijk zijn aan 63 bytes, exclusief navolgende null-tekens)
+- Niet null of een lege tekenreeks
+- Toegestane ASCII: Letters (a-z, A-Z), cijfers (0-9) en afbreekstreepjes
+- Toegestane Unicode: tekens > = 0x80, moet geldige UTF8 zijn, moet IDN-toewijsbaar zijn (dat wil zeggen dat RtlIdnToNameprepUnicode moet slagen, zie RFC 3492)
+- Namen mogen niet alleen cijfers bevatten
+- Geen spaties in de naam
+- Niet-toegestane tekens: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
+
+ Zie [De naam van een apparaat wijzigen in Intune](../remote-actions/device-rename.md) voor meer informatie.
+
+### <a name="new-android-report-on-devices-overview-page----4924364---"></a>Nieuw Android-rapport op de overzichtspagina Apparaten <!-- 4924364 -->
+In een nieuw rapport op de overzichtspagina Apparaten wordt weergegeven hoeveel Android-apparaten zijn geregistreerd in elke oplossing voor apparaatbeheer. In dit diagram ziet u het aantal apparaten met werkprofiel, volledig beheerd, toegewezen en door de beheerder geregistreerd. Als u het rapport wilt zien, kiest u **Intune** > **Apparaten** > **Overzicht**.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>Apparaatbeveiliging 
+
+#### <a name="pkcs-certificates-for-macos-----1333650---------"></a>PKCS-certificaten voor macOS  <!-- 1333650       -->
+U kunt nu [PKCS-certificaten gebruiken met macOS](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile). U kunt het PKCS-certificaat selecteren als profieltype voor macOS en certificaten voor gebruikers en apparaten implementeren die [velden voor aangepaste naam voor het onderwerp en alternatieve onderwerpnaam](../protect/certficates-pfx-configure.md#subject-name-format-for-macos) bevatten.  
+
+PKCS-certificaat voor macOS biedt ook ondersteuning voor een nieuwe instelling, _Alle apps toegang toestaan_. Met deze instelling kunt u alle gekoppelde apps toegang geven tot de persoonlijke sleutel van het certificaat.  Raadpleeg de Apple-documentatie op https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf voor meer informatie over deze instelling.
+
+####   <a name="derived-credentials-to-provision-ios-mobile-devices-with-certificates----------1736036-1736037-1772050-2777333-----------"></a>Afgeleide referenties voor het inrichten van mobiele iOS-apparaten met certificaten      <!--  1736036, 1736037, 1772050, 2777333         -->  
+Intune ondersteunt het gebruik van [afgeleide referenties](../protect/derived-credentials.md) als een verificatiemethode en voor S/MIME-ondertekening en versleuteling voor iOS-apparaten. Afgeleide referenties zijn een implementatie van de *National Institute of Standards and Technology (NIST) 800-157* -standaard voor het implementeren van certificaten op apparaten.  
+
+Afgeleide referenties zijn afhankelijk van het gebruik van een Personal Identity Verification (PIV) of Common Access Card (CAC), zoals een smartcard. Om een afgeleide referentie voor hun mobiele apparaat te verkrijgen, beginnen gebruikers in de app Bedrijfsportal en volgen ze een registratiewerkstroom die uniek is voor de provider die u gebruikt.  Alle providers hebben met elkaar gemeen dat ze vereisen dat een smartcard voor verificatie bij de afgeleide referentieprovider. Deze provider verzendt vervolgens een certificaat naar het apparaat dat is afgeleid van de smartcard van de gebruiker.  
+
+Intune biedt ondersteuning voor de volgende afgeleide referentieproviders:   
+- DISA Purebred
+- Entrust Datacard
+- Intercede
+
+U gebruikt afgeleide referenties als verificatiemethode voor configuratieprofielen voor apparaten voor VPN, Wi-Fi en e-mailberichten. U kunt ze ook gebruiken voor app-verificatie en S/MIME-ondertekening en -versleuteling.  
+
+Raadpleeg [Afgeleide PIV-referenties](https://www.nccoe.nist.gov/projects/building-blocks/piv-credentials) op www.nccoe.nist.gov voor meer informatie over de standaard.
+
+#### <a name="use-graph-api-to-specify-a-on-premises-user-principal-name-as-a-variable-for-scep-certificates--------5437939----------"></a>Graph API gebruiken om een on-premises user principal name op te geven als een variabele voor SCEP-certificaten    <!--  5437939        -->  
+Wanneer u de [Intune Graph API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)gebruikt, kunt u onPremisesUserPrincipalName opgeven als een variabele voor de alternatieve naam voor het onderwerp (SAN) voor SCEP-certificaten.
+
+
 
 <!-- ########################## -->
 
@@ -69,7 +232,7 @@ Van toepassing op:
 iOS 13.1 en hoger
 
 #### <a name="intune-support-for-ipados-and-ios-131-devices---5439574--"></a>Intune-ondersteuning voor iPadOS- en iOS 13.1-apparaten <!--5439574-->
-Intune biedt nu ondersteuning voor iPadOS- en iOS 13.1-apparaten Lees [dit blogbericht](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Support-for-iOS-13-1-and-iPadOS/ba-p/873094) voor meer informatie.
+Intune biedt nu ondersteuning voor iPadOS- en iOS 13.1-apparaten. Lees [dit blogbericht](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Support-for-iOS-13-1-and-iPadOS/ba-p/873094) voor meer informatie.
 
 <!-- ########################## -->
 
@@ -367,7 +530,7 @@ Van toepassing op:
 #### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>Deadlines vervangen instellingen voor gepland opnieuw opstarten voor Windows-updateringen   <!-- 4464404        -->
 In lijn met recente [wijzigingen in Windows-onderhoud](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing) ondersteunen de Windows 10-updateringen van Intune nu [instellingen voor deadlines](../protect/windows-update-settings.md). *Deadlines* bepalen wanneer door een apparaat functie-en beveiligingsupdates worden geïnstalleerd.  Op apparaten waarop Windows 10 1903 of hoger wordt uitgevoerd, vervangen *deadlines* de configuraties voor *gepland opnieuw opstarten*.  In de toekomst gaan *deadlines* ook *gepland opnieuw opstarten* in eerdere versies van Windows 10 vervangen.  
 
-Wanneer u geen *deadlines*configureert, blijven apparaten de instellingen voor *gepland opnieuw opstarten* gebruiken. In een toekomstige update gaat [Intune ondersteuning voor gepland opnieuw opstarten echter stopzetten](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-).  
+Wanneer u geen *deadlines*configureert, blijven apparaten de instellingen voor *gepland opnieuw opstarten* gebruiken. In een toekomstige update gaat Intune ondersteuning voor gepland opnieuw opstarten echter stopzetten.  
 
 Plan het *gebruik* van deadlines voor al uw Windows 10-apparaten. Nadat de instellingen voor *deadlines* zijn ingesteld, kunt u de Intune-configuraties voor *gepland opnieuw opstarten* wijzigen in Niet geconfigureerd. Als deze zijn ingesteld op Niet geconfigureerd, stopt Intune het beheer van deze instellingen op apparaten, maar worden de laatste configuraties voor de instelling niet van het apparaat verwijderd. Daarom blijven de laatste configuraties die zijn ingesteld voor *gepland opnieuw opstarten* actief en in gebruik op apparaten totdat deze instellingen worden gewijzigd door een andere methode dan Intune. Later, wanneer de apparaatversie van Windows verandert of wanneer Intune ondersteuning voor *deadlines* uitbreidt naar de Windows-versie van het apparaat, gaat het apparaat de nieuwe instellingen gebruiken, die al aanwezig zijn.
 

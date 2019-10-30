@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 10/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: coryfe
+ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa8cc396c05150006799c1e9b86ecb63351cdb36
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: 1d34e44c6e046ddbc9b47bbe90900f5992df9e85
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314719"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584560"
 ---
 # <a name="manage-software-updates-in-intune"></a>Software-updates beheren in Intune
 
@@ -63,17 +64,30 @@ Aan de volgende vereisten moet worden voldaan om Windows-updates voor Windows 10
 
 ## <a name="create-and-assign-update-rings"></a>Update-ringen maken en toewijzen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer **Software-updates** > **Windows 10-update-ringen** > **Maken**.
-4. Voer een naam en een beschrijving (optioneel) in en kies vervolgens **Configureren**.
-5. Configureer in **Instellingen** de instellingen die passen bij de behoeften van uw bedrijf. Zie [Windows-update-instellingen](../windows-update-settings.md) voor meer informatie over de beschikbare instellingen.  
-6. Wanneer u klaar bent, selecteert u **OK**. Selecteer in **Update-ring maken** de optie **Maken**. De nieuwe updatering wordt weergegeven in de lijst met updateringen.
-7. Als u de ring wilt toewijzen, selecteert u een ring in de lijst met updateringen en klikt u op het \<tabblad>Ringnaam en kiest u **Toewijzingen**.
-8. Gebruik de tabbladen **Opnemen** en **Uitsluiten** om te definiëren aan welke groepen deze ring wordt toegewezen, en selecteer vervolgens **Opslaan** om de toewijzing te voltooien.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en selecteer vervolgens **Software-updates** > **Windows 10-update-ringen** > **Maken**.  
+
+2. Geef op het tabblad Basisinformatie een naam en optioneel een beschrijving op en selecteer vervolgens **Volgende**.  
+
+   ![Een Windows 10-update-ringwerkstroom maken](./media/windows-update-for-business-configure/basics-tab.png)
+
+3. Configureer op het tabblad **Ringinstellingen bijwerken** de instellingen die passen bij de behoeften van uw bedrijf. Zie [Windows-update-instellingen](windows-update-settings.md) voor meer informatie over de beschikbare instellingen. Nadat u de instellingen *Bijwerken* en *Gebruikerservaring* hebt geconfigureerd, selecteert u **Volgende**.  
+
+4. Selecteer op het tabblad **Bereiktags** de optie **Bereiktags selecteren** om het deelvenster *Tags selecteren* te openen als u deze wilt toepassing op de update-ring.  
+
+   - Kies in het deelvenster **Tags selecteren** een of meer tags en klik vervolgens op **Selecteren** om deze toe te voegen aan de update-ring en terug te keren naar het deelvenster *Bereiktags*.  
+
+   Wanneer u klaar bent, selecteert u **Volgende** om naar *Toewijzingen* te gaan. 
+
+5. Kies op het tabblad **Toewijzingen** de optie **Groepen selecteren die moeten worden opgenomen** en wijs de update-ring toe aan een of meer groepen. Gebruik **+ Groepen selecteren die moeten worden uitgesloten** om de toewijzing te verfijnen. Selecteer **Volgende** om door te gaan.  
+
+6. Controleer de instellingen op het tabblad **Beoordelen en maken** en selecteer **Maken** als u klaar bent om uw Windows 10-update-ring op te slaan. Uw nieuwe update-ring wordt weergegeven in de lijst met update-ringen.
 
 ## <a name="manage-your-windows-10-update-rings"></a>Uw Windows 10-updateringen beheren
-In de portal kunt u een Windows 10-updatering selecteren om het bijbehorende deelvenster **Overzicht** te openen. Vanuit dit deelvenster kunt u de toewijzingsstatus van ringen bekijken en aanvullende acties ondernemen om de ring te beheren. 
+
+In de portal kunt u een Windows 10-updatering selecteren om het bijbehorende deelvenster **Overzicht** te openen. Vanuit dit deelvenster kunt u de toewijzingsstatus van ringen bekijken en aanvullende acties ondernemen om de ring te beheren.
+
 ### <a name="to-view-an-updates-rings-overview-pane"></a>Het deelvenster Overzicht van een updatering weergeven: 
+
 1. Meld u aan bij Azure Portal.
 2. Navigeer naar **Intune** > **Software-updates** > **Windows 10-updateringen**.
 3. Selecteer de updatering die u wilt bekijken of beheren.  
@@ -88,18 +102,22 @@ Naast het weergeven van de toewijzingsstatus kunt u ook boven aan het deelvenste
 ![Beschikbare acties](./media/windows-update-for-business-configure/overview-actions.png)
 
 ### <a name="delete"></a>Verwijderen  
+
 Selecteer **Verwijderen** om te stoppen met het afdwingen van de instellingen van de geselecteerde Windows 10-updatering. Als u een ring verwijdert, wordt ook de bijbehorende configuratie uit Intune verwijderd, waardoor deze instellingen niet meer worden toegepast en afgedwongen in Intune.  
 
 Als u een ring verwijdert uit Intune, worden de instellingen op apparaten waaraan de updatering is toegewezen, niet gewijzigd.  In plaats hiervan behoudt het apparaat de huidige instellingen. Apparaten behouden geen historisch overzicht van de instellingen die ze eerder hebben bewaard. Apparaten kunnen ook instellingen ontvangen van extra updateringen die actief blijven.  
 
 #### <a name="to-delete-a-ring"></a>Een ring verwijderen  
+
 1. Selecteer **Verwijderen** tijdens het weergeven van de overzichtspagina voor een updatering.  
 2. Selecteer **OK**.  
 
 ### <a name="pause"></a>Onderbreken  
+
 Selecteer **Onderbreken** om te voorkomen dat toegewezen apparaten gedurende maximaal 35 dagen vanaf het moment waarop u de ring onderbreekt, onderdelenupdates of kwaliteitsupdates ontvangen. Als het maximum aantal dagen is verstreken, verloopt de functionaliteit voor onderbreken automatisch en zoekt het apparaat in Windows Update naar toepasselijke updates. Na deze scan kunt u de updates opnieuw onderbreken. Als u een onderbroken updatering hervat, en deze ring vervolgens opnieuw onderbreekt, wordt de onderbrekingsperiode opnieuw ingesteld op 35 dagen.  
 
 #### <a name="to-pause-a-ring"></a>Een ring onderbreken  
+
 1. Selecteer **Onderbreken** tijdens het weergeven van de overzichtspagina voor een updatering.  
 2. Selecteer **Onderdeel** of **Kwaliteit** om het gewenste type update te onderbreken, en selecteer vervolgens **OK**.  
 3. Als u één type update hebt onderbroken, kunt u opnieuw Onderbreken selecteren om ook het andere updatetype te onderbreken.  
@@ -110,22 +128,27 @@ Wanneer een updatetype is onderbroken, wordt op het deelvenster Overzicht van de
 > Nadat u een opdracht voor onderbreken opgeeft, ontvangen apparaten deze opdracht de volgende keer dat bij de service wordt gecontroleerd op updates. Mogelijk wordt een geplande update geïnstalleerd voordat het apparaat controleert of er nieuwe updates zijn. Als het betreffende apparaat is uitgeschakeld wanneer u de opdracht voor onderbreken opgeeft, kan dit apparaat, wanneer het wordt ingeschakeld, geplande updates downloaden en installeren voordat er bij Intune wordt gecontroleerd op nieuwe updates.
 
 ### <a name="resume"></a>Hervatten  
+
 Als een updatering is onderbroken, kunt u **Hervatten** selecteren om de onderdelenupdates en kwaliteitsupdates voor deze ring opnieuw te activeren. Als u een updatering hervat, kunt u deze ring opnieuw onderbreken.  
 
 #### <a name="to-resume-a-ring"></a>Een ring hervatten  
+
 1. Selecteer **Hervatten** tijdens het weergeven van de overzichtspagina voor een onderbroken updatering.  
 2. Selecteer de beschikbare opties om **onderdelenupdates** of **kwaliteitsupdates** te hervatten, en selecteer vervolgens **OK**.  
 3. Als u één type update hebt hervat, kunt u opnieuw Hervatten selecteren om ook het andere updatetype te hervatten.  
 
 ### <a name="extend"></a>Uitbreiden  
+
 Als een updatering is onderbroken, kunt u **Uitbreiden** selecteren om de onderbrekingsperiode voor zowel onderdelenupdates als kwaliteitsupdates opnieuw in te stellen op 35 dagen.  
 
 #### <a name="to-extend-the-pause-period-for-a-ring"></a>De onderbrekingsperiode voor een ring uitbreiden  
+
 1. Selecteer **Uitbreiden** tijdens het weergeven van de overzichtspagina voor een onderbroken updatering. 
 2. Selecteer de beschikbare opties om **onderdelenupdates** of **kwaliteitsupdates** te hervatten, en selecteer vervolgens **OK**.  
 3. Als u één type update hebt uitgebreid, kunt u opnieuw Uitbreiden selecteren om ook het andere updatetype uit te breiden.  
 
 ### <a name="uninstall"></a>Verwijderen  
+
 Een Intune-beheerder kan **Verwijderen** gebruiken om de meest recente *onderdelenupdate* of de meest recente *kwaliteitsupdate* te verwijderen (terug te draaien) voor een actieve of onderbroken updatering. Nadat u één type hebt verwijderd, kunt u vervolgens ook het andere type verwijderen. Intune biedt geen ondersteuning voor het verwijderen van updates door gebruikers.  
 
 > [!IMPORTANT] 
@@ -148,19 +171,21 @@ Houd rekening met het volgende als u Verwijderen gebruikt:
 
 - Voor onderdelenupdates is de periode gedurende welke u een update kunt verwijderen, beperkt tot 2-60 dagen. Dit is geconfigureerd met de instelling Bijwerken voor updateringen: **Periode instellen voor onderdelenupdate verwijderen (2-60 dagen)** . U kunt een onderdelenupdate die is geïnstalleerd op een apparaat, niet terugdraaien als het installeren van deze update langer geleden is dan de geconfigureerde periode voor verwijderen.  
 
-  Neem bijvoorbeeld een update-ring met een verwijderingsperiode voor onderdelenupdates van 20 dagen. Na 25 dagen besluit u de laatste onderdelenupdate terug te draaien, en gebruikt u de optie Verwijderen.  Op apparaten waarop de onderdelenupdate meer dan 20 dagen geleden is geïnstalleerd, is verwijderen niet mogelijk, omdat de vereiste bits als onderdeel van het onderhoud zijn verwijderd. Op apparaten waar de onderdelenupdate nog maar 19 dagen geleden is geïnstalleerd, kan de update wel worden verwijderd, als ze zich aanmelden om de verwijderopdracht te ontvangen voordat de verwijderingsperiode van 20 dagen is verstreken.  
+  Neem bijvoorbeeld een update-ring met een verwijderingsperiode voor onderdelenupdates van 20 dagen. Na 25 dagen besluit u de laatste onderdelenupdate terug te draaien, en gebruikt u de optie Verwijderen.  Op apparaten waarop de onderdelenupdate meer dan 20 dagen geleden is geïnstalleerd, is verwijderen niet mogelijk, omdat de vereiste bits als onderdeel van het onderhoud zijn verwijderd. Op apparaten waar de onderdelenupdate nog maar negentien dagen geleden is geïnstalleerd, kan de update wel worden verwijderd, als ze zich aanmelden om de verwijderopdracht te ontvangen voordat de verwijderingsperiode van twintig dagen is verstreken.  
 
 Zie [CSP bijwerken](https://docs.microsoft.com/windows/client-management/mdm/update-csp) in de beheerdocumentatie voor Windows-clients voor meer informatie over Windows Update.  
 
 #### <a name="to-uninstall-the-latest-windows-10-update"></a>De meest recente Windows 10-update verwijderen  
+
 1. Selecteer **Verwijderen** tijdens het weergeven van de overzichtspagina voor een onderbroken updatering.  
 2. Selecteer de beschikbare opties om **onderdelenupdates** of **kwaliteitsupdates** te verwijderen, en selecteer vervolgens **OK**.  
 3. Als u het verwijderen van één type update hebt geactiveerd, kunt u opnieuw Verwijderen selecteren om ook het resterende updatetype te verwijderen.  
 
 ## <a name="migrate-update-settings-to-the-azure-portal"></a>Update-instellingen migreren naar de Azure-portal  
+
 De klassieke Azure-portal heeft ook een beperkt aantal andere instellingen voor Windows 10-updates in het apparaatconfiguratieprofiel. Als een van deze instellingen is geconfigureerd wanneer u naar de Azure-portal migreert, worden de volgende acties aangeraden:  
 
-1. Maak Windows 10 updateringen in de Azure-portal met de instellingen die u nodig hebt. De instelling **Functies van evaluatieversies toestaan** wordt niet ondersteund in Azure Portal omdat deze niet langer van toepassing is op de meest recente builds van Windows 10. U kunt de andere drie instellingen, evenals andere instellingen voor Windows 10-updates, configureren wanneer u updateringen maakt.  
+1. Maak Windows 10 updateringen in de Azure-portal met de instellingen die u nodig hebt. De instelling **Functies van evaluatieversies toestaan** wordt niet ondersteund in Azure Portal omdat deze niet langer van toepassing is op de meest recente builds van Windows 10. U kunt de andere drie instellingen en de andere update-instellingen voor Windows 10 configureren wanneer u update-ringen maakt.  
 
    > [!NOTE]  
    > Instellingen voor Windows 10-updates die zijn gemaakt in de klassieke portal worden na de migratie niet weergegeven in de Azure-portal. Deze instellingen worden echter toegepast. Als u deze instellingen migreert en het gemigreerde beleid bewerkt in Azure Portal, worden deze instellingen verwijderd uit het beleid.  
@@ -168,6 +193,7 @@ De klassieke Azure-portal heeft ook een beperkt aantal andere instellingen voor 
 2. Verwijder de update-instellingen in de klassieke portal. Nadat u naar Azure Portal bent gemigreerd en dezelfde instellingen toevoegt aan een update-ring, moet u de instellingen in de klassieke portal verwijderen om mogelijke beleidsconflicten te voorkomen. Wanneer dezelfde instelling bijvoorbeeld met verschillende waarden wordt geconfigureerd, is er sprake van een conflict. Er is geen eenvoudige manier om hierachter te komen, omdat de instelling die in de klassieke portal is geconfigureerd niet in Azure-portal wordt weergegeven.  
 
 ## <a name="next-steps"></a>Volgende stappen
+
 [Update-instellingen van Windows worden ondersteund in Intune](../windows-update-settings.md)  
 
 [Intune-nalevingsrapporten voor updates](../windows-update-compliance-reports.md)

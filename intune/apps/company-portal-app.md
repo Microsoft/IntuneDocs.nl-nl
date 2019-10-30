@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350010"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585012"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -128,6 +129,14 @@ Onder **Aanpassing van de bedrijfsportal** > **Apparaatbeheer en privacybericht*
 - De **standaardinstelling** accepteren om de lijst te gebruiken zoals deze wordt weergegeven, of
 - **Aangepast** kiezen om de lijst met items die uw organisatie niet kan zien of uitvoeren op beheerde iOS-apparaten aan te passen. U kunt [Markdown](https://daringfireball.net/projects/markdown/) gebruiken om opsommingstekens, vet, cursief en koppelingen toe te voegen.
 
+## <a name="company-portal-derived-credentials-for-ios-devices"></a>Van de bedrijfsportal afgeleide referenties voor iOS-apparaten
+Intune ondersteunt referenties die zijn afgeleid van Personal Identity Verification (PIV) en Common Access Card (CAC), in samenwerking met de referentieproviders DISA Purebred, Entrust Datacard en Intercede. Eindgebruikers voeren na inschrijving aanvullende stappen uit op hun iOS-apparaat om hun identiteit te verifiëren in de toepassing Bedrijfsportal. Afgeleide referenties worden ingeschakeld voor gebruikers door eerst een referentieprovider voor uw tenant in te stellen en vervolgens een profiel dat gebruikmaakt van afgeleide referenties te richten op gebruikers of apparaten.
+
+> [!NOTE]
+> De gebruiker ziet instructies over afgeleide referenties op basis van de koppeling die u via Intune hebt opgegeven.
+
+Zie [Afgeleide referenties gebruiken in Microsoft Intune](~/protect/derived-credentials.md) voor meer informatie over afgeleide referenties voor iOS-apparaten.
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Sneltoetsen voor Windows-bedrijfsportal
 
 Eindgebruikers kunnen navigatie-, app- en apparaatacties in de Windows-bedrijfsportal activeren met behulp van sneltoetsen (accelerators).
@@ -171,21 +180,25 @@ Gebruikers kunnen acties uitvoeren op hun lokale of externe apparaten via de app
 
 Voor sommige platforms en configuraties zijn geen selfserviceacties voor apparaten toegestaan. De onderstaande tabel bevat meer informatie over selfserviceacties:
 
-|     Platform    |    Buiten gebruik stellen    |    Wissen     |    Naam wijzigen<sup>(4)</sup>    |    Synchroniseren    |    Vergrendelen op afstand    |    Wachtwoordcode opnieuw instellen    |    Sleutelherstel    |
-|------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
-|    Windows 10<sup>(3)</sup>    |    Beschikbaar<sup>(1)</sup>    |    Beschikbaar    |    Beschikbaar    |    Beschikbaar    |    Alleen Windows Phone    |    Alleen Windows Phone    |    NA    |
-|    iOS<sup>(3)</sup>    |    Beschikbaar    |    Beschikbaar    |    Beschikbaar    |    Beschikbaar    |    Beschikbaar    |    Beschikbaar    |    NA    |
-|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    Beschikbaar    |    NA    |    Beschikbaar    |    Beschikbaar    |    Beschikbaar    |    NA    |    Beschikbaar<sup>(2)</sup>    |
-|    Android<sup>(3)</sup>    |    Beschikbaar<sup>(7)</sup>    |    Beschikbaar<sup>(7)</sup>    |    Beschikbaar    |    Beschikbaar    |    Beschikbaar    |    Beschikbaar<sup>(6)</sup>    |    NA    |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
+| Buiten gebruik stellen | Beschikbaar<sup>(1)</sup> | Beschikbaar<sup>(8)</sup> | Beschikbaar | Beschikbaar<sup>(7)</sup> |
+| Wissen | Beschikbaar | Beschikbaar | NA | Beschikbaar<sup>(7)</sup> |
+| Naam wijzigen<sup>(4)</sup> | Beschikbaar | Beschikbaar<sup>(8)</sup> | Beschikbaar | Beschikbaar |
+| Synchroniseren | Beschikbaar | Beschikbaar | Beschikbaar | Beschikbaar |
+| Vergrendelen op afstand | Alleen Windows Phone | Beschikbaar | Beschikbaar | Beschikbaar |
+| Wachtwoordcode opnieuw instellen | Alleen Windows Phone | Beschikbaar | NA | Beschikbaar<sup>(6)</sup> |
+| Sleutelherstel | NA | NA | Beschikbaar<sup>(2)</sup> | NA |
+| Donkere modus | NA | Beschikbaar | NA | NA |
 
-
-<sup>(1) </sup> Buiten gebruik stellen wordt altijd geblokkeerd op Windows-apparaten die lid zijn van Azure AD.<br>
-<sup>(2) </sup> Herstel van persoonlijke sleutels voor macOS is alleen beschikbaar via de Bedrijfsportal-website.<br> 
-<sup>(3)</sup> Alle externe acties worden uitgeschakeld als u een Apparaatinschrijvingsmanager-inschrijving gebruikt.<br>
-<sup>(4)</sup> Met Naam wijzigen wordt alleen de apparaatnaam in de app of op de website van de bedrijfsportal gewijzigd, niet op het apparaat zelf.<br>
-<sup>(5)</sup> Wissen op afstand is niet beschikbaar op MacOS-apparaten.<br>
-<sup>(6)</sup> Wachtwoordcode opnieuw instellen wordt niet ondersteund in bepaalde configuraties van Android en Android Enterprise. Zie [De wachtwoordcode van een apparaat opnieuw instellen of verwijderen via Intune](../remote-actions/device-passcode-reset.md) voor meer informatie.<br>
-<sup>(7)</sup> Buiten gebruik stellen en wissen is niet beschikbaar in scenario's voor Android Enterprise-apparaateigenaren (COPE, COBO, COSU).<br> 
+<sup>(1)</sup> **Buiten gebruik stellen** wordt altijd geblokkeerd op Windows-apparaten die zijn toegevoegd aan Azure AD.<br>
+<sup>(2)</sup> **Sleutelherstel** voor MacOS is alleen beschikbaar via de webportal.<br>
+<sup>(3) </sup> Alle externe acties worden uitgeschakeld als u een Apparaatinschrijvingsmanager-inschrijving gebruikt.<br>
+<sup>(4)</sup> Met **Naam wijzigen** wordt alleen de apparaatnaam in de app of op de website van de bedrijfsportal gewijzigd, niet op het apparaat zelf.<br>
+<sup>(5)</sup> **Extern wissen** is niet beschikbaar op MacOS-apparaten.<br>
+<sup>(6)</sup> **Wachtwoordcode opnieuw instellen** wordt niet ondersteund in bepaalde Android- en Android Enterprise-configuraties. Zie [De wachtwoordcode van een apparaat opnieuw instellen of verwijderen via Intune](../remote-actions/device-passcode-reset.md) voor meer informatie.<br>
+<sup>(7)</sup> **Buiten gebruik stellen** en **Wissen** is niet beschikbaar in Android Enterprise-apparaateigenaarscenario's (COPE, COBO, COSU).<br> 
+<sup>(8)</sup> **Buiten gebruik stellen** (apparaat verwijderen) en **Naam wijzigen** zijn beschikbaar voor alle registratiesoorten. Andere acties worden niet ondersteund voor gebruikersregistratie.<br> 
 
 ## <a name="next-steps"></a>Volgende stappen
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 003ce5af-7ee1-43fb-8d16-9d08c7957a85
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5e4d4b3326eda01a1345cd628af31dd66e14533
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 24b69b6da846d54d4f45ede47c932574e006f99f
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724994"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786016"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Met Microsoft Intune beveiligde apps  
 
@@ -71,6 +72,7 @@ In de volgende tabellen staan details van ondersteunde apps van Microsoft en par
 | **Microsoft Visio Viewer**<p><img alt="Microsoft app - Microsoft Visio Viewer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-visio-viewer.png" width="100"> | U kunt onderweg gratis Visio-diagrammen op iPhones bekijken en gebruiken. Meld u aan met uw Microsoft-account of open een Visio-bijlage uit een e-mail en geniet van de geweldige weergave van Visio-diagrammen op een iPhone met iOS 9.0 of hoger. Het is ook mogelijk om de diagrammen te delen met anderen, die vervolgens de Visio-diagrammen op hun iPhone of in een webbrowser kunnen bekijken, zelfs als ze Visio niet hebben geïnstalleerd op hun Windows-computer.| [iOS Store-koppeling](https://itunes.apple.com/us/app/microsoft-visio-viewer-flowcharts-and-diagrams/id1139787983?mt=8) |  
 | **Microsoft Word**<p><img alt="Microsoft app - Microsoft Word icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-word.png" width="100"> | Word-documenten zien er beter uit dan ooit op uw tablet en telefoon. U kunt er zeker van zijn dat wanneer u documenten bewerkt of maakt, ze er op computers, Macs, tablets en telefoons precies zo uitzien zoals u wilt. U bent in een handomdraai aan de slag dankzij een vertrouwd Office-uiterlijk en -gevoel en een intuïtieve aanraakervaring.<p><p>Deze app kan worden gebruikt als een app met meerdere identiteiten voor Android en iOS. | [Android Store-koppeling](https://play.google.com/store/apps/details?id=com.microsoft.office.word),<br>[iOS Store-koppeling](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8) |  
 | **Microsoft Work Folders**<p><img alt="Microsoft app - Microsoft Work Folders icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-work-folders.png" width="100"> | Dankzij Work Folders, een Windows Server-functie, kunnen medewerkers afzonderlijk hun bestanden beveiligen van binnen en buiten een zakelijke omgeving. | [iOS Store-koppeling](https://itunes.apple.com/us/app/work-folders/id950878067?mt=8) | 
+| **Microsoft Whiteboard**<p><img alt="Microsoft app - Microsoft Whiteboard icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-whiteboard.png" width="100"> | De app Microsoft Whiteboard biedt een intelligent canvas met een vrije vorm, waar teams visueel ideeën kunnen uitwerken, dingen kunnen creëren en kunnen samenwerken via de cloud.  De samenwerking binnen teams wordt vergroot doordat alle teamleden realtime het canvas kunnen bewerken en er opmerkingen op kunnen plaatsen, ongeacht waar ze zich bevinden. En al uw werk blijft veilig in de cloud, zodat u er op elke locatie of elk apparaat aan verder kunt werken. | [iOS Store-koppeling](https://apps.apple.com/us/app/microsoft-whiteboard/id1352499399) |  
 | **Yammer**<p><img alt="Microsoft app - Yammer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-yammer.png" width="100"> | Splits organisatorische silo's uit en faciliteer samenwerking tussen teams met Yammer. Maak verbinding met de juiste mensen in uw organisatie, deel en zoek informatie tussen teams en orden alles rondom projecten en ideeën, zodat u meer kunt doen. | [Android Store-koppeling](https://play.google.com/store/apps/details?id=com.yammer.v1),<br>[iOS Store-koppeling](https://itunes.apple.com/us/app/yammer/id289559439?mt=8) |  
 
 ## <a name="partner-apps"></a>Partner-apps 

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 05/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5491e0d2dfb1aa1989fc202203d9a895823b0b73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727815"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749450"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Locaties (netwerkomheining) in Intune gebruiken
 
@@ -68,9 +69,8 @@ U kunt als volgt een nalevingsbeleid op basis van locatie maken:
 
 ## <a name="create-the-location-compliance-policy"></a>Het nalevingsbeleid op basis van locatie maken
 
-Wanneer u het nalevingsbeleid maakt, selecteert u **Android** voor **Platform**. In **Locaties** kunt u een of meer van de netwerklocaties kiezen die u hebt toegevoegd. Deze locaties maken deel uit van de netwerkomheining die u voor uw apparaten maakt.
+Wanneer u [het nalevingsbeleid maakt](create-compliance-policy.md), selecteert u **Android** voor **Platform**. In **Locaties** kunt u een of meer van de netwerklocaties kiezen die u hebt toegevoegd. Deze locaties maken deel uit van de netwerkomheining die u voor uw apparaten maakt. 
 
-In [Het nalevingsbeleid op basis van de netwerklocatie maken](compliance-policy-create-android.md#locations) vindt u enkele richtlijnen.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>De acties voor niet-naleving configureren
 

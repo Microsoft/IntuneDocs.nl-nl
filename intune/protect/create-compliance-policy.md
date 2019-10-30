@@ -2,12 +2,13 @@
 title: Nalevingsbeleid voor apparaten maken in Microsoft Intune - Azure | Microsoft Docs
 description: Nalevingsbeleid voor apparaten maken, overzicht van status- en ernstniveaus zien, status voor Respijtperiode gebruiken, werken met voorwaardelijke toegang, apparaten zonder toegewezen beleid verwerken, en de verschillen in naleving bekijken in de Azure-portal en de klassieke portal in Microsoft Intune
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: samyada
@@ -15,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306576"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786079"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Een nalevingsbeleid maken in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Nalevingsbeleid voor apparaten is belangrijk voor het beveiligen van de resources van uw organisatie als u gebruikmaakt van Intune. In Intune kunt u regels en instellingen maken waar apparaten zich aan moeten houden om te voldoen, zoals een minimale versie van het besturingssysteem. Als het apparaat niet voldoet, kunt u toegang tot gegevens en resources blokkeren met behulp van [voorwaardelijke toegang](conditional-access.md).
 
@@ -48,10 +47,10 @@ Neem het volgende in acht voor het gebruik van het nalevingsbeleid voor apparate
 
 - Gebruik een ondersteund platform:
 
-  - Android
+  - Android-apparaatbeheerder
   - Android Enterprise
   - iOS
-  - macOS (preview)
+  - macOS
   - Windows 10
   - Windows 8.1
   - Windows Phone 8.1
@@ -72,26 +71,40 @@ Neem het volgende in acht voor het gebruik van het nalevingsbeleid voor apparate
 
 3. Selecteer **Beleid** > **Beleid maken**. Voer de volgende eigenschappen in:
 
-    - **Naam**: Voer een beschrijvende naam in voor het beleid. Geef uw beleid een naam zodat u het later eenvoudig kunt identificeren. **iOS-apparaten die zijn opengebroken, niet markeren als compatibel** is bijvoorbeeld een goede beleidsnaam.
-    - **Beschrijving**: Voer een beschrijving in voor het beleid. Deze instelling is optioneel, maar wordt aanbevolen.
-    - **Platform**: Kies het platform van uw apparaten. Uw opties zijn:  
+   - **Naam**: Voer een beschrijvende naam in voor het beleid. Geef uw beleid een naam zodat u het later eenvoudig kunt identificeren. **iOS-apparaten die zijn opengebroken, niet markeren als compatibel** is bijvoorbeeld een goede beleidsnaam.  
 
-       - **Android**
-       - **Android Enterprise**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 en hoger**
-       - **Windows 10 en hoger**
+   - **Beschrijving**: Voer een beschrijving in voor het beleid. Deze instelling is optioneel, maar wordt aanbevolen.  
 
-    - **Instellingen**: In de volgende artikelen worden de instellingen voor elk platform vermeld beschreven:
+   - **Platform**: Kies het platform van uw apparaten. Uw opties zijn:
+     - **Android-apparaatbeheerder**
+     - **Android Enterprise**
+     - **iOS/iPadOS**
+     - **macOS**
+     - **Windows Phone 8.1**
+     - **Windows 8.1 en hoger**
+     - **Windows 10 en hoger**
 
-        - [Android](compliance-policy-create-android.md)
-        - [Android Enterprise](compliance-policy-create-android-for-work.md)
-        - [iOS](compliance-policy-create-ios.md)
-        - [macOS](compliance-policy-create-mac-os.md)
-        - [Windows Phone 8.1, Windows 8.1 en hoger](compliance-policy-create-windows-8-1.md)
-        - [Windows 10 en hoger](compliance-policy-create-windows.md)
+     Voor *Android Enterprise* moet u vervolgens een **Profieltype** selecteren:
+     - **Eigenaar van het apparaat**
+     - **Werkprofiel**
+
+   - **Instellingen**: In de volgende artikelen worden de instellingen voor elk platform vermeld beschreven:
+     - [Android-apparaatbeheerder](compliance-policy-create-android.md)
+     - [Android Enterprise](compliance-policy-create-android-for-work.md)
+     - [iOS/iPadOS](compliance-policy-create-ios.md)
+     - [macOS](compliance-policy-create-mac-os.md)
+     - [Windows Phone 8.1, Windows 8.1 en hoger](compliance-policy-create-windows-8-1.md)
+     - [Windows 10 en hoger](compliance-policy-create-windows.md)  
+
+   - **Locaties** *(Android-apparaatbeheerder)* : In uw beleid kunt u naleving afdwingen op basis van de locatie van het apparaat. Kies uit bestaande locaties. Hebt u nog geen locatie? [Locaties (netwerkgrens) gebruiken](use-network-locations.md) in Intune biedt enige richtlijnen.  
+
+   - **Acties voor niet-naleving**: Voor apparaten die niet voldoen aan uw nalevingsbeleid, kunt u een reeks acties toevoegen die automatisch moeten worden toegepast. U kunt het schema veranderen wanneer het apparaat wordt gemarkeerd als niet-compatibel, zoals na één dag. U kunt ook een tweede actie toevoegen, waarbij een e-mailbericht wordt verzonden naar de gebruiker wanneer het apparaat niet voldoet.
+    
+     [Acties voor niet-compatibele apparaten toevoegen](actions-for-noncompliance.md) biedt meer informatie, onder andere over het maken van een e-mailmelding voor uw gebruikers.
+
+     U gebruikt bijvoorbeeld de functie Locaties en u voegt een locatie toe aan een nalevingsbeleid. De standaardactie bij niet-naleving wordt uitgevoerd als u ten minste één locatie hebt geselecteerd. Als het apparaat niet is verbonden met de geselecteerde locaties, wordt het apparaat direct gezien als 'niet compatibel'. U kunt gebruikers bijvoorbeeld een respijtperiode van één dag bieden.
+
+   - **Bereik (tags)** : Met bereiktags kunt u eenvoudig beleid toewijzen aan en filteren voor specifieke groepen, zoals Verkoop, HR, Alle NL-AMST-werknemers, enzovoort. Nadat u de instellingen hebt toegevoegd, kunt u ook een bereiktag toevoegen aan het nalevingsbeleid. [Bereiktags gebruiken om beleid te filteren](../fundamentals/scope-tags.md) is een goede resource.
 
 4. Wanneer u klaar bent, selecteert u **OK** > **Maken** om uw wijzigingen op te slaan. Het beleid wordt gemaakt en in de lijst weergegeven. Vervolgens wijst u het beleid toe aan uw groepen.
 
@@ -114,17 +127,18 @@ Als u het beleid toewijst, kunt u ook **Evalueren** hoeveel gebruikers moeten wo
 
 Als de knop **Evalueren** is uitgeschakeld, controleert u of het beleid is toegewezen aan een of meer groepen.
 
-## <a name="actions-for-noncompliance"></a>Acties voor niet-naleving
+<!-- ## Actions for noncompliance
 
-Voor apparaten die niet voldoen aan uw nalevingsbeleid, kunt u een reeks acties toevoegen die automatisch moeten worden toegepast. U kunt het schema veranderen wanneer het apparaat wordt gemarkeerd als niet-compatibel, zoals na één dag. U kunt ook een tweede actie toevoegen, waarbij een e-mailbericht wordt verzonden naar de gebruiker wanneer het apparaat niet voldoet.
+For devices that don't meet your compliance policies, you can add a sequence of actions to apply automatically. You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
 
-[Acties voor niet-compatibele apparaten toevoegen](actions-for-noncompliance.md) biedt meer informatie, onder andere over het maken van een e-mailmelding voor uw gebruikers.
+[Add actions for noncompliant devices](actions-for-noncompliance.md) provides more information, including creating a notification email to your users.
 
-U gebruikt bijvoorbeeld de functie Locaties en u voegt een locatie toe aan een nalevingsbeleid. De standaardactie bij niet-naleving wordt uitgevoerd als u ten minste één locatie hebt geselecteerd. Als het apparaat niet is verbonden met de geselecteerde locaties, wordt het apparaat direct gezien als 'niet compatibel'. U kunt gebruikers bijvoorbeeld een respijtperiode van één dag bieden.
+For example, you're using the Locations feature, and add a location in a compliance policy. The default action for noncompliance applies when you select at least one location. If the device isn't connected to the selected locations, it's immediately considered not compliant. You can give your users a grace period, such as one day.
 
-## <a name="scope-tags"></a>Bereiktags
+## Scope tags
 
-Met bereiktags kunt u eenvoudig beleid toewijzen aan en filteren voor specifieke groepen, zoals Verkoop, HR, Alle NL-AMST-werknemers, enzovoort. Nadat u de instellingen hebt toegevoegd, kunt u ook een bereiktag toevoegen aan het nalevingsbeleid. [Bereiktags gebruiken om beleid te filteren](../fundamentals/scope-tags.md) is een goede resource.
+Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
+-->
 
 ## <a name="refresh-cycle-times"></a>Cyclusduur vernieuwen
 

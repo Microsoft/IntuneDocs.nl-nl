@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 414476389a36cdfafd9169d449ea11adf6e68efd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 816ad4bb5b17f3a480fbf834280c4e9792c394a9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726294"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502979"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Overzicht van de MDM-levenscyclus (Mobile Device Management) van Microsoft Intune
 
@@ -27,7 +28,7 @@ ms.locfileid: "71726294"
 
 Alle apparaten die u beheert, hebben een *levensduur*. Intune kan u helpen met het beheren van deze levensduur: van de inschrijving, configuratie en beveiliging tot de buitengebruikstelling van het apparaat, wanneer het niet meer nodig is.
 
-![De levenscyclus van het apparaat](./media/device-lifecycle/device-lifecycle.png "de levenscyclus van het Intune-apparaat")
+![De levenscyclus van apparaten](./media/device-lifecycle/device-lifecycle.png "de levenscyclus van Intune-apparaten")
 
 ## <a name="enroll"></a>Inschrijven
 De hedendaagse MDM-strategieën (Mobile Device Management) hebben te maken met verschillende telefoons, tablets en pc's (iOS, Android, Windows en Mac OS X). Als u het apparaat moet kunnen beheren, wat vaak het geval is bij apparaten die bedrijfseigendom zijn, is de eerste stap de [apparaatregistratie instellen](../enrollment/device-enrollment.md). U kunt Windows-pc's ook beheren door deze in te schrijven bij Intune (MDM) of door [de Intune-clientsoftware te installeren](../manage-windows-pcs-with-microsoft-intune.md).

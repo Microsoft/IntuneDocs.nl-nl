@@ -1,16 +1,18 @@
 ---
-ms.openlocfilehash: f7916bc38be085625f5a65d7889212827bcae5d3
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: 748174ded8e8331c032ffd9f3b70b2c09b724f85
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314632"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72600900"
 ---
 ### <a name="apple"></a>Apple
-- Apple iOS en iPadOS 9.0 en hoger
+
+- Apple iOS en iPadOS 10.0 en hoger
 - Mac OS X 10.9 en hoger
 
 ### <a name="windows"></a>Windows
+
 - Computers met Windows 10 (Home, Pro, Education en Enterprise)
 - Windows 10 Mobile
 - Apparaten met Windows 10 IoT Enterprise (x86, x64)
@@ -23,6 +25,7 @@ ms.locfileid: "72314632"
   U kunt de [Intune-softwareclient](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) gebruiken om pc's met Windows 7 en hoger te beheren, met uitzondering van Windows 10 Home Edition.
 
 ### <a name="google"></a>Google
+
 - Google Android 4.0 en hoger (inclusief Samsung KNOX Standard 4.0 en hoger)*
 - Google Android for Work ([vereisten](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 

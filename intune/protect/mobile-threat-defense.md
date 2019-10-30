@@ -6,9 +6,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
@@ -17,18 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97efe5c2445263bba11ee083e89d36fde1986dc1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4abc35b625b9aa072e38c02d2fc4160faa916fb3
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727867"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785736"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Wat is Mobile Threat Defense-integratie met Intune?
-Intune kan gegevens van een Mobile Threat Defense-leverancier als gegevensbron voor nalevingsbeleid en regels voor voorwaardelijke toegang integreren. U kunt deze gegevens gebruiken voor de beveiliging van bedrijfsresources zoals Exchange en SharePoint door de toegang te blokkeren voor mobiele apparaten die zijn gecompromitteerd.  
+Intune kan gegevens van een Mobile Threat Defense-leverancier integreren als een gegevensbron voor apparaatnalevingsbeleid en regels voor voorwaardelijke toegang tot apparaten. U kunt deze gegevens gebruiken voor de beveiliging van bedrijfsresources zoals Exchange en SharePoint door de toegang te blokkeren voor mobiele apparaten die zijn gecompromitteerd.
+
+Intune kan dezelfde gegevens gebruiken als een bron voor niet-ingeschreven apparaten met behulp van het Intune-beveiligingsbeleid voor apps. Beheerders kunnen daarom deze informatie gebruiken om bedrijfsgegevens te beschermen binnen een [met Microsoft Intune beveiligde app](~/apps/apps-supported-intune-apps.md) en een blok uitgeven of selectief wissen.
 
 ## <a name="what-problem-does-this-solve"></a>Welk probleem wordt hiermee opgelost?
-Integratiegegevens van een Mobile Threat Defense-leverancier kunnen helpen uw bedrijfsresources te beschermen tegen bedreigingen die invloed hebben op mobiele platforms.  
+Door gegevens van een Mobile Threat Defense-leverancier te integreren, kunt u uw bedrijfsresources beschermen tegen bedreigingen die invloed hebben op mobiele platforms.  
 
 Bedrijven zijn meestal proactief bij het beveiligen van pc's tegen aanvallen, maar dat geldt niet voor mobiele apparaten die vaak niet worden bewaakt en beveiligd. Mobiele platforms beschikken weliswaar over geïntegreerde beveiliging (bijvoorbeeld de isolatie van apps en gescreende app-stores), maar ze blijven kwetsbaar voor geavanceerde aanvallen. Het gebruik van diverse apparaten voor werk en de toegang tot gevoelige informatie neemt steeds meer toe. De gegevens van de Mobile Threat Defense-leverancier kunnen helpen apparaten en uw resources tegen steeds geavanceerder wordende aanvallen te beschermen.  
 
@@ -42,7 +45,7 @@ Bijvoorbeeld: Een verbonden Mobile Threat Defense-app meldt aan de Mobile Threat
 
 Als deze optie is ingeschakeld, verzamelt Intune informatie over de app-inventaris van apparaten in zowel privé- als bedrijfseigendom en maakt Intune deze informatie beschikbaar voor MTD-providers om op te halen, zoals Lookout for Work. U kunt de app-inventaris verzamelen van gebruikers van iOS-apparaten.
 
-Deze service is opt-in; er wordt standaard geen informatie over app-inventaris gedeeld. Een Intune-beheerder moet App Sync voor iOS-apparaten inschakelen in de service-instellingen voordat informatie over app-inventaris wordt gedeeld.
+Deze service is opt-in; er wordt standaard geen informatie over app-inventaris gedeeld. Een Intune-beheerder moet **synchronisatie van apps voor iOS-apparaten** inschakelen in de instellingen van de Mobile Threat Defense-connector voordat informatie over app-inventaris wordt gedeeld.
 
 **App-inventaris**  
 Als u App Sync voor iOS-apparaten inschakelt, worden inventarissen van iOS-apparaten in zowel bedrijfs- en privé-eigendom verzonden naar uw MTD-serviceprovider. Gegevens in de app-inventarisatie bestaan onder andere uit:
@@ -56,7 +59,7 @@ Als u App Sync voor iOS-apparaten inschakelt, worden inventarissen van iOS-appar
 - Of de app wel of niet is gevalideerd
 - Of de app wel of niet wordt beheerd
 
-## <a name="sample-scenarios"></a>Voorbeeldscenario's
+## <a name="sample-scenarios-for-enrolled-devices-using-device-compliance-policies"></a>Voorbeeldscenario's voor geregistreerde apparaten met behulp van het nalevingsbeleid voor apparaten
 
 Wanneer een apparaat wordt beschouwd als geïnfecteerd door de Mobile Threat Defense-oplossing:
 
@@ -66,14 +69,22 @@ Toegang wordt geboden wanneer het apparaat is hersteld:
 
 ![Afbeelding met een apparaat waartoe middels Mobile Threat Defense toegang is verleend](./media/mobile-threat-defense/MTD-image-2.png)
 
+## <a name="sample-scenarios-for-unenrolled-devices-using-intune-app-protection-policies"></a>Voorbeeldscenario's voor niet-geregistreerde apparaten met behulp van het app-beveiligingsbeleid van Intune
+
+Wanneer een apparaat wordt beschouwd als geïnfecteerd door de Mobile Threat Defense-oplossing:<br>
+![Afbeelding van een apparaat dat volgens Mobile Threat Defense is geïnfecteerd](./media/mobile-threat-defense/MTD-image-3.png)
+
+Toegang wordt geboden wanneer het apparaat is hersteld:<br>
+![Afbeelding van een apparaat waartoe middels Mobile Threat Defense toegang is verleend](./media/mobile-threat-defense/MTD-image-4.png)
+
 > [!NOTE] 
-> Het gebruik van meerdere Mobile Threat Defense-leveranciers met Intune wordt niet ondersteund. Als u meerdere MTD-programma's hebt ingeschakeld, worden alle MTD-apps geïnstalleerd en wordt er op alle apparaten gescand op bedreigingen.
+> Het gebruik van meerdere Mobile Threat Defense-leveranciers met Intune wordt niet ondersteund. Als u meerdere MTD-connectors hebt ingeschakeld, worden alle MTD-apps geïnstalleerd en wordt er op alle apparaten gescand op bedreigingen.
 
 ## <a name="mobile-threat-defense-partners"></a>Mobile Threat Defense-partners
 
 Meer informatie over het beveiligen van de toegang tot bedrijfsresources op basis van apparaat, netwerk en toepassingsrisico met:
 
-- [Lookout](lookout-mobile-threat-defense-connector.md)
+- [Lookout for Work](lookout-mobile-threat-defense-connector.md)
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
