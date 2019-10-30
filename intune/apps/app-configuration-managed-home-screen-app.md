@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d47cee2c26960775d268b317845c118e99b85fe9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507589"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813472"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>De app Microsoft Managed Home Screen voor Android Enterprise configureren
 
@@ -60,25 +60,15 @@ De volgende tabel bevat de beschikbare configuratiesleutels, waardetypen, standa
 | Configuratiesleutel | Waardetype | Standaardwaarde | Beschrijving |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | De rastergrootte instellen | string | Auto | Hiermee kunt u de rastergrootte instellen voor apps die op het beheerde startscherm moeten worden geplaatst. U kunt het aantal rijen en kolommen van de app instellen om de rastergrootte in de volgende indeling `columns;rows` te definiëren. Als u de rastergrootte definieert, zou het maximum aantal apps dat wordt weergegeven in een rij op het startscherm het aantal rijen zijn dat u instelt en zou het maximale aantal apps dat wordt weergegeven in een kolom in het startscherm het aantal kolommen zijn dat u instelt. |
-| De header van het scherm inschakelen | Booleaanse waarde | WAAR | Hiermee kan de bovenste koptekst worden gebruikt voor verschillende weergaven die beschikbaar zijn op het beheerde startscherm, zoals de feed of feedkaarten. Als u deze instelling inschakelt, is de header voor de gebruikers van het apparaat zichtbaar. |
-| Statusbalk apparaat inschakelen | Booleaanse waarde | WAAR | Hiermee kunt u de statusbalk in het startscherm inschakelen (bovenste balk met huidige verbindingen zoals wifi enzovoort). Als u deze configuratiesleutel inschakelt, kan de eindgebruiker de pictogrammen zien die zijn weergegeven op de statusbalken die voor verbindingen en actieve apps staan. |
 | Meldingsbadge inschakelen | Booleaanse waarde | ONWAAR | Hiermee kunt de meldingsbadge voor app-pictogrammen inschakelen die het aantal nieuwe meldingen in de app aangeeft. Als u deze instelling inschakelt, zullen eindgebruikers meldingsbadges zien in apps met ongelezen meldingen. Als u deze configuratiesleutel uitgeschakeld houdt, zal de gebruiker geen meldingsbadge zien voor apps die mogelijk ongelezen meldingen hebben. |
 | Startscherm vergrendelen | Booleaanse waarde | WAAR | Hiermee ontneemt u de gebruiker de mogelijkheid om app-pictogrammen op het startscherm te verplaatsen. Als u deze configuratiesleutel inschakelt, worden de app-pictogrammen op het startscherm vergrendeld en zal de eindgebruiker deze niet kunnen slepen en neerzetten naar verschillende rasterposities van het startscherm. Als deze op `false` is gezet, zullen eindgebruikers toepassings- en weblinkpictogrammen op Managed Home Screen kunnen verplaatsen.  |
 | Achtergrond apparaat instellen | string | Standaard | Hiermee kunt u een achtergrond van uw keuze instellen door de URL van de installatiekopie in te voeren die u als achtergrond wilt instellen. |
 | De grootte van het app-pictogram instellen | integer | 2 | Hiermee kunt u de pictogramgrootte instellen voor apps die worden weergegeven op het startscherm. U kunt de volgende waarden in deze configuratie kiezen voor de verschillende grootten - 0 (minimale grootte), 1 (klein), 2 (normaal), 3 (groot) en 4 (maximale grootte). |
 | Pictogram app-map instellen | integer | 0 | Hiermee kunt u het uiterlijk van app-mappen definiëren op het startscherm. U kunt voor het uiterlijk de volgende waarden kiezen: Donker vierkant(0);   Donker cirkel(1); Licht vierkant(2); Licht cirkel(3). |
-| Gebaren inschakelen | Booleaanse waarde | ONWAAR | Schakel de mogelijkheid in van de eindgebruiker om acties toe te wijzen aan gebaren zoals omhoog en omlaag vegen. Als u deze configuratiesleutel uitschakelt, kunnen eindgebruikers alleen naar rechts vegen als er een tweede pagina is, en teruggaan naar de startpagina. |
-| Verticaal schuiven inschakelen | Booleaanse waarde | ONWAAR | Hiermee kunt u verticaal schuiven op het beheerde startscherm. Als u deze configuratiesleutel inschakelt, kan de eindgebruiker alleen verticaal navigeren naar verschillende pagina's in plaats van horizontaal te vegen. |
-| Startschermthema instellen | string | Theme.Light.Blue | Hiermee kunt u het thema voor het startscherm kiezen uit een vooraf gedefinieerde set thema's met verschillende kleuren. U kunt de volgende thema's kiezen door de tekenreekswaarde in de volgende indeling in te voeren.   Theme.Light.Green. Hierbij kan licht worden vervangen door donker voor een donker thema en kan groen worden vervangen door blauw, geel, roze, rood, oranje en paars. |
-| Dokken inschakelen | Booleaanse waarde | ONWAAR | Hiermee kunt u het gedeelte voor het dokken van de app onder aan het startscherm met permanente, weergegeven apps en een ingangspunt voor alle geïnstalleerde apps inschakelen. Als u deze configuratiesleutel inschakelt, heeft de eindgebruiker toegang tot apps in de dock en tevens toegang tot het gedeelte met alle apps waarin deze naar de lijst met alle op de apparaten geïnstalleerde apps kan gaan, ongeacht of deze nu wel of niet zijn opgenomen in de whitelist. |
 | Schermstand instellen | integer | 1 | Hiermee kunt u de stand van het startscherm instellen op de modus Staand, Liggend of Automatisch draaien. U kunt de stand instellen door de waarden 1 (voor de staande modus), 2 (voor de liggende modus), 3 (voor Automatisch draaien) in te voeren. |
-| Feed van het startscherm inschakelen | Booleaanse waarde | ONWAAR | Hiermee kunt u de feed van het startscherm schakelen, die zichtbaar wordt wanneer u naar links op het startscherm veegt. Deze feed geeft een ander type inhoud weer, zoals nieuws, agenda, vaak gebruikte apps en de kaart voor Cortana-spraakassistent enz. Als u dit inschakelt, kan de eindgebruiker naar de feed navigeren door naar links op het startscherm te vegen. |
-| Overzichtsmodus inschakelen | Booleaanse waarde | ONWAAR | Hiermee kunnen de eindgebruikers verschillende pagina's toevoegen aan of verwijderen van het startscherm. Deze kunnen worden geopend door naar rechts te vegen op het standaardscherm. Als u dit inschakelt, kan de eindgebruiker pagina's toevoegen aan de rechterkant van de standaardpagina van het startscherm, maar ook de standaardpagina wijzigen en de instellingen op Managed Home Screen openen. |
 | Telemetrie van het apparaat inschakelen | Booleaanse waarde | ONWAAR | Hiermee kunt u de telemetrie inschakelen die wordt vastgelegd voor het beheerde startscherm. Als u dit inschakelt, kan Microsoft telemetrie over het apparaatgebruik vastleggen, zoals het aantal keren dat een bepaalde app op dit apparaat wordt gestart. |
 | De in de whitelist opgenomen toepassingen instellen | bundleArray | ONWAAR | Hiermee kunt u de apps definiëren die op het startscherm worden weergegeven. U kunt kiezen uit alle apps die op het apparaat zijn geïnstalleerd. U definieert de apps door de naam van het app-pakket in te voeren van de apps die u graag zichtbaar wilt maken. Met com.microsoft.emmx voegt u bijvoorbeeld Instellingen toe aan het startscherm. De apps die u in dit gedeelte op de whitelist plaatst, moeten al op het apparaat zijn geïnstalleerd om te worden weergegeven op het startscherm. |
 | Vastgemaakte webkoppelingen instellen | bundleArray | ONWAAR | Hiermee kunt u websites vastmaken als pictogrammen voor snel starten op het startscherm. Met deze configuratie kunt u de URL definiëren en toevoegen aan het startscherm waar de eindgebruiker deze met één keer tikken kan starten in de browser. |
-| Zoekbalk inschakelen | Booleaanse waarde | ONWAAR | Hiermee kunt u de zoekbalk inschakelen op het startscherm. Als u deze inschakelt, zien gebruikers van het apparaat de zoekbalk op het startscherm waarop ze alles kunnen invoeren wat ze op het internet willen opzoeken. |
-| De app-instellingen uitschakelen | Booleaanse waarde | ONWAAR | Hiermee kunt u de instellingenpagina voor Managed Home Screen uitschakelen. Als u deze uitschakelt, kan de eindgebruiker van het apparaat niet bij de instellingen komen van Managed Home Screen. |
 | De schermbeveiliging inschakelen | Booleaanse waarde | ONWAAR | De schermbeveiligingsmodus wel of niet inschakelen. Indien deze is ingesteld op true, kunt u **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver**, en **media_detect_ screen_saver** configureren. |
 | Installatiekopie van schermbeveiliging | string |   | Hiermee stelt u de URL van de installatiekopie van de schermbeveiliging in. Als er geen URL is ingesteld, geven apparaten de standaard ingestelde schermbeveiligingsafbeelding weer wanneer de schermbeveiliging wordt geactiveerd. De standaardafbeelding geeft het pictogram van de Managed Home Screen-app weer.  |
 | Tijd weergeven bij schermbeveiliging | integer | 0 | Hiermee wordt de optie geboden om de hoeveelheid tijd in seconden in te stellen die op het apparaat wordt weergegeven tijdens de schermbeveiligingsmodus. Als deze is ingesteld op 0, wordt de schermbeveiliging voor onbepaalde tijd weergegeven in de schermbeveiligingsmodus totdat het apparaat wordt geactiveerd.  |
@@ -116,18 +106,6 @@ Hier volgt een voorbeeld-JSON-script met alle beschikbare configuratiesleutels d
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
         {
-            "key": "keep_page_header",
-            "valueBool": true
-        },
-        {
-            "key": "keep_status_bar",
-            "valueBool": true
-        },
-        {
-            "key": "show_notification_badge",
-            "valueBool": false
-        },
-        {
             "key": "lock_home_screen",
             "valueBool": true
         },
@@ -144,32 +122,8 @@ Hier volgt een voorbeeld-JSON-script met alle beschikbare configuratiesleutels d
             "valueInteger": 0
         },
         {
-            "key": "gesture_on",
-            "valueBool": false
-        },
-        {
-            "key": "vertical_scrolling",
-            "valueBool": false
-        },
-        {
-            "key": "theme",
-            "valueString": "Theme.Light.Blue"
-        },
-        {
-            "key": "dock_enable",
-            "valueBool": false
-        },
-        {
             "key": "screen_orientation",
             "valueInteger": 1
-        },
-        {
-            "key": "feed_enable",
-            "valueBool": false
-        },
-        {
-            "key": "allow_overview_mode",
-            "valueBool": false
         },
         {
             "key": "enable_telemetry",
@@ -204,14 +158,6 @@ Hier volgt een voorbeeld-JSON-script met alle beschikbare configuratiesleutels d
                     ]
                 }
             ]
-        },
-        {
-            "key": "search_bar",
-            "valueBool": false
-        },
-        {
-            "key": "hide_settings",
-            "valueBool": false
         },
         {
             "key": "show_virtual_home",

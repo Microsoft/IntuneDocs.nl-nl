@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdb3623a61c16f69773703b8acdbb8f7c02b4ac4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e648d2eff8fd95cd3c995e9cce1bd0c9dfff32da
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504740"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889525"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Verschillende apparaatbeheerfuncties beheren en gebruiken op Windows Holographic- en HoloLens-apparaten met Intune
 
@@ -80,7 +80,7 @@ Microsoft Intune kan universele Windows-apps implementeren op Microsoft HoloLens
 - Zie [Apps met gemengde realiteit voor Microsoft HoloLens](https://www.microsoft.com/hololens/apps) voor meer informatie over het ontwikkelen van apps voor Microsoft HoloLens. 
 
 > [!NOTE]
-> HoloLens-apparaten met Windows 10 Holographic voor bedrijven 1607 ondersteunen geen apps met een online licentie uit de Microsoft Store voor Bedrijven. Zie [Apps installeren op HoloLens](https://docs.microsoft.com/hololens/hololens-install-apps) voor meer informatie.
+> HoloLens-apparaten met Windows 10 Holographic voor bedrijven 1607 ondersteunen geen apps met een online licentie uit de Microsoft Store voor Bedrijven. Zie [Apps installeren op HoloLens](/hololens/holographic-store-apps) voor meer informatie.
 
 ## <a name="device-actions"></a>Apparaatacties
 In Intune worden een aantal ingebouwde acties gebruikt waarmee IT-beheerders verschillende taken kunnen uitvoeren. Dit kan lokaal op het apparaat maar ook extern met behulp van Intune in Azure Portal. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal op afstand een opdracht geven voor persoonlijke apparaten die bij Intune zijn ingeschreven.

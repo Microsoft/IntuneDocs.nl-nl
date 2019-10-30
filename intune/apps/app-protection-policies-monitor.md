@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d82813f1292c99cf248c56a102503413d2cb8fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507452"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889581"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -76,7 +76,7 @@ U kunt zoeken naar een afzonderlijke gebruiker en de nalevingsstatus voor deze g
 - **Laatste synchronisatie**: Wanneer de app voor het laatst is gesynchroniseerd met Intune. 
 
 >[!NOTE]
-> De kolom **Laatste synchronisatie** bevat in het rapport Gebruikersstatus op de console dezelfde waarde als in het [exporteerbare CSV-rapport](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv) van het app-beveiligingsbeleid. Het verschil is een kleine vertraging in synchronisatie tussen de waarde in de twee rapporten. 
+> De kolom **Laatste synchronisatie** bevat in het rapport Gebruikersstatus op de console dezelfde waarde als in het [exporteerbare CSV-rapport](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities) van het app-beveiligingsbeleid. Het verschil is een kleine vertraging in synchronisatie tussen de waarde in de twee rapporten. 
 >
 > De tijd waarnaar wordt verwezen in Laatste synchronisatie, is het moment waarop het app-exemplaar voor het laatst is gezien in Intune. Wanneer een gebruiker een app start, communiceert de app mogelijk op deze starttijd met de Intune-app-beveiligingsservice, afhankelijk van de datum waarop deze voor het laatst is ingecheckt. Zie [interval voor nieuwe pogingen voor inchecken van app-beveiligingsbeleid](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Als een eindgebruiker deze specifieke app niet heeft gebruikt gedurende het laatste interval voor inchecken (meestal 30 minuten, bij actief gebruik) en de app vervolgens start, gebeurt het volgende:
 >
