@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b61281b0e82bcb839efdc31726d398eea08c364f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502202"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810219"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Lookout Mobile Endpoint Security-integratie met Intune instellen
 Met een omgeving die aan de [vereisten](lookout-mobile-threat-defense-connector.md#prerequisites) voldoet, kunt u Lookout Mobile Endpoint Security integreren met Intune. De informatie in dit artikel helpt u bij het instellen van de integratie en het configureren van belangrijke instellingen in Lookout voor gebruik met Intune.  
@@ -69,6 +69,9 @@ Om de integratie van uw Lookout Mobile Endpoint Security-abonnement met Intune i
    Nadat u deze informatie hebt verzameld, neemt u contact op met de Lookout-ondersteuning (e-mailadres: enterprisesupport@lookout.com). Met behulp van de gegevens die u verstrekt zal de Lookout-ondersteuning in samenwerking met uw primaire contactpersoon uw abonnement onboarden en uw Lookout Enterprise-account maken.  
 
 ## <a name="configure-your-lookout-subscription"></a>Uw Lookout-abonnement configureren  
+
+De volgende stappen moeten worden uitgevoerd in de Enterprise-beheerconsole en maken een verbinding mogelijk met de service van Lookout voor Intune-ingeschreven apparaten (via apparaatcompatibiliteit) **en** niet-geregistreerde apparaten (via app-beveiligingsbeleid).
+
 Nadat Lookout-ondersteuning uw Lookout Enterprise-account heeft gemaakt, stuurt deze een e-mail naar de primaire contactpersoon van uw bedrijf met een koppeling naar de aanmeldings-URL: https://aad.lookout.com/les?action=consent. 
 
 ### <a name="initial-sign-in"></a>Eerste aanmelding  
@@ -110,20 +113,7 @@ Bij de volgende procedure wordt ervan uitgegaan dat u eerder een groep in Azure 
 6. Selecteer **Connector maken** om de configuratie van de connector te voltooien. Als u tevreden bent met uw resultaten, kunt u de enrollment uitbreiden naar andere gebruikersgroepen.
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Configureer Intune om Lookout te gebruiken als een Mobile Threat Defense-provider
-Nadat u Lookout MES hebt geconfigureerd, moet u in Intune een verbinding met Lookout instellen.  
-
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-
-2. Ga naar **Apparaatcompatibiliteit** > **Mobile Threat Defense** en selecteer **Toevoegen**.
-
-3. Gebruik in het deelvenster *Connector toevoegen* de vervolgkeuzelijst om **Lookout for Work** te selecteren.  
-
-4. Selecteer **Maken**. Nadat de connector verbinding met Lookout MES maakt, worden de *connectorinstellingen* beschikbaar.
-
-5. Zet **Synchronisatie van app inschakelen voor iOS-apparaten** op **Aan**. 
-
-6. Selecteer **Opslaan** om de configuratie te voltooien.  Intune en Lookout MES zijn nu geïntegreerd en klaar voor gebruik.
-
+Nadat u Lookout MES hebt geconfigureerd, moet u een verbinding met [Lookout in Intune](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable) instellen.  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Aanvullende instellingen in de Lookout MES-console
 Hieronder vindt u aanvullende instellingen die u in de Lookout MES-console kunt configureren.  
@@ -146,8 +136,6 @@ Om e-mailwaarschuwingen voor bedreigingen te ontvangen, meldt u zich aan bij de 
 
   ![Schermopname van de pagina Voorkeuren met het gebruikersaccount weergegeven](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
 
-
-
 ## <a name="configure-threat-classifications"></a>Bedreigingsclassificaties configureren  
 Met Lookout Mobile Endpoint Security worden mobiele bedreigingen geclassificeerd in verschillende typen. Aan de bedreigingsclassificaties van Lookout zijn standaardrisiconiveaus gekoppeld. De risiconiveaus kunnen op elk gewenst moment worden aangepast aan de vereisten van uw bedrijf.
 
@@ -167,4 +155,5 @@ Zie [Lookout for Work-apps met Intune toevoegen](mtd-apps-ios-app-configuration-
 
 ## <a name="next-steps"></a>Volgende stappen
 
-[Lookout-apps instellen](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Lookout-apps instellen voor ingeschreven apparaten](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Lookout-apps instellen voor niet-ingeschreven apparaten](~/protect/mtd-add-apps-unenrolled-devices.md)

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e53f50c42e768eeb652a8602bea49c04d29364c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504424"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810283"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>De Mobile Threat Defense-connector inschakelen in Intune
 
@@ -44,7 +44,7 @@ Klassiek beleid voor voorwaardelijke toegang voor MTD-apps:
 Als u klassiek beleid voor voorwaardelijke toegang wilt bekijken, gaat u in [Azure](https://portal.azure.com/#home) naar **Azure Active Directory** > **Voorwaardelijke toegang** > **Klassieke beleidsregels**.
 
 
-## <a name="to-enable-the-mtd-connector"></a>De MTD-connector inschakelen
+## <a name="to-enable-the-mobile-threat-defense-connector"></a>Mobile Threat Defense-connector inschakelen
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
@@ -58,20 +58,23 @@ Als u klassiek beleid voor voorwaardelijke toegang wilt bekijken, gaat u in [Azu
 
 7. Schakel de wisselknop in overeenkomstig de wensen van uw organisatie. Welke wisselopties zichtbaar zijn, is afhankelijk van de MTD-partner.
 
-## <a name="mtd-toggle-options"></a>Wisselopties voor MTD
+## <a name="mobile-threat-defense-toggle-options"></a>Wisselopties voor Mobile Threat Defense
 
-U kunt bepalen welke wisselopties voor MTD overeenkomstig de wensen van uw organisatie moeten worden ingeschakeld. Hier vindt u meer informatie:
+U kunt bepalen welke wisselopties voor Mobile Threat Defense moeten worden ingeschakeld in overeenstemming met de wensen van uw organisatie. Hier vindt u meer informatie:
 
-- **Android 4.1+-apparaten koppelen aan [naam MTD-partner] voor Work MTD**: wanneer u deze optie inschakelt, kunnen door Android 4.1+-apparaten beveiligingsrisico's worden gerapporteerd aan Intune.
-  - **Apparaat as niet-conform markeren als er geen gegevens zijn ontvangen**: als door Intune geen gegevens worden ontvangen van de MTD-partner over een apparaat op dit platform, kunt u het apparaat als niet-conform beschouwen.
-<br></br>
-- **iOS 8.0+-apparaten koppelen aan [naam MTD-partner] voor Work MTD**: wanneer u deze optie inschakelt, kunnen iOS 8.0+-apparaten beveiligingsrisico’s melden bij Intune.
-  - **Apparaat as niet-conform markeren als er geen gegevens zijn ontvangen**: als door Intune geen gegevens worden ontvangen van de MTD-partner over een apparaat op dit platform, kunt u het apparaat als niet-conform beschouwen.
-<br></br>
+**Instellingen voor MDM-nalevingsbeleid**
+- **Android 4.1+-apparaten koppelen aan *\<MTD-partnernaam>***: wanneer u deze optie inschakelt, kunnen door Android 4.1+-apparaten beveiligingsrisico's worden gerapporteerd aan Intune.
+- ** iOS 8.0+-apparaten koppelen aan *\<MTD-partnernaam>***: wanneer u deze optie inschakelt, kunnen iOS 8.0+-apparaten beveiligingsrisico’s melden bij Intune.
 - **Synchronisatie van app inschakelen voor iOS-apparaten**: hiermee staat u toe dat deze Mobile Threat Defense-partner metagegevens van iOS-toepassingen kan aanvragen bij Intune om te gebruiken voor bedreigingsanalyse.
-
 - **Niet-ondersteunde besturingssysteemversies blokkeren** : blokkeer het apparaat als hierop een besturingssysteem met een lagere versie wordt uitgevoerd dan de minimaal ondersteunde versie.
 
+**Instellingen voor app-beveiligingsbeleid**
+- **Android-apparaten van versie 4.1 en hoger verbinden met *\<MTD-partnernaam>* voor de evaluatie van het app-beveiligingsbeleid**: Als u deze optie inschakelt, worden apparaten (inclusief gegevens van deze connector) geëvalueerd door app-beveiligingsbeleid met behulp van de Device Threat Level-regel.
+- **iOS-apparaten van versie 8.0 verbinden met *\<MTD-partnernaam>* voor de evaluatie van het app-beveiligingsbeleid**: Als u deze optie inschakelt, worden apparaten (inclusief gegevens van deze connector) geëvalueerd door app-beveiligingsbeleid met behulp van de Device Threat Level-regel.
+
+Voor meer informatie over het gebruik van Mobile Threat Defense-connectoren voor de evaluatie van het Intune app-beschermingsbeleid, zie [Mobiele Threat Defense voor niet-geregistreerde apparaten instellen](~/protect/mtd-enable-unenrolled-devices.md).
+
+**Algemene gedeelde instellingen**
 - **Aantal dagen dat partner niet reageert**: aantal dagen van inactiviteit waarna de partner in Intune als niet-reagerend wordt beschouwd omdat de verbinding is verbroken. Intune negeert de compatibiliteitsstatus voor niet-reagerende MTD-partners.
 
 > [!IMPORTANT] 

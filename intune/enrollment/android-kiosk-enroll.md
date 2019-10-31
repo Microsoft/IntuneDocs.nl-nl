@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1a1c03dc480ad66de22b4a5ee44a9b8c221980c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: edc884850b70ff7621224c5b01a68d016f27504e
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503388"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923381"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Intune-inschrijving van toegewezen Android Enterprise-apparaten instellen
 
@@ -78,7 +78,7 @@ U kunt apps en beleidsregels zenden naar toegewezen of dynamische apparaatgroepe
 4. Vul in de blade **Dynamisch-lidmaatschapregels** de velden als volgt in:
     - **Regel voor dynamisch lidmaatschap toevoegen**: Eenvoudige regel
     - **Locatie voor het toevoegen van apparaten**: enrollmentProfileName
-    - Kies in het middelste vak **Overeenkomst**.
+    - Kies in het middelste vak **Is gelijk aan**.
     - Voer in het laatste veld de naam in van het inschrijvingsprofiel dat u eerder hebt gemaakt.
     Raadpleeg [Dynamische lidmaatschapsregels voor groepen in AAD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership) voor meer informatie over dynamische lidmaatschapsregels. 
 5. Kies **Query toevoegen** > **Maken**.

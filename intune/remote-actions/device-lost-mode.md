@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aecbcd91eef668ba2a92acfc9b42e6c68df3672a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509434"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057531"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>De modus Apparaat verloren inschakelen op iOS-apparaten met Intune
 
@@ -43,8 +43,10 @@ Deze functie wordt niet ondersteund op:
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecteer **Apparaten** en selecteer vervolgens **Alle apparaten**.
-4. Kies een iOS-apparaat in de lijst met apparaten die u beheert en kies **...Meer**. Kies vervolgens de externe actie **Apparaat verloren**.
-5. In de **modus Apparaat verloren** schakelt u deze functie in. Voer vervolgens het weer te geven bericht in en voeg het telefoonnummer van de contactpersoon toe.
+4. Kies in de lijst met door u beheerde apparaten een iOS-apparaat en kies vervolgens de externe actie **Modus apparaat verloren (alleen onder toezicht)** .
+5. Selecteer in de **Modus apparaat verloren** de optie **Inschakelen**.
+6. Typ in het **Weergegeven bericht op het vergrendelingsscherm** een bericht dat moet worden weergegeven op het vergrendelingsscherm van het apparaat.
+7. Geef eventueel een telefoonnummer op in het vak **Weergegeven telefoonnummer**.
 6. Selecteer **OK** om uw wijzigingen op te slaan.
 
 Wanneer u de modus Apparaat verloren inschakelt, wordt het gebruik van het apparaat volledig geblokkeerd. De gebruiker krijgt pas weer toegang tot het apparaat als de modus Apparaat verloren is uitgeschakeld. Als de modus Apparaat verloren is ingeschakeld, kunt u de actie [Apparaat zoeken](device-locate.md) gebruiken om het apparaat te zoeken.

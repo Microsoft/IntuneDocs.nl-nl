@@ -7,14 +7,28 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9965c6e85173ea9958182be43b6c93d9578d534f
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: a2675b1b601261e673923ab5e3ac41d0f3d83264
+ms.sourcegitcommit: 71b0cd7b81178e2f9e9f80830fa9a7985781628b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749365"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73057315"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune.
+
+### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>Geplande wijziging: De instelling 'Logboekregistratie op de server voor Siri-opdrachten' wordt verwijderd van de Intune-console <!-- 5468501-->
+
+We zijn van plan om de instelling 'Logboekregistratie op de server voor Siri-opdrachten' van de Intune console te verwijderen met de update voor de Intune-service in november. Deze wijziging sluit aan bij het feit dat Apple de instelling aan hun kant al heeft verwijderd.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Nadat de update van november of 1911 medio november is uitgevoerd, zult u zien dat deze instelling in de Intune-console is verwijderd uit het menu Apparaatbeperkingen (Ingebouwde apps) voor iOS-configuratieprofielen. De instelling is mogelijk nog zichtbaar in uw beleid en het beheersprofiel van het doelapparaat, maar heeft geen effect op uw apparaat. We verwachten niet veel impact op de functionaliteit, omdat de instelling momenteel niet werkt op apparaten, ook al is deze zichtbaar in het managementprofiel.
+
+U kunt kiezen uit twee paden:
+- Als u deze instelling uit uw beleid wilt verwijderen, kunt u naar het profiel met de instelling gaan, een kleine bewerking uitvoeren en het beleid opslaan. Het beleid zal in de backend opnieuw worden berekend en de instelling zal uit uw beleid worden verwijderd.
+- Als u ervoor kiest om deze actie niet uit te voeren, zullen eindgebruikers deze instelling nog wel zien in het beheerprofiel van hun apparaat, maar de instelling zal geen effect hebben.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
+U kunt bovenstaande stappen ondernemen of uw beleid laten zoals het is. We zullen onze 'Wat is er nieuw'-pagina en documentatie bijwerken wanneer deze wijziging wordt doorgevoerd.
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>Einde van ondersteuning voor verouderd pc-beheer
 
@@ -71,8 +85,8 @@ U hoeft geen actie meer te ondernemen, maar u kunt overwegen uw IT-begeleiding b
 #### <a name="additional-information"></a>Aanvullende informatie 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>Geplande wijziging: Intune App SDK en app-beveiligingsbeleid voor Android ondersteunen vanaf oktober Android 5.0 en hoger <!--4911065 -->
-Intune gaat Android 5.x (Lollipop) en hoger vanaf oktober ondersteunen. Werk alle verpakte apps bij met de nieuwste Intune App SDK en werk uw apparaten bij.
+### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>Geplande wijziging: Intune app-SDK en app-beveiligingsbeleid voor Android wordt in een volgende versie verplaatst voor ondersteuning van Android 5.0 en hoger <!--4911065 -->
+Intune wordt in een volgende versie verplaatst voor ondersteuning van Android 5.x (Lollipop) en hoger. Werk alle verpakte apps bij met de nieuwste Intune App SDK en werk uw apparaten bij.
 
 #### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
 Als u niet van plan bent om de SDK of APP voor Android te gebruiken, is deze wijziging niet van invloed op u. Als u de Intune App SDK gebruikt, zorg er dan voor dat u deze bijwerkt naar de nieuwste versie en werk ook uw apparaten bij naar Android 5.x en hoger. Als u geen update uitvoert, ontvangen apps geen updates en gaat de kwaliteit van de ervaring langzaam achteruit.

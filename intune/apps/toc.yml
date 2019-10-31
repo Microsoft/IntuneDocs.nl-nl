@@ -78,6 +78,8 @@
               href: lob-apps-macos.md
             - name: Win32-app-beheer
               href: apps-win32-app-management.md
+            - name: Win32-app-apparaten in de S-modus
+              href: apps-win32-s-mode.md
         - name: Specifieke apps toevoegen
           items:
             - name: Bedrijfsportal-app
