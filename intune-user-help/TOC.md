@@ -64,8 +64,14 @@
 ## [Uw iOS-apparaat gebruiken](using-your-iOS-device-with-intune.md)
 ### [Gevolgen van het opnieuw instellen van iOS-apparaten](effects-of-device-reset-company-portal-ios.md)
 ### [De bedrijfsportal-app installeren en u hierbij aanmelden](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
-### [iOS-apparaten inschrijven](enroll-your-device-in-intune-ios.md)
-### [Het door uw organisatie verstrekte iOS-apparaat inschrijven](enroll-your-device-dep-ios.md)
+### Uw apparaat inschrijven
+#### [iOS-apparaten inschrijven](enroll-your-device-in-intune-ios.md)
+#### [Het door de organisatie verstrekte iOS-apparaat inschrijven](enroll-your-device-dep-ios.md)
+#### Inschrijven met afgeleide referenties
+##### [Inschrijven met Entrust Datacard](enroll-ios-device-entrust-datacard.md)
+##### [Inschrijven met Intercede](enroll-ios-device-intercede.md)
+##### [Inschrijven met DISA Purebred](enroll-ios-device-disa-purebred.md)
+
 
 ### [Beheerde apps op een apparaat gebruiken](use-managed-apps-on-your-device-ios.md)
 ### [Een wachtwoordcode instellen of wijzigen](set-or-change-your-passcode-ios.md)

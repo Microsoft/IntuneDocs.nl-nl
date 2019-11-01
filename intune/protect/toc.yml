@@ -249,6 +249,8 @@
               href: security-baseline-settings-mdm-all.md
             - name: Instellingen voor Microsoft Defender ATP-basislijn
               href: security-baseline-settings-defender-atp.md
+            - name: Basislijninstellingen voor Microsoft Edge
+              href: security-baseline-settings-edge.md
         - name: Windows Update-instellingen
           href: windows-update-settings.md
         - name: 'Instellingen voor nalevingsbeleid: Android'
