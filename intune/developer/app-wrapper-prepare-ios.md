@@ -17,24 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490971"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413862"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Gebruik de Microsoft Intune App Wrapping Tool voor iOS om het beveiligingsbeleid van de Intune-app voor interne iOS-apps in te schakelen zonder dat u de code van de app zelf wijzigt.
 
 Het hulpprogramma is een macOS-opdrachtregelprogramma waarmee een 'wrapper' (soort schil) rond een app wordt gemaakt. Nadat een app is verwerkt, kunt u de functionaliteit ervan wijzigen door een [app-beveiligingsbeleid](../apps/app-protection-policies.md) te implementeren.
 
 Zie [Microsoft Intune App Wrapping Tool voor iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) op GitHub als u het hulpprogramma wilt downloaden.
-
-
 
 ## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>Algemene vereisten voor de App Wrapping Tool
 
@@ -74,6 +70,7 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 * Inrichtingsprofiel voor interne distributie.
 
 ### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Stappen voor het maken van een Apple Developer Enterprise-account
+
 1. Ga naar de [site Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/).
 
 2. Klik in de rechterbovenhoek van de pagina op **Enroll**.
@@ -86,11 +83,11 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 
 6. Vul het formulier in met de gegevens van uw organisatie. Klik op **Continue**. Op dat punt vraagt Apple u te controleren of u bent gemachtigd om uw organisatie te registreren.
 
-8. Klik na de verificatie op **Agree to License**.
+7. Klik na de verificatie op **Agree to License**.
 
-9. Nadat u akkoord bent gegaan met de licentie, voltooit u de procedure door **het programma te kopen en te activeren**.
+8. Nadat u akkoord bent gegaan met de licentie, voltooit u de procedure door **het programma te kopen en te activeren**.
 
-10. Als u de teamagent bent (degene die aan het Apple Developer Enterprise Program deelneemt namens uw organisatie), stelt u eerst uw team samen door teamleden uit te nodigen en rollen toe te wijzen. Lees de Apple-documentatie over [het beheren van uw Developer-accountteam](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1) voor meer informatie over het beheren van uw team.
+9. Als u de teamagent bent (degene die aan het Apple Developer Enterprise Program deelneemt namens uw organisatie), stelt u eerst uw team samen door teamleden uit te nodigen en rollen toe te wijzen. Lees de Apple-documentatie over [het beheren van uw Developer-accountteam](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1) voor meer informatie over het beheren van uw team.
 
 ### <a name="steps-to-create-an-apple-signing-certificate"></a>Stappen voor het maken van een Apple-handtekeningcertificaat
 
@@ -145,8 +142,6 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 
     ![iPhone-gegevens - vingerafdrukken SHA1-tekenreeks](./media/app-wrapper-prepare-ios/iOS-signing-cert-9.png)
 
-
-
 ### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>Stappen voor het maken van een In-House Distribution Provisioning-profiel
 
 1. Ga terug naar de [Apple Developer-accountportal](https://developer.apple.com/account/) en **meld u aan** met de Apple ID van uw organisatie.
@@ -164,8 +159,6 @@ U hebt het volgende nodig voor het distribueren van apps die zijn verpakt door I
 6. Volg de stappen om uw profiel (met de extensie .mobileprovision) te downloaden naar uw macOS-computer.
 
 7. Sla het bestand op in een gemakkelijk te onthouden locatie. Dit bestand wordt gebruikt voor de parameter -p bij gebruik van de App Wrapping Tool.
-
-
 
 ## <a name="download-the-app-wrapping-tool"></a>De App Wrapping Tool downloaden
 
@@ -195,6 +188,7 @@ Open macOS Terminal en voer de volgende opdracht uit:
 ```
 
 ### <a name="command-line-parameters"></a>Opdrachtregelparameters
+
 U kunt de volgende opdrachtregelparameters gebruiken met de App Wrapping Tool:
 
 |Eigenschap|Gebruik|
@@ -216,6 +210,7 @@ U kunt de volgende opdrachtregelparameters gebruiken met de App Wrapping Tool:
 |**-f**|(Optioneel) `<Path to a plist file specifying arguments.>` Gebruik deze eigenschap vóór het [PLIST](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html)-bestand als u ervoor kiest om de PLIST-sjabloon te gebruiken om de rest van de IntuneMAMPackager-eigenschappen op te geven, zoals -i, -o en -p. Zie Een PLIST-bestand gebruiken voor het invoeren van argumenten. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Een PLIST-bestand gebruiken voor het invoeren van argumenten
+
 U kunt de App Wrapping Tool op een eenvoudige manier uitvoeren door de opdrachtargumenten in een [PLIST](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html)-bestand op te nemen. Een PLIST-bestand heeft een indeling die vergelijkbaar is met die van een XML-bestand en kan worden gebruikt om opdrachtregelargumenten in te voeren met een formulierinterface.
 
 Open in de map IntuneMAMPackager/Contents/MacOS `Parameters.plist` (een lege PLIST-sjabloon) met een teksteditor of Xcode. Voer uw argumenten in voor de volgende sleutels:
@@ -236,7 +231,6 @@ Open in de map IntuneMAMPackager/Contents/MacOS `Parameters.plist` (een lege PLI
 | Citrix XenMobile app SDK (alleen-netwerk variant) toevoegen|Boolean-waarde|onjuist| Hetzelfde als-Citrix|
 | Paden van extensie-inrichtingsprofielen |Matrix van tekenreeksen|leeg| Een matrix van extensie-inrichtingsprofielen voor de app.
 
-
 Voer de IntuneMAMPackager uit met het PLIST-bestand als het enige argument:
 
 ```bash
@@ -255,19 +249,24 @@ De verpakte app wordt opgeslagen in de uitvoermap die u eerder hebt opgegeven. U
 U kunt de app nu implementeren naar uw gebruikersgroepen en app-beveiligingsbeleid instellen voor de app. De app wordt uitgevoerd op het apparaat met het app-beperkingsbeleid dat u hebt opgegeven.
 
 ## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>Hoe vaak moet ik mijn iOS-toepassing opnieuw verpakken met de Intune App Wrapping Tool?
+
 De belangrijkste scenario's waarin u uw toepassingen opnieuw moet verpakken, zijn:
+
 * Er is een nieuwe versie uitgebracht van de toepassing. De vorige versie van de app is verpakt en geüpload naar de Intune-console.
 * Er is een nieuwe versie uitgebracht van de Intune App Wrapping Tool voor iOS, met oplossingen voor belangrijke problemen of nieuwe beveiligingsbeleidskenmerken specifiek voor de Intune-toepassing. Dit gebeurt na 6-8 weken via de GitHub-opslagplaats van de [Microsoft Intune App Wrapping Tool voor iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
 
 Hoewel het in iOS mogelijk is om toepassingen te verpakken met een ander certificaat-/inrichtingsprofiel dan het profiel dat is gebruikt om de app te registreren, mislukt het verpakken als de rechten die zijn opgegeven in de app niet in het nieuwe inrichtingsprofiel zijn opgenomen. Als u met behulp van de -e-opdrachtregeloptie, waarmee ontbrekende rechten van de app worden verwijderd, wilt afdwingen dat het verpakken in dit scenario niet mislukt, kan functionaliteit in de app verloren gaan.
 
 Enkele best practices voor opnieuw verpakken:
+
 * Ervoor zorgen dat een inrichtingsprofiel dezelfde vereiste rechten bevat als een eerder inrichtingsprofiel. 
 
 ## <a name="error-messages-and-log-files"></a>Foutberichten en logboekbestanden
+
 Gebruik de volgende informatie voor het oplossen van problemen die zich voordoen met de App Wrapping Tool.
 
 ### <a name="error-messages"></a>Foutberichten
+
 Als de App Wrapping Tool niet kan worden voltooid, wordt mogelijk een van de volgende foutberichten weergegeven in de console:
 
 |Foutbericht|Meer informatie|
@@ -291,6 +290,7 @@ Als de App Wrapping Tool niet kan worden voltooid, wordt mogelijk een van de vol
 |WAARSCHUWING: u hebt geen SHA1-certificaat-hash opgegeven. Zorg dat uw verpakte app is ondertekend voordat u deze implementeert.|Zorg dat u een geldige SHA1-hash opgeeft na de opdrachtregeleigenschap –c. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Logboekbestanden voor de App Wrapping Tool
+
 Apps die zijn verpakt met de App Wrapping Tool genereren logboeken die worden geschreven naar de console van het iOS-clientapparaat. Deze informatie is nuttig voor situaties waarin u een probleem ondervindt met de app en wilt achterhalen of dit probleem te maken heeft met de App Wrapping Tool. Als u deze informatie wilt ophalen, gebruikt u de volgende stappen:
 
 1. Reproduceer het probleem door de app uit te voeren.
@@ -310,7 +310,6 @@ Apps die zijn verpakt met de App Wrapping Tool genereren logboeken die worden ge
 
     Verpakte apps bieden gebruikers ook de optie om logboeken rechtstreeks vanaf het apparaat te verzenden nadat de app is vastgelopen. Gebruikers kunnen u de logboeken toesturen, zodat u ze kunt onderzoeken en indien nodig kun doorsturen naar Microsoft.
 
-
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Certificaat-, inrichtingsprofiel- en verificatievereisten
 
 De App Wrapping Tool voor iOS kan alleen volledig functioneren als aan bepaalde vereisten wordt voldaan.
@@ -321,8 +320,8 @@ De App Wrapping Tool voor iOS kan alleen volledig functioneren als aan bepaalde 
 |iOS-handtekeningcertificaat|Controleer of het ondertekeningscertificaat geldig is voordat u het opgeeft. De App Wrapping Tool controleert niet of het certificaat is verlopen bij het verwerken van iOS-apps. Als de hash voor een verlopen certificaat is opgegeven, verwerkt en ondertekent het hulpprogramma de app, maar kan de app niet worden geïnstalleerd op apparaten.<br /><br />Controleer of het certificaat dat is verstrekt voor het ondertekenen van de verpakte app, overeenkomt met het certificaat in het inrichtingsprofiel. De App Wrapping Tool controleert niet of het certificaat in het inrichtingsprofiel overeenkomt met het certificaat dat is opgegeven voor het ondertekenen van de verpakte app.|
 |Verificatie|Versleuteling werkt alleen als een apparaat een pincode heeft. Op apparaten waarop u een verpakte app hebt geïmplementeerd, wordt de gebruiker gevraagd om zich opnieuw aan te melden met een werk- of schoolaccount wanneer deze de statusbalk van het apparaat aanraakt. Het standaardbeleid in een verpakte toepassing is *verificatie bij opnieuw opstarten*. iOS verwerkt alle externe meldingen (bijvoorbeeld een telefoongesprek) door de app af te sluiten en deze vervolgens opnieuw te starten.
 
-
 ## <a name="setting-app-entitlements"></a>App-rechten instellen
+
 Voordat u de app verpakt, kunt u *rechten* verlenen zodat de app over meer machtigingen en mogelijkheden beschikt dan standaard het geval is. Voor de ondertekening van de programmacode wordt gebruikgemaakt van een *rechtenbestand* om speciale machtigingen in uw app (bijvoorbeeld de toegang tot een gedeelde sleutelketen) op te geven. Specifieke app-services, ook wel *mogelijkheden* genoemd, worden in Xcode ingeschakeld tijdens het ontwikkelen van de app. Wanneer de mogelijkheden eenmaal zijn ingeschakeld, worden deze weergegeven in uw rechtenbestand. Zie [Mogelijkheden toevoegen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in de bibliotheek voor iOS-ontwikkelaars voor meer informatie over rechten en mogelijkheden. Zie [Ondersteunde mogelijkheden](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html) voor een volledige lijst met ondersteunde mogelijkheden.
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>Ondersteunde mogelijkheden voor de App Wrapping Tool voor iOS
@@ -363,6 +362,7 @@ Voordat u de app verpakt, kunt u *rechten* verlenen zodat de app over meer macht
 3. Zorg ervoor dat u aan alle vereisten hebt voldaan en verpak de app.
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>Veelvoorkomende problemen met rechten oplossen
+
 Als door de App Wrapping Tool voor iOS een fout met de rechten wordt weergegeven, voert u de volgende stappen voor probleemoplossing uit.
 
 |Probleem|Oorzaak|Oplossing|
@@ -371,6 +371,7 @@ Als door de App Wrapping Tool voor iOS een fout met de rechten wordt weergegeven
 |Er ontbreken rechten in het inrichtingsprofiel (de ontbrekende rechten worden weergegeven). Verpak de app opnieuw met een inrichtingsprofiel dat deze rechten bevat.|De rechten die zijn ingeschakeld in het inrichtingsprofiel en de mogelijkheden die zijn ingeschakeld in de app komen niet overeen. Dit verschil geldt ook voor de id's die zijn gekoppeld aan specifieke mogelijkheden (zoals app-groepen en toegang tot de sleutelketen).|Over het algemeen is het mogelijk om een nieuw inrichtingsprofiel te maken waarmee dezelfde mogelijkheden kunnen worden ingeschakeld als voor de app. Wanneer de id’s van het profiel en de app niet overeenkomen, worden deze, indien mogelijk, door de App Wrapping Tool vervangen. Als u nog steeds deze foutmelding krijgt nadat u een nieuw inrichtingsprofiel hebt gemaakt, kunt u de rechten van de app verwijderen met de parameter –e (zie de sectie De parameter–e gebruiken om rechten te verwijderen uit een app).|
 
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>De bestaande rechten van een ondertekende app zoeken
+
 U kunt als volgt de bestaande rechten van een ondertekende app en inrichtingsprofiel bekijken:
 
 1. Ga naar het IPA-bestand en wijzig de extensie in .zip.
@@ -390,6 +391,7 @@ U kunt als volgt de bestaande rechten van een ondertekende app en inrichtingspro
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>Rechten uit een app verwijderen met de parameter –e
+
 Met deze opdracht worden ingeschakelde mogelijkheden in de app verwijderd die niet worden vermeld in het rechtenbestand. Als u mogelijkheden verwijdert die worden gebruikt door de app, kan dit de app beschadigen. Een voorbeeld van waar u mogelijkheden met ontbrekende rechten kunt verwijderen, is in een app van een leverancier die standaard beschikt over alle mogelijkheden.
 
 ```bash
@@ -397,6 +399,7 @@ Met deze opdracht worden ingeschakelde mogelijkheden in de app verwijderd die ni
 ```
 
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>Beveiliging en privacy voor de App Wrapping Tool
+
 Gebruik de volgende aanbevolen procedures voor beveiliging en privacy wanneer u de App Wrapping Tool gebruikt.
 
 - Het handtekeningcertificaat, het inrichtingsprofiel en de Line-of Business-app die u opgeeft, moeten zich op de macOS-computer bevinden waarop u ook de App Wrapping Tool uitvoert. Als de bestanden zich in een UNC-pad bevinden, moet u ervoor zorgen dat ze toegankelijk zijn vanaf de macOS-computer. Het pad moet worden beveiligd via IPSec- of SMB-ondertekening.
@@ -414,6 +417,7 @@ Gebruik de volgende aanbevolen procedures voor beveiliging en privacy wanneer u 
 - Wanneer u de documentenmap op uw apparaat bewaakt vanuit een verpakte app, ziet u mogelijk een map met de naam .msftintuneapplauncher. Als deze map wordt gewijzigd of verwijderd, kan dit van invloed zijn op de goede werking van beperkte apps.
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Intune App Wrapping Tool voor iOS met Citrix MDX mVPN
+
 Deze functie is een integratie met de Citrix MDX-app-wrapper voor iOS. De integratie is gewoon een extra, optionele opdrachtregelmarkering, `-citrix` voor de algemene Intune App Wrapping Tools.
 
 ### <a name="requirements"></a>Vereisten
@@ -424,6 +428,7 @@ Als u de markering `-citrix` wilt gebruiken, moet u ook de [Citrix MDX-app-wrapp
 > Ondersteuning voor integratie van Intune en Citrix is beperkt tot apparaten met iOS 10+.
 
 ### <a name="use-the--citrix-flag"></a>De markering `-citrix` gebruiken
+
 Voer gewoon uw algemene app-wrapping-opdracht uit waaraan de markering `-citrix` is toegevoegd. De markering `-citrix` accepteert momenteel geen argumenten.
 
 **Gebruiksindeling**:
@@ -439,6 +444,7 @@ Voer gewoon uw algemene app-wrapping-opdracht uit waaraan de markering `-citrix`
 ```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>Logboeken voor uw ingepakte toepassingen ophalen
+
 Gebruik de volgende stappen om logboeken op te halen voor uw ingepakte toepassingen tijdens het oplossen van problemen.
 
 1. Ga naar de app iOS-instellingen op uw apparaat en selecteer uw LOB-app.

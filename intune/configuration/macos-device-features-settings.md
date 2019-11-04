@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
-ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
+ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776911"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143153"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Instellingen van apparaatfuncties voor macOS in Intune
 
@@ -129,7 +129,7 @@ Deze functie is van toepassing op:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvings typen 
 
-- **Extensie type voor SSO-app**: Kies het type referentie-SSO-app-extensie. Wanneer u het extensie profiel voor SSO-apps opslaat, kunt u het extensie type voor SSO-apps niet wijzigen. Uw opties zijn:
+- **Extensie type voor SSO-app**: Kies het type referentie-SSO-app-extensie. Uw opties zijn:
 
   - **Niet geconfigureerd**: app-extensies worden niet gebruikt. Als u een SSO-extensie wilt uitschakelen, schakelt u het extensie type voor SSO-apps van **Kerberos** of **referentie** in op **niet geconfigureerd**.
   - **Referentie**: gebruik een algemene, aanpas bare referentie-app-extensie om SSO te gebruiken. Zorg ervoor dat u de extensie-ID en de team-ID voor de SSO-app-extensie van uw organisatie kent.  
@@ -143,7 +143,7 @@ Deze functie is van toepassing op:
 
   [Zoek uw team-ID](https://help.apple.com/developer-account/#/dev55c3c710c) (Open de website van Apple) voor meer informatie.
 
-- **Realm**: Voer de naam van uw Kerberos-realm in. De realm-naam moet worden gekapitaliseerd, zoals `CONTOSO.COM`. Normaal gesp roken is uw realm-naam hetzelfde als de DNS-domein naam, maar in alle hoofd letters.
+- **Realm**: Voer de naam in van uw verificatie-realm. De realm-naam moet worden gekapitaliseerd, zoals `CONTOSO.COM`. Normaal gesp roken is uw realm-naam hetzelfde als de DNS-domein naam, maar in alle hoofd letters.
 - **Domeinen**: Voer de domein-of hostnamen in van de sites die kunnen worden geverifieerd via SSO. Als uw website bijvoorbeeld `mysite.contoso.com` is, is `mysite` de hostnaam en is `contoso.com` de domein naam. Wanneer gebruikers verbinding maken met een van deze sites, wordt de verificatie vraag door de app-extensie afgehandeld. Met deze verificatie kunnen gebruikers gezichts-ID, aanraak-ID of Apple pincode/wachtwoord code gebruiken om zich aan te melden.
 
   - Alle domeinen in uw app-extensie voor eenmalige aanmelding moeten uniek zijn. U kunt een domein niet herhalen in een extensie profiel voor het aanmelden bij de app, zelfs niet als u verschillende typen SSO-app-extensies gebruikt.

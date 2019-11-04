@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/28/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3baa1972593c5d836c49905b59e9a28932329fbe
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e3e0ea523d71ff036f1f23c9436c65e105328d8b
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506741"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057646"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>iOS- en iPadOS-apparaatinstellingen voor het gebruik van algemene iOS-functies in Intune
 
@@ -266,7 +266,7 @@ Deze functie is van toepassing op:
   - **Alleen specifieke websites** (alleen voor Safari): deze URL's worden toegevoegd aan de bladwijzers van de Safari-browser. De gebruiker mag **alleen** deze sites bezoeken. Andere sites kunnen niet worden geopend. Gebruik deze optie alleen als u de exacte lijst van URL's weet die gebruikers mogen bezoeken.
 
     - **URL**: voer de URL in van de website die u wilt toestaan. Voer bijvoorbeeld `https://www.contoso.com` in.
-    - **Pad naar bladwijzer**: Voer het pad in waarin u de bladwijzer wilt opslaan. Voer bijvoorbeeld `/Contoso/Business Apps` in. Als u geen pad toevoegt, wordt de bladwijzer toegevoegd aan de standaardmap voor bladwijzers op het apparaat.
+    - **Bladwijzer pad**: Apple heeft deze instelling gewijzigd. Alle blad wijzers gaan naar de map **goedgekeurde sites** . Blad wijzers worden niet doorgezet naar het bladwijzer pad dat u invoert.
     - **Titel**: geef een beschrijvende titel voor de bladwijzer op.
 
     Als u geen URL's opgeeft, hebben eindgebruikers geen toegang tot websites, met uitzondering van `microsoft.com`, `microsoft.net` en `apple.com`. Deze URL's zijn automatisch toegestaan door Intune.
@@ -280,7 +280,7 @@ Deze functie is van toepassing op:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvings typen
 
-- **Extensie type voor SSO-app**: Kies het type referentie-SSO-app-extensie. Wanneer u het extensie profiel voor SSO-apps opslaat, kunt u het extensie type voor SSO-apps niet wijzigen. Uw opties zijn:
+- **Extensie type voor SSO-app**: Kies het type referentie-SSO-app-extensie. Uw opties zijn:
 
   - **Niet geconfigureerd**: app-extensies worden niet gebruikt. Als u een app-extensie wilt uitschakelen, kunt u het extensie type voor SSO-apps overschakelen van **Kerberos** of **referentie** naar **niet geconfigureerd**.
   - **Referentie**: gebruik een algemene, aanpas bare referentie-app-extensie om SSO uit te voeren. Zorg ervoor dat u de extensie-ID voor de SSO-app-extensie van uw organisatie kent.

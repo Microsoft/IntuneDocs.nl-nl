@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915707"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143039"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -42,7 +42,7 @@ In dit artikel vindt u een overzicht en beschrijving van de verschillende instel
   - **Automatisch verlenen**: machtigingen worden automatisch verleend.
   - **Automatisch weigeren**: machtigingen worden automatisch geweigerd.
 - **Wijzigingen in datum en tijd**: kies **Blokkeren** om te voorkomen dat gebruikers handmatig de datum en tijd instellen. **Niet geconfigureerd**: staat gebruikers toe om de datum en tijd in te stellen op het apparaat.
-- **Volumewijzigingen**: kies **Blokkeren** om te voorkomen dat gebruikers het volume van het apparaat wijzigen. **Niet geconfigureerd**: staat gebruik van de volume-instellingen toe op het apparaat.
+- **Volume wijzigingen**: **blok keren** dat gebruikers het volume van het apparaat niet kunnen wijzigen, en het hoofd volume wordt ook gedempt. **Niet geconfigureerd**: staat gebruik van de volume-instellingen toe op het apparaat.
 - **Fabrieksinstellingen terugzetten**: kies **Blokkeren** om te voorkomen dat gebruikers de optie voor het terugzetten van de fabrieksinstellingen van het apparaat gebruiken. **Niet geconfigureerd**: staat gebruikers toe om deze instelling te gebruiken op het apparaat.
 - **Opstarten in veilige modus**: kies **Blokkeren** om te voorkomen dat gebruikers het apparaat opnieuw opstarten in de veilige modus. **Niet geconfigureerd**: staat gebruikers toe om het apparaat opnieuw op te starten in de veilige modus.
 - **Statusbalk**: kies **Blokkeren** om toegang tot de statusbalk te voorkomen, met inbegrip van meldingen en snelle instellingen. **Niet geconfigureerd**: gebruikers hebben toegang tot de statusbalk.

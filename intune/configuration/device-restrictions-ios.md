@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785511"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414677"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Met instellingen voor iOS- en iPadOS-apparaten kunt u functies toestaan of beperken met behulp van Intune
 
@@ -167,7 +167,33 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
   iOS heeft ingebouwde beveiliging die van invloed kan zijn op deze instelling. Bijvoorbeeld: iOS kan het activeren van het beleid vertragen, afhankelijk van het aantal mislukte aanmeldingen. Het kan ook worden aangeraden herhaaldelijk dezelfde wachtwoord code in te voeren als één poging. De [IOS-beveiligings handleiding](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) van Apple (opent de website van Apple) is een goede bron en biedt meer specifieke informatie over wachtwoord codes.
   
 - **Maximum aantal minuten waarna een wachtwoord voor het vergrendelde scherm is vereist** <sup>1</sup>: voer in hoelang het apparaat inactief moet zijn voordat gebruikers hun wachtwoord opnieuw moeten invoeren. Als de ingevoerde tijd langer is dan de tijd die is ingesteld op het apparaat, wordt de door u ingevoerde tijd genegeerd. Ondersteund op iOS 8.0-apparaten en nieuwere apparaten.
-- **Maximale aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**<sup>1</sup>: voer het maximale aantal minuten van inactiviteit in dat is toegestaan op het apparaat totdat het scherm wordt vergrendeld. Als de ingevoerde tijd langer is dan de tijd die is ingesteld op het apparaat, wordt de door u ingevoerde tijd genegeerd. Wanneer deze is ingesteld op **onmiddellijk**, wordt het scherm vergrendeld op basis van de minimum tijd van het apparaat. Op iPhone is het 30 seconden. Op iPad is het twee minuten.
+
+- **Maximale aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**<sup>1</sup>: voer het maximale aantal minuten van inactiviteit in dat is toegestaan op het apparaat totdat het scherm wordt vergrendeld.
+
+  **IOS-opties**:  
+
+  - **Niet geconfigureerd** (standaard): intune raakt deze instelling niet aan.
+  - **Onmiddellijk**: scherm vergrendelingen na 30 seconden inactiviteit.
+  - **1**: het scherm wordt vergrendeld na 1 minuut inactiviteit.
+  - **2**: het scherm wordt vergrendeld na 2 minuten van inactiviteit.
+  - **3**: het scherm wordt vergrendeld na 3 minuten van inactiviteit.
+  - **4**: het scherm wordt vergrendeld na 4 minuten van inactiviteit.
+  - **5**: het scherm wordt vergrendeld na 5 minuten van inactiviteit.
+    
+  **Opties voor iPadOS**:  
+
+  - **Niet geconfigureerd** (standaard): intune raakt deze instelling niet aan.
+  - **Onmiddellijk**: scherm vergrendelingen na 2 minuten van inactiviteit.
+  - **2**: het scherm wordt vergrendeld na 2 minuten van inactiviteit.
+  - **5**: het scherm wordt vergrendeld na 5 minuten van inactiviteit.
+  - **10**: scherm vergrendelingen na 10 minuten van inactiviteit.
+  - **15**: vergrendelde scherm vergrendelingen na 15 minuten van inactiviteit.
+
+  Als een waarde niet van toepassing is op iOS of iPadOS, gebruikt Apple de dichtstbijzijnde *laagste* waarde. Als u bijvoorbeeld `4` minuten invoert, gebruiken iPadOS-apparaten `2` minuten. Als u `10` minuten invoert, gebruiken iOS-apparaten `5` minuten. Dit is een beperking van Apple.
+  
+  > [!NOTE]
+  > De intune-gebruikers interface voor deze instelling scheidt de door iOS en iPadOS ondersteunde waarden niet. De gebruikers interface kan in een toekomstige versie worden bijgewerkt.
+
 - **Wachtwoord verloopt (dagen)** : voer het aantal dagen in voordat het wachtwoord voor het apparaat moet worden gewijzigd.
 - **Wachtwoorden niet opnieuw gebruiken**: voer het aantal nieuwe wachtwoorden in dat moet worden gebruikt voordat een oud wachtwoord opnieuw kan worden gebruikt.
 - **Aanraak-id en face id ontgrendelen**: Kies **blok** om te voor komen dat een vinger afdruk of een gezicht wordt gebruikt om het apparaat te ontgrendelen. **Niet geconfigureerd**: staat de gebruiker toe het apparaat te ontgrendelen met deze methoden.
