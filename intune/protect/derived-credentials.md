@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c42e5ef50f8a5a8514bc43670fc743f42b1b2d6
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 1716da820fd0d9a4b6d1bbc5024440cfb141c5a1
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585823"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889556"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Afgeleide referenties gebruiken in Microsoft Intune
 
@@ -64,7 +64,7 @@ Intune biedt ondersteuning voor één verlener van afgeleide referenties per ten
 - **Entrust Datacard**: https://www.entrustdatacard.com/
 - **Intercede**: https://www.intercede.com/
 
-Raadpleeg voor belangrijke informatie over het gebruik van de verschillende verleners de richtlijnen voor die verleners, met inbegrip van de werkstroom voor eindgebruikers van de verlener. Zie [Plan voor afgeleide referenties](#plan-for-derived-credentials) in dit artikel voor meer informatie.
+Raadpleeg voor belangrijke informatie over het gebruik van de verschillende verleners de richtlijnen voor de betreffende verlener<!-- , including the issuers end-user workflow-->. Zie [Plan voor afgeleide referenties](#plan-for-derived-credentials) in dit artikel voor meer informatie.
 
 > [!IMPORTANT]  
 > Als u een verlener van afgeleide referenties verwijdert uit uw tenant, werken de afgeleide referenties die zijn ingesteld via die verlener niet meer.  
@@ -101,11 +101,14 @@ Algemene informatie:
 
 ### <a name="2-review-the-end-user-workflow-for-your-chosen-issuer"></a>2) Controleer de eindgebruikerswerkstroom voor de door u gekozen verlener
 
-Hieronder vindt u belangrijke aandachtspunten voor elke ondersteunde partner en koppelingen naar de eindgebruikerswerkstroom van die verlener.  Verdiep u in deze informatie, zodat u kunt voorkomen dat gebruikers en apparaten de inschrijving voor een afgeleide referentie van die verlener niet kunnen voltooien vanwege blokkades in uw Intune-beleid en -configuraties.
+De belangrijkste overwegingen voor elke gesteunde partner zijn de volgende<!--  , and links to that issuers end-user workflow -->.  Verdiep u in deze informatie, zodat u kunt voorkomen dat gebruikers en apparaten de inschrijving voor een afgeleide referentie van die verlener niet kunnen voltooien vanwege blokkades in uw Intune-beleid en -configuraties.
 
 #### <a name="disa-purebred"></a>DISA Purebred
 
-Controleer de [gebruikerswerkstroom voor DISA Purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred). De belangrijkste vereisten voor deze werkstroom zijn:  
+Meer informatie over de werkstroom van de eindgebruiker en de belangrijkste vereisten:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for DISA Purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred). Key requirements for this workflow include:  
+-->
 
 - Gebruikers moeten toegang hebben tot een computer of KIOSK waar ze hun smartcard kunnen gebruiken om zich te verifiëren bij de verlener. 
 
@@ -120,8 +123,11 @@ Controleer de [gebruikerswerkstroom voor DISA Purebred](https://docs.microsoft.c
 Zie [De DISA Purebred-app implementeren](#deploy-the-disa-purebred-app) verderop in dit artikel voor meer informatie over het ophalen en configureren van de DISA Purebred-app.  
 
 #### <a name="entrust-datacard"></a>Entrust Datacard  
-Controleer de [gebruikerswerkstroom voor Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust). De belangrijkste vereisten voor deze werkstroom zijn: 
 
+Meer informatie over de werkstroom van de eindgebruiker en de belangrijkste vereisten:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust). Key requirements for this workflow include: 
+--> 
 - Gebruikers moeten toegang hebben tot een computer of KIOSK waar ze hun smartcard kunnen gebruiken om zich te verifiëren bij de verlener. 
 
 - Op apparaten die worden ingeschreven voor een afgeleide referentie moet de Intune-bedrijfsportal-app worden geïnstalleerd.
@@ -129,8 +135,11 @@ Controleer de [gebruikerswerkstroom voor Entrust Datacard](https://docs.microsof
 - Het gebruik van een apparaatcamera is nodig om een QR-code te scannen waarmee de verificatieaanvraag wordt gekoppeld aan de aanvraag voor afgeleide referenties van het mobiele apparaat.
 
 #### <a name="intercede"></a>Intercede
-Controleer de [gebruikerswerkstroom voor Intercede](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede). De belangrijkste vereisten voor deze werkstroom zijn: 
 
+Meer informatie over de werkstroom van de eindgebruiker en de belangrijkste vereisten:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Intercede](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede). Key requirements for this workflow include: 
+-->
 - Gebruikers moeten toegang hebben tot een computer of KIOSK waar ze hun smartcard kunnen gebruiken om zich te verifiëren bij de verlener. 
 
 - Op apparaten die worden ingeschreven voor een afgeleide referentie moet de Intune-bedrijfsportal-app worden geïnstalleerd.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 492feb3f2ef5f5bbbc1537d4c60ac12d5fd6bdcd
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 22a957e6df2c7f9126cbe9f22c4f3a96213551d3
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585602"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892577"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Edge voor Windows 10 toevoegen aan Microsoft Intune
 
@@ -94,7 +94,7 @@ De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app 
 
 ## <a name="troubleshooting"></a>Probleemoplossing
 **Microsoft Edge versie 77 en later voor Windows 10:**<br>
-Intune maakt gebruik van de Intune-beheerextensie om het Microsoft Edge-installatieprogramma te downloaden en te implementeren op toegewezen Windows 10-apparaten. Vervolgens worden de implementatie-instellingen doorgegeven aan het Microsoft Edge-installatieprogramma, dat de Microsoft Edge-browser rechtstreeks vanuit het CDN downloadt en installeert. Raadpleeg de [vereisten voor de Intune-beheerextensie](~/apps/intune-management-extension.md#prerequisites) en de best practices die worden beschreven bij toegang tot Azure Update Service en het CDN om ervoor te zorgen dat het in uw netwerkconfiguratie is toegestaan dat Windows 10-apparaten toegang krijgen tot deze locaties.
+Intune maakt gebruik van de Intune-beheerextensie om het Microsoft Edge-installatieprogramma te downloaden en te implementeren op toegewezen Windows 10-apparaten. Vervolgens worden de implementatie-instellingen doorgegeven aan het Microsoft Edge-installatieprogramma, dat de Microsoft Edge-browser rechtstreeks vanuit het CDN downloadt en installeert. Raadpleeg de [vereisten voor de Intune-beheerextensie](~/apps/intune-management-extension.md#prerequisites) en de best practices die worden beschreven bij toegang tot Azure Update Service en het CDN om ervoor te zorgen dat het in uw netwerkconfiguratie is toegestaan dat Windows 10-apparaten toegang krijgen tot deze locaties. Als u toegang tot installatiebestanden vanaf een CDN wilt toestaan om de browser te installeren, moet u bovendien toegang tot Windows Update-eindpunten toestaan. Zie voor meer informatie [Verbindingseindpunten beheren voor Windows 10, versie 1809 – Windows Update](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints#windows-update) en [Netwerkeindpunten voor Microsoft Intune](~/fundamentals/intune-endpoints.md).
 
 ## <a name="next-steps"></a>Volgende stappen
 - [Apps aan groepen toewijzen](~/apps/apps-deploy.md)

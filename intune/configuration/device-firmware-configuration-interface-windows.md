@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f34e321476ea634030a5e602bc362d409eee8f5
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785556"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889578"
 ---
-# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune"></a>DFCI-profielen gebruiken op Windows-apparaten in Microsoft Intune
+# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Device Firmware Configuration Interface-profielen gebruiken op Windows-apparaten in Microsoft Intune (openbare preview)
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
+> [!Note]
+> De implementatie van elke [maandelijkse update](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) kan enkele dagen duren. Sommige functies worden gedurende een aantal weken geïmplementeerd en zijn mogelijk niet voor alle gebruikers onmiddellijk beschikbaar.
 
 Wanneer u Intune gebruikt om Autopilot-apparaten te beheren, kunt u met behulp van DFCI UEFI-instellingen (BIOS) beheren, nadat deze zijn opgegeven. Zie [Overzicht van DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/) voor een overzicht van voordelen, scenario's en vereisten.
 
@@ -167,15 +170,9 @@ U bent nu klaar om het apparaat te wissen. Wanneer het apparaat is gewist, verwi
 
 ### <a name="recover"></a>Herstellen
 
-Als u een apparaat wist en de Autopilot-record verwijdert voordat u de UEFI-menu's (BIOS) ontgrendelt, blijven de menu's vergrendeld. Intune kan geen profielupdates verzenden om deze te ontgrendelen. U kunt het volgende doen om het apparaat te ontgrendelen:
+Als u een apparaat wist en de Autopilot-record verwijdert voordat u de UEFI-menu's (BIOS) ontgrendelt, blijven de menu's vergrendeld. Intune kan geen profielupdates verzenden om deze te ontgrendelen.
 
-- **Optie 1**: Vraag uw CSP of de leverancier die het apparaat rechtstreeks van de OEM heeft geleverd om het apparaat opnieuw te registreren bij Autopilot. Registreer het opnieuw bij Intune om de Autopilot en DFCI-profielen opnieuw toe te passen.
-
-  Ontgrendel vervolgens de UEFI-menu's met behulp van de stappen in [Het apparaat buiten gebruik te stellen](#retire) (in dit artikel).
-
-- **Optie 2**: Open het UEFI-menu (BIOS) en selecteer een hersteloptie. Verifieer dat het apparaat niet is geregistreerd voor DFCI-beheer en ontgrendel het menu. Met herstelopties behouden alle UEFI-instellingen (BIOS) de waarden in het laatste Intune DFCI-profiel.
-
-  Ontgrendel vervolgens de UEFI-menu's met behulp van de stappen in [Het apparaat buiten gebruik te stellen](#retire) (in dit artikel).
+Als u het apparaat wilt ontgrendelen, opent u het UEFI-menu (BIOS) en vernieuwt u het beheer vanuit het netwerk. Met herstellen worden de menu's ontgrendeld, maar blijven alle UEFI-instellingen (BIOS) ingesteld op de waarden in het vorige Intune DFCI-profiel.
 
 ## <a name="end-user-impact"></a>Impact van eindgebruiker
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 882c542d6a1d981b9924bb33eee40f03b41689f7
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785676"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999478"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Selectief gegevens wissen met acties voor voorwaardelijke toegang in app-beveiligingsbeleid in Intune
 
@@ -84,8 +84,11 @@ Voor Android kunt u acties configureren voor de volgende instellingen met behulp
 - Minimale patchversie
 - Apparaatfabrikant(en)
 - SafetyNet-attestation voor apparaat
-- Bedreigingsscan voor apps
+- Bedreigingsscan voor apps vereisen
+- Minimale versie bedrijfsportal
 - Maximaal toegestaan bedreigingsniveau van apparaat
+
+Met behulp van **Minimale versie bedrijfsportal** kunt u een minimale versie van de bedrijfsportal opgeven die wordt afgedwongen op het apparaat van de eindgebruiker. Met deze instelling voor voorwaardelijk starten kunt u waarden instellen voor **Toegang blokkeren**, **Gegevens wissen** en **Waarschuwen** als mogelijke acties wanneer niet aan alle waarden wordt voldaan. De mogelijke notaties voor deze waarde volgen het patroon *[major].[minor]* , *[major].[minor].[build]* , of *[major].[minor].[build].[revision]* . Omdat sommige eindgebruikers mogelijk niet de voorkeur geven aan een geforceerde update van apps, kan de optie 'Waarschuwen' ideaal zijn bij het configureren van deze instelling. De Google Play Store is zo slim om alleen de verschilgegevens voor app-updates te verzenden. Dit kan echter nog steeds een grote hoeveelheid gegevens zijn die gebruikers mogelijk niet willen aannemen, bijvoorbeeld als ze op het moment van de update via mobiele gegevens werken. Het afdwingen van een update en het downloaden van een bijgewerkte app kan leiden tot onverwachte gegevenskosten op het moment van de update. Indien de instelling **Minimale versie bedrijfsportal** is geconfigureerd, beïnvloedt deze elke eindgebruiker die versie 5.0.4560.0 en toekomstige versies van de bedrijfsportal ontvangt. Deze instelling heeft geen invloed op gebruikers die gebruikmaken van een versie van bedrijfsportal die ouder is dan de versie waarop deze functie wordt uitgebracht. Eindgebruikers die automatische app-updates op hun apparaat gebruiken, krijgen waarschijnlijk geen dialoogvensters van deze functie te zien, aangezien ze waarschijnlijk de nieuwste versie van de bedrijfsportal hebben. Deze instelling is alleen voor Android met app-beveiliging voor ingeschreven en niet-ingeschreven apparaten.
 
 Als u de instelling **Apparaatfabrikant(en)** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in van Android-producenten. U vindt de Android-fabrikant van een apparaat in de apparaatinstellingen.<br>
 Voorbeeldinvoer: *Fabrikant A;Fabrikant B* 

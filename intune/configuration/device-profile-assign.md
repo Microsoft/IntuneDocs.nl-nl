@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
-ms.reviewer: heenamac
+ms.reviewer: altsou
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550799"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892650"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Gebruikers- en apparaatprofielen toewijzen in Microsoft Intune
 
@@ -69,19 +69,28 @@ U kunt op Windows 10-apparaten **toepasselijkheidsregels** toevoegen, zodat het 
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Groepen uitsluiten van een profieltoewijzing
 
-Intune-profielen voor apparaatconfiguratie bieden de mogelijkheid om groepen uit te sluiten van beleidstoewijzing.
+Intune-profielen voor apparaatconfiguratie bieden de mogelijkheid om groepen op te nemen en uit te sluiten van beleidstoewijzing.
 
-In Intune wordt niet gekeken naar groepsrelaties tussen gebruiker en apparaat. Als u gebruikersgroepen opneemt en tegelijkertijd apparaatgroepen uitsluit, krijgt u mogelijk niet de verwachte resultaten. In de scenario’s voor gebruikersgroep-naar-gebruikersgroep en apparaatgroep-naar-apparaatgroep heeft uitsluiting prioriteit boven insluiting.
+De aanbevolen procedure is om beleid specifiek voor uw gebruikersgroepen te maken en toe te wijzen. En ook om verschillende beleidsregels specifiek voor uw apparaatgroepen te maken en toe te wijzen. Zie [Groepen toevoegen om gebruikers en apparaten te organiseren](../fundamentals/groups-add.md) voor meer informatie over groepen.
 
-Bijvoorbeeld: u wijst een apparaatprofiel toe aan de gebruikersgroep **Alle zakelijke gebruikers**, maar sluit leden van de groep **Managementteam** uit. Aangezien beide groepen gebruikersgroepen zijn, worden alle leden van het **Managementteam** uitgesloten van het beleid, zelfs al zijn ze lid van de opgenomen groep **Alle zakelijke gebruikers**.
+Wanneer u beleid toewijst, gebruikt u de volgende tabel bij het opnemen en uitsluiten van groepen. Als het selectievakje is ingeschakeld, wordt de toewijzing ondersteund:
 
-Insluiting heeft prioriteit boven uitsluiting wanneer u een gemengde groep gebruikt, zoals gebruikersgroep-naar-apparaatgroep, of apparaatgroep-naar-gebruikersgroep.
+![Met ondersteunde opties kunt u groepen opnemen of uitsluiten voor profieltoewijzing](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
-Stel dat u een apparaatprofiel wilt toewijzen aan alle gebruikers in uw organisatie, met uitzondering van kioskapparaten. U moet dan de groep **Alle gebruikers** opnemen, maar de groep **Alle apparaten** uitsluiten. In dit geval krijgen alle gebruikers en hun apparaten het beleid, zelfs als het apparaat van de gebruiker zich in de groep **Alle apparaten** bevindt.
+### <a name="what-you-should-know"></a>Wat u moet weten
 
-Bij uitsluiting wordt er alleen gekeken naar de directe leden van de groep. Apparaten die zijn gekoppeld aan een gebruiker, worden niet opgenomen. Het beleid wordt echter niet toegepast op apparaten zonder gebruiker. Dit gedrag vindt plaats, omdat apparaten geen relatie hebben met de groep **Alle gebruikers**.
+- Uitsluiten heeft voorrang op opnemen in de volgende scenario's voor gelijke groepstypen:
 
-Als u **Alle apparaten** opneemt, maar **Alle gebruikers** uitsluit, ontvangen alle apparaten het beleid. De bedoeling is hier om dit beleid niet toe te wijzen aan apparaten waaraan een gebruiker is gekoppeld. Hierbij worden echter de apparaten niet uitgesloten, omdat bij uitsluiten alleen directe groepsleden worden vergeleken.
+  - Gebruikersgroepen opnemen en uitsluiten
+  - Apparaatgroepen opnemen en uitsluiten
+
+  Bijvoorbeeld: u wijst een apparaatprofiel toe aan de gebruikersgroep **Alle zakelijke gebruikers**, maar sluit leden van de groep **Managementteam** uit. Aangezien beide groepen gebruikersgroepen zijn, krijgen **Alle zakelijke gebruikers** behalve het **Managementteam** het beleid toegewezen.
+
+- Intune beoordeelt groepsrelaties tussen gebruikers en apparaten niet. Als u beleid aan gemengde groepen toewijst, zijn de resultaten mogelijk niet wat u wilt of verwacht.
+
+  U kunt bijvoorbeeld een apparaatprofiel toewijzen aan de gebruikersgroep **Alle gebruikers**, maar tegelijk een apparaatgroep **Alle persoonlijke apparaten** uitsluiten. Bij deze gemengde toewijzing van groepsbeleid krijgen **Alle gebruikers** het beleid toegewezen. De uitsluiting wordt dan niet toegepast.
+
+  Dit betekent dat het niet raadzaam is om beleid aan gemengde groepen toe te wijzen.
 
 ## <a name="next-steps"></a>Volgende stappen
 

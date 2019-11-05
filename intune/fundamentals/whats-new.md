@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 0faa7c7ec70ce7647a6a91ae732d8b15878964b7
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786136"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057625"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -54,20 +54,90 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [belangri
 -->  
 
 
-<!-- ########################## -->
+## <a name="week-of-october-28-2019"></a>Week van 28 oktober 2019
 
+### <a name="app-management"></a>Appbeheer 
+
+#### <a name="dark-mode-for-ios-company-portal----4911422---"></a>Donkere modus voor iOS-bedrijfsportal <!-- 4911422 -->
+Donkere modus is beschikbaar voor de iOS-bedrijfsportal. Gebruikers kunnen bedrijfsapps downloaden, hun apparaten beheren en IT-ondersteuning krijgen in het gewenste kleurenschema op basis van hun apparaatinstellingen. De iOS-bedrijfsportal wordt automatisch afgestemd op de apparaatinstellingen van de eindgebruiker voor donkere of lichte modus. Zie [Introductie van donkere modus op Microsoft Intune-bedrijfsportal voor iOS](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453) voor meer informatie. Meer informatie over de iOS-bedrijfsportal vindt u in [De app Microsoft Intune-bedrijfsportal configureren](~/apps/company-portal-app.md).
+
+#### <a name="android-company-portal-enforced-minimum-app-version----2378776---"></a>Afgedwongen minimale app-versie voor Android-bedrijfsportal <!-- 2378776 -->
+Met behulp van de instelling **Minimale versie bedrijfsportal** van een app-beveiligingsbeleid kunt u een minimale versie van de bedrijfsportal opgeven die wordt afgedwongen op het apparaat van de eindgebruiker. Met deze instelling voor voorwaardelijk starten kunt u **Toegang blokkeren**, **Gegevens wissen** or **Waarschuwen** als mogelijke acties wanneer niet aan een waarde wordt voldaan. De mogelijke notaties voor deze waarde volgen het patroon *[major].[minor]* , *[major].[minor].[build]* , of *[major].[minor].[build].[revision]* . 
+
+Indien de instelling **Minimale versie bedrijfsportal** is geconfigureerd, beïnvloedt deze elke eindgebruiker die versie 5.0.4560.0 en toekomstige versies van de bedrijfsportal ontvangt. Deze instelling heeft geen invloed op gebruikers die gebruikmaken van een versie van bedrijfsportal die ouder is dan de versie waarop deze functie wordt uitgebracht. Eindgebruikers die automatische app-updates op hun apparaat gebruiken, krijgen waarschijnlijk geen dialoogvensters van deze functie te zien, aangezien ze waarschijnlijk de nieuwste versie van de bedrijfsportal hebben. Deze instelling is alleen voor Android met app-beveiliging voor ingeschreven en niet-ingeschreven apparaten. Zie [Instellingen app-beveiligingsbeleid voor Android - Voorwaardelijk starten](~/apps/app-protection-policy-settings-android.md#conditional-launch) voor meer informatie.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+
+### <a name="microsoft-365-device-management"></a>Microsoft 365 Device Management
+
+#### <a name="introducing-endpoint-security-node-in-microsoft-365-device-management-------5630102---"></a>Introductie van Endpoint Security-knooppunt in Microsoft 365 Device Management    <!-- 5630102 -->
+
+Een **Endpoint Security**-knooppunt is nu algemeen beschikbaar in de gespecialiseerde werkruimte van Microsoft 365 Device Management op https://devicemanagement.microsoft.com, waar de mogelijkheden voor het beveiligen van eindpunten zijn samengebracht, zoals:
+
+- Beveiligingsbasislijnen:  Vooraf geconfigureerde groep instellingen die u helpen bij het toepassen van bekende groepen instellingen en standaardwaarden die door Microsoft worden aanbevolen.
+
+- Beveiligingstaken: Profiteer van het Threat and Vulnerability Management (TVM) van Microsoft Defender ATP en gebruik Intune om zwakke punten in eindpunten te herstellen.
+
+- Microsoft Defender ATP: Geïntegreerde Microsoft Defender Advanced Threat Protection (ATP) om beveiligingsschendingen te voorkomen.
+
+Deze instellingen blijven toegankelijk via andere toepasselijke knooppunten (zoals apparaten) en de huidige geconfigureerde status blijft hetzelfde, ongeacht waar u deze mogelijkheden opent en inschakelt.
+
+Voor meer informatie over deze verbeteringen, zie de [Blogpost voor Intune-klantsucces ](https://aka.ms/Endpoint_security_node) op de Microsoft Tech Community-website.
+
+### <a name="device-management"></a>Apparaatbeheer
+
+#### <a name="intune-supports-ios-11-and-later----4665324----"></a>Intune ondersteunt iOS 11 en hoger <!-- 4665324  -->
+
+De Intune-inschrijving en bedrijfsportal ondersteunen nu iOS versie 11 en hoger. Oudere versies worden niet ondersteund.
+
+### <a name="monitor-and-troubleshoot"></a>Bewaken en problemen oplossen
+
+#### <a name="updated-support-experience------5012398---"></a>Bijgewerkte ondersteuningservaring   <!-- 5012398 -->
+
+De in-console-ervaring voor [hulp en ondersteuning voor Intune](get-support.md) is bijgewerkt en gestroomlijnd.  We hebben de in-console-zoekfunctie en de feedbackfunctie voor veelvoorkomende problemen verbeterd, evenals de workflow voor contact opnemen met de ondersteuning. Bij het openen van een supportprobleem ziet u realtime schattingen van wanneer u een antwoord via telefoon of e-mail kunt verwachten. Klanten met Premier- en Unified-ondersteuning kunnen eenvoudig een ernst van hun probleem specificeren om sneller ondersteuning te krijgen.
+
+<!-- ########################## -->
 ## <a name="week-of-october-21-2019"></a>Week van 21 oktober 2019
 
-### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>Nieuw configuratie-interfaceprofiel voor apparaatfirmware voor Windows 10 en hoger <!-- 2266073 idready wnready -->
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="microsoft-365-device-management"></a>Microsoft 365 Device Management
 
-In Windows 10 en hoger kunt u een configuratieprofiel voor een apparaat maken om instellingen en functies te beheren (**Configuratie van apparaten** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** voor platform). In deze update is er een nieuw profieltype voor de configuratie-interface voor apparaatfirmware waarmee Intune UEFI-instellingen (BIOS) kan beheren.
+#### <a name="improved-administration-experience-in-microsoft-365-device-management"></a>Verbeterde beheerervaring in Microsoft 365 Device Management
+
+Een vernieuwde en gestroomlijnde beheerervaring is nu algemeen beschikbaar in de gespecialiseerde werkruimte van Microsoft 365 Device Management op [https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com), met daarin:
+
+- **Bijgewerkte navigatie**: U profiteert van een vereenvoudigde navigatie op het eerste niveau die functies op logische wijze groepeert.
+- **Nieuwe platformfilters**: Op de pagina's voor apparaten en apps kunt u één platform selecteren dat alleen het beleid en de apps voor het geselecteerde platform toont.
+- **Nieuwe startpagina**: Een snel overzicht van de servicestatus, tenantstatus, nieuws enz. op de nieuwe homepage.
+
+Voor meer informatie over deze verbeteringen, zie de [Blogpost voor Enterprise Mobility + Security](https://go.microsoft.com/fwlink/?linkid=2109094) op de Microsoft Tech Community-website.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>Appbeheer
+
+#### <a name="add-mobile-threat-defense-apps-to-unenrolled-devices----3005337---"></a>Mobile Threat Defense-apps toevoegen aan niet-ingeschreven apparaten <!-- 3005337 -->
+U kunt een app-beschermingsbeleid voor Intune maken dat de bedrijfsgegevens van gebruikers kan blokkeren of selectief kan wissen op basis van de status van een apparaat. De status van het apparaat wordt bepaald met behulp van de geselecteerde Mobile Threat Defense-oplossing (MTD). Deze mogelijkheid bestaat voor Intune-ingeschreven apparaten nu als een nalevingsinstelling voor apparaten. Met deze nieuwe functie breiden we de dreigingsdetectie uit van een Mobile Threat Defense-leverancier naar niet-ingeschreven apparaten. Op Android vereist deze functie de nieuwste versie van de bedrijfsportal op het apparaat. Op iOS is deze functie beschikbaar voor gebruik wanneer apps de nieuwste Intune-SDK (v 12.0.15+) integreren. We zullen het onderwerp 'Wat is er nieuw' bijwerken wanneer de eerste app de nieuwste Intune-SDK heeft. De overige apps zullen doorlopend beschikbaar komen. Zie [App-beveiligingsbeleid voor Mobile Threat Defense maken met Intune](~/protect/mtd-app-protection-policy.md).
+
+### <a name="device-configuration"></a>Apparaatconfiguratie
+
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>Nieuw configuratie-interfaceprofiel voor apparaatfirmware voor Windows 10 en hoger <!-- 2266073  -->
+
+In Windows 10 en hoger kunt u een configuratieprofiel voor een apparaat maken om instellingen en functies te beheren (**Configuratie van apparaten** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** voor platform). In deze update is er een nieuw profieltype voor de configuratie-interface voor apparaatfirmware waarmee Intune UEFI-instellingen (BIOS) kan beheren. Deze functie wordt momenteel geïmplementeerd voor alle klanten. We verwachten dat dit proces eind volgende week is voltooid.
 
 Zie [DFCI-profielen gebruiken op Windows-apparaten in Microsoft Intune](../configuration/device-firmware-configuration-interface-windows.md) voor meer informatie over deze functie.
 
 Van toepassing op:
-
 - Windows 10 RS5 (1809) en nieuwer op ondersteunde firmware
 
+### <a name="device-enrollment"></a>Apparaatinschrijving
+
+#### <a name="toggle-to-only-show-enrollment-status-page-on-devices-provisioned-by-out-of-box-experience-oobe---3959566--"></a>Wisselknop om alleen de pagina voor inschrijvingsstatus weer te geven op apparaten die zijn ingericht door out-of-box experience (OOBE) <!--3959566-->
+U kunt er nu voor kiezen om alleen de pagina voor inschrijvingsstatus weer te geven op apparaten die zijn ingericht door Autopilot OOBE.
+
+Om de nieuwe wisselknop weer te geven, kiest u **Intune** > **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina met inschrijvingsstatus** > **Profiel maken** > **Instellingen** > **Alleen pagina's weergeven aan apparaten die zijn ingericht door out-of-box experience (OOBE)** .
+
+
+<!-- ########################## -->
 ## <a name="week-of-october-14-2019"></a>Week van 14 oktober 2019
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -77,7 +147,12 @@ Van toepassing op:
 U kunt voor beschikbare app-installaties op toegewezen en volledig beheerde apparaten met Android Enterprise-werkprofielen de status van de app-installatie evenals de geïnstalleerde versie van beheerde Google Play-apps bekijken. Zie [How to monitor app protection policies](~/apps/app-protection-policies-monitor.md) (App-beveiligingsbeleid controleren), [Manage Android work profile devices with Intune](~/enrollment/android-enterprise-overview.md) (Apparaten met Android-werkprofielen beheren met Intune) en [Managed Google Play app type](~/apps/apps-add-android-for-work.md#managed-google-play-app-types) (Type beheerde Google Play-app) voor meer informatie.
 
 #### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Microsoft Edge versie 77 en later voor Windows 10 en macOS (openbare preview) <!-- 3872025, 4678761  -->
-Microsoft Edge versie 77 en hoger is nu beschikbaar voor implementatie op pc's met Windows 10 en macOS. De openbare preview biedt **Dev**- en **Bèta**-kanalen voor Windows 10 en een **Bèta**-kanaal voor macOS. De implementatie is alleen in het Engels (EN) beschikbaar, maar eindgebruikers kunnen de weergavetaal wijzigen in de browser via **Instellingen** > **Talen**. Microsoft Edge is een Win32-app die wordt geïnstalleerd in systeemcontext en in soortgelijke architecturen (x86-app in een x86-besturingssysteem en x64-app in een x64-besturingssysteem). Automatische updates van de browser is bovendien standaard **Ingeschakeld** en Microsoft Edge kan niet worden verwijderd. Zie [Microsoft Edge voor Windows 10 toevoegen aan Microsoft Intune](~/apps/apps-windows-edge.md) en [Documentatie bij Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2103823) voor meer informatie.
+Microsoft Edge versie 77 en hoger wordt beschikbaar voor implementatie op pc's met Windows 10 en macOS. 
+
+>[!NOTE]
+>De implementatie van deze functie is uitgesteld tot later deze maand.
+
+De openbare preview biedt **Dev**- en **Bèta**-kanalen voor Windows 10 en een **Bèta**-kanaal voor macOS. De implementatie is alleen in het Engels (EN) beschikbaar, maar eindgebruikers kunnen de weergavetaal wijzigen in de browser via **Instellingen** > **Talen**. Microsoft Edge is een Win32-app die wordt geïnstalleerd in systeemcontext en in soortgelijke architecturen (x86-app in een x86-besturingssysteem en x64-app in een x64-besturingssysteem). Automatische updates van de browser is bovendien standaard **Ingeschakeld** en Microsoft Edge kan niet worden verwijderd. Zie [Microsoft Edge voor Windows 10 toevoegen aan Microsoft Intune](~/apps/apps-windows-edge.md) en [Documentatie bij Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2103823) voor meer informatie.
 
 #### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>Update van de gebruikersinterface voor app-beveiliging en de gebruikersinterface voor inrichting van iOS-apps <!-- 4102027, 4102029   -->
 De gebruikersinterface om app-beveiligingsbeleid en inrichtingsprofielen voor iOS-apps in Intune te maken en bewerken, is bijgewerkt. De gebruikersinterface wordt onder andere op deze punten gewijzigd:
@@ -181,7 +256,7 @@ Wanneer u de naam van een Windows-apparaat wijzigt, moet u nieuwe regels volgen:
 - Toegestane ASCII: Letters (a-z, A-Z), cijfers (0-9) en afbreekstreepjes
 - Toegestane Unicode: tekens > = 0x80, moet geldige UTF8 zijn, moet IDN-toewijsbaar zijn (dat wil zeggen dat RtlIdnToNameprepUnicode moet slagen, zie RFC 3492)
 - Namen mogen niet alleen cijfers bevatten
-- Geen spaties in de naam
+- Namen mogen geen spaties bevatten
 - Niet-toegestane tekens: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
 
  Zie [De naam van een apparaat wijzigen in Intune](../remote-actions/device-rename.md) voor meer informatie.
