@@ -16,16 +16,14 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a89392dabe695cf49e989351cef822852676916
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7500000f8a34120e69c27ce01a6cfdb85f447abe
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507376"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414706"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Line-of-business-apps ondertekenen, zodat ze kunnen worden geïmplementeerd op Windows-apparaten met Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Als Intune-beheerder kunt u universele LOB-apps (Line-of-Business) implementeren op Windows 8.1 Desktop of Windows 10 Desktop en Mobile-apparaten, met inbegrip van de bedrijfsportal-app. Als u APPX-apps wilt implementeren op Windows 8.1 Desktop of Windows 10 Desktop en Mobile-apparaten, kunt u een certificaat voor ondertekening bij programmacode van een openbare certificeringsinstantie gebruiken die al wordt vertrouwd op uw Windows-apparaten, of u kunt uw eigen certificeringsinstantie gebruiken.
 
@@ -53,6 +51,7 @@ Als u de app, zoals vereist, implementeert voor gebruikers of apparaten, hebt u 
 ### <a name="upload-the-code-signing-certificate"></a>Het certificaat voor ondertekening van programmacode uploaden
 
 Als op uw Windows 10-apparaat de certificeringsinstantie nog niet wordt vertrouwd, moet u - nadat u het APPX-pakket hebt ondertekend en geüpload naar de Intune-service - het certificaat voor ondertekening van programmacode uploaden naar de Intune-portal:
+
 1. Klik op Client-apps
 2. Klik op Windows Enterprise-certificaten
 3. Select Een bestand selecteren onder het certificaat voor ondertekening van programmacode
@@ -77,6 +76,7 @@ Windows 8.1 Desktop/Windows 10 Desktop en Mobile
 Als de certificaatperiode is verlopen, kunnen de APPX-bestanden mogelijk niet meer worden gestart. U moet een nieuw CER-bestand verkrijgen en de instructies volgen voor het ondertekenen van programmacode voor elk geïmplementeerd APPX-bestand. En u moet alle APPX-bestanden en het bijgewerkte CER-bestand opnieuw uploaden naar de sectie Windows Enterprise-certificaten van de Intune-portal
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>De Windows 10-bedrijfsportal-app handmatig implementeren
+
 Als u geen toegang wilt bieden tot de Microsoft Store, kunt u de Windows 10-bedrijfsportal-app handmatig rechtstreeks implementeren vanuit Intune, zelfs als u Intune niet hebt geïntegreerd met MSFB (Microsoft Store voor Bedrijven). Als u MSFB wel hebt geïntegreerd, kunt u de bedrijfsportal-app ook implementeren met [apps implementeren met behulp van MSFB.](store-apps-windows.md)
 
  > [!NOTE]
@@ -100,9 +100,11 @@ Als u geen toegang wilt bieden tot de Microsoft Store, kunt u de Windows 10-bedr
 Zie [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Een appxbundle met afhankelijkheden implementeren via Microsoft Intune MDM) voor meer informatie over hoe Intune afhankelijkheden voor universele apps verwerkt.  
 
 ### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>Hoe kan ik de Bedrijfsportal op de apparaten van mijn gebruikers bijwerken als hierop al de oudere apps uit de Store zijn geïnstalleerd?
-Als uw gebruikers de Windows 8.1- of Windows Phone 8.1-bedrijfsportal-apps al hebben geïnstalleerd vanuit de Store, moeten deze automatisch worden bijgewerkt naar de nieuwe versie, zonder dat hiervoor actie door u of uw gebruikers is vereist. Als de update niet wordt uitgevoerd, vraagt u uw gebruikers om te controleren of automatische updates voor Store-apps op hun apparaten is ingeschakeld.   
+
+Als uw gebruikers de Windows 8.1- of Windows Phone 8.1-bedrijfsportal-apps al hebben geïnstalleerd vanuit de Store, moeten deze automatisch worden bijgewerkt naar de nieuwe versie, zonder dat hiervoor actie door u of uw gebruikers is vereist. Als de update niet wordt uitgevoerd, vraagt u uw gebruikers om te controleren of automatische updates voor Store-apps op hun apparaten is ingeschakeld.
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Hoe ik een upgrade uitvoeren van mijn gesideloade Windows 8.1-bedrijfsportal-app naar de Windows 10-bedrijfsportal-app?
+
 Het wordt aanbevolen de implementatie voor de Windows 8.1-bedrijfsportal-app te verwijderen door de implementatieactie in te stellen op Installatie ongedaan maken. Zodra deze actie is uitgevoerd, kan de Windows 10-bedrijfsportal-app worden geïmplementeerd via een van de bovenstaande opties.  
 
 Als u de app moet sideloaden en de Windows 8.1-bedrijfsportal hebt geïmplementeerd zonder deze ondertekenen met het Symantec-certificaat, volgt u de stappen in de bovenstaande sectie Deploy directly via Intune (Rechtstreeks implementeren via Intune) om de upgrade te voltooien.
@@ -110,6 +112,7 @@ Als u de app moet sideloaden en de Windows 8.1-bedrijfsportal hebt geïmplemente
 Als u de app moet sideloaden en de Windows 8.1-bedrijfsportal hebt ondertekend en geïmplementeerd met het Symantec-certificaat voor ondertekening van programmacode, volgt u de stappen in de onderstaande sectie.  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Hoe kan ik een upgrade uitvoeren van mijn ondertekende en gesideloade Windows Phone 8.1-bedrijfsportal-app of Windows 8.1-bedrijfsportal-app naar de Windows 10-bedrijfsportal-app?
+
 Het wordt aanbevolen de bestaande implementatie voor de Windows Phone 8.1-bedrijfsportal-app of de Windows 8.1-bedrijfsportal-app te verwijderen door de implementatieactie in te stellen op Installatie ongedaan maken. Zodra deze actie is uitgevoerd, kan de Windows 10-bedrijfsportal-app normaal worden geïmplementeerd.  
 
 Anders moet de Windows 10-bedrijfsportal-app op de juiste manier worden bijgewerkt en ondertekend om ervoor te zorgen dat het upgradepad in acht wordt genomen.  

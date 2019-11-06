@@ -18,23 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90066bf55f50819ba77babee1e1d4230bdead613
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b5b469c759ac34a6d8de09163534a580346e48a1
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504860"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415024"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Als beheerder kunt u gebruikers rechtstreeks toevoegen of gebruikers synchroniseren via uw on-premises Active Directory. Zodra gebruikers zijn toegevoegd, kunnen ze apparaten registreren en hebben ze toegang tot bedrijfsresources. U kunt gebruikers ook aanvullende machtigingen geven, zoals de machtigingen *globale beheerder* en *servicebeheerder*.
 
 ## <a name="add-users-to-intune"></a>Gebruikers toevoegen aan Intune
+
 U kunt handmatig gebruikers aan uw Intune-abonnement toevoegen via het [Microsoft 365-beheercentrum](https://admin.microsoft.com) of de [Azure-portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). Een beheerder kan gebruikersaccounts bewerken om Intune-licenties toe te wijzen. U kunt licenties toewijzen in het Microsoft 365-beheercentrum of in de Intune Azure-portal. Zie [Gebruikers afzonderlijk of bulksgewijs toevoegen aan het Microsoft 365-beheercentrum](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) voor meer informatie over het gebruik van het Microsoft 365-beheercentrum.
 
 ### <a name="add-intune-users-in-the-microsoft-365-admin-center"></a>Intune-gebruikers toevoegen in het Microsoft 365-beheercentrum
+
 1. Meld u aan bij het [Microsoft 365-beheercentrum](https://admin.microsoft.com) met een account voor globale beheerders of beheerders voor gebruikerstoegang.
 2. Selecteer **Beheer** in het menu Office 365.
 3. Selecteer **Nieuwe gebruiker** in het beheercentrum.
@@ -56,6 +56,7 @@ U kunt handmatig gebruikers aan uw Intune-abonnement toevoegen via het [Microsof
 6. Kies **Toevoegen** om de nieuwe gebruiker te maken.
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Intune-gebruikers toevoegen in de Azure-portal
+
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecteer **Gebruikers** > **Alle gebruikers**.
 3. Selecteer **Nieuwe gebruiker** in het beheercentrum.
@@ -78,6 +79,7 @@ U kunt handmatig gebruikers aan uw Intune-abonnement toevoegen via het [Microsof
 Nadat u gebruikers aan uw Intune-abonnement hebt toegevoegd, kunt u het beste enkele gebruikers beheerdersmachtigingen verlenen.  Voer hiertoe de volgende stappen uit:
 
 ### <a name="give-admin-permissions-in-office-365"></a>Beheerdersmachtigingen verlenen in Office 365
+
 1. Meld u aan bij het [Microsoft 365-beheercentrum](https://admin.microsoft.com) met een account voor globale beheerders.
 2. Selecteer **Beheer** in het menu Office 365.
 3. Kies in het beheercentrum de optie **Actieve gebruikers** en kies vervolgens de gebruiker waaraan u beheerdersmachtigingen wilt verlenen.
@@ -91,6 +93,7 @@ Nadat u gebruikers aan uw Intune-abonnement hebt toegevoegd, kunt u het beste en
 6. Kies **Opslaan**.
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>Beheerdersmachtigingen verlenen in de Azure-portal
+
 1. Meld u aan bij de [Azure-portal](https://portal.azure.com) met een account voor globale beheerders.
 2. Kies in de Azure-portal de optie **Gebruiker** en kies vervolgens de gebruiker die u beheerdersmachtigingen wilt verlenen.
 3. Selecteer **Directory-rol** en vervolgens de machtiging.
@@ -113,9 +116,11 @@ Het account dat u gebruikt om uw Microsoft Intune-abonnement te maken, heeft de 
 Voor toegang tot het Microsoft 365-beheercentrum moet **Toegestane gebruikers aanmelden** zijn ingesteld voor uw account. Ga in de Azure-portal naar **Profiel** en stel **Aanmelden blokkeren** in op **Nee** om toegang te verlenen. Deze status is niet hetzelfde als wanneer u een licentie voor het abonnement hebt. Standaard hebben alle gebruikersaccounts de status **Toegestaan**. Gebruikers zonder beheerdersmachtigingen kunnen het Microsoft 365-beheercentrum gebruiken om Intune-wachtwoorden opnieuw in te stellen.
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>Active Directory synchroniseren en gebruikers toevoegen aan Intune
+
 U kunt adreslijstsynchronisatie configureren voor het importeren van gebruikersaccounts uit de on-premises Active Directory in Microsoft Azure Active Directory (Azure AD) die Intune-gebruikers bevat. Het koppelen van uw on-premises Active Directory-service aan alle Azure Active Directory-services zorgt ervoor dat het beheer van gebruikersidentiteiten veel eenvoudiger wordt. U kunt ook eenmalige aanmelding configureren om de verificatie vertrouwd en eenvoudig te maken voor uw gebruikers. Door dezelfde [Azure AD-tenant](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) te koppelen met meerdere services, zijn de gebruikersaccounts die u eerder hebt gesynchroniseerd, beschikbaar voor alle cloudservices.
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>On-premises gebruikers synchroniseren met Azure AD
+
 Het enige hulpprogramma dat u nodig hebt om uw gebruikersaccounts te synchroniseren met Azure AD, is de [Azure AD Connect-wizard](https://www.microsoft.com/download/details.aspx?id=47594). De Azure AD Connect-wizard biedt een vereenvoudigde begeleiding voor het verbinden van de on-premises infrastructuur voor identiteiten aan de cloud. Kies uw topologie en behoeften (één of meerdere mappen, synchronisatie van wachtwoordhashes, pass-through-verificatie of federatie). De wizard implementeert en configureert alle onderdelen die zijn vereist om de verbinding mogelijk te maken. Inclusief: synchronisatieservices, Active Directory Federation Services (AD FS) en de Azure AD PowerShell-module.
 
 > [!TIP]

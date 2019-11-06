@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503037"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143170"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Een pagina Status van de inschrijving instellen
  
@@ -191,7 +191,6 @@ Hieronder worden enkele bekende problemen beschreven.
 - Als u het ESP-profiel uitschakelt, blijft het ESP-beleid van kracht op apparaten en zien gebruikers nog steeds de pagina Status van de inschrijving wanneer ze zich voor de eerste keer aanmelden bij het apparaat. Het beleid wordt niet verwijderd wanneer het ESP-profiel wordt uitgeschakeld. U moet OMA-URI implementeren om de pagina Status van de inschrijving uit te schakelen. Hierboven vindt u instructies voor het uitschakelen van de pagina Status van de inschrijving met OMA-URI. 
 - Als er een aanvraag voor het opnieuw opstarten van het apparaat in behandeling is, treedt er altijd een time-out op. De time-out treedt op omdat het apparaat opnieuw moet worden opgestart. Opnieuw opstarten is nodig om tijd te bieden voor het voltooien van het item dat wordt bijgehouden op de pagina Status van de inschrijving. Als het apparaat opnieuw wordt opgestart, wordt de pagina Status van de inschrijving afgesloten en na het opnieuw opstarten wordt niet de pagina voor accountinstallatie weergegeven.  U kunt overwegen opnieuw opstarten achterwege te laten bij de installatie van een toepassing. 
 - Opnieuw opstarten tijdens apparaatinstallatie dwingt de gebruiker om referenties in te voeren voordat de fase voor installatie van het account wordt ingegaan. Gebruikersreferenties blijven niet behouden tijdens het opnieuw opstarten. Laat de gebruiker zijn of haar referenties invoeren, waarna de pagina Status van de inschrijving wordt weergegeven. 
-- SCEP-certificaten met beleid van Windows Hello voor Bedrijven veroorzaken een time-out omdat de gebruiker de configuratie van de Hello-pincode niet kan voltooien om de installatie van het SCEP-certificaat af te ronden.  Er is geen tijdelijke oplossing. Naar verwachting zal het probleem in de zomer van 2019 zijn opgelost. 
 - Er treedt altijd een time-out op voor de pagina Status van de inschrijving tijdens een inschrijving met Werk- en schoolaccount toevoegen in Windows 10-versie 1903 en lager. De pagina Status van de inschrijving wacht totdat de Azure AD-registratie is voltooid. Het probleem is opgelost in Windows 10-versie 1903 en hoger.  
 - Hybride Azure AD Auto Pilot-implementatie met ESP duurt langer dan de time-outperiode die is gedefinieerd in het ESP-profiel. Bij hybride Azure AD Auto Pilot-implementaties duurt de ESP 40 minuten langer dan de waarde die is ingesteld in het ESP-profiel. Deze vertraging geeft de on-premises AD-connector tijd om de nieuwe apparaatrecord te maken in Azure AD. 
 - De Windows-aanmeldingspagina wordt niet vooraf ingevuld met de gebruikersnaam in de modus Op basis van gebruiker van Autopilot. Als het apparaat opnieuw wordt opgestart tijdens de installatiefase van het apparaat van ESP, gebeurt het volgende:

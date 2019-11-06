@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53425b56985cbafb4033b11df54597959c0b0d59
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ef958468feb7e36f894537989675977e1d96bf8c
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72499718"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414738"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Overzicht van de app-levenscyclus in Microsoft Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 De levenscyclus van de Microsoft Intune-app begint zodra een app wordt toegevoegd. Vervolgens doorloopt de app aanvullende fasen totdat u de app verwijdert. Wanneer u deze fasen begrijpt, weet u alles wat u moet weten om aan de slag te gaan met app-beheer in Intune.
 
@@ -34,7 +32,7 @@ De levenscyclus van de Microsoft Intune-app begint zodra een app wordt toegevoeg
 
 ## <a name="add"></a>Toevoegen
 
-De eerste stap in de implementatie van apps is het toevoegen van de apps die u wilt beheren en toewijzen aan Intune. U kunt met veel verschillende typen apps werken, maar de basisprocedures zijn hetzelfde. Met Intune kunt u verschillende app-typen toevoegen, zoals apps die intern zijn ontwikkeld (line-of-business), apps uit de Store, apps die zijn ingebouwd en apps op internet. Zie [Apps toevoegen aan Microsoft Intune](apps-add.md) voor meer informatie over deze app-typen. 
+De eerste stap in de implementatie van apps is het toevoegen van de apps die u wilt beheren en toewijzen aan Intune. U kunt met veel verschillende typen apps werken, maar de basisprocedures zijn hetzelfde. Met Intune kunt u verschillende app-typen toevoegen, zoals apps die intern zijn ontwikkeld (line-of-business), apps uit de Store, apps die zijn ingebouwd en apps op internet. Zie [Apps toevoegen aan Microsoft Intune](apps-add.md) voor meer informatie over deze app-typen.
 
 ## <a name="deploy"></a>Implementeer
 
@@ -43,12 +41,14 @@ Nadat u de app aan Intune hebt toegevoegd, kunt u deze [toewijzen aan gebruikers
 ## <a name="configure"></a>Configureren
 
 Als onderdeel van de app-levenscyclus worden er regelmatig nieuwe versies van apps uitgebracht. Intune biedt hulpprogramma's waarmee u eenvoudig uw geïmplementeerde [apps kunt bijwerken](apps-add.md) naar een nieuwere versie. Daarnaast kunt u voor sommige apps extra functionaliteit configureren:
+
 - Met [beleidsregels voor de configuratie van iOS-apps](app-configuration-policies-use-ios.md) kunt u instellingen opgeven voor compatibele iOS-apps die worden gebruikt wanneer de app wordt uitgevoerd. Voor een app kunnen bijvoorbeeld bepaalde instellingen vereist zijn voor de huisstijl of de naam van de server waarmee verbinding moet worden gemaakt.
 - Met de [beleidsregels voor Managed Browser](app-configuration-managed-browser.md) kunt u instellingen configureren voor de Intune Managed Browser die de standaardbrowser van het apparaat vervangt, en kunt u beperkingen instellen voor de websites die uw gebruikers mogen bezoeken.
 
 ## <a name="protect"></a>Beveiligen
 
 Intune biedt tal van manieren om de gegevens in uw apps te beveiligen. De belangrijkste methoden zijn:
+
 - [Voorwaardelijke toegang](../protect/conditional-access.md), waarmee u toegang regelt tot e-mail en andere services op basis van voorwaarden die u opgeeft. Voorwaarden omvatten apparaattypen of naleving van een [nalevingsbeleid voor apparaten](../protect/device-compliance-get-started.md) dat u hebt geïmplementeerd.
 - [Beleid voor app-beveiliging](app-protection-policy.md) werkt met afzonderlijke apps om de gebruikte bedrijfsgegevens te beveiligen. U kunt bijvoorbeeld beperkingen instellen voor het kopiëren van gegevens tussen onbeheerde apps en de apps die u beheert, of u kunt voorkomen dat apps worden uitgevoerd op apparaten waarop jailbreaking of rooting is uitgevoerd.
 

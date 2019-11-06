@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc298691ea3df923d1804005be61217325f52112
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 06cc977ce8b0b892e1020436f89ada4a40bac3f2
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510270"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413982"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>Hoe uw iOS-gebruikers hun apps downloaden
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Gebruik deze informatie om te begrijpen hoe en waar uw eindgebruikers de apps downloaden die u distribueert via Microsoft Intune.
 
@@ -48,12 +46,12 @@ Geregistreerde gebruikers krijgen hun apps door te tikken op de volgende tegels 
 
 - **Categorieën** verwijst naar het tabblad CATEGORIEËN van de bedrijfsportalwebsite.
 
-
 ![Scherm iOS-bedrijfsportal-apps](./media/end-user-apps-ios/ios-cp-app-main-apps-screen.png)
 
 Zie [Apps toevoegen aan Microsoft Intune](../apps/apps-add.md) voor informatie over het toevoegen van apps.
 
 ## <a name="see-also"></a>Zie tevens
+
 [Hoe uw Android-gebruikers apps downloaden](end-user-apps-android.md)
 
 [Hoe uw Windows-gebruikers apps downloaden](end-user-apps-windows.md)

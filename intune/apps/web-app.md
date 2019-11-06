@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6678b7c3519328623d9c0035c725af3877a36ba8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6600c75ce3e6120143b17fb863670b2eb423a09f
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507051"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592062"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Web-apps aan Microsoft Intune toevoegen
 
@@ -36,7 +36,7 @@ Voordat u een app kunt beheren en aan uw gebruikers kunt toewijzen, voegt u de a
 Er wordt door Intune een snelkoppeling gemaakt naar de web-app op het apparaat van de gebruiker. Voor iOS-apparaten wordt een snelkoppeling naar de web-app toegevoegd aan het Startscherm. Voor Android-apparaten wordt een snelkoppeling naar de web-app toegevoegd aan het de widget Intune-bedrijfsportal, en moet de widget handmatig worden vastgemaakt door de gebruiker. Voor Windows-apparaten wordt een snelkoppeling naar de web-app geplaatst op het Startscherm.
 
 > [!Note]
-> Web-apps worden niet ondersteund op apparaten met een Android-werkprofiel. Op het apparaat van de gebruiker moet een browser zijn geïnstalleerd om web-apps te kunnen starten.
+> Op het apparaat van de gebruiker moet een browser zijn geïnstalleerd om web-apps te kunnen starten.
 
 ## <a name="add-a-web-app-to-intune"></a>Een web-app toevoegen aan Intune
 Voer de volgende stappen uit om een app toe te voegen aan Intune als een snelkoppeling naar een app op internet:

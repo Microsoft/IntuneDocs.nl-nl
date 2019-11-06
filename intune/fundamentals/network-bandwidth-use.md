@@ -18,20 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a3ecf2872832af6199620863a05b4275731db5c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0507d607bfac6c084f1ce0b1f59d7474810ec8b7
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505247"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415116"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Netwerkconfiguratievereisten en bandbreedte voor Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 U kunt deze informatie gebruiken om inzicht te krijgen in de bandbreedtevereisten voor uw Intune-implementaties.
 
 ## <a name="average-network-traffic"></a>Gemiddeld netwerkverkeer
+
 Deze tabel bevat de geschatte grootte en frequentie van algemene inhoud die via het netwerk voor elke client wordt verzonden.
 
 > [!NOTE]
@@ -53,9 +52,11 @@ Deze tabel bevat de geschatte grootte en frequentie van algemene inhoud die via 
 |Softwaredistributie|Varieert<br /><br />De grootte is afhankelijk van de software die u wilt implementeren.|**Varieert**<br /><br />Is afhankelijk van wanneer u software implementeert.|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>Manieren om het gebruik van netwerkbandbreedte te beperken
+
 U kunt een of meer van de volgende methoden gebruiken om het gebruik van netwerkbandbreedte te beperken voor Intune-clients.
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>Een proxyserver gebruiken om aanvragen voor inhoud in cache te plaatsen
+
 Een proxyserver kan inhoud in cache plaatsen om dubbele downloads te voorkomen, en de netwerkbandbreedte voor het downloaden van inhoud van internet te beperken.
 
 Een cacheproxyserver die aanvragen voor inhoud ontvangt van clients, kan die inhoud ophalen en zowel webreacties als downloads in de cache plaatsen. De server gebruikt de gegevens in cache om de volgende aanvragen van clients te beantwoorden.
@@ -74,6 +75,7 @@ Hieronder vindt u standaardinstellingen voor een proxyserver die inhoud voor Int
 Zie de documentatie voor uw proxyserver voor informatie over het gebruik van een proxyserver om inhoud in cache te plaatsen.
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>BITS (Background Intelligent Transfer Service) gebruiken op computers
+
 U kunt, tijdens de uren die u zelf configureert, BITS gebruiken op een Windows-computer om de netwerkbandbreedte te beperken. U kunt BITS-beleid configureren op de pagina **Netwerkbandbreedte** van het beleid van de Intune-agent.
 
 > [!NOTE]
@@ -82,14 +84,15 @@ U kunt, tijdens de uren die u zelf configureert, BITS gebruiken op een Windows-c
 Zie [Background Intelligent Transfer Service](https://technet.microsoft.com/library/bb968799.aspx) in de TechNet-bibliotheek voor meer informatie over BITS en Windows-computers.
 
 ### <a name="delivery-optimization"></a>Delivery optimization
+
 Met Delivery Optimization kunt u Intune gebruiken om het bandbreedteverbruik te verminderen wanneer toepassingen en updates worden gedownload naar uw Windows 10-apparaten. Door een zelf organiserende gedistribueerde cache te gebruiken, kunnen downloads worden opgehaald van traditionele servers en uit alternatieve bronnen (zoals netwerk-peers).
 
 Raadpleeg het artikel [Delivery Optimization voor Windows 10-updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#requirements) voor een volledige lijst met Windows 10-versies en inhoudstypen die worden ondersteund voor Delivery Optimization.
 
 U kunt [Delivery Optimization configureren](../configuration/delivery-optimization-settings.md) als onderdeel van uw apparaatconfiguratieprofielen.
 
-
 ### <a name="use-branchcache-on-computers"></a>BranchCache gebruiken op computers
+
 Intune-clients kunnen BranchCache gebruiken om WAN-verkeer (Wide Area Network) te beperken. De volgende besturingssystemen ondersteunen BranchCache:
 
 - Windows 7
