@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13e5e7d49ec7e808f7cb5ba419dc881717539564
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
-ms.translationtype: MTE75
+ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496036"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182858"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Zebra-apparaten gebruiken en beheren met Zebra Mobility Extensions in Microsoft Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "72496036"
 
 Intune bevat een uitgebreide set functies, waaronder apps beheren en apparaatinstellingen configureren. Deze ingebouwde functies en instellingen worden gebruikt om Android-apparaten te beheren die zijn gemaakt door Zebra Technologies. Deze apparaten worden ook wel Zebra-apparaten genoemd.
 
-Gebruik op Android-apparaten **Mobility Extensions (MX)** -profielen om Zebra-specifieke instellingen aan te passen of toe te voegen.
+Gebruik op Android-apparaten **Mobility Extensions (MX)** -profielen van Zebra om Zebra-specifieke instellingen aan te passen of toe te voegen.
 
 In dit artikel wordt beschreven hoe u Zebra Mobility Extensions (MX) gebruikt op Zebra-apparaten in Microsoft Intune.
 
@@ -52,6 +52,7 @@ Met Intune kunt u Zebra-apparaten registreren om Line-Of-Business-apps te implem
 - Zorg ervoor dat u over de nieuwste versie van de StageNow-desktop-app van Zebra Technologies beschikt.
 - Controleer de [Volledige functiematrix van Zebra](http://techdocs.zebra.com/mx/compatibility) (hiermee wordt de Zebra-website geopend) om te bevestigen dat de profielen die u maakt compatibel zijn met de MX-versie, de besturingssysteemversie en het model van het apparaat.
 - Bepaalde apparaten, zoals TC20/25-apparaten, ondersteunen niet alle beschikbare MX-functies in StageNow. Controleer de [Functiematrix van Zebra](http://techdocs.zebra.com/mx/tc2x/) (hiermee wordt de Zebra-website geopend) voor bijgewerkte ondersteuningsinformatie.
+
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>Stap 1: de nieuwste Bedrijfsportal-app installeren
 

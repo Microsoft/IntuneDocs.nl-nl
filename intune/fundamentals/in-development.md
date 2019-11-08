@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/07/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,14 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea5fae72f6e2057ef0b03a7bd295085ed1ac3bbd
-ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
+ms.openlocfilehash: 3720b0b9a67f0c3462993feef4162ef35f7f3f92
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601523"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182919"
 ---
-# <a name="in-development-for-microsoft-intune---october-2019"></a>In ontwikkeling voor Microsoft Intune - oktober 2019
+# <a name="in-development-for-microsoft-intune---november-2019"></a>In ontwikkeling voor Microsoft Intune - november 2019
 
 Als hulp bij uw gereedheid en planning worden op deze pagina updates voor en functies van de Intune-gebruikersinterface vermeld die in ontwikkeling zijn, maar nog niet zijn uitgebracht. Naast de informatie op deze pagina:
 
@@ -58,8 +58,14 @@ Als hulp bij uw gereedheid en planning worden op deze pagina updates voor en fun
 <!-- ***********************************************-->
 ## <a name="app-management"></a>Appbeheer
 
-### <a name="apply-dark-mode-in-ios-company-portal----4911422----"></a>Donkere modus in iOS-Bedrijfsportal Toep assen <!-- 4911422  -->
-De donkere modus is gepland voor iOS-Bedrijfsportal. U kunt bedrijfsapps downloaden, uw apparaten beheren en ondersteuning krijgen in het kleuren schema van uw keuze. Meer informatie over de iOS-bedrijfsportal vindt u in [De app Microsoft Intune-bedrijfsportal configureren](../apps/company-portal-app.md).
+### <a name="smime-support-for-microsoft-outlook-mobile----2669398----"></a>S/MIME-ondersteuning voor micro soft Outlook Mobile <!-- 2669398  -->
+InTune biedt ondersteuning voor het leveren van S/MIME-ondertekening en versleutelings certificaten die kunnen worden gebruikt met Outlook Mobile op iOS en Android. Zie [e-mail instellingen voor IOS-apparaten](~/configuration/email-settings-ios.md) en [e-mail instellingen voor Android-apparaten](~/configuration/email-settings-android.md)voor meer informatie.
+
+### <a name="custom-settings-support-for-macos-applications----4736278----"></a>Ondersteuning van aangepaste instellingen voor macOS-toepassingen <!-- 4736278  -->
+InTune ondersteunt aangepaste instellingen, zodat u specifieke sleutels en waarden kunt toevoegen aan een bestaand eigenschappen lijst bestand voor voor keuren (. plist) om macOS-apps en het apparaat te configureren. Niet alle apps ondersteunen beheerde voor keuren, en in sommige gevallen kunnen alleen specifieke instellingen worden beheerd. De instellingen worden alleen geïmplementeerd via het kanaal van het apparaat. U moet alleen eigenschappen lijst bestanden of XML-bestanden uploaden die de kanaal instellingen van het apparaat hebben.
+
+### <a name="assignment-type-value-in-windows-company-portal----5459950----"></a>Waarde van toewijzings type in Windows Bedrijfsportal <!-- 5459950  -->
+De pagina **geïnstalleerde apps** van de Windows bedrijfsportal-app wordt bijgewerkt. De kolom **toewijzings type** van de pagina **geïnstalleerde apps** is bijgewerkt met de naam ' vereist door uw organisatie '. Mogelijke waarden zijn **Ja** of **Nee** om de vereiste versus beschik bare apps aan te wijzen. Deze wijziging wordt aangebracht in reactie op de Verwar ring van de eind gebruiker. Meer informatie over de Windows-bedrijfsportal vindt u in [De app Microsoft Intune-bedrijfsportal configureren](~/apps/company-portal-app.md).
 
 ### <a name="run-win32-apps-on-windows-10-s-mode-devices----3747604----"></a>Win32-apps uitvoeren op Windows 10 S-modus apparaten <!-- 3747604  --> 
 U kunt Win32-apps installeren en uitvoeren op apparaten die worden beheerd in de modus Windows 10 S. Maak een of meer aanvullende beleids regels voor de modus S door gebruik te maken van de Windows Defender Application Control (WDAC) Power shell-hulpprogram ma's. Gebruik de handtekening portal van Device Guard om het aanvullende beleid te ondertekenen. Upload en distribueer vervolgens het beleid via intune. 
@@ -93,15 +99,6 @@ In de Bedrijfsportal-app worden aanvullende status berichten voor de app-install
 - De app is geïnstalleerd, maar moet opnieuw worden opgestart.
 - De app wordt geïnstalleerd, maar moet opnieuw worden opgestart om verder te gaan.
 
-### <a name="assign-the-microsoft-edge-beta-for-macos----4678761----"></a>De bèta versie van micro soft Edge voor macOS toewijzen <!-- 4678761  -->
-U kunt de nieuwste versie van de micro soft Edge Beta toevoegen en toewijzen aan intune voor macOS-apparaten. 
-
-De micro soft Edge Beta voor macOS-apparaten toewijzen:
-1. Selecteer in intune **client-apps**  > **apps**  > **app toevoegen**  > **micro soft Edge-macOS**. 
-1. Wijs de bèta versie van micro soft Edge toe aan de gewenste groepen. Micro soft auto update (MAU) houdt micro soft Edge up-to-date. 
- 
-Zie voor meer informatie over micro soft Edge [webtoegang beheren met behulp van micro soft Edge met Microsoft intune](../apps/manage-microsoft-edge.md).
-
 ### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>Inhoud van app-meldingen voor organisatie accounts configureren <!-- 2576686 -->
 Met de intune-APP op Android-en iOS-apparaten kunt u app-meldings inhoud voor organisatie accounts beheren. Deze functie vereist ondersteuning van toepassingen en is mogelijk niet beschikbaar voor alle toepassingen waarvoor APP is ingeschakeld. Zie [Overzicht van App-beveiligingsbeleid](../apps/app-protection-policy.md) voor meer informatie over APP.
 
@@ -109,27 +106,55 @@ Met de intune-APP op Android-en iOS-apparaten kunt u app-meldings inhoud voor or
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Apparaatconfiguratie
 
-### <a name="new-device-firmware-configuration-interface-profile-for-devices-that-run-windows-10-and-later----2266073----"></a>Nieuw firmware configuratie interface profiel voor apparaten met Windows 10 en hoger <!-- 2266073  -->
-In Windows 10 en hoger kunt u een configuratie profiel voor een apparaat maken om instellingen en functies te beheren: 
+### <a name="use-pkcs-certificates-with-wi-fi-profiles-on-windows-10-and-later-devices----3246388----"></a>PKCS-certificaten gebruiken met Wi-Fi-profielen op apparaten met Windows 10 en hoger <!-- 3246388  -->
+Op dit moment kunt u Windows Wi-Fi-profielen verifiëren met SCEP-certificaten (**apparaatconfiguratie** > **profielen** > **profiel maken** > **Windows 10 en hoger** voor platform > **Wi-Fi** voor Profiel type > EAP- **type** > - **onderneming** ). U kunt PKCS-certificaten gebruiken met uw Windows Wi-Fi-profielen. Met deze functie kunnen gebruikers Wi-Fi-profielen verifiëren met behulp van nieuwe of bestaande PKCS-certificaat profielen in uw Tenant. 
 
-1. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-1. Voor het platform selecteert u **Windows 10 en hoger**. 
- 
-Met een nieuw profiel voor de firmware configuratie interface van een apparaat kan intune UEFI-instellingen (BIOS) beheren.
+Zie [Wi-Fi-instellingen voor Windows 10-en nieuwere apparaten toevoegen in intune](../configuration/wi-fi-settings-windows.md)voor meer informatie over Wi-Fi-profielen.
 
-Zie voor meer informatie over de huidige instellingen die u kunt configureren [onderdelen en instellingen op uw apparaten Toep assen met behulp van apparaatprofielen in Microsoft intune](../configuration/device-profiles.md).
+Van toepassing op:
+- Windows 10 en hoger
 
-Deze functie is van toepassing op Windows 10 RS5 (1809) en hoger, op apparaten selecteren.
- 
+### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices----4892824----"></a>Nieuwe ExchangeActiveSync-instellingen bij het maken van een configuratie profiel voor een e-mail apparaat op iOS-apparaten <!-- 4892824  --> 
+Op iOS/iPadOS-apparaten kunt u een e-mail verbinding configureren in een configuratie profiel voor een apparaat (**apparaatconfiguratie** > **profielen** > **profiel maken** > **IOS/IPadOS** voor platform > **-e-mail** voor het profiel type). 
+
+Er worden nieuwe ExchangeActiveSync-instellingen beschikbaar, waaronder:
+- Kies de services die u wilt synchroniseren (of blok keren synchronisatie), zoals e-mail, agenda en contact personen.
+- Gebruikers toestaan om de synchronisatie-instellingen voor deze services op hun apparaten te wijzigen. 
+
+Als u de huidige instellingen wilt zien, gaat u naar [e-mail Profiel instellingen voor IOS-apparaten in intune](../configuration/email-settings-ios.md).
+
+Van toepassing op:
+- iOS 13.0 en hoger
+- iPadOS 13.0 en hoger
+
+### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices----5353228----"></a>Voor komen dat gebruikers persoonlijke Google-accounts toevoegen aan de eigenaar van het Android-apparaat en de toegewezen apparaten <!-- 5353228  -->
+U kunt voor komen dat gebruikers persoonlijke Google-accounts maken op Android Enter prise Device-eigenaar en toegewezen apparaten (**apparaatconfiguratie** > **profielen** > **profiel maken** > **Android Enter prise** alleen voor platform > **apparaat-eigenaar > beperkingen van apparaten** voor profiel type > **gebruikers en account instellingen**).
+
+Ga naar [Met Android Enterprise-apparaatinstellingen functies toestaan of beperken met behulp van Intune](../configuration/device-restrictions-android-for-work.md) als u alle instellingen wilt bekijken die u momenteel kunt configureren.
+
+Van toepassing op:
+- Android Enterprise-apparaateigenaar
+- Toegewezen Android Enterprise-apparaten
+
+### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile----5468501----"></a>De instelling logboek registratie aan server zijde voor SIRI-opdrachten wordt verwijderd in profiel voor iOS-apparaten <!-- 5468501  -->
+Op iOS-apparaten kunt u een profiel voor beperkingen voor apparaten maken waarmee logboek registratie aan de server zijde wordt geconfigureerd voor SIRI-opdrachten (**apparaatconfiguratie** > **profielen** > **maken** > **IOS/iPadOS** voor platform > **Beperkingen** voor het profiel type > **ingebouwde apps**). De instelling **logboek registratie aan server zijde voor SIRI-opdrachten** wordt verwijderd.
+
+Deze instelling wordt verwijderd uit de intune-beheer console. Deze instelling heeft geen effect op het apparaat, zelfs als bestaande beleids regels waarvoor deze instelling is geconfigureerd, de instelling blijven weer geven. Als u de instelling uit bestaande beleids regels wilt verwijderen, gaat u naar het beleid, maakt u een kleine bewerking, slaat u deze op en wordt het beleid bijgewerkt.
+
+Ga naar [iOS- en iPadOS-apparaatinstellingen om functies toe te staan of te beperken met Intune](../configuration/device-restrictions-ios.md) als u alle configureerbare instellingen wilt bekijken.
+
+Van toepassing op:
+- iOS
+
 
 <!-- ***********************************************-->
-## <a name="device-enrollment"></a>Apparaatinschrijving
-
-### <a name="for-ios-devices-customize-the-enrollment-privacy-window-of-company-portal----4394993----"></a>Voor iOS-apparaten past u het venster voor inschrijvings-privacy van Bedrijfsportal <!-- 4394993  -->
-Met behulp van markdown kunt u het privacyvenster van de bedrijfsportal aanpassen dat eindgebruikers te zien krijgen tijdens de iOS-registratie. U kunt met name de lijst aanpassen met zaken die uw organisatie niet op het apparaat kan zien of doen.
+<!--## Device enrollment-->
 
 <!-- ***********************************************-->
 ## <a name="device-management"></a>Apparaatbeheer
+
+### <a name="edit-device-name-value-for-autopilot-devices---2640074----"></a>Waarde voor apparaatnaam bewerken voor auto pilot-apparaten<!-- 2640074  -->
+U kunt de waarde voor de apparaatnaam voor Azure AD gekoppelde auto pilot-apparaten bewerken. Als u dit wilt doen, gaat u naar **intune** > **apparaatregistratie** > **Windows-inschrijving** > **Windows auto pilot** > - **apparaten** > kiest u het apparaat > de waarde **apparaatnaam** in het rechterdeel venster te wijzigen > **Opslaan**.
 
 
 ### <a name="edit-the-group-tag-value-for-autopilot-devices---4816775---"></a>De groeps label waarde voor auto pilot-apparaten bewerken<!-- 4816775 -->
@@ -143,25 +168,38 @@ U kunt de **groeps label** waarde voor auto pilot-apparaten bewerken:
 ### <a name="target-macos-user-groups-to-require-jamf-management----4061739---"></a>MacOS-gebruikers groepen die Jamf-beheer vereisen <!-- 4061739 -->
 U kunt specifieke groepen gebruikers bereiken om te vereisen dat hun macOS-apparaten worden beheerd door Jamf. Met dit doel kunt u de integratie van Jamf-naleving Toep assen op een subset van macOS-apparaten, terwijl andere apparaten door intune worden beheerd. Met doel items kunt u ook de apparaten van gebruikers geleidelijk van het ene Mobile Device Management (MDM)-systeem naar de andere migreren.
 
-### <a name="deploy-software-updates-to-macos-devices----3194876---"></a>Software-updates implementeren op macOS-apparaten <!-- 3194876 -->
-U kunt software-updates implementeren op groepen macOS-apparaten. Deze functie omvat essentiële, firmware, configuratie bestand en andere updates. U kunt updates verzenden tijdens het volgende inchecken van het apparaat. U kunt ook een wekelijks schema selecteren om updates in of uit Peri Oden te implementeren die u hebt ingesteld. 
+<!-- ***********************************************-->
+## <a name="intune-apps"></a>Intune-apps
 
-Deze functie helpt u bij het bijwerken van apparaten buiten de standaardwerk uren of buiten kantoor uren wanneer uw Help Desk volledig is gewerkt. U krijgt ook een gedetailleerd rapport van alle macOS-apparaten waarop updates zijn geïmplementeerd. U kunt inzoomen op het rapport op apparaat om de status van een bepaalde update weer te geven.
+### <a name="improved-macos-enrollment-experience-in-company-portal----5074349----"></a>Verbeterde macOS-inschrijvings ervaring in Bedrijfsportal <!-- 5074349  -->
+De Bedrijfsportal voor de registratie van macOS heeft een eenvoudig inschrijvings proces dat nauw keuriger wordt afgestemd op de Bedrijfsportal voor iOS-registratie. Gebruikers van het apparaat zien:  
+
+* Een gestroomlijnde gebruikers interface.  
+* Een verbeterde controle lijst voor de inschrijving.  
+* Duidelijkere instructies over het inschrijven van hun apparaten.  
+* Verbeterde opties voor probleem oplossing.  
+
+### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857----"></a>Verbeterd controlelijst ontwerp in Bedrijfsportal app voor Android<!-- 5550857  -->
+De installatie controlelijst in de Bedrijfsportal-app voor Android wordt bijgewerkt met een licht gewicht ontwerp en nieuwe pictogrammen. De wijzigingen worden uitgelijnd met de recente updates die zijn aangebracht in de Bedrijfsportal-app voor iOS.
 
 <!-- ***********************************************-->
 ## <a name="monitoring-and-troubleshooting"></a>Bewaking en probleem oplossing
-
-### <a name="android-report-on-the-devices-overview-page----2984353----"></a>Android-rapport op de pagina overzicht van apparaten <!-- 2984353  -->
-We gaan een nieuw rapport toevoegen aan de **overzichts** pagina met apparaten. In het rapport wordt weer gegeven hoeveel Android-apparaten zijn geregistreerd bij elke oplossing voor Apparaatbeheer. In de grafiek worden de aantallen apparaten weer gegeven voor het werk profiel, volledig beheerd, toegewezen en apparaat-Administrator die zijn Inge schreven. 
-
-Als u het rapport wilt zien, kiest u **intune** > **apparaten** > **Overview**.
 
 ### <a name="updated-support-experience-------5012398------"></a>Bijgewerkte ondersteunings ervaring   <!--  5012398    -->
 Als onderdeel van de voortdurende verbeteringen wordt de ondersteunings ervaring in de console voor intune bijgewerkt.  We verbeteren de zoek opdracht in de console en feedback voor veelvoorkomende problemen en stroom lijnen de werk stroom om contact op te nemen met de ondersteuning.     
 
 <!-- ***********************************************-->
-<!--## Security-->
+## <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
 
+### <a name="duplicate-custom-or-built-in-roles----1081938---"></a>Dubbele aangepaste of ingebouwde rollen <!-- 1081938 -->
+U kunt ingebouwde en aangepaste rollen kopiëren. Als u dit wilt doen, gaat u naar **intune** - > **rollen** > **alle rollen** > kies een rol in de lijst > **dupliceren**. Zorg ervoor dat u een nieuwe naam invoert die uniek is.
+
+<!-- ***********************************************-->
+
+## <a name="security"></a>Beveiliging
+
+### <a name="bitlocker-key-rotation--------2564951--------"></a>BitLocker-sleutel rotatie     <!-- 2564951      -->
+U kunt intune gebruiken voor het roteren van de BitLocker-herstel sleutels voor beheerde apparaten waarop Windows versie 1909 of hoger wordt uitgevoerd. 
 
 <!-- ***********************************************-->
 ## <a name="notices"></a>Mededelingen

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9fb439bd0bc59ae2c69ec966587d58c8c97bf4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510095"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414394"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows-pc's beheren als computers via de Intune-softwareclient
 
@@ -30,7 +30,7 @@ ms.locfileid: "72510095"
 > [!WARNING]
 > Microsoft heeft aangekondigd dat [ondersteuning voor Windows 7 op 14 januari 2020 wordt beëindigd](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). Op deze datum zal Intune ook de ondersteuning beëindigen voor apparaten waarop Windows 7 wordt uitgevoerd. Microsoft raadt u ten zeerste aan over te stappen op Windows 10 om eventuele service- of ondersteuningsproblemen te voorkomen.
 > 
-> Zie voor meer informatie [intune-plan voor wijziging: bijna geen ondersteuning voor Windows 7](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7-).
+> Voor meer informatie, zie [Geplande wijziging voor Intune: aanstaande beëindiging van ondersteuning voor Windows 7](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7).
 
 > [!NOTE]
 > U kunt Microsoft Intune gebruiken voor het beheren van Windows-pc's [als mobiele apparaten met Mobile Device Management (MDM)](../enrollment/windows-enroll.md) of als computers met de Intune-softwareclient, zoals hieronder beschreven. Microsoft adviseert klanten echter om indien mogelijk [de MDM-beheeroplossing te gebruiken](../enrollment/windows-enroll.md). Raadpleeg [Het beheer van Windows-pc's als computers of mobiele apparaten vergelijken](pc-management-comparison.md) voor meer informatie 
@@ -62,7 +62,7 @@ Hieronder staan de softwarevereisten beschreven voor het installeren van de clie
 |---------------|--------------------|
 |Besturingssysteem | Windows-apparaat waarop Windows 7 SP1 en Windows 8.1 of later wordt uitgevoerd. </br></br>**Home Edition-versies worden niet ondersteund.**|
 |Beheermachtigingen|Het account waarmee de clientsoftware wordt geïnstalleerd, moet lokale beheerdersmachtigingen op het apparaat hebben.|
-|Windows Installer 3.1|De computer moet minimaal Windows Installer 3.1 hebben.<br /><br />Zo controleer u welke versie van Windows Installer op een computer is geïnstalleerd:<br /><br />  Klik op de pc met de rechtermuisknop op **%windir%\System32\msiexec.exe** en klik vervolgens op **Eigenschappen**.<br /><br />U kunt de meest recente versie van Windows Installer downloaden van de pagina [Herdistribueerbare Windows Installer-pakketten](http://go.microsoft.com/fwlink/?LinkID=234258) op de Microsoft Developer Network-website.|
+|Windows Installer 3.1|De computer moet minimaal Windows Installer 3.1 hebben.<br /><br />Zo controleer u welke versie van Windows Installer op een computer is geïnstalleerd:<br /><br />  Klik op de pc met de rechtermuisknop op **%windir%\System32\msiexec.exe** en klik vervolgens op **Eigenschappen**.<br /><br />U kunt de meest recente versie van Windows Installer downloaden van de pagina [Herdistribueerbare Windows Installer-pakketten](https://go.microsoft.com/fwlink/?LinkID=234258) op de Microsoft Developer Network-website.|
 |Niet-compatibele clientsoftware verwijderen|Voordat u de Intune-clientsoftware installeert, moet u de Configuration Manager-, Operations Manager- en Service Manager-clientsoftware van de pc verwijderen.|
 
 ## <a name="deploying-the-intune-software-client"></a>De Intune-softwareclient installeren
