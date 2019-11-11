@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1eda7fef3ee9c2ca4e4a13d9b6effba2ed121b0e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 27a020f4b45ae878718bed4ee6e230c3d288f260
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506952"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755413"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Bundel-id's voor ingebouwde iOS-apps die kunt u gebruiken in Intune
 
@@ -55,6 +55,7 @@ Als u functies op iOS-apparaten configureert, kunt u ook de ingebouwde apps toev
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.Apple.mobilemail        | Mail         | Apple     |
 | com.apple.Maps              | Kaarten         | Apple     |
+| com. Apple. Measure           | Maateenheid      | Apple     |
 | com.apple.MobileSMS         | Berichten     | Apple     |
 | com.apple.Music             | Music        | Apple     |
 | com.apple.news              | Nieuws         | Apple     |

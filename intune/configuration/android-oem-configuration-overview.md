@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb992747765ea087d5ef536c2da7c444bfa2d987
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915731"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756752"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Android Enter prise-apparaten gebruiken en beheren met OEMConfig in Microsoft Intune
 
@@ -80,8 +80,8 @@ Zorg ervoor dat het apparaat OEMConfig ondersteunt, de juiste OEMConfig-app word
 
 ## <a name="create-an-oemconfig-profile"></a>Een OEMConfig-profiel maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+1. Meld u aan bij het [micro soft Endpoint Manager-beheer centrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **apparaten** > **configuratie profielen** > **profiel maken**.
 3. Voer de volgende eigenschappen in:
 
     - **Naam**: voer een beschrijvende naam in voor het nieuwe profiel.
@@ -108,11 +108,11 @@ Zorg ervoor dat het apparaat OEMConfig ondersteunt, de juiste OEMConfig-app word
       - Veel instellingen hebben standaard waarden die zijn opgegeven door de OEM. Als u wilt zien of er een standaard waarde is, houdt u de muis aanwijzer boven het info pictogram naast de instelling. In de knop info worden de standaard waarden voor die instelling (indien van toepassing) en meer details van de OEM weer gegeven.
 
       - Als u op **wissen** klikt, wordt een instelling uit het profiel verwijderd. Als een instelling zich niet in het profiel bevindt, wordt de waarde op het apparaat niet gewijzigd wanneer het profiel wordt toegepast.
-        
+
       - Als u in de Configuration Designer een lege (niet-geconfigureerde) bundel maakt, wordt deze verwijderd wanneer u overschakelt naar de JSON-editor.
 
     - **JSON-editor**: wanneer u deze optie selecteert, wordt er een JSON-editor geopend met een sjabloon voor het volledige configuratie schema dat in de app is inge sloten. Pas in de editor de sjabloon aan met waarden voor de verschillende instellingen. Als u de **ontwerp functie voor configuratie** gebruikt om uw waarden te wijzigen, overschrijft de JSON-editor de sjabloon met waarden van de Configuration Designer.
-    
+
       - Als u een bestaand profiel bijwerkt, toont de JSON-editor de instellingen die voor het laatst zijn opgeslagen bij het profiel.
 
       - OEMConfig-schema's kunnen groot en complex zijn. Als u deze instellingen liever met behulp van een andere editor wilt bijwerken, selecteert u de knop **JSON-sjabloon downloaden** . Gebruik een editor van uw keuze om uw configuratie waarden toe te voegen aan de sjabloon. Kopieer en plak vervolgens uw bijgewerkte JSON in naar de eigenschap **JSON-editor** .

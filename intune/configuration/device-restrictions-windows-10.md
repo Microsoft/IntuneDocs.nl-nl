@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 164c34f4a46ca11e2788b72dee70bdd40c25e7f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493906"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755258"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -223,12 +223,12 @@ Deze instellingen gebruiken de [beleid-CSP Experience](https://docs.microsoft.co
 
 - **Meldingen van Onderhoudscentrum** (alleen mobiel): met **Blokkeren** worden meldingen van Onderhoudscentrum niet op het vergrendelingsscherm van het apparaat weergegeven. Met **Niet geconfigureerd** (standaard) kunnen gebruikers kiezen welke apps meldingen weergeven op het vergrendelingsscherm.
 
-  [AboveLock/AllowActionCenterNotifications CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowactioncenternotifications)
+  [AboveLock/AllowActionCenterNotifications CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **Afbeeldings-URL vergrendelingsscherm** (alleen desktop): Voer de URL in van een afbeelding in JPG-, JPEG- of PNG-indeling die wordt gebruikt als achtergrond van het Windows-vergrendelingsscherm. Voer bijvoorbeeld `https://contoso.com/image.png` in. Met deze instelling wordt de afbeelding vergrendeld en kan deze later niet meer worden gewijzigd.
 - **Time-out voor het scherm die door de gebruiker kan worden ingesteld** (alleen mobiel): Met **Toestaan** kunnen gebruikers de time-out voor het scherm configureren. Met **Niet geconfigureerd** (standaard) hebben gebruikers deze mogelijkheid niet.
 
-  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowscreentimeoutwhilelockeduserconfig)
+  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
 
 - **Cortana op vergrendeld scherm** (alleen desktop): Met **Blokkeren** hebben gebruikers geen interactie met Cortana wanneer het vergrendelingsscherm wordt weergegeven op het apparaat. Met **Niet geconfigureerd** (standaard) is interactie met Cortana mogelijk.
 
@@ -240,7 +240,7 @@ Deze instellingen gebruiken de [beleid-CSP Experience](https://docs.microsoft.co
 
 - **Time-out voor het scherm** (alleen mobiel): Hiermee stelt u de duur (in seconden) in van de schermvergrendeling totdat het scherm wordt uitgeschakeld. Ondersteunde waarden zijn 11-1800. Voer bijvoorbeeld `300` om deze time-out in te stellen op 5 minuten.
 
-  [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
+  [DeviceLock/ScreenTimeoutWhileLocked CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_ScreenTimeoutWhileLocked)
 
 ## <a name="messaging"></a>Berichten
 

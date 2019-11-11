@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 11/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abcd7b96de8f5f3984c2d4407abaf11b7b6b7e4f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e69f1b11833da0906aaf831f8bb82b04241e442f
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492497"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755185"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>MacOS-kernel-extensies toevoegen in intune
 
@@ -67,8 +67,8 @@ In dit artikel leest u hoe u een configuratie profiel voor een apparaat maakt me
 
 ## <a name="create-the-profile"></a>Het profiel maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+1. Meld u aan bij het [micro soft Endpoint Manager-beheer centrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **apparaten** > **configuratie profielen** > **profiel maken**.
 3. Voer de volgende eigenschappen in:
 
     - **Naam**: voer een beschrijvende naam in voor het nieuwe profiel.

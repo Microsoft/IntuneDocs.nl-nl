@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6886060cce77004b107dac02ecea57f2090ac8f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503468"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592026"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -181,6 +181,9 @@ Nadat u uw app hebt geregistreerd in een Azure-tenant en deze wordt weergegeven 
 5. Voer in het zoekvak **Microsoft Mobile Application Management** in.
 6. Schakel onder **Gedelegeerde machtigingen** het selectievakje **DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data*** (DeviceManagementManagedApps.ReadWrite: de app-beheergegevens van de gebruiker lezen en schrijven) in.
 7. Klik op **Machtigingen toevoegen**.
+
+> [!NOTE]
+> Als uw app ervoor zorgt dat u zich niet kunt aanmelden vanwege een fout bij het openen van deze resource: https://intunemam.microsoftonline.com, moet u een notitie verzenden naar msintuneappsdk@microsoft.com met de client-ID van uw app. Dit is momenteel een hand matig goedkeurings proces.
 
 ### <a name="badge-your-app-optional"></a>Uw app van een logo voorzien (optioneel)
 

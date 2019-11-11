@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413819"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635323"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Line-of-business-apps voorbereiden voor app-beveiligingsbeleid
 
@@ -110,7 +110,7 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |Volledig wissen van app-gegevens|X|X|
 |Selectief wissen van werk- en schoolgegevens in scenario's met meerdere identiteiten <br><br>**Opmerking:** bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
 |'Opslaan als' voorkomen|X||
-|Configuratie van de doel toepassing (of app-configuratie via het ' MAM-kanaal ')|X|X|
+|Configuratie van de doel toepassing (of app-configuratie via het ' MAM-kanaal ')|X||
 |Ondersteuning voor meerdere identiteiten|X||
 |Aanpasbare stijl |X|||
 |VPN-verbindingen met Citrix mVPN op aanvraag voor toepassingen|X|X| 

@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 348768be4a42667f579df0ccb500434425258db0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892544"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712851"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Problemen met inschrijving van Windows-apparaten in Microsoft Intune oplossen
 
@@ -60,7 +60,7 @@ Fout 80180003: Er is iets misgegaan. Deze gebruiker is niet gemachtigd om in te 
 Er zijn verschillende mogelijke oplossingen voor dit probleem:
 
 ##### <a name="remove-devices-that-were-enrolled"></a>Apparaten verwijderen die zijn geregistreerd
-1. Meld u aan bij [Azure Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).    
+1. Meld u aan bij het [micro soft Endpoint Manager-beheer centrum](https://go.microsoft.com/fwlink/?linkid=2109431).    
 2. Ga naar **gebruikers**  > **alle gebruikers**.    
 3. Selecteer het betrokken gebruikers account en klik vervolgens op **apparaten**.    
 4. Selecteer alle ongebruikte of ongewenste apparaten en klik vervolgens op **verwijderen**. 
@@ -70,12 +70,12 @@ Er zijn verschillende mogelijke oplossingen voor dit probleem:
 > [!NOTE]
 > Deze methode verhoogt de registratie limiet voor apparaten voor alle gebruikers, niet alleen de betrokken gebruiker.
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
+1. Meld u aan bij het [micro soft Endpoint Manager-beheer centrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Ga naar inschrijving van **apparaten**  > **inschrijvings beperkingen**en selecteer vervolgens **limieten voor het aantal apparaten**.    
 3. Verhoog de waarde van de limiet van het **apparaat**. 
 
 ##### <a name="check-device-type-restrictions"></a>Beperkingen voor apparaattypen controleren
-1. Meld u aan bij de [Intune-portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) met een account voor globale beheerders.
+1. Meld u aan bij het [micro soft Endpoint Manager-beheer centrum](https://go.microsoft.com/fwlink/?linkid=2109431) met een algemeen beheerders account.
 2. Ga naar inschrijving van **apparaten**  > **inschrijvings beperkingen**en selecteer vervolgens de **standaard** beperking onder beperkingen voor het **Apparaattype**.    
 3. Selecteer **platforms**en selecteer vervolgens **toestaan** voor **Windows (MDM)** .
 

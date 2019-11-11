@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73414677"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709740"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Met instellingen voor iOS- en iPadOS-apparaten kunt u functies toestaan of beperken met behulp van Intune
 
@@ -417,6 +417,9 @@ Is van toepassing op apparaten met iOS 9,3 of hoger.
 - **Type lijst met apps**: een lijst met apps maken om weer te geven of te verbergen. U kunt ingebouwde apps en line-of-Business-Apps weer geven of verbergen. De website van Apple bevat een lijst met [ingebouwde Apple-apps](https://support.apple.com/HT208094). Uw opties zijn:
 
   - **Verborgen apps**: voer een lijst met apps in die verborgen zijn voor gebruikers. Gebruikers kunnen deze apps niet weergeven of openen.
+  
+    Apple voor komt dat sommige systeem eigen apps worden verborgen. U kunt de **instellingen** of de **Wallet** -apps bijvoorbeeld niet verbergen op het apparaat. [Ingebouwde Apple-apps verwijderen](https://support.apple.com/HT208094) bevat de apps die kunnen worden verborgen.
+  
   - **Zichtbare apps**: voer een lijst met apps in die gebruikers kunnen weergeven en starten. Andere apps kunnen niet worden weergegeven of gestart.
 
 - **App-URL**: Voer de URL van de Store-app in van de app die u wilt weer geven of verbergen. Bijvoorbeeld:

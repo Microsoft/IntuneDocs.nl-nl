@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/12/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413862"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713474"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -44,7 +44,7 @@ Voordat u de App Wrapping Tool uitvoert, moet u aan enkele algemene vereisten vo
 
   * Het bestand van de invoer-app moet de extensie **.ipa** of **.app** hebben.
 
-  * De invoer-app moet zijn gecompileerd voor iOS 10 of hoger.
+  * De invoer-app moet zijn gecompileerd voor iOS 11 of hoger.
 
   * De invoer-app kan niet worden versleuteld.
 
@@ -289,26 +289,27 @@ Als de App Wrapping Tool niet kan worden voltooid, wordt mogelijk een van de vol
 |De invoer-app die u hebt opgegeven, is al verpakt en heeft de meest recente beleidssjabloonversie.|De App Wrapping Tool pakt een bestaande verpakte app met de meest recente beleidssjabloonversie niet opnieuw in.|
 |WAARSCHUWING: u hebt geen SHA1-certificaat-hash opgegeven. Zorg dat uw verpakte app is ondertekend voordat u deze implementeert.|Zorg dat u een geldige SHA1-hash opgeeft na de opdrachtregeleigenschap –c. |
 
-### <a name="log-files-for-the-app-wrapping-tool"></a>Logboekbestanden voor de App Wrapping Tool
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Logboeken verzamelen voor uw ingepakte toepassingen van het apparaat
+Gebruik de volgende stappen om logboeken op te halen voor uw ingepakte toepassingen tijdens het oplossen van problemen.
 
-Apps die zijn verpakt met de App Wrapping Tool genereren logboeken die worden geschreven naar de console van het iOS-clientapparaat. Deze informatie is nuttig voor situaties waarin u een probleem ondervindt met de app en wilt achterhalen of dit probleem te maken heeft met de App Wrapping Tool. Als u deze informatie wilt ophalen, gebruikt u de volgende stappen:
+1. Ga naar de app iOS-instellingen op uw apparaat en selecteer uw LOB-app.
+2. Schakel de **Diagnoseconsole** **in**.
+3. Start uw LOB-toepassing.
+4. Klik op de koppeling 'Aan de slag'.
+5. U kunt nu logboeken delen via e-mail of ze kopiëren naar een locatie op OneDrive.
+
+> [!NOTE]
+> De logboekfunctionaliteit is ingeschakeld voor apps die zijn ingepakt met de Intune App Wrapping Tool versie 7.1.13 of hoger.
+
+### <a name="collecting-crash-logs-from-the-system"></a>Vastlopende logboeken van het systeem verzamelen
+
+Uw app kan nuttige informatie vastleggen in de console van het iOS-client apparaat. Deze informatie is nuttig voor situaties waarin u een probleem ondervindt met de app en wilt achterhalen of dit probleem te maken heeft met de App Wrapping Tool. Als u deze informatie wilt ophalen, gebruikt u de volgende stappen:
 
 1. Reproduceer het probleem door de app uit te voeren.
 
 2. Verzamel de uitvoer van de console door de instructies van Apple voor [foutopsporing in geïmplementeerde iOS-apps](https://developer.apple.com/library/ios/qa/qa1747/_index.html)te volgen.
 
-3. Filter de opgeslagen logboeken op beperkingen voor apps door het volgende script in te voeren in de console:
-
-    ```bash
-    grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
-    ```
-
-    U kunt de gefilterde logboeken naar Microsoft verzenden.
-
-    > [!NOTE]
-    > In het logboekbestand komt het item 'build version' overeen met de buildversie van Xcode.
-
-    Verpakte apps bieden gebruikers ook de optie om logboeken rechtstreeks vanaf het apparaat te verzenden nadat de app is vastgelopen. Gebruikers kunnen u de logboeken toesturen, zodat u ze kunt onderzoeken en indien nodig kun doorsturen naar Microsoft.
+Verpakte apps bieden gebruikers ook de optie om logboeken rechtstreeks vanaf het apparaat te verzenden nadat de app is vastgelopen. Gebruikers kunnen u de logboeken toesturen, zodat u ze kunt onderzoeken en indien nodig kun doorsturen naar Microsoft.
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Certificaat-, inrichtingsprofiel- en verificatievereisten
 
@@ -442,19 +443,6 @@ Voer gewoon uw algemene app-wrapping-opdracht uit waaraan de markering `-citrix`
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
-
-## <a name="getting-logs-for-your-wrapped-applications"></a>Logboeken voor uw ingepakte toepassingen ophalen
-
-Gebruik de volgende stappen om logboeken op te halen voor uw ingepakte toepassingen tijdens het oplossen van problemen.
-
-1. Ga naar de app iOS-instellingen op uw apparaat en selecteer uw LOB-app.
-2. Schakel de **Diagnoseconsole** **in**.
-3. Start uw LOB-toepassing.
-4. Klik op de koppeling 'Aan de slag'.
-5. U kunt nu logboeken delen via e-mail of ze kopiëren naar een locatie op OneDrive.
-
-> [!NOTE]
-> De logboekfunctionaliteit is ingeschakeld voor apps die zijn ingepakt met de Intune App Wrapping Tool versie 7.1.13 of hoger.
 
 ## <a name="see-also"></a>Zie tevens
 

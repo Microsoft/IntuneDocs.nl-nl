@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2e7dc729879eb6d16a4ab3555d8fe319501a53e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492140"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754946"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Beleidsregels en profielen voor het oplossen van problemen in Intune
 
@@ -32,11 +32,12 @@ Microsoft Intune bevat een aantal ingebouwde functies voor probleemoplossing. Ge
 In dit artikel staan een aantal oplossingstechnieken en er worden problemen beschreven die u mogelijk ervaart.
 
 ## <a name="check-tenant-status"></a>Tenant status controleren
+
 Controleer de [status](../fundamentals/tenant-status.md) van de Tenant en bevestig dat het abonnement actief is. U kunt ook details weer geven voor actieve incidenten en adviezen die van invloed kunnen zijn op de implementatie van uw beleid of profiel.
 
 ## <a name="use-built-in-troubleshooting"></a>Ingebouwde probleemoplossing gebruiken
 
-1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) selecteert u **Probleem oplossen**:
+1. Selecteer in het [beheer centrum van micro soft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) **probleem oplossing + ondersteuning**:
 
     ![Ga in Intune naar Help en Ondersteuning en selecteer Problemen oplossen](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -102,7 +103,7 @@ Controleer de [status](../fundamentals/tenant-status.md) van de Tenant en bevest
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>U weet niet zeker of een profiel op de juiste manier is toegepast
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [micro soft Endpoint Manager-beheer centrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apparaten** > **Alle apparaten** > selecteer het apparaat > **Apparaatconfiguratie**. 
 
     Bij elk apparaat worden de bijbehorende profielen vermeld. Elk profiel heeft een **status**. De status is van toepassing wanneer alle toegewezen profielen, inclusief hardware- en besturingssysteembeperkingen en -vereisten, als geheel worden overwogen. Mogelijke statussen zijn:

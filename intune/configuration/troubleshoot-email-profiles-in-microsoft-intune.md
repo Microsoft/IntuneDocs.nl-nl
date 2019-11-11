@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/17/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15c78d7e7f602b60b6e9f2cee365c9a02eb904df
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506576"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755016"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Veelvoorkomende problemen met en oplossingen voor e-mailprofielen in Microsoft Intune
 
@@ -32,7 +32,6 @@ Lees welke problemen met e-mailprofielen zich vaak voordoen en hoe u deze kunt o
 ## <a name="what-you-need-to-know"></a>Wat u dient te weten
 
 - E-mail profielen worden geïmplementeerd voor de gebruiker die het apparaat heeft geregistreerd. Als u het e-mail profiel wilt configureren, gebruikt intune de Azure Active Directory (AD)-eigenschappen in het e-mail Profiel van de gebruiker tijdens de inschrijving. Het [toevoegen van e-mail instellingen aan apparaten](email-settings-configure.md) kan een goede bron zijn.
-- Na de migratie van Configuration Manager hybride naar de zelfstandige versie van intune, blijft het e-mail Profiel van Configuration Manager hybride gedurende 7 dagen op het apparaat. Dit is normaal. Als u het e-mail profiel eerder wilt verwijderen, neemt u contact op met de [ondersteuning van intune](../fundamentals/get-support.md).
 - Voor Android Enter prise implementeert u Gmail of negen voor werk met behulp van de beheerde Google Play Store. [Beheerde Google Play-apps toevoegen](../apps/apps-add-android-for-work.md) worden de stappen weer gegeven.
 - Micro soft Outlook voor iOS en Android biedt geen ondersteuning voor e-mail profielen. Implementeer in plaats daarvan een app-configuratie beleid. Zie Outlook-configuratie- [instellingen](../apps/app-configuration-policies-outlook.md)voor meer informatie.
 - E-mail profielen die zijn gericht op apparaatgroepen (niet gebruikers groepen), worden mogelijk niet bezorgd op het apparaat. Wanneer het apparaat een primaire gebruiker heeft, zou het doel van het apparaat moeten werken. Als het e-mail profiel gebruikers certificaten bevat, moet u ervoor zorgen dat u gebruikers groepen bereikt.
@@ -62,22 +61,10 @@ Controleer de configuratie van uw EAS-profiel voor Samsung KNOX en het bronbelei
 
 Gebruikers met automatisch geconfigureerde e-mailaccounts kunnen geen afbeeldingen of foto's verzenden vanaf hun apparaat. Dit scenario kan zich voordoen als de optie **Toestaan dat e-mails worden verzonden vanuit toepassingen van derden** niet is ingeschakeld.
 
-### <a name="intune-solution"></a>Intune-oplossing
-
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen**.
+1. Meld u aan bij het [micro soft Endpoint Manager-beheer centrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **apparaten** > **configuratie profielen**.
 3. Selecteer uw e-mail Profiel > **eigenschappen**  > **instellingen**.
 4. Stel in **dat de instelling E-mail mag worden verzonden vanuit toepassingen van derden** om in te **scha kelen**.
-
-### <a name="configuration-manager-hybrid"></a>Hybride Configuration Manager
-
-1. Open de Configuration Manager-console > **Assets en naleving**.
-
-2. Vouw **Overzicht** > **Instellingen voor naleving** > **Toegang tot bedrijfsbronnen** uit en selecteer **E-mailprofielen**.
-
-3. Klik met de rechtermuisknop op het e-mailprofiel en open **Eigenschappen**.
-
-4. Selecteer op het tabblad **Synchronisatie-instellingen** de optie **Toestaan dat e-mails worden verzonden vanuit toepassingen van derden**.
 
 ## <a name="next-steps"></a>Volgende stappen
 
