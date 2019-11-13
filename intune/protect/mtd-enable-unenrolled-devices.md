@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63079757ee3610d825601921da1d33aa94f851b6
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: b2744a27a733824bab9d920f4de0b49e951c1c34
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72794404"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627644"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>De Mobile Threat Defense-connector in Intune inschakelen voor niet-ingeschreven apparaten
 
@@ -50,9 +50,9 @@ Tijdens de configuratie van Mobile Threat Defense (MTD) hebt u een beleid geconf
 
 U kunt bepalen welke wisselopties voor MTD overeenkomstig de wensen van uw organisatie moeten worden ingeschakeld. Hier vindt u meer informatie:
 
-**Beleidsinstellingen voor app-beveiliging**
-- **Laat Android-apparaten van versie 4.1 en hoger verbinding maken met *\<MTD-partnernaam>* voor de evaluatie van het beveiligingsbeleid voor apps**: Wanneer u deze optie inschakelt, worden apparaten, inclusief gegevens van deze connector, geëvalueerd door app-beveiligingsbeleid met behulp van de Device Threat Level-regel.
-- **Laat iOS-apparaten van versie 8.0 en hoger verbinding maken met *\<MTD-partnernaam>* voor de evaluatie van het beveiligingsbeleid voor apps**: Wanneer u deze optie inschakelt, worden apparaten, inclusief gegevens van deze connector, geëvalueerd door app-beveiligingsbeleid met behulp van de Device Threat Level-regel.
+**Instellingen voor app-beveiligingsbeleid**
+- **Android-apparaten van versie 4.4 en hoger verbinden met *\<MTD-partnernaam>* voor evaluatie van het app-beveiligingsbeleid**: Als u deze optie inschakelt, worden apparaten (inclusief gegevens van deze connector) geëvalueerd door app-beveiligingsbeleid met behulp van de Device Threat Level-regel.
+- **iOS-apparaten van versie 11 verbinden met *\<MTD-partnernaam>* voor evaluatie van het app-beveiligingsbeleid**: Als u deze optie inschakelt, worden apparaten (inclusief gegevens van deze connector) geëvalueerd door app-beveiligingsbeleid met behulp van de Device Threat Level-regel.
 
 **Algemene gedeelde instellingen**
 - **Aantal dagen dat partner niet reageert**: aantal dagen van inactiviteit waarna de partner in Intune als niet-reagerend wordt beschouwd omdat de verbinding is verbroken. Intune negeert de compatibiliteitsstatus voor niet-reagerende MTD-partners.

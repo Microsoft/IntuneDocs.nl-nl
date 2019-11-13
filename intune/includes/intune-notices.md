@@ -4,17 +4,32 @@ description: Include-bestand
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
-ms.date: 03/28/2019
+ms.date: 11/4/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0aa78ec17aba5deb0c914c3698676219f203b856
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: edef1f43caff97ab75aa3c58034ed4fc2dffd208
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73415083"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73612040"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune.
+
+### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Geplande wijziging: Nieuwe ervaring bij het inschrijven van toegewezen Android Enterprise-apparaten in Intune<!--5198878-->
+Met de release van Intune in november (1911) voegen we ondersteuning voor de implementatie van SCEP-apparaatcertificaten toe aan toegewezen Android Enterprise-apparaten om op certificaten gebaseerde toegang tot Wi-Fi-profielen mogelijk te maken. Deze verandering brengt ook enkele kleine wijzigingen met zich mee in de stroom bij het inschrijven van toegewezen Android Enterprise-apparaten.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Als u toegewezen Android Enterprise-apparaten in uw omgeving beheert, zult u in november enkele veranderingen gaan zien.
+
+- Nieuwe inschrijvingen van toegewezen Android Enterprise-apparaten: Eindgebruikers zien een andere reeks stappen op apparaten bij het inschrijven. De inschrijving start nog steeds zoals vandaag (met QR, NFC, Zero-touch of apparaat-id), maar na de servicerelease van november volgt er een verplichte stap voor app-installatie.
+- Voor bestaande Android-apparaten die zijn ingeschreven als toegewezen apparaten: Intune start met het automatisch installeren van de Microsoft Intune-app op apparaten vanaf begin november. U hoeft niets te doen. De app wordt automatisch gedownload en geïnstalleerd op apparaten. 
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
+Maak plannen voor het bijwerken van uw eindgebruikersbegeleiding en stel uw helpdesk op de hoogte van deze wijziging. Klik op Aanvullende informatie voor meer details en screenshots. De pagina Wat is er nieuw wordt bijgewerkt zodra het uitrollen van deze wijziging begint.
+
+#### <a name="additional-information"></a>Aanvullende informatie
+[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>Geplande wijziging: De instelling 'Logboekregistratie op de server voor Siri-opdrachten' wordt verwijderd van de Intune-console <!-- 5468501-->
 

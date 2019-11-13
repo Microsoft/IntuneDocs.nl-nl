@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.openlocfilehash: fae163cbcd97feb4f333d8ddfd44f2202dd343d6
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72810283"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627691"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>De Mobile Threat Defense-connector inschakelen in Intune
 
@@ -63,8 +63,8 @@ Als u klassiek beleid voor voorwaardelijke toegang wilt bekijken, gaat u in [Azu
 U kunt bepalen welke wisselopties voor Mobile Threat Defense moeten worden ingeschakeld in overeenstemming met de wensen van uw organisatie. Hier vindt u meer informatie:
 
 **Instellingen voor MDM-nalevingsbeleid**
-- **Android 4.1+-apparaten koppelen aan *\<MTD-partnernaam>***: wanneer u deze optie inschakelt, kunnen door Android 4.1+-apparaten beveiligingsrisico's worden gerapporteerd aan Intune.
-- ** iOS 8.0+-apparaten koppelen aan *\<MTD-partnernaam>***: wanneer u deze optie inschakelt, kunnen iOS 8.0+-apparaten beveiligingsrisico’s melden bij Intune.
+- **Android 4.1+-apparaten koppelen aan _\<MTD-partnernaam>_** : wanneer u deze optie inschakelt, kunnen door Android 4.1+-apparaten beveiligingsrisico's worden gerapporteerd aan Intune.
+- **iOS 8.0+-apparaten koppelen aan _\<MTD-partnernaam>_** : wanneer u deze optie inschakelt, kunnen iOS 8.0+-apparaten beveiligingsrisico’s melden bij Intune.
 - **Synchronisatie van app inschakelen voor iOS-apparaten**: hiermee staat u toe dat deze Mobile Threat Defense-partner metagegevens van iOS-toepassingen kan aanvragen bij Intune om te gebruiken voor bedreigingsanalyse.
 - **Niet-ondersteunde besturingssysteemversies blokkeren** : blokkeer het apparaat als hierop een besturingssysteem met een lagere versie wordt uitgevoerd dan de minimaal ondersteunde versie.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7517a2b60c4b5a893b90b09be72ddb363f23552a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d75e75dbce2563aaf31edede8eeab7249aad8e19
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509977"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801780"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 
@@ -36,6 +36,23 @@ Zorg ervoor dat, als u een werknemer of student bent, u de schermafbeeldingen en
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+
+## <a name="week-of-october-28-2019"></a>Week van 28 oktober 2019  
+
+### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Verbeterd ontwerp van de controlelijst in de bedrijfsportal-app voor Android <!-- 5550857 -->  
+De setup-controlelijst in de Bedrijfsportal-app voor Android is bijgewerkt met een lichtgewicht ontwerp en nieuwe pictogrammen. De veranderingen zijn in lijn met de recente updates voor de Bedrijfsportal-app voor iOS. Zie [Inschrijven met Android-werkprofiel](/intune-user-help/enroll-device-android-work-profile) en [Uw Android-apparaat inschrijven](/intune-user-help/enroll-device-android-company-portal) voor een overzicht van de bijgewerkte inschrijvingsstappen.  
+
+De volgende schermen tonen de bijgewerkte controlelijst voor inschrijving van Android-werkprofielen:
+
+|Bijgewerkt|Vorige|  
+|---|---|  
+|![Voorbeeldafbeelding van het instellen van een werkprofiel in Bedrijfsportal, waarin de vereenvoudigde controlelijst en nieuwe pictogrammen worden weergegeven.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![Voorbeeldafbeelding van het vorige scherm voor het instellen van een werkprofiel in Bedrijfsportal, waarin een drukkere controlelijst wordt weer gegeven.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
+
+De volgende schermen tonen de bijgewerkte controlelijst voor het instellen van Android-apparaatbeheer:  
+
+|Bijgewerkt|Vorige|  
+|---|---|  
+|![Voorbeeldafbeelding van het instellen van Android-apparaatbeheer in Bedrijfsportal, waarin de vereenvoudigde controlelijst en nieuwe pictogrammen worden weergegeven.](./media/whats-new-app-ui/android-checklist-1911.png)|![Voorbeeldafbeelding van het vorige scherm voor het instellen van Android-apparaatbeheer in Bedrijfsportal, waarin een drukkere controlelijst wordt weer gegeven.](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
 ## <a name="week-of-september-9-2019"></a>Week van 9 september 2019
 
@@ -572,6 +589,6 @@ Dit zijn de plannen voor manieren waarop we de gebruikerservaring gaan verbetere
 
 
 ## <a name="see-also"></a>Zie tevens
-* [Microsoft Intune-blog](http://go.microsoft.com/fwlink/?LinkID=273882)
+* [Microsoft Intune-blog](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap voor cloudplatform](https://www.microsoft.com/cloud-platform/roadmap)
-* [Wat is er nieuw in Intune?](../whats-new.md)
+* [Wat is er nieuw in Intune?](whats-new.md)

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d6fb5a703aad09592bfac3b5a16390389059d33
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: cf860056c3918f7ae90e6b9b850a98a37dcfd56e
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498025"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143210"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
@@ -139,7 +139,7 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
 
 ### <a name="step-4-configure-app-installation-details"></a>Stap 4: app-installatiegegevens configureren
 1. Selecteer in het deelvenster **App toevoegen** de optie **Programma** om de installatie- en verwijderopdrachten voor de app te configureren.
-2. Voeg de volledige installatieopdrachtregel toe om de app te installeren. 
+2. Als u de **Installatieopdracht** wilt configureren, voegt u de volledige opdrachtregel voor het installeren van de app toe. 
 
     Als de bestandsnaam van uw app bijvoorbeeld **MyApp123** is, voegt u het volgende toe:<br>
     `msiexec /p “MyApp123.msp”`<p>
@@ -148,9 +148,11 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
     In de bovenstaande opdracht biedt het `ApplicationName.exe`-pakket ondersteuning voor het opdrachtargument `/quiet`.<p> 
     Neem voor de specifieke argumenten die door het toepassingspakket worden ondersteund contact op met uw toepassingsleverancier.
 
-3. Voeg de volledige opdrachtregel voor verwijdering toe om de app te verwijderen op basis van de unieke id van de app. 
+3. Als u de **Opdracht voor verwijderen** wilt configureren, voegt u de volledige opdrachtregel voor het verwijderen van de app toe, op basis van de GUID van de app. 
 
     Bijvoorbeeld: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+4. Stel het **Installatiegedrag** in op **Systeem** of **Gebruiker**.
 
     > [!NOTE]
     > U kunt een Win32-app configureren voor installatie in een **gebruikers**- of **systeem**context. Een **gebruiker**scontext verwijst naar alleen een bepaalde gebruiker. Een **systeem**context verwijst naar alle gebruikers van een Windows 10-apparaat.
@@ -159,7 +161,13 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
     > 
     > Het installeren en verwijderen van de Win32-app wordt uitgevoerd met de beheerdersbevoegdheden (standaard) wanneer voor de app is ingesteld dat deze in de gebruikerscontext moet worden geïnstalleerd en de eindgebruiker op het apparaat beheerdersbevoegdheden heeft.
 
-4. Klik op **OK** wanneer u klaar bent.
+5. Selecteer een van de volgende opties om het **Gedrag voor opnieuw opstarten van apparaat** te configureren:
+    - **Bepaal gedrag op basis van retourcodes**: Kies deze optie om het apparaat opnieuw op te starten op basis van de configuratie-instellingen voor [retourcodes](~/apps/apps-win32-app-management.md#step-7-configure-app-return-codes).
+    - **Geen specifieke actie**: Kies deze optie om het opnieuw opstarten van het apparaat te onderdrukken tijdens de app-installatie van op MSI gebaseerde apps.
+    - **Na installatie van de app kan opnieuw opstarten van het apparaat worden afgedwongen**: Selecteer deze optie om de installatie van de app toe te staan zonder opnieuw opstarten te onderdrukken.
+    - **Via Intune wordt opnieuw opstarten van het apparaat afgedwongen**: Kies deze optie om het apparaat altijd opnieuw op te starten nadat de installatie van een app is voltooid.
+
+6. Klik op **OK** wanneer u klaar bent.
 
 ### <a name="step-5-configure-app-requirements"></a>Stap 5: de app-vereisten configureren
 
@@ -279,10 +287,11 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
     - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen.
     - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen.
 4. Selecteer **Opgenomen groepen** en wijs de groepen toe die deze app gaan gebruiken.
-5. Selecteer **OK** op het deelvenster **Toewijzen** de selectie te voltooien van de groepen die moeten worden opgenomen.
-6. Selecteer **Groepen uitsluiten** als u gebruikersgroepen wilt uitsluiten zodat ze niet worden beïnvloed door deze app-toewijzing.
-7. Selecteer **OK** in het deelvenster **Groep toevoegen**.
-8. Selecteer **Opslaan** in het deelvenster **Toewijzingen**.
+5. Selecteer in het deelvenster **Toewijzen** de optie om toe te wijzen op basis van gebruikers of apparaten. Wanneer u uw toewijzingen kiest, kunt u ook de **Ervaring voor eindgebruikers** kiezen. Met de **Ervaring voor eindgebruikers** kunt u **Meldingen van eindgebruiker**, **Respijtperiode voor opnieuw opstarten**, **Beschikbaarheid** en **Installatiedeadline** instellen. Zie **Beschikbaarheid en meldingen voor Win32-apps instellen**voor meer informatie.
+6. Selecteer **OK** om de selectie van de opgenomen groepen te voltooien.
+7. Selecteer **Groepen uitsluiten** als u gebruikersgroepen wilt uitsluiten zodat ze niet worden beïnvloed door deze app-toewijzing.
+8. Selecteer **OK** in het deelvenster **Groep toevoegen**.
+9. Selecteer **Opslaan** in het deelvenster **Toewijzingen**.
 
 U hebt nu de stappen voor het toevoegen van een Win32-app aan Intune voltooid. Zie [Apps toewijzen aan groepen met Microsoft Intune](apps-deploy.md) en [App-gegevens en -toewijzingen controleren met Microsoft Intune](apps-monitor.md) voor meer informatie over app-toewijzing en -controle.
 
@@ -328,6 +337,36 @@ De eindgebruiker ziet de pop-upmeldingen van Windows voor de vereiste en beschik
 De volgende afbeelding informeert de eindgebruiker dat er app-wijzigingen worden aangebracht aan het apparaat.
 
 ![Schermafbeelding die aan de gebruiker meldt dat er wijzigingen aan de app worden uitgevoerd](./media/apps-win32-app-management/apps-win32-app-09.png)    
+
+## <a name="set-win32-app-availability-and-notifications"></a>Beschikbaarheid en meldingen voor Win32-apps instellen
+U kunt de begintijd en deadline voor een Win32-app configureren. Bij de begintijd start de Intune-beheerextensie het downloaden van de app-inhoud en slaat deze op in de cache voor de vereiste intentie. De app wordt geïnstalleerd op het tijdstip van de deadline. Voor beschikbare apps bepaalt de begintijd wanneer de app wordt weergegeven in de Bedrijfsportal en wordt de inhoud gedownload wanneer de eindgebruiker de app vanuit de Bedrijfsportal aanvraagt. Daarnaast kunt u een respijtperiode voor opnieuw opstarten inschakelen. 
+
+Stel de app-beschikbaarheid in op basis van een datum en tijd voor een vereiste app door de volgende stappen uit te voeren:
+
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selecteer in de blade **Intune** de optie **Client-apps** > **Apps**.
+3. Selecteer een bestaande **Windows-app (Win32)** in de lijst. 
+4. Selecteer op de app-blade **Toewijzingen** > **Groep toevoegen**. 
+5. Stel het **Toewijzingstype** in op **Vereist**. De beschikbaarheid van apps kan worden ingesteld op basis van het toewijzingstype. Het **Toewijzingstype** kan **Vereist**, **Beschikbaar voor ingeschreven apparaten** of **Verwijderen** zijn.
+6. Selecteer **Opgenomen groepen** om te bepalen aan welke groep gebruikers de app wordt toegewezen. De blade **Toewijzen** wordt weergegeven.
+7. Stel **Deze app vereist maken voor alle gebruikers** in op **Ja**.
+
+    > [!NOTE]
+    > **Toewijzingstype**-opties bevatten de volgende:<br>
+    > - **Vereist**: U kunt ervoor kiezen om **deze app vereist te maken voor alle gebruikers** en/of **deze app vereist te maken op alle apparaten**.<br>
+    > - **Beschikbaar voor ingeschreven apparaten**: U kunt ervoor kiezen **deze app beschikbaar te maken voor alle gebruikers met ingeschreven apparaten**.<br>
+    > - **Verwijderen**: U kunt ervoor kiezen om ***deze app te verwijderen voor alle gebruikers** en/of **deze app te verwijderen van alle apparaten**.
+
+8. Als u de opties voor de**Ervaring van de eindgebruiker** wilt wijzigen, selecteert u **Bewerken**.
+9. Stel op de blade **Toewijzing bewerken** de **Meldingen van eindgebruiker** in op **Alle pop-upmeldingen weergeven**. U kunt **Meldingen van eindgebruiker** instellen op **Alle pop-upmeldingen weergeven**, **Pop-upmeldingen voor de computer opnieuw opstarten weergeven** of **Alle pop-upmeldingen verbergen**.
+10. Stel de **App-beschikbaarheid** in op **Een specifieke datum en tijd** en selecteer de datum en tijd. Deze datum en tijd geven aan wanneer de app wordt gedownload naar het apparaat van eindgebruikers. 
+11. Stel de **Deadline voor app-installatie** in op **Een specifieke datum en tijd** en selecteer de datum en tijd. Deze datum en tijd geven aan wanneer de app wordt geïnstalleerd op het apparaat van eindgebruikers. Wanneer meer dan één toewijzing wordt gemaakt voor dezelfde gebruiker of hetzelfde apparaat, wordt de deadline voor de installatie van de app gekozen op basis van de vroegst mogelijke tijd.
+12. Klik op **Ingeschakeld** naast de **Respijtperiode voor opnieuw opstarten**. De respijtperiode voor opnieuw opstarten gaat in zodra de installatie van de app op het apparaat is voltooid. Wanneer dit is uitgeschakeld, kan het apparaat zonder waarschuwing opnieuw opstarten. <br>U kunt de volgende opties aanpassen:
+    - **Respijtperiode voor opnieuw opstarten van apparaat (in minuten)** : De standaardwaarde is 1440 minuten (24 uur). Deze waarde kan maximaal 2 weken zijn.
+    - **Selecteer wanneer u het afteldialoogvenster voor opnieuw opstarten wilt weergeven voordat het opnieuw opstarten plaatsvindt (in minuten)** : De standaardwaarde is 15 minuten.
+    - **Gebruiker toestaan de melding voor opnieuw opstarten uit te stellen**: U kunt kiezen tussen **Ja** en **Nee**.
+        - **De uitstelduur (in minuten) selecteren**: De standaardwaarde is 240 minuten (4 uur). Het uitstel mag niet langer zijn dan de respijtperiode voor opnieuw opstarten.
+13. Klik op **OK** > **OK** > **OK** > **Opslaan** om de toewijzing toe te voegen.
 
 ## <a name="toast-notifications-for-win32-apps"></a>Toast-meldingen voor Win32-apps 
 Indien nodig, kunt u per app-toewijzing onderdrukken dat toast-meldingen voor eindgebruikers worden weergegeven. Selecteer vanuit Intune de optie **Client-apps** > **Apps** > selecteer de app > **Toewijzingen** > **Groepen opnemen**. 

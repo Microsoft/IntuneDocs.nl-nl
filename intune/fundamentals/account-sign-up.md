@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c3cf75c1b5d6984a7f922af8b969458b4e4336e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 78d38b72c9853a9eadaf71fcdff7567fc66d35ca
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509169"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414674"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Registreren of aanmelden bij Microsoft Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 In dit onderwerp wordt aan systeembeheerders uitgelegd hoe u zich kunt aanmelden voor een Intune-account.
 
@@ -46,14 +44,17 @@ Als u al een werk- of schoolaccount hebt **meld u dan aan** met dat account en v
 2. Op de Registratiepagina kunt u zich aanmelden of registreren om een nieuw abonnement van Intune te beheren.
 
 ## <a name="post-sign-up-considerations"></a>Overwegingen voor na uw registratie
+
 Nadat u zich hebt geregistreerd voor een nieuw abonnement, ontvangt u een e-mailbericht met gegevens over uw account op het e-mailadres dat u hebt opgegeven tijdens het registratieproces. In deze e-mail wordt bevestigd dat uw abonnement actief is.
 
 Wanneer het registratieproces is voltooid, wordt u omgeleid naar het Microsoft 365-beheercentrum waarin u gebruikers kunt toevoegen en hen licenties kunt toewijzen. Als u alleen cloudgebaseerde accounts hebt met de standaarddomeinnaam onmicrosoft.com, kunt u direct verder gaan om gebruikers toe te voegen en licenties toe te wijzen. Als u echter van plan bent de [aangepaste domeinnaam](custom-domain-name-configure.md) van uw organisatie te gebruiken of [gebruikersaccountgegevens](users-add.md#sync-active-directory-and-add-users-to-intune) vanuit on-premises Active Directory wilt synchroniseren, kunt u dat browservenster sluiten.
 
 ## <a name="sign-in-to-microsoft-intune"></a>Aanmelden bij Microsoft Intune
+
 Zodra u zich hebt aangemeld voor Intune, kunt u elk apparaat met een [ondersteunde browser](supported-devices-browsers.md#intune-supported-web-browsers) gebruiken om u aan te melden bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) om de service te beheren.
 
 Standaard moet uw account een van de volgende machtigingen hebben in Azure AD:
+
 - Hoofdbeheerder
 - Intune-servicebeheerder (ook wel bekend als Intune-beheerder)
 
@@ -76,4 +77,5 @@ Microsoft 365 Business: https://portal.microsoft.com/adminportal
 Beheer van mobiele apparaten van Office 365: https://portal.office.com/adminportal/home#/MifoDevices
 
 ## <a name="see-also"></a>Zie tevens
+
 [U kunt zich niet aanmelden bij Office 365, Azure of Intune](https://support.microsoft.com/help/2412085)

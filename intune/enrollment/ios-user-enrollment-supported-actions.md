@@ -18,16 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c802e76aab673aa6a9108dc0a14f553c26b96b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505417"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445303"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Intune-acties en -opties die worden ondersteund bij Apple-gebruikersinschrijving
 
 Gebruikersinschrijving ondersteunt een subset van apparaatbeheeropties. Als een bestaand configuratieprofiel wordt toegepast op een gebruikersinschrijvingsapparaat, worden alleen door gebruikersinschrijving ondersteunde instellingen toegepast op dat apparaat.
+
+> [!NOTE]
+> Ondersteuning voor het proces van Apple voor gebruikersinschrijving in Intune is momenteel als preview-versie beschikbaar.
 
 ## <a name="password-settings"></a>Wachtwoordinstellingen
 
@@ -97,6 +100,19 @@ De volgende opties worden niet ondersteund op apparaten die zijn ingeschreven vi
 - MDM-beheer van toepassingen buiten het beheerde APFS-volume.
 - Beveiligingsbeleid voor toepassingen is nog steeds van toepassing op deze apps. U kunt echter niet het beheer overnemen of een beheerde versie van deze apps implementeren, tenzij de gebruiker deze apps van het apparaat verwijdert.
 - Acties, configuraties, instellingen en opdrachten waarvoor toezicht is vereist. 
+
+## <a name="options-not-supported-in-preview"></a>Niet in de preview ondersteunde opties
+- Beperkingen voor in te schrijven apparaattypen voor het toestaan/blokkeren van persoonlijke apparaten 
+
+## <a name="known-issues-in-preview"></a>Bekende problemen in Preview
+- Intrekken van VPP-licentie: Er wordt geen melding weergegeven dat de licentie is ingetrokken. Het huidige gedrag is dat de intrekking slaagt, maar de eindgebruiker niet op de hoogte wordt gesteld. 
+- Rapportage van VPP-toepassingen: In het rapport op Client-apps> Apps> [App-naam]> Installatiestatus van apparaat, wordt VPP-toepassingen die op door gebruikers ingeschreven apparaten zijn geïmplementeerd, gerapporteerd als 'mislukt', zelfs wanneer de toepassing met succes op het apparaat is geïmplementeerd. 
+- Toepassingsrapportage: Voor app-typen die niet worden ondersteund door Gebruikersregistratie, kunnen rapporten irrelevante foutberichten bevatten. 
+- Bedrijfsportal-app: Gebruikers zien alle toepassingen die op hen zijn gericht, ongeacht of die toepassingstypen worden ondersteund voor door de gebruiker ingeschreven apparaten. 
+- Bedrijfsportal-app: Gebruikers zien dezelfde tekst die aangeeft wat organisaties wel en niet kunnen zien voor Gebruikersregistratie en Apparaatinschrijving.
+- Als een gebruiker tijdens de registratie "Mijn organisatie is eigenaar van dit apparaat" selecteert, wordt het apparaat binnen Intune nog steeds geïdentificeerd als Persoonlijk, tenzij dit wordt gewijzigd in de beheerconsole of via Graph. 
+- Inschrijvingsdoel: iPadOS wordt niet vermeld in de platformkiezer. iPadOS wordt ondersteund in de Preview, maar niet expliciet vermeld in de beheerconsole. 
+
 
 ## <a name="next-steps"></a>Volgende stappen
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b80b0dbd8128606db9220178baf0d05af1a3800
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498798"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635477"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Google Chrome configureren voor Android-apparaten met behulp van Intune 
 
@@ -46,7 +46,7 @@ U kunt Intune-configuratiebeleid voor apps gebruiken om Google Chrome te configu
 
 Zie [Beheerde Google Play Store-apps](~/apps/apps-add-android-for-work.md#managed-google-play-store-apps) voor aanvullende details over het toevoegen van een beheerde Google Play-app in Intune.
 
-## <a name="add-an-app-configuration-policy-for-managed-android-enterprise-devices"></a>App-configuratiebeleid toevoegen voor beheerde Android Enterprise-apparaten
+## <a name="add-app-configuration-for-managed-ae-devices"></a>App-configuratie voor beheerde AE-apparaten toevoegen
 
 1. Selecteer in het deelvenster [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) de opties **App-configuratiebeleid** > **Toevoegen**.
 2. Voeg uw beleidsnaam toe, kies onder Type apparaatinschrijving de optie **Beheerde apparaten**, en kies onder Platform de optie **Android**.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43c88366ea64182ccf8d45bc3e890a2579df20f1
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585641"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635371"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Overzicht van begeleide scenario's voor Intune 
 
@@ -46,7 +46,7 @@ Begeleide scenario's bieden specifieke functionaliteit. Hier volgt een uitleg ov
 
 ### <a name="launching"></a>Starten  
 
-Alle begeleide scenario's zijn beschikbaar via de **[portal voor apparaatbeheer](https://devicemanagement.microsoft.com)**  > **Probleemoplossing en Help** > **Begeleide scenario's**. 
+Alle begeleide scenario's zijn beschikbaar via de **[portal voor apparaatbeheer](https://devicemanagement.microsoft.com)**  > **Probleemoplossing en ondersteuning** > **Begeleide scenario's**. 
 
 Het begeleide scenario begint met een inleiding waarin wordt uitgelegd wat het doel is van het scenario en aan welke vereisten moet worden voldaan om de installatie te kunnen voltooien. Dit is het punt waarop wordt gecontroleerd of u met uw beheerdersmachtigingen de vereiste bevoegdheden hebt om het scenario te voltooien.  
 

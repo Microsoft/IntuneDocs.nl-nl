@@ -1,12 +1,12 @@
 ---
-title: Office 365-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
+title: Office 365-apps toevoegen aan Windows 10-apparaten met behulp van Microsoft Intune
 titleSuffix: ''
 description: Meer informatie over hoe u Microsoft Intune kunt gebruiken om Office 365-apps op Windows 10-apparaten te installeren.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35545d6c01e3acf7e54c3b932a4450c93f3dd4a9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507307"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635409"
 ---
-# <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-apps toewijzen aan Windows 10-apparaten met Microsoft Intune
+# <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-apps toevoegen aan Windows 10-apparaten met Microsoft Intune
 
 Voordat u apps kunt toewijzen, controleren, configureren of beveiligen, moet u ze aan Intune toevoegen. Een van de beschikbare [apptypen](apps-add.md#app-types-in-microsoft-intune) is Office 365-apps voor Windows 10-apparaten. Door dit apptype in Intune te selecteren, kunt u Office 365-apps toewijzen aan en installeren op door u beheerde apparaten waarop Windows 10 wordt uitgevoerd. U kunt ook apps toewijzen en installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Online Plan 2, mits u daar licenties voor hebt. De beschikbare Office 365-apps worden als één vermelding weergegeven in de lijst met apps in de Intune-console in Azure.
 
@@ -142,12 +142,60 @@ Als u de optie **XML-gegevens invoeren** in de vervolgkeuzelijst **Instellingsin
 
 ## <a name="finish-up"></a>Voltooien
 
-Als u klaar bent, selecteert u **Toevoegen** in het deelvenster **App toevoegen**. De app die u hebt gemaakt, wordt weergegeven in de lijst met apps.
+Als u klaar bent, selecteert u **Toevoegen** in het deelvenster **App toevoegen**. De app die u hebt gemaakt, wordt weergegeven in de lijst met apps. De volgende stap is het toewijzen van de apps aan de groepen van uw keuze. Zie [Apps aan groepen toewijzen](~/apps/apps-deploy.md) voor meer informatie.
+
+## <a name="deployment-details"></a>Implementatiedetails
+
+Nadat het implementatiebeleid van Intune is toegewezen aan de doelmachines via de [Office-configuratieserviceprovider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/office-csp), downloadt het eindapparaat automatisch het installatiepakket van de locatie *officecdn.microsoft.com*. U ziet twee nieuwe mappen in de map *Program Files*:
+
+![Office-installatiepakketten in de map Program Files](./media/apps-add-office365/office-folder.png)
+
+Onder de map *Microsoft Office* wordt een nieuwe map gemaakt waarin de installatiebestanden worden opgeslagen:
+
+![Nieuwe map gemaakt onder Microsoft Office-directory](./media/apps-add-office365/created-folder.png)
+
+Onder de map *Microsoft Office 15* worden de Klik-en-Klaar-opstartbestanden voor het installeren van Office opgeslagen. De installatie wordt automatisch gestart als het toewijzingstype vereist is:
+
+![Klik-en-Klaar-opstartbestanden voor installatie](./media/apps-add-office365/clicktorun-files.png)
+
+De installatie wordt uitgevoerd in de stille modus als de toewijzing van het O365-pakket is geconfigureerd als vereist. De gedownloade installatiebestanden worden verwijderd zodra de installatie is voltooid. Als de toewijzing is geconfigureerd als **Beschikbaar**, worden de Office-toepassingen weergegeven in de Bedrijfsportal-toepassing, zodat eindgebruikers de installatie handmatig kunnen starten.
 
 ## <a name="troubleshooting"></a>Probleemoplossing
 Intune gebruikt het [Office-implementatiehulpprogramma](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) om Office 365 ProPlus te downloaden en op uw clientcomputers te implementeren met de [Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks). Bekijk de best practices die worden vermeld in [Office 365-eindpunten beheren](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints), om ervoor te zorgen dat uw netwerkconfiguratie toestaat dat clients rechtstreeks toegang hebben tot CDN, in plaats van dat CDN-verkeer door centrale proxy's wordt geleid. Zo voorkomt u onnodige latentie.
 
 Voer de [Microsoft Ondersteunings- en herstelassistent voor Office 365](https://diagnostics.office.com) uit op een doelapparaat als u tijdens de installatie of uitvoering problemen ondervindt.
+
+### <a name="additional-troubleshooting-details"></a>Aanvullende gegeven voor het oplossen van problemen
+
+Als u de O365-apps niet op een apparaat kunt installeren, moet u vaststellen of het probleem verband houdt met Intune of met het besturingssysteem of Office. Als de twee mappen *Microsoft Office* en *Microsoft Office 15* worden weergegeven in de map *Program Files* map van het apparaat, kunt u bevestigen dat Intune de implementatie met succes heeft gestart. Als u de twee mappen niet ziet verschijnen onder *Program Files*, moet u de onderstaande gevallen bevestigen:
+
+- Het apparaat is goed ingeschreven bij Microsoft Intune. 
+- Er is een actieve netwerkverbinding met het apparaat. Als het apparaat zich in de vliegtuigmodus bevindt, is uitgeschakeld of zich op een locatie zonder service bevindt, wordt het beleid pas toegepast nadat de netwerkverbinding tot stand is gebracht.
+- Aan de netwerkvereisten voor zowel Intune als Office 365 is voldaan en de bijbehorende IP-bereiken zijn toegankelijk op basis van de volgende artikelen:
+
+  - [Netwerkconfiguratievereisten en bandbreedte voor Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
+  - [Office 365-URL's en IP-adresbereiken](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+
+- Het O365-app-pakket is toegewezen aan de juiste groepen. 
+
+Controleer bovendien de grootte van de directory *C:\Program Files\Microsoft Office\Updates\Download*. Het van de Intune-cloud gedownloade installatiepakket wordt opgeslagen op deze locatie. Als de grootte niet of erg langzaam toeneemt, is het raadzaam om de netwerkverbinding en bandbreedte te controleren.
+
+Wanneer u kunt concluderen dat zowel Intune als de netwerkinfrastructuur naar verwachting werken, moet u het probleem verder analyseren vanuit besturingssysteemperspectief. Houd rekening met de volgende voorwaarden:
+
+- Het doelapparaat moet werken met Windows 10-makersupdate of hoger.
+- Er zijn geen bestaande Office-apps geopend terwijl Intune de toepassingen implementeert.
+- Bestaande MSI-versies van Office zijn op de juiste wijze verwijderd van het apparaat. Intune maakt gebruik van Office Klik-en-klaar, dat niet compatibel is met Office MSI. Dit gedrag wordt verder beschreven in dit document:<br>
+  [Office op dezelfde computer geïnstalleerd met Klik-en-Klaar en met Windows Installer wordt niet ondersteund](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
+- De aanmeldingsgebruiker moet gemachtigd zijn om toepassingen op het apparaat te installeren.
+- Bevestig dat er geen problemen zijn op basis van de Windows-Logboeken **Windows-logboeken** -> **Toepassingen**.
+- Leg tijdens de installatie uitgebreide Office-installatielogboeken vast. Volg hiervoor de volgende stappen:<br>
+    1. Schakel uitgebreide logboekregistratie voor Office-installatie in op de doelcomputers. Hiervoor voert u de volgende opdracht uit om het register te wijzigen:<br>
+        `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
+    2. Implementeer het Office 365-pakket opnieuw op de doelapparaten.<br>
+    3. Wacht ongeveer 15 tot 20 minuten en ga naar de map **%temp%** en de map **%windir%\temp**, sorteer op **Gewijzigd op** en kies de *{machinenaam}-{tijdstempel}.log*-bestanden die zijn gewijzigd op basis van uw reproductietijdstip.<br>
+    4. Schakel de uitgebreide logboekregistratie weer uit met de volgende opdracht:<br>
+        `reg delete HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /f`<br>
+        De uitgebreide logboeken kunnen meer gedetailleerde informatie bieden over het installatieproces.
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>Fouten tijdens de installatie van het app-pakket
 

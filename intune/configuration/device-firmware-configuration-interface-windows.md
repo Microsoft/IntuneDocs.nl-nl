@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,19 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
+ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889578"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432523"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Device Firmware Configuration Interface-profielen gebruiken op Windows-apparaten in Microsoft Intune (openbare preview)
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-> [!Note]
-> De implementatie van elke [maandelijkse update](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) kan enkele dagen duren. Sommige functies worden gedurende een aantal weken geïmplementeerd en zijn mogelijk niet voor alle gebruikers onmiddellijk beschikbaar.
 
 Wanneer u Intune gebruikt om Autopilot-apparaten te beheren, kunt u met behulp van DFCI UEFI-instellingen (BIOS) beheren, nadat deze zijn opgegeven. Zie [Overzicht van DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/) voor een overzicht van voordelen, scenario's en vereisten.
 
@@ -45,7 +42,7 @@ Deze functie is van toepassing op:
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
-- De fabrikant van het apparaat moet DFCI hebben toegevoegd aan hun UEFI-firmware in het productieproces of als firmware-update die u installeert. Werk samen met de leveranciers van uw apparaten om te bepalen welke fabrikanten DFCI ondersteunen, of welke firmwareversie nodig is voor het gebruik van DFCI.
+- De fabrikant van het apparaat moet DFCI hebben toegevoegd aan hun UEFI-firmware in het productieproces of als firmware-update die u installeert. Werk samen met de leveranciers van uw apparaten om te bepalen [welke fabrikanten DFCI ondersteunen](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Scenarios/DfciScenarios/#oems-that-support-dfci), of welke firmwareversie nodig is voor het gebruik van DFCI.
 
 - Het apparaat moet voor Windows Autopilot zijn geregistreerd door een [Microsoft Cloud Solution Provider-partner (CSP)](https://partner.microsoft.com/cloud-solution-provider) of rechtstreeks door de OEM zijn geregistreerd. 
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507564"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592080"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Webtoegang beheren via een met Microsoft Intune-beleid beveiligde browser
 
@@ -179,7 +179,7 @@ Gebruik de bovenstaande procedure om een app-configuratie voor Microsoft Edge te
 > [!NOTE]
 > Zorg ervoor dat in het beleid voor app-beveiliging waarmee Microsoft Edge en de in de app-configuratie opgegeven gekoppelde apps worden beheerd, de volgende beleidsinstellingen voor gegevensbescherming zijn ingesteld:
 > - Organisatiegegevens naar andere apps verzenden: **Met beleid beheerde apps**
-> - Webinhoud delen via met beleid beheerde browsers: **Vereisen**
+> - Overdracht van webinhoud met andere apps beperken: **Door beleid beheerde browsers**
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>Application Proxy-instellingen configureren voor beveiligde browsers
 
