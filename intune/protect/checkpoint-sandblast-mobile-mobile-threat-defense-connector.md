@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c1d6620c120a3102803c84270ac1880c6904320
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c4cffafd4145ab536157ea55c732ac27bec29538
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504708"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801609"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense-connector met Intune
 
@@ -36,9 +36,6 @@ U kunt beleidsregels voor voorwaardelijke toegang configureren op basis van de C
 De Check Point SandBlast Mobile-app voor Android of iOS legt telemetriegegevens vast over het bestandssysteem, de netwerkstack, apparaten en apps waar dergelijke gegevens beschikbaar zijn. De app verzendt die gegevens vervolgens naar de Check Point SandBlast-cloudservice om te bepalen hoe groot het risico van bedreigingen is voor het mobiele apparaat.
 
 Het Intune-nalevingsbeleid voor apparaten bevat een regel voor Check Point SandBlast Mobile Threat Defense die is gebaseerd op de Check Point SandBlast-risicoanalyse. Als deze regel is ingeschakeld, controleert Intune of het apparaat voldoet aan het beleid dat u hebt ingeschakeld. Als het apparaat niet aan het beleid blijkt te voldoen, wordt de toegang van gebruikers tot resources als Exchange Online en SharePoint Online geblokkeerd. Gebruikers ontvangen ook richtlijnen van de Check Point SandBlast Mobile-app die op hun apparaat is geïnstalleerd, zodat ze het probleem kunnen oplossen en weer toegang kunnen krijgen tot bedrijfsresources.
-
-<!-- ## Sample scenarios 
-closing syntax for comment above is missing. Please insert closing syntax at intended location. -->
 
 Hier volgen enkele veelvoorkomende scenario's:
 

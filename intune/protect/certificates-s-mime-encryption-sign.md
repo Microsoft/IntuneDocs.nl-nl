@@ -2,8 +2,8 @@
 title: E-mails ondertekenen en versleutelen met S/MIME - Microsoft Intune - Azure | Microsoft Docs
 description: Ontdek hoe u digitale e-mailcertificaten gebruikt in Microsoft Intune voor het ondertekenen en versleutelen van e-mails op apparaten. Deze certificaten heten S/MIME en worden geconfigureerd aan de hand van apparaatconfiguratieprofielen. Voor handtekening- en versleutelingscertificaten wordt gebruikgemaakt van PKCS (privécertificaten) en van een connector voor het importeren van certificaten.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b16953b3402bf8aa48f0a01e5e11d9f90d56f2d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: adea17c0e013d922c0bc3ccf06ed590828bd79dd
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502506"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801494"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>S/MIME-overzicht voor het ondertekenen en versleutelen van e-mails in Intune
 
