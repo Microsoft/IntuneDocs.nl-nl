@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: e9fe2b2174252aa1081eb311d79b4b5ba37f96f2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432523"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755343"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Device Firmware Configuration Interface-profielen gebruiken op Windows-apparaten in Microsoft Intune (openbare preview)
 
@@ -77,8 +77,8 @@ Met dit profiel zorgt u ervoor dat apparaten worden gecontroleerd en ingeschakel
 
 Dit profiel bevat de DFCI-instellingen die u configureert.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 3. Voer de volgende eigenschappen in:
 
     - **Naam**: Voer een beschrijvende naam in voor het profiel. Geef uw beleid een naam zodat u het later eenvoudig kunt identificeren. Een goede profielnaam is bijvoorbeeld **Windows: Configureer DFCI-instellingen op Windows-apparaten**.
@@ -127,9 +127,11 @@ Dit profiel bevat de DFCI-instellingen die u configureert.
 
 Nadat de profiel zijn gemaakt, zijn deze [klaar om te worden toegewezen](../configuration/device-profile-assign.md). Zorg ervoor dat u de profielen toewijst aan uw Azure AD-beveiligingsgroepen die uw DFCI-apparaten bevatten.
 
-De volgende keer dat het apparaat wordt gesynchroniseerd of het apparaat opnieuw wordt opgestart, worden de DFCI-profielinstellingen toegepast. Nadat het beleid is toegepast, start u het apparaat opnieuw op.
+Wanneer Windows Autopilot op het apparaat wordt uitgevoerd, kan het door de DFCI geforceerd opnieuw worden opgestart op de inschrijvingsstatuspagina. Tijdens de eerste keer dat de computer opnieuw wordt opgestart, wordt de UEFI ingeschreven bij Intune. 
 
-Wanneer de Windows-apparaatinstallatie op het apparaat wordt uitgevoerd, kan het door de DFCI geforceerd opnieuw worden opgestart op de inschrijvingsstatuspagina. Nadat de installatie is voltooid, kunt u controleren of de DFCI-instellingen actief zijn door het apparaat opnieuw op te starten. Gebruik vervolgens de instructies van de fabrikant van het apparaat om het UEFI-menu te openen.
+Als u wilt bevestigen dat het apparaat is ingeschreven, kunt u het apparaat opnieuw opstarten, maar dit is niet vereist. Gebruik vervolgens de instructies van de fabrikant van het apparaat om het UEFI-menu te openen en controleer of de UEFI nu wordt beheerd.
+
+De volgende keer dat het apparaat wordt gesynchroniseerd met Intune, ontvangt Windows de DFCI-instellingen. Start het apparaat opnieuw. Deze derde keer opnieuw opstarten is vereist om de UEFI de DFCI-instellingen van Windows te laten ontvangen.
 
 ## <a name="update-existing-dfci-settings"></a>Bestaande DFCI-instellingen bijwerken
 
@@ -156,7 +158,7 @@ Nadat u het apparaat hebt gewist, verplaatst u het apparaat naar de groep waaraa
 
 Wanneer u klaar bent om het apparaat buiten gebruik te stellen en het uit te sluiten van beheer, werkt u het DFCI-profiel bij naar de UEFI-instellingen die u in de afsluitstatus wilt hebben. Normaal gesproken wilt u dat alle instellingen zijn ingeschakeld. Bijvoorbeeld:
 
-1. Open uw DFCI-profiel (**Apparaatconfiguratie** > **Profielen**).
+1. Open uw DFCI-profiel (**Apparaten** > **Configuratieprofielen**).
 2. Wijzig de instelling **Lokale gebruiker toestaan om de instellingen van UEFI (BIOS) te wijzigen** in **Alleen niet geconfigureerde instellingen**.
 3. Stel alle andere instellingen in op **Niet geconfigureerd**.
 4. Sla uw wijzigingen op.

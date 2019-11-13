@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635477"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801670"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Google Chrome configureren voor Android-apparaten met behulp van Intune 
 
@@ -63,7 +63,7 @@ Zie [Beheerde Google Play Store-apps](~/apps/apps-add-android-for-work.md#manage
 
     Hieronder ziet u het voorbeeld van de algemene instellingen:
     - **Toegang tot een lijst met URL's blokkeren**: `["*"]`
-    - **Toegang tot een lijst met URL's toestaan**: `["baidu.com", "yahoo.com", "chrome://*"]`
+    - **Toegang tot een lijst met URL's toestaan**: `["baidu.com", "youtube.com", "chromium.org", "chrome://*"]`
     - **Beheerde bladwijzers**: `[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
     - **Beschikbaarheid van Incognito-modus**: `Incognito mode disabled`
 
@@ -71,7 +71,7 @@ Zie [Beheerde Google Play Store-apps](~/apps/apps-add-android-for-work.md#manage
 
     ![Algemene instellingen](~/apps/media/apps-configure-chrome-android/common-settings.png)
 
-    Met de bovenstaande instellingen maakt u bladwijzers en kunt u toegang tot alle websites toestaan, behalve `baidu.com`, `yahoo.com` en `chrome://`.
+    Met de bovenstaande instellingen maakt u bladwijzers en kunt u toegang tot alle URL's blokkeren, behalve `baidu.com`, `yahoo.com`, `chromium.org` en `chrome://`.
 
 5. Klik op **OK** en **Toevoegen** om uw configuratiebeleid toe te voegen aan Intune.
 6. Wijs dit configuratiebeleid toe aan een gebruikersgroep. Zie [Apps aan groepen toewijzen met Microsoft Intune](~/apps/apps-deploy.md) voor meer informatie. 

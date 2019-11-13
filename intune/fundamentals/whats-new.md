@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac6da1b15d482d20340163b0bb79e88d74e8e375
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
+ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635341"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73882496"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -53,12 +53,20 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [belangri
 ### Role-based access control
 -->  
 
+## <a name="week-of-november-4-2019"></a>Week van 4 november 2019
+
+### <a name="device-security"></a>Apparaatbeveiliging
+
+#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>Beveiligingsbasislijnen worden ondersteund op Microsoft Azure Government<!-- 4062552 -->
+
+In exemplaren van Intune die worden gehost op *Microsoft Azure Government* kunt u nu [beveiligingsbasislijnen](../protect/security-baselines.md) gebruiken om uw gebruikers en apparaten te beveiligen en beschermen.
+
 ## <a name="week-of-october-28-2019"></a>Week van 28 oktober 2019
 
 ### <a name="app-management"></a>Appbeheer
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>Verbeterd ontwerp van de controlelijst in de bedrijfsportal-app voor Android<!-- 5550857 -->  
-De setup-controlelijst in de Bedrijfsportal-app voor Android is bijgewerkt met een lichtgewicht ontwerp en nieuwe pictogrammen. De veranderingen zijn in lijn met de recente updates voor de Bedrijfsportal-app voor iOS. Deze app-updates worden momenteel geïmplementeerd voor alle klanten. We verwachten dat dit proces eind volgende week is voltooid. In [Wat is er nieuw in de gebruikersinterface van de app ](whats-new-app-ui.md) kunt u de oude en nieuwe versie naast elkaar zien. Zie [Inschrijven met Android-werkprofiel](/intune-user-help/enroll-device-android-work-profile) en [Uw Android-apparaat inschrijven](/intune-user-help/enroll-device-android-company-portal) voor een overzicht van de bijgewerkte inschrijvingsstappen.  
+De setup-controlelijst in de Bedrijfsportal-app voor Android is bijgewerkt met een lichtgewicht ontwerp en nieuwe pictogrammen. De veranderingen zijn in lijn met de recente updates voor de Bedrijfsportal-app voor iOS. In [Wat is er nieuw in de gebruikersinterface van de app ](whats-new-app-ui.md) kunt u de oude en nieuwe versie naast elkaar zien. Zie [Inschrijven met Android-werkprofiel](/intune-user-help/enroll-device-android-work-profile) en [Uw Android-apparaat inschrijven](/intune-user-help/enroll-device-android-company-portal) voor een overzicht van de bijgewerkte inschrijvingsstappen.  
 
 #### <a name="win32-apps-on-windows-10-s-mode-devices---3747604---"></a>Win32-apps op Windows 10 S-modusapparaten<!-- 3747604 --> 
 U kunt Win32-apps installeren en uitvoeren op beheerde apparaten met Windows 10 S-modus. Hiervoor kunt u een of meer aanvullende beleidsregels maken voor de Windows S-modus met behulp van de PowerShell-hulpprogramma's van Windows Defender Application Control (WDAC). Onderteken het aanvullende beleid met de Device Guard Signing-ondertekeningsportal en upload en distribueer het beleid vervolgens via Intune. In Intune vindt u deze mogelijkheid door **Client-apps** > **Aanvullend beleid voor Windows 10 S** te selecteren. Zie [Win32-apps inschakelen op S-modusapparaten](~/apps/apps-win32-s-mode.md) voor meer informatie.
