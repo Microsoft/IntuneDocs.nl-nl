@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e2f654d9e505afba00a1a9090febe4c06ca77ff
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: 454d23038a593829ea8a14929dc435e9f9ddb457
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445347"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709482"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -49,7 +49,7 @@ Raadpleeg voor meer informatie 'De PowerShell-cmdlet begrijpen'.
 
 U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren met de bijbehorende informatie.
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > **Importeren**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > **Importeren**.
 
     ![Schermafbeelding van Windows Autopilot-apparaten](./media/enrollment-autopilot/autopilot-import-device.png)
 
@@ -71,7 +71,7 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
 
 ## <a name="create-an-autopilot-device-group"></a>Een Autopilot-apparaatgroep maken
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Groepen** > **Nieuwe groep**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Groepen** > **Nieuwe groep**.
 2. Op de blade **Groep**:
     1. Als **groepstype** kiest u **Beveiliging**.
     2. Geef een **groepsnaam** en een **beschrijving** voor de groep op.
@@ -88,7 +88,7 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Een Autopilot-implementatieprofiel maken
 Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren. U kunt maximaal 350 profielen per tenant maken.
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaatprofielen** > **Profiel maken**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Implementatieprofielen** > **Profiel maken**.
 2. Geef op de pagina **Basisinformatie** een waarde op voor **Naam** en eventueel ook voor **Beschrijving**.
 
     ![Schermopname van de pagina Basisinformatie](./media/enrollment-autopilot/create-profile-basics.png)
@@ -134,7 +134,7 @@ Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren. U
 ## <a name="edit-an-autopilot-deployment-profile"></a>Een Windows Autopilot-implementatieprofiel bewerken
 Nadat u een Autopilot-implementatieprofiel hebt gemaakt, kunt u bepaalde delen ervan bewerken.   
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving**.
 2. Onder **Windows-inschrijving** in het gedeelte **Windows Autopilot** kiest u **Implementatieprofielen**.
 3. Selecteer het profiel dat u wilt bewerken.
 4. Klik links op **Eigenschappen** om de naam of beschrijving van het implementatieprofiel te wijzigen. Klik op **Opslaan** wanneer u klaar bent met het aanbrengen van wijzigingen.
@@ -155,7 +155,7 @@ U kunt een gebruiker toewijzen aan een specifiek Autopilot-apparaat. Deze toewij
 
 Vereisten: de Azure Active Directory-bedrijfsportal is geconfigureerd en Windows 10 versie 1809 of hoger is geïnstalleerd.
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > kies het apparaat > **Gebruiker toewijzen**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > kies het apparaat > **Gebruiker toewijzen**.
 
     ![Schermafbeelding van Gebruiker toewijzen](./media/enrollment-autopilot/assign-user.png)
 
