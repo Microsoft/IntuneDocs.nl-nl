@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 11/13/2018
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ab16d79549a7fe7b0249c0c4af79ed56817ecec
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d8fd53e9d12dd38639d204e214aea03d733e584b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510042"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059203"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Het beheer van Windows-pc's als computers of mobiele apparaten vergelijken
 
@@ -42,8 +42,8 @@ Organisaties kunnen Microsoft Intune gebruiken voor het beheren van Windows-pc's
 |**Beheer van software-updates**| Windows-updates en updates voor Microsoft-apps<br>[Windows-pc's up-to-date houden met software-updates](../keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)|Microsoft Store voor Bedrijven voor Windows 10-updates en updates voor Microsoft-apps<br> [Instellingen voor Windows Update voor bedrijven configureren](../protect/windows-update-for-business-configure.md) |
 |**Softwarelicentiebeheer**|Beschikbaar <br>[Licentieovereenkomsten voor Windows-pc-software beheren](../manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)|Microsoft Store voor Bedrijven (alleen .appx-apps)<br>[Apps beheren die zijn aangeschaft in Microsoft Store voor Bedrijven](../apps/windows-store-for-business.md)|
 |**Inventaris**|Beschikbaar <br>[Hardware- en software-inventaris voor Windows-pc's weergeven](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|Beschikbaar <br>[App-gegevens controleren](../apps/apps-monitor.md)<br>[Wat is apparaatbeheer](../remote-actions/device-management.md)|
-|**Windows-firewallbeleid**|Beschikbaar <br>[Windows-pc's beschermen met Windows Firewall-beleid](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Beschikbaar <br>[Windows Defender Firewall](../protect/endpoint-protection-windows-10.md#windows-defender-firewall)|
-|**Antimalwarebeveiliging**|Endpoint Protection<br>[Voor een betere beveiliging van Windows-pc's zorgen met Endpoint Protection](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[Windows Defender inschakelen](../protect/advanced-threat-protection.md)|
+|**Windows-firewallbeleid**|Beschikbaar <br>[Windows-pc's beschermen met Windows Firewall-beleid](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Beschikbaar <br>[Micro soft Defender firewall](../protect/endpoint-protection-windows-10.md#microsoft-defender-firewall)|
+|**Antimalwarebeveiliging**|Endpoint Protection<br>[Voor een betere beveiliging van Windows-pc's zorgen met Endpoint Protection](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Microsoft Defender<br>[Micro soft Defender inschakelen](../protect/advanced-threat-protection.md)|
 |**Hulp op afstand** |TeamViewer<br>[Hulp op afstand voor Windows-pc's aanvragen en bieden](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [TeamViewer gebruiken voor het extern beheren van Intune-apparaten](../remote-actions/teamviewer-support.md) |
 |**App-implementatie** | Niet beschikbaar voor Microsoft Store voor Bedrijven,<br>alleen .exe, .appx, en .msi die uit meerdere bestanden bestaat<br>[Apps toevoegen voor Windows-pc's met de Intune-softwareclient ](add-apps-for-windows-pcs-in-microsoft-intune.md)|Beschikbaar voor Microsoft Store-apps en Line-Of-Business-apps<br>[Windows Store-apps toevoegen](../apps/store-apps-windows.md)<br>[Windows-Line-Of-Business (LOB)-apps toevoegen](../apps/lob-apps-windows.md)|
 |**App-beveiliging**|Niet beschikbaar|Beschikbaar <br>[Wat zijn beleidsregels voor de beveiliging van apps?](../apps/app-protection-policy.md)|

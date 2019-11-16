@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8cb6976121f4c5a9ce755e8feb189ea007e7ffd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 80fd2d54a99bc3f4ab47f48f94eb14aa1a7f630c
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506127"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126193"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Apps op uw apparaat installeren en delen
 
@@ -41,7 +41,7 @@ Installeer apps op uw apparaat vanuit de bedrijfsportal-app voor Windows.
     * **Alles weergeven**: klik in de sectie **Startpagina** > **Apps** op **Alles weergeven** om alle beschikbare apps weer te geven.  
     * **Alle apps**: selecteer deze pagina in het navigatiedeelvenster om alle beschikbare apps te zien, inclusief apps die zijn geïnstalleerd en aanbevolen. De apps weer geven, sorteren en filteren. Zoekresultaten worden automatisch op relevantie gesorteerd.  
     * **App-Categorieën**: Selecteer deze pagina in het navigatie deel venster om apps te kiezen op basis van type of functie. Apps worden gesorteerd onder Categorieën, zoals **Aanbevolen**, **onderwijs**en **productiviteit**.  
-    * **Apps zoeken**: een statische zoekbalk bevindt zich in het navigatiedeelvenster van de app.  Als u de beschikbare apps wilt vinden, zoekt u op de app-naam of uitgever.  
+    * **Apps zoeken**: een statische zoekbalk bevindt zich in het navigatiedeelvenster van de app. Als u de beschikbare apps wilt vinden, zoekt u op de app-naam of uitgever.  
 
 3. Selecteer een app.   
 4. Klik op de pagina met app-gegevens op **Installeren**. Nadat de installatie is voltooid, ziet u de status **Geïnstalleerd**.  
@@ -69,10 +69,10 @@ U kunt apps delen met en aanbevelen aan contactpersonen van uw werk of school. I
 
 Nadat u iets hebt gedeeld, krijgt de ontvanger een koppeling en een bericht om de details van de app weer te geven. Met de koppeling wordt de bedrijfsportalpagina **Appdetails** geopend. 
 
-## <a name="available-and-required-apps"></a>Beschik bare en vereiste apps
-Apps worden aan u toegewezen door uw organisatie en worden in Bedrijfsportal aangeduid als **beschikbaar** of **vereist**. 
+## <a name="optional-and-required-apps"></a>Optionele en vereiste apps
+Apps worden door uw organisatie aan u toegewezen. Uw organisatie vereist dat u enkele apps hebt en andere apps optioneel maakt. Als u wilt weten welke apps zijn vereist versus optioneel, gaat u naar **geïnstalleerde apps** en kijkt u onder de kolom **die wordt vereist door uw organisatie**.  
 
-* Beschik bare apps: deze apps zijn door uw organisatie geselecteerd en zijn geschikt en nuttig voor werk of school. Ze zijn optioneel voor installatie en zijn de enige apps die u in de Bedrijfsportal kunt installeren. 
+* Optionele apps: deze apps zijn door uw organisatie geselecteerd en zijn geschikt en nuttig voor werk of school. Ze worden voor u beschikbaar gesteld, maar het is aan u of u deze wilt installeren. Dit zijn de enige soorten apps die u in de Bedrijfsportal zult vinden om te installeren. 
 
 * Vereiste apps: deze apps zijn nodig voor werk en school en worden rechtstreeks op uw apparaat geïmplementeerd. Deze apps worden automatisch voor u geïnstalleerd zonder tussen komst. 
 
@@ -86,15 +86,13 @@ Als er een app is die u nodig hebt, maar die niet wordt weergegeven in de bedrij
 ## <a name="view-installed-apps"></a>Geïnstalleerde apps weer geven  
 Een lijst weer geven met alle apps die op het apparaat zijn geïnstalleerd. Op de pagina **geïnstalleerde apps** worden de volgende details over elke app weer gegeven:
 
-* Naam: de naam van de app. Beschik bare apps bevatten een koppeling naar de pagina met details van de **app** .
+* Naam: de naam van de app. Optionele apps bevatten een koppeling naar de pagina met details van de **app** .
 * Toewijzings type: hoe de app wordt toegewezen en beschikbaar wordt gesteld aan u. 
 * Uitgever: de naam van de ontwikkelaar of het bedrijf dat de app heeft gedistribueerd. Een uitgever is doorgaans een software leverancier of uw organisatie.  
 * Publicatie datum: de datum waarop de app beschikbaar is gesteld om te worden gedownload. Publicatie datum kan de initiële release van een app of de meest recente update van de app tonen.
 * Status: de huidige installatie status van de app op het apparaat. Apps kunnen worden weer gegeven als installatie, installatie en installatie mislukt. Het kan tot tien minuten duren voordat de vereiste apps een actuele status hebben. Zie de opmerking onder [apps installeren](#install-apps) voor belang rijke informatie over het installeren van een vereiste app. 
 
-Als u naar deze pagina wilt gaan, gaat u naar het navigatie menu en selecteert u **geïnstalleerde apps**. 
-
-  ![Voorbeeld van een schermafbeelding van de pagina met geïnstalleerde apps in de bedrijfsportal-app voor Windows 10. ](./media/installed-apps-cp-1906.png)  
+Als u naar deze pagina wilt gaan, gaat u naar het navigatie menu en selecteert u **geïnstalleerde apps**.  
 
 
 Gebruik **sorteren op** om het toewijzings type van de apps, uitgever, alfabetisch op naam of chronologisch op publicatie datum te rangschikken. Gebruik **filter door** om de apps te beperken die u ziet met de installatie status.  Als er geen apps beschikbaar zijn, wordt er een bericht weer gegeven dat er geen bedrijfs-apps zijn geïnstalleerd.  

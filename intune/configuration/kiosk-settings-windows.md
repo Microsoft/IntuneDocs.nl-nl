@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17dce8f7c5aa55a2044e663f724a5784cee8b375
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506681"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059349"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Instellingen voor apparaten met Windows 10 en hoger om ze als kiosk uit te voeren via Intune
 
@@ -40,6 +40,8 @@ Zie voor meer informatie over de Windows-kioskfunctie in Intune [Configure kiosk
 
   1. Maak dit kioskprofiel om het apparaat in de kioskmodus uit te voeren.
   2. Maak het [apparaatbeperkingsprofiel](device-restrictions-windows-10.md#microsoft-edge-browser) en configureer specifieke functies en instellingen die zijn toegestaan in Microsoft Edge.
+
+- Zorg ervoor dat alle bestanden, scripts en snelkoppelingen zich op het lokale systeem bevinden. Zie voor meer informatie, waaronder andere Windows-vereisten, [aanpassen en de indeling](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)voor het exporteren van een start.
 
 > [!IMPORTANT]
 > Zorg ervoor dat u dit kioskprofiel toewijst aan de dezelfde apparaten als uw [Microsoft Edge-profiel](device-restrictions-windows-10.md#microsoft-edge-browser).
@@ -194,3 +196,5 @@ Apps in deze modus zijn beschikbaar in het startmenu. Deze apps zijn de enige ap
 [Het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
 U kunt ook kiosk-profielen maken voor apparaten met [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) en [Windows Holographic for Business](kiosk-settings-holographic.md).
+
+Zie ook [een kiosk met één app instellen](https://docs.microsoft.com/windows/configuration/kiosk-single-app) of [een kiosk voor meerdere apps instellen](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps) in de Windows-richt lijnen.

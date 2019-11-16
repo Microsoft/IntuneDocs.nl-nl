@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709740"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984124"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Met instellingen voor iOS- en iPadOS-apparaten kunt u functies toestaan of beperken met behulp van Intune
 
@@ -447,11 +447,20 @@ Ga op een van de volgende manieren te werk om apps toe te voegen:
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatregistratie, automatische registratie van apparaten (onder Super visie)
 
+Opmerking vereist voor gegevensroaming (tip of belang rijke opmerking voor meer informatie over de Verwar ring van klanten): deze instelling wordt niet weer gegeven op het beheer Profiel van het doel apparaat. Dat komt doordat deze instelling wordt behandeld als een actie voor een extern apparaat en elke keer dat de status van dataroaming op het apparaat wordt gewijzigd, de intune-service weer wordt geblokkeerd. Hoewel het zich niet in het beheer profiel bevindt, werkt het samen als het wordt weer gegeven als een succes van de rapportage in de beheer console. 
 - **Dataroaming**: kies **Blokkeren** om dataroaming via het mobiele netwerk te voorkomen. **Niet geconfigureerd** (standaard): staat dataroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.
+
+  > [!IMPORTANT]
+  > Deze instelling wordt behandeld als een actie op een extern apparaat. Deze instelling wordt dus niet weer gegeven in het beheer profiel op het apparaat. Telkens wanneer de status van de gegevens roaming op het apparaat wordt gewijzigd, wordt **gegevensroaming** geblokkeerd door de intune-service. Als in intune een succes wordt weer gegeven in de rapportage status, weet u zeker dat het werkt, zelfs als de instelling niet wordt weer gegeven in het beheer profiel op het apparaat.
+
 - **Wereldwijd ophalen op achtergrond tijdens roaming**: **Blokkeren** voorkomt het gebruik van de functie Wereldwijd ophalen op achtergrond tijdens roaming via het mobiele netwerk. **Niet geconfigureerd** (standaard): staat het apparaat toe om gegevens zoals e-mail op te halen tijdens roaming op een mobiel netwerk.
 - **Nummer inspreken**: kies **Blokkeren** om te voorkomen dat gebruikers de functie Nummer inspreken op het apparaat gebruiken. **Niet geconfigureerd** (standaard): hiermee wordt Nummer inspreken toegestaan op het apparaat.
 - **Spraakroaming**: kies **Blokkeren** om spraakroaming via het mobiele netwerk te voorkomen. **Niet geconfigureerd** (standaard): staat spraakroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.
 - **Persoonlijke Hotspot**: Met **Blokkeren** schakelt u de persoonlijke hotspot op apparaten van de gebruikers uit bij elke apparaatsynchronisatie. Mogelijk is deze instelling niet compatibel met bepaalde providers. Met **Niet geconfigureerd** (standaard) blijft de configuratie van de persoonlijke hotspot behouden als de standaardwaarde die is ingesteld door de gebruiker.
+
+  > [!IMPORTANT]
+  > Deze instelling wordt behandeld als een actie op een extern apparaat. Deze instelling wordt dus niet weer gegeven in het beheer profiel op het apparaat. Telkens wanneer de status van de persoonlijke hotspot op het apparaat wordt gewijzigd, wordt de **persoonlijke hotspot** geblokkeerd door de intune-service. Als in intune een succes wordt weer gegeven in de rapportage status, weet u zeker dat het werkt, zelfs als de instelling niet wordt weer gegeven in het beheer profiel op het apparaat.
+
 - **Regels voor mobiel gebruik (alleen beheerde apps)** : definieer de gegevenstypen die beheerde apps kunnen gebruiken die zijn verbonden met een mobiel netwerk. Uw opties zijn:
   - **Gebruik van mobiel dataverkeer blokkeren**: u kunt het gebruik van mobiel dataverkeer blokkeren voor **Alle beheerde apps** of u kunt **Specifieke apps kiezen**.
   - **Gebruik van mobiel dataverkeer tijdens roaming blokkeren**: u kunt het gebruik van mobiel dataverkeer tijdens roaming blokkeren voor **Alle beheerde apps** of u kunt **Specifieke apps kiezen**.
