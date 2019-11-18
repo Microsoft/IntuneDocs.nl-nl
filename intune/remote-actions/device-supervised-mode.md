@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99f27992009332a2a5fae0768225d8c69d3ac5ad
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509411"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713435"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>Supervisiemodus voor iOS inschakelen
 
@@ -37,7 +37,7 @@ Zie [Informatie over payloadinstellingen](http://help.apple.com/configurator/mac
 
 ## <a name="turn-on-supervised-mode-during-enrollment"></a>De supervisiemodus inschakelen tijdens de inschrijving
 
-In Intune kunt u de supervisiemodus voor apparaten inschakelen wanneer u [een Apple-inschrijvingsprofiel maakt in DEP](../enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile). Schakel onder **Instellingen voor apparaatbeheer** het selectievakje **Onder supervisie** in.
+In het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) kunt u de supervisiemodus voor apparaten inschakelen wanneer u [een Apple-inschrijvingsprofiel maakt in DEP](../enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile). Schakel onder **Instellingen voor apparaatbeheer** het selectievakje **Onder supervisie** in.
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>De supervisiemodus inschakelen na de inschrijving
 

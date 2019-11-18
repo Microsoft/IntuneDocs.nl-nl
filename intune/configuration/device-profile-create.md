@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97227d5ca75b3584cb4e603a16601b2a22deb919
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 51ec328a60ef2737c776bf6cf5d4b8dc1b32460c
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681461"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755310"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Een apparaatprofiel maken in Microsoft Intune
 
@@ -39,16 +39,16 @@ Dit artikel:
 
 ## <a name="create-the-profile"></a>Het profiel maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecteer **Apparaatconfiguratie**. U hebt de volgende opties:
+2. Selecteer **Apparaten** > **Configuratieprofielen**. U hebt de volgende opties:
 
     - **Overzicht**: geeft de status van uw profielen weer en biedt aanvullende details over de profielen die u aan gebruikers en apparaten hebt toegewezen.
     - **Beheren**: maak apparaatprofielen en upload aangepaste [PowerShell-scripts](../apps/intune-management-extension.md) die binnen het profiel worden uitgevoerd, en voeg met [eSIM](esim-device-configuration.md) gegevensplannen toe aan apparaten.
     - **Bewaken**: controleer de status van een profiel op slagen of falen, en bekijk ook logboeken over uw profielen.
     - **Configureren**: voeg een certificeringsinstantie (SCEP of PFX) toe of schakel [Telecom-onkostenbeheer](telecom-expenses-monitor.md) aan het profiel toe.
 
-3. Selecteer **Profielen** > **Profiel maken**. Voer de volgende eigenschappen in:
+3. Selecteer **Profiel maken**. Voer de volgende eigenschappen in:
 
    - **Naam**: Voer een beschrijvende naam in voor het profiel. Geef uw profielen een naam zodat u ze later eenvoudig kunt identificeren. Een goede profielnaam is bijvoorbeeld **WP-e-mailprofiel voor hele bedrijf**.
    - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.

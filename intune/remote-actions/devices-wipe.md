@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc50d275a3d3e6a613640e96b363ce7608da81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508564"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712198"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Apparaten verwijderen via wissen of buiten gebruik stellen, of de registratie van het apparaat handmatig ongedaan maken
 
@@ -53,7 +53,7 @@ Wissen is nuttig wanneer u een apparaat opnieuw wilt instellen voordat u het aan
 
 ### <a name="wiping-a-device"></a>Een apparaat wissen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecteer **Apparaten** > **Alle apparaten**.
 4. Selecteer de naam van het apparaat dat u wilt wissen.
 5. Selecteer **Wissen** in het deelvenster waarin de naam van het apparaat wordt weergegeven.
@@ -146,7 +146,7 @@ U kunt apparaten in de kioskmodus alleen wissen. U kunt Android-apparaten in de 
 
 ### <a name="retire"></a>Buiten gebruik stellen
 
-1. Meld u aan bij [Intune in Azure Portal](https://aka.ms/intuneportal).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Alle apparaten** in het deelvenster **Apparaten**.
 3. Selecteer de naam van het apparaat dat u buiten gebruik wilt stellen.
 4. Selecteer **Buiten gebruik stellen** in het deelvenster waarin de naam van het apparaat wordt weergegeven. Selecteer **Ja** om de opdracht te bevestigen.
@@ -157,12 +157,12 @@ Als het apparaat is ingeschakeld en is verbonden, wordt de actie **Buiten gebrui
 
 Als u apparaten wilt verwijderen uit de Intune-portal, kunt u ze verwijderen in het specifieke deelvenster met apparaten. De volgende keer dat het apparaat wordt ingecheckt, worden eventuele bedrijfsgegevens op het apparaat verwijderd.
 
-1. Meld u aan bij [Intune in Azure Portal](https://aka.ms/intuneportal).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Kies **Apparaten** > **Alle apparaten** > kies het apparaat dat u wilt verwijderen > **Verwijderen**.
 
 ### <a name="automatically-delete-devices-with-cleanup-rules"></a>Apparaten automatisch verwijderen met opschoonregels
 U kunt Intune configureren om automatisch apparaten te verwijderen die inactief of verlopen zijn of niet reageren. Deze opschoonregels controleren uw apparaatinventaris continu, zodat uw apparaatrecords up-to-date blijven. Apparaten die op deze manier worden verwijderd, worden verwijderd uit Intune-beheer.
-1. Meld u aan bij [Intune in Azure Portal](https://aka.ms/intuneportal).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Kies **Apparaten** > **Opschoonregels voor apparaat** > **Ja**.
 3. Voer in het vak **Apparaten verwijderen die zo veel dagen niet hebben ingecheckt** een getal tussen 30 en 270 in.
 4. Kies **Opslaan**.
@@ -185,7 +185,7 @@ Vanwege communicatieproblemen of ontbrekende apparaten moet u wellicht apparaten
 
 Als u een Apple DEP-apparaat volledig wilt verwijderen uit het beheer door Intune, voert u de volgende stappen:
 
-1. Meld u aan bij [Intune in Azure Portal](https://aka.ms/intuneportal).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Kies **Apparaten** > **Alle apparaten** > kies het apparaat > **Buiten gebruik stellen**.
 ![Schermafbeelding van buiten gebruik stellen](./media/devices-wipe/retire.png)
 3. Ga naar [deploy.apple.com](http://deploy.apple.com) en zoek het apparaat met behulp van het serienummer.

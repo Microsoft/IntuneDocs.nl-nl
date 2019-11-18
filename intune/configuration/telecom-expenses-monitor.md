@@ -6,24 +6,24 @@ keywords: Saaswedo
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/09/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
-ms.reviewer: sumitp
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce9a6916cc77714a87aeac33555c0be1e59463f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 20743d19ba101a9c400cb9f72dca59223254e6de
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506640"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755054"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Een Telecom Expense Management-service instellen in Intune
 
@@ -54,7 +54,7 @@ Als u de Datalert-service met Intune wilt gebruiken, zijn er enkele configuratie
 
 ## <a name="prerequisites"></a>Vereisten
 
-- Een abonnement op Microsoft Intune en toegang tot de [Azure-portal](https://portal.azure.com)
+- Een abonnement op Microsoft Intune en toegang tot het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431)
 - Een abonnement op [Datalert](http://www.datalert.biz/) (opent de Datalert-website)
 
 ## <a name="telecom-expense-management-providers"></a>Telecom Expense Management-providers
@@ -109,9 +109,9 @@ Intune kan worden geïntegreerd met de volgende Telecom Expense Management-provi
 
 Nadat u stap 1 hebt voltooid, wordt de verbinding automatisch ingeschakeld. In Intune is de verbindingsstatus **Actief**. Gebruik de volgende stappen om te bevestigen dat de status Actief is:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecteer **Apparaatconfiguratie** > **Telecom Expense Management**. Zoek naar de verbindingsstatus **Actief**:
+2. Selecteer **Tenantbeheer** > **Connectors en tokens** > **Telecom Expense Management**. Zoek naar de verbindingsstatus **Actief**:
 
    ![Intune-pagina met Datalert-verbindingsstatus Actief](./media/telecom-expenses-monitor/tem-azure-portal-enable-service.png)
 
@@ -138,7 +138,7 @@ Deze categorieën worden weergegeven aan gebruikers tijdens de inschrijving ([An
 
 Met de volgende stappen wordt de Datalert-app toegevoegd. Als voorbeeld wordt iOS gebruikt. [Apps toevoegen](../apps/apps-add.md) en [Bereiktags gebruiken](../fundamentals/scope-tags.md) bevatten meer specifieke informatie over deze stappen.
 
-1. Selecteer in **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** achtereenvolgens **Client-apps** > **Apps** > **Toevoegen**.
+1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apps** > **Alle apps** > **Toevoegen**.
 
 2. Selecteer uw **App-type**. Voor iOS selecteert u bijvoorbeeld **Store-app - iOS**.
 
@@ -156,7 +156,7 @@ Met de volgende stappen wordt de Datalert-app toegevoegd. Als voorbeeld wordt iO
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>De app Datalert aan de groep bedrijfsapparaten toewijzen
 
-1. Selecteer in **Client-apps - Apps** de Datalert-app die u in de vorige stap hebt toegevoegd.
+1. Selecteer in **Apps** > **Alle apps** de Datalert-app die u in de vorige stap hebt toegevoegd.
 
 2. Selecteer **Toewijzingen** > **Groep toevoegen**. Kies hoe de app wordt toegewezen. [Apps aan groepen toewijzen in Intune](../apps/apps-deploy.md) bevat meer informatie over deze instellingen.
 
@@ -183,7 +183,7 @@ Voor de ervaring van de eindgebruiker kunnen de volgende artikelen helpen:
 
 ## <a name="turn-off-the-datalert-service"></a>De Datalert-service uitschakelen
 
-1. Selecteer in **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** **Apparaatconfiguratie** > **Telecom Expense Management**.
+1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Tenantbeheer** > **Connectors en tokens** > **Telecom Expense Management**.
 2. Stel **Telecom Expense Management inschakelen en mobiele gegevens en/of roaminggegevens blokkeren op apparaten die geconfigureerde gebruiksquota hebben overschreden** in op **Uitschakelen**.
 3. U moet vervolgens de wijzigingen **Opslaan**.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f9c4f0049407dd77e532698d03cc0b71d3e3d1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2f41caddc7ab9cc09c8d5403f67b6112d58c3ffd
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505535"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713542"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>macOS-apparaten automatisch inschrijven met het Device Enrollment Program of Apple School Manager
 
@@ -61,7 +61,7 @@ U gebruikt de Apple-portal om een token te maken. U gebruikt de Apple-portal ook
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Stap 1. Download het openbare-sleutelcertificaat van Intune dat is vereist om het token te maken.
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) **Apparaatinschrijving** > **Apple-inschrijving** > **Token voor het inschrijvingsprogramma** > **Toevoegen**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > **Toevoegen**.
 
     ![Een token voor het inschrijvingsprogramma ophalen.](./media/device-enrollment-program-enroll-macos/image01.png)
 
@@ -92,7 +92,7 @@ U gebruikt de Apple-portal om een token te maken. U gebruikt de Apple-portal ook
 
 ### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Stap 3. De Apple-id opslaan die u hebt gebruikt om dit token te maken
 
-Voer in Intune in de Apple-portal de Apple-id in, zodat u deze altijd kunt terugvinden.
+Geef in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de Apple-id op voor toekomstige referentie.
 
 ![Schermopname van het invoeren van de Apple ID die is gebruikt voor het maken van het token voor het inschrijvingsprogramma en het uploaden van het token.](./media/device-enrollment-program-enroll-macos/image03.png)
 
@@ -103,7 +103,7 @@ Ga in het venster **Apple-token** naar het certificaatbestand (.pem), kies **Ope
 
 Na installatie van de token kunt u een inschrijvingsprofiel voor apparaten maken. Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving.
 
-1. Kies in Intune in Azure Portal **Apparaatinschrijving** > **Apple-inschrijving** > **Token voor het inschrijvingsprogramma**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma**.
 2. Selecteer een token, kies **Profielen** en kies vervolgens **Profiel maken**.
 
     ![Maak een schermafdruk van het profiel.](./media/device-enrollment-program-enroll-macos/image04.png)
@@ -165,7 +165,7 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor apparaten maken
 
 Nu Intune toestemming heeft om uw apparaten te beheren, kunt u Intune synchroniseren met Apple om uw beheerde apparaten weer te geven in Intune in Azure Portal.
 
-1. Kies in Intune in Azure Portal **Apparaatinschrijving** > **Apple-inschrijving** > **Token voor het inschrijvingsprogramma** > kies een token uit de lijst > **Apparaten** > **Synchroniseren**. ![Schermopname van het geselecteerde knooppunt Apparaten voor het inschrijvingsprogramma en een pijl naar de koppeling Synchroniseren.](./media/device-enrollment-program-enroll-macos/image06.png)
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token in de lijst > **Apparaten** > **Synchroniseren**. ![Schermopname van het geselecteerde knooppunt Apparaten voor het inschrijvingsprogramma en een pijl naar de koppeling Synchroniseren.](./media/device-enrollment-program-enroll-macos/image06.png)
 
    Om te voldoen aan de voorwaarden van Apple voor acceptabel verkeer van het inschrijvingsprogramma, worden door Intune de volgende beperkingen opgelegd:
    - Een volledige synchronisatie kan niet vaker dan eens in de zeven dagen worden uitgevoerd. Tijdens een volledige synchronisatie haalt Intune de volledige bijgewerkte lijst met serienummers op die is toegewezen aan de Apple MDM-server die is verbonden met Intune. Wanneer een apparaat uit het inschrijvingsprogramma wordt verwijderd uit de Intune-portal zonder dat het eerst is afgemeld bij de Apple MDM-server in de DEP-portal, wordt het apparaat pas opnieuw in Intune geïmporteerd wanneer de volledige synchronisatie wordt uitgevoerd.   
@@ -175,7 +175,7 @@ Nu Intune toestemming heeft om uw apparaten te beheren, kunt u Intune synchronis
 
 U moet een profiel voor een inschrijvingsprogramma aan apparaten toewijzen voordat deze kunnen worden ingeschreven.
 
-1. Kies in Intune in Azure Portal **Apparaatinschrijving** > **Apple-inschrijving** > **Token voor het inschrijvingsprogramma** > kies een token uit de lijst.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token in de lijst.
 2. Kies **Apparaten** > kies apparaten uit de lijst > **Profiel toewijzen**.
 3. Kies onder **Profiel toewijzen** een profiel voor de apparaten > **Toewijzen**.
 
@@ -183,7 +183,7 @@ U moet een profiel voor een inschrijvingsprogramma aan apparaten toewijzen voord
 
 U kunt een standaardprofiel in macOS en iOS kiezen om toe te passen op alle apparaten die worden ingeschreven met een specifiek token. 
 
-1. Kies in Intune in de Azure-portal **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token uit de lijst.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token in de lijst.
 2. Kies **Standaardprofiel instellen**, kies een profiel in de vervolgkeuzelijst en kies vervolgens **Opslaan**. Dit profiel wordt toegepast op alle apparaten die zich met het token inschrijven.
 
 ## <a name="distribute-devices"></a>Apparaten distribueren
@@ -199,7 +199,7 @@ U hebt beheer en synchronisatie tussen Apple en Intune ingeschakeld, en een prof
     ![Schermopname van nieuw token genereren.](./media/device-enrollment-program-enroll-macos/generatenewtoken.png)
 
 4. Kies **Your Server Token**.  
-5. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal), **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies het token.
+5. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies het token.
     ![Schermopname van tokens voor het inschrijvingsprogramma.](./media/device-enrollment-program-enroll-macos/enrollmentprogramtokens.png)
 
 6. Kies **Token vernieuwen** en voer de Apple ID in die is gebruikt om het oorspronkelijke token te maken.  

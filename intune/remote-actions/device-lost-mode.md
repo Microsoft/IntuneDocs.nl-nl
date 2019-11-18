@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
-ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
+ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057531"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712226"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>De modus Apparaat verloren inschakelen op iOS-apparaten met Intune
 
@@ -41,7 +41,7 @@ Deze functie wordt niet ondersteund op:
 
 ## <a name="enable-lost-mode"></a>De modus Apparaat verloren inschakelen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecteer **Apparaten** en selecteer vervolgens **Alle apparaten**.
 4. Kies in de lijst met door u beheerde apparaten een iOS-apparaat en kies vervolgens de externe actie **Modus apparaat verloren (alleen onder toezicht)** .
 5. Selecteer in de **Modus apparaat verloren** de optie **Inschakelen**.

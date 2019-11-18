@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7f5a85896a2e6e7be845b2314c4f837dcaeb7b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 50fc2d274531dce3d2466ba40a4738035b9b6811
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507032"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756781"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10-sjablonen gebruiken voor het configureren van instellingen voor groepsbeleid in Microsoft Intune
 
@@ -43,8 +43,8 @@ In dit artikel vindt u de stappen voor het maken van een sjabloon voor Windows 1
 
 ## <a name="create-a-template"></a>Een sjabloon maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 3. Voer de volgende eigenschappen in:
 
     - **Naam**: Voer een naam voor het profiel in.
@@ -59,7 +59,7 @@ In dit artikel vindt u de stappen voor het maken van een sjabloon voor Windows 1
     > [!TIP]
     > De Windows-instellingen in Intune correleren met het pad naar het on-premises groepsbeleidsobject dat u ziet in Lokale groepsbeleidsobjecteditor (`gpedit`).
 
-5. Standaard wordt in de vervolgkeuzelijst **Alle producten** weergegeven. In de lijst kunt u de instellingen ook filteren om alleen **Windows-instellingen**, alleen **Office-instellingen** of alleen **Edge-instellingen (versie 77 of hoger)** weer te geven:
+5. Selecteer **Alle producten** in de vervolgkeuzelijst. In de lijst kunt u de instellingen ook filteren om alleen **Windows-instellingen**, alleen **Office-instellingen** of alleen **Edge-instellingen (versie 77 of hoger)** weer te geven:
 
     ![De lijst filteren om alle Windows- of alle Office-instellingen weer te geven in beheersjablonen in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 

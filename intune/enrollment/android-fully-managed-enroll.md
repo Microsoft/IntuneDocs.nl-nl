@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 755aefb955c2d30652434f2bd2e91981145fc56f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 44e757be5f109b81772daa6ff59505ccc0f033f8
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505588"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709441"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Intune-inschrijving van volledig beheerde Android Enterprise-apparaten instellen 
 
@@ -56,7 +56,7 @@ Volg deze stappen om het beheer van volledig beheerde Android Enterprise-apparat
 
 ### <a name="enable-corporate-owned-user-devices"></a>Apparaten in bedrijfseigendom inschakelen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Bedrijfseigendom, volledig beheerde gebruikersapparaten**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Volledig beheerde gebruikersapparaten in bedrijfseigendom**.
 2. Onder **Allow users to enroll corporate-owned user devices** (Gebruikers toestaan apparaten in bedrijfseigendom in te schrijven) kiest u **Ja**.
 
 > [!NOTE]

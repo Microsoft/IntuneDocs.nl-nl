@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0f31add65063665da5a7961e2caf9eb30a847e2
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 3db085e6e88f8f57eb0276afa77290df8574568f
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72787883"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801712"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -142,13 +142,14 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 > [!IMPORTANT]  
 > De Microsoft Intune-certificaatconnector kan niet worden geïnstalleerd op de verlenende certificeringsinstantie (CA) en moet in plaats daarvan op een afzonderlijke Windows-server worden geïnstalleerd.  
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen**.
-3. Download het connectorbestand en sla dit op een locatie op waar u het kunt openen vanaf de server waarop u de connector gaat installeren.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-    ![Microsoft Intune Certificate Connector-download](./media/certficates-pfx-configure/download-ndes-connector.png)
+2. Selecteer **Tenantbeheer** > **Connectors en tokens** > **Certificaatconnectors** >  **+ Toevoegen**.
+
+3. Klik op *De certificaatconnectorsoftware downloaden* voor de connector voor PKCS #12 en sla het bestand op op een locatie waartoe u toegang hebt vanaf de server waarop u de connector gaat installeren.
+
+   ![Microsoft Intune Certificate Connector-download](./media/certficates-pfx-configure/download-ndes-connector.png)
  
-
 4. Nadat het downloaden is voltooid, meldt u zich aan bij de server. Vervolgens:
 
     1. Controleer of .NET 4.5 Framework of hoger is geïnstalleerd. Dit is vereist voor de NDES-certificaatconnector. .NET Framework 4.5 wordt automatisch geïnstalleerd met Windows Server 2012 R2 en nieuwere versies.
@@ -166,37 +167,44 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 
 ## <a name="create-a-trusted-certificate-profile"></a>Een vertrouwd certificaatprofiel maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en ga naar **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-    ![Navigeren naar Intune en een nieuw profiel voor een vertrouwd certificaat maken](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Voer de volgende eigenschappen in:
+2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
+
+   ![Ga naar Intune en maak een nieuw profiel voor een vertrouwd certificaat](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
+
+3. Voer de volgende eigenschappen in:
 
     - **Naam** voor het profiel
     - Een beschrijving instellen (optioneel)
     - **Platform** waarvoor het profiel moet worden geïmplementeerd
     - Stel **Profieltype** in op **Vertrouwd certificaat**
 
-3. Ga naar **Instellingen** en voer het eerder geëxporteerde CER-bestand van het basis-CA-certificaat in.
+4. Selecteer **Instellingen** en geef het eerder geëxporteerde CER-bestand van het basis-CA-certificaat op.
 
    > [!NOTE]
    > Afhankelijk van het platform dat u in **stap 2** kiest, hebt u al dan niet de mogelijkheid het **Doelarchief** voor het certificaat te kiezen.
 
-   ![Een profiel maken en een vertrouwd certificaat uploaden](./media/certficates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
+   ![Een profiel maken en een vertrouwd certificaat uploaden](./media/certficates-pfx-configure/certificates-pfx-configure-profile-fill.png)
 
-4. Selecteer **OK** > **Maken** om het profiel op te slaan.
-5. Raadpleeg [Microsoft Intune-apparaatprofielen toewijzen](../configuration/device-profile-assign.md) om het nieuwe profiel aan een of meer apparaten toe te wijzen.
+5. Selecteer **OK** > **Maken** om het profiel op te slaan.
+
+6. Raadpleeg [Microsoft Intune-apparaatprofielen toewijzen](../configuration/device-profile-assign.md) om het nieuwe profiel aan een of meer apparaten toe te wijzen.
 
 ## <a name="create-a-pkcs-certificate-profile"></a>Een PKCS-certificaatprofiel maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en ga naar **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-2. Voer de volgende eigenschappen in:
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Ga naar **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
+
+3. Voer de volgende eigenschappen in:
 
     - **Naam** voor het profiel
     - Een beschrijving instellen (optioneel)
     - **Platform** waarvoor het profiel moet worden geïmplementeerd
     - Stel **Profieltype** in op **PKCS-certificaat**
 
-3. Ga naar **Instellingen** en configureer de eigenschappen die van toepassing zijn op het platform dat u hebt geselecteerd:  
+4. Selecteer **Instellingen** en configureer de eigenschappen die van toepassing zijn op het platform dat u hebt geselecteerd:
    
    |Instelling     | Platform     | Details   |
    |------------|------------|------------|
@@ -212,8 +220,9 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
    |**Alle apps mogen toegang hebben tot de persoonlijke sleutel** |macOS  |Stel in op **Inschakelen** om apps die zijn geconfigureerd voor het bijbehorende Mac-apparaat toegang te geven tot de persoonlijke sleutel van de PKCS-certificaten. <br><br> Zie *AllowAllAppsAccess* in de sectie Nettolading van certificaat van [Referentiemateriaal configuratieprofiel](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in de Apple-documentatie voor ontwikkelaars voor meer informatie over deze instelling. |
    |**Basiscertificaat**             |**-** Android-apparaatbeheerder <br> **-** Android Enterprise (*Apparaateigenaar*, *Werkprofiel*) |Selecteer een basis-CA-certificaatprofiel dat eerder is toegewezen. |
 
-4. Selecteer **OK** > **Maken** om het profiel op te slaan.
-5. Raadpleeg [Microsoft Intune-apparaatprofielen toewijzen](../configuration/device-profile-assign.md) om het nieuwe profiel aan een of meer apparaten toe te wijzen.
+5. Selecteer **OK** > **Maken** om het profiel op te slaan.
+
+6. Raadpleeg [Microsoft Intune-apparaatprofielen toewijzen](../configuration/device-profile-assign.md) om het nieuwe profiel aan een of meer apparaten toe te wijzen.
 
    > [!NOTE]
    > Op apparaten met een Android Enterprise-profiel zijn certificaten die zijn geïnstalleerd met een PKCS-certificaatprofiel niet zichtbaar op het apparaat. Controleer de status van het profiel in de Intune-console om te controleren of de implementatie van het certificaat is geslaagd.
@@ -262,7 +271,7 @@ Wanneer u een PKCS-certificaatprofiel voor macOS maakt, zijn de opties voor de i
   - **{{DeviceName}}**
   - **{{FullyQualifiedDomainName}}** *(Alleen van toepassing op Windows-apparaten en apparaten die aan een domein zijn toegevoegd)*
   - **{{MEID}}**
-   
+
   U kunt deze variabelen opgeven in het tekstvak, gevolgd door de tekst voor de variabele. De algemene naam voor een apparaat met de naam *Device1* kan bijvoorbeeld worden toegevoegd als **CN={{DeviceName}}Device1**.
 
   > [!IMPORTANT]  
@@ -273,21 +282,25 @@ Wanneer u een PKCS-certificaatprofiel voor macOS maakt, zijn de opties voor de i
 
 
 ## <a name="whats-new-for-connectors"></a>Wat is er nieuw voor connectors
-Updates voor de twee certificaatconnectors worden regelmatig uitgebracht. Als we een connector bijwerken, kunt u hier over de wijzigingen lezen. 
+
+Updates voor de twee certificaatconnectors worden regelmatig uitgebracht. Als we een connector bijwerken, kunt u hier over de wijzigingen lezen.
 
 De *PFX-certificaatconnector voor Microsoft Intune* [biedt ondersteuning voor automatische updates](#requirements), terwijl de *Intune-certificaatconnector* handmatig wordt bijgewerkt.
 
-### <a name="may-17-2019"></a>17 mei 2019  
+### <a name="may-17-2019"></a>17 mei 2019
+
 - **Connector voor PFX-certificaten voor Microsoft Intune - versie 6.1905.0.404**  
   Wijzigingen in deze release:  
   - Er is een probleem opgelost waarbij bestaande PFX-certificaten steeds opnieuw worden verwerkt, zodat de connector stopt met het verwerken van nieuwe aanvragen. 
 
-### <a name="may-6-2019"></a>6 mei 2019  
+### <a name="may-6-2019"></a>6 mei 2019
+
 - **PFX-certificaatconnector voor Microsoft Intune - versie 6.1905.0.402**  
   Wijzigingen in deze release:  
   - De polling-interval voor de connector wordt verlaagd van 5 minuten naar 30 seconden.
  
-### <a name="april-2-2019"></a>2 april 2019  
+### <a name="april-2-2019"></a>2 april 2019
+
 - **Intune-certificaatconnector - versie 6.1904.1.0**  
   Wijzigingen in deze release:  
   - Er is een probleem opgelost waarbij de connector zich mogelijk niet kan inschrijven bij Intune na aanmelding bij de connector met een globale beheerdersaccount.  

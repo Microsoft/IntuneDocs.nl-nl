@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143170"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709329"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Een pagina Status van de inschrijving instellen
  
@@ -64,14 +64,14 @@ U kunt ook de volgorde van prioriteit voor elk profiel instellen om problemen me
 
 Volg de onderstaande stappen om de pagina Status van de registratie in te schakelen.
  
-1. Kies in [Intune](https://aka.ms/intuneportal) **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Inschrijvingsstatuspagina**.
 2. In de blade **Pagina Status van de inschrijving** kiest u **Standaard** > **Instellingen**.
 3. Bij **Voortgang van installatie van app en profiel weergeven** kiest u **Ja**.
 4. Kies de andere instellingen die u wilt inschakelen en kies vervolgens **Opslaan**.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Profiel voor pagina Status van de registratie maken en dit aan een groep toewijzen
 
-1. Kies in [Intune](https://aka.ms/intuneportal) **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving** > **Profiel maken**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Inschrijvingsstatuspagina** > **Profiel maken**.
 2. Geef een **naam** en **beschrijving** op.
 3. Kies **Maken**.
 4. Kies het nieuwe profiel in de lijst **Pagina Status van de inschrijving**.
@@ -82,7 +82,7 @@ Volg de onderstaande stappen om de pagina Status van de registratie in te schake
 
 Een gebruiker deel uitmaken van verschillende groepen en een groot aantal profielen voor de pagina Status van de inschrijving hebben. U kunt in dergelijke situaties conflicten voorkomen door voor elk profiel een prioriteit in te stellen. Als tijdens het inschrijven iemand meer dan een profiel heeft voor de pagina Status van de inschrijving, wordt alleen het profiel met de hoogste prioriteit toegepast op het apparaat dat wordt ingeschreven.
 
-1. Kies in [Intune](https://aka.ms/intuneportal) **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Inschrijvingsstatuspagina**.
 2. Beweeg de muisaanwijzer over het profiel in de lijst.
 3. Sleep met behulp van de drie verticale puntjes het profiel naar de gewenste positie in de lijst.
 
@@ -90,7 +90,7 @@ Een gebruiker deel uitmaken van verschillende groepen en een groot aantal profie
 
 U kunt opgeven welke apps moeten worden geïnstalleerd voordat de gebruiker toegang krijgt tot het bureaublad.
 
-1. Kies in Intune **Apparaatinschrijving** > **Windows-inschrijving** > **Pagina Status van de inschrijving**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Inschrijvingsstatuspagina**.
 2. Kies een profiel > **Instellingen**.
 3. Kies **Ja** bij **Voortgang van installatie van app en profiel weergeven**.
 4. Kies **Ja** bij **Apparaatgebruik blokkeren totdat alle apps en profielen zijn geïnstalleerd**.

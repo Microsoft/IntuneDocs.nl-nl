@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f770db6927ed87786f7806e011cdc6cb9bae6b3f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509269"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713504"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Problemen bij de apparaatinschrijving in Microsoft Intune oplossen
 
@@ -64,9 +64,9 @@ Deze problemen kunnen optreden op alle apparaatplatforms.
 
 Voer de volgende stappen uit om te controleren of aan de gebruiker niet meer dan het maximale aantal apparaten is toegewezen:
 
-1. Kies in Intune **Apparaatinschrijving** > **Inschrijvingsbeperkingen** > **Apparaatlimietbeperkingen**. Noteer de waarde in de kolom **Apparaatlimiet**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Inschrijvingsbeperkingen** > **Beperkingen voor apparaatlimieten**. Noteer de waarde in de kolom **Apparaatlimiet**.
 
-2. Kies in Intune **Gebruikers** > **Alle gebruikers** > selecteer de gebruiker > **Apparaten**. Noteer het aantal apparaten.
+2. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Gebruikers** > **Alle gebruikers** > selecteer de gebruiker > **Apparaten**. Noteer het aantal apparaten.
 
 3. Als het aantal ingeschreven apparaten van de gebruiker al gelijk is aan de apparaatlimietbeperking, kunnen er pas meer worden ingeschreven als:
     - [Bestaande apparaten worden verwijderd](../remote-actions/devices-wipe.md) of

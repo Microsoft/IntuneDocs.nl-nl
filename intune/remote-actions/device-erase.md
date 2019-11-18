@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0379ffc6a3c3ffd83a9d121e622e9ee8f7c0af5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 428b4040eb0d91b7fe32fcf71842ce5bd1910013
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509514"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713224"
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>Alle gegevens van een macOS-apparaat wissen
 
@@ -31,7 +31,7 @@ ms.locfileid: "72509514"
 
 U kunt alle gegevens van een macOS-apparaat wissen, inclusief het besturingssysteem. Het apparaat wordt ook uit Intune-beheer verwijderd. De eindgebruiker wordt hier niet over gewaarschuwd.
 
-1. Ga in [Intune in de Azure-portal](https://aka.ms/intuneportal) naar **Apparaten** > **Alle apparaten** en kies het apparaat dat u wilt wissen.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaten** > **Alle apparaten** > kies het apparaat dat u wilt wissen.
 ![Schermopname](./media/device-erase/choosedevice.png)
 2. Klik op **Meer** > **Wissen** en geef een zescijferig nummer op voor de **Herstelpincode**. Dit is de pincode die u aan de gebruiker moet geven zodat ze het besturingssysteem weer op hun apparaat kunnen installeren. Noteer deze pincode; de pincode is niet meer zichtbaar nadat de wisactie is voltooid.
 ![Schermopname](./media/device-erase/providepin.png)

@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ada1f6e5292684803fbea40430cdd43d61796746
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681360"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984183"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>iOS-software-updatebeleid in Intune configureren
 
@@ -28,7 +28,7 @@ Deze functie is van toepassing op:
 
 - iOS 10.3 of hoger (onder supervisie)
 
-Het apparaat wordt ongeveer om de 8 uur bij Intune ingecheckt. Als er een update beschikbaar is, wordt deze door het apparaat gedownload en geïnstalleerd, behalve tijdens beperkte tijden. Er is geen tussenkomst van de gebruiker nodig om het apparaat bij te werken. Het beleid belet gebruikers niet om het besturingssysteem handmatig bij te werken.
+Het apparaat wordt ongeveer om de 8 uur bij Intune ingecheckt. Als er een update beschikbaar is, wordt deze door het apparaat gedownload en geïnstalleerd, behalve tijdens beperkte tijden. Hoewel het updateproces doorgaans geen tussenkomst van de gebruiker omvat, moet de gebruiker een wachtwoordcode invoeren om een software-update te starten als het apparaat een wachtwoordcode heeft. Dit geldt voor iOS 10.3 en nieuwere versies. Het beleid belet gebruikers niet om het besturingssysteem handmatig bij te werken.
 
 ## <a name="configure-the-policy"></a>Het beleid configureren
 

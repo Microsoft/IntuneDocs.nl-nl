@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7ca53786d372f53d63388fef1179ca271fdb9d9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508580"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713128"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>De wachtwoordcode van een apparaat opnieuw instellen of verwijderen via Intune
 
@@ -57,10 +57,9 @@ Als u een nieuwe wachtwoordcode voor het werkprofiel wilt maken, gebruikt u de a
 ## <a name="reset-a-passcode"></a>Een wachtwoordcode opnieuw instellen
 
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com) met een van de volgende rollen: Globale beheerder van Azure Active Directory, Azure Active Directory Intune-servicebeheerder, helpdeskmedewerker of rolbeheerder.
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Apparaten** en selecteer vervolgens **Alle apparaten**.
-4. Selecteer een apparaat in de lijst met apparaten die u beheert en kies **...Meer**. Kies vervolgens de externe apparaatactie **Wachtwoordcode verwijderen**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) met een van de volgende rollen: Globale beheerder van Azure Active Directory, Azure Active Directory Intune-servicebeheerder, helpdeskmedewerker of rolbeheerder.
+2. Selecteer **Apparaten** en selecteer vervolgens **Alle apparaten**.
+3. Selecteer een apparaat in de lijst met apparaten die u beheert en kies **...Meer**. Kies vervolgens de externe apparaatactie **Wachtwoordcode verwijderen**.
 
 ## <a name="reset-android-work-profile-passcodes"></a>Wachtwoordcodes voor Android-werkprofielen opnieuw instellen
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6f594e20abf1a507d1d4e00641a4821fe1ba9b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509341"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712259"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>De hoofdgebruiker van een Intune-apparaat zoeken
 
@@ -30,7 +30,7 @@ De hoofdgebruiker, ook wel de gebruikersaffiniteit van het apparaat, is een eige
 
 ## <a name="how-to-find-a-devices-primary-user"></a>De hoofdgebruiker van een apparaat zoeken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apparaten** > Selecteer een apparaat.
 3. Selecteer op de pagina **Overzicht** de optie **Meer weergeven** om de hoofdgebruiker te tonen.
 

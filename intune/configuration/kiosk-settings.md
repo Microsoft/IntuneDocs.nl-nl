@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 271b49a4c927bccb5cd967ea99b0d7bd5c2bd515
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b7d09700847eae6a43111b0a4e865522f01862b9
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492351"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755164"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Instellingen voor Windows 10- en Windows Holographic for Business-apparaten om ze als toegewezen kiosk uit te voeren via Intune
 
@@ -39,8 +39,8 @@ In dit artikel wordt beschreven hoe u een apparaatconfiguratieprofiel maakt. Zie
 
 ## <a name="create-the-profile"></a>Het profiel maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 3. Voer de volgende eigenschappen in:
 
    - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel.
@@ -60,7 +60,7 @@ In dit artikel wordt beschreven hoe u een apparaatconfiguratieprofiel maakt. Zie
       - [Kioskinstellingen voor Windows 10](kiosk-settings-windows.md)
       - [Kioskinstellingen voor Windows Holographic for Business](kiosk-settings-holographic.md)
 
-5. Wanneer u klaar bent, selecteert u **OK** > **Maken** om uw wijzigingen op te slaan. 
+5. Wanneer u klaar bent, selecteert u **OK** > **Maken** om uw wijzigingen op te slaan.
 
 Het profiel wordt gemaakt en weergegeven in de lijst met profielen. Vervolgens [wijst u het profiel toe](device-profile-assign.md).
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 445737a1b0a72e380844af6225cdb735cd3ec02c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1b2390462376c88129435de30eb98020563f3878
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509353"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713102"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>De wachtwoordcode opnieuw instellen op Windows-apparaten met Intune
 
@@ -64,11 +64,10 @@ Stel de waarde voor deze CSP in op **Waar**.
 
 ## <a name="reset-the-passcode"></a>De wachtwoordcode opnieuw instellen
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com). 
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Apparaten** en selecteer vervolgens **Alle apparaten**.
-4. Selecteer het apparaat waarvan u de wachtwoordcode opnieuw wilt instellen. Selecteer **Nieuwe wachtwoordcode** in de apparaateigenschappen.
-5. Selecteer **Ja** om te bevestigen. De wachtwoordcode wordt gegenereerd en wordt gedurende zeven dagen weergegeven in de portal.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431). 
+2. Selecteer **Apparaten** en selecteer vervolgens **Alle apparaten**.
+3. Selecteer het apparaat waarvan u de wachtwoordcode opnieuw wilt instellen. Selecteer **Nieuwe wachtwoordcode** in de apparaateigenschappen.
+4. Selecteer **Ja** om te bevestigen. De wachtwoordcode wordt gegenereerd en wordt gedurende zeven dagen weergegeven in de portal.
 
 ## <a name="next-step"></a>Volgende stap
 

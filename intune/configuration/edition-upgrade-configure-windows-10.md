@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5519429bae69fe277c72b12a2801a1875295824
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4cce3fafa1a8a074ea70692f855be1e032f0462f
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493788"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755242"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Upgrade Windows 10-edities of schakel op apparaten de S-modus uit met behulp van Microsoft Intune
 
@@ -96,16 +96,13 @@ In de volgende tabel staan de ondersteunde upgradepaden voor het upgradeprofiel 
 
 ## <a name="create-the-profile"></a>Het profiel maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 3. Voer de volgende eigenschappen in:
 
     - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel. Voer bijvoorbeeld iets als `Windows 10 edition upgrade profile` of `Windows 10 switch off S mode` in.
     - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
-    - **Platform**: Selecteer het platform:  
-
-        - **Windows 10 en hoger**
-
+    - **Platform**: Kies **Windows 10 en hoger**.
     - **Profieltype**: Selecteer **Editie-upgrade**.
     - **Instellingen**: Voer de instellingen in die u wilt configureren. Voor een lijst van alle instellingen en wat ze doen raadpleegt u:
 

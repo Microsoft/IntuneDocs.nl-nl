@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9625243698bffc93ed969a8c2e4b06b4f3093f4d
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: ff9a37a1dd815b6ec9d7522604796310e7f0b5ce
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785536"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984108"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>iOS- en macOS-apps beheren die zijn aangeschaft via het Apple Volume Purchase Program met Microsoft Intune
 
@@ -72,7 +72,6 @@ Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar
 * Elke token is één jaar geldig.
 * Standaard wordt Intune twee keer per dag gesynchroniseerd met de Apple VPP-service. U kunt op elk gewenst moment een handmatige synchronisatie starten.
 * Voordat u begint met het gebruik van Apple VPP met Intune, verwijdert u eventuele bestaande VPP-gebruikersaccounts die zijn gemaakt met andere MDM-leveranciers (Mobile Device Management). Uit veiligheidsoverwegingen worden deze gebruikersaccounts niet met Intune gesynchroniseerd. Er worden alleen gegevens uit de Apple VPP-service gesynchroniseerd die zijn gemaakt met Intune.
-* Intune ondersteunt het toevoegen van maximaal 256 VPP-tokens.
 * Met het DEP-programma (Device Enrollment Profile) van Apple wordt de MDM-registratie (Mobile Device Management) geautomatiseerd. Met DEP kunt u bedrijfsapparaten op afstand configureren. U kunt zich registreren voor het DEP-programma met hetzelfde programma-agentaccount dat u hebt gebruikt voor VPP van Apple. De Apple Deployment Programs-id is uniek voor programma's die worden vermeld op de website [Apple Deployment Programs](https://deploy.apple.com) en kan niet worden gebruikt voor het aanmelden bij Apple-services, zoals de iTunes Store.
 * Wanneer u VPP-apps met behulp van het gebruikerslicentiemodel toewijst aan gebruikers of apparaten (met gebruikersaffiniteit), moet elke Intune-gebruiker zijn gekoppeld aan een unieke Apple ID of een e-mailadres wanneer ze de voorwaarden en bepalingen van Apple op hun apparaat accepteren.
 * Als u een apparaat instelt voor een nieuwe Intune-gebruiker, configureert u dit met de unieke Apple-id of het e-mailadres van de desbetreffende gebruiker. De Apple-id of het e-mailadres en de Intune-gebruiker vormen een uniek paar dat kan worden gebruikt op maximaal vijf apparaten.
@@ -89,6 +88,8 @@ Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar
 5. Geef in het deelvenster **VPP-token maken** de volgende gegevens op:
     - **VPP-tokenbestand**: meld u aan voor het VPP-programma voor bedrijven of voor het VPP-programma voor onderwijs als u dit nog niet hebt gedaan. Nadat u bent aangemeld, downloadt u het Apple VPP-token voor uw account en selecteert u dit hier.
     - **Apple ID**: voer de Apple ID in van het account dat aan het VPP is gekoppeld.
+    - **Controle over token via andere MDM**: als u deze optie op **Ja** instelt, kan het token via een andere MDM opnieuw worden toegewezen aan Intune.
+    - **Tokennaam**: een beheerveld voor het instellen van de tokennaam.    
     - **Land/regio**: selecteer VPP-store voor uw land/regio.  Intune synchroniseert VPP-apps voor alle landinstellingen uit de opgegeven store uit het land of de regio waar de VPP geldt.
         > [!WARNING]  
         > Als u het land of de regio wijzigt, worden de metagegevens en store-URL van de apps bijgewerkt bij de volgende synchronisatie met de Apple-service voor de apps die met deze token zijn gemaakt. De app wordt niet bijgewerkt als deze niet bestaat in de store van het nieuwe land of de nieuwe regio.
@@ -98,6 +99,9 @@ Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar
 
         > [!NOTE]
         > Automatische updates voor apps worden gebruikt voor apps voor zowel gelicentieerde apparaten als gebruikers voor iOS-versie 11.0 en hoger of macOS 10.12 en hoger.
+
+    - **Ik geef Microsoft toestemming om gebruikers- en apparaatgegevens naar Apple te verzenden.** - U moet **Ik ga akkoord** selecteren om door te gaan. Zie [Gegevens die Intune naar Apple verzendt](~/protect/data-intune-sends-to-apple.md) om te kijken welke gegevens Intune naar Apple verzendt.
+
 6. Selecteer **Maken** wanneer u klaar bent.
 
 Het token wordt weergegeven in het deelvenster met de lijst met tokens.

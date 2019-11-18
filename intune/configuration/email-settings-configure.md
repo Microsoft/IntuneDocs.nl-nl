@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8961614a85992b927e31d590c7abadca75a85a6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 75644ac4d8ccfb8a63e077f2b6625ac96364f5d7
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492863"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755191"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>E-mailinstellingen toevoegen aan apparaten met Intune
 
@@ -39,8 +39,8 @@ In dit artikel wordt uitgelegd hoe u een e-mailprofiel maakt in Microsoft Intune
 
 ## <a name="create-a-device-profile"></a>Een apparaatprofiel maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 3. Voer de volgende eigenschappen in:
 
     - **Naam**: Voer een beschrijvende naam in voor het beleid. Geef uw beleid een naam zodat u het later eenvoudig kunt identificeren. Een goede beleidsnaam is bijvoorbeeld **E-mailinstellingen voor alle Windows-apparaten**.
@@ -71,7 +71,7 @@ Nadat u uw instellingen hebt ingevoerd en het profiel maakt, wordt uw profiel we
 
 E-mailprofielen worden toegewezen aan apparaatgroepen, niet aan gebruikersgroepen. Er zijn verschillende manieren om een e-mailprofiel van een apparaat te verwijderen, zelfs als het apparaat maar één e-mailprofiel bevat:
 
-- **Optie 1**: open het e-mailprofiel (**Apparaatconfiguratie** > **Profielen**) en kies **Toewijzingen**. Op het tabblad **Opnemen** worden de groepen weergegeven waaraan het profiel is toegewezen. Klik met de rechtermuisknop op de groep > **Verwijderen**. Klik vervolgens op **Opslaan** om uw wijzigingen op te slaan.
+- **Optie 1**: Open het e-mailprofiel (**Apparaten** > **Configuratieprofielen** > selecteer uw profiel) en kies **Toewijzingen**. Op het tabblad **Opnemen** worden de groepen weergegeven waaraan het profiel is toegewezen. Klik met de rechtermuisknop op de groep > **Verwijderen**. Klik vervolgens op **Opslaan** om uw wijzigingen op te slaan.
 
 - **Optie 2**: [het apparaat wissen of buiten gebruik stellen](../remote-actions/devices-wipe.md). U kunt met deze handelingen een aantal of alle gegevens en instellingen verwijderen.
 
@@ -103,4 +103,4 @@ Als u wijzigingen aanbrengt aan een e-mailprofiel dat u eerder had toegewezen, z
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Als het profiel is gemaakt, doet het nog niets. [Wijs het profiel vervolgens toe aan enkele apparaten](../device-profile-assign.md).
+Als het profiel is gemaakt, doet het nog niets. Vervolgens [wijst u het profiel toe](../device-profile-assign.md).

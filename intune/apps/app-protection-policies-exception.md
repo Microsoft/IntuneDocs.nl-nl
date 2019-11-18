@@ -1,7 +1,7 @@
 ---
 title: Beleidsuitzonderingen voor gegevensoverdracht voor apps
 titleSuffix: Microsoft Intune
-description: Maak uitzonderingen voor het gegevensoverdrachtbeleid van Intune MAM (Mobile Application Management).
+description: Maak uitzonderingen voor het beleid voor gegevensoverdracht van Intune-app-beveiligingsbeleid (APP).
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6453f5b5886c5691383bc81fb76598146e884e0e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 18b1b8feda00f5c669b39bc365c637dcd3968078
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813358"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984078"
 ---
-# <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Uitzonderingen maken voor het gegevensoverdrachtbeleid van Intune MAM (Mobile Application Management)
+# <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Uitzonderingen maken voor het beleid voor gegevensoverdracht van Intune-app-beveiligingsbeleid (APP)
 
-Als beheerder kunt u uitzonderingen maken voor het gegevensoverdrachtbeleid van Intune MAM (Mobile Application Management). Met een uitzondering kunt u aangeven welke onbeheerde apps gegevens van en naar beheerde apps mogen overdragen. De onbeheerde apps die u op de uitzonderingenlijst plaatst, moeten door de IT-afdeling worden vertrouwd. 
+Als beheerder kunt u uitzonderingen maken voor het beleid voor gegevensoverdracht van Intune-app-beveiligingsbeleid (APP). Met een uitzondering kunt u aangeven welke onbeheerde apps gegevens van en naar beheerde apps mogen overdragen. De onbeheerde apps die u op de uitzonderingenlijst plaatst, moeten door de IT-afdeling worden vertrouwd. 
 
 >[!WARNING] 
 > U bent zelf verantwoordelijk voor het aanbrengen van wijzigingen aan het uitzonderingsbeleid voor gegevensoverdracht. Door toevoegingen aan dit beleid kunnen onbeheerde apps (apps die niet door Intune worden beheerd) toegang verkrijgen door de gegevens die door beheerde apps worden beschermd. Als u toegang biedt tot beschermde gegevens kan dit leiden tot beveiligingslekken. Voeg alleen gegevensoverdrachtuitzonderingen toe voor apps die uw organisatie moet gebruiken, maar die geen ondersteuning bieden voor Intune APP (beleid voor toepassingsbeveiliging). Daarnaast dient u alleen uitzonderingen toe te voegen voor apps waarvan u niet denkt dat ze zullen leiden tot een gegevenslek.
@@ -65,6 +65,8 @@ Als u het **Webex**-pakket als uitzondering toevoegt aan het MAM-gegevensoverdra
     <code>com.android.mms</code>
     
     <code>com.samsung.android.messaging</code>
+
+- Voorbeeld van een **certificaatinstallatieprogramma** van Android: U moet de uitzondering voor gegevensoverdracht toevoegen aan de tekenreeks <code>com.android.certinstaller</code> om de installatie van de systeemeigen **Certificaat-installatieprogramma**-app uit te sluiten, zodat Outlook voor Android een S/MIME-certificaat (geleverd als een e-mailbijlage) kan installeren in Android KeyStore. Zie [Sensitivity labeling and protection in Outlook for iOS and Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android) (Gevoeligheidslabels en -bescherming in Outlook voor iOS en Android) voor meer informatie.
 
 ## <a name="next-steps"></a>Volgende stappen
 

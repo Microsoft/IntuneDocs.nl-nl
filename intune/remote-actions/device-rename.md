@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 0f5ee9a0fe27c3cf9de758fd7155dbd127fb1e5e
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584537"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712218"
 ---
 # <a name="rename-a-device-in-intune"></a>Naam van een apparaat wijzigen in Intune
 
@@ -36,7 +36,7 @@ Deze functie biedt momenteel geen ondersteuning voor de naamwijziging van hybrid
 
 ## <a name="rename-a-device"></a>De naam van een apparaat wijzigen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Kies **Apparaten** > **Alle apparaten** > kies een apparaat > **Meer** > **Naam van apparaat wijzigen**.
 4. Typ op de blade **Naam van apparaat wijzigen** de nieuwe naam in het tekstvak. U kunt letters, cijfers en afbreekstreepjes gebruiken. De naam moet minstens één letter of afbreekstreepje bevatten.
 5. Als u het apparaat opnieuw wilt opstarten nadat u de naam ervan hebt gewijzigd, kiest u naast **Opnieuw opstarten na het wijzigen van de naam** de optie **Ja**.

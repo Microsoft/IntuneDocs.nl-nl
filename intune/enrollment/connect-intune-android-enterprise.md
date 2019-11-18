@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0fad076b33bed5375dd8e53dd401a2c9c4c39237
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a89b94f098292bf44122d6d2d144c7f35967cd32
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505569"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709448"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Uw Intune-account verbinden met uw Beheerde Google Play-account
 
@@ -42,7 +42,7 @@ In Intune worden automatisch vier veelgebruikte Android Enterprise-apps toegevoe
 > Als gevolg van interactie tussen domeinen van Google en Microsoft moet u in deze stap mogelijk uw browserinstellingen aanpassen.  Zorg ervoor dat 'portal.azure.com' en 'play.google.com' zich in dezelfde beveiligingszone bevinden in uw browser.
 
 1. Als u dit nog niet hebt gedaan, moet u het beheer van mobiele apparaten voorbereiden door [de instantie voor het beheer van mobiele apparaten in te stellen](../fundamentals/mdm-authority-set.md) als **Microsoft Intune**.
-2. Meld u aan bij [Intune in Azure Portal](https://aka.ms/intuneportal), selecteer **Apparaatinschrijving** > **Android-inschrijving** > **Beheerde Google Play**.  Als u een aangepaste Intune beheerdersrol gebruikt, zijn voor toegang tot deze rol lees- en bijwerkmachtigingen voor de organisatie vereist.
+2. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), kies **Apparaatinschrijving** > **Android-inschrijving** > **Beheerde Google Play**.  Als u een aangepaste Intune beheerdersrol gebruikt, zijn voor toegang tot deze rol lees- en bijwerkmachtigingen voor de organisatie vereist.
    
    ![Android Enterprise-inschrijvingsscherm](./media/connect-intune-android-enterprise/android-work-bind.png)
 
@@ -63,7 +63,7 @@ In Intune worden automatisch vier veelgebruikte Android Enterprise-apps toegevoe
 
 U kunt Android Enterprise-inschrijving en -beheer uitschakelen. Hiervoor moet u eerst alle ingeschreven Android Enterprise-apparaten buiten gebruik stellen, inclusief de werkprofielapparaten, toegewezen apparaten, en volledig beheerde apparaten. Kies vervolgens **Verbinding verbreken** in de Intune-beheerconsole om de inschrijving van alle ingeschreven apparaten, toegewezen apparaten, en volledig beheerde apparaten met een Android Enterprise-werkprofiel ongedaan te maken. U verwijdert hiermee ook de relatie tussen het Beheerde Google Play-account en Intune.
 
-1. Meld u als Intune-beheerder aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u als een Intune-beheerder aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Kies **Apparaatinschrijving** > **Android-inschrijving** > **Beheerde Google Play** > **Verbinding verbreken**.
 3. Kies **Ja** om de verbinding te verbreken en de registratie van alle Android Enterprise-apparaten bij Intune ongedaan te maken.
 

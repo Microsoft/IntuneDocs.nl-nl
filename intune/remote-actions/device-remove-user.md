@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 030d455c366a9c447444c247e9690e5d31613982
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 772cdbe203b0489a9b2312a1cc10ea1b3182b35d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508606"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713166"
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>Een gebruiker verwijderen van een gedeeld iOS-apparaat
 
@@ -41,12 +41,11 @@ Met de actie **Gebruiker verwijderen** kunt u een gebruiker verwijderen uit de l
 
 ## <a name="remove-a-user"></a>Een gebruiker verwijderen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer **Apparaten** in het deelvenster **Intune**.
-4. Selecteer **Alle apparaten** in het deelvenster **Apparaten**.
-5. Kies een iOS-apparaat in de lijst met apparaten die u beheert.
-6. Selecteer **Gebruikers** in het deelvenster voor het apparaat.
-7. Klik in de lijst met de rechtermuisknop op de gebruiker die u wilt verwijderen en kies vervolgens **Gebruiker verwijderen**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Alle apparaten**.
+3. Kies een iOS-apparaat in de lijst met apparaten die u beheert.
+4. Selecteer **Gebruikers** in het deelvenster voor het apparaat.
+5. Klik in de lijst met de rechtermuisknop op de gebruiker die u wilt verwijderen en kies vervolgens **Gebruiker verwijderen**.
 
 ## <a name="next-steps"></a>Volgende stappen
 

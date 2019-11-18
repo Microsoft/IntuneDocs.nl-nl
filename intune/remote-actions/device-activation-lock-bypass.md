@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a813d3bb574ae940b0003ac451b6e76638a0dd0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 02d0fb91df07d8bba233a6f814ffcf36d408e95d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508663"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712378"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Activeringsslot op iOS-apparaten onder supervisie overslaan met Intune
 
@@ -74,7 +74,7 @@ Voordat u een bypass van het activeringsslot op apparaten kunt uitvoeren, moet u
 
 Met de externe apparaatactie **Activeringsslot overslaan** verwijdert u het Activeringsslot van een iOS-apparaat zonder de Apple ID en het wachtwoord van de gebruiker te vereisen. Wanneer u het activeringsslot hebt overgeslagen, wordt het Activeringsslot opnieuw ingeschakeld zodra de app Zoek mijn iPhone wordt gestart. Sla het Activeringsslot alleen over als u fysiek toegang hebt tot het apparaat.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecteer op de blade **Intune** de optie **Apparaten**.
 4. Selecteer op de blade **Apparaten** de optie **Alle apparaten**.
 5. Selecteer in de lijst met apparaten die u beheert de externe apparaatactie **Activeringsslot overslaan**.

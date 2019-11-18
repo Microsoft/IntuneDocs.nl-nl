@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 50b91251572e45669f197df7ac4e5ff94caf47a1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892650"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755332"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Gebruikers- en apparaatprofielen toewijzen in Microsoft Intune
 
@@ -41,8 +41,8 @@ Zorg ervoor dat u de juiste rol hebt om beleid toe te wijzen. Zie [Op rollen geb
 
 ## <a name="assign-a-device-profile"></a>Een apparaatprofiel toewijzen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen**. Alle profielen worden vermeld.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Configuratieprofielen**. Alle profielen worden vermeld.
 3. Selecteer het profiel dat u wilt toewijzen > **Toewijzingen**.
 4. Geef aan of u groepen wilt **Opnemen** of **Uitsluiten** en selecteer vervolgens uw groepen. Wanneer u uw groepen hebt geselecteerd, kiest u een Azure AD-groep. Houd **Ctrl** ingedrukt om meerdere groepen te selecteren, en selecteer uw groepen.
 
@@ -54,7 +54,7 @@ Zorg ervoor dat u de juiste rol hebt om beleid toe te wijzen. Zie [Op rollen geb
 
 Als u het profiel toewijst, kunt u ook **Evalueren** hoeveel gebruikers moeten worden beïnvloed. Met deze functie worden gebruikers berekend, geen apparaten.
 
-1. Selecteer in Intune **Apparaatconfiguratie** > **Profielen**.
+1. Selecteer in het beheercentrum **Apparaten** > **Configuratieprofielen**.
 2. Selecteer een profiel > **Toewijzingen** > **Evalueren**. In een bericht wordt weergegeven op hoeveel gebruikers dit profiel is gericht.
 
 Als de knop **Evalueren** is uitgeschakeld, controleert u of het profiel is toegewezen aan een of meer groepen.

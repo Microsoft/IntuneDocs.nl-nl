@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f201cdac0f881ce03863704dd80d8635de52074a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e538204306ce80d6a13739fc981edf2748a622de
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505456"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713467"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Gebruikersinschrijving voor iOS en iPadOS instellen (preview)
 
@@ -43,7 +43,7 @@ Zie de [ondersteunde acties, wachtwoorden en andere opties voor gebruikersinschr
 
 Met een inschrijvingsprofiel worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving. 
 
-1. Kies in de Intune-portal **Apparaatinschrijving** > **Apple-inschrijving** > **Inschrijvingstypen (preview)**  > **Profiel maken** > **iOS**. In dit profiel bepaalt u de inschrijvingservaring voor uw iOS- en iPadOS-eind gebruikers op apparaten die niet zijn ingeschreven via een bedrijfsmethode van Apple. Als u wijzigingen wilt aanbrengen, kunt u dit profiel bewerken nadat u het hebt gemaakt.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Inschrijvingstypen (preview-versie)**  > **Profiel maken** > **iOS**. In dit profiel bepaalt u de inschrijvingservaring voor uw iOS- en iPadOS-eind gebruikers op apparaten die niet zijn ingeschreven via een bedrijfsmethode van Apple. Als u wijzigingen wilt aanbrengen, kunt u dit profiel bewerken nadat u het hebt gemaakt.
 
     ![Apple-inschrijvingsprofiel maken](./media/ios-user-enrollment/create-profile.png)
 
@@ -88,7 +88,7 @@ Met een inschrijvingsprofiel worden de instellingen gedefinieerd die worden toeg
 
 Als u meerdere typen inschrijvingsprofielen hebt gemaakt, is het mogelijk de volgorde waarin ze worden toegepast te wijzigen.
 
-1. Kies in Intune in Azure Portal de optie **Apparaatinschrijving** > **Apple-inschrijving** > **Inschrijvingstypen (preview)** .
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Inschrijvingstypen (preview-versie)** .
 2. Sleep de profielen in de lijst en zet deze neer in de volgorde waarin u deze wilt toepassen.
 
 Als er conflicten tussen profielen voor een gebruiker optreden, wordt het profiel met de hoogste prioriteit toegepast voor de gebruiker.

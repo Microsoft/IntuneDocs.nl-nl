@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/11/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
-ms.reviewer: chrisgre
+ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3cae06c3ce763fe8ca94bbed9bf35e8abef52c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502598"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713279"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Op apps gebaseerde voorwaardelijke toegang met Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 U kunt [beveiligingsbeleid voor apps in Intune](../apps/app-protection-policy.md) gebruiken om te helpen bij het beveiligen van uw bedrijfsgegevens op apparaten die zijn geregistreerd in Intune. U kunt ook beveiligingsbeleid voor apps gebruiken op apparaten die in het bezit zijn van werknemers en die niet zijn geregistreerd voor beheer in Intune. In dit geval moet u, zelfs als u het apparaat niet beheert, er nog steeds voor zorgen dat uw bedrijfsgegevens en -bronnen zijn beveiligd.
 
@@ -39,6 +37,7 @@ Met op apps gebaseerde voorwaardelijke toegang en beheer van client-apps voegt u
 U kunt de ingebouwde e-mailapps voor iOS en Android blokkeren wanneer u alleen toegang van de Microsoft Outlook-app tot Exchange Online toestaat. Bovendien kunt u de toegang tot SharePoint Online blokkeren voor apps waarvoor geen app-beveiligingsbeleid in Intune is ingesteld.
 
 ## <a name="prerequisites"></a>Vereisten
+
 Als u een op apps gebaseerd beleid voor voorwaardelijke toegang wilt maken, moet u over het volgende beschikken:
 
 - **Microsoft Enterprise Mobility + Security (EMS)** of een **Azure Active Directory (AD) Premium-abonnement**
@@ -57,7 +56,7 @@ Op apps gebaseerde voorwaardelijke toegang [biedt ook ondersteuning voor LOB-app
 In dit voorbeeld heeft de beheerder beveiligingsbeleid voor de Outlook-app toegepast, gevolgd door een regel voor voorwaardelijke toegang waarmee de Outlook-app wordt toegevoegd aan een lijst met goedgekeurde apps die kunnen worden gebruikt bij het openen van bedrijfs-e-mail.
 
 > [!NOTE]
-> De onderstaande stroomdiagramstructuur kan worden gebruikt voor andere beheerde apps.
+> Het volgende stroomdiagram kan worden gebruikt voor andere beheerde apps.
 
 ![Op apps gebaseerde voorwaardelijke toegang geïllustreerd in een stroomdiagram](./media/app-based-conditional-access-intune/ca-intune-common-ways-3.png)
 

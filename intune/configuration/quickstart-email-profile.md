@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 11/07/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4890410f5948cdc9bd1c6e3d85125d8e0713d9b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1929e58d3b22e4cb5bc5f6ad2121f2b6f903d023
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492328"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755134"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Quickstart: Een e-mailprofiel voor een apparaat voor iOS maken
 
@@ -33,39 +33,40 @@ Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor ee
 
 ## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
 
-Meld u aan bij [Intune](https://aka.ms/intuneportal) als globale beheerder of beheerder van een Intune-service. Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
+Meld u bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) aan als een globale beheerder of een Intune-servicebeheerder. Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
 
 ## <a name="create-an-ios-email-profile"></a>Een e-mailprofiel voor iOS maken
-1. Selecteer in Intune de optie **Apparaatconfiguratie** en vervolgens **Profielen**.
-2. Selecteer **Profiel maken**.
-   
+
+1. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
+
    ![Een e-mailprofiel voor iOS maken](./media/quickstart-email-profile/ios-create-profile.png)
 
-3. Voer onder **Naam** een beschrijvende naam in voor het nieuwe profiel. Voor dit voorbeeld voert u **iOS vereist zakelijk e-mailadres** in.
-4. Voer de volgende profielgegevens in:
-   - Voer voor **Beschrijving** de tekst **Vereisen dat iOS-apparaten het zakelijke e-mailadres gebruiken** in.
-   - Selecteer voor **Platform** de optie **iOS**.
-   - Selecteer voor **Profieltype** de optie **E-mail**.
-    
-     ![Een e-mailprofiel voor iOS maken](./media/quickstart-email-profile/ios-email-profile-name.png)
+2. Voer onder **Naam** een beschrijvende naam in voor het nieuwe profiel. Voor dit voorbeeld voert u **iOS vereist zakelijk e-mailadres** in.
+3. Voer de volgende profielgegevens in:
+    - Voer voor **Beschrijving** de tekst **Vereisen dat iOS-apparaten het zakelijke e-mailadres gebruiken** in.
+    - Selecteer voor **Platform** de optie **iOS**.
+    - Selecteer voor **Profieltype** de optie **E-mail**.
 
-5. Selecteer **Instellingen** en voer de volgende instellingen in (handhaaf de standaardwaarden voor andere instellingen):
+        ![Een e-mailprofiel voor iOS maken](./media/quickstart-email-profile/ios-email-profile-name.png)
+
+4. Selecteer **Instellingen** en voer de volgende instellingen in (handhaaf de standaardwaarden voor andere instellingen):
    - **E-mailserver**: voor deze snelstart voert u **outlook.office365.com** in. Met deze instelling wordt de Exchange-locatie (URL) opgegeven van de e-mailserver die de iOS-app voor e-mail gebruikt om verbinding te maken voor de e-mail.
    - **Accountnaam**: voer **het e-mailadres van het bedrijf** in.
    - **Het kenmerk Gebruikersnaam van AAD**: deze naam is het kenmerk dat Intune uit Azure Active Directory (Azure AD) ophaalt. In Intune wordt de gebruikersnaam voor dit profiel dynamisch gegenereerd met deze naam. Voor deze snelstartgids gaan we ervan uit dat we de **user principal name** gebruiken als de gebruikersnaam voor het profiel (bijvoorbeeld user1@contoso.com).
    - **Kenmerk van het e-mailadres van AAD**: deze instelling is het e-mailadres van Azure AD dat wordt gebruikt voor aanmelding bij Exchange. Selecteer voor deze snelstartgids **User principal name**.
    - **Verificatiemethode**: selecteer voor deze snelstart **Gebruikersnaam en wachtwoord**. (U kunt ook **Certificaat** kiezen als u al een certificaat hebt ingesteld voor Intune.)
-    
-     ![Een e-mailprofiel voor gebruik met iOS maken](./media/quickstart-email-profile/ios-email-profile.png)
 
-6. Selecteer **OK**.
-7. Selecteer **Maken**. Het nieuwe profiel wordt weergegeven in de lijst met profielen terwijl het dashboard wordt weergegeven, zodat u kunt controleren hoe het profiel is toegewezen aan iOS-apparaten en iOS-gebruikers.
-8. Selecteer **Toewijzingen**.
-9. Selecteer het tabblad **Opnemen** en vervolgens **Alle gebruikers en alle apparaten**. 
-10. Selecteer **Opslaan**.
+        ![Een e-mailprofiel voor gebruik met iOS maken](./media/quickstart-email-profile/ios-email-profile.png)
+
+5. Selecteer **OK** > **Maken**. Het nieuwe profiel wordt weergegeven in de lijst met profielen terwijl het dashboard wordt weergegeven, zodat u kunt controleren hoe het profiel is toegewezen aan iOS-apparaten en iOS-gebruikers.
+6. Selecteer **Toewijzingen**.
+7. Selecteer het tabblad **Opnemen** en vervolgens **Alle gebruikers en alle apparaten**. 
+8. Selecteer **Opslaan**.
 
 ## <a name="clean-up-resources"></a>Resources opschonen
+
 Als u niet van plan bent om het profiel dat u hebt gemaakt te gebruiken voor aanvullende zelfstudies of testen, kunt u dit nu verwijderen.
+
 1. Selecteer in Intune de optie **Apparaatconfiguratie** en vervolgens **Profielen**.
 2. Selecteer het testprofiel dat u hebt gemaakt, **iOS vereist zakelijk e-mailadres**.
 3. Selecteer de beletselteken ( **...** ) naast het profiel en selecteer vervolgens **Verwijderen**.

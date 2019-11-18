@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22a957e6df2c7f9126cbe9f22c4f3a96213551d3
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: af24b5fe33bc1e794529ef5a5ab6975eed4fb9cc
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892577"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709915"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Edge voor Windows 10 toevoegen aan Microsoft Intune
 
 Voordat u apps kunt implementeren, configureren, bewaken of beveiligen, moet u deze aan Intune toevoegen. Een van de beschikbare [app-typen](~/apps/apps-add.md#app-types-in-microsoft-intune) is Microsoft Edge *versie 77 en later*. Door dit app-type in Intune te selecteren, kunt u Microsoft Edge *versie 77 en later* toewijzen aan en installeren op door u beheerde Windows 10-apparaten.
 
 > [!IMPORTANT]
-> Dit app-type is in **openbare preview** en biedt Dev- en Beta-kanalen voor Windows 10. De implementatie is alleen in het Engels (EN) beschikbaar, maar eindgebruikers kunnen de weergavetaal wijzigen in de browser via **Instellingen** > **Talen**. Microsoft Edge is een Win32-app die wordt geïnstalleerd in systeemcontext en in soortgelijke architecturen (x86-app in een x86-besturingssysteem en x64-app in een x64-besturingssysteem). Automatische updates van Edge zijn bovendien standaard **Ingeschakeld** en Edge kan niet worden verwijderd.
+> Dit app-type is in **openbare preview** en biedt Dev- en Beta-kanalen voor Windows 10. De implementatie is alleen in het Engels (EN) beschikbaar, maar eindgebruikers kunnen de weergavetaal wijzigen in de browser via **Instellingen** > **Talen**. Microsoft Edge is een Win32-app die wordt geïnstalleerd in systeemcontext en in soortgelijke architecturen (x86-app in een x86-besturingssysteem en x64-app in een x64-besturingssysteem). Er worden bestaande Microsoft Edge-installaties door Intune gedetecteerd. Als de app in de gebruikerscontext is geïnstalleerd, wordt deze door een systeeminstallatie overschreven. Als de app in de systeemcontext is geïnstalleerd, wordt de installatie gerapporteerd. Automatische updates van Microsoft Edge is bovendien standaard **Ingeschakeld** en Microsoft Edge kan niet worden verwijderd.
 
 > [!NOTE]
 > Microsoft Edge *versie 77 en later* is ook beschikbaar voor macOS.

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/19/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,19 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0194bfaf1ec5e3120b6bd30eb6b2eb82c6ec2d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ca76ffe0c8fa42f1c2cf24fcdefd287140231220
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504726"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801621"
 ---
-# <a name="set-up-intune-certificate-connector-for-digicert-pki-platform"></a>Intune Certificate Connector instellen voor het DigiCert PKI-platform  
+# <a name="set-up-intune-certificate-connector-for-digicert-pki-platform"></a>Intune Certificate Connector instellen voor het DigiCert PKI-platform
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+U kunt Intune Certificate Connector gebruiken om PKCS-certificaten van het DigiCert PKI-platform uit te geven voor met Intune beheerde apparaten. U kunt de connector gebruiken met alleen een DigiCert-CA (certificeringsinstantie) of met zowel een DigiCert-CA als een Microsoft-CA.
 
-U kunt Intune Certificate Connector gebruiken om PKCS-certificaten van het DigiCert PKI-platform uit te geven voor met Intune beheerde apparaten. U kunt de connector gebruiken met alleen een DigiCert-CA (certificeringsinstantie) of met zowel een DigiCert-CA als een Microsoft-CA.  
-> [!TIP]  
+> [!TIP]
 > DigiCert heeft de websitebeveiliging van Symantec en verwante zakelijke PKI-oplossingen verkregen. Raadpleeg het [artikel over technische ondersteuning van Symantec](https://support.symantec.com/en_US/article.INFO4722.html) voor meer informatie over deze wijziging.
 
 Als u de Intune Certificate Connector al gebruikt om certificaten van een Microsoft-CA uit te geven met behulp van PKCS of System Center Endpoint Protection, kunt u dezelfde connector gebruiken om PKCS-certificaten van een DigiCert-CA te configureren en uit te geven. Nadat u de configuratie ter ondersteuning van de DigiCert-CA hebt voltooid, kan de Intune Certificate Connector de volgende certificaten uitgeven:
@@ -41,15 +40,16 @@ Als u de Intune Certificate Connector al gebruikt om certificaten van een Micros
 
 Als u de connector niet hebt geïnstalleerd maar deze wilt gebruiken voor zowel een Microsoft-CA als een DigiCert-CA, voltooit u eerst de connectorconfiguratie voor de Microsoft-CA. Ga vervolgens terug naar dit artikel om de connector te configureren om ook DigiCert te ondersteunen. Zie [Een certificaatprofiel configureren voor uw apparaten in Microsoft Intune](certificates-configure.md) voor meer informatie over certificaatprofielen en de connector.  
 
-Als u de connector gebruikt met alleen de DigiCert-CA, kunt u de instructies in dit artikel gebruiken om de connector te installeren en vervolgens te configureren. 
+Als u de connector gebruikt met alleen de DigiCert-CA, kunt u de instructies in dit artikel gebruiken om de connector te installeren en vervolgens te configureren.
 
-## <a name="prerequisites"></a>Vereisten  
+## <a name="prerequisites"></a>Vereisten
+
 - **Een actief abonnement op de DigiCert-CA**: Het abonnement is vereist om een RA-certificaat (registratie-instantie) te verkrijgen van de DigiCert-CA.
 
-## <a name="install-the-digicert-ra-certificate"></a>Het DigiCert RA-certificaat installeren  
- 
+## <a name="install-the-digicert-ra-certificate"></a>Het DigiCert RA-certificaat installeren
+
 1. Sla het volgende codefragment op in een bestand genaamd **certreq.ini** en werk dit bij zoals vereist (bijvoorbeeld: *onderwerpnaam in CN-indeling*).
- 
+
         [Version] 
         Signature="$Windows NT$" 
         
@@ -81,7 +81,6 @@ Als u de connector gebruikt met alleen de DigiCert-CA, kunt u de instructies in 
 
 3. Open het bestand request.csr in Kladblok en kopieer de CSR-inhoud in de volgende indeling:
 
-
         -----BEGIN NEW CERTIFICATE REQUEST-----
         MIID8TCCAtkCAQAwbTEMMAoGA1UEBhMDVVNBMQswCQYDVQQIDAJXQTEQMA4GA1UE
         …
@@ -92,11 +91,11 @@ Als u de connector gebruikt met alleen de DigiCert-CA, kunt u de instructies in 
 
 4. Meld u aan bij de DigiCert-CA en blader in de taken naar **RA-certificaat verkrijgen**.
 
-   a. Geef in het tekstvak de CSR-inhoud op uit stap 3. 
+   a. Geef in het tekstvak de CSR-inhoud op uit stap 3.
 
    b. Geef een beschrijvende naam op voor het certificaat.
 
-   c. Selecteer **Doorgaan**. 
+   c. Selecteer **Doorgaan**.
 
    d. Gebruik de opgegeven koppeling om het RA-certificaat te downloaden op de lokale computer.
 
@@ -104,23 +103,23 @@ Als u de connector gebruikt met alleen de DigiCert-CA, kunt u de instructies in 
 
    a. Open een MMC-console.
 
-   b. Klik op **Bestand** > **Modules toevoegen of verwijderen** > **Certificaat** > **Toevoegen**. 
+   b. Klik op **Bestand** > **Modules toevoegen of verwijderen** > **Certificaat** > **Toevoegen**.
 
    c. Selecteer **Computeraccount** > **Volgende**.
 
-   d. Selecteer **Lokale computer** > **Voltooien**. 
+   d. Selecteer **Lokale computer** > **Voltooien**.
 
    e. Selecteer **OK** in het venster **Modules toevoegen of verwijderen**. Vouw **Certificaten (lokale computer)**  > **Persoonlijk** > **Certificaten** uit.
 
-   f. Klik met de rechtermuisknop op het knooppunt **Certificaten** en selecteer **Alle taken** > **Importeren**.  
+   f. Klik met de rechtermuisknop op het knooppunt **Certificaten** en selecteer **Alle taken** > **Importeren**.
 
    g. Selecteer de locatie van het RA-certificaat dat u hebt gedownload van de DigiCert-CA, en klik vervolgens op **Volgende**.
 
-   h. Selecteer **Persoonlijke certificaatarchief** > **Volgende**. 
+   h. Selecteer **Persoonlijke certificaatarchief** > **Volgende**.
 
-   i. Selecteer **Voltooien** om het RA-certificaat en de bijbehorende persoonlijke sleutel te importeren in het **persoonlijke certificaatarchief van de lokale computer**.  
+   i. Selecteer **Voltooien** om het RA-certificaat en de bijbehorende persoonlijke sleutel te importeren in het **persoonlijke certificaatarchief van de lokale computer**.
 
-6. Het certificaat met persoonlijke sleutel exporteren en importeren: 
+6. Het certificaat met persoonlijke sleutel exporteren en importeren:
 
    a. Vouw **Certificaten (lokale computer)**  > **Persoonlijk** > **Certificaten** uit.
 
@@ -134,16 +133,17 @@ Als u de connector gebruikt met alleen de DigiCert-CA, kunt u de instructies in 
 
    f. Gebruik de procedure in stap 5 om het certificaat met persoonlijke sleutel te importeren in het **persoonlijke archief op de lokale computer**.
 
-   g. Leg een kopie van de vingerafdruk van het RA-certificaat vast, zonder spaties. Dit is een voorbeeld van de vingerafdruk: 
+   g. Leg een kopie van de vingerafdruk van het RA-certificaat vast, zonder spaties. Dit is een voorbeeld van de vingerafdruk:
 
         RA Cert Thumbprint: “EA7A4E0CD1A4F81CF0740527C31A57F6020C17C5”
-    
+
     > [!NOTE]
-    > Voor hulp bij het ophalen van het RA-certificaat van de DigiCert-CA, neemt u contact op met de [klantenondersteuning van DigiCert](mailto:enterprise-pkisupport@digicert.com).  
+    > Voor hulp bij het ophalen van het RA-certificaat van de DigiCert-CA, neemt u contact op met de [klantenondersteuning van DigiCert](mailto:enterprise-pkisupport@digicert.com).
 
 ## <a name="prepare-to-install-intune-certificate-connector"></a>De installatie van Microsoft Intune Certificate Connector voorbereiden
-> [!TIP]  
-> Deze sectie is van toepassing als u Intune Certificate Connector gebruikt met alleen een DigiCert-CA. Als u Intune Certificate Connector gebruikt met een Microsoft-CA en ondersteuning voor DigiCert-CA wilt toevoegen, gaat u verder naar [De connector configureren om DigiCert te ondersteunen](#configure-the-connector-to-support-digicert).  
+
+> [!TIP]
+> Deze sectie is van toepassing als u Intune Certificate Connector gebruikt met alleen een DigiCert-CA. Als u Intune Certificate Connector gebruikt met een Microsoft-CA en ondersteuning voor DigiCert-CA wilt toevoegen, gaat u verder naar [De connector configureren om DigiCert te ondersteunen](#configure-the-connector-to-support-digicert).
 
 1. Kies een van de versies van het Windows-besturingssysteem in de onderstaande lijst en installeer deze op een computer:
    * Windows Server 2012 R2 Datacenter
@@ -159,31 +159,31 @@ Als u de connector gebruikt met alleen de DigiCert-CA, kunt u de instructies in 
 
    a. Open **Configuratiescherm** > **Programma's en onderdelen** > **Windows-onderdelen in- of uitschakelen**.
 
-   b. Selecteer **.NET Framework 3.5** en installeer dit.  
+   b. Selecteer **.NET Framework 3.5** en installeer dit.
 
-## <a name="install-intune-certificate-connector-for-use-with-digicert"></a>Intune Certificate Connector installeren voor gebruik met DigiCert  
+## <a name="install-intune-certificate-connector-for-use-with-digicert"></a>Intune Certificate Connector installeren voor gebruik met DigiCert
 
-> [!TIP]  
-> Als u de Intune Certificate Connector gebruikt met een Microsoft-CA en ondersteuning voor DigiCert-CA wilt toevoegen, gaat u naar [De connector configureren om DigiCert te ondersteunen](#configure-the-connector-to-support-digicert).  
+> [!TIP]
+> Als u de Intune Certificate Connector gebruikt met een Microsoft-CA en ondersteuning voor DigiCert-CA wilt toevoegen, gaat u naar [De connector configureren om DigiCert te ondersteunen](#configure-the-connector-to-support-digicert).
 
 Download in de Intune-beheerportal de meest recente versie van Intune Certificate Connector, en volg deze instructies.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).  
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecteer **Apparaatconfiguratie** > **Certificaatconnectors** >  **+ Toevoegen**.  
+2. Selecteer **Tenantbeheer** > **Connectors en tokens** > **Certificaatconnectors** >  **+ Toevoegen**.
 
-3. Selecteer **De certificaatconnectorsoftware downloaden**. Sla de software op een locatie op waartoe u toegang toe hebt vanaf de server waarop u de software gaat installeren.  
+3. Klik op *De certificaatconnectorsoftware downloaden* voor de connector voor PKCS #12 en sla het bestand op op een locatie waartoe u toegang hebt vanaf de server waarop u de connector gaat installeren.
 
    ![De connectorsoftware downloaden](./media/certificates-digicert-configure/connector-download.png)
-   
-4. Voer op de server waarop u de connector wilt installeren **NDESConnectorSetup.exe** uit met verhoogde bevoegdheden. 
 
-5. Selecteer op de pagina **Installatieopties** de optie **PFX-distributie**.  
-   
+4. Voer op de server waarop u de connector wilt installeren **NDESConnectorSetup.exe** uit met verhoogde bevoegdheden.
+
+5. Selecteer op de pagina **Installatieopties** de optie **PFX-distributie**.
+
    ![PFX-distributie selecteren](./media/certificates-digicert-configure/digicert-ca-connector-install.png)
 
    > [!IMPORTANT]
-   > Als u de Intune Certificate Connector wilt gebruiken om certificaten van een Microsoft-CA en een DigiCert-CA uit te geven, selecteert u **SCEP- en PFX-profieldistributie**. 
+   > Als u de Intune Certificate Connector wilt gebruiken om certificaten van een Microsoft-CA en een DigiCert-CA uit te geven, selecteert u **SCEP- en PFX-profieldistributie**.
 
 6. Gebruik de standaardselecties om het instellen van de connector te voltooien.
 
@@ -197,7 +197,7 @@ Standaard wordt Intune Certificate Connector hier geïnstalleerd: **%ProgramFile
 
         <add key="RACertThumbprint"
         value="EA7A4E0CD1A4F81CF0740527C31A57F6020C17C5"/>
-   
+
    b. Sla het bestand op en sluit het.
 
 2. Open **services.msc**:
@@ -210,20 +210,18 @@ Standaard wordt Intune Certificate Connector hier geïnstalleerd: **%ProgramFile
 
 ## <a name="set-up-the-intune-administrator-account"></a>Het Intune-beheerdersaccount instellen  
 
-> [!TIP]  
-> Als u Intune Certificate Connector gebruikt met een Microsoft-CA en ondersteuning voor DigiCert-CA wilt toevoegen, gaat u verder naar [Een vertrouwd certificaatprofiel maken](#create-a-trusted-certificate-profile).   
+> [!TIP]
+> Als u Intune Certificate Connector gebruikt met een Microsoft-CA en ondersteuning voor DigiCert-CA wilt toevoegen, gaat u verder naar [Een vertrouwd certificaatprofiel maken](#create-a-trusted-certificate-profile).
  
-1. Open de gebruikersinterface van NDES Connector vanuit **%ProgramFiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe**.  
+1. Open de gebruikersinterface van NDES Connector vanuit **%ProgramFiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe**.
 
 2. Selecteer op het tabblad **Inschrijving** de optie **Aanmelden**.
 
 3. Geef uw beheerdersreferenties voor de Intune-tenant op.
 
 4. Selecteer **Aanmelden** en vervolgens **OK** om te bevestigen dat de inschrijving is geslaagd. Vervolgens kunt u de NDES Connector-gebruikersinterface sluiten.
-   
+
    ![NDES Connector-interface met het bericht: Inschrijven is geslaagd](./media/certificates-digicert-configure/certificates-digicert-configure-connector-configure.png)
-
-
 
 ## <a name="create-a-trusted-certificate-profile"></a>Een vertrouwd certificaatprofiel maken
 
@@ -231,36 +229,37 @@ De PKCS-certificaten die u wilt implementeren voor met Intune beheerde apparaten
 
 1. Een vertrouwd basiscertificaat ophalen van de DigiCert-CA:
 
-    a. Meld u aan bij de beheerportal van DigiCert-CA.
+   a. Meld u aan bij de beheerportal van DigiCert-CA.
 
-    b. Selecteer in **Taken** de optie **CA’s beheren**. 
+   b. Selecteer in **Taken** de optie **CA’s beheren**.
 
-    c. Selecteer de juiste CA in de lijst.  
+   c. Selecteer de juiste CA in de lijst.
 
-    d. Selecteer **Basiscertificaat downloaden** om het vertrouwde basiscertificaat te downloaden.
+   d. Selecteer **Basiscertificaat downloaden** om het vertrouwde basiscertificaat te downloaden.
 
 2. Maak een vertrouwd certificaatprofiel in de Intune-beheerportal:
 
-   a. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+   a. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-   b. Selecteer **Apparaatconfiguratie** > **Beheren** > **Profielen** > **Profiel maken**.
+   b. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 
-   c. Voer de gegevens in bij **Naam** en **Beschrijving** voor het vertrouwde certificaatprofiel.
+   c. Voer de volgende eigenschappen in:
 
-   d. Selecteer in de vervolgkeuzelijst **Platform** het apparaatplatform voor dit vertrouwde certificaat.
+      - **Naam** voor het profiel
+      - Een **beschrijving** instellen (optioneel)
+      - **Platform** waarvoor het profiel moet worden geïmplementeerd
+      - Stel **Profieltype** in op **Vertrouwd certificaat**
 
-   e. Selecteer in de vervolgkeuzelijst **Profieltype** de optie **Vertrouwd certificaat**.
+   d. Selecteer **Instellingen** en blader naar het CER-bestand met het vertrouwde basis-CA-certificaat dat u hebt geëxporteerd voor gebruik bij dit certificaatprofiel en selecteer vervolgens **OK**.
 
-   f. Blader naar het .cer-bestand van de vertrouwde basis-CA die u in de vorige stap hebt verkregen van de DigiCert-CA, en selecteer vervolgens **OK**.
+   e. Voor Windows 8.1- en Windows 10-apparaten selecteert u het **doelarchief** voor het vertrouwde certificaat vanuit:
+      - **Certificaatarchief van de computer – basis**
+      - **Certificaatarchief van de computer – tijdelijk**
+      - **Certificaatarchief van de gebruiker – tijdelijk**
 
-   g. Alleen voor Windows 8.1- en Windows 10-apparaten selecteert u het doelarchief voor het vertrouwde certificaat vanuit:    
-      - **Certificaatarchief van de computer – basis**  
-      - **Certificaatarchief van de computer – tijdelijk**  
-      - **Certificaatarchief van de gebruiker – tijdelijk** 
+   f. Als u klaar bent, kiest u **OK**, gaat u terug naar het deelvenster **Profiel maken** en kiest u **Maken**.  
 
-   h. Als u klaar bent, kiest u **OK**, gaat u terug naar het deelvenster **Profiel maken** en kiest u **Maken**.  
- 
-Het profiel wordt weergegeven in de lijst met profielen in het deelvenster **Apparaatconfiguratie – Profielen** met het profieltype **Vertrouwd certificaat**.  Zorg ervoor dat u dit profiel toewijst aan apparaten die certificaten gaan ontvangen. Zie [Apparaatprofielen toewijzen](../configuration/device-profile-assign.md) om dit profiel toe te wijzen aan groepen.
+  Het profiel wordt weergegeven in de lijst met profielen in het deelvenster **Apparaatconfiguratie – Profielen** met het profieltype **Vertrouwd certificaat**.  Zorg ervoor dat u dit profiel toewijst aan apparaten die certificaten gaan ontvangen. Zie [Apparaatprofielen toewijzen](../configuration/device-profile-assign.md) om dit profiel toe te wijzen aan groepen.
 
 
 ## <a name="get-the-certificate-profile-oid"></a>De certificaatprofiel-OID ophalen  
@@ -272,40 +271,40 @@ De certificaatprofiel-OID is gekoppeld aan een certificaatprofielsjabloon in de 
 3. Selecteer het certificaatprofiel dat u wilt gebruiken.
 4. Kopieer de certificaatprofiel-OID. Deze ziet er ongeveer uit zoals in het volgende voorbeeld:
 
- 
        Certificate Profile OID = 2.16.840.1.113733.1.16.1.2.3.1.1.47196109 
- 
 
 > [!NOTE]
 > Als u hulp nodig hebt bij het ophalen van de certificaatprofiel-OID, neemt u contact op met [klantenondersteuning van DigiCert](mailto:enterprise-pkisupport@digicert.com).
 
 ## <a name="create-a-pkcs-certificate-profile"></a>Een PKCS-certificaatprofiel maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).  
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Ga naar **Apparaatconfiguratie** >  **Profielen**, en selecteer **Profiel maken**.
+2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 
-3. Voer de gegevens in bij **Naam** en **Beschrijving** voor het PKCS-certificaatprofiel.  
+3. Voer de volgende eigenschappen in:
 
-4. Selecteer in de vervolgkeuzelijst **Platform** een ondersteund apparaatplatform.
+   - **Naam** voor het profiel
+   - Een **beschrijving** instellen (optioneel)
+   - **Platform** waarvoor het profiel moet worden geïmplementeerd
+   - Stel **Profieltype** in op **PKCS-certificaat**
 
-5. Selecteer in de vervolgkeuzelijst **Profieltype** de optie **PKCS-certificaat**.
- 
-6. Configureer in het deelvenster **PKCS-certificaat** parameters met de waarden uit de volgende tabel. Deze waarden zijn vereist om PKCS-certificaten uit een DigiCert-CA uit te geven via Intune Certificate Connector. 
+4. Configureer in het deelvenster **PKCS-certificaat** parameters met de waarden uit de volgende tabel. Deze waarden zijn vereist om PKCS-certificaten uit een DigiCert-CA uit te geven via Intune Certificate Connector.
 
    |Parameter van PKCS-certificaat | Waarde | Beschrijving |
    | --- | --- | --- |
    | Certificeringsinstantie | pki-ws.symauth.com | Deze waarde moet de FQDN van de basisservice van de DigiCert-CA zijn, zonder navolgende slashes. Als u niet zeker weet of dit de juiste FQDN voor de basisservice van uw DigiCert-CA-abonnement is, neemt u contact op met de klantenondersteuning van DigiCert. <br><br>*Ondanks de wijziging van Symantec in DigiCert blijft deze URL ongewijzigd*. <br><br> Als deze FQDN onjuist is, geeft Intune Certificate Connector geen PKCS-certificaten van de DigiCert-CA uit.| 
    | Naam van certificeringsinstantie | Symantec | Deze waarde moet de tekenreeks **Symantec** zijn. <br><br> Als deze waarde afwijkt, geeft Intune Certificate Connector geen PKCS-certificaten van de DigiCert-CA uit.|
-   | Naam van certificaatsjabloon | Certificaatprofiel-OID van de DigiCert-CA. Bijvoorbeeld: **2.16.840.1.113733.1.16.1.2.3.1.1.61904612**| Deze waarde moet een certificaatprofiel-OID zijn die [in het vorige gedeelte is verkregen](#get-the-certificate-profile-oid) via de certificaatprofielsjabloon van de DigiCert-CA. <br><br> Als Intune Certificate Connector geen certificaatsjabloon kan vinden die is gekoppeld aan deze certificaatprofiel-OID in de DigiCert-CA, worden er geen PKCS-certificaten uitgegeven van de DigiCert-CA.|  
+   | Naam van certificaatsjabloon | Certificaatprofiel-OID van de DigiCert-CA. Bijvoorbeeld: **2.16.840.1.113733.1.16.1.2.3.1.1.61904612**| Deze waarde moet een certificaatprofiel-OID zijn die [in het vorige gedeelte is verkregen](#get-the-certificate-profile-oid) via de certificaatprofielsjabloon van de DigiCert-CA. <br><br> Als Intune Certificate Connector geen certificaatsjabloon kan vinden die is gekoppeld aan deze certificaatprofiel-OID in de DigiCert-CA, worden er geen PKCS-certificaten uitgegeven van de DigiCert-CA.|
 
-   ![Selecties voor CA en certificaatsjabloon](./media/certificates-digicert-configure/certificates-digicert-pkcs-example.png)  
+   ![Selecties voor CA en certificaatsjabloon](./media/certificates-digicert-configure/certificates-digicert-pkcs-example.png)
 
    > [!NOTE]
    > Het PKCS-certificaatprofiel voor Windows-platforms hoeft niet te zijn gekoppeld aan een vertrouwd certificaatprofiel. Dit is echter wel vereist voor profielen voor andere platforms dan Windows, zoals Android.
-7. Voltooi de configuratie van het profiel om te voldoen aan uw zakelijke behoeften, en selecteer vervolgens **OK** om het profiel op te slaan. 
 
-8. Selecteer **Toewijzingen** en configureer een geschikte groep die dit profiel gaat ontvangen. Ten minste één gebruiker of apparaat moet deel uitmaken van de toegewezen groep.
+5. Voltooi de configuratie van het profiel om te voldoen aan uw zakelijke behoeften en selecteer vervolgens **Maken** om het profiel op te slaan.
+
+6. Selecteer op de pagina *Overzicht* van het nieuwe profiel de optie **Toewijzingen** en configureer een geschikte groep die dit profiel gaat ontvangen. Ten minste één gebruiker of apparaat moet deel uitmaken van de toegewezen groep.
  
 Nadat u de vorige stappen hebt voltooid, geeft Intune Certificate Connector PKCS-certificaten van de DigiCert-CA uit voor met Intune beheerde apparaten in de toegewezen groep. Deze certificaten zijn beschikbaar in het **persoonlijke** archief van het certificaatarchief van de **huidige gebruiker** op het met Intune beheerde apparaat.
 
@@ -314,7 +313,7 @@ Nadat u de vorige stappen hebt voltooid, geeft Intune Certificate Connector PKCS
 |Kenmerk | Ondersteunde indelingen in Intune | Ondersteunde indelingen in DigiCert Cloud-CA | result |
 | --- | --- | --- | --- |
 | Onderwerpnaam |Intune ondersteunt de onderwerpnaam in de volgende drie indelingen: <br><br> 1. Algemene naam <br> 2. Algemene naam met e-mailadres <br> 3. Algemene naam als e-mailadres <br><br> Bijvoorbeeld: <br><br> `CN = IWUser0 <br><br> E = IWUser0@samplendes.onmicrosoft.com` | De DigiCert-CA ondersteunt meer kenmerken.  Als u meer kenmerken wilt selecteren, moeten deze worden gedefinieerd met vaste waarden in de DigiCert-certificaatprofielsjabloon.| We gebruiken algemene naam of e-mailadres uit de PKCS-certificaataanvraag. <br><br> Als de geselecteerde kenmerken voor het Intune-certificaatprofiel en de DigiCert-certificaatprofielsjabloon niet overeenkomen, worden er geen certificaten uitgegeven van de DigiCert-CA.|
-| SAN | Intune ondersteunt alleen de volgende waarden voor SAN-velden: <br><br> **AltNameTypeEmail** <br> **AltNameTypeUpn** <br> **AltNameTypeOtherName** (gecodeerde waarde) | De DigiCert Cloud-CA ondersteunt deze parameters ook. Als u meer kenmerken wilt selecteren, moeten deze worden gedefinieerd met vaste waarden in de DigiCert-certificaatprofielsjabloon. <br><br> **AltNameTypeEmail**: Als dit type niet in het SAN wordt gevonden, gebruikt Intune Certificate Connector de waarde uit **AltNameTypeUpn**.  Als **AltNameTypeUpn** ook niet wordt gevonden in het SAN, gebruikt Intune de waarde van de onderwerpnaam als deze de indeling van een e-mailadres heeft.  Als het type nog steeds niet wordt gevonden, kan Intune Certificate Connector de certificaten niet uitgeven. <br><br> Voorbeeld: `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> **AltNameTypeUpn**: Als dit type niet wordt gevonden in het SAN, gebruikt Intune Certificate Connector de waarde van **AltNameTypeEmail**. Als **AltNameTypeEmail** ook niet in het SAN wordt gevonden, gebruikt Intune de waarde van de onderwerpnaam als deze de indeling van een e-mailadres heeft. Als het type nog steeds niet wordt gevonden, kan Intune Certificate Connector de certificaten niet uitgeven.  <br><br> Voorbeeld: `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> **AltNameTypeOtherName**: Als dit type niet in het SAN wordt gevonden, kan Intune Certificate Connector de certificaten niet uitgeven. <br><br> Voorbeeld: `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  De waarde van dit veld wordt alleen in de gecodeerde indeling (hexadecimale waarde) ondersteund in de DigiCert-CA. Elke waarde in dit veld wordt met Intune Certificate Connector geconverteerd naar base-64 codering voordat de certificaataanvraag wordt verzonden. *Intune Certificate Connector valideert niet of deze waarde al is gecodeerd.* | Geen |
+| SAN | Intune ondersteunt alleen de volgende waarden voor SAN-velden: <br><br> **AltNameTypeEmail** <br> **AltNameTypeUpn** <br> **AltNameTypeOtherName** (gecodeerde waarde) | De DigiCert Cloud-CA ondersteunt deze parameters ook. Als u meer kenmerken wilt selecteren, moeten deze worden gedefinieerd met vaste waarden in de DigiCert-certificaatprofielsjabloon. <br><br> **AltNameTypeEmail**: Als dit type niet in het SAN wordt gevonden, gebruikt Intune Certificate Connector de waarde uit **AltNameTypeUpn**.  Als **AltNameTypeUpn** ook niet wordt gevonden in het SAN, gebruikt Intune de waarde van de onderwerpnaam als deze de indeling van een e-mailadres heeft.  Als het type nog steeds niet wordt gevonden, kan Intune Certificate Connector de certificaten niet uitgeven. <br><br> Voorbeeld: `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> **AltNameTypeUpn**: Als dit type niet wordt gevonden in het SAN, gebruikt Intune Certificate Connector de waarde van **AltNameTypeEmail**. Als **AltNameTypeEmail** ook niet in het SAN wordt gevonden, gebruikt Intune de waarde van de onderwerpnaam als deze de indeling van een e-mailadres heeft. Als het type nog steeds niet wordt gevonden, kan Intune Certificate Connector de certificaten niet uitgeven.  <br><br> Voorbeeld: `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> **AltNameTypeOtherName**: Als dit type niet in het SAN wordt gevonden, kan Intune Certificate Connector de certificaten niet uitgeven. <br><br> Voorbeeld: `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  De waarde van dit veld wordt door de DigiCert-CA alleen in de gecodeerde indeling (hexadecimale waarde) ondersteund. Elke waarde in dit veld wordt met Intune Certificate Connector geconverteerd naar base-64 codering voordat de certificaataanvraag wordt verzonden. *Intune Certificate Connector valideert niet of deze waarde al is gecodeerd.* | Geen |
 
 ## <a name="troubleshooting"></a>Probleemoplossing
 
@@ -322,7 +321,7 @@ De logboeken van de Intune Certificate Connector-service zijn beschikbaar in **%
 
 | Probleem/foutbericht | Stappen voor het oplossen |
 | --- | --- |
-| Kan niet aanmelden met het beheerdersaccount van de Intune-tenant in de NDES Connector-gebruikersinterface. | Dit kan gebeuren wanneer de on-premises certificaatconnector niet is ingeschakeld in de Intune-beheerportal. Voer een van de volgende procedures uit om dit probleem op te lossen: <br><br> Vanuit de Silverlight-gebruikersinterface: <br> 1. Meld u aan bij de [Intune-beheerportal](https://admin.manage.microsoft.com). <br> 2. Selecteer **BEHEER**. <br> 3. Selecteer **Beheer van mobiele apparaten** > **Certificaatconnector**. <br> 4. Selecteer **On-premises certificaatconnector configureren**. <br> 5. Schakel het selectievakje **Certificaatconnector inschakelen** in. <br> 6. Selecteer **OK**. <br><br> Vanuit Azure Portal: <br> 1. Meld u aan bij [Azure Portal](https://portal.azure.com). <br> 2. Ga naar Microsoft Intune. <br> 3. Selecteer **Apparaatconfiguratie** > **Certificeringsinstantie**. <br> 4. Selecteer **Inschakelen**. <br><br> Nadat u de vorige stappen hebt voltooid vanuit de Silverlight-gebruikersinterface of de Azure-portal, probeert u zich met hetzelfde Intune-beheerdersaccount aan te melden in de NDES Connector-gebruikersinterface. |
+| Kan niet aanmelden met het beheerdersaccount van de Intune-tenant in de NDES Connector-gebruikersinterface. | Dit kan gebeuren wanneer de on-premises certificaatconnector niet is ingeschakeld in het Microsoft Endpoint Manager-beheercentrum. U kunt dit probleem als volgt oplossen: <br><br> 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431). <br> 2. Selecteer **Tenantbeheer** > **Connectors en tokens** > **Certificaatconnectors**. <br> 3. Zoek de certificaatconnector en controleer of deze is ingeschakeld. <br><br> Nadat u de vorige stappen hebt voltooid, meld u zich met hetzelfde Intune-tenantbeheerdersaccount aan in de gebruikersinterface van de NDES-connector. |
 | NDES Connector-certificaat kan niet worden gevonden. <br><br> System.ArgumentNullException: De waarde mag niet null zijn. | Intune Certificate Connector toont deze fout als het beheerdersaccount van de Intune-tenant zich nooit heeft aangemeld bij de interface van NDES Connector. <br><br> Als deze fout zich blijft voordoen, start u Intune Service Connector opnieuw. <br><br> 1. Open **services.msc**. <br> 2. Selecteer **Intune-connectorservice**. <br> 3. Klik met de rechtermuisknop en selecteer **Opnieuw starten**.|
 | NDES Connector: IssuePfx - Algemene uitzondering: <br> System.NullReferenceException: Objectverwijzing niet ingesteld op een exemplaar van een object. | Deze fout is tijdelijk. Start Intune Service Connector opnieuw. <br><br> 1. Open **services.msc**. <br> 2. Selecteer **Intune-connectorservice**. <br> 3. Klik met de rechtermuisknop en selecteer **Opnieuw starten**. |
 | DigiCert-provider: Ophalen van DigiCert-beleid is mislukt. <br><br>'Er is een time-out opgetreden voor de bewerking.' | Intune Certificate Connector heeft een foutbericht ontvangen over een time-out in een bewerking tijdens de communicatie met de DigiCert-CA. Als deze fout zich blijft voordoen, verhoogt u de time-outwaarde voor de verbinding en probeert u het opnieuw. <br><br> De time-out voor de verbinding verhogen: <br> 1. Ga naar de computer met NDES Connector. <br>2. Open het bestand **%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config** in Kladblok. <br> 3. Verhoog de time-outwaarde voor de volgende parameter: <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4. Start de Intune Certificate Connector-service opnieuw. <br><br> Neem contact op met de klantenondersteuning van DigiCert als het probleem zich blijft voordoen. |
@@ -336,4 +335,3 @@ De logboeken van de Intune Certificate Connector-service zijn beschikbaar in **%
 ## <a name="next-steps"></a>Volgende stappen
 
 Gebruik de informatie in dit artikel naast de informatie in [Wat zijn Microsoft Intune-apparaatprofielen?](../configuration/device-profiles.md) om de apparaten van uw organisatie en de certificaten erop te beheren.
-

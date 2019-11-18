@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86dc2e26e3c4091785cb6462a84e75b770634881
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1001a7a3fde9c203fdad3d146ace57736ae7128d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508548"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713447"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Apparaten synchroniseren met Intune om het meest recente beleid en de meest recente acties te verkrijgen
 
@@ -38,8 +38,8 @@ Met apparaatactie **Synchroniseren** wordt het geselecteerde apparaat direct ing
 
 ## <a name="sync-a-device"></a>Een apparaat synchroniseren
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 
-3. Selecteer **Apparaten** > **Alle apparaten** in **Intune**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431). 
+3. Selecteer **Apparaten** > **Alle apparaten**.
 4. Selecteer een apparaat in de lijst met apparaten die u beheert, selecteer een apparaat om het venster *Overzicht* te openen en selecteer vervolgens **Synchroniseren**.
 5. Selecteer **Ja** om de opdracht te bevestigen.
 

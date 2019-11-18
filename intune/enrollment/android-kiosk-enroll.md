@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc884850b70ff7621224c5b01a68d016f27504e
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: c06fe931bf17b812def3f22b3d9a5d92d9933e2b
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923381"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709466"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Intune-inschrijving van toegewezen Android Enterprise-apparaten instellen
 
@@ -59,7 +59,7 @@ Volg deze stappen om het beheer van een toegewezen Android Enterprise-apparaat i
 
 U moet een inschrijvingsprofiel maken, zodat u uw toegewezen apparaten kunt inschrijven. Bij het maken van het profiel ontvangt u een inschrijvingstoken (willekeurige tekenreeks) en een QR-code. Afhankelijk van het Android-besturingssysteem en de versie van het apparaat kunt u het token of de QR-code gebruiken om [het toegewezen apparaat in te schrijven](#enroll-the-dedicated-devices).
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Toegewezen apparaten in bedrijfseigendom**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Toegewezen apparaten in bedrijfseigendom**.
 2. Kies **Maken** en vul de vereiste velden in.
     - **Naam**: Typ een naam die u gebruikt wanneer u het profiel toewijst aan de dynamische apparaatgroep.
     - **Vervaldatum van het token**: De datum waarop het token verloopt. Google dwingt een maximum van 90 dagen af.
@@ -69,7 +69,7 @@ U moet een inschrijvingsprofiel maken, zodat u uw toegewezen apparaten kunt insc
 
 U kunt apps en beleidsregels zenden naar toegewezen of dynamische apparaatgroepen. U kunt dynamische AAD-apparaatgroepen configureren om apparaten die zijn geregistreerd met een bepaald inschrijvingsprofiel automatisch te vullen door deze stappen te volgen:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en kies **Groepen** > **Alle groepen** > **Nieuwe groep**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en kies **Groepen** > **Alle groepen** > **Nieuwe groep**.
 2. Vul in de blade **Groep** de vereiste velden als volgt in:
     - **Groepstype**: Beveiliging
     - **Groepsnaam**: Typ een intuïtieve naam (bijvoorbeeld Factory 1-apparaten)
@@ -92,7 +92,7 @@ U kunt apps en beleidsregels zenden naar toegewezen of dynamische apparaatgroepe
 
 Het vervangen of intrekken van een token of QR-code heeft geen effect op apparaten die al zijn geregistreerd.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Toegewezen apparaten in bedrijfseigendom**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Toegewezen apparaten in bedrijfseigendom**.
 2. Kies het profiel waarmee u wilt werken.
 3. Kies **Token**.
 4. Kies **Token vervangen** als u het token wilt vervangen.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3ee6240d9efb0d09c41a6a9b1260cd4189927a8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8c31bbd8eb9efb2b748163223ce1b8fa555f0dc6
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509429"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713538"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Wat is Microsoft Intune-apparaatbeheer?
 
@@ -33,7 +33,7 @@ De workload **Apparaten** biedt inzicht in de apparaten die u beheert en geeft u
 
 ## <a name="get-to-your-devices"></a>Uw apparaten ophalen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecteer **Apparaten**. Deze weergave bevat gedetailleerde informatie over de afzonderlijke apparaten en wat u kunt ermee kunt doen, inclusief:
 
    - **Overzicht** bevat een visuele momentopname van de ingeschreven apparaten en laat zien hoeveel apparaten de verschillende platformen gebruiken, waaronder Android, iOS en meer.

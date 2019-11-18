@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff1dc2565ef52f81619abe8f14e78c58da0fce7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 294f06b078b06cfba9376ba6db0eb42cb884e141
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508629"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712311"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Nieuwe start gebruiken om Windows 10-apparaten opnieuw in te stellen met Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "72508629"
 
 Met de apparaatactie **Nieuwe start** worden alle apps verwijderd die zijn geïnstalleerd op Windows 10-pc's, versie 1703 of later. Met Nieuwe start worden vooraf geïnstalleerde apps (OEM-apps) verwijderd die doorgaans op nieuwe pc's staan. 
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com) en ga naar > **Microsoft Intune** > **Apparaten** > **Alle apparaten**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en selecteer **Apparaten** > **Alle apparaten**.
 2. Kies in de lijst met apparaten die u beheert een Windows 10-desktopapparaat.
 3. Klik op **Nieuwe start**. 
 4. Selecteer **Gebruikersgegevens op dit apparaat behouden** om:

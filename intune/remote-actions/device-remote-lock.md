@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26d0f2cf08786a36f51982901094969d4d014755
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: bce5a89ecc49952f5c21536c429e9cd3309b13c3
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509381"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712265"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Apparaten extern vergrendelen met Intune
 
@@ -49,7 +49,7 @@ Met de apparaatactie **Extern vergrendelen** wordt het apparaat vergrendeld. De 
 
 ## <a name="remote-lock-a-device"></a>Een apparaat vergrendelen op afstand
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecteer **Apparaten** > **Alle apparaten**.
 4. Selecteer een apparaat in de lijst met apparaten en selecteer vervolgens de actie **Extern vergrendelen**.
 

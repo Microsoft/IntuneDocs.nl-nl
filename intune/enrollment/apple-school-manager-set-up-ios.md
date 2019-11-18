@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 645cb2c920d3da56bb0267073c1951d0b72d73de
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3a62a048ebb15bac620ad9aad57ed3903e9568cf
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505641"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712973"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Inschrijving van iOS-apparaten instellen met Apple School Manager
 
@@ -48,7 +48,7 @@ Voordat u iOS-bedrijfsapparaten met Apple School Manager kunt inschrijven, hebt 
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>Stap 1. Het openbare-sleutelcertificaat van Intune downloaden dat is vereist voor het maken van een Apple-token
 
-1. Kies **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > **Toevoegen** in [Intune](https://aka.ms/intuneportal).
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > **Toevoegen**.
 
    ![Een token voor het inschrijvingsprogramma ophalen.](./media/apple-school-manager-set-up-ios/image01.png)
 
@@ -71,7 +71,7 @@ Voordat u iOS-bedrijfsapparaten met Apple School Manager kunt inschrijven, hebt 
 
 ### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Stap 3. De Apple-id opslaan die u hebt gebruikt om dit token te maken
 
-Voer in Intune in de Apple-portal de Apple-id in, zodat u deze altijd kunt terugvinden.
+Geef in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de Apple-id op voor toekomstige referentie.
 
 ![Schermopname van het invoeren van de Apple ID die is gebruikt voor het maken van het token voor het inschrijvingsprogramma en het uploaden van het token.](./media/apple-school-manager-set-up-ios/image03.png)
 
@@ -81,7 +81,7 @@ Ga in het venster **Apple-token** naar het certificaatbestand (.pem), kies **Ope
 ## <a name="create-an-apple-enrollment-profile"></a>Een Apple-inschrijvingsprofiel maken
 Na installatie van het token kunt u een inschrijvingsprofiel voor Apple School-apparaten maken. Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving.
 
-1. Kies **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** in [Intune](https://aka.ms/intuneportal).
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma**.
 2. Selecteer een token, kies **Profielen** en kies vervolgens **Profiel maken**.
 
 3. Voer in het venster **Profiel maken** een **naam** en een **beschrijving** voor het profiel in voor administratieve doeleinden. Gebruikers zien deze gegevens niet. U kunt dit veld **Naam** gebruiken om een dynamische groep te maken in Azure Active Directory. Gebruik de profielnaam om de parameter enrollmentProfileName te definiëren om apparaten aan dit inschrijvingsprofiel toe te wijzen. Meer informatie over [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#rules-for-devices) (dynamische Azure Active Directory-groepen).
@@ -155,7 +155,7 @@ Na installatie van het token kunt u een inschrijvingsprofiel voor Apple School-a
 ## <a name="connect-school-data-sync"></a>Verbinding maken met Schoolgegevens synchroniseren
 (Optioneel) Apple School Manager ondersteunt het synchroniseren van gegevens van lesroosters met Azure Active Directory (AD) met behulp van Microsoft School Data Sync (SDS). U kunt slechts één token synchroniseren met SDS. Als u een ander token met School Data Sync hebt ingesteld, wordt SDS verwijderd van het token dat het eerder had. Het huidige token wordt vervangen door een nieuwe verbinding. Voltooi de volgende stappen voor het gebruik van SDS om schoolgegevens te synchroniseren.
 
-1. Kies **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** in [Intune](https://aka.ms/intuneportal).
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma**.
 2. Selecteer een Apple School Manager-token en kies vervolgens **School Data Sync**.
 3. Kies onder **School Data Sync** voor **Toestaan**. Met deze instelling kan Intune verbinding maken met SDS in Office 365.
 4. Als u een verbinding tussen Apple School Manager en Azure AD wilt maken, kiest u **Microsoft School Data Sync instellen**. Meer informatie over [het instellen van Microsoft School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1).
@@ -165,7 +165,7 @@ Na installatie van het token kunt u een inschrijvingsprofiel voor Apple School-a
 
 Nu Intune toestemming heeft om uw Apple School Manager-apparaten te beheren, kunt u Intune synchroniseren met de Apple-service om uw beheerde apparaten weer te geven in Intune.
 
-Kies **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor inschrijvingsprogramma** > kies een token uit de lijst > **Apparaten** > **Synchroniseren** in [Intune](https://aka.ms/intuneportal). ![Schermafbeelding van het knooppunt Apparaten voor het inschrijvingsprogramma en de koppeling Synchronisatie.](./media/apple-school-manager-set-up-ios/image06.png)
+Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token in de lijst > **Apparaten** > **Synchroniseren**. ![Schermafbeelding van het knooppunt Apparaten voor het inschrijvingsprogramma en de koppeling Synchronisatie.](./media/apple-school-manager-set-up-ios/image06.png)
 
 Intune legt de volgende beperkingen op om aan de voorwaarden van Apple voor acceptabel verkeer van het inschrijvingsprogramma te voldoen:
 - Een volledige synchronisatie kan niet vaker dan eens in de zeven dagen worden uitgevoerd. Tijdens volledige synchronisatie wordt elk Apple-serienummer vernieuwd dat aan Intune is toegewezen. Als een volledige synchronisatie wordt uitgevoerd binnen zeven dagen na de vorige volledige synchronisatie, vernieuwt Intune alleen serienummers die nog niet aanwezig zijn in Intune.
@@ -178,7 +178,7 @@ Intune legt de volgende beperkingen op om aan de voorwaarden van Apple voor acce
 ## <a name="assign-a-profile-to-devices"></a>Een profiel aan apparaten toewijzen
 Apple School Manager-apparaten die worden beheerd door Intune, moeten een profiel voor het inschrijvingsprogramma toegewezen krijgen voordat ze worden ingeschreven.
 
-1. Kies in [Intune](https://aka.ms/intuneportal) voor **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor inschrijvingsprogramma** > kies een token uit de lijst.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token in de lijst.
 2. Kies **Apparaten** > kies apparaten uit de lijst > **Profiel toewijzen**.
 3. Kies onder **Profiel toewijzen** een profiel voor de apparaten en kies vervolgens **Toewijzen**.
 

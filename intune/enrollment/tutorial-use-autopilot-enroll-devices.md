@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39ea8b3859d3d2525433c4cafdf566e7a2c8d2ab
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f8e319c68abd8965b84323bc3b7a5451dee42bc2
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509198"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709185"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Zelfstudie: Autopilot gebruiken om Windows-apparaten in Intune in te schrijven
 
@@ -60,7 +60,7 @@ De eerste stap bij het instellen van Windows Autopilot bestaat uit het toevoegen
 
 2. Sla het CSV-bestand op.
 
-3. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > **Importeren**.
+3. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > **Importeren**.
 
     ![Schermafbeelding van Windows Autopilot-apparaten](./media/tutorial-use-autopilot-enroll-devices/autopilot-import-device.png)
 
@@ -78,7 +78,7 @@ De eerste stap bij het instellen van Windows Autopilot bestaat uit het toevoegen
 
 Vervolgens gaat u een apparaatgroep maken en de Autopilot-apparaten die u zojuist hebt geladen, erin plaatsen.
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Groepen** > **Nieuwe groep**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Groepen** > **Nieuwe groep**.
 2. Op de blade **Groep**:
     1. Als **groepstype** kiest u **Beveiliging**.
     2. Als **groepsnaam** voert u *Autopilot-groep* in. Als **groepsbeschrijving** voert u *testgroep voor Autopilot-apparaten* in.
@@ -90,7 +90,7 @@ Vervolgens gaat u een apparaatgroep maken en de Autopilot-apparaten die u zojuis
 
 Nadat u een groep apparaten hebt gemaakt, moet u een implementatieprofiel maken zodat u de Autopilot-apparaten kunt configureren.
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaatprofielen** > **Profiel maken**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Implementatieprofielen** > **Profiel maken**.
 2. Geef op de pagina **Basisinformatie** de waarde *Autopilot-profiel* op voor **Naam**. Als **beschrijving** voert u *Testprofiel voor Autopilot-apparaten* in.
 3. Stel **Alle doelapparaten converteren naar Autopilot** in op **Ja**. Deze instelling zorgt ervoor dat alle apparaten in de lijst worden ingeschreven bij de Autopilot-implementatieservice. Het kan 48 uur duren voordat de registratie is verwerkt.
 4. Selecteer **Volgende**.
@@ -116,7 +116,7 @@ Als u de Autopilot-apparaten niet meer wilt gebruiken, kunt u deze verwijderen.
 
 1. Als de apparaten zijn ingeschreven bij Intune, moet u ze eerst [verwijderen uit de Azure Active Directory-portal](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-2. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten**.
+2. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten**.
 
 3. Kies onder **Windows Autopilot-apparaten** de apparaten die u wilt verwijderen, en kies vervolgens **Verwijderen**.
 

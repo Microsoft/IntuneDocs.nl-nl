@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac9d22ff4b203a4e7a85121df6c021eec1bcd1e3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d03859d5775193e6bbc482c06b28942a1a5bce2f
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508537"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712144"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer gebruiken voor het extern beheren van Intune-apparaten
 
@@ -47,8 +47,8 @@ Door TeamViewer te gebruiken, kunt u met de TeamViewer voor Intune-connector Tea
 
 Als u hulp op afstand voor apparaten wilt bieden, configureert u de Intune TeamViewer-connector door de volgende stappen uit te voeren:
 
-1. In de [Azure-portal](https://portal.azure.com) selecteert u **Alle services** en zoekt u naar **Microsoft Intune**.
-2. In **Microsoft Intune** selecteert u **Apparaten** en selecteert u vervolgens **TeamViewer-connector**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **TeamViewer-connector**.
 3. Selecteer **Verbinding maken** en accepteer de gebruiksrechtovereenkomst.
 4. Selecteer **Aanmelden bij TeamViewer voor goedkeuring**.
 5. Er wordt een webpagina van de TeamViewer-site geopend. Voer de referenties van uw TeamViewer-licentie in en klik vervolgens op **Aanmelden**.
@@ -57,8 +57,8 @@ Als u hulp op afstand voor apparaten wilt bieden, configureert u de Intune TeamV
 
 Nadat de connector is geconfigureerd, kunt u een apparaat op afstand beheren. Voer de volgende stappen uit: 
 
-1. In de [Azure-portal](https://portal.azure.com) selecteert u **Alle services** en zoekt u naar **Microsoft Intune**.
-2. In **Microsoft Intune** selecteert u **Apparaten** en selecteert u vervolgens **Alle apparaten**.
+1. In het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** en selecteer vervolgens **Alle apparaten**.
 3. Selecteer in de lijst het apparaat dat u extern wilt beheren. Selecteer in de apparaateigenschappen **Nieuwe sessie van hulp op afstand**.
 4. Nadat er een verbinding tussen Intune en de TeamViewer-service tot stand is gebracht, worden er enkele gegevens over het apparaat weergegeven. Kies **Verbinden** om de externe sessie te starten.
 

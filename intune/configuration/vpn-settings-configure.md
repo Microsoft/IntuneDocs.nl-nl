@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 59a1b5679b81a8de90e39d6ec13bbe87dac90947
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491763"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984176"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>VPN-profielen maken om verbinding te maken met VPN-servers in Intune
 
@@ -50,7 +50,7 @@ U kunt VPN-profielen met de volgende verbindingstypen maken:
 |Check Point Capsule VPN|- Android<br/>- Android Enterprise-werkprofielen<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |Cisco AnyConnect|- Android<br/>- Android Enterprise-werkprofielen<br/>- Android Enterprise-apparaateigenaar (volledig beheerd)<br/>- iOS<br/>- macOS|
 |Cisco (IPsec)|iOS|
-|Citrix SSO|- Android<br/>- Android Enterprise-werkprofielen: [App-configuratiebeleid](../apps/app-configuration-policies-use-android.md) gebruiken<br/>- iOS<br/>- Windows 10|
+|Citrix SSO|- Android<br/>- Android Enterprise-werkprofielen: [App-configuratiebeleid](../apps/app-configuration-policies-use-android.md) gebruiken<br/>- Android Enterprise-apparaateigenaar (volledig beheerd): [App-configuratiebeleid](../apps/app-configuration-policies-use-android.md) gebruiken<br/>- iOS<br/>- Windows 10|
 |Aangepaste VPN|- iOS<br/>- macOS|
 |F5-toegang|- Android<br/>- Android Enterprise-werkprofielen<br/>- Android Enterprise-apparaateigenaar (volledig beheerd)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |IKEv2| - iOS<br/>- Windows 10|
@@ -68,8 +68,9 @@ Zie [Profielen met aangepaste instellingen maken](custom-settings-configure.md) 
 
 ## <a name="create-a-device-profile"></a>Een apparaatprofiel maken
 
-1. Selecteer in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) de optie **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
-2. Voer de volgende eigenschappen in:
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
+3. Voer de volgende eigenschappen in:
 
     - **Naam**: Voer een beschrijvende naam in voor het profiel. Geef uw profielen een naam zodat u ze later eenvoudig kunt identificeren. Een goede profielnaam is bijvoorbeeld **VPN-profiel voor hele bedrijf**.
     - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
@@ -86,7 +87,7 @@ Zie [Profielen met aangepaste instellingen maken](custom-settings-configure.md) 
 
     - **Profieltype**: Selecteer **VPN**.
 
-3. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg de volgende artikelen voor gedetailleerde instellingen voor elk platform:
+4. Welke instellingen u kunt configureren, is afhankelijk van het platform dat u hebt gekozen. Raadpleeg de volgende artikelen voor gedetailleerde instellingen voor elk platform:
 
     - [Android-instellingen](vpn-settings-android.md)
     - [Instellingen voor Android Enterprise](vpn-settings-android-enterprise.md)
@@ -96,7 +97,7 @@ Zie [Profielen met aangepaste instellingen maken](custom-settings-configure.md) 
     - [Windows 8.1-instellingen](vpn-settings-windows-8-1.md)
     - [Instellingen voor Windows 10](vpn-settings-windows-10.md) (inclusief Windows Holographic for Business)
 
-4. Wanneer u klaar bent, **maakt** u uw profiel.
+5. Wanneer u klaar bent, selecteert u **OK** > **Maken** om uw wijzigingen op te slaan.
 
 Het profiel wordt gemaakt en wordt weergegeven in de profielenlijst. Zie [Apparaatprofielen toewijzen](device-profile-assign.md) om dit profiel toe te wijzen aan groepen.
 

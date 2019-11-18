@@ -5,22 +5,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/31/2018
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: ericor
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84103c6264431773ab5928f1da22c37a80cc9036
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15af657ec63c664d91c370fa0f18ff8c4f140b47
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492706"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755223"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Mobiele eSIM-profielen configureren in Intune - Openbare preview
 
@@ -69,11 +70,10 @@ De volgende apparaten zijn geschikt voor eSIM en zijn momenteel verkrijgbaar. Co
 
 De activeringscodes voor mobiele apparaten worden door uw provider aangeleverd in een CSV-bestand. Wanneer u over het bestand beschikt, voegt u het als volgt toe aan Intune:
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com/).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Apparaatconfiguratie** > **Mobiele eSIM-profielen** > **Toevoegen**.
-4. Selecteer het CSV-bestand dat uw activeringscodes bevat.
-5. Selecteer **OK** om uw wijzigingen op te slaan.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Mobiele eSIM-profielen** > **Toevoegen**.
+3. Selecteer het CSV-bestand dat uw activeringscodes bevat.
+4. Selecteer **OK** om uw wijzigingen op te slaan.
 
 ### <a name="csv-file-requirements"></a>Vereisten voor het CSV-bestand
 
@@ -111,8 +111,8 @@ Maak een apparaatgroep die de voor eSIM geschikte apparaten bevat. In [Groepen t
 
 Wijs het profiel toe aan de Azure AD-groep die uw eSIM-apparaten bevat.
 
-1. Selecteer in [Azure Portal](https://portal.azure.com/) **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-2. Selecteer **Apparaatconfiguratie** > **Mobiele eSIM-profielen** > **Profielen**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Mobiele eSIM-profielen**.
 3. In de lijst met profielen selecteert u de mobiele eSIM-abonnementsgroep die u wilt toewijzen en selecteert u vervolgens **Toewijzingen**.
 4. Geef aan of u groepen wilt **opnemen** of **uitsluiten** en selecteer vervolgens de gewenste groepen.
 
@@ -129,15 +129,15 @@ eSIM-activeringscodes worden één keer gebruikt. Wanneer Intune een activerings
 
 Wanneer u het profiel hebt toegewezen, kunt u de implementatiestatus van een abonnementsgroep controleren.
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com/).
-2. Selecteer **Alle services**, filter op **Intune** en selecteer **Microsoft Intune**.
-3. Selecteer **Apparaatconfiguratie** > **Mobiele eSIM-profielen**. Al uw bestaande mobiele eSIM-abonnementsgroepen worden weergegeven.
-4. Selecteer een abonnement en bekijk de **implementatiestatus**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Mobiele eSIM-profielen**. Al uw bestaande mobiele eSIM-abonnementsgroepen worden weergegeven.
+3. Selecteer een abonnement en bekijk de **implementatiestatus**.
 
 ### <a name="check-the-profile-status"></a>De profielstatus controleren
+
 Nadat u een apparaatprofiel hebt gemaakt, biedt Intune grafieken. In deze grafieken wordt de status van een profiel weergegeven, zoals of het is toegewezen aan apparaten en of op het apparaat een conflict bestaat.
 
-1. Selecteer **Apparaatconfiguratie** > **Mobiele eSIM-profielen** > selecteer een bestaand abonnement.
+1. Selecteer **Apparaten** > **Mobiele eSIM-profielen** > Selecteer een bestaand abonnement.
 2. Op het tabblad **Overzicht** ziet u in de bovenste grafiek hoeveel apparaten er zijn toegewezen aan een specifieke geïmplementeerde mobiele eSIM-abonnementsgroep.
 
     De grafiek geeft ook voor andere platforms het aantal apparaten weer dat is toegewezen aan hetzelfde apparaatprofiel.
@@ -153,7 +153,7 @@ Nadat u een apparaatprofiel hebt gemaakt, biedt Intune grafieken. In deze grafie
 
 U kunt een gedetailleerde lijst met de apparaten uit Apparaatstatus controleren en bekijken.**
 
-1. Selecteer **Apparaatconfiguratie** > **Mobiele eSIM-profielen** > selecteer een bestaand abonnement.
+1. Selecteer **Apparaten** > **Mobiele eSIM-profielen** > Selecteer een bestaand abonnement.
 2. Selecteer **Apparaatstatus**. Intune bevat aanvullende informatie over het apparaat:
 
     - **Apparaatnaam**: De naam van het doelapparaat

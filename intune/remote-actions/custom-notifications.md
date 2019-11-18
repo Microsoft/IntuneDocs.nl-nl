@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 002989bd61167d6f0d20e2c5cb3fa80a4051a99c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a8393bbc012861199bd99d97a62ab3e659c15d15
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508673"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713244"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Aangepaste meldingen verzenden in Intune  
 
@@ -69,7 +69,7 @@ Aangepaste meldingen hebben een korte titel en een hoofdtekst van maximaal 500 t
 
 ## <a name="send-a-custom-notification-to-groups"></a>Een aangepaste melding verzenden naar groepen  
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) met een account met machtigingen voor het maken en verzenden van meldingen en ga dan naar **Apparaten** > **Aangepaste meldingen verzenden**.  
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) met een account met machtigingen voor het maken en verzenden van meldingen en ga naar **Apparaten** > **Aangepaste meldingen verzenden**.  
 
 2. Geef op het tabblad Basisinformatie de volgende informatie op en selecteer **Volgende** om door te gaan.  
    - **Titel**: geef deze melding een titel. De titel mag maximaal 50 tekens lang zijn.  
@@ -89,7 +89,7 @@ Intune volgt verzonden aangepaste meldingen niet. Apparaten registreren ontvangs
 
 ## <a name="send-a-custom-notification-to-a-single-device"></a>Een aangepaste melding verzenden naar één apparaat  
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) met een account met machtigingen voor het maken en verzenden van meldingen, en ga dan naar **Apparaten** > **Alle apparaten**.  
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) met een account met machtigingen voor het maken en verzenden van meldingen en ga naar **Apparaten** > **Alle apparaten**.  
 
 2. Selecteer het apparaat waarnaar u een melding wilt verzenden.  
 

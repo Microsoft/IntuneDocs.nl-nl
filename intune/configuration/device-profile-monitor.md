@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1c68421bf7c5dea0d93d45e0cbb748204d0f66b
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 4dc349ef7af2683b4dafeaa1cc09f5b7a727e843
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749391"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755306"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Apparaatprofielen controleren in Microsoft Intune
 
@@ -32,8 +32,8 @@ Intune bevat functies om u te helpen bij het controleren en beheren van uw appar
 
 ## <a name="view-existing-profiles"></a>Bestaande profielen weergeven
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Configuratieprofielen**.
 
 Al uw bestaande profielen worden weergegeven en bevatten gegevens zoals het platform en laat zien of het profiel is toegewezen aan een of meer apparaten.
 
