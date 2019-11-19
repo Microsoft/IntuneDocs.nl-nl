@@ -1,11 +1,11 @@
 ---
 title: Instellingen voor apparaten met Windows Holographic for Business in Microsoft Intune - Azure | Microsoft Docs
-description: Meer informatie over de configuratie van instellingen voor apparaatbeperkingen in Microsoft Intune voor Windows Holographic for Business, waaronder uitschrijving, geolocatie, wachtwoorden, apps installeren uit de App Store, cookies en pop-ups in Microsoft Edge, Windows Defender, zoeken, cloud en opslag, bluetooth-connectiviteit, systeemtijd en gebruiksgegevens in Azure.
+description: Meer informatie over de configuratie van instellingen voor apparaatbeperkingen in Microsoft Intune voor Windows Holographic for Business, waaronder uitschrijving, geolocatie, wachtwoorden, apps installeren uit de App Store, cookies en pop-ups in Microsoft Edge, Microsoft Defender, zoeken, cloud en opslag, bluetooth-connectiviteit, systeemtijd en gebruiksgegevens in Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28a697b841d8b264a19d97059d272b7119bc7f4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1f90a5a13859ff19765e22444a84b9c11405af73
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493916"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059494"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Windows Holographic for Business-apparaatinstellingen voor het toestaan of beperken van functies met behulp van Intune
 
@@ -57,7 +57,7 @@ Dit artikel bevat een overzicht en beschrijving van de verschillende instellinge
 - **Wachtwoordbeheer**: hiermee schakelt u de functie Wachtwoordbeheer van Microsoft Edge in of uit.
 - **Do Not Track-headers verzenden**: hiermee configureert u de Microsoft Edge-browser zodanig dat er verzoeken om niet te worden gevolgd worden verzonden naar websites die gebruikers bezoeken.
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
+## <a name="microsoft-defender-smart-screen"></a>Micro soft Defender Smart Screen
 
 - **SmartScreen voor Microsoft Edge**: hiermee schakelt u Microsoft Edge SmartScreen in voor toegang tot site- en bestanddownloads.
 

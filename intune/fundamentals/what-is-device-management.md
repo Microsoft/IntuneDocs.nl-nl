@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise bevat Microsoft Intune. Bekijk hoe op welk
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfa7e34d19465eb43b5eb9cd68b7513545938fa8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504776"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058531"
 ---
 # <a name="device-management-overview"></a>Overzicht van apparaatbeheer
 
@@ -84,7 +84,7 @@ Wanneer u Intune instelt, kunt u er ook voor kiezen om alleen Azure Portal te ge
 
 ## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>IT-taken vereenvoudigen via het beheercentrum Apparaatbeheer
 
-Het [beheercentrum Apparaatbeheer](https://devicemanagement.microsoft.com/) biedt alles wat u nodig hebt om taken voor uw mobiele apparaten te beheren en voltooien. Deze werkruimte biedt services voor apparaatbeheer (inclusief Intune en Azure Active Directory) en voor het beheren van apps van klanten.
+Het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) biedt alles wat u nodig hebt om taken voor uw mobiele apparaten te beheren en voltooien. Deze werkruimte biedt services voor apparaatbeheer (inclusief Intune en Azure Active Directory) en voor het beheren van apps van klanten.
 
 In het beheer centrum voor Apparaatbeheer kunt u het volgende doen:
 

@@ -5,7 +5,7 @@ description: Beveiligingsbasislijninstellingen die door Intune worden ondersteun
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923409"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060055"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-basislijninstellingen voor Intune
 
@@ -91,7 +91,7 @@ Zie [Beleids-CSP - SmartScreen](https://docs.microsoft.com/windows/client-manage
   **Standaardinstelling**: Blokkeren 
 
 - **Type referentiediefstal voorkomen**  
-  Stel in op *Inschakelen* om [afgeleide domeinreferenties te beveiligen met Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard). Windows Defender Credential Guard maakt gebruik van op virtualisatie gebaseerde beveiliging om geheime gegevens te isoleren. Zo hebt u er alleen met bevoegde systeemsoftware toegang toe. Niet-geautoriseerde toegang tot deze geheime gegevens kan leiden tot pogingen tot diefstal, zoals een Pass-the-Hash- of Pass-the-Ticket-aanval. Met Windows Defender Credential Guard worden deze aanvallen voorkomen, doordat NTLM-wachtwoord-hashes, Kerberos Ticket Granting Tickets en referenties die door toepassingen zijn opgeslagen als domeinreferenties worden beschermd.  
+  Stel in op *Inschakelen* om [afgeleide domeinreferenties te beveiligen met Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard). Microsoft Defender Credential Guard maakt gebruik van op virtualisatie gebaseerde beveiliging om geheime gegevens te isoleren. Zo hebt u er alleen met bevoegde systeemsoftware toegang toe. Niet-geautoriseerde toegang tot deze geheime gegevens kan leiden tot pogingen tot diefstal, zoals een Pass-the-Hash- of Pass-the-Ticket-aanval. Met Microsoft Defender Credential Guard worden deze aanvallen voorkomen, doordat NTLM-wachtwoord-hashes, Kerberos Ticket Granting Tickets en referenties die door toepassingen zijn opgeslagen als domeinreferenties worden beschermd.  
 
   **Standaardinstelling**: Inschakelen
 
@@ -227,7 +227,7 @@ Zie [BitLocker Group Policy settings](https://docs.microsoft.com/windows/securit
   - **Hardwareapparaat-id's die zijn geblokkeerd**  
     Deze instelling is alleen beschikbaar als *Installatie hardwareapparaten op apparaat-id* is ingesteld op *Installatie van hardwareapparaten blokkeren*. Als u deze instelling wilt configureren, vouwt u de optie uit, selecteert u **+ Toevoegen** en geeft u vervolgens de hardwareapparaat-id op die u wilt blokkeren.  
 
-    **Standaard**: PCI\CC_0C0A
+    **Standaard**: PCI \ CC_0C0A
 
 - **Direct Memory Access blokkeren**  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess): met deze beleidsinstelling kunt u Direct Memory Access (DMA) blokkeren voor alle hot-pluggable PCI-downstream-poorten op een apparaat totdat een gebruiker zich bij Windows aanmeldt. Zodra een gebruiker zich heeft aangemeld, somt Windows de PCI-apparaten op die met de PCI-poorten van de host zijn verbonden. Steeds wanneer de gebruiker het apparaat vergrendelt, wordt DMA geblokkeerd op hot-pluggable PCI-poorten zonder onderliggende apparaten totdat de gebruiker zich opnieuw aanmeldt. Apparaten die al waren geïnventariseerd toen het apparaat was ontgrendeld, blijven werken totdat ze worden losgekoppeld. 
@@ -281,7 +281,7 @@ Zie [WindowsAdvancedThreatProtection CSP](https://docs.microsoft.com/windows/cli
   U kunt ook een bestaand XML-bestand met een EMET-configuratie naar een XML-bestand voor exploitbeveiligingsconfiguratie converteren en importeren.
 
 - **Exploit Protection overschrijven blokkeren**  
-  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride): kies de instelling *Ja* als u wilt voorkomen dat gebruikers wijzigingen kunnen aanbrengen in de Exploit Protection-instellingen in het Windows Defender Security Center. Als u deze instelling niet configureert of uitschakelt, kunnen lokale gebruikers wijzigingen aanbrengen in de Exploit Protection-instellingen.  
+  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride): kies de instelling *Ja* als u wilt voorkomen dat gebruikers wijzigingen aanbrengen in de Exploit Protection-instellingen in het Microsoft Defender-beveiligingscentrum. Als u deze instelling niet configureert of uitschakelt, kunnen lokale gebruikers wijzigingen aanbrengen in de Exploit Protection-instellingen.  
   **Standaardinstelling**: Ja  
 
 ## <a name="microsoft-defender-antivirus"></a>Micro soft Defender anti virus  
@@ -289,17 +289,17 @@ Zie [WindowsAdvancedThreatProtection CSP](https://docs.microsoft.com/windows/cli
 Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in de Windows-documentatie voor meer informatie.
 
 - **Scripts scannen die in webbrowsers van Microsoft worden geladen**  
-  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning): ingesteld op *Ja* om het scannen van scripts door Windows Defender toe te staan.  
+  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning): kies de instelling *Ja* als u het scannen van scripts door Microsoft Defender wilt toestaan.  
 
   **Standaardinstelling**: Ja
 
 - **Inkomende e-mailberichten scannen**  
-  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning): ingesteld op *Ja* om het scannen van e-mails door Windows Defender toe te staan.  
+  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning): kies de instelling *Ja* als u het scannen van e-mails door Microsoft Defender wilt toestaan.  
 
   **Standaardinstelling**: Ja
 
 - **Voorbeeld van een Defender-toestemming voor indiening**  
-  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent): hiermee wordt het gebruikerstoestemmingsniveau in Windows Defender gecontroleerd om gegevens te verzenden. Als de vereiste toestemming al is verleend, worden de gegevens door Windows Defender ingediend. Als dit niet het geval is (en als de gebruiker heeft opgegeven dat deze vraag nooit mag worden gesteld), wordt de gebruikersinterface geopend om de gebruiker om toestemming te vragen (wanneer *Cloudbeveiliging* is ingesteld op *Ja*) voordat gegevens worden verzonden.  
+  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent): hiermee wordt het gebruikerstoestemmingsniveau in Microsoft Defender gecontroleerd om gegevens te verzenden. Als de vereiste toestemming al is verleend, worden de gegevens door Microsoft Defender ingediend. Als dit niet het geval is (en als de gebruiker heeft opgegeven dat deze vraag nooit mag worden gesteld), wordt de gebruikersinterface geopend om de gebruiker om toestemming te vragen (wanneer *Cloudbeveiliging* is ingesteld op *Ja*) voordat gegevens worden verzonden.  
 
   **Standaardinstelling**: veilige voorbeelden automatisch verzenden
 
@@ -319,7 +319,7 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
     **Standaardinstelling**: Ja
 
 - **Defender block on access protection**  
-  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection): bij de instelling *Ja* wordt Windows Defender On Access Protection ingeschakeld.  
+  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection): bij de instelling *Ja* wordt Microsoft Defender-beveiliging bij toegang ingeschakeld.  
 
   **Standaardinstelling**: Ja
 
@@ -346,30 +346,30 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
   **Standaardinstelling**: 02.00
 
 - **Cloudbeveiliging**  
-  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection): bij de instelling *Ja* stuurt Windows Defender gegevens naar Microsoft over eventuele gevonden problemen. Microsoft analyseert die gegevens, verzamelt meer gegevens over problemen die u en andere klanten ondervinden en biedt verbeterde oplossingen.
+  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection): bij de instelling *Ja* stuurt Microsoft Defender gegevens naar Microsoft over eventuele gevonden problemen. Microsoft analyseert die gegevens, verzamelt meer gegevens over problemen die u en andere klanten ondervinden en biedt verbeterde oplossingen.
 
   Wanneer dit beleid is ingesteld op *Ja*, kunt u *Voorbeeld van een Defender-toestemmingstype voor indiening* gebruiken om gebruikers controle over het verzenden van gegevens van hun apparaat te geven.  
 
   **Standaardinstelling**: Ja
 
 - **Defender: mogelijk ongewenste app-actie**  
-  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection): Windows Defender Antivirus kan *mogelijk ongewenste toepassingen* identificeren en voorkomen dat ze worden gedownload en geïnstalleerd op eindpunten in uw netwerk. 
+  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection): Microsoft Defender Antivirus kan *mogelijk ongewenste toepassingen* identificeren en voorkomen dat ze worden gedownload en geïnstalleerd op eindpunten in uw netwerk. 
  
-  - Bij de instelling *Blokkeren* blokkeert Windows Defender mogelijk ongewenste toepassingen en worden ze weergegeven in de geschiedenis, samen met andere bedreigingen.
-  - Bij de instelling *Controleren* detecteert Windows Defender mogelijk ongewenste toepassingen maar blokkeert ze niet. Informatie over de toepassingen waar Windows Defender actie tegen zou ondernomen, kan worden gevonden door te zoeken naar gebeurtenissen die zijn gemaakt door Windows Defender in Logboeken.  
+  - Bij de instelling *Blokkeren* blokkeert Microsoft Defender mogelijk ongewenste toepassingen en worden ze weergegeven in de geschiedenis, samen met andere bedreigingen.
+  - Bij de instelling *Controleren* detecteert Microsoft Defender mogelijk ongewenste toepassingen maar blokkeert ze niet. Informatie over de toepassingen waar Microsoft Defender actie tegen zou hebben ondernomen, kan worden gevonden door te zoeken naar gebeurtenissen die zijn gemaakt door Microsoft Defender in Logboeken.  
   - Als *Standaardwaarde voor apparaat* is ingesteld, is de beveiliging tegen mogelijk ongewenste toepassingen uitgeschakeld.  
  
   **Standaardinstelling**: Blokkeren
 
 - **Verlengde time-out van Windows Defender-cloud**  
-  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout): hiermee kunt u opgeven voor hoeveel extra tijd Windows Defender Antivirus een bestand maximaal moet blokkeren terwijl u op een resultaat van de cloud wacht. De basistijd dat Windows Defender wacht, is 10 seconden. Eventuele extra tijd die u hier opgeeft (tot 50 seconden) wordt aan die 10 seconden toegevoegd. In de meeste gevallen duurt de scan korter dan de maximuminstelling. Als u de tijd verlengt, kan de cloud verdachte bestanden grondig onderzoeken.  
+  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout): hiermee kunt u opgeven voor hoeveel extra tijd Microsoft Defender Antivirus een bestand maximaal moet blokkeren terwijl u op een resultaat van de cloud wacht. De basistijd dat Microsoft Defender wacht, is 10 seconden. Eventuele extra tijd die u hier opgeeft (tot 50 seconden) wordt aan die 10 seconden toegevoegd. In de meeste gevallen duurt de scan korter dan de maximuminstelling. Als u de tijd verlengt, kan de cloud verdachte bestanden grondig onderzoeken.  
 
   De waarde voor extra tijd is standaard 0 (uitgeschakeld). Het is raadzaam voor Intune om deze instelling in te schakelen en ten minste 20 aanvullende seconden op te geven.  
  
   **Standaard**: 0
 
 - **Archiefbestanden scannen**  
-  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning): bij de instelling *Ja* kan Windows Defender archiefbestanden scannen.  
+  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning): bij de instelling *Ja* kan Microsoft Defender archiefbestanden scannen.  
 
   **Standaardinstelling**: Ja
 
@@ -381,17 +381,17 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
   **Standaardinstelling**: Door de gebruiker gedefinieerd
 
 - **Gedragscontrole**  
-  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring): bij de instelling *Ja* wordt de functionaliteit van Windows Defender-gedragscontrole ingeschakeld. De sensoren voor Windows Defender-gedragscontrole, ingesloten in Windows 10, verzamelen en verwerken gedragssignalen van het besturingssysteem en verzenden deze sensorgegevens naar uw persoonlijke, geïsoleerde cloudinstantie van Microsoft Defender ATP.  
+  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring): bij de instelling *Ja* wordt de functionaliteit van Microsoft Defender-gedragscontrole ingeschakeld. De sensoren voor Microsoft Defender-gedragscontrole, ingesloten in Windows 10, verzamelen en verwerken gedragssignalen van het besturingssysteem en verzenden deze sensorgegevens naar uw persoonlijke, geïsoleerde cloudinstantie van Microsoft Defender ATP.  
 
   **Standaardinstelling**: Ja
 
 - **Bestanden scannen die zijn geopend vanuit mappen op het netwerk**  
-  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles): bij de instelling *Ja* kan Windows Defender bestanden op het netwerk scannen. Gebruikers kunnen geen gedetecteerde malware verwijderen van alleen-lezenbestanden.  
+  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles): bij de instelling *Ja* kan Microsoft Defender bestanden op het netwerk scannen. Gebruikers kunnen geen gedetecteerde malware verwijderen van alleen-lezenbestanden.  
 
   **Standaardinstelling**: Ja
 
 - **Defender op cloudblokniveau**  
-  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel): gebruik dit beleid om te bepalen hoe agressief Windows Defender Antivirus moet zijn bij het blokkeren en scannen van verdachte bestanden. Opties zijn onder andere:
+  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel): gebruik dit beleid om te bepalen hoe agressief Microsoft Defender Antivirus moet zijn bij het blokkeren en scannen van verdachte bestanden. Opties zijn onder andere:
 
   - Hoog: onbekende bestanden agressief blokkeren tijdens het optimaliseren van clientprestaties (grotere kans op valse positieven)
   - Hoge plus: onbekende bestanden agressief blokkeren en aanvullende beveiligingsmaatregelen toepassen (heeft mogelijk invloed op clientprestaties)
@@ -400,24 +400,24 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
   **Standaardinstelling**: niet geconfigureerd
 
 - **Realtimecontrole**  
-  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring): bij de instelling *Ja* wordt bewaking in realtime door Windows Defender toegestaan.  
+  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring): bij de instelling *Ja* wordt bewaking in realtime door Microsoft Defender toegestaan.  
 
   **Standaardinstelling**: Ja
 
 - **Limiet voor het CPU-gebruik tijdens het scannen**  
-  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor): hiermee kunt u het maximale gemiddelde CPU-gebruikspercentage opgeven dat Windows Defender tijdens een scan kan gebruiken.  
+  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor): hiermee kunt u het maximale gemiddelde CPU-gebruikspercentage opgeven dat Microsoft Defender tijdens een scan kan gebruiken.  
 
   **Standaardinstelling**: 50
 
 - **Toegewezen netwerkschijven scannen tijdens een volledige scan**  
-  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives): bij de instelling *Ja* kan Windows Defender bestanden op het netwerk scannen. Gebruikers kunnen geen gedetecteerde malware verwijderen van alleen-lezenbestanden.
+  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives): bij de instelling *Ja* kan Microsoft Defender bestanden op het netwerk scannen. Gebruikers kunnen geen gedetecteerde malware verwijderen van alleen-lezenbestanden.
 
   Gerelateerde instellingen vindt u in deze lijst: *Defender/AllowScanningNetworkFiles*
 
   **Standaardinstelling**: Ja
 
 - **Toegang van eindgebruikers tot Defender blokkeren**  
-  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess): bij de instelling *Ja* wordt voorkomen dat eindgebruikers toegang hebben tot de gebruikersinterface van Windows Defender op hun apparaat.  
+  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess): bij de instelling *Ja* wordt voorkomen dat eindgebruikers toegang hebben tot de gebruikersinterface van Microsoft Defender op hun apparaat.  
 
   **Standaardinstelling**: Ja
 
@@ -426,7 +426,7 @@ Zie [Beleids-CSP - Defender](https://docs.microsoft.com/windows/client-managemen
 
   **Standaardinstelling**: 02.00
 
-## <a name="windows-defender-firewall"></a>Windows Defender Firewall
+## <a name="microsoft-defender-firewall"></a>Micro soft Defender firewall
 Raadpleeg [Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) in de Windows-documentatie voor meer informatie.
 
 - **Niet-actieve tijd voordat beveiligingskoppeling wordt verwijderd** - *MdmStore/Global/SaIdleTime*   
@@ -560,29 +560,29 @@ Raadpleeg [Firewall CSP](https://docs.microsoft.com/windows/client-management/md
 ## <a name="web--network-protection"></a>Web- en netwerkbeveiliging  
 
 - **Netwerkbeveiligingstype**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection): met dit beleid kunt u netwerkbeveiliging in- of uitschakelen in Windows Defender Exploit Guard. Netwerkbeveiliging is een functie van Windows Defender Exploit Guard die voorkomt dat werknemers die apps gebruiken in contact komen met phishing-praktijken, sites die misbruik maken en schadelijke inhoud op internet. Dit omvat het voorkomen dat browsers van derden verbinding maken met gevaarlijke websites.  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection): met dit beleid kunt u netwerkbeveiliging in- of uitschakelen in Microsoft Defender Exploit Guard. Netwerkbeveiliging is een functie van Microsoft Defender Exploit Guard die voorkomt dat werknemers die apps gebruiken in contact komen met phishing-praktijken, sites die misbruik maken en schadelijke inhoud op internet. Dit omvat het voorkomen dat browsers van derden verbinding maken met gevaarlijke websites.  
 
-  Wanneer de functie is ingesteld op *Inschakelen* of *Controlemodus*, kunnen gebruikers netwerkbeveiliging niet uitschakelen en kunt u Windows Defender Security Center gebruiken om informatie over verbindingspogingen weer te geven.  
+  Wanneer de functie is ingesteld op *Inschakelen* of *Controlemodus*, kunnen gebruikers netwerkbeveiliging niet uitschakelen en kunt u Microsoft Defender Security Center gebruiken om informatie over verbindingspogingen weer te geven.  
  
   - Met *Inschakelen* wordt voorkomen dat gebruikers en apps verbinding kunnen maken met gevaarlijke domeinen.  
   - Met *Controlemodus* wordt niet voorkomen dat gebruikers en apps verbinding kunnen maken met gevaarlijke domeinen.  
 
-  Met de instelling *Door de gebruiker gedefinieerd* wordt niet voorkomen dat gebruikers en apps verbinding kunnen maken met gevaarlijke domeinen en is er geen informatie over verbindingen beschikbaar in Windows Defender Security Center.  
+  Met de instelling *Door de gebruiker gedefinieerd* wordt niet voorkomen dat gebruikers en apps verbinding kunnen maken met gevaarlijke domeinen en is er geen informatie over verbindingen beschikbaar in het Microsoft Defender-beveiligingscentrum.  
 
   **Standaardinstelling**: Controlemodus
 
 - **SmartScreen vereisen voor Microsoft Edge**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen): Microsoft Edge gebruikt standaard Windows Defender SmartScreen (ingeschakeld) om gebruikers tegen mogelijke oplichting door phishing en schadelijke software te beschermen. Dit beleid is standaard ingeschakeld (ingesteld op *Ja*). Wanneer het is ingeschakeld, wordt voorkomen dat gebruikers Windows Defender SmartScreen kunnen uitschakelen.  Wanneer het effectieve beleid voor een apparaat gelijk is aan Niet geconfigureerd, kunnen gebruikers Windows Defender SmartScreen uitschakelen, waardoor het apparaat niet meer beveiligd is.  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen): Microsoft Edge gebruikt standaard Microsoft Defender SmartScreen (ingeschakeld) om gebruikers tegen mogelijke oplichting door phishing en schadelijke software te beschermen. Dit beleid is standaard ingeschakeld (ingesteld op *Ja*). Wanneer het is ingeschakeld, wordt voorkomen dat gebruikers Microsoft Defender SmartScreen kunnen uitschakelen.  Wanneer het effectieve beleid voor een apparaat gelijk is aan Niet geconfigureerd, kunnen gebruikers Microsoft Defender SmartScreen uitschakelen, waardoor het apparaat niet meer beveiligd is.  
 
   **Standaardinstelling**: Ja
   
 - **Toegang tot schadelijke sites blokkeren**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride): standaard hebben gebruikers in Microsoft Edge toestemming om de Windows Defender SmartScreen-waarschuwingen over mogelijke schadelijke websites te omzeilen (negeren), zodat de gebruikers de site kunnen blijven gebruiken. Als dit beleid is ingeschakeld (ingesteld op *Ja*) voorkomt Microsoft Edge dat gebruikers de waarschuwingen kunnen omzeilen, waardoor ze de website dus niet langer kunnen gebruiken.  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride): standaard hebben gebruikers in Microsoft Edge toestemming om de Microsoft Defender SmartScreen-waarschuwingen over mogelijke schadelijke websites te omzeilen (negeren), zodat de gebruikers de site kunnen blijven gebruiken. Als dit beleid is ingeschakeld (ingesteld op *Ja*) voorkomt Microsoft Edge dat gebruikers de waarschuwingen kunnen omzeilen, waardoor ze de website dus niet langer kunnen gebruiken.  
 
   **Standaardinstelling**: Ja
 
 - **Downloaden van niet-geverifieerde bestanden blokkeren**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles): standaard hebben gebruikers in Microsoft Edge toestemming om de Windows Defender SmartScreen-waarschuwingen over mogelijk schadelijke bestanden te omzeilen (negeren), waardoor ze niet-geverifieerde bestanden kunnen blijven downloaden. Als dit beleid is ingeschakeld (ingesteld op *Ja*), kunnen gebruikers de waarschuwingen niet negeren en kunnen ze geen niet-geverifieerde bestanden downloaden.  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles): standaard hebben gebruikers in Microsoft Edge toestemming om de Microsoft Defender SmartScreen-waarschuwingen over mogelijk schadelijke bestanden te omzeilen (negeren), waardoor ze niet-geverifieerde bestanden kunnen blijven downloaden. Als dit beleid is ingeschakeld (ingesteld op *Ja*), kunnen gebruikers de waarschuwingen niet negeren en kunnen ze geen niet-geverifieerde bestanden downloaden.  
 
   **Standaardinstelling**: Ja
 

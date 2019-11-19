@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
-ms.translationtype: MTE75
+ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509227"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126145"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Problemen met inschrijving van iOS-apparaten in Microsoft Intune oplossen
 
@@ -84,6 +84,8 @@ Verzamel de volgende informatie over het probleem:
 1. Verwijder de Bedrijfsportal-app van het apparaat.
 2. Download en installeer de **Microsoft Intune Company Portal**-app uit de **App Store**.
 3. Schrijf het apparaat opnieuw in.
+ > [!NOTE]
+    > Deze fout kan ook optreden als de gebruiker probeert om meer apparaten in te schrijven dan de registratie van het apparaat is geconfigureerd om toe te staan. Volg de oplossings stappen die hieronder zijn **bereikt** als u het probleem niet kunt oplossen met deze stappen.
 
 ### <a name="device-cap-reached"></a>Apparaatlimiet bereikt
 
@@ -156,7 +158,7 @@ Vernieuw het APNs-certificaat en schrijf het apparaat opnieuw in.
 - Als u het APNs-certificaat in intune Hybrid wilt vernieuwen met Configuration Manager, raadpleegt u [IOS Hybrid Device Management instellen met System Center Configuration Manager en Microsoft intune](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
 - Zie [een apns-certificaat voor IOS-apparaten maken](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7)voor informatie over het vernieuwen van het apns-certificaat in Office 365.
 
-### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR-verbinding is ongeldig
+### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR verbinding ongeldig
 
 Wanneer u een DEP-beheerd apparaat inschakelt dat is toegewezen aan een inschrijvings profiel, mislukt de registratie en wordt het volgende fout bericht weer gegeven:
 

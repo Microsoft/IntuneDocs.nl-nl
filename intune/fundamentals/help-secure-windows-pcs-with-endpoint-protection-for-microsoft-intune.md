@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 11/12/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 535ae4dd986940da17d247136b37185cfaa58b57
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f00a680d8d7799e0307021926677d1e0ed1e9a12
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510220"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059688"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Help Windows-pc's beveiligen met Endpoint Protection Help voor Microsoft Intune
 
@@ -189,7 +189,7 @@ Met Intune kunt u de paden van maximaal tien onlangs gedetecteerde exemplaren va
 4. Klik met de rechtermuisknop op de kolomkop. Een lijst met beschikbare kolommen wordt weergegeven. Selecteer in de lijst het selectievakje **Recente detectiepaden**. De kolom **Recente detectiepaden** wordt weergegeven met daarin de tien onlangs op het apparaat gedetecteerde malware-exemplaren.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Een malwarescan uitvoeren of de malwaredefinities op een computer bijwerken
-U kunt met Intune een volledige of snelle malwarescan uitvoeren met Endpoint Protection of Windows Defender op een extern beheerde pc waarop de Intune-client is geïnstalleerd.
+U kunt met Intune een volledige of snelle malwarescan uitvoeren met Endpoint Protection of Microsoft Defender op een extern beheerde pc waarop de Intune-client is geïnstalleerd.
 
 1. Ga in de [Microsoft Intune-beheerconsole](https://manage.microsoft.com/) naar **Groepen** > **Overzicht** > **Alle apparaten** > **Alle computers** en selecteer de computer die u wilt targeten.
 

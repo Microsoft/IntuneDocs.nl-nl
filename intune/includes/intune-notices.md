@@ -7,14 +7,48 @@ ms.topic: include
 ms.date: 11/4/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: edef1f43caff97ab75aa3c58034ed4fc2dffd208
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 3d49d31ed08683508d3d231521e578688dd21bac
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73612040"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74125454"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune.
+
+### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune-plan voor wijziging: Ondersteuning voor Windows 10, versie 1703 van de bedrijfsportal komt te vervallen<!--5026679-->
+Windows 10, versie 1703 (ook wel bekend als Windows 10, RS2) is buiten bedrijf gesteld op 8 oktober 2019 voor Enterprise- en EDU-edities. De Intune-bedrijfsportal-app voor RS2/RS1 wordt niet meer ondersteund vanaf 26 december 2019.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+U ziet geen nieuwe functies meer in de specifieke versie van de bedrijfsportal-app, ook al wordt deze versie van de bedrijfsportal-app nog wel ondersteund tot en met 26 december 2019 en wordt de beveiliging van de bedrijfsportal-app zo nodig nog bijgewerkt. Maar omdat de beveiliging van Windows 10, versie 1703 niet meer wordt bijgewerkt nadat de versie buiten bedrijf is gesteld, wordt u ten zeerste aangeraden uw Windows-apparaten bij te werken naar een recentere versie van Windows en de nieuwste bedrijfsportal-app te gebruiken zodat u nieuwe functies en aanvullende functionaliteit blijft ontvangen.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+Welke stappen u moet uitvoeren, is afhankelijk van de configuratie van uw omgeving. Over het algemeen moet u de apparaten met de oudere versie van het besturingssysteem en/of de bedrijfsportal identificeren en die apparaten bijwerken. Meld u aan bij Intune en ga naar Software-updates – Windows 10-update-ringen om uw Windows 10-update-ringen in te stellen. De nieuwste versie van de bedrijfsportal-app is versie 10.3.5601.0. Laat uw gebruikers deze versie downloaden uit de Microsoft Store om op de hoogte te blijven van toekomstige releases. U kunt Intune ook gebruiken om de nieuwste versie op uw Windows-apparaten te installeren via de [Microsoft Store voor Bedrijven](https://docs.microsoft.com/intune/windows-store-for-business).
+
+#### <a name="additional-information"></a>Aanvullende informatie
+[De Windows 10-bedrijfsportal-app handmatig toevoegen met Microsoft Intune](https://docs.microsoft.com/intune/store-apps-company-portal-app)
+
+
+### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>Onderneem actie: Gebruik Microsoft Edge als uw beveiligde Intune-browser<!--5728447-->
+Zoals we al hebben gecommuniceerd in het afgelopen jaar, ondersteunt Microsoft Edge voor mobiel dezelfde beheerfuncties als Managed Browser, maar is de ervaring voor de eindgebruiker sterk verbeterd. Om plaats te maken voor de nieuwe gebruikerservaring die met Microsoft Edge wordt geboden, wordt Intune Managed Browser buiten gebruik gesteld. Vanaf 27 januari 2020 wordt Intune Managed Browser niet meer ondersteund door Intune.  
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij? 
+Vanaf 1 februari 2020 is Intune Managed Browser niet meer beschikbaar in de Google Play Store of de App Store voor iOS. Vanaf dan kunt u nog steeds nieuw app-beveiligingsbeleid toepassen op Intune Managed Browser, maar nieuwe gebruikers kunnen de Intune Managed Browser-app niet meer downloaden. In iOS worden bovendien nieuwe webclips die worden gepusht naar apparaten die via MDM zijn ingeschreven, geopend in Microsoft Edge in plaats van in Intune Managed Browser.  
+
+Op 31 maart 2020 wordt Intune Managed Browser verwijderd uit de Azure-console. Dit betekent dat u geen nieuwe beleidsregels meer kunt maken voor Intune Managed Browser. Bestaand Intune Managed Browser-beleid dat u hebt geïmplementeerd, wordt hierdoor niet beïnvloed. Intune Managed Browser wordt weergegeven in de console als een LOB-app zonder pictogram en bestaande beleidsregels worden nog steeds weergegeven als gericht op de app. Vanaf dan wordt ook de optie voor het omleiden van webinhoud naar Intune Managed Browser verwijderd uit de sectie Gegevensbescherming van App-beveiligingsbeleid.  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging? 
+Voor een soepele overgang van Intune Managed Browser naar Microsoft Edge wordt u aangeraden de volgende stappen proactief uit te voeren: 
+
+1. Stel Microsoft Edge voor iOS en Android in als doel met app-beveiligingsbeleid (ook wel MAM genoemd) en app-configuratie-instellingen. U kunt uw Intune Managed Browser-beleid opnieuw gebruiken voor Microsoft Edge door ook die bestaande beleidsregels te richten op Microsoft Edge.  
+2. Voor alle apps in uw omgeving die met MAM worden beveiligd, moet de app-beveiligingsbeleidsinstelling 'Overdracht van webinhoud met andere apps beperken' zijn ingesteld op 'Browsers die worden beheerd met beleid'. 
+3. Stel het doel in van alle apps die met MAM worden beveiligd, waarbij u de configuratie-instelling 'com.microsoft.intune.useEdge' van de beheerde app instelt op true (waar). Met ingang van de release van 1911 kunt u stap 2 en stap 3 eenvoudig uitvoeren door de instelling 'Overdracht van webinhoud met andere apps beperken' te configureren voor Microsoft Edge in de sectie Gegevensbescherming van uw app-beveiligingsbeleid. 
+
+Ondersteuning voor webclips in iOS en Android is binnenkort beschikbaar. Wanneer deze ondersteuning wordt uitgebracht, moet u het doel van bestaande webclips opnieuw instellen om ervoor te zorgen dat ze worden geopend in Microsoft Edge in plaats van in Managed Browser. 
+
+#### <a name="additional-information"></a>Aanvullende informatie
+Ga naar onze documenten over het [gebruik van Microsoft Edge met app-beveiligingsbeleid](../apps/manage-microsoft-edge.md) voor meer informatie of bekijk onze [blogpost over ondersteuning](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
+
 
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Geplande wijziging: Nieuwe ervaring bij het inschrijven van toegewezen Android Enterprise-apparaten in Intune<!--5198878-->
 Met de release van Intune in november (1911) voegen we ondersteuning voor de implementatie van SCEP-apparaatcertificaten toe aan toegewezen Android Enterprise-apparaten om op certificaten gebaseerde toegang tot Wi-Fi-profielen mogelijk te maken. Deze verandering brengt ook enkele kleine wijzigingen met zich mee in de stroom bij het inschrijven van toegewezen Android Enterprise-apparaten.
@@ -33,7 +67,7 @@ Maak plannen voor het bijwerken van uw eindgebruikersbegeleiding en stel uw help
 
 ### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>Geplande wijziging: De instelling 'Logboekregistratie op de server voor Siri-opdrachten' wordt verwijderd van de Intune-console <!-- 5468501-->
 
-We zijn van plan om de instelling 'Logboekregistratie op de server voor Siri-opdrachten' van de Intune console te verwijderen met de update voor de Intune-service in november. Deze wijziging sluit aan bij het feit dat Apple de instelling aan hun kant al heeft verwijderd.
+We zijn van plan om de instelling 'Logboekregistratie op de server voor Siri-opdrachten' uit de Intune-console te verwijderen met de update voor de Intune-service in november. Deze wijziging sluit aan bij het feit dat Apple de instelling aan hun kant al heeft verwijderd.
 
 #### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
 Nadat de update van november of 1911 medio november is uitgevoerd, zult u zien dat deze instelling in de Intune-console is verwijderd uit het menu Apparaatbeperkingen (Ingebouwde apps) voor iOS-configuratieprofielen. De instelling is mogelijk nog zichtbaar in uw beleid en het beheersprofiel van het doelapparaat, maar heeft geen effect op uw apparaat. We verwachten niet veel impact op de functionaliteit, omdat de instelling momenteel niet werkt op apparaten, ook al is deze zichtbaar in het managementprofiel.

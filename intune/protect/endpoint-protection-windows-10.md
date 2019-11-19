@@ -1,11 +1,11 @@
 ---
 title: Beveiligingsinstellingen voor Windows 10-apparaten in Microsoft Intune - Azure | Microsoft Docs
-description: Op Windows 10-apparaten kunt u instellingen voor eindpuntbescherming gebruiken of configureren om functies van Windows Defender in te schakelen, zoals Application Guard, Firewall, SmartScreen, versleuteling en bitlocker, Exploit Guard, Application Control, Security Center en beveiliging van lokale apparaten in Microsoft Intune.
+description: Op Windows 10-apparaten kunt u instellingen voor eindpuntbescherming gebruiken of configureren om functies van Microsoft Defender in te schakelen, zoals Application Guard, Firewall, SmartScreen, versleuteling en Bitlocker, Exploit Guard, Application Control, Security Center en beveiliging van lokale apparaten in Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,20 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40865dcca0b0109ae36f65b6691672c0035732b5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502284"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058430"
 ---
-# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Instellingen voor Windows 10 (en hoger) om apparaten te beveiligen met Intune  
+# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Instellingen voor Windows 10 (en hoger) om apparaten te beveiligen met Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]  
+Microsoft Intune bevat veel instellingen om uw apparaten te beveiligen. In dit artikel worden alle instellingen beschreven die u kunt inschakelen en configureren op apparaten met Windows 10 en hoger. Deze instellingen zijn gemaakt in een configuratieprofiel voor eindpuntbeveiliging in Intune om beveiligingsfuncties te beheren, zoals BitLocker en Microsoft Defender.  
 
-Microsoft Intune bevat veel instellingen om uw apparaten te beveiligen. In dit artikel worden alle instellingen beschreven die u kunt inschakelen en configureren op apparaten met Windows 10 en hoger. Deze instellingen zijn gemaakt in een configuratieprofiel voor eindpuntbeveiliging in Intune om beveiligingsfuncties te beheren, zoals BitLocker en Windows Defender.  
-
-Zie [Apparaatbeperkingsinstellingen voor Windows 10](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus) als u Windows Defender Antivirus wilt configureren.  
+Zie [Apparaatbeperkingsinstellingen voor Windows 10](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus) als u Microsoft Defender Antivirus wilt configureren.  
 
 ## <a name="before-you-begin"></a>Voordat u begint  
 
@@ -38,9 +36,9 @@ Zie [Apparaatbeperkingsinstellingen voor Windows 10](../configuration/device-res
 
 Zie [Configuration service provider Reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)(Engelstalig) voor meer informatie over Configuration service providers (csp's).  
 
-## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard  
+## <a name="microsoft-defender-application-guard"></a>Micro soft Defender Application Guard  
 
-Wanneer u Microsoft Edge gebruikt, beschermt Windows Defender Application Guard uw omgeving tegen sites die niet worden vertrouwd door uw organisatie. Als gebruikers sites bezoeken die niet worden vermeld in uw geïsoleerde netwerkgrens, worden deze sites geopend in een virtuele browsersessie in Hyper-V. Vertrouwde sites worden gedefinieerd door een netwerkgrens, die in Apparaatconfiguratie wordt geconfigureerd.  
+Wanneer u Microsoft Edge gebruikt, beschermt Microsoft Defender Application Guard uw omgeving tegen sites die niet worden vertrouwd door uw organisatie. Als gebruikers sites bezoeken die niet worden vermeld in uw geïsoleerde netwerkgrens, worden deze sites geopend in een virtuele browsersessie in Hyper-V. Vertrouwde sites worden gedefinieerd door een netwerkgrens, die in Apparaatconfiguratie wordt geconfigureerd.  
 
 Application Guard is alleen beschikbaar voor apparaten met de 64 bitsversie van Windows 10. Met dit profiel wordt een Win32-onderdeel geïnstalleerd om Application Guard te activeren.  
 
@@ -122,7 +120,7 @@ Application Guard is alleen beschikbaar voor apparaten met de 64 bitsversie van 
   - **Inschakelen**: gebruikers kunnen bestanden vanuit de gevirtualiseerde browser downloaden naar het hostbesturingssysteem.  
   - **Niet geconfigureerd**: hiermee houdt u de bestanden lokaal op het apparaat en downloadt u bestanden niet naar het hostbestandssysteem.  
 
-## <a name="windows-defender-firewall"></a>Windows Defender Firewall  
+## <a name="microsoft-defender-firewall"></a>Micro soft Defender firewall  
  
 ### <a name="global-settings"></a>Globale instellingen  
 
@@ -196,7 +194,7 @@ De volgende instellingen worden één keer vermeld in dit artikel, maar zijn all
 
 #### <a name="general-settings"></a>Algemene instellingen  
 
-- **Windows Defender Firewall**  
+- **Micro soft Defender firewall**  
   **Standaard**: niet geconfigureerd  
   Firewall CSP: [EnableFirewall](https://go.microsoft.com/fwlink/?linkid=872558)  
   
@@ -224,7 +222,7 @@ De volgende instellingen worden één keer vermeld in dit artikel, maar zijn all
   **Standaard**: niet geconfigureerd  
   Firewall CSP: [afgeschermd](https://go.microsoft.com/fwlink/?linkid=872561)  
     - **Niet geconfigureerd**  
-    - **Blok keren** : wanneer Windows Defender firewall is ingeschakeld en deze instelling is ingesteld op *blok keren*, wordt al het binnenkomende verkeer geblokkeerd, ongeacht andere beleids instellingen. 
+    - **Blok keren** : wanneer de micro soft Defender firewall is ingeschakeld en deze instelling is ingesteld op *blok keren*, wordt al het binnenkomende verkeer geblokkeerd, ongeacht andere beleids instellingen. 
     - **Toestaan** : wanneer deze optie is ingesteld op *toestaan*, wordt deze instelling uitgeschakeld en wordt binnenkomend verkeer toegestaan op basis van andere beleids instellingen.
 
 - **Unicast-antwoorden voor multicast-broadcasts**  
@@ -264,7 +262,7 @@ De volgende instellingen worden één keer vermeld in dit artikel, maar zijn all
 
 #### <a name="rule-merging"></a>Regel samenvoegen  
 
-- **Windows Defender Firewall-regels uit het lokale archief voor de gemachtigde toepassing**  
+- **Defender Firewall-regels uit het lokale archief voor de gemachtigde toepassing**  
   **Standaard**: niet geconfigureerd  
   Firewall CSP: [AuthAppsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872565)  
 
@@ -273,7 +271,7 @@ De volgende instellingen worden één keer vermeld in dit artikel, maar zijn all
   - **Toestaan**: -
    kies **Inschakelen** om firewallregels in het lokale archief toe te passen zodat deze worden herkend en afgedwongen.  
 
-- **Algemene poortfirewallregels van Windows Defender uit het lokale archief**  
+- **Algemene poortfirewallregels van Microsoft Defender uit het lokale archief**  
   **Standaard**: niet geconfigureerd  
   Firewall CSP: [GlobalPortsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872566)  
 
@@ -281,7 +279,7 @@ De volgende instellingen worden één keer vermeld in dit artikel, maar zijn all
   - **Blok** -de firewall regels voor globale poort in het lokale archief worden genegeerd en niet afgedwongen.  
   - **Inschakelen**: algemene poortfirewallregels in het lokale archief toepassen om te herkennen en af te dwingen.  
 
-- **Firewallregels van Windows Defender uit het lokale archief**  
+- **Firewallregels van Microsoft Defender uit het lokale archief**  
   **Standaard**: niet geconfigureerd  
   Firewall CSP: [AllowLocalPolicyMerge](https://go.microsoft.com/fwlink/?linkid=872567)  
 
@@ -422,7 +420,7 @@ Geef de lokale en externe poorten op waarop deze regel van toepassing is.
   Geef een lijst met geautoriseerde lokale gebruikers op voor deze regel. Er kan geen lijst met gemachtigde gebruikers worden opgegeven als deze regel van toepassing is op een Windows-service.  
 
 
-## <a name="windows-defender-smartscreen-settings"></a>Instellingen voor Windows Defender SmartScreen  
+## <a name="microsoft-defender-smartscreen-settings"></a>Instellingen voor Microsoft Defender SmartScreen  
  
 Micro soft Edge moet op het apparaat zijn geïnstalleerd.  
 
@@ -443,8 +441,6 @@ Micro soft Edge moet op het apparaat zijn geïnstalleerd.
 ## <a name="windows-encryption"></a>Windows-versleuteling  
  
 ### <a name="windows-settings"></a>Windows-instellingen  
-
-Deze versleutelings instellingen zijn van toepassing op alle versies van Windows 10.  
 
 - **Apparaten versleutelen**  
   **Standaard**: niet geconfigureerd  
@@ -479,7 +475,7 @@ Basisinstellingen zijn universele BitLocker-instellingen voor alle soorten gegev
   Wanneer deze optie is ingesteld op *blok keren*, kunt u de volgende instelling configureren:  
 
   - **Standaardgebruikers toestaan om versleuteling in te schakelen tijdens Azure AD Join**  
-    *Deze instelling is alleen van toepassing op Azure Active Directory gekoppelde apparaten (Azure ADJ) en is afhankelijk van de vorige instelling, `Warning for other disk encryption`.*  
+    *Deze instelling is alleen van toepassing op Azure Active Directory gekoppelde apparaten (Azure ADJ) en is afhankelijk van de vorige instelling `Warning for other disk encryption`.*  
     **Standaard**: niet geconfigureerd  
     BitLocker CSP: [AllowStandardUserEncryption](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)
 
@@ -775,7 +771,7 @@ Deze instellingen zijn specifiek van toepassing op Verwissel bare gegevens stati
     - **Blokkeren**: schrijftoegang blokkeren voor apparaten die zijn geconfigureerd in een andere organisatie.  
     - **Niet geconfigureerd** -schrijf toegang weigeren.  
  
-## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
+## <a name="microsoft-defender-exploit-guard"></a>Micro soft Defender exploit Guard  
 
 Gebruik [exploit Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) om de kwets baarheid te beheren en te verminderen van de apps die door uw werk nemers worden gebruikt.  
 
@@ -809,7 +805,7 @@ Blokkeer de volgende acties voor Office-apps:
 
 - **Office-apps injecteren in andere processen (geen uitzonderingen)**  
   **Standaard**: niet geconfigureerd  
-  Regel: voor [komen dat Office-toepassingen code in andere processen injecteren](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-injecting-code-into-other-processes)  
+  Regel: [Voorkomen dat Office-toepassingen code in andere processen injecteren](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-injecting-code-into-other-processes)  
 
   - **Niet geconfigureerd**  
   - **Blok** keren: de Office-apps mogen niet worden ingevoegd in andere processen.  
@@ -817,7 +813,7 @@ Blokkeer de volgende acties voor Office-apps:
 
 - **Uitvoerbare inhoud maken met Office-apps/-macro's**  
   **Standaard**: niet geconfigureerd  
-  Regel: voor [komen dat Office-toepassingen uitvoer bare inhoud maken](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-creating-executable-content)  
+  Regel: [Voorkomen dat Office-toepassingen uitvoerbare inhoud maken](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-creating-executable-content)  
 
   - **Niet geconfigureerd**  
   - **Blok** keren: blok keer Office-apps en macro's voor het maken van uitvoer bare inhoud.  
@@ -825,7 +821,7 @@ Blokkeer de volgende acties voor Office-apps:
 
 - **Onderliggende processen starten met Office-apps**  
   **Standaard**: niet geconfigureerd  
-  Regel: [blok keer alle Office-toepassingen om onderliggende processen te maken](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
+  Regel: [Voorkomen dat Office-toepassingen onderliggende processen maken](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
 
   - **Niet geconfigureerd**  
   - **Blok** keren: blok keer dat Office-apps onderliggende processen kunnen starten.  
@@ -833,7 +829,7 @@ Blokkeer de volgende acties voor Office-apps:
   
 - **Win32-importbewerkingen uit macrocode van Office**  
   **Standaard**: niet geconfigureerd  
-  Regel: [Win32 API-aanroepen blok keren vanuit Office-macro's](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-win32-api-calls-from-office-macros)  
+  Regel: [Win32 API-aanroepen blokkeren vanuit Office-macro's](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-win32-api-calls-from-office-macros)  
 
   - **Niet geconfigureerd**  
   - **Blok** keren: Win32-import bewerkingen uit macro code in Office.  
@@ -853,7 +849,7 @@ Blokkeer de volgende acties om scriptbedreigingen te voorkomen:
 
 - **Verborgen js-/vbs-/ps-/macrocode**  
   **Standaard**: niet geconfigureerd  
-  Regel: de [uitvoering van mogelijk verborgen scripts blok keren](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-execution-of-potentially-obfuscated-scripts)    
+  Regel: [De uitvoering voorkomen van mogelijk betekenisloze scripts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-execution-of-potentially-obfuscated-scripts)    
 
   - **Niet geconfigureerd**  
   - **Blok** keren: wille keurige Codeer-js/vbs/PS/-macro codes blok keren.  
@@ -861,7 +857,7 @@ Blokkeer de volgende acties om scriptbedreigingen te voorkomen:
 
 - **Van internet gedownloade payloads uitvoeren met js-/vbs-bestanden (geen uitzonderingen)**  
   **Standaard**: niet geconfigureerd  
-  Regel: voor [komen dat Java script of VBScript gedownloade uitvoer bare inhoud start](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-javascript-or-vbscript-from-launching-downloaded-executable-content)  
+  Regel: [Voorkomen dat JavaScript of VBScript gedownloade uitvoerbare inhoud start](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-javascript-or-vbscript-from-launching-downloaded-executable-content)  
 
   - **Niet geconfigureerd**  
   - **Block** -Block js/vbs van het uitvoeren van Payload dat is gedownload van Internet.  
@@ -898,7 +894,7 @@ Blokkeer de volgende acties om e-mailbedreigingen te voorkomen:
 
 - **Uitvoering van uitvoerbare inhoud (exe-, dll-, ps-, js-, vbs-bestanden enzovoort) die is verwijderd uit e-mail (webmail/e-mailclient) (geen uitzonderingen)**  
   **Standaard**: niet geconfigureerd  
-  Regel: [uitvoer bare inhoud blok keren van e-mailclient en webmail](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail)  
+  Regel: [Uitvoerbare inhoud blokkeren van e-mailclient en webmail](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail)  
 
   - **Niet geconfigureerd**  
   - **Blokkeren**: uitvoering voorkomen van uitvoerbare inhoud (exe-, dll-, ps-, js-, vbs-bestanden, enzovoort) die is verwijderd uit e-mail (webmail/e-mailclient).  
@@ -971,21 +967,20 @@ Blok keer uitgaande verbindingen van elke app naar IP-adressen of domeinen met e
 
   Het doel van deze instelling is om eind gebruikers te beschermen tegen apps met toegang tot phishing-prak tijken, sites voor het hosten van aanvallen en schadelijke inhoud op internet. Ook wordt voor komen dat browsers van derden verbinding maken met gevaarlijke sites.  
 
-  - **Niet geconfigureerd**: deze functie uitschakelen. Gebruikers en apps worden niet geblokkeerd voor het verbinden met gevaarlijke domeinen. Beheerders kunnen deze activiteit niet bekijken in Windows Defender Security Center.  
-  - **Schakel** netwerk beveiliging in en blok keer gebruikers en apps om verbinding te maken met gevaarlijke domeinen. Beheerders kunnen deze activiteit bekijken in Windows Defender Security Center.  
-  - **Alleen controle**:-gebruikers en apps worden niet geblokkeerd om verbinding te maken met gevaarlijke domeinen. Beheerders kunnen deze activiteit bekijken in Windows Defender Security Center.  
+  - **Niet geconfigureerd**: deze functie uitschakelen. Gebruikers en apps worden niet geblokkeerd voor het verbinden met gevaarlijke domeinen. Beheerders kunnen deze activiteit niet bekijken in het Microsoft Defender-beveiligingscentrum.  
+  - **Schakel** netwerk beveiliging in en blok keer gebruikers en apps om verbinding te maken met gevaarlijke domeinen. Beheerders kunnen deze activiteit bekijken in het Microsoft Defender-beveiligingscentrum.  
+  - **Alleen controle**:-gebruikers en apps worden niet geblokkeerd om verbinding te maken met gevaarlijke domeinen. Beheerders kunnen deze activiteit bekijken in het Microsoft Defender-beveiligingscentrum.  
 
 ### <a name="exploit-protection"></a>Exploit Protection  
- 
 
 - **XML uploaden**  
   **Standaard**: *niet geconfigureerd*  
 
-  Als u exploit Protection wilt gebruiken om [apparaten te beschermen tegen aanvallen](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), maakt u een XML-bestand met daarin de gewenste systeem-en toepassings beperkings instellingen. Er zijn twee methoden om het XML-bestand te maken:  
+  Als u exploit Protection wilt gebruiken om [apparaten te beschermen tegen aanvallen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), maakt u een XML-bestand met daarin de gewenste systeem-en toepassings beperkings instellingen. Er zijn twee methoden om het XML-bestand te maken:  
 
   - *PowerShell*: gebruik een of meer van de PowerShell-cmdlets *Get-ProcessMitigation*, *Set-ProcessMitigation* en *ConvertTo-ProcessMitigationPolicy*. Met de cdmlets worden beperkingsinstellingen geconfigureerd en wordt hiervan een XML-weergave geëxporteerd.  
 
-  - *Gebruikersinterface van Windows Defender-beveiligingscentrum*: klik in het Windows Defender-beveiligingscentrum op het besturingselement voor de app en browser en scrol naar beneden op het scherm om Beveiliging met Exploit Guard te zoeken. Gebruik eerst de tabbladen Systeeminstellingen en Programma-instellingen om de beperkingsinstellingen te configureren. Zoek vervolgens de koppeling Instellingen exporteren onderaan het scherm om een XML-weergave hiervan te exporteren.  
+  - *Gebruikersinterface van het Microsoft Defender-beveiligingscentrum*: klik in het Windows Defender-beveiligingscentrum op het besturingselement voor de app en browser en scrol naar beneden op het scherm om Beveiliging met Exploit Guard te zoeken. Gebruik eerst de tabbladen Systeeminstellingen en Programma-instellingen om de beperkingsinstellingen te configureren. Zoek vervolgens de koppeling Instellingen exporteren onderaan het scherm om een XML-weergave hiervan te exporteren.  
 
 - **Gebruikers bewerking van de exploit Protection-interface**  
   **Standaard**: niet geconfigureerd  
@@ -995,9 +990,9 @@ Blok keer uitgaande verbindingen van elke app naar IP-adressen of domeinen met e
   - **Blok** -upload een XML-bestand waarmee u geheugen, controle stroom en beleids beperkingen kunt configureren. De instellingen in het XML-bestand kunnen worden gebruikt om een toepassing te blokkeren tegen aanvallen.  
   - **Niet geconfigureerd** : er wordt geen aangepaste configuratie gebruikt.  
 
-## <a name="windows-defender-application-control"></a>Windows Defender Application Control  
+## <a name="microsoft-defender-application-control"></a>Microsoft Defender-toepassingsbeheer  
 
-Kies de extra apps die moeten worden gecontroleerd door of die kunnen worden vertrouwd om te worden uitgevoerd door Windows Defender Application Control. Windows-onderdelen en alle apps uit Windows Store worden automatisch vertrouwd.  
+Kies de extra apps die moeten worden gecontroleerd door of die kunnen worden vertrouwd om te worden uitgevoerd door micro soft Defender Application Control. Windows-onderdelen en alle apps uit Windows Store worden automatisch vertrouwd.  
 
 
 - **Beleid voor toepassings beheer code-integriteit**  
@@ -1012,9 +1007,9 @@ Kies de extra apps die moeten worden gecontroleerd door of die kunnen worden ver
  
   - **Alleen controle** : toepassingen worden niet geblokkeerd. Alle gebeurtenissen worden geregistreerd in de logboeken van de lokale client.  
 
-## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard  
+## <a name="microsoft-defender-credential-guard"></a>Micro soft Defender Credential Guard  
 
-Windows Defender Credential Guard beschermt tegen aanvallen waarbij referenties worden gestolen. Het isoleert geheimen zodat alleen bevoegde systeemsoftware er toegang toe heeft.  
+Microsoft Defender Credential Guard beschermt tegen aanvallen waarbij referenties worden gestolen. Het isoleert geheimen zodat alleen bevoegde systeemsoftware er toegang toe heeft.  
 
 - **Credential Guard**  
   **Standaard**: Uitschakelen  
@@ -1036,19 +1031,19 @@ Windows Defender Credential Guard beschermt tegen aanvallen waarbij referenties 
   - **Beveiligd opstarten met directe geheugentoegang**  
     Hiermee schakelt u beveiliging op basis van virtualisatie met beveiligd opstarten en directe geheugentoegang (DMA) in. Voor DMA-beveiliging is hardwareondersteuning vereist en deze wordt alleen ingeschakeld op apparaten die juist zijn geconfigureerd.  
 
-## <a name="windows-defender-security-center"></a>Windows Defender Security Center  
+## <a name="microsoft-defender-security-center"></a>Microsoft Defender-beveiligingscentrum  
 
-Windows Defender Security Center werkt als een afzonderlijke app of een afzonderlijk proces van de afzonderlijke functies. Deze geeft meldingen weer via het onderhoudscentrum. Het fungeert als een collector of één afzonderlijke plaats om de status te zien en een configuratie van de functies uit te voeren. Meer informatie de documenten over [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center).  
+Het Microsoft Defender-beveiligingscentrum werkt als een afzonderlijke app of een afzonderlijk proces van de afzonderlijke functies. Deze geeft meldingen weer via het onderhoudscentrum. Het fungeert als een collector of één afzonderlijke plaats om de status te zien en een configuratie van de functies uit te voeren. Meer informatie vindt u in de [micro soft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) docs.  
 
-### <a name="windows-defender-security-center-app-and-notifications"></a>Windows Defender Security Center-app en meldingen  
+### <a name="microsoft-defender-security-center-app-and-notifications"></a>Microsoft Defender-beveiligingscentrum-app en meldingen  
 
-Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Windows Defender-beveiligingscentrum-app. Als u een sectie verbergt, worden ook gekoppelde meldingen geblokkeerd.  
+Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Microsoft Defender-beveiligingscentrum-app. Als u een sectie verbergt, worden ook gekoppelde meldingen geblokkeerd.  
 
 - **Virus- en bedreigingsbeveiliging**  
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableVirusUI](https://go.microsoft.com/fwlink/?linkid=873662)  
 
-  Configureren of eind gebruikers het gebied virus-en bedreigings beveiliging in de Windows Defender-Security Center kunnen weer geven. Door deze sectie te verbergen, worden ook alle meldingen met betrekking tot virus-en bedreigings beveiliging geblokkeerd.  
+  Configureren of eind gebruikers het gebied virus-en bedreigings beveiliging in micro soft Defender Security Center kunnen bekijken. Door deze sectie te verbergen, worden ook alle meldingen met betrekking tot virus-en bedreigings beveiliging geblokkeerd.  
 
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1057,7 +1052,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Windows
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [HideRansomwareDataRecovery](https://go.microsoft.com/fwlink/?linkid=873664)  
 
-  Configureren of eind gebruikers het gebied bescherming tegen Ransomware kunnen weer geven in Windows Defender Security Center. Door deze sectie te verbergen, worden ook alle meldingen die betrekking hebben op Ransomware-beveiliging geblokkeerd.  
+  Configureren of eind gebruikers het gebied bescherming tegen Ransomware kunnen weer geven in micro soft Defender Security Center. Door deze sectie te verbergen, worden ook alle meldingen die betrekking hebben op Ransomware-beveiliging geblokkeerd.  
 
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1066,7 +1061,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Windows
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableAccountProtectionUI](https://go.microsoft.com/fwlink/?linkid=873666)  
 
-  Configureren of eind gebruikers het gebied voor account beveiliging kunnen weer geven in Windows Defender Security Center. Als u deze sectie verbergt, worden ook alle meldingen met betrekking tot account beveiliging geblokkeerd.  
+  Configureren of eind gebruikers het gedeelte account beveiliging in de micro soft Defender Security Center kunnen bekijken. Als u deze sectie verbergt, worden ook alle meldingen met betrekking tot account beveiliging geblokkeerd.  
 
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1075,7 +1070,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Windows
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableNetworkUI](https://go.microsoft.com/fwlink/?linkid=873668)  
 
-  Configureren of eind gebruikers het gebied firewall en netwerk beveiliging kunnen weer geven in het Windows Defender-beveiligings centrum. Door deze sectie te verbergen, worden ook alle meldingen met betrekking tot Firewall-en netwerk beveiliging geblokkeerd.  
+  Configureren of eind gebruikers het gebied firewall en netwerk beveiliging kunnen weer geven in het micro soft Defender-beveiligings centrum. Door deze sectie te verbergen, worden ook alle meldingen met betrekking tot Firewall-en netwerk beveiliging geblokkeerd.  
 
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1084,7 +1079,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Windows
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableAppBrowserUI](https://go.microsoft.com/fwlink/?linkid=873669)  
 
-  Configureren of eind gebruikers het besturings gebied app en browser kunnen weer geven in het Windows Defender-beveiligings centrum. Door deze sectie te verbergen, worden ook alle meldingen die betrekking hebben op app-en browser beheer geblokkeerd.  
+  Configureren of eind gebruikers het besturings gebied app en browser kunnen weer geven in het micro soft Defender-beveiligings centrum. Door deze sectie te verbergen, worden ook alle meldingen die betrekking hebben op app-en browser beheer geblokkeerd.  
 
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1093,7 +1088,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Windows
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableDeviceSecurityUI](https://go.microsoft.com/fwlink/?linkid=873670)  
 
-  Configureren of eind gebruikers het gebied voor hardware-beveiliging in Windows Defender Security Center kunnen bekijken. Door deze sectie te verbergen, worden ook alle meldingen die betrekking hebben op de beveiliging van hardware geblokkeerd.  
+  Configureren of eind gebruikers het gebied voor hardware-beveiliging in de micro soft Defender Security Center kunnen bekijken. Door deze sectie te verbergen, worden ook alle meldingen die betrekking hebben op de beveiliging van hardware geblokkeerd.  
 
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1102,7 +1097,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Windows
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableHealthUI](https://go.microsoft.com/fwlink/?linkid=873671)  
 
-  Configureren of eind gebruikers het gebied prestaties en status van het apparaat kunnen weer geven in het Windows Defender-beveiligings centrum. Als u deze sectie verbergt, worden ook alle meldingen die betrekking hebben op de prestaties en status van het apparaat geblokkeerd.  
+  Configureren of eind gebruikers het gebied prestaties en status van het apparaat kunnen bekijken in het micro soft Defender-beveiligings centrum. Als u deze sectie verbergt, worden ook alle meldingen die betrekking hebben op de prestaties en status van het apparaat geblokkeerd.  
   
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1111,7 +1106,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Windows
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableFamilyUI](https://go.microsoft.com/fwlink/?linkid=873673)  
 
-  Configureren of eind gebruikers het gebied met gezins opties kunnen weer geven in het Windows Defender-beveiligings centrum. Als u deze sectie verbergt, worden ook alle meldingen met betrekking tot gezins opties geblokkeerd.  
+  Configureren of eind gebruikers het gebied met gezins opties kunnen weer geven in het micro soft Defender-beveiligings centrum. Als u deze sectie verbergt, worden ook alle meldingen met betrekking tot gezins opties geblokkeerd.  
   
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1120,7 +1115,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Windows
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableNotifications](https://go.microsoft.com/fwlink/?linkid=873675)  
 
-  Kies welke meldingen worden weergegeven voor eindgebruikers. Niet-kritieke meldingen zijn bijvoorbeeld samenvattingen van Windows Defender Antivirus-activiteiten en meldingen wanneer scans zijn voltooid. Alle andere meldingen worden beschouwd als kritiek.  
+  Kies welke meldingen worden weergegeven voor eindgebruikers. Niet-kritieke meldingen zijn bijvoorbeeld samenvattingen van Microsoft Defender Antivirus-activiteiten en meldingen wanneer scans zijn voltooid. Alle andere meldingen worden beschouwd als kritiek.  
 
   - **Niet geconfigureerd**  
   - **Niet-kritieke meldingen blok keren**  
@@ -1160,7 +1155,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Windows
 
 ### <a name="it-contact-information"></a>IT-contactgegevens  
 
-Geef de IT-contactgegevens op die in de Windows Defender-beveiligingscentrum-app en in de app-meldingen moeten worden weergegeven.  
+Geef de IT-contactgegevens op die in de Microsoft Defender-beveiligingscentrum-app en in de app-meldingen moeten worden weergegeven.  
 
 U kunt kiezen tussen **In app en in meldingen weergeven**, **Alleen in app weergeven**, **Alleen in meldingen weergeven** en **Niet weergeven**. Voer de **IT-organisatienaam** en ten minste één van de volgende contactopties in:  
 
@@ -1639,6 +1634,240 @@ Gebruik deze opties voor het configureren van de lokale beveiligingsinstellingen
   - **Handmatig**
   - **Automatisch**
   - **Uitgeschakeld**
+
+## <a name="user-rights"></a>Gebruikers rechten
+
+- **Toegang tot Referentiebeheer als vertrouwde aanvrager**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/AccessCredentialManagerAsTrustedCaller](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accesscredentialmanagerastrustedcaller)
+
+  Dit gebruikers recht wordt gebruikt door Credential Manager tijdens het maken van back-ups en herstel bewerkingen. De opgeslagen referenties van de gebruiker kunnen worden aangetast als deze bevoegdheid aan andere entiteiten wordt gegeven.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Lokaal aanmelden toestaan**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/AllowLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-allowlocallogon)
+
+  Met dit gebruikers recht bepaalt u welke gebruikers zich kunnen aanmelden bij de computer.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Toegang vanaf het netwerk toestaan**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/AccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accessfromnetwork)
+
+  Met dit gebruikers recht bepaalt u welke gebruikers en groepen via het netwerk verbinding mogen maken met de computer.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Functioneren als deel van het besturings systeem**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/ActAsPartOfTheOperatingSystem](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-actaspartoftheoperatingsystem)
+
+  Functioneren als deel van het besturings systeem
+  - **Niet geconfigureerd**
+  - **Toestaan**  
+
+- **Back-ups van bestanden en mappen maken**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/BackupFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-backupfilesanddirectories)
+
+  Met dit gebruikers recht bepaalt u welke gebruikers machtigingen voor bestanden, mappen, het REGI ster en andere permanente objecten kunnen omzeilen bij het maken van een back-up van bestanden en mappen.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **De systeemtijd wijzigen**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/ChangeSystemTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-changesystemtime)
+
+  Dit gebruikers recht bepaalt welke gebruikers en groepen de tijd en de datum van de interne klok van de computer kunnen wijzigen.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Globale objecten maken**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/CreateGlobalObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createglobalobjects)
+
+  Met deze beveiligings instelling bepaalt u of gebruikers globale objecten kunnen maken die beschikbaar zijn voor alle sessies. Gebruikers die globale objecten kunnen maken, kunnen invloed hebben op processen die worden uitgevoerd onder andere gebruikers sessies, wat kan leiden tot een toepassings fout of beschadiging van gegevens.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Wissel bestand maken**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/CreatePageFile](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpagefile)
+
+  Dit gebruikers recht bepaalt welke gebruikers en groepen een interne API kunnen aanroepen om de grootte van een wissel bestand te maken en te wijzigen.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Permanent gedeelde objecten maken**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/CreatePermanentSharedObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpermanentsharedobjects)
+
+  Met dit gebruikers recht bepaalt u welke accounts door processen kunnen worden gebruikt om een Directory-object te maken met behulp van object beheer.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Symbolische koppelingen maken**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/CreateSymbolicLinks](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createsymboliclinks)
+
+  Dit gebruikers recht bepaalt of de gebruiker een symbolische koppeling kan maken van de computer waarop ze zijn aangemeld.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Tokens maken**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/Okta](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createtoken)
+
+  Dit gebruikers recht bepaalt welke gebruikers/groepen kunnen worden gebruikt door processen om een token te maken dat vervolgens kan worden gebruikt om toegang te krijgen tot lokale resources wanneer het proces een interne API gebruikt om een toegangs token te maken.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Fouten in programma's opsporen**  
+  **Standaard**: niet geconfigureerd  
+    CSP: [UserRights/DebugPrograms](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-debugprograms)
+
+  Met dit gebruikers recht bepaalt u welke gebruikers een fout opsporingsprogramma aan een proces of aan de kernel kunnen koppelen.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Toegang vanaf het netwerk weigeren**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/DenyAccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyaccessfromnetwork)
+
+  Dit gebruikers recht bepaalt welke gebruikers geen toegang hebben tot een computer via het netwerk.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Aanmelden als service weigeren**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/DenyLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denylocallogon)
+
+  Met deze beveiligings instelling bepaalt u welke service accounts een proces niet als een service kunnen registreren.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Aanmelden weigeren via Extern bureaublad-Services**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/DenyRemoteDesktopServicesLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyremotedesktopserviceslogon)
+
+  Dit gebruikers recht bepaalt welke gebruikers en groepen zich niet mogen aanmelden als een Extern bureaublad-services-client.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Delegering inschakelen**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/EnableDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-enabledelegation)
+
+ Dit gebruikers recht bepaalt welke gebruikers de instelling vertrouwd voor delegeren kunnen instellen voor een gebruiker of computer object.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Beveiligingscontroles genereren**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/GenerateSecurityAudits](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-generatesecurityaudits)
+
+  Dit gebruikers recht bepaalt welke accounts kunnen worden gebruikt door een proces om vermeldingen toe te voegen aan het beveiligings logboek. Het beveiligings logboek wordt gebruikt voor het traceren van onbevoegde systeem toegang.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Een client imiteren**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/ImpersonateClient](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-impersonateclient)
+
+  Als u dit gebruikers recht aan een gebruiker toewijst, kunnen Program ma's die namens die gebruiker worden uitgevoerd, een client imiteren. Als u dit gebruikers recht vereist voor dit soort imitatie, voor komt u dat een niet-geautoriseerde gebruiker een client kan koppelen aan een service die ze hebben gemaakt en vervolgens die client imiteert, waardoor de machtigingen van de niet-geautoriseerde gebruiker kunnen worden verhoogd tot beheer-of systeem niveaus.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Prioriteit verhogen voor planning**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/IncreaseSchedulingPriority](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-increaseschedulingpriority)
+
+  Met dit gebruikers recht bepaalt u welke accounts een proces met schrijf toegang tot een ander proces kunnen gebruiken om de uitvoerings prioriteit die aan het andere proces is toegewezen, te verg Roten.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Apparaatstuurprogramma's laden en verwijderen**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/LoadUnloadDeviceDrivers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-loadunloaddevicedrivers)
+
+  Met dit gebruikers recht bepaalt u welke gebruikers Stuur Programma's of andere code dynamisch kunnen laden en verwijderen in de kernelmodus.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Pagina's in het geheugen vergrendelen**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/LockMemory](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-lockmemory)
+
+  Dit gebruikers recht bepaalt welke accounts een proces kunnen gebruiken voor het opslaan van gegevens in het fysieke geheugen, waarmee wordt voor komen dat het systeem de gegevens naar het virtuele geheugen op schijf gepagineerd.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Controle en beveiligingslogboek beheren**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/ManageAuditingAndSecurityLog](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-manageauditingandsecuritylog)
+
+  Met dit gebruikers recht bepaalt u welke gebruikers controle opties voor object toegang kunnen opgeven voor afzonderlijke resources, zoals bestanden, Active Directory objecten en register sleutels.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Onderhoudstaken op volume uitvoeren**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/ManageVolume](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-managevolume)
+
+  Dit gebruikers recht bepaalt welke gebruikers en groepen onderhouds taken kunnen uitvoeren op een volume, zoals externe defragmentatie.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Omgevingswaarden in firmware wijzigen**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/ModifyFirmwareEnvironment](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyfirmwareenvironment)
+
+  Dit gebruikers recht bepaalt wie firmware omgevings waarden kan wijzigen.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Een objectlabel wijzigen**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/ModifyObjectLabel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyobjectlabel)
+
+  Dit gebruikers recht bepaalt welke gebruikers accounts het integriteits label van objecten kunnen wijzigen, zoals bestanden, register sleutels of processen die eigendom zijn van andere gebruikers.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Een enkel proces bekijken**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/ProfileSingleProcess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-profilesingleprocess)
+
+  Met dit gebruikers recht bepaalt u welke gebruikers hulpprogram ma's voor prestatie controle kunnen gebruiken om de prestaties van systeem processen te controleren.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+
+- **Extern afsluiten**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/RemoteShutdown](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-remoteshutdown)
+
+  Met dit gebruikers recht bepaalt u welke gebruikers een computer mogen afsluiten vanaf een externe locatie op het netwerk. Misbruik van dit gebruikers recht kan leiden tot een denial-of-service.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+  
+- **Back-ups van bestanden en mappen terugzetten**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/RestoreFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-restorefilesanddirectories)
+  
+  Dit gebruikers recht bepaalt welke gebruikers machtigingen voor bestanden, mappen, het REGI ster en andere permanente objecten kunnen overs Laan bij het terugzetten van back-ups van bestanden en mappen, en bepaalt welke gebruikers een geldige beveiligingsprincipal kunnen instellen als de eigenaar van een object.
+  - **Niet geconfigureerd**
+  - **Toestaan**
+  
+- **Eigenaar worden van bestanden of andere objecten**  
+  **Standaard**: niet geconfigureerd  
+  CSP: [UserRights/TakeOwnership](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-takeownership)
+
+  Met dit gebruikers recht bepaalt u welke gebruikers eigenaar kunnen worden van elk Beveilig bare object in het systeem, met inbegrip van Active Directory objecten, bestanden en mappen, printers, register sleutels, processen en threads.
+  - **Niet geconfigureerd**
+  - **Toestaan**
 
 ## <a name="next-steps"></a>Volgende stappen
 

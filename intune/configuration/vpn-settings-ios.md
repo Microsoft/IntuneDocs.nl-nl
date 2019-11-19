@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593793"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059803"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>VPN-instellingen toevoegen aan iOS-apparaten in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Microsoft Intune biedt veel VPN-instellingen die kunnen worden geïmplementeerd op uw iOS-apparaten. Deze instellingen worden gebruikt om VPN-verbindingen te maken en configureren voor het netwerk van uw organisatie. In dit artikel worden deze instellingen beschreven. Sommige instellingen zijn alleen beschikbaar voor sommige VPN-clients, zoals Citrix en Zscaler.
 
@@ -73,7 +71,7 @@ Welke instellingen in de volgende lijst worden weergegeven, is afhankelijk van h
     > [!NOTE]
     > Als gebruikersnaam en wachtwoord worden gebruikt als verificatiemethode voor Cisco IPsec VPN, moeten deze het SharedSecret bieden via een aangepast profiel voor de Apple Configurator.
 
-  - **Afgeleide referentie**: als er geen afgeleide referentie verlener is geconfigureerd, wordt u door intune gevraagd dit te doen.
+  - **Afgeleide referentie**: gebruik een certificaat dat is afgeleid van de Smart Card van een gebruiker. Als er geen afgeleide referentie verlener is geconfigureerd, wordt u door intune gevraagd om er een toe te voegen. Zie [afgeleide referenties gebruiken in Microsoft intune](../protect/derived-credentials.md)voor meer informatie.
 
 - **Uitgesloten URL's** (alleen Zscaler): wanneer u verbonden bent met het VPN van Zscaler, zijn de vermelde URL's toegankelijk buiten de Zscaler-cloud. 
 
@@ -102,7 +100,7 @@ Welke instellingen in de volgende lijst worden weergegeven, is afhankelijk van h
   - Als NAC wordt ingeschakeld, wordt de verbinding met de VPN elke 24 uur verbroken. De VPN-verbinding wordt onmiddellijk hersteld.
   - De apparaat-id maakt deel uit van het profiel, maar is niet zichtbaar in Intune. De id wordt nergens door Microsoft opgeslagen en wordt niet door Microsoft gedeeld.
 
-  Wanneer de apparaat-id wordt ondersteund door VPN-partners, kan de VPN-client, zoals Citrix SSO, de id ophalen. Vervolgens kan de VPN-client een query in Intune uitvoeren om te bevestigen dat het apparaat is geregistreerd en om na te gaan of het VPN-profiel wel of niet conform is.
+  Voor de VPN-partners die de apparaat-ID ondersteunen, kan de VPN-client, zoals Citrix SSO, de ID ophalen. Vervolgens kan de VPN-client een query in Intune uitvoeren om te bevestigen dat het apparaat is geregistreerd en om na te gaan of het VPN-profiel wel of niet conform is.
 
   - Als u deze instelling wilt verwijderen, maakt u het profiel opnieuw en selecteert u de optie **Ik ga akkoord** niet. Wijs het profiel vervolgens opnieuw toe.
 
@@ -189,7 +187,10 @@ Deze instellingen zijn van toepassing wanneer u **verbindings type**  > **IKEv2*
 - **On-demand VPN**: configureer voorwaardelijke regels om te bepalen wanneer de VPN-verbinding wordt gestart. Stel bijvoorbeeld een voorwaarde in waarmee de VPN-verbinding alleen wordt gebruikt als een apparaat niet met een Wi-Fi-netwerk van het bedrijf is verbonden. Of maak een voorwaarde. Voorbeeld: de VPN-verbinding wordt niet gestart als een apparaat geen toegang heeft tot een DNS-zoekdomein dat u opgeeft.
 
   - **SSID's of DNS-zoekdomeinen**: selecteer of voor deze voorwaarde het draadloze netwerk,  **SSID's** of **DNS-zoekdomeinen** worden gebruikt. Kies **Toevoegen** om een of meerdere SSID's of zoekdomeinen te configureren.
-  - **URL-tekenreekstest**: optioneel. Voer een URL die door de regel als een test wordt gebruikt. Als het apparaat met dit profiel zonder omleiding toegang wil verkrijgen tot deze URL, wordt de VPN-verbinding gestart. Het apparaat maakt dan verbinding met de doel-URL. De gebruiker ziet de tekenreekstestsite voor de URL niet. Een voorbeeld van een URL-tekenreekstest is het adres van een controlewebserver die de apparaatcompatibiliteit controleert voordat u verbinding maakt met de VPN-verbinding. Een andere mogelijkheid is dat de URL de VPN-verbinding voor een site controleert, voordat het apparaat verbinding maakt met de doel-URL via de VPN-verbinding.
+  - **URL-tekenreekstest**: optioneel. Voer een URL die door de regel als een test wordt gebruikt. Als het apparaat zonder omleiding toegang wil verkrijgen tot deze URL, wordt de VPN-verbinding gestart. Het apparaat maakt dan verbinding met de doel-URL. De gebruiker ziet de tekenreekstestsite voor de URL niet.
+
+    Een voorbeeld van een URL-tekenreekstest is een controlewebserver-URL die de apparaatcompatibiliteit controleert voordat u verbinding maakt met de VPN-verbinding. Of de URL test of de VPN-verbinding kan maken met een site voordat u het apparaat verbindt met de doel-URL via de VPN-verbinding.
+.
   - **Domeinactie**: kies een van de volgende items:
     - Verbinding maken indien nodig
     - Nooit verbinding maken

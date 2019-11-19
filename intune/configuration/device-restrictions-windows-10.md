@@ -1,11 +1,11 @@
 ---
 title: Apparaatbeperkingsinstellingen voor Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: Bekijk een overzicht van alle instellingen en de bijbehorende beschrijvingen voor het maken van apparaatbeperkingen op apparaten met Windows 10 en hoger. Gebruik deze instellingen in een configuratieprofiel om controle te houden over schermafdrukken, wachtwoordvereisten, instellingen voor de kioskmodus, apps in de store, de Microsoft Edge-browser, Windows Defender, toegang tot de cloud, het startmenu en meer in Microsoft Intune.
+description: Bekijk een overzicht van alle instellingen en de bijbehorende beschrijvingen voor het maken van apparaatbeperkingen op apparaten met Windows 10 en hoger. Gebruik deze instellingen in een configuratieprofiel om controle te houden over schermopnamen, wachtwoordvereisten, instellingen voor de kioskmodus, apps in de store, de Microsoft Edge-browser, Microsoft Defender, toegang tot de cloud, het startmenu en meer in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755258"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059483"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -523,7 +523,7 @@ Deze instellingen gebruiken de [beleid-CSP WirelessDisplay](https://docs.microso
 
 - **Gebruiksgegevens delen**: kies het niveau van diagnostische gegevens die worden verzonden. Uw opties zijn:
   - **Niet geconfigureerd**: Er worden geen gegevens gedeeld.
-  - **Beveiliging**: Informatie die vereist is om Windows beter te beveiligen, inclusief gegevens over de instellingen voor de gevonden gebruikerservaring en telemetrie, het hulpprogramma voor verwijderen van schadelijke software en Windows Defender.
+  - **Beveiliging**: Informatie die vereist is om Windows beter te beveiligen, inclusief gegevens over de instellingen voor de gevonden gebruikerservaring en telemetrie, het hulpprogramma voor verwijderen van schadelijke software en Microsoft Defender.
   - **Standaard**: Basisapparaatgegevens, zoals gegevens met betrekking tot de kwaliteit, app-compatibiliteit, app-gebruiksgegevens en gegevens van het beveiligingsniveau.
   - **Uitgebreid**: Extra inzichten, zoals hoe Windows, Windows Server, System Center en apps worden gebruikt, hoe ze presteren en geavanceerde betrouwbaarheidsgegevens, plus gegevens van de niveaus Standaard en Beveiliging.
   - **Volledig**: Alle gegevens die nodig zijn om problemen op te sporen en op te lossen, plus gegevens van de niveaus Beveiliging, Standaard en Uitgebreid.
@@ -632,19 +632,19 @@ Deze instellingen gebruiken de [beleid-CSP Start](https://docs.microsoft.com/win
   - **Verbergen**: De snelkoppeling wordt verborgen en de instelling in de app Instellingen wordt uitgeschakeld.
   - **Weergeven**: De snelkoppeling wordt weergegeven en de instelling in de app Instellingen wordt uitgeschakeld.
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
+## <a name="microsoft-defender-smart-screen"></a>Micro soft Defender Smart Screen
 
-- **SmartScreen voor Microsoft Edge**: Met **Vereisen** wordt Windows Defender SmartScreen uitgeschakeld en kunnen gebruikers deze functie niet inschakelen. Met **Niet geconfigureerd** (standaard) wordt SmartScreen ingeschakeld. Hiermee kunt u gebruikers beveiligen tegen potentiële dreigingen. Gebruikers kunne deze functie niet uitschakelen.
+- **SmartScreen voor Microsoft Edge**: Met **Vereisen** wordt Microsoft Defender SmartScreen uitgeschakeld en kunnen gebruikers deze functie niet inschakelen. Met **Niet geconfigureerd** (standaard) wordt SmartScreen ingeschakeld. Hiermee kunt u gebruikers beveiligen tegen potentiële dreigingen. Gebruikers kunne deze functie niet uitschakelen.
 
-  Microsoft Edge gebruikt Windows Defender SmartScreen (ingeschakeld) om gebruikers tegen mogelijke oplichting door phishing en schadelijke software te beschermen.
+  Microsoft Edge gebruikt Microsoft Defender SmartScreen (ingeschakeld) om gebruikers tegen mogelijke oplichting door phishing en schadelijke software te beschermen.
 
   [Browser/AllowSmartScreen CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
 
-- **Toegang tot schadelijke sites**: Met **Blokkeren** kunnen gebruikers de waarschuwingen van het Windows Defender SmartScreen-filter niet negeren en kunnen ze niet naar de site gaan. Met **Niet geconfigureerd** (standaard) kunnen gebruikers de waarschuwingen negeren en doorgaan naar de site.
+- **Toegang tot schadelijke sites**: Met **Blokkeren** kunnen gebruikers de waarschuwingen van het Microsoft Defender SmartScreen-filter niet negeren en kunnen ze niet naar de site gaan. Met **Niet geconfigureerd** (standaard) kunnen gebruikers de waarschuwingen negeren en doorgaan naar de site.
 
   [Browser/PreventSmartScreenPromptOverride CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)
 
-- **Niet-geverifieerd bestand downloaden**: Met **Blokkeren** kunnen gebruikers de waarschuwingen van het Windows Defender SmartScreen-filter niet negeren en kunnen ze geen niet-geverifieerde bestanden downloaden. Met **Niet geconfigureerd** (standaard) kunnen gebruikers de waarschuwingen negeren en doorgaan met het downloaden van niet-geverifieerde bestanden.
+- **Niet-geverifieerd bestand downloaden**: Met **Blokkeren** kunnen gebruikers de waarschuwingen van het Microsoft Defender SmartScreen-filter niet negeren en kunnen ze geen niet-geverifieerde bestanden downloaden. Met **Niet geconfigureerd** (standaard) kunnen gebruikers de waarschuwingen negeren en doorgaan met het downloaden van niet-geverifieerde bestanden.
 
   [Browser/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
@@ -833,9 +833,9 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
 - **Mogelijk ongewenste toepassingen detecteren**: Kies het beveiligingsniveau dat moet worden ingesteld als Windows toepassingen detecteert die mogelijk ongewenst zijn. Uw opties zijn:
-  - **Niet geconfigureerd** (standaard): De detectie van mogelijk ongewenste toepassingen is uitgeschakeld.
-  - **Blokkeren**: Windows Defender detecteert mogelijk ongewenste toepassingen en gedetecteerde items worden geblokkeerd. Deze items worden weergegeven in de geschiedenis, samen met andere dreigingen.
-  - **Controle**: Windows Defender detecteert mogelijk ongewenste toepassingen, maar neemt geen verdere acties. U kunt de gegevens bekijken van toepassingen waarvoor acties zouden worden ondernomen. Zoek bijvoorbeeld naar gebeurtenissen die door Windows Defender in Logboeken zijn aangemaakt.
+  - **Niet geconfigureerd** (standaard): De detectie van mogelijk ongewenste toepassingen door Microsoft Defender is uitgeschakeld.
+  - **Blokkeren**: Microsoft Defender detecteert mogelijk ongewenste toepassingen en gedetecteerde items worden geblokkeerd. Deze items worden weergegeven in de geschiedenis, samen met andere dreigingen.
+  - **Controle**: Microsoft Defender detecteert mogelijk ongewenste toepassingen, maar neemt geen verdere acties. U kunt de gegevens bekijken van toepassingen waarvoor acties zouden worden ondernomen. Zoek bijvoorbeeld naar gebeurtenissen die door Microsoft Defender in Logboeken zijn vastgelegd.
 
   Zie [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus) (Mogelijk ongewenste toepassingen detecteren en blokkeren) voor meer informatie over mogelijk ongewenste apps.
 
@@ -850,11 +850,11 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
   - **Door de gebruiker gedefinieerd**
   - **Blokkeren**
 
-  Als uw actie niet mogelijk is, kiest Windows Defender de beste optie om ervoor te zorgen dat de dreiging wordt hersteld. 
+  Als uw actie niet mogelijk is, kiest micro soft Defender de beste optie om ervoor te zorgen dat de dreiging wordt hersteld. 
 
   [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
-### <a name="windows-defender-antivirus-exclusions"></a>Uitsluitingen voor Windows Defender Antivirus
+### <a name="microsoft-defender-antivirus-exclusions"></a>Uitsluitingen voor Microsoft Defender Antivirus
 
 - **Bestanden en mappen die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer bestanden aan de uitsluitingslijst toe, zoals **C:\pad** of **%ProgramFiles%\pad\bestandsnaam.exe**. Deze bestanden en mappen worden niet opgenomen in real-timescans of geplande scans.
 - **Bestandsextensies die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer bestandsextensies zoals **jpg** of **txt** aan de uitsluitingslijst toe. Bestanden met deze extensies worden niet opgenomen in realtime-scans of geplande scans.
