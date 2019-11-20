@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7779e265680ded1b5d5d5b670bcf694376ee8016
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494416"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199196"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Algemene vragen, problemen en oplossingen met apparaatbeleid en -profielen in Microsoft Intune
 
@@ -73,10 +73,6 @@ Als het apparaat onlangs is ingeschreven, wordt het inchecken voor naleving en c
 | Windows 8.1 | Om de 5 minuten gedurende 15 minuten en daarna om de 15 minuten gedurende 2 uur en vervolgens ongeveer om de 8 uur | 
 
 Gebruikers kunnen ook op elk gewenst moment de Bedrijfsportal-app openen en naar **Instellingen** > **Synchroniseren** gaan, om onmiddellijk te controleren op beleids- of profielupdates.
-
-Voor apparaten zonder gebruikersaffiniteit kan de synchronisatiefrequentie die direct volgt op de inschrijving variëren van een aantal uur tot een of meer dagen. Intune verzendt aanvragen met verschillende intervallen om een apparaat in te checken bij Intune. Het is echter nog steeds aan het apparaat om in te checken. Na de initiële inschrijving is het niet te voorspellen hoelang het duurt voor het apparaat de check-in afrondt. Het hangt ook af van het type apparaatinschrijving en het beleid en de profielen die zijn toegewezen aan een apparaat. Nadat het apparaat is ingeschreven en alle initiële beleidsregels en profielen zijn toegepast, controleert het apparaat ongeveer elke 6-8 uur op nieuwe beleidsregels en profielen, op basis van de tijd dat het apparaat is ingeschreven bij Intune.
-
-Als best practice moet u ervoor zorgen dat uw apparaten ten minste acht uur lang online zijn om de beste resultaten te krijgen.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Welke acties zorgen ervoor dat Intune onmiddellijk een melding naar een apparaat verzendt?
 

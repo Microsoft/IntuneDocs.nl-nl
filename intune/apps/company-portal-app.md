@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999525"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199199"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -32,7 +32,7 @@ ms.locfileid: "72999525"
 De Microsoft Intune-bedrijfsportal is de plaats waar gebruikers toegang hebben tot bedrijfsgegevens en algemene taken kunnen uitvoeren, zoals apparaten registreren, apps installeren en naar ondersteuningsinformatie van uw IT-afdeling zoeken. Daarnaast kan de gebruiker via de bedrijfsportal-app veilig toegang krijgen tot bedrijfsresources. De bedrijfsportal-app bevat verschillende pagina's, zoals de startpagina, Apps, App-details, Apparaten en Apparaatdetails. Als u snel apps wilt vinden in de bedrijfsportal, kunt u de apps filteren op de pagina Apps.
 
 > [!IMPORTANT]
-> Als u Firebase Cloud Messaging (FCM) van Google wilt ondersteunen, moet u uw Android-bedrijfsportal-app bijwerken naar de nieuwste versie. Zie Wat is er nieuw - [Android-bedrijfsportal-app bijwerken naar de nieuwste versie](../fundamentals/whats-new.md#update-your-android-company-portal-app-to-the-latest-version-) voor meer informatie.
+> Als u Firebase Cloud Messaging (FCM) van Google wilt ondersteunen, moet u uw Android-bedrijfsportal-app bijwerken naar de nieuwste versie.  
 
 > [!Tip]
 > Wanneer u de bedrijfsportal aanpast, zijn de configuraties zowel van toepassing op de website als op de apps van de bedrijfsportal. Houd er rekening mee dat gebruikers een Intune-licentie nodig hebben die is toegewezen aan de bedrijfsportal-website.
