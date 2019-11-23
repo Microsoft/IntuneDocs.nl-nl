@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984124"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390861"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Met instellingen voor iOS- en iPadOS-apparaten kunt u functies toestaan of beperken met behulp van Intune
 
@@ -130,9 +130,6 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
     - iOS 11.3 en hoger
 
 ## <a name="password"></a>Wachtwoord
-
-> [!NOTE]
-> In een toekomstige versie worden deze wachtwoord instellingen in de intune-gebruikers interface bijgewerkt zodat deze overeenkomen met het inschrijvings type.
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvings typen
 
@@ -266,7 +263,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Wacht woord voor iTunes Store vereisen voor alle aankopen** **: de gebruiker moet het** wacht woord van Apple ID invoeren voor elke in-app of iTunes-aankoop. **Niet geconfigureerd** (standaard) Hiermee kunnen aankopen zonder wacht woord elke keer worden gevraagd.
 - **In-app aankopen**: kies **Blokkeren** om in-app aankopen van de Store te voorkomen. **Niet geconfigureerd** (standaard): staat gebruikers toe aankopen in de Store te doen vanuit een actieve app.
 - **Inhoud uit iBooks Store met de markering Erotisch downloaden**: kies **Blokkeren** om te voorkomen dat gebruikers media downloaden uit de iBook Store die is gelabeld als Erotisch. **Niet geconfigureerd** (standaard): staat de gebruiker toe om boeken te downloaden uit de categorie Erotisch.
-- **Toestaan dat beheerde apps contact personen naar niet-beheerde accounts voor contact personen schrijven**: wanneer deze optie is ingesteld op **toestaan**, kunnen beheerde apps, zoals de Outlook Mobile App, contact gegevens opslaan of synchroniseren, inclusief zakelijke contact personen, naar de ingebouwde IOS-contact personen app. Als de instelling is ingesteld op **niet geconfigureerd** (standaard), kunnen beheerde apps geen contact gegevens opslaan of synchroniseren met de ingebouwde IOS-contact personen-app op het apparaat.
+- **Toestaan dat beheerde apps contact personen naar niet-beheerde accounts voor contact personen schrijven**: wanneer deze optie is ingesteld op **toestaan**, kunnen beheerde apps, zoals de mobiele app van Outlook, contact gegevens opslaan of synchroniseren, inclusief zakelijke contact personen, naar de ingebouwde app voor IOS-contact personen. Als de instelling is ingesteld op **niet geconfigureerd** (standaard), kunnen beheerde apps geen contact gegevens opslaan of synchroniseren met de ingebouwde IOS-contact personen-app op het apparaat.
   
   Als u deze instelling wilt gebruiken, stelt u **Zakelijke documenten weergeven in niet-beheerde apps** in op **Blokkeren**.
 
@@ -321,16 +318,6 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Safari JavaScript**: **Blokkeren** voorkomt dat Java-scripts worden uitgevoerd in de browser op het apparaat. **Niet geconfigureerd** (standaard) staat Java-scripts toe.
 
 - **Safari-pop-ups**: met **Blokkeren** wordt het gebruik van pop-upblokkering in de webbrowser uitgeschakeld. **Niet geconfigureerd** (standaard) Hiermee staat u de pop-upblokkering toe.
-
-- **Logboek registratie aan de server zijde voor SIRI-opdrachten**: wanneer deze optie is ingesteld op **uitschakelen**, is de SIRI-logboek registratie op de server uitgeschakeld. Het kan ook voor komen dat gebruikers aanvragen op SIRI-servers worden geregistreerd. **Niet geconfigureerd** (standaard) logboeken SIRI opdrachten aan de server zijde. Deze instelling is niet afhankelijk van de instelling van de SIRI die geblokkeerd of niet geconfigureerd is.
-
-  Deze functie is van toepassing op:  
-  - iOS 12.2 en hoger
-
-  > [!NOTE]
-  > De instelling **logboek registratie aan server zijde voor SIRI-opdrachten** is afgeschaft door Apple. In een aanstaande release wordt deze instelling verwijderd uit de intune-console.
-  >
-  > Deze instelling heeft momenteel geen effect op apparaten, hoewel de instelling wordt weer gegeven in Apparaatbeheer-profielen. Als u deze instelling uit elk beleid wilt verwijderen, opent u het beleid, maakt u een kleine wijziging en slaat u het beleid op. Het beleid wordt bijgewerkt en de instelling wordt verwijderd van apparaten.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische registratie van apparaten (onder Super visie)
 
