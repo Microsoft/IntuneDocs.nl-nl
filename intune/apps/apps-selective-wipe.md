@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5bcdf9c3218df91bea85858ea21e88718e81633
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0fafe7c17c698a5eb4e5ad6825bee0ae3fe874c2
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498327"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199238"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Alleen zakelijke gegevens wissen uit door Intune beheerde apps
 
@@ -44,23 +44,12 @@ WIP-beleid (Windows Information Protection) kan worden geïmplementeerd zonder d
 
 ## <a name="create-a-wipe-request"></a>Een wisaanvraag maken
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-
-2. Kies **Alle services**, typ **Intune** in het filtertekstvak en selecteer **Intune**. Het deelvenster Intune wordt geopend. Kies het deelvenster **Client-apps**.
-
-    ![Schermopname van het Microsoft Intune-deelvenster](./media/apps-selective-wipe/apps-selective-wipe01.png)
-
-3. Kies in het **deelvenster Client-apps** de optie **App selectief wissen**.
-
-4. Kies **Nieuw verzoek om te wissen**. Hiermee opent u het deelvenster **Nieuw verzoek om te wissen**.
-
-    ![Schermafbeelding van deelvenster met een nieuwe wisaanvraag](./media/apps-selective-wipe/AzurePortal_MAM_NewWipeRequest.png)
-
-5. Kies een gebruiker en kies vervolgens **Selecteren** om de gebruiker te selecteren waarvan u de gegevens wilt wissen.
-
-6. Kies vervolgens **Apparaat** in het deelvenster **Nieuw verzoek om te wissen**. Hiermee opent u het deelvenster **Apparaat selecteren** waarin een lijst wordt weergegeven met alle apparaten die zijn gekoppeld aan de geselecteerde gebruiker. Het deelvenster bevat ook twee kolommen, de apparaatnaam (een beschrijvende naam die door de gebruiker is gedefinieerd) en het apparaattype (het apparaatplatform). Selecteer het apparaat dat u wilt wissen.
-
-7. U bent nu terug in het deelvenster **Nieuw verzoek om te wissen**. Kies **OK** om een wisaanvraag te maken.
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selecteer in het deelvenster Intune de optie **Client-apps** > **App selectief wissen** > **Wisaanvraag maken**.<br>
+   Het deelvenster **Wisaanvraag maken** wordt weergegeven.
+3. Klik op **Selecteer de gebruiker**, kies de gebruiker van wie u de app-gegevens wilt wissen en klik op **Selecteren** onder aan het deelvenster **Gebruiker**.
+4. Klik op **Selecteer het apparaat**, kies het apparaat en klik op **Selecteren** onder aan het deelvenster **Apparaat selecteren**.
+5. Klik op **Maken** om een wisaanvraag te maken.
 
 De service maakt en volgt voor elke beveiligde app op het apparaat een afzonderlijk verzoek om te wissen en de gebruiker die is gekoppeld aan het verzoek om te wissen.
 

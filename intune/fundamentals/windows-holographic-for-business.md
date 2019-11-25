@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/18/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e648d2eff8fd95cd3c995e9cce1bd0c9dfff32da
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 0f82fce8cc31a831f2c032b85d6464e418bd215c
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889525"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058489"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Verschillende apparaatbeheerfuncties beheren en gebruiken op Windows Holographic- en HoloLens-apparaten met Intune
 
@@ -42,6 +42,7 @@ Azure Active Directory (AD) is een geweldige resource voor het beheren en bedien
 - **[Bulkregistratie voor Windows-apparaten](../enrollment/windows-bulk-enroll.md)** : Als beheerder kunt u grote aantallen nieuwe Windows-apparaten toevoegen aan Azure Active Directory (AD) en Intune. Deze functie wordt bulkregistratie genoemd. Hiervoor worden inrichtingspakketten gebruikt. Deze pakketten koppelen de apparaten waarop Windows Holographic voor Bedrijven wordt uitgevoerd met uw Azure AD-tenant en registreren deze in Intune.
 
 ## <a name="company-portal"></a>Bedrijfsportal
+
 **[De bedrijfsportal-app configureren](../apps/company-portal-app.md)**
 
 Intune biedt gebruikers de bedrijfsportal-app, waarmee zij toegang hebben tot bedrijfsgegevens, apparaten registreren, apps installeren, contact opnemen met uw IT-afdeling en meer. U kunt de bedrijfsportal-app aanpassen voor uw apparaten met Windows Holographic for Business.
@@ -54,6 +55,7 @@ U kunt ook een de volgende acties uitvoeren met behulp van de bedrijfsportal-app
 - [Apparaten handmatig synchroniseren](/intune-user-help/sync-your-device-manually-windows) vanuit de instellingen-app of de bedrijfsportal-app
 
 ## <a name="compliance-policy"></a>Nalevingsbeleid
+
 **[Een nalevingsbeleid voor apparaten maken](../protect/compliance-policy-create-windows.md)**
 
 Nalevingsbeleid zijn regels en instellingen waaraan apparaten moeten voldoen om compatibel te zijn. Gebruik deze beleidsregels met voorwaardelijke toegang om toegang tot bedrijfsresources te blokkeren voor apparaten die niet compatibel zijn. Maak in Intune nalevingsbeleid om toegang voor apparaten met Windows Holographic for Business toe te staan of te blokkeren. U kunt bijvoorbeeld een beleid maken waarvoor Bitlocker moet zijn ingeschakeld.
@@ -61,6 +63,7 @@ Nalevingsbeleid zijn regels en instellingen waaraan apparaten moeten voldoen om 
 Zie ook **[Aan de slag met nalevingsbeleid](../protect/device-compliance-get-started.md)** .
 
 ## <a name="deploy-and-manage-apps"></a>Apps implementeren en beheren
+
 **[Apps toevoegen aan Intune](../apps/apps-add.md)**
 
 Met Intune kunt u apps toevoegen aan uw apparaten met Windows Holographic for Business. Apps kunnen op verschillende manieren worden geïmplementeerd. Voorbeelden hiervan zijn:
@@ -83,6 +86,7 @@ Microsoft Intune kan universele Windows-apps implementeren op Microsoft HoloLens
 > HoloLens-apparaten met Windows 10 Holographic voor bedrijven 1607 ondersteunen geen apps met een online licentie uit de Microsoft Store voor Bedrijven. Zie [Apps installeren op HoloLens](/hololens/holographic-store-apps) voor meer informatie.
 
 ## <a name="device-actions"></a>Apparaatacties
+
 In Intune worden een aantal ingebouwde acties gebruikt waarmee IT-beheerders verschillende taken kunnen uitvoeren. Dit kan lokaal op het apparaat maar ook extern met behulp van Intune in Azure Portal. Gebruikers kunnen ook vanuit de Intune-bedrijfsportal op afstand een opdracht geven voor persoonlijke apparaten die bij Intune zijn ingeschreven.
 
 De volgende acties kunnen worden gebruikt wanneer u apparaten gebruikt waarop Windows Holographic voor Bedrijven wordt uitgevoerd: 
@@ -96,14 +100,16 @@ De volgende acties kunnen worden gebruikt wanneer u apparaten gebruikt waarop Wi
 **[Wat is Microsoft Intune-apparaatbeheer?](../remote-actions/device-management.md)** is een goede resource voor meer informatie over het beheer van apparaten via Azure Portal. 
 
 ## <a name="device-categories-and-groups"></a>Apparaatcategorieën en -groepen
+
 **[Apparaten categoriseren in groepen](../enrollment/device-group-mapping.md)**
 
 Met Intune kunt u apparaatcategorieën maken om apparaten automatisch toe te voegen aan groepen op basis van categorieën die u instelt, zoals Verkoop, Boekhouding, Human Resources, enzovoort. Het idee is om het beheer van uw apparaten met Windows Holographic for Business te vereenvoudigen.
 
-## <a name="device-configuration-profiles"></a>Apparaatconfiguratieprofielen 
+## <a name="device-configuration-profiles"></a>Apparaatconfiguratieprofielen
+
 **[Aan de slag met configuratieprofielen](../configuration/device-profiles.md) en [uw eigen profiel maken](../configuration/device-profile-create.md)**
 
-Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt in- of uitschakelen. Deze instellingen en functies worden beheerd met behulp van profielen. U kunt bijvoorbeeld een profiel maken waarmee Cortana wordt ingeschakeld, of een profiel dat Windows Defender Smart Screen gebruikt op uw apparaten met Windows Holographic for Business.
+Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt in- of uitschakelen. Deze instellingen en functies worden beheerd met behulp van profielen. U kunt bijvoorbeeld een profiel maken waarmee Cortana wordt ingeschakeld, of een profiel dat Microsoft Defender Smart Screen gebruikt op uw apparaten met Windows Holographic for Business.
 
 U kunt OMA-URI in uw profielen gebruiken om een aantal instellingen aan te passen, apparaatbeperkingen in te stellen en een virtueel particulier netwerk (VPN) en Wi-Fi te configureren.
 
@@ -128,21 +134,29 @@ Met virtuele particuliere netwerken (VPN's) geeft u uw gebruikers veilige extern
 U kunt in Intune ook een Wi-Fi-profiel maken om draadloze netwerkinstellingen toe te wijzen aan apparaten met Windows Holographic for Business. Als u een Wi-Fi-profiel toewijst, krijgen uw eindgebruikers zonder netwerkconfiguratie toegang tot het bedrijfsnetwerk. U kunt bijvoorbeeld een Wi-Fi-netwerk uitsluitend voor apparaten met Windows Holographic for Business maken.
 
 ## <a name="shared-multi-user-devices"></a>Gedeelde apparaten voor meerdere gebruikers
+
 [Gedeelde apparaten](../configuration/shared-user-device-settings-windows-holographic.md)
 
 Apparaten met Windows Holographic for Business, zoals de Microsoft HoloLens, kunnen meerdere gebruikers hebben. Intune bevat instellingen waarmee verschillende functies op deze gedeelde apparaten kunnen worden beheerd, zoals energiebeheer, het gebruik van lokale opslag en accountbeheer. De configuratieprofielen kunnen ook worden toegepast op apparaten met verschillende besturingssystemen. De groep met apparaten kan bijvoorbeeld zowel RS2- als RS3-apparaten bevatten.
 
 ## <a name="software-updates"></a>Software-updates
+
 **[Software-updates beheren](../protect/windows-update-for-business-configure.md)**
 
 Intune heeft de functie update-ringen voor Windows 10-apparaten. Deze update-ringen bevatten een groep instellingen waarmee u bepaalt hoe updates worden geïnstalleerd. U kunt bijvoorbeeld een onderhoudsvenster maken om updates te installeren of instellen dat opnieuw moet worden opgestart nadat updates zijn geïnstalleerd. De update-ring kan worden toegepast op meerdere apparaten met Windows Holographic for Business.
 
 ## <a name="terms-and-conditions"></a>Voorwaarden
+
 **[De voorwaarden voor gebruikerstoegang van uw bedrijf instellen](../enrollment/terms-and-conditions-create.md)**
 
 Voordat gebruikers apparaten registreren en toegang hebben tot uw bedrijfsapps, waaronder e-mail, kunt u vereisen dat gebruikers de voorwaarden van uw bedrijf accepteren. Definieer in Intune hoe de voorwaarden worden weergegeven in de bedrijfsportal en wijs deze voorwaarden ook toe aan apparaten met Windows Holographic for Business.
 
 ## <a name="windows-hello-for-business"></a>Windows Hello voor Bedrijven
+
 **[Windows Hello voor Bedrijven gebruiken](../protect/windows-hello.md)**
 
 Hello voor Bedrijven biedt een alternatieve aanmeldingsmethode waarbij een Azure Active Directory-account wordt gebruikt om een wachtwoord, smartcard of virtuele smartcard te vervangen. Met Hello voor Bedrijven kunnen apparaten met Windows Holographic for Business zich aanmelden met een pincode met een door u ingestelde minimale lengte.
+
+## <a name="next-steps"></a>Volgende stappen
+
+[Intune instellen](setup-steps.md).

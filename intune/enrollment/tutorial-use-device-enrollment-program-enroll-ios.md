@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3fb99a363bda762ccfb834388f3abb4ab80f81a
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: cc950f9e60f5549a7a74c2963f33c36369d3ebd3
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709710"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126162"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Zelfstudie: De zakelijke Apple-apparaatinschrijvingsfuncties in Apple Business Manager (ABM) gebruiken om iOS-apparaten bij Intune in te schrijven
 Met behulp van de functies voor apparaatinschrijving in Apple Business Manager kunt u apparaten eenvoudiger inschrijven. Intune biedt ook ondersteuning voor de oudere DEP-portal (Device Enrollment Program) van Apple, maar we raden u aan opnieuw te beginnen met Apple Business Manager. Met Microsoft Intune en Apple Corporate Device Enrollment worden apparaten automatisch veilig ingeschreven wanneer gebruikers het apparaat voor de eerste keer inschakelen. U kunt apparaten daarom naar vele gebruikers verzenden zonder elk apparaat afzonderlijk te hoeven instellen. 
@@ -90,7 +90,7 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor iOS-apparaten i
 
 5. Bepaal of uw apparaten met of zonder **Gebruikersaffiniteit** moeten worden ingeschreven. Gebruikersaffiniteit is ontworpen voor apparaten die door specifieke gebruikers worden gebruikt. Kies **Inschrijven met gebruikersaffiniteit** als uw gebruikers de bedrijfsportal willen gebruiken voor services zoals het installeren van apps. Als uw gebruikers de bedrijfsportal niet nodig hebben of als u het apparaat voor veel gebruikers wilt inrichten, kiest u **Inschrijven zonder Gebruikersaffiniteit**.
 
-6. Als u ervoor kiest om een apparaat met Gebruikersaffiniteit in te schrijven, moet u bepalen of u de verificatie wilt uitvoeren via de bedrijfsportal of via Apple-configuratieassistent. Als u meervoudige verificatie wilt gebruiken, gebruikers wilt toestaan om wachtwoorden te wijzigen wanneer zij zich voor het eerst aanmelden of als u gebruikers wilt vragen hun verlopen wachtwoorden opnieuw in te stellen tijdens de inschrijving, kiest u **Ja** onder **Verificatie met bedrijfsportal in plaats van Apple-configuratieassistent**. Kies **Nee** als er geen problemen mee hebt om de door Apple aangeboden HTTP-basisverificatie via de Apple-configuratieassistent te gebruiken.
+6. Als u ervoor kiest om een apparaat met Gebruikersaffiniteit in te schrijven, moet u bepalen of u de verificatie wilt uitvoeren via de bedrijfsportal of via Apple-configuratieassistent. Als u meervoudige verificatie wilt gebruiken, gebruikers wilt toestaan om wachtwoorden te wijzigen wanneer zij zich voor het eerst aanmelden of als u gebruikers wilt vragen hun verlopen wachtwoorden opnieuw in te stellen tijdens de inschrijving, kiest u **Ja** onder **Verificatie met bedrijfsportal in plaats van Apple-configuratieassistent**. Kies **Nee** als er geen problemen mee hebt om de door Apple aangeboden HTTP-basisverificatie via de Apple-configuratieassistent te gebruiken. Als u **Ja** kiest en u wilt dat de bedrijfsportal-app automatisch wordt bijgewerkt op de apparaten van eindgebruikers, moet u de bedrijfsportal apart als een vereiste app voor deze gebruikers implementeren op basis van het Apple-volumeaankoopprogramma.
 
 7. Als u hebt gekozen voor inschrijving met Gebruikersaffiniteit en Verificatie met bedrijfsportal, bepaalt u nu of u de bedrijfsportal wilt installeren in combinatie met het Apple Volume Purchase Program (VPP). Als u de bedrijfsportal installeert met een VPP-token, hoeven gebruikers geen Apple-id en wachtwoord in te voeren om de bedrijfsportal tijdens de inschrijving in de App Store te downloaden. Kies **Token gebruiken:** onder **Bedrijfsportal installeren met VPP** om een VPP-token te selecteren waarvoor gratis licenties van de bedrijfsportal beschikbaar zijn. Als u VPP niet wilt gebruiken om de bedrijfsportal te implementeren, kiest u **VPP niet gebruiken** onder **Bedrijfsportal installeren met VPP**. 
 

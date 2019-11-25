@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
-ms.reviewer: stama
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18da57282a190dec363e3dfbde5293f5228cb0b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504635"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188469"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Een beleid voor voorwaardelijke toegang maken voor Exchange On-Premises en verouderde Exchange Online Dedicated
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 In dit artikel leest u hoe u de voorwaardelijke toegang voor Exchange On-Premises configureert op basis van apparaatnaleving.
 
@@ -46,7 +44,7 @@ Controleer of aan de volgende voorwaarden is voldaan voordat u voorwaardelijke t
 
 - De connector voor een on-premises Exchange-organisatie kan op elke machine worden geïnstalleerd, zolang die machine maar kan communiceren met de Exchange-server.
 
-- De connector ondersteunt de **Exchange CAS-omgeving**. Intune biedt ondersteuning voor het rechtstreeks installeren van de connector op de Exchange CAS-server, maar we raden u aan deze te installeren op een afzonderlijke computer omdat de server extra wordt belast door de connector. Wanneer u de connector configureert, moet u deze zodanig instellen dat deze communiceert met een van de Exchange CAS-servers.
+- De connector ondersteunt de **Exchange CAS-omgeving**. InTune biedt ondersteuning voor het rechtstreeks installeren van de connector op de Exchange CAS-server. U wordt aangeraden deze op een andere computer te installeren vanwege de extra belasting die de connector voor de server betekent. Wanneer u de connector configureert, moet u deze zodanig instellen dat deze communiceert met een van de Exchange CAS-servers.
 
 - **Exchange ActiveSync** kan worden geconfigureerd met verificatie op basis van certificaten of door het invoeren van gebruikersreferenties.
 
@@ -60,7 +58,7 @@ Controleer of aan de volgende voorwaarden is voldaan voordat u voorwaardelijke t
 
 - Als het apparaat niet aan de instellingen voor voorwaardelijke toegang voldoet, krijgt de gebruiker een van de volgende berichten te zien wanneer deze zich aanmeldt:
   - Als het apparaat niet is geregistreerd bij Intune of niet is geregistreerd bij Azure Active Directory, verschijnt er een bericht met instructies over het installeren van de bedrijfsportal-app, het registreren van het apparaat en het activeren van e-mail. Dit proces zorgt er ook voor dat de Exchange ActiveSync-id van het apparaat wordt gekoppeld aan de apparaatrecord in Azure Active Directory.
-  - Als het apparaat niet aan het beleid voldoet, wordt er een bericht weergegeven waarin de gebruiker naar de website van de Intune-bedrijfsportal of de bedrijfsportal-app wordt verwezen. Hier staat informatie over het probleem en hoe het kan worden opgelost.
+  - Als het apparaat niet aan het beleid voldoet, wordt er een bericht weergegeven waarin de gebruiker naar de website van de Intune-bedrijfsportal of de bedrijfsportal-app wordt verwezen. In de bedrijfsportal staat informatie over het probleem en hoe het kan worden opgelost.
 
 ### <a name="support-for-mobile-devices"></a>Ondersteuning voor mobiele apparaten
 
@@ -70,7 +68,7 @@ Controleer of aan de volgende voorwaarden is voldaan voordat u voorwaardelijke t
 - **Apparaten met een Android-werkprofiel** van EAS-mailclients: alleen de apps **Gmail** en **Nine Work for Android Enterprise** in het **werkprofiel** worden ondersteund op apparaten met een Android-werkprofiel. Voorwaardelijke toegang werkt alleen in combinatie met Android-werkprofielen als u een e-mailprofiel voor de app Gmail of Nine Work for Android Enterprise implementeert en die apps ook implementeert als verplicht te installeren apps.
 
 > [!NOTE]
-> Microsoft Outlook voor Android en iOS wordt niet ondersteund via de on-premises Exchange-connector. Als u wilt gebruikmaken van Azure Active Directory-beleid voor voorwaardelijke toegang en beleid voor Intune-app-beveiliging met Outlook voor iOS en Android voor uw on-premises postvakken, raadpleegt u [Hybride moderne verificatie gebruiken met Outlook voor iOS en Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
+> Microsoft Outlook voor Android en iOS wordt niet ondersteund via de on-premises Exchange-connector. Als u wilt gebruikmaken van Azure Active Directory-beleid voor voorwaardelijke toegang en beleid voor Intune-app-beveiliging met Outlook voor iOS en Android voor uw on-premises postvakken, raadpleegt u [Hybride moderne verificatie gebruiken met Outlook voor iOS en Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
 ### <a name="support-for-pcs"></a>Ondersteuning voor pc's
 
@@ -80,19 +78,19 @@ De native **Mail**-toepassing voor Windows 8.1 en hoger (indien ingeschreven in 
 
 Voordat u de volgende procedure kunt gebruiken om Toegangsbeheer van Exchange On-premises in te stellen, moet u ten minste één [Intune-connector voor Exchange On-premises](exchange-connector-install.md) installeren en configureren.
 
-1. [Aanmelden bij Intune](https://go.microsoft.com/fwlink/?linkid=2090973)
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Ga naar **Exchange-toegang** en selecteer vervolgens **On-premises toegang tot Exchange**. 
+2. Ga naar **Tenantbeheer** > **Exchange-toegang** en selecteer vervolgens **On-premises toegang tot Exchange**.
 
 3. Kies **Ja** in het deelvenster **On-premises toegang tot Exchange** om *on-premises toegang tot Exchange in te schakelen*.
 
-4. Onder **Toewijzing** kiest u **Groepen selecteren om op te nemen**. Vervolgens selecteert u een of meer groepen om de toegang te configureren. 
+4. Onder **Toewijzing** kiest u **Groepen selecteren om op te nemen**. Vervolgens selecteert u een of meer groepen om de toegang te configureren.
 
    Op leden van de groepen die u selecteert, wordt het beleid voor voorwaardelijke toegang tot Exchange On-premises toegepast. Gebruikers die dit beleid ontvangen, moeten hun apparaten inschrijven bij Intune en voldoen aan de nalevingsprofielen voordat ze toegang tot Exchange On-premises kunnen krijgen.
 
-5. Als u groepen wilt uitsluiten, kiest u **Groepen voor uitsluiten selecteren** en selecteert u vervolgens een of meer groepen die u wilt vrijstellen van apparaatinschrijving en de nalevingsprofielen voor toegang tot Exchange On-premises. 
+5. Als u groepen wilt uitsluiten, kiest u **Groepen voor uitsluiten selecteren** en selecteert u vervolgens een of meer groepen die u wilt vrijstellen van apparaatregistratie en de nalevingsprofielen voor toegang tot Exchange On-premises. 
 
-6. Configureer vervolgens de instellingen voor de Intune on-premises Exchange-connector.  Selecteer onder **Instellingen** in het **toegangsvenster van Exchange** **On-premises Exchange ActiveSync-connector** en selecteer vervolgens de connector voor de Exchange-organisatie die u wilt configureren.
+6. Configureer vervolgens de instellingen voor de Intune on-premises Exchange-connector.  Selecteer onder **Instellingen** in het *toegangsvenster van Exchange On-premises* de optie **On-premises Exchange ActiveSync-connector** en selecteer vervolgens de connector voor de Exchange-organisatie die u wilt configureren.
 
 7. Kies onder **Instellingen** **Gebruikersmeldingen**om het standaard-e-mail bericht te wijzigen dat wordt verzonden naar gebruikers als hun apparaat niet compatibel is ze toegang willen krijgen tot Exchange On-Premises. Voor de berichtsjabloon wordt Markup Language gebruikt.  Tijdens het typen ziet u een voorbeeld van het bericht.
    > [!TIP]
@@ -120,6 +118,6 @@ Voordat u de volgende procedure kunt gebruiken om Toegangsbeheer van Exchange On
 
 Vervolgens maakt u een nalevingsbeleid en wijst u dit toe aan de gebruikers zodat Intune hun mobiele apparaten kan evalueren. Zie [Aan de slag met apparaatcompatibiliteit](device-compliance-get-started.md).
 
-## <a name="see-also"></a>Zie tevens
+## <a name="next-steps"></a>Volgende stappen
 
-[Problemen met de Intune on-premises Exchange-connector in Microsoft Intune oplossen](https://support.microsoft.com/help/4471887)
+[Problemen met de Intune On-premises Exchange-connector in Microsoft Intune oplossen](https://support.microsoft.com/help/4471887)

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,85 +17,100 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b775bb09c289733cdc2837984874b7c1c7e286bc
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: fde15da898a70e9557aabb9ed7a7ae8324cfb304
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681373"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188369"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Beleid maken voor voorwaardelijke toegang op basis van apparaten
 
-Met Intune kunt u de voorwaardelijke toegang in Azure Active Directory verbeteren door nalevingsbeleid voor mobiele apparaten toe te voegen aan het toegangsbeheer. Zodra u een nalevingsbeleid in Intune hebt gemaakt waarin de nalevingsvereisten voor apparaten zijn vastgelegd, kunt u de nalevingsstatus van een apparaat gebruiken om de toegang tot uw apps en services toe te staan of te blokkeren. U kunt dit doen door beleid voor voorwaardelijke toegang te maken dat gebruikmaakt van de instelling **Vereisen dat het apparaat als compatibel is gemarkeerd**.  
+Verbeter met Intune de voorwaardelijke toegang in Azure Active Directory door nalevingsbeleid voor mobiele apparaten toe te voegen aan het toegangsbeheer. Met Intune-nalevingsbeleid waarin de nalevingsvereisten voor apparaten zijn vastgelegd, kunt u de nalevingsstatus van een apparaat gebruiken om de toegang tot uw apps en services toe te staan of te blokkeren. U kunt dit doen door beleid voor voorwaardelijke toegang te maken dat gebruikmaakt van de instelling **Vereisen dat het apparaat als compatibel is gemarkeerd**.
 
-Beleid voor voorwaardelijke toegang specificeert de app of services die u wilt beveiligen, de voorwaarden waaronder de apps of services toegankelijk zijn, en de gebruikers op wie het beleid van toepassing is. Voorwaardelijke toegang is een Azure AD premium-functie die configureerbaar is in Azure Active Directory, maar u kunt hetzelfde beleid ook instellen in de Intune-portal. Het knooppunt voor voorwaardelijke toegang dat via *Intune* wordt geopend, is hetzelfde als het knooppunt dat u opent via *Azure AD*.  
+Beleid voor voorwaardelijke toegang specificeert de app of services die u wilt beveiligen, de voorwaarden waaronder de apps of services toegankelijk zijn, en de gebruikers op wie het beleid van toepassing is. Hoewel voorwaardelijke toegang een Azure AD Premium-functie is, is het knooppunt voor voorwaardelijke toegang waartoe u toegang hebt vanuit *Intune* hetzelfde knooppunt als voor *Azure AD*.
 
 > [!IMPORTANT]
 > Voordat u het beleid voor voorwaardelijke toegang instelt, moet u apparaatnalevingsbeleid in Intune instellen om apparaten te evalueren op basis van de vraag of ze aan specifieke vereisten voldoen. Zie [Aan de slag met apparaatnalevingsbeleid in Intune](device-compliance-get-started.md).
 
 ## <a name="create-conditional-access-policy"></a>Beleid voor voorwaardelijke toegang maken
 
-1. In de Intune-portal selecteert u **Voorwaardelijke toegang** > **Beleid** > **Nieuw beleid**.
-   
-    ![Nieuw beleid voor voorwaardelijke toegang maken](./media/create-conditional-access-intune/create-ca.png)
- 
-2. Onder **Toewijzingen** selecteert u **Gebruikers en groepen**. 
-3. Op het tabblad **Opnemen** identificeert u de gebruikers of groepen waarop u dit beleid voor voorwaardelijke toegang wilt toepassen. Nadat u hebt gekozen wie u wilt opnemen, kunt u het tabblad **Uitsluiten** gebruiken indien er gebruikers, rollen of groepen zijn die u wilt uitsluiten van dit beleid.  
-    - **Alle gebruikers**: selecteer deze optie om het beleid toe te passen op alle gebruikers en groepen, inclusief interne en gastgebruikers.
-  
-    - **Gebruikers en groepen selecteren**: selecteer deze optie en geef een of meer van de volgende opties op:
-  
-      a. **Alle gastgebruikers**: selecteer deze optie om externe gastgebruikers (bijvoorbeeld partners, externe medewerkers) op te nemen of uit te sluiten
-       
-      b. **Directory-rollen**: selecteer een of meer Azure AD-rollen om gebruikers aan wie deze rollen zijn toegewezen, op te nemen of uit te sluiten.
-      
-      c. **Gebruikers en groepen**: selecteer deze optie om individuele gebruikers of groepen te zoeken en te selecteren die u wilt opnemen of uitsluiten.
-     
-       > [!TIP]  
-       > Test het beleid uit op een kleinere groep gebruikers om er zeker van te zijn dat het naar verwachting werkt.
-4. Selecteer **Voltooid**.
-5. Onder **Toewijzingen** selecteert u **Cloud-apps**. 
-6. Identificeer op het tabblad **Opnemen** de apps en services die u wilt beveiligen met dit beleid voor voorwaardelijke toegang. Vervolgens kunt u het tabblad **Uitsluiten** gebruiken als er apps of services zijn die u wilt uitsluiten van dit beleid.
-    - **Alle cloud-apps**: selecteer deze optie om het beleid op alle apps toe te passen.
-      > [!IMPORTANT]  
-      > De Microsoft Azure Management-app voor toegang tot de Azure-portal is in deze lijst opgenomen. Zorg ervoor dat u het tabblad **Uitsluiten** hier of in de opties **Gebruikers en groepen** gebruikt om ervoor te zorgen dat u (of de gebruikers of groepen die u aanwijst) zich kunt aanmelden op de Azure-portal. 
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-    - **Apps selecteren**: selecteer deze optie, kies **Selecteren** en gebruik vervolgens de lijst met toepassingen om de toepassingen of services te zoeken en te selecteren die u wilt beveiligen.
-    
-      ![Toewijzingen voor voorwaardelijke toegang configureren](./media/create-conditional-access-intune/create-ca-select-apps.png)
+2. Selecteer **Apparaten** > **Voorwaardelijke toegang** > **Beleid** > **Nieuw beleid**.
+  ![Nieuw beleid voor voorwaardelijke toegang maken](./media/create-conditional-access-intune/create-ca.png)
 
-7. Selecteer **Voltooid**.
+3. Onder **Toewijzingen** selecteert u **Gebruikers en groepen**.
+
+4. Op het tabblad **Opnemen** identificeert u de gebruikers of groepen waarop dit beleid voor voorwaardelijke toegang van toepassing is. Nadat u gebruikers of groepen hebt gekozen die u wilt opnemen, kunt u het tabblad **Uitsluiten** gebruiken indien er gebruikers, rollen of groepen zijn die u wilt uitsluiten van dit beleid.
+
+   - **Alle gebruikers**: selecteer deze optie om het beleid toe te passen op alle gebruikers en groepen, inclusief interne en gastgebruikers.
+
+   - **Gebruikers en groepen selecteren**: selecteer deze optie en geef een of meer van de volgende opties op:
+  
+     1. **Alle gastgebruikers**: selecteer deze optie om externe gastgebruikers (bijvoorbeeld partners, externe medewerkers) op te nemen of uit te sluiten
+
+     2. **Directory-rollen**: selecteer een of meer Azure AD-rollen om gebruikers aan wie deze rollen zijn toegewezen, op te nemen of uit te sluiten.
+
+     3. **Gebruikers en groepen**: selecteer deze optie om individuele gebruikers of groepen te zoeken en te selecteren die u wilt opnemen of uitsluiten.
+
+        > [!TIP]
+        > Test het beleid uit op een kleinere groep gebruikers om er zeker van te zijn dat het naar verwachting werkt.
+
+5. Selecteer **Voltooid**.
+
+6. Onder **Toewijzingen** selecteert u **Cloud-apps of acties**.
+
+7. Gebruik de beschikbare opties op het tabblad **Opnemen** om de apps en services aan te geven die u wilt beveiligen met dit beleid voor voorwaardelijke toegang. Vervolgens kunt u het tabblad **Uitsluiten** gebruiken als er apps of services zijn die u wilt uitsluiten van dit beleid.
+
+   - **Alle cloud-apps**: selecteer deze optie om het beleid op alle apps toe te passen.
+     > [!IMPORTANT]
+     > De Microsoft Azure Management-app voor toegang tot de Azure-portal is in deze lijst opgenomen. Zorg ervoor dat u het tabblad **Uitsluiten** hier of in de opties **Gebruikers en groepen** gebruikt om ervoor te zorgen dat u (of de gebruikers of groepen die u aanwijst) zich kunt aanmelden op de Azure-portal. 
+
+   - **Apps selecteren**: selecteer deze optie, kies **Selecteren** en gebruik vervolgens de lijst met toepassingen om de toepassingen of services te zoeken en te selecteren die u wilt beveiligen.
+
+   Selecteer **Gereed** als u klaar bent.
+
 8. Onder **Toewijzingen** selecteert u **Voorwaarden**.
-    - **Aanmeldingsrisico**: kies Ja om de aanmeldingsrisicodetectie van Azure AD Identity Protection voor dit beleid te gebruiken, en kies vervolgens de aanmeldingsrisiconiveaus waarop het beleid van toepassing moet zijn.
-    - **Apparaatplatformen**: identificeer op het tabblad **Opnemen** u de apparaatplatformen waarop u dit beleid voor voorwaardelijke toegang wilt toepassen. Gebruik het tabblad **Uitsluiten** om platformen van dit beleid uit te sluiten.
-    - **Locaties**: geef op het tabblad **Opnemen** op of het beleid van toepassing is op een locatie, op vertrouwde netwerklocaties die onder de controle van uw IT-afdeling vallen, of op specifieke netwerklocaties. Gebruik het tabblad **Uitsluiten** om netwerklocaties van dit beleid uit te sluiten. 
-    - **Client-apps**: kies **Ja** om aan te geven of het beleid van toepassing moet zijn op browser-apps, mobiele apps en desktop-clients. U kunt ook **Moderne verificatieclients** (zoals Outlook voor iOS resp. Android) en **Exchange ActiveSync-clients** selecteren.
-    - **Apparaatstatus.** : het beleid voor voorwaardelijke toegang is van toepassing op alle apparaatstatussen, tenzij u Ja kiest en specifiek de statussen 'Apparaat aan Hybrid Azure AD toegevoegd' of 'Apparaat gemarkeerd als compatibel' (of beide) uitsluit.
-    
-      ![Voorwaarden instellen voor beleid voor voorwaardelijke toegang](./media/create-conditional-access-intune/create-ca-device-platforms.png)
 
-      > [!TIP]  
-      > Indien u zowel **Moderne verificatieclients** als **Exchange ActiveSync-clients** wilt beveiligen, maakt u twee afzonderlijke beleidsvarianten voor voorwaardelijke toegang, één voor elk clienttype. Exchange ActiveSync ondersteunt weliswaar moderne verificatie, maar alleen met de voorwaarde 'platform'. Andere voorwaarden, zoals meervoudige verificatie, worden niet ondersteund. Om de toegang tot Exchange Online vanaf Exchange ActiveSync effectief te beveiligen, maakt u een beleid voor voorwaardelijke toegang dat de cloud-app Office 365 Exchange Online en de client-app Exchange ActiveSync specificeert, waarbij de optie 'Beleid alleen toepassen op ondersteunde platformen' is geselecteerd.
+   - **Aanmeldingsrisico**: kies *Ja* om de aanmeldingsrisicodetectie van Azure AD Identity Protection voor dit beleid te gebruiken, en kies vervolgens de aanmeldingsrisiconiveaus waarop het beleid van toepassing moet zijn.
+
+   - **Apparaatplatformen**: identificeer op het tabblad **Opnemen** u de apparaatplatformen waarop u dit beleid voor voorwaardelijke toegang wilt toepassen. Gebruik het tabblad **Uitsluiten** om platformen van dit beleid uit te sluiten.
+
+   - **Locaties**: Geef op het tabblad **Opnemen** op of het beleid van toepassing is op:
+     - Elke locatie
+     - Vertrouwde netwerklocaties die onder het beheer van uw IT-afdeling vallen
+     - Specifieke netwerklocaties.
+
+     Gebruik het tabblad **Uitsluiten** om netwerklocaties van dit beleid uit te sluiten.
+
+   - **Client-apps**: selecteer *Ja* om aan te geven of het beleid van toepassing moet zijn op browser-apps, mobiele apps en desktop-clients.
+
+   - **Apparaatstatus.** : het beleid voor voorwaardelijke toegang is van toepassing op alle apparaatstatussen, tenzij u Ja kiest en specifiek de statussen 'Apparaat aan Hybrid Azure AD toegevoegd' of 'Apparaat gemarkeerd als compatibel' (of beide) uitsluit.
+
+     > [!TIP]
+     > Indien u zowel **Moderne verificatieclients** als **Exchange ActiveSync-clients** wilt beveiligen, maakt u twee afzonderlijke beleidsvarianten voor voorwaardelijke toegang, één voor elk clienttype. Exchange ActiveSync ondersteunt weliswaar moderne verificatie, maar alleen met de voorwaarde 'platform'. Andere voorwaarden, zoals meervoudige verificatie, worden niet ondersteund. Om de toegang tot Exchange Online vanaf Exchange ActiveSync effectief te beveiligen, maakt u een beleid voor voorwaardelijke toegang dat de cloud-app Office 365 Exchange Online en de client-app Exchange ActiveSync specificeert, waarbij de optie 'Beleid alleen toepassen op ondersteunde platformen' is geselecteerd.
 
 9. Selecteer **Voltooid**.
+
 10. Onder **Toegangscontroles** selecteert u **Verlenen**. Configureer wat er moet gebeuren, op basis van de voorwaarden die u hebt ingesteld.  U kunt de volgende opties selecteren:
+
     - **Toegang blokkeren**: de gebruikers die in dit beleid worden gespecificeerd, wordt de toegang tot de apps geweigerd onder de voorwaarden die u hebt opgegeven.
     - **Toegang verlenen**: de gebruikers die in dit beleid worden gespecificeerd, wordt toegang verleend, maar u kunt nog een van de volgende acties eisen:
       - **Meervoudige verificatie vereisen**: de gebruiker dient aan extra beveiligingsvereisten te voldoen, bijvoorbeeld via telefoon of sms.
-      - **Vereisen dat het apparaat als compatibel is gemarkeerd**: het apparaat moet compatibel zijn met Intune. Als het apparaat niet compatibel is, krijgt de gebruiker de optie om het apparaat in Intune te registreren. 
+      - **Vereisen dat het apparaat als compatibel is gemarkeerd**: het apparaat moet compatibel zijn met Intune. Als het apparaat niet compatibel is, krijgt de gebruiker de optie om het apparaat in Intune te registreren.
       - **Vereisen dat het apparaat Hybride Azure AD is toegevoegd**: apparaten moeten aan Hybrid Azure AD zijn toegevoegd.
       - **Goedgekeurde client-apps vereisen**: het apparaat moet goedgekeurde client-apps gebruiken. 
-      - **Voor meerdere controles**: selecteer **Alle geselecteerde controles vereisen**, zodat alle bovenstaande vereisten worden afgedwongen wanneer een apparaat toegang probeert te krijgen tot de app.
-    
+      - **Voor meerdere controles**: selecteer **Alle geselecteerde controles vereisen**, zodat alle vereisten worden afgedwongen wanneer een apparaat toegang probeert te krijgen tot de app.
+
       ![Toegangsbeheer - instellingen voor toegang verlenen](./media/create-conditional-access-intune/create-ca-grant-access-settings.png)
- 
+
 11. Onder **Beleid inschakelen** selecteert u **Aan**.
-     
-     ![Beleid inschakelen](./media/create-conditional-access-intune/enable-policy.png)
 
 12. Selecteer **Maken**.
 
-## <a name="see-also"></a>Zie tevens
+## <a name="next-steps"></a>Volgende stappen
+
 [Op apps gebaseerde voorwaardelijke toegang met Intune](app-based-conditional-access-intune.md)
 
 [Problemen met voorwaardelijke toegang van Intune oplossen](https://support.microsoft.com/help/4456106)

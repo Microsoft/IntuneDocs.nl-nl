@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3552eca925865eb3278b50490a6b70ee5807e2b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b09b30fd32caace9ed3259350c01548d5e5fae15
+ms.sourcegitcommit: 93265c2491058afde7168134075bed77031b9311
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502448"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161588"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Nalevingsbeleid afdwingen op Macs die door Jamf Pro worden beheerd
 
@@ -37,12 +37,11 @@ Voor de procedures in dit artikel is toegang vereist tot de Intune-console en de
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Nalevingsbeleid voor apparaten in Intune instellen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en ga naar **Apparaatcompatibiliteit** > **Beleid**. 
-2. Als u een eerder gemaakt beleid gebruikt, selecteert u dat beleid in de-console en gaat u naar de volgende stap van deze procedure.  
-   
-   Selecteer **Beleid maken** en geef vervolgens details op voor een beleid en selecteer **macOS** bij *Platform*. Configureer *Instellingen* en *Acties voor niet-naleving* om te voldoen aan de vereisten van uw organisatie en selecteer vervolgens **Maken** om het beleid op te slaan.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-3. Selecteer **Toewijzingen** in het deelvenster *Overzicht*. Gebruik de beschikbare opties om te configureren welke Azure AD-gebruikers (Azure Active Directory) en beveiligingsgroepen dit beleid ontvangen. Jamf-integratie met Intune ondersteunt geen nalevingsbeleid voor apparaatgroepen. 
+2. Selecteer **Apparaten** > **Nalevingsbeleid**. Als u een eerder gemaakt beleid gebruikt, selecteert u dat beleid in de-console en gaat u naar de volgende stap van deze procedure. Als u een nieuw beleid wilt maken, selecteert u **Beleid maken** en geeft u vervolgens details op voor een beleid en selecteert u **macOS** bij *Platform*. Configureer *Instellingen* en *Acties voor niet-naleving* om te voldoen aan de vereisten van uw organisatie en selecteer vervolgens **Maken** om het beleid op te slaan.
+
+3. Selecteer **Toewijzingen** in het deelvenster *Overzicht*. Gebruik de beschikbare opties om te configureren welke Azure AD-gebruikers (Azure Active Directory) en beveiligingsgroepen dit beleid ontvangen. Jamf-integratie met Intune ondersteunt geen nalevingsbeleid voor apparaatgroepen.
 
 4. Wanneer u **Opslaan** selecteert, wordt het beleid geïmplementeerd voor de gebruikers.  
 
@@ -103,7 +102,7 @@ Voor de registratie van het apparaat moet de gebruiker van het apparaat handmati
 
 Gebruik de Jamf Pro-console om te controleren of de communicatie tussen Jamf Pro en Microsoft Intune naar behoren verloopt. 
 
-- Ga in Jamf Pro naar **Settings** > **Global Management** > **Microsoft Intune Integration** en selecteer vervolgens **Test**. 
+- Ga in Jamf Pro naar **Settings** > **Global Management** > **Microsoft Intune Integration** en selecteer vervolgens **Test**.
 
     In de console wordt een bericht weergegeven of de verbinding tot stand is gebracht.  
 
@@ -112,7 +111,7 @@ Als de verbindingstest van de Jamf Pro-console mislukt, controleert u de Jamf-co
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>Een door Jamf beheerd apparaat verwijderen uit Intune
 
-U kunt een door Jamf beheerd apparaat verwijderen uit de Intune-console door in de weergave **Alle apparaten** **Verwijderen** te selecteren. Bulkverwijdering van apparaten kan worden ingeschakeld door meerdere apparaten te selecteren en op **Verwijderen** te klikken.
+Als u een door Jamf beheerd apparaat wilt verwijderen, opent u het beheercentrum voor Microsoft Eindpuntbeheer en selecteert u **Apparaten** > **Alle apparaten**, selecteert u het apparaat en selecteert u vervolgens **Verwijderen**.  Bulkverwijdering van apparaten kan worden ingeschakeld door meerdere apparaten te selecteren en op **Verwijderen** te klikken.
 
 U vindt meer informatie over [het verwijderen van door Jamf beheerde apparaten in de Jamf Pro-documenten](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). U kunt ook een ondersteuningsticket indienen met [Jamf-ondersteuning](https://www.jamf.com/support/) voor meer informatie. 
 

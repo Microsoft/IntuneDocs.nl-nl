@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbdef7cffa76beeb158c47ab3651d438de2d6ccc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503171"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098199"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Inschrijving voor macOS-apparaten instellen in Intune
 
@@ -42,15 +42,16 @@ Voer de volgende vereisten uit voordat u inschrijving van macOS-apparaten instel
 - [MDM-instantie instellen](../fundamentals/mdm-authority-set.md)
 - [Groepen maken](../fundamentals/groups-add.md)
 - [De bedrijfsportal configureren](../apps/company-portal-app.md)
-- Gebruikerslicenties toewijzen in het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- Gebruikerslicenties toewijzen in het [Microsoft 365-beheercentrum](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Een Apple MDM-pushcertificaat ophalen](../enrollment/apple-mdm-push-certificate-get.md)
 
 ## <a name="user-owned-macos-devices-byod"></a>macOS-apparaten die het eigendom van gebruikers zijn (BYOD)
 
-U kunt gebruikers hun persoonlijke apparaten laten inschrijven voor Intune-beheer, wat Bring-Your-Own-Device of BYOD wordt genoemd. Nadat u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen uw gebruikers hun apparaten als volgt registreren:
+U kunt gebruikers hun eigen persoonlijke apparaten laten registreren in Intune-beheer. Dit staat bekend als 'Bring Your Own Device' of BYOD. Nadat u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen uw gebruikers hun apparaat als volgt registreren:
 - door naar de [bedrijfswebsite](https://portal.manage.microsoft.com) te gaan; of
-- de bedrijfsportal-app te downloaden.
-U kunt hen ook een link naar online registratiestappen sturen: [Uw Mac OS-apparaat registreren in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+- door de Mac-bedrijfsportal-app te downloaden via [aka.ms/EnrollMyMac](https://aka.ms/EnrollMyMac).
+
+U kunt uw gebruikers ook een koppeling sturen naar de stappen voor online registratie: [Uw Mac OS-apparaat registreren in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Zie de volgende artikelen voor meer informatie over andere taken voor eindgebruikers:
 
@@ -77,12 +78,17 @@ Voor Parallels Desktop moet u het hardwaretype en het serienummer voor de virtue
 Voor VMware Fusion moet u [het VMX-bestand bewerken](https://kb.vmware.com/s/article/1014782) om het hardwaremodel en serienummer van de virtuele machine in te stellen. U wordt aangeraden het hardwaretype van het apparaat waarop de virtuele machines worden uitgevoerd, af te stemmen op het hardwaretype van de virtuele machines die u maakt. U vindt dit hardwaretype in **Apple-menu** > **Over deze Mac** > **Systeeminformatie** > **Modelnaam**. 
 
 ## <a name="user-approved-enrollment"></a>Door de gebruiker goedgekeurde inschrijving
-
 Door de gebruiker goedgekeurde MDM-inschrijving is een type macOS-inschrijving die u kunt gebruiken om bepaalde vertrouwelijke instellingen te beheren. Zie de [ondersteuningsdocumentatie van Apple](https://support.apple.com/HT208019) voor meer informatie.
 
-Na de inschrijving met behulp van de macOS-bedrijfsportal, moet de gebruiker handmatig goedkeuren met behulp van de systeemvoorkeuren om door de gebruiker te worden goedgekeurd. Instructies hiervoor vindt u in de macOS-bedrijfsportal voor gebruikers van macOS 10.13.2 en later.
+Vanaf november 2019 worden alle nieuwe macOS-registraties van gebruikers 'Goedgekeurd door de gebruiker' omdat de gebruiker het beheerprofiel handmatig moet installeren om het te kunnen registreren. Tijdens [het registratieproces](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp) installeert de gebruiker het Apple-beheerprofiel in **Systeemvoorkeuren** > **Profielen**.  Instructies voor het installeren van het beheerprofiel zijn beschikbaar in de macOS-bedrijfsportal-app.
 
-Ga naar de Intune-portal en kies vervolgens **Apparaten** > **Alle apparaten**> kies het apparaat > **Hardware** om te achterhalen of een apparaat door de gebruiker is goedgekeurd. Schakel het veld **Goedgekeurd door gebruiker** in.
+Apparaten die zijn geregistreerd vóór november 2019 zijn mogelijk niet 'Goedgekeurd door de gebruiker' als de gebruiker het beheerprofiel niet handmatig heeft goedgekeurd. Gebruikers kunnen echter wel teruggaan en het beheerprofiel goedkeuren door naar **Systeemvoorkeuren** > **Profielen** te gaan en **Beheerprofiel** > **Goedkeuren** te kiezen.
+
+### <a name="find-out-if-a-device-is-user-approved"></a>Nagaan of een apparaat 'Goedgekeurd door de gebruiker' is
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Kies **Apparaten** > **Alle apparaten** > kies het apparaat > **Hardware**.
+3. Schakel het veld **Door gebruiker goedgekeurde registratie** in.
+
 
 ## <a name="next-steps"></a>Volgende stappen
 

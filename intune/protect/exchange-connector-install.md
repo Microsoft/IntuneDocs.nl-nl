@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/28/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30b5debc6e1ab113a08d8930f96f6cbc9bf12b48
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 62db99fc2e47bdfa1a767db3bb2916649dedc074
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509519"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164687"
 ---
 # <a name="set-up-the-on-premises-intune-exchange-connector"></a>De on-premises Intune Exchange-connector instellen
 Voor het beveiligen van de toegang tot Exchange is Intune afhankelijk van het on-premises onderdeel Microsoft Intune Exchange Connector. Deze connector wordt op sommige plaatsen in de Intune-console ook wel de *On-premises Exchange ActiveSync-connector* genoemd. 
@@ -80,14 +80,15 @@ Maak een Active Directory-gebruikersaccount voor de Intune Exchange-connector. H
 
 ## <a name="download-the-installation-package"></a>Het installatiepakket downloaden
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) op een Windows-server met ondersteuning voor de Intune Exchange-connector. Gebruik een account dat een beheerdersaccount is op de on-premises Exchange-server en een licentie heeft voor het gebruik van Exchange-server.
+Op een Windows-server met ondersteuning voor de Intune Exchange-connector:
 
-2. Ga naar **Intune** > **Exchange-toegang**.  
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).  Gebruik een account dat een beheerdersaccount is op de on-premises Exchange-server en een licentie heeft voor het gebruik van Exchange-server.
+
+2. Selecteer **Tenantbeheer** > **Toegang tot Exchange**.  
 
 3. Kies onder **Setup** de optie **On-premises Exchange ActiveSync-connector** en selecteer vervolgens **Toevoegen**.
 
 4. Selecteer op de pagina **Connector toevoegen** de optie **De on-premises connector downloaden**. De Intune Exchange-connector bevindt zich in een gecomprimeerde map (.zip) die kan worden geopend of opgeslagen. Kies in het dialoogvenster **Bestand downloaden** de optie **Opslaan** om de gecomprimeerde map op te slaan op een veilige locatie.
-
 
 ## <a name="install-and-configure-the-intune-exchange-connector"></a>De Intune Exchange-connector installeren en configureren
 
@@ -149,8 +150,6 @@ Nadat de Exchange-connector de verbinding heeft ingesteld, worden de mobiele app
 > [!NOTE]
 > Als u de Intune Exchange connector installeert en u later de Exchange-verbinding moet verwijderen, moet u de connector verwijderen van de computer waarop deze is geïnstalleerd.
 
-
-
 ## <a name="install-connectors-for-multiple-exchange-organizations"></a>Connectors installeren voor meerdere Exchange-organisaties
 
 Intune ondersteunt meerdere Intune Exchange-connectors per abonnement. Voor een tenant met meerdere Exchange-organisaties kunt u slechts één connector per Exchange-organisatie instellen. 
@@ -161,52 +160,60 @@ Elke Exchange-organisatie die verbinding maakt met Intune, ondersteunt hoge besc
 
 ## <a name="on-premises-intune-exchange-connector-high-availability-support"></a>Ondersteuning voor hoge beschikbaarheid van on-premises Intune Exchange-connector  
 
-Hoge beschikbaarheid voor de on-premises connector betekent dat de connector een andere Client Access Server (CAS) voor een Exchange-organisatie kan gebruiken als de door de connector gebruikte Exchange CAS niet meer beschikbaar is voor die Exchange-organisatie. De Exchange-connector zelf biedt geen ondersteuning voor hoge beschikbaarheid. Als de connector niet kan worden uitgevoerd, is er geen automatische failover. U moet [een nieuwe connector installeren](#reinstall-the-intune-exchange-connector) om de mislukte connector te vervangen. 
+Hoge beschikbaarheid voor de on-premises connector betekent dat de connector een andere Client Access Server (CAS) voor een Exchange-organisatie kan gebruiken als de door de connector gebruikte Exchange CAS niet meer beschikbaar is voor die Exchange-organisatie. De Exchange-connector zelf biedt geen ondersteuning voor hoge beschikbaarheid. Als de connector niet kan worden uitgevoerd, is er geen automatische failover. U moet [een nieuwe connector installeren](#reinstall-the-intune-exchange-connector) om de mislukte connector te vervangen.
 
-Voor een failover moet de connector de opgegeven CAS gebruiken om een verbinding met Exchange tot stand te brengen. Vervolgens worden er extra servers voor clienttoegang voor die Exchange-organisatie gedetecteerd. Door deze detectie is failover naar een andere CAS mogelijk als deze beschikbaar is totdat de primaire CAS beschikbaar komt. 
+Voor een failover moet de connector de opgegeven CAS gebruiken om een verbinding met Exchange tot stand te brengen. Vervolgens worden er extra servers voor clienttoegang voor die Exchange-organisatie gedetecteerd. Door deze detectie is failover naar een andere CAS mogelijk als deze beschikbaar is totdat de primaire CAS beschikbaar komt.
 
-Detectie van aanvullende CAS-exemplaren is standaard ingeschakeld. U kunt failover zo nodig als volgt uitschakelen:  
-1. Op de server waar de Exchange-connector is geïnstalleerd, gaat u naar **%*ProgramData*%\Microsoft\Windows Intune Exchange Connector**. 
+Detectie van aanvullende CAS-exemplaren is standaard ingeschakeld. U kunt failover zo nodig als volgt uitschakelen:
+
+1. Op de server waar de Exchange-connector is geïnstalleerd, gaat u naar **%*ProgramData*%\Microsoft\Windows Intune Exchange Connector**.
+
 2. Open **OnPremisesExchangeConnectorServiceConfiguration.xml** met behulp van een teksteditor.
-3. Wijzig **\<IsCasFailoverEnabled>*true*\</IsCasFailoverEnabled>** in **\<IsCasFailoverEnabled>*false*\</IsCasFailoverEnabled>** .  
- 
+
+3. Wijzig **\<IsCasFailoverEnabled>*true*\</IsCasFailoverEnabled>** in **\<IsCasFailoverEnabled>*false*\</IsCasFailoverEnabled>** .
+
 ## <a name="performance-tune-the-exchange-connector-optional"></a>Prestatie-afstemming voor de Exchange-connector (optioneel)
 
-Als 5000 of meer apparaten worden ondersteund met Exchange ActiveSync, kunt u een optionele instelling configureren om de prestaties van de connector te verbeteren. U kunt de prestaties verbeteren door voor Exchange in te stellen dat er meerdere exemplaren van een PowerShell-runspace voor opdrachten mogen worden gebruikt. 
+Als 5000 of meer apparaten worden ondersteund met Exchange ActiveSync, kunt u een optionele instelling configureren om de prestaties van de connector te verbeteren. U kunt de prestaties verbeteren door voor Exchange in te stellen dat er meerdere exemplaren van een PowerShell-runspace voor opdrachten mogen worden gebruikt.
 
-Voordat u deze wijziging aanbrengt, controleert u of het account dat u gebruikt voor Exchange Connector niet wordt gebruikt voor andere Exchange-beheerdoeleinden. Een Exchange-account heeft een beperkt aantal runspaces, waarvan de meeste door de connector worden gebruikt. 
+Voordat u deze wijziging aanbrengt, controleert u of het account dat u gebruikt voor Exchange Connector niet wordt gebruikt voor andere Exchange-beheerdoeleinden. Een Exchange-account heeft een beperkt aantal runspaces, waarvan de meeste door de connector worden gebruikt.
 
-De prestaties kunnen niet worden verbeterd voor connectors die worden uitgevoerd op oudere of langzamere hardware.  
+De prestaties kunnen niet worden verbeterd voor connectors die worden uitgevoerd op oudere of langzamere hardware.
 
-De prestaties van de Exchange-connector verbeteren: 
+De prestaties van de Exchange-connector verbeteren:
 
-1. Open de installatiemap van de connector op de server waarop de connector is geïnstalleerd.  De standaardlocatie is *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*. 
+1. Open de installatiemap van de connector op de server waarop de connector is geïnstalleerd.  De standaardlocatie is *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*.
+
 2. Bewerk het bestand *OnPremisesExchangeConnectorServiceConfiguration.xml*.
-3. Zoek **EnableParallelCommandSupport** en stel de waarde in op **true**:  
-     
+
+3. Zoek **EnableParallelCommandSupport** en stel de waarde in op **true**:
+
    \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
+
 4. Sla het bestand op en start de Microsoft Intune Exchange Connector-service opnieuw op.
 
 ## <a name="reinstall-the-intune-exchange-connector"></a>De Intune Exchange-connector opnieuw installeren
 
 U moet mogelijk een Intune Exchange-connector opnieuw installeren. Omdat u slechts met één connector verbinding kunt maken met een Exchange-organisatie, vervangt de nieuwe connector die u voor de organisatie installeert de oorspronkelijke connector.
 
-1. Als u de nieuwe connector wilt installeren, volgt u de stappen in de sectie [De Exchange-connector installeren en configureren](#install-and-configure-the-intune-exchange-connector). 
-2. Wanneer u hierom wordt gevraagd, selecteert u **Vervangen** om de nieuwe connector te installeren.  
+1. Als u de nieuwe connector wilt installeren, volgt u de stappen in de sectie [De Exchange-connector installeren en configureren](#install-and-configure-the-intune-exchange-connector).
+
+2. Wanneer u hierom wordt gevraagd, selecteert u **Vervangen** om de nieuwe connector te installeren.
    ![Configuratiewaarschuwing voor het vervangen van een connector](./media/exchange-connector-install/prompt-to-replace.png)
 
 3. Ga door met de stappen in de sectie [De Intune Exchange-connector installeren en configureren](#install-and-configure-the-intune-exchange-connector) en meld u opnieuw aan bij Intune.
-4. Selecteer in het laatste venster **Sluiten** om de installatie te voltooien.  
+
+4. Selecteer in het laatste venster **Sluiten** om de installatie te voltooien.
    ![Installatie voltooien](./media/exchange-connector-install/successful-reinstall.png)
- 
 
 ## <a name="monitor-an-exchange-connector"></a>Een Exchange-connector controleren
 
-Wanneer u de Exchange-connector hebt geconfigureerd, kunt u de status van de verbindingen en de laatste geslaagde synchronisatiepoging weergeven. 
+Wanneer u de Exchange-connector hebt geconfigureerd, kunt u de status van de verbindingen en de laatste geslaagde synchronisatiepoging weergeven.
 
 De verbinding van de Exchange-connector valideren:
 
 1. Kies op het Intune-dashboard de optie **Exchange-toegang**.
+
 2. Selecteer **On-premises toegang tot Exchange** om de verbindingsstatus voor elke Exchange-verbinding te verifiëren.
 
 U kunt ook de tijd en datum van de laatste geslaagde synchronisatiepoging controleren.
@@ -219,13 +226,14 @@ Een Intune Exchange-connector synchroniseert regelmatig automatisch EAS- en Intu
 
 - Een **snelle synchronisatie** vindt regelmatig plaats, meerdere keren per dag. Een snelle synchronisatie haalt apparaatinformatie op voor gebruikers met een Intune-licentie en on-premises voorwaardelijke Exchange-toegang die zijn gewijzigd sinds de laatste synchronisatie.
 
-- Een **volledige synchronisatie** vindt standaard één keer per dag plaats. Een volledige synchronisatie haalt apparaatinformatie op voor alle gebruikers met een Intune-licentie en on-premises voorwaardelijke Exchange-toegang. Een volledige synchronisatie haalt ook informatie over de Exchange-server op en zorgt ervoor dat de door Intune opgegeven configuratie in de Azure-portal wordt bijgewerkt op de Exchange-server. 
-
+- Een **volledige synchronisatie** vindt standaard één keer per dag plaats. Een volledige synchronisatie haalt apparaatinformatie op voor alle gebruikers met een Intune-licentie en on-premises voorwaardelijke Exchange-toegang. Een volledige synchronisatie haalt ook informatie over de Exchange-server op en zorgt ervoor dat de door Intune opgegeven configuratie in de Azure-portal wordt bijgewerkt op de Exchange-server.
 
 U kunt afdwingen dat een connector een synchronisatie uitvoert door de optie **Snelle synchronisatie** of **Volledige synchronisatie** op het Intune-dashboard te gebruiken:
 
    1. Kies op het Intune-dashboard de optie **Exchange-toegang**.
+
    2. Selecteer **On-premises toegang tot Exchange**.
+
    3. Selecteer de connector die u wilt synchroniseren en kies vervolgens **Snelle synchronisatie** of **Volledige synchronisatie**.
 
 ## <a name="next-steps"></a>Volgende stappen

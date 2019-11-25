@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5eb5a8f462846afd97ae4ea84b7431ae147d918c
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 30a1c9b1fddaa59d633c8dc969063b26b25097de
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709179"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098178"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Inschrijving voor Windows-apparaten instellen
 
@@ -117,6 +117,15 @@ Zie [Uw Windows-apparaat inschrijven bij Intune](https://docs.microsoft.com/intu
 > Als u automatische MDM-inschrijving niet hebt ingeschakeld maar Windows 10-apparaten hebt die zijn samengevoegd in Azure AD, worden na de inschrijving twee records weergegeven in de Intune-console. U kunt dit gedrag beëindigen. Hiervoor moeten gebruikers met samengevoegde apparaten in Azure AD met hetzelfde account naar **Accounts** > **Toegang tot werk- of schoolaccount** en **Verbinden** gaan. 
 
 Zie [Bronnen over de eindgebruikerservaring in Microsoft Intune](../fundamentals/end-user-educate.md) voor meer informatie over taken voor eindgebruikers.
+
+## <a name="registration-and-enrollment-cnames"></a>CNAME's voor registratie en inschrijving
+Azure Active Directory heeft een andere CNAME die wordt gebruikt voor apparaatregistratie voor iOS-, Android- en Windows-apparaten. Voor voorwaardelijke toegang van Intune moeten apparaten worden geregistreerd, ook wel 'aan werkplek toegevoegd' genoemd. Als u voorwaardelijke toegang wilt gebruiken, moet u ook de CNAME voor EnterpriseRegistration configureren voor elke bedrijfsnaam die u hebt.
+
+| Type | Hostnaam | Verwijst naar | TTL |
+| --- | --- | --- | --- |
+| NAAM | EnterpriseRegistration. company_domain.com | EnterpriseRegistration.windows.net | 1 uur|
+
+Zie [Apparaat-id's beheren met de Azure-portal voor meer informatie over het registreren van apparaten.](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
 
 ## <a name="next-steps"></a>Volgende stappen
 
