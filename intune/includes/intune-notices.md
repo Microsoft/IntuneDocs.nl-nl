@@ -4,17 +4,37 @@ description: Include-bestand
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
-ms.date: 11/4/2019
+ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 3d49d31ed08683508d3d231521e578688dd21bac
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: b59419be9f381a1c646a7778b73ed172526f6ef6
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74125454"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188413"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune.
+
+### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Uw beveiligingsbeleid voor de Outlook-app bijwerken voor Intune<!--2576686-->
+U moet mogelijk actie ondernemen als u MC195618 hebt ontvangen in het berichtencentrum. Zoals gedeeld in Microsoft 365-roadmapfunctie-id's: 56325 en 56326, gaan Intune en Outlook voor iOS en Android ondersteuning voor het beperken van gevoelige gegevens in e-mailmeldingen en agendaherinneringen implementeren. Als gevolg van deze verbeteringen wordt in Outlook voor iOS en Android de ondersteuning voor de configuratiesleutels voor meerdere gegevensbeschermingsapps verwijderd die u momenteel nog kunt gebruiken voor het beheren van meldingen.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+De nieuwe functies zijn nog niet geleverd, maar als dit gebeurt, werken de volgende app-configuratiesleutels niet meer in Outlook voor iOS en Android:
+- com.microsoft.outlook.Mail.NotificationsEnabled
+- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
+- com.microsoft.outlook.Calendar.NotificationsEnabled
+- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+We raden u aan om ter voorbereiding op deze nieuwe functie de gegevensbeschermingsinstelling 'Meldingen van organisatiegegevens' van het Intune-app-beveiligingsbeleid in te stellen op de waarde 'Organisatiegegevens blokkeren'. Vanaf 16 december 2019 volgt Outlook voor iOS en Android de gegevensbeschermingsinstelling 'Meldingen van organisatiegegevens' en worden de eerder genoemde sleutels niet meer ondersteund. Door deze nieuwe instelling te configureren, worden gevoelige gegevens niet gelekt wanneer de bovenstaande configuratiesleutels niet meer worden ondersteund. Daarnaast biedt Outlook aanvullende granulariteit wanneer de gegevensbeschermingsinstelling 'Meldingen van organisatiegegevens' is ingesteld op 'Organisatiegegevens blokkeren' met de extra app-configuratie-instelling, 'Agendameldingen'. De combinatie van de app-beveiligingsbeleidsinstelling en deze app-configuratie-instelling beperkt gevoelige gegevens in e-mailmeldingen, maar geeft gevoelige gegevens in agendameldingen weer zodat gebruikers op hun vergadering kunnen komen door een snelle blik te werken op de melding of het meldingencentrum.
+
+#### <a name="additional-information"></a>Aanvullende informatie
+Zie voor meer informatie over app-beveiligingsbeleidsinstellingen en de instellingen van Outlook:
+- [App-beveiligingsbeleidsinstellingen voor Android](../apps/app-protection-policy-settings-android.md)
+- [App-beveiligingsbeleidsinstellingen voor iOS](../apps/app-protection-policy-settings-ios.md)
+- [Configuratie-instellingen voor de Outlook-app voor iOS en Android implementeren](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune-plan voor wijziging: Ondersteuning voor Windows 10, versie 1703 van de bedrijfsportal komt te vervallen<!--5026679-->
 Windows 10, versie 1703 (ook wel bekend als Windows 10, RS2) is buiten bedrijf gesteld op 8 oktober 2019 voor Enterprise- en EDU-edities. De Intune-bedrijfsportal-app voor RS2/RS1 wordt niet meer ondersteund vanaf 26 december 2019.
@@ -33,7 +53,7 @@ Welke stappen u moet uitvoeren, is afhankelijk van de configuratie van uw omgevi
 Zoals we al hebben gecommuniceerd in het afgelopen jaar, ondersteunt Microsoft Edge voor mobiel dezelfde beheerfuncties als Managed Browser, maar is de ervaring voor de eindgebruiker sterk verbeterd. Om plaats te maken voor de nieuwe gebruikerservaring die met Microsoft Edge wordt geboden, wordt Intune Managed Browser buiten gebruik gesteld. Vanaf 27 januari 2020 wordt Intune Managed Browser niet meer ondersteund door Intune.  
 
 #### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij? 
-Vanaf 1 februari 2020 is Intune Managed Browser niet meer beschikbaar in de Google Play Store of de App Store voor iOS. Vanaf dan kunt u nog steeds nieuw app-beveiligingsbeleid toepassen op Intune Managed Browser, maar nieuwe gebruikers kunnen de Intune Managed Browser-app niet meer downloaden. In iOS worden bovendien nieuwe webclips die worden gepusht naar apparaten die via MDM zijn ingeschreven, geopend in Microsoft Edge in plaats van in Intune Managed Browser.  
+Vanaf 1 februari 2020 is Intune Managed Browser niet meer beschikbaar in de Google Play Store of de App Store voor iOS. Vanaf dan kunt u nog steeds nieuw app-beveiligingsbeleid toepassen op Intune Managed Browser, maar kunnen nieuwe gebruikers de Intune Managed Browser-app niet meer downloaden. In iOS worden bovendien nieuwe webclips die worden gepusht naar apparaten die via MDM zijn ingeschreven, geopend in Microsoft Edge in plaats van in Intune Managed Browser.  
 
 Op 31 maart 2020 wordt Intune Managed Browser verwijderd uit de Azure-console. Dit betekent dat u geen nieuwe beleidsregels meer kunt maken voor Intune Managed Browser. Bestaand Intune Managed Browser-beleid dat u hebt geïmplementeerd, wordt hierdoor niet beïnvloed. Intune Managed Browser wordt weergegeven in de console als een LOB-app zonder pictogram en bestaande beleidsregels worden nog steeds weergegeven als gericht op de app. Vanaf dan wordt ook de optie voor het omleiden van webinhoud naar Intune Managed Browser verwijderd uit de sectie Gegevensbescherming van App-beveiligingsbeleid.  
 
@@ -48,7 +68,6 @@ Ondersteuning voor webclips in iOS en Android is binnenkort beschikbaar. Wanneer
 
 #### <a name="additional-information"></a>Aanvullende informatie
 Ga naar onze documenten over het [gebruik van Microsoft Edge met app-beveiligingsbeleid](../apps/manage-microsoft-edge.md) voor meer informatie of bekijk onze [blogpost over ondersteuning](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
-
 
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Geplande wijziging: Nieuwe ervaring bij het inschrijven van toegewezen Android Enterprise-apparaten in Intune<!--5198878-->
 Met de release van Intune in november (1911) voegen we ondersteuning voor de implementatie van SCEP-apparaatcertificaten toe aan toegewezen Android Enterprise-apparaten om op certificaten gebaseerde toegang tot Wi-Fi-profielen mogelijk te maken. Deze verandering brengt ook enkele kleine wijzigingen met zich mee in de stroom bij het inschrijven van toegewezen Android Enterprise-apparaten.
@@ -65,23 +84,9 @@ Maak plannen voor het bijwerken van uw eindgebruikersbegeleiding en stel uw help
 #### <a name="additional-information"></a>Aanvullende informatie
 [https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
-### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>Geplande wijziging: De instelling 'Logboekregistratie op de server voor Siri-opdrachten' wordt verwijderd van de Intune-console <!-- 5468501-->
-
-We zijn van plan om de instelling 'Logboekregistratie op de server voor Siri-opdrachten' uit de Intune-console te verwijderen met de update voor de Intune-service in november. Deze wijziging sluit aan bij het feit dat Apple de instelling aan hun kant al heeft verwijderd.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Nadat de update van november of 1911 medio november is uitgevoerd, zult u zien dat deze instelling in de Intune-console is verwijderd uit het menu Apparaatbeperkingen (Ingebouwde apps) voor iOS-configuratieprofielen. De instelling is mogelijk nog zichtbaar in uw beleid en het beheersprofiel van het doelapparaat, maar heeft geen effect op uw apparaat. We verwachten niet veel impact op de functionaliteit, omdat de instelling momenteel niet werkt op apparaten, ook al is deze zichtbaar in het managementprofiel.
-
-U kunt kiezen uit twee paden:
-- Als u deze instelling uit uw beleid wilt verwijderen, kunt u naar het profiel met de instelling gaan, een kleine bewerking uitvoeren en het beleid opslaan. Het beleid zal in de backend opnieuw worden berekend en de instelling zal uit uw beleid worden verwijderd.
-- Als u ervoor kiest om deze actie niet uit te voeren, zullen eindgebruikers deze instelling nog wel zien in het beheerprofiel van hun apparaat, maar de instelling zal geen effect hebben.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
-U kunt bovenstaande stappen ondernemen of uw beleid laten zoals het is. We zullen onze 'Wat is er nieuw'-pagina en documentatie bijwerken wanneer deze wijziging wordt doorgevoerd.
-
 ### <a name="end-of-support-for-legacy-pc-management"></a>Einde van ondersteuning voor verouderd pc-beheer
 
-Verouderd pc-beheer wordt vanaf 15 oktober 2020 niet meer ondersteund. Werk apparaten bij naar Windows 10 en schrijf deze opnieuw in als MDM-apparaten om ze door Intune te blijven laten beheren.
+Verouderd pc-beheer wordt vanaf 15 oktober 2020 niet meer ondersteund. Werk apparaten bij naar Windows 10 en registreer deze opnieuw als MDM-apparaten (Mobile Device Management) om ze door Intune te blijven laten beheren.
 
 [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2107122)
 
@@ -93,7 +98,7 @@ Deze wijzigingen van Google zijn op de volgende manieren van invloed op Intune-g
 - Tot de zomer van 2020 biedt Intune alleen nog maar ondersteuning voor Android-apparaten met Android 10 (ook bekend als Android Q) en hoger die door apparaatbeheerder worden beheerd. Deze datum is wanneer de volgende primaire versie van Android wordt verwacht.   
 - Apparaten die worden beheerd met apparaatbeheerder en worden uitgevoerd met Android 10 of hoger, kunnen na de zomer van 2020 niet langer volledig worden beheerd.       
 - Android-apparaten die worden beheerd met apparaatbeheerder en worden uitgevoerd met oudere versies dan Android 10, worden niet getroffen en kunnen volledig beheerd blijven worden met apparaatbeheerder.    
-- Voor alle apparaten met Android 10 of hoger heeft Google de toegang voor apparaatbeheerderagents als de Bedrijfsportal tot apparaat-id's beperkt. Nadat een apparaat wordt bijgewerkt naar Android 10 of hoger, heeft dit gevolgen voor de volgende Intune-functies:  
+- Voor alle apparaten met Android 10 of hoger heeft Google de toegang voor apparaatbeheerderagents als de Bedrijfsportal tot apparaat-id's beperkt. Nadat een apparaat is bijgewerkt naar Android 10 of hoger, heeft deze beperking gevolgen voor de volgende Intune-functies:  
     - Netwerktoegangsbeheer voor VPN werkt niet meer.   
     - Als u apparaten identificeert als 'In bedrijfseigendom' met een IMEI of serienummer, wordt het apparaat niet automatisch gemarkeerd als 'In bedrijfseigendom'.  
     - Het IMEI en serienummers zijn niet langer zichtbaar voor IT-beheerder in Intune. 
@@ -108,31 +113,6 @@ We raden u het volgende aan om te voorkomen dat u in de zomer van 2020 te kampen
 #### <a name="additional-information"></a>Aanvullende informatie
 - [Google-richtlijnen voor migratie van apparaatbeheerder naar Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [Google-documentatie over het plan om de apparaatbeheerder-API af te schaffen](https://developers.google.com/android/work/device-admin-deprecation)
-
-### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Android-bedrijfsportal-app bijwerken naar de nieuwste versie <!--4536963-->
-Er worden regelmatig updates van Intune gepubliceerd voor de Android-versie van de bedrijfsportal-app. In november 2018 hebben we een update voor de bedrijfsportal gepubliceerd, met onder andere een schakeloptie voor de back-end om u voor te bereiden op de wijziging van Google waarbij ze hun bestaande meldingenplatform gaan overzetten naar Firebase Cloud Messaging (FCM) van Google. Als Google zijn bestaande meldingenplatform uit de lucht haalt en overstapt naar FCM, moeten eindgebruikers hun bedrijfsportal-app hebben bijgewerkt naar ten minste de versie van november 2018 om te kunnen blijven communiceren met de Google Play Store.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Onze telemetrie geeft aan dat u apparaten hebt met een versie van de bedrijfsportal-app die ouder is dan 5.0.4269.0. Als niet deze versie of hoger van de bedrijfsportal-app is geïnstalleerd, bestaat de kans dat door IT-personeel gestarte apparaatacties, zoals wissen, wachtwoord opnieuw instellen, beschikbare en vereiste app-installaties, en certificaatinschrijving, niet werken zoals verwacht. Als uw apparaten via een MDM zijn geregistreerd bij Intune, kunt u de versies en gebruikers van de bedrijfsportal zien door naar Client-apps – Gedetecteerde apps te gaan. Selecteer een eerdere versie van de bedrijfsportal-app om te zien welke gebruikers de apparaten hebben waarop de bedrijfsportal-app niet is bijgewerkt.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
-Vraag eindgebruikers van Android-apparaten die niet up-to-date zijn om de bedrijfsportal-app bij te werken via de Google Play Store. Informeer de helpdesk voor het geval een gebruiker niet voor het automatisch bijwerken van de bedrijfsportal-app heeft gekozen. Volg de koppeling bij *Aanvullende informatie* voor meer informatie over het FCM-platform van Google en de aanstaande wijziging.
-
-#### <a name="additional-information"></a>Aanvullende informatie
-https://firebase.google.com/docs/cloud-messaging/
-
-
-### <a name="new-full-screen-experience-coming-to-intune---4593669--"></a>Er komt een nieuwe ervaring voor volledig scherm naar Intune <!--4593669-->
-We brengen bijgewerkte gebruikersinterfaces voor maken en bewerken uit in Intune in de Azure-portal. Deze nieuwe ervaring vereenvoudigt de bestaande werkstromen door een wizardachtige indeling te gebruiken die op één blade is samengevoegd. Deze update zorgt ervoor dat er minder blades of werkstromen voor maken en bewerken zijn waarbij u in verschillende blades ver moet doorklikken. De werkstromen voor maken worden ook bijgewerkt, want Toewijzingen wordt toegevoegd (behalve app-toewijzing).
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-De ervaring wordt in de komende maanden uitgebracht voor Intune via portal.azure.com en devicemanagement.microsoft.com. Deze update voor de gebruikersinterface is niet van invloed op de functionaliteit van uw bestaande beleid en profielen, maar u ziet een licht aangepaste werkstroom. Wanneer u bijvoorbeeld nieuw beleid maakt, kunt u toewijzingen instellen als onderdeel van deze stroom, in plaats van dat te doen nadat u het beleid hebt gemaakt. Bekijk de blogpost bij *Aanvullende informatie* voor schermopnames van hoe de nieuwe ervaring er in de console uitziet.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
-U hoeft geen actie meer te ondernemen, maar u kunt overwegen uw IT-begeleiding bij te werken, indien nodig. We werken onze documentatie bij wanneer deze ervaring wordt uitgebracht in verschillende blades in Intune in de Azure-portal.
-
-#### <a name="additional-information"></a>Aanvullende informatie 
-https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>Geplande wijziging: Intune app-SDK en app-beveiligingsbeleid voor Android wordt in een volgende versie verplaatst voor ondersteuning van Android 5.0 en hoger <!--4911065 -->
 Intune wordt in een volgende versie verplaatst voor ondersteuning van Android 5.x (Lollipop) en hoger. Werk alle verpakte apps bij met de nieuwste Intune App SDK en werk uw apparaten bij.
@@ -171,3 +151,5 @@ We raden uw organisatie aan om dit actieplan onmiddellijk te overwegen:
 - Migreer bestaande apparaten die worden beheerd met de verouderde Intune-softwareclient naar de door Microsoft aanbevolen oplossing om Windows 10 met behulp van MDM te beheren. Registreer alle nieuwe Windows 10-pc's met behulp van MDM-beheer voor Intune in de Azure-portal.
 
 Raadpleeg [dit blogbericht](https://aka.ms/Windows7_Intune) voor meer informatie.
+
+

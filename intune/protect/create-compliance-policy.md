@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786079"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188269"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Een nalevingsbeleid maken in Microsoft Intune
 
@@ -61,19 +61,15 @@ Neem het volgende in acht voor het gebruik van het nalevingsbeleid voor apparate
 
 ## <a name="create-the-policy"></a>Beleid maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatnaleving**. U hebt de volgende opties:
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-    - **Overzicht**: Geeft aan hoeveel apparaten compatibel zijn, niet geëvalueerd zijn, enzovoort, en geeft hier een samenvatting van. Ook worden het beleid en de afzonderlijke instellingen in uw beleid vermeld. U vindt nuttige informatie hierover in [Nalevingsbeleid voor Intune-apparaten controleren](compliance-policy-monitor.md).
-    - **Beheren**: Maak apparaatbeleid, stuur [meldingen](quickstart-send-notification.md) naar niet-compatibele apparaten, en schakel [netwerkbegrenzing](use-network-locations.md) in.
-    - **Bewaken**: Controleer de nalevingsstatus van uw apparaten, zowel op instellings- als op beleidsniveau. [Nalevingsbeleid voor Intune-apparaten controleren](compliance-policy-monitor.md) is een goede resource. Bekijk ook de logboeken en de status van de bedreigingsagent van uw apparaten.
-    - **Configureren**: Gebruik het [ingebouwde nalevingsbeleid](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies), schakel [Microsoft Defender ATP (Advanced Threat Protection)](advanced-threat-protection.md) in, voeg een [Mobile Threat Defense-connector](mobile-threat-defense.md) toe en gebruik [Jamf](conditional-access-integrate-jamf.md).
+2. Selecteer **Apparaten** > **Nalevingsbeleid** > **Beleid maken**.
 
-3. Selecteer **Beleid** > **Beleid maken**. Voer de volgende eigenschappen in:
+3. Geef de volgende eigenschappen op:
 
-   - **Naam**: Voer een beschrijvende naam in voor het beleid. Geef uw beleid een naam zodat u het later eenvoudig kunt identificeren. **iOS-apparaten die zijn opengebroken, niet markeren als compatibel** is bijvoorbeeld een goede beleidsnaam.  
+   - **Naam**: Voer een beschrijvende naam in voor het beleid. Geef uw beleid een naam zodat u het later eenvoudig kunt identificeren. **iOS-apparaten die zijn opengebroken, niet markeren als compatibel** is bijvoorbeeld een goede beleidsnaam.
 
-   - **Beschrijving**: Voer een beschrijving in voor het beleid. Deze instelling is optioneel, maar wordt aanbevolen.  
+   - **Beschrijving**: Voer een beschrijving in voor het beleid. Deze instelling is optioneel, maar wordt aanbevolen.
 
    - **Platform**: Kies het platform van uw apparaten. Uw opties zijn:
      - **Android-apparaatbeheerder**
@@ -99,7 +95,7 @@ Neem het volgende in acht voor het gebruik van het nalevingsbeleid voor apparate
    - **Locaties** *(Android-apparaatbeheerder)* : In uw beleid kunt u naleving afdwingen op basis van de locatie van het apparaat. Kies uit bestaande locaties. Hebt u nog geen locatie? [Locaties (netwerkgrens) gebruiken](use-network-locations.md) in Intune biedt enige richtlijnen.  
 
    - **Acties voor niet-naleving**: Voor apparaten die niet voldoen aan uw nalevingsbeleid, kunt u een reeks acties toevoegen die automatisch moeten worden toegepast. U kunt het schema veranderen wanneer het apparaat wordt gemarkeerd als niet-compatibel, zoals na één dag. U kunt ook een tweede actie toevoegen, waarbij een e-mailbericht wordt verzonden naar de gebruiker wanneer het apparaat niet voldoet.
-    
+
      [Acties voor niet-compatibele apparaten toevoegen](actions-for-noncompliance.md) biedt meer informatie, onder andere over het maken van een e-mailmelding voor uw gebruikers.
 
      U gebruikt bijvoorbeeld de functie Locaties en u voegt een locatie toe aan een nalevingsbeleid. De standaardactie bij niet-naleving wordt uitgevoerd als u ten minste één locatie hebt geselecteerd. Als het apparaat niet is verbonden met de geselecteerde locaties, wordt het apparaat direct gezien als 'niet compatibel'. U kunt gebruikers bijvoorbeeld een respijtperiode van één dag bieden.
@@ -112,8 +108,10 @@ Neem het volgende in acht voor het gebruik van het nalevingsbeleid voor apparate
 
 Als een beleid eenmaal is gemaakt, is de volgende stap dit beleid toewijzen aan uw groepen:
 
-1. Kies een beleid dat u hebt gemaakt. Bestaande beleidsregels bevinden zich in **Apparaatcompatibiliteit** > **Beleid**.
-2. Selecteer het beleid > **Toewijzingen**. U kunt Azure Active Directory-beveiligingsgroepen (AD) opnemen of uitsluiten.
+1. Kies een beleid dat u hebt gemaakt. Bestaande beleidsregels bevinden zich in **Apparaten** > **Nalevingsbeleid** > **Beleid**.
+
+2. Selecteer het *beleid* > **Toewijzingen**. U kunt Azure Active Directory-beveiligingsgroepen (AD) opnemen of uitsluiten.
+
 3. Kies **Geselecteerde groepen** om uw Azure AD-beveiligingsgroepen te zien. Selecteer de groepen waarop u dit beleid wilt toepassen > kies **Opslaan** om het beleid te implementeren.
 
 De gebruikers of apparaten waarop het beleid is gericht, worden beoordeeld op naleving wanneer ze worden ingecheckt bij Intune.
@@ -122,8 +120,9 @@ De gebruikers of apparaten waarop het beleid is gericht, worden beoordeeld op na
 
 Als u het beleid toewijst, kunt u ook **Evalueren** hoeveel gebruikers moeten worden beïnvloed. Met deze functie worden gebruikers berekend, geen apparaten.
 
-1. Selecteer in Intune **Apparaatcompatibiliteit** > **Beleid**.
-2. Selecteer een beleid > **Toewijzingen** > **Evalueren**. In een bericht wordt weergegeven op hoeveel gebruikers dit beleid is gericht.
+1. Selecteer **Apparaten** > **Nalevingsbeleid** > **Beleid** in Intune.
+
+2. Selecteer een *beleid* > **Toewijzingen** > **Evalueren**. In een bericht wordt weergegeven op hoeveel gebruikers dit beleid is gericht.
 
 Als de knop **Evalueren** is uitgeschakeld, controleert u of het beleid is toegewezen aan een of meer groepen.
 

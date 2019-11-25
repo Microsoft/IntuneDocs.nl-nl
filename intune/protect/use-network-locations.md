@@ -2,10 +2,10 @@
 title: Android-apparaten binden op netwerklocatie in Microsoft Intune - Azure | Microsoft Docs
 description: Maak of configureer netwerklocaties in Microsoft Intune voor Android-apparaten. U kunt apparaten als niet-compatibel markeren op basis van de netwerklocatie van het apparaat. Als het apparaat zich buiten de netwerklocatie begeeft, kunt u de toegang tot bedrijfsresources blokkeren.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 847ab759b697d402acb07d9c8d83d3a3ef9aaef2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749450"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058153"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Locaties (netwerkomheining) in Intune gebruiken
 
@@ -50,7 +50,7 @@ U kunt als volgt een nalevingsbeleid op basis van locatie maken:
 
 ## <a name="create-a-location"></a>Een locatie maken
 
-1. Selecteer in Intune **Apparaatcompatibiliteit** > **Locaties** > **Maken**.
+1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaten** > **Nalevingsbeleid** > **Locaties** > **Maken**.
 
 2. Voer de volgende eigenschappen in:  
 
@@ -69,8 +69,7 @@ U kunt als volgt een nalevingsbeleid op basis van locatie maken:
 
 ## <a name="create-the-location-compliance-policy"></a>Het nalevingsbeleid op basis van locatie maken
 
-Wanneer u [het nalevingsbeleid maakt](create-compliance-policy.md), selecteert u **Android** voor **Platform**. In **Locaties** kunt u een of meer van de netwerklocaties kiezen die u hebt toegevoegd. Deze locaties maken deel uit van de netwerkomheining die u voor uw apparaten maakt. 
-
+Wanneer u [het nalevingsbeleid maakt](create-compliance-policy.md), selecteert u **Android** voor **Platform**. In **Locaties** kunt u een of meer van de netwerklocaties kiezen die u hebt toegevoegd. Deze locaties maken deel uit van de netwerkomheining die u voor uw apparaten maakt.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>De acties voor niet-naleving configureren
 
@@ -83,5 +82,6 @@ In [Acties voor niet-naleving toevoegen](actions-for-noncompliance.md) vindt u e
 Wanneer het apparaat verbonden is met uw locaties, wordt het apparaat in de bedrijfsportal-app weergegeven als compatibel. Wanneer het apparaat niet verbonden is met een van uw locaties, wordt het apparaat weergegeven als niet-compatibel.
 
 ## <a name="next-steps"></a>Volgende stappen
+
 [Nalevingsbeleid voor apparaten controleren](compliance-policy-monitor.md)  
 [Aan de slag met nalevingsbeleid](device-compliance-get-started.md)

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/20/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39d687c8c9b75182ba0e7d4020c6b840c753a231
-ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
+ms.openlocfilehash: 6615933f604f2ff4156885bc6559af7e46d4ccb2
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627649"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188520"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Jamf Pro integreren met Intune in verband met nalevingsbeleid
 
@@ -70,7 +70,7 @@ Om Intune te verbinden met Jamf Pro:
 2. Schakel Intune-integratie met Jamf Pro in.
 3. Configureer voorwaardelijke toegang in Jamf Pro.
 
-## <a name="create-an-application-in-azure-active-directory"></a>Een toepassing maken in Azure Active Directory
+### <a name="create-an-application-in-azure-active-directory"></a>Een toepassing maken in Azure Active Directory
 
 1. Ga in de [Azure-portal](https://portal.azure.com) naar **Azure Active Directory** > **App-registraties** en selecteer **Nieuwe registratie**. 
 
@@ -102,15 +102,17 @@ Om Intune te verbinden met Jamf Pro:
     > [!NOTE]
     > Als het clientgeheim is verlopen, moet u een nieuw clientgeheim maken in Azure en vervolgens de gegevens voor voorwaardelijke toegang in Jamf Pro bijwerken. In Azure kan zowel het oude geheim als de nieuwe sleutel actief zijn om serviceonderbrekingen te voorkomen.
 
-## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune instellen op integratie met Jamf Pro
+### <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune instellen op integratie met Jamf Pro
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en ga naar **Microsoft Intune** > **Apparaatcompatibiliteit** > **Apparaatbeheer partner**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Schakel de nalevingsconnector voor Jamf in door de toepassings-id die u tijdens de vorige procedure hebt opgeslagen, in het veld **Azure Active Directory-app-id voor Jamf** te plakken.
+2. Selecteer **Tenantbeheer** > **Connectors en tokens** > **Apparaatbeheer partner**.
 
-3. Selecteer **Opslaan**.
+3. Schakel de *nalevingsconnector voor Jamf* in door de toepassings-id die u tijdens de vorige procedure hebt opgeslagen in het veld **Geef de Azure Active Directory-app-id voor Jamf op** te plakken.
 
-## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Microsoft Intune-integratie in Jamf Pro configureren
+4. Selecteer **Opslaan**.
+
+### <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Microsoft Intune-integratie in Jamf Pro configureren
 
 1. Navigeer in Jamf Pro naar **Global Management** > **Conditional Access**. Klik op de knop **Edit** op het tabblad **macOS Intune Integration**.
 
@@ -125,17 +127,22 @@ Om Intune te verbinden met Jamf Pro:
 Nadat u de integratie tussen Intune en Jamf hebt geconfigureerd, moet u [nalevingsbeleid toepassen op door Jamf beheerde apparaten](conditional-access-assign-jamf.md).
 
 
-## <a name="disconnect-jamf-pro-and-intune"></a>Verbinding tussen Jamf Pro en Intune verbreken 
+## <a name="disconnect-jamf-pro-and-intune"></a>Verbinding tussen Jamf Pro en Intune verbreken
 
-Als u Jamf Pro niet meer gebruikt om Macs in uw organisatie te beheren en wilt dat gebruikers worden beheerd door Intune, moet u de verbinding tussen Jamf Pro en Intune verwijderen. Verwijder de verbinding met behulp van de Jamf Pro-console. 
+Als u Jamf Pro niet meer gebruikt om Macs in uw organisatie te beheren en wilt dat gebruikers worden beheerd door Intune, moet u de verbinding tussen Jamf Pro en Intune verwijderen. Verwijder de verbinding met behulp van de Jamf Pro-console.
 
 1. Ga in Jamf Pro naar **Global Management** > **Conditional Access**. Selecteer op het tabblad **macOS Intune Integration** de optie **Edit**.
+
 2. Schakel het selectievakje **Enable Intune Integration for macOS** uit.
+
 3. Selecteer **Opslaan**. Jamf Pro stuurt uw configuratie naar Intune en de integratie wordt beëindigd.
-4. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Ga naar **Microsoft Intune** > **Apparaatnaleving** >  **Beheer van partnerapparaten** en controleer of de status nu **Beëindigd** is. 
+
+4. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+5. Selecteer **Tenantbeheer** > **Connectors en tokens** > **Apparaatbeheer partner** om te controleren of de status nu **Beëindigd** is.
 
    > [!NOTE]
-   > De Mac-apparaten in uw organisatie worden verwijderd op de datum (3 maanden) die wordt weergegeven in uw console. 
+   > De Mac-apparaten in uw organisatie worden verwijderd op de datum (3 maanden) die wordt weergegeven in uw console.
 
 ## <a name="next-steps"></a>Volgende stappen
 

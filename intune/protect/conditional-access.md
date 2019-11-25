@@ -17,27 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9dd31c87d27ec7885d25269988cfd968e81e08
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 179d135ee8e216495cd7435bf38d8087e5c990e8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504562"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188281"
 ---
 # <a name="learn-about-conditional-access-and-intune"></a>Meer informatie over voorwaardelijke toegang en Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+Met voorwaardelijke toegang kunt u bepalen welke de apparaten en apps verbinding mogen maken met uw e-mail- en bedrijfsgegevens. 
 
-Voorwaardelijke toegang verwijst naar de manieren waarop u de apparaten en apps kunt beheren die toestemming hebben om verbinding te maken met uw e-mail- en bedrijfsgegevens. In dit onderwerp vindt u meer informatie over op apparaten en apps gebaseerde voorwaardelijke toegang en vindt u algemene scenario's voor het gebruiken van voorwaardelijke toegang met Intune.
-
-Enterprise Mobility + Security (EMS) Conditional Access is geen zelfstandig product, maar een oplossing die kan worden gebruikt voor alle services en producten die onderdeel zijn van de EMS. Met deze oplossing kunt u een gedetailleerd toegangsbeheer configureren om uw bedrijfsgegevens te beveiligen, terwijl gebruikers de mogelijkheid wordt geboden om op elk apparaat en op elke locatie optimaal te presteren.
+Enterprise Mobility + Security (EMS) is geen zelfstandig product. Het is een oplossing die deel uitmaakt van alle services en producten die deel uitmaken van EMS. Met voorwaardelijke toegang kunt u een gedetailleerd toegangsbeheer configureren om uw bedrijfsgegevens te beveiligen, terwijl gebruikers de mogelijkheid wordt geboden om op elk apparaat en op elke locatie optimaal te presteren.
 
 U kunt voorwaarden opgeven die de toegang tot uw bedrijfsgegevens beperken op basis van de locatie, de apparaat- en gebruikersstatus en de gevoeligheid van een toepassing.
 
-> [!NOTE] 
+> [!NOTE]
 > Voorwaardelijke toegang kan nu ook worden toegepast voor [Office 365-services](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access).
 
-![Architectuurdiagram voor voorwaardelijke toegang](./media/conditional-access/ca-diagram-1.png)
+![Diagram van voorwaardelijke toegang](./media/conditional-access/ca-diagram-1.png)
 
 ## <a name="use-conditional-access-with-intune"></a>Voorwaardelijke toegang met Intune gebruiken
 

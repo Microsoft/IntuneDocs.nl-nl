@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,24 +16,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3372fc83e467b08b479490b3707f2be03409156
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749329"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164583"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Begeleid scenario: in de cloud beheerde moderne desktop
 
-De moderne desktop is het geavanceerde productiviteitsplatform voor de informatiemedewerker. Office 365 ProPlus en Windows 10 zijn de kernonderdelen van de moderne desktop, samen met de nieuwste beveiligingsbasislijnen voor Windows 10 en Windows Defender Advanced Threat Protection. 
+De moderne desktop is het geavanceerde productiviteitsplatform voor de informatiemedewerker. Office 365 ProPlus en Windows 10 zijn de kernonderdelen van de moderne desktop, samen met de nieuwste beveiligingsbasislijnen voor Windows 10 en Microsoft Defender Advanced Threat Protection. 
 
 Het beheer van de moderne desktop vanuit de cloud biedt internetbrede externe acties als extra voordeel. In cloudbeheer wordt gebruikgemaakt van het ingebouwde Windows Mobile Device Management-beleid en worden afhankelijkheden van het lokale Active Directory-groepsbeleid verwijderd. 
 
 Voor het geval u een in de cloud beheerde moderne desktop wilt evalueren in uw eigen organisatie, zijn in dit begeleide scenario alle benodigde configuraties voor een basisimplementatie vooraf gedefinieerd. In dit begeleide scenario maakt u een veilige omgeving waarin u beheermogelijkheden voor Intune-apparaten kunt uitproberen. 
 
 ## <a name="prerequisites"></a>Vereisten
-- [De MDM-instantie instellen op Intune](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune): Met de Mobile Device Management-instantie (MDM) wordt bepaald hoe u uw apparaten beheert. Als IT-beheerder moet u een MDM-instantie instellen voordat gebruikers apparaten voor beheer kunnen inschrijven.
-- Minimaal M356 E3 (of M365 E5 voor de beste beveiliging)
+- [De MDM-instantie instellen op Intune](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune): Met de MDM-instantie (Mobile Device Management) wordt bepaald hoe u uw apparaten beheert. Als IT-beheerder moet u een MDM-instantie instellen voordat gebruikers apparaten voor beheer kunnen inschrijven.
+- Minimaal M365 E3 (of M365 E5 voor de beste beveiliging)
 - Windows 10 1903-apparaat (geregistreerd bij Windows Autopilot voor de beste ervaring voor eindgebruikers)
 - Er zijn Intune-beheerdersmachtigingen vereist om dit begeleide scenario te voltooien:
   - Apparaatconfiguratie: lezen, maken, verwijderen, toewijzen en bijwerken
@@ -118,5 +118,5 @@ Zodra de gebruiker het apparaat heeft toegevoegd aan Azure Active Directory word
 
 ## <a name="next-steps"></a>Volgende stappen
 
-- Als u Windows Defender Advanced Threats Detection wilt gebruiken, moet u [Intune-nalevingsbeleid maken](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy) om Defender Threat Analysis te laten voldoen aan de vereisten.
+- Als u Microsoft Defender Advanced Threats Detection wilt gebruiken, moet u [Intune-nalevingsbeleid maken](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy) om Defender Threat Analysis te laten voldoen aan de vereisten.
 - Maak [beleid voor voorwaardelijke toegang op basis van het apparaat](~/protect/advanced-threat-protection.md#create-a-conditional-access-policy) om de toegang te blokkeren als het apparaat niet voldoet aan de Intune-vereisten.

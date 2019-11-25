@@ -133,6 +133,8 @@
               href: manage-microsoft-edge.md
             - name: Outlook configureren
               href: app-configuration-policies-outlook.md
+            - name: S/MIME configureren voor Outlook
+              href: app-configuration-policies-outlook-smime.md
             - name: Google Chrome configureren voor Android
               href: apps-configure-chrome-android.md
         - name: Apps en boeken die zijn gekocht via het volume-aankoopprogramma

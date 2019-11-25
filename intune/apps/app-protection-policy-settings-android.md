@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d223fb0cac7ad7435366db70bbb5bf4117216aa0
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983969"
+ms.locfileid: "74059780"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Instellingen voor beveiligingsbeleid voor apps voor Android in Microsoft Intune
 In dit artikel worden de app-beveiligingsbeleidsinstellingen voor Android-apparaten beschreven. De beleidsinstellingen die worden beschreven, kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid op de blade **Instellingen** in Azure Portal.
@@ -45,7 +45,7 @@ Er zijn drie soorten beleidsinstellingen: gegevensbeschermingsinstellingen, toeg
 | **Knippen, kopiëren en plakken tussen andere apps beperken** | Geef op wanneer knip-, kopieer- en plakbewerkingen voor deze app kunnen worden gebruikt. U kunt kiezen uit: <ul><li>**Geblokkeerd**:  geen knip-, kopieer- en plakbewerkingen toestaan tussen deze app en andere apps.</li><li>**Door beleid beheerde apps**: alleen knip-, kopieer- en plakbewerkingen toestaan tussen deze app en andere door beleid beheerde apps.</li><li>**Door beleid beheerde apps met Plakken in**: knippen en kopiëren toestaan tussen deze app en andere door beleid beheerde apps. Gegevens uit alle apps mogen in deze app worden geplakt.</li><li>**Elke app**: geen beperkingen voor knip-, kopieer- en plakbewerkingen vanuit en naar deze app. | **Elke app** |
 | <ul><ui>**De tekenlimiet voor knippen en kopiëren voor elke app** | Hiermee geeft u het aantal tekens op dat kan worden geknipt of gekopieerd van gegevens van de organisatie en de accounts.  Hiermee kunt u het opgegeven aantal tekens voor elke toepassing delen, ongeacht de instelling Knippen, kopiëren en plakken met andere apps beperken.<p>Standaardwaarde = 0<p>**Opmerking**: Hiervoor is Intune-bedrijfsportal versie 5.0.4364.0 of hoger vereist.  | **0** |
 | **Schermopname en Google Assistant** | Selecteer **Uitschakelen** om schermopnamen en gebruik van de **Google Assistent**-functies van het apparaat te blokkeren bij gebruik van deze app. Als u **Uitschakelen** kiest, wordt ook de voorbeeldafbeelding van de app-schakelaar vervaagd bij gebruik van deze app in combinatie met een werk- of schoolaccount.| **Inschakelen** |
-
+| **Meldingen van organisatiegegevens** | Geef op hoeveel organisatiegegevens worden gedeeld via besturingssysteemmeldingen voor organisatieaccounts. Deze beleidsinstelling is van invloed op het lokale apparaat en alle verbonden apparaten, zoals draagbare apparaten en slimme luidsprekers. Met apps kunnen extra besturingselementen worden geboden om het gedrag van meldingen aan te passen. Er kan ook voor worden gekozen om niet aan alle waarden te voldoen. Kies uit: <ul><li>**Blokkeren**:  Geen meldingen delen.</li><ul><li>Als dit niet wordt ondersteund door de toepassing, worden meldingen toegestaan.</li></ul><li>**Organisatiegegevens blokkeren**: Deel geen organisatiegegevens in meldingen. Bijvoorbeeld 'U hebt nieuwe e-mail'; 'U hebt een vergadering'</li><UL><li>Als dit niet wordt ondersteund door de toepassing, worden meldingen geblokkeerd.</li></ul><li>**Toestaan**: Hiermee worden organisatiegegevens in de meldingen gedeeld</li><li>**Elke app**: geen beperkingen voor knip-, kopieer- en plakbewerkingen vanuit en naar deze app.</ul> <p>**Opmerking**: *Deze instelling vereist ondersteuning van apps. Op dit moment wordt deze instelling ondersteund in Outlook voor Android 4.75.0 of hoger. Deze wordt naar verwachting uitgebracht in de week van 16 december 2019.* | **Toestaan**   |
   
 ### <a name="encryption"></a>Versleuteling
 | Instelling | Gebruik | Standaardwaarde |

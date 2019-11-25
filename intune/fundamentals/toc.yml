@@ -205,6 +205,10 @@
           href: use-docs.md
         - name: Ondersteuning krijgen
           href: get-support.md
+    - name: Reports
+      items:
+        - name: Intune-rapporten
+          href: reports.md
 - name: Verwijzing
   items:
     - name: Foutcodes en beschrijvingen

@@ -18,18 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9802b85a9674535cea62ae28f135153352ef76c
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: aeae231e07ceeee6a54f8f60ec5d53cc96d55be0
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813264"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117878"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>LOB-apps (Line-Of-Business) voor macOS toevoegen in Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Gebruik de informatie in dit artikel om macOS-Line-Of-Business-apps toe te voegen in Microsoft Intune. U moet een extern hulpprogramma downloaden om uw *.pkg*-bestanden vooraf te verwerken voordat u het LOB-bestand kunt uploaden in Microsoft Intune. Het vooraf verwerken van uw *.pkg*-bestanden moet plaatsvinden op een macOS-apparaat.
+
+> [!NOTE]
+> Vanaf de release van macOS Catalina 10.15 moet u voordat u uw apps aan Intune toevoegt controleren of uw macOS LOB-apps gelegaliseerd zijn. Als de ontwikkelaars van uw LOB-apps hun apps niet hebben gelegaliseerd, kunnen de apps niet worden uitgevoerd op de macOS-apparaten van uw gebruikers. Voor meer informatie over hoe u kunt controleren of een app gelegaliseerd is, gaat u naar [Uw macOS-apps legaliseren ter voorbereiding op macOS Catalina](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Notarizing-your-macOS-apps-to-prepare-for-macOS/ba-p/808579).
 
 > [!NOTE]
 > Hoewel gebruikers van macOS-apparaten sommige ingebouwde macOS-apps, zoals Stocks en Maps, kunnen verwijderen, kunt u Intune niet gebruiken om deze apps opnieuw te implementeren. Als eindgebruikers deze apps verwijderen, moeten ze naar de appstore gaan en ze handmatig opnieuw installeren.
