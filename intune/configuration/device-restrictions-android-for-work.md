@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143039"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390927"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -72,7 +72,7 @@ In dit artikel vindt u een overzicht en beschrijving van de verschillende instel
   - **Onderhoudsperiode**: hiermee worden updates automatisch geïnstalleerd tijdens een dagelijkse onderhoudsperiode die u in Intune instelt. Er wordt gedurende 30 dagen geprobeerd om de updates te installeren. Dit kan mislukken als er te weinig ruimte of onvoldoende accuvermogen is. Na 30 dagen vraagt Android de gebruiker om te installeren. Deze periode wordt is ook gebruikt om updates voor Play-apps te installeren. Gebruik deze optie voor specifieke apparaten, zoals kiosken, omdat toegewezen apparaten mt maar één app op de voorgrond kunnen worden bijgewerkt.
 
 - **Meldingsvensters**: als de optie **Uitschakelen** is ingesteld, worden venstermeldingen, inclusief pop-ups, inkomende aanroepen, uitgaande aanroepen, systeemwaarschuwingen en systeemfouten niet weergegeven op het apparaat. Als de optie **Niet geconfigureerd** is ingesteld, wordt de standaardinstelling van het besturingssysteem gebruikt, die mogelijk bepaalt dat meldingen worden weergegeven.
-- **Hints voor eerste gebruik overslaan**: kies **Inschakelen** als u suggesties van apps wilt verbergen of overslaan voor het doorlopen van zelfstudies of voor het lezen van inleidende hints wanneer de app wordt gestart. Als de optie **Niet geconfigureerd** is ingesteld, wordt de standaardinstelling van het besturingssysteem gebruikt, die mogelijk bepaalt dat suggesties worden weergegeven wanneer de app wordt gestart.
+- **Voorst Ellen voor eerste gebruik overs Laan**: **Schakel** de opties verbergen of overs laan uit apps die zelf studies of hints door lopen wanneer de app wordt gestart. Als de optie **Niet geconfigureerd** is ingesteld, wordt de standaardinstelling van het besturingssysteem gebruikt, die mogelijk bepaalt dat suggesties worden weergegeven wanneer de app wordt gestart.
 
 ### <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
 
@@ -150,13 +150,16 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
 
     Wanneer deze functie is ingeschakeld, moet u ook het volgende configureren:
 
-    - **Aangepaste scherm beveiliging instellen afbeelding**: Voer de URL naar een aangepaste installatie kopie in. Voer bijvoorbeeld het volgende in:
+    - **Aangepaste scherm beveiliging instellen afbeelding**: Voer de URL in naar een aangepaste PNG, JPG, JPEG, GIF, BMP, WebP of ICOimage. Voer bijvoorbeeld het volgende in:
 
       - `http://www.contoso.com/image.jpg`
       - `www.contoso.com/image.bmp`
-      - `https://www.contoso.com/image.html`
+      - `https://www.contoso.com/image.webp`
 
       Als u geen URL opgeeft, wordt de standaard installatie kopie van het apparaat gebruikt, als er een standaard installatie kopie is.
+      
+      > [!TIP]
+      > Een bestands bron-URL die in een bitmap kan worden omgezet, wordt ondersteund.
 
     - **Het aantal seconden dat het apparaat scherm beveiliging bevat voordat het scherm wordt uitgeschakeld**: Kies hoe lang het apparaat de scherm beveiliging weergeeft. Voer een waarde tussen 0-9999999 seconden in. De standaard waarde is `0` seconden. Als u niets opgeeft of op nul (`0`) instelt, wordt de scherm beveiliging actief totdat een gebruiker met het apparaat communiceert.
     - **Aantal seconden dat het apparaat inactief is voordat scherm beveiliging wordt weer gegeven**: Kies hoe lang het apparaat inactief moet zijn voordat de scherm beveiliging wordt weer gegeven. Voer een waarde tussen 1-9999999 seconden in. De standaard waarde is `30` seconden. U moet een getal opgeven dat groter is dan nul (`0`).
@@ -199,12 +202,14 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
 
 ### <a name="users-and-accounts-settings"></a>Gebruikers- en accountinstellingen
 
-- **Nieuwe gebruikers toevoegen**: kies **Blokkeren** om te voorkomen dat gebruikers nieuwe gebruikers toevoegen. Elke gebruiker heeft een persoonlijke ruimte op het apparaat voor aangepaste beginschermen, accounts, apps en instellingen. **Niet geconfigureerd**: staat gebruikers toe om andere gebruikers toe te voegen aan het apparaat.
-- **Gebruikers verwijderen**: kies **Blokkeren** om te voorkomen dat gebruikers gebruikers verwijderen. **Niet geconfigureerd**: staat gebruikers toe om andere gebruikers te verwijderen van het apparaat.
-- **Accountwijzigingen**: kies **Blokkeren** om te voorkomen dat gebruikers accounts wijzigen. **Niet geconfigureerd**: staat gebruikers toe om gebruikersaccounts op het apparaat bij te werken.
+- **Nieuwe gebruikers toevoegen**: kies **Blokkeren** om te voorkomen dat gebruikers nieuwe gebruikers toevoegen. Elke gebruiker heeft een persoonlijke ruimte op het apparaat voor aangepaste beginschermen, accounts, apps en instellingen. **Niet geconfigureerd** (standaardinstelling) staat gebruikers toe om andere gebruikers toe te voegen aan het apparaat.
+- **Gebruikers verwijderen**: kies **Blokkeren** om te voorkomen dat gebruikers gebruikers verwijderen. **Niet geconfigureerd** (standaardinstelling) staat gebruikers toe om andere gebruikers toe te voegen aan het apparaat.
+- **Account wijzigingen** (alleen specifieke apparaten): Kies **blok** om te voor komen dat gebruikers accounts wijzigen. **Niet geconfigureerd** (standaardinstelling) staat gebruikers toe om gebruikersaccounts op het apparaat bij te werken.
 
   > [!NOTE]
   > Deze instelling wordt niet gehonoreerd op de apparaat-eigenaar (volledig beheerde) apparaten. Als u deze instelling configureert, wordt de instelling genegeerd en heeft dit geen invloed.
+
+- **Persoonlijke Google-accounts**: **blok keren** dat gebruikers geen persoonlijk Google-account aan het apparaat kunnen toevoegen. **Niet geconfigureerd** (standaard) Hiermee kunnen gebruikers hun persoonlijke Google-account toevoegen.
 
 ### <a name="applications"></a>Toepassingen
 
@@ -254,7 +259,7 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
     - **Poortnummer**: voer het nummer van de TCP-poort in die wordt gebruikt door de proxyserver. Voer bijvoorbeeld `8080` in.
     - **Uitgesloten hosts**: Voer een lijst in met hostnamen of IP-adressen die de proxy niet gebruiken. Deze lijst kan een asterisk (`*`) Joker teken bevatten en meerdere hosts gescheiden door punt komma's (`;`) zonder spaties. Voer bijvoorbeeld `127.0.0.1;web.contoso.com;*.microsoft.com` in.
 
-  - **Automatische proxy configuratie**: Voer de **Pac-URL** in voor een script voor automatische configuratie van de proxy. Voer bijvoorbeeld `https://proxy.contoso.com/proxy.pac` in.
+  - **Automatische proxy configuratie**: Voer de **Pac-URL** in voor een automatisch configuratie script van de proxy. Voer bijvoorbeeld `https://proxy.contoso.com/proxy.pac` in.
 
     Zie voor meer informatie over PAC-bestanden het [bestand voor automatische proxy-configuratie (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opent een niet-micro soft-site).
 
@@ -314,7 +319,7 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
   - **Minstens alfanumeriek met symbolen**
 - **Wachtwoorden niet opnieuw gebruiken**: voer het aantal nieuwe wachtwoorden in dat moet worden gebruikt voordat een oud wachtwoord opnieuw kan worden gebruikt (van **1**-**24**).
 - **Ontgrendelen met vingerafdruk**: kies **Blokkeren** om te voorkomen dat eindgebruikers de vingerafdrukscanner van het apparaat gebruiken om het apparaat te ontgrendelen. **Niet geconfigureerd**: gebruikers kunnen apparaten ontgrendelen met een vingerafdruk in het werkprofiel.
-- **Smart Lock en andere trustagenten**: kies **Blokkeren** om te voorkomen dat Smart Lock of andere trustagenten instellingen voor het vergrendelingsscherm van compatibele apparaten aanpassen. Met deze functie, ook wel een vertrouwensagent genoemd, kunt u het wachtwoord voor het vergrendelingsscherm op het apparaat uitschakelen of overslaan als het apparaat zich op een vertrouwde locatie bevindt. Hiermee kan bijvoorbeeld het wachtwoord van het werkprofiel worden overgeslagen wanneer het apparaat is verbonden met een bepaald Bluetooth-apparaat of wanneer het zich in de buurt van een NFC-tag bevindt. Gebruik deze instelling om te voorkomen dat gebruikers Smart Lock configureren.
+- **Smart Lock en andere trustagenten**: kies **Blokkeren** om te voorkomen dat Smart Lock of andere trustagenten instellingen voor het vergrendelingsscherm van compatibele apparaten aanpassen. Met deze functie, soms ook wel vertrouwensagent genoemd, kunt u het vergrendelingsschermwachtwoord op het apparaat uitschakelen of overslaan als het zich op een vertrouwde locatie bevindt. Hiermee kan bijvoorbeeld het wachtwoord van het werkprofiel worden overgeslagen wanneer het apparaat is verbonden met een bepaald Bluetooth-apparaat of wanneer het zich in de buurt van een NFC-tag bevindt. Gebruik deze instelling om te voorkomen dat gebruikers Smart Lock configureren.
 
 ### <a name="device-password"></a>Wachtwoord van apparaat
 
@@ -335,14 +340,14 @@ Deze wachtwoordinstellingen zijn van toepassing op persoonlijke profielen op app
   - **Minstens alfanumeriek met symbolen**
 - **Wachtwoorden niet opnieuw gebruiken**: voer het aantal nieuwe wachtwoorden in dat moet worden gebruikt voordat een oud wachtwoord opnieuw kan worden gebruikt (van **1**-**24**).
 - **Ontgrendelen met vingerafdruk**: kies **Blokkeren** om te voorkomen dat eindgebruikers de vingerafdrukscanner van het apparaat gebruiken om het apparaat te ontgrendelen. **Niet geconfigureerd**: staat de gebruiker toe het apparaat te ontgrendelen met een vingerafdruk.
-- **Smart Lock en andere trustagenten**: kies **Blokkeren** om te voorkomen dat Smart Lock of andere trustagenten instellingen voor het vergrendelingsscherm van compatibele apparaten aanpassen. Met deze functie, ook wel een vertrouwensagent genoemd, kunt u het wachtwoord voor het vergrendelingsscherm op het apparaat uitschakelen of overslaan als het apparaat zich op een vertrouwde locatie bevindt. Hiermee kan bijvoorbeeld het wachtwoord van het werkprofiel worden overgeslagen wanneer het apparaat is verbonden met een bepaald Bluetooth-apparaat of wanneer het zich in de buurt van een NFC-tag bevindt. Gebruik deze instelling om te voorkomen dat gebruikers Smart Lock configureren.
+- **Smart Lock en andere trustagenten**: kies **Blokkeren** om te voorkomen dat Smart Lock of andere trustagenten instellingen voor het vergrendelingsscherm van compatibele apparaten aanpassen. Met deze functie, soms ook wel vertrouwensagent genoemd, kunt u het vergrendelingsschermwachtwoord op het apparaat uitschakelen of overslaan als het zich op een vertrouwde locatie bevindt. Hiermee kan bijvoorbeeld het wachtwoord van het werkprofiel worden overgeslagen wanneer het apparaat is verbonden met een bepaald Bluetooth-apparaat of wanneer het zich in de buurt van een NFC-tag bevindt. Gebruik deze instelling om te voorkomen dat gebruikers Smart Lock configureren.
 
 ### <a name="system-security"></a>Systeembeveiliging
 
 - **Bedreigingenscan voor apps**: **Vereisen**: hiermee dwingt u af dat de instelling **Apps controleren** wordt ingeschakeld voor werk- en persoonlijke profielen.
 
    > [!Note]
-   > Deze instelling werkt alleen voor apparaten met Android O en later.
+   > Deze instelling werkt alleen voor apparaten met Android 8 (Oreo) en later.
 
 - **Voor komen dat app-installaties van onbekende bronnen in het persoonlijke profiel**worden uitgevoerd: op basis van het ontwerp van Android Enter prise-werk profielen kunnen geen apps worden geïnstalleerd vanuit andere bronnen dan de Play Store. Op basis van de aard van het werk profiel zijn de volgende twee profielen bedoeld:
 

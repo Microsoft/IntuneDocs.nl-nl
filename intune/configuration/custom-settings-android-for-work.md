@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/01/2019
+ms.date: 11/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d85793dcf0ee6fa0186147606c9fd695a268e529
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: bd2ab7ad8eb155719695bede1f539d5c264d455b
+ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506974"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74319835"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Aangepaste instellingen gebruiken voor Android Enterprise-apparaten in Microsoft Intune
 
@@ -30,11 +30,11 @@ Met Microsoft Intune kunt u met behulp van een 'aangepast profiel' aangepaste in
 
 In aangepaste profielen voor Android Enterprise worden OMA-URI-instellingen (Open Mobile Alliance Uniform Resource Identifier) gebruikt om functies op Android Enterprise-apparaten te beheren. Deze instellingen worden doorgaans gebruikt door fabrikanten van mobiele apparaten om deze functies te beheren.
 
-InTune biedt ondersteuning voor een beperkt aantal aangepaste Android Enter prise-profielen, waaronder:
+InTune biedt ondersteuning voor het volgende beperkte aantal aangepaste Android Enter prise-profielen:
 
 - ./Vendor/MSFT/WiFi/Profile/SSID/Settings: [het maken van een Wi-Fi-profiel met een vooraf gedeelde sleutel](wi-fi-profile-shared-key.md) bevat enkele voor beelden.
 - ./Vendor/MSFT/VPN/Profile/Name/PackageList: [het maken van een VPN-profiel per app](android-pulse-secure-per-app-vpn.md) bevat enkele voor beelden.
-- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: Zie het [voor beeld](#example) (in dit artikel).
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: Zie het [voor beeld](#example) in dit artikel. Deze instelling is ook beschikbaar in de gebruikers interface. Zie [Android Enterprise-apparaatinstellingen voor beheer van functies](device-restrictions-android-for-work.md) voor meer informatie.
 
 Zie [OEMConfig voor Android Enter prise](android-oem-configuration-overview.md)(Engelstalig) als u aanvullende instellingen nodig hebt.
 

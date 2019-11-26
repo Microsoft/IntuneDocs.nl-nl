@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,14 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3720b0b9a67f0c3462993feef4162ef35f7f3f92
-ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
+ms.openlocfilehash: 796439581ca0ae91e788a91ab0bc2ef8f6019626
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73182919"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199345"
 ---
-# <a name="in-development-for-microsoft-intune---november-2019"></a>In ontwikkeling voor Microsoft Intune - november 2019
+# <a name="in-development-for-microsoft-intune---december-2019"></a>In ontwikkeling voor Microsoft Intune - december 2019
 
 Als hulp bij uw gereedheid en planning worden op deze pagina updates voor en functies van de Intune-gebruikersinterface vermeld die in ontwikkeling zijn, maar nog niet zijn uitgebracht. Naast de informatie op deze pagina:
 
@@ -58,55 +58,86 @@ Als hulp bij uw gereedheid en planning worden op deze pagina updates voor en fun
 <!-- ***********************************************-->
 ## <a name="app-management"></a>Appbeheer
 
-### <a name="smime-support-for-microsoft-outlook-mobile----2669398----"></a>S/MIME-ondersteuning voor micro soft Outlook Mobile <!-- 2669398  -->
+### <a name="ios-user-licensed-vpp-apps---5619268-idready---"></a>met iOS-licenties voor gebruikers met VPP<!-- 5619268 idready -->
+Voor gebruikers registratie iOS-apparaten worden eind gebruikers niet langer weer gegeven met VPP-toepassingen met een licentie die zijn geïmplementeerd als beschikbaar. Eind gebruikers blijven echter alle gebruikers met een openstaande VPP-app in de Bedrijfsportal zien. Zie [iOS- en macOS-apps beheren die zijn aangeschaft via een Apple Volume Purchase Program met Microsoft Intune](~/apps/vpp-apps-ios.md) voor meer informatie over VPP-apps.
+
+### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745-idready---"></a>Persoonlijke herstel sleutel ophalen van met MEM versleutelde macOS-apparaten<!-- 4851745 idready -->
+Eind gebruikers kunnen hun persoonlijke herstel sleutel (FileVault Key) ophalen met behulp van de iOS-Bedrijfsportal-app. Het apparaat met de persoonlijke herstel sleutel moet zijn Inge schreven bij intune en moeten worden versleuteld met FileVault via intune. Met de iOS-Bedrijfsportal-app kan een eind gebruiker de Safari-webweergave openen en hun persoonlijke herstel sleutel ophalen. Selecteer in intune de optie **apparaten** > *het versleutelde en Inge schreven macOS-apparaat* > **herstel sleutel ophalen**. Zie [FileVault-versleuteling voor macOS](~/protect/encrypt-devices.md#filevault-encryption-for-macos)voor meer informatie over FileVault.
+
+### <a name="microsoft-app-icons-update--4677605--"></a>Micro soft app-pictogrammen bijwerken<!--4677605-->
+De pictogrammen die worden gebruikt voor micro soft-apps in het deel venster app-doel groep voor het app-beveiligings beleid en het app-configuratie beleid worden bijgewerkt.
+
+### <a name="smime-support-for-microsoft-outlook-mobile---2669398----"></a>S/MIME-ondersteuning voor micro soft Outlook Mobile<!-- 2669398  -->
 InTune biedt ondersteuning voor het leveren van S/MIME-ondertekening en versleutelings certificaten die kunnen worden gebruikt met Outlook Mobile op iOS en Android. Zie [e-mail instellingen voor IOS-apparaten](~/configuration/email-settings-ios.md) en [e-mail instellingen voor Android-apparaten](~/configuration/email-settings-android.md)voor meer informatie.
 
-### <a name="custom-settings-support-for-macos-applications----4736278----"></a>Ondersteuning van aangepaste instellingen voor macOS-toepassingen <!-- 4736278  -->
+### <a name="custom-settings-support-for-macos-applications---4736278----"></a>Ondersteuning van aangepaste instellingen voor macOS-toepassingen<!-- 4736278  -->
 InTune ondersteunt aangepaste instellingen, zodat u specifieke sleutels en waarden kunt toevoegen aan een bestaand eigenschappen lijst bestand voor voor keuren (. plist) om macOS-apps en het apparaat te configureren. Niet alle apps ondersteunen beheerde voor keuren, en in sommige gevallen kunnen alleen specifieke instellingen worden beheerd. De instellingen worden alleen geïmplementeerd via het kanaal van het apparaat. U moet alleen eigenschappen lijst bestanden of XML-bestanden uploaden die de kanaal instellingen van het apparaat hebben.
 
-### <a name="assignment-type-value-in-windows-company-portal----5459950----"></a>Waarde van toewijzings type in Windows Bedrijfsportal <!-- 5459950  -->
-De pagina **geïnstalleerde apps** van de Windows bedrijfsportal-app wordt bijgewerkt. De kolom **toewijzings type** van de pagina **geïnstalleerde apps** is bijgewerkt met de naam ' vereist door uw organisatie '. Mogelijke waarden zijn **Ja** of **Nee** om de vereiste versus beschik bare apps aan te wijzen. Deze wijziging wordt aangebracht in reactie op de Verwar ring van de eind gebruiker. Meer informatie over de Windows-bedrijfsportal vindt u in [De app Microsoft Intune-bedrijfsportal configureren](~/apps/company-portal-app.md).
-
-### <a name="run-win32-apps-on-windows-10-s-mode-devices----3747604----"></a>Win32-apps uitvoeren op Windows 10 S-modus apparaten <!-- 3747604  --> 
-U kunt Win32-apps installeren en uitvoeren op apparaten die worden beheerd in de modus Windows 10 S. Maak een of meer aanvullende beleids regels voor de modus S door gebruik te maken van de Windows Defender Application Control (WDAC) Power shell-hulpprogram ma's. Gebruik de handtekening portal van Device Guard om het aanvullende beleid te ondertekenen. Upload en distribueer vervolgens het beleid via intune. 
-
-In intune kunt u deze mogelijkheid vinden door client- **apps** te selecteren  > **Windows 10 S aanvullende beleids regels**. 
-
-### <a name="set-app-availability-based-on-a-date-and-time----3510685----"></a>Beschik baarheid van apps instellen op basis van een datum en tijd <!-- 3510685  -->
-Als beheerder kunt u de begin tijd en deadline voor een vereiste app configureren. Op het moment van de intune-beheer uitbreiding wordt de inhoud van de app gedownload en opgeslagen in de cache. De app wordt geïnstalleerd op het tijdstip van de deadline. Voor beschik bare apps wordt de begin tijd bepaald wanneer de app wordt weer gegeven in Bedrijfsportal. 
-
-De beschik baarheid van apps instellen op basis van datum en tijd:
-
-1. Selecteer in Intune **Client-apps** > **Apps**. 
-1. Selecteer een app uit de lijst of Voeg een nieuwe toe door **toevoegen**te selecteren. 
-1. Selecteer in de Blade app **toewijzingen** > **groep toevoegen**. 
-1. Stel het **toewijzings type** in op **vereist** en selecteer vervolgens **opgenomen groepen**. 
-1. Stel **deze app voor alle gebruikers** in op **Ja**. 
-1. Selecteer **bewerken** om de opties voor de **eind gebruikers ervaring** te wijzigen. 
-1. Stel op de Blade **eind gebruikers ervaring** de **software beschik bare tijd** in als nodig. 
-
-Zie [Web-apps toevoegen aan Microsoft Intune](../apps/apps-add.md) voor meer informatie.
-
-### <a name="require-win32-apps-to-restart----3136567----"></a>Vereisen dat Win32-apps opnieuw worden opgestart <!-- 3136567  -->
-U kunt vereisen dat een Win32-app opnieuw wordt opgestart na een geslaagde installatie. U kunt de hoeveelheid tijd (de respijt periode) kiezen voordat de computer opnieuw wordt opgestart.
-
-### <a name="display-notifications-for-the-company-portal-app-on-windows----1808082----"></a>Meldingen weer geven voor de Bedrijfsportal-app in Windows <!-- 1808082  -->
+### <a name="display-notifications-for-the-company-portal-app-on-windows---1808082----"></a>Meldingen weer geven voor de Bedrijfsportal-app in Windows<!-- 1808082  -->
 De Bedrijfsportal-app wordt bijgewerkt op Windows-apparaten om pop-upmeldingen voor gebruikers weer te geven, zelfs wanneer de toepassing wordt gesloten. In de update worden alleen meldingen voor beschik bare apps weer gegeven wanneer de installatie status is voltooid of mislukt. De Bedrijfsportal-app toont geen meldingen voor vereiste toepassingen.
 
-### <a name="display-installation-status-messages-for-the-company-portal-app----2514416----"></a>Berichten over de installatie status voor de app Bedrijfsportal weer geven <!-- 2514416  -->
+### <a name="display-installation-status-messages-for-the-company-portal-app---2514416----"></a>Berichten over de installatie status voor de app Bedrijfsportal weer geven<!-- 2514416  -->
 In de Bedrijfsportal-app worden aanvullende status berichten voor de app-installatie weer gegeven voor eind gebruikers. De volgende voor waarden zijn van toepassing op nieuwe Win32-afhankelijkheids functies:
 - App installeren mislukt. Er is niet voldaan aan de afhankelijkheden die zijn gedefinieerd door de beheerder.
-- De app is geïnstalleerd, maar moet opnieuw worden opgestart.
-- De app wordt geïnstalleerd, maar moet opnieuw worden opgestart om verder te gaan.
 
-### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>Inhoud van app-meldingen voor organisatie accounts configureren <!-- 2576686 -->
+### <a name="configure-app-notification-content-for-organization-accounts---2576686---"></a>Inhoud van app-meldingen voor organisatie accounts configureren<!-- 2576686 -->
 Met de intune-APP op Android-en iOS-apparaten kunt u app-meldings inhoud voor organisatie accounts beheren. Deze functie vereist ondersteuning van toepassingen en is mogelijk niet beschikbaar voor alle toepassingen waarvoor APP is ingeschakeld. Zie [Overzicht van App-beveiligingsbeleid](../apps/app-protection-policy.md) voor meer informatie over APP.
-
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Apparaatconfiguratie
 
-### <a name="use-pkcs-certificates-with-wi-fi-profiles-on-windows-10-and-later-devices----3246388----"></a>PKCS-certificaten gebruiken met Wi-Fi-profielen op apparaten met Windows 10 en hoger <!-- 3246388  -->
+### <a name="block-users-from-configuring-certificate-credentials-in-the-managed-keystore-on-android-enterprise-device-owner-devices---3311998-idready---"></a>Voor komen dat gebruikers certificaat referenties configureren in de beheerde-opslag op Android-apparaten met een apparaat eigenaar<!-- 3311998 idready -->
+Op Android-apparaten met de eigenaar van het apparaat is er een nieuwe instelling om te voor komen dat gebruikers hun certificaat referenties configureren in de beheerde-opslag (**apparaatconfiguratie** > **profielen** > **profiel maken** > **Android Enter prise** voor platform > eigenaar van het **apparaat alleen > beperkingen** voor het profiel type > **gebruikers en accounts**).
+
+Ga naar [Android Enterprise-apparaatinstellingen om beperkingsfuncties toe te staan of te beperken met behulp van Intune](../configuration/device-restrictions-android-for-work.md) om de huidige instellingen te zien.
+
+Van toepassing op:
+- Android Enter prise-apparaat eigenaar, inclusief toegewezen en volledig beheerde apparaten
+
+### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686-idready---"></a>Configuratie profielen van bekabeld netwerk apparaat voor macOS-apparaten<!-- 3508686 idready -->
+Op macOS-apparaten bevat een toekomstige update een nieuw configuratie profiel voor een apparaat waarmee bekabelde netwerken (**apparaatconfiguratie** > **profielen** worden geconfigureerd > **profiel** > **MacOS** voor platform > **bekabeld netwerk** voor profiel type). Gebruik deze functie om 802.1 x-profielen te maken voor het beheren van bekabelde netwerken en om deze bekabelde netwerken te implementeren op uw macOS-apparaten.
+
+Van toepassing op:
+- macOS
+
+### <a name="add-automatic-proxy-settings-to-wi-fi-profiles-for-android-enterprise-work-profiles---4490822-idready---"></a>Automatische proxy-instellingen toevoegen aan Wi-Fi-profielen voor Android Enter prise work-profielen<!-- 4490822 idready -->
+Op apparaten met een werk Profiel van Android Enter prise kunt u Wi-Fi-profielen maken. Wanneer u het type Wi-Fi Enter prise kiest, kunt u ook het type Extensible Authentication Protocol (EAP) invoeren dat in uw Wi-Fi-netwerk wordt gebruikt.
+
+Bij een toekomstige update kunt u, wanneer u het Enter prise-type kiest, automatische proxy-instellingen invoeren, met inbegrip van een proxy server-URL, zoals `proxy.contoso.com`.
+
+Ga voor een overzicht van de huidige Wi-Fi-instellingen die u kunt configureren naar [Wi-Fi-instellingen toevoegen voor apparaten met Android Enter prise en Android kiosk in Microsoft intune](../configuration/wi-fi-settings-android-enterprise.md).
+
+Van toepassing op:
+- Android Enterprise - Werkprofiel
+
+### <a name="enable-network-access-control-nac-with-cisco-anyconnect-vpn-on-ios-devices---4860111-idready---"></a>Netwerk toegangs beheer (NAC) met Cisco AnyConnect VPN inschakelen op iOS-apparaten<!-- 4860111 idready -->
+Op iOS-apparaten kunt u een VPN-profiel maken en verschillende verbindings typen gebruiken, waaronder Cisco AnyConnect (**apparaatconfiguratie** > **profielen** > **profiel maken** > **IOS** voor platform > **VPN** voor profiel type > **Cisco AnyConnect** voor het verbindings type). 
+
+In een toekomstige update kunt u Network Access Control (NAC) inschakelen met Cisco AnyConnect. Om deze functie te gebruiken, moet u ook het volgende doen:
+
+1. Gebruik de stappen in **configure Microsoft intune als MDM-server** om de Cisco Identity Services Engine (ISE) in azure te configureren in de [Cisco Identity Services engine-beheerders handleiding](https://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html).
+2. Selecteer in het profiel voor configuratie van intune de optie **netwerk Access Control inschakelen (NAC)** .
+
+Als u alle beschik bare VPN-instellingen wilt weer geven, gaat u naar [VPN-instellingen op Ios-apparaten configureren](../configuration/vpn-settings-ios.md).
+
+Van toepassing op:
+- iOS
+
+### <a name="updated-single-sign-on-experience-for-apps-and-websites-on-your-ios-ipados-and-macos-devices---4999578-idready---"></a>De ervaring voor eenmalige aanmelding voor apps en websites op uw iOS-, iPadOS-en macOS-apparaten is bijgewerkt<!-- 4999578 idready -->
+InTune voegt meer instellingen voor eenmalige aanmelding toe voor iOS-, iPadOS-en macOS-apparaten. Op dit moment kunt u referentie-SSO-toepassings uitbreidingen en de ingebouwde Kerberos-extensie van Apple configureren in intune. In een toekomstige update kunt u de SSO-extensies voor het omleiden van apps configureren die zijn geschreven door uw organisatie of door uw ID-provider. 
+
+Gebruik deze instellingen om een naadloze eenmalige aanmelding te configureren voor apps en websites die gebruikmaken van moderne authenticatie methoden, zoals OAuth en SAML2. 
+
+Als u wilt zien welke extensie-instellingen voor SSO-apps u kunt configureren, gaat u naar [SSO op Ios](../configuration/ios-device-features-settings.md#single-sign-on-app-extension) en [SSO op macOS](../configuration/macos-device-features-settings.md#single-sign-on-app-extension).
+
+Van toepassing op:
+- iOS/iPadOS
+- macOS
+
+### <a name="require-use-of-approved-keyboards-on-android--4761794-idready---"></a>Gebruik van goedgekeurde toetsen borden in Android vereisen<!--4761794 IDready -->
+U kunt een lijst met goedgekeurde toetsen borden opgeven voor gebruik in beheerde Android-apps. Vanuit de beheerde app wordt de gebruiker gevraagd om over te scha kelen naar een van de goedgekeurde toetsen borden die al zijn geïnstalleerd op het apparaat of, indien nodig, ze naar de Google Play Store om een van de goedgekeurde toetsen borden te downloaden en in te stellen. De gebruiker kan alleen tekst velden in een beheerde app bewerken als hun actieve toetsen bord een van de goedgekeurde toetsen borden is.
+
+### <a name="use-pkcs-certificates-with-wi-fi-profiles-on-windows-10-and-later-devices---3246388----"></a>PKCS-certificaten gebruiken met Wi-Fi-profielen op apparaten met Windows 10 en hoger<!-- 3246388  -->
 Op dit moment kunt u Windows Wi-Fi-profielen verifiëren met SCEP-certificaten (**apparaatconfiguratie** > **profielen** > **profiel maken** > **Windows 10 en hoger** voor platform > **Wi-Fi** voor Profiel type > EAP- **type** > - **onderneming** ). U kunt PKCS-certificaten gebruiken met uw Windows Wi-Fi-profielen. Met deze functie kunnen gebruikers Wi-Fi-profielen verifiëren met behulp van nieuwe of bestaande PKCS-certificaat profielen in uw Tenant. 
 
 Zie [Wi-Fi-instellingen voor Windows 10-en nieuwere apparaten toevoegen in intune](../configuration/wi-fi-settings-windows.md)voor meer informatie over Wi-Fi-profielen.
@@ -114,7 +145,7 @@ Zie [Wi-Fi-instellingen voor Windows 10-en nieuwere apparaten toevoegen in intun
 Van toepassing op:
 - Windows 10 en hoger
 
-### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices----4892824----"></a>Nieuwe ExchangeActiveSync-instellingen bij het maken van een configuratie profiel voor een e-mail apparaat op iOS-apparaten <!-- 4892824  --> 
+### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>Nieuwe ExchangeActiveSync-instellingen bij het maken van een configuratie profiel voor een e-mail apparaat op iOS-apparaten<!-- 4892824  --> 
 Op iOS/iPadOS-apparaten kunt u een e-mail verbinding configureren in een configuratie profiel voor een apparaat (**apparaatconfiguratie** > **profielen** > **profiel maken** > **IOS/IPadOS** voor platform > **-e-mail** voor het profiel type). 
 
 Er worden nieuwe ExchangeActiveSync-instellingen beschikbaar, waaronder:
@@ -127,7 +158,7 @@ Van toepassing op:
 - iOS 13.0 en hoger
 - iPadOS 13.0 en hoger
 
-### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices----5353228----"></a>Voor komen dat gebruikers persoonlijke Google-accounts toevoegen aan de eigenaar van het Android-apparaat en de toegewezen apparaten <!-- 5353228  -->
+### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>Voor komen dat gebruikers persoonlijke Google-accounts toevoegen aan de eigenaar van het Android-apparaat en de toegewezen apparaten<!-- 5353228  -->
 U kunt voor komen dat gebruikers persoonlijke Google-accounts maken op Android Enter prise Device-eigenaar en toegewezen apparaten (**apparaatconfiguratie** > **profielen** > **profiel maken** > **Android Enter prise** alleen voor platform > **apparaat-eigenaar > beperkingen van apparaten** voor profiel type > **gebruikers en account instellingen**).
 
 Ga naar [Met Android Enterprise-apparaatinstellingen functies toestaan of beperken met behulp van Intune](../configuration/device-restrictions-android-for-work.md) als u alle instellingen wilt bekijken die u momenteel kunt configureren.
@@ -136,7 +167,7 @@ Van toepassing op:
 - Android Enterprise-apparaateigenaar
 - Toegewezen Android Enterprise-apparaten
 
-### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile----5468501----"></a>De instelling logboek registratie aan server zijde voor SIRI-opdrachten wordt verwijderd in profiel voor iOS-apparaten <!-- 5468501  -->
+### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>De instelling logboek registratie aan server zijde voor SIRI-opdrachten wordt verwijderd in profiel voor iOS-apparaten<!-- 5468501  -->
 Op iOS-apparaten kunt u een profiel voor beperkingen voor apparaten maken waarmee logboek registratie aan de server zijde wordt geconfigureerd voor SIRI-opdrachten (**apparaatconfiguratie** > **profielen** > **maken** > **IOS/iPadOS** voor platform > **Beperkingen** voor het profiel type > **ingebouwde apps**). De instelling **logboek registratie aan server zijde voor SIRI-opdrachten** wordt verwijderd.
 
 Deze instelling wordt verwijderd uit de intune-beheer console. Deze instelling heeft geen effect op het apparaat, zelfs als bestaande beleids regels waarvoor deze instelling is geconfigureerd, de instelling blijven weer geven. Als u de instelling uit bestaande beleids regels wilt verwijderen, gaat u naar het beleid, maakt u een kleine bewerking, slaat u deze op en wordt het beleid bijgewerkt.
@@ -146,32 +177,32 @@ Ga naar [iOS- en iPadOS-apparaatinstellingen om functies toe te staan of te bepe
 Van toepassing op:
 - iOS
 
-
 <!-- ***********************************************-->
 <!--## Device enrollment-->
 
 <!-- ***********************************************-->
 ## <a name="device-management"></a>Apparaatbeheer
 
+
+
 ### <a name="edit-device-name-value-for-autopilot-devices---2640074----"></a>Waarde voor apparaatnaam bewerken voor auto pilot-apparaten<!-- 2640074  -->
 U kunt de waarde voor de apparaatnaam voor Azure AD gekoppelde auto pilot-apparaten bewerken. Als u dit wilt doen, gaat u naar **intune** > **apparaatregistratie** > **Windows-inschrijving** > **Windows auto pilot** > - **apparaten** > kiest u het apparaat > de waarde **apparaatnaam** in het rechterdeel venster te wijzigen > **Opslaan**.
-
 
 ### <a name="edit-the-group-tag-value-for-autopilot-devices---4816775---"></a>De groeps label waarde voor auto pilot-apparaten bewerken<!-- 4816775 -->
 U kunt de **groeps label** waarde voor auto pilot-apparaten bewerken:
 
-1. Selecteer **intune**  > **apparaatregistratie**  > **Windows-inschrijving**  > **Windows auto pilot**  > -**apparaten**.
+1. Selecteer **intune** > **apparaatregistratie** > **Windows-inschrijving** > **Windows auto pilot** > - **apparaten**.
 1. Kies het apparaat.
 1. Wijzig in het deel venster aan de rechter kant de waarde **groeps label** .
 1. Selecteer **Opslaan**.
 
-### <a name="target-macos-user-groups-to-require-jamf-management----4061739---"></a>MacOS-gebruikers groepen die Jamf-beheer vereisen <!-- 4061739 -->
+### <a name="target-macos-user-groups-to-require-jamf-management---4061739---"></a>MacOS-gebruikers groepen die Jamf-beheer vereisen<!-- 4061739 -->
 U kunt specifieke groepen gebruikers bereiken om te vereisen dat hun macOS-apparaten worden beheerd door Jamf. Met dit doel kunt u de integratie van Jamf-naleving Toep assen op een subset van macOS-apparaten, terwijl andere apparaten door intune worden beheerd. Met doel items kunt u ook de apparaten van gebruikers geleidelijk van het ene Mobile Device Management (MDM)-systeem naar de andere migreren.
 
 <!-- ***********************************************-->
 ## <a name="intune-apps"></a>Intune-apps
 
-### <a name="improved-macos-enrollment-experience-in-company-portal----5074349----"></a>Verbeterde macOS-inschrijvings ervaring in Bedrijfsportal <!-- 5074349  -->
+### <a name="improved-macos-enrollment-experience-in-company-portal---5074349----"></a>Verbeterde macOS-inschrijvings ervaring in Bedrijfsportal<!-- 5074349  -->
 De Bedrijfsportal voor de registratie van macOS heeft een eenvoudig inschrijvings proces dat nauw keuriger wordt afgestemd op de Bedrijfsportal voor iOS-registratie. Gebruikers van het apparaat zien:  
 
 * Een gestroomlijnde gebruikers interface.  
@@ -179,27 +210,24 @@ De Bedrijfsportal voor de registratie van macOS heeft een eenvoudig inschrijving
 * Duidelijkere instructies over het inschrijven van hun apparaten.  
 * Verbeterde opties voor probleem oplossing.  
 
-### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857----"></a>Verbeterd controlelijst ontwerp in Bedrijfsportal app voor Android<!-- 5550857  -->
-De installatie controlelijst in de Bedrijfsportal-app voor Android wordt bijgewerkt met een licht gewicht ontwerp en nieuwe pictogrammen. De wijzigingen worden uitgelijnd met de recente updates die zijn aangebracht in de Bedrijfsportal-app voor iOS.
-
 <!-- ***********************************************-->
 ## <a name="monitoring-and-troubleshooting"></a>Bewaking en probleem oplossing
 
-### <a name="updated-support-experience-------5012398------"></a>Bijgewerkte ondersteunings ervaring   <!--  5012398    -->
-Als onderdeel van de voortdurende verbeteringen wordt de ondersteunings ervaring in de console voor intune bijgewerkt.  We verbeteren de zoek opdracht in de console en feedback voor veelvoorkomende problemen en stroom lijnen de werk stroom om contact op te nemen met de ondersteuning.     
+### <a name="centralized-audit-logs--5603185-5697164--"></a>Gecentraliseerde audit logboeken<!--5603185, 5697164-->
+In een nieuwe gecentraliseerde controle logboek ervaring worden audit logboeken voor alle categorieën verzameld op één pagina. You'l kunt de logboeken filteren om de gegevens op te halen die u zoekt. Als u de audit logboeken wilt bekijken, gaat u naar **Tenant beheer** > **audit logboeken**. Zie [aanstaande wijziging in audit Logboeken in intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Upcoming-change-to-Audit-logs-in-Intune/ba-p/1015858)voor meer informatie.
 
 <!-- ***********************************************-->
 ## <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
 
-### <a name="duplicate-custom-or-built-in-roles----1081938---"></a>Dubbele aangepaste of ingebouwde rollen <!-- 1081938 -->
+### <a name="duplicate-custom-or-built-in-roles---1081938---"></a>Dubbele aangepaste of ingebouwde rollen<!-- 1081938 -->
 U kunt ingebouwde en aangepaste rollen kopiëren. Als u dit wilt doen, gaat u naar **intune** - > **rollen** > **alle rollen** > kies een rol in de lijst > **dupliceren**. Zorg ervoor dat u een nieuwe naam invoert die uniek is.
 
 <!-- ***********************************************-->
 
 ## <a name="security"></a>Beveiliging
 
-### <a name="bitlocker-key-rotation--------2564951--------"></a>BitLocker-sleutel rotatie     <!-- 2564951      -->
-U kunt intune gebruiken voor het roteren van de BitLocker-herstel sleutels voor beheerde apparaten waarop Windows versie 1909 of hoger wordt uitgevoerd. 
+### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529-idready---"></a>PKCS-certificaat profielen gebruiken om apparaten in te richten met certificaten<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529 IDready -->
+U kunt een PKCS-certificaat profiel gebruiken voor het uitgeven van certificaten aan apparaten, die worden uitgebreid op basis van de huidige ondersteuning voor gebruikers certificaten. Certificaten op basis van apparaten worden ondersteund door de Android-, iOS-en Windows-platforms en kunnen worden gebruikt voor Wi-Fi-en VPN-profielen.
 
 <!-- ***********************************************-->
 ## <a name="notices"></a>Mededelingen
@@ -208,3 +236,5 @@ U kunt intune gebruiken voor het roteren van de BitLocker-herstel sleutels voor 
 
 ## <a name="see-also"></a>Zie tevens
 Voor meer informatie over recente ontwikkelingen raadpleegt u [Wat is er nieuw in Microsoft Intune?](whats-new.md).
+
+
