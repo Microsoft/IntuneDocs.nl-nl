@@ -7,14 +7,23 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: b59419be9f381a1c646a7778b73ed172526f6ef6
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: fa2b1c5c9d267b9f860da2268d03c928ebf7693b
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188413"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74309801"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune.
+
+### <a name="end-support-for-windows-phone-81--3544909--"></a>Ondersteuning voor Windows Phone 8.1 beëindigd<!--3544909-->
+In juli 2017 is de reguliere ondersteuning van Microsoft voor Windows Phone 8.1 beëindigd en in juni 2019 de uitgebreide ondersteuning. De Bedrijfsportal-app voor Windows Phone 8.1 bevindt zich sinds oktober 2017 in de continuïteitsmodus. Microsoft Intune beëindigt nu op 20 februari 2020 de ondersteuning voor Windows Phone 8.1.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Na 20 februari 2020 ontvangen deze apparaten geen beveiligingsupdates meer en kunt u geen nieuwe apparaten meer inschrijven. Bestaande Windows Phone 8.1-apparaten blijven ingeschreven (beleid, apps, rapportage). Na de genoemde datum wordt probleemoplossing voor bestaande inschrijvingen echter niet meer ondersteund, aangezien veel onderdelen, zoals certificaten van derden, de ondersteuning voor het platform al eerder hebben beëindigd. Intune beëindigt het testen van de compatibiliteit met Intune en Windows Phone 8.1.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+Controleer uw Intune-rapporten om na te gaan voor welke apparaten of gebruikers dit gevolgen kan hebben. Ga naar Apparaten > Alle apparaten en filter op besturingssysteem. U kunt extra kolommen toevoegen, zodat u eenvoudiger kunt vaststellen wie in uw organisatie apparaten met Windows Phone 8.1 gebruikt. Vraag uw eindgebruikers om hun apparaten te upgraden naar een ondersteunde besturingssysteemversie.
 
 ### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Uw beveiligingsbeleid voor de Outlook-app bijwerken voor Intune<!--2576686-->
 U moet mogelijk actie ondernemen als u MC195618 hebt ontvangen in het berichtencentrum. Zoals gedeeld in Microsoft 365-roadmapfunctie-id's: 56325 en 56326, gaan Intune en Outlook voor iOS en Android ondersteuning voor het beperken van gevoelige gegevens in e-mailmeldingen en agendaherinneringen implementeren. Als gevolg van deze verbeteringen wordt in Outlook voor iOS en Android de ondersteuning voor de configuratiesleutels voor meerdere gegevensbeschermingsapps verwijderd die u momenteel nog kunt gebruiken voor het beheren van meldingen.
