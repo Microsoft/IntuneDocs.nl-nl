@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a72d3a16c5180b51fcc019d726a498e0d15ad1d3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 08193aa329a1bee4e66638de5c0d7518d15db2a4
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503405"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547910"
 ---
 # <a name="android-device-administrator-enrollment"></a>Registratie van Android-apparaatbeheerder
 
@@ -47,8 +47,6 @@ Voor meer informatie over de Android Enterprise-functies van Google, raadpleegt 
 
 
 ## <a name="set-up-device-administrator-enrollment"></a>Registratie van apparaatbeheerder instellen
-
-Intune staat standaard registratie toe van Android-apparaten met mogelijkheden voor apparaatbeheerder.
 
 1. U moet de MDM-instantie instellen op **Microsoft Intune** als voorbereiding op het beheer van mobiele apparaten. Zie [Set the MDM authority](../fundamentals/mdm-authority-set.md) (De MDM-instantie instellen) voor instructies. U stelt de instantie slechts één keer in, wanneer u Intune voor het eerst instelt voor het beheer van mobiele apparaten.
 2. Ga naar **Intune** > **Apparaatinschrijving** > **Android-inschrijving** > **Persoonlijke apparaten en apparaten in bedrijfseigendom met bevoegdheden voor het beheren van apparaten** > **Apparaatbeheer gebruiken om apparaten te beheren**.

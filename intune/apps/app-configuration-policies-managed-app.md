@@ -18,21 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a31a4777537db6f656dbf9eaf0b30a6e95412a8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6ddb9ec795b9cc8842cbc6c9d33897b5e0f45e88
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72499757"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547996"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 U kunt app-configuratiebeleidsregels gebruiken voor beheerde apps die de Intune App SDK ondersteunen, zelfs op apparaten die niet zijn ingeschreven. 
-
-> [!NOTE]
-> Apps moeten onder Intune-beleid voor app-beveiliging vallen om app-configuratiebeleid te kunnen ontvangen. Zie [Wat is beveiligingsbeleid voor apps?](app-protection-policy.md) voor meer informatie over het maken van Intune-app-beveiligingsbeleid.
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Kies de workload **Client-apps**.

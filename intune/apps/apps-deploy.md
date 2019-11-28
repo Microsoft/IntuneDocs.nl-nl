@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99e89db1bbef3d08cd6709b2600c4a684ac618f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498609"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540753"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Apps toewijzen aan groepen met Microsoft Intune
 
@@ -94,35 +94,23 @@ De informatie in de volgende tabel kan u helpen de resulterende intentie te begr
 | Intent van groep 1 | Intent van groep 2 | Resulterende intent |
 |-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Gebruiker vereist|Gebruiker beschikbaar|Vereist en beschikbaar|
-|Gebruiker vereist|Gebruiker niet beschikbaar|Vereist|
 |Gebruiker vereist|Gebruiker verwijderen|Vereist|
-|Gebruiker beschikbaar|Gebruiker niet beschikbaar|Niet beschikbaar|
 |Gebruiker beschikbaar|Gebruiker verwijderen|Verwijderen|
-|Gebruiker niet beschikbaar|Gebruiker verwijderen|Verwijderen
 |Gebruiker vereist|Apparaat vereist|Beide bestaan, Intune verwerkt Vereist
 |Gebruiker vereist|Apparaat verwijderen|Beide bestaan, Intune zet Vereist om
 |Gebruiker beschikbaar|Apparaat vereist|Beide bestaan, Intune zet Vereist om (Vereist en Beschikbaar)
 |Gebruiker beschikbaar|Apparaat verwijderen|Beide bestaan, Intune zet Beschikbaar om.<br><br>App wordt weergegeven in de bedrijfsportal.<br><br>Als de app al is geïnstalleerd (als een vereiste app bij de vorige intentie), wordt de app verwijderd.<br><br>Als de gebruiker **Installeren vanuit de bedrijfsportal** selecteert, wordt de app geïnstalleerd en wordt de intentie om te verwijderen niet gehonoreerd.|
-|Gebruiker niet beschikbaar|Apparaat vereist|Vereist|
-|Gebruiker niet beschikbaar|Apparaat verwijderen|Verwijderen|
 |Gebruiker verwijderen|Apparaat vereist|Beide bestaan, Intune zet Vereist om|
 |Gebruiker verwijderen|Apparaat verwijderen|Beide bestaan, Intune zet Verwijderen om|
 |Apparaat vereist|Apparaat verwijderen|Vereist|
 |Gebruiker vereist en beschikbaar|Gebruiker beschikbaar|Vereist en beschikbaar|
 |Gebruiker vereist en beschikbaar|Gebruiker verwijderen|Vereist en beschikbaar|
-|Gebruiker vereist en beschikbaar|Gebruiker niet beschikbaar|Vereist en beschikbaar|
 |Gebruiker vereist en beschikbaar|Apparaat vereist|Beide bestaan, Vereist en Beschikbaar
-|Gebruiker vereist en beschikbaar|Apparaat niet beschikbaar|Vereist en beschikbaar|
 |Gebruiker vereist en beschikbaar|Apparaat verwijderen|Beide bestaan, Intune zet Vereist om (Vereist en Beschikbaar)
-|Gebruiker niet beschikbaar|Apparaat niet beschikbaar|Niet beschikbaar|
-|Gebruiker beschikbaar|Apparaat niet beschikbaar|Beschikbaar|
-|Gebruiker vereist|Apparaat niet beschikbaar|Vereist|
 |Gebruiker beschikbaar zonder registratie|Gebruiker vereist en beschikbaar|Vereist en beschikbaar
 |Gebruiker beschikbaar zonder registratie|Gebruiker vereist|Vereist
-|Gebruiker beschikbaar zonder registratie|Gebruiker niet beschikbaar|Niet beschikbaar
 |Gebruiker beschikbaar zonder registratie|Gebruiker beschikbaar|Beschikbaar|
 |Gebruiker beschikbaar zonder registratie|Apparaat vereist|Vereist en beschikbaar zonder registratie|
-|Gebruiker beschikbaar zonder registratie|Apparaat niet beschikbaar|Beschikbaar zonder registratie|
 |Gebruiker beschikbaar zonder registratie|Apparaat verwijderen|Verwijderen en beschikbaar zonder registratie<br><br>Als de gebruiker de app niet heeft geïnstalleerd vanuit de bedrijfsportal, wordt de intentie om te verwijderen gehonoreerd.<br><br>Als de gebruiker de app vanuit de bedrijfsportal installeert, krijgt de installatie prioriteit boven het verwijderen van de app.|
 
 > [!NOTE]
