@@ -31,9 +31,9 @@ Met de app-beveiliging die u inschakelt, worden de volgende acties afgedwongen:
 - Werkbestanden versleutelen.
 - Een pincode vereisen voor toegang tot werkbestanden.
 - Vereisen dat de pincode opnieuw wordt ingesteld na vijf mislukte pogingen.
-- Voorkomen dat er een back-up wordt gemaakt van werkbestanden in back-upservices van iTunes-, iCloud of Android.  
+- Voorkomen dat er een back-up wordt gemaakt van werkbestanden in back-upservices van iTunes, iCloud of Android.  
 - Vereisen dat werkbestanden alleen worden opgeslagen in OneDrive of SharePoint.
-- Voorkomen dat beveiligde apps werkbestanden laden op gekraakte of geroote apparaten.
+- Voorkomen dat beveiligde apps werkbestanden laden op apparaten met jailbreak of geroote apparaten.
 - Toegang tot werkbestanden blokkeren als het apparaat gedurende 720 minuten offline is.
 - Werkbestanden verwijderen als het apparaat gedurende 90 dagen offline is. 
 
@@ -55,7 +55,7 @@ U kunt de ingebouwde e-mailapps voor iOS en Android blokkeren wanneer u alleen t
 
 In dit voorbeeld heeft de beheerder beveiligingsbeleid voor de Outlook-app toegepast, gevolgd door een regel voor voorwaardelijke toegang waarmee de Outlook-app wordt toegevoegd aan een lijst met goedgekeurde apps die kunnen worden gebruikt bij het openen van bedrijfs-e-mail.
 
-![Processtroom voorwaardelijke toegang voor Outlook-app](./media/guided-scenarios-office-mobile/guided-scenarios-office-mobile-02.png)
+![Processtroom voor voorwaardelijke toegang voor Outlook-app](./media/guided-scenarios-office-mobile/guided-scenarios-office-mobile-02.png)
 
 ## <a name="prerequisites"></a>Vereisten
 

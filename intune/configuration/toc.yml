@@ -14,7 +14,11 @@
     - name: Een profiel maken
       href: device-profile-create.md
     - name: Beheersjablonen in Windows
-      href: administrative-templates-windows.md
+      items:
+        - name: Beheersjablonen in Windows
+          href: administrative-templates-windows.md
+        - name: Office bijwerken met behulp van beheersjablonen
+          href: administrative-templates-update-office.md
     - name: Apparaatfuncties in iOS en macOS
       href: device-features-configure.md
     - name: Apparaatinstellingen en functies beperken
@@ -47,6 +51,8 @@
       items:
         - name: Wi-Fi met een vooraf gedeelde sleutel
           href: wi-fi-profile-shared-key.md
+        - name: Problemen met Wi-Fi oplossen
+          href: troubleshoot-wi-fi-profiles.md
     - name: Extensies in macOS
       href: kernel-extensions-overview-macos.md
     - name: Education - Toets maken-app
