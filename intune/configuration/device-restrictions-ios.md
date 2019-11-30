@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 11/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390861"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465648"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Met instellingen voor iOS- en iPadOS-apparaten kunt u functies toestaan of beperken met behulp van Intune
 
@@ -244,6 +244,10 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 ### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvings typen
 
 - **Zakelijke documenten weergeven in niet-beheerde apps**: **Blokkeren** voorkomt het weergeven van zakelijke documenten in niet-beheerde apps. **Niet geconfigureerd** (standaard): staat gebruikers toe om zakelijke documenten weer te geven in elke willekeurige app. Voorbeeld: u wilt voorkomen dat gebruikers bestanden uit de OneDrive-app opslaan in Dropbox. Configureer deze instelling als **Blokkeren**. Nadat het apparaat het beleid heeft ontvangen (bijvoorbeeld nadat het opnieuw is opgestart), kunnen er geen bestanden meer worden opgeslagen.
+
+
+  > [!NOTE]
+  > Als deze instelling wordt geblokkeerd, worden toetsen borden van derden die zijn geïnstalleerd vanuit de App Store, ook geblokkeerd.
 
   - **Onbeheerde apps toestaan om te lezen uit beheerde accounts voor contact personen**: wanneer deze zijn ingesteld op **toestaan**, kunnen niet-beheerde apps, zoals de ingebouwde app voor IOS-contact personen, de contact gegevens van beheerde apps lezen en openen, met inbegrip van de mobiele app van Outlook. **Niet geconfigureerd** (standaard): het lezen en het verwijderen van dubbele contactpersonen uit de ingebouwde app Contacten op het apparaat wordt voorkomen.  
   

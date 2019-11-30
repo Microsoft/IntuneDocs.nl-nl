@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796439581ca0ae91e788a91ab0bc2ef8f6019626
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199345"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540739"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>In ontwikkeling voor Microsoft Intune - december 2019
 
@@ -181,34 +181,12 @@ Van toepassing op:
 <!--## Device enrollment-->
 
 <!-- ***********************************************-->
-## <a name="device-management"></a>Apparaatbeheer
+<!--## Device management-->
 
-
-
-### <a name="edit-device-name-value-for-autopilot-devices---2640074----"></a>Waarde voor apparaatnaam bewerken voor auto pilot-apparaten<!-- 2640074  -->
-U kunt de waarde voor de apparaatnaam voor Azure AD gekoppelde auto pilot-apparaten bewerken. Als u dit wilt doen, gaat u naar **intune** > **apparaatregistratie** > **Windows-inschrijving** > **Windows auto pilot** > - **apparaten** > kiest u het apparaat > de waarde **apparaatnaam** in het rechterdeel venster te wijzigen > **Opslaan**.
-
-### <a name="edit-the-group-tag-value-for-autopilot-devices---4816775---"></a>De groeps label waarde voor auto pilot-apparaten bewerken<!-- 4816775 -->
-U kunt de **groeps label** waarde voor auto pilot-apparaten bewerken:
-
-1. Selecteer **intune** > **apparaatregistratie** > **Windows-inschrijving** > **Windows auto pilot** > - **apparaten**.
-1. Kies het apparaat.
-1. Wijzig in het deel venster aan de rechter kant de waarde **groeps label** .
-1. Selecteer **Opslaan**.
-
-### <a name="target-macos-user-groups-to-require-jamf-management---4061739---"></a>MacOS-gebruikers groepen die Jamf-beheer vereisen<!-- 4061739 -->
-U kunt specifieke groepen gebruikers bereiken om te vereisen dat hun macOS-apparaten worden beheerd door Jamf. Met dit doel kunt u de integratie van Jamf-naleving Toep assen op een subset van macOS-apparaten, terwijl andere apparaten door intune worden beheerd. Met doel items kunt u ook de apparaten van gebruikers geleidelijk van het ene Mobile Device Management (MDM)-systeem naar de andere migreren.
 
 <!-- ***********************************************-->
-## <a name="intune-apps"></a>Intune-apps
-
-### <a name="improved-macos-enrollment-experience-in-company-portal---5074349----"></a>Verbeterde macOS-inschrijvings ervaring in Bedrijfsportal<!-- 5074349  -->
-De Bedrijfsportal voor de registratie van macOS heeft een eenvoudig inschrijvings proces dat nauw keuriger wordt afgestemd op de Bedrijfsportal voor iOS-registratie. Gebruikers van het apparaat zien:  
-
-* Een gestroomlijnde gebruikers interface.  
-* Een verbeterde controle lijst voor de inschrijving.  
-* Duidelijkere instructies over het inschrijven van hun apparaten.  
-* Verbeterde opties voor probleem oplossing.  
+<!--## Intune apps-->
+ 
 
 <!-- ***********************************************-->
 ## <a name="monitoring-and-troubleshooting"></a>Bewaking en probleem oplossing
@@ -217,10 +195,8 @@ De Bedrijfsportal voor de registratie van macOS heeft een eenvoudig inschrijving
 In een nieuwe gecentraliseerde controle logboek ervaring worden audit logboeken voor alle categorieën verzameld op één pagina. You'l kunt de logboeken filteren om de gegevens op te halen die u zoekt. Als u de audit logboeken wilt bekijken, gaat u naar **Tenant beheer** > **audit logboeken**. Zie [aanstaande wijziging in audit Logboeken in intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Upcoming-change-to-Audit-logs-in-Intune/ba-p/1015858)voor meer informatie.
 
 <!-- ***********************************************-->
-## <a name="role-based-access-control"></a>Op rollen gebaseerd toegangsbeheer
+<!--## Role-based access control-->
 
-### <a name="duplicate-custom-or-built-in-roles---1081938---"></a>Dubbele aangepaste of ingebouwde rollen<!-- 1081938 -->
-U kunt ingebouwde en aangepaste rollen kopiëren. Als u dit wilt doen, gaat u naar **intune** - > **rollen** > **alle rollen** > kies een rol in de lijst > **dupliceren**. Zorg ervoor dat u een nieuwe naam invoert die uniek is.
 
 <!-- ***********************************************-->
 
