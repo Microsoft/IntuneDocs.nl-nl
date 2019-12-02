@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1067c8ef23add50c921217b9e4b115346be2951
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4783d24e3fc25583a61f88c2e7375d4eed673186
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497040"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563491"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Problemen met app-installatie oplossen
 
@@ -32,8 +32,8 @@ Op apparaten die met Microsoft Intune MDM worden beheerd, mislukken app-installa
 
 Intune biedt details van app-probleemoplossing op basis van de geïnstalleerde apps op een specifiek apparaat van een gebruiker.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Kies in het deelvenster **Intune** de optie **Problemen oplossen**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecteer **probleem oplossing + ondersteuning**.
 4. Klik op **Gebruiker selecteren** om een gebruiker te selecteren waarvoor er problemen opgelost moeten worden. Het deelvenster **Gebruikers selecteren** wordt weergegeven.
 5. Selecteer de gebruiker door een naam of e-mailadres te typen. Klik onder aan het deelvenster op **Selecteren**. De informatie voor het oplossen van problemen voor de gebruiker wordt weergegeven in het deelvenster **Probleemoplossing**. 
 6. Selecteer in de lijst **Apparaten** het apparaat waarbij u problemen wilt oplossen.
@@ -57,12 +57,12 @@ U moet rekening houden met de volgende acties als u problemen hebt met het insta
 - Als de app niet wordt weer gegeven in de Bedrijfsportal, moet u ervoor zorgen dat de app is geïmplementeerd met **beschik bare** intentie en dat de gebruiker toegang heeft tot de bedrijfsportal met het apparaattype dat wordt ondersteund door de app.
 - Voor Windows BYOD-apparaten moet de gebruiker een werk account toevoegen aan het apparaat.
 - Controleren of de gebruiker de limiet voor AAD-apparaten overschrijdt:
-  1. Navigeer naar [Azure Active Directory Apparaatinstellingen](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId).
+  1. Navigeer naar [Azure Active Directory Apparaatinstellingen](https://portal.azure.com/#pane/Microsoft_AAD_IAM/DevicesMenupane/DeviceSettings/menuId).
   2. Noteer de waarde die is ingesteld voor **maximum aantal apparaten per gebruiker**.
-  3. Navigeer naar [Azure Active Directory gebruikers](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
+  3. Navigeer naar [Azure Active Directory gebruikers](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers).
   4. Selecteer de betrokken gebruiker en klik op **apparaten**.
   5. Als de gebruiker de ingestelde limiet overschrijdt, verwijdert u alle verouderde records die niet meer nodig zijn.
-- Voor iOS DEP-apparaten zorgt u ervoor dat de gebruiker wordt vermeld als **geregistreerd door de gebruiker** in de Blade overzicht van intune-apparaten. Als er N.V.T. wordt weer gegeven, implementeert u een configuratie beleid voor de Intune-bedrijfsportal. Zie [Configure the bedrijfsportal app](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)(Engelstalig) voor meer informatie.
+- Voor iOS DEP-apparaten zorgt u ervoor dat de gebruiker wordt vermeld als **geregistreerd door de gebruiker** in het deel venster Overzicht van intune-apparaten. Als er N.V.T. wordt weer gegeven, implementeert u een configuratie beleid voor de Intune-bedrijfsportal. Zie [Configure the bedrijfsportal app](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)(Engelstalig) voor meer informatie.
 
 ## <a name="win32-app-installation-troubleshooting"></a>Problemen met de installatie van Win32-app oplossen
 
@@ -75,7 +75,7 @@ Selecteer de Win32-app die is geïmplementeerd met behulp van de Intune-beheerex
 
 Volg eerst de stappen in de sectie [Details van de app-probleemoplossing](troubleshoot-app-install.md#app-troubleshooting-details) om de installatielogboeken van de Win32-app te verzamelen. Ga vervolgens verder met de volgende stappen:
 
-1. Klik op de optie **Logboeken verzamelen** op de blade **Installatiegegevens**.
+1. Klik op de optie **Logboeken verzamelen** in het deelvenster **Installatiegegevens**.
 
     <image alt="Win32 app installation details - Collect log option" src="./media/troubleshoot-app-install/troubleshoot-app-install-04.png" width="500" />
 
