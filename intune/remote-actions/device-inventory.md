@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713208"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564382"
 ---
 # <a name="see-device-details-in-intune"></a>Apparaatdetails bekijken in Intune
 
@@ -84,7 +84,7 @@ Afhankelijk van de provider die door de apparaten wordt gebruikt, worden mogelij
 |ICCID|De Integrated Circuit Card Identifier, het unieke identificatienummer van een SIM-kaart.|Windows, iOS, Android|
 |Inschrijvingsdatum|De datum en tijd waarop het apparaat is ingeschreven bij Intune.|Windows, iOS, Android|
 |Laatste contact|De datum en tijd waarop het apparaat het laatst verbinding heeft gemaakt met Intune.|Windows, iOS, Android|
-|Code voor het overslaan van het activeringsslot|De code die kan worden gebruikt om het activeringsslot over te slaan.|Windows, iOS, Android|
+|Code voor het overslaan van het activeringsslot|De code die kan worden gebruikt om het activeringsslot over te slaan.|iOS|
 |Azure AD-geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Azure Active Directory.|Windows, iOS, Android|
 |Intune geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Intune|Windows, iOS, Android|
 |Naleving|De nalevingsstatus van het apparaat.|Windows, iOS, Android|
