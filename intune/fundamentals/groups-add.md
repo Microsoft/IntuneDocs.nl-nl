@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/13/2018
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,52 +18,92 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0702eebdd3899c6da527af0078e5e7d47cf95194
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510231"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261580"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Groepen toevoegen om gebruikers en apparaten in te delen
-Intune maakt gebruik van Azure AD-groepen (Active Directory) voor het beheren van apparaten en gebruikers. Als beheerder van Intune kunt u groepen instellen die aansluiten bij de behoeften van uw organisatie. Maak groepen om gebruikers of apparaten in te delen op geografische locatie, afdeling of hardwarekenmerken. Gebruik groepen voor het beheren van taken op schaal. U kunt zo bijvoorbeeld beleidsregels instellen voor een groot aantal gebruikers tegelijk of apps implementeren op een reeks apparaten.
+
+Intune maakt gebruik van Azure AD-groepen (Azure Active Directory) voor het beheren van apparaten en gebruikers. Als beheerder van Intune kunt u groepen instellen die aansluiten bij de behoeften van uw organisatie. Maak groepen om gebruikers of apparaten in te delen op geografische locatie, afdeling of hardwarekenmerken. Gebruik groepen voor het beheren van taken op schaal. U kunt zo bijvoorbeeld beleidsregels instellen voor een groot aantal gebruikers tegelijk of apps implementeren op een reeks apparaten.
 
 U kunt de volgende typen groepen toevoegen:
-- **Toegewezen groepen**: voeg handmatig gebruikers of apparaten toe aan een statische groep
-- **Dynamische groepen**: (met Azure Active Directory Premium) hiermee kunt u dynamisch gebruikers- of apparaatgroepen maken aan de hand van eenvoudige of geavanceerde regels
+
+- **Toegewezen groepen**: voeg handmatig gebruikers of apparaten toe aan een statische groep. 
+- **Dynamische groepen** (vereist Azure AD Premium): voeg automatisch gebruikers of apparaten toe aan gebruikersgroepen of apparaatgroepen op basis van een expressie die u maakt.
+
+  Wanneer een gebruiker bijvoorbeeld wordt toegevoegd met de titel van manager, wordt die gebruiker automatisch toegevoegd aan een gebruikersgroep **Alle managers**. Of, wanneer een apparaat het besturingssysteemtype iOS-apparaat heeft, wordt het apparaat automatisch toegevoegd aan een apparaatgroep **Alle iOS-apparaten**.
 
 ## <a name="add-a-new-group"></a>Een nieuwe groep toevoegen
 
 Volg de onderstaande stappen om een nieuwe groep te maken.
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. In het deelvenster **Intune** kiest u **Groepen**. Kies vervolgens **Nieuwe groep** in het deelvenster **Alle groepen**.
-   ![Schermafbeelding van de Azure-portal met de optie Nieuwe groep geselecteerd](./media/groups-add/groups-add-new.png)
-4. Kies voor **Groepstype** een van de volgende opties:
-    - **Beveiliging**: Beveiligingsgroepen zijn een goede bron voor het vullen van gebruikersgroepen. Aangezien in beveiligingsgroepen is gedefinieerd wie toegang heeft tot bronnen, kunnen beveiligingsgroepen goed worden gebruikt als basis voor Intune-gebruikersgroepen. U kunt beveiligingsgroepen die vanuit Active Directory worden gesynchroniseerd met Azure Active Directory of die u rechtstreeks in Azure Active Directory maakt via het Microsoft 365-beheercentrum of Azure Portal, gebruiken wanneer u gebruikersgroepen in Intune maakt.
-    - **Office 365**
 
-5. Voer een **naam** en **beschrijving** in voor de nieuwe groep. Deze eigenschappen worden alleen weergegeven in de beheerportal en zijn niet zichtbaar voor gebruikers.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Groepen** > **Nieuwe groep**:
 
-6. Kies een waarde voor **Type lidmaatschap**:
-   - **Toegewezen**: om een groep te maken met handmatig toegewezen leden. Lees hier meer over [toegewezen groepen van Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
-   - **Dynamische gebruiker**: om een gebruikersgroep te maken op basis van een **dynamische query**.
-   - **Dynamisch apparaat**: om een apparaatgroep te maken op basis van een **dynamische query**.
+   ![Schermopname van de Azure-portal met de optie Nieuwe groep geselecteerd](./media/groups-add/groups-add-new.png)
 
-   ![Schermafbeelding van Intune-groepseigenschappen](./media/groups-add/groups-add-properties.png)
+3. Kies bij **Groepstype** een van de volgende opties:
 
-   In Azure AD kunt u dynamische groepen maken op basis van regels die het lidmaatschap definiëren. Lees hier meer over het [maken van dynamische groepen op basis van kenmerken](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
+    - **Beveiliging**: met beveiligingsgroepen kunt u bepalen wie toegang heeft tot resources. Deze optie wordt aanbevolen voor uw groepen in Intune. U kunt bijvoorbeeld groepen maken voor gebruikers, zoals **Alle gebruikers in Zaandam** of **Alle vrouwen bij Contoso**. U kunt ook groepen maken voor apparaten, zoals **Alle iOS-apparaten** of **Alle apparaten van studenten met Windows 10**.
 
-7. Selecteer **Office-functies inschakelen** om leden van de gebruikersgroep toegang te geven tot gedeelde Office 365-apps. Meer informatie over [Office 365 Groepen](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
-8. Kies **Maken** om de nieuwe groep toe te voegen.
+        > [!TIP]
+        > De gebruikers en groepen die zijn gemaakt, kunnen ook worden weergegeven in het [Microsoft 365-beheercentrum](https://admin.microsoft.com), het Azure Active Directory-beheercentrum en in [Microsoft Intune in de Azure-portal](https://go.microsoft.com/fwlink/?linkid=2090973). In de tenant van uw organisatie kunt u in al deze gebieden groepen maken en beheren.
+        >
+        > Als uw primaire rol apparaatbeheer is, raden we u aan het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) te gebruiken.
+
+    - **Office 365**: deze groepen zijn ontworpen om de toegang tot Office 365-resources te beheren en te delen. U kunt bijvoorbeeld een Office 365-groep maken om een Postvak IN of agenda in Outlook-te delen. Zie [Over Office 365-groepen](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) voor meer informatie.
+
+4. Voer een **naam** en **beschrijving** in voor de nieuwe groep. Wees specifiek en voeg informatie toe, zodat anderen weten waar de groep voor dient.
+
+    Geef bijvoorbeeld **Alle apparaten van studenten met Windows 10** in als groepsnaam en **Alle apparaten met Windows 10 van scholieren op de middelbare scholen in Zaandam in de klassen 4-6** in als groepsbeschrijving.
+
+5. Voer het **lidmaatschapstype** in. Uw opties zijn:
+
+    - **Toegewezen**: beheerders wijzen gebruikers of apparaten handmatig toe aan deze groep en verwijderen handmatig gebruikers of apparaten.
+    - **Dynamische gebruiker**: beheerders maken lidmaatschapsregels om leden automatisch toe te voegen en te verwijderen.
+    - **Dynamisch apparaat**: beheerders maken dynamische groepsregels om apparaten automatisch toe te voegen en te verwijderen.
+
+        ![Schermafbeelding van Intune-groepseigenschappen](./media/groups-add/groups-add-properties.png)
+
+    Voor meer informatie over deze lidmaatschapstypen en het maken van dynamische expressies raadpleegt u:
+
+    - [Een basisgroep maken en leden toevoegen met Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+    - [Dynamische lidmaatschapsregels voor groepen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)
+
+    > [!NOTE]
+    > Wanneer u in dit beheercentrum gebruikers of groepen maakt, krijgt u mogelijk niet de **Azure Active Directory**-huisstijl te zien. Maar dat is wel wat er wordt gebruikt.
+
+6. Kies **Maken** om de nieuwe groep toe te voegen. U groep wordt in de lijst weergegeven.
+
+> [!TIP]
+> Overweeg ook om een van de andere dynamische gebruikers- en apparaatgroepen te gebruiken die u kunt maken, zoals:
+>
+> - Alle scholieren op de middelbare scholen in Zaandam
+> - Alle Android Enterprise-apparaten
+> - Alle iOS 11- en oudere apparaten
+> - Marketing
+> - Human Resources
+> - Alle medewerkers in Zaandam
+> - Alle medewerkers in NH
 
 ## <a name="groups-and-policies"></a>Groepen en beleidsregels
 
-Denk bij het maken van groepen goed na over hoe u [beleidsregels](../protect/device-compliance-get-started.md) toepast. U kunt bijvoorbeeld beleidsregels gebruiken die specifiek zijn voor besturingssystemen van apparaten en beleidsregels die specifiek zijn voor verschillende rollen in uw organisatie of voor organisatie-eenheden die u al hebt opgegeven in Active Directory. Het kan nuttig zijn om aparte apparaatgroepen voor iOS, Android en Windows en gebruikersgroepen voor elke organisatierol te hebben.
+Toegang tot de resources van uw organisatie wordt beheerd door gebruikers en groepen die u maakt.
 
-U wilt waarschijnlijk ook een standaardbeleid maken dat van toepassing is op alle groepen en apparaten, om de basisvereisten voor naleving binnen uw organisatie vast te leggen. Vervolgens kunt u een specifieker beleid maken voor de meest uiteenlopende categorieën gebruikers en apparaten. U kunt bijvoorbeeld een e-mailbeleid maken voor elk apparaatbesturingssysteem.
+Als u groepen maakt, kunt u overwegen om [nalevingsbeleid](../protect/device-compliance-get-started.md) en [configuratieprofielen](../configuration/device-profiles.md) te gebruiken. U kunt bijvoorbeeld het volgende hebben:
 
+- Beleidsregels die specifiek zijn voor een besturingssysteem van een apparaat.
+- Beleidsregels die specifiek zijn voor verschillende rollen in uw organisatie.
+- Beleidsregels die specifiek zijn voor organisatie-eenheden die u hebt gedefinieerd in Active Directory.
 
+U kunt een standaardbeleid maken dat van toepassing is op alle groepen en apparaten, als u de basisvereisten voor naleving binnen uw organisatie wilt maken. Maak vervolgens een specifieker beleid voor de meest uiteenlopende categorieën gebruikers en apparaten. U kunt bijvoorbeeld een e-mailbeleid maken voor elk apparaatbesturingssysteem.
+
+Zie [Beleid toewijzen aan gebruikersgroepen of apparaatgroepen](../configuration/device-profile-assign.md#user-groups-vs-device-groups) en [profielaanbevelingen](../configuration/device-profile-create.md#recommendations) voor aanbevelingen en richtlijnen voor configuratieprofielen.
 
 ## <a name="see-also"></a>Zie tevens
-- [Toegang tot resources beheren met Azure Active Directory-groepen](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
-- [Klassieke Intune-groepen in Azure Portal](groups-get-started.md)
+
+- [Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune](role-based-access-control.md)
+- [Toegang tot resources beheren met Azure AD-groepen](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

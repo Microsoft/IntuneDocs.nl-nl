@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c6e519f4f5f31a11bd2e762b9e33357825d783d
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: e7242b661668f994208aa36a8f9fc5d350623ccd
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984155"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390380"
 ---
 # <a name="ios-app-protection-policy-settings"></a>Beveiligingsbeleidsinstellingen voor iOS-apps
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -46,6 +46,7 @@ Er zijn drie soorten beleidsinstellingen: *Gegevensverplaatsing*, *Toegangsverei
 | **Knippen, kopiëren en plakken tussen andere apps beperken** | Geef op wanneer knip-, kopieer- en plakbewerkingen voor deze app kunnen worden gebruikt. Kies uit: <ul><li>**Geblokkeerd**:  geen knip-, kopieer- en plakbewerkingen toestaan tussen deze app en andere apps.</li><li>**Door beleid beheerde apps**: alleen knip-, kopieer- en plakbewerkingen toestaan tussen deze app en andere door beleid beheerde apps.</li><li>**Door beleid beheerde apps met Plakken in**: knippen en kopiëren toestaan tussen deze app en andere door beleid beheerde apps. Gegevens uit alle apps mogen in deze app worden geplakt.</li><li>**Elke app**: geen beperkingen voor knip-, kopieer- en plakbewerkingen vanuit en naar deze app.</ul> | **Elke app**   |
 | <ul><ui>**De tekenlimiet voor knippen en kopiëren voor elke app** | Hiermee geeft u het aantal tekens op dat kan worden geknipt of gekopieerd van gegevens van de organisatie en de accounts.  Hiermee kunt u het opgegeven aantal tekens voor elke toepassing delen, ongeacht de instelling **Knippen, kopiëren en plakken met andere apps beperken**.<p>Standaardwaarde = 0<p>**Opmerking**: *Voor de app is Intune SDK versie 9.0.14 of hoger vereist.*  | **0**   |
 | **Meldingen van organisatiegegevens** | Geef op hoeveel organisatiegegevens worden gedeeld via besturingssysteemmeldingen voor organisatieaccounts. Deze beleidsinstelling is van invloed op het lokale apparaat en alle verbonden apparaten, zoals draagbare apparaten en slimme luidsprekers. Met apps kunnen extra besturingselementen worden geboden om het gedrag van meldingen aan te passen. Er kan ook voor worden gekozen om niet aan alle waarden te voldoen. Kies uit: <ul><li>**Blokkeren**:  Geen meldingen delen.</li><ul><li>Als dit niet wordt ondersteund door de toepassing, worden meldingen toegestaan.</li></ul><li>**Organisatiegegevens blokkeren**: Deel bijvoorbeeld geen organisatiegegevens in meldingen.</li><UL><li>'U hebt nieuwe e-mail'; 'U hebt een vergadering'</li><li>Als dit niet wordt ondersteund door de toepassing, worden meldingen geblokkeerd.</li></ul><li>**Toestaan**: Hiermee worden organisatiegegevens in de meldingen gedeeld</li><li>**Elke app**: geen beperkingen voor knip-, kopieer- en plakbewerkingen vanuit en naar deze app.</ul> <p>**Opmerking**: *Deze instelling vereist ondersteuning van apps. Op dit moment wordt in Outlook voor iOS, versie 4.16.0 of hoger, deze instelling ondersteund. Deze wordt naar verwachting uitgebracht in de week van 16 december 2019.* | **Toestaan**   |
+| **Toetsenborden van derden** | Kies **Blokkeren** om het gebruik van toetsenborden van derden in beheerde toepassingen te voorkomen.<p>Wanneer deze instelling is ingeschakeld, ontvangt de gebruiker een eenmalige bericht waarin staat dat het gebruik van toetsenborden van derden is geblokkeerd. Dit bericht verschijnt tijdens de eerste keer dat een gebruiker interactie heeft met gegevens van de organisatie waarvoor het gebruik van een toetsenbord vereist is. Tijdens het gebruik van beheerde toepassingen is alleen het standaard iOS-toetsenbord beschikbaar, en alle andere opties zijn uitgeschakeld. Deze instelling is van invloed op zowel de organisatie-als op persoonlijke accounts van toepassingen met meerdere identiteiten. Deze instelling heeft geen invloed op het gebruik van toetsenborden van derden in niet-beheerde toepassingen.<p>**Opmerking:** Voor deze functie is het vereist dat de app gebruikmaakt van de Intune-SDK versie 12.0.16 of hoger. Voor apps met SDK-versies van 8.0.14 tot en met 12.0.15 geldt dat deze functie niet correct functioneert op apps met meerdere identiteiten. Voor meer informatie, zie [Bekend probleem: toetsenborden van derden worden in iOS niet geblokkeerd voor persoonlijke accounts](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Updated-Known-issue-Third-party-keyboards-are-not-blocked-in-iOS/ba-p/339486). | **Toestaan**  |
 
 ### <a name="encryption"></a>Versleuteling
 | Instelling | Gebruik | Standaardwaarde |

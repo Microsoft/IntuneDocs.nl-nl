@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8e319c68abd8965b84323bc3b7a5451dee42bc2
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: bc781ea72b54468b21fb70e60e334f1c8d8832ea
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709185"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547956"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Zelfstudie: Autopilot gebruiken om Windows-apparaten in Intune in te schrijven
 
@@ -60,9 +60,9 @@ De eerste stap bij het instellen van Windows Autopilot bestaat uit het toevoegen
 
 2. Sla het CSV-bestand op.
 
-3. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > **Importeren**.
+3. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), **Apparaten** > **Windows** > **Apparaten** (onder **Windows Autopilot Deployment-programma** > **Importeren**.
 
-    ![Schermafbeelding van Windows Autopilot-apparaten](./media/tutorial-use-autopilot-enroll-devices/autopilot-import-device.png)
+    ![Schermafbeelding van Windows Autopilot-apparaten](./media/enrollment-autopilot/autopilot-import-device.png)
 
 4. Onder **Windows Autopilot-apparaten toevoegen** bladert u naar het CSV-bestand dat u hebt opgeslagen.
 
@@ -70,7 +70,7 @@ De eerste stap bij het instellen van Windows Autopilot bestaat uit het toevoegen
 
 5. Kies **Importeren** om apparaatgegevens te importeren. Het importeren kan enkele minuten duren.
 
-4. Wanneer het importeren is voltooid, kiest u **Apparaatinschrijving** > **Windows-inschrijving** > **Windows Autopilot** > **Apparaten** > **Synchroniseren**. Er wordt een bericht weergegeven dat de synchronisatie wordt uitgevoerd. Het proces kan enige minuten duren, afhankelijk van hoeveel apparaten u synchroniseert.
+4. Nadat het importeren is voltooid, kiest u **Apparaten** > **Windows** > **Windows-inschrijving** > **Apparaten** (onder **Windows Autopilot Deployment-programma** > **Sync**. Er wordt een bericht weergegeven dat de synchronisatie wordt uitgevoerd. Het proces kan enige minuten duren, afhankelijk van hoeveel apparaten u synchroniseert.
 
 5. Vernieuw de weergave om de nieuwe apparaten te zien.
 
@@ -90,7 +90,7 @@ Vervolgens gaat u een apparaatgroep maken en de Autopilot-apparaten die u zojuis
 
 Nadat u een groep apparaten hebt gemaakt, moet u een implementatieprofiel maken zodat u de Autopilot-apparaten kunt configureren.
 
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Implementatieprofielen** > **Profiel maken**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaten** > **Windows** > **Windows-inschrijving** > **Implementatieprofielen** > **Profiel maken**.
 2. Geef op de pagina **Basisinformatie** de waarde *Autopilot-profiel* op voor **Naam**. Als **beschrijving** voert u *Testprofiel voor Autopilot-apparaten* in.
 3. Stel **Alle doelapparaten converteren naar Autopilot** in op **Ja**. Deze instelling zorgt ervoor dat alle apparaten in de lijst worden ingeschreven bij de Autopilot-implementatieservice. Het kan 48 uur duren voordat de registratie is verwerkt.
 4. Selecteer **Volgende**.
@@ -116,9 +116,9 @@ Als u de Autopilot-apparaten niet meer wilt gebruiken, kunt u deze verwijderen.
 
 1. Als de apparaten zijn ingeschreven bij Intune, moet u ze eerst [verwijderen uit de Azure Active Directory-portal](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-2. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten**.
+2. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), **Apparaten** > **Windows** > **Windows-inschrijving** > **Apparaten** (onder **Windows Autopilot Deployment-programma**).
 
-3. Kies onder **Windows Autopilot-apparaten** de apparaten die u wilt verwijderen, en kies vervolgens **Verwijderen**.
+3. Kies de apparaten die u wilt verwijderen en kies vervolgens **Verwijderen**.
 
 4. Bevestig de verwijdering door **Ja**  te kiezen. Verwijderen kan enkele minuten duren.
 

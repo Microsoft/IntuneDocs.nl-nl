@@ -5,23 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53014376a7e220e975878031ffd759da40db7f6b
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413840"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409964"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Beveiligingsbasislijnen gebruiken om Windows 10-apparaten te gebruiken in Intune
 
@@ -81,7 +81,7 @@ De volgende beveiligingsbasislijninstanties zijn beschikbaar voor gebruik met In
   > [!NOTE]
   > De beveiligingsbasislijn van de Microsoft Defender ATP is geoptimaliseerd voor fysieke apparaten en wordt momenteel niet aanbevolen voor gebruik met virtuele machines (VM's) of VDI-eindpunten. Bepaalde basislijninstellingen kunnen invloed hebben op externe interactieve sessies in gevirtualiseerde omgevingen.  Voor meer informatie ziet u [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) (Naleving met de Microsoft Defender ATP-beveiligingsbasislijn vergroten) in de Windows-documentatie.
 
-- **Microsoft Edge-basislijn** 
+- **Microsoft Edge-basislijn**
   - [Voorbeeld: Microsoft Edge-basislijn](security-baseline-settings-edge.md)
 
 Profielen die u eerder hebt gemaakt op basis van een previewsjabloon, kunt u gewoon blijven gebruiken en bewerken, zelfs wanneer de sjabloon niet meer beschikbaar is voor nieuwe profielen.
@@ -103,13 +103,15 @@ Veelvoorkomende taken bij het werken met beveiligingsbasislijnen zijn onder meer
 
 ### <a name="create-the-profile"></a>Het profiel maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en selecteer **Apparaatbeveiliging** > **Beveiligingsbaslijnen** om de lijst met beschikbare basislijnen weer te geven.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Selecteer **Eindpuntbeveiliging** > **Beveiligingsbasislijnen** om de lijst met beschikbare basislijnen weer te geven.
 
    ![Beveiligingsbasislijn selecteren om te configureren](./media/security-baselines/available-baselines.png)
 
-2. Selecteer de basislijn die u wilt gebruiken en selecteer vervolgens **Profiel maken**.
+3. Selecteer de basislijn die u wilt gebruiken en selecteer vervolgens **Profiel maken**.
 
-3. Geef op het tabblad **Basisinformatie** de volgende eigenschappen op:
+4. Geef op het tabblad **Basisinformatie** de volgende eigenschappen op:
 
    - **Naam**: voer een naam in voor uw beveiligingsbasislijnprofiel. Voer bijvoorbeeld *Standaardprofiel voor Defender ATP* in.
 
@@ -117,7 +119,7 @@ Veelvoorkomende taken bij het werken met beveiligingsbasislijnen zijn onder meer
 
    Selecteer **Volgende** om naar het volgende tabblad te gaan. Nadat u verder bent gegaan naar een ander tabblad, kunt u de naam van een eerder bekeken tabblad selecteren om hiernaar terug te keren.
 
-4. Op het tabblad Configuratie-instellingen bekijkt u de groepen **Instellingen** die beschikbaar zijn in de basislijn die u hebt geselecteerd. U kunt een groep uitvouwen om de instellingen van de groep en de standaardwaarden voor die instellingen in de basislijn te bekijken. Ga als volgt te werk als u specifieke instellingen zoekt:
+5. Op het tabblad Configuratie-instellingen bekijkt u de groepen **Instellingen** die beschikbaar zijn in de basislijn die u hebt geselecteerd. U kunt een groep uitvouwen om de instellingen van de groep en de standaardwaarden voor die instellingen in de basislijn te bekijken. Ga als volgt te werk als u specifieke instellingen zoekt:
    - Selecteer een groep om de beschikbare instellingen uit te vouwen en te bekijken.
    - Gebruik de balk *Zoeken* en geef trefwoorden op om de weergave te filteren en alleen groepen weer te geven die uw zoekcriteria bevatten.
 
@@ -125,13 +127,13 @@ Veelvoorkomende taken bij het werken met beveiligingsbasislijnen zijn onder meer
 
    ![Vouw een groep uit om de instellingen voor die groep weer te geven](./media/security-baselines/sample-list-of-settings.png)
 
-5. Selecteer op het tabblad **Bereiktags** de optie **Bereiktags selecteren** om het deelvenster *Tags selecteren* te openen en bereiktags toe te wijzen aan het profiel.
+6. Selecteer op het tabblad **Bereiktags** de optie **Bereiktags selecteren** om het deelvenster *Tags selecteren* te openen en bereiktags toe te wijzen aan het profiel.
 
-6. Selecteer op het tabblad **Toewijzingen** de optie **Groepen selecteren die moeten worden opgenomen** en wijs de basislijn toe aan een of meer groepen. Gebruik **Groepen selecteren die moeten worden uitgesloten** om de toewijzing te verfijnen.
+7. Selecteer op het tabblad **Toewijzingen** de optie **Groepen selecteren die moeten worden opgenomen** en wijs de basislijn toe aan een of meer groepen. Gebruik **Groepen selecteren die moeten worden uitgesloten** om de toewijzing te verfijnen.
 
    ![Een profiel toewijzen](./media/security-baselines/assignments.png)
 
-7. Wanneer u er klaar voor bent om de basislijn te implementeren, gaat u naar het tabblad **Controleren en maken** en controleert u de gegevens van de basislijn. Selecteer **Maken** om het profiel op te slaan en te implementeren.
+8. Wanneer u er klaar voor bent om de basislijn te implementeren, gaat u naar het tabblad **Controleren en maken** en controleert u de gegevens van de basislijn. Selecteer **Maken** om het profiel op te slaan en te implementeren.
 
    Nadat u het profiel hebt gemaakt, wordt het naar de toegewezen groep gepusht en mogelijk meteen toegepast.
 
@@ -140,7 +142,7 @@ Veelvoorkomende taken bij het werken met beveiligingsbasislijnen zijn onder meer
 
    ![De basislijn controleren](./media/security-baselines/review.png)
 
-8. Nadat u een profiel hebt maakt, bewerkt u dit door naar **Apparaatbeveiliging** > **Beveiligingsbasislijnen** te gaan, het type basislijn te selecteren dat u hebt geconfigureerd en vervolgens **Profielen** te selecteren. Selecteer het profiel in de lijst met beschikbare profielen en selecteer vervolgens **Eigenschappen**. U kunt de instellingen bewerken op alle beschikbare configuratietabbladen en **Controleren en opslaan** selecteren om uw wijzigingen door te voeren.
+9. Nadat u een profiel hebt maakt, bewerkt u dit door naar **Apparaatbeveiliging** > **Beveiligingsbasislijnen** te gaan, het type basislijn te selecteren dat u hebt geconfigureerd en vervolgens **Profielen** te selecteren. Selecteer het profiel in de lijst met beschikbare profielen en selecteer vervolgens **Eigenschappen**. U kunt de instellingen bewerken op alle beschikbare configuratietabbladen en **Controleren en opslaan** selecteren om uw wijzigingen door te voeren.
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>De basislijnversie voor een profiel wijzigen
 
@@ -160,25 +162,27 @@ Wanneer u de basislijn opslaat nadat de conversie is voltooid, wordt deze onmidd
 
 #### <a name="to-change-the-baseline-version-for-a-profile"></a>De basislijnversie voor een profiel wijzigen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecteer **Apparaatbeveiliging** > **Beveiligingsbasislijnen** en selecteer vervolgens de tegel voor het type basislijn met het profiel dat u wilt wijzigen.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431). 
 
-2. Selecteer daarna **Profielen** en het selectievakje voor het profiel dat u wilt bewerken. Selecteer vervolgens **Versie wijzigen**.
+2. Selecteer **Eindpuntbeveiliging** > **Beveiligingsbasislijnen** en selecteer vervolgens de tegel voor het type basislijn met het profiel dat u wilt wijzigen.
+
+3. Selecteer daarna **Profielen** en het selectievakje voor het profiel dat u wilt bewerken. Selecteer vervolgens **Versie wijzigen**.
 
    ![Een basislijn selecteren](./media/security-baselines/select-baseline.png)
 
-3. Gebruik in het deelvenster **Versie wijzigen** de vervolgkeuzelijst **Een beveiligingsbasislijn selecteren om naar bij te werken** om de versie-instantie te selecteren die u wilt gebruiken.
+4. Gebruik in het deelvenster **Versie wijzigen** de vervolgkeuzelijst **Een beveiligingsbasislijn selecteren om naar bij te werken** om de versie-instantie te selecteren die u wilt gebruiken.
 
    ![Een versie selecteren](./media/security-baselines/select-instance.png)
 
-4. Selecteer **Update bekijken** om een CSV-bestand te downloaden met de verschillen tussen de huidige instantieversie van het profiel en de nieuwe versie. Neem dit bestand door, zodat u weet welke instellingen nieuw zijn of zijn verwijderd, en wat de standaardwaarden zijn voor deze instellingen in het bijgewerkte profiel.
+5. Selecteer **Update bekijken** om een CSV-bestand te downloaden met de verschillen tussen de huidige instantieversie van het profiel en de nieuwe versie. Neem dit bestand door, zodat u weet welke instellingen nieuw zijn of zijn verwijderd, en wat de standaardwaarden zijn voor deze instellingen in het bijgewerkte profiel.
 
    Wanneer u klaar bent, gaat u door naar de volgende stap.
 
-5. Kies een van de twee opties voor **Selecteer een methode om het profiel bij te werken**:
+6. Kies een van de twee opties voor **Selecteer een methode om het profiel bij te werken**:
    - **Basislijnwijzigingen accepteren, maar mijn bestaande instellingen behouden**: met deze optie behoudt u de wijzigingen die u hebt aangebracht aan het basislijnprofiel en past u deze toe op de nieuwe versie die u hebt geselecteerd.
    - **Basislijnwijzigingen accepteren en bestaande instellingen verwijderen**: met deze optie wordt uw originele profiel volledig overschreven. Het bijgewerkte profiel gebruikt de standaardwaarden voor alle instellingen.
 
-6. Selecteer **Verzenden**. Het profiel wordt bijgewerkt naar de geselecteerde basislijnversie en nadat de conversie is voltooid, wordt de basislijn onmiddellijk opnieuw geïmplementeerd in de toegewezen groepen.
+7. Selecteer **Verzenden**. Het profiel wordt bijgewerkt naar de geselecteerde basislijnversie en nadat de conversie is voltooid, wordt de basislijn onmiddellijk opnieuw geïmplementeerd in de toegewezen groepen.
 
 ### <a name="remove-a-security-baseline-assignment"></a>Een beveiligingsbasislijntoewijzing verwijderen
 

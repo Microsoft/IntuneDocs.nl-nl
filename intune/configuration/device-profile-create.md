@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02603651587837211d9a67d7e4bbeb90cb358dc5
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059562"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390871"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Een apparaatprofiel maken in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Met apparaatprofielen kunt u instellingen toevoegen en configureren, en deze instellingen vervolgens naar apparaten in uw organisatie pushen. Meer details, onder andere over wat u allemaal kunt doen, vindt u in: [Functies en instellingen toepassen op uw apparaten met apparaatprofielen](device-profiles.md).
 
@@ -78,6 +76,7 @@ Dit artikel:
        - [Kiosk](kiosk-settings.md)
        - [PKCS-certificaat](../protect/certficates-pfx-configure.md)
        - [PKCS-geïmporteerd certificaat](../protect/certificates-imported-pfx-configure.md)
+       - [Voorkeursbestand](preference-file-settings-macos.md)
        - [SCEP-certificaat](../protect/certificates-scep-configure.md)
        - [Vertrouwd certificaat](../protect/certificates-configure.md)
        - [Updatebeleid](../software-updates-ios.md)
@@ -160,6 +159,32 @@ Wanneer u het profiel aan de groepen toewijst, fungeren de regels voor toepassel
 In Intune worden verschillende vernieuwingscycli gebruikt om te controleren op updates voor configuratieprofielen. Als het apparaat onlangs is ingeschreven, worden de check-ins vaker uitgevoerd. [Vernieuwingscycli voor beleidsregels en profielen](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) bevat de geschatte vernieuwingstijden.
 
 Gebruikers kunnen ook de bedrijfsportal-app openen en het apparaat synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
+
+## <a name="recommendations"></a>Aanbevelingen
+
+Houd bij het maken van profielen rekening met de volgende aanbevelingen:
+
+- Geef elk beleid een naam zodat u weet wat het is en wat het doet. Elk [nalevingsbeleid](../protect/create-compliance-policy.md) en alle [configuratieprofielen](../configuration/device-profile-create.md) hebben een optionele eigenschap **Beschrijving**. Wees specifiek bij het opgeven van de **beschrijving**, zodat anderen weten wat het beleid doet.
+
+  Enkele voorbeelden van configuratieprofielen zijn:
+
+  **Profielnaam**: Beheersjabloon - OneDrive-configuratieprofiel voor alle Windows 10-gebruikers  
+  **Profielbeschrijving**: sjabloonprofiel van de OneDrive-beheerder met de minimale en de basisinstellingen voor alle Windows 10-gebruikers. Gemaakt door user@contoso.com om te voorkomen dat gebruikers organisatiegegevens delen met persoonlijke OneDrive-accounts.
+
+  **Profielnaam**: VPN-profiel voor alle iOS-gebruikers  
+  **Profielbeschrijving**: VPN-profiel met de minimale en basisinstellingen voor alle iOS-gebruikers om verbinding te maken met Contoso VPN. Gemaakt door user@contoso.com, zodat gebruikers automatisch worden geverifieerd voor VPN, in plaats van gebruikers te vragen om hun gebruikersnaam en wachtwoord op te geven.
+
+- Maak uw profiel op basis van de bijbehorende taak, zoals Microsoft Edge-instellingen configureren, Microsoft Defender-antivirusinstellingen inschakelen, opengebroken iOS apparaten blokkeren enzovoort.
+
+- Maak profielen die van toepassing zijn op specifieke groepen, zoals Marketing, Verkoop, IT-beheerders, of op locatie of schoolsysteem.
+
+- Gebruikersbeleid gescheiden houden van apparaatbeleid.
+
+  [Beheersjablonen in Intune](administrative-templates-windows.md) bevatten bijvoorbeeld honderden ADMX-instellingen. Deze sjabloon toont of een instelling van toepassing is op gebruikers of op apparaten. Als u beheersjablonen maakt, wijst u de gebruikersinstellingen toe aan een gebruikersgroep en wijst u de apparaatinstellingen toe aan een apparaatgroep.
+
+  In de volgende afbeelding ziet u een voorbeeld van een instelling die kan worden toegepast op gebruikers en/of apparaten:
+
+  ![Intune-beheersjabloon die van toepassing is op gebruikers en apparaten](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
 ## <a name="next-steps"></a>Volgende stappen
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: c420446d9293ae2a2d1905dcff218056e8e6c875
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059780"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540720"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Instellingen voor beveiligingsbeleid voor apps voor Android in Microsoft Intune
 In dit artikel worden de app-beveiligingsbeleidsinstellingen voor Android-apparaten beschreven. De beleidsinstellingen die worden beschreven, kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid op de blade **Instellingen** in Azure Portal.
@@ -66,7 +66,7 @@ Er zijn drie soorten beleidsinstellingen: gegevensbeschermingsinstellingen, toeg
 
 ## <a name="data-transfer-exemptions"></a>Uitzonderingen voor gegevensoverdracht
 
-  Er zijn een aantal uitzonderingsapps en -platformservices waar het Intune beveiligingsbeleid voor apps gegevensoverdracht naar en van kan toestaan. Alle door Intune beheerde apps voor Android moeten bijvoorbeeld gegevens kunnen overdragen van en naar Google Text-to-Speech, zodat tekst op het scherm van uw mobiele apparaat hardop kan worden voorgelezen. Deze lijst kan worden gewijzigd en reflecteert de services en apps die als nuttig voor beveiligde productiviteit worden beschouwd.
+  Er zijn een aantal uitzonderingsapps en -platformservices waar Intune beveiligingsbeleidsregels voor apps gegevensoverdracht naar en van kan toestaan. Alle door Intune beheerde apps voor Android moeten bijvoorbeeld gegevens kunnen overdragen van en naar Google Text-to-Speech, zodat tekst op het scherm van uw mobiele apparaat hardop kan worden voorgelezen. Deze lijst kan worden gewijzigd en reflecteert de services en apps die als nuttig voor beveiligde productiviteit worden beschouwd.
 
 ### <a name="full-exemptions"></a>Volledige uitzonderingen
 

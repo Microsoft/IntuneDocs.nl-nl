@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: e00600abb8327623eff4efe8509670779710ab7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dbf6d95c8902a95993b972ff7639d4afb4324ac8
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509035"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410174"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>SCEP- en PKCS-certificaten verwijderen in Microsoft Intune
 
@@ -55,14 +55,17 @@ Een SCEP-certificaat wordt ingetrokken *en* verwijderd wanneer:
 - Een certificaatprofiel wordt verwijderd uit de groepstoewijzing.
 
 Een SCEP-certificaat wordt ingetrokken wanneer:
+
 - Een beheerder wijzigingen aanbrengt in het SCEP-profiel of dit bijwerkt.
 
 Een basiscertificaat wordt verwijderd wanneer:
+
 - Een eindgebruiker zich uitschrijft.
 - Een beheerder de actie [Wissen](../remote-actions/devices-wipe.md#wipe) uitvoert.
 - Een beheerder de actie [Buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) uitvoert.
 
 SCEP-certificaten *blijven gehandhaafd* op het apparaat (certificaten worden niet ingetrokken of verwijderd) wanneer:
+
 - Een gebruiker de Intune-licentie verliest.
 - Een beheerder de Intune-licentie intrekt.
 - Een beheerder de gebruiker of groep uit Azure AD verwijdert.
@@ -76,11 +79,13 @@ Een PKCS-certificaat wordt ingetrokken *en* verwijderd wanneer:
 - Een beheerder de actie [Buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) uitvoert.
 
 Een basiscertificaat wordt verwijderd wanneer:
+
 - Een eindgebruiker zich uitschrijft.
 - Een beheerder de actie [Wissen](../remote-actions/devices-wipe.md#wipe) uitvoert.
 - Een beheerder de actie [Buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) uitvoert.
 
 PKCS-certificaten *blijven gehandhaafd* op het apparaat (certificaten worden niet ingetrokken of verwijderd) wanneer:
+
 - Een gebruiker de Intune-licentie verliest.
 - Een beheerder de Intune-licentie intrekt.
 - Een beheerder de gebruiker of groep uit Azure AD verwijdert.
@@ -101,14 +106,17 @@ Een SCEP-certificaat wordt ingetrokken *en* verwijderd wanneer:
 - Een certificaatprofiel wordt verwijderd uit de groepstoewijzing.
 
 Een SCEP-certificaat wordt ingetrokken wanneer:
+
 - Een beheerder wijzigingen aanbrengt in het SCEP-profiel of dit bijwerkt.
 
 Een basiscertificaat wordt verwijderd wanneer:
+
 - Een eindgebruiker zich uitschrijft.
 - Een beheerder de actie [Wissen](../remote-actions/devices-wipe.md#wipe) uitvoert.
 - Een beheerder de actie [Buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) uitvoert.
 
 SCEP-certificaten *blijven gehandhaafd* op het apparaat (certificaten worden niet ingetrokken of verwijderd) wanneer:
+
 - Een gebruiker de Intune-licentie verliest.
 - Een beheerder de Intune-licentie intrekt.
 - Een beheerder de gebruiker of groep uit Azure AD verwijdert.
@@ -122,14 +130,17 @@ Een PKCS-certificaat wordt ingetrokken *en* verwijderd wanneer:
 - Een beheerder de actie [Buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) uitvoert.
 
 Een PKCS-certificaat wordt verwijderd wanneer:
+
 - Een certificaatprofiel wordt verwijderd uit de groepstoewijzing.
 
 Een basiscertificaat wordt verwijderd wanneer:
+
 - Een eindgebruiker zich uitschrijft.
 - Een beheerder de actie [Wissen](../remote-actions/devices-wipe.md#wipe) uitvoert.
 - Een beheerder de actie [Buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) uitvoert.
 
 PKCS-certificaten *blijven gehandhaafd* op het apparaat (certificaten worden niet ingetrokken of verwijderd) wanneer:
+
 - Een gebruiker de Intune-licentie verliest.
 - Een beheerder de Intune-licentie intrekt.
 - Een beheerder de gebruiker of groep uit Azure AD verwijdert.
@@ -140,10 +151,12 @@ PKCS-certificaten *blijven gehandhaafd* op het apparaat (certificaten worden nie
 ### <a name="scep-certificates"></a>SCEP-certificaten
 
 Een SCEP-certificaat wordt ingetrokken *en* verwijderd wanneer:
+
 - Een eindgebruiker zich uitschrijft.
 - Een beheerder de actie [Wissen](../remote-actions/devices-wipe.md#wipe) uitvoert.
 
 Een SCEP-certificaat wordt ingetrokken wanneer:
+
 - Een beheerder de actie [Buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) uitvoert.
 - Het apparaat wordt verwijderd uit een Azure AD-groep.
 - Een certificaatprofiel wordt verwijderd uit de groepstoewijzing.
@@ -151,11 +164,13 @@ Een SCEP-certificaat wordt ingetrokken wanneer:
 - Een beheerder wijzigingen aanbrengt in het SCEP-profiel of dit bijwerkt.
 
 Een basiscertificaat wordt verwijderd wanneer:
+
 - Een eindgebruiker zich uitschrijft.
 - Een beheerder de actie [Wissen](../remote-actions/devices-wipe.md#wipe) uitvoert.
 - Een beheerder de actie [Buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) uitvoert.
 
 SCEP-certificaten *blijven gehandhaafd* op het apparaat (certificaten worden niet ingetrokken of verwijderd) wanneer:
+
 - Een gebruiker de Intune-licentie verliest.
 - Een beheerder de Intune-licentie intrekt.
 - Een beheerder de gebruiker of groep uit Azure AD verwijdert.
@@ -169,12 +184,14 @@ Een PKCS-certificaat wordt ingetrokken *en* verwijderd wanneer:
 - Een beheerder de actie [Buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) uitvoert.
 
 Een basiscertificaat wordt verwijderd wanneer:
+
 - Een eindgebruiker zich uitschrijft.
 - Een beheerder de actie [Wissen](../remote-actions/devices-wipe.md#wipe) uitvoert.
 - Een beheerder de actie [Buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) uitvoert.
 
 PKCS-certificaten *blijven gehandhaafd* op het apparaat (certificaten worden niet ingetrokken of verwijderd) wanneer:
 - Een gebruiker de Intune-licentie verliest.
+
 - Een beheerder de Intune-licentie intrekt.
 - Een beheerder de gebruiker of groep uit Azure AD verwijdert.
 - Een beheerder wijzigingen aanbrengt in het PKCS-profiel of dit bijwerkt.
@@ -190,15 +207,18 @@ PKCS-certificaten *blijven gehandhaafd* op het apparaat (certificaten worden nie
 ### <a name="scep-certificates"></a>SCEP-certificaten
 
 Een SCEP-certificaat wordt ingetrokken *en* verwijderd wanneer:
+
 - Een eindgebruiker zich uitschrijft.
 - Een beheerder de actie [Buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) uitvoert.
 - Het apparaat wordt verwijderd uit een Azure AD-groep.
 - Een certificaatprofiel wordt verwijderd uit de groepstoewijzing.
 
 Een SCEP-certificaat wordt ingetrokken wanneer:
+
 - Een beheerder wijzigingen aanbrengt in het SCEP-profiel of dit bijwerkt.
 
 SCEP-certificaten *blijven gehandhaafd* op het apparaat (certificaten worden niet ingetrokken of verwijderd) wanneer:
+
 - Een gebruiker de Intune-licentie verliest.
 - Een beheerder de Intune-licentie intrekt.
 - Een beheerder de gebruiker of groep uit Azure AD verwijdert.
@@ -210,3 +230,6 @@ SCEP-certificaten *blijven gehandhaafd* op het apparaat (certificaten worden nie
 
 PKCS-certificaten worden niet ondersteund in macOS.
 
+## <a name="next-steps"></a>Volgende stappen
+
+[Certificaten gebruiken voor verificatie](certificates-configure.md)

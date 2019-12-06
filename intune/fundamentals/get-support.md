@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14ff8ad2d41a6f2235c18f155e3a5b865e3a32e4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 5aca7dbae7a74af399bcbf21aec1dd9dd2d1e851
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199315"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390752"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Ondersteuning voor Microsoft Intune krijgen
 
@@ -39,7 +39,7 @@ Als Intune-beheerder kunt u de optie **Help en ondersteuning** gebruiken om vanu
 
 ## <a name="help-and-support-experience"></a>Help en ondersteuning-ervaring
 
-De Help en ondersteuning-ervaring voor Intune is beschikbaar via de [Microsoft 365 Device Management-portal](https://devicemanagement.microsoft.com) en via alle blades (of pagina's) onder Intune in Azure Portal.
+De Help en ondersteuning-ervaring van Intune is beschikbaar via het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en via alle blades (of pagina's) onder Intune in de Azure-portal.
 
 De *Help en ondersteuning*-ervaring is vergelijkbaar met de ervaring in het [Microsoft 365-beheercentrum](https://admin.microsoft.com/) en vervangt de vorige *Help en ondersteuning*, die beschikbaar blijft voor andere services in Azure.
 
@@ -48,16 +48,27 @@ De *Help en ondersteuning*-ervaring is vergelijkbaar met de ervaring in het [Mic
 
 ### <a name="options-to-access-help-and-support"></a>Opties voor toegang tot Help en ondersteuning
 
-- **In de Azure-portal:**
+Wanneer u een nieuw gemaakte tenant voor Intune gebruikt, is het mogelijk dat *Help en ondersteuning* niet kan worden geopend en het volgende bericht wordt weergegeven:
+
+- *Er is een onbekend probleem opgetreden. Vernieuw de pagina, maar als het probleem zich blijft voordoen, dient u een ondersteuningsaanvraag in via het [M365-beheercentrum](https://admin.microsoft.com) en verwijst u naar de gegeven sessie-id.*
+
+De foutdetails bestaan onder andere uit een *sessie-id*, *extensie*gegevens en meer. 
+ 
+Dit probleem treedt op wanneer u uw nieuwe tenantaccount nog niet hebt geverifieerd via het **M365-beheercentrum** op https://admin.microsoft.com of de **Office 365-portal** op https://portal.office.com. U kunt dit probleem oplossen door de koppeling naar het *M365-beheercentrum* in het bericht te selecteren of door naar https://portal.office.com te gaan en u aan te melden. Na verificatie op beide sites hebt u toegang tot *Help en ondersteuning* voor Intune.
+
+
+**Toegang tot Help en ondersteuning**:
+
+- **In de Azure-Portal**
 
   - Selecteer **Help en ondersteuning** vanaf een willekeurige Intune-blade of -pagina.
 
   > [!NOTE]  
   > Als uw exemplaar van Intune wordt gehost in de privécloud voor de overheid (ook wel een soevereine cloud genoemd, bijv. Azure Government) raadpleegt u [Intune-ondersteuning voor de privécloud voor de overheid](#intune-support-for-private-cloud-for-government) verderop in dit artikel. De *Help en ondersteuning*-ervaring voor Intune komt pas volgend jaar beschikbaar voor de privécloud voor de overheid.
 
-- **Via het dashboard Apparaatbeheer:**
+- Vanuit het **Microsoft Endpoint Manager-beheercentrum** doet u het volgende:
   - Nadat u een functiegebied voor Intune hebt geselecteerd, selecteert u de optie voor **Help en ondersteuning**.
-  - Selecteer op een willekeurig knooppunt in de Apparaatbeheer-portal het pictogram **?** in de rechterbovenhoek van de portal en gebruik vervolgens de vervolgkeuzelijst om de service te selecteren waarvoor u hulp wilt. Het pictogram **?** in de Apparaatbeheer-portal ondersteunt meerdere services en u moet de specifieke service selecteren waarvoor u hulp nodig hebt.  
+  - Selecteer vanuit elk willekeurig knooppunt in het Microsoft Endpoint Manager-beheercentrum het **?** . in de rechterbovenhoek van de portal en gebruik vervolgens de vervolgkeuzelijst om de service te selecteren waarvoor u hulp wilt. Het pictogram **?** in het Microsoft Endpoint Manager-beheercentrum ondersteunt meerdere services, en u moet de specifieke service selecteren waarbij u hulp nodig hebt.  
 
     ![Uw service selecteren](./media/get-support/select-a-service.png)
 

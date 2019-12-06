@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,27 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae8bc7d5797a2ba6404331166e9d955bbb2fadf9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059584"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261694"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Gebruikers- en apparaatprofielen toewijzen in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 U maakt een profiel en dit omvat alle instellingen die u hebt ingevoerd. De volgende stap is het implementeren of toewijzen van het profiel aan uw gebruikers- of apparaatgroepen in Azure AD (Active Directory). Wanneer het is toegewezen, ontvangen de gebruikers en apparaten uw profiel, en worden de ingevoerde instellingen toegewezen.
 
 In dit artikel ziet u hoe u een profiel kunt toewijzen, en krijgt u informatie over het gebruik van bereiktags in uw profielen.
 
 > [!NOTE]  
-> Wanneer beleid wordt verwijderd of niet meer is toegewezen aan een apparaat, behoudt de instelling mogelijk de bestaande waarde. De instelling wordt niet teruggezet naar een standaardwaarde. Als u de instelling wilt wijzigen in een andere waarde, maakt u nieuw beleid en wijst u dit toe.
+> Wanneer een profiel wordt verwijderd of niet meer is toegewezen aan een apparaat, behoudt de instelling mogelijk de bestaande waarde. De instelling wordt niet teruggezet naar een standaardwaarde. Als u de instelling wilt wijzigen in een andere waarde, maakt u een nieuw profiel en wijst u dit toe.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
-Zorg ervoor dat u de juiste rol hebt om beleid toe te wijzen. Zie [Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune](../fundamentals/role-based-access-control.md) voor meer informatie.
+Zorg ervoor dat u de juiste rol hebt om profielen toe te wijzen. Zie [Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune](../fundamentals/role-based-access-control.md) voor meer informatie.
 
 ## <a name="assign-a-device-profile"></a>Een apparaatprofiel toewijzen
 
@@ -63,17 +61,49 @@ Als de knop **Evalueren** is uitgeschakeld, controleert u of het profiel is toeg
 
 Wanneer u een profiel maakt of bijwerkt, kunt u ook bereiktags en toepasselijkheidsregels toevoegen aan het profiel.
 
-Met **bereiktags** kunt u eenvoudig beleid toewijzen aan en filteren voor specifieke groepen, zoals Human Resources of Alle NL-AMST-werknemers. [RBAC en bereiktags gebruiken voor gedistribueerde IT](../fundamentals/scope-tags.md) heeft meer informatie.
+Met **bereiktags** kunt u eenvoudig profielen toewijzen aan en filteren voor specifieke groepen, zoals Human Resources of Alle NL-AMST-werknemers. [RBAC en bereiktags gebruiken voor gedistribueerde IT](../fundamentals/scope-tags.md) heeft meer informatie.
 
 U kunt op Windows 10-apparaten **toepasselijkheidsregels** toevoegen, zodat het profiel alleen van toepassing is op een specifieke versie van het besturingssysteem of een specifieke Windows-editie. [Toepasbaarheidsregels](device-profile-create.md#applicability-rules) bevat meer informatie.
 
+## <a name="user-groups-vs-device-groups"></a>Gebruikersgroepen versus apparaatgroepen
+
+Veel gebruikers vragen wanneer ze gebruikersgroepen moeten gebruiken en wanneer ze apparaatgroepen moeten gebruiken. Het antwoord is afhankelijk van uw doel. Hier volgen enkele richtlijnen die u op weg helpen.
+
+### <a name="device-groups"></a>Device groups
+
+Als u instellingen wilt toepassen op een apparaat, ongeacht wie zich heeft aangemeld, moet u de profielen aan een apparaatgroep toewijzen. Instellingen die worden toegepast op apparaatgroepen blijven voor het apparaat gelden, en niet voor de gebruiker.
+
+Bijvoorbeeld:
+
+- Apparaatgroepen zijn handig voor het beheren van apparaten die geen toegewezen gebruiker hebben. Als u bijvoorbeeld apparaten hebt waarmee tickets worden afgedrukt, voorraad wordt gescand, die door ploegmedewerkers worden gedeeld, aan een specifiek magazijn zijn toegewezen enzovoort. Plaats deze apparaten in een apparaatgroep en wijs uw profielen toe aan deze apparaatgroep.
+
+- U maakt een [DFCI-Intune-profiel (Device Firmware Configuration Interface)](device-firmware-configuration-interface-windows.md) waarmee de instellingen in het BIOS worden bijgewerkt. U kunt dit profiel bijvoorbeeld configureren om de camera van het apparaat uit te schakelen, of ter vergrendeling van de opstartopties om te voorkomen dat gebruikers een ander besturingssysteem opstarten. Dit profiel is een goed scenario om aan een apparaatgroep toe te wijzen.
+
+- Op een aantal specifieke Windows-apparaten wilt u altijd bepaalde instellingen voor Microsoft Edge kunnen beheren, ongeacht wie het apparaat gebruikt. U wilt bijvoorbeeld alle downloads blokkeren, alle cookies beperken tot de huidige browsersessie en de browsegeschiedenis verwijderen. Voor dit scenario plaatst u deze specifieke Windows-apparaten in een apparaatgroep. Maak vervolgens een [beheersjabloon in Intune](administrative-templates-windows.md), voeg deze apparaatinstellingen toe en wijs dit profiel vervolgens toe aan de apparaatgroep.
+
+Gebruik apparaatgroepen dus wanneer u niet weet wie zich op het apparaat heeft aangemeld of dat er überhaupt iemand is aangemeld. U wilt dat uw instellingen zich altijd op het apparaat bevinden.
+
+### <a name="user-groups"></a>Gebruikersgroepen
+
+Profielinstellingen die worden toegepast op gebruikersgroepen, gaan altijd mee met de gebruiker, en met de gebruiker als deze op een van zijn vele apparaten is aangemeld. Het is normaal dat gebruikers veel apparaten hebben, zoals een Surface Pro voor op het werk en een persoonlijk iOS-apparaat. En het is normaal dat een persoon vanaf deze apparaten toegang heeft tot e-mail en andere bronnen van de organisatie.
+
+Bijvoorbeeld:
+
+- U wilt een helpdeskpictogram voor alle gebruikers op al hun apparaten plaatsen. In dit scenario plaatst u deze gebruikers in een gebruikersgroep en wijst u het profiel van het helpdeskpictogram toe aan deze gebruikersgroep.
+- Een gebruiker ontvangt een nieuw apparaat dat eigendom is van de organisatie. De gebruiker meldt zich aan bij het apparaat met zijn domeinaccount. Het apparaat wordt automatisch geregistreerd bij Azure AD en automatisch beheerd door Intune. Dit profiel is een goed scenario om aan een gebruikersgroep toe te wijzen.
+- Wanneer een gebruiker zich aanmeldt bij een apparaat, wilt u dat u de functies in apps kunt beheren, zoals OneDrive of Office. In dit scenario wijst u de profielinstellingen voor OneDrive of Office toe aan een gebruikersgroep.
+
+  U wilt bijvoorbeeld dat niet-vertrouwde ActiveX-besturingselementen in uw Office-apps worden geblokkeerd. U kunt een [beheersjabloon in Intune](administrative-templates-windows.md) maken, deze instelling toevoegen en dit profiel vervolgens aan een gebruikersgroep toevoegen.
+
+Gebruik gebruikersgroepen dus wanneer u wilt dat uw instellingen en regels altijd met de gebruiker meegaan, ongeacht welk apparaat deze gebruikt.
+
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Groepen uitsluiten van een profieltoewijzing
 
-Intune-profielen voor apparaatconfiguratie bieden de mogelijkheid om groepen op te nemen en uit te sluiten van beleidstoewijzing.
+Intune-profielen voor apparaatconfiguratie bieden de mogelijkheid om groepen op te nemen en uit te sluiten van profieltoewijzing.
 
-De aanbevolen procedure is om beleid specifiek voor uw gebruikersgroepen te maken en toe te wijzen. En ook om verschillende beleidsregels specifiek voor uw apparaatgroepen te maken en toe te wijzen. Zie [Groepen toevoegen om gebruikers en apparaten te organiseren](../fundamentals/groups-add.md) voor meer informatie over groepen.
+Het is best practice om profielen specifiek voor uw gebruikersgroepen te maken en toe te wijzen. En ook om verschillende profielen specifiek voor uw apparaatgroepen te maken en toe te wijzen. Zie [Groepen toevoegen om gebruikers en apparaten te organiseren](../fundamentals/groups-add.md) voor meer informatie over groepen.
 
-Wanneer u beleid toewijst, gebruikt u de volgende tabel bij het opnemen en uitsluiten van groepen. Als het selectievakje is ingeschakeld, wordt de toewijzing ondersteund:
+Wanneer u profielen toewijst, gebruikt u de volgende tabel bij het opnemen en uitsluiten van groepen. Als het selectievakje is ingeschakeld, wordt de toewijzing ondersteund:
 
 ![Met ondersteunde opties kunt u groepen opnemen of uitsluiten voor profieltoewijzing](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
@@ -84,13 +114,13 @@ Wanneer u beleid toewijst, gebruikt u de volgende tabel bij het opnemen en uitsl
   - Gebruikersgroepen opnemen en uitsluiten
   - Apparaatgroepen opnemen en uitsluiten
 
-  Bijvoorbeeld: u wijst een apparaatprofiel toe aan de gebruikersgroep **Alle zakelijke gebruikers**, maar sluit leden van de groep **Managementteam** uit. Aangezien beide groepen gebruikersgroepen zijn, krijgen **Alle zakelijke gebruikers** behalve het **Managementteam** het beleid toegewezen.
+  Bijvoorbeeld: u wijst een apparaatprofiel toe aan de gebruikersgroep **Alle zakelijke gebruikers**, maar sluit leden van de groep **Managementteam** uit. Aangezien beide groepen gebruikersgroepen zijn, krijgen **Alle zakelijke gebruikers** behalve het **Managementteam** het profiel toegewezen.
 
-- Intune beoordeelt groepsrelaties tussen gebruikers en apparaten niet. Als u beleid aan gemengde groepen toewijst, zijn de resultaten mogelijk niet wat u wilt of verwacht.
+- Intune beoordeelt groepsrelaties tussen gebruikers en apparaten niet. Als u profielen aan gemengde groepen toewijst, zijn de resultaten mogelijk niet wat u wilt of verwacht.
 
-  U kunt bijvoorbeeld een apparaatprofiel toewijzen aan de gebruikersgroep **Alle gebruikers**, maar tegelijk een apparaatgroep **Alle persoonlijke apparaten** uitsluiten. Bij deze gemengde toewijzing van groepsbeleid krijgen **Alle gebruikers** het beleid toegewezen. De uitsluiting wordt dan niet toegepast.
+  U kunt bijvoorbeeld een apparaatprofiel toewijzen aan de gebruikersgroep **Alle gebruikers**, maar tegelijk een apparaatgroep **Alle persoonlijke apparaten** uitsluiten. Bij deze gemengde toewijzing van een groepsprofiel krijgen **Alle gebruikers** het profiel toegewezen. De uitsluiting wordt dan niet toegepast.
 
-  Dit betekent dat het niet raadzaam is om beleid aan gemengde groepen toe te wijzen.
+  Dit betekent dat het niet raadzaam is om profielen aan gemengde groepen toe te wijzen.
 
 ## <a name="next-steps"></a>Volgende stappen
 

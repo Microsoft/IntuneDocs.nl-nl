@@ -5,22 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: aiwang
+ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53ac86ce88481176ab6f2472b1c0fbae8d3453c1
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199319"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291101"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Windows 10-software-updates beheren in Intune
 
@@ -208,13 +208,18 @@ Wanneer een apparaat een beleid voor Windows 10-onderdelenupdates ontvangt:
 
 - In tegenstelling tot het gebruik van *Pauzeren* met een updatering, dat na 35 dagen verloopt, blijft het beleid voor de onderdelenupdates van Windows 10 van kracht. Apparaten installeren pas een nieuwe Windows-versie als u het beleid voor de onderdelenupdates voor Windows 10 wijzigt of verwijdert. Als u het beleid bewerkt om een nieuwere versie op te geven, kunnen apparaten de functies installeren vanuit die Windows-versie.
 
-> [!IMPORTANT]
-> Wanneer u zowel een beleid voor *Windows 10-onderdelenupdates* als voor een *Windows 10-updatering* op hetzelfde apparaat implementeert, controleert u de updatering op de volgende configuraties:
->
-> - De **Uitstelperiode voor onderdelenupdates (dagen)** moet zijn ingesteld op **0**
-> - Onderdelenupdates voor de updatering moeten *actief* zijn. Ze mogen niet worden gepauzeerd.
+### <a name="limitations-for-windows-10-feature-updates"></a>Beperkingen voor Windows 10-onderdelenupdates
 
-Windows 10-onderdelenupdates worden niet ondersteund met Windows Autopilot.
+- Wanneer u een beleid voor *Windows 10-onderdelenupdates* voor een *Windows 10-updatering* implementeert, controleert u de updatering op de volgende configuraties:
+  - De **Uitstelperiode voor onderdelenupdates (dagen)** moet zijn ingesteld op **0**.
+  - Onderdelenupdates voor de updatering moeten *actief* zijn. Ze mogen niet worden gepauzeerd.
+
+- *Windows 10-onderdelenupdates* worden niet ondersteund met Autopilot. Intune implementeert het beleid niet naar:
+  - Apparaten die door Autopilot worden ingericht.
+  - Apparaten die eerder door Autopilot zijn ingericht.
+
+  Momenteel wordt onderzocht of deze beperking in de toekomst kan worden ondersteund.
+
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Windows 10-onderdelenupdates maken en toewijzen
 

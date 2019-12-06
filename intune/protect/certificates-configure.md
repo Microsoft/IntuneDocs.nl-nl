@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea2d51b82f0f47ee4bfabc94c2e971e4cb666d4
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: 5092fa37f0bf6bd1320fa06fa58ac5e36f55aa3c
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801751"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410189"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Certificaten voor verificatie gebruiken in Microsoft Intune
 
@@ -36,18 +36,44 @@ Gebruik certificaten in Intune om uw gebruikers te verifiëren voor toepassingen
 | PKCS #12 (of PFX)    | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png) |  |
 | Simple Certificate Enrollment Protocol (SCEP)  | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png) | |
 
-Als u deze certificaten wilt implementeren, moet u certificaatprofielen maken en deze toewijzen aan apparaten.  
+Als u deze certificaten wilt implementeren, moet u certificaatprofielen maken en deze toewijzen aan apparaten.
 
 Elk afzonderlijk certificaatprofiel dat u maakt, ondersteunt één platform. Als u bijvoorbeeld PKCS-certificaten gebruikt, moet u een PKCS-certificaatprofiel voor Android en een afzonderlijk PKCS-certificaatprofiel voor iOS maken. Als u ook SCEP-certificaten voor deze twee platforms gebruikt, moet u een SCEP-certificaatprofiel voor Android en een ander SCEP-certificaatprofiel voor iOS maken.
 
-**Algemene overwegingen**:
-- Als u geen certificeringsinstantie (CA) voor ondernemingen hebt, moet u er een maken of er een van [een van onze ondersteunde partners](certificate-authority-add-scep-overview.md#third-party-certification-authority-partners) gebruiken.
-- Als u SCEP-certificaatprofielen gebruikt met behulp van Microsoft Active Directory Certificate Services, moet u een NDES-server (Registratieservice voor netwerkapparaten) configureren.
-- Als u SCEP met een van onze certificeringsinstantiepartners gebruikt, moet u [deze integreren met Intune](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration).
-- Voor zowel SCEP- als PKCS-certificaatprofielen moet u de Microsoft Intune Certificate Connector downloaden, installeren en configureren.
-- Voor geïmporteerde PKCS-certificaten moet u de PFX-certificaatconnector voor Microsoft Intune downloaden, installeren en configureren.
-- Voor geïmporteerde PKCS-certificaten moet u certificaten van uw certificeringsinstantie exporteren en deze importeren in Microsoft Intune. Zie [het PowerShell-project PFXImport](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
-- Als u wilt dat een apparaat SCEP-, PKCS- of geïmporteerde PKCS-certificaatprofielen gebruikt, moet dat apparaat uw basiscertificeringsinstantie vertrouwen. U gebruikt een *vertrouwd certificaatprofiel* om uw vertrouwde basis-CA-certificaat te implementeren op apparaten.
+### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>Algemene overwegingen als u een Microsoft-certificeringsinstantie gebruikt
+
+Als u een Microsoft-certificeringsinstantie gebruikt (CA):
+
+- Als u SCEP-certificaatprofielen wilt gebruiken, moet u [een NDES-server (Network Device Enrollment Service) instellen](certificates-scep-configure.md#set-up-ndes) voor gebruik met Intune.
+- Als u de volgende certificaatprofieltypen wilt gebruiken, moet u de [Microsoft Intune Certificate Connector installeren](certificates-scep-configure.md#install-the-intune-certificate-connector):
+  - SCEP-certificaatprofiel
+  - PKCS-certificaatprofiel
+
+- Geïmporteerde PKCS-certificaten gebruiken:
+  - [Installeer de PFX-certificaatconnector voor Microsoft Intune](certificates-imported-pfx-configure.md#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
+  - Exporteer certificaten van de certificeringsinstantie en importeer deze vervolgens in Microsoft Intune. Zie [het PowerShell-project PFXImport](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
+
+- Certificaten implementeren met behulp van de volgende mechanismen:
+  - [Vertrouwde certificaatprofielen](certificates-configure.md#create-trusted-certificate-profiles) om van het vertrouwde basis-CA-certificaat vanuit uw basis-CA of tussenliggende (verlenende) CA naar apparaten te implementeren
+  - SCEP-certificaatprofielen
+  - PKCS-certificaatprofielen
+  - Geïmporteerde PKCS-certificaatprofielen
+
+### <a name="general-considerations-when-you-use-a-third-party-certification-authority"></a>Algemene overwegingen als u een externe certificeringsinstantie gebruikt
+
+Als u een externe (niet-Microsoft) certificeringsinstantie (CA) gebruikt:
+
+- SCEP-certificaatprofielen gebruiken:
+  - Stel integratie met een externe certificeringsinstantie in van [een van onze ondersteunde partners](certificate-authority-add-scep-overview.md#third-party-certification-authority-partners). Dit instellen omvat het volgen van de instructies van de externe certificeringsinstantie waardoor de integratie van hun CA met Intune wordt voltooid.
+  - [Maak een toepassing in Azure AD](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration) die de rechten voor Intune delegeert zodat de validatie van de SCEP-certificaatverificatievraag kan worden uitgevoerd.
+
+- Voor geïmporteerde PKCS-certificaten moet u de [PFX-certificaatconnector voor Microsoft Intune installeren](certificates-imported-pfx-configure.md#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
+
+- Certificaten implementeren met behulp van de volgende mechanismen:
+  - [Vertrouwde certificaatprofielen](certificates-configure.md#create-trusted-certificate-profiles) om van het vertrouwde basis-CA-certificaat vanuit uw basis-CA of tussenliggende (verlenende) CA naar apparaten te implementeren
+  - SCEP-certificaatprofielen
+  - PKCS-certificaatprofielen *(alleen ondersteund voor het [Digicert PKI-platform](certificates-digicert-configure.md))*
+  - Geïmporteerde PKCS-certificaatprofielen
 
 ## <a name="supported-platforms-and-certificate-profiles"></a>Ondersteunde platforms en certificaatprofielen
 
@@ -55,7 +81,7 @@ Elk afzonderlijk certificaatprofiel dat u maakt, ondersteunt één platform. Als
 |--|--|--|--|---|
 | Android-apparaatbeheerder | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png)|  ![Ondersteund](./media/certificates-configure/green-check.png) |
 | Android Enterprise <br> - Volledig beheerd (apparaateigenaar)   | ![Ondersteund](./media/certificates-configure/green-check.png) |   | ![Ondersteund](./media/certificates-configure/green-check.png) |   |
-| Android Enterprise <br> - Toegewezen (apparaateigenaar)   |  |   |  |   |
+| Android Enterprise <br> - Toegewezen (apparaateigenaar)   | ![Ondersteund](./media/certificates-configure/green-check.png)  |   | ![Ondersteund](./media/certificates-configure/green-check.png)  |   |
 | Android Enterprise <br> - Werkprofiel    | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png) |
 | iOS                   | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png) | ![Ondersteund](./media/certificates-configure/green-check.png) |
 | macOS                 | ![Ondersteund](./media/certificates-configure/green-check.png) |  ![Ondersteund](./media/certificates-configure/green-check.png) |![Ondersteund](./media/certificates-configure/green-check.png)|![Ondersteund](./media/certificates-configure/green-check.png)|
@@ -65,7 +91,7 @@ Elk afzonderlijk certificaatprofiel dat u maakt, ondersteunt één platform. Als
 
 ## <a name="export-the-trusted-root-ca-certificate"></a>Het vertrouwde basis-CA-certificaat exporteren
 
-Als u geïmporteerde PKCS-, SCEP- en PKCS-certificaten wilt gebruiken, moeten apparaten uw basiscertificeringsinstantie vertrouwen. Als u vertrouwen tot stand wilt brengen, exporteert u het certificaat van de vertrouwde basiscertificeringsinstantie (basis-CA), evenals tussenliggende certificaten of certificaten van verlenende certificeringsinstanties, als een openbaar certificaat (.cer). U kunt deze certificaten ophalen bij de verlenende CA of vanaf elk apparaat dat uw verlenende CA vertrouwt.
+Als u geïmporteerde PKCS-, SCEP- en PKCS-certificaten wilt gebruiken, moeten apparaten uw basiscertificeringsinstantie vertrouwen. Als u vertrouwen tot stand wilt brengen, exporteert u het certificaat van de vertrouwde basis-CA, evenals tussenliggende certificaten of certificaten van verlenende certificeringsinstanties, als een openbaar certificaat (.cer). U kunt deze certificaten ophalen bij de verlenende CA of vanaf elk apparaat dat uw verlenende CA vertrouwt.
 
 Raadpleeg de documentatie van uw certificeringsinstantie om het certificaat te exporteren. U moet het openbare certificaat exporteren als een CER-bestand.  Exporteer niet de persoonlijke sleutel (een PFX-bestand).
 
@@ -73,12 +99,11 @@ U gebruikt dit CER-bestand wanneer u [vertrouwde certificaatprofielen](#create-t
 
 ## <a name="create-trusted-certificate-profiles"></a>profielen voor vertrouwde certificaten maken
 
-U moet een vertrouwd certificaatprofiel maken voordat u een SCEP-, PKCS- of geïmporteerd PKCS-certificaatprofiel kunt maken. Zorg er bij het implementeren van een vertrouwd certificaatprofiel voor dat elk apparaat de geldigheid van uw certificeringsinstantie herkent. SCEP-certificaat profielen verwijzen rechtstreeks naar een vertrouwd certificaatprofiel. PKCS-certificaatprofielen verwijzen niet rechtstreeks naar het vertrouwde certificaatprofiel, maar wel naar de server die als host fungeert voor uw CA. Geïmporteerde PKCS-certificaatprofielen verwijzen niet rechtstreeks naar het vertrouwde certificaatprofiel, maar kunnen er wel gebruik van maken op het apparaat. Het implementeren van een vertrouwd certificaatprofiel op apparaten zorgt ervoor dat deze vertrouwensrelatie tot stand wordt gebracht. Wanneer een apparaat de basis-CA niet vertrouwt, mislukt het SCEP- of PKCS-certificaatprofielbeleid.  
+U moet een vertrouwd certificaatprofiel maken voordat u een SCEP-, PKCS- of geïmporteerd PKCS-certificaatprofiel kunt maken. Zorg er bij het implementeren van een vertrouwd certificaatprofiel voor dat elk apparaat de geldigheid van uw certificeringsinstantie herkent. SCEP-certificaat profielen verwijzen rechtstreeks naar een vertrouwd certificaatprofiel. PKCS-certificaatprofielen verwijzen niet rechtstreeks naar het vertrouwde certificaatprofiel, maar wel naar de server die als host fungeert voor uw CA. Geïmporteerde PKCS-certificaatprofielen verwijzen niet rechtstreeks naar het vertrouwde certificaatprofiel, maar kunnen er wel gebruik van maken op het apparaat. Het implementeren van een vertrouwd certificaatprofiel op apparaten zorgt ervoor dat deze vertrouwensrelatie tot stand wordt gebracht. Wanneer een apparaat de basis-CA niet vertrouwt, mislukt het SCEP- of PKCS-certificaatprofielbeleid.
 
-Maak een afzonderlijk vertrouwd certificaatprofiel voor elk apparaatplatform dat u wilt ondersteunen, net zoals u dat voor SCEP-, PKCS- en geïmporteerde PKCS-certificaatprofielen gaat doen.  
+Maak een afzonderlijk vertrouwd certificaatprofiel voor elk apparaatplatform dat u wilt ondersteunen, net zoals u dat voor SCEP-, PKCS- en geïmporteerde PKCS-certificaatprofielen gaat doen.
 
-
-### <a name="to-create-a-trusted-certificate-profile"></a>Een profiel voor een vertrouwd certificaat maken  
+### <a name="to-create-a-trusted-certificate-profile"></a>Een profiel voor een vertrouwd certificaat maken
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -95,17 +120,18 @@ Maak een afzonderlijk vertrouwd certificaatprofiel voor elk apparaatplatform dat
 
 4. Selecteer **Instellingen** en blader naar het CER-bestand met het vertrouwde basis-CA-certificaat dat u hebt geëxporteerd voor gebruik bij dit certificaatprofiel en selecteer vervolgens **OK**.
 
-5. Voor Windows 8.1- en Windows 10-apparaten selecteert u het **doelarchief** voor het vertrouwde certificaat vanuit:  
+5. Voor Windows 8.1- en Windows 10-apparaten selecteert u het **doelarchief** voor het vertrouwde certificaat vanuit:
+
    - **Certificaatarchief van de computer – basis**
    - **Certificaatarchief van de computer – tijdelijk**
    - **Certificaatarchief van de gebruiker – tijdelijk**
 
 6. Als u klaar bent, kiest u **OK**, gaat u terug naar het deelvenster **Profiel maken** en kiest u **Maken**.
 
-Het profiel wordt weergegeven in de lijst met profielen in het venster *Apparaten - Configuratieprofielen* met het profieltype **Vertrouwd certificaat**.  Zorg ervoor dat u dit profiel toewijst aan apparaten die gebruik gaan maken van SCEP- of PKCS-certificaten. Zie [Apparaatprofielen toewijzen](../configuration/device-profile-assign.md) om dit profiel toe te wijzen aan groepen.
+Het profiel wordt weergegeven in de lijst met profielen in het venster *Apparaten - Configuratieprofielen* met het profieltype **Vertrouwd certificaat**. Zorg ervoor dat u dit profiel toewijst aan apparaten die gebruik gaan maken van SCEP- of PKCS-certificaten. Zie [Apparaatprofielen toewijzen](../configuration/device-profile-assign.md) om dit profiel toe te wijzen aan groepen.
 
-> [!NOTE]  
-> Op Android-apparaten wordt mogelijk een bericht weergegeven dat een derde partij een vertrouwd certificaat heeft geïnstalleerd.  
+> [!NOTE]
+> Op Android-apparaten wordt mogelijk een bericht weergegeven dat een derde partij een vertrouwd certificaat heeft geïnstalleerd.
 
 ## <a name="additional-resources"></a>Extra resources
 
@@ -115,7 +141,8 @@ Het profiel wordt weergegeven in de lijst met profielen in het venster *Apparate
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Maak SCEP-, PKCS- of geïmporteerde PKCS-certificaatprofielen voor elk platform dat u wilt gebruiken. Raadpleeg de volgende artikelen om verder te gaan:  
+Maak SCEP-, PKCS- of geïmporteerde PKCS-certificaatprofielen voor elk platform dat u wilt gebruiken. Raadpleeg de volgende artikelen om verder te gaan:
+
 - [Infrastructuur configureren om SCEP-certificaten te ondersteunen in Intune](certificates-scep-configure.md)  
 - [PKCS-certificaten configureren en beheren met Intune](certficates-pfx-configure.md)  
-- [Een geïmporteerd PKCS-certificaatprofiel maken](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
+- [Een geïmporteerd PKCS-certificaatprofiel maken](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)

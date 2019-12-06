@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b60e4d801d09a834e11119260d3054cf43251bbd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3ca83287c58f8d2fb7c8eec5f8cc793e2c67b77a
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502959"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390706"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Een aangepaste rol in Intune maken
 
@@ -49,6 +49,21 @@ Als u rollen wilt maken, bewerken of toewijzen, moet uw account een van de volge
 7. Als u klaar bent, kiest u **OK**.
 
 8. Klik op de blade **Aangepaste rol toevoegen** op **Maken**. De nieuwe rol wordt weergegeven in de lijst op de blade **Intune-rollen - Alle rollen**.
+
+
+## <a name="copy-a-role"></a>Een rol kopiëren
+
+U kunt ook een bestaande rol kopiëren.
+
+1. Meld u aan bij de [Azure-portal](https://portal.azure.com) met uw Intune-referenties en selecteer **Intune**.
+
+2. Selecteer **Rollen** > **Alle rollen** > selecteer een rol in de lijst > **Dupliceren**.
+
+3. Voer onder **Rol dupliceren** een naam in. Zorg ervoor dat u een unieke naam gebruikt.
+
+4. Alle machtigingen en bereiktags van de oorspronkelijke rol zijn al geselecteerd. U kunt vervolgens de **naam**, **beschrijving**, **machtigingen** en **bereik(tags)** van de dubbele rol wijzigen.
+
+5. Selecteer **Maken**. 
 
 ## <a name="next-steps"></a>Volgende stappen
 - [Een rol toewijzen aan een gebruiker](assign-role.md)

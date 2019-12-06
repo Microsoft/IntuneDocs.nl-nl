@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 11/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,21 +17,18 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: ed3152a6717898aa1f758fb06a5f701048aebed4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7ce6def40c6c0fff3a28f884c458220283979234
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508783"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465768"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Windows Hello voor Bedrijven integreren in Microsoft Intune  
 
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
 U kunt Windows Hello voor Bedrijven (voorheen Microsoft Passport for Work) integreren in Microsoft Intune.
 
- Hello voor Bedrijven biedt een alternatieve aanmeldingsmethode waarbij Active Directory of een Azure Active Directory-account wordt gebruikt om een wachtwoord, smartcard of virtuele smartcard te vervangen. Hiermee kan de gebruiker zich aanmelden met een *gebaar* in plaats van met een wachtwoord. Een gebaar van de gebruiker kan een eenvoudige pincode zijn, biometrische verificatie zoals Windows Hello of een extern apparaat zoals een vingerafdruklezer.
+ Hello voor Bedrijven biedt een alternatieve aanmeldingsmethode waarbij Active Directory of een Azure Active Directory-account wordt gebruikt om een wachtwoord, smartcard of virtuele smartcard te vervangen. Hiermee kan de gebruiker zich aanmelden met een *gebaar* in plaats van met een wachtwoord. Een gebaar van de gebruiker kan een pincode zijn, biometrische verificatie zoals Windows Hello of een extern apparaat zoals een vingerafdruklezer.
 
 Intune integreert op twee manieren met Hello voor bedrijven:
 
@@ -56,56 +53,64 @@ Gebruik dit artikel om een standaard Windows Hello voor Bedrijven-beleid te make
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Een beleid voor Windows Hello voor Bedrijven maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431.
 
-2. Ga naar **Apparaatinschrijving** > **Windows-inschrijving** > **Windows Hello voor Bedrijven**. Het deelvenster Windows Hello voor Bedrijven wordt geopend.
+2. Ga naar **Apparaten** > inschrijving** > **Apparaten inschrijven** > **Windows-inschrijving** > **Windows Hello voor Bedrijven**. Het deelvenster Windows Hello voor Bedrijven wordt geopend.
 
 3. Selecteer een van de volgende opties voor **Windows Hello voor Bedrijven configureren**:
 
     - **Uitgeschakeld**. Als u Windows Hello voor Bedrijven niet wilt gebruiken, selecteert u deze instelling. Als deze instelling is uitgeschakeld, kunnen gebruikers Windows Hello voor Bedrijven niet inrichten, behalve op aan Azure Active Directory gekoppelde mobiele telefoons waarvoor het inrichten mogelijk vereist is.
-    - **Ingeschakeld**. Selecteer deze instelling als u instellingen voor Windows Hello voor Business wilt configureren.  Wanneer u *Ingeschakeld* selecteert, worden extra instellingen voor Windows Hello zichtbaar. 
+    - **Ingeschakeld**. Selecteer deze instelling als u instellingen voor Windows Hello voor Business wilt configureren.  Wanneer u *Ingeschakeld* selecteert, worden extra instellingen voor Windows Hello zichtbaar.
     - **Niet geconfigureerd**. Selecteer deze instelling als u niet met Intune instellingen voor Windows Hello voor Bedrijven wilt beheren. Alle eventueel bestaande Windows Hello voor Bedrijven-instellingen voor Windows 10-apparaten worden niet gewijzigd. Alle andere instellingen in het deelvenster zijn niet beschikbaar.
 
 4. Als u in de vorige stap **Ingeschakeld** hebt geselecteerd, configureert u de vereiste instellingen die worden toegepast op alle ingeschreven Windows 10- en Windows 10 Mobile-apparaten. Nadat u deze instellingen hebt geconfigureerd, selecteert u **Opslaan**.
 
-   - **Een TPM (Trusted Platform Module) gebruiken**:  
+   - **Een TPM (Trusted Platform Module) gebruiken**:
+
      Een TPM-chip biedt een extra laag gegevensbeveiliging. Kies een van de volgende waarden:
 
      - **Vereist** (standaard). Alleen apparaten met een toegankelijke TPM kunnen Windows Hello voor Bedrijven inrichten.
-     - **Voorkeur**. Apparaten proberen eerst een TPM te gebruiken. Als deze niet beschikbaar is, kunnen ze softwareversleuteling gebruiken.
+     - **Voorkeur**. Apparaten proberen eerst een TPM te gebruiken. Als deze optie niet beschikbaar is, kunnen ze softwareversleuteling gebruiken.
 
-   - **Minimumlengte voor pincode** en **Maximumlengte voor pincode**:  
+   - **Minimumlengte voor pincode** en **Maximumlengte voor pincode**:
+
      Hiermee configureert u apparaten om de opgegeven minimum- en maximumlengte van de pincode te gebruiken voor het beveiligen van de aanmelding. De standaardwaarde voor de pincode is zes tekens, maar u kunt een minimumlengte van vier tekens afdwingen. De maximumlengte voor de pincode is 127 tekens.
 
-   - **Kleine letters in pincode**, **Hoofdletters in pincode** en **Speciale tekens in pincode**.  
+   - **Kleine letters in pincode**, **Hoofdletters in pincode** en **Speciale tekens in pincode**.
+
      U kunt zorgen voor sterkere pincodes door het gebruik van kleine letters, hoofdletters en speciale tekens voor de pincode af te dwingen. Selecteer voor elk tekentype een van de volgende opties:
 
      - **Toegestaan**. Gebruikers kunnen het tekentype gebruiken in hun pincode, maar dit is niet verplicht.
 
      - **Vereist**. Gebruikers moeten ten minste een van de tekentypen in hun pincode opnemen. Het is bijvoorbeeld gebruikelijk om ten minste één hoofdletter en één speciaal teken verplicht te stellen.
 
-     - **Niet toegestaan** (standaardinstelling). Gebruikers mogen deze tekentypen niet in hun pincode gebruiken. (Dit is ook het gedrag als de instelling niet is geconfigureerd.)   
+     - **Niet toegestaan** (standaardinstelling). Gebruikers mogen deze tekentypen niet in hun pincode gebruiken. (Dit is ook het gedrag als de instelling niet is geconfigureerd.)
 
        Tot de speciale tekens behoren: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**
 
-   - **Verlooptijd pincode (dagen)** :  
+   - **Verlooptijd pincode (dagen)** :
+
      Het is raadzaam om een verloopperiode voor een pincode op te geven, waarna gebruikers deze moeten wijzigen. De standaardwaarde is 41 dagen.
 
-   - **Pincodegeschiedenis onthouden**:  
+   - **Pincodegeschiedenis onthouden**:
+
      Beperkt het hergebruik van eerder gebruikte pincodes. Standaard kunnen de laatste 5 gebruikte pincodes niet opnieuw worden gebruikt.
 
-   - **Biometrische verificatie toestaan**:  
+   - **Biometrische verificatie toestaan**:
+
      Hiermee kunt u biometrische verificatie, zoals gezichtsherkenning of een vingerafdruk, inschakelen als alternatief voor een pincode voor Windows Hello voor Bedrijven. Gebruikers moeten toch een pincode voor Passport for Work configureren voor het geval dat biometrische verificatie mislukt. U kunt kiezen uit:
 
      - **Ja**. Windows Hello voor bedrijven staat biometrische verificatie toe.
      - **Nee**. Windows Hello voor Bedrijven staat biometrische verificatie niet toe (voor alle typen accounts).
 
-   - **Verbeterde anti-adresvervalsing gebruiken, indien beschikbaar**:  
-     Hiermee configureert u of de functies voor anti-adresvervalsing van Windows Hello worden gebruikt op apparaten die deze functie ondersteunen (bijvoorbeeld een foto van een gezicht in plaats van een echt gezicht detecteren).  
+   - **Verbeterde anti-adresvervalsing gebruiken, indien beschikbaar**:
+
+     hiermee wordt geconfigureerd of de anti-adresvervalsingsfuncties van Windows Hello worden gebruikt op apparaten die hier ondersteuning voor bieden. Bijvoorbeeld een foto van een gezicht detecteren in plaats van een echt gezicht.
 
      Als deze optie is ingesteld op **Ja**, moeten alle gebruikers anti-adresvervalsing gebruiken voor gezichtskenmerken, indien dat wordt ondersteund.
 
-   - **Aanmelding via de telefoon toestaan**:  
+   - **Aanmelding via de telefoon toestaan**:
+
      Als u deze optie instelt op **Ja**, kunnen gebruikers een extern passport gebruiken als draagbaar begeleidingsapparaat voor verificatie op desktopcomputers. De computer moet zijn toegevoegd aan Azure Active Directory en het begeleidingsapparaat moet worden geconfigureerd met een pincode voor Windows Hello voor Bedrijven.
 
 ## <a name="windows-holographic-for-business-support"></a>Ondersteuning voor Windows Holographic for Business
@@ -121,5 +126,6 @@ De volgende instellingen voor Windows Hello for Business worden in Windows Holog
 - Verlooptijd pincode (dagen)
 - Pincodegeschiedenis onthouden
 
-## <a name="further-information"></a>Meer informatie
+## <a name="next-steps"></a>Volgende stappen
+
 Zie [de gids](https://technet.microsoft.com/library/mt589441.aspx) in de documentatie van Windows 10 voor meer informatie over Windows Hello voor Bedrijven.

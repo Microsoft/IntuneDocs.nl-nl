@@ -6,31 +6,31 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
-ms.reviewer: heenamac
+ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42500618c5ec753fcabf72b03f175b823c3337d4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 504c77fb56918cf97312e70f50b38356f9f7efef
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504395"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409701"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>MTD-nalevingsbeleid (Mobile Threat Defense) voor apparaten maken met Intune
 
-> [!NOTE] 
-> Deze informatie is van toepassing op alle Mobile Threat Defense-partners.
-
 Intune met MTD helpt u bij het detecteren van bedreigingen en het beoordelen van risico op mobiele apparaten. U kunt een Intune-nalevingsbeleidsregel maken voor een risicoanalyse waarmee wordt bepaald of het apparaat compatibel is. Vervolgens kunt u [beleid voor voorwaardelijke toegang](create-conditional-access-intune.md) gebruiken om toegang tot services te blokkeren op basis van de apparaatnaleving.
+
+> [!NOTE]
+> Deze informatie is van toepassing op alle Mobile Threat Defense-partners.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
@@ -42,44 +42,41 @@ Vereisten voor apparaatnalevingsbeleid met MTD:
 
 ## <a name="to-create-an-mtd-device-compliance-policy"></a>Nalevingsbeleid voor MTD-apparaten maken
 
-1. Ga naar [Azure Portal](https://portal.azure.com/) en meld u aan met uw Intune-referenties.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Kies in het **Azure-dashboard** in het linkermenu de optie **Alle services** en typ vervolgens **Intune** in het filtertekstvak.
+2. Selecteer **Apparaat** > **Nalevingsbeleid** > **Beleid maken**.
 
-3. Kies **Intune**. Vervolgens ziet u het **Intune-dashboard**.
+3. Geef een **Naam**, **Beschrijving** op voor het nalevingsbeleid van het apparaat, selecteer het **Platform** en selecteer vervolgens **Configureren** onder de sectie **Instellingen**.
 
-4. Kies in het **Intune-dashboard** de optie **Apparaatcompatibiliteit** en kies vervolgens **Beleidsregels** onder de sectie **Beheren**.
+4. Kies in het deelvenster **Nalevingsbeleid** de optie **Apparaatstatus**.
 
-5. Kies **Beleid maken**, voer waarden in voor **Naam**, **Beschrijving** van apparaatcompatibiliteit, selecteer het **Platform** en kies vervolgens **Configureren** onder de sectie **Instellingen**.
+5. Kies in het deelvenster **Apparaatstatus** het Mobile Threat-niveau uit de vervolgkeuzelijst bij **Vereisen dat het apparaat het apparaatdreigingsniveau niet overschrijdt**.
 
-6. Kies in het deelvenster **Nalevingsbeleid** de optie **Apparaatstatus**.
+   - **Beveiligd**: Dit is het veiligste niveau. Het apparaat kan geen enkele bedreiging hebben en heeft nog altijd toegang tot bedrijfsbronnen. Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.
 
-7. Kies in het deelvenster **Apparaatstatus** het Mobile Threat-niveau uit de vervolgkeuzelijst onder **Vereisen dat het apparaat het apparaatdreigingsniveau niet overschrijdt**.
+   - **Laag**: het apparaat is conform als er alleen bedreigingen van een laag niveau aanwezig zijn. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
 
-    a.  **Beveiligd**: Dit is het veiligste niveau. Het apparaat kan geen enkele bedreiging hebben en heeft nog altijd toegang tot bedrijfsbronnen. Als er bedreigingen worden gevonden, wordt het apparaat geëvalueerd als niet-compatibel.
+   - **Gemiddeld**: het apparaat is conform als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
 
-    b.  **Laag**: het apparaat is conform als er alleen bedreigingen van een laag niveau aanwezig zijn. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
+   - **Hoog**: dit is het minst veilige niveau. Hiermee worden alle bedreigingsniveaus toegestaan en wordt Mobile Threat Defense uitsluitend gebruikt voor rapportagedoeleinden. Op apparaten moet de MTD-app met deze instelling zijn geactiveerd.
 
-    c.  **Gemiddeld**: het apparaat is conform als de bedreigingen op het apparaat van laag of gemiddeld niveau zijn. Als er bedreigingen van hoog niveau worden aangetroffen, wordt het apparaat als niet-compatibel beoordeeld.
-
-    d.  **Hoog**: dit is het minst veilige niveau. Hiermee worden alle bedreigingsniveaus toegestaan en wordt Mobile Threat Defense uitsluitend gebruikt voor rapportagedoeleinden. Op apparaten moet de MTD-app met deze instelling zijn geactiveerd.
-
-8. Klik tweemaal op **OK** en kies vervolgens **Maken**.
+6. Selecteer tweemaal **OK** en vervolgens **Maken** om het beleid te maken.
 
 > [!IMPORTANT]
 > Als u beleid voor voorwaardelijke toegang voor Office 365 of andere services maakt, wordt de compatibiliteitsevaluatie van het apparaat bekeken en wordt niet-compatibele apparaten de toegang tot bedrijfsresources geweigerd tot de bedreiging op het apparaat is opgelost.
 
 ## <a name="to-assign-an-mtd-device-compliance-policy"></a>Nalevingsbeleid voor MTD-apparaten toewijzen
 
-Als u een nalevingsbeleid voor apparaten aan gebruikers wilt toewijzen, kiest u een beleid dat u eerder hebt geconfigureerd. Bestaande beleidsregels vindt u in het deelvenster **Apparaatnaleving - beleid**.
+Een nalevingsbeleid voor apparaten aan gebruikers toewijzen:
 
-1. Kies het beleid dat u aan gebruikers wilt toewijzen en kies **Toewijzingen**. Met deze actie opent u het deelvenster waar u **Azure Active Directory-beveiligingsgroepen** kunt selecteren en aan het beleid kunt toewijzen.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Kies **Groepen selecteren om op te nemen** om het deelvenster met de Azure AD-beveiligingsgroepen te openen.  Als u **Selecteren** kiest, wordt het beleid bij gebruikers geïmplementeerd.
+2. Selecteer **Apparaat** > **Nalevingsbeleid**.
 
-    > [!NOTE] 
-    > U hebt het beleid toegepast op gebruikers. De apparaten die worden gebruikt door de gebruikers op wie het beleid is toegepast, worden gecontroleerd om te zien of ze compatibel zijn.
+3. Selecteer het beleid dat u aan gebruikers wilt toewijzen en kies vervolgens **Toewijzingen**. Gebruik de beschikbare opties *Opnemen* en *Uitsluiten* als u wilt dat groepen dit beleid al dan niet ontvangen.  
+
+4. Selecteer Opslaan om de toewijzing te voltooien. Wanneer u de toewijzing opslaat, wordt het beleid naar de geselecteerde gebruikers geïmplementeerd en worden hun apparaten geëvalueerd op naleving.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-- [MTD met Intune inschakelen](mtd-connector-enable.md)
+[MTD met Intune inschakelen](mtd-connector-enable.md)

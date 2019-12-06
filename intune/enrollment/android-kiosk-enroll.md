@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c06fe931bf17b812def3f22b3d9a5d92d9933e2b
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709466"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390726"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Intune-inschrijving van toegewezen Android Enterprise-apparaten instellen
 
@@ -101,6 +101,9 @@ Het vervangen of intrekken van een token of QR-code heeft geen effect op apparat
 ## <a name="enroll-the-dedicated-devices"></a>De toegewezen apparaten inschrijven
 
 U kunt nu [uw toegewezen apparaten inschrijven](android-dedicated-devices-fully-managed-enroll.md).
+
+> [!NOTE]
+> De **Microsoft Intune**-app wordt automatisch geïnstalleerd als een toegewezen apparaat wordt ingeschreven.  Deze app is vereist voor inschrijving en kan niet worden verwijderd. 
 
 ## <a name="managing-apps-on-android-enterprise-dedicated-devices"></a>Apps beheren op toegewezen Android Enterprise-apparaten
 

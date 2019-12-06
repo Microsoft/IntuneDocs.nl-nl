@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9f9d6626d26e919efbd3a3d8b5dd735ecb7fb62
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199142"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390288"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>SCEP-certificaatprofielen maken en toewijzen in Intune
 
@@ -53,6 +53,9 @@ Nadat u [uw infrastructuur hebt geconfigureerd](certificates-scep-configure.md) 
 
    2. U kunt Intune niet gebruiken om certificaten in te trekken die zijn ingericht door SCEP-certificaatprofielen voor eigenaren van apparaten. U kunt het intrekken beheren via een extern proces of rechtstreeks met de certificeringsinstantie. 
 
+   4. Bij toegewezen Android Enterprise-apparaten worden SCEP-certificaatprofielen alleen ondersteund voor het configureren en verifiëren van Wi-Fi-netwerken.  SCEP-certificaatprofielen op toegewezen Android Enterprise-apparaten worden niet ondersteund voor VPN- of app-verificatie.   
+
+   
 7. Selecteer **Instellingen** en voltooi de volgende configuraties:
 
    - **Certificaattype**:

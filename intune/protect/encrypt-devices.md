@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,14 +17,14 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ce5db670f0084626f1c053b64679623ccf28eb21
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164635"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390347"
 ---
-# <a name="use-device-encryption-with-intune"></a>Apparaatversleuteling gebruiken met Intune  
+# <a name="use-device-encryption-with-intune"></a>Apparaatversleuteling gebruiken met Intune
 
 U kunt Intune gebruiken om de versleuteling van de ingebouwde schijf of het station van een apparaat te beheren voor het beschermen van de gegevens op uw apparaten.
 
@@ -68,7 +68,7 @@ Voor meer informatie over de FileVault-instelling die u met Intune kunt beheren,
 
    Overweeg een bericht toe te voegen om eindgebruikers te helpen bij het ophalen van de herstelsleutel voor hun apparaat. Deze informatie kan nuttig zijn voor uw eindgebruikers wanneer u de instelling voor wijziging van persoonlijke herstelsleutels gebruikt. Met deze instelling kan periodiek automatisch een nieuwe herstelsleutel voor een apparaat worden gegenereerd.
 
-   Bijvoorbeeld: Als u een verloren of onlangs vernieuwde herstelsleutel wilt ophalen, meldt u zich aan op de website van de Intune-bedrijfsportal. Dit kan vanaf elk apparaat. Ga in de portal naar *Apparaten* en selecteer het apparaat waarvoor FileVault is ingeschakeld. Selecteer dan *Herstelsleutel ophalen*. De huidige herstelsleutel wordt weergegeven.  
+   Bijvoorbeeld: Als u een verloren of onlangs vernieuwde herstelsleutel wilt ophalen, meldt u zich aan op de website van de Intune-bedrijfsportal. Dit kan vanaf elk apparaat. Ga in de portal naar *Apparaten* en selecteer het apparaat waarvoor FileVault is ingeschakeld. Selecteer dan *Herstelsleutel ophalen*. De huidige herstelsleutel wordt weergegeven.
 
 7. Configureer de overige [FileVault-instellingen](endpoint-protection-macos.md#filevault) zodanig dat er aan de vereisten van uw bedrijf wordt voldaan. Selecteer vervolgens **OK**.
 
@@ -114,13 +114,37 @@ Configureer BitLocker bij het maken van een [apparaatconfiguratieprofiel](../con
 
 6. Voltooi de configuratie van de aanvullende instellingen en sla het profiel op.
 
-### <a name="manage-bitlocker"></a>BitLocker beheren  
+### <a name="manage-bitlocker"></a>BitLocker beheren
 
 Wanneer Intune een Windows 10-apparaat versleutelt met BitLocker, kunt u de BitLocker-herstelsleutels bekijken en ophalen tijdens het bekijken van het Intune-[versleutelingsrapport](encryption-monitor.md).
 
+### <a name="rotate-bitlocker-recovery-keys"></a>BitLocker-herstelsleutels roteren
+
+U kunt een Intune-apparaatactie gebruiken om de BitLocker-herstelsleutel van een apparaat met Windows 10 versie 1909 of hoger op afstand te roteren.
+
+#### <a name="prerequisites"></a>Vereisten
+
+Apparaten moeten voldoen aan de volgende vereisten om rotatie van de BitLocker-herstelsleutel te ondersteunen:
+
+- Op de apparaten moet Windows 10 versie 1909 of hoger aanwezig zijn
+
+- Op aan Azure AD gekoppelde apparaten en aan Hybrid gekoppelde apparaten moet ondersteuning voor het roteren van sleutels zijn ingeschakeld:
+
+  - **Clientgestuurde rotatie van herstelwachtwoorden**
+
+  Deze instelling vindt u onder *Windows-versleuteling* als onderdeel van een configuratiebeleid voor Endpoint Protection in Windows 10.
+  
+#### <a name="to-rotate-the-bitlocker-recovery-key"></a>De BitLocker-herstelsleutel roteren
+
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Selecteer **Apparaten** > **Alle apparaten**.
+
+3. Selecteer een apparaat in de lijst met apparaten die u beheert, selecteer **Meer** en selecteer de externe apparaatactie **BitLocker-sleutelrotatie**.
+
 ## <a name="next-steps"></a>Volgende stappen
 
-Een [nalevingsbeleid voor apparaten](compliance-policy-create-windows.md) maken
+Een [nalevingsbeleid voor apparaten](compliance-policy-create-windows.md) maken.
 
 U kunt op basis van het versleutelingsrapport de volgende zaken beheren:
 

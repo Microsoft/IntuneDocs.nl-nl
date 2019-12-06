@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/20/2019
+ms.date: 1/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84ef86a0b3c0ffbfffde572c9759c62645d57dc5
-ms.sourcegitcommit: 8c651a3ed1f358f19b65206a52f7808282de97c3
+ms.openlocfilehash: 844e93f3a063ae43342d2967cbd544f3ec425c21
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73844816"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410150"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
@@ -56,7 +57,7 @@ Als het dashboard wordt geopend, krijgt u een overzicht met alle nalevingsrappor
 
 Als u dieper wilt ingaan op deze rapporten, kunt u tevens specifieke nalevingsbeleidsregels en instellingen bekijken die betrekking hebben op een specifiek apparaat, met inbegrip van de nalevingsstatus voor elke instelling.
 
-### <a name="device-compliance-status-report"></a>Statusrapport apparaatnaleving
+### <a name="device-compliance-status"></a>De nalevingsstatus van apparaten
 
 De grafiek **Nalevingsstatus van apparaten** toont de nalevingsstatus voor alle bij Intune geregistreerde apparaten. De statussen van apparaatnaleving worden opgeslagen in twee verschillende databases: Intune en Azure Active Directory.
 
@@ -119,7 +120,8 @@ Selecteer in de grafiek **Apparaatgegevens** een specifiek apparaat en selecteer
 
 In Intune wordt meer gedetailleerde informatie weergegeven over de nalevingsbeleidsinstelling die op dat apparaat is toegepast. Wanneer u het specifieke beleid selecteert, worden alle instellingen in het beleid weergegeven.
 
-### <a name="devices-without-compliance-policy"></a>Apparaten zonder nalevingsbeleid
+### <a name="devices-without-compliance"></a>Apparaten zonder nalevingsbeleid
+
 Op de pagina *Nalevingsstatus*, naast de grafiek *Beleidsnaleving*, kunt u de tegel **Apparaten zonder nalevingsbeleid** selecteren om informatie weer te geven over apparaten waaraan geen nalevingsbeleid is toegewezen:
 
 ![Apparaten zonder nalevingsbeleid bekijken](./media/compliance-policy-monitor/devices-without-policies.png)
@@ -136,13 +138,13 @@ Wanneer u de tegel selecteert, ziet u alle apparaten zonder nalevingsbeleid. U z
 
 - Gebruikers aan wie een nalevingsbeleid van welk type dan ook is toegewezen, worden niet weergegeven in het rapport, ongeacht het apparaatplatform. Als u bijvoorbeeld een nalevingsbeleid voor Windows aan een gebruiker met een Android-apparaat hebt toegewezen, wordt het apparaat niet weergegeven in het rapport. Intune beschouwt echter dat Android-apparaat als niet compatibel. Om problemen te voorkomen, wordt aangeraden dat u beleid voor elk apparaatplatform maakt en dit naar alle gebruikers implementeert.
 
-### <a name="per-policy-device-compliance-report"></a>Rapport apparaatnaleving per beleid
+### <a name="per-policy-device-compliance"></a>Apparaatnaleving per beleid
 
 In de grafiek **Beleidsnaleving** ziet u het beleid en het aantal apparaten dat compatibel en niet-compatibel is. 
 
 ![Bekijk een overzicht van het beleid en het aantal compatibele apparaten ten opzichte van het aantal niet-compatibele apparaten voor dat beleid](./media/compliance-policy-monitor/idc-8.png)
 
-## <a name="setting-compliance-report"></a>Rapport nalevingsinstellingen
+### <a name="setting-compliance"></a>Naleving van instelling
 
 In de grafiek **Naleving van instelling** worden alle instellingen van het nalevingsbeleid voor de apparaten van alle beleidsregels voor naleving, de platforms waarop de beleidsinstellingen zijn toegepast en het aantal niet-compatibele apparaten weergegeven.
 
@@ -152,6 +154,24 @@ In de grafiek **Naleving van instelling** worden alle instellingen van het nalev
 > Een beleid kan worden toegewezen aan een apparaat en een gebruiker op hetzelfde apparaat. In sommige gevallen kan een apparaat worden gesynchroniseerd voordat de gebruiker zich aanmeldt, bijvoorbeeld wanneer het apparaat opnieuw wordt opgestart. Door de nalevingsfunctie kan deze gebruiker worden geëvalueerd en het apparaat als niet-compatibel worden weergegeven. Dit gedrag kan ook het systeemaccount als een niet-compatibele gebruiker weergeven.
 >
 > Dit is een bekend probleem met Windows 10-apparaten voor meerdere gebruikers. Eventuele wijzigingen of updates van dit gedrag worden aangekondigd in [In ontwikkeling](../fundamentals/in-development.md) en/of [Wat is er nieuw](../fundamentals/whats-new.md).
+
+## <a name="view-compliance-reports"></a>Nalevingsrapporten weergeven
+
+Naast het gebruik van de grafieken met betrekking tot de *Status van naleving* kunt u nalevingsrapporten bekijken op de pagina *Bewaken* van het beheercentrum.
+
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Selecteer **Apparaten** > **Bewaken** en vervolgens onder **Naleving** het rapport dat u wilt bekijken. Enkele van de beschikbare nalevingsrapporten zijn:
+
+   - Apparaatnaleving
+   - Niet-compatibele apparaten
+   - Apparaten zonder nalevingsbeleid
+   - Naleving van instelling
+   - Beleidsnaleving
+   - Windows Health Attestation-rapport
+   - Status van de dreigingsagent
+
+Zie [Intune-rapporten](../fundamentals/reports.md) voor meer informatie over rapporten
 
 ## <a name="view-status-of-device-policies"></a>Status van apparaatbeleid weergeven
 

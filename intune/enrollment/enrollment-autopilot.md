@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 454d23038a593829ea8a14929dc435e9f9ddb457
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 8d24a858ec66433e72d63bea922eac0c4072a27c
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709482"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547755"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -49,7 +49,7 @@ Raadpleeg voor meer informatie 'De PowerShell-cmdlet begrijpen'.
 
 U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren met de bijbehorende informatie.
 
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > **Importeren**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), **Apparaten** > **Windows** > **Apparaten** (onder **Windows Autopilot Deployment-programma** > **Importeren**.
 
     ![Schermafbeelding van Windows Autopilot-apparaten](./media/enrollment-autopilot/autopilot-import-device.png)
 
@@ -65,7 +65,7 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
 
 3. Kies **Importeren** om apparaatgegevens te importeren. Het importeren kan enkele minuten duren.
 
-4. Wanneer het importeren is voltooid, kiest u **Apparaatinschrijving** > **Windows-inschrijving** > **Windows Autopilot** > **Apparaten** > **Synchroniseren**. Er wordt een bericht weergegeven dat de synchronisatie wordt uitgevoerd. Het proces kan enige minuten duren, afhankelijk van hoeveel apparaten er worden gesynchroniseerd.
+4. Nadat het importeren is voltooid, kiest u **Apparaten** > **Windows** > **Windows-inschrijving** > **Apparaten** (onder **Windows Autopilot Deployment-programma** > **Sync**. Er wordt een bericht weergegeven dat de synchronisatie wordt uitgevoerd. Het proces kan enige minuten duren, afhankelijk van hoeveel apparaten er worden gesynchroniseerd.
 
 5. Vernieuw de weergave om de nieuwe apparaten te zien.
 
@@ -88,7 +88,7 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Een Autopilot-implementatieprofiel maken
 Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren. U kunt maximaal 350 profielen per tenant maken.
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Implementatieprofielen** > **Profiel maken**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaten** > **Windows** > **Windows-inschrijving** > **Implementatieprofielen** > **Profiel maken**.
 2. Geef op de pagina **Basisinformatie** een waarde op voor **Naam** en eventueel ook voor **Beschrijving**.
 
     ![Schermopname van de pagina Basisinformatie](./media/enrollment-autopilot/create-profile-basics.png)
@@ -129,25 +129,35 @@ Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren. U
     ![Schermopname van de pagina Beoordelen en maken](./media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Er wordt regelmatig door Intune gecontroleerd of de toegewezen groepen nieuwe apparaten bevatten. Vervolgens worden er profielen aan eventuele nieuwe apparaten toegewezen. Dit proces kan enkele minuten duren. Zorg ervoor dat dit proces is voltooid voordat u een apparaat implementeert.  U kunt bij **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** controleren waar u de wijzigingen in de profielstatus van 'Niet-toegewezen' naar 'Toewijzen' en tot slot naar 'Toegewezen' kunt bekijken.
+> Er wordt regelmatig door Intune gecontroleerd of de toegewezen groepen nieuwe apparaten bevatten. Vervolgens worden er profielen aan eventuele nieuwe apparaten toegewezen. Dit proces kan enkele minuten duren. Zorg ervoor dat dit proces is voltooid voordat u een apparaat implementeert.  U kunt bij **Apparaten** > **Windows** > **Windows-inschrijving** > **Apparaten** (onder  **Windows Autopilot Deployment-programma** controleren waar u de wijzigingen in de profielstatus van 'Niet-toegewezen' naar 'Toewijzen' en tot slot naar 'Toegewezen' kunt bekijken.
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Een Windows Autopilot-implementatieprofiel bewerken
 Nadat u een Autopilot-implementatieprofiel hebt gemaakt, kunt u bepaalde delen ervan bewerken.   
 
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving**.
-2. Onder **Windows-inschrijving** in het gedeelte **Windows Autopilot** kiest u **Implementatieprofielen**.
-3. Selecteer het profiel dat u wilt bewerken.
-4. Klik links op **Eigenschappen** om de naam of beschrijving van het implementatieprofiel te wijzigen. Klik op **Opslaan** wanneer u klaar bent met het aanbrengen van wijzigingen.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de optie **Apparaten** > **Windows** > **Windows-inschrijving** > **Implementatieprofielen**.
+2. Selecteer het profiel dat u wilt bewerken.
+3. Selecteer **Eigenschappen** aan de linkerkant om de naam of beschrijving van het implementatieprofiel te wijzigen. Klik op **Opslaan** wanneer u klaar bent met het aanbrengen van wijzigingen.
 5. Klik op **Instellingen** de OOBE-instellingen te wijzigen. Klik op **Opslaan** wanneer u klaar bent met het aanbrengen van wijzigingen.
 
 > [!NOTE]
 > Wijzigingen aan het profiel worden toegepast op apparaten die zijn toegewezen aan dit profiel. Het bijgewerkte profiel wordt echter niet toegepast op een apparaat dat al is ingeschreven bij Intune totdat het apparaat opnieuw is ingesteld en ingeschreven.
 
+## <a name="edit-autopilot-device-attributes"></a>Kenmerken van Autopilot-apparaten bewerken
+Nadat u een Autopilot-apparaat hebt geüpload, kunt u bepaalde kenmerken van het apparaat bewerken.
+
+1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), **Apparaten** > **Windows** > **Windows-inschrijving** > **Apparaten** (onder **Windows Autopilot Deployment-programma**.
+2. Selecteer het apparaat dat u wilt bewerken.
+3. In het deelvenster rechts in het scherm kunt u de naam van het apparaat, het groepslabel of de gebruikersvriendelijke namen van de gebruiker (als u een gebruiker hebt toegewezen) bewerken.
+4. Selecteer **Opslaan**.
+
+> [!NOTE]
+> Voor alle apparaten kunnen apparaatnamen worden geconfigureerd, maar deze worden genegeerd bij aan Hybrid Azure AD gekoppelde implementaties. De naam van het apparaat is nog steeds afkomstig van het domeindeelnameprofiel voor Hybrid Azure AD-apparaten.
+
 ## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Waarschuwingen voor niet-toegewezen Windows Autopilot-apparaten  <!-- 163236 -->  
 
 Waarschuwingen geven weer hoeveel Autopilot-programma-apparaten geen Autopilot-implementatieprofielen hebben. Aan de hand van de informatie in de waarschuwing kunt u profielen maken en deze toewijzen aan de niet-toegewezen apparaten. Als u op de waarschuwing klikt, verschijnt een volledige lijst met Windows Autopilot-apparaten en gedetailleerde informatie.
 
-Als u waarschuwingen over niet-toegewezen apparaten wilt zien, kiest u in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving** > **Overzicht** > **Niet-toegewezen apparaten**.  
+Als u waarschuwingen over niet-toegewezen apparaten wilt zien, kiest u in [Intune in de Azure-portal](https://aka.ms/intuneportal) de optie **Apparaten** > **Overzicht** > **Inschrijvingswaarschuwingen** > **Niet-toegewezen apparaten**.  
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>Een gebruiker toewijzen aan een specifiek Autopilot-apparaat
 
@@ -155,7 +165,7 @@ U kunt een gebruiker toewijzen aan een specifiek Autopilot-apparaat. Deze toewij
 
 Vereisten: de Azure Active Directory-bedrijfsportal is geconfigureerd en Windows 10 versie 1809 of hoger is geïnstalleerd.
 
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten** > kies het apparaat > **Gebruiker toewijzen**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), **Apparaten** > **Windows** > **Windows-inschrijving** > **Apparaten** (onder **Windows Autopilot Deployment-programma** > kies het apparaat > **Gebruiker toewijzen**.
 
     ![Schermafbeelding van Gebruiker toewijzen](./media/enrollment-autopilot/assign-user.png)
 
@@ -171,7 +181,7 @@ Vereisten: de Azure Active Directory-bedrijfsportal is geconfigureerd en Windows
 
 ## <a name="autopilot-deployments-report"></a>Rapport Autopilot-implementaties
 U kunt de details bekijken van elk apparaat dat via Windows Autopilot is geïmplementeerd.
-U kunt het rapport bekijken door naar **Intune** te gaan en onder **Bewaken** de optie **Autopilot-implementaties** te selecteren.
+Als u het rapport wilt weergeven, gaat u naar het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), kiest u **Apparaten** > **Bewaken** > **Autopilot-implementaties**.
 De gegevens zijn tot 30 dagen na de implementatie beschikbaar.
 
 
@@ -179,7 +189,7 @@ De gegevens zijn tot 30 dagen na de implementatie beschikbaar.
 
 U kunt Windows Autopilot-apparaten verwijderen die niet bij Intune zijn ingeschreven:
 
-- Verwijder de apparaten uit Windows Autopilot via **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten**. Kies de apparaten die u wilt verwijderen en kies vervolgens **Verwijderen**. Het verwijderen van Windows Autopilot-apparaten kan enkele minuten duren.
+- Verwijder de apparaten uit Windows Autopilot via **Apparaten** > **Windows** > **Windows-inschrijving** > **Apparaten** (onder **Windows Autopilot Deployment-programma**. Kies de apparaten die u wilt verwijderen en kies vervolgens **Verwijderen**. Het verwijderen van Windows Autopilot-apparaten kan enkele minuten duren.
 
 Als u een apparaat volledig uit uw tenant wilt verwijderen, moet u alle records van het Intune-apparaat, het Azure Active Directory-apparaat en de Windows Autopilot-apparaat verwijderen. Dit kan allemaal vanuit Intune worden geregeld:
 
@@ -187,7 +197,7 @@ Als u een apparaat volledig uit uw tenant wilt verwijderen, moet u alle records 
 
 2. Verwijder de apparaten in Azure Active Directory-apparaten via **Apparaten** > **Azure AD-apparaten**.
 
-3. Verwijder de apparaten uit Windows Autopilot via **Apparaatinschrijving** > **Windows-inschrijving** > **Apparaten**. Kies de apparaten die u wilt verwijderen en kies vervolgens **Verwijderen**. Het verwijderen van Windows Autopilot-apparaten kan enkele minuten duren.
+3. Verwijder de apparaten uit Windows Autopilot via **Apparaten** > **Windows** > **Windows-inschrijving** > **Apparaten** (onder **Windows Autopilot Deployment-programma** >. Kies de apparaten die u wilt verwijderen en kies vervolgens **Verwijderen**. Het verwijderen van Windows Autopilot-apparaten kan enkele minuten duren.
 
 ## <a name="using-autopilot-in-other-portals"></a>Autopilot in andere portals gebruiken
 Als u geen interesse hebt in Mobile Device Management, kunt u Autopilot gebruiken in andere portals. Hoewel het gebruik van andere portals een optie is, raden we aan om alleen Intune te gebruiken voor uw Autopilot-implementaties. Wanneer u Intune en een andere portal gebruikt, kunt u met Intune het volgende niet doen:  

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: a20d1df2bf1e5052bcb2d3d83e919e190f8d9175
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: f31e500b7a3383c5c0c53f1df72cb4a42660328f
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445852"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74284097"
 ---
 
 
@@ -41,4 +41,5 @@ ms.locfileid: "73445852"
 
 Klanten met Enterprise Management + Security (EMS) kunnen ook [Azure Active Directory (Azure AD) gebruiken voor het registreren van Windows 10-apparaten](/intune/windows-enroll).
 
+Zie [Virtuele Windows 10-machines gebruiken met Intune](../fundamentals/windows-10-virtual-machines.md) voor richtlijnen voor het gebruik van virtuele Windows 10-machines met Intune.
 
