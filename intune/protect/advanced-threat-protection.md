@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 889b0a7562f1a663556e955271681e0747aeb3c4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199171"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410211"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Naleving voor Microsoft Defender ATP met voorwaardelijke toegang in Intune afdwingen
 
@@ -193,6 +193,12 @@ Bewaak vervolgens de status van apparaten die het nalevingsbeleid voor Microsoft
 2. Selecteer **Apparaten** > **Bewaken** > **Beleidsnaleving**.
 
 3. Zoek uw Microsoft Defender ATP-beleid in de lijst op en ga na welke apparaten conform of non-conform zijn.
+
+U kunt vanaf dezelfde locatie ook het *operationele* rapport gebruiken voor niet-compatibele apparaten:
+
+1. Selecteer **Apparaten** > **Bewaken** > **Niet-compatibele apparaten**.
+
+Zie [Intune-rapporten](../fundamentals/reports.md) voor meer informatie over rapporten.
 
 ## <a name="view-onboarding-status"></a>Status voor onboarding weergeven
 

@@ -7,14 +7,29 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fa2b1c5c9d267b9f860da2268d03c928ebf7693b
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: 8db05399c4a880d72d24cde885976309bf9a4fa7
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74309801"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74549393"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune.
+
+### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Bijgewerkte ondersteuningsmededeling over de mobiele app Adobe Acrobat Reader voor Intune<!--5746776-->
+Eind augustus hebben we via MC188653 meegedeeld dat de mobiele app Adobe Acrobat Reader voor Intune op 1 december 2019 het eind van zijn levenscyclus heeft bereikt en dat Adobe van plan is om ondersteuning te bieden voor de app-beveiliging van Intune vanuit de belangrijkste Acrobat Reader-app. Sindsdien hebben we feedback van klanten ontvangen dat we IT-beheerders meer tijd moesten geven om zich bezig te houden met Adobe Acrobat Reader voor Intune en dat eindgebruikers meer tijd nodig hadden om zich Adobe Acrobat Reader voor Intune eigen te maken. Omdat Adobe Acrobat Reader voor Intune veel wordt gebruikt op apparaten van eindgebruikers en een belangrijke rol speelt in bedrijfsscenario's, willen we kunnen blijven garanderen dat elke ervaring voldoet aan de vereisten die uw organisatie stelt aan de bescherming van haar apps. 
+
+Hoewel we nog steeds aanraden om uw beleid op de algemene mobiele Acrobat Reader-app toe te passen, omdat de mobiele Acrobat Reader-app beveiligingsbeleid voor apps ondersteunt en de Intune-SDK erin is geïntegreerd, wordt de Adobe Acrobat Reader voor Intune-app nog ondersteund tot en met 31 maart 2020. 
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+U ontvangt dit bericht omdat tijdens onze rapportage is gebleken dat er een of meer beleidsregels in uw organisatie zijn die zich richten op de toepassing Adobe Acrobat Reader voor Intune en/of omdat u onze vorige EOL-communicatie hebt ontvangen. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+Breng uw eindgebruikers en helpdesk op de hoogte van deze wijziging. U kunt de [functionaliteit van de bedrijfsportal voor het afhandelen van ondersteuningsinformatie](../apps/company-portal-app.md#support-information) gebruiken om een kanaal op te zetten voor het stellen en beantwoorden van vragen met betrekking tot Intune.
+
+#### <a name="additional-information"></a>Aanvullende informatie
+https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
+
 
 ### <a name="end-support-for-windows-phone-81--3544909--"></a>Ondersteuning voor Windows Phone 8.1 beëindigd<!--3544909-->
 In juli 2017 is de reguliere ondersteuning van Microsoft voor Windows Phone 8.1 beëindigd en in juni 2019 de uitgebreide ondersteuning. De Bedrijfsportal-app voor Windows Phone 8.1 bevindt zich sinds oktober 2017 in de continuïteitsmodus. Microsoft Intune beëindigt nu op 20 februari 2020 de ondersteuning voor Windows Phone 8.1.
