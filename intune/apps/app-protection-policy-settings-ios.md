@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7242b661668f994208aa36a8f9fc5d350623ccd
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: ba3b145c3a48992b1e8a01ad2cee4be60646df6f
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390380"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781240"
 ---
 # <a name="ios-app-protection-policy-settings"></a>Beveiligingsbeleidsinstellingen voor iOS-apps
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-In dit artikel worden de app-beveiligingsbeleidsinstellingen voor iOS-apparaten beschreven. De beleidsinstellingen die worden beschreven, kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid op de blade **Instellingen** in Azure Portal wanneer u een nieuw beleid maakt.
+In dit artikel worden de app-beveiligingsbeleidsinstellingen voor iOS-apparaten beschreven. De beleidsinstellingen die worden beschreven, kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid in het deelvenster **Instellingen** in Azure Portal wanneer u een nieuw beleid maakt.
 
 Er zijn drie soorten beleidsinstellingen: *Gegevensverplaatsing*, *Toegangsvereisten* en *Voorwaardelijk starten*. In dit artikel verwijst de term ***door beleid beheerde apps*** naar apps die zijn geconfigureerd met een app-beveiligingsbeleid.
 
@@ -88,7 +88,7 @@ Er zijn een aantal uitzonderingsapps en -platformservices waar het Intune-beveil
 | <ul><ui> **Minimale lengte pincode selecteren** | geef het minimale aantal cijfers op waaruit een pincode moet bestaan.  | **4**  |
 | <ul><ui> **Touch ID in plaats van pincode voor toegang (iOS 8+)** | Selecteer **Toestaan** als de gebruiker in plaats van een pincode [Touch ID](https://support.apple.com/HT201371) mag gebruiken voor toegang tot apps.    | **Toestaan**  |
 |<ul><ui><ul><ui>**Touch ID overschrijven met pincode na time-out**|  Als u deze instelling wilt gebruiken, selecteert u **Vereisen**en configureert u vervolgens een time-out bij inactiviteit.  |**Vereisen**  |
-| <ul><ui><ul><ui><ul><ui> **Time-out (minuten van inactiviteit)** |  Geef de tijd in minuten op waarna het gebruik van een vingerafdruk wordt overschreven door een wachtwoordcode of numerieke pincode (zoals geconfigureerd). Deze time-outwaarde moet groter zijn dan de waarde die onder 'Toegangsvereisten opnieuw controleren na (minuten van inactiviteit)' is opgegeven.  |**30**  |
+| <ul><ui><ul><ui><ul><ui> **Time-out (minuten van inactiviteit)** |  Geef de tijd in minuten op waarna het gebruik van een vingerafdruk wordt overschreven als toegangsmethode door een wachtwoordcode of numerieke pincode (zoals geconfigureerd). Deze time-outwaarde moet groter zijn dan de waarde die onder 'Toegangsvereisten opnieuw controleren na (minuten van inactiviteit)' is opgegeven.  |**30**  |
 | <ul><ui><ul><ui>**Face ID in plaats van pincode voor toegang (iOS 11+)** | Selecteer **Toestaan** om toe te staan dat gebruikers gezichtsherkenningstechnologie gebruiken om gebruikers op iOS-apparaten te verifiëren. Als Face ID is toegestaan, moet dit worden gebruikt voor toegang tot de app op een apparaat dat geschikt is voor Face ID.    | **Toestaan**  |
 | <ul><ui>**Pincode na aantal dagen opnieuw instellen** | Selecteer **Ja** om te vereisen dat gebruikers hun pincode wijzigen na een bepaalde periode, in dagen.  <br><br>Wanneer dit is ingesteld op *Ja*, kunt u vervolgens het aantal dagen configureren voordat de pincode opnieuw moet worden ingesteld. |**Nee**  |  
 | <ul><ui><ul><ui> **Aantal dagen** | Configureer het aantal dagen voordat de pincode opnieuw moet worden ingesteld.  |**90**  |

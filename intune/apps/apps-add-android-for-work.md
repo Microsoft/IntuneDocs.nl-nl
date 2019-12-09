@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3137db9d1ab82ebb99686f8f98aa768dae222caf
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 0e57aa0546950a12cdb2d4a2e3c8ed721bfc24b8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584963"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564141"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Beheerde Google Play-apps toevoegen aan Android Enterprise-apparaten met Intune
 
@@ -62,17 +62,16 @@ Er zijn twee manieren om beheerde Google Play Store-apps te zoeken en goed te ke
 
 ### <a name="add-a-managed-google-play-store-app-directly-in-the-intune-console"></a>Een beheerde Google Play Store-app rechtstreeks toevoegen in de Intune-console
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps**.
-5. Selecteer **Toevoegen** in het deelvenster **Apps**.
-6. In de vervolgkeuzelijst **App-type** selecteert u **Beheerd Google Play**.
-7. Selecteer **Beheerd Google Play - Openen** om de beheerde Google Play-catalogus te openen.
-7. Selecteer **Search Play Store** in de Google Play catalogus.
-8. Gebruik het zoekvak om te zoeken naar apps die u wilt beheren.
-9. Klik op **Goedkeuren** om de app goed te keuren in Beheerd Google Play en klik op **Goedkeuren** om de app-machtigingen te accepteren.
-10. Selecteer **Goedgekeurd houden wanneer de app nieuwe machtigingen aanvraagt** in het venster Instellingen voor goedkeuring en klik vervolgens op **Opslaan**. Als u deze optie niet kiest, moet u handmatig alle nieuwe machtigingen goedkeuren als de app-ontwikkelaar een update publiceert. Hierdoor worden installaties en updates van de app gestopt totdat de machtigingen zijn goedgekeurd. Daarom wordt het aanbevolen de optie voor het automatisch goedkeuren van nieuwe machtigingen te selecteren. 
-11. Klik op **OK** om de app(s) op te nemen die u hebt goedgekeurd.
-12. Klik op **Synchroniseren** in het deelvenster **App-app** om te synchroniseren met de Beheerd Google Play-service.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
+3. In de vervolgkeuzelijst **App-type** selecteert u **Beheerd Google Play**.
+4. Selecteer **Beheerd Google Play - Openen** om de beheerde Google Play-catalogus te openen.
+5. Selecteer **Search Play Store** in de Google Play catalogus.
+6. Gebruik het zoekvak om te zoeken naar apps die u wilt beheren.
+7. Klik op **Goedkeuren** om de app goed te keuren in Beheerd Google Play en klik op **Goedkeuren** om de app-machtigingen te accepteren.
+8. Selecteer **Goedgekeurd houden wanneer de app nieuwe machtigingen aanvraagt** in het venster Instellingen voor goedkeuring en klik vervolgens op **Opslaan**. Als u deze optie niet kiest, moet u handmatig alle nieuwe machtigingen goedkeuren als de app-ontwikkelaar een update publiceert. Hierdoor worden installaties en updates van de app gestopt totdat de machtigingen zijn goedgekeurd. Daarom wordt het aanbevolen de optie voor het automatisch goedkeuren van nieuwe machtigingen te selecteren. 
+9. Klik op **OK** om de app(s) op te nemen die u hebt goedgekeurd.
+10. Klik op **Synchroniseren** in het deelvenster **App-app** om te synchroniseren met de Beheerd Google Play-service.
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>Een beheerde Google Play Store-app toevoegen in de beheerde Google Play-console (alternatief)
 Als u liever een beheerde Google Play-app met Intune synchroniseert in plaats deze rechtstreeks met behulp van Intune toe te voegen, gebruikt u de volgende stappen.
@@ -108,17 +107,16 @@ Er zijn twee manieren om LOB-apps toe te voegen aan Beheerd Google Play:
 
 ### <a name="managed-google-play-private-lob-app-publishing-directly-in-the-intune-console"></a>Privé-LOB-apps uit de beheerde Google Play Store rechtstreeks publiceren in de Intune-console
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps**.
-5. Selecteer **Toevoegen** in het deelvenster **Apps**.
-6. In de vervolgkeuzelijst **App-type** selecteert u **Beheerd Google Play**.
-7. Selecteer **Beheerd Google Play - Openen** om de beheerde Google Play-catalogus te openen.
-7. Selecteer **Privé-apps** in de Google Play-catalogus.
-7. Klik op de knop **+** om een nieuwe app toe te voegen
-8. Voer een app-titel en APK-pakket in voor de app
-9. Klik op **Maken**
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
+3. In de vervolgkeuzelijst **App-type** selecteert u **Beheerd Google Play**.
+4. Selecteer **Beheerd Google Play - Openen** om de beheerde Google Play-catalogus te openen.
+5. Selecteer **Privé-apps** in de Google Play-catalogus.
+6. Klik op de knop **+** om een nieuwe app toe te voegen
+7. Voer een app-titel en APK-pakket in voor de app
+8. Klik op **Maken**
 9. Sluit het deelvenster Beheerde Google Play als u klaar bent met het toevoegen van apps
-12. Klik op **Synchroniseren** in het deelvenster **App-app** om te synchroniseren met de Beheerd Google Play-service. Het kan enkele minuten duren voordat privé-apps beschikbaar zijn voor synchronisatie. Als de app niet wordt weergegeven wanneer u de eerste keer een synchronisatie uitvoert, wacht u enkele minuten en start u een nieuwe synchronisatie.
+10. Klik op **Synchroniseren** in het deelvenster **App-app** om te synchroniseren met de Beheerd Google Play-service. Het kan enkele minuten duren voordat privé-apps beschikbaar zijn voor synchronisatie. Als de app niet wordt weergegeven wanneer u de eerste keer een synchronisatie uitvoert, wacht u enkele minuten en start u een nieuwe synchronisatie.
 
 Zie het volgende ondersteuningsartikel van Google voor meer informatie over beheerde Google Play-privé-apps, waaronder veelgestelde vragen: https://support.google.com/googleplay/work/answer/9146439
 
@@ -151,32 +149,30 @@ Webkoppelingen worden geopend met Microsoft Edge of een andere browser-app die u
 > [!IMPORTANT]
 > Op het moment van publiceren van dit document is er een Google-fout bekend die voorkomt dat webkoppelingen worden geopend op apparaten met andere browsers dan Chrome. Google heeft aangegeven dit probleem te gaan verhelpen.  Deze mededeling wordt verwijderd wanneer Microsoft bevestiging heeft van Google dat het probleem is opgelost.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps**.
-5. Selecteer **Toevoegen** in het deelvenster **Apps**.
-6. In de vervolgkeuzelijst **App-type** selecteert u **Beheerd Google Play**.
-7. Selecteer **Beheerd Google Play - Openen** om de beheerde Google Play-catalogus te openen.
-7. Selecteer **Web-apps** in de Google Play-catalogus.
-7. Klik op de knop **+** om een nieuwe app toe te voegen
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
+3. In de vervolgkeuzelijst **App-type** selecteert u **Beheerd Google Play**.
+4. Selecteer **Beheerd Google Play - Openen** om de beheerde Google Play-catalogus te openen.
+5. Selecteer **Web-apps** in de Google Play-catalogus.
+6. Klik op de knop **+** om een nieuwe app toe te voegen
 7. Geef de vereiste gegevens op en klik op **Maken**
-7. Sluit het deelvenster Beheerde Google Play als u klaar bent met het toevoegen van apps
-12. Klik op **Synchroniseren** in het deelvenster **App-app** om te synchroniseren met de Beheerd Google Play-service. Het kan enkele minuten duren voordat privé-apps beschikbaar zijn voor synchronisatie. Als de app niet wordt weergegeven wanneer u de eerste keer een synchronisatie uitvoert, wacht u enkele minuten en start u een nieuwe synchronisatie.
+8. Sluit het deelvenster Beheerde Google Play als u klaar bent met het toevoegen van apps
+9. Klik op **Synchroniseren** in het deelvenster **App-app** om te synchroniseren met de Beheerd Google Play-service. Het kan enkele minuten duren voordat privé-apps beschikbaar zijn voor synchronisatie. Als de app niet wordt weergegeven wanneer u de eerste keer een synchronisatie uitvoert, wacht u enkele minuten en start u een nieuwe synchronisatie.
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Een beheerde Google Play Store-app met Intune synchroniseren
 
-Als u een app uit de Store hebt goedgekeurd maar deze nog niet wordt weergegeven in het workloadvenster **Client-apps**, start u als volgt een onmiddellijke synchronisatie:
+Als u een app uit de Store hebt goedgekeurd maar deze nog niet wordt weergegeven in het workloadvenster **Apps**, start u als volgt een onmiddellijke synchronisatie:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
-4. Selecteer in het workloadvenster **Client-apps**, onder **Installatie** de optie **Beheerde Google Play Store**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecteer **Apps** > **Tenantbeheer** > **Connectors en tokens** > **Beheerde Google Play**.
 5. Kies in het deelvenster **Beheerde Google Play Store** **Vernieuwen**.  
     De pagina werkt de tijd en de status van de laatste synchronisatie bij.
-6. Selecteer in het workloadvenster **Client-apps** de optie **Apps**.  
+6. Selecteer in het Microsoft Endpoint Manager-beheercentrum de opties **Apps** > **Alle apps**.  
     De zojuist beschikbaar geworden beheerde Google Play Store-app wordt weergegeven.
 
 ## <a name="assigning-a-managed-google-play-app-to-android-enterprise-work-profile-devices"></a>Beheerde Google Play-app toewijzen aan apparaten met Android Enterprise-werkprofiel
 
-Als de app wordt weergegeven in het knooppunt **App-licenties** van het workloadvenster **Client-apps**, kunt u de app [net als alle andere apps toewijzen](/intune-azure/manage-apps/deploy-apps) door de app aan groepen gebruikers toe te wijzen.
+Als de app wordt weergegeven in het knooppunt **App-licenties** van het workloadvenster **Apps**, kunt u de app [net als alle andere apps toewijzen](/intune-azure/manage-apps/deploy-apps) door de app aan groepen gebruikers toe te wijzen.
 
 Nadat u de app hebt toegewezen, wordt deze geïnstalleerd (of is deze beschikbaar voor installatie) op de apparaten van de gebruikers die u hebt aangewezen. De gebruiker van het apparaat wordt geen toestemming voor de installatie gevraagd. Zie [Inschrijving van apparaten met Android Enterprise-werkprofielen instellen](../enrollment/android-work-profile-enroll.md) voor meer informatie over apparaten met Android Enterprise-werkprofielen. 
 
@@ -213,7 +209,7 @@ U kunt Google Play eventueel ook zodanig configureren dat de app-machtigingen pe
 Voor beheerde Google Play-apps die op apparaten met Android Enterprise-werkprofiel zijn geïmplementeerd, kunt u de status en het versienummer van de op een apparaat geïnstalleerde app weergeven met Intune. 
 
 ## <a name="delete-managed-google-play-apps"></a>Beheerde Google Play-apps verwijderen
-Indien noodzakelijk, kunt u beheerde Google Play-apps verwijderen uit Microsoft Intune. Als u een beheerde Google Play-app wilt verwijderen, opent u Microsoft Intune in de Azure-portal en selecteert u **Client-apps** > **Apps**. In de lijst met apps selecteert u het beletselteken (...) rechts naast de beheerde Google Play-app en vervolgens **Verwijderen** in de weergegeven lijst. Wanneer u een beheerde Google Play-app uit de lijst met apps verwijdert, wordt de goedkeuring voor de beheerde Google Play-app automatisch verwijderd.
+Indien noodzakelijk, kunt u beheerde Google Play-apps verwijderen uit Microsoft Intune. Als u een beheerde Google Play-app wilt verwijderen, opent u Microsoft Intune in Azure Portal en selecteert u **Apps** > **Alle apps**. In de lijst met apps selecteert u het beletselteken (...) rechts naast de beheerde Google Play-app en vervolgens **Verwijderen** in de weergegeven lijst. Wanneer u een beheerde Google Play-app uit de lijst met apps verwijdert, wordt de goedkeuring voor de beheerde Google Play-app automatisch verwijderd.
 
 ## <a name="android-enterprise-system-apps"></a>Android Enterprise-systeem-apps
 

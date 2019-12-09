@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e1ff8fd39d301bd685e9806c319f49e9189d7f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 41c08d1912bf9c79507c2a6627205979504f340d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507413"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564224"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Aan de slag met de configuratie van beveiligingsbeleid voor apps in Windows 10 
 
@@ -33,13 +33,12 @@ Mobile Application Management (MAM) inschakelen voor Windows 10 door de MAM-prov
 
 ## <a name="to-configure-the-mam-provider"></a>De MAM-provider configureren
 
-1. Meld u aan bij Azure Portal en selecteer **Azure Active Directory**.
-
-2. Kies **Mobility (MDM en MAM)** in de groep **Beheren**.
-
-3. Klik op **Microsoft Intune**.
-
-4. Configureer de instellingen in de groep **Standaard MAM-URL's herstellen** op de blade **Configureren**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Alle services** en kies **M365 Azure Active Directory** om over te schakelen naar een ander dashboard.
+3. Selecteer **Azure Active Directory**.
+4. Kies **Mobility (MDM en MAM)** in de groep **Beheren**.
+5. Klik op **Microsoft Intune**.
+6. Configureer de instellingen in de groep **Standaard MAM-URL's herstellen** in het deelvenster **Configureren**.
 
    **MAM-gebruikersbereik**  
    Automatische inschrijving voor MAM gebruiken voor het beheren van bedrijfsgegevens op Windows-apparaten van uw werknemers. De automatische inschrijving voor MAM wordt geconfigureerd voor Bring-Your-Own-Device-scenario's.<ul><li>**Geen**<br>Selecteer als geen gebruikers kunnen worden ingeschreven bij MAM.</li><li>**Sommige**<br>Selecteer de Azure AD-groepen met gebruikers die worden ingeschreven bij MAM.</li><li>**Alle**<br>Selecteer of alle gebruikers kunnen worden ingeschreven bij MAM.</li></ul>
@@ -53,7 +52,7 @@ Mobile Application Management (MAM) inschakelen voor Windows 10 door de MAM-prov
    **URL van MAM-naleving**  
    De URL voor MAM-naleving wordt niet ondersteund voor Microsoft Intune. Dit invoervak moet leeg zijn om beveiligingsbeleid te kunnen toepassen. 
 
-5. Klik op **Opslaan**.
+7. Klik op **Opslaan**.
 
 ## <a name="next-steps"></a>Volgende stappen
 

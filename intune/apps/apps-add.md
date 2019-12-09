@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecde59d81ebeba7de64f2693eecb576faac6e722
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
+ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164712"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74784235"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune 
 
@@ -58,6 +58,8 @@ De volgende tabel bevat de specifieke app-typen en informatie over hoe u deze ku
 | Beheerde Google Play-apps | Store-app  | Selecteer **Beheerde Google Play** als het **apptype**, zoek de app en selecteer de app in Intune. |
 | Office 365-apps voor Windows 10  | Store-app (Office 365) | Selecteer **Windows 10** bij **Office 365-suite** als het **app-type** en selecteer vervolgens de Office 365-app die u wilt installeren.  |
 | Office 365-apps voor macOS | Store-app (Office 365) | Selecteer **macOS** bij **Office 365-suite** als het **app-type** en selecteer vervolgens de Office 365-app-suite. |
+| Microsoft Edge versie 77 en hoger voor Windows 10 | Store-app | Selecteer **Windows 10** bij **Microsoft Edge versie 77 en hoger** als het **app-type**. |
+| Microsoft Edge versie 77 en hoger voor macOS | Store-app | Selecteer **macOS** bij **Microsoft Edge versie 77 en hoger** als het **app-type**. |
 | Android LOB-apps (Line-Of-Business) | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een Android-installatiebestand toe met de extensie **.apk**.  |
 | iOS LOB-apps | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een iOS-installatiebestand toe met de extensie **.ipa**.  |
 | Windows Phone LOB-apps | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een Windows Phone-installatiebestand toe met de extensie **.xap**.  |
@@ -72,7 +74,7 @@ De volgende tabel bevat de specifieke app-typen en informatie over hoe u deze ku
 
 <sup>1</sup> Zie [Informatie over apps met licentie](apps-add.md#understanding-licensed-apps) verderop voor meer informatie over Android Enterprise- en Android-werkprofielen.
 
-U kunt in Microsoft Intune apps toevoegen via **Client-apps** > **Apps** > **Toevoegen**. Het deelvenster **App toevoegen** wordt weergegeven. Hier kunt u het **app-type** selecteren. 
+U kunt in Microsoft Intune een app toevoegen door **Apps** > **Alle apps** > **Toevoegen** te selecteren. Het deelvenster **App toevoegen** wordt weergegeven. Hier kunt u het **app-type** selecteren. 
 
 >[!TIP]
 > Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Als u bijvoorbeeld een LOB-app voor iOS wilt installeren, voegt u de toepassing toe door in het deelvenster **App toevoegen** de optie **LOB-app** als het **app-type** te kiezen. U selecteert vervolgens het app-pakketbestand (met de extensie .ipa). Deze app-typen worden doorgaans intern ontwikkeld.
@@ -159,9 +161,8 @@ App-categorieën kunnen worden gebruikt om apps te sorteren, zodat gebruikers de
 
 Als u een app aan Intune toevoegt, kunt u de gewenste categorie selecteren. Aan de hand van de platformspecifieke onderwerpen kunt u een app toevoegen en categorieën toewijzen. Als u uw eigen categorieën wilt maken en bewerken, gebruikt u de volgende procedure:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
-4. Selecteer in het workloaddeelvenster **Client-apps**, onder **Installatie** **App-categorieën**.  
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecteer **Apps** > **App-categorieën**.  
     In het deelvenster **App-categorieën** wordt een lijst met categorieën weergegeven. 
 5. Gebruik een van de volgende methoden:
     - Selecteer **Toevoegen** in het deelvenster **Categorie maken** en voer een naam in voor de categorie om een categorie te toe te voegen.  
@@ -206,6 +207,8 @@ Als u wilt leren hoe u voor elk platform apps aan Intune toevoegt, raadpleegt u:
 - [Windows LOB-app](lob-apps-windows.md)
 - [Office 365-apps voor Windows 10](apps-add-office365.md)
 - [Office 365-apps voor macOS](apps-add-office365-macos.md)
+- [Microsoft Edge voor Windows 10](apps-windows-edge.md)
+- [Microsoft Edge voor macOS](apps-edge-macos.md)
 - [Ingebouwde apps](apps-add-built-in.md)
 - [Android Enterprise-systeem-app](apps-ae-system.md)
 - [Win32-apps](app-management.md)

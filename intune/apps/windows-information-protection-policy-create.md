@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81a2575c0d4e6cdcfdffe09e37880f56647bc835
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8d1a8ee3f6d5eb190fb2ee252dfb5f6c23a1cf16
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496428"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563778"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune
 
@@ -71,53 +71,51 @@ Nadat u Intune hebt ingesteld in uw organisatie, kunt u specifiek WIP-beleid mak
 > Zie [Een WIP-beleid (Windows Information Protection) maken met MAM via Azure Portal voor Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) in de Windows-bibliotheek voor beveiligingsdocumentatie voor gerelateerde informatie over het maken van een WIP-beleid voor Intune, waaronder de beschikbare instellingen en hoe u deze configureert. 
 
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).
-2. Kies **Alle services** > **Intune**.
-3. Selecteer **Client-apps** op de blade **Microsoft Intune**.
-4. Selecteer **App-beveiligingsbeleid** op de blade **Client-apps**.
-5. Selecteer **Een beleid toevoegen** om de blade **Een beleid toevoegen** weer te geven.
-6. Voeg de volgende waarden toe:
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **App-beveiligingsbeleid** > **Beleid maken**.
+3. Voeg de volgende waarden toe:
     - **Naam:** typ een naam (vereist) voor het nieuwe beleid.
     - **Beschrijving:** (optioneel) typ een beschrijving.
     - **Platform:** kies **Windows 10** als het ondersteunde platform voor het beveiligingsbeleid van uw app.
     - **Status van de inschrijving:** kies **Zonder inschrijving** als status van de inschrijving voor het beleid.
-7. Kies **Maken**. Het beleid wordt gemaakt en weergegeven in de tabel op de blade **App-beveiligingsbeleid**.
+4. Kies **Maken**. Het beleid wordt gemaakt en weergegeven in de tabel in het deelvenster **App-beveiligingsbeleid**.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Aanbevolen apps toevoegen aan de lijst met beschermde apps
 
-1. Selecteer **Client-apps** op de blade **Microsoft Intune**.
-2. Selecteer **App-beveiligingsbeleid** op de blade **Client-apps**.
-3. Op de blade **App-beveiligingsbeleid** kiest u het beleid dat u wilt bewerken. De blade **Intune-app-beveiliging** wordt weergegeven.
-4. Kies **Beveiligde apps** op de blade **Intune-app-beveiliging**. De blade **Beveiligde apps** wordt geopend, waarop alle apps worden weergegeven die al zijn opgenomen in de lijst voor het beveiligingsbeleid voor deze app.
-5. Selecteer **Apps toevoegen**. In **Apps toevoegen** ziet u een lijst gefilterde apps. Met de lijst bovenaan de blade kunt u de lijstfilter wijzigen.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Beleid voor app-beveiliging**.
+3. Kies het beleid dat u wilt wijzigen in het deelvenster **App-beveiligingsbeleid**. Het deelvenster **Intune-app-beveiliging** wordt weergegeven.
+4. Kies **Beveiligde apps** in het deelvenster **Intune-app-beveiliging**. Het deelvenster **Beveiligde apps** wordt geopend, waarop alle apps worden weergegeven die al zijn opgenomen in de lijst voor het beveiligingsbeleid voor deze app.
+5. Selecteer **Apps toevoegen**. In **Apps toevoegen** ziet u een lijst gefilterde apps. Met de lijst boven in het deelvenster kunt u de lijstfilter wijzigen.
 6. Selecteer elke app die u toegang wilt bieden tot uw bedrijfsgegevens.
-7. Klik op **OK**. De blade **Beveiligde apps** wordt bijgewerkt met alle geselecteerde apps.
+7. Klik op **OK**. Het deelvenster **Beveiligde apps** wordt bijgewerkt met alle geselecteerde apps.
 8. Klik op **Opslaan**.
 
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Een Store-app toevoegen aan de lijst met beschermde apps
 
 **Een Store-app toevoegen**
-1. Selecteer **Client-apps** op de blade **Microsoft Intune**.
-2. Selecteer **App-beveiligingsbeleid** op de blade **Client-apps**.
-3. Op de blade **App-beveiligingsbeleid** kiest u het beleid dat u wilt bewerken. De blade **Intune-app-beveiliging** wordt weergegeven.
-4. Kies **Beveiligde apps** op de blade **Intune-app-beveiliging**. De blade **Beveiligde apps** wordt geopend, waarop alle apps worden weergegeven die al zijn opgenomen in de lijst voor het beveiligingsbeleid voor deze app.
-5. Selecteer **Apps toevoegen**. In **Apps toevoegen** ziet u een lijst gefilterde apps. Met de lijst bovenaan de blade kunt u de lijstfilter wijzigen.
+
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Beleid voor app-beveiliging**.
+3. Kies het beleid dat u wilt wijzigen in het deelvenster **App-beveiligingsbeleid**. Het deelvenster **Intune-app-beveiliging** wordt weergegeven.
+4. Kies **Beveiligde apps** in het deelvenster **Intune-app-beveiliging**. Het deelvenster **Beveiligde apps** wordt geopend, waarop alle apps worden weergegeven die al zijn opgenomen in de lijst voor het beveiligingsbeleid voor deze app.
+5. Selecteer **Apps toevoegen**. In **Apps toevoegen** ziet u een lijst gefilterde apps. Met de lijst boven in het deelvenster kunt u de lijstfilter wijzigen.
 6. In de lijst selecteert u **Store-apps**.
 7. Voer waarden in voor **Naam**, **Uitgever**, **Productnaam** en **Actie**. Stel de waarde van **Actie** in op **Toestaan** zodat de app toegang heeft tot uw zakelijke gegevens.
-9. Klik op **OK**. De blade **Beveiligde apps** wordt bijgewerkt met alle geselecteerde apps.
+9. Klik op **OK**. Het deelvenster **Beveiligde apps** wordt bijgewerkt met alle geselecteerde apps.
 10. Klik op **Opslaan**.
 
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Een desktop-app toevoegen aan de lijst met beschermde apps
 
 **Een bureaublad-app toevoegen**
-1. Selecteer **Client-apps** op de blade **Microsoft Intune**.
-2. Selecteer **App-beveiligingsbeleid** op de blade **Client-apps**.
-3. Op de blade **App-beveiligingsbeleid** kiest u het beleid dat u wilt bewerken. De blade **Intune-app-beveiliging** wordt weergegeven.
-4. Kies **Beveiligde apps** op de blade **Intune-app-beveiliging**. De blade **Beveiligde apps** wordt geopend, waarop alle apps worden weergegeven die al zijn opgenomen in de lijst voor het beveiligingsbeleid voor deze app.
-5. Selecteer **Apps toevoegen**. In **Apps toevoegen** ziet u een lijst gefilterde apps. Met de lijst bovenaan de blade kunt u de lijstfilter wijzigen.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Beleid voor app-beveiliging**.
+3. Kies het beleid dat u wilt wijzigen in het deelvenster **App-beveiligingsbeleid**. Het deelvenster **Intune-app-beveiliging** wordt weergegeven.
+4. Kies **Beveiligde apps** in het deelvenster **Intune-app-beveiliging**. Het deelvenster **Beveiligde apps** wordt geopend, waarop alle apps worden weergegeven die al zijn opgenomen in de lijst voor het beveiligingsbeleid voor deze app.
+5. Selecteer **Apps toevoegen**. In **Apps toevoegen** ziet u een lijst gefilterde apps. Met de lijst boven in het deelvenster kunt u de lijstfilter wijzigen.
 6. In de lijst selecteert u **Bureaublad-apps**.
 7. Voer waarden in voor **Naam**, **Uitgever**, **Productnaam**, **Bestand**, **Minimale versie**, **Maximale versie** en **Actie**. Stel de waarde van **Actie** in op **Toestaan** zodat de app toegang heeft tot uw zakelijke gegevens.
-9. Klik op **OK**. De blade **Beveiligde apps** wordt bijgewerkt met alle geselecteerde apps.
+9. Klik op **OK**. Het deelvenster **Beveiligde apps** wordt bijgewerkt met alle geselecteerde apps.
 10. Klik op **Opslaan**.
 
 ## <a name="wip-learning"></a>WIP Learning
@@ -150,7 +148,7 @@ Als u WIP hebt uitgeschakeld, wordt een poging gedaan om door WIP gemarkeerde be
 
 ### <a name="add-a-protection-mode"></a>Beschermingsmodus toevoegen
 
-1. Kies op de blade **App-beleid** de naam van uw beleid en kies vervolgens **Verplichte instellingen**.
+1. Kies in het deelvenster **App-beleid** de naam van uw beleid en kies vervolgens **Verplichte instellingen**.
 
     ![Schermopname van het deelvenster Oefenmodus](./media/windows-information-protection-policy-create/learning-mode-sc1.png)
 
@@ -160,7 +158,7 @@ Als u WIP hebt uitgeschakeld, wordt een poging gedaan om door WIP gemarkeerde be
 
 1. Open [Azure Portal](https://portal.azure.com). Kies **Alle services**. Type **Intune** in het tekstvakfilter.
 
-3. Kies **Intune** > **Client-apps**.
+3. Kies **Intune-**  > **Apps**.
 
 4. Kies **Status van de app-beveiliging** > **Rapporten** > **Kennismaken met Windows Information Protection**.  
 
@@ -188,9 +186,9 @@ U kunt niet alleen de optie om de **Windows Search-indexeerfunctie toe te staan 
 
 Nadat u het beveiligingsbeleid van uw OHW app hebt gemaakt, moet u deze implementeren in uw organisatie met MAM.
 
-1. Kies op de blade **App-beleid** het nieuwe beveiligingsbeleid voor uw app, kies **Gebruikersgroepen** > **Gebruikersgroep toevoegen**.
+1. Kies in het deelvenster **App-beleid** het nieuwe beveiligingsbeleid voor uw app, kies **Gebruikersgroepen** > **Gebruikersgroep toevoegen**.
 
-    Er wordt een lijst met gebruikersgroepen op basis van de beveiligingsgroepen in uw Azure Active Directory geopend op de blade **Gebruikersgroep toevoegen**.
+    Er wordt een lijst met gebruikersgroepen op basis van de beveiligingsgroepen in uw Azure Active Directory geopend in het deelvenster **Gebruikersgroep toevoegen**.
 
 2. Kies de groep waarop u uw beleid wilt toepassen en kies vervolgens **Selecteren** om het beleid te implementeren.
 

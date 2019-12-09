@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36039334f7e93b66735e10d0ac2c5d80602e2b83
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: f0cd3dd71a5999b69e3f5c34ef4cc73fb3d6a938
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059859"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781155"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>VPN per app instellen voor iOS-apparaten in Intune
 
@@ -37,6 +37,9 @@ Controleer de documentatie van uw VPN-provider om te zien of VPN per app door uw
 In dit artikel leest u hoe u een VPN-profiel per app maakt en dit profiel aan uw apps toewijst. Maak aan de hand van deze stappen een naadloze VPN-ervaring per app voor uw eindgebruikers. Voor de meeste VPN’s die VPN per app ondersteunen zal de gebruiker een app openen en automatisch verbinding maken met het VPN.
 
 Voor een aantal VPN’s is verificatie met een gebruikersnaam en een wachtwoord toegestaan bij een VPN per app. Dit betekent dat gebruikers een gebruikersnaam en wachtwoord moeten invoeren om verbinding met het VPN te maken.
+
+> [!IMPORTANT]
+> VPN per app wordt niet ondersteund voor IKEv2 VPN-profielen voor iOS.
 
 ## <a name="per-app-vpn-with-zscaler"></a>VPN per app met Zscaler
 

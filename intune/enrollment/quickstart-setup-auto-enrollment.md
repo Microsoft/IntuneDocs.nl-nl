@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78620818bfd13f0292e159c6a3670b5e3af53dab
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: e9649a84650a555e964cd9200ed2295fee5efb9a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709503"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562317"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Quickstart: Automatische inschrijving voor Windows 10-apparaten instellen
 
@@ -41,7 +41,7 @@ Meld u bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.c
 
 Voor dit voorbeeld gebruikt u MDM-inschrijving, zodat zowel bedrijfsapparaten als Bring Your Own-apparaten automatisch kunnen worden ingeschreven. U gaat zich registreren voor een gratis Azure Active Directory Premium-abonnement.
 
-1. Kies in Azure **Azure Active Directory** > **Mobiliteit (MDM en MAM)** .
+1. Kies in [Azure Portal](https://portal.azure.com) de opties **Azure Active Directory** > **Mobiliteit (MDM en MAM)** .
 2. Selecteer **Een gratis Premium-proefversie krijgen om deze functie te gebruiken**. Wanneer u deze optie selecteert, is automatische inschrijving mogelijk met de gratis proefversie van Azure Active Directory Premium. 
 
     ![De gratis proefversie van Azure Active Directory Premium selecteren](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)

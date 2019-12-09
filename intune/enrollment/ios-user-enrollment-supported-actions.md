@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445303"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562414"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Intune-acties en -opties die worden ondersteund bij Apple-gebruikersinschrijving
 
@@ -57,13 +57,18 @@ Eindgebruikers kunnen de volgende acties op hun ingeschreven apparaten uitvoeren
 - Vergrendelen op afstand
 - Status controleren
 
+## <a name="app-deployment-options"></a>App-implementatieopties
+De volgende app-typen kunnen worden geïmplementeerd op gebruikersinschrijvingsapparaten:
+- Apps met Volume Purchasing Plan (VPP) voor gebruikerslicenties, met inbegrip van aangepaste apps
+- Line-Of-Business (LOB)-apps
+- Web-apps
+
 ## <a name="other-supported-options"></a>Andere ondersteunde opties
 
 De volgende opties worden ondersteund in Intune voor apparaten die zijn ingeschreven met Apple-gebruikersinschrijving:
 - VPN per app. Safari-domeinen zijn uitgesloten, omdat het configureren van Safari-instellingen niet wordt ondersteund voor gebruikersinschrijving.
 - WiFi 
 - Verwijdering van zakelijke app na uitschrijving
-- App-implementatie via een Volume Purchasing Plan (VPP) voor gebruikerslicenties
 - Jailbreakdetectie
 
 De volgende beperkingen worden ondersteund:
@@ -94,9 +99,10 @@ De volgende opties worden niet ondersteund op apparaten die zijn ingeschreven vi
 - UDID en andere permanente apparaat-id's verzamelen.
 - Gebruikersinschrijving ondersteunt een unieke inschrijvings-id voor elk ingeschreven apparaat, maar deze id blijft niet behouden na uitschrijving.
 - De volgende Intune-functies worden niet ondersteund vanwege deze beperking:
-- SCEP-gebruikersprofielen met Serienummer als de indeling van de onderwerpnaam
+- SCEP-gebruikersprofielen met Serienummer als de indeling van de onderwerpnaam.
 - VPN op apparaatniveau.
 - Implementatie van VPP-apps met een apparaatlicentie.
+- App Store-apps als beheerde apps installeren.
 - MDM-beheer van toepassingen buiten het beheerde APFS-volume.
 - Beveiligingsbeleid voor toepassingen is nog steeds van toepassing op deze apps. U kunt echter niet het beheer overnemen of een beheerde versie van deze apps implementeren, tenzij de gebruiker deze apps van het apparaat verwijdert.
 - Acties, configuraties, instellingen en opdrachten waarvoor toezicht is vereist. 

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059725"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563466"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-scripts op Windows 10-apparaten gebruiken in Intune
 
@@ -62,7 +62,7 @@ De Intune-beheeruitbreiding heeft de volgende vereisten. Zodra aan de vereisten 
     
     - De gebruiker meldt zich op het apparaat aan bij diens Azure AD-account, waarna het apparaat bij Intune wordt ingeschreven.
 
-  - Gezamenlijk beheerde apparaten waarop gebruik wordt gemaakt Configuration Manager en Intune. Zorg ervoor dat de workload **Client-apps** is ingesteld op **testfase voor Intune** of **Intune**. Raadpleeg de volgende artikelen voor meer informatie: 
+  - Gezamenlijk beheerde apparaten waarop gebruik wordt gemaakt Configuration Manager en Intune. Zorg ervoor dat de workload **Apps** is ingesteld op **testfase voor Intune** of **Intune**. Raadpleeg de volgende artikelen voor meer informatie: 
   
     - [Wat is co-beheer?](https://docs.microsoft.com/sccm/comanage/overview) 
     - [Workload Client-apps](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
@@ -73,8 +73,8 @@ De Intune-beheeruitbreiding heeft de volgende vereisten. Zodra aan de vereisten 
 
 ## <a name="create-a-script-policy-and-assign-it"></a>Een scriptbeleid maken en het toewijzen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **PowerShell-scripts** > **Toevoegen**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **PowerShell-scripts** > **Toevoegen**.
 
     ![PowerShell-scripts toevoegen en gebruiken in Microsoft Intune](./media/intune-management-extension/mgmt-extension-add-script.png)
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540753"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563996"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Apps toewijzen aan groepen met Microsoft Intune
 
@@ -55,13 +55,12 @@ In de volgende tabellen worden de verschillende opties vermeld voor het toewijze
 
 ## <a name="assign-an-app"></a>Een app toewijzen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
-4. Selecteer **Apps** in de sectie **Beheren** van het menu.
-5. Selecteer in het deelvenster **Apps** de app die u wilt toewijzen.
-6. Selecteer **Toewijzingen** in de sectie **Beheren** van het menu.
-7. Selecteer **Groep toevoegen** om het deelvenster **Groep toevoegen** te openen dat is gerelateerd aan de app.
-8. Selecteer een **toewijzingstype** voor de specifieke app:
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps**.
+3. Selecteer in het deelvenster **Apps** de app die u wilt toewijzen.
+4. Selecteer **Toewijzingen** in de sectie **Beheren** van het menu.
+5. Selecteer **Groep toevoegen** om het deelvenster **Groep toevoegen** te openen dat is gerelateerd aan de app.
+6. Selecteer een **toewijzingstype** voor de specifieke app:
    - **Beschikbaar voor ingeschreven apparaten**: wijs de app toe aan groepen gebruikers die de app vanuit de bedrijfsportal-app of -website installeren.
    - **Beschikbaar met of zonder inschrijving**: deze app wordt toegewezen aan groepen gebruikers van wie de apparaten niet zijn ingeschreven bij Intune. Gebruikers moeten een Intune-licentie toegewezen krijgen, zie [Intune-licenties](../fundamentals/licenses.md).
    - **Vereist**: de app wordt geïnstalleerd op apparaten in de geselecteerde groepen. Sommige platformen hebben mogelijk aanvullende prompts voor de eindgebruiker ter bevestiging voordat de installatie van de app begint.
@@ -76,13 +75,13 @@ In de volgende tabellen worden de verschillende opties vermeld voor het toewijze
      >
      > Voor **Beschikbaar voor ingeschreven apparaten**: De app wordt alleen als beschikbaar weergegeven als de gebruiker die is aangemeld bij de bedrijfsportal de primaire gebruiker is die het apparaat heeft geregistreerd en de app van toepassing is op het apparaat.
 
-9. Selecteer **Opgenomen groepen** om de gebruikersgroepen te selecteren die worden beïnvloed door deze app-toewijzing.
-10. Kies **Selecteren** wanneer u één of meer groepen hebt geselecteerd om op te nemen.
-11. Selecteer **OK** op het deelvenster **Toewijzen** de selectie te voltooien van de groepen die moeten worden opgenomen.
-12. Selecteer **Groepen uitsluiten** als u gebruikersgroepen wilt uitsluiten zodat ze niet worden beïnvloed door deze app-toewijzing.
-13. Kies **Selecteren** in **Groepen selecteren** als u hebt besloten dat u groepen wilt uitsluiten.
-14. Selecteer **OK** in het deelvenster **Groep toevoegen**.
-15. Selecteer **Opslaan** in het deelvenster **Toewijzingen**.
+7. Selecteer **Opgenomen groepen** om de gebruikersgroepen te selecteren die worden beïnvloed door deze app-toewijzing.
+8. Kies **Selecteren** wanneer u één of meer groepen hebt geselecteerd om op te nemen.
+9. Selecteer **OK** op het deelvenster **Toewijzen** de selectie te voltooien van de groepen die moeten worden opgenomen.
+10. Selecteer **Groepen uitsluiten** als u gebruikersgroepen wilt uitsluiten zodat ze niet worden beïnvloed door deze app-toewijzing.
+11. Kies **Selecteren** in **Groepen selecteren** als u hebt besloten dat u groepen wilt uitsluiten.
+12. Selecteer **OK** in het deelvenster **Groep toevoegen**.
+13. Selecteer **Opslaan** in het deelvenster **Toewijzingen**.
 
 De app wordt nu toegewezen aan de groepen die u hebt geselecteerd. Zie [App-toewijzingen opnemen en uitsluiten](apps-inc-exl-assignments.md) voor meer informatie over het opnemen en uitsluiten van app-toewijzingen.
 

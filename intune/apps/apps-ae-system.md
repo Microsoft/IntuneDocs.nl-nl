@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11618d844fe7c4e190295ad06111ae0944deda95
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d45455a97f8016527dce49839b5493f16b173d43
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507279"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563645"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Android Enterprise-systeem-apps toevoegen aan Microsoft Intune
 
@@ -33,8 +33,8 @@ Voordat u een app toewijst aan een apparaat of een groep gebruikers, moet u de a
 
 Met de volgende stappen kunt u een Android Enterprise-systeem-app toevoegen aan Intune via Azure Portal:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps** > **Toevoegen**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
 3. In het deelvenster **App toevoegen** selecteert u **Android Enterprise-systeem-app** bij de beschikbare **Overige** typen.
 4. Als u de app-gegevens wilt configureren, selecteert u **Configureren** en geeft u de volgende informatie op:
     - **App-naam**: Voer de naam van de app in.

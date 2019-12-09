@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afd51fe27feb0c058ba703ed11e4a15a5ea2f0d
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813425"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563416"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Quickstart: Een client-app toevoegen en toewijzen
 
@@ -44,7 +44,7 @@ Meld u aan bij [Intune](https://aka.ms/intuneportal) als [globale beheerder of b
 U kunt een app opnemen zodat u met Intune aspecten van de app kunt beheren. 
 
 Gebruik de volgende stappen om een app aan Intune toe te voegen:
-1. Selecteer in [Intune](https://aka.ms/intuneportal) de optie **Client-apps** > **Apps** > **Toevoegen**. 
+1. Selecteer in [Intune](https://aka.ms/intuneportal) de opties **Apps** > **Alle apps** > **Toevoegen**. 
 2. Selecteer **Windows 10** in de sectie **Office 365-suite** van de vervolgkeuzelijst **App-type**.
 3. Selecteer **App-suite configureren** om de Office-apps te selecteren die u wilt toewijzen aan de Intune-gebruiker.
 4. Klik op **OK** om de standaard geselecteerde apps te accepteren.
@@ -68,9 +68,9 @@ Wanneer u een app aan Microsoft Intune hebt toegevoegd, kunt u de app toewijzen 
 > Deze quickstart bouwt voort op eerdere quickstarts in deze reeks. Raadpleeg [Vereisten](quickstart-add-assign-app.md#prerequisites) in deze snelstartgids voor meer informatie.
 
 Gebruik de volgende stappen om een app aan een groep toe te voegen:
-1. Selecteer in [Intune](https://aka.ms/intuneportal) de optie **Client-apps** > **Apps**. 
+1. Selecteer in [Intune](https://aka.ms/intuneportal) de opties **Apps** > **Alle apps**. 
 2. Selecteer de app die u aan een groep wilt toewijzen.
-3. Klik op **Toewijzingen** > **Groep toevoegen** om de blade **Groep toevoegen** weer te geven.
+3. Klik op **Toewijzingen** > **Groep toevoegen** om het deelvenster **Groep toevoegen** weer te geven.
 4. Selecteer **Beschikbaar voor ingeschreven apparaten** in de vervolgkeuzelijst **Toewijzingstype**. 
 5. Kies **Opgenomen groepen** > **Op te nemen groepen selecteren** > **Contoso-testers**.
 6. Klik op **Selecteren** > **OK** > **OK** > **Opslaan** om de groep toe te wijzen.

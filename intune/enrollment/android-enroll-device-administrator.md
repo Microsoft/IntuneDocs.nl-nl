@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08193aa329a1bee4e66638de5c0d7518d15db2a4
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 678eb92bb6f5f23756092cd5d9cc1a645e1e8db3
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547910"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562357"
 ---
 # <a name="android-device-administrator-enrollment"></a>Registratie van Android-apparaatbeheerder
 
@@ -49,7 +49,7 @@ Voor meer informatie over de Android Enterprise-functies van Google, raadpleegt 
 ## <a name="set-up-device-administrator-enrollment"></a>Registratie van apparaatbeheerder instellen
 
 1. U moet de MDM-instantie instellen op **Microsoft Intune** als voorbereiding op het beheer van mobiele apparaten. Zie [Set the MDM authority](../fundamentals/mdm-authority-set.md) (De MDM-instantie instellen) voor instructies. U stelt de instantie slechts één keer in, wanneer u Intune voor het eerst instelt voor het beheer van mobiele apparaten.
-2. Ga naar **Intune** > **Apparaatinschrijving** > **Android-inschrijving** > **Persoonlijke apparaten en apparaten in bedrijfseigendom met bevoegdheden voor het beheren van apparaten** > **Apparaatbeheer gebruiken om apparaten te beheren**.
+2. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en kies > **Apparaten** > **Android** > **Android-inschrijving** > **Persoonlijke apparaten en apparaten die bedrijfseigendom zijn met bevoegdheden om apparaten te beheren** > **Apparaatbeheerder gebruiken om apparaten te beheren**.
 3. [Vertel uw gebruikers hoe ze hun apparaten moeten registreren](/intune-user-help/enroll-your-device-in-intune-android).  
 
 Nadat een gebruiker zich heeft geregistreerd, kunt u beginnen met het beheer van hun apparaten in Intune, met inbegrip van [toewijzen van nalevingsbeleid](../protect/compliance-policy-create-android.md), [beheren van apps](../apps/app-management.md) en nog veel meer.

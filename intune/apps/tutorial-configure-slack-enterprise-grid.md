@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86e9d100847641064f472f0c3da0c9ec694f72dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496719"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563402"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Zelfstudie: Slack configureren om Intune te gebruiken voor de configuratie van EMM en de app
 
@@ -55,7 +55,7 @@ Voeg de iOS-app Slack voor EMM toe aan uw Intune-tenant en maak app-configuratie
 
 ### <a name="add-slack-for-emm-to-intune"></a>Slack voor EMM toevoegen aan Intune
 Voeg Slack voor EMM toe als een beheerde iOS-app in Intune en wijs uw Slack-gebruikers toe. Apps zijn platformspecifiek, dus moet u een afzonderlijke Intune-app toevoegen voor uw Slack-gebruikers met Android-apparaten.
-1. Selecteer in Intune de optie **Client-apps** > **Apps** > **Toevoegen**.
+1. Selecteer in Intune **Apps** > **Alle apps** > **Toevoegen**.
 2. Selecteer bij Toepassingstype **Store-app - iOS**.
 3. Selecteer **Zoeken in de App Store**. Voer de zoekterm 'Slack voor EMM' in en selecteer de app.
 4. Selecteer **App-gegevens** en wijzig de configuratie naar wens.
@@ -71,7 +71,7 @@ Voeg Slack voor EMM toe als een beheerde iOS-app in Intune en wijs uw Slack-gebr
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Een app-configuratiebeleid toevoegen voor Slack voor EMM
 Voeg een app-configuratiebeleid toe voor Slack voor EMM iOS. App-configuratiebeleidsregels voor beheerde apparaten zijn platform-specifiek, dus u moet een afzonderlijk beleid toevoegen voor uw Slack-gebruikers met Android-apparaten.
-1. Selecteer in Intune **Client-apps** > **App-configuratiebeleid** > **Toevoegen**.
+1. Selecteer in Intune **Apps** > **App-configuratiebeleid** > **Toevoegen**.
 2. Voer bij Naam het volgende in: Testbeleid Slack-app-configuratie.
 3. Selecteer bij Type apparaatregistratie **Beheerde apparaten**.
 4. Selecteer bij Platform **iOS**.
@@ -107,7 +107,7 @@ Voeg de beheerde Google Play-app van Slack toe aan uw Intune-tenant en maak app-
 
 ### <a name="add-slack-to-intune"></a>Slack toevoegen aan Intune
 Voeg Slack toe als een beheerde Google Play-app in Intune en wijs uw Slack-gebruikers toe. Apps zijn platformspecifiek, dus moet u een afzonderlijke Intune-app toevoegen voor uw Slack-gebruikers met iOS-apparaten.
-1. Selecteer in Intune de optie **Client-apps** > **Apps** > **Toevoegen**.
+1. Selecteer in Intune **Apps** > **Alle apps** > **Toevoegen**.
 2. Selecteer onder App-type **Store-app: beheerde Google Play**.
 3. Selecteer **Beheerde Google Play: Goedkeuren**. Voer de zoekterm 'Slack voor EMM' in en selecteer de app.
 4. Selecteer **Goedkeuren**.
@@ -122,7 +122,7 @@ Voeg Slack toe als een beheerde Google Play-app in Intune en wijs uw Slack-gebru
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Een app-configuratiebeleid toevoegen voor Slack
 Voeg een app-configuratiebeleid toe voor Slack. App-configuratiebeleidsregels voor beheerde apparaten zijn platform-specifiek, dus u moet een afzonderlijk beleid toevoegen voor uw Slack-gebruikers met iOS-apparaten.
-1. Selecteer in Intune **Client-apps** > **App-configuratiebeleid** > **Toevoegen**.
+1. Selecteer in Intune **Apps** > **App-configuratiebeleid** > **Toevoegen**.
 2. Voer bij Naam het volgende in: Testbeleid Slack-app-configuratie.
 3. Selecteer bij Type apparaatregistratie **Beheerde apparaten**.
 4. Selecteer voor Platform de optie **Android**.

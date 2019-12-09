@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 40cbb62a620d6e174ab8acb76798ba53080b78cf
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547965"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563984"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>App-toewijzingen opnemen en uitsluiten in Microsoft Intune
 
@@ -55,34 +55,34 @@ Dit betekent dat het niet raadzaam is om apps aan gemengde groepen toe te wijzen
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Groepen opnemen en uitsluiten bij het toewijzen van apps 
 U kunt een app toewijzen aan groepen met behulp van de toewijzing voor opnemen en uitsluiten:
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
-4. Selecteer in het deelvenster **Client-apps** de optie **Apps**. De lijst met toegevoegde apps wordt weergegeven.
-5. Selecteer de app die u wilt beheren. In een dashboard worden gegevens over de app weergegeven. 
-6. Selecteer **Toewijzingen** in de sectie **Beheren** van het menu. 
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps**. De lijst met toegevoegde apps wordt weergegeven.
+3. Selecteer de app die u wilt beheren. In een dashboard worden gegevens over de app weergegeven. 
+4. Selecteer **Toewijzingen** in de sectie **Beheren** van het menu. 
 
     ![App-toewijzingen opnemen bij het toewijzen van apps](./media/apps-inc-exl-assignments/apps-inc-exl-01.png)
-7. Selecteer **Groep toevoegen** om de groepen van gebruikers aan wie de app is toegewezen toe te voegen. 
-8. Selecteer een **Toewijzingstype** uit de beschikbare toewijzingstypen in het deelvenster **Groep toevoegen**.
-9. Selecteer **Beschikbaar met of zonder inschrijving** als het toewijzingstype.
+
+5. Selecteer **Groep toevoegen** om de groepen van gebruikers aan wie de app is toegewezen toe te voegen. 
+6. Selecteer een **Toewijzingstype** uit de beschikbare toewijzingstypen in het deelvenster **Groep toevoegen**.
+7. Selecteer **Beschikbaar met of zonder inschrijving** als het toewijzingstype.
 
     ![App-toewijzingen van Intune - Groep toevoegen](./media/apps-inc-exl-assignments/apps-inc-exl-02.png)
-10. Selecteer **Opgenomen groepen** om de groep gebruikers te selecteren voor wie u deze app beschikbaar wilt maken.
+8. Selecteer **Opgenomen groepen** om de groep gebruikers te selecteren voor wie u deze app beschikbaar wilt maken.
 
     > [!NOTE]
     > Wanneer u een groep toevoegt terwijl er al een andere groep is opgenomen voor een gegeven toewijzingstype, wordt deze groep vooraf geselecteerd. Dit kan niet worden gewijzigd voor andere toewijzingstypen voor opnemen. De groep die is gebruikt, kan niet worden gebruikt als een opgenomen groep.
 
-11. Selecteer **Ja** om deze app beschikbaar maken voor alle gebruikers.
+9. Selecteer **Ja** om deze app beschikbaar maken voor alle gebruikers.
 
     ![App-toewijzingen van Intune - Groepen opnemen](./media/apps-inc-exl-assignments/apps-inc-exl-03.png)
-12. Selecteer **OK** om de groep op te nemen die moet worden ingesteld.
-13. Selecteer **Uitgesloten groepen** om de groep gebruikers te selecteren voor wie u deze app niet beschikbaar wilt maken. 
-14. Selecteer de groepen die moeten worden uitgesloten. Hierdoor is deze app niet meer beschikbaar voor deze groepen.
+10. Selecteer **OK** om de groep op te nemen die moet worden ingesteld.
+11. Selecteer **Uitgesloten groepen** om de groep gebruikers te selecteren voor wie u deze app niet beschikbaar wilt maken. 
+12. Selecteer de groepen die moeten worden uitgesloten. Hierdoor is deze app niet meer beschikbaar voor deze groepen.
 
     ![App-toewijzingen van Intune - Groepen uitsluiten](./media/apps-inc-exl-assignments/apps-inc-exl-04.png)
-15. Selecteer **Selecteren** om de selectie van groepen te voltooien.
-16. Selecteer **OK** in het deelvenster **Groep toevoegen**. De app-lijst **Toewijzingen** wordt weergegeven.
-17. Klik op **Opslaan** om uw groepstoewijzingen te activeren voor de app.
+13. Selecteer **Selecteren** om de selectie van groepen te voltooien.
+14. Selecteer **OK** in het deelvenster **Groep toevoegen**. De app-lijst **Toewijzingen** wordt weergegeven.
+15. Klik op **Opslaan** om uw groepstoewijzingen te activeren voor de app.
 
 Als u groepstoewijzingen maakt, kunnen groepen die al zijn toegewezen, niet worden gewijzigd. Als u een groep wilt selecteren die momenteel niet beschikbaar is, verwijdert u eerst de app uit de lijst met toegewezen apps. 
 

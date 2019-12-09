@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82a2414e7458d1eb0ce48c5afb8ac1bc9bddb636
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712918"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563607"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Ingebouwde apps toevoegen aan Microsoft Intune
 
@@ -37,24 +37,20 @@ In eerdere versies van de Intune-console heeft Intune verschillende standaard be
 ## <a name="add-a-built-in-app"></a>Ingebouwde app toevoegen
 
 Voer de volgende stappen uit om een ingebouwde app toe te voegen aan uw beschikbare apps in Microsoft Intune:
-1. Meld u aan bij Azure Portal.
-2. Kies **Meer services** > **Controle en beheer** > **Intune** om het deelvenster Microsoft Intune weer te geven.
-3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
-4. Selecteer in het venster **Client-apps** onder **Beheren** de optie **Apps**.
-5. Selecteer **Toevoegen**.
-6. In het app-venster **Toevoegen** in de lijst **App-type** selecteert u **Ingebouwde app**.
-7. Selecteer **App selecteren**.
-8. In het deelvenster **Ingebouwde app** selecteert u de apps die u wilt opnemen.
-9. Selecteer **Toevoegen** in het deelvenster **App toevoegen**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
+3. In het app-venster **Toevoegen** in de lijst **App-type** selecteert u **Ingebouwde app**.
+4. Selecteer **App selecteren**.
+5. In het deelvenster **Ingebouwde app** selecteert u de apps die u wilt opnemen.
+6. Selecteer **Toevoegen** in het deelvenster **App toevoegen**.
 
 
 ## <a name="configure-app-information"></a>App-gegevens configureren
 
 U kunt informatie over de ingebouwde app aanpassen. Aan de hand van deze informatie kunt u de app vinden in Intune en kunnen gebruikers de app vinden in de bedrijfsportal.
-1. Kies in het venster **Client-apps - Apps** de ingebouwde app die u wilt aanpassen.  
-    Er wordt een deelvenster voor de ingebouwde app weergegeven.
-2. Selecteer de optie **Eigenschappen** onder **Beheren**.
-3. Selecteer de optie **Configureren** om de informatie over de ingebouwde app aan te passen.
+1. Selecteer **Apps** > **Alle apps** en selecteer de ingebouwde app die u wilt aanpassen.  
+   Er wordt een deelvenster voor de ingebouwde app weergegeven.
+2. Selecteer **Eigenschappen** > **Configureren**.
 4. In het venster **App-gegevens** kunt u de volgende informatie aanpassen:
     - **Naam**: Voer de naam van de ingebouwde app in zoals deze in de bedrijfsportal wordt weergegeven. Zorg ervoor dat alle namen die u gebruikt, uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
     - **Beschrijving**: Voer een beschrijving in voor de app. 

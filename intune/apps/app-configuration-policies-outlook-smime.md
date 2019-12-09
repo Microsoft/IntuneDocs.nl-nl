@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2f483415d050486ae9979899d9308154a9b131
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74411356"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564193"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>S/MIME configureren met Outlook voor iOS
 
@@ -62,14 +62,14 @@ Outlook voor iOS ondersteunt twee manieren om certificaten aan apparaten te leve
 Als u Outlook voor iOS S/MIME in Endpoint Manager wilt configureren, inclusief het automatisch leveren van S/MIME-certificaten die door Outlook voor iOS kunnen worden gebruikt, voert u de volgende stappen uit:
 
 ### <a name="add-the-microsoft-outlook-app"></a>De Microsoft Outlook-app toevoegen
-1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Voeg de Microsoft Outlook voor iOS-app vanuit de App Store toe aan Endpoint Manager of synchroniseer Outlook voor iOS vanuit het Apple Volume Purchase Program. Zie [iOS- en macOS-apps uit de App Store toevoegen aan Microsoft Intune](~/apps/store-apps-ios.md) en [iOS- en macOS-apps beheren die zijn aangeschaft via een Apple Volume Purchase Program met Microsoft Intune](~/apps/vpp-apps-ios.md) voor meer informatie.
 
 ### <a name="create-the-outlook-for-ios-smime-configuration-policy"></a>S/MIME-configuratiebeleid voor Outlook voor iOS maken
 
 Met de volgende stappen kunt u het S/MIME-beleid voor Outlook voor iOS in Endpoint Manager maken en configureren. Deze instellingen bieden een geautomatiseerde levering van de handtekening- en versleutelingscertificaten.
 
-1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apps** > **Configuratiebeleid voor apps** > **Toevoegen**.<br>
+1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en selecteer **Apps** > **App-configuratiebeleid** > **Toevoegen**.<br>
 Het deelvenster **Configuratiebeleid toevoegen** wordt weergegeven.
 2. Voer de **naam** en **beschrijving** van het configuratiebeleid in.
 3. Selecteer **Beheerde apparaten** als **Type apparaatregistratie**.

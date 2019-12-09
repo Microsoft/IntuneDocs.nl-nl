@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 83f0d980bc4fa1bfd0b48f87839fd6efa130aa70
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390726"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563879"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Intune-inschrijving van toegewezen Android Enterprise-apparaten instellen
 
@@ -59,7 +59,7 @@ Volg deze stappen om het beheer van een toegewezen Android Enterprise-apparaat i
 
 U moet een inschrijvingsprofiel maken, zodat u uw toegewezen apparaten kunt inschrijven. Bij het maken van het profiel ontvangt u een inschrijvingstoken (willekeurige tekenreeks) en een QR-code. Afhankelijk van het Android-besturingssysteem en de versie van het apparaat kunt u het token of de QR-code gebruiken om [het toegewezen apparaat in te schrijven](#enroll-the-dedicated-devices).
 
-1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Toegewezen apparaten in bedrijfseigendom**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en kies **Apparaten** > **Android** > **Android-inschrijving** > **Toegewezen apparaten in bedrijfseigendom.**
 2. Kies **Maken** en vul de vereiste velden in.
     - **Naam**: Typ een naam die u gebruikt wanneer u het profiel toewijst aan de dynamische apparaatgroep.
     - **Vervaldatum van het token**: De datum waarop het token verloopt. Google dwingt een maximum van 90 dagen af.
@@ -92,7 +92,7 @@ U kunt apps en beleidsregels zenden naar toegewezen of dynamische apparaatgroepe
 
 Het vervangen of intrekken van een token of QR-code heeft geen effect op apparaten die al zijn geregistreerd.
 
-1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en kies **Apparaatinschrijving** > **Android-inschrijving** > **Toegewezen apparaten in bedrijfseigendom**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en kies **Apparaten** > **Android** > **Android-inschrijving** > **Toegewezen apparaten in bedrijfseigendom.**
 2. Kies het profiel waarmee u wilt werken.
 3. Kies **Token**.
 4. Kies **Token vervangen** als u het token wilt vervangen.

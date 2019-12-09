@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813472"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564214"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>De app Microsoft Managed Home Screen voor Android Enterprise configureren
 
@@ -31,12 +31,12 @@ Managed Home Screen is de toepassing die wordt gebruikt voor aan Android Enterpr
 
 ## <a name="when-to-configure-the-microsoft-managed-home-screen-app"></a>Wanneer u het beste de app Microsoft Managed Home Screen kunt configureren
 
-Normaal gesproken kunt u, als de instellingen beschikbaar zijn via de apparaatconfiguratie, daar de instellingen configureren. Hiermee bespaart u tijd, worden fouten geminimaliseerd en krijgt u een betere Intune- ondersteuningservaring. Echter enkele van de instellingen van het beheerde beginscherm zijn momenteel alleen beschikbaar via de blade **App-configuratiebeleid** in de Intune-console. Ontdek met behulp van dit document hoe u de verschillende instellingen kunt configureren met Configuration Designer of een JSON-script. 
+Normaal gesproken kunt u, als de instellingen beschikbaar zijn via de apparaatconfiguratie, daar de instellingen configureren. Hiermee bespaart u tijd, worden fouten geminimaliseerd en krijgt u een betere Intune- ondersteuningservaring. Echter enkele van de instellingen van het beheerde beginscherm zijn momenteel alleen beschikbaar via het deelvenster **App-configuratiebeleid** in de Intune-console. Ontdek met behulp van dit document hoe u de verschillende instellingen kunt configureren met Configuration Designer of een JSON-script. 
 
 > [!NOTE]
-> Het is momenteel mogelijk, en dit wordt ook aangeraden, om in de whitelist opgenomen toepassingen en vastgemaakte webkoppelingen in te stellen via **Client-apps** en **Apparaatconfiguratie**. Zie voor een volledige lijst van instellingen die in **Apparaatconfiguratie** beschikbaar zijn en van invloed zijn op Managed Home Screen [Toegewezen apparaatinstellingen](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
+> Het is momenteel mogelijk, en dit wordt ook aangeraden, om in de whitelist opgenomen toepassingen en vastgemaakte webkoppelingen in te stellen via **Apps** en **Apparaatconfiguratie**. Zie voor een volledige lijst van instellingen die in **Apparaatconfiguratie** beschikbaar zijn en van invloed zijn op Managed Home Screen [Toegewezen apparaatinstellingen](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
 
-Eerst gaat u naar de Intune-console in Azure Portal en naar **Client-apps** > **App-configuratiebeleid**. Voeg een configuratiebeleid toe voor **Beheerde apparaten** met **Android** en kies **Managed Home Screen** als bijbehorende app. Klik op **Configuratie-instellingen** om de verschillende beschikbare instellingen voor Managed Home Screen te configureren. 
+Navigeer eerst naar het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en selecteer **Apps** > **Configuratiebeleid voor apps**. Voeg een configuratiebeleid toe voor **Beheerde apparaten** met **Android** en kies **Managed Home Screen** als bijbehorende app. Klik op **Configuratie-instellingen** om de verschillende beschikbare instellingen voor Managed Home Screen te configureren. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Een indeling voor de configuratie-instellingen kiezen
 

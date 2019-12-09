@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 890709ccf176f2b0cc6c4a3af986d1bce642572d
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754419"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563883"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Internettoegang beheren met behulp van Microsoft Edge met Microsoft Intune
 
@@ -58,15 +58,15 @@ Als Microsoft Edge niet wordt gekoppeld aan Intune-beleid, kunnen gebruikers het
 U kunt gebruikmaken van voorwaardelijke toegang van Azure AD om de gebruikers om te leiden, zodat deze uitsluitend toegang hebben tot bedrijfsinhoud via Microsoft Edge. Dit beperkt de toegang in mobiele browsers tot web-apps die via Azure AD zijn verbonden met Microsoft Edge dat met beleid is beveiligd. De toegang vanuit andere onbeschermde browsers, bijvoorbeeld Safari of Chrome, is geblokkeerd. U kunt voorwaardelijke toegang toepassen op Azure-resources, zoals Exchange Online en SharePoint Online, het Microsoft 365-beheercentrum en zelfs on-premises sites die u aan externe gebruikers beschikbaar hebt gesteld via de [Azure AD-toepassingsproxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 Ga als volgt te werk als u met Azure AD verbonden web-apps wilt beperken tot gebruik van Microsoft Edge in iOS en Android:
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer onder het Intune-knooppunt achtereenvolgens **Voorwaardelijke toegang** > **Nieuw beleid**.
-3. Selecteer **Toekennen** in het gedeelte **Besturingselementen voor toegang** van de blade.
+3. Selecteer **Verlenen** in het gedeelte **Besturingselementen voor toegang** van het deelvenster.
 4. Selecteer **Goedgekeurde client-app vereisen**.
-5. Kies **Selecteren** op de blade **Verlenen**. Dit beleid moet worden toegewezen aan de cloud-apps die u alleen voor de Intune Managed Browser-app toegankelijk wilt maken.
+5. Kies **Selecteren** in het deelvenster **Verlenen**. Dit beleid moet worden toegewezen aan de cloud-apps die u alleen voor de Intune Managed Browser-app toegankelijk wilt maken.
 
     ![Schermopname van beleid voor voorwaardelijke toegang - Toekennen](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
-6. Selecteer in het gedeelte Toewijzingen **Voorwaarden** > **Client-apps**. De blade **Client-apps** wordt weergegeven.
+6. Selecteer in het gedeelte Toewijzingen **Voorwaarden** > **Apps**. Het deelvenster **Apps** wordt weergegeven.
 7. Selecteer **Ja** onder **Configureren** om het beleid voor specifieke client-apps toe te passen.
 8. Controleer of **Browser** is geselecteerd als client-app.
 
@@ -97,29 +97,29 @@ Voor eenmalige aanmelding moet uw apparaat zijn geregistreerd door de Microsoft 
 
 Ga als volgt te werk als u een appconfiguratie wilt maken voor Microsoft Edge:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Client-apps** > **App-configuratiebeleid** > **Toevoegen**.
-3. Geef op de blade **Configuratiebeleid toevoegen** een **naam** en een optionele **beschrijving** op voor de app-configuratie-instellingen.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **App-configuratiebeleid** > **Toevoegen**.
+3. Geef in het deelvenster **Configuratiebeleid toevoegen** een **naam** en een optionele **beschrijving** op voor de app-configuratie-instellingen.
 4. Kies voor **Type apparaatregistratie** **Beheerde apps**.
-5. Kies **De vereiste app selecteren**. Kies vervolgens op de blade **Doel-apps** de **Beheerde browser** of **Edge** voor iOS, voor Android of voor beide.
-6. Selecteer **OK** om terug te keren naar de blade **Configuratiebeleid toevoegen**.
-7. Selecteer **Configuratie-instellingen**. Definieer op de blade **Configuratie** sleutel- en waardeparen om configuraties op te geven voor Microsoft Edge. Gebruik de secties verderop in dit artikel voor meer informatie over de verschillende sleutel- en waardeparen die u kunt definiëren.
+5. Kies **De vereiste app selecteren**. Kies vervolgens in het deelvenster **Doel-apps** **Managed Browser** of **Edge** voor iOS, voor Android of voor beide.
+6. Selecteer **OK** om terug te keren naar het deelvenster **Configuratiebeleid toevoegen**.
+7. Selecteer **Configuratie-instellingen**. Definieer in het deelvenster **Configuratie** sleutel- en waardeparen om configuraties op te geven voor Microsoft Edge. Gebruik de secties verderop in dit artikel voor meer informatie over de verschillende sleutel- en waardeparen die u kunt definiëren.
 
     > [!NOTE]
     > Voor Microsoft Edge wordt hetzelfde sleutel- en waardepaar gebruikt als voor Managed Browser. Microsoft Edge moet worden geconfigureerd met een beveiligingsbeleid voor apps om het beleid voor app-configuratie in Android van kracht te laten worden.
 
 8. Selecteer **OK** wanneer u klaar bent.
-9. Kies op de blade **Configuratiebeleid toevoegen** de optie **Toevoegen**.<br>
-    De nieuwe configuratie wordt gemaakt en weergegeven op de blade **App-configuratie**.
+9. Kies in het deelvenster **Configuratiebeleid toevoegen** de optie **Toevoegen**.<br>
+    De nieuwe configuratie wordt gemaakt en weergegeven in het deelvenster **App-configuratie**.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>De configuratie-instellingen toewijzen die u hebt gemaakt 
 
 U wijst de instellingen aan groepen gebruikers in Azure AD toe. Als deze gebruiker de beveiligde browser-app heeft geïnstalleerd waarop het beleid is gericht, wordt de app beheerd door de instellingen die u hebt opgegeven.
 
-1. Selecteer op de blade **Client-apps** van het Intune MAM-dashboard de optie **App-configuratiebeleid**.
+1. Selecteer in het deelvenster **Apps** van het Intune MAM-dashboard de optie **App-configuratiebeleid**.
 2. Selecteer in de lijst met app-configuraties de configuratie die u wilt toewijzen.
-3. Selecteer **Toewijzingen** op de volgende blade.
-4. Selecteer op de blade **Toewijzingen** de Azure AD-groep waaraan u de app-configuratie wilt toewijzen en selecteer vervolgens **OK**.
+3. Selecteer **Toewijzingen** in het volgende deelvenster.
+4. Selecteer in het deelvenster **Toewijzingen** de Azure AD-groep waaraan u de app-configuratie wilt toewijzen en selecteer vervolgens **OK**.
 
 ## <a name="direct-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>Gebruikers doorsturen naar Microsoft Edge in plaats van de Intune Managed Browser 
 

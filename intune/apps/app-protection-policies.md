@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98976403d58c33f22f7ceeabec1d38f076f9bbe7
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592073"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563728"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>App-beveiligingsbeleid maken en toewijzen
 
@@ -44,9 +44,9 @@ Zie [Add apps to Microsoft Intune](apps-add.md) (Apps toevoegen aan Microsoft In
 Wanneer u een app-beveiligingsbeleid maakt voor iOS/iPadOS- en Android-apps, volgt u een moderne Intune-processtroom die resulteert in een nieuw beveiligingsbeleid voor apps.
 
 ### <a name="create-an-iosipados-or-android-app-protection-policy"></a>Een beveiligingsbeleid voor iOS/iPadOS- of Android-apps maken
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Kies in de Intune-portal **Client-apps** > **App-beveiligingsbeleid**. Hiermee opent u de details van het **App-beveiligingsbeleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken.
-3. Selecteer **Beleid maken** en selecteer **iOS/iPadOS** of **Android**. De blade **Beleid maken** wordt weergegeven.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Kies in de Intune-portal **Apps** > **App-beveiligingsbeleid**. Hiermee opent u de details van het **App-beveiligingsbeleid**, waar u nieuw beleid kunt maken en bestaande beleidsregels kunt bewerken.
+3. Selecteer **Beleid maken** en selecteer **iOS/iPadOS** of **Android**. Het deelvenster **Beleid maken** wordt weergegeven.
 4. Voeg op de pagina **Basisinformatie** de volgende waarden toe:
 
     | Waarde | Beschrijving |
@@ -57,7 +57,7 @@ Wanneer u een app-beveiligingsbeleid maakt voor iOS/iPadOS- en Android-apps, vol
 
     De waarde **Platform** wordt ingesteld op basis van de bovenstaande keuze.
 
-    ![Schermopname van de pagina Basisinformatie van de blade Beleid maken](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
+    ![Schermopname van de pagina Basisinformatie van het deelvenster Beleid maken](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
 
 5. Klik op **Volgende** om de pagina **Apps** weer te geven.<br>
     Op de pagina **Apps** kunt u kiezen hoe u dit beleid wilt toepassen op apps op verschillende apparaten. U moet minstens één app toevoegen.<p>
@@ -171,7 +171,7 @@ In veel organisaties is het gebruikelijk dat eindgebruikers gebruik mogen maken 
 
 Omdat Intune-app-beveiligingsbeleid op de identiteit van een gebruiker is gericht, worden de beveiligingsinstellingen voor een gebruiker op zowel ingeschreven (via MDM beheerde) als niet-ingeschreven apparaten (geen MDM) toegepast. Daarom kunt u Intune-app-beveiligingsbeleid richten op ofwel in Intune ingeschreven apparaten of iOS- en Android-apparaten waarvan de registratie ongedaan is gemaakt. U mag één beveiligingsbeleid voor niet-beheerde apparaten hebben waarin strenge DLP-besturingselementen voor preventie van gegevensverlies zijn toegepast, en een afzonderlijk beveiligingsbeleid voor via MDM beheerde apparaten waarbij minder strenge DLP-besturingselementen mogelijk zijn. Zie [App-beveiligingsbeleid en werkprofielen](android-deployment-scenarios-app-protection-work-profiles.md) voor meer informatie over hoe dit werkt op persoonlijke Android Enterprise-apparaten.
 
-Voor het maken van deze beleidsregels bladert u naar **Client-apps** > **App-beveiliging** in de Intune-console en selecteert u **Beleid maken**. U kunt ook een bestaand app-beveiligingsbeleid bewerken. Als u het app-beveiligingsbeleid op zowel beheerde als niet-beheerde apparaten wilt toepassen, gaat u naar de pagina **Apps** en bevestigt u dat **Toepassen op apps op alle apparaattypen** is ingesteld op **Ja**, de standaardwaarde. Als u granulair wilt toewijzen op basis van de beheerstatus, stelt u **Toepassen op apps op alle apparaattypen** in op **Nee**. 
+Voor het maken van deze beleidsregels bladert u naar **Apps** > **App-beveiliging** in de Intune-console en selecteert u **Beleid maken**. U kunt ook een bestaand app-beveiligingsbeleid bewerken. Als u het app-beveiligingsbeleid op zowel beheerde als niet-beheerde apparaten wilt toepassen, gaat u naar de pagina **Apps** en bevestigt u dat **Toepassen op apps op alle apparaattypen** is ingesteld op **Ja**, de standaardwaarde. Als u granulair wilt toewijzen op basis van de beheerstatus, stelt u **Toepassen op apps op alle apparaattypen** in op **Nee**. 
 
 ### <a name="device-types"></a>Apparaattypen
 

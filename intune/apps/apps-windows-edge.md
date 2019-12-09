@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af24b5fe33bc1e794529ef5a5ab6975eed4fb9cc
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709915"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563569"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Edge voor Windows 10 toevoegen aan Microsoft Intune
 
@@ -34,7 +34,7 @@ Voordat u apps kunt implementeren, configureren, bewaken of beveiligen, moet u d
 > [!NOTE]
 > Microsoft Edge *versie 77 en later* is ook beschikbaar voor macOS.
 > 
-> U kunt de ingebouwde toepassingsimplementatie van Microsoft Edge niet gebruiken voor aan de werkplek toegevoegde computers. Voor de ingebouwde toepassingsimplementatie is de Intune-beheerextensie vereist, die er alleen is voor aan AAD toegevoegde apparaten. U kunt Microsoft Edge *versie 77 en later* wel implementeren met behulp van een *MSI-bestand* dat is geüpload naar **Client-apps** . Zie [Een Windows Line-Of-Business-app toevoegen aan Microsoft Intune](~/apps/lob-apps-windows.md).
+> U kunt de ingebouwde toepassingsimplementatie van Microsoft Edge niet gebruiken voor aan de werkplek toegevoegde computers. Voor de ingebouwde toepassingsimplementatie is de Intune-beheerextensie vereist, die er alleen is voor aan AAD toegevoegde apparaten. U kunt Microsoft Edge *versie 77 en hoger* wel implementeren met behulp van een *MSI-bestand* dat is geüpload naar **Apps** . Zie [Een Windows Line-Of-Business-app toevoegen aan Microsoft Intune](~/apps/lob-apps-windows.md).
 
 ## <a name="prerequisites"></a>Vereisten
 - Windows 10 RS2 en hoger is vereist.
@@ -43,15 +43,15 @@ Voordat u apps kunt implementeren, configureren, bewaken of beveiligen, moet u d
 ## <a name="configure-the-app-in-intune"></a>De app configureren in Intune
 U kunt een Microsoft Edge versie 77 en later toevoegen aan Intune met behulp van de volgende stappen:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps** > **Toevoegen**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
 3. Selecteer in de lijst **App-type** onder **Microsoft Edge, versie 77 en later** de optie **Windows 10**.
 
 ## <a name="configure-app-information"></a>App-gegevens configureren
 In deze stap geeft u informatie op over deze app-implementatie. Aan de hand van deze informatie kunt u de app vinden in Intune en kunnen gebruikers de app vinden in de bedrijfsportal.
 
-1. Selecteer de optie **App-gegevens** om de blade **App-gegevens** weer te geven.
-2. Op de blade **App-gegevens** geeft u informatie op over deze app-implementatie. Aan de hand van deze informatie kunt u de app vinden in Intune en kunnen gebruikers de app vinden in de bedrijfsportal.
+1. Selecteer de optie **App-gegevens** om het deelvenster **App-gegevens** weer te geven.
+2. In het deelvenster **App-gegevens** geeft u informatie op over deze app-implementatie. Aan de hand van deze informatie kunt u de app vinden in Intune en kunnen gebruikers de app vinden in de bedrijfsportal.
     - **Naam**: Voer de naam van de app in zoals deze in de bedrijfsportal zal worden weergegeven. Zorg ervoor dat alle namen uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
     - **Beschrijving**: Voer een beschrijving in voor de app. U kunt bijvoorbeeld de beoogde gebruikers vermelden in de beschrijving.
     - **Uitgever**: Microsoft wordt weergegeven als de uitgever.
@@ -67,8 +67,8 @@ In deze stap geeft u informatie op over deze app-implementatie. Aan de hand van 
 ## <a name="configure-app-settings"></a>App-instellingen configureren
 In deze stap configureert u de installatieopties voor de app.
 
-1. Selecteer op de blade **App toevoegen** de optie **App-instellingen**.
-2. Selecteer op de blade **App-instellingen** de optie **Beta** of **Dev** in de lijst **Kanaal** om te bepalen vanuit welk Edge-kanaal u de app gaat implementeren.
+1. Selecteer in het deelvenster **App toevoegen** de optie **App-instellingen**.
+2. Selecteer in het deelvenster **App-instellingen** de optie **Beta** of **Dev** in de lijst **Kanaal** om te bepalen vanuit welk Edge-kanaal u de app gaat implementeren.
     - Het kanaal **Beta** is de stabielste previewervaring van Microsoft Edge en de beste keuze voor een volledige pilot binnen uw organisatie. Met elke zes weken belangrijke updates bevat elke release de vergaarde kennis en verbeteringen van het Dev-kanaal.
     - Het kanaal **Dev** is gereed voor zakelijke feedback over Windows, Windows Server en macOS. Het wordt elke week bijgewerkt en bevat de nieuwste verbeteringen en oplossingen.
 
@@ -85,7 +85,7 @@ U kunt bereiktags gebruiken om te bepalen wie er informatie over client-apps mag
 4.  Klik op **Selecteren** > **OK**.
 
 ## <a name="add-the-app"></a>De app toevoegen
-Wanneer u klaar bent met het configureren van de app, selecteert u **Toevoegen** op de blade **App-app**. 
+Wanneer u klaar bent met het configureren van de app, selecteert u **Toevoegen** in het deelvenster **App-app**. 
 
 De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u selecteert. 
 

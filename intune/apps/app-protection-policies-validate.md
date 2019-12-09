@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.service: microsoft-intune
 ms.subservice: apps
 ms.localizationpriority: high
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9dda9a1aa1e81b46533c1c15d996807984193d
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: e9c3e775773ab08721cb3a65858f3d8c8402104f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712946"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563742"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>De configuratie van uw beveiligingsbeleid voor apps valideren in Microsoft Intune
 
@@ -43,8 +43,8 @@ Als blijkt dat uw beveiligingsbeleid voor apps niet werkt zoals verwacht, contro
 - Is de status van elke beschermingsapp van de gebruiker zoals verwacht. De apps kunnen de status **Ingecheckt** of **Niet ingecheckt** hebben.
 
 ### <a name="user-app-protection-status"></a>Gebruikersstatus van de app-beveiliging
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer **Client-apps** >  **App-beveiligingsstatus** en vervolgens de tegel **Toegewezen gebruikers**. 
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecteer **Apps** >  **App-beveiligingsstatus** en vervolgens de tegel **Toegewezen gebruikers**. 
 4. Op de pagina **App-rapportage** selecteert u **Gebruiker selecteren** voor een lijst met gebruikers en groepen. 
 5. Zoek naar en selecteer een gebruiker uit de lijst en kies vervolgens **Gebruiker selecteren**. Bovenaan het venster **App-rapportage** ziet u of de gebruiker een licentie voor app-beveiliging heeft. U kunt ook zien of de gebruiker een licentie voor O365 heeft en wat de app-status voor alle apparaten van de gebruiker is.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199199"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563641"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -37,7 +37,7 @@ De Microsoft Intune-bedrijfsportal is de plaats waar gebruikers toegang hebben t
 > [!Tip]
 > Wanneer u de bedrijfsportal aanpast, zijn de configuraties zowel van toepassing op de website als op de apps van de bedrijfsportal. Houd er rekening mee dat gebruikers een Intune-licentie nodig hebben die is toegewezen aan de bedrijfsportal-website.
 
-Door de bedrijfsportal aan te passen geeft u uw eindgebruikers een vertrouwde en efficiënte ervaring. Selecteer hiervoor in de Intune-portal achtereenvolgens **Client-apps** > **Huisstijl en aanpassing**, en configureer vervolgens de vereiste instellingen.
+Door de bedrijfsportal aan te passen geeft u uw eindgebruikers een vertrouwde en efficiënte ervaring. Selecteer hiervoor in de Intune-portal achtereenvolgens **Apps** > **Huisstijl en aanpassing** en configureer vervolgens de vereiste instellingen.
 
 Wanneer een gebruiker een iOS-toepassing installeert vanuit de bedrijfsportal wordt er een prompt weergegeven. Dit doet zich voor wanneer de iOS-app is gekoppeld aan de App Store, aan een volume-aankoopprogramma (VPP) of aan een Line-Of-Business-app (LOB). Met de prompt kunnen gebruikers de actie accepteren of het beheer van de app toestaan. In de prompt wordt uw bedrijfsnaam weergegeven. Wanneer uw bedrijfsnaam niet beschikbaar is, wordt **Bedrijfsportal** weergegeven. 
 
@@ -92,7 +92,7 @@ Kies een logo dat er het beste uitziet op een witte of lichte achtergrond.
 
 ### <a name="brand-image-for-company-portal"></a>Merkafbeelding toevoegen voor de bedrijfsportal
 
-Geef een merkafbeelding weer die de huisstijl van uw bedrijf uitstraalt. Nadat u uw wijzigingen hebt opgeslagen, kiest u in de Intune-webportal, boven in de blade **Een voorbeeld van uw instellingen bekijken** om te zien hoe uw configuraties eruit gaan zien. Houd er rekening mee dat u de merkafbeelding alleen kunt bekijken op een iOS-apparaat, en niet in de Intune-webportal. 
+Geef een merkafbeelding weer die de huisstijl van uw bedrijf uitstraalt. Nadat u uw wijzigingen hebt opgeslagen, kiest u in de Intune-webportal, boven in het deelvenster **Een voorbeeld van uw instellingen bekijken** om te zien hoe uw configuraties eruit gaan zien. Houd er rekening mee dat u de merkafbeelding alleen kunt bekijken op een iOS-apparaat, en niet in de Intune-webportal. 
 
 |Veldnaam|Meer informatie|
 |---|---|

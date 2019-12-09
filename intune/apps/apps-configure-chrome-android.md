@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/07/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801670"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564047"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Google Chrome configureren voor Android-apparaten met behulp van Intune 
 
@@ -36,8 +36,8 @@ U kunt Intune-configuratiebeleid voor apps gebruiken om Google Chrome te configu
 
 ## <a name="add-the-google-chrome-app-to-intune"></a>De Google Chrome-app toevoegen aan Intune
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer in het deelvenster **Intune** achtereenvolgens **Client-apps** > **Apps** > **Toevoegen**, en voeg vervolgens de **Beheerde Google Play**-app toe.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps** > **Toevoegen** en voeg vervolgens de **beheerde Google Play**-app toe.
 3. Ga naar beheerde Google Play, zoek met **Google Chrome** en keur goed.
 
     ![Google Chrome zoeken en goedkeuren](~/apps/media/apps-configure-chrome-android/search.png)

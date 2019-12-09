@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796b1709260c7f507e78aa8404129fa996b59088
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 01ca17c9f8e3fd86e12f225621e6dc0e07bb4acb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498811"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564080"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Office 365 toewijzen aan macOS-apparaten met Microsoft Intune
 
@@ -41,14 +41,12 @@ Voordat u Office 365 gaat toevoegen aan macOS-apparaten, moet u de volgende deta
 ## <a name="create-and-configure-the-app-suite"></a>Het app-pakket maken en configureren
 
 Voeg Office 365 toe vanuit het deelvenster **Apps**.
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer in het deelvenster **Intune** de optie **Client-apps**.
-4. Selecteer in het workloaddeelvenster **Client-apps** onder **Beheren** de optie **Apps**. 
-5. Selecteer **Toevoegen**.
-6. In de lijst **App-type** in de groep **Office 365-pakket** selecteert u **macOS**.
-7. Selecteer **Informatie over app-pakket** voor informatie over het app-pakket.  
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
+3. In de lijst **App-type** in de groep **Office 365-pakket** selecteert u **macOS**.
+4. Selecteer **Informatie over app-pakket** voor informatie over het app-pakket.  
     Aan de hand van deze informatie kunt u het app-pakket vinden in Intune en kunnen gebruikers dit vinden in de bedrijfsportal.
-8. Voer de volgende informatie in:
+5. Voer de volgende informatie in:
     - **Naam pakket**: voer de naam van het app-pakket in zoals deze wordt weergegeven in de bedrijfsportal. Zorg ervoor dat alle pakketnamen die u gebruikt, uniek zijn. Als dezelfde naam van een app-pakket twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
     - **Beschrijving pakket**: voer een beschrijving in voor het app-pakket.
     - **Uitgever**: Microsoft wordt weergegeven als de uitgever.
@@ -60,8 +58,8 @@ Voeg Office 365 toe vanuit het deelvenster **Apps**.
     - **Eigenaar**: Microsoft wordt weergegeven als de eigenaar.
     - **Opmerkingen**: Voer de opmerkingen in die u aan deze app wilt koppelen (optioneel).
     - **Logo**: het Office 365-logo wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-9. Selecteer **OK**.
-10. Selecteer **Toevoegen** in het deelvenster **App toevoegen**.  
+6. Selecteer **OK**.
+7. Selecteer **Toevoegen** in het deelvenster **App toevoegen**.  
     Het pakket wordt in de lijst met apps als een afzonderlijk item weergegeven.
 
 ## <a name="configure-app-assignments"></a>App-toewijzingen configureren

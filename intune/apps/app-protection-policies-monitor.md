@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 26972bb034ea4cb65f1bf64c61c20395cf94dc36
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889581"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564172"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -42,9 +42,8 @@ De bewaarperiode voor app-beveiligingsgegevens is 90 dagen. Alle app-exemplaren 
 
 ## <a name="summary-view"></a>Samenvattingsweergave
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Kies in het deelvenster **Intune** de optie **Client-apps**.
-4. Kies in de workload **Client-apps**, onder **Controleren**, de optie **App-beveiligingsstatus** om de samenvattingsweergave te bekijken.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecteer **Apps** > **Bewaken** > **Status app-beveiliging**.
 
    ![Schermopname van de tegel Samenvatting van het deelvenster Mobile Application Management van Intune](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
@@ -78,7 +77,7 @@ U kunt zoeken naar een afzonderlijke gebruiker en de nalevingsstatus voor deze g
 >[!NOTE]
 > De kolom **Laatste synchronisatie** bevat in het rapport Gebruikersstatus op de console dezelfde waarde als in het [exporteerbare CSV-rapport](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities) van het app-beveiligingsbeleid. Het verschil is een kleine vertraging in synchronisatie tussen de waarde in de twee rapporten. 
 >
-> De tijd waarnaar wordt verwezen in Laatste synchronisatie, is het moment waarop het app-exemplaar voor het laatst is gezien in Intune. Wanneer een gebruiker een app start, communiceert de app mogelijk op deze starttijd met de Intune-app-beveiligingsservice, afhankelijk van de datum waarop deze voor het laatst is ingecheckt. Zie [interval voor nieuwe pogingen voor inchecken van app-beveiligingsbeleid](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Als een eindgebruiker deze specifieke app niet heeft gebruikt gedurende het laatste interval voor inchecken (meestal 30 minuten, bij actief gebruik) en de app vervolgens start, gebeurt het volgende:
+> De tijd waarnaar wordt verwezen in Laatste synchronisatie, is het moment waarop het app-exemplaar voor het laatst is gezien in Intune. Wanneer een gebruiker een app start, communiceert de app mogelijk op deze starttijd met de Intune-app-beveiligingsservice, afhankelijk van de datum waarop deze voor het laatst is ingecheckt. Zie [interval voor nieuwe pogingen voor inchecken van app-beveiligingsbeleid](~/apps/app-protection-policy-delivery.md). Als een eindgebruiker deze specifieke app niet heeft gebruikt gedurende het laatste interval voor inchecken (meestal 30 minuten, bij actief gebruik) en de app vervolgens start, gebeurt het volgende:
 >
 > - Het exporteerbare CSV rapport van het app-beveiligingsbeleid heeft de nieuwste tijd, binnen 1 minuut (minimum) en 30 minuten (maximum).
 > - Het rapport Gebruikersstatus heeft direct de nieuwste tijd.
@@ -104,7 +103,7 @@ Ga als volgt te werk om de rapportage voor een gebruiker te bekijken:
 > Als het MAM-beleid niet is toegepast op de gebruikers waarnaar u hebt gezocht, wordt in een bericht gemeld dat er geen MAM-beleid wordt toegepast op de gebruikers.
 
 ### <a name="flagged-users"></a>Gemarkeerde gebruikers
-De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen de fout is opgetreden, het besturingssysteem van het apparaat dat is beïnvloed en een tijdstempel. De fout is karakteristiek voor apparaten die zijn opengebroken (iOS) of geroot (Android). Bovendien worden hier gebruikers gerapporteerd met apparaten die zijn gemarkeerd na de controle SafetyNet-apparaatattestation voor voorwaardelijk starten, met de reden die is gerapporteerd in Google. Als een gebruiker uit het rapport moet worden verwijderd, moet de status van het apparaat zelf worden gewijzigd. Dit gebeurt na de volgende hoofddetectiecontrole (of jailbreakcontrole/SafetyNet-controle) die een positief resultaat moet hebben. Als het apparaat daadwerkelijk is hersteld, wordt de vernieuwing van het rapport Gemarkeerde gebruikers uitgevoerd wanneer de blade opnieuw wordt geladen.
+De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen de fout is opgetreden, het besturingssysteem van het apparaat dat is beïnvloed en een tijdstempel. De fout is karakteristiek voor apparaten die zijn opengebroken (iOS) of geroot (Android). Bovendien worden hier gebruikers gerapporteerd met apparaten die zijn gemarkeerd na de controle SafetyNet-apparaatattestation voor voorwaardelijk starten, met de reden die is gerapporteerd in Google. Als een gebruiker uit het rapport moet worden verwijderd, moet de status van het apparaat zelf worden gewijzigd. Dit gebeurt na de volgende hoofddetectiecontrole (of jailbreakcontrole/SafetyNet-controle) die een positief resultaat moet hebben. Als het apparaat daadwerkelijk is hersteld, wordt de vernieuwing van het rapport Gemarkeerde gebruikers uitgevoerd wanneer het deelvenster opnieuw wordt geladen.
 
 ### <a name="users-with-potentially-harmful-apps"></a>Gebruikers met mogelijk schadelijke apps
 In de gedetailleerde weergave ziet u het volgende:
@@ -121,14 +120,14 @@ Gebruikers met apparaten die zijn gemarkeerd na de controle **Bedreigingsscans v
 
 ## <a name="reporting-view"></a>Rapportageweergave
 
-U vindt dezelfde rapporten bovenaan de blade **App-beveiligingsstatus**.
+U vindt dezelfde rapporten bovenaan het deelvenster **App-beveiligingsstatus**.
 
 > [!NOTE]
-> Intune biedt aanvullende velden voor apparaatrapporten, waaronder de registratie-id van de app, de Android-fabrikant, het model, de versie van de beveiligingspatch en het iOS-model. In Intune gaat u naar deze velden door achtereenvolgens **Client-apps** > **App-beveiligingsstatus** > **App-beveiligingsrapport: iOS, Android** te selecteren. Bovendien helpen deze parameters u de lijst **Toestaan** te configureren voor de apparaatfabrikant (Android), evenals de lijst **Toestaan** voor het apparaatmodel (Android en iOS) en de versie-instellingen van de minimale Android-beveiligingspatch. 
+> Intune biedt aanvullende velden voor apparaatrapporten, waaronder de registratie-id van de app, de Android-fabrikant, het model, de versie van de beveiligingspatch en het iOS-model. In Intune gaat u naar deze velden door achtereenvolgens **Apps** > **App-beveiligingsstatus** > **App-beveiligingsrapport: iOS, Android** te selecteren. Bovendien helpen deze parameters u de lijst **Toestaan** te configureren voor de apparaatfabrikant (Android), evenals de lijst **Toestaan** voor het apparaatmodel (Android en iOS) en de versie-instellingen van de minimale Android-beveiligingspatch. 
 
-Aanvullende rapporten zijn beschikbaar om u te helpen bij de compatibiliteitsstatus van de MAM-beleid. Als u deze rapporten wilt weergeven, selecteert u **Client-apps** > **App-beveiligingsstatus** > **Rapporten**. 
+Aanvullende rapporten zijn beschikbaar om u te helpen bij de compatibiliteitsstatus van de MAM-beleid. Als u deze rapporten wilt weergeven, selecteert u **Apps** > **App-beveiligingsstatus** > **Rapporten**. 
 
-De blade **Rapporten** biedt verschillende rapporten op basis van de gebruiker en de app, waaronder de volgende:
+Het deelvenster **Rapporten** biedt verschillende rapporten op basis van de gebruiker en de app, waaronder de volgende:
 
 - **Gebruikersrapport**: Dit rapport biedt dezelfde informatie als de informatie die u vindt in het rapport **Gebruikersstatus** onder de sectie [Gedetailleerde weergave](app-protection-policies-monitor.md#detailed-view) hierboven.
 
@@ -139,7 +138,7 @@ De blade **Rapporten** biedt verschillende rapporten op basis van de gebruiker e
     - Deze apps worden gebruikt door een gebruiker of voor een app waarop momenteel geen MAM-beleid is gericht.
     - Alle apps zijn ingecheckt, maar er wordt geen MAM-beleid op toegepast.
 
-    ![Schermopname van de blade App-rapportage van een gebruiker, met details voor drie apps](./media/app-protection-policies-monitor/MAM-reporting-4.png)
+    ![Schermopname van het deelvenster App-rapportage van een gebruiker, met details voor drie apps](./media/app-protection-policies-monitor/MAM-reporting-4.png)
 
 - **Rapport over gebruikersconfiguratie**: Op basis van een geselecteerde gebruiker biedt dit rapport details over appconfiguraties de gebruikers heeft ontvangen.
 - **Appconfiguratierapport**: Op basis van het geselecteerde platform en de app, biedt dit rapport informatie over welke gebruikers configuraties hebben ontvangen voor de geselecteerde app.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6726f731fba5bc41893f999ac627bff9a8aca1e
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754835"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563592"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>Microsoft Edge toevoegen aan macOS-apparaten met behulp van Microsoft Intune
 
@@ -40,15 +40,15 @@ Voordat u apps kunt implementeren, configureren, bewaken of beveiligen, moet u d
 ## <a name="add-microsoft-edge-to-intune"></a>Microsoft Edge toevoegen aan Intune
 U kunt Microsoft Edge versie 77 en later toevoegen aan Intune met behulp van de volgende stappen:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps** > **Toevoegen**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
 3. Selecteer in de lijst **App-type** onder **Microsoft Edge, versie 77 en later** de optie **macOS**.
 
 ## <a name="configure-app-information"></a>App-gegevens configureren
 In deze stap geeft u informatie op over deze app-implementatie. Aan de hand van deze informatie kunt u de app vinden in Intune en kunnen gebruikers de app vinden in de bedrijfsportal.
 
-1. Selecteer de optie **App-gegevens** om de blade **App-gegevens** weer te geven.
-2. Op de blade **App-gegevens** geeft u informatie op over deze app-implementatie. Aan de hand van deze informatie kunt u de app vinden in Intune en kunnen gebruikers de app vinden in de bedrijfsportal.
+1. Selecteer de optie **App-gegevens** om het deelvenster **App-gegevens** weer te geven.
+2. In het deelvenster **App-gegevens** geeft u informatie op over deze app-implementatie. Aan de hand van deze informatie kunt u de app vinden in Intune en kunnen gebruikers de app vinden in de bedrijfsportal.
     - **Naam**: Voer de naam van de app in zoals deze in de bedrijfsportal zal worden weergegeven. Zorg ervoor dat alle namen uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
     - **Beschrijving**: Voer een beschrijving in voor de app. U kunt bijvoorbeeld de beoogde gebruikers vermelden in de beschrijving.
     - **Uitgever**: Microsoft wordt weergegeven als de uitgever.
@@ -64,8 +64,8 @@ In deze stap geeft u informatie op over deze app-implementatie. Aan de hand van 
 ## <a name="configure-microsoft-edge-settings"></a>Instellingen voor Microsoft Edge configureren
 In deze stap configureert u de installatieopties voor de app.
 
-1. Selecteer op de blade **App toevoegen** de optie **App-instellingen**.
-2. Op de blade **App-instellingen** wordt het kanaal **Beta** automatisch geselecteerd en dit kan niet worden gewijzigd.
+1. Selecteer in het deelvenster **App toevoegen** de optie **App-instellingen**.
+2. In het deelvenster **App-instellingen** wordt het kanaal **Beta** automatisch geselecteerd en dit kan niet worden gewijzigd.
     - Het kanaal **Beta** is de stabielste previewervaring van Microsoft Edge en de beste keuze voor een volledige pilot binnen uw organisatie. Met elke zes weken belangrijke updates.
 
     > [!NOTE]
@@ -80,7 +80,7 @@ U kunt bereiktags gebruiken om te bepalen wie er informatie over client-apps mag
 4.  Klik op **Selecteren** > **OK**.
 
 ## <a name="add-the-app"></a>De app toevoegen
-Wanneer u klaar bent met configureren, selecteert u **Toevoegen** op de blade **App-app**. 
+Wanneer u klaar bent met configureren, selecteert u **Toevoegen** in het deelvenster **App-app**. 
 
 De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u selecteert. 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
-ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
+ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566186"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564169"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
 
@@ -50,9 +50,8 @@ Nadat u de opgenomen groepen hebt geselecteerd voor het configuratiebeleid van u
 
 ## <a name="create-an-app-configuration-policy"></a>Een app-configuratiebeleid maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Kies de workload **Client-apps**.
-4. Kies **App-configuratiebeleidsregels** in de groep **Beheren** en kies vervolgens **Toevoegen**.
+1. Meld u aan bij[Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Kies de opties **Apps** > **App-configuratiebeleid** > **Toevoegen**.
 5. Stel de volgende details in:
     - **Naam**: de naam van het profiel zoals deze in Azure Portal wordt weergegeven.
     - **Beschrijving**: de beschrijving van het profiel dat wordt weergegeven in Azure Portal.
@@ -74,7 +73,7 @@ Nadat u de opgenomen groepen hebt geselecteerd voor het configuratiebeleid van u
 13. Selecteer het tabblad **Uitsluiten**. 
 14. Klik op **Groepen voor uitsluiten selecteren** om het gerelateerde deelvenster weer te geven.
 
-    ![Schermafbeelding van Beleidstoewijzingen - de blade Groepen voor uitsluiten selecteren](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+    ![Schermopname van Beleidstoewijzingen - het deelvenster Groepen selecteren die moeten worden uitgesloten](./media/app-configuration-policies-use-ios/app-config-policy03.png)
 15. Kies de groepen die u wilt uitsluiten en klik vervolgens op **Selecteren**.
 
     >[!NOTE]
@@ -181,10 +180,9 @@ Intune ondersteunt verder de volgende typen tokens in de lijst met eigenschappen
 
 DEP-inschrijvingen (Device Enrollment Program van Apple) zijn niet compatibel met de App Store-versie van de bedrijfsportal-app. U kunt de bedrijfsportal-app echter configureren voor ondersteuning van iOS DEP-apparaten met behulp van de volgende stappen.
 
-1. In Intune via de Azure-portal:
-    - Voeg zo nodig de Intune-bedrijfsportal-app toe. Hiervoor gaat u naar **Intune** > **Client-apps** > **Apps** > **Toevoegen**.
-    - Ga naar **Client-apps** > **App-configuratiebeleid** om een app-configuratiebeleid voor de bedrijfsportal-app te maken.
-2. Maak een app-configuratiebeleid met de onderstaande XML. Meer informatie over het maken van een configuratiebeleid voor apps en het invoeren van XML-gegevens vindt u op [Configuratiebeleid voor apps voor beheerde iOS-apparaten ](app-configuration-policies-use-ios.md) of voor hybride MDM, [Instellingen toepassen op iOS-apps met configuratiebeleid voor apps in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+1. Voeg in Intune zo nodig de Intune-bedrijfsportal-app toe. Hiervoor gaat u naar **Intune** > **Apps** > **Alle apps** > **Toevoegen**.
+2. Ga naar **Apps** > **App-configuratiebeleid** om een app-configuratiebeleid voor de bedrijfsportal-app te maken.
+3. Maak een app-configuratiebeleid met de onderstaande XML. Meer informatie over het maken van een configuratiebeleid voor apps en het invoeren van XML-gegevens vindt u op [Configuratiebeleid voor apps voor beheerde iOS-apparaten ](app-configuration-policies-use-ios.md) of voor hybride MDM, [Instellingen toepassen op iOS-apps met configuratiebeleid voor apps in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
 
     ``` xml
     <dict>
@@ -202,7 +200,7 @@ DEP-inschrijvingen (Device Enrollment Program van Apple) zijn niet compatibel me
 4. Informeer eindgebruikers dat ze zich bij de bedrijfsportal-app moeten aanmelden nadat deze automatisch is geïnstalleerd.
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Configuratiestatus van een iOS-app per apparaat controleren 
-Nadat een configuratiebeleid is toegewezen, kunt u de configuratiestatus van een iOS-app voor elk beheerd apparaat controleren. Selecteer vanaf **Microsoft Intune** in Azure Portal de optie **Apparaten** > **Alle apparaten**. Selecteer in de lijst met beheerde apparaten een specifiek apparaat om een blade voor het apparaat weer te geven. Selecteer **App-configuratie** op de apparaatblade.  
+Nadat een configuratiebeleid is toegewezen, kunt u de configuratiestatus van een iOS-app voor elk beheerd apparaat controleren. Selecteer vanaf **Microsoft Intune** in Azure Portal de optie **Apparaten** > **Alle apparaten**. Selecteer in de lijst met beheerde apparaten een specifiek apparaat om een deelvenster voor het apparaat weer te geven. Selecteer **App-configuratie** op het deelvenster van het apparaat.  
 
 ## <a name="additional-information"></a>Aanvullende informatie
 

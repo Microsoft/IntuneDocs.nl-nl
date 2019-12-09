@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf860056c3918f7ae90e6b9b850a98a37dcfd56e
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143210"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564022"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
@@ -101,17 +101,17 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
 
 ### <a name="step-1-specify-the-software-setup-file"></a>Stap 1: locatie van het software-installatiebestand opgeven
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer in het deelvenster **Intune** de optie **Client-apps** > **Apps** > **Toevoegen**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
 4. Selecteer in het app-deelvenster **Toevoegen** **Windows-app (Win32)** uit de opgegeven vervolgkeuzelijst.
 
-    ![Schermafbeelding van de blade App toevoegen - vervolgkeuzelijst Type toevoegen](./media/apps-win32-app-management/apps-win32-app-01.png)
+    ![Schermopname van het deelvenster App toevoegen - vervolgkeuzelijst Type toevoegen](./media/apps-win32-app-management/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Stap 2: het app-pakketbestand uploaden
 
 1. Selecteer in het deelvenster **App toevoegen** de optie **App-pakketbestand** om een bestand te selecteren. Het deelvenster App-pakketbestand wordt weergegeven.
 
-    ![Schermafbeelding van de blade App-pakketbestand](./media/apps-win32-app-management/apps-win32-app-02.png)
+    ![Schermopname van het deelvenster App-pakketbestand](./media/apps-win32-app-management/apps-win32-app-02.png)
 
 2. Selecteer in het deelvenster **App-pakketbestand** de bladerknop. Selecteer vervolgens een Windows-installatiebestand met de extensie *.intunewin*.
 
@@ -180,7 +180,7 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
     - **Minimumaantal vereiste logische processors**: voeg optioneel het minimumaantal logische processors toe dat nodig is om de app te installeren.
     - **Minimale vereiste processorsnelheid (MHz)** : voeg optioneel de minimale processorsnelheid toe die nodig is om de app te installeren.
 
-3. Klik op **Toevoegen** om de blade **Een vereisteregel toevoegen** weer te geven en aanvullende vereisteregels te configureren. Selecteer het **Vereistetype** om het regeltype te kiezen dat u wilt gebruiken om te bepalen hoe een vereiste moet worden gevalideerd. Vereisteregels kunnen op informatie over het bestandssysteem, registerwaarden of PowerShell-scripts worden gebaseerd. 
+3. Klik op **Toevoegen** om het deelvenster **Een vereisteregel toevoegen** weer te geven en aanvullende vereisteregels te configureren. Selecteer het **Vereistetype** om het regeltype te kiezen dat u wilt gebruiken om te bepalen hoe een vereiste moet worden gevalideerd. Vereisteregels kunnen op informatie over het bestandssysteem, registerwaarden of PowerShell-scripts worden gebaseerd. 
     - **Bestand**: Als u **Bestand** als **Vereistetype** kiest, moet de vereisteregel een bestand of map, datum, versie of grootte selecteren. 
         - **Pad**: het volledige pad van de map met het bestand of de map dat/die u wilt detecteren.
         - **Bestand of map**: het bestand of de map dat/die u wilt detecteren.
@@ -297,7 +297,7 @@ U hebt nu de stappen voor het toevoegen van een Win32-app aan Intune voltooid. Z
 
 ## <a name="app-dependencies"></a>App-afhankelijkheden
 
-App-afhankelijkheden zijn toepassingen die moeten worden geïnstalleerd voordat u uw Win32-app kunt installeren. U kunt vereisen dat andere apps als afhankelijkheden worden geïnstalleerd. Specifiek moeten de afhankelijke apps op het apparaat worden geïnstalleerd vóór u de Win32-app installeert. Er is een maximum van 100 afhankelijkheden. Dit is inclusief de afhankelijkheden van eventueel opgenomen afhankelijkheden en de app zelf. U kunt alleen Win32-afhankelijkheden toevoegen nadat uw Win32-app is toegevoegd en naar Intune is geüpload. Zodra uw Win32-app is toegevoegd, ziet u de optie **Afhankelijkheden** op de blade voor uw Win32-app. 
+App-afhankelijkheden zijn toepassingen die moeten worden geïnstalleerd voordat u uw Win32-app kunt installeren. U kunt vereisen dat andere apps als afhankelijkheden worden geïnstalleerd. Specifiek moeten de afhankelijke apps op het apparaat worden geïnstalleerd vóór u de Win32-app installeert. Er is een maximum van 100 afhankelijkheden. Dit is inclusief de afhankelijkheden van eventueel opgenomen afhankelijkheden en de app zelf. U kunt alleen Win32-afhankelijkheden toevoegen nadat uw Win32-app is toegevoegd en naar Intune is geüpload. Zodra uw Win32-app is toegevoegd, ziet u de optie **Afhankelijkheden** in het deelvenster voor uw Win32-app. 
 
 Elke Win32-app-afhankelijkheid moet ook een Win32-app zijn. Er wordt geen ondersteuning geboden voor afhankelijkheid van andere typen apps, zoals enkelvoudige MSI LOB-apps of Store-apps.
 
@@ -307,7 +307,7 @@ U kunt kiezen of elke afhankelijke app automatisch moet worden geïnstalleerd. S
 
 U kunt met de volgende stappen een app-afhankelijkheid aan uw Win32-app toevoegen:
 
-1. Selecteer **Client-apps** > **Apps** in Intune om uw lijst met toegevoegde client-apps weer te geven. 
+1. Selecteer **Apps** > **Alle apps** in Intune om uw lijst met toegevoegde client-apps weer te geven. 
 2. Selecteer een toegevoegde **Windows-app (Win32-app)** . 
 3. Selecteer **Afhankelijkheden** om de afhankelijke apps toe te voegen die moeten worden geïnstalleerd voordat de Win32-app kan worden geïnstalleerd. 
 4. Klik op **Toevoegen** om een app-afhankelijkheid toe te voegen.
@@ -343,12 +343,12 @@ U kunt de begintijd en deadline voor een Win32-app configureren. Bij de begintij
 
 Stel de app-beschikbaarheid in op basis van een datum en tijd voor een vereiste app door de volgende stappen uit te voeren:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer in de blade **Intune** de optie **Client-apps** > **Apps**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps**.
 3. Selecteer een bestaande **Windows-app (Win32)** in de lijst. 
-4. Selecteer op de app-blade **Toewijzingen** > **Groep toevoegen**. 
+4. Selecteer in het deelvenster van de app de opties **Toewijzingen** > **Groep toevoegen**. 
 5. Stel het **Toewijzingstype** in op **Vereist**. De beschikbaarheid van apps kan worden ingesteld op basis van het toewijzingstype. Het **Toewijzingstype** kan **Vereist**, **Beschikbaar voor ingeschreven apparaten** of **Verwijderen** zijn.
-6. Selecteer **Opgenomen groepen** om te bepalen aan welke groep gebruikers de app wordt toegewezen. De blade **Toewijzen** wordt weergegeven.
+6. Selecteer **Opgenomen groepen** om te bepalen aan welke groep gebruikers de app wordt toegewezen. Het deelvenster **Toewijzen** wordt weergegeven.
 7. Stel **Deze app vereist maken voor alle gebruikers** in op **Ja**.
 
     > [!NOTE]
@@ -358,7 +358,7 @@ Stel de app-beschikbaarheid in op basis van een datum en tijd voor een vereiste 
     > - **Verwijderen**: U kunt ervoor kiezen om ***deze app te verwijderen voor alle gebruikers** en/of **deze app te verwijderen van alle apparaten**.
 
 8. Als u de opties voor de**Ervaring van de eindgebruiker** wilt wijzigen, selecteert u **Bewerken**.
-9. Stel op de blade **Toewijzing bewerken** de **Meldingen van eindgebruiker** in op **Alle pop-upmeldingen weergeven**. U kunt **Meldingen van eindgebruiker** instellen op **Alle pop-upmeldingen weergeven**, **Pop-upmeldingen voor de computer opnieuw opstarten weergeven** of **Alle pop-upmeldingen verbergen**.
+9. Stel in het deelvenster **Toewijzing bewerken** de **Meldingen van eindgebruiker** in op **Alle pop-upmeldingen weergeven**. U kunt **Meldingen van eindgebruiker** instellen op **Alle pop-upmeldingen weergeven**, **Pop-upmeldingen voor de computer opnieuw opstarten weergeven** of **Alle pop-upmeldingen verbergen**.
 10. Stel de **App-beschikbaarheid** in op **Een specifieke datum en tijd** en selecteer de datum en tijd. Deze datum en tijd geven aan wanneer de app wordt gedownload naar het apparaat van eindgebruikers. 
 11. Stel de **Deadline voor app-installatie** in op **Een specifieke datum en tijd** en selecteer de datum en tijd. Deze datum en tijd geven aan wanneer de app wordt geïnstalleerd op het apparaat van eindgebruikers. Wanneer meer dan één toewijzing wordt gemaakt voor dezelfde gebruiker of hetzelfde apparaat, wordt de deadline voor de installatie van de app gekozen op basis van de vroegst mogelijke tijd.
 12. Klik op **Ingeschakeld** naast de **Respijtperiode voor opnieuw opstarten**. De respijtperiode voor opnieuw opstarten gaat in zodra de installatie van de app op het apparaat is voltooid. Wanneer dit is uitgeschakeld, kan het apparaat zonder waarschuwing opnieuw opstarten. <br>U kunt de volgende opties aanpassen:
@@ -369,7 +369,7 @@ Stel de app-beschikbaarheid in op basis van een datum en tijd voor een vereiste 
 13. Klik op **OK** > **OK** > **OK** > **Opslaan** om de toewijzing toe te voegen.
 
 ## <a name="toast-notifications-for-win32-apps"></a>Toast-meldingen voor Win32-apps 
-Indien nodig, kunt u per app-toewijzing onderdrukken dat toast-meldingen voor eindgebruikers worden weergegeven. Selecteer vanuit Intune de optie **Client-apps** > **Apps** > selecteer de app > **Toewijzingen** > **Groepen opnemen**. 
+Indien nodig, kunt u per app-toewijzing onderdrukken dat toast-meldingen voor eindgebruikers worden weergegeven. Selecteer vanuit Intune de optie **Apps** > **Alle apps** > selecteer de app > **Toewijzingen** > **Groepen opnemen**. 
 
 > [!NOTE]
 > Win32-apps waarvoor de Intune-beheerextensie is geïnstalleerd, worden niet verwijderd van apparaten die niet meer ingeschreven zijn. Beheerders kunnen gebruikmaken van uitsluiting van opdrachten, zodat Win32-apps niet worden aangeboden op BYOD-apparaten.

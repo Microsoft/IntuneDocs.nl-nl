@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8519ad00024be43371cd118e3f37ae2fbc57898b
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813361"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564247"
 ---
 # <a name="intune-discovered-apps"></a>Door Intune gedetecteerde apps
 
@@ -33,18 +33,18 @@ In de lijst door Intune **gedetecteerde apps** ziet u de apparaten die bij Intun
 
 Intune biedt een geaggregeerde lijst met apps die zijn gedetecteerd op de apparaten die in uw tenant bij Intune zijn ingeschreven.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. In het deelvenster **Intune** selecteert u **Client-apps** > **Gedetecteerde apps**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Bewaken** > **Gedetecteerde apps**.
 
 >[!NOTE]
->U kunt de lijst met gedetecteerde apps exporteren naar een CSV-bestand. Selecteer hiervoor **Exporteren** op de blade **Gedetecteerde apps**.
+>U kunt de lijst met gedetecteerde apps exporteren naar een CSV-bestand. Selecteer hiervoor **Exporteren** in het deelvenster **Gedetecteerde apps**.
 >
 >Voor gedetecteerde Win32-apps is er momenteel geen totaal aantal. Dit type gegevens kan alleen per apparaat worden weergegeven.
 
 Intune biedt ook een lijst met gedetecteerde apps per afzonderlijk apparaat in uw tenant.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer in het deelvenster Intune **Apparaten** > **Alle apparaten**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Alle apparaten**.
 3. Selecteer een apparaat.
 4. Als u gedetecteerde apps voor dit apparaat wilt weergeven, selecteert u **Gedetecteerde apps** in het gedeelte **Monitor**.
 
@@ -69,7 +69,7 @@ De volgende lijst bevat de app-platformtypen, de apps die worden bewaakt op pers
 
 Het aantal gedetecteerde apps komt mogelijk niet overeen met de status van het aantal geïnstalleerde apps. Mogelijkheden voor inconsistenties zijn onder andere:
 
-- Een gerichte wijziging in een geïnstalleerde beheerde app kan ervoor zorgen dat het aantal geïnstalleerde apps op de blade Status wordt verminderd. De apps blijven echter vermeld bij de gedetecteerde apps.
+- Een gerichte wijziging in een geïnstalleerde beheerde app kan ervoor zorgen dat het aantal geïnstalleerde apps in het deelvenster Status wordt verminderd. De apps blijven echter vermeld bij de gedetecteerde apps.
 - Wanneer u zich richt op meerdere exemplaren van dezelfde app in een tenant, kan een verschil ontstaan in het aantal gedetecteerde apps vanwege mogelijke overlap van gebruikers of apparaten. Via elk exemplaar van de app worden overlappende gebruikers geteld, maar voor de gedetecteerde apps worden dubbele aantallen weergegeven.
 - Gedetecteerde apps en de app-status worden op verschillende tijdstippen verzameld, waardoor een verschil kan ontstaan in de aantallen van de app.
 

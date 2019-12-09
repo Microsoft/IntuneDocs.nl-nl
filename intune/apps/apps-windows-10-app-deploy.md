@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8ce24081eae1808d3db0c5078026b306fd209d5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c9d792bd07ae8d7d712748874d64314dd258c5e8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507252"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563944"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implementatie van Windows 10-apps met behulp van Microsoft Intune 
 
@@ -51,9 +51,10 @@ Microsoft Store voor Bedrijven-apps zijn moderne apps die zijn aangeschaft in de
 ### <a name="categorize-microsoft-store-for-business-apps"></a>Microsoft Store voor Bedrijven-apps categoriseren 
 Microsoft Store voor Bedrijven-apps categoriseren: 
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Client-apps** > **Apps**. Selecteer een Microsoft Store voor Bedrijven-app. Selecteer vervolgens **App-gegevens** > **Categorie**. 
-3. Selecteer een categorie.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps**. 
+3. Selecteer een Microsoft Store voor Bedrijven-app. Selecteer vervolgens **Eigenschappen** > **App-gegevens** > **Categorie**. 
+4. Selecteer een categorie.
 
 ## <a name="install-apps-on-windows-10-devices"></a>Apps installeren op Windows 10-apparaten
 Afhankelijk van het type app kunt u de app op twee manieren installeren op een Windows 10-apparaat:

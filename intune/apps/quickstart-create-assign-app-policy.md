@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcda312274e78d327a3a515eb6c95454e38c96f1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1800fa91ed5650fd57a31d24fdb3767a60dc5816
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507120"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563783"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Quickstart: Beveiligingsbeleid voor apps maken en toewijzen
 
@@ -43,7 +43,7 @@ Meld u aan bij [Intune](https://aka.ms/intuneportal) als [globale beheerder of I
 
 Gebruik de volgende stappen om een app-beveiligingsbeleid te maken:
 
-1. Selecteer in [Intune](https://aka.ms/intuneportal) **Client-apps** > **App-beveiligingsbeleid** > **Beleid maken**. 
+1. Selecteer in [Intune](https://aka.ms/intuneportal) de opties **Apps** > **App-beveiligingsbeleid** > **Beleid maken**. 
 2. Voer de volgende gegevens in: 
 
     - **Naam**: *Inhoudsbeveiliging Windows 10*
@@ -67,7 +67,7 @@ Nadat u beveiligingsbeleid voor apps in Intune hebt gemaakt, kunt u dit toewijze
 
 Gebruik de volgende stappen om beveiligingsbeleid voor apps toe te wijzen:
 
-1. Selecteer in [Intune](https://aka.ms/intuneportal) **Intune** > **Client-apps** > **App-beveiligingsbeleid**. 
+1. Selecteer in [Intune](https://aka.ms/intuneportal) de opties **Intune** > **Apps** > **App-beveiligingsbeleid**. 
 2. Selecteer het app-beveiligingsbeleid dat u eerder hebt gemaakt. In deze snelstartgids is het beleid **Inhoudsbeveiliging Windows 10**.
 3. Selecteer **Toewijzingen**.
 4. Selecteer de optie **Op te nemen groepen selecteren** op het tabblad **Opnemen**.

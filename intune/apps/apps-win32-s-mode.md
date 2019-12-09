@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059761"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563613"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>Win32-apps inschakelen op S-modusapparaten
 
@@ -58,7 +58,7 @@ De stappen voor het uitvoeren van Win32-apps op een Windows 10-apparaat in de S-
 Gebruik de volgende stappen om een aanvullende beleidsregel voor Windows 10 S-modus te maken:
 
 1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer in het deelvenster **Intune** **Client-apps** > **Aanvullende beleidsregels S-modus** > **Beleid maken**.
+2. Selecteer **Apps** > **Aanvullende beleidsregels S-modus** > **Beleid maken**.
 3. Voordat u het **Beleidsbestand** kunt toevoegen, moet u het maken en ondertekenen. Zie voor meer informatie:
     - [Create a WDAC policy using PowerShell tools and convert it to a binary format](https://go.microsoft.com/fwlink/?linkid=2095387) (een WDAC-beleid maken en converteren naar een binaire indeling)
     - [Meld u aan met de Device Guard-ondertekeningsservice](https://go.microsoft.com/fwlink/?linkid=2095629) **(aanbevolen)**

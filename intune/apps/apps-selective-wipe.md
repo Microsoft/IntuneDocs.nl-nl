@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e827075b56d1751e837c25d85c304201bcafa01
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 9c0ca82b434b83937c7962b2676ce3c2a12c1424
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390447"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564002"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Alleen zakelijke gegevens wissen uit door Intune beheerde apps
 
@@ -44,8 +44,8 @@ WIP-beleid (Windows Information Protection) kan worden geïmplementeerd zonder d
 
 ## <a name="create-a-wipe-request"></a>Een wisaanvraag maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer in het deelvenster Intune de optie **Client-apps** > **App selectief wissen** > **Wisaanvraag maken**.<br>
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **App selectief wissen** > **Wisaanvraag maken**.<br>
    Het deelvenster **Wisaanvraag maken** wordt weergegeven.
 3. Klik op **Gebruiker selecteren**, kies de gebruiker van wie u de app-gegevens wilt wissen en klik op **Selecteren** onder aan het deelvenster **Gebruiker selecteren**.
 
@@ -65,7 +65,7 @@ De service maakt en volgt voor elke beveiligde app op het apparaat een afzonderl
 
 U kunt een verkort rapport weergeven met de algemene status van het verzoek om te wissen, het aantal verzoeken dat in behandeling is en het aantal verzoeken dat is mislukt. Voor meer informatie volgt u deze stappen:
 
-1. In het deelvenster **Client-apps** > **App selectief wissen** ziet u een lijst met alle aanvragen, gegroepeerd per gebruiker. Omdat het systeem voor elke beveiligde app die op het apparaat wordt uitgevoerd een verzoek om te wissen maakt, ziet u mogelijk meerdere verzoeken voor dezelfde gebruiker. De status geeft aan of een verzoek om te wissen **in behandeling**, **mislukt**of **geslaagd**is.
+1. In het deelvenster **Apps** > **App selectief wissen** ziet u een lijst met alle aanvragen, gegroepeerd per gebruiker. Omdat het systeem voor elke beveiligde app die op het apparaat wordt uitgevoerd een verzoek om te wissen maakt, ziet u mogelijk meerdere verzoeken voor dezelfde gebruiker. De status geeft aan of een verzoek om te wissen **in behandeling**, **mislukt**of **geslaagd**is.
 
     ![Schermafbeelding van de status van de aanvraag voor wissen in het deelvenster App selectief wissen](./media/apps-selective-wipe/wipe-request-status-1.png)
 

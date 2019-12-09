@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9a37a1dd815b6ec9d7522604796310e7f0b5ce
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: eed0b8a74e69bc1552ae3e2badf485364ba37e94
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984108"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563826"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>iOS- en macOS-apps beheren die zijn aangeschaft via het Apple Volume Purchase Program met Microsoft Intune
 
@@ -82,8 +82,8 @@ Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Een Apple VPP-token verkrijgen en uploaden
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Kies in het deelvenster **Intune** de optie **Client-apps** > **Apple VPP-tokens** onder **Installatie**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecteer **Tenantbeheer** > **Connectors en tokens** > **Apple VPP-tokens**.
 4. Selecteer **Maken** in het deelvenster met de lijst VPP-tokens.
 5. Geef in het deelvenster **VPP-token maken** de volgende gegevens op:
     - **VPP-tokenbestand**: meld u aan voor het VPP-programma voor bedrijven of voor het VPP-programma voor onderwijs als u dit nog niet hebt gedaan. Nadat u bent aangemeld, downloadt u het Apple VPP-token voor uw account en selecteert u dit hier.
@@ -110,7 +110,7 @@ U kunt de gegevens waarover Apple beschikt, op elk gewenst moment synchroniseren
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Een app toewijzen die is gekocht via het volume-aankoopprogramma
 
-1. Kies in het deelvenster **Intune** de optie **Client-apps** > **Apps** onder **Beheren**.
+1. Selecteer **Apps** > **Alle apps**.
 2. Kies in het deelvenster met de lijst met apps de app die u wilt toewijzen en kies **Toewijzingen**.
 3. Kies in het deelvenster ***App-naam*** - **Toewijzingen** de optie **Groep toevoegen** en kies in het deelvenster **Groep toevoegen** een **Toewijzingstype**. Kies ook de Azure AD-gebruikers- of apparaatgroepen waaraan u de app wilt toewijzen.
 5. Voor elke groep die u hebt geselecteerd, kiest u de volgende instellingen:
@@ -176,8 +176,8 @@ U kunt een iOS VPP-app op dit moment niet verwijderen uit Microsoft Intune.
 
 Toegang tot Apple VPP-tokens en VPP-apps kan onafhankelijk worden beheerd met behulp van machtigingen die worden toegewezen aan aangepaste beheerdersrollen in Intune.
 
-* Als u een aangepaste rol in Intune wilt toestaan om Apple VPP-tokens te beheren onder **Client-apps** > **Apple VPP-tokens**, wijst u machtigingen toe voor **Beheerde apps**.
-* Als u een aangepaste rol in Intune wilt toestaan om apps die zijn gekocht met iOS VPP-tokens te beheren onder **Client-apps** > **Apps**, wijst u machtigingen toe voor **Mobiele apps**. 
+* Als u een aangepaste rol in Intune wilt toestaan om Apple VPP-tokens te beheren onder **Apps** > **Apple VPP-tokens**, wijst u machtigingen toe voor **Beheerde apps**.
+* Als u een aangepaste rol in Intune wilt toestaan om apps die zijn gekocht met iOS VPP-tokens, te beheren onder **Apps** > **Alle apps**, wijst u machtigingen toe voor **Mobiele apps**. 
 
 ## <a name="additional-information"></a>Aanvullende informatie
 
@@ -196,7 +196,7 @@ De licentie wordt binnen een paar uur na het installeren of verwijderen van een 
 Ja. De Intune-beheerder kan een app aan meer apparaten toewijzen dan het aantal licenties. Een voorbeeld: een beheerder koopt 100 licenties voor app XYZ en maakt de app vervolgens beschikbaar voor een groep van 500 leden. De licentie wordt aan de eerste 100 leden (gebruikers of apparaten) toegewezen; de rest van de leden kunnen de licentie niet toegewezen krijgen.
 
 ### <a name="how-frequently-does-intune-sync-vpp-tokens-with-apple"></a>Hoe vaak worden VPP-tokens met Apple gesynchroniseerd door Intune?
-VPP-tokens en -licenties worden tweemaal per dag met Apple gesynchroniseerd door Intune. De Intune-beheerder kan een handmatige synchronisatie starten onder **Client apps** > **Apple VPP-tokens**.
+VPP-tokens en -licenties worden tweemaal per dag met Apple gesynchroniseerd door Intune. De Intune-beheerder kan een handmatige synchronisatie starten onder **Apps** > **Apple VPP-tokens**.
 
 ## <a name="next-steps"></a>Volgende stappen
 

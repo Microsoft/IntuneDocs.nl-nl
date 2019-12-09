@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56814550cae814bd89d55a6f72df98dd24df4caf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507463"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564367"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
@@ -76,14 +76,14 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 
 ## <a name="get-started"></a>Aan de slag
 
-U vindt de meeste app-gerelateerde informatie in de workload **Client-apps** die als volgt toegankelijk is:
+U vindt de meeste app-gerelateerde informatie in de workload **Apps** die als volgt toegankelijk is:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecteer in het deelvenster **Microsoft Intune** de optie **Client-apps**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecteer **Apps**.
 
-    ![Het workloaddeelvenster Client-apps](./media/app-management/apps-workload.png)
+    ![Het workloaddeelvenster Apps](./media/app-management/apps-workload.png)
 
-In se volgende vier secties worden de beschikbare opties in het deelvenster **Client-apps** beschreven.
+In de volgende vier secties worden de beschikbare opties in het deelvenster **Apps** beschreven.
 
 ### <a name="manage"></a>Manage
 - **Apps**: selecteer deze optie als u de apps die uw werknemers gebruiken, wilt toevoegen, weergeven, toewijzen en bewaken. Zie voor meer informatie:
