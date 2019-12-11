@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508299"
 ---
 # <a name="sign-in-to-company-portal"></a>Aanmelden bij Bedrijfsportal  
@@ -40,7 +40,7 @@ In de volgende stappen ziet u scherm afbeeldingen van de Bedrijfsportal voor iOS
 
 1. Open de app op uw apparaat en tik op **Aanmelden**.  
 
-   [![Example scherm opname van de Bedrijfsportal-aanmeldings pagina. ](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
+   [![voorbeeld scherm afbeelding van de Bedrijfsportal-aanmeldings pagina.](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. Voer uw **werk- of schoolaccount** in en tik op **Volgende**.

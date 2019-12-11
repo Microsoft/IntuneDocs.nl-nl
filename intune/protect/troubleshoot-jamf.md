@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 44733eb369e520d2d5f0ff548d4f1921abcb8758
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503580"
 ---
 # <a name="troubleshoot-integration-of-jamf-pro-with-microsoft-intune"></a>Problemen met de integratie van Jamf Pro oplossen met Microsoft Intune
@@ -45,7 +45,7 @@ Houd rekening met de volgende informatie bij het onderzoeken van Jamf Pro-integr
 - Wat is het exacte foutbericht?
 - Waar bevindt zich het fout bericht?
 - Wanneer is het probleem begonnen?  Heeft Jamf Pro-integratie met intune ooit gewerkt?
-- Hoeveel gebruikers zijn er betrokken? Zijn alle gebruikers betrokken of slechts een deel ervan?
+- Hoeveel gebruikers treft het probleem? Zijn alle gebruikers betrokken of slechts een deel ervan?
 - Hoeveel apparaten heeft het probleem? Zijn alle apparaten betrokken of slechts een deel ervan?
  
 
@@ -294,7 +294,7 @@ De bron van deze fout kan een van de volgende oorzaken hebben:
 
 Tijdens het registreren van de Jamf Pro-app in Azure is een van de volgende voor waarden van toepassing:  
 - De app heeft meer dan één machtiging ontvangen.
-- De **uitstemmings beheerder toestemming geven voor *\<your bedrijfs >***  optie is niet geselecteerd.  
+- De **toekennings beheerder toestemming geven voor *\<uw > optie voor uw bedrijf***  is niet geselecteerd.  
 
 **Oplossing**  
 Zie de oplossing voor oorzaak 1 voor [apparaten die niet kunnen worden geregistreerd](#devices-fail-to-register), eerder in dit artikel.

@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8eef3af9a82e7a61bc5200bf45143657072d6db7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508364"
 ---
 # <a name="upload-and-email-logs"></a>Logboeken uploaden en e-mailen  
@@ -38,7 +38,7 @@ De daadwerkelijke foutdetails worden op uw apparaat opgeslagen in een speciaal d
 ## <a name="upload-and-email-logs-from-company-portal"></a>Upload en e-mail logboeken van Bedrijfsportal  
 
 1. In de app Bedrijfsportal zijn er twee manieren om e-mail ondersteuning te initiëren.
-    * Vanuit het Start scherm: Tik op **Menu**  > **Help**  > **e-mail ondersteuning**.  
+    * Vanuit het Start scherm: Tik op **Menu** > **Help** > **e-mail ondersteuning**.  
     * Van een fout bericht: Tik op **Help** of **Verzend Info**, indien beschikbaar.  
 
     > [!NOTE]
@@ -52,7 +52,7 @@ De daadwerkelijke foutdetails worden op uw apparaat opgeslagen in een speciaal d
 ## <a name="upload-and-email-logs-from-microsoft-intune-app"></a>Upload en e-mail logboeken van Microsoft Intune-app   
 
 1. In de app Microsoft Intune zijn er twee manieren om e-mail ondersteuning te initiëren.  
-    * Vanuit het Start scherm: Tik op **Menu**  > **Help**  > **ondersteuning verkrijgen**.  
+    * Vanuit het Start scherm: Tik op **Menu** > **Help** > **ondersteuning verkrijgen**.  
     * Van een fout bericht: Tik op **Help** of **Verzend Info**, indien beschikbaar.  
 
     > [!NOTE]

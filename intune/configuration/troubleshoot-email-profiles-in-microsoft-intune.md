@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059846"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Veelvoorkomende problemen met en oplossingen voor e-mailprofielen in Microsoft Intune
@@ -63,7 +63,7 @@ Gebruikers met automatisch geconfigureerde e-mailaccounts kunnen geen afbeelding
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apparaten** > **Configuratieprofielen**.
-3. Selecteer uw e-mail Profiel > **eigenschappen**  > **instellingen**.
+3. Selecteer uw e-mail Profiel > **eigenschappen** > **instellingen**.
 4. Stel in **dat de instelling E-mail mag worden verzonden vanuit toepassingen van derden** om in te **scha kelen**.
 
 ## <a name="next-steps"></a>Volgende stappen
