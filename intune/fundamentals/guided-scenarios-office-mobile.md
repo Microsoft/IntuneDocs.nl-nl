@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72585706"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Begeleid scenario: veilige mobiele apps voor Microsoft Office 
@@ -31,9 +31,9 @@ Met de app-beveiliging die u inschakelt, worden de volgende acties afgedwongen:
 - Werkbestanden versleutelen.
 - Een pincode vereisen voor toegang tot werkbestanden.
 - Vereisen dat de pincode opnieuw wordt ingesteld na vijf mislukte pogingen.
-- Voorkomen dat er een back-up wordt gemaakt van werkbestanden in back-upservices van iTunes, iCloud of Android.  
+- Voorkomen dat er een back-up wordt gemaakt van werkbestanden in back-upservices van iTunes-, iCloud of Android.  
 - Vereisen dat werkbestanden alleen worden opgeslagen in OneDrive of SharePoint.
-- Voorkomen dat beveiligde apps werkbestanden laden op apparaten met jailbreak of geroote apparaten.
+- Voorkomen dat beveiligde apps werkbestanden laden op gekraakte of geroote apparaten.
 - Toegang tot werkbestanden blokkeren als het apparaat gedurende 720 minuten offline is.
 - Werkbestanden verwijderen als het apparaat gedurende 90 dagen offline is. 
 
@@ -55,7 +55,7 @@ U kunt de ingebouwde e-mailapps voor iOS en Android blokkeren wanneer u alleen t
 
 In dit voorbeeld heeft de beheerder beveiligingsbeleid voor de Outlook-app toegepast, gevolgd door een regel voor voorwaardelijke toegang waarmee de Outlook-app wordt toegevoegd aan een lijst met goedgekeurde apps die kunnen worden gebruikt bij het openen van bedrijfs-e-mail.
 
-![Processtroom voor voorwaardelijke toegang voor Outlook-app](./media/guided-scenarios-office-mobile/guided-scenarios-office-mobile-02.png)
+![Processtroom voorwaardelijke toegang voor Outlook-app](./media/guided-scenarios-office-mobile/guided-scenarios-office-mobile-02.png)
 
 ## <a name="prerequisites"></a>Vereisten
 

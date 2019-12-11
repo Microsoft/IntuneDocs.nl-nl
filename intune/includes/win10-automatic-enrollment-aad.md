@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 6f5b0c8df86cf5bf1206c1cccb879e37c7944a21
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71912744"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Automatische inschrijving voor Windows 10 inschakelen
