@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3c6c029a5c5864eda46a68832b2f9f655553846
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889541"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946652"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Instellingen in Windows 10 en later om te markeren of apparaten wel of niet conform zijn met behulp van Intune
 
@@ -161,6 +161,7 @@ Geldt alleen voor gezamenlijk beheerde apparaten met Windows 10 en hoger. Appara
 ### <a name="encryption"></a>Versleuteling
 
 - **Versleuteling van gegevensopslag op een apparaat**:  
+  Deze instelling geldt voor alle stations op een apparaat.
   - **Niet geconfigureerd** (*standaard*)
   - **Vereisen** - Gebruik *Vereisen* om de gegevensopslag op uw apparaten te versleutelen.
 
@@ -198,7 +199,7 @@ Geldt alleen voor gezamenlijk beheerde apparaten met Windows 10 en hoger. Appara
 
 - **Micro soft Defender antimalware**:  
   - **Niet geconfigureerd** (*standaard*): de service wordt niet beheerd door intune en de bestaande instellingen worden niet gewijzigd.
-  - **Vereisen** : Schakel de micro soft Defender anti-malware-service in en voor komen dat gebruikers deze uitschakelen. 
+  - **Vereisen** : Schakel de micro soft Defender anti-malware-service in en voor komen dat gebruikers deze uitschakelen.
 
 - **Minimale versie van micro soft Defender antimalware**:  
   Voer de mini maal toegestane versie van de micro soft Defender anti-malware-service in. Voer bijvoorbeeld `4.11.0.0` in. Als dit veld leeg blijft, kan elke versie van de micro soft Defender anti-malware-service worden gebruikt.  
@@ -206,10 +207,12 @@ Geldt alleen voor gezamenlijk beheerde apparaten met Windows 10 en hoger. Appara
   *Standaard wordt er geen versie geconfigureerd*.
 
 - **Micro soft Defender antimalware Security Intelligence up-to-date**:  
-  Hiermee beheert u de Windows-beveiligings virus-en bedreigings beveiligings updates op de apparaten.  
+  Hiermee beheert u de Windows-beveiligings virus-en bedreigings beveiligings updates op de apparaten.
   - **Niet geconfigureerd** (*standaard*): intune dwingt geen vereisten af.
-  - **Vereisen** : de micro soft Defender-beveiligings informatie is up-to-date. 
+  - **Vereisen** : de micro soft Defender-beveiligings informatie is up-to-date.
 
+  [Defender/Health/SignatureOutOfDate CSP](https://docs.microsoft.com/windows/client-management/mdm/defender-csp)
+  
   Zie [updates voor beveiligings informatie voor micro soft Defender anti virus en andere micro soft-antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)voor meer informatie.
 
 - **Realtime-beveiliging**:  

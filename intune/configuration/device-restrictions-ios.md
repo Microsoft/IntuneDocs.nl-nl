@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465648"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992913"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Met instellingen voor iOS- en iPadOS-apparaten kunt u functies toestaan of beperken met behulp van Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 In dit artikel vindt u een overzicht en beschrijving van de verschillende instellingen die u kunt beheren op iOS- en iPadOS-apparaten. Gebruik deze instellingen als onderdeel van de MDM-oplossing (Mobile Device Management) om functies toe te staan of uit te schakelen, wachtwoordregels in te stellen, bepaalde apps toe te staan of te beperken en nog veel meer.
 
@@ -52,7 +50,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatregistratie, automatische registratie van apparaten (onder Super visie)
 
 - **Niet-vertrouwde TLS-certificaten**: kies **Blokkeren** om te voorkomen dat niet-vertrouwde TLS-certificaten (Transport Layer Security) zijn toegestaan op het apparaat. Met **Niet geconfigureerd** (standaard) staat u TLS-certificaten toe.
-- **Draadloze PKI-updates toestaan**: met **Toestaan** kunnen gebruikers software-updates ontvangen zonder dat hun apparaten zijn aangesloten op een computer.
+- **Over-the-Air PKI-updates**: **blok** keren dat uw gebruikers geen software-updates ontvangen zonder hun apparaten op een computer te verbinden. **Niet geconfigureerd** (standaard) Hiermee wordt deze instelling niet bijgewerkt op het apparaat.
 - **Bijhouden van advertenties beperken**: kies **Beperken** om de advertentie-id van het apparaat uit te schakelen. Met **Niet geconfigureerd** (standaard) blijft deze instelling ingeschakeld.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische registratie van apparaten (onder Super visie)
@@ -95,7 +93,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Wijzigingen in configuratieprofielen**: **Blokkeren** voorkomt wijzigingen in configuratieprofielen op het apparaat. **Niet geconfigureerd** (standaard): staat de gebruiker toe om configuratieprofielen te installeren.
 - **Activeringsslot**: kies **Toestaan** om Activeringsslot op iOS-apparaten in de supervisiemodus in te schakelen. Met Activeringsslot kan een verloren of gestolen apparaat moeilijker opnieuw worden geactiveerd.
 - **Verwijdering van apps blokkeren**: kies **Blokkeren** als u wilt voorkomen dat gebruikers verwijderen. **Niet geconfigureerd** (standaard): staat gebruikers toe om apps te verwijderen van het apparaat.
-- **Beperkte USB-modus blokkeren**: kies **Blokkeren** om de beperkte USB-modus uit te schakelen op apparaten in de supervisiemodus. De beperkte USB-modus voorkomt dat USB-apparaten gegevens uitwisselen met een apparaat dat gedurende langer dan een uur is vergrendeld. **Niet geconfigureerd** (standaard) staat de beperkte USB-modus toe.
+- **USB-accessoires toestaan terwijl het apparaat is vergrendeld**: met **toestaan** kunnen USB-accessoires gegevens uitwisselen met een apparaat dat gedurende een uur is vergrendeld. **Niet geconfigureerd** (standaard) de beperkte USB-modus wordt niet bijgewerkt op het apparaat.
 - **Automatisch datum en tijd afdwingen**: met **Vereisen** wordt instellen van de datum en tijd automatisch afgedwongen op apparaten in de supervisiemodus. De tijdzone van het apparaat wordt bijgewerkt wanneer het apparaat mobiele verbindingen heeft of wanneer Wi-Fi met locatieservices is ingeschakeld voor het apparaat.
 - **Vereisen dat leerlingen/studenten toestemming vragen om een Classroom-cursus te verlaten**: met **Vereisen** wordt afgedwongen dat leerlingen/studenten die zijn ingeschreven bij een niet-beheerde cursus met de app Classroom, toestemming aan de docent vragen om de cursus te verlaten. **Niet geconfigureerd** (standaard): dwingt niet af dat de leerling/student toestemming vraagt.
 
