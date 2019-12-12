@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508860"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>Veelvoorkomende fouten voor de intune Exchange connector oplossen
@@ -77,7 +77,7 @@ Wanneer u probeert de Microsoft Intune Exchange Connector te configureren, wordt
    Verify that you are connected to the Internet, check the Microsoft Intune Service Status, and try to connect again.  
    Error code: 0x00000006  
 ```  
-Deze fout kan optreden als een proxy server wordt gebruikt om verbinding te maken met internet en verkeer naar de intune-service blokkeert. Ga naar **configuratie scherm**  > **Internet opties**, selecteer het tabblad **verbinding** en klik op **LAN-instellingen**om te bepalen of een proxy in gebruik is.
+Deze fout kan optreden als een proxy server wordt gebruikt om verbinding te maken met internet en verkeer naar de intune-service blokkeert. Ga naar **configuratie scherm** > **Internet opties**, selecteer het tabblad **verbinding** en klik op **LAN-instellingen**om te bepalen of een proxy in gebruik is.
 
 **Oplossing**:  
 
@@ -123,20 +123,20 @@ Een iOS-apparaat kan niet worden inge schreven bij intune en er wordt een van de
    Domain and account: .\WIEC_USER
    This service account does not have the required user right "Log on as a service."  
 ```
-Dit probleem kan zich voordoen als het **WIEC_User** -account het gebruikers recht **Aanmelden als service** niet heeft in het lokale beleid.
+Dit probleem kan zich voordoen als het **WIEC_User** -account het recht **Aanmelden als service** niet heeft in het lokale beleid.
 
 **Oplossing**:  
-Wijs op de computer waarop de intune Exchange-connector wordt uitgevoerd, het recht **Aanmelden als service** gebruiker toe aan het **WIEC_User** -service account. Als de computer een knoop punt in een cluster is, moet u het recht *Aanmelden als service* gebruiker toewijzen aan het cluster service account op alle knoop punten in het cluster.  
+Op de computer waarop de intune Exchange connector wordt uitgevoerd, wijst u het **Aanmelden als service** gebruiker recht toe aan het **WIEC_User** -service account. Als de computer een knoop punt in een cluster is, moet u het recht *Aanmelden als service* gebruiker toewijzen aan het cluster service account op alle knoop punten in het cluster.  
 
-Als u het recht **Aanmelden als service** gebruiker wilt toewijzen aan het **WIEC_User** -service account op de computer, volgt u deze stappen:
+Voer de volgende stappen uit om het recht **Aanmelden als service** gebruiker toe te wijzen aan de **WIEC_User** -service account op de computer:
 
 1. Meld u bij de computer aan als beheerder of als lid van de groep Administrators.
 2. Voer **secpol. msc** uit om het lokale beveiligings beleid te openen.
-3. Ga naar **beveiligings instellingen**  > **lokaal beleid**en selecteer vervolgens **toewijzing van gebruikers rechten**.
+3. Ga naar **beveiligings instellingen** > **lokaal beleid**en selecteer vervolgens **toewijzing van gebruikers rechten**.
 4. Dubbel klik in het rechterdeel venster op **Aanmelden als een service**.
 5. Selecteer **gebruiker of groep toevoegen**, Voeg **WIEC_USER** toe aan het beleid en selecteer vervolgens twee keer op **OK** .
 
-Als het recht **Aanmelden als service** gebruiker is toegewezen aan **WIEC_User** , maar later is verwijderd, neemt u contact op met de domein beheerder om te bepalen of een Groepsbeleid instelling wordt overschreven.  
+Als het recht **Aanmelden als service** gebruiker is toegewezen aan **WIEC_User** , maar later is verwijderd, neemt u contact op met de domein beheerder om te bepalen of een Groepsbeleid instelling deze overschrijft.  
 
 ## <a name="next-steps"></a>Volgende stappen  
 

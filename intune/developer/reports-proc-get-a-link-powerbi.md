@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8d7a5f67dfd8f7256559cb54d873ed48205ad751
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72490428"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinding maken met het datawarehouse met Power BI
@@ -80,7 +80,7 @@ Nadat een client is geverifieerd bij Azure AD, wordt de OData-URL verbonden met 
 3. Haal de aangepaste URL van de feed op via de rapportage-blade, bijvoorbeeld:<br>
     `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. Open **Power BI Desktop**.
-5. Kies **bestand** > **gegevens ophalen**. Selecteer **OData feed**.
+5. Kies **bestand** > **gegevens**op te halen. Selecteer **OData feed**.
 6. Selecteer **Basic**.
 7. Typ of plak de **OData-URL** in het vak URL.
 8. Selecteer **OK**.

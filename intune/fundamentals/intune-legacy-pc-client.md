@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5ab1be3d34d52e824d1ff06124e28206fb7b07a1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72510187"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Console voor Intune in Azure en verouderde Intune-client voor pc
@@ -63,7 +63,7 @@ Zie [Het beheren van Windows-pc's als computers of mobiele apparaten vergelijken
 Als u wilt overschakelen van het beheren van Windows 10-apparaten met de Intune PC Client naar beheer met MDM , voert u de volgende stappen uit:
 
 1. Voer in de Silverlight-console **selectief wissen** uit om de inschrijving van het apparaat in de PC Client ongedaan te maken.
-  ![Warning pop-up met het keuze rondje ' selectief wissen van het apparaat ' is geselecteerd ](./media/intune-legacy-pc-client/image02.png)
+  ![waarschuwing pop-up met het keuze rondje ' selectief wissen van het apparaat ' is geselecteerd](./media/intune-legacy-pc-client/image02.png)
 2. Schrijf het apparaat opnieuw in met behulp van [MDM (en/of Azure AD Join)](../enrollment/windows-enroll.md).
 
 ## <a name="next-steps"></a>Volgende stappen

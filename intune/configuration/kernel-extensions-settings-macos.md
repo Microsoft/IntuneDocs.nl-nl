@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506707"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>instellingen voor macOS-apparaten voor het configureren en gebruiken van kernel-uitbrei dingen in intune
@@ -63,7 +63,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
   > [!TIP]
   > Als u de bundel-ID van een kernel-uitbrei ding (kext) op een macOS-apparaat wilt ophalen, kunt u het volgende doen:
   >
-  > 1. Voer `kextstat | grep -v com.apple` uit in de Terminal en noteer de uitvoer. Installeer de gewenste software of kext. Voer `kextstat | grep -v com.apple` opnieuw uit en zoek naar wijzigingen.
+  > 1. Voer `kextstat | grep -v com.apple`uit in de Terminal en noteer de uitvoer. Installeer de gewenste software of kext. Voer `kextstat | grep -v com.apple` opnieuw uit en zoek naar wijzigingen.
   >
   >    In de Terminal bevat `kextstat` alle kernel-uitbrei dingen op het besturings systeem. 
   >

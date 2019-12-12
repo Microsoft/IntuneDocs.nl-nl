@@ -18,10 +18,10 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7a5c979f19a2761d596cd48cfc7d88e003bfcb99
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72500900"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Een bedreiging oplossen die door SandBlast Mobile Protect is gevonden

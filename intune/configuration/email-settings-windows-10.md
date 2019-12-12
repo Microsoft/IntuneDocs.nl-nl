@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9882749ec90f2a1de4edf53535a79d893ca60e63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72492807"
 ---
 # <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>E-mailprofielinstellingen voor apparaten waarop Windows 10 wordt uitgevoerd - Intune
