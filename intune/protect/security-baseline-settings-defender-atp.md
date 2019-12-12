@@ -5,7 +5,7 @@ description: Beveiligingsbasislijninstellingen die door Intune worden ondersteun
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 85d0b28de6c133ece5116dd78b1646f497ff2f6b
+ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060055"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882329"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-basislijninstellingen voor Intune
 
@@ -593,8 +593,18 @@ Raadpleeg [PassportForWork CSP](https://docs.microsoft.com/windows/client-manage
 - **Windows Hello voor Bedrijven configureren** - *TenantId/beleid/UsePassportForWork*    
   Windows Hello voor Bedrijven is een alternatieve aanmeldmethode voor Windows die wachtwoorden, smartcards en virtuele smartcards vervangt.  
 
-  - Wanneer deze optie is ingesteld op *Ja*, schakelt u dit beleid in en wordt Windows hello voor bedrijven door het apparaat ingericht.  
-  - Als deze optie is ingesteld op *niet geconfigureerd*, is de basis lijn niet van invloed op de beleids instelling van het apparaat. Dit betekent dat als Windows hello voor bedrijven is uitgeschakeld op een apparaat, het uitgeschakeld blijft. Als de functie is ingeschakeld, blijft deze ingeschakeld. 
+
+  > [!IMPORTANT]
+  > De opties voor deze instelling worden omgekeerd vanuit hun impliciete betekenis. In omgekeerde volg orde wordt Windows Hello niet ingeschakeld door de waarde *Ja* en wordt in plaats daarvan beschouwd als *niet geconfigureerd*. Als deze instelling is ingesteld op *niet geconfigureerd*, wordt Windows hello ingeschakeld op apparaten die deze basis lijn ontvangen.
+  >
+  > De volgende beschrijvingen zijn gewijzigd om dit gedrag weer te geven. De terugboeking van instellingen wordt opgelost in een toekomstige update van deze beveiligings basislijn.
+
+  - Als deze instelling is ingesteld op *niet geconfigureerd*, wordt Windows hello ingeschakeld en wordt Windows hello voor bedrijven door het apparaat ingericht.
+  - Als deze optie is ingesteld op *Ja*, is de basis lijn niet van invloed op de beleids instelling van het apparaat. Dit betekent dat als Windows hello voor bedrijven is uitgeschakeld op een apparaat, het uitgeschakeld blijft. Als deze is ingeschakeld, blijft het ingeschakeld.
+  <!-- expected behavior 
+  - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
+  - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
+  -->
 
   U kunt Windows hello voor bedrijven niet uitschakelen via deze basis lijn. U kunt Windows hello voor bedrijven uitschakelen wanneer u [Windows-inschrijving](windows-hello.md)configureert of als onderdeel van een configuratie profiel voor [identiteits beveiliging](identity-protection-configure.md).  
 

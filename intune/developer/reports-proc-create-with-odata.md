@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 12/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490469"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74784269"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Een Intune-rapport maken van de OData-feed met Power BI
 
@@ -58,7 +58,7 @@ Installeer de nieuwste versie van Power BI Desktop. U kunt Power BI Desktop down
 2. Open het deelvenster **Intune Data Warehouse** door de link Data Warehouse onder **Andere taken** te selecteren aan de rechterkant van de blade **Microsoft Intune - Overzicht**.
 3. Kopieer de aangepaste feed-URL. Bijvoorbeeld: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. Open Power BI Desktop.
-5. Selecteer in de menu balk **File**  > **gegevens ophalen**  > **Odata-feed**.
+5. Selecteer in de menu balk **File** > **gegevens ophalen** > **Odata-feed**.
 6. Plak de aangepaste feed-URL, die u hebt gekopieerd uit de vorige stap, in het vak URL in het venster **OData-feed** .
 7. Selecteer **Eenvoudig**.
 
@@ -111,7 +111,7 @@ U kunt een filter aan uw treemap toevoegen om aanvullende vragen te beantwoorden
 3. Vouw de tabel `ownerTypes` uit en selecteer het veld `ownerTypeName` data.
 4. Sleep het `onwerTypeName` gegevens veld van de tabel `ownerTypes` naar het deel venster **filters** en zet het neer onder het gedeelte **filters op deze pagina** in het vak **Voeg gegevens velden toe**.  
 
-   In de `OwnerTypes` tabel bevindt zich een gegevens veld met de naam `OwnerTypeKey`that bevat een gegevens over de vraag of een apparaat bedrijfs eigendom of persoonlijk is. Ga naar de tabel `ownerTypes` en sleep de **ownerTypeName** naar de slicer om de beschrijvende namen weer te geven. Dit voorbeeld toont aan hoe het gegevensmodel relaties tussen tabellen ondersteunt.
+   In de tabel `OwnerTypes` is er een gegevens veld met de naam `OwnerTypeKey`dat een gegevens bevat om te bepalen of een apparaat bedrijfs eigendom of persoonlijk is. Ga naar de tabel `ownerTypes` en sleep de **ownerTypeName** naar de slicer om de beschrijvende namen weer te geven. Dit voorbeeld toont aan hoe het gegevensmodel relaties tussen tabellen ondersteunt.
 
 ![Treemap met filter: ondersteunt relaties tussen tabellen](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

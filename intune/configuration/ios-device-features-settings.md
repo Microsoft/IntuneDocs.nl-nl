@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 381ceea979dedf9b33cb7ef9c47291e3ac6ce20c
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: e73612080e52c8eb49a0c090b68e917e24fef3ab
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117907"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992954"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>iOS- en iPadOS-apparaatinstellingen voor het gebruik van algemene iOS-functies in Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune bevat enkele ingebouwde instellingen, zodat iOS-gebruikers verschillende functies van Apple op hun apparaten kunnen gebruiken. Beheerders kunnen bepalen hoe iOS-gebruikers AirPrint-printers gebruiken, apps en mappen toevoegen aan de dock en pagina's op het startscherm, app-meldingen weergeven, details van inventaristags weergeven op het vergrendelingsscherm, verificatie met eenmalige aanmelding gebruiken en gebruikers met certificaten verifiëren.
 
@@ -280,36 +278,43 @@ Deze functie is van toepassing op:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvings typen
 
-- **Extensie type voor SSO-app**: Kies het type referentie-SSO-app-extensie. Uw opties zijn:
+- **Extensie type voor SSO-app**: Kies het type extensie voor SSO-apps. Uw opties zijn:
 
-  - **Niet geconfigureerd**: app-extensies worden niet gebruikt. Als u een app-extensie wilt uitschakelen, kunt u het extensie type voor SSO-apps overschakelen van **Kerberos** of **referentie** naar **niet geconfigureerd**.
-  - **Referentie**: gebruik een algemene, aanpas bare referentie-app-extensie om SSO uit te voeren. Zorg ervoor dat u de extensie-ID voor de SSO-app-extensie van uw organisatie kent.
+  - **Niet geconfigureerd**: app-extensies worden niet gebruikt. Als u een app-extensie wilt uitschakelen, kunt u het extensie type voor SSO-apps overschakelen op **niet geconfigureerd**.
+  - **Omleiden**: gebruik een algemene, aanpas bare omleidings-app-extensie om eenmalige aanmelding uit te voeren met moderne verificatie stromen. Zorg ervoor dat u de extensie-ID voor de app-extensie van uw organisatie kent.
+  - **Referentie**: gebruik een algemene, aanpas bare referentie-app-extensie voor het uitvoeren van SSO met verificatie stromen met vraag en antwoord. Zorg ervoor dat u de extensie-ID voor de app-extensie van uw organisatie kent.
   - **Kerberos**: gebruik de ingebouwde Kerberos-uitbrei ding van Apple, die is opgenomen in Ios 13,0 (en nieuwer) en iPadOS 13,0 (en nieuwer). Deze optie is een Kerberos-specifieke versie van de extensie voor **referentie** -apps.
 
   > [!TIP]
-  > Met het **referentie** type voegt u uw eigen configuratie waarden toe om de extensie door te geven. In plaats daarvan kunt u gebruikmaken van ingebouwde configuratie-instellingen van Apple in het **Kerberos** -type.
+  > Met de **omleidings** -en **referentie** typen kunt u uw eigen configuratie waarden toevoegen om de extensie door te geven. Als u **referentie**gebruikt, kunt u overwegen de ingebouwde configuratie-instellingen van Apple in het **Kerberos** -type te gebruiken.
 
-- **Extensie-id** (alleen referentie): Geef de bundel-id op waarmee uw SSO-app-extensie wordt geïdentificeerd, zoals `com.apple.extensiblesso`.
-- **Team-ID** (alleen referentie): Voer de team-ID van de extensie van uw SSO-app in. Een team-ID is een alfanumerieke teken reeks van 10 tekens (cijfers en letters) die wordt gegenereerd door Apple, zoals `ABCDE12345`. De team-ID is niet vereist.
+- **Extensie-id** (omleiding en referentie): Geef de bundel-id op waarmee uw SSO-app-extensie wordt geïdentificeerd, zoals `com.apple.extensiblesso`.
+
+- **Team-ID** (omleiding en referentie): Voer de team-ID van de extensie van uw SSO-app in. Een team-ID is een alfanumerieke teken reeks van 10 tekens (cijfers en letters) die wordt gegenereerd door Apple, zoals `ABCDE12345`. De team-ID is niet vereist.
 
   [Zoek uw team-ID](https://help.apple.com/developer-account/#/dev55c3c710c) (Open de website van Apple) voor meer informatie.
 
-- **Realm**: Voer de naam van uw Kerberos-realm in. De realm-naam moet worden gekapitaliseerd, zoals `CONTOSO.COM`. Normaal gesp roken is uw realm-naam hetzelfde als de DNS-domein naam, maar in alle hoofd letters.
+- **Realm** (referentie en Kerberos): Voer de naam van uw verificatie-realm in. De realm-naam moet worden gekapitaliseerd, zoals `CONTOSO.COM`. Normaal gesp roken is uw realm-naam hetzelfde als de DNS-domein naam, maar in alle hoofd letters.
 
-- **Domeinen**: Voer de domein-of hostnamen in van de sites die kunnen worden geverifieerd via SSO. Als uw website bijvoorbeeld is `mysite.contoso.com`, is `mysite` de hostnaam en is `contoso.com` de domein naam. Wanneer gebruikers verbinding maken met een van deze sites, wordt de verificatie vraag door de app-extensie afgehandeld. Met deze verificatie kunnen gebruikers gezichts-ID, aanraak-ID of Apple pincode/wachtwoord code gebruiken om zich aan te melden.
+- **Domeinen** (referentie en Kerberos): Voer de domein-of hostnamen in van de sites die kunnen worden geverifieerd via SSO. Als uw website bijvoorbeeld is `mysite.contoso.com`, is `mysite` de hostnaam en is `contoso.com` de domein naam. Wanneer gebruikers verbinding maken met een van deze sites, wordt de verificatie vraag door de app-extensie afgehandeld. Met deze verificatie kunnen gebruikers gezichts-ID, aanraak-ID of Apple pincode/wachtwoord code gebruiken om zich aan te melden.
 
   - Alle domeinen in uw app-extensie voor eenmalige aanmelding moeten uniek zijn. U kunt een domein niet herhalen in een extensie profiel voor het aanmelden bij de app, zelfs niet als u verschillende typen SSO-app-extensies gebruikt.
   - Deze domeinen zijn niet hoofdletter gevoelig.
 
-- **Aanvullende configuratie** (alleen referentie): voer aanvullende extensie-specifieke gegevens in die moeten worden door gegeven aan de SSO-appuitbreiding:
-  - **Configuratie sleutel**: Voer de naam in van het item dat u wilt toevoegen, zoals `user name`.
-  - **Waardetype**: Voer het type gegevens in. Uw opties zijn:
+- **Url's** (alleen omleiden): Voer de URL-voor voegsels in van uw id-providers waarbij de omleidings-app-extensie SSO uitvoert. Wanneer een gebruiker wordt omgeleid naar deze Url's, wordt de SSO-app-extensie voorbestuurd en wordt de vraag SSO door gegeven.
+
+  - Alle Url's in uw intune-app-extensie profielen voor eenmalige aanmelding moeten uniek zijn. U kunt een domein niet herhalen in een extensie profiel voor SSO-apps, zelfs niet als u verschillende typen SSO-app-extensies gebruikt.
+  - De Url's moeten beginnen met http://of https://.
+
+- **Aanvullende configuratie** (omleiding en referentie): voer aanvullende extensie-specifieke gegevens in die moeten worden door gegeven aan de SSO-appuitbreiding:
+  - **Sleutel**: Voer de naam in van het item dat u wilt toevoegen, zoals `user name`.
+  - **Type**: Voer het type gegevens in. Uw opties zijn:
 
     - Tekenreeks
     - Boolean: Voer `True` of `False`in bij **configuratie waarde**.
     - Geheel getal: Voer een getal in bij **configuratie waarde**.
     
-  - **Configuratie waarde**: Voer de gegevens in.
+  - **Waarde**: Voer de gegevens in.
 
   - **Toevoegen**: Selecteer deze optie om uw configuratie sleutels toe te voegen.
 
@@ -323,11 +328,16 @@ Deze functie is van toepassing op:
   > - Als u slechts één realm hebt, laat u deze **niet geconfigureerd** (standaard).
 
 - **Principal-naam** (alleen Kerberos): Voer de gebruikers naam van de Kerberos-principal in. U hoeft de realm-naam niet op te vermelden. In `user@contoso.com`is `user` bijvoorbeeld de principal-naam en `contoso.com` de realm-naam.
+
+  > [!TIP]
+  > - U kunt ook variabelen gebruiken in de principal-naam door accolades `{{ }}`in te voeren. Voer bijvoorbeeld `Username: {{username}}`in om de gebruikers naam weer te geven. 
+  > - Wees echter voorzichtig met variabele vervanging omdat variabelen niet worden gevalideerd in de gebruikers interface en hoofdletter gevoelig zijn. Zorg ervoor dat u de juiste informatie invoert.
+
 - **Active Directory site code** (alleen Kerberos): Voer de naam in van de Active Directory site die de Kerberos-uitbrei ding moet gebruiken. U hoeft deze waarde mogelijk niet te wijzigen, omdat de Kerberos-extensie de Active Directory site code mogelijk automatisch vindt.
 - **Cache naam** (alleen Kerberos): Voer de naam in van de algemene beveiligings Services (gss) van de Kerberos-cache. U hoeft deze waarde waarschijnlijk niet in te stellen.
 - **App-bundel-id's** (alleen Kerberos): Voeg de app-bundel-id's **toe** die gebruikmaken van eenmalige aanmelding op uw apparaten. Aan deze apps wordt toegang verleend tot de Kerberos ticket granting ticket, het verificatie ticket en de verificatie van gebruikers voor de services waartoe ze toegang hebben.
 - **Domein realm-toewijzing** (alleen Kerberos): Voeg de DNS-achtervoegsels van het domein **toe** die moeten worden toegewezen aan uw realm. Gebruik deze instelling als de DNS-namen van de hosts niet overeenkomen met de realm-naam. U hoeft deze aangepaste domein-naar-realm-toewijzing waarschijnlijk niet te maken.
-- **Pkinit-certificaat** (alleen Kerberos): **Selecteer** de open bare-sleutel cryptografie voor het certificaat voor initiële verificatie (PKINIT) dat kan worden gebruikt om de Kerberos-referentie te vernieuwen zonder tussen komst van de gebruiker. Het certificaat moet een PKCS-of SCEP-certificaat zijn dat u eerder aan intune hebt toegevoegd.
+- **Pkinit-certificaat** (alleen Kerberos): **Selecteer** de open bare sleutel crypto grafie voor het certificaat voor initiële verificatie (PKINIT) dat kan worden gebruikt voor Kerberos-verificatie. U kunt kiezen uit een [PKCS](../protect/certficates-pfx-configure.md) -of [SCEP](../protect/certificates-scep-configure.md) -certificaat dat u in intune hebt toegevoegd. Zie [certificaten voor verificatie gebruiken in Microsoft intune](../protect/certificates-configure.md)voor meer informatie over certificaten.
 
 ## <a name="wallpaper"></a>Achtergrond
 

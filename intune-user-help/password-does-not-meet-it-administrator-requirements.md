@@ -18,10 +18,10 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9181510dad2640fcc8ea84ce2db2856bd02cbaf5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502176"
 ---
 # <a name="device-password-requirements-for-enrolled-devices"></a>Wachtwoord vereisten voor het apparaat voor Inge schreven apparaten
@@ -45,7 +45,7 @@ Neem contact op met uw IT-ondersteunings medewerker voor meer informatie of om e
 | Het wachtwoord is te kort.| Een wacht woord bijwerken of instellen met meer tekens. Uw organisatie vereist dat uw wacht woord een bepaalde lengte heeft. Wat ze daad werkelijk kiezen, verschillen, maar de minimum lengte die ze nodig hebben, is 4 tekens en de maximum waarde is 16. |
 | Het wacht woord mag alleen getallen bevatten. | Stel een wacht woord in dat alleen getallen bevat.|
 | Het wacht woord mag alleen alfanumerieke tekens bevatten. | Stel een wacht woord in dat een combi natie van cijfers en letters bevat.|
-| Het wacht woord moet complexe tekens bevatten. | Voeg complexe tekens toe, zoals cijfers, hoofd letters en symbolen zoals `$`, `%` en `#`. Uw organisatie heeft een combi natie van letters, cijfers en niet-alfanumerieke tekens nodig om het voor anderen moeilijker te maken het wacht woord te raden.|  
+| Het wacht woord moet complexe tekens bevatten. | Voeg complexe tekens toe, zoals cijfers, hoofd letters en symbolen zoals `$`, `%`en `#`. Uw organisatie heeft een combi natie van letters, cijfers en niet-alfanumerieke tekens nodig om het voor anderen moeilijker te maken het wacht woord te raden.|  
 | Het wachtwoord is verlopen. | Stel een nieuw wacht woord in. Uw organisatie vereist dat u uw wacht woord na een bepaald aantal dagen wijzigt. |
 | Uw wachtwoord is recentelijk nog gebruikt. | Kies een wachtwoord dat u nog niet eerder hebt gebruikt. Uw organisatie vereist dat er een bepaalde hoeveelheid tijd wordt door gegeven voordat u een wacht woord opnieuw gebruikt. |
 
@@ -58,7 +58,7 @@ Neem contact op met uw IT-ondersteunings medewerker voor meer informatie of om e
 | De wachtwoord code is te kort. | Een wachtwoord code met meer tekens bijwerken of instellen. Uw organisatie vereist dat uw wachtwoord code een bepaalde lengte heeft. Wat ze daad werkelijk kiezen, verschillen, maar de minimum lengte die ze nodig hebben, is 4 tekens en de maximum 14. Wanneer u uw wachtwoord code wijzigt, wordt er mogelijk een prompt van Apple weer gegeven waarin u 6 of meer tekens moet invoeren. Dit bericht is een Apple-systeem aanbeveling. Als uw organisatie alleen een wachtwoord code van 4 of 5 tekens vereist, hoeft u niet een 6-cijferige wachtwoord code in te voeren.|  
 | De wachtwoord code mag alleen getallen bevatten. | Stel een wachtwoord code in die alleen getallen bevat.|
 | De wachtwoord code mag alleen alfanumerieke tekens bevatten.| Stel een wachtwoord code in die een combi natie van cijfers en letters bevat.|
-| De wachtwoord code moet niet-alfanumerieke tekens bevatten. | Voeg speciale tekens toe, zoals `&`, `!`, `$`, `%` en `#`. Uw organisatie vereist een combi natie van letters, cijfers en niet-alfanumerieke tekens om het voor anderen moeilijker te maken om de wachtwoord code te raden.|
+| De wachtwoord code moet niet-alfanumerieke tekens bevatten. | Voeg speciale tekens toe, zoals `&`, `!`, `$`, `%`en `#`. Uw organisatie vereist een combi natie van letters, cijfers en niet-alfanumerieke tekens om het voor anderen moeilijker te maken om de wachtwoord code te raden.|
 | De wachtwoordcode is verlopen. | Stel een nieuw wacht woord in. Uw organisatie vereist dat u uw wacht woord na een bepaald aantal dagen wijzigt. |
 | De wachtwoord code is te recent gebruikt.| Kies een wachtwoordcode die u nog niet eerder hebt gebruikt. Uw organisatie vereist dat er een bepaalde hoeveelheid tijd wordt door gegeven voordat u een wachtwoord code opnieuw gebruikt. |
 |Verificatie van aanraak-ID of gezichts-ID is vereist. | Stel een touch-ID of gezichts-id in. Uw organisatie vereist dat u met een van deze methoden verifieert voordat u automatisch invullen voor wacht woorden of creditcard gegevens gebruikt. | 
@@ -71,7 +71,7 @@ Neem contact op met uw IT-ondersteunings medewerker voor meer informatie of om e
 | Het wachtwoord is te kort. | Een wacht woord bijwerken of instellen met meer tekens. Uw organisatie vereist dat uw wacht woord een bepaalde lengte heeft.|
 | Het wacht woord mag alleen getallen bevatten. | Stel een wacht woord in dat alleen getallen bevat.|
 | Het wacht woord mag alleen alfanumerieke tekens bevatten. | Stel een wacht woord in dat een combi natie van cijfers en letters bevat.|
-| Het wacht woord moet niet-alfanumerieke tekens bevatten. | Voeg speciale tekens toe, zoals `&`, `!`, `$`, `%` en `#`. Uw organisatie heeft een combi natie van letters, cijfers en niet-alfanumerieke tekens nodig om het voor anderen moeilijker te maken het wacht woord te raden.|
+| Het wacht woord moet niet-alfanumerieke tekens bevatten. | Voeg speciale tekens toe, zoals `&`, `!`, `$`, `%`en `#`. Uw organisatie heeft een combi natie van letters, cijfers en niet-alfanumerieke tekens nodig om het voor anderen moeilijker te maken het wacht woord te raden.|
 | Het wachtwoord is verlopen. | Stel een nieuw wacht woord in. Uw organisatie vereist dat u uw wacht woord na een bepaald aantal dagen wijzigt. |
 | Uw wachtwoord is recentelijk nog gebruikt. | Kies een wachtwoord dat u nog niet eerder hebt gebruikt. Uw organisatie vereist dat er een bepaalde hoeveelheid tijd wordt door gegeven voordat u een wacht woord opnieuw gebruikt. |
 
@@ -84,7 +84,7 @@ Neem contact op met uw IT-ondersteunings medewerker voor meer informatie of om e
 | Het wachtwoord moet getallen bevatten. | Stel een wacht woord of pincode in die getallen bevat.|
 | Het wachtwoord moet letters bevatten. | Stel een wacht woord in dat letters uit het alfabet bevat.|
 | Het wacht woord moet alfanumerieke tekens bevatten. | Stel een wacht woord in dat een combi natie van cijfers en letters bevat.|
-| Het wacht woord moet alfanumerieke tekens en symbolen bevatten. | Stel een wacht woord in dat bestaat uit een combi natie van letters, cijfers en speciale tekens, zoals `&`, `!`, `$`, `%` en `#`. |
+| Het wacht woord moet alfanumerieke tekens en symbolen bevatten. | Stel een wacht woord in dat bestaat uit een combi natie van letters, cijfers en speciale tekens, zoals `&`, `!`, `$`, `%`en `#`. |
 | Wacht woord moet biometrische technologie gebruiken.| Stel uw apparaat in voor het gebruik van biometrische verificatie, zoals vinger afdruk of gezichts herkenning.
 | Het wachtwoord is verlopen. | Stel een nieuw wacht woord in. Uw organisatie vereist dat u uw wacht woord na een bepaald aantal dagen wijzigt. |
 | Uw wachtwoord is recentelijk nog gebruikt. | Kies een wachtwoord dat u nog niet eerder hebt gebruikt. Uw organisatie vereist dat er een bepaalde hoeveelheid tijd wordt door gegeven voordat u een wacht woord opnieuw gebruikt. |

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: d6af0718f2b926383bb943b6321b4d5839346ce7
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585244"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991992"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Gebruik auditlogboeken om gebeurtenissen in Microsoft Intune te volgen en te controleren
 
@@ -40,9 +40,14 @@ Gebruikers met de volgende machtigingen kunnen auditlogboeken bekijken:
 
 U kunt auditlogboeken in de controlegroep voor elke Intune-workload bekijken:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Kies de gewenste werkbelasting voor het bekijken van auditlogboeken. Selecteer bijvoorbeeld **Apparaten**.
-3. Kies onder **Bewaking** **Auditlogboeken**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Tenant beheer** > **audit logboeken**.
+3. Als u de resultaten wilt filteren, selecteert u **filteren** en verfijnt u de resultaten met behulp van de volgende opties.
+    - **Categorie**: zoals **naleving**, **apparaat**en **rol**.
+    - **Activiteit**: de opties die hier worden vermeld, worden beperkt door de gekozen optie onder **categorie**.
+    - **Datum bereik**: u kunt Logboeken kiezen voor de vorige maand, week of dag.
+4. Kies **Toepassen**.
+4. Selecteer een item in de lijst om de details van de activiteit weer te geven.
 
 ## <a name="route-logs-to-azure-monitor"></a>Logboeken routeren naar Azure Monitor
 
@@ -53,32 +58,10 @@ Auditlogboeken en operationele logboeken kunnen ook naar Azure Monitor worden ge
 > [!NOTE]
 > Zie [logboek gegevens naar opslag, Event hubs of log Analytics verzenden](review-logs-using-azure-monitor.md)voor meer informatie over deze functie en voor het controleren van de vereisten voor het gebruik ervan.
 
-## <a name="review-audit-events"></a>Auditgebeurtenissen bekijken
-
-![Kies auditlogboeken in Intune om acties en datums te zien bij het optreden van gebeurtenissen](./media/monitor-audit-logs/monitor-audit-logs.png "Auditlogboeken")
-
-Een auditlogboek heeft een standaardlijstweergave waarin de volgende items worden weergegeven:
-
-- Datum en tijd waarop de gebeurtenis is opgetreden
-- Gestart door (actor)
-- Toepassingsnaam
-- Activiteit
-- Doel(en)
-- Categorie
-- Status
-
-Selecteer een item in de lijst als u meer informatie over een gebeurtenis wilt bekijken:
-
-![Meer gedetailleerde informatie krijgen over wie wat deed in auditlogboeken in Intune](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
-
 > [!NOTE]
 > **Gestart door (actor)** bevat informatie over wie de taak heeft uitgevoerd en waar deze is uitgevoerd. Als u de activiteit bijvoorbeeld in Intune in de Azure-portal uitvoert, vermeldt **Toepassing** altijd **Uitbreiding voor Microsoft Intune-portal** en maakt de **Toepassings-id** altijd gebruik van dezelfde GUID.
 >
 > In de sectie **Doel(en)** worden mogelijk meerdere doelen vermeld, samen met de eigenschappen die zijn gewijzigd.  
-
-## <a name="filter-audit-events"></a>Auditgebeurtenissen filteren
-
-Elke workload kent een menu-item dat vooraf op de categorie van auditgebeurtenissen filtert die aan het deelvenster is gekoppeld. Met behulp van een afzonderlijke filteroptie kunt u overschakelen naar een andere categorie en naar details over gebeurtenisacties binnen die categorie. U kunt zoeken op UPN, zoals de gebruiker die de actie heeft uitgevoerd. Een filter voor datumbereik biedt opties voor 24 uur, 7 dagen of 30 dagen. Standaard worden de laatste 30 dagen aan auditgebeurtenissen weergegeven.
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>Graph API gebruiken om auditgebeurtenissen op te halen
 

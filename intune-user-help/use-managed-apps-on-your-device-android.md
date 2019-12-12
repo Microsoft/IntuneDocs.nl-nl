@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501896"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781206"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Beheerde apps op uw Android-apparaat gebruiken
 Beheerde apps worden geconfigureerd om te voldoen aan de beveiligingsvereisten van uw organisatie en om gegevens voor uw werk en school te beveiligen. Deze apps worden voor u beschikbaar gesteld op uw apparaat zodat ze automatisch kunnen worden geïnstalleerd of gebruikt. 
@@ -39,9 +39,7 @@ Voor een optimale beveiliging van de gegevens kan uw organisatie verschillende b
 Organisaties kunnen ervoor zorgen dat u een beheerde app moet gebruiken om iets te doen, zoals het openen van een werkbestand of het gebruiken van een webkoppeling. Als u niet over de app beschikt, kunt u de taak mogelijk niet verder uitvoeren. Sommige beheerde apps worden voor u beschikbaar gesteld zodat u deze kunt installeren, maar zijn niet vereist.
 
 ## <a name="how-do-i-know-im-using-a-managed-app"></a>Hoe weet ik dat ik een beheerde app gebruik?
-Wanneer u voor het eerst toegang krijgt tot gegevens voor uw werk of school in een beheerde app, ontvangt u een bericht dat lijkt op de onderstaande schermopname. In het bericht wordt u gevraagd om de app opnieuw te starten om door te gaan.
-
-![Schermopname van het bericht dat wordt weergegeven wanneer gebruikers een beheerde app op hun apparaat openen. In het bericht staat: 'De gegevens in deze app worden niet door uw organisatie beveiligd. U moet de app opnieuw starten om door te gaan.' Daaronder wordt de knop OK weergegeven.](./media/managed-apps-message.png)
+Wanneer u toegang probeert te krijgen tot werk-of school gegevens in een beheerde app, ontvangt u een bericht op het scherm dat de app wordt beveiligd door uw organisatie. 
 
 ## <a name="commonly-managed-apps"></a>Veelvoorkomende beheerde apps  
 Voorbeelden van veelvoorkomende vereiste of beschikbare beheerde apps op scholen en werkplekken zijn:

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059803"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781138"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>VPN-instellingen toevoegen aan iOS-apparaten in Microsoft Intune
 
@@ -106,7 +106,7 @@ Welke instellingen in de volgende lijst worden weergegeven, is afhankelijk van h
 
 ## <a name="ikev2-settings"></a>IKEv2-instellingen
 
-Deze instellingen zijn van toepassing wanneer u **verbindings type**  > **IKEv2**kiest.
+Deze instellingen zijn van toepassing wanneer u **verbindings type** > **IKEv2**kiest.
 
 - **Externe ID**: Voer het netwerk-IP-adres, de FQDN-naam, de UserFQDN of de ASN1DN van de IKEv2-server in. Voer bijvoorbeeld `10.0.0.3` of `vpn.contoso.com` in. Normaal gesp roken voert u dezelfde waarde in als de naam van de [**verbinding**](#base-vpn-settings) (in dit artikel). Maar dit is afhankelijk van de instellingen van uw IKEv2-server.
 
@@ -136,8 +136,8 @@ Deze instellingen zijn van toepassing wanneer u **verbindings type**  > **IKEv2*
   - **Gemiddeld** (standaard): Hiermee wordt elke 10 minuten een keepalive-bericht verzonden.
   - **Hoog**: Hiermee wordt elke 60 seconden een keepalive-bericht verzonden.
 
-- **Minimum TLS-versie bereik**: Voer de minimale TLS-versie in die moet worden gebruikt. Voer `1.0`, `1.1` of `1.2` in. Als dit veld leeg blijft, wordt de standaard waarde van `1.0` gebruikt.
-- **TLS-versie bereik maximum**: Voer de maximale TLS-versie in die u wilt gebruiken. Voer `1.0`, `1.1` of `1.2` in. Als dit veld leeg blijft, wordt de standaard waarde van `1.2` gebruikt.
+- **Minimum TLS-versie bereik**: Voer de minimale TLS-versie in die moet worden gebruikt. Voer `1.0`, `1.1`of `1.2`in. Als dit veld leeg blijft, wordt de standaard waarde van `1.0` gebruikt.
+- **TLS-versie bereik maximum**: Voer de maximale TLS-versie in die u wilt gebruiken. Voer `1.0`, `1.1`of `1.2`in. Als dit veld leeg blijft, wordt de standaard waarde van `1.2` gebruikt.
 - **Perfect Forward Secrecy**: Selecteer **inschakelen** om PFS (Perfect Forward Secrecy) in te scha kelen. PFS is een IP-beveiligings functie die de impact vermindert als een sessie sleutel wordt aangetast. Met **uitschakelen** (standaard) wordt PFS niet gebruikt.
 - **Controle van certificaat intrekking**: Selecteer **inschakelen** om ervoor te zorgen dat de certificaten niet worden ingetrokken voordat de VPN-verbinding kan slagen. Deze controle is de beste inspanning. Als er een time-out optreedt voor de VPN-server voordat wordt vastgesteld of het certificaat is ingetrokken, wordt toegang verleend. **Uitschakelen** (standaard) controleert niet op ingetrokken certificaten.
 
@@ -179,7 +179,7 @@ Deze instellingen zijn van toepassing wanneer u **verbindings type**  > **IKEv2*
 
 ## <a name="automatic-vpn-settings"></a>Automatische VPN-instellingen
 
-- **VPN per app**: hiermee schakelt u VPN per app in. Er kan dan automatisch een VPN-verbinding worden gemaakt wanneer bepaalde apps worden geopend. U kunt ook apps koppelen aan het VPN-profiel. Voor meer informatie ziet u de [instructies voor het instellen van VPN per app voor iOS](vpn-setting-configure-per-app.md).
+- **VPN per app**: hiermee schakelt u VPN per app in. Er kan dan automatisch een VPN-verbinding worden gemaakt wanneer bepaalde apps worden geopend. U kunt ook apps koppelen aan het VPN-profiel. VPN per app wordt niet ondersteund voor IKEv2. Voor meer informatie ziet u de [instructies voor het instellen van VPN per app voor iOS](vpn-setting-configure-per-app.md). 
   - **Providertype**: alleen beschikbaar voor Pulse Secure en aangepaste VPN.
   - Wanneer u in iOS **VPN-profielen voor individuele apps** gebruikt met Pulse Secure en een aangepaste VPN, kiest u voor tunnels op app-niveau (app-proxy) of op pakketniveau (pakkettunnel). Stel de waarde **ProviderType** in op **app-proxy** voor tunneling op app-niveau of **pakkettunnel** voor tunneling op pakketniveau. Als u niet zeker weet welke waarde u moet gebruiken, bekijkt u de documentatie van uw VPN-provider.
   - **Safari-URL's die deze VPN activeren**: voeg een of meer website-URL's toe. Wanneer deze URL's worden bezocht via de Safari-browser op het apparaat, wordt er automatisch een VPN-verbinding ingesteld.

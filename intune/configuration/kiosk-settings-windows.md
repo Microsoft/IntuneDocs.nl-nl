@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 80da0e6952c5aaab6fa8146b2d91d32259966d5d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059349"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74691730"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Instellingen voor apparaten met Windows 10 en hoger om ze als kiosk uit te voeren via Intune
 
@@ -83,16 +83,17 @@ Hiermee wordt slechts één app op het apparaat uitgevoerd.
 
     - **De browser vernieuwen na niet-actieve tijd**: voer de niet-actieve tijd (1-1440 minuten) in, waarna de kioskbrowser opnieuw wordt gestart en vernieuwd. Niet-actieve tijd wordt weergegeven als het aantal minuten dat is verstreken sinds de laatste interactie van de gebruiker. De waarde is standaard leeg of blanco, wat inhoudt dat er geen time-out is voor inactiviteit.
 
-    - **Toegestane websites**: gebruik deze instelling om toe te staan dat bepaalde websites worden geopend. Met andere woorden, gebruik deze functie om het aantal websites dat op het apparaat kan worden geopend, te beperken. U kunt bijvoorbeeld toestaan dat alle websites op `http://contoso.com*` kunnen worden geopend. Standaard worden alle websites toegestaan.
+    - **Toegestane websites**: gebruik deze instelling om toe te staan dat bepaalde websites worden geopend. Met andere woorden, gebruik deze functie om het aantal websites dat op het apparaat kan worden geopend, te beperken. U kunt bijvoorbeeld toestaan dat alle websites op `http://contoso.com` kunnen worden geopend. Standaard worden alle websites toegestaan.
 
-      Als u specifieke websites wilt toestaan, moet u een bestand uploaden dat een lijst met toegestane websites op afzonderlijke regels bevat. Als u geen bestand toevoegt, zijn alle websites toegestaan. Intune biedt ondersteuning voor `*` (sterretje) als jokerteken.
+      Als u specifieke websites wilt toestaan, moet u een bestand uploaden dat een lijst met toegestane websites op afzonderlijke regels bevat. Als u geen bestand toevoegt, zijn alle websites toegestaan. Standaard biedt intune ondersteuning voor joker tekens. Als u dus het domein, zoals `sharepoint.com`, toestaat, kunnen subdomeinen automatisch worden toegestaan, zoals `contoso.sharepoint.com`, `my.sharepoint.com`, enzovoort.
 
       Het voorbeeldbestand moeten eruitzien als het volgende lijst:
 
       `http://bing.com`  
       `https://bing.com`  
-      `http://contoso.com/*`  
-      `https://contoso.com/*`
+      `http://contoso.com`  
+      `https://contoso.com`  
+      `office.com`
 
     > [!NOTE]
     > Windows 10-kiosken met automatische logo's ingeschakeld in micro soft kiosk browser moet een offline licentie van de Microsoft Store voor bedrijven gebruiken. Deze vereiste is omdat automatisch aanmelden gebruikmaakt van een lokale gebruikers account zonder referenties voor Azure Active Directory (AD). Online licenties kunnen daarom niet worden geëvalueerd. Zie voor meer informatie het [distribueren van offline-Apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
