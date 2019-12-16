@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/04/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: d445b86359b2c5cde7b56a52a0cc6ee72a34c0ea
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199196"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832604"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Algemene vragen, problemen en oplossingen met apparaatbeleid en -profielen in Microsoft Intune
 
@@ -50,7 +50,9 @@ Enkele extra aanbevelingen:
 
 Intune meldt dat het apparaat moet worden ingecheckt met de Intune-service. De meldingstijd kan variëren, van onmiddellijk tot enkele uren. De meldingstijd verschilt ook per platform.
 
-Als een apparaat niet incheckt om het beleid of het profiel op te halen na de eerste melding, doet Intune nog drie pogingen. Een apparaat dat offline is, dat bijvoorbeeld is uitgeschakeld of niet is verbonden met een netwerk, ontvangt mogelijk geen meldingen. In dat geval krijgt het apparaat het beleid of het profiel bij de volgende geplande check-in bij de Intune-service, naar **schatting**:
+Als een apparaat niet incheckt om het beleid of het profiel op te halen na de eerste melding, doet Intune nog drie pogingen. Een apparaat dat offline is, dat bijvoorbeeld is uitgeschakeld of niet is verbonden met een netwerk, ontvangt mogelijk geen meldingen. In dat geval krijgt het apparaat het beleid of profiel bij de volgende geplande check-in bij de Intune-service. Hetzelfde geldt voor controle op niet-naleving, inclusief niet-compatibele apparaten die voorheen compatibel waren.
+
+**Geschatte** frequenties:
 
 | Platform | Cyclus vernieuwen|
 | --- | --- |
@@ -61,7 +63,7 @@ Als een apparaat niet incheckt om het beleid of het profiel op te halen na de ee
 | Windows Phone | Ongeveer om de 8 uur |
 | Windows 8.1 | Ongeveer om de 8 uur |
 
-Als het apparaat onlangs is ingeschreven, wordt het inchecken voor naleving en configuratie vaker uitgevoerd, naar **schatting**:
+Als het apparaat onlangs is ingeschreven, wordt het inchecken voor naleving, niet-naleving en configuratie vaker uitgevoerd, naar **schatting**:
 
 | Platform | Frequentie |
 | --- | --- |

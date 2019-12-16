@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d15fd73a608c799745c92c4b07df4b9705d00106
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 178e1a3d0f58eb925c4d48be10bfa46e68c6b2c6
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490316"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955453"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Een Apple MDM-pushcertificaat ophalen
 
@@ -41,7 +41,7 @@ Wanneer een pushcertificaat is verlopen, moet u dit vernieuwen. Zorg er tijdens 
 
 
 ## <a name="steps-to-get-your-certificate"></a>Stappen voor het ophalen van het certificaat
-Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), kies **Apparaatinschrijving** > **Apple-inschrijving** > **Apple MDM-pushcertificaat** en volg deze stappen in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), kies **Apparaten** > **Apparaten inschrijven** > **Apple-inschrijving** > **Apple MDM-pushcertificaat** en volg deze stappen.
 
 ### <a name="step-1-grant-microsoft-permission-to-send-user-and-device-information-to-apple"></a>Stap 1. Microsoft toestemming geven om gebruikers en apparaatgegevens naar Apple te verzenden
 Selecteer **Ik ga akkoord.** om Microsoft toestemming te geven om gegevens te verzenden naar Apple.
@@ -68,7 +68,7 @@ Het Apple MDM-pushcertificaat is één jaar geldig en moet elk jaar worden verle
 
 Het certificaat wordt gekoppeld aan de Apple-id waarmee het wordt gemaakt. Verlengt het MDM-pushcertificaat met dezelfde Apple-id waarmee u het hebt gemaakt.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), kies **Apparaatinschrijving** > **Apple-inschrijving** en kies vervolgens de tegel **Apple MDM-pushcertificaat** in het gedeelte met details.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), kies **Apparaten** > **Apparaten inschrijven** > **Apple-inschrijving** > **Apple MDM-pushcertificaat**.
 2. Kies **Uw CSR downloaden** om het aanvraagbestand te downloaden en lokaal op te slaan. Het bestand wordt gebruikt voor het aanvragen van een vertrouwensrelatiecertificaat uit de Apple Push Certificates Portal.
 3. Selecteer **Uw MDM-pushcertificaat maken** om naar de portal voor Apple-pushcertificaten te gaan. Zoek het certificaat dat u wilt verlengen en selecteer **Verlengen**.
 4. Via het scherm **Push-certificaat vernieuwen** voegt u notities toe om het certificaat later te kunnen identificeren. Selecteer **Bestand kiezen** om naar het gedownloade aanvraagbestand te bladeren en kiest u **Uploaden**.

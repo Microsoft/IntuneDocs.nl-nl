@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 59ba9ab5fb0ddeb527ed852de042568920cf38e1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509179"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819707"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Intune-inschrijvingsmethoden voor Windows-apparaten
 
@@ -42,7 +42,7 @@ Gebruikers kunnen hun eigen Windows-apparaat zelf inschrijven via een van deze m
 Als een beheerder Automatische inschrijving heeft geconfigureerd (beschikbaar voor Azure AD Premium-abonnementen), hoeft de gebruiker zijn of haar referenties maar eenmaal in te voeren. Anders moeten ze zich afzonderlijk inschrijven via Alleen MDM-inschrijving en hun referenties opnieuw invoeren.  
 - **Alleen MDM-inschrijving**: hiermee kunnen gebruikers een bestaande werkgroep, Active Directory of een aan de Azure Active Directory toegevoegde pc in Intune inschrijven. Gebruikers voeren de inschrijving uit via Instellingen op hun bestaande Windows-pc. Deze methode wordt echter niet aanbevolen, aangezien het apparaat hiermee niet bij Azure Active Directory wordt ingeschreven. Ook kunnen bepaalde functies zoals Voorwaardelijke toegang niet worden gebruikt.
 - [Azure Active Directory (Azure AD) Join](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network): hiermee voegt u het apparaat toe aan Azure Active Directory en kunnen gebruikers zich bij Windows aanmelden met hun Azure AD-referenties. Als Automatische inschrijving is ingeschakeld, wordt het apparaat automatisch in Intune ingeschreven. Het voordeel van automatische inschrijving is dat de gebruiker maar één stap hoeft uit te voeren. Anders moeten ze zich afzonderlijk inschrijven via Alleen MDM-inschrijving en hun referenties opnieuw invoeren. Gebruikers kunnen zich ofwel tijdens de initiële Windows OOBE of bij Instellingen op deze manier inschrijven. Het apparaat wordt als een zakelijk apparaat in Intune gemarkeerd.
-- [Autopilot](enrollment-autopilot.md): deze functie zorgt ervoor dat gebruikers automatisch aan Azure AD worden toegevoegd en dat nieuwe zakelijke apparaten bij Intune worden ingeschreven. Met deze methode zorgt wordt de out-of-the-boxervaring vereenvoudigd. Bovendien hoeven er geen aangepaste installatiekopieën van het besturingssysteem meer op de apparaten te worden toegepast. Als beheerders Intune gebruiken om Autopilot-apparaten te beheren, kunnen ze beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven.  Er zijn vier typen Autopilot-implementatie: [Zelfimplementatiemodus](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (voor kiosken, digitale borden of een gedeeld apparaat), [Door gebruiker gestuurde modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (voor traditionele gebruikers, [White label] (met https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) kunnen partners of IT-medewerkers een Windows 10-pc alvast inrichten, zodat deze volledig is geconfigureerd en klaar is voor gebruik) en [Autopilot voor bestaande apparaten] (met https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) kan gemakkelijk de meest recente versie van Windows 10 op uw bestaande apparaten worden geïmplementeerd).
+- [Autopilot](enrollment-autopilot.md): deze functie zorgt ervoor dat gebruikers automatisch aan Azure AD worden toegevoegd en dat nieuwe zakelijke apparaten bij Intune worden ingeschreven. Met deze methode zorgt wordt de out-of-the-boxervaring vereenvoudigd. Bovendien hoeven er geen aangepaste installatiekopieën van het besturingssysteem meer op de apparaten te worden toegepast. Als beheerders Intune gebruiken om Autopilot-apparaten te beheren, kunnen ze beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven.  Er zijn vier typen Autopilot-implementatie: [Zelfimplementatiemodus](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (voor kiosken, digitale borden of een gedeeld apparaat), [Door gebruiker gestuurde modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (voor traditionele gebruikers), [White label](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) waarmee partners of IT-medewerkers een Windows 10-pc alvast kunnen inrichten, zodat deze volledig is geconfigureerd en klaar is voor gebruik en [Autopilot voor bestaande apparaten](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) waarmee u gemakkelijk de meest recente versie van Windows 10 op uw bestaande apparaten kunt implementeren.
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Op beheerders gebaseerde inschrijving in Intune
 

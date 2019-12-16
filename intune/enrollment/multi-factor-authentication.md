@@ -17,12 +17,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50dbbb19cca9b5c46f0ba8b9d4e16c499534b536
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: db04b93deffd2476a97b952fd1c6942fa79e1f05
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503107"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955385"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Multi-Factor Authentication vereisen voor Intune-apparaatinschrijvingen
 
@@ -50,18 +50,17 @@ Voer de volgende stappen uit om MFA te vereisen wanneer een apparaat wordt gereg
 >[!Important]
 >Configureer geen **op het apparaat gebaseerde toegangsregels** voor Microsoft Intune-registratie.
 
-1. Meld u met uw referenties aan bij uw [Microsoft Azure Portal](https://portal.azure.com).
-2. Ga in de portal naar **Intune** en kies **Voorwaardelijke toegang**. Het knooppunt voor voorwaardelijke toegang dat via *Intune* wordt geopend, is hetzelfde als het knooppunt dat u opent via *Azure AD*.
-4. Kies **Nieuw beleid**.
-5. Typ onder **Nieuw** beleid een beschrijvende naam voor het beleid.
-6. Kies in de sectie **Toewijzingen** **Gebruikers en groepen**. 
-7. In **Gebruikers en groepen** kiest u **Gebruikers of groepen selecteren**  en schakelt u **Gebruikers en groepen** in. Selecteer vervolgens de gebruikers en/of groepen waarop dit beleid van toepassing is en kies vervolgens **Gereed**.
-8. Kies **Cloud-apps** in de sectie **Toewijzingen**.
-9. Kies op het tabblad **Opnemen** onder **Cloud-apps** de optie **Apps selecteren** en kies vervolgens **Selecteren** > **Microsoft Intune-inschrijving**. Klik ten slotte op **Gereed**. Door **Microsoft Intune-inschrijving** te kiezen wordt MFA voor voorwaardelijke toegang alleen toegepast op de inschrijving van het apparaat (eenmalige MFA-prompt).
-10. In het gedeelte **Toewijzingen** hoeft u voor **Voorwaarden** geen instellingen voor MFA te configureren.
-11. Kies in de sectie **Besturingselementen voor toegang** de optie **Verlenen**.
-12. Kies onder **Verlenen** **Toegang verlenen** en selecteer vervolgens **Meervoudige verificatie vereisen**. Selecteer niet **Vereisen dat het apparaat moet worden gemarkeerd als compatibel**, omdat de compatibiliteit van het apparaat niet kan worden gecontroleerd totdat het is ingeschreven. Kies dan de optie **Selecteren**.
-13. Kies onder **Nieuw beleid** **Beleid inschakelen** > **Aan** en kies vervolgens **Maken**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) kies **Apparaten** > **Voorwaardelijke toegang**. Het knooppunt voor voorwaardelijke toegang dat via *Intune* wordt geopend, is hetzelfde als het knooppunt dat u opent via *Azure AD*.
+2. Kies **Nieuw beleid**.
+3. Typ onder **Nieuw** beleid een beschrijvende naam voor het beleid.
+4. Kies in de sectie **Toewijzingen** **Gebruikers en groepen**. 
+5. In **Gebruikers en groepen** kiest u **Gebruikers of groepen selecteren**  en schakelt u **Gebruikers en groepen** in. Selecteer vervolgens de gebruikers en/of groepen waarop dit beleid van toepassing is en kies vervolgens **Gereed**.
+6. Kies **Cloud-apps** in de sectie **Toewijzingen**.
+7. Kies op het tabblad **Opnemen** onder **Cloud-apps** de optie **Apps selecteren** en kies vervolgens **Selecteren** > **Microsoft Intune-inschrijving**. Klik ten slotte op **Gereed**. Door **Microsoft Intune-inschrijving** te kiezen wordt MFA voor voorwaardelijke toegang alleen toegepast op de inschrijving van het apparaat (eenmalige MFA-prompt).
+8. In het gedeelte **Toewijzingen** hoeft u voor **Voorwaarden** geen instellingen voor MFA te configureren.
+9. Kies in de sectie **Besturingselementen voor toegang** de optie **Verlenen**.
+10. Kies onder **Verlenen** **Toegang verlenen** en selecteer vervolgens **Meervoudige verificatie vereisen**. Selecteer niet **Vereisen dat het apparaat moet worden gemarkeerd als compatibel**, omdat de compatibiliteit van het apparaat niet kan worden gecontroleerd totdat het is ingeschreven. Kies dan de optie **Selecteren**.
+11. Kies onder **Nieuw beleid** **Beleid inschakelen** > **Aan** en kies vervolgens **Maken**.
 
 
 

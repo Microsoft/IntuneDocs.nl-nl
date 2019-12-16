@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635371"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899133"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Overzicht van begeleide scenario's voor Intune 
 
@@ -33,7 +33,7 @@ Begeleide scenario's zijn als beheerruimte niet anders dan de reguliere werkstro
 
 ## <a name="types-of-guided-scenarios"></a>Typen begeleide scenario's 
 
-Om het eenvoudig te houden, maken complexe bereikfuncties zoals bereiktags <link>, groepen die zijn uitgesloten en toewijzingen van virtuele groepen<link> geen deel uit van begeleide scenario's. Alle resources die zijn gemaakt met behulp van een begeleid scenario, nemen elke bereiktag van de beheerder die het scenario uitvoert, over. Bepaalde scenario's bieden de mogelijkheid om algemene instellingen enigszins aan te passen zodat ze voor nauw verwante scenario's kunnen worden gebruikt. Door deze scenario's wordt alleen het gebruik van groepstoewijzingen aan insluitingsgroepen ondersteund. Voor andere begeleide scenario's geldt dat er een gegarandeerd consistente ervaring wordt geboden door geen mogelijkheid tot aanpassing te bieden, en wordt er automatisch een nieuwe groep gegenereerd die alle toewijzingen ontvangt. Zodra het begeleide scenario is voltooid, hebt u de mogelijkheid om rechtstreeks geavanceerdere toewijzingen te maken via bestaande workloads voor beleidsregels, apps en profielen.  
+Om het eenvoudig te houden, maken complexe bereikfuncties zoals bereiktags, groepen die zijn uitgesloten en toewijzingen van virtuele groepen geen deel uit van begeleide scenario's. Alle resources die zijn gemaakt met behulp van een begeleid scenario, nemen elke bereiktag van de beheerder die het scenario uitvoert, over. Bepaalde scenario's bieden de mogelijkheid om algemene instellingen enigszins aan te passen zodat ze voor nauw verwante scenario's kunnen worden gebruikt. Door deze scenario's wordt alleen het gebruik van groepstoewijzingen aan insluitingsgroepen ondersteund. Voor andere begeleide scenario's geldt dat er een gegarandeerd consistente ervaring wordt geboden door geen mogelijkheid tot aanpassing te bieden, en wordt er automatisch een nieuwe groep gegenereerd die alle toewijzingen ontvangt. Zodra het begeleide scenario is voltooid, hebt u de mogelijkheid om rechtstreeks geavanceerdere toewijzingen te maken via bestaande workloads voor beleidsregels, apps en profielen.  
 
 De volgende scenario's zijn begeleide scenario's: 
 - Microsoft Edge voor mobiel implementeren 

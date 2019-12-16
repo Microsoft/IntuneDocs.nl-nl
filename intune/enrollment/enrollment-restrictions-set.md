@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
-ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
+ms.openlocfilehash: 78f79a734d0a7b4901b2248b20abd9d304926dd2
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587960"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955504"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -59,15 +59,12 @@ Standaardbeperkingen worden automatisch opgegeven voor registratiebeperkingen vo
 
 ## <a name="create-a-device-type-restriction"></a>Een beperking voor apparaattype maken
 
-1. Meld u aan bij Azure Portal.
-2. Selecteer **Meer Services**, zoek naar **Intune** en kies vervolgens **Intune**.
-3. Selecteer **Apparaatinschrijving** > **Inschrijvingsbeperkingen** > **Beperking maken** > **Beperking voor apparaattype**.
-    ![Schermopname voor het maken van een beperking voor apparaattype](./media/enrollment-restrictions-set/create-device-type-restriction.png)
-4. Geef op de pagina **Basisinformatie** de beperking op voor een **Naam** en optioneel ook voor **Beschrijving**.
-5. Kies **Volgende** om naar de pagina **Platforminstellingen** te gaan.
-6. Kies onder **Platform** de optie **Toestaan** voor de platforms waarvoor u deze beperking wilt toestaan.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) > **Apparaten** > **Inschrijvingsbeperkingen** > **Beperking maken** > **Beperking voor apparaattype**.
+2. Geef op de pagina **Basisinformatie** de beperking op voor een **Naam** en optioneel ook voor **Beschrijving**.
+3. Kies **Volgende** om naar de pagina **Platforminstellingen** te gaan.
+4. Kies onder **Platform** de optie **Toestaan** voor de platforms waarvoor u deze beperking wilt toestaan.
     ![Schermopname voor het kiezen van platforminstellingen](./media/enrollment-restrictions-set/choose-platform-settings.png)
-7. Kies onder **Versies** de minimale en maximale versies die u wilt ondersteunen op de toegestane platforms. Versiebeperkingen zijn alleen van toepassing op apparaten die zijn ingeschreven via de bedrijfsportal.
+5. Kies onder **Versies** de minimale en maximale versies die u wilt ondersteunen op de toegestane platforms. Versiebeperkingen zijn alleen van toepassing op apparaten die zijn ingeschreven via de bedrijfsportal.
      Ondersteunde versie-indelingen omvatten:
     - Android-apparaatbeheerder en Android Enterprise-werkprofiel bieden ondersteuning voor major.minor.rev.build.
     - iOS ondersteunt major.minor.rev. Versies van besturingssystemen zijn niet van toepassing op Apple-apparaten die worden ingeschreven met Device Enrollment Program, Apple School Manager of de app Apple Configurator.
@@ -84,31 +81,28 @@ Standaardbeperkingen worden automatisch opgegeven voor registratiebeperkingen vo
    > [!Note]
    > Windows 10 verstrekt niet het rev-nummer tijdens het inschrijven. Als u bijvoorbeeld 10.0.17134.100 invoert en het apparaat nummer 10.0.17134.174 heeft, wordt het apparaat geblokkeerd.
 
-8. Kies onder **Persoonlijk eigendom** de optie **Toestaan** voor de platforms die u wilt toestaan als apparaten in persoonlijk eigendom.
-9. Kies **Volgende** om naar de pagina **Toewijzingen** te gaan.
-10. Kies **Groepen selecteren om op te nemen** en gebruik vervolgens het zoekvak om groepen te vinden die u wilt opnemen in deze beperking. De beperking geldt alleen voor de groepen waaraan deze is toegewezen. Als u geen beperking aan ten minste één groep toewijst, heeft deze bewerking dit geen effect. Kies dan de optie **Selecteren**. 
+6. Kies onder **Persoonlijk eigendom** de optie **Toestaan** voor de platforms die u wilt toestaan als apparaten in persoonlijk eigendom.
+7. Kies **Volgende** om naar de pagina **Toewijzingen** te gaan.
+8. Kies **Groepen selecteren om op te nemen** en gebruik vervolgens het zoekvak om groepen te vinden die u wilt opnemen in deze beperking. De beperking geldt alleen voor de groepen waaraan deze is toegewezen. Als u geen beperking aan ten minste één groep toewijst, heeft deze bewerking dit geen effect. Kies dan de optie **Selecteren**. 
     ![Schermopname voor het kiezen van platforminstellingen](./media/enrollment-restrictions-set/select-groups.png)
-11. Selecteer **Volgende** om naar de pagina **Controleren en maken** te gaan.
-12. Selecteer **Maken** om de beperking te maken.
-13. De nieuwe beperking wordt gemaakt met een prioriteit boven de standaardwaarde. U kunt [de prioriteit wijzigen](#change-enrollment-restriction-priority).
+9. Selecteer **Volgende** om naar de pagina **Controleren en maken** te gaan.
+10. Selecteer **Maken** om de beperking te maken.
+11. De nieuwe beperking wordt gemaakt met een prioriteit boven de standaardwaarde. U kunt [de prioriteit wijzigen](#change-enrollment-restriction-priority).
 
 
 ## <a name="create-a-device-limit-restriction"></a>Een beperking voor apparaatlimiet maken
 
-1. Meld u aan bij Azure Portal.
-2. Selecteer **Meer Services**, zoek naar **Intune** en kies vervolgens **Intune**.
-3. Selecteer **Apparaatinschrijving** > **Inschrijvingsbeperkingen** > **Beperking maken** > **Beperking voor apparaatlimiet**.
-    ![Schermopname voor het maken van een beperking voor apparaatlimiet](./media/enrollment-restrictions-set/create-device-limit-restriction.png)
-4. Geef op de pagina **Basisinformatie** de beperking op voor een **Naam** en optioneel ook voor **Beschrijving**.
-5. Kies **Volgende** om naar de pagina **Apparaatlimiet** te gaan.
-6. Selecteer voor **Apparaatlimiet** het maximum aantal apparaten dat een gebruiker kan inschrijven.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) > **Apparaten** > **Inschrijvingsbeperkingen** > **Beperking maken** > **Beperking voor apparaatlimiet**.
+2. Geef op de pagina **Basisinformatie** de beperking op voor een **Naam** en optioneel ook voor **Beschrijving**.
+3. Kies **Volgende** om naar de pagina **Apparaatlimiet** te gaan.
+4. Selecteer voor **Apparaatlimiet** het maximum aantal apparaten dat een gebruiker kan inschrijven.
     ![Schermopname voor het kiezen van de apparaatlimiet](./media/enrollment-restrictions-set/choose-device-limit.png)
-7. Kies **Volgende** om naar de pagina **Toewijzingen** te gaan.
-8. Kies **Groepen selecteren om op te nemen** en gebruik vervolgens het zoekvak om groepen te vinden die u wilt opnemen in deze beperking. De beperking geldt alleen voor de groepen waaraan deze is toegewezen. Als u geen beperking aan ten minste één groep toewijst, heeft deze bewerking dit geen effect. Kies dan de optie **Selecteren**. 
+5. Kies **Volgende** om naar de pagina **Toewijzingen** te gaan.
+6. Kies **Groepen selecteren om op te nemen** en gebruik vervolgens het zoekvak om groepen te vinden die u wilt opnemen in deze beperking. De beperking geldt alleen voor de groepen waaraan deze is toegewezen. Als u geen beperking aan ten minste één groep toewijst, heeft deze bewerking dit geen effect. Kies dan de optie **Selecteren**. 
     ![Schermopname voor het selecteren van groepen](./media/enrollment-restrictions-set/select-groups-device-limit.png)
-11. Selecteer **Volgende** om naar de pagina **Controleren en maken** te gaan.
-12. Selecteer **Maken** om de beperking te maken.
-13. De nieuwe beperking wordt gemaakt met een prioriteit boven de standaardwaarde. U kunt [de prioriteit wijzigen](#change-enrollment-restriction-priority).
+7. Selecteer **Volgende** om naar de pagina **Controleren en maken** te gaan.
+8. Selecteer **Maken** om de beperking te maken.
+9. De nieuwe beperking wordt gemaakt met een prioriteit boven de standaardwaarde. U kunt [de prioriteit wijzigen](#change-enrollment-restriction-priority).
 
 Bij BYOD-registraties wordt er een melding aan gebruikers weergegeven waarin staat wanneer zij hun limiet van geregistreerde apparaten hebben bereikt. Bijvoorbeeld in iOS:
 
@@ -131,11 +125,9 @@ Bij BYOD-registraties wordt er een melding aan gebruikers weergegeven waarin sta
 
 U kunt de instellingen voor een inschrijvingsbeperking wijzigen via de onderstaande stappen. Deze beperkingen hebben geen invloed op apparaten die al zijn ingeschreven. Apparaten die zijn geregistreerd bij de [Intune PC-agent](../fundamentals/manage-windows-pcs-with-microsoft-intune.md), kunnen niet met deze functie worden geblokkeerd.
 
-1. Meld u aan bij Azure Portal.
-2. Selecteer **Meer Services**, zoek naar **Intune** en kies vervolgens **Intune**.
-3. Selecteer **Apparaatinschrijving** > **Inschrijvingsbeperkingen** > kies de beperking die u wilt wijzigen > **Eigenschappen**.
-4. Kies **Bewerken** naast de instellingen die u wilt wijzigen.
-5. Breng op de pagina **Bewerken** de gewenste wijzigingen aan, ga door naar de pagina **Controleren en opslaan**, en kies vervolgens **Opslaan**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) > **Apparaten** > **Inschrijvingsbeperkingen** > kies de beperking die u wilt wijzigen **Eigenschappen**.
+2. Kies **Bewerken** naast de instellingen die u wilt wijzigen.
+3. Breng op de pagina **Bewerken** de gewenste wijzigingen aan, ga door naar de pagina **Controleren en opslaan**, en kies vervolgens **Opslaan**.
 
 
 ## <a name="blocking-personal-android-devices"></a>Persoonlijke Android-apparaten blokkeren

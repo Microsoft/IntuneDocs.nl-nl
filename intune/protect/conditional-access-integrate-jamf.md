@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59edb9956ee117e0dbdb9d90a4fd4ef313fd5c66
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390463"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946679"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Jamf Pro integreren met Intune in verband met nalevingsbeleid
 
@@ -90,13 +90,21 @@ Om Intune te verbinden met Jamf Pro:
    > [!IMPORTANT]
    > Voordat u deze pagina verlaat, moet u de waarde voor het clientgeheim kopiëren en bewaren voor later gebruik. U hebt deze waarde in latere procedures nodig. Deze waarde kunt u niet meer weergeven, alleen door de app opnieuw te registreren.
 
-6. Selecteer **API-machtigingen** onder **Beheren**. Selecteer de bestaande machtigingen en selecteer vervolgens **Machtigingen verwijderen** om deze machtigingen te verwijderen. De bestaande machtigingen moeten allemaal worden verwijderd omdat u een nieuwe machtiging toevoegt en de toepassing alleen werkt als deze ene vereiste machtiging is toegekend.
+6. Selecteer **API-machtigingen** onder **Beheren**. 
 
-7. Als u een nieuwe machtiging wilt toewijzen, selecteert u **Een machtiging toevoegen**. Selecteer op de pagina **API-machtigingen aanvragen** de optie **Intune** en selecteer vervolgens **Toepassingsmachtigingen**. Schakel alleen het selectievakje voor **update_device_attributes** in.
+7. Selecteer op de pagina API-machtigingen **Een machtiging toevoegen** om een nieuwe machtiging toe te voegen. Selecteer op de pagina **API-machtigingen aanvragen** de optie **Intune** en selecteer vervolgens **Toepassingsmachtigingen**. Schakel alleen het selectievakje voor **update_device_attributes** in.
 
-   Selecteer **Machtiging toevoegen** om deze configuratie op te slaan.
+8. Wacht enkele minuten zodat de nieuwe machtiging kan worden toegepast. Selecteer vervolgens **Beheertoestemming verlenen voor _\<de Tenant>_** . Verifieer uw account in het nieuwe venster en volg de aanwijzingen om toegang tot de toepassing te verlenen.  
 
-8. Selecteer op de pagina **API-machtigingen** **Beheerderstoestemming verlenen voor _\<uw tenant>_** en selecteer vervolgens **Ja**.  Nadat de app is geregistreerd, moeten de API-machtigingen er als volgt uitzien:
+9. Mogelijk moet u nog een paar minuten wachten zodat de beheerderstoestemming kan worden toegepast.
+
+10. Klik op de knop **Vernieuwen** bovenaan de pagina om de pagina te vernieuwen. Bevestig dat beheerderstoestemming is verleend voor de machtiging **update_device_attributes**. 
+
+11. Verwijder de beheerderstoestemming uit de machtiging **User.Read** door het menu **...** te selecteren en **Beheerderstoestemming intrekken** in te schakelen.
+
+12. U moet ook de machtiging **User.Read** verwijderen. Selecteer het menu **...** voor **User.Read** en selecteer **Machtiging verwijderen**. 
+
+8. Nadat de app is geregistreerd, mogen de API-machtigingen slechts één machtiging met de naam **update_device_attributes** bevatten. Dit moet er als volgt uitzien:
 
    ![Verlenen van machtigingen geslaagd](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

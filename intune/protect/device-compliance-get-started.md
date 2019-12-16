@@ -1,11 +1,11 @@
 ---
 title: Nalevingsbeleid voor apparaten in Microsoft Intune - Azure | Microsoft Docs
-description: Ga aan de slag met het gebruik van apparaatnalevingsbeleid, overzicht van status- en ernstniveaus, gebruik van Respijtperiode-status, werken met voorwaardelijke toegang, verwerking van apparaten zonder toegewezen beleid en de verschillen in naleving tussen de Azure-portal en de klassieke portal in Microsoft Intune
+description: Ga aan de slag met het gebruik van apparaatnalevingsbeleid, overzicht van status- en ernstniveaus, gebruik van respijtperiode-status, werken met voorwaardelijke toegang, en verwerking van apparaten zonder toegewezen beleid.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749182"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860292"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Regels instellen op apparaten om toegang tot resources in uw organisatie met behulp van Intune toe te staan
 
@@ -130,21 +130,6 @@ In de volgende tabel wordt beschreven hoe niet-compatibele instellingen worden b
 
 - Het apparaat wordt geblokkeerd als een beleid voor voorwaardelijke toegang van toepassing is voor de gebruiker.
 - Via de bedrijfsportal-app wordt de gebruiker op de hoogte gebracht van eventuele nalevingsproblemen.
-
-## <a name="azure-classic-portal-vs-azure-portal"></a>Vergelijking tussen klassieke Azure-portal en Azure Portal
-
-Het belangrijkste verschil wanneer u nalevingsbeleid voor apparaten gebruikt in de Azure Portal:
-
-- In Azure Portal wordt het nalevingsbeleid voor elk platform afzonderlijk gemaakt
-- In de klassieke Azure-portal werd één apparaatnalevingsbeleid voor alle ondersteunde platformen gemaakt
-
-<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
-
-- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-Nalevingsbeleid voor apparaten dat is gemaakt in de [klassieke portal](https://manage.microsoft.com) wordt niet weergegeven in de [Azure Portal](https://portal.azure.com). Dit nalevingsbeleid wordt echter nog steeds toegepast op gebruikers en beheerd via de klassieke portal.
-
-Als u de functies voor het nalevingsbeleid voor apparaten in Azure Portal wilt gebruiken, moet u een nieuw nalevingsbeleid voor apparaten maken in Azure Portal. Als u een nalevingsbeleid voor apparaten in Azure Portal toewijst aan een gebruiker aan wie ook een nalevingsbeleid voor apparaten uit de klassieke portal is toegewezen, heeft het nalevingsbeleid voor apparaten uit Azure Portal voorrang boven het beleid dat in de klassieke portal is gemaakt.
 
 ## <a name="next-steps"></a>Volgende stappen
 

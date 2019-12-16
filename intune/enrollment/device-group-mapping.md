@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ab720ffee3f468d3700558dfbde460ee8f712ea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505494"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955368"
 ---
 # <a name="categorize-devices-into-groups"></a>Apparaten categoriseren in groepen
 
@@ -45,11 +45,10 @@ U kunt alle apparaatcategorieën maken die u maar wilt. Bijvoorbeeld:
 ## <a name="how-to-configure-device-categories"></a>Apparaatcategorieën configureren
 
 ### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>Stap 1: Apparaatcategorieën maken op de blade Intune in Azure Portal
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaatinschrijving**.
-2. Kies **Apparaatcategorieën** op de blade **Apparaatinschrijving**.
-3. Kies **Maken** op de pagina **Apparaatcategorieën** om een nieuwe categorie toe te voegen.
-4. Voer op de blade **Apparaatcategorie maken** een **Naam** in voor de nieuwe categorie en een optionele **Beschrijving**.
-5. Selecteer **Maken** wanneer u klaar bent. De nieuwe categorie wordt weergegeven in de lijst met categorieën.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) kies **Apparaten** > **Apparaatcategorieën**.
+2. Kies **Maken** op de pagina **Apparaatcategorieën** om een nieuwe categorie toe te voegen.
+3. Voer op de blade **Apparaatcategorie maken** een **Naam** in voor de nieuwe categorie en een optionele **Beschrijving**.
+4. Selecteer **Maken** wanneer u klaar bent. De nieuwe categorie wordt weergegeven in de lijst met categorieën.
 
 Als u Azure Active Directory-beveiligingsgroepen (Azure AD) maakt in stap 2, gebruikt u de naam van de apparaatcategorie.
 
@@ -64,20 +63,16 @@ Wanneer u apparaatgroepen hebt geconfigureerd en gebruikers hun apparaat registr
 
 ### <a name="view-the-categories-of-devices-that-you-manage"></a>De apparaatcategorieën weergeven die u beheert
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaten**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) kies **Apparaten** > **Alle apparaten**.
 
-2. Klik onder **Beheren** op **Alle apparaten**.
+2. Bekijk de kolom **Apparaatcategorie** in de lijst met apparaten.
 
-3. Bekijk de kolom **Apparaatcategorie** in de lijst met apparaten.
-
-Als de kolom **Apparaatcategorie** niet wordt weergegeven, selecteert u **Kolommen**. Kies **Apparaatcategorie** uit de lijst en selecteer vervolgens **Toepassen**.
+Als de kolom **Apparaatcategorie** niet wordt weergegeven, selecteert u **Kolommen** > **Categorie** > **Toepassen**.
 
 ### <a name="change-the-category-of-a-device"></a>De categorie van een apparaat wijzigen
 
-1. Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de optie **Apparaten**.
-2. Op de blade **Apparaten** onder de sectie **Beheren** kiest u **Alle apparaten**.
-3. Kies het gewenste apparaat in de lijst met apparaten. Kies op de blade met apparaateigenschappen onder de sectie **Beheren** de optie **Eigenschappen**.
-4. Op de volgende blade kunt u de **apparaatcategorie** van het geselecteerde apparaat wijzigen in een van de categorienamen die u eerder hebt geconfigureerd.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) kies **Apparaten** > **Alle apparaten** > kies het gewenste apparaat > **Eigenschappen**.
+2. Op de volgende blade kunt u de **apparaatcategorie** van het geselecteerde apparaat wijzigen in een van de categorienamen die u eerder hebt geconfigureerd.
 
 ## <a name="after-you-configure-device-groups"></a>Na het configureren van apparaatgroepen
 

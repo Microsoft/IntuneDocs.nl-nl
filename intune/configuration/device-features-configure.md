@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f02188e6dd6cea6048731d119f8f307224810dd9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: d887c7bc3c7e9ea8b6719993b5ba4909e9c18ea8
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059950"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992938"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Instellingen van apparaatfuncties voor iOS of macOS toevoegen in Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune bevat veel functies en instellingen waarmee beheerders iOS en macOS-apparaten kunnen beheren. Beheerders kunnen bijvoorbeeld het volgende:
 
@@ -113,7 +111,7 @@ Van toepassing op:
 
 ## <a name="login-items"></a>Aanmeldingsitems
 
-Met deze functie kunt u kiezen welke apps, aangepaste apps, bestanden en mappen worden geopend wanneer gebruikers zich aanmelden bij de apparaten. 
+Met deze functie kunt u kiezen welke apps, aangepaste apps, bestanden en mappen worden geopend wanneer gebruikers zich aanmelden bij de apparaten.
 
 Zie [Aanmeldingsitems op macOS](macos-device-features-settings.md#login-items) voor een lijst met instellingen die u kunt configureren in Intune.
 
@@ -153,22 +151,29 @@ Van toepassing op:
 
 Met deze instellingen configureert u een app-extensie die eenmalige aanmelding (SSO) voor uw iOS-, iPadOS- en macOS-apparaten mogelijk maakt. De meeste LOB-apps (Line-Of-Business) vereisen een zekere mate van beveiligde gebruikersverificatie. In veel gevallen moeten gebruikers bij de verificatie herhaaldelijk dezelfde referenties invoeren. Met SSO hebben gebruikers toegang tot apps en websites nadat ze hun referenties eenmaal hebben ingevoerd. Nadat ze zich hebben aangemeld, hebben gebruikers automatisch toegang tot apps en websites, of kunnen ze Face ID, Touch ID of Apple-wachtwoordcode gebruiken om toegang te krijgen.
 
-Gebruik deze instellingen in Intune voor het configureren van de ingebouwde Kerberos-extensie van Apple of een SSO-app-extensie die is gemaakt door uw organisatie. Met de SSO-app-extensie wordt de verificatie voor uw gebruikers afgehandeld. Met deze instellingen configureert u SSO-app-extensies voor referentietypen, die zijn ontworpen voor verificatiestromen met vraag en antwoord. U kunt kiezen tussen een Kerberos-referentie-extensie van Apple en een algemene referentie-extensie.
+Gebruik deze instellingen in Intune voor het configureren van een SSO-app-extensie die is gemaakt door uw organisatie, id-provider of Apple. Met de SSO-app-extensie wordt de verificatie voor uw gebruikers afgehandeld. Met deze instellingen worden het omleidingstype en de SSO-app-extensies voor het referentietype geconfigureerd.
+
+- Het omleidingstype is ontworpen voor moderne verificatieprotocollen, zoals OAuth en SAML2.
+- Het referentietype is ontworpen voor verificatiestromen met vraag en antwoord. U kunt kiezen tussen een Kerberos-referentie-extensie van Apple en een algemene referentie-extensie.
 
 Zie [SSO-app-extensie voor iOS](ios-device-features-settings.md#single-sign-on-app-extension) en [SSO-app-extensie voor macOS](macos-device-features-settings.md#single-sign-on-app-extension) voor een lijst met instellingen die u kunt configureren in Intune.
 
-Bekijk [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) op de website van Apple voor meer informatie over het ontwikkelen van een SSO-app-extensie.
+Bekijk [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) op de website van Apple voor meer informatie over het ontwikkelen van een SSO-app-extensie. Als u de beschrijving van Apple over de functie wilt lezen, gaat u naar [Instellingen voor de payload 'Extensies eenmalige aanmelding'](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web). 
 
 > [!NOTE]
 > De functie **App-extensie voor eenmalige aanmelding** is niet hetzelfde als de functie **Eenmalige aanmelding**:
 >
-> - De instellingen van **App-extensie voor eenmalige aanmelding** zijn van toepassing op iPadOS 13.0 (en hoger) en iOS 13.0 (en hoger). De instellingen van **Eenmalige aanmelding** zijn van toepassing op iPadOS 13.0 (en hoger) en iOS 7.0 en hoger.
-> - Bij een **app-extensie voor eenmalige aanmelding** wordt de verificatie afgehandeld met het besturingssysteem. Bij **eenmalige aanmelding** wordt de verificatie afgehandeld met een specifieke app.
-> - Wanneer u de **app-extensie voor eenmalige aanmelding** gebruikt, kunnen gebruikers zich op de achtergrond aanmelden bij apps en websites, of met Face ID, Touch ID of de pincode of wachtwoordcode van Apple. Wanneer u **Eenmalige-aanmelding** gebruikt, melden gebruikers zich aan bij apps en websites met een andere app.
+> - De instellingen van **App-extensie voor eenmalige aanmelding** zijn van toepassing op iPadOS 13.0 (en hoger), iOS 13.0 (en hoger) en macOS 10.15 (en hoger). De instellingen van **Eenmalige aanmelding** zijn van toepassing op iPadOS 13.0 (en hoger) en iOS 7.0 en hoger.
 >
->    De **app-extensie voor eenmalige aanmelding** maakt gebruik van het Apple-besturingssysteem voor de verificatie. Dit biedt wellicht een betere ervaring voor de eindgebruiker.
+> - Met de **app-extensie voor eenmalige aanmelding** kunt u extensies definiëren voor gebruik door id-providers of organisaties om een naadloze zakelijke aanmeldingservaring te bieden. In de instellingen voor **Eenmalige aanmelding** worden Kerberos-accountgegevens gedefinieerd voor toegang van gebruikers tot servers of apps.
 >
-> - Vanuit het oogpunt van ontwikkeling is een **app-extensie voor eenmalige aanmelding** weer beter, omdat u dan elk type referenties voor eenmalige aanmelding kunt gebruiken voor de verificatie. Bij **Eenmalige aanmelding** kunt u alleen gebruikmaken van Kerberos-verificatie.  
+> - De **app-extensie voor eenmalige aanmelding** maakt gebruik van het Apple-besturingssysteem voor de verificatie. Zo kan dus een eindgebruikerservaring worden geboden die beter is dan die van **eenmalige aanmelding**.
+>
+> - Vanuit het oogpunt van ontwikkeling is een **app-extensie voor eenmalige aanmelding** weer beter, omdat u dan elk type referenties voor omleiding van eenmalige aanmelding of eenmalige aanmelding voor verificatie kunt gebruiken. Bij **Eenmalige aanmelding** kunt u alleen gebruikmaken van Kerberos-verificatie.
+>
+> - De Kerberos-**app-extensie voor eenmalige aanmelding** is ontwikkeld door Apple en is ingebouwd in de iOS 13.0+- en macOS 10.15+-platforms. De ingebouwde Kerberos-uitbreiding kan worden gebruikt om gebruikers te registreren in systeemeigen apps en websites die ondersteuning bieden voor Kerberos-verificatie. **Eenmalige aanmelding** is geen Apple-implementatie van Kerberos.
+>
+> - Met de ingebouwde Kerberos-**app-extensie voor eenmalige aanmelding** worden Kerberos-vragen voor webpagina's en apps op dezelfde manier behandeld als **eenmalige aanmelding**. De ingebouwde Kerberos-extensie ondersteunt echter wachtwoordwijzigingen en is geschikter voor bedrijfsnetwerken. Als moet worden gekozen tussen de Kerberos-**app-extensie voor eenmalige aanmelding** en **eenmalige aanmelding**, wordt aanbevolen de extensie te gebruiken vanwege verbeterde prestaties en mogelijkheden.
 
 Van toepassing op:
 

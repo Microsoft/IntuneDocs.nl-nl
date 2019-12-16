@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188269"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860227"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Een nalevingsbeleid maken in Microsoft Intune
 
@@ -100,7 +100,7 @@ Neem het volgende in acht voor het gebruik van het nalevingsbeleid voor apparate
 
      U gebruikt bijvoorbeeld de functie Locaties en u voegt een locatie toe aan een nalevingsbeleid. De standaardactie bij niet-naleving wordt uitgevoerd als u ten minste één locatie hebt geselecteerd. Als het apparaat niet is verbonden met de geselecteerde locaties, wordt het apparaat direct gezien als 'niet compatibel'. U kunt gebruikers bijvoorbeeld een respijtperiode van één dag bieden.
 
-   - **Bereik (tags)** : Met bereiktags kunt u eenvoudig beleid toewijzen aan en filteren voor specifieke groepen, zoals Verkoop, HR, Alle NL-AMST-werknemers, enzovoort. Nadat u de instellingen hebt toegevoegd, kunt u ook een bereiktag toevoegen aan het nalevingsbeleid. [Bereiktags gebruiken om beleid te filteren](../fundamentals/scope-tags.md) is een goede resource.
+   - **Bereik (tags)** : Bereiktags zijn een uitstekende manier om beleidsregels te filteren voor specifieke groepen, zoals `US-NC IT Team` of `JohnGlenn_ITDepartment`. Nadat u de instellingen hebt toegevoegd, kunt u ook een bereiktag toevoegen aan het nalevingsbeleid. [Bereiktags gebruiken om beleid te filteren](../fundamentals/scope-tags.md) is een goede resource.
 
 4. Wanneer u klaar bent, selecteert u **OK** > **Maken** om uw wijzigingen op te slaan. Het beleid wordt gemaakt en in de lijst weergegeven. Vervolgens wijst u het beleid toe aan uw groepen.
 

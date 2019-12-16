@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713504"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832729"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Problemen bij de apparaatinschrijving in Microsoft Intune oplossen
 
@@ -374,7 +374,7 @@ Dit probleem kan zich voordoen als:
 4. Laat de gebruiker de inschrijvingsprocedure opnieuw starten.
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>Bepalen of er iets mis is met het VPP-token
-1. Ga naar **Intune** > **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > tokennaam > **Profielen** > profielnaam > **Beheren** > **Eigenschappen**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaten** > **iOS** > **iOS-inschrijving** > **Tokens voor het inschrijvingsprogramma** > tokennaam > **Profielen** > profielnaam > **Beheren** > **Eigenschappen**.
 2. Controleer de eigenschappen om na te gaan of een van de volgende fouten optreden:
     - Dit token is verlopen.
     - Dit token is niet opgenomen in de bedrijfsportallicenties.
@@ -384,13 +384,13 @@ Dit probleem kan zich voordoen als:
 3. Los de problemen voor het token op.
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>Vaststellen welke apparaten zijn geblokkeerd door het VPP-token
-1. Ga naar **Intune** > **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor het inschrijvingsprogramma** > naam van token > **Apparaten**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaten** > **iOS** > **iOS-inschrijving** > **Tokens voor inschrijvingsprogramma** > tokennaam > **Apparaten**.
 2. Filter de kolom **Profielstatus** op **Geblokkeerd**.
 3. Noteer de serienummers van alle apparaten die zijn **geblokkeerd**.
 
 #### <a name="remotely-wipe-the-blocked-devices"></a>De geblokkeerde apparaten op afstand wissen
 Nadat u de problemen met het VPP-token hebt opgelost, moet u de geblokkeerde apparaten wissen.
-1. Ga naar **Intune** > **Apparaten** > **Alle apparaten** > **Kolommen** > **Serienummer** > **Toepassen**. 
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaten** > **Alle apparaten** > **Kolommen** > **Serienummer** > **Toepassen**. 
 2. Kies in de lijst **Alle apparaten** elk apparaat dat is geblokkeerd en kies vervolgens **Wissen** > **Ja**.
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Laat de gebruikers de inschrijvingsprocedure opnieuw starten
@@ -414,8 +414,8 @@ Nadat u de geblokkeerde apparaten hebt gewist, kunt u de gebruikers de inschrijv
 - Als uw organisatie inschrijvingsbeperkingen heeft ingeschakeld die persoonlijke macOS-apparaten blokkeert, moet u handmatig [Voeg het serienummer van het persoonlijke apparaat](corporate-identifiers-add.md#manually-enter-corporate-identifiers) aan Intune toevoegen.  
 - Als het apparaat nog steeds aan een andere gebruiker in Intune is toegewezen, heeft de vorige eigenaar de bedrijfsportal-app niet gebruikt voor het verwijderen of herstellen ervan. Het verouderde apparaat uit Intune verwijderen:  
 
-    1. Ga naar [Intune in Azure Portal](https://portal.manage.microsoft.com) en meld u aan met uw beheerdersreferenties.
-    2. Ga naar Intune > **Apparaten** > **Alle apparaten**.  
+    1. Meld u met uw beheerdersreferenties aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+    2. Kies **Apparaten** > **Alle apparaten**.  
     3. Zoek het apparaat op met het inschrijvingsprobleem. Zoek op apparaatnaam of MAC/HW-adres om uw resultaten te verfijnen.
     4. Selecteer het apparaat > **Verwijderen**. Verwijder alle andere vermeldingen die aan het apparaat zijn gekoppeld.  
 

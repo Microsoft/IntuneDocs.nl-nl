@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/22/2019
+ms.date: 12/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ad5c26770537ce6a285989f8ca3804277616419
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: 77cf4745262346ec2f8bfb5d4d7e67e1ee5c5e07
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540791"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000377"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -54,12 +54,42 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [belangri
 -->  
 
 <!-- ########################## -->
+## <a name="week-of-december-9-2019"></a>Week van 9 december 2019
+
+#### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>Migreren naar Microsoft Edge voor beheerdebrowserscenario's<!-- 5173762 -->
+
+Met het naderen van de buitengebruikstelling van de Intune Managed Browser zijn wijzigingen aangebracht in het beveiligingsbeleid voor apps om de benodigde stappen voor het migreren van uw gebruikers naar Edge te vereenvoudigen. De opties voor de instelling **Overdracht van webinhoud met andere apps beperken** van het beveiligingsbeleid voor apps zijn gewijzigd naar de volgende opties:
+
+- Elke app
+- Intune Managed Browser
+- Microsoft Edge
+- Niet-beheerde browser 
+
+Wanneer u **Microsoft Edge** selecteert, ontvangen uw eindgebruikers een melding over voorwaardelijke toegang, waarin wordt aangegeven dat Microsoft Edge vereist is voor beheerdebrowserscenario's. Ze worden gevraagd om Microsoft Edge te downloaden en zich aan te melden met hun AAD-account, als ze dit nog niet hebben gedaan.  Dit is kan worden vergeleken met de instelling van de app-configuratie-instellingen `com.microsoft.intune.useEdge` op **waar** voor uw MAM-apps. Voor bestaand beveiligingsbeleid voor apps dat gebruikmaakte van de **door beleid beheerde browsers** wordt nu **Intune Managed Browser** geselecteerd. Het gedrag zal niet wijzigen. Dit betekent dat uw gebruikers via berichten zal worden gevraagd Microsoft Edge te gebruiken als u de app-configuratie-instelling **useEdge** hebt ingesteld op **Waar**. We stimuleren alle klanten aan om hun app-beveiligingsbeleid bij te werken met **Overdracht van webinhoud met andere apps beperken** om ervoor te zorgen dat gebruikers de juiste richtlijnen zien voor de overgang naar Microsoft Edge, ongeacht vanuit welke app koppelingen worden gestart. 
+
+<!-- ########################## -->
+## <a name="week-of-december-2-2019"></a>Week van 2 december 2019
+
+#### <a name="new-microsoft-endpoint-configuration-manager-co-management-licensing--5027281--"></a>Nieuw co-beheer met Microsoft Endpoint Configuration Manager-licentiëring<!--5027281-->
+Er is nu een nieuwe licentie beschikbaar waarmee Configuration Manager-klanten met Software Assurance toegang hebben tot Intune-co-beheer voor Windows 10-pc's zonder dat ze een extra Intune-licentie voor co-beheer hoeven aan te schaffen. Klanten hoeven geen afzonderlijke Intune/EMS-licenties meer toe te wijzen aan hun eindgebruikers voor het co-beheer van Windows 10.
+- Apparaten die worden beheerd door Configuration Manager en die zijn ingeschreven bij co-beheer hebben bijna dezelfde rechten als zelfstandige door Intune beheerde pc's. Na het opnieuw instellen kunnen ze echter niet opnieuw worden ingericht met behulp van Autopilot.
+- Voor Windows 10-apparaten die via een andere methode zijn ingeschreven bij Intune zijn volledige Intune-licenties vereist.
+- Voor apparaten op andere platforms zijn nog steeds volledige Intune-licenties vereist.
+
+Zie [Licentievoorwaarden](https://www.microsoft.com/en-us/Licensing/product-licensing/products) voor meer informatie.
+
+
+<!-- ########################## -->
 ## <a name="week-of-november-18-2019-1911-service-release"></a>Week van 18 november 2019 (1911 servicerelease)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Appbeheer
 
 #### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>S/MIME-ondersteuning met Microsoft Outlook voor iOS<!-- 2669398 idready -->
+
+   > [!NOTE]
+   > Deze functie is vertraagd, maar wordt binnenkort vrijgegeven.
+
 Intune biedt ondersteuning voor het leveren van S/MIME-ondertekening- en versleutelingscertificaten die kunnen worden gebruikt met Outlook voor iOS op iOS-apparaten. Zie [S/MIME configureren voor Outlook voor iOS](~/apps/app-configuration-policies-outlook-smime.md) voor meer informatie.
 
 #### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>Update van gebruikersinterface bij selectief wissen van app-gegevens<!-- 4102028 -->

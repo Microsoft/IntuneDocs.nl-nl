@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0718fae09228b9359b073901f3a344a09a6176e7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3fb5818609763753878fec7a84fd8c19eb154f88
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509245"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955436"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Voorwaarden voor gebruikerstoegang
 
@@ -46,31 +46,30 @@ Als u wilt weten welke methode voor u het beste is, bekijkt u de [blog De juiste
 ## <a name="create-terms-and-conditions"></a>Voorwaarden maken
 Voer deze stappen uit om voorwaarden te maken. De weergavenaam en beschrijving zijn bedoeld voor beheerders. De eigenschappen van de voorwaarden worden in de bedrijfsportal weergegeven aan gebruikers.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Kies in het deelvenster **Intune** de optie **Apparaatinschrijving** > **Algemene voorwaarden**.
-3. Kies **Maken**.
-4. Geef op de pagina **Basisinformatie** de volgende gegevens op:
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), kies **Tenantbeheer** > **Voorwaarden**.
+2. Kies **Maken**.
+3. Geef op de pagina **Basisinformatie** de volgende gegevens op:
 
    - **Naam**: De naam voor de voorwaarden in de Azure-portal. Gebruikers krijgen deze naam niet te zien.
    - **Beschrijving**: Optionele informatie aan de hand waarvan u deze set voorwaarden in de Azure-portal kunt herkennen.
 
     ![Schermafbeelding van de Azure-portal met de pagina Basisinformatie voor voorwaarden](./media/terms-and-conditions-create/terms-basics-page.png)
 
-5. Kies **Volgende** om naar de pagina **Voorwaarden** te gaan en geef de volgende gegevens op:
+4. Kies **Volgende** om naar de pagina **Voorwaarden** te gaan en geef de volgende gegevens op:
 
    - **Titel**: De naam voor de voorwaarden die in de bedrijfsportal worden weergegeven boven de **Samenvatting**.
    - **Voorwaarden**: De voorwaarden die gebruikers te zien krijgen en die ze moeten accepteren of weigeren.
    - **Overzicht van voorwaarden**: Tekst waarin wordt uitgelegd wat het betekent als gebruikers de voorwaarden accepteren. Bijvoorbeeld: "Door uw apparaat te registreren, stemt u in met de gebruiksvoorwaarden zoals uiteengezet door Contoso. Lees de voorwaarden door voordat u verdergaat."
 
-6. Kies **Volgende** om naar de pagina **Bereiktags** te gaan.
+5. Kies **Volgende** om naar de pagina **Bereiktags** te gaan.
 
-7. Kies **Bereiktags selecteren**, selecteer de bereiktags die u aan deze voorwaarden wilt toewijzen en kies vervolgens **Selecteren**. 
+6. Kies **Bereiktags selecteren**, selecteer de bereiktags die u aan deze voorwaarden wilt toewijzen en kies vervolgens **Selecteren**. 
 
-8. Kies **Volgende** om naar de pagina **Toewijzingen** te gaan en kies een van de volgende opties voor **Toewijzen aan**:
+7. Kies **Volgende** om naar de pagina **Toewijzingen** te gaan en kies een van de volgende opties voor **Toewijzen aan**:
     - **Alle gebruikers**: Kies deze optie als u deze voorwaarden wilt toewijzen aan alle gebruikers.
     - **Groepen selecteren**: Kies deze optie als u deze voorwaarden wilt toewijzen aan iedereen in de groepen die u opgeeft door **Groepen selecteren die moeten worden opgenomen** te kiezen.
 
-9. Kies **Volgende** > **Maken**.
+8. Kies **Volgende** > **Maken**.
 
 ## <a name="see-how-terms-are-displayed-to-your-users"></a>Zie hoe voorwaarden worden weergegeven voor uw gebruikers
 In het volgende voorbeeld worden de **titel** en **samenvatting van de voorwaarden** in de beheerconsole en de bedrijfsportal weergegeven.
@@ -84,8 +83,7 @@ In het volgende voorbeeld worden de voorwaarden in de beheerconsole en de bedrij
 
 ## <a name="monitor-terms-and-conditions"></a>Voorwaarden controleren
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 
-1. Kies in het deelvenster Intune **Apparaatinschrijving** > **Algemene voorwaarden**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), kies **Tenantbeheer** > **Voorwaarden**.
 2. Selecteer in de lijst met voorwaarden de voorwaarden die u wilt weergeven en selecteer vervolgens **Acceptatierapporten**.
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Werken met meerdere versies van voorwaarden
@@ -95,12 +93,10 @@ U kunt de voorwaarden bewerken en de versies van de voorwaarden beheren. Elke ke
 
 Behoud het huidige versienummer als u bijvoorbeeld typfouten herstelt of de opmaak wijzigt.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), kies **Tenantbeheer** > **Voorwaarden** > kies de voorwaarden die u wilt wijzigen > **Eigenschappen**.
 
-2. Kies in het Intune-deelvenster de optie **Apparaatinschrijving** > **Voorwaarden** > selecteer de voorwaarden die u wilt aanpassen > **Eigenschappen**.
+2. Selecteer in het deelvenster **Eigenschappen** de optie **Voorwaarden** en pas vervolgens **Titel**, **Overzicht van voorwaarden** en **Voorwaarden** naar wens aan. Als gebruikers de nieuwe voorwaarden naar aanleiding van de aangebrachte wijzigingen opnieuw moeten accepteren, selecteert u **Gebruikers moeten de voorwaarden opnieuw accepteren en het versienummer bijwerken naar**
 
-4. Selecteer in het deelvenster **Eigenschappen** de optie **Voorwaarden** en pas vervolgens **Titel**, **Overzicht van voorwaarden** en **Voorwaarden** naar wens aan. Als gebruikers de nieuwe voorwaarden naar aanleiding van de aangebrachte wijzigingen opnieuw moeten accepteren, selecteert u **Gebruikers moeten de voorwaarden opnieuw accepteren en het versienummer bijwerken naar**
-
-4. Kies **OK** > **Opslaan**.
+3. Kies **OK** > **Opslaan**.
 
 Gebruikers hoeven de bijgewerkte voorwaarden slechts één keer te accepteren. Gebruikers met meerdere apparaten hoeven de voorwaarden niet voor elk apparaat te accepteren.

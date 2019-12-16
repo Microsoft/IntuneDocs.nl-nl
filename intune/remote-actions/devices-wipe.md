@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712198"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991777"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Apparaten verwijderen via wissen of buiten gebruik stellen, of de registratie van het apparaat handmatig ongedaan maken
 
@@ -47,6 +47,8 @@ Met de actie **Wissen** herstelt u de fabrieksinstellingen van het apparaat. De 
 
 De optie **Inschrijvingsstatus en gebruikersaccount behouden** is alleen beschikbaar voor Windows 10 versie 1709 en hoger.
 
+Met de optie **Beveiligd wissen uitvoeren** kunt u ervoor zorgen dat de wisactie niet kan worden omzeild door het apparaat uit te schakelen. Als de opdracht Beveiligd wissen is gegeven, wordt het apparaat gereset totdat de opdracht is uitgevoerd. In sommige configuraties kan deze actie ervoor zorgen dat het apparaat niet opnieuw kan worden opgestart.
+
 MDM-beleidsregels worden toegepast wanneer het apparaat de volgende keer verbinding maakt met Intune.
 
 Wissen is nuttig wanneer u een apparaat opnieuw wilt instellen voordat u het aan een nieuwe gebruiker geeft of wanneer een apparaat is verloren of gestolen. Wees voorzichtig bij het selecteren van **Wissen**. De gegevens op het apparaat kunnen niet worden hersteld.
@@ -57,7 +59,7 @@ Wissen is nuttig wanneer u een apparaat opnieuw wilt instellen voordat u het aan
 3. Selecteer **Apparaten** > **Alle apparaten**.
 4. Selecteer de naam van het apparaat dat u wilt wissen.
 5. Selecteer **Wissen** in het deelvenster waarin de naam van het apparaat wordt weergegeven.
-6. Voor Windows 10 versie 1709 of hoger is ook de optie **Inschrijvingsstatus en gebruikersaccount behouden** aanwezig. 
+6. Voor Windows 10 versie 1709 of hoger is ook de optie **Apparaat wissen maar inschrijvingsstatus en bijbehorend gebruikersaccount behouden** beschikbaar. 
     
     |Behouden tijdens wissen |Niet behouden|
     | -------------|------------|

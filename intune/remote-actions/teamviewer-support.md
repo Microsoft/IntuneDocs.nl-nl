@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d03859d5775193e6bbc482c06b28942a1a5bce2f
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 0372c9629e111c460b095d8c0236305866da42e3
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712144"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907199"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer gebruiken voor het extern beheren van Intune-apparaten
 
@@ -48,7 +48,7 @@ Door TeamViewer te gebruiken, kunt u met de TeamViewer voor Intune-connector Tea
 Als u hulp op afstand voor apparaten wilt bieden, configureert u de Intune TeamViewer-connector door de volgende stappen uit te voeren:
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecteer **Apparaten** > **TeamViewer-connector**.
+2. Selecteer **Tenantbeheer** > **Connectors en tokens** > **TeamViewer-connector**.
 3. Selecteer **Verbinding maken** en accepteer de gebruiksrechtovereenkomst.
 4. Selecteer **Aanmelden bij TeamViewer voor goedkeuring**.
 5. Er wordt een webpagina van de TeamViewer-site geopend. Voer de referenties van uw TeamViewer-licentie in en klik vervolgens op **Aanmelden**.
@@ -59,7 +59,7 @@ Nadat de connector is geconfigureerd, kunt u een apparaat op afstand beheren. Vo
 
 1. In het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apparaten** en selecteer vervolgens **Alle apparaten**.
-3. Selecteer in de lijst het apparaat dat u extern wilt beheren. Selecteer in de apparaateigenschappen **Nieuwe sessie van hulp op afstand**.
+3. Selecteer in de lijst het apparaat dat u extern wilt beheren > **...**  > **Nieuwe sessie van hulp op afstand**.
 4. Nadat er een verbinding tussen Intune en de TeamViewer-service tot stand is gebracht, worden er enkele gegevens over het apparaat weergegeven. Kies **Verbinden** om de externe sessie te starten.
 
 ![TeamViewer gebruiken om een Android-apparaat extern te beheren - voorbeeld](./media/teamviewer-support/android-teamviewer.png)

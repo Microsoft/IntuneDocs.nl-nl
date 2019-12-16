@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5e52d1967ff6f5cf97334c099bc2b5b854ae87c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502696"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000394"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>US Government-eindpunten voor Microsoft Intune
 
@@ -57,3 +57,25 @@ De volgende tabel bevat de poorten en services waartoe de Intune-client toegang 
 - AAD Graph: https:\//directory.microsoftazure.us en https:\//graph.microsoftazure.us
 - MS Graph: https:\//graph.microsoft.us
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
+
+## <a name="windows-push-notification-services"></a>Windows Push Notification Services
+Op apparaten die door Intune worden beheerd met behulp van Mobile Device Management (MDM) moet voor apparaatacties en andere directe activiteiten Windows Push Notification Services (WNS) worden gebruikt. Zie [Enterprise Firewall and Proxy Configurations to Support WNS Traffic](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config) (Bedrijfsfirewall en proxyconfiguraties ter ondersteuning van WNS-verkeer) voor meer informatie
+
+## <a name="apple-device-network-information"></a>Netwerkgegevens voor Apple-apparaten
+
+|**Gebruikt voor**|**Hostnaam (IP-adres/subnet)**|**Protocol**|**Poort**|
+|------------|-----------|------------|-----------|
+|Inhoud van Apple-servers ophalen en weergeven|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|HTTP|80|
+|Communicatie met APNS-servers|#-courier.push.apple.com<br># is een willekeurig getal van 0 tot en met 50.|TCP|5223 en 443|
+|Verschillende functies waaronder toegang tot internet, de iTunes Store, de macOS App Store, iCloud, berichten, enzovoort.|phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net|HTTP/HTTPS|80 of 443|
+
+Zie voor meer informatie:
+
+- [TCP- en UDP-poorten die door Apple software worden gebruikt](https://support.apple.com/HT202944)
+- [macOS, iOS en iTunes-server-hostverbindingen en achtergrondprocessen in iTunes](https://support.apple.com/HT201999)
+- [Als u geen Apple pushberichten ontvangt in de macOS- en iOS-clients](https://support.apple.com/HT203609)
+
+## <a name="next-steps"></a>Volgende stappen
+[Netwerkeindpunten voor Microsoft Intune](intune-endpoints.md)
+
+[Windows 10 auto-enrollment and device registration](../enrollment/windows-enroll.md#registration-and-enrollment-cnames) (Automatische inschrijving en apparaatregistratie in Windows 10)

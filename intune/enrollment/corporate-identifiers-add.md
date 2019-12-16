@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503299"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955470"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Apparaten identificeren als bedrijfseigendom
 
@@ -85,9 +85,7 @@ Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 
 ### <a name="upload-a-csv-list-of-corporate-identifiers"></a>Een CSV-lijst met bedrijfs id's uploaden
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en kies achtereenvolgens **Apparaatinschrijving** > **Bedrijfsapparaat-id's** > **Toevoegen** > **CSV-bestand uploaden**.
-
-   ![Werkruimte Zakelijke apparaat-id's met de knop Toevoegen gemarkeerd](./media/corporate-identifiers-add/add-corp-id.png)
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), kies **Apparaten** > **Apparaten inschrijven** > **Bedrijfsapparaat-id's** > **Toevoegen** > **CSV-bestand uploaden**.
 
 2. Op de blade **Id's toevoegen** geeft u het id-type op: **IMEI** of **Serienummer**.
 
@@ -97,7 +95,7 @@ Dit CSV-bestand ziet er in een teksteditor als volgt uit:
 
 ## <a name="manually-enter-corporate-identifiers"></a>Bedrijfs-id's handmatig invoeren
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en kies **Apparaatinschrijving** > **Bedrijfsapparaat-id's** > **Toevoegen** > **Handmatig invoeren**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), kies **Apparaten** > **Apparaten inschrijven** > **Bedrijfsapparaat-id's** > **Toevoegen** > **Handmatig invoeren**.
 
 2. Op de blade **Id's toevoegen** geeft u het id-type op: **IMEI** of **Serienummer**.
 
@@ -111,7 +109,7 @@ Geïmporteerde apparaten zijn niet noodzakelijkerwijs ingeschreven. Apparaten ku
 
 ## <a name="delete-corporate-identifiers"></a>Zakelijke id's verwijderen
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en kies **Apparaatinschrijving** > **Bedrijfsapparaat-id's**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), kies **Apparaten** > **Apparaten inschrijven** > **Bedrijfsapparaat-id's**.
 2. Selecteer de apparaat-id’s die u wilt verwijderen en kies vervolgens **Verwijderen**.
 3. Bevestig de verwijdering.
 
@@ -125,7 +123,7 @@ Zie [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/Spec
 De apparaateigenschappen tonen **Eigendom** voor de records van elk apparaat in Intune. Als beheerder kunt u apparaten als **Persoonlijk** of **Zakelijk** opgeven. Wanneer het eigendomstype van een apparaat wordt gewijzigd van Persoonlijk in Zakelijk, worden alle app-gegevens die eerder van het apparaat zijn verzameld, binnen zeven dagen verwijderd door Intune. Indien van toepassing, verwijdert Intune ook het bewaarde telefoonnummer. 
 
 **Ga als volgt te werk om het apparaateigendom te wijzigen:**
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), ga naar **Apparaten** en kies het apparaat.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) kies **Apparaten** > **Alle apparaten** > kies het apparaat.
 2. Kies **Eigenschappen**.
 3. Selecteer voor **Apparaateigendom** de optie **Persoonlijk** of **Zakelijk**.
 

@@ -16,16 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c9572f4accb1be232d4667d99b98beff90d81379
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564193"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000411"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>S/MIME configureren met Outlook voor iOS
 
 Secure/Multipurpose Internet Mail Extensions (S/MIME) biedt een extra beveiligingslaag voor e-mail die wordt verzonden naar en vanaf een EAS-account (Exchange ActiveSync). [Microsoft Outlook](https://aka.ms/omsmime) kan gebruikmaken van S/MIME om gebruikers toe te staan zowel uitgaande berichten als bijlagen te versleutelen, zodat alleen de bedoelde ontvanger berichtinhoud kan lezen en openen wanneer deze een Office 365-account gebruikt. Gebruikers kunnen een bericht ook digitaal ondertekenen, zodat de ontvangers de identiteit van de afzender kunnen verifiëren en bevestigen dat er niet met het bericht is geknoeid. Van deze mogelijkheid kan gebruik worden gemaakt door middel van certificaten. Zie [Understanding S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN) (Informatie over S/MIME) voor meer informatie.
+
+> [!NOTE]
+> Deze functie is vertraagd, maar wordt binnenkort vrijgegeven.
 
 > [!NOTE]
 > In dit onderwerp wordt beschreven hoe u vertrouwde basiscertificaten kunt implementeren via [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). Microsoft Endpoint Manager is een zelfstandig, geïntegreerd eindpuntbeheerplatform voor het beheren van al uw eindpunten. In dit Microsoft Endpoint Manager-beheercentrum is ConfigMgr en Microsoft Intune geïntegreerd.
@@ -78,9 +81,6 @@ Het deelvenster **Configuratiebeleid toevoegen** wordt weergegeven.
 6. Klik op **Configuratie-instellingen** om configuratie-instellingen toe te voegen. 
     - Selecteer **Configuratieontwerper gebruiken** naast **Indeling van de configuratie-instellingen** en accepteer de standaardinstellingen. Zie [Configuratie-instellingen voor Microsoft Outlook](~/apps/app-configuration-policies-outlook.md) voor meer informatie.
 7. Klik op **S/MIME** om de **S/MIME-instellingen voor Outlook** weer te geven.
-
-    ![Schermafbeelding van S/MIME-instellingen voor Outlook voor iOS](./media/app-configuration-policies-outlook-smime/app-configuration-policies-outlook-smime-01.png)
-
 8. Stel **S/MIME inschakelen** in op **Ja**.
 9. Stel **S/MIME-certificaten implementeren via Intune** in op **ja**.
 10. Kies onder **Handtekeningcertificaten**, naast **Type van het certificaatprofiel**, een van de volgende opties:

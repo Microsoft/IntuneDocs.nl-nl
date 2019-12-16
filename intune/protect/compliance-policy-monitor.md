@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/14/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844e93f3a063ae43342d2967cbd544f3ec425c21
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410150"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992982"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
@@ -98,8 +98,7 @@ Selecteer een status in het diagram **Nalevingstatus apparaten**. Selecteer bijv
 
 ![De status Niet compatibel kiezen](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
-Met deze actie wordt het venster **Apparaatnaleving** geopend en worden apparaten weergegeven in de grafiek **Apparaatstatus**. De grafiek toont meer informatie over de apparaten met die status, met inbegrip van besturingssysteemplatform en datum van laatste check-in en meer. 
-
+Met deze actie wordt het venster **Apparaatnaleving** geopend en worden apparaten weergegeven in de grafiek **Apparaatstatus**. De grafiek toont meer informatie over de apparaten met die status, met inbegrip van besturingssysteemplatform en datum van laatste check-in en meer.
 ![In de dashboardafbeelding ziet u meer informatie over het apparaat met die specifieke status](./media/compliance-policy-monitor/drill-down-details.png)
 
 Als u alle apparaten wilt zien van een specifieke gebruiker, kunt u het diagramrapport ook filteren door het e-mailadres van de gebruiker in te typen.
@@ -132,7 +131,7 @@ Wanneer u de tegel selecteert, ziet u alle apparaten zonder nalevingsbeleid. U z
 
 - Bij de optie **Apparaten markeren waaraan geen nalevingsbeleid is toegewezen als** beveiligingsinstelling is het belangrijk om apparaten zonder nalevingsbeleid te identificeren. Vervolgens kunt u hier ten minste één nalevingsbeleid aan toewijzen.
 
-  De beveiligingsinstelling kan worden geconfigureerd in de Intune-portal. Ga naar **Apparaten** > **Nalevingsbeleid** > **Instellingen van het nalevingsbeleid**. Stel vervolgens de optie **Apparaten markeren waaraan geen nalevingsbeleid is toegewezen** in op **Compatibel** of **Niet compatibel**. 
+  De beveiligingsinstelling kan worden geconfigureerd in de Intune-portal. Ga naar **Apparaten** > **Nalevingsbeleid** > **Instellingen van het nalevingsbeleid**. Stel vervolgens de optie **Apparaten markeren waaraan geen nalevingsbeleid is toegewezen** in op **Compatibel** of **Niet compatibel**.
 
   Lees meer informatie over deze [beveiligingsverbetering in de Intune-service](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
 
@@ -140,7 +139,7 @@ Wanneer u de tegel selecteert, ziet u alle apparaten zonder nalevingsbeleid. U z
 
 ### <a name="per-policy-device-compliance"></a>Apparaatnaleving per beleid
 
-In de grafiek **Beleidsnaleving** ziet u het beleid en het aantal apparaten dat compatibel en niet-compatibel is. 
+In de grafiek **Beleidsnaleving** ziet u het beleid en het aantal apparaten dat compatibel en niet-compatibel is.
 
 ![Bekijk een overzicht van het beleid en het aantal compatibele apparaten ten opzichte van het aantal niet-compatibele apparaten voor dat beleid](./media/compliance-policy-monitor/idc-8.png)
 
@@ -149,11 +148,6 @@ In de grafiek **Beleidsnaleving** ziet u het beleid en het aantal apparaten dat 
 In de grafiek **Naleving van instelling** worden alle instellingen van het nalevingsbeleid voor de apparaten van alle beleidsregels voor naleving, de platforms waarop de beleidsinstellingen zijn toegepast en het aantal niet-compatibele apparaten weergegeven.
 
 ![Een overzicht bekijken van alle instellingen in de verschillende beleidsregels](./media/compliance-policy-monitor/idc-10.png)
-
-> [!NOTE]
-> Een beleid kan worden toegewezen aan een apparaat en een gebruiker op hetzelfde apparaat. In sommige gevallen kan een apparaat worden gesynchroniseerd voordat de gebruiker zich aanmeldt, bijvoorbeeld wanneer het apparaat opnieuw wordt opgestart. Door de nalevingsfunctie kan deze gebruiker worden geëvalueerd en het apparaat als niet-compatibel worden weergegeven. Dit gedrag kan ook het systeemaccount als een niet-compatibele gebruiker weergeven.
->
-> Dit is een bekend probleem met Windows 10-apparaten voor meerdere gebruikers. Eventuele wijzigingen of updates van dit gedrag worden aangekondigd in [In ontwikkeling](../fundamentals/in-development.md) en/of [Wat is er nieuw](../fundamentals/whats-new.md).
 
 ## <a name="view-compliance-reports"></a>Nalevingsrapporten weergeven
 
@@ -183,14 +177,15 @@ Deze functie is opgenomen in de statusrapportage voor het apparaat:
 2. Selecteer een beleid > **Overzicht**. In deze weergave bevat de beleidstoewijzing de volgende statussen:
 
     - **Geslaagd**: Het beleid is toegepast
-    - **Fout**: Het beleid is niet toegepast. Het bericht wordt doorgaans weergegeven met een foutcode en een link naar een uitleg. 
+    - **Fout**: Het beleid is niet toegepast. Het bericht wordt doorgaans weergegeven met een foutcode en een link naar een uitleg.
     - **Conflict**: Twee instellingen worden toegepast op hetzelfde apparaat en Intune kan het conflict niet oplossen. Dit moet door een beheerder worden bekeken.
-    - **In behandeling**: Het apparaat is nog niet ingecheckt bij Intune om het beleid te ontvangen. 
-    - **Niet van toepassing**: Het apparaat kan het beleid niet ontvangen. Het beleid werkt bijvoorbeeld een instelling bij die specifiek voor iOS 11.1 is, maar het apparaat gebruikt iOS 10. 
+    - **In behandeling**: Het apparaat is nog niet ingecheckt bij Intune om het beleid te ontvangen.
+    - **Niet van toepassing**: Het apparaat kan het beleid niet ontvangen. Het beleid werkt bijvoorbeeld een instelling bij die specifiek voor iOS 11.1 is, maar het apparaat gebruikt iOS 10.
 
 3. Selecteer een van de statussen voor informatie over de apparaten die dit beleid gebruiken. Selecteer bijvoorbeeld **Geslaagd**. In het volgende venster ziet u specifieke apparaatdetails, waaronder de apparaatnaam en de implementatiestatus.
 
 ## <a name="how-intune-resolves-policy-conflicts"></a>Hoe Intune beleidsconflicten oplost
+
 Conflicterende beleidsinstellingen kunnen zich voordoen wanneer er meerdere Intune-beleidsregels op een apparaat worden toegepast. Als de beleidsinstellingen elkaar overlappen, lost Intune de conflicten aan de hand van de volgende regels op:
 
 - Als de conflicterende instellingen uit een Intune-configuratiebeleid en een nalevingsbeleid voortkomen, hebben de instellingen in het nalevingsbeleid prioriteit boven de instellingen in het configuratiebeleid. Dit gebeurt zelfs als de instellingen in het configuratiebeleid veiliger zijn.

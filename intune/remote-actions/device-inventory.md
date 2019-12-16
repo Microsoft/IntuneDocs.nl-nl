@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564382"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819788"
 ---
 # <a name="see-device-details-in-intune"></a>Apparaatdetails bekijken in Intune
 
@@ -77,7 +77,7 @@ Afhankelijk van de provider die door de apparaten wordt gebruikt, worden mogelij
 |MEID|Het MEID-nummer (Mobile Equipment Identifier) van het apparaat.|Windows, iOS, Android|
 |Fabrikant|De fabrikant van het apparaat.|Windows, iOS, Android|
 |Model|Het model van het apparaat.|Windows, iOS, Android|
-|Telefoonnummer|Het telefoonnummer dat is toegewezen aan het apparaat.|Windows, iOS, Android|
+|Telefoonnummer|Het telefoonnummer dat is toegewezen aan het apparaat.|Windows, iOS, Android*|
 |Provider van abonnee|De mobiele provider die op het apparaat wordt gebruikt.|Windows, iOS, Android|
 |Mobiele-telefoontechnologie|Het radiosysteem dat wordt gebruikt door het apparaat.|Windows, iOS, Android|
 |MAC-adres Wi-Fi|Het Media Access Control-adres van het apparaat.|Windows, iOS, Android|
@@ -93,7 +93,7 @@ Afhankelijk van de provider die door de apparaten wordt gebruikt, worden mogelij
 |Onder supervisie|Als de waarde **Ja** is, hebben de beheerders uitgebreide controle over het apparaat.|Windows, iOS, Android|
 |Versleuteld|Als de waarde **Ja** is, worden de gegevens die zijn opgeslagen op het apparaat versleuteld.|Windows, iOS, Android|
 
-
+\* Niet beschikbaar in Android met Google Policy Manager, zoals volledig beheerde en toegewezen apparaten
 
 ## <a name="next-steps"></a>Volgende stappen
 Bekijk wat u nog meer kunt doen om met Intune uw [apparaten te beheren](device-management.md).

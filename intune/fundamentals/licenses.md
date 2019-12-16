@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/05/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346960d8d1d79afc4494064570d1a03e83b8a302
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8d7b8d96ae1582b5cb434c80d44ef55a31c4781b
+ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510160"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882299"
 ---
 # <a name="microsoft-intune-licensing"></a>Licenties voor Microsoft Intune
 Microsoft Intune is beschikbaar voor verschillende klantbehoeften en organisatiegrootten, van een eenvoudig te gebruiken beheerervaring voor scholen en kleine bedrijven tot een meer geavanceerde functionaliteit die door zakelijke klanten wordt vereist. Zolang het abonnement actief is, verlenen de meeste licenties met Microsoft Intune ook rechten voor het gebruik van System Center Configuration Manager. 
@@ -35,8 +35,8 @@ Intune is opgenomen in de volgende licenties:
 - Enterprise Mobility + Security E3
 - Microsoft 365 Business
 - Microsoft 365 F1
-
-
+- Microsoft 365 Government G5
+- Microsoft 365 Government G3
 
 ## <a name="microsoft-intune-for-education"></a>Microsoft Intune for Education
 Intune for Education is opgenomen in de volgende licenties:
@@ -46,7 +46,7 @@ Intune for Education is opgenomen in de volgende licenties:
 
 ## <a name="additional-information"></a>Aanvullende informatie
 - Naast de hierboven genoemde bundels is een Microsoft Intune-abonnement voor gebruikers en apparaten beschikbaar als zelfstandig abonnement.
-- Een Microsoft Intune-abonnement alleen voor apparaten is beschikbaar voor kioskapparaten waarin geen functies met gebruikersaffiniteit worden gebruikt.
+- Een abonnement voor uitsluitend Microsoft Intune-apparaten is beschikbaar voor het beheren van kiosken, toegewezen apparaten, apparaten in de telefoonkamer, IoT-apparaten en andere apparaten voor enkelvoudig gebruik waarvoor geen beveiligings- en beheerfuncties op basis van gebruikers zijn vereist.
 - De juiste Microsoft Intune-licentie wordt vereist als een gebruiker of apparaat direct of indirect profiteert van de Microsoft Intune-service, waaronder toegang tot de Microsoft Intune-service via een [Microsoft API](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
 - Intune is niet opgenomen in licenties die niet in de voorgaande tabellen staan.
 
