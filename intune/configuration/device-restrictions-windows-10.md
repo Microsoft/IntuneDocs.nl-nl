@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5e1e1de0c8ec80a390f76f5e8de3965d4f800a9
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: 78daf56f7e1d22b88d7134ac6cea86f1d999f0c6
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188163"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860244"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -42,11 +42,11 @@ Deze instellingen gebruiken de [beleid-CSP ApplicationManagement](https://docs.m
 - **App Store** (alleen mobiel): Met **Niet geconfigureerd** (standaard) hebben eindgebruikers toegang tot de App Store op mobiele apparaten. Met **Blokkeren** hebben gebruikers geen toegang tot de App Store.
 - **Apps uit Store automatisch bijwerken**: Met **Niet geconfigureerd** (standaard) kunnen apps die zijn geïnstalleerd vanuit de Microsoft Store, automatisch worden bijgewerkt. Met **Blokkeren** kunnen updates niet automatisch worden geïnstalleerd.
 - **Installatie van vertrouwde app**: Stel in of apps die niet afkomstig zijn uit de Microsoft Store mogen worden geïnstalleerd. Dit wordt ook wel sideloading genoemd. Sideloading is de installatie en het uitvoeren of testen van een app die niet door de Microsoft Store is gecertificeerd. Dit kan bijvoorbeeld een app zijn die alleen voor gebruik binnen het bedrijf is bedoeld. Uw opties zijn:
-  - **Niet geconfigureerd** (standaard): Hiermee maakt u gebruik van de standaardinstelling van het besturingssysteem.
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune.
   - **Blokkeren**: Hiermee voorkomt u sideloading. Apps die niet afkomstig zijn uit de Microsoft Store, kunnen niet worden geïnstalleerd.
   - **Toestaan**: Hiermee staat u sideloading toe. Apps die niet afkomstig zijn uit de Microsoft Store, kunnen worden geïnstalleerd.
 - **Ontgrendeling voor ontwikkelaars**: Eindgebruikers mogen instellingen voor Windows-ontwikkelaars wijzigen, zoals het toestaan van sideloading. Uw opties zijn:
-  - **Niet geconfigureerd** (standaard): Hiermee maakt u gebruik van de standaardinstelling van het besturingssysteem.
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune.
   - **Blokkeren**: Hiermee voorkomt u de ontwikkelaarsmodus en sideloading.
   - **Toestaan**: Hiermee staat u de ontwikkelaarsmodus en sideloading toe.
 
@@ -87,7 +87,7 @@ Deze instellingen gebruiken de beleids-CPS's [Connectivity](https://docs.microso
 - [Beleid-CSP Wi-Fi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi)
 
 - **Mobiel gegevenskanaal**: Hiermee kunt u instellen of gebruikers toegang hebben tot gegevens, bijvoorbeeld tijdens het surfen op internet, wanneer ze zijn verbonden met een mobiel netwerk. Uw opties zijn:
-  - **Niet geconfigureerd** (standaard): De standaardinstelling van het besturingssysteem wordt gebruikt, waarbij het mobiele gegevenskanaal kan worden gebruikt. Eindgebruikers kunnen dit uitschakelen.
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune. Eindgebruikers kunnen dit uitschakelen.
   - **Blokkeren**: Het mobiele gegevenskanaal is niet toegestaan. Eindgebruikers kunnen dit niet inschakelen.
   - **Toestaan (kan niet worden bewerkt)** : Hiermee kan het mobiele gegevenskanaal worden gebruikt. Eindgebruikers kunnen dit niet uitschakelen.
 
@@ -139,24 +139,24 @@ Deze instellingen gebruiken de [beleid-CSP EnterpriseCloudPrint](https://docs.mi
 ## <a name="control-panel-and-settings"></a>Configuratiescherm en instellingen
 
 - **App Instellingen**: Met **Blokkeren** hebben eindgebruikers geen toegang tot de app Instellingen. Met **Niet geconfigureerd** (standaard) kunnen gebruikers de app Instellingen op hun apparaat openen.
-  - **Systeem**: Met **Blokkeren** wordt de toegang tot het gebied Systeem van de app Instellingen geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
+  - **Systeem**: Met **Blokkeren** wordt de toegang tot het gebied Systeem van de app Instellingen geblokkeerd. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
     - **Instellingen voor in-/uitschakelen en slaapstand wijzigen** (alleen desktop): Met **Blokkeren** kunnen eindgebruikers de instellingen voor in-/uitschakelen en de slaapstand op het apparaat niet wijzigen. Met **Niet geconfigureerd** (standaard) kunnen gebruikers de instellingen voor in-/uitschakelen en de slaapstand wijzigen.
-  - **Apparaten**: Met **Blokkeren** wordt de toegang tot het gebied Apparaten van de app Instellingen op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
-  - **Netwerk en internet**: Met **Blokkeren** wordt de toegang tot het gebied Netwerk en internet van de app Instellingen op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
-  - **Persoonlijke instellingen**: Met **Blokkeren** wordt de toegang tot het gebied Persoonlijke instellingen van de app Instellingen op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
-  - **Apps**: Met **Blokkeren** wordt de toegang tot het gebied Apps van de app Instellingen op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
-  - **Accounts**: Met **Blokkeren** wordt de toegang tot het gebied Accounts van de app Instellingen op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
-  - **Tijd en taal**: Met **Blokkeren** wordt de toegang tot het gebied Tijd en taal van de app Instellingen op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
-    - **Systeemtijd wijzigen**: Met **Blokkeren** kunnen eindgebruikers de datum en tijd van het apparaat niet wijzigen. **Niet geconfigureerd**: staat gebruiker toe om deze instellingen te wijzigen.
-    - **Regio-instellingen wijzigen** (alleen desktop): Met **Blokkeren** kunnen eindgebruikers de regio-instellingen op het apparaat niet wijzigen. **Niet geconfigureerd**: staat gebruiker toe om deze instellingen te wijzigen.
-    - **Taalinstellingen wijzigen** (alleen desktop): Met **Blokkeren** kunnen eindgebruikers de taalinstellingen op het apparaat niet wijzigen. **Niet geconfigureerd**: staat gebruiker toe om deze instellingen te wijzigen.
+  - **Apparaten**: Met **Blokkeren** wordt de toegang tot het gebied Apparaten van de app Instellingen op het apparaat geblokkeerd. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+  - **Netwerk en internet**: Met **Blokkeren** wordt de toegang tot het gebied Netwerk en internet van de app Instellingen op het apparaat geblokkeerd. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+  - **Persoonlijke instellingen**: Met **Blokkeren** wordt de toegang tot het gebied Persoonlijke instellingen van de app Instellingen op het apparaat geblokkeerd. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+  - **Apps**: Met **Blokkeren** wordt de toegang tot het gebied Apps van de app Instellingen op het apparaat geblokkeerd. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+  - **Accounts**: Met **Blokkeren** wordt de toegang tot het gebied Accounts van de app Instellingen op het apparaat geblokkeerd. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+  - **Tijd en taal**: Met **Blokkeren** wordt de toegang tot het gebied Tijd en taal van de app Instellingen op het apparaat geblokkeerd. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+    - **Systeemtijd wijzigen**: Met **Blokkeren** kunnen eindgebruikers de datum en tijd van het apparaat niet wijzigen. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Gebruikers kunnen deze instellingen wijzigen.
+    - **Regio-instellingen wijzigen** (alleen desktop): Met **Blokkeren** kunnen eindgebruikers de regio-instellingen op het apparaat niet wijzigen. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Gebruikers kunnen deze instellingen wijzigen.
+    - **Taalinstellingen wijzigen** (alleen desktop): Met **Blokkeren** kunnen eindgebruikers de taalinstellingen op het apparaat niet wijzigen. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Gebruikers kunnen deze instellingen wijzigen.
 
       [Beleid-CSP Settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings)
 
-  - **Gaming**: Met **Blokkeren** wordt de toegang tot het gebied Gaming van de app Instellingen op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
-  - **Betere toegankelijkheid**: Met **Blokkeren** wordt de toegang tot het gebied Betere toegankelijkheid van de app Instellingen op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
-  - **Privacy**: Met **Blokkeren** wordt de toegang tot het gebied Privacy van de app Instellingen op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
-  - **Bijwerken en beveiliging**: Met **Blokkeren** wordt de toegang tot het gebied Bijwerken en beveiliging van de app Instellingen op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
+  - **Gaming**: Met **Blokkeren** wordt de toegang tot het gebied Gaming van de app Instellingen op het apparaat geblokkeerd. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+  - **Betere toegankelijkheid**: Met **Blokkeren** wordt de toegang tot het gebied Betere toegankelijkheid van de app Instellingen op het apparaat geblokkeerd. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+  - **Privacy**: Met **Blokkeren** wordt de toegang tot het gebied Privacy van de app Instellingen op het apparaat geblokkeerd. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+  - **Bijwerken en beveiliging**: Met **Blokkeren** wordt de toegang tot het gebied Bijwerken en beveiliging van de app Instellingen op het apparaat geblokkeerd. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
 
 ## <a name="display"></a>Weergave
 
@@ -178,28 +178,31 @@ U kunt ook een CSV-bestand **importeren** van de lijst met apps.
 
 Deze instellingen gebruiken de [beleid-CSP Experience](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), waarbij ook de ondersteunde Windows-edities worden vermeld. 
 
-- **Schermopname** (alleen mobiel): Met **Blokkeren** kunnen eindgebruikers geen schermafbeeldingen op het apparaat maken. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Kopiëren en plakken** (alleen mobiel): Met **Blokkeren** kunnen eindgebruikers niet kopiëren en plakken tussen apps op het apparaat. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Handmatige uitschrijving**: Met **Blokkeren** kunnen eindgebruikers het werkplekaccount niet verwijderen met behulp van het configuratiescherm van de werkruimte op het apparaat. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
+- **Schermopname** (alleen mobiel): Met **Blokkeren** kunnen eindgebruikers geen schermafbeeldingen op het apparaat maken. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Kopiëren en plakken** (alleen mobiel): Met **Blokkeren** kunnen eindgebruikers niet kopiëren en plakken tussen apps op het apparaat. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Handmatige uitschrijving**: Met **Blokkeren** kunnen eindgebruikers het werkplekaccount niet verwijderen met behulp van het configuratiescherm van de werkruimte op het apparaat. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
 
   Deze beleidsinstelling is niet van toepassing als de computer is toegevoegd aan Azure AD en automatische inschrijving is ingeschakeld.
 
-- **Handmatige installatie van basiscertificaat** (alleen mobiel): Met **Blokkeren** kunnen eindgebruikers niet handmatig basiscertificaten en tussenliggende CAP-certificaten installeren. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Camera**: Met **Blokkeren** kunnen eindgebruikers de camera op het apparaat niet gebruiken. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Bestandssynchronisatie met OneDrive**: Met **Blokkeren** kunnen eindgebruikers geen bestanden synchroniseren naar OneDrive vanaf het apparaat. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Verwisselbare opslag**: Met **Blokkeren** kunnen eindgebruikers geen externe opslagapparaten gebruiken, zoals SD-kaarten. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Geolocatie**: Met **Blokkeren** kunnen eindgebruikers geen locatieservices op het apparaat inschakelen. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Gedeeld internet**: Met **Blokkeren** kan de internetverbinding op het apparaat niet worden gedeeld. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Telefoon opnieuw instellen:** : Met **Blokkeren** kunnen eindgebruikers de instellingen niet wissen of de fabrieksinstellingen op het apparaat terugzetten. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **USB-verbinding**: Met **Blokkeren** is er geen toegang tot externe opslagapparaten via een USB-verbinding op het apparaat. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan. Opladen via USB wordt niet beïnvloed door deze instelling.
-- **Antidiefstalmodus** (alleen mobiel): Met **Blokkeren** kunnen eindgebruikers de voorkeursinstelling Antidiefstalmodus niet selecteren op het apparaat. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
+- **Handmatige installatie van basiscertificaat** (alleen mobiel): Met **Blokkeren** kunnen eindgebruikers niet handmatig basiscertificaten en tussenliggende CAP-certificaten installeren. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Camera**: Met **Blokkeren** kunnen eindgebruikers de camera op het apparaat niet gebruiken. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+
+  [Camera-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-camera)
+
+- **Bestandssynchronisatie met OneDrive**: Met **Blokkeren** kunnen eindgebruikers geen bestanden synchroniseren naar OneDrive vanaf het apparaat. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Verwisselbare opslag**: Met **Blokkeren** kunnen eindgebruikers geen externe opslagapparaten gebruiken, zoals SD-kaarten. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Geolocatie**: Met **Blokkeren** kunnen eindgebruikers geen locatieservices op het apparaat inschakelen. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Gedeeld internet**: Met **Blokkeren** kan de internetverbinding op het apparaat niet worden gedeeld. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Telefoon opnieuw instellen:** : Met **Blokkeren** kunnen eindgebruikers de instellingen niet wissen of de fabrieksinstellingen op het apparaat terugzetten. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **USB-verbinding**: Met **Blokkeren** is er geen toegang tot externe opslagapparaten via een USB-verbinding op het apparaat. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Opladen via USB wordt niet beïnvloed door deze instelling.
+- **Antidiefstalmodus** (alleen mobiel): Met **Blokkeren** kunnen eindgebruikers de voorkeursinstelling Antidiefstalmodus niet selecteren op het apparaat. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
 - **Cortana**: Met **Blokkeren** wordt de spraakassistent Cortana uitgeschakeld. Als Cortana is uitgeschakeld, kunnen gebruikers nog wel zoeken naar items op het apparaat. Met **Niet geconfigureerd** (standaard) is Cortana ingeschakeld.
 - **Spraakopname** (alleen mobiel): Met **Blokkeren** kunnen eindgebruikers het spraakopnameapparaat van het apparaat niet gebruiken. Met **Niet geconfigureerd** (standaard) kunnen gebruikers spraakopnamen maken.
-- **Apparaatnaam wijzigen** (alleen mobiel): Met **Blokkeren** kunnen eindgebruikers de apparaatnaam niet wijzigen. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Inrichtingspakketten toevoegen**: Met **Blokkeren** kan de runtime-configuratieagent geen inrichtingspakketten op het apparaat installeren. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Inrichtingspakketten verwijderen**: Met **Blokkeren** kan de runtime-configuratieagent geen inrichtingspakketten van het apparaat verwijderen. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Apparaatdetectie**: Met **Blokkeren** kan het apparaat niet worden gedetecteerd door andere apparaten. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
-- **Taakwisselaar** (alleen mobiel): Met **Blokkeren** is de taakwisselaar op het apparaat geblokkeerd. Met **Niet geconfigureerd** (standaard) is deze functie toegestaan.
+- **Apparaatnaam wijzigen** (alleen mobiel): Met **Blokkeren** kunnen eindgebruikers de apparaatnaam niet wijzigen. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Inrichtingspakketten toevoegen**: Met **Blokkeren** kan de runtime-configuratieagent geen inrichtingspakketten op het apparaat installeren. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Inrichtingspakketten verwijderen**: Met **Blokkeren** kan de runtime-configuratieagent geen inrichtingspakketten van het apparaat verwijderen. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Apparaatdetectie**: Met **Blokkeren** kan het apparaat niet worden gedetecteerd door andere apparaten. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Taakwisselaar** (alleen mobiel): Met **Blokkeren** is de taakwisselaar op het apparaat geblokkeerd. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
 - **Foutberichtvenster voor SIM-kaart** (alleen mobiel): Met **Blokkeren** worden er geen foutberichten weergegeven op het apparaat als er geen simkaart wordt gedetecteerd. Met **Niet geconfigureerd** (standaard) worden de foutberichten weergegeven.
 - **Ink-werkruimte**: Kies of en hoe de gebruiker toegang heeft tot de Ink-werkruimte. Uw opties zijn:
   - Met **Niet geconfigureerd** (standaard) wordt de Ink-werkruimte ingeschakeld en kan de gebruiker deze gebruiken boven het vergrendelingsscherm.
@@ -417,21 +420,21 @@ Deze instellingen gebruiken de [beleid-CSP DeviceLock](https://docs.microsoft.co
   - **Wachtwoorden niet opnieuw gebruiken**: Hiermee geeft u op hoeveel eerder gebruikte wachtwoorden niet opnieuw mogen worden gebruikt (tussen 1-24). Als u bijvoorbeeld `5` invoert, kan een gebruiker zijn nieuwe wachtwoord niet instellen op zijn huidige wachtwoord of een van zijn vier wachtwoorden daarvoor.
   - **Wachtwoord vereisen wanneer het apparaat wordt geactiveerd vanuit een niet-actieve status**  (mobiel en Holographic): Met **Vereisen** moeten gebruikers een wachtwoord opgeven om het apparaat te ontgrendelen na een periode van inactiviteit. Met **Niet geconfigureerd** (standaard) is geen pincode of wachtwoord vereist wanneer het apparaat wordt hervat vanuit een niet-actieve status.
   - **Eenvoudige wachtwoorden**: Met **Blokkeren** kunnen gebruikers geen eenvoudige wachtwoorden maken, zoals `1234` of `1111`. Met **Niet geconfigureerd** (standaard) kunnen gebruikers wachtwoorden maken als `1234` of `1111`. Met deze instelling kunt u ook het gebruik van afbeeldingswachtwoorden toestaan of blokkeren.
-- **Automatische versleuteling tijdens AADJ**: Met **Blokkeren** voorkomt u automatische BitLocker-apparaatversleuteling wanneer het apparaat wordt voorbereid op het eerste gebruik, wanneer het apparaat is toegevoegd aan Microsoft Azure AD. Bij **Niet geconfigureerd** (standaard) worden de standaardinstelling van het besturingssysteem gebruikt, waarbij versleuteling kan worden ingeschakeld. Zie [BitLocker-apparaatversleuteling](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+- **Automatische versleuteling tijdens AADJ**: Met **Blokkeren** voorkomt u automatische BitLocker-apparaatversleuteling wanneer het apparaat wordt voorbereid op het eerste gebruik, wanneer het apparaat is toegevoegd aan Microsoft Azure AD. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Zie [BitLocker-apparaatversleuteling](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
 
   [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **Federal Information Processing Standard (FIPS)-beleid**: Bij **Toestaan** wordt gebruik gemaakt van het Federal Information Processing Standard (FIPS)-beleid. Dat is een standaard van de Amerikaanse overheid voor versleuteling, hashing en ondertekening. Bij **Niet geconfigureerd** (standaard) worden de standaardinstelling van het besturingssysteem gebruikt, waarbij FIPS niet wordt gebruikt.
+- **Federal Information Processing Standard (FIPS)-beleid**: Bij **Toestaan** wordt gebruik gemaakt van het Federal Information Processing Standard (FIPS)-beleid. Dat is een standaard van de Amerikaanse overheid voor versleuteling, hashing en ondertekening. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. De standaard instelling van het besturings systeem is dat FIPS niet wordt gebruikt.
 
   [Cryptography/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Windows Hello-apparaatverificatie**: U kunt gebruikers **Toestaan** om zich via een Windows Hello-bedrijfsapparaat, zoals een telefoon, fitnessband of IoT-apparaat, aan te melden bij een Windows 10-computer. Bij **Niet geconfigureerd** (standaard) worden de standaardinstelling van het besturingssysteem gebruikt, waardoor verificatie bij Windows voor Windows Hello-bedrijfsapparaten kan worden voorkomen.
+- **Windows Hello-apparaatverificatie**: U kunt gebruikers **Toestaan** om zich via een Windows Hello-bedrijfsapparaat, zoals een telefoon, fitnessband of IoT-apparaat, aan te melden bij een Windows 10-computer. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Het besturings systeem kan standaard verhinderen dat Windows hello Companion-apparaten verifiëren met Windows.
 
   [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
 - **Webaanmelding**: Maakt ondersteuning voor Windows-aanmelding mogelijk voor federatieve niet-ADFS-providers (Active Directory Federation Services), zoals Security Assertion Markup Language (SAML). SAML maakt gebruik van beveiligde tokens om in webbrowsers een SSO-ervaring (eenmalige aanmelding) te bieden. Uw opties zijn:
 
-  - **Niet geconfigureerd** (standaard): de standaardinstelling van het besturingssysteem worden gebruikt.
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune.
   - **Ingeschakeld**: de webreferentieprovider is ingeschakeld voor aanmelden.
   - **Uitgeschakeld**: de webreferentieprovider is uitgeschakeld voor aanmelden.
 
@@ -488,7 +491,7 @@ Deze instellingen gebruiken de [beleid-CSP Privacy](https://docs.microsoft.com/w
 - **Persoonlijke instellingen invoeren**: met **Blokkeren** voorkomt u het gebruik van dicteren en communiceren met Cortana en andere apps die gebruikmaken van op de cloud gebaseerde spraakherkenning van Microsoft. Als deze optie is uitgeschakeld, kunnen gebruikers online spraakherkenning niet inschakelen via de instellingen. Met **Niet geconfigureerd** (standaard) kunnen gebruikers kiezen wat ze willen gebruiken. Als u deze services toestaat, kan Microsoft spraakgegevens verzamelen voor het verbeteren van de service.
 - **Automatische acceptatie van de goedkeuringsvensters voor koppelen en privacy**: Met **Toestaan** mag Windows automatisch toestemming geven voor bewerkingen met koppelen en privacy bij het uitvoeren van apps. Met **Niet geconfigureerd** (standaard) wordt automatische toestemming voor bewerkingen met koppelen en privacy voorkomen bij het uitvoeren van apps.
 - **Gebruikersactiviteiten publiceren**: Met **Blokkeren** voorkomt u gedeelde ervaringen en de detectie van recent gebruikte resources in de activiteitsfeed. Met **Niet geconfigureerd** (standaard), schakelt u deze functie in, zodat apps eindgebruikeractiviteiten kunnen publiceren.
-- **Alleen lokale activiteiten**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar alleen op basis van de lokale activiteit te voorkomen. Met **Niet geconfigureerd** (standaard) schakelt u deze functie in.
+- **Alleen lokale activiteiten**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar alleen op basis van de lokale activiteit te voorkomen. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
 
 U kunt informatie configureren die voor alle apps op het apparaat toegankelijk is. Definieer ook uitzonderingen op een per-app basis met **Privacyuitzonderingen per app**.
 
@@ -533,7 +536,7 @@ Deze instellingen gebruiken de [beleid-CSP WirelessDisplay](https://docs.microso
   [System/AllowTelemetry CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)
 
 - **Microsoft Edge browsegegevens verzenden naar Microsoft 365 Analytics**: als u deze functie wilt gebruiken, stelt u **Gebruiksgegevens delen** in op **Uitgebreid** of **Volledig**. Deze functie bepaalt welke gegevens Microsoft Edge verstuurt naar Microsoft 365 Analytics voor zakelijke apparaten met een geconfigureerde commerciële id. Uw opties zijn:
-  - **Niet geconfigureerd**: hiermee wordt het standaardgedrag van het besturingssysteem gebruikt, wat betekent dat er mogelijk geen browsegegevens worden verzonden.
+  - **Niet geconfigureerd**: deze instelling wordt niet gewijzigd of bijgewerkt door intune. De standaard waarde voor het besturings systeem kan geen browse geschiedenis gegevens verzenden.
   - **Alleen intranetgegevens verzenden**: hiermee kan de beheerder de geschiedenis van intranetgegevens verzenden
   - **Alleen internetgegevens verzenden**: hiermee kan de beheerder de geschiedenis van internetgegevens verzenden
   - **Intranet- en internetgegevens verzenden**: hiermee kan de beheerder de geschiedenis van intranet- en internetgegevens verzenden
@@ -588,11 +591,11 @@ Deze instellingen gebruiken de [beleid-CSP Start](https://docs.microsoft.com/win
 - **De tegel Gebruiker**: Met **Blokkeren** wordt de tegel Gebruiker niet weergegeven in het menu Start. Met **Niet geconfigureerd** (standaard) wordt de tegel Gebruiker weergegeven en worden ook de volgende instellingen gebruikt:
   - **Vergrendelen**: Met **Blokkeren** wordt de optie **Vergrendelen** niet weergegeven op de tegel Gebruiker in het menu Start. Met **Niet geconfigureerd** (standaard) wordt de optie **Vergrendelen** weergegeven.
   - **Afmelden**: Met **Blokkeren** wordt de optie **Afmelden** niet weergegeven op de tegel Gebruiker in het menu Start. Met **Niet geconfigureerd** (standaard) wordt de optie **Afmelden** weergegeven.
-- **Afsluiten**: Met **Blokkeren** worden de opties **Bijwerken en afsluiten** en **Afsluiten** niet weergegeven in de aan/uit-knop in het menu Start. Met **Niet geconfigureerd** (standaard) worden deze opties wel weergegeven.
-- **Slaapstand**: Met **Blokkeren** wordt de optie **Slaapstand** niet weergegeven in de aan/uit-knop in het menu Start. Met **Niet geconfigureerd** (standaard) wordt deze optie wel weergegeven.
-- **Sluimerstand**: Met **Blokkeren** wordt de optie **Sluimerstand** niet weergegeven in de aan/uit-knop in het menu Start. Met **Niet geconfigureerd** (standaard) wordt deze optie wel weergegeven.
-- **Account wisselen**: Met **Blokkeren** wordt de optie **Account wisselen** niet weergegeven op de tegel Gebruiker in het menu Start. Met **Niet geconfigureerd** (standaard) wordt deze optie wel weergegeven.
-- **Opties voor opnieuw opstarten**: Met **Blokkeren** worden de opties **Bijwerken en opnieuw opstarten** en **Opnieuw opstarten** niet weergegeven in de aan/uit-knop in het menu Start. Met **Niet geconfigureerd** (standaard) worden deze opties wel weergegeven.
+- **Afsluiten**: Met **Blokkeren** worden de opties **Bijwerken en afsluiten** en **Afsluiten** niet weergegeven in de aan/uit-knop in het menu Start. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Slaapstand**: Met **Blokkeren** wordt de optie **Slaapstand** niet weergegeven in de aan/uit-knop in het menu Start. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Sluimerstand**: Met **Blokkeren** wordt de optie **Sluimerstand** niet weergegeven in de aan/uit-knop in het menu Start. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Account wisselen**: Met **Blokkeren** wordt de optie **Account wisselen** niet weergegeven op de tegel Gebruiker in het menu Start. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+- **Opties voor opnieuw opstarten**: Met **Blokkeren** worden de opties **Bijwerken en opnieuw opstarten** en **Opnieuw opstarten** niet weergegeven in de aan/uit-knop in het menu Start. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
 - **Documenten op het startscherm**: de map Documenten in het menu Start van Windows weergeven of verbergen. Uw opties zijn:
   - **Niet geconfigureerd** (standaard): Er wordt geen instelling geforceerd. Gebruikers kunnen zelf kiezen of de snelkoppeling wordt weergegeven of verborgen.
   - **Verbergen**: De snelkoppeling wordt verborgen en de instelling in de app Instellingen wordt uitgeschakeld.
@@ -656,9 +659,9 @@ Deze instellingen gebruiken de [beleid-CSP Experience](https://docs.microsoft.co
 
 - **Windows Spotlight**: Met **Blokkeren** worden Windows-spotlight op het vergrendelingsscherm, Windows Tips, Microsoft-functies voor consumenten en andere gerelateerde functies uitgeschakeld. Als u het netwerkverkeer vanaf apparaten zoveel mogelijk wilt beperken, kiest u **Blokkeren**. Met **Niet geconfigureerd** (standaard) zijn functies van Windows Spotlight toegestaan en kunnen deze door eindgebruikers worden beheerd. Als deze optie is ingeschakeld, kunt u de volgende instellingen ook toestaan of blokkeren:
 
-  - **Windows Spotlight op vergrendelingsscherm**: Met**Blokkeren** geeft Windows Spotlight geen informatie weer op het vergrendelingsscherm van het apparaat. Met **Niet geconfigureerd** (standaard) schakelt u deze functie in.
+  - **Windows Spotlight op vergrendelingsscherm**: Met**Blokkeren** geeft Windows Spotlight geen informatie weer op het vergrendelingsscherm van het apparaat. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
   - **Suggesties van derden in Windows Spotlight**: Met**Blokkeren** stelt Windows Spotlight geen inhoud voor die niet is gepubliceerd door Microsoft. Met **Niet geconfigureerd** zijn app- en inhoudssuggesties van uitgevers van externe software toegestaan in Windows Spotlight-functies, zoals Spotlight op het vergrendelingsscherm, voorgestelde apps in het menu Start en Windows Tips.
-  - **Consumentfuncties**: Met **Blokkeren** worden ervaringen uitgeschakeld die doorgaans alleen voor consumenten worden gebruikt, zoals startsuggesties, lidmaatschapsmeldingen, post-out of box experience-app-installaties en omleidingstegels. **Niet geconfigureerd** (standaard) staat deze functies toe.
+  - **Consumentfuncties**: Met **Blokkeren** worden ervaringen uitgeschakeld die doorgaans alleen voor consumenten worden gebruikt, zoals startsuggesties, lidmaatschapsmeldingen, post-out of box experience-app-installaties en omleidingstegels. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
   - **Windows Tips**: Met **Blokkeren** worden pop-ups van Windows Tips uitgeschakeld. Met **Niet geconfigureerd** (standaard) worden Windows Tips weergegeven.
   - **Windows Spotlight in Onderhoudscentrum:** : Met **Blokkeren** worden meldingen van Windows Spotlight niet weergegeven in Onderhoudscentrum. Met **Niet geconfigureerd** (standaard) kunnen meldingen worden weergegeven in Onderhoudscentrum, zoals suggesties voor nieuwe apps of functies waarmee gebruikers productiever kunnen zijn.
   - **Persoonlijke instellingen voor Windows Spotlight:** : Met **Blokkeren** gebruikt Windows geen diagnostische gegevens om gebruikers aangepaste ervaringen te bieden. Met **Niet geconfigureerd** (standaard) worden diagnostische gegevens gebruikt om persoonlijke aanbevelingen te doen, tips te geven en aanbiedingen weer te geven die op de behoeften van de gebruiker zijn afgestemd.
@@ -670,7 +673,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Realtime-controle**: Met **Inschakelen** wordt realtime scannen op malware, spyware en andere ongewenste software ingeschakeld. Gebruikers kunnen dit niet uitschakelen. 
 
-  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard deze functie in en stelt gebruikers in staat om deze te wijzigen.
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard deze functie in en stelt gebruikers in staat om deze te wijzigen.
 
   Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
@@ -678,7 +681,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Gedragscontrole**: Met **Inschakelen** worden gedragscontroles en controles op de aanwezigheid van bepaalde bekende patronen van verdachte activiteit op apparaten ingeschakeld. Gebruikers kunnen gedrags controle niet uitschakelen. 
 
-  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard schakelt het besturings systeem gedrag bewaking in en kunnen gebruikers het wijzigen.
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard schakelt het besturings systeem gedrag bewaking in en kunnen gebruikers het wijzigen.
 
   Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
@@ -688,7 +691,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
   **Inschakelen** schakelt netwerk beveiliging en netwerk blokkering in. Gebruikers kunnen dit niet uitschakelen. Wanneer deze functie is ingeschakeld, kunnen gebruikers geen verbinding maken met bekende beveiligings problemen.
 
-  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard NIS in en stelt gebruikers in staat om deze te wijzigen.
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard NIS in en stelt gebruikers in staat om deze te wijzigen.
 
   Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
@@ -696,7 +699,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Alle down loads scannen**: als u deze instelling **inschakelt** , worden alle bestanden gescand die zijn gedownload van het internet. Gebruikers kunnen deze instelling niet uitschakelen. 
 
-  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard wordt deze instelling door het besturings systeem ingeschakeld en kunnen gebruikers deze wijzigen.
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard wordt deze instelling door het besturings systeem ingeschakeld en kunnen gebruikers deze wijzigen.
 
   Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
@@ -704,7 +707,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Scripts scannen die in webbrowsers van Microsoft worden geladen**: Met **Inschakelen** geeft u aan dat Defender scripts moet scannen die worden gebruikt in Internet Explorer. Gebruikers kunnen deze instelling niet uitschakelen. 
 
-  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard wordt deze instelling door het besturings systeem ingeschakeld en kunnen gebruikers deze wijzigen.
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard wordt deze instelling door het besturings systeem ingeschakeld en kunnen gebruikers deze wijzigen.
 
   Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
@@ -712,7 +715,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Toegang van eindgebruikers tot Defender**: Met **Blokkeren** wordt de gebruikersinterface van Microsoft Defender voor eindgebruikers verborgen. Daarnaast worden alle meldingen van Microsoft Defender onderdrukt.
 
-  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling blokkeert en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem biedt gebruikers standaard toegang tot de micro soft Defender-gebruikers interface en staat gebruikers toe om het te wijzigen.
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Als u de instelling blokkeert en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem biedt gebruikers standaard toegang tot de micro soft Defender-gebruikers interface en staat gebruikers toe om het te wijzigen.
 
   Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
@@ -722,7 +725,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Interval voor Security Intelligence-updates (in uren)** : Voer het interval in dat Defender controleert op nieuwe beveiligings informatie, van 0-24. Uw opties zijn:
 
-  - **Niet geconfigureerd** (standaard): elke 8 uur op updates controleren.
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune. De standaard instelling van het besturings systeem kan elke 8 uur op updates controleren.
   - **Niet controleren**: Defender controleert niet op nieuwe beveiligings updates.
   - **1-24**: `1` controleert elk uur, `2` controleert elke twee uur, `24` controleert elke dag, enzovoort.
   
@@ -730,7 +733,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
   
 - **Activiteiten van bestanden en programma's bewaken**: hiermee staat u Defender toe activiteiten van bestanden en programma's op apparaten te bewaken. Uw opties zijn:
 
-  - **Niet geconfigureerd** (standaard): bewaakt alle bestanden
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune. De standaard waarde van het besturings systeem kan alle bestanden bewaken.
   - **Bewaking is uitgeschakeld**
   - **Alle bestanden bewaken**
   - **Alleen inkomende bestanden controleren**
@@ -745,7 +748,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 - **Limiet voor het CPU-gebruik tijdens het scannen**: Hiermee beperkt u de hoeveelheid CPU die scans kunnen gebruiken, van `0` tot `100`.
 - **Archief bestanden scannen**: **Hiermee schakelt u** Defender in om de archief bestanden, zoals zip-of CAB-bestanden, te scannen. Gebruikers kunnen deze instelling niet uitschakelen.
 
-  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard het scannen in en stelt gebruikers in staat om het te wijzigen.
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard het scannen in en stelt gebruikers in staat om het te wijzigen.
 
   Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
@@ -753,7 +756,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Inkomende e-mailberichten scannen**: Met **Inschakelen** scant Defender e-mailberichten wanneer deze op het apparaat binnenkomen. Wanneer deze functie is ingeschakeld, parseert de engine het postvak en de e-mail bestanden voor het analyseren van de bericht tekst en bijlagen. U kunt de indelingen. pst (Outlook),. dbx,. mbx, MIME (Outlook Express) en BinHex (Mac) scannen.
 
-  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard deze scan uit en stelt gebruikers in staat om het te wijzigen.
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard deze scan uit en stelt gebruikers in staat om het te wijzigen.
 
   Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
@@ -761,7 +764,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Verwissel bare stations scannen tijdens een volledige scan** **: Hiermee schakelt u** scannen van Verwissel bare schijven in Defender tijdens een volledige scan in. Gebruikers kunnen deze instelling niet uitschakelen.
 
-  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard biedt het besturings systeem Defender scan van Verwissel bare stations, zoals USB-sticks, en kunnen gebruikers deze instelling wijzigen.
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard biedt het besturings systeem Defender scan van Verwissel bare stations, zoals USB-sticks, en kunnen gebruikers deze instelling wijzigen.
 
   Tijdens een snelle scan kunnen Verwissel bare schijven nog steeds worden gescand.
 
@@ -771,7 +774,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Toegewezen netwerkschijven scannen tijdens een volledige scan**: Met **Inschakelen** scant Defender bestanden op toegewezen netwerkschijven. Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen. Gebruikers kunnen deze instelling niet uitschakelen.
 
-  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard deze functie in en stelt gebruikers in staat om deze te wijzigen.
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Het besturings systeem schakelt standaard deze functie in en stelt gebruikers in staat om deze te wijzigen.
 
   Tijdens een snelle scan kunnen toegewezen netwerk stations nog steeds worden gescand.
 
@@ -781,7 +784,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Bestanden die zijn geopend vanuit netwerk mappen scannen**: met **Enable** kan Defender bestanden scannen die zijn geopend vanuit netwerk mappen of gedeelde netwerk stations, zoals bestanden die toegankelijk zijn vanaf een UNC-pad. Gebruikers kunnen deze instelling niet uitschakelen. Als de bestanden op de schijf het kenmerk Alleen-lezen hebben, kan Defender eventueel gevonden malware niet verwijderen.
 
-  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard scant het besturings systeem bestanden die zijn geopend vanuit netwerk mappen en kunnen gebruikers deze wijzigen.
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard scant het besturings systeem bestanden die zijn geopend vanuit netwerk mappen en kunnen gebruikers deze wijzigen.
 
   Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
@@ -789,7 +792,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Cloudbeveiliging**: Met **Inschakelen** wordt ingeschakeld dat de Microsoft Active Protection-service informatie ontvangt over malware-activiteit op apparaten die u beheert. Gebruikers kunnen deze instelling niet wijzigen. 
 
-  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune aangeraakt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard kan het besturings systeem de Microsoft Active Protection Service informatie ontvangen en kunnen gebruikers deze instelling wijzigen.
+  Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt. Als u de instelling inschakelt en vervolgens weer wijzigt in **niet geconfigureerd**, blijft de instelling in de eerder geconfigureerde status van intune. Standaard kan het besturings systeem de Microsoft Active Protection Service informatie ontvangen en kunnen gebruikers deze instelling wijzigen.
 
   Deze functie wordt niet uitgeschakeld door intune. Als u dit wilt uitschakelen, gebruikt u een aangepaste URI.
 
@@ -797,7 +800,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Gebruikers vragen voordat een voorbeeld wordt verzonden**: hiermee bepaalt u of potentieel schadelijke bestanden waarvoor verdere analyse nodig is, automatisch naar Microsoft worden verzonden. Uw opties zijn:
 
-  - **Niet geconfigureerd** (standaard): Verzend veilige voor beelden automatisch.
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune. De standaard instelling is dat het besturings systeem veilige voor beelden automatisch verzendt.
   - **Altijd vragen**
   - **Vragen voordat persoonlijke gegevens worden verstuurd**
   - **Nooit gegevens verzenden**
@@ -861,6 +864,88 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 - **Bestanden en mappen die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer bestanden aan de uitsluitingslijst toe, zoals **C:\pad** of **%ProgramFiles%\pad\bestandsnaam.exe**. Deze bestanden en mappen worden niet opgenomen in real-timescans of geplande scans.
 - **Bestandsextensies die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer bestandsextensies zoals **jpg** of **txt** aan de uitsluitingslijst toe. Bestanden met deze extensies worden niet opgenomen in realtime-scans of geplande scans.
 - **Processen die moeten worden uitgesloten van scans en de realtime-beveiliging**: hiermee voegt u een of meer processen van het type **.exe**, **.com** of **.scr** aan de uitsluitingslijst toe. Deze processen worden niet opgenomen in real-timescans of geplande scans.
+
+## <a name="power-settings"></a>Energie-instellingen
+
+### <a name="battery"></a>Accu
+
+- **Batterij niveau om energie besparing in te scha kelen**: wanneer het apparaat gebruikmaakt van accu voeding, voert u het oplaad niveau van de batterij in om de energie besparing van 0-100 in te scha kelen. Voer een percentage waarde in die het oplaad niveau van de accu aangeeft. De standaardwaarde is 70%. Wanneer u instelt op 70%, wordt energie besparing ingeschakeld wanneer de accu 70% beschikt of minder beschikbaar is.
+
+  [Power-EnergySaverBatteryThresholdOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)
+
+- **Deksel sluiten (alleen mobiel)** : als het apparaat gebruikmaakt van accu voeding, kiest u wat er gebeurt wanneer het deksel wordt gesloten. Uw opties zijn:
+
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune.
+  - **Geen actie**: het apparaat blijft actief en blijft accu stroom gebruiken.
+  - **Slaap stand**: het apparaat wordt in slaap stand gezet en maakt gebruik van een kleine hoeveelheid batterij lading. De computer bevindt zich nog steeds in en geopende apps en bestanden worden opgeslagen in RAM-geheugen (Random Access Memory).
+  - **Sluimer stand**: het apparaat gaat in de sluimer stand. Geopende apps en bestanden worden opgeslagen op de harde schijf en het apparaat wordt uitgeschakeld.
+  - **Afsluiten**: het apparaat wordt afgesloten. Geopende apps en bestanden worden gesloten zonder op te slaan.
+
+  [Power-SelectLidCloseActionOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactiononbattery)
+
+- Aan **/uit-knop**: Kies wat er gebeurt wanneer de knop aan/uit wordt geselecteerd wanneer het apparaat gebruikmaakt van accu voeding. Uw opties zijn:
+
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune.
+  - **Geen actie**: het apparaat blijft actief en blijft accu stroom gebruiken.
+  - **Slaap stand**: het apparaat wordt in slaap stand gezet en maakt gebruik van een kleine hoeveelheid batterij lading. De computer bevindt zich nog steeds in en geopende apps en bestanden worden opgeslagen in RAM-geheugen (Random Access Memory).
+  - **Sluimer stand**: het apparaat gaat in de sluimer stand. Geopende apps en bestanden worden opgeslagen op de harde schijf en het apparaat wordt uitgeschakeld.
+  - **Afsluiten**: het apparaat wordt afgesloten. Geopende apps en bestanden worden gesloten zonder op te slaan.
+
+  [Power-SelectPowerButtonActionOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactiononbattery)
+
+- **Slaapstandknop**: Kies wat er gebeurt wanneer de slaapstandknop wordt geselecteerd wanneer het apparaat gebruikmaakt van accu voeding. Uw opties zijn:
+
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune.
+  - **Geen actie**: het apparaat blijft actief en blijft accu stroom gebruiken.
+  - **Slaap stand**: het apparaat wordt in slaap stand gezet en maakt gebruik van een kleine hoeveelheid batterij lading. De computer bevindt zich nog steeds in en geopende apps en bestanden worden opgeslagen in RAM-geheugen (Random Access Memory).
+  - **Sluimer stand**: het apparaat gaat in de sluimer stand. Geopende apps en bestanden worden opgeslagen op de harde schijf en het apparaat wordt uitgeschakeld.
+  - **Afsluiten**: het apparaat wordt afgesloten. Geopende apps en bestanden worden gesloten zonder op te slaan.
+
+  [Power-SelectSleepButtonActionOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactiononbattery)
+
+- **Hybride slaap stand**: als het apparaat batterij stroom gebruikt, **schakelt** u het apparaat uit om de hybride slaap stand te activeren. In de hybride slaap stand worden geopende apps en bestanden opgeslagen in RAM-geheugen (Random Access Memory) en op de harde schijf. Er wordt gebruikgemaakt van een kleine hoeveelheid batterij kosten. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+
+  [Power-TurnOffHybridSleepOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeponbattery)
+
+### <a name="pluggedin"></a>PluggedIn
+
+- **Batterij niveau om energie besparing in te scha kelen**: wanneer het apparaat is aangesloten, voert u het oplaad niveau van de batterij in om de energie besparing van 0-100 in te scha kelen. Voer een percentage waarde in die het oplaad niveau van de accu aangeeft. De standaardwaarde is 70%. Wanneer u instelt op 70%, wordt energie besparing ingeschakeld wanneer de accu 70% beschikt of minder beschikbaar is.
+
+  [Power-EnergySaverBatteryThresholdPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)
+
+- **Deksel sluiten (alleen mobiel)** : wanneer het apparaat is aangesloten, kiest u wat er gebeurt wanneer het deksel wordt gesloten. Uw opties zijn:
+
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune.
+  - **Geen actie**: het apparaat blijft actief.
+  - **Slaap stand**: het apparaat gaat in de slaap stand. De computer bevindt zich nog steeds in en geopende apps en bestanden worden opgeslagen in RAM-geheugen (Random Access Memory).
+  - **Sluimer stand**: het apparaat gaat in de sluimer stand. Geopende apps en bestanden worden opgeslagen op de harde schijf en het apparaat wordt uitgeschakeld.
+  - **Afsluiten**: het apparaat wordt afgesloten. Geopende apps en bestanden worden gesloten zonder op te slaan.
+  
+    [Power-SelectLidCloseActionPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactionpluggedin)
+  
+- Aan **/uit-knop**: Kies wat er gebeurt wanneer de knop aan/uit wordt geselecteerd wanneer het apparaat is aangesloten. Uw opties zijn:
+
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune.
+  - **Geen actie**: het apparaat blijft actief.
+  - **Slaap stand**: het apparaat gaat in de slaap stand. De computer bevindt zich nog steeds in en geopende apps en bestanden worden opgeslagen in RAM-geheugen (Random Access Memory).
+  - **Sluimer stand**: het apparaat gaat in de sluimer stand. Geopende apps en bestanden worden opgeslagen op de harde schijf en het apparaat wordt uitgeschakeld.
+  - **Afsluiten**: het apparaat wordt afgesloten. Geopende apps en bestanden worden gesloten zonder op te slaan.
+
+  [Power-SelectPowerButtonActionPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactionpluggedin)
+
+- **Slaapstandknop**: Kies wat er gebeurt wanneer de slaapstandknop wordt geselecteerd wanneer het apparaat is aangesloten op de netstroom knop. Uw opties zijn:
+
+  - **Niet geconfigureerd** (standaard): deze instelling wordt niet gewijzigd of bijgewerkt door intune.
+  - **Geen actie**: het apparaat blijft actief.
+  - **Slaap stand**: het apparaat gaat in de slaap stand. De computer bevindt zich nog steeds in en geopende apps en bestanden worden opgeslagen in RAM-geheugen (Random Access Memory).
+  - **Sluimer stand**: het apparaat gaat in de sluimer stand. Geopende apps en bestanden worden opgeslagen op de harde schijf en het apparaat wordt uitgeschakeld.
+  - **Afsluiten**: het apparaat wordt afgesloten. Geopende apps en bestanden worden gesloten zonder op te slaan.
+
+  [Power-SelectSleepButtonActionPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactionpluggedin)
+
+- **Hybride slaap stand**: als het apparaat is aangesloten, **schakelt** u het apparaat uit om de hybride slaap stand te activeren. In de hybride slaap stand worden geopende apps en bestanden opgeslagen in RAM-geheugen (Random Access Memory) en op de harde schijf. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of bijgewerkt.
+
+  [Power-TurnOffHybridSleepPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeppluggedin)
 
 ## <a name="next-steps"></a>Volgende stappen
 

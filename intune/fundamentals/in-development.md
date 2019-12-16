@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74540739"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>In ontwikkeling voor Microsoft Intune - december 2019
@@ -138,19 +138,19 @@ Van toepassing op:
 U kunt een lijst met goedgekeurde toetsen borden opgeven voor gebruik in beheerde Android-apps. Vanuit de beheerde app wordt de gebruiker gevraagd om over te scha kelen naar een van de goedgekeurde toetsen borden die al zijn geïnstalleerd op het apparaat of, indien nodig, ze naar de Google Play Store om een van de goedgekeurde toetsen borden te downloaden en in te stellen. De gebruiker kan alleen tekst velden in een beheerde app bewerken als hun actieve toetsen bord een van de goedgekeurde toetsen borden is.
 
 ### <a name="use-pkcs-certificates-with-wi-fi-profiles-on-windows-10-and-later-devices---3246388----"></a>PKCS-certificaten gebruiken met Wi-Fi-profielen op apparaten met Windows 10 en hoger<!-- 3246388  -->
-Op dit moment kunt u Windows Wi-Fi-profielen verifiëren met SCEP-certificaten (**apparaatconfiguratie** > **profielen** > **profiel maken** > **Windows 10 en hoger** voor platform > **Wi-Fi** voor Profiel type > EAP- **type** > - **onderneming** ). U kunt PKCS-certificaten gebruiken met uw Windows Wi-Fi-profielen. Met deze functie kunnen gebruikers Wi-Fi-profielen verifiëren met behulp van nieuwe of bestaande PKCS-certificaat profielen in uw Tenant. 
+Op dit moment kunt u Windows Wi-Fi-profielen met SCEP-certificaten (**apparaatconfiguratie** > - **profielen** ) verifiëren > **profiel maken** > **Windows 10 en hoger** voor platform > **Wi-Fi** voor het profiel type > **Enter prise** > **EAP-type**). U kunt PKCS-certificaten gebruiken met uw Windows Wi-Fi-profielen. Met deze functie kunnen gebruikers Wi-Fi-profielen verifiëren met behulp van nieuwe of bestaande PKCS-certificaat profielen in uw Tenant. 
 
 Zie [Wi-Fi-instellingen voor Windows 10-en nieuwere apparaten toevoegen in intune](../configuration/wi-fi-settings-windows.md)voor meer informatie over Wi-Fi-profielen.
 
 Van toepassing op:
 - Windows 10 en hoger
 
-### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>Nieuwe ExchangeActiveSync-instellingen bij het maken van een configuratie profiel voor een e-mail apparaat op iOS-apparaten<!-- 4892824  --> 
-Op iOS/iPadOS-apparaten kunt u een e-mail verbinding configureren in een configuratie profiel voor een apparaat (**apparaatconfiguratie** > **profielen** > **profiel maken** > **IOS/IPadOS** voor platform > **-e-mail** voor het profiel type). 
+### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>Nieuwe Exchange ActiveSync-instellingen bij het maken van een configuratieprofiel voor een e-mailapparaat op iOS-apparaten<!-- 4892824  --> 
+U kunt op iOS/iPadOS-apparaten e-mailconnectiviteit configureren in een apparaatconfiguratieprofiel (**Apparaatconfiguratie** > **Profielen** > **Profiel maken**  > **iOS/iPadOS** als platform > **E-mail** als profieltype). 
 
 Er worden nieuwe ExchangeActiveSync-instellingen beschikbaar, waaronder:
 - Kies de services die u wilt synchroniseren (of blok keren synchronisatie), zoals e-mail, agenda en contact personen.
-- Gebruikers toestaan om de synchronisatie-instellingen voor deze services op hun apparaten te wijzigen. 
+- Gebruikers toestaan (weigeren) de synchronisatie-instellingen voor deze services op hun apparaten te wijzigen. 
 
 Als u de huidige instellingen wilt zien, gaat u naar [e-mail Profiel instellingen voor IOS-apparaten in intune](../configuration/email-settings-ios.md).
 
@@ -158,8 +158,8 @@ Van toepassing op:
 - iOS 13.0 en hoger
 - iPadOS 13.0 en hoger
 
-### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>Voor komen dat gebruikers persoonlijke Google-accounts toevoegen aan de eigenaar van het Android-apparaat en de toegewezen apparaten<!-- 5353228  -->
-U kunt voor komen dat gebruikers persoonlijke Google-accounts maken op Android Enter prise Device-eigenaar en toegewezen apparaten (**apparaatconfiguratie** > **profielen** > **profiel maken** > **Android Enter prise** alleen voor platform > **apparaat-eigenaar > beperkingen van apparaten** voor profiel type > **gebruikers en account instellingen**).
+### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>Voorkomen dat gebruikers persoonlijke Google-accounts toevoegen aan Android Enterprise-apparaten van eigenaar en aan toegewezen Android Enterprise-apparaten<!-- 5353228  -->
+U kunt voorkomen dat gebruikers persoonlijke Google-accounts maken op Android Enterprise-apparaten van eigenaar en op toegewezen Android Enterprise-apparaten (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android Enterprise** voor platform > **Alleen apparaateigenaar > Apparaatbeperkingen** voor profieltype > **Instellingen voor gebruikers en accounts**).
 
 Ga naar [Met Android Enterprise-apparaatinstellingen functies toestaan of beperken met behulp van Intune](../configuration/device-restrictions-android-for-work.md) als u alle instellingen wilt bekijken die u momenteel kunt configureren.
 
@@ -167,8 +167,8 @@ Van toepassing op:
 - Android Enterprise-apparaateigenaar
 - Toegewezen Android Enterprise-apparaten
 
-### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>De instelling logboek registratie aan server zijde voor SIRI-opdrachten wordt verwijderd in profiel voor iOS-apparaten<!-- 5468501  -->
-Op iOS-apparaten kunt u een profiel voor beperkingen voor apparaten maken waarmee logboek registratie aan de server zijde wordt geconfigureerd voor SIRI-opdrachten (**apparaatconfiguratie** > **profielen** > **maken** > **IOS/iPadOS** voor platform > **Beperkingen** voor het profiel type > **ingebouwde apps**). De instelling **logboek registratie aan server zijde voor SIRI-opdrachten** wordt verwijderd.
+### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>De instelling Logboekregistratie op de server voor Siri-opdrachten wordt verwijderd in het profiel voor iOS-apparaatbeperkingen<!-- 5468501  -->
+Op iOS-apparaten kunt u een profiel voor beperkingen voor apparaten maken waarmee logboek registratie aan de server zijde wordt geconfigureerd voor SIRI-opdrachten (**apparaatconfiguratie** > **profielen** > **maken** > **IOS/iPadOS** voor platform > **beperkingen van apparaten** voor profiel type > **ingebouwde apps**). De instelling **logboek registratie aan server zijde voor SIRI-opdrachten** wordt verwijderd.
 
 Deze instelling wordt verwijderd uit de intune-beheer console. Deze instelling heeft geen effect op het apparaat, zelfs als bestaande beleids regels waarvoor deze instelling is geconfigureerd, de instelling blijven weer geven. Als u de instelling uit bestaande beleids regels wilt verwijderen, gaat u naar het beleid, maakt u een kleine bewerking, slaat u deze op en wordt het beleid bijgewerkt.
 

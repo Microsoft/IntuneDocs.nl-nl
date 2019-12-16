@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390927"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946647"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -31,6 +31,8 @@ In dit artikel vindt u een overzicht en beschrijving van de verschillende instel
 [Maak een apparaatconfiguratieprofiel](device-restrictions-configure.md).
 
 ## <a name="device-owner-only"></a>Alleen eigenaar van het apparaat
+
+Deze instellingen zijn van toepassing op Android Enter prise-inschrijvings typen waarbij intune het hele apparaat beheert, zoals volledig beheerde Android-of speciale apparaten.
 
 ### <a name="general-settings"></a>Algemene instellingen
 
@@ -242,6 +244,7 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
   > [!IMPORTANT]
   > - De VPN-client die u kiest moet op het apparaat worden geïnstalleerd en moet VPN per app in werkprofielen ondersteunen. Anders treedt er een fout op. 
   > - U dient de VPN-client-app goed te keuren in de **Beheerde Google Play Store**, de app te synchroniseren naar Intune en de app te implementeren op het apparaat. Nadat u dit hebt gedaan, is de app geïnstalleerd in het werkprofiel van de gebruiker.
+  > - U moet de VPN-client nog steeds configureren met een [VPN-profiel](vpn-settings-android-enterprise.md)of via een [app-configuratie profiel](../apps/app-configuration-policies-use-android.md).
   > - Er zijn mogelijk bekende problemen bij het gebruik van VPN per app met F5 Access voor Android 3.0.4. Zie [Releaseopmerkingen voor F5 Access voor Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) voor meer informatie.
 
 - **Vergrendelingsmodus**: kies **Inschakelen** als u wilt afdwingen dat al het verkeer de VPN-tunnel gebruikt. Als er geen VPN-verbinding is ingesteld, heeft het apparaat geen toegang tot het netwerk.
@@ -264,6 +267,8 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
     Zie voor meer informatie over PAC-bestanden het [bestand voor automatische proxy-configuratie (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opent een niet-micro soft-site).
 
 ## <a name="work-profile-only"></a>Alleen werkprofiel
+
+Deze instellingen zijn van toepassing op Android Enter prise-inschrijvings typen waarbij intune alleen het werk profiel beheert, zoals de inschrijving van een Android Enter prise-werk profiel op een persoonlijk of een privé apparaat (BYOD).
 
 ### <a name="work-profile-settings"></a>Werkprofielinstellingen
 

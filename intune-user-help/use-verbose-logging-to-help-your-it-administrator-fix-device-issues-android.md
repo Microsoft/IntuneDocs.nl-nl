@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508017"
 ---
 # <a name="configure-logging-settings"></a>Instellingen voor logboek registratie configureren
@@ -44,7 +44,7 @@ Bij uitgebreide logboek registratie worden alle acties in de Bedrijfsportal-app 
 In de Microsoft Intune-app kunt u het niveau van de logboek gegevens configureren. Het niveau wordt standaard ingesteld op **belang rijk**. Details van logboek registratie aanpassen:  
 
 1. Open de app Microsoft Intune.  
-2. Tik op **instellingen**.  
+2. Tik op **Instellingen**.  
 3. Onder **Details logboek niveau**, selecteer **uitgebreid** om het niveau van de opgenomen gegevens te verhogen of selecteer **uitschakelen** om logboek registratie uit te scha kelen.  
 
 ## <a name="next-steps"></a>Volgende stappen  

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058430"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Instellingen voor Windows 10 (en hoger) om apparaten te beveiligen met Intune
@@ -44,7 +44,7 @@ Application Guard is alleen beschikbaar voor apparaten met de 64 bitsversie van 
 
 - **Application Guard**  
   **Standaard**: niet geconfigureerd  
-   Application Guard CSP: [instellingen/AllowWindowsDefenderApplicationGuard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
+   Application Guard CSP: [Settings/AllowWindowsDefenderApplicationGuard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
 
   - **Ingeschakeld voor Edge**: hiermee wordt deze functie ingeschakeld en worden niet-vertrouwde sites geopend in een met Hyper-V gevirtualiseerde browsercontainer.  
   - **Niet geconfigureerd** : elke site (vertrouwd en niet-vertrouwd) kan op het apparaat worden geopend.  
@@ -120,7 +120,7 @@ Application Guard is alleen beschikbaar voor apparaten met de 64 bitsversie van 
   - **Inschakelen**: gebruikers kunnen bestanden vanuit de gevirtualiseerde browser downloaden naar het hostbesturingssysteem.  
   - **Niet geconfigureerd**: hiermee houdt u de bestanden lokaal op het apparaat en downloadt u bestanden niet naar het hostbestandssysteem.  
 
-## <a name="microsoft-defender-firewall"></a>Microsoft Defender firewall  
+## <a name="microsoft-defender-firewall"></a>Micro soft Defender firewall  
  
 ### <a name="global-settings"></a>Globale instellingen  
 
@@ -194,7 +194,7 @@ De volgende instellingen worden één keer vermeld in dit artikel, maar zijn all
 
 #### <a name="general-settings"></a>Algemene instellingen  
 
-- **Microsoft Defender firewall**  
+- **Micro soft Defender firewall**  
   **Standaard**: niet geconfigureerd  
   Firewall CSP: [EnableFirewall](https://go.microsoft.com/fwlink/?linkid=872558)  
   
@@ -222,7 +222,7 @@ De volgende instellingen worden één keer vermeld in dit artikel, maar zijn all
   **Standaard**: niet geconfigureerd  
   Firewall CSP: [afgeschermd](https://go.microsoft.com/fwlink/?linkid=872561)  
     - **Niet geconfigureerd**  
-    - **Blok keren** : wanneer de Microsoft Defender firewall is ingeschakeld en deze instelling is ingesteld op *blok keren*, wordt al het binnenkomende verkeer geblokkeerd, ongeacht andere beleids instellingen. 
+    - **Blok keren** : wanneer de micro soft Defender firewall is ingeschakeld en deze instelling is ingesteld op *blok keren*, wordt al het binnenkomende verkeer geblokkeerd, ongeacht andere beleids instellingen. 
     - **Toestaan** : wanneer deze optie is ingesteld op *toestaan*, wordt deze instelling uitgeschakeld en wordt binnenkomend verkeer toegestaan op basis van andere beleids instellingen.
 
 - **Unicast-antwoorden voor multicast-broadcasts**  
@@ -422,7 +422,7 @@ Geef de lokale en externe poorten op waarop deze regel van toepassing is.
 
 ## <a name="microsoft-defender-smartscreen-settings"></a>Instellingen voor Microsoft Defender SmartScreen  
  
-Microsoft Edge moet op het apparaat zijn geïnstalleerd.  
+Micro soft Edge moet op het apparaat zijn geïnstalleerd.  
 
 - **SmartScreen voor apps en bestanden**  
   **Standaard**: niet geconfigureerd  
@@ -636,7 +636,7 @@ Deze instellingen zijn van toepassing zijn op gegevensstations van het besturing
     - **Back-up maken van herstelwachtwoorden en sleutelpakketten**  
     - **Alleen een back-up maken van herstelwachtwoorden**  
 
-  - **Rotatie van op client gebaseerd herstel wachtwoord**  
+  - **Clientgestuurde rotatie van herstelwachtwoorden**  
     **Standaard**: sleutel rotatie ingeschakeld voor apparaten die lid zijn van Azure AD  
     BitLocker CSP: [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     
@@ -733,7 +733,7 @@ Deze instellingen zijn specifiek van toepassing op vaste-gegevens stations.
     - **Back-up maken van herstelwachtwoorden en sleutelpakketten**  
     - **Alleen een back-up maken van herstelwachtwoorden**  
 
-  - **Rotatie van op client gebaseerd herstel wachtwoord**  
+  - **Clientgestuurde rotatie van herstelwachtwoorden**  
     **Standaard**: sleutel rotatie ingeschakeld voor apparaten die lid zijn van Azure AD  
     BitLocker CSP: [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     
@@ -771,7 +771,7 @@ Deze instellingen zijn specifiek van toepassing op Verwissel bare gegevens stati
     - **Blokkeren**: schrijftoegang blokkeren voor apparaten die zijn geconfigureerd in een andere organisatie.  
     - **Niet geconfigureerd** -schrijf toegang weigeren.  
  
-## <a name="microsoft-defender-exploit-guard"></a>Microsoft Defender exploit Guard  
+## <a name="microsoft-defender-exploit-guard"></a>Micro soft Defender exploit Guard  
 
 Gebruik [exploit Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) om de kwets baarheid te beheren en te verminderen van de apps die door uw werk nemers worden gebruikt.  
 
@@ -992,7 +992,7 @@ Blok keer uitgaande verbindingen van elke app naar IP-adressen of domeinen met e
 
 ## <a name="microsoft-defender-application-control"></a>Microsoft Defender-toepassingsbeheer  
 
-Kies de extra apps die moeten worden gecontroleerd door of die kunnen worden vertrouwd om te worden uitgevoerd door Microsoft Defender Application Control. Windows-onderdelen en alle apps uit Windows Store worden automatisch vertrouwd.  
+Kies de extra apps die moeten worden gecontroleerd door of die kunnen worden vertrouwd om te worden uitgevoerd door micro soft Defender Application Control. Windows-onderdelen en alle apps uit Windows Store worden automatisch vertrouwd.  
 
 
 - **Beleid voor toepassings beheer code-integriteit**  
@@ -1007,7 +1007,7 @@ Kies de extra apps die moeten worden gecontroleerd door of die kunnen worden ver
  
   - **Alleen controle** : toepassingen worden niet geblokkeerd. Alle gebeurtenissen worden geregistreerd in de logboeken van de lokale client.  
 
-## <a name="microsoft-defender-credential-guard"></a>Microsoft Defender Credential Guard  
+## <a name="microsoft-defender-credential-guard"></a>Micro soft Defender Credential Guard  
 
 Microsoft Defender Credential Guard beschermt tegen aanvallen waarbij referenties worden gestolen. Het isoleert geheimen zodat alleen bevoegde systeemsoftware er toegang toe heeft.  
 
@@ -1033,7 +1033,7 @@ Microsoft Defender Credential Guard beschermt tegen aanvallen waarbij referentie
 
 ## <a name="microsoft-defender-security-center"></a>Microsoft Defender-beveiligingscentrum  
 
-Het Microsoft Defender-beveiligingscentrum werkt als een afzonderlijke app of een afzonderlijk proces van de afzonderlijke functies. Deze geeft meldingen weer via het onderhoudscentrum. Het fungeert als een collector of één afzonderlijke plaats om de status te zien en een configuratie van de functies uit te voeren. Meer informatie vindt u in de [Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) docs.  
+Het Microsoft Defender-beveiligingscentrum werkt als een afzonderlijke app of een afzonderlijk proces van de afzonderlijke functies. Deze geeft meldingen weer via het onderhoudscentrum. Het fungeert als een collector of één afzonderlijke plaats om de status te zien en een configuratie van de functies uit te voeren. Meer informatie vindt u in de [micro soft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) docs.  
 
 ### <a name="microsoft-defender-security-center-app-and-notifications"></a>Microsoft Defender-beveiligingscentrum-app en meldingen  
 
@@ -1043,7 +1043,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Microso
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableVirusUI](https://go.microsoft.com/fwlink/?linkid=873662)  
 
-  Configureren of eind gebruikers het gebied virus-en bedreigings beveiliging in Microsoft Defender Security Center kunnen bekijken. Door deze sectie te verbergen, worden ook alle meldingen met betrekking tot virus-en bedreigings beveiliging geblokkeerd.  
+  Configureren of eind gebruikers het gebied virus-en bedreigings beveiliging in micro soft Defender Security Center kunnen bekijken. Door deze sectie te verbergen, worden ook alle meldingen met betrekking tot virus-en bedreigings beveiliging geblokkeerd.  
 
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1052,7 +1052,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Microso
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [HideRansomwareDataRecovery](https://go.microsoft.com/fwlink/?linkid=873664)  
 
-  Configureren of eind gebruikers het gebied bescherming tegen Ransomware kunnen weer geven in Microsoft Defender Security Center. Door deze sectie te verbergen, worden ook alle meldingen die betrekking hebben op Ransomware-beveiliging geblokkeerd.  
+  Configureren of eind gebruikers het gebied bescherming tegen Ransomware kunnen weer geven in micro soft Defender Security Center. Door deze sectie te verbergen, worden ook alle meldingen die betrekking hebben op Ransomware-beveiliging geblokkeerd.  
 
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1061,7 +1061,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Microso
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableAccountProtectionUI](https://go.microsoft.com/fwlink/?linkid=873666)  
 
-  Configureren of eind gebruikers het gedeelte account beveiliging in de Microsoft Defender Security Center kunnen bekijken. Als u deze sectie verbergt, worden ook alle meldingen met betrekking tot account beveiliging geblokkeerd.  
+  Configureren of eind gebruikers het gedeelte account beveiliging in de micro soft Defender Security Center kunnen bekijken. Als u deze sectie verbergt, worden ook alle meldingen met betrekking tot account beveiliging geblokkeerd.  
 
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1070,7 +1070,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Microso
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableNetworkUI](https://go.microsoft.com/fwlink/?linkid=873668)  
 
-  Configureren of eind gebruikers het gebied firewall en netwerk beveiliging kunnen weer geven in het Microsoft Defender-beveiligings centrum. Door deze sectie te verbergen, worden ook alle meldingen met betrekking tot Firewall-en netwerk beveiliging geblokkeerd.  
+  Configureren of eind gebruikers het gebied firewall en netwerk beveiliging kunnen weer geven in het micro soft Defender-beveiligings centrum. Door deze sectie te verbergen, worden ook alle meldingen met betrekking tot Firewall-en netwerk beveiliging geblokkeerd.  
 
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1079,7 +1079,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Microso
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableAppBrowserUI](https://go.microsoft.com/fwlink/?linkid=873669)  
 
-  Configureren of eind gebruikers het besturings gebied app en browser kunnen weer geven in het Microsoft Defender-beveiligings centrum. Door deze sectie te verbergen, worden ook alle meldingen die betrekking hebben op app-en browser beheer geblokkeerd.  
+  Configureren of eind gebruikers het besturings gebied app en browser kunnen weer geven in het micro soft Defender-beveiligings centrum. Door deze sectie te verbergen, worden ook alle meldingen die betrekking hebben op app-en browser beheer geblokkeerd.  
 
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1088,7 +1088,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Microso
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableDeviceSecurityUI](https://go.microsoft.com/fwlink/?linkid=873670)  
 
-  Configureren of eind gebruikers het gebied voor hardware-beveiliging in de Microsoft Defender Security Center kunnen bekijken. Door deze sectie te verbergen, worden ook alle meldingen die betrekking hebben op de beveiliging van hardware geblokkeerd.  
+  Configureren of eind gebruikers het gebied voor hardware-beveiliging in de micro soft Defender Security Center kunnen bekijken. Door deze sectie te verbergen, worden ook alle meldingen die betrekking hebben op de beveiliging van hardware geblokkeerd.  
 
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1097,7 +1097,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Microso
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableHealthUI](https://go.microsoft.com/fwlink/?linkid=873671)  
 
-  Configureren of eind gebruikers het gebied prestaties en status van het apparaat kunnen bekijken in het Microsoft Defender-beveiligings centrum. Als u deze sectie verbergt, worden ook alle meldingen die betrekking hebben op de prestaties en status van het apparaat geblokkeerd.  
+  Configureren of eind gebruikers het gebied prestaties en status van het apparaat kunnen bekijken in het micro soft Defender-beveiligings centrum. Als u deze sectie verbergt, worden ook alle meldingen die betrekking hebben op de prestaties en status van het apparaat geblokkeerd.  
   
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1106,7 +1106,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Microso
   **Standaard**: niet geconfigureerd  
   WindowsDefenderSecurityCenter CSP: [DisableFamilyUI](https://go.microsoft.com/fwlink/?linkid=873673)  
 
-  Configureren of eind gebruikers het gebied met gezins opties kunnen weer geven in het Microsoft Defender-beveiligings centrum. Als u deze sectie verbergt, worden ook alle meldingen met betrekking tot gezins opties geblokkeerd.  
+  Configureren of eind gebruikers het gebied met gezins opties kunnen weer geven in het micro soft Defender-beveiligings centrum. Als u deze sectie verbergt, worden ook alle meldingen met betrekking tot gezins opties geblokkeerd.  
   
   - **Niet geconfigureerd**  
   - **Verbergen**  
@@ -1148,7 +1148,7 @@ Blokkeer de toegang van eindgebruikers tot verschillende gebieden van de Microso
 - **Bescherming tegen knoeien**  
   **Standaard**: niet geconfigureerd
 
-  Ingrijpende beveiliging in-of uitschakelen op apparaten. Als u onrecht matige beveiliging wilt gebruiken, moet u [Microsoft Defender Advanced Threat Protection integreren met intune](advanced-threat-protection.md)en beschikken over [Enterprise Mobility + Security E5-licenties](../fundamentals/licenses.md).  
+  Ingrijpende beveiliging in-of uitschakelen op apparaten. Als u onrecht matige beveiliging wilt gebruiken, moet u [micro soft Defender Advanced Threat Protection integreren met intune](advanced-threat-protection.md)en beschikken over [Enterprise Mobility + Security E5-licenties](../fundamentals/licenses.md).  
   - **Niet geconfigureerd** : er is geen wijziging aangebracht in Apparaatinstellingen.
   - Beveiliging op ingrijpen **is ingeschakeld en** beperkingen worden afgedwongen op apparaten.
   - **Uitgeschakeld** : beveiliging tegen knoei is uitgeschakeld en de beperkingen worden niet afgedwongen.
@@ -1201,7 +1201,7 @@ Gebruik deze opties voor het configureren van de lokale beveiligingsinstellingen
 
 
   - **Blokkeren**: voorkomen dat gebruikers nieuwe Microsoft-accounts aan het apparaat toevoegen.  
-  - **Niet geconfigureerd** : gebruikers kunnen Microsoft-accounts op het apparaat gebruiken.  
+  - **Niet geconfigureerd** : gebruikers kunnen micro soft-accounts op het apparaat gebruiken.  
 
 - **Extern aanmelden zonder wachtwoord**  
   **Standaard**: niet geconfigureerd  

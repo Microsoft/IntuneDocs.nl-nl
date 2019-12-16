@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 348768be4a42667f579df0ccb500434425258db0
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712851"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991798"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Problemen met inschrijving van Windows-apparaten in Microsoft Intune oplossen
 
@@ -38,7 +38,7 @@ Verzamel de volgende informatie over het probleem:
 - Waar wordt het fout bericht weer gegeven?
 - Wanneer is het probleem begonnen? Heeft de inschrijving ooit gewerkt? 
 - Welk platform (Android, iOS, Windows) heeft het probleem?
-- Hoeveel gebruikers zijn er betrokken? Zijn alle gebruikers betrokken of slechts een deel ervan?
+- Hoeveel gebruikers treft het probleem? Zijn alle gebruikers betrokken of slechts een deel ervan?
 - Hoeveel apparaten heeft het probleem? Zijn alle apparaten betrokken of slechts een deel ervan?
 - Wat is de MDM-instantie? Als het System Center Configuration Manager, welke versie van Configuration Manager gebruikt u?
 - Hoe wordt de inschrijving uitgevoerd? Kunt u uw eigen apparaat (BYOD) of Apple Device Enrollment Program (DEP) met inschrijvings profielen meenemen?
@@ -60,8 +60,8 @@ Fout 80180003: Er is iets misgegaan. Deze gebruiker is niet gemachtigd om in te 
 Er zijn verschillende mogelijke oplossingen voor dit probleem:
 
 ##### <a name="remove-devices-that-were-enrolled"></a>Apparaten verwijderen die zijn geregistreerd
-1. Meld u aan bij het [micro soft Endpoint Manager-beheer centrum](https://go.microsoft.com/fwlink/?linkid=2109431).    
-2. Ga naar **gebruikers**  > **alle gebruikers**.    
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).    
+2. Ga naar **gebruikers** > **alle gebruikers**.    
 3. Selecteer het betrokken gebruikers account en klik vervolgens op **apparaten**.    
 4. Selecteer alle ongebruikte of ongewenste apparaten en klik vervolgens op **verwijderen**. 
 
@@ -70,13 +70,13 @@ Er zijn verschillende mogelijke oplossingen voor dit probleem:
 > [!NOTE]
 > Deze methode verhoogt de registratie limiet voor apparaten voor alle gebruikers, niet alleen de betrokken gebruiker.
 
-1. Meld u aan bij het [micro soft Endpoint Manager-beheer centrum](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Ga naar inschrijving van **apparaten**  > **inschrijvings beperkingen**en selecteer vervolgens **limieten voor het aantal apparaten**.    
-3. Verhoog de waarde van de limiet van het **apparaat**. 
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Ga naar **apparaten** > **inschrijvings beperkingen** > **standaard** (onder beperkingen van het **apparaat**) > **Eigenschappen** > **bewerken** (naast **limiet**van het apparaat) > de limiet voor het aantal **apparaten** verhogen (Maxi maal 15) > **controleren en opslaan**.    
+ 
 
 ##### <a name="check-device-type-restrictions"></a>Beperkingen voor apparaattypen controleren
 1. Meld u aan bij het [micro soft Endpoint Manager-beheer centrum](https://go.microsoft.com/fwlink/?linkid=2109431) met een algemeen beheerders account.
-2. Ga naar inschrijving van **apparaten**  > **inschrijvings beperkingen**en selecteer vervolgens de **standaard** beperking onder beperkingen voor het **Apparaattype**.    
+2. Ga naar **apparaten** > **registratie beperkingen**en selecteer vervolgens de **standaard** beperking onder beperkingen voor het **Apparaattype**.    
 3. Selecteer **platforms**en selecteer vervolgens **toestaan** voor **Windows (MDM)** .
 
     > [!IMPORTANT]
@@ -97,7 +97,7 @@ Fout 0x801c0003: ' deze gebruiker is niet gemachtigd om in te schrijven. U kunt 
 
 #### <a name="resolution"></a>Oplossing
 1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
-2. Ga naar **Azure Active Directory**  > **apparaten**  > **Apparaatinstellingen**.    
+2. Ga naar **Azure Active Directory** > **apparaten** > **Apparaatinstellingen**.    
 3. Stel **Gebruikers mogen apparaten aan Azure AD toevoegen** in op **Alle**.    
 4. Schrijf het apparaat opnieuw in.   
 
@@ -106,7 +106,7 @@ Fout 0x801c0003: ' deze gebruiker is niet gemachtigd om in te schrijven. U kunt 
 Fout 8018000a: er is iets verkeerd gegaan. Het apparaat is al ingeschreven.  U kunt contact opnemen met de systeem beheerder met de fout code 8018000a. "
 
 **Oorzaak:** Een van de volgende voor waarden is waar:
-- Een andere gebruiker heeft het apparaat al Inge schreven bij intune of het apparaat is toegevoegd aan Azure AD. Als u wilt weten of dit het geval is, gaat u naar **instellingen**  > **accounts**  > **toegang tot het werk**. Zoek naar een bericht dat er ongeveer als volgt uitziet: ' een andere gebruiker op het systeem is al verbonden met een werk-of school account. Verwijder die werk-of school verbinding en probeer het opnieuw. "    
+- Een andere gebruiker heeft het apparaat al Inge schreven bij intune of het apparaat is toegevoegd aan Azure AD. Als u wilt weten of dit het geval is, gaat u naar **instellingen** > **accounts** > **toegang tot het werk**. Zoek naar een bericht dat er ongeveer als volgt uitziet: ' een andere gebruiker op het systeem is al verbonden met een werk-of school account. Verwijder die werk-of school verbinding en probeer het opnieuw. "    
 - De Configuration Manager-client agent wordt op de computer geïnstalleerd.    
 
 #### <a name="resolution"></a>Oplossing
@@ -115,7 +115,7 @@ Gebruik een van de volgende methoden om dit probleem op te lossen:
 
 ##### <a name="remove-the-other-work-or-school-account"></a>Het andere werk-of school account verwijderen
 1. Meld u af bij Windows en meld u vervolgens aan met het andere account dat is inge schreven of lid is van het apparaat.    
-2. Ga naar **instellingen**  > **accounts**  > **toegang tot het werk**en verwijder vervolgens het werk-of school account.
+2. Ga naar **instellingen** > **accounts** > **toegang tot het werk**en verwijder vervolgens het werk-of school account.
 3. Meld u af bij Windows en meld u vervolgens aan met uw account.    
 4. Registreer het apparaat bij intune of Voeg het apparaat toe aan Azure AD. 
 
@@ -167,7 +167,7 @@ Gebruik een van de volgende methoden om dit probleem op te lossen:
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Schakel automatische inschrijving voor MDM in azure uit.
 1. Meld u aan bij [Azure Portal](https://portal.azure.com/).    
-2. Ga naar **Azure Active Directory**  > **mobiliteit (MDM en MAM)**  > **Microsoft intune**.    
+2. Ga naar **Azure Active Directory** > **mobiliteit (MDM en MAM)**  > **Microsoft intune**.    
 3. Stel het **MDM-gebruikers bereik** in op **geen**, en klik vervolgens op **Opslaan**.    
      
 ##### <a name="uninstall"></a>Verwijderen
@@ -181,7 +181,7 @@ Fout: de software kan niet worden geïnstalleerd, 0x80cf4017.
 
 #### <a name="resolution"></a>Oplossing
 1. Meld u aan bij [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com).    
-2. Ga naar **Admin**  > **client software downloaden**en klik vervolgens op **client software downloaden**.    
+2. Ga naar **Admin** > **client software downloaden**en klik vervolgens op **client software downloaden**.    
 3. Sla het installatie pakket op en installeer vervolgens de client software. 
 
 
@@ -193,7 +193,7 @@ Fout: "Het accountcertificaat is niet geldig en is mogelijk verlopen, 0x80cf4017
 
 #### <a name="resolution"></a>Oplossing
 1. Meld u aan bij [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com).    
-2. Ga naar **Admin**  > **client software downloaden**en klik vervolgens op **client software downloaden**.    
+2. Ga naar **Admin** > **client software downloaden**en klik vervolgens op **client software downloaden**.    
 3. Sla het installatie pakket op en installeer vervolgens de client software.    
 
 ### <a name="your-organization-does-not-support-this-version-of-windows"></a>Deze versie van Windows wordt niet ondersteund in uw organisatie. 
@@ -205,16 +205,15 @@ Fout: ' er is een probleem opgetreden. Deze versie van Windows wordt niet onders
 #### <a name="resolution"></a>Oplossing
 Voer de volgende stappen uit om dit probleem in een zelfstandige intune-omgeving op te lossen: 
  
-1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
-2. Selecteer **intune** aan de linkerkant en ga vervolgens naar **inschrijvings** **beperkingen**voor apparaten  > .    
-3. Klik **in beperkingen**voor het apparaattype op **platforms**en selecteer vervolgens **toestaan** voor **Windows (MDM)** .    
-4. Klik op **Opslaan**.    
+1. Kies in het [beheer centrum van micro soft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) **apparaten** > **inschrijvings beperkingen** > Kies een beperking voor het apparaattype.    
+2. Kies **eigenschappen** > **bewerken** (naast **platform instellingen**) > **toestaan** voor **Windows (MDM)** .    
+3. Klik op **controleren en opslaan**.    
  
 Voer de volgende stappen uit om dit probleem op te lossen in hybride MDM met intune en Configuration Manager: 
 1. Open de Configuration Manager-console.    
 2. Selecteer **beheer**en selecteer vervolgens **Cloud Services**.    
 3. Klik met de rechter muisknop op **Microsoft intune abonnement**en selecteer vervolgens **platforms configureren > Windows**.    
-4. Schakel het selectie vakje **Windows-inschrijving inschakelen**  >   > **OK** **toe** .  
+4. Schakel het selectie vakje **Windows-inschrijving inschakelen** >  > **OK** **toe** .  
 
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Er is een fout opgetreden tijdens de bulk registratie.
@@ -236,7 +235,7 @@ Zie voor meer informatie over de app school Pc's instellen [de app school-Pc's i
 ### <a name="auto-mdm-enroll-failed"></a>Automatische MDM-inschrijving: mislukt 
 
 Wanneer u een Windows 10-apparaat automatisch probeert te registreren met behulp van groepsbeleid, treden de volgende problemen op: 
-- In Task Scheduler, onder **micro soft**  > **Windows**  > **EnterpriseMgmt**, is het resultaat van de laatste uitvoering van het schema dat is **gemaakt door de registratie-client voor automatische inschrijving in MDM van Aad** taak als volgt: **gebeurtenis 76 Automatische MDM-inschrijving: mislukt (onbekende Win32-fout code: 0x8018002b)**       
+- In Task Scheduler, onder **micro soft** > **Windows** > **EnterpriseMgmt**, is het resultaat van de laatste uitvoering van het schema dat is **gemaakt door de registratie-client voor automatische inschrijving in MDM van AAD** -taak als volgt: **gebeurtenis 76 auto MDM-inschrijving: mislukt (onbekende Win32-fout code: 0x8018002b)**       
 - In Logboeken wordt de volgende gebeurtenis geregistreerd onder **Logboeken toepassingen en services/micro soft/Windows/DeviceManagement-Enter prise-Diagnostics-provider/admin**:   
     ```asciidoc
     Log Name: Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin
@@ -336,7 +335,7 @@ Dit probleem treedt doorgaans op voordat het apparaat opnieuw wordt opgestart in
 
 #### <a name="resolution"></a>Oplossing
 
-1. Ga naar**de registratie van** **intune** - >   apparaten  >  Windows-**inschrijving**  > **apparaten**.
+1. Kies in het [micro soft Endpoint Manager-beheer centrum](https://go.microsoft.com/fwlink/?linkid=2109431)de optie > **apparaten** > **Windows** - > **Windows-apparaten**.
 2. Selecteer het apparaat waarop het probleem zich voordoet > Klik op het weglatings teken (...) aan de rechter kant.
 3. Selecteer **gebruiker niet toewijzen** en wacht totdat het proces is voltooid.
 4. Controleer of het hybride Azure AD Auto Pilot-profiel is toegewezen voordat u OOBE opnieuw probeert uit te voeren.
@@ -376,18 +375,18 @@ Dit probleem wordt meestal veroorzaakt door onjuiste delegering van machtigingen
 3. Kies in de wizard **Overdracht van beheer** **Volgende** > **Toevoegen** > **Objecttypen**.
 4. Selecteer in het deelvenster **Objecttypen** het selectievakje **Computers** > **OK**.
 5. Voer in het deelvenster voor het selecteren van **Gebruikers**, **Computers** of **Groepen** in het vak **Te selecteren objectnamen invoeren** de naam in van de computer waarop de connector is geïnstalleerd.
-6. Selecteer **Namen controleren** om uw invoer te valideren > **OK**  > **volgende**.
+6. Selecteer **Namen controleren** om uw invoer te valideren > **OK** > **volgende**.
 7. Selecteer **Een aangepaste taak maken om te delegeren** > **Volgende**.
 8. Selecteer het selectievakje **Alleen de volgende objecten in de map** en schakel vervolgens de selectievakjes **Computerobjecten**, **Geselecteerde objecten in deze map maken** en **Geselecteerde objecten in deze map verwijderen** in.
 9. Selecteer **Volgende**.
 10. Onder **Machtigingen** schakelt u het selectievakje **Volledige bevoegdheid** in. Met deze actie selecteert u alle andere opties.
-11. Selecteer **volgende**  > **volt ooien**.
+11. Selecteer **volgende** > **volt ooien**.
 
 ## <a name="next-steps"></a>Volgende stappen
 
 - [Problemen bij de apparaatinschrijving oplossen](../troubleshoot-device-enrollment-in-intune.md)
 - [Stel een vraag op het Intune-forum](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
-- [Raadpleeg de blog van het Microsoft Intune-ondersteunings team](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
-- [Bekijk de micro soft Enter prise Mobility and Security-Blog](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
+- [Lees de blog van het Microsoft Intune Support Team](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
+- [Lees de blog Microsoft Enterprise Mobility and Security](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Ondersteuning voor Microsoft Intune krijgen](../fundamentals/get-support.md)
 - [Inschrijvings fouten van co-beheer zoeken](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)

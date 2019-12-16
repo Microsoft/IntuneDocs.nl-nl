@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/01/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e59a4ba7a929df448eddaf36038c2d6deaa0a7a
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 96a89301bda738f57920b8d4e233663678e3fc91
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547938"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860275"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Instellingen voor Windows 10 (en hoger) om gedeelde apparaten te beheren met Intune
 
@@ -40,6 +40,8 @@ Zie [Control access, accounts, and power features on shared PC or multi-user dev
 
 ## <a name="shared-multi-user-device-settings"></a>Instellingen voor gedeelde apparaat voor meerdere gebruikers
 
+Deze instellingen gebruiken de [SHAREDPC CSP](https://docs.microsoft.com/windows/client-management/mdm/sharedpc-csp).
+
 - **Modus Gedeelde pc**: Kies **Inschakelen** om de modus voor gedeelde pc in te schakelen. In deze modus kan slechts één gebruiker tegelijk zich aanmelden bij het apparaat. Andere gebruikers kunnen zich pas aanmelden wanneer de eerste gebruiker zich heeft afgemeld. Door **niet te configureren** (standaard), wordt deze instelling niet beheerd via Intune en wordt er geen beleid gepusht voor het configureren van deze instelling op apparaten.
 - **Gastaccount**: kies ervoor om een gastoptie te maken op het aanmeldingsscherm. Voor een gastaccount zijn er geen gebruikersreferenties en verificatie nodig. Met deze instelling wordt er bij elk gebruik een nieuw lokaal account gemaakt. Uw opties zijn:
   - **Gast**: hiermee wordt lokaal op het apparaat een gastaccount gemaakt.
@@ -54,12 +56,16 @@ Zie [Control access, accounts, and power features on shared PC or multi-user dev
 
 - **Lokale opslag**: ste deze optie in op **ingeschakeld** om te voorkomen dat gebruikers bestanden opslaan op de harde schijf van het apparaat en bestanden van de harde schijf bekijken. Schakel deze optie **uit** om gebruikers via Verkenner bestanden te laten bekijken en opslaan. Door **niet te configureren** (standaard), wordt deze instelling niet beheerd via Intune en wordt er geen beleid gepusht voor het configureren van deze instelling op apparaten.
 - **Energiebeleid**: als dit wordt **ingeschakeld**, kunnen gebruikers de sluimerstand niet uitschakelen, kunnen ze de slaapstandacties niet overschrijven (bijvoorbeeld door de laptop dicht te klappen) en kunnen ze de energie-instellingen niet wijzigen. Als dit wordt **uitgeschakeld**, kunnen gebruikers het apparaat in de sluimerstand zetten, kunnen ze een laptop in de slaapstand zetten door deze dicht te klappen en kunnen ze de energie-instellingen wijzigen. Door **niet te configureren** (standaard), wordt deze instelling niet beheerd via Intune en wordt er geen beleid gepusht voor het configureren van deze instelling op apparaten.
-- **Time-out slaapstand (in seconden)** : Voer het aantal seconden inactiviteit in (0-100) voordat de slaapstand wordt ingeschakeld op het apparaat. Als u geen tijd instelt, wordt de slaapstand na 60 minuten ingeschakeld.
+- **Time-out slaapstand (in seconden)** : Voer het aantal seconden inactiviteit in (0-18000) voordat de slaapstand wordt ingeschakeld op het apparaat. `0` betekent dat het apparaat nooit in slaap stand is. Als u geen tijd instelt, wordt de slaapstand na 3600 seconden (60 minuten) ingeschakeld.
 - **Aanmelden wanneer de pc uit de slaapstand wordt gehaald**: stel deze optie in op **ingeschakeld** om gebruikers zich met een wachtwoord te laten aanmelden wanneer een apparaat weer uit de slaapstand wordt gehaald. Schakel deze optie **uit** als gebruikers hun gebruikersnaam en wachtwoord niet hoeven in te voeren. Door **niet te configureren** (standaard), wordt deze instelling niet beheerd via Intune en wordt er geen beleid gepusht voor het configureren van deze instelling op apparaten.
 - **Begintijd van onderhoud (in minuten vanaf middernacht)** : Voer in minuten (0-1440) in wanneer taken voor automatisch onderhoud, zoals het uitvoeren van Windows Update, moeten worden uitgevoerd. De reguliere begintijd is middernacht, oftewel nul (`0`) minuten. U kunt de begintijd wijzigen door een bepaald aantal minuten vanaf middernacht in te voeren als begintijd. Als u bijvoorbeeld wilt dat onderhoud om 2:00 uur wordt uitgevoerd, voert u `120` in. Als u wilt dat onderhoud om 20:00 uur wordt uitgevoerd, voert u `1200` in.
 - **Onderwijsbeleid**: stel deze optie in op **ingeschakeld** om de aanbevolen instellingen voor apparaten op scholen te gebruiken. Met deze instellingen worden meer beperkingen opgelegd. Schakel deze optie **uit** om het standaard- en aanbevolen onderwijsbeleid niet te gebruiken. Door **niet te configureren** (standaard), wordt deze instelling niet beheerd via Intune en wordt er geen beleid gepusht voor het configureren van deze instelling op apparaten.
 
   Zie [Windows 10 configuration recommendations for education customers](https://docs.microsoft.com/education/windows/configure-windows-for-education) (Windows 10-configuratieaanbevelingen voor klanten uit het onderwijs) voor meer informatie over het onderwijsbeleid.
+
+- **Snelle eerste aanmelding**: Kies **ingeschakeld** zodat gebruikers een snelle ervaring hebben met de eerste aanmelding. Wanneer deze functie is **ingeschakeld**, worden nieuwe Azure AD-accounts die geen beheerder zijn, automatisch verbonden met de vooraf geconfigureerde lokale accounts. Kies **uitgeschakeld** om de snelle eerste aanmelding te voor komen. Door **niet te configureren** (standaard), wordt deze instelling niet beheerd via Intune en wordt er geen beleid gepusht voor het configureren van deze instelling op apparaten.
+
+  [Verificatie/EnableFastFirstSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablefastfirstsignin)
 
 > [!TIP]
 > [Een gedeelde of gast-pc instellen](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) (hiermee wordt een andere Docs-website geopend) is een geweldige resource in deze Windows 10-functie, met concepten en groepsbeleid die kunnen worden ingesteld in de gedeelde modus.

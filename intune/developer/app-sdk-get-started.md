@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 9742305905c5ba49930e13646bf13d8c248426b6
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592026"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899386"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -63,7 +63,7 @@ De e-mailadressen die u vermeldt in uw antwoorden, worden gebruikt om contact me
 Als de dieptekoppeling voor uw app in de Store in de toekomst wordt gewijzigd, moet u de app opnieuw registreren.
 
 > [!NOTE]
-> Laat het ons weten als u uw app bijwerkt naar een nieuwe versie van de Intune App SDK.
+> U moet het ons laten weten als u uw app bijwerkt naar een nieuwe versie van de Intune App SDK.
 
 ## <a name="download-the-sdk-files"></a>De SDK-bestanden downloaden
 
@@ -72,7 +72,7 @@ De SDK's voor Intune-apps voor systeemeigen iOS en Android worden gehost op een 
 * [SDK voor Intune-apps voor iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [SDK voor Intune-apps voor Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-Als uw app een Xamarin-app is, gebruikt u de volgende SDK-variant:
+Als uw app een Xamarin-app is, gebruikt u deze SDK-variant:
 
 * [Microsoft Intune App SDK Xamarin Bindings](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 
@@ -164,7 +164,7 @@ Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integr
 
   * Zorg ervoor, als u uw app op een mobiel apparaat met een eindgebruikeraccount test, dat u dat account een Intune-licentie hebt gegeven op de website van ht Microsoft 365-beheercentrum nadat u bent aangemeld met een beheerdersaccount. Zie [Microsoft Intune-licentie toewijzen](../fundamentals/licenses-assign.md).
 
-* **Intune-beleid voor app-beveiliging**: als u uw app wilt testen aan de hand van alle Intune-beleid voor app-beveiliging, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](../apps/app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](../apps/app-protection-policy-settings-android.md). Als uw app in de Intune SDK is geïntegreerd, maar nog niet als een doel-app wordt vermeld in de Azure-portal, kunt u een beleid erop toepassen door de optie + Meer apps te selecteren en de bundel-id (iOS) of pakketnaam (Android) in het tekstvak op te geven.
+* **Intune-beleid voor app-beveiliging**: als u uw app wilt testen aan de hand van alle Intune-beleid voor app-beveiliging, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](../apps/app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](../apps/app-protection-policy-settings-android.md). Als uw app de intune SDK heeft geïntegreerd, maar niet wordt weer gegeven in de lijst met bedoelbare apps, kunt u de bundel-ID van de app (iOS) of de pakket naam (Android) opgeven in het tekstvak wanneer u aangepaste apps selecteert. 
 
 * **Probleemoplossing**: als u problemen ondervindt tijdens het handmatig testen van de gebruikerservaring van uw app-installatie, gaat u naar [Problemen met app-installatie oplossen](../apps/troubleshoot-app-install.md). 
 

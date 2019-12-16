@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73713474"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
@@ -303,7 +303,7 @@ Gebruik de volgende stappen om logboeken op te halen voor uw ingepakte toepassin
 
 ### <a name="collecting-crash-logs-from-the-system"></a>Vastlopende logboeken van het systeem verzamelen
 
-Uw app kan nuttige informatie vastleggen in de console van het iOS-client apparaat. Deze informatie is nuttig voor situaties waarin u een probleem ondervindt met de app en wilt achterhalen of dit probleem te maken heeft met de App Wrapping Tool. Als u deze informatie wilt ophalen, gebruikt u de volgende stappen:
+Uw app kan nuttige informatie vastleggen in de console van het iOS-client apparaat. Deze informatie is nuttig voor situaties waarin u een probleem ondervindt met de app en wilt achterhalen of dit probleem te maken heeft met de App Wrapping Tool of de app zelf. Als u deze informatie wilt ophalen, gebruikt u de volgende stappen:
 
 1. Reproduceer het probleem door de app uit te voeren.
 

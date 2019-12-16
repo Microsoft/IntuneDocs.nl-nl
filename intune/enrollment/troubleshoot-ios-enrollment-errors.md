@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e71ae2d2bcee22040c256ea711edd22b1d1fc80a
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199269"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832581"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Problemen met inschrijving van iOS-apparaten in Microsoft Intune oplossen
 
@@ -136,10 +136,10 @@ Als uw bedrijf meerdere domeinen heeft voor gebruikersreferenties, maakt u CNAME
 **Oorzaak:** De gebruiker probeert meer apparaten in te schrijven dan de registratie limiet van het apparaat.
 
 #### <a name="resolution"></a>Oplossing
-1. Open de [intune-beheer portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **apparaten** > **alle apparaten**en controleer het aantal apparaten dat de gebruiker heeft inge schreven.
+1. Kies in het [beheer centrum van micro soft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)de optie **apparaten** > **alle apparaten**en controleer het aantal apparaten dat de gebruiker heeft inge schreven.
     > [!NOTE]
     > U moet ook de betrokken gebruiker aanmelden bij de [intune-gebruikers Portal](https://portal.manage.microsoft.com/) en apparaten controleren die zijn Inge schreven. Er zijn mogelijk apparaten die worden weer gegeven in de [intune-gebruikers Portal](https://portal.manage.microsoft.com/) , maar niet in de [intune-beheer Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview), maar deze apparaten tellen ook mee voor de registratie limiet van het apparaat.
-2. Ga naar **beheer** > **beheer van mobiele apparaten** > **inschrijvings regels** > Controleer de limiet voor de inschrijving van apparaten. De limiet is standaard ingesteld op 15. 
+2. Kies in het [micro soft Endpoint Manager-beheer centrum](https://go.microsoft.com/fwlink/?linkid=2109431)de optie **apparaten** > **inschrijvings beperkingen** > Controleer de limiet voor de registratie van apparaten. De limiet is standaard ingesteld op 15. 
 3. Als het aantal apparaten dat is inge schreven, de limiet heeft bereikt, overbodige apparaten verwijdert of de registratie limiet van het apparaat verhoogt. Omdat elk geregistreerd apparaat een intune-licentie gebruikt, raden we u aan om altijd eerst overbodige apparaten te verwijderen.
 4. Schrijf het apparaat opnieuw in.
 
@@ -230,7 +230,7 @@ Wanneer u een DEP-beheerd apparaat inschakelt dat is toegewezen aan een inschrij
 #### <a name="resolution"></a>Oplossing
 
 1. Bewerk het inschrijvings profiel. U kunt een wijziging aanbrengen in het profiel. Het doel is de wijzigings tijd van het profiel bij te werken.
-2. Met DEP beheerde apparaten synchroniseren: Open de intune-Portal >- **beheerder** > **beheer van mobiele apparaten** > **IOS** > **Device Enrollment Program** > **Nu synchroniseren**. Er wordt een synchronisatieaanvraag verzonden naar Apple.
+2. Met DEP beheerde apparaten synchroniseren: kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaten** > **iOS** > **iOS-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token > **Nu synchroniseren**. Er wordt een synchronisatieaanvraag verzonden naar Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>DEP-inschrijving is vastgelopen bij gebruikers aanmelding
 Wanneer u een DEP-beheerd apparaat inschakelt dat is toegewezen aan een inschrijvings profiel, wordt de eerste Setup-stickes nadat u referenties hebt ingevoerd.
@@ -244,5 +244,5 @@ Schakel MFA uit en schrijf het apparaat opnieuw in.
 
 - [Problemen bij de apparaatinschrijving oplossen](../troubleshoot-device-enrollment-in-intune.md)
 - [Stel een vraag op het Intune-forum](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
-- [Raadpleeg de blog van het Microsoft Intune-ondersteunings team](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
-- [Bekijk de micro soft Enter prise Mobility and Security-Blog](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
+- [Lees de blog van het Microsoft Intune Support Team](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
+- [Lees de blog Microsoft Enterprise Mobility and Security](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
