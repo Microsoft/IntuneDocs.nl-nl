@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3c03c67a99b78804c999250f8d1148a4b3d1d97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6d24d1c7dbae12fb33ec277419b1bbfd47b46b07
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504766"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548051"
 ---
 # <a name="microsoft-intune-is-an-mdm-and-mam-provider-for-your-devices"></a>Microsoft Intune is een MDM- en MAM-provider voor uw apparaten
 
@@ -34,13 +34,13 @@ Geef een [grotere versie](./media/what-is-intune/intunearchitecture.svg) van het
 
 Met Intune kunt u het volgende doen:
 
-- Kiezen voor 100% werken in de cloud met Intune, of voor [co-beheer](https://docs.microsoft.com/sccm/comanage/overview) tussen Configuration Manager en Intune.
+- Kiezen voor 100% werken in de cloud met Intune, of voor [co-beheer](https://docs.microsoft.com/configmgr/comanage/overview) tussen Configuration Manager en Intune.
 - Regels instellen en instellingen configureren voor persoonlijke apparaten en apparaten die eigendom zijn van de organisatie, om toegang te krijgen tot gegevens en netwerken.
 - Apps implementeren en verifiëren op apparaten: on-premises en mobiel.
 - Uw bedrijfsgegevens beschermen door de manier te bepalen waarop gebruikers gegevens kunnen openen en delen.
 - Ervoor zorgen dat apparaten en apps voldoen aan de beveiligingsvereisten.
 
-## <a name="manage-devices"></a>Beheer apparaten
+## <a name="manage-devices"></a>Apparaten beheren
 
 In Intune beheert u apparaten met behulp van de methode die het meest geschikt is voor u. Voor apparaten die eigendom zijn van de organisatie, wilt u mogelijk volledig beheer hebben op de apparaten, inclusief instellingen, functies en beveiliging. In deze methode worden apparaten en gebruikers van deze apparaten ingeschreven bij Intune. Nadat ze zijn ingeschreven, ontvangen ze uw regels en instellingen via beleid dat is geconfigureerd in Intune. U kunt bijvoorbeeld vereisten voor wachtwoorden en pincodes instellen, een VPN-verbinding maken, beveiliging tegen bedreigingen instellen, en meer.
 

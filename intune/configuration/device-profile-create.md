@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860380"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206666"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Een apparaatprofiel maken in Microsoft Intune
 
@@ -156,7 +156,7 @@ Wanneer u het profiel aan de groepen toewijst, fungeren de regels voor toepassel
 
 ## <a name="refresh-cycle-times"></a>Cyclusduur vernieuwen
 
-In Intune worden verschillende vernieuwingscycli gebruikt om te controleren op updates voor configuratieprofielen. Als het apparaat onlangs is ingeschreven, worden de check-ins vaker uitgevoerd. [Vernieuwingscycli voor beleidsregels en profielen](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) bevat de geschatte vernieuwingstijden.
+In Intune worden verschillende vernieuwingscycli gebruikt om te controleren op updates voor configuratieprofielen. Als het apparaat onlangs is ingeschreven, worden de check-ins vaker uitgevoerd. In [Vernieuwingscycli voor beleidsregels en profielen](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) worden de geschatte vernieuwingstijden vermeld.
 
 Gebruikers kunnen ook de bedrijfsportal-app openen en het apparaat synchroniseren om op elk gewenst moment op aanwezig beleid te controleren.
 

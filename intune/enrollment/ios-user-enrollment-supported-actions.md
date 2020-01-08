@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562414"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324862"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Intune-acties en -opties die worden ondersteund bij Apple-gebruikersinschrijving
 
@@ -38,7 +38,7 @@ Als u op gebruikersinschrijvingsapparaten een wachtwoordinstelling configureert,
 
 U kunt bijvoorbeeld de instelling **Wachtwoord verloopt** configureren en dit beleid pushen naar de door gebruikers ingeschreven apparaten. Op de apparaten gebeurt dan het volgende:
 - De instelling **Wachtwoord verloopt** wordt genegeerd.
-- Eenvoudige wachtwoorden, zoals `1111` of `1234`, worden niet toegestaan.
+- Eenvoudige wachtwoorden, zoals `111111` of `123456`, worden niet toegestaan.
 - Er wordt een 6-cijferige pincode afgedwongen.
 
 ## <a name="administrator-remote-device-actions-and-options"></a>Acties en opties voor beheerders van externe apparaten

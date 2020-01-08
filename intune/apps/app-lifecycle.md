@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef958468feb7e36f894537989675977e1d96bf8c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 97e70191ed133d9427a3c8565d1dbf03573b628b
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414738"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692217"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Overzicht van de app-levenscyclus in Microsoft Intune
 
@@ -34,7 +34,7 @@ De levenscyclus van de Microsoft Intune-app begint zodra een app wordt toegevoeg
 
 De eerste stap in de implementatie van apps is het toevoegen van de apps die u wilt beheren en toewijzen aan Intune. U kunt met veel verschillende typen apps werken, maar de basisprocedures zijn hetzelfde. Met Intune kunt u verschillende app-typen toevoegen, zoals apps die intern zijn ontwikkeld (line-of-business), apps uit de Store, apps die zijn ingebouwd en apps op internet. Zie [Apps toevoegen aan Microsoft Intune](apps-add.md) voor meer informatie over deze app-typen.
 
-## <a name="deploy"></a>Implementeer
+## <a name="deploy"></a>Implementeren
 
 Nadat u de app aan Intune hebt toegevoegd, kunt u deze [toewijzen aan gebruikers en apparaten die u beheert](apps-deploy.md). In Intune is dit proces gemakkelijk en zodra de app is geïmplementeerd, kunt u [het succes bewaken](apps-monitor.md) van de implementatie vanuit Intune in Azure Portal. Bovendien kunt u in sommige app-stores, zoals die van [Apple](vpp-apps-ios.md) en [Windows](windows-store-for-business.md), bulksgewijs app-licenties voor uw bedrijf kopen. Intune kan gegevens synchroniseren met deze stores zodat u het licentiegebruik voor deze typen apps kunt implementeren en bijhouden vanuit de Intune-beheerconsole.
 

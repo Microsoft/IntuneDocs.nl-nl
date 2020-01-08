@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0cd3dd71a5999b69e3f5c34ef4cc73fb3d6a938
-ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
+ms.openlocfilehash: 1c9f6dbfb8d6ee4b766abef04595ffca7df4c9dc
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74781155"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206377"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>VPN per app instellen voor iOS-apparaten in Intune
 

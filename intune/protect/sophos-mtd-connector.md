@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8823aa8467ef380223a486874c68d52926db733
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f41d5d1ec3e302a277fe5e6ff6af9d33a7e89517
+ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503739"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75564914"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Sophos Mobile Threat Defense-connector met Intune
 U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren met voorwaardelijke toegang op basis van een risicoanalyse die wordt uitgevoerd door Sophos Mobile, een MDT-oplossing (Mobile Threat Defense) die in Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetrische gegevens die zijn verzameld op apparaten waarop de Sophos Mobile-app wordt uitgevoerd.
@@ -72,7 +72,7 @@ Bedreigingen voor uw netwerk worden gedetecteerd, zoals man-in-the-middle-aanval
 - Microsoft Intune-abonnement 
 - Sophos Mobile Threat Defense-abonnement
 
-Zie de [Sophos-website](https://www.sophos.com/products/mobile-control) voor meer informatie.  
+Zie de [Sophos-website](https://www.sophos.com/en-us/products/mobile-control.aspx) voor meer informatie.
 
 ## <a name="next-steps"></a>Volgende stappen  
 - [Sophos integreren met Intune](sophos-mtd-connector-integration.md)

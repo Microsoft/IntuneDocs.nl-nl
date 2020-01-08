@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 060c3c00a228794d3f237a6362b048bf23e1a933
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819707"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547723"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Intune-inschrijvingsmethoden voor Windows-apparaten
 
@@ -49,7 +49,7 @@ Als een beheerder Automatische inschrijving heeft geconfigureerd (beschikbaar vo
 Beheerders kunnen de volgende inschrijvingsmethoden instellen waarvoor geen gebruikersinteractie is vereist:
 
 - Met [Hybrid Azure AD Join](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) kunnen beheerders het groepsbeleid voor Active Directory zo instellen dat apparaten die met hybride Azure AD zijn samengevoegd automatisch worden ingeschreven. 
-- Met [Co-beheer van Configuration Manager](https://docs.microsoft.com/sccm/comanage/overview) kunnen beheerders hun bestaande via Configuration Manager beheerde apparaten bij Intune inschrijven om te profiteren van zowel de voordelen van Intune als die van Configuration Manager. 
+- Met [Co-beheer van Configuration Manager](https://docs.microsoft.com/configmgr/comanage/overview) kunnen beheerders hun bestaande via Configuration Manager beheerde apparaten bij Intune inschrijven om te profiteren van zowel de voordelen van Intune als die van Configuration Manager. 
 - [Apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md) (Device enrollment manager, DEM) is een speciaal serviceaccount. DEM-accounts beschikken over machtigingen waarmee gemachtigde gebruikers meerdere apparaten in bedrijfseigendom kunnen inschrijven en beheren. Dergelijke apparaten zijn bijvoorbeeld geschikt voor gebruik bij een verkooppunt of met hulpprogramma-apps, maar niet voor gebruikers die toegang nodig hebben tot e-mail of bedrijfsresources. Bij deze methode is het gebruik van functies, zoals Voorwaardelijke toegang, niet toegestaan. 
 - Met [Bulksgewijs inschrijven](../windows-bulk-enroll.md) kunnen gemachtigde gebruikers grote aantallen nieuwe apparaten in bedrijfseigendom samenvoegen met Azure Active Directory en Intune. U maakt een inrichtingspakket met de app Windows Configuration Designer (WCD). Vervolgens kunt u, met behulp van USB-sticks tijdens de initiële Windows OOBE-ervaring of vanaf een bestaande Windows-pc, het inrichtingspakket installeren zodat de apparaten automatisch in Intune worden ingeschreven. Bij deze methode is het gebruik van Voorwaardelijke toegang niet toegestaan. 
 - [Inschrijven van apparaten met Windows IoT Core](https://docs.microsoft.com/windows/iot-core/manage-your-device/intunedeviceenrollment) is mogelijk met door het apparaat voor te bereiden met behulp van het Windows IoT Core-dashboard en vervolgens Windows Configuration Designer te gebruiken om een inrichtingspakket te maken. Dit inrichtingspakket wordt tijdens het opstarten dan vanaf een SD-kaart uitgevoerd om de apparaten automatisch bij Intune te registreren.
