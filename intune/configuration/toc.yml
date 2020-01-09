@@ -5,11 +5,15 @@
   items:
     - name: Overzicht van apparaatconfiguratie
       href: device-profiles.md
-- name: Snelstartgidsen
+- name: Quickstarts
   items:
     - name: Een e-mailprofiel voor een apparaat maken
       href: quickstart-email-profile.md
-- name: Handleidingen
+- name: Zelfstudies
+  items:
+    - name: Een beheersjabloon maken
+      href: tutorial-walkthrough-administrative-templates.md
+- name: Instructiegidsen
   items:
     - name: Een profiel maken
       href: device-profile-create.md
@@ -145,8 +149,6 @@
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
-            - name: Bedraad netwerk
-              href: wired-network-settings-macos.md
             - name: Aangepast
               href: custom-settings-macos.md
         - name: Windows 10 en hoger
