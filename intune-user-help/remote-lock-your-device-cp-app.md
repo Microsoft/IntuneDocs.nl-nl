@@ -17,13 +17,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f08ddd24d5aa8f7238af42c81ee2999d875b584
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 1995e25accd2c8936aab4592f231fb399a8ee145
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508480"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858289"
 ---
 # <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>Uw apparaat vergrendelen vanuit de bedrijfsportal-app voor Windows 10
 

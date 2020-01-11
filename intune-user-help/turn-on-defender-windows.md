@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e8fd6941a94a24dd3b6bf98daf6adc9a47f9fa7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 63d5ebc00182c8edaea6956612ecd047a1778dec
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501937"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75859029"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Windows Defender inschakelen voor toegang tot bedrijfsresources
 
@@ -36,7 +36,7 @@ Er zijn enkele instellingen die u mogelijk moet wijzigen in Windows Defender om 
 
 1. Ga naar **Start** en open **Configuratiescherm**.
 2. Open **Beheerprogramma's** > **Groepsbeleid bewerken**. Hiermee opent u de **Editor voor lokaal groepsbeleid** in een nieuw venster.
-3. Open **Computerconfiguratie** > **Beheersjablonen** > **Windows-onderdelen**  >  **Windows Defender Antivirus**. De instelling **Windows Defender Antivirus uitschakelen** bevindt zich onder de mappen van andere instellingen. 
+3. Open **Computerconfiguratie** > **Beheersjablonen** > **Windows-onderdelen** > **Windows Defender Antivirus**. De instelling **Windows Defender Antivirus uitschakelen** bevindt zich onder de mappen van andere instellingen. 
 4. Open **Windows Defender Antivirus uitschakelen** en zorg ervoor dat deze optie is ingesteld op **Uitgeschakeld** of **Niet geconfigureerd**.
 
 ## <a name="turn-on-real-time-protection"></a>Realtime-beveiliging inschakelen
@@ -45,7 +45,7 @@ Controleer of realtime-beveiliging is ingeschakeld door te gaan naar **Start** e
 
 1. Ga naar **Start** en open **Configuratiescherm**.
 2. Open **Beheerprogramma's** > **Groepsbeleid bewerken**. Hiermee opent u de **Editor voor lokaal groepsbeleid** in een nieuw venster.
-3. Open **Computerconfiguratie** > **Beheersjablonen** > **Windows-onderdelen**  >  **Windows Defender Security Center** > **Virus and threat protection** (Beveiliging tegen virussen en dreigingen).
+3. Open **Computerconfiguratie** > **Beheersjablonen** > **Windows-onderdelen** > **Windows Defender Security Center** > **Virus and threat protection** (Beveiliging tegen virussen en dreigingen).
 4. Open de instelling **Virus and threat protection gebied (Beveiliging tegen virussen en dreigingen)** en stel deze optie in op **Uitgeschakeld**.
 
 ## <a name="update-your-antivirus-definitions"></a>Uw antivirus-definities bijwerken

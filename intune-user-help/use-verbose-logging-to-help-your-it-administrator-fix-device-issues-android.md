@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b8da85deae3113995e2836d6af924c5e8938e6ec
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508017"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858944"
 ---
 # <a name="configure-logging-settings"></a>Instellingen voor logboek registratie configureren
 
@@ -37,7 +37,7 @@ Configureer de instellingen voor logboek registratie zodat de app-acties voor de
 Bij uitgebreide logboek registratie worden alle acties in de Bedrijfsportal-app vastgelegd. Het is standaard ingeschakeld op het apparaat. Uitgebreide logboek registratie uitschakelen in Bedrijfsportal:  
 
 1. Meld u aan bij de bedrijfsportal-app.
-2. Tik op **instellingen**.
+2. Tik op **Instellingen**.
 3. Naast **uitgebreide logboek registratie**, spiegelt u de switch naar **uit**.
 
 ## <a name="configure-microsoft-intune-app-logging"></a>Microsoft Intune app-logboek registratie configureren

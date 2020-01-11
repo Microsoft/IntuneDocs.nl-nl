@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25ec84946aec9562aedce12b4199269f8de06f76
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 9ac79311881b2f245cbdedcb6c9ac9763ba7cbf3
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500028"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857146"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>Een ontbrekend certificaat installeren dat is vereist voor uw organisatie  
 

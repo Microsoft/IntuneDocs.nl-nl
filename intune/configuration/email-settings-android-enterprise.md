@@ -16,16 +16,16 @@ search.appverid: MET150
 ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92d81e383a9964aaecbdd151397879236ffcb726
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: dc86e82f189377d63422cc3306b8554637164b0f
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72493556"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206428"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Android Enterprise-apparaatinstellingen voor het configureren van e-mail, verificatie en synchronisatie in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 In dit artikel vindt u een overzicht en beschrijving van de verschillende e-mailinstellingen die u kunt beheren op Android Enterprise-apparaten. Gebruik deze instellingen voor het configureren van een e-mailserver, SSL voor het versleutelen van e-mailberichten en nog veel meer als onderdeel van uw beheeroplossing voor mobiele apparaten (MDM).
 
@@ -39,25 +39,25 @@ Een [configuratie profiel](email-settings-configure.md#create-a-device-profile) 
 
 ## <a name="android-enterprise"></a>Android Enterprise
 
-- **E-mail-app**: selecteer **Gmail** of **Nine Work**
-- **E-mailserver**: de hostnaam van uw Exchange-server. Voer bijvoorbeeld `outlook.office365.com` in.
-- **Het kenmerk Gebruikersnaam van AAD**: deze naam is het kenmerk dat Intune ontvangt van Azure Active Directory (Azure AD). In Intune wordt de gebruikersnaam die wordt gebruikt door dit profiel dynamisch gegenereerd. Uw opties zijn:
+- **E-mail-app**: Selecteer **Gmail** of **Nine Work**
+- **E-mailserver**: Geef de hostnaam van uw Exchange-server op. Voer bijvoorbeeld `outlook.office365.com` in.
+- **Het kenmerk Gebruikersnaam van AAD**: deze naam is het kenmerk dat Intune uit Azure Active Directory (Azure AD) ophaalt. In Intune wordt de gebruikersnaam die wordt gebruikt door dit profiel dynamisch gegenereerd. Uw opties zijn:
 
-  - **User Principal Name**: hiermee wordt de naam opgehaald, zoals `user1` of `user1@contoso.com`
-  - **Gebruikersnaam**: hiermee wordt alleen de naam opgehaald, zoals `user1`
+  - **User Principal Name**: Hiermee wordt de naam opgehaald, zoals `user1` of `user1@contoso.com`
+  - **Gebruikersnaam**: Hiermee wordt alleen de naam opgehaald, zoals `user1`
 
-- **Het kenmerk e-mailadres van AAD**: deze naam is het e-mailadreskenmerk dat Intune uit Azure AD ophaalt. In Intune wordt het e-mailadres dat voor dit profiel wordt gebruikt, dynamisch gegenereerd. Uw opties zijn:
-  - **User principal name**: Maakt gebruik van de volledige principal name, zoals `user1@contoso.com` of `user1`, als het e-mailadres.
-  - **Primaire SMTP-adres**: Maakt gebruik van het primaire SMTP-adres, zoals `user1@contoso.com`, voor aanmelding bij Exchange.
+- **Kenmerk van het e-mailadres van AAD**: Deze naam is het e-mailkenmerk dat Intune uit Azure AD ophaalt. In Intune wordt het e-mailadres dat voor dit profiel wordt gebruikt, dynamisch gegenereerd. Uw opties zijn:
+  - **User Principal Name**:  Maakt gebruik van de volledige principal name, zoals `user1@contoso.com` of `user1`, als het e-mailadres.
+  - **Primair SMTP-adres**: Maakt gebruik van het primaire SMTP-adres, zoals `user1@contoso.com`, voor aanmelding bij Exchange.
 
-- **Verificatiemethode**: selecteer **Gebruikersnaam en wachtwoord** of **Certificaten** als verificatiemethode voor het e-mailprofiel.
+- **Verificatiemethode**: Selecteer **Gebruikersnaam en wachtwoord** of **Certificaten** als verificatiemethode voor het e-mailprofiel.
   - Als u **Certificaat** hebt geselecteerd, selecteert u een SCEP- of PKCS-clientcertificaatprofiel dat u eerder hebt gemaakt voor verificatie van de Exchange-verbinding.
-- **SSL**: u kunt deze optie **inschakelen** om SSL-communicatie (Secure Sockets Layer) te gebruiken wanneer u e-mailberichten verstuurt, e-mailberichten ontvangt en communiceert met de Exchange-server.
-- **Aantal dagen e-mail voor synchronisatie**: kies de tijdsperiode waarvoor u e-mailberichten wilt synchroniseren. Of selecteer **Onbeperkt** om alle beschikbare e-mail te synchroniseren.
-- **Het inhoudstype voor synchronisatie** (uitsluitend Nine Work): kies welke gegevens u wilt synchroniseren op de apparaten. Uw opties zijn:
-  - **Contacten**: kies **Inschakelen** zodat eindgebruikers contactpersonen naar hun apparaten kunnen synchroniseren.
-  - **Agenda**: kies **Inschakelen** zodat eindgebruikers de agenda naar hun apparaten kunnen synchroniseren.
-  - **Taken**: kies **Inschakelen** zodat eindgebruikers taken naar hun apparaten kunnen synchroniseren.
+- **SSL**: U kunt deze optie **inschakelen** om SSL-communicatie (Secure Sockets Layer) te gebruiken wanneer u e-mailberichten verstuurt, e-mailberichten ontvangt en communiceert met de Exchange-server.
+- **Aantal dagen e-mail voor synchronisatie**: Kies hoeveel dagen e-mail u wilt synchroniseren. Of selecteer **Onbeperkt** om alle beschikbare e-mail te synchroniseren.
+- **Inhoudstype voor synchronisatie** (alleen Nine Work): Kies welke gegevens u wilt synchroniseren op de apparaten. Uw opties zijn:
+  - **Contactpersonen**: Kies **Inschakelen** zodat eindgebruikers contactpersonen naar hun apparaten kunnen synchroniseren.
+  - **Agenda**: Kies **Inschakelen** zodat eindgebruikers de agenda naar hun apparaten kunnen synchroniseren.
+  - **Taken**: Kies **Inschakelen** zodat eindgebruikers om het even welke taken naar hun apparaten kunnen synchroniseren.
 
 ## <a name="next-steps"></a>Volgende stappen
 

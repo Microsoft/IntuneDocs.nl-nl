@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81f90c8022fb471ffa8783d636c88ce67a296595
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e37a82fe3cca461e8384843dc0710cb00c36b79c
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502055"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858076"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Fouten naar het ondersteuningsteam van uw bedrijf verzenden wanneer u problemen ondervindt met uw iOS-apparaat
 Soms treedt een fout op wanneer u de bedrijfsportal-app op uw iOS-apparaat gebruikt. Wanneer dit gebeurt, kunt u meer informatie over de fout per e-mail naar een ondersteuningsmedewerker van uw bedrijf verzenden. Deze informatie bevat de context die nodig is om het probleem voor u op te lossen.

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c81c13d5da8eac1616ab7274b484befaa5685511
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: dae2f1733fe98729384c44cb19d28651a75d0862
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502157"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858341"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Uw apparaat extern vergrendelen op de website van de bedrijfsportal
 
@@ -49,7 +49,7 @@ De instelling voor extern vergrendelen werkt voor:
 
    ![De pagina met apparaatgegevens van een geselecteerd apparaat op de bedrijfsportalwebsite, met een lijst met bovenaan koppelingen als Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/rename-reset-device-1808.png) 
 
-    ![Weergave door in te zoomen op het pictogram Meer, gemarkeerd met een rode pijl.](./media/rename-reset-device-step3-more-1808.png)    
+    ![Weergave waarin is ingezoomd op het pictogram Meer, gemarkeerd met een rode pijl.](./media/rename-reset-device-step3-more-1808.png)    
 
 4. Er verschijnt een bericht met de waarschuwing dat u op het punt staat uw apparaat te vergrendelen. Tik op **Extern vergrendelen** om te bevestigen.
 

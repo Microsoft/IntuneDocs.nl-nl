@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 169007541bccfc3e26184ac71197265931afbfdd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f54f0d9453e93ad54a1d2a96ff25051f3d8bd3a1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508115"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857670"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>Uw apparaat uit beheer verwijderen als u de gebruiksvoorwaarden hebt afgewezen
 
@@ -38,7 +38,7 @@ Voordat u de bedrijfsportal-app kunt verwijderen, moet u naar de instelling **Ap
 
 U kunt uw apparaat als volgt uit Intune verwijderen en de bedrijfsportal-app verwijderen:
 
-1. Ga naar**Instelling** &gt; **Beveiliging&amp; Schermvergrendeling** &gt; **Apparaatbeheerders**.
+1. Ga naar **instellingen** &gt; **beveiliging &amp; scherm vergren delen** &gt; **apparaat beheerders**.
 
     Wanneer u deze stap uitvoert, wordt de registratie van uw apparaat onmiddellijk ongedaan gemaakt.
 

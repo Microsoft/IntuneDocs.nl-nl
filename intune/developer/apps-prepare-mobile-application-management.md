@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 901eaafb24cda185540ffc4b1a56484042af74c1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74547687"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653934"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Line-of-business-apps voorbereiden voor app-beveiligingsbeleid
 
@@ -51,7 +51,7 @@ Zie [Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn ge
 
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Yes|Yes|
+|**iOS** |Ja|Ja|
 |**Android**|Nee, gebruik de [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|Ja|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
@@ -105,7 +105,7 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |Schermafbeeldingen maken blokkeren (alleen Android)|X|X|
 |Ondersteuning van MAM zonder apparaatinschrijving|X|X|
 |Volledig wissen van app-gegevens|X|X|
-|Selectief wissen van werk- en schoolgegevens in scenario's met meerdere identiteiten <br><br>**Opmerking:** bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
+|Selectief wissen van werk- en schoolgegevens in scenario's met meerdere identiteiten <br><br>**Opmerking:** Bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
 |'Opslaan als' voorkomen|X||
 |Configuratie van de doel toepassing (of app-configuratie via het ' MAM-kanaal ')|X||
 |Ondersteuning voor meerdere identiteiten|X||

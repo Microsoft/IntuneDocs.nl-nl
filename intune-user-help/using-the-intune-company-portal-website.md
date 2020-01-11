@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50eb3495362d4b88071707e25a5faa39b76b6c3b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f23e17be92f8d5ce8f8eff1fe1847d56d2215e59
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810360"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857602"
 ---
 # <a name="using-the-intune-company-portal-website"></a>De Intune-bedrijfsportalwebsite gebruiken
 Gebruik de [bedrijfsportal-website](https://portal.manage.microsoft.com) om apps te zoeken, te installeren en te verwijderen voor school of werk. en om uw Inge schreven apparaten weer te geven, te bewerken, toe te voegen en te verwijderen.  

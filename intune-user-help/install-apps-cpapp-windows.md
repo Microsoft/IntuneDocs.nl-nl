@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80fd2d54a99bc3f4ab47f48f94eb14aa1a7f630c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 11037da11e6400f157aea6aa86c0c293c9818d31
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74126193"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855007"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Apps op uw apparaat installeren en delen
 
@@ -37,11 +37,11 @@ Installeer apps op uw apparaat vanuit de bedrijfsportal-app voor Windows.
     ![De startpagina van de bedrijfsportal-app voor Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)
 2. Apps zoeken en installeren vanuit een van de volgende secties van de bedrijfsportal-app:  
 
-    * **Home**: selecteer een app in een lijst met door uw organisatie aanbevolen apps.  
-    * **Alles weergeven**: klik in de sectie **Startpagina** > **Apps** op **Alles weergeven** om alle beschikbare apps weer te geven.  
-    * **Alle apps**: selecteer deze pagina in het navigatiedeelvenster om alle beschikbare apps te zien, inclusief apps die zijn geïnstalleerd en aanbevolen. De apps weer geven, sorteren en filteren. Zoekresultaten worden automatisch op relevantie gesorteerd.  
+    * **Home**: Selecteer een app in een lijst met door uw organisatie aanbevolen apps.  
+    * **Alles weergeven**: Klik in de sectie **Startpagina** > **Apps** op **Alles weergeven** om alle beschikbare apps weer te geven.  
+    * **Alle apps**: Selecteer deze pagina in het navigatiedeelvenster om alle beschikbare apps te zien, inclusief apps die zijn geïnstalleerd en aanbevolen. De apps weer geven, sorteren en filteren. Zoekresultaten worden automatisch op relevantie gesorteerd.  
     * **App-Categorieën**: Selecteer deze pagina in het navigatie deel venster om apps te kiezen op basis van type of functie. Apps worden gesorteerd onder Categorieën, zoals **Aanbevolen**, **onderwijs**en **productiviteit**.  
-    * **Apps zoeken**: een statische zoekbalk bevindt zich in het navigatiedeelvenster van de app. Als u de beschikbare apps wilt vinden, zoekt u op de app-naam of uitgever.  
+    * **Apps zoeken**: Een statische zoekbalk bevindt zich in het navigatiedeelvenster van de app. Als u de beschikbare apps wilt vinden, zoekt u op de app-naam of uitgever.  
 
 3. Selecteer een app.   
 4. Klik op de pagina met app-gegevens op **Installeren**. Nadat de installatie is voltooid, ziet u de status **Geïnstalleerd**.  
@@ -86,7 +86,7 @@ Als er een app is die u nodig hebt, maar die niet wordt weergegeven in de bedrij
 ## <a name="view-installed-apps"></a>Geïnstalleerde apps weer geven  
 Een lijst weer geven met alle apps die op het apparaat zijn geïnstalleerd. Op de pagina **geïnstalleerde apps** worden de volgende details over elke app weer gegeven:
 
-* Naam: de naam van de app. Optionele apps bevatten een koppeling naar de pagina met details van de **app** .
+* Naam: De naam van de app. Optionele apps bevatten een koppeling naar de pagina met details van de **app** .
 * Toewijzings type: hoe de app wordt toegewezen en beschikbaar wordt gesteld aan u. 
 * Uitgever: de naam van de ontwikkelaar of het bedrijf dat de app heeft gedistribueerd. Een uitgever is doorgaans een software leverancier of uw organisatie.  
 * Publicatie datum: de datum waarop de app beschikbaar is gesteld om te worden gedownload. Publicatie datum kan de initiële release van een app of de meest recente update van de app tonen.
