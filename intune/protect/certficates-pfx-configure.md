@@ -1,11 +1,11 @@
 ---
 title: Certificaten met een persoonlijke en openbare sleutel gebruiken in Microsoft Intune - Azure | Microsoft Docs
-description: Gebruik PKCS-certificaten (Public Key Cryptography Standards) met Microsoft Intune. Dit omvat het werken met basiscertificaten en certificaatsjablonen, de installatie van de Intune Certificate Connector (NDES) en apparaatconfiguratieprofielen voor een PKCS-certificaat.
+description: Gebruik PKCS-certificaten (Public Key Cryptography Standards) met Microsoft Intune, werk met basiscertificaten en certificaatsjablonen, de installatie van de Intune Certificate Connector (NDES) en gebruik apparaatconfiguratieprofielen voor een PKCS-certificaat.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3db085e6e88f8f57eb0276afa77290df8574568f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9142ea3f7728fd24883a311bbf967a7a59dbf457
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801712"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207244"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -161,9 +161,7 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 7. **Toepassen** > **Sluiten**
 8. Ga terug naar de Intune-portal (**Intune** > **Apparaatconfiguratie** > **Certificaatconnectors**). Even later wordt een groen vinkje weergegeven en is de **Verbindingsstatus** **Actief**. Uw connector-server kan nu communiceren met Intune.
 9. Als u een webproxy in uw netwerkomgeving hebt, hebt u mogelijk extra configuraties nodig voordat de connector werkt. Raadpleeg [Werken met bestaande on-premises proxyservers](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) in de Azure Active Directory-documentatie voor meer informatie.
-
-> [!NOTE]  
-> Microsoft Intune Certificate Connector ondersteunt TLS 1.2. Als TLS 1.2 is geïnstalleerd op de server die als host fungeert voor de connector, maakt de connector gebruik van TLS 1.2. Anders wordt TLS 1.1 gebruikt. Momenteel wordt TLS 1.1 gebruikt voor verificatie tussen de apparaten en de server.
+<ul><li>Android Enterprise (*Werkprofiel*)</li><li>iOS</li><li>macOS</li><li>Windows 10 en later > De Microsoft Intune Certificate Connector ondersteunt TLS 1.2. Als TLS 1.2 is geïnstalleerd op de server die als host fungeert voor de connector, maakt de connector gebruik van TLS 1.2. Anders wordt TLS 1.1 gebruikt. Momenteel wordt TLS 1.1 gebruikt voor verificatie tussen de apparaten en de server.
 
 ## <a name="create-a-trusted-certificate-profile"></a>Een vertrouwd certificaatprofiel maken
 
@@ -208,17 +206,17 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
    
    |Instelling     | Platform     | Details   |
    |------------|------------|------------|
-   |**Drempelwaarde voor verlenging (%)**        |Alle         |20% wordt aanbevolen  | 
-   |**Geldigheidsduur van certificaat**  |Alle         |Als u de certificaatsjabloon niet hebt gewijzigd, kan deze optie worden ingesteld op één jaar. |
-   |**Sleutelarchiefprovider (KSP)**   |Windows 10  | Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan. |
-   |**Certificeringsinstantie**      |Alle         |Geeft de interne FQDN (Fully Qualified Domain Name) van uw CA voor ondernemingen weer.  |
-   |**Naam van certificeringsinstantie** |Alle         |Geeft de naam van uw CA voor ondernemingen weer, bijvoorbeeld "Contoso Certification Authority". |
-   |**Certificaattype**             |macOS       |Selecteer een type: <br> **-** **Gebruiker**-certificaten kunnen zowel gebruikers- als apparaatkenmerken in het onderwerp en de SAN van het certificaat bevatten. <br><br>**-** **Apparaat**-certificaten kunnen alleen apparaatkenmerken in het onderwerp en de SAN van het certificaat bevatten. Gebruik Apparaat voor scenario's als apparaten zonder gebruiker, zoals kiosken of andere gedeelde apparaten.  <br><br> Deze selectie is van invloed op de indeling van de onderwerpnaam. |
-   |**Indeling van de onderwerpnaam**          |Alle         |Voor de meeste platformen stelt u deze optie in op **Algemene naam** tenzij anders aangegeven.<br><br>Voor macOS wordt de indeling van de onderwerpnaam bepaald door het certificaattype. Zie [Indeling van de onderwerpnaam voor macOS](#subject-name-format-for-macos) verderop in dit artikel. |
-   |**Alternatieve naam voor het onderwerp**     |Alle         |Stel deze optie in op **User principal name (UPN)** tenzij anders aangegeven. |
-   |**Uitgebreide-sleutelgebruik**           |**-** Android-apparaatbeheerder <br>**-** Android Enterprise (*Apparaateigenaar*, *Werkprofiel*) <br> **-** Windows 10 |Certificaten vereisen meestal *Clientverificatie*, zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. |
-   |**Alle apps mogen toegang hebben tot de persoonlijke sleutel** |macOS  |Stel in op **Inschakelen** om apps die zijn geconfigureerd voor het bijbehorende Mac-apparaat toegang te geven tot de persoonlijke sleutel van de PKCS-certificaten. <br><br> Zie *AllowAllAppsAccess* in de sectie Nettolading van certificaat van [Referentiemateriaal configuratieprofiel](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in de Apple-documentatie voor ontwikkelaars voor meer informatie over deze instelling. |
-   |**Basiscertificaat**             |**-** Android-apparaatbeheerder <br> **-** Android Enterprise (*Apparaateigenaar*, *Werkprofiel*) |Selecteer een basis-CA-certificaatprofiel dat eerder is toegewezen. |
+   |**Drempelwaarde voor verlenging (%)**        |<ul><li>Alle         |20% wordt aanbevolen  | 
+   |**Geldigheidsduur van certificaat**  |<ul><li>Alle         |Als u de certificaatsjabloon niet hebt gewijzigd, kan deze optie worden ingesteld op één jaar. |
+   |**Sleutelarchiefprovider (KSP)**   |<ul><li>Windows 10  | Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan. |
+   |**Certificeringsinstantie**      |<ul><li>Alle         |Geeft de interne FQDN (Fully Qualified Domain Name) van uw CA voor ondernemingen weer.  |
+   |**Naam van certificeringsinstantie** |<ul><li>Alle         |Geeft de naam van uw CA voor ondernemingen weer, bijvoorbeeld "Contoso Certification Authority". |
+   |**Certificaattype**             |<ul><li>Android Enterprise (*Werkprofiel*)</li><li>iOS</li><li>macOS</li><li>Windows 10 en hoger|Selecteer een type: <ul><li> **Gebruiker**-certificaten kunnen zowel gebruikers- als apparaatkenmerken in het onderwerp ende SAN van het certificaat bevatten. </il><li>**Apparaat**-certificaten kunnen alleen apparaatkenmerken in het onderwerp en SAN van het certificaat bevatten. Gebruik Apparaat voor scenario's als apparaten zonder gebruiker, zoals kiosken of andere gedeelde apparaten.  <br><br> Deze selectie is van invloed op de indeling van de onderwerpnaam. |
+   |**Indeling van de onderwerpnaam**          |<ul><li>Alle         |Voor de meeste platformen stelt u deze optie in op **Algemene naam** tenzij anders aangegeven.<br><br>Voor de volgende platformen wordt de indeling van de onderwerpnaam bepaald door het certificaattype: <ul><li>Android Enterprise (*Werkprofiel*)</li><li>iOS</li><li>macOS</li><li>Windows 10 en hoger</li></ul>  <p> Zie [Indeling van de onderwerpnaam](#subject-name-format) verderop in dit artikel. |
+   |**Alternatieve naam voor het onderwerp**     |<ul><li>Alle         |Stel deze optie in op **User principal name (UPN)** tenzij anders aangegeven. |
+   |**Uitgebreide-sleutelgebruik**           |<ul><li> Android-apparaatbeheerder </li><li>Android Enterprise (*Apparaateigenaar*, *Werkprofiel*) </li><li>Windows 10 |Certificaten vereisen meestal *Clientverificatie*, zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. |
+   |**Alle apps mogen toegang hebben tot de persoonlijke sleutel** |<ul><li>macOS  |Stel in op **Inschakelen** om apps die zijn geconfigureerd voor het bijbehorende Mac-apparaat toegang te geven tot de persoonlijke sleutel van de PKCS-certificaten. <br><br> Zie *AllowAllAppsAccess* in de sectie Nettolading van certificaat van [Referentiemateriaal configuratieprofiel](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in de Apple-documentatie voor ontwikkelaars voor meer informatie over deze instelling. |
+   |**Basiscertificaat**             |<ul><li>Android-apparaatbeheerder </li><li>Android Enterprise (*Apparaateigenaar*, *Werkprofiel*) |Selecteer een basis-CA-certificaatprofiel dat eerder is toegewezen. |
 
 5. Selecteer **OK** > **Maken** om het profiel op te slaan.
 
@@ -227,11 +225,18 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
    > [!NOTE]
    > Op apparaten met een Android Enterprise-profiel zijn certificaten die zijn geïnstalleerd met een PKCS-certificaatprofiel niet zichtbaar op het apparaat. Controleer de status van het profiel in de Intune-console om te controleren of de implementatie van het certificaat is geslaagd.
 
-### <a name="subject-name-format-for-macos"></a>Indeling van de onderwerpnaam voor macOS
+### <a name="subject-name-format"></a>Indeling van de onderwerpnaam
 
-Wanneer u een PKCS-certificaatprofiel voor macOS maakt, zijn de opties voor de indeling van de onderwerpnaam afhankelijk van het certificaattype dat u selecteert, ofwel **Gebruiker** ofwel **Apparaat**.  
+Wanneer u een PKCS-certificaatprofiel voor de volgende platformen maakt, zijn de opties voor de indeling van de onderwerpnaam afhankelijk van het certificaattype dat u selecteert, ofwel **Gebruiker** ofwel **Apparaat**.  
 
-> [!NOTE]  
+Platformen:
+
+- Android Enterprise (*Werkprofiel*)
+- iOS
+- macOS
+- Windows 10 en hoger
+
+> [!NOTE]
 > Er is een bekend probleem bij het gebruik van PKCS, [hetzelfde probleem dat ook bij SCEP optreedt](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters), om certificaten op te halen wanneer in de onderwerpnaam in de resulterende aanvraag voor certificaatondertekening (Certificate Signing Request, CSR) een van de volgende tekens staat na een escape-teken (een backslash \\):
 > - \+
 > - ;

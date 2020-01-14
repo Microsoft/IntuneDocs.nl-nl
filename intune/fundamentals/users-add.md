@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5b469c759ac34a6d8de09163534a580346e48a1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b25b761b3857fdf91bbbe827d288d09e350a1a7a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415024"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206088"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Gebruikers toevoegen en beheerdersmachtigingen aan Intune toekennen
 
@@ -57,22 +57,20 @@ U kunt handmatig gebruikers aan uw Intune-abonnement toevoegen via het [Microsof
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Intune-gebruikers toevoegen in de Azure-portal
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Gebruikers** > **Alle gebruikers**.
-3. Selecteer **Nieuwe gebruiker** in het beheercentrum.
-   ![Schermafbeelding van Nieuwe gebruiker toevoegen](./media/users-add/intune-add-user.png)
-4. Geef de volgende gebruikersgegevens op:
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431)**Gebruikers** > **Alle gebruikers**.
+2. Selecteer **Nieuwe gebruiker** in het beheercentrum.
+3. Geef de volgende gebruikersgegevens op:
    - **Naam**
    - **Gebruikersnaam**: de nieuwe naam in de Azure Active Directory-portal ![Schermafbeelding van het toevoegen van naam en gebruikersnaam](./media/users-add/intune-add-user-info.png) Kies **OK** om door te gaan.
-5. U kunt desgewenst de volgende gebruikerseigenschappen opgeven:
+4. U kunt desgewenst de volgende gebruikerseigenschappen opgeven:
    - **Profiel**: werkinformatie zoals **Functie** en **Afdeling**
    - **Groepen**: selecteer groepen die u wilt toevoegen voor de gebruiker
    - **Directory-rol**: verleen de gebruiker beheerdersmachtigingen, inclusief een Intune-servicebeheerdersrol.
 
    Selecteer **Maken** om de nieuwe gebruiker toe te voegen aan Intune.
-6. Selecteer **Profiel** en kies vervolgens een **gebruikslocatie** voor de nieuwe gebruiker. Een gebruikslocatie is vereist om een licentie voor Intune te kunnen toewijzen aan de nieuwe gebruiker. Kies **Opslaan** om door te gaan.
+5. Selecteer **Profiel** en kies vervolgens een **gebruikslocatie** voor de nieuwe gebruiker. Een gebruikslocatie is vereist om een licentie voor Intune te kunnen toewijzen aan de nieuwe gebruiker. Kies **Opslaan** om door te gaan.
     ![Schermafbeelding van de gebruikslocatie](./media/users-add/intune-add-user-loc.png)
-7. Selecteer **Licenties** en kies vervolgens **Toewijzen** om een Intune-licentie voor deze gebruiker toe te wijzen. Een Intune-licentie is vereist voor het registreren van apparaten of om toegang te krijgen tot bedrijfsresources. Selecteer **Producten**, kies het licentietype, kies **Selecteren** en kies ten slotte **Toewijzen**.
+6. Selecteer **Licenties** en kies vervolgens **Toewijzen** om een Intune-licentie voor deze gebruiker toe te wijzen. Een Intune-licentie is vereist voor het registreren van apparaten of om toegang te krijgen tot bedrijfsresources. Selecteer **Producten**, kies het licentietype, kies **Selecteren** en kies ten slotte **Toewijzen**.
 
 ## <a name="grant-admin-permissions"></a>Beheerdersmachtigingen verlenen
 

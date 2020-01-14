@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390347"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654257"
 ---
 # <a name="use-device-encryption-with-intune"></a>Apparaatversleuteling gebruiken met Intune
 
@@ -86,6 +86,10 @@ Voor meer informatie over de FileVault-instelling die u met Intune kunt beheren,
 Wanneer Intune een macOS-apparaat versleutelt met FileVault, kunt u de FileVault-herstelsleutels bekijken en beheren tijdens het bekijken van het Intune-[versleutelingsrapport](encryption-monitor.md).
 
 Nadat Intune een macOS-apparaat versleutelt met FileVault, kunt u op elk apparaat de persoonlijke herstelsleutel van het apparaat bekijken in de online bedrijfsportal. Kies in de online bedrijfsportal het versleutelde macOS-apparaat en kies vervolgens 'Herstelsleutel ophalen' als externe actie.
+
+### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>Persoonlijke herstelsleutel ophalen van met MEM versleutelde macOS-apparaten
+
+Eindgebruikers kunnen hun persoonlijke herstelsleutel (FileVault Key) ophalen met behulp van de Bedrijfsportal-app voor iOS. Het apparaat met de persoonlijke herstelsleutel moet zijn geregistreerd bij Intune en moet zijn versleuteld met FileVault via Intune. Met de Bedrijfsportal-app voor iOS kan de eindgebruiker een webpagina openen die de persoonlijke FileVault-herstelsleutel bevat. U kunt de herstelsleutel ook ophalen uit Intune door **Apparaten** > *het versleutelde en geregistreerde macOS-apparaat* > **Herstelsleutel ophalen** te selecteren. 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>BitLocker-versleuteling voor Windows 10
 

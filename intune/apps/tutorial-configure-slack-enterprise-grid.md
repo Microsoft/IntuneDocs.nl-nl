@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563402"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206904"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Zelfstudie: Slack configureren om Intune te gebruiken voor de configuratie van EMM en de app
 
@@ -48,32 +48,31 @@ U hebt ook een [Slack Enterprise Grid](https://get.slack.help/hc/articles/360004
 Schakel EMM in voor uw Slack Enterprise Grid-abonnement met behulp van de [instructies van Slack](https://get.slack.help/hc/articles/115002579426-Enable-Enterprise-Mobility-Management-for-your-org#step-2:-turn-on-emm) en [koppel uw Azure Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/slack-tutorial) als de id-provider (IDP) van uw Grid-abonnement.
 
 ## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
-Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) als globale beheerder of beheerder van een Intune-service. Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
+Meld u bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) aan als een globale beheerder of een Intune-servicebeheerder. Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>Slack voor EMM instellen op iOS-apparaten
 Voeg de iOS-app Slack voor EMM toe aan uw Intune-tenant en maak app-configuratiebeleid om de iOS-gebruikers binnen uw organisatie toegang te geven tot Slack met Intune als een EMM-provider.
 
 ### <a name="add-slack-for-emm-to-intune"></a>Slack voor EMM toevoegen aan Intune
 Voeg Slack voor EMM toe als een beheerde iOS-app in Intune en wijs uw Slack-gebruikers toe. Apps zijn platformspecifiek, dus moet u een afzonderlijke Intune-app toevoegen voor uw Slack-gebruikers met Android-apparaten.
-1. Selecteer in Intune **Apps** > **Alle apps** > **Toevoegen**.
-2. Selecteer bij Toepassingstype **Store-app - iOS**.
-3. Selecteer **Zoeken in de App Store**. Voer de zoekterm 'Slack voor EMM' in en selecteer de app.
-4. Selecteer **App-gegevens** en wijzig de configuratie naar wens.
-5. Selecteer **Toevoegen**.
-6. Voer in de zoekbalk 'Slack voor EMM' in en selecteer de app die u zojuist hebt toegevoegd.
-7. Selecteer bij Beheren **Toewijzingen**.
-8. Selecteer **Groep toevoegen**. Afhankelijk van wie u hiervoor hebt aangewezen bij het inschakelen van EMM voor Slack, kunt u onder **Toewijzingstype** de volgende opties selecteren:
+1. Selecteer **Apps** > **Alle apps** > **Toevoegen** in het beheercentrum.
+2. Selecteer bij **App-type** de app uit de **iOS Store**.
+3. Selecteer **Zoeken in de App Store**. Voer de zoekterm 'Slack voor EMM' in en selecteer de app. Klik op **Selecteren** in het venster **In de App Store zoeken**.
+4. Selecteer **App-gegevens** en wijzig de configuratie naar wens. Selecteer **OK** om uw app-gegevens in te stellen.
+5. Klik op **Toevoegen**.
+6. Selecteer **Toewijzingen**.
+7. Klik op **Groep toevoegen**. Afhankelijk van wie u hiervoor hebt aangewezen bij het inschakelen van EMM voor Slack, kunt u onder **Toewijzingstype** de volgende opties selecteren:
     - **Beschikbaar voor ingeschreven apparaten**, indien u hebt gekozen voor 'Alle leden (inclusief gasten)', of
     - **Beschikbaar met of zonder inschrijving**, als u hebt gekozen voor 'Alle leden (met uitzondering van gasten)' of 'Optioneel'.
-9. Selecteer **Opgenomen groepen** en selecteer bij Deze app beschikbaar maken voor alle gebruikers **Ja**.
-10. Klik op **OK** en klik vervolgens nogmaals op **OK**.
-11. Klik op **Opslaan**.
+8. Selecteer **Opgenomen groepen** en selecteer bij **Deze app beschikbaar maken voor alle gebruikers** **Ja**.
+9. Klik op **OK** en klik vervolgens nogmaals op **OK** om de groep toe te voegen.
+10. Klik op **Opslaan**.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Een app-configuratiebeleid toevoegen voor Slack voor EMM
 Voeg een app-configuratiebeleid toe voor Slack voor EMM iOS. App-configuratiebeleidsregels voor beheerde apparaten zijn platform-specifiek, dus u moet een afzonderlijk beleid toevoegen voor uw Slack-gebruikers met Android-apparaten.
-1. Selecteer in Intune **Apps** > **App-configuratiebeleid** > **Toevoegen**.
+1. Selecteer **Apps** > **App-configuratiebeleid** > **Toevoegen** > **Beheerde apparaten** in het beheercentrum.
 2. Voer bij Naam het volgende in: Testbeleid Slack-app-configuratie.
-3. Selecteer bij Type apparaatregistratie **Beheerde apparaten**.
+3. Controleer of bij Type apparaatregistratie **Beheerde apparaten** is ingesteld.
 4. Selecteer bij Platform **iOS**.
 5. Selecteer **Gekoppelde app**.
 6. Voer in de zoekbalk 'Slack voor EMM' in en selecteer de app.
@@ -86,7 +85,7 @@ Voeg een app-configuratiebeleid toe voor Slack voor EMM iOS. App-configuratiebel
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(Optioneel) Nalevingsbeleid voor iOS-apparaten maken
 Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepalen waaraan een apparaat moet voldoen om als conform te worden beschouwd. In deze zelfstudie maken we een nalevingsbeleid voor iOS-apparaten. Nalevingsbeleid is platform-specifiek, dus u moet een afzonderlijk beleid maken voor uw Slack-gebruikers met Android-apparaten.
-1. In Intune selecteert u **Apparaatconformiteit** > **Beleid** > **Beleid maken**.
+1. In het beheercentrum selecteert u **Apparaatconformiteit** > **Beleid** > **Beleid maken**.
 2. Bij Naam voert u 'Test iOS-nalevingsbeleid' in.
 3. Bij Beschrijving voert u 'Test iOS-nalevingsbeleid' in.
 4. Selecteer bij Platform **iOS**.

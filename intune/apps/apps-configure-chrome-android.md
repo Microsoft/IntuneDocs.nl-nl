@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c02ea34417073091e2f2841b363edfb9966ce558
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564047"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205901"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Google Chrome configureren voor Android-apparaten met behulp van Intune 
 
@@ -48,12 +48,16 @@ Zie [Beheerde Google Play Store-apps](~/apps/apps-add-android-for-work.md#manage
 
 ## <a name="add-app-configuration-for-managed-ae-devices"></a>App-configuratie voor beheerde AE-apparaten toevoegen
 
-1. Selecteer in het deelvenster [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) de opties **App-configuratiebeleid** > **Toevoegen**.
-2. Voeg uw beleidsnaam toe, kies onder Type apparaatinschrijving de optie **Beheerde apparaten**, en kies onder Platform de optie **Android**.
+1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de optie **Apps** > **App-configuratiebeleid** > **Toevoegen** > **Beheerde apparaten**.
+2. Stel de volgende details in:
+    - **Naam**: de naam van het profiel zoals deze in Azure Portal wordt weergegeven.
+    - **Beschrijving**: de beschrijving van het profiel dat wordt weergegeven in Azure Portal.
+    - **Type apparaatinschrijving** - deze instelling is ingesteld op **Beheerde apparaten**.
+    - **Platform** - selecteer **Android**.
 
     ![Google Chrome-configuratiebeleid toevoegen](~/apps/media/apps-configure-chrome-android/add-policy.png)
 
-3. Klik op **Gekoppelde app** en selecteer **Google Chrome**.
+3. Klik op **Gekoppelde app** om het deelvenster **Gekoppelde app** weer te geven. Zoek en selecteer **Google Chrome**. Deze lijst bevat [beheerde Google Play-apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune](~/apps/apps-add-android-for-work.md).
 
     ![Selecteer onder Gekoppelde app de optie Google Chrome](~/apps/media/apps-configure-chrome-android/associated-app.png)
 

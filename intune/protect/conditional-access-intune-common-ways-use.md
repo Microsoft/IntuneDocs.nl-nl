@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9795ca8a585fd926cc269d493760b37aa7666eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d30749a7eaa3d516bef2f2acff3e010d69db1c0e
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74051959"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547048"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Wat zijn gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken?
 
@@ -83,11 +83,11 @@ Voorwaardelijke toegang voor pc's biedt mogelijkheden die vergelijkbaar zijn met
 
 #### <a name="corporate-owned"></a>In bedrijfseigendom
 
-- **On-premises AD-domein is toegevoegd:** Deze optie wordt doorgaans gebruikt door organisaties die redelijk tevreden zijn met de manier waarop hun pc's al worden beheerd met AD-groepsbeleid of System Center Configuration Manager.
+- **On-premises AD-domein is toegevoegd:** Deze optie wordt doorgaans gebruikt door organisaties die redelijk tevreden zijn met de manier waarop hun pc's al worden beheerd met AD-groepsbeleid of Configuration Manager.
 
 - **Azure AD-domein toegevoegd en Intune-beheerprogramma:** Dit scenario is bedoeld voor organisaties die voornamelijk cloudservices gebruiken, met het doel om het gebruik van een on-premises infrastructuur te beperken, of alleen cloudservices gebruiken (geen on-premises infrastructuur). Azure AD Join werkt goed in een hybride omgeving en biedt toegang tot zowel cloud- als on-premises apps en bronnen. Het apparaat wordt toegevoegd aan Azure AD en wordt geregistreerd bij Intune, dat kan worden gebruikt als criterium voor voorwaardelijke toegang bij het openen van bedrijfsresources.
 
-- **AD-domein toegevoegd en System Center Configuration Manager:** Vanaf Current Branch biedt System Center Configuration Manager niet alleen de mogelijkheid om een pc toe te voegen aan een domein, maar beschikt u ook over mogelijkheden voor voorwaardelijke toegang om specifieke nalevingscriteria te evalueren:
+- **AD-domein toegevoegd en Configuration Manager:** Vanaf de huidige vertakking biedt Configuration Manager niet alleen de mogelijkheid om een pc toe te voegen aan een domein, maar beschikt u ook over mogelijkheden voor voorwaardelijke toegang om specifieke nalevingscriteria te evalueren:
 
   - Is de pc versleuteld?
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992982"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206071"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
@@ -36,9 +36,9 @@ U kunt met behulp van nalevingsrapporten apparaatcompatibiliteit controleren en 
 
 Open het **dashboard voor apparaatnaleving van Intune**:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecteer **Apparaatnaleving** > **Overzicht**. Het **dashboard voor apparaatnaleving** wordt geopend.
+2. Selecteer het tabblad **Apparaten** > **Overzicht** > **Nalevingsstatus**.
 
 > [!IMPORTANT]
 > Apparaten moeten worden ingeschreven bij Intune om het nalevingsbeleid voor apparaten te ontvangen.
@@ -151,13 +151,13 @@ In de grafiek **Naleving van instelling** worden alle instellingen van het nalev
 
 ## <a name="view-compliance-reports"></a>Nalevingsrapporten weergeven
 
-Naast het gebruik van de grafieken met betrekking tot de *Status van naleving* kunt u nalevingsrapporten bekijken op de pagina *Bewaken* van het beheercentrum.
+Naast het gebruik van de grafieken op *Nalevingsstatus*kunt u naar **Rapporten** > **Apparaatnaleving** gaan.
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Selecteer **Apparaten** > **Bewaken** en vervolgens onder **Naleving** het rapport dat u wilt bekijken. Enkele van de beschikbare nalevingsrapporten zijn:
 
-   - Apparaatnaleving
+   - Apparaatcompatibiliteit
    - Niet-compatibele apparaten
    - Apparaten zonder nalevingsbeleid
    - Naleving van instelling
@@ -191,3 +191,7 @@ Conflicterende beleidsinstellingen kunnen zich voordoen wanneer er meerdere Intu
 - Als de conflicterende instellingen uit een Intune-configuratiebeleid en een nalevingsbeleid voortkomen, hebben de instellingen in het nalevingsbeleid prioriteit boven de instellingen in het configuratiebeleid. Dit gebeurt zelfs als de instellingen in het configuratiebeleid veiliger zijn.
 
 - Als u meerdere nalevingsbeleidsregels hebt geïmplementeerd, gebruikt Intune het veiligste beleid.
+
+## <a name="next-steps"></a>Volgende stappen
+
+[Overzicht van nalevingsbeleid](device-compliance-get-started.md)

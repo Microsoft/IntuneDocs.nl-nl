@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9e337d47757e3c5507c94433f90d5c2863bc1b0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c82805bf70259d43d738644e5663b93533bcb56a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503005"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207159"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Een rol aan een Intune-gebruiker toewijzen
 
@@ -32,27 +32,23 @@ Als u rollen wilt maken, bewerken of toewijzen, moet uw account een van de volge
 - **Globale beheerder**
 - **Intune-servicebeheerder**
 
-1. Meld u aan bij de [Azure-portal](https://portal.azure.com).
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum ](https://go.microsoft.com/fwlink/?linkid=2109431)**Rollen** > **Alle rollen**.
 
-2. Kies **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.
+2. Kies op de blade **Intune-rollen - Alle rollen** voor de ingebouwde rol die u wilt toewijzen.
 
-3. Kies op de blade **Intune** voor de optie **Rollen** > **Alle rollen**.
+3. Kies **Beheren** > **Toewijzingen** op de blade <*rolnaam*> - **Overzicht**.
 
-4. Kies op de blade **Intune-rollen - Alle rollen** voor de ingebouwde rol die u wilt toewijzen.
+4. Kies op de blade voor aangepaste rollen de optie **Toewijzen**.
 
-5. Kies **Beheren** > **Toewijzingen** op de blade <*rolnaam*> - **Overzicht**.
+5. Voer op de blade **Roltoewijzingen** een **Toewijzingsnaam** en desgewenst een **Beschrijving van toewijzing** in voor de toewijzing.
 
-6. Kies op de blade voor aangepaste rollen de optie **Toewijzen**.
+6. **Leden (groepen)** : kies de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
 
-7. Voer op de blade **Roltoewijzingen** een **Toewijzingsnaam** en desgewenst een **Beschrijving van toewijzing** in voor de toewijzing.
+7. **Bereik (groepen)** : kies de groep die de gebruikers/apparaten bevat die het hierboven genoemde lid mag beheren.
 
-8. **Leden (groepen)** : kies de groep die de gebruiker bevat aan wie u de machtigingen wilt verlenen.
+8. **Bereik (tags)** : kies de tags waarop deze roltoewijzing moet worden toegepast.
 
-9. **Bereik (groepen)** : kies de groep die de gebruikers/apparaten bevat die het hierboven genoemde lid mag beheren.
-
-10. **Bereik (tags)** : kies de tags waarop deze roltoewijzing moet worden toegepast.
-
-11. Als u klaar bent, kiest u **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
+9. Als u klaar bent, kiest u **OK**. De nieuwe toewijzing wordt in de lijst met toewijzingen weergegeven.
 
 
 ## <a name="next-steps"></a>Volgende stappen

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563883"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548009"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Internettoegang beheren met behulp van Microsoft Edge met Microsoft Intune
 
@@ -199,6 +199,14 @@ Gebruik vervolgens de volgende sleutel-/waardeparen om het merk van uw organisat
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
 
+## <a name="display-relevant-industry-news-on-new-tab-pages"></a>Relevant nieuws van de branche weergeven op Nieuwe tabbladpagina
+
+U kunt de Nieuwe tabbladpagina in Microsoft Edge Mobile configureren zodat er nieuws wordt weergegeven van de branche die relevant is voor uw organisatie. Als u deze functie inschakelt, gebruikt Microosft Edge Mobile de domeinnaam van uw organisatie voor het samenvoegen van nieuws van het web over uw organisatie, de branche van uw organisatie en de concurrentie, zodat uw gebruikers relevant externe nieuws kunnen vinden vanuit de nieuwe gecentraliseerde tabbladpagina's in Microsoft Edge. Nieuws van de branche is standaard uitgeschakeld en u kunt dit inschakelen voor uw organisatie. 
+
+|    Sleutel    |    Waarde    |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|    'com.microsoft.intune.SohwIndustryNews'    |    Met **True** wordt het nieuws van de branche weergegeven op de Nieuwe tabbladpagina van Microsoft Edge Mobile.<p>Met **False** (standaard) wordt het nieuws van de branche verborgen op de Nieuwe tabbladpagina.    |
+
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Beheerde bladwijzers configureren voor Microsoft Edge
 
 Voor een betere toegankelijkheid kunt u bladwijzers configureren die u beschikbaar wilt stellen voor de gebruikers wanneer ze Microsoft Edge gebruiken. 
@@ -268,7 +276,7 @@ U kunt verschillende URL-indelingen gebruiken om uw lijsten met toegestane/geblo
   - `http://www.contoso.com:*`
   - `http://www.contoso.com: /*`
 
-## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>Gedrag definiëren wanneer gebruikers toegang proberen te krijgen tot een geblokkeerde site
+## <a name="transition-users-to-their-personal-context-when-trying-to-access-a-blocked-site"></a>Gebruikers overzetten naar hun persoonlijke context wanneer ze toegang proberen te krijgen tot een geblokkeerde site
 
 Met het model voor dubbele identiteit dat is ingebouwd in Microsoft Edge, kunt u eindgebruikers meer flexibiliteit bieden dan mogelijk was met de Intune Managed Browser. Wanneer gebruikers een geblokkeerde site in Microsoft Edge tegenkomen, kunt u hen vragen de koppeling te openen in hun persoonlijke context in plaats van in hun zakelijke context. Op deze manier blijven de gebruikers beschermd en blijven de zakelijke resources veilig. Als een gebruiker bijvoorbeeld via Outlook een koppeling naar een nieuwsbericht krijgt toegestuurd, kan hij deze koppeling openen in zijn persoonlijke context of op een InPrivate-tabblad. In zijn werkcontext zijn nieuwswebsites niet toegestaan. Deze overgangen zijn standaard toegestaan.
 
@@ -276,7 +284,16 @@ Gebruik het volgende sleutel-waardepaar om te configureren of deze zachte overga
 
 |    Sleutel    |    Waarde    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock'    |    Met **True** worden beperkte links rechtstreeks in de InPrivate-navigatie geopend.<p>Met **False** (standaard) wordt gebruikers gevraagd een beperkte link te openen met de InPrivate-navigatie of met het persoonlijke account (MSA).    |
+
+## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>Beperkte links rechtstreeks in InPrivate-tabbladen openen
+
+U kunt instellen dat beperkte links rechtstreeks worden geopend in de InPrivate-navigatie, waardoor gebruikers een vloeiendere browse-ervaring krijgen. Hierdoor hoeven gebruikers niet over te stappen op hun persoonlijke context om een site te bekijken. InPrivate-navigatie wordt beschouwd als niet-beheerd, waardoor gebruikers geen toegang kunnen krijgen wanneer zij de InPrivate-navigatiemodus gebruiken. 
+
+|    Sleutel    |    Waarde    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    Bij **Waar** kan Microsoft Edge gebruikers overzetten naar hun persoonlijke context om geblokkeerde sites te openen.<p>Met **Blokkeren** voorkomt u het overzetten van gebruikers door Microsoft Edge. Gebruikers krijgen een bericht te zien waarin staat dat de site die ze proberen te openen, is geblokkeerd.    |
+
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>Met Microsoft Edge in iOS logboeken voor beheerde apps openen 
 

@@ -7,14 +7,30 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
+ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829038"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75323087"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune.
+
+### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Bijgewerkte functie: Nieuwe RBAC-rol voor Intune<!--4253397-->
+In de service-update van januari voor Intune voegen we een nieuwe beveiligingsrol toe in Intune. Deze rol wordt weergegeven als 'Eindpuntbeveiligingsbeheerder' in Intune en de rol is een uitbreiding van de rol 'Beveiligingsbeheerder' van Azure Active Directory.
+ 
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Op dit moment zijn er drie rollen beschikbaar in Azure Active Directory voor uw beveiligingsprofessionals:
+- De rol Beveiligingslezer in Azure Active Directory met alleen-lezentoegang tot Intune.
+- De rol Beveiligingsoperator in Azure Active Directory met alleen-lezentoegang tot Intune.
+- De rol Beveiligingsbeheerder in Azure Active Directory. Wanneer Intune in januari wordt bijgewerkt, krijgt de rol Eindpuntbeveligingsbeheerder niet alleen leesmachtigingen voor Intune, maar ook de volgende nieuwe machtigingen:
+    - Lezen, Maken, Bijwerken, Verwijderen en Nalevingsbeleid voor apparaten toewijzen
+    - Lezen, Verwijderen en Beheerde apparaten bijwerken
+    - Lezen, Maken, Bijwerken, Verwijderen en Basislijnen voor beveiliging toewijzen
+    - Lezen en Beveiligingstaken bijwerken
+ 
+### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+Bekijk vandaag nog uw RBAC-rollen voor Intune. Als u momenteel alleen Algemene beheerder als rol gebruik, zijn er geen wijzigingen nodig. Als u rollen gebruikt, en u de granulariteit wilt gebruiken die de rol Eindpuntbeveiligingsbeheerder biedt, wijst u die rol toe wanneer deze beschikbaar is. Bekijk de pagina [Wat is er nieuw](../fundamentals/whats-new.md) van Intune voor actuele informatie over Intune-releases. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Bijgewerkte ondersteuningsmededeling over de mobiele app Adobe Acrobat Reader voor Intune<!--5746776-->
 Eind augustus hebben we via MC188653 meegedeeld dat de mobiele app Adobe Acrobat Reader voor Intune op 1 december 2019 het eind van zijn levenscyclus heeft bereikt en dat Adobe van plan is om ondersteuning te bieden voor de app-beveiliging van Intune vanuit de belangrijkste Acrobat Reader-app. Sindsdien hebben we feedback van klanten ontvangen dat we IT-beheerders meer tijd moesten geven om zich bezig te houden met Adobe Acrobat Reader voor Intune en dat eindgebruikers meer tijd nodig hadden om zich Adobe Acrobat Reader voor Intune eigen te maken. Omdat Adobe Acrobat Reader voor Intune veel wordt gebruikt op apparaten van eindgebruikers en een belangrijke rol speelt in bedrijfsscenario's, willen we kunnen blijven garanderen dat elke ervaring voldoet aan de vereisten die uw organisatie stelt aan de bescherming van haar apps. 
@@ -39,25 +55,6 @@ Na 20 februari 2020 ontvangen deze apparaten geen beveiligingsupdates meer en ku
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
 Controleer uw Intune-rapporten om na te gaan voor welke apparaten of gebruikers dit gevolgen kan hebben. Ga naar Apparaten > Alle apparaten en filter op besturingssysteem. U kunt extra kolommen toevoegen, zodat u eenvoudiger kunt vaststellen wie in uw organisatie apparaten met Windows Phone 8.1 gebruikt. Vraag uw eindgebruikers om hun apparaten te upgraden naar een ondersteunde besturingssysteemversie.
-
-### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Uw beveiligingsbeleid voor de Outlook-app bijwerken voor Intune<!--2576686-->
-U moet mogelijk actie ondernemen als u MC195618 hebt ontvangen in het berichtencentrum. Zoals gedeeld in Microsoft 365-roadmapfunctie-id's: 56325 en 56326, gaan Intune en Outlook voor iOS en Android ondersteuning voor het beperken van gevoelige gegevens in e-mailmeldingen en agendaherinneringen implementeren. Als gevolg van deze verbeteringen wordt in Outlook voor iOS en Android de ondersteuning voor de configuratiesleutels voor meerdere gegevensbeschermingsapps verwijderd die u momenteel nog kunt gebruiken voor het beheren van meldingen.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-De nieuwe functies zijn nog niet geleverd, maar als dit gebeurt, werken de volgende app-configuratiesleutels niet meer in Outlook voor iOS en Android:
-- com.microsoft.outlook.Mail.NotificationsEnabled
-- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
-- com.microsoft.outlook.Calendar.NotificationsEnabled
-- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
-We raden u aan om ter voorbereiding op deze nieuwe functie de gegevensbeschermingsinstelling 'Meldingen van organisatiegegevens' van het Intune-app-beveiligingsbeleid in te stellen op de waarde 'Organisatiegegevens blokkeren'. Vanaf 16 december 2019 volgt Outlook voor iOS en Android de gegevensbeschermingsinstelling 'Meldingen van organisatiegegevens' en worden de eerder genoemde sleutels niet meer ondersteund. Door deze nieuwe instelling te configureren, worden gevoelige gegevens niet gelekt wanneer de bovenstaande configuratiesleutels niet meer worden ondersteund. Daarnaast biedt Outlook aanvullende granulariteit wanneer de gegevensbeschermingsinstelling 'Meldingen van organisatiegegevens' is ingesteld op 'Organisatiegegevens blokkeren' met de extra app-configuratie-instelling, 'Agendameldingen'. De combinatie van de app-beveiligingsbeleidsinstelling en deze app-configuratie-instelling beperkt gevoelige gegevens in e-mailmeldingen, maar geeft gevoelige gegevens in agendameldingen weer zodat gebruikers op hun vergadering kunnen komen door een snelle blik te werken op de melding of het meldingencentrum.
-
-#### <a name="additional-information"></a>Aanvullende informatie
-Zie voor meer informatie over app-beveiligingsbeleidsinstellingen en de instellingen van Outlook:
-- [App-beveiligingsbeleidsinstellingen voor Android](../apps/app-protection-policy-settings-android.md)
-- [App-beveiligingsbeleidsinstellingen voor iOS](../apps/app-protection-policy-settings-ios.md)
-- [Configuratie-instellingen voor de Outlook-app voor iOS en Android implementeren](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune-plan voor wijziging: Ondersteuning voor Windows 10, versie 1703 van de bedrijfsportal komt te vervallen<!--5026679-->

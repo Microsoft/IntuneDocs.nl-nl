@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbe2377bfd353dc00ddfdf53a6d091c486644194
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d0ef42e301efe2c323ea98265272ba71596a8083
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059377"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206394"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Mobiele eSIM-profielen configureren in Intune - Openbare preview
 
@@ -91,11 +91,11 @@ Als u met een CSV-bestand met activeringscodes werkt, controleert u of uw provid
 2. De tweede en daarop volgende rijen bevatten unieke, eenmalig te gebruiken activeringscodes met twee waarden:
 
     1. De eerste kolom bevat de unieke ICCID (de id van de SIM-chip)
-    2. Tweede kolom bevat de overeenkomst-id's, door komma's gescheiden (geen komma aan het einde). Zie het volgende voorbeeld:
+    2. Tweede kolom bevat de overeenkomst-id's, door komma's gescheiden (geen komma aan het einde). Bekijk het volgende voorbeeld:
 
         ![CSV-voorbeeldbestand met activeringscodes van een provider](./media/esim-device-configuration/url-activation-code-examples.png)
 
-3. De naam van het CSV-bestand wordt de naam van de mobiele-abonnementsgroep in Azure Portal. In de voorgaande afbeelding is de bestandsnaam `UnlimitedDataSkynet.csv`. In Intune heet de abonnementsgroep dus `UnlimitedDataSkynet.csv`:
+3. De naam van het CSV-bestand wordt de naam van de mobiele-abonnementsgroep in het beheercentrum Eindpuntbeheer. In de voorgaande afbeelding is de bestandsnaam `UnlimitedDataSkynet.csv`. In Intune heet de abonnementsgroep dus `UnlimitedDataSkynet.csv`:
 
     ![De mobiele-abonnementsgroep krijgt de naam van het CSV-voorbeeldbestand met activeringscodes](./media/esim-device-configuration/subscription-pool-name-csv-file.png)
 

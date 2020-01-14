@@ -1,6 +1,6 @@
 ---
 title: Apparaatfuncties en -instellingen gebruiken in Microsoft Intune - Azure | Microsoft Docs
-description: Overzicht van de verschillende Microsoft Intune-apparaatprofielen. Krijg informatie over functies, beperkingen, e-mail, Wi-Fi, VPN, onderwijs, certificaten, Windows 10-upgrade, BitLocker en Microsoft Defender, Windows Information Protection, beheersjablonen en aangepaste configuratie-instellingen voor apparaten in de Azure-portal. Gebruik deze profielen om gegevens en apparaten in uw bedrijf te beheren en te beveiligen.
+description: Overzicht van de verschillende Microsoft Intune-apparaatprofielen. Krijg informatie over functies, beperkingen, e-mail, Wi-Fi, VPN, onderwijs, certificaten, Windows 10-upgrade, BitLocker en Microsoft Defender, Windows Information Protection, beheersjablonen en aangepaste configuratie-instellingen voor apparaten in het beheercentrum voor Microsoft Endpoint Manager. Gebruik deze profielen om gegevens en apparaten in uw bedrijf te beheren en te beveiligen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
-ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
+ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74694944"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206615"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Functies en instellingen toepassen op uw apparaten met apparaatprofielen in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt in- of uitschakelen. Deze instellingen en functies worden toegevoegd aan 'configuratieprofielen'. U kunt profielen voor verschillende apparaten en verschillende platforms maken, waaronder iOS, Android en Windows. Gebruik vervolgens Intune om het profiel toe te passen of toe te wijzen aan de apparaten.
 

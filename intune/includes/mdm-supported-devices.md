@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f31e500b7a3383c5c0c53f1df72cb4a42660328f
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 4669d02f149e7f815ff94b4daa85c4c539c26c96
+ms.sourcegitcommit: 90369aef160945171435b03d82bae395609c7a62
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74284097"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75500193"
 ---
 
 
@@ -34,7 +34,7 @@ ms.locfileid: "74284097"
 - Windows 10 Teams (Surface Hub)
 
    Zie [Surface Hub beheren met MDM](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub) voor meer informatie over het beheren van apparaten waarop Windows 10 Teams wordt uitgevoerd
-- Windows Phone 8.1, Windows 8.1 RT en pc's met Windows 8.1 (Sustaining modus)
+- Windows 10 1709 (RS3) en nieuwer, Windows Phone 8.1, Windows 8.1 RT en pc's met Windows 8.1 (onderhoudsmodus)
 
 > [!NOTE]
 > Niet alle Windows-edities bieden ondersteuning voor alle beschikbare systeemfuncties die worden geconfigureerd via MDM. Raadpleeg de [referentiedocumenten voor de serviceprovider voor Windows-configuratie](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers). Elke CSP laat zien welke Windows-edities worden ondersteund.

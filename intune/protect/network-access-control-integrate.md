@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b2083a493fd723c649bdfe2b709dbaa4c0ec663
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: baeece091358a7cd05f0d1f8db7c0032870fc262
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810275"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207091"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Netwerktoegangsbeheer integreren met Intune
 
 Intune kan worden geïntegreerd met producten van partners voor netwerktoegangsbeheer (ook wel Network Access Control of kortweg NAC genoemd) om de zakelijke gegevens van organisaties te beveiligen wanneer apparaten proberen toegang te krijgen tot on-premises resources.
+
+>[!IMPORTANT]
+> NAC wordt momenteel niet ondersteund voor Android Enterprise Volledig beheerd of Android Enterprise Toegewezen apparaten.
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>De resources van uw organisatie beveiligen met Intune en NAC-oplossingen
 

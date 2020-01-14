@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78f79a734d0a7b4901b2248b20abd9d304926dd2
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955504"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547824"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -144,7 +144,7 @@ De volgende methoden worden gezien als een zakelijke Windows-registratie:
 - Het apparaat wordt met Windows Autopilot geregistreerd, maar is geen Alleen MDM-inschrijving-optie van Windows-instellingen.
 - Het IMEI-nummer van het apparaat wordt vermeld onder **Apparaatinschrijving** >  **[Zakelijke apparaat-id's](corporate-identifiers-add.md)** . (Wordt niet ondersteund voor Windows Phone 8.1.)
 - Het apparaat is geregistreerd via een [pakket voor bulkinrichting](windows-bulk-enroll.md).
-- Het apparaat is geregistreerd via GPO, of er is sprake van [automatische inschrijving met behulp van SCCM voor co-beheer](https://docs.microsoft.com/sccm/comanage/quickstart-paths#bkmk_path1).
+- Het apparaat is geregistreerd via GPO, of er is sprake van [automatische inschrijving met behulp van Configuration Manager voor co-beheer](https://docs.microsoft.com/configmgr/comanage/quickstart-paths#bkmk_path1).
  
 De volgende inschrijvingen zijn door Intune gemarkeerd als zakelijk. Maar omdat ze de controle Intune-beheerder per apparaat niet aanbieden, worden ze geblokkeerd:
 - [Automatische MDM-inschrijving](windows-enroll.md#enable-windows-10-automatic-enrollment) met [Azure Active Directory-koppeling tijdens het instellen van Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.

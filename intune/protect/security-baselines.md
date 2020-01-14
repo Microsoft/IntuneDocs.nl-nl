@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409964"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548139"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Beveiligingsbasislijnen gebruiken om Windows 10-apparaten te gebruiken in Intune
 
@@ -90,7 +90,7 @@ Profielen die u eerder hebt gemaakt op basis van een previewsjabloon, kunt u gew
 
 Veelvoorkomende taken bij het werken met beveiligingsbasislijnen zijn onder meer:
 
-- [Een profiel maken](#create-the-profile) – Om de instellingen die u wilt gebruiken te configureren en de basislijn aan groepen toe te wijzen.
+- [Een profiel maken](#create-the-profile)– Om de instellingen die u wilt gebruiken te configureren en de basislijn aan groepen toe te wijzen.
 - [De versie wijzigen](#change-the-baseline-version-for-a-profile): de basislijnversie die wordt gebruikt door een profiel wijzigen.
 - [Een basislijntoewijzing verwijderen](#remove-a-security-baseline-assignment): ontdek wat er gebeurt wanneer u stopt met het beheren van instellingen met een beveiligingsbasislijn.
 
@@ -192,9 +192,9 @@ Andere processen die later mogelijk de instellingen op het apparaat wijzigen, zi
 
 ## <a name="co-managed-devices"></a>Apparaten met co-beheer
 
-Beveiligingsbasislijnen op met Intune-beheerde apparaten zijn vergelijkbaar met beheerde apparaten met co-beheer met Configuration Manager. Apparaten met co-beheer maken gebruik van System Center Configuration Manager en Microsoft Intune voor het tegelijkertijd beheren van de Windows 10-apparaten. Hiermee kunt u uw bestaande investering in Configuration Manager via de cloud koppelen aan de voordelen van Intune. [Overzicht van co-beheer](https://docs.microsoft.com/sccm/comanage/overview) is een goede informatiebron als u Configuration Manager gebruikt en ook wilt profiteren van de voordelen van de cloud.
+Beveiligingsbasislijnen op met Intune-beheerde apparaten zijn vergelijkbaar met beheerde apparaten met co-beheer met Configuration Manager. Apparaten met co-beheer maken gebruik van Configuration Manager en Microsoft Intune voor het tegelijkertijd beheren van de Windows 10-apparaten. Hiermee kunt u uw bestaande investering in Configuration Manager via de cloud koppelen aan de voordelen van Intune. [Overzicht van co-beheer](https://docs.microsoft.com/configmgr/comanage/overview) is een goede informatiebron als u Configuration Manager gebruikt en ook wilt profiteren van de voordelen van de cloud.
 
-Wanneer u apparaten met co-beheer gebruikt, moet u de workload **Apparaatconfiguratie** (de instellingen ervan) overschakelen naar Intune. [Workloads voor apparaatconfiguratie](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) biedt meer informatie.
+Wanneer u apparaten met co-beheer gebruikt, moet u de workload **Apparaatconfiguratie** (de instellingen ervan) overschakelen naar Intune. [Workloads voor apparaatconfiguratie](https://docs.microsoft.com/configmgr/comanage/workloads#device-configuration) biedt meer informatie.
 
 ## <a name="q--a"></a>Vragenronde
 

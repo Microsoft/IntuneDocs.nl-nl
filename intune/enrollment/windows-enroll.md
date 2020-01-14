@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b84cd52dfe2eb6332ddbc89bc00a17ec3361b79
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000428"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207431"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Inschrijving voor Windows-apparaten instellen
 
@@ -128,6 +128,9 @@ Azure Active Directory heeft een andere CNAME die wordt gebruikt voor apparaatre
 Zie [Apparaat-id's beheren met de Azure-portal voor meer informatie over het registreren van apparaten.](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
 
 ## <a name="windows-10-auto-enrollment-and-device-registration"></a>Windows 10 auto-enrollment and device registration (Automatische inschrijving en apparaatregistratie in Windows 10)
+
+Deze sectie is van toepassing op klanten van Cloud voor de Amerikaanse overheid.
+
 Hoewel het maken van CNAME-DNS-vermeldingen optioneel is, maken CNAME-records het voor gebruikers makkelijker om zich in te schrijven. Als er geen CNAME-inschrijvingsrecord wordt gevonden, wordt gebruikers gevraagd de MDM-servernaam (enrollment.manage.microscoft.us) handmatig in te voeren.
 
 | Type | Hostnaam | Verwijst naar | TTL |

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 442432e7638c69083dcad5abc571c00e4051553d
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547977"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731521"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10-sjablonen gebruiken voor het configureren van instellingen voor groepsbeleid in Microsoft Intune
 
@@ -52,24 +52,26 @@ In dit artikel vindt u de stappen voor het maken van een sjabloon voor Windows 1
     - **Platform**: Kies **Windows 10 en hoger**.
     - **Profieltype**: Selecteer **Beheersjablonen**.
 
-4. Selecteer **Maken**. Selecteer in het nieuwe venster de optie **Instellingen**. Alle instellingen worden vermeld. U kunt de pijlen Vorige/Volgende gebruiken om meer instellingen te bekijken:
+4. Selecteer **Maken**. Selecteer in het nieuwe venster de vervolgkeuzelijst en selecteer **Alle producten**. In de lijst kunt u de instellingen ook filteren om alleen **Windows-instellingen**, alleen **Office-instellingen** of alleen **Edge-instellingen (versie 77 of hoger)** weer te geven:
 
-    ![Een voorbeeldlijst met instellingen bekijken en de knoppen Vorige en Volgende gebruiken](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
-
-    > [!TIP]
-    > De Windows-instellingen in Intune correleren met het pad naar het on-premises groepsbeleidsobject dat u ziet in Lokale groepsbeleidsobjecteditor (`gpedit`).
-
-5. Selecteer **Alle producten** in de vervolgkeuzelijst. In de lijst kunt u de instellingen ook filteren om alleen **Windows-instellingen**, alleen **Office-instellingen** of alleen **Edge-instellingen (versie 77 of hoger)** weer te geven:
-
-    ![De lijst filteren om alle Windows- of alle Office-instellingen weer te geven in beheersjablonen in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+    > [!div class="mx-imgBorder"]
+    > ![De lijst filteren om alle Windows- of alle Office-instellingen weer te geven in beheersjablonen in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > Instellingen voor Microsoft Edge zijn van toepassing op:
     >
-    > - Microsoft Edge versie 77 en hoger. Raadpleeg [Apparaatbeperkingsinstellingen voor de Microsoft Edge-browser](device-restrictions-windows-10.md#microsoft-edge-browser) om versie 45 of eerder van Microsoft Edge te configureren.
+    > - Microsoft Edge versie 77 en nieuwer. Raadpleeg [Apparaatbeperkingsinstellingen voor de Microsoft Edge-browser](device-restrictions-windows-10.md#microsoft-edge-browser) om versie 45 of eerder van Microsoft Edge te configureren.
     > - Windows 10 RS4 en nieuwer waarvoor [KB 4512509](https://support.microsoft.com/kb/4512509) is geïnstalleerd
     > - Windows 10 RS5 en nieuwer waarvoor [KB 4512534](https://support.microsoft.com/kb/4512534) is geïnstalleerd
     > - Windows 10 19H1 en nieuwer waarvoor [KB 4512941](https://support.microsoft.com/kb/4512941) is geïnstalleerd
+
+5. Alle instellingen worden vermeld. U kunt de pijlen Vorige/Volgende gebruiken om meer instellingen te bekijken:
+
+    > [!div class="mx-imgBorder"]
+    > ![Een voorbeeldlijst met instellingen bekijken en de knoppen Vorige en Volgende gebruiken](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
+
+    > [!TIP]
+    > De Windows-instellingen in Intune correleren met het pad naar het on-premises groepsbeleidsobject dat u ziet in Lokale groepsbeleidsobjecteditor (`gpedit`).
 
 6. Selecteer een willekeurige instelling. U kunt bijvoorbeeld filteren op **Office** en **Beperkt browsen activeren** selecteren. Er wordt een gedetailleerde beschrijving van de instelling weergegeven. Kies **Ingeschakeld**, **Uitgeschakeld** of laat de instellingen op **Niet geconfigureerd** staan (standaard). In de gedetailleerde beschrijving wordt ook uitgelegd wat er gebeurt wanneer u kiest voor **Ingeschakeld**, **Uitgeschakeld** of **Niet geconfigureerd**.
 7. Selecteer **OK** om uw wijzigingen op te slaan.
@@ -88,13 +90,15 @@ Doorloop de lijst met instellingen verder en configureer de instellingen die u i
 
 In deze sjablonen zijn honderden verschillende instellingen beschikbaar. Gebruik de volgende ingebouwde functies om het eenvoudiger te maken om specifieke instellingen te zoeken:
 
-- Selecteer in uw sjabloon de kolom **Instellingen**, **Status**, **Instellingstype** of **Pad** om de lijst te sorteren. Selecteer bijvoorbeeld de kolom **Pad** om alle instellingen in het pad `Microsoft Excel` te bekijken:
+- Selecteer in uw sjabloon de kolom **Instellingen**, **Status**, **Instellingstype** of **Pad** om de lijst te sorteren. Selecteer bijvoorbeeld de kolom **Pad** en gebruik de pijl Volgende om de instellingen in het pad `Microsoft Excel` te bekijken:
 
-  ![Klik op Pad om alle instellingen weer te geven die in Intune op groepsbeleid of ADMX-pad in beheersjablonen zijn gegroepeerd](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
+  > [!div class="mx-imgBorder"]
+  > ![Klik op Pad om alle instellingen weer te geven die in Intune op groepsbeleid of ADMX-pad in beheersjablonen zijn gegroepeerd](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- Gebruik in uw sjabloon het vak **Zoeken** om specifieke instellingen te zoeken. U kunt zoeken op instellingsnaam of -pad. Bijvoorbeeld zoeken naar `copy`. Alle instellingen met `copy` worden weergegeven:
+- Gebruik in uw sjabloon het vak **Zoeken** om specifieke instellingen te zoeken. U kunt zoeken op instelling of pad. Bijvoorbeeld zoeken naar `copy`. Alle instellingen met `copy` worden weergegeven:
 
-  ![Zoeken naar 'copy' om alle Windows- en Office-instellingen in beheersjablonen in Intune weer te geven](./media/administrative-templates-windows/search-copy-settings.png) 
+  > [!div class="mx-imgBorder"]
+  > ![Zoeken naar 'copy' om alle Windows- en Office-instellingen in beheersjablonen in Intune weer te geven](./media/administrative-templates-windows/search-copy-settings.png) 
 
   Zoek in een ander voorbeeld naar `microsoft word`. U ziet alle instellingen die u voor het programma Microsoft Word kunt instellen. Zoek naar `explorer` om te bekijken welke Internet Explorer-instellingen u allemaal aan uw sjabloon kunt toevoegen.
 
@@ -103,3 +107,5 @@ In deze sjablonen zijn honderden verschillende instellingen beschikbaar. Gebruik
 De sjabloon is gemaakt, maar er gebeurt nog niets. De volgende stap is [de sjabloon, ook wel een profiel genoemd, toewijzen](device-profile-assign.md) en [de status ervan bewaken](device-profile-monitor.md).
 
 [Office 365 bijwerken met behulp van beheersjablonen](administrative-templates-update-office.md)
+
+[Zelfstudie: De cloud gebruiken voor het configureren van groepsbeleid op Windows 10-apparaten met ADMX-sjablonen en Microsoft Intune](tutorial-walkthrough-administrative-templates.md)

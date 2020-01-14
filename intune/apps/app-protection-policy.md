@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b712922824fa9d54f33fb43114e852fbeb52a81
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899433"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692128"
 ---
 # <a name="app-protection-policies-overview"></a>Overzicht van App-beveiligingsbeleid
 
@@ -95,7 +95,7 @@ Bedrijfsgegevens en persoonlijke gegevens kunnen met elkaar worden vermengd als 
 ### <a name="data-protection-with-app-protection-policies-app"></a>Gegevensbeveiliging met het beveiligingsbeleid voor apps (APP)
 
 U kunt het beveiligingsbeleid voor apps gebruiken om te voorkomen dat bedrijfsgegevens worden opgeslagen op de lokale opslag van het apparaat (zie de onderstaande afbeelding). U kunt ook gegevensverplaatsing beperken naar andere apps die niet zijn beveiligd met beveiligingsbeleid voor apps. Beveiligingsbeleidsinstellingen voor apps bevatten:
-- Beleid voor gegevensverplaatsing, zoals **Opslaan als voorkomen** en **Knippen, kopiëren en plakken beperken**.
+- Beleid voor gegevensverplaatsing, zoals **Kopieën van organisatiegegevens opslaan** en **Knippen, kopiëren en plakken beperken**.
 - Instellingen voor toegangsbeleid zoals **Eenvoudige pincode vereisen voor toegang** en **Beheerde apps blokkeren op gekraakte of geroote apparaten**.
 
 ![Conceptafbeelding met bedrijfsgegevens die door beleid worden beschermd](./media/app-protection-policy/apps-with-protection-policies.png)
@@ -169,7 +169,7 @@ Dit zijn de aanvullende vereisten voor het gebruik van de apps [Word, Excel en P
 
 - De eindgebruiker moet een licentie voor [Office 365 Business of Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) aan zijn Azure Active Directory-account hebben gekoppeld. Het abonnement moet de Office-apps voor mobiele apparaten bevatten en kan een cloudopslagaccount met [OneDrive voor Bedrijven](https://onedrive.live.com/about/business/) bevatten. Office 365-licenties kunnen aan de hand van de volgende [instructies](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) worden toegewezen in het [Microsoft 365-beheercentrum](https://admin.microsoft.com).
 
-- De eindgebruiker moet een beheerde locatie hebben die is geconfigureerd met de gedetailleerde functie voor 'opslaan als', onder de instelling 'Opslaan als voorkomen' van het beveiligingsbeleid voor toepassingen. Als bijvoorbeeld OneDrive de beheerde locatie is, moet de [OneDrive](https://onedrive.live.com/about/)-app worden geconfigureerd in de Word-, Excel- of PowerPoint-app van de eindgebruiker.
+- De eindgebruiker moet een beheerde locatie hebben die is geconfigureerd met de gedetailleerde functie voor 'opslaan als', onder de instelling 'Kopieën van organisatiegegevens opslaan' van het beveiligingsbeleid voor toepassingen. Als bijvoorbeeld OneDrive de beheerde locatie is, moet de [OneDrive](https://onedrive.live.com/about/)-app worden geconfigureerd in de Word-, Excel- of PowerPoint-app van de eindgebruiker.
 
 - Als OneDrive de beheerde locatie is, moet de app het doel zijn van het app-beveiligingsbeleid dat voor de eindgebruiker is geïmplementeerd.
 

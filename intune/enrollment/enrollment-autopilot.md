@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bce0e96ecdd4cf254273e26564b8cb132a6d2080
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: fd320dddeb7717461188bdb701044bf060e7d75e
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563857"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324879"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -49,11 +49,11 @@ Raadpleeg voor meer informatie 'De PowerShell-cmdlet begrijpen'.
 
 U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren met de bijbehorende informatie.
 
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), **Apparaten** > **Windows** > **Apparaten** (onder **Windows Autopilot Deployment-programma** > **Importeren**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), **Apparaten** > **Windows** > **Windows-inschrijving** > **Apparaten** (onder **Windows Autopilot Deployment-programma** > **Importeren**.
 
     ![Schermafbeelding van Windows Autopilot-apparaten](./media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Onder **Windows AutoPilot-apparaten toevoegen** bladert u naar het CSV-bestand met de apparaten die u wilt toevoegen. Het CSV-bestand moet de serienummers, Windows-product-id's, hardwarehashes, optionele groepstags en optionele toegewezen gebruiker vermelden. Er mogen maximaal 500 rijen in de lijst staan. Gebruik de header- en regelindeling die hieronder wordt weergegeven:
+2. Onder **Windows AutoPilot-apparaten toevoegen** bladert u naar het CSV-bestand met de apparaten die u wilt toevoegen. Het CSV-bestand moet de serienummers, Windows-product-id's, hardwarehashes, optionele groepstags en optionele toegewezen gebruiker vermelden. Er mogen maximaal 500 rijen in de lijst staan. Zie [Apparaten toevoegen aan Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#device-identification) voor meer informatie over het verkrijgen van apparaatgegevens. Gebruik de header- en regelindeling die hieronder wordt weergegeven:
 
     `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User`</br>
     `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
@@ -71,7 +71,7 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
 
 ## <a name="create-an-autopilot-device-group"></a>Een Autopilot-apparaatgroep maken
 
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Groepen** > **Nieuwe groep**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431)**Groepen** > **Nieuwe groep**.
 2. Op de blade **Groep**:
     1. Als **groepstype** kiest u **Beveiliging**.
     2. Geef een **groepsnaam** en een **beschrijving** voor de groep op.
@@ -88,7 +88,7 @@ U kunt Windows Autopilot-apparaten toevoegen door een CSV-bestand te importeren 
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Een Autopilot-implementatieprofiel maken
 Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren. U kunt maximaal 350 profielen per tenant maken.
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaten** > **Windows** > **Windows-inschrijving** > **Implementatieprofielen** > **Profiel maken**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431)**Apparaten** > **Windows** > **Windows-inschrijving** > **Implementatieprofielen** > **Profiel maken**.
 2. Geef op de pagina **Basisinformatie** een waarde op voor **Naam** en eventueel ook voor **Beschrijving**.
 
     ![Schermopname van de pagina Basisinformatie](./media/enrollment-autopilot/create-profile-basics.png)
@@ -208,7 +208,7 @@ Als u geen interesse hebt in Mobile Device Management, kunt u Autopilot gebruike
 - Profieltoewijzingen synchroniseren die zijn uitgevoerd in een andere portal
 - Wijzigingen in de lijst met apparaten weergeven die zijn gemaakt in een andere portal
 
-## <a name="windows-autopilot-for-existing-devices"></a>Windows Autopilot voor bestaande apparaten
+## <a name="windows-autopilot-for-existing-devices"></a>Windows Autopilot implementeren voor bestaande apparaten
 
 U kunt Windows-apparaten groeperen op correlator-id bij registratie met behulp van [Autopilot voor bestaande apparaten](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) via Configuration Manager. De correlator-ID is een parameter van het Autopilot-configuratiebestand. De [enrollmentProfileName van het Azure ID-apparaatkenmerk](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) wordt automatisch zodanig ingesteld dat deze aansluit bij de ‘OfflineAutopilotprofile-\<correlator-ID\>’. Hierdoor kunnen willekeurige dynamische groepen in Azure AD op basis van de correlator-id worden gemaakt met behulp van het kenmerk enrollmentprofileName.
 

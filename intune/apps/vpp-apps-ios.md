@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eed0b8a74e69bc1552ae3e2badf485364ba37e94
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 01c95e1961871f33a3d8ed8c0b6c22502faca3a9
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563826"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654019"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>iOS- en macOS-apps beheren die zijn aangeschaft via het Apple Volume Purchase Program met Microsoft Intune
 
@@ -95,12 +95,12 @@ Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar
         > Als u het land of de regio wijzigt, worden de metagegevens en store-URL van de apps bijgewerkt bij de volgende synchronisatie met de Apple-service voor de apps die met deze token zijn gemaakt. De app wordt niet bijgewerkt als deze niet bestaat in de store van het nieuwe land of de nieuwe regio.
 
     - **Type VPP-account**: u hebt de keuze uit **Bedrijven** of **Onderwijs**.
-    - **Automatische updates voor apps**: kies **Aan** of **Uit** om automatische updates in of uit te schakelen. Wanneer deze zijn ingeschakeld, detecteert Intune updates voor de VPP-app in de app store en pusht ze automatisch naar het apparaat als dit incheckt. Met automatische updates voor Apple VPP-apps worden alleen apps die zijn geïmplementeerd met de installatie-intentie **Vereiste**, automatisch bijgewerkt. Voor apps die zijn geïmplementeerd met de installatie-intentie **Beschikbaar**, wordt met de automatische update voor de IT-beheerder een statusbericht gegenereerd waarin staat dat een nieuwe versie van de app beschikbaar is. Dit statusbericht kan worden weergegeven door de app te selecteren, Apparaatinstallatiestatus te selecteren en de Statusdetails te controleren. Daarnaast ziet de gebruiker dat de app niet is geïnstalleerd in de Bedrijfsportal, zelfs als er een eerdere versie van de app is geïnstalleerd. In dit geval kan de gebruiker de app opnieuw installeren door te klikken op **Installeren** in het app-detailscherm in de bedrijfsportal-app om de nieuwe versie van de app te installeren.
+    - **Automatische updates voor apps**: kies **Aan** of **Uit** om automatische updates in of uit te schakelen. Wanneer deze zijn ingeschakeld, detecteert Intune updates voor de VPP-app in de app store en pusht ze automatisch naar het apparaat als dit incheckt. Met automatische updates voor Apple VPP-apps worden alleen apps die zijn geïmplementeerd met de installatie-intentie **Vereiste**, automatisch bijgewerkt. Bij apps die zijn geïmplementeerd met de installatie-intentie **Beschikbaar** ziet de gebruiker dat de app niet is geïnstalleerd in de Bedrijfsportal, zelfs als er een eerdere versie van de app is geïnstalleerd. In dit geval kan de gebruiker de app opnieuw installeren door te klikken op **Installeren** in het app-detailscherm in de bedrijfsportal-app om de nieuwe versie van de app te installeren. In het geval van door gebruikers geregistreerde iOS-apparaten blijven eindgebruikers echter alle gebruikerslicenties voor VPP-apps in de Bedrijfsportal zien. 
 
         > [!NOTE]
         > Automatische updates voor apps worden gebruikt voor apps voor zowel gelicentieerde apparaten als gebruikers voor iOS-versie 11.0 en hoger of macOS 10.12 en hoger.
 
-    - **Ik geef Microsoft toestemming om gebruikers- en apparaatgegevens naar Apple te verzenden.** - U moet **Ik ga akkoord** selecteren om door te gaan. Zie [Gegevens die Intune naar Apple verzendt](~/protect/data-intune-sends-to-apple.md) om te kijken welke gegevens Intune naar Apple verzendt.
+    - **Ik geef Microsoft toestemming om gebruikers- en apparaatgegevens naar Apple te verzenden.** - U moet **Ik ga akkoord** selecteren om door te gaan. Zie [Gegevens die Intune naar Apple verzendt](~/protect/data-intune-sends-to-apple.md) om te kijken welke gegevens Microsoft naar Apple verzendt.
 
 6. Selecteer **Maken** wanneer u klaar bent.
 

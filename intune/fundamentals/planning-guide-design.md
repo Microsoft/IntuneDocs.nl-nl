@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24f15cb179dfc2b12b642f5f196d04dce58d4377
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505210"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547545"
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 
@@ -84,7 +84,7 @@ Uw huidige omgeving kan van invloed zijn op ontwerpbeslissingen en moet daarom w
 
   - Hoe beheert u uw pc- en serveromgeving?
 
-  - Gebruikt u System Center Configuration Manager? Werkt u met een platform voor systeembeheer van derden?
+  - Gebruikt u Microsoft Endpoint Configuration Manager? Werkt u met een platform voor systeembeheer van derden?
 
 - **VPN-oplossing**
 
@@ -101,7 +101,7 @@ Wanneer u de huidige MDM-omgeving vastlegt, moet u rekening houden met alle proj
 | **SharePoint** | SharePoint On-premises | Er zijn geen plannen om over te stappen op SharePoint Online |  
 | **Huidig MDM** | Exchange ActiveSync |  |
 | **Certificaatoplossing** | Microsoft Server 2012 R2, AD Certificate Services | Gebruik alleen PKI voor websiteservers |
-| **Systeembeheer** | System Center Configuration Manager CB 1606 | Wil een hybride oplossing met Intune onderzoeken |
+| **Systeembeheer** | Configuration Manager CB 1606 | Wil een hybride oplossing met Intune onderzoeken |
 | **VPN-oplossing** | Cisco AnyConnect |  |
 
 
@@ -109,7 +109,7 @@ U kunt [een sjabloon van de bovenstaande tabel downloaden](https://gallery.techn
 
 ## <a name="choose-an-intune-deployment-option"></a>Kies een optie voor Intune-implementatie
 
-Intune biedt twee opties voor implementatie: zelfstandig en hybride. Zelfstandig verwijst naar de Intune-service die wordt uitgevoerd in de cloud, hybride verwijst naar de integratie van Intune met System Center Configuration Manager. Deze handleiding is voornamelijk bedoeld voor het gebruik van de zelfstandige optie. [Beslis welke optie het beste aansluit op uw bedrijfsbehoeften.](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
+Intune biedt twee opties voor implementatie: zelfstandig en hybride. Zelfstandig verwijst naar de Intune-service die wordt uitgevoerd in de cloud, hybride verwijst naar de integratie van Intune met Configuration Manager. Deze handleiding is voornamelijk bedoeld voor het gebruik van de zelfstandige optie. [Beslis welke optie het beste aansluit op uw bedrijfsbehoeften.](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
 
 > [!Important]
 >De onboarding van nieuwe hybride MDM-klanten is afgeschaft. Zie de blogpost [Overstappen van hybride Mobile Device Management naar Intune op Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) voor meer informatie.
@@ -353,7 +353,7 @@ U kunt Intune gebruiken om de gebruikers of apparaten op verschillende manieren 
 
 - [iOS Volume Purchase Program for Business (VPP)](../apps/vpp-apps-ios.md)
 
-- [Microsoft Store voor Bedrijven-apps](../apps/windows-store-for-business.md)
+- [Apps in de Microsoft Store voor Bedrijven](../apps/windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Vereisten voor app-typen
 

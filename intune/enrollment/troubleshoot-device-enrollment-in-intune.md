@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832729"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547795"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Problemen bij de apparaatinschrijving in Microsoft Intune oplossen
 
@@ -113,7 +113,7 @@ Om te voorkomen dat apparaatlimieten worden bereikt, moet u ervoor zorgen dat ve
 
     4. Schakel DirSync weer in en controleer of de gebruiker nu juist is gesynchroniseerd.
 
-3. Als u gebruikmaakt van System Center Configuration Manager met Intune, controleert u of de gebruiker over een geldige cloudgebruikers-id beschikt:
+3. Als u gebruikmaakt van Configuration Manager met Intune, controleert u of de gebruiker over een geldige cloudgebruikers-id beschikt:
 
     1. Open SQL Management Studio.
 
@@ -332,7 +332,7 @@ Zie [Aanbevolen procedures voor het beveiligen van Active Directory Federation S
 
 5. Controleer of Safari for iOS de standaardbrowser is en of cookies zijn ingeschakeld.
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Het geregistreerde iOS-apparaat wordt niet weergegeven in de console wanneer u System Center Configuration Manager met Intune gebruikt
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>Het geregistreerde iOS-apparaat wordt niet weergegeven in de console wanneer u Configuration Manager met Intune gebruikt
 **Probleem:** Een gebruiker registreert zijn of haar iOS-apparaat, maar het apparaat wordt niet weergegeven in de beheerconsole van Configuration Manager. Op het apparaat wordt niet aangegeven dat het is ingeschreven. Mogelijke oorzaken:
 
 - Er is geen communicatie tussen de Microsoft Intune-connector in de Configuration Manager-site en de Intune-service.
@@ -419,7 +419,7 @@ Nadat u de geblokkeerde apparaten hebt gewist, kunt u de gebruikers de inschrijv
     3. Zoek het apparaat op met het inschrijvingsprobleem. Zoek op apparaatnaam of MAC/HW-adres om uw resultaten te verfijnen.
     4. Selecteer het apparaat > **Verwijderen**. Verwijder alle andere vermeldingen die aan het apparaat zijn gekoppeld.  
 
-## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemen bij het gebruik van System Center Configuration Manager met Intune
+## <a name="issues-when-using-configuration-manager-with-intune"></a>Problemen bij het gebruik van Configuration Manager met Intune
 
 ### <a name="mobile-devices-disappear"></a>Mobiele apparaten verdwijnen
 

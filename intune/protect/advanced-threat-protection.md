@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 2fa80697f24167e2a9634bd506e9548ca654129f
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410211"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547089"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Naleving voor Microsoft Defender ATP met voorwaardelijke toegang in Intune afdwingen
 
@@ -108,9 +108,7 @@ U hoeft Defender ATP slechts één keer per tenant in te schakelen.
 
 Nadat u de service-naar-service-verbinding tussen intune en Microsoft Defender ATP hebt ingesteld, kunt u uw door Intune beheerde apparaten onboarden bij ATP, zodat gegevens over het risiconiveau kunnen worden verzameld en gebruikt. U gebruikt een profiel voor apparaatconfiguratie om apparaten te onboarden bij Microsoft Defender ATP.
 
-Wanneer u verbinding maakte met Microsoft Defender ATP, heeft Intune van Microsoft Defender ATP een configuratiepakket voor onboarding gekregen. Dit pakket wordt geïmplementeerd op apparaten met het apparaatconfiguratieprofiel. Het configuratiepakket configureert apparaten zo dat ze communiceren met [Microsoft Defender ATP-services](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) om bestanden te scannen, bedreigingen te detecteren en het risico aan Microsoft Defender ATP te rapporteren.
-
-Wanneer u eenmaal onboarding van een apparaat met het configuratiepakket hebt uitgevoerd, dan hoeft u dit niet opnieuw te doen. U kunt apparaten onboarden met behulp van een [Groepsbeleid of System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+Wanneer u verbinding maakte met Microsoft Defender ATP, heeft Intune van Microsoft Defender ATP een configuratiepakket voor onboarding gekregen. Dit pakket wordt geïmplementeerd op apparaten met het apparaatconfiguratieprofiel. Het configuratiepakket configureert apparaten zo dat ze communiceren met [Microsoft Defender ATP-services](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) om bestanden te scannen, bedreigingen te detecteren en het risico aan Microsoft Defender ATP te rapporteren. Wanneer u eenmaal onboarding van een apparaat met het configuratiepakket hebt uitgevoerd, dan hoeft u dit niet opnieuw te doen. U kunt apparaten onboarden met behulp van een [groepsbeleid of Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### <a name="create-the-device-configuration-profile"></a>Een apparaatconfiguratieprofiel maken
 
@@ -129,7 +127,7 @@ Wanneer u eenmaal onboarding van een apparaat met het configuratiepakket hebt ui
    - **Voorbeelddeling voor alle bestanden**: Met **Inschakelen** staat u toe dat voorbeelden worden verzameld en gedeeld met Microsoft Defender ATP. Als u bijvoorbeeld een verdacht bestand ziet, kunt u het verzenden naar Microsoft Defender ATP voor grondige analyse. **Niet geconfigureerd**: eventuele voorbeelden voor het Microsoft Defender ATP worden niet gedeeld.
    - **Frequentie van telemetrierapporten versnellen**: U kunt deze instelling **inschakelen** voor apparaten met een hoog risico, zodat er vaker telemetrie naar de Microsoft Defender ATP-service wordt gerapporteerd.
 
-     [Onboard Windows 10 machines using System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) (Windows 10-apparaten onboarden die System Center Configuration Manager gebruiken) bevat meer informatie over deze instellingen voor Microsoft Defender ATP.
+     [Windows 10-apparaten onboarden die Microsoft Endpoint Configuration Manager gebruiken](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) bevat meer informatie over deze instellingen voor Microsoft Defender ATP.
 
 7. Selecteer **OK** en **Maken** om wijzigingen op te slaan. Hiermee maakt u het profiel aan.
 8. [Wijs een profiel voor apparaatconfiguratie toe](../configuration/device-profile-assign.md) aan apparaten die u wilt beoordelen met Microsoft Defender ATP.

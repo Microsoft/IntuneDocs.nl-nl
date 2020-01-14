@@ -6,7 +6,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05258c5363b43398dee1815bb91c50878803e426
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 3ae06ae3f9f76d86a792721d45f8319bfe6491fd
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74391939"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654223"
 ---
 # <a name="intune-reports"></a>Intune-rapporten
 Met Microsoft Intune-rapporten kunt u de status en activiteit van eindpunten in uw organisatie effectiever en proactief in de gaten houden. Het biedt ook andere rapportagegegevens in Intune. U kunt bijvoorbeeld rapporten zien over de compatibiliteit, de status en de trends van apparaten. Daarnaast kunt u aangepaste rapporten maken om meer specifieke gegevens te verkrijgen. 
@@ -53,16 +53,19 @@ In het rapport Niet-compatibele apparaten komen gegevens aan de orde die doorgaa
 
 U kunt het rapport **Niet-compatibele apparaten** weergeven door de volgende stappen uit te voeren:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatcompatibiliteit** > **Niet-compatibele apparaten**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Bewaken** > **Niet-compatibele apparaten**.
 
     ![Rapport Niet-compatibele apparaten](./media/intune-reports/intune-reports-02.png)
+
+    > [!TIP]
+    > Als u Intune eerder hebt gebruikt in Azure Portal, hebt u de bovenstaande gegevens in Azure Portal gevonden door u aan te melden bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en **Apparaatnaleving** > **Niet-compatibele apparaten** te selecteren.
 
 ## <a name="device-compliance-report-organizational"></a>Rapport Apparaatcompatibiliteit (organisatorisch)
 Rapporten over apparaatcompatibiliteit zijn algemeen van aard en bieden een meer traditionele rapportageweergave van gegevens voor het identificeren van cumulatieve metrische gegevens. Dit rapport is ontworpen voor het werken met grote gegevenssets om een volledig beeld van de apparaatcompatibiliteit te krijgen. Het rapport over apparaatcompatibiliteit toont bijvoorbeeld alle compatibiliteitsstatussen voor apparaten om een meer algemeen overzicht van de gegevens te geven, ongeacht de omvang van de gegevensset. In dit rapport wordt de volledige onderverdeling van records weergegeven en bovendien een handige visualisatie van cumulatieve metrische gegevens. Dit rapport kan worden gegenereerd door er filters op toe te passen en de knop Rapport genereren te selecteren. Hierdoor worden de gegevens vernieuwd en wordt de meest recente status weergegeven, met de mogelijkheid om de afzonderlijke records weer te geven waaruit de cumulatieve gegevens zijn samengesteld. Net als bij de meeste rapporten in het nieuwe framework kunnen deze records worden gesorteerd en doorzocht, zodat u zich kunt richten op de informatie die u nodig hebt. 
 
 Als u een gegenereerd rapport over een apparaatstatus wilt zien, kunt u de volgende stappen uitvoeren:
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Rapporten** om een samenvatting van de rapporten te bekijken.
 3. Selecteer **Apparaatnaleving**.
 4. Selecteer de filters **Compatibiliteitsstatus**, **OS** en **Eigendom** om het rapport te verfijnen.
@@ -79,7 +82,7 @@ Zie [Naleving voor Microsoft Defender ATP met voorwaardelijke toegang in Intune 
 
 Het rapport Apparaatcompatibiliteit is beschikbaar als overzichtsrapport in de werkbelasting **Rapporten**. Gebruik de volgende stappen om het rapport Apparaatcompatibiliteit weer te geven:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Rapporten** om een samenvatting van de rapporten te bekijken.
 
     ![Rapportenoverzicht van Intune](./media/intune-reports/intune-reports-01.png)
@@ -91,7 +94,7 @@ Een trendrapport over trends in apparaatcompatibiliteit kan gedurende een bepaal
 
 U kunt het rapport **Trends** weergeven door de volgende stappen uit te voeren:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Rapporten** > **Trends** om de apparaatcompatibiliteit te bekijken voor een 60-daagse trend.
 
     ![Trendrapport van Intune](./media/intune-reports/intune-reports-03.png)
@@ -106,7 +109,7 @@ Zo zou bijvoorbeeld een gespecialiseerd rapport gegevens over het eigendom van h
 
 U kunt aangepaste rapporten maken en weergeven met behulp van de volgende stappen:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Rapporten** > **Diagnostische instellingen** en voeg een [diagnostische instelling](reports.md#diagnostic-settings) toe.
 
     ![Rapportenoverzicht van Intune](./media/intune-reports/intune-reports-04.png)
@@ -143,7 +146,7 @@ Log Analytics is het primaire hulpprogramma in de Azure-portal voor het schrijve
 ### <a name="workbooks"></a>Werkmappen
 Werkmappen combineren tekst, query's van Log Analytics, metrische gegevens van Azure en parameters in uitgebreide interactieve rapporten. Werkmappen kunnen worden bewerkt door andere teamleden die toegang hebben tot dezelfde Azure-resources. Zie [Azure Monitor-werkmappen](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks) voor meer informatie over werkmappen. U kunt ook werken met werkmapsjablonen en eraan bijdragen. Zie [Azure Monitor Workbook Templates](https://go.microsoft.com/fwlink/?linkid=867045) (Azure Monitor-werkmapsjablonen) voor meer informatie.
 
-## <a name="next-steps"></a>Volgende stappen
+## <a name="next-steps"></a>Volgende stappen 
 
 Meer informatie over de volgende technologieën:
 - [Blog - Microsoft Intune reporting framework](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553) (Blog: Microsoft Intune-rapportageframework)

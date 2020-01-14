@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bb146fdee7a1d7d770575334eeed84f73cda8894
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73984183"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207482"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>iOS-software-updatebeleid in Intune configureren
 
@@ -32,8 +32,8 @@ Het apparaat wordt ongeveer om de 8 uur bij Intune ingecheckt. Als er een update
 
 ## <a name="configure-the-policy"></a>Het beleid configureren
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Software-updates** > **Beleidsregels voor iOS bijwerken** > **Maken**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Beleidsregels voor iOS bijwerken** > **Maken**.
 3. Geef op het tabblad **Basisinformatie** een naam en optioneel een beschrijving op en selecteer vervolgens **Volgende**.
 
    ![Tabblad Basisinformatie](./media/software-updates-ios/basics-tab.png) 
@@ -77,7 +77,7 @@ Zie [Zichtbaarheid van software-updates in Intune vertragen voor apparaten die o
 ## <a name="edit-a-policy"></a>Een beleidsregel bewerken
 U kunt een bestaande beleidsregel bewerken, waaronder de beperkte tijden:
 
-1. Selecteer in **Software-updates** de optie **Beleidsregels voor iOS bijwerken** en selecteer vervolgens het beleid dat u wilt bewerken.
+1. Selecteer **Apparaten** > **Beleidsregels voor iOS bijwerken**. Selecteer het beleid dat u wilt bewerken.
 
 2. Selecteer bij het weergeven van de **Eigenschappen** van beleidsregels de optie **Bewerken** voor de beleidspagina die u wilt wijzigen.  
    ![Een beleidsregel bewerken](./media/software-updates-ios/edit-policy.png)   

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8718896f7067b8c07017459e29e1e43cc9ef84f3
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: d1624117cc87c5cf3971f9cfb541106c700d4ffd
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74993010"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204932"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Instellingen voor beveiligingsbeleid voor apps voor Android in Microsoft Intune
 In dit artikel worden de app-beveiligingsbeleidsinstellingen voor Android-apparaten beschreven. De beleidsinstellingen die worden beschreven, kunnen worden [geconfigureerd](app-protection-policies.md) voor een app-beveiligingsbeleid in het deelvenster **Instellingen** in Azure Portal.
@@ -47,9 +47,9 @@ Er zijn drie soorten beleidsinstellingen: gegevensbeschermingsinstellingen, toeg
 | **Knippen, kopiëren en plakken tussen andere apps beperken** | Geef op wanneer knip-, kopieer- en plakbewerkingen voor deze app kunnen worden gebruikt. U kunt kiezen uit: <ul><li>**Geblokkeerd**:  geen knip-, kopieer- en plakbewerkingen toestaan tussen deze app en andere apps.</li><li>**Door beleid beheerde apps**: alleen knip-, kopieer- en plakbewerkingen toestaan tussen deze app en andere door beleid beheerde apps.</li><li>**Door beleid beheerde apps met Plakken in**: knippen en kopiëren toestaan tussen deze app en andere door beleid beheerde apps. Gegevens uit alle apps mogen in deze app worden geplakt.</li><li>**Elke app**: geen beperkingen voor knip-, kopieer- en plakbewerkingen vanuit en naar deze app. | **Elke app** |
 | <ul><ui>**De tekenlimiet voor knippen en kopiëren voor elke app** | Hiermee geeft u het aantal tekens op dat kan worden geknipt of gekopieerd van gegevens van de organisatie en de accounts.  Hiermee kunt u het opgegeven aantal tekens voor elke toepassing delen, ongeacht de instelling Knippen, kopiëren en plakken met andere apps beperken.<p>Standaardwaarde = 0<p>**Opmerking**: Hiervoor is Intune-bedrijfsportal versie 5.0.4364.0 of hoger vereist.  | **0** |
 | **Schermopname en Google Assistant** | Selecteer **Blokkeren** om schermopnamen en gebruik van de **Google Assistent**-mogelijkheden van het apparaat te blokkeren bij gebruik van deze app. Als u **Toestaan** kiest, wordt ook de voorbeeldafbeelding van Appwisselaar vervaagd bij gebruik van deze app in combinatie met een werk- of schoolaccount.| **Blokkeren** |
-| **Goedgekeurde toetsenborden**  | Selecteer *Vereisen* en geef een lijst met goedgekeurde toetsenborden voor dit beleid op. <p>Aan gebruikers die geen goedgekeurd toetsenbord gebruiken, wordt gevraagd om een goedgekeurd toetsenbord te downloaden en te installeren voordat ze de beveiligde app kunnen gebruiken.  | **Niet vereist** |
+| **Goedgekeurde toetsenborden**  | Selecteer *Vereisen* en geef een lijst met goedgekeurde toetsenborden voor dit beleid op. <p>Aan gebruikers die geen goedgekeurd toetsenbord gebruiken, wordt gevraagd om een goedgekeurd toetsenbord te downloaden en te installeren voordat ze de beveiligde app kunnen gebruiken. Voor deze instelling moet de app de Intune SDK voor Android versie 6.2.0 of hoger hebben. | **Niet vereist** |
 | <ul><ui>**Toetsenborden selecteren voor goedkeuring** | Deze optie is beschikbaar wanneer u bij de vorige optie *Vereisen* selecteert. Kies *Selecteren* om de lijst met toetsenborden en invoermethoden te beheren die kunnen worden gebruikt met apps die door dit beleid worden beveiligd. U kunt extra toetsenborden toevoegen aan de lijst en de standaardopties naar wens verwijderen. U moet ten minste één goedgekeurd toetsenbord hebben om de instelling op te slaan. Als u een toetsenbord wilt toevoegen, geeft u het volgende op: <ul><li>**Naam**: Een beschrijvende naam waarmee het toetsenbord wordt aangeduid en die zichtbaar is voor de gebruiker. </li><li>**Pakket-id**:  De Pakket-id in van de app in Google Play. Als de URL voor de app in Google Play bijvoorbeeld `https://play.google.com/store/details?id=com.contoskeyboard.android.prod` is, is de Pakket-id `com.contosokeyboard.android.prod`. Deze pakket-id wordt aan de gebruiker aangeboden als een eenvoudige koppeling om het toetsenbord uit Google Play te downloaden. <p><div class="NOTE"><p>Opmerking</p><p>Een gebruiker waaraan meerdere beleidsregels voor app-beveiliging zijn toegewezen, mag alleen de toetsenborden gebruiken die voor alle beleidsregels zijn goedgekeurd.</p> | |
-
+| **Meldingen van organisatiegegevens** | Geef op hoe organisatiegegevens worden gedeeld via besturingssysteemmeldingen voor organisatieaccounts. Deze beleidsinstelling is van invloed op het lokale apparaat en alle verbonden apparaten, zoals draagbare apparaten en slimme luidsprekers. Met apps kunnen extra besturingselementen worden geboden om het gedrag van meldingen aan te passen. Er kan ook voor worden gekozen om niet aan alle waarden te voldoen. Kies uit: <ul><li>**Geblokkeerd**: Geen meldingen delen.</li><ul><li>Als dit niet wordt ondersteund door de toepassing, worden meldingen toegestaan.</li></ul><li>**Organisatiegegevens blokkeren**: Deel geen organisatiegegevens in meldingen. Bijvoorbeeld 'U hebt nieuwe e-mail'; 'U hebt een vergadering'.</li><UL><li>Als dit niet wordt ondersteund door de toepassing, worden meldingen geblokkeerd.</li></ul><li>**Toestaan**: Hiermee worden organisatiegegevens in de meldingen gedeeld</li><p>**Opmerking**: *Deze instelling vereist ondersteuning van apps. Outlook voor Android 4.83.0 of hoger biedt op dit moment ondersteuning voor deze instelling.* | **Toestaan**   |
   
 ### <a name="encryption"></a>Versleuteling
 | Instelling | Gebruik | Standaardwaarde |

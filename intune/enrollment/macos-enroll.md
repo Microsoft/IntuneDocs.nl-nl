@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cddb9b74d9132ace07c17a3156e61148b720d66
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098199"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207176"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Inschrijving voor macOS-apparaten instellen in Intune
 
@@ -78,11 +78,9 @@ Voor Parallels Desktop moet u het hardwaretype en het serienummer voor de virtue
 Voor VMware Fusion moet u [het VMX-bestand bewerken](https://kb.vmware.com/s/article/1014782) om het hardwaremodel en serienummer van de virtuele machine in te stellen. U wordt aangeraden het hardwaretype van het apparaat waarop de virtuele machines worden uitgevoerd, af te stemmen op het hardwaretype van de virtuele machines die u maakt. U vindt dit hardwaretype in **Apple-menu** > **Over deze Mac** > **Systeeminformatie** > **Modelnaam**. 
 
 ## <a name="user-approved-enrollment"></a>Door de gebruiker goedgekeurde inschrijving
-Door de gebruiker goedgekeurde MDM-inschrijving is een type macOS-inschrijving die u kunt gebruiken om bepaalde vertrouwelijke instellingen te beheren. Zie de [ondersteuningsdocumentatie van Apple](https://support.apple.com/HT208019) voor meer informatie.
-
-Vanaf november 2019 worden alle nieuwe macOS-registraties van gebruikers 'Goedgekeurd door de gebruiker' omdat de gebruiker het beheerprofiel handmatig moet installeren om het te kunnen registreren. Tijdens [het registratieproces](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp) installeert de gebruiker het Apple-beheerprofiel in **Systeemvoorkeuren** > **Profielen**.  Instructies voor het installeren van het beheerprofiel zijn beschikbaar in de macOS-bedrijfsportal-app.
-
-Apparaten die zijn geregistreerd vóór november 2019 zijn mogelijk niet 'Goedgekeurd door de gebruiker' als de gebruiker het beheerprofiel niet handmatig heeft goedgekeurd. Gebruikers kunnen echter wel teruggaan en het beheerprofiel goedkeuren door naar **Systeemvoorkeuren** > **Profielen** te gaan en **Beheerprofiel** > **Goedkeuren** te kiezen.
+Door de gebruiker goedgekeurde MDM-inschrijving is een type macOS-inschrijving die u kunt gebruiken om bepaalde vertrouwelijke instellingen te beheren. Zie de [ondersteuningsdocumentatie van Apple](https://support.apple.com/HT208019) voor meer informatie.  
+ 
+Tijdens het BYOD-registratieproces wordt de gebruiker gevraagd het Apple-beheerprofiel handmatig goed te keuren. Instructies zijn opgenomen in de Bedrijfsportal-app voor macOS. Hoewel goedkeuring van het beheerprofiel niet vereist is om de registratie te voltooien, raadt Intune gebruikers goedgekeurde registraties aan. Als de gebruiker het profiel niet goedkeurt tijdens de registratie, kan de gebruiker naar **Systeemvoorkeuren** > **Profielen** gaan, het beheerprofiel kiezen en **Goedkeuren** selecteren.    
 
 ### <a name="find-out-if-a-device-is-user-approved"></a>Nagaan of een apparaat 'Goedgekeurd door de gebruiker' is
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).

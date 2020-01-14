@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0de98a0820e15a09c2b3724b216359580327259e
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: f1e493e0d2d562c0f69454d1999e82b528c724a2
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465721"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731276"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Intune-nalevingsrapporten voor updates
 
@@ -51,7 +51,7 @@ Met de Windows Analytics-oplossing [Updatenaleving](https://technet.microsoft.co
 
 Wanneer u deze oplossing gebruikt, kunt u een commerciële id implementeren op elk van uw door Intune beheerde Windows 10-apparaten waarvoor u over de naleving van updates wilt rapporteren.  
 
-In Intune worden de OMA-URI-instellingen van een aangepast beleid gebruikt om de commerciële id te configureren. Zie [Beleidsinstellingen voor Windows 10-apparaten in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).  
+In Intune worden de OMA-URI-instellingen van een aangepast beleid gebruikt om de commerciële id te configureren. Zie [Aangepaste instellingen gebruiken voor Windows 10-apparaten in Intune](../configuration/custom-settings-windows-10.md).
 
 Het pad voor de OMA-URI (hoofdlettergevoelig) voor het configureren van de commerciële id is: *./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID*  
 

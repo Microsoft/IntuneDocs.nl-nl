@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b17b87462b2c73e265f062c33a06a810e7c58bf8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cfa2c5366d1b38cf819cfc68840a29fad9002979
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504345"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548115"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Gegevens in Intune beveiligen en delen
 
@@ -68,11 +68,11 @@ Raadpleeg de volgende artikelen voor informatie over gegevens die worden gedeeld
 - [Gegevens die Google verzendt naar Intune](data-google-sends-to-intune.md)
 - [Gegevens die Jamf Pro verzendt naar Intune](data-jamf-sends-to-intune.md)
 
-### <a name="system-center-configuration-manager-data-sharing"></a>Gegevensdeling met de System Center Configuration Manager
+### <a name="microsoft-endpoint-configuration-manager-data-sharing"></a>Gegevens delen met Microsoft Endpoint Configuration Manager
 
-Microsoft Intune deelt geen gegevens met System Center Configuration Manager. System Center Configuration Manager is een on-premises product dat rechtstreeks door de klant wordt geïmplementeerd, beheerd en uitgevoerd. De diagnostische gegevens en gebruiksgegevens die door Configuration Manager worden verzameld, worden alleen gebruikt om de installatie-ervaring, kwaliteit en beveiliging van toekomstige releases te verbeteren.
+Microsoft Intune deelt geen gegevens met Configuration Manager. Configuration Manager is een on-premises product dat rechtstreeks door de klant wordt geïmplementeerd, beheerd en uitgevoerd. De diagnostische gegevens en gebruiksgegevens die door Configuration Manager worden verzameld, worden alleen gebruikt om de installatie-ervaring, kwaliteit en beveiliging van toekomstige releases te verbeteren.
 
-Zie [Diagnostische gegevens en gebruiksgegevens voor SCCM](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data) voor meer informatie. 
+Zie [Diagnostische gegevens en gebruiksgegevens voor Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/diagnostics/diagnostics-and-usage-data) voor meer informatie. 
 
 
 ## <a name="next-steps"></a>Volgende stappen

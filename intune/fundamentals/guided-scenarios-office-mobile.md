@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585706"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691810"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Begeleid scenario: veilige mobiele apps voor Microsoft Office 
 
@@ -46,7 +46,7 @@ Zowel Office Mobile-apps als Microsoft Edge voor mobiel bieden ondersteuning voo
 U kunt [beveiligingsbeleid voor apps in Intune](~/apps/app-protection-policy.md) gebruiken om u te helpen bij het beveiligen van uw werkbestanden op apparaten die zijn geregistreerd in Intune. U kunt ook beveiligingsbeleid voor apps gebruiken op apparaten die in het bezit zijn van werknemers en die niet zijn geregistreerd voor beheer in Intune. In dit geval moet u, zelfs als uw organisatie het apparaat niet beheert, er nog steeds voor zorgen dat uw werkbestanden en resources zijn beveiligd.
 
 U kunt beveiligingsbeleid voor apps gebruiken om te voorkomen dat gebruikers werkbestanden opslaan op niet-beveiligde locaties. U kunt ook gegevensverplaatsing beperken naar andere apps die niet zijn beveiligd met beveiligingsbeleid voor apps. Beveiligingsbeleidsinstellingen voor apps bevatten:
-- Beleid voor gegevensverplaatsing, zoals Opslaan als voorkomen en knippen, kopiëren en plakken beperken.
+- Beleid voor gegevensverplaatsing, zoals **Kopieën van organisatiegegevens opslaan** en **Knippen, kopiëren en plakken beperken**.
 - Instellingen voor toegangsbeleid zoals Eenvoudige pincode vereisen voor toegang en Beheerde apps blokkeren op gekraakte of geroote apparaten.
 
 Met op apps gebaseerde voorwaardelijke toegang en beheer van client-apps voegt u een beveiligingslaag toe door ervoor te zorgen dat alleen client-apps die app-beveiligingsbeleid van Intune ondersteunen, toegang hebben tot Exchange Online en andere Office 365-services.

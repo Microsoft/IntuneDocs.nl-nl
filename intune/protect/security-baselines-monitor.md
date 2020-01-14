@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7f14e939e7241cd34c01d73e9af822dea7acdc
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
+ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410039"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556399"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>De beveiligingsbasislijn en het beveiligingsprofiel controleren in Microsoft Intune
 
@@ -42,10 +42,14 @@ In het **overzichtsvenster** staan twee methoden om de status te bewaken:
 - **Apparaatweergave**: een samenvatting van het aantal apparaten in elke statuscategorie voor de basislijn.
 - **Per categorie**: een weergave waarbij elke categorie in de basislijn wordt weergegeven, inclusief het percentage apparaten voor elke statusgroep voor elke basislijncategorie.
 
-Elk apparaat wordt vertegenwoordigd door een van de volgende statussen, die zowel in de *apparaatweergave* als de *weergave per categorie* worden gebruikt:
+Elk apparaat wordt vertegenwoordigd door een van de volgende statussen, die in de *apparaatweergave* als de *weergave per categorie* worden gebruikt:
 
 - **Komt overeen met de basislijn**: alle instellingen in de basislijn komen overeen met de aanbevolen instellingen.
-- **Komt niet overeen met de basislijn**: minstens één instelling in de basislijn komt niet overeen met de aanbevolen instellingen.
+- **Komt niet overeen met de basislijn**: minstens één instelling in de basislijn komt niet overeen met de aanbevolen instelling.
+
+  > [!NOTE]
+  > Wanneer u een basislijnprofiel maakt of bewerkt, leiden wijzigingen in een standaardwaarde of configuratie-instelling veroorzaakt tot de status ‘Komt niet overeen met de basislijn’. Neem contact op met Microsoft Ondersteuning voor hulp bij het bepalen van de gewijzigde instellingen. 
+
 - **Onjuist geconfigureerd**: minstens één instelling is niet juist geconfigureerd. Deze status betekent dat de instelling een conflict of fout ervaart of in behandeling is.
 - **Niet van toepassing**: minstens één instelling is niet van toepassing en wordt niet toegepast.
 

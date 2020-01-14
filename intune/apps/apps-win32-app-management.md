@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 371800b39e04695eadc906465fdb013488836df9
+ms.sourcegitcommit: 3189c3a82cfd1ff3a58153dfec2e12fae7b9bdc7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564022"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622525"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
@@ -328,6 +328,9 @@ Op elke afhankelijkheid wordt de Intune Win32-app-logica voor opnieuw proberen (
 
 Clients van Windows 10 1709 en hoger downloaden Intune Win32-app-inhoud via een delivery optimization-onderdeel in de Windows 10-client. Delivery optimization biedt peer-to-peer-functionaliteit die standaard is ingeschakeld. Delivery Optimization kan worden geconfigureerd via groepsbeleid en via de Intune-apparaatconfiguratie. Raadpleeg [Delivery Optimization voor Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) voor meer informatie. 
 
+> [!NOTE]
+> U kunt ook een Microsoft Connected Cache-server op uw Configuration Manager-distributiepunten installeren om inhoud van Intune Win32-apps op te slaan in de cache. Zie [Microsoft Connected Cache in Configuration Manager: ondersteuning voor Intune Win32-apps](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune) voor meer informatie.
+
 ## <a name="install-required-and-available-apps-on-devices"></a>Vereiste installatie en beschikbare apps op apparaten
 
 De eindgebruiker ziet de pop-upmeldingen van Windows voor de vereiste en beschikbare app-installaties. De volgende afbeelding toont een voorbeeld van de pop-upmelding wanneer de app-installatie pas wordt voltooid wanneer het apparaat opnieuw wordt opgestart. 
@@ -375,7 +378,7 @@ Indien nodig, kunt u per app-toewijzing onderdrukken dat toast-meldingen voor ei
 > Win32-apps waarvoor de Intune-beheerextensie is geïnstalleerd, worden niet verwijderd van apparaten die niet meer ingeschreven zijn. Beheerders kunnen gebruikmaken van uitsluiting van opdrachten, zodat Win32-apps niet worden aangeboden op BYOD-apparaten.
 
 ## <a name="troubleshoot-win32-app-issues"></a>Problemen met Win32-apps oplossen
-Agentlogboeken op de clientcomputer staan doorgaans in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. U kunt `CMTrace.exe` gebruiken om deze logboekbestanden weer te geven. *CMTrace.exe* kan worden gedownload via [Configuration Manager-clienthulpprogramma's](https://docs.microsoft.com/sccm/core/support/tools). 
+Agentlogboeken op de clientcomputer staan doorgaans in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. U kunt `CMTrace.exe` gebruiken om deze logboekbestanden weer te geven. Zie [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace) voor meer informatie.
 
 ![Schermafbeelding van de agentlogboeken op de clientcomputer](./media/apps-win32-app-management/apps-win32-app-10.png)    
 

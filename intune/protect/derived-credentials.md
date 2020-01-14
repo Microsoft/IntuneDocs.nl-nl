@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4d0772f9a0afce0607d0193bfb82ea6bd22709d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73445323"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207197"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Afgeleide referenties gebruiken in Microsoft Intune
 
@@ -160,28 +160,30 @@ Vermijd het gebruik van een afgeleide referentie om toegang te krijgen tot een p
 
 Voordat u beleidsregels maakt waarvoor het gebruik van een afgeleide referentie vereist is, stelt u een referentieverlener in de Intune-console in. Een verlener van afgeleide referenties is een instelling voor de hele tenant. Tenants ondersteunen slechts één verlener tegelijk.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en ga naar **Apparaatconfiguratie** > **Afgeleide referenties**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Tenantbeheer** > **Connectors en tokens** > **Afgeleide referenties**.
 
-   ![Afgeleide referenties configureren in de console](./media/derived-credentials/configure-provider.png)
+    > [!div class="mx-imgBorder"]
+    > ![Afgeleide referenties configureren in de console](./media/derived-credentials/configure-provider.png)
 
-2. Geef een beschrijvende **Weergavenaam** op voor het beleid voor verleners van afgeleide referenties.  Deze naam wordt niet weergegeven voor apparaatgebruikers.
+3. Geef een beschrijvende **Weergavenaam** op voor het beleid voor verleners van afgeleide referenties.  Deze naam wordt niet weergegeven voor apparaatgebruikers.
 
-3. Selecteer als **Verlener van afgeleide referenties** de verlener van afgeleide referenties die u hebt gekozen voor uw tenant:
+4. Selecteer als **Verlener van afgeleide referenties** de verlener van afgeleide referenties die u hebt gekozen voor uw tenant:
    - DISA Purebred
    - Entrust Datacard
    - Intercede  
 
-4. Geef een **Help-URL voor afgeleide referenties** op om een koppeling aan te bieden naar een locatie met aangepaste instructies om gebruikers te helpen afgeleide referenties voor uw organisatie op te halen. De instructies moeten specifiek voor uw organisatie zijn en voor de werkstroom die nodig is om een referentie op te halen van de door u gekozen verlener. De koppeling wordt weergegeven in de bedrijfsportal-app en moet toegankelijk zijn vanaf het apparaat.
+5. Geef een **Help-URL voor afgeleide referenties** op om een koppeling aan te bieden naar een locatie met aangepaste instructies om gebruikers te helpen afgeleide referenties voor uw organisatie op te halen. De instructies moeten specifiek voor uw organisatie zijn en voor de werkstroom die nodig is om een referentie op te halen van de door u gekozen verlener. De koppeling wordt weergegeven in de bedrijfsportal-app en moet toegankelijk zijn vanaf het apparaat.
 
    Als u geen eigen URL opgeeft, wordt in Intune een koppeling naar algemene informatie aangeboden, die niet alle scenario's dekt. Deze algemene richtlijnen zijn mogelijk niet geheel van toepassing op uw omgeving.
 
-5. Selecteer een of meer opties als **Meldingstype**. Meldingstypen zijn de methoden die u gebruikt om gebruikers te informeren over de volgende scenario's:
+6. Selecteer een of meer opties als **Meldingstype**. Meldingstypen zijn de methoden die u gebruikt om gebruikers te informeren over de volgende scenario's:
 
    - Een apparaat inschrijven bij een verlener om een nieuwe afgeleide referentie te verkrijgen.
    - Een nieuwe afgeleide referentie ophalen wanneer de huidige referentie bijna is verlopen.
    - Een afgeleide referentie gebruiken met een beleidsregel voor Wi-Fi, VPN, e-mail of app-verificatie en voor S/MIME-ondertekening en -versleuteling.
 
-6. Selecteer **Opslaan** als u klaar bent om de configuratie van de verlener van afgeleide referenties te voltooien.
+7. Selecteer **Opslaan** als u klaar bent om de configuratie van de verlener van afgeleide referenties te voltooien.
 
 Nadat u de configuratie hebt opgeslagen, kunt u wijzigingen aanbrengen in alle velden, met uitzondering van de *Verlener van afgeleide referenties*.  Zie [De verlener van afgeleide referenties wijzigen](#change-the-derived-credential-issuer) verderop in dit artikel als u de verlener wilt wijzigen.
 
@@ -216,19 +218,20 @@ U kunt **afgeleide referentie** opgeven voor de volgende profieltypen en doelein
 
 ### <a name="use-derived-credentials-for-app-authentication"></a>Afgeleide referenties gebruiken voor app-verificatie
 
-Afgeleide referenties gebruiken voor verificatie op basis van certificaten voor websites en toepassingen. Voer de volgende stappen uit in de Intune-console om een afgeleide referentie voor app-verificatie te leveren:  
+Afgeleide referenties gebruiken voor verificatie op basis van certificaten voor websites en toepassingen. Ga als volgt te werk om een afgeleide referentie gebruiken voor app-verificatie:
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), ga naar **Apparaatconfiguratie** > **Profielen** en selecteer **Profiel maken**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
+3. Voer de volgende instellingen in:
 
-2. Geef een beschrijvende naam voor het profiel op bij **Naam**.
+    - **Naam**: Voer een beschrijvende naam in voor het profiel. Geef uw profielen een naam zodat u ze later eenvoudig kunt identificeren. Een goede profielnaam is bijvoorbeeld **Afgeleide referentie voor het profiel van iOS-apparaten**.
+    - **Beschrijving**: Voer een beschrijving in met een overzicht van de instelling en eventuele andere belangrijke details.
+    - **Platform**: Selecteer **iOS/iPadOS**.
+    - **Profieltype**: Selecteer **Afgeleide referentie**.
 
-3. Selecteer voor **Platform** de optie **iOS**.
-
-4. Selecteer als **Profieltype** de optie **Afgeleide referentie**.
-
-5. Selecteer **OK** en klik vervolgens op **Maken**.
-
-6. Selecteer **Toewijzingen** om te kiezen welke groepen het beleid moeten ontvangen.
+4. Selecteer **OK** om uw wijzigingen op te slaan.
+5. Wanneer u klaar bent, selecteert u **OK** > **Maken** om het Intune-profiel te maken. Wanneer het profiel is gemaakt, wordt dit weergegeven in de lijst **Apparaten - Configuratieprofielen**.
+6. Selecteer het nieuwe profiel > **Toewijzingen**. Selecteer de groepen waarvoor het beleid moet worden gebruikt.
  
 Gebruikers ontvangen de app- of e-mailmelding, afhankelijk van de instellingen die u hebt opgegeven bij het instellen van de verlener van afgeleide referenties. Via de melding wordt de gebruiker geïnstrueerd de bedrijfsportal te starten zodat het beleid voor afgeleide referenties kan worden verwerkt.
 
@@ -252,11 +255,10 @@ Nadat u de verlener hebt gewijzigd, krijgen gebruikers de instructie een nieuwe 
 > [!IMPORTANT]  
 > Als u een verlener verwijdert en dezelfde verlener onmiddellijk opnieuw configureert, moet u de profielen en apparaten toch bijwerken om afgeleide referenties van die verlener te gebruiken. Afgeleide referenties die zijn verkregen voordat u de uitgever verwijdert, zijn niet meer geldig.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) en ga naar **Apparaatconfiguratie** > **Afgeleide referenties**.
-
-2. Selecteer **Verwijderen** om de huidige verlener van afgeleide referenties te verwijderen.
-
-3. Configureer een nieuwe verlener.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Tenantbeheer** > **Connectors en tokens** > **Afgeleide referenties**.
+3. Selecteer **Verwijderen** om de huidige verlener van afgeleide referenties te verwijderen.
+4. Configureer een nieuwe verlener.
 
 ### <a name="update-profiles-that-use-derived-credentials"></a>Profielen bijwerken die gebruikmaken van afgeleide referenties
 
@@ -268,4 +270,4 @@ Nadat u een verlener hebt verwijderd en vervolgens een nieuwe hebt toegevoegd, m
 
 ## <a name="next-steps"></a>Volgende stappen
 
-[Apparaatconfiguratieprofielen maken](../configuration/device-profile-create.md)
+[Apparaatconfiguratieprofielen maken](../configuration/device-profile-create.md).

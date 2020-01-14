@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000394"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207380"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>US Government-eindpunten voor Microsoft Intune
 
@@ -37,6 +37,8 @@ Als u apparaten wilt beheren die zich achter firewalls en proxyservers bevinden,
 U kunt de instellingen voor proxyservers wijzigen op afzonderlijke clientcomputers. U kunt ook de instellingen voor groepsbeleid gebruiken om de instellingen te wijzigen voor alle clientcomputers die zich achter een bepaalde proxyserver bevinden.
 
 Voor beheerde apparaten zijn configuraties vereist waarmee **alle gebruikers** via firewalls toegang krijgen tot services.
+
+Zie [Registratie instellen voor Windows-apparaten](../enrollment/windows-enroll.md#windows-10-auto-enrollment-and-device-registration) voor meer informatie over de automatische registratie van Windows 10 en apparaatregistratie voor Amerikaanse overheidsklanten.
 
 De volgende tabel bevat de poorten en services waartoe de Intune-client toegang heeft:
 
@@ -78,4 +80,3 @@ Zie voor meer informatie:
 ## <a name="next-steps"></a>Volgende stappen
 [Netwerkeindpunten voor Microsoft Intune](intune-endpoints.md)
 
-[Windows 10 auto-enrollment and device registration](../enrollment/windows-enroll.md#registration-and-enrollment-cnames) (Automatische inschrijving en apparaatregistratie in Windows 10)

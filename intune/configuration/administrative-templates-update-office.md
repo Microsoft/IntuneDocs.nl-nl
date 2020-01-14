@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf872387d6e6f4f91af9f074f54695b081b79119
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 63ebbc22c5452c99439d34813509b5652daef1f0
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74549106"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548097"
 ---
 # <a name="use-update-channel-and-target-version-settings-to-update-office-365-with-microsoft-intune-administrative-templates"></a>Instellingen van het updatekanaal en de doelversie gebruiken om Office 365 bij te werken met Microsoft Intune-beheersjablonen
 
@@ -75,7 +75,7 @@ Nadat u het beleid en de apparaatsynchronisaties hebt toegewezen, kunt u bevesti
     ![Voorbeeld: registersleutel L_Updatebranch in beheersjabloon](./media/administrative-templates-update-office/admx-update-branch-registry-key.png)
 
     > [!TIP]
-    > In [Office 365 ProPlus beheren met Configuration Manage](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager) worden de waarden met hun betekenis vermeld. De registerwaarden zijn gebaseerd op het geselecteerde distributiekanaal:
+    > In [Office 365 ProPlus beheren met Configuration Manage](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) worden de waarden met hun betekenis vermeld. De registerwaarden zijn gebaseerd op het geselecteerde distributiekanaal:
     >
     >- Monthly-kanaal                - waarde="Current"
     >- Monthly-kanaal (Targeted)     - waarde="Current"
@@ -95,7 +95,7 @@ Op dit punt wordt het Intune-beleid toegepast op het apparaat.
     - `UpdateChannel`: een dynamische sleutel die wordt gewijzigd, afhankelijk van de geconfigureerde instellingen.
     - `CDNBaseUrl`: deze wordt ingesteld wanneer Office 365 op het apparaat wordt geïnstalleerd.
 
-3. Bekijk de waarde `UpdateChannel`. De waarde vertelt u hoe vaak Office wordt bijgewerkt. In [Office 365 ProPlus beheren met Configuration Manage](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager) worden de waarden vermeld en waarvoor ze zijn ingesteld.
+3. Bekijk de waarde `UpdateChannel`. De waarde vertelt u hoe vaak Office wordt bijgewerkt. In [Office 365 ProPlus beheren met Configuration Manage](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) worden de waarden vermeld en waarvoor ze zijn ingesteld.
 
     In het volgende voorbeeld ziet u dat `UpdateChannel` is ingesteld op `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60`, dus op **maandelijks**:
 
@@ -173,7 +173,7 @@ U kunt deze stappen gebruiken om uw beleid te testen voordat u het beleid voor a
 
 ## <a name="next-steps"></a>Volgende stappen
 
-[Kanaalwaarden voor Office 365-clients bijwerken](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager)
+[Kanaalwaarden voor Office 365-clients bijwerken](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)
 
 [Overview of the Office cloud policy service for Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service) (Overzicht van de Office-cloudbeleidsservice voor Office 365 ProPlus)
 

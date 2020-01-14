@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564169"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547985"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
 
@@ -50,35 +50,35 @@ Nadat u de opgenomen groepen hebt geselecteerd voor het configuratiebeleid van u
 
 ## <a name="create-an-app-configuration-policy"></a>Een app-configuratiebeleid maken
 
-1. Meld u aan bij[Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Kies de opties **Apps** > **App-configuratiebeleid** > **Toevoegen**.
-5. Stel de volgende details in:
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Kies de opties **Apps** > **App-configuratiebeleid** > **Toevoegen** > **Beheerde apparaten**.
+3. Stel de volgende details in:
     - **Naam**: de naam van het profiel zoals deze in Azure Portal wordt weergegeven.
     - **Beschrijving**: de beschrijving van het profiel dat wordt weergegeven in Azure Portal.
-    - **Type apparaatregistratie**: kies **Beheerde apparaten** voor apparaten die zijn ingeschreven bij Intune.
-6. Selecteer **iOS** bij **Platform**.
-7. Kies **Gekoppelde app**. Klik vervolgens in het deelvenster **Gekoppelde app** op de beheerde app waarop u de configuratie wilt toepassen. Selecteer **OK**.
-8. Kies in het deelvenster **Configuratiebeleid toevoegen** de optie **Configuratie-instellingen**.
-9. Selecteer **Indeling van de configuratie-instellingen**. Selecteer een van de volgende methoden om configuratiegegevens toe te voegen:
+    - **Type apparaatinschrijving** - deze instelling is ingesteld op **Beheerde apparaten**.
+4. Selecteer **iOS** bij **Platform**.
+5. Kies **Gekoppelde app**. Klik vervolgens in het deelvenster **Gekoppelde app** op de beheerde app waarop u de configuratie wilt toepassen. Selecteer **OK**.
+6. Kies op **Configuratie-instellingen** om het deelvenster **Configuratie-instellingen** te openen.
+7. Selecteer **Indeling van de configuratie-instellingen**. Selecteer een van de volgende methoden om configuratiegegevens toe te voegen:
     - **Configuration Designer gebruiken**
     - **XML-gegevens invoeren**<br><br>
     Zie [Configuration Designer gebruiken](#use-configuration-designer) voor meer informatie over het gebruik van Configuration Designer. Zie [XML-gegevens invoeren](#enter-xml-data) voor meer informatie over het invoeren van XML-gegevens. 
-10. Nadat u uw configuratiegegevens hebt toegevoegd, kiest u **OK** en vervolgens **Toevoegen** om het configuratiebeleid toe te voegen. Het overzichtsdeelvenster van het configuratiebeleid wordt weergegeven.
-11. Selecteer **Toewijzingen** om de opties voor opnemen en uitsluiten weer te geven. 
+8. Nadat u uw configuratiegegevens hebt toegevoegd, kiest u **OK** en vervolgens **Toevoegen** om het configuratiebeleid toe te voegen. Het overzichtsdeelvenster van het configuratiebeleid wordt weergegeven.
+9. Selecteer **Toewijzingen** om de opties voor opnemen en uitsluiten weer te geven. 
 
     ![Schermafbeelding van Beleidstoewijzingen op het tabblad Opnemen](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-12. Selecteer **Alle gebruikers** op het tabblad **Opnemen**.
+10. Selecteer **Alle gebruikers** op het tabblad **Opnemen**.
 
     ![Schermafbeelding van Beleidstoewijzingen met de vervolgkeuzemenu-optie Alle gebruikers](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-13. Selecteer het tabblad **Uitsluiten**. 
-14. Klik op **Groepen voor uitsluiten selecteren** om het gerelateerde deelvenster weer te geven.
+11. Selecteer het tabblad **Uitsluiten**. 
+12. Klik op **Groepen voor uitsluiten selecteren** om het gerelateerde deelvenster weer te geven.
 
     ![Schermopname van Beleidstoewijzingen - het deelvenster Groepen selecteren die moeten worden uitgesloten](./media/app-configuration-policies-use-ios/app-config-policy03.png)
-15. Kies de groepen die u wilt uitsluiten en klik vervolgens op **Selecteren**.
+13. Kies de groepen die u wilt uitsluiten en klik vervolgens op **Selecteren**.
 
     >[!NOTE]
     >Wanneer u een groep toevoegt en als er al een andere groep is opgenomen voor een gegeven toewijzingstype, wordt deze groep vooraf geselecteerd. Dit kan niet worden gewijzigd voor andere toewijzingstypen voor opnemen. De groep die is gebruikt, kan daarom niet als een uitgesloten groep worden gebruikt.
-16. Klik op **Opslaan**.
+14. Klik op **Opslaan**.
 
 ## <a name="use-configuration-designer"></a>Configuration Designer gebruiken
 
@@ -182,7 +182,7 @@ DEP-inschrijvingen (Device Enrollment Program van Apple) zijn niet compatibel me
 
 1. Voeg in Intune zo nodig de Intune-bedrijfsportal-app toe. Hiervoor gaat u naar **Intune** > **Apps** > **Alle apps** > **Toevoegen**.
 2. Ga naar **Apps** > **App-configuratiebeleid** om een app-configuratiebeleid voor de bedrijfsportal-app te maken.
-3. Maak een app-configuratiebeleid met de onderstaande XML. Meer informatie over het maken van een configuratiebeleid voor apps en het invoeren van XML-gegevens vindt u op [Configuratiebeleid voor apps voor beheerde iOS-apparaten ](app-configuration-policies-use-ios.md) of voor hybride MDM, [Instellingen toepassen op iOS-apps met configuratiebeleid voor apps in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+3. Maak een app-configuratiebeleid met de onderstaande XML. Meer informatie over het maken van een configuratiebeleid voor apps en het invoeren van XML-gegevens vindt u op [Configuratiebeleid voor apps voor beheerde iOS-apparaten ](app-configuration-policies-use-ios.md) of voor hybride MDM, [Instellingen toepassen op iOS-apps met configuratiebeleid voor apps in Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
 
     ``` xml
     <dict>

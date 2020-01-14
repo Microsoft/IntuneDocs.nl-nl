@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 7ce6def40c6c0fff3a28f884c458220283979234
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 001e68fdbab7074abb4e1bbefc697d3e34c47762
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465768"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683779"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Windows Hello voor Bedrijven integreren in Microsoft Intune  
 
@@ -53,9 +53,9 @@ Gebruik dit artikel om een standaard Windows Hello voor Bedrijven-beleid te make
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Een beleid voor Windows Hello voor Bedrijven maken
 
-1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Ga naar **Apparaten** > inschrijving** > **Apparaten inschrijven** > **Windows-inschrijving** > **Windows Hello voor Bedrijven**. Het deelvenster Windows Hello voor Bedrijven wordt geopend.
+2. Ga naar **Apparaten** >  **Inschrijving** > **Apparaten inschrijven** > **Windows-inschrijving** > **Windows Hello voor Bedrijven**. Het deelvenster Windows Hello voor Bedrijven wordt geopend.
 
 3. Selecteer een van de volgende opties voor **Windows Hello voor Bedrijven configureren**:
 

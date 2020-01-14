@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261580"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303063"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Groepen toevoegen om gebruikers en apparaten in te delen
 
@@ -47,7 +47,7 @@ Volg de onderstaande stappen om een nieuwe groep te maken.
 
 3. Kies bij **Groepstype** een van de volgende opties:
 
-    - **Beveiliging**: met beveiligingsgroepen kunt u bepalen wie toegang heeft tot resources. Deze optie wordt aanbevolen voor uw groepen in Intune. U kunt bijvoorbeeld groepen maken voor gebruikers, zoals **Alle gebruikers in Zaandam** of **Alle vrouwen bij Contoso**. U kunt ook groepen maken voor apparaten, zoals **Alle iOS-apparaten** of **Alle apparaten van studenten met Windows 10**.
+    - **Beveiliging**: met beveiligingsgroepen kunt u bepalen wie toegang heeft tot resources. Deze optie wordt aanbevolen voor uw groepen in Intune. U kunt bijvoorbeeld groepen maken voor gebruikers, zoals **Alle gebruikers in Zaandam** of **Alle externe gebruikers**. U kunt ook groepen maken voor apparaten, zoals **Alle iOS-apparaten** of **Alle apparaten van studenten met Windows 10**.
 
         > [!TIP]
         > De gebruikers en groepen die zijn gemaakt, kunnen ook worden weergegeven in het [Microsoft 365-beheercentrum](https://admin.microsoft.com), het Azure Active Directory-beheercentrum en in [Microsoft Intune in de Azure-portal](https://go.microsoft.com/fwlink/?linkid=2090973). In de tenant van uw organisatie kunt u in al deze gebieden groepen maken en beheren.
@@ -85,7 +85,7 @@ Volg de onderstaande stappen om een nieuwe groep te maken.
 > - Alle Android Enterprise-apparaten
 > - Alle iOS 11- en oudere apparaten
 > - Marketing
-> - Human Resources
+> - Human resources
 > - Alle medewerkers in Zaandam
 > - Alle medewerkers in NH
 

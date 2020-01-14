@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,30 +16,31 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a62cc6ef2f1b3bd6f305fe6fa23a24f95d3dd37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414095"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207350"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Licenties toewijzen aan gebruikers zodat ze kunnen apparaten inschrijven bij Intune
 
 U moet eerst aan elke gebruiker een Intune-licentie toewijzen voordat gebruikers hun apparaten bij Intune kunnen inschrijven, ongeacht of u handmatig gebruikers toevoegt of deze synchroniseert vanuit uw on-premises Active Directory. Zie [Licenties met Intune](../licenses.md) voor een lijst met licenties.
 
-## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Een Intune-licentie toewijzen in het Microsoft 365-beheercentrum
+> [!NOTE]
+> Gebruikers die het Intune-beveiligingsbeleid voor apps hebben toegewezen en hun apparaten niet hebben geregistreerd bij Microsoft Intune, hebben ook een Intune-licentie nodig om beleid te ontvangen. 
 
-U kunt het [Microsoft 365-beheercentrum](https://go.microsoft.com/fwlink/p/?LinkId=698854) gebruiken om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory zijn gesynchroniseerd met Azure AD.
+## <a name="assign-an-intune-license-microsoft-endpoint-manager-admin-center"></a>Een Intune-licentie toewijzen in het beheercentrum voor Microsoft Endpoint Manager
 
-1. Meld u bij het [Microsoft 365-beheercentrum](https://go.microsoft.com/fwlink/p/?LinkId=698854) aan met uw tenantbeheerdersreferenties en selecteer vervolgens **Gebruikers** > **Actieve gebruikers**.
+U kunt het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) gebruiken om handmatig cloudgebruikers toe te voegen en licenties toe te wijzen aan zowel cloudgebruikersaccounts als accounts die vanuit uw on-premises Active Directory Domain Services zijn gesynchroniseerd met Azure Active Directory.
 
-2. Selecteer het gebruikersaccount waaraan u een Intune-gebruikerslicentie wilt toewijzen en selecteer vervolgens **Productlicenties** > **Bewerken**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Gebruikers** > **Alle gebruikers** > selecteer de gebruiker > **Licenties** > **Toewijzingen**.
 
-3. Zet **Intune** of **Enterprise Mobility + Security** op **Aan** en selecteer **Opslaan**.
+2. Kies het vak voor **Intune** > **Opslaan**.
 
-   ![Schermafbeelding van het gedeelte Productlicenties in het Microsoft 365-beheercentrum.](./media/licenses-assign/office-assign-license.png)
+   ![Schermafbeelding van het gedeelte Productlicenties in het Microsoft 365-beheercentrum.](./media/licenses-assign/mem-assign-license.png)
 
-4. Het gebruikersaccount beschikt nu over de benodigde machtigingen om de service te gebruiken en apparaten in te schrijven bij het beheer.
+3. Het gebruikersaccount beschikt nu over de benodigde machtigingen om de service te gebruiken en apparaten in te schrijven bij het beheer.
 
 > [!NOTE]
 > Gebruikers worden pas weergegeven in de klassieke Intune-portal nadat ze een apparaat hebben ingeschreven met behulp van de Intune-pc-client. U kunt ook een groep gebruikers in één keer bewerken door de optie voor het toevoegen of vervangen van een licentie voor alle geselecteerde gebruikers te selecteren.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564273"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205001"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>App-configuratiebeleidsregels toevoegen voor beheerde Android Enterprise-apparaten
 
@@ -34,15 +34,15 @@ App-configuratiebeleidsregels in Microsoft Intune leveren instellingen voor behe
 > [!NOTE]  
 > Niet elke app ondersteunt app-configuratie. Vraag aan de app-ontwikkelaar of app-configuratiebeleidsregels worden ondersteund in de app.
 
-1. Selecteer in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) **Apps** > **App-configuratiebeleid** >  **Toevoegen**.
+1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de optie **Apps** > **App-configuratiebeleid** >  **Toevoegen** > **Beheerde apparaten**.
 2. Voer de volgende eigenschappen in:
 
     - **Naam**: Voer een beschrijvende naam in voor het beleid. Geef uw beleid een naam zodat u het later eenvoudig kunt identificeren. Een goede beleidsnaam is bijvoorbeeld **Android Enterprise Nine Work-app-beleid voor het hele bedrijf**.
     - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
-    - **Type apparaatinschrijving**: Selecteer **Beheerde apparaten**.
+    - **Type apparaatinschrijving**: Deze instelling is ingesteld op **Beheerde apparaten**.
     - **Platform**: Selecteer **Android**.
 
-3. Selecteer **Gekoppelde app**. Kies de app waarvoor u een app-configuratiebeleid wilt definiëren. Selecteer in de lijst met beheerde Google Play-apps de apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune.
+3. Selecteer **Gekoppelde app**. Kies de Android-app waaraan dit app-configuratiebeleid moet worden gekoppeld. Selecteer in de lijst met [beheerde Google Play-apps de apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune](~/apps/apps-add-android-for-work.md).
 4. Selecteer **Machtigingen**. U kunt configuraties instellen door gebruik te maken van:
 
     - [Configuration Designer](#use-the-configuration-designer)
@@ -110,12 +110,12 @@ U kunt machtigingen voor apps ook vooraf configureren voor toegang tot Android-a
 
 Een app maakt bijvoorbeeld gebruik van de microfoon van het apparaat. De gebruiker wordt gevraagd de app toestemming te verlenen voor het gebruik van de microfoon.
 
-1. Selecteer in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) **Apps** > **App-configuratiebeleid** >  **Toevoegen**.
+1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de optie **Apps** > **App-configuratiebeleid** >  **Toevoegen** > **Beheerde apparaten**.
 2. Voer de volgende eigenschappen in:
 
     - **Naam**: Voer een beschrijvende naam in voor het beleid. Geef uw beleid een naam zodat u het later eenvoudig kunt identificeren. Een goede beleidsnaam is bijvoorbeeld **Android Enterprise-toestemmingsprompt-app-beleid voor het hele bedrijf**.
     - **Beschrijving**. Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
-    - **Type apparaatinschrijving**: Selecteer **Beheerde apparaten**.
+    - **Type apparaatinschrijving**: Deze instelling is ingesteld op **Beheerde apparaten**.
     - **Platform**: Selecteer **Android**.
 
 3. Selecteer **Gekoppelde app**. Kies de app waarvoor u een configuratiebeleid wilt definiëren. Selecteer in de lijst met Android-werkprofiel-apps de apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune.

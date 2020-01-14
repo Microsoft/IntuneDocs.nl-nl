@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 3da8e89679f974c7d91cf19ae37365f75217d153
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563466"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548023"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>PowerShell-scripts op Windows 10-apparaten gebruiken in Intune
 
@@ -64,9 +64,9 @@ De Intune-beheeruitbreiding heeft de volgende vereisten. Zodra aan de vereisten 
 
   - Gezamenlijk beheerde apparaten waarop gebruik wordt gemaakt Configuration Manager en Intune. Zorg ervoor dat de workload **Apps** is ingesteld op **testfase voor Intune** of **Intune**. Raadpleeg de volgende artikelen voor meer informatie: 
   
-    - [Wat is co-beheer?](https://docs.microsoft.com/sccm/comanage/overview) 
-    - [Workload Client-apps](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
-    - [Configuration Manager-workloads overschakelen naar Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+    - [Wat is co-beheer?](https://docs.microsoft.com/configmgr/comanage/overview) 
+    - [Workload Client-apps](https://docs.microsoft.com/configmgr/comanage/workloads#client-apps)
+    - [Configuration Manager-workloads overschakelen naar Intune](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)
   
 > [!TIP]
 > Zorg ervoor dat apparaten zijn [gekoppeld](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) aan Azure AD. Apparaten die alleen [geregistreerd](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) zijn in Azure AD zullen scripts niet ontvangen.
@@ -134,7 +134,7 @@ Selecteer in **PowerShell-scripts** het script dat u wilt controleren, kies **Co
 
 ## <a name="intune-management-extension-logs"></a>Intune-beheeruitbreidingslogboeken
 
-Agentlogboeken op de clientcomputer staan meestal in `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. U kunt [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) gebruiken om deze logboekbestanden te bekijken. 
+Agentlogboeken op de clientcomputer staan meestal in `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. U kunt [CMTrace.exe](https://docs.microsoft.com/configmgr/core/support/cmtrace) gebruiken om deze logboekbestanden te bekijken.
 
 ![Schermopname of voorbeeldlogboeken van de cmtrace-agent in Microsoft Intune](./media/apps-win32-app-management/apps-win32-app-10.png)  
 

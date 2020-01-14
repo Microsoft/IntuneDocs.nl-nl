@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691776"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207448"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Windows 10-software-updates beheren in Intune
 
@@ -68,9 +68,6 @@ Aan de volgende vereisten moet worden voldaan om Windows-updates voor Windows 10
   U kunt de instelling *Diagnostische gegevens en gebruiksgegevens* voor Windows 10-apparaten handmatig configureren of een Intune-apparaatbeperkingsprofiel gebruiken voor Windows 10 en hoger. Als u een apparaatbeperkingsprofiel gebruikt, stelt u de [apparaatbeperkingsinstelling](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) van **Gebruiksgegevens delen** in op ten minste **Basis**. U vindt deze instelling in de categorie **Rapportage en telemetrie** wanneer u een apparaatbeperkingsbeleid configureert voor Windows 10 of hoger.
 
   Zie [Instellingen voor apparaatbeperking configureren](../configuration/device-restrictions-configure.md) voor meer informatie over apparaatprofielen.
-
-- Als u gebruikmaakt van de klassieke Azure-portal, [migreert u de instellingen naar de Azure-portal](#migrate-update-settings-to-the-azure-portal).
-
 
 ## <a name="windows-10-update-rings"></a>Windows 10-updateringen
 
@@ -227,7 +224,7 @@ Wanneer een apparaat een beleid voor Windows 10-onderdelenupdates ontvangt:
 
 3. Geef onder **Basisinformatie** een naam en een beschrijving (optioneel) op en selecteer voor **De functie-update die moet worden geïmplementeerd** de versie van Windows met de gewenste onderdelenset. Selecteer daarna **volgende**.
 
-4. Kies onder **Toewijzingen** de optie **Groepen selecteren die moeten worden opgenomen** en wijs de updatering toe aan een of meer groepen. Selecteer **Volgende** om door te gaan.
+4. Kies onder **Toewijzingen** de optie **Groepen selecteren die moeten worden opgenomen** en wijs de functie Update-implementatie toe aan een of meer groepen. Selecteer **Volgende** om door te gaan.
 
 5. Controleer de instellingen onder **Beoordelen en maken** en selecteer **Maken** als u klaar bent om het beleid voor Windows 10-onderdelenupdates op te slaan.  
 
@@ -240,17 +237,6 @@ In dit deelvenster kunt u het volgende doen:
 - **Verwijderen** selecteren om het beleid uit Intune te verwijderen en het van apparaten te verwijderen.
 - **Eigenschappen** selecteren om de implementatie te wijzigen.  In het deelvenster *Eigenschappen* de optie **Bewerken** selecteren om de *Implementatie-instellingen of Toewijzingen* te openen, waar u de implementatie vervolgens kunt wijzigen.
 - **Updatestatus van eindgebruiker** selecteren om informatie over het beleid weer te geven.
-
-## <a name="migrate-update-settings-to-the-azure-portal"></a>Update-instellingen migreren naar de Azure-portal
-
-De klassieke Azure-portal heeft ook een beperkt aantal andere instellingen voor Windows 10-updates in het apparaatconfiguratieprofiel. Als een van deze instellingen is geconfigureerd wanneer u naar de Azure-portal migreert, worden de volgende acties aangeraden:
-
-1. Maak Windows 10 updateringen in de Azure-portal met de instellingen die u nodig hebt. De instelling **Functies van evaluatieversies toestaan** wordt niet ondersteund in Azure Portal omdat deze niet langer van toepassing is op de meest recente builds van Windows 10. U kunt de andere drie instellingen en de andere update-instellingen voor Windows 10 configureren wanneer u update-ringen maakt.
-
-   > [!NOTE]
-   > Instellingen voor Windows 10-updates die zijn gemaakt in de klassieke portal worden na de migratie niet weergegeven in de Azure-portal. Deze instellingen worden echter toegepast. Als u deze instellingen migreert en het gemigreerde beleid bewerkt in Azure Portal, worden deze instellingen verwijderd uit het beleid.
-
-2. Verwijder de update-instellingen in de klassieke portal. Nadat u naar Azure Portal bent gemigreerd en dezelfde instellingen toevoegt aan een update-ring, moet u de instellingen in de klassieke portal verwijderen om mogelijke beleidsconflicten te voorkomen. Wanneer dezelfde instelling bijvoorbeeld met verschillende waarden wordt geconfigureerd, is er sprake van een conflict. Er is geen eenvoudige manier om hierachter te komen, omdat de instelling die in de klassieke portal is geconfigureerd niet in Azure-portal wordt weergegeven.
 
 ## <a name="next-steps"></a>Volgende stappen
 
