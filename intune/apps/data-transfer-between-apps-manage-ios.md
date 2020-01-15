@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414639"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839308"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
 
@@ -45,7 +45,7 @@ Gebruik een app-beveiligingsbeleid met de beheerde **Open-in-functie** van iOS o
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>UPN-gebruikersinstelling configureren voor Microsoft Intune of EMM van derden
 Deze configuratie van de UPN-gebruikersinstelling is **vereist** voor apparaten die worden beheerd door Intune of een EMM-oplossing van derden om het geregistreerde gebruikersaccount vast te stellen. De UPN-configuratie werkt met het app-beveiligingsbeleid dat u via Intune implementeert. De volgende procedure is een algemene werkstroom voor het configureren van de UPN-instelling en de daaruit voortvloeiende gebruikerservaring:
 
-1. In [Azure Portal](https://portal.azure.com) [maakt u beveiligingsbeleid voor apps en wijst u dit toe](app-protection-policies.md) voor iOS. Configureer beleidsinstellingen via de bedrijfsvereisten en selecteer de iOS-apps waarop dit beleid van toepassing moet zijn.
+1. In [Azure Portal](https://portal.azure.com)[maakt u beveiligingsbeleid voor apps en wijst u dit toe](app-protection-policies.md) voor iOS. Configureer beleidsinstellingen via de bedrijfsvereisten en selecteer de iOS-apps waarop dit beleid van toepassing moet zijn.
 
 2. Implementeer de apps en het e-mailprofiel die u wilt laten beheren via Intune of de MDM-oplossing van derden met behulp van de volgende algemene stappen. Deze ervaring wordt ook getoond in *voorbeeld 1*.
 

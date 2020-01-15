@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 331d4d312541f587077c70e19634e331f9ddc21e
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810219"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956357"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Lookout Mobile Endpoint Security-integratie met Intune instellen
 Met een omgeving die aan de [vereisten](lookout-mobile-threat-defense-connector.md#prerequisites) voldoet, kunt u Lookout Mobile Endpoint Security integreren met Intune. De informatie in dit artikel helpt u bij het instellen van de integratie en het configureren van belangrijke instellingen in Lookout voor gebruik met Intune.  
@@ -113,7 +113,7 @@ Bij de volgende procedure wordt ervan uitgegaan dat u eerder een groep in Azure 
 6. Selecteer **Connector maken** om de configuratie van de connector te voltooien. Als u tevreden bent met uw resultaten, kunt u de enrollment uitbreiden naar andere gebruikersgroepen.
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Configureer Intune om Lookout te gebruiken als een Mobile Threat Defense-provider
-Nadat u Lookout MES hebt geconfigureerd, moet u een verbinding met [Lookout in Intune](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable) instellen.  
+Nadat u Lookout MES hebt geconfigureerd, moet u een verbinding met [Lookout in Intune](~/protect/mtd-connector-enable.md) instellen.  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Aanvullende instellingen in de Lookout MES-console
 Hieronder vindt u aanvullende instellingen die u in de Lookout MES-console kunt configureren.  

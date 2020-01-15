@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
-ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
+ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
+ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75323087"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760960"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune.
 
@@ -55,19 +55,6 @@ Na 20 februari 2020 ontvangen deze apparaten geen beveiligingsupdates meer en ku
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
 Controleer uw Intune-rapporten om na te gaan voor welke apparaten of gebruikers dit gevolgen kan hebben. Ga naar Apparaten > Alle apparaten en filter op besturingssysteem. U kunt extra kolommen toevoegen, zodat u eenvoudiger kunt vaststellen wie in uw organisatie apparaten met Windows Phone 8.1 gebruikt. Vraag uw eindgebruikers om hun apparaten te upgraden naar een ondersteunde besturingssysteemversie.
-
-
-### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune-plan voor wijziging: Ondersteuning voor Windows 10, versie 1703 van de bedrijfsportal komt te vervallen<!--5026679-->
-Windows 10, versie 1703 (ook wel bekend als Windows 10, RS2) is buiten bedrijf gesteld op 8 oktober 2019 voor Enterprise- en EDU-edities. De Intune-bedrijfsportal-app voor RS2/RS1 wordt niet meer ondersteund vanaf 26 december 2019.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-U ziet geen nieuwe functies meer in de specifieke versie van de bedrijfsportal-app, ook al wordt deze versie van de bedrijfsportal-app nog wel ondersteund tot en met 26 december 2019 en wordt de beveiliging van de bedrijfsportal-app zo nodig nog bijgewerkt. Maar omdat de beveiliging van Windows 10, versie 1703 niet meer wordt bijgewerkt nadat de versie buiten bedrijf is gesteld, wordt u ten zeerste aangeraden uw Windows-apparaten bij te werken naar een recentere versie van Windows en de nieuwste bedrijfsportal-app te gebruiken zodat u nieuwe functies en aanvullende functionaliteit blijft ontvangen.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
-Welke stappen u moet uitvoeren, is afhankelijk van de configuratie van uw omgeving. Over het algemeen moet u de apparaten met de oudere versie van het besturingssysteem en/of de bedrijfsportal identificeren en die apparaten bijwerken. Meld u aan bij Intune en ga naar Software-updates – Windows 10-update-ringen om uw Windows 10-update-ringen in te stellen. De nieuwste versie van de bedrijfsportal-app is versie 10.3.5601.0. Laat uw gebruikers deze versie downloaden uit de Microsoft Store om op de hoogte te blijven van toekomstige releases. U kunt Intune ook gebruiken om de nieuwste versie op uw Windows-apparaten te installeren via de [Microsoft Store voor Bedrijven](https://docs.microsoft.com/intune/windows-store-for-business).
-
-#### <a name="additional-information"></a>Aanvullende informatie
-[De Windows 10-bedrijfsportal-app handmatig toevoegen met Microsoft Intune](https://docs.microsoft.com/intune/store-apps-company-portal-app)
 
 
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>Onderneem actie: Gebruik Microsoft Edge als uw beveiligde Intune-browser<!--5728447-->

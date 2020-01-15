@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d30749a7eaa3d516bef2f2acff3e010d69db1c0e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 92e6aa1a66429c6407556444e903c158aff9dfa0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547048"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885984"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Wat zijn gebruikelijke manieren om voorwaardelijke toegang met Intune te gebruiken?
 
@@ -86,14 +86,6 @@ Voorwaardelijke toegang voor pc's biedt mogelijkheden die vergelijkbaar zijn met
 - **On-premises AD-domein is toegevoegd:** Deze optie wordt doorgaans gebruikt door organisaties die redelijk tevreden zijn met de manier waarop hun pc's al worden beheerd met AD-groepsbeleid of Configuration Manager.
 
 - **Azure AD-domein toegevoegd en Intune-beheerprogramma:** Dit scenario is bedoeld voor organisaties die voornamelijk cloudservices gebruiken, met het doel om het gebruik van een on-premises infrastructuur te beperken, of alleen cloudservices gebruiken (geen on-premises infrastructuur). Azure AD Join werkt goed in een hybride omgeving en biedt toegang tot zowel cloud- als on-premises apps en bronnen. Het apparaat wordt toegevoegd aan Azure AD en wordt geregistreerd bij Intune, dat kan worden gebruikt als criterium voor voorwaardelijke toegang bij het openen van bedrijfsresources.
-
-- **AD-domein toegevoegd en Configuration Manager:** Vanaf de huidige vertakking biedt Configuration Manager niet alleen de mogelijkheid om een pc toe te voegen aan een domein, maar beschikt u ook over mogelijkheden voor voorwaardelijke toegang om specifieke nalevingscriteria te evalueren:
-
-  - Is de pc versleuteld?
-
-  - Is er anti-malware geïnstalleerd? Is de pc up-to-date?
-
-  - Is het apparaat gekraakt of geroot?
 
 #### <a name="bring-your-own-device-byod"></a>BYOD (Bring Your Own Device)
 

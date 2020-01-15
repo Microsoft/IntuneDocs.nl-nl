@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86640c831e8836a72ad5a0a7d5023ff7d836a43a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801552"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886000"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Infrastructuur configureren om SCEP te ondersteunen in Intune
 
@@ -373,8 +373,7 @@ De Microsoft Intune Certificate Connector wordt geïnstalleerd op server waarop 
 
    2. Voer het installatieprogramma uit (**NDESConnectorSetup.exe**). Via het installatieprogramma wordt ook de beleidsmodule voor NDES en de webservice Certificaatregistratiepunt (CRP) van IIS geïnstalleerd. De webservice CRP, *CertificateRegistrationSvc*, wordt als een toepassing in IIS uitgevoerd.
 
-      - Wanneer u NDES installeert en Intune zelfstandig wordt gebruikt, wordt de CRP-service automatisch met de certificaatconnector geïnstalleerd.
-      - Wanneer u Intune met Configuration Manager gebruikt, installeert u het Certificaatregistratiepunt als een systeemfunctie van de Configuration Manager-site.
+      Wanneer u NDES installeert en Intune zelfstandig wordt gebruikt, wordt de CRP-service automatisch met de certificaatconnector geïnstalleerd.
 
 5. Wanneer om het clientcertificaat voor de Certificate Connector wordt gevraagd, kiest u **Selecteren** en selecteert u het **clientverificatiecertificaat** dat u op uw NDES-server hebt geïnstalleerd tijdens stap 3 van de procedure [Certificaten installeren en verbinden op de server waarop NDES wordt gehost](#install-and-bind-certificates-on-the-server-that-hosts-ndes) die eerder in dit artikel is beschreven.
 

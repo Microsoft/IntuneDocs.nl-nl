@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 309860fb5ddf6fa9488ecaf395534bf869234176
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: ebeb5830136ad6dae19babbc8ecf45c1d6e5c36c
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547855"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885980"
 ---
 # <a name="android-device-administrator-enrollment"></a>Registratie van Android-apparaatbeheerder
 
@@ -36,10 +36,6 @@ Om diezelfde redenen raden we ook aan dat u apparaten migreert van apparaatbehee
 Voor meer informatie over Intune-ondersteuning voor Android-apparaatbeheerder, raadpleegt u het gedeelte [Aankondigingen](../fundamentals/whats-new.md#decreasing-support-for-android-device-administrator).
 
 Als u toch besluit om gebruikers hun Android-apparaten te laten registreren met apparaatbeheerder, gaat u door naar het volgende gedeelte.  
-
-
-> [!Note]  
-> Android 10 en hoger wordt niet ondersteund in hybride Mobile Device Management (hybride MDM; door Intune beheerd met de Configuration Manager-console), omdat hybride MDM vanaf 1 september 2019 wordt afgeschaft. Als u nog steeds hybride MDM gebruikt, moet u zo snel mogelijk naar de zelfstandige versie van Intune migreren. Neem contact op met ondersteuning als u hulp nodig hebt bij de migratie. Zie voor meer informatie [Overstappen van hybride Mobile Device Management naar Intune op Azure](https://aka.ms/hybrid_notification).
 
 Voor meer informatie over de Android Enterprise-functies van Google, raadpleegt u de volgende artikelen:
 - [Google-richtlijnen voor migratie van apparaatbeheerder naar Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)

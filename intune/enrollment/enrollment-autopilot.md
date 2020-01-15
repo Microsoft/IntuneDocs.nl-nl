@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd320dddeb7717461188bdb701044bf060e7d75e
-ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
+ms.openlocfilehash: 4e5a16a8be6fcce8c6c34d3ddf8979b17eccddd1
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324879"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920123"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -178,11 +178,6 @@ Vereisten: de Azure Active Directory-bedrijfsportal is geconfigureerd en Windows
     ![Schermafbeelding van beschrijvende naam](./media/enrollment-autopilot/friendly-name.png)
 
 4. Kies **OK**.
-
-## <a name="autopilot-deployments-report"></a>Rapport Autopilot-implementaties
-U kunt de details bekijken van elk apparaat dat via Windows Autopilot is geïmplementeerd.
-Als u het rapport wilt weergeven, gaat u naar het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), kiest u **Apparaten** > **Bewaken** > **Autopilot-implementaties**.
-De gegevens zijn tot 30 dagen na de implementatie beschikbaar.
 
 
 ## <a name="delete-autopilot-devices"></a>Autopilot-apparaten verwijderen

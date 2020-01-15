@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2019
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
-ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
+ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74784235"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956213"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune 
 
@@ -189,7 +189,7 @@ Intune zal een vereiste app op basis van de volgende voorwaarden automatisch opn
 
 ## <a name="app-installation-errors"></a>App-installatiefouten
 
-Zie [App-installatiefouten](troubleshoot-app-install.md#app-installation-errors) voor meer informatie over installatiefouten bij Intune-apps.
+Zie [App-installatiefouten](troubleshoot-app-install.md) voor meer informatie over installatiefouten bij Intune-apps.
 
 ## <a name="next-steps"></a>Volgende stappen
 
@@ -211,4 +211,4 @@ Als u wilt leren hoe u voor elk platform apps aan Intune toevoegt, raadpleegt u:
 - [Microsoft Edge voor macOS](apps-edge-macos.md)
 - [Ingebouwde apps](apps-add-built-in.md)
 - [Android Enterprise-systeem-app](apps-ae-system.md)
-- [Win32-apps](app-management.md)
+- [Win32-apps](~/apps/apps-win32-app-management.md)
