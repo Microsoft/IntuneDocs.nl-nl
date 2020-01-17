@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 0ca5d475f92cbe3298689273dcdf0da1644078b2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946652"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547044"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Instellingen in Windows 10 en later om te markeren of apparaten wel of niet conform zijn met behulp van Intune
 
@@ -65,7 +65,7 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
 Meer resources:
 
 - Zie [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)(Engelstalig) voor meer informatie over de werking van de Health Attestation-service.
-- [Ondersteuningstip: apparaatstatusverklaring gebruiken als onderdeel van uw Intune-nalevingsbeleid](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643).
+- [Ondersteuningstip: Apparaatstatusverklaring gebruiken als onderdeel van uw Intune-nalevingsbeleid](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643).
 
 ## <a name="device-properties"></a>Apparaateigenschappen
 
@@ -102,9 +102,9 @@ Meer resources:
 
 Geldt alleen voor gezamenlijk beheerde apparaten met Windows 10 en hoger. Apparaten met alleen Intune retourneren de status Niet beschikbaar.
 
-- **De apparaatcompatibiliteit vereisen van System Center Configuration Manager**:  
+- Apparaatcompatibiliteit **vereisen van Configuration Manager**:  
   - **Niet geconfigureerd** (*standaard*) -Intune zoekt niet naar de Configuration Manager-instellingen voor naleving.
-  - **Vereisen** - Vereisen dat alle instellingen (configuratie-items) in System Center Configuration Manager compatibel zijn.  
+  - **Vereisen**: vereisen dat alle instellingen (configuratie-items) in Configuration Manager compatibel zijn.  
 
     U kunt bijvoorbeeld vereisen dat alle software-updates worden geïnstalleerd op apparaten. Deze vereiste heeft in Configuration Manager de status 'Geïnstalleerd'. Als programma's op het apparaat een onbekende status hebben, is het apparaat niet-compatibel in Intune.
 
@@ -122,7 +122,7 @@ Geldt alleen voor gezamenlijk beheerde apparaten met Windows 10 en hoger. Appara
 
 - **Wachtwoordtype**:  
   Kies het type wachtwoord of pincode dat is vereist. Uw opties zijn:
-  - **Standaard** van het apparaat (*standaard*): vereist een wacht woord, een numerieke pincode of een alfanumerieke pincode
+  - **Standaard waarde** voor *apparaat*: vereist een wacht woord, een numerieke pincode of een alfanumerieke pincode
   - **Numeriek** : wacht woord of numerieke pincode vereisen
   - **Alfanumeriek** : een wacht woord of alfanumerieke pincode vereisen.  
   
@@ -172,7 +172,7 @@ Geldt alleen voor gezamenlijk beheerde apparaten met Windows 10 en hoger. Appara
 
 - **Firewall**:  
   - **Niet geconfigureerd** (*standaard*): intune beheert niet de micro soft Defender firewall en wijzigt bestaande instellingen niet.
-  - **Vereisen dat** de micro soft Defender firewall inschakelt en voor komen dat gebruikers deze uitschakelen.  
+  - **Vereisen** Schakel de micro soft Defender firewall in en voorkom dat gebruikers deze uitschakelen.  
 
   [CSP van Firewall](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
 
